@@ -1,0 +1,261 @@
+{
+  "film": "007_The-First-Vaccine",
+  "kind": "full_join_v01",
+  "job": "J0827",
+  "authority": "Chief PASS J0820 (Claude, acting Chief, 22 Oct 2026) + J0827 2 \u00a30 repeat-shot fixes",
+  "applied_by": "gemini",
+  "no_new_mints": true,
+  "spend": "\u00a30 (assembly + 2 \u00a30 repeat-shot fixes only)",
+  "file": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/_precheck/full_join_v01/hos_007_full_join_v01.mp4",
+  "sha256": "7cfd6a594b23fc6fc0e57309b69067584f03f29fe23d5e72af745e36f56682ff",
+  "size_mb": 510.1,
+  "proxy_file": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/_precheck/full_join_v01/hos_007_full_join_v01_uat_proxy.mp4",
+  "proxy_sha256": "5ea31960b22491f97e1c8f90e2a7652cdd9ed2fc6944fe4ce102a3ca057c3f0c",
+  "duration_s": 505.147,
+  "parts_sum_s": 505.125,
+  "frames": 12123,
+  "cuts": 97,
+  "bed": null,
+  "bed_note": "No 05_Music bed (ElevenLabs credit hold until 30 Oct; no new bed without Chief OK). Locked VO in each passed part rough.",
+  "freeze_events": [],
+  "polish_gate_rc": 0,
+  "polish_gate_stdout": "01_cow_meadow     2.1s 01_cow_meadow_t1.mp4         ok\n02_doctor_case     7.9s 02_doctor_case_t1.mp4        ok\n03_table_three    15.3s 03_table_three_t1.mp4        WARN low detail: edge density 0.0154 < film p5 0.0224\n03b_globe_tease    21.1s 03_globe_lights_t1.mp4       ok\n04_church_dusk    26.2s 04_church_dusk_t1.mp4        ok\n07_map_shadows    32.2s code_graphic_007_p1_07_map_s ok\n07b_three_in_ten    37.1s 07b_three_in_ten_t1.mp4      ok\n07c_scarred    41.6s 07c_scarred_t1.mp4           ok\n05_quiet_lane    46.0s 05_quiet_lane_t1.mp4         ok\n06_shuttered_house    50.0s 06_shuttered_house_t1.mp4    ok\n08_bell_tower    54.0s 08_bell_tower_t1.mp4         ok\n09_churchyard    57.5s 09_churchyard_t1.mp4         ok\n09b_counted    61.4s 09b_counted_t1.mp4           ok\n09c_case_again    65.5s 02_doctor_case_t1.mp4        ok\n10_variolation    70.9s 10_variolation_t1.mp4        ok\n10b_milder    77.1s 10b_milder_t1.mp4            ok\n10c_doors_close    83.2s 10c_doors_close_t1.mp4       ok\n11_mother_window    89.6s 11_mother_window_t1.mp4      ok (reviewed_ok: split panel: vertical seam at 0.536, vertical seam at 0.578, vertical seam at 0.601)\n11b_child_cot    94.7s 11b_child_cot_t1.mp4         ok\n12_farm_gate    98.7s 12_farm_gate_t1.mp4          ok\n01_milking_dawn   104.5s 01_milking_dawn_t1.mp4       ok\n02_healed_hand   111.5s 02_healed_hand_t1.mp4        ok\n02b_well_again   117.6s 02b_well_again_t1.mp4        ok\n04_village_a   122.6s 04_village_a_t1.mp4          ok\n02c_laughs   127.5s 02c_laughs_t1.mp4            ok\n03a_cap_and_pail   133.2s 03a_cap_and_pail_t1.mp4      ok\n03_market_walk   139.4s 03_market_walk_t1.mp4        ok\n05_village_b   145.1s 05_village_b_t1.mp4          ok\n05b_gate_again   149.1s 12_farm_gate_t1.mp4          ok\n06_jesty_family   153.0s 06_jesty_family_t1.mp4       ok\n06b_jesty_hands   158.6s 06b_jesty_hands_t1.mp4       ok\n07_jesty_table   165.2s 07_jesty_table_t1.mp4        ok\n08a_berkeley   171.2s 08a_berkeley_t1.mp4          ok\n08_jenner_window   177.3s 08_jenner_window_t1.mp4      ok\n09_cuckoo   182.2s 09_cuckoo_t1.mp4             ok\n10_balloon   186.8s 10_balloon_t1.mp4            ok\n10b_pail_on_desk   192.7s 10b_pail_on_desk_t1.mp4      ok\n11_young_jenner   199.0s 11_young_jenner_t1.mp4       ok\n12_hunter_letter   206.3s 12_hunter_letter_t1.mp4      ok\n12b_try_it   213.7s 12b_try_it_t1.mp4            ok\n13_casebook   221.1s 13_casebook_t1.mp4           ok\n14_explorer_stool   227.6s 14_explorer_stool_t1.mp4     ok\n01a_garden_path   232.6s 01a_garden_path_t1.mp4       ok\n01_sarah_nelmes   237.4s 01_sarah_nelmes_t1.mp4       ok\n02_cow_from_lane   243.8s 02_cow_from_lane_t1.mp4      ok\n03_phipps_stool   249.9s 03_phipps_stool_t1.mp4       ok\n03b_lancet_case   254.0s 03b_lancet_case_t1.mp4       ok\n04_lancet_touch   259.1s 04_lancet_touch_t1.mp4       ok\n05_quill_writes   266.1s 05_quill_writes_t1.mp4       WARN low detail: edge density 0.0184 < film p5 0.0224\n05b_week_passes   271.5s 05b_week_passes_t1.mp4       ok\n06_mild_fever   275.6s 06_mild_fever_t1.mp4         ok\n07_playing_garden   280.8s 07_playing_garden_t1.mp4     ok\n08_jenner_thinks   285.9s 08_jenner_thinks_t1.mp4      ok\n08b_uneasy_hand   290.8s 08b_uneasy_hand_t1.mp4       WARN low detail: edge density 0.0223 < film p5 0.0224\n08c_map_again   296.9s code_graphic_007_p3_08c_map_ ok\n09_casebook_open   303.2s 13_casebook_t1.mp4           ok\n09b_phipps_again   307.6s 03_phipps_stool_t1.mp4       ok\n01_page_turns   310.6s 05_quill_writes_t1.mp4       WARN low detail: edge density 0.0152 < film p5 0.0224\n02_variolation_calm   315.1s 02_variolation_calm_t1.mp4   ok\n03_waiting   320.8s 03_waiting_t1.mp4            ok\n04_day_one   324.6s 04_day_one_t1.mp4            ok\n05_days_pass   327.5s 05_days_pass_t1.mp4          ok\n06_line_underlined   331.0s 06_line_underlined_t1.mp4    ok\n06b_still_nothing   335.4s 06b_still_nothing_t1.mp4     ok\n07_jesty_again   341.4s 06_jesty_family_t1.mp4       ok\n07b_quill_again   346.6s 05_quill_writes_t1.mp4       WARN low detail: edge density 0.0183 < film p5 0.0224\n07c_cases_again   351.4s 13_casebook_t1.mp4           ok\n08_soho_press   356.9s 08_soho_press_t1.mp4         ok\n08b_title_page   361.9s archive_007_p4_08b_title_pag ok\n08c_cow_again   365.9s 01_cow_meadow_t1.mp4         ok\n12_explorer_press   370.8s 12_explorer_press_t1.mp4     ok\n08d_doctors_scoff   376.1s 08d_doctors_scoff_t1.mp4     ok\n09_satire   380.4s archive_007_p4_09_satire_v01 ok\n09b_boy_well   384.3s 07_playing_garden_t1.mp4     ok\n10a_packets   387.6s 10a_packets_t1.mp4           ok\n10_garden_hut   392.5s 10_garden_hut_t1.mp4         ok\n11_news_spreads   398.8s code_graphic_007_p4_11_news_ ok\n01_pasteur_1881   405.9s 01_pasteur_1881_t1.mp4       ok\n02_cow_again   413.4s 01_cow_meadow_t1.mp4         ok\n09_meadow_golden   419.7s 09_meadow_golden_t1.mp4      ok\n02b_news_again   424.1s code_graphic_007_p5_02b_news ok\n04_health_workers   427.6s 04_health_workers_t1.mp4     ok\n05_kit_opens   431.6s 05_kit_opens_t1.mp4          ok\n03_globe_lights   435.4s 03_globe_lights_t1.mp4       ok\n06_assembly_1980   440.2s 06_assembly_1980_t1.mp4      ok\n06b_churchyard_again   445.4s 09_churchyard_t1.mp4         ok\n06c_assembly_again   449.6s 04_health_workers_t1.mp4     ok\n06d_assembly_front_row   453.1s 06_assembly_1980_t1.mp4      ok\n08_body_learns   457.6s code_graphic_007_p5_08_body_ ok\n07_childs_arm   463.7s 07_childs_arm_t1.mp4         ok\n07b_kit_again   469.4s 05_kit_opens_t1.mp4          ok\n07c_playground   475.1s 07c_playground_t1.mp4        ok\n10_history_book   480.6s 10_history_book_t1.mp4       ok\n11_table_three_again   485.7s 03_table_three_t1.mp4        ok\n13_explorer_meadow   492.0s 13_explorer_meadow_t1.mp4    ok\n11b_storm_builds   497.7s 11b_storm_builds_t1.mp4      ok\n12_kite_storm   502.6s 12_kite_storm_t1.mp4         ok\npolish gate PASS: 0 of 97 rows failed, 5 to look at -> /private/tmp/j0827-hos-wt/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/_desk/007/full_join_v01/polish_gate.json",
+  "picture_qa_rc": 0,
+  "picture_qa_stdout": "WARN   0:15 row 03_table_three 03_table_three_t1.mp4: low detail: edge density 0.0154 < film p5 0.0224\nWARN   4:26 row 05_quill_writes 05_quill_writes_t1.mp4: low detail: edge density 0.0184 < film p5 0.0224\nWARN   4:51 row 08b_uneasy_hand 08b_uneasy_hand_t1.mp4: low detail: edge density 0.0223 < film p5 0.0224\nWARN   5:11 row 01_page_turns 05_quill_writes_t1.mp4: low detail: edge density 0.0152 < film p5 0.0224\nWARN   5:47 row 07b_quill_again 05_quill_writes_t1.mp4: low detail: edge density 0.0183 < film p5 0.0224\npicture QA PASS: 0 of 97 cuts fail, 5 to look at -> /private/tmp/j0827-hos-wt/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/_desk/007/full_join_v01/PICTURE_QA.md, /private/tmp/j0827-hos-wt/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/_desk/007/full_join_v01/picture_qa_review.jpg",
+  "fixed_cuts_0p5s_sweep": {
+    "P1:09c_case_again": [
+      {
+        "film_t_s": 63.62,
+        "mean_luma": 57.62,
+        "luma_std": 41.59,
+        "edge_density": 0.0475,
+        "coarse_std": 40.25,
+        "seams": []
+      },
+      {
+        "film_t_s": 64.12,
+        "mean_luma": 59.35,
+        "luma_std": 42.45,
+        "edge_density": 0.0449,
+        "coarse_std": 41.18,
+        "seams": []
+      },
+      {
+        "film_t_s": 64.62,
+        "mean_luma": 62.57,
+        "luma_std": 43.24,
+        "edge_density": 0.0413,
+        "coarse_std": 42.05,
+        "seams": []
+      },
+      {
+        "film_t_s": 65.12,
+        "mean_luma": 65.47,
+        "luma_std": 44.42,
+        "edge_density": 0.0372,
+        "coarse_std": 43.34,
+        "seams": []
+      },
+      {
+        "film_t_s": 65.62,
+        "mean_luma": 68.54,
+        "luma_std": 45.68,
+        "edge_density": 0.0344,
+        "coarse_std": 44.67,
+        "seams": []
+      },
+      {
+        "film_t_s": 66.12,
+        "mean_luma": 69.76,
+        "luma_std": 46.93,
+        "edge_density": 0.0319,
+        "coarse_std": 46.01,
+        "seams": []
+      },
+      {
+        "film_t_s": 66.62,
+        "mean_luma": 70.56,
+        "luma_std": 47.32,
+        "edge_density": 0.0295,
+        "coarse_std": 46.46,
+        "seams": []
+      },
+      {
+        "film_t_s": 67.12,
+        "mean_luma": 70.89,
+        "luma_std": 47.39,
+        "edge_density": 0.0252,
+        "coarse_std": 46.64,
+        "seams": []
+      }
+    ],
+    "P5:06c_assembly_again": [
+      {
+        "film_t_s": 447.75,
+        "mean_luma": 108.34,
+        "luma_std": 49.78,
+        "edge_density": 0.1358,
+        "coarse_std": 47.15,
+        "seams": []
+      },
+      {
+        "film_t_s": 448.25,
+        "mean_luma": 110.52,
+        "luma_std": 50.34,
+        "edge_density": 0.1429,
+        "coarse_std": 47.7,
+        "seams": []
+      },
+      {
+        "film_t_s": 448.75,
+        "mean_luma": 110.47,
+        "luma_std": 50.2,
+        "edge_density": 0.1432,
+        "coarse_std": 47.61,
+        "seams": []
+      },
+      {
+        "film_t_s": 449.25,
+        "mean_luma": 111.56,
+        "luma_std": 51.2,
+        "edge_density": 0.1317,
+        "coarse_std": 48.89,
+        "seams": []
+      },
+      {
+        "film_t_s": 449.75,
+        "mean_luma": 110.79,
+        "luma_std": 50.23,
+        "edge_density": 0.1289,
+        "coarse_std": 47.95,
+        "seams": []
+      },
+      {
+        "film_t_s": 450.25,
+        "mean_luma": 116.66,
+        "luma_std": 51.96,
+        "edge_density": 0.1212,
+        "coarse_std": 49.79,
+        "seams": []
+      },
+      {
+        "film_t_s": 450.75,
+        "mean_luma": 119.85,
+        "luma_std": 54.5,
+        "edge_density": 0.1233,
+        "coarse_std": 52.43,
+        "seams": []
+      },
+      {
+        "film_t_s": 451.25,
+        "mean_luma": 120.76,
+        "luma_std": 55.7,
+        "edge_density": 0.1184,
+        "coarse_std": 53.74,
+        "seams": []
+      }
+    ],
+    "P5:06d_assembly_front_row": [
+      {
+        "film_t_s": 451.87,
+        "mean_luma": 95.24,
+        "luma_std": 37.84,
+        "edge_density": 0.0721,
+        "coarse_std": 35.85,
+        "seams": []
+      },
+      {
+        "film_t_s": 452.37,
+        "mean_luma": 95.89,
+        "luma_std": 38.0,
+        "edge_density": 0.0768,
+        "coarse_std": 35.89,
+        "seams": []
+      },
+      {
+        "film_t_s": 452.87,
+        "mean_luma": 95.7,
+        "luma_std": 37.83,
+        "edge_density": 0.0676,
+        "coarse_std": 35.91,
+        "seams": []
+      },
+      {
+        "film_t_s": 453.37,
+        "mean_luma": 95.72,
+        "luma_std": 39.28,
+        "edge_density": 0.073,
+        "coarse_std": 37.31,
+        "seams": []
+      },
+      {
+        "film_t_s": 453.87,
+        "mean_luma": 96.35,
+        "luma_std": 41.43,
+        "edge_density": 0.0653,
+        "coarse_std": 39.69,
+        "seams": []
+      },
+      {
+        "film_t_s": 454.37,
+        "mean_luma": 97.08,
+        "luma_std": 41.55,
+        "edge_density": 0.0723,
+        "coarse_std": 39.63,
+        "seams": []
+      }
+    ]
+  },
+  "parts": [
+    {
+      "part": 1,
+      "slug": "part01_rough_v01",
+      "file": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/_precheck/part01_rough_v01/hos_007_part01_rough_v01.mp4",
+      "sha256": "61a5c039c96aa1b222aae686d391e2d949ffc53685d86561b8343bbce7288c6d",
+      "duration_s": 100.833,
+      "frames": 2420,
+      "offset_s": 0.0,
+      "cuts": 20
+    },
+    {
+      "part": 2,
+      "slug": "part02_rough_v01",
+      "file": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/_precheck/part02_rough_v01/hos_007_part02_rough_v01.mp4",
+      "sha256": "6ab2fb1f2e317ea526c627588c542dc514d517cf50b52901e6b542d8f5e9875a",
+      "duration_s": 129.625,
+      "frames": 3111,
+      "offset_s": 100.833,
+      "cuts": 22
+    },
+    {
+      "part": 3,
+      "slug": "part03_rough_v01",
+      "file": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/_precheck/part03_rough_v01/hos_007_part03_rough_v01.mp4",
+      "sha256": "62a14a089f2e8c62dc7a711f9fe439c667e21472341e4478336a23743f03169e",
+      "duration_s": 78.75,
+      "frames": 1890,
+      "offset_s": 230.458,
+      "cuts": 15
+    },
+    {
+      "part": 4,
+      "slug": "part04_rough_v01",
+      "file": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/_precheck/part04_rough_v01/hos_007_part04_rough_v01.mp4",
+      "sha256": "e6a005cd7661b7d4c07c0fc8a19da30a6b45e6c44d9cc3ac9d7edc40621c2ca6",
+      "duration_s": 92.75,
+      "frames": 2226,
+      "offset_s": 309.208,
+      "cuts": 20
+    },
+    {
+      "part": 5,
+      "slug": "part05_rough_v01",
+      "file": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/_precheck/part05_rough_v01/hos_007_part05_rough_v01.mp4",
+      "sha256": "14206aeb1be19af42f4149e95b068a00d5f0c1cfd17cc216c3c0bbfea1f438de",
+      "duration_s": 103.167,
+      "frames": 2476,
+      "offset_s": 401.958,
+      "cuts": 20
+    }
+  ]
+}

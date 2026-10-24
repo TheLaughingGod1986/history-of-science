@@ -1,0 +1,157 @@
+{
+  "id": "s11_curved_flask",
+  "job": "J0825",
+  "test": "B (search-titled)",
+  "air_date_draft": "2027-01-20",
+  "file": "10_Shorts/hos_001_s11_curved_flask_v01.mp4",
+  "sha256": "92bda59586ea1315e08f0ff26b954331f146e54382a82fd56cde3e4210cecf31",
+  "duration_s": 22.367,
+  "vo_source": "02_Voiceover/part04_proof_in_a_flask_v01.wav",
+  "vo_span_windows_s": [
+    [
+      43.68,
+      67.9
+    ],
+    [
+      73.08,
+      78.0
+    ]
+  ],
+  "route": "claim-first lift: Could a curved tube of glass change surgery? \u2026 They were biology with an address. (43.68\u201367.84 s and 73.08\u201377.92 s from Part 04)",
+  "vo_s": 21.937,
+  "words": 58,
+  "max_pause_s": 0.2,
+  "atempo": 1.12,
+  "bed": "hos001_s11_synth_pad_v01.wav (own synthesis, 0 credits)",
+  "bed_gain_db": -21.6,
+  "hook": "CURVED GLASS",
+  "hook_layer": {
+    "font_size": 222,
+    "cap_px": 158,
+    "cap_pct": 8.23,
+    "lines": 2,
+    "block_pct": [
+      40.4,
+      59.5
+    ],
+    "widest_pct": 92.1
+  },
+  "who_card": {
+    "name": "LOUIS PASTEUR",
+    "line2": "Swan-neck flask, 1860s",
+    "line1_px": 66,
+    "line1_pct_of_band": 10.9,
+    "band": [
+      656,
+      1264
+    ],
+    "in_s": 2.15,
+    "out_s": 5.75,
+    "fade_s": 0.35
+  },
+  "title_on_screen": "How Did We Discover Germs?",
+  "youtube_title_draft": "What Is the Pasteur Swan Neck Flask Experiment?",
+  "plan": [
+    {
+      "t0": 0.0,
+      "t1": 2.689,
+      "plate": "04_Generated-Clips/part04/raw/v01_fast_probe/01_question_mark_flask_v17.mp4",
+      "in_s": 1.6,
+      "crop_x": 640,
+      "lands_on": 0
+    },
+    {
+      "t0": 2.689,
+      "t1": 6.17,
+      "plate": "04_Generated-Clips/part04/raw/v01_fast_probe/09_sceptics_watch_v17.mp4",
+      "in_s": 0.4,
+      "crop_x": 420,
+      "lands_on": "Vaccines?"
+    },
+    {
+      "t0": 6.17,
+      "t1": 8.17,
+      "plate": "04_Generated-Clips/part04/raw/v01_fast_probe/05_tip_the_trap_v17.mp4",
+      "in_s": 0.4,
+      "crop_x": 600,
+      "lands_on": "paradox"
+    },
+    {
+      "t0": 8.17,
+      "t1": 11.284,
+      "plate": "04_Generated-Clips/part04/raw/v01_fast_probe/04_still_clear_v21.mp4",
+      "in_s": 0.45,
+      "crop_x": 640,
+      "lands_on": "emptiness"
+    },
+    {
+      "t0": 11.284,
+      "t1": 14.63,
+      "plate": "04_Generated-Clips/part04/raw/v01_fast_probe/08_passengers_v20.mp4",
+      "in_s": 0.35,
+      "crop_x": 380,
+      "lands_on": "A"
+    },
+    {
+      "t0": 14.63,
+      "t1": 19.357,
+      "plate": "04_Generated-Clips/part04/raw/v01_fast_probe/11_result_returns_v01.mp4",
+      "in_s": 0.5,
+      "crop_x": 560,
+      "lands_on": "invisible"
+    },
+    {
+      "t0": 19.357,
+      "t1": 22.357,
+      "plate": "04_Generated-Clips/part04/raw/v01_fast_probe/01_question_mark_flask_v17.mp4",
+      "in_s": 0.35,
+      "crop_x": 640,
+      "lands_on": "loop"
+    }
+  ],
+  "captions": 17,
+  "caption_check": {
+    "ok": true,
+    "changes": 16,
+    "ratio": 1.0
+  },
+  "gate": {
+    "exit": 0,
+    "output": "PASS  hos_001_s11_curved_flask_v01.mp4  dur=22.37s  audio=-22.6dB  motion=10.29  dhash=a18d868b13391c1c\n   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_001_s11_curved_flask_v01_open_sheet.jpg"
+  },
+  "vo_check": {
+    "exit": 0,
+    "output": "PASS  hos_001_s11_curved_flask_v01.mp4  0:22.37  mean -22.6 dB  peak -4.2 dB  156 wpm\n   first minute: title_question 0.0s\n   warn  replace at ~0:12.90: script 'can change a civilisation because it turns' / heard 'can change a civilization because it turns' \u2014 sounds alike (likely the transcriber); listen"
+  },
+  "freezedetect_starts": [],
+  "qa": {
+    "polish_gate": {
+      "exit": 0,
+      "output": "polish gate PASS: 0 of 7 rows failed, 1 to look at -> 02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/qa_s11_curved_flask_v01/polish_gate_s11_curved_flask_v01.json"
+    },
+    "picture_qa": {
+      "exit": 0,
+      "output": "picture QA PASS: 0 of 7 cuts fail, 1 to look at -> 02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/qa_s11_curved_flask_v01/picture_qa_s11_curved_flask_v01/PICTURE_QA.md, 02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/qa_s11_curved_flask_v01/picture_qa_s11_curved_flask_v01/picture_qa_review.jpg"
+    }
+  },
+  "stills": [
+    "10_Shorts/_work_s11_curved_flask_v01/hos_001_s11_curved_flask_v01_t000.0.jpg",
+    "10_Shorts/_work_s11_curved_flask_v01/hos_001_s11_curved_flask_v01_t003.8.jpg",
+    "10_Shorts/_work_s11_curved_flask_v01/hos_001_s11_curved_flask_v01_t011.5.jpg",
+    "10_Shorts/_work_s11_curved_flask_v01/hos_001_s11_curved_flask_v01_t021.4.jpg"
+  ],
+  "autocomplete_check": {
+    "date": "2026-10-22",
+    "source": "suggestqueries client=firefox ds=yt gl=GB signed-out",
+    "hits": [
+      "pasteur swan neck flask experiment",
+      "louis pasteur swan neck flask experiment",
+      "pasteur flask experiment",
+      "pasteur swan necked flask experiment"
+    ],
+    "note": "Signed-out GB YouTube autocomplete on 'pasteur swan neck flask experiment' and 'pasteur flask' returns those phrases as exact hits (22 Oct 2026). The lift is the unused Part 04 stretch: a curved tube of glass, surgery, vaccines, public health, emptiness until contact, and germs as biology with an address. Fifth search-titled Short on HOS 001, which had 4 against 5 on 004, 005 and 006. Chief's call."
+  },
+  "air_date_draft_note": "2027-01-20 used for the gate only; slot is Chief's call.",
+  "who_card_note": "card is LOUIS PASTEUR \u00b7 Swan-neck flask, 1860s (Part 04 names Pasteur in the opening line, already used by s08; this lift is the later flask stretch of the same part, and the 1860s lab is the Part 04 picture marker). On screen 2.15\u20135.75 s. Clear of the 0\u20132 s hook, the 9\u201314 s title, and the last 3.0 s CTA.",
+  "overlap_note": "Zero spoken-word overlap with s04_flask (Part 04 3.09\u201322.72 s) and s08_pasteur_germs (Part 04 0.00\u20132.95 s, 22.90\u201343.65 s, 68.40\u201372.80 s). This lift starts at 43.68 s, stops before the s08 faith line at 68.12 s, and takes 73.08\u201377.92 s after that line. No overlap with s01\u2013s03, s05\u2013s07, s09 or s10."
+}

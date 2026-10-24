@@ -1,0 +1,79 @@
+[
+  {
+    "row": "s01_0",
+    "timeline_in": 0.0,
+    "timeline_out": 4.473,
+    "source": "01_loop_gap_t5.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 1.0
+    },
+    "video": true
+  },
+  {
+    "row": "s02_In",
+    "timeline_in": 4.473,
+    "timeline_out": 7.75,
+    "source": "04_malpighi_slide_t1.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.8
+    },
+    "video": true
+  },
+  {
+    "row": "s03_looked",
+    "timeline_in": 7.75,
+    "timeline_out": 11.189,
+    "source": "02_tiny_gaps_t1.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.8
+    },
+    "video": true
+  },
+  {
+    "row": "s04_A",
+    "timeline_in": 11.189,
+    "timeline_out": 14.796,
+    "source": "06_eyepiece_mesh_t1.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.8
+    },
+    "video": true
+  },
+  {
+    "row": "s05_carrying",
+    "timeline_in": 14.796,
+    "timeline_out": 19.009,
+    "source": "07_capillaries_loop_t2.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 1.2
+    },
+    "video": true
+  },
+  {
+    "row": "s06_We",
+    "timeline_in": 19.009,
+    "timeline_out": 22.144,
+    "source": "16_proved_last_link_t4.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 1.0
+    },
+    "video": true
+  },
+  {
+    "row": "s07_loop",
+    "timeline_in": 22.144,
+    "timeline_out": 25.144,
+    "source": "loop_end_01_loop_gap_t5.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 1.0
+    },
+    "video": true
+  }
+]

@@ -1,0 +1,166 @@
+{
+  "rule": {
+    "low_detail": "FAIL: luma std < 13.44 and edge density < 0.0259 (absolute floor); WARN: luma std < 18.0 or edge density < film p5",
+    "split_panel": "full-height/width seam or gutter",
+    "split_panel_gutter": "gutter counts only with edge density >= 0.01 in the 10% band on both sides",
+    "near_black": "mean < 28.0 or p95 < 50.0",
+    "noise": "grain std > 6 over structure std < 12, and the 8x-downscaled frame under the low-detail floor (std < 13.44 and edge density < 0.0259)",
+    "jitter": "centre-patch phase correlation: reversal against trend or > 0.35 px off trend"
+  },
+  "low_detail_floor": {
+    "std": 13.44,
+    "edge": 0.0259,
+    "calibration": {
+      "video": "025_MarsRobot_full_rough_v02d.mp4",
+      "factor": 1.2,
+      "frames": [
+        {
+          "source": "PIA22223.jpg",
+          "t": 201.0,
+          "std": 12.1,
+          "edge": 0.0223
+        },
+        {
+          "source": "PIA22223.jpg",
+          "t": 216.3,
+          "std": 11.2,
+          "edge": 0.0216
+        },
+        {
+          "source": "PIA22929.jpg",
+          "t": 297.4,
+          "std": 26.54,
+          "edge": 0.5735
+        }
+      ]
+    }
+  },
+  "video": "/Users/benjaminoats/YouTube/History Of Science/docs/STANDALONE_SHORTS_TEST_2026-10/shorts_v01/hos_sa_s8_hales_blood_v01.mp4",
+  "edge_floor": 0.0239,
+  "verdict": "PASS",
+  "failed": [],
+  "warn": [
+    {
+      "row": "s06_01_tall_tube_v01",
+      "cut": 5,
+      "t": 19.9,
+      "source": "end_card_loop_01_tall_tube_v01.jpg",
+      "why": [
+        "low detail: edge density 0.0231 < film p5 0.0239"
+      ]
+    }
+  ],
+  "reviewed_ok": [],
+  "rows": [
+    {
+      "cut": 0,
+      "row": "s01_01_tall_tube_v01",
+      "source": "01_tall_tube_v01.jpg",
+      "t": 2.04,
+      "std": 49.69,
+      "mean": 51.06,
+      "p95": 210.0,
+      "edge": 0.0571,
+      "hf": 14.5,
+      "lf": 40.52,
+      "std8": 43.96,
+      "edge8": 0.194,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 1,
+      "row": "s02_02_hales_sketch_v01",
+      "source": "02_hales_sketch_v01.jpg",
+      "t": 6.38,
+      "std": 66.48,
+      "mean": 94.97,
+      "p95": 241.0,
+      "edge": 0.0443,
+      "hf": 8.96,
+      "lf": 63.33,
+      "std8": 64.54,
+      "edge8": 0.2232,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 2,
+      "row": "s03_03_calm_mare_v01",
+      "source": "03_calm_mare_v01.jpg",
+      "t": 10.37,
+      "std": 42.56,
+      "mean": 95.03,
+      "p95": 170.0,
+      "edge": 0.1241,
+      "hf": 11.11,
+      "lf": 37.07,
+      "std8": 38.99,
+      "edge8": 0.2819,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 3,
+      "row": "s04_04_taller_than_man_v01",
+      "source": "04_taller_than_man_v01.jpg",
+      "t": 13.22,
+      "std": 54.41,
+      "mean": 85.72,
+      "p95": 205.0,
+      "edge": 0.0606,
+      "hf": 9.54,
+      "lf": 50.12,
+      "std8": 51.6,
+      "edge8": 0.2171,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 4,
+      "row": "s05_04_taller_than_man_v01",
+      "source": "04_taller_than_man_v01.jpg#b5",
+      "t": 16.49,
+      "std": 57.33,
+      "mean": 99.67,
+      "p95": 239.0,
+      "edge": 0.0263,
+      "hf": 6.0,
+      "lf": 54.79,
+      "std8": 56.19,
+      "edge8": 0.1411,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 5,
+      "row": "s06_01_tall_tube_v01",
+      "source": "end_card_loop_01_tall_tube_v01.jpg",
+      "t": 19.9,
+      "std": 30.95,
+      "mean": 44.06,
+      "p95": 99.0,
+      "edge": 0.0231,
+      "hf": 7.55,
+      "lf": 26.24,
+      "std8": 27.82,
+      "edge8": 0.1123,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0231 < film p5 0.0239"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+WARN   0:17 row s05_05_paris_archive_v02 05_paris_archive_v02.jpg: low detail: edge density 0.0144 < film p5 0.0162
+picture QA PASS: 0 of 6 cuts fail, 1 to look at -> /Users/benjaminoats/YouTube/History Of Science/docs/STANDALONE_SHORTS_TEST_2026-10/qa_shorts_v01/hos_sa_s4_curie_notebooks_v02/picture_qa_hos_sa_s4_curie_notebooks_v02/PICTURE_QA.md, /Users/benjaminoats/YouTube/History Of Science/docs/STANDALONE_SHORTS_TEST_2026-10/qa_shorts_v01/hos_sa_s4_curie_notebooks_v02/picture_qa_hos_sa_s4_curie_notebooks_v02/picture_qa_review.jpg

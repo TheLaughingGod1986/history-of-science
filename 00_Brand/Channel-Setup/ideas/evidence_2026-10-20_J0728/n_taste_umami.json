@@ -1,0 +1,146 @@
+{
+ "pulled": "2026-10-20",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "how taste works",
+  "what is msg"
+ ],
+ "autocomplete": {
+  "how taste works": [
+   "how taste works",
+   "how flavor works",
+   "how your taste works"
+  ],
+  "what is msg": [
+   "what is msg",
+   "what is msg in food",
+   "what is msg in cooking",
+   "what is msg made out of",
+   "what is msg really",
+   "what is msgstore files",
+   "what is msgstore.db.crypt14 file",
+   "what is msg in chinese food",
+   "what is msg made of",
+   "what is msg used for"
+  ]
+ },
+ "sharedTitleWords": [
+  "taste food",
+  "how we",
+  "we taste"
+ ],
+ "neighbours": [
+  {
+   "id": "EKgEj5asL3o",
+   "title": "What is MSG, and is it actually bad for you? - Sarah E. Tracy",
+   "channel": "TED-Ed",
+   "views": "4,496,829 views",
+   "age": "5 yr ago",
+   "length": "5:29",
+   "tier": 1,
+   "viewCount": 4496829,
+   "foundBy": "ted-ed how taste works",
+   "onTopic": true
+  },
+  {
+   "id": "VVL-8zr2hk4",
+   "title": "How your muscular system works - Emma Bryce",
+   "channel": "TED-Ed",
+   "views": "3,235,728 views",
+   "age": "8 yr ago",
+   "length": "4:45",
+   "tier": 1,
+   "viewCount": 3235728,
+   "foundBy": "ted-ed what is msg",
+   "onTopic": true
+  },
+  {
+   "id": "P7vnspDNx7g",
+   "title": "What happens in your brain when you taste food | Camilla Arndal Andersen",
+   "channel": "TED",
+   "views": "155,626 views",
+   "age": "6 yr ago",
+   "length": "13:44",
+   "tier": 1,
+   "viewCount": 155626,
+   "foundBy": "ted-ed how taste works",
+   "onTopic": true
+  },
+  {
+   "id": "mFm3yA1nslE",
+   "title": "Taste & Smell: Crash Course Anatomy & Physiology #16",
+   "channel": "CrashCourse",
+   "views": "2,958,723 views",
+   "age": "11 yr ago",
+   "length": "10:30",
+   "tier": 2,
+   "viewCount": 2958723,
+   "foundBy": "how taste works",
+   "onTopic": true
+  },
+  {
+   "id": "C4rdqXXzPGU",
+   "title": "Your Tongue: The Taste-Maker!",
+   "channel": "SciShow Kids",
+   "views": "1,091,940 views",
+   "age": "10 yr ago",
+   "length": "3:52",
+   "tier": 2,
+   "viewCount": 1091940,
+   "foundBy": "how taste works",
+   "onTopic": true
+  },
+  {
+   "id": "Wa_WfcuE1a0",
+   "title": "The Surprising Science of How We \"Taste\" Food | National Geographic",
+   "channel": "National Geographic",
+   "views": "76,709 views",
+   "age": "10 yr ago",
+   "length": "1:34",
+   "tier": 2,
+   "viewCount": 76709,
+   "foundBy": "how taste works",
+   "onTopic": true
+  },
+  {
+   "id": "_m8YaW6JBZQ",
+   "title": "A taste of TED",
+   "channel": "TED",
+   "views": "34,475 views",
+   "age": "17 yr ago",
+   "length": "4:21",
+   "tier": 1,
+   "viewCount": 34475,
+   "foundBy": "how taste works ted",
+   "onTopic": true
+  },
+  {
+   "id": "SxM09UCX8NY",
+   "title": "The Origins of Taste: Don Katz at TEDxCambridge 2010",
+   "channel": "TEDx Talks",
+   "views": "6,240 views",
+   "age": "15 yr ago",
+   "length": "7:47",
+   "tier": 1,
+   "viewCount": 6240,
+   "foundBy": "how taste works ted",
+   "onTopic": true
+  },
+  {
+   "id": "BoY4DflVt0Y",
+   "title": "How we taste with our eyes | Kevin Deegan | TEDxHelsinkiUniversity",
+   "channel": "TEDx Talks",
+   "views": "3,460 views",
+   "age": "9 yr ago",
+   "length": "15:05",
+   "tier": 1,
+   "viewCount": 3460,
+   "foundBy": "how taste works ted",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 4,
+ "gate": "PASS",
+ "hasTed": true,
+ "failedQueries": []
+}

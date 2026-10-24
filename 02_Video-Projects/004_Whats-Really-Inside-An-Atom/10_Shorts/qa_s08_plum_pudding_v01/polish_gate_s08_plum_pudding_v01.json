@@ -1,0 +1,202 @@
+{
+  "rule": {
+    "low_detail": "FAIL: luma std < 13.44 and edge density < 0.0259 (absolute floor); WARN: luma std < 18.0 or edge density < film p5",
+    "split_panel": "full-height/width seam or gutter",
+    "split_panel_gutter": "gutter counts only with edge density >= 0.01 in the 10% band on both sides",
+    "near_black": "mean < 28.0 or p95 < 50.0",
+    "noise": "grain std > 6 over structure std < 12, and the 8x-downscaled frame under the low-detail floor (std < 13.44 and edge density < 0.0259)",
+    "jitter": "centre-patch phase correlation: reversal against trend or > 0.35 px off trend"
+  },
+  "low_detail_floor": {
+    "std": 13.44,
+    "edge": 0.0259,
+    "calibration": {
+      "video": "025_MarsRobot_full_rough_v02d.mp4",
+      "factor": 1.2,
+      "frames": [
+        {
+          "source": "PIA22223.jpg",
+          "t": 201.0,
+          "std": 12.1,
+          "edge": 0.0223
+        },
+        {
+          "source": "PIA22223.jpg",
+          "t": 216.3,
+          "std": 11.2,
+          "edge": 0.0216
+        },
+        {
+          "source": "PIA22929.jpg",
+          "t": 297.4,
+          "std": 26.54,
+          "edge": 0.5735
+        }
+      ]
+    }
+  },
+  "video": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/hos_004_s08_plum_pudding_v01.mp4",
+  "edge_floor": 0.0352,
+  "verdict": "PASS",
+  "failed": [],
+  "warn": [
+    {
+      "row": "s04_charge,",
+      "cut": 3,
+      "t": 10.5,
+      "source": "15_positive_balance_v01.mp4",
+      "why": [
+        "low detail: edge density 0.0344 < film p5 0.0352"
+      ]
+    }
+  ],
+  "reviewed_ok": [],
+  "rows": [
+    {
+      "cut": 0,
+      "row": "s01_0",
+      "source": "13_atom_cracks_v01.mp4",
+      "t": 1.68,
+      "std": 69.39,
+      "mean": 116.31,
+      "p95": 232.0,
+      "edge": 0.1007,
+      "hf": 15.34,
+      "lf": 61.19,
+      "std8": 64.47,
+      "edge8": 0.4707,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 1,
+      "row": "s02_Thomson",
+      "source": "14_electrons_named_v01.mp4",
+      "t": 4.99,
+      "std": 48.87,
+      "mean": 93.58,
+      "p95": 199.0,
+      "edge": 0.1267,
+      "hf": 12.36,
+      "lf": 40.71,
+      "std8": 43.7,
+      "edge8": 0.4716,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 2,
+      "row": "s03_electrons.",
+      "source": "10_two_thousand_lighter_v01.mp4",
+      "t": 7.87,
+      "std": 53.26,
+      "mean": 100.65,
+      "p95": 209.0,
+      "edge": 0.0629,
+      "hf": 8.08,
+      "lf": 47.08,
+      "std8": 49.89,
+      "edge8": 0.4186,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 3,
+      "row": "s04_charge,",
+      "source": "15_positive_balance_v01.mp4",
+      "t": 10.5,
+      "std": 67.9,
+      "mean": 118.63,
+      "p95": 227.0,
+      "edge": 0.0344,
+      "hf": 8.2,
+      "lf": 64.7,
+      "std8": 66.24,
+      "edge8": 0.2995,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0344 < film p5 0.0352"
+      ]
+    },
+    {
+      "cut": 4,
+      "row": "s05_out.",
+      "source": "16_plum_pudding_v01.mp4",
+      "t": 13.7,
+      "std": 62.53,
+      "mean": 117.06,
+      "p95": 227.0,
+      "edge": 0.0669,
+      "hf": 10.64,
+      "lf": 57.74,
+      "std8": 59.57,
+      "edge8": 0.3864,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 5,
+      "row": "s06_his",
+      "source": "17_raisins_settle_v01.mp4",
+      "t": 17.57,
+      "std": 39.41,
+      "mean": 94.26,
+      "p95": 185.0,
+      "edge": 0.0366,
+      "hf": 6.12,
+      "lf": 34.85,
+      "std8": 37.04,
+      "edge8": 0.2783,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 6,
+      "row": "s07_through",
+      "source": "19_lovely_and_wrong_v01.mp4",
+      "t": 20.83,
+      "std": 62.71,
+      "mean": 128.06,
+      "p95": 230.0,
+      "edge": 0.0527,
+      "hf": 7.27,
+      "lf": 58.98,
+      "std8": 60.69,
+      "edge8": 0.3123,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 7,
+      "row": "s08_loop",
+      "source": "loop_end_13_atom_cracks_v01.mp4",
+      "t": 23.52,
+      "std": 68.4,
+      "mean": 111.99,
+      "p95": 228.0,
+      "edge": 0.0685,
+      "hf": 9.07,
+      "lf": 63.81,
+      "std8": 66.08,
+      "edge8": 0.3792,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+WARN   0:19 row s07_and 12_pointer_short_t1.mp4: low detail: edge density 0.0368 < film p5 0.0399
+picture QA PASS: 0 of 9 cuts fail, 1 to look at -> 02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/qa_s08_willow_pot_v01/picture_qa_s08_willow_pot_v01/PICTURE_QA.md, 02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/qa_s08_willow_pot_v01/picture_qa_s08_willow_pot_v01/picture_qa_review.jpg

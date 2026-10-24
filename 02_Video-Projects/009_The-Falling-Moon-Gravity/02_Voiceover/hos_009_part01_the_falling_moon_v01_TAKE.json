@@ -1,0 +1,80 @@
+{
+  "stem": "hos_009_part01_the_falling_moon_v01",
+  "voice": "Ben Orbit Narrator",
+  "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+  "model_id": "eleven_v3",
+  "settings": {
+    "stability": 0.34,
+    "similarity_boost": 0.78,
+    "style": 0.42,
+    "speed": 1.04,
+    "use_speaker_boost": true
+  },
+  "orders": [
+    "J0111"
+  ],
+  "retake_of": null,
+  "chapters": [
+    {
+      "title": "take",
+      "chars": 1080,
+      "duration_s": 83.84
+    }
+  ],
+  "gap_s": 0.7,
+  "spoken_chars": 1080,
+  "words": 210,
+  "duration_s": 83.84,
+  "loudness": {
+    "lufs_integrated": -20.3,
+    "mean_volume_db": -23.5,
+    "max_volume_db": -3.8
+  },
+  "sha256_mp3": "81b6c45fa7991d01d804d6bc67703f179ff7d3c989c485871fab13eb498bdd74",
+  "scribe": {
+    "transcript": "Right now, as you watch this, the moon is falling towards the Earth. So why doesn't it ever hit us? And what does it have to do with an apple? By the end of this film, you'll know how a young man in a farmhouse garden, an imaginary cannon, and one careful sum showed that the pull that drops an apple also holds the moon in the sky. For thousands of years, people believed the sky followed different rules from the Earth. Down here, things fell. A stone dropped, a cup tipped, a rider fell from a horse. But up there, the moon, the sun, and the planets moved in perfect circles forever and never fell at all. Why should a stone fall but not the moon? It was one of the oldest mysteries in the world. Picture yourself on a clear night in 1665. You would see the moon rise over the fields, huge and silent. You would feel the cold ground under your feet, and if you dropped a stone, you would hear it thud. Would you ever think that the stone and the moon were doing the same thing? One young man did, and it started in a year when the whole country was afraid.",
+    "script_words": 211,
+    "scribe_words": 208,
+    "match_rate_pct": 97.63,
+    "exact_match": false,
+    "mismatches": [
+      {
+        "op": "replace",
+        "script": [
+          "for",
+          "ever"
+        ],
+        "scribe": [
+          "forever"
+        ]
+      },
+      {
+        "op": "replace",
+        "script": [
+          "sixteen",
+          "sixty",
+          "five"
+        ],
+        "scribe": [
+          "1665"
+        ]
+      }
+    ]
+  },
+  "vo_check": "PASS",
+  "credits": {
+    "before": {
+      "used": 191194,
+      "limit": 209536,
+      "remaining": 18342
+    },
+    "after": {
+      "used": 191194,
+      "limit": 209536,
+      "remaining": 18342
+    },
+    "counter_delta": 0
+  },
+  "text": "Right now, as you watch this, the Moon is falling towards the Earth.\n\nSo why doesn't it ever hit us? And what does it have to do with an apple?\n\nBy the end of this film, you'll know how a young man in a farmhouse garden, an imaginary cannon and one careful sum showed that the pull that drops an apple also holds the Moon in the sky.\n\nFor thousands of years, people believed the sky followed different rules from the Earth. Down here, things fell. A stone dropped, a cup tipped, a rider fell from a horse. But up there, the Moon, the Sun and the planets moved in perfect circles, for ever, and never fell at all. Why should a stone fall, but not the Moon? It was one of the oldest mysteries in the world.\n\nPicture yourself on a clear night in sixteen sixty-five. You would see the Moon rise over the fields, huge and silent. You would feel the cold ground under your feet. And if you dropped a stone, you would hear it thud. Would you ever think that the stone and the Moon were doing the same thing?\n\nOne young man did. And it started in a year when the whole country was afraid.",
+  "made_at": "2026-10-10T20:56:52+0100"
+}

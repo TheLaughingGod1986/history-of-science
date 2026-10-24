@@ -1,0 +1,168 @@
+{
+ "pulled": "2026-10-17",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "sound waves doppler effect",
+  "christian doppler"
+ ],
+ "autocomplete": {
+  "sound waves doppler effect": [
+   "sound waves doppler effect",
+   "sound waves and doppler effect one shot"
+  ],
+  "christian doppler": [
+   "christian doppler",
+   "christian doppler gymnasium",
+   "christian doppler klinik"
+  ]
+ },
+ "sharedTitleWords": [
+  "physics khan",
+  "khan academy",
+  "how to",
+  "doppler effect",
+  "according to",
+  "brian christian",
+  "waves and",
+  "sound waves",
+  "effect formula"
+ ],
+ "neighbours": [
+  {
+   "id": "iDbdXTMnOmE",
+   "title": "How to manage your time more effectively (according to machines) - Brian Christian",
+   "channel": "TED-Ed",
+   "views": "7,894,664 views",
+   "age": "8 yr ago",
+   "length": "5:10",
+   "tier": 1,
+   "viewCount": 7894664,
+   "foundBy": "ted-ed christian doppler",
+   "onTopic": true
+  },
+  {
+   "id": "O0PawPSdk28",
+   "title": "Light waves, visible and invisible",
+   "channel": "TED-Ed",
+   "views": "1,263,100 views",
+   "age": "13 yr ago",
+   "length": "5:58",
+   "tier": 1,
+   "viewCount": 1263100,
+   "foundBy": "ted-ed sound waves doppler effect",
+   "onTopic": true
+  },
+  {
+   "id": "PP8Zc778B8s",
+   "title": "How to get better at video games, according to babies - Brian Christian",
+   "channel": "TED-Ed",
+   "views": "570,491 views",
+   "age": "4 yr ago",
+   "length": "5:14",
+   "tier": 1,
+   "viewCount": 570491,
+   "foundBy": "ted-ed christian doppler",
+   "onTopic": true
+  },
+  {
+   "id": "4JLNb8-LOB0",
+   "title": "How to see with sound - Jacques S. Abramowicz",
+   "channel": "TED-Ed",
+   "views": "518,313 views",
+   "age": "5 yr ago",
+   "length": "5:16",
+   "tier": 1,
+   "viewCount": 518313,
+   "foundBy": "ted-ed sound waves doppler effect",
+   "onTopic": true
+  },
+  {
+   "id": "qV4lR9EWGlY",
+   "title": "Sound: Crash Course Physics #18",
+   "channel": "CrashCourse",
+   "views": "2,029,520 views",
+   "age": "10 yr ago",
+   "length": "9:39",
+   "tier": 2,
+   "viewCount": 2029520,
+   "foundBy": "ted-ed sound waves doppler effect",
+   "onTopic": true
+  },
+  {
+   "id": "dc7l7Qqa8xk",
+   "title": "Introduction to the doppler effect | Mechanical waves and sound | Physics | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "611,072 views",
+   "age": "16 yr ago",
+   "length": "10:37",
+   "tier": 2,
+   "viewCount": 611072,
+   "foundBy": "sound waves doppler effect",
+   "onTopic": true
+  },
+  {
+   "id": "s9wZkP64rAc",
+   "title": "GCSE Physics - Sound Waves and Hearing",
+   "channel": "Cognito",
+   "views": "563,566 views",
+   "age": "6 yr ago",
+   "length": "5:08",
+   "tier": 2,
+   "viewCount": 563566,
+   "foundBy": "ted-ed sound waves doppler effect",
+   "onTopic": true
+  },
+  {
+   "id": "kGrk6V8tWDY",
+   "title": "Doppler effect formula for observed frequency | Physics | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "306,014 views",
+   "age": "16 yr ago",
+   "length": "10:13",
+   "tier": 2,
+   "viewCount": 306014,
+   "foundBy": "khan academy sound waves doppler effect",
+   "onTopic": true
+  },
+  {
+   "id": "KkJ0wL9f2VY",
+   "title": "Doppler effect formula when source is moving away | Physics | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "173,581 views",
+   "age": "16 yr ago",
+   "length": "9:18",
+   "tier": 2,
+   "viewCount": 173581,
+   "foundBy": "khan academy sound waves doppler effect",
+   "onTopic": true
+  },
+  {
+   "id": "9u1PjsBfrmg",
+   "title": "Sound waves | Middle school physics | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "94,522 views",
+   "age": "1 yr ago",
+   "length": "8:33",
+   "tier": 2,
+   "viewCount": 94522,
+   "foundBy": "khan academy sound waves doppler effect",
+   "onTopic": true
+  },
+  {
+   "id": "5siktaX0Ih0",
+   "title": "Khan Stories: Christian",
+   "channel": "Khan Academy",
+   "views": "20,840 views",
+   "age": "7 yr ago",
+   "length": "1:04",
+   "tier": 2,
+   "viewCount": 20840,
+   "foundBy": "khan academy christian doppler",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 3,
+ "gate": "PASS",
+ "hasTed": true,
+ "failedQueries": []
+}

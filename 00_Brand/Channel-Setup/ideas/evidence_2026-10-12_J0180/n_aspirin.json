@@ -1,0 +1,111 @@
+{
+ "pulled": "2026-10-12",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "aspirin",
+  "how aspirin works",
+  "willow bark medicine"
+ ],
+ "autocomplete": {
+  "aspirin": [
+   "aspirin",
+   "aspirin tablet",
+   "aspiringspike",
+   "aspirine koffi olomide",
+   "aspiring homes",
+   "aspirini",
+   "aspirin gastro resistant tablets ip 150 mg",
+   "aspiring mangaka jjs",
+   "aspiring mangaka jujutsu shenanigans",
+   "aspiring teachers"
+  ],
+  "how aspirin works": [
+   "how aspirin works",
+   "how aspirin works for heart attack",
+   "how aspirin works animation",
+   "how aspirin works in the body",
+   "how aspirin works for headache"
+  ],
+  "willow bark medicine": [
+   "willow tree medicine",
+   "willow bark benefits",
+   "harvesting willow bark for medicine"
+  ]
+ },
+ "sharedTitleWords": [
+  "how aspirin",
+  "human anatomy",
+  "anatomy and",
+  "and physiology",
+  "physiology health",
+  "health medicine",
+  "medicine khan",
+  "khan academy"
+ ],
+ "neighbours": [
+  {
+   "id": "uOcpsXMJcJk",
+   "title": "How does your body process medicine? - Céline Valéry",
+   "channel": "TED-Ed",
+   "views": "4,791,145 views",
+   "age": "9 yr ago",
+   "length": "4:13",
+   "tier": 1,
+   "viewCount": 4791145,
+   "foundBy": "ted-ed aspirin",
+   "onTopic": true
+  },
+  {
+   "id": "uRhkDN2WjzI",
+   "title": "How aspirin was discovered - Krishna Sudhir",
+   "channel": "TED-Ed",
+   "views": "3,075,796 views",
+   "age": "9 yr ago",
+   "length": "5:45",
+   "tier": 1,
+   "viewCount": 3075796,
+   "foundBy": "aspirin",
+   "onTopic": true
+  },
+  {
+   "id": "FXSuEIMrPQk",
+   "title": "Inflammatory response | Human anatomy and physiology | Health & Medicine | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "1,940,670 views",
+   "age": "16 yr ago",
+   "length": "14:35",
+   "tier": 2,
+   "viewCount": 1940670,
+   "foundBy": "khan academy aspirin",
+   "onTopic": true
+  },
+  {
+   "id": "LWtXthfG9_M",
+   "title": "Hemoglobin | Human anatomy and physiology | Health & Medicine | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "1,031,426 views",
+   "age": "16 yr ago",
+   "length": "14:34",
+   "tier": 2,
+   "viewCount": 1031426,
+   "foundBy": "khan academy aspirin",
+   "onTopic": true
+  },
+  {
+   "id": "dZobSE6dOZU",
+   "title": "How Aspirin Changed Medicine Forever",
+   "channel": "SciShow",
+   "views": "507,335 views",
+   "age": "7 yr ago",
+   "length": "11:52",
+   "tier": 2,
+   "viewCount": 507335,
+   "foundBy": "how aspirin works ted",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 4,
+ "gate": "PASS",
+ "hasTed": true,
+ "failedQueries": []
+}

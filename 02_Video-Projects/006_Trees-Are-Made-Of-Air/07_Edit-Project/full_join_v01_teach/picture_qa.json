@@ -1,0 +1,1273 @@
+{
+  "verdict": "PASS",
+  "video": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/full_join_v01_teach/hos_006_full_join_v01_teach.mp4",
+  "rules": {
+    "kind_fail": "computer[- ]?(reconstruction|model|generated|simulation|graphic)|\\bsimulation\\b|\\bdiagram|\\bchart\\b|\\bgraph\\b|\\bschematic|\\bannotated\\b|\\blabell?ed\\b|\\bscreen ?shot|\\bwireframe|\\bcad\\b|\\binfographic",
+    "kind_warn": "\\bartist|\\billustration|\\bconcept\\b|\\brender|\\banimation\\b|\\bmap\\b|\\bmosaic\\b|\\bcomposite\\b",
+    "upscale_fail": 2.35,
+    "upscale_warn": 2.0,
+    "max_reuse": 2,
+    "max_stretches": 5,
+    "same_stretch": 10.0,
+    "pixels": "scripts/polish_gate.py"
+  },
+  "failed": [],
+  "warn": [
+    {
+      "cut": 8,
+      "row": "09_vilvoorde",
+      "source": "09_vilvoorde_flowfast_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 42.25,
+      "at": "0:42",
+      "fail": [],
+      "warn": [
+        "low detail: luma std 12.49 < 18.0"
+      ],
+      "offset": 0.0,
+      "reviewed_ok": {
+        "note": "Chief PASS J0351 16 Oct: horizontal seam at 0.73/0.465 is the teach overlay card edge inside LAY_TIMES_v01.json, not a plate seam.",
+        "passed": [
+          "split panel: horizontal seam at 0.465"
+        ]
+      }
+    },
+    {
+      "cut": 13,
+      "row": "02_balance_200",
+      "source": "code_graphic_p2_02_pounds_v03.mp4",
+      "title": "our own clip or graphic",
+      "t": 70.04,
+      "at": "1:10",
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0125 < film p5 0.0227"
+      ],
+      "offset": 0.0
+    },
+    {
+      "cut": 23,
+      "row": "13_tree_vs_pinch",
+      "source": "13_tree_vs_pinch_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 122.69,
+      "at": "2:03",
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0208 < film p5 0.0227"
+      ],
+      "offset": 0.0
+    },
+    {
+      "cut": 32,
+      "row": "22_shimmer_willow",
+      "source": "22_shimmer_willow_moving_v03.mp4",
+      "title": "our own clip or graphic",
+      "t": 173.25,
+      "at": "2:53",
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0162 < film p5 0.0227"
+      ],
+      "offset": 0.0
+    },
+    {
+      "cut": 33,
+      "row": "01_soil_to_sky",
+      "source": "01_soil_to_sky_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 181.19,
+      "at": "3:01",
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.022 < film p5 0.0227"
+      ],
+      "offset": 0.0
+    },
+    {
+      "cut": 38,
+      "row": "06_leeds_brewery",
+      "source": "06_leeds_brewery_nofire_crop_v01.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 208.04,
+      "at": "3:28",
+      "fail": [],
+      "warn": [
+        "low detail: luma std 13.55 < 18.0"
+      ],
+      "offset": 0.0,
+      "reviewed_ok": {
+        "note": "Chief PASS J0351 16 Oct: horizontal seam at 0.73/0.465 is the teach overlay card edge inside LAY_TIMES_v01.json, not a plate seam.",
+        "passed": [
+          "split panel: horizontal seam at 0.465"
+        ]
+      }
+    },
+    {
+      "cut": 51,
+      "row": "01_villa",
+      "source": "01_villa_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 276.5,
+      "at": "4:37",
+      "fail": [],
+      "warn": [
+        "low detail: luma std 13.82 < 18.0"
+      ],
+      "offset": 0.0
+    },
+    {
+      "cut": 61,
+      "row": "11_night_jars",
+      "source": "11_night_jars_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 334.38,
+      "at": "5:34",
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0127 < film p5 0.0227"
+      ],
+      "offset": 0.0
+    }
+  ],
+  "rows": [
+    {
+      "cut": 0,
+      "row": "01_willow_air",
+      "source": "01_willow_air_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 2.15,
+      "at": "0:02",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 1,
+      "row": "02_balance_trunk",
+      "source": "02_balance_trunk_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 5.83,
+      "at": "0:06",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 2,
+      "row": "03_pot_jar_leaf",
+      "source": "03_pot_jar_leaf_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 11.12,
+      "at": "0:11",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 3,
+      "row": "04_years_pass",
+      "source": "04_years_pass_t3.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 17.6,
+      "at": "0:18",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 4,
+      "row": "05_olive_grove",
+      "source": "05_olive_grove_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 22.44,
+      "at": "0:22",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 5,
+      "row": "06_aristotle",
+      "source": "06_aristotle_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 27.67,
+      "at": "0:28",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0,
+      "reviewed_ok": {
+        "note": "Chief PASS J0351 16 Oct: horizontal seam at 0.73/0.465 is the teach overlay card edge inside LAY_TIMES_v01.json, not a plate seam.",
+        "passed": [
+          "split panel: horizontal seam at 0.73"
+        ]
+      }
+    },
+    {
+      "cut": 6,
+      "row": "07_roots_mouths",
+      "source": "07_roots_mouths_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 33.15,
+      "at": "0:33",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 7,
+      "row": "08_wood_food_air",
+      "source": "08_wood_food_air_t3.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 37.62,
+      "at": "0:38",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 8,
+      "row": "09_vilvoorde",
+      "source": "09_vilvoorde_flowfast_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 42.25,
+      "at": "0:42",
+      "fail": [],
+      "warn": [
+        "low detail: luma std 12.49 < 18.0"
+      ],
+      "offset": 0.0,
+      "reviewed_ok": {
+        "note": "Chief PASS J0351 16 Oct: horizontal seam at 0.73/0.465 is the teach overlay card edge inside LAY_TIMES_v01.json, not a plate seam.",
+        "passed": [
+          "split panel: horizontal seam at 0.465"
+        ]
+      }
+    },
+    {
+      "cut": 9,
+      "row": "10_van_helmont_sack",
+      "source": "10_van_helmont_sack_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 47.96,
+      "at": "0:48",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0,
+      "reviewed_ok": {
+        "note": "Chief PASS J0351 16 Oct: horizontal seam at 0.73/0.465 is the teach overlay card edge inside LAY_TIMES_v01.json, not a plate seam.",
+        "passed": [
+          "split panel: horizontal seam at 0.73"
+        ]
+      }
+    },
+    {
+      "cut": 10,
+      "row": "11_shoot_in_pot",
+      "source": "11_shoot_in_pot_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 53.58,
+      "at": "0:54",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 11,
+      "row": "12_garden_sky",
+      "source": "12_garden_sky_t2.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 58.83,
+      "at": "0:59",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 12,
+      "row": "01_furnace_soil",
+      "source": "01_furnace_soil_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 64.4,
+      "at": "1:04",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 13,
+      "row": "02_balance_200",
+      "source": "code_graphic_p2_02_pounds_v03.mp4",
+      "title": "our own clip or graphic",
+      "t": 70.04,
+      "at": "1:10",
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0125 < film p5 0.0227"
+      ],
+      "offset": 0.0
+    },
+    {
+      "cut": 14,
+      "row": "03_willow_shoot_scale",
+      "source": "03_willow_shoot_scale_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 75.1,
+      "at": "1:15",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 15,
+      "row": "04_lid_rain",
+      "source": "04_lid_rain_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 80.44,
+      "at": "1:20",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 16,
+      "row": "05_pure_water",
+      "source": "05_pure_water_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 86.13,
+      "at": "1:26",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 17,
+      "row": "06_garden_years",
+      "source": "06_garden_years_t2.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 92.58,
+      "at": "1:33",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 18,
+      "row": "08_haul_tree",
+      "source": "08_haul_tree_t1_trim_0to4p8.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 98.94,
+      "at": "1:39",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 19,
+      "row": "09_weights_169",
+      "source": "09_weights_169_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 103.29,
+      "at": "1:43",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0,
+      "reviewed_ok": {
+        "note": "Chief PASS J0351 16 Oct: horizontal seam at 0.73/0.465 is the teach overlay card edge inside LAY_TIMES_v01.json, not a plate seam.",
+        "passed": [
+          "split panel: horizontal seam at 0.73"
+        ]
+      }
+    },
+    {
+      "cut": 20,
+      "row": "10_fallen_leaves",
+      "source": "10_fallen_leaves_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 107.46,
+      "at": "1:47",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0,
+      "reviewed_ok": {
+        "note": "Chief PASS J0351 16 Oct: horizontal seam at 0.73/0.465 is the teach overlay card edge inside LAY_TIMES_v01.json, not a plate seam.",
+        "passed": [
+          "split panel: horizontal seam at 0.73"
+        ]
+      }
+    },
+    {
+      "cut": 21,
+      "row": "11_furnace_again",
+      "source": "01_furnace_soil_t1_from5.458.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 111.44,
+      "at": "1:51",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 22,
+      "row": "12_pointer_short",
+      "source": "12_pointer_short_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 116.6,
+      "at": "1:57",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 23,
+      "row": "13_tree_vs_pinch",
+      "source": "13_tree_vs_pinch_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 122.69,
+      "at": "2:03",
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0208 < film p5 0.0227"
+      ],
+      "offset": 0.0
+    },
+    {
+      "cut": 24,
+      "row": "14_why_grown",
+      "source": "14_why_grown_cover_v03.mp4",
+      "title": "our own clip or graphic",
+      "t": 127.58,
+      "at": "2:08",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 25,
+      "row": "15_desk_candle",
+      "source": "15_desk_candle_t1_above_desk_v03.mp4",
+      "title": "our own clip or graphic",
+      "t": 132.52,
+      "at": "2:13",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 26,
+      "row": "16_water_drawing",
+      "source": "16_water_drawing_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 137.81,
+      "at": "2:18",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 27,
+      "row": "17_mostly_wrong",
+      "source": "17_mostly_wrong_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 143.04,
+      "at": "2:23",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 28,
+      "row": "18_charcoal_hearth",
+      "source": "18_charcoal_hearth_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 149.1,
+      "at": "2:29",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 29,
+      "row": "19_ash_mound",
+      "source": "19_ash_mound_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 154.27,
+      "at": "2:34",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 30,
+      "row": "20_shimmer_coals",
+      "source": "20_shimmer_coals_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 158.63,
+      "at": "2:39",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 31,
+      "row": "21_gas_window",
+      "source": "21_gas_window_cover_v03.mp4",
+      "title": "our own clip or graphic",
+      "t": 164.52,
+      "at": "2:45",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 32,
+      "row": "22_shimmer_willow",
+      "source": "22_shimmer_willow_moving_v03.mp4",
+      "title": "our own clip or graphic",
+      "t": 173.25,
+      "at": "2:53",
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0162 < film p5 0.0227"
+      ],
+      "offset": 0.0
+    },
+    {
+      "cut": 33,
+      "row": "01_soil_to_sky",
+      "source": "01_soil_to_sky_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 181.19,
+      "at": "3:01",
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.022 < film p5 0.0227"
+      ],
+      "offset": 0.0
+    },
+    {
+      "cut": 34,
+      "row": "02_hales_branch",
+      "source": "02_hales_branch_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 186.96,
+      "at": "3:07",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0,
+      "reviewed_ok": {
+        "note": "Chief PASS J0351 16 Oct: horizontal seam at 0.73/0.465 is the teach overlay card edge inside LAY_TIMES_v01.json, not a plate seam.",
+        "passed": [
+          "split panel: horizontal seam at 0.73"
+        ]
+      }
+    },
+    {
+      "cut": 35,
+      "row": "03_water_level",
+      "source": "03_water_level_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 192.81,
+      "at": "3:13",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 36,
+      "row": "04_leaf_mist",
+      "source": "04_leaf_mist_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 198.96,
+      "at": "3:19",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 37,
+      "row": "05_guess",
+      "source": "05_guess_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 204.15,
+      "at": "3:24",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 38,
+      "row": "06_leeds_brewery",
+      "source": "06_leeds_brewery_nofire_crop_v01.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 208.04,
+      "at": "3:28",
+      "fail": [],
+      "warn": [
+        "low detail: luma std 13.55 < 18.0"
+      ],
+      "offset": 0.0,
+      "reviewed_ok": {
+        "note": "Chief PASS J0351 16 Oct: horizontal seam at 0.73/0.465 is the teach overlay card edge inside LAY_TIMES_v01.json, not a plate seam.",
+        "passed": [
+          "split panel: horizontal seam at 0.465"
+        ]
+      }
+    },
+    {
+      "cut": 39,
+      "row": "07_priestley",
+      "source": "07_priestley_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 213.38,
+      "at": "3:33",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0,
+      "reviewed_ok": {
+        "note": "Chief PASS J0351 16 Oct: horizontal seam at 0.73/0.465 is the teach overlay card edge inside LAY_TIMES_v01.json, not a plate seam.",
+        "passed": [
+          "split panel: horizontal seam at 0.731"
+        ]
+      }
+    },
+    {
+      "cut": 40,
+      "row": "08_candles_out",
+      "source": "08_candles_out_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 220.27,
+      "at": "3:40",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 41,
+      "row": "09_injured_air",
+      "source": "09_injured_air_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 225.44,
+      "at": "3:45",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 42,
+      "row": "10_mint_jar",
+      "source": "10_mint_jar_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 230.42,
+      "at": "3:50",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 43,
+      "row": "11_candle_tall",
+      "source": "11_candle_tall_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 236.77,
+      "at": "3:57",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 44,
+      "row": "12_mouse_mint",
+      "source": "12_mouse_mint_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 243.44,
+      "at": "4:03",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 45,
+      "row": "13_fires_breath",
+      "source": "13_fires_breath_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 250.81,
+      "at": "4:11",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 46,
+      "row": "14_trees_breathe",
+      "source": "14_trees_breathe_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 255.6,
+      "at": "4:16",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 47,
+      "row": "15_quill_vegetable",
+      "source": "15_quill_vegetable_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 259.21,
+      "at": "4:19",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 48,
+      "row": "16_repair_reuse",
+      "source": "14_trees_breathe_t1_from4.160.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 263.38,
+      "at": "4:23",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 49,
+      "row": "17_notebook_tick",
+      "source": "17_notebook_tick_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 267.4,
+      "at": "4:27",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 50,
+      "row": "18_dark_window",
+      "source": "18_dark_window_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 271.5,
+      "at": "4:32",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 51,
+      "row": "01_villa",
+      "source": "01_villa_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 276.5,
+      "at": "4:37",
+      "fail": [],
+      "warn": [
+        "low detail: luma std 13.82 < 18.0"
+      ],
+      "offset": 0.0
+    },
+    {
+      "cut": 52,
+      "row": "02_ingenhousz_jars",
+      "source": "02_ingenhousz_jars_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 283.4,
+      "at": "4:43",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 53,
+      "row": "03_plunge_leaf",
+      "source": "03_plunge_leaf_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 289.56,
+      "at": "4:50",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0,
+      "reviewed_ok": {
+        "note": "Chief PASS J0351 16 Oct: horizontal seam at 0.73/0.465 is the teach overlay card edge inside LAY_TIMES_v01.json, not a plate seam.",
+        "passed": [
+          "split panel: horizontal seam at 0.73"
+        ]
+      }
+    },
+    {
+      "cut": 54,
+      "row": "04_sunny_window",
+      "source": "04_sunny_window_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 294.1,
+      "at": "4:54",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 55,
+      "row": "05_bubbles_macro",
+      "source": "05_bubbles_macro_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 298.44,
+      "at": "4:58",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 56,
+      "row": "06_collect_blaze",
+      "source": "06_collect_blaze_t3.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 304.44,
+      "at": "5:04",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 57,
+      "row": "07_priestley_callback",
+      "source": "11_candle_tall_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 311.81,
+      "at": "5:12",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0,
+      "reviewed_ok": {
+        "note": "Chief ruling a 16 Oct: plate too short for a legal second stretch; reuse waived; no mint.",
+        "passed": [
+          "reuse: same stretch as 3:57 (give it a new stretch, or a new render)"
+        ]
+      }
+    },
+    {
+      "cut": 58,
+      "row": "08_explorer_shade",
+      "source": "08_explorer_shade_t2.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 318.85,
+      "at": "5:19",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 59,
+      "row": "09_bubbles_again",
+      "source": "05_bubbles_macro_t1_from4.500.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 324.17,
+      "at": "5:24",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 60,
+      "row": "10_only_green",
+      "source": "10_only_green_t2.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 328.17,
+      "at": "5:28",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 61,
+      "row": "11_night_jars",
+      "source": "11_night_jars_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 334.38,
+      "at": "5:34",
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0127 < film p5 0.0227"
+      ],
+      "offset": 0.0
+    },
+    {
+      "cut": 62,
+      "row": "12_shutters_open",
+      "source": "12_shutters_open_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 341.0,
+      "at": "5:41",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 63,
+      "row": "13_sun_canopy",
+      "source": "13_sun_canopy_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 345.4,
+      "at": "5:45",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 64,
+      "row": "14_leaf_glow",
+      "source": "14_leaf_glow_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 351.02,
+      "at": "5:51",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 65,
+      "row": "15_leaf_turns_sun",
+      "source": "15_leaf_turns_sun_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 356.42,
+      "at": "5:56",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 66,
+      "row": "16_pores_question",
+      "source": "16_pores_question_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 361.65,
+      "at": "6:02",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 67,
+      "row": "01_geneva_lake",
+      "source": "01_geneva_lake_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 367.67,
+      "at": "6:08",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 68,
+      "row": "02_senebier_jars",
+      "source": "02_senebier_jars_cover_v01.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 373.65,
+      "at": "6:14",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 69,
+      "row": "03_de_saussure",
+      "source": "11_trunk_pie_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 380.38,
+      "at": "6:20",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 70,
+      "row": "04_fine_scales",
+      "source": "04_fine_scales_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 387.15,
+      "at": "6:27",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 71,
+      "row": "05_sums_add_up",
+      "source": "05_sums_add_up_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 392.38,
+      "at": "6:32",
+      "fail": [],
+      "warn": [],
+      "offset": 5.0
+    },
+    {
+      "cut": 72,
+      "row": "06_leaf_in",
+      "source": "06_leaf_in_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 397.17,
+      "at": "6:37",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 73,
+      "row": "07_sugar_oxygen",
+      "source": "07_sugar_oxygen_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 403.92,
+      "at": "6:44",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 74,
+      "row": "08_sugar_wood",
+      "source": "08_sugar_wood_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 410.15,
+      "at": "6:50",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 75,
+      "row": "09_helmont_willow",
+      "source": "06_garden_years_t2.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 414.67,
+      "at": "6:55",
+      "fail": [],
+      "warn": [],
+      "offset": 4.0,
+      "reviewed_ok": {
+        "note": "Chief ruling a 16 Oct: plate too short for a legal second stretch; reuse waived; no mint.",
+        "passed": [
+          "reuse: same stretch as 1:33 (give it a new stretch, or a new render)"
+        ]
+      }
+    },
+    {
+      "cut": 76,
+      "row": "10_air_threads",
+      "source": "01_willow_air_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 419.88,
+      "at": "7:00",
+      "fail": [],
+      "warn": [],
+      "offset": 0.5,
+      "reviewed_ok": {
+        "note": "Chief ruling a 16 Oct: plate too short for a legal second stretch; reuse waived; no mint.",
+        "passed": [
+          "reuse: same stretch as 0:02 (give it a new stretch, or a new render)"
+        ]
+      }
+    },
+    {
+      "cut": 77,
+      "row": "11_trunk_pie",
+      "source": "11_trunk_pie_cg_v01.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 425.85,
+      "at": "7:06",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 78,
+      "row": "12_scales_barely",
+      "source": "12_pointer_short_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 431.08,
+      "at": "7:11",
+      "fail": [],
+      "warn": [],
+      "offset": 1.0,
+      "reviewed_ok": {
+        "note": "Chief ruling a 16 Oct: plate too short for a legal second stretch; reuse waived; no mint.",
+        "passed": [
+          "reuse: same stretch as 1:57 (give it a new stretch, or a new render)"
+        ]
+      }
+    },
+    {
+      "cut": 79,
+      "row": "13_water_in_tree",
+      "source": "05_pure_water_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 436.38,
+      "at": "7:16",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0,
+      "reviewed_ok": {
+        "note": "Chief ruling a 16 Oct: plate too short for a legal second stretch; reuse waived; no mint.",
+        "passed": [
+          "reuse: same stretch as 1:26 (give it a new stretch, or a new render)"
+        ]
+      }
+    },
+    {
+      "cut": 80,
+      "row": "14_built_from_sky",
+      "source": "14_built_from_sky_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 441.92,
+      "at": "7:22",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 81,
+      "row": "15_food_glow",
+      "source": "15_food_glow_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 448.17,
+      "at": "7:28",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 82,
+      "row": "16_cow_grass",
+      "source": "16_cow_grass_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 454.67,
+      "at": "7:35",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 83,
+      "row": "17_wind_air",
+      "source": "17_wind_air_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 460.6,
+      "at": "7:41",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 84,
+      "row": "18_forest_sea",
+      "source": "18_forest_sea_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 466.88,
+      "at": "7:47",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 85,
+      "row": "19_dots_crowd",
+      "source": "19_dots_crowd_cg_v01.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 472.46,
+      "at": "7:52",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 86,
+      "row": "20_explorer_willow",
+      "source": "20_explorer_willow_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 477.75,
+      "at": "7:58",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 87,
+      "row": "21_three_objects",
+      "source": "03_pot_jar_leaf_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 483.6,
+      "at": "8:04",
+      "fail": [],
+      "warn": [],
+      "offset": 2.3,
+      "reviewed_ok": {
+        "note": "Chief ruling a 16 Oct: plate too short for a legal second stretch; reuse waived; no mint.",
+        "passed": [
+          "reuse: same stretch as 0:11 (give it a new stretch, or a new render)"
+        ]
+      }
+    },
+    {
+      "cut": 88,
+      "row": "22_pulled_down",
+      "source": "22_pulled_down_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 489.88,
+      "at": "8:10",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 89,
+      "row": "23_carbon_atom",
+      "source": "23_carbon_atom_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 497.46,
+      "at": "8:17",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 90,
+      "row": "24_gold_foil",
+      "source": "11_gold_foil_bounce_v01.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 504.56,
+      "at": "8:25",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    }
+  ],
+  "polish": {
+    "edge_floor": 0.0227,
+    "low_detail_floor": {
+      "std": 13.44,
+      "edge": 0.0259,
+      "calibration": {
+        "video": "025_MarsRobot_full_rough_v02d.mp4",
+        "factor": 1.2,
+        "frames": [
+          {
+            "source": "PIA22223.jpg",
+            "t": 201.0,
+            "std": 12.1,
+            "edge": 0.0223
+          },
+          {
+            "source": "PIA22223.jpg",
+            "t": 216.3,
+            "std": 11.2,
+            "edge": 0.0216
+          },
+          {
+            "source": "PIA22929.jpg",
+            "t": 297.4,
+            "std": 26.54,
+            "edge": 0.5735
+          }
+        ]
+      }
+    }
+  }
+}

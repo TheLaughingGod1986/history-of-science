@@ -1,0 +1,57 @@
+[
+  {
+    "row": "s01_01_beyond_red_v01",
+    "timeline_in": 0.0,
+    "timeline_out": 4.96,
+    "source": "01_beyond_red_v01.jpg",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  },
+  {
+    "row": "s02_02_prism_window_v01",
+    "timeline_in": 4.96,
+    "timeline_out": 7.66,
+    "source": "02_prism_window_v01.jpg",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 4.96
+    },
+    "video": true
+  },
+  {
+    "row": "s03_03_thermometers_colours_v01",
+    "timeline_in": 7.66,
+    "timeline_out": 12.38,
+    "source": "03_thermometers_colours_v01.jpg",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 7.66
+    },
+    "video": true
+  },
+  {
+    "row": "s04_04_past_the_red_v01",
+    "timeline_in": 12.38,
+    "timeline_out": 19.82,
+    "source": "04_past_the_red_v01.jpg",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 12.38
+    },
+    "video": true
+  },
+  {
+    "row": "s05_01_beyond_red_v01",
+    "timeline_in": 19.82,
+    "timeline_out": 22.42,
+    "source": "end_card_loop_01_beyond_red_v01.jpg",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 19.82
+    },
+    "video": true
+  }
+]

@@ -1,0 +1,242 @@
+{
+  "id": "s04_unknown_x",
+  "job": "J0406",
+  "test": "B (search-titled)",
+  "air_date_draft": "2026-11-28",
+  "file": "10_Shorts/hos_003_s04_unknown_x_v01.mp4",
+  "sha256": "3b50feaf513e30e685885ca5980edaae0beab4bafa04c23dbcb88cefe9804546",
+  "duration_s": 26.5,
+  "vo_source": "02_Voiceover/05_Master/hos_003_part02_vo_v01_draft.wav",
+  "vo_take_indices": [
+    105,
+    106,
+    107,
+    108,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184
+  ],
+  "dropped": [
+    109,
+    148,
+    157,
+    168,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129
+  ],
+  "route": "claim-first lift: He calls it X \u2014 for unknown. \u2026 Pattern, not ghost story. (drops question 119..129)",
+  "vo_s": 25.944,
+  "words": 65,
+  "max_pause_s": 0.25,
+  "atempo": 1.03,
+  "bed": "hos003_s04_synth_pad_v01.wav (own synthesis, 0 credits)",
+  "bed_gain_db": -22.1,
+  "hook": "NAMED IT X",
+  "hook_layer": {
+    "font_size": 237,
+    "cap_px": 169,
+    "cap_pct": 8.8,
+    "lines": 3,
+    "block_pct": [
+      34.0,
+      66.0
+    ],
+    "widest_pct": 87.0
+  },
+  "who_card": {
+    "name": "WILHELM R\u00d6NTGEN",
+    "line2": "W\u00fcrzburg, 1895",
+    "line1_px": 72,
+    "line1_pct_of_band": 12.0,
+    "band": [
+      656,
+      1264
+    ],
+    "in_s": 2.15,
+    "out_s": 5.75,
+    "fade_s": 0.35
+  },
+  "title_on_screen": "How Did We Discover X-rays?",
+  "youtube_title_draft": "What Are X-Rays?",
+  "plan": [
+    {
+      "t0": 0.0,
+      "t1": 2.428,
+      "plate": "04_Generated-Clips/part02/07_names_it_x_v01.mp4",
+      "in_s": 4.9,
+      "crop_x": 640,
+      "lands_on": 0
+    },
+    {
+      "t0": 2.428,
+      "t1": 5.301,
+      "plate": "04_Generated-Clips/part02/11_detector_hold_v01.mp4",
+      "in_s": 0.4,
+      "crop_x": 540,
+      "lands_on": "An"
+    },
+    {
+      "t0": 5.301,
+      "t1": 9.293,
+      "plate": "04_Generated-Clips/part02/10_test_hand_metal_v01.mp4",
+      "in_s": 0.3,
+      "crop_x": 960,
+      "lands_on": "He"
+    },
+    {
+      "t0": 9.293,
+      "t1": 13.093,
+      "plate": "04_Generated-Clips/part02/09_test_book_v01.mp4",
+      "in_s": 0.3,
+      "crop_x": 480,
+      "lands_on": "Block"
+    },
+    {
+      "t0": 13.093,
+      "t1": 17.486,
+      "plate": "04_Generated-Clips/part03/02_hand_enters_path_v03.mp4",
+      "in_s": 2.2,
+      "crop_x": 780,
+      "lands_on": "With"
+    },
+    {
+      "t0": 17.486,
+      "t1": 19.953,
+      "plate": "04_Generated-Clips/part03/05_ring_darker_v05.mp4",
+      "in_s": 1.8,
+      "crop_x": 520,
+      "lands_on": "With"
+    },
+    {
+      "t0": 19.953,
+      "t1": 23.494,
+      "plate": "04_Generated-Clips/part02/05_glow_blooms_v02.mp4",
+      "in_s": 0.4,
+      "crop_x": 560,
+      "lands_on": "Move"
+    },
+    {
+      "t0": 23.494,
+      "t1": 26.494,
+      "plate": "04_Generated-Clips/part02/07_names_it_x_v01.mp4",
+      "in_s": 4.9,
+      "crop_x": 640,
+      "lands_on": "loop"
+    }
+  ],
+  "captions": 22,
+  "caption_check": {
+    "ok": true,
+    "changes": 21,
+    "ratio": 1.0
+  },
+  "gate": {
+    "exit": 0,
+    "output": "PASS  hos_003_s04_unknown_x_v01.mp4  dur=26.5s  audio=-22.8dB  motion=20.2  dhash=64c0640c2c284000\n   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_003_s04_unknown_x_v01_open_sheet.jpg"
+  },
+  "vo_check": {
+    "exit": 0,
+    "output": "PASS  hos_003_s04_unknown_x_v01.mp4  0:26.50  mean -22.8 dB  peak -3.8 dB  147 wpm"
+  },
+  "freezedetect_starts": [],
+  "qa": {
+    "polish_gate": {
+      "exit": 0,
+      "output": "polish gate PASS: 0 of 8 rows failed, 1 to look at -> 02_Video-Projects/003_Invisible-Bones-X-Rays/10_Shorts/qa_s04_unknown_x_v01/polish_gate_s04_unknown_x_v01.json"
+    },
+    "picture_qa": {
+      "exit": 0,
+      "output": "picture QA PASS: 0 of 8 cuts fail, 1 to look at -> 02_Video-Projects/003_Invisible-Bones-X-Rays/10_Shorts/qa_s04_unknown_x_v01/picture_qa_s04_unknown_x_v01/PICTURE_QA.md, 02_Video-Projects/003_Invisible-Bones-X-Rays/10_Shorts/qa_s04_unknown_x_v01/picture_qa_s04_unknown_x_v01/picture_qa_review.jpg"
+    }
+  },
+  "stills": [
+    "10_Shorts/_work_s04_unknown_x_v01/hos_003_s04_unknown_x_v01_t000.0.jpg",
+    "10_Shorts/_work_s04_unknown_x_v01/hos_003_s04_unknown_x_v01_t003.8.jpg",
+    "10_Shorts/_work_s04_unknown_x_v01/hos_003_s04_unknown_x_v01_t011.5.jpg",
+    "10_Shorts/_work_s04_unknown_x_v01/hos_003_s04_unknown_x_v01_t025.5.jpg"
+  ],
+  "icloud": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/003_Invisible-Bones-X-Rays/10_Shorts/hos_003_s04_unknown_x_v01.mp4",
+  "autocomplete_check": {
+    "date": "2026-10-16",
+    "source": "suggestqueries client=youtube ds=yt gl=GB signed-out",
+    "hits": [
+      "what are x rays",
+      "what are x rays and how are they produced",
+      "what are x rays physics",
+      "how do x rays work",
+      "who discovered x rays",
+      "how were x rays discovered"
+    ],
+    "note": "'What Are X-Rays?', 'How Do X-Rays Work?', and 'Who Discovered X-Rays?' are exact signed-out GB YouTube autocomplete hits. The lifted VO opens on R\u00f6ntgen naming the unknown ray X and testing it with a book, a hand, and metal as the shadows change on the glowing cardboard screen. Chief's call."
+  },
+  "air_date_draft_note": "2026-11-28 used for the gate only; slot is Chief's call.",
+  "who_card_note": "card is the long's own Part 01 VO and label WILHELM R\u00d6NTGEN \u00b7 W\u00fcrzburg, 1895, on screen 2.15\u20135.75 s (3.6 s) right after the 0\u20132 s hook. Clear of the 0\u20132 s hook, the 9\u201314 s title, and the last 3.0 s CTA.",
+  "overlap_note": "No overlap with 003 S1 (cardboard glow accident 22.5\u201341.5 s), S2 (Part 03 soft tissue vs bone density), or S3 (Part 04 Bertha's wedding ring): this is the Part 02 46.3\u201381.5 s stretch where R\u00f6ntgen names the ray X for unknown, locks the door, and tests book, hand, and metal in the beam."
+}

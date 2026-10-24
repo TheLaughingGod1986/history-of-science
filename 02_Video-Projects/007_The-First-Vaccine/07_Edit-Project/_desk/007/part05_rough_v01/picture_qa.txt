@@ -1,0 +1,2 @@
+WARN   1:19 row 10_history_book 10_history_book_t1.mp4: low detail: edge density 0.0245 < film p5 0.0258
+picture QA PASS: 0 of 20 cuts fail, 1 to look at -> /private/tmp/j0827-hos-wt/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/_desk/007/part05_rough_v01/PICTURE_QA.md, /private/tmp/j0827-hos-wt/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/_desk/007/part05_rough_v01/picture_qa_review.jpg

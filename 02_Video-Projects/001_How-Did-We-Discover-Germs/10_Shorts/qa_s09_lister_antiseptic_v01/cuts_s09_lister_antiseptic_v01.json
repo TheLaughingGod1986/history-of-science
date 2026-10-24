@@ -1,0 +1,90 @@
+[
+  {
+    "row": "s01_0",
+    "timeline_in": 0.0,
+    "timeline_out": 3.561,
+    "source": "03_protocol_v01b.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.6
+    },
+    "video": true
+  },
+  {
+    "row": "s02_If",
+    "timeline_in": 3.561,
+    "timeline_out": 7.724,
+    "source": "05_doctor_hands_instruments_from_v08.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.6
+    },
+    "video": true
+  },
+  {
+    "row": "s03_Scrub.",
+    "timeline_in": 7.724,
+    "timeline_out": 9.957,
+    "source": "06_soap_hands_v01.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.6
+    },
+    "video": true
+  },
+  {
+    "row": "s04_Suddenly",
+    "timeline_in": 9.957,
+    "timeline_out": 13.296,
+    "source": "05_theatre_wins_v01d.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.6
+    },
+    "video": true
+  },
+  {
+    "row": "s05_Prevention",
+    "timeline_in": 13.296,
+    "timeline_out": 15.055,
+    "source": "08_last_light_v01d.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.6
+    },
+    "video": true
+  },
+  {
+    "row": "s06_Not",
+    "timeline_in": 15.055,
+    "timeline_out": 17.882,
+    "source": "05_wash_works_v03.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.6
+    },
+    "video": true
+  },
+  {
+    "row": "s07_What",
+    "timeline_in": 17.882,
+    "timeline_out": 19.567,
+    "source": "06_soap_hands_v02d.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.6
+    },
+    "video": true
+  },
+  {
+    "row": "s08_loop",
+    "timeline_in": 19.567,
+    "timeline_out": 22.567,
+    "source": "loop_end_03_protocol_v01b.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.6
+    },
+    "video": true
+  }
+]

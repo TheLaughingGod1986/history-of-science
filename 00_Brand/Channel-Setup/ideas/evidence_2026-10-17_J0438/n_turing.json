@@ -1,0 +1,181 @@
+{
+ "pulled": "2026-10-17",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "alan turing",
+  "enigma machine",
+  "turing machine"
+ ],
+ "autocomplete": {
+  "alan turing": [
+   "alan turing",
+   "alan turing breaking the enigma code",
+   "alan turing interview",
+   "alan turing movie",
+   "alan turing interview scene",
+   "alan turing documentary",
+   "alan turing imitation game",
+   "alan turing enigma",
+   "alan turing machine",
+   "alan turing death"
+  ],
+  "enigma machine": [
+   "enigma machine",
+   "enigma machine cracked",
+   "enigma machine explained",
+   "enigma machine dream theater",
+   "enigma machine works",
+   "enigma machine documentary",
+   "enigma machine numberphile",
+   "enigma machine hindi",
+   "enigma machine alan turing",
+   "enigma machine game"
+  ],
+  "turing machine": [
+   "turing machine",
+   "turing machine in automata theory",
+   "turing machine in toc",
+   "turing machine example",
+   "turing machine problems",
+   "turing machine in toc tamil",
+   "turing machine board game",
+   "turing machine gate smashers",
+   "turing machine wwr",
+   "turing machine gatehub"
+  ]
+ },
+ "sharedTitleWords": [
+  "alan turing",
+  "the turing",
+  "turing test",
+  "enigma machine",
+  "computer science",
+  "and the"
+ ],
+ "neighbours": [
+  {
+   "id": "A-QgGXbDyR0",
+   "title": "Why don't perpetual motion machines ever work? - Netta Schramm",
+   "channel": "TED-Ed",
+   "views": "17,720,086 views",
+   "age": "9 yr ago",
+   "length": "5:31",
+   "tier": 1,
+   "viewCount": 17720086,
+   "foundBy": "ted-ed enigma machine",
+   "onTopic": true
+  },
+  {
+   "id": "3wLqsRLvV-c",
+   "title": "The Turing test: Can a computer pass for a human? - Alex Gendler",
+   "channel": "TED-Ed",
+   "views": "1,871,714 views",
+   "age": "10 yr ago",
+   "length": "4:43",
+   "tier": 1,
+   "viewCount": 1871714,
+   "foundBy": "alan turing",
+   "onTopic": true
+  },
+  {
+   "id": "XNEHP6qFeCs",
+   "title": "The machine that changed our understanding of human history - Max G. Levy",
+   "channel": "TED-Ed",
+   "views": "319,205 views",
+   "age": "8 mo ago",
+   "length": "6:19",
+   "tier": 1,
+   "viewCount": 319205,
+   "foundBy": "ted-ed enigma machine",
+   "onTopic": true
+  },
+  {
+   "id": "JsBZOcqZerk",
+   "title": "The Insane Real Engineering of the Nazi Enigma Machine",
+   "channel": "Veritasium",
+   "views": "19,994,735 views",
+   "age": "3 wk ago",
+   "length": "47:42",
+   "tier": 2,
+   "viewCount": 19994735,
+   "foundBy": "alan turing",
+   "onTopic": true
+  },
+  {
+   "id": "7TycxwFmdB0",
+   "title": "Alan Turing: Crash Course Computer Science #15",
+   "channel": "CrashCourse",
+   "views": "927,773 views",
+   "age": "9 yr ago",
+   "length": "13:04",
+   "tier": 2,
+   "viewCount": 927773,
+   "foundBy": "alan turing",
+   "onTopic": true
+  },
+  {
+   "id": "Btqro3544p8",
+   "title": "Alan Turing: Great Minds",
+   "channel": "SciShow",
+   "views": "489,486 views",
+   "age": "14 yr ago",
+   "length": "3:27",
+   "tier": 2,
+   "viewCount": 489486,
+   "foundBy": "ted-ed alan turing",
+   "onTopic": true
+  },
+  {
+   "id": "ODAA5Euc_20",
+   "title": "Alan Turing and The Imitation Game",
+   "channel": "SciShow",
+   "views": "473,916 views",
+   "age": "11 yr ago",
+   "length": "11:05",
+   "tier": 2,
+   "viewCount": 473916,
+   "foundBy": "ted-ed alan turing",
+   "onTopic": true
+  },
+  {
+   "id": "PLVCscCY4xI",
+   "title": "Turing Machines - How Computer Science Was Created By Accident",
+   "channel": "Up and Atom",
+   "views": "404,638 views",
+   "age": "6 yr ago",
+   "length": "17:05",
+   "tier": 2,
+   "viewCount": 404638,
+   "foundBy": "turing machine",
+   "onTopic": true
+  },
+  {
+   "id": "CspaXNkC2ec",
+   "title": "How did the Enigma Machine work?",
+   "channel": "Science Museum",
+   "views": "126,965 views",
+   "age": "7 yr ago",
+   "length": "1:48",
+   "tier": 2,
+   "viewCount": 126965,
+   "foundBy": "enigma machine",
+   "onTopic": true
+  },
+  {
+   "id": "O7KrwO3pVZ8",
+   "title": "The Turing Test, Artificial Intelligence and the Human Stupidity | Luca Longo | TEDxVicenza",
+   "channel": "TEDx Talks",
+   "views": "12,659 views",
+   "age": "9 yr ago",
+   "length": "14:47",
+   "tier": 1,
+   "viewCount": 12659,
+   "foundBy": "alan turing ted",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 3,
+ "gate": "PASS",
+ "hasTed": true,
+ "failedQueries": []
+}

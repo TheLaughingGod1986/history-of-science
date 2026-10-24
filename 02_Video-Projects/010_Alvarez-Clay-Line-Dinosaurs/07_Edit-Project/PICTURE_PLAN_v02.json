@@ -1,0 +1,154 @@
+{
+  "film": "010_Alvarez-Clay-Line-Dinosaurs",
+  "written": "2026-10-16",
+  "task": "J0334: plate boards v02 from the J0314 price-pass conditions. Flow-first. Mint nothing. Parked for Chief.",
+  "shot_list": "07_Edit-Project/SHOT_LIST_v01.md",
+  "vo": "02_Voiceover/VO_TAKES_KEEP.json status LOCKED v01 (Chief KEEP, desk #180 comment 6101773293, 11 Oct)",
+  "from": "part-0N_plates_v01.json. Spoken lines, t_s and use_s are unchanged.",
+  "readings": {
+    "flow_credits_left": 23740,
+    "flow_read_at": "2026-10-15T21:42:22Z",
+    "flow_note": "J0313 fresh Flow read. No Flow spend logged after it. Not re-read for this no-spend job.",
+    "vertex_promo_gbp": 71.02,
+    "vertex_read_at": "2026-10-15T07:30:31Z",
+    "vertex_margin_gbp": 1.0,
+    "vertex_usable_gbp": 70.02,
+    "vertex_note": "Not re-read. The route stays Flow-first."
+  },
+  "rates": {
+    "flow_credits_per_take": {
+      "Quality": 100,
+      "Fast": 10
+    },
+    "vertex_usd_per_s": {
+      "Quality": 0.2,
+      "Fast": 0.1
+    },
+    "usd_per_still": 0.039,
+    "gbp_per_usd_planning": 0.8,
+    "takes_per_keep_005": {
+      "Quality": 2.59,
+      "Fast": 1.96
+    },
+    "stills_per_plate_005": 2.28
+  },
+  "vo_film_total_s": 510.44,
+  "totals": {
+    "rows": 72,
+    "Quality": 47,
+    "Fast": 10,
+    "code_graphic": 13,
+    "edit_hold": 1,
+    "reuse": 1,
+    "added": 21,
+    "flow_credits_try1": 4800,
+    "flow_credits_expected": 12373,
+    "vertex_try1_gbp": 56.8,
+    "vertex_expected_gbp": 147.99,
+    "explorer": 2
+  },
+  "per_part": [
+    {
+      "rows": 15,
+      "Quality": 10,
+      "Fast": 5,
+      "code_graphic": 0,
+      "edit_hold": 0,
+      "reuse": 0,
+      "added": 6,
+      "part": 1,
+      "flow_credits_try1": 1050,
+      "flow_credits_expected": 2690,
+      "vertex_try1_gbp": 15.2,
+      "vertex_expected_gbp": 38.95
+    },
+    {
+      "rows": 13,
+      "Quality": 11,
+      "Fast": 0,
+      "code_graphic": 2,
+      "edit_hold": 0,
+      "reuse": 0,
+      "added": 4,
+      "part": 2,
+      "flow_credits_try1": 1100,
+      "flow_credits_expected": 2849,
+      "vertex_try1_gbp": 11.52,
+      "vertex_expected_gbp": 30.65
+    },
+    {
+      "rows": 12,
+      "Quality": 8,
+      "Fast": 1,
+      "code_graphic": 2,
+      "edit_hold": 1,
+      "reuse": 0,
+      "added": 3,
+      "part": 3,
+      "flow_credits_try1": 810,
+      "flow_credits_expected": 2092,
+      "vertex_try1_gbp": 8.96,
+      "vertex_expected_gbp": 23.67
+    },
+    {
+      "rows": 12,
+      "Quality": 5,
+      "Fast": 1,
+      "code_graphic": 6,
+      "edit_hold": 0,
+      "reuse": 0,
+      "added": 2,
+      "part": 4,
+      "flow_credits_try1": 510,
+      "flow_credits_expected": 1315,
+      "vertex_try1_gbp": 5.44,
+      "vertex_expected_gbp": 14.13
+    },
+    {
+      "rows": 20,
+      "Quality": 13,
+      "Fast": 3,
+      "code_graphic": 3,
+      "edit_hold": 0,
+      "reuse": 1,
+      "added": 6,
+      "part": 5,
+      "flow_credits_try1": 1330,
+      "flow_credits_expected": 3427,
+      "vertex_try1_gbp": 15.68,
+      "vertex_expected_gbp": 40.59
+    }
+  ],
+  "fits_now": {
+    "flow_if_010_were_alone": true,
+    "vertex": false,
+    "vertex_authorised": false,
+    "mint_order_with_3000_headroom": false
+  },
+  "reserved_flow_expected": {
+    "006": 0,
+    "007": 7196,
+    "008": 5605,
+    "009 tranche 1": 7354,
+    "028": 279
+  },
+  "reserved_flow_sum": 20434,
+  "flow_left_after_reserved": 3306,
+  "flow_needed_for_010_plus_headroom": 15373,
+  "mint_order": "006 > 007 > 008 > 009 tranche 1 > 010. 009 tranche 2 (5180) waits for the ~12 Nov renewal and is not reserved here. This board does not mint.",
+  "departures_from_shot_list": [
+    "Plates start where the locked VO says the line, not on the script's estimated clock.",
+    "Denmark's cliff is shown when the white sea cliff is said. The world map follows, on 'all around the world'.",
+    "The pigeon is inside the robin plate. Shot-list 05-10 was a named cut-first cutaway, and the two birds are one breath.",
+    "The Italy-to-California map (shot-list 02-09, a named cut-first cutaway) is not its own plate. The wrap covers the trip home.",
+    "Pyramid tracks, the iridium graph, both maps, the two clocks, the layer stack, the clock diagram, the supernova test, the 10 km scale, the food-chain icons, the crater scale and the question-mark map are £0 code graphics.",
+    "The glowing Chicxulub ring stays Quality. It is a new stylised map, not a published one.",
+    "Same-moment is a new Quality plate of the Gubbio cliff with a glow. It does not replay the opening clip.",
+    "Part 02's Explorer sits on 'only a few very small ones', between the empty rock and the pull-back.",
+    "Part 05's Explorer ends when the survival question starts. That question is a £0 icon card. The clay-line callback is its own Quality plate, then the bird at the window.",
+    "Overlay 'A HAMMER · A VIAL · A PAPER' is shortened to HAMMER, VIAL, PAPER so the label stays at four words or fewer.",
+    "v02: P1:03_bench_three_c1, P5:07_deccan_note_c1 and P5:07_deccan_note_c2 are own Fast mints. Their shortfalls (2.6 s, 6.22 s, 6.22 s) would leave a picture hole.",
+    "v02: P3:08_asaro_michel_c1 is an edit-hold of its parent. The shortfall is 0.06 s, so it is not a second Quality mint.",
+    "v02: the 13 teach diagrams stay £0 code graphics. No row is generation_authorized."
+  ]
+}

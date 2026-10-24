@@ -1,0 +1,202 @@
+{
+  "rule": {
+    "low_detail": "FAIL: luma std < 13.44 and edge density < 0.0259 (absolute floor); WARN: luma std < 18.0 or edge density < film p5",
+    "split_panel": "full-height/width seam or gutter",
+    "split_panel_gutter": "gutter counts only with edge density >= 0.01 in the 10% band on both sides",
+    "near_black": "mean < 28.0 or p95 < 50.0",
+    "noise": "grain std > 6 over structure std < 12, and the 8x-downscaled frame under the low-detail floor (std < 13.44 and edge density < 0.0259)",
+    "jitter": "centre-patch phase correlation: reversal against trend or > 0.35 px off trend"
+  },
+  "low_detail_floor": {
+    "std": 13.44,
+    "edge": 0.0259,
+    "calibration": {
+      "video": "025_MarsRobot_full_rough_v02d.mp4",
+      "factor": 1.2,
+      "frames": [
+        {
+          "source": "PIA22223.jpg",
+          "t": 201.0,
+          "std": 12.1,
+          "edge": 0.0223
+        },
+        {
+          "source": "PIA22223.jpg",
+          "t": 216.3,
+          "std": 11.2,
+          "edge": 0.0216
+        },
+        {
+          "source": "PIA22929.jpg",
+          "t": 297.4,
+          "std": 26.54,
+          "edge": 0.5735
+        }
+      ]
+    }
+  },
+  "video": "02_Video-Projects/003_Invisible-Bones-X-Rays/10_Shorts/hos_003_s04_unknown_x_v01.mp4",
+  "edge_floor": 0.0467,
+  "verdict": "PASS",
+  "failed": [],
+  "warn": [
+    {
+      "row": "s07_Move",
+      "cut": 6,
+      "t": 21.72,
+      "source": "05_glow_blooms_v02.mp4",
+      "why": [
+        "low detail: edge density 0.0436 < film p5 0.0467"
+      ]
+    }
+  ],
+  "reviewed_ok": [],
+  "rows": [
+    {
+      "cut": 0,
+      "row": "s01_0",
+      "source": "07_names_it_x_v01.mp4",
+      "t": 1.21,
+      "std": 73.99,
+      "mean": 94.11,
+      "p95": 238.0,
+      "edge": 0.0783,
+      "hf": 12.99,
+      "lf": 66.9,
+      "std8": 69.88,
+      "edge8": 0.4212,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 1,
+      "row": "s02_An",
+      "source": "11_detector_hold_v01.mp4",
+      "t": 3.86,
+      "std": 67.52,
+      "mean": 119.79,
+      "p95": 239.0,
+      "edge": 0.0592,
+      "hf": 10.25,
+      "lf": 62.58,
+      "std8": 64.45,
+      "edge8": 0.3761,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 2,
+      "row": "s03_He",
+      "source": "10_test_hand_metal_v01.mp4",
+      "t": 7.3,
+      "std": 56.09,
+      "mean": 67.0,
+      "p95": 174.0,
+      "edge": 0.0718,
+      "hf": 8.43,
+      "lf": 49.37,
+      "std8": 52.61,
+      "edge8": 0.3975,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 3,
+      "row": "s04_Block",
+      "source": "09_test_book_v01.mp4",
+      "t": 11.19,
+      "std": 74.15,
+      "mean": 83.38,
+      "p95": 212.0,
+      "edge": 0.0874,
+      "hf": 12.23,
+      "lf": 70.15,
+      "std8": 71.59,
+      "edge8": 0.2648,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 4,
+      "row": "s05_With",
+      "source": "02_hand_enters_path_v03.mp4",
+      "t": 15.29,
+      "std": 70.73,
+      "mean": 117.35,
+      "p95": 226.0,
+      "edge": 0.0525,
+      "hf": 8.99,
+      "lf": 67.26,
+      "std8": 68.96,
+      "edge8": 0.3216,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 5,
+      "row": "s06_With",
+      "source": "05_ring_darker_v05.mp4",
+      "t": 18.72,
+      "std": 55.12,
+      "mean": 97.3,
+      "p95": 194.0,
+      "edge": 0.0887,
+      "hf": 9.9,
+      "lf": 48.29,
+      "std8": 51.11,
+      "edge8": 0.4314,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 6,
+      "row": "s07_Move",
+      "source": "05_glow_blooms_v02.mp4",
+      "t": 21.72,
+      "std": 74.17,
+      "mean": 124.15,
+      "p95": 250.0,
+      "edge": 0.0436,
+      "hf": 8.52,
+      "lf": 69.49,
+      "std8": 71.61,
+      "edge8": 0.2541,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0436 < film p5 0.0467"
+      ]
+    },
+    {
+      "cut": 7,
+      "row": "s08_loop",
+      "source": "loop_end_07_names_it_x_v01.mp4",
+      "t": 24.99,
+      "std": 70.6,
+      "mean": 90.71,
+      "p95": 237.0,
+      "edge": 0.063,
+      "hf": 8.71,
+      "lf": 65.7,
+      "std8": 67.88,
+      "edge8": 0.3922,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    }
+  ]
+}

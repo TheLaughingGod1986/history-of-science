@@ -1,0 +1,98 @@
+{
+  "film": "001",
+  "video": "_C92tIJCk8A",
+  "job": "J0391",
+  "variant": "B v01",
+  "maker": "gemini",
+  "hook": "THE SWAN NECK",
+  "punch": "SWAN",
+  "jpg": "Selected/hos_001_thumb_B_swan_neck_v01.jpg",
+  "sha256": "4b9aea27e03db006c3a52d48e823685e22d048784abf577dc9838a2c503c1b76",
+  "bytes": 256454,
+  "plates": [
+    "Selected/hos_001_tc_thumb_v02.jpg (NAS 001 unused painted key-art plate: swan-neck flask right two-thirds + Explorer lower-left + gold scroll flourishes)"
+  ],
+  "method": "existing_001_plate_only_reletter_GeorgiaBold_with_original_painted_flourishes",
+  "spend": 0,
+  "heroBox": [
+    598,
+    32,
+    1100,
+    678
+  ],
+  "explorer": {
+    "source": "hos_001_tc_thumb_v02.jpg",
+    "box": [
+      88,
+      328,
+      316,
+      720
+    ],
+    "height_px": 392,
+    "height_frac": 0.544
+  },
+  "lettering": [
+    {
+      "word": "THE",
+      "kind": "cream",
+      "size": 70,
+      "box": [
+        205,
+        68,
+        365,
+        131
+      ]
+    },
+    {
+      "word": "SWAN",
+      "kind": "gold",
+      "size": 122,
+      "box": [
+        80,
+        119,
+        490,
+        230
+      ]
+    },
+    {
+      "word": "NECK",
+      "kind": "cream",
+      "size": 96,
+      "box": [
+        140,
+        218,
+        431,
+        305
+      ]
+    }
+  ],
+  "ornaments": {
+    "top_scroll_box": [
+      80,
+      20,
+      490,
+      59
+    ],
+    "bottom_scroll_box": [
+      140,
+      318,
+      445,
+      356
+    ]
+  },
+  "clearOfHero": true,
+  "clearOfExplorer": true,
+  "clearOfBadge": true,
+  "scores": {
+    "HOOK": "PASS \u2014 'THE SWAN NECK' (3 words, punch word 'SWAN' in gold) names Pasteur's iconic curved-neck flask shown on the right and adds to the video title ('How Did We Discover Germs?') without repeating any word from it.",
+    "BAND": "PASS \u2014 Upper-left lettering band (x=80..490, y=68..305, framed by painted gold scroll flourishes at y=20..356) sits completely left of the glowing swan-neck flask (x=598..1100), above the Explorer's hair (y=328), and clear of the bottom-right duration badge.",
+    "PHONE": "PASS \u2014 Checked on 168x94 preview sheet and side-by-side strip: 'THE SWAN NECK', the giant glowing swan-neck flask (502x646 px), and the Explorer's face/glasses (54.4% height) all read at a glance at 168x94."
+  },
+  "previews": [
+    "Selected/hos_001_thumb_B_swan_neck_v01_preview.jpg",
+    "Selected/hos_001_thumb_B_swan_neck_v01_style_sheet.jpg",
+    "Selected/hos_001_thumb_A_vs_B_swan_neck_v01_phone_168.jpg"
+  ],
+  "studio": false,
+  "status": "Test & Compare B v01 candidate for 001 (_C92tIJCk8A, built from existing 001 plate only, \u00a30). Parked for Chief: thumb B review. No Studio until OK."
+}

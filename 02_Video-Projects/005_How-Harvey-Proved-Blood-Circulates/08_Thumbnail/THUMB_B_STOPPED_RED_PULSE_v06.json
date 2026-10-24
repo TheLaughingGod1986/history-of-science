@@ -1,0 +1,98 @@
+{
+  "film": "005",
+  "video": "wwcjcFfC-5M",
+  "job": "J0564",
+  "variant": "B v06 (1.08x hero push-in + concrete stopped arterial pulse hook; pairs with B v04 'HIDDEN VEIN VALVES' and B v05 'TRAPPED UNDER SKIN')",
+  "maker": "gemini",
+  "hook": "STOPPED RED PULSE",
+  "punch": "STOPPED",
+  "jpg": "Selected/hos_005_thumb_B_stopped_red_pulse_v06.jpg",
+  "sha256": "1501646eb3b6d37259dd7738d226f8c1c482d75423023d4549378ffb1be0d174",
+  "bytes": 253696,
+  "plates": [
+    "Selected/hos_005_thumb_A_one_tight_band_v02.jpg (005 painted 16:9 key-art plate: glowing red artery stopped at linen band, pale forearm with branching blue veins, Explorer lower-left, original gold scroll flourishes)"
+  ],
+  "method": "existing_005_plate_only_1.08x_hero_push_in_and_reletter_GeorgiaBold_with_original_painted_flourishes",
+  "spend": 0,
+  "heroBox": [
+    560,
+    0,
+    1236,
+    704
+  ],
+  "explorer": {
+    "source": "hos_005_thumb_A_one_tight_band_v02.jpg",
+    "box": [
+      88,
+      344,
+      318,
+      720
+    ],
+    "height_px": 376,
+    "height_frac": 0.522
+  },
+  "lettering": [
+    {
+      "word": "STOPPED",
+      "kind": "gold",
+      "size": 80,
+      "box": [
+        108,
+        70,
+        468,
+        143
+      ]
+    },
+    {
+      "word": "RED",
+      "kind": "cream",
+      "size": 94,
+      "box": [
+        185,
+        148,
+        391,
+        229
+      ]
+    },
+    {
+      "word": "PULSE",
+      "kind": "cream",
+      "size": 90,
+      "box": [
+        144,
+        234,
+        433,
+        316
+      ]
+    }
+  ],
+  "ornaments": {
+    "top_scroll_box": [
+      60,
+      24,
+      468,
+      59
+    ],
+    "bottom_scroll_box": [
+      154,
+      328,
+      438,
+      356
+    ]
+  },
+  "clearOfHero": true,
+  "clearOfExplorer": true,
+  "clearOfBadge": true,
+  "scores": {
+    "HOOK": "PASS \u2014 'STOPPED RED PULSE' (3 words, punch word 'STOPPED' in gold) names the concrete visible arterial proof above the tight linen band on the upper arm (glowing red arterial pulse stopped dead at the knot while blue venous blood stays trapped below, De Motu Cordis ch. 2-3 & 11, FACT_NOTES_v01 rows 21 & 26; 005 script Part 03-04: 'Each squeeze pushes blood out into the arteries, and that push is the pulse... Above it, the artery throbs. Why? The tight band has stopped the blood getting in'), shares zero words with the video title ('The Tied Arm That Proved Your Blood Circulates'), Variant A ('ONE TIGHT BAND'), Variant B v03 ('THE BLOCKED ARTERY'), Variant B v04 ('HIDDEN VEIN VALVES'), or Variant B v05 ('TRAPPED UNDER SKIN'), and uses no vague questions or pronouns.",
+    "BAND": "PASS \u2014 Upper-left lettering band (x=108..468, y=70..316, framed by original painted gold scroll flourishes at y=24..356) sits completely left of the pushed-in hero arm (x=560..1236), above the Explorer's hair (y=344), and clear of the bottom-right duration badge.",
+    "PHONE": "PASS \u2014 Checked on 168x94 preview sheet and 4-way comparison strip: the 1.08x hero push-in and clarity boost make the stopped glowing red arterial pulse above the linen knot and swollen blue forearm veins below it larger and sharper at 168x94 while keeping 'STOPPED RED PULSE' and the Explorer's face/glasses (52.2% height) immediately legible in under a second."
+  },
+  "previews": [
+    "Selected/hos_005_thumb_B_stopped_red_pulse_v06_preview.jpg",
+    "Selected/hos_005_thumb_B_stopped_red_pulse_v06_style_sheet.jpg",
+    "Selected/hos_005_thumb_TC_4way_stopped_red_pulse_v06_phone_168.jpg"
+  ],
+  "studio": false,
+  "status": "Test & Compare B v06 candidate for 005 (wwcjcFfC-5M, built from existing 005 plate only with 1.08x hero push-in, \u00a30). Parked for Chief: thumb B review. No Studio until OK."
+}

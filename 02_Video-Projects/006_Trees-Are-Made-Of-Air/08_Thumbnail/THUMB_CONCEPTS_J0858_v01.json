@@ -1,0 +1,112 @@
+{
+  "film": "006_Trees-Are-Made-Of-Air",
+  "job": "J0858",
+  "step": "1 of 2 (thumbnail concepts + Flow credit price pass)",
+  "createdAt": "2026-10-23T02:00:00Z",
+  "by": "gemini",
+  "due": "2026-10-29",
+  "benFinalOkDue": "2026-11-01",
+  "airDateProposed": "2026-11-05T18:00:00Z",
+  "status": "parked for Chief: 006 thumbnail price + concept pick",
+  "generationAuthorized": false,
+  "spendThisRun": {
+    "flowCredits": 0,
+    "vertexGbp": 0.0
+  },
+  "liveBalances": {
+    "readAt": "2026-10-23T01:57:00Z",
+    "flowCreditsLeft": 20830,
+    "vertexPromoGbpLeft": 71.02
+  },
+  "titles": {
+    "manifestA": "The Willow Tree That Was Made of Air",
+    "manifestB_positiveQuestion": "Where Does a Tree's Weight Come From?",
+    "proposedC_positiveQuestion": "How Can a Tree Grow Out of Thin Air?",
+    "learningsRule1Note": "LEARNINGS.md rule #1: positive questions naming the subject outperform negative or abstract statements across 10+ OWB & HOS videos."
+  },
+  "styleLock": {
+    "format": "16:9 long thumbnail (1280x720 JPEG)",
+    "artEngine": "Flow Image (Nano Banana 2 16:9, 0 cr) with Flow Veo 3.1 Fast (10 cr/take) fallback reserve",
+    "letteringEngine": "Deterministic Python cover/thumbnail builder (Georgia Bold cream words + 1 larger gold punch word + dark ink outline + drop shadow + top/bottom gold scroll flourishes; 0 credits, no AI-generated text)",
+    "heroPlacement": "Right two-thirds (x=520..1240, y=20..700), whole object in frame, bottom-right duration badge zone (x>1060, y>580) clear, zero text/numbers on plate",
+    "explorerPlacement": "Lower left (x=80..340, y=340..720), ~48-52% frame height, teal coat, round gold glasses, satchel, looking at hero object",
+    "letteringBand": "Upper left (x=90..500, y=60..325), above Explorer's hair, completely left of hero object"
+  },
+  "concepts": [
+    {
+      "id": "A",
+      "role": "Primary (Answer Image)",
+      "hookSource": "Cold open 0:00 ('The wood of a tree is built mostly out of thin air') & Part 05 7:22 ('About half of dry wood is carbon, and every bit of that carbon came out of the air')",
+      "lettering": ["WOOD", "FROM", "SKY?"],
+      "punchWord": "SKY?",
+      "altLettering": ["GROWN", "FROM", "AIR?"],
+      "wordCount": 3,
+      "positiveQuestion": true,
+      "titleOverlapWords": 0,
+      "heroSubject": "Living willow tree in a terracotta pot on a sunlit oak table beside an arched window; luminous golden-teal ribbons of sky/air stream through the window into the leaves and condense into glowing solid wood rings inside a clean cutaway of the thick trunk.",
+      "flowPrompt": "STYLE LOCK from the attached stills: match the live History of Science long thumbnail's premium 3D cartoon painting, warm golden library/study light, arched window, and rounded stylised materials. Match the Explorer reference exactly (round thin gold glasses, teal long coat, tan waistcoat, brown bow tie, messy brown hair, satchel), exactly one Explorer. LANDSCAPE 16:9 wide single still frame. Hero object on the right two-thirds (x=520..1240): a lush young willow tree growing in a large terracotta pot on a polished oak table beside an arched sunlit window; luminous golden-teal ribbons of air stream visibly in through the open window into the green willow leaves and flow down into a glowing cutaway section of the thick wooden trunk showing warm solid wood rings. Lower left (x=80..340, y=340..720): the Explorer at about half the frame height, looking up in wonder at the glowing trunk cutaway. Upper left (x=60..510, y=20..335): warm shaded dark-wood bookshelves only, completely uncluttered for title lettering added in post. Bottom-right corner: empty dark tabletop shadow only. HARD REJECT: any text, letters, numbers, symbols, signs, watermarks, flat 2D shapes, split panels, photoreal, orange robot."
+    },
+    {
+      "id": "B",
+      "role": "Test & Compare B (Van Helmont's Brass Scales)",
+      "hookSource": "Cold open 0:04 ('So where does a tree's weight really come from?') & Part 02 2:06-2:19 (169 lb willow vs 200 lb dried soil losing only ~2 oz)",
+      "lettering": ["DO PLANTS", "EAT", "SOIL?"],
+      "punchWord": "SOIL?",
+      "altLettering": ["FED BY", "SOIL?"],
+      "wordCount": 4,
+      "positiveQuestion": true,
+      "titleOverlapWords": 0,
+      "heroSubject": "Giant 17th-century polished brass balance scale on an oak laboratory table: lower-right pan weighed down by a massive freshly uprooted 169-pound willow tree (trunk, roots, green canopy), while the raised middle-right pan holds the clay pot of dark dried furnace soil — beam tilted sharply toward the tree.",
+      "flowPrompt": "STYLE LOCK from the attached stills: match the live History of Science long thumbnail's premium 3D cartoon painting, warm golden Flemish laboratory/library light, and rounded stylised materials. Match the Explorer reference exactly (round thin gold glasses, teal long coat, tan waistcoat, brown bow tie, messy brown hair, satchel), exactly one Explorer. LANDSCAPE 16:9 wide single still frame. Hero object on the right two-thirds (x=520..1240): a grand 17th-century polished brass balance scale on a heavy oak table; the right-hand pan hangs low, weighed down by a massive uprooted willow tree with thick wooden trunk, roots, and bright green leaves, while the other pan holds a smaller clay pot of dark dried soil lifted high in the air, the brass beam tilted dramatically toward the heavy willow. All brass pans and iron weights are completely blank with no markings. Lower left (x=80..340, y=340..720): the Explorer at about half the frame height, leaning in with wide curious eyes behind his gold glasses looking at the tilted scale. Upper left (x=60..510, y=20..335): warm shaded wooden panelling and bookshelves, completely uncluttered for lettering added in post. Bottom-right corner: empty dark tabletop shadow only. HARD REJECT: any text, letters, numbers, symbols, engravings on weights or pans, flat 2D shapes, split panels, photoreal, orange robot."
+    },
+    {
+      "id": "C",
+      "role": "Alternate / 3-way Test & Compare C (Van Helmont's Sealed Five-Year Pot)",
+      "hookSource": "Part 01 0:56 & Part 02 1:32-2:35 (200 lb soil sealed under a perforated tin-plated iron lid, watered for 5 years with pure water alone)",
+      "lettering": ["GROWN", "ON", "WATER?"],
+      "punchWord": "WATER?",
+      "altLettering": ["ONLY", "RAIN", "WATER?"],
+      "wordCount": 3,
+      "positiveQuestion": true,
+      "titleOverlapWords": 0,
+      "heroSubject": "Close-up hero of van Helmont's large earthen clay pot sealed with a perforated tin-plated iron lid (tiny holes keeping dust out while glistening silver water droplets pour from a tilted glass flask through the holes), with a thick willow trunk bursting upward out of the lid's central collar.",
+      "flowPrompt": "STYLE LOCK from the attached stills: match the live History of Science long thumbnail's premium 3D cartoon painting, warm golden sunlit Flemish study light, and rounded stylised materials. Match the Explorer reference exactly (round thin gold glasses, teal long coat, tan waistcoat, brown bow tie, messy brown hair, satchel), exactly one Explorer. LANDSCAPE 16:9 wide single still frame. Hero object on the right two-thirds (x=520..1240): a large 17th-century earthen clay pot on a sturdy wooden bench, sealed across its rim with a shining tin-plated iron lid pierced with tiny round holes; clear silver water droplets pour from a tilted glass carafe through the holes while a thick, vigorous willow tree trunk bursts upward out of the central opening of the metal lid. Lower left (x=80..340, y=340..720): the Explorer at about half the frame height, pointing up at the perforated metal lid and water droplets. Upper left (x=60..510, y=20..335): warm shaded wall and bookcase background, completely uncluttered for lettering added in post. Bottom-right corner: empty dark bench shadow only. HARD REJECT: any text, letters, numbers, labels, flat 2D shapes, split panels, photoreal, orange robot."
+    }
+  ],
+  "pricing": {
+    "option1_nanoBanana2Stills": {
+      "model": "flow-nano-banana-2 (Flow Image 16:9)",
+      "costPerTakeCredits": 0,
+      "takesPlanned": 6,
+      "try1Credits": 0,
+      "expectedCredits": 0,
+      "cashGbp": 0.0
+    },
+    "option2_fastReservePair": {
+      "model": "flow-veo-3.1-fast / 10-cr tier (2 concepts A+B)",
+      "costPerTakeCredits": 10,
+      "takesTry1": 2,
+      "takesExpected": 4,
+      "try1Credits": 20,
+      "expectedCredits": 40,
+      "cashGbp": 0.0
+    },
+    "option3_fastReserveAll3": {
+      "model": "flow-veo-3.1-fast / 10-cr tier (3 concepts A+B+C)",
+      "costPerTakeCredits": 10,
+      "takesTry1": 3,
+      "takesExpected": 6,
+      "try1Credits": 30,
+      "expectedCredits": 60,
+      "cashGbp": 0.0
+    },
+    "poolHeadroom": {
+      "liveFlowCredits": 20830,
+      "hos008ExpectedCredits": 5605,
+      "hos009Tranche1ExpectedCredits": 7354,
+      "expectedRemainingAfter006_008_009T1": 7811,
+      "flowReserveFloor": 3000,
+      "surplusOverFloor": 4811
+    }
+  }
+}

@@ -1,0 +1,226 @@
+{
+ "pulled": "2026-10-21",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "octopus camouflage",
+  "how chameleons change color",
+  "animal camouflage"
+ ],
+ "autocomplete": {
+  "octopus camouflage": [
+   "octopus camouflage",
+   "octopus camouflage video",
+   "octopus camouflage ink",
+   "octopus camouflage changes color texture and shape",
+   "octopus camouflage rock",
+   "octopus camouflage test",
+   "octopus camouflage experiment",
+   "octopus camouflage compilation",
+   "octopus camouflage fish",
+   "octopus camouflage documentary"
+  ],
+  "how chameleons change color": [
+   "how chameleons change color",
+   "how chameleons change color in hindi",
+   "how does a chameleon change color",
+   "how fast chameleon change color",
+   "how did chameleon change color",
+   "how fast do chameleons change color",
+   "what makes chameleon change color",
+   "how fast can chameleons change color",
+   "how to use chameleon changing color markers"
+  ],
+  "animal camouflage": [
+   "animal camouflage",
+   "animal camouflage kratts creatures",
+   "animal camouflage game",
+   "animal camouflage quiz",
+   "animal camouflage and mimicry",
+   "animal camouflage documentary",
+   "animal camouflage reading passage 3 answers",
+   "animal camouflage video",
+   "animal camouflage read aloud",
+   "animal camouflage song"
+  ]
+ },
+ "sharedTitleWords": [
+  "the animal",
+  "animal kingdom",
+  "how do",
+  "change color"
+ ],
+ "neighbours": [
+  {
+   "id": "bVMVxJJ7P8M",
+   "title": "Cannibalism in the animal kingdom - Bill Schutt",
+   "channel": "TED-Ed",
+   "views": "6,988,630 views",
+   "age": "8 yr ago",
+   "length": "4:58",
+   "tier": 1,
+   "viewCount": 6988630,
+   "foundBy": "ted-ed animal camouflage",
+   "onTopic": true
+  },
+  {
+   "id": "VLkKiVIBxXU",
+   "title": "Why the octopus brain is so extraordinary - Cláudio L. Guerra",
+   "channel": "TED-Ed",
+   "views": "5,802,011 views",
+   "age": "10 yr ago",
+   "length": "4:17",
+   "tier": 1,
+   "viewCount": 5802011,
+   "foundBy": "ted-ed octopus camouflage",
+   "onTopic": true
+  },
+  {
+   "id": "_hBAr7uJ6L8",
+   "title": "The surprising reasons animals play dead - Tierney Thys",
+   "channel": "TED-Ed",
+   "views": "2,371,972 views",
+   "age": "8 yr ago",
+   "length": "4:47",
+   "tier": 1,
+   "viewCount": 2371972,
+   "foundBy": "ted-ed animal camouflage",
+   "onTopic": true
+  },
+  {
+   "id": "40KRCazHyuw",
+   "title": "The sneakiest tricksters of the animal kingdom - Eldridge Adams",
+   "channel": "TED-Ed",
+   "views": "673,597 views",
+   "age": "7 yr ago",
+   "length": "4:56",
+   "tier": 1,
+   "viewCount": 673597,
+   "foundBy": "ted-ed animal camouflage",
+   "onTopic": true
+  },
+  {
+   "id": "qWG2f9DwwpY",
+   "title": "Why animals help each other - Ashley Ward",
+   "channel": "TED-Ed",
+   "views": "460,862 views",
+   "age": "1 yr ago",
+   "length": "4:19",
+   "tier": 1,
+   "viewCount": 460862,
+   "foundBy": "ted-ed animal camouflage",
+   "onTopic": true
+  },
+  {
+   "id": "dzX8hvoGtT8",
+   "title": "The coolest stuff animals can do with their tongues - Cella Wright",
+   "channel": "TED-Ed",
+   "views": "303,154 views",
+   "age": "2 yr ago",
+   "length": "5:17",
+   "tier": 1,
+   "viewCount": 303154,
+   "foundBy": "ted-ed animal camouflage",
+   "onTopic": true
+  },
+  {
+   "id": "SQggDnScsvI",
+   "title": "How Do Chameleons Change Color?",
+   "channel": "Veritasium",
+   "views": "3,471,624 views",
+   "age": "11 yr ago",
+   "length": "5:42",
+   "tier": 2,
+   "viewCount": 3471624,
+   "foundBy": "how chameleons change color",
+   "onTopic": true
+  },
+  {
+   "id": "YOIRci0CKzg",
+   "title": "Camouflage: Animal Hide & Seek",
+   "channel": "SciShow Kids",
+   "views": "1,150,967 views",
+   "age": "11 yr ago",
+   "length": "4:27",
+   "tier": 2,
+   "viewCount": 1150967,
+   "foundBy": "animal camouflage",
+   "onTopic": true
+  },
+  {
+   "id": "qiuPCIqstOo",
+   "title": "Camouflage Isn't What It Appears To Be",
+   "channel": "Be Smart",
+   "views": "883,046 views",
+   "age": "1 yr ago",
+   "length": "12:44",
+   "tier": 2,
+   "viewCount": 883046,
+   "foundBy": "ted-ed animal camouflage",
+   "onTopic": true
+  },
+  {
+   "id": "Fcb9us2YJe8",
+   "title": "How Do Animals Change Color?",
+   "channel": "SciShow",
+   "views": "534,118 views",
+   "age": "12 yr ago",
+   "length": "7:35",
+   "tier": 2,
+   "viewCount": 534118,
+   "foundBy": "ted-ed how chameleons change color",
+   "onTopic": true
+  },
+  {
+   "id": "1xVttpwEREs",
+   "title": "TIL: How Chameleons Change Color | Today I Learned",
+   "channel": "National Geographic",
+   "views": "91,503 views",
+   "age": "10 yr ago",
+   "length": "1:07",
+   "tier": 2,
+   "viewCount": 91503,
+   "foundBy": "how chameleons change color",
+   "onTopic": true
+  },
+  {
+   "id": "FBn1RlGfdzg",
+   "title": "3 Camouflage",
+   "channel": "Khan Academy",
+   "views": "52,505 views",
+   "age": "12 yr ago",
+   "length": "4:04",
+   "tier": 2,
+   "viewCount": 52505,
+   "foundBy": "khan academy octopus camouflage",
+   "onTopic": true
+  },
+  {
+   "id": "dRqih1Zz21o",
+   "title": "Dynamic octopus camouflage -- art, science, and technology | Roger Hanlon | TEDxWoodsHole",
+   "channel": "TEDx Talks",
+   "views": "19,331 views",
+   "age": "14 yr ago",
+   "length": "13:02",
+   "tier": 1,
+   "viewCount": 19331,
+   "foundBy": "ted-ed octopus camouflage",
+   "onTopic": true
+  },
+  {
+   "id": "ZyKd5JKJeqk",
+   "title": "Yes, you can be an octopus too | Mathieu Renard | TEDxFrankfurt",
+   "channel": "TEDx Talks",
+   "views": "1,766 views",
+   "age": "3 yr ago",
+   "length": "15:05",
+   "tier": 1,
+   "viewCount": 1766,
+   "foundBy": "ted-ed octopus camouflage",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 5,
+ "gate": "PASS",
+ "hasTed": true,
+ "failedQueries": []
+}

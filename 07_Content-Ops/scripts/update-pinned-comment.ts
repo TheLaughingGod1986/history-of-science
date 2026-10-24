@@ -12,10 +12,13 @@
  *   npx tsx --env-file=.env scripts/update-pinned-comment.ts
  *
  * Config: 00_Brand/Channel-Setup/PINNED_COMMENTS.json
+ *
+ * Studio core: identical in orbit-with-ben and history-of-science; the channel's own sign-in and desk guard come from
+ * ./channel-youtube. Edit it in orbit-with-ben only (scripts/core_sync.py).
  */
 import fs from "fs";
 import path from "path";
-import { prisma } from "../src/lib/storage/prisma";
+import { afterRun, beforeRun, youtubeAccessToken } from "./channel-youtube";
 import { buildPinnedCommentText, DEFAULT_MILESTONES } from "../src/lib/publishing/pinned-comment";
 
 const CONFIG = path.resolve(__dirname, "../../00_Brand/Channel-Setup/PINNED_COMMENTS.json");
@@ -27,12 +30,6 @@ function arg(name: string): string | undefined {
   const idx = process.argv.indexOf(`--${name}`);
   if (idx === -1) return undefined;
   return process.argv[idx + 1];
-}
-
-async function accessToken(): Promise<string> {
-  // Shared helper: retries an "expired" row that still has a refresh token, and explains invalid_grant.
-  const { youtubeAccessToken } = await import("../src/lib/publishing/youtube-token");
-  return youtubeAccessToken();
 }
 
 async function yt(token: string, url: string, init?: RequestInit) {
@@ -48,7 +45,7 @@ async function yt(token: string, url: string, init?: RequestInit) {
 async function main() {
   const dry = process.argv.includes("--dry-run");
   const config: Config = JSON.parse(fs.readFileSync(CONFIG, "utf8"));
-  const token = await accessToken();
+  const token = await youtubeAccessToken();
   const channel = await yt(token, "https://www.googleapis.com/youtube/v3/channels?part=statistics&mine=true");
   const subscribers = Number(channel.items?.[0]?.statistics?.subscriberCount ?? 0);
   const textFor = (question: string) =>
@@ -113,9 +110,11 @@ async function main() {
   console.log(JSON.stringify({ subscribers, dry, results }, null, 2));
 }
 
+beforeRun();
+
 main()
   .catch((e) => {
     console.error(e);
     process.exit(1);
   })
-  .finally(() => prisma.$disconnect());
+  .finally(() => afterRun());

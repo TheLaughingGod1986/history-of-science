@@ -1,0 +1,148 @@
+{
+  "rule": {
+    "low_detail": "FAIL: luma std < 13.44 and edge density < 0.0259 (absolute floor); WARN: luma std < 18.0 or edge density < film p5",
+    "split_panel": "full-height/width seam or gutter",
+    "split_panel_gutter": "gutter counts only with edge density >= 0.01 in the 10% band on both sides",
+    "near_black": "mean < 28.0 or p95 < 50.0",
+    "noise": "grain std > 6 over structure std < 12, and the 8x-downscaled frame under the low-detail floor (std < 13.44 and edge density < 0.0259)",
+    "jitter": "centre-patch phase correlation: reversal against trend or > 0.35 px off trend"
+  },
+  "low_detail_floor": {
+    "std": 13.44,
+    "edge": 0.0259,
+    "calibration": {
+      "video": "025_MarsRobot_full_rough_v02d.mp4",
+      "factor": 1.2,
+      "frames": [
+        {
+          "source": "PIA22223.jpg",
+          "t": 201.0,
+          "std": 12.1,
+          "edge": 0.0223
+        },
+        {
+          "source": "PIA22223.jpg",
+          "t": 216.3,
+          "std": 11.2,
+          "edge": 0.0216
+        },
+        {
+          "source": "PIA22929.jpg",
+          "t": 297.4,
+          "std": 26.54,
+          "edge": 0.5735
+        }
+      ]
+    }
+  },
+  "video": "/Users/benjaminoats/YouTube/History Of Science/docs/STANDALONE_SHORTS_TEST_2026-10/shorts_v01/hos_sa_s7_priestley_mint_v02.mp4",
+  "edge_floor": 0.0161,
+  "verdict": "PASS",
+  "failed": [],
+  "warn": [
+    {
+      "row": "s02_01_candle_jar_v01",
+      "cut": 1,
+      "t": 7.78,
+      "source": "01_candle_jar_v01.jpg#b2",
+      "why": [
+        "low detail: edge density 0.0159 < film p5 0.0161"
+      ]
+    }
+  ],
+  "reviewed_ok": [],
+  "rows": [
+    {
+      "cut": 0,
+      "row": "s01_01_candle_jar_v01",
+      "source": "01_candle_jar_v01.jpg",
+      "t": 2.57,
+      "std": 49.61,
+      "mean": 53.81,
+      "p95": 208.0,
+      "edge": 0.0506,
+      "hf": 13.87,
+      "lf": 39.81,
+      "std8": 43.84,
+      "edge8": 0.2511,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 1,
+      "row": "s02_01_candle_jar_v01",
+      "source": "01_candle_jar_v01.jpg#b2",
+      "t": 7.78,
+      "std": 30.29,
+      "mean": 45.82,
+      "p95": 89.0,
+      "edge": 0.0159,
+      "hf": 5.78,
+      "lf": 26.5,
+      "std8": 28.03,
+      "edge8": 0.1418,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0159 < film p5 0.0161"
+      ]
+    },
+    {
+      "cut": 2,
+      "row": "s03_03_mint_sprig_v01",
+      "source": "03_mint_sprig_v01.jpg",
+      "t": 12.13,
+      "std": 38.33,
+      "mean": 65.54,
+      "p95": 126.0,
+      "edge": 0.027,
+      "hf": 6.63,
+      "lf": 35.04,
+      "std8": 36.3,
+      "edge8": 0.1747,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 3,
+      "row": "s04_04_candle_bright_v01",
+      "source": "04_candle_bright_v01.jpg",
+      "t": 15.59,
+      "std": 42.93,
+      "mean": 79.97,
+      "p95": 157.0,
+      "edge": 0.0317,
+      "hf": 7.47,
+      "lf": 39.61,
+      "std8": 40.81,
+      "edge8": 0.1877,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 4,
+      "row": "s05_01_candle_jar_v01",
+      "source": "end_card_loop_01_candle_jar_v01.jpg",
+      "t": 18.64,
+      "std": 30.25,
+      "mean": 44.58,
+      "p95": 89.0,
+      "edge": 0.0171,
+      "hf": 5.98,
+      "lf": 26.2,
+      "std8": 27.92,
+      "edge8": 0.1469,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    }
+  ]
+}

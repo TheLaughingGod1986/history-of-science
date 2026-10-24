@@ -1,0 +1,184 @@
+{
+  "rule": {
+    "low_detail": "FAIL: luma std < 13.44 and edge density < 0.0259 (absolute floor); WARN: luma std < 18.0 or edge density < film p5",
+    "split_panel": "full-height/width seam or gutter",
+    "split_panel_gutter": "gutter counts only with edge density >= 0.01 in the 10% band on both sides",
+    "near_black": "mean < 28.0 or p95 < 50.0",
+    "noise": "grain std > 6 over structure std < 12, and the 8x-downscaled frame under the low-detail floor (std < 13.44 and edge density < 0.0259)",
+    "jitter": "centre-patch phase correlation: reversal against trend or > 0.35 px off trend"
+  },
+  "low_detail_floor": {
+    "std": 13.44,
+    "edge": 0.0259,
+    "calibration": {
+      "video": "025_MarsRobot_full_rough_v02d.mp4",
+      "factor": 1.2,
+      "frames": [
+        {
+          "source": "PIA22223.jpg",
+          "t": 201.0,
+          "std": 12.1,
+          "edge": 0.0223
+        },
+        {
+          "source": "PIA22223.jpg",
+          "t": 216.3,
+          "std": 11.2,
+          "edge": 0.0216
+        },
+        {
+          "source": "PIA22929.jpg",
+          "t": 297.4,
+          "std": 26.54,
+          "edge": 0.5735
+        }
+      ]
+    }
+  },
+  "video": "02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/hos_002_s06_atomic_weights_v01.mp4",
+  "edge_floor": 0.0363,
+  "verdict": "PASS",
+  "failed": [],
+  "warn": [
+    {
+      "row": "s06_If",
+      "cut": 5,
+      "t": 20.21,
+      "source": "09_empty_chair_claim_v04.mp4",
+      "why": [
+        "low detail: edge density 0.0297 < film p5 0.0363"
+      ]
+    }
+  ],
+  "reviewed_ok": [],
+  "rows": [
+    {
+      "cut": 0,
+      "row": "s01_0",
+      "source": "06_cards_snap_line_v02.mp4",
+      "t": 1.9,
+      "std": 56.56,
+      "mean": 145.1,
+      "p95": 246.0,
+      "edge": 0.0853,
+      "hf": 16.04,
+      "lf": 46.98,
+      "std8": 49.96,
+      "edge8": 0.4458,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 1,
+      "row": "s02_Derive",
+      "source": "11_fix_weights_v02.mp4",
+      "t": 4.98,
+      "std": 56.57,
+      "mean": 129.28,
+      "p95": 240.0,
+      "edge": 0.073,
+      "hf": 11.12,
+      "lf": 51.37,
+      "std8": 53.46,
+      "edge8": 0.3509,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 2,
+      "row": "s03_Put",
+      "source": "02_hall_argument_v02.mp4",
+      "t": 7.81,
+      "std": 59.76,
+      "mean": 133.98,
+      "p95": 242.0,
+      "edge": 0.0568,
+      "hf": 8.06,
+      "lf": 56.67,
+      "std8": 57.96,
+      "edge8": 0.2408,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 3,
+      "row": "s04_Cards",
+      "source": "04_zoo_gets_ruler_v02.mp4",
+      "t": 11.32,
+      "std": 58.21,
+      "mean": 111.79,
+      "p95": 229.0,
+      "edge": 0.0691,
+      "hf": 10.72,
+      "lf": 53.74,
+      "std8": 55.45,
+      "edge8": 0.3033,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 4,
+      "row": "s05_Properties",
+      "source": "08_property_waves_v08.mp4",
+      "t": 15.45,
+      "std": 47.9,
+      "mean": 138.86,
+      "p95": 219.0,
+      "edge": 0.0535,
+      "hf": 8.22,
+      "lf": 43.96,
+      "std8": 45.61,
+      "edge8": 0.2482,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 5,
+      "row": "s06_If",
+      "source": "09_empty_chair_claim_v04.mp4",
+      "t": 20.21,
+      "std": 40.93,
+      "mean": 110.86,
+      "p95": 191.0,
+      "edge": 0.0297,
+      "hf": 6.49,
+      "lf": 38.08,
+      "std8": 39.06,
+      "edge8": 0.1861,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0297 < film p5 0.0363"
+      ]
+    },
+    {
+      "cut": 6,
+      "row": "s07_loop",
+      "source": "loop_end_06_cards_snap_line_v02.mp4",
+      "t": 24.2,
+      "std": 51.05,
+      "mean": 143.15,
+      "p95": 243.0,
+      "edge": 0.0516,
+      "hf": 8.99,
+      "lf": 45.42,
+      "std8": 47.63,
+      "edge8": 0.4301,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    }
+  ]
+}

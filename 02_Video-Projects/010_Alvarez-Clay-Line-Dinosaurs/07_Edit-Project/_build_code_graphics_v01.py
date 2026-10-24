@@ -1,0 +1,713 @@
+#!/usr/bin/env python3
+"""J0348: HOS 010 thirteen £0 teach graphics from plate boards v02.
+
+Cream ink on a lifted navy field. Durations, file names and the three side
+labels are read from the merged boards. Numbers on screen are only the ones
+the boards and FACT_NOTES already allow: Gubbio about 30 times, Chicxulub
+about 180 km. The early-1990s call-out is the date spoken on that beat.
+No Flow, no Vertex, no audio, no place names.
+"""
+import argparse, hashlib, json, math, subprocess as sp
+from pathlib import Path
+import numpy as np
+from PIL import Image, ImageDraw, ImageFont
+
+W, H, FPS = 1920, 1080, 30
+FONT = "/System/Library/Fonts/Supplemental/Didot.ttc"
+ROOT = Path(__file__).resolve().parent
+CREAM = (244, 228, 195)
+GOLD = (214, 172, 96)
+PALE = (196, 176, 148)
+TAN = (150, 124, 96)
+CLAY = (112, 86, 68)
+WHITE = (236, 232, 220)
+BLUE = (160, 196, 214)
+INK = (232, 214, 186)
+
+# Painted blobs, not a traced atlas. Names stay in code only.
+CONTINENTS = {
+    "namer": [(-168, 66), (-140, 70), (-100, 73), (-82, 68), (-62, 48), (-68, 44),
+              (-78, 26), (-97, 22), (-110, 24), (-125, 40), (-140, 58), (-158, 62)],
+    "samer": [(-78, 8), (-62, 10), (-48, 2), (-36, -8), (-38, -22), (-48, -36),
+              (-68, -55), (-74, -48), (-76, -18), (-80, -2)],
+    "europe": [(-10, 36), (-8, 44), (-6, 52), (0, 58), (8, 62), (14, 58), (12, 54),
+               (20, 60), (28, 70), (40, 64), (44, 48), (28, 41), (18, 37), (10, 36), (2, 36)],
+    "italy": [(7.5, 46), (9, 45), (11, 43.5), (13.5, 41.5), (15.5, 40.5), (16.2, 38.5),
+              (14.5, 37.2), (12.2, 38.2), (10.2, 41), (8.2, 44)],
+    "africa": [(-16, 20), (-8, 35), (10, 32), (32, 30), (43, 12), (50, 8), (42, -12),
+               (34, -30), (20, -35), (14, -28), (12, -6), (8, 4), (-6, 6), (-14, 14)],
+    "asia": [(40, 36), (48, 42), (60, 48), (70, 62), (100, 72), (140, 70), (178, 66),
+             (160, 54), (142, 40), (128, 34), (122, 22), (108, 12), (98, 6), (80, 8),
+             (68, 22), (56, 24), (44, 30)],
+    "aus": [(114, -20), (128, -14), (142, -12), (152, -24), (150, -36), (136, -38),
+            (120, -34), (114, -26)],
+    "nz": [(166, -36), (174, -35), (178, -38), (178, -46), (172, -47), (166, -42)],
+    "green": [(-62, 76), (-42, 82), (-22, 74), (-44, 62), (-68, 66)],
+}
+PINS = {"italy": (12.6, 41.6), "cliff": (10.5, 57.2), "nz": (174.0, -41.0)}
+CARIB = (-84.0, 19.0)
+
+# kind, and timed labels (text, t0, t1). Each label is 4 words or fewer.
+LABELS = {
+    "02_layers_build": [],
+    "08_two_clocks": [],
+    "02_pyramid_muons": [],
+    "07_clock_idea": [],
+    "01_iridium_spike": [("THE IRIDIUM SPIKE", 0.6, 4.2), ("ABOUT 30 TIMES", 8.2, 11.8)],
+    "03_world_pins": [("ALL AROUND THE WORLD", 1.0, 4.6)],
+    "04_supernova_test": [],
+    "05_ten_km": [],
+    "07_food_chain": [],
+    "10_where_hole": [],
+    "03_caribbean_hunt": [("EARLY 1990s", 6.2, 9.8)],
+    "05_ring_scale": [("ABOUT 180 KM WIDE", 2.0, 5.6)],
+    "11_why_survive": [],
+}
+SIDE = {
+    "01_iridium_spike": "THE IRIDIUM SPIKE",
+    "03_world_pins": "ALL AROUND THE WORLD",
+    "05_ring_scale": "ABOUT 180 KM WIDE",
+}
+HERO_T = {
+    "layers": 6.4, "clocks": 8.0, "pyramid": 4.5, "clay": 8.0, "spike": 10.0,
+    "pins": 13.0, "supernova": 16.5, "tenkm": 4.0, "food": 6.5, "hole": 3.6,
+    "caribbean": 11.5, "ring": 4.2, "survive": 12.8,
+}
+ORDER = [
+    (2, "02_layers_build", "layers"),
+    (2, "08_two_clocks", "clocks"),
+    (3, "02_pyramid_muons", "pyramid"),
+    (3, "07_clock_idea", "clay"),
+    (4, "01_iridium_spike", "spike"),
+    (4, "03_world_pins", "pins"),
+    (4, "04_supernova_test", "supernova"),
+    (4, "05_ten_km", "tenkm"),
+    (4, "07_food_chain", "food"),
+    (4, "10_where_hole", "hole"),
+    (5, "03_caribbean_hunt", "caribbean"),
+    (5, "05_ring_scale", "ring"),
+    (5, "11_why_survive", "survive"),
+]
+
+
+def ease(x):
+    x = max(0.0, min(1.0, x))
+    return x * x * (3 - 2 * x)
+
+
+def prog(t, a, b):
+    return ease((t - a) / (b - a)) if b > a else 1.0
+
+
+def col(rgb, a=1.0):
+    return (rgb[0], rgb[1], rgb[2], int(max(0, min(255, round(255 * a)))))
+
+
+def navy():
+    y, x = np.mgrid[:H, :W]
+    nx = (x - W / 2) / (W / 2)
+    ny = (y - H / 2) / (H / 2)
+    v = np.clip(nx * nx * 0.9 + ny * ny * 1.0, 0, 1.35)
+    rng = np.random.default_rng(1010)
+    noise = rng.normal(0, 1.4, (H, W))
+    img = np.zeros((H, W, 3), np.float32)
+    base = np.array([22, 36, 58], np.float32)
+    lift = np.array([58, 64, 70], np.float32)
+    for c in range(3):
+        img[:, :, c] = base[c] + lift[c] * (1 - 0.72 * v) + noise
+    return Image.fromarray(np.uint8(np.clip(img, 0, 255)), "RGB")
+
+
+def chaikin(pts, iters=2):
+    pts = list(pts)
+    for _ in range(iters):
+        nxt = []
+        n = len(pts)
+        for i in range(n):
+            a, b = pts[i], pts[(i + 1) % n]
+            nxt.append((0.75 * a[0] + 0.25 * b[0], 0.75 * a[1] + 0.25 * b[1]))
+            nxt.append((0.25 * a[0] + 0.75 * b[0], 0.25 * a[1] + 0.75 * b[1]))
+        pts = nxt
+    return pts
+
+
+def world_pt(lon, lat, scale=1.0, focus=(8, 12)):
+    x = 960 + (lon - focus[0]) * 4.15 * scale
+    y = 580 - (lat - focus[1]) * 5.15 * scale
+    return (x, y)
+
+
+def draw_world(d, scale=1.0, focus=(8, 12), alpha=1.0):
+    for pts in CONTINENTS.values():
+        pix = [world_pt(lon, lat, scale, focus) for lon, lat in pts]
+        d.polygon(pix, fill=col(PALE, 0.42 * alpha))
+        d.line(pix + [pix[0]], fill=col(CREAM, 0.9 * alpha), width=3)
+
+
+def pin(d, x, y, p, rgb=GOLD):
+    if p <= 0:
+        return
+    p = min(1.0, p)
+    y0 = y - (1 - p) * 220
+    d.line((x, y0 - 46, x, y0), fill=col(rgb, p), width=6)
+    d.ellipse((x - 14, y0 - 68, x + 14, y0 - 40), outline=col(rgb, p), width=6)
+
+
+def cliff_mark(d, x, y, p):
+    if p <= 0:
+        return
+    h = 46 * p
+    d.rectangle((x - 14, y - h, x + 14, y), fill=col(WHITE, p))
+    d.rectangle((x - 14, y - h * 0.48, x + 14, y - h * 0.32), fill=col(CLAY, p))
+
+
+def qmark(d, cx, cy, p):
+    if p <= 0:
+        return
+    font = ImageFont.truetype(FONT, 260, index=1)
+    d.text((cx, cy), "?", font=font, fill=col(CREAM, min(1.0, p)), anchor="mm")
+
+
+def _half_w(y, top, mid, bot, hw, neck):
+    if y <= mid:
+        u = (y - top) / max(1.0, mid - top)
+        return hw * (1 - u) + neck * u
+    u = (y - mid) / max(1.0, bot - mid)
+    return neck * (1 - u) + hw * u
+
+
+def _sand(d, cx, y0, y1, top, mid, bot, hw, neck, rgb):
+    if y1 - y0 < 4:
+        return
+    w0 = max(4, _half_w(y0, top, mid, bot, hw, neck) - 10)
+    w1 = max(4, _half_w(y1, top, mid, bot, hw, neck) - 10)
+    d.polygon([(cx - w0, y0), (cx + w0, y0), (cx + w1, y1), (cx - w1, y1)], fill=rgb)
+
+
+def hourglass(d, cx, top, bot, poured, a=1.0):
+    mid = (top + bot) / 2
+    hw, neck = 92, 14
+    c = col(CREAM, a)
+    d.line([(cx - hw, top), (cx - neck, mid), (cx + neck, mid), (cx + hw, top), (cx - hw, top)], fill=c, width=6)
+    d.line([(cx - hw, bot), (cx - neck, mid), (cx + neck, mid), (cx + hw, bot), (cx - hw, bot)], fill=c, width=6)
+    poured = max(0.0, min(1.0, poured))
+    sand = col(GOLD, 0.92 * a)
+    span = mid - top - 28
+    _sand(d, cx, top + 14, top + 14 + span * (1 - poured), top, mid, bot, hw, neck, sand)
+    _sand(d, cx, bot - 14 - span * poured, bot - 14, top, mid, bot, hw, neck, sand)
+    if 0.04 < poured < 0.96:
+        d.line((cx, mid - 6, cx, mid + 16), fill=sand, width=4)
+
+
+def skyline(d, x0, ground, a, t):
+    heights = [70, 120, 86, 168, 96, 140, 64, 110]
+    x = x0
+    for i, h in enumerate(heights):
+        w = 48
+        d.rectangle((x, ground - h, x + w, ground), outline=col(CREAM, a), width=4)
+        blink = 0.35 + 0.65 * (0.5 + 0.5 * math.sin(t * 2.2 + i))
+        for wy in range(ground - h + 16, ground - 12, 28):
+            d.rectangle((x + 14, wy, x + 24, wy + 12), fill=col(GOLD, a * blink * 0.8))
+        x += w + 10
+    d.line((x0 - 20, ground, x + 10, ground), fill=col(CREAM, a), width=4)
+
+
+def rock(d, cx, cy, r, t, a=1.0):
+    pts = []
+    for i in range(11):
+        ang = -math.pi / 2 + i * (2 * math.pi / 11)
+        wob = 0.78 + 0.22 * math.sin(i * 1.7)
+        pts.append((cx + math.cos(ang) * r * wob, cy + math.sin(ang) * r * wob * 0.86))
+    d.polygon(pts, fill=col(TAN, 0.55 * a), outline=col(CREAM, a))
+    d.line(pts + [pts[0]], fill=col(CREAM, a), width=6)
+    ang = t * 0.7
+    d.line((cx + math.cos(ang) * r * 0.15, cy + math.sin(ang) * r * 0.1,
+            cx + math.cos(ang) * r * 0.55, cy + math.sin(ang) * r * 0.4), fill=col(GOLD, 0.7 * a), width=5)
+
+
+def fern(d, x, y, a):
+    c = col(CREAM, a)
+    d.ellipse((x - 110, y - 260, x + 110, y + 20), fill=col(TAN, 0.38 * a), outline=col(GOLD, 0.65 * a), width=3)
+    d.line((x, y, x, y - 240), fill=c, width=7)
+    for i, yy in enumerate(range(y - 36, y - 230, -28)):
+        s = 32 + i * 9
+        d.line((x, yy, x - s, yy - 18), fill=c, width=5)
+        d.line((x, yy, x + s, yy - 18), fill=c, width=5)
+
+
+def grazer(d, x, y, a):
+    c = col(CREAM, a)
+    d.ellipse((x - 130, y - 160, x + 130, y + 60), fill=col(TAN, 0.38 * a), outline=col(GOLD, 0.65 * a), width=3)
+    d.ellipse((x - 70, y - 70, x + 70, y - 10), fill=col(PALE, 0.55 * a), outline=c, width=6)
+    d.ellipse((x + 48, y - 110, x + 96, y - 62), fill=col(PALE, 0.55 * a), outline=c, width=6)
+    d.line((x + 70, y - 78, x + 40, y - 40), fill=c, width=6)
+    for lx in (-48, -16, 16, 46):
+        d.line((x + lx, y - 16, x + lx - 6, y + 36), fill=c, width=6)
+    d.line((x - 60, y - 36, x - 110, y - 20), fill=c, width=5)
+
+
+def hunter(d, x, y, a):
+    """Side-view theropod facing the plant-eater: long tail, two legs, open jaw."""
+    c = col(CREAM, a)
+    d.ellipse((x - 175, y - 180, x + 205, y + 60), fill=col(TAN, 0.38 * a), outline=col(GOLD, 0.65 * a), width=3)
+    # tail trails to the right, away from the jaw
+    d.line((x + 28, y - 82, x + 176, y - 40), fill=c, width=8)
+    d.line((x + 164, y - 44, x + 196, y - 56), fill=c, width=5)
+    # torso, horizontal, not an upright body
+    d.ellipse((x - 52, y - 122, x + 58, y - 50), fill=col(PALE, 0.55 * a), outline=c, width=6)
+    # two hind legs and feet
+    d.line((x - 6, y - 56, x - 24, y + 30), fill=c, width=7)
+    d.line((x + 26, y - 54, x + 6, y + 32), fill=c, width=7)
+    d.line((x - 24, y + 30, x + 4, y + 34), fill=c, width=6)
+    d.line((x + 6, y + 32, x + 36, y + 26), fill=c, width=6)
+    # tiny forelimb, kept short so it cannot read as an arm
+    d.line((x - 30, y - 84, x - 54, y - 62), fill=c, width=5)
+    # neck into a long skull facing left
+    d.line((x - 38, y - 104, x - 74, y - 136), fill=c, width=7)
+    skull = [(x - 72, y - 156), (x - 158, y - 136), (x - 160, y - 120), (x - 78, y - 112)]
+    d.polygon(skull, fill=col(PALE, 0.55 * a))
+    d.line(skull + [skull[0]], fill=c, width=6)
+    # lower jaw, slightly open, with three teeth
+    d.line((x - 80, y - 116, x - 150, y - 98), fill=c, width=5)
+    for tx in (-136, -122, -108):
+        d.line((x + tx, y - 122, x + tx + 3, y - 110), fill=c, width=3)
+    d.ellipse((x - 100, y - 146, x - 88, y - 134), fill=c)
+
+
+def bird(d, x, y, a):
+    if a <= 0.02:
+        return
+    c = col(CREAM, a)
+    d.ellipse((x - 110, y - 95, x + 110, y + 85), fill=col(TAN, 0.42 * a), outline=col(GOLD, 0.75 * a), width=4)
+    d.ellipse((x - 42, y - 28, x + 46, y + 20), fill=col(PALE, 0.65 * a), outline=c, width=6)
+    d.polygon([(x + 42, y - 6), (x + 78, y - 16), (x + 42, y + 10)], fill=col(GOLD, 0.85 * a), outline=c)
+    d.arc((x - 24, y - 52, x + 56, y + 12), 200, 20, fill=c, width=6)
+    d.line((x - 36, y, x - 72, y - 18), fill=c, width=5)
+    d.ellipse((x + 20, y - 18, x + 30, y - 8), fill=c)
+
+
+def seed(d, x, y, a):
+    if a <= 0.02:
+        return
+    c = col(CREAM, a)
+    d.ellipse((x - 110, y - 105, x + 110, y + 85), fill=col(TAN, 0.42 * a), outline=col(GOLD, 0.75 * a), width=4)
+    d.ellipse((x - 34, y - 54, x + 34, y + 54), fill=col(GOLD, 0.65 * a), outline=c, width=6)
+    d.line((x, y - 54, x + 10, y - 84), fill=c, width=5)
+    for dy in (-24, 0, 24):
+        d.arc((x - 26, y + dy - 12, x + 26, y + dy + 12), 20, 160, fill=c, width=3)
+
+
+def nest(d, x, y, a):
+    if a <= 0.02:
+        return
+    c = col(CREAM, a)
+    d.ellipse((x - 125, y - 95, x + 125, y + 85), fill=col(TAN, 0.42 * a), outline=col(GOLD, 0.75 * a), width=4)
+    d.line((x - 110, y + 10, x + 110, y + 10), fill=c, width=5)
+    d.polygon([(x - 68, y + 10), (x - 48, y - 34), (x + 48, y - 34), (x + 68, y + 10)], fill=col(CLAY, 0.75 * a), outline=c)
+    d.arc((x - 64, y - 42, x + 64, y + 32), 190, 350, fill=c, width=6)
+    d.ellipse((x - 28, y - 22, x - 4, y - 2), fill=col(WHITE, 0.9 * a), outline=c, width=3)
+    d.ellipse((x + 4, y - 22, x + 28, y - 2), fill=col(WHITE, 0.9 * a), outline=c, width=3)
+
+
+def tube(d, x, y, a):
+    if a <= 0.02:
+        return
+    c = col(CREAM, a)
+    d.rounded_rectangle((x - 44, y, x + 44, y + 220), radius=20, fill=col(TAN, 0.35 * a), outline=c, width=6)
+    d.rectangle((x - 34, y + 85, x + 34, y + 198), fill=col(GOLD, 0.75 * a))
+    for yy in range(y + 40, y + 190, 30):
+        d.line((x - 28, yy, x + 10, yy), fill=c, width=3)
+    d.line((x - 34, y - 30, x - 34, y + 16), fill=c, width=6)
+    d.line((x + 34, y - 30, x + 34, y + 16), fill=c, width=6)
+
+
+SOUTH = chaikin([
+    (400, 720), (520, 600), (660, 540), (800, 520), (920, 600),
+    (1020, 540), (1160, 510), (1320, 540), (1460, 610), (1400, 720),
+    (1220, 790), (1000, 810), (780, 780), (580, 760), (440, 780),
+], iters=1)
+
+
+def paint(bg, kind, t, dur):
+    im = bg.convert("RGBA")
+    ov = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    d = ImageDraw.Draw(ov)
+    if kind == "layers":
+        rests = [860, 760, 660, 560, 460, 360]
+        shades = [TAN, PALE, CLAY, PALE, TAN, PALE]
+        for i, (y0, shade) in enumerate(zip(rests, shades)):
+            p = prog(t, 0.25 + i * 0.7, 1.3 + i * 0.7)
+            y = y0 - (1 - p) * 160
+            h = 86
+            pts = [(120, y + 8)]
+            for x in range(120, 1800, 48):
+                pts.append((x, y + math.sin(x * 0.012 + i) * 7))
+            pts += [(1800, y + 8), (1800, y + h), (120, y + h)]
+            d.polygon(pts, fill=col(shade, 0.55 * p))
+            d.line(pts[: len(pts) - 2], fill=col(CREAM, 0.85 * p), width=3)
+        if t > 6.2:
+            for i in range(8):
+                yy = 200 + ((t * 40 + i * 90) % 700)
+                d.ellipse((400 + i * 160, yy, 406 + i * 160, yy + 6), fill=col(CREAM, 0.5))
+    elif kind == "clocks":
+        hourglass(d, 620, 250, 900, prog(t, 1.4, 6.2))
+        slow = min(0.18, prog(t, 2.0, dur) * 0.18)
+        hourglass(d, 1300, 250, 900, min(0.08, slow))
+        if t > 2:
+            drip = (t * 0.45) % 1
+            d.ellipse((1294, 560 + drip * 120, 1306, 572 + drip * 120), fill=col(GOLD, 0.9))
+    elif kind == "pyramid":
+        apex, bl, br = (960, 180), (520, 900), (1400, 900)
+        p = prog(t, 0.2, 1.6)
+        d.polygon([apex, bl, br], fill=col(TAN, 0.45 * p))
+        d.line([apex, bl, br, apex], fill=col(CREAM, p), width=7)
+        for i in range(1, 9):
+            yy = apex[1] + (br[1] - apex[1]) * (i / 9)
+            tt = (yy - apex[1]) / (bl[1] - apex[1])
+            left = apex[0] + (bl[0] - apex[0]) * tt
+            right = apex[0] + (br[0] - apex[0]) * tt
+            if p > i / 10:
+                d.line((left, yy, right, yy), fill=col(CREAM, 0.78 * p), width=4)
+        if t > 0.8:
+            for i in range(12):
+                phase = (t * 0.28 + i / 12) % 1
+                yy = apex[1] + 40 + phase * (bl[1] - apex[1] - 60)
+                tt = (yy - apex[1]) / (bl[1] - apex[1])
+                left = apex[0] + (bl[0] - apex[0]) * tt
+                right = apex[0] + (br[0] - apex[0]) * tt
+                xx = left + 30 + (right - left - 60) * ((i * 0.17) % 1)
+                d.line((xx, yy - 24, xx + 4, yy + 68), fill=col(BLUE, 0.95), width=6)
+    elif kind == "clay":
+        for x, dense in ((430, True), (1130, False)):
+            d.rounded_rectangle((x, 240, x + 340, 900), radius=18, outline=col(CREAM, 1), width=6)
+            d.rectangle((x + 8, 250, x + 332, 890), fill=col(CLAY, 0.45))
+        rng = np.random.default_rng(7)
+        for i in range(70):
+            xx = 460 + rng.random() * 280
+            yy = 280 + rng.random() * 580
+            tw = 0.45 + 0.55 * (0.5 + 0.5 * math.sin(t * 3 + i))
+            d.ellipse((xx, yy, xx + 7, yy + 7), fill=col(GOLD, tw))
+        for i, (xx, yy) in enumerate(((1210, 520), (1320, 640), (1260, 760))):
+            tw = 0.4 + 0.6 * (0.5 + 0.5 * math.sin(t * 1.4 + i))
+            d.ellipse((xx, yy, xx + 8, yy + 8), fill=col(GOLD, 0.35 * tw))
+    elif kind == "spike":
+        for i, y in enumerate(range(280, 900, 70)):
+            shade = CLAY if i == 5 else PALE
+            d.rectangle((180, y, 1740, y + 64), fill=col(shade, 0.18))
+        peak_i = 42
+        peak_x = 240 + peak_i * (1440 / 69)
+        d.rectangle((peak_x - 36, 280, peak_x + 36, 900), fill=col(CLAY, 0.45))
+        pts = []
+        for i in range(70):
+            x = 240 + i * (1440 / 69)
+            base = 820
+            if peak_i - 4 <= i <= peak_i + 4:
+                peak = 1 - abs(i - peak_i) / 4
+                base = 820 - peak * 480
+            pts.append((x, base))
+        draw_n = int(prog(t, 0.4, 9.5) * (len(pts) - 1))
+        if draw_n >= 1:
+            d.line(pts[: draw_n + 1], fill=col(GOLD, 1), width=8)
+        if t > 9:
+            pulse = 0.6 + 0.4 * math.sin(t * 2)
+            d.ellipse((pts[peak_i][0] - 12, pts[peak_i][1] - 12, pts[peak_i][0] + 12, pts[peak_i][1] + 12), fill=col(CREAM, pulse))
+    elif kind == "pins":
+        a = prog(t, 0.2, 1.4)
+        draw_world(d, alpha=a)
+        pin(d, *world_pt(*PINS["italy"]), prog(t, 2.2, 3.6))
+        cx, cy = world_pt(*PINS["cliff"])
+        cliff_mark(d, cx, cy + 8, prog(t, 6.0, 7.6))
+        pin(d, *world_pt(*PINS["nz"]), prog(t, 10.0, 11.6))
+    elif kind == "supernova":
+        cx, cy = 540, 420
+        flare = 0.55 + 0.45 * prog(t, 0.4, 2.5)
+        r = 46 + flare * 54
+        for ring_r in (130, 195, 265, 340):
+            d.ellipse((cx - ring_r, cy - ring_r, cx + ring_r, cy + ring_r), outline=col(GOLD, 0.65 * flare), width=4)
+        d.ellipse((cx - r, cy - r, cx + r, cy + r), fill=col(GOLD, 0.92), outline=col(CREAM, 1), width=5)
+        for i in range(16):
+            ang = i * math.pi / 8 + t * 0.15
+            len_r = (r + 95 + flare * 60) if i % 2 == 0 else (r + 55 + flare * 35)
+            d.line((cx, cy, cx + math.cos(ang) * len_r, cy + math.sin(ang) * len_r), fill=col(CREAM, 0.88), width=5)
+        # Clay stratum and test vials on the right
+        d.rounded_rectangle((1120, 260, 1640, 860), radius=24, fill=col(CLAY, 0.42), outline=col(CREAM, 0.85), width=5)
+        for yy in range(320, 820, 64):
+            d.line((1150, yy, 1610, yy + 14 * math.sin(yy)), fill=col(PALE, 0.55), width=3)
+        line_p = prog(t, 1.8, 7.5)
+        if line_p > 0:
+            steps = 22
+            for i in range(int(steps * line_p) + 1):
+                u = i / steps
+                px = cx + (1380 - cx) * u
+                py = cy + (560 - cy) * u
+                d.ellipse((px - 6, py - 6, px + 6, py + 6), fill=col(CREAM, 0.95))
+        tube(d, 1300, 480, prog(t, 2.2, 5.5))
+        tube(d, 1470, 480, prog(t, 3.0, 6.5))
+        if t > 8.5:
+            cross = prog(t, 8.5, 11.5)
+            s = 86 * cross
+            d.line((cx - s, cy - s, cx + s, cy + s), fill=col(CREAM, cross), width=10)
+            d.line((cx + s, cy - s, cx - s, cy + s), fill=col(CREAM, cross), width=10)
+    elif kind == "tenkm":
+        skyline(d, 1180, 860, prog(t, 0.3, 1.6), t)
+        rock(d, 520, 420, 300, t, prog(t, 0.2, 1.2))
+    elif kind == "food":
+        # Rolling ground hills and sun-blocking dust cloud above
+        pts_ground = [(x, 810 + 16 * math.sin(x * 0.008)) for x in range(140, 1780, 32)]
+        d.line(pts_ground, fill=col(CREAM, 0.85), width=5)
+        for cy_ash in (210, 270):
+            pts_ash = [(x, cy_ash + 18 * math.sin(x * 0.011 + t)) for x in range(180, 1740, 36)]
+            d.line(pts_ash, fill=col(PALE, 0.65), width=4)
+        fern_a = prog(t, 0.15, 1.0) * (1 - 0.25 * prog(t, 2.4, 3.6))
+        grazer_a = prog(t, 0.9, 1.9) * (1 - 0.25 * prog(t, 4.6, 5.8))
+        hunter_a = prog(t, 1.8, 2.9) * (1 - 0.25 * prog(t, 6.0, 7.2))
+        fern(d, 460, 780, fern_a)
+        grazer(d, 940, 760, grazer_a)
+        hunter(d, 1440, 760, hunter_a)
+        if t > 1.2:
+            d.line((600, 680, 780, 680), fill=col(GOLD, 0.85), width=6)
+            d.line((755, 662, 780, 680, 755, 698), fill=col(GOLD, 0.85), width=6)
+        if t > 2.2:
+            d.line((1100, 680, 1245, 680), fill=col(GOLD, 0.85), width=6)
+            d.line((1220, 662, 1245, 680, 1220, 698), fill=col(GOLD, 0.85), width=6)
+    elif kind == "hole":
+        draw_world(d, alpha=prog(t, 0.15, 1.1))
+        qx, qy = world_pt(-38, 22)
+        qmark(d, qx, qy, prog(t, 1.2, 2.6))
+    elif kind == "caribbean":
+        z = prog(t, 1.6, 10.5)
+        scale = 1 + 1.15 * z
+        focus = (8 + (CARIB[0] - 8) * z, 12 + (CARIB[1] - 12) * z)
+        draw_world(d, scale=scale, focus=focus, alpha=1)
+        cx, cy = world_pt(*CARIB, scale, focus)
+        ring_a = prog(t, 4.0, 6.0)
+        wob = 6 * math.sin(t * 1.3)
+        if ring_a > 0:
+            r = 90 + wob
+            d.ellipse((cx - r, cy - r, cx + r, cy + r), outline=col(GOLD, 0.85 * ring_a), width=6)
+    elif kind == "ring":
+        p = prog(t, 0.2, 1.6)
+        d.polygon(SOUTH, fill=col(PALE, 0.5 * p))
+        d.line(SOUTH + [SOUTH[0]], fill=col(CREAM, p), width=5)
+        rp = prog(t, 1.6, 3.8)
+        box = (860, 560, 1180, 800)
+        if rp > 0.98:
+            d.ellipse(box, outline=col(GOLD, 1), width=10)
+        elif rp > 0:
+            d.arc(box, start=0, end=max(2, int(359 * rp)), fill=col(GOLD, 1), width=10)
+    elif kind == "survive":
+        # Protective earth stratum and shelter arches so at mid-shot (7.2s) all three survivors & shelter read clearly
+        for i, y0 in enumerate((760, 830, 900)):
+            pts_s = [(x, y0 + 14 * math.sin(x * 0.009 + i)) for x in range(160, 1760, 32)]
+            d.line(pts_s, fill=col(PALE, 0.65), width=4)
+        bird(d, 480, 560, prog(t, 0.4, 1.6))
+        seed(d, 960, 560, prog(t, 1.6, 2.8))
+        nest(d, 1420, 600, prog(t, 2.8, 4.2))
+        arc_p = prog(t, 3.8, 6.4)
+        if arc_p > 0:
+            d.arc((280, 260, 1640, 880), start=195, end=int(195 + 150 * arc_p), fill=col(GOLD, 0.92), width=8)
+            d.arc((320, 300, 1600, 860), start=198, end=int(198 + 144 * arc_p), fill=col(CREAM, 0.75), width=5)
+        for i in range(14):
+            ax = 240 + i * 108
+            ay = 140 + ((t * 45 + i * 37) % 140)
+            d.line((ax, ay, ax - 14, ay + 28), fill=col(PALE, 0.7), width=4)
+    else:
+        raise ValueError(kind)
+    im = Image.alpha_composite(im, ov)
+    return im.convert("RGB")
+
+
+def label_layer(labels, t):
+    ov = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    if not labels:
+        return ov
+    d = ImageDraw.Draw(ov)
+    shown = []
+    for text, t0, t1 in labels:
+        words = text.split()
+        if len(words) > 4:
+            raise SystemExit(f"label has {len(words)} words: {text}")
+        a = prog(t, t0, t0 + 0.4) * (1 - prog(t, t1 - 0.4, t1))
+        if a > 0.02:
+            shown.append((text, a))
+    y = 150
+    for text, a in shown:
+        size = 68 if len(text) < 22 else 58
+        font = ImageFont.truetype(FONT, size, index=1)
+        d.text((W / 2, y), text, font=font, fill=col(CREAM, a), anchor="mm",
+               stroke_width=2, stroke_fill=col((20, 28, 44), a))
+        y += 84
+    return ov
+
+
+def load_specs():
+    specs = []
+    for part, pid, kind in ORDER:
+        board_path = ROOT / "parts" / f"part-{part:02d}_plates_v02.json"
+        board = json.loads(board_path.read_text())
+        row = next(p for p in board["plates"] if p["id"] == pid)
+        if row["route"] != "code-graphic":
+            raise SystemExit(f"{pid} route is {row['route']}")
+        side = row.get("side_label")
+        if SIDE.get(pid) != side:
+            raise SystemExit(f"{pid} side_label {side!r} != {SIDE.get(pid)!r}")
+        labels = LABELS[pid]
+        for text, t0, t1 in labels:
+            if t1 - t0 > 4.0:
+                raise SystemExit(f"{text} holds {t1 - t0:.2f}s")
+            if len(text.split()) > 4:
+                raise SystemExit(text)
+        if side and side not in [text for text, _, _ in labels]:
+            raise SystemExit(f"missing side label {side}")
+        specs.append({
+            "id": pid,
+            "part": part,
+            "kind": kind,
+            "file": row["code_graphic_spec"]["file"],
+            "dur": row["use_s"],
+            "t_s": row["t_s"],
+            "vo_land": row["vo_land"],
+            "shows": row["code_graphic_spec"]["shows"],
+            "labels": labels,
+            "board": board_path.name,
+        })
+    if len(specs) != 13:
+        raise SystemExit(f"expected 13 graphics, got {len(specs)}")
+    return specs
+
+
+def digest(path):
+    h = hashlib.sha256()
+    with path.open("rb") as f:
+        for block in iter(lambda: f.read(1 << 20), b""):
+            h.update(block)
+    return h.hexdigest()
+
+
+def render_one(bg, spec, out, stills_only=False):
+    n = math.ceil(spec["dur"] * FPS)
+    hero = min(n - 1, int(min(HERO_T[spec["kind"]], spec["dur"] - 0.15) * FPS))
+    still_path = out / (Path(spec["file"]).stem + ".jpg")
+    path = out / spec["file"]
+    enc = None
+    if not stills_only:
+        enc = sp.Popen(
+            ["ffmpeg", "-v", "error", "-y", "-f", "rawvideo", "-pixel_format", "rgb24",
+             "-video_size", f"{W}x{H}", "-framerate", str(FPS), "-i", "-", "-an",
+             "-c:v", "libx264", "-preset", "veryfast", "-crf", "18", "-pix_fmt", "yuv420p",
+             "-movflags", "+faststart", str(path)],
+            stdin=sp.PIPE,
+        )
+    min_mean, min_p95 = 999.0, 999.0
+    frames = [hero] if stills_only else range(n)
+    try:
+        for k in frames:
+            t = k / FPS
+            frame = paint(bg, spec["kind"], t, spec["dur"])
+            lab = label_layer(spec["labels"], t)
+            if lab.getbbox():
+                frame = Image.alpha_composite(frame.convert("RGBA"), lab).convert("RGB")
+            if stills_only or k % 15 == 0 or k == hero:
+                g = np.asarray(frame.convert("L"))
+                min_mean = min(min_mean, float(g.mean()))
+                min_p95 = min(min_p95, float(np.percentile(g, 95)))
+            if k == hero:
+                frame.save(still_path, quality=90)
+            if enc is not None:
+                enc.stdin.write(frame.tobytes())
+    finally:
+        if enc is not None:
+            enc.stdin.close()
+            if enc.wait() != 0:
+                raise RuntimeError(f"ffmpeg failed for {spec['file']}")
+    words = []
+    for text, _, _ in spec["labels"]:
+        words.append({"text": text, "words": len(text.split())})
+    rec = {
+        "id": f"P{spec['part']}:{spec['id']}",
+        "file": spec["file"],
+        "use_s": spec["dur"],
+        "encoded_frames": n,
+        "encoded_s": round(n / FPS, 3),
+        "film_start_s": spec["t_s"],
+        "vo_land": spec["vo_land"],
+        "shows": spec["shows"],
+        "labels": words,
+        "board": spec["board"],
+        "min_sample_mean_luma": round(min_mean, 2),
+        "min_sample_p95": round(min_p95, 2),
+        "near_black": "PASS" if (min_mean >= 28 or min_p95 >= 50) else "FAIL",
+        "still": still_path.name,
+        "spend": "£0",
+    }
+    if path.exists() and not stills_only:
+        probe = json.loads(sp.check_output(["ffprobe", "-v", "error", "-show_streams", "-of", "json", str(path)]))
+        v = next(s for s in probe["streams"] if s["codec_type"] == "video")
+        if any(s.get("codec_type") == "audio" for s in probe["streams"]):
+            raise SystemExit(f"audio on {path.name}")
+        if (int(v["width"]), int(v["height"])) != (W, H):
+            raise SystemExit(f"size {path.name}")
+        rec["sha256"] = digest(path)
+        rec["bytes"] = path.stat().st_size
+        rec["probed_nb_frames"] = int(v["nb_frames"])
+    return rec
+
+
+def sheet(out, rows):
+    cols, tw, th = 4, 480, 270
+    rows_n = math.ceil(len(rows) / cols)
+    im = Image.new("RGB", (cols * tw, rows_n * (th + 40)), (28, 40, 62))
+    d = ImageDraw.Draw(im)
+    font = ImageFont.truetype(FONT, 22, index=1)
+    for i, rec in enumerate(rows):
+        still = Image.open(out / rec["still"]).resize((tw, th))
+        x, y = (i % cols) * tw, (i // cols) * (th + 40)
+        im.paste(still, (x, y))
+        d.text((x + 8, y + th + 8), rec["id"], fill=CREAM, font=font)
+    im.save(out / "CONTACT_SHEET.jpg", quality=90)
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--out", type=Path, default=ROOT / "code_graphics_v01")
+    ap.add_argument("--stills-only", action="store_true")
+    ap.add_argument("--only", default="")
+    args = ap.parse_args()
+    args.out.mkdir(parents=True, exist_ok=True)
+    specs = load_specs()
+    if args.only:
+        toks = [x.strip() for x in args.only.split(",") if x.strip()]
+        specs = [s for s in specs if any(tok in s["id"] or tok in s["kind"] for tok in toks)]
+        if not specs:
+            raise SystemExit(f"no match for {args.only}")
+    bg = navy()
+    rows = []
+    for spec in specs:
+        rec = render_one(bg, spec, args.out, args.stills_only)
+        rows.append(rec)
+        print(rec["id"], rec["near_black"], rec["min_sample_mean_luma"], rec["labels"], flush=True)
+        if rec["near_black"] != "PASS":
+            raise SystemExit(f"near-black FAIL {rec['id']}")
+    manifest = args.out / "CODE_GRAPHICS_v01.json"
+    if args.only:
+        if not manifest.exists():
+            raise SystemExit("missing CODE_GRAPHICS_v01.json")
+        existing = json.loads(manifest.read_text())
+        by_id = {r["id"]: r for r in existing}
+        for rec in rows:
+            if rec["id"] not in by_id:
+                raise SystemExit(f"unknown row {rec['id']}")
+            by_id[rec["id"]] = rec
+        rows = [by_id[r["id"]] for r in existing]
+    sheet(args.out, rows)
+    manifest.write_text(json.dumps(rows, indent=2) + "\n")
+    files = sorted(p for p in args.out.iterdir() if p.suffix in {".jpg", ".json", ".py"})
+    (args.out / "SHA256SUMS.txt").write_text("".join(f"{digest(p)}  {p.name}\n" for p in files))
+    fails = [r["id"] for r in rows if r["near_black"] != "PASS"]
+    if fails:
+        raise SystemExit(f"FAIL {fails}")
+    print(f"OK {len(rows)}", "stills" if args.stills_only else "rendered")
+
+
+if __name__ == "__main__":
+    main()

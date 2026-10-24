@@ -1,0 +1,68 @@
+[
+  {
+    "row": "s01_01_pigeons_horn_v01",
+    "timeline_in": 0.0,
+    "timeline_out": 5.52,
+    "source": "01_pigeons_horn_v01.jpg",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  },
+  {
+    "row": "s02_02_receiver_needle_v01",
+    "timeline_in": 5.52,
+    "timeline_out": 10.9,
+    "source": "02_receiver_needle_v01.jpg",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 5.52
+    },
+    "video": true
+  },
+  {
+    "row": "s03_03_nests_inside_v01",
+    "timeline_in": 10.9,
+    "timeline_out": 13.9,
+    "source": "03_nests_inside_v01.jpg",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 10.9
+    },
+    "video": true
+  },
+  {
+    "row": "s04_02_receiver_needle_v01",
+    "timeline_in": 13.9,
+    "timeline_out": 16.04,
+    "source": "02_receiver_needle_v01.jpg#b4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 13.9
+    },
+    "video": true
+  },
+  {
+    "row": "s05_05_every_direction_v01",
+    "timeline_in": 16.04,
+    "timeline_out": 18.9,
+    "source": "05_every_direction_v01.jpg",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 16.04
+    },
+    "video": true
+  },
+  {
+    "row": "s06_01_pigeons_horn_v01",
+    "timeline_in": 18.9,
+    "timeline_out": 21.5,
+    "source": "end_card_loop_01_pigeons_horn_v01.jpg",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 18.9
+    },
+    "video": true
+  }
+]

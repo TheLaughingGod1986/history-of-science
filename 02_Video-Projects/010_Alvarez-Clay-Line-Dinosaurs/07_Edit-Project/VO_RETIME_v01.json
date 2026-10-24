@@ -1,0 +1,416 @@
+{
+  "source": "Scribe stt_raw.json word starts, aligned on each plate's find-phrase. No new transcription.",
+  "card_breath_s": 0.6,
+  "card_to_vo_s": 1.9,
+  "parts": [
+    {
+      "part": 1,
+      "file": "hos_010_part01_the_line_in_the_rock_v01.mp3",
+      "sha256": "1ed2e52768aae1486fafbb42d5c7eaa62c705c635a44b3bad5900ae89b97cd41",
+      "duration_s": 89.04,
+      "card_in_film_s": null,
+      "vo_film_start_s": 0.0,
+      "vo_film_end_s": 89.04,
+      "chapter": "The Line in the Rock"
+    },
+    {
+      "part": 2,
+      "file": "hos_010_part02_the_gorge_at_gubbio_v01.mp3",
+      "sha256": "fc34abf304a6050d110abcd52d7c8da3565fe3da55e5f1734440396d4fb08f10",
+      "duration_s": 79.76,
+      "card_in_film_s": 89.64,
+      "vo_film_start_s": 91.54,
+      "vo_film_end_s": 171.3,
+      "chapter": "The Gorge at Gubbio"
+    },
+    {
+      "part": 3,
+      "file": "hos_010_part03_a_clock_made_of_stardust_v01.mp3",
+      "sha256": "9f25fbeb0cd847a0f60e0e21b3a7a1c1072b8900aad4db66114db5bf3cfb0e85",
+      "duration_s": 81.04,
+      "card_in_film_s": 171.9,
+      "vo_film_start_s": 173.8,
+      "vo_film_end_s": 254.84,
+      "chapter": "A Clock Made of Stardust"
+    },
+    {
+      "part": 4,
+      "file": "hos_010_part04_too_much_iridium_v01.mp3",
+      "sha256": "245df0013294e64016b66456d838d2538687158d8064f0dbc570587ac30cda40",
+      "duration_s": 103.84,
+      "card_in_film_s": 255.44,
+      "vo_film_start_s": 257.34,
+      "vo_film_end_s": 361.18,
+      "chapter": "Too Much Iridium"
+    },
+    {
+      "part": 5,
+      "file": "hos_010_part05_the_crater_and_the_birds_v01.mp3",
+      "sha256": "7e3c9c4f7122b5a80bad54eb135f08bcc9dba09cbf3da83ca841cebc71d7a67b",
+      "duration_s": 146.16,
+      "card_in_film_s": 361.78,
+      "vo_film_start_s": 363.68,
+      "vo_film_end_s": 509.84,
+      "chapter": "The Crater and the Birds"
+    }
+  ],
+  "plates": [
+    {
+      "part": 1,
+      "id": "01_clay_line",
+      "t_s": 0.1,
+      "use_s": 7.71,
+      "find": "What killed the dinosaurs"
+    },
+    {
+      "part": 1,
+      "id": "02_vial_turns",
+      "t_s": 15.52,
+      "use_s": 7.34,
+      "find": "So what happened"
+    },
+    {
+      "part": 1,
+      "id": "03_bench_three",
+      "t_s": 22.86,
+      "use_s": 5.25,
+      "find": "By the end of this film"
+    },
+    {
+      "part": 1,
+      "id": "04_long_reign",
+      "t_s": 33.36,
+      "use_s": 6.35,
+      "find": "For more than"
+    },
+    {
+      "part": 1,
+      "id": "05_empty_plain",
+      "t_s": 46.06,
+      "use_s": 4.64,
+      "find": "In the seas"
+    },
+    {
+      "part": 1,
+      "id": "06_museum_question",
+      "t_s": 50.7,
+      "use_s": 6.36,
+      "find": "For a long time"
+    },
+    {
+      "part": 1,
+      "id": "07_many_ideas",
+      "t_s": 63.42,
+      "use_s": 4.5,
+      "find": "dozens of ideas"
+    },
+    {
+      "part": 1,
+      "id": "08_hand_on_rock",
+      "t_s": 67.92,
+      "use_s": 5.87,
+      "find": "Picture yourself"
+    },
+    {
+      "part": 1,
+      "id": "09_gubbio_road",
+      "t_s": 85.52,
+      "use_s": 4.12,
+      "find": "young American geologist"
+    },
+    {
+      "part": 2,
+      "id": "01_walter_hammer",
+      "t_s": 91.68,
+      "use_s": 4.64,
+      "find": "Walter Alvarez was studying"
+    },
+    {
+      "part": 2,
+      "id": "02_layers_build",
+      "t_s": 96.32,
+      "use_s": 8.02,
+      "find": "The cliffs there"
+    },
+    {
+      "part": 2,
+      "id": "03_tiny_shells",
+      "t_s": 104.34,
+      "use_s": 4.6,
+      "find": "When he looked through"
+    },
+    {
+      "part": 2,
+      "id": "04_floating_sea",
+      "t_s": 113.54,
+      "use_s": 3.72,
+      "find": "They came from little"
+    },
+    {
+      "part": 2,
+      "id": "05_almost_none",
+      "t_s": 117.26,
+      "use_s": 3.62,
+      "find": "But just above"
+    },
+    {
+      "part": 2,
+      "id": "06_explorer_lens",
+      "t_s": 120.88,
+      "use_s": 4.49,
+      "find": "Only a few very small"
+    },
+    {
+      "part": 2,
+      "id": "07_same_level",
+      "t_s": 129.86,
+      "use_s": 7.25,
+      "find": "Because they vanished"
+    },
+    {
+      "part": 2,
+      "id": "08_two_clocks",
+      "t_s": 151.62,
+      "use_s": 15.74,
+      "find": "A few years would"
+    },
+    {
+      "part": 2,
+      "id": "09_wrap_sample",
+      "t_s": 167.36,
+      "use_s": 4.54,
+      "find": "He took a piece"
+    },
+    {
+      "part": 3,
+      "id": "01_luis_sample",
+      "t_s": 173.92,
+      "use_s": 5.29,
+      "find": "Walter's father was Luis"
+    },
+    {
+      "part": 3,
+      "id": "02_pyramid_muons",
+      "t_s": 184.5,
+      "use_s": 7.36,
+      "find": "hidden rooms inside"
+    },
+    {
+      "part": 3,
+      "id": "03_space_dust",
+      "t_s": 191.86,
+      "use_s": 7.08,
+      "find": "gentle rain of dust"
+    },
+    {
+      "part": 3,
+      "id": "04_dust_sea_floor",
+      "t_s": 198.94,
+      "use_s": 6.34,
+      "find": "settling on land"
+    },
+    {
+      "part": 3,
+      "id": "05_iridium_sinks",
+      "t_s": 211.62,
+      "use_s": 4.58,
+      "find": "young and molten"
+    },
+    {
+      "part": 3,
+      "id": "06_meteorite_rich",
+      "t_s": 216.2,
+      "use_s": 5.3,
+      "find": "But in meteorites"
+    },
+    {
+      "part": 3,
+      "id": "07_clock_idea",
+      "t_s": 221.5,
+      "use_s": 22.74,
+      "find": "So here was the clock"
+    },
+    {
+      "part": 3,
+      "id": "08_asaro_michel",
+      "t_s": 244.24,
+      "use_s": 3.98,
+      "find": "Frank Asaro"
+    },
+    {
+      "part": 3,
+      "id": "09_waiting_result",
+      "t_s": 252.2,
+      "use_s": 3.24,
+      "find": "What came back"
+    },
+    {
+      "part": 4,
+      "id": "01_iridium_spike",
+      "t_s": 257.46,
+      "use_s": 17.02,
+      "find": "In the Gubbio clay"
+    },
+    {
+      "part": 4,
+      "id": "02_stevns_cliff",
+      "t_s": 274.48,
+      "use_s": 4.49,
+      "find": "white sea cliff"
+    },
+    {
+      "part": 4,
+      "id": "03_world_pins",
+      "t_s": 283.46,
+      "use_s": 16.14,
+      "find": "all around the world"
+    },
+    {
+      "part": 4,
+      "id": "04_supernova_test",
+      "t_s": 299.6,
+      "use_s": 20.44,
+      "find": "exploding star nearby"
+    },
+    {
+      "part": 4,
+      "id": "05_ten_km",
+      "t_s": 320.04,
+      "use_s": 9.74,
+      "find": "A giant asteroid"
+    },
+    {
+      "part": 4,
+      "id": "06_dust_veil",
+      "t_s": 329.78,
+      "use_s": 4.66,
+      "find": "throw dust high"
+    },
+    {
+      "part": 4,
+      "id": "07_food_chain",
+      "t_s": 339.1,
+      "use_s": 7.66,
+      "find": "Plants would stop"
+    },
+    {
+      "part": 4,
+      "id": "08_science_paper",
+      "t_s": 346.76,
+      "use_s": 6.1,
+      "find": "In June"
+    },
+    {
+      "part": 4,
+      "id": "09_doubters",
+      "t_s": 352.86,
+      "use_s": 3.98,
+      "find": "It was bold"
+    },
+    {
+      "part": 4,
+      "id": "10_where_hole",
+      "t_s": 356.84,
+      "use_s": 4.94,
+      "find": "because if an asteroid"
+    },
+    {
+      "part": 5,
+      "id": "01_shocked_quartz",
+      "t_s": 371.26,
+      "use_s": 7.5,
+      "find": "tiny grains of quartz"
+    },
+    {
+      "part": 5,
+      "id": "02_glass_beads",
+      "t_s": 378.76,
+      "use_s": 6.44,
+      "find": "tiny beads of glass"
+    },
+    {
+      "part": 5,
+      "id": "03_caribbean_hunt",
+      "t_s": 385.2,
+      "use_s": 15.96,
+      "find": "towards the Caribbean"
+    },
+    {
+      "part": 5,
+      "id": "04_chicxulub_ring",
+      "t_s": 401.16,
+      "use_s": 5.2,
+      "find": "enormous crater"
+    },
+    {
+      "part": 5,
+      "id": "05_ring_scale",
+      "t_s": 406.36,
+      "use_s": 6.52,
+      "find": "It's called Chicxulub"
+    },
+    {
+      "part": 5,
+      "id": "06_same_moment",
+      "t_s": 412.88,
+      "use_s": 4.46,
+      "find": "the same moment"
+    },
+    {
+      "part": 5,
+      "id": "07_deccan_note",
+      "t_s": 421.8,
+      "use_s": 7.06,
+      "find": "volcanoes in India"
+    },
+    {
+      "part": 5,
+      "id": "08_all_at_once",
+      "t_s": 442.98,
+      "use_s": 7.47,
+      "find": "everything changes at once"
+    },
+    {
+      "part": 5,
+      "id": "09_robin",
+      "t_s": 465.38,
+      "use_s": 3.9,
+      "find": "the pigeon on the pavement"
+    },
+    {
+      "part": 5,
+      "id": "10_explorer_robin",
+      "t_s": 469.28,
+      "use_s": 4.64,
+      "find": "Every bird you have"
+    },
+    {
+      "part": 5,
+      "id": "11_why_survive",
+      "t_s": 473.92,
+      "use_s": 14.4,
+      "find": "Why did they survive"
+    },
+    {
+      "part": 5,
+      "id": "12_clay_callback",
+      "t_s": 488.32,
+      "use_s": 5.38,
+      "find": "So next time"
+    },
+    {
+      "part": 5,
+      "id": "13_window_song",
+      "t_s": 499.08,
+      "use_s": 3.2,
+      "find": "one of them is singing"
+    },
+    {
+      "part": 5,
+      "id": "14_bench_three_again",
+      "t_s": 502.28,
+      "use_s": 8.16,
+      "find": "A hammer, a vial"
+    }
+  ]
+}

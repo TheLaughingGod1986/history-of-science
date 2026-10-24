@@ -1,0 +1,203 @@
+{
+ "pulled": "2026-10-15",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "cholera",
+  "john snow",
+  "broad street pump"
+ ],
+ "autocomplete": {
+  "cholera": [
+   "cholera",
+   "cholera disease",
+   "cholera animation",
+   "cholera recipe",
+   "cholera chips",
+   "cholera microbiology",
+   "cholera song",
+   "cholera disease in hindi",
+   "cholera bhajan",
+   "cholera saline"
+  ],
+  "john snow": [
+   "jon snow",
+   "jon snow resurrection",
+   "jon snow king of the north",
+   "jon snow death reaction",
+   "jon snow death",
+   "jon snow vs ramsay bolton",
+   "jon snow last stand",
+   "jon snow battle of the bastards 4k",
+   "jon snow tribute",
+   "jon snow and ygritte"
+  ],
+  "broad street pump": [
+   "broad street pump",
+   "broad street pump extra history",
+   "cholera broad street pump",
+   "extra credits broad street pump"
+  ]
+ },
+ "sharedTitleWords": [
+  "the broad",
+  "broad street",
+  "street pump",
+  "extra history",
+  "england the",
+  "history part",
+  "khan academy",
+  "john snow",
+  "sodium potassium",
+  "potassium pump"
+ ],
+ "neighbours": [
+  {
+   "id": "TLpzHHbFrHY",
+   "title": "England: The Broad Street Pump - You Know Nothing, John Snow - Extra History - Part 1",
+   "channel": "Extra History",
+   "views": "2,883,980 views",
+   "age": "10 yr ago",
+   "length": "7:34",
+   "tier": 2,
+   "viewCount": 2883980,
+   "foundBy": "john snow",
+   "onTopic": true
+  },
+  {
+   "id": "1jlsyucUwpo",
+   "title": "England: The Broad Street Pump - Epidemiology Begins! - Extra History - Part 2",
+   "channel": "Extra History",
+   "views": "2,037,666 views",
+   "age": "10 yr ago",
+   "length": "6:05",
+   "tier": 2,
+   "viewCount": 2037666,
+   "foundBy": "broad street pump",
+   "onTopic": true
+  },
+  {
+   "id": "9NVT6iZP2qg",
+   "title": "England: The Broad Street Pump - Map of the Blue Death - Extra History - Part 3",
+   "channel": "Extra History",
+   "views": "1,951,971 views",
+   "age": "10 yr ago",
+   "length": "9:00",
+   "tier": 2,
+   "viewCount": 1951971,
+   "foundBy": "broad street pump",
+   "onTopic": true
+  },
+  {
+   "id": "cba7di0eL8I",
+   "title": "England: The Broad Street Pump - The Sanitary Movement - Extra History - Part 4",
+   "channel": "Extra History",
+   "views": "1,225,124 views",
+   "age": "10 yr ago",
+   "length": "6:34",
+   "tier": 2,
+   "viewCount": 1225124,
+   "foundBy": "broad street pump",
+   "onTopic": true
+  },
+  {
+   "id": "C_H-ONQFjpQ",
+   "title": "Sodium-potassium pump | Cells | MCAT | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "1,147,578 views",
+   "age": "16 yr ago",
+   "length": "13:53",
+   "tier": 2,
+   "viewCount": 1147578,
+   "foundBy": "khan academy broad street pump",
+   "onTopic": true
+  },
+  {
+   "id": "vh166DKxYiM",
+   "title": "Sodium potassium pump | Membranes and transport | Biology | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "388,957 views",
+   "age": "11 yr ago",
+   "length": "7:17",
+   "tier": 2,
+   "viewCount": 388957,
+   "foundBy": "khan academy broad street pump",
+   "onTopic": true
+  },
+  {
+   "id": "rg_7q_FPjxQ",
+   "title": "England: The Broad Street Pump - Lies - Extra History",
+   "channel": "Extra History",
+   "views": "361,575 views",
+   "age": "10 yr ago",
+   "length": "15:06",
+   "tier": 2,
+   "viewCount": 361575,
+   "foundBy": "broad street pump",
+   "onTopic": true
+  },
+  {
+   "id": "doteMFHPv18",
+   "title": "♫ \"The Broad Street Pump\" by Sean and Dean Kiner - Instrumental Music - Extra History",
+   "channel": "Extra History",
+   "views": "330,008 views",
+   "age": "10 yr ago",
+   "length": "1:32",
+   "tier": 2,
+   "viewCount": 330008,
+   "foundBy": "broad street pump",
+   "onTopic": true
+  },
+  {
+   "id": "wyWy4PouQxQ",
+   "title": "Snow on Friday | Addition and subtraction within 100 | Early Math | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "170,338 views",
+   "age": "11 yr ago",
+   "length": "4:18",
+   "tier": 2,
+   "viewCount": 170338,
+   "foundBy": "khan academy john snow",
+   "onTopic": true
+  },
+  {
+   "id": "_Uwwhudc-CQ",
+   "title": "The Real Story of John Snow",
+   "channel": "SciShow",
+   "views": "153,319 views",
+   "age": "7 yr ago",
+   "length": "5:40",
+   "tier": 2,
+   "viewCount": 153319,
+   "foundBy": "john snow",
+   "onTopic": true
+  },
+  {
+   "id": "8UBPt9vgJFA",
+   "title": "Cholera | Health | Biology | FuseSchool",
+   "channel": "FuseSchool - Global Education",
+   "views": "45,131 views",
+   "age": "6 yr ago",
+   "length": "3:22",
+   "tier": 2,
+   "viewCount": 45131,
+   "foundBy": "cholera",
+   "onTopic": true
+  },
+  {
+   "id": "hkUCrTfgaw8",
+   "title": "What Did John Snow Know About Cholera? - with James Grime",
+   "channel": "The Royal Institution",
+   "views": "25,069 views",
+   "age": "5 yr ago",
+   "length": "7:15",
+   "tier": 2,
+   "viewCount": 25069,
+   "foundBy": "ted-ed john snow",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 5,
+ "gate": "PASS",
+ "hasTed": false,
+ "failedQueries": []
+}

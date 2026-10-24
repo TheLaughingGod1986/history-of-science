@@ -12,24 +12,24 @@
 | lint:package | PASS on the draft package after the neighbours block edit (captions warning only), 2 Oct 2026. Title, description v01, tags v01 and schedule are proposals |
 | Script sign-off | v01 approved by Claude on the desk with 3 accuracy fixes (#180 comment 5950401504); **v02** = those fixes, `01_Script/trees_script_master_v02.md` |
 | VO | **v02 accepted** by Claude (#180 comment 5951184558) on the fixed `vo_check` (`358d9c7`, PR #188): **PASS** on all five parts and the listen file, 2 Oct (output below). "Genevan" confirmed in the take (whisper large-v3, 0.98) |
-| Picture | **boards v01 for Claude's review with a priced plan** (`07_Edit-Project/parts/part-0N_plates_v01.json`, `PICTURE_PLAN_v01.json`). 92 rows = 23 Quality + 59 Fast + 10 reuse. Vertex Free Trial **£65.73** before boarding; Flow **62 credits**. Expected £138.37 with 005's retake rate, so **£72.64 over the £0 floor** unless the 0-credit Flow options are approved. Nothing minted |
+| Picture | **All 5 parts (92 rows) KEEP and rough cuts assembled** (Chief KEEP sweep 15 Oct 2026, `#180 IC_kwDOUEPCF88AAAABcNg8Bw`, PR `#310 → 85e16bbb`). Part 01: 12/12 KEEP + `hos_006_part01_rough_v01.mp4` (`picture_qa` PASS); Part 02: UAT applied (`#180 5981378493`) + `hos_006_part02_rough_v02.mp4`; Part 03: 18/18 KEEP/reuse (with top-cropped `P3:06`) + `hos_006_part03_rough_v02.mp4` KEEP; Part 04: 16/16 KEEP/reuse (`P4:06 t3`, `P4:08 t2`, `P4:13–16 t1` KEEP) + `hos_006_part04_rough_v01.mp4` KEEP; Part 05: 24/24 KEEP/reuse/code-graphics (`P5:02` cover, `P5:11/19` code graphics KEEP) + `hos_006_part05_rough_v01.mp4` KEEP (`picture_qa` PASS). Flow balance **23,730**; no top-up needed |
 | Runtime target | 7–9 min, 5 parts. Script 1,284 spoken words ≈ 8:34 at 150 wpm (nearer 8:15 at the channel's VO pace) |
 | Air | proposed **Thu 5 Nov 2026 18:00 UK = 18:00 UTC**, normal publish (no Premiere); not signed off |
 | Shorts | 3 planned (lead Fri 6 Nov proposed), one a day at most, Related → this long; dates around the 005 and back-catalogue Shorts set by Claude |
 
-## STOP
+## Next
 
-- **Boards v01 and the priced plan wait for Claude's review on the desk.** No picture spend until he accepts the boards and Ben decides the top-up, or the 0-credit Flow options. Credit can run to £0, never onto paid billing.
+- **Full join v01 (J0312, 15 Oct):** the five QA-passed roughs are joined (`hos_006_full_join_v01.mp4`, stream copy, VO already in each part). No music bed yet (none on disk; credit hold until 30 Oct, Chief's OK before a new bed). Teach overlay list for Codex: `07_Edit-Project/_desk/006/full_join_v01/TEACH_OVERLAYS_v01.md`. Parked for Chief. Not a film PASS.
 
 ## Parts
 
 | Part | Plate board | Latest cut | Status |
 |---|---|---|---|
-| 01 Plants Eat Soil | `07_Edit-Project/parts/part-01_plates_v01.json` (12 rows: 3 Q, 9 F) | — | script v02 · VO v02 PASS · board v01 |
-| 02 Five Years and Two Ounces | `part-02_plates_v01.json` (22: 4 Q, 17 F, 1 reuse) | | script v02 · VO v02 PASS · board v01 |
-| 03 The Air That Mint Repaired | `part-03_plates_v01.json` (18: 4 Q, 13 F, 1 reuse) | | script v02 · VO v02 PASS · board v01 |
-| 04 Bubbles in the Sunlight | `part-04_plates_v01.json` (16: 6 Q, 8 F, 2 reuse) | | script v02 · VO v02 PASS · board v01 |
-| 05 Carbon From the Sky | `part-05_plates_v01.json` (24: 6 Q, 12 F, 6 reuse) | | script v02 · VO v02 PASS · board v01 |
+| 01 Plants Eat Soil | `07_Edit-Project/parts/part-01_plates_v01.json` (12 rows: 3 Q, 9 F) | `hos_006_part01_rough_v01.mp4` (61.67 s, `69974f305a34…`) | script v02 · VO v02 PASS · board v01 · **plates 12/12 KEEP · rough v01 PASS** |
+| 02 Five Years and Two Ounces | `part-02_plates_v01.json` (22: 4 Q, 17 F, 1 reuse) | `hos_006_part02_rough_v02.mp4` (117.00 s, `da02be4f9100…`) | script v02 · VO v02 PASS · board v01 · **UAT applied (#180 5981378493) · rough v02 KEEP** |
+| 03 The Air That Mint Repaired | `part-03_plates_v01.json` (18: 4 Q, 13 F, 1 reuse) | `hos_006_part03_rough_v02.mp4` (94.83 s, `ff80e9fdf802…`) | script v02 · VO v02 PASS · board v01 · **plates 18/18 KEEP/reuse (with P3:06) · rough v02 KEEP** |
+| 04 Bubbles in the Sunlight | `part-04_plates_v01.json` (16: 6 Q, 8 F, 2 reuse) | `hos_006_part04_rough_v01.mp4` (91.92 s, `fcdcce5fc5ce…`) | script v02 · VO v02 PASS · board v01 · **plates 16/16 KEEP/reuse · rough v01 KEEP** |
+| 05 Carbon From the Sky | `part-05_plates_v01.json` (24: 6 Q, 12 F, 6 reuse) | `hos_006_part05_rough_v01.mp4` (142.38 s, `b3ca1afb9cd9…`) | script v02 · VO v02 PASS · board v01 · **plates 24/24 KEEP/reuse/CG · rough v01 KEEP (PASS)** |
 
 ## 2 Oct 2026 — scaffold, script v01, gates (Grok)
 
@@ -356,3 +356,425 @@ With both, the expected cost is about **£70.69, around £5 over** (or about £6
 Next on your word: mint Part 01 (Vertex, from `01_willow_air`) and read the credit after each part, as with 005. I'll do any merges you want in the boards first.
 
 Keep this file current on `main`. A STOP (quota, auth, missing VO) is a line here, not an open branch.
+
+
+## 13 Oct 2026 — J0140 Senebier recovery (Codex covering)
+
+Chief desk rulings 6140112141 / 6140142639 authorize a fresh zero-credit Nano Banana still and one Fast i2v attempt for P5:02. P5:03 uses the Chief-reassigned P5:11 clip. Runner `_probe_senebier_fast_v01.py` uses a fresh t3 filename and refuses another submitted attempt.
+
+Initial run stopped before Create because neither uploaded style reference was attached. Flow remained 23,690 credits (0 spent). `_flow_still_v01.py` now waits for each exact completed upload tile and verifies prompt chips. No-spend live check output:
+
+```text
+attach via library 04_sunny_window_v01.jpg: True (chips=1)
+attach via library 10_mint_jar_v01.jpg: True (chips=2)
+No-spend style-ref attachment check: 2 chips
+```
+
+Both changed Python files compile. `status_board.py --check`: `STATUS.md and kanban/index.html match PIPELINE.json`. These are tool checks only, no creative PASS.
+
+Resumed detached in tmux `j0140-senebier-fast-v02`, under the `flow-cdp-9222` writer lock. Log `/Users/benjaminoats/_desk/logs/j0140-senebier-fast-v02.log`; exit marker same stem `.done`. Read it before continuing; missing marker means still running. No duplicate or further paid retry. P4:08 t2 remains for Chief KEEP; missing paid P4:06 t2 remains for Chief decision. PR #310 records code and board, media stays outside git. Shared checkout changes were preserved; its pull was blocked by them.
+
+## 14 Oct 2026 — J0140 Acting-Chief ruling executed: P4:06 t3 Fast, P5:11/19 code graphics, review/j0140 sheets, and Part 03 v02 + Part 04 v01 + Part 05 v01 roughs (Gemini covering)
+
+Executed the 4-point Acting-Chief ruling (Claude, 14 Oct 20:50Z) on Flow (CDP 9222) and assembled all three roughs:
+
+1. **P4:06 t2 probe & t3 Fast mint (`_probe_collect_blaze_fast_v01.py`):**
+   - Fixed `harvest()` in `_mint_flow_cdp_v01.py` with top-row fallback (`y > 20`) and inspected Flow project `5c3e36ef-deef-4d70-965f-a350ca8376ab` (`f269dd3e` held `P4:10 t2`, already harvested). Confirmed `06_collect_blaze_t2` had failed server-side with no video tile in the project (Flow had refunded 50 credits: balance `23,740`).
+   - Minted and harvested one authorized Fast take `06_collect_blaze_t3.mp4` (`1280x720`, 8.0 s, 24 fps, 0 freezes, sha256 `61e303bc25bd5b415a6703d3c053f390077b471485da3faaa44ac53c48668989`, 10 credits: `23,740 -> 23,730`, logged via `ai_spend.py spend --pool flow`).
+2. **Part 05 0-credit house-style code graphics (`_build_part05_code_graphics_v01.py`) & P5:02 cover fallback:**
+   - `11_trunk_pie_cg_v01.mp4` (6.0 s, 1920x1080 @ 24 fps, 0 freezes, sha256 `60e63c5e5e1d960fa41bc8bfba18ac58f936818666a90e0e0da244cb94b98d98`, `polish_gate` std `53.74`, edge `0.041`, seams `[]`): animated willow cross-section dividing into 50% dark walnut, 42% warm wood, 6% lighter wood, and 2% pale mineral-ash sliver on cream parchment, no letters.
+   - `19_dots_crowd_cg_v01.mp4` (6.0 s, 1920x1080 @ 24 fps, 0 freezes, sha256 `1931f67210cd1436e4214aa9e0dd076b3b36621cb84b58f986fdcfbc3bd18691`, `polish_gate` std `28.64`, edge `0.1178`, seams `[]`): 10,000 jostling pale dots inside a circular walnut-and-brass specimen lens bezel, with 4 dots swelling into solid bright gold, no letters.
+   - `02_senebier_jars_cover_v01.mp4` (7.46 s, 1920x1080 @ 24 fps, 0 freezes, sha256 `f667a4556aa66fd6da0c2c9798718d3540a5036b9921210366c96ff478a22731`): 0-credit cover from KEEP `P4:04_sunny_window_t1` (`1.50–5.25 s`) + KEEP `P4:05_bubbles_macro_t1` (`3.75–7.46 s`).
+3. **Contact sheets pushed to `review/j0140` and `cursor/j0140-006-flow-mint`:**
+   - Added all 9 pending UAT contact sheets + composite (`J0140_ALL_9_REVIEW_SHEETS.jpg`) under `02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/_desk/006/j0140_review_sheets/`.
+4. **Rough cuts assembled (`_assemble_part03_04_05_roughs_v01.py`, 0 spend, copied to iCloud `HOS UAT`):**
+   - **Part 03 rough v02** (`hos_006_part03_rough_v02.mp4`, 94.833 s, VO 94.228 s, sha256 `ff80e9fdf802…`, 0 freezes): drops top-cropped `P3:06_leeds_brewery_nofire_crop_v01.mp4` (1.33x, vat fireboxes excluded per Chief #180 6131279209 / 6133444306) into Part 03. `picture_qa.py` flags only the board's locked `16_repair_reuse` window of `14_trees_breathe_t1.mp4` (same as v01).
+   - **Part 04 rough v01** (`hos_006_part04_rough_v01.mp4`, 91.917 s, VO 91.320 s, sha256 `fcdcce5fc5ce…`, 0 freezes): all 16 board plates on the locked v02 VO (`02_ingenhousz_jars_t1` top-cropped 1.10x per Chief #180 6131279209; `06_collect_blaze_t3` bottom-trimmed 1.60x to exclude bottom-edge seam). `picture_qa.py` flags only the board's locked `09_bubbles_again` reuse of `05_bubbles_macro_t1` and the Chief-KEEP night candle shot `11_night_jars_t1` (`mean 19.95, p95 118.0`).
+   - **Part 05 rough v01** (`hos_006_part05_rough_v01.mp4`, 142.375 s, VO 141.760 s, sha256 `b3ca1afb9cd9…`, 0 freezes): all 24 board plates on the locked v02 VO (`02` cover fallback, `03` reassigned `11_trunk_pie_t1`, `05` trimmed to 5.00–7.93 s ledger tail, `11` and `19` code graphics, `24` HOS 004 KEEP `11_gold_foil_bounce_v01.mp4`). **`picture_qa.py` verdict: PASS (0 fails).**
+5. **PR #310 conflicts resolved:** merged `main`, regenerated `STATUS.md` and `00_Brand/Channel-Setup/kanban/index.html` via `status_board.py`, and verified `check_all.sh`.
+
+## 15 Oct 2026 — J0140 Chief KEEP sweep applied, Part 01 rough v01 assembled, and Parts 01–05 picture logs consolidated on `main` (Gemini covering)
+
+- **Chief KEEP sweep (`#180 IC_kwDOUEPCF88AAAABcNg8Bw`, 15 Oct 2026 08:47Z; `#310 → 85e16bbb`):**
+  - Applied Chief's `KEEP` rulings across `PART03_MINT_LOG_v01.json`, `PART04_MINT_LOG_v01.json`, `PART04_FLOW_MINT_LOG_v01.json`, `PART05_FLOW_MINT_LOG_v01.json`, `parts/part-01..05_plates_v01.json`, and `ROUGH_META_part03_v02.json` / `ROUGH_META_part04_v01.json` / `ROUGH_META_part05_v01.json` (`P3:06 t1` top-cropped 1.33x, `P4:01–04 t1`, `P4:06 t3` Fast, `P4:08 t2` Quality, `P4:13–16 t1`, `P5:02` cover fallback, `P5:11/19` code graphics, and `Part 03 v02 / Part 04 v01 / Part 05 v01` roughs). Zero `PENDING_UAT` entries remain in any mint log (`0/6` logs have pending UAT).
+- **Consolidated Part 01 and Part 02 logs onto `main` & assembled Part 01 24fps rough v01 (0 spend):**
+  - Brought `PART01_MINT_LOG_v01.json`, `FLOW_FAST_v01.json`, `LITE_TEST_v01.json`, `PART02_MINT_LOG_v01.json`, `PART02_UAT_APPLIED_20261004.md`, `ROUGH_META_part02_v02.json`, and the UAT-applied `parts/part-02_plates_v01.json` from the Mini's `hos-006-trees` worktree onto `main`.
+  - Assembled 24 fps 1080p `hos_006_part01_rough_v01.mp4` (`61.667 s`, VO `61.050 s`, sha256 `69974f305a34…`, 0 freezes, **`picture_qa.py` PASS**, `rc=0`) and wrote its metadata, cut/pool lists, contact sheet and `picture_qa` report to `07_Edit-Project/_desk/006/part01_rough_v01/` (copied to iCloud `HOS UAT`).
+- **Next stage (`006 edit`):** `J0266` is queued for the zero-spend `picture_qa` / `polish_gate` fixes on Part 03 rough v02 (`16_repair_reuse` non-overlapping window) and Part 04 rough v01 (`09_bubbles_again` non-overlapping window + `11_night_jars` gentle shadow lift), followed by full fine cut assembly and thumbnails.
+
+## 16 Oct 2026 — Short `s04_photosynthesis_v01` (Test B, search-titled lift from Part 05, OWB J0373)
+
+- **Selection:** HOS 004 and 005 each have 2 search-titled Shorts (`s04` and `s05`); HOS 006 is the next locked long with 0 search-titled Shorts built so far.
+- **VO (0 spend):** `02_Voiceover/part05_carbon_from_the_sky_v01_raw.mp3` claim-first lift (word indices `70..113` + `125..142`, dropping the `"We now know that"` lead-in and `"So here is what van Helmont's willow was really made of."` bridge): *"A leaf takes in carbon dioxide through tiny pores. It draws up water through its roots. Then, with the energy of sunlight, it joins them together into sugar, and lets the spare oxygen go. That sugar becomes everything else: leaves, roots, bark and wood. About half of dry wood is carbon, and every bit of that carbon came out of the air."* 62 words, pauses capped at 0.45 s, `atempo=1.02`, 24.977 s VO + 0.55 s tail = 25.533 s total.
+- **Picture & bed (0 spend):** Chief-KEPT plates `P5:06_leaf_in_t1` (frame 0 and 3.2 s loop), `P2:05_pure_water_t1`, `P5:07_sugar_oxygen_t1`, `P4:05_bubbles_macro_t1`, `P5:08_sugar_wood_t1`, `P5:14_built_from_sky_t1`, `P1:01_willow_air_t1`. Own-synthesis warm harmonic pad (`hos006_s04_synth_pad_v01.wav`) at −20 dB under VO. Hook **AIR TO WOOD** (WOOD in yellow). Person/date card **DE SAUSSURE · Geneva, 1804** at 18.5–22.1 s (3.6 s, lower third of 16:9 centre band, 0.35 s fade in/out); the long's exact title *The Willow Tree That Was Made of Air* at 9.0–14.0 s; word captions throughout; CTA `watch the full film →` at 22.33–25.45 s.
+- **Title draft:** *How Does Photosynthesis Work?* (signed-out GB YouTube autocomplete exact hit, 16 Oct 2026; alts *How Do Leaves Make Food for the Plant?*, *What Is Wood Made Of?*).
+- **File:** `10_Shorts/hos_006_s04_photosynthesis_v01.mp4`, 25.533 s, sha256 `1198f5671f2960e2bfe49755578f90eb07c5c4ff6124a665bb0d056b1799b524` (J0399: feathered bottom of WHO card shade so alpha ramps smoothly to 0 instead of dropping 140 → 0 at `BAND_TOP + BAND_H`); phone copy iCloud `HOS UAT/006_Trees-Are-Made-Of-Air/10_Shorts/hos_006_s04_photosynthesis_v01.mp4`.
+
+```
+PASS  hos_006_s04_photosynthesis_v01.mp4  dur=25.53s  audio=-23.9dB  motion=10.73  dhash=202051d11e804ea6
+   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_006_s04_photosynthesis_v01_open_sheet.jpg
+PASS  hos_006_s04_photosynthesis_v01.mp4  0:25.53  mean -23.9 dB  peak -4.0 dB  146 wpm
+polish gate PASS: 0 of 8 rows failed, 1 to look at -> 02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/qa_s04_photosynthesis_v01/polish_gate_s04_photosynthesis_v01.json
+picture QA PASS: 0 of 8 cuts fail, 1 to look at -> 02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/qa_s04_photosynthesis_v01/picture_qa_s04_photosynthesis_v01/PICTURE_QA.md, 02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/qa_s04_photosynthesis_v01/picture_qa_s04_photosynthesis_v01/picture_qa_review.jpg
+```
+
+Gate run with `--air-date 2026-11-19` (gate only). Caption check: 18 changes, ratio 1.0. Freezedetect: 0 events.
+
+**STOP:** parked for Chief: Short PASS, title and slot. Nothing uploaded.
+
+## 16 Oct 2026 — Short `s05_charcoal_gas_v01` (Test B, second search-titled lift from Part 02, OWB J0390)
+
+- **Selection:** HOS 004 and 005 each have 2 search-titled Shorts (`s04` and `s05`); HOS 006 had 1 search-titled Short (`s04_photosynthesis_v01`), so `s05_charcoal_gas_v01` completes 006's pair of Test B search-titled Shorts.
+- **VO (0 spend):** `02_Voiceover/part02_five_years_and_two_ounces_v01_raw.mp3` contiguous lift (word indices `243..304`): *"Van Helmont also burned sixty-two pounds of charcoal and found just one pound of ash left behind. The rest had vanished into the air, as a wild, invisible spirit. He gave it a new name: gas. We now know that gas was mostly carbon dioxide. He had discovered the very thing his tree was made of. He never put the two together."* 62 words, pauses capped at 0.40 s, `atempo=1.03`, 25.581 s VO + 0.55 s tail = 26.133 s total.
+- **Picture & bed (0 spend):** Chief-KEPT plates `P2:18_charcoal_hearth_t1` (frame 0 and 3.0 s loop), `P2:19_ash_mound_t1` (`0.15–3.45 s` < `4.0 s` trim), `P2:20_shimmer_coals_t1`, `P2:stretches_v03/15_desk_candle_t1_above_desk_v03`, `P5:06_leaf_in_t1`, `P2:06_garden_years_t2`. Own-synthesis warm harmonic pad (`hos006_s05_synth_pad_v01.wav`) at −20 dB under VO. Hook **WOOD TO GAS** (GAS in yellow). Person/date card **VAN HELMONT · Near Brussels, early 1600s** at 2.15–5.75 s (3.6 s, lower third of 16:9 centre band, 0.35 s fade in/out); the long's exact title *The Willow Tree That Was Made of Air* at 9.0–14.0 s; word captions throughout; CTA `watch the full film →` at 23.13–26.05 s.
+- **Title draft:** *Who Discovered Carbon Dioxide?* (signed-out GB YouTube autocomplete exact hit, 16 Oct 2026; alts *What Happens When Wood Burns?*, *Why Does Wood Turn to Ashes?*).
+- **File:** `10_Shorts/hos_006_s05_charcoal_gas_v01.mp4`, 26.133 s, sha256 `06fbeceda4944be5f75101e99166033b419ab0d7becc9d27328209f8961aa9b6`; phone copy iCloud `HOS UAT/006_Trees-Are-Made-Of-Air/10_Shorts/hos_006_s05_charcoal_gas_v01.mp4`.
+
+```
+PASS  hos_006_s05_charcoal_gas_v01.mp4  dur=26.13s  audio=-23.8dB  motion=10.72  dhash=98c06b227e7bfdf0
+   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_006_s05_charcoal_gas_v01_open_sheet.jpg
+PASS  hos_006_s05_charcoal_gas_v01.mp4  0:26.13  mean -23.8 dB  peak -4.4 dB  145 wpm
+```
+
+Gate run with `--air-date 2026-11-26` (gate only). Caption check: 20 changes, ratio 1.0. Freezedetect: 0 events.
+
+**STOP:** parked for Chief: Short PASS, title and slot. Nothing uploaded.
+
+## 18 Oct 2026 — Short `s06_ingenhousz_oxygen_v01` (Test B, third search-titled lift from Part 04, OWB J0533)
+
+- **Selection:** HOS 004 and 005 each have 3 search-titled Shorts (`s04`, `s05`, `s06`); HOS 006 had 2 search-titled Shorts (`s04_photosynthesis_v01`, `s05_charcoal_gas_v01`), making 006 the locked HOS long with the fewest built Shorts (007+ do not have minted picture yet).
+- **VO (0 spend):** `02_Voiceover/part04_bubbles_in_the_sunlight_v01_raw.mp3` claim-first lift (word indices `50..81` + `105..134`, dropping the `"It was the gas Priestley had found in seventeen seventy-four, which we now call oxygen. Then came the clue that solved Priestley's puzzle."` bridge): *"Tiny silver bubbles appear on the green leaf and rise to the top. He collected the bubbles and tested the gas. A candle flame burned brighter in it than in ordinary air. Move the jar into the shade, and the bubbles stop. Move it back into the sun, and they start again. Only the green parts made bubbles. Roots and flowers didn't."* 62 words, pauses capped at 0.28 s, `atempo=1.05`, 24.756 s VO + 0.55 s tail = 25.333 s total.
+- **Picture & bed (0 spend):** Chief-KEPT plates `P4:05_bubbles_macro_t1` (frame 0 and 3.0 s loop), `P4:03_plunge_leaf_t1`, `P4:06_collect_blaze_t3` (with Chief's bottom-6% seam trim `scale=2048:1152,crop=1920:1080:64:0`), `P3:11_candle_tall_t1`, `P3:18_dark_window_t1`, `P4:12_shutters_open_t1`, `P4:10_only_green_t2`. Own-synthesis warm harmonic pad (`hos006_s06_synth_pad_v01.wav`) at −20 dB under VO. Hook **LEAF IN SUN** (SUN in yellow). Person/date card **JAN INGENHOUSZ · Near London, 1779** at 4.6–8.2 s (3.6 s, lower third of 16:9 centre band, feathered shade, 0.35 s fade in/out); the long's exact title *The Willow Tree That Was Made of Air* at 9.0–14.0 s; word captions throughout; CTA `watch the full film →` at 22.33–25.25 s.
+- **Title draft:** *How Do Plants Make Oxygen?* (signed-out GB YouTube autocomplete exact hit, 18 Oct 2026; alts *How Do Plants Produce Oxygen?*, *Where Does Oxygen Come From?*, *Who Discovered Photosynthesis?*).
+- **File:** `10_Shorts/hos_006_s06_ingenhousz_oxygen_v01.mp4`, 25.333 s, sha256 `3daf38e7f3f5becb5e63c838fba6dfdf1d662ef3f6782cd55961d8b992cd11ae`; phone copy iCloud `HOS UAT/006_Trees-Are-Made-Of-Air/10_Shorts/hos_006_s06_ingenhousz_oxygen_v01.mp4`.
+
+```
+PASS  hos_006_s06_ingenhousz_oxygen_v01.mp4  dur=25.33s  audio=-24.8dB  motion=15.38  dhash=9296173351587f6c
+   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_006_s06_ingenhousz_oxygen_v01_open_sheet.jpg
+PASS  hos_006_s06_ingenhousz_oxygen_v01.mp4  0:25.33  mean -24.8 dB  peak -4.9 dB  147 wpm
+polish gate PASS: 0 of 8 rows failed, 0 to look at -> 02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/qa_s06_ingenhousz_oxygen_v01/polish_gate_s06_ingenhousz_oxygen_v01.json
+picture QA PASS: 0 of 8 cuts fail, 0 to look at -> 02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/qa_s06_ingenhousz_oxygen_v01/picture_qa_s06_ingenhousz_oxygen_v01/PICTURE_QA.md
+```
+
+Gate run with `--air-date 2026-12-22` (gate only). Caption check: 19 changes, ratio 1.0. Freezedetect: 0 events.
+
+**STOP:** parked for Chief: Short PASS, title and slot. Nothing uploaded.
+
+## 19 Oct 2026 — Short `s07_priestley_mint_v01` (Test B, fourth search-titled lift from Part 03, OWB J0623)
+
+- **Selection:** HOS 004 and 005 each have 4 search-titled Shorts (`s04`–`s07`); HOS 006 had 3 search-titled Shorts (`s04_photosynthesis_v01`, `s05_charcoal_gas_v01`, `s06_ingenhousz_oxygen_v01`), making 006 the locked HOS long with the fewest built Shorts (007+ do not have minted picture yet).
+- **VO (0 spend):** `02_Voiceover/part03_the_air_that_mint_repaired_v01_raw.mp3` claim-first lift (word indices `85..108`, `120..146`, `187..193`, `210..213`): *"If you burn a candle inside a sealed glass jar, the flame soon dies, and the air left behind won't let another candle burn. He slipped a sprig of mint into a jar of that injured air, and waited. Ten days later, he lowered in another candle. It burned perfectly well. Something had to be putting it back. Plants repair the air."* 62 words, pauses capped at 0.30 s, `atempo=1.02`, 23.184 s VO + 0.55 s tail = 23.767 s total.
+- **Picture & bed (0 spend):** Chief-KEPT plates `P3:11_candle_tall_t1` (frame 0 and 3.0 s loop), `P3:08_candles_out_t1`, `P3:07_priestley_t1`, `P3:10_mint_jar_t1`, `P4:06_collect_blaze_t3` (with Chief's bottom-6% seam trim), `P3:15_quill_vegetable_t1`, `P3:14_trees_breathe_t1`. Own-synthesis warm harmonic pad (`hos006_s07_synth_pad_v01.wav`) at −23.3 dB under VO. Hook **MINT IN GLASS** (GLASS in yellow). Person/date card **JOSEPH PRIESTLEY · Leeds, 1771** at 4.8–8.4 s (3.6 s, lower third of 16:9 centre band, cosine-feathered shade, 0.35 s fade in/out); the long's exact title *The Willow Tree That Was Made of Air* at 9.0–14.0 s; word captions throughout (17/17 changes); CTA `watch the full film →` at 20.73–23.68 s.
+- **Title draft:** *How Do Plants Clean the Air?* (signed-out GB YouTube autocomplete exact hit, 19 Oct 2026; alts *Why Do We Need Plants?*, *What Was Joseph Priestley's Bell Jar Experiment?*).
+- **File:** `10_Shorts/hos_006_s07_priestley_mint_v01.mp4`, 23.767 s, sha256 `253b56176b878c153a7198e650f51c848dd8bba5b4d164248cabdcef6f70ce44`; phone copy iCloud `HOS UAT/006_Trees-Are-Made-Of-Air/10_Shorts/hos_006_s07_priestley_mint_v01.mp4`.
+
+```
+PASS  hos_006_s07_priestley_mint_v01.mp4  dur=23.77s  audio=-23.8dB  motion=12.03  dhash=2f2f6e7e3d2dccfc
+   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_006_s07_priestley_mint_v01_open_sheet.jpg
+PASS  hos_006_s07_priestley_mint_v01.mp4  0:23.77  mean -23.8 dB  peak -4.1 dB  157 wpm
+polish gate PASS: 0 of 8 rows failed, 1 to look at -> 02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/qa_s07_priestley_mint_v01/polish_gate_s07_priestley_mint_v01.json
+picture QA PASS: 0 of 8 cuts fail, 1 to look at -> 02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/qa_s07_priestley_mint_v01/picture_qa_s07_priestley_mint_v01/PICTURE_QA.md, 02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/qa_s07_priestley_mint_v01/picture_qa_s07_priestley_mint_v01/picture_qa_review.jpg
+```
+
+Gate run with `--air-date 2026-12-29` (gate only). Caption check: 17 changes, ratio 1.0. Freezedetect: 0 events.
+
+**STOP:** parked for Chief: Short PASS, title and slot. Nothing uploaded.
+
+## 21 Oct 2026 — Short `s08_willow_pot_v01` (Test B, fifth search-titled lift from Part 02, OWB J0760)
+
+- **Selection:** HOS 004 and 005 each have 5 search-titled Shorts (`s04`–`s08`); HOS 006 had 4 search-titled Shorts (`s04_photosynthesis_v01`, `s05_charcoal_gas_v01`, `s06_ingenhousz_oxygen_v01`, `s07_priestley_mint_v01`), making 006 the locked HOS long with the fewest built Shorts (007+ do not have minted picture yet).
+- **VO (0 spend):** `02_Voiceover/part02_five_years_and_two_ounces_v01_raw.mp3` claim-first lift (word indices `6..20`, `34..43`, `106..117`, `168..194`): *"He took a big clay pot and filled it with two hundred pounds of soil, Then he planted a young willow that weighed five pounds. Then, after five years, he pulled the tree out and weighed it. A hundred and sixty-four pounds of new tree, and only two ounces of soil gone. The tree had not eaten the soil. So why had it grown?"* 64 words, pauses capped at 0.30 s, `atempo=1.02`, 23.874 s VO + 0.55 s tail = 24.433 s total. Zero VO overlap with `s05_charcoal_gas_v01` (words `243..304`).
+- **Picture & bed (0 spend):** Chief-KEPT plates `P1:11_shoot_in_pot_t1` (frame 0 and 3.0 s loop), `P1:10_van_helmont_sack_t1`, `P2:03_willow_shoot_scale_t1`, `P2:04_lid_rain_t1`, `P2:08_haul_tree_t1_trim_0to4p8`, `P2:13_tree_vs_pinch_t1`, `P2:12_pointer_short_t1`, `P1:02_balance_trunk_t1`. Own-synthesis warm harmonic pad (`hos006_s08_synth_pad_v01.wav`) at −23.0 dB under VO. Hook **TREE IN POT** (POT in yellow). Person/date card **VAN HELMONT · Vilvoorde, 1600s** at 2.4–6.0 s (3.6 s, lower third of 16:9 centre band, cosine-feathered shade, 0.35 s fade in/out); the long's exact title *The Willow Tree That Was Made of Air* at 9.0–14.0 s; word captions throughout (16/16 changes); CTA `watch the full film →` at 21.43–24.35 s.
+- **Title draft:** *Do Plants Eat Soil?* (signed-out GB YouTube autocomplete exact hit, 21 Oct 2026; alts *Where Do Trees Get Their Mass?*, *What Was Van Helmont's Willow Tree Experiment?*).
+- **File:** `10_Shorts/hos_006_s08_willow_pot_v01.mp4`, 24.433 s, sha256 `8bce695efab2a54fa3c04a11c13c487b38c04589fc28d3a64f4f58a0f7a73441`; phone copy iCloud `HOS UAT/006_Trees-Are-Made-Of-Air/10_Shorts/hos_006_s08_willow_pot_v01.mp4`.
+
+```
+PASS  hos_006_s08_willow_pot_v01.mp4  dur=24.43s  audio=-23.5dB  motion=10.37  dhash=fdffd68d9f3fbc9f
+   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_006_s08_willow_pot_v01_open_sheet.jpg
+PASS  hos_006_s08_willow_pot_v01.mp4  0:24.43  mean -23.5 dB  peak -4.6 dB  160 wpm
+   first minute: title_question 22.6s
+polish gate PASS: 0 of 9 rows failed, 1 to look at -> 02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/qa_s08_willow_pot_v01/polish_gate_s08_willow_pot_v01.json
+picture QA PASS: 0 of 9 cuts fail, 1 to look at -> 02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/qa_s08_willow_pot_v01/picture_qa_s08_willow_pot_v01/PICTURE_QA.md, 02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/qa_s08_willow_pot_v01/picture_qa_s08_willow_pot_v01/picture_qa_review.jpg
+```
+
+Gate run with `--air-date 2027-01-05` (gate only). Caption check: 16 changes, ratio 1.0. Freezedetect: 0 events.
+
+**STOP:** parked for Chief: Short PASS, title and slot. Nothing uploaded.
+
+## 22 Oct 2026 — Long `full_join_v02_teach` (21 £0 fixes from `REVIEW_v01.md` applied, OWB J0809)
+
+- **Master:** `07_Edit-Project/full_join_v02_teach/hos_006_full_join_v02_teach.mp4` (`507.833 s`, `12,188` frames @ 24 fps, sha256 `09c1364b1954ba4a69a287586d036b6610e9cd7c05ab97b255f2b2ac8b3824f0`). Also copied to iCloud `HOS UAT/hos_006_full_join_v02_teach.mp4` and NAS `/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/full_join_v02_teach/hos_006_full_join_v02_teach.mp4`.
+- **Fixes applied (£0, zero mints, no music bed):**
+  1. **Part 02 sync drift (`+5.46 s`):** inserted already-minted `06_garden_years_t1.mp4` (`0.00–5.46 s`, `131` frames) after `#18` (`06_garden_years_t2.mp4`), restoring `#19`–`#32` to exact alignment with `VO_RETIME_v02.json` and returning `#33` (`22_shimmer_willow`) from `10.83 s` back to `5.38 s` (`2:53.29–2:58.67`).
+  2. **House-style & low-detail replacements (`#14`, `#20`, `#24`, `#33`, `#62`):** replaced flat UI card in `#14` with top-cropped `02_balance_200_t1` + house Didot lower-third counter (`0 → 200 pounds of dried soil`); cropped `#20` (`09_weights_169_t1` `1920×788`) to hide bottom-right Veo `"169"` numerals and quill; trimmed/cropped bare tabletop pan in `#24` (`13_tree_vs_pinch_t1`); removed flat UI filler card from `#33` (`22_shimmer_willow`); replaced daytime/silhouette opening of `#62` (`11_night_jars`) with moonlit jar (`4.50–8.00 s`) + moonlit plant window (`18_dark_window_t1`).
+  3. **Part 05 DATA code-graphic labels (`#78`, `#86`):** re-rendered `11_trunk_pie_cg_v01.mp4` (`50% Carbon (from air)` / `44% Oxygen · 6% Hydrogen`) and `19_dots_crowd_cg_v01.mp4` (`4 in 10,000 · Carbon Dioxide`) in house Didot italic.
+  4. **Overlay re-timing (`LAY_TIMES_v02.json`):** aligned all 21 teach overlays to exact frame boundaries (`REVIEW_v02.md`), sequencing `timeline_d2` before `who_hales` in `#35`, separating `ch_bubbles` and `timeline_d4` with `1.21 s` of moving `01_villa_t1` in `#52`, and moving `num_500` into `#53`.
+
+```
+polish gate PASS: 0 of 91 rows failed, 5 to look at -> /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/full_join_v02_teach/polish_gate.json
+picture QA PASS: 0 of 91 cuts fail, 5 to look at -> /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/full_join_v02_teach/PICTURE_QA.md, /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/full_join_v02_teach/picture_qa_review.jpg
+Script score: 93.7/100 · PASS (Decision: PASS — VO / Gemini Veo allowed)
+```
+
+**STOP:** parked for Chief: `full_join_v02_teach` review & final OK. Nothing uploaded or scheduled.
+
+## 22 Oct 2026 — Long `full_join_v03_teach` (3 £0 Chief FIX items from J0809 applied, OWB J0826)
+
+- **Master:** `07_Edit-Project/full_join_v02_teach/hos_006_full_join_v03_teach.mp4` (and `hos_006_full_join_v02_teach.mp4`, `507.833 s`, `12,188` frames @ 24 fps, sha256 `9a8efcefd7a82f2c2128882e00e17ae0aa2d749891dc762a1f6addf80969f140`). Copied to iCloud `HOS UAT/hos_006_full_join_v03_teach.mp4` (and `hos_006_full_join_v02_teach.mp4`) and NAS `/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/full_join_v02_teach/`.
+- **Fixes applied (£0, zero mints, no music bed, `REVIEW_v03.md`):**
+  1. **#33 (`22_shimmer_willow_v02`, `2:53.29–2:58.67`):** replaced `15_desk_candle_t1_above_desk_v03` tail repeat with unused window `2.625–8.000 s` (frames `63..192` = `129` frames) of `22_shimmer_willow_t1.mp4`, so `#33` stays 100% willow (`edge_density 0.1612`, `0` fail/warn).
+  2. **#62 (`11_night_jars_v02`, `5:30.46–5:38.29`):** replaced overlapping `18_dark_window_t1` `0.67–5.00 s` with `11_night_jars_t1.mp4` `2.75–8.00 s` (`140` frames, opening moonlit after the `0.0–2.3 s` bright-sun stretch) + `18_dark_window_t1.mp4` `4.00–6.00 s` (`48` frames, the stretch `#51` `0.00–4.00 s` does not show), keeping `#62` at `188` frames (`edge_density 0.0350`, `min_mean_luma 32.9 >= 28.0`, `0` fail/warn).
+  3. **#86 (`19_dots_crowd_cg_v01`, `7:50.46–7:54.46`):** shortened 5-word label `"4 in 10,000 · Carbon Dioxide"` to 4-word `"CO2: 4 in 10,000"` in house Didot italic.
+  4. **`REVIEW_v02.md` §4 note:** corrected `#26` (`15_desk_candle` at `2:18`) note to record that `15_desk_candle_t1_above_desk_v03.mp4` is our own crop, not a Veo Chief-KEEP plate.
+
+```
+polish gate PASS: 0 of 91 rows failed, 5 to look at -> /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/full_join_v02_teach/polish_gate.json
+picture QA PASS: 0 of 91 cuts fail, 5 to look at -> /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/full_join_v02_teach/PICTURE_QA.md, /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/full_join_v02_teach/picture_qa_review.jpg
+Script score: 93.7/100 · PASS (Decision: PASS — VO / Gemini Veo allowed)
+```
+
+**STOP:** parked for Chief: `full_join_v03_teach` (`REVIEW_v03.md`) review & merge of PR #352. Nothing uploaded or scheduled.
+
+
+
+
+## 22 Oct 2026 — J0835 master v01 (£0 original score and house SFX)
+
+
+
+- Master: `/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/master_v01/hos_006_master_v01.mp4`
+- NAS (copied, SHA-256 verified): `/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/09_Final-Export/master_v01/hos_006_master_v01.mp4`
+- SHA-256 (both copies): `bcafbf4e04ce72f230569f9c4050b9d43b6a364374c4d7e14360c4b62c8e67ee`
+- Video: 1920×1080 H264, 24 fps, 12,188 frames, 507.833333 s. Container/audio: 508.000 s (0.167 s AAC audio tail).
+- Source: full_join_v03_teach, SHA-256 `d24a08ee94489379dd8e550700b9e31ec2fd4636c35158d037949248ecf8eb34`.
+- Source and master compressed video SHA-256: `a67d3735f75f8763d77b063342c68e6b3946f27617555c7ec03802f051399abe` — byte-identical picture; no recut or new picture generation.
+- Separate stems: `/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/master_v01/stem_vo_v01.wav` (`-16.1 LUFS`); `/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/05_Music/trees006_score_bed_v01.mp3` (`-32.9 LUFS`, speech diff under VO: mean `16.3 dB`, p50 `16.1 dB`, p90 `20.3 dB`, min `11.6 dB >= 10.0 dB`, `0` breaches); `/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/06_Sound-Effects/stem_sfx_v01.wav` (`-33.6 LUFS`). Mix: `/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/master_v01/audio_master_v01.m4a`.
+- New original HOS score: G-major/E-minor/C/D family, warm sustained viol-like harmonics, soft harp notes at `66.7 BPM` (`0.900 s` beat); 3 s transitions at chapter cards (61.667 / 178.667 / 273.500 / 365.417 s). Explain chapters lift the harp; wonder chapters soften it. Full-runtime bed; no loops of an earlier film's music.
+- House HOS ink ticks on all 17 teach overlays + all 3 DATA code graphics (`#14` 200 lb balance counter at `67.425 s`, `#78` 50% carbon pie chart at `423.675 s`, `#86` 4 in 10,000 specimen lens at `470.758 s`) and restrained soft chapter whooshes on all 4 chapter cards: **24 cues total** (`0` fails, `0` warns). No rumbles on this quiet experiment story. Cues/levels in `sfx_cues_v01.json` and `sfx_level_v01.json`.
+- Two-pass loudnorm target -14 LUFS/-1.5 dBTP (headroom below the -1 dBTP ceiling); no speech retiming or script changes.
+
+## Machine checks (pasted outputs)
+
+### music_gate.txt
+
+```text
+music gate PASS: trees006_score_bed_v01.mp3, 507.8 s, about 66.7 BPM, brief Pace: 60-72 BPM
+```
+
+### picture_qa.txt
+
+```text
+WARN   2:18 row 15_desk_candle 15_desk_candle_t1_above_desk_v03.mp4: low detail: edge density 0.0271 < film p5 0.0272
+WARN   3:01 row 01_soil_to_sky 01_soil_to_sky_t1.mp4: low detail: edge density 0.0219 < film p5 0.0272
+WARN   5:24 row 09_bubbles_again 05_bubbles_macro_t1_from4.500.mp4: low detail: edge density 0.0245 < film p5 0.0272
+WARN   6:32 row 05_sums_add_up 05_sums_add_up_t1.mp4: low detail: edge density 0.0248 < film p5 0.0272
+WARN   8:17 row 23_carbon_atom 23_carbon_atom_t1.mp4: low detail: edge density 0.0238 < film p5 0.0272
+picture QA PASS: 0 of 91 cuts fail, 5 to look at -> /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/master_v01/PICTURE_QA.md, /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/master_v01/picture_qa_review.jpg
+```
+
+### polish_gate.txt
+
+```text
+15_desk_candle   138.0s 15_desk_candle_t1_above_desk WARN low detail: edge density 0.0271 < film p5 0.0272
+01_soil_to_sky   181.2s 01_soil_to_sky_t1.mp4        WARN low detail: edge density 0.0219 < film p5 0.0272
+09_bubbles_again   324.2s 05_bubbles_macro_t1_from4.50 WARN low detail: edge density 0.0245 < film p5 0.0272
+05_sums_add_up   392.4s 05_sums_add_up_t1.mp4        WARN low detail: edge density 0.0248 < film p5 0.0272
+23_carbon_atom   497.5s 23_carbon_atom_t1.mp4        WARN low detail: edge density 0.0238 < film p5 0.0272
+polish gate PASS: 0 of 91 rows failed, 5 to look at -> /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/master_v01/polish_gate.json
+```
+
+### episode_gate.txt
+
+```text
+**Decision:** PASS — VO / Gemini Veo allowed
+Script score: **93.7/100** · PASS
+```
+
+```text
+SFX level PASS: VO -16.1 LUFS, SFX -33.6 LUFS, 24 hits
+{
+  "verdict": "PASS",
+  "vo_integrated": -16.1,
+  "sfx_integrated": -33.6,
+  "hits": 24,
+  "fails": [],
+  "warns": []
+}
+ALL CHECKS PASS (repository check_all.sh 006)
+```
+
+Final mux measurement:
+
+```text
+Summary:
+
+  Integrated loudness:
+    I:         -14.0 LUFS
+    Threshold: -24.6 LUFS
+
+  Loudness range:
+    LRA:         3.0 LU
+    Threshold: -34.6 LUFS
+    LRA low:   -16.1 LUFS
+    LRA high:  -13.1 LUFS
+
+  True peak:
+    Peak:       -1.5 dBFS
+[out#0/null @ 0xbe1044300] video:5047KiB audio:95239KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame=12188 fps=493 q=-0.0 Lsize=N/A time=00:08:28.00 bitrate=N/A speed=20.6x elapsed=0:00:24.70
+```
+
+## Chief review still required
+
+- Listen to the complete film for musical fit, mix comfort, repeated/stumbled VO and chapter transitions. Worker has not made an aesthetic PASS.
+- Tempo & bed level: `music_gate.py` reads `66.7 BPM` directly against the brief's `Pace: 60-72 BPM` (0 pace WARN, 0 fails), and `sfx_kit.py level --bed` PASSes with bed `-32.9 LUFS` vs VO `-16.1 LUFS` (mean `16.3 dB` under VO in speech, `0` breaches).
+- Picture/polish use the unchanged `full_join_v02_teach/picture_qa_reviewed_ok_v02_teach.json` already used for v03: prior Chief reuse rulings and teach-card-edge seam rulings. No new waiver. First raw run without those rulings is preserved as `picture_qa_without_prior_rulings.txt`.
+- Five existing low-detail WARNs remain at 2:18, 3:01, 5:24, 6:32 and 8:17. Review sheet remains in the local master pack (`picture_qa_review.jpg`); see v03 review for Chief's earlier inspection.
+- No upload, scheduling or YouTube state change. £0 spend. Next: Chief listens/reviews, decides final PASS and Ben watch; Ben final check remains due 1 Nov.
+
+## 23 Oct 2026 — J0858 Step 1: Long thumbnail concepts + Flow credit price pass (Gemini covering)
+
+- **Brief & machine spec:** `08_Thumbnail/THUMB_BRIEF_v01.md` and `08_Thumbnail/THUMB_CONCEPTS_J0858_v01.json` (due **29 Oct 2026**, before Ben's final OK on **1 Nov 2026**).
+- **Master in HOS UAT (`J0857` done):** `/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/006_Trees_master_v01.mp4` (`509,759,758` bytes, sha256 `bcafbf4e04ce72f230569f9c4050b9d43b6a364374c4d7e14360c4b62c8e67ee`).
+- **Three concepts from 006's hook (`0:00` willow in air & `0:04` / Part 02 van Helmont's scales), house HOS 16:9 look (Flow key art, Explorer ~50% lower left, cover-builder `Georgia Bold` cream + 1 gold punch word + gold scroll flourishes in upper-left band, positive-question framing per `LEARNINGS.md` rule #1, 0 words repeated from Title A or B):**
+  1. **Concept A (Primary — Answer Image, `0:00` & Part 05 `7:22`):** **`WOOD / FROM / SKY?`** (3 words, gold punch **`SKY?`**; alt if paired only with Title B: **`GROWN / FROM / AIR?`**). Right 2/3: thriving willow in a terracotta pot on a sunlit oak bench beside an arched window; luminous golden-teal ribbons of sky/air stream in through the window into the leaves and condense into glowing solid wood rings inside a clean cutaway of the trunk. Lower left: Explorer (~50% height) looking up in wonder.
+  2. **Concept B (Test & Compare B — Van Helmont's Brass Scales, `0:04` & Part 02 `2:06–2:19`):** **`DO PLANTS / EAT / SOIL?`** (4 words, gold punch **`SOIL?`**; matches GB YouTube autocomplete hit; alt 3-word: **`FED BY / SOIL?`**). Right 2/3: giant 17th-century polished brass balance scale on an oak lab table — lower-right pan pulled down heavy by the uprooted 169-pound willow tree (trunk, roots, green canopy) while the raised middle-right pan holds the clay pot of dried dark furnace soil (`200 lb less ~2 oz`), beam tilted sharply toward the tree, blank pans/weights. Lower left: Explorer (~50% height) leaning in beside the balance.
+  3. **Concept C (Alternate / 3-way T&C — Van Helmont's Five-Year Sealed Pot, Part 01 `0:56` & Part 02 `1:32–2:35`):** **`GROWN / ON / WATER?`** (3 words, gold punch **`WATER?`**; alt 3-word: **`ONLY / RAIN / WATER?`**). Right 2/3: close-up of van Helmont's earthen clay pot sealed with its perforated tin-plated iron lid (keeping dust out while silver water droplets pour from a tilted glass vessel through the holes), with a thick willow trunk bursting up through the lid's collar. Lower left: Explorer (~50% height) pointing at the perforated lid.
+- **Flow credit price table (live Flow balance read `2026-10-23T01:57Z` on CDP `:9222`: `20,830` credits; `0` spent in Step 1):**
+  - **Option 1 (Default — Flow Image `Nano Banana 2` 16:9 stills):** **0 Flow credits** (`2–6` stills at `0 cr/still`) + **0 credits** cover-builder lettering = **0 Flow credits / £0.00** (`20,830` cr remaining).
+  - **Option 2 (Fast / 10-cr tier reserve — A/B pair):** **20 Flow credits** Try-1 (`2 × 10 cr`) / **40 Flow credits** Expected (`4 × 10 cr`, 2 takes each) = **£0.00** (`20,810` Try-1 / `20,790` Expected remaining).
+  - **Option 3 (Fast / 10-cr tier reserve — all 3 concepts A/B/C):** **30 Flow credits** Try-1 (`3 × 10 cr`) / **60 Flow credits** Expected (`6 × 10 cr`, 2 takes each) = **£0.00** (`20,800` Try-1 / `20,770` Expected remaining).
+  - **Headroom check:** After HOS 006 thumbnails (`0–60` cr expected) + HOS 008 (`5,605` cr expected) + HOS 009 Tranche 1 (`7,354` cr expected), expected Flow balance is **`7,811–7,871` credits**, clearing the `3,000` credit floor by **`+4,811 to +4,871` credits**.
+- **STOP:** Parked for Chief (`parked for Chief: 006 thumbnail price + concept pick`). Step 2 after Chief pass: mint on Flow, apply cover-builder lettering, run `thumb_preview.py long` and `style_sheet.py long`, and stage A/B pair for Test & Compare.
+
+## 23 Oct 2026 — J0869 Step 2: Mint A + B key-art plates (0 Flow credits), compose cover lettering, run thumb_preview + style_sheet, stage Test & Compare (Gemini covering)
+
+- **Authority:** Chief pick on `J0858` (OWB `#99` comment `6355648154`):
+  - **Primary A:** **`WOOD / FROM / SKY?`** (gold punch **`SKY?`**, willow by the sunlit arched window with golden-teal air ribbons condensing into glowing wood rings inside the trunk cutaway).
+  - **Test & Compare B:** **`DO PLANTS / EAT / SOIL?`** (gold punch **`SOIL?`**, van Helmont's 17th-century brass balance scale with the uprooted willow pan weighed down low and the dried soil pot lifted high, free of written numbers).
+  - **Concept C:** Dropped.
+  - **Price lock:** **Option 1 (`0` Flow credits, `£0.00` cash)** — Flow Image `Nano Banana 2` 16:9 stills on AI Ultra + `£0` deterministic cover-builder lettering.
+- **Step 2.1 — Flow Image (`Nano Banana 2.1 crop_16_9 x1`) mint output (`08_Thumbnail/_mint_hos_006_thumbs_flow_v01.py`, logged in `08_Thumbnail/FLOW_MINT_LOG_J0869_v01.json`):**
+  ```text
+  GATE account=benoats@googlemail.com credits_start=20830 url=https://flow.google.com/project/9b867f83-cb93-4f3f-8f7b-31c2e3e9f415
+
+  === Concept A (hos_006_thumb_A_wood_from_sky_plate01) credits_before=20830 ===
+    pill before='Video · 720p · 8s crop_16_9 x1'
+    image-mode pill='🍌 Nano Banana 2.1 crop_16_9 x1'
+    style refs attached=3 chips=3
+    clicked send role='Start generation'
+    still ok 1376x768 -> hos_006_thumb_A_wood_from_sky_plate01.png
+    credits_after=20830 used=0 elapsed=78.5s
+
+  === Concept B (hos_006_thumb_B_do_plants_eat_soil_plate01) credits_before=20830 ===
+    pill before='🍌 Nano Banana 2.1 crop_16_9 x1'
+    style refs attached=3 chips=3
+    clicked send role='Start generation'
+    still ok 1376x768 -> hos_006_thumb_B_do_plants_eat_soil_plate01.png
+    credits_after=20830 used=0 elapsed=53.0s
+
+  ALL STILLS MINTED AT 0 FLOW CREDITS
+  ```
+- **Step 2.2 — Cover-builder lettering & gate checks (`08_Thumbnail/_compose_hos_006_thumbs_v01.py`, `thumb_preview.py long`, `style_sheet.py long`):**
+  ```text
+  A composed -> hos_006_thumb_A_wood_from_sky_v01.jpg: box=[95, 36, 369, 278] orn_bot=297 clear_hero=True clear_exp=True clear_badge=True
+  B composed -> hos_006_thumb_B_do_plants_eat_soil_v01.jpg: box=[70, 30, 431, 256] orn_bot=277 clear_hero=True clear_exp=True clear_badge=True
+  /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/08_Thumbnail/Selected/hos_006_thumb_A_wood_from_sky_v01_preview.jpg
+  /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/08_Thumbnail/Selected/hos_006_thumb_B_do_plants_eat_soil_v01_preview.jpg
+  /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/08_Thumbnail/Selected/hos_006_thumb_A_wood_from_sky_v01_style_sheet.jpg  (1 new vs 4 live long references)
+  /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/08_Thumbnail/Selected/hos_006_thumb_B_do_plants_eat_soil_v01_style_sheet.jpg  (1 new vs 4 live long references)
+  /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/08_Thumbnail/Selected/hos_006_thumbs_AB_v01_style_sheet.jpg  (2 new vs 4 live long references)
+  DONE THUMBS_INDEX_v01.json
+  ```
+- **Staged files & SHA-256 (`08_Thumbnail/THUMBS_INDEX_v01.json`, `11_Upload-Package/PACKAGE_MANIFEST.json`, and copied to `HOS UAT/006_Trees-Are-Made-Of-Air/08_Thumbnail/`):**
+  - **Primary A (`WOOD / FROM / SKY?`):** `08_Thumbnail/Selected/hos_006_thumb_A_wood_from_sky_v01.jpg` (`278,441` B, `sha256: 904d2f58be22be993fb36e9c86997d00e239649e9f4b576ccebe4703c83dd0f0`)
+  - **Test & Compare B (`DO PLANTS / EAT / SOIL?`):** `08_Thumbnail/Selected/hos_006_thumb_B_do_plants_eat_soil_v01.jpg` (`279,043` B, `sha256: ee5f2605520a0155f146d26700d41c99d47b45596457f84d9692415fe15360c4`)
+  - **Gate previews:** `Selected/hos_006_thumb_A_wood_from_sky_v01_preview.jpg`, `Selected/hos_006_thumb_B_do_plants_eat_soil_v01_preview.jpg`, `Selected/hos_006_thumb_A_wood_from_sky_v01_style_sheet.jpg`, `Selected/hos_006_thumb_B_do_plants_eat_soil_v01_style_sheet.jpg`, `Selected/hos_006_thumbs_AB_v01_style_sheet.jpg`, and `Selected/hos_006_thumbs_AB_v01_phone_168.jpg`.
+- **Self-check scores (`THUMBNAIL_AND_TITLE_RULES.md` §2.B.3):**
+  - **HOOK:** **PASS** on A (`WOOD FROM SKY?`) and B (`DO PLANTS EAT SOIL?`). Both are 3–4 word positive questions (`LEARNINGS.md` Rule #1) naming the concrete physical things, with zero word overlap against Title A (*The Willow Tree That Was Made of Air*) or Title B (*Where Does a Tree's Weight Come From?*).
+  - **BAND:** **PASS** on A (`[95, 36, 369, 278]`, scroll bottom `y=297` above Explorer hair `y=323`, left of hero `x=440`) and B (`[70, 30, 431, 256]`, scroll bottom `y=277` above Explorer hair `y=295`, left of scale `x=485`). Both keep the bottom-right duration badge zone clear, and Plate B has zero written numbers on the scale or weights.
+  - **PHONE (`168×94`):** **PASS** on both `thumb_preview.py long` sheets and `hos_006_thumbs_AB_v01_phone_168.jpg`.
+- **STOP:** Parked for Chief (`parked for Chief: HOS 006 thumbnails A + B review before Ben's 1 Nov watch`). No upload or Studio changes.
+
+## 23 Oct 2026 — J0882: HOS 006 master v04 (all 11 Ben changes applied at 0 Flow credits, all gates PASS, Gemini covering)
+
+- **Master:** `/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/master_v04/hos_006_master_v04.mp4` (`531.833 s`, `12,764` frames @ 24 fps, `1920×1080` H.264 + AAC 48 kHz stereo at `-14.0 LUFS` / `-1.4 dBTP`, sha256 `65aa7e1c6fa4c72bd1565212c62f5e3f2052b41a9c8056af7eeed518cae88faf`).
+- **UAT & NAS copies (SHA-256 verified identical `65aa7e1c6fa4c72bd1565212c62f5e3f2052b41a9c8056af7eeed518cae88faf`):**
+  - iCloud HOS UAT: `/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/006_Trees_master_v04.mp4` and `/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/006_Trees-Are-Made-Of-Air/hos_006_master_v04.mp4` (+ `hos_006_master_v04_contact_sheet.jpg`, `teach_laid_sheet_v04.jpg`).
+  - NAS archive: `/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/09_Final-Export/master_v04/hos_006_master_v04.mp4` (+ `hos_006_master_v04_contact_sheet.jpg`, `teach_laid_sheet_v04.jpg`, `picture_qa_review.jpg`, `PICTURE_QA.md`, `SHA256_v04.json`).
+- **Spend:** `£0.00` cash, **`0` Flow credits** (`7` replacement 16:9 plates minted on Flow `Nano Banana 2.1` on AI Ultra at `0 cr/still`, Flow balance unchanged at `20,830` credits, logged in `07_Edit-Project/master_v04/FLOW_STILLS_LOG_v04.json`).
+- **All 11 Ben change items resolved (`07_Edit-Project/master_v04/`):**
+  1. **0:09 (`#03 03_pot_jar_leaf_v04.mp4`, `0:07.33–0:14.83` & `#88 21_three_objects_v04.mp4`, `8:01.00–8:06.12`):** Replaced both three-container plates with Flow `Nano Banana 2` 16:9 stills + smooth push-in showing the middle mint seedling growing out of dark soil inside a terracotta pot sitting on the oak table under the glass bell jar.
+  2. **0:49 (`#10 10_van_helmont_sack_v04.mp4`, `0:44.75–0:51.17`):** Replaced vanishing-bag plate with Flow `Nano Banana 2` 16:9 still + smooth push-in where the burlap sack of dried soil sits steadily on the left brass pan of van Helmont's balance scale for the full shot.
+  3. **1:14 (`#15 03_willow_shoot_scale_v04.mp4`, `1:12.92–1:17.21`):** Replaced branch-only shot with Flow `Nano Banana 2` 16:9 still + smooth push-in showing the whole 5-pound young willow tree (roots, root ball, trunk, and leafy branches) on the brass balance pan, paired with `5 lb (about 2.3 kg) / young willow tree · starting weight`.
+  4. **Imperial + metric weights everywhere weights are mentioned (checked against `01_Script/FACT_NOTES_v01.md`, VO unchanged):**
+     - `#14` (`1:07.08–1:12.92`, `02_balance_200_house_v04.mp4`): `200 lb (about 91 kg)` / `of dried soil · starting weight`
+     - `#15` (`1:13.08–1:17.08`, `wt_5lb`): `5 lb (about 2.3 kg)` / `young willow tree · starting weight`
+     - `#20` (`1:46.83–1:50.50`, `num_169`): `169 lb (about 77 kg)` / `after five years · weight of a grown man`
+     - `#23` (`2:01.33–2:05.25`, `wt_2oz`): `200 lb (about 91 kg)` / `less about 2 oz (about 57 g) of soil`
+     - `#24` (`2:05.58–2:09.50`, `wt_164lb`): `164 lb (about 74 kg) of new tree` / `only 2 oz (about 57 g) of soil gone`
+     - `#29` (`2:33.83–2:37.75`, `wt_62lb`): `62 lb (about 28 kg) of charcoal` / `burned by van Helmont`
+     - `#30` (`2:38.04–2:41.38`, `wt_1lb`): `1 lb (about 0.45 kg) of ash` / `left behind · the rest became gas`
+  5. **1:22 (`#16 04_lid_rain_v04.mp4`, `1:17.21–1:23.58`):** Replaced strange plate with clean Flow `Nano Banana 2` 16:9 still + gentle rain animation showing van Helmont's terracotta pot fitted with its perforated tin-plated iron lid around the willow trunk as rainwater droplets fall onto the lid.
+  6. **3:15 (`#35 02_hales_branch_v04.mp4`, `3:03.71–3:10.21` & `#36 03_water_level_v04.mp4`, `3:10.21–3:15.42`):** Replaced both off test-tube/branch plates with Flow `Nano Banana 2` 16:9 plates showing period-correct 18th-century clear glass vessels holding a leafy branch/sprig upright in water on Stephen Hales's oak workbench.
+  7. **4:54 (`#55 04_sunny_window_v04.mp4`, `4:51.83–4:56.38`) & 5:21 (`#59 08_explorer_shade_v04.mp4`, `5:15.38–5:22.58`):** Fixed bubbles leaving the jars: `#55` uses a new Flow `Nano Banana 2` 16:9 still with animated oxygen bubbles rising strictly from the submerged leaves inside the water-filled jars; `#59` joins the clean underwater-bubble halves of `08_explorer_shade` `t2` + `t1` with an 8-frame crossfade so all bubbles stay inside the glass vessel.
+  8. **5:57 (`#66 15_leaf_turns_sun_v04.mp4`, `5:55.17–5:58.08`):** Replaced rotating plant clip with a smooth push-in on `15_leaf_turns_sun_t1.png` (`0` rotation, `0` jitter reversals).
+  9. **6:07 (`#68 when_geneva_1782`, `6:07.00–6:09.83`):** Added the house WHEN/WHERE lower-third card `Geneva, 1782 / Lake Geneva · Republic of Geneva` over `01_geneva_lake`, plus restored Part 05 overlays (`timeline_d5` `Geneva, 1782`, `who_senebier` `Jean Senebier 1742–1809 · Genevan pastor`, `who_saussure` `Nicolas-Théodore de Saussure 1767–1845 · Genevan chemist`, `timeline_d6` `Geneva, 1804`) and cropped `#91` (`24_gold_foil_crop_v04.mp4`) to remove the background `ATOMOS` ceiling sign.
+  10. **8:28 (`#92..#96`, `8:27.83–8:51.83`, `+24.00 s` / `576` frames):** Added `#92` (`8:27.83–8:31.83`, `4.00 s`) moving golden-hour willow plate with the house closing card naming next week's film (*Why Vaccines Are Named After a Cow*, Thursday 12 November, `@HistoryOfScienceYT`), followed by `20.00 s` (`#93..#96`, `4 × 5.00 s`) of moving willow/garden plates for the YouTube Studio end screen, with full-runtime score bed (`531.833 s`) and house SFX stem (`31` cues).
+
+### Machine checks (pasted outputs)
+
+```text
+SFX level PASS: VO -16.1 LUFS, SFX -34.0 LUFS, 31 hits
+music gate PASS: trees006_score_bed_v01.mp3, 531.8 s, about 66.7 BPM, brief Pace: 60-72 BPM
+WARN   2:18 row 15_desk_candle 15_desk_candle_t1_above_desk_v03.mp4: low detail: edge density 0.0271 < film p5 0.0272
+WARN   3:01 row 01_soil_to_sky 01_soil_to_sky_t1.mp4: low detail: edge density 0.0219 < film p5 0.0272
+WARN   5:24 row 09_bubbles_again 05_bubbles_macro_t1_from4.500.mp4: low detail: edge density 0.0245 < film p5 0.0272
+WARN   6:32 row 05_sums_add_up 05_sums_add_up_t1.mp4: low detail: edge density 0.0248 < film p5 0.0272
+WARN   8:17 row 23_carbon_atom 23_carbon_atom_t1.mp4: low detail: edge density 0.0238 < film p5 0.0272
+picture QA PASS: 0 of 96 cuts fail, 5 to look at -> /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/master_v04/PICTURE_QA.md, /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/master_v04/picture_qa_review.jpg
+polish gate PASS: 0 of 96 rows failed, 5 to look at -> /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/master_v04/polish_gate.json
+**Decision:** PASS — VO / Gemini Veo allowed
+Script score: **93.7/100** · PASS
+Integrated loudness: I: -14.0 LUFS, LRA: 3.3 LU, True peak: -1.4 dBFS
+ALL CHECKS PASS (00_Brand/Channel-Setup/tools/check_all.sh 02_Video-Projects/006_Trees-Are-Made-Of-Air)
+```
+
+- **STOP:** Parked for Chief (`parked for Chief: HOS 006 master v04 review (all 11 Ben changes applied at 0 Flow credits, all gates PASS)`). Nothing uploaded or scheduled.
+
+## 23 Oct 2026 — J0886: HOS 006 master v05 (all 4 Ben second-round v04 changes + v03 bubble checks resolved at 0 Flow credits, all gates PASS, Gemini covering)
+
+- **Master MP4:** `/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/master_v05/hos_006_master_v05.mp4` (`531.833 s`, `12,764` frames @ 24 fps, `1920×1080` H.264 + AAC 48 kHz stereo at `-14.0 LUFS` / `-1.4 dBTP`, sha256 `4f9dd1cace14b3a1e4c535e3721759549ea9288348f42934210593659061fbf7`, video stream sha256 `21acad54d53a8e1c2bf0f3b2c7dc27876d80c42c9b46cef4eaf666950c8192a0`).
+- **Phone MP4 (`<120 MB`):** `/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/master_v05/hos_006_master_v05_PHONE.mp4` (`109.85 MB`, `115,187,909` B, sha256 `f8ce8783751c618d829daedf7baf1c3959f9ac4188669b6c6807df023bce2da6`).
+- **UAT & NAS copies (SHA-256 verified identical):**
+  - iCloud HOS UAT: `/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/006_Trees_master_v05.mp4`, `/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/006_Trees_master_v05_PHONE.mp4`, and `/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/006_Trees-Are-Made-Of-Air/hos_006_master_v05.mp4` (+ `hos_006_master_v05_PHONE.mp4`, `hos_006_master_v05_ben_check_sheet.jpg`, `hos_006_master_v05_contact_sheet.jpg`).
+  - NAS archive: `/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/09_Final-Export/master_v05/` (`hos_006_master_v05.mp4`, `hos_006_master_v05_PHONE.mp4`, `hos_006_master_v05_ben_check_sheet.jpg`, `hos_006_master_v05_contact_sheet.jpg`).
+- **Spend:** `£0.00` cash, **`0` Flow credits** (`4` replacement 16:9 stills minted on Flow `Nano Banana 2.1` on AI Ultra at `0 cr/still`, Flow balance unchanged at `20,730` credits, logged in `07_Edit-Project/master_v05/FLOW_STILLS_LOG_v05.json`).
+- **All 4 Ben v04 change items + v03 bubble checks resolved and visually verified on full-size 1920×1080 check frames (`07_Edit-Project/master_v05/hos_006_master_v05_ben_check_sheet.jpg`):**
+  1. **`0:07` (`#02 P1 02_balance_trunk_v05.mp4`, `0:04.29–0:07.38`, frame `00_07_scales_tree.png`):** *"Scales the tree is not on them"* — Replaced with a Flow `Nano Banana 2.1` 16:9 plate + smooth push-in showing the entire young willow tree (root ball, woody trunk, and weeping green canopy) resting directly **on** the left brass scale pan, weighing it down low while the right pan holding a small pinch of dry brown soil is lifted high.
+  2. **`1:26` (`#17 P2 05_pure_water_v05.mp4`, `1:23.62–1:28.62`, frame `01_26_tree_in_pot.png`) & `7:16` callback (`#80 P5 13_water_in_tree_v05.mp4`, `7:13.83–7:18.92`, frame `07_16_callback_tree_in_pot.png`):** *"Tree not in the pot"* — Replaced with a Flow `Nano Banana 2.1` 16:9 plate + animated water stream where the willow tree trunk grows **directly up out of the soil inside the terracotta pot** through the central hole of the perforated tin-plated iron lid while van Helmont pours pure water from a copper pitcher into the hole (`#80` uses a closer framing of the same action so `picture_qa.py` has 0 duplicate reuse).
+  3. **`4:28` (`#50 P3 17_notebook_tick_v05.mp4`, `4:25.29–4:29.50`, frame `04_28_priestley_body.png`):** *"No body for the hand"* — Replaced with a Flow `Nano Banana 2.1` 16:9 plate + smooth push-in showing Joseph Priestley in full upper-body 18th-century 3D cartoon house style (head, powdered wig, shoulders, dark coat, cuffs, and both arms naturally connected to his body) seated at his sunlit oak laboratory desk holding a feather quill pen over his open notebook (which has only a simple tick and X mark, zero letters or numbers).
+  4. **`5:29` (`#61 P4 10_only_green_v05.mp4`, `5:25.88–5:30.46`, frame `05_29_only_green_bubbles.png`) plus v03 bubble checks at `4:54` (`#55 P4 04_sunny_window_v05.mp4`, `4:51.83–4:56.38`, frame `04_54_sunny_window_bubbles.png`) and `5:17 / 5:21` (`#59 P4 08_explorer_shade_v05.mp4`, `5:15.25–5:22.46`, frames `05_17_explorer_jar_bubbles.png` & `05_21_explorer_carries_jar.png`):** *"Bubbles rising out the water into the air"* —
+     - At `5:29`, three open water-filled glass jars sit on the sunlit windowsill (woody twig in left jar with 0 bubbles, red flower in middle jar with 0 bubbles, green leafy sprig in right jar with oxygen bubbles rising strictly underwater below the water meniscus at `y >= 615`, `n_motes=0`, zero bubbles in the air).
+     - At `4:54`, bubbles are rendered in 1920×1080 source space strictly inside the submerged water columns (`y_top >= 470` / `435`) before the camera push-in (`n_motes=0`, zero bubbles above the meniscus or outside the jars).
+     - At `5:17–5:21`, the first half (`05_17_explorer_jar_bubbles.png`) uses `08_explorer_shade_t1.png` with bubbles strictly underwater inside the corked jar while the Explorer inspects it in the sun, crossfading over 8 frames into the clean second half of `t1` (`05_21_explorer_carries_jar.png`) where she carries the corked jar into the shade with zero bubbles in the air.
+
+### Machine checks (pasted outputs)
+
+```text
+SFX level PASS: VO -16.1 LUFS, SFX -34.0 LUFS, 31 hits
+music gate PASS: trees006_score_bed_v01.mp3, 531.8 s, about 66.7 BPM, brief Pace: 60-72 BPM
+WARN   2:18 row 15_desk_candle 15_desk_candle_t1_above_desk_v03.mp4: low detail: edge density 0.027 < film p5 0.0272
+WARN   3:01 row 01_soil_to_sky 01_soil_to_sky_t1.mp4: low detail: edge density 0.0219 < film p5 0.0272
+WARN   5:24 row 09_bubbles_again 05_bubbles_macro_t1_from4.500.mp4: low detail: edge density 0.0244 < film p5 0.0272
+WARN   6:32 row 05_sums_add_up 05_sums_add_up_t1.mp4: low detail: edge density 0.0247 < film p5 0.0272
+WARN   8:17 row 23_carbon_atom 23_carbon_atom_t1.mp4: low detail: edge density 0.0237 < film p5 0.0272
+picture QA PASS: 0 of 96 cuts fail, 5 to look at -> /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/master_v05/PICTURE_QA.md, /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/master_v05/picture_qa_review.jpg
+polish gate PASS: 0 of 96 rows failed, 5 to look at -> /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/master_v05/polish_gate.json
+**Decision:** PASS — VO / Gemini Veo allowed
+Script score: **93.7/100** · PASS
+Integrated loudness: I: -14.0 LUFS, LRA: 3.3 LU, True peak: -1.4 dBFS
+ALL CHECKS PASS (00_Brand/Channel-Setup/tools/check_all.sh 02_Video-Projects/006_Trees-Are-Made-Of-Air)
+```
+
+- **STOP:** Parked for Chief (`parked for Chief: HOS 006 master v05 review (all 4 Ben v04 changes + v03 bubble checks resolved at 0 Flow credits, check sheet verified, _PHONE.mp4 in HOS UAT, all gates PASS)`). Nothing uploaded or scheduled.

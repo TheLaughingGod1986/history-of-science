@@ -1,0 +1,231 @@
+{
+ "pulled": "2026-10-19",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "how do enzymes speed up chemical reactions",
+  "emil fischer james sumner"
+ ],
+ "autocomplete": {
+  "how do enzymes speed up chemical reactions": [
+   "how do enzymes speed up chemical reactions",
+   "how enzymes speed up chemical reactions"
+  ],
+  "emil fischer james sumner": []
+ },
+ "sharedTitleWords": [
+  "chemical reactions",
+  "chemical reaction",
+  "biology fuseschool",
+  "gcse biology"
+ ],
+ "neighbours": [
+  {
+   "id": "OttRV5ykP7A",
+   "title": "How to speed up chemical reactions (and get a date) - Aaron Sams",
+   "channel": "TED-Ed",
+   "views": "2,459,091 views",
+   "age": "14 yr ago",
+   "length": "4:56",
+   "tier": 1,
+   "viewCount": 2459091,
+   "foundBy": "how do enzymes speed up chemical reactions",
+   "onTopic": true
+  },
+  {
+   "id": "SEDabz-hyKo",
+   "title": "Can you solve the Big Bang riddle? - James Tanton",
+   "channel": "TED-Ed",
+   "views": "1,520,952 views",
+   "age": "4 yr ago",
+   "length": "6:24",
+   "tier": 1,
+   "viewCount": 1520952,
+   "foundBy": "ted-ed emil fischer james sumner",
+   "onTopic": true
+  },
+  {
+   "id": "8m6RtOpqvtU",
+   "title": "What triggers a chemical reaction? - Kareem Jarrah",
+   "channel": "TED-Ed",
+   "views": "1,064,248 views",
+   "age": "11 yr ago",
+   "length": "3:46",
+   "tier": 1,
+   "viewCount": 1064248,
+   "foundBy": "ted-ed how do enzymes speed up chemical reactions",
+   "onTopic": true
+  },
+  {
+   "id": "o1_D4FscMnU",
+   "title": "The chemical reaction that feeds the world - Daniel D. Dulek",
+   "channel": "TED-Ed",
+   "views": "841,082 views",
+   "age": "12 yr ago",
+   "length": "5:19",
+   "tier": 1,
+   "viewCount": 841082,
+   "foundBy": "how do enzymes speed up chemical reactions ted",
+   "onTopic": true
+  },
+  {
+   "id": "D0ZyjpAin_Y",
+   "title": "Activation energy: Kickstarting chemical reactions - Vance Kite",
+   "channel": "TED-Ed",
+   "views": "265,166 views",
+   "age": "13 yr ago",
+   "length": "3:23",
+   "tier": 1,
+   "viewCount": 265166,
+   "foundBy": "how do enzymes speed up chemical reactions",
+   "onTopic": true
+  },
+  {
+   "id": "qgVFkRn8f10",
+   "title": "Enzymes (Updated)",
+   "channel": "Amoeba Sisters",
+   "views": "7,120,908 views",
+   "age": "10 yr ago",
+   "length": "5:47",
+   "tier": 2,
+   "viewCount": 7120908,
+   "foundBy": "how do enzymes speed up chemical reactions",
+   "onTopic": true
+  },
+  {
+   "id": "rlH1ym916Fo",
+   "title": "Enzymes | Cells | Biology | FuseSchool",
+   "channel": "FuseSchool - Global Education",
+   "views": "1,142,028 views",
+   "age": "9 yr ago",
+   "length": "4:12",
+   "tier": 2,
+   "viewCount": 1142028,
+   "foundBy": "how do enzymes speed up chemical reactions",
+   "onTopic": true
+  },
+  {
+   "id": "gUncqL1ul8Q",
+   "title": "GCSE Biology - What are Enzymes? (2026/27 exams)",
+   "channel": "Cognito",
+   "views": "685,424 views",
+   "age": "4 yr ago",
+   "length": "4:55",
+   "tier": 2,
+   "viewCount": 685424,
+   "foundBy": "how do enzymes speed up chemical reactions",
+   "onTopic": true
+  },
+  {
+   "id": "a0yGDipKWlo",
+   "title": "Digestive enzymes | Physiology | Biology | FuseSchool",
+   "channel": "FuseSchool - Global Education",
+   "views": "529,171 views",
+   "age": "6 yr ago",
+   "length": "4:18",
+   "tier": 2,
+   "viewCount": 529171,
+   "foundBy": "how do enzymes speed up chemical reactions ted",
+   "onTopic": true
+  },
+  {
+   "id": "n9He_FK6nao",
+   "title": "GCSE Biology - Enzymes - How Temperature and pH Affect Rate of Reaction (2026/27 exams)",
+   "channel": "Cognito",
+   "views": "434,813 views",
+   "age": "4 yr ago",
+   "length": "3:37",
+   "tier": 2,
+   "viewCount": 434813,
+   "foundBy": "how do enzymes speed up chemical reactions",
+   "onTopic": true
+  },
+  {
+   "id": "A90HKrgUOg0",
+   "title": "Enzymes | Energy and enzymes | Biology | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "332,258 views",
+   "age": "11 yr ago",
+   "length": "8:12",
+   "tier": 2,
+   "viewCount": 332258,
+   "foundBy": "khan academy how do enzymes speed up chemical reactions",
+   "onTopic": true
+  },
+  {
+   "id": "IoDEjeRZ0xE",
+   "title": "How Enzymes Denature | Cells | Biology | FuseSchool",
+   "channel": "FuseSchool - Global Education",
+   "views": "270,193 views",
+   "age": "10 yr ago",
+   "length": "4:30",
+   "tier": 2,
+   "viewCount": 270193,
+   "foundBy": "ted-ed how do enzymes speed up chemical reactions",
+   "onTopic": true
+  },
+  {
+   "id": "BTB_HPL2r88",
+   "title": "How designing brand-new enzymes could change the world | Adam Garske",
+   "channel": "TED",
+   "views": "92,880 views",
+   "age": "6 yr ago",
+   "length": "13:13",
+   "tier": 1,
+   "viewCount": 92880,
+   "foundBy": "how do enzymes speed up chemical reactions ted",
+   "onTopic": true
+  },
+  {
+   "id": "BFWRPr3_y_M",
+   "title": "A-Level Biology - Enzyme Action - What Enzymes Are | Lock & Key | Induced Fit (2027/28 exams)",
+   "channel": "Cognito",
+   "views": "48,590 views",
+   "age": "11 mo ago",
+   "length": "5:18",
+   "tier": 2,
+   "viewCount": 48590,
+   "foundBy": "how do enzymes speed up chemical reactions",
+   "onTopic": true
+  },
+  {
+   "id": "0u8Z6oNW4no",
+   "title": "The Environment is Inside You | James Miller | TEDxDKU",
+   "channel": "TEDx Talks",
+   "views": "1,034 views",
+   "age": "2 yr ago",
+   "length": "12:54",
+   "tier": 1,
+   "viewCount": 1034,
+   "foundBy": "ted-ed emil fischer james sumner",
+   "onTopic": true
+  },
+  {
+   "id": "0oCQhFNfwd8",
+   "title": "The World Needs More Writers | Emil H. | TEDxYouth@SouthpointeAcademy",
+   "channel": "TEDx Talks",
+   "views": "583 views",
+   "age": "3 yr ago",
+   "length": "6:16",
+   "tier": 1,
+   "viewCount": 583,
+   "foundBy": "ted-ed emil fischer james sumner",
+   "onTopic": true
+  },
+  {
+   "id": "lsBp9z5iEt4",
+   "title": "Nothing Ever Happens Here | David James | TEDxUniversity of Suffolk",
+   "channel": "TEDx Talks",
+   "views": "70 views",
+   "age": "2 days ago",
+   "length": "17:45",
+   "tier": 1,
+   "viewCount": 70,
+   "foundBy": "ted-ed emil fischer james sumner",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 5,
+ "gate": "PASS",
+ "hasTed": true,
+ "failedQueries": []
+}

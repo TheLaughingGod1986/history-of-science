@@ -1,0 +1,272 @@
+{
+ "pulled": "2026-10-19",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "cell membrane transport osmosis",
+  "fluid mosaic aquaporin"
+ ],
+ "autocomplete": {
+  "cell membrane transport osmosis": [
+   "osmosis cell membrane transport",
+   "transport across cell membrane osmosis",
+   "transport across cell membrane physiology osmosis",
+   "cell transport diffusion osmosis active transport"
+  ],
+  "fluid mosaic aquaporin": []
+ },
+ "sharedTitleWords": [
+  "cell membranes",
+  "diffusion and",
+  "and osmosis",
+  "transport in",
+  "in cells",
+  "cells biology",
+  "biology fuseschool"
+ ],
+ "neighbours": [
+  {
+   "id": "nsklF1w4eok",
+   "title": "Cell membranes are way more complicated than you think - Nazzy Pakpour",
+   "channel": "TED-Ed",
+   "views": "1,072,999 views",
+   "age": "9 yr ago",
+   "length": "5:21",
+   "tier": 1,
+   "viewCount": 1072999,
+   "foundBy": "ted-ed cell membrane transport osmosis",
+   "onTopic": true
+  },
+  {
+   "id": "yAXnYcUjn5k",
+   "title": "Insights into cell membranes via dish detergent - Ethan Perlstein",
+   "channel": "TED-Ed",
+   "views": "280,171 views",
+   "age": "13 yr ago",
+   "length": "3:50",
+   "tier": 1,
+   "viewCount": 280171,
+   "foundBy": "ted-ed cell membrane transport osmosis",
+   "onTopic": true
+  },
+  {
+   "id": "Ptmlvtei8hw",
+   "title": "Cell Transport",
+   "channel": "Amoeba Sisters",
+   "views": "8,210,775 views",
+   "age": "10 yr ago",
+   "length": "7:50",
+   "tier": 2,
+   "viewCount": 8210775,
+   "foundBy": "cell membrane transport osmosis",
+   "onTopic": true
+  },
+  {
+   "id": "dPKvHrD1eS4",
+   "title": "In Da Club - Membranes & Transport: Crash Course Biology #5",
+   "channel": "CrashCourse",
+   "views": "6,303,900 views",
+   "age": "14 yr ago",
+   "length": "11:45",
+   "tier": 2,
+   "viewCount": 6303900,
+   "foundBy": "cell membrane transport osmosis",
+   "onTopic": true
+  },
+  {
+   "id": "qBCVVszQQNs",
+   "title": "Inside the Cell Membrane",
+   "channel": "Amoeba Sisters",
+   "views": "5,181,222 views",
+   "age": "8 yr ago",
+   "length": "9:09",
+   "tier": 2,
+   "viewCount": 5181222,
+   "foundBy": "cell membrane transport osmosis",
+   "onTopic": true
+  },
+  {
+   "id": "L-osEc07vMs",
+   "title": "Osmosis and Water Potential (Updated)",
+   "channel": "Amoeba Sisters",
+   "views": "3,767,426 views",
+   "age": "8 yr ago",
+   "length": "9:50",
+   "tier": 2,
+   "viewCount": 3767426,
+   "foundBy": "cell membrane transport osmosis",
+   "onTopic": true
+  },
+  {
+   "id": "Hmwvj9X4GNY",
+   "title": "Parts of a cell",
+   "channel": "Khan Academy",
+   "views": "2,984,816 views",
+   "age": "16 yr ago",
+   "length": "21:04",
+   "tier": 2,
+   "viewCount": 2984816,
+   "foundBy": "khan academy cell membrane transport osmosis",
+   "onTopic": true
+  },
+  {
+   "id": "aubZU0iWtgI",
+   "title": "Diffusion and osmosis | Membranes and transport | Biology | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "2,227,492 views",
+   "age": "16 yr ago",
+   "length": "18:59",
+   "tier": 2,
+   "viewCount": 2227492,
+   "foundBy": "cell membrane transport osmosis",
+   "onTopic": true
+  },
+  {
+   "id": "PRi6uHDKeW4",
+   "title": "Transport in Cells: Diffusion and Osmosis | Cells | Biology | FuseSchool",
+   "channel": "FuseSchool - Global Education",
+   "views": "2,202,090 views",
+   "age": "10 yr ago",
+   "length": "3:52",
+   "tier": 2,
+   "viewCount": 2202090,
+   "foundBy": "cell membrane transport osmosis",
+   "onTopic": true
+  },
+  {
+   "id": "eDeCgTRFCbA",
+   "title": "Transport In Cells: Active Transport | Cells | Biology | FuseSchool",
+   "channel": "FuseSchool - Global Education",
+   "views": "978,300 views",
+   "age": "10 yr ago",
+   "length": "2:32",
+   "tier": 2,
+   "viewCount": 978300,
+   "foundBy": "cell membrane transport osmosis ted",
+   "onTopic": true
+  },
+  {
+   "id": "vCJVXYmXkzM",
+   "title": "GCSE Biology - Osmosis (2026/27 exams)",
+   "channel": "Cognito",
+   "views": "812,941 views",
+   "age": "4 yr ago",
+   "length": "4:24",
+   "tier": 2,
+   "viewCount": 812941,
+   "foundBy": "cell membrane transport osmosis",
+   "onTopic": true
+  },
+  {
+   "id": "tM0bGaaQ2jY",
+   "title": "GCSE Biology - Active Transport (2026/27 exams)",
+   "channel": "Cognito",
+   "views": "675,165 views",
+   "age": "4 yr ago",
+   "length": "4:48",
+   "tier": 2,
+   "viewCount": 675165,
+   "foundBy": "cell membrane transport osmosis",
+   "onTopic": true
+  },
+  {
+   "id": "ipa1vmQ7H_4",
+   "title": "Fluid mosaic model | Cells | Biology | FuseSchool",
+   "channel": "FuseSchool - Global Education",
+   "views": "637,033 views",
+   "age": "5 yr ago",
+   "length": "3:18",
+   "tier": 2,
+   "viewCount": 637033,
+   "foundBy": "fluid mosaic aquaporin",
+   "onTopic": true
+  },
+  {
+   "id": "rCNlG_j_gSM",
+   "title": "Osmosis | Membranes and transport | Biology | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "575,194 views",
+   "age": "11 yr ago",
+   "length": "8:03",
+   "tier": 2,
+   "viewCount": 575194,
+   "foundBy": "ted-ed cell membrane transport osmosis",
+   "onTopic": true
+  },
+  {
+   "id": "cP8iQu57dQo",
+   "title": "Fluid mosaic model of cell membranes | Biology | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "498,261 views",
+   "age": "11 yr ago",
+   "length": "8:46",
+   "tier": 2,
+   "viewCount": 498261,
+   "foundBy": "khan academy cell membrane transport osmosis",
+   "onTopic": true
+  },
+  {
+   "id": "vh166DKxYiM",
+   "title": "Sodium potassium pump | Membranes and transport | Biology | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "389,477 views",
+   "age": "11 yr ago",
+   "length": "7:17",
+   "tier": 2,
+   "viewCount": 389477,
+   "foundBy": "khan academy cell membrane transport osmosis",
+   "onTopic": true
+  },
+  {
+   "id": "vC-cEWJxDRY",
+   "title": "Endomembrane system | Structure of a cell | Biology | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "340,639 views",
+   "age": "11 yr ago",
+   "length": "6:19",
+   "tier": 2,
+   "viewCount": 340639,
+   "foundBy": "khan academy fluid mosaic aquaporin",
+   "onTopic": true
+  },
+  {
+   "id": "a_Y9wBQ610o",
+   "title": "Diffusion | Membranes and transport | Biology | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "311,143 views",
+   "age": "11 yr ago",
+   "length": "6:06",
+   "tier": 2,
+   "viewCount": 311143,
+   "foundBy": "khan academy cell membrane transport osmosis",
+   "onTopic": true
+  },
+  {
+   "id": "9Ia8zH-qMZw",
+   "title": "Cell Membranes: How Does Stuff Get Into Your Cells?: Crash Course Biology #24",
+   "channel": "CrashCourse",
+   "views": "298,013 views",
+   "age": "2 yr ago",
+   "length": "13:20",
+   "tier": 2,
+   "viewCount": 298013,
+   "foundBy": "ted-ed cell membrane transport osmosis",
+   "onTopic": true
+  },
+  {
+   "id": "uwQdygERQ9g",
+   "title": "A-Level Biology - Fluid Mosaic Model - What Cell Membranes Are | Key Structures (2027/28 exams)",
+   "channel": "Cognito",
+   "views": "41,305 views",
+   "age": "10 mo ago",
+   "length": "6:36",
+   "tier": 2,
+   "viewCount": 41305,
+   "foundBy": "fluid mosaic aquaporin",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 8,
+ "gate": "PASS",
+ "hasTed": true,
+ "failedQueries": []
+}

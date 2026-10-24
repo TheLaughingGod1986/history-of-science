@@ -1,0 +1,6 @@
+s01_01_beyond_red_v01     2.5s 01_beyond_red_v01.jpg        ok
+s02_02_prism_window_v01     6.3s 02_prism_window_v01.jpg      ok
+s03_03_thermometers_colours_v01    10.0s 03_thermometers_colours_v01. ok
+s04_04_past_the_red_v01    16.1s 04_past_the_red_v01.jpg      ok
+s05_01_beyond_red_v01    21.1s end_card_loop_01_beyond_red_ WARN low detail: edge density 0.0099 < film p5 0.0115
+polish gate PASS: 0 of 5 rows failed, 1 to look at -> /Users/benjaminoats/YouTube/History Of Science/docs/STANDALONE_SHORTS_TEST_2026-10/qa_shorts_v01/hos_sa_s1_herschel_infrared_v01/polish_gate_hos_sa_s1_herschel_infrared_v01.json

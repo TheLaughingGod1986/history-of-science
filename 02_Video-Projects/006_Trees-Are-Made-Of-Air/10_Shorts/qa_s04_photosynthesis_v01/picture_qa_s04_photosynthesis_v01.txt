@@ -1,0 +1,2 @@
+WARN   0:08 row s03_Then, 07_sugar_oxygen_t1.mp4: low detail: edge density 0.0387 < film p5 0.0445
+picture QA PASS: 0 of 8 cuts fail, 1 to look at -> 02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/qa_s04_photosynthesis_v01/picture_qa_s04_photosynthesis_v01/PICTURE_QA.md, 02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/qa_s04_photosynthesis_v01/picture_qa_s04_photosynthesis_v01/picture_qa_review.jpg

@@ -1,0 +1,99 @@
+{
+  "film": "002",
+  "video": "AL_-qlWko_g",
+  "job": "J0579",
+  "variant": "B v08 (1.29x empty-slot hero push-in + concrete physical-object hook; pairs with B v07 'METAL TURNS LIQUID' and B v04 'PREDICTED BEFORE FOUND')",
+  "maker": "gemini",
+  "hook": "ONE GLOWING GAP",
+  "punch": "GAP",
+  "jpg": "Selected/hos_002_thumb_B_one_glowing_gap_v08.jpg",
+  "sha256": "418d8e8b15e93fcc3ae6fd981482eb31177f62bcb2023849450f7c0b48b51cf2",
+  "bytes": 202587,
+  "plates": [
+    "_stills_v05/hos_002_empty_slot_hero_v01.jpg (1376x768 Flow Nano Banana periodic-table cabinet plate with 1.29x hero push-in on the glowing empty gap)",
+    "Selected/hos_002_thumb_A_gallium_live_v02.png (NAS 002 painted key-art lower-left Explorer cutout)"
+  ],
+  "method": "existing_002_plates_only_1.29x_hero_push_in_and_Explorer_cutout_with_GeorgiaBold_and_gold_flourishes",
+  "spend": 0,
+  "heroBox": [
+    613,
+    214,
+    1009,
+    559
+  ],
+  "explorer": {
+    "source": "hos_002_thumb_A_gallium_live_v02.png",
+    "box": [
+      0,
+      331,
+      256,
+      720
+    ],
+    "height_px": 389,
+    "height_frac": 0.54
+  },
+  "lettering": [
+    {
+      "word": "ONE",
+      "kind": "cream",
+      "size": 86,
+      "box": [
+        206,
+        44,
+        398,
+        123
+      ]
+    },
+    {
+      "word": "GLOWING",
+      "kind": "cream",
+      "size": 84,
+      "box": [
+        89,
+        113,
+        515,
+        190
+      ]
+    },
+    {
+      "word": "GAP",
+      "kind": "gold",
+      "size": 112,
+      "box": [
+        178,
+        180,
+        427,
+        282
+      ]
+    }
+  ],
+  "ornaments": {
+    "top_scroll_box": [
+      136,
+      17,
+      468,
+      39
+    ],
+    "bottom_scroll_box": [
+      180,
+      283,
+      424,
+      305
+    ]
+  },
+  "clearOfHero": true,
+  "clearOfExplorer": true,
+  "clearOfBadge": true,
+  "scores": {
+    "HOOK": "PASS \u2014 'ONE GLOWING GAP' (3 words, punch word 'GAP' in gold) names the concrete visual hero on the right two-thirds (the single glowing golden vacancy inside Mendeleev's wooden periodic-table cabinet; 002 script Intro & Part 04-05: 'why the gaps were the cleverest part... left gaps for undiscovered elements... Hold on the last glowing vacancy' and THUMBNAIL_AND_TITLE_RULES.md \u00a71.2 & \u00a72.B.1 'name the thing'), shares zero words with the video title ('How Did We Discover the Periodic Table?'), J0374 ('THE MISSING ELEMENT'), J0442 ('PREDICTED BEFORE FOUND'), J0488 ('EMPTY ON PURPOSE'), or J0534 ('METAL TURNS LIQUID'), and uses no vague questions or pronouns.",
+    "BAND": "PASS \u2014 Upper-left lettering band (x=89..515, y=44..282, framed by top/bottom gold scroll flourishes at y=17..305) sits completely left of the pushed-in glowing hero gap (x=613..1009), above the Explorer's hair (y=331), and clear of the bottom-right duration badge.",
+    "PHONE": "PASS \u2014 Checked on 168x94 preview sheet and 4-panel strip: the 1.29x hero push-in makes the glowing golden gap (396x345 px, +39% over v05) and surrounding blank cream tiles bold and unmistakable at 168x94 while keeping 'ONE GLOWING GAP' (with huge 112pt gold 'GAP') and the lower-left Explorer (54.4% height) immediately legible in under a second."
+  },
+  "previews": [
+    "Selected/hos_002_thumb_B_one_glowing_gap_v08_preview.jpg",
+    "Selected/hos_002_thumb_B_one_glowing_gap_v08_style_sheet.jpg",
+    "Selected/hos_002_thumb_TC_4way_one_glowing_gap_v08_phone_168.jpg"
+  ],
+  "studio": false,
+  "status": "Test & Compare B v08 candidate for 002 (AL_-qlWko_g, built from existing 002 plates only with 1.29x hero push-in, \u00a30). Parked for Chief: thumb B review. No Studio until OK."
+}

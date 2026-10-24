@@ -1,0 +1,151 @@
+{
+ "pulled": "2026-10-21",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "snake venom",
+  "how venom works"
+ ],
+ "autocomplete": {
+  "snake venom": [
+   "snake venom",
+   "snake venom vs human blood",
+   "snake venom extraction",
+   "snake venom in blood",
+   "snake venom beer",
+   "snake venom collection",
+   "snake venom under microscope",
+   "snake venom in human blood",
+   "snake venom vs blood",
+   "snake venom milking"
+  ],
+  "how venom works": [
+   "how venom works",
+   "how venom works on blood",
+   "how venom works in the body",
+   "how poison works in human body",
+   "how poison works animation",
+   "how poison works in human body in hindi",
+   "how poison works poe",
+   "how snake venom works in human body",
+   "how antivenom works",
+   "how scorpion venom works"
+  ]
+ },
+ "sharedTitleWords": [
+  "than they"
+ ],
+ "neighbours": [
+  {
+   "id": "KnJ4_xRfxpA",
+   "title": "Poison vs. venom: What's the difference? - Rose Eveleth",
+   "channel": "TED-Ed",
+   "views": "3,121,269 views",
+   "age": "12 yr ago",
+   "length": "3:56",
+   "tier": 1,
+   "viewCount": 3121269,
+   "foundBy": "ted-ed snake venom",
+   "onTopic": true
+  },
+  {
+   "id": "s_Cs1nbbv_M",
+   "title": "Watch this if you're scared of snakes - Andrew Whitworth",
+   "channel": "TED-Ed",
+   "views": "1,506,374 views",
+   "age": "4 yr ago",
+   "length": "5:10",
+   "tier": 1,
+   "viewCount": 1506374,
+   "foundBy": "ted-ed snake venom",
+   "onTopic": true
+  },
+  {
+   "id": "m2BE9GZJJbs",
+   "title": "How do snakes swallow animals so much bigger than they are? - Niko Zlotnik",
+   "channel": "TED-Ed",
+   "views": "465,780 views",
+   "age": "6 mo ago",
+   "length": "6:47",
+   "tier": 1,
+   "viewCount": 465780,
+   "foundBy": "ted-ed snake venom",
+   "onTopic": true
+  },
+  {
+   "id": "EzoqvBZe_gI",
+   "title": "Why Don't Snakes Poison Themselves?",
+   "channel": "MinuteEarth",
+   "views": "1,149,016 views",
+   "age": "2 yr ago",
+   "length": "3:46",
+   "tier": 2,
+   "viewCount": 1149016,
+   "foundBy": "ted-ed snake venom",
+   "onTopic": true
+  },
+  {
+   "id": "O9zSHs1TWMM",
+   "title": "Adding: why carrying works | Addition and subtraction | Arithmetic | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "697,377 views",
+   "age": "13 yr ago",
+   "length": "2:30",
+   "tier": 2,
+   "viewCount": 697377,
+   "foundBy": "khan academy how venom works",
+   "onTopic": true
+  },
+  {
+   "id": "SsHnfVmb9OE",
+   "title": "Mysteries of vernacular: Venom - Jessica Oreck and Rachael Teel",
+   "channel": "TED-Ed",
+   "views": "45,335 views",
+   "age": "13 yr ago",
+   "length": "2:03",
+   "tier": 1,
+   "viewCount": 45335,
+   "foundBy": "ted-ed how venom works",
+   "onTopic": true
+  },
+  {
+   "id": "5LRhKegPCRY",
+   "title": "The power of venom -- and how it could one day save your life | Mandë Holford | TED",
+   "channel": "TED",
+   "views": "39,345 views",
+   "age": "5 yr ago",
+   "length": "9:17",
+   "tier": 1,
+   "viewCount": 39345,
+   "foundBy": "ted-ed snake venom",
+   "onTopic": true
+  },
+  {
+   "id": "ZBic5uUJNv4",
+   "title": "Can snakes really save more lives than they take?  | Kristen Wiley & James Harrison | TEDxCorbin",
+   "channel": "TEDx Talks",
+   "views": "9,099 views",
+   "age": "7 yr ago",
+   "length": "10:52",
+   "tier": 1,
+   "viewCount": 9099,
+   "foundBy": "ted-ed snake venom",
+   "onTopic": true
+  },
+  {
+   "id": "cxHmAITo7Sg",
+   "title": "Venom isn't a threat, it's information | Polianna Albuquerque | TEDxCharles Darwin University",
+   "channel": "TEDx Talks",
+   "views": "1,992 views",
+   "age": "1 yr ago",
+   "length": "9:46",
+   "tier": 1,
+   "viewCount": 1992,
+   "foundBy": "how venom works ted",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 3,
+ "gate": "PASS",
+ "hasTed": true,
+ "failedQueries": []
+}

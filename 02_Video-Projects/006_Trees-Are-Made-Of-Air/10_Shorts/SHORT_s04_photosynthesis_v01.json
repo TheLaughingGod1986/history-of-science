@@ -1,0 +1,216 @@
+{
+  "id": "s04_photosynthesis",
+  "job": "J0373",
+  "test": "B (search-titled)",
+  "air_date_draft": "2026-11-19",
+  "file": "10_Shorts/hos_006_s04_photosynthesis_v01.mp4",
+  "sha256": "1198f5671f2960e2bfe49755578f90eb07c5c4ff6124a665bb0d056b1799b524",
+  "duration_s": 25.533,
+  "vo_source": "02_Voiceover/part05_carbon_from_the_sky_v01_raw.mp3",
+  "vo_take_indices": [
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142
+  ],
+  "dropped": [
+    "We now know that",
+    "So here is what van Helmont's willow was really made of."
+  ],
+  "route": "claim first: A leaf takes in carbon dioxide through tiny pores \u2026 came out of the air.",
+  "vo_s": 24.977,
+  "words": 62,
+  "max_pause_s": 0.45,
+  "atempo": 1.02,
+  "bed": "hos006_s04_synth_pad_v01.wav (own synthesis, 0 credits)",
+  "bed_gain_db": -23.7,
+  "hook": "AIR TO WOOD",
+  "hook_layer": {
+    "font_size": 243,
+    "cap_px": 173,
+    "cap_pct": 9.01,
+    "lines": 3,
+    "block_pct": [
+      33.6,
+      66.4
+    ],
+    "widest_pct": 79.2
+  },
+  "who_card": {
+    "name": "DE SAUSSURE",
+    "line2": "Geneva, 1804",
+    "line1_px": 72,
+    "line1_pct_of_band": 12.0,
+    "band": [
+      656,
+      1264
+    ],
+    "in_s": 18.5,
+    "out_s": 22.1,
+    "fade_s": 0.35
+  },
+  "title_on_screen": "The Willow Tree That Was Made of Air",
+  "youtube_title_draft": "How Does Photosynthesis Work?",
+  "plan": [
+    {
+      "t0": 0.0,
+      "t1": 3.262,
+      "plate": "04_Generated-Clips/part05/raw/v01/06_leaf_in_t1.mp4",
+      "in_s": 0.3,
+      "crop_x": 656,
+      "lands_on": 0
+    },
+    {
+      "t0": 3.262,
+      "t1": 5.834,
+      "plate": "04_Generated-Clips/part02/raw/v01/05_pure_water_t1.mp4",
+      "in_s": 0.4,
+      "crop_x": 656,
+      "lands_on": "It"
+    },
+    {
+      "t0": 5.834,
+      "t1": 10.34,
+      "plate": "04_Generated-Clips/part05/raw/v01/07_sugar_oxygen_t1.mp4",
+      "in_s": 0.3,
+      "crop_x": 656,
+      "lands_on": "Then,"
+    },
+    {
+      "t0": 10.34,
+      "t1": 12.407,
+      "plate": "04_Generated-Clips/part04/raw/v01/05_bubbles_macro_t1.mp4",
+      "in_s": 0.4,
+      "crop_x": 656,
+      "lands_on": "and"
+    },
+    {
+      "t0": 12.407,
+      "t1": 15.194,
+      "plate": "04_Generated-Clips/part05/raw/v01/08_sugar_wood_t1.mp4",
+      "in_s": 0.3,
+      "crop_x": 656,
+      "lands_on": "That"
+    },
+    {
+      "t0": 15.194,
+      "t1": 18.496,
+      "plate": "04_Generated-Clips/part05/raw/v01/14_built_from_sky_t1.mp4",
+      "in_s": 0.3,
+      "crop_x": 656,
+      "lands_on": "leaves,"
+    },
+    {
+      "t0": 18.496,
+      "t1": 22.327,
+      "plate": "04_Generated-Clips/part01/raw/v01/01_willow_air_t1.mp4",
+      "in_s": 0.5,
+      "crop_x": 656,
+      "lands_on": "About"
+    },
+    {
+      "t0": 22.327,
+      "t1": 25.527,
+      "plate": "04_Generated-Clips/part05/raw/v01/06_leaf_in_t1.mp4",
+      "in_s": 0.3,
+      "crop_x": 656,
+      "lands_on": "loop"
+    }
+  ],
+  "captions": 19,
+  "caption_check": {
+    "ok": true,
+    "changes": 18,
+    "ratio": 1.0
+  },
+  "gate": {
+    "exit": 0,
+    "output": "PASS  hos_006_s04_photosynthesis_v01.mp4  dur=25.53s  audio=-23.9dB  motion=10.73  dhash=202051d11e804ea6\n   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_006_s04_photosynthesis_v01_open_sheet.jpg"
+  },
+  "vo_check": {
+    "exit": 0,
+    "output": "PASS  hos_006_s04_photosynthesis_v01.mp4  0:25.53  mean -23.9 dB  peak -4.0 dB  146 wpm"
+  },
+  "freezedetect_starts": [],
+  "stills": [
+    "10_Shorts/_work_s04_photosynthesis_v01/hos_006_s04_photosynthesis_v01_t000.0.jpg",
+    "10_Shorts/_work_s04_photosynthesis_v01/hos_006_s04_photosynthesis_v01_t011.5.jpg",
+    "10_Shorts/_work_s04_photosynthesis_v01/hos_006_s04_photosynthesis_v01_t019.5.jpg",
+    "10_Shorts/_work_s04_photosynthesis_v01/hos_006_s04_photosynthesis_v01_t024.5.jpg"
+  ],
+  "icloud": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/006_Trees-Are-Made-Of-Air/10_Shorts/hos_006_s04_photosynthesis_v01.mp4",
+  "autocomplete_check": {
+    "date": "2026-10-16",
+    "source": "suggestqueries client=youtube ds=yt gl=GB signed-out",
+    "hits": [
+      "how does photosynthesis work",
+      "how does photosynthesis work in plants",
+      "how do leaves make food for the plant",
+      "how do leaves make their food",
+      "what is wood made of",
+      "what are trees made of"
+    ],
+    "note": "'How Does Photosynthesis Work?' is an exact signed-out GB YouTube autocomplete hit (along with 'How Do Leaves Make Food for the Plant?' and 'What Is Wood Made Of?'). The lifted VO opens claim-first on the leaf ('A leaf takes in carbon dioxide through tiny pores. It draws up water through its roots. Then, with the energy of sunlight, it joins them together into sugar, and lets the spare oxygen go.') and answers where the wood's mass comes from ('About half of dry wood is carbon, and every bit of that carbon came out of the air.'). Chief's call."
+  },
+  "air_date_draft_note": "2026-11-19 used for the gate only (clear of 006 long 5 Nov, Short A 6 Nov, Short B 17 Nov); slot is Chief's call.",
+  "who_card_note": "card is the long's own Part 05 label DE SAUSSURE \u00b7 Geneva, 1804, on screen 18.5\u201322.1 s (3.6 s) while 'About half of dry wood is carbon, and every bit of that carbon came out of the air.' is spoken (de Saussure's 1804 Geneva mass-balance proof in Part 05). Clear of the 0\u20132 s hook, the 9\u201314 s title, and the 22.3\u201325.5 s CTA.",
+  "overlap_note": "No overlap with 006 Short A (van Helmont's 200 lb soil / 169 lb willow), Short B (Priestley's mint & candle), or Short C (Ingenhousz's sunny/shady window jars): this is the Part 05 leaf-to-sugar-to-wood synthesis."
+}

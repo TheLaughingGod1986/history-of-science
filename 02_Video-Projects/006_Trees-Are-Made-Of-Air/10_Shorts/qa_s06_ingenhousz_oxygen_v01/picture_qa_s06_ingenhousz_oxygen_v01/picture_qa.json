@@ -1,0 +1,137 @@
+{
+  "verdict": "PASS",
+  "video": "02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/hos_006_s06_ingenhousz_oxygen_v01.mp4",
+  "rules": {
+    "kind_fail": "computer[- ]?(reconstruction|model|generated|simulation|graphic)|\\bsimulation\\b|\\bdiagram|\\bchart\\b|\\bgraph\\b|\\bschematic|\\bannotated\\b|\\blabell?ed\\b|\\bscreen ?shot|\\bwireframe|\\bcad\\b|\\binfographic",
+    "kind_warn": "\\bartist|\\billustration|\\bconcept\\b|\\brender|\\banimation\\b|\\bmap\\b|\\bmosaic\\b|\\bcomposite\\b",
+    "upscale_fail": 2.35,
+    "upscale_warn": 2.0,
+    "max_reuse": 2,
+    "max_stretches": 5,
+    "same_stretch": 10.0,
+    "pixels": "scripts/polish_gate.py"
+  },
+  "failed": [],
+  "warn": [],
+  "rows": [
+    {
+      "cut": 0,
+      "row": "s01_0",
+      "source": "05_bubbles_macro_t1.mp4",
+      "title": "Flow Veo 3.1 plate 05_bubbles_macro_t1.mp4",
+      "t": 1.52,
+      "at": "0:02",
+      "fail": [],
+      "warn": [],
+      "offset": 0.6
+    },
+    {
+      "cut": 1,
+      "row": "s02_and",
+      "source": "03_plunge_leaf_t1.mp4",
+      "title": "Flow Veo 3.1 plate 03_plunge_leaf_t1.mp4",
+      "t": 3.91,
+      "at": "0:04",
+      "fail": [],
+      "warn": [],
+      "offset": 1.0
+    },
+    {
+      "cut": 2,
+      "row": "s03_He",
+      "source": "06_collect_blaze_t3.mp4",
+      "title": "Flow Veo 3.1 plate 06_collect_blaze_t3.mp4",
+      "t": 6.34,
+      "at": "0:06",
+      "fail": [],
+      "warn": [],
+      "offset": 0.4
+    },
+    {
+      "cut": 3,
+      "row": "s04_A",
+      "source": "11_candle_tall_t1.mp4",
+      "title": "Flow Veo 3.1 plate 11_candle_tall_t1.mp4",
+      "t": 10.12,
+      "at": "0:10",
+      "fail": [],
+      "warn": [],
+      "offset": 0.5
+    },
+    {
+      "cut": 4,
+      "row": "s05_Move",
+      "source": "18_dark_window_t1.mp4",
+      "title": "Flow Veo 3.1 plate 18_dark_window_t1.mp4",
+      "t": 14.37,
+      "at": "0:14",
+      "fail": [],
+      "warn": [],
+      "offset": 0.5
+    },
+    {
+      "cut": 5,
+      "row": "s06_Move",
+      "source": "12_shutters_open_t1.mp4",
+      "title": "Flow Veo 3.1 plate 12_shutters_open_t1.mp4",
+      "t": 18.25,
+      "at": "0:18",
+      "fail": [],
+      "warn": [],
+      "offset": 0.5
+    },
+    {
+      "cut": 6,
+      "row": "s07_Only",
+      "source": "10_only_green_t2.mp4",
+      "title": "Flow Veo 3.1 plate 10_only_green_t2.mp4",
+      "t": 21.2,
+      "at": "0:21",
+      "fail": [],
+      "warn": [],
+      "offset": 0.5
+    },
+    {
+      "cut": 7,
+      "row": "s08_loop",
+      "source": "loop_end_05_bubbles_macro_t1.mp4",
+      "title": "Loop end plate 05_bubbles_macro_t1.mp4",
+      "t": 23.81,
+      "at": "0:24",
+      "fail": [],
+      "warn": [],
+      "offset": 0.6
+    }
+  ],
+  "polish": {
+    "edge_floor": 0.0423,
+    "low_detail_floor": {
+      "std": 13.44,
+      "edge": 0.0259,
+      "calibration": {
+        "video": "025_MarsRobot_full_rough_v02d.mp4",
+        "factor": 1.2,
+        "frames": [
+          {
+            "source": "PIA22223.jpg",
+            "t": 201.0,
+            "std": 12.1,
+            "edge": 0.0223
+          },
+          {
+            "source": "PIA22223.jpg",
+            "t": 216.3,
+            "std": 11.2,
+            "edge": 0.0216
+          },
+          {
+            "source": "PIA22929.jpg",
+            "t": 297.4,
+            "std": 26.54,
+            "edge": 0.5735
+          }
+        ]
+      }
+    }
+  }
+}

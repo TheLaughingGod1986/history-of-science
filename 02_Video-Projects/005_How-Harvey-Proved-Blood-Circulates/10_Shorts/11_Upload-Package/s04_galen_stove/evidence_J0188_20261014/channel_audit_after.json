@@ -1,0 +1,635 @@
+{
+  "channelFindings": [],
+  "rows": [
+    {
+      "id": "5n7xFQRBUvI",
+      "kind": "Short",
+      "title": "Is the Heart a Pump?",
+      "privacy": "private",
+      "scheduled": "2026-10-31 11:30 UK",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic \u2014 confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "qOZgess30h0",
+      "kind": "Short",
+      "title": "Invisible life is still everywhere",
+      "privacy": "public",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic \u2014 confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "mTY67qet7cM",
+      "kind": "Short",
+      "title": "One Tight Band Proved Your Blood Goes Round",
+      "privacy": "private",
+      "scheduled": "2026-11-08 11:30 UK",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic \u2014 confirm Yes in Studio (Altered content)"
+        },
+        {
+          "severity": "warn",
+          "rule": "tags.count",
+          "message": "Short: 11 tags (want 5\u20138)"
+        }
+      ]
+    },
+    {
+      "id": "KIWJRl0dzjw",
+      "kind": "Short",
+      "title": "One Tight Band Proved Your Blood Goes Round (duplicate)",
+      "privacy": "private",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic \u2014 confirm Yes in Studio (Altered content)"
+        },
+        {
+          "severity": "warn",
+          "rule": "embeddable",
+          "message": "embedding is off"
+        },
+        {
+          "severity": "warn",
+          "rule": "tags.count",
+          "message": "Short: 11 tags (want 5\u20138)"
+        }
+      ]
+    },
+    {
+      "id": "wwcjcFfC-5M",
+      "kind": "long",
+      "title": "The Tied Arm That Proved Your Blood Circulates",
+      "privacy": "private",
+      "scheduled": "2026-10-29 18:00 UK",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic \u2014 confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "K0TQHg4XCHY",
+      "kind": "Short",
+      "title": "The Four Elements Were Wrong (duplicate)",
+      "privacy": "private",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic \u2014 confirm Yes in Studio (Altered content)"
+        },
+        {
+          "severity": "warn",
+          "rule": "tags.count",
+          "message": "Short: 11 tags (want 5\u20138)"
+        }
+      ]
+    },
+    {
+      "id": "JI2ewIT1KSM",
+      "kind": "Short",
+      "title": "The Four Elements Were Wrong (duplicate)",
+      "privacy": "private",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic \u2014 confirm Yes in Studio (Altered content)"
+        },
+        {
+          "severity": "warn",
+          "rule": "tags.count",
+          "message": "Short: 0 tags (want 5\u20138)"
+        }
+      ]
+    },
+    {
+      "id": "x_3L_IdYgEc",
+      "kind": "Short",
+      "title": "The Blood Vessels Finer Than a Hair",
+      "privacy": "private",
+      "scheduled": "2026-11-15 11:30 UK",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic \u2014 confirm Yes in Studio (Altered content)"
+        },
+        {
+          "severity": "warn",
+          "rule": "tags.count",
+          "message": "Short: 0 tags (want 5\u20138)"
+        }
+      ]
+    },
+    {
+      "id": "6btaax7wp2E",
+      "kind": "Short",
+      "title": "The Blood Vessels Finer Than a Hair (duplicate)",
+      "privacy": "private",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic \u2014 confirm Yes in Studio (Altered content)"
+        },
+        {
+          "severity": "warn",
+          "rule": "tags.count",
+          "message": "Short: 13 tags (want 5\u20138)"
+        }
+      ]
+    },
+    {
+      "id": "Pp5LmjsduI4",
+      "kind": "Short",
+      "title": "The Four Elements Were Wrong",
+      "privacy": "private",
+      "scheduled": "2026-11-03 11:30 UK",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic \u2014 confirm Yes in Studio (Altered content)"
+        },
+        {
+          "severity": "warn",
+          "rule": "tags.count",
+          "message": "Short: 13 tags (want 5\u20138)"
+        }
+      ]
+    },
+    {
+      "id": "DdggTdAzk84",
+      "kind": "Short",
+      "title": "Why Gold Foil Bounced Rutherford's Particles Back (duplicate)",
+      "privacy": "private",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic \u2014 confirm Yes in Studio (Altered content)"
+        },
+        {
+          "severity": "warn",
+          "rule": "tags.count",
+          "message": "Short: 13 tags (want 5\u20138)"
+        }
+      ]
+    },
+    {
+      "id": "VZsUxmzGyyE",
+      "kind": "Short",
+      "title": "hos 005 s01 the sum v02 (duplicate)",
+      "privacy": "private",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic \u2014 confirm Yes in Studio (Altered content)"
+        },
+        {
+          "severity": "warn",
+          "rule": "tags.count",
+          "message": "Short: 0 tags (want 5\u20138)"
+        }
+      ]
+    },
+    {
+      "id": "JyRjM-9Yc8g",
+      "kind": "Short",
+      "title": "Why Gold Foil Bounced Rutherford's Particles Back",
+      "privacy": "private",
+      "scheduled": "2026-11-01 11:30 UK",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic \u2014 confirm Yes in Studio (Altered content)"
+        },
+        {
+          "severity": "warn",
+          "rule": "tags.count",
+          "message": "Short: 11 tags (want 5\u20138)"
+        }
+      ]
+    },
+    {
+      "id": "1lszTrYRp-8",
+      "kind": "Short",
+      "title": "Your Heart Pumps More Blood Than You Have",
+      "privacy": "private",
+      "scheduled": "2026-10-30 11:30 UK",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic \u2014 confirm Yes in Studio (Altered content)"
+        },
+        {
+          "severity": "warn",
+          "rule": "tags.count",
+          "message": "Short: 11 tags (want 5\u20138)"
+        }
+      ]
+    },
+    {
+      "id": "0IfXGSX7Ypw",
+      "kind": "long",
+      "title": "The Tied Arm That Proved Your Blood Circulates",
+      "privacy": "private",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic \u2014 confirm Yes in Studio (Altered content)"
+        },
+        {
+          "severity": "warn",
+          "rule": "embeddable",
+          "message": "embedding is off"
+        }
+      ]
+    },
+    {
+      "id": "clV6E10NLPw",
+      "kind": "Short",
+      "title": "The spray that stopped surgery killing patients",
+      "privacy": "private",
+      "scheduled": "2026-10-20 11:30 UK",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic \u2014 confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "CUu8k38iAMc",
+      "kind": "Short",
+      "title": "The first X-ray showed a wedding ring",
+      "privacy": "private",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic \u2014 confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "TbMMJSRKC3U",
+      "kind": "Short",
+      "title": "He said every eighth element repeats",
+      "privacy": "private",
+      "scheduled": "2026-10-18 11:30 UK",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic \u2014 confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "29bpGAI0wb8",
+      "kind": "Short",
+      "title": "What happens if you keep cutting gold in half?",
+      "privacy": "private",
+      "scheduled": "2026-10-16 11:30 UK",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic \u2014 confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "GHZDsiH7L7A",
+      "kind": "long",
+      "title": "What's Really Inside an Atom?",
+      "privacy": "private",
+      "scheduled": "2026-10-15 18:00 UK",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic \u2014 confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "zI_eD3vFWmE",
+      "kind": "Short",
+      "title": "The first X-ray showed a wedding ring",
+      "privacy": "public",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic \u2014 confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "xvanpsLeADE",
+      "kind": "Short",
+      "title": "How did R\u00f6ntgen see bones without cutting",
+      "privacy": "public",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic \u2014 confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "oowAOWTBoq0",
+      "kind": "Short",
+      "title": "How X-rays Were Discovered by Accident",
+      "privacy": "public",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic \u2014 confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "frP_YrNShsU",
+      "kind": "long",
+      "title": "How Did We Discover X-rays?",
+      "privacy": "public",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic \u2014 confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "LanTHJckYx8",
+      "kind": "Short",
+      "title": "What other table has empty chairs?",
+      "privacy": "public",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic \u2014 confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "nba0-f7PPeU",
+      "kind": "Short",
+      "title": "Why tellurium sat before iodine",
+      "privacy": "public",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic \u2014 confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "CnHwX1L9XHg",
+      "kind": "Short",
+      "title": "Gallium sat where the table said",
+      "privacy": "public",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic \u2014 confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "nFQRWmpulTQ",
+      "kind": "Short",
+      "title": "He predicted a metal before it was found",
+      "privacy": "public",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic \u2014 confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "uU12JA5rMWg",
+      "kind": "Short",
+      "title": "The periodic table's empty chairs",
+      "privacy": "public",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic \u2014 confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "AL_-qlWko_g",
+      "kind": "long",
+      "title": "How Did We Discover the Periodic Table?",
+      "privacy": "public",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic \u2014 confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "kzDiVk4603s",
+      "kind": "Short",
+      "title": "He predicted a metal before it was found",
+      "privacy": "private",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic \u2014 confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "sILtQxgYQk8",
+      "kind": "Short",
+      "title": "A flask that proved germs come from outside",
+      "privacy": "public",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic \u2014 confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "93fPUG-hW0A",
+      "kind": "Short",
+      "title": "Invisible life is still everywhere",
+      "privacy": "private",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic \u2014 confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "8_Edn_HCi1s",
+      "kind": "Short",
+      "title": "Germs hitch a ride on you",
+      "privacy": "public",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic \u2014 confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "iqToagXnjX0",
+      "kind": "Short",
+      "title": "Microbes in a drop of pond water",
+      "privacy": "public",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic \u2014 confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "H1y0DXFVmw8",
+      "kind": "Short",
+      "title": "Germs don't cast a shadow",
+      "privacy": "public",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic \u2014 confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "_C92tIJCk8A",
+      "kind": "long",
+      "title": "How Did We Discover Germs?",
+      "privacy": "public",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic \u2014 confirm Yes in Studio (Altered content)"
+        }
+      ]
+    }
+  ],
+  "studioOnly": [
+    "AI disclosure = Yes (confirm by eye)",
+    "Every video: Altered / synthetic content = Yes (Data API videos.list omits this field)",
+    "Shorts: Related video points at the long it promotes (set at 18:05 on the long's day if needed)",
+    "Longs: end screen (related long + Subscribe) and 2 cards, none in the first minute",
+    "Longs: Test & Compare (title+thumbnail pairs, or thumbnails only) running after publish",
+    "Longs: pinned comment posted as the channel",
+    "Paid promotion = No; education fields (concept overview, secondary, GCSE subject)",
+    "Automatic places off; comments on (Basic moderation); Studio time zone London"
+  ]
+}
