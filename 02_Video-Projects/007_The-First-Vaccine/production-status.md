@@ -11,7 +11,7 @@
 | Picture | **All 73/73 Flow rows minted (J0352 KEEP, 21 Oct 2026; HOS PR #351 merged):** P1 17/17 (530 cr) · P2 21/21 (750 cr) · P3 12/12 (390 cr) · P4 11/11 (380 cr) · P5 12/12 (840 cr) = **2,890 cr** vs 7,550 cap. Face lock `P2:08_jenner_window` KEEP applied to all later readable Jenner faces. 3 £0 code graphics (`7808f751`), 2 archive + 18 reuse (£0). |
 | Edit | **Full join v01 (`hos_007_full_join_v01.mp4`, 505.15 s / 12,123 frames, 97 cuts, sha256 `7cfd6a59`) assembled (J0827, 22 Oct 2026, £0)** across Parts 01–05 (Chief PASS J0820) on locked VO with house Didot teaching cards and both £0 repeat-shot fixes (`P1:09c_case_again` 1.88× lancet crop; `P5:06c/06d` split into strictly unused `04_health_workers` back half `3.833–7.958 s` + `06_assembly_1980` tail `5.083–8.000 s` 1.38× front-row push-in). Parts: P1 `61a5c039` (100.83 s, 20 cuts) · P2 `6ab2fb1f` (129.62 s, 22 cuts) · P3 `62a14a08` (78.75 s, 15 cuts) · P4 `e6a005cd` (92.75 s, 20 cuts) · P5 `14206aeb` (103.17 s, 20 cuts). Full join PASS `polish_gate.py` (`0 of 97 rows failed, 5 to look at`) and `picture_qa.py` (`0 of 97 cuts fail, 5 to look at`), 0 freeze events (`>= 0.8 s`). UAT proxy (`5ea31960`) in `~/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/007_full_join_v01/`. Parked for Chief review (`REVIEW_v01.md`). |
 | Air | proposed **Thu 12 Nov 2026 18:00 UK = 18:00 UTC** (GMT); privacy private; madeForKids false; proposals only |
-| Shorts | `s04_smallpox_test_v01` uploaded Private `-I_GHK-GcFs` for Fri 13 Nov 2026 11:30 UK (`2026-11-13T11:30:00Z`, J0873); Related → 007 long once uploaded |
+| Shorts | `s04_smallpox_test_v01` uploaded Private `-I_GHK-GcFs` for Fri 13 Nov 2026 11:30 UK (`2026-11-13T11:30:00Z`, J0873); `s05_vacca_jesty_v01` built (J0898, 24.167 s, sha256 `c3eece7477de`, parked for Chief: Short PASS + title + slot); Related → 007 long once uploaded |
 | Backup | Neighbour gate PASSED — Lightning backup not needed |
 
 ## STOP
@@ -60,5 +60,28 @@ PASS  Short -I_GHK-GcFs  private 2026-11-13 11:30 UK  What Was the Edward Jenner
 45 videos, 0 errors.
 ALL CHECKS PASS
 ```
+
+## 24 Oct 2026 — Short `s05_vacca_jesty_v01` (Test B, second search-titled lift from Part 04, OWB J0898)
+
+- **Selection:** HOS 004, 005, 006, and 001 each have 5 built search-titled Shorts (`s04`–`s08` / `s07`–`s11`); HOS 002 and 003 each have 4. HOS 007 had 1 built search-titled Short (`s04_smallpox_test_v01`), making 007 the locked HOS long with the fewest built Shorts (1 of its 2 Test B search-titled Shorts).
+- **VO (0 spend):** `02_Voiceover/part04_the_test_v01b.mp3` 60-word sentence-aligned lift (words `62..76 + 103..147`, zero overlap with `s04_smallpox_test_v01` words `0..61`, 007 Short B in Part 02, and Short C in Part 05): *"Jenner wasn't the first to try cowpox. Benjamin Jesty had done it twenty-two years earlier. He tested more people, and in seventeen ninety-eight he paid to print a short book. He called the disease by a Latin name, variolae vaccinae, which means smallpox of the cow. From vacca, the Latin word for cow, came the name for the treatment: vaccination."* 60 words, pauses capped at 0.14 s, `atempo=1.07`, 23.817 s VO + 0.35 s tail = 24.167 s total (146 wpm).
+- **Picture & bed (0 spend):** Chief-KEPT plates `P5:09_meadow_golden_t1` (in `2.20 s`, frame 0 and the 3.0 s loop, `crop_x=660`), `P2:06_jesty_family_t1` (`crop_x=660`), `P4:10_garden_hut_t1` (`crop_x=640`), `P4:08_soho_press_t1` (`crop_x=820`), `P5:10_history_book_t1` (`crop_x=640`), `P1:01_cow_meadow_t1` (`crop_x=660`), `P4:10a_packets_t1` (`crop_x=640`) — zero plate overlap with `s04_smallpox_test_v01`. Own-synthesis warm harmonic pad (`hos007_s05_synth_pad_v01.wav`, G-major pastoral voicing, 0 credits) at −20.0 dB under VO. Hook **NOT THE FIRST** (FIRST in yellow). Person/date card **BENJAMIN JESTY · Dorset · 1774** at 2.40–5.80 s (3.4 s, lower third of 16:9 centre band, 0.35 s fade in/out); the long's exact title *Why Vaccines Are Named After a Cow* at 9.0–14.0 s; word captions throughout with exclusive `gte(t,s)*lt(t,e)` handovers (18 captions, 17/17 handovers verified single-caption); CTA `watch the full film →` on the last 3.0 s.
+- **Title draft:** *Why Is It Called a Vaccine?* (signed-out GB YouTube autocomplete exact hits `why is it called vaccines` / `vaccine latin words` / `benjamin jesty` / `who invented the first vaccine` / `edward jenner cowpox vaccine`, 24 Oct 2026; alts *Who Tried Cowpox Before Edward Jenner?*, *Where Does the Word Vaccine Come From?*).
+- **File:** `10_Shorts/hos_007_s05_vacca_jesty_v01.mp4`, 24.167 s, sha256 `c3eece7477deeddaab4caebdfe801849384554e649c26867d90ae05f4fc99e3c`; phone copy iCloud `HOS UAT/007_The-First-Vaccine/10_Shorts/hos_007_s05_vacca_jesty_v01.mp4`. One picture_qa / polish look-at, not a fail: `10_history_book_t1` at 0:13, low detail (edge density 0.0340 < film p5 0.0375).
+
+```
+PASS  hos_007_s05_vacca_jesty_v01.mp4  dur=24.17s  audio=-24.1dB  motion=16.17  dhash=727d2edf57490736
+   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_007_s05_vacca_jesty_v01_open_sheet.jpg
+PASS  hos_007_s05_vacca_jesty_v01.mp4  0:24.17  mean -24.1 dB  peak -4.7 dB  146 wpm
+   warn  replace at ~0:12.04: script 'a latin name variolae vaccinae which means' / heard 'a latin name varioli vaccinae which means' — sounds alike (likely the transcriber); listen
+   warn  replace at ~0:17.28: script 'the cow from vacca the latin word' / heard 'the cow from vaca the latin word' — sounds alike (likely the transcriber); listen
+polish gate PASS: 0 of 8 rows failed, 1 to look at -> 02_Video-Projects/007_The-First-Vaccine/10_Shorts/qa_s05_vacca_jesty_v01/polish_gate_s05_vacca_jesty_v01.json
+picture QA PASS: 0 of 8 cuts fail, 1 to look at -> 02_Video-Projects/007_The-First-Vaccine/10_Shorts/qa_s05_vacca_jesty_v01/picture_qa_s05_vacca_jesty_v01/PICTURE_QA.md, 02_Video-Projects/007_The-First-Vaccine/10_Shorts/qa_s05_vacca_jesty_v01/picture_qa_s05_vacca_jesty_v01/picture_qa_review.jpg
+```
+
+Gate run with `--air-date 2027-01-26` (gate only). Caption check: 18 changes, ratio 1.0, 17/17 handovers verified single-caption. Freezedetect: 0 events.
+
+**STOP:** parked for Chief: Short PASS, title and slot. Nothing uploaded.
+
 
 
