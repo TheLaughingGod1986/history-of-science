@@ -1,5 +1,5 @@
 ---
-description: Building an HOS Short — the first two seconds, 22–27 s, the ship gate, Related link
+description: Building an HOS Short — 60% stayed-to-watch, the first two seconds, 22–27 s, the ship gate, Related link
 globs:
   - 02_Video-Projects/**/10_Shorts/**
   - 00_Brand/Channel-Setup/audits/SHORTS_LOG.md
@@ -29,3 +29,19 @@ Full rules: `HOS_STRATEGY.md` → *Short hook* and *The first two seconds*; `STU
 - **Studio:** Related video → the long this Short promotes. No pinned comment, zero `/go/`, a custom cover, altered content: yes.
 - **Measure:** stayed-to-watch at 48 h into `audits/SHORTS_LOG.md`. **Day 1 (R1, R5):** Shorts-feed share (50%+ = fed) and average viewed (target 60%+); under ~50 views, % viewed is noise. Reads after publishing, not ship gates. A weak Short is a result, never a re-upload.
 - Rules R1–R5, R7, R8: `HOS_STRATEGY.md` → *Shorts feed rules (Claude ruling, 5 Oct 2026)*.
+
+## 60% stayed-to-watch (Ben's target, 24 Oct 2026 · Chief ruling)
+
+**Target:** Studio *Stayed to watch* **60% or more** at the 48 h read on every HOS and Orbit Short (Ben, 24 Oct 19:43 London). Below 100 Studio views, the read is "too few to judge".
+
+**Where HOS stands (Studio lifetime read 24 Oct 18:35Z, OWB repo `05_Analytics/hos/studio_ctr.json`):** of the Shorts with 100+ views, none has reached 60%. The best are `c2q7w0pgcn8` *Who Discovered Infrared Light?* at **41.4%**, `29bpGAI0wb8` *gold cut in half* at **40.6%** (1,219 views) and `oKqmnJNGiHg` at 38.6%. The worst are `clV6E10NLPw` *The spray that stopped surgery killing patients* at **22.2%**, `qOZgess30h0` at 25.2% and `iqToagXnjX0` at 28.6%. The best Orbit Short is 56.0% (`y-SPHQ0-VjQ`, which opens on full-frame moving SDO footage). Mercury `vlkj8RQKmH8` is at 32.1%; it opens on a pushed still with a meta-promise.
+
+The swipe happens before line 2, so these rules are about **0–1.5 s**. The full text and evidence are in the OWB repo, `.cursor/rules/orbit-build-shorts.mdc` → *60% stayed-to-watch*.
+
+1. **Frame 0 is moving payoff footage: full-bleed and bright.** Use existing Veo or Flow clips, archive film or a rendered move. **A still or engraving with a slow push (zoom ≤1.10 over 4–6 s) fails.** The subject fills at least 60% of the frame. If only a still exists, it needs a fast move (≥15% scale or a clear pan inside 1.0 s) and a visible event by 0.5 s. Never the Explorer at frame 0.
+2. **Hook by 0.5 s, surprise by 1.5 s.** The first spoken word starts at 0.15 s or earlier. The surprising half of the claim is said by 1.5 s, with no pause over 0.15 s in sentence 1. A positive question title names the subject.
+3. **No intro, no logo, no meta-promise** ("Stay and I'll show you", "Did you know"), no title card, no fade from black. **The first cut lands by 3.0 s**, and later plates are held 4 s at most.
+4. **Tighter length:** 22–27 s stays the norm. The 12–15 s test (Learnings #4) remains a test. Leave **≤1.5 s** between the last word and the loop point, and never pad.
+5. **Loop ending:** the last line runs straight back into line 1. The last frame is the frame-0 picture as a matched cut (crossfade 0.3 s at most), with no CTA in the last 2 s except the R7 title card.
+6. **Brief fields:** frame-0 source and zoom, first-word onset, surprise-word time, first cut, gap from last word to loop, and meta-promise (must be no).
+7. **Measure:** the daily OWB-repo `05_Analytics/hos/REPORT.md` and the weekly audit (4d) mark each read PASS (≥60%), WATCH (45–59.9%) or MISS (<45%). A miss is never a re-upload or Replace. Any swap of a scheduled private Short goes to Ben.
