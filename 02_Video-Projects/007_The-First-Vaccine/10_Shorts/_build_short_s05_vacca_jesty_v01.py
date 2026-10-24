@@ -50,8 +50,8 @@ REPO = PROJ.parents[1]
 OWB_REPO = Path("/Users/benjaminoats/YouTube/orbit-with-ben")
 MEDIA_PROJ = Path("/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine")
 SID = "s05_vacca_jesty"
-VER = "v01"
-JOB = "J0898"
+VER = "v02"
+JOB = "J0906"
 WORK = HERE / f"_work_{SID}_{VER}"
 QA_DIR = HERE / f"qa_{SID}_{VER}"
 
@@ -86,6 +86,7 @@ CREAM, INK, YEL = (245, 232, 210, 255), (28, 26, 28, 255), (255, 214, 70, 255)
 FONT = "/System/Library/Fonts/Supplemental/Didot.ttc"
 CTA_FONT = "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
 TITLE = "Why Vaccines Are Named After a Cow"
+TITLE_BANNER = "Why Vaccines Are\nNamed After a Cow"
 TITLE_DRAFT = "Why Is It Called a Vaccine?"
 TAIL_S = 0.35
 LOOP_S = 3.0
@@ -216,16 +217,20 @@ def render(path: Path, text: str, size: int, y: int, *, anchor: str = "top", fon
     font = ImageFont.truetype(font_path, size, index=index)
     img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     draw = ImageDraw.Draw(img)
-    tokens = [(w.strip("*"), w.startswith("**")) for w in text.split()]
-    lines, cur = [], []
-    for tok in tokens:
-        trial = " ".join(t for t, _ in cur + [tok])
-        if cur and font.getlength(trial) > W - 96:
-            lines.append(cur)
-            cur = [tok]
-        else:
-            cur.append(tok)
-    lines.append(cur)
+    if "\n" in text:
+        lines = [[(w.strip("*"), w.startswith("**")) for w in ln.split()]
+                 for ln in text.splitlines() if ln.strip()]
+    else:
+        tokens = [(w.strip("*"), w.startswith("**")) for w in text.split()]
+        lines, cur = [], []
+        for tok in tokens:
+            trial = " ".join(t for t, _ in cur + [tok])
+            if cur and font.getlength(trial) > W - 96:
+                lines.append(cur)
+                cur = [tok]
+            else:
+                cur.append(tok)
+        lines.append(cur)
     asc, desc = font.getmetrics()
     lh, gap = asc + desc, int(size * 0.12)
     block = lh * len(lines) + gap * (len(lines) - 1)
@@ -424,7 +429,7 @@ def build(air_date: str) -> dict:
         render(png, c["text"], 52, 330, anchor="bottom")
         overlays.append((png, c["t0"], min(c["t1"], total - 0.05), "vo", c["text"]))
     title_png = WORK / "cap_title.png"
-    render(title_png, TITLE, 60, 250, index=2, stroke=4)
+    render(title_png, TITLE_BANNER, 60, 250, index=2, stroke=4)
     shade = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     for yy in range(620):
         w = 0.5 * (1.0 + math.cos(math.pi * yy / 620))

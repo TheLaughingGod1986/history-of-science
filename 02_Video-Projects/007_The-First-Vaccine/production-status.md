@@ -11,7 +11,7 @@
 | Picture | **All 73/73 Flow rows minted (J0352 KEEP, 21 Oct 2026; HOS PR #351 merged):** P1 17/17 (530 cr) · P2 21/21 (750 cr) · P3 12/12 (390 cr) · P4 11/11 (380 cr) · P5 12/12 (840 cr) = **2,890 cr** vs 7,550 cap. Face lock `P2:08_jenner_window` KEEP applied to all later readable Jenner faces. 3 £0 code graphics (`7808f751`), 2 archive + 18 reuse (£0). |
 | Edit | **Full join v01 (`hos_007_full_join_v01.mp4`, 505.15 s / 12,123 frames, 97 cuts, sha256 `7cfd6a59`) assembled (J0827, 22 Oct 2026, £0)** across Parts 01–05 (Chief PASS J0820) on locked VO with house Didot teaching cards and both £0 repeat-shot fixes (`P1:09c_case_again` 1.88× lancet crop; `P5:06c/06d` split into strictly unused `04_health_workers` back half `3.833–7.958 s` + `06_assembly_1980` tail `5.083–8.000 s` 1.38× front-row push-in). Parts: P1 `61a5c039` (100.83 s, 20 cuts) · P2 `6ab2fb1f` (129.62 s, 22 cuts) · P3 `62a14a08` (78.75 s, 15 cuts) · P4 `e6a005cd` (92.75 s, 20 cuts) · P5 `14206aeb` (103.17 s, 20 cuts). Full join PASS `polish_gate.py` (`0 of 97 rows failed, 5 to look at`) and `picture_qa.py` (`0 of 97 cuts fail, 5 to look at`), 0 freeze events (`>= 0.8 s`). UAT proxy (`5ea31960`) in `~/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/007_full_join_v01/`. Parked for Chief review (`REVIEW_v01.md`). |
 | Air | proposed **Thu 12 Nov 2026 18:00 UK = 18:00 UTC** (GMT); privacy private; madeForKids false; proposals only |
-| Shorts | `s04_smallpox_test_v01` uploaded Private `-I_GHK-GcFs` for Fri 13 Nov 2026 11:30 UK (`2026-11-13T11:30:00Z`, J0873); `s05_vacca_jesty_v01` built (J0898, 24.167 s, sha256 `c3eece7477de`, parked for Chief: Short PASS + title + slot); Related → 007 long once uploaded |
+| Shorts | `s04_smallpox_test_v01` uploaded Private `-I_GHK-GcFs` for Fri 13 Nov 2026 11:30 UK (`2026-11-13T11:30:00Z`, J0873); `s05_vacca_jesty_v02` (`24.167 s`, sha256 `89a9a1668d74`) uploaded Private `4WUs0beKn0A` for Tue 17 Nov 2026 11:30 UK (`2026-11-17T11:30:00Z`, J0906); Related → 007 long once uploaded (`J0875`) |
 | Backup | Neighbour gate PASSED — Lightning backup not needed |
 
 ## STOP
@@ -91,6 +91,32 @@ Gate run with `--air-date 2027-01-26` (gate only). Caption check: 18 changes, ra
   2. **Neighbour search terms woven into description lines 1–2 and tags (`Descriptions/vaccine_long_description_v01.txt`, `Tags/vaccine_long_tags_v01.txt`):** Wove `"Edward Jenner cowpox vaccine"`, `"deadly smallpox virus"`, and `"why can't every shot be a pill"` into lines 1–2 of `vaccine_long_description_v01.txt` and added `edward jenner cowpox vaccine` + `deadly smallpox virus` to `vaccine_long_tags_v01.txt` (8 tags total, 0 channel names).
   3. **Second 12–15 s Short cut test (`LEARNINGS.md` #4) & payoff timing (`≥70%` runtime):** Documented in `LAUNCH_PLAN.md` and `PACKAGE_MANIFEST.json`.
 - **Package lint (`npm run lint:package -- --film 007`):** `PASS  02_Video-Projects/007_The-First-Vaccine/11_Upload-Package/PACKAGE_MANIFEST.json` & `PASS  02_Video-Projects/007_The-First-Vaccine/10_Shorts/SHORTS_RELEASE.json`.
+
+## 24 Oct 2026 — Short `s05_vacca_jesty_v02` built (title-safe banner re-wrap), packaged & uploaded Private (`4WUs0beKn0A`, Tue 17 Nov 11:30 London, OWB J0906)
+
+- **Authority:** Chief PASS with one fix on `J0898` and Chief-created `J0906`. `£0` spend.
+- **Fix in `_build_short_s05_vacca_jesty_v01.py` (`VER="v02"`):** Re-wrapped the 9–14 s title banner to two lines `'Why Vaccines Are'` (`508.9 px` wide, `x=285.6..794.4 px`) / `'Named After a Cow'` (`542.4 px` wide, `x=268.8..811.2 px`) inside title-safe; nothing else changed.
+- **Build & QA (`hos_007_s05_vacca_jesty_v02.mp4`, `24.167 s`, 60 words, sha256 `89a9a1668d7470acb27e5a93a77641aaeeaf6aed053fa418d899c776f4d3b88e`):** Copied to iCloud `HOS UAT/007_The-First-Vaccine/10_Shorts/hos_007_s05_vacca_jesty_v02.mp4`. All gates PASS (`gate_shorts_open --air-date 2026-11-17`, `vo_check`, `polish_gate`, `picture_qa`, `freezedetect 0`, `handovers 10/17 ok=True`).
+- **Upload & schedule:** Packaged in `10_Shorts/11_Upload-Package/s05_vacca_jesty/PACKAGE_MANIFEST.json` (`SHORTS_RELEASE.json` PASS) and uploaded Private via `npm run youtube:package` as **`4WUs0beKn0A`** (`https://youtu.be/4WUs0beKn0A`), title **`Why Is It Called a Vaccine?`**, for the first free HOS Short slot after `2026-11-13T11:30Z`: **Tue 17 Nov 2026 at 11:30 London (`2026-11-17T11:30:00Z`, GMT)** (since Fri 13 Nov is `-I_GHK-GcFs`, Sun 15 Nov is `x_3L_IdYgEc`, and Mon 16 Nov is `-sa2t7dAtCk`).
+- **API readback (`API_READBACK_4WUs0beKn0A.json`):** `privacyStatus=private`, `publishAt=2026-11-17T11:30:00Z`, `uploadStatus=processed`, `madeForKids=false`, `selfDeclaredMadeForKids=false`, `defaultLanguage=en-GB`, `defaultAudioLanguage=en-GB`, `categoryId=27`, `hasCustomThumbnail=true`, 6 tags.
+- **Studio readback (`STUDIO_READBACK_4WUs0beKn0A.json`, CDP `:9460`):** `No, it's not Made for Kids` checked (`true`), Altered content `Yes` checked (`true`); `Related video` → added to `J0875` to be set to the 007 long once it is uploaded, before the Short goes public on Tue 17 Nov 11:30Z.
+- **Records:** Registered in `SHORTS_UPLOAD_INDEX.json`, `SHORTS_RELEASE.json`, `11_Upload-Package/LAUNCH_PLAN.md`, `00_Brand/Channel-Setup/audits/SHORTS_LOG.md`, `00_Brand/Channel-Setup/audits/shorts_open_library/library.json` (`status=scheduled`), and `00_Brand/Channel-Setup/social/UPLOADS.json`, and added to `J0875`.
+
+```text
+PASS  hos_007_s05_vacca_jesty_v02.mp4  dur=24.17s  audio=-24.1dB  motion=16.17  dhash=727d2edf57490736
+   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_007_s05_vacca_jesty_v02_open_sheet.jpg
+PASS  hos_007_s05_vacca_jesty_v02.mp4  0:24.17  mean -24.1 dB  peak -4.7 dB  146 wpm
+polish gate PASS: 0 of 8 rows failed, 1 to look at -> 02_Video-Projects/007_The-First-Vaccine/10_Shorts/qa_s05_vacca_jesty_v02/polish_gate_s05_vacca_jesty_v02.json
+picture QA PASS: 0 of 8 cuts fail, 1 to look at -> 02_Video-Projects/007_The-First-Vaccine/10_Shorts/qa_s05_vacca_jesty_v02/picture_qa_s05_vacca_jesty_v02/PICTURE_QA.md, 02_Video-Projects/007_The-First-Vaccine/10_Shorts/qa_s05_vacca_jesty_v02/picture_qa_s05_vacca_jesty_v02/picture_qa_review.jpg
+PASS  02_Video-Projects/007_The-First-Vaccine/11_Upload-Package/PACKAGE_MANIFEST.json
+   warn  [captions] no captionsFile (captions from the script)
+PASS  02_Video-Projects/007_The-First-Vaccine/10_Shorts/SHORTS_RELEASE.json
+   warn  [related] What Was the Edward Jenner Experiment?: Related video not set yet (set it to the 007 long once that long is public)
+   warn  [related] Why Is It Called a Vaccine?: Related video not set yet (set it to the 007 long once that long is public)
+PASS  Short 4WUs0beKn0A  private 2026-11-17 11:30 UK  Why Is It Called a Vaccine?
+48 videos, 0 errors.
+```
+
 
 
 

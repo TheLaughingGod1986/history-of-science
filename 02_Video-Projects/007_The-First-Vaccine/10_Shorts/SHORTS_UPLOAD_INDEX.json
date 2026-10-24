@@ -4,7 +4,7 @@
   "long_title": "Why Vaccines Are Named After a Cow",
   "channel": "@HistoryOfScienceYT",
   "affiliate": null,
-  "note": "Do not social-mirror until each Short is public on YouTube and its promoted long has an id. Set Related -> 007 long once it has an id, before the Short goes public.",
+  "note": "Do not social-mirror until each Short is public on YouTube and its promoted long has an id. Set Related -> 007 long once it has an id, before the Short goes public (J0875).",
   "shorts": [
     {
       "id": "s04_smallpox_test",
@@ -15,6 +15,20 @@
       "video_id": "-I_GHK-GcFs",
       "youtube_video_id": "-I_GHK-GcFs",
       "url": "https://youtu.be/-I_GHK-GcFs",
+      "related": null,
+      "visibility": "private",
+      "published_now": false,
+      "go": null
+    },
+    {
+      "id": "s05_vacca_jesty",
+      "file": "10_Shorts/hos_007_s05_vacca_jesty_v02.mp4",
+      "title": "Why Is It Called a Vaccine?",
+      "schedule_iso": "2026-11-17T11:30:00Z",
+      "description": "Why Vaccines Are Named After a Cow\nhttps://www.youtube.com/@HistoryOfScienceYT\n\nTwenty-two years before Edward Jenner's 1798 book, Benjamin Jesty tried cowpox in 1774. Jenner called the disease variolae vaccinae (\"smallpox of the cow\"), and from vacca, the Latin word for cow, came the name vaccination.\n\nPictures: AI-generated 3D scenes; voice: AI narration.",
+      "video_id": "4WUs0beKn0A",
+      "youtube_video_id": "4WUs0beKn0A",
+      "url": "https://youtu.be/4WUs0beKn0A",
       "related": null,
       "visibility": "private",
       "published_now": false,

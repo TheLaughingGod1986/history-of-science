@@ -1,0 +1,478 @@
+{
+  "id": "s05_vacca_jesty",
+  "version": "v02",
+  "job": "J0906",
+  "test": "B (search-titled)",
+  "air_date_draft": "2026-11-17",
+  "file": "10_Shorts/hos_007_s05_vacca_jesty_v02.mp4",
+  "sha256": "89a9a1668d7470acb27e5a93a77641aaeeaf6aed053fa418d899c776f4d3b88e",
+  "duration_s": 24.167,
+  "vo_source": "02_Voiceover/part04_the_test_v01b.mp3",
+  "vo_take_indices": [
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147
+  ],
+  "dropped": [
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102
+  ],
+  "route": "60-word sentence-aligned lift from Part 04 (62..76 + 103..147): Jenner wasn't the first to try cowpox. Benjamin Jesty had done it twenty-two years earlier. He tested more people, and in seventeen ninety-eight he paid to print a short book. He called the disease by a Latin name, variolae vaccinae, which means smallpox of the cow. From vacca, the Latin word for cow, came the name for the treatment: vaccination.",
+  "vo_s": 23.81,
+  "words": 60,
+  "max_pause_s": 0.14,
+  "atempo": 1.07,
+  "bed": "hos007_s05_synth_pad_v01.wav (own synthesis, 0 credits)",
+  "bed_gain_db": -23.2,
+  "hook": "NOT THE FIRST",
+  "hook_layer": {
+    "font_size": 243,
+    "cap_px": 173,
+    "cap_pct": 9.01,
+    "lines": 3,
+    "block_pct": [
+      33.6,
+      66.4
+    ],
+    "widest_pct": 71.3
+  },
+  "who_card": {
+    "name": "BENJAMIN JESTY",
+    "line2": "Dorset \u00b7 1774",
+    "line1_px": 68,
+    "line1_pct_of_band": 11.2,
+    "band": [
+      656,
+      1264
+    ],
+    "in_s": 2.4,
+    "out_s": 5.8,
+    "fade_s": 0.35
+  },
+  "title_on_screen": "Why Vaccines Are Named After a Cow",
+  "youtube_title_draft": "Why Is It Called a Vaccine?",
+  "plan": [
+    {
+      "t0": 0.0,
+      "t1": 2.502,
+      "plate": "04_Generated-Clips/part05/raw/v01/09_meadow_golden_t1.mp4",
+      "in_s": 2.2,
+      "crop_x": 660,
+      "lands_on": 0
+    },
+    {
+      "t0": 2.502,
+      "t1": 5.569,
+      "plate": "04_Generated-Clips/part02/raw/v01/06_jesty_family_t1.mp4",
+      "in_s": 0.4,
+      "crop_x": 660,
+      "lands_on": "Benjamin"
+    },
+    {
+      "t0": 5.569,
+      "t1": 7.355,
+      "plate": "04_Generated-Clips/part04/raw/v01/10_garden_hut_t1.mp4",
+      "in_s": 0.4,
+      "crop_x": 640,
+      "lands_on": "He"
+    },
+    {
+      "t0": 7.355,
+      "t1": 10.459,
+      "plate": "04_Generated-Clips/part04/raw/v01/08_soho_press_t1.mp4",
+      "in_s": 0.4,
+      "crop_x": 820,
+      "lands_on": "seventeen"
+    },
+    {
+      "t0": 10.459,
+      "t1": 14.808,
+      "plate": "04_Generated-Clips/part05/raw/v01/10_history_book_t1.mp4",
+      "in_s": 0.4,
+      "crop_x": 640,
+      "lands_on": "He"
+    },
+    {
+      "t0": 14.808,
+      "t1": 17.772,
+      "plate": "04_Generated-Clips/part01/raw/v01/01_cow_meadow_t1.mp4",
+      "in_s": 0.4,
+      "crop_x": 660,
+      "lands_on": "which"
+    },
+    {
+      "t0": 17.772,
+      "t1": 21.16,
+      "plate": "04_Generated-Clips/part04/raw/v01/10a_packets_t1.mp4",
+      "in_s": 0.4,
+      "crop_x": 640,
+      "lands_on": "From"
+    },
+    {
+      "t0": 21.16,
+      "t1": 24.16,
+      "plate": "04_Generated-Clips/part05/raw/v01/09_meadow_golden_t1.mp4",
+      "in_s": 2.2,
+      "crop_x": 660,
+      "lands_on": "loop"
+    }
+  ],
+  "captions": 18,
+  "caption_check": {
+    "ok": true,
+    "changes": 18,
+    "ratio": 1.0
+  },
+  "handover_check": {
+    "ok": true,
+    "total_handovers": 17,
+    "sampled_handovers": 10,
+    "max_active_vo_captions_any_frame": 1,
+    "sheet": "10_Shorts/_work_s05_vacca_jesty_v02/hos_007_s05_vacca_jesty_v02_handovers_10.jpg",
+    "samples": [
+      {
+        "handover": 1,
+        "boundary_s": 1.474,
+        "prev_frame": 44,
+        "prev_t_s": 1.4667,
+        "prev_caption": "Jenner wasn't the first to",
+        "next_frame": 45,
+        "next_t_s": 1.5,
+        "next_caption": "try cowpox.",
+        "active_count_prev": 1,
+        "active_count_at_boundary": 1,
+        "active_count_next": 1,
+        "pixel_fill_prev": {
+          "caption_a": 1.0,
+          "caption_b": 0.002
+        },
+        "pixel_fill_next": {
+          "caption_a": 0.0,
+          "caption_b": 0.998
+        },
+        "one_caption_each": true
+      },
+      {
+        "handover": 2,
+        "boundary_s": 2.622,
+        "prev_frame": 78,
+        "prev_t_s": 2.6,
+        "prev_caption": "try cowpox.",
+        "next_frame": 79,
+        "next_t_s": 2.6333,
+        "next_caption": "Benjamin Jesty had done it",
+        "active_count_prev": 1,
+        "active_count_at_boundary": 1,
+        "active_count_next": 1,
+        "pixel_fill_prev": {
+          "caption_a": 0.993,
+          "caption_b": 0.0
+        },
+        "pixel_fill_next": {
+          "caption_a": 0.0,
+          "caption_b": 0.999
+        },
+        "one_caption_each": true
+      },
+      {
+        "handover": 3,
+        "boundary_s": 4.152,
+        "prev_frame": 124,
+        "prev_t_s": 4.1333,
+        "prev_caption": "Benjamin Jesty had done it",
+        "next_frame": 125,
+        "next_t_s": 4.1667,
+        "next_caption": "twenty-two years earlier.",
+        "active_count_prev": 1,
+        "active_count_at_boundary": 1,
+        "active_count_next": 1,
+        "pixel_fill_prev": {
+          "caption_a": 1.0,
+          "caption_b": 0.0
+        },
+        "pixel_fill_next": {
+          "caption_a": 0.0,
+          "caption_b": 1.0
+        },
+        "one_caption_each": true
+      },
+      {
+        "handover": 4,
+        "boundary_s": 5.689,
+        "prev_frame": 170,
+        "prev_t_s": 5.6667,
+        "prev_caption": "twenty-two years earlier.",
+        "next_frame": 171,
+        "next_t_s": 5.7,
+        "next_caption": "He tested more people,",
+        "active_count_prev": 1,
+        "active_count_at_boundary": 1,
+        "active_count_next": 1,
+        "pixel_fill_prev": {
+          "caption_a": 0.995,
+          "caption_b": 0.0
+        },
+        "pixel_fill_next": {
+          "caption_a": 0.006,
+          "caption_b": 0.999
+        },
+        "one_caption_each": true
+      },
+      {
+        "handover": 5,
+        "boundary_s": 7.243,
+        "prev_frame": 217,
+        "prev_t_s": 7.2333,
+        "prev_caption": "He tested more people,",
+        "next_frame": 218,
+        "next_t_s": 7.2667,
+        "next_caption": "and in seventeen ninety-eight he",
+        "active_count_prev": 1,
+        "active_count_at_boundary": 1,
+        "active_count_next": 1,
+        "pixel_fill_prev": {
+          "caption_a": 0.999,
+          "caption_b": 0.0
+        },
+        "pixel_fill_next": {
+          "caption_a": 0.0,
+          "caption_b": 1.0
+        },
+        "one_caption_each": true
+      },
+      {
+        "handover": 6,
+        "boundary_s": 8.85,
+        "prev_frame": 265,
+        "prev_t_s": 8.8333,
+        "prev_caption": "and in seventeen ninety-eight he",
+        "next_frame": 266,
+        "next_t_s": 8.8667,
+        "next_caption": "paid to print a short",
+        "active_count_prev": 1,
+        "active_count_at_boundary": 1,
+        "active_count_next": 1,
+        "pixel_fill_prev": {
+          "caption_a": 1.0,
+          "caption_b": 0.0
+        },
+        "pixel_fill_next": {
+          "caption_a": 0.0,
+          "caption_b": 1.0
+        },
+        "one_caption_each": true
+      },
+      {
+        "handover": 7,
+        "boundary_s": 10.047,
+        "prev_frame": 301,
+        "prev_t_s": 10.0333,
+        "prev_caption": "paid to print a short",
+        "next_frame": 302,
+        "next_t_s": 10.0667,
+        "next_caption": "book.",
+        "active_count_prev": 1,
+        "active_count_at_boundary": 1,
+        "active_count_next": 1,
+        "pixel_fill_prev": {
+          "caption_a": 1.0,
+          "caption_b": 0.0
+        },
+        "pixel_fill_next": {
+          "caption_a": 0.0,
+          "caption_b": 1.0
+        },
+        "one_caption_each": true
+      },
+      {
+        "handover": 8,
+        "boundary_s": 10.579,
+        "prev_frame": 317,
+        "prev_t_s": 10.5667,
+        "prev_caption": "book.",
+        "next_frame": 318,
+        "next_t_s": 10.6,
+        "next_caption": "He called the disease by",
+        "active_count_prev": 1,
+        "active_count_at_boundary": 1,
+        "active_count_next": 1,
+        "pixel_fill_prev": {
+          "caption_a": 0.992,
+          "caption_b": 0.0
+        },
+        "pixel_fill_next": {
+          "caption_a": 0.0,
+          "caption_b": 1.0
+        },
+        "one_caption_each": true
+      },
+      {
+        "handover": 9,
+        "boundary_s": 11.813,
+        "prev_frame": 354,
+        "prev_t_s": 11.8,
+        "prev_caption": "He called the disease by",
+        "next_frame": 355,
+        "next_t_s": 11.8333,
+        "next_caption": "a Latin name,",
+        "active_count_prev": 1,
+        "active_count_at_boundary": 1,
+        "active_count_next": 1,
+        "pixel_fill_prev": {
+          "caption_a": 1.0,
+          "caption_b": 0.0
+        },
+        "pixel_fill_next": {
+          "caption_a": 0.002,
+          "caption_b": 0.998
+        },
+        "one_caption_each": true
+      },
+      {
+        "handover": 10,
+        "boundary_s": 12.882,
+        "prev_frame": 386,
+        "prev_t_s": 12.8667,
+        "prev_caption": "a Latin name,",
+        "next_frame": 387,
+        "next_t_s": 12.9,
+        "next_caption": "variolae vaccinae,",
+        "active_count_prev": 1,
+        "active_count_at_boundary": 1,
+        "active_count_next": 1,
+        "pixel_fill_prev": {
+          "caption_a": 1.0,
+          "caption_b": 0.001
+        },
+        "pixel_fill_next": {
+          "caption_a": 0.0,
+          "caption_b": 0.997
+        },
+        "one_caption_each": true
+      }
+    ]
+  },
+  "gate": {
+    "exit": 0,
+    "output": "PASS  hos_007_s05_vacca_jesty_v02.mp4  dur=24.17s  audio=-24.1dB  motion=16.17  dhash=727d2edf57490736\n   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_007_s05_vacca_jesty_v02_open_sheet.jpg"
+  },
+  "vo_check": {
+    "exit": 0,
+    "output": "PASS  hos_007_s05_vacca_jesty_v02.mp4  0:24.17  mean -24.1 dB  peak -4.7 dB  146 wpm\n   warn  replace at ~0:12.04: script 'a latin name variolae vaccinae which means' / heard 'a latin name varioli vaccinae which means' \u2014 sounds alike (likely the transcriber); listen\n   warn  replace at ~0:17.28: script 'the cow from vacca the latin word' / heard 'the cow from vaca the latin word' \u2014 sounds alike (likely the transcriber); listen"
+  },
+  "freezedetect_starts": [],
+  "qa": {
+    "polish_gate": {
+      "exit": 0,
+      "output": "polish gate PASS: 0 of 8 rows failed, 1 to look at -> 02_Video-Projects/007_The-First-Vaccine/10_Shorts/qa_s05_vacca_jesty_v02/polish_gate_s05_vacca_jesty_v02.json"
+    },
+    "picture_qa": {
+      "exit": 0,
+      "output": "picture QA PASS: 0 of 8 cuts fail, 1 to look at -> 02_Video-Projects/007_The-First-Vaccine/10_Shorts/qa_s05_vacca_jesty_v02/picture_qa_s05_vacca_jesty_v02/PICTURE_QA.md, 02_Video-Projects/007_The-First-Vaccine/10_Shorts/qa_s05_vacca_jesty_v02/picture_qa_s05_vacca_jesty_v02/picture_qa_review.jpg"
+    }
+  },
+  "stills": [
+    "10_Shorts/_work_s05_vacca_jesty_v02/hos_007_s05_vacca_jesty_v02_t000.0.jpg",
+    "10_Shorts/_work_s05_vacca_jesty_v02/hos_007_s05_vacca_jesty_v02_t004.0.jpg",
+    "10_Shorts/_work_s05_vacca_jesty_v02/hos_007_s05_vacca_jesty_v02_t011.5.jpg",
+    "10_Shorts/_work_s05_vacca_jesty_v02/hos_007_s05_vacca_jesty_v02_t017.5.jpg",
+    "10_Shorts/_work_s05_vacca_jesty_v02/hos_007_s05_vacca_jesty_v02_t023.2.jpg"
+  ],
+  "icloud": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/007_The-First-Vaccine/10_Shorts/hos_007_s05_vacca_jesty_v02.mp4",
+  "autocomplete_check": {
+    "date": "2026-10-24",
+    "source": "suggestqueries client=youtube ds=yt gl=GB signed-out",
+    "hits": [
+      "why is it called vaccines",
+      "vaccine latin words",
+      "benjamin jesty",
+      "who invented the first vaccine",
+      "edward jenner cowpox vaccine"
+    ],
+    "note": "Signed-out GB YouTube autocomplete returns 'why is it called vaccines', 'vaccine latin words', 'benjamin jesty', 'who invented the first vaccine', and 'edward jenner cowpox vaccine' as exact hits (24 Oct 2026). Title draft 'Why Is It Called a Vaccine?' (with 'Who Tried Cowpox Before Edward Jenner?' and 'Where Does the Word Vaccine Come From?' as alternatives) is answered directly by the lifted Part 04 VO: Benjamin Jesty's 1774 cowpox inoculation 22 years before Jenner, Jenner's 1798 Inquiry naming the disease variolae vaccinae ('smallpox of the cow'), and vacca (Latin for cow) giving us 'vaccination'. Second built search-titled Short on HOS 007 (completing 007's Test B pair alongside s04_smallpox_test_v01). Chief's call."
+  },
+  "air_date_draft_note": "2027-01-26 used for the gate only; slot is Chief's call.",
+  "who_card_note": "card BENJAMIN JESTY \u00b7 Dorset \u00b7 1774 on screen 2.40\u20135.80 s (3.4 s) right as 'Benjamin Jesty had done it twenty-two years earlier' lands on Jesty's Dorset farmyard plate. Clear of the 0\u20132 s hook, the 9\u201314 s title, and the last 3.0 s CTA.",
+  "overlap_note": "Second built search-titled Short lifted from HOS 007's long VO (Part 04 words 62..76 + 103..147: Jesty 1774, 1798 Inquiry, variolae vaccinae / vacca -> vaccination). Zero spoken-word or plate overlap with s04_smallpox_test_v01 (Part 04 words 0..61), 007 Short B (Part 02 milkmaids' secret), or 007 Short C (Part 05 1980 global eradication)."
+}

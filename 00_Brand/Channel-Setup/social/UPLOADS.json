@@ -144,6 +144,25 @@
         "question": "What did Edward Jenner's first vaccine test prove?",
         "alt": "A mahogany lancet case with ivory-handled steel lancets on Edward Jenner's study table in 1796; hook caption THE FIRST TEST."
       }
+    },
+    "4WUs0beKn0A": {
+      "kind": "short",
+      "standalone": false,
+      "standaloneTest": false,
+      "file": "02_Video-Projects/007_The-First-Vaccine/10_Shorts/hos_007_s05_vacca_jesty_v02.mp4",
+      "sha256": "89a9a1668d7470acb27e5a93a77641aaeeaf6aed053fa418d899c776f4d3b88e",
+      "packageDir": "02_Video-Projects/007_The-First-Vaccine/10_Shorts/11_Upload-Package/s05_vacca_jesty",
+      "thumb": "02_Video-Projects/007_The-First-Vaccine/10_Shorts/_work_s05_vacca_jesty_v02/hos_007_s05_vacca_jesty_v02_t000.0.jpg",
+      "long": null,
+      "promotes": "007",
+      "publishAt": "2026-11-17T11:30:00Z",
+      "registeredAt": "2026-10-24T18:05:00Z",
+      "buffer": "held until public, then the full film (set long id once 007 long is uploaded, J0875)",
+      "social": {
+        "hook": "Twenty-two years before Edward Jenner's 1798 book, Benjamin Jesty tried cowpox — and from vacca, Latin for cow, came vaccination.",
+        "question": "Why are vaccines named after a cow?",
+        "alt": "A dairy cow in a golden Dorset meadow at sunset; hook caption NOT THE FIRST."
+      }
     }
   }
 }

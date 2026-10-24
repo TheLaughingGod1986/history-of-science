@@ -1,6 +1,6 @@
 {
   "film": "007",
-  "about": "J0873 Chief-authorized upload of J0865 s04_smallpox_test_v01. First free HOS weekday Short slot on/after Fri 13 Nov 2026 11:30 London (2026-11-13T11:30:00Z, GMT; 007 long airs Thu 12 Nov 18:00).",
+  "about": "J0873 + J0906 Chief-authorized uploads of HOS 007 search-titled Shorts s04_smallpox_test_v01 (Fri 13 Nov 2026 11:30Z) and s05_vacca_jesty_v02 (Tue 17 Nov 2026 11:30Z; 007 long airs Thu 12 Nov 18:00Z).",
   "shorts": [
     {
       "id": "-I_GHK-GcFs",
@@ -22,6 +22,27 @@
       "durationSeconds": 26.13,
       "cover": "frame 0 of hos_007_s04_smallpox_test_v01 (THE FIRST TEST)",
       "note": "J0873 Chief PASS J0865 (sha 3daff43d04bc). Private + publishAt Fri 13 Nov 11:30 London (2026-11-13T11:30:00Z). Related -> 007 long once it has an id (set after the long is uploaded, before the Short goes public). Buffer held until public."
+    },
+    {
+      "id": "4WUs0beKn0A",
+      "title": "Why Is It Called a Vaccine?",
+      "airDate": "2026-11-17T11:30:00Z",
+      "promotes": "007",
+      "promotesVideoId": null,
+      "relatedVideoId": null,
+      "tags": [
+        "why is it called a vaccine",
+        "vaccine latin word",
+        "benjamin jesty",
+        "edward jenner cowpox vaccine",
+        "first vaccine",
+        "history of science"
+      ],
+      "madeForKids": false,
+      "alteredContent": true,
+      "durationSeconds": 24.17,
+      "cover": "frame 0 of hos_007_s05_vacca_jesty_v02 (NOT THE FIRST)",
+      "note": "J0906 Chief PASS J0898 v02 (sha 89a9a1668d74). Private + publishAt Tue 17 Nov 11:30 London (2026-11-17T11:30:00Z). Related -> 007 long once it has an id (tracked in J0875). Buffer held until public."
     }
   ]
 }
