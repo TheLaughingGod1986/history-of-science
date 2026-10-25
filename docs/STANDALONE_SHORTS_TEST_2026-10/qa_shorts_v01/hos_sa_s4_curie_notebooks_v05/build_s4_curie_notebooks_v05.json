@@ -1,0 +1,79 @@
+{
+  "file": "hos_sa_s4_curie_notebooks_v05.mp4",
+  "sha256": "7d750c8131d6acddff7ee90bf69d426bef9a05f27bbc7f75ca6ae36669c000aa",
+  "duration_s": 20.467,
+  "spoken": "Marie Curie's notebooks are still radioactive. In 1898, she and Pierre found two new elements, polonium, then radium. Radium glowed in the dark, and she handled it for years with no protection. Today, her papers sit in lead-lined boxes in Paris. Radium takes 1,600 years to lose half its strength",
+  "brief": {
+    "frame0_source": "003/04_Generated-Clips/02_wurzburg_lab_establishing_v03.mp4",
+    "frame0_zoom": "none \u2014 moving Flow plate, in 1.10s, centre-band, no Ken Burns",
+    "first_word_s": 0.08,
+    "surprise_s": {
+      "notebooks": 0.72,
+      "still": 1.46
+    },
+    "first_cut_s": 2.45,
+    "last_word_to_loop_s": 1.0,
+    "meta_promise": false,
+    "runtime_s": 20.467,
+    "longest_hold_s": 3.402,
+    "payoff_phrase": "lose half its strength",
+    "payoff_s": 18.52,
+    "payoff_frac": 0.905,
+    "loop_sentence": "Radium takes 1,600 years to lose half its strength. Marie Curie's notebooks are still radioactive.",
+    "loop_diff": 3.63,
+    "lufs": -15.2,
+    "true_peak_dbfs": -1.4,
+    "frame0_black": 0.211,
+    "no_cta": true,
+    "no_new_spend": true
+  },
+  "gate_exit": 0,
+  "gate_verdict": "PASS",
+  "gate_fails": [],
+  "gate_warns": [
+    "duration 20.5s outside 22\u201327s band"
+  ],
+  "qa": {
+    "polish_gate": {
+      "exit": 0,
+      "tail": [
+        "s03_copy     7.5s 06_labs_copy_tube_v03.mp4    ok",
+        "s04_glow    11.0s 05_glow_blooms_v02.mp4       ok",
+        "s05_glass    14.4s 03_cathode_tube_hero_v02.mp4 WARN low detail: edge density 0.0229 < film p5 0.0261",
+        "s06_dark    17.8s 07_dark_on_purpose_v04.mp4   ok",
+        "s07_loop    20.0s loop_end_02_wurzburg_lab_est ok",
+        "polish gate PASS: 0 of 7 rows failed, 1 to look at -> docs/STANDALONE_SHORTS_TEST_2026-10/qa_shorts_v01/hos_sa_s4_curie_notebooks_v05/polish_gate_s4_curie_notebooks_v05.json"
+      ]
+    },
+    "picture_qa": {
+      "exit": 0,
+      "tail": [
+        "WARN   0:14 row s05_glass 03_cathode_tube_hero_v02.mp4: low detail: edge density 0.0229 < film p5 0.0261",
+        "picture QA PASS: 0 of 7 cuts fail, 1 to look at -> docs/STANDALONE_SHORTS_TEST_2026-10/qa_shorts_v01/hos_sa_s4_curie_notebooks_v05/picture_qa_s4_curie_notebooks_v05/PICTURE_QA.md, docs/STANDALONE_SHORTS_TEST_2026-10/qa_shorts_v01/hos_sa_s4_curie_notebooks_v05/picture_qa_s4_curie_notebooks_v05/picture_qa_review.jpg"
+      ]
+    }
+  },
+  "music_exit": 0,
+  "music_tail": [
+    "WARN reused: couldn't read saturn_long_vo_v03b_tightened_LOCK.m4a to compare (OSError); download it or pass --others",
+    "WARN reused: couldn't read saturn_long_vo_v03b_tightened_LOCK.wav to compare (OSError); download it or pass --others",
+    "WARN reused: couldn't read saturn_long_vo_v01_LISTEN.wav to compare (OSError); download it or pass --others",
+    "WARN reused: couldn't read monday_saturn_short_vo_v02_how_long.mp3 to compare (OSError); download it or pass --others",
+    "WARN reused: couldn't read saturn_long_vo_v03_tightened.wav to compare (OSError); download it or pass --others",
+    "music gate PASS: hos_sa_s4_curie_notebooks_v05_bed.wav, 20.8 s, about 66.7 BPM, brief Pace: 64-74 BPM"
+  ],
+  "sfx": {
+    "exit": 0,
+    "output": "SFX level PASS: VO -19.5 LUFS, SFX -44.4 LUFS, 1 hits",
+    "bed_db": -14.0,
+    "sfx_db": -14.0
+  },
+  "copies": [
+    "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/standalone_s4_curie_v05/hos_sa_s4_curie_notebooks_v05.mp4",
+    "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/standalone_s4_curie_v05/hos_sa_s4_curie_notebooks_v05_PHONE.mp4",
+    "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/standalone_s4_curie_v05/hos_sa_s4_curie_notebooks_v05_2fps_sheet.jpg",
+    "/Volumes/data/mac-mini-archive/YouTube/History Of Science/docs/STANDALONE_SHORTS_TEST_2026-10/s4_curie_notebooks_v05/hos_sa_s4_curie_notebooks_v05.mp4",
+    "/Volumes/data/mac-mini-archive/YouTube/History Of Science/docs/STANDALONE_SHORTS_TEST_2026-10/s4_curie_notebooks_v05/hos_sa_s4_curie_notebooks_v05_PHONE.mp4",
+    "/Volumes/data/mac-mini-archive/YouTube/History Of Science/docs/STANDALONE_SHORTS_TEST_2026-10/s4_curie_notebooks_v05/hos_sa_s4_curie_notebooks_v05_2fps_sheet.jpg"
+  ]
+}

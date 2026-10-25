@@ -1,0 +1,8 @@
+s01_lab     1.2s 02_wurzburg_lab_establishing ok
+s02_tube     4.2s 11_lab_hold_v01.mp4          ok
+s03_copy     7.5s 06_labs_copy_tube_v03.mp4    ok
+s04_glow    11.0s 05_glow_blooms_v02.mp4       ok
+s05_glass    14.4s 03_cathode_tube_hero_v02.mp4 WARN low detail: edge density 0.0229 < film p5 0.0261
+s06_dark    17.8s 07_dark_on_purpose_v04.mp4   ok
+s07_loop    20.0s loop_end_02_wurzburg_lab_est ok
+polish gate PASS: 0 of 7 rows failed, 1 to look at -> docs/STANDALONE_SHORTS_TEST_2026-10/qa_shorts_v01/hos_sa_s4_curie_notebooks_v05/polish_gate_s4_curie_notebooks_v05.json

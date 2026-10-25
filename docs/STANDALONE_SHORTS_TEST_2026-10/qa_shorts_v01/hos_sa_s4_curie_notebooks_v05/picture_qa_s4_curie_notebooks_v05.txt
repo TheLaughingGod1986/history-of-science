@@ -1,0 +1,2 @@
+WARN   0:14 row s05_glass 03_cathode_tube_hero_v02.mp4: low detail: edge density 0.0229 < film p5 0.0261
+picture QA PASS: 0 of 7 cuts fail, 1 to look at -> docs/STANDALONE_SHORTS_TEST_2026-10/qa_shorts_v01/hos_sa_s4_curie_notebooks_v05/picture_qa_s4_curie_notebooks_v05/PICTURE_QA.md, docs/STANDALONE_SHORTS_TEST_2026-10/qa_shorts_v01/hos_sa_s4_curie_notebooks_v05/picture_qa_s4_curie_notebooks_v05/picture_qa_review.jpg
