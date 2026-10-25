@@ -1,0 +1,24 @@
+{
+  "file": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s02_the_tied_arm_v04.mp4",
+  "air_date": "2026-11-08",
+  "fails": [],
+  "warns": [],
+  "stayed_fails": [],
+  "duration_s": 26.27,
+  "audio": {
+    "stream": true,
+    "mean_db": -18.0,
+    "open_mean_db": -15.4
+  },
+  "vo_src": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/_work_s02_tied_arm_v04/vo_v03.wav",
+  "vo_onset_s": 0.062,
+  "last_word_end_s": 25.258,
+  "tail_gap_s": 1.01,
+  "motion_0_1s": 10.93,
+  "frame0_diff_0_1_5s": 1.95,
+  "first_cut_s": 2.67,
+  "dhash": "202323267b230b06",
+  "near_opens": [],
+  "contact_sheet": "/var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_005_s02_the_tied_arm_v04_open_sheet.jpg",
+  "verdict": "PASS"
+}

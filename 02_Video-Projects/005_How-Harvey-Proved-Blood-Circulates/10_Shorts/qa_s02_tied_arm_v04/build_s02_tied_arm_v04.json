@@ -1,0 +1,40 @@
+{
+  "file": "hos_005_s02_the_tied_arm_v04.mp4",
+  "sha256": "98a283d83db149e71393aee37a394f7075d51a73bb88ecb5f01e605d410d9523",
+  "duration_s": 26.267,
+  "gate_exit": 0,
+  "gate_verdict": "PASS",
+  "gate_fails": [],
+  "gate_warns": [],
+  "stayed_fails": [],
+  "polish_exit": 0,
+  "picture_exit": 0,
+  "music_exit": 0,
+  "music_tail": [
+    "WARN reused: couldn't read saturn_long_vo_v01_LISTEN.wav to compare (OSError); download it or pass --others",
+    "WARN reused: couldn't read monday_saturn_short_vo_v02_how_long.mp3 to compare (OSError); download it or pass --others",
+    "WARN reused: couldn't read saturn_long_vo_v03_tightened.wav to compare (OSError); download it or pass --others",
+    "music gate PASS: hos_005_s02_tied_arm_v04_bed.wav, 26.8 s, about 57.1 BPM, brief Pace: 54-62 BPM"
+  ],
+  "polish_tail": [
+    "s10_Look    22.1s 12_stays_fills_t1.mp4        ok",
+    "s11_That    24.1s 14_steering_home_t1.mp4      ok",
+    "s12_loop    25.8s loop_span_03_band_tightens_t ok",
+    "polish gate PASS: 0 of 12 rows failed, 1 to look at -> 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s02_tied_arm_v04/polish_gate_s02_tied_arm_v04.json"
+  ],
+  "picture_tail": [
+    "WARN   0:07 row s04_hand 03_hand_pale_t4_graded_v04.mp4: low detail: edge density 0.0133 < film p5 0.0141",
+    "picture QA PASS: 0 of 12 cuts fail, 1 to look at -> 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s02_tied_arm_v04/picture_qa_s02_tied_arm_v04/PICTURE_QA.md, 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s02_tied_arm_v04/picture_qa_s02_tied_arm_v04/picture_qa_review.jpg"
+  ],
+  "sfx": {
+    "exit": 0,
+    "output": "SFX level PASS: VO -18.3 LUFS, SFX -50.6 LUFS, 1 hits",
+    "bed_db": -14.0,
+    "sfx_db": -16.0
+  },
+  "frame0_black": 0.026,
+  "lufs_wav": -14.6,
+  "longest_hold_s": 3.65,
+  "payoff_frac": 0.743,
+  "v03_sha": "6151ea799c366e2d12670df2c1d087a3454e02660c5f8522061351f1954d4a4f"
+}

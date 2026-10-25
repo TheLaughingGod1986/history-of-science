@@ -1,0 +1,17 @@
+{
+  "job": "J0965",
+  "youtube_id": "mTY67qet7cM",
+  "master_sha256": "98a283d83db149e71393aee37a394f7075d51a73bb88ecb5f01e605d410d9523",
+  "phone_sha256": "526e6a17a57d91da18c30fe19fd2c93d8e2eaba836a80e89e94e65549e0e7237",
+  "v03_sha256": "6151ea799c366e2d12670df2c1d087a3454e02660c5f8522061351f1954d4a4f",
+  "copies": {
+    "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/tied_arm_v04/hos_005_s02_the_tied_arm_v04.mp4": "98a283d83db149e71393aee37a394f7075d51a73bb88ecb5f01e605d410d9523",
+    "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/tied_arm_v04/hos_005_s02_the_tied_arm_v04_PHONE.mp4": "526e6a17a57d91da18c30fe19fd2c93d8e2eaba836a80e89e94e65549e0e7237",
+    "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/tied_arm_v04/hos_005_s02_the_tied_arm_v04_2fps_sheet.jpg": "8a9c06bbc1bcfaed295742f9c415b319fa1000f8c39305c5a5f2c723db436ca7",
+    "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/tied_arm_v04/hos_005_s02_the_tied_arm_v04.mp4": "98a283d83db149e71393aee37a394f7075d51a73bb88ecb5f01e605d410d9523",
+    "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/tied_arm_v04/hos_005_s02_the_tied_arm_v04_PHONE.mp4": "526e6a17a57d91da18c30fe19fd2c93d8e2eaba836a80e89e94e65549e0e7237",
+    "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/tied_arm_v04/hos_005_s02_the_tied_arm_v04_2fps_sheet.jpg": "8a9c06bbc1bcfaed295742f9c415b319fa1000f8c39305c5a5f2c723db436ca7"
+  },
+  "lufs": -14.6,
+  "true_peak_dbfs": -0.9
+}

@@ -1,0 +1,2 @@
+WARN   0:07 row s04_hand 03_hand_pale_t4_graded_v04.mp4: low detail: edge density 0.0133 < film p5 0.0141
+picture QA PASS: 0 of 12 cuts fail, 1 to look at -> 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s02_tied_arm_v04/picture_qa_s02_tied_arm_v04/PICTURE_QA.md, 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s02_tied_arm_v04/picture_qa_s02_tied_arm_v04/picture_qa_review.jpg

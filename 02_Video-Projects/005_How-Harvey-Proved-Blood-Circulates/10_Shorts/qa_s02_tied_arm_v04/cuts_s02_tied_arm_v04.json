@@ -1,0 +1,134 @@
+[
+  {
+    "row": "s01_open",
+    "timeline_in": 0.0,
+    "timeline_out": 2.674,
+    "source": "03_band_tightens_t3.mp4",
+    "upscale": 1.78,
+    "video": true,
+    "framing": {
+      "offset": 1.5
+    }
+  },
+  {
+    "row": "s02_William",
+    "timeline_in": 2.674,
+    "timeline_out": 5.236,
+    "source": "02_linen_tie_t2.mp4",
+    "upscale": 1.78,
+    "video": true,
+    "framing": {
+      "offset": 0.3
+    }
+  },
+  {
+    "row": "s03_arm",
+    "timeline_in": 5.236,
+    "timeline_out": 6.613,
+    "source": "04_sum_band_doors_t2.mp4",
+    "upscale": 1.78,
+    "video": true,
+    "framing": {
+      "offset": 0.4
+    }
+  },
+  {
+    "row": "s04_hand",
+    "timeline_in": 6.613,
+    "timeline_out": 8.14,
+    "source": "03_hand_pale_t4_graded_v04.mp4",
+    "upscale": 1.78,
+    "video": true,
+    "framing": {
+      "offset": 1.5
+    }
+  },
+  {
+    "row": "s05_No",
+    "timeline_in": 8.14,
+    "timeline_out": 10.22,
+    "source": "05_arteries_veins_shut_t2.mp4",
+    "upscale": 1.78,
+    "video": true,
+    "framing": {
+      "offset": 0.5
+    }
+  },
+  {
+    "row": "s06_He",
+    "timeline_in": 10.22,
+    "timeline_out": 12.767,
+    "source": "04_stopped_loosen_t5_graded_v04.mp4",
+    "upscale": 1.78,
+    "video": true,
+    "framing": {
+      "offset": 1.5
+    }
+  },
+  {
+    "row": "s07_veins",
+    "timeline_in": 12.767,
+    "timeline_out": 16.417,
+    "source": "06_veins_swell_t1.mp4",
+    "upscale": 1.78,
+    "video": true,
+    "framing": {
+      "offset": 3.0
+    }
+  },
+  {
+    "row": "s08_So",
+    "timeline_in": 16.417,
+    "timeline_out": 18.997,
+    "source": "07_in_out_doors_t2.mp4",
+    "upscale": 1.78,
+    "video": true,
+    "framing": {
+      "offset": 1.5
+    }
+  },
+  {
+    "row": "s09_and",
+    "timeline_in": 18.997,
+    "timeline_out": 21.233,
+    "source": "15_your_hand_glow_t2.mp4",
+    "upscale": 1.78,
+    "video": true,
+    "framing": {
+      "offset": 0.4
+    }
+  },
+  {
+    "row": "s10_Look",
+    "timeline_in": 21.233,
+    "timeline_out": 22.868,
+    "source": "12_stays_fills_t1.mp4",
+    "upscale": 1.78,
+    "video": true,
+    "framing": {
+      "offset": 0.5
+    }
+  },
+  {
+    "row": "s11_That",
+    "timeline_in": 22.868,
+    "timeline_out": 25.258,
+    "source": "14_steering_home_t1.mp4",
+    "upscale": 1.78,
+    "video": true,
+    "framing": {
+      "offset": 0.4
+    }
+  },
+  {
+    "row": "s12_loop",
+    "timeline_in": 25.258,
+    "timeline_out": 26.258,
+    "source": "loop_span_03_band_tightens_t3.mp4",
+    "upscale": 1.78,
+    "video": true,
+    "framing": {
+      "offset": 0.5
+    }
+  }
+]

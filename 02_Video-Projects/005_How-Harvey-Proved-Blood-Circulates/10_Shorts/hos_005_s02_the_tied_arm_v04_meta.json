@@ -1,0 +1,495 @@
+{
+  "id": "005_s02_tied_arm",
+  "version": "v04",
+  "job": "J0965",
+  "youtube_id": "mTY67qet7cM",
+  "title": "One Tight Band Proved Your Blood Goes Round",
+  "air_date": "2026-11-08",
+  "spoken": "One band proved your blood goes round. William Harvey tied it tight round a man's arm. The hand went cold. No blood was getting in. He loosened it, just a little. The veins below the band swelled up like ropes. So blood goes in through the arteries, and comes home through the veins. Look at your hand. That blood is heading home now.",
+  "script": "One band proved your blood goes round. William Harvey tied it tight round a man's arm. The hand went cold. No blood was getting in. He loosened it, just a little. The veins below the band swelled up like ropes. So blood goes in through the arteries, and comes home through the veins. Look at your hand. That blood is heading home now.",
+  "words": [
+    {
+      "word": "One",
+      "start": 0.0,
+      "end": 0.154
+    },
+    {
+      "word": "band",
+      "start": 0.266,
+      "end": 0.714
+    },
+    {
+      "word": "proved",
+      "start": 0.783,
+      "end": 1.194
+    },
+    {
+      "word": "your",
+      "start": 1.226,
+      "end": 1.354
+    },
+    {
+      "word": "blood",
+      "start": 1.407,
+      "end": 1.674
+    },
+    {
+      "word": "goes",
+      "start": 1.754,
+      "end": 2.074
+    },
+    {
+      "word": "round.",
+      "start": 2.167,
+      "end": 2.714
+    },
+    {
+      "word": "William",
+      "start": 2.824,
+      "end": 3.506
+    },
+    {
+      "word": "Harvey",
+      "start": 3.586,
+      "end": 4.066
+    },
+    {
+      "word": "tied",
+      "start": 4.13,
+      "end": 4.386
+    },
+    {
+      "word": "it",
+      "start": 4.439,
+      "end": 4.546
+    },
+    {
+      "word": "tight",
+      "start": 4.639,
+      "end": 5.106
+    },
+    {
+      "word": "round",
+      "start": 5.146,
+      "end": 5.346
+    },
+    {
+      "word": "a",
+      "start": 5.386,
+      "end": 5.426
+    },
+    {
+      "word": "man's",
+      "start": 5.526,
+      "end": 5.906
+    },
+    {
+      "word": "arm.",
+      "start": 6.026,
+      "end": 6.753
+    },
+    {
+      "word": "The",
+      "start": 6.763,
+      "end": 7.116
+    },
+    {
+      "word": "hand",
+      "start": 7.173,
+      "end": 7.398
+    },
+    {
+      "word": "went",
+      "start": 7.455,
+      "end": 7.681
+    },
+    {
+      "word": "cold.",
+      "start": 7.793,
+      "end": 8.339
+    },
+    {
+      "word": "No",
+      "start": 8.29,
+      "end": 8.663
+    },
+    {
+      "word": "blood",
+      "start": 8.743,
+      "end": 9.143
+    },
+    {
+      "word": "was",
+      "start": 9.183,
+      "end": 9.303
+    },
+    {
+      "word": "getting",
+      "start": 9.353,
+      "end": 9.703
+    },
+    {
+      "word": "in.",
+      "start": 9.81,
+      "end": 10.103
+    },
+    {
+      "word": "He",
+      "start": 10.37,
+      "end": 10.797
+    },
+    {
+      "word": "loosened",
+      "start": 10.845,
+      "end": 11.197
+    },
+    {
+      "word": "it,",
+      "start": 11.33,
+      "end": 11.837
+    },
+    {
+      "word": "just",
+      "start": 11.885,
+      "end": 12.077
+    },
+    {
+      "word": "a",
+      "start": 12.117,
+      "end": 12.157
+    },
+    {
+      "word": "little.",
+      "start": 12.226,
+      "end": 12.717
+    },
+    {
+      "word": "The",
+      "start": 12.917,
+      "end": 13.341
+    },
+    {
+      "word": "veins",
+      "start": 13.409,
+      "end": 13.742
+    },
+    {
+      "word": "below",
+      "start": 13.794,
+      "end": 14.062
+    },
+    {
+      "word": "the",
+      "start": 14.082,
+      "end": 14.142
+    },
+    {
+      "word": "band",
+      "start": 14.254,
+      "end": 14.701
+    },
+    {
+      "word": "swelled",
+      "start": 14.755,
+      "end": 15.101
+    },
+    {
+      "word": "up",
+      "start": 15.155,
+      "end": 15.261
+    },
+    {
+      "word": "like",
+      "start": 15.309,
+      "end": 15.502
+    },
+    {
+      "word": "ropes.",
+      "start": 15.608,
+      "end": 16.302
+    },
+    {
+      "word": "So",
+      "start": 16.567,
+      "end": 16.967
+    },
+    {
+      "word": "blood",
+      "start": 17.007,
+      "end": 17.207
+    },
+    {
+      "word": "goes",
+      "start": 17.271,
+      "end": 17.527
+    },
+    {
+      "word": "in",
+      "start": 17.634,
+      "end": 17.847
+    },
+    {
+      "word": "through",
+      "start": 17.887,
+      "end": 18.167
+    },
+    {
+      "word": "the",
+      "start": 18.187,
+      "end": 18.247
+    },
+    {
+      "word": "arteries,",
+      "start": 18.327,
+      "end": 19.047
+    },
+    {
+      "word": "and",
+      "start": 19.147,
+      "end": 19.447
+    },
+    {
+      "word": "comes",
+      "start": 19.5,
+      "end": 19.767
+    },
+    {
+      "word": "home",
+      "start": 19.847,
+      "end": 20.167
+    },
+    {
+      "word": "through",
+      "start": 20.197,
+      "end": 20.407
+    },
+    {
+      "word": "the",
+      "start": 20.427,
+      "end": 20.487
+    },
+    {
+      "word": "veins.",
+      "start": 20.594,
+      "end": 21.287
+    },
+    {
+      "word": "Look",
+      "start": 21.383,
+      "end": 21.767
+    },
+    {
+      "word": "at",
+      "start": 21.794,
+      "end": 21.847
+    },
+    {
+      "word": "your",
+      "start": 21.879,
+      "end": 22.007
+    },
+    {
+      "word": "hand.",
+      "start": 22.119,
+      "end": 22.941
+    },
+    {
+      "word": "That",
+      "start": 23.018,
+      "end": 23.338
+    },
+    {
+      "word": "blood",
+      "start": 23.391,
+      "end": 23.658
+    },
+    {
+      "word": "is",
+      "start": 23.711,
+      "end": 23.818
+    },
+    {
+      "word": "heading",
+      "start": 23.848,
+      "end": 24.058
+    },
+    {
+      "word": "home",
+      "start": 24.154,
+      "end": 24.538
+    },
+    {
+      "word": "now.",
+      "start": 24.698,
+      "end": 25.258
+    }
+  ],
+  "word_count": 63,
+  "last_word_end_s": 25.258,
+  "plan": [
+    {
+      "t0": 0.0,
+      "t1": 2.674,
+      "plate": "part01/raw/v01/03_band_tightens_t3.mp4",
+      "in_s": 1.5,
+      "crop_x": 640,
+      "lands_on": "open",
+      "hold_s": 2.674
+    },
+    {
+      "t0": 2.674,
+      "t1": 5.236,
+      "plate": "part04/raw/v01/02_linen_tie_t2.mp4",
+      "in_s": 0.3,
+      "crop_x": 450,
+      "lands_on": "William",
+      "hold_s": 2.562
+    },
+    {
+      "t0": 5.236,
+      "t1": 6.613,
+      "plate": "part01/raw/v01/04_sum_band_doors_t2.mp4",
+      "in_s": 0.4,
+      "crop_x": 656,
+      "lands_on": "arm",
+      "hold_s": 1.377
+    },
+    {
+      "t0": 6.613,
+      "t1": 8.14,
+      "plate": "part04/graded_v04/03_hand_pale_t4_graded_v04.mp4",
+      "in_s": 1.5,
+      "crop_x": 100,
+      "lands_on": "hand",
+      "hold_s": 1.527
+    },
+    {
+      "t0": 8.14,
+      "t1": 10.22,
+      "plate": "part04/raw/v01/05_arteries_veins_shut_t2.mp4",
+      "in_s": 0.5,
+      "crop_x": 656,
+      "lands_on": "No",
+      "hold_s": 2.08
+    },
+    {
+      "t0": 10.22,
+      "t1": 12.767,
+      "plate": "part04/graded_v04/04_stopped_loosen_t5_graded_v04.mp4",
+      "in_s": 1.5,
+      "crop_x": 560,
+      "lands_on": "He",
+      "hold_s": 2.547
+    },
+    {
+      "t0": 12.767,
+      "t1": 16.417,
+      "plate": "part04/raw/v01/06_veins_swell_t1.mp4",
+      "in_s": 3.0,
+      "crop_x": 560,
+      "lands_on": "veins",
+      "hold_s": 3.65
+    },
+    {
+      "t0": 16.417,
+      "t1": 18.997,
+      "plate": "part04/raw/v01/07_in_out_doors_t2.mp4",
+      "in_s": 1.5,
+      "crop_x": 620,
+      "lands_on": "So",
+      "hold_s": 2.58
+    },
+    {
+      "t0": 18.997,
+      "t1": 21.233,
+      "plate": "part04/raw/v01/15_your_hand_glow_t2.mp4",
+      "in_s": 0.4,
+      "crop_x": 656,
+      "lands_on": "and",
+      "hold_s": 2.236
+    },
+    {
+      "t0": 21.233,
+      "t1": 22.868,
+      "plate": "part04/raw/v01/12_stays_fills_t1.mp4",
+      "in_s": 0.5,
+      "crop_x": 656,
+      "lands_on": "Look",
+      "hold_s": 1.635
+    },
+    {
+      "t0": 22.868,
+      "t1": 25.258,
+      "plate": "part04/raw/v01/14_steering_home_t1.mp4",
+      "in_s": 0.4,
+      "crop_x": 700,
+      "lands_on": "That",
+      "hold_s": 2.39
+    },
+    {
+      "t0": 25.258,
+      "t1": 26.258,
+      "plate": "part01/raw/v01/03_band_tightens_t3.mp4",
+      "in_s": 0.5,
+      "crop_x": 640,
+      "lands_on": "loop",
+      "hold_s": 1.0
+    }
+  ],
+  "hook": "ONE TIGHT BAND",
+  "hook_layer": {
+    "font_size": 243,
+    "cap_px": 173,
+    "cap_pct": 9.01,
+    "lines": 3,
+    "block_pct": [
+      33.6,
+      66.4
+    ],
+    "widest_pct": 77.1
+  },
+  "title_on_screen": "The Tied Arm That Proved Your Blood Circulates",
+  "no_cta": true,
+  "no_new_spend": true,
+  "open_note": "Picture re-cut only. The v03 stem is unchanged, including every word. 05_loosen_warm_t2.mp4 and 08_finger_push_t1.mp4 are not on the NAS, so the long holds are split with 05_arteries_veins_shut_t2, the graded loosen plate, 15_your_hand_glow_t2 and 14_steering_home_t1. v03 stays the scheduled file.",
+  "v03_untouched": true,
+  "v03_sha256": "6151ea799c366e2d12670df2c1d087a3454e02660c5f8522061351f1954d4a4f",
+  "bed": "hos_005_s02_tied_arm_v04_bed.wav",
+  "sfx_level": {
+    "exit": 0,
+    "output": "SFX level PASS: VO -18.3 LUFS, SFX -50.6 LUFS, 1 hits",
+    "bed_db": -14.0,
+    "sfx_db": -16.0
+  },
+  "frame0_source": "04_Generated-Clips/part01/raw/v01/03_band_tightens_t3.mp4",
+  "frame0_zoom": "none \u2014 moving plate, in 1.5s, crop x=640, no Ken Burns",
+  "frame0_in_s": 1.5,
+  "first_word_s": 0.0,
+  "surprise_s": {
+    "band": 0.266,
+    "proved": 0.783
+  },
+  "first_cut_s": 2.674,
+  "last_word_to_loop_s": 1.0,
+  "meta_promise": false,
+  "runtime_s": 26.267,
+  "longest_hold_s": 3.65,
+  "payoff_phrase": "comes home through the veins",
+  "payoff_s": 19.5,
+  "payoff_frac": 0.743,
+  "loop_sentence": "That blood is heading home now. One band proved your blood goes round.",
+  "lufs_wav": -14.6,
+  "true_peak_wav_dbfs": -0.9,
+  "pre_master_lufs": -17.3,
+  "frame0_black": 0.026,
+  "sha256": "98a283d83db149e71393aee37a394f7075d51a73bb88ecb5f01e605d410d9523",
+  "missing_plate_note": "05_loosen_warm_t2.mp4 and 08_finger_push_t1.mp4 are not on the NAS",
+  "brief": {
+    "frame0": "moving 03_band_tightens_t3, no zoom",
+    "subject_named_s": 0.266,
+    "first_word_s": 0.0,
+    "first_cut_s": 2.674,
+    "loop_s": 1.0,
+    "payoff_frac": 0.743
+  }
+}
