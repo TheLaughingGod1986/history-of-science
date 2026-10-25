@@ -1,0 +1,144 @@
+{
+  "job": "J0946",
+  "spend": "\u00a30, 0 Flow credits. No new generation. Plates are painted stills from master v04.",
+  "A": {
+    "file": "hos_007_thumb_A_milkmaids_secret_v01.jpg",
+    "words": "THE / MILKMAID'S / SECRET",
+    "sha256": "52cf8ea687d13eaade5a80ba610de6aa4b56a5c851f148dff5ed5102e07dc7c6",
+    "meta": {
+      "letteringBox": [
+        64,
+        48,
+        436,
+        261
+      ],
+      "ornaments": {
+        "topScrollBox": [
+          80,
+          24,
+          420,
+          44
+        ],
+        "bottomScrollBox": [
+          111,
+          264,
+          389,
+          282
+        ]
+      },
+      "heroBox": [
+        560,
+        40,
+        1260,
+        700
+      ],
+      "explorerBox": [
+        40,
+        520,
+        280,
+        710
+      ],
+      "explorerHeightPx": 190,
+      "explorerHeightFrac": 0.264,
+      "placedWords": [
+        {
+          "word": "THE",
+          "kind": "cream",
+          "size": 72,
+          "box": [
+            172,
+            48,
+            329,
+            112
+          ]
+        },
+        {
+          "word": "MILKMAID'S",
+          "kind": "cream",
+          "size": 58,
+          "box": [
+            88,
+            114,
+            412,
+            172
+          ]
+        },
+        {
+          "word": "SECRET",
+          "kind": "gold",
+          "size": 96,
+          "box": [
+            64,
+            174,
+            436,
+            261
+          ]
+        }
+      ],
+      "clearOfHero": true,
+      "clearOfExplorer": true,
+      "clearOfBadge": true
+    }
+  },
+  "B": {
+    "file": "hos_007_thumb_B_immune_v01.jpg",
+    "words": "IMMUNE",
+    "sha256": "c102e7bd426970a68a799e73b784a2b163f93249985c4f9f02d613870558c71a",
+    "meta": {
+      "letteringBox": [
+        13,
+        70,
+        487,
+        165
+      ],
+      "ornaments": {
+        "topScrollBox": [
+          80,
+          46,
+          420,
+          66
+        ],
+        "bottomScrollBox": [
+          111,
+          168,
+          389,
+          186
+        ]
+      },
+      "heroBox": [
+        540,
+        80,
+        1260,
+        700
+      ],
+      "explorerBox": [
+        40,
+        540,
+        280,
+        710
+      ],
+      "explorerHeightPx": 170,
+      "explorerHeightFrac": 0.236,
+      "placedWords": [
+        {
+          "word": "IMMUNE",
+          "kind": "gold",
+          "size": 108,
+          "box": [
+            13,
+            70,
+            487,
+            165
+          ]
+        }
+      ],
+      "clearOfHero": true,
+      "clearOfExplorer": true,
+      "clearOfBadge": true
+    }
+  },
+  "plates": {
+    "A": "/Volumes/data/mac-mini-archive/hos-007-vaccine/master_v04_J0925/stills/01_milking_dawn_v03b.png",
+    "B": "/Volumes/data/mac-mini-archive/hos-007-vaccine/master_v04_J0925/stills/04_lancet_touch_v04.png"
+  }
+}

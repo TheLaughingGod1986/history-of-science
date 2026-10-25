@@ -309,6 +309,29 @@
       "pinnedComment": "not posted. update-pinned-comment.ts --create returned 403 forbidden. Studio comments: this account doesn't have permission to create comments.",
       "cards": "not added",
       "note": "J0958. End screen and title/thumbnail test saved. Privacy still private, publishAt still 2026-11-05T18:00:00Z. Pinned comment refused by the API and by Studio. Cards not added. Buffer stays deferred. Nothing replaced or deleted."
+    },
+    "ETynHpIYLeY": {
+      "kind": "long",
+      "film": "007",
+      "title": "Why Vaccines Are Named After a Cow",
+      "file": "/Volumes/data/mac-mini-archive/hos-007-vaccine/master_v04_J0925/hos_007_master_v04.mp4",
+      "sha256": "c7f62adbb241bf3fbfaa3a17929f05768eedcf89044cb2cc5ebd2971c163e810",
+      "bytes": 537505571,
+      "packageDir": "02_Video-Projects/007_The-First-Vaccine/11_Upload-Package",
+      "thumb": "02_Video-Projects/007_The-First-Vaccine/08_Thumbnail/Selected/hos_007_thumb_A_milkmaids_secret_v01.jpg",
+      "thumbSha256": "52cf8ea687d13eaade5a80ba610de6aa4b56a5c851f148dff5ed5102e07dc7c6",
+      "thumbB": "02_Video-Projects/007_The-First-Vaccine/08_Thumbnail/Selected/hos_007_thumb_B_immune_v01.jpg",
+      "thumbBSha256": "c102e7bd426970a68a799e73b784a2b163f93249985c4f9f02d613870558c71a",
+      "publishAt": "2026-11-12T18:00:00Z",
+      "privacyStatus": "private",
+      "registeredAt": "2026-10-25T20:52:00Z",
+      "captions": "en-GB standard, serving, AUieDabxiVBFwlEZ2iDzZOdUbkxMZwhliMRGEEhiTiLQ7Z8Mo2TNvVVgO268hvBnaPRBNUOJxrcaKPVjLYk",
+      "buffer": "deferred: long films are never cross-posted through Buffer",
+      "endScreen": "not set. Studio finish: Subscribe + 001 Germs _C92tIJCk8A",
+      "testAndCompare": "not set. A THE / MILKMAID'S / SECRET is the cover. B IMMUNE waits for the Studio finish job.",
+      "pinnedComment": "not posted",
+      "cards": "not added",
+      "note": "J0946. Master v04 from the NAS (iCloud UAT copy is dataless). Privacy private, publishAt 2026-11-12T18:00:00Z, duration PT8M52S, thumbnail set, en-GB captions serving. Nothing replaced or deleted."
     }
   }
 }

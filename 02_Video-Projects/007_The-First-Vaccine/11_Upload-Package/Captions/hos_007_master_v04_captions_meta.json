@@ -1,0 +1,19 @@
+{
+  "srt": "hos_007_master_v04.en.srt",
+  "sha256": "48b543f3e86ab298bf89a64f0ea7e31e7a003e4617637d7862e5e5c9ffba0ede",
+  "language": "en-GB",
+  "master": "/Volumes/data/mac-mini-archive/hos-007-vaccine/master_v04_J0925/hos_007_master_v04.mp4",
+  "master_sha256": "c7f62adbb241bf3fbfaa3a17929f05768eedcf89044cb2cc5ebd2971c163e810",
+  "audio_pcm_md5": "d76ce95dd28e8d8cf1d6c9235d1cad51",
+  "audio_note": "v04 PCM md5 matches master v03, so VO_RETIME_v01 film times carry",
+  "source_text": "01_Script via 07_Edit-Project/VO_RETIME_v01.json",
+  "cues": 132,
+  "first": "00:00:00,000",
+  "last_end": "00:08:32,030",
+  "chapter_cards_s": [
+    100.83,
+    232.37,
+    313.03,
+    407.69
+  ]
+}

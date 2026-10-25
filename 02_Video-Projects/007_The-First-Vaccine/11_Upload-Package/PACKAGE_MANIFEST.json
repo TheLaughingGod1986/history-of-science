@@ -1,15 +1,19 @@
 {
   "format": "longform",
-  "video": null,
-  "youtubeId": null,
+  "video": "/Volumes/data/mac-mini-archive/hos-007-vaccine/master_v04_J0925/hos_007_master_v04.mp4",
+  "youtubeId": "ETynHpIYLeY",
   "title": "Why Vaccines Are Named After a Cow",
   "titleVariant": "A",
   "descriptionFile": "Descriptions/vaccine_long_description_v01.txt",
   "tagsFile": "Tags/vaccine_long_tags_v01.txt",
-  "chaptersFile": null,
+  "chaptersFile": "Chapters/vaccine_long_chapters_v04.txt",
+  "captionsFile": "Captions/hos_007_master_v04.en.srt",
   "pinnedCommentFile": null,
-  "thumbnail": null,
-  "thumbnailAbc": [],
+  "thumbnail": "../08_Thumbnail/Selected/hos_007_thumb_A_milkmaids_secret_v01.jpg",
+  "thumbnailAbc": [
+    "../08_Thumbnail/Selected/hos_007_thumb_A_milkmaids_secret_v01.jpg",
+    "../08_Thumbnail/Selected/hos_007_thumb_B_immune_v01.jpg"
+  ],
   "titleAbc": [
     "Why Vaccines Are Named After a Cow",
     "How Was the First Vaccine Made?"
@@ -25,7 +29,7 @@
   "affiliate": null,
   "channel": "@HistoryOfScienceYT",
   "premiere": false,
-  "note": "Planning scaffold (3 Oct 2026); updated 24 Oct 2026 (J0899/J0909 Chief PASS). Arm 2-way Thumbnail Test & Compare on launch ('THE MILKMAID\\'S / SECRET' vs 'IMMUNE', built at 0 Flow credits on Nano Banana 2 + cover-builder lettering before upload) alongside Title T&C ('Why Vaccines Are Named After a Cow' vs 'How Was the First Vaccine Made?'). Neighbour terms ('deadly smallpox virus', 'Edward Jenner cowpox vaccine', 'why can\\'t every shot be a pill') woven into description lines 1-2 and tags. Run the second 12-15 s Short cut test (LEARNINGS.md #4) on 007 while keeping payoffs at >=70% runtime (matching oKqmnJNGiHg's flat 82.1% plateau). End screen links to 001 Germs (_C92tIJCk8A) + Subscribe. Proposed air Thu 12 Nov 2026 18:00 UK = 18:00 UTC (GMT), normal publish. Nothing changed on YouTube now.",
+  "note": "Master v04 (sha256 c7f62adbb241bf3fbfaa3a17929f05768eedcf89044cb2cc5ebd2971c163e810, 531.083 s, 1920x1080, PCM md5 d76ce95dd28e8d8cf1d6c9235d1cad51 matches v03). NAS copy used: iCloud HOS UAT file is dataless. Chapters retimed to the v04 chapter cards (1:41, 3:52, 5:13, 6:48) and en-GB captions are Captions/hos_007_master_v04.en.srt. Chief Final OK 25 Oct 2026 14:30 London after Ben's Kanban OK at 14:25 (HOS #180 6398845411, J0946). Arm 2-way Thumbnail Test & Compare on launch (A THE / MILKMAID'S / SECRET vs B IMMUNE; lettered at £0 on existing v04 painted stills, no new generation) alongside Title T&C. End screen links to 001 Germs (_C92tIJCk8A) + Subscribe. Air Thu 12 Nov 2026 18:00 London = 18:00 UTC, normal publish, Private until then. The Data API cannot arm Test & Compare; Studio finish sets it.",
   "neighbours": {
     "phrases": [
       "vaccine",

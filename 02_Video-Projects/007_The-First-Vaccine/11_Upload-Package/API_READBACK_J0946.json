@@ -1,0 +1,69 @@
+{
+  "videoId": "ETynHpIYLeY",
+  "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+  "title": "Why Vaccines Are Named After a Cow",
+  "privacy": "private",
+  "publishAt": "2026-11-12T18:00:00Z",
+  "madeForKids": false,
+  "containsSyntheticMedia": null,
+  "language": "en-GB",
+  "audioLanguage": "en-GB",
+  "categoryId": "27",
+  "tags": [
+    "cowpox",
+    "deadly smallpox virus",
+    "edward jenner cowpox vaccine",
+    "edward jenner smallpox vaccine",
+    "first vaccine",
+    "history of science",
+    "history of vaccines",
+    "how was the first vaccine made"
+  ],
+  "duration": "PT8M52S",
+  "hasCustomThumbnail": true,
+  "thumbnails": {
+    "default": {
+      "url": "https://i9.ytimg.com/vi/ETynHpIYLeY/default.jpg?sqp=CPjW-dYG&rs=AOn4CLCbR4IuVos4FgE1KqmjyCHriU_iLQ",
+      "width": 120,
+      "height": 90
+    },
+    "medium": {
+      "url": "https://i9.ytimg.com/vi/ETynHpIYLeY/mqdefault.jpg?sqp=CPjW-dYG&rs=AOn4CLBOxvo0vO5DcqcBYUkboOYHKzhrKg",
+      "width": 320,
+      "height": 180
+    },
+    "high": {
+      "url": "https://i9.ytimg.com/vi/ETynHpIYLeY/hqdefault.jpg?sqp=CPjW-dYG&rs=AOn4CLDRFnhg1J7nQJdht_QslgEb_fQuWQ",
+      "width": 480,
+      "height": 360
+    },
+    "standard": {
+      "url": "https://i9.ytimg.com/vi/ETynHpIYLeY/sddefault.jpg?sqp=CPjW-dYG&rs=AOn4CLBeHual7oB1r_q1KoVQOYrAWNqayQ",
+      "width": 640,
+      "height": 480
+    },
+    "maxres": {
+      "url": "https://i9.ytimg.com/vi/ETynHpIYLeY/maxresdefault.jpg?sqp=CPjW-dYG&rs=AOn4CLDNwt2Gp0-U7eIG7CXQ_-HU1l6Szg",
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "description": "Every vaccine is named after a cow. How did the Edward Jenner cowpox vaccine conquer the deadly smallpox virus?\nIn 1796 a country doctor took cowpox from a milkmaid's hand and put it into a boy's arm, then tested whether smallpox could still touch him \u2014 the breakthrough behind every jab (and why can't every shot be a pill).\n\nThis film is how we found out: the dairy rumour that milkmaids never caught smallpox, Benjamin Jesty's family in 1774, Edward Jenner's test on James Phipps (14 May and 1 July 1796), the book that spread it (1798), and the word vaccine, from the Latin vacca, cow.\n\nChapters\n0:00 The speckled monster\n1:41 The milkmaids' secret\n3:52 A pail, a lancet and a boy\n5:13 The test\n6:48 The word that saved millions\n\nSources\nEdward Jenner, An Inquiry into the Causes and Effects of the Variolae Vaccinae (London, 1798)\nOxford Dictionary of National Biography, \"Jenner, Edward\"\nWorld Health Organization, declaration of smallpox eradication (1980)",
+  "captionUpload": {
+    "ok": true,
+    "status": 200,
+    "id": "AUieDabxiVBFwlEZ2iDzZOdUbkxMZwhliMRGEEhiTiLQ7Z8Mo2TNvVVgO268hvBnaPRBNUOJxrcaKPVjLYk",
+    "language": "en-GB",
+    "trackStatus": "serving",
+    "error": null
+  },
+  "captions": [
+    {
+      "id": "AUieDabxiVBFwlEZ2iDzZOdUbkxMZwhliMRGEEhiTiLQ7Z8Mo2TNvVVgO268hvBnaPRBNUOJxrcaKPVjLYk",
+      "language": "en-GB",
+      "status": "serving",
+      "isDraft": false
+    }
+  ],
+  "uploadStatus": "uploaded"
+}

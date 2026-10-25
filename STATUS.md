@@ -10,8 +10,8 @@
 |---|---|---:|---|---|---|---|---|
 | **004** What's Really Inside an Atom? | Thu 15 Oct (-10 d) | 95% | Thumbnails (in progress) | **Cursor** · ⏸ waiting: J0106: C v07b file (don't touch the armed test), then the Chief's OK | not estimated | Tue 29 Sep | 🟠 behind |
 | **005** The Tied Arm That Proved Your Blood Circulates | Thu 29 Oct (4 d) | 100% | all stages done | — | — | Fri 2 Oct | 🟢 on track |
-| **006** The Willow Tree That Was Made of Air | Thu 5 Nov (11 d) | 100% | Thumbnails (in progress) | **Chief** · ⏸ waiting: Studio finish: Test & Compare A WOOD / FROM / SKY? vs B DO PLANTS / EAT / SOIL? on VbPubYd6Fbs | 2/2 thumb steps · Test & Compare in Studio finish left | Sun 1 Nov (in 7 d) | 🟢 on track |
-| **007** Why Vaccines Are Named After a Cow | Thu 12 Nov (18 d) | 85% | Thumbnails (to do) | **Grok** · queued | starts later; due in 11 d | Sun 8 Nov (in 14 d) | 🟢 on track |
+| **006** The Willow Tree That Was Made of Air | Thu 5 Nov (11 d) | 100% | all stages done | — | — | Sun 1 Nov (in 7 d) | 🟢 on track |
+| **007** Why Vaccines Are Named After a Cow | Thu 12 Nov (18 d) | 95% | Thumbnails (in progress) | **Chief** · in progress | not estimated | Sun 8 Nov (in 14 d) | 🟢 on track |
 | **008** Why Did Franklin Fly a Kite in a Storm? | Thu 19 Nov (25 d) | 43% | Picture (blocked) | **chief** · ⛔ blocked: Chief review of J0329 graphics; mint only after 006 and 007 with live Flow reading leaving at least 3,000 credits after 008 expected spend | 11/112 board rows rendered (11 graphics awaiting review) | Sun 15 Nov (in 21 d) | ⛔ blocked |
 | **009** Why Doesn't the Moon Fall to Earth? | Thu 26 Nov (32 d) | 35% | Shorts voiceover (to do) | **Cursor** · queued (after 010 long VO) | starts later; due 17 d late | Sun 22 Nov (in 28 d) | ⛔ blocked |
 | **010** What Killed the Dinosaurs Was Hidden in a Line of Clay | Thu 3 Dec (39 d) | 35% | Shorts voiceover (to do) | **Cursor** · queued (after 010 long VO) | starts later; due 17 d late | Sun 29 Nov (in 35 d) | 🟠 behind |
@@ -23,11 +23,11 @@
 
 **Grok**
 - ▶️ Underway: nothing right now
-- ⏭ Next up: 007 Thumbnails, due Thu 5 Nov; 008 Edit + master, due Thu 12 Nov; 009 Edit + master, due Thu 19 Nov
+- ⏭ Next up: 008 Edit + master, due Thu 12 Nov; 009 Edit + master, due Thu 19 Nov; 010 Edit + master, due Thu 26 Nov
 
 **Ben**
 - ▶️ Underway: nothing right now
-- ⏭ Next up: 007 Ben's final OK, due Sun 8 Nov; 008 Ben's final OK, due Sun 15 Nov; 009 Ben's final OK, due Sun 22 Nov
+- ⏭ Next up: 008 Ben's final OK, due Sun 15 Nov; 009 Ben's final OK, due Sun 22 Nov; 010 Ben's final OK, due Sun 29 Nov
 
 **Cursor**
 - ▶️ Underway: nothing right now
@@ -35,8 +35,7 @@
 - ⏭ Next up: 009 Shorts voiceover, due Thu 8 Oct; 010 Shorts voiceover, due Thu 8 Oct
 
 **Chief**
-- ▶️ Underway: nothing right now
-- ⏸ Waiting: 006 Thumbnails: Studio finish: Test & Compare A WOOD / FROM / SKY? vs B DO PLANTS / EAT / SOIL? on VbPubYd6Fbs
+- ▶️ Underway: 007 Thumbnails
 
 **chief**
 - ▶️ Underway: nothing right now
@@ -45,7 +44,7 @@
 ## Being worked on right now
 
 - **004** · 🔄 **Thumbnails** — in progress (0%, with Cursor since Fri 9 Oct, ⏸ waiting: J0106: C v07b file (don't touch the armed test), then the Chief's OK, due Tue 13 Oct (12 d late)): A + B live in the armed test; C v07 armed but not OK'd. v07b re-letter (no spend) is J0106; Chief's OK by Wed 14 Oct 18:00, else pair 2 comes out
-- **006** · 🔄 **Thumbnails** — in progress (100%, 2/2 thumb steps · Test & Compare in Studio finish left, with Chief since Sun 25 Oct 20:22, ⏸ waiting: Studio finish: Test & Compare A WOOD / FROM / SKY? vs B DO PLANTS / EAT / SOIL? on VbPubYd6Fbs, due Thu 29 Oct (in 4 d)): A is the cover on VbPubYd6Fbs (sha 904d2f58, thumbnail set). B (sha ee5f2605) waits for Test & Compare in Studio. The Data API cannot arm the test.
+- **007** · 🔄 **Thumbnails** — in progress (0%, with Chief, in progress, due Thu 5 Nov (in 11 d)): A THE / MILKMAID'S / SECRET is the cover on ETynHpIYLeY (sha 52cf8ea6). B IMMUNE (sha c102e7bd) waits for Test & Compare in Studio. Lettered at £0 on v04 painted stills. The Data API cannot arm the test.
 - **008** · ⛔ **Picture** — blocked (10%, 11/112 board rows rendered (11 graphics awaiting review), with chief since Fri 16 Oct, ⛔ blocked: Chief review of J0329 graphics; mint only after 006 and 007 with live Flow reading leaving at least 3,000 credits after 008 expected spend, due Sun 8 Nov (in 14 d)): J0329: eleven no-spend v01 code graphics rendered from KEEP v03 boards, plus five alpha overlays and paper review previews. Awaiting Chief visual review; five moving-plate composites still pending. PICTURE_PLAN_v03 mint gate unchanged (5,605 cr expected). See CODE_GRAPHICS_v01_REVIEW.md.
 - **009** · ⛔ **Picture** — blocked (0%, with Cursor since Thu 15 Oct, ⛔ blocked: mint after 006 (0 Flow), 007 and 008; tranche 1 only when a live Flow read stays at least 3,000 after 7,354; tranche 2 (5,180) after the ~12 Nov AI Ultra renewal, due Sun 15 Nov (in 21 d)): J0336 v04 plate boards KEEP (Chief PASS 15 Oct): 90 rows (46 Quality / 31 Fast / 12 £0 code graphics / 1 reuse); Flow expected 12,534 (tranche 1 7,354 / tranche 2 5,180). No mint. See PRICE_REVIEW_v04.md.
 
@@ -132,17 +131,17 @@ Private `VbPubYd6Fbs`, publishAt Thu 5 Nov 2026 18:00 London. End screen saved: 
 - ✅ **Shorts voiceover** — done: A v02 · B v03b · C v01 locked
 - ✅ **Picture** — done: All 5 parts KEEP + roughs assembled on main (Part 01 12/12 KEEP + rough v01 PASS; Part 02 UAT applied + rough v02; Part 03 rough v02 with P3:06 KEEP; Part 04 rough v01 KEEP; Part 05 rough v01 KEEP PASS; Chief 15 Oct sweep #180).
 - ✅ **Edit + master** — done: master v06 uploaded Private as VbPubYd6Fbs (J0945). sha256 36c54e68, picture_qa and polish_gate 0/96 fail, music_gate and sfx level PASS
-- 🔄 **Thumbnails** — in progress (100%, 2/2 thumb steps · Test & Compare in Studio finish left, with Chief since Sun 25 Oct 20:22, ⏸ waiting: Studio finish: Test & Compare A WOOD / FROM / SKY? vs B DO PLANTS / EAT / SOIL? on VbPubYd6Fbs, due Thu 29 Oct (in 4 d)): A is the cover on VbPubYd6Fbs (sha 904d2f58, thumbnail set). B (sha ee5f2605) waits for Test & Compare in Studio. The Data API cannot arm the test.
+- ✅ **Thumbnails** — done: J0958. Test set on VbPubYd6Fbs from the Title and thumbnail dialog (A WOOD / FROM / SKY? + the live title, B DO PLANTS / EAT / SOIL? + Where Does a Tree's Weight Come From?). Studio lists both titles, status Ineligible while scheduled.
 - ✅ **Ben's final OK** — done: Ben OK'd master v06 on the Kanban 25 Oct 2026 14:10 London (HOS #180 6398691247). Chief Final OK 14:15.
 - ✅ **Scheduled** — done: Private VbPubYd6Fbs, publishAt Thu 5 Nov 2026 18:00 London. End screen, pinned comment and Test & Compare are the Studio finish job.
 
 ### 007 · Why Vaccines Are Named After a Cow
 
-`█████████████████░░░` **85%**
+`███████████████████░` **95%**
 
 Airs **Thu 12 Nov** · ready for Ben's OK by **Sun 8 Nov** · 🟢 on track
 
-Master v02 (`hos_007_master_v02.mp4`, 505.1 s, sha256 `e55f680d`, -14.0 LUFS / -1.4 dBTP) passed the Chief (J0856, 23 Oct; HOS PR #355 `30f9033e`) and is copied to iCloud `HOS UAT/007_The-First-Vaccine/hos_007_master_v02.mp4` for Ben's watch (J0867). Ben watch due 8 Nov.
+Private `ETynHpIYLeY`, publishAt Thu 12 Nov 2026 18:00 London (J0946). Master v04 sha256 `c7f62adb`, 531.083 s, PCM matches v03. Thumbnail A set. en-GB captions serving. Studio finish still: end screen to 001 Germs `_C92tIJCk8A`, pinned comment, thumbnail Test & Compare A/B. Buffer deferred.
 
 - ✅ **Topic** — done
 - ✅ **Script** — done: v01, 92.3
@@ -152,10 +151,10 @@ Master v02 (`hos_007_master_v02.mp4`, 505.1 s, sha256 `e55f680d`, -14.0 LUFS / -
 - ✅ **Shorts scripts** — done: v02 (test B): two search-titled Shorts, 9 Oct
 - ✅ **Shorts voiceover** — done: B v02 25.5 s + C v02 24.8 s locked 12 Oct; Chief KEEP both (desk 6096257381, VO_LOCK_CHIEF_PASS_20261012.json)
 - ✅ **Picture** — done: BOARD_V02 all 73/73 Flow rows minted on Flow and KEEP (Chief J0352, 21 Oct, HOS PR #351 merged; 2,890 cr vs 7,550 cap; live Flow 20,900 >= 3,000 buffer). Face lock P2:08_jenner_window KEEP applied to all later readable Jenner faces. 3 £0 code graphics on main (`7808f751`); 2 archive + 18 reuse (£0).
-- ✅ **Edit + master** — done: master v02 Chief PASS 23 Oct (J0856, HOS PR #355 `30f9033e`): £0 60.0 BPM score + 43 house SFX, 505.1 s, -14.0 LUFS / -1.4 dBTP, sha256 `e55f680d`; copied to `/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/007_The-First-Vaccine/hos_007_master_v02.mp4` (sha256 `e55f680d` verified, J0867) for Ben's watch
-- ⬜ **Thumbnails** — to do (with Grok, due Thu 5 Nov (in 11 d))
-- ⬜ **Ben's final OK** — to do (with Ben, due Sun 8 Nov (in 14 d))
-- ⬜ **Scheduled** — to do (with Grok, due Mon 9 Nov (in 15 d))
+- ✅ **Edit + master** — done: master v04 uploaded Private as ETynHpIYLeY (J0946). sha256 c7f62adb, 531.083 s, PCM matches v03. Ben OK 25 Oct 14:25, Chief Final OK 14:30.
+- 🔄 **Thumbnails** — in progress (0%, with Chief, in progress, due Thu 5 Nov (in 11 d)): A THE / MILKMAID'S / SECRET is the cover on ETynHpIYLeY (sha 52cf8ea6). B IMMUNE (sha c102e7bd) waits for Test & Compare in Studio. Lettered at £0 on v04 painted stills. The Data API cannot arm the test.
+- ✅ **Ben's final OK** — done: Ben OK'd master v04 on the Kanban 25 Oct 2026 14:25 London (HOS #180 6398845411). Chief Final OK 14:30.
+- ✅ **Scheduled** — done: Private ETynHpIYLeY, publishAt Thu 12 Nov 2026 18:00 London. End screen, pinned comment and Test & Compare are the Studio finish job.
 
 ### 008 · Why Did Franklin Fly a Kite in a Storm?
 

@@ -309,7 +309,7 @@
       "title": "Why Vaccines Are Named After a Cow",
       "air": "2026-11-12",
       "ready_by": "2026-11-08",
-      "summary": "Master v02 (`hos_007_master_v02.mp4`, 505.1 s, sha256 `e55f680d`, -14.0 LUFS / -1.4 dBTP) passed the Chief (J0856, 23 Oct; HOS PR #355 `30f9033e`) and is copied to iCloud `HOS UAT/007_The-First-Vaccine/hos_007_master_v02.mp4` for Ben's watch (J0867). Ben watch due 8 Nov.",
+      "summary": "Private `ETynHpIYLeY`, publishAt Thu 12 Nov 2026 18:00 London (J0946). Master v04 sha256 `c7f62adb`, 531.083 s, PCM matches v03. Thumbnail A set. en-GB captions serving. Studio finish still: end screen to 001 Germs `_C92tIJCk8A`, pinned comment, thumbnail Test & Compare A/B. Buffer deferred.",
       "stages": {
         "topic": {
           "status": "done"
@@ -351,7 +351,7 @@
         "edit": {
           "status": "done",
           "due": "2026-11-05",
-          "note": "master v02 Chief PASS 23 Oct (J0856, HOS PR #355 `30f9033e`): \u00a30 60.0 BPM score + 43 house SFX, 505.1 s, -14.0 LUFS / -1.4 dBTP, sha256 `e55f680d`; copied to `/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/007_The-First-Vaccine/hos_007_master_v02.mp4` (sha256 `e55f680d` verified, J0867) for Ben's watch",
+          "note": "master v04 uploaded Private as ETynHpIYLeY (J0946). sha256 c7f62adb, 531.083 s, PCM matches v03. Ben OK 25 Oct 14:25, Chief Final OK 14:30.",
           "jobs": [
             "J0856",
             "J0867"
@@ -367,16 +367,21 @@
           "underway": false
         },
         "thumbnails": {
-          "status": "todo",
-          "due": "2026-11-05"
+          "status": "doing",
+          "due": "2026-11-05",
+          "owner": "Chief",
+          "note": "A THE / MILKMAID'S / SECRET is the cover on ETynHpIYLeY (sha 52cf8ea6). B IMMUNE (sha c102e7bd) waits for Test & Compare in Studio. Lettered at £0 on v04 painted stills. The Data API cannot arm the test.",
+          "jobs": ["J0946"]
         },
         "ben_ok": {
-          "status": "todo",
-          "due": "2026-11-08"
+          "status": "done",
+          "due": "2026-11-08",
+          "note": "Ben OK'd master v04 on the Kanban 25 Oct 2026 14:25 London (HOS #180 6398845411). Chief Final OK 14:30."
         },
         "scheduled": {
-          "status": "todo",
-          "due": "2026-11-09"
+          "status": "done",
+          "due": "2026-11-09",
+          "note": "Private ETynHpIYLeY, publishAt Thu 12 Nov 2026 18:00 London. End screen, pinned comment and Test & Compare are the Studio finish job."
         }
       }
     },
