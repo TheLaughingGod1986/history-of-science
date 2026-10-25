@@ -163,6 +163,41 @@
         "question": "Why are vaccines named after a cow?",
         "alt": "A dairy cow in a golden Dorset meadow at sunset; hook caption NOT THE FIRST."
       }
+    },
+    "Rl2uZ-KOTl8": {
+      "kind": "short",
+      "standalone": false,
+      "standaloneTest": false,
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s01_the_sum_v04.mp4",
+      "sha256": "e98ce5602b63e476ad630ada7821ed596e33b9f0f747e260c914448dbd3c7918",
+      "packageDir": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/11_Upload-Package/s01_the_sum_v04",
+      "thumb": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/covers_v02/hos_005_s01_the_sum_cover_v02.jpg",
+      "long": "wwcjcFfC-5M",
+      "promotes": "005",
+      "publishAt": "2026-10-30T11:30:00Z",
+      "privacyStatus": "private",
+      "replaces": "1lszTrYRp-8",
+      "registeredAt": "2026-10-25T16:05:00Z",
+      "buffer": "held until the long wwcjcFfC-5M is public, then the full film",
+      "captions": "en-GB standard, from the v04 spoken line",
+      "social": {
+        "hook": "In half an hour the heart moves more blood than the body holds.",
+        "question": "So where does the extra blood come from?",
+        "alt": "Cover text MORE than you HAVE, on Harvey's blood sum."
+      }
+    },
+    "1lszTrYRp-8": {
+      "kind": "short",
+      "standalone": false,
+      "standaloneTest": false,
+      "file": "v02",
+      "promotes": "005",
+      "long": "wwcjcFfC-5M",
+      "publishAt": null,
+      "privacyStatus": "private",
+      "supersededBy": "Rl2uZ-KOTl8",
+      "unscheduledAt": "2026-10-25T16:04:00Z",
+      "note": "J0941. Private and unscheduled. Title unchanged. Nothing deleted."
     }
   }
 }
