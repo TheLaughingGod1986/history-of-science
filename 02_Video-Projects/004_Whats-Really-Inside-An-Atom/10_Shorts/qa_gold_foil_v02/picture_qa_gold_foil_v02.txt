@@ -1,0 +1,2 @@
+WARN   0:16 row s06_Rutherford 11_shell_tissue_v02.mp4: low detail: luma std 15.29 < 18.0; low detail: edge density 0.007 < film p5 0.0139
+picture QA PASS: 0 of 10 cuts fail, 1 to look at -> 02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/qa_gold_foil_v02/picture_qa_gold_foil_v02/PICTURE_QA.md, 02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/qa_gold_foil_v02/picture_qa_gold_foil_v02/picture_qa_review.jpg

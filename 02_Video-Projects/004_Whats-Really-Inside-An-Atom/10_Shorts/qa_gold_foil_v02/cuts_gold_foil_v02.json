@@ -1,0 +1,112 @@
+[
+  {
+    "row": "s01_open",
+    "timeline_in": 0.0,
+    "timeline_out": 2.75,
+    "source": "12_shell_comes_back_v02.mp4",
+    "upscale": 1.78,
+    "video": true,
+    "framing": {
+      "offset": 1.5
+    }
+  },
+  {
+    "row": "s02_fired",
+    "timeline_in": 2.75,
+    "timeline_out": 5.54,
+    "source": "03_fire_at_gold_v01.mp4",
+    "upscale": 1.78,
+    "video": true,
+    "framing": {
+      "offset": 0.5
+    }
+  },
+  {
+    "row": "s03_fired",
+    "timeline_in": 5.54,
+    "timeline_out": 8.921,
+    "source": "04_thin_gold_foil_v01.mp4",
+    "upscale": 1.78,
+    "video": true,
+    "framing": {
+      "offset": 0.4
+    }
+  },
+  {
+    "row": "s04_Almost",
+    "timeline_in": 8.921,
+    "timeline_out": 10.95,
+    "source": "09_almost_all_pass_v02.mp4",
+    "upscale": 1.78,
+    "video": true,
+    "framing": {
+      "offset": 3.0
+    }
+  },
+  {
+    "row": "s05_About",
+    "timeline_in": 10.95,
+    "timeline_out": 13.654,
+    "source": "07_green_flash_count_v02.mp4",
+    "upscale": 1.78,
+    "video": true,
+    "framing": {
+      "offset": 0.1
+    }
+  },
+  {
+    "row": "s06_Rutherford",
+    "timeline_in": 13.654,
+    "timeline_out": 17.407,
+    "source": "11_shell_tissue_v02.mp4",
+    "upscale": 1.78,
+    "video": true,
+    "framing": {
+      "offset": 1.2
+    }
+  },
+  {
+    "row": "s07_and",
+    "timeline_in": 17.407,
+    "timeline_out": 19.151,
+    "source": "10_one_bounces_v02.mp4",
+    "upscale": 1.78,
+    "video": true,
+    "framing": {
+      "offset": 0.4
+    }
+  },
+  {
+    "row": "s08_An",
+    "timeline_in": 19.151,
+    "timeline_out": 21.376,
+    "source": "13_mass_packed_v02.mp4",
+    "upscale": 1.78,
+    "video": true,
+    "framing": {
+      "offset": 2.55
+    }
+  },
+  {
+    "row": "s09_one",
+    "timeline_in": 21.376,
+    "timeline_out": 23.716,
+    "source": "14_nucleus_electrons_v01.mp4",
+    "upscale": 1.78,
+    "video": true,
+    "framing": {
+      "offset": 0.8
+    }
+  },
+  {
+    "row": "s10_loop",
+    "timeline_in": 23.716,
+    "timeline_out": 24.716,
+    "source": "loop_span_12_shell_comes_back_v02.mp4",
+    "upscale": 1.78,
+    "video": true,
+    "framing": {
+      "offset": 0.5
+    }
+  }
+]
