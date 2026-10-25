@@ -11,7 +11,7 @@
 | **004** What's Really Inside an Atom? | Thu 15 Oct (-10 d) | 95% | Thumbnails (in progress) | **Cursor** · ⏸ waiting: J0106: C v07b file (don't touch the armed test), then the Chief's OK | not estimated | Tue 29 Sep | 🟠 behind |
 | **005** The Tied Arm That Proved Your Blood Circulates | Thu 29 Oct (4 d) | 100% | all stages done | — | — | Fri 2 Oct | 🟢 on track |
 | **006** The Willow Tree That Was Made of Air | Thu 5 Nov (11 d) | 100% | all stages done | — | — | Sun 1 Nov (in 7 d) | 🟢 on track |
-| **007** Why Vaccines Are Named After a Cow | Thu 12 Nov (18 d) | 95% | Thumbnails (in progress) | **Chief** · in progress | not estimated | Sun 8 Nov (in 14 d) | 🟢 on track |
+| **007** Why Vaccines Are Named After a Cow | Thu 12 Nov (18 d) | 100% | all stages done | — | — | Sun 8 Nov (in 14 d) | 🟢 on track |
 | **008** Why Did Franklin Fly a Kite in a Storm? | Thu 19 Nov (25 d) | 43% | Picture (blocked) | **chief** · ⛔ blocked: Chief review of J0329 graphics; mint only after 006 and 007 with live Flow reading leaving at least 3,000 credits after 008 expected spend | 11/112 board rows rendered (11 graphics awaiting review) | Sun 15 Nov (in 21 d) | ⛔ blocked |
 | **009** Why Doesn't the Moon Fall to Earth? | Thu 26 Nov (32 d) | 35% | Shorts voiceover (to do) | **Cursor** · queued (after 010 long VO) | starts later; due 17 d late | Sun 22 Nov (in 28 d) | ⛔ blocked |
 | **010** What Killed the Dinosaurs Was Hidden in a Line of Clay | Thu 3 Dec (39 d) | 35% | Shorts voiceover (to do) | **Cursor** · queued (after 010 long VO) | starts later; due 17 d late | Sun 29 Nov (in 35 d) | 🟠 behind |
@@ -35,7 +35,7 @@
 - ⏭ Next up: 009 Shorts voiceover, due Thu 8 Oct; 010 Shorts voiceover, due Thu 8 Oct
 
 **Chief**
-- ▶️ Underway: 007 Thumbnails
+- ▶️ Underway: nothing right now
 
 **chief**
 - ▶️ Underway: nothing right now
@@ -44,7 +44,6 @@
 ## Being worked on right now
 
 - **004** · 🔄 **Thumbnails** — in progress (0%, with Cursor since Fri 9 Oct, ⏸ waiting: J0106: C v07b file (don't touch the armed test), then the Chief's OK, due Tue 13 Oct (12 d late)): A + B live in the armed test; C v07 armed but not OK'd. v07b re-letter (no spend) is J0106; Chief's OK by Wed 14 Oct 18:00, else pair 2 comes out
-- **007** · 🔄 **Thumbnails** — in progress (0%, with Chief, in progress, due Thu 5 Nov (in 11 d)): A THE / MILKMAID'S / SECRET is the cover on ETynHpIYLeY (sha 52cf8ea6). B IMMUNE (sha c102e7bd) waits for Test & Compare in Studio. Lettered at £0 on v04 painted stills. The Data API cannot arm the test.
 - **008** · ⛔ **Picture** — blocked (10%, 11/112 board rows rendered (11 graphics awaiting review), with chief since Fri 16 Oct, ⛔ blocked: Chief review of J0329 graphics; mint only after 006 and 007 with live Flow reading leaving at least 3,000 credits after 008 expected spend, due Sun 8 Nov (in 14 d)): J0329: eleven no-spend v01 code graphics rendered from KEEP v03 boards, plus five alpha overlays and paper review previews. Awaiting Chief visual review; five moving-plate composites still pending. PICTURE_PLAN_v03 mint gate unchanged (5,605 cr expected). See CODE_GRAPHICS_v01_REVIEW.md.
 - **009** · ⛔ **Picture** — blocked (0%, with Cursor since Thu 15 Oct, ⛔ blocked: mint after 006 (0 Flow), 007 and 008; tranche 1 only when a live Flow read stays at least 3,000 after 7,354; tranche 2 (5,180) after the ~12 Nov AI Ultra renewal, due Sun 15 Nov (in 21 d)): J0336 v04 plate boards KEEP (Chief PASS 15 Oct): 90 rows (46 Quality / 31 Fast / 12 £0 code graphics / 1 reuse); Flow expected 12,534 (tranche 1 7,354 / tranche 2 5,180). No mint. See PRICE_REVIEW_v04.md.
 
@@ -137,11 +136,11 @@ Private `VbPubYd6Fbs`, publishAt Thu 5 Nov 2026 18:00 London. End screen saved: 
 
 ### 007 · Why Vaccines Are Named After a Cow
 
-`███████████████████░` **95%**
+`████████████████████` **100%**
 
 Airs **Thu 12 Nov** · ready for Ben's OK by **Sun 8 Nov** · 🟢 on track
 
-Private `ETynHpIYLeY`, publishAt Thu 12 Nov 2026 18:00 London (J0946). Master v04 sha256 `c7f62adb`, 531.083 s, PCM matches v03. Thumbnail A set. en-GB captions serving. Studio finish still: end screen to 001 Germs `_C92tIJCk8A`, pinned comment, thumbnail Test & Compare A/B. Buffer deferred.
+Private `ETynHpIYLeY`, publishAt Thu 12 Nov 2026 18:00 London. End screen saved: Subscribe + 001 Germs `_C92tIJCk8A` (8:31:02-8:51:02). Title A/B set, Ineligible until public (Why Vaccines Are Named After a Cow vs How Was the First Vaccine Made?, covers THE / MILKMAID'S / SECRET and IMMUNE). Pinned comment not posted: the Studio account cannot create comments (J0960, reopen Thu 12 Nov 18:05). Cards not added. Buffer deferred.
 
 - ✅ **Topic** — done
 - ✅ **Script** — done: v01, 92.3
@@ -152,9 +151,9 @@ Private `ETynHpIYLeY`, publishAt Thu 12 Nov 2026 18:00 London (J0946). Master v0
 - ✅ **Shorts voiceover** — done: B v02 25.5 s + C v02 24.8 s locked 12 Oct; Chief KEEP both (desk 6096257381, VO_LOCK_CHIEF_PASS_20261012.json)
 - ✅ **Picture** — done: BOARD_V02 all 73/73 Flow rows minted on Flow and KEEP (Chief J0352, 21 Oct, HOS PR #351 merged; 2,890 cr vs 7,550 cap; live Flow 20,900 >= 3,000 buffer). Face lock P2:08_jenner_window KEEP applied to all later readable Jenner faces. 3 £0 code graphics on main (`7808f751`); 2 archive + 18 reuse (£0).
 - ✅ **Edit + master** — done: master v04 uploaded Private as ETynHpIYLeY (J0946). sha256 c7f62adb, 531.083 s, PCM matches v03. Ben OK 25 Oct 14:25, Chief Final OK 14:30.
-- 🔄 **Thumbnails** — in progress (0%, with Chief, in progress, due Thu 5 Nov (in 11 d)): A THE / MILKMAID'S / SECRET is the cover on ETynHpIYLeY (sha 52cf8ea6). B IMMUNE (sha c102e7bd) waits for Test & Compare in Studio. Lettered at £0 on v04 painted stills. The Data API cannot arm the test.
+- ✅ **Thumbnails** — done: J0959. Test set on ETynHpIYLeY from the Title and thumbnail dialog (A THE / MILKMAID'S / SECRET + Why Vaccines Are Named After a Cow, B IMMUNE + How Was the First Vaccine Made?). Studio lists both titles, status Ineligible while scheduled.
 - ✅ **Ben's final OK** — done: Ben OK'd master v04 on the Kanban 25 Oct 2026 14:25 London (HOS #180 6398845411). Chief Final OK 14:30.
-- ✅ **Scheduled** — done: Private ETynHpIYLeY, publishAt Thu 12 Nov 2026 18:00 London. End screen, pinned comment and Test & Compare are the Studio finish job.
+- ✅ **Scheduled** — done: Private ETynHpIYLeY, publishAt Thu 12 Nov 2026 18:00 London. End screen and Test & Compare saved (J0959). Pinned comment waits on J0960 until the video is public.
 
 ### 008 · Why Did Franklin Fly a Kite in a Storm?
 

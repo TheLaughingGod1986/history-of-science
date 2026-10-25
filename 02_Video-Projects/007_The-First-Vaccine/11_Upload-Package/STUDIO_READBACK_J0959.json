@@ -1,0 +1,52 @@
+{
+  "job": "J0959",
+  "at": "2026-10-25T21:20:00Z",
+  "channel": "History of Science",
+  "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+  "videoId": "ETynHpIYLeY",
+  "cdp": 9460,
+  "api": {
+    "privacy": "private",
+    "publishAt": "2026-11-12T18:00:00Z",
+    "title": "Why Vaccines Are Named After a Cow",
+    "madeForKids": false,
+    "channelId": "UCXp7HkBIl1LgaznXuZHJyRg"
+  },
+  "audience": "not Made for Kids",
+  "visibility": "Scheduled",
+  "premiere": false,
+  "endScreen": {
+    "subscribe": "History of Science",
+    "video": "How Did We Discover Germs?",
+    "videoId": "_C92tIJCk8A",
+    "durationShown": "6:05",
+    "window": "8:31:02-8:51:02",
+    "readBackAfterReload": true,
+    "watchPageWhilePrivate": "elements won't display until the video is public"
+  },
+  "cards": "not added",
+  "testAndCompare": {
+    "dialog": "Title and thumbnail",
+    "a": {
+      "title": "Why Vaccines Are Named After a Cow",
+      "thumb": "THE / MILKMAID'S / SECRET"
+    },
+    "b": {
+      "title": "How Was the First Vaccine Made?",
+      "thumb": "IMMUNE"
+    },
+    "afterSave": "A/B testing titles, both titles listed, status Ineligible",
+    "existingTestWarning": false
+  },
+  "pinnedComment": {
+    "api": "403 forbidden, insufficient permissions",
+    "studio": "This account doesn't have permission to create comments.",
+    "pinned": false,
+    "textNotPosted": "So how did a cow end up inside the most important medicine ever made?",
+    "followUp": "J0960 blocked until the video is public, reopen Thu 12 Nov 2026 18:05 London"
+  },
+  "buffer": "deferred",
+  "uploaded": false,
+  "deleted": false,
+  "gbp": 0
+}

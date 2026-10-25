@@ -309,7 +309,7 @@
       "title": "Why Vaccines Are Named After a Cow",
       "air": "2026-11-12",
       "ready_by": "2026-11-08",
-      "summary": "Private `ETynHpIYLeY`, publishAt Thu 12 Nov 2026 18:00 London (J0946). Master v04 sha256 `c7f62adb`, 531.083 s, PCM matches v03. Thumbnail A set. en-GB captions serving. Studio finish still: end screen to 001 Germs `_C92tIJCk8A`, pinned comment, thumbnail Test & Compare A/B. Buffer deferred.",
+      "summary": "Private `ETynHpIYLeY`, publishAt Thu 12 Nov 2026 18:00 London. End screen saved: Subscribe + 001 Germs `_C92tIJCk8A` (8:31:02-8:51:02). Title A/B set, Ineligible until public (Why Vaccines Are Named After a Cow vs How Was the First Vaccine Made?, covers THE / MILKMAID'S / SECRET and IMMUNE). Pinned comment not posted: the Studio account cannot create comments (J0960, reopen Thu 12 Nov 18:05). Cards not added. Buffer deferred.",
       "stages": {
         "topic": {
           "status": "done"
@@ -367,11 +367,18 @@
           "underway": false
         },
         "thumbnails": {
-          "status": "doing",
+          "status": "done",
           "due": "2026-11-05",
           "owner": "Chief",
-          "note": "A THE / MILKMAID'S / SECRET is the cover on ETynHpIYLeY (sha 52cf8ea6). B IMMUNE (sha c102e7bd) waits for Test & Compare in Studio. Lettered at £0 on v04 painted stills. The Data API cannot arm the test.",
-          "jobs": ["J0946"]
+          "note": "J0959. Test set on ETynHpIYLeY from the Title and thumbnail dialog (A THE / MILKMAID'S / SECRET + Why Vaccines Are Named After a Cow, B IMMUNE + How Was the First Vaccine Made?). Studio lists both titles, status Ineligible while scheduled.",
+          "jobs": [
+            "J0946",
+            "J0959"
+          ],
+          "left": "",
+          "eta": "",
+          "waiting": "",
+          "underway": false
         },
         "ben_ok": {
           "status": "done",
@@ -381,7 +388,7 @@
         "scheduled": {
           "status": "done",
           "due": "2026-11-09",
-          "note": "Private ETynHpIYLeY, publishAt Thu 12 Nov 2026 18:00 London. End screen, pinned comment and Test & Compare are the Studio finish job."
+          "note": "Private ETynHpIYLeY, publishAt Thu 12 Nov 2026 18:00 London. End screen and Test & Compare saved (J0959). Pinned comment waits on J0960 until the video is public."
         }
       }
     },

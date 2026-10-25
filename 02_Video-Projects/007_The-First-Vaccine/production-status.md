@@ -142,3 +142,12 @@ PASS  Short -I_GHK-GcFs  private 2026-11-13 11:30 UK  What Was the Edward Jenner
 54 videos, 0 errors.
 ```
 
+## 25 Oct 2026 — J0959: Studio finish on `ETynHpIYLeY` (Cursor covering)
+
+Desktop Studio over CDP `:9460`, channel History of Science (`UCXp7HkBIl1LgaznXuZHJyRg`) confirmed before each save. Nothing uploaded, replaced or deleted. API read-back after the saves: still Private, `publishAt` `2026-11-12T18:00:00Z`, title unchanged, not made for kids. Visibility on the page stayed Scheduled.
+
+- **End screen:** Subscribe (History of Science) plus specific video *How Did We Discover Germs?* (`_C92tIJCk8A`, 6:05), window 8:31:02–8:51:02. Reopened after a reload with both elements and the dialog Save disabled. Studio notes the elements won't show on the watch page while the video is private.
+- **Test & Compare:** Set from the Title and thumbnail dialog. A is the live cover `THE / MILKMAID'S / SECRET` with *Why Vaccines Are Named After a Cow*. B is `IMMUNE` with *How Was the First Vaccine Made?*. Page Save reported "Changes saved". Studio lists both titles under "A/B testing titles", status Ineligible (expected while scheduled). No existing test, so nothing was cancelled.
+- **Cards:** not added. The package does not call for one.
+- **Pinned comment:** not posted. `update-pinned-comment.ts --create` returned 403 forbidden. The Studio comment box says this account doesn't have permission to create comments. No subscriber count, no `/go/` link. Follow-up `J0960` is blocked until the video is public; reopen Thu 12 Nov 2026 18:05 London.
+- **Buffer:** deferred. Evidence: `11_Upload-Package/STUDIO_READBACK_J0959.json`.
