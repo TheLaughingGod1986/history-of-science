@@ -1,0 +1,50 @@
+{
+  "job": "J0958",
+  "at": "2026-10-25T20:45:00Z",
+  "channel": "History of Science",
+  "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+  "videoId": "VbPubYd6Fbs",
+  "cdp": 9460,
+  "api": {
+    "privacy": "private",
+    "publishAt": "2026-11-05T18:00:00Z",
+    "title": "The Willow Tree That Was Made of Air",
+    "madeForKids": false,
+    "channelId": "UCXp7HkBIl1LgaznXuZHJyRg"
+  },
+  "audience": "not Made for Kids",
+  "visibility": "Scheduled",
+  "premiere": false,
+  "endScreen": {
+    "subscribe": "History of Science",
+    "video": "What's Really Inside an Atom?",
+    "videoId": "GHZDsiH7L7A",
+    "window": "8:31:22-8:51:22",
+    "readBackAfterReload": true,
+    "watchPageWhilePrivate": "elements won't display until the video is public"
+  },
+  "cards": "not added",
+  "testAndCompare": {
+    "dialog": "Title and thumbnail",
+    "a": {
+      "title": "The Willow Tree That Was Made of Air",
+      "thumb": "WOOD / FROM / SKY?"
+    },
+    "b": {
+      "title": "Where Does a Tree's Weight Come From?",
+      "thumb": "DO PLANTS / EAT / SOIL?"
+    },
+    "afterSave": "A/B testing titles, both titles listed, status Ineligible",
+    "existingTestWarning": "Run a new test? Your current test will be deleted. Cancelled and left."
+  },
+  "pinnedComment": {
+    "api": "403 forbidden, insufficient permissions",
+    "studio": "This account doesn't have permission to create comments.",
+    "pinned": false,
+    "textNotPosted": "So where does a tree's weight really come from?"
+  },
+  "buffer": "deferred",
+  "uploaded": false,
+  "deleted": false,
+  "gbp": 0
+}

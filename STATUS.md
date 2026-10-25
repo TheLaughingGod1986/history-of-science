@@ -121,7 +121,7 @@ Finished and scheduled. Long `wwcjcFfC-5M` airs Thu 29 Oct 18:00; Shorts A (30 O
 
 Airs **Thu 5 Nov** · ready for Ben's OK by **Sun 1 Nov** · 🟢 on track
 
-Private `VbPubYd6Fbs`, publishAt Thu 5 Nov 2026 18:00 London (J0945). Master v06 sha256 `36c54e68`, 531.83 s, file size 586581796 matches the upload. Thumbnail A set. en-GB captions serving. Studio finish still: end screen to 004 `GHZDsiH7L7A`, pinned comment, thumbnail Test & Compare A/B. Buffer deferred.
+Private `VbPubYd6Fbs`, publishAt Thu 5 Nov 2026 18:00 London. End screen saved: Subscribe + 004 Atom `GHZDsiH7L7A` (8:31-8:51). Title A/B set, Ineligible until public (Willow Tree vs Where Does a Tree's Weight Come From?, covers WOOD / FROM / SKY? and DO PLANTS / EAT / SOIL?). Pinned comment not posted: the Studio account cannot create comments. Cards not added. Buffer deferred.
 
 - ✅ **Topic** — done
 - ✅ **Script** — done: v02, 93.7

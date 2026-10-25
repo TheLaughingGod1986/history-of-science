@@ -824,3 +824,13 @@ ALL CHECKS PASS (00_Brand/Channel-Setup/tools/check_all.sh 02_Video-Projects/006
 ```
 
 - **STOP:** Parked for Chief (`parked for Chief: HOS 006 master v06 review (Ben's 3 v05 changes at 1:03, 4:02, 4:30 fixed at root cause + all 28 card in-points verified 0-frame leak, 0 Flow credits, _PHONE.mp4 in HOS UAT, all gates PASS)`). Nothing uploaded or scheduled.
+
+## 25 Oct 2026 — J0958: Studio finish on `VbPubYd6Fbs` (Cursor covering)
+
+Desktop Studio over CDP `:9460`, channel History of Science (`UCXp7HkBIl1LgaznXuZHJyRg`) confirmed before each save. Nothing uploaded, replaced or deleted. API read-back after the saves: still Private, `publishAt` `2026-11-05T18:00:00Z`, title unchanged, not made for kids. Visibility on the page stayed Scheduled.
+
+- **End screen:** Subscribe (History of Science) plus specific video *What's Really Inside an Atom?* (`GHZDsiH7L7A`), window 8:31:22–8:51:22. Reopened after save with both elements and the dialog Save disabled. Studio notes the elements won't show on the watch page while the video is private.
+- **Test & Compare:** Set from the Title and thumbnail dialog. A is the live cover `WOOD / FROM / SKY?` with *The Willow Tree That Was Made of Air*. B is `DO PLANTS / EAT / SOIL?` with *Where Does a Tree's Weight Come From?*. Page Save reported "Changes saved". After reload, Studio lists both titles under "A/B testing titles", status Ineligible (expected while scheduled). Opening A/B testing asked "Run a new test? Your current test will be deleted"; Cancelled and left.
+- **Cards:** not added.
+- **Pinned comment:** not posted. `update-pinned-comment.ts --create` returned 403 forbidden. The Studio comment box says this account doesn't have permission to create comments. No subscriber count, no `/go/` link.
+- **Buffer:** deferred. Evidence: `11_Upload-Package/STUDIO_READBACK_J0958.json`.

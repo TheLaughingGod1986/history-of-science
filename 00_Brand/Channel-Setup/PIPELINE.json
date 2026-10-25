@@ -218,7 +218,7 @@
       "title": "The Willow Tree That Was Made of Air",
       "air": "2026-11-05",
       "ready_by": "2026-11-01",
-      "summary": "Private `VbPubYd6Fbs`, publishAt Thu 5 Nov 2026 18:00 London (J0945). Master v06 sha256 `36c54e68`, 531.83 s, file size 586581796 matches the upload. Thumbnail A set. en-GB captions serving. Studio finish still: end screen to 004 `GHZDsiH7L7A`, pinned comment, thumbnail Test & Compare A/B. Buffer deferred.",
+      "summary": "Private `VbPubYd6Fbs`, publishAt Thu 5 Nov 2026 18:00 London. End screen saved: Subscribe + 004 Atom `GHZDsiH7L7A` (8:31-8:51). Title A/B set, Ineligible until public (Willow Tree vs Where Does a Tree's Weight Come From?, covers WOOD / FROM / SKY? and DO PLANTS / EAT / SOIL?). Pinned comment not posted: the Studio account cannot create comments. Cards not added. Buffer deferred.",
       "stages": {
         "topic": {
           "status": "done"
@@ -272,7 +272,7 @@
           "waiting": ""
         },
         "thumbnails": {
-          "status": "doing",
+          "status": "done",
           "due": "2026-10-29",
           "owner": "Chief",
           "since": "2026-10-25T20:22",
@@ -282,14 +282,15 @@
             2
           ],
           "steps_unit": "thumb steps",
-          "left": "Test & Compare in Studio finish",
+          "left": "",
           "eta": "",
-          "waiting": "Studio finish: Test & Compare A WOOD / FROM / SKY? vs B DO PLANTS / EAT / SOIL? on VbPubYd6Fbs",
+          "waiting": "",
           "jobs": [
             "J0858",
-            "J0869"
+            "J0869",
+            "J0958"
           ],
-          "note": "A is the cover on VbPubYd6Fbs (sha 904d2f58, thumbnail set). B (sha ee5f2605) waits for Test & Compare in Studio. The Data API cannot arm the test."
+          "note": "J0958. Test set on VbPubYd6Fbs from the Title and thumbnail dialog (A WOOD / FROM / SKY? + the live title, B DO PLANTS / EAT / SOIL? + Where Does a Tree's Weight Come From?). Studio lists both titles, status Ineligible while scheduled."
         },
         "ben_ok": {
           "status": "done",

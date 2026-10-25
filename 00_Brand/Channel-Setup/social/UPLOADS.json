@@ -304,7 +304,11 @@
       "registeredAt": "2026-10-25T20:22:00Z",
       "captions": "en-GB standard, serving, AUieDaZBE-6vyjG9eGdzhiF0twPvrL2rqU2EHE8yie_3OPQi",
       "buffer": "deferred: long films are never cross-posted through Buffer",
-      "note": "J0945. New Private upload of master v06. Thumbnail A set. Test & Compare, end screen and pinned comment are the Studio finish job. Nothing replaced or deleted."
+      "endScreen": "Subscribe (History of Science) + specific video What's Really Inside an Atom? GHZDsiH7L7A, 8:31:22-8:51:22. Read back after reload. Elements do not show on the watch page while Private.",
+      "testAndCompare": "Set 25 Oct 2026 from the Title and thumbnail dialog: A WOOD / FROM / SKY? + The Willow Tree That Was Made of Air; B DO PLANTS / EAT / SOIL? + Where Does a Tree's Weight Come From?. After save, Studio lists both titles under A/B testing titles, status Ineligible (scheduled). Opening A/B testing offers to delete the current test; Cancelled and left.",
+      "pinnedComment": "not posted. update-pinned-comment.ts --create returned 403 forbidden. Studio comments: this account doesn't have permission to create comments.",
+      "cards": "not added",
+      "note": "J0958. End screen and title/thumbnail test saved. Privacy still private, publishAt still 2026-11-05T18:00:00Z. Pinned comment refused by the API and by Studio. Cards not added. Buffer stays deferred. Nothing replaced or deleted."
     }
   }
 }
