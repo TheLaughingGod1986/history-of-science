@@ -1,0 +1,75 @@
+{
+  "file": "hos_005_s01_the_sum_v03.mp4",
+  "duration_s": 24.1,
+  "brief": {
+    "frame0_source": "04_Generated-Clips/part01/raw/v01/01_pulse_wrist_t1.mp4",
+    "frame0_zoom": "none \u2014 moving plate, in 1.0s, crop x=656, no Ken Burns",
+    "first_word_s": 0.0,
+    "surprise_s": {
+      "more": 0.5856,
+      "blood": 0.8446
+    },
+    "first_cut_s": 2.17,
+    "last_word_to_loop_s": 0.57,
+    "meta_promise": false,
+    "runtime_s": 24.1,
+    "longest_hold_s": 3.8,
+    "payoff_phrase": "same blood, going round and round",
+    "payoff_s": 19.8175,
+    "payoff_frac": 0.823,
+    "loop_sentence": "So it's the same blood, going round and round. You pump more blood than you have.",
+    "loop_diff": 3.33,
+    "lufs": -14.9,
+    "true_peak_dbfs": -1.4,
+    "frame0_black": 0.034,
+    "no_cta": true,
+    "vo_unchanged": true,
+    "split": "5.05-7.20 06_two_ounces_eighth_t1; 7.20-9.48 07_thousand_beats_t4"
+  },
+  "gate_exit": 0,
+  "gate_verdict": "PASS",
+  "gate_fails": [],
+  "gate_warns": [],
+  "qa": {
+    "polish_gate": {
+      "exit": 0,
+      "tail": [
+        "s07_jug    15.8s 09_jug_tower_t1.mp4          ok",
+        "s08_glow    18.7s 12_glowing_loop_t2.mp4       ok",
+        "s09_loop    22.2s loop_end_01_pulse_wrist_t1.m WARN low detail: edge density 0.0157 < film p5 0.0191",
+        "polish gate PASS: 0 of 9 rows failed, 1 to look at -> 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s01_the_sum_v03/polish_gate_s01_the_sum_v03.json"
+      ]
+    },
+    "picture_qa": {
+      "exit": 0,
+      "tail": [
+        "WARN   0:22 row s09_loop loop_end_01_pulse_wrist_t1.mp4: low detail: edge density 0.0157 < film p5 0.0191",
+        "picture QA PASS: 0 of 9 cuts fail, 1 to look at -> 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s01_the_sum_v03/picture_qa_s01_the_sum_v03/PICTURE_QA.md, 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s01_the_sum_v03/picture_qa_s01_the_sum_v03/picture_qa_review.jpg"
+      ]
+    }
+  },
+  "music_exit": 0,
+  "music_tail": [
+    "WARN reused: couldn't read saturn_long_vo_v03b_tightened_LOCK.m4a to compare (OSError); download it or pass --others",
+    "WARN reused: couldn't read saturn_long_vo_v03b_tightened_LOCK.wav to compare (OSError); download it or pass --others",
+    "WARN reused: couldn't read saturn_long_vo_v01_LISTEN.wav to compare (OSError); download it or pass --others",
+    "WARN reused: couldn't read monday_saturn_short_vo_v02_how_long.mp3 to compare (OSError); download it or pass --others",
+    "WARN reused: couldn't read saturn_long_vo_v03_tightened.wav to compare (OSError); download it or pass --others",
+    "music gate PASS: hos_005_s01_the_sum_v03_bed.wav, 24.3 s, about 75.0 BPM, brief Pace: 66-76 BPM"
+  ],
+  "sfx": {
+    "exit": 0,
+    "output": "SFX level PASS: VO -17.7 LUFS, SFX -41.4 LUFS, 1 hits",
+    "bed_db": -11.0,
+    "sfx_db": -11.0
+  },
+  "copies": [
+    "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s01_the_sum_v03.mp4",
+    "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s01_the_sum_v03_PHONE.mp4",
+    "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s01_the_sum_v03_2fps_sheet.jpg",
+    "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/s01_the_sum_v03/hos_005_s01_the_sum_v03.mp4",
+    "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/s01_the_sum_v03/hos_005_s01_the_sum_v03_PHONE.mp4",
+    "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/s01_the_sum_v03/hos_005_s01_the_sum_v03_2fps_sheet.jpg"
+  ],
+  "loop_diff_after_stamp": 3.33
+}

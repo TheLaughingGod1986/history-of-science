@@ -1,0 +1,445 @@
+{
+  "id": "s01_the_sum",
+  "version": "v03",
+  "job": "J0934",
+  "youtube_id": "1lszTrYRp-8",
+  "title": "Your Heart Pumps More Blood Than You Have",
+  "air_date": "2026-10-30",
+  "spoken": "You pump more blood than you have. One London doctor proved it with a sum. Say the heart holds two ounces. Each beat, an eighth of that goes out. In half an hour, it beats more than a thousand times. That's more blood than your whole body holds. Food could never make that much. So it's the same blood, going round and round.",
+  "script": "You pump more blood than you have. One London doctor proved it with a sum. Say the heart holds two ounces. Each beat, an eighth of that goes out. In half an hour, it beats more than a thousand times. That's more blood than your whole body holds. Food could never make that much. So it's the same blood, going round and round.",
+  "words": [
+    {
+      "word": "You",
+      "start": 0.0,
+      "end": 0.1376
+    },
+    {
+      "word": "pump",
+      "start": 0.2176,
+      "end": 0.5376
+    },
+    {
+      "word": "more",
+      "start": 0.5856,
+      "end": 0.7776
+    },
+    {
+      "word": "blood",
+      "start": 0.8446,
+      "end": 1.1776
+    },
+    {
+      "word": "than",
+      "start": 1.2416,
+      "end": 1.4976
+    },
+    {
+      "word": "you",
+      "start": 1.5376,
+      "end": 1.6576
+    },
+    {
+      "word": "have.",
+      "start": 1.7376,
+      "end": 2.1376
+    },
+    {
+      "word": "One",
+      "start": 2.3176,
+      "end": 2.8167
+    },
+    {
+      "word": "London",
+      "start": 2.8737,
+      "end": 3.2167
+    },
+    {
+      "word": "doctor",
+      "start": 3.2737,
+      "end": 3.6167
+    },
+    {
+      "word": "proved",
+      "start": 3.6857,
+      "end": 4.0967
+    },
+    {
+      "word": "it",
+      "start": 4.1237,
+      "end": 4.1767
+    },
+    {
+      "word": "with",
+      "start": 4.2087,
+      "end": 4.3367
+    },
+    {
+      "word": "a",
+      "start": 4.3767,
+      "end": 4.4167
+    },
+    {
+      "word": "sum.",
+      "start": 4.5367,
+      "end": 4.9767
+    },
+    {
+      "word": "Say",
+      "start": 5.1967,
+      "end": 5.8175
+    },
+    {
+      "word": "the",
+      "start": 5.8375,
+      "end": 5.8975
+    },
+    {
+      "word": "heart",
+      "start": 5.9775,
+      "end": 6.3775
+    },
+    {
+      "word": "holds",
+      "start": 6.4445,
+      "end": 6.7775
+    },
+    {
+      "word": "two",
+      "start": 6.8375,
+      "end": 7.0175
+    },
+    {
+      "word": "ounces.",
+      "start": 7.1205,
+      "end": 7.8175
+    },
+    {
+      "word": "Each",
+      "start": 7.9455,
+      "end": 8.4575
+    },
+    {
+      "word": "beat,",
+      "start": 8.5375,
+      "end": 8.9375
+    },
+    {
+      "word": "an",
+      "start": 9.0175,
+      "end": 9.1775
+    },
+    {
+      "word": "eighth",
+      "start": 9.2345,
+      "end": 9.5775
+    },
+    {
+      "word": "of",
+      "start": 9.6305,
+      "end": 9.7375
+    },
+    {
+      "word": "that",
+      "start": 9.7855,
+      "end": 9.9775
+    },
+    {
+      "word": "goes",
+      "start": 10.0415,
+      "end": 10.2975
+    },
+    {
+      "word": "out.",
+      "start": 10.3975,
+      "end": 10.8575
+    },
+    {
+      "word": "In",
+      "start": 11.0175,
+      "end": 11.3375
+    },
+    {
+      "word": "half",
+      "start": 11.4015,
+      "end": 11.6575
+    },
+    {
+      "word": "an",
+      "start": 11.6845,
+      "end": 11.7375
+    },
+    {
+      "word": "hour,",
+      "start": 11.8015,
+      "end": 12.2175
+    },
+    {
+      "word": "it",
+      "start": 12.2705,
+      "end": 12.3775
+    },
+    {
+      "word": "beats",
+      "start": 12.4305,
+      "end": 12.6975
+    },
+    {
+      "word": "more",
+      "start": 12.7455,
+      "end": 12.9375
+    },
+    {
+      "word": "than",
+      "start": 12.9695,
+      "end": 13.0975
+    },
+    {
+      "word": "a",
+      "start": 13.1775,
+      "end": 13.2575
+    },
+    {
+      "word": "thousand",
+      "start": 13.3105,
+      "end": 13.7375
+    },
+    {
+      "word": "times.",
+      "start": 13.8445,
+      "end": 14.5375
+    },
+    {
+      "word": "That's",
+      "start": 14.6335,
+      "end": 15.0975
+    },
+    {
+      "word": "more",
+      "start": 15.1295,
+      "end": 15.2575
+    },
+    {
+      "word": "blood",
+      "start": 15.3105,
+      "end": 15.5775
+    },
+    {
+      "word": "than",
+      "start": 15.6095,
+      "end": 15.7375
+    },
+    {
+      "word": "your",
+      "start": 15.7695,
+      "end": 15.8975
+    },
+    {
+      "word": "whole",
+      "start": 15.9375,
+      "end": 16.1375
+    },
+    {
+      "word": "body",
+      "start": 16.2175,
+      "end": 16.5375
+    },
+    {
+      "word": "holds.",
+      "start": 16.6305,
+      "end": 17.1775
+    },
+    {
+      "word": "Food",
+      "start": 17.3375,
+      "end": 17.9775
+    },
+    {
+      "word": "could",
+      "start": 18.0175,
+      "end": 18.2175
+    },
+    {
+      "word": "never",
+      "start": 18.2845,
+      "end": 18.6175
+    },
+    {
+      "word": "make",
+      "start": 18.6655,
+      "end": 18.8575
+    },
+    {
+      "word": "that",
+      "start": 18.8895,
+      "end": 19.0175
+    },
+    {
+      "word": "much.",
+      "start": 19.1135,
+      "end": 19.6575
+    },
+    {
+      "word": "So",
+      "start": 19.8175,
+      "end": 20.1375
+    },
+    {
+      "word": "it's",
+      "start": 20.1645,
+      "end": 20.2975
+    },
+    {
+      "word": "the",
+      "start": 20.3375,
+      "end": 20.4575
+    },
+    {
+      "word": "same",
+      "start": 20.5055,
+      "end": 20.6975
+    },
+    {
+      "word": "blood,",
+      "start": 20.7645,
+      "end": 21.4975
+    },
+    {
+      "word": "going",
+      "start": 21.5505,
+      "end": 21.8175
+    },
+    {
+      "word": "round",
+      "start": 21.9245,
+      "end": 22.4575
+    },
+    {
+      "word": "and",
+      "start": 22.5575,
+      "end": 22.8575
+    },
+    {
+      "word": "round.",
+      "start": 22.9375,
+      "end": 23.4975
+    }
+  ],
+  "word_count": 63,
+  "last_word_end_s": 23.4975,
+  "plan": [
+    {
+      "t0": 0.0,
+      "t1": 2.17,
+      "plate": "01_pulse_wrist_t1.mp4",
+      "in_s": 1.0,
+      "crop_x": 656,
+      "label": "pulse",
+      "hold_s": 2.17
+    },
+    {
+      "t0": 2.17,
+      "t1": 5.05,
+      "plate": "05_how_much_t1.mp4",
+      "in_s": 0.5,
+      "crop_x": 656,
+      "label": "how_much",
+      "hold_s": 2.88
+    },
+    {
+      "t0": 5.05,
+      "t1": 7.2,
+      "plate": "06_two_ounces_eighth_t1.mp4",
+      "in_s": 0.4,
+      "crop_x": 656,
+      "label": "two_ounces",
+      "hold_s": 2.15
+    },
+    {
+      "t0": 7.2,
+      "t1": 9.48,
+      "plate": "07_thousand_beats_t4.mp4",
+      "in_s": 0.3,
+      "crop_x": 640,
+      "label": "thousand",
+      "hold_s": 2.28
+    },
+    {
+      "t0": 9.48,
+      "t1": 12.12,
+      "plate": "04_squeeze_pulse_t1.mp4",
+      "in_s": 0.5,
+      "crop_x": 900,
+      "label": "squeeze",
+      "hold_s": 2.64
+    },
+    {
+      "t0": 12.12,
+      "t1": 14.48,
+      "plate": "09_heart_clock_t2.mp4",
+      "in_s": 0.3,
+      "crop_x": 560,
+      "label": "clock",
+      "hold_s": 2.36
+    },
+    {
+      "t0": 14.48,
+      "t1": 17.19,
+      "plate": "09_jug_tower_t1.mp4",
+      "in_s": 0.5,
+      "crop_x": 360,
+      "label": "jug",
+      "hold_s": 2.71
+    },
+    {
+      "t0": 17.19,
+      "t1": 20.267,
+      "plate": "12_glowing_loop_t2.mp4",
+      "in_s": 0.5,
+      "crop_x": 656,
+      "label": "glow",
+      "hold_s": 3.077
+    },
+    {
+      "t0": 20.267,
+      "t1": 24.067,
+      "plate": "01_pulse_wrist_t1.mp4",
+      "in_s": 1.0,
+      "crop_x": 656,
+      "label": "loop",
+      "hold_s": 3.8
+    }
+  ],
+  "hook": "MORE THAN YOU HAVE",
+  "title_on_screen": "The Tied Arm That Proved Your Blood Circulates",
+  "no_cta": true,
+  "no_new_spend": true,
+  "bed": "hos_005_s01_the_sum_v03_bed.wav",
+  "sfx_level": {
+    "exit": 0,
+    "output": "SFX level PASS: VO -17.7 LUFS, SFX -41.4 LUFS, 1 hits",
+    "bed_db": -11.0,
+    "sfx_db": -11.0
+  },
+  "frame0_source": "04_Generated-Clips/part01/raw/v01/01_pulse_wrist_t1.mp4",
+  "frame0_zoom": "none \u2014 moving plate, in 1.0s, crop x=656, no Ken Burns",
+  "first_word_s": 0.0,
+  "surprise_s": {
+    "more": 0.5856,
+    "blood": 0.8446
+  },
+  "first_cut_s": 2.17,
+  "last_word_to_loop_s": 0.57,
+  "meta_promise": false,
+  "runtime_s": 24.1,
+  "longest_hold_s": 3.8,
+  "payoff_phrase": "same blood, going round and round",
+  "payoff_s": 19.8175,
+  "payoff_frac": 0.823,
+  "loop_sentence": "So it's the same blood, going round and round. You pump more blood than you have.",
+  "loop_diff": 3.33,
+  "lufs": -14.9,
+  "true_peak_dbfs": -1.4,
+  "frame0_black": 0.034,
+  "vo_unchanged": true,
+  "split": "5.05-7.20 06_two_ounces_eighth_t1; 7.20-9.48 07_thousand_beats_t4"
+}

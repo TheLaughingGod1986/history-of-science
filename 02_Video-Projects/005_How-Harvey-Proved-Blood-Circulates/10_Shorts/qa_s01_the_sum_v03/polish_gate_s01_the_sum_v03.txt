@@ -1,0 +1,10 @@
+s01_pulse     1.1s 01_pulse_wrist_t1.mp4        ok
+s02_how_much     3.6s 05_how_much_t1.mp4           ok
+s03_two_ounces     6.1s 06_two_ounces_eighth_t1.mp4  ok
+s04_thousand     8.3s 07_thousand_beats_t4.mp4     ok
+s05_squeeze    10.8s 04_squeeze_pulse_t1.mp4      ok
+s06_clock    13.3s 09_heart_clock_t2.mp4        ok
+s07_jug    15.8s 09_jug_tower_t1.mp4          ok
+s08_glow    18.7s 12_glowing_loop_t2.mp4       ok
+s09_loop    22.2s loop_end_01_pulse_wrist_t1.m WARN low detail: edge density 0.0157 < film p5 0.0191
+polish gate PASS: 0 of 9 rows failed, 1 to look at -> 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s01_the_sum_v03/polish_gate_s01_the_sum_v03.json
