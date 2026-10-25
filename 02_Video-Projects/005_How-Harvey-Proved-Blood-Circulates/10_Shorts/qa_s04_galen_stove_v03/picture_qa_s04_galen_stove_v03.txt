@@ -1,0 +1,2 @@
+WARN   0:21 row s09_loop loop_span_05_heart_stove_t1.mp4: low detail: edge density 0.0407 < film p5 0.0416
+picture QA PASS: 0 of 9 cuts fail, 1 to look at -> 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s04_galen_stove_v03/picture_qa_s04_galen_stove_v03/PICTURE_QA.md, 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s04_galen_stove_v03/picture_qa_s04_galen_stove_v03/picture_qa_review.jpg

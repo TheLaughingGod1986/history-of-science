@@ -1,0 +1,4 @@
+spoken: The heart wasn't a pump at all. It was a warm stove, and its job was to heat the blood. and your liver turns that juice into blood. Your veins carry the blood out to every part of you, and your flesh soaks it up as nourishment. For 14 centuries, hardly anyone dared to argue with his books.
+stem: The heart wasn't a pump at all. It was a warm stove, and its job was to heat the blood, and your liver turns that juice into blood. Your veins carry the blood out to every part of you, and your flesh soaks it up as nourishment. For fourteen centuries hardly anyone dared to argue with his books.
+small.en token differs only by 14/fourteen; spoken line kept
+OK

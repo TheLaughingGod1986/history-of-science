@@ -1,0 +1,29 @@
+[
+  {
+    "file": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s04_galen_stove_v03.mp4",
+    "air_date": "2026-10-31",
+    "fails": [],
+    "warns": [
+      "duration 21.2s outside 22–27s band",
+      "first VO word starts at 0.51s > 0.15s — trim leading silence"
+    ],
+    "stayed_fails": [],
+    "duration_s": 21.17,
+    "audio": {
+      "stream": true,
+      "mean_db": -17.3,
+      "open_mean_db": -16.7
+    },
+    "vo_src": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/_work_s04_galen_stove_v03/hos_005_s04_galen_stove_vo_v03.wav",
+    "vo_onset_s": 0.508,
+    "last_word_end_s": 20.12,
+    "tail_gap_s": 1.05,
+    "motion_0_1s": 24.39,
+    "frame0_diff_0_1_5s": 2.98,
+    "first_cut_s": 2.13,
+    "dhash": "dec13e1e65767632",
+    "near_opens": [],
+    "contact_sheet": "/var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_005_s04_galen_stove_v03_open_sheet.jpg",
+    "verdict": "PASS"
+  }
+]

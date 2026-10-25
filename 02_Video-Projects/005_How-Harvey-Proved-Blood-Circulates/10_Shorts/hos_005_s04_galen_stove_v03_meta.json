@@ -1,0 +1,554 @@
+{
+  "id": "s04_galen_stove",
+  "version": "v03",
+  "job": "J0934",
+  "youtube_id": "5n7xFQRBUvI",
+  "title": "Is the Heart a Pump?",
+  "air_date": "2026-10-31",
+  "spoken": "The heart wasn't a pump at all. It was a warm stove, and its job was to heat the blood. and your liver turns that juice into blood. Your veins carry the blood out to every part of you, and your flesh soaks it up as nourishment. For 14 centuries, hardly anyone dared to argue with his books.",
+  "script": "The heart wasn't a pump at all. It was a warm stove, and its job was to heat the blood. and your liver turns that juice into blood. Your veins carry the blood out to every part of you, and your flesh soaks it up as nourishment. For 14 centuries, hardly anyone dared to argue with his books.",
+  "words": [
+    {
+      "word": "The",
+      "start": 0.0,
+      "end": 0.52
+    },
+    {
+      "word": "heart",
+      "start": 0.6,
+      "end": 1.0
+    },
+    {
+      "word": "wasn't",
+      "start": 1.048,
+      "end": 1.241
+    },
+    {
+      "word": "a",
+      "start": 1.281,
+      "end": 1.321
+    },
+    {
+      "word": "pump",
+      "start": 1.433,
+      "end": 1.881
+    },
+    {
+      "word": "at",
+      "start": 1.961,
+      "end": 2.121
+    },
+    {
+      "word": "all.",
+      "start": 2.201,
+      "end": 2.521
+    },
+    {
+      "word": "It",
+      "start": 2.768,
+      "end": 3.141
+    },
+    {
+      "word": "was",
+      "start": 3.161,
+      "end": 3.221
+    },
+    {
+      "word": "a",
+      "start": 3.301,
+      "end": 3.381
+    },
+    {
+      "word": "warm",
+      "start": 3.461,
+      "end": 3.781
+    },
+    {
+      "word": "stove,",
+      "start": 3.901,
+      "end": 4.58
+    },
+    {
+      "word": "and",
+      "start": 4.641,
+      "end": 4.701
+    },
+    {
+      "word": "its",
+      "start": 4.741,
+      "end": 4.861
+    },
+    {
+      "word": "job",
+      "start": 4.961,
+      "end": 5.261
+    },
+    {
+      "word": "was",
+      "start": 5.301,
+      "end": 5.421
+    },
+    {
+      "word": "to",
+      "start": 5.474,
+      "end": 5.581
+    },
+    {
+      "word": "heat",
+      "start": 5.645,
+      "end": 5.901
+    },
+    {
+      "word": "the",
+      "start": 5.921,
+      "end": 5.981
+    },
+    {
+      "word": "blood.",
+      "start": 6.074,
+      "end": 6.621
+    },
+    {
+      "word": "and",
+      "start": 6.8,
+      "end": 6.86
+    },
+    {
+      "word": "your",
+      "start": 6.892,
+      "end": 7.02
+    },
+    {
+      "word": "liver",
+      "start": 7.113,
+      "end": 7.58
+    },
+    {
+      "word": "turns",
+      "start": 7.647,
+      "end": 7.98
+    },
+    {
+      "word": "that",
+      "start": 8.012,
+      "end": 8.14
+    },
+    {
+      "word": "juice",
+      "start": 8.207,
+      "end": 8.54
+    },
+    {
+      "word": "into",
+      "start": 8.572,
+      "end": 8.7
+    },
+    {
+      "word": "blood.",
+      "start": 8.793,
+      "end": 9.34
+    },
+    {
+      "word": "Your",
+      "start": 9.5,
+      "end": 9.57
+    },
+    {
+      "word": "veins",
+      "start": 9.663,
+      "end": 10.13
+    },
+    {
+      "word": "carry",
+      "start": 10.183,
+      "end": 10.45
+    },
+    {
+      "word": "the",
+      "start": 10.47,
+      "end": 10.53
+    },
+    {
+      "word": "blood",
+      "start": 10.61,
+      "end": 11.01
+    },
+    {
+      "word": "out",
+      "start": 11.05,
+      "end": 11.17
+    },
+    {
+      "word": "to",
+      "start": 11.223,
+      "end": 11.33
+    },
+    {
+      "word": "every",
+      "start": 11.383,
+      "end": 11.65
+    },
+    {
+      "word": "part",
+      "start": 11.714,
+      "end": 11.97
+    },
+    {
+      "word": "of",
+      "start": 12.023,
+      "end": 12.13
+    },
+    {
+      "word": "you,",
+      "start": 12.19,
+      "end": 12.51
+    },
+    {
+      "word": "and",
+      "start": 12.57,
+      "end": 12.6
+    },
+    {
+      "word": "your",
+      "start": 12.632,
+      "end": 12.76
+    },
+    {
+      "word": "flesh",
+      "start": 12.867,
+      "end": 13.4
+    },
+    {
+      "word": "soaks",
+      "start": 13.48,
+      "end": 13.8
+    },
+    {
+      "word": "it",
+      "start": 13.827,
+      "end": 13.88
+    },
+    {
+      "word": "up",
+      "start": 13.987,
+      "end": 14.2
+    },
+    {
+      "word": "as",
+      "start": 14.28,
+      "end": 14.44
+    },
+    {
+      "word": "nourishment.",
+      "start": 14.488,
+      "end": 15.24
+    },
+    {
+      "word": "For",
+      "start": 15.48,
+      "end": 16.08
+    },
+    {
+      "word": "14",
+      "start": 16.133,
+      "end": 16.56
+    },
+    {
+      "word": "centuries,",
+      "start": 16.624,
+      "end": 17.28
+    },
+    {
+      "word": "hardly",
+      "start": 17.337,
+      "end": 17.68
+    },
+    {
+      "word": "anyone",
+      "start": 17.749,
+      "end": 18.16
+    },
+    {
+      "word": "dared",
+      "start": 18.213,
+      "end": 18.48
+    },
+    {
+      "word": "to",
+      "start": 18.507,
+      "end": 18.56
+    },
+    {
+      "word": "argue",
+      "start": 18.653,
+      "end": 19.12
+    },
+    {
+      "word": "with",
+      "start": 19.152,
+      "end": 19.28
+    },
+    {
+      "word": "his",
+      "start": 19.32,
+      "end": 19.44
+    },
+    {
+      "word": "books.",
+      "start": 19.547,
+      "end": 20.12
+    }
+  ],
+  "word_count": 58,
+  "last_word_end_s": 20.12,
+  "plan": [
+    {
+      "t0": 0.0,
+      "t1": 2.15,
+      "plate": "05_heart_stove_t1.mp4",
+      "in_s": 1.2,
+      "crop_x": 656,
+      "label": "stove",
+      "hold_s": 2.15
+    },
+    {
+      "t0": 2.15,
+      "t1": 4.783,
+      "plate": "01_galen_scrolls_t1.mp4",
+      "in_s": 0.45,
+      "crop_x": 656,
+      "label": "01_galen_scrolls_t1",
+      "hold_s": 2.633
+    },
+    {
+      "t0": 4.783,
+      "t1": 7.45,
+      "plate": "08_vesalius_book_t1.mp4",
+      "in_s": 0.45,
+      "crop_x": 656,
+      "label": "08_vesalius_book_t1",
+      "hold_s": 2.667
+    },
+    {
+      "t0": 7.45,
+      "t1": 10.117,
+      "plate": "03_eat_to_liver_t1.mp4",
+      "in_s": 0.45,
+      "crop_x": 656,
+      "label": "03_eat_to_liver_t1",
+      "hold_s": 2.667
+    },
+    {
+      "t0": 10.117,
+      "t1": 12.784,
+      "plate": "09_vesalius_nothing_t1.mp4",
+      "in_s": 0.45,
+      "crop_x": 656,
+      "label": "09_vesalius_nothing_t1",
+      "hold_s": 2.667
+    },
+    {
+      "t0": 12.784,
+      "t1": 15.451,
+      "plate": "04_veins_soak_t1.mp4",
+      "in_s": 0.45,
+      "crop_x": 656,
+      "label": "04_veins_soak_t1",
+      "hold_s": 2.667
+    },
+    {
+      "t0": 15.451,
+      "t1": 17.818,
+      "plate": "07_doctors_believe_t1.mp4",
+      "in_s": 0.4,
+      "crop_x": 656,
+      "label": "07_doctors_believe_t1",
+      "hold_s": 2.367
+    },
+    {
+      "t0": 17.818,
+      "t1": 20.185,
+      "plate": "10_why_believe_t1.mp4",
+      "in_s": 0.4,
+      "crop_x": 656,
+      "label": "10_why_believe_t1",
+      "hold_s": 2.367
+    },
+    {
+      "t0": 20.185,
+      "t1": 21.185,
+      "plate": "05_heart_stove_t1.mp4",
+      "in_s": 0.2,
+      "crop_x": 656,
+      "label": "loop",
+      "hold_s": 1.0
+    }
+  ],
+  "hook": "NOT A PUMP",
+  "title_on_screen": "The Tied Arm That Proved Your Blood Circulates",
+  "no_cta": true,
+  "no_new_spend": true,
+  "bed": "hos_005_s04_galen_stove_v03_bed.wav",
+  "sfx_level": {
+    "exit": 0,
+    "output": "SFX level PASS: VO -19.5 LUFS, SFX -47.0 LUFS, 1 hits",
+    "bed_db": -13.0,
+    "sfx_db": -15.0
+  },
+  "asr": {
+    "ok": true,
+    "notes": [
+      "small.en token differs only by 14/fourteen; spoken line kept"
+    ],
+    "stem": "The heart wasn't a pump at all. It was a warm stove, and its job was to heat the blood, and your liver turns that juice into blood. Your veins carry the blood out to every part of you, and your flesh soaks it up as nourishment. For fourteen centuries hardly anyone dared to argue with his books."
+  },
+  "frame0_source": "04_Generated-Clips/part02/raw/v01/05_heart_stove_t1.mp4",
+  "frame0_zoom": "none \u2014 moving plate, in 1.2s, crop x=656, no Ken Burns",
+  "frame0_in_s": 1.2,
+  "loop_in_s": 0.2,
+  "loop_ends_on": "frame before frame 0 in-point; no frame-0 copy",
+  "no_frame0_stamp": true,
+  "first_word_s": 0.0,
+  "surprise_s": {
+    "pump": 1.433,
+    "wasnt": 1.048
+  },
+  "first_cut_s": 2.15,
+  "last_word_to_loop_s": 1.06,
+  "meta_promise": false,
+  "runtime_s": 21.167,
+  "longest_hold_s": 2.667,
+  "payoff_phrase": "For 14 centuries",
+  "payoff_s": 15.48,
+  "payoff_frac": 0.731,
+  "payoff_leads": false,
+  "loop_sentence": "argue with his books. The heart wasn't a pump at all.",
+  "loop_diff": 4.25,
+  "lufs": -14.3,
+  "true_peak_dbfs": -1.5,
+  "frame0_black": 0.001,
+  "max_word_gap_s": 0.247,
+  "dropped": "You eat. Your food turns into a milky juice. Here is what Galen taught.",
+  "who_card": {
+    "name": "GALEN",
+    "line2": "Rome, c. AD 170",
+    "in_s": 2.3,
+    "out_s": 5.5,
+    "y": [
+      1009,
+      1184
+    ],
+    "band": [
+      656,
+      1264
+    ]
+  },
+  "onset": [
+    {
+      "piece": "pump",
+      "src": [
+        28.2,
+        30.82
+      ],
+      "cut_s": 0.0,
+      "dur_s": 2.62,
+      "first_hot_s": 0.5,
+      "last_hot_s": 2.56,
+      "lead_s": 0.5,
+      "tail_s": 0.05,
+      "lead_ok": true,
+      "tail_ok": true
+    },
+    {
+      "piece": "stove_a",
+      "src": [
+        30.84,
+        32.72
+      ],
+      "cut_s": 2.7,
+      "dur_s": 1.88,
+      "first_hot_s": 0.47,
+      "last_hot_s": 1.82,
+      "lead_s": 0.47,
+      "tail_s": 0.05,
+      "lead_ok": true,
+      "tail_ok": true
+    },
+    {
+      "piece": "stove_b",
+      "src": [
+        33.05,
+        35.1
+      ],
+      "cut_s": 4.63,
+      "dur_s": 2.05,
+      "first_hot_s": 0.12,
+      "last_hot_s": 1.98,
+      "lead_s": 0.12,
+      "tail_s": 0.06,
+      "lead_ok": true,
+      "tail_ok": true
+    },
+    {
+      "piece": "liver",
+      "src": [
+        18.18,
+        20.76
+      ],
+      "cut_s": 6.8,
+      "dur_s": 2.58,
+      "first_hot_s": 0.04,
+      "last_hot_s": 2.52,
+      "lead_s": 0.04,
+      "tail_s": 0.05,
+      "lead_ok": true,
+      "tail_ok": true
+    },
+    {
+      "piece": "veins_a",
+      "src": [
+        21.53,
+        24.54
+      ],
+      "cut_s": 9.5,
+      "dur_s": 3.01,
+      "first_hot_s": 0.03,
+      "last_hot_s": 2.95,
+      "lead_s": 0.03,
+      "tail_s": 0.05,
+      "lead_ok": true,
+      "tail_ok": true
+    },
+    {
+      "piece": "veins_b",
+      "src": [
+        24.93,
+        27.7
+      ],
+      "cut_s": 12.57,
+      "dur_s": 2.77,
+      "first_hot_s": 0.07,
+      "last_hot_s": 2.7,
+      "lead_s": 0.07,
+      "tail_s": 0.06,
+      "lead_ok": true,
+      "tail_ok": true
+    },
+    {
+      "piece": "centuries",
+      "src": [
+        6.5,
+        11.22
+      ],
+      "cut_s": 15.46,
+      "dur_s": 4.72,
+      "first_hot_s": 0.63,
+      "last_hot_s": 4.66,
+      "lead_s": 0.63,
+      "tail_s": 0.05,
+      "lead_ok": true,
+      "tail_ok": true
+    }
+  ],
+  "sha256": "d48d7e044c977e498c2a89e780951224265e5e6d0244d4fa43009bd2cad170e6"
+}

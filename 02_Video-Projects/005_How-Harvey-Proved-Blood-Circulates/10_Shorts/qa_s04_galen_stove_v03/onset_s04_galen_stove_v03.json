@@ -1,0 +1,107 @@
+[
+  {
+    "piece": "pump",
+    "src": [
+      28.2,
+      30.82
+    ],
+    "cut_s": 0.0,
+    "dur_s": 2.62,
+    "first_hot_s": 0.5,
+    "last_hot_s": 2.56,
+    "lead_s": 0.5,
+    "tail_s": 0.05,
+    "lead_ok": true,
+    "tail_ok": true
+  },
+  {
+    "piece": "stove_a",
+    "src": [
+      30.84,
+      32.72
+    ],
+    "cut_s": 2.7,
+    "dur_s": 1.88,
+    "first_hot_s": 0.47,
+    "last_hot_s": 1.82,
+    "lead_s": 0.47,
+    "tail_s": 0.05,
+    "lead_ok": true,
+    "tail_ok": true
+  },
+  {
+    "piece": "stove_b",
+    "src": [
+      33.05,
+      35.1
+    ],
+    "cut_s": 4.63,
+    "dur_s": 2.05,
+    "first_hot_s": 0.12,
+    "last_hot_s": 1.98,
+    "lead_s": 0.12,
+    "tail_s": 0.06,
+    "lead_ok": true,
+    "tail_ok": true
+  },
+  {
+    "piece": "liver",
+    "src": [
+      18.18,
+      20.76
+    ],
+    "cut_s": 6.8,
+    "dur_s": 2.58,
+    "first_hot_s": 0.04,
+    "last_hot_s": 2.52,
+    "lead_s": 0.04,
+    "tail_s": 0.05,
+    "lead_ok": true,
+    "tail_ok": true
+  },
+  {
+    "piece": "veins_a",
+    "src": [
+      21.53,
+      24.54
+    ],
+    "cut_s": 9.5,
+    "dur_s": 3.01,
+    "first_hot_s": 0.03,
+    "last_hot_s": 2.95,
+    "lead_s": 0.03,
+    "tail_s": 0.05,
+    "lead_ok": true,
+    "tail_ok": true
+  },
+  {
+    "piece": "veins_b",
+    "src": [
+      24.93,
+      27.7
+    ],
+    "cut_s": 12.57,
+    "dur_s": 2.77,
+    "first_hot_s": 0.07,
+    "last_hot_s": 2.7,
+    "lead_s": 0.07,
+    "tail_s": 0.06,
+    "lead_ok": true,
+    "tail_ok": true
+  },
+  {
+    "piece": "centuries",
+    "src": [
+      6.5,
+      11.22
+    ],
+    "cut_s": 15.46,
+    "dur_s": 4.72,
+    "first_hot_s": 0.63,
+    "last_hot_s": 4.66,
+    "lead_s": 0.63,
+    "tail_s": 0.05,
+    "lead_ok": true,
+    "tail_ok": true
+  }
+]
