@@ -2,7 +2,7 @@
   "id": "s11_curved_flask",
   "version": "v07",
   "job": "J0939",
-  "youtube_id": "1-BZaFIMwYU",
+  "youtube_id": "-3L6HzJ_d_4",
   "title": "What Is the Pasteur Swan Neck Flask Experiment?",
   "air_date": "2026-10-27",
   "spoken": "a flask stays clear. Boil broth. Air can drift but dust and microbes settle in the curve. If life arrives as passengers from the outside, then disease can be a passenger too. Break the neck, or tip the trap, and life blooms into cloudiness. Keep the swan neck intact.",
@@ -1511,5 +1511,6 @@
     "min_inter_sentence_gap_s": 0.14
   },
   "title_out_s": 13.4,
-  "loop_s": 0.972
+  "loop_s": 0.972,
+  "replaces": "1-BZaFIMwYU"
 }

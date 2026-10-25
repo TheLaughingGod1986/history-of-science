@@ -1,0 +1,25 @@
+{
+  "at": "2026-10-25T20:05:00Z",
+  "channel": "History of Science",
+  "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+  "new": {
+    "id": "-3L6HzJ_d_4",
+    "privacy": "private",
+    "publishAt": "2026-10-27T11:30:00Z",
+    "title": "What Is the Pasteur Swan Neck Flask Experiment?",
+    "duration": "PT19S",
+    "lang": "en-GB",
+    "kids": false,
+    "hasCustomThumbnail": true,
+    "captions": "en-GB standard serving",
+    "sha256": "5de76a824e885785909d3327f9230e9eef2a42b1943441e41546e97525adaaf5"
+  },
+  "old": {
+    "id": "1-BZaFIMwYU",
+    "privacy": "private",
+    "publishAt": null,
+    "title": "What Is the Pasteur Swan Neck Flask Experiment?",
+    "note": "unscheduled, nothing deleted"
+  },
+  "related": "not set on the new id; CDP 9460 websocket timed out"
+}

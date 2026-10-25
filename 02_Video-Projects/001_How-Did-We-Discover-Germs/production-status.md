@@ -339,6 +339,13 @@ Gate run with `--air-date 2027-01-20` (gate only). Caption check: 16 changes, ra
 **STOP:** parked for Chief: Short PASS. Nothing uploaded.
 
 
+## 25 Oct 2026 — Short `s11_curved_flask_v07` swapped in (`-3L6HzJ_d_4`, Tue 27 Oct 11:30 London, OWB J0952)
+
+- **Authority:** Ben OK on the Studio Kanban Sun 25 Oct 16:19 London (HOS #180 6400071733), after Chief PASS c43 on v07 (sha256 `5de76a824e885785909d3327f9230e9eef2a42b1943441e41546e97525adaaf5`).
+- **New video:** `-3L6HzJ_d_4` is Private with `publishAt` `2026-10-27T11:30:00Z`. Title, description, tags and en-GB match the v02 listing. Cover is v07 frame 0 (FLASK STAYS). en-GB captions are serving. Gate PASS with a duration warning (18.17 s).
+- **Old video:** `1-BZaFIMwYU` is Private and unscheduled. Nothing deleted.
+- **Still to do:** set Related video to `_C92tIJCk8A` in Studio. CDP 9460 did not answer in this run. Buffer stays held until the short is public.
+
 ## 23 Oct 2026 — Short `s11_curved_flask_v02` packaged & uploaded Private (`1-BZaFIMwYU`, Tue 27 Oct 11:30 London, OWB J0866)
 
 - **Authority:** Chief PASS on `J0854` (`hos_001_s11_curved_flask_v02.mp4`, `22.367 s`, sha256 `f60e1c53ab0c7e9ac69728ec03c409be08203a01f3cf33fd6c043d5cf9f02882`) and Chief-created `J0866`. `£0` spend.

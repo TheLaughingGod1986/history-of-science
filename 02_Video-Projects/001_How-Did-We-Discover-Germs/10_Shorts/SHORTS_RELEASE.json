@@ -1,14 +1,14 @@
 {
   "film": "001",
-  "about": "J0866 Chief-authorized upload of J0854 s11_curved_flask v02. Next free HOS weekday Short slot Tue 27 Oct 2026 11:30 London (2026-10-27T11:30:00Z, GMT).",
+  "about": "J0952 swap of s11_curved_flask to v07. Tue 27 Oct 2026 11:30 London (2026-10-27T11:30:00Z). v02 1-BZaFIMwYU is Private and unscheduled.",
   "shorts": [
     {
-      "id": "1-BZaFIMwYU",
+      "id": "-3L6HzJ_d_4",
       "title": "What Is the Pasteur Swan Neck Flask Experiment?",
       "airDate": "2026-10-27T11:30:00Z",
       "promotes": "001",
       "promotesVideoId": "_C92tIJCk8A",
-      "relatedVideoId": "_C92tIJCk8A",
+      "relatedVideoId": null,
       "tags": [
         "pasteur swan neck flask experiment",
         "what is the pasteur swan neck flask experiment",
@@ -19,9 +19,10 @@
       ],
       "madeForKids": false,
       "alteredContent": true,
-      "durationSeconds": 22.37,
-      "cover": "frame 0 of hos_001_s11_curved_flask_v02 (CURVED GLASS)",
-      "note": "J0866 Chief PASS J0854. Private + publishAt Tue 27 Oct 11:30 London (2026-10-27T11:30:00Z). Long _C92tIJCk8A is public; Related set to _C92tIJCk8A. Buffer held until public."
+      "durationSeconds": 18.17,
+      "cover": "frame 0 of hos_001_s11_curved_flask_v07 (FLASK STAYS)",
+      "note": "J0952. Ben OK 6400071733. Private + publishAt Tue 27 Oct 11:30 London. sha 5de76a82. en-GB captions serving. Related not set this run (Studio CDP hung). v02 1-BZaFIMwYU Private unscheduled. Buffer held until the short is public.",
+      "replaces": "1-BZaFIMwYU"
     }
   ]
 }
