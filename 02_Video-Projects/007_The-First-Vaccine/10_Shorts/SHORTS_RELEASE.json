@@ -7,7 +7,7 @@
       "title": "What Was the Edward Jenner Experiment?",
       "airDate": "2026-11-13T11:30:00Z",
       "promotes": "007",
-      "promotesVideoId": null,
+      "promotesVideoId": "ETynHpIYLeY",
       "relatedVideoId": null,
       "tags": [
         "edward jenner experiment",
@@ -21,14 +21,14 @@
       "alteredContent": true,
       "durationSeconds": 26.13,
       "cover": "frame 0 of hos_007_s04_smallpox_test_v01 (THE FIRST TEST)",
-      "note": "J0873 Chief PASS J0865 (sha 3daff43d04bc). Private + publishAt Fri 13 Nov 11:30 London (2026-11-13T11:30:00Z). Related -> 007 long once it has an id (set after the long is uploaded, before the Short goes public). Buffer held until public."
+      "note": "J0873 Chief PASS J0865 (sha 3daff43d04bc). Private + publishAt Fri 13 Nov 11:30 London (2026-11-13T11:30:00Z). Registered for HOS Buffer mirror with long ETynHpIYLeY (J0875); held until public. Studio Related -> ETynHpIYLeY once that long is public on Thu 12 Nov 18:00Z (Studio picker lists public videos only; J0875)."
     },
     {
       "id": "4WUs0beKn0A",
       "title": "Why Is It Called a Vaccine?",
       "airDate": "2026-11-17T11:30:00Z",
       "promotes": "007",
-      "promotesVideoId": null,
+      "promotesVideoId": "ETynHpIYLeY",
       "relatedVideoId": null,
       "tags": [
         "why is it called a vaccine",
@@ -42,7 +42,7 @@
       "alteredContent": true,
       "durationSeconds": 24.17,
       "cover": "frame 0 of hos_007_s05_vacca_jesty_v02 (NOT THE FIRST)",
-      "note": "J0906 Chief PASS J0898 v02 (sha 89a9a1668d74). Private + publishAt Tue 17 Nov 11:30 London (2026-11-17T11:30:00Z). Related -> 007 long once it has an id (tracked in J0875). Buffer held until public."
+      "note": "J0906 Chief PASS J0898 v02 (sha 89a9a1668d74). Private + publishAt Tue 17 Nov 11:30 London (2026-11-17T11:30:00Z). Registered for HOS Buffer mirror with long ETynHpIYLeY (J0875); held until public. Studio Related -> ETynHpIYLeY once that long is public on Thu 12 Nov 18:00Z (Studio picker lists public videos only; J0875)."
     }
   ]
 }

@@ -10,8 +10,8 @@
 | Neighbour gate | **PASS** (3 Oct 2026): 7 education ≥1M; TED-Ed yes. Evidence `11_Upload-Package/evidence_2026-10-03_neighbours.json` |
 | Picture | **All 73/73 Flow rows minted (J0352 KEEP, 21 Oct 2026; HOS PR #351 merged):** P1 17/17 (530 cr) · P2 21/21 (750 cr) · P3 12/12 (390 cr) · P4 11/11 (380 cr) · P5 12/12 (840 cr) = **2,890 cr** vs 7,550 cap. Face lock `P2:08_jenner_window` KEEP applied to all later readable Jenner faces. 3 £0 code graphics (`7808f751`), 2 archive + 18 reuse (£0). |
 | Edit | **Full join v01 (`hos_007_full_join_v01.mp4`, 505.15 s / 12,123 frames, 97 cuts, sha256 `7cfd6a59`) assembled (J0827, 22 Oct 2026, £0)** across Parts 01–05 (Chief PASS J0820) on locked VO with house Didot teaching cards and both £0 repeat-shot fixes (`P1:09c_case_again` 1.88× lancet crop; `P5:06c/06d` split into strictly unused `04_health_workers` back half `3.833–7.958 s` + `06_assembly_1980` tail `5.083–8.000 s` 1.38× front-row push-in). Parts: P1 `61a5c039` (100.83 s, 20 cuts) · P2 `6ab2fb1f` (129.62 s, 22 cuts) · P3 `62a14a08` (78.75 s, 15 cuts) · P4 `e6a005cd` (92.75 s, 20 cuts) · P5 `14206aeb` (103.17 s, 20 cuts). Full join PASS `polish_gate.py` (`0 of 97 rows failed, 5 to look at`) and `picture_qa.py` (`0 of 97 cuts fail, 5 to look at`), 0 freeze events (`>= 0.8 s`). UAT proxy (`5ea31960`) in `~/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/007_full_join_v01/`. Parked for Chief review (`REVIEW_v01.md`). |
-| Air | proposed **Thu 12 Nov 2026 18:00 UK = 18:00 UTC** (GMT); privacy private; madeForKids false; proposals only |
-| Shorts | `s04_smallpox_test_v01` uploaded Private `-I_GHK-GcFs` for Fri 13 Nov 2026 11:30 UK (`2026-11-13T11:30:00Z`, J0873); `s05_vacca_jesty_v02` (`24.167 s`, sha256 `89a9a1668d74`) uploaded Private `4WUs0beKn0A` for Tue 17 Nov 2026 11:30 UK (`2026-11-17T11:30:00Z`, J0906); Related → 007 long once uploaded (`J0875`) |
+| Air | **Thu 12 Nov 2026 18:00 UK = 18:00 UTC** (`2026-11-12T18:00:00Z`, GMT); uploaded Private as **`ETynHpIYLeY`** (`J0946`, `master_v04`, sha256 `c7f62adb`); `madeForKids=false`; `en-GB` captions serving |
+| Shorts | `s04_smallpox_test_v01` uploaded Private `-I_GHK-GcFs` for Fri 13 Nov 2026 11:30 UK (`2026-11-13T11:30:00Z`, J0873); `s05_vacca_jesty_v02` (`24.167 s`, sha256 `89a9a1668d74`) uploaded Private `4WUs0beKn0A` for Tue 17 Nov 2026 11:30 UK (`2026-11-17T11:30:00Z`, J0906); both registered for HOS Buffer mirror (`long=ETynHpIYLeY`, `J0875`); Studio Related → `ETynHpIYLeY` once that long is public on Thu 12 Nov 18:00Z (`J0875`) |
 | Backup | Neighbour gate PASSED — Lightning backup not needed |
 
 ## STOP
@@ -117,7 +117,28 @@ PASS  Short 4WUs0beKn0A  private 2026-11-17 11:30 UK  Why Is It Called a Vaccine
 48 videos, 0 errors.
 ```
 
+## 25 Oct 2026 — J0875: HOS Buffer mirror registration (`-I_GHK-GcFs` & `4WUs0beKn0A` → `ETynHpIYLeY`) & Studio Related picker check (Gemini covering)
 
+- **Long uploaded (`J0946`):** `master_v04` (`sha256 c7f62adbb241bf3fbfaa3a17929f05768eedcf89044cb2cc5ebd2971c163e810`) is uploaded Private on `@HistoryOfScienceYT` (`UCXp7HkBIl1LgaznXuZHJyRg`) as **`ETynHpIYLeY`** (*Why Vaccines Are Named After a Cow*), `publishAt=2026-11-12T18:00:00Z` (**Thu 12 Nov 2026 18:00 London**), thumbnail A set, `en-GB` captions serving (`API_READBACK_J0946.json`).
+- **HOS Buffer mirror registration (`J0875`):** Registered both HOS 007 Shorts in `orbit-with-ben` `00_Brand/Channel-Setup/social/hos/UPLOADS.json` via `buffer-mirror.ts register --channel hos` with `--long ETynHpIYLeY`:
+  1. **`-I_GHK-GcFs`** (*What Was the Edward Jenner Experiment?*, `hos_007_s04_smallpox_test_v01.mp4`, sha256 `3daff43d04bc`, `publishAt=2026-11-13T11:30:00Z`);
+  2. **`4WUs0beKn0A`** (*Why Is It Called a Vaccine?*, `hos_007_s05_vacca_jesty_v02.mp4`, sha256 `89a9a1668d74`, `publishAt=2026-11-17T11:30:00Z`).
+  `npx tsx --env-file=.env scripts/buffer-mirror.ts check --channel hos --dry-run` verified both Shorts are cleanly in `deferred` (ready for automatic mirroring within 7 days of their air dates).
+- **HOS records updated:** Set `long` / `promotesVideoId` / `long_id` = `ETynHpIYLeY` across `00_Brand/Channel-Setup/social/UPLOADS.json`, `10_Shorts/SHORTS_RELEASE.json`, `10_Shorts/SHORTS_UPLOAD_INDEX.json`, `10_Shorts/11_Upload-Package/s04_smallpox_test/PACKAGE_MANIFEST.json`, `10_Shorts/11_Upload-Package/s05_vacca_jesty/PACKAGE_MANIFEST.json`, `11_Upload-Package/LAUNCH_PLAN.md`, and `00_Brand/Channel-Setup/audits/SHORTS_LOG.md`.
+- **Studio `Related video` check (`STUDIO_READBACK_-I_GHK-GcFs.json`, `STUDIO_READBACK_4WUs0beKn0A.json`, CDP `:9460`):**
+  - Confirmed channel `History of Science` (`UCXp7HkBIl1LgaznXuZHJyRg`) before inspecting `-I_GHK-GcFs` and `4WUs0beKn0A`.
+  - Opened `ytcp-video-pick-dialog` on both Shorts: the Studio picker lists only the **23 public videos** on the channel (`0` matches when searching `"Why Vaccines Are Named After a Cow"`, `"No matching results. Please try again."`), because `ETynHpIYLeY` is Private (`Scheduled` for `2026-11-12T18:00:00Z`).
+  - Reloaded both Shorts cleanly with zero changes: `Visibility: Scheduled`, `No, it's not Made for Kids` (`checked: true`), `saveDisabled: true`, `Related video None`.
+  - **Next:** `J0875` stays parked until `ETynHpIYLeY` goes public on **Thu 12 Nov 2026 18:00Z** (reopen on/after Thu 12 Nov 18:05Z, before `-I_GHK-GcFs` airs on Fri 13 Nov 11:30Z, matching `J0241` / `J0317` / `J0861` / `J0910`).
 
-
+```text
+PASS  02_Video-Projects/007_The-First-Vaccine/11_Upload-Package/PACKAGE_MANIFEST.json
+PASS  02_Video-Projects/007_The-First-Vaccine/10_Shorts/SHORTS_RELEASE.json
+   warn  [related] What Was the Edward Jenner Experiment?: Related video not set yet (set it to the 007 long once that long is public)
+   warn  [related] Why Is It Called a Vaccine?: Related video not set yet (set it to the 007 long once that long is public)
+PASS  long  ETynHpIYLeY  private 2026-11-12 18:00 UK  Why Vaccines Are Named After a Cow
+PASS  Short 4WUs0beKn0A  private 2026-11-17 11:30 UK  Why Is It Called a Vaccine?
+PASS  Short -I_GHK-GcFs  private 2026-11-13 11:30 UK  What Was the Edward Jenner Experiment?
+54 videos, 0 errors.
+```
 

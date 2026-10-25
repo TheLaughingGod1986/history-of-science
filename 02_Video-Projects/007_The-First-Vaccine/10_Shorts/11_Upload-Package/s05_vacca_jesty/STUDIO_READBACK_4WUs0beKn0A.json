@@ -1,15 +1,29 @@
 {
-  "checkedAt": "2026-10-24T18:06:11.029Z",
+  "checkedAt": "2026-10-25T21:02:05.311707+00:00",
   "shortId": "4WUs0beKn0A",
-  "longId": null,
+  "longId": "ETynHpIYLeY",
   "title": "Why Is It Called a Vaccine?",
   "channel": "UCXp7HkBIl1LgaznXuZHJyRg",
   "relatedSet": false,
-  "relatedNote": "007 long not uploaded yet; set Related -> 007 long once it has an id, before Tue 17 Nov 11:30Z (tracked in J0875)",
+  "relatedNote": "007 long ETynHpIYLeY (Why Vaccines Are Named After a Cow) is Private (publishAt 2026-11-12T18:00:00Z). Studio ytcp-video-pick-dialog lists 23 public channel videos only (0 matches when filtering for 'Why Vaccines Are Named After a Cow'). Reopen J0875 once ETynHpIYLeY is public on Thu 12 Nov 2026 18:00Z (before Fri 13 Nov 2026 11:30Z).",
+  "pickerCheck": {
+    "opened": {
+      "clicked": "Related video None",
+      "tag": "YTCP-TEXT-DROPDOWN-TRIGGER"
+    },
+    "unfilteredPublicCount": 23,
+    "searched": {
+      "hasDialog": true,
+      "typed": true,
+      "placeholder": "Search your videos"
+    },
+    "filteredCardCount": 0,
+    "filteredDialogText": "Choose specific video No matching results. Please try again."
+  },
   "details": {
     "radios": [
       {
-        "text": "Yes, it's Made for Kids . Features like personalised ads and notifications won't be available on videos that are Made for Kids. Videos that are set as Made for Kids by you are more likely to be recommended alongside other children's videos. Learn more",
+        "text": "Yes, it's Made for Kids . Features like personalised ads and notifications won't be available on videos that are Made for Kids. Videos that are set as Made for ",
         "checked": "false"
       },
       {
@@ -23,33 +37,11 @@
       {
         "text": "No, don't restrict my video to viewers over 18 only",
         "checked": "true"
-      },
-      {
-        "text": "Yes, my video includes paid promotion",
-        "checked": "false"
-      },
-      {
-        "text": "No, my video doesn't include paid promotion",
-        "checked": "false"
-      },
-      {
-        "text": "Yes",
-        "checked": "true"
-      },
-      {
-        "text": "No",
-        "checked": "false"
-      },
-      {
-        "text": "Allow video and audio remixing",
-        "checked": "true"
-      },
-      {
-        "text": "Allow only audio remixing",
-        "checked": "false"
       }
     ],
-    "saveDisabled": false,
-    "relatedChunk": "Related video None Subtitles"
+    "saveDisabled": true,
+    "relatedChunk": "Related video None",
+    "scheduled": true,
+    "premiere": false
   }
 }

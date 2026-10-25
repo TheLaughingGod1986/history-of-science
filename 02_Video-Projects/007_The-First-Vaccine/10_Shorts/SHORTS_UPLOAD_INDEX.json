@@ -1,10 +1,10 @@
 {
-  "long_id": null,
-  "long_url": null,
+  "long_id": "ETynHpIYLeY",
+  "long_url": "https://youtu.be/ETynHpIYLeY",
   "long_title": "Why Vaccines Are Named After a Cow",
   "channel": "@HistoryOfScienceYT",
   "affiliate": null,
-  "note": "Do not social-mirror until each Short is public on YouTube and its promoted long has an id. Set Related -> 007 long once it has an id, before the Short goes public (J0875).",
+  "note": "Registered in OWB social/hos/UPLOADS.json with long=ETynHpIYLeY (J0875); Buffer held until each Short goes public. Set Studio Related -> ETynHpIYLeY once that long is public on Thu 12 Nov 2026 18:00Z, before Fri 13 Nov 11:30Z (J0875).",
   "shorts": [
     {
       "id": "s04_smallpox_test",
