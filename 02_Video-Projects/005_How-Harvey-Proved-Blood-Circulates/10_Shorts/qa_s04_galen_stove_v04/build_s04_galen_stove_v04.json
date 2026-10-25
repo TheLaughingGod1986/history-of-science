@@ -1,0 +1,353 @@
+{
+  "file": "hos_005_s04_galen_stove_v04.mp4",
+  "sha256": "f15fb5ba050b8842c30fec4fde51a83eda7055bd8d5e39b018cf7aba9e769a8f",
+  "duration_s": 21.5,
+  "spoken": "The heart wasn't a pump at all. It was a warm stove, and its job was to heat the blood. Your food turns into a milky juice, and your liver turns that juice into blood. Your veins carry the blood out to every part of you, and your flesh soaks it up as nourishment. For 14 centuries, hardly anyone dared to argue with his books.",
+  "brief": {
+    "frame0_source": "04_Generated-Clips/part02/raw/v01/05_heart_stove_t1.mp4",
+    "frame0_zoom": "none \u2014 moving plate, in 1.2s, crop x=656, no Ken Burns",
+    "frame0_in_s": 1.2,
+    "loop_in_s": 0.12,
+    "loop_ends_on": "frame before frame 0 in-point; no frame-0 copy",
+    "no_frame0_stamp": true,
+    "first_word_s": 0.03,
+    "surprise_s": {
+      "pump": 0.963,
+      "wasnt": 0.578
+    },
+    "first_cut_s": 2.15,
+    "last_word_to_loop_s": 0.88,
+    "meta_promise": false,
+    "runtime_s": 21.5,
+    "longest_hold_s": 2.967,
+    "payoff_phrase": "For 14 centuries",
+    "payoff_s": 16.619999999999994,
+    "payoff_frac": 0.773,
+    "payoff_leads": false,
+    "loop_sentence": "argue with his books. The heart wasn't a pump at all.",
+    "loop_diff": 4.27,
+    "loop_diff_masked": 4.27,
+    "loop_diff_whole": 11.3,
+    "loop_diff_mask": "cream, ink and yellow text (hook, captions, Galen card)",
+    "lufs": -14.4,
+    "true_peak_dbfs": -1.6,
+    "frame0_black": 0.0,
+    "max_word_gap_s": 0.2,
+    "no_cta": true,
+    "dropped": "You eat. Here is what Galen taught.",
+    "who_card": {
+      "name": "GALEN",
+      "line2": "Rome, c. AD 170",
+      "in_s": 2.3,
+      "out_s": 5.5,
+      "y": [
+        1009,
+        1184
+      ],
+      "band": [
+        656,
+        1264
+      ]
+    },
+    "onset": [
+      {
+        "piece": "pump",
+        "src_onset": 28.7,
+        "src_offset": 30.77,
+        "cut_src": 28.67,
+        "cut_s": 0.0,
+        "speech_t": 0.03,
+        "lead_s": 0.03,
+        "tail_s": 0.045,
+        "lead_ok": true,
+        "tail_ok": true,
+        "join_after": "sentence",
+        "gap_after_s": 0.11,
+        "measured_gap_s": 0.16
+      },
+      {
+        "piece": "stove",
+        "src_onset": 31.31,
+        "src_offset": 32.66,
+        "cut_src": 31.28,
+        "cut_s": 2.21,
+        "speech_t": 2.24,
+        "lead_s": 0.03,
+        "tail_s": 0.045,
+        "lead_ok": true,
+        "tail_ok": true,
+        "join_after": "comma",
+        "gap_after_s": 0.15,
+        "measured_gap_s": 0.19
+      },
+      {
+        "piece": "job",
+        "src_onset": 33.17,
+        "src_offset": 35.01,
+        "cut_src": 33.14,
+        "cut_s": 3.74,
+        "speech_t": 3.77,
+        "lead_s": 0.03,
+        "tail_s": 0.045,
+        "lead_ok": true,
+        "tail_ok": true,
+        "join_after": "sentence",
+        "gap_after_s": 0.11,
+        "measured_gap_s": 0.17
+      },
+      {
+        "piece": "juice",
+        "src_onset": 15.48,
+        "src_offset": 17.67,
+        "cut_src": 15.45,
+        "cut_s": 5.72,
+        "speech_t": 5.75,
+        "lead_s": 0.03,
+        "tail_s": 0.045,
+        "lead_ok": true,
+        "tail_ok": true,
+        "join_after": "comma",
+        "gap_after_s": 0.15,
+        "measured_gap_s": 0.19
+      },
+      {
+        "piece": "liver",
+        "src_onset": 18.22,
+        "src_offset": 20.69,
+        "cut_src": 18.19,
+        "cut_s": 8.09,
+        "speech_t": 8.12,
+        "lead_s": 0.03,
+        "tail_s": 0.045,
+        "lead_ok": true,
+        "tail_ok": true,
+        "join_after": "sentence",
+        "gap_after_s": 0.11,
+        "measured_gap_s": 0.18
+      },
+      {
+        "piece": "veins",
+        "src_onset": 21.55,
+        "src_offset": 24.49,
+        "cut_src": 21.52,
+        "cut_s": 10.7,
+        "speech_t": 10.73,
+        "lead_s": 0.03,
+        "tail_s": 0.045,
+        "lead_ok": true,
+        "tail_ok": true,
+        "join_after": "comma",
+        "gap_after_s": 0.15,
+        "measured_gap_s": 0.2
+      },
+      {
+        "piece": "flesh",
+        "src_onset": 25.0,
+        "src_offset": 27.63,
+        "cut_src": 24.97,
+        "cut_s": 13.82,
+        "speech_t": 13.85,
+        "lead_s": 0.03,
+        "tail_s": 0.045,
+        "lead_ok": true,
+        "tail_ok": true,
+        "join_after": "sentence",
+        "gap_after_s": 0.11,
+        "measured_gap_s": 0.2
+      },
+      {
+        "piece": "centuries",
+        "src_onset": 7.16,
+        "src_offset": 11.17,
+        "cut_src": 7.13,
+        "cut_s": 16.59,
+        "speech_t": 16.62,
+        "lead_s": 0.03,
+        "tail_s": 0.045,
+        "lead_ok": true,
+        "tail_ok": true,
+        "join_after": null,
+        "gap_after_s": 0.0,
+        "measured_gap_s": null
+      }
+    ],
+    "sha256": "f15fb5ba050b8842c30fec4fde51a83eda7055bd8d5e39b018cf7aba9e769a8f"
+  },
+  "gate_exit": 0,
+  "gate_verdict": "PASS",
+  "gate_fails": [],
+  "gate_warns": [
+    "duration 21.5s outside 22\u201327s band"
+  ],
+  "qa": {
+    "polish_gate": {
+      "exit": 0,
+      "tail": [
+        "s05_09_vesalius_nothing_t1    10.1s 09_vesalius_nothing_t1.mp4   ok",
+        "s06_04_veins_soak_t1    13.0s 04_veins_soak_t1.mp4         ok",
+        "s07_07_doctors_believe_t1    16.0s 07_doctors_believe_t1.mp4    ok",
+        "s08_10_why_believe_t1    19.0s 10_why_believe_t1.mp4        ok",
+        "s09_loop    21.0s loop_span_05_heart_stove_t1. WARN low detail: edge density 0.0407 < film p5 0.0410",
+        "polish gate PASS: 0 of 9 rows failed, 1 to look at -> 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s04_galen_stove_v04/polish_gate_s04_galen_stove_v04.json"
+      ]
+    },
+    "picture_qa": {
+      "exit": 0,
+      "tail": [
+        "WARN   0:21 row s09_loop loop_span_05_heart_stove_t1.mp4: low detail: edge density 0.0407 < film p5 0.0410",
+        "picture QA PASS: 0 of 9 cuts fail, 1 to look at -> 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s04_galen_stove_v04/picture_qa_s04_galen_stove_v04/PICTURE_QA.md, 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s04_galen_stove_v04/picture_qa_s04_galen_stove_v04/picture_qa_review.jpg"
+      ]
+    }
+  },
+  "music_exit": 0,
+  "music_tail": [
+    "WARN reused: couldn't read saturn_long_vo_v03_tightened.m4a to compare (OSError); download it or pass --others",
+    "WARN reused: couldn't read monday_saturn_short_vo_v01_LISTEN.wav to compare (OSError); download it or pass --others",
+    "WARN reused: couldn't read saturn_long_vo_v03b_tightened_LOCK.m4a to compare (OSError); download it or pass --others",
+    "WARN reused: couldn't read saturn_long_vo_v03b_tightened_LOCK.wav to compare (OSError); download it or pass --others",
+    "WARN reused: couldn't read saturn_long_vo_v01_LISTEN.wav to compare (OSError); download it or pass --others",
+    "WARN reused: couldn't read monday_saturn_short_vo_v02_how_long.mp3 to compare (OSError); download it or pass --others",
+    "WARN reused: couldn't read saturn_long_vo_v03_tightened.wav to compare (OSError); download it or pass --others",
+    "music gate PASS: hos_005_s04_galen_stove_v04_bed.wav, 21.7 s, about None BPM, brief Pace: 62-78 BPM"
+  ],
+  "sfx": {
+    "exit": 0,
+    "output": "SFX level PASS: VO -19.6 LUFS, SFX -47.0 LUFS, 1 hits",
+    "bed_db": -13.0,
+    "sfx_db": -15.0
+  },
+  "copies": [
+    "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s04_galen_stove_v04.mp4",
+    "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s04_galen_stove_v04_PHONE.mp4",
+    "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s04_galen_stove_v04_2fps_sheet.jpg",
+    "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/s04_galen_stove_v04/hos_005_s04_galen_stove_v04.mp4",
+    "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/s04_galen_stove_v04/hos_005_s04_galen_stove_v04_PHONE.mp4",
+    "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/s04_galen_stove_v04/hos_005_s04_galen_stove_v04_2fps_sheet.jpg"
+  ],
+  "asr_ok": true,
+  "asr_notes": [
+    "small.en token differs only by 14/fourteen; spoken line kept"
+  ],
+  "onset": [
+    {
+      "piece": "pump",
+      "src_onset": 28.7,
+      "src_offset": 30.77,
+      "cut_src": 28.67,
+      "cut_s": 0.0,
+      "speech_t": 0.03,
+      "lead_s": 0.03,
+      "tail_s": 0.045,
+      "lead_ok": true,
+      "tail_ok": true,
+      "join_after": "sentence",
+      "gap_after_s": 0.11,
+      "measured_gap_s": 0.16
+    },
+    {
+      "piece": "stove",
+      "src_onset": 31.31,
+      "src_offset": 32.66,
+      "cut_src": 31.28,
+      "cut_s": 2.21,
+      "speech_t": 2.24,
+      "lead_s": 0.03,
+      "tail_s": 0.045,
+      "lead_ok": true,
+      "tail_ok": true,
+      "join_after": "comma",
+      "gap_after_s": 0.15,
+      "measured_gap_s": 0.19
+    },
+    {
+      "piece": "job",
+      "src_onset": 33.17,
+      "src_offset": 35.01,
+      "cut_src": 33.14,
+      "cut_s": 3.74,
+      "speech_t": 3.77,
+      "lead_s": 0.03,
+      "tail_s": 0.045,
+      "lead_ok": true,
+      "tail_ok": true,
+      "join_after": "sentence",
+      "gap_after_s": 0.11,
+      "measured_gap_s": 0.17
+    },
+    {
+      "piece": "juice",
+      "src_onset": 15.48,
+      "src_offset": 17.67,
+      "cut_src": 15.45,
+      "cut_s": 5.72,
+      "speech_t": 5.75,
+      "lead_s": 0.03,
+      "tail_s": 0.045,
+      "lead_ok": true,
+      "tail_ok": true,
+      "join_after": "comma",
+      "gap_after_s": 0.15,
+      "measured_gap_s": 0.19
+    },
+    {
+      "piece": "liver",
+      "src_onset": 18.22,
+      "src_offset": 20.69,
+      "cut_src": 18.19,
+      "cut_s": 8.09,
+      "speech_t": 8.12,
+      "lead_s": 0.03,
+      "tail_s": 0.045,
+      "lead_ok": true,
+      "tail_ok": true,
+      "join_after": "sentence",
+      "gap_after_s": 0.11,
+      "measured_gap_s": 0.18
+    },
+    {
+      "piece": "veins",
+      "src_onset": 21.55,
+      "src_offset": 24.49,
+      "cut_src": 21.52,
+      "cut_s": 10.7,
+      "speech_t": 10.73,
+      "lead_s": 0.03,
+      "tail_s": 0.045,
+      "lead_ok": true,
+      "tail_ok": true,
+      "join_after": "comma",
+      "gap_after_s": 0.15,
+      "measured_gap_s": 0.2
+    },
+    {
+      "piece": "flesh",
+      "src_onset": 25.0,
+      "src_offset": 27.63,
+      "cut_src": 24.97,
+      "cut_s": 13.82,
+      "speech_t": 13.85,
+      "lead_s": 0.03,
+      "tail_s": 0.045,
+      "lead_ok": true,
+      "tail_ok": true,
+      "join_after": "sentence",
+      "gap_after_s": 0.11,
+      "measured_gap_s": 0.2
+    },
+    {
+      "piece": "centuries",
+      "src_onset": 7.16,
+      "src_offset": 11.17,
+      "cut_src": 7.13,
+      "cut_s": 16.59,
+      "speech_t": 16.62,
+      "lead_s": 0.03,
+      "tail_s": 0.045,
+      "lead_ok": true,
+      "tail_ok": true,
+      "join_after": null,
+      "gap_after_s": 0.0,
+      "measured_gap_s": null
+    }
+  ]
+}

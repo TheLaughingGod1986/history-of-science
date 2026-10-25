@@ -1,0 +1,8 @@
+J0918 HOS ship gate (Chief, 24 Oct 2026).
+(a) FAIL a pushed still at frame 0 when the 0-1.5 s centre-band frame diff is under 1.50.
+(b) FAIL when the first cut comes after 3.0 s.
+(c) WARN when the first VO word starts after 0.15 s.
+(d) WARN when the gap from the last word to the end of the file is over 1.5 s.
+(e) FAIL if the script or the spoken line contains a meta-promise.
+measured frame0_diff_0_1_5s=2.98 first_cut_s=2.13 vo_onset_s=0.038 tail_gap_s=0.88 stayed_fails=[]
+verdict: PASS
