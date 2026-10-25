@@ -1,0 +1,4 @@
+spoken: a flask stays clear. Boil broth. Air can drift but dust and microbes settle in the curve. If life arrives as passengers from the outside, then disease can be a passenger too. Break the neck, or tip the trap, and life blooms into cloudiness. Keep the swan neck intact.
+stem: the flask stays clear boil broth air can drift but dust and microbes settle in the curve if life arrives as passengers from the outside then disease can be a passenger to break the neck or tip the trap and life blooms into cloudiness keep the swan neck intact
+mix_first_3s: The flask stays clear. Boil broth.
+OK

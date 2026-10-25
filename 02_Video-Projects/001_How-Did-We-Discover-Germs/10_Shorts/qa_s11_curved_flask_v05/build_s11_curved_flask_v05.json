@@ -1,0 +1,471 @@
+{
+  "file": "hos_001_s11_curved_flask_v05.mp4",
+  "sha256": "353ff185679bb5a7377eec152380e27bacbd6d6e8e3fbbb0e8b05d08778c1bc3",
+  "duration_s": 19.267,
+  "spoken": "a flask stays clear. Boil broth. Air can drift but dust and microbes settle in the curve. If life arrives as passengers from the outside, then disease can be a passenger too. Break the neck, or tip the trap, and life blooms into cloudiness. Keep the swan neck intact.",
+  "brief": {
+    "frame0_source": "04_Generated-Clips/part04/raw/v01_fast_probe/01_question_mark_flask_v17.mp4",
+    "frame0_zoom": "none \u2014 moving plate, in 1.80s, crop x=720, no Ken Burns",
+    "first_word_s": 0.0,
+    "surprise_s": {
+      "flask": 0.3,
+      "stays": 0.92,
+      "clear": 1.307
+    },
+    "first_cut_s": 2.08,
+    "last_word_to_loop_s": 0.987,
+    "meta_promise": false,
+    "runtime_s": 19.267,
+    "longest_hold_s": 3.004,
+    "payoff_phrase": "life blooms into cloudiness",
+    "payoff_s": 14.405,
+    "payoff_frac": 0.748,
+    "payoff_vs_70pct": 0.048,
+    "loop_sentence": "Keep the swan neck intact. A flask stays clear.",
+    "loop_diff": 3.74,
+    "loop_diff_masked": 3.74,
+    "loop_diff_whole": 10.8,
+    "lufs": -14.3,
+    "measured_lufs": -14.3,
+    "true_peak_dbfs": -1.4,
+    "frame0_black": 0.175,
+    "max_inter_sentence_gap_s": 0.2,
+    "hook_level": {
+      "opener_gain_db": 7.54,
+      "hook_speech_db": -17.72,
+      "boil_speech_db": -17.63,
+      "hook_minus_boil_db": -0.08,
+      "gaps": [
+        {
+          "t": 0.3,
+          "dur": 0.13
+        },
+        {
+          "t": 0.75,
+          "dur": 0.18
+        },
+        {
+          "t": 1.51,
+          "dur": 0.13
+        },
+        {
+          "t": 1.94,
+          "dur": 0.15
+        },
+        {
+          "t": 2.73,
+          "dur": 0.15
+        },
+        {
+          "t": 3.12,
+          "dur": 0.09
+        },
+        {
+          "t": 3.69,
+          "dur": 0.17
+        },
+        {
+          "t": 3.96,
+          "dur": 0.09
+        },
+        {
+          "t": 4.35,
+          "dur": 0.11
+        },
+        {
+          "t": 4.55,
+          "dur": 0.14
+        },
+        {
+          "t": 4.98,
+          "dur": 0.15
+        },
+        {
+          "t": 5.17,
+          "dur": 0.14
+        },
+        {
+          "t": 6.17,
+          "dur": 0.13
+        },
+        {
+          "t": 6.36,
+          "dur": 0.14
+        },
+        {
+          "t": 6.78,
+          "dur": 0.15
+        },
+        {
+          "t": 8.08,
+          "dur": 0.12
+        },
+        {
+          "t": 8.27,
+          "dur": 0.14
+        },
+        {
+          "t": 9.92,
+          "dur": 0.17
+        },
+        {
+          "t": 10.8,
+          "dur": 0.09
+        },
+        {
+          "t": 10.98,
+          "dur": 0.17
+        },
+        {
+          "t": 12.28,
+          "dur": 0.16
+        },
+        {
+          "t": 13.03,
+          "dur": 0.17
+        },
+        {
+          "t": 13.67,
+          "dur": 0.15
+        },
+        {
+          "t": 14.13,
+          "dur": 0.18
+        },
+        {
+          "t": 14.81,
+          "dur": 0.14
+        },
+        {
+          "t": 14.99,
+          "dur": 0.14
+        },
+        {
+          "t": 16.53,
+          "dur": 0.2
+        },
+        {
+          "t": 17.53,
+          "dur": 0.1
+        },
+        {
+          "t": 17.72,
+          "dur": 0.15
+        }
+      ],
+      "max_gap_s": 0.2,
+      "subs": 21,
+      "pieces": [
+        {
+          "i": 0,
+          "tokens": [
+            "a",
+            "flask"
+          ],
+          "window": [
+            4.12,
+            4.75
+          ],
+          "onset_s": 4.12,
+          "offset_s": 4.75,
+          "cut_s": 4.12,
+          "end_s": 4.75,
+          "lead_ms": 0.0,
+          "tail_ms": 0.0,
+          "fade_done_s": 4.12,
+          "fade_before_onset": true,
+          "opens_in_speech": true,
+          "silence_after": false
+        },
+        {
+          "i": 1,
+          "tokens": [
+            "stays",
+            "clear"
+          ],
+          "window": [
+            16.22,
+            17.16
+          ],
+          "onset_s": 16.22,
+          "offset_s": 17.12,
+          "cut_s": 16.22,
+          "end_s": 17.15,
+          "lead_ms": 0.0,
+          "tail_ms": 30.0,
+          "fade_done_s": 16.245,
+          "fade_before_onset": false,
+          "opens_in_speech": true,
+          "silence_after": true
+        },
+        {
+          "i": 2,
+          "tokens": [
+            "boil",
+            "broth"
+          ],
+          "window": [
+            7.2,
+            8.32
+          ],
+          "onset_s": 7.37,
+          "offset_s": 8.1,
+          "cut_s": 7.32,
+          "end_s": 8.13,
+          "lead_ms": 50.0,
+          "tail_ms": 30.0,
+          "fade_done_s": 7.345,
+          "fade_before_onset": true,
+          "opens_in_speech": false,
+          "silence_after": true
+        },
+        {
+          "i": 3,
+          "tokens": [
+            "air",
+            "can",
+            "drift"
+          ],
+          "window": [
+            11.0,
+            12.02
+          ],
+          "onset_s": 11.09,
+          "offset_s": 11.99,
+          "cut_s": 11.06,
+          "end_s": 12.02,
+          "lead_ms": 30.0,
+          "tail_ms": 30.0,
+          "fade_done_s": 11.085,
+          "fade_before_onset": true,
+          "opens_in_speech": false,
+          "silence_after": true
+        },
+        {
+          "i": 4,
+          "tokens": [
+            "but",
+            "dust",
+            "and",
+            "microbes",
+            "settle",
+            "in",
+            "the",
+            "curve"
+          ],
+          "window": [
+            12.35,
+            15.12
+          ],
+          "onset_s": 12.48,
+          "offset_s": 15.09,
+          "cut_s": 12.45,
+          "end_s": 15.12,
+          "lead_ms": 30.0,
+          "tail_ms": 30.0,
+          "fade_done_s": 12.475,
+          "fade_before_onset": true,
+          "opens_in_speech": false,
+          "silence_after": true
+        },
+        {
+          "i": 5,
+          "tokens": [
+            "if",
+            "life",
+            "arrives",
+            "as",
+            "passengers",
+            "from",
+            "the",
+            "outside"
+          ],
+          "window": [
+            37.98,
+            41.0
+          ],
+          "onset_s": 38.04,
+          "offset_s": 40.95,
+          "cut_s": 38.01,
+          "end_s": 40.98,
+          "lead_ms": 30.0,
+          "tail_ms": 30.0,
+          "fade_done_s": 38.035,
+          "fade_before_onset": true,
+          "opens_in_speech": false,
+          "silence_after": true
+        },
+        {
+          "i": 6,
+          "tokens": [
+            "then",
+            "disease",
+            "can",
+            "be",
+            "a",
+            "passenger",
+            "too"
+          ],
+          "window": [
+            41.38,
+            43.56
+          ],
+          "onset_s": 41.42,
+          "offset_s": 43.51,
+          "cut_s": 41.39,
+          "end_s": 43.54,
+          "lead_ms": 30.0,
+          "tail_ms": 30.0,
+          "fade_done_s": 41.415,
+          "fade_before_onset": true,
+          "opens_in_speech": false,
+          "silence_after": true
+        },
+        {
+          "i": 7,
+          "tokens": [
+            "break",
+            "the",
+            "neck"
+          ],
+          "window": [
+            17.8,
+            18.64
+          ],
+          "onset_s": 17.92,
+          "offset_s": 18.59,
+          "cut_s": 17.89,
+          "end_s": 18.62,
+          "lead_ms": 30.0,
+          "tail_ms": 30.0,
+          "fade_done_s": 17.915,
+          "fade_before_onset": true,
+          "opens_in_speech": false,
+          "silence_after": true
+        },
+        {
+          "i": 8,
+          "tokens": [
+            "or",
+            "tip",
+            "the",
+            "trap"
+          ],
+          "window": [
+            18.95,
+            20.04
+          ],
+          "onset_s": 19.07,
+          "offset_s": 19.98,
+          "cut_s": 19.04,
+          "end_s": 20.01,
+          "lead_ms": 30.0,
+          "tail_ms": 30.0,
+          "fade_done_s": 19.065,
+          "fade_before_onset": true,
+          "opens_in_speech": false,
+          "silence_after": true
+        },
+        {
+          "i": 9,
+          "tokens": [
+            "and",
+            "life",
+            "blooms",
+            "into",
+            "cloudiness"
+          ],
+          "window": [
+            20.38,
+            22.74
+          ],
+          "onset_s": 20.51,
+          "offset_s": 22.7,
+          "cut_s": 20.48,
+          "end_s": 22.73,
+          "lead_ms": 30.0,
+          "tail_ms": 30.0,
+          "fade_done_s": 20.505,
+          "fade_before_onset": true,
+          "opens_in_speech": false,
+          "silence_after": true
+        },
+        {
+          "i": 10,
+          "tokens": [
+            "keep",
+            "the",
+            "swan",
+            "neck",
+            "intact"
+          ],
+          "window": [
+            8.78,
+            10.36
+          ],
+          "onset_s": 8.86,
+          "offset_s": 10.33,
+          "cut_s": 8.83,
+          "end_s": 10.36,
+          "lead_ms": 30.0,
+          "tail_ms": 30.0,
+          "fade_done_s": 8.855,
+          "fade_before_onset": true,
+          "opens_in_speech": false,
+          "silence_after": true
+        }
+      ]
+    },
+    "title_out_s": 14.0,
+    "loop_s": 0.957
+  },
+  "gate_exit": 0,
+  "gate_verdict": "PASS",
+  "gate_fails": [],
+  "gate_warns": [
+    "duration 19.3s outside 22\u201327s band"
+  ],
+  "qa": {
+    "polish_gate": {
+      "exit": 0,
+      "tail": [
+        "s09_result    17.5s 11_result_returns_v01.mp4    ok",
+        "s10_loop    18.8s loop_end_01_question_mark_fl ok",
+        "polish gate PASS: 0 of 10 rows failed, 1 to look at -> 02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/qa_s11_curved_flask_v05/polish_gate_s11_curved_flask_v05.json"
+      ]
+    },
+    "picture_qa": {
+      "exit": 0,
+      "tail": [
+        "WARN   0:08 row s05_passengers 08_passengers_v20.mp4: low detail: edge density 0.02 < film p5 0.0353",
+        "picture QA PASS: 0 of 10 cuts fail, 1 to look at -> 02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/qa_s11_curved_flask_v05/picture_qa_s11_curved_flask_v05/PICTURE_QA.md, 02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/qa_s11_curved_flask_v05/picture_qa_s11_curved_flask_v05/picture_qa_review.jpg"
+      ]
+    }
+  },
+  "music_exit": 0,
+  "music_tail": [
+    "WARN reused: couldn't read saturn_long_vo_v01_LISTEN.wav to compare (OSError); download it or pass --others",
+    "WARN reused: couldn't read monday_saturn_short_vo_v02_how_long.mp3 to compare (OSError); download it or pass --others",
+    "WARN reused: couldn't read saturn_long_vo_v03_tightened.wav to compare (OSError); download it or pass --others",
+    "music gate PASS: hos_001_s11_curved_flask_v05_bed.wav, 19.5 s, about 75.0 BPM, brief Pace: 68-78 BPM"
+  ],
+  "sfx": {
+    "exit": 0,
+    "output": "SFX level PASS: VO -19.6 LUFS, SFX -49.3 LUFS, 1 hits",
+    "bed_db": -17.0,
+    "sfx_db": -17.0
+  },
+  "copies": {
+    "copied": [
+      "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/001_How-Did-We-Discover-Germs/10_Shorts/hos_001_s11_curved_flask_v05.mp4",
+      "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/001_How-Did-We-Discover-Germs/10_Shorts/hos_001_s11_curved_flask_v05_PHONE.mp4",
+      "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/001_How-Did-We-Discover-Germs/10_Shorts/hos_001_s11_curved_flask_v05_2fps_sheet.jpg",
+      "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/s11_curved_flask_v05/hos_001_s11_curved_flask_v05.mp4",
+      "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/s11_curved_flask_v05/hos_001_s11_curved_flask_v05_PHONE.mp4",
+      "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/s11_curved_flask_v05/hos_001_s11_curved_flask_v05_2fps_sheet.jpg"
+    ]
+  },
+  "phone": "hos_001_s11_curved_flask_v05_PHONE.mp4",
+  "asr_ok": true,
+  "asr_notes": []
+}

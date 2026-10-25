@@ -1,0 +1,11 @@
+s01_flask     1.0s 01_question_mark_flask_v17.m ok
+s02_boil     2.5s 02_boil_broth_v04.mp4        ok
+s03_dust     3.4s 03_dust_in_the_curve_v23.mp4 ok
+s04_dust2     5.4s 03_dust_in_the_curve_v23.mp4 ok
+s05_passengers     8.4s 08_passengers_v20.mp4        WARN low detail: edge density 0.02 < film p5 0.0353
+s06_clear    11.1s 04_still_clear_v21.mp4       ok
+s07_tip    13.4s 05_tip_the_trap_v20.mp4      ok
+s08_bloom    15.5s 07_bloom_cloud_v02.mp4       ok
+s09_result    17.5s 11_result_returns_v01.mp4    ok
+s10_loop    18.8s loop_end_01_question_mark_fl ok
+polish gate PASS: 0 of 10 rows failed, 1 to look at -> 02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/qa_s11_curved_flask_v05/polish_gate_s11_curved_flask_v05.json
