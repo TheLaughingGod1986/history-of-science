@@ -1,0 +1,181 @@
+{
+  "file": "hos_001_s11_curved_flask_v04.mp4",
+  "sha256": "a155190395ebe6ad242581f93a8148d5a49d8873c7a8a20cf2a8e76f5d8d6fa4",
+  "duration_s": 18.033,
+  "spoken": "a flask stays clear. Boil broth. Air can drift dust and microbes settle in the curve. If life arrives as passengers from the outside, then disease can be a passenger too. Break the neck, or tip the trap, and life blooms into cloudiness. Keep the swan neck intact.",
+  "brief": {
+    "frame0_source": "04_Generated-Clips/part04/raw/v01_fast_probe/01_question_mark_flask_v17.mp4",
+    "frame0_zoom": "none \u2014 moving plate, in 1.80s, crop x=720, no Ken Burns",
+    "first_word_s": 0.0,
+    "surprise_s": {
+      "flask": 0.285,
+      "stays": 0.76,
+      "clear": 1.295
+    },
+    "first_cut_s": 1.78,
+    "last_word_to_loop_s": 1.0,
+    "meta_promise": false,
+    "runtime_s": 18.033,
+    "longest_hold_s": 2.95,
+    "payoff_phrase": "life blooms into cloudiness",
+    "payoff_s": 13.485,
+    "payoff_frac": 0.749,
+    "payoff_vs_70pct": 0.049,
+    "loop_sentence": "Keep the swan neck intact. A flask stays clear.",
+    "loop_diff": 11.03,
+    "loop_diff_masked": 11.03,
+    "loop_diff_whole": 16.04,
+    "lufs": -14.2,
+    "measured_lufs": -14.2,
+    "true_peak_dbfs": -1.4,
+    "frame0_black": 0.175,
+    "max_inter_sentence_gap_s": 0.2,
+    "hook_level": {
+      "opener_gain_db": 5.04,
+      "hook_speech_db": -17.93,
+      "boil_speech_db": -17.52,
+      "hook_minus_boil_db": -0.41,
+      "gaps": [
+        {
+          "t": 0.14,
+          "dur": 0.16
+        },
+        {
+          "t": 0.59,
+          "dur": 0.18
+        },
+        {
+          "t": 1.15,
+          "dur": 0.15
+        },
+        {
+          "t": 1.62,
+          "dur": 0.16
+        },
+        {
+          "t": 2.4,
+          "dur": 0.18
+        },
+        {
+          "t": 2.82,
+          "dur": 0.09
+        },
+        {
+          "t": 3.38,
+          "dur": 0.18
+        },
+        {
+          "t": 3.66,
+          "dur": 0.09
+        },
+        {
+          "t": 4.02,
+          "dur": 0.18
+        },
+        {
+          "t": 4.57,
+          "dur": 0.16
+        },
+        {
+          "t": 5.61,
+          "dur": 0.15
+        },
+        {
+          "t": 6.08,
+          "dur": 0.18
+        },
+        {
+          "t": 7.39,
+          "dur": 0.17
+        },
+        {
+          "t": 9.1,
+          "dur": 0.2
+        },
+        {
+          "t": 9.99,
+          "dur": 0.16
+        },
+        {
+          "t": 11.39,
+          "dur": 0.18
+        },
+        {
+          "t": 12.14,
+          "dur": 0.19
+        },
+        {
+          "t": 12.62,
+          "dur": 0.16
+        },
+        {
+          "t": 13.2,
+          "dur": 0.2
+        },
+        {
+          "t": 13.87,
+          "dur": 0.15
+        },
+        {
+          "t": 15.44,
+          "dur": 0.2
+        },
+        {
+          "t": 16.4,
+          "dur": 0.16
+        }
+      ],
+      "max_gap_s": 0.2,
+      "subs": 21
+    },
+    "title_out_s": 13.365,
+    "loop_s": 1.0
+  },
+  "gate_exit": 0,
+  "gate_verdict": "PASS",
+  "gate_fails": [],
+  "gate_warns": [
+    "duration 18.0s outside 22\u201327s band"
+  ],
+  "qa": {
+    "polish_gate": {
+      "exit": 0,
+      "tail": [
+        "s09_result    16.3s 11_result_returns_v01.mp4    ok",
+        "s10_loop    17.5s loop_end_01_question_mark_fl ok",
+        "polish gate PASS: 0 of 10 rows failed, 1 to look at -> 02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/qa_s11_curved_flask_v04/polish_gate_s11_curved_flask_v04.json"
+      ]
+    },
+    "picture_qa": {
+      "exit": 0,
+      "tail": [
+        "WARN   0:08 row s05_passengers 08_passengers_v20.mp4: low detail: edge density 0.0201 < film p5 0.0351",
+        "picture QA PASS: 0 of 10 cuts fail, 1 to look at -> 02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/qa_s11_curved_flask_v04/picture_qa_s11_curved_flask_v04/PICTURE_QA.md, 02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/qa_s11_curved_flask_v04/picture_qa_s11_curved_flask_v04/picture_qa_review.jpg"
+      ]
+    }
+  },
+  "music_exit": 0,
+  "music_tail": [
+    "WARN reused: couldn't read saturn_long_vo_v01_LISTEN.wav to compare (OSError); download it or pass --others",
+    "WARN reused: couldn't read monday_saturn_short_vo_v02_how_long.mp3 to compare (OSError); download it or pass --others",
+    "WARN reused: couldn't read saturn_long_vo_v03_tightened.wav to compare (OSError); download it or pass --others",
+    "music gate PASS: hos_001_s11_curved_flask_v04_bed.wav, 18.2 s, about 75.0 BPM, brief Pace: 68-78 BPM"
+  ],
+  "sfx": {
+    "exit": 0,
+    "output": "SFX level PASS: VO -19.6 LUFS, SFX -46.3 LUFS, 1 hits",
+    "bed_db": -14.0,
+    "sfx_db": -14.0
+  },
+  "copies": {
+    "copied": [
+      "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/001_How-Did-We-Discover-Germs/10_Shorts/hos_001_s11_curved_flask_v04.mp4",
+      "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/001_How-Did-We-Discover-Germs/10_Shorts/hos_001_s11_curved_flask_v04_PHONE.mp4",
+      "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/001_How-Did-We-Discover-Germs/10_Shorts/hos_001_s11_curved_flask_v04_2fps_sheet.jpg",
+      "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/s11_curved_flask_v04/hos_001_s11_curved_flask_v04.mp4",
+      "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/s11_curved_flask_v04/hos_001_s11_curved_flask_v04_PHONE.mp4",
+      "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/s11_curved_flask_v04/hos_001_s11_curved_flask_v04_2fps_sheet.jpg"
+    ]
+  },
+  "phone": "hos_001_s11_curved_flask_v04_PHONE.mp4"
+}
