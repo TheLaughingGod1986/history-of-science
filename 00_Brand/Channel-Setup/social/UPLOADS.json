@@ -211,6 +211,42 @@
         "alt": "Cover text MORE than you HAVE, on Harvey's blood sum."
       }
     },
+    "BW_CFAX-mxc": {
+      "kind": "short",
+      "standalone": false,
+      "standaloneTest": false,
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s04_galen_stove_v04.mp4",
+      "sha256": "f15fb5ba050b8842c30fec4fde51a83eda7055bd8d5e39b018cf7aba9e769a8f",
+      "packageDir": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/11_Upload-Package/s04_galen_stove_v04",
+      "thumb": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/covers_v02/hos_005_s04_galen_stove_cover_v02.jpg",
+      "long": "wwcjcFfC-5M",
+      "promotes": "005",
+      "publishAt": "2026-10-31T11:30:00Z",
+      "privacyStatus": "private",
+      "replaces": "5n7xFQRBUvI",
+      "registeredAt": "2026-10-25T18:40:00Z",
+      "buffer": "held until the long wwcjcFfC-5M is public, then the full film",
+      "captions": "en-GB standard, from the v04 spoken line",
+      "related": "unset; J0241 sets wwcjcFfC-5M after that long is public",
+      "social": {
+        "hook": "Galen taught that the heart's job was to heat the blood, not to pump it.",
+        "question": "What did you think the heart did, before anyone told you?",
+        "alt": "A cutaway figure whose heart sits on a glowing wood stove, captioned NOT A PUMP."
+      }
+    },
+    "5n7xFQRBUvI": {
+      "kind": "short",
+      "standalone": false,
+      "standaloneTest": false,
+      "file": "v01",
+      "promotes": "005",
+      "long": "wwcjcFfC-5M",
+      "publishAt": null,
+      "privacyStatus": "private",
+      "supersededBy": "BW_CFAX-mxc",
+      "unscheduledAt": "2026-10-25T18:39:00Z",
+      "note": "J0948. Private and unscheduled. Title unchanged. Nothing deleted."
+    },
     "1lszTrYRp-8": {
       "kind": "short",
       "standalone": false,
