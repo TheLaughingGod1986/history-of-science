@@ -1,0 +1,3 @@
+spoken: Marie Curie's notebooks are still radioactive. In 1898, she and Pierre found two new elements, polonium, then radium. Radium glowed in the dark, and she handled it for years with no protection. Today, her papers sit in lead-lined boxes in Paris. Radium takes 1,600 years to lose half its strength
+stem: Marie Curie's notebooks are still radioactive. In 1898, she and Pierre found two new elements, polonium, then radium. Radium glowed in the dark, and she handled it for years with no protection. Today, her papers sit in lead -lined boxes in Paris. Radium takes 1 ,600 years to lose half its strength.
+OK
