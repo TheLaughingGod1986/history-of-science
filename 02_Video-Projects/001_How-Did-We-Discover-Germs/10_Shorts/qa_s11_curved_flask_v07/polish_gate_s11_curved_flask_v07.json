@@ -1,0 +1,238 @@
+{
+  "rule": {
+    "low_detail": "FAIL: luma std < 13.44 and edge density < 0.0259 (absolute floor); WARN: luma std < 18.0 or edge density < film p5",
+    "split_panel": "full-height/width seam or gutter",
+    "split_panel_gutter": "gutter counts only with edge density >= 0.01 in the 10% band on both sides",
+    "near_black": "mean < 28.0 or p95 < 50.0",
+    "noise": "grain std > 6 over structure std < 12, and the 8x-downscaled frame under the low-detail floor (std < 13.44 and edge density < 0.0259)",
+    "jitter": "centre-patch phase correlation: reversal against trend or > 0.35 px off trend"
+  },
+  "low_detail_floor": {
+    "std": 13.44,
+    "edge": 0.0259,
+    "calibration": {
+      "video": "025_MarsRobot_full_rough_v02d.mp4",
+      "factor": 1.2,
+      "frames": [
+        {
+          "source": "PIA22223.jpg",
+          "t": 201.0,
+          "std": 12.1,
+          "edge": 0.0223
+        },
+        {
+          "source": "PIA22223.jpg",
+          "t": 216.3,
+          "std": 11.2,
+          "edge": 0.0216
+        },
+        {
+          "source": "PIA22929.jpg",
+          "t": 297.4,
+          "std": 26.54,
+          "edge": 0.5735
+        }
+      ]
+    }
+  },
+  "video": "02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/hos_001_s11_curved_flask_v07.mp4",
+  "edge_floor": 0.0359,
+  "verdict": "PASS",
+  "failed": [],
+  "warn": [
+    {
+      "row": "s05_passengers",
+      "cut": 4,
+      "t": 7.8,
+      "source": "08_passengers_v20.mp4",
+      "why": [
+        "low detail: edge density 0.0232 < film p5 0.0359"
+      ]
+    }
+  ],
+  "reviewed_ok": [],
+  "rows": [
+    {
+      "cut": 0,
+      "row": "s01_flask",
+      "source": "01_question_mark_flask_v17.mp4",
+      "t": 0.93,
+      "std": 54.55,
+      "mean": 63.66,
+      "p95": 195.0,
+      "edge": 0.094,
+      "hf": 13.69,
+      "lf": 46.26,
+      "std8": 49.55,
+      "edge8": 0.3424,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 1,
+      "row": "s02_boil",
+      "source": "02_boil_broth_v04.mp4",
+      "t": 2.27,
+      "std": 41.73,
+      "mean": 64.35,
+      "p95": 153.0,
+      "edge": 0.0626,
+      "hf": 7.81,
+      "lf": 37.89,
+      "std8": 39.45,
+      "edge8": 0.2324,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 2,
+      "row": "s03_dust",
+      "source": "03_dust_in_the_curve_v23.mp4",
+      "t": 3.2,
+      "std": 56.8,
+      "mean": 102.96,
+      "p95": 208.0,
+      "edge": 0.0602,
+      "hf": 9.17,
+      "lf": 53.28,
+      "std8": 54.84,
+      "edge8": 0.3175,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 3,
+      "row": "s04_dust2",
+      "source": "03_dust_in_the_curve_v23.mp4",
+      "t": 5.03,
+      "std": 52.36,
+      "mean": 86.91,
+      "p95": 190.0,
+      "edge": 0.0874,
+      "hf": 10.35,
+      "lf": 47.83,
+      "std8": 49.45,
+      "edge8": 0.3187,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 4,
+      "row": "s05_passengers",
+      "source": "08_passengers_v20.mp4",
+      "t": 7.8,
+      "std": 49.31,
+      "mean": 74.82,
+      "p95": 169.0,
+      "edge": 0.0232,
+      "hf": 6.23,
+      "lf": 47.81,
+      "std8": 48.27,
+      "edge8": 0.1402,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0232 < film p5 0.0359"
+      ]
+    },
+    {
+      "cut": 5,
+      "row": "s06_clear",
+      "source": "04_still_clear_v21.mp4",
+      "t": 10.43,
+      "std": 56.76,
+      "mean": 105.99,
+      "p95": 219.0,
+      "edge": 0.0783,
+      "hf": 10.65,
+      "lf": 52.49,
+      "std8": 54.14,
+      "edge8": 0.303,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 6,
+      "row": "s07_tip",
+      "source": "05_tip_the_trap_v20.mp4",
+      "t": 12.5,
+      "std": 47.27,
+      "mean": 77.23,
+      "p95": 161.0,
+      "edge": 0.0515,
+      "hf": 9.24,
+      "lf": 42.81,
+      "std8": 44.63,
+      "edge8": 0.2779,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 7,
+      "row": "s08_bloom",
+      "source": "07_bloom_cloud_v02.mp4",
+      "t": 14.58,
+      "std": 64.92,
+      "mean": 87.16,
+      "p95": 207.0,
+      "edge": 0.0625,
+      "hf": 8.44,
+      "lf": 62.06,
+      "std8": 63.31,
+      "edge8": 0.253,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 8,
+      "row": "s09_result",
+      "source": "11_result_returns_v01.mp4",
+      "t": 16.48,
+      "std": 47.21,
+      "mean": 88.7,
+      "p95": 193.0,
+      "edge": 0.0929,
+      "hf": 10.23,
+      "lf": 42.32,
+      "std8": 44.1,
+      "edge8": 0.3002,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 9,
+      "row": "s10_loop",
+      "source": "loop_end_01_question_mark_flask_v17.mp4",
+      "t": 17.68,
+      "std": 45.05,
+      "mean": 57.55,
+      "p95": 150.0,
+      "edge": 0.0723,
+      "hf": 8.13,
+      "lf": 40.49,
+      "std8": 42.45,
+      "edge8": 0.2664,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "file": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/hos_001_s11_curved_flask_v07.mp4",
+  "air_date": "2026-10-27",
+  "fails": [],
+  "warns": [
+    "duration 18.2s outside 22\u201327s band"
+  ],
+  "stayed_fails": [],
+  "duration_s": 18.17,
+  "audio": {
+    "stream": true,
+    "mean_db": -16.8,
+    "open_mean_db": -16.0
+  },
+  "vo_src": "/private/tmp/j0939-flask-v07/hos_001_s11_curved_flask_vo_v07.wav",
+  "vo_onset_s": 0.0,
+  "last_word_end_s": 17.195,
+  "tail_gap_s": 0.97,
+  "motion_0_1s": 11.51,
+  "frame0_diff_0_1_5s": 1.8,
+  "first_cut_s": 1.87,
+  "dhash": "631b0c0e66637130",
+  "near_opens": [],
+  "contact_sheet": "/var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_001_s11_curved_flask_v07_open_sheet.jpg",
+  "verdict": "PASS"
+}
