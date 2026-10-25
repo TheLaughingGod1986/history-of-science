@@ -170,7 +170,7 @@
       "buffer": "registered in OWB social/hos/UPLOADS.json (long ETynHpIYLeY, J0875); held until public (2026-11-13T11:30:00Z), then the full film",
       "related": "unset while 007 long ETynHpIYLeY is Private (publishAt 2026-11-12T18:00:00Z); Studio picker lists public videos only. J0875 sets ETynHpIYLeY once the long is public on Thu 12 Nov 18:00Z (before Fri 13 Nov 11:30Z).",
       "social": {
-        "hook": "On 1 July 1796, Edward Jenner tested whether cowpox protected a boy from smallpox \u2014 and no disease followed.",
+        "hook": "On 1 July 1796, Edward Jenner tested whether cowpox protected a boy from smallpox — and no disease followed.",
         "question": "What did Edward Jenner's first vaccine test prove?",
         "alt": "A mahogany lancet case with ivory-handled steel lancets on Edward Jenner's study table in 1796; hook caption THE FIRST TEST."
       }
@@ -190,7 +190,7 @@
       "buffer": "registered in OWB social/hos/UPLOADS.json (long ETynHpIYLeY, J0875); held until public (2026-11-17T11:30:00Z), then the full film",
       "related": "unset while 007 long ETynHpIYLeY is Private (publishAt 2026-11-12T18:00:00Z); Studio picker lists public videos only. J0875 sets ETynHpIYLeY once the long is public on Thu 12 Nov 18:00Z (before Fri 13 Nov 11:30Z).",
       "social": {
-        "hook": "Twenty-two years before Edward Jenner's 1798 book, Benjamin Jesty tried cowpox \u2014 and from vacca, Latin for cow, came vaccination.",
+        "hook": "Twenty-two years before Edward Jenner's 1798 book, Benjamin Jesty tried cowpox — and from vacca, Latin for cow, came vaccination.",
         "question": "Why are vaccines named after a cow?",
         "alt": "A dairy cow in a golden Dorset meadow at sunset; hook caption NOT THE FIRST."
       }
@@ -334,6 +334,18 @@
       "pinnedComment": "not posted",
       "cards": "not added",
       "note": "J0946. Master v04 from the NAS (iCloud UAT copy is dataless). Privacy private, publishAt 2026-11-12T18:00:00Z, duration PT8M52S, thumbnail set, en-GB captions serving. Nothing replaced or deleted."
+    },
+    "wwcjcFfC-5M": {
+      "kind": "long",
+      "film": "005",
+      "title": "The Tied Arm That Proved Your Blood Circulates",
+      "packageDir": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/11_Upload-Package",
+      "thumb": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/08_Thumbnail/Selected/hos_005_thumb_A_one_tight_band_v02.jpg",
+      "publishAt": "2026-10-29T18:00:00Z",
+      "privacyStatus": "private",
+      "registeredAt": "2026-10-25T22:58:00Z",
+      "readBack": "YouTube Data API videos.list (read only), 25 Oct 2026 22:58 London: channel History of Science, private, publishAt 2026-10-29T18:00:00Z, processed, PT8M49S, title as above.",
+      "note": "Registered late so the Studio Kanban can read the long's schedule (it had no UPLOADS row, so the HOS 005 card sat in In progress). Uploaded and scheduled in early Oct; nothing on YouTube was changed. After-air jobs: J0241 (Related on BW_CFAX-mxc + HOS Buffer) once public."
     }
   }
 }
