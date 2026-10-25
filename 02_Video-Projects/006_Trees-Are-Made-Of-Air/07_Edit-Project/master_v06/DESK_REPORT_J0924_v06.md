@@ -1,4 +1,4 @@
-# HOS 006 — Master v06 Desk Report (`J0924`)
+# HOS 006 — Master v06 Desk Report (`J0924` — Gemini covering)
 
 - **Film:** `006_Trees-Are-Made-Of-Air` (*The Willow Tree That Was Made of Air*)
 - **Stage:** `edit` (`master_v06`)
