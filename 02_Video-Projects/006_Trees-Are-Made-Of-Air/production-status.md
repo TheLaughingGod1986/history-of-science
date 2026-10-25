@@ -787,3 +787,40 @@ ALL CHECKS PASS (00_Brand/Channel-Setup/tools/check_all.sh 02_Video-Projects/006
   2. **Positive question titles on all 5 QA-passed Shorts (`s04`–`s08`):** Recorded in `LAUNCH_PLAN.md` (`s04` *How Does Photosynthesis Work?*, `s05` *Who Discovered Carbon Dioxide?*, `s06` *How Do Plants Make Oxygen?*, `s07` *How Do Plants Clean the Air?*, `s08` *Do Plants Eat Soil?*).
   3. **12–15 s Short cut test (`LEARNINGS.md` #4):** Documented in `LAUNCH_PLAN.md` and `PACKAGE_MANIFEST.json` to run on one `006` Short alongside its `25 s` cut.
 - **Package lint (`npm run lint:package -- --film 006`):** `PASS  02_Video-Projects/006_Trees-Are-Made-Of-Air/11_Upload-Package/PACKAGE_MANIFEST.json`.
+
+## 25 Oct 2026 — J0924: HOS 006 master v06 (Ben's 3 v05 changes at 1:03, 4:02, 4:30 + all 28 card in-points verified frame-by-frame at 0 Flow credits, all gates PASS, Gemini covering)
+
+- **Authority:** Chief ruling (`#180` `6384888711`, Grok, 24 Oct 14:38 London) on Ben's change tick (`#180` `6375549934`, Fri 23 Oct 22:57 London).
+- **Master MP4:** `/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/master_v06/hos_006_master_v06.mp4` (`531.833 s`, `12,764` frames @ 24 fps, `1920×1080` H.264 + AAC 48 kHz stereo at `-14.0 LUFS` / `-1.4 dBTP`, sha256 `36c54e684b8a947c65298231268f9f031899df5a0d72ec38506f5e17b3d215ef`, video stream sha256 `30619688edb8d23d6cf32179b9ea1bc4b61074e0849821933eb1fc895a6f903e`).
+- **Phone MP4 (`<120 MB`):** `/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/master_v06/hos_006_master_v06_PHONE.mp4` (`109.83 MB`, `115,162,637` B, sha256 `9b3dde01a243eee0118ebba96f4bd387070c81208beb7ee3ea224e18d237b887`).
+- **iCloud HOS UAT copies (SHA-256 verified identical):**
+  - `/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/006_Trees_master_v06.mp4`
+  - `/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/006_Trees_master_v06_PHONE.mp4`
+  - `/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/006_Trees-Are-Made-Of-Air/hos_006_master_v06.mp4` (`+ hos_006_master_v06_PHONE.mp4`, `hos_006_master_v06_ben_check_sheet.jpg`, `hos_006_master_v06_card_inpoints_sheet.jpg`, `hos_006_master_v06_contact_sheet.jpg`).
+- **Spend:** `£0.00` cash, **`0` Flow credits**.
+- **All 3 Ben v05 change items + frame-by-frame check across all 28 overlays (`07_Edit-Project/master_v06/`):**
+  1. **`1:03` (`#13 P2 ch_five_years`, `1:01.67–1:03.25`, `sf=1480`) & `4:30` (`#52 P4 ch_bubbles`, `4:33.50–4:35.08`, `sf=6564`) + All 28 Card In-Points Checked Frame-by-Frame:**
+     - **Root cause fixed:** Replaced floating-point `setpts=PTS-STARTPTS+{start_s:.6f}/TB` over concat-drifted base timestamps with exact integer frame timestamps on both the base stream (`[0:v]fps=24,setpts=N/(24*TB)`) and all 28 overlay streams (`[k:v]fps=24,setpts=(N+{sf})/(24*TB)`), and restored Part 5 overlays (`ch_carbon`, `when_geneva_1782`, `timeline_d5`, `who_senebier`, `who_saussure`, `timeline_d6`).
+     - **Frame-by-frame proof (`hos_006_master_v06_card_inpoints_sheet.jpg` & `hos_006_master_v06_ben_check_sheet.jpg`):** Every chapter card (`ch_five_years` `sf=1480`, `ch_mint` `sf=4288`, `ch_bubbles` `sf=6564`, `ch_carbon` `sf=8770`) and every full-frame timeline card (`timeline_d1` `sf=954`, `timeline_d2` `sf=4409`, `timeline_d3` `sf=4939`, `timeline_d4` `sf=6631`, `timeline_d5` `sf=8878`, `timeline_d6` `sf=9125`) covers 100% from its very first frame `n=sf` with `0.0` pixel diff between `n=sf` and `n=sf+1` (**0-frame leak** of the underlying shot across the entire film).
+  2. **`4:02` (`#45 P3 12_mouse_mint_v06.mp4`, `3:59.50–4:07.38`, `sf=5748..5937`, frames `04_01_50_mouse_mint_f5796.png` & `04_03_50_mouse_mint_f5844.png`):**
+     - Replaced `#45` with a smooth 1.38× bottom-anchored reframe (`upscale: 1.38 <= 2.35x`, `£0 / 0 credits`) so the mint sprig's stem extends cleanly down through the bottom frame border (`y=1080`) on all 189 frames (`0` floating twig).
+
+### Machine checks (pasted outputs)
+
+```text
+SFX level PASS: VO -16.1 LUFS, SFX -34.0 LUFS, 31 hits
+music gate PASS: trees006_score_bed_v01.mp3, 531.8 s, about 66.7 BPM, brief Pace: 60-72 BPM
+WARN   2:18 row 15_desk_candle 15_desk_candle_t1_above_desk_v03.mp4: low detail: edge density 0.0269 < film p5 0.0270
+WARN   3:01 row 01_soil_to_sky 01_soil_to_sky_t1.mp4: low detail: edge density 0.0219 < film p5 0.0270
+WARN   5:24 row 09_bubbles_again 05_bubbles_macro_t1_from4.500.mp4: low detail: edge density 0.0244 < film p5 0.0270
+WARN   6:32 row 05_sums_add_up 05_sums_add_up_t1.mp4: low detail: edge density 0.0246 < film p5 0.0270
+WARN   8:17 row 23_carbon_atom 23_carbon_atom_t1.mp4: low detail: edge density 0.0237 < film p5 0.0270
+picture QA PASS: 0 of 96 cuts fail, 5 to look at -> /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/master_v06/PICTURE_QA.md, /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/master_v06/picture_qa_review.jpg
+polish gate PASS: 0 of 96 rows failed, 5 to look at -> /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/master_v06/polish_gate.json
+**Decision:** PASS — VO / Gemini Veo allowed
+Script score: **93.7/100** · PASS
+Integrated loudness: I: -14.0 LUFS, LRA: 3.3 LU, True peak: -1.4 dBFS
+ALL CHECKS PASS (00_Brand/Channel-Setup/tools/check_all.sh 02_Video-Projects/006_Trees-Are-Made-Of-Air)
+```
+
+- **STOP:** Parked for Chief (`parked for Chief: HOS 006 master v06 review (Ben's 3 v05 changes at 1:03, 4:02, 4:30 fixed at root cause + all 28 card in-points verified 0-frame leak, 0 Flow credits, _PHONE.mp4 in HOS UAT, all gates PASS)`). Nothing uploaded or scheduled.
