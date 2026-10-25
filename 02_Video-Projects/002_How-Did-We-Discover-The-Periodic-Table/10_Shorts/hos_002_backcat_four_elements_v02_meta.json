@@ -1,0 +1,451 @@
+{
+  "id": "002_four_elements",
+  "version": "v02",
+  "job": "J0965",
+  "youtube_id": "Pp5LmjsduI4",
+  "title": "The Four Elements Were Wrong",
+  "air_date": "2026-11-03",
+  "spoken": "Earth, air, fire and water aren't elements. For two thousand years, people said everything was made of those four. But heat a rock, and it doesn't turn into fire. Air is a mixture, not one thing. Antoine Lavoisier threw out the four, and listed only what couldn't be broken down. His list had thirty-three. Two were light and heat.",
+  "script": "Earth, air, fire and water aren't elements. For two thousand years, people said everything was made of those four. But heat a rock, and it doesn't turn into fire. Air is a mixture, not one thing. Antoine Lavoisier threw out the four, and listed only what couldn't be broken down. His list had thirty-three. Two were light and heat.",
+  "words": [
+    {
+      "word": "Earth,",
+      "start": 0.0,
+      "end": 0.274
+    },
+    {
+      "word": "air,",
+      "start": 0.331,
+      "end": 0.559
+    },
+    {
+      "word": "fire",
+      "start": 0.616,
+      "end": 0.845
+    },
+    {
+      "word": "and",
+      "start": 0.888,
+      "end": 1.016
+    },
+    {
+      "word": "water",
+      "start": 1.083,
+      "end": 1.416
+    },
+    {
+      "word": "aren't",
+      "start": 1.474,
+      "end": 1.816
+    },
+    {
+      "word": "elements.",
+      "start": 1.874,
+      "end": 2.388
+    },
+    {
+      "word": "For",
+      "start": 2.572,
+      "end": 3.022
+    },
+    {
+      "word": "two",
+      "start": 3.042,
+      "end": 3.102
+    },
+    {
+      "word": "thousand",
+      "start": 3.155,
+      "end": 3.582
+    },
+    {
+      "word": "years,",
+      "start": 3.635,
+      "end": 4.062
+    },
+    {
+      "word": "people",
+      "start": 4.085,
+      "end": 4.222
+    },
+    {
+      "word": "said",
+      "start": 4.27,
+      "end": 4.462
+    },
+    {
+      "word": "everything",
+      "start": 4.506,
+      "end": 4.942
+    },
+    {
+      "word": "was",
+      "start": 5.002,
+      "end": 5.182
+    },
+    {
+      "word": "made",
+      "start": 5.23,
+      "end": 5.422
+    },
+    {
+      "word": "of",
+      "start": 5.475,
+      "end": 5.582
+    },
+    {
+      "word": "those",
+      "start": 5.635,
+      "end": 5.902
+    },
+    {
+      "word": "four.",
+      "start": 5.982,
+      "end": 6.951
+    },
+    {
+      "word": "But",
+      "start": 6.971,
+      "end": 7.031
+    },
+    {
+      "word": "heat",
+      "start": 7.095,
+      "end": 7.351
+    },
+    {
+      "word": "a",
+      "start": 7.391,
+      "end": 7.431
+    },
+    {
+      "word": "rock,",
+      "start": 7.511,
+      "end": 7.911
+    },
+    {
+      "word": "and",
+      "start": 7.931,
+      "end": 7.991
+    },
+    {
+      "word": "it",
+      "start": 8.018,
+      "end": 8.071
+    },
+    {
+      "word": "doesn't",
+      "start": 8.111,
+      "end": 8.391
+    },
+    {
+      "word": "turn",
+      "start": 8.423,
+      "end": 8.551
+    },
+    {
+      "word": "into",
+      "start": 8.615,
+      "end": 8.871
+    },
+    {
+      "word": "fire.",
+      "start": 8.951,
+      "end": 9.933
+    },
+    {
+      "word": "Air",
+      "start": 9.993,
+      "end": 10.173
+    },
+    {
+      "word": "is",
+      "start": 10.226,
+      "end": 10.333
+    },
+    {
+      "word": "a",
+      "start": 10.373,
+      "end": 10.413
+    },
+    {
+      "word": "mixture,",
+      "start": 10.483,
+      "end": 11.133
+    },
+    {
+      "word": "not",
+      "start": 11.173,
+      "end": 11.293
+    },
+    {
+      "word": "one",
+      "start": 11.353,
+      "end": 11.533
+    },
+    {
+      "word": "thing.",
+      "start": 11.6,
+      "end": 12.093
+    },
+    {
+      "word": "Antoine",
+      "start": 12.243,
+      "end": 13.007
+    },
+    {
+      "word": "Lavoisier",
+      "start": 13.047,
+      "end": 13.727
+    },
+    {
+      "word": "threw",
+      "start": 13.78,
+      "end": 14.047
+    },
+    {
+      "word": "out",
+      "start": 14.087,
+      "end": 14.207
+    },
+    {
+      "word": "the",
+      "start": 14.227,
+      "end": 14.287
+    },
+    {
+      "word": "four,",
+      "start": 14.367,
+      "end": 14.767
+    },
+    {
+      "word": "and",
+      "start": 14.907,
+      "end": 15.327
+    },
+    {
+      "word": "listed",
+      "start": 15.373,
+      "end": 15.647
+    },
+    {
+      "word": "only",
+      "start": 15.711,
+      "end": 15.967
+    },
+    {
+      "word": "what",
+      "start": 16.015,
+      "end": 16.207
+    },
+    {
+      "word": "couldn't",
+      "start": 16.253,
+      "end": 16.607
+    },
+    {
+      "word": "be",
+      "start": 16.66,
+      "end": 16.767
+    },
+    {
+      "word": "broken",
+      "start": 16.824,
+      "end": 17.167
+    },
+    {
+      "word": "down.",
+      "start": 17.247,
+      "end": 17.647
+    },
+    {
+      "word": "His",
+      "start": 17.867,
+      "end": 18.397
+    },
+    {
+      "word": "list",
+      "start": 18.461,
+      "end": 18.717
+    },
+    {
+      "word": "had",
+      "start": 18.757,
+      "end": 18.877
+    },
+    {
+      "word": "thirty-three.",
+      "start": 18.946,
+      "end": 19.837
+    },
+    {
+      "word": "Two",
+      "start": 20.097,
+      "end": 20.777
+    },
+    {
+      "word": "were",
+      "start": 20.857,
+      "end": 21.177
+    },
+    {
+      "word": "light",
+      "start": 21.244,
+      "end": 21.577
+    },
+    {
+      "word": "and",
+      "start": 21.637,
+      "end": 21.817
+    },
+    {
+      "word": "heat.",
+      "start": 21.929,
+      "end": 22.537
+    }
+  ],
+  "word_count": 59,
+  "last_word_end_s": 22.537,
+  "plan": [
+    {
+      "t0": 0.0,
+      "t1": 2.572,
+      "plate": "03_four_elements_crumble_v01.mp4",
+      "in_s": 3.5,
+      "crop_x": 656,
+      "lands_on": "open",
+      "hold_s": 2.572
+    },
+    {
+      "t0": 2.572,
+      "t1": 4.506,
+      "plate": "04_iron_salt_flame_air_v01.mp4",
+      "in_s": 0.3,
+      "crop_x": 250,
+      "lands_on": "For",
+      "hold_s": 1.934
+    },
+    {
+      "t0": 4.506,
+      "t1": 6.971,
+      "plate": "06_alchemist_accidents_v01.mp4",
+      "in_s": 0.4,
+      "crop_x": 656,
+      "lands_on": "everything",
+      "hold_s": 2.465
+    },
+    {
+      "t0": 6.971,
+      "t1": 9.993,
+      "plate": "10_rock_not_fire_v01.mp4",
+      "in_s": 0.3,
+      "crop_x": 300,
+      "lands_on": "But",
+      "hold_s": 3.022
+    },
+    {
+      "t0": 9.993,
+      "t1": 12.243,
+      "plate": "02_workshop_jars_v01.mp4",
+      "in_s": 0.5,
+      "crop_x": 760,
+      "lands_on": "Air",
+      "hold_s": 2.25
+    },
+    {
+      "t0": 12.243,
+      "t1": 14.907,
+      "plate": "lavoisier_list_t1.mp4",
+      "in_s": 0.1,
+      "crop_x": 430,
+      "lands_on": "Antoine",
+      "hold_s": 2.664
+    },
+    {
+      "t0": 14.907,
+      "t1": 17.867,
+      "plate": "08_labelled_zoo_v01.mp4",
+      "in_s": 1.0,
+      "crop_x": 700,
+      "lands_on": "and",
+      "hold_s": 2.96
+    },
+    {
+      "t0": 17.867,
+      "t1": 20.097,
+      "plate": "07_shelf_names_grow_v01.mp4",
+      "in_s": 0.5,
+      "crop_x": 656,
+      "lands_on": "His",
+      "hold_s": 2.23
+    },
+    {
+      "t0": 20.097,
+      "t1": 22.537,
+      "plate": "11_chemists_more_names_v01.mp4",
+      "in_s": 0.4,
+      "crop_x": 656,
+      "lands_on": "Two",
+      "hold_s": 2.44
+    },
+    {
+      "t0": 22.537,
+      "t1": 23.537,
+      "plate": "03_four_elements_crumble_v01.mp4",
+      "in_s": 2.5,
+      "crop_x": 656,
+      "lands_on": "loop",
+      "hold_s": 1.0
+    }
+  ],
+  "hook": "NOT ELEMENTS",
+  "hook_layer": {
+    "font": "Bodoni 72 Bold",
+    "font_size": 223,
+    "cap_px": 154,
+    "cap_pct": 8.02,
+    "h_squeeze": 0.919,
+    "lines": 2,
+    "block_pct": [
+      40.7,
+      59.3
+    ],
+    "widest_pct": 92.6
+  },
+  "title_on_screen": "How Did We Discover the Periodic Table?",
+  "no_cta": true,
+  "no_new_spend": true,
+  "open_atempo": 1.4,
+  "open_cut_s": 3.4,
+  "open_note": "1.06x cannot land aren't by 1.50s (starts at 2.06s; comma gaps are under 0.1s). atempo 1.40 through the silence after elements, pitch unchanged, same words.",
+  "v01_untouched": true,
+  "v01_sha256": "484df604ad6a3ba5217950121da32b91bcdff3046656f380187814c98dbb82a9",
+  "bed": "hos_002_backcat_four_elements_v02_bed.wav",
+  "sfx_level": {
+    "exit": 0,
+    "output": "SFX level PASS: VO -17.9 LUFS, SFX -47.6 LUFS, 1 hits",
+    "bed_db": -12.0,
+    "sfx_db": -14.0
+  },
+  "frame0_source": "04_Generated-Clips/part01/raw/v01_fast/03_four_elements_crumble_v01.mp4",
+  "frame0_zoom": "none \u2014 moving plate, in 3.5s, crop x=656, no Ken Burns",
+  "frame0_in_s": 3.5,
+  "first_word_s": 0.0,
+  "surprise_s": {
+    "aren't": 1.474
+  },
+  "first_cut_s": 2.572,
+  "last_word_to_loop_s": 1.0,
+  "meta_promise": false,
+  "runtime_s": 23.567,
+  "longest_hold_s": 3.022,
+  "payoff_phrase": "thirty-three",
+  "payoff_s": 18.946,
+  "payoff_frac": 0.805,
+  "loop_sentence": "Two were light and heat. Earth, air, fire and water aren't elements.",
+  "lufs_wav": -17.9,
+  "true_peak_wav_dbfs": -3.0,
+  "pre_master_lufs": -16.9,
+  "frame0_black": 0.001,
+  "sha256": "df2d58a1d1330b892f0f3b3b4feb30ea459d59578aa72f5675747d604abddbf7"
+}
