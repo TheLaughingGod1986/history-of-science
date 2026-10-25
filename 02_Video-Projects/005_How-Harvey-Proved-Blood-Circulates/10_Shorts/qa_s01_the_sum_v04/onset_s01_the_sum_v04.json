@@ -1,0 +1,12 @@
+{
+  "piece": "vo_v01_fin frozen",
+  "cut_s": 0.0,
+  "end_s": 23.4974,
+  "first_hot_s": 0.04,
+  "last_hot_s": 23.48,
+  "lead_s": 0.04,
+  "tail_s": 0.0074,
+  "lead_ok": true,
+  "tail_ok": false,
+  "note": "VO stays frozen (J0934 item 2). Lead and tail are measured, not re-cut."
+}

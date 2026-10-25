@@ -1,0 +1,328 @@
+{
+  "model": "small.en",
+  "spoken": "You pump more blood than you have. One London doctor proved it with a sum. Say the heart holds two ounces. Each beat, an eighth of that goes out. In half an hour, it beats more than a thousand times. That's more blood than your whole body holds. Food could never make that much. So it's the same blood, going round and round.",
+  "stem": {
+    "text": "You pump more blood than you have. One London doctor approved it with a sum. Say the heart holds two ounces. Each beat an eighth of that goes out. In half an hour, it beats more than a thousand times. That's more blood than your whole body holds. Food could never make that much. So it's the same blood going round and round.",
+    "words": [
+      {
+        "word": "You",
+        "start": 0.0,
+        "end": 0.18
+      },
+      {
+        "word": "pump",
+        "start": 0.18,
+        "end": 0.48
+      },
+      {
+        "word": "more",
+        "start": 0.48,
+        "end": 0.88
+      },
+      {
+        "word": "blood",
+        "start": 0.88,
+        "end": 1.18
+      },
+      {
+        "word": "than",
+        "start": 1.18,
+        "end": 1.52
+      },
+      {
+        "word": "you",
+        "start": 1.52,
+        "end": 1.68
+      },
+      {
+        "word": "have.",
+        "start": 1.68,
+        "end": 2.1
+      },
+      {
+        "word": "One",
+        "start": 2.66,
+        "end": 2.92
+      },
+      {
+        "word": "London",
+        "start": 2.92,
+        "end": 3.22
+      },
+      {
+        "word": "doctor",
+        "start": 3.22,
+        "end": 3.64
+      },
+      {
+        "word": "approved",
+        "start": 3.64,
+        "end": 4.08
+      },
+      {
+        "word": "it",
+        "start": 4.08,
+        "end": 4.26
+      },
+      {
+        "word": "with",
+        "start": 4.26,
+        "end": 4.4
+      },
+      {
+        "word": "a",
+        "start": 4.4,
+        "end": 4.56
+      },
+      {
+        "word": "sum.",
+        "start": 4.56,
+        "end": 4.84
+      },
+      {
+        "word": "Say",
+        "start": 5.7,
+        "end": 5.86
+      },
+      {
+        "word": "the",
+        "start": 5.86,
+        "end": 6.04
+      },
+      {
+        "word": "heart",
+        "start": 6.04,
+        "end": 6.38
+      },
+      {
+        "word": "holds",
+        "start": 6.38,
+        "end": 6.76
+      },
+      {
+        "word": "two",
+        "start": 6.76,
+        "end": 7.12
+      },
+      {
+        "word": "ounces.",
+        "start": 7.12,
+        "end": 7.58
+      },
+      {
+        "word": "Each",
+        "start": 8.3,
+        "end": 8.54
+      },
+      {
+        "word": "beat",
+        "start": 8.54,
+        "end": 8.86
+      },
+      {
+        "word": "an",
+        "start": 8.86,
+        "end": 9.26
+      },
+      {
+        "word": "eighth",
+        "start": 9.26,
+        "end": 9.58
+      },
+      {
+        "word": "of",
+        "start": 9.58,
+        "end": 9.8
+      },
+      {
+        "word": "that",
+        "start": 9.8,
+        "end": 10.04
+      },
+      {
+        "word": "goes",
+        "start": 10.04,
+        "end": 10.28
+      },
+      {
+        "word": "out.",
+        "start": 10.28,
+        "end": 10.68
+      },
+      {
+        "word": "In",
+        "start": 11.26,
+        "end": 11.42
+      },
+      {
+        "word": "half",
+        "start": 11.42,
+        "end": 11.66
+      },
+      {
+        "word": "an",
+        "start": 11.66,
+        "end": 11.86
+      },
+      {
+        "word": "hour,",
+        "start": 11.86,
+        "end": 12.14
+      },
+      {
+        "word": "it",
+        "start": 12.26,
+        "end": 12.46
+      },
+      {
+        "word": "beats",
+        "start": 12.46,
+        "end": 12.68
+      },
+      {
+        "word": "more",
+        "start": 12.68,
+        "end": 13.02
+      },
+      {
+        "word": "than",
+        "start": 13.02,
+        "end": 13.2
+      },
+      {
+        "word": "a",
+        "start": 13.2,
+        "end": 13.32
+      },
+      {
+        "word": "thousand",
+        "start": 13.32,
+        "end": 13.7
+      },
+      {
+        "word": "times.",
+        "start": 13.7,
+        "end": 14.34
+      },
+      {
+        "word": "That's",
+        "start": 14.86,
+        "end": 15.12
+      },
+      {
+        "word": "more",
+        "start": 15.12,
+        "end": 15.36
+      },
+      {
+        "word": "blood",
+        "start": 15.36,
+        "end": 15.62
+      },
+      {
+        "word": "than",
+        "start": 15.62,
+        "end": 15.82
+      },
+      {
+        "word": "your",
+        "start": 15.82,
+        "end": 15.98
+      },
+      {
+        "word": "whole",
+        "start": 15.98,
+        "end": 16.28
+      },
+      {
+        "word": "body",
+        "start": 16.28,
+        "end": 16.54
+      },
+      {
+        "word": "holds.",
+        "start": 16.54,
+        "end": 17.04
+      },
+      {
+        "word": "Food",
+        "start": 17.74,
+        "end": 17.96
+      },
+      {
+        "word": "could",
+        "start": 17.96,
+        "end": 18.22
+      },
+      {
+        "word": "never",
+        "start": 18.22,
+        "end": 18.58
+      },
+      {
+        "word": "make",
+        "start": 18.58,
+        "end": 18.88
+      },
+      {
+        "word": "that",
+        "start": 18.88,
+        "end": 19.12
+      },
+      {
+        "word": "much.",
+        "start": 19.12,
+        "end": 19.58
+      },
+      {
+        "word": "So",
+        "start": 20.04,
+        "end": 20.24
+      },
+      {
+        "word": "it's",
+        "start": 20.24,
+        "end": 20.4
+      },
+      {
+        "word": "the",
+        "start": 20.4,
+        "end": 20.54
+      },
+      {
+        "word": "same",
+        "start": 20.54,
+        "end": 20.74
+      },
+      {
+        "word": "blood",
+        "start": 20.74,
+        "end": 21.12
+      },
+      {
+        "word": "going",
+        "start": 21.12,
+        "end": 21.86
+      },
+      {
+        "word": "round",
+        "start": 21.86,
+        "end": 22.32
+      },
+      {
+        "word": "and",
+        "start": 22.32,
+        "end": 22.9
+      },
+      {
+        "word": "round.",
+        "start": 22.9,
+        "end": 23.26
+      }
+    ]
+  },
+  "ok": true,
+  "notes": [
+    "small.en heard 'approved' for the alignment word 'proved'; VO frozen, spoken line kept"
+  ]
+}

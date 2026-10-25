@@ -1,0 +1,238 @@
+{
+  "rule": {
+    "low_detail": "FAIL: luma std < 13.44 and edge density < 0.0259 (absolute floor); WARN: luma std < 18.0 or edge density < film p5",
+    "split_panel": "full-height/width seam or gutter",
+    "split_panel_gutter": "gutter counts only with edge density >= 0.01 in the 10% band on both sides",
+    "near_black": "mean < 28.0 or p95 < 50.0",
+    "noise": "grain std > 6 over structure std < 12, and the 8x-downscaled frame under the low-detail floor (std < 13.44 and edge density < 0.0259)",
+    "jitter": "centre-patch phase correlation: reversal against trend or > 0.35 px off trend"
+  },
+  "low_detail_floor": {
+    "std": 13.44,
+    "edge": 0.0259,
+    "calibration": {
+      "video": "025_MarsRobot_full_rough_v02d.mp4",
+      "factor": 1.2,
+      "frames": [
+        {
+          "source": "PIA22223.jpg",
+          "t": 201.0,
+          "std": 12.1,
+          "edge": 0.0223
+        },
+        {
+          "source": "PIA22223.jpg",
+          "t": 216.3,
+          "std": 11.2,
+          "edge": 0.0216
+        },
+        {
+          "source": "PIA22929.jpg",
+          "t": 297.4,
+          "std": 26.54,
+          "edge": 0.5735
+        }
+      ]
+    }
+  },
+  "video": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s01_the_sum_v04.mp4",
+  "edge_floor": 0.0237,
+  "verdict": "PASS",
+  "failed": [],
+  "warn": [
+    {
+      "row": "s10_loop",
+      "cut": 9,
+      "t": 23.52,
+      "source": "loop_span_01_pulse_wrist_t1.mp4",
+      "why": [
+        "low detail: edge density 0.0234 < film p5 0.0237"
+      ]
+    }
+  ],
+  "reviewed_ok": [],
+  "rows": [
+    {
+      "cut": 0,
+      "row": "s01_pulse",
+      "source": "01_pulse_wrist_t1.mp4",
+      "t": 1.08,
+      "std": 58.86,
+      "mean": 71.39,
+      "p95": 231.0,
+      "edge": 0.0633,
+      "hf": 15.98,
+      "lf": 50.2,
+      "std8": 53.19,
+      "edge8": 0.2368,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 1,
+      "row": "s02_how_much",
+      "source": "05_how_much_t1.mp4",
+      "t": 3.61,
+      "std": 48.9,
+      "mean": 59.14,
+      "p95": 198.0,
+      "edge": 0.0548,
+      "hf": 10.01,
+      "lf": 43.64,
+      "std8": 45.66,
+      "edge8": 0.2246,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 2,
+      "row": "s03_two_ounces",
+      "source": "06_two_ounces_eighth_t1.mp4",
+      "t": 6.12,
+      "std": 64.49,
+      "mean": 97.88,
+      "p95": 184.0,
+      "edge": 0.0241,
+      "hf": 6.8,
+      "lf": 62.45,
+      "std8": 63.3,
+      "edge8": 0.1311,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 3,
+      "row": "s04_thousand",
+      "source": "07_thousand_beats_t4.mp4",
+      "t": 8.34,
+      "std": 64.79,
+      "mean": 104.55,
+      "p95": 187.0,
+      "edge": 0.0448,
+      "hf": 10.41,
+      "lf": 61.64,
+      "std8": 62.85,
+      "edge8": 0.1662,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 4,
+      "row": "s05_squeeze",
+      "source": "04_squeeze_pulse_t1.mp4",
+      "t": 10.8,
+      "std": 46.42,
+      "mean": 87.09,
+      "p95": 169.0,
+      "edge": 0.0887,
+      "hf": 12.56,
+      "lf": 40.57,
+      "std8": 42.42,
+      "edge8": 0.2362,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 5,
+      "row": "s06_clock",
+      "source": "09_heart_clock_t2.mp4",
+      "t": 13.3,
+      "std": 58.14,
+      "mean": 67.03,
+      "p95": 178.0,
+      "edge": 0.0499,
+      "hf": 10.11,
+      "lf": 54.08,
+      "std8": 55.84,
+      "edge8": 0.1919,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 6,
+      "row": "s07_jug",
+      "source": "09_jug_tower_t1.mp4",
+      "t": 15.84,
+      "std": 32.19,
+      "mean": 57.87,
+      "p95": 124.0,
+      "edge": 0.039,
+      "hf": 7.85,
+      "lf": 27.35,
+      "std8": 29.03,
+      "edge8": 0.1411,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 7,
+      "row": "s08_glow",
+      "source": "12_glowing_loop_t2.mp4",
+      "t": 18.59,
+      "std": 53.87,
+      "mean": 84.04,
+      "p95": 210.0,
+      "edge": 0.1083,
+      "hf": 12.96,
+      "lf": 47.32,
+      "std8": 49.75,
+      "edge8": 0.3355,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 8,
+      "row": "s09_round",
+      "source": "07_capillaries_loop_t2.mp4",
+      "t": 21.42,
+      "std": 29.03,
+      "mean": 222.07,
+      "p95": 241.0,
+      "edge": 0.0531,
+      "hf": 7.69,
+      "lf": 22.13,
+      "std8": 24.98,
+      "edge8": 0.2564,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 9,
+      "row": "s10_loop",
+      "source": "loop_span_01_pulse_wrist_t1.mp4",
+      "t": 23.52,
+      "std": 47.37,
+      "mean": 77.26,
+      "p95": 168.0,
+      "edge": 0.0234,
+      "hf": 5.42,
+      "lf": 45.36,
+      "std8": 46.38,
+      "edge8": 0.125,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0234 < film p5 0.0237"
+      ]
+    }
+  ]
+}

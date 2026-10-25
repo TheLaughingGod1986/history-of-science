@@ -1,0 +1,2 @@
+WARN   0:24 row s10_loop loop_span_01_pulse_wrist_t1.mp4: low detail: edge density 0.0234 < film p5 0.0237
+picture QA PASS: 0 of 10 cuts fail, 1 to look at -> 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s01_the_sum_v04/picture_qa_s01_the_sum_v04/PICTURE_QA.md, 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s01_the_sum_v04/picture_qa_s01_the_sum_v04/picture_qa_review.jpg
