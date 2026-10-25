@@ -1,0 +1,59 @@
+{
+  "film": "007_The-First-Vaccine",
+  "job": "J0925",
+  "engine": "Flow Image Nano Banana 2 16:9 (0 Flow credits)",
+  "stills": {
+    "07b_three_in_ten_v04": {
+      "id": "07b_three_in_ten_v04",
+      "part": "01",
+      "file": "/Volumes/data/mac-mini-archive/scratch/J0925/stills/07b_three_in_ten_v04.png",
+      "sha256": "b1c291c77acf108517e78658ebd16376b5541463dc50b3c01a1707fcf9517c2c",
+      "prompt": "STYLE LOCK from the attached stills: the same premium Animistry-class 3D cartoon look, rounded stylised shapes, soft finished materials, warm sunlit cinematic light. Use them for look only; do not copy their objects or layout.\nLANDSCAPE 16:9 wide single still frame, the opening frame of a shot.\nHistory of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm sunlit cinematic light, natural-history world of the 1600s-1800s. Not photoreal, not flat 2D. No logos, no captions, no signs, no UI. No Orbit orange robot. No DNA helix. Animals are always alive, lively and unhurt.\n18th-century English country cottage interior in soft overcast grey daylight: close view along a thick solid rough-hewn oak wooden windowsill in front of a mullioned cottage window overlooking misty green fields. Resting firmly on top of the solid flat oak windowsill are ten small plain unpainted turned-wood peg-doll figures in a single row: seven of the wooden peg-doll figures stand upright on their flat wooden bases, and three intact one-piece wooden peg-doll figures lie horizontally on their sides resting solidly on top of the oak windowsill surface. Every wooden figure is one solid piece of turned oak wood resting cleanly on top of the solid wooden shelf. No candle, flame, lantern, lamp or fire in shot. No text, letters or numbers.\nHARD REJECT: photoreal photo, live-action, flat 2D, letterbox bars, watermark, text, captions, signs, UI, logos, Orbit orange robot, DNA helix.",
+      "credits_used": 0,
+      "credits_after": 20870,
+      "at": "2026-10-24T23:38:38+00:00"
+    },
+    "06b_jesty_hands_v04": {
+      "id": "06b_jesty_hands_v04",
+      "part": "02",
+      "file": "/Volumes/data/mac-mini-archive/scratch/J0925/stills/06b_jesty_hands_v04.png",
+      "sha256": "77fec074eedf76be1827be21b675f30e1b75cc243f967ceb29c4decad2f99534",
+      "prompt": "STYLE LOCK from the attached stills: the same premium Animistry-class 3D cartoon look, rounded stylised shapes, soft finished materials, warm sunlit cinematic light. Use them for look only; do not copy their objects or layout.\nLANDSCAPE 16:9 wide single still frame, the opening frame of a shot.\nHistory of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm sunlit cinematic light, natural-history world of the 1600s-1800s. Not photoreal, not flat 2D. No logos, no captions, no signs, no UI. No Orbit orange robot. No DNA helix. Animals are always alive, lively and unhurt.\nClose shot in warm 18th-century English farmhouse daylight over an oak table: weathered hands in a rough country wool coat sleeve hold a small authentic 18th-century folding tortoiseshell-and-steel medical lancet at a flat shallow grazing angle against the surface of a rolled cream linen sleeve and bare forearm, gently making two tiny shallow surface scratches along the top of the skin. The flat leaf-shaped steel lancet blade glides almost horizontally across the skin surface only \u2014 no needle, no syringe, nothing piercing or going vertically into the arm, no blood. Warm daylight from a window out of frame; no candle, flame, lantern, lamp or fire in shot. No text, letters or numbers.\nHARD REJECT: photoreal photo, live-action, flat 2D, letterbox bars, watermark, text, captions, signs, UI, logos, Orbit orange robot, DNA helix.",
+      "credits_used": 0,
+      "credits_after": 20870,
+      "at": "2026-10-24T23:39:25+00:00"
+    },
+    "04_lancet_touch_v04": {
+      "id": "04_lancet_touch_v04",
+      "part": "03",
+      "file": "/Volumes/data/mac-mini-archive/scratch/J0925/stills/04_lancet_touch_v04.png",
+      "sha256": "dfa8846027a06dabf03129d6382abf7dab6a0c08cf15013f39c4982e79c27eda",
+      "prompt": "STYLE LOCK from the attached stills: the same premium Animistry-class 3D cartoon look, rounded stylised shapes, soft finished materials, warm sunlit cinematic light. Use them for look only; do not copy their objects or layout.\nLANDSCAPE 16:9 wide single still frame, the opening frame of a shot.\nHistory of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm sunlit cinematic light, natural-history world of the 1600s-1800s. Not photoreal, not flat 2D. No logos, no captions, no signs, no UI. No Orbit orange robot. No DNA helix. Animals are always alive, lively and unhurt.\nMedium-close shot in a bright sunlit 1796 Gloucestershire Georgian study with a mullioned window and wooden bookshelves behind: Edward Jenner (kind Georgian country doctor in his late forties, powdered hair tied back with a dark ribbon, dark charcoal-brown wool coat, crisp white linen neckcloth) leans forward gently beside an 8-year-old English country boy (James Phipps, short tidy brown hair, plain tan wool waistcoat over a cream linen shirt with one sleeve rolled up to the upper arm, watching calmly and bravely). Jenner's right hand holds a small authentic 18th-century folding steel medical lancet at a shallow grazing angle lightly touching the surface of the boy's clean upper arm to make two tiny shallow surface scratches \u2014 the boy's arm skin is completely clean and smooth with no protruding objects, no needle going in, no blood, and no artefacts. Warm daylight from the window; no candle, flame, lantern, lamp or fire in shot. No text, letters or numbers.\nHARD REJECT: photoreal photo, live-action, flat 2D, letterbox bars, watermark, text, captions, signs, UI, logos, Orbit orange robot, DNA helix.",
+      "credits_used": 0,
+      "credits_after": 20870,
+      "at": "2026-10-24T23:40:11+00:00"
+    }
+  },
+  "balance_reads": [
+    {
+      "at": "2026-10-24T23:37:42+00:00",
+      "credits": 20870,
+      "when": "start"
+    },
+    {
+      "at": "2026-10-24T23:38:38+00:00",
+      "credits": 20870,
+      "after": "07b_three_in_ten_v04"
+    },
+    {
+      "at": "2026-10-24T23:39:25+00:00",
+      "credits": 20870,
+      "after": "06b_jesty_hands_v04"
+    },
+    {
+      "at": "2026-10-24T23:40:11+00:00",
+      "credits": 20870,
+      "after": "04_lancet_touch_v04"
+    }
+  ]
+}

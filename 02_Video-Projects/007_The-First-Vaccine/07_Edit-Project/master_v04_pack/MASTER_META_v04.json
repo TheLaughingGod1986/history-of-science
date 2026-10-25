@@ -1,0 +1,65 @@
+{
+  "job": "J0925",
+  "supersedes_job": "J0887",
+  "duration_s": 531.083333,
+  "frames": 12746,
+  "cuts": 102,
+  "master_sha256": "c7f62adbb241bf3fbfaa3a17929f05768eedcf89044cb2cc5ebd2971c163e810",
+  "phone_sha256": "58e89a6fb5d3698cd10885fbf763f7cf722d6deb64d950cb3e2ec3bb8dced8d3",
+  "phone_size_mb": 102.49,
+  "uat_master": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/007_The-First-Vaccine/hos_007_master_v04.mp4",
+  "uat_phone": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/007_The-First-Vaccine/hos_007_master_v04_PHONE.mp4",
+  "uat_check_sheet": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/007_The-First-Vaccine/ben_changes_check_sheet_v04.jpg",
+  "nas_dir": "/Volumes/data/mac-mini-archive/hos-007-vaccine/master_v04_J0925",
+  "files": [
+    {
+      "file": "/Volumes/data/mac-mini-archive/hos-007-vaccine/master_v04_J0925/hos_007_master_v04.mp4",
+      "sha256": "c7f62adbb241bf3fbfaa3a17929f05768eedcf89044cb2cc5ebd2971c163e810",
+      "size_bytes": 537505571
+    },
+    {
+      "file": "/Volumes/data/mac-mini-archive/hos-007-vaccine/master_v04_J0925/hos_007_master_v04_PHONE.mp4",
+      "sha256": "58e89a6fb5d3698cd10885fbf763f7cf722d6deb64d950cb3e2ec3bb8dced8d3",
+      "size_bytes": 107471155
+    },
+    {
+      "file": "/Volumes/data/mac-mini-archive/hos-007-vaccine/master_v04_J0925/hos_007_full_join_v04.mp4",
+      "sha256": "45c132882117cff10e40c55b34bdbae3fec7e38c2e57b05b4243836d96933457",
+      "size_bytes": 520577925
+    },
+    {
+      "file": "/Volumes/data/mac-mini-archive/hos-007-vaccine/master_v04_J0925/ben_changes_check_sheet_v04.jpg",
+      "sha256": "0f8f5d21fef5be277cb1b92b60e7068d7ee00d98936d34a8ad0825722bbecb8e",
+      "size_bytes": 939663
+    },
+    {
+      "file": "/Volumes/data/mac-mini-archive/hos-007-vaccine/master_v04_J0925/hos_007_master_v04_contact_sheet.jpg",
+      "sha256": "0ddfb02688bb698c69ae5aa315a17fe1e76d21e3d24256592647605f9635a861",
+      "size_bytes": 1938822
+    }
+  ],
+  "bed_vs_vo": {
+    "vo_integrated_lufs": -16.1,
+    "bed_integrated_lufs": -34.1,
+    "speech_bed_mean_lufs": -35.22,
+    "pause_bed_mean_lufs": -33.01,
+    "pause_rise_over_speech_db": 2.21,
+    "speech_diff_under_vo_db": {
+      "mean": 18.13,
+      "p10": 13.2,
+      "p50": 18.5,
+      "p90": 21.4,
+      "min": 10.9,
+      "breaches_under_10lu": 0
+    },
+    "onset_check_60bpm": {
+      "measured_bpm": 60.0,
+      "lag_hops_50ms": 20,
+      "autocorr_ratio_ac20_ac0": 0.8924,
+      "threshold_ac0": 0.1
+    }
+  },
+  "sfx_hits": 44,
+  "spend": "\u00a30 (0 Flow credits)",
+  "approval": "pending Chief"
+}
