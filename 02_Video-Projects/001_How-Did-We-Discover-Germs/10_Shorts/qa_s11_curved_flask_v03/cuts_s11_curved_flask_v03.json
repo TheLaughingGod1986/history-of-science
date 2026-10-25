@@ -1,0 +1,112 @@
+[
+  {
+    "row": "s01_flask",
+    "timeline_in": 0.0,
+    "timeline_out": 2.45,
+    "source": "01_question_mark_flask_v17.mp4",
+    "upscale": 1.776,
+    "video": true,
+    "framing": {
+      "offset": 1.8
+    }
+  },
+  {
+    "row": "s02_boil",
+    "timeline_in": 2.45,
+    "timeline_out": 5.0,
+    "source": "02_boil_broth_v04.mp4",
+    "upscale": 1.776,
+    "video": true,
+    "framing": {
+      "offset": 0.45
+    }
+  },
+  {
+    "row": "s03_dust",
+    "timeline_in": 5.0,
+    "timeline_out": 7.4,
+    "source": "03_dust_in_the_curve_v23.mp4",
+    "upscale": 1.776,
+    "video": true,
+    "framing": {
+      "offset": 0.4
+    }
+  },
+  {
+    "row": "s04_passengers",
+    "timeline_in": 7.4,
+    "timeline_out": 10.1,
+    "source": "08_passengers_v20.mp4",
+    "upscale": 1.776,
+    "video": true,
+    "framing": {
+      "offset": 0.35
+    }
+  },
+  {
+    "row": "s05_clear",
+    "timeline_in": 10.1,
+    "timeline_out": 12.8,
+    "source": "04_still_clear_v21.mp4",
+    "upscale": 1.776,
+    "video": true,
+    "framing": {
+      "offset": 0.45
+    }
+  },
+  {
+    "row": "s06_tip",
+    "timeline_in": 12.8,
+    "timeline_out": 15.45,
+    "source": "05_tip_the_trap_v17.mp4",
+    "upscale": 1.776,
+    "video": true,
+    "framing": {
+      "offset": 0.4
+    }
+  },
+  {
+    "row": "s07_bloom",
+    "timeline_in": 15.45,
+    "timeline_out": 18.0,
+    "source": "07_bloom_cloud_v13.mp4",
+    "upscale": 1.776,
+    "video": true,
+    "framing": {
+      "offset": 0.4
+    }
+  },
+  {
+    "row": "s08_result",
+    "timeline_in": 18.0,
+    "timeline_out": 20.4,
+    "source": "11_result_returns_v01.mp4",
+    "upscale": 1.776,
+    "video": true,
+    "framing": {
+      "offset": 0.5
+    }
+  },
+  {
+    "row": "s09_sceptics",
+    "timeline_in": 20.4,
+    "timeline_out": 22.47,
+    "source": "09_sceptics_watch_v17.mp4",
+    "upscale": 1.776,
+    "video": true,
+    "framing": {
+      "offset": 0.4
+    }
+  },
+  {
+    "row": "s10_loop",
+    "timeline_in": 22.47,
+    "timeline_out": 23.47,
+    "source": "loop_end_01_question_mark_flask_v17.mp4",
+    "upscale": 1.776,
+    "video": true,
+    "framing": {
+      "offset": 0.8333
+    }
+  }
+]
