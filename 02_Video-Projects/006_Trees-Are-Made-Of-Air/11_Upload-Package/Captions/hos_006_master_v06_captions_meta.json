@@ -1,0 +1,19 @@
+{
+  "srt": "hos_006_master_v06.en.srt",
+  "sha256": "6a217cb66ab2511a54ae5a72e89e2fd60f0f8b41533715c80ddae1d1777b86d2",
+  "language": "en-GB",
+  "master": "07_Edit-Project/master_v06/hos_006_master_v06.mp4",
+  "master_sha256": "36c54e684b8a947c65298231268f9f031899df5a0d72ec38506f5e17b3d215ef",
+  "audio_pcm_md5": "f4f95e7101065bfab0158b71d7669f22",
+  "audio_note": "v06 PCM md5 matches master v05, so VO_RETIME_v02 film times carry",
+  "source_text": "01_Script via 07_Edit-Project/VO_RETIME_v02.json",
+  "cues": 141,
+  "first": "00:00:00,000",
+  "last_end": "00:08:35,589",
+  "chapter_cards_s": [
+    61.666667,
+    178.666667,
+    273.5,
+    365.416667
+  ]
+}

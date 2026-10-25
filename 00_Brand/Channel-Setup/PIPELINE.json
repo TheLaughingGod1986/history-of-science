@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-23",
+  "updated": "2026-10-25",
   "updated_by": "gemini",
   "board_url": "https://claude.ai/artifact/Hhk519dkbHMzeaZfp3efhc",
   "stages": [
@@ -218,7 +218,7 @@
       "title": "The Willow Tree That Was Made of Air",
       "air": "2026-11-05",
       "ready_by": "2026-11-01",
-      "summary": "Master v06 built for J0924 (`hos_006_master_v06.mp4`, 531.8 s / 96 cuts, sha256 `36c54e68`, -14.0 LUFS / -1.4 dBTP, 0 Flow credits) + `<120 MB` phone copy (`hos_006_master_v06_PHONE.mp4`, 109.83 MB, sha256 `9b3dde01`): all 3 of Ben's v05 changes fixed at the root cause (1:03 + 4:30 1-frame next-shot flash before chapter cards eliminated across all 28 overlays via integer frame `N/(24*TB)` PTS, Part 5 overlays restored, and 4:02 `#45 12_mouse_mint_v06` bottom-reframed 1.38x so the mint stem goes cleanly into the bottom border with 0 floating twig), verified frame-by-frame on `hos_006_master_v06_card_inpoints_sheet.jpg` and `hos_006_master_v06_ben_check_sheet.jpg`, all gates PASS, copied to `HOS UAT/006_Trees_master_v06.mp4` and `006_Trees_master_v06_PHONE.mp4`, parked for Chief. Thumbnails A + B also parked for Chief (J0869).",
+      "summary": "Private `VbPubYd6Fbs`, publishAt Thu 5 Nov 2026 18:00 London (J0945). Master v06 sha256 `36c54e68`, 531.83 s, file size 586581796 matches the upload. Thumbnail A set. en-GB captions serving. Studio finish still: end screen to 004 `GHZDsiH7L7A`, pinned comment, thumbnail Test & Compare A/B. Buffer deferred.",
       "stages": {
         "topic": {
           "status": "done"
@@ -249,10 +249,10 @@
           "note": "All 5 parts KEEP + roughs assembled on main (Part 01 12/12 KEEP + rough v01 PASS; Part 02 UAT applied + rough v02; Part 03 rough v02 with P3:06 KEEP; Part 04 rough v01 KEEP; Part 05 rough v01 KEEP PASS; Chief 15 Oct sweep #180)."
         },
         "edit": {
-          "status": "doing",
+          "status": "done",
           "due": "2026-10-27",
           "owner": "Chief",
-          "note": "master v06 built at 0 Flow credits (J0924, 531.8 s / 96 cuts, sha256 `36c54e68`, -14.0 LUFS / -1.4 dBTP) + 109.83 MB `_PHONE.mp4`: Ben's 3 v05 changes (1:03 + 4:30 card flash fixed at root cause across all 28 overlays with 0-frame leak, 4:02 mouse-and-mint reframed 1.38x with 0 floating twig) verified frame-by-frame (`hos_006_master_v06_card_inpoints_sheet.jpg`), `picture_qa` 0/96 fail, `polish_gate` 0/96 fail, `music_gate` PASS, `sfx_kit level` PASS, copied to `HOS UAT/006_Trees_master_v06.mp4` + `_PHONE.mp4`; parked for Chief",
+          "note": "master v06 uploaded Private as VbPubYd6Fbs (J0945). sha256 36c54e68, picture_qa and polish_gate 0/96 fail, music_gate and sfx level PASS",
           "jobs": [
             "J0835",
             "J0857",
@@ -267,37 +267,39 @@
             6
           ],
           "steps_unit": "v06 steps",
-          "left": "in Chief review before Ben's rewatch",
+          "left": "",
           "eta": "",
-          "waiting": "Chief: HOS 006 master v06 review (J0924)"
+          "waiting": ""
         },
         "thumbnails": {
           "status": "doing",
           "due": "2026-10-29",
           "owner": "Chief",
-          "since": "2026-10-23T03:35",
+          "since": "2026-10-25T20:22",
           "underway": false,
           "steps": [
             2,
             2
           ],
           "steps_unit": "thumb steps",
-          "left": "in Chief review before Ben's 1 Nov watch",
+          "left": "Test & Compare in Studio finish",
           "eta": "",
-          "waiting": "Chief: HOS 006 thumbnails A + B review before Ben's 1 Nov watch (J0869)",
+          "waiting": "Studio finish: Test & Compare A WOOD / FROM / SKY? vs B DO PLANTS / EAT / SOIL? on VbPubYd6Fbs",
           "jobs": [
             "J0858",
             "J0869"
           ],
-          "note": "Step 2 done at 0 Flow credits (J0869): A (`WOOD / FROM / SKY?`, sha256 `904d2f58`) + B (`DO PLANTS / EAT / SOIL?`, blank scale/weights, sha256 `ee5f2605`) minted on Nano Banana 2, lettered via cover builder, `thumb_preview.py long` + `style_sheet.py long` PASS, staged in `11_Upload-Package/PACKAGE_MANIFEST.json` and `HOS UAT/006_Trees-Are-Made-Of-Air/08_Thumbnail/`; parked for Chief"
+          "note": "A is the cover on VbPubYd6Fbs (sha 904d2f58, thumbnail set). B (sha ee5f2605) waits for Test & Compare in Studio. The Data API cannot arm the test."
         },
         "ben_ok": {
-          "status": "todo",
-          "due": "2026-11-01"
+          "status": "done",
+          "due": "2026-11-01",
+          "note": "Ben OK'd master v06 on the Kanban 25 Oct 2026 14:10 London (HOS #180 6398691247). Chief Final OK 14:15."
         },
         "scheduled": {
-          "status": "todo",
-          "due": "2026-11-02"
+          "status": "done",
+          "due": "2026-11-02",
+          "note": "Private VbPubYd6Fbs, publishAt Thu 5 Nov 2026 18:00 London. End screen, pinned comment and Test & Compare are the Studio finish job."
         }
       }
     },

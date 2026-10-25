@@ -1,7 +1,7 @@
 {
   "format": "longform",
-  "video": null,
-  "youtubeId": null,
+  "video": "../07_Edit-Project/master_v06/hos_006_master_v06.mp4",
+  "youtubeId": "VbPubYd6Fbs",
   "title": "The Willow Tree That Was Made of Air",
   "titleVariant": "A",
   "descriptionFile": "Descriptions/trees_long_description_v01.txt",
@@ -28,7 +28,8 @@
   "affiliate": null,
   "channel": "@HistoryOfScienceYT",
   "premiere": false,
-  "note": "Draft at script v02 (2 Oct 2026); updated 24 Oct 2026 (J0899/J0909 Chief PASS). Arm 2-way Thumbnail Test & Compare on launch (Primary A: hos_006_thumb_A_wood_from_sky_v01.jpg 'WOOD / FROM / SKY?' vs Test & Compare B: hos_006_thumb_B_do_plants_eat_soil_v01.jpg 'DO PLANTS / EAT / SOIL?', minted at 0 Flow credits in J0869) alongside Title T&C ('The Willow Tree That Was Made of Air' vs 'Where Does a Tree\\'s Weight Come From?'). End screen links to 004 Atom (GHZDsiH7L7A) + Subscribe. Keep positive question titles on all 5 QA-passed Shorts (s04-s08) and run the Chief-approved 12-15 s Short cut test (LEARNINGS.md #4) on one 006 Short alongside its 25 s cut. Nothing uploaded or scheduled on YouTube yet; proposed air Thu 5 Nov 2026 18:00 UK = 18:00 UTC, normal publish.",
+  "note": "Master v06 (sha256 36c54e684b8a947c65298231268f9f031899df5a0d72ec38506f5e17b3d215ef, 531.83 s). Audio PCM matches v05, so VO_RETIME_v02 timings carry; chapters retimed to the v06 chapter cards (1:02, 2:59, 4:34, 6:06) and en-GB captions are Captions/hos_006_master_v06.en.srt. Chief Final OK 25 Oct 2026 14:15 London after Ben's Kanban OK at 14:10 (HOS #180 6398691247, J0945). Arm 2-way Thumbnail Test & Compare on launch (Primary A: hos_006_thumb_A_wood_from_sky_v01.jpg 'WOOD / FROM / SKY?' sha 904d2f58 vs B: hos_006_thumb_B_do_plants_eat_soil_v01.jpg 'DO PLANTS / EAT / SOIL?' sha ee5f2605, J0869) alongside Title T&C. End screen links to 004 Atom (GHZDsiH7L7A) + Subscribe. Air Thu 5 Nov 2026 18:00 London = 18:00 UTC, normal publish, Private until then. The Data API cannot arm Test & Compare; Studio finish sets it.",
+  "captionsFile": "Captions/hos_006_master_v06.en.srt",
   "neighbours": {
     "phrases": [
       "tree",

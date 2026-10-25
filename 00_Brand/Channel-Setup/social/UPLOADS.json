@@ -286,6 +286,25 @@
         "question": "What did the swan-neck flask experiment prove?",
         "alt": "A glowing swan-neck glass flask of clear broth in Pasteur's 1860s laboratory; hook caption CURVED GLASS."
       }
+    },
+    "VbPubYd6Fbs": {
+      "kind": "long",
+      "film": "006",
+      "title": "The Willow Tree That Was Made of Air",
+      "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/master_v06/hos_006_master_v06.mp4",
+      "sha256": "36c54e684b8a947c65298231268f9f031899df5a0d72ec38506f5e17b3d215ef",
+      "bytes": 586581796,
+      "packageDir": "02_Video-Projects/006_Trees-Are-Made-Of-Air/11_Upload-Package",
+      "thumb": "02_Video-Projects/006_Trees-Are-Made-Of-Air/08_Thumbnail/Selected/hos_006_thumb_A_wood_from_sky_v01.jpg",
+      "thumbSha256": "904d2f58be22be993fb36e9c86997d00e239649e9f4b576ccebe4703c83dd0f0",
+      "thumbB": "02_Video-Projects/006_Trees-Are-Made-Of-Air/08_Thumbnail/Selected/hos_006_thumb_B_do_plants_eat_soil_v01.jpg",
+      "thumbBSha256": "ee5f2605520a0155f146d26700d41c99d47b45596457f84d9692415fe15360c4",
+      "publishAt": "2026-11-05T18:00:00Z",
+      "privacyStatus": "private",
+      "registeredAt": "2026-10-25T20:22:00Z",
+      "captions": "en-GB standard, serving, AUieDaZBE-6vyjG9eGdzhiF0twPvrL2rqU2EHE8yie_3OPQi",
+      "buffer": "deferred: long films are never cross-posted through Buffer",
+      "note": "J0945. New Private upload of master v06. Thumbnail A set. Test & Compare, end screen and pinned comment are the Studio finish job. Nothing replaced or deleted."
     }
   }
 }
