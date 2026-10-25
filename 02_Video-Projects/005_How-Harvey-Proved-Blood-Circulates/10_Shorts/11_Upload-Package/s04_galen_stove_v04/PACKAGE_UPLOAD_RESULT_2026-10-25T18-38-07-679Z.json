@@ -1,0 +1,103 @@
+{
+  "ok": true,
+  "dryRun": false,
+  "method": "youtube_data_api_package",
+  "upload": {
+    "published": true,
+    "scheduledOnPlatform": true,
+    "scheduledFor": "2026-10-31T11:30:00.000Z",
+    "platformPostId": "BW_CFAX-mxc",
+    "platformUrl": "https://youtu.be/BW_CFAX-mxc",
+    "message": "Uploaded to YouTube; scheduled to go live at 2026-10-31T11:30:00.000Z; thumbnail set",
+    "responseSummary": "{\"id\":\"BW_CFAX-mxc\",\"privacyStatus\":\"private\",\"publishAt\":\"2026-10-31T11:30:00.000Z\"}"
+  },
+  "package": {
+    "title": "Is the Heart a Pump?",
+    "format": "shorts",
+    "privacy": "private",
+    "tagCount": 7,
+    "hasPinnedComment": false,
+    "thumbnailPath": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/covers_v02/hos_005_s04_galen_stove_cover_v02.jpg",
+    "scheduledAt": "2026-10-31T11:30:00.000Z",
+    "sources": {
+      "manifest": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/11_Upload-Package/s04_galen_stove_v04/PACKAGE_MANIFEST.json",
+      "video": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s04_galen_stove_v04.mp4",
+      "thumbnail": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/covers_v02/hos_005_s04_galen_stove_cover_v02.jpg"
+    }
+  },
+  "postUpload": {
+    "firstCommentPosted": false,
+    "commentMessage": null,
+    "playlistAdded": false,
+    "playlistMessage": null
+  },
+  "studioFinish": {
+    "videoId": "BW_CFAX-mxc",
+    "studioEditUrl": "https://studio.youtube.com/video/BW_CFAX-mxc/edit",
+    "items": [
+      {
+        "id": "api_metadata",
+        "required": true,
+        "status": "api_done",
+        "title": "Title · description · tags · schedule · video",
+        "detail": "Uploaded via YouTube Data API"
+      },
+      {
+        "id": "primary_thumbnail",
+        "required": true,
+        "status": "api_done",
+        "title": "Primary thumbnail",
+        "detail": "Set via thumbnails.set",
+        "studioUrlHint": "https://studio.youtube.com/video/BW_CFAX-mxc/edit"
+      },
+      {
+        "id": "title_thumb_abc",
+        "required": false,
+        "status": "n/a",
+        "title": "Title + thumbnail ABC (Test & Compare)",
+        "detail": "A/B Testing not available for Shorts",
+        "studioUrlHint": "https://studio.youtube.com/video/BW_CFAX-mxc/edit"
+      },
+      {
+        "id": "first_comment",
+        "required": false,
+        "status": "n/a",
+        "title": "First / pinned comment text",
+        "detail": "No pinned comment file in package",
+        "studioUrlHint": "https://studio.youtube.com/video/BW_CFAX-mxc/comments"
+      },
+      {
+        "id": "pin_comment",
+        "required": false,
+        "status": "n/a",
+        "title": "Pin the comment",
+        "detail": "Studio only — no official Data API pin endpoint",
+        "studioUrlHint": "https://studio.youtube.com/video/BW_CFAX-mxc/comments"
+      },
+      {
+        "id": "related_watch_next",
+        "required": true,
+        "status": "pending_studio",
+        "title": "Related video (full film)",
+        "detail": "Desktop Studio: Content → Short → Related video → its own full film (once that long is public) → Save. Required. No new Short pins.",
+        "studioUrlHint": "https://studio.youtube.com/video/BW_CFAX-mxc/edit"
+      },
+      {
+        "id": "end_screens_cards",
+        "required": false,
+        "status": "n/a",
+        "title": "End screen + cards",
+        "detail": "Studio only — subscribe + best next video",
+        "studioUrlHint": "https://studio.youtube.com/video/BW_CFAX-mxc/edit"
+      },
+      {
+        "id": "playlist",
+        "required": false,
+        "status": "n/a",
+        "title": "Add to playlist",
+        "detail": "No playlistId in manifest"
+      }
+    ],
+    "summary": "API upload done (BW_CFAX-mxc). 1 required Studio finish step(s) remain."
+  }
+}
