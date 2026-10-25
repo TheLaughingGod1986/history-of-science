@@ -1,0 +1,2 @@
+WARN   0:08 row s05_passengers 08_passengers_v20.mp4: low detail: edge density 0.0232 < film p5 0.0359
+picture QA PASS: 0 of 10 cuts fail, 1 to look at -> 02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/qa_s11_curved_flask_v06/picture_qa_s11_curved_flask_v06/PICTURE_QA.md, 02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/qa_s11_curved_flask_v06/picture_qa_s11_curved_flask_v06/picture_qa_review.jpg

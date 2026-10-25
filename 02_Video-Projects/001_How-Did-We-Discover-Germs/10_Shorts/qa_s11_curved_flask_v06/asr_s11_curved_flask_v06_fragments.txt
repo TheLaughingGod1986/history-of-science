@@ -1,0 +1,21 @@
+OK span 0: the flask  ||  a flask
+OK span 1: It stays clear.  ||  stays clear.
+OK span 2: Boil broth.  ||  Boil broth.
+OK span 3: air can drift  ||  Air can drift
+OK span 4: but dust and microbes settle in the curve.  ||  but dust and microbes settle in the curve.
+OK span 5: If life arrives as passengers from the outside  ||  If life arrives as passengers from the outside,
+OK span 6: Then disease can be a passenger too.  ||  then disease can be a passenger too.
+OK span 7: break the neck  ||  Break the neck,
+OK span 8: or tip the trap.  ||  or tip the trap,
+OK span 9: and life blooms into cloudiness.  ||  and life blooms into cloudiness.
+OK span 10: Keep the swan neck intact.  ||  Keep the swan neck intact.
+OK join 0: The flask stays clear.  ||  flask stays clear.
+OK join 1: It stays clear. Boil broth.  ||  stays clear. Boil broth.
+OK join 2: boil broth, air can drift  ||  Boil broth. Air can drift
+OK join 3: air can drift but dust and  ||  can drift but dust and
+OK join 4: in the curve if life arrives  ||  the curve. If life arrives
+OK join 5: The outside then disease  ||  outside, then disease
+OK join 6: You're passenger to break the neck  ||  passenger too. Break the neck,
+OK join 7: break the neck or tip the trap  ||  Break the neck, or tip the trap,
+OK join 8: or tip the trap and life blooms.  ||  tip the trap, and life blooms
+OK join 9: to cloudiness. Keep the swan neck  ||  cloudiness. Keep the swan neck

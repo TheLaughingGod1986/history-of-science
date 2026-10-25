@@ -1,0 +1,1489 @@
+{
+  "id": "s11_curved_flask",
+  "version": "v06",
+  "job": "J0939",
+  "youtube_id": "1-BZaFIMwYU",
+  "title": "What Is the Pasteur Swan Neck Flask Experiment?",
+  "air_date": "2026-10-27",
+  "spoken": "a flask stays clear. Boil broth. Air can drift but dust and microbes settle in the curve. If life arrives as passengers from the outside, then disease can be a passenger too. Break the neck, or tip the trap, and life blooms into cloudiness. Keep the swan neck intact.",
+  "script": "a flask stays clear. Boil broth. Air can drift but dust and microbes settle in the curve. If life arrives as passengers from the outside, then disease can be a passenger too. Break the neck, or tip the trap, and life blooms into cloudiness. Keep the swan neck intact.",
+  "words": [
+    {
+      "word": "a",
+      "start": 0.0,
+      "end": 0.04
+    },
+    {
+      "word": "flask",
+      "start": 0.133,
+      "end": 0.62
+    },
+    {
+      "word": "stays",
+      "start": 0.81,
+      "end": 1.14
+    },
+    {
+      "word": "clear.",
+      "start": 1.207,
+      "end": 1.68
+    },
+    {
+      "word": "Boil",
+      "start": 1.85,
+      "end": 2.07
+    },
+    {
+      "word": "broth.",
+      "start": 2.163,
+      "end": 2.6
+    },
+    {
+      "word": "Air",
+      "start": 2.65,
+      "end": 2.76
+    },
+    {
+      "word": "can",
+      "start": 2.82,
+      "end": 3.0
+    },
+    {
+      "word": "drift",
+      "start": 3.093,
+      "end": 3.56
+    },
+    {
+      "word": "but",
+      "start": 3.65,
+      "end": 3.69
+    },
+    {
+      "word": "dust",
+      "start": 3.726,
+      "end": 4.11
+    },
+    {
+      "word": "and",
+      "start": 4.15,
+      "end": 4.27
+    },
+    {
+      "word": "microbes",
+      "start": 4.359,
+      "end": 5.07
+    },
+    {
+      "word": "settle",
+      "start": 5.116,
+      "end": 5.39
+    },
+    {
+      "word": "in",
+      "start": 5.417,
+      "end": 5.47
+    },
+    {
+      "word": "the",
+      "start": 5.51,
+      "end": 5.63
+    },
+    {
+      "word": "curve.",
+      "start": 5.71,
+      "end": 6.16
+    },
+    {
+      "word": "If",
+      "start": 6.33,
+      "end": 6.37
+    },
+    {
+      "word": "life",
+      "start": 6.424,
+      "end": 6.68
+    },
+    {
+      "word": "arrives",
+      "start": 6.75,
+      "end": 7.24
+    },
+    {
+      "word": "as",
+      "start": 7.32,
+      "end": 7.48
+    },
+    {
+      "word": "passengers",
+      "start": 7.538,
+      "end": 8.12
+    },
+    {
+      "word": "from",
+      "start": 8.152,
+      "end": 8.28
+    },
+    {
+      "word": "the",
+      "start": 8.3,
+      "end": 8.36
+    },
+    {
+      "word": "outside,",
+      "start": 8.45,
+      "end": 9.18
+    },
+    {
+      "word": "then",
+      "start": 9.37,
+      "end": 9.41
+    },
+    {
+      "word": "disease",
+      "start": 9.46,
+      "end": 10.02
+    },
+    {
+      "word": "can",
+      "start": 10.06,
+      "end": 10.18
+    },
+    {
+      "word": "be",
+      "start": 10.207,
+      "end": 10.26
+    },
+    {
+      "word": "a",
+      "start": 10.3,
+      "end": 10.34
+    },
+    {
+      "word": "passenger",
+      "start": 10.396,
+      "end": 10.9
+    },
+    {
+      "word": "too.",
+      "start": 11.0,
+      "end": 11.43
+    },
+    {
+      "word": "Break",
+      "start": 11.6,
+      "end": 11.74
+    },
+    {
+      "word": "the",
+      "start": 11.76,
+      "end": 11.82
+    },
+    {
+      "word": "neck,",
+      "start": 11.9,
+      "end": 12.22
+    },
+    {
+      "word": "or",
+      "start": 12.38,
+      "end": 12.42
+    },
+    {
+      "word": "tip",
+      "start": 12.42,
+      "end": 12.66
+    },
+    {
+      "word": "the",
+      "start": 12.68,
+      "end": 12.74
+    },
+    {
+      "word": "trap,",
+      "start": 12.836,
+      "end": 13.22
+    },
+    {
+      "word": "and",
+      "start": 13.4,
+      "end": 13.44
+    },
+    {
+      "word": "life",
+      "start": 13.52,
+      "end": 13.84
+    },
+    {
+      "word": "blooms",
+      "start": 13.92,
+      "end": 14.4
+    },
+    {
+      "word": "into",
+      "start": 14.448,
+      "end": 14.64
+    },
+    {
+      "word": "cloudiness.",
+      "start": 14.707,
+      "end": 15.49
+    },
+    {
+      "word": "Keep",
+      "start": 15.645,
+      "end": 15.685
+    },
+    {
+      "word": "the",
+      "start": 15.725,
+      "end": 15.845
+    },
+    {
+      "word": "swan",
+      "start": 15.898,
+      "end": 16.165
+    },
+    {
+      "word": "neck",
+      "start": 16.213,
+      "end": 16.405
+    },
+    {
+      "word": "intact.",
+      "start": 16.508,
+      "end": 17.085
+    }
+  ],
+  "word_count": 49,
+  "vo_s": 17.085,
+  "last_word_end_s": 17.085,
+  "pieces": [
+    {
+      "i": 0,
+      "tokens": [
+        "a",
+        "flask"
+      ],
+      "window": [
+        4.12,
+        4.75
+      ],
+      "onset_s": 4.12,
+      "offset_s": 4.75,
+      "cut_s": 4.12,
+      "end_s": 4.75,
+      "lead_ms": 0.0,
+      "tail_ms": 0.0,
+      "fade_done_s": 4.12,
+      "fade_before_onset": true,
+      "opens_in_speech": true,
+      "silence_after": false,
+      "src_edge_rms_db": [
+        -34.4,
+        -37.4
+      ],
+      "unbroken": true
+    },
+    {
+      "i": 1,
+      "tokens": [
+        "stays",
+        "clear"
+      ],
+      "window": [
+        16.22,
+        17.15
+      ],
+      "onset_s": 16.22,
+      "offset_s": 17.12,
+      "cut_s": 16.22,
+      "end_s": 17.15,
+      "lead_ms": 0.0,
+      "tail_ms": 30.0,
+      "fade_done_s": 16.245,
+      "fade_before_onset": false,
+      "opens_in_speech": true,
+      "silence_after": true,
+      "src_edge_rms_db": [
+        -34.7,
+        -73.2
+      ],
+      "unbroken": true
+    },
+    {
+      "i": 2,
+      "tokens": [
+        "boil",
+        "broth"
+      ],
+      "window": [
+        7.32,
+        8.13
+      ],
+      "onset_s": 7.37,
+      "offset_s": 8.1,
+      "cut_s": 7.32,
+      "end_s": 8.13,
+      "lead_ms": 50.0,
+      "tail_ms": 30.0,
+      "fade_done_s": 7.345,
+      "fade_before_onset": true,
+      "opens_in_speech": false,
+      "silence_after": true,
+      "src_edge_rms_db": [
+        -86.7,
+        -51.4
+      ],
+      "unbroken": true
+    },
+    {
+      "i": 3,
+      "tokens": [
+        "air",
+        "can",
+        "drift"
+      ],
+      "window": [
+        11.06,
+        12.02
+      ],
+      "onset_s": 11.09,
+      "offset_s": 11.99,
+      "cut_s": 11.06,
+      "end_s": 12.02,
+      "lead_ms": 30.0,
+      "tail_ms": 30.0,
+      "fade_done_s": 11.085,
+      "fade_before_onset": true,
+      "opens_in_speech": false,
+      "silence_after": true,
+      "src_edge_rms_db": [
+        -75.4,
+        -52.7
+      ],
+      "unbroken": true
+    },
+    {
+      "i": 4,
+      "tokens": [
+        "but",
+        "dust",
+        "and",
+        "microbes",
+        "settle",
+        "in",
+        "the",
+        "curve"
+      ],
+      "window": [
+        12.45,
+        15.12
+      ],
+      "onset_s": 12.48,
+      "offset_s": 15.09,
+      "cut_s": 12.45,
+      "end_s": 15.12,
+      "lead_ms": 30.0,
+      "tail_ms": 30.0,
+      "fade_done_s": 12.475,
+      "fade_before_onset": true,
+      "opens_in_speech": false,
+      "silence_after": true,
+      "src_edge_rms_db": [
+        -83.2,
+        -74.9
+      ],
+      "unbroken": true
+    },
+    {
+      "i": 5,
+      "tokens": [
+        "if",
+        "life",
+        "arrives",
+        "as",
+        "passengers",
+        "from",
+        "the",
+        "outside"
+      ],
+      "window": [
+        38.01,
+        40.98
+      ],
+      "onset_s": 38.04,
+      "offset_s": 40.95,
+      "cut_s": 38.01,
+      "end_s": 40.98,
+      "lead_ms": 30.0,
+      "tail_ms": 30.0,
+      "fade_done_s": 38.035,
+      "fade_before_onset": true,
+      "opens_in_speech": false,
+      "silence_after": true,
+      "src_edge_rms_db": [
+        -80.0,
+        -69.8
+      ],
+      "unbroken": true
+    },
+    {
+      "i": 6,
+      "tokens": [
+        "then",
+        "disease",
+        "can",
+        "be",
+        "a",
+        "passenger",
+        "too"
+      ],
+      "window": [
+        41.39,
+        43.54
+      ],
+      "onset_s": 41.42,
+      "offset_s": 43.51,
+      "cut_s": 41.39,
+      "end_s": 43.54,
+      "lead_ms": 30.0,
+      "tail_ms": 30.0,
+      "fade_done_s": 41.415,
+      "fade_before_onset": true,
+      "opens_in_speech": false,
+      "silence_after": true,
+      "src_edge_rms_db": [
+        -82.6,
+        -65.7
+      ],
+      "unbroken": true
+    },
+    {
+      "i": 7,
+      "tokens": [
+        "break",
+        "the",
+        "neck"
+      ],
+      "window": [
+        17.89,
+        18.62
+      ],
+      "onset_s": 17.92,
+      "offset_s": 18.59,
+      "cut_s": 17.89,
+      "end_s": 18.62,
+      "lead_ms": 30.0,
+      "tail_ms": 30.0,
+      "fade_done_s": 17.915,
+      "fade_before_onset": true,
+      "opens_in_speech": false,
+      "silence_after": true,
+      "src_edge_rms_db": [
+        -80.8,
+        -64.9
+      ],
+      "unbroken": true
+    },
+    {
+      "i": 8,
+      "tokens": [
+        "or",
+        "tip",
+        "the",
+        "trap"
+      ],
+      "window": [
+        19.04,
+        20.01
+      ],
+      "onset_s": 19.07,
+      "offset_s": 19.98,
+      "cut_s": 19.04,
+      "end_s": 20.01,
+      "lead_ms": 30.0,
+      "tail_ms": 30.0,
+      "fade_done_s": 19.065,
+      "fade_before_onset": true,
+      "opens_in_speech": false,
+      "silence_after": true,
+      "src_edge_rms_db": [
+        -84.1,
+        -66.9
+      ],
+      "unbroken": true
+    },
+    {
+      "i": 9,
+      "tokens": [
+        "and",
+        "life",
+        "blooms",
+        "into",
+        "cloudiness"
+      ],
+      "window": [
+        20.48,
+        22.7
+      ],
+      "onset_s": 20.51,
+      "offset_s": 22.7,
+      "cut_s": 20.48,
+      "end_s": 22.7,
+      "lead_ms": 30.0,
+      "tail_ms": 0.0,
+      "fade_done_s": 20.505,
+      "fade_before_onset": true,
+      "opens_in_speech": false,
+      "silence_after": false,
+      "src_edge_rms_db": [
+        -73.7,
+        -55.4
+      ],
+      "unbroken": true
+    },
+    {
+      "i": 10,
+      "tokens": [
+        "keep",
+        "the",
+        "swan",
+        "neck",
+        "intact"
+      ],
+      "window": [
+        8.83,
+        10.36
+      ],
+      "onset_s": 8.86,
+      "offset_s": 10.33,
+      "cut_s": 8.83,
+      "end_s": 10.36,
+      "lead_ms": 30.0,
+      "tail_ms": 30.0,
+      "fade_done_s": 8.855,
+      "fade_before_onset": true,
+      "opens_in_speech": false,
+      "silence_after": true,
+      "src_edge_rms_db": [
+        -79.9,
+        -62.7
+      ],
+      "unbroken": true
+    }
+  ],
+  "captions": [
+    {
+      "text": "a flask stays clear.",
+      "t0": 0.0,
+      "t1": 1.85
+    },
+    {
+      "text": "Boil broth.",
+      "t0": 1.85,
+      "t1": 2.65
+    },
+    {
+      "text": "Air can drift,",
+      "t0": 2.65,
+      "t1": 3.65
+    },
+    {
+      "text": "but dust and microbes",
+      "t0": 3.65,
+      "t1": 5.116
+    },
+    {
+      "text": "settle in the curve.",
+      "t0": 5.116,
+      "t1": 6.33
+    },
+    {
+      "text": "If life arrives as",
+      "t0": 6.33,
+      "t1": 7.538
+    },
+    {
+      "text": "passengers from the outside,",
+      "t0": 7.538,
+      "t1": 9.37
+    },
+    {
+      "text": "then disease can be a passenger too.",
+      "t0": 9.37,
+      "t1": 11.6
+    },
+    {
+      "text": "Break the neck,",
+      "t0": 11.6,
+      "t1": 12.38
+    },
+    {
+      "text": "or tip the trap,",
+      "t0": 12.38,
+      "t1": 13.4
+    },
+    {
+      "text": "and life blooms into cloudiness.",
+      "t0": 13.4,
+      "t1": 15.645
+    },
+    {
+      "text": "Keep the swan neck intact.",
+      "t0": 15.645,
+      "t1": 17.205
+    }
+  ],
+  "asr": {
+    "ok": true,
+    "notes": [],
+    "stem": "the flask stays clear boil broth air can drift but dust and microbes settle in the curve if life arrives as passengers from the outside then disease can be a passenger to break the neck or tip the trap and life blooms into cloudiness keep the swan neck intact",
+    "mix_first_3s": "The flask stays clear. Boil broth. Egg.",
+    "fragments_ok": true,
+    "fragment_notes": []
+  },
+  "spans": [
+    {
+      "i": 0,
+      "src": [
+        4.12,
+        4.75
+      ],
+      "out": 0.0,
+      "dur": 0.63,
+      "gap_after": 0.195,
+      "gap_kind": "word",
+      "gain_db": 6.23,
+      "words": "a flask",
+      "src_edge_rms_db": [
+        -34.4,
+        -37.4
+      ],
+      "measured": "one unbroken source run; word times are stem energy"
+    },
+    {
+      "i": 1,
+      "src": [
+        16.22,
+        17.15
+      ],
+      "out": 0.8,
+      "dur": 0.93,
+      "gap_after": 0.085,
+      "gap_kind": "sentence",
+      "gain_db": 6.23,
+      "words": "stays clear.",
+      "src_edge_rms_db": [
+        -34.7,
+        -73.2
+      ],
+      "measured": "one unbroken source run; word times are stem energy"
+    },
+    {
+      "i": 2,
+      "src": [
+        7.32,
+        8.13
+      ],
+      "out": 1.79,
+      "dur": 0.81,
+      "gap_after": 0.045,
+      "gap_kind": "sentence",
+      "gain_db": 0.0,
+      "words": "Boil broth.",
+      "src_edge_rms_db": [
+        -86.7,
+        -51.4
+      ],
+      "measured": "one unbroken source run; word times are stem energy"
+    },
+    {
+      "i": 3,
+      "src": [
+        11.06,
+        12.02
+      ],
+      "out": 2.62,
+      "dur": 0.96,
+      "gap_after": 0.045,
+      "gap_kind": "comma",
+      "gain_db": 0.0,
+      "words": "Air can drift",
+      "src_edge_rms_db": [
+        -75.4,
+        -52.7
+      ],
+      "measured": "one unbroken source run; word times are stem energy"
+    },
+    {
+      "i": 4,
+      "src": [
+        12.45,
+        15.12
+      ],
+      "out": 3.6,
+      "dur": 2.67,
+      "gap_after": 0.045,
+      "gap_kind": "sentence",
+      "gain_db": 0.0,
+      "words": "but dust and microbes settle in the curve.",
+      "src_edge_rms_db": [
+        -83.2,
+        -74.9
+      ],
+      "measured": "one unbroken source run; word times are stem energy"
+    },
+    {
+      "i": 5,
+      "src": [
+        38.01,
+        40.98
+      ],
+      "out": 6.29,
+      "dur": 2.97,
+      "gap_after": 0.095,
+      "gap_kind": "comma",
+      "gain_db": 0.0,
+      "words": "If life arrives as passengers from the outside,",
+      "src_edge_rms_db": [
+        -80.0,
+        -69.8
+      ],
+      "measured": "one unbroken source run; word times are stem energy"
+    },
+    {
+      "i": 6,
+      "src": [
+        41.39,
+        43.54
+      ],
+      "out": 9.33,
+      "dur": 2.15,
+      "gap_after": 0.095,
+      "gap_kind": "sentence",
+      "gain_db": 0.0,
+      "words": "then disease can be a passenger too.",
+      "src_edge_rms_db": [
+        -82.6,
+        -65.7
+      ],
+      "measured": "one unbroken source run; word times are stem energy"
+    },
+    {
+      "i": 7,
+      "src": [
+        17.89,
+        18.62
+      ],
+      "out": 11.55,
+      "dur": 0.73,
+      "gap_after": 0.085,
+      "gap_kind": "comma",
+      "gain_db": 0.0,
+      "words": "Break the neck,",
+      "src_edge_rms_db": [
+        -80.8,
+        -64.9
+      ],
+      "measured": "one unbroken source run; word times are stem energy"
+    },
+    {
+      "i": 8,
+      "src": [
+        19.04,
+        20.01
+      ],
+      "out": 12.34,
+      "dur": 0.97,
+      "gap_after": 0.075,
+      "gap_kind": "comma",
+      "gain_db": 0.0,
+      "words": "or tip the trap,",
+      "src_edge_rms_db": [
+        -84.1,
+        -66.9
+      ],
+      "measured": "one unbroken source run; word times are stem energy"
+    },
+    {
+      "i": 9,
+      "src": [
+        20.48,
+        22.7
+      ],
+      "out": 13.36,
+      "dur": 2.22,
+      "gap_after": 0.0,
+      "gap_kind": "sentence",
+      "gain_db": 0.0,
+      "words": "and life blooms into cloudiness.",
+      "src_edge_rms_db": [
+        -73.7,
+        -55.4
+      ],
+      "measured": "one unbroken source run; word times are stem energy"
+    },
+    {
+      "i": 10,
+      "src": [
+        8.83,
+        10.36
+      ],
+      "out": 15.555,
+      "dur": 1.53,
+      "gap_after": 0.0,
+      "gap_kind": "end",
+      "gain_db": 0.0,
+      "words": "Keep the swan neck intact.",
+      "src_edge_rms_db": [
+        -79.9,
+        -62.7
+      ],
+      "measured": "one unbroken source run; word times are stem energy"
+    }
+  ],
+  "plan": [
+    {
+      "t0": 0.0,
+      "t1": 1.867,
+      "plate": "01_question_mark_flask_v17.mp4",
+      "in_s": 1.8,
+      "crop_x": 720,
+      "label": "flask",
+      "hold_s": 1.867
+    },
+    {
+      "t0": 1.867,
+      "t1": 2.667,
+      "plate": "02_boil_broth_v04.mp4",
+      "in_s": 0.45,
+      "crop_x": 480,
+      "label": "boil",
+      "hold_s": 0.8
+    },
+    {
+      "t0": 2.667,
+      "t1": 3.733,
+      "plate": "03_dust_in_the_curve_v23.mp4",
+      "in_s": 0.4,
+      "crop_x": 640,
+      "label": "dust",
+      "hold_s": 1.067
+    },
+    {
+      "t0": 3.733,
+      "t1": 6.333,
+      "plate": "03_dust_in_the_curve_v23.mp4",
+      "in_s": 3.4,
+      "crop_x": 560,
+      "label": "dust2",
+      "hold_s": 2.6
+    },
+    {
+      "t0": 6.333,
+      "t1": 9.267,
+      "plate": "08_passengers_v20.mp4",
+      "in_s": 0.35,
+      "crop_x": 380,
+      "label": "passengers",
+      "hold_s": 2.933
+    },
+    {
+      "t0": 9.267,
+      "t1": 11.6,
+      "plate": "04_still_clear_v21.mp4",
+      "in_s": 0.5,
+      "crop_x": 640,
+      "label": "clear",
+      "hold_s": 2.333
+    },
+    {
+      "t0": 11.6,
+      "t1": 13.4,
+      "plate": "05_tip_the_trap_v20.mp4",
+      "in_s": 0.4,
+      "crop_x": 520,
+      "label": "tip",
+      "hold_s": 1.8
+    },
+    {
+      "t0": 13.4,
+      "t1": 15.633,
+      "plate": "07_bloom_cloud_v02.mp4",
+      "in_s": 2.2,
+      "crop_x": 500,
+      "label": "bloom",
+      "hold_s": 2.233
+    },
+    {
+      "t0": 15.633,
+      "t1": 17.1,
+      "plate": "11_result_returns_v01.mp4",
+      "in_s": 0.5,
+      "crop_x": 560,
+      "label": "result",
+      "hold_s": 1.467
+    },
+    {
+      "t0": 17.1,
+      "t1": 18.067,
+      "plate": "01_question_mark_flask_v17.mp4",
+      "in_s": 0.8667,
+      "crop_x": 720,
+      "label": "loop",
+      "hold_s": 0.967
+    }
+  ],
+  "hook": "FLASK STAYS",
+  "hook_layer": {
+    "font_size": 233,
+    "cap_pct": 8.65,
+    "block_pct": [
+      2.5,
+      22.2
+    ]
+  },
+  "who_card": {
+    "name": "LOUIS PASTEUR",
+    "line2": "Swan-neck flask, 1860s",
+    "in_s": 2.2,
+    "out_s": 5.9
+  },
+  "title_on_screen": "How Did We Discover Germs?",
+  "no_cta": true,
+  "no_new_spend": true,
+  "bed": "hos_001_s11_curved_flask_v06_bed.wav",
+  "sfx_level": {
+    "exit": 0,
+    "output": "SFX level PASS: VO -19.4 LUFS, SFX -49.3 LUFS, 1 hits",
+    "bed_db": -17.0,
+    "sfx_db": -17.0
+  },
+  "frame0_source": "04_Generated-Clips/part04/raw/v01_fast_probe/01_question_mark_flask_v17.mp4",
+  "frame0_zoom": "none \u2014 moving plate, in 1.80s, crop x=720, no Ken Burns",
+  "first_word_s": 0.0,
+  "surprise_s": {
+    "flask": 0.133,
+    "stays": 0.81,
+    "clear": 1.207
+  },
+  "first_cut_s": 1.867,
+  "last_word_to_loop_s": 0.982,
+  "meta_promise": false,
+  "runtime_s": 18.067,
+  "longest_hold_s": 2.933,
+  "payoff_phrase": "life blooms into cloudiness",
+  "payoff_s": 13.52,
+  "payoff_frac": 0.748,
+  "payoff_vs_70pct": 0.048,
+  "loop_sentence": "Keep the swan neck intact. A flask stays clear.",
+  "loop_diff": 3.38,
+  "loop_diff_masked": 3.38,
+  "loop_diff_whole": 10.43,
+  "tail_step": 2.01,
+  "tail_steps": [
+    1.86,
+    1.62,
+    1.93,
+    0.29,
+    1.56,
+    2.01,
+    1.76,
+    1.82,
+    0.31,
+    1.78
+  ],
+  "lufs": -14.2,
+  "measured_lufs": -14.2,
+  "true_peak_dbfs": -1.5,
+  "frame0_black": 0.175,
+  "max_inter_sentence_gap_s": 0.19,
+  "hook_level": {
+    "opener_gain_db": 6.23,
+    "hook_speech_db": -17.7,
+    "boil_speech_db": -17.63,
+    "hook_minus_boil_db": -0.07,
+    "gaps": [
+      {
+        "t": 0.62,
+        "dur": 0.19
+      },
+      {
+        "t": 1.68,
+        "dur": 0.17
+      },
+      {
+        "t": 2.49,
+        "dur": 0.16
+      },
+      {
+        "t": 2.89,
+        "dur": 0.1
+      },
+      {
+        "t": 3.46,
+        "dur": 0.19
+      },
+      {
+        "t": 3.75,
+        "dur": 0.09
+      },
+      {
+        "t": 4.14,
+        "dur": 0.11
+      },
+      {
+        "t": 4.64,
+        "dur": 0.15
+      },
+      {
+        "t": 5.69,
+        "dur": 0.13
+      },
+      {
+        "t": 6.16,
+        "dur": 0.17
+      },
+      {
+        "t": 7.48,
+        "dur": 0.12
+      },
+      {
+        "t": 9.18,
+        "dur": 0.19
+      },
+      {
+        "t": 10.08,
+        "dur": 0.09
+      },
+      {
+        "t": 11.43,
+        "dur": 0.17
+      },
+      {
+        "t": 12.19,
+        "dur": 0.19
+      },
+      {
+        "t": 13.21,
+        "dur": 0.19
+      },
+      {
+        "t": 13.9,
+        "dur": 0.15
+      },
+      {
+        "t": 15.49,
+        "dur": 0.15
+      },
+      {
+        "t": 16.44,
+        "dur": 0.1
+      }
+    ],
+    "max_gap_s": 0.19,
+    "heard_gaps": [
+      {
+        "after": "flask",
+        "before": "stays",
+        "gap_s": 0.19,
+        "kind": "word",
+        "target": 0.19
+      },
+      {
+        "after": "clear.",
+        "before": "Boil",
+        "gap_s": 0.17,
+        "kind": "sentence",
+        "target": 0.17
+      },
+      {
+        "after": "broth.",
+        "before": "Air",
+        "gap_s": 0.16,
+        "kind": "sentence",
+        "target": 0.17
+      },
+      {
+        "after": "drift",
+        "before": "but",
+        "gap_s": 0.19,
+        "kind": "comma",
+        "target": 0.19
+      },
+      {
+        "after": "curve.",
+        "before": "If",
+        "gap_s": 0.17,
+        "kind": "sentence",
+        "target": 0.17
+      },
+      {
+        "after": "outside,",
+        "before": "then",
+        "gap_s": 0.19,
+        "kind": "comma",
+        "target": 0.19
+      },
+      {
+        "after": "too.",
+        "before": "Break",
+        "gap_s": 0.17,
+        "kind": "sentence",
+        "target": 0.17
+      },
+      {
+        "after": "neck,",
+        "before": "or",
+        "gap_s": 0.19,
+        "kind": "comma",
+        "target": 0.19
+      },
+      {
+        "after": "trap,",
+        "before": "and",
+        "gap_s": 0.19,
+        "kind": "comma",
+        "target": 0.19
+      },
+      {
+        "after": "cloudiness.",
+        "before": "Keep",
+        "gap_s": 0.155,
+        "kind": "sentence",
+        "target": 0.15
+      }
+    ],
+    "inserts": [
+      0.195,
+      0.085,
+      0.045,
+      0.045,
+      0.045,
+      0.095,
+      0.095,
+      0.085,
+      0.075,
+      0.0,
+      0.0
+    ],
+    "subs": 11,
+    "pieces": [
+      {
+        "i": 0,
+        "tokens": [
+          "a",
+          "flask"
+        ],
+        "window": [
+          4.12,
+          4.75
+        ],
+        "onset_s": 4.12,
+        "offset_s": 4.75,
+        "cut_s": 4.12,
+        "end_s": 4.75,
+        "lead_ms": 0.0,
+        "tail_ms": 0.0,
+        "fade_done_s": 4.12,
+        "fade_before_onset": true,
+        "opens_in_speech": true,
+        "silence_after": false,
+        "src_edge_rms_db": [
+          -34.4,
+          -37.4
+        ],
+        "unbroken": true
+      },
+      {
+        "i": 1,
+        "tokens": [
+          "stays",
+          "clear"
+        ],
+        "window": [
+          16.22,
+          17.15
+        ],
+        "onset_s": 16.22,
+        "offset_s": 17.12,
+        "cut_s": 16.22,
+        "end_s": 17.15,
+        "lead_ms": 0.0,
+        "tail_ms": 30.0,
+        "fade_done_s": 16.245,
+        "fade_before_onset": false,
+        "opens_in_speech": true,
+        "silence_after": true,
+        "src_edge_rms_db": [
+          -34.7,
+          -73.2
+        ],
+        "unbroken": true
+      },
+      {
+        "i": 2,
+        "tokens": [
+          "boil",
+          "broth"
+        ],
+        "window": [
+          7.32,
+          8.13
+        ],
+        "onset_s": 7.37,
+        "offset_s": 8.1,
+        "cut_s": 7.32,
+        "end_s": 8.13,
+        "lead_ms": 50.0,
+        "tail_ms": 30.0,
+        "fade_done_s": 7.345,
+        "fade_before_onset": true,
+        "opens_in_speech": false,
+        "silence_after": true,
+        "src_edge_rms_db": [
+          -86.7,
+          -51.4
+        ],
+        "unbroken": true
+      },
+      {
+        "i": 3,
+        "tokens": [
+          "air",
+          "can",
+          "drift"
+        ],
+        "window": [
+          11.06,
+          12.02
+        ],
+        "onset_s": 11.09,
+        "offset_s": 11.99,
+        "cut_s": 11.06,
+        "end_s": 12.02,
+        "lead_ms": 30.0,
+        "tail_ms": 30.0,
+        "fade_done_s": 11.085,
+        "fade_before_onset": true,
+        "opens_in_speech": false,
+        "silence_after": true,
+        "src_edge_rms_db": [
+          -75.4,
+          -52.7
+        ],
+        "unbroken": true
+      },
+      {
+        "i": 4,
+        "tokens": [
+          "but",
+          "dust",
+          "and",
+          "microbes",
+          "settle",
+          "in",
+          "the",
+          "curve"
+        ],
+        "window": [
+          12.45,
+          15.12
+        ],
+        "onset_s": 12.48,
+        "offset_s": 15.09,
+        "cut_s": 12.45,
+        "end_s": 15.12,
+        "lead_ms": 30.0,
+        "tail_ms": 30.0,
+        "fade_done_s": 12.475,
+        "fade_before_onset": true,
+        "opens_in_speech": false,
+        "silence_after": true,
+        "src_edge_rms_db": [
+          -83.2,
+          -74.9
+        ],
+        "unbroken": true
+      },
+      {
+        "i": 5,
+        "tokens": [
+          "if",
+          "life",
+          "arrives",
+          "as",
+          "passengers",
+          "from",
+          "the",
+          "outside"
+        ],
+        "window": [
+          38.01,
+          40.98
+        ],
+        "onset_s": 38.04,
+        "offset_s": 40.95,
+        "cut_s": 38.01,
+        "end_s": 40.98,
+        "lead_ms": 30.0,
+        "tail_ms": 30.0,
+        "fade_done_s": 38.035,
+        "fade_before_onset": true,
+        "opens_in_speech": false,
+        "silence_after": true,
+        "src_edge_rms_db": [
+          -80.0,
+          -69.8
+        ],
+        "unbroken": true
+      },
+      {
+        "i": 6,
+        "tokens": [
+          "then",
+          "disease",
+          "can",
+          "be",
+          "a",
+          "passenger",
+          "too"
+        ],
+        "window": [
+          41.39,
+          43.54
+        ],
+        "onset_s": 41.42,
+        "offset_s": 43.51,
+        "cut_s": 41.39,
+        "end_s": 43.54,
+        "lead_ms": 30.0,
+        "tail_ms": 30.0,
+        "fade_done_s": 41.415,
+        "fade_before_onset": true,
+        "opens_in_speech": false,
+        "silence_after": true,
+        "src_edge_rms_db": [
+          -82.6,
+          -65.7
+        ],
+        "unbroken": true
+      },
+      {
+        "i": 7,
+        "tokens": [
+          "break",
+          "the",
+          "neck"
+        ],
+        "window": [
+          17.89,
+          18.62
+        ],
+        "onset_s": 17.92,
+        "offset_s": 18.59,
+        "cut_s": 17.89,
+        "end_s": 18.62,
+        "lead_ms": 30.0,
+        "tail_ms": 30.0,
+        "fade_done_s": 17.915,
+        "fade_before_onset": true,
+        "opens_in_speech": false,
+        "silence_after": true,
+        "src_edge_rms_db": [
+          -80.8,
+          -64.9
+        ],
+        "unbroken": true
+      },
+      {
+        "i": 8,
+        "tokens": [
+          "or",
+          "tip",
+          "the",
+          "trap"
+        ],
+        "window": [
+          19.04,
+          20.01
+        ],
+        "onset_s": 19.07,
+        "offset_s": 19.98,
+        "cut_s": 19.04,
+        "end_s": 20.01,
+        "lead_ms": 30.0,
+        "tail_ms": 30.0,
+        "fade_done_s": 19.065,
+        "fade_before_onset": true,
+        "opens_in_speech": false,
+        "silence_after": true,
+        "src_edge_rms_db": [
+          -84.1,
+          -66.9
+        ],
+        "unbroken": true
+      },
+      {
+        "i": 9,
+        "tokens": [
+          "and",
+          "life",
+          "blooms",
+          "into",
+          "cloudiness"
+        ],
+        "window": [
+          20.48,
+          22.7
+        ],
+        "onset_s": 20.51,
+        "offset_s": 22.7,
+        "cut_s": 20.48,
+        "end_s": 22.7,
+        "lead_ms": 30.0,
+        "tail_ms": 0.0,
+        "fade_done_s": 20.505,
+        "fade_before_onset": true,
+        "opens_in_speech": false,
+        "silence_after": false,
+        "src_edge_rms_db": [
+          -73.7,
+          -55.4
+        ],
+        "unbroken": true
+      },
+      {
+        "i": 10,
+        "tokens": [
+          "keep",
+          "the",
+          "swan",
+          "neck",
+          "intact"
+        ],
+        "window": [
+          8.83,
+          10.36
+        ],
+        "onset_s": 8.86,
+        "offset_s": 10.33,
+        "cut_s": 8.83,
+        "end_s": 10.36,
+        "lead_ms": 30.0,
+        "tail_ms": 30.0,
+        "fade_done_s": 8.855,
+        "fade_before_onset": true,
+        "opens_in_speech": false,
+        "silence_after": true,
+        "src_edge_rms_db": [
+          -79.9,
+          -62.7
+        ],
+        "unbroken": true
+      }
+    ]
+  },
+  "title_out_s": 13.4,
+  "loop_s": 0.982
+}

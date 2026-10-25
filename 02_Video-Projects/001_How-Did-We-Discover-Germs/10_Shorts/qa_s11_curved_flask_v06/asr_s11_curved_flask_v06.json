@@ -1,0 +1,296 @@
+{
+  "model": "small.en",
+  "spoken": "a flask stays clear. Boil broth. Air can drift but dust and microbes settle in the curve. If life arrives as passengers from the outside, then disease can be a passenger too. Break the neck, or tip the trap, and life blooms into cloudiness. Keep the swan neck intact.",
+  "stem": {
+    "text": "the flask stays clear boil broth air can drift but dust and microbes settle in the curve if life arrives as passengers from the outside then disease can be a passenger to break the neck or tip the trap and life blooms into cloudiness keep the swan neck intact",
+    "words": [
+      {
+        "word": "the",
+        "start": 0.0,
+        "end": 0.12
+      },
+      {
+        "word": "flask",
+        "start": 0.12,
+        "end": 0.58
+      },
+      {
+        "word": "stays",
+        "start": 0.58,
+        "end": 1.1
+      },
+      {
+        "word": "clear",
+        "start": 1.1,
+        "end": 1.64
+      },
+      {
+        "word": "boil",
+        "start": 1.64,
+        "end": 2.04
+      },
+      {
+        "word": "broth",
+        "start": 2.04,
+        "end": 2.52
+      },
+      {
+        "word": "air",
+        "start": 2.52,
+        "end": 2.84
+      },
+      {
+        "word": "can",
+        "start": 2.84,
+        "end": 3.08
+      },
+      {
+        "word": "drift",
+        "start": 3.08,
+        "end": 3.46
+      },
+      {
+        "word": "but",
+        "start": 3.46,
+        "end": 3.76
+      },
+      {
+        "word": "dust",
+        "start": 3.76,
+        "end": 4.08
+      },
+      {
+        "word": "and",
+        "start": 4.08,
+        "end": 4.38
+      },
+      {
+        "word": "microbes",
+        "start": 4.38,
+        "end": 4.94
+      },
+      {
+        "word": "settle",
+        "start": 4.94,
+        "end": 5.38
+      },
+      {
+        "word": "in",
+        "start": 5.38,
+        "end": 5.58
+      },
+      {
+        "word": "the",
+        "start": 5.58,
+        "end": 5.72
+      },
+      {
+        "word": "curve",
+        "start": 5.72,
+        "end": 6.14
+      },
+      {
+        "word": "if",
+        "start": 6.14,
+        "end": 6.44
+      },
+      {
+        "word": "life",
+        "start": 6.44,
+        "end": 6.7
+      },
+      {
+        "word": "arrives",
+        "start": 6.7,
+        "end": 7.16
+      },
+      {
+        "word": "as",
+        "start": 7.16,
+        "end": 7.5
+      },
+      {
+        "word": "passengers",
+        "start": 7.5,
+        "end": 8.0
+      },
+      {
+        "word": "from",
+        "start": 8.0,
+        "end": 8.34
+      },
+      {
+        "word": "the",
+        "start": 8.34,
+        "end": 8.46
+      },
+      {
+        "word": "outside",
+        "start": 8.46,
+        "end": 9.02
+      },
+      {
+        "word": "then",
+        "start": 9.02,
+        "end": 9.48
+      },
+      {
+        "word": "disease",
+        "start": 9.48,
+        "end": 9.9
+      },
+      {
+        "word": "can",
+        "start": 9.9,
+        "end": 10.22
+      },
+      {
+        "word": "be",
+        "start": 10.22,
+        "end": 10.36
+      },
+      {
+        "word": "a",
+        "start": 10.36,
+        "end": 10.48
+      },
+      {
+        "word": "passenger",
+        "start": 10.48,
+        "end": 10.86
+      },
+      {
+        "word": "to",
+        "start": 10.86,
+        "end": 11.26
+      },
+      {
+        "word": "break",
+        "start": 11.26,
+        "end": 11.76
+      },
+      {
+        "word": "the",
+        "start": 11.76,
+        "end": 11.96
+      },
+      {
+        "word": "neck",
+        "start": 11.96,
+        "end": 12.22
+      },
+      {
+        "word": "or",
+        "start": 12.22,
+        "end": 12.48
+      },
+      {
+        "word": "tip",
+        "start": 12.48,
+        "end": 12.7
+      },
+      {
+        "word": "the",
+        "start": 12.7,
+        "end": 12.86
+      },
+      {
+        "word": "trap",
+        "start": 12.86,
+        "end": 13.2
+      },
+      {
+        "word": "and",
+        "start": 13.2,
+        "end": 13.54
+      },
+      {
+        "word": "life",
+        "start": 13.54,
+        "end": 13.86
+      },
+      {
+        "word": "blooms",
+        "start": 13.86,
+        "end": 14.48
+      },
+      {
+        "word": "into",
+        "start": 14.48,
+        "end": 14.76
+      },
+      {
+        "word": "cloudiness",
+        "start": 14.76,
+        "end": 15.42
+      },
+      {
+        "word": "keep",
+        "start": 15.42,
+        "end": 15.76
+      },
+      {
+        "word": "the",
+        "start": 15.76,
+        "end": 15.94
+      },
+      {
+        "word": "swan",
+        "start": 15.94,
+        "end": 16.24
+      },
+      {
+        "word": "neck",
+        "start": 16.24,
+        "end": 16.46
+      },
+      {
+        "word": "intact",
+        "start": 16.46,
+        "end": 16.82
+      }
+    ]
+  },
+  "mix_first_3s": {
+    "text": "The flask stays clear. Boil broth. Egg.",
+    "words": [
+      {
+        "word": "The",
+        "start": 0.0,
+        "end": 0.16
+      },
+      {
+        "word": "flask",
+        "start": 0.16,
+        "end": 0.6
+      },
+      {
+        "word": "stays",
+        "start": 0.6,
+        "end": 1.12
+      },
+      {
+        "word": "clear.",
+        "start": 1.12,
+        "end": 1.64
+      },
+      {
+        "word": "Boil",
+        "start": 1.96,
+        "end": 2.2
+      },
+      {
+        "word": "broth.",
+        "start": 2.2,
+        "end": 2.5
+      },
+      {
+        "word": "Egg.",
+        "start": 2.8,
+        "end": 2.88
+      }
+    ]
+  },
+  "ok": true,
+  "notes": []
+}
