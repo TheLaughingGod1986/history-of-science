@@ -1,0 +1,20 @@
+1
+00:00:00,080 --> 00:00:02,552
+Marie Curie's notebooks are still radioactive.
+
+2
+00:00:02,702 --> 00:00:07,862
+In 1898, she and Pierre found two new elements, polonium, then radium.
+
+3
+00:00:08,042 --> 00:00:12,382
+Radium glowed in the dark, and she handled it for years with no protection.
+
+4
+00:00:12,562 --> 00:00:16,042
+Today, her papers sit in lead-lined boxes in Paris.
+
+5
+00:00:16,222 --> 00:00:20,122
+Radium takes 1,600 years to lose half its strength
+
