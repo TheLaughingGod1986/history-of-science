@@ -9,7 +9,7 @@
 | VO | Locked set 01 **v03** · 02 v01 · 03 v02b · 04 v01b · 05 v01b. Part 01 v03 = v02 + one-paragraph chalk-cross pickup (Claude 5996011402, 5 Oct 2026): "a neighbour's house shut up and silent". 100.23 s, sha256 `3881da7b…5fb83`, vo_check PASS; Claude VO PASS (5996211914). Audio stays on the Mini (mp3 gitignored); evidence `~/_desk/007/vo_20261005_chalk/` |
 | Neighbour gate | **PASS** (3 Oct 2026): 7 education ≥1M; TED-Ed yes. Evidence `11_Upload-Package/evidence_2026-10-03_neighbours.json` |
 | Picture | **All 73/73 Flow rows minted (J0352 KEEP, 21 Oct 2026; HOS PR #351 merged):** P1 17/17 (530 cr) · P2 21/21 (750 cr) · P3 12/12 (390 cr) · P4 11/11 (380 cr) · P5 12/12 (840 cr) = **2,890 cr** vs 7,550 cap. Face lock `P2:08_jenner_window` KEEP applied to all later readable Jenner faces. 3 £0 code graphics (`7808f751`), 2 archive + 18 reuse (£0). |
-| Edit | **Full join v01 (`hos_007_full_join_v01.mp4`, 505.15 s / 12,123 frames, 97 cuts, sha256 `7cfd6a59`) assembled (J0827, 22 Oct 2026, £0)** across Parts 01–05 (Chief PASS J0820) on locked VO with house Didot teaching cards and both £0 repeat-shot fixes (`P1:09c_case_again` 1.88× lancet crop; `P5:06c/06d` split into strictly unused `04_health_workers` back half `3.833–7.958 s` + `06_assembly_1980` tail `5.083–8.000 s` 1.38× front-row push-in). Parts: P1 `61a5c039` (100.83 s, 20 cuts) · P2 `6ab2fb1f` (129.62 s, 22 cuts) · P3 `62a14a08` (78.75 s, 15 cuts) · P4 `e6a005cd` (92.75 s, 20 cuts) · P5 `14206aeb` (103.17 s, 20 cuts). Full join PASS `polish_gate.py` (`0 of 97 rows failed, 5 to look at`) and `picture_qa.py` (`0 of 97 cuts fail, 5 to look at`), 0 freeze events (`>= 0.8 s`). UAT proxy (`5ea31960`) in `~/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/007_full_join_v01/`. Parked for Chief review (`REVIEW_v01.md`). |
+| Edit | **Full join v01 (`hos_007_full_join_v01.mp4`, 505.15 s / 12,123 frames, 97 cuts, sha256 `7cfd6a59`) assembled (J0827, 22 Oct 2026, £0)** across Parts 01–05 (Chief PASS J0820) on locked VO with house Didot teaching cards and both £0 repeat-shot fixes (`P1:09c_case_again` 1.88× lancet crop; `P5:06c/06d` split into strictly unused `04_health_workers` back half `3.833–7.958 s` + `06_assembly_1980` tail `5.083–8.000 s` 1.38× front-row push-in). Parts: P1 `61a5c039` (100.83 s, 20 cuts) · P2 `6ab2fb1f` (129.62 s, 22 cuts) · P3 `62a14a08` (78.75 s, 15 cuts) · P4 `e6a005cd` (92.75 s, 20 cuts) · P5 `14206aeb` (103.17 s, 20 cuts). **Master v04 (`hos_007_master_v04.mp4`, 531.08 s / 12,746 frames, 102 cuts, sha256 `c7f62adb`, `_PHONE.mp4` 102.49 MB sha256 `58e89a6f`, J0925, £0 / 0 Flow cr)** with all 3 of Ben's changes on v03 (`0:38` 10 intact turned-wood peg dolls resting solidly on oak windowsill so nothing falls through shelf, `2:40` folding steel lancet held at shallow grazing angle scratching skin surface with no needle going in, `4:22` Jenner touching folding steel lancet at shallow angle to James Phipps's clean upper arm with zero AI artefact) + kept v03 fixes (`1:48` aligned milking hand, `3:50` Explorer at house scale, `8:25–8:51` closing card + 20 s moving end screen + 1.5 s fade) in NAS `master_v04_J0925/` and iCloud `HOS UAT/007_The-First-Vaccine/`, parked for Chief review (`07_Edit-Project/master_v04_pack/REVIEW_master_v04.md`). |
 | Air | proposed **Thu 12 Nov 2026 18:00 UK = 18:00 UTC** (GMT); privacy private; madeForKids false; proposals only |
 | Shorts | `s04_smallpox_test_v01` uploaded Private `-I_GHK-GcFs` for Fri 13 Nov 2026 11:30 UK (`2026-11-13T11:30:00Z`, J0873); `s05_vacca_jesty_v02` (`24.167 s`, sha256 `89a9a1668d74`) uploaded Private `4WUs0beKn0A` for Tue 17 Nov 2026 11:30 UK (`2026-11-17T11:30:00Z`, J0906); Related → 007 long once uploaded (`J0875`) |
 | Backup | Neighbour gate PASSED — Lightning backup not needed |
@@ -19,6 +19,25 @@
 - No Vertex/Veo/Flow minting on this film.
 - No spending.
 - Do not merge or touch desk PR #180 from this scaffold PR.
+
+## 23 Oct 2026 — J0856 candidate master v02 (Gemini, superseding J0830 v01)
+
+Original £0 warm chamber score at **60.0 BPM** (`ac[20]/ac[0] = 0.8926`) with envelope ducking (`18.12 dB` mean under VO in speech, `0` breaches, rising `+1.53 dB` in pauses) and **43 HOS house SFX cues** (39 ink ticks across all 6 WHO cards, all 12 date/place stamps & data pills, all 21 teach labels & code graphics + 4 page-turn whooshes on the chapter cards; never over the VO's first word). Approved join picture copied as a lossless video stream (`SHA256=0aa1cf6383b02034c5a7b6ded41ea24549e59b0bb4d7031445775d5ce9fd9915`).
+
+Master v02: `/Volumes/data/mac-mini-archive/hos-007-vaccine/master_v02_J0856/hos_007_master_v02.mp4`  
+SHA-256: `e55f680db246e12620a7827599415e6d9f513d614563bd213c0b2a42f9c69c97` · Duration: `505.147 s`  
+Measured encoded master: **−14.0 LUFS, −1.4 dBTP**.
+
+```text
+SFX level PASS: VO -16.1 LUFS, SFX -35.0 LUFS, 43 hits
+Bed vs VO PASS: bed -34.4 LUFS, 18.12 dB under VO in speech (p10 13.1, p50 18.6, p90 21.4, min 11.2, 0 breaches < 10 LU), rises +1.53 dB in pauses (-35.21 -> -33.68 LUFS)
+music gate PASS: vaccine_score_bed_v01.mp3, 505.1 s, about 60.0 BPM, brief Pace: 58-64 BPM (onset ac[20]/ac[0] = 0.8926)
+polish gate PASS: 0 of 97 rows failed, 5 to look at
+picture QA PASS: 0 of 97 cuts fail, 5 to look at
+Episode gate Decision: PASS; script 92.3/100
+```
+
+Full actual outputs and before/after table: `07_Edit-Project/master_v01_pack/REVIEW_master_v01.md`. Chief audio fit and final review pending. No approved edit stage claimed.
 
 ## 23 Oct 2026 — Short `s04_smallpox_test_v01` (Test B, first search-titled lift from Part 04, OWB J0865)
 
@@ -121,3 +140,50 @@ PASS  Short 4WUs0beKn0A  private 2026-11-17 11:30 UK  Why Is It Called a Vaccine
 
 
 
+## 23 Oct 2026 — J0887 candidate master v03 (Gemini, Ben's 3 changes on v02, £0 / 0 Flow credits)
+
+- **Ben's 3 changes on `master_v02`:**
+  1. **`1:48` (*"When she's milking the cow the hand is misaligned"*):** Replaced `#21 P2:01_milking_dawn` (`1:40.83–1:48.08`, `174` frames) with `01_milking_dawn_v03.mp4` rendered from clean `0`-credit Flow Nano Banana 2 still `01_milking_dawn_v03b.png` (zero paint-patching) with subpixel push-in, animated milk stream `(1014, 712) -> (1022, 825)`, sunbeam motes, and Part 2 overlays `p2_ch` + `p2_cowpox`. Both of the dairymaid's hands meet the centre of the cow's pink udder naturally right above the wooden bucket, with the milk stream flowing straight down from her hands into the bucket.
+  2. **`3:50` (*"Mascot here is way to big"*):** Replaced `#42 P2:14_explorer_stool` (`3:44.79–3:50.46`, `136` frames) with `14_explorer_stool_v03.mp4` rendered from `0`-credit Flow Nano Banana 2 wide byre still `14_explorer_stool_v03.png` with subpixel push-in and sunbeam motes. The Explorer stands at child-sized house scale (~1/3 of frame height, clearly smaller than the seated adult dairymaid and cow, never dominating the frame).
+  3. **`8:25` (*"Ends very promptly, maybe something like subscribe to be alerted when the new video is out"*):** Extended `#97 P5:12_kite_storm_v03` (`8:20.08–8:27.08`, `168` frames = `7.00 s`) so the last VO word at `8:24.67` breathes `2.41 s` while the music resolves; added `#98 P5:14_closing_card_v03` (`8:27.08–8:31.08`, `96` frames = `4.00 s`) with a house Didot closing card over moving storm clouds naming next week's film (*Why Did Franklin Fly a Kite in a Storm?*, `Next film · Thursday 19 November`) and `Subscribe to see it first · @HistoryOfScienceYT` (cued with house ink tick #44 at `507.18 s`); followed by `20.00 s` of moving 3D cartoon picture (`#99..#102`, `8:31.08–8:51.08`: golden meadow, Berkeley village & church, Temple of Vaccinia garden hut, leather history books) and a `1.50 s` picture & music fade to black (`8:49.58–8:51.08`). No new VO.
+- **Files (NAS & iCloud `HOS UAT`):**
+  - Master v03: `/Volumes/data/mac-mini-archive/hos-007-vaccine/master_v03_J0887/hos_007_master_v03.mp4` (`531.083333 s`, `12,746` frames, `102` cuts, `-14.0 LUFS / -1.4 dBTP`, sha256 `b4c329a057f4dd2e1b676cefa63adcd52d0be1b0346dd298295ad90159020dad`)
+  - Phone copy (`<120 MB`): `/Volumes/data/mac-mini-archive/hos-007-vaccine/master_v03_J0887/hos_007_master_v03_PHONE.mp4` (`102.95 MB`, sha256 `db612314a3ed83e5a498d9bc6e8090e5212c21618f1084969efd51467be953e2`)
+  - Check sheet: `/Volumes/data/mac-mini-archive/hos-007-vaccine/master_v03_J0887/ben_changes_check_sheet_v03.jpg` (`sha256: 22428d8607b0a1d7a30a28139e9a874edb0126323167f7be7831152867f5e4b9`)
+  - Contact sheet: `/Volumes/data/mac-mini-archive/hos-007-vaccine/master_v03_J0887/hos_007_master_v03_contact_sheet.jpg` (`sha256: 4e23b27c032e876265b3bc64f94a41752ef0714c412f999c0d563f46102d9e78`)
+  - iCloud UAT: `~/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/007_The-First-Vaccine/` (`hos_007_master_v03.mp4`, `hos_007_master_v03_PHONE.mp4`, `ben_changes_check_sheet_v03.jpg`, `hos_007_master_v03_contact_sheet.jpg`)
+
+```text
+SFX level PASS: VO -16.1 LUFS, SFX -35.4 LUFS, 44 hits
+music gate PASS: vaccine_score_bed_v01.mp3, 531.1 s, about 60.0 BPM, brief Pace: 58-64 BPM
+polish gate PASS: 0 of 102 rows failed, 6 to look at -> /private/tmp/j0887-hos007-v03-wt/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/master_v03_pack/polish_gate.json
+picture QA PASS: 0 of 102 cuts fail, 6 to look at -> /private/tmp/j0887-hos007-v03-wt/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/master_v03_pack/PICTURE_QA.md, /private/tmp/j0887-hos007-v03-wt/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/master_v03_pack/picture_qa_review.jpg
+Episode gate Decision: PASS — VO / Gemini Veo allowed; Script score: 92.3/100 · PASS
+freezedetect: 0 events; encoded loudness: I: -14.0 LUFS, Peak: -1.4 dBFS
+```
+
+Full frame-by-frame evidence and gate outputs: `07_Edit-Project/master_v03_pack/REVIEW_master_v03.md`. Parked for Chief review (`J0887`). No approved edit stage claimed.
+
+## 25 Oct 2026 — J0925 candidate master v04 (Gemini, Ben's 3 changes on v03, £0 / 0 Flow credits)
+
+- **Ben's 3 changes on `master_v03` (HOS #180 `6376001097`, Chief ruling `6384888711`):**
+  1. **`0:38` (*"the wooden figures look like they fall through the shelf and vanish. Replace or trim the plate so nothing passes through solid objects."*):** Replaced `#007 P1:07b_three_in_ten` (`0:35.17–0:38.96`, `91` frames) with `07b_three_in_ten_v04.mp4` rendered from `0`-credit Flow Nano Banana 2 16:9 still `07b_three_in_ten_v04.png` (`upscale: 1.0`) with smooth subpixel push-in, soft window motes, and Part 1 overlay `p1_data_3in10` (`3 in 10 died · Smallpox case fatality`). Ten intact one-piece turned-wood peg dolls (7 standing upright, 3 lying on their sides) rest solidly on top of the oak cottage windowsill through the final frame; nothing passes through or vanishes into the shelf.
+  2. **`2:40` (*"it should be a scratch, not a needle going into the arm. Historically Jenner made two shallow cuts in James Phipps's skin with a lancet, so show a lancet scratching the surface, with no needle going in."*):** Replaced `#031 P2:06b_jesty_hands` (`2:35.42–2:41.75`, `152` frames) with `06b_jesty_hands_v04.mp4` rendered from `0`-credit Flow Nano Banana 2 16:9 still `06b_jesty_hands_v04.png` (`upscale: 1.0`) with smooth subpixel push-in, warm farmhouse daylight motes, and Part 2 overlay `p2_when_1774` (`Dorset, 1774`). Shows an authentic 18th-century folding tortoiseshell-and-steel medical lancet held at a shallow grazing angle scratching two shallow lines along the top of the forearm skin, with no needle going into the arm.
+  3. **`4:22` (*"something odd comes off the boy's arm when the doctor places the matter on it (AI artefact). Replace the plate or cut around it."*):** Replaced `#048 P3:04_lancet_touch` (`4:15.83–4:22.42`, `158` frames) with `04_lancet_touch_v04.mp4` rendered from `0`-credit Flow Nano Banana 2 16:9 still `04_lancet_touch_v04.png` (`upscale: 1.0`) with smooth subpixel push-in, warm study window motes, and Part 3 overlay `p3_who_phipps` (`James Phipps · Age about 8`). Edward Jenner in his sunlit 1796 Berkeley study gently touches a folding steel lancet at a shallow grazing angle to 8-year-old James Phipps's clean upper arm; zero protruding object or AI artefact on the boy's arm.
+- **Files (NAS & iCloud `HOS UAT`):**
+  - Master v04: `/Volumes/data/mac-mini-archive/hos-007-vaccine/master_v04_J0925/hos_007_master_v04.mp4` (`531.083333 s`, `12,746` frames, `102` cuts, `-14.0 LUFS / -1.4 dBTP`, sha256 `c7f62adbb241bf3fbfaa3a17929f05768eedcf89044cb2cc5ebd2971c163e810`)
+  - Phone copy (`<120 MB`): `/Volumes/data/mac-mini-archive/hos-007-vaccine/master_v04_J0925/hos_007_master_v04_PHONE.mp4` (`102.49 MB`, sha256 `58e89a6fb5d3698cd10885fbf763f7cf722d6deb64d950cb3e2ec3bb8dced8d3`)
+  - Check sheet: `/Volumes/data/mac-mini-archive/hos-007-vaccine/master_v04_J0925/ben_changes_check_sheet_v04.jpg` (`sha256: 0f8f5d21fef5be277cb1b92b60e7068d7ee00d98936d34a8ad0825722bbecb8e`)
+  - Contact sheet: `/Volumes/data/mac-mini-archive/hos-007-vaccine/master_v04_J0925/hos_007_master_v04_contact_sheet.jpg` (`sha256: 0ddfb02688bb698c69ae5aa315a17fe1e76d21e3d24256592647605f9635a861`)
+  - iCloud UAT: `~/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/007_The-First-Vaccine/` (`hos_007_master_v04.mp4`, `hos_007_master_v04_PHONE.mp4`, `ben_changes_check_sheet_v04.jpg`, `hos_007_master_v04_contact_sheet.jpg`)
+
+```text
+SFX level PASS: VO -16.1 LUFS, SFX -35.4 LUFS, 44 hits
+music gate PASS: vaccine_score_bed_v01.mp3, 531.1 s, about 60.0 BPM, brief Pace: 58-64 BPM
+polish gate PASS: 0 of 102 rows failed, 6 to look at -> /private/tmp/j0925-hos007-v04-wt/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/master_v04_pack/polish_gate.json
+picture QA PASS: 0 of 102 cuts fail, 6 to look at -> /private/tmp/j0925-hos007-v04-wt/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/master_v04_pack/PICTURE_QA.md, /private/tmp/j0925-hos007-v04-wt/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/master_v04_pack/picture_qa_review.jpg
+Episode gate Decision: PASS — VO / Gemini Veo allowed; Script score: 92.3/100 · PASS
+freezedetect: 0 events; encoded loudness: I: -14.0 LUFS, Peak: -1.4 dBFS
+```
+
+Full frame-by-frame evidence and gate outputs: `07_Edit-Project/master_v04_pack/REVIEW_master_v04.md`. Parked for Chief review (`J0925`). No approved edit stage claimed.
