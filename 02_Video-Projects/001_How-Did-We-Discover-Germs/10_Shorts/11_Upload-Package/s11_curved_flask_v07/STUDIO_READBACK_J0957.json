@@ -1,0 +1,27 @@
+{
+  "job": "J0957",
+  "at": "2026-10-25T20:13:21Z",
+  "channel": "History of Science",
+  "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+  "videoId": "-3L6HzJ_d_4",
+  "cdp": 9460,
+  "before": "Related video None",
+  "afterReload": "Related video How Did We Discover Germs?",
+  "relatedTo": "_C92tIJCk8A",
+  "title": "What Is the Pasteur Swan Neck Flask Experiment?",
+  "visibility": "Scheduled",
+  "premiere": false,
+  "api": {
+    "privacy": "private",
+    "publishAt": "2026-10-27T11:30:00Z",
+    "lang": "en-GB",
+    "kids": false,
+    "caption": true,
+    "hasCustomThumbnail": true,
+    "tagCount": 6
+  },
+  "leftUntouched": "1-BZaFIMwYU",
+  "uploaded": false,
+  "deleted": false,
+  "gbp": 0
+}

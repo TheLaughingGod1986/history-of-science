@@ -344,7 +344,7 @@ Gate run with `--air-date 2027-01-20` (gate only). Caption check: 16 changes, ra
 - **Authority:** Ben OK on the Studio Kanban Sun 25 Oct 16:19 London (HOS #180 6400071733), after Chief PASS c43 on v07 (sha256 `5de76a824e885785909d3327f9230e9eef2a42b1943441e41546e97525adaaf5`).
 - **New video:** `-3L6HzJ_d_4` is Private with `publishAt` `2026-10-27T11:30:00Z`. Title, description, tags and en-GB match the v02 listing. Cover is v07 frame 0 (FLASK STAYS). en-GB captions are serving. Gate PASS with a duration warning (18.17 s).
 - **Old video:** `1-BZaFIMwYU` is Private and unscheduled. Nothing deleted.
-- **Still to do:** set Related video to `_C92tIJCk8A` in Studio. CDP 9460 did not answer in this run. Buffer stays held until the short is public.
+- **Related (OWB J0957, 25 Oct 2026):** Studio CDP `:9460`, channel History of Science (`UCXp7HkBIl1LgaznXuZHJyRg`) confirmed before the click. Related video set to *How Did We Discover Germs?* and read back after reload: `Related video How Did We Discover Germs?`. API read-back still Private, `publishAt` `2026-10-27T11:30:00Z`, title unchanged, en-GB, not kids, 6 tags, custom cover, captions on. `1-BZaFIMwYU` was not opened. Nothing uploaded or deleted. Buffer stays held until the short is public. Evidence: `10_Shorts/11_Upload-Package/s11_curved_flask_v07/STUDIO_READBACK_J0957.json`.
 
 ## 23 Oct 2026 — Short `s11_curved_flask_v02` packaged & uploaded Private (`1-BZaFIMwYU`, Tue 27 Oct 11:30 London, OWB J0866)
 
