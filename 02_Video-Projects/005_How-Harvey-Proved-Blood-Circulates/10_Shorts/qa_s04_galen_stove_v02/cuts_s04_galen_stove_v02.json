@@ -1,0 +1,101 @@
+[
+  {
+    "row": "s01_stove",
+    "timeline_in": 0.0,
+    "timeline_out": 2.15,
+    "source": "05_heart_stove_t1.mp4",
+    "upscale": 1.78,
+    "video": true,
+    "framing": {
+      "offset": 0.3
+    }
+  },
+  {
+    "row": "s02_08_vesalius_book_t1",
+    "timeline_in": 2.15,
+    "timeline_out": 4.372,
+    "source": "08_vesalius_book_t1.mp4",
+    "upscale": 1.78,
+    "video": true,
+    "framing": {
+      "offset": 0.4
+    }
+  },
+  {
+    "row": "s03_01_galen_scrolls_t1",
+    "timeline_in": 4.372,
+    "timeline_out": 6.594,
+    "source": "01_galen_scrolls_t1.mp4",
+    "upscale": 1.78,
+    "video": true,
+    "framing": {
+      "offset": 0.4
+    }
+  },
+  {
+    "row": "s04_03_eat_to_liver_t1",
+    "timeline_in": 6.594,
+    "timeline_out": 9.03,
+    "source": "03_eat_to_liver_t1.mp4",
+    "upscale": 1.78,
+    "video": true,
+    "framing": {
+      "offset": 0.4
+    }
+  },
+  {
+    "row": "s05_09_vesalius_nothing_t2",
+    "timeline_in": 9.03,
+    "timeline_out": 11.467,
+    "source": "09_vesalius_nothing_t2.mp4",
+    "upscale": 1.78,
+    "video": true,
+    "framing": {
+      "offset": 0.4
+    }
+  },
+  {
+    "row": "s06_04_veins_soak_t1",
+    "timeline_in": 11.467,
+    "timeline_out": 14.667,
+    "source": "04_veins_soak_t1.mp4",
+    "upscale": 1.78,
+    "video": true,
+    "framing": {
+      "offset": 0.4
+    }
+  },
+  {
+    "row": "s07_07_doctors_believe_t1",
+    "timeline_in": 14.667,
+    "timeline_out": 18.201,
+    "source": "07_doctors_believe_t1.mp4",
+    "upscale": 1.78,
+    "video": true,
+    "framing": {
+      "offset": 0.4
+    }
+  },
+  {
+    "row": "s08_10_why_believe_t1",
+    "timeline_in": 18.201,
+    "timeline_out": 20.574,
+    "source": "10_why_believe_t1.mp4",
+    "upscale": 1.78,
+    "video": true,
+    "framing": {
+      "offset": 0.4
+    }
+  },
+  {
+    "row": "s09_loop",
+    "timeline_in": 20.574,
+    "timeline_out": 21.574,
+    "source": "loop_end_05_heart_stove_t1.mp4",
+    "upscale": 1.78,
+    "video": true,
+    "framing": {
+      "offset": 0.3
+    }
+  }
+]

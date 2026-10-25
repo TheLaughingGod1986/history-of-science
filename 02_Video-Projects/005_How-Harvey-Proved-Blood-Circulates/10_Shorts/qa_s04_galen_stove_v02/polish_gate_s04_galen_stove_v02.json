@@ -1,0 +1,220 @@
+{
+  "rule": {
+    "low_detail": "FAIL: luma std < 13.44 and edge density < 0.0259 (absolute floor); WARN: luma std < 18.0 or edge density < film p5",
+    "split_panel": "full-height/width seam or gutter",
+    "split_panel_gutter": "gutter counts only with edge density >= 0.01 in the 10% band on both sides",
+    "near_black": "mean < 28.0 or p95 < 50.0",
+    "noise": "grain std > 6 over structure std < 12, and the 8x-downscaled frame under the low-detail floor (std < 13.44 and edge density < 0.0259)",
+    "jitter": "centre-patch phase correlation: reversal against trend or > 0.35 px off trend"
+  },
+  "low_detail_floor": {
+    "std": 13.44,
+    "edge": 0.0259,
+    "calibration": {
+      "video": "025_MarsRobot_full_rough_v02d.mp4",
+      "factor": 1.2,
+      "frames": [
+        {
+          "source": "PIA22223.jpg",
+          "t": 201.0,
+          "std": 12.1,
+          "edge": 0.0223
+        },
+        {
+          "source": "PIA22223.jpg",
+          "t": 216.3,
+          "std": 11.2,
+          "edge": 0.0216
+        },
+        {
+          "source": "PIA22929.jpg",
+          "t": 297.4,
+          "std": 26.54,
+          "edge": 0.5735
+        }
+      ]
+    }
+  },
+  "video": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s04_galen_stove_v02.mp4",
+  "edge_floor": 0.0391,
+  "verdict": "PASS",
+  "failed": [],
+  "warn": [
+    {
+      "row": "s04_03_eat_to_liver_t1",
+      "cut": 3,
+      "t": 7.81,
+      "source": "03_eat_to_liver_t1.mp4",
+      "why": [
+        "low detail: edge density 0.038 < film p5 0.0391"
+      ]
+    }
+  ],
+  "reviewed_ok": [],
+  "rows": [
+    {
+      "cut": 0,
+      "row": "s01_stove",
+      "source": "05_heart_stove_t1.mp4",
+      "t": 1.07,
+      "std": 47.21,
+      "mean": 91.29,
+      "p95": 210.0,
+      "edge": 0.0678,
+      "hf": 12.66,
+      "lf": 39.86,
+      "std8": 42.62,
+      "edge8": 0.2709,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 1,
+      "row": "s02_08_vesalius_book_t1",
+      "source": "08_vesalius_book_t1.mp4",
+      "t": 3.26,
+      "std": 61.05,
+      "mean": 81.55,
+      "p95": 216.0,
+      "edge": 0.0513,
+      "hf": 8.58,
+      "lf": 57.81,
+      "std8": 59.31,
+      "edge8": 0.1909,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 2,
+      "row": "s03_01_galen_scrolls_t1",
+      "source": "01_galen_scrolls_t1.mp4",
+      "t": 5.48,
+      "std": 55.59,
+      "mean": 75.35,
+      "p95": 206.0,
+      "edge": 0.0886,
+      "hf": 12.63,
+      "lf": 50.51,
+      "std8": 52.05,
+      "edge8": 0.2828,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 3,
+      "row": "s04_03_eat_to_liver_t1",
+      "source": "03_eat_to_liver_t1.mp4",
+      "t": 7.81,
+      "std": 57.04,
+      "mean": 86.11,
+      "p95": 205.0,
+      "edge": 0.038,
+      "hf": 8.52,
+      "lf": 54.25,
+      "std8": 55.45,
+      "edge8": 0.1586,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.038 < film p5 0.0391"
+      ]
+    },
+    {
+      "cut": 4,
+      "row": "s05_09_vesalius_nothing_t2",
+      "source": "09_vesalius_nothing_t2.mp4",
+      "t": 10.25,
+      "std": 57.85,
+      "mean": 80.05,
+      "p95": 202.0,
+      "edge": 0.056,
+      "hf": 10.03,
+      "lf": 53.21,
+      "std8": 55.12,
+      "edge8": 0.2557,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 5,
+      "row": "s06_04_veins_soak_t1",
+      "source": "04_veins_soak_t1.mp4",
+      "t": 13.07,
+      "std": 52.93,
+      "mean": 88.06,
+      "p95": 205.0,
+      "edge": 0.0782,
+      "hf": 13.09,
+      "lf": 47.03,
+      "std8": 48.99,
+      "edge8": 0.2326,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 6,
+      "row": "s07_07_doctors_believe_t1",
+      "source": "07_doctors_believe_t1.mp4",
+      "t": 16.43,
+      "std": 55.53,
+      "mean": 96.29,
+      "p95": 189.0,
+      "edge": 0.1017,
+      "hf": 12.51,
+      "lf": 50.86,
+      "std8": 52.49,
+      "edge8": 0.2968,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 7,
+      "row": "s08_10_why_believe_t1",
+      "source": "10_why_believe_t1.mp4",
+      "t": 19.39,
+      "std": 38.32,
+      "mean": 89.76,
+      "p95": 156.0,
+      "edge": 0.045,
+      "hf": 7.91,
+      "lf": 35.14,
+      "std8": 36.26,
+      "edge8": 0.1888,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 8,
+      "row": "s09_loop",
+      "source": "loop_end_05_heart_stove_t1.mp4",
+      "t": 21.07,
+      "std": 39.16,
+      "mean": 86.82,
+      "p95": 160.0,
+      "edge": 0.0407,
+      "hf": 6.89,
+      "lf": 34.98,
+      "std8": 36.84,
+      "edge8": 0.2145,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    }
+  ]
+}
