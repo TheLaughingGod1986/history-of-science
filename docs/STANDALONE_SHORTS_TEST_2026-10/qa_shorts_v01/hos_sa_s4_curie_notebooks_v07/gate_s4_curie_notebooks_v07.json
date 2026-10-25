@@ -1,0 +1,26 @@
+{
+  "file": "/Users/benjaminoats/YouTube/History Of Science/docs/STANDALONE_SHORTS_TEST_2026-10/shorts_v01/hos_sa_s4_curie_notebooks_v07.mp4",
+  "air_date": "2026-10-28",
+  "fails": [],
+  "warns": [
+    "duration 21.1s outside 22\u201327s band"
+  ],
+  "stayed_fails": [],
+  "duration_s": 21.1,
+  "audio": {
+    "stream": true,
+    "mean_db": -16.4,
+    "open_mean_db": -14.9
+  },
+  "vo_src": "/Users/benjaminoats/YouTube/History Of Science/docs/STANDALONE_SHORTS_TEST_2026-10/_work_s4_curie_notebooks_v07/hos_sa_s4_curie_notebooks_vo_v07.wav",
+  "vo_onset_s": 0.04,
+  "last_word_end_s": 20.122,
+  "tail_gap_s": 0.98,
+  "motion_0_1s": 16.67,
+  "frame0_diff_0_1_5s": 3.56,
+  "first_cut_s": 2.2,
+  "dhash": "8a16970c0c1ebae0",
+  "near_opens": [],
+  "contact_sheet": "/var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_sa_s4_curie_notebooks_v07_open_sheet.jpg",
+  "verdict": "PASS"
+}

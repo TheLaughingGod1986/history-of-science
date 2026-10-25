@@ -1,0 +1,1165 @@
+{
+  "id": "s4_curie_notebooks",
+  "version": "v07",
+  "job": "J0934",
+  "youtube_id": "vEg_tLIm0Co",
+  "title": "Are Marie Curie's Notebooks Still Radioactive?",
+  "air_date": "2026-10-28",
+  "spoken": "Marie Curie's notebooks are still radioactive. In 1898, she and Pierre found two new elements, polonium, then radium. Radium glowed in the dark, and she handled it for years with no protection. Today, her papers sit in lead-lined boxes in Paris. Radium takes 1,600 years to lose half its strength",
+  "script": "Marie Curie's notebooks are still radioactive. In 1898, she and Pierre found two new elements, polonium, then radium. Radium glowed in the dark, and she handled it for years with no protection. Today, her papers sit in lead-lined boxes in Paris. Radium takes 1,600 years to lose half its strength",
+  "words": [
+    {
+      "word": "Marie",
+      "start": 0.08,
+      "end": 0.3
+    },
+    {
+      "word": "Curie's",
+      "start": 0.308,
+      "end": 0.688
+    },
+    {
+      "word": "notebooks",
+      "start": 0.696,
+      "end": 1.316
+    },
+    {
+      "word": "are",
+      "start": 1.324,
+      "end": 1.404
+    },
+    {
+      "word": "still",
+      "start": 1.412,
+      "end": 1.712
+    },
+    {
+      "word": "radioactive.",
+      "start": 1.732,
+      "end": 2.552
+    },
+    {
+      "word": "In",
+      "start": 2.702,
+      "end": 2.762
+    },
+    {
+      "word": "1898,",
+      "start": 2.782,
+      "end": 3.582
+    },
+    {
+      "word": "she",
+      "start": 3.762,
+      "end": 3.882
+    },
+    {
+      "word": "and",
+      "start": 3.902,
+      "end": 3.982
+    },
+    {
+      "word": "Pierre",
+      "start": 4.062,
+      "end": 4.382
+    },
+    {
+      "word": "found",
+      "start": 4.502,
+      "end": 4.722
+    },
+    {
+      "word": "two",
+      "start": 4.802,
+      "end": 5.082
+    },
+    {
+      "word": "new",
+      "start": 5.242,
+      "end": 5.522
+    },
+    {
+      "word": "elements,",
+      "start": 5.562,
+      "end": 6.082
+    },
+    {
+      "word": "polonium,",
+      "start": 6.262,
+      "end": 6.862
+    },
+    {
+      "word": "then",
+      "start": 7.042,
+      "end": 7.262
+    },
+    {
+      "word": "radium.",
+      "start": 7.402,
+      "end": 7.862
+    },
+    {
+      "word": "Radium",
+      "start": 8.042,
+      "end": 8.382
+    },
+    {
+      "word": "glowed",
+      "start": 8.462,
+      "end": 8.722
+    },
+    {
+      "word": "in",
+      "start": 8.762,
+      "end": 8.822
+    },
+    {
+      "word": "the",
+      "start": 8.862,
+      "end": 8.942
+    },
+    {
+      "word": "dark,",
+      "start": 8.982,
+      "end": 9.362
+    },
+    {
+      "word": "and",
+      "start": 9.542,
+      "end": 9.602
+    },
+    {
+      "word": "she",
+      "start": 9.642,
+      "end": 9.802
+    },
+    {
+      "word": "handled",
+      "start": 9.882,
+      "end": 10.222
+    },
+    {
+      "word": "it",
+      "start": 10.262,
+      "end": 10.362
+    },
+    {
+      "word": "for",
+      "start": 10.402,
+      "end": 10.522
+    },
+    {
+      "word": "years",
+      "start": 10.642,
+      "end": 11.142
+    },
+    {
+      "word": "with",
+      "start": 11.202,
+      "end": 11.302
+    },
+    {
+      "word": "no",
+      "start": 11.482,
+      "end": 11.642
+    },
+    {
+      "word": "protection.",
+      "start": 11.742,
+      "end": 12.382
+    },
+    {
+      "word": "Today,",
+      "start": 12.562,
+      "end": 12.922
+    },
+    {
+      "word": "her",
+      "start": 13.062,
+      "end": 13.161
+    },
+    {
+      "word": "papers",
+      "start": 13.282,
+      "end": 13.662
+    },
+    {
+      "word": "sit",
+      "start": 13.722,
+      "end": 13.882
+    },
+    {
+      "word": "in",
+      "start": 13.942,
+      "end": 14.022
+    },
+    {
+      "word": "lead-lined",
+      "start": 14.142,
+      "end": 14.682
+    },
+    {
+      "word": "boxes",
+      "start": 14.782,
+      "end": 15.262
+    },
+    {
+      "word": "in",
+      "start": 15.302,
+      "end": 15.442
+    },
+    {
+      "word": "Paris.",
+      "start": 15.482,
+      "end": 16.042
+    },
+    {
+      "word": "Radium",
+      "start": 16.222,
+      "end": 16.582
+    },
+    {
+      "word": "takes",
+      "start": 16.702,
+      "end": 16.982
+    },
+    {
+      "word": "1,600",
+      "start": 17.022,
+      "end": 18.082
+    },
+    {
+      "word": "years",
+      "start": 18.202,
+      "end": 18.642
+    },
+    {
+      "word": "to",
+      "start": 18.822,
+      "end": 18.902
+    },
+    {
+      "word": "lose",
+      "start": 18.942,
+      "end": 19.142
+    },
+    {
+      "word": "half",
+      "start": 19.182,
+      "end": 19.422
+    },
+    {
+      "word": "its",
+      "start": 19.462,
+      "end": 19.602
+    },
+    {
+      "word": "strength",
+      "start": 19.662,
+      "end": 20.122
+    }
+  ],
+  "word_count": 50,
+  "vo_s": 20.168,
+  "last_word_end_s": 20.122,
+  "plan": [
+    {
+      "t0": 0.0,
+      "t1": 2.2,
+      "kind": "move",
+      "rel": "02_wurzburg_lab_establishing_v03.mp4",
+      "in_s": 5.72,
+      "label": "lab",
+      "hold_s": 2.2,
+      "direction": 1
+    },
+    {
+      "t0": 2.2,
+      "t1": 5.1,
+      "kind": "still",
+      "rel": "02_shed_lab_v01.jpg",
+      "in_s": 0,
+      "label": "shed",
+      "hold_s": 2.9,
+      "direction": 1
+    },
+    {
+      "t0": 5.1,
+      "t1": 8.0,
+      "kind": "graphic",
+      "rel": "elements",
+      "in_s": 0,
+      "label": "elements",
+      "hold_s": 2.9,
+      "direction": 1
+    },
+    {
+      "t0": 8.0,
+      "t1": 9.267,
+      "kind": "still",
+      "rel": "03_glowing_vials_v01.jpg",
+      "in_s": 0,
+      "label": "vials",
+      "hold_s": 1.267,
+      "direction": -1
+    },
+    {
+      "t0": 9.267,
+      "t1": 9.967,
+      "kind": "graphic",
+      "rel": "ra",
+      "in_s": 0,
+      "label": "ra",
+      "hold_s": 0.7,
+      "direction": 1
+    },
+    {
+      "t0": 9.967,
+      "t1": 12.467,
+      "kind": "still",
+      "rel": "04_bare_hands_v01.jpg",
+      "in_s": 0,
+      "label": "hands",
+      "hold_s": 2.5,
+      "direction": 1
+    },
+    {
+      "t0": 12.467,
+      "t1": 13.4,
+      "kind": "move",
+      "rel": "part02/08_locks_the_door_v02.mp4",
+      "in_s": 0.55,
+      "label": "door",
+      "hold_s": 0.933,
+      "direction": 1
+    },
+    {
+      "t0": 13.4,
+      "t1": 16.0,
+      "kind": "still",
+      "rel": "05_paris_archive_v01.jpg",
+      "in_s": 0,
+      "label": "paris",
+      "hold_s": 2.6,
+      "direction": -1
+    },
+    {
+      "t0": 16.0,
+      "t1": 17.267,
+      "kind": "move",
+      "rel": "part02/08_locks_the_door_v01.mp4",
+      "in_s": 0.4,
+      "label": "latch",
+      "hold_s": 1.267,
+      "direction": 1
+    },
+    {
+      "t0": 17.267,
+      "t1": 20.167,
+      "kind": "still",
+      "rel": "01_lead_box_v01.jpg",
+      "in_s": 0,
+      "label": "lead",
+      "hold_s": 2.9,
+      "direction": 1,
+      "still": {
+        "scale": 1.7,
+        "y_frac": 0.47,
+        "x0": 0.06,
+        "x1": 0.22
+      },
+      "upscale": 1.7
+    },
+    {
+      "t0": 20.168,
+      "t1": 21.101,
+      "kind": "move",
+      "rel": "02_wurzburg_lab_establishing_v03.mp4",
+      "in_s": 4.7867,
+      "label": "loop",
+      "hold_s": 0.933,
+      "direction": 0,
+      "drop_from_v06_loop": true
+    }
+  ],
+  "hook": "STILL RADIOACTIVE",
+  "hook_layer": {
+    "font_size": 129,
+    "cap_pct": 4.79,
+    "block_pct": [
+      2.5,
+      13.1
+    ]
+  },
+  "onset": [
+    {
+      "word": "Marie",
+      "src": [
+        0.14,
+        0.36
+      ],
+      "onset_s": 0.14,
+      "offset_s": 0.36,
+      "cut_s": 0.14,
+      "end_s": 0.36,
+      "lead_ms": 0.0,
+      "tail_ms": 0.0,
+      "opens_in_speech": true
+    },
+    {
+      "word": "Curie's",
+      "src": [
+        0.44,
+        0.82
+      ],
+      "onset_s": 0.44,
+      "offset_s": 0.82,
+      "cut_s": 0.44,
+      "end_s": 0.82,
+      "lead_ms": 0.0,
+      "tail_ms": 0.0,
+      "opens_in_speech": true
+    },
+    {
+      "word": "notebooks",
+      "src": [
+        0.84,
+        1.46
+      ],
+      "onset_s": 0.84,
+      "offset_s": 1.46,
+      "cut_s": 0.84,
+      "end_s": 1.46,
+      "lead_ms": 0.0,
+      "tail_ms": 0.0,
+      "opens_in_speech": true
+    },
+    {
+      "word": "are",
+      "src": [
+        1.54,
+        1.62
+      ],
+      "onset_s": 1.54,
+      "offset_s": 1.62,
+      "cut_s": 1.54,
+      "end_s": 1.62,
+      "lead_ms": 0.0,
+      "tail_ms": 0.0,
+      "opens_in_speech": true
+    },
+    {
+      "word": "still",
+      "src": [
+        1.7,
+        2.0
+      ],
+      "onset_s": 1.7,
+      "offset_s": 2.0,
+      "cut_s": 1.7,
+      "end_s": 2.0,
+      "lead_ms": 0.0,
+      "tail_ms": 0.0,
+      "opens_in_speech": true
+    },
+    {
+      "word": "radioactive.",
+      "src": [
+        2.2,
+        3.02
+      ],
+      "onset_s": 2.2,
+      "offset_s": 3.02,
+      "cut_s": 2.2,
+      "end_s": 3.02,
+      "lead_ms": 0.0,
+      "tail_ms": 0.0,
+      "opens_in_speech": true
+    },
+    {
+      "word": "In",
+      "src": [
+        3.74,
+        3.82
+      ],
+      "onset_s": 3.75,
+      "offset_s": 3.82,
+      "cut_s": 3.74,
+      "end_s": 3.82,
+      "lead_ms": 10.0,
+      "tail_ms": 0.0,
+      "opens_in_speech": false
+    },
+    {
+      "word": "1898,",
+      "src": [
+        3.84,
+        4.67
+      ],
+      "onset_s": 3.84,
+      "offset_s": 4.67,
+      "cut_s": 3.84,
+      "end_s": 4.67,
+      "lead_ms": 0.0,
+      "tail_ms": 0.0,
+      "opens_in_speech": true
+    },
+    {
+      "word": "she",
+      "src": [
+        4.8,
+        4.94
+      ],
+      "onset_s": 4.8,
+      "offset_s": 4.94,
+      "cut_s": 4.8,
+      "end_s": 4.94,
+      "lead_ms": -0.0,
+      "tail_ms": 0.0,
+      "opens_in_speech": true
+    },
+    {
+      "word": "and",
+      "src": [
+        4.96,
+        5.07
+      ],
+      "onset_s": 4.96,
+      "offset_s": 5.07,
+      "cut_s": 4.96,
+      "end_s": 5.07,
+      "lead_ms": 0.0,
+      "tail_ms": 0.0,
+      "opens_in_speech": true
+    },
+    {
+      "word": "Pierre",
+      "src": [
+        5.12,
+        5.47
+      ],
+      "onset_s": 5.12,
+      "offset_s": 5.47,
+      "cut_s": 5.12,
+      "end_s": 5.47,
+      "lead_ms": 0.0,
+      "tail_ms": 0.0,
+      "opens_in_speech": true
+    },
+    {
+      "word": "found",
+      "src": [
+        5.54,
+        5.81
+      ],
+      "onset_s": 5.54,
+      "offset_s": 5.81,
+      "cut_s": 5.54,
+      "end_s": 5.81,
+      "lead_ms": 0.0,
+      "tail_ms": 0.0,
+      "opens_in_speech": true
+    },
+    {
+      "word": "two",
+      "src": [
+        5.86,
+        6.17
+      ],
+      "onset_s": 5.86,
+      "offset_s": 6.17,
+      "cut_s": 5.86,
+      "end_s": 6.17,
+      "lead_ms": 0.0,
+      "tail_ms": 0.0,
+      "opens_in_speech": true
+    },
+    {
+      "word": "new",
+      "src": [
+        6.28,
+        6.58
+      ],
+      "onset_s": 6.28,
+      "offset_s": 6.58,
+      "cut_s": 6.28,
+      "end_s": 6.58,
+      "lead_ms": 0.0,
+      "tail_ms": 0.0,
+      "opens_in_speech": true
+    },
+    {
+      "word": "elements,",
+      "src": [
+        6.62,
+        7.17
+      ],
+      "onset_s": 6.62,
+      "offset_s": 7.17,
+      "cut_s": 6.62,
+      "end_s": 7.17,
+      "lead_ms": 0.0,
+      "tail_ms": 0.0,
+      "opens_in_speech": true
+    },
+    {
+      "word": "polonium,",
+      "src": [
+        7.58,
+        8.23
+      ],
+      "onset_s": 7.58,
+      "offset_s": 8.23,
+      "cut_s": 7.58,
+      "end_s": 8.23,
+      "lead_ms": 0.0,
+      "tail_ms": -0.0,
+      "opens_in_speech": true
+    },
+    {
+      "word": "then",
+      "src": [
+        8.6,
+        8.87
+      ],
+      "onset_s": 8.6,
+      "offset_s": 8.87,
+      "cut_s": 8.6,
+      "end_s": 8.87,
+      "lead_ms": 0.0,
+      "tail_ms": 0.0,
+      "opens_in_speech": true
+    },
+    {
+      "word": "radium.",
+      "src": [
+        8.96,
+        9.47
+      ],
+      "onset_s": 8.96,
+      "offset_s": 9.47,
+      "cut_s": 8.96,
+      "end_s": 9.47,
+      "lead_ms": 0.0,
+      "tail_ms": -0.0,
+      "opens_in_speech": true
+    },
+    {
+      "word": "Radium",
+      "src": [
+        10.26,
+        10.65
+      ],
+      "onset_s": 10.26,
+      "offset_s": 10.65,
+      "cut_s": 10.26,
+      "end_s": 10.65,
+      "lead_ms": 0.0,
+      "tail_ms": -0.0,
+      "opens_in_speech": true
+    },
+    {
+      "word": "glowed",
+      "src": [
+        10.7,
+        10.96
+      ],
+      "onset_s": 10.7,
+      "offset_s": 10.96,
+      "cut_s": 10.7,
+      "end_s": 10.96,
+      "lead_ms": 0.0,
+      "tail_ms": 0.0,
+      "opens_in_speech": true
+    },
+    {
+      "word": "in",
+      "src": [
+        11.0,
+        11.06
+      ],
+      "onset_s": 11.0,
+      "offset_s": 11.06,
+      "cut_s": 11.0,
+      "end_s": 11.06,
+      "lead_ms": 0.0,
+      "tail_ms": 0.0,
+      "opens_in_speech": true
+    },
+    {
+      "word": "the",
+      "src": [
+        11.1,
+        11.18
+      ],
+      "onset_s": 11.1,
+      "offset_s": 11.18,
+      "cut_s": 11.1,
+      "end_s": 11.18,
+      "lead_ms": 0.0,
+      "tail_ms": 0.0,
+      "opens_in_speech": true
+    },
+    {
+      "word": "dark,",
+      "src": [
+        11.22,
+        11.63
+      ],
+      "onset_s": 11.22,
+      "offset_s": 11.63,
+      "cut_s": 11.22,
+      "end_s": 11.63,
+      "lead_ms": 0.0,
+      "tail_ms": -0.0,
+      "opens_in_speech": true
+    },
+    {
+      "word": "and",
+      "src": [
+        11.88,
+        11.96
+      ],
+      "onset_s": 11.89,
+      "offset_s": 11.96,
+      "cut_s": 11.88,
+      "end_s": 11.96,
+      "lead_ms": 10.0,
+      "tail_ms": 0.0,
+      "opens_in_speech": false
+    },
+    {
+      "word": "she",
+      "src": [
+        12.0,
+        12.19
+      ],
+      "onset_s": 12.0,
+      "offset_s": 12.19,
+      "cut_s": 12.0,
+      "end_s": 12.19,
+      "lead_ms": 0.0,
+      "tail_ms": 0.0,
+      "opens_in_speech": true
+    },
+    {
+      "word": "handled",
+      "src": [
+        12.24,
+        12.58
+      ],
+      "onset_s": 12.24,
+      "offset_s": 12.58,
+      "cut_s": 12.24,
+      "end_s": 12.58,
+      "lead_ms": 0.0,
+      "tail_ms": 0.0,
+      "opens_in_speech": true
+    },
+    {
+      "word": "it",
+      "src": [
+        12.62,
+        12.72
+      ],
+      "onset_s": 12.62,
+      "offset_s": 12.72,
+      "cut_s": 12.62,
+      "end_s": 12.72,
+      "lead_ms": 0.0,
+      "tail_ms": 0.0,
+      "opens_in_speech": true
+    },
+    {
+      "word": "for",
+      "src": [
+        12.76,
+        12.91
+      ],
+      "onset_s": 12.76,
+      "offset_s": 12.91,
+      "cut_s": 12.76,
+      "end_s": 12.91,
+      "lead_ms": 0.0,
+      "tail_ms": 0.0,
+      "opens_in_speech": true
+    },
+    {
+      "word": "years",
+      "src": [
+        12.98,
+        13.5
+      ],
+      "onset_s": 12.98,
+      "offset_s": 13.5,
+      "cut_s": 12.98,
+      "end_s": 13.5,
+      "lead_ms": 0.0,
+      "tail_ms": 0.0,
+      "opens_in_speech": true
+    },
+    {
+      "word": "with",
+      "src": [
+        13.56,
+        13.69
+      ],
+      "onset_s": 13.56,
+      "offset_s": 13.69,
+      "cut_s": 13.56,
+      "end_s": 13.69,
+      "lead_ms": 0.0,
+      "tail_ms": 0.0,
+      "opens_in_speech": true
+    },
+    {
+      "word": "no",
+      "src": [
+        13.82,
+        14.03
+      ],
+      "onset_s": 13.82,
+      "offset_s": 14.03,
+      "cut_s": 13.82,
+      "end_s": 14.03,
+      "lead_ms": 0.0,
+      "tail_ms": 0.0,
+      "opens_in_speech": true
+    },
+    {
+      "word": "protection.",
+      "src": [
+        14.1,
+        14.77
+      ],
+      "onset_s": 14.1,
+      "offset_s": 14.77,
+      "cut_s": 14.1,
+      "end_s": 14.77,
+      "lead_ms": 0.0,
+      "tail_ms": 0.0,
+      "opens_in_speech": true
+    },
+    {
+      "word": "Today,",
+      "src": [
+        15.6,
+        16.01
+      ],
+      "onset_s": 15.6,
+      "offset_s": 16.01,
+      "cut_s": 15.6,
+      "end_s": 16.01,
+      "lead_ms": 0.0,
+      "tail_ms": 0.0,
+      "opens_in_speech": true
+    },
+    {
+      "word": "her",
+      "src": [
+        16.1,
+        16.249
+      ],
+      "onset_s": 16.1,
+      "offset_s": 16.24,
+      "cut_s": 16.1,
+      "end_s": 16.249,
+      "lead_ms": 0.0,
+      "tail_ms": 9.0,
+      "opens_in_speech": true
+    },
+    {
+      "word": "papers",
+      "src": [
+        16.32,
+        16.72
+      ],
+      "onset_s": 16.32,
+      "offset_s": 16.72,
+      "cut_s": 16.32,
+      "end_s": 16.72,
+      "lead_ms": 0.0,
+      "tail_ms": 0.0,
+      "opens_in_speech": true
+    },
+    {
+      "word": "sit",
+      "src": [
+        16.78,
+        16.94
+      ],
+      "onset_s": 16.78,
+      "offset_s": 16.94,
+      "cut_s": 16.78,
+      "end_s": 16.94,
+      "lead_ms": 0.0,
+      "tail_ms": 0.0,
+      "opens_in_speech": true
+    },
+    {
+      "word": "in",
+      "src": [
+        17.0,
+        17.11
+      ],
+      "onset_s": 17.0,
+      "offset_s": 17.11,
+      "cut_s": 17.0,
+      "end_s": 17.11,
+      "lead_ms": 0.0,
+      "tail_ms": 0.0,
+      "opens_in_speech": true
+    },
+    {
+      "word": "lead-lined",
+      "src": [
+        17.18,
+        17.77
+      ],
+      "onset_s": 17.18,
+      "offset_s": 17.77,
+      "cut_s": 17.18,
+      "end_s": 17.77,
+      "lead_ms": 0.0,
+      "tail_ms": 0.0,
+      "opens_in_speech": true
+    },
+    {
+      "word": "boxes",
+      "src": [
+        17.84,
+        18.32
+      ],
+      "onset_s": 17.84,
+      "offset_s": 18.32,
+      "cut_s": 17.84,
+      "end_s": 18.32,
+      "lead_ms": 0.0,
+      "tail_ms": 0.0,
+      "opens_in_speech": true
+    },
+    {
+      "word": "in",
+      "src": [
+        18.36,
+        18.5
+      ],
+      "onset_s": 18.36,
+      "offset_s": 18.5,
+      "cut_s": 18.36,
+      "end_s": 18.5,
+      "lead_ms": 0.0,
+      "tail_ms": 0.0,
+      "opens_in_speech": true
+    },
+    {
+      "word": "Paris.",
+      "src": [
+        18.54,
+        19.13
+      ],
+      "onset_s": 18.54,
+      "offset_s": 19.13,
+      "cut_s": 18.54,
+      "end_s": 19.13,
+      "lead_ms": 0.0,
+      "tail_ms": 0.0,
+      "opens_in_speech": true
+    },
+    {
+      "word": "Radium",
+      "src": [
+        19.8,
+        20.21
+      ],
+      "onset_s": 19.8,
+      "offset_s": 20.21,
+      "cut_s": 19.8,
+      "end_s": 20.21,
+      "lead_ms": 0.0,
+      "tail_ms": 0.0,
+      "opens_in_speech": true
+    },
+    {
+      "word": "takes",
+      "src": [
+        20.28,
+        20.58
+      ],
+      "onset_s": 20.28,
+      "offset_s": 20.58,
+      "cut_s": 20.28,
+      "end_s": 20.58,
+      "lead_ms": 0.0,
+      "tail_ms": 0.0,
+      "opens_in_speech": true
+    },
+    {
+      "word": "1,600",
+      "merged_with_previous": true,
+      "src": [
+        20.28,
+        21.71
+      ],
+      "join_at_or_before": 20.38,
+      "onset_s": 20.28,
+      "offset_s": 21.71,
+      "cut_s": 20.28,
+      "end_s": 21.71,
+      "lead_ms": 0.0,
+      "tail_ms": 0.0
+    },
+    {
+      "word": "years",
+      "src": [
+        21.78,
+        22.27
+      ],
+      "onset_s": 21.78,
+      "offset_s": 22.27,
+      "cut_s": 21.78,
+      "end_s": 22.27,
+      "lead_ms": 0.0,
+      "tail_ms": 0.0,
+      "opens_in_speech": true
+    },
+    {
+      "word": "to",
+      "src": [
+        22.56,
+        22.66
+      ],
+      "onset_s": 22.56,
+      "offset_s": 22.66,
+      "cut_s": 22.56,
+      "end_s": 22.66,
+      "lead_ms": 0.0,
+      "tail_ms": 0.0,
+      "opens_in_speech": true
+    },
+    {
+      "word": "lose",
+      "src": [
+        22.7,
+        22.9
+      ],
+      "onset_s": 22.7,
+      "offset_s": 22.9,
+      "cut_s": 22.7,
+      "end_s": 22.9,
+      "lead_ms": 0.0,
+      "tail_ms": 0.0,
+      "opens_in_speech": true
+    },
+    {
+      "word": "half",
+      "src": [
+        22.94,
+        23.18
+      ],
+      "onset_s": 22.94,
+      "offset_s": 23.18,
+      "cut_s": 22.94,
+      "end_s": 23.18,
+      "lead_ms": 0.0,
+      "tail_ms": 0.0,
+      "opens_in_speech": true
+    },
+    {
+      "word": "its",
+      "src": [
+        23.22,
+        23.36
+      ],
+      "onset_s": 23.22,
+      "offset_s": 23.36,
+      "cut_s": 23.22,
+      "end_s": 23.36,
+      "lead_ms": 0.0,
+      "tail_ms": 0.0,
+      "opens_in_speech": true
+    },
+    {
+      "word": "strength",
+      "src": [
+        23.42,
+        23.91
+      ],
+      "onset_s": 23.42,
+      "offset_s": 23.91,
+      "cut_s": 23.42,
+      "end_s": 23.91,
+      "lead_ms": 0.0,
+      "tail_ms": 0.0,
+      "opens_in_speech": true
+    }
+  ],
+  "asr_ok": true,
+  "no_cta": true,
+  "no_new_spend": true,
+  "bed": "hos_sa_s4_curie_notebooks_v07_bed.wav",
+  "sfx_level": {
+    "exit": 0,
+    "output": "SFX level PASS: VO -19.5 LUFS, SFX -45.0 LUFS, 1 hits",
+    "bed_db": -13.0,
+    "sfx_db": -13.0,
+    "nudge_db": 0.35,
+    "pre_nudge_lufs": -15.2
+  },
+  "frame0_source": "003/04_Generated-Clips/02_wurzburg_lab_establishing_v03.mp4",
+  "frame0_zoom": "none \u2014 moving Flow plate, in 5.72s, centre-band, no Ken Burns",
+  "frame0_in_s": 5.72,
+  "loop_in_s": 4.7867,
+  "loop_ends_on": "frame before frame 0 in-point; no frame-0 copy",
+  "first_word_s": 0.08,
+  "surprise_s": {
+    "notebooks": 0.696,
+    "still": 1.412
+  },
+  "first_cut_s": 2.2,
+  "last_word_to_loop_s": 0.978,
+  "meta_promise": false,
+  "runtime_s": 21.1,
+  "longest_hold_s": 2.9,
+  "payoff_phrase": "lose half its strength",
+  "payoff_s": 19.182,
+  "payoff_frac": 0.909,
+  "loop_sentence": "Radium takes 1,600 years to lose half its strength. Marie Curie's notebooks are still radioactive.",
+  "loop_diff": 2.9,
+  "loop_diff_masked": 2.9,
+  "loop_diff_whole": 6.49,
+  "loop_diff_mask": "caption cream, ink and yellow",
+  "lufs": -13.8,
+  "true_peak_dbfs": -1.3,
+  "frame0_black": 0.004,
+  "sha256": "38d643470b2d96210c55a5a9a43bdab6424ab403933f90bab54215e715958c64",
+  "who_card": {
+    "line1": "MARIE CURIE",
+    "line2": "Paris, 1898",
+    "y": [
+      1075,
+      1228
+    ],
+    "band": [
+      656,
+      1264
+    ],
+    "in_s": 2.2,
+    "out_s": 5.4
+  },
+  "half_life_card": {
+    "line1": "HALF-LIFE",
+    "line2": "1,600 years",
+    "y": [
+      1075,
+      1228
+    ],
+    "band": [
+      656,
+      1264
+    ],
+    "in_s": 17.022,
+    "out_s": 20.018
+  },
+  "no_frame0_stamp": true
+}

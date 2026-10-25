@@ -1,0 +1,271 @@
+{
+  "model": "small.en",
+  "spoken": "Marie Curie's notebooks are still radioactive. In 1898, she and Pierre found two new elements, polonium, then radium. Radium glowed in the dark, and she handled it for years with no protection. Today, her papers sit in lead-lined boxes in Paris. Radium takes 1,600 years to lose half its strength",
+  "stem": {
+    "text": "Marie Curie's notebooks are still radioactive. In 1898, she and Pierre found two new elements, polonium, then radium. Radium glowed in the dark, and she handled it for years with no protection. Today, her papers sit in lead -lined boxes in Paris. Radium takes 1 ,600 years to lose half its strength.",
+    "words": [
+      {
+        "word": "Marie",
+        "start": 0.0,
+        "end": 0.26
+      },
+      {
+        "word": "Curie's",
+        "start": 0.26,
+        "end": 0.66
+      },
+      {
+        "word": "notebooks",
+        "start": 0.66,
+        "end": 1.1
+      },
+      {
+        "word": "are",
+        "start": 1.1,
+        "end": 1.42
+      },
+      {
+        "word": "still",
+        "start": 1.42,
+        "end": 1.62
+      },
+      {
+        "word": "radioactive.",
+        "start": 1.62,
+        "end": 2.2
+      },
+      {
+        "word": "In",
+        "start": 2.74,
+        "end": 2.8
+      },
+      {
+        "word": "1898,",
+        "start": 2.8,
+        "end": 3.38
+      },
+      {
+        "word": "she",
+        "start": 3.84,
+        "end": 3.9
+      },
+      {
+        "word": "and",
+        "start": 3.9,
+        "end": 4.02
+      },
+      {
+        "word": "Pierre",
+        "start": 4.02,
+        "end": 4.3
+      },
+      {
+        "word": "found",
+        "start": 4.3,
+        "end": 4.64
+      },
+      {
+        "word": "two",
+        "start": 4.64,
+        "end": 5.04
+      },
+      {
+        "word": "new",
+        "start": 5.04,
+        "end": 5.42
+      },
+      {
+        "word": "elements,",
+        "start": 5.42,
+        "end": 5.94
+      },
+      {
+        "word": "polonium,",
+        "start": 6.3,
+        "end": 6.82
+      },
+      {
+        "word": "then",
+        "start": 7.1,
+        "end": 7.22
+      },
+      {
+        "word": "radium.",
+        "start": 7.22,
+        "end": 7.84
+      },
+      {
+        "word": "Radium",
+        "start": 8.12,
+        "end": 8.38
+      },
+      {
+        "word": "glowed",
+        "start": 8.38,
+        "end": 8.68
+      },
+      {
+        "word": "in",
+        "start": 8.68,
+        "end": 8.84
+      },
+      {
+        "word": "the",
+        "start": 8.84,
+        "end": 8.96
+      },
+      {
+        "word": "dark,",
+        "start": 8.96,
+        "end": 9.26
+      },
+      {
+        "word": "and",
+        "start": 9.58,
+        "end": 9.64
+      },
+      {
+        "word": "she",
+        "start": 9.64,
+        "end": 9.78
+      },
+      {
+        "word": "handled",
+        "start": 9.78,
+        "end": 10.14
+      },
+      {
+        "word": "it",
+        "start": 10.14,
+        "end": 10.36
+      },
+      {
+        "word": "for",
+        "start": 10.36,
+        "end": 10.54
+      },
+      {
+        "word": "years",
+        "start": 10.54,
+        "end": 10.88
+      },
+      {
+        "word": "with",
+        "start": 10.88,
+        "end": 11.3
+      },
+      {
+        "word": "no",
+        "start": 11.3,
+        "end": 11.64
+      },
+      {
+        "word": "protection.",
+        "start": 11.64,
+        "end": 12.12
+      },
+      {
+        "word": "Today,",
+        "start": 12.64,
+        "end": 12.86
+      },
+      {
+        "word": "her",
+        "start": 13.12,
+        "end": 13.2
+      },
+      {
+        "word": "papers",
+        "start": 13.2,
+        "end": 13.56
+      },
+      {
+        "word": "sit",
+        "start": 13.56,
+        "end": 13.86
+      },
+      {
+        "word": "in",
+        "start": 13.86,
+        "end": 14.04
+      },
+      {
+        "word": "lead",
+        "start": 14.04,
+        "end": 14.28
+      },
+      {
+        "word": "-lined",
+        "start": 14.28,
+        "end": 14.62
+      },
+      {
+        "word": "boxes",
+        "start": 14.62,
+        "end": 15.12
+      },
+      {
+        "word": "in",
+        "start": 15.12,
+        "end": 15.44
+      },
+      {
+        "word": "Paris.",
+        "start": 15.44,
+        "end": 15.8
+      },
+      {
+        "word": "Radium",
+        "start": 16.34,
+        "end": 16.58
+      },
+      {
+        "word": "takes",
+        "start": 16.58,
+        "end": 16.86
+      },
+      {
+        "word": "1",
+        "start": 16.86,
+        "end": 17.16
+      },
+      {
+        "word": ",600",
+        "start": 17.16,
+        "end": 17.72
+      },
+      {
+        "word": "years",
+        "start": 17.72,
+        "end": 18.46
+      },
+      {
+        "word": "to",
+        "start": 18.46,
+        "end": 18.92
+      },
+      {
+        "word": "lose",
+        "start": 18.92,
+        "end": 19.08
+      },
+      {
+        "word": "half",
+        "start": 19.08,
+        "end": 19.38
+      },
+      {
+        "word": "its",
+        "start": 19.38,
+        "end": 19.6
+      },
+      {
+        "word": "strength.",
+        "start": 19.6,
+        "end": 19.9
+      }
+    ]
+  },
+  "ok": true,
+  "notes": []
+}

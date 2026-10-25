@@ -1,0 +1,2 @@
+WARN   0:21 row s11_loop loop_span_02_wurzburg_lab_establishing_v03.mp4: low detail: edge density 0.0163 < film p5 0.0167
+picture QA PASS: 0 of 11 cuts fail, 1 to look at -> docs/STANDALONE_SHORTS_TEST_2026-10/qa_shorts_v01/hos_sa_s4_curie_notebooks_v07/picture_qa_s4_curie_notebooks_v07/PICTURE_QA.md, docs/STANDALONE_SHORTS_TEST_2026-10/qa_shorts_v01/hos_sa_s4_curie_notebooks_v07/picture_qa_s4_curie_notebooks_v07/picture_qa_review.jpg

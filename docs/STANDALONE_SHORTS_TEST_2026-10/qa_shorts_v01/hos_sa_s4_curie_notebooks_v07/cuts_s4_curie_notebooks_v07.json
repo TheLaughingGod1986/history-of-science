@@ -1,0 +1,123 @@
+[
+  {
+    "row": "s01_lab",
+    "timeline_in": 0.0,
+    "timeline_out": 2.2,
+    "source": "02_wurzburg_lab_establishing_v03.mp4",
+    "upscale": 0.84,
+    "video": true,
+    "framing": {
+      "offset": 5.72
+    }
+  },
+  {
+    "row": "s02_shed",
+    "timeline_in": 2.2,
+    "timeline_out": 5.1,
+    "source": "02_shed_lab_v01.jpg",
+    "upscale": 1.08,
+    "video": false,
+    "framing": {
+      "offset": 0
+    }
+  },
+  {
+    "row": "s03_elements",
+    "timeline_in": 5.1,
+    "timeline_out": 8.0,
+    "source": "code_graphic_s4_curie_elements_v07.mp4",
+    "upscale": 1.0,
+    "video": true,
+    "framing": {
+      "offset": 0
+    }
+  },
+  {
+    "row": "s04_vials",
+    "timeline_in": 8.0,
+    "timeline_out": 9.267,
+    "source": "03_glowing_vials_v01.jpg",
+    "upscale": 1.08,
+    "video": false,
+    "framing": {
+      "offset": 0
+    }
+  },
+  {
+    "row": "s05_ra",
+    "timeline_in": 9.267,
+    "timeline_out": 9.967,
+    "source": "code_graphic_s4_curie_ra_v07.mp4",
+    "upscale": 1.0,
+    "video": true,
+    "framing": {
+      "offset": 0
+    }
+  },
+  {
+    "row": "s06_hands",
+    "timeline_in": 9.967,
+    "timeline_out": 12.467,
+    "source": "04_bare_hands_v01.jpg",
+    "upscale": 1.08,
+    "video": false,
+    "framing": {
+      "offset": 0
+    }
+  },
+  {
+    "row": "s07_door",
+    "timeline_in": 12.467,
+    "timeline_out": 13.4,
+    "source": "08_locks_the_door_v02.mp4",
+    "upscale": 0.84,
+    "video": true,
+    "framing": {
+      "offset": 0.55
+    }
+  },
+  {
+    "row": "s08_paris",
+    "timeline_in": 13.4,
+    "timeline_out": 16.0,
+    "source": "05_paris_archive_v01.jpg",
+    "upscale": 1.08,
+    "video": false,
+    "framing": {
+      "offset": 0
+    }
+  },
+  {
+    "row": "s09_latch",
+    "timeline_in": 16.0,
+    "timeline_out": 17.267,
+    "source": "08_locks_the_door_v01.mp4",
+    "upscale": 0.84,
+    "video": true,
+    "framing": {
+      "offset": 0.4
+    }
+  },
+  {
+    "row": "s10_lead",
+    "timeline_in": 17.267,
+    "timeline_out": 20.167,
+    "source": "01_lead_box_v01.jpg",
+    "upscale": 1.7,
+    "video": false,
+    "framing": {
+      "offset": 0
+    }
+  },
+  {
+    "row": "s11_loop",
+    "timeline_in": 20.168,
+    "timeline_out": 21.101,
+    "source": "loop_span_02_wurzburg_lab_establishing_v03.mp4",
+    "upscale": 0.84,
+    "video": true,
+    "framing": {
+      "offset": 4.7867
+    }
+  }
+]
