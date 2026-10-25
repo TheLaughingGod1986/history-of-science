@@ -1,0 +1,26 @@
+[
+  {
+    "file": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/hos_002_backcat_four_elements_v02.mp4",
+    "air_date": "2026-11-03",
+    "fails": [],
+    "warns": [],
+    "stayed_fails": [],
+    "duration_s": 23.57,
+    "audio": {
+      "stream": true,
+      "mean_db": -21.0,
+      "open_mean_db": -18.2
+    },
+    "vo_src": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/_work_four_elements_v02/vo_trim.wav",
+    "vo_onset_s": 0.037,
+    "last_word_end_s": 22.537,
+    "tail_gap_s": 1.03,
+    "motion_0_1s": 31.34,
+    "frame0_diff_0_1_5s": 4.85,
+    "first_cut_s": 2.57,
+    "dhash": "d717f204097950ac",
+    "near_opens": [],
+    "contact_sheet": "/var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_002_backcat_four_elements_v02_open_sheet.jpg",
+    "verdict": "PASS"
+  }
+]

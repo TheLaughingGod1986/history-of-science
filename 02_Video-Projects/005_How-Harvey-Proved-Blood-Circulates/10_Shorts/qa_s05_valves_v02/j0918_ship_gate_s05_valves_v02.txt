@@ -1,0 +1,4 @@
+J0918 HOS ship gate (Chief, 24 Oct 2026), read from gate_shorts_open.
+verdict=PASS frame0_diff=4.97 first_cut_s=2.43 vo_onset_s=0.129 tail_gap_s=1.38 stayed_fails=[]
+fails=[]
+warns=[]

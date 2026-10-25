@@ -1,0 +1,240 @@
+{
+  "rule": {
+    "low_detail": "FAIL: luma std < 13.44 and edge density < 0.0259 (absolute floor); WARN: luma std < 18.0 or edge density < film p5",
+    "split_panel": "full-height/width seam or gutter",
+    "split_panel_gutter": "gutter counts only with edge density >= 0.01 in the 10% band on both sides",
+    "near_black": "mean < 28.0 or p95 < 50.0",
+    "noise": "grain std > 6 over structure std < 12, and the 8x-downscaled frame under the low-detail floor (std < 13.44 and edge density < 0.0259)",
+    "jitter": "centre-patch phase correlation: reversal against trend or > 0.35 px off trend"
+  },
+  "low_detail_floor": {
+    "std": 13.44,
+    "edge": 0.0259,
+    "calibration": {
+      "video": "025_MarsRobot_full_rough_v02d.mp4",
+      "factor": 1.2,
+      "frames": [
+        {
+          "source": "PIA22223.jpg",
+          "t": 201.0,
+          "std": 12.1,
+          "edge": 0.0223
+        },
+        {
+          "source": "PIA22223.jpg",
+          "t": 216.3,
+          "std": 11.2,
+          "edge": 0.0216
+        },
+        {
+          "source": "PIA22929.jpg",
+          "t": 297.4,
+          "std": 26.54,
+          "edge": 0.5735
+        }
+      ]
+    }
+  },
+  "video": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/hos_004_backcat_gold_foil_v02.mp4",
+  "edge_floor": 0.0139,
+  "verdict": "PASS",
+  "failed": [],
+  "warn": [
+    {
+      "row": "s06_Rutherford",
+      "cut": 5,
+      "t": 15.53,
+      "source": "11_shell_tissue_v02.mp4",
+      "why": [
+        "low detail: luma std 15.29 < 18.0",
+        "low detail: edge density 0.007 < film p5 0.0139"
+      ]
+    }
+  ],
+  "reviewed_ok": [],
+  "rows": [
+    {
+      "cut": 0,
+      "row": "s01_open",
+      "source": "12_shell_comes_back_v02.mp4",
+      "t": 1.38,
+      "std": 61.07,
+      "mean": 135.3,
+      "p95": 213.0,
+      "edge": 0.0734,
+      "hf": 15.09,
+      "lf": 53.91,
+      "std8": 56.04,
+      "edge8": 0.3214,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 1,
+      "row": "s02_fired",
+      "source": "03_fire_at_gold_v01.mp4",
+      "t": 4.14,
+      "std": 61.58,
+      "mean": 106.96,
+      "p95": 219.0,
+      "edge": 0.1232,
+      "hf": 10.79,
+      "lf": 54.97,
+      "std8": 57.58,
+      "edge8": 0.4929,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 2,
+      "row": "s03_fired",
+      "source": "04_thin_gold_foil_v01.mp4",
+      "t": 7.23,
+      "std": 62.14,
+      "mean": 123.52,
+      "p95": 220.0,
+      "edge": 0.0765,
+      "hf": 7.49,
+      "lf": 55.57,
+      "std8": 58.54,
+      "edge8": 0.5326,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 3,
+      "row": "s04_Almost",
+      "source": "09_almost_all_pass_v02.mp4",
+      "t": 9.94,
+      "std": 52.8,
+      "mean": 109.95,
+      "p95": 208.0,
+      "edge": 0.0743,
+      "hf": 9.79,
+      "lf": 46.76,
+      "std8": 49.22,
+      "edge8": 0.4986,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 4,
+      "row": "s05_About",
+      "source": "07_green_flash_count_v02.mp4",
+      "t": 12.3,
+      "std": 24.96,
+      "mean": 32.3,
+      "p95": 78.0,
+      "edge": 0.0283,
+      "hf": 8.43,
+      "lf": 18.98,
+      "std8": 20.94,
+      "edge8": 0.118,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 5,
+      "row": "s06_Rutherford",
+      "source": "11_shell_tissue_v02.mp4",
+      "t": 15.53,
+      "std": 15.29,
+      "mean": 177.92,
+      "p95": 211.0,
+      "edge": 0.007,
+      "hf": 5.24,
+      "lf": 13.17,
+      "std8": 13.62,
+      "edge8": 0.042,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": [
+        "low detail: luma std 15.29 < 18.0",
+        "low detail: edge density 0.007 < film p5 0.0139"
+      ]
+    },
+    {
+      "cut": 6,
+      "row": "s07_and",
+      "source": "10_one_bounces_v02.mp4",
+      "t": 18.28,
+      "std": 36.64,
+      "mean": 84.05,
+      "p95": 157.0,
+      "edge": 0.0534,
+      "hf": 7.15,
+      "lf": 31.3,
+      "std8": 33.77,
+      "edge8": 0.239,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 7,
+      "row": "s08_An",
+      "source": "13_mass_packed_v02.mp4",
+      "t": 20.26,
+      "std": 76.76,
+      "mean": 107.56,
+      "p95": 222.0,
+      "edge": 0.0438,
+      "hf": 6.07,
+      "lf": 73.4,
+      "std8": 75.0,
+      "edge8": 0.2437,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 8,
+      "row": "s09_one",
+      "source": "14_nucleus_electrons_v01.mp4",
+      "t": 22.55,
+      "std": 54.72,
+      "mean": 104.15,
+      "p95": 207.0,
+      "edge": 0.0224,
+      "hf": 5.6,
+      "lf": 51.2,
+      "std8": 52.98,
+      "edge8": 0.3268,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 9,
+      "row": "s10_loop",
+      "source": "loop_span_12_shell_comes_back_v02.mp4",
+      "t": 24.22,
+      "std": 55.67,
+      "mean": 140.35,
+      "p95": 200.0,
+      "edge": 0.0335,
+      "hf": 5.24,
+      "lf": 52.92,
+      "std8": 54.11,
+      "edge8": 0.194,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    }
+  ]
+}

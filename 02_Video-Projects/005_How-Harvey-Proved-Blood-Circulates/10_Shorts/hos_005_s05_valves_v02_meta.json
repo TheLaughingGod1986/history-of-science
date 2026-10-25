@@ -1,0 +1,421 @@
+{
+  "id": "005_s05_valves",
+  "version": "v02",
+  "job": "J0965",
+  "youtube_id": "PlihWC5uA2E",
+  "title": "Why Do Veins Have Valves?",
+  "air_date": "2026-11-05",
+  "spoken": "Along the swollen veins you can see small knots. Each one is a valve, the flaps Fabricius found. Harvey presses a finger on a vein and pushes the blood towards the hand. It stops dead at the next valve. He pushes it the other way, towards the heart, and it slides through easily.",
+  "script": "Along the swollen veins you can see small knots. Each one is a valve, the flaps Fabricius found. Harvey presses a finger on a vein and pushes the blood towards the hand. It stops dead at the next valve. He pushes it the other way, towards the heart, and it slides through easily.",
+  "words": [
+    {
+      "word": "Along",
+      "start": 0.0,
+      "end": 0.4
+    },
+    {
+      "word": "the",
+      "start": 0.42,
+      "end": 0.48
+    },
+    {
+      "word": "swollen",
+      "start": 0.54,
+      "end": 0.96
+    },
+    {
+      "word": "veins",
+      "start": 1.067,
+      "end": 1.6
+    },
+    {
+      "word": "you",
+      "start": 1.62,
+      "end": 1.68
+    },
+    {
+      "word": "can",
+      "start": 1.72,
+      "end": 1.84
+    },
+    {
+      "word": "see",
+      "start": 1.88,
+      "end": 2.0
+    },
+    {
+      "word": "small",
+      "start": 2.08,
+      "end": 2.48
+    },
+    {
+      "word": "knots.",
+      "start": 2.587,
+      "end": 3.28
+    },
+    {
+      "word": "Each",
+      "start": 3.478,
+      "end": 3.99
+    },
+    {
+      "word": "one",
+      "start": 4.03,
+      "end": 4.15
+    },
+    {
+      "word": "is",
+      "start": 4.177,
+      "end": 4.23
+    },
+    {
+      "word": "a",
+      "start": 4.27,
+      "end": 4.31
+    },
+    {
+      "word": "valve,",
+      "start": 4.43,
+      "end": 5.35
+    },
+    {
+      "word": "the",
+      "start": 5.39,
+      "end": 5.51
+    },
+    {
+      "word": "flaps",
+      "start": 5.563,
+      "end": 6.07
+    },
+    {
+      "word": "Fabricius",
+      "start": 6.15,
+      "end": 6.87
+    },
+    {
+      "word": "found.",
+      "start": 6.963,
+      "end": 7.59
+    },
+    {
+      "word": "Harvey",
+      "start": 7.82,
+      "end": 8.78
+    },
+    {
+      "word": "presses",
+      "start": 8.83,
+      "end": 9.18
+    },
+    {
+      "word": "a",
+      "start": 9.22,
+      "end": 9.26
+    },
+    {
+      "word": "finger",
+      "start": 9.317,
+      "end": 9.66
+    },
+    {
+      "word": "on",
+      "start": 9.713,
+      "end": 9.82
+    },
+    {
+      "word": "a",
+      "start": 9.86,
+      "end": 9.9
+    },
+    {
+      "word": "vein",
+      "start": 9.996,
+      "end": 10.38
+    },
+    {
+      "word": "and",
+      "start": 10.48,
+      "end": 10.78
+    },
+    {
+      "word": "pushes",
+      "start": 10.837,
+      "end": 11.18
+    },
+    {
+      "word": "the",
+      "start": 11.2,
+      "end": 11.26
+    },
+    {
+      "word": "blood",
+      "start": 11.34,
+      "end": 11.74
+    },
+    {
+      "word": "towards",
+      "start": 11.79,
+      "end": 12.14
+    },
+    {
+      "word": "the",
+      "start": 12.18,
+      "end": 12.3
+    },
+    {
+      "word": "hand.",
+      "start": 12.412,
+      "end": 12.94
+    },
+    {
+      "word": "It",
+      "start": 13.157,
+      "end": 13.53
+    },
+    {
+      "word": "stops",
+      "start": 13.61,
+      "end": 14.01
+    },
+    {
+      "word": "dead",
+      "start": 14.09,
+      "end": 14.41
+    },
+    {
+      "word": "at",
+      "start": 14.49,
+      "end": 14.65
+    },
+    {
+      "word": "the",
+      "start": 14.67,
+      "end": 14.73
+    },
+    {
+      "word": "next",
+      "start": 14.794,
+      "end": 15.05
+    },
+    {
+      "word": "valve.",
+      "start": 15.157,
+      "end": 15.77
+    },
+    {
+      "word": "He",
+      "start": 15.993,
+      "end": 16.42
+    },
+    {
+      "word": "pushes",
+      "start": 16.477,
+      "end": 16.82
+    },
+    {
+      "word": "it",
+      "start": 16.847,
+      "end": 16.9
+    },
+    {
+      "word": "the",
+      "start": 16.94,
+      "end": 17.06
+    },
+    {
+      "word": "other",
+      "start": 17.087,
+      "end": 17.22
+    },
+    {
+      "word": "way,",
+      "start": 17.3,
+      "end": 17.62
+    },
+    {
+      "word": "towards",
+      "start": 17.66,
+      "end": 17.94
+    },
+    {
+      "word": "the",
+      "start": 17.98,
+      "end": 18.1
+    },
+    {
+      "word": "heart,",
+      "start": 18.193,
+      "end": 18.98
+    },
+    {
+      "word": "and",
+      "start": 19.02,
+      "end": 19.14
+    },
+    {
+      "word": "it",
+      "start": 19.167,
+      "end": 19.22
+    },
+    {
+      "word": "slides",
+      "start": 19.3,
+      "end": 19.78
+    },
+    {
+      "word": "through",
+      "start": 19.82,
+      "end": 20.1
+    },
+    {
+      "word": "easily.",
+      "start": 20.191,
+      "end": 20.82
+    }
+  ],
+  "word_count": 53,
+  "last_word_end_s": 20.82,
+  "plan": [
+    {
+      "t0": 0.0,
+      "t1": 2.45,
+      "plate": "13_one_way_t3.mp4",
+      "in_s": 1.6,
+      "crop_x": 656,
+      "lands_on": "open",
+      "hold_s": 2.45
+    },
+    {
+      "t0": 2.45,
+      "t1": 4.43,
+      "plate": "06_veins_swell_t1.mp4",
+      "in_s": 2.2,
+      "crop_x": 750,
+      "lands_on": "knots",
+      "hold_s": 1.98
+    },
+    {
+      "t0": 4.43,
+      "t1": 7.82,
+      "plate": "08_knots_valve_t4.mp4",
+      "in_s": 0.4,
+      "crop_x": 656,
+      "lands_on": "valve,",
+      "hold_s": 3.39
+    },
+    {
+      "t0": 7.82,
+      "t1": 10.837,
+      "plate": "09_push_stops_t3.mp4",
+      "in_s": 0.5,
+      "crop_x": 800,
+      "lands_on": "Harvey",
+      "hold_s": 3.017
+    },
+    {
+      "t0": 10.837,
+      "t1": 13.157,
+      "plate": "09_push_stops_t2.mp4",
+      "in_s": 0.4,
+      "crop_x": 800,
+      "lands_on": "pushes",
+      "hold_s": 2.32
+    },
+    {
+      "t0": 13.157,
+      "t1": 15.993,
+      "plate": "11_two_fingers_t3.mp4",
+      "in_s": 0.8,
+      "crop_x": 656,
+      "lands_on": "It",
+      "hold_s": 2.836
+    },
+    {
+      "t0": 15.993,
+      "t1": 17.66,
+      "plate": "10_slides_heart_t3.mp4",
+      "in_s": 0.6,
+      "crop_x": 1100,
+      "lands_on": "He",
+      "hold_s": 1.667
+    },
+    {
+      "t0": 17.66,
+      "t1": 20.82,
+      "plate": "10_slides_heart_t2.mp4",
+      "in_s": 1.0,
+      "crop_x": 656,
+      "lands_on": "towards",
+      "hold_s": 3.16
+    },
+    {
+      "t0": 20.82,
+      "t1": 22.17,
+      "plate": "13_one_way_t3.mp4",
+      "in_s": 0.25,
+      "crop_x": 656,
+      "lands_on": "loop",
+      "hold_s": 1.35
+    }
+  ],
+  "hook": "ONE WAY",
+  "hook_layer": {
+    "font_size": 243,
+    "cap_px": 173,
+    "cap_pct": 9.01,
+    "lines": 2,
+    "block_pct": [
+      39.5,
+      60.4
+    ],
+    "widest_pct": 56.2
+  },
+  "title_on_screen": "The Tied Arm That Proved Your Blood Circulates",
+  "who": {
+    "name": "FABRICIUS",
+    "line2": "Padua, c. 1600"
+  },
+  "no_cta": true,
+  "no_new_spend": true,
+  "open_note": "'Inside your veins are tiny one-way doors \u2014 valves' is not on disk. Opened on the existing 'Along the swollen veins\u2026' and dropped 'Now the little doors.' The 0.19 s and 0.21 s joins are capped at 0.15 s. No words were sped up, so 'valve' stays where the take says it.",
+  "v01_untouched": true,
+  "v01_sha256": "a4e7e6416f4f6c9857da73496cc2c3b61d50f7ab4f8b4fbb226fdb46d3f1920f",
+  "bed": "hos_005_s05_valves_v02_bed.wav",
+  "sfx_level": {
+    "exit": 0,
+    "output": "SFX level PASS: VO -20.5 LUFS, SFX -53.4 LUFS, 1 hits",
+    "bed_db": -17.0,
+    "sfx_db": -19.0
+  },
+  "frame0_source": "04_Generated-Clips/part04/raw/v01/13_one_way_t3.mp4",
+  "frame0_zoom": "none \u2014 moving plate, in 1.6s, crop x=656, no Ken Burns",
+  "frame0_in_s": 1.6,
+  "first_word_s": 0.0,
+  "surprise_s": {
+    "veins": 1.067,
+    "valve": 4.43
+  },
+  "first_cut_s": 2.45,
+  "last_word_to_loop_s": 1.35,
+  "meta_promise": false,
+  "runtime_s": 22.2,
+  "longest_hold_s": 3.39,
+  "payoff_phrase": "towards the heart",
+  "payoff_s": 17.66,
+  "payoff_frac": 0.797,
+  "loop_sentence": "He pushes it the other way, towards the heart, and it slides through easily. Along the swollen veins you can see small knots.",
+  "lufs_wav": -14.7,
+  "true_peak_wav_dbfs": -0.9,
+  "pre_master_lufs": -19.6,
+  "frame0_black": 0.0,
+  "sha256": "ed9b7f084a2e875e8e09fd7995c0b4eeecbb044a3699665d5a409671d91ab664",
+  "brief": {
+    "frame0": "moving 13_one_way_t3, no zoom",
+    "subject_named_s": 1.067,
+    "first_word_s": 0.0,
+    "first_cut_s": 2.45,
+    "loop_s": 1.35,
+    "payoff_frac": 0.797
+  }
+}

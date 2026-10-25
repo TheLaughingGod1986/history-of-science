@@ -1,0 +1,2 @@
+WARN   0:19 row s08_towards 10_slides_heart_t2.mp4: low detail: edge density 0.0196 < film p5 0.0252
+picture QA PASS: 0 of 9 cuts fail, 1 to look at -> 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s05_valves_v02/picture_qa_s05_valves_v02/PICTURE_QA.md, 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s05_valves_v02/picture_qa_s05_valves_v02/picture_qa_review.jpg

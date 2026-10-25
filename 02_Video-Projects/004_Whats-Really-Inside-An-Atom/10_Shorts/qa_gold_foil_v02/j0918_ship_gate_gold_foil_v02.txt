@@ -1,0 +1,4 @@
+J0918 HOS ship gate, re-read after the -14.3 LUFS limiter pass. Video frames unchanged.
+verdict=PASS frame0_diff_0_1_5s=8.64 first_cut_s=2.77 vo_onset_s=0.052 tail_gap_s=1.02 stayed_fails=[]
+fails=[]
+warns=[]

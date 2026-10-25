@@ -1,0 +1,15 @@
+{
+  "job": "J0965",
+  "youtube_id": "PlihWC5uA2E",
+  "master_sha256": "ed9b7f084a2e875e8e09fd7995c0b4eeecbb044a3699665d5a409671d91ab664",
+  "phone_sha256": "4b3c6a052cde9bba16ca3402c46a01007ef6f1625a73e195a96b12213c118fc8",
+  "v01_sha256": "a4e7e6416f4f6c9857da73496cc2c3b61d50f7ab4f8b4fbb226fdb46d3f1920f",
+  "copies": {
+    "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/valves_v02/hos_005_s05_valves_v02.mp4": "ed9b7f084a2e875e8e09fd7995c0b4eeecbb044a3699665d5a409671d91ab664",
+    "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/valves_v02/hos_005_s05_valves_v02_PHONE.mp4": "4b3c6a052cde9bba16ca3402c46a01007ef6f1625a73e195a96b12213c118fc8",
+    "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/valves_v02/hos_005_s05_valves_v02_2fps_sheet.jpg": "e835a7c552f3b608eddba2f1b3db1354e29034a162c90c38390d1469e5d00e02",
+    "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/valves_v02/hos_005_s05_valves_v02.mp4": "ed9b7f084a2e875e8e09fd7995c0b4eeecbb044a3699665d5a409671d91ab664",
+    "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/valves_v02/hos_005_s05_valves_v02_PHONE.mp4": "4b3c6a052cde9bba16ca3402c46a01007ef6f1625a73e195a96b12213c118fc8",
+    "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/valves_v02/hos_005_s05_valves_v02_2fps_sheet.jpg": "e835a7c552f3b608eddba2f1b3db1354e29034a162c90c38390d1469e5d00e02"
+  }
+}
