@@ -120,13 +120,14 @@
       "kind": "short",
       "standalone": false,
       "standaloneTest": false,
-      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s05_valves_v01.mp4",
-      "sha256": "bea80a80838c2c72afa02dc409a978ecc7467749566484929c733aee8e7814cd",
-      "packageDir": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/11_Upload-Package/s05_valves",
+      "file": "v01",
+      "promotes": "005",
       "long": "wwcjcFfC-5M",
-      "publishAt": "2026-11-02T11:30:00Z",
-      "registeredAt": "2026-10-15T11:37:23Z",
-      "buffer": "held until public, then the full film",
+      "publishAt": null,
+      "privacyStatus": "private",
+      "supersededBy": "xHnIi9GqOsM",
+      "unscheduledAt": "2026-10-26T09:37:00Z",
+      "note": "J0972. Private and unscheduled. Title unchanged. Nothing deleted. v01.",
       "social": {
         "hook": "The flaps in a vein let blood move only one way.",
         "question": "Guess which way the blood is allowed to go?",
@@ -454,6 +455,29 @@
       "supersededBy": "PFj6172YU4Q",
       "unscheduledAt": "2026-10-26T09:24:00Z",
       "note": "J0973. Private and unscheduled. Title unchanged. Nothing deleted. v03."
+    },
+    "xHnIi9GqOsM": {
+      "kind": "short",
+      "standalone": false,
+      "standaloneTest": false,
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s05_valves_v03.mp4",
+      "sha256": "e3aa2c6cfc56d56b888aa244d1a708d7008c18f5a982f6dd5f74a3746140b580",
+      "packageDir": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/11_Upload-Package/valves_v03",
+      "thumb": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/11_Upload-Package/valves_v03/cover_from_PlihWC5uA2E.jpg",
+      "long": "wwcjcFfC-5M",
+      "promotes": "005",
+      "publishAt": "2026-11-05T11:30:00Z",
+      "privacyStatus": "private",
+      "replaces": "PlihWC5uA2E",
+      "registeredAt": "2026-10-26T09:38:00Z",
+      "buffer": "held until the short is public, then the full film (long wwcjcFfC-5M goes public 29 Oct, before this Short). TikTok/IG: Full film on YouTube, link in bio.",
+      "captions": "en-GB standard, serving, from the v03 spoken line, AUieDaa0W0k3L0ofhc3lsYS9xSTbB6c76Qq79cOYVQQ5FQ36",
+      "related": "not set this run. Source PlihWC5uA2E Related was None (25 Oct audit). J0280 sets wwcjcFfC-5M on xHnIi9GqOsM after the long is public, before 5 Nov.",
+      "social": {
+        "hook": "The flaps in a vein let blood move only one way.",
+        "question": "Guess which way the blood is allowed to go?",
+        "alt": "A vein drawing with one-way flaps, the valves Fabricius found."
+      }
     }
   }
 }
