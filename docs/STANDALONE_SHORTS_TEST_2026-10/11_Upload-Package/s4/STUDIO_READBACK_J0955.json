@@ -1,0 +1,32 @@
+{
+  "job": "J0955",
+  "at": "2026-10-26T00:03:57Z",
+  "channel": "History of Science",
+  "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+  "videoId": "AMSriTQ-lcQ",
+  "cdp": 9460,
+  "before": "Related video None",
+  "afterReload": "Related video What's Really Inside an Atom?",
+  "relatedTo": "GHZDsiH7L7A",
+  "title": "Are Marie Curie's Notebooks Still Radioactive?",
+  "visibility": "Scheduled",
+  "premiere": false,
+  "api": {
+    "privacy": "private",
+    "publishAt": "2026-10-28T11:30:00Z",
+    "lang": "en-GB",
+    "kids": false,
+    "caption": true,
+    "hasCustomThumbnail": true,
+    "tagCount": 6
+  },
+  "leftUntouched": {
+    "id": "vEg_tLIm0Co",
+    "openedInStudio": false,
+    "privacy": "private",
+    "publishAt": null
+  },
+  "uploaded": false,
+  "deleted": false,
+  "gbp": 0
+}
