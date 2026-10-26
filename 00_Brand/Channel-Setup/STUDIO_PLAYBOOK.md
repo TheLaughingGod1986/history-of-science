@@ -431,7 +431,7 @@ Ben, 2 Oct 2026: *"Claude and Grok have more authority and fewer checks with me.
   - things only he can physically do: Vercel env vars, OAuth reconnects, waking the Mac Mini, logins and 2FA;
   - any change to the channel's direction (a new series, a new format, a change of voice);
   - the final OK above.
-- **Chief owns `AGENTS.md` and the Never list** (Ben to Claude, 5 Oct 2026; handed to Chief 9 Oct, confirmed 10 Oct). Chief changes them and OKs one-off Never-list exceptions for reversible studio actions (e.g. re-uploading a fixed copy of a broken Short, a video going private), recording each with its date and reason on the desk and in the commit, and telling Ben. Workers (Cursor, Codex) don't relax the Never list themselves. **Real money stays with Ben**, and no OK covers deleting a video.
+- **Chief owns `AGENTS.md` and the Never list** (Ben to Claude, 5 Oct 2026; handed to Chief 9 Oct, confirmed 10 Oct). Chief changes them and OKs one-off Never-list exceptions for reversible studio actions (e.g. re-uploading a fixed copy of a broken Short, a video going private), recording each with its date and reason on the desk and in the commit, and telling Ben. Ordinary workers outside the elected Chief role do not relax the Never list themselves. **Real money stays with Ben**, and no OK covers deleting a video.
 <!-- /SYNC -->
 
 ## 14. Git
