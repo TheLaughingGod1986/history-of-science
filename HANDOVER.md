@@ -2,11 +2,15 @@
 
 Written 12 Oct 2026 ~15:00 London by Chief of Staff (Grok Bot). **Master index for all repos:** `TheLaughingGod1986/orbit-with-ben` → `HANDOVER.md` (shared Mini tooling — jobs, relay, routing, analytics — lives there).
 
+## Chief succession — 26 Oct 2026
+
+**Chief succession (Ben, 26 Oct 2026): Grok Bot (`chief`) → Claude (`claude`) → Codex/GPT (`codex`) → Gemini (`gemini`).** The first available agent is the elected Chief for both channels; a higher-priority agent takes the role back automatically when it returns. Cursor remains a specialist worker, outside this Chief chain. The elected Claude, Codex or Gemini holds the ordinary Chief authority to review, PASS, merge and give final OKs under the existing channel rules. An ordinary worker or model fallback has no such authority. Before a protected call, re-read `chief_relay.py status`; use your own agent id, never impersonate `chief`. Required Ben approvals, money, irreversible actions and existing gates remain unchanged. Evidence: Ben's direct request on 26 Oct 2026 to use Grok, then Claude, then Codex, then Gemini as Chief.
+
 ## Studio standing rules added 9–12 Oct 2026 (already in AGENTS.md unless marked NEW)
 - **Who decides:** Chief of Staff (Grok Bot) owns reviews, PASS, merges, final OKs, `AGENTS.md` and the Never list. Ben gets only real money (past £0), irreversible actions, his own voice/logins/devices, and channel-direction changes. Updates to Ben are results only and say plainly when nothing is needed.
 - **Credit floors are zero (Ben, 12 Oct 2026 14:46) — NEW, supersedes the "Credit holds until 30 Oct" ElevenLabs gating:** use all subscription credit down to 0 — ElevenLabs (~11,935 credits left on 12 Oct, resets 30 Oct), Google Flow (52 credits on AI Ultra), Vertex free trial (£4.93; stop at the £0.10 billing-lag margin because billing account is a Paid account). **Never** buy credits, top up, upgrade, enable overage or let anything spill onto the card. HOS PR #287 records this in HOS.
 - **Mini runs 24/7 (Ben, 12 Oct):** never idles; reviews done the moment they land; no fixed start times (jobs start when inputs are ready, `--after`); when work runs out the queue refills (`scripts/refill.py`, `jobs/backlog.json`) with: new video ideas, weekly per-channel audits with competitor analysis, and polish on finished films. **The aim is to improve the numbers every month.**
-- **Model routing + fallback chain:** `AGENTS.md` → "Who does what" and `scripts/routing.py` (`CHAINS`). Claude jobs: Claude Code → Cursor on `claude-opus-5-5` → Gemini `agy` → Codex `gpt-6-astra`. Chief chain: Grok Bot → Cursor → Codex (`scripts/chief_relay.py`).
+- **Model routing + fallback chain:** `AGENTS.md` → "Who does what" and `scripts/routing.py` (`CHAINS`). Claude jobs: Claude Code → Cursor on `claude-opus-5-5` → Gemini `agy` → Codex `gpt-6-astra`. Chief chain: Grok Bot → Claude → Codex → Gemini (`scripts/chief_relay.py`).
 - **Four a month per channel** (`scripts/channel_balance.py`), one focus film at a time, Ben's watch before upload with a watch-by date.
 - **Buffer is the only social route;** posts scheduled at the YouTube go-public time only; TikTok paused; no pinned comment on Shorts.
 - **Takedowns = make private, never delete** (Chief's call, Ben told). Never delete anything on either Mac or the NAS; never reset or stash.
