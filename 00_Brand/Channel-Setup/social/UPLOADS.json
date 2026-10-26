@@ -418,6 +418,42 @@
         "question": "How many names were on Lavoisier's list?",
         "alt": "A laboratory bench with earth, fire, water and air. Cover text FOUR ELEMENTS WERE WRONG."
       }
+    },
+    "PFj6172YU4Q": {
+      "kind": "short",
+      "standalone": false,
+      "standaloneTest": false,
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s02_the_tied_arm_v05.mp4",
+      "sha256": "c31fbb5c88f61b9bc2bbfae8b7a059b84b99575c5876066167ae22021ace70df",
+      "packageDir": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/11_Upload-Package/tied_arm_v05",
+      "thumb": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/11_Upload-Package/tied_arm_v05/cover_from_mTY67qet7cM.jpg",
+      "long": "wwcjcFfC-5M",
+      "promotes": "005",
+      "publishAt": "2026-11-08T11:30:00Z",
+      "privacyStatus": "private",
+      "replaces": "mTY67qet7cM",
+      "registeredAt": "2026-10-26T09:25:00Z",
+      "buffer": "held until the short is public, then the full film (long wwcjcFfC-5M goes public 29 Oct, before this Short). TikTok/IG: Full film on YouTube, link in bio.",
+      "captions": "en-GB standard, serving, from the v05 spoken line, AUieDaYHjCQCo8qCUgxoKXYRRpigg8iwXKXSXIPXhvplpKSn",
+      "related": "not set this run. Source mTY67qet7cM Related was None. J0280 sets wwcjcFfC-5M on PFj6172YU4Q after the long is public, before 8 Nov.",
+      "social": {
+        "hook": "One tight band on an arm proved blood goes round \u2014 Harvey's De Motu Cordis experiment.",
+        "question": "Which way does the blood in your hand travel?",
+        "alt": "A linen band tightening on an arm. Cover text ONE TIGHT BAND."
+      }
+    },
+    "mTY67qet7cM": {
+      "kind": "short",
+      "standalone": false,
+      "standaloneTest": false,
+      "file": "v03",
+      "promotes": "005",
+      "long": "wwcjcFfC-5M",
+      "publishAt": null,
+      "privacyStatus": "private",
+      "supersededBy": "PFj6172YU4Q",
+      "unscheduledAt": "2026-10-26T09:24:00Z",
+      "note": "J0973. Private and unscheduled. Title unchanged. Nothing deleted. v03."
     }
   }
 }
