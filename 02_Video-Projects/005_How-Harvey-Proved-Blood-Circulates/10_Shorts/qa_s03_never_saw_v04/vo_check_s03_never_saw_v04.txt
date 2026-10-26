@@ -1,0 +1,2 @@
+PASS  vo_trim.wav  0:24.26  mean -21.6 dB  peak -2.0 dB  143 wpm
+   warn  pace 143 wpm (< 145); expect a long film — see STUDIO_PLAYBOOK.md §4 speed

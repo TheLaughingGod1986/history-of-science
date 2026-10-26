@@ -1,0 +1,30 @@
+[
+  {
+    "file": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s03_never_saw_v04.mp4",
+    "air_date": "2026-11-15",
+    "fails": [],
+    "warns": [],
+    "stayed_fails": [],
+    "duration_s": 25.26,
+    "audio": {
+      "stream": true,
+      "mean_db": -16.9,
+      "open_mean_db": -13.9
+    },
+    "vo_src": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/_work_s03_never_saw_v04/vo_trim.wav",
+    "vo_onset_s": 0.062,
+    "last_word_end_s": 24.259,
+    "tail_gap_s": 1.0,
+    "level": {
+      "lufs": -14.0,
+      "true_peak_dbtp": -1.8
+    },
+    "motion_0_1s": 14.43,
+    "frame0_diff_0_1_5s": 1.75,
+    "first_cut_s": 2.03,
+    "dhash": "0f0d3bdcc8654d0f",
+    "near_opens": [],
+    "contact_sheet": "/var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_005_s03_never_saw_v04_open_sheet.jpg",
+    "verdict": "PASS"
+  }
+]

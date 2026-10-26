@@ -1,0 +1,175 @@
+{
+  "verdict": "PASS",
+  "video": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s03_never_saw_v04.mp4",
+  "rules": {
+    "kind_fail": "computer[- ]?(reconstruction|model|generated|simulation|graphic)|\\bsimulation\\b|\\bdiagram|\\bchart\\b|\\bgraph\\b|\\bschematic|\\bannotated\\b|\\blabell?ed\\b|\\bscreen ?shot|\\bwireframe|\\bcad\\b|\\binfographic",
+    "kind_warn": "\\bartist|\\billustration|\\bconcept\\b|\\brender|\\banimation\\b|\\bmap\\b|\\bmosaic\\b|\\bcomposite\\b",
+    "upscale_fail": 2.35,
+    "upscale_warn": 2.0,
+    "max_reuse": 2,
+    "max_stretches": 5,
+    "same_stretch": 10.0,
+    "pixels": "scripts/polish_gate.py"
+  },
+  "failed": [],
+  "warn": [
+    {
+      "cut": 2,
+      "row": "s03_but",
+      "source": "02_tiny_gaps_t1.mp4",
+      "title": "Veo plate 02_tiny_gaps_t1.mp4",
+      "t": 5.85,
+      "at": "0:06",
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0194 < film p5 0.0331"
+      ],
+      "offset": 0.5
+    }
+  ],
+  "rows": [
+    {
+      "cut": 0,
+      "row": "s01_open",
+      "source": "06_eyepiece_mesh_t1.mp4",
+      "title": "Veo plate 06_eyepiece_mesh_t1.mp4",
+      "t": 1.02,
+      "at": "0:01",
+      "fail": [],
+      "warn": [],
+      "offset": 1.4
+    },
+    {
+      "cut": 1,
+      "row": "s02_He",
+      "source": "01_loop_gap_t5.mp4",
+      "title": "Veo plate 01_loop_gap_t5.mp4",
+      "t": 3.12,
+      "at": "0:03",
+      "fail": [],
+      "warn": [],
+      "offset": 0.3
+    },
+    {
+      "cut": 2,
+      "row": "s03_but",
+      "source": "02_tiny_gaps_t1.mp4",
+      "title": "Veo plate 02_tiny_gaps_t1.mp4",
+      "t": 5.85,
+      "at": "0:06",
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0194 < film p5 0.0331"
+      ],
+      "offset": 0.5
+    },
+    {
+      "cut": 3,
+      "row": "s04_died",
+      "source": "03_old_harvey_t1.mp4",
+      "title": "Veo plate 03_old_harvey_t1.mp4",
+      "t": 9.15,
+      "at": "0:09",
+      "fail": [],
+      "warn": [],
+      "offset": 0.3
+    },
+    {
+      "cut": 4,
+      "row": "s05_Four",
+      "source": "04_malpighi_slide_t1.mp4",
+      "title": "Veo plate 04_malpighi_slide_t1.mp4",
+      "t": 12.07,
+      "at": "0:12",
+      "fail": [],
+      "warn": [],
+      "offset": 0.3
+    },
+    {
+      "cut": 5,
+      "row": "s06_put",
+      "source": "17_dutch_lens_t1.mp4",
+      "title": "Veo plate 17_dutch_lens_t1.mp4",
+      "t": 14.58,
+      "at": "0:15",
+      "fail": [],
+      "warn": [],
+      "offset": 0.4
+    },
+    {
+      "cut": 6,
+      "row": "s07_There",
+      "source": "07_capillaries_loop_t1.mp4",
+      "title": "Veo plate 07_capillaries_loop_t1.mp4",
+      "t": 17.32,
+      "at": "0:17",
+      "fail": [],
+      "warn": [],
+      "offset": 0.3
+    },
+    {
+      "cut": 7,
+      "row": "s08_finer",
+      "source": "07_capillaries_loop_t2.mp4",
+      "title": "Veo plate 07_capillaries_loop_t2.mp4",
+      "t": 20.11,
+      "at": "0:20",
+      "fail": [],
+      "warn": [],
+      "offset": 0.3
+    },
+    {
+      "cut": 8,
+      "row": "s09_The",
+      "source": "16_proved_last_link_t2.mp4",
+      "title": "Veo plate 16_proved_last_link_t2.mp4",
+      "t": 22.83,
+      "at": "0:23",
+      "fail": [],
+      "warn": [],
+      "offset": 0.4
+    },
+    {
+      "cut": 9,
+      "row": "s10_loop",
+      "source": "loop_span_06_eyepiece_mesh_t1.mp4",
+      "title": "Veo plate 06_eyepiece_mesh_t1.mp4",
+      "t": 24.76,
+      "at": "0:25",
+      "fail": [],
+      "warn": [],
+      "offset": 0.3999999999999999
+    }
+  ],
+  "polish": {
+    "edge_floor": 0.0331,
+    "low_detail_floor": {
+      "std": 13.44,
+      "edge": 0.0259,
+      "calibration": {
+        "video": "025_MarsRobot_full_rough_v02d.mp4",
+        "factor": 1.2,
+        "frames": [
+          {
+            "source": "PIA22223.jpg",
+            "t": 201.0,
+            "std": 12.1,
+            "edge": 0.0223
+          },
+          {
+            "source": "PIA22223.jpg",
+            "t": 216.3,
+            "std": 11.2,
+            "edge": 0.0216
+          },
+          {
+            "source": "PIA22929.jpg",
+            "t": 297.4,
+            "std": 26.54,
+            "edge": 0.5735
+          }
+        ]
+      }
+    }
+  }
+}
