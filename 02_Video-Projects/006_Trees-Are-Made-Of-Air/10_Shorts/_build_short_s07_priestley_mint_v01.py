@@ -548,6 +548,12 @@ def run(cmd: list[str]) -> tuple[int, str]:
 
 
 def main() -> None:
+    if "--rebuild-v01" not in sys.argv:
+        raise SystemExit(
+            "J0967: this v01 assembler is retired. It still lays a full-film banner and a 3 s loop. "
+            "The next cut is BUILD_RULE_v02.json, checked by hos_build_rule_v02.py. "
+            "Pass --rebuild-v01 only to reproduce the old file."
+        )
     ap = argparse.ArgumentParser()
     ap.add_argument("--air-date", default="2026-12-29")
     ap.add_argument("--no-icloud", action="store_true")

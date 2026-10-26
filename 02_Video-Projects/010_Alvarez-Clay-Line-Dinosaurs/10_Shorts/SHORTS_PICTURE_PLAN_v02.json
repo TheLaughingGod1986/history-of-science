@@ -1,0 +1,277 @@
+{
+  "film": "010",
+  "folder": "010_Alvarez-Clay-Line-Dinosaurs",
+  "version": "v02",
+  "written": "2026-10-26",
+  "task": "J0967: stayed-to-watch build rules. Plans only, no render, no generation.",
+  "long_board_version": "v02/v03 (J0334 PASS + J0348 PASS)",
+  "totals": {
+    "shorts_count": 2,
+    "rows": 16,
+    "new_mints": 0,
+    "reuse_long_plates": 9,
+    "flow_credits_try1": 0,
+    "flow_credits_expected": 0,
+    "vertex_try1_gbp": 0.0,
+    "vertex_expected_gbp": 0.0
+  },
+  "shorts": [
+    {
+      "id": "Short_A",
+      "stem": "hos_010_short_A_v02",
+      "youtube_title": "What Killed the Dinosaurs?",
+      "promoted_long_title": "What Killed the Dinosaurs Was Hidden in a Line of Clay",
+      "promoted_long_title_window_s": [
+        9.0,
+        14.0
+      ],
+      "vo_duration_s": 22.72,
+      "vo_words": 60,
+      "vo_check": "PASS",
+      "vo_sha256_mp3": "68d88b5b5883f2376bcec29c26d77efea7634d5c7705693f41202ca587b927fb",
+      "hook_caption": "THE LINE",
+      "yellow_word": "LINE",
+      "frame0_change_by_1s": "Camera already pushing in on the thin dark clay band in the Gubbio cliff with fingertip resting on it at frame 0; hand shifts to reveal the boundary by 1.0 s.",
+      "teach_overlay": {
+        "kind": "DATA",
+        "text": "THE IRIDIUM SPIKE",
+        "t_start_s": 14.2,
+        "t_end_s": 18.0,
+        "band": "16:9 centre band (clear of 0\u20132 s hook and 9\u201314 s title)"
+      },
+      "flow_credits_try1": 0,
+      "flow_credits_expected": 0,
+      "vertex_expected_gbp": 0.0,
+      "generation_authorized": false,
+      "rows": [
+        {
+          "id": "S01",
+          "t_start_s": 0.0,
+          "t_end_s": 2.8,
+          "source_long_plate": "P1:01_clay_line",
+          "route": "reuse-long-plate",
+          "spoken": "This thin line of clay marks the end of the dinosaurs.",
+          "flow_credits_expected": 0,
+          "use_s": 2.8
+        },
+        {
+          "id": "S02",
+          "t_start_s": 2.8,
+          "t_end_s": 6.12,
+          "source_long_plate": "P2:01_walter_hammer",
+          "route": "reuse-long-plate",
+          "spoken": "This thin line of clay marks the end of the dinosaurs. It's in a cliff in Italy, about a centimetre thick.",
+          "flow_credits_expected": 0,
+          "use_s": 3.32
+        },
+        {
+          "id": "S03",
+          "t_start_s": 6.12,
+          "t_end_s": 9.44,
+          "source_long_plate": "P2:03_tiny_shells",
+          "route": "reuse-long-plate",
+          "spoken": "It's in a cliff in Italy, about a centimetre thick. Below it, the rock is full of tiny fossil shells. Above it, almost all of them are gone.",
+          "flow_credits_expected": 0,
+          "use_s": 3.32
+        },
+        {
+          "id": "S04",
+          "t_start_s": 9.44,
+          "t_end_s": 12.76,
+          "source_long_plate": "P2:05_almost_none",
+          "route": "reuse-long-plate",
+          "spoken": "Below it, the rock is full of tiny fossil shells. Above it, almost all of them are gone.",
+          "flow_credits_expected": 0,
+          "use_s": 3.32
+        },
+        {
+          "id": "S05",
+          "t_start_s": 12.76,
+          "t_end_s": 16.08,
+          "source_long_plate": "P4:01_iridium_spike",
+          "route": "reuse-long-plate",
+          "spoken": "Below it, the rock is full of tiny fossil shells. Above it, almost all of them are gone. In nineteen eighty, scientists found the clay was packed with a rare metal from space.",
+          "flow_credits_expected": 0,
+          "use_s": 3.32
+        },
+        {
+          "id": "S06",
+          "t_start_s": 16.08,
+          "t_end_s": 19.4,
+          "source_long_plate": "P4:01_iridium_spike",
+          "route": "reuse-long-plate",
+          "spoken": "In nineteen eighty, scientists found the clay was packed with a rare metal from space.",
+          "flow_credits_expected": 0,
+          "use_s": 3.32
+        },
+        {
+          "id": "S07",
+          "t_start_s": 19.4,
+          "t_end_s": 22.72,
+          "source_long_plate": "P1:01_clay_line",
+          "route": "reuse-long-plate",
+          "spoken": "In nineteen eighty, scientists found the clay was packed with a rare metal from space. Something huge had hit the Earth.",
+          "flow_credits_expected": 0,
+          "use_s": 3.32
+        },
+        {
+          "id": "loop_tail",
+          "t_start_s": 22.72,
+          "t_end_s": 23.72,
+          "use_s": 1.0,
+          "role": "loop_tail",
+          "route": "reuse-long-plate",
+          "source_long_plate": "P1:01_clay_line",
+          "spoken": "",
+          "note": "Matched frame-0 plate after the last word. No banner, no video id, no code text."
+        }
+      ],
+      "loop_tail_s": 1.0,
+      "end_card": {
+        "text": null,
+        "video_id": null,
+        "code_text": null,
+        "full_film_banner": false
+      },
+      "full_film_banner": false,
+      "render": false,
+      "frame0_plate": "P1:01_clay_line"
+    },
+    {
+      "id": "Short_C",
+      "stem": "hos_010_short_C_v02",
+      "youtube_title": "Are Birds Really Dinosaurs?",
+      "promoted_long_title": "What Killed the Dinosaurs Was Hidden in a Line of Clay",
+      "promoted_long_title_window_s": [
+        9.0,
+        14.0
+      ],
+      "vo_duration_s": 22.56,
+      "vo_words": 57,
+      "vo_check": "PASS",
+      "vo_sha256_mp3": "20432ecd645b28e9fdc051578a284cb2845bd09f3040170b192089b256055b87",
+      "hook_caption": "STILL HERE",
+      "yellow_word": "HERE",
+      "frame0_change_by_1s": "Robin already hopping along a garden fence after a strutting pigeon at frame 0; robin turns its head to camera by 1.0 s.",
+      "teach_overlay": {
+        "kind": "WHEN",
+        "text": "66 MILLION YEARS AGO",
+        "t_start_s": 2.2,
+        "t_end_s": 5.8,
+        "band": "16:9 centre band (clear of 0\u20132 s hook and 9\u201314 s title)"
+      },
+      "flow_credits_try1": 0,
+      "flow_credits_expected": 0,
+      "vertex_expected_gbp": 0.0,
+      "generation_authorized": false,
+      "rows": [
+        {
+          "id": "S01",
+          "t_start_s": 0.0,
+          "t_end_s": 1.85,
+          "source_long_plate": "P5:09_robin",
+          "route": "reuse-long-plate",
+          "spoken": "Not all the dinosaurs died.",
+          "flow_credits_expected": 0,
+          "use_s": 1.85
+        },
+        {
+          "id": "S02",
+          "t_start_s": 1.85,
+          "t_end_s": 5.3,
+          "source_long_plate": "P4:06_dust_veil",
+          "route": "reuse-long-plate",
+          "spoken": "When the asteroid struck, sixty-six million years ago, a few small, feathered ones survived.",
+          "flow_credits_expected": 0,
+          "use_s": 3.45
+        },
+        {
+          "id": "S03",
+          "t_start_s": 5.3,
+          "t_end_s": 8.75,
+          "source_long_plate": "P5:11_why_survive",
+          "route": "reuse-long-plate",
+          "spoken": "When the asteroid struck, sixty-six million years ago, a few small, feathered ones survived. Their descendants are all around you now. The pigeon on the pavement. The robin in the garden. The gull at the seaside.",
+          "flow_credits_expected": 0,
+          "use_s": 3.45
+        },
+        {
+          "id": "S04",
+          "t_start_s": 8.75,
+          "t_end_s": 12.21,
+          "source_long_plate": "P5:09_robin",
+          "route": "reuse-long-plate",
+          "spoken": "Their descendants are all around you now. The pigeon on the pavement. The robin in the garden. The gull at the seaside.",
+          "flow_credits_expected": 0,
+          "use_s": 3.46
+        },
+        {
+          "id": "S05",
+          "t_start_s": 12.21,
+          "t_end_s": 15.66,
+          "source_long_plate": "P5:13_window_song",
+          "route": "reuse-long-plate",
+          "spoken": "Their descendants are all around you now. The pigeon on the pavement. The robin in the garden. The gull at the seaside.",
+          "flow_credits_expected": 0,
+          "use_s": 3.45
+        },
+        {
+          "id": "S06",
+          "t_start_s": 15.66,
+          "t_end_s": 19.11,
+          "source_long_plate": "P1:04_long_reign (2.78 s)",
+          "route": "reuse-long-plate",
+          "spoken": "Their descendants are all around you now. The pigeon on the pavement. The robin in the garden. The gull at the seaside. Every bird you have ever seen is a living dinosaur. Look up. They never really left.",
+          "flow_credits_expected": 0,
+          "use_s": 3.45
+        },
+        {
+          "id": "S07",
+          "t_start_s": 19.11,
+          "t_end_s": 22.56,
+          "source_long_plate": "P5:09_robin (4.00 s loop window)",
+          "route": "reuse-long-plate",
+          "spoken": "Every bird you have ever seen is a living dinosaur. Look up. They never really left.",
+          "flow_credits_expected": 0,
+          "use_s": 3.45
+        },
+        {
+          "id": "loop_tail",
+          "t_start_s": 22.56,
+          "t_end_s": 23.56,
+          "use_s": 1.0,
+          "role": "loop_tail",
+          "route": "reuse-long-plate",
+          "source_long_plate": "P5:09_robin",
+          "spoken": "",
+          "note": "Matched frame-0 plate after the last word. No banner, no video id, no code text."
+        }
+      ],
+      "loop_tail_s": 1.0,
+      "end_card": {
+        "text": null,
+        "video_id": null,
+        "code_text": null,
+        "full_film_banner": false
+      },
+      "full_film_banner": false,
+      "render": false,
+      "frame0_plate": "P5:09_robin"
+    }
+  ],
+  "rules": {
+    "job": "J0967",
+    "s01_ends_by_s": 2.85,
+    "body_cut_s": [
+      2.5,
+      3.8
+    ],
+    "loop_tail_s_max": 1.0,
+    "full_film_banner": false,
+    "end_card_video_id": null,
+    "end_card_code_text": null,
+    "render": false,
+    "generation": false,
+    "gbp": 0
+  }
+}

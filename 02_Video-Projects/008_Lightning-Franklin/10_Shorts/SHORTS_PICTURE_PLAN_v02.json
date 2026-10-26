@@ -1,0 +1,277 @@
+{
+  "film": "008",
+  "folder": "008_Lightning-Franklin",
+  "version": "v02",
+  "written": "2026-10-26",
+  "task": "J0967: stayed-to-watch build rules. Plans only, no render, no generation.",
+  "long_board_version": "v03 (J0240 PASS)",
+  "totals": {
+    "shorts_count": 2,
+    "rows": 16,
+    "new_mints": 0,
+    "reuse_long_plates": 8,
+    "flow_credits_try1": 0,
+    "flow_credits_expected": 0,
+    "vertex_try1_gbp": 0.0,
+    "vertex_expected_gbp": 0.0
+  },
+  "shorts": [
+    {
+      "id": "Short_A",
+      "stem": "hos_008_short_A_v02",
+      "youtube_title": "Did Lightning Hit Franklin's Kite?",
+      "promoted_long_title": "Why Did Franklin Fly a Kite in a Storm?",
+      "promoted_long_title_window_s": [
+        9.0,
+        14.0
+      ],
+      "vo_duration_s": 22.24,
+      "vo_words": 59,
+      "vo_check": "PASS",
+      "vo_sha256_mp3": "40ed4c4e2a1f2e58608cfe690bb8afd6e1d64c80eafb0a75f37d47648a7ba28e",
+      "hook_caption": "NEVER HIT IT",
+      "yellow_word": "NEVER",
+      "frame0_change_by_1s": "Silk kite already straining against dark storm cloud at frame 0; loose hemp threads on the string stand upright by 1.0 s.",
+      "teach_overlay": {
+        "kind": "WHEN",
+        "text": "PHILADELPHIA \u00b7 1752",
+        "t_start_s": 2.7,
+        "t_end_s": 6.2,
+        "band": "16:9 centre band (clear of 0\u20132 s hook and 9\u201314 s title)"
+      },
+      "flow_credits_try1": 0,
+      "flow_credits_expected": 0,
+      "vertex_expected_gbp": 0.0,
+      "generation_authorized": false,
+      "rows": [
+        {
+          "id": "S01",
+          "t_start_s": 0.0,
+          "t_end_s": 2.65,
+          "source_long_plate": "P1:01_kite_open",
+          "route": "reuse-long-plate",
+          "spoken": "Franklin's kite was never hit by lightning.",
+          "flow_credits_expected": 0,
+          "use_s": 2.65
+        },
+        {
+          "id": "S02",
+          "t_start_s": 2.65,
+          "t_end_s": 5.92,
+          "source_long_plate": "P3:13_key_ribbon",
+          "route": "reuse-long-plate",
+          "spoken": "In seventeen fifty-two he flew it into a storm cloud, holding a dry silk ribbon inside a shed.",
+          "flow_credits_expected": 0,
+          "use_s": 3.27
+        },
+        {
+          "id": "S03",
+          "t_start_s": 5.92,
+          "t_end_s": 9.18,
+          "source_long_plate": "P3:15_wet_dry",
+          "route": "reuse-long-plate",
+          "spoken": "In seventeen fifty-two he flew it into a storm cloud, holding a dry silk ribbon inside a shed. The loose threads of the twine stood up on end. He brought his knuckle to the key, and a spark jumped across.",
+          "flow_credits_expected": 0,
+          "use_s": 3.26
+        },
+        {
+          "id": "S04",
+          "t_start_s": 9.18,
+          "t_end_s": 12.45,
+          "source_long_plate": "P3:17_threads_rise",
+          "route": "reuse-long-plate",
+          "spoken": "The loose threads of the twine stood up on end. He brought his knuckle to the key, and a spark jumped across.",
+          "flow_credits_expected": 0,
+          "use_s": 3.27
+        },
+        {
+          "id": "S05",
+          "t_start_s": 12.45,
+          "t_end_s": 15.71,
+          "source_long_plate": "P3:19_knuckle_spark",
+          "route": "reuse-long-plate",
+          "spoken": "The loose threads of the twine stood up on end. He brought his knuckle to the key, and a spark jumped across.",
+          "flow_credits_expected": 0,
+          "use_s": 3.26
+        },
+        {
+          "id": "S06",
+          "t_start_s": 15.71,
+          "t_end_s": 18.97,
+          "source_long_plate": "P4:13_richmann_warn",
+          "route": "reuse-long-plate",
+          "spoken": "The loose threads of the twine stood up on end. He brought his knuckle to the key, and a spark jumped across. If lightning had struck the kite, he would almost certainly have died.",
+          "flow_credits_expected": 0,
+          "use_s": 3.26
+        },
+        {
+          "id": "S07",
+          "t_start_s": 18.97,
+          "t_end_s": 22.24,
+          "source_long_plate": "P1:01_kite_open",
+          "route": "reuse-long-plate",
+          "spoken": "If lightning had struck the kite, he would almost certainly have died.",
+          "flow_credits_expected": 0,
+          "use_s": 3.27
+        },
+        {
+          "id": "loop_tail",
+          "t_start_s": 22.24,
+          "t_end_s": 23.24,
+          "use_s": 1.0,
+          "role": "loop_tail",
+          "route": "reuse-long-plate",
+          "source_long_plate": "P1:01_kite_open",
+          "spoken": "",
+          "note": "Matched frame-0 plate after the last word. No banner, no video id, no code text."
+        }
+      ],
+      "loop_tail_s": 1.0,
+      "end_card": {
+        "text": null,
+        "video_id": null,
+        "code_text": null,
+        "full_film_banner": false
+      },
+      "full_film_banner": false,
+      "render": false,
+      "frame0_plate": "P1:01_kite_open"
+    },
+    {
+      "id": "Short_C",
+      "stem": "hos_008_short_C_v02",
+      "youtube_title": "How Does a Lightning Rod Work?",
+      "promoted_long_title": "Why Did Franklin Fly a Kite in a Storm?",
+      "promoted_long_title_window_s": [
+        9.0,
+        14.0
+      ],
+      "vo_duration_s": 24.48,
+      "vo_words": 62,
+      "vo_check": "PASS",
+      "vo_sha256_mp3": "ba8ffec9c234c68961e5d7e3811d8104feb7d5485ab9d567c10ff91604803d08",
+      "hook_caption": "ONE THIN ROD",
+      "yellow_word": "ROD",
+      "frame0_change_by_1s": "Pointed iron rod on a steep roof under a dark cloud at frame 0; rain sweeps across the slates by 1.0 s.",
+      "teach_overlay": {
+        "kind": "DATA",
+        "text": "20+ STRIKES A YEAR",
+        "t_start_s": 20.6,
+        "t_end_s": 24.0,
+        "band": "16:9 centre band (clear of 0\u20132 s hook and 9\u201314 s title)"
+      },
+      "flow_credits_try1": 0,
+      "flow_credits_expected": 0,
+      "vertex_expected_gbp": 0.0,
+      "generation_authorized": false,
+      "rows": [
+        {
+          "id": "S01",
+          "t_start_s": 0.0,
+          "t_end_s": 2.6,
+          "source_long_plate": "P5:06_rod_fitting",
+          "route": "reuse-long-plate",
+          "spoken": "That thin metal rod on top of tall buildings was Benjamin Franklin's idea.",
+          "flow_credits_expected": 0,
+          "use_s": 2.6
+        },
+        {
+          "id": "S02",
+          "t_start_s": 2.6,
+          "t_end_s": 6.25,
+          "source_long_plate": "P5:06_rod_fitting",
+          "route": "reuse-long-plate",
+          "spoken": "That thin metal rod on top of tall buildings was Benjamin Franklin's idea. Lightning takes the easiest path to the ground. A wooden roof is a terrible path, so it bursts into flame. A metal rod is an easy one.",
+          "flow_credits_expected": 0,
+          "use_s": 3.65
+        },
+        {
+          "id": "S03",
+          "t_start_s": 6.25,
+          "t_end_s": 9.89,
+          "source_long_plate": "P5:08_looking_path",
+          "route": "reuse-long-plate",
+          "spoken": "Lightning takes the easiest path to the ground. A wooden roof is a terrible path, so it bursts into flame. A metal rod is an easy one.",
+          "flow_credits_expected": 0,
+          "use_s": 3.64
+        },
+        {
+          "id": "S04",
+          "t_start_s": 9.89,
+          "t_end_s": 13.54,
+          "source_long_plate": "P5:09_wood_vs_metal",
+          "route": "reuse-long-plate",
+          "spoken": "Lightning takes the easiest path to the ground. A wooden roof is a terrible path, so it bursts into flame. A metal rod is an easy one.",
+          "flow_credits_expected": 0,
+          "use_s": 3.65
+        },
+        {
+          "id": "S05",
+          "t_start_s": 13.54,
+          "t_end_s": 17.19,
+          "source_long_plate": "P5:10_metal_easy",
+          "route": "reuse-long-plate",
+          "spoken": "Lightning takes the easiest path to the ground. A wooden roof is a terrible path, so it bursts into flame. A metal rod is an easy one. The lightning runs down the rod, round the building, and into the earth.",
+          "flow_credits_expected": 0,
+          "use_s": 3.65
+        },
+        {
+          "id": "S06",
+          "t_start_s": 17.19,
+          "t_end_s": 20.83,
+          "source_long_plate": "P5:11_safe_path",
+          "route": "reuse-long-plate",
+          "spoken": "The lightning runs down the rod, round the building, and into the earth. Some towers are struck over twenty times a year.",
+          "flow_credits_expected": 0,
+          "use_s": 3.64
+        },
+        {
+          "id": "S07",
+          "t_start_s": 20.83,
+          "t_end_s": 24.48,
+          "source_long_plate": "P5:06_rod_fitting",
+          "route": "reuse-long-plate",
+          "spoken": "Some towers are struck over twenty times a year.",
+          "flow_credits_expected": 0,
+          "use_s": 3.65
+        },
+        {
+          "id": "loop_tail",
+          "t_start_s": 24.48,
+          "t_end_s": 25.48,
+          "use_s": 1.0,
+          "role": "loop_tail",
+          "route": "reuse-long-plate",
+          "source_long_plate": "P5:06_rod_fitting",
+          "spoken": "",
+          "note": "Matched frame-0 plate after the last word. No banner, no video id, no code text."
+        }
+      ],
+      "loop_tail_s": 1.0,
+      "end_card": {
+        "text": null,
+        "video_id": null,
+        "code_text": null,
+        "full_film_banner": false
+      },
+      "full_film_banner": false,
+      "render": false,
+      "frame0_plate": "P5:06_rod_fitting"
+    }
+  ],
+  "rules": {
+    "job": "J0967",
+    "s01_ends_by_s": 2.85,
+    "body_cut_s": [
+      2.5,
+      3.8
+    ],
+    "loop_tail_s_max": 1.0,
+    "full_film_banner": false,
+    "end_card_video_id": null,
+    "end_card_code_text": null,
+    "render": false,
+    "generation": false,
+    "gbp": 0
+  }
+}

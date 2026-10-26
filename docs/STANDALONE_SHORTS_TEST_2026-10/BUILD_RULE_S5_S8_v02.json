@@ -1,0 +1,412 @@
+{
+  "part": "S5-S8",
+  "job": "J0967",
+  "s01_ends_by_s": 2.85,
+  "body_cut_s": [
+    2.5,
+    3.8
+  ],
+  "loop_tail_s_max": 1.0,
+  "full_film_banner": false,
+  "end_card_video_id": null,
+  "end_card_code_text": null,
+  "render": false,
+  "generation": false,
+  "gbp": 0,
+  "shorts": [
+    {
+      "id": "s5_penzias_pigeons",
+      "status": "unbuilt",
+      "why": "Still horn plate. No moving Penzias plate in the checkout. Stay unbuilt.",
+      "vo_trim": {
+        "drop": "In 1964,",
+        "remove_s": 1.48,
+        "claim_starts_s": 0.06
+      },
+      "vo_duration_s": 21.18,
+      "first_cut_s": 2.6,
+      "rows": [
+        {
+          "id": "S01",
+          "t_start_s": 0.0,
+          "t_end_s": 2.6,
+          "source_long_plate": "UNBUILT",
+          "route": "reuse-long-plate",
+          "spoken": "the afterglow of the Big Bang was blamed",
+          "flow_credits_expected": 0,
+          "use_s": 2.6
+        },
+        {
+          "id": "S02",
+          "t_start_s": 2.6,
+          "t_end_s": 6.32,
+          "source_long_plate": "UNBUILT",
+          "route": "reuse-long-plate",
+          "spoken": "on pigeons. Arno Penzias and Robert",
+          "flow_credits_expected": 0,
+          "use_s": 3.72
+        },
+        {
+          "id": "S03",
+          "t_start_s": 6.32,
+          "t_end_s": 10.03,
+          "source_long_plate": "UNBUILT",
+          "route": "reuse-long-plate",
+          "spoken": "Wilson picked up a strange noise in their giant antenna.",
+          "flow_credits_expected": 0,
+          "use_s": 3.71
+        },
+        {
+          "id": "S04",
+          "t_start_s": 10.03,
+          "t_end_s": 13.75,
+          "source_long_plate": "UNBUILT",
+          "route": "reuse-long-plate",
+          "spoken": "Pigeons were nesting inside, leaving droppings.",
+          "flow_credits_expected": 0,
+          "use_s": 3.72
+        },
+        {
+          "id": "S05",
+          "t_start_s": 13.75,
+          "t_end_s": 17.46,
+          "source_long_plate": "UNBUILT",
+          "route": "reuse-long-plate",
+          "spoken": "But the noise wasn't the pigeons. It came from every direction",
+          "flow_credits_expected": 0,
+          "use_s": 3.71
+        },
+        {
+          "id": "S06",
+          "t_start_s": 17.46,
+          "t_end_s": 21.18,
+          "source_long_plate": "UNBUILT",
+          "route": "reuse-long-plate",
+          "spoken": "in the sky, the afterglow of the Big Bang",
+          "flow_credits_expected": 0,
+          "use_s": 3.72
+        },
+        {
+          "id": "loop_tail",
+          "t_start_s": 21.18,
+          "t_end_s": 22.18,
+          "use_s": 1.0,
+          "role": "loop_tail",
+          "source_long_plate": "UNBUILT",
+          "spoken": "",
+          "note": "Frame-0 plate, once a moving plate exists. No banner."
+        }
+      ],
+      "loop_tail_s": 1.0,
+      "end_card": {
+        "text": null,
+        "video_id": null,
+        "code_text": null,
+        "full_film_banner": false
+      },
+      "full_film_banner": false,
+      "render": false,
+      "generation": false,
+      "frame0": "moving plate or unbuilt"
+    },
+    {
+      "id": "s6_fleming_mould",
+      "status": "unbuilt",
+      "why": "No petri or microbe moving plate on disk in 001. Stay unbuilt.",
+      "vo_trim": {
+        "drop": "In 1928,",
+        "remove_s": 1.58,
+        "claim_starts_s": 0.06
+      },
+      "vo_duration_s": 21.16,
+      "first_cut_s": 2.6,
+      "rows": [
+        {
+          "id": "S01",
+          "t_start_s": 0.0,
+          "t_end_s": 2.6,
+          "source_long_plate": "UNBUILT",
+          "route": "reuse-long-plate",
+          "spoken": "a moldy dish gave us penicillin.",
+          "flow_credits_expected": 0,
+          "use_s": 2.6
+        },
+        {
+          "id": "S02",
+          "t_start_s": 2.6,
+          "t_end_s": 6.31,
+          "source_long_plate": "UNBUILT",
+          "route": "reuse-long-plate",
+          "spoken": "Alexander Fleming came back from holiday to old dishes",
+          "flow_credits_expected": 0,
+          "use_s": 3.71
+        },
+        {
+          "id": "S03",
+          "t_start_s": 6.31,
+          "t_end_s": 10.02,
+          "source_long_plate": "UNBUILT",
+          "route": "reuse-long-plate",
+          "spoken": "of bacteria. On one, a fuzzy mold had landed.",
+          "flow_credits_expected": 0,
+          "use_s": 3.71
+        },
+        {
+          "id": "S04",
+          "t_start_s": 10.02,
+          "t_end_s": 13.74,
+          "source_long_plate": "UNBUILT",
+          "route": "reuse-long-plate",
+          "spoken": "All around it, the bacteria were dead.",
+          "flow_credits_expected": 0,
+          "use_s": 3.72
+        },
+        {
+          "id": "S05",
+          "t_start_s": 13.74,
+          "t_end_s": 17.45,
+          "source_long_plate": "UNBUILT",
+          "route": "reuse-long-plate",
+          "spoken": "He called it mold juice, penicillin. Others",
+          "flow_credits_expected": 0,
+          "use_s": 3.71
+        },
+        {
+          "id": "S06",
+          "t_start_s": 17.45,
+          "t_end_s": 21.16,
+          "source_long_plate": "UNBUILT",
+          "route": "reuse-long-plate",
+          "spoken": "later turned it into a medicine that has saved millions",
+          "flow_credits_expected": 0,
+          "use_s": 3.71
+        },
+        {
+          "id": "loop_tail",
+          "t_start_s": 21.16,
+          "t_end_s": 22.16,
+          "use_s": 1.0,
+          "role": "loop_tail",
+          "source_long_plate": "UNBUILT",
+          "spoken": "",
+          "note": "Frame-0 plate, once a moving plate exists. No banner."
+        }
+      ],
+      "loop_tail_s": 1.0,
+      "end_card": {
+        "text": null,
+        "video_id": null,
+        "code_text": null,
+        "full_film_banner": false
+      },
+      "full_film_banner": false,
+      "render": false,
+      "generation": false,
+      "frame0": "moving plate or unbuilt"
+    },
+    {
+      "id": "s7_priestley_mint",
+      "status": "unbuilt",
+      "why": "Intended open is 006 part03 10_mint_jar_t1 and 11_candle_tall_t1. Those files are not in this checkout. Stay unbuilt. No generation.",
+      "vo_trim": {
+        "drop": "In 1771,",
+        "remove_s": 1.82,
+        "claim_starts_s": 0.06
+      },
+      "vo_duration_s": 19.32,
+      "first_cut_s": 2.6,
+      "rows": [
+        {
+          "id": "S01",
+          "t_start_s": 0.0,
+          "t_end_s": 2.6,
+          "source_long_plate": "UNBUILT",
+          "route": "reuse-long-plate",
+          "spoken": "a sprig of mint brought dead air back to",
+          "flow_credits_expected": 0,
+          "use_s": 2.6
+        },
+        {
+          "id": "S02",
+          "t_start_s": 2.6,
+          "t_end_s": 5.94,
+          "source_long_plate": "UNBUILT",
+          "route": "reuse-long-plate",
+          "spoken": "life. Joseph Priestley let a candle burn",
+          "flow_credits_expected": 0,
+          "use_s": 3.34
+        },
+        {
+          "id": "S03",
+          "t_start_s": 5.94,
+          "t_end_s": 9.29,
+          "source_long_plate": "UNBUILT",
+          "route": "reuse-long-plate",
+          "spoken": "out in a closed jar. The air was spent.",
+          "flow_credits_expected": 0,
+          "use_s": 3.35
+        },
+        {
+          "id": "S04",
+          "t_start_s": 9.29,
+          "t_end_s": 12.63,
+          "source_long_plate": "UNBUILT",
+          "route": "reuse-long-plate",
+          "spoken": "He slipped in a sprig of mint and waited 10 days,",
+          "flow_credits_expected": 0,
+          "use_s": 3.34
+        },
+        {
+          "id": "S05",
+          "t_start_s": 12.63,
+          "t_end_s": 15.98,
+          "source_long_plate": "UNBUILT",
+          "route": "reuse-long-plate",
+          "spoken": "then a fresh candle burned perfectly well.",
+          "flow_credits_expected": 0,
+          "use_s": 3.35
+        },
+        {
+          "id": "S06",
+          "t_start_s": 15.98,
+          "t_end_s": 19.32,
+          "source_long_plate": "UNBUILT",
+          "route": "reuse-long-plate",
+          "spoken": "The plant had remade the air",
+          "flow_credits_expected": 0,
+          "use_s": 3.34
+        },
+        {
+          "id": "loop_tail",
+          "t_start_s": 19.32,
+          "t_end_s": 20.32,
+          "use_s": 1.0,
+          "role": "loop_tail",
+          "source_long_plate": "UNBUILT",
+          "spoken": "",
+          "note": "Frame-0 plate, once a moving plate exists. No banner."
+        }
+      ],
+      "loop_tail_s": 1.0,
+      "end_card": {
+        "text": null,
+        "video_id": null,
+        "code_text": null,
+        "full_film_banner": false
+      },
+      "full_film_banner": false,
+      "render": false,
+      "generation": false,
+      "frame0": "moving plate or unbuilt",
+      "intended_moving_plates": [
+        "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part03/raw/v01/10_mint_jar_t1.mp4",
+        "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part03/raw/v01/11_candle_tall_t1.mp4"
+      ],
+      "intended_plates_on_disk": false
+    },
+    {
+      "id": "s8_hales_blood",
+      "status": "unbuilt",
+      "why": "Still tube plate. No moving Hales plate on disk in 005. Stay unbuilt.",
+      "vo_trim": {
+        "onset_to_s": 0.05,
+        "shift_s": -0.09
+      },
+      "vo_duration_s": 22.69,
+      "first_cut_s": 2.8,
+      "rows": [
+        {
+          "id": "S01",
+          "t_start_s": 0.0,
+          "t_end_s": 2.8,
+          "source_long_plate": "UNBUILT",
+          "route": "reuse-long-plate",
+          "spoken": "A horse's blood climbed eight feet up a",
+          "flow_credits_expected": 0,
+          "use_s": 2.8
+        },
+        {
+          "id": "S02",
+          "t_start_s": 2.8,
+          "t_end_s": 6.12,
+          "source_long_plate": "UNBUILT",
+          "route": "reuse-long-plate",
+          "spoken": "glass tube. Stephen Hales, a vicar,",
+          "flow_credits_expected": 0,
+          "use_s": 3.32
+        },
+        {
+          "id": "S03",
+          "t_start_s": 6.12,
+          "t_end_s": 9.43,
+          "source_long_plate": "UNBUILT",
+          "route": "reuse-long-plate",
+          "spoken": "wanted to measure the push of a heartbeat.",
+          "flow_credits_expected": 0,
+          "use_s": 3.31
+        },
+        {
+          "id": "S04",
+          "t_start_s": 9.43,
+          "t_end_s": 12.75,
+          "source_long_plate": "UNBUILT",
+          "route": "reuse-long-plate",
+          "spoken": "He fixed a tall tube into a mare's artery.",
+          "flow_credits_expected": 0,
+          "use_s": 3.32
+        },
+        {
+          "id": "S05",
+          "t_start_s": 12.75,
+          "t_end_s": 16.06,
+          "source_long_plate": "UNBUILT",
+          "route": "reuse-long-plate",
+          "spoken": "The blood rose taller than a man,",
+          "flow_credits_expected": 0,
+          "use_s": 3.31
+        },
+        {
+          "id": "S06",
+          "t_start_s": 16.06,
+          "t_end_s": 19.38,
+          "source_long_plate": "UNBUILT",
+          "route": "reuse-long-plate",
+          "spoken": "bobbing with every beat. In 1733,",
+          "flow_credits_expected": 0,
+          "use_s": 3.32
+        },
+        {
+          "id": "S07",
+          "t_start_s": 19.38,
+          "t_end_s": 22.69,
+          "source_long_plate": "UNBUILT",
+          "route": "reuse-long-plate",
+          "spoken": "he published the first blood pressure reading",
+          "flow_credits_expected": 0,
+          "use_s": 3.31
+        },
+        {
+          "id": "loop_tail",
+          "t_start_s": 22.69,
+          "t_end_s": 23.69,
+          "use_s": 1.0,
+          "role": "loop_tail",
+          "source_long_plate": "UNBUILT",
+          "spoken": "",
+          "note": "Frame-0 plate, once a moving plate exists. No banner."
+        }
+      ],
+      "loop_tail_s": 1.0,
+      "end_card": {
+        "text": null,
+        "video_id": null,
+        "code_text": null,
+        "full_film_banner": false
+      },
+      "full_film_banner": false,
+      "render": false,
+      "generation": false,
+      "frame0": "moving plate or unbuilt"
+    }
+  ]
+}

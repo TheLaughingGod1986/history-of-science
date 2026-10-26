@@ -404,6 +404,9 @@ def main() -> None:
     for item in SHORTS:
         if ns.only and not any(item["id"].startswith(o) for o in ns.only):
             continue
+        if item["id"].startswith(("s5_", "s6_", "s7_", "s8_")) and "--rebuild-v01" not in sys.argv:
+            print(f"J0967: {item['id']} stays unbuilt (still open, no generation). See BUILD_RULE_S5_S8_v02.json")
+            continue
         rec = build(item)
         r = subprocess.run([sys.executable, str(GATE), "check", str(REPO / rec["file"]), "--air-date",
                             item["air_date"]], capture_output=True, text=True)

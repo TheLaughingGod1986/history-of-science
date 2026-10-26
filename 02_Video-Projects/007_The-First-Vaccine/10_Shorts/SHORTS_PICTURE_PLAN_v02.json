@@ -1,0 +1,287 @@
+{
+  "film": "007",
+  "folder": "007_The-First-Vaccine",
+  "version": "v02",
+  "written": "2026-10-26",
+  "task": "J0967: stayed-to-watch build rules. Plans only, no render, no generation.",
+  "long_board_version": "v02 (J0343 PASS)",
+  "totals": {
+    "shorts_count": 2,
+    "rows": 17,
+    "new_mints": 0,
+    "reuse_long_plates": 10,
+    "flow_credits_try1": 0,
+    "flow_credits_expected": 0,
+    "vertex_try1_gbp": 0.0,
+    "vertex_expected_gbp": 0.0
+  },
+  "shorts": [
+    {
+      "id": "Short_B",
+      "stem": "hos_007_short_B_v02",
+      "youtube_title": "Who Invented the First Vaccine?",
+      "promoted_long_title": "Why Vaccines Are Named After a Cow",
+      "promoted_long_title_window_s": [
+        9.0,
+        14.0
+      ],
+      "vo_duration_s": 25.52,
+      "vo_words": 59,
+      "vo_check": "PASS",
+      "vo_sha256_mp3": "f6d87c757cda1dd8de5254a4fac88c6fcf3fbba7e7d2ea189322f91396579625",
+      "hook_caption": "THEY NEVER CAUGHT IT",
+      "yellow_word": "CAUGHT IT",
+      "frame0_change_by_1s": "Milkmaid already walking past shuttered cottage at frame 0; wooden shutter behind her swings closed by 1.0 s.",
+      "teach_overlay": {
+        "kind": "WHO",
+        "text": "Edward Jenner (1749\u20131823) \u2014 country doctor",
+        "t_start_s": 16.2,
+        "t_end_s": 20.0,
+        "band": "16:9 centre band (clear of 0\u20132 s hook and 9\u201314 s title)"
+      },
+      "flow_credits_try1": 0,
+      "flow_credits_expected": 0,
+      "vertex_expected_gbp": 0.0,
+      "generation_authorized": false,
+      "rows": [
+        {
+          "id": "S01",
+          "t_start_s": 0.0,
+          "t_end_s": 2.5,
+          "source_long_plate": "P2:03_market_walk",
+          "route": "reuse-long-plate",
+          "spoken": "The first vaccine began with milkmaids, who never caught smallpox.",
+          "flow_credits_expected": 0,
+          "use_s": 2.5
+        },
+        {
+          "id": "S02",
+          "t_start_s": 2.5,
+          "t_end_s": 5.79,
+          "source_long_plate": "P2:02_healed_hand",
+          "route": "reuse-long-plate",
+          "spoken": "The first vaccine began with milkmaids, who never caught smallpox. They caught cowpox from the cows instead, a few sore spots and nothing more.",
+          "flow_credits_expected": 0,
+          "use_s": 3.29
+        },
+        {
+          "id": "S03",
+          "t_start_s": 5.79,
+          "t_end_s": 9.08,
+          "source_long_plate": "P2:01_milking_dawn",
+          "route": "reuse-long-plate",
+          "spoken": "They caught cowpox from the cows instead, a few sore spots and nothing more.",
+          "flow_credits_expected": 0,
+          "use_s": 3.29
+        },
+        {
+          "id": "S04",
+          "t_start_s": 9.08,
+          "t_end_s": 12.37,
+          "source_long_plate": "P1:05_shuttered_street",
+          "route": "reuse-long-plate",
+          "spoken": "They caught cowpox from the cows instead, a few sore spots and nothing more. And farmers swore that anyone who'd had it was safe from smallpox for life.",
+          "flow_credits_expected": 0,
+          "use_s": 3.29
+        },
+        {
+          "id": "S05",
+          "t_start_s": 12.37,
+          "t_end_s": 15.65,
+          "source_long_plate": "P1:05_shuttered_street",
+          "route": "reuse-long-plate",
+          "spoken": "And farmers swore that anyone who'd had it was safe from smallpox for life.",
+          "flow_credits_expected": 0,
+          "use_s": 3.28
+        },
+        {
+          "id": "S06",
+          "t_start_s": 15.65,
+          "t_end_s": 18.94,
+          "source_long_plate": "P2:08_jenner_window",
+          "route": "reuse-long-plate",
+          "spoken": "And farmers swore that anyone who'd had it was safe from smallpox for life. One country doctor, Edward Jenner, took the rumour seriously, and tested it.",
+          "flow_credits_expected": 0,
+          "use_s": 3.29
+        },
+        {
+          "id": "S07",
+          "t_start_s": 18.94,
+          "t_end_s": 22.23,
+          "source_long_plate": "P2:08_jenner_window",
+          "route": "reuse-long-plate",
+          "spoken": "One country doctor, Edward Jenner, took the rumour seriously, and tested it. He was right, and it became the first vaccine.",
+          "flow_credits_expected": 0,
+          "use_s": 3.29
+        },
+        {
+          "id": "S08",
+          "t_start_s": 22.23,
+          "t_end_s": 25.52,
+          "source_long_plate": "P2:03_market_walk",
+          "route": "reuse-long-plate",
+          "spoken": "He was right, and it became the first vaccine.",
+          "flow_credits_expected": 0,
+          "use_s": 3.29
+        },
+        {
+          "id": "loop_tail",
+          "t_start_s": 25.52,
+          "t_end_s": 26.52,
+          "use_s": 1.0,
+          "role": "loop_tail",
+          "route": "reuse-long-plate",
+          "source_long_plate": "P2:03_market_walk",
+          "spoken": "",
+          "note": "Matched frame-0 plate after the last word. No banner, no video id, no code text."
+        }
+      ],
+      "loop_tail_s": 1.0,
+      "end_card": {
+        "text": null,
+        "video_id": null,
+        "code_text": null,
+        "full_film_banner": false
+      },
+      "full_film_banner": false,
+      "render": false,
+      "frame0_plate": "P2:03_market_walk"
+    },
+    {
+      "id": "Short_C",
+      "stem": "hos_007_short_C_v02",
+      "youtube_title": "How Was Smallpox Eradicated?",
+      "promoted_long_title": "Why Vaccines Are Named After a Cow",
+      "promoted_long_title_window_s": [
+        9.0,
+        14.0
+      ],
+      "vo_duration_s": 24.8,
+      "vo_words": 57,
+      "vo_check": "PASS",
+      "vo_sha256_mp3": "8e0df68d5e82625ace5e1b41ee510649acf2101df8a30802e58ada5414c680e9",
+      "hook_caption": "GONE FOR GOOD",
+      "yellow_word": "GOOD",
+      "frame0_change_by_1s": "Turning globe with small lights going out at frame 0; the last light on one continent winks out by 1.0 s.",
+      "teach_overlay": {
+        "kind": "WHEN",
+        "text": "1980 \u00b7 DECLARED GONE",
+        "t_start_s": 18.6,
+        "t_end_s": 22.0,
+        "band": "16:9 centre band (clear of 0\u20132 s hook and 9\u201314 s title)"
+      },
+      "flow_credits_try1": 0,
+      "flow_credits_expected": 0,
+      "vertex_expected_gbp": 0.0,
+      "generation_authorized": false,
+      "rows": [
+        {
+          "id": "S01",
+          "t_start_s": 0.0,
+          "t_end_s": 2.5,
+          "source_long_plate": "P5:02_globe_lights",
+          "route": "reuse-long-plate",
+          "spoken": "Smallpox is gone. Forever. For centuries it killed about three in every ten people it caught.",
+          "flow_credits_expected": 0,
+          "use_s": 2.5
+        },
+        {
+          "id": "S02",
+          "t_start_s": 2.5,
+          "t_end_s": 6.22,
+          "source_long_plate": "P1:07b_three_in_ten",
+          "route": "reuse-long-plate",
+          "spoken": "For centuries it killed about three in every ten people it caught.",
+          "flow_credits_expected": 0,
+          "use_s": 3.72
+        },
+        {
+          "id": "S03",
+          "t_start_s": 6.22,
+          "t_end_s": 9.93,
+          "source_long_plate": "P3:08_boy_garden",
+          "route": "reuse-long-plate",
+          "spoken": "For centuries it killed about three in every ten people it caught. Then, in 1796, one test showed that cowpox could protect you from it.",
+          "flow_credits_expected": 0,
+          "use_s": 3.71
+        },
+        {
+          "id": "S04",
+          "t_start_s": 9.93,
+          "t_end_s": 13.65,
+          "source_long_plate": "P3:08_boy_garden",
+          "route": "reuse-long-plate",
+          "spoken": "Then, in 1796, one test showed that cowpox could protect you from it. Health workers spread that idea to every country, until smallpox had nowhere left to hide.",
+          "flow_credits_expected": 0,
+          "use_s": 3.72
+        },
+        {
+          "id": "S05",
+          "t_start_s": 13.65,
+          "t_end_s": 17.37,
+          "source_long_plate": "P5:01_world_campaign",
+          "route": "reuse-long-plate",
+          "spoken": "Health workers spread that idea to every country, until smallpox had nowhere left to hide.",
+          "flow_credits_expected": 0,
+          "use_s": 3.72
+        },
+        {
+          "id": "S06",
+          "t_start_s": 17.37,
+          "t_end_s": 21.08,
+          "source_long_plate": "P5:03_who_1980",
+          "route": "reuse-long-plate",
+          "spoken": "Health workers spread that idea to every country, until smallpox had nowhere left to hide. In 1980, it was declared gone. The first disease humans ever wiped out.",
+          "flow_credits_expected": 0,
+          "use_s": 3.71
+        },
+        {
+          "id": "S07",
+          "t_start_s": 21.08,
+          "t_end_s": 24.8,
+          "source_long_plate": "P5:02_globe_lights",
+          "route": "reuse-long-plate",
+          "spoken": "In 1980, it was declared gone. The first disease humans ever wiped out.",
+          "flow_credits_expected": 0,
+          "use_s": 3.72
+        },
+        {
+          "id": "loop_tail",
+          "t_start_s": 24.8,
+          "t_end_s": 25.8,
+          "use_s": 1.0,
+          "role": "loop_tail",
+          "route": "reuse-long-plate",
+          "source_long_plate": "P5:02_globe_lights",
+          "spoken": "",
+          "note": "Matched frame-0 plate after the last word. No banner, no video id, no code text."
+        }
+      ],
+      "loop_tail_s": 1.0,
+      "end_card": {
+        "text": null,
+        "video_id": null,
+        "code_text": null,
+        "full_film_banner": false
+      },
+      "full_film_banner": false,
+      "render": false,
+      "frame0_plate": "P5:02_globe_lights"
+    }
+  ],
+  "rules": {
+    "job": "J0967",
+    "s01_ends_by_s": 2.85,
+    "body_cut_s": [
+      2.5,
+      3.8
+    ],
+    "loop_tail_s_max": 1.0,
+    "full_film_banner": false,
+    "end_card_video_id": null,
+    "end_card_code_text": null,
+    "render": false,
+    "generation": false,
+    "gbp": 0
+  }
+}

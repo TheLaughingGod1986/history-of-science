@@ -1,0 +1,282 @@
+{
+  "film": "009",
+  "folder": "009_The-Falling-Moon-Gravity",
+  "version": "v02",
+  "written": "2026-10-26",
+  "task": "J0967: stayed-to-watch build rules. Plans only, no render, no generation.",
+  "long_board_version": "v04 (J0336 PASS)",
+  "totals": {
+    "shorts_count": 2,
+    "rows": 16,
+    "new_mints": 0,
+    "reuse_long_plates": 10,
+    "flow_credits_try1": 0,
+    "flow_credits_expected": 0,
+    "vertex_try1_gbp": 0.0,
+    "vertex_expected_gbp": 0.0
+  },
+  "shorts": [
+    {
+      "id": "Short_A",
+      "stem": "hos_009_short_A_v02",
+      "youtube_title": "Why Doesn't the Moon Fall to Earth?",
+      "promoted_long_title": "Why Doesn't the Moon Fall to Earth?",
+      "promoted_long_title_window_s": [
+        9.0,
+        14.0
+      ],
+      "vo_duration_s": 24.32,
+      "vo_words": 59,
+      "vo_check": "REVIEW",
+      "vo_sha256_mp3": "c2fd407d3aafbe57030b29b213ed128ee4887b785272a2192b4c0809796a1ce6",
+      "hook_caption": "ALWAYS FALLING",
+      "yellow_word": "FALLING",
+      "frame0_change_by_1s": "Moon already gliding along its curved path above Earth's limb at frame 0; dotted tangent and drop arrows ink in by 1.0 s.",
+      "teach_overlay": {
+        "kind": "DATA",
+        "text": "ABOUT 1 KM A SECOND",
+        "t_start_s": 3.0,
+        "t_end_s": 6.8,
+        "band": "16:9 centre band (clear of 0\u20132 s hook and 9\u201314 s title)"
+      },
+      "flow_credits_try1": 0,
+      "flow_credits_expected": 0,
+      "vertex_expected_gbp": 0.0,
+      "generation_authorized": false,
+      "rows": [
+        {
+          "id": "S01",
+          "t_start_s": 0.0,
+          "t_end_s": 2.85,
+          "source_long_plate": "P1:01_moon_falling",
+          "route": "reuse-long-plate",
+          "spoken": "The Moon is falling towards the Earth right now.",
+          "flow_credits_expected": 0,
+          "use_s": 2.85
+        },
+        {
+          "id": "S02",
+          "t_start_s": 2.85,
+          "t_end_s": 6.43,
+          "source_long_plate": "P3:08_km_a_second",
+          "route": "reuse-long-plate",
+          "spoken": "Every second, it moves sideways about a kilometre, and drops a tiny bit towards us.",
+          "flow_credits_expected": 0,
+          "use_s": 3.58
+        },
+        {
+          "id": "S03",
+          "t_start_s": 6.43,
+          "t_end_s": 10.01,
+          "source_long_plate": "P3:08_km_a_second",
+          "route": "reuse-long-plate",
+          "spoken": "Every second, it moves sideways about a kilometre, and drops a tiny bit towards us. But the Earth curves away beneath it, so it keeps on missing.",
+          "flow_credits_expected": 0,
+          "use_s": 3.58
+        },
+        {
+          "id": "S04",
+          "t_start_s": 10.01,
+          "t_end_s": 13.58,
+          "source_long_plate": "P3:05_shot_orbit",
+          "route": "reuse-long-plate",
+          "spoken": "But the Earth curves away beneath it, so it keeps on missing.",
+          "flow_credits_expected": 0,
+          "use_s": 3.57
+        },
+        {
+          "id": "S05",
+          "t_start_s": 13.58,
+          "t_end_s": 17.16,
+          "source_long_plate": "P2:08_the_apple",
+          "route": "reuse-long-plate",
+          "spoken": "But the Earth curves away beneath it, so it keeps on missing. Isaac Newton worked this out, more than three hundred years ago.",
+          "flow_credits_expected": 0,
+          "use_s": 3.58
+        },
+        {
+          "id": "S06",
+          "t_start_s": 17.16,
+          "t_end_s": 20.74,
+          "source_long_plate": "P3:06_orbit_teach",
+          "route": "reuse-long-plate",
+          "spoken": "Isaac Newton worked this out, more than three hundred years ago. An orbit isn't floating at all. It's falling, and missing, for ever.",
+          "flow_credits_expected": 0,
+          "use_s": 3.58
+        },
+        {
+          "id": "S07",
+          "t_start_s": 20.74,
+          "t_end_s": 24.32,
+          "source_long_plate": "P1:01_moon_falling",
+          "route": "reuse-long-plate",
+          "spoken": "An orbit isn't floating at all. It's falling, and missing, for ever.",
+          "flow_credits_expected": 0,
+          "use_s": 3.58
+        },
+        {
+          "id": "loop_tail",
+          "t_start_s": 24.32,
+          "t_end_s": 25.32,
+          "use_s": 1.0,
+          "role": "loop_tail",
+          "route": "reuse-long-plate",
+          "source_long_plate": "P1:01_moon_falling",
+          "spoken": "",
+          "note": "Matched frame-0 plate after the last word. No banner, no video id, no code text."
+        }
+      ],
+      "loop_tail_s": 1.0,
+      "end_card": {
+        "text": null,
+        "video_id": null,
+        "code_text": null,
+        "full_film_banner": false
+      },
+      "full_film_banner": false,
+      "render": false,
+      "frame0_plate": "P1:01_moon_falling"
+    },
+    {
+      "id": "Short_B",
+      "stem": "hos_009_short_B_v02",
+      "youtube_title": "How Did Newton Discover Gravity?",
+      "promoted_long_title": "Why Doesn't the Moon Fall to Earth?",
+      "promoted_long_title_window_s": [
+        8.69,
+        13.69
+      ],
+      "vo_duration_s": 23.13,
+      "vo_words": 59,
+      "vo_check": "REVIEW",
+      "vo_sha256_mp3": "3ae503684c148455d4364c9955ce88dc70caa74df110daf700cd5fa199e7bccd",
+      "hook_caption": "1 MINUTE = 1 SECOND",
+      "yellow_word": "1 SECOND",
+      "frame0_change_by_1s": "Apple and Moon split comparison already dropping at frame 0; both reach the same mark by 1.0 s.",
+      "teach_overlay": {
+        "kind": "DATA",
+        "text": "3,600 TIMES WEAKER",
+        "t_start_s": 14.19,
+        "t_end_s": 17.89,
+        "band": "16:9 centre band (clear of 0\u20132 s hook and 9\u201314 s title)"
+      },
+      "flow_credits_try1": 0,
+      "flow_credits_expected": 0,
+      "vertex_expected_gbp": 0.0,
+      "generation_authorized": false,
+      "rows": [
+        {
+          "id": "S01",
+          "t_start_s": 0.0,
+          "t_end_s": 2.5,
+          "source_long_plate": "P4:05_minute_second",
+          "route": "reuse-long-plate",
+          "spoken": "In one minute, the Moon falls about as far as an apple falls in one second.",
+          "flow_credits_expected": 0,
+          "use_s": 2.5
+        },
+        {
+          "id": "S02",
+          "t_start_s": 2.5,
+          "t_end_s": 5.94,
+          "source_long_plate": "P4:05_minute_second",
+          "route": "reuse-long-plate",
+          "spoken": "In one minute, the Moon falls about as far as an apple falls in one second. Isaac Newton worked out why.",
+          "flow_credits_expected": 0,
+          "use_s": 3.44
+        },
+        {
+          "id": "S03",
+          "t_start_s": 5.94,
+          "t_end_s": 9.38,
+          "source_long_plate": "P4:03_sixty_earths",
+          "route": "reuse-long-plate",
+          "spoken": "Isaac Newton worked out why. The Moon is sixty times further from the Earth's centre than we are,",
+          "flow_credits_expected": 0,
+          "use_s": 3.44
+        },
+        {
+          "id": "S04",
+          "t_start_s": 9.38,
+          "t_end_s": 12.81,
+          "source_long_plate": "P4:03_sixty_earths",
+          "route": "reuse-long-plate",
+          "spoken": "The Moon is sixty times further from the Earth's centre than we are, so the pull on it is sixty times sixty weaker. Three thousand six hundred times.",
+          "flow_credits_expected": 0,
+          "use_s": 3.43
+        },
+        {
+          "id": "S05",
+          "t_start_s": 12.81,
+          "t_end_s": 16.25,
+          "source_long_plate": "P4:04_dots_square",
+          "route": "reuse-long-plate",
+          "spoken": "so the pull on it is sixty times sixty weaker. Three thousand six hundred times.",
+          "flow_credits_expected": 0,
+          "use_s": 3.44
+        },
+        {
+          "id": "S06",
+          "t_start_s": 16.25,
+          "t_end_s": 19.69,
+          "source_long_plate": "P4:04_dots_square",
+          "route": "reuse-long-plate",
+          "spoken": "so the pull on it is sixty times sixty weaker. Three thousand six hundred times. And the numbers matched. One pull, for apples and Moons.",
+          "flow_credits_expected": 0,
+          "use_s": 3.44
+        },
+        {
+          "id": "S07",
+          "t_start_s": 19.69,
+          "t_end_s": 23.13,
+          "source_long_plate": "P4:05_minute_second",
+          "route": "reuse-long-plate",
+          "spoken": "And the numbers matched. One pull, for apples and Moons.",
+          "flow_credits_expected": 0,
+          "use_s": 3.44
+        },
+        {
+          "id": "loop_tail",
+          "t_start_s": 23.13,
+          "t_end_s": 24.13,
+          "use_s": 1.0,
+          "role": "loop_tail",
+          "route": "reuse-long-plate",
+          "source_long_plate": "P4:05_minute_second",
+          "spoken": "",
+          "note": "Matched frame-0 plate after the last word. No banner, no video id, no code text."
+        }
+      ],
+      "vo_pause_trim": {
+        "cut_s": 1.09,
+        "remove_s": 0.31,
+        "why": "009 Short B sentence-1 pause 0.68\u20131.09 s (0.41 s) trimmed to a 0.10 s gap. Existing take, no new VO."
+      },
+      "loop_tail_s": 1.0,
+      "end_card": {
+        "text": null,
+        "video_id": null,
+        "code_text": null,
+        "full_film_banner": false
+      },
+      "full_film_banner": false,
+      "render": false,
+      "frame0_plate": "P4:05_minute_second"
+    }
+  ],
+  "rules": {
+    "job": "J0967",
+    "s01_ends_by_s": 2.85,
+    "body_cut_s": [
+      2.5,
+      3.8
+    ],
+    "loop_tail_s_max": 1.0,
+    "full_film_banner": false,
+    "end_card_video_id": null,
+    "end_card_code_text": null,
+    "render": false,
+    "generation": false,
+    "gbp": 0
+  }
+}

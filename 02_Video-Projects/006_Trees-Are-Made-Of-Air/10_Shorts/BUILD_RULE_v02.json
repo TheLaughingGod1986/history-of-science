@@ -1,0 +1,828 @@
+{
+  "film": "006",
+  "job": "J0967",
+  "s01_ends_by_s": 2.85,
+  "body_cut_s": [
+    2.5,
+    3.8
+  ],
+  "loop_tail_s_max": 1.0,
+  "full_film_banner": false,
+  "end_card_video_id": null,
+  "end_card_code_text": null,
+  "render": false,
+  "generation": false,
+  "gbp": 0,
+  "shorts": [
+    {
+      "id": "Short_A",
+      "vo": "10_Shorts/vo_20261004/t1_willow_air_vo_v02.mp3",
+      "vo_duration_s": 19.92,
+      "first_cut_s": 2.5,
+      "rows": [
+        {
+          "id": "S01",
+          "t_start_s": 0.0,
+          "t_end_s": 2.5,
+          "source_long_plate": "part01/raw/v01/01_willow_air_t1",
+          "route": "reuse-long-plate",
+          "spoken": "A tree is built from thin air.",
+          "flow_credits_expected": 0,
+          "use_s": 2.5
+        },
+        {
+          "id": "S02",
+          "t_start_s": 2.5,
+          "t_end_s": 5.98,
+          "source_long_plate": "part02/raw/v01/03_willow_shoot_scale_t1",
+          "route": "reuse-long-plate",
+          "spoken": "A tree is built from thin air. One man spent five years proving the soil wasn't feeding it.",
+          "flow_credits_expected": 0,
+          "use_s": 3.48
+        },
+        {
+          "id": "S03",
+          "t_start_s": 5.98,
+          "t_end_s": 9.47,
+          "source_long_plate": "part02/raw/v01/06_garden_years_t2",
+          "route": "reuse-long-plate",
+          "spoken": "One man spent five years proving the soil wasn't feeding it. He planted a willow in two hundred pounds of dried soil and gave it only water.",
+          "flow_credits_expected": 0,
+          "use_s": 3.49
+        },
+        {
+          "id": "S04",
+          "t_start_s": 9.47,
+          "t_end_s": 12.95,
+          "source_long_plate": "part02/raw/v01/09_weights_169_t1",
+          "route": "reuse-long-plate",
+          "spoken": "He planted a willow in two hundred pounds of dried soil and gave it only water. Five years later the tree weighed a hundred and sixty-nine pounds,",
+          "flow_credits_expected": 0,
+          "use_s": 3.48
+        },
+        {
+          "id": "S05",
+          "t_start_s": 12.95,
+          "t_end_s": 16.44,
+          "source_long_plate": "part02/raw/v01/13_tree_vs_pinch_t1",
+          "route": "reuse-long-plate",
+          "spoken": "Five years later the tree weighed a hundred and sixty-nine pounds, and the soil had lost just two ounces.",
+          "flow_credits_expected": 0,
+          "use_s": 3.49
+        },
+        {
+          "id": "S06",
+          "t_start_s": 16.44,
+          "t_end_s": 19.92,
+          "source_long_plate": "part02/raw/v01/13_tree_vs_pinch_t1",
+          "route": "reuse-long-plate",
+          "spoken": "and the soil had lost just two ounces.",
+          "flow_credits_expected": 0,
+          "use_s": 3.48
+        },
+        {
+          "id": "loop_tail",
+          "t_start_s": 19.92,
+          "t_end_s": 20.92,
+          "use_s": 1.0,
+          "role": "loop_tail",
+          "route": "reuse-long-plate",
+          "source_long_plate": "part01/raw/v01/01_willow_air_t1",
+          "spoken": "",
+          "note": "Matched frame-0 plate. No banner, no video id, no code text."
+        }
+      ],
+      "loop_tail_s": 1.0,
+      "end_card": {
+        "text": null,
+        "video_id": null,
+        "code_text": null,
+        "full_film_banner": false
+      },
+      "full_film_banner": false,
+      "render": false,
+      "promoted_long_title_window_s": [
+        9.0,
+        14.0
+      ],
+      "promoted_long_title": "The Willow Tree That Was Made of Air",
+      "vo_trim": {
+        "drop_spoken_title_from_s": 19.92,
+        "note": "Trim the spoken title from the word The (The Willow Tree That Was Made of Air) off the existing take. No new VO."
+      },
+      "duration_note": "Speech ends at 19.92 s. With the 1.0 s loop the Short is 20.92 s, under the 22 s band. The audit asked for this title trim. No words were added."
+    },
+    {
+      "id": "Short_B",
+      "vo": "10_Shorts/vo_20261004/t2_mint_fixed_vo_v03b.mp3",
+      "vo_duration_s": 21.6,
+      "first_cut_s": 2.5,
+      "rows": [
+        {
+          "id": "S01",
+          "t_start_s": 0.0,
+          "t_end_s": 2.5,
+          "source_long_plate": "part03/raw/v01/10_mint_jar_t1",
+          "route": "reuse-long-plate",
+          "spoken": "A sprig of mint repaired the air.",
+          "flow_credits_expected": 0,
+          "use_s": 2.5
+        },
+        {
+          "id": "S02",
+          "t_start_s": 2.5,
+          "t_end_s": 5.68,
+          "source_long_plate": "part03/raw/v01/11_candle_tall_t1",
+          "route": "reuse-long-plate",
+          "spoken": "A sprig of mint repaired the air. Joseph Priestley burned a candle in a sealed jar until the flame died,",
+          "flow_credits_expected": 0,
+          "use_s": 3.18
+        },
+        {
+          "id": "S03",
+          "t_start_s": 5.68,
+          "t_end_s": 8.87,
+          "source_long_plate": "part03/raw/v01/08_candles_out_t1",
+          "route": "reuse-long-plate",
+          "spoken": "Joseph Priestley burned a candle in a sealed jar until the flame died, and no new flame would light.",
+          "flow_credits_expected": 0,
+          "use_s": 3.19
+        },
+        {
+          "id": "S04",
+          "t_start_s": 8.87,
+          "t_end_s": 12.05,
+          "source_long_plate": "part03/raw/v01/10_mint_jar_t1",
+          "route": "reuse-long-plate",
+          "spoken": "and no new flame would light. He slid in a sprig of mint and waited.",
+          "flow_credits_expected": 0,
+          "use_s": 3.18
+        },
+        {
+          "id": "S05",
+          "t_start_s": 12.05,
+          "t_end_s": 15.23,
+          "source_long_plate": "part03/raw/v01/11_candle_tall_t1",
+          "route": "reuse-long-plate",
+          "spoken": "He slid in a sprig of mint and waited. Ten days later, a candle burned bright in that same air.",
+          "flow_credits_expected": 0,
+          "use_s": 3.18
+        },
+        {
+          "id": "S06",
+          "t_start_s": 15.23,
+          "t_end_s": 18.42,
+          "source_long_plate": "part03/raw/v01/11_candle_tall_t1",
+          "route": "reuse-long-plate",
+          "spoken": "Ten days later, a candle burned bright in that same air. Somehow, the little green plant had made the air good again.",
+          "flow_credits_expected": 0,
+          "use_s": 3.19
+        },
+        {
+          "id": "S07",
+          "t_start_s": 18.42,
+          "t_end_s": 21.6,
+          "source_long_plate": "part03/raw/v01/11_candle_tall_t1",
+          "route": "reuse-long-plate",
+          "spoken": "Somehow, the little green plant had made the air good again.",
+          "flow_credits_expected": 0,
+          "use_s": 3.18
+        },
+        {
+          "id": "loop_tail",
+          "t_start_s": 21.6,
+          "t_end_s": 22.6,
+          "use_s": 1.0,
+          "role": "loop_tail",
+          "route": "reuse-long-plate",
+          "source_long_plate": "part03/raw/v01/10_mint_jar_t1",
+          "spoken": "",
+          "note": "Matched frame-0 plate. No banner, no video id, no code text."
+        }
+      ],
+      "loop_tail_s": 1.0,
+      "end_card": {
+        "text": null,
+        "video_id": null,
+        "code_text": null,
+        "full_film_banner": false
+      },
+      "full_film_banner": false,
+      "render": false,
+      "promoted_long_title_window_s": [
+        9.0,
+        14.0
+      ],
+      "promoted_long_title": "The Willow Tree That Was Made of Air",
+      "duration_note": "Cuts are timed from t2_mint_fixed_vo_v03_align.json (21.60 s). The locked take named in VO_LOCK is t2_mint_fixed_vo_v03b.mp3 at 23.20 s. Re-time these cuts to that locked take before any render. No new VO."
+    },
+    {
+      "id": "Short_C",
+      "vo": "10_Shorts/vo_20261004/t3_bubbles_sunlight_vo_v01.mp3",
+      "vo_duration_s": 24.16,
+      "first_cut_s": 2.65,
+      "rows": [
+        {
+          "id": "S01",
+          "t_start_s": 0.0,
+          "t_end_s": 2.65,
+          "source_long_plate": "part04/raw/v01/05_bubbles_macro_t1",
+          "route": "reuse-long-plate",
+          "spoken": "Leaves only make oxygen in the light.",
+          "flow_credits_expected": 0,
+          "use_s": 2.65
+        },
+        {
+          "id": "S02",
+          "t_start_s": 2.65,
+          "t_end_s": 6.24,
+          "source_long_plate": "part04/raw/v01/03_plunge_leaf_t1",
+          "route": "reuse-long-plate",
+          "spoken": "Leaves only make oxygen in the light. In 1779, a Dutch doctor called Jan Ingenhousz put fresh leaves in jars of water by a sunny window.",
+          "flow_credits_expected": 0,
+          "use_s": 3.59
+        },
+        {
+          "id": "S03",
+          "t_start_s": 6.24,
+          "t_end_s": 9.82,
+          "source_long_plate": "part04/raw/v01/05_bubbles_macro_t1",
+          "route": "reuse-long-plate",
+          "spoken": "In 1779, a Dutch doctor called Jan Ingenhousz put fresh leaves in jars of water by a sunny window. Tiny silver bubbles rose from the green leaves.",
+          "flow_credits_expected": 0,
+          "use_s": 3.58
+        },
+        {
+          "id": "S04",
+          "t_start_s": 9.82,
+          "t_end_s": 13.41,
+          "source_long_plate": "part03/raw/v01/18_dark_window_t1",
+          "route": "reuse-long-plate",
+          "spoken": "Tiny silver bubbles rose from the green leaves. Move the jar into the shade, and the bubbles stopped.",
+          "flow_credits_expected": 0,
+          "use_s": 3.59
+        },
+        {
+          "id": "S05",
+          "t_start_s": 13.41,
+          "t_end_s": 16.99,
+          "source_long_plate": "part04/raw/v01/12_shutters_open_t1",
+          "route": "reuse-long-plate",
+          "spoken": "Move the jar into the shade, and the bubbles stopped. Back into the sun, and they started again.",
+          "flow_credits_expected": 0,
+          "use_s": 3.58
+        },
+        {
+          "id": "S06",
+          "t_start_s": 16.99,
+          "t_end_s": 20.57,
+          "source_long_plate": "part04/raw/v01/05_bubbles_macro_t1",
+          "route": "reuse-long-plate",
+          "spoken": "Back into the sun, and they started again. Plants run on sunlight.",
+          "flow_credits_expected": 0,
+          "use_s": 3.58
+        },
+        {
+          "id": "S07",
+          "t_start_s": 20.57,
+          "t_end_s": 24.16,
+          "source_long_plate": "part04/raw/v01/05_bubbles_macro_t1",
+          "route": "reuse-long-plate",
+          "spoken": "Plants run on sunlight.",
+          "flow_credits_expected": 0,
+          "use_s": 3.59
+        },
+        {
+          "id": "loop_tail",
+          "t_start_s": 24.16,
+          "t_end_s": 25.16,
+          "use_s": 1.0,
+          "role": "loop_tail",
+          "route": "reuse-long-plate",
+          "source_long_plate": "part04/raw/v01/05_bubbles_macro_t1",
+          "spoken": "",
+          "note": "Matched frame-0 plate. No banner, no video id, no code text."
+        }
+      ],
+      "loop_tail_s": 1.0,
+      "end_card": {
+        "text": null,
+        "video_id": null,
+        "code_text": null,
+        "full_film_banner": false
+      },
+      "full_film_banner": false,
+      "render": false,
+      "promoted_long_title_window_s": [
+        9.0,
+        14.0
+      ],
+      "promoted_long_title": "The Willow Tree That Was Made of Air"
+    },
+    {
+      "id": "s04_photosynthesis",
+      "replaces": "SHORT_s04_photosynthesis_v01.json",
+      "vo_duration_s": 24.977,
+      "first_cut_s": 2.6,
+      "rows": [
+        {
+          "id": "S01",
+          "t_start_s": 0.0,
+          "t_end_s": 2.6,
+          "source_long_plate": "04_Generated-Clips/part05/raw/v01/06_leaf_in_t1.mp4",
+          "route": "reuse-existing-plate",
+          "spoken": "",
+          "flow_credits_expected": 0,
+          "use_s": 2.6
+        },
+        {
+          "id": "S02",
+          "t_start_s": 2.6,
+          "t_end_s": 6.33,
+          "source_long_plate": "04_Generated-Clips/part02/raw/v01/05_pure_water_t1.mp4",
+          "route": "reuse-existing-plate",
+          "spoken": "It Then,",
+          "flow_credits_expected": 0,
+          "use_s": 3.73
+        },
+        {
+          "id": "S03",
+          "t_start_s": 6.33,
+          "t_end_s": 10.06,
+          "source_long_plate": "04_Generated-Clips/part05/raw/v01/07_sugar_oxygen_t1.mp4",
+          "route": "reuse-existing-plate",
+          "spoken": "Then,",
+          "flow_credits_expected": 0,
+          "use_s": 3.73
+        },
+        {
+          "id": "S04",
+          "t_start_s": 10.06,
+          "t_end_s": 13.79,
+          "source_long_plate": "04_Generated-Clips/part04/raw/v01/05_bubbles_macro_t1.mp4",
+          "route": "reuse-existing-plate",
+          "spoken": "Then, and That",
+          "flow_credits_expected": 0,
+          "use_s": 3.73
+        },
+        {
+          "id": "S05",
+          "t_start_s": 13.79,
+          "t_end_s": 17.52,
+          "source_long_plate": "04_Generated-Clips/part05/raw/v01/14_built_from_sky_t1.mp4",
+          "route": "reuse-existing-plate",
+          "spoken": "That leaves,",
+          "flow_credits_expected": 0,
+          "use_s": 3.73
+        },
+        {
+          "id": "S06",
+          "t_start_s": 17.52,
+          "t_end_s": 21.25,
+          "source_long_plate": "04_Generated-Clips/part01/raw/v01/01_willow_air_t1.mp4",
+          "route": "reuse-existing-plate",
+          "spoken": "leaves, About",
+          "flow_credits_expected": 0,
+          "use_s": 3.73
+        },
+        {
+          "id": "S07",
+          "t_start_s": 21.25,
+          "t_end_s": 24.98,
+          "source_long_plate": "04_Generated-Clips/part05/raw/v01/06_leaf_in_t1.mp4",
+          "route": "reuse-existing-plate",
+          "spoken": "About loop_speech",
+          "flow_credits_expected": 0,
+          "use_s": 3.73
+        },
+        {
+          "id": "loop_tail",
+          "t_start_s": 24.98,
+          "t_end_s": 25.98,
+          "use_s": 1.0,
+          "role": "loop_tail",
+          "route": "reuse-existing-plate",
+          "source_long_plate": "04_Generated-Clips/part05/raw/v01/06_leaf_in_t1.mp4",
+          "spoken": "",
+          "note": "One-second return to the frame-0 plate. No end-card line, no video id, no code text."
+        }
+      ],
+      "loop_tail_s": 1.0,
+      "end_card": {
+        "text": null,
+        "video_id": null,
+        "code_text": null,
+        "full_film_banner": false
+      },
+      "full_film_banner": false,
+      "render": false,
+      "retired_assembler": "_build_short_s04_photosynthesis_v01.py"
+    },
+    {
+      "id": "s05_charcoal_gas",
+      "replaces": "SHORT_s05_charcoal_gas_v01.json",
+      "vo_duration_s": 25.558,
+      "first_cut_s": 2.7,
+      "rows": [
+        {
+          "id": "S01",
+          "t_start_s": 0.0,
+          "t_end_s": 2.7,
+          "source_long_plate": "04_Generated-Clips/part02/raw/v01/18_charcoal_hearth_t1.mp4",
+          "route": "reuse-existing-plate",
+          "spoken": "",
+          "flow_credits_expected": 0,
+          "use_s": 2.7
+        },
+        {
+          "id": "S02",
+          "t_start_s": 2.7,
+          "t_end_s": 5.97,
+          "source_long_plate": "04_Generated-Clips/part02/raw/v01/19_ash_mound_t1.mp4",
+          "route": "reuse-existing-plate",
+          "spoken": "and",
+          "flow_credits_expected": 0,
+          "use_s": 3.27
+        },
+        {
+          "id": "S03",
+          "t_start_s": 5.97,
+          "t_end_s": 9.23,
+          "source_long_plate": "04_Generated-Clips/part02/raw/v01/20_shimmer_coals_t1.mp4",
+          "route": "reuse-existing-plate",
+          "spoken": "and The",
+          "flow_credits_expected": 0,
+          "use_s": 3.26
+        },
+        {
+          "id": "S04",
+          "t_start_s": 9.23,
+          "t_end_s": 12.5,
+          "source_long_plate": "04_Generated-Clips/part02/raw/v01/20_shimmer_coals_t1.mp4",
+          "route": "reuse-existing-plate",
+          "spoken": "The",
+          "flow_credits_expected": 0,
+          "use_s": 3.27
+        },
+        {
+          "id": "S05",
+          "t_start_s": 12.5,
+          "t_end_s": 15.76,
+          "source_long_plate": "04_Generated-Clips/part02/raw/v01/stretches_v03/15_desk_candle_t1_above_desk_v03.mp4",
+          "route": "reuse-existing-plate",
+          "spoken": "The He",
+          "flow_credits_expected": 0,
+          "use_s": 3.26
+        },
+        {
+          "id": "S06",
+          "t_start_s": 15.76,
+          "t_end_s": 19.03,
+          "source_long_plate": "04_Generated-Clips/part05/raw/v01/06_leaf_in_t1.mp4",
+          "route": "reuse-existing-plate",
+          "spoken": "He We",
+          "flow_credits_expected": 0,
+          "use_s": 3.27
+        },
+        {
+          "id": "S07",
+          "t_start_s": 19.03,
+          "t_end_s": 22.29,
+          "source_long_plate": "04_Generated-Clips/part02/raw/v01/06_garden_years_t2.mp4",
+          "route": "reuse-existing-plate",
+          "spoken": "We He",
+          "flow_credits_expected": 0,
+          "use_s": 3.26
+        },
+        {
+          "id": "S08",
+          "t_start_s": 22.29,
+          "t_end_s": 25.56,
+          "source_long_plate": "04_Generated-Clips/part02/raw/v01/18_charcoal_hearth_t1.mp4",
+          "route": "reuse-existing-plate",
+          "spoken": "He loop_speech",
+          "flow_credits_expected": 0,
+          "use_s": 3.27
+        },
+        {
+          "id": "loop_tail",
+          "t_start_s": 25.56,
+          "t_end_s": 26.56,
+          "use_s": 1.0,
+          "role": "loop_tail",
+          "route": "reuse-existing-plate",
+          "source_long_plate": "04_Generated-Clips/part02/raw/v01/18_charcoal_hearth_t1.mp4",
+          "spoken": "",
+          "note": "One-second return to the frame-0 plate. No end-card line, no video id, no code text."
+        }
+      ],
+      "loop_tail_s": 1.0,
+      "end_card": {
+        "text": null,
+        "video_id": null,
+        "code_text": null,
+        "full_film_banner": false
+      },
+      "full_film_banner": false,
+      "render": false,
+      "retired_assembler": "_build_short_s05_charcoal_gas_v01.py"
+    },
+    {
+      "id": "s06_ingenhousz_oxygen",
+      "replaces": "SHORT_s06_ingenhousz_oxygen_v01.json",
+      "vo_duration_s": 24.756,
+      "first_cut_s": 2.64,
+      "rows": [
+        {
+          "id": "S01",
+          "t_start_s": 0.0,
+          "t_end_s": 2.64,
+          "source_long_plate": "04_Generated-Clips/part04/raw/v01/05_bubbles_macro_t1.mp4",
+          "route": "reuse-existing-plate",
+          "spoken": "",
+          "flow_credits_expected": 0,
+          "use_s": 2.64
+        },
+        {
+          "id": "S02",
+          "t_start_s": 2.64,
+          "t_end_s": 6.33,
+          "source_long_plate": "04_Generated-Clips/part04/raw/v01/03_plunge_leaf_t1.mp4",
+          "route": "reuse-existing-plate",
+          "spoken": "and He",
+          "flow_credits_expected": 0,
+          "use_s": 3.69
+        },
+        {
+          "id": "S03",
+          "t_start_s": 6.33,
+          "t_end_s": 10.01,
+          "source_long_plate": "04_Generated-Clips/part03/raw/v01/11_candle_tall_t1.mp4",
+          "route": "reuse-existing-plate",
+          "spoken": "He A",
+          "flow_credits_expected": 0,
+          "use_s": 3.68
+        },
+        {
+          "id": "S04",
+          "t_start_s": 10.01,
+          "t_end_s": 13.7,
+          "source_long_plate": "04_Generated-Clips/part03/raw/v01/11_candle_tall_t1.mp4",
+          "route": "reuse-existing-plate",
+          "spoken": "A Move",
+          "flow_credits_expected": 0,
+          "use_s": 3.69
+        },
+        {
+          "id": "S05",
+          "t_start_s": 13.7,
+          "t_end_s": 17.39,
+          "source_long_plate": "04_Generated-Clips/part03/raw/v01/18_dark_window_t1.mp4",
+          "route": "reuse-existing-plate",
+          "spoken": "Move",
+          "flow_credits_expected": 0,
+          "use_s": 3.69
+        },
+        {
+          "id": "S06",
+          "t_start_s": 17.39,
+          "t_end_s": 21.07,
+          "source_long_plate": "04_Generated-Clips/part04/raw/v01/12_shutters_open_t1.mp4",
+          "route": "reuse-existing-plate",
+          "spoken": "Move Only",
+          "flow_credits_expected": 0,
+          "use_s": 3.68
+        },
+        {
+          "id": "S07",
+          "t_start_s": 21.07,
+          "t_end_s": 24.76,
+          "source_long_plate": "04_Generated-Clips/part04/raw/v01/05_bubbles_macro_t1.mp4",
+          "route": "reuse-existing-plate",
+          "spoken": "Only loop_speech",
+          "flow_credits_expected": 0,
+          "use_s": 3.69
+        },
+        {
+          "id": "loop_tail",
+          "t_start_s": 24.76,
+          "t_end_s": 25.76,
+          "use_s": 1.0,
+          "role": "loop_tail",
+          "route": "reuse-existing-plate",
+          "source_long_plate": "04_Generated-Clips/part04/raw/v01/05_bubbles_macro_t1.mp4",
+          "spoken": "",
+          "note": "One-second return to the frame-0 plate. No end-card line, no video id, no code text."
+        }
+      ],
+      "loop_tail_s": 1.0,
+      "end_card": {
+        "text": null,
+        "video_id": null,
+        "code_text": null,
+        "full_film_banner": false
+      },
+      "full_film_banner": false,
+      "render": false,
+      "retired_assembler": "_build_short_s06_ingenhousz_oxygen_v01.py"
+    },
+    {
+      "id": "s07_priestley_mint",
+      "replaces": "SHORT_s07_priestley_mint_v01.json",
+      "vo_duration_s": 23.184,
+      "first_cut_s": 2.7,
+      "rows": [
+        {
+          "id": "S01",
+          "t_start_s": 0.0,
+          "t_end_s": 2.7,
+          "source_long_plate": "04_Generated-Clips/part03/raw/v01/11_candle_tall_t1.mp4",
+          "route": "reuse-existing-plate",
+          "spoken": "",
+          "flow_credits_expected": 0,
+          "use_s": 2.7
+        },
+        {
+          "id": "S02",
+          "t_start_s": 2.7,
+          "t_end_s": 6.11,
+          "source_long_plate": "04_Generated-Clips/part03/raw/v01/08_candles_out_t1.mp4",
+          "route": "reuse-existing-plate",
+          "spoken": "flame behind",
+          "flow_credits_expected": 0,
+          "use_s": 3.41
+        },
+        {
+          "id": "S03",
+          "t_start_s": 6.11,
+          "t_end_s": 9.53,
+          "source_long_plate": "04_Generated-Clips/part03/raw/v01/07_priestley_t1.mp4",
+          "route": "reuse-existing-plate",
+          "spoken": "behind He",
+          "flow_credits_expected": 0,
+          "use_s": 3.42
+        },
+        {
+          "id": "S04",
+          "t_start_s": 9.53,
+          "t_end_s": 12.94,
+          "source_long_plate": "04_Generated-Clips/part03/raw/v01/10_mint_jar_t1.mp4",
+          "route": "reuse-existing-plate",
+          "spoken": "He",
+          "flow_credits_expected": 0,
+          "use_s": 3.41
+        },
+        {
+          "id": "S05",
+          "t_start_s": 12.94,
+          "t_end_s": 16.35,
+          "source_long_plate": "04_Generated-Clips/part04/raw/v01/06_collect_blaze_t3.mp4",
+          "route": "reuse-existing-plate",
+          "spoken": "He Ten",
+          "flow_credits_expected": 0,
+          "use_s": 3.41
+        },
+        {
+          "id": "S06",
+          "t_start_s": 16.35,
+          "t_end_s": 19.77,
+          "source_long_plate": "04_Generated-Clips/part03/raw/v01/15_quill_vegetable_t1.mp4",
+          "route": "reuse-existing-plate",
+          "spoken": "Ten It Something",
+          "flow_credits_expected": 0,
+          "use_s": 3.42
+        },
+        {
+          "id": "S07",
+          "t_start_s": 19.77,
+          "t_end_s": 23.18,
+          "source_long_plate": "04_Generated-Clips/part03/raw/v01/11_candle_tall_t1.mp4",
+          "route": "reuse-existing-plate",
+          "spoken": "Something loop_speech",
+          "flow_credits_expected": 0,
+          "use_s": 3.41
+        },
+        {
+          "id": "loop_tail",
+          "t_start_s": 23.18,
+          "t_end_s": 24.18,
+          "use_s": 1.0,
+          "role": "loop_tail",
+          "route": "reuse-existing-plate",
+          "source_long_plate": "04_Generated-Clips/part03/raw/v01/11_candle_tall_t1.mp4",
+          "spoken": "",
+          "note": "One-second return to the frame-0 plate. No end-card line, no video id, no code text."
+        }
+      ],
+      "loop_tail_s": 1.0,
+      "end_card": {
+        "text": null,
+        "video_id": null,
+        "code_text": null,
+        "full_film_banner": false
+      },
+      "full_film_banner": false,
+      "render": false,
+      "retired_assembler": "_build_short_s07_priestley_mint_v01.py"
+    },
+    {
+      "id": "s08_willow_pot",
+      "replaces": "SHORT_s08_willow_pot_v01.json",
+      "vo_duration_s": 23.874,
+      "first_cut_s": 2.76,
+      "rows": [
+        {
+          "id": "S01",
+          "t_start_s": 0.0,
+          "t_end_s": 2.76,
+          "source_long_plate": "04_Generated-Clips/part01/raw/v01/11_shoot_in_pot_t1.mp4",
+          "route": "reuse-existing-plate",
+          "spoken": "",
+          "flow_credits_expected": 0,
+          "use_s": 2.76
+        },
+        {
+          "id": "S02",
+          "t_start_s": 2.76,
+          "t_end_s": 6.28,
+          "source_long_plate": "04_Generated-Clips/part01/raw/v01/10_van_helmont_sack_t1.mp4",
+          "route": "reuse-existing-plate",
+          "spoken": "two planted",
+          "flow_credits_expected": 0,
+          "use_s": 3.52
+        },
+        {
+          "id": "S03",
+          "t_start_s": 6.28,
+          "t_end_s": 9.8,
+          "source_long_plate": "04_Generated-Clips/part02/raw/v01/03_willow_shoot_scale_t1.mp4",
+          "route": "reuse-existing-plate",
+          "spoken": "planted Then,",
+          "flow_credits_expected": 0,
+          "use_s": 3.52
+        },
+        {
+          "id": "S04",
+          "t_start_s": 9.8,
+          "t_end_s": 13.31,
+          "source_long_plate": "04_Generated-Clips/part02/raw/v01/04_lid_rain_t1.mp4",
+          "route": "reuse-existing-plate",
+          "spoken": "Then, the",
+          "flow_credits_expected": 0,
+          "use_s": 3.51
+        },
+        {
+          "id": "S05",
+          "t_start_s": 13.31,
+          "t_end_s": 16.83,
+          "source_long_plate": "04_Generated-Clips/part02/raw/v01/13_tree_vs_pinch_t1.mp4",
+          "route": "reuse-existing-plate",
+          "spoken": "the A",
+          "flow_credits_expected": 0,
+          "use_s": 3.52
+        },
+        {
+          "id": "S06",
+          "t_start_s": 16.83,
+          "t_end_s": 20.35,
+          "source_long_plate": "04_Generated-Clips/part02/raw/v01/12_pointer_short_t1.mp4",
+          "route": "reuse-existing-plate",
+          "spoken": "A and The",
+          "flow_credits_expected": 0,
+          "use_s": 3.52
+        },
+        {
+          "id": "S07",
+          "t_start_s": 20.35,
+          "t_end_s": 23.87,
+          "source_long_plate": "04_Generated-Clips/part01/raw/v01/11_shoot_in_pot_t1.mp4",
+          "route": "reuse-existing-plate",
+          "spoken": "The loop_speech",
+          "flow_credits_expected": 0,
+          "use_s": 3.52
+        },
+        {
+          "id": "loop_tail",
+          "t_start_s": 23.87,
+          "t_end_s": 24.87,
+          "use_s": 1.0,
+          "role": "loop_tail",
+          "route": "reuse-existing-plate",
+          "source_long_plate": "04_Generated-Clips/part01/raw/v01/11_shoot_in_pot_t1.mp4",
+          "spoken": "",
+          "note": "One-second return to the frame-0 plate. No end-card line, no video id, no code text."
+        }
+      ],
+      "loop_tail_s": 1.0,
+      "end_card": {
+        "text": null,
+        "video_id": null,
+        "code_text": null,
+        "full_film_banner": false
+      },
+      "full_film_banner": false,
+      "render": false,
+      "retired_assembler": "_build_short_s08_willow_pot_v01.py"
+    }
+  ]
+}
