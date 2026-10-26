@@ -500,16 +500,20 @@
   "phone_sha256": "2530dbe250aae7a1fe4fa35eb074abb8c49018fb1b96ec50bf02858538611795",
   "brief": {
     "frame0": "moving video part05/09_meadow_golden_t1.mp4 in 4.20 s, crop x=660, no zoom",
-    "first_word_onset_s": null,
+    "subject_named_s": 0.0,
+    "first_word_s": 0.0,
+    "first_word_onset_s": 0.0,
     "surprise_word": "wasn't the first",
     "first_cut_s": 2.53,
+    "loop_s": 0.36,
     "last_word_to_loop_s": 0.36,
+    "payoff_frac": 0.854,
     "meta_promise": "no",
     "youtube_id": "4WUs0beKn0A"
   },
   "gate_after_level": {
-    "exit": 2,
-    "output": "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python: can't open file '/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/007_The-First-Vaccine/00_Brand/Channel-Setup/tools/gate_shorts_open.py': [Errno 2] No such file or directory"
+    "exit": 0,
+    "output": "PASS  hos_007_s05_vacca_jesty_v03.mp4  dur=24.2s  audio=-17.3dB  motion=17.85  f0diff=3.89  cut1=2.53s  vo_onset=0.16s  tail_gap=0.11s  vo_src=mix  dhash=72372cdef6db4785\n   warn  first VO word starts at 0.16s > 0.15s \u2014 trim leading silence\n   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_007_s05_vacca_jesty_v03_open_sheet.jpg"
   },
   "sfx_exit": 0,
   "music_exit": 0,

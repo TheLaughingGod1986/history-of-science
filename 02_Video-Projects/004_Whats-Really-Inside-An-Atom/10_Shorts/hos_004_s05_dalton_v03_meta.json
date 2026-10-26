@@ -1,0 +1,612 @@
+{
+  "id": "s05_dalton",
+  "version": "v03",
+  "job": "J0966",
+  "youtube_id": "-sa2t7dAtCk",
+  "fixes": "J0966 HC re-cut v03 (2.56s first cut, clean P1 balance/atom plates, own-synth bed + house SFX, -14 LUFS master)",
+  "test": "B (search-titled)",
+  "air_date": "2026-11-16",
+  "air_date_draft": "2026-11-16",
+  "file": "10_Shorts/hos_004_s05_dalton_v03.mp4",
+  "sha256": "f93745e955586097293b7e37cad73c025ec99d79b0ee3b8e34bd955df6380edc",
+  "duration_s": 24.533,
+  "runtime_s": 24.533,
+  "spoken": "Every element is made of its own kind of atom, and each kind has its own weight. Hydrogen is the lightest. Oxygen is heavier. Gold is heavier still. Why believe him? Because elements always combine in the same fixed amounts. Water is always the same mix of hydrogen and oxygen, That only makes sense if both are made of tiny pieces with fixed weights.",
+  "script": "Every element is made of its own kind of atom, and each kind has its own weight. Hydrogen is the lightest. Oxygen is heavier. Gold is heavier still. Why believe him? Because elements always combine in the same fixed amounts. Water is always the same mix of hydrogen and oxygen, That only makes sense if both are made of tiny pieces with fixed weights.",
+  "words_list": [
+    {
+      "word": "Every",
+      "start": 0.0,
+      "end": 0.259
+    },
+    {
+      "word": "element",
+      "start": 0.308,
+      "end": 0.648
+    },
+    {
+      "word": "is",
+      "start": 0.699,
+      "end": 0.803
+    },
+    {
+      "word": "made",
+      "start": 0.85,
+      "end": 1.036
+    },
+    {
+      "word": "of",
+      "start": 1.062,
+      "end": 1.114
+    },
+    {
+      "word": "its",
+      "start": 1.152,
+      "end": 1.269
+    },
+    {
+      "word": "own",
+      "start": 1.327,
+      "end": 1.502
+    },
+    {
+      "word": "kind",
+      "start": 1.549,
+      "end": 1.735
+    },
+    {
+      "word": "of",
+      "start": 1.786,
+      "end": 1.89
+    },
+    {
+      "word": "atom,",
+      "start": 1.968,
+      "end": 2.667
+    },
+    {
+      "word": "and",
+      "start": 2.706,
+      "end": 2.822
+    },
+    {
+      "word": "each",
+      "start": 2.853,
+      "end": 2.978
+    },
+    {
+      "word": "kind",
+      "start": 3.086,
+      "end": 3.521
+    },
+    {
+      "word": "has",
+      "start": 3.58,
+      "end": 3.754
+    },
+    {
+      "word": "its",
+      "start": 3.793,
+      "end": 3.91
+    },
+    {
+      "word": "own",
+      "start": 3.968,
+      "end": 4.143
+    },
+    {
+      "word": "weight.",
+      "start": 4.21,
+      "end": 4.764
+    },
+    {
+      "word": "Hydrogen",
+      "start": 4.919,
+      "end": 5.851
+    },
+    {
+      "word": "is",
+      "start": 5.878,
+      "end": 5.929
+    },
+    {
+      "word": "the",
+      "start": 5.968,
+      "end": 6.084
+    },
+    {
+      "word": "lightest.",
+      "start": 6.136,
+      "end": 6.783
+    },
+    {
+      "word": "Oxygen",
+      "start": 6.906,
+      "end": 7.638
+    },
+    {
+      "word": "is",
+      "start": 7.689,
+      "end": 7.793
+    },
+    {
+      "word": "heavier.",
+      "start": 7.842,
+      "end": 8.337
+    },
+    {
+      "word": "Gold",
+      "start": 8.508,
+      "end": 9.191
+    },
+    {
+      "word": "is",
+      "start": 9.295,
+      "end": 9.502
+    },
+    {
+      "word": "heavier",
+      "start": 9.56,
+      "end": 9.968
+    },
+    {
+      "word": "still.",
+      "start": 10.046,
+      "end": 10.512
+    },
+    {
+      "word": "Why",
+      "start": 11.079,
+      "end": 11.457
+    },
+    {
+      "word": "believe",
+      "start": 11.496,
+      "end": 11.768
+    },
+    {
+      "word": "him?",
+      "start": 11.826,
+      "end": 12.079
+    },
+    {
+      "word": "Because",
+      "start": 12.185,
+      "end": 12.933
+    },
+    {
+      "word": "elements",
+      "start": 12.984,
+      "end": 13.399
+    },
+    {
+      "word": "always",
+      "start": 13.444,
+      "end": 13.71
+    },
+    {
+      "word": "combine",
+      "start": 13.768,
+      "end": 14.176
+    },
+    {
+      "word": "in",
+      "start": 14.227,
+      "end": 14.331
+    },
+    {
+      "word": "the",
+      "start": 14.35,
+      "end": 14.409
+    },
+    {
+      "word": "same",
+      "start": 14.486,
+      "end": 14.797
+    },
+    {
+      "word": "fixed",
+      "start": 14.875,
+      "end": 15.263
+    },
+    {
+      "word": "amounts.",
+      "start": 15.331,
+      "end": 15.884
+    },
+    {
+      "word": "Water",
+      "start": 16.014,
+      "end": 16.661
+    },
+    {
+      "word": "is",
+      "start": 16.713,
+      "end": 16.817
+    },
+    {
+      "word": "always",
+      "start": 16.85,
+      "end": 17.05
+    },
+    {
+      "word": "the",
+      "start": 17.088,
+      "end": 17.205
+    },
+    {
+      "word": "same",
+      "start": 17.251,
+      "end": 17.438
+    },
+    {
+      "word": "mix",
+      "start": 17.535,
+      "end": 17.826
+    },
+    {
+      "word": "of",
+      "start": 17.878,
+      "end": 17.982
+    },
+    {
+      "word": "hydrogen",
+      "start": 18.042,
+      "end": 18.525
+    },
+    {
+      "word": "and",
+      "start": 18.545,
+      "end": 18.603
+    },
+    {
+      "word": "oxygen,",
+      "start": 18.681,
+      "end": 19.224
+    },
+    {
+      "word": "That",
+      "start": 19.791,
+      "end": 20.164
+    },
+    {
+      "word": "only",
+      "start": 20.195,
+      "end": 20.319
+    },
+    {
+      "word": "makes",
+      "start": 20.358,
+      "end": 20.552
+    },
+    {
+      "word": "sense",
+      "start": 20.617,
+      "end": 20.941
+    },
+    {
+      "word": "if",
+      "start": 21.018,
+      "end": 21.174
+    },
+    {
+      "word": "both",
+      "start": 21.22,
+      "end": 21.407
+    },
+    {
+      "word": "are",
+      "start": 21.426,
+      "end": 21.484
+    },
+    {
+      "word": "made",
+      "start": 21.531,
+      "end": 21.717
+    },
+    {
+      "word": "of",
+      "start": 21.744,
+      "end": 21.795
+    },
+    {
+      "word": "tiny",
+      "start": 21.888,
+      "end": 22.261
+    },
+    {
+      "word": "pieces",
+      "start": 22.328,
+      "end": 22.727
+    },
+    {
+      "word": "with",
+      "start": 22.758,
+      "end": 22.883
+    },
+    {
+      "word": "fixed",
+      "start": 22.96,
+      "end": 23.349
+    },
+    {
+      "word": "weights.",
+      "start": 23.407,
+      "end": 23.892
+    }
+  ],
+  "first_word_s": 0.0,
+  "last_word_end_s": 23.892,
+  "surprise_s": {
+    "atom": 1.786
+  },
+  "first_cut_s": 2.556,
+  "last_word_to_loop_s": 0.641,
+  "longest_hold_s": 3.767,
+  "payoff_phrase": "tiny pieces with fixed weights",
+  "payoff_s": 21.744,
+  "payoff_frac": 0.887,
+  "loop_sentence": "That only makes sense if both are made of tiny pieces with fixed weights. Every element is made of its own kind of atom.",
+  "meta_promise": false,
+  "no_cta": true,
+  "no_new_spend": true,
+  "level": {
+    "lufs": -14.2,
+    "true_peak_dbtp": -1.7,
+    "gain_db": 4.4
+  },
+  "lufs": -14.2,
+  "true_peak_dbfs": -1.7,
+  "sfx_level": {
+    "exit": 0,
+    "output": "SFX level PASS: VO -18.7 LUFS, SFX -49.6 LUFS, 1 hits",
+    "bed_db": -14.0,
+    "sfx_db": -16.0
+  },
+  "frame0_black": 0.023,
+  "vo_source": "hos_004_part02_vo_v01.mp3",
+  "vo_take_indices": [
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84
+  ],
+  "dropped": "however you make it.",
+  "route": "claim first: Every element is made of its own kind of atom \u2026 fixed weights. Dateline and 'His atomic theory says' cut at the word boundary.",
+  "vo_s": 23.962,
+  "words": 64,
+  "max_pause_s": 0.45,
+  "atempo": 1.03,
+  "bed": "hos_004_s05_dalton_v03_bed.wav",
+  "hook": "EACH ATOM",
+  "hook_layer": {
+    "font_size": 243,
+    "cap_px": 173,
+    "cap_pct": 9.01,
+    "lines": 2,
+    "block_pct": [
+      39.5,
+      60.4
+    ],
+    "widest_pct": 72.5
+  },
+  "who_card": {
+    "name": "JOHN DALTON",
+    "line2": "Manchester, 1808",
+    "line1_px": 72,
+    "line1_pct_of_band": 12.0,
+    "band": [
+      656,
+      1264
+    ],
+    "in_s": 2.2,
+    "out_s": 5.6,
+    "fade_s": 0.35
+  },
+  "title_on_screen": "What's Really Inside an Atom?",
+  "youtube_title_draft": "What Is Dalton's Atomic Theory?",
+  "plan": [
+    {
+      "t0": 0.0,
+      "t1": 2.556,
+      "plate": "04_Generated-Clips/part02/raw/v01/01_dalton_schoolroom_v01.mp4",
+      "in_s": 2.8,
+      "crop_x": 656,
+      "lands_on": 0,
+      "hold_s": 2.556
+    },
+    {
+      "t0": 2.556,
+      "t1": 4.769,
+      "plate": "04_Generated-Clips/part01/raw/v01/15_knife_coin_return_v01.mp4",
+      "in_s": 0.5,
+      "crop_x": 656,
+      "lands_on": "and",
+      "hold_s": 2.213
+    },
+    {
+      "t0": 4.769,
+      "t1": 8.358,
+      "plate": "04_Generated-Clips/part02/raw/v01/05_fixed_amounts_v01.mp4",
+      "in_s": 0.4,
+      "crop_x": 656,
+      "lands_on": "Hydrogen",
+      "hold_s": 3.589
+    },
+    {
+      "t0": 8.358,
+      "t1": 10.929,
+      "plate": "04_Generated-Clips/part02/raw/v01/07_water_always_v01.mp4",
+      "in_s": 2.0,
+      "crop_x": 656,
+      "lands_on": "Gold",
+      "hold_s": 2.571
+    },
+    {
+      "t0": 10.929,
+      "t1": 13.618,
+      "plate": "04_Generated-Clips/part02/raw/v01/02_atomic_theory_v01.mp4",
+      "in_s": 0.8,
+      "crop_x": 656,
+      "lands_on": "Why",
+      "hold_s": 2.689
+    },
+    {
+      "t0": 13.618,
+      "t1": 17.101,
+      "plate": "04_Generated-Clips/part02/raw/v01/04_gold_heavier_v01.mp4",
+      "in_s": 0.15,
+      "crop_x": 656,
+      "lands_on": "combine",
+      "hold_s": 3.483
+    },
+    {
+      "t0": 17.101,
+      "t1": 20.868,
+      "plate": "04_Generated-Clips/part02/raw/v01/20_what_is_order_v01.mp4",
+      "in_s": 0.4,
+      "crop_x": 500,
+      "lands_on": "same",
+      "hold_s": 3.767
+    },
+    {
+      "t0": 20.868,
+      "t1": 23.362,
+      "plate": "04_Generated-Clips/part01/raw/v01/03_atom_turns_v01.mp4",
+      "in_s": 0.4,
+      "crop_x": 656,
+      "lands_on": "if",
+      "hold_s": 2.494
+    },
+    {
+      "t0": 23.362,
+      "t1": 24.512,
+      "plate": "04_Generated-Clips/part02/raw/v01/01_dalton_schoolroom_v01.mp4",
+      "in_s": 1.65,
+      "crop_x": 656,
+      "lands_on": "loop",
+      "hold_s": 1.15
+    }
+  ],
+  "captions": 20,
+  "brief": {
+    "frame0": "moving 01_dalton_schoolroom_v01 in 2.80s, crop x=656, no zoom",
+    "subject_named_s": 0.308,
+    "first_word_s": 0.0,
+    "first_cut_s": 2.556,
+    "loop_s": 0.641,
+    "payoff_frac": 0.887,
+    "subject_word": "element"
+  },
+  "caption_check": {
+    "ok": true,
+    "changes": 19,
+    "ratio": 1.0
+  },
+  "gate": {
+    "exit": 0,
+    "output": "PASS  hos_004_s05_dalton_v03.mp4  dur=24.53s  audio=-17.6dB  motion=27.67  f0diff=2.92  cut1=2.57s  vo_onset=0.00s  tail_gap=0.64s  vo_src=/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/_work_s05_dalton_v03/hos_004_s05_dalton_vo_v03.wav  dhash=662ca64b5303161d\n   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_004_s05_dalton_v03_open_sheet.jpg"
+  },
+  "vo_check": {
+    "exit": 1,
+    "output": "FAIL  hos_004_s05_dalton_v03.mp4  0:24.53  mean -17.6 dB  peak -1.7 dB  157 wpm\n   first minute: title_question 11.36s\n   FAIL  speech mean -17.6 dB outside -28.0 to -19.0 dB"
+  },
+  "freezedetect_starts": [],
+  "qa": {
+    "polish_gate": {
+      "exit": 0,
+      "output": "polish gate PASS: 0 of 9 rows failed, 1 to look at -> 02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/qa_s05_dalton_v03/polish_gate_s05_dalton_v03.json"
+    },
+    "picture_qa": {
+      "exit": 0,
+      "output": "picture QA PASS: 0 of 9 cuts fail, 1 to look at -> 02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/qa_s05_dalton_v03/picture_qa_s05_dalton_v03/PICTURE_QA.md, 02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/qa_s05_dalton_v03/picture_qa_s05_dalton_v03/picture_qa_review.jpg"
+    },
+    "music_gate": {
+      "exit": 0,
+      "output": "music gate PASS: hos_004_s05_dalton_v03_bed.wav, 25.0 s, about 66.7 BPM, brief Pace: 62-70 BPM"
+    }
+  },
+  "phone": "hos_004_s05_dalton_v03_PHONE.mp4",
+  "phone_sha256": "c26430c5753aa9bd5bd4b93a1065407e0ff8d4aee2bb07590866c200064bef55",
+  "v02_untouched": true,
+  "v02_sha256": "e7f5a6347c5f391c54ce0cadca896f508dce2fe3c6e1f267298267dd26ac3601",
+  "copies": {
+    "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/004_Whats-Really-Inside-An-Atom/10_Shorts/hos_004_s05_dalton_v03.mp4": "f93745e955586097293b7e37cad73c025ec99d79b0ee3b8e34bd955df6380edc",
+    "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/004_Whats-Really-Inside-An-Atom/10_Shorts/hos_004_s05_dalton_v03_PHONE.mp4": "c26430c5753aa9bd5bd4b93a1065407e0ff8d4aee2bb07590866c200064bef55",
+    "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/004_Whats-Really-Inside-An-Atom/10_Shorts/hos_004_s05_dalton_v03_2fps_sheet.jpg": "085563081830e454eb5b1154a594c3c78167a75a130092fd9655a40a7ff946a2",
+    "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/s05_dalton_v03/hos_004_s05_dalton_v03.mp4": "f93745e955586097293b7e37cad73c025ec99d79b0ee3b8e34bd955df6380edc",
+    "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/s05_dalton_v03/hos_004_s05_dalton_v03_PHONE.mp4": "c26430c5753aa9bd5bd4b93a1065407e0ff8d4aee2bb07590866c200064bef55",
+    "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/s05_dalton_v03/hos_004_s05_dalton_v03_2fps_sheet.jpg": "085563081830e454eb5b1154a594c3c78167a75a130092fd9655a40a7ff946a2"
+  },
+  "plate_audit": {
+    "replaced": "03_weights_line_v01 (Hp/Hg/Op tiles), 08_ruler_of_weights_v01 (ruler numerals), and 06_water_ratio_v01 (1808 on shelves) are not in v03",
+    "15_knife_coin_return_v01": "Part 01 balance scale and gold weights on oak table (0.50-2.71 s) for 'and each kind has its own weight.' Zero letters, zero Explorer.",
+    "05_fixed_amounts": "2 fps centre crop: wooden molecule models, no letters. Opening stretch for Hydrogen / Oxygen.",
+    "07_water_always": "gold sphere for 'Gold is heavier still'. Background chalkboard is a line schematic with no readable words.",
+    "02_atomic_theory": "0.80 s through 3.49 s, brass stands and wood balls.",
+    "04_gold_heavier": "no letters. Wood balls on the 'same fixed amounts' line.",
+    "20_what_is_order": "0.40 s through 3.82 s (crop_x 500), glowing brass-and-glass apparatus on the oak table.",
+    "03_atom_turns_v01": "Part 01 brass atom model turning in the schoolroom (0.40-3.28 s) for 'tiny pieces with fixed weights.' Zero letters, zero Explorer.",
+    "01_dalton_schoolroom": "frame 0 (in 2.80 s) and matched 1.15 s loop (1.65-2.80 s)."
+  }
+}

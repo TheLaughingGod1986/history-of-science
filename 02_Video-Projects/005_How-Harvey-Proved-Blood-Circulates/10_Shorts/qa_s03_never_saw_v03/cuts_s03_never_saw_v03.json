@@ -1,0 +1,130 @@
+[
+  {
+    "row": "s01_open",
+    "timeline_in": 0.0,
+    "timeline_out": 2.042,
+    "source": "06_eyepiece_mesh_t1.mp4",
+    "upscale": 1.78,
+    "video": true,
+    "framing": {
+      "offset": 1.4
+    }
+  },
+  {
+    "row": "s02_He",
+    "timeline_in": 2.042,
+    "timeline_out": 4.208,
+    "source": "01_loop_gap_t5.mp4",
+    "upscale": 1.78,
+    "video": true,
+    "framing": {
+      "offset": 0.3
+    }
+  },
+  {
+    "row": "s03_but",
+    "timeline_in": 4.208,
+    "timeline_out": 7.499,
+    "source": "02_tiny_gaps_t1.mp4",
+    "upscale": 1.78,
+    "video": true,
+    "framing": {
+      "offset": 0.5
+    }
+  },
+  {
+    "row": "s04_died",
+    "timeline_in": 7.499,
+    "timeline_out": 10.797,
+    "source": "03_old_harvey_t1.mp4",
+    "upscale": 1.78,
+    "video": true,
+    "framing": {
+      "offset": 0.3
+    }
+  },
+  {
+    "row": "s05_Four",
+    "timeline_in": 10.797,
+    "timeline_out": 13.349,
+    "source": "04_malpighi_slide_t1.mp4",
+    "upscale": 1.78,
+    "video": true,
+    "framing": {
+      "offset": 0.3
+    }
+  },
+  {
+    "row": "s06_put",
+    "timeline_in": 13.349,
+    "timeline_out": 15.816,
+    "source": "17_dutch_lens_t1.mp4",
+    "upscale": 1.78,
+    "video": true,
+    "framing": {
+      "offset": 0.4
+    }
+  },
+  {
+    "row": "s07_There",
+    "timeline_in": 15.816,
+    "timeline_out": 18.816,
+    "source": "07_capillaries_loop_t1.mp4",
+    "upscale": 1.78,
+    "video": true,
+    "framing": {
+      "offset": 0.3
+    }
+  },
+  {
+    "row": "s08_finer",
+    "timeline_in": 18.816,
+    "timeline_out": 21.409,
+    "source": "07_capillaries_loop_t2.mp4",
+    "upscale": 1.78,
+    "video": true,
+    "framing": {
+      "offset": 0.3
+    }
+  },
+  {
+    "row": "s09_The",
+    "timeline_in": 21.409,
+    "timeline_out": 24.259,
+    "source": "16_proved_last_link_t2.mp4",
+    "upscale": 1.78,
+    "video": true,
+    "framing": {
+      "offset": 0.4
+    }
+  },
+  {
+    "row": "s10_loop",
+    "timeline_in": 24.259,
+    "timeline_out": 25.259,
+    "source": "loop_span_06_eyepiece_mesh_t1.mp4",
+    "upscale": 1.78,
+    "video": true,
+    "framing": {
+      "offset": 0.3999999999999999
+    }
+  },
+  {
+    "row": "card_harvey",
+    "timeline_in": 2.2,
+    "timeline_out": 5.2,
+    "source": "code_graphic_never_saw_v03_harvey.png",
+    "upscale": 1.0,
+    "video": false,
+    "overlay": true
+  },
+  {
+    "row": "card_malpighi",
+    "timeline_in": 14.15,
+    "timeline_out": 17.35,
+    "source": "code_graphic_never_saw_v03_malpighi.png",
+    "upscale": 1.0,
+    "video": false,
+    "overlay": true
+  }
+]

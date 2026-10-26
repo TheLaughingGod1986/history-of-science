@@ -1,0 +1,18 @@
+{
+  "job": "J0966",
+  "youtube_id": "-sa2t7dAtCk",
+  "version": "v03",
+  "master_sha256": "f93745e955586097293b7e37cad73c025ec99d79b0ee3b8e34bd955df6380edc",
+  "phone_sha256": "c26430c5753aa9bd5bd4b93a1065407e0ff8d4aee2bb07590866c200064bef55",
+  "v02_sha256": "e7f5a6347c5f391c54ce0cadca896f508dce2fe3c6e1f267298267dd26ac3601",
+  "copies": {
+    "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/004_Whats-Really-Inside-An-Atom/10_Shorts/hos_004_s05_dalton_v03.mp4": "f93745e955586097293b7e37cad73c025ec99d79b0ee3b8e34bd955df6380edc",
+    "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/004_Whats-Really-Inside-An-Atom/10_Shorts/hos_004_s05_dalton_v03_PHONE.mp4": "c26430c5753aa9bd5bd4b93a1065407e0ff8d4aee2bb07590866c200064bef55",
+    "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/004_Whats-Really-Inside-An-Atom/10_Shorts/hos_004_s05_dalton_v03_2fps_sheet.jpg": "085563081830e454eb5b1154a594c3c78167a75a130092fd9655a40a7ff946a2",
+    "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/s05_dalton_v03/hos_004_s05_dalton_v03.mp4": "f93745e955586097293b7e37cad73c025ec99d79b0ee3b8e34bd955df6380edc",
+    "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/s05_dalton_v03/hos_004_s05_dalton_v03_PHONE.mp4": "c26430c5753aa9bd5bd4b93a1065407e0ff8d4aee2bb07590866c200064bef55",
+    "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/s05_dalton_v03/hos_004_s05_dalton_v03_2fps_sheet.jpg": "085563081830e454eb5b1154a594c3c78167a75a130092fd9655a40a7ff946a2"
+  },
+  "aac_lufs": -14.2,
+  "aac_true_peak_dbfs": -1.7
+}

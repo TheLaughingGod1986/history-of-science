@@ -1,0 +1,2 @@
+PASS  hos_004_s05_dalton_v03.mp4  dur=24.53s  audio=-17.6dB  motion=27.67  f0diff=2.92  cut1=2.57s  vo_onset=0.00s  tail_gap=0.64s  vo_src=/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/_work_s05_dalton_v03/hos_004_s05_dalton_vo_v03.wav  dhash=662ca64b5303161d
+   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_004_s05_dalton_v03_open_sheet.jpg

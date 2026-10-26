@@ -470,11 +470,15 @@
   "air_date_draft_note": "2027-01-24 used for the gate only; slot is Chief's call.",
   "brief": {
     "frame0": "moving video part03/03b_lancet_case_t1.mp4 in 1.20 s, crop x=900, no zoom",
+    "subject_named_s": 0.019,
+    "first_word_s": 0.019,
     "first_word_onset_s": 0.019,
     "surprise_word": "Jenner did the test",
     "surprise_s": 0.019,
     "first_cut_s": 1.125,
+    "loop_s": 0.445,
     "last_word_to_loop_s": 0.445,
+    "payoff_frac": 0.87,
     "meta_promise": "no",
     "youtube_id": "-I_GHK-GcFs"
   },

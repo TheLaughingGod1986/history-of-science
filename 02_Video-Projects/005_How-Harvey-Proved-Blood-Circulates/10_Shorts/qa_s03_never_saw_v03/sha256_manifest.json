@@ -1,0 +1,18 @@
+{
+  "job": "J0966",
+  "youtube_id": "x_3L_IdYgEc",
+  "version": "v03",
+  "master_sha256": "3646009fc65189e1c39ce457ca6e955e7de664b7b2773005b8d3855e27e96fde",
+  "phone_sha256": "1d1719fadc9f0e65ac0a88e2524df5b67699c9fbd999771cf3fd1801afbd55f1",
+  "v02_sha256": "c561028550852b62e9495716cfe3c3f615b668aba75b7e78dadd7453d74efb5c",
+  "copies": {
+    "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s03_never_saw_v03.mp4": "3646009fc65189e1c39ce457ca6e955e7de664b7b2773005b8d3855e27e96fde",
+    "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s03_never_saw_v03_PHONE.mp4": "1d1719fadc9f0e65ac0a88e2524df5b67699c9fbd999771cf3fd1801afbd55f1",
+    "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s03_never_saw_v03_2fps_sheet.jpg": "98f300b05e6436ae0830b892801c8114e479f1cf21a5a0cb914adfa8b129a180",
+    "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/never_saw_v03/hos_005_s03_never_saw_v03.mp4": "3646009fc65189e1c39ce457ca6e955e7de664b7b2773005b8d3855e27e96fde",
+    "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/never_saw_v03/hos_005_s03_never_saw_v03_PHONE.mp4": "1d1719fadc9f0e65ac0a88e2524df5b67699c9fbd999771cf3fd1801afbd55f1",
+    "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/never_saw_v03/hos_005_s03_never_saw_v03_2fps_sheet.jpg": "98f300b05e6436ae0830b892801c8114e479f1cf21a5a0cb914adfa8b129a180"
+  },
+  "aac_lufs": -14.0,
+  "aac_true_peak_dbfs": -1.9
+}

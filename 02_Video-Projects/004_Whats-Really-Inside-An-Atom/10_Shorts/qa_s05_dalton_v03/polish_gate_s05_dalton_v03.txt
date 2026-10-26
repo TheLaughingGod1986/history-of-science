@@ -1,0 +1,10 @@
+s01_0     1.3s 01_dalton_schoolroom_v01.mp4 ok
+s02_and     3.7s 15_knife_coin_return_v01.mp4 ok
+s03_Hydrogen     6.6s 05_fixed_amounts_v01.mp4     WARN low detail: edge density 0.0245 < film p5 0.0339
+s04_Gold     9.6s 07_water_always_v01.mp4      ok
+s05_Why    12.3s 02_atomic_theory_v01.mp4     ok
+s06_combine    15.4s 04_gold_heavier_v01.mp4      ok
+s07_same    19.0s 20_what_is_order_v01.mp4     ok
+s08_if    22.1s 03_atom_turns_v01.mp4        ok
+s09_loop    23.9s loop_span_01_dalton_schoolro ok
+polish gate PASS: 0 of 9 rows failed, 1 to look at -> 02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/qa_s05_dalton_v03/polish_gate_s05_dalton_v03.json

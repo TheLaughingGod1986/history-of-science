@@ -1,0 +1,11 @@
+s01_open     1.0s 06_eyepiece_mesh_t1.mp4      ok
+s02_He     3.1s 01_loop_gap_t5.mp4           ok
+s03_but     5.8s 02_tiny_gaps_t1.mp4          WARN low detail: edge density 0.0194 < film p5 0.0331
+s04_died     9.2s 03_old_harvey_t1.mp4         ok
+s05_Four    12.1s 04_malpighi_slide_t1.mp4     ok
+s06_put    14.6s 17_dutch_lens_t1.mp4         ok
+s07_There    17.3s 07_capillaries_loop_t1.mp4   ok
+s08_finer    20.1s 07_capillaries_loop_t2.mp4   ok
+s09_The    22.8s 16_proved_last_link_t2.mp4   ok
+s10_loop    24.8s loop_span_06_eyepiece_mesh_t ok
+polish gate PASS: 0 of 10 rows failed, 1 to look at -> 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s03_never_saw_v03/polish_gate_s03_never_saw_v03.json
