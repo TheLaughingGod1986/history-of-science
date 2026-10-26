@@ -467,5 +467,10 @@
     "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/never_saw_v03/hos_005_s03_never_saw_v03.mp4": "3646009fc65189e1c39ce457ca6e955e7de664b7b2773005b8d3855e27e96fde",
     "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/never_saw_v03/hos_005_s03_never_saw_v03_PHONE.mp4": "1d1719fadc9f0e65ac0a88e2524df5b67699c9fbd999771cf3fd1801afbd55f1",
     "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/never_saw_v03/hos_005_s03_never_saw_v03_2fps_sheet.jpg": "98f300b05e6436ae0830b892801c8114e479f1cf21a5a0cb914adfa8b129a180"
+  },
+  "vo_check": {
+    "exit": 0,
+    "input": "vo_trim.wav",
+    "output": "PASS  vo_trim.wav  0:24.26  mean -21.6 dB  peak -2.0 dB  143 wpm\n   warn  pace 143 wpm (< 145); expect a long film \u2014 see STUDIO_PLAYBOOK.md \u00a74 speed"
   }
 }

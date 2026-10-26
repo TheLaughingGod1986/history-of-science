@@ -421,6 +421,16 @@ def build() -> None:
         f"aac_lufs={aac_lufs:.2f} aac_true_peak_dbfs={aac_peak:.2f}\n"
     )
 
+    vo_py = Path.home() / ".venvs/hos-vo/bin/python"
+    vo_res = subprocess.run(
+        [str(vo_py), str(REPO / "00_Brand/Channel-Setup/tools/vo_check.py"),
+         str(vo), "--script", str(WORK / "spoken.txt")],
+        capture_output=True, text=True)
+    vo_out = "\n".join(ln for ln in (vo_res.stdout + vo_res.stderr).splitlines() if "Warning" not in ln and ln.strip())
+    (QA / "vo_check_s03_never_saw_v03.txt").write_text(vo_out + "\n")
+    meta["vo_check"] = {"exit": vo_res.returncode, "input": vo.name, "output": vo_out}
+    meta_path.write_text(json.dumps(meta, indent=2) + "\n")
+
     cuts_plates, pool_plates, seen = [], [], set()
     for k, row in enumerate(plan, 1):
         src_id = f"loop_span_{row['src'].name}" if row["label"] == "loop" else row["src"].name

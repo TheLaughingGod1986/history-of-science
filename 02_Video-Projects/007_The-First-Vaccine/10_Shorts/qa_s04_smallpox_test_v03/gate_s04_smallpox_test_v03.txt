@@ -1,0 +1,2 @@
+PASS  hos_007_s04_smallpox_test_v03.mp4  dur=22.4s  audio=-16.8dB  motion=19.24  f0diff=3.51  cut1=1.2s  vo_onset=0.09s  tail_gap=0.42s  vo_src=/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/007_The-First-Vaccine/10_Shorts/_work_s04_smallpox_test_v03/hos_007_s04_smallpox_test_vo_v03.wav  dhash=6178665d98e079ff
+   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_007_s04_smallpox_test_v03_open_sheet.jpg

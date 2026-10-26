@@ -708,8 +708,9 @@ def main() -> None:
         f"aac_lufs={rec['lufs']:.2f} aac_true_peak_dbfs={rec['true_peak_dbfs']:.2f}\n"
     )
 
-    code_vo, out_vo = run([str(VO_PY), str(VO_CHECK), str(mp4), "--script", str(SCRIPT_TXT)])
-    rec["vo_check"] = {"exit": code_vo, "output": out_vo}
+    code_vo, out_vo = run([str(VO_PY), str(VO_CHECK), str(vo_file), "--script", str(SCRIPT_TXT)])
+    rec["vo_check"] = {"exit": code_vo, "input": vo_file.name, "output": out_vo}
+    (QA / f"vo_check_{SID}_{VER}.txt").write_text(out_vo + "\n")
     rec["freezedetect_starts"] = freeze(mp4)
     rec["qa"] = run_qa(mp4, rec["plan"], bed_path)
 

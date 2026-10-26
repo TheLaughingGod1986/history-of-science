@@ -1,0 +1,1 @@
+PASS  hos_007_s04_smallpox_test_vo_v03.wav  0:22.05  mean -23.6 dB  peak -5.1 dB  155 wpm

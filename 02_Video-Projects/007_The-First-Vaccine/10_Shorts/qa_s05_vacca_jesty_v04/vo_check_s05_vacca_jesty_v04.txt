@@ -1,0 +1,4 @@
+PASS  hos_007_s05_vacca_jesty_vo_v04.wav  0:24.67  mean -23.9 dB  peak -4.7 dB  144 wpm
+   warn  pace 144 wpm (< 145); expect a long film — see STUDIO_PLAYBOOK.md §4 speed
+   warn  replace at ~0:12.22: script 'a latin name variolae vaccinae which means' / heard 'a latin name varioli vaccinae which means' — sounds alike (likely the transcriber); listen
+   warn  replace at ~0:17.86: script 'the cow from vacca the latin word' / heard 'the cow from vaca the latin word' — sounds alike (likely the transcriber); listen

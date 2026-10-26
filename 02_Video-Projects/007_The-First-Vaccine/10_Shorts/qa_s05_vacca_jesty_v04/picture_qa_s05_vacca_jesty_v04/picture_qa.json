@@ -1,0 +1,175 @@
+{
+  "verdict": "PASS",
+  "video": "02_Video-Projects/007_The-First-Vaccine/10_Shorts/hos_007_s05_vacca_jesty_v04.mp4",
+  "rules": {
+    "kind_fail": "computer[- ]?(reconstruction|model|generated|simulation|graphic)|\\bsimulation\\b|\\bdiagram|\\bchart\\b|\\bgraph\\b|\\bschematic|\\bannotated\\b|\\blabell?ed\\b|\\bscreen ?shot|\\bwireframe|\\bcad\\b|\\binfographic",
+    "kind_warn": "\\bartist|\\billustration|\\bconcept\\b|\\brender|\\banimation\\b|\\bmap\\b|\\bmosaic\\b|\\bcomposite\\b",
+    "upscale_fail": 2.35,
+    "upscale_warn": 2.0,
+    "max_reuse": 2,
+    "max_stretches": 5,
+    "same_stretch": 10.0,
+    "pixels": "scripts/polish_gate.py"
+  },
+  "failed": [],
+  "warn": [
+    {
+      "cut": 5,
+      "row": "s06_Latin",
+      "source": "05_quill_writes_t1.mp4",
+      "title": "Flow Veo 3.1 plate 05_quill_writes_t1.mp4",
+      "t": 13.61,
+      "at": "0:14",
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0255 < film p5 0.0278"
+      ],
+      "offset": 0.4
+    }
+  ],
+  "rows": [
+    {
+      "cut": 0,
+      "row": "s01_0",
+      "source": "09_meadow_golden_t1.mp4",
+      "title": "Flow Veo 3.1 plate 09_meadow_golden_t1.mp4",
+      "t": 1.15,
+      "at": "0:01",
+      "fail": [],
+      "warn": [],
+      "offset": 4.2
+    },
+    {
+      "cut": 1,
+      "row": "s02_Benjamin",
+      "source": "06_jesty_family_t1.mp4",
+      "title": "Flow Veo 3.1 plate 06_jesty_family_t1.mp4",
+      "t": 3.95,
+      "at": "0:04",
+      "fail": [],
+      "warn": [],
+      "offset": 0.4
+    },
+    {
+      "cut": 2,
+      "row": "s03_He",
+      "source": "10_garden_hut_t1.mp4",
+      "title": "Flow Veo 3.1 plate 10_garden_hut_t1.mp4",
+      "t": 6.41,
+      "at": "0:06",
+      "fail": [],
+      "warn": [],
+      "offset": 0.4
+    },
+    {
+      "cut": 3,
+      "row": "s04_seventeen",
+      "source": "08_soho_press_t1.mp4",
+      "title": "Flow Veo 3.1 plate 08_soho_press_t1.mp4",
+      "t": 8.89,
+      "at": "0:09",
+      "fail": [],
+      "warn": [],
+      "offset": 0.4
+    },
+    {
+      "cut": 4,
+      "row": "s05_He",
+      "source": "10_history_book_t1.mp4",
+      "title": "Flow Veo 3.1 plate 10_history_book_t1.mp4",
+      "t": 11.28,
+      "at": "0:11",
+      "fail": [],
+      "warn": [],
+      "offset": 0.4
+    },
+    {
+      "cut": 5,
+      "row": "s06_Latin",
+      "source": "05_quill_writes_t1.mp4",
+      "title": "Flow Veo 3.1 plate 05_quill_writes_t1.mp4",
+      "t": 13.61,
+      "at": "0:14",
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0255 < film p5 0.0278"
+      ],
+      "offset": 0.4
+    },
+    {
+      "cut": 6,
+      "row": "s07_which",
+      "source": "01_cow_meadow_t1.mp4",
+      "title": "Flow Veo 3.1 plate 01_cow_meadow_t1.mp4",
+      "t": 16.82,
+      "at": "0:17",
+      "fail": [],
+      "warn": [],
+      "offset": 0.4
+    },
+    {
+      "cut": 7,
+      "row": "s08_From",
+      "source": "10a_packets_t1.mp4",
+      "title": "Flow Veo 3.1 plate 10a_packets_t1.mp4",
+      "t": 19.86,
+      "at": "0:20",
+      "fail": [],
+      "warn": [],
+      "offset": 0.4
+    },
+    {
+      "cut": 8,
+      "row": "s09_came",
+      "source": "06_line_underlined_t1.mp4",
+      "title": "Flow Veo 3.1 plate 06_line_underlined_t1.mp4",
+      "t": 22.59,
+      "at": "0:23",
+      "fail": [],
+      "warn": [],
+      "offset": 0.4
+    },
+    {
+      "cut": 9,
+      "row": "s10_loop",
+      "source": "loop_end_09_meadow_golden_t1.mp4",
+      "title": "Loop end plate 09_meadow_golden_t1.mp4",
+      "t": 24.44,
+      "at": "0:24",
+      "fail": [],
+      "warn": [],
+      "offset": 3.0500000000000003
+    }
+  ],
+  "polish": {
+    "edge_floor": 0.0278,
+    "low_detail_floor": {
+      "std": 13.44,
+      "edge": 0.0259,
+      "calibration": {
+        "video": "025_MarsRobot_full_rough_v02d.mp4",
+        "factor": 1.2,
+        "frames": [
+          {
+            "source": "PIA22223.jpg",
+            "t": 201.0,
+            "std": 12.1,
+            "edge": 0.0223
+          },
+          {
+            "source": "PIA22223.jpg",
+            "t": 216.3,
+            "std": 11.2,
+            "edge": 0.0216
+          },
+          {
+            "source": "PIA22929.jpg",
+            "t": 297.4,
+            "std": 26.54,
+            "edge": 0.5735
+          }
+        ]
+      }
+    }
+  }
+}

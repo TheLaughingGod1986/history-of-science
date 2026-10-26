@@ -35,5 +35,10 @@
   "frame0_black": 0.0,
   "longest_hold_s": 3.298,
   "payoff_frac": 0.807,
-  "v02_untouched": true
+  "v02_untouched": true,
+  "vo_check": {
+    "exit": 0,
+    "input": "vo_trim.wav",
+    "output": "PASS  vo_trim.wav  0:24.26  mean -21.6 dB  peak -2.0 dB  143 wpm\n   warn  pace 143 wpm (< 145); expect a long film \u2014 see STUDIO_PLAYBOOK.md \u00a74 speed"
+  }
 }

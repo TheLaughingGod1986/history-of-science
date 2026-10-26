@@ -1,0 +1,28 @@
+{
+  "file": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/007_The-First-Vaccine/10_Shorts/hos_007_s04_smallpox_test_v03.mp4",
+  "air_date": "2026-11-13",
+  "fails": [],
+  "warns": [],
+  "stayed_fails": [],
+  "duration_s": 22.4,
+  "audio": {
+    "stream": true,
+    "mean_db": -16.8,
+    "open_mean_db": -18.9
+  },
+  "vo_src": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/007_The-First-Vaccine/10_Shorts/_work_s04_smallpox_test_v03/hos_007_s04_smallpox_test_vo_v03.wav",
+  "vo_onset_s": 0.094,
+  "last_word_end_s": 21.979,
+  "tail_gap_s": 0.42,
+  "level": {
+    "lufs": -14.2,
+    "true_peak_dbtp": -1.6
+  },
+  "motion_0_1s": 19.24,
+  "frame0_diff_0_1_5s": 3.51,
+  "first_cut_s": 1.2,
+  "dhash": "6178665d98e079ff",
+  "near_opens": [],
+  "contact_sheet": "/var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_007_s04_smallpox_test_v03_open_sheet.jpg",
+  "verdict": "PASS"
+}
