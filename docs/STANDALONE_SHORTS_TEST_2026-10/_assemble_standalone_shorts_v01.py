@@ -395,8 +395,11 @@ def sheet(recs: list[dict], name: str | None = None) -> Path:
 
 
 def main() -> None:
+    rebuild_v01 = "--rebuild-v01" in sys.argv
+    sys.argv = [a for a in sys.argv if a != "--rebuild-v01"]
     ap = argparse.ArgumentParser()
     ap.add_argument("--only", nargs="*")
+    ap.add_argument("--rebuild-v01", action="store_true", default=rebuild_v01)
     ns = ap.parse_args()
     idx_p = HERE / "SHORTS_INDEX_v01.json"
     index = json.loads(idx_p.read_text()) if idx_p.exists() else {"job": "J0171", "shorts": {}}
@@ -404,7 +407,7 @@ def main() -> None:
     for item in SHORTS:
         if ns.only and not any(item["id"].startswith(o) for o in ns.only):
             continue
-        if item["id"].startswith(("s5_", "s6_", "s7_", "s8_")) and "--rebuild-v01" not in sys.argv:
+        if item["id"].startswith(("s5_", "s6_", "s7_", "s8_")) and not ns.rebuild_v01:
             print(f"J0967: {item['id']} stays unbuilt (still open, no generation). See BUILD_RULE_S5_S8_v02.json")
             continue
         rec = build(item)

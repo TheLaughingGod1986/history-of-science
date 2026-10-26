@@ -490,6 +490,7 @@ def main() -> None:
             "The next cut is BUILD_RULE_v02.json, checked by hos_build_rule_v02.py. "
             "Pass --rebuild-v01 only to reproduce the old file."
         )
+    sys.argv = [a for a in sys.argv if a != "--rebuild-v01"]
     ap = argparse.ArgumentParser()
     ap.add_argument("--air-date", default="2026-11-26")
     ap.add_argument("--no-icloud", action="store_true")
