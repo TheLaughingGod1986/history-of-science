@@ -1,0 +1,238 @@
+{
+  "rule": {
+    "low_detail": "FAIL: luma std < 13.44 and edge density < 0.0259 (absolute floor); WARN: luma std < 18.0 or edge density < film p5",
+    "split_panel": "full-height/width seam or gutter",
+    "split_panel_gutter": "gutter counts only with edge density >= 0.01 in the 10% band on both sides",
+    "near_black": "mean < 28.0 or p95 < 50.0",
+    "noise": "grain std > 6 over structure std < 12, and the 8x-downscaled frame under the low-detail floor (std < 13.44 and edge density < 0.0259)",
+    "jitter": "centre-patch phase correlation: reversal against trend or > 0.35 px off trend"
+  },
+  "low_detail_floor": {
+    "std": 13.44,
+    "edge": 0.0259,
+    "calibration": {
+      "video": "025_MarsRobot_full_rough_v02d.mp4",
+      "factor": 1.2,
+      "frames": [
+        {
+          "source": "PIA22223.jpg",
+          "t": 201.0,
+          "std": 12.1,
+          "edge": 0.0223
+        },
+        {
+          "source": "PIA22223.jpg",
+          "t": 216.3,
+          "std": 11.2,
+          "edge": 0.0216
+        },
+        {
+          "source": "PIA22929.jpg",
+          "t": 297.4,
+          "std": 26.54,
+          "edge": 0.5735
+        }
+      ]
+    }
+  },
+  "video": "02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/hos_002_backcat_four_elements_v03.mp4",
+  "edge_floor": 0.0487,
+  "verdict": "PASS",
+  "failed": [],
+  "warn": [
+    {
+      "row": "s02_For",
+      "cut": 1,
+      "t": 3.54,
+      "source": "04_iron_salt_flame_air_v01.mp4",
+      "why": [
+        "low detail: edge density 0.0433 < film p5 0.0487"
+      ]
+    }
+  ],
+  "reviewed_ok": [],
+  "rows": [
+    {
+      "cut": 0,
+      "row": "s01_open",
+      "source": "03_four_elements_crumble_v01.mp4",
+      "t": 1.29,
+      "std": 52.07,
+      "mean": 99.87,
+      "p95": 202.0,
+      "edge": 0.143,
+      "hf": 16.12,
+      "lf": 41.64,
+      "std8": 45.17,
+      "edge8": 0.5125,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 1,
+      "row": "s02_For",
+      "source": "04_iron_salt_flame_air_v01.mp4",
+      "t": 3.54,
+      "std": 63.7,
+      "mean": 98.18,
+      "p95": 217.0,
+      "edge": 0.0433,
+      "hf": 7.05,
+      "lf": 59.98,
+      "std8": 61.93,
+      "edge8": 0.324,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0433 < film p5 0.0487"
+      ]
+    },
+    {
+      "cut": 2,
+      "row": "s03_everything",
+      "source": "06_alchemist_accidents_v01.mp4",
+      "t": 5.74,
+      "std": 60.52,
+      "mean": 101.33,
+      "p95": 209.0,
+      "edge": 0.0631,
+      "hf": 7.52,
+      "lf": 55.51,
+      "std8": 57.89,
+      "edge8": 0.445,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 3,
+      "row": "s04_But",
+      "source": "10_rock_not_fire_v01.mp4",
+      "t": 8.48,
+      "std": 52.54,
+      "mean": 86.02,
+      "p95": 179.0,
+      "edge": 0.0738,
+      "hf": 9.24,
+      "lf": 46.35,
+      "std8": 49.07,
+      "edge8": 0.409,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 4,
+      "row": "s05_Air",
+      "source": "02_workshop_jars_v01.mp4",
+      "t": 11.12,
+      "std": 53.06,
+      "mean": 76.25,
+      "p95": 167.0,
+      "edge": 0.0804,
+      "hf": 10.96,
+      "lf": 46.8,
+      "std8": 49.19,
+      "edge8": 0.3207,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 5,
+      "row": "s06_Antoine",
+      "source": "lavoisier_list_t1.mp4",
+      "t": 13.57,
+      "std": 56.26,
+      "mean": 94.05,
+      "p95": 223.0,
+      "edge": 0.0992,
+      "hf": 13.79,
+      "lf": 49.38,
+      "std8": 51.77,
+      "edge8": 0.3527,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 6,
+      "row": "s07_and",
+      "source": "08_labelled_zoo_v01.mp4",
+      "t": 16.39,
+      "std": 53.29,
+      "mean": 93.04,
+      "p95": 188.0,
+      "edge": 0.0863,
+      "hf": 9.18,
+      "lf": 47.68,
+      "std8": 50.05,
+      "edge8": 0.3683,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 7,
+      "row": "s08_His",
+      "source": "07_shelf_names_grow_v01.mp4",
+      "t": 18.98,
+      "std": 59.13,
+      "mean": 88.41,
+      "p95": 176.0,
+      "edge": 0.0553,
+      "hf": 7.23,
+      "lf": 54.84,
+      "std8": 56.96,
+      "edge8": 0.3402,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 8,
+      "row": "s09_Two",
+      "source": "11_chemists_more_names_v01.mp4",
+      "t": 21.32,
+      "std": 54.4,
+      "mean": 104.63,
+      "p95": 201.0,
+      "edge": 0.0922,
+      "hf": 10.19,
+      "lf": 47.08,
+      "std8": 50.43,
+      "edge8": 0.4144,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 9,
+      "row": "s10_loop",
+      "source": "loop_span_03_four_elements_crumble_v01.mp4",
+      "t": 23.04,
+      "std": 47.23,
+      "mean": 99.23,
+      "p95": 177.0,
+      "edge": 0.0674,
+      "hf": 7.09,
+      "lf": 42.11,
+      "std8": 44.19,
+      "edge8": 0.4517,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    }
+  ]
+}

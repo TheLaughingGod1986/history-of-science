@@ -1,0 +1,35 @@
+{
+  "file": "hos_002_backcat_four_elements_v03.mp4",
+  "sha256": "9340cae9cd5b71e4cd3ddea2f87123b5e6891a1d236a6ca17775d9d6daf4f5ef",
+  "duration_s": 23.567,
+  "lufs": -14.0,
+  "true_peak_dbfs": -1.7,
+  "gain_db": 4.2,
+  "limiter_db": -1.8,
+  "gate_exit": 0,
+  "gate_verdict": "PASS",
+  "gate_fails": [],
+  "polish_exit": 0,
+  "picture_exit": 0,
+  "music_exit": 0,
+  "sfx_exit": 0,
+  "polish_tail": [
+    "s08_His    19.0s 07_shelf_names_grow_v01.mp4  ok",
+    "s09_Two    21.3s 11_chemists_more_names_v01.m ok",
+    "s10_loop    23.0s loop_span_03_four_elements_c ok",
+    "polish gate PASS: 0 of 10 rows failed, 1 to look at -> 02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/qa_four_elements_v03/polish_gate_four_elements_v03.json"
+  ],
+  "picture_tail": [
+    "WARN   0:04 row s02_For 04_iron_salt_flame_air_v01.mp4: low detail: edge density 0.0433 < film p5 0.0487",
+    "picture QA PASS: 0 of 10 cuts fail, 1 to look at -> 02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/qa_four_elements_v03/picture_qa_four_elements_v03/PICTURE_QA.md, 02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/qa_four_elements_v03/picture_qa_four_elements_v03/picture_qa_review.jpg"
+  ],
+  "music_tail": [
+    "WARN reused: couldn't read monday_saturn_short_vo_v02_how_long.mp3 to compare (OSError); download it or pass --others",
+    "WARN reused: couldn't read saturn_long_vo_v03_tightened.wav to compare (OSError); download it or pass --others",
+    "music gate PASS: hos_002_backcat_four_elements_v02_bed.wav, 23.9 s, about 63.2 BPM, brief Pace: 60-68 BPM"
+  ],
+  "sfx_tail": [
+    "SFX level PASS: VO -17.9 LUFS, SFX -47.6 LUFS, 1 hits"
+  ],
+  "v02_untouched": true
+}

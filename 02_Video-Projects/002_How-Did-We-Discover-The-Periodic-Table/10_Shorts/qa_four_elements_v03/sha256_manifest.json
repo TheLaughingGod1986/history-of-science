@@ -1,0 +1,18 @@
+{
+  "job": "J0965",
+  "youtube_id": "Pp5LmjsduI4",
+  "version": "v03",
+  "master_sha256": "9340cae9cd5b71e4cd3ddea2f87123b5e6891a1d236a6ca17775d9d6daf4f5ef",
+  "phone_sha256": "b3a68dc6eef7727b007311587c3353c663e95675117445bed848ad20c3542f40",
+  "v02_sha256": "df2d58a1d1330b892f0f3b3b4feb30ea459d59578aa72f5675747d604abddbf7",
+  "copies": {
+    "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/hos_002_backcat_four_elements_v03.mp4": "9340cae9cd5b71e4cd3ddea2f87123b5e6891a1d236a6ca17775d9d6daf4f5ef",
+    "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/hos_002_backcat_four_elements_v03_PHONE.mp4": "b3a68dc6eef7727b007311587c3353c663e95675117445bed848ad20c3542f40",
+    "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/hos_002_backcat_four_elements_v03_2fps_sheet.jpg": "068955b4878efcfce4d3e39fea718d479aecae1a356f076e9653b24fd6cc7e23",
+    "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/four_elements_v03/hos_002_backcat_four_elements_v03.mp4": "9340cae9cd5b71e4cd3ddea2f87123b5e6891a1d236a6ca17775d9d6daf4f5ef",
+    "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/four_elements_v03/hos_002_backcat_four_elements_v03_PHONE.mp4": "b3a68dc6eef7727b007311587c3353c663e95675117445bed848ad20c3542f40",
+    "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/four_elements_v03/hos_002_backcat_four_elements_v03_2fps_sheet.jpg": "068955b4878efcfce4d3e39fea718d479aecae1a356f076e9653b24fd6cc7e23"
+  },
+  "aac_lufs": -14.0,
+  "aac_true_peak_dbfs": -1.7
+}

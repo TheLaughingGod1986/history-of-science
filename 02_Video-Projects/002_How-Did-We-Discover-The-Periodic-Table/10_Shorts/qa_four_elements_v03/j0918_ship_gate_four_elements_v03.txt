@@ -1,0 +1,5 @@
+J0918 HOS ship gate, v03 cards + master gain.
+verdict=PASS frame0_diff=4.82 first_cut_s=2.57 vo_onset_s=0.037 tail_gap_s=1.03 stayed_fails=[]
+fails=[]
+warns=[]
+aac_lufs=-14.00 aac_true_peak_dbfs=-1.70 arent_s=1.474

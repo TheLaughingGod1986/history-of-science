@@ -1,0 +1,139 @@
+[
+  {
+    "row": "s01_open",
+    "timeline_in": 0.0,
+    "timeline_out": 2.572,
+    "source": "03_four_elements_crumble_v01.mp4",
+    "upscale": 1.78,
+    "video": true,
+    "framing": {
+      "offset": 3.5
+    }
+  },
+  {
+    "row": "s02_For",
+    "timeline_in": 2.572,
+    "timeline_out": 4.506,
+    "source": "04_iron_salt_flame_air_v01.mp4",
+    "upscale": 1.78,
+    "video": true,
+    "framing": {
+      "offset": 0.3
+    }
+  },
+  {
+    "row": "s03_everything",
+    "timeline_in": 4.506,
+    "timeline_out": 6.971,
+    "source": "06_alchemist_accidents_v01.mp4",
+    "upscale": 1.78,
+    "video": true,
+    "framing": {
+      "offset": 0.4
+    }
+  },
+  {
+    "row": "s04_But",
+    "timeline_in": 6.971,
+    "timeline_out": 9.993,
+    "source": "10_rock_not_fire_v01.mp4",
+    "upscale": 1.78,
+    "video": true,
+    "framing": {
+      "offset": 0.3
+    }
+  },
+  {
+    "row": "s05_Air",
+    "timeline_in": 9.993,
+    "timeline_out": 12.243,
+    "source": "02_workshop_jars_v01.mp4",
+    "upscale": 1.78,
+    "video": true,
+    "framing": {
+      "offset": 0.5
+    }
+  },
+  {
+    "row": "s06_Antoine",
+    "timeline_in": 12.243,
+    "timeline_out": 14.907,
+    "source": "lavoisier_list_t1.mp4",
+    "upscale": 1.78,
+    "video": true,
+    "framing": {
+      "offset": 0.1
+    }
+  },
+  {
+    "row": "s07_and",
+    "timeline_in": 14.907,
+    "timeline_out": 17.867,
+    "source": "08_labelled_zoo_v01.mp4",
+    "upscale": 1.78,
+    "video": true,
+    "framing": {
+      "offset": 1.0
+    }
+  },
+  {
+    "row": "s08_His",
+    "timeline_in": 17.867,
+    "timeline_out": 20.097,
+    "source": "07_shelf_names_grow_v01.mp4",
+    "upscale": 1.78,
+    "video": true,
+    "framing": {
+      "offset": 0.5
+    }
+  },
+  {
+    "row": "s09_Two",
+    "timeline_in": 20.097,
+    "timeline_out": 22.537,
+    "source": "11_chemists_more_names_v01.mp4",
+    "upscale": 1.78,
+    "video": true,
+    "framing": {
+      "offset": 0.4
+    }
+  },
+  {
+    "row": "s10_loop",
+    "timeline_in": 22.537,
+    "timeline_out": 23.537,
+    "source": "loop_span_03_four_elements_crumble_v01.mp4",
+    "upscale": 1.78,
+    "video": true,
+    "framing": {
+      "offset": 2.5
+    }
+  },
+  {
+    "row": "card_lavoisier",
+    "timeline_in": 12.243,
+    "timeline_out": 14.907,
+    "source": "code_graphic_four_elements_v03_lavoisier.png",
+    "upscale": 1.0,
+    "video": false,
+    "overlay": true
+  },
+  {
+    "row": "card_33",
+    "timeline_in": 17.867,
+    "timeline_out": 20.097,
+    "source": "code_graphic_four_elements_v03_33.png",
+    "upscale": 1.0,
+    "video": false,
+    "overlay": true
+  },
+  {
+    "row": "card_light",
+    "timeline_in": 20.097,
+    "timeline_out": 22.5,
+    "source": "code_graphic_four_elements_v03_light.png",
+    "upscale": 1.0,
+    "video": false,
+    "overlay": true
+  }
+]
