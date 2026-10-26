@@ -1,0 +1,238 @@
+{
+  "rule": {
+    "low_detail": "FAIL: luma std < 13.44 and edge density < 0.0259 (absolute floor); WARN: luma std < 18.0 or edge density < film p5",
+    "split_panel": "full-height/width seam or gutter",
+    "split_panel_gutter": "gutter counts only with edge density >= 0.01 in the 10% band on both sides",
+    "near_black": "mean < 28.0 or p95 < 50.0",
+    "noise": "grain std > 6 over structure std < 12, and the 8x-downscaled frame under the low-detail floor (std < 13.44 and edge density < 0.0259)",
+    "jitter": "centre-patch phase correlation: reversal against trend or > 0.35 px off trend"
+  },
+  "low_detail_floor": {
+    "std": 13.44,
+    "edge": 0.0259,
+    "calibration": {
+      "video": "025_MarsRobot_full_rough_v02d.mp4",
+      "factor": 1.2,
+      "frames": [
+        {
+          "source": "PIA22223.jpg",
+          "t": 201.0,
+          "std": 12.1,
+          "edge": 0.0223
+        },
+        {
+          "source": "PIA22223.jpg",
+          "t": 216.3,
+          "std": 11.2,
+          "edge": 0.0216
+        },
+        {
+          "source": "PIA22929.jpg",
+          "t": 297.4,
+          "std": 26.54,
+          "edge": 0.5735
+        }
+      ]
+    }
+  },
+  "video": "02_Video-Projects/007_The-First-Vaccine/10_Shorts/hos_007_s04_smallpox_test_v02.mp4",
+  "edge_floor": 0.0228,
+  "verdict": "PASS",
+  "failed": [],
+  "warn": [
+    {
+      "row": "s04_which",
+      "cut": 3,
+      "t": 8.12,
+      "source": "06_mild_fever_t1.mp4",
+      "why": [
+        "low detail: edge density 0.0162 < film p5 0.0228"
+      ]
+    }
+  ],
+  "reviewed_ok": [],
+  "rows": [
+    {
+      "cut": 0,
+      "row": "s01_0",
+      "source": "03b_lancet_case_t1.mp4",
+      "t": 0.56,
+      "std": 68.63,
+      "mean": 112.96,
+      "p95": 228.0,
+      "edge": 0.0819,
+      "hf": 15.36,
+      "lf": 60.05,
+      "std8": 63.29,
+      "edge8": 0.4048,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 1,
+      "row": "s02_He",
+      "source": "02_variolation_calm_t1.mp4",
+      "t": 2.46,
+      "std": 33.82,
+      "mean": 51.31,
+      "p95": 117.0,
+      "edge": 0.0309,
+      "hf": 8.31,
+      "lf": 28.19,
+      "std8": 30.28,
+      "edge8": 0.1808,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 2,
+      "row": "s03_the",
+      "source": "04_lancet_touch_t1.mp4",
+      "t": 5.24,
+      "std": 52.0,
+      "mean": 107.24,
+      "p95": 211.0,
+      "edge": 0.0604,
+      "hf": 8.97,
+      "lf": 47.08,
+      "std8": 48.92,
+      "edge8": 0.2916,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 3,
+      "row": "s04_which",
+      "source": "06_mild_fever_t1.mp4",
+      "t": 8.12,
+      "std": 44.09,
+      "mean": 84.65,
+      "p95": 148.0,
+      "edge": 0.0162,
+      "hf": 5.17,
+      "lf": 42.08,
+      "std8": 42.71,
+      "edge8": 0.1318,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0162 < film p5 0.0228"
+      ]
+    },
+    {
+      "cut": 4,
+      "row": "s05_Then",
+      "source": "05b_week_passes_t1.mp4",
+      "t": 11.46,
+      "std": 34.59,
+      "mean": 52.37,
+      "p95": 124.0,
+      "edge": 0.0576,
+      "hf": 9.55,
+      "lf": 29.47,
+      "std8": 31.21,
+      "edge8": 0.1984,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 5,
+      "row": "s06_A",
+      "source": "07_playing_garden_t1.mp4",
+      "t": 14.74,
+      "std": 63.95,
+      "mean": 138.05,
+      "p95": 245.0,
+      "edge": 0.0936,
+      "hf": 9.07,
+      "lf": 59.74,
+      "std8": 61.48,
+      "edge8": 0.3658,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 6,
+      "row": "s07_In",
+      "source": "13_casebook_t1.mp4",
+      "t": 17.58,
+      "std": 66.99,
+      "mean": 101.17,
+      "p95": 214.0,
+      "edge": 0.0412,
+      "hf": 7.22,
+      "lf": 64.64,
+      "std8": 65.64,
+      "edge8": 0.1338,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 7,
+      "row": "s08_Months",
+      "source": "05_days_pass_t1.mp4",
+      "t": 20.1,
+      "std": 50.32,
+      "mean": 121.8,
+      "p95": 203.0,
+      "edge": 0.1086,
+      "hf": 10.21,
+      "lf": 45.3,
+      "std8": 47.1,
+      "edge8": 0.365,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 8,
+      "row": "s09_Still",
+      "source": "06b_still_nothing_t1.mp4",
+      "t": 22.54,
+      "std": 51.63,
+      "mean": 109.95,
+      "p95": 210.0,
+      "edge": 0.0433,
+      "hf": 7.38,
+      "lf": 47.61,
+      "std8": 49.37,
+      "edge8": 0.2498,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 9,
+      "row": "s10_loop",
+      "source": "loop_end_03b_lancet_case_t1.mp4",
+      "t": 24.5,
+      "std": 64.35,
+      "mean": 104.06,
+      "p95": 221.0,
+      "edge": 0.0566,
+      "hf": 9.58,
+      "lf": 59.52,
+      "std8": 61.5,
+      "edge8": 0.3203,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    }
+  ]
+}

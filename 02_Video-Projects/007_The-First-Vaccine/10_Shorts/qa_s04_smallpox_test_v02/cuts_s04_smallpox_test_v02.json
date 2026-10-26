@@ -1,0 +1,112 @@
+[
+  {
+    "row": "s01_0",
+    "timeline_in": 0.0,
+    "timeline_out": 1.125,
+    "source": "03b_lancet_case_t1.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 1.2
+    },
+    "video": true
+  },
+  {
+    "row": "s02_He",
+    "timeline_in": 1.125,
+    "timeline_out": 3.802,
+    "source": "02_variolation_calm_t1.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.4
+    },
+    "video": true
+  },
+  {
+    "row": "s03_the",
+    "timeline_in": 3.802,
+    "timeline_out": 6.683,
+    "source": "04_lancet_touch_t1.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.4
+    },
+    "video": true
+  },
+  {
+    "row": "s04_which",
+    "timeline_in": 6.683,
+    "timeline_out": 9.557,
+    "source": "06_mild_fever_t1.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.4
+    },
+    "video": true
+  },
+  {
+    "row": "s05_Then",
+    "timeline_in": 9.557,
+    "timeline_out": 13.366,
+    "source": "05b_week_passes_t1.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.4
+    },
+    "video": true
+  },
+  {
+    "row": "s06_A",
+    "timeline_in": 13.366,
+    "timeline_out": 16.109,
+    "source": "07_playing_garden_t1.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.4
+    },
+    "video": true
+  },
+  {
+    "row": "s07_In",
+    "timeline_in": 16.109,
+    "timeline_out": 19.043,
+    "source": "13_casebook_t1.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.4
+    },
+    "video": true
+  },
+  {
+    "row": "s08_Months",
+    "timeline_in": 19.043,
+    "timeline_out": 21.152,
+    "source": "05_days_pass_t1.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 4.5
+    },
+    "video": true
+  },
+  {
+    "row": "s09_Still",
+    "timeline_in": 21.152,
+    "timeline_out": 23.926,
+    "source": "06b_still_nothing_t1.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.4
+    },
+    "video": true
+  },
+  {
+    "row": "s10_loop",
+    "timeline_in": 23.926,
+    "timeline_out": 25.076,
+    "source": "loop_end_03b_lancet_case_t1.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.050000000000000044
+    },
+    "video": true
+  }
+]

@@ -1,0 +1,495 @@
+{
+  "id": "s04_smallpox_test",
+  "version": "v02",
+  "job": "J0966",
+  "test": "B (search-titled)",
+  "air_date_draft": "2026-11-13",
+  "file": "10_Shorts/hos_007_s04_smallpox_test_v02.mp4",
+  "sha256": "745de3f56a11b8e05cd3e046011079e3358578afdcad46b15e1d21a2e0c2baff",
+  "duration_s": 25.1,
+  "level": {
+    "lufs": -14.2,
+    "true_peak_dbtp": -1.6,
+    "gain_db": 7.7
+  },
+  "first_word": "Jenner",
+  "first_word_s": 0.019,
+  "last_word": "boy.",
+  "last_word_end_s": 24.655,
+  "vo_source": "02_Voiceover/part04_the_test_v01b.mp3",
+  "vo_take_indices": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61
+  ],
+  "dropped": [],
+  "route": "J0966 trim drops 'On the first of July,' (indices 0..4). Line 1 is 'Jenner did the test.' Payoff stays last: 'The cowpox had protected the boy.' Loop reads back into line 1.",
+  "vo_s": 24.726,
+  "words": 57,
+  "max_pause_s": 0.14,
+  "atempo": 1.08,
+  "bed": "hos007_s04_synth_pad_v01.wav (own synthesis, 0 credits)",
+  "bed_gain_db": -23.8,
+  "hook": "THE FIRST TEST",
+  "hook_layer": {
+    "font_size": 243,
+    "cap_px": 173,
+    "cap_pct": 9.01,
+    "lines": 3,
+    "block_pct": [
+      33.6,
+      66.4
+    ],
+    "widest_pct": 71.3
+  },
+  "who_card": {
+    "name": "EDWARD JENNER",
+    "line2": "1 July 1796 \u00b7 Berkeley",
+    "line1_px": 68,
+    "line1_pct_of_band": 11.2,
+    "band": [
+      656,
+      1264
+    ],
+    "in_s": 2.05,
+    "out_s": 5.45,
+    "fade_s": 0.35
+  },
+  "title_on_screen": "Why Vaccines Are Named After a Cow",
+  "youtube_title_draft": "What Was the Edward Jenner Experiment?",
+  "plan": [
+    {
+      "t0": 0.0,
+      "t1": 1.125,
+      "plate": "04_Generated-Clips/part03/raw/v01/03b_lancet_case_t1.mp4",
+      "in_s": 1.2,
+      "crop_x": 900,
+      "lands_on": 0
+    },
+    {
+      "t0": 1.125,
+      "t1": 3.802,
+      "plate": "04_Generated-Clips/part04/raw/v01/02_variolation_calm_t1.mp4",
+      "in_s": 0.4,
+      "crop_x": 1050,
+      "lands_on": "He"
+    },
+    {
+      "t0": 3.802,
+      "t1": 6.683,
+      "plate": "04_Generated-Clips/part03/raw/v01/04_lancet_touch_t1.mp4",
+      "in_s": 0.4,
+      "crop_x": 640,
+      "lands_on": "the"
+    },
+    {
+      "t0": 6.683,
+      "t1": 9.557,
+      "plate": "04_Generated-Clips/part03/raw/v01/06_mild_fever_t1.mp4",
+      "in_s": 0.4,
+      "crop_x": 640,
+      "lands_on": "which"
+    },
+    {
+      "t0": 9.557,
+      "t1": 13.366,
+      "plate": "04_Generated-Clips/part03/raw/v01/05b_week_passes_t1.mp4",
+      "in_s": 0.4,
+      "crop_x": 640,
+      "lands_on": "Then"
+    },
+    {
+      "t0": 13.366,
+      "t1": 16.109,
+      "plate": "04_Generated-Clips/part03/raw/v01/07_playing_garden_t1.mp4",
+      "in_s": 0.4,
+      "crop_x": 640,
+      "lands_on": "A"
+    },
+    {
+      "t0": 16.109,
+      "t1": 19.043,
+      "plate": "04_Generated-Clips/part02/raw/v01/13_casebook_t1.mp4",
+      "in_s": 0.4,
+      "crop_x": 640,
+      "lands_on": "In"
+    },
+    {
+      "t0": 19.043,
+      "t1": 21.152,
+      "plate": "04_Generated-Clips/part04/raw/v01/05_days_pass_t1.mp4",
+      "in_s": 4.5,
+      "crop_x": 640,
+      "lands_on": "Months"
+    },
+    {
+      "t0": 21.152,
+      "t1": 23.926,
+      "plate": "04_Generated-Clips/part04/raw/v01/06b_still_nothing_t1.mp4",
+      "in_s": 0.4,
+      "crop_x": 640,
+      "lands_on": "Still"
+    },
+    {
+      "t0": 23.926,
+      "t1": 25.076,
+      "plate": "04_Generated-Clips/part03/raw/v01/03b_lancet_case_t1.mp4",
+      "in_s": 0.050000000000000044,
+      "crop_x": 900,
+      "lands_on": "loop"
+    }
+  ],
+  "captions": 19,
+  "caption_check": {
+    "ok": true,
+    "changes": 19,
+    "ratio": 1.0
+  },
+  "handover_check": {
+    "ok": true,
+    "total_handovers": 18,
+    "sampled_handovers": 10,
+    "max_active_vo_captions_any_frame": 1,
+    "sheet": "10_Shorts/_work_s04_smallpox_test_v02/hos_007_s04_smallpox_test_v02_handovers_10.jpg",
+    "samples": [
+      {
+        "handover": 1,
+        "boundary_s": 1.245,
+        "prev_frame": 37,
+        "prev_t_s": 1.2333,
+        "prev_caption": "Jenner did the test.",
+        "next_frame": 38,
+        "next_t_s": 1.2667,
+        "next_caption": "He gave James a",
+        "active_count_prev": 1,
+        "active_count_at_boundary": 1,
+        "active_count_next": 1,
+        "pixel_fill_prev": {
+          "caption_a": 0.998,
+          "caption_b": 0.0
+        },
+        "pixel_fill_next": {
+          "caption_a": 0.0,
+          "caption_b": 0.998
+        },
+        "one_caption_each": true
+      },
+      {
+        "handover": 2,
+        "boundary_s": 2.274,
+        "prev_frame": 68,
+        "prev_t_s": 2.2667,
+        "prev_caption": "He gave James a",
+        "next_frame": 69,
+        "next_t_s": 2.3,
+        "next_caption": "standard variolation,",
+        "active_count_prev": 1,
+        "active_count_at_boundary": 1,
+        "active_count_next": 1,
+        "pixel_fill_prev": {
+          "caption_a": 0.998,
+          "caption_b": 0.0
+        },
+        "pixel_fill_next": {
+          "caption_a": 0.0,
+          "caption_b": 0.998
+        },
+        "one_caption_each": true
+      },
+      {
+        "handover": 3,
+        "boundary_s": 3.922,
+        "prev_frame": 117,
+        "prev_t_s": 3.9,
+        "prev_caption": "standard variolation,",
+        "next_frame": 118,
+        "next_t_s": 3.9333,
+        "next_caption": "the old treatment that used",
+        "active_count_prev": 1,
+        "active_count_at_boundary": 1,
+        "active_count_next": 1,
+        "pixel_fill_prev": {
+          "caption_a": 1.0,
+          "caption_b": 0.025
+        },
+        "pixel_fill_next": {
+          "caption_a": 0.039,
+          "caption_b": 0.999
+        },
+        "one_caption_each": true
+      },
+      {
+        "handover": 4,
+        "boundary_s": 5.237,
+        "prev_frame": 157,
+        "prev_t_s": 5.2333,
+        "prev_caption": "the old treatment that used",
+        "next_frame": 158,
+        "next_t_s": 5.2667,
+        "next_caption": "real smallpox matter,",
+        "active_count_prev": 1,
+        "active_count_at_boundary": 1,
+        "active_count_next": 1,
+        "pixel_fill_prev": {
+          "caption_a": 0.995,
+          "caption_b": 0.0
+        },
+        "pixel_fill_next": {
+          "caption_a": 0.018,
+          "caption_b": 0.997
+        },
+        "one_caption_each": true
+      },
+      {
+        "handover": 5,
+        "boundary_s": 6.803,
+        "prev_frame": 204,
+        "prev_t_s": 6.8,
+        "prev_caption": "real smallpox matter,",
+        "next_frame": 205,
+        "next_t_s": 6.8333,
+        "next_caption": "which would normally cause at",
+        "active_count_prev": 1,
+        "active_count_at_boundary": 1,
+        "active_count_next": 1,
+        "pixel_fill_prev": {
+          "caption_a": 1.0,
+          "caption_b": 0.0
+        },
+        "pixel_fill_next": {
+          "caption_a": 0.0,
+          "caption_b": 1.0
+        },
+        "one_caption_each": true
+      },
+      {
+        "handover": 6,
+        "boundary_s": 7.951,
+        "prev_frame": 238,
+        "prev_t_s": 7.9333,
+        "prev_caption": "which would normally cause at",
+        "next_frame": 239,
+        "next_t_s": 7.9667,
+        "next_caption": "least a mild illness.",
+        "active_count_prev": 1,
+        "active_count_at_boundary": 1,
+        "active_count_next": 1,
+        "pixel_fill_prev": {
+          "caption_a": 1.0,
+          "caption_b": 0.0
+        },
+        "pixel_fill_next": {
+          "caption_a": 0.0,
+          "caption_b": 0.999
+        },
+        "one_caption_each": true
+      },
+      {
+        "handover": 7,
+        "boundary_s": 9.677,
+        "prev_frame": 290,
+        "prev_t_s": 9.6667,
+        "prev_caption": "least a mild illness.",
+        "next_frame": 291,
+        "next_t_s": 9.7,
+        "next_caption": "Then he waited.",
+        "active_count_prev": 1,
+        "active_count_at_boundary": 1,
+        "active_count_next": 1,
+        "pixel_fill_prev": {
+          "caption_a": 0.998,
+          "caption_b": 0.0
+        },
+        "pixel_fill_next": {
+          "caption_a": 0.0,
+          "caption_b": 1.0
+        },
+        "one_caption_each": true
+      },
+      {
+        "handover": 8,
+        "boundary_s": 11.05,
+        "prev_frame": 331,
+        "prev_t_s": 11.0333,
+        "prev_caption": "Then he waited.",
+        "next_frame": 332,
+        "next_t_s": 11.0667,
+        "next_caption": "One day.",
+        "active_count_prev": 1,
+        "active_count_at_boundary": 1,
+        "active_count_next": 1,
+        "pixel_fill_prev": {
+          "caption_a": 1.0,
+          "caption_b": 0.0
+        },
+        "pixel_fill_next": {
+          "caption_a": 0.0,
+          "caption_b": 1.0
+        },
+        "one_caption_each": true
+      },
+      {
+        "handover": 9,
+        "boundary_s": 12.069,
+        "prev_frame": 362,
+        "prev_t_s": 12.0667,
+        "prev_caption": "One day.",
+        "next_frame": 363,
+        "next_t_s": 12.1,
+        "next_caption": "Three days.",
+        "active_count_prev": 1,
+        "active_count_at_boundary": 1,
+        "active_count_next": 1,
+        "pixel_fill_prev": {
+          "caption_a": 1.0,
+          "caption_b": 0.0
+        },
+        "pixel_fill_next": {
+          "caption_a": 0.0,
+          "caption_b": 1.0
+        },
+        "one_caption_each": true
+      },
+      {
+        "handover": 10,
+        "boundary_s": 13.486,
+        "prev_frame": 404,
+        "prev_t_s": 13.4667,
+        "prev_caption": "Three days.",
+        "next_frame": 405,
+        "next_t_s": 13.5,
+        "next_caption": "A week.",
+        "active_count_prev": 1,
+        "active_count_at_boundary": 1,
+        "active_count_next": 1,
+        "pixel_fill_prev": {
+          "caption_a": 1.0,
+          "caption_b": 0.0
+        },
+        "pixel_fill_next": {
+          "caption_a": 0.008,
+          "caption_b": 1.0
+        },
+        "one_caption_each": true
+      }
+    ]
+  },
+  "gate": {
+    "exit": 0,
+    "output": "PASS  hos_007_s04_smallpox_test_v02.mp4  dur=25.1s  audio=-17.4dB  motion=19.29  f0diff=3.51  cut1=1.13s  vo_onset=0.00s  tail_gap=0.12s  vo_src=mix  dhash=6178667d98e079ff\n   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_007_s04_smallpox_test_v02_open_sheet.jpg"
+  },
+  "vo_check": {
+    "exit": 1,
+    "output": "FAIL  hos_007_s04_smallpox_test_v02.mp4  0:25.10  mean -17.4 dB  peak -1.6 dB  136 wpm\n   FAIL  speech mean -17.4 dB outside -28.0 to -19.0 dB\n   warn  pace 136 wpm (< 145); expect a long film \u2014 see STUDIO_PLAYBOOK.md \u00a74 speed"
+  },
+  "freezedetect_starts": [],
+  "qa": {
+    "polish_gate": {
+      "exit": 0,
+      "output": "polish gate PASS: 0 of 10 rows failed, 1 to look at -> 02_Video-Projects/007_The-First-Vaccine/10_Shorts/qa_s04_smallpox_test_v02/polish_gate_s04_smallpox_test_v02.json"
+    },
+    "picture_qa": {
+      "exit": 0,
+      "output": "picture QA PASS: 0 of 10 cuts fail, 1 to look at -> 02_Video-Projects/007_The-First-Vaccine/10_Shorts/qa_s04_smallpox_test_v02/picture_qa_s04_smallpox_test_v02/PICTURE_QA.md, 02_Video-Projects/007_The-First-Vaccine/10_Shorts/qa_s04_smallpox_test_v02/picture_qa_s04_smallpox_test_v02/picture_qa_review.jpg"
+    }
+  },
+  "stills": [
+    "10_Shorts/_work_s04_smallpox_test_v02/hos_007_s04_smallpox_test_v02_t000.0.jpg",
+    "10_Shorts/_work_s04_smallpox_test_v02/hos_007_s04_smallpox_test_v02_t004.0.jpg",
+    "10_Shorts/_work_s04_smallpox_test_v02/hos_007_s04_smallpox_test_v02_t011.5.jpg",
+    "10_Shorts/_work_s04_smallpox_test_v02/hos_007_s04_smallpox_test_v02_t017.5.jpg",
+    "10_Shorts/_work_s04_smallpox_test_v02/hos_007_s04_smallpox_test_v02_t024.1.jpg"
+  ],
+  "icloud": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/007_The-First-Vaccine/10_Shorts/hos_007_s04_smallpox_test_v02.mp4",
+  "autocomplete_check": {
+    "date": "2026-10-23",
+    "source": "suggestqueries client=youtube ds=yt gl=GB signed-out",
+    "hits": [
+      "edward jenner experiment",
+      "how was the first vaccine made",
+      "edward jenner smallpox vaccine story",
+      "edward jenner cowpox vaccine",
+      "how did jenner test work"
+    ],
+    "note": "Signed-out GB YouTube autocomplete returns 'edward jenner experiment', 'how was the first vaccine made', 'edward jenner smallpox vaccine story', 'edward jenner cowpox vaccine', and 'how did jenner test work' as exact hits (23 Oct 2026). Title draft 'What Was the Edward Jenner Experiment?' (with 'How Was the First Vaccine Made?' and 'How Did Edward Jenner Test the First Vaccine?' as alternatives) is answered directly by the lifted Part 04 VO: Jenner's 1 July 1796 smallpox variolation challenge on James Phipps ('no disease followed') proving cowpox protected against smallpox. First built search-titled Short on HOS 007 (which had 0 built Shorts vs 5 on 004/005/006/001 and 4 on 002/003). Chief's call."
+  },
+  "air_date_draft_note": "2027-01-24 used for the gate only; slot is Chief's call.",
+  "brief": {
+    "frame0": "moving video part03/03b_lancet_case_t1.mp4 in 1.20 s, crop x=900, no zoom",
+    "first_word_onset_s": 0.019,
+    "surprise_word": "Jenner did the test",
+    "surprise_s": 0.019,
+    "first_cut_s": 1.125,
+    "last_word_to_loop_s": 0.445,
+    "meta_promise": "no",
+    "youtube_id": "-I_GHK-GcFs"
+  },
+  "who_card_note": "card EDWARD JENNER \u00b7 1 July 1796 \u00b7 Berkeley on screen 2.30\u20135.90 s (3.6 s) as the variolation line lands. Clear of the 0\u20132 s hook and the 9\u201314 s title. No end CTA.",
+  "overlap_note": "First built search-titled Short lifted from HOS 007's long VO (Part 04 words 0..61: the 1 July 1796 smallpox challenge test on James Phipps). Zero overlap with 007 Short B (Part 02 milkmaids' secret) or Short C (Part 05 1980 global eradication).",
+  "phone": "hos_007_s04_smallpox_test_v02_PHONE.mp4",
+  "phone_sha256": "e87722422f701130e6acf8fc43039408106bc4a64c17daf1d52924f1fec04728",
+  "sfx_exit": 0,
+  "music_exit": 0,
+  "copies": {
+    "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/007_The-First-Vaccine/10_Shorts/hos_007_s04_smallpox_test_v02.mp4": "745de3f56a11b8e05cd3e046011079e3358578afdcad46b15e1d21a2e0c2baff",
+    "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/007_The-First-Vaccine/10_Shorts/hos_007_s04_smallpox_test_v02_PHONE.mp4": "e87722422f701130e6acf8fc43039408106bc4a64c17daf1d52924f1fec04728",
+    "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/007_The-First-Vaccine/10_Shorts/hos_007_s04_smallpox_test_v02_2fps_sheet.jpg": "0f518a90ed41c340476cf4d0a9982ab805169afb0abf5a2e501955cca3f2629b",
+    "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/007_The-First-Vaccine/10_Shorts/s04_smallpox_test_v02/hos_007_s04_smallpox_test_v02.mp4": "745de3f56a11b8e05cd3e046011079e3358578afdcad46b15e1d21a2e0c2baff",
+    "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/007_The-First-Vaccine/10_Shorts/s04_smallpox_test_v02/hos_007_s04_smallpox_test_v02_PHONE.mp4": "e87722422f701130e6acf8fc43039408106bc4a64c17daf1d52924f1fec04728",
+    "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/007_The-First-Vaccine/10_Shorts/s04_smallpox_test_v02/hos_007_s04_smallpox_test_v02_2fps_sheet.jpg": "0f518a90ed41c340476cf4d0a9982ab805169afb0abf5a2e501955cca3f2629b"
+  }
+}

@@ -1,0 +1,11 @@
+s01_0     1.2s 09_meadow_golden_t1.mp4      ok
+s02_Benjamin     4.0s 06_jesty_family_t1.mp4       ok
+s03_He     6.5s 10_garden_hut_t1.mp4         ok
+s04_seventeen     8.9s 08_soho_press_t1.mp4         ok
+s05_He    11.1s 10_history_book_t1.mp4       ok
+s06_Latin    13.3s 05_quill_writes_t1.mp4       WARN low detail: edge density 0.0256 < film p5 0.0268
+s07_which    16.3s 01_cow_meadow_t1.mp4         ok
+s08_From    19.2s 10a_packets_t1.mp4           ok
+s09_came    21.8s 06_line_underlined_t1.mp4    ok
+s10_loop    23.6s loop_end_09_meadow_golden_t1 ok
+polish gate PASS: 0 of 10 rows failed, 1 to look at -> 02_Video-Projects/007_The-First-Vaccine/10_Shorts/qa_s05_vacca_jesty_v03/polish_gate_s05_vacca_jesty_v03.json

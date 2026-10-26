@@ -1,0 +1,112 @@
+[
+  {
+    "row": "s01_0",
+    "timeline_in": 0.0,
+    "timeline_out": 2.502,
+    "source": "09_meadow_golden_t1.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 4.2
+    },
+    "video": true
+  },
+  {
+    "row": "s02_Benjamin",
+    "timeline_in": 2.502,
+    "timeline_out": 5.569,
+    "source": "06_jesty_family_t1.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.4
+    },
+    "video": true
+  },
+  {
+    "row": "s03_He",
+    "timeline_in": 5.569,
+    "timeline_out": 7.355,
+    "source": "10_garden_hut_t1.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.4
+    },
+    "video": true
+  },
+  {
+    "row": "s04_seventeen",
+    "timeline_in": 7.355,
+    "timeline_out": 10.459,
+    "source": "08_soho_press_t1.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.4
+    },
+    "video": true
+  },
+  {
+    "row": "s05_He",
+    "timeline_in": 10.459,
+    "timeline_out": 11.805,
+    "source": "10_history_book_t1.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.4
+    },
+    "video": true
+  },
+  {
+    "row": "s06_Latin",
+    "timeline_in": 11.805,
+    "timeline_out": 14.808,
+    "source": "05_quill_writes_t1.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.4
+    },
+    "video": true
+  },
+  {
+    "row": "s07_which",
+    "timeline_in": 14.808,
+    "timeline_out": 17.772,
+    "source": "01_cow_meadow_t1.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.4
+    },
+    "video": true
+  },
+  {
+    "row": "s08_From",
+    "timeline_in": 17.772,
+    "timeline_out": 20.643,
+    "source": "10a_packets_t1.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.4
+    },
+    "video": true
+  },
+  {
+    "row": "s09_came",
+    "timeline_in": 20.643,
+    "timeline_out": 23.01,
+    "source": "06_line_underlined_t1.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.4
+    },
+    "video": true
+  },
+  {
+    "row": "s10_loop",
+    "timeline_in": 23.01,
+    "timeline_out": 24.16,
+    "source": "loop_end_09_meadow_golden_t1.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 3.0500000000000003
+    },
+    "video": true
+  }
+]

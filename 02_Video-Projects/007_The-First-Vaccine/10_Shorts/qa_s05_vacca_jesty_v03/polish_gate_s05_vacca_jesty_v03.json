@@ -1,0 +1,238 @@
+{
+  "rule": {
+    "low_detail": "FAIL: luma std < 13.44 and edge density < 0.0259 (absolute floor); WARN: luma std < 18.0 or edge density < film p5",
+    "split_panel": "full-height/width seam or gutter",
+    "split_panel_gutter": "gutter counts only with edge density >= 0.01 in the 10% band on both sides",
+    "near_black": "mean < 28.0 or p95 < 50.0",
+    "noise": "grain std > 6 over structure std < 12, and the 8x-downscaled frame under the low-detail floor (std < 13.44 and edge density < 0.0259)",
+    "jitter": "centre-patch phase correlation: reversal against trend or > 0.35 px off trend"
+  },
+  "low_detail_floor": {
+    "std": 13.44,
+    "edge": 0.0259,
+    "calibration": {
+      "video": "025_MarsRobot_full_rough_v02d.mp4",
+      "factor": 1.2,
+      "frames": [
+        {
+          "source": "PIA22223.jpg",
+          "t": 201.0,
+          "std": 12.1,
+          "edge": 0.0223
+        },
+        {
+          "source": "PIA22223.jpg",
+          "t": 216.3,
+          "std": 11.2,
+          "edge": 0.0216
+        },
+        {
+          "source": "PIA22929.jpg",
+          "t": 297.4,
+          "std": 26.54,
+          "edge": 0.5735
+        }
+      ]
+    }
+  },
+  "video": "02_Video-Projects/007_The-First-Vaccine/10_Shorts/hos_007_s05_vacca_jesty_v03.mp4",
+  "edge_floor": 0.0268,
+  "verdict": "PASS",
+  "failed": [],
+  "warn": [
+    {
+      "row": "s06_Latin",
+      "cut": 5,
+      "t": 13.31,
+      "source": "05_quill_writes_t1.mp4",
+      "why": [
+        "low detail: edge density 0.0256 < film p5 0.0268"
+      ]
+    }
+  ],
+  "reviewed_ok": [],
+  "rows": [
+    {
+      "cut": 0,
+      "row": "s01_0",
+      "source": "09_meadow_golden_t1.mp4",
+      "t": 1.25,
+      "std": 66.55,
+      "mean": 128.26,
+      "p95": 233.0,
+      "edge": 0.1535,
+      "hf": 16.82,
+      "lf": 58.3,
+      "std8": 60.79,
+      "edge8": 0.4936,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 1,
+      "row": "s02_Benjamin",
+      "source": "06_jesty_family_t1.mp4",
+      "t": 4.04,
+      "std": 62.93,
+      "mean": 106.71,
+      "p95": 235.0,
+      "edge": 0.1341,
+      "hf": 12.62,
+      "lf": 56.81,
+      "std8": 59.14,
+      "edge8": 0.4654,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 2,
+      "row": "s03_He",
+      "source": "10_garden_hut_t1.mp4",
+      "t": 6.46,
+      "std": 51.85,
+      "mean": 109.47,
+      "p95": 197.0,
+      "edge": 0.1962,
+      "hf": 13.84,
+      "lf": 42.07,
+      "std8": 45.57,
+      "edge8": 0.567,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 3,
+      "row": "s04_seventeen",
+      "source": "08_soho_press_t1.mp4",
+      "t": 8.91,
+      "std": 52.7,
+      "mean": 79.69,
+      "p95": 187.0,
+      "edge": 0.0652,
+      "hf": 8.71,
+      "lf": 48.05,
+      "std8": 50.07,
+      "edge8": 0.3453,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 4,
+      "row": "s05_He",
+      "source": "10_history_book_t1.mp4",
+      "t": 11.13,
+      "std": 35.36,
+      "mean": 46.93,
+      "p95": 134.0,
+      "edge": 0.0283,
+      "hf": 8.22,
+      "lf": 30.46,
+      "std8": 32.11,
+      "edge8": 0.1668,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 5,
+      "row": "s06_Latin",
+      "source": "05_quill_writes_t1.mp4",
+      "t": 13.31,
+      "std": 46.4,
+      "mean": 84.12,
+      "p95": 209.0,
+      "edge": 0.0256,
+      "hf": 7.98,
+      "lf": 42.92,
+      "std8": 44.27,
+      "edge8": 0.1566,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0256 < film p5 0.0268"
+      ]
+    },
+    {
+      "cut": 6,
+      "row": "s07_which",
+      "source": "01_cow_meadow_t1.mp4",
+      "t": 16.29,
+      "std": 67.21,
+      "mean": 148.65,
+      "p95": 237.0,
+      "edge": 0.0426,
+      "hf": 8.02,
+      "lf": 63.8,
+      "std8": 64.37,
+      "edge8": 0.3259,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 7,
+      "row": "s08_From",
+      "source": "10a_packets_t1.mp4",
+      "t": 19.21,
+      "std": 54.8,
+      "mean": 109.52,
+      "p95": 210.0,
+      "edge": 0.0607,
+      "hf": 8.78,
+      "lf": 49.4,
+      "std8": 51.89,
+      "edge8": 0.3119,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 8,
+      "row": "s09_came",
+      "source": "06_line_underlined_t1.mp4",
+      "t": 21.83,
+      "std": 53.4,
+      "mean": 130.39,
+      "p95": 216.0,
+      "edge": 0.0312,
+      "hf": 6.51,
+      "lf": 51.36,
+      "std8": 52.12,
+      "edge8": 0.1547,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 9,
+      "row": "s10_loop",
+      "source": "loop_end_09_meadow_golden_t1.mp4",
+      "t": 23.59,
+      "std": 64.33,
+      "mean": 117.26,
+      "p95": 233.0,
+      "edge": 0.1025,
+      "hf": 9.58,
+      "lf": 60.44,
+      "std8": 61.74,
+      "edge8": 0.406,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    }
+  ]
+}

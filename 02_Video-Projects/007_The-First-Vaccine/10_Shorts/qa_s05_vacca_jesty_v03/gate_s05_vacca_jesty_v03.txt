@@ -1,0 +1,3 @@
+PASS  hos_007_s05_vacca_jesty_v03.mp4  dur=24.2s  audio=-17.3dB  motion=17.85  f0diff=3.89  cut1=2.53s  vo_onset=0.16s  tail_gap=0.11s  vo_src=mix  dhash=72372cdef6db4785
+   warn  first VO word starts at 0.16s > 0.15s — trim leading silence
+   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_007_s05_vacca_jesty_v03_open_sheet.jpg
