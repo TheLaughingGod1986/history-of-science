@@ -218,7 +218,7 @@
         "hook_sentence_end_s": 3.28,
         "full_hook_sentence": "This thin line of clay marks the end of the dinosaurs.",
         "vo_words_changed": false,
-        "bounded_edit_proposal": "Sentence 1 ('This thin line of clay marks the end of the dinosaurs.') ends at 3.28 s (2.62 s pure speech); S01 cuts after 'the' at 2.40 s while 'dinosaurs.' lands at the start of S02 (2.40-3.28 s). Bounded existing-word option: tighten sentence-1 onset and inter-word gaps by 0.48 s (or excise 'of clay' [1.06-1.42 s]) on the existing take so 'dinosaurs.' finishes at 2.80 s <= 2.85 s, awaiting Chief sign-off."
+        "bounded_edit_proposal": "Sentence 1 ('This thin line of clay marks the end of the dinosaurs.') ends at 3.28 s (2.62 s pure speech); S01 cuts after 'the' at 2.40 s while 'dinosaurs.' lands at the start of S02 (2.40-3.28 s). Unapproved existing-word/gap-trim option at 1.00x (within the 1.06x cap): tighten sentence-1 onset and inter-word gaps by 0.48 s (or excise 'of clay' [1.06-1.42 s]) on the existing take so 'dinosaurs.' finishes at 2.80 s <= 2.85 s, or leave the hook explicitly unresolved and blocked awaiting Chief sign-off."
       },
       "status": "blocked_hook_and_missing_plates",
       "blocked_reason": "S01 cuts at 2.40 s before hook sentence ends at 3.28 s, and target long plates exist only in board JSON (no .mp4 files on disk/NAS)."

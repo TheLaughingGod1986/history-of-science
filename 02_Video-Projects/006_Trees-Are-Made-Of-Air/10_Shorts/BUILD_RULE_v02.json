@@ -681,7 +681,7 @@
         "hook_sentence_end_s": 3.255,
         "full_hook_sentence": "A leaf takes in carbon dioxide through tiny pores.",
         "vo_words_changed": false,
-        "bounded_edit_proposal": "Sentence 1 ('A leaf takes in carbon dioxide through tiny pores.') ends at 3.25 s in the lifted long VO, so S01 cuts after 'tiny' at 2.57 s. Bounded existing-word option: tighten sentence-1 inter-word gaps + 1.12x pace on 0.00-3.25 s (or trim 'through tiny pores' on existing take) so the hook clause completes <= 2.85 s."
+        "bounded_edit_proposal": "Sentence 1 ('A leaf takes in carbon dioxide through tiny pores.') ends at 3.25 s in the lifted long VO (2.76 s pure speech), so S01 cuts after 'tiny' at 2.57 s. Lawful pause trimming within the 1.06x studio atempo cap cannot fit all 9 words by 2.85 s; unapproved existing-word/gap-trim option at 1.00x (within the 1.06x cap): trim 'through tiny pores' (1.87-3.25 s) on the existing take so 'A leaf takes in carbon dioxide.' completes at 1.84 s <= 2.85 s, or leave the hook explicitly unresolved and blocked (no speed exception)."
       },
       "status": "blocked_unfinished_hook",
       "blocked_reason": "S01 cuts at 2.57 s ('A leaf takes in carbon dioxide through tiny') before the opening hook sentence finishes at 3.25 s."
@@ -857,7 +857,7 @@
         "hook_sentence_end_s": 7.223,
         "full_hook_sentence": "Van Helmont also burned sixty-two pounds of charcoal and found just one pound of ash left behind.",
         "vo_words_changed": false,
-        "bounded_edit_proposal": "Sentence 1 ('Van Helmont also burned sixty-two pounds of charcoal and found just one pound of ash left behind.') ends at 7.22 s in the lifted long VO (S01 cuts after 'sixty-two' at 2.72 s). Bounded existing-word option: drop 'Van Helmont also' and split/tighten on 'burned sixty-two pounds of charcoal' with Chief approval."
+        "bounded_edit_proposal": "Sentence 1 ('Van Helmont also burned sixty-two pounds of charcoal and found just one pound of ash left behind.') ends at 7.22 s in the lifted long VO (S01 cuts after 'sixty-two' at 2.72 s). Unapproved existing-word option: drop 'Van Helmont also' and split/tighten on 'burned sixty-two pounds of charcoal' with Chief approval, or leave the hook explicitly unresolved and blocked."
       },
       "status": "blocked_unfinished_hook",
       "blocked_reason": "S01 cuts at 2.72 s ('Van Helmont also burned sixty-two') before the opening hook sentence finishes at 7.22 s."
@@ -1049,7 +1049,7 @@
         "hook_sentence_end_s": 4.594,
         "full_hook_sentence": "Tiny silver bubbles appear on the green leaf and rise to the top.",
         "vo_words_changed": false,
-        "bounded_edit_proposal": "Sentence 1 ('Tiny silver bubbles appear on the green leaf and rise to the top.') ends at 4.59 s in the lifted long VO (S01 cuts after 'green' at 2.54 s). Bounded existing-word option: end hook sentence after 'leaf' (3.07 s -> 2.78 s with gap trim) and start sentence 2 on 'They rise to the top', awaiting Chief approval."
+        "bounded_edit_proposal": "Sentence 1 ('Tiny silver bubbles appear on the green leaf and rise to the top.') ends at 4.59 s in the lifted long VO (S01 cuts after 'green' at 2.54 s). Unapproved existing-word/gap-trim option at 1.00x (within the 1.06x cap): end hook clause after 'leaf' (3.07 s -> 2.78 s via inter-word gap trim) on the existing take, or leave the hook explicitly unresolved and blocked awaiting Chief sign-off."
       },
       "status": "blocked_unfinished_hook",
       "blocked_reason": "S01 cuts at 2.54 s ('Tiny silver bubbles appear on the green') before the opening hook sentence finishes at 4.59 s."

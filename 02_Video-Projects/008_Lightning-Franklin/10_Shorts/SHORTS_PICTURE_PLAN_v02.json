@@ -417,7 +417,7 @@
         "hook_sentence_end_s": 4.84,
         "full_hook_sentence": "That thin metal rod on top of tall buildings was Benjamin Franklin's idea.",
         "vo_words_changed": false,
-        "bounded_edit_proposal": "Sentence 1 ('That thin metal rod on top of tall buildings was Benjamin Franklin\\'s idea.') ends at 4.84 s (3.72 s pure speech); S01 cuts mid-phrase after 'tall' at 2.40 s while 'buildings was Benjamin Franklin\\'s idea.' runs in S02 through 4.90 s. Bounded existing-word option: excise prepositional phrase 'on top of tall buildings' (1.48-3.06 s) on the existing take so 'That thin metal rod was Benjamin Franklin\\'s idea.' completes at 2.84 s <= 2.85 s, awaiting Chief sign-off."
+        "bounded_edit_proposal": "Sentence 1 ('That thin metal rod on top of tall buildings was Benjamin Franklin\\'s idea.') ends at 4.84 s (3.72 s pure speech); S01 cuts mid-phrase after 'tall' at 2.40 s while 'buildings was Benjamin Franklin\\'s idea.' runs in S02 through 4.90 s. Unapproved existing-word option: excise prepositional phrase 'on top of tall buildings' (1.48-3.06 s) on the existing take so 'That thin metal rod was Benjamin Franklin\\'s idea.' completes at 2.84 s <= 2.85 s, or leave the hook explicitly unresolved and blocked awaiting Chief sign-off."
       },
       "status": "blocked_hook_and_missing_plates",
       "blocked_reason": "S01 cuts at 2.40 s before hook sentence ends at 4.84 s, and target long plates exist only in board JSON (no .mp4 files on disk/NAS)."

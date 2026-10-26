@@ -225,7 +225,7 @@
         "hook_sentence_end_s": 4.6,
         "full_hook_sentence": "The first vaccine began with milkmaids who never caught smallpox.",
         "vo_words_changed": false,
-        "bounded_edit_proposal": "Sentence 1 ('The first vaccine began with milkmaids, who never caught smallpox.') ends at 4.60 s (3.48 s pure speech); S01 cuts after the main clause 'milkmaids' at 2.72 s while the relative clause 'who never caught smallpox.' lands in S02 (2.72-4.60 s). Bounded existing-word option: splice existing words 'milkmaids never caught smallpox.' (1.88-4.60 s -> 0.06-2.32 s) as sentence 1, awaiting Chief sign-off."
+        "bounded_edit_proposal": "Sentence 1 ('The first vaccine began with milkmaids, who never caught smallpox.') ends at 4.60 s (3.48 s pure speech); S01 cuts after the main clause 'milkmaids' at 2.72 s while the relative clause 'who never caught smallpox.' lands in S02 (2.72-4.60 s). Unapproved existing-word option: splice existing words 'milkmaids never caught smallpox.' (1.88-4.60 s -> 0.06-2.32 s) as sentence 1, or leave the hook explicitly unresolved and blocked awaiting Chief sign-off."
       },
       "status": "blocked_unfinished_hook",
       "blocked_reason": "S01 cuts at 2.72 s ('The first vaccine began with milkmaids') before the opening hook sentence finishes at 4.60 s."

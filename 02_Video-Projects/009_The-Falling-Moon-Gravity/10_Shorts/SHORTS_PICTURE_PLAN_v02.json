@@ -422,7 +422,7 @@
         "hook_sentence_end_s": 4.27,
         "full_hook_sentence": "In one minute, the moon falls about as far as an apple falls in one second.",
         "vo_words_changed": false,
-        "bounded_edit_proposal": "Sentence 1 ('In one minute, the moon falls about as far as an apple falls in one second.') ends at 4.27 s (3.18 s pure speech even after the 0.31 s pause trim); S01 cuts after 'apple' at 2.75 s while 'falls in one second.' lands in S02. Bounded existing-word option: drop leading 'In one minute,' (0.08-0.74 s) and tighten inter-word gaps on the existing take, awaiting Chief sign-off."
+        "bounded_edit_proposal": "Sentence 1 ('In one minute, the moon falls about as far as an apple falls in one second.') ends at 4.27 s (3.18 s pure speech even after the 0.31 s pause trim); S01 cuts after 'apple' at 2.75 s while 'falls in one second.' lands in S02. Both time intervals ('In one minute' and 'in one second') must be preserved for the lunar-vs-apple comparison, and the 16-word hook cannot fit <= 2.85 s using existing words and lawful pause trims (or within the 1.06x studio atempo cap); keep this Short explicitly blocked and unresolved (no new VO, scientific claim, approved wording change, or speed exception is authorised)."
       },
       "status": "blocked_hook_and_missing_plates",
       "blocked_reason": "S01 cuts at 2.75 s before hook sentence ends at 4.27 s, and target long plates exist only in board JSON (no .mp4 files on disk/NAS)."

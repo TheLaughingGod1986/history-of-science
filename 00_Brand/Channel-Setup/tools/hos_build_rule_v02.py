@@ -54,19 +54,23 @@ PAUSE_TRIM = {("009", "Short_B"): {"cut_s": 0.84, "remove_s": 0.31}}
 # Bounded existing-word hook edit proposals for Shorts whose signed-off VO sentence 1 exceeds 2.85 s.
 HOOK_CONFLICT_PROPOSALS = {
     ("006_Trees-Are-Made-Of-Air", "s04_photosynthesis"): (
-        "Sentence 1 ('A leaf takes in carbon dioxide through tiny pores.') ends at 3.25 s in the lifted long VO, "
-        "so S01 cuts after 'tiny' at 2.57 s. Bounded existing-word option: tighten sentence-1 inter-word gaps + "
-        "1.12x pace on 0.00-3.25 s (or trim 'through tiny pores' on existing take) so the hook clause completes <= 2.85 s."
+        "Sentence 1 ('A leaf takes in carbon dioxide through tiny pores.') ends at 3.25 s in the lifted long VO "
+        "(2.76 s pure speech), so S01 cuts after 'tiny' at 2.57 s. Lawful pause trimming within the 1.06x studio "
+        "atempo cap cannot fit all 9 words by 2.85 s; unapproved existing-word/gap-trim option at 1.00x (within "
+        "the 1.06x cap): trim 'through tiny pores' (1.87-3.25 s) on the existing take so 'A leaf takes in carbon "
+        "dioxide.' completes at 1.84 s <= 2.85 s, or leave the hook explicitly unresolved and blocked (no speed exception)."
     ),
     ("006_Trees-Are-Made-Of-Air", "s05_charcoal_gas"): (
         "Sentence 1 ('Van Helmont also burned sixty-two pounds of charcoal and found just one pound of ash left behind.') "
-        "ends at 7.22 s in the lifted long VO (S01 cuts after 'sixty-two' at 2.72 s). Bounded existing-word option: "
-        "drop 'Van Helmont also' and split/tighten on 'burned sixty-two pounds of charcoal' with Chief approval."
+        "ends at 7.22 s in the lifted long VO (S01 cuts after 'sixty-two' at 2.72 s). Unapproved existing-word option: "
+        "drop 'Van Helmont also' and split/tighten on 'burned sixty-two pounds of charcoal' with Chief approval, or "
+        "leave the hook explicitly unresolved and blocked."
     ),
     ("006_Trees-Are-Made-Of-Air", "s06_ingenhousz_oxygen"): (
         "Sentence 1 ('Tiny silver bubbles appear on the green leaf and rise to the top.') ends at 4.59 s in the lifted "
-        "long VO (S01 cuts after 'green' at 2.54 s). Bounded existing-word option: end hook sentence after 'leaf' (3.07 s "
-        "-> 2.78 s with gap trim) and start sentence 2 on 'They rise to the top', awaiting Chief approval."
+        "long VO (S01 cuts after 'green' at 2.54 s). Unapproved existing-word/gap-trim option at 1.00x (within the "
+        "1.06x cap): end hook clause after 'leaf' (3.07 s -> 2.78 s via inter-word gap trim) on the existing take, "
+        "or leave the hook explicitly unresolved and blocked awaiting Chief sign-off."
     ),
     ("006_Trees-Are-Made-Of-Air", "s07_priestley_mint"): (
         "Lifted long-VO sentence 1 ('If you burn a candle inside a sealed glass jar, the flame soon dies...') runs to "
@@ -81,27 +85,31 @@ HOOK_CONFLICT_PROPOSALS = {
     ("007_The-First-Vaccine", "Short_B"): (
         "Sentence 1 ('The first vaccine began with milkmaids, who never caught smallpox.') ends at 4.60 s (3.48 s pure "
         "speech); S01 cuts after the main clause 'milkmaids' at 2.72 s while the relative clause 'who never caught "
-        "smallpox.' lands in S02 (2.72-4.60 s). Bounded existing-word option: splice existing words 'milkmaids never "
-        "caught smallpox.' (1.88-4.60 s -> 0.06-2.32 s) as sentence 1, awaiting Chief sign-off."
+        "smallpox.' lands in S02 (2.72-4.60 s). Unapproved existing-word option: splice existing words 'milkmaids never "
+        "caught smallpox.' (1.88-4.60 s -> 0.06-2.32 s) as sentence 1, or leave the hook explicitly unresolved and "
+        "blocked awaiting Chief sign-off."
     ),
     ("008_Lightning-Franklin", "Short_C"): (
         "Sentence 1 ('That thin metal rod on top of tall buildings was Benjamin Franklin\\'s idea.') ends at 4.84 s "
         "(3.72 s pure speech); S01 cuts mid-phrase after 'tall' at 2.40 s while 'buildings was Benjamin Franklin\\'s "
-        "idea.' runs in S02 through 4.90 s. Bounded existing-word option: excise prepositional phrase 'on top of tall "
+        "idea.' runs in S02 through 4.90 s. Unapproved existing-word option: excise prepositional phrase 'on top of tall "
         "buildings' (1.48-3.06 s) on the existing take so 'That thin metal rod was Benjamin Franklin\\'s idea.' "
-        "completes at 2.84 s <= 2.85 s, awaiting Chief sign-off."
+        "completes at 2.84 s <= 2.85 s, or leave the hook explicitly unresolved and blocked awaiting Chief sign-off."
     ),
     ("009_The-Falling-Moon-Gravity", "Short_B"): (
         "Sentence 1 ('In one minute, the moon falls about as far as an apple falls in one second.') ends at 4.27 s "
         "(3.18 s pure speech even after the 0.31 s pause trim); S01 cuts after 'apple' at 2.75 s while 'falls in one "
-        "second.' lands in S02. Bounded existing-word option: drop leading 'In one minute,' (0.08-0.74 s) and tighten "
-        "inter-word gaps on the existing take, awaiting Chief sign-off."
+        "second.' lands in S02. Both time intervals ('In one minute' and 'in one second') must be preserved for the "
+        "lunar-vs-apple comparison, and the 16-word hook cannot fit <= 2.85 s using existing words and lawful pause "
+        "trims (or within the 1.06x studio atempo cap); keep this Short explicitly blocked and unresolved (no new VO, "
+        "scientific claim, approved wording change, or speed exception is authorised)."
     ),
     ("010_Alvarez-Clay-Line-Dinosaurs", "Short_A"): (
         "Sentence 1 ('This thin line of clay marks the end of the dinosaurs.') ends at 3.28 s (2.62 s pure speech); "
-        "S01 cuts after 'the' at 2.40 s while 'dinosaurs.' lands at the start of S02 (2.40-3.28 s). Bounded "
-        "existing-word option: tighten sentence-1 onset and inter-word gaps by 0.48 s (or excise 'of clay' [1.06-1.42 s]) "
-        "on the existing take so 'dinosaurs.' finishes at 2.80 s <= 2.85 s, awaiting Chief sign-off."
+        "S01 cuts after 'the' at 2.40 s while 'dinosaurs.' lands at the start of S02 (2.40-3.28 s). Unapproved "
+        "existing-word/gap-trim option at 1.00x (within the 1.06x cap): tighten sentence-1 onset and inter-word gaps "
+        "by 0.48 s (or excise 'of clay' [1.06-1.42 s]) on the existing take so 'dinosaurs.' finishes at 2.80 s <= 2.85 s, "
+        "or leave the hook explicitly unresolved and blocked awaiting Chief sign-off."
     ),
     ("docs", "s5_penzias_pigeons"): (
         "Sentence 1 ('the afterglow of the Big Bang was blamed on pigeons.') ends at 3.76 s after dateline drop; "
@@ -1417,6 +1425,25 @@ def check_short(
                 f"full hook sentence ({full_hook_text!r}) ends at {hook_end_s:.2f} s (> {S01_MAX} s) and Short "
                 "is not explicitly blocked with hook_conflict"
             )
+        else:
+            prop = str(hc.get("bounded_edit_proposal") or "")
+            for m_spd in re.finditer(r"\b(\d+\.\d+)x\b", prop):
+                val = float(m_spd.group(1))
+                if val > 1.06 + 1e-6:
+                    errors.append(
+                        f"{label}: bounded_edit_proposal proposes {val:.2f}x speed above the 1.06x studio atempo cap"
+                    )
+            if parent_name == "009_The-Falling-Moon-Gravity" and short.get("id") == "Short_B":
+                prop_l = prop.lower()
+                if (
+                    "drop leading 'in one minute" in prop_l
+                    or 'drop leading "in one minute' in prop_l
+                    or "in one minute" not in prop_l
+                    or "in one second" not in prop_l
+                ):
+                    errors.append(
+                        f"{label}: bounded_edit_proposal must preserve both time intervals ('In one minute' and 'in one second') and must not propose dropping 'In one minute'"
+                    )
 
     prev = 0.0
     prev_spoken_norm = ""
@@ -1609,6 +1636,27 @@ def run_negative_checks(root: Path) -> list[str]:
     if not any("outside probed plate" in e for e in errs_inout):
         failures.append(f"negative check 5 failed: out-of-bounds in_s/out_s on S7 did not fail ({errs_inout})")
 
+    # 6. Over-cap 1.12x speed proposal on 006 s04_photosynthesis must FAIL (Acting-Chief 6426967421)
+    s04_neg = copy.deepcopy(next(s for s in p006["shorts"] if s["id"] == "s04_photosynthesis"))
+    s04_neg["hook_conflict"]["bounded_edit_proposal"] = (
+        "Bounded existing-word option: tighten sentence-1 inter-word gaps + 1.12x pace on 0.00-3.25 s."
+    )
+    errs_spd: list[str] = []
+    check_short(root, "006_Trees-Are-Made-Of-Air", "neg/006_s04_1p12x", s04_neg, p006.get("media_root"), errs_spd)
+    if not any("above the 1.06x studio atempo cap" in e for e in errs_spd):
+        failures.append(f"negative check 6 failed: 1.12x speed proposal on 006 s04 did not fail ({errs_spd})")
+
+    # 7. Dropping 'In one minute' from 009 Short_B comparison hook proposal must FAIL (Acting-Chief 6426967421)
+    p009 = load(root / "02_Video-Projects/009_The-Falling-Moon-Gravity/10_Shorts/SHORTS_PICTURE_PLAN_v02.json")
+    s09b_neg = copy.deepcopy(next(s for s in p009["shorts"] if s["id"] == "Short_B"))
+    s09b_neg["hook_conflict"]["bounded_edit_proposal"] = (
+        "Bounded existing-word option: drop leading 'In one minute,' (0.08-0.74 s) and tighten inter-word gaps."
+    )
+    errs_09b: list[str] = []
+    check_short(root, "009_The-Falling-Moon-Gravity", "neg/009_Short_B_drop_minute", s09b_neg, p009.get("media_root"), errs_09b)
+    if not any("preserve both time intervals" in e for e in errs_09b):
+        failures.append(f"negative check 7 failed: dropping 'In one minute' on 009 Short_B did not fail ({errs_09b})")
+
     return failures
 
 
@@ -1649,7 +1697,7 @@ def main() -> None:
             for line in neg_failures:
                 print(" ", line)
             raise SystemExit(1)
-        print("PASS build-rule v02 plans (including 5 negative checks)")
+        print("PASS build-rule v02 plans (including 7 negative checks)")
 
 
 if __name__ == "__main__":
