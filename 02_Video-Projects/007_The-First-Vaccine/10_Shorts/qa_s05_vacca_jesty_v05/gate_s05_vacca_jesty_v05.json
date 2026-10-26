@@ -1,0 +1,28 @@
+{
+  "file": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/007_The-First-Vaccine/10_Shorts/hos_007_s05_vacca_jesty_v05.mp4",
+  "air_date": "2026-11-17",
+  "fails": [],
+  "warns": [],
+  "stayed_fails": [],
+  "duration_s": 24.53,
+  "audio": {
+    "stream": true,
+    "mean_db": -17.2,
+    "open_mean_db": -13.1
+  },
+  "vo_src": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/007_The-First-Vaccine/10_Shorts/_work_s05_vacca_jesty_v05/hos_007_s05_vacca_jesty_vo_v05.wav",
+  "vo_onset_s": 0.083,
+  "last_word_end_s": 24.111,
+  "tail_gap_s": 0.42,
+  "level": {
+    "lufs": -14.2,
+    "true_peak_dbtp": -1.6
+  },
+  "motion_0_1s": 17.85,
+  "frame0_diff_0_1_5s": 3.89,
+  "first_cut_s": 2.3,
+  "dhash": "723f2cdef6db4785",
+  "near_opens": [],
+  "contact_sheet": "/var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_007_s05_vacca_jesty_v05_open_sheet.jpg",
+  "verdict": "PASS"
+}

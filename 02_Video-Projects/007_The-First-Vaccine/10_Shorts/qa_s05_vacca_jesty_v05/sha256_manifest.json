@@ -1,0 +1,21 @@
+{
+  "job": "J0966",
+  "youtube_id": "4WUs0beKn0A",
+  "version": "v05",
+  "master_sha256": "e5ea76f012fb94c54c4a7224140d2d8ca342ea8c02a2fbdb30df17661f94f1ad",
+  "phone_sha256": "066c6774add20b1ad8c5859d27b5e14ca094d9de153597c1b7105e648a62afe1",
+  "v01_sha256": "c3eece7477deeddaab4caebdfe801849384554e649c26867d90ae05f4fc99e3c",
+  "v02_sha256": "89a9a1668d7470acb27e5a93a77641aaeeaf6aed053fa418d899c776f4d3b88e",
+  "v03_sha256": "c94af4f919a47823d6de105092d4c910673572182ce70ef7d24b68149dd34263",
+  "v04_sha256": "7a3a736069e22450807e7d81976ebf99ffe4461aced9b83e0b0e4d3940b57080",
+  "copies": {
+    "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/007_The-First-Vaccine/10_Shorts/hos_007_s05_vacca_jesty_v05.mp4": "e5ea76f012fb94c54c4a7224140d2d8ca342ea8c02a2fbdb30df17661f94f1ad",
+    "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/007_The-First-Vaccine/10_Shorts/hos_007_s05_vacca_jesty_v05_PHONE.mp4": "066c6774add20b1ad8c5859d27b5e14ca094d9de153597c1b7105e648a62afe1",
+    "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/007_The-First-Vaccine/10_Shorts/hos_007_s05_vacca_jesty_v05_2fps_sheet.jpg": "6d80ca34cd9e65e0822117f59fada8933824f02f2b8128bf2d0bca646669f726",
+    "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/007_The-First-Vaccine/10_Shorts/s05_vacca_jesty_v05/hos_007_s05_vacca_jesty_v05.mp4": "e5ea76f012fb94c54c4a7224140d2d8ca342ea8c02a2fbdb30df17661f94f1ad",
+    "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/007_The-First-Vaccine/10_Shorts/s05_vacca_jesty_v05/hos_007_s05_vacca_jesty_v05_PHONE.mp4": "066c6774add20b1ad8c5859d27b5e14ca094d9de153597c1b7105e648a62afe1",
+    "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/007_The-First-Vaccine/10_Shorts/s05_vacca_jesty_v05/hos_007_s05_vacca_jesty_v05_2fps_sheet.jpg": "6d80ca34cd9e65e0822117f59fada8933824f02f2b8128bf2d0bca646669f726"
+  },
+  "aac_lufs": -14.2,
+  "aac_true_peak_dbfs": -1.6
+}

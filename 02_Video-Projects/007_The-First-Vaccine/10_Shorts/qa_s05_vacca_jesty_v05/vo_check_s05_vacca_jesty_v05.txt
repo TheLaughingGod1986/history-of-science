@@ -1,0 +1,3 @@
+PASS  hos_007_s05_vacca_jesty_vo_v05.wav  0:24.17  mean -23.7 dB  peak -4.8 dB  146 wpm
+   warn  replace at ~0:12.10: script 'a latin name variolae vaccinae which means' / heard 'a latin name varioli vaccinae which means' — sounds alike (likely the transcriber); listen
+   warn  replace at ~0:17.56: script 'the cow from vacca the latin word' / heard 'the cow from vaca the latin word' — sounds alike (likely the transcriber); listen
