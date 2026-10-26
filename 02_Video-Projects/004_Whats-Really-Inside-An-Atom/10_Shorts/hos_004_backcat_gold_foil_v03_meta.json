@@ -1,0 +1,479 @@
+{
+  "id": "004_gold_foil",
+  "version": "v03",
+  "job": "J0965",
+  "youtube_id": "JyRjM-9Yc8g",
+  "title": "Why Gold Foil Bounced Rutherford's Particles Back",
+  "air_date": "2026-11-01",
+  "spoken": "Tiny particles bounced back off gold foil. In nineteen-oh-nine, Rutherford's team fired tiny particles at gold thinner than paper. Almost all went straight through. About one in eight thousand bounced back. Rutherford said it was like firing a shell at tissue paper, and it came back and hit you. An atom's mass sits almost all in one tiny centre: the nucleus.",
+  "script": "Tiny particles bounced back off gold foil. In nineteen-oh-nine, Rutherford's team fired tiny particles at gold thinner than paper. Almost all went straight through. About one in eight thousand bounced back. Rutherford said it was like firing a shell at tissue paper, and it came back and hit you. An atom's mass sits almost all in one tiny centre: the nucleus.",
+  "words": [
+    {
+      "word": "Tiny",
+      "start": 0.0,
+      "end": 0.313
+    },
+    {
+      "word": "particles",
+      "start": 0.393,
+      "end": 1.113
+    },
+    {
+      "word": "bounced",
+      "start": 1.183,
+      "end": 1.673
+    },
+    {
+      "word": "back",
+      "start": 1.753,
+      "end": 2.073
+    },
+    {
+      "word": "off",
+      "start": 2.113,
+      "end": 2.233
+    },
+    {
+      "word": "gold",
+      "start": 2.297,
+      "end": 2.553
+    },
+    {
+      "word": "foil.",
+      "start": 2.649,
+      "end": 3.193
+    },
+    {
+      "word": "In",
+      "start": 3.353,
+      "end": 3.46
+    },
+    {
+      "word": "nineteen-oh-nine,",
+      "start": 3.496,
+      "end": 4.5
+    },
+    {
+      "word": "Rutherford's",
+      "start": 4.54,
+      "end": 5.06
+    },
+    {
+      "word": "team",
+      "start": 5.14,
+      "end": 5.46
+    },
+    {
+      "word": "fired",
+      "start": 5.54,
+      "end": 5.94
+    },
+    {
+      "word": "tiny",
+      "start": 6.004,
+      "end": 6.26
+    },
+    {
+      "word": "particles",
+      "start": 6.324,
+      "end": 6.9
+    },
+    {
+      "word": "at",
+      "start": 6.953,
+      "end": 7.06
+    },
+    {
+      "word": "gold",
+      "start": 7.156,
+      "end": 7.54
+    },
+    {
+      "word": "thinner",
+      "start": 7.59,
+      "end": 7.94
+    },
+    {
+      "word": "than",
+      "start": 7.988,
+      "end": 8.18
+    },
+    {
+      "word": "paper.",
+      "start": 8.273,
+      "end": 8.82
+    },
+    {
+      "word": "Almost",
+      "start": 8.921,
+      "end": 9.398
+    },
+    {
+      "word": "all",
+      "start": 9.458,
+      "end": 9.638
+    },
+    {
+      "word": "went",
+      "start": 9.702,
+      "end": 9.958
+    },
+    {
+      "word": "straight",
+      "start": 9.994,
+      "end": 10.278
+    },
+    {
+      "word": "through.",
+      "start": 10.338,
+      "end": 10.838
+    },
+    {
+      "word": "About",
+      "start": 10.95,
+      "end": 11.207
+    },
+    {
+      "word": "one",
+      "start": 11.287,
+      "end": 11.527
+    },
+    {
+      "word": "in",
+      "start": 11.554,
+      "end": 11.607
+    },
+    {
+      "word": "eight",
+      "start": 11.647,
+      "end": 11.847
+    },
+    {
+      "word": "thousand",
+      "start": 11.918,
+      "end": 12.487
+    },
+    {
+      "word": "bounced",
+      "start": 12.547,
+      "end": 12.967
+    },
+    {
+      "word": "back.",
+      "start": 13.063,
+      "end": 13.607
+    },
+    {
+      "word": "Rutherford",
+      "start": 13.654,
+      "end": 14.107
+    },
+    {
+      "word": "said",
+      "start": 14.171,
+      "end": 14.427
+    },
+    {
+      "word": "it",
+      "start": 14.48,
+      "end": 14.587
+    },
+    {
+      "word": "was",
+      "start": 14.627,
+      "end": 14.747
+    },
+    {
+      "word": "like",
+      "start": 14.779,
+      "end": 14.907
+    },
+    {
+      "word": "firing",
+      "start": 14.976,
+      "end": 15.387
+    },
+    {
+      "word": "a",
+      "start": 15.427,
+      "end": 15.467
+    },
+    {
+      "word": "shell",
+      "start": 15.547,
+      "end": 15.947
+    },
+    {
+      "word": "at",
+      "start": 16.0,
+      "end": 16.107
+    },
+    {
+      "word": "tissue",
+      "start": 16.164,
+      "end": 16.507
+    },
+    {
+      "word": "paper,",
+      "start": 16.587,
+      "end": 17.387
+    },
+    {
+      "word": "and",
+      "start": 17.407,
+      "end": 17.467
+    },
+    {
+      "word": "it",
+      "start": 17.52,
+      "end": 17.627
+    },
+    {
+      "word": "came",
+      "start": 17.675,
+      "end": 17.867
+    },
+    {
+      "word": "back",
+      "start": 17.931,
+      "end": 18.187
+    },
+    {
+      "word": "and",
+      "start": 18.227,
+      "end": 18.347
+    },
+    {
+      "word": "hit",
+      "start": 18.427,
+      "end": 18.667
+    },
+    {
+      "word": "you.",
+      "start": 18.747,
+      "end": 19.067
+    },
+    {
+      "word": "An",
+      "start": 19.151,
+      "end": 19.236
+    },
+    {
+      "word": "atom's",
+      "start": 19.3,
+      "end": 19.716
+    },
+    {
+      "word": "mass",
+      "start": 19.78,
+      "end": 20.036
+    },
+    {
+      "word": "sits",
+      "start": 20.1,
+      "end": 20.356
+    },
+    {
+      "word": "almost",
+      "start": 20.413,
+      "end": 20.756
+    },
+    {
+      "word": "all",
+      "start": 20.836,
+      "end": 21.076
+    },
+    {
+      "word": "in",
+      "start": 21.156,
+      "end": 21.316
+    },
+    {
+      "word": "one",
+      "start": 21.376,
+      "end": 21.556
+    },
+    {
+      "word": "tiny",
+      "start": 21.652,
+      "end": 22.036
+    },
+    {
+      "word": "centre:",
+      "start": 22.116,
+      "end": 22.756
+    },
+    {
+      "word": "the",
+      "start": 22.776,
+      "end": 22.836
+    },
+    {
+      "word": "nucleus.",
+      "start": 22.936,
+      "end": 23.716
+    }
+  ],
+  "word_count": 61,
+  "last_word_end_s": 23.716,
+  "plan": [
+    {
+      "t0": 0.0,
+      "t1": 2.75,
+      "plate": "12_shell_comes_back_v02.mp4",
+      "in_s": 1.5,
+      "crop_x": 560,
+      "lands_on": "open",
+      "hold_s": 2.75
+    },
+    {
+      "t0": 2.75,
+      "t1": 5.54,
+      "plate": "03_fire_at_gold_v01.mp4",
+      "in_s": 0.5,
+      "crop_x": 640,
+      "lands_on": "fired",
+      "hold_s": 2.79
+    },
+    {
+      "t0": 5.54,
+      "t1": 8.921,
+      "plate": "04_thin_gold_foil_v01.mp4",
+      "in_s": 0.4,
+      "crop_x": 656,
+      "lands_on": "fired",
+      "hold_s": 3.381
+    },
+    {
+      "t0": 8.921,
+      "t1": 10.95,
+      "plate": "09_almost_all_pass_v02.mp4",
+      "in_s": 3.0,
+      "crop_x": 520,
+      "lands_on": "Almost",
+      "hold_s": 2.029
+    },
+    {
+      "t0": 10.95,
+      "t1": 13.654,
+      "plate": "07_green_flash_count_v02.mp4",
+      "in_s": 0.1,
+      "crop_x": 656,
+      "lands_on": "About",
+      "hold_s": 2.704
+    },
+    {
+      "t0": 13.654,
+      "t1": 17.407,
+      "plate": "11_shell_tissue_v02.mp4",
+      "in_s": 1.2,
+      "crop_x": 900,
+      "lands_on": "Rutherford",
+      "hold_s": 3.753
+    },
+    {
+      "t0": 17.407,
+      "t1": 19.151,
+      "plate": "10_one_bounces_v02.mp4",
+      "in_s": 0.4,
+      "crop_x": 656,
+      "lands_on": "and",
+      "hold_s": 1.744
+    },
+    {
+      "t0": 19.151,
+      "t1": 21.376,
+      "plate": "13_mass_packed_v02.mp4",
+      "in_s": 2.55,
+      "crop_x": 656,
+      "lands_on": "An",
+      "hold_s": 2.225
+    },
+    {
+      "t0": 21.376,
+      "t1": 23.716,
+      "plate": "14_nucleus_electrons_v01.mp4",
+      "in_s": 0.8,
+      "crop_x": 656,
+      "lands_on": "one",
+      "hold_s": 2.34
+    },
+    {
+      "t0": 23.716,
+      "t1": 24.716,
+      "plate": "12_shell_comes_back_v02.mp4",
+      "in_s": 0.5,
+      "crop_x": 560,
+      "lands_on": "loop",
+      "hold_s": 1.0
+    }
+  ],
+  "hook": "IT CAME BACK",
+  "hook_layer": {
+    "font": "Didot Bold",
+    "font_size": 243,
+    "cap_px": 173,
+    "cap_pct": 9.01,
+    "h_squeeze": 1.0,
+    "lines": 3,
+    "block_pct": [
+      33.6,
+      66.4
+    ],
+    "widest_pct": 70.4
+  },
+  "title_on_screen": "What's Really Inside an Atom?",
+  "no_cta": true,
+  "no_new_spend": true,
+  "pause_saved_s": 1.781,
+  "v01_untouched": true,
+  "bed": "hos_004_backcat_gold_foil_v02_bed.wav",
+  "sfx_level": {
+    "exit": 0,
+    "output": "SFX level PASS: VO -17.8 LUFS, SFX -47.6 LUFS, 1 hits",
+    "bed_db": -12.0,
+    "sfx_db": -14.0
+  },
+  "frame0_source": "04_Generated-Clips/part04/raw/v01/12_shell_comes_back_v02.mp4",
+  "frame0_zoom": "none \u2014 moving plate, in 1.5s, crop x=560, no Ken Burns",
+  "frame0_in_s": 1.5,
+  "first_word_s": 0.0,
+  "surprise_s": {
+    "bounced": 1.183,
+    "gold": 2.297
+  },
+  "first_cut_s": 2.75,
+  "last_word_to_loop_s": 1.0,
+  "meta_promise": false,
+  "runtime_s": 24.733,
+  "longest_hold_s": 3.753,
+  "payoff_phrase": "the nucleus",
+  "payoff_s": 22.936,
+  "payoff_frac": 0.928,
+  "loop_sentence": "An atom's mass sits almost all in one tiny centre: the nucleus. Tiny particles bounced back off gold foil.",
+  "lufs_wav": -17.8,
+  "true_peak_wav_dbfs": -2.9,
+  "pre_master_lufs": -16.8,
+  "frame0_black": 0.01,
+  "sha256": "f1cb7ec072c7148ab84d9049cb01976045564aea0e5214b9d2d8c6fa949a762e",
+  "missing_plate_note": "05_flash_in_dark_v01.mp4 is not on the NAS; 04_thin_gold_foil_v01.mp4 splits the fire-at-gold hold",
+  "lufs": -14.4,
+  "true_peak_dbfs": -1.7,
+  "loudness_note": "v02 AAC was -14.3 LUFS / -1.4 dBTP. alimiter ceiling -1.8 dB (level=disabled). Measured on the v03 AAC: -14.4 LUFS, true peak -1.7 dBFS.",
+  "v02_untouched": true,
+  "v02_sha256": "11e2b42a48820a4c10434ba4e5dbb2075fae509c98f9075d70e97352307b1292",
+  "changes": "true-peak limiter plus Rutherford card and 1 in 8,000 call-out",
+  "who_card": {
+    "name": "ERNEST RUTHERFORD",
+    "line2": "Manchester, 1909",
+    "t0": 2.75,
+    "t1": 5.54,
+    "style": "fabricius"
+  },
+  "callout": {
+    "text": "1 in 8,000",
+    "t0": 10.95,
+    "t1": 13.65,
+    "style": "callout"
+  }
+}

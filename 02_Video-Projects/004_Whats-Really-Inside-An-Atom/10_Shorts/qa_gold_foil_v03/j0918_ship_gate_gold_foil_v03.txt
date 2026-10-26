@@ -1,0 +1,5 @@
+J0918 HOS ship gate (Chief, 24 Oct 2026), read from gate_shorts_open. v03 cards + limiter.
+verdict=PASS frame0_diff=8.62 first_cut_s=2.77 vo_onset_s=0.052 tail_gap_s=1.02 stayed_fails=[]
+fails=[]
+warns=[]
+aac_lufs=-14.40 aac_true_peak_dbfs=-1.70

@@ -1,0 +1,39 @@
+{
+  "file": "hos_004_backcat_gold_foil_v03.mp4",
+  "sha256": "f1cb7ec072c7148ab84d9049cb01976045564aea0e5214b9d2d8c6fa949a762e",
+  "duration_s": 24.733,
+  "lufs": -14.4,
+  "true_peak_dbfs": -1.7,
+  "gate_exit": 0,
+  "gate_verdict": "PASS",
+  "gate_fails": [],
+  "gate_warns": [],
+  "polish_exit": 0,
+  "picture_exit": 0,
+  "music_exit": 0,
+  "sfx_exit": 0,
+  "polish_tail": [
+    "s06_Rutherford    15.5s 11_shell_tissue_v02.mp4      WARN low detail: luma std 15.28 < 18.0; low detail: edge density 0.007 < film p5 0.0140",
+    "s07_and    18.3s 10_one_bounces_v02.mp4       ok",
+    "s08_An    20.3s 13_mass_packed_v02.mp4       ok",
+    "s09_one    22.6s 14_nucleus_electrons_v01.mp4 ok",
+    "s10_loop    24.2s loop_span_12_shell_comes_bac ok",
+    "polish gate PASS: 0 of 10 rows failed, 1 to look at -> 02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/qa_gold_foil_v03/polish_gate_gold_foil_v03.json"
+  ],
+  "picture_tail": [
+    "WARN   0:16 row s06_Rutherford 11_shell_tissue_v02.mp4: low detail: luma std 15.28 < 18.0; low detail: edge density 0.007 < film p5 0.0140",
+    "picture QA PASS: 0 of 10 cuts fail, 1 to look at -> 02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/qa_gold_foil_v03/picture_qa_gold_foil_v03/PICTURE_QA.md, 02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/qa_gold_foil_v03/picture_qa_gold_foil_v03/picture_qa_review.jpg"
+  ],
+  "music_tail": [
+    "WARN reused: couldn't read saturn_long_vo_v03b_tightened_LOCK.m4a to compare (OSError); download it or pass --others",
+    "WARN reused: couldn't read saturn_long_vo_v03b_tightened_LOCK.wav to compare (OSError); download it or pass --others",
+    "WARN reused: couldn't read saturn_long_vo_v01_LISTEN.wav to compare (OSError); download it or pass --others",
+    "WARN reused: couldn't read monday_saturn_short_vo_v02_how_long.mp3 to compare (OSError); download it or pass --others",
+    "WARN reused: couldn't read saturn_long_vo_v03_tightened.wav to compare (OSError); download it or pass --others",
+    "music gate PASS: hos_004_backcat_gold_foil_v02_bed.wav, 25.1 s, about 70.6 BPM, brief Pace: 68-76 BPM"
+  ],
+  "sfx_tail": [
+    "SFX level PASS: VO -17.8 LUFS, SFX -47.6 LUFS, 1 hits"
+  ],
+  "v02_untouched": true
+}
