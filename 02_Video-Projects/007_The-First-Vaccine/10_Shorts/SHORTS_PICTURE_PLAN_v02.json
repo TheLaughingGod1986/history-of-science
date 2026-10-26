@@ -3,7 +3,7 @@
   "folder": "007_The-First-Vaccine",
   "version": "v02",
   "written": "2026-10-26",
-  "task": "J0967: stayed-to-watch build rules (c56 FIX v2). Plans only, no render, no generation.",
+  "task": "J0967: stayed-to-watch build rules (c56 + Acting-Chief 6425168160 FIX). Plans only, no render, no generation.",
   "long_board_version": "v02 (J0343 PASS)",
   "totals": {
     "shorts_count": 2,
@@ -52,7 +52,10 @@
           "word_end_s": 2.72,
           "word_gap_s": 0.0,
           "source_long_plate": "P2:03_market_walk",
+          "plate_on_disk": true,
+          "probed_dur_s": 8.0,
           "plate_dur_s": 8.0,
+          "status": "planned",
           "route": "reuse-long-plate",
           "spoken": "The first vaccine began with milkmaids",
           "flow_credits_expected": 0
@@ -65,7 +68,10 @@
           "word_end_s": 5.62,
           "word_gap_s": 0.0,
           "source_long_plate": "P2:01_milking_dawn",
+          "plate_on_disk": true,
+          "probed_dur_s": 8.0,
           "plate_dur_s": 8.0,
+          "status": "planned",
           "route": "reuse-long-plate",
           "spoken": "who never caught smallpox. They",
           "flow_credits_expected": 0
@@ -78,7 +84,10 @@
           "word_end_s": 8.06,
           "word_gap_s": 0.06,
           "source_long_plate": "P2:02_healed_hand",
+          "plate_on_disk": true,
+          "probed_dur_s": 8.0,
           "plate_dur_s": 8.0,
+          "status": "planned",
           "route": "reuse-long-plate",
           "spoken": "caught cowpox from the cows instead,",
           "flow_credits_expected": 0
@@ -91,7 +100,10 @@
           "word_end_s": 10.52,
           "word_gap_s": 0.1,
           "source_long_plate": "P2:02b_well_again",
-          "plate_dur_s": 6.0,
+          "plate_on_disk": true,
+          "probed_dur_s": 8.0,
+          "plate_dur_s": 8.0,
+          "status": "planned",
           "route": "reuse-long-plate",
           "spoken": "a few sore spots and nothing more.",
           "flow_credits_expected": 0
@@ -104,7 +116,10 @@
           "word_end_s": 13.12,
           "word_gap_s": 0.0,
           "source_long_plate": "P1:05_quiet_lane",
-          "plate_dur_s": 4.0,
+          "plate_on_disk": true,
+          "probed_dur_s": 8.0,
+          "plate_dur_s": 8.0,
+          "status": "planned",
           "route": "reuse-long-plate",
           "spoken": "And farmers swore that anyone who'd",
           "flow_credits_expected": 0
@@ -117,7 +132,10 @@
           "word_end_s": 15.98,
           "word_gap_s": 0.0,
           "source_long_plate": "P1:06_shuttered_house",
-          "plate_dur_s": 6.0,
+          "plate_on_disk": true,
+          "probed_dur_s": 8.0,
+          "plate_dur_s": 8.0,
+          "status": "planned",
           "route": "reuse-long-plate",
           "spoken": "had it was safe from smallpox for life.",
           "flow_credits_expected": 0
@@ -130,7 +148,10 @@
           "word_end_s": 19.24,
           "word_gap_s": 0.0,
           "source_long_plate": "P2:08_jenner_window",
+          "plate_on_disk": true,
+          "probed_dur_s": 8.0,
           "plate_dur_s": 8.0,
+          "status": "planned",
           "route": "reuse-long-plate",
           "spoken": "One country doctor, Edward Jenner,",
           "flow_credits_expected": 0
@@ -143,7 +164,10 @@
           "word_end_s": 21.82,
           "word_gap_s": 0.0,
           "source_long_plate": "P2:13_casebook",
+          "plate_on_disk": true,
+          "probed_dur_s": 8.0,
           "plate_dur_s": 8.0,
+          "status": "planned",
           "route": "reuse-long-plate",
           "spoken": "took the rumor seriously and tested it.",
           "flow_credits_expected": 0
@@ -156,7 +180,10 @@
           "word_end_s": 25.48,
           "word_gap_s": 0.04,
           "source_long_plate": "P5:09_meadow_golden",
+          "plate_on_disk": true,
+          "probed_dur_s": 8.0,
           "plate_dur_s": 8.0,
+          "status": "planned",
           "route": "reuse-long-plate",
           "spoken": "He was right, and it became the first vaccine",
           "flow_credits_expected": 0
@@ -169,11 +196,15 @@
           "role": "loop_tail",
           "route": "reuse-long-plate",
           "source_long_plate": "P2:03_market_walk",
+          "plate_on_disk": true,
+          "probed_dur_s": 8.0,
           "plate_dur_s": 8.0,
+          "status": "planned",
           "spoken": "",
           "note": "Matched frame-0 plate after the last word. No banner, no video id, no code text."
         }
       ],
+      "total_duration_s": 26.52,
       "first_cut_s": 2.72,
       "loop_tail_s": 1.0,
       "end_card": {
@@ -184,7 +215,20 @@
       },
       "full_film_banner": false,
       "render": false,
-      "frame0_plate": "P2:03_market_walk"
+      "frame0_plate": "P2:03_market_walk",
+      "hook_complete_in_s01": false,
+      "hook_sentence_end_s": 4.6,
+      "plates_on_disk": true,
+      "hook_conflict": {
+        "s01_end_s": 2.72,
+        "s01_partial_spoken": "The first vaccine began with milkmaids",
+        "hook_sentence_end_s": 4.6,
+        "full_hook_sentence": "The first vaccine began with milkmaids who never caught smallpox.",
+        "vo_words_changed": false,
+        "bounded_edit_proposal": "Sentence 1 ('The first vaccine began with milkmaids, who never caught smallpox.') ends at 4.60 s (3.48 s pure speech); S01 cuts after the main clause 'milkmaids' at 2.72 s while the relative clause 'who never caught smallpox.' lands in S02 (2.72-4.60 s). Bounded existing-word option: splice existing words 'milkmaids never caught smallpox.' (1.88-4.60 s -> 0.06-2.32 s) as sentence 1, awaiting Chief sign-off."
+      },
+      "status": "blocked_unfinished_hook",
+      "blocked_reason": "S01 cuts at 2.72 s ('The first vaccine began with milkmaids') before the opening hook sentence finishes at 4.60 s."
     },
     {
       "id": "Short_C",
@@ -222,7 +266,10 @@
           "word_end_s": 2.22,
           "word_gap_s": 0.0,
           "source_long_plate": "P5:03_globe_lights",
+          "plate_on_disk": true,
+          "probed_dur_s": 8.0,
           "plate_dur_s": 8.0,
+          "status": "planned",
           "route": "reuse-long-plate",
           "spoken": "Smallpox is gone forever.",
           "flow_credits_expected": 0
@@ -235,7 +282,10 @@
           "word_end_s": 5.68,
           "word_gap_s": 0.0,
           "source_long_plate": "P1:07b_three_in_ten",
-          "plate_dur_s": 6.0,
+          "plate_on_disk": true,
+          "probed_dur_s": 8.0,
+          "plate_dur_s": 8.0,
+          "status": "planned",
           "route": "reuse-long-plate",
           "spoken": "For centuries, it killed about three in every ten people",
           "flow_credits_expected": 0
@@ -248,7 +298,10 @@
           "word_end_s": 8.86,
           "word_gap_s": 0.0,
           "source_long_plate": "P3:04_lancet_touch",
+          "plate_on_disk": true,
+          "probed_dur_s": 8.0,
           "plate_dur_s": 8.0,
+          "status": "planned",
           "route": "reuse-long-plate",
           "spoken": "it caught. Then in 1796,",
           "flow_credits_expected": 0
@@ -261,7 +314,10 @@
           "word_end_s": 12.22,
           "word_gap_s": 0.0,
           "source_long_plate": "P3:07_playing_garden",
+          "plate_on_disk": true,
+          "probed_dur_s": 8.0,
           "plate_dur_s": 8.0,
+          "status": "planned",
           "route": "reuse-long-plate",
           "spoken": "one test showed that cowpox could protect you from it.",
           "flow_credits_expected": 0
@@ -274,7 +330,10 @@
           "word_end_s": 15.12,
           "word_gap_s": 0.0,
           "source_long_plate": "P5:04_health_workers",
-          "plate_dur_s": 6.0,
+          "plate_on_disk": true,
+          "probed_dur_s": 8.0,
+          "plate_dur_s": 8.0,
+          "status": "planned",
           "route": "reuse-long-plate",
           "spoken": "Health workers spread that idea to every",
           "flow_credits_expected": 0
@@ -287,7 +346,10 @@
           "word_end_s": 18.36,
           "word_gap_s": 0.0,
           "source_long_plate": "P5:05_kit_opens",
+          "plate_on_disk": true,
+          "probed_dur_s": 8.0,
           "plate_dur_s": 8.0,
+          "status": "planned",
           "route": "reuse-long-plate",
           "spoken": "country until smallpox had nowhere left to hide.",
           "flow_credits_expected": 0
@@ -300,7 +362,10 @@
           "word_end_s": 21.34,
           "word_gap_s": 0.0,
           "source_long_plate": "P5:06_assembly_1980",
+          "plate_on_disk": true,
+          "probed_dur_s": 8.0,
           "plate_dur_s": 8.0,
+          "status": "planned",
           "route": "reuse-long-plate",
           "spoken": "In 1980, it was declared gone,",
           "flow_credits_expected": 0
@@ -313,7 +378,10 @@
           "word_end_s": 24.62,
           "word_gap_s": 0.18,
           "source_long_plate": "P5:10_history_book",
-          "plate_dur_s": 6.0,
+          "plate_on_disk": true,
+          "probed_dur_s": 8.0,
+          "plate_dur_s": 8.0,
+          "status": "planned",
           "route": "reuse-long-plate",
           "spoken": "the first disease humans ever wiped out.",
           "flow_credits_expected": 0
@@ -326,11 +394,15 @@
           "role": "loop_tail",
           "route": "reuse-long-plate",
           "source_long_plate": "P5:03_globe_lights",
+          "plate_on_disk": true,
+          "probed_dur_s": 8.0,
           "plate_dur_s": 8.0,
+          "status": "planned",
           "spoken": "",
           "note": "Matched frame-0 plate after the last word. No banner, no video id, no code text."
         }
       ],
+      "total_duration_s": 25.8,
       "first_cut_s": 2.22,
       "loop_tail_s": 1.0,
       "end_card": {
@@ -341,18 +413,24 @@
       },
       "full_film_banner": false,
       "render": false,
-      "frame0_plate": "P5:03_globe_lights"
+      "frame0_plate": "P5:03_globe_lights",
+      "hook_complete_in_s01": true,
+      "hook_sentence_end_s": 2.22,
+      "plates_on_disk": true,
+      "status": "planned"
     }
   ],
   "rules": {
     "job": "J0967",
     "s01_ends_by_s": 2.85,
+    "s01_requires_completed_hook": true,
     "body_cut_s": [
       2.5,
       3.8
     ],
     "word_end_gap_s_max": 0.1,
     "adjacent_same_plate": false,
+    "plate_must_exist_on_disk": true,
     "loop_tail_s_max": 1.0,
     "full_film_banner": false,
     "end_card_video_id": null,
@@ -360,5 +438,6 @@
     "render": false,
     "generation": false,
     "gbp": 0
-  }
+  },
+  "media_root": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine"
 }

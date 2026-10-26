@@ -3,7 +3,7 @@
   "folder": "010_Alvarez-Clay-Line-Dinosaurs",
   "version": "v02",
   "written": "2026-10-26",
-  "task": "J0967: stayed-to-watch build rules (c56 FIX v2). Plans only, no render, no generation.",
+  "task": "J0967: stayed-to-watch build rules (c56 + Acting-Chief 6425168160 FIX). Plans only, no render, no generation.",
   "long_board_version": "v02/v03 (J0334 PASS + J0348 PASS)",
   "totals": {
     "shorts_count": 2,
@@ -52,10 +52,14 @@
           "word_end_s": 2.4,
           "word_gap_s": 0.0,
           "source_long_plate": "P1:01_clay_line",
+          "plate_on_disk": false,
+          "probed_dur_s": null,
           "plate_dur_s": 8.0,
+          "status": "blocked_missing_plate",
           "route": "reuse-long-plate",
           "spoken": "This thin line of clay marks the end of the",
-          "flow_credits_expected": 0
+          "flow_credits_expected": 0,
+          "board_dur_s": 8.0
         },
         {
           "id": "S02",
@@ -65,10 +69,14 @@
           "word_end_s": 5.18,
           "word_gap_s": 0.0,
           "source_long_plate": "P2:01_walter_hammer",
+          "plate_on_disk": false,
+          "probed_dur_s": null,
           "plate_dur_s": 8.0,
+          "status": "blocked_missing_plate",
           "route": "reuse-long-plate",
           "spoken": "dinosaurs. It's in a cliff in Italy",
-          "flow_credits_expected": 0
+          "flow_credits_expected": 0,
+          "board_dur_s": 8.0
         },
         {
           "id": "S03",
@@ -78,10 +86,14 @@
           "word_end_s": 7.82,
           "word_gap_s": 0.0,
           "source_long_plate": "P1:08_hand_on_rock",
+          "plate_on_disk": false,
+          "probed_dur_s": null,
           "plate_dur_s": 8.0,
+          "status": "blocked_missing_plate",
           "route": "reuse-long-plate",
           "spoken": "about a centimeter thick. Below it,",
-          "flow_credits_expected": 0
+          "flow_credits_expected": 0,
+          "board_dur_s": 8.0
         },
         {
           "id": "S04",
@@ -91,10 +103,14 @@
           "word_end_s": 10.56,
           "word_gap_s": 0.0,
           "source_long_plate": "P2:03_tiny_shells",
+          "plate_on_disk": false,
+          "probed_dur_s": null,
           "plate_dur_s": 8.0,
+          "status": "blocked_missing_plate",
           "route": "reuse-long-plate",
           "spoken": "the rock is full of tiny fossil shells.",
-          "flow_credits_expected": 0
+          "flow_credits_expected": 0,
+          "board_dur_s": 8.0
         },
         {
           "id": "S05",
@@ -104,10 +120,14 @@
           "word_end_s": 13.7,
           "word_gap_s": 0.0,
           "source_long_plate": "P2:05_almost_none",
+          "plate_on_disk": false,
+          "probed_dur_s": null,
           "plate_dur_s": 8.0,
+          "status": "blocked_missing_plate",
           "route": "reuse-long-plate",
           "spoken": "Above it, almost all of them are gone.",
-          "flow_credits_expected": 0
+          "flow_credits_expected": 0,
+          "board_dur_s": 8.0
         },
         {
           "id": "S06",
@@ -117,10 +137,14 @@
           "word_end_s": 16.82,
           "word_gap_s": 0.0,
           "source_long_plate": "P3:08_asaro_michel",
+          "plate_on_disk": false,
+          "probed_dur_s": null,
           "plate_dur_s": 8.0,
+          "status": "blocked_missing_plate",
           "route": "reuse-long-plate",
           "spoken": "In 1980, scientists found",
-          "flow_credits_expected": 0
+          "flow_credits_expected": 0,
+          "board_dur_s": 8.0
         },
         {
           "id": "S07",
@@ -130,10 +154,14 @@
           "word_end_s": 19.72,
           "word_gap_s": 0.0,
           "source_long_plate": "P4:01_iridium_spike",
+          "plate_on_disk": false,
+          "probed_dur_s": null,
           "plate_dur_s": 17.02,
+          "status": "blocked_missing_plate",
           "route": "reuse-long-plate",
           "spoken": "the clay was packed with a rare metal from space.",
-          "flow_credits_expected": 0
+          "flow_credits_expected": 0,
+          "board_dur_s": 17.02
         },
         {
           "id": "S08",
@@ -143,10 +171,14 @@
           "word_end_s": 22.6,
           "word_gap_s": 0.12,
           "source_long_plate": "P4:06_dust_veil",
+          "plate_on_disk": false,
+          "probed_dur_s": null,
           "plate_dur_s": 8.0,
+          "status": "blocked_missing_plate",
           "route": "reuse-long-plate",
           "spoken": "Something huge had hit the Earth",
-          "flow_credits_expected": 0
+          "flow_credits_expected": 0,
+          "board_dur_s": 8.0
         },
         {
           "id": "loop_tail",
@@ -156,11 +188,16 @@
           "role": "loop_tail",
           "route": "reuse-long-plate",
           "source_long_plate": "P1:01_clay_line",
+          "plate_on_disk": false,
+          "probed_dur_s": null,
           "plate_dur_s": 8.0,
+          "status": "blocked_missing_plate",
           "spoken": "",
-          "note": "Matched frame-0 plate after the last word. No banner, no video id, no code text."
+          "note": "Matched frame-0 plate after the last word. No banner, no video id, no code text.",
+          "board_dur_s": 8.0
         }
       ],
+      "total_duration_s": 23.72,
       "first_cut_s": 2.4,
       "loop_tail_s": 1.0,
       "end_card": {
@@ -171,7 +208,20 @@
       },
       "full_film_banner": false,
       "render": false,
-      "frame0_plate": "P1:01_clay_line"
+      "frame0_plate": "P1:01_clay_line",
+      "hook_complete_in_s01": false,
+      "hook_sentence_end_s": 3.28,
+      "plates_on_disk": false,
+      "hook_conflict": {
+        "s01_end_s": 2.4,
+        "s01_partial_spoken": "This thin line of clay marks the end of the",
+        "hook_sentence_end_s": 3.28,
+        "full_hook_sentence": "This thin line of clay marks the end of the dinosaurs.",
+        "vo_words_changed": false,
+        "bounded_edit_proposal": "Sentence 1 ('This thin line of clay marks the end of the dinosaurs.') ends at 3.28 s (2.62 s pure speech); S01 cuts after 'the' at 2.40 s while 'dinosaurs.' lands at the start of S02 (2.40-3.28 s). Bounded existing-word option: tighten sentence-1 onset and inter-word gaps by 0.48 s (or excise 'of clay' [1.06-1.42 s]) on the existing take so 'dinosaurs.' finishes at 2.80 s <= 2.85 s, awaiting Chief sign-off."
+      },
+      "status": "blocked_hook_and_missing_plates",
+      "blocked_reason": "S01 cuts at 2.40 s before hook sentence ends at 3.28 s, and target long plates exist only in board JSON (no .mp4 files on disk/NAS)."
     },
     {
       "id": "Short_C",
@@ -209,10 +259,14 @@
           "word_end_s": 1.78,
           "word_gap_s": 0.1,
           "source_long_plate": "P5:09_robin",
+          "plate_on_disk": false,
+          "probed_dur_s": null,
           "plate_dur_s": 8.0,
+          "status": "blocked_missing_plate",
           "route": "reuse-long-plate",
           "spoken": "Not all the dinosaurs died.",
-          "flow_credits_expected": 0
+          "flow_credits_expected": 0,
+          "board_dur_s": 8.0
         },
         {
           "id": "S02",
@@ -222,10 +276,14 @@
           "word_end_s": 5.2,
           "word_gap_s": 0.0,
           "source_long_plate": "P4:06_dust_veil",
+          "plate_on_disk": false,
+          "probed_dur_s": null,
           "plate_dur_s": 8.0,
+          "status": "blocked_missing_plate",
           "route": "reuse-long-plate",
           "spoken": "When the asteroid struck sixty-six million years ago,",
-          "flow_credits_expected": 0
+          "flow_credits_expected": 0,
+          "board_dur_s": 8.0
         },
         {
           "id": "S03",
@@ -235,10 +293,14 @@
           "word_end_s": 7.92,
           "word_gap_s": 0.0,
           "source_long_plate": "P5:11_why_survive",
+          "plate_on_disk": false,
+          "probed_dur_s": null,
           "plate_dur_s": 14.4,
+          "status": "blocked_missing_plate",
           "route": "reuse-long-plate",
           "spoken": "a few small feathered ones survived.",
-          "flow_credits_expected": 0
+          "flow_credits_expected": 0,
+          "board_dur_s": 14.4
         },
         {
           "id": "S04",
@@ -248,10 +310,14 @@
           "word_end_s": 10.4,
           "word_gap_s": 0.02,
           "source_long_plate": "P5:08_all_at_once",
+          "plate_on_disk": false,
+          "probed_dur_s": null,
           "plate_dur_s": 8.0,
+          "status": "blocked_missing_plate",
           "route": "reuse-long-plate",
           "spoken": "Their descendants are all around you now:",
-          "flow_credits_expected": 0
+          "flow_credits_expected": 0,
+          "board_dur_s": 8.0
         },
         {
           "id": "S05",
@@ -261,10 +327,14 @@
           "word_end_s": 13.06,
           "word_gap_s": 0.0,
           "source_long_plate": "P5:09_robin",
+          "plate_on_disk": false,
+          "probed_dur_s": null,
           "plate_dur_s": 8.0,
+          "status": "blocked_missing_plate",
           "route": "reuse-long-plate",
           "spoken": "the pigeon on the pavement, the robin",
-          "flow_credits_expected": 0
+          "flow_credits_expected": 0,
+          "board_dur_s": 8.0
         },
         {
           "id": "S06",
@@ -274,10 +344,14 @@
           "word_end_s": 15.78,
           "word_gap_s": 0.0,
           "source_long_plate": "P5:13_window_song",
+          "plate_on_disk": false,
+          "probed_dur_s": null,
           "plate_dur_s": 8.0,
+          "status": "blocked_missing_plate",
           "route": "reuse-long-plate",
           "spoken": "in the garden, the gull at the seaside.",
-          "flow_credits_expected": 0
+          "flow_credits_expected": 0,
+          "board_dur_s": 8.0
         },
         {
           "id": "S07",
@@ -287,10 +361,14 @@
           "word_end_s": 19.38,
           "word_gap_s": 0.0,
           "source_long_plate": "P5:10_explorer_robin",
+          "plate_on_disk": false,
+          "probed_dur_s": null,
           "plate_dur_s": 8.0,
+          "status": "blocked_missing_plate",
           "route": "reuse-long-plate",
           "spoken": "Every bird you have ever seen is a living dinosaur.",
-          "flow_credits_expected": 0
+          "flow_credits_expected": 0,
+          "board_dur_s": 8.0
         },
         {
           "id": "S08",
@@ -300,10 +378,14 @@
           "word_end_s": 22.5,
           "word_gap_s": 0.06,
           "source_long_plate": "P5:12_clay_callback",
+          "plate_on_disk": false,
+          "probed_dur_s": null,
           "plate_dur_s": 8.0,
+          "status": "blocked_missing_plate",
           "route": "reuse-long-plate",
           "spoken": "Look up. They never really left",
-          "flow_credits_expected": 0
+          "flow_credits_expected": 0,
+          "board_dur_s": 8.0
         },
         {
           "id": "loop_tail",
@@ -313,11 +395,16 @@
           "role": "loop_tail",
           "route": "reuse-long-plate",
           "source_long_plate": "P5:09_robin",
+          "plate_on_disk": false,
+          "probed_dur_s": null,
           "plate_dur_s": 4.0,
+          "status": "blocked_missing_plate",
           "spoken": "",
-          "note": "4.00 s loop window on P5:09_robin; P1:04_long_reign (2.78 s) replaced on S07 by P5:10_explorer_robin (8.00 s). Matched frame-0 plate after the last word. No banner, no video id, no code text."
+          "note": "4.00 s loop window on P5:09_robin; P1:04_long_reign (2.78 s) replaced on S07 by P5:10_explorer_robin (8.00 s). Matched frame-0 plate after the last word. No banner, no video id, no code text.",
+          "board_dur_s": 8.0
         }
       ],
+      "total_duration_s": 23.56,
       "first_cut_s": 1.88,
       "loop_tail_s": 1.0,
       "end_card": {
@@ -328,18 +415,25 @@
       },
       "full_film_banner": false,
       "render": false,
-      "frame0_plate": "P5:09_robin"
+      "frame0_plate": "P5:09_robin",
+      "hook_complete_in_s01": true,
+      "hook_sentence_end_s": 1.78,
+      "plates_on_disk": false,
+      "status": "blocked_missing_plates",
+      "blocked_reason": "Target long plates exist only in 07_Edit-Project/parts board JSON; no .mp4 files exist on local disk or NAS yet."
     }
   ],
   "rules": {
     "job": "J0967",
     "s01_ends_by_s": 2.85,
+    "s01_requires_completed_hook": true,
     "body_cut_s": [
       2.5,
       3.8
     ],
     "word_end_gap_s_max": 0.1,
     "adjacent_same_plate": false,
+    "plate_must_exist_on_disk": true,
     "loop_tail_s_max": 1.0,
     "full_film_banner": false,
     "end_card_video_id": null,
@@ -347,5 +441,6 @@
     "render": false,
     "generation": false,
     "gbp": 0
-  }
+  },
+  "media_root": null
 }

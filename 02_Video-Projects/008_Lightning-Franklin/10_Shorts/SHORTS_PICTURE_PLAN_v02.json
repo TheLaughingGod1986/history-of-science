@@ -3,7 +3,7 @@
   "folder": "008_Lightning-Franklin",
   "version": "v02",
   "written": "2026-10-26",
-  "task": "J0967: stayed-to-watch build rules (c56 FIX v2). Plans only, no render, no generation.",
+  "task": "J0967: stayed-to-watch build rules (c56 + Acting-Chief 6425168160 FIX). Plans only, no render, no generation.",
   "long_board_version": "v03 (J0240 PASS)",
   "totals": {
     "shorts_count": 2,
@@ -52,10 +52,14 @@
           "word_end_s": 2.58,
           "word_gap_s": 0.0,
           "source_long_plate": "P1:01_kite_open",
+          "plate_on_disk": false,
+          "probed_dur_s": null,
           "plate_dur_s": 8.0,
+          "status": "blocked_missing_plate",
           "route": "reuse-long-plate",
           "spoken": "Franklin's kite was never hit by lightning.",
-          "flow_credits_expected": 0
+          "flow_credits_expected": 0,
+          "board_dur_s": 8.0
         },
         {
           "id": "S02",
@@ -65,10 +69,14 @@
           "word_end_s": 5.76,
           "word_gap_s": 0.0,
           "source_long_plate": "P3:19_kite_climb",
+          "plate_on_disk": false,
+          "probed_dur_s": null,
           "plate_dur_s": 8.0,
+          "status": "blocked_missing_plate",
           "route": "reuse-long-plate",
           "spoken": "In seventeen fifty-two, he flew it into a storm",
-          "flow_credits_expected": 0
+          "flow_credits_expected": 0,
+          "board_dur_s": 8.0
         },
         {
           "id": "S03",
@@ -78,10 +86,14 @@
           "word_end_s": 9.14,
           "word_gap_s": 0.0,
           "source_long_plate": "P3:13_key_ribbon",
+          "plate_on_disk": false,
+          "probed_dur_s": null,
           "plate_dur_s": 8.0,
+          "status": "blocked_missing_plate",
           "route": "reuse-long-plate",
           "spoken": "cloud holding a dry silk ribbon inside a shed.",
-          "flow_credits_expected": 0
+          "flow_credits_expected": 0,
+          "board_dur_s": 8.0
         },
         {
           "id": "S04",
@@ -91,10 +103,14 @@
           "word_end_s": 12.1,
           "word_gap_s": 0.0,
           "source_long_plate": "P3:25_fibres_rise",
+          "plate_on_disk": false,
+          "probed_dur_s": null,
           "plate_dur_s": 8.0,
+          "status": "blocked_missing_plate",
           "route": "reuse-long-plate",
           "spoken": "The loose threads of the twine stood up on end.",
-          "flow_credits_expected": 0
+          "flow_credits_expected": 0,
+          "board_dur_s": 8.0
         },
         {
           "id": "S05",
@@ -104,10 +120,14 @@
           "word_end_s": 15.76,
           "word_gap_s": 0.0,
           "source_long_plate": "P4:02_knuckle_spark",
+          "plate_on_disk": false,
+          "probed_dur_s": null,
           "plate_dur_s": 8.0,
+          "status": "blocked_missing_plate",
           "route": "reuse-long-plate",
           "spoken": "He brought his knuckle to the key, and a spark",
-          "flow_credits_expected": 0
+          "flow_credits_expected": 0,
+          "board_dur_s": 8.0
         },
         {
           "id": "S06",
@@ -117,10 +137,14 @@
           "word_end_s": 19.52,
           "word_gap_s": 0.0,
           "source_long_plate": "P4:08_teach_charge",
+          "plate_on_disk": false,
+          "probed_dur_s": null,
           "plate_dur_s": 7.1,
+          "status": "blocked_missing_plate",
           "route": "reuse-long-plate",
           "spoken": "jumped across. If lightning had struck the kite,",
-          "flow_credits_expected": 0
+          "flow_credits_expected": 0,
+          "board_dur_s": 7.1
         },
         {
           "id": "S07",
@@ -130,10 +154,14 @@
           "word_end_s": 22.2,
           "word_gap_s": 0.04,
           "source_long_plate": "P4:10_richmann_rod",
+          "plate_on_disk": false,
+          "probed_dur_s": null,
           "plate_dur_s": 8.0,
+          "status": "blocked_missing_plate",
           "route": "reuse-long-plate",
           "spoken": "he would almost certainly have died",
-          "flow_credits_expected": 0
+          "flow_credits_expected": 0,
+          "board_dur_s": 8.0
         },
         {
           "id": "loop_tail",
@@ -143,11 +171,16 @@
           "role": "loop_tail",
           "route": "reuse-long-plate",
           "source_long_plate": "P1:01_kite_open",
+          "plate_on_disk": false,
+          "probed_dur_s": null,
           "plate_dur_s": 8.0,
+          "status": "blocked_missing_plate",
           "spoken": "",
-          "note": "Matched frame-0 plate after the last word. No banner, no video id, no code text."
+          "note": "Matched frame-0 plate after the last word. No banner, no video id, no code text.",
+          "board_dur_s": 8.0
         }
       ],
+      "total_duration_s": 23.24,
       "first_cut_s": 2.58,
       "loop_tail_s": 1.0,
       "end_card": {
@@ -158,7 +191,12 @@
       },
       "full_film_banner": false,
       "render": false,
-      "frame0_plate": "P1:01_kite_open"
+      "frame0_plate": "P1:01_kite_open",
+      "hook_complete_in_s01": true,
+      "hook_sentence_end_s": 2.58,
+      "plates_on_disk": false,
+      "status": "blocked_missing_plates",
+      "blocked_reason": "Target long plates exist only in 07_Edit-Project/parts board JSON; no .mp4 files exist on local disk or NAS yet."
     },
     {
       "id": "Short_C",
@@ -196,10 +234,14 @@
           "word_end_s": 2.4,
           "word_gap_s": 0.0,
           "source_long_plate": "P5:06_rod_fitting",
+          "plate_on_disk": false,
+          "probed_dur_s": null,
           "plate_dur_s": 8.0,
+          "status": "blocked_missing_plate",
           "route": "reuse-long-plate",
           "spoken": "That thin metal rod on top of tall",
-          "flow_credits_expected": 0
+          "flow_credits_expected": 0,
+          "board_dur_s": 8.0
         },
         {
           "id": "S02",
@@ -209,10 +251,14 @@
           "word_end_s": 4.84,
           "word_gap_s": 0.06,
           "source_long_plate": "P5:01_house_rod",
+          "plate_on_disk": false,
+          "probed_dur_s": null,
           "plate_dur_s": 8.0,
+          "status": "blocked_missing_plate",
           "route": "reuse-long-plate",
           "spoken": "buildings was Benjamin Franklin's idea.",
-          "flow_credits_expected": 0
+          "flow_credits_expected": 0,
+          "board_dur_s": 8.0
         },
         {
           "id": "S03",
@@ -222,10 +268,14 @@
           "word_end_s": 7.58,
           "word_gap_s": 0.0,
           "source_long_plate": "P5:08_looking_path",
+          "plate_on_disk": false,
+          "probed_dur_s": null,
           "plate_dur_s": 3.16,
+          "status": "blocked_missing_plate",
           "route": "reuse-long-plate",
           "spoken": "Lightning takes the easiest path",
-          "flow_credits_expected": 0
+          "flow_credits_expected": 0,
+          "board_dur_s": 3.16
         },
         {
           "id": "S04",
@@ -235,10 +285,14 @@
           "word_end_s": 10.18,
           "word_gap_s": 0.0,
           "source_long_plate": "P5:09_wood_vs_metal",
+          "plate_on_disk": false,
+          "probed_dur_s": null,
           "plate_dur_s": 6.86,
+          "status": "blocked_missing_plate",
           "route": "reuse-long-plate",
           "spoken": "to the ground. A wooden roof is a",
-          "flow_credits_expected": 0
+          "flow_credits_expected": 0,
+          "board_dur_s": 6.86
         },
         {
           "id": "S05",
@@ -248,10 +302,14 @@
           "word_end_s": 13.06,
           "word_gap_s": 0.0,
           "source_long_plate": "P1:12_steeple_fire",
+          "plate_on_disk": false,
+          "probed_dur_s": null,
           "plate_dur_s": 8.0,
+          "status": "blocked_missing_plate",
           "route": "reuse-long-plate",
           "spoken": "terrible path, so it bursts into flame.",
-          "flow_credits_expected": 0
+          "flow_credits_expected": 0,
+          "board_dur_s": 8.0
         },
         {
           "id": "S06",
@@ -261,10 +319,14 @@
           "word_end_s": 15.8,
           "word_gap_s": 0.0,
           "source_long_plate": "P5:10_metal_easy",
+          "plate_on_disk": false,
+          "probed_dur_s": null,
           "plate_dur_s": 2.98,
+          "status": "blocked_missing_plate",
           "route": "reuse-long-plate",
           "spoken": "A metal rod is an easy one.",
-          "flow_credits_expected": 0
+          "flow_credits_expected": 0,
+          "board_dur_s": 2.98
         },
         {
           "id": "S07",
@@ -274,10 +336,14 @@
           "word_end_s": 18.72,
           "word_gap_s": 0.0,
           "source_long_plate": "P5:11_safe_path",
+          "plate_on_disk": false,
+          "probed_dur_s": null,
           "plate_dur_s": 6.98,
+          "status": "blocked_missing_plate",
           "route": "reuse-long-plate",
           "spoken": "The lightning runs down the rod, round",
-          "flow_credits_expected": 0
+          "flow_credits_expected": 0,
+          "board_dur_s": 6.98
         },
         {
           "id": "S08",
@@ -287,10 +353,14 @@
           "word_end_s": 21.64,
           "word_gap_s": 0.0,
           "source_long_plate": "P5:14_safe_towers",
+          "plate_on_disk": false,
+          "probed_dur_s": null,
           "plate_dur_s": 8.0,
+          "status": "blocked_missing_plate",
           "route": "reuse-long-plate",
           "spoken": "the building, and into the earth. Some",
-          "flow_credits_expected": 0
+          "flow_credits_expected": 0,
+          "board_dur_s": 8.0
         },
         {
           "id": "S09",
@@ -300,10 +370,14 @@
           "word_end_s": 24.4,
           "word_gap_s": 0.08,
           "source_long_plate": "P5:19_skyline_strike",
+          "plate_on_disk": false,
+          "probed_dur_s": null,
           "plate_dur_s": 8.0,
+          "status": "blocked_missing_plate",
           "route": "reuse-long-plate",
           "spoken": "towers are struck over 20 times a year",
-          "flow_credits_expected": 0
+          "flow_credits_expected": 0,
+          "board_dur_s": 8.0
         },
         {
           "id": "loop_tail",
@@ -313,11 +387,16 @@
           "role": "loop_tail",
           "route": "reuse-long-plate",
           "source_long_plate": "P5:06_rod_fitting",
+          "plate_on_disk": false,
+          "probed_dur_s": null,
           "plate_dur_s": 8.0,
+          "status": "blocked_missing_plate",
           "spoken": "",
-          "note": "Matched frame-0 plate after the last word. No banner, no video id, no code text."
+          "note": "Matched frame-0 plate after the last word. No banner, no video id, no code text.",
+          "board_dur_s": 8.0
         }
       ],
+      "total_duration_s": 25.48,
       "first_cut_s": 2.4,
       "loop_tail_s": 1.0,
       "end_card": {
@@ -328,18 +407,33 @@
       },
       "full_film_banner": false,
       "render": false,
-      "frame0_plate": "P5:06_rod_fitting"
+      "frame0_plate": "P5:06_rod_fitting",
+      "hook_complete_in_s01": false,
+      "hook_sentence_end_s": 4.84,
+      "plates_on_disk": false,
+      "hook_conflict": {
+        "s01_end_s": 2.4,
+        "s01_partial_spoken": "That thin metal rod on top of tall",
+        "hook_sentence_end_s": 4.84,
+        "full_hook_sentence": "That thin metal rod on top of tall buildings was Benjamin Franklin's idea.",
+        "vo_words_changed": false,
+        "bounded_edit_proposal": "Sentence 1 ('That thin metal rod on top of tall buildings was Benjamin Franklin\\'s idea.') ends at 4.84 s (3.72 s pure speech); S01 cuts mid-phrase after 'tall' at 2.40 s while 'buildings was Benjamin Franklin\\'s idea.' runs in S02 through 4.90 s. Bounded existing-word option: excise prepositional phrase 'on top of tall buildings' (1.48-3.06 s) on the existing take so 'That thin metal rod was Benjamin Franklin\\'s idea.' completes at 2.84 s <= 2.85 s, awaiting Chief sign-off."
+      },
+      "status": "blocked_hook_and_missing_plates",
+      "blocked_reason": "S01 cuts at 2.40 s before hook sentence ends at 4.84 s, and target long plates exist only in board JSON (no .mp4 files on disk/NAS)."
     }
   ],
   "rules": {
     "job": "J0967",
     "s01_ends_by_s": 2.85,
+    "s01_requires_completed_hook": true,
     "body_cut_s": [
       2.5,
       3.8
     ],
     "word_end_gap_s_max": 0.1,
     "adjacent_same_plate": false,
+    "plate_must_exist_on_disk": true,
     "loop_tail_s_max": 1.0,
     "full_film_banner": false,
     "end_card_video_id": null,
@@ -347,5 +441,6 @@
     "render": false,
     "generation": false,
     "gbp": 0
-  }
+  },
+  "media_root": null
 }

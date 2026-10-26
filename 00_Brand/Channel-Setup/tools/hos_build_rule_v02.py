@@ -1,24 +1,28 @@
 #!/usr/bin/env python3
-"""J0967: HOS stayed-to-watch build rules for unbuilt Shorts (c56 FIX v2). Plans only.
+"""J0967: HOS stayed-to-watch build rules for unbuilt Shorts (c56 + Acting-Chief 6425168160 FIX). Plans only.
 
 Writes and checks the v02 cut plans. It does not render, generate, upload,
-or spend. Rules (STAYED60 audit #14–#16, Ben 25 Oct 2026; Chief c56 26 Oct 2026):
+or spend. Rules (STAYED60 audit #14–#16, Ben 25 Oct 2026; Chief c56 26 Oct 2026;
+Acting-Chief 6425168160 26 Oct 2026):
 
-- the first cut (S01) ends by 2.85 s on the end of the hook line (effective end <= 2.85 s after merging same-plate runs)
+- the first cut (S01) ends by 2.85 s on the end of the completed hook sentence (effective end <= 2.85 s after merging same-plate runs); any Short whose signed-off VO hook sentence ends > 2.85 s must not silently pass as planned, and is explicitly blocked with `hook_conflict` and a bounded existing-word hook edit proposal (no silent VO word changes)
 - body rows sit in 2.50–3.80 s, cutting on word ends (0 <= gap <= 0.10 s)
 - each row's `spoken` contains only the words inside that row (no overlap across rows)
-- no two adjacent body rows use the same plate (unless in_s/out_s are >= 2.0 s apart with a scene-change score)
-- each row records `plate_dur_s` with `plate_dur_s >= use_s`, and notes sit in `note`, never inside `source_long_plate`
+- no two adjacent body rows use the same plate (unless in_s/out_s are >= 2.0 s apart with a scene-change score, and 0 <= in_s < out_s <= probed_dur_s with out_s - in_s >= use_s)
+- `lookup_plate_duration` resolves and `ffprobe`s actual local/NAS `.mp4` media files only; JSON plate boards are never treated as proof of an existing clip, and any Short/row whose `.mp4` clip is missing on disk/NAS is explicitly marked `blocked_missing_plates` / `blocked_missing_plate` (`plate_on_disk: false`, `probed_dur_s: null`)
+- 006 Short_B is timed against the locked 23.20 s `t2_mint_fixed_vo_v03b.mp3` and matching 23.20 s `t2_mint_fixed_vo_v03b_align.json`; 006 Short_A's 20.92 s total duration stays visible as an explicit unresolved build constraint
 - the loop tail is 1.0 s or less, on the frame-0 plate
 - no "watch the full film" banner, no video id and no code text on any end card
-- 006 BUILD_RULE_v02 and S7 record `media_root` on the NAS archive path; S7 is `planned` on 10_mint_jar_t1 + 11_candle_tall_t1, while S5/S6/S8 stay `unbuilt`
+- 006 BUILD_RULE_v02, 007 SHORTS_PICTURE_PLAN_v02, and S7 record `media_root` resolving real `.mp4` plates; S7 is `planned` (plan-only) on NAS `10_mint_jar_t1` + `11_candle_tall_t1`, while S5/S6/S8 stay `unbuilt`
 
     python3 00_Brand/Channel-Setup/tools/hos_build_rule_v02.py --check
     python3 00_Brand/Channel-Setup/tools/hos_build_rule_v02.py --write
+    python3 00_Brand/Channel-Setup/tools/hos_build_rule_v02.py --test-negatives
 """
 from __future__ import annotations
 
 import argparse
+import copy
 import json
 import re
 import subprocess
@@ -40,18 +44,83 @@ S01_MAX = 2.85
 S01_MIN = 1.80
 TAIL = 1.00
 MAX_WORD_GAP = 0.10
+SHORT_MIN_TOTAL_S = 22.00
 YT_ID = re.compile(r"\b[A-Za-z0-9_-]{11}\b")
 PAREN_NOTE = re.compile(r"\(([^)]+)\)")
 
 # 009 Short B: drop 0.31 s from the 0.41 s pause at 0.68–1.09 (keep a 0.10 s gap).
 PAUSE_TRIM = {("009", "Short_B"): {"cut_s": 0.84, "remove_s": 0.31}}
 
+# Bounded existing-word hook edit proposals for Shorts whose signed-off VO sentence 1 exceeds 2.85 s.
+HOOK_CONFLICT_PROPOSALS = {
+    ("006_Trees-Are-Made-Of-Air", "s04_photosynthesis"): (
+        "Sentence 1 ('A leaf takes in carbon dioxide through tiny pores.') ends at 3.25 s in the lifted long VO, "
+        "so S01 cuts after 'tiny' at 2.57 s. Bounded existing-word option: tighten sentence-1 inter-word gaps + "
+        "1.12x pace on 0.00-3.25 s (or trim 'through tiny pores' on existing take) so the hook clause completes <= 2.85 s."
+    ),
+    ("006_Trees-Are-Made-Of-Air", "s05_charcoal_gas"): (
+        "Sentence 1 ('Van Helmont also burned sixty-two pounds of charcoal and found just one pound of ash left behind.') "
+        "ends at 7.22 s in the lifted long VO (S01 cuts after 'sixty-two' at 2.72 s). Bounded existing-word option: "
+        "drop 'Van Helmont also' and split/tighten on 'burned sixty-two pounds of charcoal' with Chief approval."
+    ),
+    ("006_Trees-Are-Made-Of-Air", "s06_ingenhousz_oxygen"): (
+        "Sentence 1 ('Tiny silver bubbles appear on the green leaf and rise to the top.') ends at 4.59 s in the lifted "
+        "long VO (S01 cuts after 'green' at 2.54 s). Bounded existing-word option: end hook sentence after 'leaf' (3.07 s "
+        "-> 2.78 s with gap trim) and start sentence 2 on 'They rise to the top', awaiting Chief approval."
+    ),
+    ("006_Trees-Are-Made-Of-Air", "s07_priestley_mint"): (
+        "Lifted long-VO sentence 1 ('If you burn a candle inside a sealed glass jar, the flame soon dies...') runs to "
+        "8.20 s (S01 cuts after 'glass' at 2.40 s). Superseded by locked 006 Short_B (t2_mint_fixed_vo_v03b.mp3), whose "
+        "hook 'A sprig of mint repaired the air.' completes at 2.24 s <= 2.85 s."
+    ),
+    ("006_Trees-Are-Made-Of-Air", "s08_willow_pot"): (
+        "Lifted long-VO sentence 1 ('He took a big clay pot and filled it with two hundred pounds of soil...') runs to "
+        "8.96 s (S01 cuts after 'with' at 2.84 s). Superseded by locked 006 Short_A (t1_willow_air_vo_v02.mp3), whose "
+        "hook 'A tree is built from thin air.' completes at 2.16 s <= 2.85 s."
+    ),
+    ("007_The-First-Vaccine", "Short_B"): (
+        "Sentence 1 ('The first vaccine began with milkmaids, who never caught smallpox.') ends at 4.60 s (3.48 s pure "
+        "speech); S01 cuts after the main clause 'milkmaids' at 2.72 s while the relative clause 'who never caught "
+        "smallpox.' lands in S02 (2.72-4.60 s). Bounded existing-word option: splice existing words 'milkmaids never "
+        "caught smallpox.' (1.88-4.60 s -> 0.06-2.32 s) as sentence 1, awaiting Chief sign-off."
+    ),
+    ("008_Lightning-Franklin", "Short_C"): (
+        "Sentence 1 ('That thin metal rod on top of tall buildings was Benjamin Franklin\\'s idea.') ends at 4.84 s "
+        "(3.72 s pure speech); S01 cuts mid-phrase after 'tall' at 2.40 s while 'buildings was Benjamin Franklin\\'s "
+        "idea.' runs in S02 through 4.90 s. Bounded existing-word option: excise prepositional phrase 'on top of tall "
+        "buildings' (1.48-3.06 s) on the existing take so 'That thin metal rod was Benjamin Franklin\\'s idea.' "
+        "completes at 2.84 s <= 2.85 s, awaiting Chief sign-off."
+    ),
+    ("009_The-Falling-Moon-Gravity", "Short_B"): (
+        "Sentence 1 ('In one minute, the moon falls about as far as an apple falls in one second.') ends at 4.27 s "
+        "(3.18 s pure speech even after the 0.31 s pause trim); S01 cuts after 'apple' at 2.75 s while 'falls in one "
+        "second.' lands in S02. Bounded existing-word option: drop leading 'In one minute,' (0.08-0.74 s) and tighten "
+        "inter-word gaps on the existing take, awaiting Chief sign-off."
+    ),
+    ("010_Alvarez-Clay-Line-Dinosaurs", "Short_A"): (
+        "Sentence 1 ('This thin line of clay marks the end of the dinosaurs.') ends at 3.28 s (2.62 s pure speech); "
+        "S01 cuts after 'the' at 2.40 s while 'dinosaurs.' lands at the start of S02 (2.40-3.28 s). Bounded "
+        "existing-word option: tighten sentence-1 onset and inter-word gaps by 0.48 s (or excise 'of clay' [1.06-1.42 s]) "
+        "on the existing take so 'dinosaurs.' finishes at 2.80 s <= 2.85 s, awaiting Chief sign-off."
+    ),
+    ("docs", "s5_penzias_pigeons"): (
+        "Sentence 1 ('the afterglow of the Big Bang was blamed on pigeons.') ends at 3.76 s after dateline drop; "
+        "S01 cuts after 'blamed' at 2.58 s. Short stays unbuilt (no moving horn plate)."
+    ),
+    ("docs", "s8_hales_blood"): (
+        "Sentence 1 ('A horse\\'s blood climbed eight feet up a glass tube.') ends at 3.71 s; S01 cuts after 'a' at "
+        "2.81 s. Short stays unbuilt (no moving Hales plate)."
+    ),
+}
+
 RULES = {
     "job": "J0967",
     "s01_ends_by_s": S01_MAX,
+    "s01_requires_completed_hook": True,
     "body_cut_s": [LO, HI],
     "word_end_gap_s_max": MAX_WORD_GAP,
     "adjacent_same_plate": False,
+    "plate_must_exist_on_disk": True,
     "loop_tail_s_max": TAIL,
     "full_film_banner": False,
     "end_card_video_id": None,
@@ -61,7 +130,7 @@ RULES = {
     "gbp": 0,
 }
 
-# Non-repeating body plate sequences per Short, using only existing on-disk/NAS/board plates from the same film.
+# Non-repeating body plate sequences per Short.
 PLATES_006 = {
     "Short_A": [
         "part01/raw/v01/01_willow_air_t1",
@@ -228,17 +297,26 @@ PLATES_FILMS = {
     ],
 }
 
+# S7 uses the 2 existing 8.00 s moving plates on NAS with non-overlapping in_s/out_s windows matching each row's use_s.
 PLATES_S7 = [
-    ("04_Generated-Clips/part03/raw/v01/10_mint_jar_t1.mp4", 0.0, 2.56),
-    ("04_Generated-Clips/part03/raw/v01/11_candle_tall_t1.mp4", 0.0, 3.40),
-    ("04_Generated-Clips/part03/raw/v01/10_mint_jar_t1.mp4", 2.56, 5.71),
-    ("04_Generated-Clips/part03/raw/v01/11_candle_tall_t1.mp4", 3.40, 7.13),
+    ("04_Generated-Clips/part03/raw/v01/10_mint_jar_t1.mp4", 0.0, 2.80),
+    ("04_Generated-Clips/part03/raw/v01/11_candle_tall_t1.mp4", 0.0, 2.92),
+    ("04_Generated-Clips/part03/raw/v01/10_mint_jar_t1.mp4", 2.80, 5.92),
+    ("04_Generated-Clips/part03/raw/v01/11_candle_tall_t1.mp4", 2.92, 6.68),
     ("04_Generated-Clips/part03/raw/v01/10_mint_jar_t1.mp4", 4.88, 8.00),
     ("04_Generated-Clips/part03/raw/v01/11_candle_tall_t1.mp4", 4.64, 8.00),
 ]
 
 _PROBE_CACHE: dict[str, float] = {}
 _BOARD_CACHE: dict[str, dict[str, float]] = {}
+
+FOLDER_MAP = {
+    "006": "006_Trees-Are-Made-Of-Air",
+    "007": "007_The-First-Vaccine",
+    "008": "008_Lightning-Franklin",
+    "009": "009_The-Falling-Moon-Gravity",
+    "010": "010_Alvarez-Clay-Line-Dinosaurs",
+}
 
 
 def resolve_repo_file(root: Path, rel: str | Path) -> Path:
@@ -276,7 +354,7 @@ def probe_duration(path: Path) -> float | None:
     key = str(path)
     if key in _PROBE_CACHE:
         return _PROBE_CACHE[key]
-    if not path.exists():
+    if not path.exists() or not path.is_file():
         return None
     out = subprocess.check_output(
         [
@@ -296,81 +374,111 @@ def probe_duration(path: Path) -> float | None:
     return val
 
 
-def resolve_nas_plate(media_root: Path, plate: str) -> Path:
+def resolve_plate_path(root: Path, folder_or_film: str, plate: str, media_root: str | None) -> Path | None:
+    """Resolve `plate` to an actual `.mp4` file on local disk or NAS. Never consults JSON boards."""
+    if not plate or plate == "UNBUILT":
+        return None
     clean = PAREN_NOTE.sub("", plate).strip()
+    folder = FOLDER_MAP.get(folder_or_film, folder_or_film)
+
+    candidate_roots: list[Path] = []
+    if media_root:
+        candidate_roots.append(Path(media_root))
+    if folder in ("006_Trees-Are-Made-Of-Air", "BUILD_RULE_S5_S8_v02.json", "docs"):
+        candidate_roots.append(resolve_repo_file(root, "02_Video-Projects/006_Trees-Are-Made-Of-Air"))
+    elif folder.startswith(("007_", "008_", "009_", "010_")):
+        candidate_roots.append(resolve_repo_file(root, f"02_Video-Projects/{folder}"))
+        if folder.startswith("007_") and LOCAL_007_ROOT not in candidate_roots:
+            candidate_roots.append(LOCAL_007_ROOT)
+
+    # Case 1: P{n}:{stem} identifier
+    m_pid = re.match(r"^P(\d+):([A-Za-z0-9_.-]+)$", clean)
+    if m_pid:
+        pnum = int(m_pid.group(1))
+        stem = m_pid.group(2)
+        for croot in candidate_roots:
+            part_dir = croot / f"04_Generated-Clips/part0{pnum}/raw/v01"
+            if not part_dir.exists():
+                continue
+            direct = part_dir / f"{stem}.mp4"
+            if direct.exists() and direct.is_file():
+                return direct
+            matches = sorted(
+                p for p in part_dir.glob(f"{stem}_t*.mp4") if not p.name.startswith("._") and p.is_file()
+            )
+            if matches:
+                return matches[0]
+        return None
+
+    # Case 2: relative path under 04_Generated-Clips
     if clean.startswith("04_Generated-Clips/"):
         rel = clean
     else:
         rel = f"04_Generated-Clips/{clean}"
     if not rel.endswith(".mp4"):
         rel += ".mp4"
-    return media_root / rel
+    for croot in candidate_roots:
+        fp = croot / rel
+        if fp.exists() and fp.is_file():
+            return fp
+    return None
 
 
-def film_board_durations(root: Path, folder: str) -> dict[str, float]:
-    if folder in _BOARD_CACHE:
-        return _BOARD_CACHE[folder]
-    parts_dir = resolve_repo_file(root, f"02_Video-Projects/{folder}/07_Edit-Project/parts")
-    plate_map: dict[str, float] = {}
-    if parts_dir.exists():
-        for p in sorted(parts_dir.glob("part-*_plates_v*.json")):
-            d = load(p)
-            pnum = int(d["part"])
-            for r in d.get("plates", []):
-                pid = f"P{pnum}:{r['id']}"
-                cs = float(r.get("flow_clip_s") or r.get("clip_s") or r.get("use_s") or 8.0)
-                plate_map[pid] = round(cs, 3)
-    # Also check on-disk 007 clips if available
-    if folder.startswith("007_") and LOCAL_007_ROOT.exists():
-        for mp4 in sorted((LOCAL_007_ROOT / "04_Generated-Clips").rglob("*.mp4")):
-            if mp4.name.startswith("._"):
-                continue
-            part_str = mp4.parts[-4]  # part01..part05
-            if part_str.startswith("part0"):
-                pnum = int(part_str[-1])
-                stem = re.sub(r"_t\d+$", "", mp4.stem)
-                pid = f"P{pnum}:{stem}"
-                if pid not in plate_map:
-                    d_s = probe_duration(mp4)
-                    if d_s:
-                        plate_map[pid] = d_s
-    _BOARD_CACHE[folder] = plate_map
-    return plate_map
-
-
-def lookup_plate_duration(root: Path, folder_or_film: str, plate: str, media_root: str | None) -> tuple[bool, float | None]:
-    if plate == "UNBUILT":
-        return True, None
-    # Check if an explicit note inside plate caps duration, e.g. "(2.78 s)"
+def board_spec_duration(root: Path, folder_or_film: str, plate: str) -> float | None:
+    """Return planned clip length from 07_Edit-Project/parts JSON board (metadata only, NOT proof of file existence)."""
+    folder = FOLDER_MAP.get(folder_or_film, folder_or_film)
+    if folder not in _BOARD_CACHE:
+        parts_dir = resolve_repo_file(root, f"02_Video-Projects/{folder}/07_Edit-Project/parts")
+        plate_map: dict[str, float] = {}
+        if parts_dir.exists():
+            for p in sorted(parts_dir.glob("part-*_plates_v*.json")):
+                d = load(p)
+                pnum = int(d["part"])
+                for r in d.get("plates", []):
+                    pid = f"P{pnum}:{r['id']}"
+                    cs = float(r.get("flow_clip_s") or r.get("clip_s") or r.get("use_s") or 8.0)
+                    plate_map[pid] = round(cs, 3)
+        _BOARD_CACHE[folder] = plate_map
     m = re.search(r"\((\d+(?:\.\d+)?)\s*s", plate)
     noted_cap = round(float(m.group(1)), 3) if m else None
     clean = PAREN_NOTE.sub("", plate).strip()
-
-    if folder_or_film in ("006", "006_Trees-Are-Made-Of-Air", "BUILD_RULE_S5_S8_v02.json", "docs"):
-        if not media_root:
-            return False, noted_cap
-        fp = resolve_nas_plate(Path(media_root), clean)
-        d = probe_duration(fp)
-        if d is None:
-            return False, noted_cap
-        return True, (min(d, noted_cap) if noted_cap is not None else d)
-
-    folder_map = {
-        "007": "007_The-First-Vaccine",
-        "008": "008_Lightning-Franklin",
-        "009": "009_The-Falling-Moon-Gravity",
-        "010": "010_Alvarez-Clay-Line-Dinosaurs",
-    }
-    folder = folder_map.get(folder_or_film, folder_or_film)
-    bmap = film_board_durations(root, folder)
+    bmap = _BOARD_CACHE[folder]
     if clean in bmap:
         d = bmap[clean]
-        return True, (min(d, noted_cap) if noted_cap is not None else d)
-    return False, noted_cap
+        return min(d, noted_cap) if noted_cap is not None else d
+    return noted_cap
+
+
+def lookup_plate_duration(
+    root: Path, folder_or_film: str, plate: str, media_root: str | None
+) -> tuple[bool, float | None]:
+    """Resolve `plate` to an on-disk/NAS `.mp4` file and probe its duration via ffprobe.
+
+    Never treats JSON board metadata as an existing clip: if no `.mp4` exists on disk/NAS,
+    returns `(False, noted_cap)`.
+    """
+    if plate == "UNBUILT":
+        return False, None
+    m = re.search(r"\((\d+(?:\.\d+)?)\s*s", plate)
+    noted_cap = round(float(m.group(1)), 3) if m else None
+    if folder_or_film in ("006", "006_Trees-Are-Made-Of-Air", "BUILD_RULE_S5_S8_v02.json", "docs") and not media_root:
+        return False, noted_cap
+    fp = resolve_plate_path(root, folder_or_film, plate, media_root)
+    if fp is None:
+        return False, noted_cap
+    d = probe_duration(fp)
+    if d is None:
+        return False, noted_cap
+    return True, (min(d, noted_cap) if noted_cap is not None else d)
 
 
 def words_from_align(path: Path) -> list[tuple[str, float, float]]:
     data = json.loads(path.read_text())
+    if "words" in data and isinstance(data["words"], list) and data["words"] and "word" in data["words"][0]:
+        return [
+            (str(w["word"]), round(float(w["start"]), 3), round(float(w["end"]), 3))
+            for w in data["words"]
+        ]
     chars = data["characters"]
     starts = data["character_start_times_seconds"]
     ends = data["character_end_times_seconds"]
@@ -476,6 +584,14 @@ def lift_words_006(root: Path, sid: str, d: dict, media_root: Path) -> list[tupl
     return cal
 
 
+def hook_sentence_info(words: list[tuple[str, float, float]]) -> tuple[int, str, float]:
+    """Return `(word_idx, full_hook_sentence, end_s)` for the opening sentence of `words`."""
+    idx = next((i for i, (wt, _wa, _wb) in enumerate(words) if wt[-1:] in ".?!"), len(words) - 1)
+    text = " ".join(w[0] for w in words[: idx + 1])
+    end_s = round(words[idx][2], 3)
+    return idx, text, end_s
+
+
 def find_word_cuts(
     words: list[tuple[str, float, float]],
     vo_end: float,
@@ -484,7 +600,6 @@ def find_word_cuts(
     lo: float = LO,
     hi: float = HI,
 ) -> list[dict] | None:
-    # Check if the opening hook sentence ends inside [S01_MIN - 0.10, s01_max]
     for i, (wtxt, _a, b) in enumerate(words):
         if b > s01_max + 1e-6:
             break
@@ -595,7 +710,9 @@ def build_rows(
             plate, in_s, out_s = p_spec
         else:
             plate, in_s, out_s = p_spec, None, None
-        ok, pdur = lookup_plate_duration(root, folder_or_film, plate, media_root)
+        on_disk, probed_dur = lookup_plate_duration(root, folder_or_film, plate, media_root)
+        board_dur = board_spec_duration(root, folder_or_film, plate)
+        pdur = probed_dur if on_disk else board_dur
         row: dict = {
             "id": cut["id"],
             "t_start_s": cut["t_start_s"],
@@ -604,36 +721,109 @@ def build_rows(
             "word_end_s": cut["word_end_s"],
             "word_gap_s": cut["word_gap_s"],
             "source_long_plate": plate,
+            "plate_on_disk": on_disk,
+            "probed_dur_s": probed_dur if on_disk else None,
             "plate_dur_s": pdur,
+            "status": "planned" if on_disk else "blocked_missing_plate",
             "route": route,
             "spoken": cut["spoken"],
             "flow_credits_expected": 0,
         }
+        if not on_disk and board_dur is not None:
+            row["board_dur_s"] = board_dur
         if in_s is not None and out_s is not None:
             row["in_s"] = round(in_s, 3)
             row["out_s"] = round(out_s, 3)
         rows.append(row)
     first_plate = plates[0][0] if isinstance(plates[0], tuple) else plates[0]
     lp = loop_plate or first_plate
-    _ok, ldur = lookup_plate_duration(root, folder_or_film, lp, media_root)
+    lp_on_disk, lp_probed_dur = lookup_plate_duration(root, folder_or_film, lp, media_root)
+    lp_board_dur = board_spec_duration(root, folder_or_film, lp)
+    ldur = lp_probed_dur if lp_on_disk else lp_board_dur
     if loop_dur_override is not None:
         ldur = loop_dur_override
     tail_start = round(vo_end, 3)
-    rows.append(
-        {
-            "id": "loop_tail",
-            "t_start_s": tail_start,
-            "t_end_s": round(tail_start + TAIL, 3),
-            "use_s": TAIL,
-            "role": "loop_tail",
-            "route": route,
-            "source_long_plate": lp,
-            "plate_dur_s": ldur,
-            "spoken": "",
-            "note": loop_note or "Matched frame-0 plate after the last word. No banner, no video id, no code text.",
-        }
-    )
+    tail_row: dict = {
+        "id": "loop_tail",
+        "t_start_s": tail_start,
+        "t_end_s": round(tail_start + TAIL, 3),
+        "use_s": TAIL,
+        "role": "loop_tail",
+        "route": route,
+        "source_long_plate": lp,
+        "plate_on_disk": lp_on_disk,
+        "probed_dur_s": lp_probed_dur if lp_on_disk else None,
+        "plate_dur_s": ldur,
+        "status": "planned" if lp_on_disk else "blocked_missing_plate",
+        "spoken": "",
+        "note": loop_note or "Matched frame-0 plate after the last word. No banner, no video id, no code text.",
+    }
+    if not lp_on_disk and lp_board_dur is not None:
+        tail_row["board_dur_s"] = lp_board_dur
+    rows.append(tail_row)
     return rows
+
+
+def attach_hook_and_status_metadata(
+    parent_name: str,
+    short: dict,
+    words: list[tuple[str, float, float]],
+) -> None:
+    sid = short["id"]
+    body = [r for r in short["rows"] if r.get("role") != "loop_tail"]
+    _h_idx, full_hook_text, hook_end_s = hook_sentence_info(words)
+    s01 = body[0]
+    s01_spoken = (s01.get("spoken") or "").strip()
+    hook_complete = bool(
+        s01_spoken.endswith((".", "!", "?"))
+        and s01["t_end_s"] <= S01_MAX + 0.011
+        and abs(s01["word_end_s"] - hook_end_s) <= 0.02
+    )
+    short["hook_complete_in_s01"] = hook_complete
+    short["hook_sentence_end_s"] = hook_end_s
+    all_plates_on_disk = all(
+        r.get("plate_on_disk") is True for r in short["rows"] if r.get("source_long_plate") != "UNBUILT"
+    ) and any(r.get("source_long_plate") != "UNBUILT" for r in short["rows"])
+    short["plates_on_disk"] = all_plates_on_disk
+
+    if not hook_complete:
+        proposal = HOOK_CONFLICT_PROPOSALS.get(
+            (parent_name, sid),
+            f"Hook sentence ends at {hook_end_s:.2f} s (> {S01_MAX} s); requires bounded existing-word hook edit before assembly.",
+        )
+        short["hook_conflict"] = {
+            "s01_end_s": s01["t_end_s"],
+            "s01_partial_spoken": s01_spoken,
+            "hook_sentence_end_s": hook_end_s,
+            "full_hook_sentence": full_hook_text,
+            "vo_words_changed": False,
+            "bounded_edit_proposal": proposal,
+        }
+    else:
+        short.pop("hook_conflict", None)
+
+    # Determine explicit status
+    if short.get("status") == "unbuilt":
+        return
+    if not hook_complete and not all_plates_on_disk:
+        short["status"] = "blocked_hook_and_missing_plates"
+        short["blocked_reason"] = (
+            f"S01 cuts at {s01['t_end_s']:.2f} s before hook sentence ends at {hook_end_s:.2f} s, "
+            "and target long plates exist only in board JSON (no .mp4 files on disk/NAS)."
+        )
+    elif not all_plates_on_disk:
+        short["status"] = "blocked_missing_plates"
+        short["blocked_reason"] = (
+            "Target long plates exist only in 07_Edit-Project/parts board JSON; no .mp4 files exist on local disk or NAS yet."
+        )
+    elif not hook_complete:
+        short["status"] = "blocked_unfinished_hook"
+        short["blocked_reason"] = (
+            f"S01 cuts at {s01['t_end_s']:.2f} s ({s01_spoken!r}) before the opening hook sentence finishes at {hook_end_s:.2f} s."
+        )
+    else:
+        short["status"] = "planned"
+        short.pop("blocked_reason", None)
 
 
 def shift_words(words: list[tuple[str, float, float]], remove: float) -> list[tuple[str, float, float]]:
@@ -650,24 +840,41 @@ def drop_dateline(words: list[tuple[str, float, float]], phrase: str) -> tuple[l
     return shift_words(words[n:], remove), remove
 
 
+def tighten_s7_hook_pauses(words: list[tuple[str, float, float]]) -> tuple[list[tuple[str, float, float]], float]:
+    """Tighten the 0.16 s pause after 'a' and 0.24 s pause after 'mint' in S7 sentence 1 by 0.24 s total (0 words changed)."""
+    out: list[tuple[str, float, float]] = []
+    for wt, a, b in words:
+        shift = 0.0
+        if a >= 0.20:
+            shift += 0.10
+        if a >= 1.20:
+            shift += 0.14
+        out.append((wt, round(a - shift, 3), round(b - shift, 3)))
+    return out, 0.24
+
+
 def plan_006_abc(root: Path, media_root: str) -> dict:
     vo = resolve_repo_file(root, "02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/vo_20261004")
     specs = [
         {
             "id": "Short_A",
             "align": vo / "t1_willow_air_vo_v02_align.json",
+            "align_rel": "10_Shorts/vo_20261004/t1_willow_air_vo_v02_align.json",
             "vo": "10_Shorts/vo_20261004/t1_willow_air_vo_v02.mp3",
             "drop_title_from": "The",
             "title_note": "Trim the spoken title from the word The (The Willow Tree That Was Made of Air) off the existing take. No new VO.",
         },
         {
             "id": "Short_B",
-            "align": vo / "t2_mint_fixed_vo_v03_align.json",
+            "align": vo / "t2_mint_fixed_vo_v03b_align.json",
+            "align_rel": "10_Shorts/vo_20261004/t2_mint_fixed_vo_v03b_align.json",
             "vo": "10_Shorts/vo_20261004/t2_mint_fixed_vo_v03b.mp3",
+            "vo_duration_override_s": 23.2,
         },
         {
             "id": "Short_C",
             "align": vo / "t3_bubbles_sunlight_vo_v01_align.json",
+            "align_rel": "10_Shorts/vo_20261004/t3_bubbles_sunlight_vo_v01_align.json",
             "vo": "10_Shorts/vo_20261004/t3_bubbles_sunlight_vo_v01.mp3",
         },
     ]
@@ -681,14 +888,19 @@ def plan_006_abc(root: Path, media_root: str) -> dict:
             note = spec["title_note"]
             t_end = round(words[idx - 1][2], 3)
             words = words[:idx]
+        elif spec.get("vo_duration_override_s") is not None:
+            t_end = round(float(spec["vo_duration_override_s"]), 3)
         else:
             t_end = round(words[-1][2], 3)
         plates = PLATES_006[sid]
         rows = build_rows(root, "006", words, t_end, plates, "reuse-long-plate", media_root)
+        total_dur = round(t_end + TAIL, 3)
         item: dict = {
             "id": sid,
             "vo": spec["vo"],
+            "align": spec["align_rel"],
             "vo_duration_s": t_end,
+            "total_duration_s": total_dur,
             "first_cut_s": rows[0]["t_end_s"],
             "frame0_plate": plates[0],
             "rows": rows,
@@ -699,17 +911,23 @@ def plan_006_abc(root: Path, media_root: str) -> dict:
             "promoted_long_title_window_s": [9.0, 14.0],
             "promoted_long_title": "The Willow Tree That Was Made of Air",
         }
+        attach_hook_and_status_metadata("006_Trees-Are-Made-Of-Air", item, words)
         if note:
             item["vo_trim"] = {"drop_spoken_title_from_s": t_end, "note": note}
             item["duration_note"] = (
-                f"Speech ends at {t_end:.2f} s. With the 1.0 s loop the Short is {t_end + TAIL:.2f} s, "
+                f"Speech ends at {t_end:.2f} s. With the 1.0 s loop the Short is {total_dur:.2f} s, "
                 "under the 22 s band. The audit asked for this title trim. No words were added."
             )
+            item["unresolved_build_constraint"] = (
+                f"Declared total duration is {total_dur:.2f} s ({t_end:.2f} s VO after spoken-title trim + "
+                f"{TAIL:.2f} s loop), below the {SHORT_MIN_TOTAL_S:.2f} s HOS Shorts floor; no blanket length "
+                "exception or production approval is granted."
+            )
+            item["status"] = "blocked_duration_under_22s"
         if sid == "Short_B":
             item["duration_note"] = (
-                "Cuts are timed from t2_mint_fixed_vo_v03_align.json (21.60 s). "
-                "The locked take named in VO_LOCK is t2_mint_fixed_vo_v03b.mp3 at 23.20 s. "
-                "Re-time these cuts to that locked take before any render. No new VO."
+                "Timed directly from t2_mint_fixed_vo_v03b_align.json (23.20 s, sha256 0f109926...) matching "
+                "the locked take t2_mint_fixed_vo_v03b.mp3 (23.20 s VO + 1.00 s loop = 24.20 s total). No new VO."
             )
         shorts.append(item)
     return {"film": "006", "part": "Short A-C", "media_root": media_root, **RULES, "shorts": shorts}
@@ -734,21 +952,22 @@ def plan_006_lifts(root: Path, media_root: str) -> dict:
             media_root,
             loop_note="One-second return to the frame-0 plate. No end-card line, no video id, no code text.",
         )
-        shorts.append(
-            {
-                "id": sid,
-                "replaces": path.name,
-                "vo_duration_s": vo_end,
-                "first_cut_s": rows[0]["t_end_s"],
-                "frame0_plate": plates[0],
-                "rows": rows,
-                "loop_tail_s": TAIL,
-                "end_card": end_card(),
-                "full_film_banner": False,
-                "render": False,
-                "retired_assembler": f"_build_short_{sid}_v01.py",
-            }
-        )
+        item: dict = {
+            "id": sid,
+            "replaces": path.name,
+            "vo_duration_s": vo_end,
+            "total_duration_s": round(vo_end + TAIL, 3),
+            "first_cut_s": rows[0]["t_end_s"],
+            "frame0_plate": plates[0],
+            "rows": rows,
+            "loop_tail_s": TAIL,
+            "end_card": end_card(),
+            "full_film_banner": False,
+            "render": False,
+            "retired_assembler": f"_build_short_{sid}_v01.py",
+        }
+        attach_hook_and_status_metadata("006_Trees-Are-Made-Of-Air", item, words)
+        shorts.append(item)
     return {"film": "006", "part": "s04-s08", "media_root": media_root, **RULES, "shorts": shorts}
 
 
@@ -766,8 +985,13 @@ def plan_films(root: Path) -> list[tuple[Path, dict]]:
         data = load(src)
         data["version"] = "v02"
         data["written"] = "2026-10-26"
-        data["task"] = "J0967: stayed-to-watch build rules (c56 FIX v2). Plans only, no render, no generation."
+        data["task"] = (
+            "J0967: stayed-to-watch build rules (c56 + Acting-Chief 6425168160 FIX). "
+            "Plans only, no render, no generation."
+        )
         data["rules"] = RULES
+        film_media_root: str | None = str(LOCAL_007_ROOT) if film == "007" else None
+        data["media_root"] = film_media_root
         new_shorts = []
         for s in data["shorts"]:
             short = json.loads(json.dumps(s))
@@ -815,17 +1039,19 @@ def plan_films(root: Path) -> list[tuple[Path, dict]]:
                 vo_end,
                 plates,
                 "reuse-long-plate",
-                None,
+                film_media_root,
                 loop_note=loop_note,
                 loop_dur_override=loop_dur,
             )
             short["rows"] = rows
+            short["total_duration_s"] = round(vo_end + TAIL, 3)
             short["first_cut_s"] = rows[0]["t_end_s"]
             short["loop_tail_s"] = TAIL
             short["end_card"] = end_card()
             short["full_film_banner"] = False
             short["render"] = False
             short["frame0_plate"] = plates[0]
+            attach_hook_and_status_metadata(folder, short, words)
             new_shorts.append(short)
         data["shorts"] = new_shorts
         data["totals"]["rows"] = sum(len(s["rows"]) for s in data["shorts"])
@@ -871,12 +1097,20 @@ def plan_standalone(root: Path, media_root: str) -> dict:
         words = stt_words(stt / stem / "stt_raw.json")
         if dateline:
             words, remove = drop_dateline(words, dateline)
-            trim = {"drop": dateline, "remove_s": remove, "claim_starts_s": 0.06}
+            trim: dict = {"drop": dateline, "remove_s": remove, "claim_starts_s": 0.06}
         else:
             lead = 0.05 - words[0][1]
             words = [(t, round(a + lead, 3), round(b + lead, 3)) for t, a, b in words]
             trim = {"onset_to_s": 0.05, "shift_s": round(lead, 3)}
+        if sid == "s7_priestley_mint":
+            words, s1_pause_rem = tighten_s7_hook_pauses(words)
+            trim["s1_pause_trim_s"] = s1_pause_rem
+            trim["s1_pause_note"] = (
+                "Tighten sentence-1 pauses after 'a' (-0.10 s) and 'mint' (-0.14 s) on existing take so "
+                "'a sprig of mint brought dead air back to life.' completes at 2.80 s <= 2.85 s. Zero words changed."
+            )
         t_end = round(words[-1][2], 3)
+        total_dur = round(t_end + TAIL, 3)
         if sid == "s7_priestley_mint":
             rows = build_rows(
                 root,
@@ -896,6 +1130,11 @@ def plan_standalone(root: Path, media_root: str) -> dict:
                 "why": why,
                 "vo_trim": trim,
                 "vo_duration_s": t_end,
+                "total_duration_s": total_dur,
+                "unresolved_build_constraint": (
+                    f"Standalone ~20 s test Short: {total_dur:.2f} s total ({t_end:.2f} s VO after dateline + "
+                    "sentence-1 pause trim + 1.00 s loop); keep plan-only."
+                ),
                 "first_cut_s": rows[0]["t_end_s"],
                 "frame0": "04_Generated-Clips/part03/raw/v01/10_mint_jar_t1.mp4",
                 "intended_moving_plates": [
@@ -910,6 +1149,7 @@ def plan_standalone(root: Path, media_root: str) -> dict:
                 "render": False,
                 "generation": False,
             }
+            attach_hook_and_status_metadata("docs", item, words)
         else:
             cuts = find_word_cuts(words, t_end)
             assert cuts is not None
@@ -917,7 +1157,10 @@ def plan_standalone(root: Path, media_root: str) -> dict:
                 {
                     **c,
                     "source_long_plate": "UNBUILT",
+                    "plate_on_disk": False,
+                    "probed_dur_s": None,
                     "plate_dur_s": None,
+                    "status": "unbuilt",
                     "route": "unbuilt",
                     "flow_credits_expected": 0,
                 }
@@ -931,7 +1174,10 @@ def plan_standalone(root: Path, media_root: str) -> dict:
                     "use_s": TAIL,
                     "role": "loop_tail",
                     "source_long_plate": "UNBUILT",
+                    "plate_on_disk": False,
+                    "probed_dur_s": None,
                     "plate_dur_s": None,
+                    "status": "unbuilt",
                     "spoken": "",
                     "note": "Frame-0 plate, once a moving plate exists. No banner.",
                 }
@@ -942,6 +1188,7 @@ def plan_standalone(root: Path, media_root: str) -> dict:
                 "why": why,
                 "vo_trim": trim,
                 "vo_duration_s": t_end,
+                "total_duration_s": total_dur,
                 "first_cut_s": rows[0]["t_end_s"],
                 "rows": rows,
                 "loop_tail_s": TAIL,
@@ -951,6 +1198,8 @@ def plan_standalone(root: Path, media_root: str) -> dict:
                 "generation": False,
                 "frame0": "moving plate or unbuilt",
             }
+            attach_hook_and_status_metadata("docs", item, words)
+            item["status"] = "unbuilt"
         shorts.append(item)
     return {"part": "S5-S8", **RULES, "shorts": shorts}
 
@@ -964,10 +1213,19 @@ def load_words_for_short(root: Path, parent_name: str, short: dict, media_root: 
             idx = next(i for i, (wt, _, _) in enumerate(w) if wt == "The")
             return w[:idx]
         if sid == "Short_B":
-            return words_from_align(vo_dir / "t2_mint_fixed_vo_v03_align.json")
+            align_p = vo_dir / "t2_mint_fixed_vo_v03b_align.json"
+            if not align_p.exists():
+                align_p = vo_dir / "t2_mint_fixed_vo_v03_align.json"
+            return words_from_align(align_p)
         if sid == "Short_C":
             return words_from_align(vo_dir / "t3_bubbles_sunlight_vo_v01_align.json")
-        src_p = next(( resolve_repo_file(root, "02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/SHORT_s04_photosynthesis_v01.json").parent ).glob(f"SHORT_{sid}_*.json"))
+        src_p = next(
+            (
+                resolve_repo_file(
+                    root, "02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/SHORT_s04_photosynthesis_v01.json"
+                ).parent
+            ).glob(f"SHORT_{sid}_*.json")
+        )
         mr = Path(media_root) if media_root else NAS_006_ROOT
         return lift_words_006(root, sid, load(src_p), mr)
     if parent_name in (
@@ -996,6 +1254,8 @@ def load_words_for_short(root: Path, parent_name: str, short: dict, media_root: 
     else:
         lead = 0.05 - w[0][1]
         w = [(t, round(a + lead, 3), round(b + lead, 3)) for t, a, b in w]
+    if sid == "s7_priestley_mint" and (short.get("vo_trim") or {}).get("s1_pause_trim_s"):
+        w, _ = tighten_s7_hook_pauses(w)
     return w
 
 
@@ -1047,6 +1307,42 @@ def check_short(
         errors.append(f"{label}: banner text still present")
     if YT_ID.search(card.get("text") or ""):
         errors.append(f"{label}: video id on the end card")
+
+    # Verify VO timing source and duration alignment (e.g., 006 Short_B v03b 23.20 s vs 21.60 s mismatch)
+    vo_rel = short.get("vo")
+    if vo_rel and parent_name == "006_Trees-Are-Made-Of-Air":
+        vo_fp = resolve_repo_file(root, f"02_Video-Projects/006_Trees-Are-Made-Of-Air/{vo_rel}")
+        if not vo_fp.exists() and media_root:
+            vo_fp = Path(media_root) / vo_rel
+        probed_vo = probe_duration(vo_fp) if vo_fp.exists() else None
+        expected_vo = float(short["vo_duration_s"])
+        trim_s = (short.get("vo_trim") or {}).get("drop_spoken_title_from_s")
+        if probed_vo is not None and trim_s is None and abs(probed_vo - expected_vo) > 0.08:
+            errors.append(
+                f"{label}: vo_duration_s ({expected_vo:.2f} s) does not match probed {vo_rel} ({probed_vo:.2f} s)"
+            )
+        align_rel = short.get("align")
+        expected_align_stem = Path(vo_rel).stem + "_align.json"
+        if not align_rel or Path(align_rel).name != expected_align_stem:
+            errors.append(
+                f"{label}: timing alignment {align_rel!r} does not match locked VO stem {expected_align_stem!r}"
+            )
+    dnote = short.get("duration_note") or ""
+    if "Re-time these cuts" in dnote or "21.60 s" in dnote:
+        errors.append(f"{label}: duration_note still references un-retimed 21.60 s take ({dnote!r})")
+
+    # Check under-22s total duration build constraint visibility (e.g., 006 Short_A at 20.92 s)
+    total_dur = round(float(short["vo_duration_s"]) + float(short.get("loop_tail_s") or TAIL), 3)
+    if total_dur < SHORT_MIN_TOTAL_S - 0.01 and short.get("status") != "unbuilt":
+        if not short.get("unresolved_build_constraint"):
+            errors.append(
+                f"{label}: total duration {total_dur:.2f} s < {SHORT_MIN_TOTAL_S:.2f} s without explicit unresolved_build_constraint"
+            )
+        if parent_name == "006_Trees-Are-Made-Of-Air" and short.get("status") != "blocked_duration_under_22s":
+            errors.append(
+                f"{label}: 006 Short under 22 s ({total_dur:.2f} s) must have status 'blocked_duration_under_22s'"
+            )
+
     body = body_rows(short)
     if not body:
         errors.append(f"{label}: no body rows")
@@ -1083,8 +1379,45 @@ def check_short(
             )
         i = j + 1
 
-    # Load words to verify cuts on word ends and non-overlapping spoken text
+    # Load words to verify cuts on word ends, non-overlapping spoken text, and S01 hook completion
     words = load_words_for_short(root, parent_name, short, media_root)
+    if abs(words[-1][2] - float(short["vo_duration_s"])) > 0.20:
+        errors.append(
+            f"{label}: last word end ({words[-1][2]:.2f} s) diverges from vo_duration_s ({short['vo_duration_s']:.2f} s)"
+        )
+
+    # Enforce S01 hook completion by 2.85 s (or explicit hook_conflict block if VO hook sentence > 2.85 s)
+    _h_idx, full_hook_text, hook_end_s = hook_sentence_info(words)
+    s01_spoken = (body[0].get("spoken") or "").strip()
+    s01_completes_hook = bool(
+        s01_spoken.endswith((".", "!", "?"))
+        and body[0]["t_end_s"] <= S01_MAX + 0.011
+        and abs(body[0].get("word_end_s", -99.0) - hook_end_s) <= 0.02
+    )
+    if hook_end_s <= S01_MAX + 0.011:
+        if not s01_completes_hook:
+            errors.append(
+                f"{label}: hook sentence ({full_hook_text!r}) ends at {hook_end_s:.2f} s <= {S01_MAX} s, "
+                f"but S01 ends at {body[0]['t_end_s']:.2f} s on {s01_spoken!r}"
+            )
+        if short.get("hook_complete_in_s01") is not True:
+            errors.append(f"{label}: hook_complete_in_s01 must be True when hook completes at {hook_end_s:.2f} s")
+    else:
+        hc = short.get("hook_conflict")
+        st = str(short.get("status") or "")
+        if (
+            short.get("hook_complete_in_s01") is not False
+            or not isinstance(hc, dict)
+            or not hc.get("bounded_edit_proposal")
+            or hc.get("vo_words_changed") is not False
+            or not (st == "unbuilt" or st.startswith("blocked_"))
+        ):
+            errors.append(
+                f"{label}: S01 ends at {body[0]['t_end_s']:.2f} s on unfinished hook ({s01_spoken!r}); "
+                f"full hook sentence ({full_hook_text!r}) ends at {hook_end_s:.2f} s (> {S01_MAX} s) and Short "
+                "is not explicitly blocked with hook_conflict"
+            )
+
     prev = 0.0
     prev_spoken_norm = ""
     for idx, row in enumerate(body):
@@ -1126,7 +1459,7 @@ def check_short(
             errors.append(f"{label}: {row['id']} spoken does not match words in [{row['t_start_s']}, {row['t_end_s']}]")
         prev_spoken_norm = actual_spoken
 
-    # Plate existence, notes-in-plate, and plate_dur_s >= use_s checks
+    # Real media existence, ffprobe duration, in_s/out_s window, notes-in-plate, and plate_dur_s >= use_s checks
     for row in rows:
         plate = row.get("source_long_plate") or ""
         if "(" in plate or ")" in plate or "+" in plate:
@@ -1135,16 +1468,50 @@ def check_short(
             continue
         use_s = round(float(row.get("use_s") or dur(row)), 3)
         pdur = row.get("plate_dur_s")
-        exists, resolved_dur = lookup_plate_duration(root, parent_name, plate, media_root)
-        if not exists:
-            errors.append(f"{label}: {row['id']} plate {plate!r} does not resolve under media_root/board")
+        exists, probed_dur = lookup_plate_duration(root, parent_name, plate, media_root)
+        board_dur = board_spec_duration(root, parent_name, plate)
+
         if pdur is None:
             errors.append(f"{label}: {row['id']} missing plate_dur_s")
+        elif float(pdur) < use_s - 0.01:
+            errors.append(f"{label}: {row['id']} plate_dur_s {pdur} < use_s {use_s}")
+
+        if board_dur is not None and board_dur < use_s - 0.01:
+            errors.append(f"{label}: {row['id']} resolved plate duration {board_dur} s < use_s {use_s} s ({plate})")
+
+        if exists and probed_dur is not None:
+            if probed_dur < use_s - 0.01:
+                errors.append(f"{label}: {row['id']} probed plate duration {probed_dur} s < use_s {use_s} s ({plate})")
+            if row.get("plate_on_disk") is not True:
+                errors.append(f"{label}: {row['id']} plate {plate!r} exists on disk but plate_on_disk is not True")
+            if row.get("in_s") is not None or row.get("out_s") is not None:
+                if row.get("in_s") is None or row.get("out_s") is None:
+                    errors.append(f"{label}: {row['id']} has partial in_s/out_s window")
+                else:
+                    in_s = float(row["in_s"])
+                    out_s = float(row["out_s"])
+                    win_s = round(out_s - in_s, 3)
+                    if in_s < -1e-6 or out_s <= in_s or out_s > probed_dur + 0.01:
+                        errors.append(
+                            f"{label}: {row['id']} in_s/out_s [{in_s:.2f}, {out_s:.2f}] outside probed plate [0.00, {probed_dur:.2f}]"
+                        )
+                    if win_s < use_s - 0.01:
+                        errors.append(
+                            f"{label}: {row['id']} in_s/out_s window {win_s:.2f} s < use_s {use_s:.2f} s"
+                        )
         else:
-            if float(pdur) < use_s - 0.01:
-                errors.append(f"{label}: {row['id']} plate_dur_s {pdur} < use_s {use_s}")
-        if resolved_dur is not None and resolved_dur < use_s - 0.01:
-            errors.append(f"{label}: {row['id']} resolved plate duration {resolved_dur} s < use_s {use_s} s ({plate})")
+            # Media file does not exist on local disk or NAS (e.g., board-only 008-010 plate)
+            st = str(short.get("status") or "")
+            if (
+                row.get("plate_on_disk") is not False
+                or row.get("probed_dur_s") is not None
+                or row.get("status") != "blocked_missing_plate"
+                or short.get("plates_on_disk") is not False
+                or not (st == "unbuilt" or "missing_plates" in st)
+            ):
+                errors.append(
+                    f"{label}: {row['id']} plate {plate!r} has no .mp4 media file on disk/NAS (board JSON is not proof of an existing plate) and is not explicitly marked blocked_missing_plate"
+                )
 
     if short.get("render"):
         errors.append(f"{label}: render flag is on")
@@ -1191,6 +1558,60 @@ def check_all(root: Path) -> list[str]:
     return errors
 
 
+def run_negative_checks(root: Path) -> list[str]:
+    """Verify negative cases required by Acting-Chief 6425168160 all deterministically FAIL."""
+    failures: list[str] = []
+
+    # 1. Board-only clip lookup must return (False, None), never (True, 8.0)
+    ok_008, dur_008 = lookup_plate_duration(root, "008", "P1:01_kite_open", None)
+    if ok_008 or dur_008 is not None:
+        failures.append(f"negative check 1 failed: lookup_plate_duration(008, P1:01_kite_open) returned {(ok_008, dur_008)}")
+
+    # 2. Wrong/mismatched VO timing on 006 Short_B (21.60 s / v03_align vs 23.20 s v03b.mp3) must FAIL check_short
+    p006 = load(root / "02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/BUILD_RULE_v02.json")
+    sb = copy.deepcopy(next(s for s in p006["shorts"] if s["id"] == "Short_B"))
+    sb["vo_duration_s"] = 21.6
+    sb["align"] = "10_Shorts/vo_20261004/t2_mint_fixed_vo_v03_align.json"
+    errs_vo: list[str] = []
+    check_short(root, "006_Trees-Are-Made-Of-Air", "neg/006_Short_B_21p6s", sb, p006.get("media_root"), errs_vo)
+    if not any("does not match probed" in e or "does not match locked VO stem" in e for e in errs_vo):
+        failures.append(f"negative check 2 failed: 006 Short_B 21.60s mismatch did not trigger VO timing error ({errs_vo})")
+
+    # 3. Board-only/missing clip claimed as available/planned on 008 Short_A must FAIL check_short
+    p008 = load(root / "02_Video-Projects/008_Lightning-Franklin/10_Shorts/SHORTS_PICTURE_PLAN_v02.json")
+    sa = copy.deepcopy(next(s for s in p008["shorts"] if s["id"] == "Short_A"))
+    sa["status"] = "planned"
+    sa["plates_on_disk"] = True
+    sa["rows"][0]["status"] = "planned"
+    sa["rows"][0]["plate_on_disk"] = True
+    errs_clip: list[str] = []
+    check_short(root, "008_Lightning-Franklin", "neg/008_Short_A_board_only", sa, p008.get("media_root"), errs_clip)
+    if not any("has no .mp4 media file on disk/NAS" in e for e in errs_clip):
+        failures.append(f"negative check 3 failed: board-only clip on 008 Short_A did not fail ({errs_clip})")
+
+    # 4. Unfinished S01 hook on 008 Short_C (cuts after 'tall' at 2.40 s, hook ends at 4.84 s) treated as complete must FAIL
+    sc = copy.deepcopy(next(s for s in p008["shorts"] if s["id"] == "Short_C"))
+    sc["status"] = "planned"
+    sc["hook_complete_in_s01"] = True
+    sc.pop("hook_conflict", None)
+    errs_hook: list[str] = []
+    check_short(root, "008_Lightning-Franklin", "neg/008_Short_C_unfinished_hook", sc, p008.get("media_root"), errs_hook)
+    if not any("unfinished hook" in e for e in errs_hook):
+        failures.append(f"negative check 4 failed: unfinished S01 hook on 008 Short_C did not fail ({errs_hook})")
+
+    # 5. Out-of-bounds in_s/out_s window on S7 must FAIL
+    ps7 = load(root / "docs/STANDALONE_SHORTS_TEST_2026-10/BUILD_RULE_S5_S8_v02.json")
+    s7 = copy.deepcopy(next(s for s in ps7["shorts"] if s["id"] == "s7_priestley_mint"))
+    s7["rows"][0]["in_s"] = 6.5
+    s7["rows"][0]["out_s"] = 9.3
+    errs_inout: list[str] = []
+    check_short(root, "docs", "neg/S7_bad_inout", s7, s7.get("media_root"), errs_inout)
+    if not any("outside probed plate" in e for e in errs_inout):
+        failures.append(f"negative check 5 failed: out-of-bounds in_s/out_s on S7 did not fail ({errs_inout})")
+
+    return failures
+
+
 def write_all(root: Path) -> None:
     media_root = str(NAS_006_ROOT)
     abc = plan_006_abc(root, media_root)
@@ -1211,17 +1632,24 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--write", action="store_true")
     ap.add_argument("--check", action="store_true")
+    ap.add_argument("--test-negatives", action="store_true")
     ns = ap.parse_args()
     if ns.write:
         write_all(REPO)
-    if ns.check or not ns.write:
+    if ns.check or ns.test_negatives or not ns.write:
         errors = check_all(REPO)
         if errors:
             print(f"FAIL {len(errors)}")
             for line in errors:
                 print(" ", line)
             raise SystemExit(1)
-        print("PASS build-rule v02 plans")
+        neg_failures = run_negative_checks(REPO)
+        if neg_failures:
+            print(f"FAIL negative checks ({len(neg_failures)})")
+            for line in neg_failures:
+                print(" ", line)
+            raise SystemExit(1)
+        print("PASS build-rule v02 plans (including 5 negative checks)")
 
 
 if __name__ == "__main__":

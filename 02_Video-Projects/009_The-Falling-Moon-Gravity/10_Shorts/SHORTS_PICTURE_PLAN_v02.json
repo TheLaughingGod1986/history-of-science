@@ -3,7 +3,7 @@
   "folder": "009_The-Falling-Moon-Gravity",
   "version": "v02",
   "written": "2026-10-26",
-  "task": "J0967: stayed-to-watch build rules (c56 FIX v2). Plans only, no render, no generation.",
+  "task": "J0967: stayed-to-watch build rules (c56 + Acting-Chief 6425168160 FIX). Plans only, no render, no generation.",
   "long_board_version": "v04 (J0336 PASS)",
   "totals": {
     "shorts_count": 2,
@@ -52,10 +52,14 @@
           "word_end_s": 2.8,
           "word_gap_s": 0.0,
           "source_long_plate": "P1:01_moon_falling",
+          "plate_on_disk": false,
+          "probed_dur_s": null,
           "plate_dur_s": 8.0,
+          "status": "blocked_missing_plate",
           "route": "reuse-long-plate",
           "spoken": "The moon is falling towards the Earth right now.",
-          "flow_credits_expected": 0
+          "flow_credits_expected": 0,
+          "board_dur_s": 8.0
         },
         {
           "id": "S02",
@@ -65,10 +69,14 @@
           "word_end_s": 5.74,
           "word_gap_s": 0.0,
           "source_long_plate": "P3:08_km_a_second",
+          "plate_on_disk": false,
+          "probed_dur_s": null,
           "plate_dur_s": 4.95,
+          "status": "blocked_missing_plate",
           "route": "reuse-long-plate",
           "spoken": "Every second, it moves sideways about a",
-          "flow_credits_expected": 0
+          "flow_credits_expected": 0,
+          "board_dur_s": 4.95
         },
         {
           "id": "S03",
@@ -78,10 +86,14 @@
           "word_end_s": 8.98,
           "word_gap_s": 0.0,
           "source_long_plate": "P3:07_ball_to_moon",
+          "plate_on_disk": false,
+          "probed_dur_s": null,
           "plate_dur_s": 8.0,
+          "status": "blocked_missing_plate",
           "route": "reuse-long-plate",
           "spoken": "kilometer and drops a tiny bit towards us.",
-          "flow_credits_expected": 0
+          "flow_credits_expected": 0,
+          "board_dur_s": 8.0
         },
         {
           "id": "S04",
@@ -91,10 +103,14 @@
           "word_end_s": 12.14,
           "word_gap_s": 0.0,
           "source_long_plate": "P3:05_shot_orbit",
+          "plate_on_disk": false,
+          "probed_dur_s": null,
           "plate_dur_s": 8.0,
+          "status": "blocked_missing_plate",
           "route": "reuse-long-plate",
           "spoken": "But the Earth curves away beneath it,",
-          "flow_credits_expected": 0
+          "flow_credits_expected": 0,
+          "board_dur_s": 8.0
         },
         {
           "id": "S05",
@@ -104,10 +120,14 @@
           "word_end_s": 15.42,
           "word_gap_s": 0.0,
           "source_long_plate": "P2:07_orchard_bench",
+          "plate_on_disk": false,
+          "probed_dur_s": null,
           "plate_dur_s": 8.0,
+          "status": "blocked_missing_plate",
           "route": "reuse-long-plate",
           "spoken": "so it keeps on missing. Isaac",
-          "flow_credits_expected": 0
+          "flow_credits_expected": 0,
+          "board_dur_s": 8.0
         },
         {
           "id": "S06",
@@ -117,10 +137,14 @@
           "word_end_s": 18.62,
           "word_gap_s": 0.0,
           "source_long_plate": "P2:08_the_apple",
+          "plate_on_disk": false,
+          "probed_dur_s": null,
           "plate_dur_s": 8.0,
+          "status": "blocked_missing_plate",
           "route": "reuse-long-plate",
           "spoken": "Newton worked this out more than three hundred years ago.",
-          "flow_credits_expected": 0
+          "flow_credits_expected": 0,
+          "board_dur_s": 8.0
         },
         {
           "id": "S07",
@@ -130,10 +154,14 @@
           "word_end_s": 21.28,
           "word_gap_s": 0.0,
           "source_long_plate": "P3:06_orbit_teach",
+          "plate_on_disk": false,
+          "probed_dur_s": null,
           "plate_dur_s": 4.4,
+          "status": "blocked_missing_plate",
           "route": "reuse-long-plate",
           "spoken": "An orbit isn't floating at all.",
-          "flow_credits_expected": 0
+          "flow_credits_expected": 0,
+          "board_dur_s": 4.4
         },
         {
           "id": "S08",
@@ -143,10 +171,14 @@
           "word_end_s": 24.24,
           "word_gap_s": 0.08,
           "source_long_plate": "P5:09_orchard_dusk",
+          "plate_on_disk": false,
+          "probed_dur_s": null,
           "plate_dur_s": 8.0,
+          "status": "blocked_missing_plate",
           "route": "reuse-long-plate",
           "spoken": "It's falling and missing forever",
-          "flow_credits_expected": 0
+          "flow_credits_expected": 0,
+          "board_dur_s": 8.0
         },
         {
           "id": "loop_tail",
@@ -156,11 +188,16 @@
           "role": "loop_tail",
           "route": "reuse-long-plate",
           "source_long_plate": "P1:01_moon_falling",
+          "plate_on_disk": false,
+          "probed_dur_s": null,
           "plate_dur_s": 8.0,
+          "status": "blocked_missing_plate",
           "spoken": "",
-          "note": "Matched frame-0 plate after the last word. No banner, no video id, no code text."
+          "note": "Matched frame-0 plate after the last word. No banner, no video id, no code text.",
+          "board_dur_s": 8.0
         }
       ],
+      "total_duration_s": 25.32,
       "first_cut_s": 2.8,
       "loop_tail_s": 1.0,
       "end_card": {
@@ -171,7 +208,12 @@
       },
       "full_film_banner": false,
       "render": false,
-      "frame0_plate": "P1:01_moon_falling"
+      "frame0_plate": "P1:01_moon_falling",
+      "hook_complete_in_s01": true,
+      "hook_sentence_end_s": 2.8,
+      "plates_on_disk": false,
+      "status": "blocked_missing_plates",
+      "blocked_reason": "Target long plates exist only in 07_Edit-Project/parts board JSON; no .mp4 files exist on local disk or NAS yet."
     },
     {
       "id": "Short_B",
@@ -209,10 +251,14 @@
           "word_end_s": 2.75,
           "word_gap_s": 0.0,
           "source_long_plate": "P4:05_minute_second",
+          "plate_on_disk": false,
+          "probed_dur_s": null,
           "plate_dur_s": 8.0,
+          "status": "blocked_missing_plate",
           "route": "reuse-long-plate",
           "spoken": "In one minute, the moon falls about as far as an apple",
-          "flow_credits_expected": 0
+          "flow_credits_expected": 0,
+          "board_dur_s": 8.0
         },
         {
           "id": "S02",
@@ -222,10 +268,14 @@
           "word_end_s": 5.51,
           "word_gap_s": 0.0,
           "source_long_plate": "P1:02_apple_and_moon",
+          "plate_on_disk": false,
+          "probed_dur_s": null,
           "plate_dur_s": 8.0,
+          "status": "blocked_missing_plate",
           "route": "reuse-long-plate",
           "spoken": "falls in one second. Isaac",
-          "flow_credits_expected": 0
+          "flow_credits_expected": 0,
+          "board_dur_s": 8.0
         },
         {
           "id": "S03",
@@ -235,10 +285,14 @@
           "word_end_s": 8.51,
           "word_gap_s": 0.0,
           "source_long_plate": "P4:06_pretty_nearly",
+          "plate_on_disk": false,
+          "probed_dur_s": null,
           "plate_dur_s": 8.0,
+          "status": "blocked_missing_plate",
           "route": "reuse-long-plate",
           "spoken": "Newton worked out why. The moon is",
-          "flow_credits_expected": 0
+          "flow_credits_expected": 0,
+          "board_dur_s": 8.0
         },
         {
           "id": "S04",
@@ -248,10 +302,14 @@
           "word_end_s": 11.51,
           "word_gap_s": 0.0,
           "source_long_plate": "P4:03_sixty_earths",
+          "plate_on_disk": false,
+          "probed_dur_s": null,
           "plate_dur_s": 4.68,
+          "status": "blocked_missing_plate",
           "route": "reuse-long-plate",
           "spoken": "60 times further from the Earth's center than we are,",
-          "flow_credits_expected": 0
+          "flow_credits_expected": 0,
+          "board_dur_s": 4.68
         },
         {
           "id": "S05",
@@ -261,10 +319,14 @@
           "word_end_s": 14.45,
           "word_gap_s": 0.0,
           "source_long_plate": "P4:01_weaker_far",
+          "plate_on_disk": false,
+          "probed_dur_s": null,
           "plate_dur_s": 7.11,
+          "status": "blocked_missing_plate",
           "route": "reuse-long-plate",
           "spoken": "so the pull on it is 60 times 60",
-          "flow_credits_expected": 0
+          "flow_credits_expected": 0,
+          "board_dur_s": 7.11
         },
         {
           "id": "S06",
@@ -274,10 +336,14 @@
           "word_end_s": 17.22,
           "word_gap_s": 0.0,
           "source_long_plate": "P4:04_dots_square",
+          "plate_on_disk": false,
+          "probed_dur_s": null,
           "plate_dur_s": 5.53,
+          "status": "blocked_missing_plate",
           "route": "reuse-long-plate",
           "spoken": "weaker, Three thousand six",
-          "flow_credits_expected": 0
+          "flow_credits_expected": 0,
+          "board_dur_s": 5.53
         },
         {
           "id": "S07",
@@ -287,10 +353,14 @@
           "word_end_s": 19.87,
           "word_gap_s": 0.0,
           "source_long_plate": "P4:06_pretty_nearly",
+          "plate_on_disk": false,
+          "probed_dur_s": null,
           "plate_dur_s": 8.0,
+          "status": "blocked_missing_plate",
           "route": "reuse-long-plate",
           "spoken": "hundred times, and the numbers matched.",
-          "flow_credits_expected": 0
+          "flow_credits_expected": 0,
+          "board_dur_s": 8.0
         },
         {
           "id": "S08",
@@ -300,10 +370,14 @@
           "word_end_s": 22.99,
           "word_gap_s": 0.14,
           "source_long_plate": "P5:01_one_law",
+          "plate_on_disk": false,
+          "probed_dur_s": null,
           "plate_dur_s": 8.0,
+          "status": "blocked_missing_plate",
           "route": "reuse-long-plate",
           "spoken": "One pull for apples and moons",
-          "flow_credits_expected": 0
+          "flow_credits_expected": 0,
+          "board_dur_s": 8.0
         },
         {
           "id": "loop_tail",
@@ -313,9 +387,13 @@
           "role": "loop_tail",
           "route": "reuse-long-plate",
           "source_long_plate": "P4:05_minute_second",
+          "plate_on_disk": false,
+          "probed_dur_s": null,
           "plate_dur_s": 8.0,
+          "status": "blocked_missing_plate",
           "spoken": "",
-          "note": "Matched frame-0 plate after the last word. No banner, no video id, no code text."
+          "note": "Matched frame-0 plate after the last word. No banner, no video id, no code text.",
+          "board_dur_s": 8.0
         }
       ],
       "vo_pause_trim": {
@@ -323,6 +401,7 @@
         "remove_s": 0.31,
         "why": "009 Short B sentence-1 pause 0.68\u20131.09 s (0.41 s) trimmed to a 0.10 s gap. Existing take, no new VO."
       },
+      "total_duration_s": 24.13,
       "first_cut_s": 2.75,
       "loop_tail_s": 1.0,
       "end_card": {
@@ -333,18 +412,33 @@
       },
       "full_film_banner": false,
       "render": false,
-      "frame0_plate": "P4:05_minute_second"
+      "frame0_plate": "P4:05_minute_second",
+      "hook_complete_in_s01": false,
+      "hook_sentence_end_s": 4.27,
+      "plates_on_disk": false,
+      "hook_conflict": {
+        "s01_end_s": 2.75,
+        "s01_partial_spoken": "In one minute, the moon falls about as far as an apple",
+        "hook_sentence_end_s": 4.27,
+        "full_hook_sentence": "In one minute, the moon falls about as far as an apple falls in one second.",
+        "vo_words_changed": false,
+        "bounded_edit_proposal": "Sentence 1 ('In one minute, the moon falls about as far as an apple falls in one second.') ends at 4.27 s (3.18 s pure speech even after the 0.31 s pause trim); S01 cuts after 'apple' at 2.75 s while 'falls in one second.' lands in S02. Bounded existing-word option: drop leading 'In one minute,' (0.08-0.74 s) and tighten inter-word gaps on the existing take, awaiting Chief sign-off."
+      },
+      "status": "blocked_hook_and_missing_plates",
+      "blocked_reason": "S01 cuts at 2.75 s before hook sentence ends at 4.27 s, and target long plates exist only in board JSON (no .mp4 files on disk/NAS)."
     }
   ],
   "rules": {
     "job": "J0967",
     "s01_ends_by_s": 2.85,
+    "s01_requires_completed_hook": true,
     "body_cut_s": [
       2.5,
       3.8
     ],
     "word_end_gap_s_max": 0.1,
     "adjacent_same_plate": false,
+    "plate_must_exist_on_disk": true,
     "loop_tail_s_max": 1.0,
     "full_film_banner": false,
     "end_card_video_id": null,
@@ -352,5 +446,6 @@
     "render": false,
     "generation": false,
     "gbp": 0
-  }
+  },
+  "media_root": null
 }
