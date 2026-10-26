@@ -1,0 +1,5 @@
+J0918 HOS ship gate, v03 Fabricius ends 7.82, Harvey card, master.
+verdict=PASS frame0_diff=4.97 first_cut_s=2.43 vo_onset_s=0.129 tail_gap_s=1.35 stayed_fails=[]
+fails=[]
+warns=[]
+aac_lufs=-14.00 aac_true_peak_dbfs=-1.90

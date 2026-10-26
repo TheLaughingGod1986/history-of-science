@@ -1,0 +1,25 @@
+{
+  "file": "hos_005_s05_valves_v03.mp4",
+  "lufs": -14.0,
+  "true_peak_dbfs": -1.9,
+  "gate_verdict": "PASS",
+  "gate_fails": [],
+  "polish_exit": 0,
+  "picture_exit": 0,
+  "music_exit": 0,
+  "sfx_exit": 0,
+  "polish_tail": [
+    "s08_towards    19.2s 10_slides_heart_t2.mp4       WARN low detail: edge density 0.0161 < film p5 0.0225",
+    "s09_loop    21.5s loop_span_13_one_way_t3.mp4  ok",
+    "polish gate PASS: 0 of 9 rows failed, 1 to look at -> 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s05_valves_v03/polish_gate_s05_valves_v03.json"
+  ],
+  "picture_tail": [
+    "WARN   0:19 row s08_towards 10_slides_heart_t2.mp4: low detail: edge density 0.0161 < film p5 0.0225",
+    "picture QA PASS: 0 of 9 cuts fail, 1 to look at -> 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s05_valves_v03/picture_qa_s05_valves_v03/PICTURE_QA.md, 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s05_valves_v03/picture_qa_s05_valves_v03/picture_qa_review.jpg"
+  ],
+  "music_tail": [
+    "WARN reused: couldn't read saturn_long_vo_v03_tightened.wav to compare (OSError); download it or pass --others",
+    "music gate PASS: hos_005_s05_valves_v02_bed.wav, 22.6 s, about 63.2 BPM, brief Pace: 60-68 BPM"
+  ],
+  "v02_untouched": true
+}

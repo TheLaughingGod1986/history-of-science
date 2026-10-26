@@ -1,0 +1,13 @@
+s01_open     1.3s 03_band_tightens_t3.mp4      ok
+s02_William     4.0s 02_linen_tie_t2.mp4          ok
+s03_arm     5.9s 04_sum_band_doors_t2.mp4     ok
+s04_hand     7.4s 03_hand_pale_t4_graded_v04.m WARN low detail: edge density 0.0133 < film p5 0.0141
+s05_No     9.2s 05_arteries_veins_shut_t2.mp ok
+s06_He    11.5s 04_stopped_loosen_t5_graded_ ok
+s07_veins    14.6s 06_veins_swell_t1.mp4        ok
+s08_So    17.7s 07_in_out_doors_t2.mp4       ok
+s09_and    20.1s 15_your_hand_glow_t2.mp4     ok
+s10_Look    22.1s 12_stays_fills_t1.mp4        ok
+s11_That    24.1s 14_steering_home_t1.mp4      ok
+s12_loop    25.8s loop_span_03_band_tightens_t ok
+polish gate PASS: 0 of 12 rows failed, 1 to look at -> 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s02_tied_arm_v05/polish_gate_s02_tied_arm_v05.json

@@ -1,0 +1,25 @@
+{
+  "file": "hos_005_s02_the_tied_arm_v05.mp4",
+  "lufs": -14.0,
+  "true_peak_dbfs": -1.8,
+  "gate_verdict": "PASS",
+  "gate_fails": [],
+  "polish_exit": 0,
+  "picture_exit": 0,
+  "music_exit": 0,
+  "sfx_exit": 0,
+  "polish_tail": [
+    "s11_That    24.1s 14_steering_home_t1.mp4      ok",
+    "s12_loop    25.8s loop_span_03_band_tightens_t ok",
+    "polish gate PASS: 0 of 12 rows failed, 1 to look at -> 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s02_tied_arm_v05/polish_gate_s02_tied_arm_v05.json"
+  ],
+  "picture_tail": [
+    "WARN   0:07 row s04_hand 03_hand_pale_t4_graded_v04.mp4: low detail: edge density 0.0133 < film p5 0.0141",
+    "picture QA PASS: 0 of 12 cuts fail, 1 to look at -> 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s02_tied_arm_v05/picture_qa_s02_tied_arm_v05/PICTURE_QA.md, 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s02_tied_arm_v05/picture_qa_s02_tied_arm_v05/picture_qa_review.jpg"
+  ],
+  "music_tail": [
+    "WARN reused: couldn't read saturn_long_vo_v03_tightened.wav to compare (OSError); download it or pass --others",
+    "music gate PASS: hos_005_s02_tied_arm_v04_bed.wav, 26.8 s, about 57.1 BPM, brief Pace: 54-62 BPM"
+  ],
+  "v04_untouched": true
+}

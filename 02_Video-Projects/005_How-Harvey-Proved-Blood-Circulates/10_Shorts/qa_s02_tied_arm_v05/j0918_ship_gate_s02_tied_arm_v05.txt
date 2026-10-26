@@ -1,0 +1,5 @@
+J0918 HOS ship gate, v05 Harvey card + master.
+verdict=PASS frame0_diff=1.95 first_cut_s=2.67 vo_onset_s=0.062 tail_gap_s=1.01 stayed_fails=[]
+fails=[]
+warns=[]
+aac_lufs=-14.00 aac_true_peak_dbfs=-1.80

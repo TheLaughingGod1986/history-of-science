@@ -1,0 +1,119 @@
+[
+  {
+    "row": "s01_open",
+    "timeline_in": 0.0,
+    "timeline_out": 2.45,
+    "source": "13_one_way_t3.mp4",
+    "upscale": 1.78,
+    "video": true,
+    "framing": {
+      "offset": 1.6
+    }
+  },
+  {
+    "row": "s02_knots",
+    "timeline_in": 2.45,
+    "timeline_out": 4.43,
+    "source": "06_veins_swell_t1.mp4",
+    "upscale": 1.78,
+    "video": true,
+    "framing": {
+      "offset": 2.2
+    }
+  },
+  {
+    "row": "s03_valve,",
+    "timeline_in": 4.43,
+    "timeline_out": 7.82,
+    "source": "08_knots_valve_t4.mp4",
+    "upscale": 1.78,
+    "video": true,
+    "framing": {
+      "offset": 0.4
+    }
+  },
+  {
+    "row": "s04_Harvey",
+    "timeline_in": 7.82,
+    "timeline_out": 10.837,
+    "source": "09_push_stops_t3.mp4",
+    "upscale": 1.78,
+    "video": true,
+    "framing": {
+      "offset": 0.5
+    }
+  },
+  {
+    "row": "s05_pushes",
+    "timeline_in": 10.837,
+    "timeline_out": 13.157,
+    "source": "09_push_stops_t2.mp4",
+    "upscale": 1.78,
+    "video": true,
+    "framing": {
+      "offset": 0.4
+    }
+  },
+  {
+    "row": "s06_It",
+    "timeline_in": 13.157,
+    "timeline_out": 15.993,
+    "source": "11_two_fingers_t3.mp4",
+    "upscale": 1.78,
+    "video": true,
+    "framing": {
+      "offset": 0.8
+    }
+  },
+  {
+    "row": "s07_He",
+    "timeline_in": 15.993,
+    "timeline_out": 17.66,
+    "source": "10_slides_heart_t3.mp4",
+    "upscale": 1.78,
+    "video": true,
+    "framing": {
+      "offset": 0.6
+    }
+  },
+  {
+    "row": "s08_towards",
+    "timeline_in": 17.66,
+    "timeline_out": 20.82,
+    "source": "10_slides_heart_t2.mp4",
+    "upscale": 1.78,
+    "video": true,
+    "framing": {
+      "offset": 1.0
+    }
+  },
+  {
+    "row": "s09_loop",
+    "timeline_in": 20.82,
+    "timeline_out": 22.17,
+    "source": "loop_span_13_one_way_t3.mp4",
+    "upscale": 1.78,
+    "video": true,
+    "framing": {
+      "offset": 0.25
+    }
+  },
+  {
+    "row": "card_fabricius",
+    "timeline_in": 6.15,
+    "timeline_out": 7.82,
+    "source": "code_graphic_valves_v03_fabricius.png",
+    "upscale": 1.0,
+    "video": false,
+    "overlay": true
+  },
+  {
+    "row": "card_harvey",
+    "timeline_in": 7.82,
+    "timeline_out": 10.837,
+    "source": "code_graphic_valves_v03_harvey.png",
+    "upscale": 1.0,
+    "video": false,
+    "overlay": true
+  }
+]
