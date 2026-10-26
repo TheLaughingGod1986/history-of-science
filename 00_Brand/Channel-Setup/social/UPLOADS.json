@@ -382,6 +382,42 @@
         "question": "What sits in the centre of an atom?",
         "alt": "Gold foil with a particle bouncing back. On-screen hook IT CAME BACK."
       }
+    },
+    "Pp5LmjsduI4": {
+      "kind": "short",
+      "standalone": false,
+      "standaloneTest": false,
+      "file": "v01",
+      "promotes": "002",
+      "long": "AL_-qlWko_g",
+      "publishAt": null,
+      "privacyStatus": "private",
+      "supersededBy": "qW2OsD4mujc",
+      "unscheduledAt": "2026-10-26T08:55:00Z",
+      "note": "J0971. Private and unscheduled. Title unchanged. Nothing deleted. v01."
+    },
+    "qW2OsD4mujc": {
+      "kind": "short",
+      "standalone": false,
+      "standaloneTest": false,
+      "file": "02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/hos_002_backcat_four_elements_v03.mp4",
+      "sha256": "9340cae9cd5b71e4cd3ddea2f87123b5e6891a1d236a6ca17775d9d6daf4f5ef",
+      "packageDir": "02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/11_Upload-Package/four_elements_v03",
+      "thumb": "02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/11_Upload-Package/four_elements_v03/cover_from_Pp5LmjsduI4.jpg",
+      "long": "AL_-qlWko_g",
+      "promotes": "002",
+      "publishAt": "2026-11-03T11:30:00Z",
+      "privacyStatus": "private",
+      "replaces": "Pp5LmjsduI4",
+      "registeredAt": "2026-10-26T08:55:00Z",
+      "buffer": "held until the short is public, then the full film (long AL_-qlWko_g is already public). TikTok/IG: Full film on YouTube, link in bio.",
+      "captions": "en-GB standard, serving, from the v03 spoken line, AUieDaaYkV12995WSO01uBaaCyE-txj_ZlQw3zxlwbS2zOkP",
+      "related": "not set in this run; Studio CDP 9460 connect hung. J0280 should set AL_-qlWko_g on qW2OsD4mujc (14 Oct read-back was on Pp5LmjsduI4). Long is already public.",
+      "social": {
+        "hook": "Lavoisier's list had thirty-three. Two were light and heat.",
+        "question": "How many names were on Lavoisier's list?",
+        "alt": "A laboratory bench with earth, fire, water and air. Cover text FOUR ELEMENTS WERE WRONG."
+      }
     }
   }
 }

@@ -1,0 +1,103 @@
+{
+  "ok": true,
+  "dryRun": false,
+  "method": "youtube_data_api_package",
+  "upload": {
+    "published": true,
+    "scheduledOnPlatform": true,
+    "scheduledFor": "2026-11-03T11:30:00.000Z",
+    "platformPostId": "qW2OsD4mujc",
+    "platformUrl": "https://youtu.be/qW2OsD4mujc",
+    "message": "Uploaded to YouTube; scheduled to go live at 2026-11-03T11:30:00.000Z; thumbnail set",
+    "responseSummary": "{\"id\":\"qW2OsD4mujc\",\"privacyStatus\":\"private\",\"publishAt\":\"2026-11-03T11:30:00.000Z\"}"
+  },
+  "package": {
+    "title": "The Four Elements Were Wrong",
+    "format": "shorts",
+    "privacy": "private",
+    "tagCount": 6,
+    "hasPinnedComment": false,
+    "thumbnailPath": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/11_Upload-Package/four_elements_v03/cover_from_Pp5LmjsduI4.jpg",
+    "scheduledAt": "2026-11-03T11:30:00.000Z",
+    "sources": {
+      "manifest": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/11_Upload-Package/four_elements_v03/PACKAGE_MANIFEST.json",
+      "video": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/hos_002_backcat_four_elements_v03.mp4",
+      "thumbnail": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/11_Upload-Package/four_elements_v03/cover_from_Pp5LmjsduI4.jpg"
+    }
+  },
+  "postUpload": {
+    "firstCommentPosted": false,
+    "commentMessage": null,
+    "playlistAdded": false,
+    "playlistMessage": null
+  },
+  "studioFinish": {
+    "videoId": "qW2OsD4mujc",
+    "studioEditUrl": "https://studio.youtube.com/video/qW2OsD4mujc/edit",
+    "items": [
+      {
+        "id": "api_metadata",
+        "required": true,
+        "status": "api_done",
+        "title": "Title · description · tags · schedule · video",
+        "detail": "Uploaded via YouTube Data API"
+      },
+      {
+        "id": "primary_thumbnail",
+        "required": true,
+        "status": "api_done",
+        "title": "Primary thumbnail",
+        "detail": "Set via thumbnails.set",
+        "studioUrlHint": "https://studio.youtube.com/video/qW2OsD4mujc/edit"
+      },
+      {
+        "id": "title_thumb_abc",
+        "required": false,
+        "status": "n/a",
+        "title": "Title + thumbnail ABC (Test & Compare)",
+        "detail": "A/B Testing not available for Shorts",
+        "studioUrlHint": "https://studio.youtube.com/video/qW2OsD4mujc/edit"
+      },
+      {
+        "id": "first_comment",
+        "required": false,
+        "status": "n/a",
+        "title": "First / pinned comment text",
+        "detail": "No pinned comment file in package",
+        "studioUrlHint": "https://studio.youtube.com/video/qW2OsD4mujc/comments"
+      },
+      {
+        "id": "pin_comment",
+        "required": false,
+        "status": "n/a",
+        "title": "Pin the comment",
+        "detail": "Studio only — no official Data API pin endpoint",
+        "studioUrlHint": "https://studio.youtube.com/video/qW2OsD4mujc/comments"
+      },
+      {
+        "id": "related_watch_next",
+        "required": true,
+        "status": "pending_studio",
+        "title": "Related video (full film)",
+        "detail": "Desktop Studio: set Related video to AL_-qlWko_g (its own full film). No new Short pins.",
+        "studioUrlHint": "https://studio.youtube.com/video/qW2OsD4mujc/edit"
+      },
+      {
+        "id": "end_screens_cards",
+        "required": false,
+        "status": "n/a",
+        "title": "End screen + cards",
+        "detail": "Studio only — subscribe + best next video",
+        "studioUrlHint": "https://studio.youtube.com/video/qW2OsD4mujc/edit"
+      },
+      {
+        "id": "playlist",
+        "required": false,
+        "status": "n/a",
+        "title": "Add to playlist",
+        "detail": "No playlistId in manifest"
+      }
+    ],
+    "summary": "API upload done (qW2OsD4mujc). 1 required Studio finish step(s) remain."
+  }
+}
