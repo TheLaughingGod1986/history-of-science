@@ -1,44 +1,44 @@
 {
   "kind": "youtube#videoListResponse",
-  "etag": "hiNHXVfc8YRM-wVrtuGdvSfa0bc",
+  "etag": "Wm9S-pRTSiArewboGRDLKK7ovBQ",
   "items": [
     {
       "kind": "youtube#video",
-      "etag": "f0vW1l7BE4nZg1RSbOGznZ6r5Rw",
+      "etag": "lGdWoxjg1R0B3Eo2mBjJksNQf4Y",
       "id": "4WUs0beKn0A",
       "snippet": {
         "publishedAt": "2026-10-24T18:02:19Z",
         "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
         "title": "Why Is It Called a Vaccine?",
-        "description": "Why Vaccines Are Named After a Cow\nhttps://www.youtube.com/@HistoryOfScienceYT\n\nTwenty-two years before Edward Jenner's 1798 book, Benjamin Jesty tried cowpox in 1774. Jenner called the disease variolae vaccinae (\"smallpox of the cow\"), and from vacca, the Latin word for cow, came the name vaccination.\n\nPictures: AI-generated 3D scenes; voice: AI narration.",
+        "description": "Why Vaccines Are Named After a Cow\nhttps://www.youtube.com/watch?v=ETynHpIYLeY\n\nTwenty-two years before Edward Jenner's 1798 book, Benjamin Jesty tried cowpox in 1774. Jenner called the disease variolae vaccinae (\"smallpox of the cow\"), and from vacca, the Latin word for cow, came the name vaccination.\n\nPictures: AI-generated 3D scenes; voice: AI narration.",
         "thumbnails": {
           "default": {
-            "url": "https://i9.ytimg.com/vi/4WUs0beKn0A/default.jpg?sqp=CKDk89YG&rs=AOn4CLCfarol4m3L9Edyrd7bvam3dwU0Jg",
+            "url": "https://i9.ytimg.com/vi/4WUs0beKn0A/default.jpg?sqp=CJS4g9cG&rs=AOn4CLCWcqCoHeO0jgl_zCT1tiXb8DYR7Q",
             "width": 120,
             "height": 90
           },
           "medium": {
-            "url": "https://i9.ytimg.com/vi/4WUs0beKn0A/mqdefault.jpg?sqp=CKDk89YG&rs=AOn4CLBYt0dr3Y-pSrs0wYfdVtMxY5rh1A",
+            "url": "https://i9.ytimg.com/vi/4WUs0beKn0A/mqdefault.jpg?sqp=CJS4g9cG&rs=AOn4CLASPqLvzSObxivMduLfBrPIR7Px_w",
             "width": 320,
             "height": 180
           },
           "high": {
-            "url": "https://i9.ytimg.com/vi/4WUs0beKn0A/hqdefault.jpg?sqp=CKDk89YG&rs=AOn4CLAmW4pkofvk0IqHZumUkoaAMoVz3w",
+            "url": "https://i9.ytimg.com/vi/4WUs0beKn0A/hqdefault.jpg?sqp=CJS4g9cG&rs=AOn4CLA67jl6gamAfUQm5zw29QIX8tD_Eg",
             "width": 480,
             "height": 360
           },
           "standard": {
-            "url": "https://i9.ytimg.com/vi/4WUs0beKn0A/sddefault.jpg?sqp=CKDk89YG&rs=AOn4CLDz1zyAd7KkM1O0AXpiEZai8TJxbA",
+            "url": "https://i9.ytimg.com/vi/4WUs0beKn0A/sddefault.jpg?sqp=CJS4g9cG&rs=AOn4CLCENOITY4YclC8CCbLck2MXFY4w8w",
             "width": 640,
             "height": 480
           },
           "maxres": {
-            "url": "https://i9.ytimg.com/vi/4WUs0beKn0A/maxresdefault.jpg?sqp=CKDk89YG&rs=AOn4CLAvRwKiFGf-F6CaIXvTCPDogAZrNA",
+            "url": "https://i9.ytimg.com/vi/4WUs0beKn0A/maxresdefault.jpg?sqp=CJS4g9cG&rs=AOn4CLAHvuKK47JnLZOZiuykvrHsP6hgNw",
             "width": 1280,
             "height": 720
           },
           "qhd": {
-            "url": "https://i9.ytimg.com/vi/4WUs0beKn0A/qhddefault.jpg?sqp=CKDk89YG&rs=AOn4CLAaLsvxV2PPvvfJ-dPf1RBT5I21VA",
+            "url": "https://i9.ytimg.com/vi/4WUs0beKn0A/qhddefault.jpg?sqp=CJS4g9cG&rs=AOn4CLDOyV7JR2bUQk5hTYfuDYhwCLmJrg",
             "width": 2560,
             "height": 1440
           }
@@ -57,7 +57,7 @@
         "defaultLanguage": "en-GB",
         "localized": {
           "title": "Why Is It Called a Vaccine?",
-          "description": "Why Vaccines Are Named After a Cow\nhttps://www.youtube.com/@HistoryOfScienceYT\n\nTwenty-two years before Edward Jenner's 1798 book, Benjamin Jesty tried cowpox in 1774. Jenner called the disease variolae vaccinae (\"smallpox of the cow\"), and from vacca, the Latin word for cow, came the name vaccination.\n\nPictures: AI-generated 3D scenes; voice: AI narration."
+          "description": "Why Vaccines Are Named After a Cow\nhttps://www.youtube.com/watch?v=ETynHpIYLeY\n\nTwenty-two years before Edward Jenner's 1798 book, Benjamin Jesty tried cowpox in 1774. Jenner called the disease variolae vaccinae (\"smallpox of the cow\"), and from vacca, the Latin word for cow, came the name vaccination.\n\nPictures: AI-generated 3D scenes; voice: AI narration."
         },
         "defaultAudioLanguage": "en-GB"
       },

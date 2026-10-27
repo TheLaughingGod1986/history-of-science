@@ -11,7 +11,7 @@
 | Picture | **All 73/73 Flow rows minted (J0352 KEEP, 21 Oct 2026; HOS PR #351 merged):** P1 17/17 (530 cr) · P2 21/21 (750 cr) · P3 12/12 (390 cr) · P4 11/11 (380 cr) · P5 12/12 (840 cr) = **2,890 cr** vs 7,550 cap. Face lock `P2:08_jenner_window` KEEP applied to all later readable Jenner faces. 3 £0 code graphics (`7808f751`), 2 archive + 18 reuse (£0). |
 | Edit | **Full join v01 (`hos_007_full_join_v01.mp4`, 505.15 s / 12,123 frames, 97 cuts, sha256 `7cfd6a59`) assembled (J0827, 22 Oct 2026, £0)** across Parts 01–05 (Chief PASS J0820) on locked VO with house Didot teaching cards and both £0 repeat-shot fixes (`P1:09c_case_again` 1.88× lancet crop; `P5:06c/06d` split into strictly unused `04_health_workers` back half `3.833–7.958 s` + `06_assembly_1980` tail `5.083–8.000 s` 1.38× front-row push-in). Parts: P1 `61a5c039` (100.83 s, 20 cuts) · P2 `6ab2fb1f` (129.62 s, 22 cuts) · P3 `62a14a08` (78.75 s, 15 cuts) · P4 `e6a005cd` (92.75 s, 20 cuts) · P5 `14206aeb` (103.17 s, 20 cuts). Full join PASS `polish_gate.py` (`0 of 97 rows failed, 5 to look at`) and `picture_qa.py` (`0 of 97 cuts fail, 5 to look at`), 0 freeze events (`>= 0.8 s`). UAT proxy (`5ea31960`) in `~/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/007_full_join_v01/`. Parked for Chief review (`REVIEW_v01.md`). |
 | Air | **Thu 12 Nov 2026 18:00 UK = 18:00 UTC** (`2026-11-12T18:00:00Z`, GMT); uploaded Private as **`ETynHpIYLeY`** (`J0946`, `master_v04`, sha256 `c7f62adb`); `madeForKids=false`; `en-GB` captions serving |
-| Shorts | `s04_smallpox_test_v01` uploaded Private `-I_GHK-GcFs` for Fri 13 Nov 2026 11:30 UK (`2026-11-13T11:30:00Z`, J0873); `s05_vacca_jesty_v02` (`24.167 s`, sha256 `89a9a1668d74`) uploaded Private `4WUs0beKn0A` for Tue 17 Nov 2026 11:30 UK (`2026-11-17T11:30:00Z`, J0906); both registered for HOS Buffer mirror (`long=ETynHpIYLeY`, `J0875`); Studio Related → `ETynHpIYLeY` once that long is public on Thu 12 Nov 18:00Z (`J0875`) |
+| Shorts | `s04_smallpox_test_v01` uploaded Private `-I_GHK-GcFs` for Fri 13 Nov 2026 11:30 UK (`2026-11-13T11:30:00Z`, J0873); `s05_vacca_jesty_v02` (`24.167 s`, sha256 `89a9a1668d74`) uploaded Private `4WUs0beKn0A` for Tue 17 Nov 2026 11:30 UK (`2026-11-17T11:30:00Z`, J0906); both registered for HOS Buffer mirror (`long=ETynHpIYLeY`, `J0875`); description line 2 watch URL updated to `https://www.youtube.com/watch?v=ETynHpIYLeY` and read back on both (`J0997`, 27 Oct 2026); Studio Related → `ETynHpIYLeY` once that long is public on Thu 12 Nov 18:00Z (`J0875`) |
 | Backup | Neighbour gate PASSED — Lightning backup not needed |
 
 ## STOP
@@ -151,3 +151,27 @@ Desktop Studio over CDP `:9460`, channel History of Science (`UCXp7HkBIl1LgaznXu
 - **Cards:** not added. The package does not call for one.
 - **Pinned comment:** not posted. `update-pinned-comment.ts --create` returned 403 forbidden. The Studio comment box says this account doesn't have permission to create comments. No subscriber count, no `/go/` link. Follow-up `J0960` is blocked until the video is public; reopen Thu 12 Nov 2026 18:05 London.
 - **Buffer:** deferred. Evidence: `11_Upload-Package/STUDIO_READBACK_J0959.json`.
+
+## 27 Oct 2026 — J0997: Scheduled Shorts `-I_GHK-GcFs` & `4WUs0beKn0A` description line 2 watch URL updated to `ETynHpIYLeY` (Gemini covering)
+
+- **Authority:** Acting-Chief Codex ruling on `J0981` (HOS `#180` comment `6428572814`) and queue job `J0997`. `£0` spend.
+- **Check on `J0966`:** Confirmed `J0966` remains blocked/unapproved (`local v02/v03/v05` recuts only; no swap approved). No swap, upload, retitle, or approval of `J0966` was performed.
+- **Description line 2 update (`API_READBACK_J0997.json`, `API_READBACK_-I_GHK-GcFs.json`, `API_READBACK_4WUs0beKn0A.json`):**
+  - Confirmed channel `UCXp7HkBIl1LgaznXuZHJyRg` (`@historyofscienceyt`, *History of Science*) via `channels.list(mine=true)`.
+  - Replaced only `https://www.youtube.com/@HistoryOfScienceYT` in description line 2 with `https://www.youtube.com/watch?v=ETynHpIYLeY` on both `-I_GHK-GcFs` (*What Was the Edward Jenner Experiment?*) and `4WUs0beKn0A` (*Why Is It Called a Vaccine?*), and updated `10_Shorts/SHORTS_UPLOAD_INDEX.json` and both `10_Shorts/11_Upload-Package/*/PACKAGE_MANIFEST.json` to match.
+  - Exact readback (`videos.list?part=snippet,status,contentDetails`) confirmed:
+    1. **`-I_GHK-GcFs`:** `channelId=UCXp7HkBIl1LgaznXuZHJyRg`, title `What Was the Edward Jenner Experiment?` (unchanged), description `Why Vaccines Are Named After a Cow\nhttps://www.youtube.com/watch?v=ETynHpIYLeY\n\nOn 1 July 1796, Edward Jenner tested whether cowpox had protected James from smallpox. No disease followed.`, 6 tags unchanged, `privacyStatus=private`, `publishAt=2026-11-13T11:30:00Z` (unchanged), `madeForKids=false`, `selfDeclaredMadeForKids=false`, `defaultLanguage=en-GB`, `defaultAudioLanguage=en-GB`, `categoryId=27`.
+    2. **`4WUs0beKn0A`:** `channelId=UCXp7HkBIl1LgaznXuZHJyRg`, title `Why Is It Called a Vaccine?` (unchanged), description `Why Vaccines Are Named After a Cow\nhttps://www.youtube.com/watch?v=ETynHpIYLeY\n\nTwenty-two years before Edward Jenner's 1798 book, Benjamin Jesty tried cowpox in 1774. Jenner called the disease variolae vaccinae ("smallpox of the cow"), and from vacca, the Latin word for cow, came the name vaccination.\n\nPictures: AI-generated 3D scenes; voice: AI narration.`, 6 tags unchanged, `privacyStatus=private`, `publishAt=2026-11-17T11:30:00Z` (unchanged), `madeForKids=false`, `selfDeclaredMadeForKids=false`, `defaultLanguage=en-GB`, `defaultAudioLanguage=en-GB`, `categoryId=27`.
+- **Related video:** Remains date-gated in `J0875` until `ETynHpIYLeY` goes public on Thu 12 Nov 2026 at 18:00Z (`reopen 12 Nov 18:05Z`).
+- **Gates:** `npm run lint:package -- --film 007` PASS and `00_Brand/Channel-Setup/tools/check_all.sh 02_Video-Projects/007_The-First-Vaccine` `ALL CHECKS PASS`. In `npm run channel:audit`, `ETynHpIYLeY`, `-I_GHK-GcFs`, and `4WUs0beKn0A` all print `PASS`; the overall command exits 1 only on the pre-existing `uU12JA5rMWg` pagination duplicate (`FAIL [title.duplicate-live] same title as uU12JA5rMWg`), which is separately queued in `J0998` from `J0981`.
+
+```text
+PASS  02_Video-Projects/007_The-First-Vaccine/11_Upload-Package/PACKAGE_MANIFEST.json
+PASS  02_Video-Projects/007_The-First-Vaccine/10_Shorts/SHORTS_RELEASE.json
+   warn  [related] What Was the Edward Jenner Experiment?: Related video not set yet (set it to the 007 long once that long is public)
+   warn  [related] Why Is It Called a Vaccine?: Related video not set yet (set it to the 007 long once that long is public)
+PASS  long  ETynHpIYLeY  private 2026-11-12 18:00 UK  Why Vaccines Are Named After a Cow
+PASS  Short 4WUs0beKn0A  private 2026-11-17 11:30 UK  Why Is It Called a Vaccine?
+PASS  Short -I_GHK-GcFs  private 2026-11-13 11:30 UK  What Was the Edward Jenner Experiment?
+ALL CHECKS PASS
+```
