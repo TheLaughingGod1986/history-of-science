@@ -1,0 +1,2 @@
+WARN   0:08 row s04_which 06_mild_fever_t1.mp4: low detail: edge density 0.0161 < film p5 0.0237
+picture QA PASS: 0 of 10 cuts fail, 1 to look at -> 02_Video-Projects/007_The-First-Vaccine/10_Shorts/qa_s04_smallpox_test_v04/picture_qa_s04_smallpox_test_v04/PICTURE_QA.md, 02_Video-Projects/007_The-First-Vaccine/10_Shorts/qa_s04_smallpox_test_v04/picture_qa_s04_smallpox_test_v04/picture_qa_review.jpg

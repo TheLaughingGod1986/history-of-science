@@ -1,0 +1,25 @@
+{
+  "job": "J0966",
+  "fix_ref": "HOS desk #180 comment 6454289043 (after J1005 PR #367)",
+  "date": "2026-10-27",
+  "reviewer": "gemini (gemini-argon)",
+  "route": "native multimodal audio (192kbps 48kHz mp3 extracted from master) + video (_PHONE.mp4) ingestion via read_file + 0.000-0.060s PCM peak check",
+  "spend_gbp": 0.0,
+  "short": "hos_004_s05_dalton_v04.mp4",
+  "youtube_id": "-sa2t7dAtCk",
+  "duration_s": 24.533,
+  "master_sha256": "8ce07a60569707f689c7d90e06826493bf7a40e5c3c3a4a05216d6a48dbb082c",
+  "phone_sha256": "ef760260e1da9594b8abd71e4ffcbad1600a25276de1d227bd825c4f5533adc7",
+  "verdict": "FULL_PASS",
+  "opening_bleed_fix_verified": {
+    "filter": "volume=enable='lt(t,0.060)':volume=0,afade=t=in:st=0.060:d=0.020",
+    "vo_stem_0_to_0p060s_peak_dbfs": -120.0,
+    "vo_onset_s": 0.08,
+    "audition_result": "PASS (residual 'z-/t-' alveolar consonant bleed from dropped word 'says' is 100% eliminated; 'Every element is made of its own kind of atom' attacks cleanly at 0.08s)"
+  },
+  "clause_skip_splice_19p22_19p79s": "PASS ('...hydrogen and oxygen, [skip: however you make it.] That only makes sense...' sounds completely natural)",
+  "defects": [],
+  "body_intelligibility": "PASS (64 words crisp, 0 repeated/stumbled/clipped words, 160 wpm, ATEMPO 1.03 <= 1.06 cap)",
+  "bed_sfx_fit": "PASS (-14.3 LUFS, -1.8 dBFS TP, 66 BPM C-major clavichord/plucked bed + soft whoosh + 2 ink ticks)",
+  "picture_and_loop": "PASS (single JOHN DALTON card 2.20-5.60s; identical 2fps sheet 085563081830; clean visual and audio loop on 01_dalton_schoolroom_v01.mp4)"
+}

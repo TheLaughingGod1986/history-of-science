@@ -1,0 +1,27 @@
+{
+  "job": "J0966",
+  "fix_ref": "HOS desk #180 comment 6454289043 (after J1005 PR #367)",
+  "date": "2026-10-27",
+  "reviewer": "gemini (gemini-argon)",
+  "route": "native multimodal audio (192kbps 48kHz mp3 extracted from master) + video (_PHONE.mp4) ingestion via read_file + 0.000-0.075s PCM peak check",
+  "spend_gbp": 0.0,
+  "short": "hos_007_s04_smallpox_test_v04.mp4",
+  "youtube_id": "-I_GHK-GcFs",
+  "duration_s": 22.4,
+  "master_sha256": "3ef3fa77375083622e8f8d6dee99f009cf60cbc27fc01f9d21857ba6b5b0c4e7",
+  "phone_sha256": "17c916d2d586aaddade0e57422a18902d8bd33ac9c7a235357767734dd61e0fc",
+  "verdict": "FULL_PASS",
+  "opening_bleed_fix_verified": {
+    "filter": "volume=enable='lt(t,0.075)':volume=0,afade=t=in:st=0.075:d=0.020",
+    "vo_stem_0_to_0p075s_peak_dbfs": -120.0,
+    "vo_onset_s": 0.1,
+    "audition_result": "PASS (residual 'a-/...y' phoneme bleed from dropped word 'July,' is 100% eliminated; 'Jenner did the test.' attacks cleanly at 0.10s)"
+  },
+  "pronunciation_rulings": {
+    "variolation (2.75-3.59s)": "PASS (/ˌvɛər.i.əˈleɪ.ʃən/, clear and natural)"
+  },
+  "defects": [],
+  "body_intelligibility": "PASS (57 words crisp, 0 repeated/stumbled/clipped words, 155 wpm, ATEMPO 1.05 <= 1.06 cap)",
+  "bed_sfx_fit": "PASS (-14.3 LUFS, -1.6 dBFS TP, 64 BPM D-major pastoral plucked bed + soft whoosh + 2 ink ticks)",
+  "picture_and_loop": "PASS (single EDWARD JENNER card 2.05-5.45s; identical 2fps sheet 7ec9496e2fb5; clean visual and audio loop on 03b_lancet_case_t1.mp4)"
+}

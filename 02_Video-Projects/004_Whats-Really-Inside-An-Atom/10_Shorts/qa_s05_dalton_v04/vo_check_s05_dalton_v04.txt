@@ -1,0 +1,2 @@
+PASS  hos_004_s05_dalton_vo_v04.wav  0:23.96  mean -22.0 dB  peak -3.9 dB  160 wpm
+   first minute: title_question 11.32s
