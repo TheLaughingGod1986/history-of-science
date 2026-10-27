@@ -1,0 +1,23 @@
+{
+  "job": "J1005",
+  "parent_job": "J0966",
+  "date": "2026-10-27",
+  "reviewer": "gemini (gemini-argon)",
+  "route": "native multimodal audio (192kbps 48kHz mp3 extracted from master) + video (_PHONE.mp4) ingestion via read_file + 15ms PCM RMS envelope check",
+  "spend_gbp": 0.0,
+  "short": "hos_005_s03_never_saw_v04.mp4",
+  "youtube_id": "x_3L_IdYgEc",
+  "duration_s": 25.259,
+  "master_sha256": "e1f862ba737acc4276dd676fc93181b41e729fce029fed57318bf43add3e9f63",
+  "phone_sha256": "1cd37e5fbf2b6b3cf4f04c0e3d25680858ce4414ea8598889f09c1c5f7d3b2d0",
+  "verdict": "PASS",
+  "pronunciation_rulings": {
+    "Marcello Malpighi (12.316-13.459s)": "PASS (/mɑːrˈtʃɛloʊ mælˈpiːɡi/, clear and accurate)",
+    "Capillaries (20.379-21.459s)": "PASS (/kəˈpɪləriz/, standard British English stress on second syllable)",
+    "pace_143_wpm_warning": "RESOLVED PASS (deliberate, suspenseful narration at 25.259s; not sluggish)"
+  },
+  "defects": [],
+  "body_intelligibility": "PASS (0.000-24.259s: 57 words crisp, clean open on 'Harvey never saw the last link.', 0 repeated/stumbled/clipped words)",
+  "bed_sfx_fit": "PASS (-14.0 LUFS, -1.8 dBFS TP, 62 BPM E-minor/G-major plucked bed + soft whoosh + 2 ink ticks; extra Harvey card tick at 2.20s removed)",
+  "picture_and_loop": "PASS (single MARCELLO MALPIGHI card 14.15-17.35s; seamless visual and audio loop on 06_eyepiece_mesh_t1.mp4)"
+}
