@@ -1,44 +1,44 @@
 {
   "kind": "youtube#videoListResponse",
-  "etag": "DxuZQI6BzsS2Jh8A9wgXhY6b56M",
+  "etag": "sVY4v4cPzu9SjPo31nLhZFy9qVc",
   "items": [
     {
       "kind": "youtube#video",
-      "etag": "5XbCUUVDv91W6yA7FYG7OXT8s8s",
+      "etag": "6F0AELKI4GfH3syC9741ewKIifM",
       "id": "-I_GHK-GcFs",
       "snippet": {
         "publishedAt": "2026-10-23T05:09:54Z",
         "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
         "title": "What Was the Edward Jenner Experiment?",
-        "description": "Why Vaccines Are Named After a Cow\nhttps://www.youtube.com/@HistoryOfScienceYT\n\nOn 1 July 1796, Edward Jenner tested whether cowpox had protected James from smallpox. No disease followed.",
+        "description": "Why Vaccines Are Named After a Cow\nhttps://www.youtube.com/watch?v=ETynHpIYLeY\n\nOn 1 July 1796, Edward Jenner tested whether cowpox had protected James from smallpox. No disease followed.",
         "thumbnails": {
           "default": {
-            "url": "https://i9.ytimg.com/vi/-I_GHK-GcFs/default.jpg?sqp=CKjY69YG&rs=AOn4CLA3fyc8vtC-FL1lVrUH4QocH8Zp1Q",
+            "url": "https://i9.ytimg.com/vi/-I_GHK-GcFs/default.jpg?sqp=CJS4g9cG&rs=AOn4CLDBhY0OIkRxizd6jUZF_4L3HbTWdA",
             "width": 120,
             "height": 90
           },
           "medium": {
-            "url": "https://i9.ytimg.com/vi/-I_GHK-GcFs/mqdefault.jpg?sqp=CKjY69YG&rs=AOn4CLC8tmVM31IiyE91FXCOYBzDBciP-g",
+            "url": "https://i9.ytimg.com/vi/-I_GHK-GcFs/mqdefault.jpg?sqp=CJS4g9cG&rs=AOn4CLA6ptOt71l-JbCGlQEE-PqplQse2w",
             "width": 320,
             "height": 180
           },
           "high": {
-            "url": "https://i9.ytimg.com/vi/-I_GHK-GcFs/hqdefault.jpg?sqp=CKjY69YG&rs=AOn4CLDLL3Ux2iX7MTXj_CBj0eUkUbhNAA",
+            "url": "https://i9.ytimg.com/vi/-I_GHK-GcFs/hqdefault.jpg?sqp=CJS4g9cG&rs=AOn4CLBiE24vHuDbDhVoVUvPdKmoDwEsow",
             "width": 480,
             "height": 360
           },
           "standard": {
-            "url": "https://i9.ytimg.com/vi/-I_GHK-GcFs/sddefault.jpg?sqp=CKjY69YG&rs=AOn4CLDMtN6Ch9U6-OVKXyB6yE416rPawA",
+            "url": "https://i9.ytimg.com/vi/-I_GHK-GcFs/sddefault.jpg?sqp=CJS4g9cG&rs=AOn4CLDuzYBJldANgkxmutkvU4KoZjW1jA",
             "width": 640,
             "height": 480
           },
           "maxres": {
-            "url": "https://i9.ytimg.com/vi/-I_GHK-GcFs/maxresdefault.jpg?sqp=CKjY69YG&rs=AOn4CLBv4uOkvsOfZhdIcExFL5MCEEzqOg",
+            "url": "https://i9.ytimg.com/vi/-I_GHK-GcFs/maxresdefault.jpg?sqp=CJS4g9cG&rs=AOn4CLDth9-H6d6Nl9yRpf_972L_-J0c9w",
             "width": 1280,
             "height": 720
           },
           "qhd": {
-            "url": "https://i9.ytimg.com/vi/-I_GHK-GcFs/qhddefault.jpg?sqp=CKjY69YG&rs=AOn4CLDg5jdfQIWJisLVnOXr9f-z61DZ4g",
+            "url": "https://i9.ytimg.com/vi/-I_GHK-GcFs/qhddefault.jpg?sqp=CJS4g9cG&rs=AOn4CLBbosIbsTBzFdDGTtkXlzEwyz4Kfg",
             "width": 2560,
             "height": 1440
           }
@@ -57,7 +57,7 @@
         "defaultLanguage": "en-GB",
         "localized": {
           "title": "What Was the Edward Jenner Experiment?",
-          "description": "Why Vaccines Are Named After a Cow\nhttps://www.youtube.com/@HistoryOfScienceYT\n\nOn 1 July 1796, Edward Jenner tested whether cowpox had protected James from smallpox. No disease followed."
+          "description": "Why Vaccines Are Named After a Cow\nhttps://www.youtube.com/watch?v=ETynHpIYLeY\n\nOn 1 July 1796, Edward Jenner tested whether cowpox had protected James from smallpox. No disease followed."
         },
         "defaultAudioLanguage": "en-GB"
       },

@@ -1,0 +1,87 @@
+{
+  "job": "J0997",
+  "executedAt": "2026-10-27T17:15:23.647Z",
+  "verifiedReadbackAt": "2026-10-27T17:15:49.499Z",
+  "channel": {
+    "id": "UCXp7HkBIl1LgaznXuZHJyRg",
+    "customUrl": "@historyofscienceyt",
+    "title": "History of Science"
+  },
+  "j0966Status": "blocked (unapproved local v02/v03/v05 recuts; no swap approved)",
+  "results": [
+    {
+      "id": "-I_GHK-GcFs",
+      "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+      "titleBefore": "What Was the Edward Jenner Experiment?",
+      "titleAfter": "What Was the Edward Jenner Experiment?",
+      "titleUnchanged": true,
+      "descriptionBefore": "Why Vaccines Are Named After a Cow\nhttps://www.youtube.com/@HistoryOfScienceYT\n\nOn 1 July 1796, Edward Jenner tested whether cowpox had protected James from smallpox. No disease followed.",
+      "descriptionAfter": "Why Vaccines Are Named After a Cow\nhttps://www.youtube.com/watch?v=ETynHpIYLeY\n\nOn 1 July 1796, Edward Jenner tested whether cowpox had protected James from smallpox. No disease followed.",
+      "line2ReplacedCleanly": true,
+      "tagsBefore": [
+        "cowpox",
+        "edward jenner experiment",
+        "edward jenner smallpox vaccine",
+        "first vaccine",
+        "history of science",
+        "what was the edward jenner experiment"
+      ],
+      "tagsAfter": [
+        "cowpox",
+        "edward jenner experiment",
+        "edward jenner smallpox vaccine",
+        "first vaccine",
+        "history of science",
+        "what was the edward jenner experiment"
+      ],
+      "tagsUnchanged": true,
+      "privacyBefore": "private",
+      "privacyAfter": "private",
+      "publishAtBefore": "2026-11-13T11:30:00Z",
+      "publishAtAfter": "2026-11-13T11:30:00Z",
+      "scheduleUnchanged": true,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false,
+      "defaultLanguage": "en-GB",
+      "defaultAudioLanguage": "en-GB",
+      "categoryId": "27"
+    },
+    {
+      "id": "4WUs0beKn0A",
+      "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+      "titleBefore": "Why Is It Called a Vaccine?",
+      "titleAfter": "Why Is It Called a Vaccine?",
+      "titleUnchanged": true,
+      "descriptionBefore": "Why Vaccines Are Named After a Cow\nhttps://www.youtube.com/@HistoryOfScienceYT\n\nTwenty-two years before Edward Jenner's 1798 book, Benjamin Jesty tried cowpox in 1774. Jenner called the disease variolae vaccinae (\"smallpox of the cow\"), and from vacca, the Latin word for cow, came the name vaccination.\n\nPictures: AI-generated 3D scenes; voice: AI narration.",
+      "descriptionAfter": "Why Vaccines Are Named After a Cow\nhttps://www.youtube.com/watch?v=ETynHpIYLeY\n\nTwenty-two years before Edward Jenner's 1798 book, Benjamin Jesty tried cowpox in 1774. Jenner called the disease variolae vaccinae (\"smallpox of the cow\"), and from vacca, the Latin word for cow, came the name vaccination.\n\nPictures: AI-generated 3D scenes; voice: AI narration.",
+      "line2ReplacedCleanly": true,
+      "tagsBefore": [
+        "benjamin jesty",
+        "edward jenner cowpox vaccine",
+        "first vaccine",
+        "history of science",
+        "vaccine latin word",
+        "why is it called a vaccine"
+      ],
+      "tagsAfter": [
+        "benjamin jesty",
+        "edward jenner cowpox vaccine",
+        "first vaccine",
+        "history of science",
+        "vaccine latin word",
+        "why is it called a vaccine"
+      ],
+      "tagsUnchanged": true,
+      "privacyBefore": "private",
+      "privacyAfter": "private",
+      "publishAtBefore": "2026-11-17T11:30:00Z",
+      "publishAtAfter": "2026-11-17T11:30:00Z",
+      "scheduleUnchanged": true,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false,
+      "defaultLanguage": "en-GB",
+      "defaultAudioLanguage": "en-GB",
+      "categoryId": "27"
+    }
+  ]
+}
