@@ -1,0 +1,27 @@
+{
+  "job": "J1005",
+  "parent_job": "J0966",
+  "date": "2026-10-27",
+  "reviewer": "gemini (gemini-argon)",
+  "route": "native multimodal audio (192kbps 48kHz mp3 extracted from master) + video (_PHONE.mp4) ingestion via read_file + 15ms PCM RMS envelope check",
+  "spend_gbp": 0.0,
+  "short": "hos_004_s05_dalton_v03.mp4",
+  "youtube_id": "-sa2t7dAtCk",
+  "duration_s": 24.533,
+  "master_sha256": "f93745e955586097293b7e37cad73c025ec99d79b0ee3b8e34bd955df6380edc",
+  "phone_sha256": "c26430c5753aa9bd5bd4b93a1065407e0ff8d4aee2bb07590866c200064bef55",
+  "verdict": "OPENING_TRIM_DEFECT",
+  "pronunciation_rulings": {
+    "Hydrogen / Oxygen / Dalton": "PASS (clear and natural throughout, 160 wpm)"
+  },
+  "defects": [
+    {
+      "timestamp_s": "0.000-0.060",
+      "description": "Residual alveolar sibilant/consonant bleed ('z-/t- Every element...') at -25.7 dBFS across 0.000-0.055s from the coarticulated final /z/ of dropped word[16] 'says' ('His atomic theory says every element...', atom_script_master_v02.md line 85) before the -35.1 dBFS trough at 0.060s and the /ɛ/ vowel onset of 'Every' at 0.075s.",
+      "gbp0_repair": "Mute 0.000-0.060s on hos_004_s05_dalton_vo_v03.wav with volume=enable='lt(t,0.060)':volume=0,afade=t=in:st=0.060:d=0.020 (or set TAKE[0] start s0 = s + 0.062 in _build_short_s05_dalton_v03.py line 343 and add 0.060s to TAIL_S)."
+    }
+  ],
+  "body_intelligibility": "PASS (0.060-23.892s: 64 words crisp, natural clause skip at 19.224-19.791s before 'That only makes sense...', 0 repeated/stumbled words)",
+  "bed_sfx_fit": "PASS (-14.2 LUFS, -1.7 dBFS TP, 66 BPM C-major/A-minor clavichord bed + soft whoosh + 2 ink ticks)",
+  "picture_and_loop": "Visual loop PASS (01_dalton_schoolroom_v01.mp4, letter-free Part 01 balance and brass atom plates); audio loop back to 0.000s hits the 0.000-0.060s pre-word bleed until trimmed."
+}

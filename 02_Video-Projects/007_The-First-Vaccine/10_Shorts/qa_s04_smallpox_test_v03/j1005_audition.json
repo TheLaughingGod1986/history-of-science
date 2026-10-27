@@ -1,0 +1,27 @@
+{
+  "job": "J1005",
+  "parent_job": "J0966",
+  "date": "2026-10-27",
+  "reviewer": "gemini (gemini-argon)",
+  "route": "native multimodal audio (192kbps 48kHz mp3 extracted from master) + video (_PHONE.mp4) ingestion via read_file + 15ms PCM RMS envelope check",
+  "spend_gbp": 0.0,
+  "short": "hos_007_s04_smallpox_test_v03.mp4",
+  "youtube_id": "-I_GHK-GcFs",
+  "duration_s": 22.4,
+  "master_sha256": "858495ea7dcb28788f1277367dbd4d1d30e4c95ca95ffd230f1c1a82a0513ea5",
+  "phone_sha256": "8b31dc1a6a758494e0484bf197bb6773ccd87027e0d6e0c1c2fbb97a591be907",
+  "verdict": "OPENING_TRIM_DEFECT",
+  "pronunciation_rulings": {
+    "variolation (2.754-3.592s)": "PASS (/ˌvɛər.i.əˈleɪ.ʃən/, clear and natural)"
+  },
+  "defects": [
+    {
+      "timestamp_s": "0.000-0.085",
+      "description": "Residual vowel/phoneme bleed ('a-/...y') from dropped preceding word 'July,' (word[4], 0.720-1.040s in part04_the_test_v01b.mp3) heard at -29.9 dBFS across 0.000-0.055s before the -47.8 dBFS inter-word trough at 0.060-0.085s and the /dʒ/ onset of 'Jenner' at 0.090s.",
+      "gbp0_repair": "Mute 0.000-0.075s on hos_007_s04_smallpox_test_vo_v03.wav with volume=enable='lt(t,0.075)':volume=0,afade=t=in:st=0.075:d=0.020 (or set TAKE[0] start s0 = s + 0.060 in _build_short_s04_smallpox_test_v03.py line 366 and add 0.075s to TAIL_S)."
+    }
+  ],
+  "body_intelligibility": "PASS (0.090-21.979s: 57 words crisp, 0 repeated/stumbled words, 155 wpm)",
+  "bed_sfx_fit": "PASS (-14.2 LUFS, -1.6 dBFS TP, 64 BPM D-major plucked bed + soft whoosh + 2 ink ticks)",
+  "picture_and_loop": "Visual loop PASS (03b_lancet_case_t1.mp4); audio loop back to 0.000s hits the 0.000-0.075s pre-word bleed until trimmed."
+}
