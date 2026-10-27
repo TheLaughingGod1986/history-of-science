@@ -1,0 +1,197 @@
+{
+  "verdict": "PASS",
+  "video": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/_precheck/part01_rough_v01/hos_006_part01_rough_v01.mp4",
+  "rules": {
+    "kind_fail": "computer[- ]?(reconstruction|model|generated|simulation|graphic)|\\bsimulation\\b|\\bdiagram|\\bchart\\b|\\bgraph\\b|\\bschematic|\\bannotated\\b|\\blabell?ed\\b|\\bscreen ?shot|\\bwireframe|\\bcad\\b|\\binfographic",
+    "kind_warn": "\\bartist|\\billustration|\\bconcept\\b|\\brender|\\banimation\\b|\\bmap\\b|\\bmosaic\\b|\\bcomposite\\b",
+    "upscale_fail": 2.35,
+    "upscale_warn": 2.0,
+    "max_reuse": 2,
+    "max_stretches": 5,
+    "same_stretch": 10.0,
+    "pixels": "scripts/polish_gate.py"
+  },
+  "failed": [],
+  "warn": [
+    {
+      "cut": 10,
+      "row": "11_shoot_in_pot",
+      "source": "11_shoot_in_pot_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 53.58,
+      "at": "0:54",
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0275 < film p5 0.0305"
+      ],
+      "offset": 0.0
+    }
+  ],
+  "rows": [
+    {
+      "cut": 0,
+      "row": "01_willow_air",
+      "source": "01_willow_air_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 2.15,
+      "at": "0:02",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 1,
+      "row": "02_balance_trunk",
+      "source": "02_balance_trunk_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 5.83,
+      "at": "0:06",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 2,
+      "row": "03_pot_jar_leaf",
+      "source": "03_pot_jar_leaf_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 11.12,
+      "at": "0:11",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 3,
+      "row": "04_years_pass",
+      "source": "04_years_pass_t3.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 17.6,
+      "at": "0:18",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 4,
+      "row": "05_olive_grove",
+      "source": "05_olive_grove_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 22.44,
+      "at": "0:22",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 5,
+      "row": "06_aristotle",
+      "source": "06_aristotle_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 27.67,
+      "at": "0:28",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 6,
+      "row": "07_roots_mouths",
+      "source": "07_roots_mouths_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 33.15,
+      "at": "0:33",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 7,
+      "row": "08_wood_food_air",
+      "source": "08_wood_food_air_t3.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 37.62,
+      "at": "0:38",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 8,
+      "row": "09_vilvoorde",
+      "source": "09_vilvoorde_flowfast_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 42.25,
+      "at": "0:42",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 9,
+      "row": "10_van_helmont_sack",
+      "source": "10_van_helmont_sack_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 47.96,
+      "at": "0:48",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 10,
+      "row": "11_shoot_in_pot",
+      "source": "11_shoot_in_pot_t1.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 53.58,
+      "at": "0:54",
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0275 < film p5 0.0305"
+      ],
+      "offset": 0.0
+    },
+    {
+      "cut": 11,
+      "row": "12_garden_sky",
+      "source": "12_garden_sky_t2.mp4",
+      "title": "Veo 3.1 clip, Chief KEEP",
+      "t": 58.83,
+      "at": "0:59",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    }
+  ],
+  "polish": {
+    "edge_floor": 0.0305,
+    "low_detail_floor": {
+      "std": 13.44,
+      "edge": 0.0259,
+      "calibration": {
+        "video": "025_MarsRobot_full_rough_v02d.mp4",
+        "factor": 1.2,
+        "frames": [
+          {
+            "source": "PIA22223.jpg",
+            "t": 201.0,
+            "std": 12.1,
+            "edge": 0.0223
+          },
+          {
+            "source": "PIA22223.jpg",
+            "t": 216.3,
+            "std": 11.2,
+            "edge": 0.0216
+          },
+          {
+            "source": "PIA22929.jpg",
+            "t": 297.4,
+            "std": 26.54,
+            "edge": 0.5735
+          }
+        ]
+      }
+    }
+  }
+}

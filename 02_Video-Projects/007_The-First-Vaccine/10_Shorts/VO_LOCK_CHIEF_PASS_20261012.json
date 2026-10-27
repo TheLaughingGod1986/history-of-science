@@ -1,0 +1,28 @@
+{
+  "film": "007",
+  "stage": "shorts_vo",
+  "status": "pass",
+  "chief_comment": 6096257381,
+  "locked_at": "2026-10-12T22:30:00+01:00",
+  "note": "Chief KEEP both v02 takes (desk #180 6096257381); sha256 re-checked against the Mini files (J0208). Short A is unchanged.",
+  "takes": [
+    {
+      "short": "B",
+      "take": "v02",
+      "duration_s": 25.52,
+      "file": "10_Shorts/vo_v02/hos_007_short_B_v02.mp3",
+      "sha256": "f6d87c757cda1dd8de5254a4fac88c6fcf3fbba7e7d2ea189322f91396579625",
+      "bytes": 409388,
+      "vo_check": "PASS"
+    },
+    {
+      "short": "C",
+      "take": "v02",
+      "duration_s": 24.8,
+      "file": "10_Shorts/vo_v02/hos_007_short_C_v02.mp3",
+      "sha256": "8e0df68d5e82625ace5e1b41ee510649acf2101df8a30802e58ada5414c680e9",
+      "bytes": 397868,
+      "vo_check": "PASS"
+    }
+  ]
+}

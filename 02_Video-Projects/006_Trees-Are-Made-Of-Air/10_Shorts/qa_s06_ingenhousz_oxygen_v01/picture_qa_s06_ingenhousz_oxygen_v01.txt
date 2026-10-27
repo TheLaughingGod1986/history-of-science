@@ -1,0 +1,1 @@
+picture QA PASS: 0 of 8 cuts fail, 0 to look at -> 02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/qa_s06_ingenhousz_oxygen_v01/picture_qa_s06_ingenhousz_oxygen_v01/PICTURE_QA.md

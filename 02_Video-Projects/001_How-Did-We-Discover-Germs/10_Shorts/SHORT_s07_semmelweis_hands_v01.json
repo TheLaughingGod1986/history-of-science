@@ -1,0 +1,176 @@
+{
+  "id": "s07_semmelweis_hands",
+  "job": "J0472",
+  "test": "B (search-titled)",
+  "air_date_draft": "2026-12-08",
+  "file": "10_Shorts/hos_001_s07_semmelweis_hands_v01.mp4",
+  "sha256": "ec69d9145e95bd16cb33c24595d7c373569057f1c83382d8c8c38e83d2b39642",
+  "duration_s": 25.167,
+  "vo_source": "02_Voiceover/part03_childbirth_ward_v01.wav",
+  "vo_span_windows_s": [
+    [
+      4.2,
+      17.05
+    ],
+    [
+      17.78,
+      20.5
+    ],
+    [
+      23.72,
+      24.82
+    ],
+    [
+      26.05,
+      38.85
+    ]
+  ],
+  "route": "claim-first lift: If sickness rides on smell, the cure is perfume and ventilation. \u2026 Hand washing cut them. Colleagues mocked him anyway. (4.20\u201317.05 s, 17.78\u201320.50 s, 23.72\u201324.82 s, 26.05\u201338.85 s from Part 03)",
+  "vo_s": 24.737,
+  "words": 61,
+  "max_pause_s": 0.2,
+  "atempo": 1.07,
+  "bed": "hos001_s07_synth_pad_v01.wav (own synthesis, 0 credits)",
+  "bed_gain_db": -22.3,
+  "hook": "WASH HANDS",
+  "hook_layer": {
+    "font_size": 237,
+    "cap_px": 169,
+    "cap_pct": 8.8,
+    "lines": 2,
+    "block_pct": [
+      39.8,
+      60.2
+    ],
+    "widest_pct": 83.3
+  },
+  "who_card": {
+    "name": "IGNAZ SEMMELWEIS",
+    "line2": "Childbirth ward, 1840s",
+    "line1_px": 66,
+    "line1_pct_of_band": 10.9,
+    "band": [
+      656,
+      1264
+    ],
+    "in_s": 14.4,
+    "out_s": 18.0,
+    "fade_s": 0.35
+  },
+  "title_on_screen": "How Did We Discover Germs?",
+  "youtube_title_draft": "Who Discovered That Washing Hands Saves Lives?",
+  "plan": [
+    {
+      "t0": 0.0,
+      "t1": 1.831,
+      "plate": "04_Generated-Clips/part03/raw/v02_fast_probe/05_wash_works_v03.mp4",
+      "in_s": 0.6,
+      "crop_x": 480,
+      "lands_on": 0
+    },
+    {
+      "t0": 1.831,
+      "t1": 4.471,
+      "plate": "04_Generated-Clips/part03/raw/v02_fast_probe/02_perfume_windows_v02.mp4",
+      "in_s": 0.6,
+      "crop_x": 656,
+      "lands_on": "the"
+    },
+    {
+      "t0": 4.471,
+      "t1": 7.087,
+      "plate": "04_Generated-Clips/part03/raw/v02_fast_probe/03_bedside_hands_v04.mp4",
+      "in_s": 0.6,
+      "crop_x": 656,
+      "lands_on": "If"
+    },
+    {
+      "t0": 7.087,
+      "t1": 11.0,
+      "plate": "04_Generated-Clips/part03/raw/v02_fast_probe/08_prestige_hands_v01.mp4",
+      "in_s": 0.6,
+      "crop_x": 656,
+      "lands_on": "stopping"
+    },
+    {
+      "t0": 11.0,
+      "t1": 14.556,
+      "plate": "04_Generated-Clips/part03/raw/v02_fast_probe/10_flask_in_the_room_v03.mp4",
+      "in_s": 0.6,
+      "crop_x": 656,
+      "lands_on": "Suddenly"
+    },
+    {
+      "t0": 14.556,
+      "t1": 18.425,
+      "plate": "04_Generated-Clips/part03/raw/v02_fast_probe/04_autopsy_to_ward_v14.mp4",
+      "in_s": 0.6,
+      "crop_x": 380,
+      "lands_on": "Ignaz"
+    },
+    {
+      "t0": 18.425,
+      "t1": 22.157,
+      "plate": "04_Generated-Clips/part03/raw/v02_fast_probe/07_mocked_v12.mp4",
+      "in_s": 0.6,
+      "crop_x": 220,
+      "lands_on": "childbirth"
+    },
+    {
+      "t0": 22.157,
+      "t1": 25.157,
+      "plate": "04_Generated-Clips/part03/raw/v02_fast_probe/05_wash_works_v03.mp4",
+      "in_s": 0.6,
+      "crop_x": 480,
+      "lands_on": "loop"
+    }
+  ],
+  "captions": 20,
+  "caption_check": {
+    "ok": true,
+    "changes": 20,
+    "ratio": 1.0
+  },
+  "gate": {
+    "exit": 0,
+    "output": "PASS  hos_001_s07_semmelweis_hands_v01.mp4  dur=25.17s  audio=-23.2dB  motion=16.8  dhash=22189feb40e0e850\n   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_001_s07_semmelweis_hands_v01_open_sheet.jpg"
+  },
+  "vo_check": {
+    "exit": 0,
+    "output": "PASS  hos_001_s07_semmelweis_hands_v01.mp4  0:25.17  mean -23.2 dB  peak -3.8 dB  145 wpm\n   warn  replace at ~0:14.76: script 'address a hitchhiker ignaz semmelweis watched wards' / heard 'address a hitchhiker ignat semmelweis watched wards' \u2014 sounds alike (likely the transcriber); listen"
+  },
+  "freezedetect_starts": [],
+  "qa": {
+    "polish_gate": {
+      "exit": 0,
+      "output": "polish gate PASS: 0 of 8 rows failed, 1 to look at -> 02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/qa_s07_semmelweis_hands_v01/polish_gate_s07_semmelweis_hands_v01.json"
+    },
+    "picture_qa": {
+      "exit": 0,
+      "output": "picture QA PASS: 0 of 8 cuts fail, 1 to look at -> 02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/qa_s07_semmelweis_hands_v01/picture_qa_s07_semmelweis_hands_v01/PICTURE_QA.md, 02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/qa_s07_semmelweis_hands_v01/picture_qa_s07_semmelweis_hands_v01/picture_qa_review.jpg"
+    }
+  },
+  "stills": [
+    "10_Shorts/_work_s07_semmelweis_hands_v01/hos_001_s07_semmelweis_hands_v01_t000.0.jpg",
+    "10_Shorts/_work_s07_semmelweis_hands_v01/hos_001_s07_semmelweis_hands_v01_t015.8.jpg",
+    "10_Shorts/_work_s07_semmelweis_hands_v01/hos_001_s07_semmelweis_hands_v01_t011.5.jpg",
+    "10_Shorts/_work_s07_semmelweis_hands_v01/hos_001_s07_semmelweis_hands_v01_t024.2.jpg"
+  ],
+  "icloud": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/001_How-Did-We-Discover-Germs/10_Shorts/hos_001_s07_semmelweis_hands_v01.mp4",
+  "autocomplete_check": {
+    "date": "2026-10-17",
+    "source": "suggestqueries client=youtube ds=yt gl=GB signed-out",
+    "hits": [
+      "doctor who discovered washing hands",
+      "ignaz semmelweis hand washing",
+      "semmelweis hand washing",
+      "what is germ theory of disease",
+      "who discovered germs",
+      "ignaz semmelweis story"
+    ],
+    "note": "'doctor who discovered washing hands', 'ignaz semmelweis hand washing', and 'semmelweis hand washing' are exact signed-out GB YouTube autocomplete hits. The lifted VO contrasts the old smell/miasma cure with living seeds on hands and instruments, then tells how Ignaz Semmelweis watched doctors go from autopsy to childbirth without washing, how hand washing cut deaths, and how colleagues mocked him anyway. First of HOS 001's two Test B search-titled Shorts. Chief's call."
+  },
+  "air_date_draft_note": "2026-12-08 used for the gate only; slot is Chief's call.",
+  "who_card_note": "card is the long's own Part 03 VO and chapter card IGNAZ SEMMELWEIS \u00b7 Childbirth ward, 1840s, on screen 14.40\u201318.00 s (3.6 s) while 'Ignaz Semmelweis watched wards where doctors went from autopsy...' is spoken. Clear of the 0\u20132 s hook, the 9\u201314 s title, and the last 3.0 s CTA.",
+  "overlap_note": "No overlap with 001 s03_vector (which began at P03 + 43.32 s on 'It said: you are the vector'), s01_shadow (Part 01), s02_pond (Part 02), s04_flask (Part 04), or s05_soap / s06_carbolic_spray (Part 05): this lifts the opening 4.20\u201338.85 s of Part 03 (smell vs living seeds / Ignaz Semmelweis / autopsy to childbirth / hand washing cut death rates), which had never been used in any 001 Short."
+}

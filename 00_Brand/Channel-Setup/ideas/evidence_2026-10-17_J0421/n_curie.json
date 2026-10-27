@@ -1,0 +1,128 @@
+{
+ "pulled": "2026-10-17",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "radioactivity",
+  "marie curie"
+ ],
+ "autocomplete": {
+  "radioactivity": [
+   "radioactivity",
+   "radioactivity physics",
+   "radioactivity kraftwerk",
+   "radioactivity class 10 icse",
+   "radioactivity class 12",
+   "radioactivity chemistry",
+   "radioactivity class 12 physics",
+   "radioactivity class 10",
+   "radioactivity class 10 icse physics wallah",
+   "radioactivity class 10th icse"
+  ],
+  "marie curie": [
+   "marie curie",
+   "marie curie nobel prize",
+   "marie curie biography",
+   "marie curie for kids",
+   "marie curie edit",
+   "marie curie documentary",
+   "marie curie pierre bourne",
+   "marie curie story",
+   "marie curie movie",
+   "marie curie in hindi"
+  ]
+ },
+ "sharedTitleWords": [
+  "marie curie",
+  "is marie"
+ ],
+ "neighbours": [
+  {
+   "id": "w6JFRi0Qm_s",
+   "title": "The genius of Marie Curie - Shohini Ghose",
+   "channel": "TED-Ed",
+   "views": "4,136,908 views",
+   "age": "9 yr ago",
+   "length": "5:04",
+   "tier": 1,
+   "viewCount": 4136908,
+   "foundBy": "ted-ed radioactivity",
+   "onTopic": true
+  },
+  {
+   "id": "5D3hQS6ezXc",
+   "title": "Why is Marie Antoinette so controversial? - Carolyn Harris",
+   "channel": "TED-Ed",
+   "views": "1,808,015 views",
+   "age": "3 yr ago",
+   "length": "5:49",
+   "tier": 1,
+   "viewCount": 1808015,
+   "foundBy": "ted-ed marie curie",
+   "onTopic": true
+  },
+  {
+   "id": "TJgc28csgV0",
+   "title": "Radioactivity: Expect the unexpected - Steve Weatherall",
+   "channel": "TED-Ed",
+   "views": "1,010,148 views",
+   "age": "13 yr ago",
+   "length": "4:16",
+   "tier": 1,
+   "viewCount": 1010148,
+   "foundBy": "ted-ed radioactivity",
+   "onTopic": true
+  },
+  {
+   "id": "UtZw9jfIxXM",
+   "title": "Stable and Unstable Nuclei | Radioactivity | Physics | FuseSchool",
+   "channel": "FuseSchool - Global Education",
+   "views": "1,039,045 views",
+   "age": "7 yr ago",
+   "length": "4:54",
+   "tier": 2,
+   "viewCount": 1039045,
+   "foundBy": "ted-ed radioactivity",
+   "onTopic": true
+  },
+  {
+   "id": "r4jCTiGSuwU",
+   "title": "Marie Curie: Great Minds",
+   "channel": "SciShow",
+   "views": "466,936 views",
+   "age": "14 yr ago",
+   "length": "9:42",
+   "tier": 2,
+   "viewCount": 466936,
+   "foundBy": "ted-ed marie curie",
+   "onTopic": true
+  },
+  {
+   "id": "7qlRjqUMX4E",
+   "title": "Marie Curie and Spooky Rays: Crash Course History of Science #31",
+   "channel": "CrashCourse",
+   "views": "345,363 views",
+   "age": "7 yr ago",
+   "length": "11:48",
+   "tier": 2,
+   "viewCount": 345363,
+   "foundBy": "marie curie",
+   "onTopic": true
+  },
+  {
+   "id": "vJzcWmi0erk",
+   "title": "How Radioactive Is Marie Curie’s Lab Today?",
+   "channel": "SciShow",
+   "views": "161,511 views",
+   "age": "10 mo ago",
+   "length": "8:19",
+   "tier": 2,
+   "viewCount": 161511,
+   "foundBy": "marie curie",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 4,
+ "gate": "PASS",
+ "hasTed": true,
+ "failedQueries": []
+}

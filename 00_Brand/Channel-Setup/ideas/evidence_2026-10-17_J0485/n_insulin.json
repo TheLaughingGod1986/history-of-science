@@ -1,0 +1,147 @@
+{
+ "pulled": "2026-10-17",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "insulin diabetes pancreas blood sugar",
+  "frederick banting charles best"
+ ],
+ "autocomplete": {
+  "insulin diabetes pancreas blood sugar": [
+   "how pancreas release insulin"
+  ],
+  "frederick banting charles best": [
+   "frederick banting and charles best"
+  ]
+ },
+ "sharedTitleWords": [
+  "type diabetes",
+  "insulin and",
+  "gcse biology"
+ ],
+ "neighbours": [
+  {
+   "id": "lEXBxijQREo",
+   "title": "How sugar affects the brain - Nicole Avena",
+   "channel": "TED-Ed",
+   "views": "19,249,564 views",
+   "age": "12 yr ago",
+   "length": "5:03",
+   "tier": 1,
+   "viewCount": 19249564,
+   "foundBy": "ted-ed insulin diabetes pancreas blood sugar",
+   "onTopic": true
+  },
+  {
+   "id": "da1vvigy5tQ",
+   "title": "Type 2 diabetes | Sarah Hallberg | TEDxPurdueU",
+   "channel": "TEDx Talks",
+   "views": "11,934,468 views",
+   "age": "11 yr ago",
+   "length": "18:12",
+   "tier": 1,
+   "viewCount": 11934468,
+   "foundBy": "ted-ed insulin diabetes pancreas blood sugar",
+   "onTopic": true
+  },
+  {
+   "id": "tic7X3ET4gE",
+   "title": "Sugar is Not a Treat | Jody Stanislaw | TEDxSunValley",
+   "channel": "TEDx Talks",
+   "views": "5,968,935 views",
+   "age": "8 yr ago",
+   "length": "15:31",
+   "tier": 1,
+   "viewCount": 5968935,
+   "foundBy": "ted-ed insulin diabetes pancreas blood sugar",
+   "onTopic": true
+  },
+  {
+   "id": "8dgoeYPoE-0",
+   "title": "What does the pancreas do? - Emma Bryce",
+   "channel": "TED-Ed",
+   "views": "1,330,134 views",
+   "age": "11 yr ago",
+   "length": "3:21",
+   "tier": 1,
+   "viewCount": 1330134,
+   "foundBy": "ted-ed insulin diabetes pancreas blood sugar",
+   "onTopic": true
+  },
+  {
+   "id": "k_3hbrqLZ5U",
+   "title": "What did dogs teach humans about diabetes? - Duncan C. Ferguson",
+   "channel": "TED-Ed",
+   "views": "390,951 views",
+   "age": "12 yr ago",
+   "length": "3:48",
+   "tier": 1,
+   "viewCount": 390951,
+   "foundBy": "ted-ed insulin diabetes pancreas blood sugar",
+   "onTopic": true
+  },
+  {
+   "id": "y9Bdi4dnSlg",
+   "title": "Insulin and Glucagon | Physiology | Biology | FuseSchool",
+   "channel": "FuseSchool - Global Education",
+   "views": "756,356 views",
+   "age": "9 yr ago",
+   "length": "2:11",
+   "tier": 2,
+   "viewCount": 756356,
+   "foundBy": "insulin diabetes pancreas blood sugar",
+   "onTopic": true
+  },
+  {
+   "id": "rPLjSY00JlE",
+   "title": "Glucose Insulin and Diabetes",
+   "channel": "Khan Academy",
+   "views": "756,262 views",
+   "age": "15 yr ago",
+   "length": "7:24",
+   "tier": 2,
+   "viewCount": 756262,
+   "foundBy": "khan academy insulin diabetes pancreas blood sugar",
+   "onTopic": true
+  },
+  {
+   "id": "Qs_QCJv3HrA",
+   "title": "The Discovery of Insulin - Free-for-all - Medical History - Extra History - Part 2",
+   "channel": "Extra History",
+   "views": "358,818 views",
+   "age": "4 yr ago",
+   "length": "9:53",
+   "tier": 2,
+   "viewCount": 358818,
+   "foundBy": "ted-ed frederick banting charles best",
+   "onTopic": true
+  },
+  {
+   "id": "r8zVXKbtbFs",
+   "title": "GCSE Biology - Regulating Glucose | Glucose & Glycogen & Glucagon | Blood Glucose Graphs",
+   "channel": "Cognito",
+   "views": "145,756 views",
+   "age": "1 yr ago",
+   "length": "4:51",
+   "tier": 2,
+   "viewCount": 145756,
+   "foundBy": "insulin diabetes pancreas blood sugar",
+   "onTopic": true
+  },
+  {
+   "id": "L8_n6_1e-M8",
+   "title": "GCSE Biology - Diabetes | Type 1 & Type 2 Diabetes (2027/28 exams)",
+   "channel": "Cognito",
+   "views": "77,752 views",
+   "age": "1 yr ago",
+   "length": "4:05",
+   "tier": 2,
+   "viewCount": 77752,
+   "foundBy": "insulin diabetes pancreas blood sugar",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 4,
+ "gate": "PASS",
+ "hasTed": true,
+ "failedQueries": []
+}

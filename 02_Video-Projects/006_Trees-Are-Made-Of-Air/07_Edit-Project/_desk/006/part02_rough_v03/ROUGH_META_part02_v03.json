@@ -1,0 +1,18 @@
+{
+ "film": "006_Trees-Are-Made-Of-Air",
+ "part": 2,
+ "kind": "rough_v03",
+ "job": "J0290",
+ "no_new_mints": true,
+ "spend": "none",
+ "vo_file": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/02_Voiceover/part02_five_years_and_two_ounces_v02.mp3",
+ "vo_duration_s": 116.996,
+ "rough_path": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/_precheck/part02_rough_v03/hos_006_part02_rough_v03.mp4",
+ "rough_sha256": "7ef9c117b29508a709b99c04ccb648455a57b6bc2e181e43ccdb49247ae1ddc4",
+ "picture_frames": 2808,
+ "row22_frames": 260,
+ "gfx_frames": 115,
+ "willow_keep_frames": 64,
+ "tail_frames": 81,
+ "freeze_lines": []
+}

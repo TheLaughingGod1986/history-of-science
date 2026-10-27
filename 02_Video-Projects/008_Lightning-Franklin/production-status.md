@@ -20,3 +20,23 @@
 - No Vertex/Veo/Flow minting on this film.
 - No ElevenLabs VO until Claude confirms sourced FACT_NOTES + script.
 - Do not merge or close desk PR #180 or #202 from this work.
+
+
+## 16 October 2026 — J0329 code graphics (codex)
+
+Eleven v01 code graphics rendered from the Chief-kept v03 boards; five moving-plate rows also have alpha MOVs and provisional paper MP4 previews. See `07_Edit-Project/CODE_GRAPHICS_v01_REVIEW.md` for paths, timing manifest, technical checks and review limitations. No stage PASS or final OK issued. Picture remains blocked for Chief review and the unchanged mint gate.
+
+Repository check output (automated checks only):
+```text
+-- no media: PASS
+-- status board in sync: PASS
+-- ElevenLabs guard tests: PASS
+-- vo_check word tests: PASS
+-- contract tests: PASS
+-- package-lint: PASS
+ALL CHECKS PASS
+```
+
+Full decode, 1080p/30fps and native alpha checks succeeded for all eleven rows. Review includes the seven-word P5:11 label against the four-word rule and schematic Atlantic geometry. No Flow/Vertex/ElevenLabs spend, YouTube changes or deletion.
+
+NAS mirror pending: detached session `j0329-mirror-v2` is blocked in filesystem mkdir. No verified NAS copy yet; all local outputs retained. Resume from its log and exit marker listed in the review note.

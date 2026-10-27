@@ -1,0 +1,160 @@
+{
+  "id": "s07_xray_tube",
+  "job": "J0639",
+  "test": "B (search-titled)",
+  "air_date_draft": "2026-12-30",
+  "file": "10_Shorts/hos_003_s07_xray_tube_v01.mp4",
+  "sha256": "5ecd15678eb02f4d6e1d6b2e7a6c31fb1d8b1f390bf92c8a47d8b1dc25085807",
+  "duration_s": 24.0,
+  "vo_source": "02_Voiceover/05_Master/hos_003_part01_vo_v02_draft.wav",
+  "vo_span_windows_s": [
+    [
+      48.38,
+      70.0
+    ],
+    [
+      101.96,
+      104.7
+    ]
+  ],
+  "route": "claim-first lift: A cathode-ray tube is a sealed glass bottle with almost no air left \u2026 Tonight, the map will not stay inside the tube. (Part 01 48.38\u201370.00 s + 101.96\u2013104.70 s)",
+  "vo_s": 23.346,
+  "words": 62,
+  "max_pause_s": 0.35,
+  "atempo": 1.0,
+  "bed": "hos003_s07_synth_pad_v01.wav (own synthesis, 0 credits)",
+  "bed_gain_db": -22.8,
+  "hook": "EMPTY GLASS",
+  "hook_layer": {
+    "font_size": 243,
+    "cap_px": 173,
+    "cap_pct": 9.01,
+    "lines": 2,
+    "block_pct": [
+      39.5,
+      60.4
+    ],
+    "widest_pct": 83.4
+  },
+  "who_card": {
+    "name": "WILHELM R\u00d6NTGEN",
+    "line2": "W\u00fcrzburg, 1895",
+    "line1_px": 72,
+    "line1_pct_of_band": 12.0,
+    "band": [
+      656,
+      1264
+    ],
+    "in_s": 2.15,
+    "out_s": 5.75,
+    "fade_s": 0.35
+  },
+  "title_on_screen": "How Did We Discover X-rays?",
+  "youtube_title_draft": "How Are X-Rays Made?",
+  "plan": [
+    {
+      "t0": 0.0,
+      "t1": 5.379,
+      "plate": "04_Generated-Clips/10_accident_coming_v01.mp4",
+      "in_s": 0.2,
+      "crop_x": 260,
+      "lands_on": 0
+    },
+    {
+      "t0": 5.379,
+      "t1": 9.099,
+      "plate": "04_Generated-Clips/04_electricity_inside_tube_v03.mp4",
+      "in_s": 0.4,
+      "crop_x": 656,
+      "lands_on": "Push"
+    },
+    {
+      "t0": 9.099,
+      "t1": 14.699,
+      "plate": "04_Generated-Clips/03_cathode_tube_hero_v02.mp4",
+      "in_s": 1.8,
+      "crop_x": 120,
+      "lands_on": "In"
+    },
+    {
+      "t0": 14.699,
+      "t1": 16.939,
+      "plate": "04_Generated-Clips/05_rays_stop_at_glass_v05.mp4",
+      "in_s": 0.4,
+      "crop_x": 656,
+      "lands_on": "Cathode"
+    },
+    {
+      "t0": 16.939,
+      "t1": 18.869,
+      "plate": "04_Generated-Clips/part02/02_tube_covered_v01.mp4",
+      "in_s": 0.4,
+      "crop_x": 656,
+      "lands_on": "and"
+    },
+    {
+      "t0": 18.869,
+      "t1": 20.996,
+      "plate": "04_Generated-Clips/part02/08_locks_the_door_v02.mp4",
+      "in_s": 0.4,
+      "crop_x": 656,
+      "lands_on": "The"
+    },
+    {
+      "t0": 20.996,
+      "t1": 23.996,
+      "plate": "04_Generated-Clips/10_accident_coming_v01.mp4",
+      "in_s": 0.2,
+      "crop_x": 260,
+      "lands_on": "loop"
+    }
+  ],
+  "captions": 18,
+  "caption_check": {
+    "ok": true,
+    "changes": 17,
+    "ratio": 1.0
+  },
+  "gate": {
+    "exit": 0,
+    "output": "PASS  hos_003_s07_xray_tube_v01.mp4  dur=24.0s  audio=-23.7dB  motion=57.95  dhash=5951575616565f06\n   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_003_s07_xray_tube_v01_open_sheet.jpg"
+  },
+  "vo_check": {
+    "exit": 0,
+    "output": "PASS  hos_003_s07_xray_tube_v01.mp4  0:24.00  mean -23.7 dB  peak -5.0 dB  155 wpm"
+  },
+  "freezedetect_starts": [],
+  "qa": {
+    "polish_gate": {
+      "exit": 0,
+      "output": "polish gate PASS: 0 of 7 rows failed, 1 to look at -> 02_Video-Projects/003_Invisible-Bones-X-Rays/10_Shorts/qa_s07_xray_tube_v01/polish_gate_s07_xray_tube_v01.json"
+    },
+    "picture_qa": {
+      "exit": 0,
+      "output": "picture QA PASS: 0 of 7 cuts fail, 1 to look at -> 02_Video-Projects/003_Invisible-Bones-X-Rays/10_Shorts/qa_s07_xray_tube_v01/picture_qa_s07_xray_tube_v01/PICTURE_QA.md, 02_Video-Projects/003_Invisible-Bones-X-Rays/10_Shorts/qa_s07_xray_tube_v01/picture_qa_s07_xray_tube_v01/picture_qa_review.jpg"
+    }
+  },
+  "stills": [
+    "10_Shorts/_work_s07_xray_tube_v01/hos_003_s07_xray_tube_v01_t000.0.jpg",
+    "10_Shorts/_work_s07_xray_tube_v01/hos_003_s07_xray_tube_v01_t003.8.jpg",
+    "10_Shorts/_work_s07_xray_tube_v01/hos_003_s07_xray_tube_v01_t011.5.jpg",
+    "10_Shorts/_work_s07_xray_tube_v01/hos_003_s07_xray_tube_v01_t023.0.jpg"
+  ],
+  "icloud": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/003_Invisible-Bones-X-Rays/10_Shorts/hos_003_s07_xray_tube_v01.mp4",
+  "autocomplete_check": {
+    "date": "2026-10-19",
+    "source": "suggestqueries client=youtube ds=yt gl=GB signed-out",
+    "hits": [
+      "how are x rays made",
+      "how are x rays produced",
+      "how are x rays produced in an x ray tube",
+      "how does an x ray tube work",
+      "cathode ray tube x ray",
+      "who discovered x rays"
+    ],
+    "note": "'how are x rays made', 'how are x rays produced', 'how are x rays produced in an x ray tube', 'how does an x ray tube work', and 'who discovered x rays' are exact signed-out GB YouTube autocomplete hits. The lifted VO opens claim-first on the vacuum cathode-ray tube ('A cathode-ray tube is a sealed glass bottle with almost no air left. Push electricity through it and you get invisible rays. In 1895, people believed those rays lived only inside the glass. Cathode rays that hit the wall of the tube and went no further. The room is dark on purpose. Tonight, the map will not stay inside the tube.'). Chief's call."
+  },
+  "air_date_draft_note": "2026-12-30 used for the gate only; slot is Chief's call.",
+  "who_card_note": "card is the long's own Part 01 VO and Part 05 card WILHELM R\u00d6NTGEN \u00b7 W\u00fcrzburg, 1895, on screen 2.15\u20135.75 s (3.6 s) right after the 0\u20132 s hook. Clear of the 0\u20132 s hook, the 9\u201314 s title, and the last 3.0 s CTA.",
+  "overlap_note": "No overlap with 003 S1 (Part 02 cardboard glow accident 22.5\u201341.5 s), S2 (Part 03 soft tissue vs bone density), S3 (Part 04 13.8\u201337.0 s why her hand / ring density), S4 (Part 02 46.3\u201381.5 s naming it X and testing book/hand/metal), S5 (Part 04 7.40\u201311.96 s and 38.76\u201368.96 s first X-ray picture and medical spread), or S6 (Part 05 3.42\u201324.88 s and 33.30\u201338.02 s electromagnetic spectrum / density map): this lifts Part 01 48.38\u201370.00 s and 101.96\u2013104.70 s."
+}

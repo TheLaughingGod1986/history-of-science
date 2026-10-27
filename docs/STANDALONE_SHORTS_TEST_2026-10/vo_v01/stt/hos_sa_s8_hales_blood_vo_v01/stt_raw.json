@@ -1,0 +1,716 @@
+{
+  "language_code": "eng",
+  "language_probability": 1.0,
+  "text": "A horse's blood climbed eight feet up a glass tube. Stephen Hales, a vicar, wanted to measure the push of a heartbeat. He fixed a tall tube into a mare's artery. The blood rose taller than a man, bobbing with every beat. In 1733, he published the first blood pressure reading",
+  "words": [
+    {
+      "text": "A",
+      "start": 0.14,
+      "end": 0.2,
+      "type": "word",
+      "logprob": -2.729855441430118e-05
+    },
+    {
+      "text": " ",
+      "start": 0.2,
+      "end": 0.24,
+      "type": "spacing",
+      "logprob": -3.3378546504536644e-06
+    },
+    {
+      "text": "horse's",
+      "start": 0.24,
+      "end": 0.7,
+      "type": "word",
+      "logprob": -0.0010889891629111454
+    },
+    {
+      "text": " ",
+      "start": 0.7,
+      "end": 0.74,
+      "type": "spacing",
+      "logprob": -1.5497195136049413e-06
+    },
+    {
+      "text": "blood",
+      "start": 0.74,
+      "end": 1.08,
+      "type": "word",
+      "logprob": -1.5497195136049413e-06
+    },
+    {
+      "text": " ",
+      "start": 1.08,
+      "end": 1.3,
+      "type": "spacing",
+      "logprob": -8.34461570775602e-06
+    },
+    {
+      "text": "climbed",
+      "start": 1.3,
+      "end": 1.62,
+      "type": "word",
+      "logprob": -8.34461570775602e-06
+    },
+    {
+      "text": " ",
+      "start": 1.62,
+      "end": 1.78,
+      "type": "spacing",
+      "logprob": -7.152555099310121e-07
+    },
+    {
+      "text": "eight",
+      "start": 1.78,
+      "end": 1.98,
+      "type": "word",
+      "logprob": -7.152555099310121e-07
+    },
+    {
+      "text": " ",
+      "start": 1.98,
+      "end": 2.14,
+      "type": "spacing",
+      "logprob": -3.933898824470816e-06
+    },
+    {
+      "text": "feet",
+      "start": 2.14,
+      "end": 2.48,
+      "type": "word",
+      "logprob": -3.933898824470816e-06
+    },
+    {
+      "text": " ",
+      "start": 2.48,
+      "end": 2.72,
+      "type": "spacing",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": "up",
+      "start": 2.72,
+      "end": 2.8,
+      "type": "word",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": " ",
+      "start": 2.8,
+      "end": 2.84,
+      "type": "spacing",
+      "logprob": 0.0
+    },
+    {
+      "text": "a",
+      "start": 2.84,
+      "end": 2.9,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": " ",
+      "start": 2.9,
+      "end": 2.94,
+      "type": "spacing",
+      "logprob": -2.3841855067985307e-07
+    },
+    {
+      "text": "glass",
+      "start": 2.94,
+      "end": 3.26,
+      "type": "word",
+      "logprob": -2.3841855067985307e-07
+    },
+    {
+      "text": " ",
+      "start": 3.26,
+      "end": 3.38,
+      "type": "spacing",
+      "logprob": -1.7881377516459906e-06
+    },
+    {
+      "text": "tube.",
+      "start": 3.38,
+      "end": 3.8,
+      "type": "word",
+      "logprob": -5.626633173960726e-06
+    },
+    {
+      "text": " ",
+      "start": 3.8,
+      "end": 3.8,
+      "type": "spacing",
+      "logprob": -0.0008192281820811331
+    },
+    {
+      "text": "Stephen",
+      "start": 4.7,
+      "end": 5.02,
+      "type": "word",
+      "logprob": -0.0008192281820811331
+    },
+    {
+      "text": " ",
+      "start": 5.02,
+      "end": 5.1,
+      "type": "spacing",
+      "logprob": -4.887569048150908e-06
+    },
+    {
+      "text": "Hales,",
+      "start": 5.1,
+      "end": 5.6,
+      "type": "word",
+      "logprob": -0.00018044144644591142
+    },
+    {
+      "text": " ",
+      "start": 5.6,
+      "end": 5.8,
+      "type": "spacing",
+      "logprob": 0.0
+    },
+    {
+      "text": "a",
+      "start": 5.8,
+      "end": 5.82,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": " ",
+      "start": 5.82,
+      "end": 5.92,
+      "type": "spacing",
+      "logprob": -9.548207890475169e-05
+    },
+    {
+      "text": "vicar,",
+      "start": 5.92,
+      "end": 6.28,
+      "type": "word",
+      "logprob": -9.56410100722375e-05
+    },
+    {
+      "text": " ",
+      "start": 6.28,
+      "end": 6.28,
+      "type": "spacing",
+      "logprob": -4.768370445162873e-07
+    },
+    {
+      "text": "wanted",
+      "start": 6.82,
+      "end": 7.08,
+      "type": "word",
+      "logprob": -4.768370445162873e-07
+    },
+    {
+      "text": " ",
+      "start": 7.08,
+      "end": 7.12,
+      "type": "spacing",
+      "logprob": 0.0
+    },
+    {
+      "text": "to",
+      "start": 7.12,
+      "end": 7.2,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": " ",
+      "start": 7.2,
+      "end": 7.26,
+      "type": "spacing",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": "measure",
+      "start": 7.26,
+      "end": 7.5,
+      "type": "word",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": " ",
+      "start": 7.5,
+      "end": 7.54,
+      "type": "spacing",
+      "logprob": 0.0
+    },
+    {
+      "text": "the",
+      "start": 7.54,
+      "end": 7.66,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": " ",
+      "start": 7.66,
+      "end": 7.72,
+      "type": "spacing",
+      "logprob": -1.6689286894688848e-06
+    },
+    {
+      "text": "push",
+      "start": 7.72,
+      "end": 8.16,
+      "type": "word",
+      "logprob": -1.6689286894688848e-06
+    },
+    {
+      "text": " ",
+      "start": 8.16,
+      "end": 8.2,
+      "type": "spacing",
+      "logprob": 0.0
+    },
+    {
+      "text": "of",
+      "start": 8.2,
+      "end": 8.28,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": " ",
+      "start": 8.28,
+      "end": 8.32,
+      "type": "spacing",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": "a",
+      "start": 8.32,
+      "end": 8.36,
+      "type": "word",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": " ",
+      "start": 8.36,
+      "end": 8.4,
+      "type": "spacing",
+      "logprob": -9.536738616588991e-07
+    },
+    {
+      "text": "heartbeat.",
+      "start": 8.4,
+      "end": 9.04,
+      "type": "word",
+      "logprob": -8.583064754930092e-07
+    },
+    {
+      "text": " ",
+      "start": 9.04,
+      "end": 9.04,
+      "type": "spacing",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": "He",
+      "start": 9.94,
+      "end": 10.06,
+      "type": "word",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": " ",
+      "start": 10.06,
+      "end": 10.12,
+      "type": "spacing",
+      "logprob": -8.940656698541716e-06
+    },
+    {
+      "text": "fixed",
+      "start": 10.12,
+      "end": 10.42,
+      "type": "word",
+      "logprob": -8.940656698541716e-06
+    },
+    {
+      "text": " ",
+      "start": 10.42,
+      "end": 10.46,
+      "type": "spacing",
+      "logprob": -1.4781842764932662e-05
+    },
+    {
+      "text": "a",
+      "start": 10.46,
+      "end": 10.54,
+      "type": "word",
+      "logprob": -1.4781842764932662e-05
+    },
+    {
+      "text": " ",
+      "start": 10.54,
+      "end": 10.62,
+      "type": "spacing",
+      "logprob": -2.3841855067985307e-07
+    },
+    {
+      "text": "tall",
+      "start": 10.62,
+      "end": 10.88,
+      "type": "word",
+      "logprob": -2.3841855067985307e-07
+    },
+    {
+      "text": " ",
+      "start": 10.88,
+      "end": 11.02,
+      "type": "spacing",
+      "logprob": -1.6689286894688848e-06
+    },
+    {
+      "text": "tube",
+      "start": 11.02,
+      "end": 11.44,
+      "type": "word",
+      "logprob": -1.6689286894688848e-06
+    },
+    {
+      "text": " ",
+      "start": 11.44,
+      "end": 11.5,
+      "type": "spacing",
+      "logprob": 0.0
+    },
+    {
+      "text": "into",
+      "start": 11.5,
+      "end": 11.72,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": " ",
+      "start": 11.72,
+      "end": 11.76,
+      "type": "spacing",
+      "logprob": -9.536738616588991e-07
+    },
+    {
+      "text": "a",
+      "start": 11.76,
+      "end": 11.84,
+      "type": "word",
+      "logprob": -9.536738616588991e-07
+    },
+    {
+      "text": " ",
+      "start": 11.84,
+      "end": 11.9,
+      "type": "spacing",
+      "logprob": -2.062299427052494e-05
+    },
+    {
+      "text": "mare's",
+      "start": 11.9,
+      "end": 12.3,
+      "type": "word",
+      "logprob": -1.5059959878271911e-05
+    },
+    {
+      "text": " ",
+      "start": 12.3,
+      "end": 12.4,
+      "type": "spacing",
+      "logprob": -3.6954811548639555e-06
+    },
+    {
+      "text": "artery.",
+      "start": 12.4,
+      "end": 12.92,
+      "type": "word",
+      "logprob": -4.0020178338246685e-06
+    },
+    {
+      "text": " ",
+      "start": 12.92,
+      "end": 12.92,
+      "type": "spacing",
+      "logprob": -1.0728830375228426e-06
+    },
+    {
+      "text": "The",
+      "start": 13.76,
+      "end": 13.88,
+      "type": "word",
+      "logprob": -1.0728830375228426e-06
+    },
+    {
+      "text": " ",
+      "start": 13.88,
+      "end": 13.92,
+      "type": "spacing",
+      "logprob": -4.768370445162873e-07
+    },
+    {
+      "text": "blood",
+      "start": 13.92,
+      "end": 14.2,
+      "type": "word",
+      "logprob": -4.768370445162873e-07
+    },
+    {
+      "text": " ",
+      "start": 14.2,
+      "end": 14.3,
+      "type": "spacing",
+      "logprob": -1.0728830375228426e-06
+    },
+    {
+      "text": "rose",
+      "start": 14.3,
+      "end": 14.56,
+      "type": "word",
+      "logprob": -1.0728830375228426e-06
+    },
+    {
+      "text": " ",
+      "start": 14.56,
+      "end": 14.64,
+      "type": "spacing",
+      "logprob": -1.311301275563892e-06
+    },
+    {
+      "text": "taller",
+      "start": 14.64,
+      "end": 14.98,
+      "type": "word",
+      "logprob": -1.311301275563892e-06
+    },
+    {
+      "text": " ",
+      "start": 14.98,
+      "end": 15.04,
+      "type": "spacing",
+      "logprob": 0.0
+    },
+    {
+      "text": "than",
+      "start": 15.04,
+      "end": 15.14,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": " ",
+      "start": 15.14,
+      "end": 15.18,
+      "type": "spacing",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": "a",
+      "start": 15.18,
+      "end": 15.24,
+      "type": "word",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": " ",
+      "start": 15.24,
+      "end": 15.3,
+      "type": "spacing",
+      "logprob": 0.0
+    },
+    {
+      "text": "man,",
+      "start": 15.3,
+      "end": 15.68,
+      "type": "word",
+      "logprob": -0.0002011741162277758
+    },
+    {
+      "text": " ",
+      "start": 15.68,
+      "end": 16.18,
+      "type": "spacing",
+      "logprob": -7.128461584215984e-05
+    },
+    {
+      "text": "bobbing",
+      "start": 16.18,
+      "end": 16.6,
+      "type": "word",
+      "logprob": -4.151769930363766e-05
+    },
+    {
+      "text": " ",
+      "start": 16.6,
+      "end": 16.64,
+      "type": "spacing",
+      "logprob": -5.960462772236497e-07
+    },
+    {
+      "text": "with",
+      "start": 16.64,
+      "end": 16.74,
+      "type": "word",
+      "logprob": -5.960462772236497e-07
+    },
+    {
+      "text": " ",
+      "start": 16.74,
+      "end": 16.82,
+      "type": "spacing",
+      "logprob": 0.0
+    },
+    {
+      "text": "every",
+      "start": 16.82,
+      "end": 17.12,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": " ",
+      "start": 17.12,
+      "end": 17.16,
+      "type": "spacing",
+      "logprob": -3.099436753473128e-06
+    },
+    {
+      "text": "beat.",
+      "start": 17.16,
+      "end": 17.54,
+      "type": "word",
+      "logprob": -2.7656514930640697e-06
+    },
+    {
+      "text": " ",
+      "start": 17.54,
+      "end": 17.54,
+      "type": "spacing",
+      "logprob": -2.0265558760002023e-06
+    },
+    {
+      "text": "In",
+      "start": 18.44,
+      "end": 18.54,
+      "type": "word",
+      "logprob": -2.0265558760002023e-06
+    },
+    {
+      "text": " ",
+      "start": 18.54,
+      "end": 18.58,
+      "type": "spacing",
+      "logprob": -0.3510686159133911
+    },
+    {
+      "text": "1733,",
+      "start": 18.58,
+      "end": 19.84,
+      "type": "word",
+      "logprob": -1.1014778952755932e-05
+    },
+    {
+      "text": " ",
+      "start": 19.84,
+      "end": 20.24,
+      "type": "spacing",
+      "logprob": -1.1920922133867862e-06
+    },
+    {
+      "text": "he",
+      "start": 20.24,
+      "end": 20.36,
+      "type": "word",
+      "logprob": -1.1920922133867862e-06
+    },
+    {
+      "text": " ",
+      "start": 20.36,
+      "end": 20.42,
+      "type": "spacing",
+      "logprob": -7.152555099310121e-07
+    },
+    {
+      "text": "published",
+      "start": 20.42,
+      "end": 20.82,
+      "type": "word",
+      "logprob": -7.152555099310121e-07
+    },
+    {
+      "text": " ",
+      "start": 20.82,
+      "end": 20.86,
+      "type": "spacing",
+      "logprob": -4.768370445162873e-07
+    },
+    {
+      "text": "the",
+      "start": 20.86,
+      "end": 21.02,
+      "type": "word",
+      "logprob": -4.768370445162873e-07
+    },
+    {
+      "text": " ",
+      "start": 21.02,
+      "end": 21.1,
+      "type": "spacing",
+      "logprob": -2.3841855067985307e-07
+    },
+    {
+      "text": "first",
+      "start": 21.1,
+      "end": 21.52,
+      "type": "word",
+      "logprob": -2.3841855067985307e-07
+    },
+    {
+      "text": " ",
+      "start": 21.52,
+      "end": 21.72,
+      "type": "spacing",
+      "logprob": -1.5497195136049413e-06
+    },
+    {
+      "text": "blood",
+      "start": 21.72,
+      "end": 21.92,
+      "type": "word",
+      "logprob": -1.5497195136049413e-06
+    },
+    {
+      "text": " ",
+      "start": 21.92,
+      "end": 22.04,
+      "type": "spacing",
+      "logprob": -1.2040065485052764e-05
+    },
+    {
+      "text": "pressure",
+      "start": 22.04,
+      "end": 22.36,
+      "type": "word",
+      "logprob": -1.2040065485052764e-05
+    },
+    {
+      "text": " ",
+      "start": 22.36,
+      "end": 22.44,
+      "type": "spacing",
+      "logprob": -0.00030596344731748104
+    },
+    {
+      "text": "reading",
+      "start": 22.44,
+      "end": 22.78,
+      "type": "word",
+      "logprob": -0.00030596344731748104
+    }
+  ],
+  "transcription_id": "Ar0kX66oCTwFLvNKFcWH",
+  "audio_duration_secs": 22.8
+}

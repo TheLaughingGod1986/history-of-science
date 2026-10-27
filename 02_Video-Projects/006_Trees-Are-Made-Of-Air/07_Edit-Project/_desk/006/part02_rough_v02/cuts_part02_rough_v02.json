@@ -1,0 +1,317 @@
+[
+ {
+  "row": "01_furnace_soil",
+  "film_t": 0.0,
+  "timeline_in": 0.0,
+  "timeline_out": 5.458,
+  "frames": 131,
+  "upscale": 1.0,
+  "side_label": "DRIED SOIL",
+  "source": "01_furnace_soil_t1.mp4",
+  "source_path": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part02/raw/v01/01_furnace_soil_t1.mp4",
+  "framing": {
+   "offset": 0.0
+  },
+  "disposition": "KEEP"
+ },
+ {
+  "row": "02_balance_200",
+  "film_t": 5.46,
+  "timeline_in": 5.458,
+  "timeline_out": 11.291,
+  "frames": 140,
+  "upscale": 1.0,
+  "side_label": "200 POUNDS OF SOIL",
+  "source": "09_weights_169_t1.mp4",
+  "source_path": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part02/raw/v01/09_weights_169_t1.mp4",
+  "framing": {
+   "offset": 0.0
+  },
+  "disposition": "PARK_STANDIN"
+ },
+ {
+  "row": "03_willow_shoot_scale",
+  "film_t": 11.29,
+  "timeline_in": 11.291,
+  "timeline_out": 15.583,
+  "frames": 103,
+  "upscale": 1.0,
+  "side_label": "A 5-POUND WILLOW",
+  "source": "03_willow_shoot_scale_t1.mp4",
+  "source_path": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part02/raw/v01/03_willow_shoot_scale_t1.mp4",
+  "framing": {
+   "offset": 0.0
+  },
+  "disposition": "KEEP"
+ },
+ {
+  "row": "04_lid_rain",
+  "film_t": 15.58,
+  "timeline_in": 15.583,
+  "timeline_out": 21.958,
+  "frames": 153,
+  "upscale": 1.0,
+  "side_label": "WATER IN, DUST OUT",
+  "source": "04_lid_rain_t1.mp4",
+  "source_path": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part02/raw/v01/04_lid_rain_t1.mp4",
+  "framing": {
+   "offset": 0.0
+  },
+  "disposition": "KEEP"
+ },
+ {
+  "row": "05_pure_water",
+  "film_t": 21.96,
+  "timeline_in": 21.958,
+  "timeline_out": 26.958,
+  "frames": 120,
+  "upscale": 1.0,
+  "side_label": null,
+  "source": "05_pure_water_t1.mp4",
+  "source_path": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part02/raw/v01/05_pure_water_t1.mp4",
+  "framing": {
+   "offset": 0.0
+  },
+  "disposition": "KEEP"
+ },
+ {
+  "row": "06_garden_years",
+  "film_t": 26.96,
+  "timeline_in": 26.958,
+  "timeline_out": 34.875,
+  "frames": 190,
+  "upscale": 1.0,
+  "side_label": "FIVE YEARS",
+  "source": "06_garden_years_t2.mp4",
+  "source_path": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part02/raw/v01/06_garden_years_t2.mp4",
+  "framing": {
+   "offset": 0.0
+  },
+  "disposition": "KEEP"
+ },
+ {
+  "row": "08_haul_tree",
+  "film_t": 34.88,
+  "timeline_in": 34.875,
+  "timeline_out": 39.667,
+  "frames": 115,
+  "upscale": 1.0,
+  "side_label": null,
+  "source": "08_haul_tree_t1_trim_0to4p8.mp4",
+  "source_path": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part02/raw/v01_trim/08_haul_tree_t1_trim_0to4p8.mp4",
+  "framing": {
+   "offset": 0.0
+  },
+  "disposition": "KEEP_TRIM"
+ },
+ {
+  "row": "09_weights_169",
+  "film_t": 39.67,
+  "timeline_in": 39.667,
+  "timeline_out": 43.584,
+  "frames": 94,
+  "upscale": 1.0,
+  "side_label": "169 POUNDS",
+  "source": "09_weights_169_t1.mp4",
+  "source_path": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part02/raw/v01/09_weights_169_t1.mp4",
+  "framing": {
+   "offset": 0.0
+  },
+  "disposition": "KEEP"
+ },
+ {
+  "row": "10_fallen_leaves",
+  "film_t": 43.58,
+  "timeline_in": 43.584,
+  "timeline_out": 48.001,
+  "frames": 106,
+  "upscale": 1.0,
+  "side_label": null,
+  "source": "10_fallen_leaves_t1.mp4",
+  "source_path": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part02/raw/v01/10_fallen_leaves_t1.mp4",
+  "framing": {
+   "offset": 0.0
+  },
+  "disposition": "KEEP"
+ },
+ {
+  "row": "11_furnace_again",
+  "film_t": 48.0,
+  "timeline_in": 48.001,
+  "timeline_out": 51.543,
+  "frames": 85,
+  "upscale": 1.0,
+  "side_label": null,
+  "source": "01_furnace_soil_t1.mp4",
+  "source_path": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part02/raw/v01/01_furnace_soil_t1.mp4",
+  "framing": {
+   "offset": 2.0
+  },
+  "disposition": "REUSE"
+ },
+ {
+  "row": "12_pointer_short",
+  "film_t": 51.54,
+  "timeline_in": 51.543,
+  "timeline_out": 58.335,
+  "frames": 163,
+  "upscale": 1.0,
+  "side_label": "SOIL LOST: ABOUT 2 OUNCES",
+  "source": "12_pointer_short_t1.mp4",
+  "source_path": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part02/raw/v01/12_pointer_short_t1.mp4",
+  "framing": {
+   "offset": 0.0
+  },
+  "disposition": "KEEP"
+ },
+ {
+  "row": "13_tree_vs_pinch",
+  "film_t": 58.34,
+  "timeline_in": 58.335,
+  "timeline_out": 63.71,
+  "frames": 129,
+  "upscale": 1.0,
+  "side_label": null,
+  "source": "13_tree_vs_pinch_t1.mp4",
+  "source_path": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part02/raw/v01/13_tree_vs_pinch_t1.mp4",
+  "framing": {
+   "offset": 0.0
+  },
+  "disposition": "KEEP"
+ },
+ {
+  "row": "14_why_grown",
+  "film_t": 63.71,
+  "timeline_in": 63.71,
+  "timeline_out": 68.127,
+  "frames": 106,
+  "upscale": 1.0,
+  "side_label": null,
+  "source": "17_mostly_wrong_t1.mp4",
+  "source_path": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part02/raw/v01/17_mostly_wrong_t1.mp4",
+  "framing": {
+   "offset": 0.0
+  },
+  "disposition": "FAIL_COVER"
+ },
+ {
+  "row": "15_desk_candle",
+  "film_t": 68.13,
+  "timeline_in": 68.127,
+  "timeline_out": 73.585,
+  "frames": 131,
+  "upscale": 1.0,
+  "side_label": null,
+  "source": "15_desk_candle_t1.mp4",
+  "source_path": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part02/raw/v01/15_desk_candle_t1.mp4",
+  "framing": {
+   "offset": 0.0
+  },
+  "disposition": "KEEP"
+ },
+ {
+  "row": "16_water_drawing",
+  "film_t": 73.59,
+  "timeline_in": 73.585,
+  "timeline_out": 78.71,
+  "frames": 123,
+  "upscale": 1.0,
+  "side_label": "\"FROM WATER ALONE\"",
+  "source": "16_water_drawing_t1.mp4",
+  "source_path": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part02/raw/v01/16_water_drawing_t1.mp4",
+  "framing": {
+   "offset": 0.0
+  },
+  "disposition": "KEEP"
+ },
+ {
+  "row": "17_mostly_wrong",
+  "film_t": 78.71,
+  "timeline_in": 78.71,
+  "timeline_out": 84.043,
+  "frames": 128,
+  "upscale": 1.0,
+  "side_label": null,
+  "source": "17_mostly_wrong_t1.mp4",
+  "source_path": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part02/raw/v01/17_mostly_wrong_t1.mp4",
+  "framing": {
+   "offset": 0.0
+  },
+  "disposition": "KEEP"
+ },
+ {
+  "row": "18_charcoal_hearth",
+  "film_t": 84.04,
+  "timeline_in": 84.043,
+  "timeline_out": 90.835,
+  "frames": 163,
+  "upscale": 1.0,
+  "side_label": null,
+  "source": "18_charcoal_hearth_t1.mp4",
+  "source_path": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part02/raw/v01/18_charcoal_hearth_t1.mp4",
+  "framing": {
+   "offset": 0.0
+  },
+  "disposition": "KEEP"
+ },
+ {
+  "row": "19_ash_mound",
+  "film_t": 90.84,
+  "timeline_in": 90.835,
+  "timeline_out": 94.377,
+  "frames": 85,
+  "upscale": 1.0,
+  "side_label": "62 POUNDS \u2192 1 POUND OF ASH",
+  "source": "19_ash_mound_t1.mp4",
+  "source_path": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part02/raw/v01/19_ash_mound_t1.mp4",
+  "framing": {
+   "offset": 0.0
+  },
+  "disposition": "KEEP_TRIM"
+ },
+ {
+  "row": "20_shimmer_coals",
+  "film_t": 94.38,
+  "timeline_in": 94.377,
+  "timeline_out": 99.544,
+  "frames": 124,
+  "upscale": 1.0,
+  "side_label": null,
+  "source": "20_shimmer_coals_t1.mp4",
+  "source_path": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part02/raw/v01/20_shimmer_coals_t1.mp4",
+  "framing": {
+   "offset": 0.0
+  },
+  "disposition": "KEEP"
+ },
+ {
+  "row": "21_gas_window",
+  "film_t": 99.54,
+  "timeline_in": 99.544,
+  "timeline_out": 106.169,
+  "frames": 159,
+  "upscale": 1.0,
+  "side_label": "GAS",
+  "source": "20_shimmer_coals_t1.mp4",
+  "source_path": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part02/raw/v01/20_shimmer_coals_t1.mp4",
+  "framing": {
+   "offset": 0.0
+  },
+  "disposition": "FAIL_COVER"
+ },
+ {
+  "row": "22_shimmer_willow",
+  "film_t": 106.17,
+  "timeline_in": 106.169,
+  "timeline_out": 112.127,
+  "frames": 143,
+  "upscale": 1.0,
+  "side_label": null,
+  "source": "22_shimmer_willow_t1.mp4",
+  "source_path": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part02/raw/v01/22_shimmer_willow_t1.mp4",
+  "framing": {
+   "offset": 5.333
+  },
+  "disposition": "KEEP_TRIM"
+ }
+]

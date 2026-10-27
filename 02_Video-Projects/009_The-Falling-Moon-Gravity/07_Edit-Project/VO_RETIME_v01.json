@@ -1,0 +1,6089 @@
+{
+  "film": "009_The-Falling-Moon-Gravity",
+  "source": "Locked VO (VO_TAKES_KEEP.json), faster-whisper small.en word timestamps, vo_check.norm()",
+  "card_breath_s": 0.6,
+  "card_to_vo_s": 1.9,
+  "vo_film_total_s": 518.4,
+  "vo_film_total": "8:38.40",
+  "parts": [
+    {
+      "part": 1,
+      "file": "hos_009_part01_the_falling_moon_v01.mp3",
+      "sha256": "81b6c45fa7991d01d804d6bc67703f179ff7d3c989c485871fab13eb498bdd74",
+      "duration_s": 83.84,
+      "match_rate_pct": 98.5,
+      "chapter_card": null,
+      "card_in_film_s": null,
+      "card_in_film": null,
+      "vo_film_start_s": 0.0,
+      "vo_film_start": "0:00.00",
+      "vo_film_end_s": 83.84,
+      "vo_film_end": "1:23.84",
+      "last_word_s": 83.46,
+      "sentences": [
+        {
+          "i": 1,
+          "text": "Right now, as you watch this, the Moon is falling towards the Earth.",
+          "start_s": 0.0,
+          "end_s": 4.9,
+          "film_s": 0.0,
+          "film": "0:00.00"
+        },
+        {
+          "i": 2,
+          "text": "So why doesn't it ever hit us?",
+          "start_s": 4.9,
+          "end_s": 8.16,
+          "film_s": 4.9,
+          "film": "0:04.90"
+        },
+        {
+          "i": 3,
+          "text": "And what does it have to do with an apple?",
+          "start_s": 8.63,
+          "end_s": 10.94,
+          "film_s": 8.63,
+          "film": "0:08.63"
+        },
+        {
+          "i": 4,
+          "text": "By the end of this film, you'll know how a young man in a farmhouse garden, an imaginary cannon and one careful sum showed that the pull that drops an apple also holds the Moon in the sky.",
+          "start_s": 10.94,
+          "end_s": 26.02,
+          "film_s": 10.94,
+          "film": "0:10.94"
+        },
+        {
+          "i": 5,
+          "text": "For thousands of years, people believed the sky followed different rules from the Earth.",
+          "start_s": 26.02,
+          "end_s": 31.94,
+          "film_s": 26.02,
+          "film": "0:26.02"
+        },
+        {
+          "i": 6,
+          "text": "Down here, things fell.",
+          "start_s": 31.94,
+          "end_s": 34.16,
+          "film_s": 31.94,
+          "film": "0:31.94"
+        },
+        {
+          "i": 7,
+          "text": "A stone dropped, a cup tipped, a rider fell from a horse.",
+          "start_s": 34.16,
+          "end_s": 39.2,
+          "film_s": 34.16,
+          "film": "0:34.16"
+        },
+        {
+          "i": 8,
+          "text": "But up there, the Moon, the Sun and the planets moved in perfect circles, for ever, and never fell at all.",
+          "start_s": 39.72,
+          "end_s": 48.32,
+          "film_s": 39.72,
+          "film": "0:39.72"
+        },
+        {
+          "i": 9,
+          "text": "Why should a stone fall, but not the Moon?",
+          "start_s": 48.88,
+          "end_s": 51.54,
+          "film_s": 48.88,
+          "film": "0:48.88"
+        },
+        {
+          "i": 10,
+          "text": "It was one of the oldest mysteries in the world.",
+          "start_s": 51.54,
+          "end_s": 55.14,
+          "film_s": 51.54,
+          "film": "0:51.54"
+        },
+        {
+          "i": 11,
+          "text": "Picture yourself on a clear night in sixteen sixty-five.",
+          "start_s": 55.98,
+          "end_s": 58.5,
+          "film_s": 55.98,
+          "film": "0:55.98"
+        },
+        {
+          "i": 12,
+          "text": "You would see the Moon rise over the fields, huge and silent.",
+          "start_s": 58.5,
+          "end_s": 65.28,
+          "film_s": 58.5,
+          "film": "0:58.50"
+        },
+        {
+          "i": 13,
+          "text": "You would feel the cold ground under your feet.",
+          "start_s": 65.28,
+          "end_s": 68.72,
+          "film_s": 65.28,
+          "film": "1:05.28"
+        },
+        {
+          "i": 14,
+          "text": "And if you dropped a stone, you would hear it thud.",
+          "start_s": 68.72,
+          "end_s": 72.34,
+          "film_s": 68.72,
+          "film": "1:08.72"
+        },
+        {
+          "i": 15,
+          "text": "Would you ever think that the stone and the Moon were doing the same thing?",
+          "start_s": 72.34,
+          "end_s": 77.24,
+          "film_s": 72.34,
+          "film": "1:12.34"
+        },
+        {
+          "i": 16,
+          "text": "One young man did.",
+          "start_s": 77.24,
+          "end_s": 79.24,
+          "film_s": 77.24,
+          "film": "1:17.24"
+        },
+        {
+          "i": 17,
+          "text": "And it started in a year when the whole country was afraid.",
+          "start_s": 79.24,
+          "end_s": 83.46,
+          "film_s": 79.24,
+          "film": "1:19.24"
+        }
+      ],
+      "words": [
+        [
+          0.0,
+          "right"
+        ],
+        [
+          0.24,
+          "now"
+        ],
+        [
+          0.66,
+          "as"
+        ],
+        [
+          1.1,
+          "you"
+        ],
+        [
+          1.28,
+          "watch"
+        ],
+        [
+          1.52,
+          "this"
+        ],
+        [
+          2.08,
+          "the"
+        ],
+        [
+          2.54,
+          "moon"
+        ],
+        [
+          2.88,
+          "is"
+        ],
+        [
+          3.34,
+          "falling"
+        ],
+        [
+          3.88,
+          "towards"
+        ],
+        [
+          4.32,
+          "the"
+        ],
+        [
+          4.62,
+          "earth"
+        ],
+        [
+          4.9,
+          "so"
+        ],
+        [
+          6.22,
+          "why"
+        ],
+        [
+          6.54,
+          "doesn't"
+        ],
+        [
+          6.82,
+          "it"
+        ],
+        [
+          7.02,
+          "ever"
+        ],
+        [
+          7.36,
+          "hit"
+        ],
+        [
+          7.7,
+          "us"
+        ],
+        [
+          8.63,
+          "and"
+        ],
+        [
+          8.96,
+          "what"
+        ],
+        [
+          9.16,
+          "does"
+        ],
+        [
+          9.32,
+          "it"
+        ],
+        [
+          9.46,
+          "have"
+        ],
+        [
+          9.6,
+          "to"
+        ],
+        [
+          9.74,
+          "do"
+        ],
+        [
+          10.02,
+          "with"
+        ],
+        [
+          10.38,
+          "an"
+        ],
+        [
+          10.52,
+          "apple"
+        ],
+        [
+          10.94,
+          "by"
+        ],
+        [
+          12.22,
+          "the"
+        ],
+        [
+          12.34,
+          "end"
+        ],
+        [
+          12.48,
+          "of"
+        ],
+        [
+          12.6,
+          "this"
+        ],
+        [
+          12.78,
+          "film"
+        ],
+        [
+          13.18,
+          "you'll"
+        ],
+        [
+          13.62,
+          "know"
+        ],
+        [
+          13.86,
+          "how"
+        ],
+        [
+          14.22,
+          "a"
+        ],
+        [
+          14.34,
+          "young"
+        ],
+        [
+          14.56,
+          "man"
+        ],
+        [
+          14.94,
+          "in"
+        ],
+        [
+          15.16,
+          "a"
+        ],
+        [
+          15.28,
+          "farmhouse"
+        ],
+        [
+          15.8,
+          "garden"
+        ],
+        [
+          16.32,
+          "an"
+        ],
+        [
+          16.96,
+          "imaginary"
+        ],
+        [
+          17.44,
+          "cannon"
+        ],
+        [
+          17.98,
+          "and"
+        ],
+        [
+          18.72,
+          "one"
+        ],
+        [
+          19.1,
+          "careful"
+        ],
+        [
+          19.74,
+          "sum"
+        ],
+        [
+          20.24,
+          "showed"
+        ],
+        [
+          21.06,
+          "that"
+        ],
+        [
+          21.38,
+          "the"
+        ],
+        [
+          21.56,
+          "pull"
+        ],
+        [
+          21.86,
+          "that"
+        ],
+        [
+          22.12,
+          "drops"
+        ],
+        [
+          22.42,
+          "an"
+        ],
+        [
+          22.6,
+          "apple"
+        ],
+        [
+          23.02,
+          "also"
+        ],
+        [
+          23.96,
+          "holds"
+        ],
+        [
+          24.5,
+          "the"
+        ],
+        [
+          24.76,
+          "moon"
+        ],
+        [
+          25.04,
+          "in"
+        ],
+        [
+          25.46,
+          "the"
+        ],
+        [
+          25.58,
+          "sky"
+        ],
+        [
+          26.02,
+          "for"
+        ],
+        [
+          27.48,
+          "thousands"
+        ],
+        [
+          27.92,
+          "of"
+        ],
+        [
+          28.1,
+          "years"
+        ],
+        [
+          28.44,
+          "people"
+        ],
+        [
+          28.8,
+          "believe"
+        ],
+        [
+          29.2,
+          "the"
+        ],
+        [
+          29.42,
+          "sky"
+        ],
+        [
+          29.82,
+          "followed"
+        ],
+        [
+          30.3,
+          "different"
+        ],
+        [
+          30.74,
+          "rules"
+        ],
+        [
+          31.12,
+          "from"
+        ],
+        [
+          31.4,
+          "the"
+        ],
+        [
+          31.56,
+          "earth"
+        ],
+        [
+          31.94,
+          "down"
+        ],
+        [
+          32.86,
+          "here"
+        ],
+        [
+          33.24,
+          "things"
+        ],
+        [
+          33.58,
+          "fell"
+        ],
+        [
+          34.16,
+          "a"
+        ],
+        [
+          34.82,
+          "stone"
+        ],
+        [
+          35.18,
+          "dropped"
+        ],
+        [
+          35.72,
+          "a"
+        ],
+        [
+          35.98,
+          "cup"
+        ],
+        [
+          36.34,
+          "tipped"
+        ],
+        [
+          36.88,
+          "a"
+        ],
+        [
+          37.46,
+          "rider"
+        ],
+        [
+          37.86,
+          "fell"
+        ],
+        [
+          38.36,
+          "from"
+        ],
+        [
+          38.62,
+          "a"
+        ],
+        [
+          38.76,
+          "horse"
+        ],
+        [
+          39.72,
+          "but"
+        ],
+        [
+          40.12,
+          "up"
+        ],
+        [
+          40.28,
+          "there"
+        ],
+        [
+          40.72,
+          "the"
+        ],
+        [
+          41.06,
+          "moon"
+        ],
+        [
+          41.5,
+          "the"
+        ],
+        [
+          41.76,
+          "sun"
+        ],
+        [
+          42.08,
+          "and"
+        ],
+        [
+          42.38,
+          "the"
+        ],
+        [
+          42.5,
+          "planets"
+        ],
+        [
+          42.92,
+          "moved"
+        ],
+        [
+          43.78,
+          "in"
+        ],
+        [
+          44.02,
+          "perfect"
+        ],
+        [
+          44.44,
+          "circles"
+        ],
+        [
+          45.28,
+          "forever"
+        ],
+        [
+          46.12,
+          "and"
+        ],
+        [
+          46.86,
+          "never"
+        ],
+        [
+          47.22,
+          "fell"
+        ],
+        [
+          47.5,
+          "at"
+        ],
+        [
+          47.7,
+          "all"
+        ],
+        [
+          48.88,
+          "why"
+        ],
+        [
+          49.24,
+          "should"
+        ],
+        [
+          49.48,
+          "a"
+        ],
+        [
+          49.62,
+          "stone"
+        ],
+        [
+          49.96,
+          "fall"
+        ],
+        [
+          50.36,
+          "but"
+        ],
+        [
+          50.84,
+          "not"
+        ],
+        [
+          51.04,
+          "the"
+        ],
+        [
+          51.22,
+          "moon"
+        ],
+        [
+          51.54,
+          "it"
+        ],
+        [
+          52.58,
+          "was"
+        ],
+        [
+          52.74,
+          "one"
+        ],
+        [
+          52.94,
+          "of"
+        ],
+        [
+          53.06,
+          "the"
+        ],
+        [
+          53.16,
+          "oldest"
+        ],
+        [
+          53.64,
+          "mysteries"
+        ],
+        [
+          54.18,
+          "in"
+        ],
+        [
+          54.54,
+          "the"
+        ],
+        [
+          54.66,
+          "world"
+        ],
+        [
+          55.98,
+          "picture"
+        ],
+        [
+          56.62,
+          "yourself"
+        ],
+        [
+          57.04,
+          "on"
+        ],
+        [
+          57.46,
+          "a"
+        ],
+        [
+          57.58,
+          "clear"
+        ],
+        [
+          57.84,
+          "night"
+        ],
+        [
+          58.2,
+          "in"
+        ],
+        [
+          58.5,
+          "1665"
+        ],
+        [
+          59.98,
+          "you"
+        ],
+        [
+          61.12,
+          "would"
+        ],
+        [
+          61.24,
+          "see"
+        ],
+        [
+          61.44,
+          "the"
+        ],
+        [
+          61.6,
+          "moon"
+        ],
+        [
+          61.9,
+          "rise"
+        ],
+        [
+          62.28,
+          "over"
+        ],
+        [
+          62.7,
+          "the"
+        ],
+        [
+          62.88,
+          "fields"
+        ],
+        [
+          63.48,
+          "huge"
+        ],
+        [
+          64.32,
+          "and"
+        ],
+        [
+          64.7,
+          "silent"
+        ],
+        [
+          65.28,
+          "you"
+        ],
+        [
+          66.22,
+          "would"
+        ],
+        [
+          66.36,
+          "feel"
+        ],
+        [
+          66.68,
+          "the"
+        ],
+        [
+          66.94,
+          "cold"
+        ],
+        [
+          67.38,
+          "ground"
+        ],
+        [
+          67.76,
+          "under"
+        ],
+        [
+          68.14,
+          "your"
+        ],
+        [
+          68.34,
+          "feet"
+        ],
+        [
+          68.72,
+          "and"
+        ],
+        [
+          69.5,
+          "if"
+        ],
+        [
+          69.62,
+          "you"
+        ],
+        [
+          69.72,
+          "dropped"
+        ],
+        [
+          69.92,
+          "a"
+        ],
+        [
+          70.1,
+          "stone"
+        ],
+        [
+          70.6,
+          "you"
+        ],
+        [
+          71.26,
+          "would"
+        ],
+        [
+          71.36,
+          "hear"
+        ],
+        [
+          71.6,
+          "it"
+        ],
+        [
+          71.8,
+          "thud"
+        ],
+        [
+          72.34,
+          "would"
+        ],
+        [
+          73.38,
+          "you"
+        ],
+        [
+          73.54,
+          "ever"
+        ],
+        [
+          73.76,
+          "think"
+        ],
+        [
+          74.06,
+          "that"
+        ],
+        [
+          74.4,
+          "the"
+        ],
+        [
+          74.54,
+          "stone"
+        ],
+        [
+          74.98,
+          "and"
+        ],
+        [
+          75.2,
+          "the"
+        ],
+        [
+          75.3,
+          "moon"
+        ],
+        [
+          75.62,
+          "were"
+        ],
+        [
+          75.96,
+          "doing"
+        ],
+        [
+          76.18,
+          "the"
+        ],
+        [
+          76.38,
+          "same"
+        ],
+        [
+          76.66,
+          "thing"
+        ],
+        [
+          77.24,
+          "one"
+        ],
+        [
+          78.32,
+          "young"
+        ],
+        [
+          78.54,
+          "man"
+        ],
+        [
+          78.86,
+          "did"
+        ],
+        [
+          79.24,
+          "and"
+        ],
+        [
+          80.0,
+          "it"
+        ],
+        [
+          80.12,
+          "started"
+        ],
+        [
+          80.48,
+          "in"
+        ],
+        [
+          80.78,
+          "a"
+        ],
+        [
+          80.92,
+          "year"
+        ],
+        [
+          81.2,
+          "when"
+        ],
+        [
+          81.54,
+          "the"
+        ],
+        [
+          81.7,
+          "whole"
+        ],
+        [
+          81.98,
+          "country"
+        ],
+        [
+          82.5,
+          "was"
+        ],
+        [
+          83.02,
+          "afraid"
+        ]
+      ]
+    },
+    {
+      "part": 2,
+      "file": "hos_009_part02_an_apple_in_a_plague_year_v01.mp3",
+      "sha256": "3685590755967b2267d209a2847821df7088d60b1fa602328b0025dfb017eadc",
+      "duration_s": 89.84,
+      "match_rate_pct": 98.7,
+      "chapter_card": "An Apple in a Plague Year",
+      "card_in_film_s": 84.44,
+      "card_in_film": "1:24.44",
+      "vo_film_start_s": 86.34,
+      "vo_film_start": "1:26.34",
+      "vo_film_end_s": 176.18,
+      "vo_film_end": "2:56.18",
+      "last_word_s": 88.34,
+      "sentences": [
+        {
+          "i": 1,
+          "text": "In sixteen sixty-five, a terrible plague swept through England.",
+          "start_s": 0.0,
+          "end_s": 3.88,
+          "film_s": 86.34,
+          "film": "1:26.34"
+        },
+        {
+          "i": 2,
+          "text": "To keep students safe, the university at Cambridge closed its doors.",
+          "start_s": 4.64,
+          "end_s": 8.38,
+          "film_s": 90.98,
+          "film": "1:30.98"
+        },
+        {
+          "i": 3,
+          "text": "And a young student called Isaac Newton went home, to his family's farmhouse in the village of Woolsthorpe.",
+          "start_s": 8.38,
+          "end_s": 14.46,
+          "film_s": 94.72,
+          "film": "1:34.72"
+        },
+        {
+          "i": 4,
+          "text": "He had been born in that same house, on Christmas Day, sixteen forty-two.",
+          "start_s": 14.46,
+          "end_s": 18.9,
+          "film_s": 100.8,
+          "film": "1:40.80"
+        },
+        {
+          "i": 5,
+          "text": "His father had died a few months before.",
+          "start_s": 18.9,
+          "end_s": 23.18,
+          "film_s": 105.24,
+          "film": "1:45.24"
+        },
+        {
+          "i": 6,
+          "text": "Newton was so tiny, his mother later said, that he could have fitted inside a quart pot.",
+          "start_s": 24.5,
+          "end_s": 29.62,
+          "film_s": 110.84,
+          "film": "1:50.84"
+        },
+        {
+          "i": 7,
+          "text": "For almost two years, he worked alone.",
+          "start_s": 31.16,
+          "end_s": 33.34,
+          "film_s": 117.5,
+          "film": "1:57.50"
+        },
+        {
+          "i": 8,
+          "text": "He studied light, invented new kinds of mathematics, and asked questions no one had asked before.",
+          "start_s": 33.82,
+          "end_s": 40.18,
+          "film_s": 120.16,
+          "film": "2:00.16"
+        },
+        {
+          "i": 9,
+          "text": "Many years later, when he was an old man, Newton told a friend how one of those questions began.",
+          "start_s": 41.48,
+          "end_s": 47.1,
+          "film_s": 127.82,
+          "film": "2:07.82"
+        },
+        {
+          "i": 10,
+          "text": "He was sitting in the garden, thinking, when an apple fell from a tree.",
+          "start_s": 48.08,
+          "end_s": 52.24,
+          "film_s": 134.42,
+          "film": "2:14.42"
+        },
+        {
+          "i": 11,
+          "text": "The apple didn't hit him on the head.",
+          "start_s": 53.08,
+          "end_s": 54.72,
+          "film_s": 139.42,
+          "film": "2:19.42"
+        },
+        {
+          "i": 12,
+          "text": "That part was added later.",
+          "start_s": 55.06,
+          "end_s": 56.34,
+          "film_s": 141.4,
+          "film": "2:21.40"
+        },
+        {
+          "i": 13,
+          "text": "But it made him wonder.",
+          "start_s": 56.84,
+          "end_s": 57.96,
+          "film_s": 143.18,
+          "film": "2:23.18"
+        },
+        {
+          "i": 14,
+          "text": "The apple always falls straight down, towards the centre of the Earth.",
+          "start_s": 59.06,
+          "end_s": 62.52,
+          "film_s": 145.4,
+          "film": "2:25.40"
+        },
+        {
+          "i": 15,
+          "text": "The pull that drags it down works at the top of the tree.",
+          "start_s": 63.06,
+          "end_s": 66.3,
+          "film_s": 149.4,
+          "film": "2:29.40"
+        },
+        {
+          "i": 16,
+          "text": "It works at the top of a tall tower, and at the top of a mountain.",
+          "start_s": 66.9,
+          "end_s": 70.46,
+          "film_s": 153.24,
+          "film": "2:33.24"
+        },
+        {
+          "i": 17,
+          "text": "So how far up does it reach?",
+          "start_s": 71.34,
+          "end_s": 72.98,
+          "film_s": 157.68,
+          "film": "2:37.68"
+        },
+        {
+          "i": 18,
+          "text": "Could it reach all the way to the Moon?",
+          "start_s": 73.92,
+          "end_s": 75.5,
+          "film_s": 160.26,
+          "film": "2:40.26"
+        },
+        {
+          "i": 19,
+          "text": "It was an extraordinary idea.",
+          "start_s": 76.66,
+          "end_s": 78.56,
+          "film_s": 163.0,
+          "film": "2:43.00"
+        },
+        {
+          "i": 20,
+          "text": "If the Earth was pulling on the Moon, then the Moon should be falling.",
+          "start_s": 79.22,
+          "end_s": 83.02,
+          "film_s": 165.56,
+          "film": "2:45.56"
+        },
+        {
+          "i": 21,
+          "text": "But it was still up there, night after night.",
+          "start_s": 83.8,
+          "end_s": 86.28,
+          "film_s": 170.14,
+          "film": "2:50.14"
+        },
+        {
+          "i": 22,
+          "text": "So what was holding it up?",
+          "start_s": 87.1,
+          "end_s": 88.34,
+          "film_s": 173.44,
+          "film": "2:53.44"
+        }
+      ],
+      "words": [
+        [
+          0.0,
+          "In"
+        ],
+        [
+          0.26,
+          "1665"
+        ],
+        [
+          1.38,
+          "a"
+        ],
+        [
+          1.82,
+          "terrible"
+        ],
+        [
+          2.24,
+          "plague"
+        ],
+        [
+          2.68,
+          "swept"
+        ],
+        [
+          3.16,
+          "through"
+        ],
+        [
+          3.5,
+          "England."
+        ],
+        [
+          4.64,
+          "To"
+        ],
+        [
+          4.82,
+          "keep"
+        ],
+        [
+          5.0,
+          "students"
+        ],
+        [
+          5.4,
+          "safe,"
+        ],
+        [
+          6.08,
+          "the"
+        ],
+        [
+          6.1,
+          "University"
+        ],
+        [
+          6.5,
+          "at"
+        ],
+        [
+          6.86,
+          "Cambridge"
+        ],
+        [
+          7.28,
+          "closed"
+        ],
+        [
+          7.74,
+          "its"
+        ],
+        [
+          8.02,
+          "doors"
+        ],
+        [
+          8.38,
+          "and"
+        ],
+        [
+          9.18,
+          "the"
+        ],
+        [
+          9.3,
+          "young"
+        ],
+        [
+          9.52,
+          "student"
+        ],
+        [
+          9.9,
+          "called"
+        ],
+        [
+          10.18,
+          "Isaac"
+        ],
+        [
+          10.58,
+          "Newton"
+        ],
+        [
+          10.96,
+          "went"
+        ],
+        [
+          11.3,
+          "home"
+        ],
+        [
+          11.68,
+          "to"
+        ],
+        [
+          12.26,
+          "his"
+        ],
+        [
+          12.4,
+          "family's"
+        ],
+        [
+          12.92,
+          "farmhouse"
+        ],
+        [
+          13.44,
+          "in"
+        ],
+        [
+          13.84,
+          "the"
+        ],
+        [
+          13.92,
+          "village"
+        ],
+        [
+          14.2,
+          "of"
+        ],
+        [
+          14.46,
+          "Walsthorpe."
+        ],
+        [
+          16.06,
+          "He"
+        ],
+        [
+          16.4,
+          "had"
+        ],
+        [
+          16.48,
+          "been"
+        ],
+        [
+          16.64,
+          "born"
+        ],
+        [
+          16.88,
+          "in"
+        ],
+        [
+          17.08,
+          "that"
+        ],
+        [
+          17.24,
+          "same"
+        ],
+        [
+          17.52,
+          "house"
+        ],
+        [
+          17.86,
+          "on"
+        ],
+        [
+          18.22,
+          "Christmas"
+        ],
+        [
+          18.56,
+          "day"
+        ],
+        [
+          18.9,
+          "1642."
+        ],
+        [
+          21.04,
+          "His"
+        ],
+        [
+          21.26,
+          "father"
+        ],
+        [
+          21.56,
+          "had"
+        ],
+        [
+          21.82,
+          "died"
+        ],
+        [
+          22.08,
+          "a"
+        ],
+        [
+          22.24,
+          "few"
+        ],
+        [
+          22.42,
+          "months"
+        ],
+        [
+          22.64,
+          "before."
+        ],
+        [
+          24.5,
+          "Newton"
+        ],
+        [
+          24.72,
+          "was"
+        ],
+        [
+          24.94,
+          "so"
+        ],
+        [
+          25.18,
+          "tiny,"
+        ],
+        [
+          25.7,
+          "his"
+        ],
+        [
+          26.0,
+          "mother"
+        ],
+        [
+          26.2,
+          "later"
+        ],
+        [
+          26.5,
+          "said,"
+        ],
+        [
+          26.9,
+          "that"
+        ],
+        [
+          27.5,
+          "he"
+        ],
+        [
+          27.64,
+          "could"
+        ],
+        [
+          27.78,
+          "have"
+        ],
+        [
+          27.92,
+          "fitted"
+        ],
+        [
+          28.14,
+          "inside"
+        ],
+        [
+          28.64,
+          "a"
+        ],
+        [
+          28.86,
+          "quart"
+        ],
+        [
+          29.18,
+          "pot."
+        ],
+        [
+          31.16,
+          "For"
+        ],
+        [
+          31.38,
+          "almost"
+        ],
+        [
+          31.64,
+          "two"
+        ],
+        [
+          31.96,
+          "years"
+        ],
+        [
+          32.4,
+          "he"
+        ],
+        [
+          32.64,
+          "worked"
+        ],
+        [
+          32.9,
+          "alone."
+        ],
+        [
+          33.82,
+          "He"
+        ],
+        [
+          33.98,
+          "studied"
+        ],
+        [
+          34.3,
+          "light,"
+        ],
+        [
+          35.18,
+          "invented"
+        ],
+        [
+          35.56,
+          "new"
+        ],
+        [
+          35.98,
+          "kinds"
+        ],
+        [
+          36.28,
+          "of"
+        ],
+        [
+          36.52,
+          "mathematics"
+        ],
+        [
+          37.02,
+          "and"
+        ],
+        [
+          37.82,
+          "asked"
+        ],
+        [
+          38.06,
+          "questions"
+        ],
+        [
+          38.56,
+          "no"
+        ],
+        [
+          38.96,
+          "one"
+        ],
+        [
+          39.22,
+          "had"
+        ],
+        [
+          39.44,
+          "asked"
+        ],
+        [
+          39.7,
+          "before."
+        ],
+        [
+          41.48,
+          "Many"
+        ],
+        [
+          41.68,
+          "years"
+        ],
+        [
+          41.96,
+          "later"
+        ],
+        [
+          42.44,
+          "when"
+        ],
+        [
+          42.72,
+          "he"
+        ],
+        [
+          42.82,
+          "was"
+        ],
+        [
+          42.92,
+          "an"
+        ],
+        [
+          43.04,
+          "old"
+        ],
+        [
+          43.28,
+          "man,"
+        ],
+        [
+          44.36,
+          "Newton"
+        ],
+        [
+          44.48,
+          "told"
+        ],
+        [
+          44.8,
+          "a"
+        ],
+        [
+          45.02,
+          "friend"
+        ],
+        [
+          45.26,
+          "how"
+        ],
+        [
+          45.6,
+          "one"
+        ],
+        [
+          45.82,
+          "of"
+        ],
+        [
+          45.96,
+          "those"
+        ],
+        [
+          46.12,
+          "questions"
+        ],
+        [
+          46.56,
+          "began."
+        ],
+        [
+          48.08,
+          "He"
+        ],
+        [
+          48.34,
+          "was"
+        ],
+        [
+          48.46,
+          "sitting"
+        ],
+        [
+          48.66,
+          "in"
+        ],
+        [
+          48.86,
+          "the"
+        ],
+        [
+          48.98,
+          "garden"
+        ],
+        [
+          49.32,
+          "thinking"
+        ],
+        [
+          49.82,
+          "when"
+        ],
+        [
+          50.64,
+          "an"
+        ],
+        [
+          50.82,
+          "apple"
+        ],
+        [
+          51.12,
+          "fell"
+        ],
+        [
+          51.48,
+          "from"
+        ],
+        [
+          51.76,
+          "a"
+        ],
+        [
+          51.9,
+          "tree."
+        ],
+        [
+          53.08,
+          "The"
+        ],
+        [
+          53.28,
+          "apple"
+        ],
+        [
+          53.52,
+          "didn't"
+        ],
+        [
+          53.8,
+          "hit"
+        ],
+        [
+          54.0,
+          "him"
+        ],
+        [
+          54.14,
+          "on"
+        ],
+        [
+          54.24,
+          "the"
+        ],
+        [
+          54.38,
+          "head,"
+        ],
+        [
+          55.06,
+          "that"
+        ],
+        [
+          55.26,
+          "part"
+        ],
+        [
+          55.5,
+          "was"
+        ],
+        [
+          55.66,
+          "added"
+        ],
+        [
+          55.88,
+          "later,"
+        ],
+        [
+          56.84,
+          "but"
+        ],
+        [
+          57.1,
+          "it"
+        ],
+        [
+          57.2,
+          "made"
+        ],
+        [
+          57.36,
+          "him"
+        ],
+        [
+          57.58,
+          "wonder."
+        ],
+        [
+          59.06,
+          "The"
+        ],
+        [
+          59.2,
+          "apple"
+        ],
+        [
+          59.46,
+          "always"
+        ],
+        [
+          59.86,
+          "falls"
+        ],
+        [
+          60.2,
+          "straight"
+        ],
+        [
+          60.6,
+          "down"
+        ],
+        [
+          61.02,
+          "towards"
+        ],
+        [
+          61.44,
+          "the"
+        ],
+        [
+          61.7,
+          "centre"
+        ],
+        [
+          61.92,
+          "of"
+        ],
+        [
+          62.16,
+          "the"
+        ],
+        [
+          62.24,
+          "earth."
+        ],
+        [
+          63.06,
+          "The"
+        ],
+        [
+          63.34,
+          "pool"
+        ],
+        [
+          63.7,
+          "that"
+        ],
+        [
+          63.96,
+          "drags"
+        ],
+        [
+          64.28,
+          "it"
+        ],
+        [
+          64.5,
+          "down"
+        ],
+        [
+          64.8,
+          "works"
+        ],
+        [
+          65.18,
+          "at"
+        ],
+        [
+          65.4,
+          "the"
+        ],
+        [
+          65.54,
+          "top"
+        ],
+        [
+          65.68,
+          "of"
+        ],
+        [
+          65.84,
+          "the"
+        ],
+        [
+          65.98,
+          "tree,"
+        ],
+        [
+          66.9,
+          "it"
+        ],
+        [
+          67.0,
+          "works"
+        ],
+        [
+          67.26,
+          "at"
+        ],
+        [
+          67.46,
+          "the"
+        ],
+        [
+          67.6,
+          "top"
+        ],
+        [
+          67.74,
+          "of"
+        ],
+        [
+          67.88,
+          "a"
+        ],
+        [
+          68.0,
+          "tall"
+        ],
+        [
+          68.3,
+          "tower"
+        ],
+        [
+          68.72,
+          "and"
+        ],
+        [
+          69.36,
+          "at"
+        ],
+        [
+          69.52,
+          "the"
+        ],
+        [
+          69.62,
+          "top"
+        ],
+        [
+          69.78,
+          "of"
+        ],
+        [
+          69.96,
+          "a"
+        ],
+        [
+          70.04,
+          "mountain."
+        ],
+        [
+          71.34,
+          "So"
+        ],
+        [
+          71.64,
+          "how"
+        ],
+        [
+          71.86,
+          "far"
+        ],
+        [
+          72.12,
+          "up"
+        ],
+        [
+          72.32,
+          "does"
+        ],
+        [
+          72.46,
+          "it"
+        ],
+        [
+          72.6,
+          "reach?"
+        ],
+        [
+          73.92,
+          "Could"
+        ],
+        [
+          74.08,
+          "it"
+        ],
+        [
+          74.22,
+          "reach"
+        ],
+        [
+          74.44,
+          "all"
+        ],
+        [
+          74.64,
+          "the"
+        ],
+        [
+          74.76,
+          "way"
+        ],
+        [
+          74.92,
+          "to"
+        ],
+        [
+          75.1,
+          "the"
+        ],
+        [
+          75.24,
+          "moon?"
+        ],
+        [
+          76.66,
+          "It"
+        ],
+        [
+          77.1,
+          "was"
+        ],
+        [
+          77.22,
+          "an"
+        ],
+        [
+          77.32,
+          "extraordinary"
+        ],
+        [
+          77.94,
+          "idea."
+        ],
+        [
+          79.22,
+          "If"
+        ],
+        [
+          79.46,
+          "the"
+        ],
+        [
+          79.62,
+          "earth"
+        ],
+        [
+          79.8,
+          "was"
+        ],
+        [
+          80.02,
+          "pulling"
+        ],
+        [
+          80.28,
+          "on"
+        ],
+        [
+          80.5,
+          "the"
+        ],
+        [
+          80.62,
+          "moon,"
+        ],
+        [
+          81.62,
+          "then"
+        ],
+        [
+          81.72,
+          "the"
+        ],
+        [
+          81.86,
+          "moon"
+        ],
+        [
+          82.12,
+          "should"
+        ],
+        [
+          82.4,
+          "be"
+        ],
+        [
+          82.54,
+          "falling,"
+        ],
+        [
+          83.8,
+          "but"
+        ],
+        [
+          83.98,
+          "it"
+        ],
+        [
+          84.08,
+          "was"
+        ],
+        [
+          84.16,
+          "still"
+        ],
+        [
+          84.42,
+          "up"
+        ],
+        [
+          84.6,
+          "there"
+        ],
+        [
+          84.94,
+          "night"
+        ],
+        [
+          85.36,
+          "after"
+        ],
+        [
+          85.8,
+          "night."
+        ],
+        [
+          87.1,
+          "So"
+        ],
+        [
+          87.12,
+          "what"
+        ],
+        [
+          87.36,
+          "was"
+        ],
+        [
+          87.54,
+          "holding"
+        ],
+        [
+          87.86,
+          "it"
+        ],
+        [
+          88.02,
+          "up?"
+        ]
+      ]
+    },
+    {
+      "part": 3,
+      "file": "hos_009_part03_the_cannon_on_the_mountain_v01.mp3",
+      "sha256": "53235ab062eb782bf1beda7cb5baab2ff472aeb87b4ad2c90ae63ffe35602efb",
+      "duration_s": 80.88,
+      "match_rate_pct": 99.0,
+      "chapter_card": "The Cannon on the Mountain",
+      "card_in_film_s": 176.78,
+      "card_in_film": "2:56.78",
+      "vo_film_start_s": 178.68,
+      "vo_film_start": "2:58.68",
+      "vo_film_end_s": 259.56,
+      "vo_film_end": "4:19.56",
+      "last_word_s": 80.86,
+      "sentences": [
+        {
+          "i": 1,
+          "text": "Newton's answer was so simple it is easy to miss.",
+          "start_s": 0.0,
+          "end_s": 2.9,
+          "film_s": 178.68,
+          "film": "2:58.68"
+        },
+        {
+          "i": 2,
+          "text": "The Moon isn't held up at all.",
+          "start_s": 3.74,
+          "end_s": 5.42,
+          "film_s": 182.42,
+          "film": "3:02.42"
+        },
+        {
+          "i": 3,
+          "text": "It really is falling.",
+          "start_s": 5.84,
+          "end_s": 7.18,
+          "film_s": 184.52,
+          "film": "3:04.52"
+        },
+        {
+          "i": 4,
+          "text": "It just never lands.",
+          "start_s": 7.82,
+          "end_s": 9.14,
+          "film_s": 186.5,
+          "film": "3:06.50"
+        },
+        {
+          "i": 5,
+          "text": "To explain it, he imagined a cannon, on top of a mountain so tall it poked above the air.",
+          "start_s": 10.52,
+          "end_s": 16.26,
+          "film_s": 189.2,
+          "film": "3:09.20"
+        },
+        {
+          "i": 6,
+          "text": "Fire a cannonball sideways, gently, and it curves down and hits the ground near the bottom of the mountain.",
+          "start_s": 17.1,
+          "end_s": 23.1,
+          "film_s": 195.78,
+          "film": "3:15.78"
+        },
+        {
+          "i": 7,
+          "text": "Fire it faster, and it flies further before it lands.",
+          "start_s": 24.0,
+          "end_s": 27.48,
+          "film_s": 202.68,
+          "film": "3:22.68"
+        },
+        {
+          "i": 8,
+          "text": "Now imagine firing it so fast that, as it falls, the round Earth curves away beneath it, just as quickly.",
+          "start_s": 28.48,
+          "end_s": 36.12,
+          "film_s": 207.16,
+          "film": "3:27.16"
+        },
+        {
+          "i": 9,
+          "text": "What would you see?",
+          "start_s": 37.06,
+          "end_s": 37.96,
+          "film_s": 215.74,
+          "film": "3:35.74"
+        },
+        {
+          "i": 10,
+          "text": "The ball keeps falling, and keeps missing the ground.",
+          "start_s": 38.88,
+          "end_s": 42.38,
+          "film_s": 217.56,
+          "film": "3:37.56"
+        },
+        {
+          "i": 11,
+          "text": "It falls all the way around the world, and comes back to the mountain.",
+          "start_s": 42.98,
+          "end_s": 47.0,
+          "film_s": 221.66,
+          "film": "3:41.66"
+        },
+        {
+          "i": 12,
+          "text": "That is an orbit.",
+          "start_s": 47.74,
+          "end_s": 49.02,
+          "film_s": 226.42,
+          "film": "3:46.42"
+        },
+        {
+          "i": 13,
+          "text": "Not something floating, but something falling, and moving sideways so fast that it never hits.",
+          "start_s": 49.74,
+          "end_s": 56.04,
+          "film_s": 228.42,
+          "film": "3:48.42"
+        },
+        {
+          "i": 14,
+          "text": "And that's what the Moon is doing.",
+          "start_s": 56.54,
+          "end_s": 58.58,
+          "film_s": 235.22,
+          "film": "3:55.22"
+        },
+        {
+          "i": 15,
+          "text": "Every second, it moves sideways about a kilometre, and falls a tiny bit towards the Earth.",
+          "start_s": 59.38,
+          "end_s": 65.3,
+          "film_s": 238.06,
+          "film": "3:58.06"
+        },
+        {
+          "i": 16,
+          "text": "Sideways and down, sideways and down, for ever.",
+          "start_s": 66.16,
+          "end_s": 68.88,
+          "film_s": 244.84,
+          "film": "4:04.84"
+        },
+        {
+          "i": 17,
+          "text": "But an idea isn't proof.",
+          "start_s": 69.28,
+          "end_s": 72.52,
+          "film_s": 247.96,
+          "film": "4:07.96"
+        },
+        {
+          "i": 18,
+          "text": "If the same pull holds the Moon and drops the apple, Newton should be able to calculate one from the other.",
+          "start_s": 73.38,
+          "end_s": 79.7,
+          "film_s": 252.06,
+          "film": "4:12.06"
+        },
+        {
+          "i": 19,
+          "text": "Could he?",
+          "start_s": 80.52,
+          "end_s": 80.86,
+          "film_s": 259.2,
+          "film": "4:19.20"
+        }
+      ],
+      "words": [
+        [
+          0.0,
+          "Newton's"
+        ],
+        [
+          0.62,
+          "answer"
+        ],
+        [
+          0.88,
+          "was"
+        ],
+        [
+          1.16,
+          "so"
+        ],
+        [
+          1.34,
+          "simple"
+        ],
+        [
+          1.86,
+          "it"
+        ],
+        [
+          2.04,
+          "is"
+        ],
+        [
+          2.2,
+          "easy"
+        ],
+        [
+          2.38,
+          "to"
+        ],
+        [
+          2.62,
+          "miss."
+        ],
+        [
+          3.74,
+          "The"
+        ],
+        [
+          3.84,
+          "moon"
+        ],
+        [
+          4.08,
+          "isn't"
+        ],
+        [
+          4.44,
+          "held"
+        ],
+        [
+          4.66,
+          "up"
+        ],
+        [
+          4.88,
+          "at"
+        ],
+        [
+          5.02,
+          "all,"
+        ],
+        [
+          5.84,
+          "it"
+        ],
+        [
+          6.08,
+          "really"
+        ],
+        [
+          6.4,
+          "is"
+        ],
+        [
+          6.66,
+          "falling,"
+        ],
+        [
+          7.82,
+          "it"
+        ],
+        [
+          8.04,
+          "just"
+        ],
+        [
+          8.26,
+          "never"
+        ],
+        [
+          8.64,
+          "lands."
+        ],
+        [
+          10.52,
+          "To"
+        ],
+        [
+          10.72,
+          "explain"
+        ],
+        [
+          11.12,
+          "it"
+        ],
+        [
+          11.42,
+          "he"
+        ],
+        [
+          11.62,
+          "imagined"
+        ],
+        [
+          11.94,
+          "a"
+        ],
+        [
+          12.12,
+          "cannon"
+        ],
+        [
+          12.4,
+          "on"
+        ],
+        [
+          13.08,
+          "top"
+        ],
+        [
+          13.28,
+          "of"
+        ],
+        [
+          13.44,
+          "a"
+        ],
+        [
+          13.56,
+          "mountain"
+        ],
+        [
+          13.98,
+          "so"
+        ],
+        [
+          14.36,
+          "tall"
+        ],
+        [
+          14.88,
+          "it"
+        ],
+        [
+          15.12,
+          "poked"
+        ],
+        [
+          15.38,
+          "above"
+        ],
+        [
+          15.68,
+          "the"
+        ],
+        [
+          15.88,
+          "air."
+        ],
+        [
+          17.1,
+          "Fire"
+        ],
+        [
+          17.22,
+          "a"
+        ],
+        [
+          17.44,
+          "cannonball"
+        ],
+        [
+          17.88,
+          "sideways,"
+        ],
+        [
+          18.94,
+          "gently,"
+        ],
+        [
+          19.82,
+          "and"
+        ],
+        [
+          20.0,
+          "it"
+        ],
+        [
+          20.1,
+          "curves"
+        ],
+        [
+          20.42,
+          "down"
+        ],
+        [
+          20.84,
+          "and"
+        ],
+        [
+          21.04,
+          "hits"
+        ],
+        [
+          21.24,
+          "the"
+        ],
+        [
+          21.42,
+          "ground"
+        ],
+        [
+          21.7,
+          "near"
+        ],
+        [
+          21.98,
+          "the"
+        ],
+        [
+          22.12,
+          "bottom"
+        ],
+        [
+          22.38,
+          "of"
+        ],
+        [
+          22.54,
+          "the"
+        ],
+        [
+          22.66,
+          "mountain."
+        ],
+        [
+          24.0,
+          "Fire"
+        ],
+        [
+          24.32,
+          "it"
+        ],
+        [
+          24.52,
+          "faster"
+        ],
+        [
+          24.92,
+          "and"
+        ],
+        [
+          25.68,
+          "it"
+        ],
+        [
+          25.78,
+          "flies"
+        ],
+        [
+          26.02,
+          "further"
+        ],
+        [
+          26.54,
+          "before"
+        ],
+        [
+          26.9,
+          "it"
+        ],
+        [
+          27.08,
+          "lands."
+        ],
+        [
+          28.48,
+          "Now"
+        ],
+        [
+          28.76,
+          "imagine"
+        ],
+        [
+          29.16,
+          "firing"
+        ],
+        [
+          29.54,
+          "it"
+        ],
+        [
+          29.76,
+          "so"
+        ],
+        [
+          30.1,
+          "fast"
+        ],
+        [
+          30.88,
+          "that"
+        ],
+        [
+          31.38,
+          "as"
+        ],
+        [
+          31.54,
+          "it"
+        ],
+        [
+          31.72,
+          "falls"
+        ],
+        [
+          32.18,
+          "the"
+        ],
+        [
+          32.78,
+          "round"
+        ],
+        [
+          33.18,
+          "earth"
+        ],
+        [
+          33.7,
+          "curves"
+        ],
+        [
+          34.12,
+          "away"
+        ],
+        [
+          34.48,
+          "beneath"
+        ],
+        [
+          34.74,
+          "it"
+        ],
+        [
+          35.18,
+          "just"
+        ],
+        [
+          35.52,
+          "as"
+        ],
+        [
+          35.76,
+          "quickly."
+        ],
+        [
+          37.06,
+          "What"
+        ],
+        [
+          37.34,
+          "would"
+        ],
+        [
+          37.48,
+          "you"
+        ],
+        [
+          37.6,
+          "see?"
+        ],
+        [
+          38.88,
+          "The"
+        ],
+        [
+          39.22,
+          "ball"
+        ],
+        [
+          39.58,
+          "keeps"
+        ],
+        [
+          40.0,
+          "falling"
+        ],
+        [
+          40.56,
+          "and"
+        ],
+        [
+          41.14,
+          "keeps"
+        ],
+        [
+          41.44,
+          "missing"
+        ],
+        [
+          41.74,
+          "the"
+        ],
+        [
+          41.98,
+          "ground,"
+        ],
+        [
+          42.98,
+          "it"
+        ],
+        [
+          43.24,
+          "falls"
+        ],
+        [
+          43.58,
+          "all"
+        ],
+        [
+          44.0,
+          "the"
+        ],
+        [
+          44.14,
+          "way"
+        ],
+        [
+          44.36,
+          "around"
+        ],
+        [
+          44.64,
+          "the"
+        ],
+        [
+          44.8,
+          "world"
+        ],
+        [
+          45.2,
+          "and"
+        ],
+        [
+          45.74,
+          "comes"
+        ],
+        [
+          45.96,
+          "back"
+        ],
+        [
+          46.24,
+          "to"
+        ],
+        [
+          46.46,
+          "the"
+        ],
+        [
+          46.58,
+          "mountain."
+        ],
+        [
+          47.74,
+          "That"
+        ],
+        [
+          48.14,
+          "is"
+        ],
+        [
+          48.48,
+          "an"
+        ],
+        [
+          48.64,
+          "orbit,"
+        ],
+        [
+          49.74,
+          "not"
+        ],
+        [
+          50.04,
+          "something"
+        ],
+        [
+          50.42,
+          "floating"
+        ],
+        [
+          51.02,
+          "but"
+        ],
+        [
+          51.66,
+          "something"
+        ],
+        [
+          52.04,
+          "falling"
+        ],
+        [
+          52.56,
+          "and"
+        ],
+        [
+          53.18,
+          "moving"
+        ],
+        [
+          53.48,
+          "sideways"
+        ],
+        [
+          54.02,
+          "so"
+        ],
+        [
+          54.48,
+          "fast"
+        ],
+        [
+          55.0,
+          "that"
+        ],
+        [
+          55.22,
+          "it"
+        ],
+        [
+          55.34,
+          "never"
+        ],
+        [
+          55.64,
+          "hits."
+        ],
+        [
+          56.54,
+          "And"
+        ],
+        [
+          57.26,
+          "that's"
+        ],
+        [
+          57.52,
+          "what"
+        ],
+        [
+          57.66,
+          "the"
+        ],
+        [
+          57.8,
+          "moon"
+        ],
+        [
+          57.98,
+          "is"
+        ],
+        [
+          58.24,
+          "doing."
+        ],
+        [
+          59.38,
+          "Every"
+        ],
+        [
+          59.66,
+          "second"
+        ],
+        [
+          60.0,
+          "it"
+        ],
+        [
+          60.4,
+          "moves"
+        ],
+        [
+          60.66,
+          "sideways"
+        ],
+        [
+          61.22,
+          "about"
+        ],
+        [
+          61.62,
+          "a"
+        ],
+        [
+          61.82,
+          "kilometre"
+        ],
+        [
+          62.6,
+          "and"
+        ],
+        [
+          62.94,
+          "falls"
+        ],
+        [
+          63.36,
+          "a"
+        ],
+        [
+          63.64,
+          "tiny"
+        ],
+        [
+          63.96,
+          "bit"
+        ],
+        [
+          64.34,
+          "towards"
+        ],
+        [
+          64.68,
+          "the"
+        ],
+        [
+          64.94,
+          "earth,"
+        ],
+        [
+          66.16,
+          "sideways"
+        ],
+        [
+          66.5,
+          "and"
+        ],
+        [
+          66.8,
+          "down,"
+        ],
+        [
+          67.82,
+          "sideways"
+        ],
+        [
+          68.0,
+          "and"
+        ],
+        [
+          68.48,
+          "down,"
+        ],
+        [
+          69.28,
+          "forever."
+        ],
+        [
+          71.12,
+          "But"
+        ],
+        [
+          71.3,
+          "an"
+        ],
+        [
+          71.44,
+          "idea"
+        ],
+        [
+          71.82,
+          "isn't"
+        ],
+        [
+          72.14,
+          "proof."
+        ],
+        [
+          73.38,
+          "If"
+        ],
+        [
+          73.56,
+          "the"
+        ],
+        [
+          73.72,
+          "same"
+        ],
+        [
+          74.04,
+          "pull"
+        ],
+        [
+          74.44,
+          "holds"
+        ],
+        [
+          74.84,
+          "the"
+        ],
+        [
+          75.08,
+          "moon"
+        ],
+        [
+          75.34,
+          "and"
+        ],
+        [
+          75.58,
+          "drops"
+        ],
+        [
+          75.78,
+          "the"
+        ],
+        [
+          76.02,
+          "apple,"
+        ],
+        [
+          77.12,
+          "Newton"
+        ],
+        [
+          77.26,
+          "should"
+        ],
+        [
+          77.56,
+          "be"
+        ],
+        [
+          77.68,
+          "able"
+        ],
+        [
+          77.86,
+          "to"
+        ],
+        [
+          78.04,
+          "calculate"
+        ],
+        [
+          78.48,
+          "one"
+        ],
+        [
+          78.88,
+          "from"
+        ],
+        [
+          79.14,
+          "the"
+        ],
+        [
+          79.3,
+          "other."
+        ],
+        [
+          80.52,
+          "Could"
+        ],
+        [
+          80.68,
+          "he?"
+        ]
+      ]
+    },
+    {
+      "part": 4,
+      "file": "hos_009_part04_the_moon_test_v01.mp3",
+      "sha256": "2d03f372e0a4b071f547b4c887ea5e1c2edcb7c8bd01618366287fa7708f1a84",
+      "duration_s": 131.2,
+      "match_rate_pct": 99.7,
+      "chapter_card": "The Moon Test",
+      "card_in_film_s": 260.16,
+      "card_in_film": "4:20.16",
+      "vo_film_start_s": 262.06,
+      "vo_film_start": "4:22.06",
+      "vo_film_end_s": 393.26,
+      "vo_film_end": "6:33.26",
+      "last_word_s": 130.84,
+      "sentences": [
+        {
+          "i": 1,
+          "text": "Newton worked out that a pull like this should get weaker with distance.",
+          "start_s": 0.0,
+          "end_s": 4.16,
+          "film_s": 262.06,
+          "film": "4:22.06"
+        },
+        {
+          "i": 2,
+          "text": "Twice as far away, it should be four times weaker.",
+          "start_s": 4.92,
+          "end_s": 7.92,
+          "film_s": 266.98,
+          "film": "4:26.98"
+        },
+        {
+          "i": 3,
+          "text": "Three times as far, nine times weaker.",
+          "start_s": 8.48,
+          "end_s": 11.14,
+          "film_s": 270.54,
+          "film": "4:30.54"
+        },
+        {
+          "i": 4,
+          "text": "Why would it work like that?",
+          "start_s": 11.78,
+          "end_s": 13.38,
+          "film_s": 273.84,
+          "film": "4:33.84"
+        },
+        {
+          "i": 5,
+          "text": "Think of a can of spray paint.",
+          "start_s": 14.22,
+          "end_s": 15.64,
+          "film_s": 276.28,
+          "film": "4:36.28"
+        },
+        {
+          "i": 6,
+          "text": "Hold it close to a wall and you get a small, dark spot.",
+          "start_s": 16.3,
+          "end_s": 20.2,
+          "film_s": 278.36,
+          "film": "4:38.36"
+        },
+        {
+          "i": 7,
+          "text": "Step back twice as far, and the same paint spreads over a patch four times as big, so every part of it gets only a quarter as much.",
+          "start_s": 21.08,
+          "end_s": 30.68,
+          "film_s": 283.14,
+          "film": "4:43.14"
+        },
+        {
+          "i": 8,
+          "text": "Newton's pull spreads out in the same way.",
+          "start_s": 31.5,
+          "end_s": 34.5,
+          "film_s": 293.56,
+          "film": "4:53.56"
+        },
+        {
+          "i": 9,
+          "text": "The Moon is about sixty times further from the centre of the Earth than you are.",
+          "start_s": 35.08,
+          "end_s": 39.54,
+          "film_s": 297.14,
+          "film": "4:57.14"
+        },
+        {
+          "i": 10,
+          "text": "So the pull on the Moon should be sixty times sixty weaker.",
+          "start_s": 39.76,
+          "end_s": 43.78,
+          "film_s": 301.82,
+          "film": "5:01.82"
+        },
+        {
+          "i": 11,
+          "text": "Three thousand six hundred times weaker.",
+          "start_s": 44.58,
+          "end_s": 47.68,
+          "film_s": 306.64,
+          "film": "5:06.64"
+        },
+        {
+          "i": 12,
+          "text": "Then came the beautiful part.",
+          "start_s": 48.3,
+          "end_s": 50.1,
+          "film_s": 310.36,
+          "film": "5:10.36"
+        },
+        {
+          "i": 13,
+          "text": "In one second, an apple falls about five metres.",
+          "start_s": 50.82,
+          "end_s": 54.78,
+          "film_s": 312.88,
+          "film": "5:12.88"
+        },
+        {
+          "i": 14,
+          "text": "If the pull on the Moon is 3,600 times weaker, then in one minute, the Moon should fall about the same distance, five metres, along its curve.",
+          "start_s": 55.5,
+          "end_s": 67.04,
+          "film_s": 317.56,
+          "film": "5:17.56"
+        },
+        {
+          "i": 15,
+          "text": "Newton checked it against the real Moon.",
+          "start_s": 68.1,
+          "end_s": 70.24,
+          "film_s": 330.16,
+          "film": "5:30.16"
+        },
+        {
+          "i": 16,
+          "text": "Years later, he wrote that the two answered pretty nearly.",
+          "start_s": 71.08,
+          "end_s": 74.56,
+          "film_s": 333.14,
+          "film": "5:33.14"
+        },
+        {
+          "i": 17,
+          "text": "The apple and the Moon were obeying the same rule.",
+          "start_s": 75.22,
+          "end_s": 78.68,
+          "film_s": 337.28,
+          "film": "5:37.28"
+        },
+        {
+          "i": 18,
+          "text": "But Newton was a careful, private man, and his numbers weren't yet perfect.",
+          "start_s": 79.34,
+          "end_s": 84.22,
+          "film_s": 341.4,
+          "film": "5:41.40"
+        },
+        {
+          "i": 19,
+          "text": "He put the idea aside for almost twenty years.",
+          "start_s": 85.14,
+          "end_s": 87.96,
+          "film_s": 347.2,
+          "film": "5:47.20"
+        },
+        {
+          "i": 20,
+          "text": "Then, in sixteen eighty-four, a young astronomer called Edmond Halley came to see him in Cambridge.",
+          "start_s": 88.9,
+          "end_s": 95.56,
+          "film_s": 350.96,
+          "film": "5:50.96"
+        },
+        {
+          "i": 21,
+          "text": "Halley asked him a question.",
+          "start_s": 96.7,
+          "end_s": 98.02,
+          "film_s": 358.76,
+          "film": "5:58.76"
+        },
+        {
+          "i": 22,
+          "text": "If the Sun pulled on the planets with a force that got weaker in just this way, what path would they follow?",
+          "start_s": 98.88,
+          "end_s": 105.84,
+          "film_s": 360.94,
+          "film": "6:00.94"
+        },
+        {
+          "i": 23,
+          "text": "An ellipse, Newton said at once.",
+          "start_s": 106.54,
+          "end_s": 108.66,
+          "film_s": 368.6,
+          "film": "6:08.60"
+        },
+        {
+          "i": 24,
+          "text": "He had worked it out years before.",
+          "start_s": 109.02,
+          "end_s": 110.8,
+          "film_s": 371.08,
+          "film": "6:11.08"
+        },
+        {
+          "i": 25,
+          "text": "Halley was amazed, and he begged Newton to write it all down.",
+          "start_s": 111.48,
+          "end_s": 115.52,
+          "film_s": 373.54,
+          "film": "6:13.54"
+        },
+        {
+          "i": 26,
+          "text": "The result, three years later, was one of the most important books ever written.",
+          "start_s": 116.16,
+          "end_s": 121.18,
+          "film_s": 378.22,
+          "film": "6:18.22"
+        },
+        {
+          "i": 27,
+          "text": "Newton called it the Principia.",
+          "start_s": 122.16,
+          "end_s": 124.06,
+          "film_s": 384.22,
+          "film": "6:24.22"
+        },
+        {
+          "i": 28,
+          "text": "And because the Royal Society had spent its money on a book about fish, Halley paid to print it himself.",
+          "start_s": 124.88,
+          "end_s": 130.84,
+          "film_s": 386.94,
+          "film": "6:26.94"
+        }
+      ],
+      "words": [
+        [
+          0.0,
+          "Newton"
+        ],
+        [
+          0.36,
+          "worked"
+        ],
+        [
+          0.7,
+          "out"
+        ],
+        [
+          1.1,
+          "that"
+        ],
+        [
+          1.28,
+          "a"
+        ],
+        [
+          1.42,
+          "pull"
+        ],
+        [
+          1.68,
+          "like"
+        ],
+        [
+          1.94,
+          "this"
+        ],
+        [
+          2.3,
+          "should"
+        ],
+        [
+          2.52,
+          "get"
+        ],
+        [
+          2.72,
+          "weaker"
+        ],
+        [
+          3.24,
+          "with"
+        ],
+        [
+          3.7,
+          "distance."
+        ],
+        [
+          4.92,
+          "Twice"
+        ],
+        [
+          5.18,
+          "as"
+        ],
+        [
+          5.4,
+          "far"
+        ],
+        [
+          5.62,
+          "away,"
+        ],
+        [
+          6.46,
+          "it"
+        ],
+        [
+          6.52,
+          "should"
+        ],
+        [
+          6.66,
+          "be"
+        ],
+        [
+          6.8,
+          "four"
+        ],
+        [
+          7.1,
+          "times"
+        ],
+        [
+          7.44,
+          "weaker,"
+        ],
+        [
+          8.48,
+          "three"
+        ],
+        [
+          8.7,
+          "times"
+        ],
+        [
+          9.02,
+          "as"
+        ],
+        [
+          9.16,
+          "far,"
+        ],
+        [
+          10.08,
+          "nine"
+        ],
+        [
+          10.22,
+          "times"
+        ],
+        [
+          10.68,
+          "weaker."
+        ],
+        [
+          11.78,
+          "Why"
+        ],
+        [
+          12.14,
+          "would"
+        ],
+        [
+          12.36,
+          "it"
+        ],
+        [
+          12.48,
+          "work"
+        ],
+        [
+          12.76,
+          "like"
+        ],
+        [
+          13.04,
+          "that?"
+        ],
+        [
+          14.22,
+          "Think"
+        ],
+        [
+          14.38,
+          "of"
+        ],
+        [
+          14.5,
+          "a"
+        ],
+        [
+          14.66,
+          "can"
+        ],
+        [
+          14.78,
+          "of"
+        ],
+        [
+          14.96,
+          "spray"
+        ],
+        [
+          15.26,
+          "paint."
+        ],
+        [
+          16.3,
+          "Hold"
+        ],
+        [
+          16.54,
+          "it"
+        ],
+        [
+          16.72,
+          "close"
+        ],
+        [
+          17.02,
+          "to"
+        ],
+        [
+          17.3,
+          "a"
+        ],
+        [
+          17.42,
+          "wall,"
+        ],
+        [
+          18.12,
+          "and"
+        ],
+        [
+          18.28,
+          "you"
+        ],
+        [
+          18.38,
+          "get"
+        ],
+        [
+          18.48,
+          "a"
+        ],
+        [
+          18.62,
+          "small"
+        ],
+        [
+          19.18,
+          "dark"
+        ],
+        [
+          19.68,
+          "spot."
+        ],
+        [
+          21.08,
+          "Step"
+        ],
+        [
+          21.38,
+          "back"
+        ],
+        [
+          21.64,
+          "twice"
+        ],
+        [
+          21.98,
+          "as"
+        ],
+        [
+          22.2,
+          "far,"
+        ],
+        [
+          22.92,
+          "and"
+        ],
+        [
+          23.08,
+          "the"
+        ],
+        [
+          23.22,
+          "same"
+        ],
+        [
+          23.52,
+          "paint"
+        ],
+        [
+          23.9,
+          "spreads"
+        ],
+        [
+          24.28,
+          "over"
+        ],
+        [
+          24.64,
+          "a"
+        ],
+        [
+          24.8,
+          "patch"
+        ],
+        [
+          25.12,
+          "four"
+        ],
+        [
+          25.6,
+          "times"
+        ],
+        [
+          26.02,
+          "as"
+        ],
+        [
+          26.22,
+          "big,"
+        ],
+        [
+          26.56,
+          "so"
+        ],
+        [
+          27.12,
+          "every"
+        ],
+        [
+          27.58,
+          "part"
+        ],
+        [
+          28.0,
+          "of"
+        ],
+        [
+          28.18,
+          "it"
+        ],
+        [
+          28.46,
+          "gets"
+        ],
+        [
+          28.86,
+          "only"
+        ],
+        [
+          29.2,
+          "a"
+        ],
+        [
+          29.38,
+          "quarter"
+        ],
+        [
+          29.74,
+          "as"
+        ],
+        [
+          30.0,
+          "much."
+        ],
+        [
+          31.5,
+          "Newton's"
+        ],
+        [
+          31.94,
+          "pull"
+        ],
+        [
+          32.12,
+          "spreads"
+        ],
+        [
+          32.84,
+          "out"
+        ],
+        [
+          33.28,
+          "in"
+        ],
+        [
+          33.68,
+          "the"
+        ],
+        [
+          33.82,
+          "same"
+        ],
+        [
+          34.06,
+          "way."
+        ],
+        [
+          35.08,
+          "The"
+        ],
+        [
+          35.1,
+          "moon"
+        ],
+        [
+          35.4,
+          "is"
+        ],
+        [
+          35.62,
+          "about"
+        ],
+        [
+          35.88,
+          "60"
+        ],
+        [
+          36.48,
+          "times"
+        ],
+        [
+          36.94,
+          "further"
+        ],
+        [
+          37.4,
+          "from"
+        ],
+        [
+          37.74,
+          "the"
+        ],
+        [
+          37.92,
+          "center"
+        ],
+        [
+          38.14,
+          "of"
+        ],
+        [
+          38.34,
+          "the"
+        ],
+        [
+          38.5,
+          "Earth"
+        ],
+        [
+          38.7,
+          "than"
+        ],
+        [
+          38.94,
+          "you"
+        ],
+        [
+          39.14,
+          "are,"
+        ],
+        [
+          39.76,
+          "so"
+        ],
+        [
+          40.1,
+          "the"
+        ],
+        [
+          40.26,
+          "pull"
+        ],
+        [
+          40.46,
+          "on"
+        ],
+        [
+          40.62,
+          "the"
+        ],
+        [
+          40.74,
+          "moon"
+        ],
+        [
+          41.02,
+          "should"
+        ],
+        [
+          41.52,
+          "be"
+        ],
+        [
+          41.68,
+          "60"
+        ],
+        [
+          42.3,
+          "times"
+        ],
+        [
+          42.62,
+          "60"
+        ],
+        [
+          43.3,
+          "weaker,"
+        ],
+        [
+          44.58,
+          "3"
+        ],
+        [
+          44.84,
+          ",600"
+        ],
+        [
+          46.26,
+          "times"
+        ],
+        [
+          47.14,
+          "weaker."
+        ],
+        [
+          48.3,
+          "Then"
+        ],
+        [
+          48.54,
+          "came"
+        ],
+        [
+          48.86,
+          "the"
+        ],
+        [
+          49.14,
+          "beautiful"
+        ],
+        [
+          49.54,
+          "part."
+        ],
+        [
+          50.82,
+          "In"
+        ],
+        [
+          51.08,
+          "one"
+        ],
+        [
+          51.44,
+          "second,"
+        ],
+        [
+          52.5,
+          "an"
+        ],
+        [
+          52.6,
+          "apple"
+        ],
+        [
+          53.02,
+          "falls"
+        ],
+        [
+          53.52,
+          "about"
+        ],
+        [
+          53.9,
+          "five"
+        ],
+        [
+          54.32,
+          "meters."
+        ],
+        [
+          55.5,
+          "If"
+        ],
+        [
+          55.86,
+          "the"
+        ],
+        [
+          56.04,
+          "pull"
+        ],
+        [
+          56.28,
+          "on"
+        ],
+        [
+          56.44,
+          "the"
+        ],
+        [
+          56.56,
+          "moon"
+        ],
+        [
+          56.82,
+          "is"
+        ],
+        [
+          57.36,
+          "3"
+        ],
+        [
+          57.8,
+          ",600"
+        ],
+        [
+          58.78,
+          "times"
+        ],
+        [
+          59.24,
+          "weaker,"
+        ],
+        [
+          60.36,
+          "then"
+        ],
+        [
+          60.56,
+          "in"
+        ],
+        [
+          60.72,
+          "one"
+        ],
+        [
+          61.08,
+          "minute,"
+        ],
+        [
+          61.98,
+          "the"
+        ],
+        [
+          62.08,
+          "moon"
+        ],
+        [
+          62.4,
+          "should"
+        ],
+        [
+          62.66,
+          "fall"
+        ],
+        [
+          63.02,
+          "about"
+        ],
+        [
+          63.26,
+          "the"
+        ],
+        [
+          63.4,
+          "same"
+        ],
+        [
+          63.78,
+          "distance,"
+        ],
+        [
+          64.86,
+          "five"
+        ],
+        [
+          65.1,
+          "meters,"
+        ],
+        [
+          65.82,
+          "along"
+        ],
+        [
+          66.3,
+          "its"
+        ],
+        [
+          66.56,
+          "curve."
+        ],
+        [
+          68.1,
+          "Newton"
+        ],
+        [
+          68.3,
+          "checked"
+        ],
+        [
+          68.66,
+          "it"
+        ],
+        [
+          68.96,
+          "against"
+        ],
+        [
+          69.28,
+          "the"
+        ],
+        [
+          69.52,
+          "real"
+        ],
+        [
+          69.78,
+          "moon."
+        ],
+        [
+          71.08,
+          "Years"
+        ],
+        [
+          71.26,
+          "later,"
+        ],
+        [
+          71.74,
+          "he"
+        ],
+        [
+          72.26,
+          "wrote"
+        ],
+        [
+          72.5,
+          "that"
+        ],
+        [
+          72.7,
+          "the"
+        ],
+        [
+          72.86,
+          "two"
+        ],
+        [
+          73.14,
+          "answered"
+        ],
+        [
+          73.68,
+          "pretty"
+        ],
+        [
+          74.1,
+          "nearly."
+        ],
+        [
+          75.22,
+          "The"
+        ],
+        [
+          75.38,
+          "apple"
+        ],
+        [
+          75.76,
+          "and"
+        ],
+        [
+          76.06,
+          "the"
+        ],
+        [
+          76.2,
+          "moon"
+        ],
+        [
+          76.54,
+          "were"
+        ],
+        [
+          77.16,
+          "obeying"
+        ],
+        [
+          77.6,
+          "the"
+        ],
+        [
+          77.76,
+          "same"
+        ],
+        [
+          78.2,
+          "rule."
+        ],
+        [
+          79.34,
+          "But"
+        ],
+        [
+          79.44,
+          "Newton"
+        ],
+        [
+          79.76,
+          "was"
+        ],
+        [
+          79.96,
+          "a"
+        ],
+        [
+          80.16,
+          "careful,"
+        ],
+        [
+          80.88,
+          "private"
+        ],
+        [
+          81.38,
+          "man,"
+        ],
+        [
+          81.84,
+          "and"
+        ],
+        [
+          82.4,
+          "his"
+        ],
+        [
+          82.54,
+          "numbers"
+        ],
+        [
+          83.0,
+          "weren't"
+        ],
+        [
+          83.46,
+          "yet"
+        ],
+        [
+          83.7,
+          "perfect."
+        ],
+        [
+          85.14,
+          "He"
+        ],
+        [
+          85.16,
+          "put"
+        ],
+        [
+          85.36,
+          "the"
+        ],
+        [
+          85.52,
+          "idea"
+        ],
+        [
+          85.84,
+          "aside"
+        ],
+        [
+          86.28,
+          "for"
+        ],
+        [
+          86.58,
+          "almost"
+        ],
+        [
+          86.84,
+          "20"
+        ],
+        [
+          87.32,
+          "years."
+        ],
+        [
+          88.9,
+          "Then,"
+        ],
+        [
+          89.56,
+          "in"
+        ],
+        [
+          89.76,
+          "1684,"
+        ],
+        [
+          91.54,
+          "a"
+        ],
+        [
+          91.62,
+          "young"
+        ],
+        [
+          91.9,
+          "astronomer"
+        ],
+        [
+          92.38,
+          "called"
+        ],
+        [
+          92.84,
+          "Edmund"
+        ],
+        [
+          93.38,
+          "Halley"
+        ],
+        [
+          93.94,
+          "came"
+        ],
+        [
+          94.42,
+          "to"
+        ],
+        [
+          94.62,
+          "see"
+        ],
+        [
+          94.84,
+          "him"
+        ],
+        [
+          95.02,
+          "in"
+        ],
+        [
+          95.18,
+          "Cambridge."
+        ],
+        [
+          96.7,
+          "Halley"
+        ],
+        [
+          96.92,
+          "asked"
+        ],
+        [
+          97.26,
+          "him"
+        ],
+        [
+          97.46,
+          "a"
+        ],
+        [
+          97.62,
+          "question."
+        ],
+        [
+          98.88,
+          "If"
+        ],
+        [
+          98.92,
+          "the"
+        ],
+        [
+          99.1,
+          "sun"
+        ],
+        [
+          99.48,
+          "pulled"
+        ],
+        [
+          100.02,
+          "on"
+        ],
+        [
+          100.22,
+          "the"
+        ],
+        [
+          100.36,
+          "planets"
+        ],
+        [
+          100.74,
+          "with"
+        ],
+        [
+          100.96,
+          "a"
+        ],
+        [
+          101.12,
+          "force"
+        ],
+        [
+          101.48,
+          "that"
+        ],
+        [
+          101.72,
+          "got"
+        ],
+        [
+          101.88,
+          "weaker"
+        ],
+        [
+          102.42,
+          "in"
+        ],
+        [
+          102.76,
+          "just"
+        ],
+        [
+          103.06,
+          "this"
+        ],
+        [
+          103.36,
+          "way,"
+        ],
+        [
+          104.48,
+          "what"
+        ],
+        [
+          104.64,
+          "path"
+        ],
+        [
+          105.1,
+          "would"
+        ],
+        [
+          105.34,
+          "they"
+        ],
+        [
+          105.5,
+          "follow?"
+        ],
+        [
+          106.54,
+          "An"
+        ],
+        [
+          106.76,
+          "ellipse,"
+        ],
+        [
+          107.68,
+          "Newton"
+        ],
+        [
+          107.84,
+          "said"
+        ],
+        [
+          108.16,
+          "at"
+        ],
+        [
+          108.3,
+          "once."
+        ],
+        [
+          109.02,
+          "He"
+        ],
+        [
+          109.22,
+          "had"
+        ],
+        [
+          109.3,
+          "worked"
+        ],
+        [
+          109.58,
+          "it"
+        ],
+        [
+          109.74,
+          "out"
+        ],
+        [
+          109.94,
+          "years"
+        ],
+        [
+          110.28,
+          "before."
+        ],
+        [
+          111.48,
+          "Halley"
+        ],
+        [
+          111.92,
+          "was"
+        ],
+        [
+          112.08,
+          "amazed,"
+        ],
+        [
+          113.3,
+          "and"
+        ],
+        [
+          113.34,
+          "he"
+        ],
+        [
+          113.46,
+          "begged"
+        ],
+        [
+          113.92,
+          "Newton"
+        ],
+        [
+          114.28,
+          "to"
+        ],
+        [
+          114.58,
+          "write"
+        ],
+        [
+          114.8,
+          "it"
+        ],
+        [
+          114.96,
+          "all"
+        ],
+        [
+          115.1,
+          "down."
+        ],
+        [
+          116.16,
+          "The"
+        ],
+        [
+          116.24,
+          "result,"
+        ],
+        [
+          117.02,
+          "three"
+        ],
+        [
+          117.38,
+          "years"
+        ],
+        [
+          117.58,
+          "later,"
+        ],
+        [
+          118.36,
+          "was"
+        ],
+        [
+          118.6,
+          "one"
+        ],
+        [
+          118.8,
+          "of"
+        ],
+        [
+          118.92,
+          "the"
+        ],
+        [
+          119.0,
+          "most"
+        ],
+        [
+          119.2,
+          "important"
+        ],
+        [
+          119.82,
+          "books"
+        ],
+        [
+          120.36,
+          "ever"
+        ],
+        [
+          120.72,
+          "written."
+        ],
+        [
+          122.16,
+          "Newton"
+        ],
+        [
+          122.36,
+          "called"
+        ],
+        [
+          122.72,
+          "it"
+        ],
+        [
+          123.06,
+          "the"
+        ],
+        [
+          123.36,
+          "Principia."
+        ],
+        [
+          124.88,
+          "And"
+        ],
+        [
+          124.98,
+          "because"
+        ],
+        [
+          125.22,
+          "the"
+        ],
+        [
+          125.4,
+          "Royal"
+        ],
+        [
+          125.62,
+          "Society"
+        ],
+        [
+          126.16,
+          "had"
+        ],
+        [
+          126.46,
+          "spent"
+        ],
+        [
+          126.68,
+          "its"
+        ],
+        [
+          126.9,
+          "money"
+        ],
+        [
+          127.1,
+          "on"
+        ],
+        [
+          127.28,
+          "a"
+        ],
+        [
+          127.4,
+          "book"
+        ],
+        [
+          127.54,
+          "about"
+        ],
+        [
+          127.84,
+          "fish,"
+        ],
+        [
+          129.24,
+          "Halley"
+        ],
+        [
+          129.46,
+          "paid"
+        ],
+        [
+          129.72,
+          "to"
+        ],
+        [
+          130.0,
+          "print"
+        ],
+        [
+          130.22,
+          "it"
+        ],
+        [
+          130.42,
+          "himself."
+        ]
+      ]
+    },
+    {
+      "part": 5,
+      "file": "hos_009_part05_falling_around_the_world_v01.mp3",
+      "sha256": "10ebaf45388d4041090efe29c678f5689d061b42d1ab88ace84ef9fcf0035171",
+      "duration_s": 122.64,
+      "match_rate_pct": 99.3,
+      "chapter_card": "Falling Around the World",
+      "card_in_film_s": 393.86,
+      "card_in_film": "6:33.86",
+      "vo_film_start_s": 395.76,
+      "vo_film_start": "6:35.76",
+      "vo_film_end_s": 518.4,
+      "vo_film_end": "8:38.40",
+      "last_word_s": 122.46,
+      "sentences": [
+        {
+          "i": 1,
+          "text": "Newton's law didn't stop at the Moon.",
+          "start_s": 0.0,
+          "end_s": 2.12,
+          "film_s": 395.76,
+          "film": "6:35.76"
+        },
+        {
+          "i": 2,
+          "text": "The same pull keeps the Earth falling around the Sun, and the planets, and the moons of Jupiter.",
+          "start_s": 2.56,
+          "end_s": 8.0,
+          "film_s": 398.32,
+          "film": "6:38.32"
+        },
+        {
+          "i": 3,
+          "text": "The Moon even pulls back on the Earth, and lifts the oceans into tides.",
+          "start_s": 8.9,
+          "end_s": 13.42,
+          "film_s": 404.66,
+          "film": "6:44.66"
+        },
+        {
+          "i": 4,
+          "text": "Halley used Newton's law to work out the path of a bright comet, and he made a bold prediction.",
+          "start_s": 15.04,
+          "end_s": 20.02,
+          "film_s": 410.8,
+          "film": "6:50.80"
+        },
+        {
+          "i": 5,
+          "text": "It would come back in seventeen fifty-eight.",
+          "start_s": 20.1,
+          "end_s": 22.28,
+          "film_s": 415.86,
+          "film": "6:55.86"
+        },
+        {
+          "i": 6,
+          "text": "Halley died years before it was due.",
+          "start_s": 22.28,
+          "end_s": 27.0,
+          "film_s": 418.04,
+          "film": "6:58.04"
+        },
+        {
+          "i": 7,
+          "text": "But on Christmas night, seventeen fifty-eight, the comet appeared in the sky, right on time.",
+          "start_s": 27.0,
+          "end_s": 33.46,
+          "film_s": 422.76,
+          "film": "7:02.76"
+        },
+        {
+          "i": 8,
+          "text": "It has carried his name ever since.",
+          "start_s": 34.42,
+          "end_s": 35.98,
+          "film_s": 430.18,
+          "film": "7:10.18"
+        },
+        {
+          "i": 9,
+          "text": "And you can see Newton's cannon at work today.",
+          "start_s": 35.98,
+          "end_s": 39.14,
+          "film_s": 431.74,
+          "film": "7:11.74"
+        },
+        {
+          "i": 10,
+          "text": "The International Space Station flies around the Earth at about twenty-eight thousand kilometres an hour.",
+          "start_s": 40.02,
+          "end_s": 45.58,
+          "film_s": 435.78,
+          "film": "7:15.78"
+        },
+        {
+          "i": 11,
+          "text": "It's not floating above gravity.",
+          "start_s": 46.12,
+          "end_s": 47.94,
+          "film_s": 441.88,
+          "film": "7:21.88"
+        },
+        {
+          "i": 12,
+          "text": "It's falling, all the time, just like the Moon.",
+          "start_s": 48.52,
+          "end_s": 51.94,
+          "film_s": 444.28,
+          "film": "7:24.28"
+        },
+        {
+          "i": 13,
+          "text": "The astronauts inside float because they're falling too, right along with it.",
+          "start_s": 52.98,
+          "end_s": 58.22,
+          "film_s": 448.74,
+          "film": "7:28.74"
+        },
+        {
+          "i": 14,
+          "text": "Imagine being up there, with an apple drifting in front of your face.",
+          "start_s": 59.1,
+          "end_s": 63.14,
+          "film_s": 454.86,
+          "film": "7:34.86"
+        },
+        {
+          "i": 15,
+          "text": "It looks as if gravity has switched off.",
+          "start_s": 64.02,
+          "end_s": 66.02,
+          "film_s": 459.78,
+          "film": "7:39.78"
+        },
+        {
+          "i": 16,
+          "text": "But it hasn't.",
+          "start_s": 66.7,
+          "end_s": 67.6,
+          "film_s": 462.46,
+          "film": "7:42.46"
+        },
+        {
+          "i": 17,
+          "text": "You, the apple and the station are all falling together, around the world.",
+          "start_s": 68.28,
+          "end_s": 73.76,
+          "film_s": 464.04,
+          "film": "7:44.04"
+        },
+        {
+          "i": 18,
+          "text": "Why was this so groundbreaking?",
+          "start_s": 74.92,
+          "end_s": 76.5,
+          "film_s": 470.68,
+          "film": "7:50.68"
+        },
+        {
+          "i": 19,
+          "text": "Because for the first time, the heavens and the Earth followed the same rules.",
+          "start_s": 77.58,
+          "end_s": 81.74,
+          "film_s": 473.34,
+          "film": "7:53.34"
+        },
+        {
+          "i": 20,
+          "text": "The force that drops a cup off your table is the same force that steers the planets.",
+          "start_s": 82.58,
+          "end_s": 87.46,
+          "film_s": 478.34,
+          "film": "7:58.34"
+        },
+        {
+          "i": 21,
+          "text": "One law, written in mathematics, that works everywhere we have ever looked.",
+          "start_s": 88.44,
+          "end_s": 93.62,
+          "film_s": 484.2,
+          "film": "8:04.20"
+        },
+        {
+          "i": 22,
+          "text": "So tonight, if you can see the Moon, take a moment to look at it.",
+          "start_s": 94.58,
+          "end_s": 99.12,
+          "film_s": 490.34,
+          "film": "8:10.34"
+        },
+        {
+          "i": 23,
+          "text": "It is falling towards you, right now.",
+          "start_s": 99.2,
+          "end_s": 101.56,
+          "film_s": 494.96,
+          "film": "8:14.96"
+        },
+        {
+          "i": 24,
+          "text": "And it will keep on missing.",
+          "start_s": 101.56,
+          "end_s": 103.42,
+          "film_s": 497.32,
+          "film": "8:17.32"
+        },
+        {
+          "i": 25,
+          "text": "An apple, a cannon and a sum.",
+          "start_s": 104.16,
+          "end_s": 106.36,
+          "film_s": 499.92,
+          "film": "8:19.92"
+        },
+        {
+          "i": 26,
+          "text": "Together, they pulled the heavens down to Earth.",
+          "start_s": 106.36,
+          "end_s": 110.22,
+          "film_s": 502.12,
+          "film": "8:22.12"
+        },
+        {
+          "i": 27,
+          "text": "But gravity can bring more than apples down.",
+          "start_s": 110.86,
+          "end_s": 113.26,
+          "film_s": 506.62,
+          "film": "8:26.62"
+        },
+        {
+          "i": 28,
+          "text": "Sixty-six million years ago, something far bigger fell out of the sky.",
+          "start_s": 114.36,
+          "end_s": 118.82,
+          "film_s": 510.12,
+          "film": "8:30.12"
+        },
+        {
+          "i": 29,
+          "text": "And the clue was hidden in a thin layer of clay.",
+          "start_s": 118.82,
+          "end_s": 122.46,
+          "film_s": 514.58,
+          "film": "8:34.58"
+        }
+      ],
+      "words": [
+        [
+          0.0,
+          "Newton's"
+        ],
+        [
+          0.84,
+          "law"
+        ],
+        [
+          0.84,
+          "didn't"
+        ],
+        [
+          1.18,
+          "stop"
+        ],
+        [
+          1.52,
+          "at"
+        ],
+        [
+          1.68,
+          "the"
+        ],
+        [
+          1.82,
+          "moon,"
+        ],
+        [
+          2.56,
+          "the"
+        ],
+        [
+          2.78,
+          "same"
+        ],
+        [
+          3.06,
+          "pull"
+        ],
+        [
+          3.36,
+          "keeps"
+        ],
+        [
+          3.7,
+          "the"
+        ],
+        [
+          3.9,
+          "earth"
+        ],
+        [
+          4.16,
+          "falling"
+        ],
+        [
+          4.58,
+          "around"
+        ],
+        [
+          4.84,
+          "the"
+        ],
+        [
+          5.08,
+          "sun"
+        ],
+        [
+          5.32,
+          "and"
+        ],
+        [
+          5.96,
+          "the"
+        ],
+        [
+          6.06,
+          "planets"
+        ],
+        [
+          6.42,
+          "and"
+        ],
+        [
+          7.08,
+          "the"
+        ],
+        [
+          7.2,
+          "moons"
+        ],
+        [
+          7.42,
+          "of"
+        ],
+        [
+          7.62,
+          "Jupiter."
+        ],
+        [
+          8.9,
+          "The"
+        ],
+        [
+          9.12,
+          "moon"
+        ],
+        [
+          9.42,
+          "even"
+        ],
+        [
+          9.74,
+          "pulls"
+        ],
+        [
+          10.1,
+          "back"
+        ],
+        [
+          10.44,
+          "on"
+        ],
+        [
+          10.66,
+          "the"
+        ],
+        [
+          10.78,
+          "earth"
+        ],
+        [
+          11.06,
+          "and"
+        ],
+        [
+          11.54,
+          "lifts"
+        ],
+        [
+          11.86,
+          "the"
+        ],
+        [
+          12.16,
+          "oceans"
+        ],
+        [
+          12.54,
+          "into"
+        ],
+        [
+          12.92,
+          "tides."
+        ],
+        [
+          15.04,
+          "Halley"
+        ],
+        [
+          15.16,
+          "used"
+        ],
+        [
+          15.48,
+          "Newton's"
+        ],
+        [
+          15.98,
+          "law"
+        ],
+        [
+          16.16,
+          "to"
+        ],
+        [
+          16.36,
+          "work"
+        ],
+        [
+          16.56,
+          "out"
+        ],
+        [
+          16.78,
+          "the"
+        ],
+        [
+          16.92,
+          "path"
+        ],
+        [
+          17.2,
+          "of"
+        ],
+        [
+          17.36,
+          "a"
+        ],
+        [
+          17.48,
+          "bright"
+        ],
+        [
+          17.7,
+          "comet"
+        ],
+        [
+          18.08,
+          "and"
+        ],
+        [
+          18.76,
+          "he"
+        ],
+        [
+          18.88,
+          "made"
+        ],
+        [
+          19.04,
+          "a"
+        ],
+        [
+          19.2,
+          "bold"
+        ],
+        [
+          19.44,
+          "prediction,"
+        ],
+        [
+          20.1,
+          "it"
+        ],
+        [
+          20.94,
+          "would"
+        ],
+        [
+          21.06,
+          "come"
+        ],
+        [
+          21.28,
+          "back"
+        ],
+        [
+          21.74,
+          "in"
+        ],
+        [
+          22.28,
+          "1758."
+        ],
+        [
+          24.9,
+          "Halley"
+        ],
+        [
+          25.24,
+          "died"
+        ],
+        [
+          25.56,
+          "years"
+        ],
+        [
+          25.92,
+          "before"
+        ],
+        [
+          26.34,
+          "it"
+        ],
+        [
+          26.5,
+          "was"
+        ],
+        [
+          26.64,
+          "due,"
+        ],
+        [
+          27.0,
+          "but"
+        ],
+        [
+          27.58,
+          "on"
+        ],
+        [
+          27.72,
+          "Christmas"
+        ],
+        [
+          28.06,
+          "night"
+        ],
+        [
+          28.48,
+          "1758"
+        ],
+        [
+          29.68,
+          "the"
+        ],
+        [
+          30.36,
+          "comet"
+        ],
+        [
+          30.68,
+          "appeared"
+        ],
+        [
+          31.14,
+          "in"
+        ],
+        [
+          31.36,
+          "the"
+        ],
+        [
+          31.52,
+          "sky,"
+        ],
+        [
+          32.54,
+          "right"
+        ],
+        [
+          32.8,
+          "on"
+        ],
+        [
+          33.06,
+          "time."
+        ],
+        [
+          34.42,
+          "It"
+        ],
+        [
+          34.54,
+          "has"
+        ],
+        [
+          34.68,
+          "carried"
+        ],
+        [
+          34.96,
+          "his"
+        ],
+        [
+          35.2,
+          "name"
+        ],
+        [
+          35.44,
+          "ever"
+        ],
+        [
+          35.64,
+          "since"
+        ],
+        [
+          35.98,
+          "and"
+        ],
+        [
+          36.72,
+          "you"
+        ],
+        [
+          36.84,
+          "can"
+        ],
+        [
+          37.04,
+          "see"
+        ],
+        [
+          37.3,
+          "Newton's"
+        ],
+        [
+          37.98,
+          "cannon"
+        ],
+        [
+          38.12,
+          "at"
+        ],
+        [
+          38.38,
+          "work"
+        ],
+        [
+          38.64,
+          "today."
+        ],
+        [
+          40.02,
+          "The"
+        ],
+        [
+          40.26,
+          "International"
+        ],
+        [
+          40.66,
+          "Space"
+        ],
+        [
+          41.12,
+          "Station"
+        ],
+        [
+          41.66,
+          "flies"
+        ],
+        [
+          42.3,
+          "around"
+        ],
+        [
+          42.66,
+          "the"
+        ],
+        [
+          42.84,
+          "earth"
+        ],
+        [
+          43.04,
+          "at"
+        ],
+        [
+          43.22,
+          "about"
+        ],
+        [
+          43.44,
+          "28"
+        ],
+        [
+          44.04,
+          ",000"
+        ],
+        [
+          44.66,
+          "kilometers"
+        ],
+        [
+          44.92,
+          "an"
+        ],
+        [
+          45.24,
+          "hour."
+        ],
+        [
+          46.12,
+          "It's"
+        ],
+        [
+          46.42,
+          "not"
+        ],
+        [
+          46.58,
+          "floating"
+        ],
+        [
+          47.1,
+          "above"
+        ],
+        [
+          47.4,
+          "gravity,"
+        ],
+        [
+          48.52,
+          "it's"
+        ],
+        [
+          48.86,
+          "falling"
+        ],
+        [
+          49.18,
+          "all"
+        ],
+        [
+          49.98,
+          "the"
+        ],
+        [
+          50.16,
+          "time"
+        ],
+        [
+          50.66,
+          "just"
+        ],
+        [
+          51.22,
+          "like"
+        ],
+        [
+          51.48,
+          "the"
+        ],
+        [
+          51.68,
+          "moon."
+        ],
+        [
+          52.98,
+          "The"
+        ],
+        [
+          53.18,
+          "astronauts"
+        ],
+        [
+          53.56,
+          "inside"
+        ],
+        [
+          54.12,
+          "float"
+        ],
+        [
+          54.62,
+          "because"
+        ],
+        [
+          55.36,
+          "they're"
+        ],
+        [
+          55.72,
+          "falling"
+        ],
+        [
+          55.96,
+          "too,"
+        ],
+        [
+          56.94,
+          "right"
+        ],
+        [
+          57.14,
+          "along"
+        ],
+        [
+          57.44,
+          "with"
+        ],
+        [
+          57.72,
+          "it."
+        ],
+        [
+          59.1,
+          "Imagine"
+        ],
+        [
+          59.26,
+          "being"
+        ],
+        [
+          59.64,
+          "up"
+        ],
+        [
+          59.88,
+          "there"
+        ],
+        [
+          60.3,
+          "with"
+        ],
+        [
+          60.86,
+          "an"
+        ],
+        [
+          61.06,
+          "apple"
+        ],
+        [
+          61.42,
+          "drifting"
+        ],
+        [
+          61.88,
+          "in"
+        ],
+        [
+          62.26,
+          "front"
+        ],
+        [
+          62.4,
+          "of"
+        ],
+        [
+          62.62,
+          "your"
+        ],
+        [
+          62.76,
+          "face."
+        ],
+        [
+          64.02,
+          "It"
+        ],
+        [
+          64.18,
+          "looks"
+        ],
+        [
+          64.4,
+          "as"
+        ],
+        [
+          64.58,
+          "if"
+        ],
+        [
+          64.78,
+          "gravity"
+        ],
+        [
+          65.06,
+          "has"
+        ],
+        [
+          65.34,
+          "switched"
+        ],
+        [
+          65.64,
+          "off,"
+        ],
+        [
+          66.7,
+          "but"
+        ],
+        [
+          66.88,
+          "it"
+        ],
+        [
+          67.02,
+          "hasn't."
+        ],
+        [
+          68.28,
+          "You,"
+        ],
+        [
+          69.04,
+          "the"
+        ],
+        [
+          69.2,
+          "apple"
+        ],
+        [
+          69.6,
+          "and"
+        ],
+        [
+          69.96,
+          "the"
+        ],
+        [
+          70.18,
+          "station"
+        ],
+        [
+          70.54,
+          "are"
+        ],
+        [
+          71.2,
+          "all"
+        ],
+        [
+          71.52,
+          "falling"
+        ],
+        [
+          71.94,
+          "together"
+        ],
+        [
+          72.46,
+          "around"
+        ],
+        [
+          73.22,
+          "the"
+        ],
+        [
+          73.42,
+          "world."
+        ],
+        [
+          74.92,
+          "Why"
+        ],
+        [
+          75.38,
+          "was"
+        ],
+        [
+          75.52,
+          "this"
+        ],
+        [
+          75.74,
+          "so"
+        ],
+        [
+          75.96,
+          "groundbreaking?"
+        ],
+        [
+          77.58,
+          "Because"
+        ],
+        [
+          77.8,
+          "for"
+        ],
+        [
+          78.0,
+          "the"
+        ],
+        [
+          78.14,
+          "first"
+        ],
+        [
+          78.38,
+          "time"
+        ],
+        [
+          78.92,
+          "the"
+        ],
+        [
+          79.42,
+          "heavens"
+        ],
+        [
+          79.7,
+          "and"
+        ],
+        [
+          80.02,
+          "the"
+        ],
+        [
+          80.12,
+          "earth"
+        ],
+        [
+          80.42,
+          "followed"
+        ],
+        [
+          80.86,
+          "the"
+        ],
+        [
+          81.1,
+          "same"
+        ],
+        [
+          81.38,
+          "rules."
+        ],
+        [
+          82.58,
+          "The"
+        ],
+        [
+          82.84,
+          "force"
+        ],
+        [
+          83.12,
+          "that"
+        ],
+        [
+          83.38,
+          "drops"
+        ],
+        [
+          83.6,
+          "a"
+        ],
+        [
+          83.96,
+          "cup"
+        ],
+        [
+          84.0,
+          "off"
+        ],
+        [
+          84.2,
+          "your"
+        ],
+        [
+          84.4,
+          "table"
+        ],
+        [
+          84.8,
+          "is"
+        ],
+        [
+          85.42,
+          "the"
+        ],
+        [
+          85.6,
+          "same"
+        ],
+        [
+          85.88,
+          "force"
+        ],
+        [
+          86.24,
+          "that"
+        ],
+        [
+          86.52,
+          "steers"
+        ],
+        [
+          86.92,
+          "the"
+        ],
+        [
+          87.1,
+          "planets."
+        ],
+        [
+          88.44,
+          "One"
+        ],
+        [
+          88.76,
+          "law"
+        ],
+        [
+          89.14,
+          "written"
+        ],
+        [
+          89.76,
+          "in"
+        ],
+        [
+          90.0,
+          "mathematics"
+        ],
+        [
+          90.54,
+          "that"
+        ],
+        [
+          91.28,
+          "works"
+        ],
+        [
+          91.62,
+          "everywhere"
+        ],
+        [
+          92.28,
+          "we"
+        ],
+        [
+          92.66,
+          "have"
+        ],
+        [
+          92.82,
+          "ever"
+        ],
+        [
+          93.18,
+          "looked."
+        ],
+        [
+          94.58,
+          "So"
+        ],
+        [
+          94.9,
+          "tonight"
+        ],
+        [
+          95.24,
+          "if"
+        ],
+        [
+          95.88,
+          "you"
+        ],
+        [
+          96.02,
+          "can"
+        ],
+        [
+          96.18,
+          "see"
+        ],
+        [
+          96.34,
+          "the"
+        ],
+        [
+          96.52,
+          "moon"
+        ],
+        [
+          96.82,
+          "take"
+        ],
+        [
+          97.6,
+          "a"
+        ],
+        [
+          97.78,
+          "moment"
+        ],
+        [
+          97.96,
+          "to"
+        ],
+        [
+          98.22,
+          "look"
+        ],
+        [
+          98.36,
+          "at"
+        ],
+        [
+          98.5,
+          "it."
+        ],
+        [
+          99.2,
+          "It"
+        ],
+        [
+          99.44,
+          "is"
+        ],
+        [
+          99.58,
+          "falling"
+        ],
+        [
+          99.9,
+          "towards"
+        ],
+        [
+          100.34,
+          "you"
+        ],
+        [
+          100.8,
+          "right"
+        ],
+        [
+          101.08,
+          "now"
+        ],
+        [
+          101.56,
+          "and"
+        ],
+        [
+          102.26,
+          "it"
+        ],
+        [
+          102.34,
+          "will"
+        ],
+        [
+          102.48,
+          "keep"
+        ],
+        [
+          102.72,
+          "on"
+        ],
+        [
+          102.98,
+          "missing."
+        ],
+        [
+          104.16,
+          "An"
+        ],
+        [
+          104.34,
+          "apple,"
+        ],
+        [
+          105.14,
+          "a"
+        ],
+        [
+          105.3,
+          "cannon"
+        ],
+        [
+          105.58,
+          "and"
+        ],
+        [
+          106.18,
+          "a"
+        ],
+        [
+          106.36,
+          "sun."
+        ],
+        [
+          107.4,
+          "Together"
+        ],
+        [
+          107.76,
+          "they"
+        ],
+        [
+          108.48,
+          "pulled"
+        ],
+        [
+          108.74,
+          "the"
+        ],
+        [
+          108.96,
+          "heavens"
+        ],
+        [
+          109.28,
+          "down"
+        ],
+        [
+          109.68,
+          "to"
+        ],
+        [
+          109.9,
+          "earth,"
+        ],
+        [
+          110.86,
+          "but"
+        ],
+        [
+          111.08,
+          "gravity"
+        ],
+        [
+          111.46,
+          "can"
+        ],
+        [
+          111.72,
+          "bring"
+        ],
+        [
+          111.92,
+          "more"
+        ],
+        [
+          112.22,
+          "than"
+        ],
+        [
+          112.42,
+          "apples"
+        ],
+        [
+          112.7,
+          "down."
+        ],
+        [
+          114.36,
+          "66"
+        ],
+        [
+          114.68,
+          "million"
+        ],
+        [
+          115.32,
+          "years"
+        ],
+        [
+          115.78,
+          "ago"
+        ],
+        [
+          116.2,
+          "something"
+        ],
+        [
+          116.86,
+          "far"
+        ],
+        [
+          117.4,
+          "bigger"
+        ],
+        [
+          117.76,
+          "fell"
+        ],
+        [
+          118.04,
+          "out"
+        ],
+        [
+          118.24,
+          "of"
+        ],
+        [
+          118.38,
+          "the"
+        ],
+        [
+          118.48,
+          "sky"
+        ],
+        [
+          118.82,
+          "and"
+        ],
+        [
+          119.6,
+          "the"
+        ],
+        [
+          119.72,
+          "clue"
+        ],
+        [
+          120.04,
+          "was"
+        ],
+        [
+          120.28,
+          "hidden"
+        ],
+        [
+          120.58,
+          "in"
+        ],
+        [
+          121.14,
+          "a"
+        ],
+        [
+          121.28,
+          "thin"
+        ],
+        [
+          121.56,
+          "layer"
+        ],
+        [
+          121.88,
+          "of"
+        ],
+        [
+          122.16,
+          "clay."
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "film": "001",
+  "video": "_C92tIJCk8A",
+  "job": "J0594",
+  "variant": "B v05 (1.155x pond-water droplet hero push-in + concrete microorganism hook; pairs with B v02 'TRAPPED IN GLASS' and B v04 'BOILED CLEAR BROTH')",
+  "maker": "gemini",
+  "hook": "TINY LIVING CELLS",
+  "punch": "CELLS",
+  "jpg": "Selected/hos_001_thumb_B_tiny_living_cells_v05.jpg",
+  "sha256": "6e6220c091deb9bbb9e6ef60760de1ea06e1fb5a18cdff05112be58aaff58714",
+  "bytes": 225264,
+  "plates": [
+    "04_Generated-Clips/part02/refs/03_drop_of_water_v01.jpg (1024x1024 Part 02 pond-water drop master plate, crop [104, 192, 1024, 928] + 1.08x local sphere push-in = 1.155x combined hero push-in on right two-thirds)",
+    "08_Thumbnail/Selected/hos_001_tc_thumb_v02.jpg (001 painted library key-art plate: lower-left Explorer at 54.4% frame height + original painted gold scroll flourishes)"
+  ],
+  "method": "existing_001_plates_only_1.155x_pond_drop_hero_push_in_plus_explorer_and_painted_flourishes_GeorgiaBold",
+  "spend": 0,
+  "heroBox": [
+    592,
+    104,
+    1022,
+    534
+  ],
+  "slideBox": [
+    420,
+    468,
+    1223,
+    650
+  ],
+  "explorer": {
+    "source": "hos_001_tc_thumb_v02.jpg",
+    "box": [
+      88,
+      328,
+      316,
+      720
+    ],
+    "height_px": 392,
+    "height_frac": 0.544
+  },
+  "lettering": [
+    {
+      "word": "TINY",
+      "kind": "cream",
+      "size": 92,
+      "box": [
+        162,
+        71,
+        408,
+        151
+      ]
+    },
+    {
+      "word": "LIVING",
+      "kind": "cream",
+      "size": 88,
+      "box": [
+        116,
+        141,
+        454,
+        222
+      ]
+    },
+    {
+      "word": "CELLS",
+      "kind": "gold",
+      "size": 104,
+      "box": [
+        114,
+        212,
+        456,
+        306
+      ]
+    }
+  ],
+  "ornaments": {
+    "top_scroll_box": [
+      88,
+      20,
+      496,
+      60
+    ],
+    "bottom_scroll_box": [
+      140,
+      318,
+      445,
+      356
+    ]
+  },
+  "clearOfHero": true,
+  "clearOfExplorer": true,
+  "clearOfBadge": true,
+  "scores": {
+    "HOOK": "PASS \u2014 'TINY LIVING CELLS' (3 words, punch word 'CELLS' in gold) names the concrete microorganisms visible inside Leeuwenhoek's glowing pond-water bead on the microscope slide (001 script Part 01 & Part 02: 'Tiny living things... spinning cells, life with no face and no name on the hospital chart... a civilisation of cells dancing in a bead of liquid' and THUMBNAIL_AND_TITLE_RULES.md \u00a71.2 & \u00a72.B.1 'name the thing'), shares zero words with the video title ('How Did We Discover Germs?'), J0391 ('THE SWAN NECK'), J0457 ('TRAPPED IN GLASS'), J0503 ('DROP OF WATER'), or J0549 ('BOILED CLEAR BROTH'), and uses no vague questions or pronouns.",
+    "BAND": "PASS \u2014 Upper-left lettering band (x=114..456, y=71..306, framed by 001's original painted gold scroll flourishes at y=20..356) sits completely left of the pushed-in glowing pond-water sphere (x=592..1022), above the Explorer's hair (y=328) and bottom flourish (y=318), and clear of the bottom-right duration badge.",
+    "PHONE": "PASS \u2014 Checked on 168x94 preview sheet and 4-panel comparison strip: the 1.155x hero push-in and internal microbe clarity boost make the glowing pond-water sphere (430x430 px, +34% larger area than v03) and its faceless rods, spiked spheres, and golden spiral read immediately at 168x94 alongside 'TINY LIVING CELLS' and the lower-left Explorer (54.4% height)."
+  },
+  "previews": [
+    "Selected/hos_001_thumb_B_tiny_living_cells_v05_preview.jpg",
+    "Selected/hos_001_thumb_B_tiny_living_cells_v05_style_sheet.jpg",
+    "Selected/hos_001_thumb_TC_4way_tiny_living_cells_v05_phone_168.jpg"
+  ],
+  "studio": false,
+  "status": "Test & Compare B v05 candidate for 001 (_C92tIJCk8A, built from existing 001 plates only with 1.155x pond-drop hero push-in, \u00a30). Parked for Chief: thumb B review. No Studio until OK."
+}

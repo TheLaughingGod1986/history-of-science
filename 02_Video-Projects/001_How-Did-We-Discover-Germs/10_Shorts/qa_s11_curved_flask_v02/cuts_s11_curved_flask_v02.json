@@ -1,0 +1,79 @@
+[
+  {
+    "row": "s01_0",
+    "timeline_in": 0.0,
+    "timeline_out": 2.689,
+    "source": "01_question_mark_flask_v17.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 1.6
+    },
+    "video": true
+  },
+  {
+    "row": "s02_Vaccines?",
+    "timeline_in": 2.689,
+    "timeline_out": 6.17,
+    "source": "09_sceptics_watch_v17.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.4
+    },
+    "video": true
+  },
+  {
+    "row": "s03_paradox",
+    "timeline_in": 6.17,
+    "timeline_out": 8.17,
+    "source": "05_tip_the_trap_v17.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.4
+    },
+    "video": true
+  },
+  {
+    "row": "s04_emptiness",
+    "timeline_in": 8.17,
+    "timeline_out": 11.284,
+    "source": "04_still_clear_v21.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.45
+    },
+    "video": true
+  },
+  {
+    "row": "s05_A",
+    "timeline_in": 11.284,
+    "timeline_out": 14.63,
+    "source": "08_passengers_v20.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.35
+    },
+    "video": true
+  },
+  {
+    "row": "s06_invisible",
+    "timeline_in": 14.63,
+    "timeline_out": 19.357,
+    "source": "11_result_returns_v01.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.5
+    },
+    "video": true
+  },
+  {
+    "row": "s07_loop",
+    "timeline_in": 19.357,
+    "timeline_out": 22.357,
+    "source": "loop_end_01_question_mark_flask_v17.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.35
+    },
+    "video": true
+  }
+]

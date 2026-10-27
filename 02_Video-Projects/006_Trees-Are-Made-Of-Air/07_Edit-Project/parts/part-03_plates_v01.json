@@ -5,7 +5,7 @@
   "title": "The Air That Mint Repaired",
   "status": "BOARD_V01",
   "mint": false,
-  "house": "STUDIO_PLAYBOOK.md §5 · re-timed from VO v02 (VO_RETIME_v02.json) · priced (Claude desk task 5951184558, 2 Oct 2026)",
+  "house": "STUDIO_PLAYBOOK.md \u00a75 \u00b7 re-timed from VO v02 (VO_RETIME_v02.json) \u00b7 priced (Claude desk task 5951184558, 2 Oct 2026)",
   "script": "01_Script/trees_script_master_v02.md",
   "vo_file": "02_Voiceover/part03_the_air_that_mint_repaired_v02.mp3",
   "vo_sha256": "6696a9b8bcd0295139a75d59e1d2900189a4c9ed7d4609a592d9959e4a094bd7",
@@ -73,14 +73,18 @@
       "cost_try1_gbp": 0.48,
       "cost_expected_gbp": 1.01,
       "cum_expected_gbp": 50.87,
-      "beyond_floor": false
+      "beyond_floor": false,
+      "uat_disposition": "KEEP",
+      "kept_source": "01_soil_to_sky_t1.mp4",
+      "kept_sha256": "d23f24d6dbd1f3283af322a9dd112a2b67357dfda9b9b2f844fcf79e33bd317f",
+      "uat_note": "KEEP t1 (Chief, desk #180 6102934743)"
     },
     {
       "id": "02_hales_branch",
       "t_s": 188.09,
       "t": "3:08.09",
       "explorer": false,
-      "side_label": "STEPHEN HALES · 1727",
+      "side_label": "STEPHEN HALES \u00b7 1727",
       "quality": "Quality",
       "engine_reason": "Quality: a named person's readable face is the hero (first appearance).",
       "prompt": "Premium Animistry-class 3D cartoon. A riverside churchyard garden at Teddington in the 1720s: Stephen Hales, a round-faced, clean-shaven English parson of about fifty, short white wig, black clergyman's coat with white bands, seals a glass tube over the cut end of a leafy branch with wax and peers at the water level inside. Readable, finished face. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.",
@@ -93,7 +97,11 @@
       "cost_try1_gbp": 1.28,
       "cost_expected_gbp": 3.39,
       "cum_expected_gbp": 54.25,
-      "beyond_floor": false
+      "beyond_floor": false,
+      "uat_disposition": "KEEP",
+      "kept_source": "02_hales_branch_t1.mp4",
+      "kept_sha256": "d86185f5440105bdc6d8cb5d58fd6df56d17bca4bc5afcd44f5689706ff32b12",
+      "uat_note": "KEEP t1 (Chief, desk #180 6102934743)"
     },
     {
       "id": "03_water_level",
@@ -113,7 +121,11 @@
       "cost_try1_gbp": 0.48,
       "cost_expected_gbp": 1.01,
       "cum_expected_gbp": 55.26,
-      "beyond_floor": false
+      "beyond_floor": false,
+      "uat_disposition": "KEEP",
+      "kept_source": "03_water_level_t1.mp4",
+      "kept_sha256": "3bc74465d1fdc2f406851b5394c3fc2dfd6167b0a4bd1ee7eddb7b24b9582965",
+      "uat_note": "KEEP t1 (Chief, desk #180 6102934743)"
     },
     {
       "id": "04_leaf_mist",
@@ -134,7 +146,11 @@
       "cost_try1_gbp": 0.64,
       "cost_expected_gbp": 1.33,
       "cum_expected_gbp": 56.59,
-      "beyond_floor": false
+      "beyond_floor": false,
+      "uat_disposition": "KEEP",
+      "kept_source": "04_leaf_mist_t1.mp4",
+      "kept_sha256": "05667dbe1f3c075fe985597dff34d7dc3ebf05bc5b41e41410181ee05c3b1c54",
+      "uat_note": "KEEP t1 (Chief, desk #180 6102934743)"
     },
     {
       "id": "05_guess",
@@ -154,14 +170,18 @@
       "cost_try1_gbp": 0.32,
       "cost_expected_gbp": 0.7,
       "cum_expected_gbp": 57.29,
-      "beyond_floor": false
+      "beyond_floor": false,
+      "uat_disposition": "KEEP",
+      "kept_source": "05_guess_t1.mp4",
+      "kept_sha256": "5eef020487cdd7dbc9ff23971663e3e4b9629d652fe25fee0240c1b14b2f41fa",
+      "uat_note": "KEEP t1 (Chief, desk #180 6102934743)"
     },
     {
       "id": "06_leeds_brewery",
       "t_s": 210.17,
       "t": "3:30.17",
       "explorer": false,
-      "side_label": "LEEDS · 1771",
+      "side_label": "LEEDS \u00b7 1771",
       "quality": "Fast",
       "engine_reason": "Fast: held establishing shot, slow push, no readable faces, nothing emissive.",
       "prompt": "Premium Animistry-class 3D cartoon. Leeds, 1771: a plain stone house beside a busy brewery, white steam rising from the vats into a grey sky. Held wide shot, slow push. No readable faces. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.",
@@ -175,7 +195,11 @@
       "flow_credits": 20,
       "cost_try1_gbp": 0.0,
       "cost_expected_gbp": 0.0,
-      "route_note": "Flow Veo 3.1 Fast, 2 takes x 10 credits; a third take moves to Vertex Fast"
+      "route_note": "Flow Veo 3.1 Fast, 2 takes x 10 credits; a third take moves to Vertex Fast",
+      "uat_disposition": "KEEP",
+      "kept_source": "06_leeds_brewery_nofire_crop_v01.mp4",
+      "kept_sha256": "6b2f4210c00dfd55c7db3bc9a886213c583df0c4d97bb947c0d02300acdd79cf",
+      "uat_note": "KEEP (J0160 Vertex t1 top-cropped 1.33x to exclude vat fireboxes (Chief #180 6131279209 / 6133444306); Chief 15 Oct sweep #180 IC_kwDOUEPCF88AAAABcNg8Bw)"
     },
     {
       "id": "07_priestley",
@@ -196,7 +220,11 @@
       "cost_try1_gbp": 1.28,
       "cost_expected_gbp": 3.39,
       "cum_expected_gbp": 60.67,
-      "beyond_floor": false
+      "beyond_floor": false,
+      "uat_disposition": "KEEP",
+      "kept_source": "07_priestley_t1.mp4",
+      "kept_sha256": "b8a981ea74471bd28997f13bce0899c832bb67f36fa78048f2c615a129256ad6",
+      "uat_note": "KEEP t1 (Chief, desk #180 6102934743)"
     },
     {
       "id": "08_candles_out",
@@ -216,7 +244,11 @@
       "cost_try1_gbp": 1.28,
       "cost_expected_gbp": 3.39,
       "cum_expected_gbp": 64.06,
-      "beyond_floor": false
+      "beyond_floor": false,
+      "uat_disposition": "KEEP",
+      "kept_source": "08_candles_out_t1.mp4",
+      "kept_sha256": "765525feee477f84f6e2b42a255d941dcbf9ec9053c6716a94c9cd888dfcae44",
+      "uat_note": "KEEP t1 (Chief, desk #180 6102934743)"
     },
     {
       "id": "09_injured_air",
@@ -236,14 +268,18 @@
       "cost_try1_gbp": 0.32,
       "cost_expected_gbp": 0.7,
       "cum_expected_gbp": 64.76,
-      "beyond_floor": false
+      "beyond_floor": false,
+      "uat_disposition": "KEEP",
+      "kept_source": "09_injured_air_t1.mp4",
+      "kept_sha256": "23cc12c39387d6795072dda135139e6a589b93ede341c2f9ce89af016099adf5",
+      "uat_note": "KEEP t1 (Chief, desk #180 6102934743)"
     },
     {
       "id": "10_mint_jar",
       "t_s": 231.19,
       "t": "3:51.19",
       "explorer": false,
-      "side_label": "ONE SPRIG OF MINT · 17 AUGUST",
+      "side_label": "ONE SPRIG OF MINT \u00b7 17 AUGUST",
       "quality": "Fast",
       "engine_reason": "Fast: hands and props only, no face, nothing emissive.",
       "prompt": "Premium Animistry-class 3D cartoon. Same jar: Priestley's hands slide a bright green sprig of mint in a little pot under it and seal it; beside it a small blank calendar card stands on the table (the date is added in the edit). Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.",
@@ -256,14 +292,18 @@
       "cost_try1_gbp": 0.64,
       "cost_expected_gbp": 1.33,
       "cum_expected_gbp": 66.08,
-      "beyond_floor": true
+      "beyond_floor": true,
+      "uat_disposition": "KEEP",
+      "kept_source": "10_mint_jar_t1.mp4",
+      "kept_sha256": "309957a192218bc7d1ff66a896adce207e18331a3f66a1f4b7d7acef84e52adf",
+      "uat_note": "KEEP t1 (Chief, desk #180 6102934743)"
     },
     {
       "id": "11_candle_tall",
       "t_s": 238.41,
       "t": "3:58.41",
       "explorer": false,
-      "side_label": "TEN DAYS LATER → THE AIR IS BACK",
+      "side_label": "TEN DAYS LATER \u2192 THE AIR IS BACK",
       "quality": "Quality",
       "engine_reason": "Quality: a candle flame, furnace or fire is in frame as the hero light (fragile light).",
       "prompt": "Premium Animistry-class 3D cartoon. Same jar, the mint now fuller: Priestley's hand lowers a lit candle on a wire into it and the flame burns tall and steady; the camera eases in on the flame. Silent. Continuous motion through the final frame. No Explorer.",
@@ -277,7 +317,11 @@
       "cost_try1_gbp": 1.28,
       "cost_expected_gbp": 3.39,
       "cum_expected_gbp": 69.47,
-      "beyond_floor": true
+      "beyond_floor": true,
+      "uat_disposition": "KEEP",
+      "kept_source": "11_candle_tall_t1.mp4",
+      "kept_sha256": "3fe88ccf83a1eb65bbf59ee8bf75b605f72e03dc7204c6b6cef84a6ffbd06d28",
+      "uat_note": "KEEP t1 (Chief, desk #180 6102934743)"
     },
     {
       "id": "12_mouse_mint",
@@ -298,7 +342,11 @@
       "cost_try1_gbp": 0.64,
       "cost_expected_gbp": 1.33,
       "cum_expected_gbp": 70.8,
-      "beyond_floor": true
+      "beyond_floor": true,
+      "uat_disposition": "KEEP",
+      "kept_source": "12_mouse_mint_t1.mp4",
+      "kept_sha256": "485002cfd782fc68b705e41c75c4ebb9765465e5e6f30ddf2cea3e02d81901b6",
+      "uat_note": "KEEP t1 (Chief, desk #180 6102934743)"
     },
     {
       "id": "13_fires_breath",
@@ -320,7 +368,11 @@
       "cost_try1_gbp": 0.64,
       "cost_expected_gbp": 1.33,
       "cum_expected_gbp": 72.12,
-      "beyond_floor": true
+      "beyond_floor": true,
+      "uat_disposition": "KEEP",
+      "kept_source": "13_fires_breath_t1.mp4",
+      "kept_sha256": "13d05663151f66fcdee550130b653d6b85b769cf9f9b825281fc90d5462797a8",
+      "uat_note": "KEEP t1 (Chief, desk #180 6102934743)"
     },
     {
       "id": "14_trees_breathe",
@@ -340,7 +392,11 @@
       "cost_try1_gbp": 0.64,
       "cost_expected_gbp": 1.33,
       "cum_expected_gbp": 73.45,
-      "beyond_floor": true
+      "beyond_floor": true,
+      "uat_disposition": "KEEP",
+      "kept_source": "14_trees_breathe_t1.mp4",
+      "kept_sha256": "9530962207c52c22da465583ef1ce2916b722ff097a2daa388daebab1e9c9e8e",
+      "uat_note": "KEEP t1 (Chief, desk #180 6102934743)"
     },
     {
       "id": "15_quill_vegetable",
@@ -360,7 +416,11 @@
       "cost_try1_gbp": 0.48,
       "cost_expected_gbp": 1.01,
       "cum_expected_gbp": 74.46,
-      "beyond_floor": true
+      "beyond_floor": true,
+      "uat_disposition": "KEEP",
+      "kept_source": "15_quill_vegetable_t1.mp4",
+      "kept_sha256": "ccc237cf6edfb24e29d1e9031077786209e2fcf749bbbe33cb1ac040603a9f21",
+      "uat_note": "KEEP t1 (Chief, desk #180 6102934743)"
     },
     {
       "id": "16_repair_reuse",
@@ -380,7 +440,11 @@
       "route": "reuse",
       "clip_s": 0,
       "cost_try1_gbp": 0.0,
-      "cost_expected_gbp": 0.0
+      "cost_expected_gbp": 0.0,
+      "uat_disposition": "REUSE",
+      "kept_source": "14_trees_breathe_t1.mp4",
+      "kept_sha256": "9530962207c52c22da465583ef1ce2916b722ff097a2daa388daebab1e9c9e8e",
+      "uat_note": "REUSE window 3.00-6.84 s of 14_trees_breathe (board reuse_of P3:14_trees_breathe)"
     },
     {
       "id": "17_notebook_tick",
@@ -401,7 +465,11 @@
       "cost_try1_gbp": 0.48,
       "cost_expected_gbp": 1.01,
       "cum_expected_gbp": 75.47,
-      "beyond_floor": true
+      "beyond_floor": true,
+      "uat_disposition": "KEEP",
+      "kept_source": "17_notebook_tick_t1.mp4",
+      "kept_sha256": "8ca43962468b70907152ddc4a4a63df42ede3141e21779b98046534ac824fc40",
+      "uat_note": "KEEP t1 (Chief, desk #180 6102934743)"
     },
     {
       "id": "18_dark_window",
@@ -422,7 +490,18 @@
       "cost_try1_gbp": 0.48,
       "cost_expected_gbp": 1.01,
       "cum_expected_gbp": 76.48,
-      "beyond_floor": true
+      "beyond_floor": true,
+      "uat_disposition": "KEEP",
+      "kept_source": "18_dark_window_t1.mp4",
+      "kept_sha256": "5184300024fa1c88c8598a28ea1d22eaeb76ca0550c0b4fa3372c49cf7ef1134",
+      "uat_note": "KEEP t1 (Chief, desk #180 6102934743)"
     }
-  ]
+  ],
+  "uat_applied": {
+    "status": "KEEP",
+    "authority": "Chief 15 Oct sweep (#180 IC_kwDOUEPCF88AAAABcNg8Bw)",
+    "date": "2026-10-15",
+    "rough_meta": "07_Edit-Project/_desk/006/part03_rough_v02/ROUGH_META_part03_v02.json",
+    "rough_sha256": "ff80e9fdf802a8a5eb53e92a226307d95c64091154ab6322dffcfb31ba98d8ce"
+  }
 }

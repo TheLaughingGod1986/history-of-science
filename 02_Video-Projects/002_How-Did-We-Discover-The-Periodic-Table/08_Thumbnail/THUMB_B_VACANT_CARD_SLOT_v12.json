@@ -1,0 +1,99 @@
+{
+  "film": "002",
+  "video": "AL_-qlWko_g",
+  "job": "J0777",
+  "variant": "B v12 (1.33x vacant-card-slot hero push-in + concrete vacant-slot hook; pairs with B v11 'WARM SILVERY DROP' and B v10 'SKIPPED ATOMIC SEAT')",
+  "maker": "gemini",
+  "hook": "VACANT CARD SLOT",
+  "punch": "VACANT",
+  "jpg": "Selected/hos_002_thumb_B_vacant_card_slot_v12.jpg",
+  "sha256": "937ca5171e179a08f09ef1e34d2138553577b18230102264a30302b6e3a853a2",
+  "bytes": 202090,
+  "plates": [
+    "_stills_v05/hos_002_empty_slot_hero_v01.jpg (1376x768 Flow Nano Banana periodic-table cabinet plate with 1.33x hero push-in on the glowing vacant card slot)",
+    "Selected/hos_002_thumb_A_gallium_live_v02.png (NAS 002 painted key-art lower-left Explorer cutout)"
+  ],
+  "method": "existing_002_plates_only_1.33x_hero_push_in_and_Explorer_cutout_with_GeorgiaBold_and_gold_flourishes",
+  "spend": 0,
+  "heroBox": [
+    605,
+    208,
+    1014,
+    563
+  ],
+  "explorer": {
+    "source": "002_how_did_we_discover_the_periodic_table.jpg",
+    "box": [
+      0,
+      331,
+      256,
+      720
+    ],
+    "height_px": 389,
+    "height_frac": 0.54
+  },
+  "lettering": [
+    {
+      "word": "VACANT",
+      "kind": "gold",
+      "size": 88,
+      "box": [
+        104,
+        44,
+        497,
+        125
+      ]
+    },
+    {
+      "word": "CARD",
+      "kind": "cream",
+      "size": 94,
+      "box": [
+        158,
+        115,
+        441,
+        200
+      ]
+    },
+    {
+      "word": "SLOT",
+      "kind": "cream",
+      "size": 94,
+      "box": [
+        172,
+        190,
+        427,
+        275
+      ]
+    }
+  ],
+  "ornaments": {
+    "top_scroll_box": [
+      134,
+      17,
+      466,
+      39
+    ],
+    "bottom_scroll_box": [
+      178,
+      275,
+      422,
+      297
+    ]
+  },
+  "clearOfHero": true,
+  "clearOfExplorer": true,
+  "clearOfBadge": true,
+  "scores": {
+    "HOOK": "PASS \u2014 'VACANT CARD SLOT' (3 words, punch word 'VACANT' in gold) names the concrete visual hero on the right two-thirds (the glowing vacant element-card slot inside the column of cream cards on Mendeleev's wooden periodic-table cabinet; 002 script Part 04: 'Each card is one chemical element... walk toward a vacant chair with an address' and VISUAL MUST: 'cream cards of known elements sorted by atomic weight; families drop into columns; two-three glowing empty seats / vacant card slots for eka-elements', plus THUMBNAIL_AND_TITLE_RULES.md \u00a71.2 & \u00a72.B.1 'name the thing'), shares zero words with the video title ('How Did We Discover the Periodic Table?'), J0374 ('THE MISSING ELEMENT'), J0442 ('PREDICTED BEFORE FOUND'), J0488 ('EMPTY ON PURPOSE'), J0534 ('METAL TURNS LIQUID'), J0579 ('ONE GLOWING GAP'), J0624 ('SOFT MELTING GALLIUM'), J0670 ('SKIPPED ATOMIC SEAT'), or J0731 ('WARM SILVERY DROP'), and uses no vague questions or pronouns.",
+    "BAND": "PASS \u2014 Upper-left lettering band (x=104..497, y=44..275, framed by top/bottom gold scroll flourishes at y=17..297) sits completely left of the pushed-in glowing hero slot (x=605..1014), above the Explorer's hair (y=331), and clear of the bottom-right duration badge.",
+    "PHONE": "PASS \u2014 Checked on 168x94 preview sheet and 4-panel strip: the 1.33x hero push-in and golden rim clarity boost make the glowing vacant card slot (409x355 px) and surrounding column of blank cream cards bold and unmistakable at 168x94 while keeping 'VACANT CARD SLOT' and the lower-left Explorer (54.4% height) immediately legible in under a second."
+  },
+  "previews": [
+    "Selected/hos_002_thumb_B_vacant_card_slot_v12_preview.jpg",
+    "Selected/hos_002_thumb_B_vacant_card_slot_v12_style_sheet.jpg",
+    "Selected/hos_002_thumb_TC_4way_vacant_card_slot_v12_phone_168.jpg"
+  ],
+  "studio": false,
+  "status": "Test & Compare B v12 candidate for 002 (AL_-qlWko_g, built from existing 002 plates only with 1.33x hero push-in, \u00a30). Parked for Chief: thumb B review. No Studio until OK."
+}

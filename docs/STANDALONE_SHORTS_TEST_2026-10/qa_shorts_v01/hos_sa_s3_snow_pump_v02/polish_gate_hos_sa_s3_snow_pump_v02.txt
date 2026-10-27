@@ -1,0 +1,6 @@
+s01_05_handle_off_v03     2.3s 05_handle_off_v03.jpg        ok
+s02_02_soho_1854_v01     7.8s 02_soho_1854_v01.jpg         WARN low detail: edge density 0.0366 < film p5 0.0374
+s03_03_snow_tracking_v01    12.9s 03_snow_tracking_v01.jpg     ok
+s04_04_map_bars_v01    16.3s 04_map_bars_v01.jpg          ok
+s05_05_handle_off_v03    20.0s end_card_loop_05_handle_off_ ok
+polish gate PASS: 0 of 5 rows failed, 1 to look at -> /Users/benjaminoats/YouTube/History Of Science/docs/STANDALONE_SHORTS_TEST_2026-10/qa_shorts_v01/hos_sa_s3_snow_pump_v02/polish_gate_hos_sa_s3_snow_pump_v02.json

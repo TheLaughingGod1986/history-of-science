@@ -1,0 +1,32 @@
+{
+  "format": "shorts",
+  "channel": "@HistoryOfScienceYT",
+  "title": "Is the Heart a Pump?",
+  "description": "The Tied Arm That Proved Your Blood Circulates\nhttps://www.youtube.com/watch?v=wwcjcFfC-5M\n",
+  "tags": [
+    "is the heart a pump",
+    "what did galen believe about the heart",
+    "galen",
+    "william harvey",
+    "blood circulation",
+    "history of medicine",
+    "history of science"
+  ],
+  "relatedVideoId": "wwcjcFfC-5M",
+  "privacy": "private",
+  "madeForKids": false,
+  "alteredContent": true,
+  "language": "en-GB",
+  "categoryId": "27",
+  "video": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s04_galen_stove_v01.mp4",
+  "videoSha256": "c4971738d14c64fc347f054fa4c12dbe1c03d08622ebbab8c3bb3e0ba83fea4f",
+  "thumbnail": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/covers_v02/hos_005_s04_galen_stove_cover_v02.jpg",
+  "social": {
+    "hook": "Galen taught that the heart's job was to heat the blood, not to pump it.",
+    "question": "What did you think the heart did, before anyone told you?",
+    "alt": "A cutaway figure whose heart sits on a glowing wood stove, captioned NOT A PUMP."
+  },
+  "note": "J0205 (OWB queue), 13 Oct 2026, Cursor. Short s04 Galen stove v01, Chief PASS; title 'Is the Heart a Pump?' KEEP (autocomplete hit, SHORT_s04_galen_stove_v01.json). No schedule: Chief picks the slot on J0188 (Shorts already set: 30 Oct, 8 Nov, 15 Nov). Cover: covers_v02/hos_005_s04_galen_stove_cover_v02.jpg (J0230, IS THE / HEART A / PUMP?, opening plate 05_heart_stove_t1; jpg is gitignored, present in the HOS and hos-005-blood checkouts; set it in Studio before go-live). Description carries no new fact (long title + link only); the social hook restates the Short's spoken line. The mp4 lives only in the HOS UAT iCloud folder (it was evicted on 13 Oct; brctl download brought it back, sha256 matches), so J0188 downloads it first. Never uploads.",
+  "thumbnailSha256": "d12fdf6a44072aee6b0a7b0504cecc631e87fce523aaa75e12514bcff66336c6",
+  "schedule": "2026-10-31T11:30:00Z"
+}

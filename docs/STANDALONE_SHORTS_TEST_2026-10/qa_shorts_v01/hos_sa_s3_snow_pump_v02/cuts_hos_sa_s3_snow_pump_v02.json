@@ -1,0 +1,57 @@
+[
+  {
+    "row": "s01_05_handle_off_v03",
+    "timeline_in": 0.0,
+    "timeline_out": 4.66,
+    "source": "05_handle_off_v03.jpg",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  },
+  {
+    "row": "s02_02_soho_1854_v01",
+    "timeline_in": 4.66,
+    "timeline_out": 11.04,
+    "source": "02_soho_1854_v01.jpg",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 4.66
+    },
+    "video": true
+  },
+  {
+    "row": "s03_03_snow_tracking_v01",
+    "timeline_in": 11.04,
+    "timeline_out": 14.72,
+    "source": "03_snow_tracking_v01.jpg",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 11.04
+    },
+    "video": true
+  },
+  {
+    "row": "s04_04_map_bars_v01",
+    "timeline_in": 14.72,
+    "timeline_out": 17.82,
+    "source": "04_map_bars_v01.jpg",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 14.72
+    },
+    "video": true
+  },
+  {
+    "row": "s05_05_handle_off_v03",
+    "timeline_in": 17.82,
+    "timeline_out": 22.14,
+    "source": "end_card_loop_05_handle_off_v03.jpg",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 17.82
+    },
+    "video": true
+  }
+]

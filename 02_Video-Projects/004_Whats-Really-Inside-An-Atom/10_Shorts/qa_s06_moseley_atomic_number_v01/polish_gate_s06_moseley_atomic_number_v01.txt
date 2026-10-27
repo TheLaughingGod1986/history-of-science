@@ -1,0 +1,9 @@
+s01_0     2.3s 07_crystal_split_v01.mp4     ok
+s02_Element     6.3s 09_one_rung_each_v01.mp4     ok
+s03_even     9.4s 05_xrays_from_metal_v01.mp4  ok
+s04_Count    13.0s 04_electrons_fire_v01.mp4    ok
+s05_the    16.5s 14_nucleus_electrons_v01.mp4 WARN low detail: edge density 0.0248 < film p5 0.0345
+s06_The    19.1s 02_train_in_tube_v01.mp4     ok
+s07_Mendeleev's    21.9s 03_targets_swap_v01.mp4      ok
+s08_loop    24.9s loop_end_07_crystal_split_v0 ok
+polish gate PASS: 0 of 8 rows failed, 1 to look at -> 02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/qa_s06_moseley_atomic_number_v01/polish_gate_s06_moseley_atomic_number_v01.json

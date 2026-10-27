@@ -1,0 +1,174 @@
+[
+  {
+    "file": "code_graphic_comp_timeline_b1.mp4",
+    "duration": 3.5,
+    "fps": 30,
+    "width": 1920,
+    "height": 1080,
+    "sha256": "0fecb22c52fc5a048a31c183d577c0b73fee88485779f1cd862ac8158d60c210",
+    "background": "/private/tmp/hos_comp_v01/film_005_norm.mp4",
+    "background_offset": 287.6,
+    "tick_ink_seconds": [
+      0.6
+    ],
+    "minimum_sample_mean_luma": 93.12,
+    "minimum_sample_p95": 189.0,
+    "near_black": "PASS",
+    "note": "Tick cues relative to this clip; new markers only. No audio baked in. Ordinal milestones, not a linear year scale."
+  },
+  {
+    "file": "code_graphic_comp_timeline_b3.mp4",
+    "duration": 4,
+    "fps": 30,
+    "width": 1920,
+    "height": 1080,
+    "sha256": "3333e115f159d70b2aca0ffd7c9730696f9576df6027c2b399609545563ad910",
+    "background": "/private/tmp/hos_comp_v01/film_002_norm.mp4",
+    "background_offset": 131.5,
+    "tick_ink_seconds": [
+      0.6,
+      1.25
+    ],
+    "minimum_sample_mean_luma": 108.53,
+    "minimum_sample_p95": 185.0,
+    "near_black": "PASS",
+    "note": "Tick cues relative to this clip; new markers only. No audio baked in. Ordinal milestones, not a linear year scale."
+  },
+  {
+    "file": "code_graphic_comp_timeline_b5.mp4",
+    "duration": 4,
+    "fps": 30,
+    "width": 1920,
+    "height": 1080,
+    "sha256": "e1961a7157f0a3613452b1b354894af49fd5b4e5cd9baf465326cf7c3bed9e2a",
+    "background": "/private/tmp/hos_comp_v01/film_004_norm.mp4",
+    "background_offset": 260,
+    "tick_ink_seconds": [
+      0.6,
+      1.25
+    ],
+    "minimum_sample_mean_luma": 97.3,
+    "minimum_sample_p95": 157.0,
+    "near_black": "PASS",
+    "note": "Tick cues relative to this clip; new markers only. No audio baked in. Ordinal milestones, not a linear year scale."
+  },
+  {
+    "file": "code_graphic_comp_timeline_close.mp4",
+    "duration": 4,
+    "fps": 30,
+    "width": 1920,
+    "height": 1080,
+    "sha256": "41a224bc97f6d2e7e5e9263166b53ce0e6aaf323d7bee9c3d29e8454b51eb044",
+    "background": "/private/tmp/hos_comp_v01/film_004_norm.mp4",
+    "background_offset": 310,
+    "tick_ink_seconds": [
+      0.6
+    ],
+    "minimum_sample_mean_luma": 66.48,
+    "minimum_sample_p95": 118.0,
+    "near_black": "PASS",
+    "note": "Tick cues relative to this clip; new markers only. No audio baked in. Ordinal milestones, not a linear year scale."
+  },
+  {
+    "file": "code_graphic_comp_card_01.mp4",
+    "duration": 3,
+    "fps": 30,
+    "width": 1920,
+    "height": 1080,
+    "sha256": "a407125e3540be14a373a90a79ed8591e42e4a8b21b425a6d149c2a126ae50ef",
+    "background": "/private/tmp/hos_comp_v01/film_005_norm.mp4",
+    "background_offset": 287.6,
+    "tick_ink_seconds": [
+      0.2
+    ],
+    "minimum_sample_mean_luma": 94.4,
+    "minimum_sample_p95": 189.0,
+    "near_black": "PASS",
+    "note": "Tick cues relative to this clip; new markers only. No audio baked in. Ordinal milestones, not a linear year scale."
+  },
+  {
+    "file": "code_graphic_comp_card_02.mp4",
+    "duration": 3,
+    "fps": 30,
+    "width": 1920,
+    "height": 1080,
+    "sha256": "1d266fa524e052739b0e31893c1a80e491cefbc56b1b48918bcb17cc4b0e7d94",
+    "background": "/private/tmp/hos_comp_v01/film_002_norm.mp4",
+    "background_offset": 134,
+    "tick_ink_seconds": [
+      0.2
+    ],
+    "minimum_sample_mean_luma": 109.32,
+    "minimum_sample_p95": 185.0,
+    "near_black": "PASS",
+    "note": "Tick cues relative to this clip; new markers only. No audio baked in. Ordinal milestones, not a linear year scale."
+  },
+  {
+    "file": "code_graphic_comp_card_03.mp4",
+    "duration": 3,
+    "fps": 30,
+    "width": 1920,
+    "height": 1080,
+    "sha256": "372a71c561221400f9ad19e8c57f3a108e527ff7449275440747ce2af0d4e717",
+    "background": "/private/tmp/hos_comp_v01/film_001_norm.mp4",
+    "background_offset": 300,
+    "tick_ink_seconds": [
+      0.2
+    ],
+    "minimum_sample_mean_luma": 74.55,
+    "minimum_sample_p95": 121.0,
+    "near_black": "PASS",
+    "note": "Tick cues relative to this clip; new markers only. No audio baked in. Ordinal milestones, not a linear year scale."
+  },
+  {
+    "file": "code_graphic_comp_card_04.mp4",
+    "duration": 3,
+    "fps": 30,
+    "width": 1920,
+    "height": 1080,
+    "sha256": "7f7fd954d07019fbfa1ff43182cd4fc1ea1101c2ef1787e37cea5e3fc775712b",
+    "background": "/private/tmp/hos_comp_v01/film_002_norm.mp4",
+    "background_offset": 162.3,
+    "tick_ink_seconds": [
+      0.2
+    ],
+    "minimum_sample_mean_luma": 85.79,
+    "minimum_sample_p95": 165.0,
+    "near_black": "PASS",
+    "note": "Tick cues relative to this clip; new markers only. No audio baked in. Ordinal milestones, not a linear year scale."
+  },
+  {
+    "file": "code_graphic_comp_card_05.mp4",
+    "duration": 3,
+    "fps": 30,
+    "width": 1920,
+    "height": 1080,
+    "sha256": "d72d7a3af715ae0a698cd6fe494cb8cbc56bad65e1287ace47fa3e56744664b4",
+    "background": "/private/tmp/hos_comp_v01/film_003_norm.mp4",
+    "background_offset": 95.5,
+    "tick_ink_seconds": [
+      0.2
+    ],
+    "minimum_sample_mean_luma": 83.0,
+    "minimum_sample_p95": 181.0,
+    "near_black": "PASS",
+    "note": "Tick cues relative to this clip; new markers only. No audio baked in. Ordinal milestones, not a linear year scale."
+  },
+  {
+    "file": "code_graphic_comp_card_06.mp4",
+    "duration": 3,
+    "fps": 30,
+    "width": 1920,
+    "height": 1080,
+    "sha256": "560f590eafbddb5272b7628d9b667474ec8ab8c6fa315787720a0c5954fa57b5",
+    "background": "/private/tmp/hos_comp_v01/film_004_norm.mp4",
+    "background_offset": 252,
+    "tick_ink_seconds": [
+      0.2
+    ],
+    "minimum_sample_mean_luma": 90.52,
+    "minimum_sample_p95": 151.0,
+    "near_black": "PASS",
+    "note": "Tick cues relative to this clip; new markers only. No audio baked in. Ordinal milestones, not a linear year scale."
+  }
+]

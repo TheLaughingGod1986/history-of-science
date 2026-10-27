@@ -1,0 +1,16 @@
+01a_garden_path     2.2s 01a_garden_path_t1.mp4       ok
+01_sarah_nelmes     6.9s 01_sarah_nelmes_t1.mp4       ok
+02_cow_from_lane    13.3s 02_cow_from_lane_t1.mp4      ok
+03_phipps_stool    19.4s 03_phipps_stool_t1.mp4       ok
+03b_lancet_case    23.5s 03b_lancet_case_t1.mp4       ok
+04_lancet_touch    28.7s 04_lancet_touch_t1.mp4       ok
+05_quill_writes    35.6s 05_quill_writes_t1.mp4       WARN low detail: edge density 0.0175 < film p5 0.0209
+05b_week_passes    41.0s 05b_week_passes_t1.mp4       ok
+06_mild_fever    45.1s 06_mild_fever_t1.mp4         ok
+07_playing_garden    50.4s 07_playing_garden_t1.mp4     ok
+08_jenner_thinks    55.4s 08_jenner_thinks_t1.mp4      ok
+08b_uneasy_hand    60.3s 08b_uneasy_hand_t1.mp4       ok
+08c_map_again    66.4s code_graphic_007_p3_08c_map_ ok
+09_casebook_open    72.7s 13_casebook_t1.mp4           ok
+09b_phipps_again    77.2s 03_phipps_stool_t1.mp4       ok
+polish gate PASS: 0 of 15 rows failed, 1 to look at -> /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/_desk/007/part03_rough_v01/polish_gate.json

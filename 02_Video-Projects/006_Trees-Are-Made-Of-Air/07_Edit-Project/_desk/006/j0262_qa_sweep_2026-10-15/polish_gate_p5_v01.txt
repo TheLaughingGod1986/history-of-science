@@ -1,0 +1,26 @@
+01_geneva_lake     2.2s 01_geneva_lake_t1.mp4        ok
+02_senebier_jars     8.2s 02_senebier_jars_cover_v01.m ok
+03_de_saussure    15.0s 11_trunk_pie_t1.mp4          ok
+04_fine_scales    21.7s 04_fine_scales_t1.mp4        ok
+05_sums_add_up    27.0s 05_sums_add_up_t1.mp4        WARN low detail: edge density 0.0248 < film p5 0.0269
+06_leaf_in    31.8s 06_leaf_in_t1.mp4            ok
+07_sugar_oxygen    38.5s 07_sugar_oxygen_t1.mp4       ok
+08_sugar_wood    44.7s 08_sugar_wood_t1.mp4         ok
+09_helmont_willow    49.2s 06_garden_years_t2.mp4       ok
+10_air_threads    54.5s 01_willow_air_t1.mp4         ok
+11_trunk_pie    60.4s 11_trunk_pie_cg_v01.mp4      ok
+12_scales_barely    65.7s 12_pointer_short_t1.mp4      ok
+13_water_in_tree    71.0s 05_pure_water_t1.mp4         ok
+14_built_from_sky    76.5s 14_built_from_sky_t1.mp4     ok
+15_food_glow    82.8s 15_food_glow_t1.mp4          ok
+16_cow_grass    89.2s 16_cow_grass_t1.mp4          ok
+17_wind_air    95.2s 17_wind_air_t1.mp4           ok
+18_forest_sea   101.5s 18_forest_sea_t1.mp4         ok
+19_dots_crowd   107.0s 19_dots_crowd_cg_v01.mp4     ok
+20_explorer_willow   112.3s 20_explorer_willow_t1.mp4    ok
+21_three_objects   118.2s 03_pot_jar_leaf_t1.mp4       ok
+22_pulled_down   124.5s 22_pulled_down_t1.mp4        ok
+23_carbon_atom   132.0s 23_carbon_atom_t1.mp4        WARN low detail: edge density 0.0232 < film p5 0.0269
+24_gold_foil   139.2s 11_gold_foil_bounce_v01.mp4  ok
+polish gate PASS: 0 of 24 rows failed, 2 to look at -> /private/tmp/j0262_hos_gates/polish_gate_p5_v01.json
+exit 0

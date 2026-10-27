@@ -1,0 +1,724 @@
+{
+ "pulled": "2026-10-19",
+ "source": "YouTube GB search results and autocomplete; public, no login. Not vidIQ.",
+ "queries": {
+  "how do cancer cells work": {
+   "suggest": [
+    "how do cancer cells work",
+    "how does cancer cells work",
+    "how does cancer treatment work",
+    "how does cancer radiation treatment work"
+   ],
+   "search": [
+    {
+     "id": "BmFEoCFDi-w",
+     "title": "How do cancer cells behave differently from healthy ones? - George Zaidan",
+     "channel": "TED-Ed",
+     "views": "2,657,495 views",
+     "age": "13 yr ago",
+     "length": "3:51"
+    },
+    {
+     "id": "QVCjdNxJreE",
+     "title": "The Cell Cycle (and cancer) [Updated]",
+     "channel": "Amoeba Sisters",
+     "views": "6,775,274 views",
+     "age": "8 yr ago",
+     "length": "9:20"
+    },
+    {
+     "id": "zFhYJRqz_xk",
+     "title": "Your Body Killed Cancer 5 Minutes Ago",
+     "channel": "Kurzgesagt – In a Nutshell",
+     "views": "10,189,657 views",
+     "age": "3 yr ago",
+     "length": "9:14"
+    },
+    {
+     "id": "LEpTTolebqo",
+     "title": "3D Medical Animation - What is Cancer?",
+     "channel": "BioDigital, Inc.",
+     "views": "3,253,415 views",
+     "age": "18 yr ago",
+     "length": "1:07"
+    },
+    {
+     "id": "GkxrJSTLH_s",
+     "title": "Everything We've Learned About Cancer | Compilation",
+     "channel": "SciShow",
+     "views": "562,540 views",
+     "age": "2 yr ago",
+     "length": "1:14:00"
+    },
+    {
+     "id": "OcigJn8UJNQ",
+     "title": "How does cancer spread through the body? - Ivan Seah Yu Jun",
+     "channel": "TED-Ed",
+     "views": "2,161,505 views",
+     "age": "11 yr ago",
+     "length": "4:43"
+    },
+    {
+     "id": "GhfrHjBX5eA",
+     "title": "Cancer, How Cancer Starts, How Cancer Spreads, Where and Why, Animation.",
+     "channel": "Alila Medical Media",
+     "views": "672,415 views",
+     "age": "10 yr ago",
+     "length": "3:58"
+    },
+    {
+     "id": "RgWQCGX3MOk",
+     "title": "How does chemotherapy work? - Hyunsoo Joshua No",
+     "channel": "TED-Ed",
+     "views": "6,231,165 views",
+     "age": "6 yr ago",
+     "length": "5:26"
+    }
+   ]
+  },
+  "hox genes embryonic development": {
+   "suggest": [
+    "hox genes embryology"
+   ],
+   "search": [
+    {
+     "id": "GoO6vuig2iY",
+     "title": "Embryonic Development : Hox Genes",
+     "channel": "Amy Degenford",
+     "views": "6,417 views",
+     "age": "9 yr ago",
+     "length": "8:49"
+    },
+    {
+     "id": "mKWK1y7Nb4E",
+     "title": "Regulatory Hierarchies in Development, including Hox Genes",
+     "channel": "Neural Academy",
+     "views": "15,818 views",
+     "age": "9 yr ago",
+     "length": "4:20"
+    },
+    {
+     "id": "MwuOyew_0Ws",
+     "title": "Hox genes and the evolution of animal body plans",
+     "channel": "ScienceSketches",
+     "views": "75,555 views",
+     "age": "9 yr ago",
+     "length": "1:55"
+    },
+    {
+     "id": "3ZGUdK38C1w",
+     "title": "A Level Biology Revision (Year 13) \"Homeobox Genes and Body Plans\"",
+     "channel": "Freesciencelessons",
+     "views": "16,041 views",
+     "age": "1 yr ago",
+     "length": "8:39"
+    },
+    {
+     "id": "1Ecm8UgiXBU",
+     "title": "Gene Regulation: Hox Genes | A-level Biology | OCR, AQA, Edexcel",
+     "channel": "Launchpad Learning",
+     "views": "91,225 views",
+     "age": "7 yr ago",
+     "length": "11:42"
+    },
+    {
+     "id": "HwrXeQTCcXY",
+     "title": "The Evolution of Hox Genes",
+     "channel": "Oxford Academic (Oxford University Press)",
+     "views": "37,238 views",
+     "age": "9 yr ago",
+     "length": "10:25"
+    },
+    {
+     "id": "dAOWQC-OBv0",
+     "title": "Early embryogenesis - Cleavage, blastulation, gastrulation, and neurulation | MCAT | Khan Academy",
+     "channel": "khanacademymedicine",
+     "views": "2,453,278 views",
+     "age": "11 yr ago",
+     "length": "12:20"
+    },
+    {
+     "id": "YrBwcnHAsBg",
+     "title": "What are homeobox genes?",
+     "channel": "Ask The Cat",
+     "views": "53,791 views",
+     "age": "7 yr ago",
+     "length": "3:24"
+    }
+   ]
+  },
+  "what is epigenetics identical twins": {
+   "suggest": [
+    "what is epigenetics"
+   ],
+   "search": [
+    {
+     "id": "-gneGBxEXf8",
+     "title": "#GeeklyHub What is Epigenetics? Why Identical Twins Are Not Exactly Alike?",
+     "channel": "GeeklyHub",
+     "views": "726 views",
+     "age": "5 yr ago",
+     "length": "5:16"
+    },
+    {
+     "id": "fp-XHU3_V5w",
+     "title": "Beyond genetics: what makes identical twins different?",
+     "channel": "King's College London",
+     "views": "20,046 views",
+     "age": "12 yr ago",
+     "length": "3:19"
+    },
+    {
+     "id": "7K4P1OEKQ8g",
+     "title": "The Epigenetics of Identical Twins",
+     "channel": "ATP for Learning",
+     "views": "6,536 views",
+     "age": "3 yr ago",
+     "length": "4:32"
+    },
+    {
+     "id": "JMlJcOSRX-8",
+     "title": "What identical twins separated at birth teach us about genetics - BBC REEL",
+     "channel": "BBC Global",
+     "views": "3,585,039 views",
+     "age": "4 yr ago",
+     "length": "5:40"
+    },
+    {
+     "id": "_aAhcNjmvhc",
+     "title": "What is epigenetics? - Carlos Guerrero-Bosagna",
+     "channel": "TED-Ed",
+     "views": "2,454,974 views",
+     "age": "10 yr ago",
+     "length": "5:03"
+    },
+    {
+     "id": "gAYuOM6Roj4",
+     "title": "These Twins Improved Our Understanding Of DNA Mutations",
+     "channel": "ABC Science",
+     "views": "2,349 views",
+     "age": "8 yr ago",
+     "length": "5:39"
+    },
+    {
+     "id": "us-f9epWuuA",
+     "title": "Why do identical twins become different people? | World Science Festival",
+     "channel": "World Science Festival",
+     "views": "19,319 views",
+     "age": "12 yr ago",
+     "length": "3:39"
+    },
+    {
+     "id": "n1Ew9jUCZLU",
+     "title": "Epigenetics: Can we change our genes? - BBC World Service",
+     "channel": "BBC World Service",
+     "views": "572,225 views",
+     "age": "2 yr ago",
+     "length": "5:43"
+    }
+   ]
+  },
+  "what are prions mad cow disease": {
+   "suggest": [
+    "what causes mad cow disease",
+    "what is mad cow disease",
+    "mad cow disease prions"
+   ],
+   "search": [
+    {
+     "id": "tJ2gOTxOSys",
+     "title": "Mad Cow Disease Mostly Infects Teenagers",
+     "channel": "SciShow",
+     "views": "318,548 views",
+     "age": "1 yr ago",
+     "length": "12:47"
+    },
+    {
+     "id": "VEUizku9_ZE",
+     "title": "Prion disease is horrifying 😨",
+     "channel": "Chubbyemu",
+     "views": "4,645,967 views",
+     "age": "10 mo ago",
+     "length": "2:42"
+    },
+    {
+     "id": "Oeb_jwjwOto",
+     "title": "Prion disease: Zombies, Cows, and Cannibalism",
+     "channel": "Med Twins",
+     "views": "37,310 views",
+     "age": "3 yr ago",
+     "length": "10:30"
+    },
+    {
+     "id": "hmuuin3AaVs",
+     "title": "My friend got prion disease. We watched her forget who we are.",
+     "channel": "Chubbyemu",
+     "views": "4,782,908 views",
+     "age": "2 mo ago",
+     "length": "29:23"
+    },
+    {
+     "id": "R2VW2OXICsg",
+     "title": "2-Minute Neuroscience: Prion Diseases",
+     "channel": "Neuroscientifically Challenged",
+     "views": "128,789 views",
+     "age": "1 yr ago",
+     "length": "2:00"
+    },
+    {
+     "id": "Pxojz6grwcU",
+     "title": "What Actually Caused Mad Cow Disease",
+     "channel": "SciShow",
+     "views": "1,114,384 views",
+     "age": "9 yr ago",
+     "length": "4:32"
+    },
+    {
+     "id": "d2daVaZZHYE",
+     "title": "The Disease You Will Never Survive",
+     "channel": "MinuteEarth",
+     "views": "1,527,134 views",
+     "age": "3 yr ago",
+     "length": "4:14"
+    },
+    {
+     "id": "MGyLX_Uni7A",
+     "title": "Case study 70 | Prion disease, mad cow, Creutzfeldt-Jakob disease (CJD) | Presented by Dr. Grunch ",
+     "channel": "Ladyspinedoc⚡️ - Dr. Betsy Grunch 🧠",
+     "views": "15,008 views",
+     "age": "3 yr ago",
+     "length": "3:25"
+    }
+   ]
+  },
+  "how do enzymes work": {
+   "suggest": [
+    "how do enzymes work",
+    "how do enzymes work gcse",
+    "how do enzymes work in the body",
+    "how does enzymes work",
+    "how to enzymes work",
+    "how do digestive enzymes work in the body",
+    "how do restriction enzymes work",
+    "how do digestive enzymes work",
+    "how do enzymes actually work",
+    "how do enzyme cleaners work"
+   ],
+   "search": [
+    {
+     "id": "qgVFkRn8f10",
+     "title": "Enzymes (Updated)",
+     "channel": "Amoeba Sisters",
+     "views": "7,120,908 views",
+     "age": "10 yr ago",
+     "length": "5:47"
+    },
+    {
+     "id": "yk14dOOvwMk",
+     "title": "How Enzymes Work (from PDB-101)",
+     "channel": "RCSBProteinDataBank",
+     "views": "1,621,434 views",
+     "age": "9 yr ago",
+     "length": "4:52"
+    },
+    {
+     "id": "gUncqL1ul8Q",
+     "title": "GCSE Biology - What are Enzymes? (2026/27 exams)",
+     "channel": "Cognito",
+     "views": "685,424 views",
+     "age": "4 yr ago",
+     "length": "4:55"
+    },
+    {
+     "id": "UVeoXYJlBtI",
+     "title": "How Enzymes Work",
+     "channel": "RicochetScience",
+     "views": "768,546 views",
+     "age": "10 yr ago",
+     "length": "1:20"
+    },
+    {
+     "id": "rlH1ym916Fo",
+     "title": "Enzymes | Cells | Biology | FuseSchool",
+     "channel": "FuseSchool - Global Education",
+     "views": "1,142,028 views",
+     "age": "9 yr ago",
+     "length": "4:12"
+    },
+    {
+     "id": "wNG2uPao8BI",
+     "title": "Enzymes and How They Work: An Introduction",
+     "channel": "BioMan Biology",
+     "views": "106,529 views",
+     "age": "6 yr ago",
+     "length": "1:57"
+    },
+    {
+     "id": "ozdO1mLXBQE",
+     "title": "What are Enzymes?",
+     "channel": "FreeMedEducation",
+     "views": "1,148,073 views",
+     "age": "7 yr ago",
+     "length": "5:34"
+    },
+    {
+     "id": "EHgt0HEsJbk",
+     "title": "Operation Ouch - Amazing Enzymes | Science for Kids",
+     "channel": "Operation Ouch",
+     "views": "165,611 views",
+     "age": "9 yr ago",
+     "length": "4:16"
+    }
+   ]
+  },
+  "peyton rous michael bishop harold varmus oncogenes": {
+   "suggest": [],
+   "search": [
+    {
+     "id": "cn0voTJFQG8",
+     "title": "Genetic Origins of Cancer",
+     "channel": "The Explorer's Guide to Biology",
+     "views": "316 views",
+     "age": "7 yr ago",
+     "length": "3:06"
+    },
+    {
+     "id": "CNWohTf5wnc",
+     "title": "Proto-oncogenes - J. Michael Bishop (UCSF)",
+     "channel": "iBiology Techniques",
+     "views": "3,272 views",
+     "age": "12 yr ago",
+     "length": "3:29"
+    },
+    {
+     "id": "wcvRGhZc_p0",
+     "title": "A Genetic Origin of Cancer",
+     "channel": "The Explorer's Guide to Biology",
+     "views": "1,587 views",
+     "age": "7 yr ago",
+     "length": "9:44"
+    },
+    {
+     "id": "dDslehZ-hJo",
+     "title": "Conversations in Science with Dan Rather and Harold Varmus: From Oncogenes to PLOS",
+     "channel": "Wonder Collaborative",
+     "views": "3,263 views",
+     "age": "6 yr ago",
+     "length": "14:50"
+    },
+    {
+     "id": "tbhlzhEznII",
+     "title": "J. Michael Bishop (UCSF) Part 1: Forging a genetic paradigm for cancer",
+     "channel": "Science Communication Lab",
+     "views": "26,640 views",
+     "age": "14 yr ago",
+     "length": "28:37"
+    },
+    {
+     "id": "EFN-_pWzels",
+     "title": "Dr. J. Michael Bishop on Reflecting on the Value of the Nobel Prize and Other Scientific Awards",
+     "channel": "Oral History Center of The Bancroft Library",
+     "views": "247 views",
+     "age": "8 yr ago",
+     "length": "2:51"
+    },
+    {
+     "id": "wDVQ5jIFAAE",
+     "title": "Landon Lecture | Dr. Harold Varmus",
+     "channel": "Landon Lecture Series",
+     "views": "148 views",
+     "age": "10 yr ago",
+     "length": "55:52"
+    },
+    {
+     "id": "LMm3YrIJCVI",
+     "title": "Leonard Hayflick - Francis Peyton Rous' review of our paper (108/187)",
+     "channel": "Web of Stories - Life Stories of Remarkable People",
+     "views": "481 views",
+     "age": "9 yr ago",
+     "length": "1:59"
+    }
+   ]
+  },
+  "hilde mangold hans spemann homeobox hox genes": {
+   "suggest": [
+    "hans spemann and hilde mangold experiment"
+   ],
+   "search": [
+    {
+     "id": "rSIurckMtfU",
+     "title": "Spemann-Mangold Organizer and embryonic induction",
+     "channel": "Zar",
+     "views": "75,860 views",
+     "age": "10 yr ago",
+     "length": "2:10"
+    },
+    {
+     "id": "00L05Aqh7_0",
+     "title": "Hilde Mangold and the Organizer of Life | Great Minds",
+     "channel": "SciShow",
+     "views": "110,208 views",
+     "age": "5 yr ago",
+     "length": "6:11"
+    },
+    {
+     "id": "gZtGrsr8DMY",
+     "title": "Homeodomains- Hox Genes",
+     "channel": "Proneural",
+     "views": "39,859 views",
+     "age": "19 yr ago",
+     "length": "0:27"
+    },
+    {
+     "id": "1Ecm8UgiXBU",
+     "title": "Gene Regulation: Hox Genes | A-level Biology | OCR, AQA, Edexcel",
+     "channel": "Launchpad Learning",
+     "views": "91,226 views",
+     "age": "7 yr ago",
+     "length": "11:42"
+    },
+    {
+     "id": "YrBwcnHAsBg",
+     "title": "What are homeobox genes?",
+     "channel": "Ask The Cat",
+     "views": "53,791 views",
+     "age": "7 yr ago",
+     "length": "3:24"
+    },
+    {
+     "id": "HwrXeQTCcXY",
+     "title": "The Evolution of Hox Genes",
+     "channel": "Oxford Academic (Oxford University Press)",
+     "views": "37,238 views",
+     "age": "9 yr ago",
+     "length": "10:25"
+    },
+    {
+     "id": "MwuOyew_0Ws",
+     "title": "Hox genes and the evolution of animal body plans",
+     "channel": "ScienceSketches",
+     "views": "75,558 views",
+     "age": "9 yr ago",
+     "length": "1:55"
+    },
+    {
+     "id": "nazXKZflR9w",
+     "title": "Hans Spemann - Biography of German embryologist, Nobel laureate and „Father of cloning“",
+     "channel": "Short Biographies",
+     "views": "1,823 views",
+     "age": "6 yr ago",
+     "length": "6:10"
+    }
+   ]
+  },
+  "mary lyon x chromosome inactivation calico cat": {
+   "suggest": [],
+   "search": [
+    {
+     "id": "Y9vXhmI5FXM",
+     "title": "X Inactivation",
+     "channel": "Bozeman Science",
+     "views": "385,523 views",
+     "age": "14 yr ago",
+     "length": "6:23"
+    },
+    {
+     "id": "wJc0SX03-VA",
+     "title": "X-Inactivation in mammals",
+     "channel": "Henrik's Lab",
+     "views": "67,383 views",
+     "age": "7 yr ago",
+     "length": "2:13"
+    },
+    {
+     "id": "n330FzHpI90",
+     "title": "Calico X Inactivation (random deactivation of an X chromosome)",
+     "channel": "shinlupus",
+     "views": "32,859 views",
+     "age": "18 yr ago",
+     "length": "0:56"
+    },
+    {
+     "id": "NIAiQ3q7oEU",
+     "title": "X chromosome inactivation in calico cats",
+     "channel": "Homework Clinic",
+     "views": "5,382 views",
+     "age": "4 yr ago",
+     "length": "1:13"
+    },
+    {
+     "id": "HKsCku8indA",
+     "title": "Genetics | X-chromosome Inactivation, Barr Bodies, and the Calico Cat",
+     "channel": "Catalyst University",
+     "views": "43,975 views",
+     "age": "7 yr ago",
+     "length": "13:49"
+    },
+    {
+     "id": "hsiW6veVrg4",
+     "title": "Mary Lyon and X-Inactivation",
+     "channel": "lamusica164",
+     "views": "4,919 views",
+     "age": "16 yr ago",
+     "length": "2:54"
+    },
+    {
+     "id": "hLf95Gtw6_k",
+     "title": "Sex determination: X-inactivation",
+     "channel": "Genetics",
+     "views": "9,895 views",
+     "age": "8 yr ago",
+     "length": "6:02"
+    },
+    {
+     "id": "XiIZ2gd2mV4",
+     "title": "Chapter 14 Part 9 - X Chromosome Inactivation",
+     "channel": "MrDBioCFC",
+     "views": "8,243 views",
+     "age": "13 yr ago",
+     "length": "7:18"
+    }
+   ]
+  },
+  "stanley prusiner carleton gajdusek kuru prion": {
+   "suggest": [
+    "stanley prusiner"
+   ],
+   "search": [
+    {
+     "id": "KRQ0RHkRTtU",
+     "title": "Prion - discovered by Stanley Prusiner - Lecture",
+     "channel": "Renato Lopes",
+     "views": "2,513 views",
+     "age": "7 yr ago",
+     "length": "1:17:56"
+    },
+    {
+     "id": "LlzVDHeInPk",
+     "title": "The Cannibal Disease That Defied the Laws of Biology: The Mystery of Kuru & Prions",
+     "channel": "Prince vr2093",
+     "views": "98 views",
+     "age": "2 mo ago",
+     "length": "7:53"
+    },
+    {
+     "id": "_bTphQWthJ4",
+     "title": "The Scientist Whose Darkest Experiment Was on the Children He Took Home | The New Yorker",
+     "channel": "The New Yorker",
+     "views": "609,786 views",
+     "age": "1 mo ago",
+     "length": "8:26"
+    },
+    {
+     "id": "ZHOy6hiUcyA",
+     "title": "Kuru - A medical detective story - Trailer",
+     "channel": "ConnectSci News",
+     "views": "473,528 views",
+     "age": "15 yr ago",
+     "length": "2:10"
+    },
+    {
+     "id": "BJn6nWI_RW8",
+     "title": "Stanley B. Prusiner – Mad Cows, Demented People, and the Biology of Prions",
+     "channel": "Gustavus Adolphus College",
+     "views": "1,343 views",
+     "age": "4 yr ago",
+     "length": "1:10:51"
+    },
+    {
+     "id": "ZHErgwUJ7Cg",
+     "title": "Kuru Disease - A Curious Case in Papua New Guinea (6 Minutes)",
+     "channel": "BioTech Whisperer",
+     "views": "95,014 views",
+     "age": "3 yr ago",
+     "length": "5:19"
+    },
+    {
+     "id": "_fh0YeyWLxk",
+     "title": "The Strange History of the Prion (how a “protein-only” germ rewrote biology)",
+     "channel": "The Dark History of Science",
+     "views": "53 views",
+     "age": "9 mo ago",
+     "length": "17:09"
+    },
+    {
+     "id": "vtfViuyM6XM",
+     "title": "The History of Prions: The ultimate pandemic",
+     "channel": "Nostalgic Medicine",
+     "views": "2,177 views",
+     "age": "5 yr ago",
+     "length": "17:05"
+    }
+   ]
+  },
+  "eduard buchner emil fischer james sumner enzymes": {
+   "suggest": [],
+   "search": [
+    {
+     "id": "TZqdDsRbBVk",
+     "title": "The Chemist Who Accidentally Solved Fermentation",
+     "channel": "Rational Thinker",
+     "views": "7,969 views",
+     "age": "2 yr ago",
+     "length": "6:40"
+    },
+    {
+     "id": "OTCxxcltJZQ",
+     "title": "Eduard Buchner’s Accidental Discovery",
+     "channel": "ThinkTac",
+     "views": "513 views",
+     "age": "2 yr ago",
+     "length": "1:01"
+    },
+    {
+     "id": "97bKBDNrHMQ",
+     "title": "A Short History of Enzymology",
+     "channel": "Fatsy Cruz",
+     "views": "1,307 views",
+     "age": "4 yr ago",
+     "length": "7:03"
+    },
+    {
+     "id": "VDQ5JA5bV2c",
+     "title": "The Nobel Prize in Chemistry 1907 - Eduard Buchner: Unleashing the Power of Enzymes | 179 Seconds",
+     "channel": "179 Seconds Animated Tales",
+     "views": "517 views",
+     "age": "2 yr ago",
+     "length": "2:43"
+    },
+    {
+     "id": "tICxfNRyJIM",
+     "title": "Episode 11 || Hermann Emil Fischer: The Architect of Modern Biochemistry || Chronicles of Fame",
+     "channel": "Chronicles of Fame",
+     "views": "335 views",
+     "age": "3 yr ago",
+     "length": "1:34"
+    },
+    {
+     "id": "AFbPHlhI13g",
+     "title": "Enzyme Basics",
+     "channel": "tombohager",
+     "views": "446,951 views",
+     "age": "19 yr ago",
+     "length": "9:40"
+    },
+    {
+     "id": "pOLfllxYWbc",
+     "title": "3.9 Enzymes as Biological Catalysts",
+     "channel": "BioCuriosity Lab",
+     "views": "13 views",
+     "age": "1 yr ago",
+     "length": "1:53"
+    },
+    {
+     "id": "H_1ULIKzwfA",
+     "title": "Enzymes: Nature's Factory Workers",
+     "channel": "Professor Dave Explains",
+     "views": "590,641 views",
+     "age": "10 yr ago",
+     "length": "7:17"
+    }
+   ]
+  }
+ }
+}

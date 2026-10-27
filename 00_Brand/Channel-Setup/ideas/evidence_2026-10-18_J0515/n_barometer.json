@@ -1,0 +1,150 @@
+{
+ "pulled": "2026-10-17",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "atmospheric pressure",
+  "barometer",
+  "vacuum"
+ ],
+ "autocomplete": {
+  "atmospheric pressure": [
+   "atmospheric pressure",
+   "atmospheric pressure science experiment",
+   "atmospheric pressure and winds class 9 icse geography",
+   "atmospheric pressure class 8",
+   "atmospheric pressure class 9",
+   "atmospheric pressure experiment",
+   "atmospheric pressure and winds",
+   "atmospheric pressure class 8 science",
+   "atmospheric pressure explained",
+   "atmospheric pressure and winds class 7"
+  ],
+  "barometer": [
+   "barometer",
+   "barometer nbs",
+   "barometer how it works",
+   "barometer drawing",
+   "barometer class 11",
+   "barometer gaan",
+   "barometer working model",
+   "barometer and manometer",
+   "barometer experiment",
+   "barometer kasameme"
+  ],
+  "vacuum": [
+   "vacuum cleaner",
+   "vacuum",
+   "vacuum cleaner sound",
+   "vacuum wars",
+   "vacuuming and cleaning tips",
+   "vacuuming",
+   "vacuum cleaner asmr",
+   "vacuum storage bag",
+   "vacuum cleaner sound no ads",
+   "vacuum white noise"
+  ]
+ },
+ "sharedTitleWords": [],
+ "neighbours": [
+  {
+   "id": "Ab9OZsDECZw",
+   "title": "How blood pressure works - Wilfred Manzano",
+   "channel": "TED-Ed",
+   "views": "17,976,978 views",
+   "age": "11 yr ago",
+   "length": "4:32",
+   "tier": 1,
+   "viewCount": 17976978,
+   "foundBy": "ted-ed atmospheric pressure",
+   "onTopic": true
+  },
+  {
+   "id": "EkDhlzA-lwI",
+   "title": "The history of the barometer (and how it works) - Asaf Bar-Yosef",
+   "channel": "TED-Ed",
+   "views": "2,432,109 views",
+   "age": "12 yr ago",
+   "length": "4:46",
+   "tier": 1,
+   "viewCount": 2432109,
+   "foundBy": "ted-ed atmospheric pressure",
+   "onTopic": true
+  },
+  {
+   "id": "_rJOSDgDG0A",
+   "title": "Is it possible to create a perfect vacuum? - Rolf Landua and Anais Rassat",
+   "channel": "TED-Ed",
+   "views": "1,111,421 views",
+   "age": "9 yr ago",
+   "length": "4:32",
+   "tier": 1,
+   "viewCount": 1111421,
+   "foundBy": "ted-ed vacuum",
+   "onTopic": true
+  },
+  {
+   "id": "_cj8AtODiHc",
+   "title": "The effects of underwater pressure on the body - Neosha S Kashef",
+   "channel": "TED-Ed",
+   "views": "670,661 views",
+   "age": "11 yr ago",
+   "length": "4:03",
+   "tier": 1,
+   "viewCount": 670661,
+   "foundBy": "ted-ed atmospheric pressure",
+   "onTopic": true
+  },
+  {
+   "id": "kU8s_4HBG98",
+   "title": "Gravity vs. Pressure: The battle that formed the universe - Fabio Pacucci",
+   "channel": "TED-Ed",
+   "views": "205,211 views",
+   "age": "3 yr ago",
+   "length": "5:14",
+   "tier": 1,
+   "viewCount": 205211,
+   "foundBy": "ted-ed atmospheric pressure",
+   "onTopic": true
+  },
+  {
+   "id": "eVFYhbHpfqU",
+   "title": "A smog vacuum cleaner and other magical city designs | Daan Roosegaarde",
+   "channel": "TED",
+   "views": "135,546 views",
+   "age": "9 yr ago",
+   "length": "12:19",
+   "tier": 1,
+   "viewCount": 135546,
+   "foundBy": "vacuum ted",
+   "onTopic": true
+  },
+  {
+   "id": "s8C2RktZtbM",
+   "title": "GCSE Physics - Atmospheric Pressure",
+   "channel": "Cognito",
+   "views": "344,506 views",
+   "age": "6 yr ago",
+   "length": "3:12",
+   "tier": 2,
+   "viewCount": 344506,
+   "foundBy": "atmospheric pressure",
+   "onTopic": true
+  },
+  {
+   "id": "p_WLHzF1SdI",
+   "title": "Fluid pressure | AP Physics | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "18,054 views",
+   "age": "1 yr ago",
+   "length": "15:48",
+   "tier": 2,
+   "viewCount": 18054,
+   "foundBy": "khan academy atmospheric pressure",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 3,
+ "gate": "PASS",
+ "hasTed": true,
+ "failedQueries": []
+}

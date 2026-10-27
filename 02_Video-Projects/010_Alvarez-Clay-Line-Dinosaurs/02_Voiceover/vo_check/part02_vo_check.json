@@ -1,0 +1,73 @@
+{
+  "file": "02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/02_Voiceover/hos_010_part02_the_gorge_at_gubbio_v01.mp3",
+  "part": 2,
+  "fails": [
+    "replace at ~0:23.36: script 'little creatures that had floated in the' / heard 'little creatures that have floated in the' — listen, then regenerate that sentence alone if real"
+  ],
+  "warns": [
+    "replace at ~0:09.16: script 'on an ancient sea floor over millions of' / heard 'on an ancient seafloor over millions of' — sounds alike (likely the transcriber); listen",
+    "replace at ~0:50.20: script 'layer about a centimetre thick was the' / heard 'layer about a centimeter thick was the' — sounds alike (likely the transcriber); listen"
+  ],
+  "duration_s": 79.76,
+  "duration": "1:19.76",
+  "mean_db": -23.7,
+  "peak_db": -4.3,
+  "pauses_over_1s": [
+    [
+      11.68,
+      1.11
+    ],
+    [
+      21.01,
+      1.02
+    ],
+    [
+      24.63,
+      1.09
+    ],
+    [
+      47.57,
+      1.08
+    ],
+    [
+      53.32,
+      1.21
+    ],
+    [
+      69.49,
+      1.0
+    ],
+    [
+      74.73,
+      1.11
+    ]
+  ],
+  "asr": "faster-whisper small.en",
+  "script_words": 214,
+  "heard_words": 213,
+  "wpm": 163,
+  "word_diffs": [
+    {
+      "at": "0:09.16",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "on an ancient sea floor over millions of",
+      "heard": "on an ancient seafloor over millions of"
+    },
+    {
+      "at": "0:23.36",
+      "op": "replace",
+      "sounds_alike": false,
+      "script": "little creatures that had floated in the",
+      "heard": "little creatures that have floated in the"
+    },
+    {
+      "at": "0:50.20",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "layer about a centimetre thick was the",
+      "heard": "layer about a centimeter thick was the"
+    }
+  ],
+  "verdict": "FAIL"
+}

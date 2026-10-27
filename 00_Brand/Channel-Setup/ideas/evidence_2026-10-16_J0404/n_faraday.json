@@ -1,0 +1,253 @@
+{
+ "pulled": "2026-10-16",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "electromagnetism",
+  "magnetism",
+  "michael faraday"
+ ],
+ "autocomplete": {
+  "electromagnetism": [
+   "electromagnetism",
+   "electromagnetism class 10 icse",
+   "electromagnetism grade 11",
+   "electromagnetism class 10",
+   "electromagnetism class 12",
+   "electromagnetism engineering physics",
+   "electromagnetism grade 5",
+   "electromagnetism class 10 icse physics wallah",
+   "electromagnetism by physics in seconds",
+   "electromagnetism by arafat khan"
+  ],
+  "magnetism": [
+   "magnetism",
+   "magnetism and matter",
+   "magnetism and electromagnetism",
+   "magnetism and matter class 12",
+   "magnetism and matter class 12 one shot",
+   "magnetism class 12",
+   "magnetism one shot",
+   "magnetism class 10",
+   "magnetism and matter class 12 one shot jee",
+   "magnetism physics"
+  ],
+  "michael faraday": [
+   "michael faraday",
+   "michael faraday experiment",
+   "michael faraday information in english",
+   "michael faraday animation",
+   "michael faraday biography in nepali",
+   "michael faraday story",
+   "michael faraday biography in hindi",
+   "michael faraday documentary",
+   "michael faraday electromagnetic induction",
+   "michael faraday biography"
+  ]
+ },
+ "sharedTitleWords": [
+  "physics khan",
+  "khan academy",
+  "magnetism physics",
+  "faraday's law",
+  "michael faraday",
+  "physics fuseschool"
+ ],
+ "neighbours": [
+  {
+   "id": "czMh3BnHFHQ",
+   "title": "What is an aurora? - Michael Molina",
+   "channel": "TED-Ed",
+   "views": "1,012,159 views",
+   "age": "13 yr ago",
+   "length": "4:10",
+   "tier": 1,
+   "viewCount": 1012159,
+   "foundBy": "ted-ed electromagnetism",
+   "onTopic": true
+  },
+  {
+   "id": "s94suB5uLWw",
+   "title": "Magnetism: Crash Course Physics #32",
+   "channel": "CrashCourse",
+   "views": "2,231,957 views",
+   "age": "9 yr ago",
+   "length": "9:47",
+   "tier": 2,
+   "viewCount": 2231957,
+   "foundBy": "magnetism",
+   "onTopic": true
+  },
+  {
+   "id": "8Y4JSp5U82I",
+   "title": "Introduction to magnetism | Physics | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "1,543,435 views",
+   "age": "18 yr ago",
+   "length": "10:44",
+   "tier": 2,
+   "viewCount": 1543435,
+   "foundBy": "khan academy magnetism",
+   "onTopic": true
+  },
+  {
+   "id": "xxZenoBs2Pg",
+   "title": "Lenz's Law | Magnetic forces, magnetic fields, and Faraday's law | Physics | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "1,074,241 views",
+   "age": "11 yr ago",
+   "length": "5:45",
+   "tier": 2,
+   "viewCount": 1074241,
+   "foundBy": "khan academy michael faraday",
+   "onTopic": true
+  },
+  {
+   "id": "vcStzn55MG0",
+   "title": "Faraday's Law Introduction | Physics | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "681,485 views",
+   "age": "11 yr ago",
+   "length": "5:36",
+   "tier": 2,
+   "viewCount": 681485,
+   "foundBy": "khan academy michael faraday",
+   "onTopic": true
+  },
+  {
+   "id": "z1uOsg2-LTA",
+   "title": "How did Michael Faraday invent? – with David Ricketts",
+   "channel": "The Royal Institution",
+   "views": "488,313 views",
+   "age": "3 yr ago",
+   "length": "56:33",
+   "tier": 2,
+   "viewCount": 488313,
+   "foundBy": "michael faraday",
+   "onTopic": true
+  },
+  {
+   "id": "OsQNHFlF8w4",
+   "title": "Earth and Compasses | Magnetism | Physics | FuseSchool",
+   "channel": "FuseSchool - Global Education",
+   "views": "453,532 views",
+   "age": "6 yr ago",
+   "length": "3:43",
+   "tier": 2,
+   "viewCount": 453532,
+   "foundBy": "magnetism ted",
+   "onTopic": true
+  },
+  {
+   "id": "SCnGfE7qxHc",
+   "title": "Magnets | Magnetism | Physics | FuseSchool",
+   "channel": "FuseSchool - Global Education",
+   "views": "418,865 views",
+   "age": "6 yr ago",
+   "length": "3:04",
+   "tier": 2,
+   "viewCount": 418865,
+   "foundBy": "magnetism",
+   "onTopic": true
+  },
+  {
+   "id": "32_3Um3a65s",
+   "title": "How Michael Faraday Changed the World with a Magnet | Great Minds",
+   "channel": "SciShow",
+   "views": "351,322 views",
+   "age": "9 yr ago",
+   "length": "3:47",
+   "tier": 2,
+   "viewCount": 351322,
+   "foundBy": "michael faraday",
+   "onTopic": true
+  },
+  {
+   "id": "9q-T8o1HUcw",
+   "title": "Faraday's Law example | Physics | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "215,231 views",
+   "age": "11 yr ago",
+   "length": "9:29",
+   "tier": 2,
+   "viewCount": 215231,
+   "foundBy": "khan academy michael faraday",
+   "onTopic": true
+  },
+  {
+   "id": "LTfP8yPAVFw",
+   "title": "GCSE Physics - Electromagnetism - Wires | Coils | Solenoids | Electromagnets (2027/28 exams)",
+   "channel": "Cognito",
+   "views": "139,227 views",
+   "age": "10 mo ago",
+   "length": "5:31",
+   "tier": 2,
+   "viewCount": 139227,
+   "foundBy": "electromagnetism",
+   "onTopic": true
+  },
+  {
+   "id": "mqIkaCXbjCw",
+   "title": "Faraday's Law for generating electricity | Physics | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "110,352 views",
+   "age": "10 yr ago",
+   "length": "5:37",
+   "tier": 2,
+   "viewCount": 110352,
+   "foundBy": "khan academy michael faraday",
+   "onTopic": true
+  },
+  {
+   "id": "q3NBRECJ8cg",
+   "title": "Discoveries from Faraday's Laboratory – with David Ricketts",
+   "channel": "The Royal Institution",
+   "views": "47,532 views",
+   "age": "2 yr ago",
+   "length": "52:13",
+   "tier": 2,
+   "viewCount": 47532,
+   "foundBy": "ted-ed michael faraday",
+   "onTopic": true
+  },
+  {
+   "id": "lvB9hZf0hRU",
+   "title": "Michael Faraday's supernatural experiment",
+   "channel": "The Royal Institution",
+   "views": "38,161 views",
+   "age": "3 yr ago",
+   "length": "7:31",
+   "tier": 2,
+   "viewCount": 38161,
+   "foundBy": "ted-ed michael faraday",
+   "onTopic": true
+  },
+  {
+   "id": "E77NeY5Zmk8",
+   "title": "Electromagnetism | Forces at a distance | Middle school physics | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "26,105 views",
+   "age": "4 yr ago",
+   "length": "4:14",
+   "tier": 2,
+   "viewCount": 26105,
+   "foundBy": "khan academy electromagnetism",
+   "onTopic": true
+  },
+  {
+   "id": "gDW4VUkvEfE",
+   "title": "Michael Faraday's Electric Frogs",
+   "channel": "The Royal Institution",
+   "views": "25,042 views",
+   "age": "9 yr ago",
+   "length": "1:36",
+   "tier": 2,
+   "viewCount": 25042,
+   "foundBy": "ted-ed michael faraday",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 4,
+ "gate": "PASS",
+ "hasTed": true,
+ "failedQueries": []
+}

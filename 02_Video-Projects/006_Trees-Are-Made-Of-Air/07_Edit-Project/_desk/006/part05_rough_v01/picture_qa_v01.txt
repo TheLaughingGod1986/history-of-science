@@ -1,0 +1,3 @@
+WARN   0:27 row 05_sums_add_up 05_sums_add_up_t1.mp4: low detail: edge density 0.0248 < film p5 0.0269
+WARN   2:12 row 23_carbon_atom 23_carbon_atom_t1.mp4: low detail: edge density 0.0232 < film p5 0.0269
+picture QA PASS: 0 of 24 cuts fail, 2 to look at -> /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/_desk/006/part05_rough_v01/PICTURE_QA.md, /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/_desk/006/part05_rough_v01/picture_qa_review.jpg

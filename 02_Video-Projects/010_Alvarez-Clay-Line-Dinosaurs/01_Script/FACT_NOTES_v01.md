@@ -94,3 +94,30 @@ Asked on HOS #180 (6018501899). Picture questions only; no script line changes h
 | P8 | Part 04 5:55: *Science*, 6 June 1980 | L. W. Alvarez, W. Alvarez, F. Asaro and H. V. Michel, "Extraterrestrial Cause for the Cretaceous-Tertiary Extinction", ***Science* 208 (4448), 6 June 1980, 1095–1108**. Iridium is about 30× (Italy), 160× (Denmark) and 20× (New Zealand), and the asteroid is 10 ± 4 km. | **Keep:** an open journal on a desk with no legible title, and the title and date as an overlay. | *Science* record (DOI 10.1126/science.208.4448.1095): https://www.science.org/doi/10.1126/science.208.4448.1095 · Europe PMC 17783054: https://europepmc.org/article/MED/17783054 |
 
 **Shot-list changes these imply (for Claude):** P1 (**Walter clean-shaven, with fair hair and dark-rimmed glasses; no beard**; the script master's 1:23 VISUAL MUST also says "short beard") and P2 (Luis's glasses confirmed; a Berkeley desk, not a kitchen, which the script master's 2:58 VISUAL MUST also says). P3 gets lab detail. P4–P8 keep the plan.
+
+## Teach on screen & Polish pass markers (16 Oct 2026, J0379 — zero spoken words changed)
+
+Every `WHO`, `WHEN`, `DATA`, `SCALE` and `FACT` marker added inside `[VISUAL MUST]` of `clay_script_master_v01.md` (matching `PRICE_REVIEW_v03.md` / `part-01..05_plates_v03.json`), sourced against the rows above:
+
+| Marker | Beat | Card / graphic text | Source / verification |
+|---|---|---|---|
+| `DATA` + `SCALE` | 0:00 | `1 cm K–Pg boundary clay band between limestone layers` · `SCALE: one centimetre thick — as thin as a pencil` | Alvarez et al., *Science* 208 (1980), p. 1095 (~1 cm boundary clay at Gubbio) |
+| `WHEN` | 0:40 | `230–66 million years ago` & `66 million years ago` (timeline marker) | NHM London (>160 Myr dinosaur span); Renne et al., *Science* 339 (2013) (~66.0 Ma K–Pg boundary) |
+| `FACT` | 0:40 | `Three-quarters of species vanished` (4 words) | Standard K–Pg mass extinction consensus (~75% of species; NHM / Jablonski 1994) |
+| `WHO` | 1:23 | `Walter Alvarez (born 1940) — American geologist` | Born 3 Oct 1940; geologist studying Gubbio limestone magnetostratigraphy in the 1970s (W. Alvarez 1997) |
+| `WHEN` | 1:23 | `Gubbio, Italy, 1970s` (timeline marker) | Alvarez et al., *GSA Bulletin* 88 (1977) & *Science* 208 (1980) |
+| `DATA` + `SCALE` | 2:25 | `Inked two-clock comparison: slow sea-floor clay deposition vs sudden catastrophe` · `SCALE: one centimetre of clay: thousands of years or one moment` | Alvarez et al. (1980), pp. 1096–1097; W. Alvarez, *T. rex and the Crater of Doom* (1997) |
+| `WHO` | 2:58 | `Luis Alvarez (1911–1988) — Berkeley physicist` | Born 13 June 1911, died 1 Sept 1988; LBL / UC Berkeley physicist, Nobel Prize in Physics 1968 |
+| `WHEN` | 2:58 | `Berkeley, late 1970s` (timeline marker) | W. Alvarez (1997); LBL archive (1977–1979) |
+| `FACT` | 2:58 | `X-rayed an Egyptian pyramid` (4 words) | L. W. Alvarez et al., "Search for Hidden Chambers in the Pyramids", *Science* 167 (1970): 832–839 (cosmic-ray muon radiography of Khafre's Pyramid) |
+| `WHO` | 4:00 | `Frank Asaro (1927–2014) — nuclear chemist` & `Helen Michel (born 1932) — nuclear chemist` | LBL nuclear chemists who performed the neutron activation analysis (NAA) in Alvarez et al. (1980) |
+| `DATA` + `SCALE` | 4:43 | `Hand-drawn lab notebook graph showing a 30× iridium spike in the Gubbio clay layer` · `SCALE: 30 times the iridium in the rock above and below` | Alvarez et al. (1980), abstract & Fig. 2 (~30× crustal background at Gubbio, ~160× at Stevns Klint) |
+| `WHEN` | 5:05 | `Stevns Klint, Denmark` | Alvarez et al. (1980), p. 1098 (Stevns Klint fish clay section) |
+| `FACT` | 5:05 | `No supernova plutonium found` (4 words) | Alvarez et al. (1980), pp. 1100–1101 (negative $^{244}\text{Pu}$ test rules out nearby supernova) |
+| `DATA` + `SCALE` | 5:30 | `10 km asteroid scale comparison against a city skyline and Mount Everest` · `SCALE: ten kilometres across — wider than Mount Everest is tall` | Alvarez et al. (1980), p. 1105 (10 ± 4 km diameter vs Mount Everest height 8.85 km) |
+| `WHEN` | 5:55 | `6 June 1980` (timeline marker) | *Science* 208 (4448): 1095–1108, published 6 June 1980 |
+| `DATA` + `SCALE` | 5:55 | `Animated timeline: 66 Ma · 1970s Gubbio · Late 1970s Berkeley · June 1980 Science · Early 1990s Chicxulub` · `SCALE: ten years from the 1980 Science paper to the buried crater` | Alvarez et al. (1980) to Hildebrand et al., *Geology* 19 (1991) |
+| `WHEN` | 6:40 | `Early 1990s, Yucatán` (timeline marker) | Hildebrand et al., *Geology* 19 (1991); Swisher et al., *Science* 257 (1992) |
+| `DATA` + `SCALE` | 6:55 | `Chicxulub crater ring (~180 km wide) laid over southern England for scale` · `SCALE: 180 kilometres wide — stretching across southern England` | Hildebrand et al. (1991); NASA/JPL (~180 km crater diameter) |
+| `FACT` | 7:35 | `Birds are living dinosaurs` (4 words) | Natural History Museum London; Larson et al. (2016) & Field et al. (2018), *Current Biology* |
+

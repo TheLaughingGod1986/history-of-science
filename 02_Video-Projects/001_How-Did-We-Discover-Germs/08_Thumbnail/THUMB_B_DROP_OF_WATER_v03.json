@@ -1,0 +1,106 @@
+{
+  "film": "001",
+  "video": "_C92tIJCk8A",
+  "job": "J0503",
+  "replaces": "hos_001_thumb_C_animistry_microscope_v01.jpg (2 Sep droplet variant repeating full title 'HOW DID WE DISCOVER GERMS?' over Explorer's hair, no flourishes)",
+  "variant": "B v03 (and T&C slot C upgrade; pairs with J0391 'THE SWAN NECK' and J0457 'TRAPPED IN GLASS' for a full 3-way non-title-repeating Test & Compare)",
+  "maker": "gemini",
+  "hook": "DROP OF WATER",
+  "punch": "DROP",
+  "jpg": "Selected/hos_001_thumb_B_drop_of_water_v03.jpg",
+  "sha256": "e5bcd3b8ee7b834e10fc91321ec8cf05ea00116b6210854bdb2e43c80826589a",
+  "bytes": 220655,
+  "plates": [
+    "04_Generated-Clips/part02/refs/03_drop_of_water_v01.jpg (1024x1024 Part 02 pond-water drop master plate, crop [44, 152, 1024, 936] placed on right two-thirds)",
+    "08_Thumbnail/Selected/hos_001_tc_thumb_v02.jpg (001 painted library key-art plate: lower-left Explorer at 54.4% frame height + original painted gold scroll flourishes)"
+  ],
+  "method": "existing_001_plates_only_pond_drop_hero_plus_explorer_and_painted_flourishes_GeorgiaBold",
+  "spend": 0,
+  "heroBox": [
+    626,
+    162,
+    998,
+    534
+  ],
+  "slideBox": [
+    415,
+    475,
+    1223,
+    655
+  ],
+  "explorer": {
+    "source": "hos_001_tc_thumb_v02.jpg",
+    "box": [
+      88,
+      328,
+      316,
+      720
+    ],
+    "height_px": 392,
+    "height_frac": 0.544
+  },
+  "lettering": [
+    {
+      "word": "DROP",
+      "kind": "gold",
+      "size": 110,
+      "box": [
+        116,
+        72,
+        455,
+        172
+      ]
+    },
+    {
+      "word": "OF",
+      "kind": "cream",
+      "size": 68,
+      "box": [
+        233,
+        162,
+        337,
+        225
+      ]
+    },
+    {
+      "word": "WATER",
+      "kind": "cream",
+      "size": 104,
+      "box": [
+        72,
+        215,
+        498,
+        306
+      ]
+    }
+  ],
+  "ornaments": {
+    "top_scroll_box": [
+      88,
+      20,
+      496,
+      60
+    ],
+    "bottom_scroll_box": [
+      140,
+      318,
+      445,
+      356
+    ]
+  },
+  "clearOfHero": true,
+  "clearOfExplorer": true,
+  "clearOfBadge": true,
+  "scores": {
+    "HOOK": "PASS \u2014 'DROP OF WATER' (3 words, punch word 'DROP' in gold) names Leeuwenhoek's pond-water droplet teeming with faceless microbes (001 script Part 02 'A drop of pond water is not empty' and THUMBNAIL_AND_TITLE_RULES.md \u00a71.1 familiar noun 'a drop of water'), shares zero words with the video title ('How Did We Discover Germs?'), J0391 ('THE SWAN NECK'), or J0457 ('TRAPPED IN GLASS'), and uses no vague questions or pronouns.",
+    "BAND": "PASS \u2014 Upper-left lettering band (x=72..498, y=72..306, framed by 001's original painted gold scroll flourishes at y=20..356) sits completely left of the glowing pond-water drop (x=626..998), above the Explorer's hair (y=328) and bottom flourish (y=318), and clear of the bottom-right duration badge.",
+    "PHONE": "PASS \u2014 Checked on 168x94 preview sheet and 4-panel comparison strip: 'DROP OF WATER', the giant glowing pond-water droplet with faceless microbes on the microscope slide, and the Explorer's face/glasses (54.4% height) all read at a glance at 168x94."
+  },
+  "previews": [
+    "Selected/hos_001_thumb_B_drop_of_water_v03_preview.jpg",
+    "Selected/hos_001_thumb_B_drop_of_water_v03_style_sheet.jpg",
+    "Selected/hos_001_thumb_TC_3way_drop_of_water_v03_phone_168.jpg"
+  ],
+  "studio": false,
+  "status": "Test & Compare B v03 (slot C upgrade) candidate for 001 (_C92tIJCk8A, built from existing 001 plates only, \u00a30). Parked for Chief: thumb B review. No Studio until OK."
+}

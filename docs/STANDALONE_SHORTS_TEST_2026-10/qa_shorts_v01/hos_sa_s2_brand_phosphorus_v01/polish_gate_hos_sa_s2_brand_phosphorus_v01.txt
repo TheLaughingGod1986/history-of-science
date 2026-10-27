@@ -1,0 +1,7 @@
+s01_01_glowing_flask_v01     2.6s 01_glowing_flask_v01.jpg     ok
+s02_02_hamburg_lab_v01     7.8s 02_hamburg_lab_v01.jpg       ok
+s03_03_black_sludge_v02    11.6s 03_black_sludge_v02.jpg      ok
+s04_04_no_gold_v02    13.5s 04_no_gold_v02.jpg           ok
+s05_05_first_glow_v02    17.2s 05_first_glow_v02.jpg        WARN low detail: edge density 0.0162 < film p5 0.0191
+s06_01_glowing_flask_v01    21.7s end_card_loop_01_glowing_fla ok
+polish gate PASS: 0 of 6 rows failed, 1 to look at -> /Users/benjaminoats/YouTube/History Of Science/docs/STANDALONE_SHORTS_TEST_2026-10/qa_shorts_v01/hos_sa_s2_brand_phosphorus_v01/polish_gate_hos_sa_s2_brand_phosphorus_v01.json

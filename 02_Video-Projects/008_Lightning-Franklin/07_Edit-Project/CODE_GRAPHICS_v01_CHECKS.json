@@ -1,0 +1,72 @@
+[
+  {
+    "row": "P2:14_likeness_pairs",
+    "decode": "ok",
+    "format": "ok",
+    "alpha": "not applicable"
+  },
+  {
+    "row": "P2:15_likeness_fire",
+    "decode": "ok",
+    "format": "ok",
+    "alpha": "ok"
+  },
+  {
+    "row": "P3:03_rod_cloud",
+    "decode": "ok",
+    "format": "ok",
+    "alpha": "not applicable"
+  },
+  {
+    "row": "P3:04_letter_crosses",
+    "decode": "ok",
+    "format": "ok",
+    "alpha": "ok"
+  },
+  {
+    "row": "P3:15_wet_dry",
+    "decode": "ok",
+    "format": "ok",
+    "alpha": "not applicable"
+  },
+  {
+    "row": "P4:06_same_thing",
+    "decode": "ok",
+    "format": "ok",
+    "alpha": "ok"
+  },
+  {
+    "row": "P4:08_teach_charge",
+    "decode": "ok",
+    "format": "ok",
+    "alpha": "not applicable"
+  },
+  {
+    "row": "P5:08_looking_path",
+    "decode": "ok",
+    "format": "ok",
+    "alpha": "ok"
+  },
+  {
+    "row": "P5:09_wood_vs_metal",
+    "decode": "ok",
+    "format": "ok",
+    "alpha": "not applicable"
+  },
+  {
+    "row": "P5:10_metal_easy",
+    "decode": "ok",
+    "format": "ok",
+    "alpha": "ok"
+  },
+  {
+    "row": "P5:11_safe_path",
+    "decode": "ok",
+    "format": "ok",
+    "alpha": "not applicable",
+    "label": "SAFE PATH DOWN",
+    "label_words": 3,
+    "rendered_at": "2026-10-16T02:06+01:00",
+    "frames": 210
+  }
+]

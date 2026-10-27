@@ -1,0 +1,6 @@
+WARN   1:10 row 02_balance_200 code_graphic_p2_02_pounds_v03.mp4: low detail: edge density 0.0125 < film p5 0.0226
+WARN   2:03 row 13_tree_vs_pinch 13_tree_vs_pinch_t1.mp4: low detail: edge density 0.0216 < film p5 0.0226
+WARN   2:53 row 22_shimmer_willow 22_shimmer_willow_moving_v03.mp4: low detail: edge density 0.0162 < film p5 0.0226
+WARN   3:01 row 01_soil_to_sky 01_soil_to_sky_t1.mp4: low detail: edge density 0.0222 < film p5 0.0226
+WARN   5:34 row 11_night_jars 11_night_jars_t1.mp4: low detail: edge density 0.011 < film p5 0.0226
+picture QA PASS: 0 of 91 cuts fail, 5 to look at -> 02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/_desk/006/full_join_v01/PICTURE_QA.md, 02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/_desk/006/full_join_v01/picture_qa_review.jpg

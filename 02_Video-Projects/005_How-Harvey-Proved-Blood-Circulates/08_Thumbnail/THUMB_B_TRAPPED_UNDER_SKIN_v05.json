@@ -1,0 +1,98 @@
+{
+  "film": "005",
+  "video": "wwcjcFfC-5M",
+  "job": "J0518",
+  "variant": "B v05 (hero push-in + non-title-repeating visual hook)",
+  "maker": "gemini",
+  "hook": "TRAPPED UNDER SKIN",
+  "punch": "TRAPPED",
+  "jpg": "Selected/hos_005_thumb_B_trapped_under_skin_v05.jpg",
+  "sha256": "7621957d917a052fca88213fbc75465915e8cff35ea708be5d20e6e282410670",
+  "bytes": 255306,
+  "plates": [
+    "Selected/hos_005_thumb_A_one_tight_band_v02.jpg (005 painted 16:9 key-art plate: glowing red artery stopped at linen band, pale forearm with branching blue veins, Explorer lower-left, original gold scroll flourishes)"
+  ],
+  "method": "existing_005_plate_only_1.08x_hero_push_in_and_reletter_GeorgiaBold_with_original_painted_flourishes",
+  "spend": 0,
+  "heroBox": [
+    560,
+    0,
+    1236,
+    704
+  ],
+  "explorer": {
+    "source": "hos_005_thumb_A_one_tight_band_v02.jpg",
+    "box": [
+      88,
+      344,
+      318,
+      720
+    ],
+    "height_px": 376,
+    "height_frac": 0.522
+  },
+  "lettering": [
+    {
+      "word": "TRAPPED",
+      "kind": "gold",
+      "size": 80,
+      "box": [
+        100,
+        72,
+        476,
+        141
+      ]
+    },
+    {
+      "word": "UNDER",
+      "kind": "cream",
+      "size": 86,
+      "box": [
+        130,
+        146,
+        445,
+        222
+      ]
+    },
+    {
+      "word": "SKIN",
+      "kind": "cream",
+      "size": 96,
+      "box": [
+        166,
+        227,
+        409,
+        314
+      ]
+    }
+  ],
+  "ornaments": {
+    "top_scroll_box": [
+      60,
+      24,
+      468,
+      59
+    ],
+    "bottom_scroll_box": [
+      154,
+      328,
+      438,
+      356
+    ]
+  },
+  "clearOfHero": true,
+  "clearOfExplorer": true,
+  "clearOfBadge": true,
+  "scores": {
+    "HOOK": "PASS \u2014 'TRAPPED UNDER SKIN' (3 words, punch word 'TRAPPED' in gold) names the concrete visible proof on the forearm (glowing red arterial blood stopped at the tight linen band and blue venous blood trapped under the pale forearm skin below it, De Motu Cordis ch. 11, FACT_NOTES_v01 row 26), shares zero words with the video title ('The Tied Arm That Proved Your Blood Circulates'), Variant A ('ONE TIGHT BAND'), Variant B v03 ('THE BLOCKED ARTERY'), or Variant B v04 ('HIDDEN VEIN VALVES'), and uses no vague questions or pronouns.",
+    "BAND": "PASS \u2014 Upper-left lettering band (x=100..476, y=72..314, framed by original painted gold scroll flourishes at y=24..356) sits completely left of the pushed-in hero arm (x=560..1236), above the Explorer's hair (y=344), and clear of the bottom-right duration badge.",
+    "PHONE": "PASS \u2014 Checked on 168x94 preview sheet and 4-way comparison strip: the 1.08x hero push-in and clarity boost make the tight linen band, stopped glowing red artery, and swollen blue forearm veins larger and sharper at 168x94 while keeping 'TRAPPED UNDER SKIN' and the Explorer's face/glasses (52.2% height) immediately legible in under a second."
+  },
+  "previews": [
+    "Selected/hos_005_thumb_B_trapped_under_skin_v05_preview.jpg",
+    "Selected/hos_005_thumb_B_trapped_under_skin_v05_style_sheet.jpg",
+    "Selected/hos_005_thumb_TC_4way_trapped_under_skin_v05_phone_168.jpg"
+  ],
+  "studio": false,
+  "status": "Test & Compare B v05 candidate for 005 (wwcjcFfC-5M, built from existing 005 plate only with 1.08x hero push-in, \u00a30). Parked for Chief: thumb B review. No Studio until OK."
+}

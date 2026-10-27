@@ -1,0 +1,98 @@
+{
+  "film": "001",
+  "video": "_C92tIJCk8A",
+  "job": "J0640",
+  "variant": "B v06 (1.06x swan-neck flask hero push-in + concrete sterile-flask hook; pairs with B v04 'BOILED CLEAR BROTH' and B v05 'TINY LIVING CELLS')",
+  "maker": "gemini",
+  "hook": "STERILE LIQUID FLASK",
+  "punch": "FLASK",
+  "jpg": "Selected/hos_001_thumb_B_sterile_liquid_flask_v06.jpg",
+  "sha256": "0192354a4a58cf7815763dbb3db1997f456957c9722409bd7e194b6c867ddbee",
+  "bytes": 262629,
+  "plates": [
+    "08_Thumbnail/Selected/hos_001_tc_thumb_v02.jpg (NAS 001 painted 16:9 library key-art plate: giant swan-neck flask with clear sterile liquid & S-curve dust trap on right two-thirds with 1.06x hero push-in + lower-left Explorer at 54.4% frame height + original painted gold scroll flourishes)"
+  ],
+  "method": "existing_001_plate_only_1.06x_hero_push_in_and_reletter_GeorgiaBold_with_original_painted_flourishes",
+  "spend": 0,
+  "heroBox": [
+    582,
+    12,
+    1138,
+    694
+  ],
+  "explorer": {
+    "source": "hos_001_tc_thumb_v02.jpg",
+    "box": [
+      88,
+      328,
+      316,
+      720
+    ],
+    "height_px": 392,
+    "height_frac": 0.544
+  },
+  "lettering": [
+    {
+      "word": "STERILE",
+      "kind": "cream",
+      "size": 82,
+      "box": [
+        103,
+        63,
+        467,
+        138
+      ]
+    },
+    {
+      "word": "LIQUID",
+      "kind": "cream",
+      "size": 86,
+      "box": [
+        121,
+        132,
+        449,
+        225
+      ]
+    },
+    {
+      "word": "FLASK",
+      "kind": "gold",
+      "size": 100,
+      "box": [
+        109,
+        224,
+        461,
+        315
+      ]
+    }
+  ],
+  "ornaments": {
+    "top_scroll_box": [
+      88,
+      20,
+      496,
+      60
+    ],
+    "bottom_scroll_box": [
+      140,
+      318,
+      445,
+      356
+    ]
+  },
+  "clearOfHero": true,
+  "clearOfExplorer": true,
+  "clearOfBadge": true,
+  "scores": {
+    "HOOK": "PASS \u2014 'STERILE LIQUID FLASK' (3 words, punch word 'FLASK' in gold) names the concrete apparatus ('FLASK') and visible unspoiled liquid ('STERILE LIQUID') inside Pasteur's giant curved-neck flask on the right (001 script Part 04: 'Pasteur\u2019s swan-neck flask experiments showed broth stays sterile when microbes cannot reach it... The liquid stays clear... Inside that clear liquid sits a paradox the old world hated' and THUMBNAIL_AND_TITLE_RULES.md \u00a71.2 & \u00a72.B.1 'name the thing'), shares zero words with the video title ('How Did We Discover Germs?'), J0391 ('THE SWAN NECK'), J0457 ('TRAPPED IN GLASS'), J0503 ('DROP OF WATER'), J0549 ('BOILED CLEAR BROTH'), or J0594 ('TINY LIVING CELLS'), and uses no vague questions or pronouns.",
+    "BAND": "PASS \u2014 Upper-left lettering band (x=103..467, y=63..315, framed by 001's original painted gold scroll flourishes at y=20..356) sits completely left of the pushed-in hero swan-neck flask (x=582..1138), above the Explorer's hair (y=328) and bottom flourish (y=318), and clear of the bottom-right duration badge.",
+    "PHONE": "PASS \u2014 Checked on 168x94 preview sheet and 4-panel strip: the 1.06x hero push-in and glass/liquid specular clarity boost make the giant swan-neck flask bulb, golden liquid level, and S-curve dust-trap bend larger and crisper at 168x94 while keeping 'STERILE LIQUID FLASK' and the Explorer's face/glasses (54.4% height) immediately legible in under a second."
+  },
+  "previews": [
+    "Selected/hos_001_thumb_B_sterile_liquid_flask_v06_preview.jpg",
+    "Selected/hos_001_thumb_B_sterile_liquid_flask_v06_style_sheet.jpg",
+    "Selected/hos_001_thumb_TC_4way_sterile_liquid_flask_v06_phone_168.jpg"
+  ],
+  "studio": false,
+  "status": "Test & Compare B v06 candidate for 001 (_C92tIJCk8A, built from existing 001 plate only with 1.06x hero push-in, \u00a30). Parked for Chief: thumb B review. No Studio until OK."
+}

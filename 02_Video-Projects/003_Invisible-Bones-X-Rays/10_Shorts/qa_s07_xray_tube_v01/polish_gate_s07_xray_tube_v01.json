@@ -1,0 +1,184 @@
+{
+  "rule": {
+    "low_detail": "FAIL: luma std < 13.44 and edge density < 0.0259 (absolute floor); WARN: luma std < 18.0 or edge density < film p5",
+    "split_panel": "full-height/width seam or gutter",
+    "split_panel_gutter": "gutter counts only with edge density >= 0.01 in the 10% band on both sides",
+    "near_black": "mean < 28.0 or p95 < 50.0",
+    "noise": "grain std > 6 over structure std < 12, and the 8x-downscaled frame under the low-detail floor (std < 13.44 and edge density < 0.0259)",
+    "jitter": "centre-patch phase correlation: reversal against trend or > 0.35 px off trend"
+  },
+  "low_detail_floor": {
+    "std": 13.44,
+    "edge": 0.0259,
+    "calibration": {
+      "video": "025_MarsRobot_full_rough_v02d.mp4",
+      "factor": 1.2,
+      "frames": [
+        {
+          "source": "PIA22223.jpg",
+          "t": 201.0,
+          "std": 12.1,
+          "edge": 0.0223
+        },
+        {
+          "source": "PIA22223.jpg",
+          "t": 216.3,
+          "std": 11.2,
+          "edge": 0.0216
+        },
+        {
+          "source": "PIA22929.jpg",
+          "t": 297.4,
+          "std": 26.54,
+          "edge": 0.5735
+        }
+      ]
+    }
+  },
+  "video": "02_Video-Projects/003_Invisible-Bones-X-Rays/10_Shorts/hos_003_s07_xray_tube_v01.mp4",
+  "edge_floor": 0.0174,
+  "verdict": "PASS",
+  "failed": [],
+  "warn": [
+    {
+      "row": "s04_Cathode",
+      "cut": 3,
+      "t": 15.82,
+      "source": "05_rays_stop_at_glass_v05.mp4",
+      "why": [
+        "low detail: edge density 0.0101 < film p5 0.0174"
+      ]
+    }
+  ],
+  "reviewed_ok": [],
+  "rows": [
+    {
+      "cut": 0,
+      "row": "s01_0",
+      "source": "10_accident_coming_v01.mp4",
+      "t": 2.69,
+      "std": 55.7,
+      "mean": 63.31,
+      "p95": 189.0,
+      "edge": 0.055,
+      "hf": 9.07,
+      "lf": 50.29,
+      "std8": 52.74,
+      "edge8": 0.3569,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 1,
+      "row": "s02_Push",
+      "source": "04_electricity_inside_tube_v03.mp4",
+      "t": 7.24,
+      "std": 59.69,
+      "mean": 91.73,
+      "p95": 224.0,
+      "edge": 0.0519,
+      "hf": 6.27,
+      "lf": 54.08,
+      "std8": 57.17,
+      "edge8": 0.4329,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 2,
+      "row": "s03_In",
+      "source": "03_cathode_tube_hero_v02.mp4",
+      "t": 11.9,
+      "std": 49.41,
+      "mean": 63.26,
+      "p95": 171.0,
+      "edge": 0.0344,
+      "hf": 8.27,
+      "lf": 45.15,
+      "std8": 47.0,
+      "edge8": 0.2841,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 3,
+      "row": "s04_Cathode",
+      "source": "05_rays_stop_at_glass_v05.mp4",
+      "t": 15.82,
+      "std": 57.66,
+      "mean": 169.64,
+      "p95": 224.0,
+      "edge": 0.0101,
+      "hf": 6.23,
+      "lf": 56.51,
+      "std8": 56.95,
+      "edge8": 0.1066,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0101 < film p5 0.0174"
+      ]
+    },
+    {
+      "cut": 4,
+      "row": "s05_and",
+      "source": "02_tube_covered_v01.mp4",
+      "t": 17.9,
+      "std": 66.65,
+      "mean": 77.77,
+      "p95": 221.0,
+      "edge": 0.0662,
+      "hf": 8.55,
+      "lf": 61.47,
+      "std8": 63.97,
+      "edge8": 0.3391,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 5,
+      "row": "s06_The",
+      "source": "08_locks_the_door_v02.mp4",
+      "t": 19.93,
+      "std": 56.89,
+      "mean": 60.98,
+      "p95": 199.0,
+      "edge": 0.1013,
+      "hf": 10.35,
+      "lf": 51.2,
+      "std8": 53.73,
+      "edge8": 0.3966,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 6,
+      "row": "s07_loop",
+      "source": "loop_end_10_accident_coming_v01.mp4",
+      "t": 22.5,
+      "std": 76.27,
+      "mean": 117.6,
+      "p95": 236.0,
+      "edge": 0.0744,
+      "hf": 9.23,
+      "lf": 71.73,
+      "std8": 73.74,
+      "edge8": 0.3491,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "stem": "hos_sa_s8_hales_blood_vo_v01",
+  "voice": "Ben Orbit Narrator",
+  "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+  "model_id": "eleven_v3",
+  "settings": {
+    "stability": 0.34,
+    "similarity_boost": 0.78,
+    "style": 0.42,
+    "speed": 1.04,
+    "use_speaker_boost": true
+  },
+  "orders": [
+    "6127927589"
+  ],
+  "retake_of": null,
+  "chapters": [
+    {
+      "title": "take",
+      "chars": 275,
+      "duration_s": 22.8
+    }
+  ],
+  "gap_s": 0.7,
+  "spoken_chars": 275,
+  "words": 51,
+  "duration_s": 22.8,
+  "loudness": {
+    "lufs_integrated": -20.0,
+    "mean_volume_db": -23.4,
+    "max_volume_db": -3.9
+  },
+  "sha256_mp3": "330e6f80caa4d693194abb4c5d447ae07153669a3910807a41751da769d56a37",
+  "scribe": {
+    "transcript": "A horse's blood climbed eight feet up a glass tube. Stephen Hales, a vicar, wanted to measure the push of a heartbeat. He fixed a tall tube into a mare's artery. The blood rose taller than a man, bobbing with every beat. In 1733, he published the first blood pressure reading",
+    "script_words": 51,
+    "scribe_words": 51,
+    "match_rate_pct": 100.0,
+    "exact_match": true,
+    "mismatches": []
+  },
+  "vo_check": "PASS",
+  "credits": {
+    "before": {
+      "used": 203853,
+      "limit": 209536,
+      "remaining": 5683
+    },
+    "after": {
+      "used": 203853,
+      "limit": 209536,
+      "remaining": 5683
+    },
+    "counter_delta": 0
+  },
+  "text": "A horse's blood climbed eight feet up a glass tube. Stephen Hales, a vicar, wanted to measure the push of a heartbeat. He fixed a tall tube into a mare's artery. The blood rose taller than a man, bobbing with every beat. In 1733 he published the first blood pressure reading.",
+  "made_at": "2026-10-12T23:05:50+0100"
+}

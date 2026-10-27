@@ -1,0 +1,168 @@
+{
+  "id": "s08_periodic_table_work",
+  "job": "J0563",
+  "test": "B (search-titled)",
+  "air_date_draft": "2026-12-28",
+  "file": "10_Shorts/hos_002_s08_periodic_table_work_v01.mp4",
+  "sha256": "daf22bb6b9c687d39413702f0f4e7be96975cfd4550d71715884b38fcb6e75d4",
+  "duration_s": 25.333,
+  "vo_source": "02_Voiceover/part05_the_guests_arrive_v01.wav",
+  "vo_span_windows_s": [
+    [
+      42.3,
+      63.65
+    ],
+    [
+      74.0,
+      83.48
+    ]
+  ],
+  "route": "lift: But the table is not finished. It never was, in 1869. Noble gases crash the party \u2026 A photon can read the difference. (42.30\u201363.65 s, 74.00\u201383.48 s from Part 05)",
+  "vo_s": 24.91,
+  "words": 64,
+  "max_pause_s": 0.18,
+  "atempo": 1.06,
+  "bed": "hos002_s08_synth_pad_v01.wav (own synthesis, 0 credits)",
+  "bed_gain_db": -22.5,
+  "hook": "NOBLE GASES",
+  "hook_layer": {
+    "font_size": 237,
+    "cap_px": 169,
+    "cap_pct": 8.8,
+    "lines": 2,
+    "block_pct": [
+      39.8,
+      60.2
+    ],
+    "widest_pct": 81.3
+  },
+  "who_card": {
+    "name": "DMITRI MENDELEEV",
+    "line2": "First table, 1869",
+    "line1_px": 66,
+    "line1_pct_of_band": 10.9,
+    "band": [
+      656,
+      1264
+    ],
+    "in_s": 2.15,
+    "out_s": 5.75,
+    "fade_s": 0.35
+  },
+  "title_on_screen": "How Did We Discover the Periodic Table?",
+  "youtube_title_draft": "How Does the Periodic Table Work?",
+  "plan": [
+    {
+      "t0": 0.0,
+      "t1": 3.657,
+      "plate": "04_Generated-Clips/part05/raw/v01_quality/01b_empty_seats_waiting_v01_try1.mp4",
+      "in_s": 0.6,
+      "crop_x": 656,
+      "lands_on": 0
+    },
+    {
+      "t0": 3.657,
+      "t1": 7.404,
+      "plate": "04_Generated-Clips/part05/raw/v01_quality/02_guests_as_work_v01_try3.mp4",
+      "in_s": 0.6,
+      "crop_x": 656,
+      "lands_on": "Noble"
+    },
+    {
+      "t0": 7.404,
+      "t1": 9.775,
+      "plate": "04_Generated-Clips/part05/raw/v01_quality/10_zoo_became_city_v01_try4.mp4",
+      "in_s": 1.2,
+      "crop_x": 656,
+      "lands_on": "a"
+    },
+    {
+      "t0": 9.775,
+      "t1": 12.865,
+      "plate": "04_Generated-Clips/part05/raw/v01_quality/11b_late_for_dinner_v01_try2.mp4",
+      "in_s": 0.6,
+      "crop_x": 656,
+      "lands_on": "The"
+    },
+    {
+      "t0": 12.865,
+      "t1": 17.155,
+      "plate": "04_Generated-Clips/part05/raw/v01_quality/08b_weight_vs_identity_v01_try1.mp4",
+      "in_s": 1.2,
+      "crop_x": 1200,
+      "lands_on": "Then"
+    },
+    {
+      "t0": 17.155,
+      "t1": 19.075,
+      "plate": "04_Generated-Clips/part01/raw/v01_fast/10_rock_not_fire_v01.mp4",
+      "in_s": 0.6,
+      "crop_x": 656,
+      "lands_on": "Mass"
+    },
+    {
+      "t0": 19.075,
+      "t1": 22.33,
+      "plate": "04_Generated-Clips/part03/raw/v08_fast/08_property_waves_v08.mp4",
+      "in_s": 0.6,
+      "crop_x": 656,
+      "lands_on": "The"
+    },
+    {
+      "t0": 22.33,
+      "t1": 25.33,
+      "plate": "04_Generated-Clips/part05/raw/v01_quality/01b_empty_seats_waiting_v01_try1.mp4",
+      "in_s": 0.6,
+      "crop_x": 656,
+      "lands_on": "loop"
+    }
+  ],
+  "captions": 22,
+  "caption_check": {
+    "ok": true,
+    "changes": 21,
+    "ratio": 1.0
+  },
+  "gate": {
+    "exit": 0,
+    "output": "PASS  hos_002_s08_periodic_table_work_v01.mp4  dur=25.33s  audio=-23.4dB  motion=38.55  dhash=8c8c0c0c1c0c848c\n   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_002_s08_periodic_table_work_v01_open_sheet.jpg"
+  },
+  "vo_check": {
+    "exit": 0,
+    "output": "PASS  hos_002_s08_periodic_table_work_v01.mp4  0:25.33  mean -23.4 dB  peak -3.9 dB  154 wpm\n   warn  replace at ~0:05.12: script 'crash the party colourless almost aloof a' / heard 'crash the party colorless almost aloof a' \u2014 sounds alike (likely the transcriber); listen"
+  },
+  "freezedetect_starts": [],
+  "qa": {
+    "polish_gate": {
+      "exit": 0,
+      "output": "polish gate PASS: 0 of 8 rows failed, 1 to look at -> 02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/qa_s08_periodic_table_work_v01/polish_gate_s08_periodic_table_work_v01.json"
+    },
+    "picture_qa": {
+      "exit": 0,
+      "output": "picture QA PASS: 0 of 8 cuts fail, 1 to look at -> 02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/qa_s08_periodic_table_work_v01/picture_qa_s08_periodic_table_work_v01/PICTURE_QA.md, 02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/qa_s08_periodic_table_work_v01/picture_qa_s08_periodic_table_work_v01/picture_qa_review.jpg"
+    }
+  },
+  "stills": [
+    "10_Shorts/_work_s08_periodic_table_work_v01/hos_002_s08_periodic_table_work_v01_t000.0.jpg",
+    "10_Shorts/_work_s08_periodic_table_work_v01/hos_002_s08_periodic_table_work_v01_t003.8.jpg",
+    "10_Shorts/_work_s08_periodic_table_work_v01/hos_002_s08_periodic_table_work_v01_t011.5.jpg",
+    "10_Shorts/_work_s08_periodic_table_work_v01/hos_002_s08_periodic_table_work_v01_t024.3.jpg"
+  ],
+  "icloud": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/hos_002_s08_periodic_table_work_v01.mp4",
+  "autocomplete_check": {
+    "date": "2026-10-18",
+    "source": "suggestqueries client=youtube ds=yt gl=GB signed-out",
+    "hits": [
+      "how does the periodic table work",
+      "how does the periodic table of elements work",
+      "how is the periodic table arranged",
+      "noble gases periodic table",
+      "position of noble gases in periodic table",
+      "mendeleev periodic table vs modern"
+    ],
+    "note": "'how does the periodic table work', 'how is the periodic table arranged', and 'noble gases periodic table' are exact signed-out GB YouTube autocomplete hits. The lifted VO opens on why Mendeleev's 1869 table was not finished \u2014 adding a whole new column for the noble gases and replacing atomic mass with atomic number (how many protons sit in the nucleus, read by X-ray photons). Third search-titled Short on HOS 002 (matching 003, 004, 005, and 006 which each have 3). Chief's call."
+  },
+  "air_date_draft_note": "2026-12-28 used for the gate only; slot is Chief's call.",
+  "who_card_note": "card is DMITRI MENDELEEV \u00b7 First table, 1869, on screen 2.15\u20135.75 s (3.6 s) right after the 0\u20132 s hook while 'It never was, in 1869' is spoken. Clear of the 0\u20132 s hook, the 9\u201314 s title, and the last 3.0 s CTA.",
+  "overlap_note": "Zero overlap with 002 S1\u2013S5 (P04 + 42..120 s, P05 + 5.00..26.20 s, P05 + 122.40..143.40 s), s06_atomic_weights (Part 03), s07_mendeleev_cards (Part 04 0..41 s), Newlands octaves (Part 02), or the Oct 2 four-elements Short (Part 01): this lifts 42.30\u201363.65 s and 74.00\u201383.48 s of Part 05 (noble gases new column + atomic number / protons in the nucleus), which had never been used in any 002 Short."
+}

@@ -1,0 +1,2 @@
+WARN   1:01 row 11_night_jars 11_night_jars_t1.mp4: low detail: edge density 0.011 < film p5 0.0215
+picture QA PASS: 0 of 16 cuts fail, 1 to look at -> /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/_desk/006/part04_rough_v02/PICTURE_QA.md, /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/_desk/006/part04_rough_v02/picture_qa_review.jpg

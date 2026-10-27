@@ -1,0 +1,167 @@
+{
+ "pulled": "2026-10-17",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "how do vitamins work",
+  "scurvy",
+  "vitamin c"
+ ],
+ "autocomplete": {
+  "how do vitamins work": [
+   "how do vitamins work",
+   "how do vitamins work in pokemon",
+   "how do vitamins work in your body",
+   "how does vitamins work",
+   "how do multivitamins work",
+   "how do prenatal vitamins work",
+   "how do vitamin gummies work",
+   "how do vitamin pills work",
+   "how does multivitamins work",
+   "how does vitamin d work in the body"
+  ],
+  "scurvy": [
+   "scurvy",
+   "scurvy disease",
+   "scurvy pink",
+   "scurvy disease in hindi",
+   "scurvy rog kya hota hai",
+   "scurvy rog",
+   "scurvy toilet",
+   "scurvy ain't for the likes of me",
+   "scurvy symptoms",
+   "scurvy dave"
+  ],
+  "vitamin c": [
+   "vitamin c",
+   "vitamin c serum",
+   "vitamin c can",
+   "vitamin c graduation",
+   "vitamin c capsules for skin",
+   "vitamin cwazy",
+   "vitamin c benefits",
+   "vitamin c serum review",
+   "vitamin club",
+   "vitamin c tablets"
+  ]
+ },
+ "sharedTitleWords": [
+  "emma bryce",
+  "how do",
+  "work emma",
+  "vitamin c"
+ ],
+ "neighbours": [
+  {
+   "id": "Og5xAdC8EUI",
+   "title": "How your digestive system works - Emma Bryce",
+   "channel": "TED-Ed",
+   "views": "13,912,578 views",
+   "age": "8 yr ago",
+   "length": "4:57",
+   "tier": 1,
+   "viewCount": 13912578,
+   "foundBy": "ted-ed how do vitamins work",
+   "onTopic": true
+  },
+  {
+   "id": "ISZLTJH5lYg",
+   "title": "How do vitamins work? - Ginnie Trinh Nguyen",
+   "channel": "TED-Ed",
+   "views": "6,846,052 views",
+   "age": "12 yr ago",
+   "length": "4:44",
+   "tier": 1,
+   "viewCount": 6846052,
+   "foundBy": "how do vitamins work",
+   "onTopic": true
+  },
+  {
+   "id": "PSRJfaAYkW4",
+   "title": "How does your immune system work? - Emma Bryce",
+   "channel": "TED-Ed",
+   "views": "5,194,359 views",
+   "age": "8 yr ago",
+   "length": "5:23",
+   "tier": 1,
+   "viewCount": 5194359,
+   "foundBy": "ted-ed how do vitamins work",
+   "onTopic": true
+  },
+  {
+   "id": "FN3MFhYPWWo",
+   "title": "How do your kidneys work? - Emma Bryce",
+   "channel": "TED-Ed",
+   "views": "3,108,735 views",
+   "age": "11 yr ago",
+   "length": "3:55",
+   "tier": 1,
+   "viewCount": 3108735,
+   "foundBy": "how do vitamins work ted",
+   "onTopic": true
+  },
+  {
+   "id": "rn5I5tfsFN8",
+   "title": "Why Scurvy Doesn't Make Sense to Science",
+   "channel": "SciShow",
+   "views": "813,862 views",
+   "age": "7 yr ago",
+   "length": "5:46",
+   "tier": 2,
+   "viewCount": 813862,
+   "foundBy": "scurvy",
+   "onTopic": true
+  },
+  {
+   "id": "TBNCqRCsSvY",
+   "title": "Introduction to vitamins and minerals | Biology foundations | High school biology | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "360,199 views",
+   "age": "8 yr ago",
+   "length": "6:11",
+   "tier": 2,
+   "viewCount": 360199,
+   "foundBy": "khan academy how do vitamins work",
+   "onTopic": true
+  },
+  {
+   "id": "Py__GJjQzCA",
+   "title": "We Forgot How to Cure Scurvy 7ish Times",
+   "channel": "SciShow",
+   "views": "355,093 views",
+   "age": "11 mo ago",
+   "length": "15:15",
+   "tier": 2,
+   "viewCount": 355093,
+   "foundBy": "scurvy ted",
+   "onTopic": true
+  },
+  {
+   "id": "Mp9II8MmuoA",
+   "title": "Vitamin C and the Limeys",
+   "channel": "Khan Academy",
+   "views": "113,801 views",
+   "age": "15 yr ago",
+   "length": "7:21",
+   "tier": 2,
+   "viewCount": 113801,
+   "foundBy": "khan academy how do vitamins work",
+   "onTopic": true
+  },
+  {
+   "id": "vptZwtyE6ws",
+   "title": "The myth of vitamin C | Maja Grzeszczyk | TEDxIILOPoznań",
+   "channel": "TEDx Talks",
+   "views": "1,796 views",
+   "age": "4 yr ago",
+   "length": "11:51",
+   "tier": 1,
+   "viewCount": 1796,
+   "foundBy": "ted-ed vitamin c",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 4,
+ "gate": "PASS",
+ "hasTed": true,
+ "failedQueries": []
+}

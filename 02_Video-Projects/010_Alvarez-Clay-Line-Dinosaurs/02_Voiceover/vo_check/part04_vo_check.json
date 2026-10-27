@@ -1,0 +1,52 @@
+{
+  "file": "02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/02_Voiceover/hos_010_part04_too_much_iridium_v01.mp3",
+  "part": 4,
+  "fails": [],
+  "warns": [
+    "replace at ~0:00.30: script 'in the gubbio clay there was' / heard 'in the gubio clay there was' — sounds alike (likely the transcriber); listen",
+    "replace at ~1:02.50: script 'giant asteroid about kilometres across had struck' / heard 'giant asteroid about kilometers across had struck' — sounds alike (likely the transcriber); listen"
+  ],
+  "duration_s": 103.84,
+  "duration": "1:43.84",
+  "mean_db": -22.7,
+  "peak_db": -4.2,
+  "pauses_over_1s": [
+    [
+      18.79,
+      1.0
+    ],
+    [
+      22.52,
+      1.06
+    ],
+    [
+      39.92,
+      1.15
+    ],
+    [
+      57.81,
+      1.03
+    ]
+  ],
+  "asr": "faster-whisper small.en",
+  "script_words": 266,
+  "heard_words": 266,
+  "wpm": 158,
+  "word_diffs": [
+    {
+      "at": "0:00.30",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "in the gubbio clay there was",
+      "heard": "in the gubio clay there was"
+    },
+    {
+      "at": "1:02.50",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "giant asteroid about kilometres across had struck",
+      "heard": "giant asteroid about kilometers across had struck"
+    }
+  ],
+  "verdict": "PASS"
+}

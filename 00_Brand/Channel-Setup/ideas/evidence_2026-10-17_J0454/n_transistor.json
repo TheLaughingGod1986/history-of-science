@@ -1,0 +1,138 @@
+{
+ "pulled": "2026-10-17",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "transistor",
+  "how do transistors work",
+  "semiconductors"
+ ],
+ "autocomplete": {
+  "transistor": [
+   "transistors explained",
+   "transistors",
+   "transistor as an amplifier",
+   "transistor as a switch",
+   "transistor class 12 physics",
+   "transistor biasing",
+   "transistor movie",
+   "transistor characteristics experiment",
+   "transistor ost",
+   "transistor as an amplifier class 12 physics"
+  ],
+  "how do transistors work": [
+   "how do transistors work",
+   "how do transistors work in computers",
+   "how do transistors work in a cpu",
+   "how do transistors work as amplifiers",
+   "how does transistor work as a switch",
+   "how does transistor work in hindi",
+   "how do bjt transistors work",
+   "how do npn transistors work",
+   "how do mosfet transistors work",
+   "how do silicon transistors work"
+  ],
+  "semiconductors": [
+   "semiconductor",
+   "semiconductor stocks",
+   "semiconductor manufacturing process",
+   "semiconductor industry",
+   "semiconductors one shot",
+   "semiconductor class 12 one shot",
+   "semiconductors jee",
+   "semiconductors eduniti",
+   "semiconductors one shot jee",
+   "semiconductor class 12"
+  ]
+ },
+ "sharedTitleWords": [],
+ "neighbours": [
+  {
+   "id": "xKxrkht7CpY",
+   "title": "How do solar panels work? - Richard Komp",
+   "channel": "TED-Ed",
+   "views": "26,976,610 views",
+   "age": "10 yr ago",
+   "length": "4:59",
+   "tier": 1,
+   "viewCount": 26976610,
+   "foundBy": "ted-ed semiconductors",
+   "onTopic": true
+  },
+  {
+   "id": "p3q5zWCw8J4",
+   "title": "How computer memory works - Kanawat Senanan",
+   "channel": "TED-Ed",
+   "views": "3,741,462 views",
+   "age": "10 yr ago",
+   "length": "5:05",
+   "tier": 1,
+   "viewCount": 3741462,
+   "foundBy": "ted-ed transistor",
+   "onTopic": true
+  },
+  {
+   "id": "wgbV6DLVezo",
+   "title": "How exactly does binary code work? - José Américo N L F de Freitas",
+   "channel": "TED-Ed",
+   "views": "1,640,377 views",
+   "age": "8 yr ago",
+   "length": "4:40",
+   "tier": 1,
+   "viewCount": 1640377,
+   "foundBy": "ted-ed transistor",
+   "onTopic": true
+  },
+  {
+   "id": "WhNyURBiJcU",
+   "title": "How transistors work - Gokul J. Krishnan",
+   "channel": "TED-Ed",
+   "views": "977,790 views",
+   "age": "10 yr ago",
+   "length": "4:54",
+   "tier": 1,
+   "viewCount": 977790,
+   "foundBy": "transistor",
+   "onTopic": true
+  },
+  {
+   "id": "r_t96FqWE4M",
+   "title": "The high-stakes race to make quantum computers work - Chiara Decaroli",
+   "channel": "TED-Ed",
+   "views": "411,518 views",
+   "age": "7 yr ago",
+   "length": "5:16",
+   "tier": 1,
+   "viewCount": 411518,
+   "foundBy": "ted-ed semiconductors",
+   "onTopic": true
+  },
+  {
+   "id": "OwS9aTE2Go4",
+   "title": "Transistors - The Invention That Changed The World",
+   "channel": "Real Engineering",
+   "views": "5,968,969 views",
+   "age": "10 yr ago",
+   "length": "8:12",
+   "tier": 2,
+   "viewCount": 5968969,
+   "foundBy": "transistor",
+   "onTopic": true
+  },
+  {
+   "id": "IcrBqCFLHIY",
+   "title": "How Does a Transistor Work?",
+   "channel": "Veritasium",
+   "views": "4,546,476 views",
+   "age": "13 yr ago",
+   "length": "6:00",
+   "tier": 2,
+   "viewCount": 4546476,
+   "foundBy": "transistor",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 5,
+ "gate": "PASS",
+ "hasTed": true,
+ "failedQueries": []
+}
