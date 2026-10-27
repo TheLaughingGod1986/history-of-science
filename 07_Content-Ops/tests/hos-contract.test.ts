@@ -5,6 +5,8 @@ import {
   checkTags,
   checkNeighbours,
   checkTitle,
+  dedupeVideoIds,
+  dedupeVideosById,
   lintLongPackage,
   lintShortsRelease,
   ukSlot,
@@ -202,6 +204,37 @@ describe("channel audit", () => {
     ]);
     expect(rules(cross.get("a") || [])).toEqual(expect.arrayContaining(["schedule.one-a-day", "title.duplicate-live"]));
     expect(rules(cross.get("c") || [])).toContain("title.duplicate-live");
+  });
+  it("deduplicates repeated identical video IDs across playlist page boundaries while still flagging equal titles on distinct IDs", () => {
+    const short = (id: string, when: string, title: string): ApiVideo => ({
+      ...good,
+      id,
+      snippet: { ...good.snippet, title },
+      status: { ...good.status, privacyStatus: "public", publishAt: when },
+      contentDetails: { duration: "PT25S" },
+    });
+    // Page-boundary reproduction: uU12JA5rMWg returned at end of page 1 (idx 49) and start of page 2 (idx 50).
+    const rawPageIds = ["-3L6HzJ_d_4", "uU12JA5rMWg", "uU12JA5rMWg", "_C92tIJCk8A"];
+    expect(dedupeVideoIds(rawPageIds)).toEqual(["-3L6HzJ_d_4", "uU12JA5rMWg", "_C92tIJCk8A"]);
+
+    const boundaryDup1 = short("uU12JA5rMWg", "2026-09-29T10:30:00Z", "The periodic table's empty chairs");
+    const boundaryDup2 = short("uU12JA5rMWg", "2026-09-29T10:30:00Z", "The periodic table's empty chairs");
+    const distinctOther = short("LanTHJckYx8", "2026-09-30T10:30:00Z", "What other table has empty chairs?");
+    expect(dedupeVideosById([boundaryDup1, boundaryDup2, distinctOther]).map((v) => v.id)).toEqual([
+      "uU12JA5rMWg",
+      "LanTHJckYx8",
+    ]);
+
+    // Repeated identical ID alone must not self-flag title.duplicate-live or schedule.one-a-day.
+    const selfOnly = auditChannel([boundaryDup1, boundaryDup2, distinctOther]);
+    expect(rules(selfOnly.get("uU12JA5rMWg") || [])).toEqual([]);
+    expect(rules(selfOnly.get("LanTHJckYx8") || [])).toEqual([]);
+
+    // Equal titles on distinct video IDs must still fail title.duplicate-live, even when one ID also repeats.
+    const realTitleDup = short("distinctDupId", "2026-10-02T10:30:00Z", "The periodic table's empty chairs");
+    const withRealDup = auditChannel([boundaryDup1, boundaryDup2, realTitleDup]);
+    expect(rules(withRealDup.get("uU12JA5rMWg") || [])).toContain("title.duplicate-live");
+    expect(rules(withRealDup.get("distinctDupId") || [])).toContain("title.duplicate-live");
   });
 });
 
