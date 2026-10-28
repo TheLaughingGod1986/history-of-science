@@ -337,3 +337,33 @@ ALL CHECKS PASS (00_Brand/Channel-Setup/tools/check_all.sh 02_Video-Projects/002
 
 **STOP:** parked for Chief: thumb B review. No Studio change made.
 
+
+
+# J1129 — HOS 002 packaging, 28 October 2026
+
+Worker: codex. Partial completion; thumbnail test parked for Chief.
+
+Applied DECISION.md section 3 exactly to the live description and the v02 repo description/chapter files. Reloaded Studio and verified the opening and all five chapters; title remains “How Did We Discover the Periodic Table?”, visibility Public, audience not Made for Kids. No title, privacy or schedule change. Script lines 45, 55, 95–97, 124–130 support Lavoisier, Newlands/octaves, 1869 and gallium 1875. Read-back is in J1129_STUDIO_READBACK_2026-10-28.txt.
+
+Studio's old title-and-thumbnail report says: “Not enough impressions to declare a winner”; “Test finished. Ran from 27 September 2026 at 18:49 to 11 October 2026 at 19:35.” Clicking New test presented “Start a new experiment? This deletes your current experiment. Do you want to continue?” Selected Cancel under AGENTS.md Never. No thumbnail test armed, no ledger add/start. Chief must resolve this specific confirmation under the standing rule before live A vs approved MISSING ELEMENT v02 can proceed. No fallback or new art used.
+
+Later title-only tests queued: J1130 (002, depends on J1129), J1131 (004 Atom), J1132 (001 X-rays). Each brief requires verified completion of the video's thumbnail test, then the following day, keeps that time's live thumbnail fixed, and prohibits deleting a current experiment.
+
+Validation:
+```
+npm run lint:package -- --film 002
+SKIP  02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/11_Upload-Package/PACKAGE_MANIFEST.json  (long already public; use channel:audit)
+
+npm run channel:audit -- --help
+PASS  long  AL_-qlWko_g  public  How Did We Discover the Periodic Table?
+58 videos, 4 errors.
+```
+The audit ignores --help and ran its normal read-only check. Its four errors are duplicate-self title findings for unrelated Short uU12JA5rMWg, listed twice. Full-channel audit is not green; no claim of final approval. No check changed or bypassed. API cannot confirm altered-content; the existing disclosure was not changed. Other Studio-only audit checklist items were not re-reviewed in this narrow job.
+
+NAS scratch offload attempted because disk has ~14 GB free: no /private/tmp folder old enough to move. No NAS deletions, spend, cover changes or compilation changes.
+
+Repository validation from the clean job worktree:
+```
+ALL CHECKS PASS
+```
+Full output: `11_Upload-Package/J1129_REPOSITORY_CHECKS.txt`. This is the automated check result, not Chief film approval.
