@@ -1,7 +1,7 @@
 # J1060 Per-Export QA Sweep Inventory & Report (28 Oct 2026)
 
 - **Job:** `J1060` (`both-qa-sweep`, superseding `J1054`, `J1048`, `J0982`)
-- **Agent:** `gemini` (Gemini Argon, Elected Acting Chief)
+- **Agent:** `gemini` (Gemini Argon, Worker)
 - **Total exports inventoried:** `138` (`83` OWB, `55` HOS)
   - **Base J1054 exports verified (`105`):** `70` OWB, `35` HOS (`0` FAILs; includes `HOS:005` `s06..s08` `v01` resolved in `J1058`)
   - **Extended J1060 sweep (`33` additional exports):** `5` OWB `020`/`022` `v01` lift Shorts (`music_gate` run), `16` HOS `001`–`004` `v01` lift Shorts (`music_gate` run), `6` OWB long/compilation masters (`023 v05e`, `025 v03f`, `027 v01m`, `028 v03`, `029 v03b`, `owb_compilation_v05`), and `6` silent visual-overlay / code-graphic packs (`OWB:028`, `OWB:029` `teaching_overlays_v01_pack`; `HOS:007`–`HOS:010` `code_graphics_v01`)
