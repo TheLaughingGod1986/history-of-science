@@ -1,0 +1,15 @@
+{
+  "created_at": "2026-10-12T20:17:05.081441+00:00",
+  "project": "hos-standalone-shorts",
+  "script": null,
+  "music_cues": [],
+  "prompt": "Instrumental, calm and curious history-of-science underscore for short discovery stories. Warm felt piano motif over soft plucked strings and a gentle music-box celesta, light airy pads, a quiet sense of wonder and a small lift of discovery in the middle, then settling. Steady, even, loopable: the ending flows back into the opening. Sits well under a spoken narrator, leaving the mid-range clear. No vocals.\nPace: 72-84 BPM\nNOT: big drums, risers, booms, trailer hits, EDM, pop beat, vocals or choir, cartoon or comedy stings; not the HOS 001\u2013006 film beds or the OWB standalone-Shorts bed (no space shimmer, no cosmic drone).",
+  "length_ms": 45000,
+  "model_id": "music_v2",
+  "force_instrumental": true,
+  "generate": true,
+  "audio_file": "hos-standalone-shorts_score_bed_v01.mp3",
+  "status": "generated",
+  "bytes": 720606,
+  "song_id": "zqpMYK3MipHp681vzBEA"
+}
