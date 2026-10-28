@@ -30,7 +30,7 @@
   "words": 61,
   "max_pause_s": 0.2,
   "atempo": 1.07,
-  "bed": "hos001_s07_synth_pad_v01.wav (own synthesis, 0 credits)",
+  "bed": "05_Music/hos001_s07_synth_pad_v01.wav (own synthesis, 0 credits)",
   "bed_gain_db": -22.3,
   "hook": "WASH HANDS",
   "hook_layer": {
@@ -148,6 +148,10 @@
     "picture_qa": {
       "exit": 0,
       "output": "picture QA PASS: 0 of 8 cuts fail, 1 to look at -> 02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/qa_s07_semmelweis_hands_v01/picture_qa_s07_semmelweis_hands_v01/PICTURE_QA.md, 02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/qa_s07_semmelweis_hands_v01/picture_qa_s07_semmelweis_hands_v01/picture_qa_review.jpg"
+    },
+    "music_gate": {
+      "exit": 0,
+      "output": "music gate PASS: hos001_s07_synth_pad_v01.wav, 26.2 s, about None BPM, brief Pace: 60-80 BPM"
     }
   },
   "stills": [

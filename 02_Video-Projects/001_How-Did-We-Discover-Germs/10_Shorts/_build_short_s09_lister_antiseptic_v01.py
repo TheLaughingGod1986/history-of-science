@@ -224,6 +224,7 @@ def synth_warm_bed(path: Path, dur: float, sr: int = 48000) -> Path:
         l_sample = int(max(-1.0, min(1.0, l_val * env * 0.24)) * 32767)
         r_sample = int(max(-1.0, min(1.0, r_val * env * 0.24)) * 32767)
         frames += struct.pack("<hh", l_sample, r_sample)
+    path.parent.mkdir(parents=True, exist_ok=True)
     with wave.open(str(path), "wb") as w:
         w.setnchannels(2)
         w.setsampwidth(2)
@@ -463,7 +464,15 @@ def build(air_date: str) -> dict:
     ff("-f", "concat", "-safe", "0", "-i", "pic.txt", "-c:v", "libx264", "-pix_fmt", "yuv420p", "-preset", "fast",
        "-crf", "17", "-r", str(FPS), "-t", f"{total:.3f}", str(pic), cwd=WORK)
 
-    bed = synth_warm_bed(WORK / "hos001_s09_synth_pad_v01.wav", total)
+    bed = synth_warm_bed(PROJ / "05_Music" / "hos001_s09_synth_pad_v01.wav", total)
+    bed.with_name(bed.stem + "_plan.json").write_text(json.dumps({
+        "prompt": ("Warm 1865 Glasgow surgical-theatre harmonic pad in A-dorian / Fmaj9 voicing (F3, A3, C4, E4, G4) "
+                   "under spoken narration, slow and even, no chase. Pace: 60-80 BPM. NOT a trailer sting, "
+                   "NOT a piano solo, NOT s11 curved flask pad, NOT s07/s08/s10 pads, NOT any Orbit With Ben bed, "
+                   "NOT a drum loop."),
+        "film": "001", "short": f"{SID}_{VER}", "job": "J1064", "orig_job": JOB,
+        "source": f"own synthesis in _build_short_{SID}_{VER}.py, 0 credits", "pace_bpm": "60-80",
+    }, indent=2) + "\n")
     bed_gain = (mean_db(vo) - 20.0) - mean_db(bed)
     audio = WORK / "audio.wav"
     ff("-i", str(vo), "-i", str(bed), "-filter_complex",
@@ -524,7 +533,7 @@ def build(air_date: str) -> dict:
             "vo_span_windows_s": [list(w) for w in SPAN_WINDOWS],
             "route": "claim-first lift: Joseph Lister took the new idea into the bloodiest room in medicine. If microbes seed wounds, then kill them on contact. … watching a surgeon wash as if the enemy were real? (0.00–27.82 s from Part 05)",
             "vo_s": round(vo_s, 3), "words": len(words), "max_pause_s": MAX_PAUSE, "atempo": ATEMPO,
-            "bed": f"{bed.name} (own synthesis, 0 credits)", "bed_gain_db": round(bed_gain, 2),
+            "bed": f"05_Music/{bed.name} (own synthesis, 0 credits)", "bed_gain_db": round(bed_gain, 2),
             "hook": HOOK.replace("**", ""), "hook_layer": hook_meta, "who_card": card_meta,
             "title_on_screen": TITLE, "youtube_title_draft": TITLE_DRAFT, "plan": plan,
             "captions": len(chunks), "timeline": timeline}
@@ -601,9 +610,19 @@ def run_qa(mp4: Path, plan: list[dict]) -> dict:
                            cwd=REPO, capture_output=True, text=True)
     pqa_out = (r_pqa.stdout + r_pqa.stderr).strip()
     pqa_txt.write_text(pqa_out + "\n")
+
+    mg_json = QA_DIR / f"music_gate_{SID}_{VER}.json"
+    mg_txt = QA_DIR / f"music_gate_{SID}_{VER}.txt"
+    r_mg = subprocess.run([sys.executable, str(OWB_REPO / "scripts/music_gate.py"),
+                           str(PROJ), "--bed", str(PROJ / "05_Music" / "hos001_s09_synth_pad_v01.wav"),
+                           "--video", str(mp4), "--out", str(mg_json)],
+                          cwd=REPO, capture_output=True, text=True)
+    mg_out = (r_mg.stdout + r_mg.stderr).strip()
+    mg_txt.write_text(mg_out + "\n")
     return {
         "polish_gate": {"exit": r_pg.returncode, "output": pg_out.splitlines()[-1] if pg_out else ""},
         "picture_qa": {"exit": r_pqa.returncode, "output": pqa_out.splitlines()[-1] if pqa_out else ""},
+        "music_gate": {"exit": r_mg.returncode, "output": mg_out.splitlines()[-1] if mg_out else ""},
     }
 
 
@@ -661,6 +680,7 @@ def main() -> None:
     print(rec["vo_check"]["output"])
     print(rec["qa"]["polish_gate"]["output"])
     print(rec["qa"]["picture_qa"]["output"])
+    print(rec["qa"]["music_gate"]["output"])
     print(f"freezedetect: {len(rec['freezedetect_starts'])} events {rec['freezedetect_starts']}")
 
 

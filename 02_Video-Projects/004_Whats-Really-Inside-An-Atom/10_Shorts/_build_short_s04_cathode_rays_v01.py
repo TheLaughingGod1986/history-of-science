@@ -34,10 +34,12 @@ from PIL import Image, ImageDraw, ImageFont  # noqa: E402
 HERE = Path(__file__).resolve().parent
 PROJ = HERE.parent
 REPO = PROJ.parents[1]
+OWB_REPO = Path("/Users/benjaminoats/YouTube/orbit-with-ben")
 CLIPS = PROJ / "04_Generated-Clips"
 SID = "s04_cathode_rays"
 VER = "v01"
 WORK = HERE / f"_work_{SID}_{VER}"
+QA_DIR = HERE / f"qa_{SID}_{VER}"
 RAW_VO = PROJ / "02_Voiceover/05_Master/hos_004_part03_vo_v01.mp3"
 RAW_ALIGN = PROJ / "02_Voiceover/05_Master/hos_004_part03_vo_v01_align.json"
 FIRST, LAST = "Pump", "do."
@@ -430,6 +432,20 @@ def main() -> None:
     code, out = run([str(VO_PY), str(VO_CHECK), str(mp4), "--script", str(SCRIPT_TXT)])
     rec["vo_check"] = {"exit": code, "output": out}
     rec["freezedetect_starts"] = freeze(mp4)
+    QA_DIR.mkdir(parents=True, exist_ok=True)
+    mg_json = QA_DIR / f"music_gate_{SID}_{VER}.json"
+    mg_txt = QA_DIR / f"music_gate_{SID}_{VER}.txt"
+    r_mg = subprocess.run([sys.executable, str(OWB_REPO / "scripts/music_gate.py"),
+                           str(PROJ.relative_to(REPO)), "--bed", str(BED.relative_to(REPO)),
+                           "--video", str(mp4.relative_to(REPO)),
+                           "--out", str(mg_json.relative_to(REPO))],
+                          cwd=REPO, capture_output=True, text=True)
+    mg_out = (r_mg.stdout + r_mg.stderr).strip()
+    mg_txt.write_text(mg_out + "\n")
+    rec.setdefault("qa", {})["music_gate"] = {
+        "exit": r_mg.returncode,
+        "output": mg_out.splitlines()[-1] if mg_out else "",
+    }
     stills = []
     for t in (0.0, 11.5, 15.8, rec["duration_s"] - 1.0):
         st = WORK / f"{mp4.stem}_t{t:05.1f}.jpg"

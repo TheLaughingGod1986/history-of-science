@@ -30,7 +30,7 @@
   "words": 64,
   "max_pause_s": 0.25,
   "atempo": 1.02,
-  "bed": "hos003_s05_synth_pad_v01.wav (own synthesis, 0 credits)",
+  "bed": "05_Music/hos003_s05_synth_pad_v01.wav (own synthesis, 0 credits)",
   "bed_gain_db": -21.5,
   "hook": "THE FIRST X-RAY",
   "hook_layer": {
@@ -140,6 +140,10 @@
     "picture_qa": {
       "exit": 0,
       "output": "picture QA PASS: 0 of 7 cuts fail, 1 to look at -> 02_Video-Projects/003_Invisible-Bones-X-Rays/10_Shorts/qa_s05_first_xray_v01/picture_qa_s05_first_xray_v01/PICTURE_QA.md, 02_Video-Projects/003_Invisible-Bones-X-Rays/10_Shorts/qa_s05_first_xray_v01/picture_qa_s05_first_xray_v01/picture_qa_review.jpg"
+    },
+    "music_gate": {
+      "exit": 0,
+      "output": "music gate PASS: hos003_s05_synth_pad_v01.wav, 25.9 s, about 150.0 BPM, brief Pace: 60-80 BPM"
     }
   },
   "stills": [

@@ -1,3 +1,2 @@
-FAIL own: the bed is /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/_work_s08_pasteur_germs_v01/hos001_s08_synth_pad_v01.wav, not in this film's 05_Music
-FAIL own: no plan next to the bed (hos001_s08_synth_pad_v01_plan.json)
-music gate FAIL: hos001_s08_synth_pad_v01.wav, 25.2 s, about 200.0 BPM, brief None
+WARN pace: measured about 200.0 BPM against the brief's 60-80; Claude listens
+music gate PASS: hos001_s08_synth_pad_v01.wav, 25.2 s, about 200.0 BPM, brief Pace: 60-80 BPM

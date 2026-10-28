@@ -1,13 +1,10 @@
 {
-  "verdict": "FAIL",
-  "bed": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/10_Shorts/_work_s06_how_xrays_work_v01/hos003_s06_synth_pad_v01.wav",
-  "seconds": 25.5,
-  "bpm": 109.1,
-  "brief_pace": null,
-  "fail": [
-    "own: the bed is /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/10_Shorts/_work_s06_how_xrays_work_v01/hos003_s06_synth_pad_v01.wav, not in this film's 05_Music",
-    "own: no plan next to the bed (hos003_s06_synth_pad_v01_plan.json)"
-  ],
+  "verdict": "PASS",
+  "bed": "02_Video-Projects/003_Invisible-Bones-X-Rays/05_Music/hos003_s06_synth_pad_v01.wav",
+  "seconds": 27.9,
+  "bpm": 133.3,
+  "brief_pace": "Pace: 60-80 BPM",
+  "fail": [],
   "warn": [],
   "waived": [],
   "matches": [],

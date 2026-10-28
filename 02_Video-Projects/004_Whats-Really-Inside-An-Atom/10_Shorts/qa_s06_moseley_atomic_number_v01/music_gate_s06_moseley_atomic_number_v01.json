@@ -1,13 +1,10 @@
 {
-  "verdict": "FAIL",
-  "bed": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/05_Music/hos004-part05-temp_score_bed_v01.mp3",
-  "seconds": 150.0,
-  "bpm": 85.7,
-  "brief_pace": null,
-  "fail": [
-    "own: no plan next to the bed (hos004-part05-temp_score_bed_v01_plan.json)",
-    "gap: the music nearly stops for 7.5 s from 1:32 (over 15 dB under its usual level)"
-  ],
+  "verdict": "PASS",
+  "bed": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/05_Music/hos_004_s06_moseley_atomic_number_v01_bed.wav",
+  "seconds": 26.9,
+  "bpm": 66.7,
+  "brief_pace": "Pace: 64-72 BPM",
+  "fail": [],
   "warn": [],
   "waived": [],
   "matches": [],

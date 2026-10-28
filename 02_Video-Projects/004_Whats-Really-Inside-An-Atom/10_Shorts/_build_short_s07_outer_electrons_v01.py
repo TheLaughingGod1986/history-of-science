@@ -35,7 +35,9 @@ import json  # noqa: E402
 import math  # noqa: E402
 import re  # noqa: E402
 import shutil  # noqa: E402
+import struct  # noqa: E402
 import subprocess  # noqa: E402
+import wave  # noqa: E402
 
 from PIL import Image, ImageDraw, ImageFont  # noqa: E402
 
@@ -60,7 +62,7 @@ RAW_ALIGN = PROJ / "02_Voiceover/05_Master/hos_004_part05_vo_v01_align.json"
 TAKE = list(range(201, 249)) + list(range(313, 329))
 MAX_PAUSE = 0.25
 ATEMPO = 1.04
-BED = PROJ / "05_Music/hos004-full-sect2_score_bed_v02.mp3"
+BED = PROJ / "05_Music/hos_004_s07_outer_electrons_v01_bed.wav"
 HOOK = "OUTER **SHELL**"
 CARD = ("HENRY MOSELEY", "Atomic number, 1913")
 CARD_IN, CARD_OUT, CARD_FADE = 2.2, 5.8, 0.35
@@ -351,6 +353,8 @@ def build(air_date: str) -> dict:
     ff("-f", "concat", "-safe", "0", "-i", "pic.txt", "-c:v", "libx264", "-pix_fmt", "yuv420p", "-preset", "fast",
        "-crf", "17", "-r", str(FPS), "-t", f"{total:.3f}", str(pic), cwd=WORK)
 
+    if not BED.exists():
+        synth_bed(BED, total)
     bed_gain = (mean_db(vo) - 20.0) - mean_db(BED)
     audio = WORK / "audio.wav"
     ff("-i", str(vo), "-stream_loop", "-1", "-i", str(BED), "-filter_complex",
@@ -445,6 +449,39 @@ def freeze(mp4: Path) -> list[str]:
     return re.findall(r"freeze_start: ([\d.]+)", err)
 
 
+def synth_bed(path: Path, dur: float, sr: int = 48000) -> Path:
+    """Soft G-major / E-minor celesta & plucked string figure at 72 BPM (0 credits)."""
+    n = int(sr * (dur + 0.5))
+    bpm = 72.0
+    beat_s = 60.0 / bpm
+    roots = [196.00, 246.94, 293.66, 164.81, 220.00, 261.63, 146.83, 246.94]
+    frames = bytearray()
+    for i in range(n):
+        t = i / sr
+        beat = t / beat_s
+        step = int(beat)
+        phase = beat - step
+        root = roots[step % len(roots)]
+        env = math.exp(-3.4 * phase) * min(1.0, t / 0.4) * min(1.0, max(0.0, (dur + 0.3 - t) / 0.4))
+        if phase > 0.60:
+            env = 0.0
+        l = r = 0.0
+        for k, mul in enumerate((1.0, 2.0, 3.0)):
+            a = (0.50, 0.24, 0.09)[k]
+            l += math.sin(2 * math.pi * root * mul * t + 0.22 * k) * a
+            r += math.sin(2 * math.pi * root * mul * 1.003 * t + 0.55 + 0.22 * k) * a
+        g = env * 0.22
+        frames += struct.pack("<hh", int(max(-1, min(1, l * g)) * 32767),
+                              int(max(-1, min(1, r * g)) * 32767))
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with wave.open(str(path), "wb") as w:
+        w.setnchannels(2)
+        w.setsampwidth(2)
+        w.setframerate(sr)
+        w.writeframes(bytes(frames))
+    return path
+
+
 def run_qa(mp4: Path, plan: list[dict]) -> dict:
     """Run polish_gate and picture_qa into QA_DIR so QA sweep files are present and PASS."""
     QA_DIR.mkdir(parents=True, exist_ok=True)
@@ -488,9 +525,20 @@ def run_qa(mp4: Path, plan: list[dict]) -> dict:
                            cwd=REPO, capture_output=True, text=True)
     pqa_out = (r_pqa.stdout + r_pqa.stderr).strip()
     pqa_txt.write_text(pqa_out + "\n")
+
+    mg_json = QA_DIR / f"music_gate_{SID}_{VER}.json"
+    mg_txt = QA_DIR / f"music_gate_{SID}_{VER}.json".replace(".json", ".txt")
+    r_mg = subprocess.run([sys.executable, str(OWB_REPO / "scripts/music_gate.py"),
+                           str(PROJ.relative_to(REPO)), "--bed", str(BED.relative_to(REPO)),
+                           "--video", str(mp4.relative_to(REPO)),
+                           "--out", str(mg_json.relative_to(REPO))],
+                          cwd=REPO, capture_output=True, text=True)
+    mg_out = (r_mg.stdout + r_mg.stderr).strip()
+    mg_txt.write_text(mg_out + "\n")
     return {
         "polish_gate": {"exit": r_pg.returncode, "output": pg_out.splitlines()[-1] if pg_out else ""},
         "picture_qa": {"exit": r_pqa.returncode, "output": pqa_out.splitlines()[-1] if pqa_out else ""},
+        "music_gate": {"exit": r_mg.returncode, "output": mg_out.splitlines()[-1] if mg_out else ""},
     }
 
 

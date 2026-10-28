@@ -79,7 +79,7 @@
   "words": 64,
   "max_pause_s": 0.22,
   "atempo": 1.04,
-  "bed": "hos004-part03-temp_score_bed_v01.mp3",
+  "bed": "05_Music/hos004-part03-temp_score_bed_v01.mp3",
   "bed_gain_db": -23.3,
   "hook": "PLUM MODEL",
   "hook_layer": {
@@ -197,6 +197,10 @@
     "picture_qa": {
       "exit": 0,
       "output": "picture QA PASS: 0 of 8 cuts fail, 1 to look at -> 02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/qa_s08_plum_pudding_v01/picture_qa_s08_plum_pudding_v01/PICTURE_QA.md, 02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/qa_s08_plum_pudding_v01/picture_qa_s08_plum_pudding_v01/picture_qa_review.jpg"
+    },
+    "music_gate": {
+      "exit": 0,
+      "output": "music gate PASS: hos004-part03-temp_score_bed_v01.mp3, 95.0 s, about 85.7 BPM, brief Pace: 60-80 BPM"
     }
   },
   "stills": [

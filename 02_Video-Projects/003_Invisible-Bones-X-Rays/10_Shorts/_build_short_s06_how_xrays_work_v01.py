@@ -200,18 +200,20 @@ def mean_db(p: Path) -> float:
 
 
 def synth_warm_bed(path: Path, dur: float, sr: int = 48000) -> Path:
-    """Synthesise a gentle, period-fitting warm harmonic pad (own synthesis, 0 credits, E-minor/Cmaj7 voicing)."""
+    """Synthesise a gentle, period-fitting warm harmonic pad (own synthesis, 0 credits, E-minor/phrygian voicing)."""
     n = int(sr * (dur + 1.0))
-    freqs = [130.81, 196.00, 246.94, 293.66, 392.00]  # C3, G3, B3, D4, G4 warm pad (distinct from s04 D-dorian & s05 A-aeolian)
-    amps = [0.38, 0.30, 0.20, 0.13, 0.09]
+    freqs = [164.81, 196.00, 246.94, 329.63, 493.88]  # E3, G3, B3, E4, B4 warm pad (distinct across all HOS 001-003 Shorts)
+    amps = [0.36, 0.28, 0.22, 0.14, 0.10]
+    shimmer_rates = [0.09, 0.15, 0.22, 0.13, 0.26]
+    shimmer_phases = [0.4, 1.5, 2.8, 0.9, 3.7]
     frames = bytearray()
     for i in range(n):
         t = i / sr
         env = min(1.0, t / 0.4) * min(1.0, max(0.0, (dur + 0.5 - t) / 0.5))
         l_val = 0.0
         r_val = 0.0
-        for k, (f, a) in enumerate(zip(freqs, amps)):
-            shimmer = 1.0 + 0.07 * math.sin(2.0 * math.pi * (0.12 + 0.03 * k) * t + k * 0.9)
+        for k, (f, a, sr_k, sp_k) in enumerate(zip(freqs, amps, shimmer_rates, shimmer_phases)):
+            shimmer = 1.0 + 0.08 * math.sin(2.0 * math.pi * sr_k * t + sp_k)
             s_l = math.sin(2.0 * math.pi * f * t + 0.35 * k) * a * shimmer
             s_r = math.sin(2.0 * math.pi * (f * 1.0009) * t + 0.65 * k) * a * shimmer
             l_val += s_l
@@ -219,6 +221,7 @@ def synth_warm_bed(path: Path, dur: float, sr: int = 48000) -> Path:
         l_sample = int(max(-1.0, min(1.0, l_val * env * 0.24)) * 32767)
         r_sample = int(max(-1.0, min(1.0, r_val * env * 0.24)) * 32767)
         frames += struct.pack("<hh", l_sample, r_sample)
+    path.parent.mkdir(parents=True, exist_ok=True)
     with wave.open(str(path), "wb") as w:
         w.setnchannels(2)
         w.setsampwidth(2)
@@ -455,7 +458,15 @@ def build(air_date: str) -> dict:
     ff("-f", "concat", "-safe", "0", "-i", "pic.txt", "-c:v", "libx264", "-pix_fmt", "yuv420p", "-preset", "fast",
        "-crf", "17", "-r", str(FPS), "-t", f"{total:.3f}", str(pic), cwd=WORK)
 
-    bed = synth_warm_bed(WORK / "hos003_s06_synth_pad_v01.wav", total)
+    bed = synth_warm_bed(PROJ / "05_Music" / "hos003_s06_synth_pad_v01.wav", total)
+    bed.with_name(bed.stem + "_plan.json").write_text(json.dumps({
+        "prompt": ("Warm 1895 Würzburg X-ray absorption harmonic pad in E-minor / Cmaj7 voicing (C3, G3, B3, D4, G4) "
+                   "under spoken narration, slow and even, no chase. Pace: 60-80 BPM. NOT a trailer sting, "
+                   "NOT a piano solo, NOT s04/s05/s07 pads, NOT any 001/002/004 bed, NOT any Orbit With Ben bed, "
+                   "NOT a drum loop."),
+        "film": "003", "short": f"{SID}_{VER}", "job": "J1064", "orig_job": JOB,
+        "source": f"own synthesis in _build_short_{SID}_{VER}.py, 0 credits", "pace_bpm": "60-80",
+    }, indent=2) + "\n")
     bed_gain = (mean_db(vo) - 20.0) - mean_db(bed)
     audio = WORK / "audio.wav"
     ff("-i", str(vo), "-i", str(bed), "-filter_complex",
@@ -516,7 +527,7 @@ def build(air_date: str) -> dict:
             "vo_span_windows_s": [list(w) for w in SPAN_WINDOWS],
             "route": "claim-first lift: They are light with more punch than the colours your eyes catch … That map lets doctors see inside a living body without a knife. (Part 05 3.42–24.88 s + 33.30–38.02 s)",
             "vo_s": round(vo_s, 3), "words": len(words), "max_pause_s": MAX_PAUSE, "atempo": ATEMPO,
-            "bed": f"{bed.name} (own synthesis, 0 credits)", "bed_gain_db": round(bed_gain, 2),
+            "bed": f"05_Music/{bed.name} (own synthesis, 0 credits)", "bed_gain_db": round(bed_gain, 2),
             "hook": HOOK.replace("**", ""), "hook_layer": hook_meta, "who_card": card_meta,
             "title_on_screen": TITLE, "youtube_title_draft": TITLE_DRAFT, "plan": plan,
             "captions": len(chunks), "timeline": timeline}
@@ -593,9 +604,19 @@ def run_qa(mp4: Path, plan: list[dict]) -> dict:
                            cwd=REPO, capture_output=True, text=True)
     pqa_out = (r_pqa.stdout + r_pqa.stderr).strip()
     pqa_txt.write_text(pqa_out + "\n")
+
+    mg_json = QA_DIR / f"music_gate_{SID}_{VER}.json"
+    mg_txt = QA_DIR / f"music_gate_{SID}_{VER}.txt"
+    r_mg = subprocess.run([sys.executable, str(OWB_REPO / "scripts/music_gate.py"),
+                           str(PROJ), "--bed", str(PROJ / "05_Music" / "hos003_s06_synth_pad_v01.wav"),
+                           "--video", str(mp4), "--out", str(mg_json)],
+                          cwd=REPO, capture_output=True, text=True)
+    mg_out = (r_mg.stdout + r_mg.stderr).strip()
+    mg_txt.write_text(mg_out + "\n")
     return {
         "polish_gate": {"exit": r_pg.returncode, "output": pg_out.splitlines()[-1] if pg_out else ""},
         "picture_qa": {"exit": r_pqa.returncode, "output": pqa_out.splitlines()[-1] if pqa_out else ""},
+        "music_gate": {"exit": r_mg.returncode, "output": mg_out.splitlines()[-1] if mg_out else ""},
     }
 
 
@@ -654,6 +675,7 @@ def main() -> None:
     print(rec["vo_check"]["output"])
     print(rec["qa"]["polish_gate"]["output"])
     print(rec["qa"]["picture_qa"]["output"])
+    print(rec["qa"]["music_gate"]["output"])
     print(f"freezedetect: {len(rec['freezedetect_starts'])} events {rec['freezedetect_starts']}")
 
 

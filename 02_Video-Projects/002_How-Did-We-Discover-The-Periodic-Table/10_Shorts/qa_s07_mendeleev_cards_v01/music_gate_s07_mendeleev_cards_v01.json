@@ -1,14 +1,13 @@
 {
-  "verdict": "FAIL",
-  "bed": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/_work_s07_mendeleev_cards_v01/hos002_s07_synth_pad_v01.wav",
+  "verdict": "PASS",
+  "bed": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/05_Music/hos002_s07_synth_pad_v01.wav",
   "seconds": 26.2,
   "bpm": 200.0,
-  "brief_pace": null,
-  "fail": [
-    "own: the bed is /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/_work_s07_mendeleev_cards_v01/hos002_s07_synth_pad_v01.wav, not in this film's 05_Music",
-    "own: no plan next to the bed (hos002_s07_synth_pad_v01_plan.json)"
+  "brief_pace": "Pace: 60-80 BPM",
+  "fail": [],
+  "warn": [
+    "pace: measured about 200.0 BPM against the brief's 60-80; Claude listens"
   ],
-  "warn": [],
   "waived": [],
   "matches": [],
   "waiver": null,

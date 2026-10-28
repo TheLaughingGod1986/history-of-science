@@ -1,3 +1,2 @@
-FAIL own: the bed is /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/_work_s08_periodic_table_work_v01/hos002_s08_synth_pad_v01.wav, not in this film's 05_Music
-FAIL own: no plan next to the bed (hos002_s08_synth_pad_v01_plan.json)
-music gate FAIL: hos002_s08_synth_pad_v01.wav, 26.3 s, about 200.0 BPM, brief None
+WARN pace: measured about 200.0 BPM against the brief's 60-80; Claude listens
+music gate PASS: hos002_s08_synth_pad_v01.wav, 26.3 s, about 200.0 BPM, brief Pace: 60-80 BPM

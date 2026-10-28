@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-10-28T06:00:00Z",
+  "project": "003_Invisible-Bones-X-Rays",
+  "short_id": "s07_xray_tube_v01",
+  "job": "J1064",
+  "source": "own_synthesis_zero_credit",
+  "generator": "02_Video-Projects/003_Invisible-Bones-X-Rays/10_Shorts/_build_short_s07_xray_tube_v01.py:synth_warm_bed",
+  "voicing": "F3-C4-D4-G4-A4 warm harmonic pad (F-lydian/Dm7 voicing)",
+  "duration_s": 25.0,
+  "sample_rate_hz": 48000,
+  "channels": 2,
+  "sha256": "259ab9ea8aae7c4efb3694a4e8ab85969bdab062a3ade0086a4f2644b5305e8e",
+  "prompt": "Warm late-Victorian W\u00fcrzburg physics laboratory documentary underscore, gentle F-lydian/Dm7 harmonic pad under cathode-ray and X-ray tube narration, no vocals. Pace: 60-80 BPM. NOT hos003_s04_synth_pad_v01, NOT hos003_s05_synth_pad_v01, NOT hos003_s06_synth_pad_v01, NOT any HOS 001-002 or 004-007 bed, NOT any Orbit With Ben bed, NOT a drum loop, NOT a trailer sting."
+}
