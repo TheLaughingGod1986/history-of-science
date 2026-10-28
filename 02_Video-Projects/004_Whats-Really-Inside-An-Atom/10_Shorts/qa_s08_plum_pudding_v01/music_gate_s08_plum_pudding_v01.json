@@ -1,0 +1,19 @@
+{
+  "verdict": "FAIL",
+  "bed": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/05_Music/hos004-part03-temp_score_bed_v01.mp3",
+  "seconds": 95.0,
+  "bpm": 85.7,
+  "brief_pace": null,
+  "fail": [
+    "brief: the prompt has no 'Pace: NN-NN BPM' line",
+    "brief: the prompt doesn't say what it must not sound like (NOT ...)"
+  ],
+  "warn": [],
+  "waived": [],
+  "matches": [],
+  "waiver": null,
+  "rules": {
+    "similarity_fail": 0.8,
+    "compared_seconds": 300
+  }
+}

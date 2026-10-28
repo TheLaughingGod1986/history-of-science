@@ -1,0 +1,3 @@
+FAIL own: no plan next to the bed (hos004-part05-temp_score_bed_v01_plan.json)
+FAIL gap: the music nearly stops for 7.5 s from 1:32 (over 15 dB under its usual level)
+music gate FAIL: hos004-part05-temp_score_bed_v01.mp3, 150.0 s, about 85.7 BPM, brief None

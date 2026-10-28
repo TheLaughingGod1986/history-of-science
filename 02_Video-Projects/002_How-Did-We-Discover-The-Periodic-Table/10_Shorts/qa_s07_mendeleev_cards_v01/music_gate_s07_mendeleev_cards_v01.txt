@@ -1,0 +1,3 @@
+FAIL own: the bed is /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/_work_s07_mendeleev_cards_v01/hos002_s07_synth_pad_v01.wav, not in this film's 05_Music
+FAIL own: no plan next to the bed (hos002_s07_synth_pad_v01_plan.json)
+music gate FAIL: hos002_s07_synth_pad_v01.wav, 26.2 s, about 200.0 BPM, brief None

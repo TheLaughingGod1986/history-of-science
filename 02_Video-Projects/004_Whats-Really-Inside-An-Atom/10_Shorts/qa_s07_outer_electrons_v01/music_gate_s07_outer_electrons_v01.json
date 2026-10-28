@@ -1,0 +1,25 @@
+{
+  "verdict": "FAIL",
+  "bed": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/05_Music/hos004-full-sect2_score_bed_v02.mp3",
+  "seconds": 160.0,
+  "bpm": 41.4,
+  "brief_pace": null,
+  "fail": [
+    "brief: the prompt has no 'Pace: NN-NN BPM' line",
+    "brief: the prompt doesn't say what it must not sound like (NOT ...)",
+    "reused: sounds like hos005-part05-temp_score_bed_v01.mp3 (0.823)"
+  ],
+  "warn": [],
+  "waived": [],
+  "matches": [
+    {
+      "file": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/05_Music/hos005-part05-temp_score_bed_v01.mp3",
+      "similarity": 0.823
+    }
+  ],
+  "waiver": null,
+  "rules": {
+    "similarity_fail": 0.8,
+    "compared_seconds": 300
+  }
+}

@@ -1,0 +1,3 @@
+FAIL own: the bed is /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/_work_s07_semmelweis_hands_v01/hos001_s07_synth_pad_v01.wav, not in this film's 05_Music
+FAIL own: no plan next to the bed (hos001_s07_synth_pad_v01_plan.json)
+music gate FAIL: hos001_s07_synth_pad_v01.wav, 26.2 s, about None BPM, brief None

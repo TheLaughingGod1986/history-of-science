@@ -1,0 +1,4 @@
+FAIL brief: the prompt has no 'Pace: NN-NN BPM' line
+FAIL brief: the prompt doesn't say what it must not sound like (NOT ...)
+FAIL reused: sounds like hos005-part05-temp_score_bed_v01.mp3 (0.823)
+music gate FAIL: hos004-full-sect2_score_bed_v02.mp3, 160.0 s, about 41.4 BPM, brief None

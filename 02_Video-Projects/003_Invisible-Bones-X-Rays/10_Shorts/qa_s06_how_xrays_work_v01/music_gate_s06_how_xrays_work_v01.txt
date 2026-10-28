@@ -1,0 +1,3 @@
+FAIL own: the bed is /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/10_Shorts/_work_s06_how_xrays_work_v01/hos003_s06_synth_pad_v01.wav, not in this film's 05_Music
+FAIL own: no plan next to the bed (hos003_s06_synth_pad_v01_plan.json)
+music gate FAIL: hos003_s06_synth_pad_v01.wav, 25.5 s, about 109.1 BPM, brief None
