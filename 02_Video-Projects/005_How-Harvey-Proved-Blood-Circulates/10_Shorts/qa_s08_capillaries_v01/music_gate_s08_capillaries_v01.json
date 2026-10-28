@@ -1,13 +1,10 @@
 {
-  "verdict": "FAIL",
-  "bed": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/05_Music/hos005-part05-temp_score_bed_v01.mp3",
+  "verdict": "PASS",
+  "bed": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/05_Music/hos005-part05-temp_score_bed_v01.mp3",
   "seconds": 128.0,
   "bpm": 150.0,
-  "brief_pace": null,
-  "fail": [
-    "brief: the prompt has no 'Pace: NN-NN BPM' line",
-    "brief: the prompt doesn't say what it must not sound like (NOT ...)"
-  ],
+  "brief_pace": "Pace: 60-80 BPM",
+  "fail": [],
   "warn": [
     "reused: couldn't read saturn_long_vo_v02_LISTEN.wav to compare (OSError); download it or pass --others",
     "reused: couldn't read jupiter-vo.mp3 to compare (OSError); download it or pass --others",

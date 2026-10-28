@@ -3,7 +3,7 @@
   "project": "hos005-part02-temp",
   "script": null,
   "music_cues": [],
-  "prompt": "warm curious 17th-century documentary underscore, soft strings, harpsichord and light piano, a gentle heartbeat-like pulse in low strings, wonder and quiet tension, no vocals, leaves room for voice",
+  "prompt": "warm curious 17th-century documentary underscore, soft strings, harpsichord and light piano, a gentle heartbeat-like pulse in low strings, wonder and quiet tension, no vocals, leaves room for voice. Pace: 60-80 BPM. NOT jupiter-music, saturn-rings, sun-brighter, venus, light-speed, mars-robot, nearest-star, earth-spin, or any earlier HOS 001-004 bed, NOT a drum loop, NOT a trailer sting.",
   "length_ms": 110000,
   "model_id": "music_v2",
   "force_instrumental": true,

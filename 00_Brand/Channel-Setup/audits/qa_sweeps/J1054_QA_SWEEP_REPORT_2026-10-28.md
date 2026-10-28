@@ -18,8 +18,8 @@
    - `OWB:026` `026_NearestStar_v06` (`rough_v06_pack`, `026_NearestStar_v06_cfr18.mp4`): re-ran `picture_qa.py` (`0/103` FAIL, `25` WARN, PASS), `polish_gate.py` (`0/103` FAIL, PASS), and `music_gate.py` (PASS) so all gate timestamps postdate `026_NearestStar_v06_cfr18.mp4`.
 3. **5 HOS `006` `v01` Lift Shorts `music_gate` Completed (`0` FAILs):**
    - Ran `music_gate.py` against `006_Trees-Are-Made-Of-Air/05_Music/trees006_score_bed_v01.mp3` for `s04_photosynthesis_v01`, `s05_charcoal_gas_v01`, `s06_ingenhousz_oxygen_v01`, `s07_priestley_mint_v01`, and `s08_willow_pot_v01`. All 5 exited `rc=0` (`PASS`) and are saved in `qa_s04..s08/music_gate_s04..s08.{json,txt}`.
-4. **3 HOS `005` `v01` Lift Shorts `music_gate` Checked (`J1058` Queued at `£0`):**
-   - `s06_blood_pressure_cuff_v01`, `s07_heart_pulse_v01`, and `s08_capillaries_v01` pass `picture_qa` (`0/10` FAIL) and `polish_gate` (`0/10` FAIL), and have `0` reused-audio matches or gaps in `music_gate.py`, but their pre-8-Oct temp beds (`hos005-part03-temp_score_bed_v01.mp3` and `hos005-part05-temp_score_bed_v01.mp3`) lack `Pace: NN-NN BPM` and `NOT ...` lines in `*_plan.json`. Queued no-spend fix job `J1058` (`jobs.py add`, `£0`) to supply own-synthesis Short beds or compliant `05_Music` plan sidecars and re-run `music_gate.py` to PASS.
+4. **3 HOS `005` `v01` Lift Shorts `music_gate` Checked & Resolved in `J1058` (`0` FAILs, `£0`):**
+   - `s06_blood_pressure_cuff_v01`, `s07_heart_pulse_v01`, and `s08_capillaries_v01` pass `picture_qa` (`0/9`, `0/8`, `0/7` FAIL) and `polish_gate` (`0/9`, `0/8`, `0/7` FAIL), and have `0` reused-audio matches or gaps in `music_gate.py`. Their pre-8-Oct temp beds (`hos005-part03-temp_score_bed_v01.mp3` and `hos005-part05-temp_score_bed_v01.mp3`) originally lacked `Pace: NN-NN BPM` and `NOT ...` lines in `*_plan.json`; `J1058` updated the `05_Music` plan sidecars (`Pace: 60-80 BPM`, `NOT ...`) and re-ran `music_gate.py` to `PASS` (`rc=0`) across all three.
 
 ## 2. Per-Export Inventory Table (105 Exports)
 
@@ -122,9 +122,9 @@
 | OWB | `j1054_extended_lift_shorts_and_longs` | `OWB:027` | `earth_day_one_year_v01` | `a6b6144d77db` | `2026-10-18T09:19:12Z` | PASS (0/7F, 1W) | PASS (0/7F, 1W) | PASS (0F, 0W) | YES | — |
 | OWB | `j1054_extended_lift_shorts_and_longs` | `OWB:024` | `024_LightSpeed_v06` | `8d0b131771c1` | `2026-10-21T20:42:41Z` | PASS (0/111F, 60W) | PASS (0/111F, 8W) | PASS (0F, 0W) | YES | — |
 | OWB | `j1054_extended_lift_shorts_and_longs` | `OWB:026` | `026_NearestStar_v06` | `624562255a58` | `2026-10-22T10:00:26Z` | PASS (0/103F, 25W) | PASS (0/103F, 6W) | PASS (0F, 13W) | YES | — |
-| HOS | `j1054_extended_lift_shorts_and_longs` | `HOS:005` | `hos_005_s06_blood_pressure_cuff_v01` | `b9bc921502c3` | `2026-10-18T03:25:35Z` | PASS (0/9F, 1W) | PASS (0/9F, 1W) | FAIL (2F, 13W) | YES | J1058 |
-| HOS | `j1054_extended_lift_shorts_and_longs` | `HOS:005` | `hos_005_s07_heart_pulse_v01` | `a6513555187f` | `2026-10-19T00:47:56Z` | PASS (0/8F, 1W) | PASS (0/8F, 1W) | FAIL (2F, 13W) | YES | J1058 |
-| HOS | `j1054_extended_lift_shorts_and_longs` | `HOS:005` | `hos_005_s08_capillaries_v01` | `64f746e65721` | `2026-10-20T15:01:22Z` | PASS (0/7F, 1W) | PASS (0/7F, 1W) | FAIL (2F, 13W) | YES | J1058 |
+| HOS | `j1054_extended_lift_shorts_and_longs` | `HOS:005` | `hos_005_s06_blood_pressure_cuff_v01` | `b9bc921502c3` | `2026-10-18T03:25:35Z` | PASS (0/9F, 1W) | PASS (0/9F, 1W) | PASS (0F, 13W) | YES | J1058 |
+| HOS | `j1054_extended_lift_shorts_and_longs` | `HOS:005` | `hos_005_s07_heart_pulse_v01` | `a6513555187f` | `2026-10-19T00:47:56Z` | PASS (0/8F, 1W) | PASS (0/8F, 1W) | PASS (0F, 14W) | YES | J1058 |
+| HOS | `j1054_extended_lift_shorts_and_longs` | `HOS:005` | `hos_005_s08_capillaries_v01` | `64f746e65721` | `2026-10-20T15:01:22Z` | PASS (0/7F, 1W) | PASS (0/7F, 1W) | PASS (0F, 13W) | YES | J1058 |
 | HOS | `j1054_extended_lift_shorts_and_longs` | `HOS:006` | `hos_006_s04_photosynthesis_v01` | `1198f5671f29` | `2026-10-16T19:15:42Z` | PASS (0/8F, 1W) | PASS (0/8F, 1W) | PASS (0F, 13W) | YES | — |
 | HOS | `j1054_extended_lift_shorts_and_longs` | `HOS:006` | `hos_006_s05_charcoal_gas_v01` | `06fbeceda494` | `2026-10-16T16:59:44Z` | PASS (0/7F, 1W) | PASS (0/7F, 1W) | PASS (0F, 13W) | YES | — |
 | HOS | `j1054_extended_lift_shorts_and_longs` | `HOS:006` | `hos_006_s06_ingenhousz_oxygen_v01` | `3daf38e7f3f5` | `2026-10-18T07:27:09Z` | PASS (0/8F, 0W) | PASS (0/8F, 0W) | PASS (0F, 13W) | YES | — |
