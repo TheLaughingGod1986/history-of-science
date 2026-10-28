@@ -41,3 +41,30 @@ These are **untried hypotheses**. No pattern has a recorded win or loss. No new 
 ## Next work, without repeating collection
 
 Use `../recovered/neighbour_competitors.json`, `search_neighbours.json`, and `neighbour_thumbnail_manifest.json` from the first J1107 checkpoint to code the six search-neighbour cohorts. Their images and existing sheets are already under `_desk/J1107/competitors/` (channel names include RationalThinker118, HistoryoftheUniverse, pbsorigins, crashcourse, HumanProgressOrg, TEDEd). Then finish Short cover/opening verification, reconcile live test configuration/ledger, select eligible designs, run the independent packaging panel and prepare Chief-gated Studio jobs. The original job remains unfinished.
+
+## Six search-neighbour channels — continuation 28 October
+
+All **79 distinct selected images** have manual visual codes and verified hashes in `neighbour_visual_coding.json`. `neighbour_coverage.json` records the actual sample and overlapping tails. Each row includes the public source URL, title/shape/length, thumbnail words, lettering colour/size, subject/composition, curiosity device and measured luma/contrast. Small unreadable subtitles are labelled as such; they are not guessed. These are saved images, not observations of a competitor's chosen Short cover or frame 0.
+
+The capped listings all extend well before 30 July: Crash Course January 2024, Human Progress longs March 2021 and Shorts March 2023, TED-Ed October 2024. No further collection is needed merely because those listings reached the 200-item cap. Missing-view exclusions in the original collector still apply.
+
+| Channel | Eligible longs / Shorts | Distinct selected longs / Shorts | Interpretation |
+|---|---:|---:|---|
+| Rational Thinker | 4 / 0 | 4 / 0 | Both tails identical; no fast-vs-slow group comparison |
+| History of the Universe | 1 / 0 | 1 / 0 | Single example only |
+| PBS Origins | 3 / 6 | 3 / 6 | Both tails identical |
+| Crash Course | 17 / 5 | 17 / 5 | Long tails overlap by 3; Short tails identical |
+| Human Progress | 6 / 17 | 6 / 17 | Long tails identical; Short tails overlap by 3 |
+| TED-Ed | 21 / 0 | 20 / 0 | Disjoint ten-video tails; one middle video excluded by design |
+
+### What the comparisons support
+
+- **Crash Course is heavily topic-confounded:** six fast-tail longs concern US government; the slow tail includes seven geology-related items, the government preview and two overlapping government episodes. Both groups use large, clear type. The faster government series was also newer and topical. This is no evidence that copying its type will lift HOS CTR.
+- **TED-Ed's fast group contains direct viewer problems:** attention, credit cards, sales tricks, housing, getting lost and presenting ideas. Slow examples also include practical explanation, persuasion and storytelling. Both tails use large text and clear illustrations. Test a concrete subject/benefit in HOS, not a wholesale palette or typography change.
+- **Human Progress Shorts:** the two fastest are historical illustration-led scenes (execution and preindustrial life), while the slow group is dominated by interview faces. A third history scene is also in the fast tail. This is a plausible scene-versus-talking-head hypothesis, heavily confounded by topic and tiny counts (top 102 views/day versus many under 10); no HOS win is established.
+- **Rational Thinker:** all four use scientist portraits and a concrete scientific object/diagram. Noble gases leads without a large prose hook; the other three carry prominent questions. With four films and identical tails, question lettering cannot be called the winning pattern.
+- **HOS application:** keep the painted warm key art, cream/gold lettering and small Explorer. Prefer one readable physical puzzle; title and cover should contribute different information. Existing house rules already require this. None of these observations earns a rule change or a ledger win.
+
+All cohort speeds are views/day at collection, not impressions CTR. Age, audience, topic, seasonality and Shorts-feed distribution remain uncontrolled. Search neighbours include general education/economics/history channels; they are not all direct history-of-science peers.
+
+Veritasium Short eligibility is now coded from the saved public titles/descriptions in `veritasium_history_shorts_filter.json`: only `wxLc-gFORPQ` explicitly frames the Einstein–Bohr historical argument. The other 13 are excluded from the history subset. A one-item history subset cannot supply a fast/slow contrast; their broader science-thumbnail observations remain supplementary.
