@@ -392,11 +392,28 @@ export function auditVideo(v: ApiVideo): Finding[] {
   return f;
 }
 
+/** Deduplicate repeated video IDs (e.g. across playlistItems.list page boundaries) preserving first-seen order. */
+export function dedupeVideoIds(ids: readonly string[]): string[] {
+  return Array.from(new Set(ids));
+}
+
+/** Deduplicate ApiVideo rows by id, preserving first-seen order. */
+export function dedupeVideosById(videos: readonly ApiVideo[]): ApiVideo[] {
+  const seen = new Set<string>();
+  const out: ApiVideo[] = [];
+  for (const v of videos) {
+    if (seen.has(v.id)) continue;
+    seen.add(v.id);
+    out.push(v);
+  }
+  return out;
+}
+
 /** Cross-video checks: duplicate public titles, two Shorts on one day, Shorts before their long. */
 export function auditChannel(videos: ApiVideo[]): Map<string, Finding[]> {
   const out = new Map<string, Finding[]>();
   const add = (id: string, x: Finding) => out.set(id, [...(out.get(id) || []), x]);
-  const visible = videos.filter(
+  const visible = dedupeVideosById(videos).filter(
     (v) => v.status?.privacyStatus !== "private" || Boolean(v.status?.publishAt),
   );
   const byTitle = new Map<string, ApiVideo[]>();

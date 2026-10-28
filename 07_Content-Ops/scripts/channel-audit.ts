@@ -21,6 +21,8 @@ import path from "path";
 import {
   auditChannel,
   auditVideo,
+  dedupeVideoIds,
+  dedupeVideosById,
   HOS_CHANNEL_ID,
   isShort,
   STUDIO_ONLY_CHECKS,
@@ -68,15 +70,16 @@ async function fetchChannel(token: string): Promise<{ channel: Record<string, an
     ids.push(...pl.items.map((i: any) => i.contentDetails.videoId));
     page = pl.nextPageToken || "";
   } while (page);
+  const uniqueIds = dedupeVideoIds(ids);
   const videos: ApiVideo[] = [];
-  for (let i = 0; i < ids.length; i += 50) {
+  for (let i = 0; i < uniqueIds.length; i += 50) {
     const v = await get(
       token,
-      `${API}/videos?part=snippet,status,contentDetails&id=${ids.slice(i, i + 50).join(",")}`,
+      `${API}/videos?part=snippet,status,contentDetails&id=${uniqueIds.slice(i, i + 50).join(",")}`,
     );
     videos.push(...v.items);
   }
-  return { channel, videos };
+  return { channel, videos: dedupeVideosById(videos) };
 }
 
 async function main() {
@@ -85,7 +88,8 @@ async function main() {
   const file = arg("file");
   if (file) {
     const data = JSON.parse(fs.readFileSync(path.resolve(file), "utf8"));
-    videos = Array.isArray(data) ? data : data.items || data.videos || [];
+    const rawVideos = Array.isArray(data) ? data : data.items || data.videos || [];
+    videos = dedupeVideosById(rawVideos);
     channel = data.channel || null;
   } else {
     const token = await accessToken();
