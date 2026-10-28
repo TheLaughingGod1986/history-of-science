@@ -1,0 +1,189 @@
+{
+  "period": "2026-09-30/2026-10-27",
+  "source": "HOS Studio Advanced mode DOM read; advanced.txt",
+  "views_from_impressions_note": "Not in current report; do not substitute total views or derive exact counts from rounded CTR",
+  "videos": {
+    "29bpGAI0wb8": {
+      "title": "What happens if you keep cutting gold in half?",
+      "impressions": 1121,
+      "ctr_pct": 0.9,
+      "views_from_impressions": null,
+      "format": "short"
+    },
+    "OnJ8MFu0Mi0": {
+      "title": "How Did John Snow Stop Cholera?",
+      "impressions": 129,
+      "ctr_pct": 1.6,
+      "views_from_impressions": null,
+      "format": "short"
+    },
+    "oKqmnJNGiHg": {
+      "title": "How Was Phosphorus Discovered?",
+      "impressions": 306,
+      "ctr_pct": 3.9,
+      "views_from_impressions": null,
+      "format": "short"
+    },
+    "qOZgess30h0": {
+      "title": "Invisible life is still everywhere",
+      "impressions": 217,
+      "ctr_pct": 0.9,
+      "views_from_impressions": null,
+      "format": "short"
+    },
+    "clV6E10NLPw": {
+      "title": "The spray that stopped surgery killing patients",
+      "impressions": 245,
+      "ctr_pct": 3.3,
+      "views_from_impressions": null,
+      "format": "short"
+    },
+    "c2q7w0pgcn8": {
+      "title": "Who Discovered Infrared Light?",
+      "impressions": 229,
+      "ctr_pct": 6.1,
+      "views_from_impressions": null,
+      "format": "short"
+    },
+    "TbMMJSRKC3U": {
+      "title": "He said every eighth element repeats",
+      "impressions": 436,
+      "ctr_pct": 1.6,
+      "views_from_impressions": null,
+      "format": "short"
+    },
+    "LCZRHUyTiq0": {
+      "title": "What Are Cathode Rays?",
+      "impressions": 239,
+      "ctr_pct": 2.1,
+      "views_from_impressions": null,
+      "format": "short"
+    },
+    "-3L6HzJ_d_4": {
+      "title": "What Is the Pasteur Swan Neck Flask Experiment?",
+      "impressions": 266,
+      "ctr_pct": 4.9,
+      "views_from_impressions": null,
+      "format": "short"
+    },
+    "AL_-qlWko_g": {
+      "title": "How Did We Discover the Periodic Table?",
+      "impressions": 422,
+      "ctr_pct": 3.6,
+      "views_from_impressions": null,
+      "format": "long"
+    },
+    "GHZDsiH7L7A": {
+      "title": "What's Really Inside an Atom?",
+      "impressions": 789,
+      "ctr_pct": 1.0,
+      "views_from_impressions": null,
+      "format": "long"
+    },
+    "nba0-f7PPeU": {
+      "title": "Why tellurium sat before iodine",
+      "impressions": 49,
+      "ctr_pct": 6.1,
+      "views_from_impressions": null,
+      "format": "short"
+    },
+    "8_Edn_HCi1s": {
+      "title": "Germs hitch a ride on you",
+      "impressions": 42,
+      "ctr_pct": 4.8,
+      "views_from_impressions": null,
+      "format": "short"
+    },
+    "zI_eD3vFWmE": {
+      "title": "The first X-ray showed a wedding ring",
+      "impressions": 22,
+      "ctr_pct": 4.6,
+      "views_from_impressions": null,
+      "format": "short"
+    },
+    "xvanpsLeADE": {
+      "title": "How did R\u00f6ntgen see bones without cutting",
+      "impressions": 88,
+      "ctr_pct": 0.0,
+      "views_from_impressions": null,
+      "format": "short"
+    },
+    "frP_YrNShsU": {
+      "title": "How Did We Discover X-rays?",
+      "impressions": 18,
+      "ctr_pct": 0.0,
+      "views_from_impressions": null,
+      "format": "long"
+    },
+    "uU12JA5rMWg": {
+      "title": "The periodic table's empty chairs",
+      "impressions": 27,
+      "ctr_pct": 0.0,
+      "views_from_impressions": null,
+      "format": "short"
+    },
+    "H1y0DXFVmw8": {
+      "title": "Germs don't cast a shadow",
+      "impressions": 7,
+      "ctr_pct": 0.0,
+      "views_from_impressions": null,
+      "format": "short"
+    },
+    "nFQRWmpulTQ": {
+      "title": "He predicted a metal before it was found",
+      "impressions": 10,
+      "ctr_pct": 10.0,
+      "views_from_impressions": null,
+      "format": "short"
+    },
+    "oowAOWTBoq0": {
+      "title": "How X-rays Were Discovered by Accident",
+      "impressions": 39,
+      "ctr_pct": 0.0,
+      "views_from_impressions": null,
+      "format": "short"
+    },
+    "_C92tIJCk8A": {
+      "title": "How Did We Discover Germs?",
+      "impressions": 14,
+      "ctr_pct": 7.1,
+      "views_from_impressions": null,
+      "format": "long"
+    },
+    "iqToagXnjX0": {
+      "title": "Microbes in a drop of pond water",
+      "impressions": 22,
+      "ctr_pct": 0.0,
+      "views_from_impressions": null,
+      "format": "short"
+    },
+    "CnHwX1L9XHg": {
+      "title": "Gallium sat where the table said",
+      "impressions": 11,
+      "ctr_pct": 0.0,
+      "views_from_impressions": null,
+      "format": "short"
+    },
+    "LanTHJckYx8": {
+      "title": "What other table has empty chairs?",
+      "impressions": 19,
+      "ctr_pct": 0.0,
+      "views_from_impressions": null,
+      "format": "short"
+    },
+    "sILtQxgYQk8": {
+      "title": "A flask that proved germs come from outside",
+      "impressions": 17,
+      "ctr_pct": 0.0,
+      "views_from_impressions": null,
+      "format": "short"
+    }
+  },
+  "median_ctr_pct": {
+    "long": 2.3,
+    "short": 1.6
+  },
+  "eligible_1000": [
+    "29bpGAI0wb8"
+  ]
+}
