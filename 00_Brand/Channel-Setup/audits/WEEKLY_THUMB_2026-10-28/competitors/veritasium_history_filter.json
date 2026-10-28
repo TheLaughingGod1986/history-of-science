@@ -1,0 +1,38 @@
+[
+  {
+    "id": "NiCgcUTL9_Q",
+    "include_in_history_long_subset": true,
+    "reason": "Historical transition from copper to glass communications; chapters 2:02, 5:13 and 26:47; description names City of Light: The Story of Fiber Optics.",
+    "source": "https://www.youtube.com/watch?v=NiCgcUTL9_Q"
+  },
+  {
+    "id": "JsBZOcqZerk",
+    "include_in_history_long_subset": true,
+    "reason": "Historical codebreaking; named Enigma inventors, first codebreakers, Alan Turing and Bletchley Park chapters.",
+    "source": "https://www.youtube.com/watch?v=JsBZOcqZerk"
+  },
+  {
+    "id": "eyZEqSPeMwg",
+    "include_in_history_long_subset": false,
+    "reason": "Current atomic-clock experimental physics; Einstein name alone does not establish a history-piece focus.",
+    "source": "https://www.youtube.com/watch?v=eyZEqSPeMwg"
+  },
+  {
+    "id": "wt4p2oalmRY",
+    "include_in_history_long_subset": false,
+    "reason": "Primarily present-day material tests; one historical chapter does not make it a history-led film.",
+    "source": "https://www.youtube.com/watch?v=wt4p2oalmRY"
+  },
+  {
+    "id": "ONAuUyml0yI",
+    "include_in_history_long_subset": false,
+    "reason": "Channel announcement.",
+    "source": "https://www.youtube.com/watch?v=ONAuUyml0yI"
+  },
+  {
+    "id": "J1WoNuemKOg",
+    "include_in_history_long_subset": false,
+    "reason": "Current eclipse filming expedition.",
+    "source": "https://www.youtube.com/watch?v=J1WoNuemKOg"
+  }
+]

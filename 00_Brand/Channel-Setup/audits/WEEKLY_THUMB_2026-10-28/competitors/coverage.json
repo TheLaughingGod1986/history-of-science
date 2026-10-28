@@ -1,0 +1,126 @@
+[
+  {
+    "channel": "veritasium",
+    "tab": "videos",
+    "listing_entries": 200,
+    "capped": true,
+    "detail_oldest_date": "20260530",
+    "detail_newest_date": "20261023",
+    "availability_counts": {
+      "public": 12
+    },
+    "coverage_note": "Fetched exact dates reach before 30 July cutoff; current 200-entry cap covers this window assuming reverse chronological tab ordering. No missing-date failure observed."
+  },
+  {
+    "channel": "veritasium",
+    "tab": "shorts",
+    "listing_entries": 92,
+    "capped": false,
+    "detail_oldest_date": "20210719",
+    "detail_newest_date": "20261027",
+    "availability_counts": {
+      "public": 92
+    },
+    "coverage_note": "Fetched exact dates reach before 30 July cutoff; current 200-entry cap covers this window assuming reverse chronological tab ordering. No missing-date failure observed."
+  },
+  {
+    "channel": "scishow",
+    "tab": "videos",
+    "listing_entries": 200,
+    "capped": true,
+    "detail_oldest_date": "20260529",
+    "detail_newest_date": "20261028",
+    "availability_counts": {
+      "public": 87,
+      "subscriber_only": 2
+    },
+    "coverage_note": "Fetched exact dates reach before 30 July cutoff; current 200-entry cap covers this window assuming reverse chronological tab ordering. No missing-date failure observed."
+  },
+  {
+    "channel": "scishow",
+    "tab": "shorts",
+    "listing_entries": 200,
+    "capped": true,
+    "detail_oldest_date": "20220510",
+    "detail_newest_date": "20260121",
+    "availability_counts": {
+      "public": 200
+    },
+    "coverage_note": "Fetched exact dates reach before 30 July cutoff; current 200-entry cap covers this window assuming reverse chronological tab ordering. No missing-date failure observed."
+  },
+  {
+    "channel": "bigthink",
+    "tab": "videos",
+    "listing_entries": 200,
+    "capped": true,
+    "detail_oldest_date": "20260112",
+    "detail_newest_date": "20261026",
+    "availability_counts": {
+      "public": 31,
+      "subscriber_only": 66
+    },
+    "coverage_note": "Fetched exact dates reach before 30 July cutoff; current 200-entry cap covers this window assuming reverse chronological tab ordering. No missing-date failure observed."
+  },
+  {
+    "channel": "bigthink",
+    "tab": "shorts",
+    "listing_entries": 200,
+    "capped": true,
+    "detail_oldest_date": "20251008",
+    "detail_newest_date": "20261028",
+    "availability_counts": {
+      "public": 199,
+      "needs_auth": 1
+    },
+    "coverage_note": "Fetched exact dates reach before 30 July cutoff; current 200-entry cap covers this window assuming reverse chronological tab ordering. No missing-date failure observed."
+  },
+  {
+    "channel": "realengineering",
+    "tab": "videos",
+    "listing_entries": 200,
+    "capped": true,
+    "detail_oldest_date": "20260606",
+    "detail_newest_date": "20260926",
+    "availability_counts": {
+      "public": 7
+    },
+    "coverage_note": "Fetched exact dates reach before 30 July cutoff; current 200-entry cap covers this window assuming reverse chronological tab ordering. No missing-date failure observed."
+  },
+  {
+    "channel": "realengineering",
+    "tab": "shorts",
+    "listing_entries": 89,
+    "capped": false,
+    "detail_oldest_date": "20210224",
+    "detail_newest_date": "20260702",
+    "availability_counts": {
+      "public": 89
+    },
+    "coverage_note": "Fetched exact dates reach before 30 July cutoff; current 200-entry cap covers this window assuming reverse chronological tab ordering. No missing-date failure observed."
+  },
+  {
+    "channel": "kingsandgenerals",
+    "tab": "videos",
+    "listing_entries": 200,
+    "capped": true,
+    "detail_oldest_date": "20260529",
+    "detail_newest_date": "20261027",
+    "availability_counts": {
+      "public": 64,
+      "subscriber_only": 56
+    },
+    "coverage_note": "Fetched exact dates reach before 30 July cutoff; current 200-entry cap covers this window assuming reverse chronological tab ordering. No missing-date failure observed."
+  },
+  {
+    "channel": "kingsandgenerals",
+    "tab": "shorts",
+    "listing_entries": 200,
+    "capped": true,
+    "detail_oldest_date": "20250623",
+    "detail_newest_date": "20261028",
+    "availability_counts": {
+      "public": 200
+    },
+    "coverage_note": "Fetched exact dates reach before 30 July cutoff; current 200-entry cap covers this window assuming reverse chronological tab ordering. No missing-date failure observed."
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "channel": "RationalThinker118",
+    "format": "videos",
+    "eligible": 4,
+    "coded": 4,
+    "tail_overlap": 4,
+    "coverage": "all returned listings"
+  },
+  {
+    "channel": "RationalThinker118",
+    "format": "shorts",
+    "eligible": 0,
+    "coded": 0,
+    "tail_overlap": 0,
+    "coverage": "all returned listings"
+  },
+  {
+    "channel": "HistoryoftheUniverse",
+    "format": "videos",
+    "eligible": 1,
+    "coded": 1,
+    "tail_overlap": 1,
+    "coverage": "all returned listings"
+  },
+  {
+    "channel": "HistoryoftheUniverse",
+    "format": "shorts",
+    "eligible": 0,
+    "coded": 0,
+    "tail_overlap": 0,
+    "coverage": "all returned listings"
+  },
+  {
+    "channel": "pbsorigins",
+    "format": "videos",
+    "eligible": 3,
+    "coded": 3,
+    "tail_overlap": 3,
+    "coverage": "all returned listings"
+  },
+  {
+    "channel": "pbsorigins",
+    "format": "shorts",
+    "eligible": 6,
+    "coded": 6,
+    "tail_overlap": 6,
+    "coverage": "all returned listings"
+  },
+  {
+    "channel": "crashcourse",
+    "format": "videos",
+    "eligible": 17,
+    "coded": 17,
+    "tail_overlap": 3,
+    "coverage": "200-listing cap; compare oldestFetched with cutoff"
+  },
+  {
+    "channel": "crashcourse",
+    "format": "shorts",
+    "eligible": 5,
+    "coded": 5,
+    "tail_overlap": 5,
+    "coverage": "all returned listings"
+  },
+  {
+    "channel": "HumanProgressOrg",
+    "format": "videos",
+    "eligible": 6,
+    "coded": 6,
+    "tail_overlap": 6,
+    "coverage": "200-listing cap; compare oldestFetched with cutoff"
+  },
+  {
+    "channel": "HumanProgressOrg",
+    "format": "shorts",
+    "eligible": 17,
+    "coded": 17,
+    "tail_overlap": 3,
+    "coverage": "200-listing cap; compare oldestFetched with cutoff"
+  },
+  {
+    "channel": "TEDEd",
+    "format": "videos",
+    "eligible": 21,
+    "coded": 20,
+    "tail_overlap": 0,
+    "coverage": "200-listing cap; compare oldestFetched with cutoff"
+  },
+  {
+    "channel": "TEDEd",
+    "format": "shorts",
+    "eligible": 0,
+    "coded": 0,
+    "tail_overlap": 0,
+    "coverage": "all returned listings"
+  }
+]
