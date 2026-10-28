@@ -6,7 +6,7 @@
 #   00_Brand/Channel-Setup/tools/check_all.sh 009                 # same, by film number
 #
 # Repo-wide: no media staged, contract tests, package-lint on every manifest,
-# status board in sync, ElevenLabs guard tests.
+# status board in sync, ElevenLabs guard tests, voice speed (atempo <= 1.06).
 # With a film folder: also review:script and gate:episode on its script master.
 # Exits non-zero if anything fails; a PR with a red check here will be red in CI.
 set -uo pipefail
@@ -30,6 +30,8 @@ run "no media" test -z "$media"
 run "status board in sync" python3 00_Brand/Channel-Setup/tools/status_board.py --check
 run "ElevenLabs guard tests" python3 04_Audio/tools/test_el_guard.py
 run "vo_check word tests" python3 00_Brand/Channel-Setup/tools/test_vo_check.py
+run "atempo check tests" python3 00_Brand/Channel-Setup/tools/test_atempo_check.py
+run "voice speed (atempo <= 1.06)" python3 00_Brand/Channel-Setup/tools/atempo_check.py
 
 cd "$ROOT/07_Content-Ops"
 run "contract tests" npx vitest run tests/hos-contract.test.ts
