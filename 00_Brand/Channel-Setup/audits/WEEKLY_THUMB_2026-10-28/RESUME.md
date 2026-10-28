@@ -14,4 +14,4 @@ Resume: confirm collector completion and errors; finish 90-day/competitor covera
 
 ## Validation
 
-HOS check_all.sh exit 0: `ALL CHECKS PASS`. Full output: checks.log. Live `npm run channel:audit` exit 1: `58 videos, 4 errors.` All four reported errors are duplicate-live self-comparisons for uU12JA5rMWg, which appears twice in that tool output. The live API inventory here deduplicates IDs and contains it once. This audit does not change the checker or claim the live channel gate passed. Studio-only checklist beyond thumbnail test statuses remains outside this checkpoint.
+HOS check_all.sh exit 0: `ALL CHECKS PASS`. Full output: checks.txt. Live `npm run channel:audit` exit 1: `58 videos, 4 errors.` All four reported errors are duplicate-live self-comparisons for uU12JA5rMWg, which appears twice in that tool output. The live API inventory here deduplicates IDs and contains it once. This audit does not change the checker or claim the live channel gate passed. Studio-only checklist beyond thumbnail test statuses remains outside this checkpoint.
