@@ -1,0 +1,107 @@
+{
+  "views": {
+    "kind": "youtubeAnalytics#resultTable",
+    "columnHeaders": [
+      {
+        "name": "video",
+        "columnType": "DIMENSION",
+        "dataType": "STRING"
+      },
+      {
+        "name": "views",
+        "columnType": "METRIC",
+        "dataType": "INTEGER"
+      }
+    ],
+    "rows": [
+      [
+        "29bpGAI0wb8",
+        1223
+      ],
+      [
+        "qOZgess30h0",
+        168
+      ],
+      [
+        "oKqmnJNGiHg",
+        166
+      ],
+      [
+        "clV6E10NLPw",
+        144
+      ],
+      [
+        "c2q7w0pgcn8",
+        134
+      ],
+      [
+        "TbMMJSRKC3U",
+        57
+      ],
+      [
+        "LCZRHUyTiq0",
+        48
+      ],
+      [
+        "AL_-qlWko_g",
+        45
+      ],
+      [
+        "GHZDsiH7L7A",
+        26
+      ],
+      [
+        "nba0-f7PPeU",
+        8
+      ],
+      [
+        "zI_eD3vFWmE",
+        6
+      ],
+      [
+        "xvanpsLeADE",
+        5
+      ],
+      [
+        "8_Edn_HCi1s",
+        4
+      ],
+      [
+        "uU12JA5rMWg",
+        4
+      ],
+      [
+        "_C92tIJCk8A",
+        3
+      ],
+      [
+        "frP_YrNShsU",
+        3
+      ],
+      [
+        "nFQRWmpulTQ",
+        2
+      ],
+      [
+        "CnHwX1L9XHg",
+        1
+      ],
+      [
+        "H1y0DXFVmw8",
+        1
+      ],
+      [
+        "oowAOWTBoq0",
+        1
+      ]
+    ]
+  },
+  "videoThumbnailImpressions,videoThumbnailImpressionsClickRate": {
+    "http_status": 400,
+    "error": "The query is not supported. Check the documentation at https://developers.google.com/youtube/analytics/v2/available_reports for a list of supported queries."
+  },
+  "impressions,impressionsCtr": {
+    "http_status": 400,
+    "error": "Unknown identifier (impressions) given in field parameters.metrics."
+  }
+}
