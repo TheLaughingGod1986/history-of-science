@@ -15,3 +15,15 @@ Resume: confirm collector completion and errors; finish 90-day/competitor covera
 ## Validation
 
 HOS check_all.sh exit 0: `ALL CHECKS PASS`. Full output: checks.txt. Live `npm run channel:audit` exit 1: `58 videos, 4 errors.` All four reported errors are duplicate-live self-comparisons for uU12JA5rMWg, which appears twice in that tool output. The live API inventory here deduplicates IDs and contains it once. This audit does not change the checker or claim the live channel gate passed. Studio-only checklist beyond thumbnail test statuses remains outside this checkpoint.
+
+## 19:20 UTC continuation — read this before rerunning collectors
+
+The detached collector **finished exit 0**. There is no active render/collector. `competitors/cohorts.json`, `coverage.json`, `thumbnail_manifest.json`, `long_visual_coding.json`, `short_visual_coding.json` and `FINDINGS.md` now hold the five-channel result: 122 hashes verified, 68 long and 54 Short image observations. The 125 nonpublic details were deliberately excluded. See the history filter and overlapping-tail caveats.
+
+The earlier HOS PR370 / commit 64a4c4c3 has been recovered selectively under `recovered/` with provenance: all six search-neighbour cohorts, their image manifest, search evidence, frame-zero manifest, exact-window metrics and relevant Studio text. Do not collect these again. Their contact sheets and images are already under `_desk/J1107/competitors/`. Next: code the six search-neighbour cohorts, verify Short covers/openings and current test setup, then create eligible designs/panel/handoff. Five-step progress stays 1/5; Short coverage prevents calling step 2 complete.
+
+Recovered 28-day engaged views from impressions: Periodic Table 15, Atom 8, Germs 1, X-rays 0. These are supported by saved `studio_*_28days.txt`, not the separate lifetime Reach reads. Shorts unknown. Frame-zero sources: 11 hash matches, 2 mismatches (John Snow, infrared), 19 unavailable; still images alone do not verify motion/VO. Preserve J1113 changes.
+
+Continue the same branches and PRs: HOS PR371 `codex/j1107-hos-thumb-assets`, OWB PR324 `codex/j1107-hos-thumb-audit`. Restored worktrees: `/private/tmp/j1107-hos-wt` and `/private/tmp/j1107-owb-wt`. Do not start another audit branch or duplicate the earlier PRs.
+
+Continuation validation: `check_all.sh` exit 0, `ALL CHECKS PASS`; full output in HOS `checks_continuation.txt`. Initial sandbox npm-cache failure was resolved by using the existing checkout dependencies and a writable temporary cache, with no dependency change. All 122 selected IDs have visual records and matching image hashes; git diff whitespace check is clean. No new live Studio session occurred in this continuation.

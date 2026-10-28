@@ -1,0 +1,1 @@
+Recovered without alteration from HOS commit 64a4c4c3 (PR370), path 05_Analytics/weekly_thumb_audit/2026-10-28/. These earlier J1107 assets supplement PR371; do not recollect them. Source metrics may include evidence absent from the second checkpoint.
