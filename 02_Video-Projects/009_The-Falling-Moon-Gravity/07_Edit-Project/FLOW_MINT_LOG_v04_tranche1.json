@@ -1,0 +1,97 @@
+{
+  "job": "J1192",
+  "film": "009",
+  "board_version": "v04",
+  "tranche": 1,
+  "engine": "flow-cdp-9222",
+  "expected_credits": 7354,
+  "cap": 7585,
+  "buffer": 3000,
+  "takes": {
+    "01_moon_falling": {
+      "plate": "01_moon_falling",
+      "part": "01",
+      "tranche": 1,
+      "take": 1,
+      "model": "Veo 3.1 - Quality",
+      "quality": "Quality",
+      "start_frame": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part01/refs/v04_flow_stills/01_moon_falling_t1.png",
+      "start_frame_sha256": "6f398a9f3150514cfe1176b15016d89da29563ad6b3ed6e2f118309a14d3d41d",
+      "credits_before": 18550,
+      "status": "KEEP",
+      "submitted_at": "2026-10-29T18:09:47+00:00",
+      "project_url": "https://flow.google.com/project/d7bceb4d-ec9b-4e01-8d9a-33fdd7c34ef9",
+      "uat_note": "KEEP vs v04 board, sources and period look (3D cartoon house look, continuous motion, no readable text)",
+      "file": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part01/raw/v01/01_moon_falling_t1.mp4",
+      "sha256": "3e0774a7dd510b5ee32358c188f5efe4903aaf45aafab8870df662bcc1cd4c1f",
+      "duration_s": 8.0,
+      "uat_sheet": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part01/uat/01_moon_falling_t1_sheet.jpg",
+      "motion": {
+        "freeze_events_0p8s": 0
+      },
+      "credits_after": 18450,
+      "credits_used": 100,
+      "credits_ui_drop": 100,
+      "account": "benoats@googlemail.com",
+      "at": "2026-10-29T18:12:06+00:00"
+    },
+    "02_apple_and_moon": {
+      "plate": "02_apple_and_moon",
+      "part": "01",
+      "tranche": 1,
+      "take": 1,
+      "model": "Veo 3.1 - Quality",
+      "quality": "Quality",
+      "start_frame": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part01/refs/v04_flow_stills/02_apple_and_moon_t1.png",
+      "start_frame_sha256": "b020e4e9917eccd56e3760aa35e1a884101df0eb1974347d3a5860ea8676ce96",
+      "credits_before": 18450,
+      "status": "KEEP",
+      "submitted_at": "2026-10-29T18:13:07+00:00",
+      "project_url": "https://flow.google.com/project/2d29af59-98b7-43b4-a491-adfb91715985",
+      "uat_note": "KEEP vs v04 board, sources and period look (3D cartoon house look, continuous motion, no readable text)",
+      "file": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part01/raw/v01/02_apple_and_moon_t1.mp4",
+      "sha256": "bc3ad225b09a2fc090c4cbe694eb3aeeb0cf5999cd6c6d6262be81a1adcc90e6",
+      "duration_s": 7.917,
+      "uat_sheet": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part01/uat/02_apple_and_moon_t1_sheet.jpg",
+      "motion": {
+        "freeze_events_0p8s": 0
+      },
+      "credits_after": 18350,
+      "credits_used": 100,
+      "credits_ui_drop": 100,
+      "account": "benoats@googlemail.com",
+      "at": "2026-10-29T18:15:48+00:00"
+    },
+    "03_table_three": {
+      "plate": "03_table_three",
+      "part": "01",
+      "tranche": 1,
+      "take": 1,
+      "model": "Veo 3.1 - Fast",
+      "quality": "Fast",
+      "start_frame": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part01/refs/v04_flow_stills/03_table_three_t1.png",
+      "start_frame_sha256": "4e9e38f95ef850fcaa7a144485a7a13e70ca2a0d349f010ffe367629300757cf",
+      "credits_before": 18350,
+      "status": "SUBMITTING",
+      "submitted_at": "2026-10-29T18:18:48+00:00"
+    }
+  },
+  "balance_reads": [
+    {
+      "at": "2026-10-29T18:08:46+00:00",
+      "credits": 18550,
+      "when": "batch-start-p01"
+    },
+    {
+      "at": "2026-10-29T18:12:06+00:00",
+      "credits": 18450,
+      "after": "01_moon_falling"
+    },
+    {
+      "at": "2026-10-29T18:15:48+00:00",
+      "credits": 18350,
+      "after": "02_apple_and_moon"
+    }
+  ],
+  "updated": "2026-10-29T18:18:48+00:00"
+}
