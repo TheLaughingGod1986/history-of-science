@@ -121,6 +121,7 @@ def ordered_rows(rows: list[dict], priority_only: bool = False) -> list[dict]:
 def log_paths() -> list[Path]:
     return [
         MEDIA / "07_Edit-Project/FLOW_MINT_LOG_v03.json",
+        REPO_EDIT / "FLOW_MINT_LOG_v03.json",
     ]
 
 
@@ -533,9 +534,93 @@ def main() -> int:
                 pass
         return credits, account
 
+    def _safe_attach_image_to_prompt(page, ref: Path) -> bool:
+        ref = Path(ref).resolve()
+        if not ref.exists():
+            raise FileNotFoundError(ref)
+        print(f"  attaching start frame: {ref.name}", flush=True)
+        for _ in range(2):
+            try:
+                page.keyboard.press("Escape")
+                page.wait_for_timeout(150)
+            except Exception:
+                pass
+        opened = page.evaluate(
+            """() => {
+              for (const b of document.querySelectorAll('button')) {
+                const r = b.getBoundingClientRect();
+                if (r.width < 20 || r.height < 16 || r.y < 350) continue;
+                const t = (b.innerText || '').trim();
+                const aria = (b.getAttribute('aria-label') || '').trim();
+                if (t === 'Start' || /Add ingredients/i.test(aria) || t === 'add_2' || t === 'add') {
+                  b.click();
+                  return t || aria;
+                }
+              }
+              return null;
+            }"""
+        )
+        print(f"  opened start-frame picker via {opened!r}", flush=True)
+        page.wait_for_timeout(900)
+        up = page.locator('button:has-text("Upload media"), button:has-text("Upload")').last
+        with page.expect_file_chooser(timeout=15_000) as fc:
+            up.click()
+        fc.value.set_files(str(ref))
+        print("  uploaded — waiting for Add to prompt…", flush=True)
+        t0 = time.time()
+        while time.time() - t0 < 60:
+            page.evaluate(
+                """() => {
+                  for (const b of document.querySelectorAll('button')) {
+                    const r = b.getBoundingClientRect();
+                    if (r.width < 20 || r.height < 16) continue;
+                    const t = (b.innerText || '').trim();
+                    if (/^I agree$/i.test(t)) b.click();
+                  }
+                }"""
+            )
+            ready = page.evaluate(
+                """(fname) => {
+                  const btns = [...document.querySelectorAll('button')].filter(b => {
+                    const r = b.getBoundingClientRect();
+                    return r.width > 20 && r.height > 16 && /^Add to prompt$/i.test((b.innerText || '').trim());
+                  });
+                  if (!btns.length) return {found: false};
+                  const b = btns[btns.length - 1];
+                  const disabled = b.disabled || b.getAttribute('aria-disabled') === 'true' || /disabled/i.test(b.className || '');
+                  if (disabled) {
+                    for (const el of document.querySelectorAll('button.asset-item, button[role="option"]')) {
+                      const r = el.getBoundingClientRect();
+                      if (r.width > 20 && r.height > 16 && (el.innerText || '').toLowerCase().includes(fname.toLowerCase())) {
+                        el.click();
+                        break;
+                      }
+                    }
+                  }
+                  return {found: true, disabled};
+                }""",
+                ref.name,
+            )
+            if ready.get("found") and not ready.get("disabled"):
+                break
+            page.wait_for_timeout(1000)
+        add_btn = page.locator('button:has-text("Add to prompt")').last
+        add_btn.click(timeout=5000)
+        page.wait_for_timeout(1500)
+        attached = (
+            page.locator('img[alt="Ingredient image"]').count() > 0
+            or flow._start_frame_present(page)
+            or flow._prompt_attachment_count(page) > 0
+        )
+        print(f"  start frame attached={attached}", flush=True)
+        if not attached:
+            raise RuntimeError(f"Start frame {ref.name} did not attach after Add to prompt")
+        return True
+
     mint006._orig_read_account = mint006.read_account
     mint006.read_account = _safe_read_account
     flow._set_video_aspect_and_outputs = _safe_set_video_aspect_and_outputs
+    flow.attach_image_to_prompt = _safe_attach_image_to_prompt
     still.select_image_16x9 = _safe_select_image_16x9
 
     all_rows = boards()
