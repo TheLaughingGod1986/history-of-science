@@ -1,6 +1,6 @@
 # HOS status board
 
-**As of Thu 29 Oct 2026**, updated by gemini (J1191). Generated from `00_Brand/Channel-Setup/PIPELINE.json` by `00_Brand/Channel-Setup/tools/status_board.py`. Don't edit this file by hand.
+**As of Thu 29 Oct 2026**, updated by gemini (J1192). Generated from `00_Brand/Channel-Setup/PIPELINE.json` by `00_Brand/Channel-Setup/tools/status_board.py`. Don't edit this file by hand.
 
 **Kanban board (live):** https://claude.ai/artifact/Hhk519dkbHMzeaZfp3efhc — reads this same file from `main` every 5 minutes. The first time you open it, allow GitHub when it asks.
 
@@ -13,7 +13,7 @@
 | **006** The Willow Tree That Was Made of Air | Thu 5 Nov (7 d) | 100% | all stages done | — | — | Sun 1 Nov (in 3 d) | 🟢 on track |
 | **007** Why Vaccines Are Named After a Cow | Thu 12 Nov (14 d) | 100% | all stages done | — | — | Sun 8 Nov (in 10 d) | 🟢 on track |
 | **008** Why Did Franklin Fly a Kite in a Storm? | Thu 19 Nov (21 d) | 75% | Picture (in progress) | **Gemini** · ⏸ waiting: Chief picture PASS (J1191 + J0329) | 112/112 board rows rendered (11 code graphics + 101/101 Flow plates KEEP) | Sun 15 Nov (in 17 d) | 🟢 on track |
-| **009** Why Doesn't the Moon Fall to Earth? | Thu 26 Nov (28 d) | 35% | Shorts voiceover (to do) | **Cursor** · queued (after 010 long VO) | starts later; due 21 d late | Sun 22 Nov (in 24 d) | ⛔ blocked |
+| **009** Why Doesn't the Moon Fall to Earth? | Thu 26 Nov (28 d) | 62% | Shorts voiceover (to do) | **Cursor** · queued (after 010 long VO) | starts later; due 21 d late | Sun 22 Nov (in 24 d) | 🟠 behind |
 | **010** What Killed the Dinosaurs Was Hidden in a Line of Clay | Thu 3 Dec (35 d) | 35% | Shorts voiceover (to do) | **Cursor** · queued (after 010 long VO) | starts later; due 21 d late | Sun 29 Nov (in 31 d) | 🟠 behind |
 
 ## Who's on what
@@ -31,7 +31,7 @@
 
 **Cursor**
 - ▶️ Underway: nothing right now
-- ⏸ Waiting: 004 Thumbnails: J0106: C v07b file (don't touch the armed test), then the Chief's OK; 009 Picture: mint after 006 (0 Flow), 007 and 008; tranche 1 only when a live Flow read stays at least 3,000 after 7,354; tranche 2 (5,180) after the ~12 Nov AI Ultra renewal
+- ⏸ Waiting: 004 Thumbnails: J0106: C v07b file (don't touch the armed test), then the Chief's OK
 - ⏭ Next up: 009 Shorts voiceover, due Thu 8 Oct; 010 Shorts voiceover, due Thu 8 Oct
 
 **Chief**
@@ -39,13 +39,13 @@
 
 **Gemini**
 - ▶️ Underway: nothing right now
-- ⏸ Waiting: 008 Picture: Chief picture PASS (J1191 + J0329)
+- ⏸ Waiting: 008 Picture: Chief picture PASS (J1191 + J0329); 009 Picture: Chief tranche 1 PASS (J1192); tranche 2 (20 Quality rows, 5,180 expected) after the ~12 Nov AI Ultra renewal
 
 ## Being worked on right now
 
 - **004** · 🔄 **Thumbnails** — in progress (0%, with Cursor since Fri 9 Oct, ⏸ waiting: J0106: C v07b file (don't touch the armed test), then the Chief's OK, due Tue 13 Oct (16 d late)): A + B live in the armed test; C v07 armed but not OK'd. v07b re-letter (no spend) is J0106; Chief's OK by Wed 14 Oct 18:00, else pair 2 comes out
 - **008** · 🔄 **Picture** — in progress (100%, 112/112 board rows rendered (11 code graphics + 101/101 Flow plates KEEP), with Gemini since Fri 16 Oct, ⏸ waiting: Chief picture PASS (J1191 + J0329), due Sun 8 Nov (in 10 d)): J1191 complete (parked for Chief picture PASS): all 101/101 Flow v03 rows minted and KEEP (6/6 priority overlay moving plates + Part 01 22/22 + Part 02 17/17 + Part 03 25/25 + Part 04 16/16 + Part 05 21/21; 15 Quality + 86 Fast = 2,320 cr used vs 5,605 expected / 6,500 cap; live Flow 20,870 -> 18,550 >= 3,000 buffer) + 11 £0 code graphics (J0329). Synced to NAS.
-- **009** · ⛔ **Picture** — blocked (0%, with Cursor since Thu 15 Oct, ⛔ blocked: mint after 006 (0 Flow), 007 and 008; tranche 1 only when a live Flow read stays at least 3,000 after 7,354; tranche 2 (5,180) after the ~12 Nov AI Ultra renewal, due Sun 15 Nov (in 17 d)): J0336 v04 plate boards KEEP (Chief PASS 15 Oct): 90 rows (46 Quality / 31 Fast / 12 £0 code graphics / 1 reuse); Flow expected 12,534 (tranche 1 7,354 / tranche 2 5,180). No mint. See PRICE_REVIEW_v04.md.
+- **009** · 🔄 **Picture** — in progress (78%, 70/90 board rows rendered (12 code graphics + 57/57 tranche-1 Flow plates KEEP + 1 reuse; 20 tranche-2 wait ~12 Nov), with Gemini since Thu 15 Oct, ⏸ waiting: Chief tranche 1 PASS (J1192); tranche 2 (20 Quality rows, 5,180 expected) after the ~12 Nov AI Ultra renewal, due Sun 15 Nov (in 17 d)): J1192 tranche 1 complete (parked for Chief tranche 1 PASS): all 57/57 tranche-1 Flow v04 rows minted and KEEP (Part 01 12/12 + Part 02 10/10 + Part 03 7/7 + Part 04 13/13 + Part 05 15/15, including 8 UAT retakes; 26 Quality + 31 Fast = 3,170 cr used vs 7,354 expected / 7,585 cap; live Flow 18,550 -> 15,380 >= 3,000 buffer) + 12 £0 code graphics (J0342/J0383) + 1 reuse = 70/90 rows. Synced to NAS.
 
 ## Next steps (in order)
 
@@ -67,7 +67,7 @@
 |---|---|---|---|
 | ElevenLabs (voice) | 18,653 of 209,536 | voice and both channels' music (one account); resets Fri 30 Oct; eleven_v3 bills about 0.47 credits per char. Until the reset (Chief, 9 Oct): HOS voice first, in queue order: 007 Shorts B + C (J0109, ~700 credits), 009 long (J0111, ~3,400), 010 long (J0113, ~3,500). Each VO job reads the balance first and spends nothing if it's below what it needs. No music bed (OWB or HOS) without the Chief's OK. | 9 Oct |
 | Vertex free trial (picture) | about £4.25 projected after 006 Part 03 (16 takes about £11.86; last console reading £16.11 at 10 Oct 22:03Z, console lags) | free trial, use it before it ends 10 Nov; spend down to £0, no £5 floor (Ben, 10 Oct 22:50); never onto real money or the card. 006 Part 03 is done (J0107). Each job reads the live Free Trial balance first; a job needing more than is left goes to Ben. | 10 Oct |
-| Flow (picture) | 18,550 (read 29 Oct 17:22Z after J1191 P5:22_newton_handoff_c1 Fast 10 cr; all 101/101 Flow rows of 008 minted for 2,320 cr vs 6,500 cap) | Flow first for picture; AI Ultra active (renewed 12 Oct). Floor 0 (3,000 buffer on 008): never buy credits, top up or spill into billing. | 29 Oct |
+| Flow (picture) | 15,380 (read 29 Oct 23:06Z after J1192 P05:08_cup_and_planets_c1 Fast retake 10 cr; all 57/57 tranche-1 Flow rows of 009 minted for 3,170 cr vs 7,354 expected / 7,585 cap) | Flow first for picture; AI Ultra active (renewed 12 Oct). Floor 0 (3,000 buffer on 009 tranche 1): never buy credits, top up or spill into billing. | 29 Oct |
 
 ## Film by film
 
@@ -178,11 +178,11 @@ Long VO (9:14.8) + Shorts VO (v02 pair) locked. All 101/101 Flow rows of boards 
 
 ### 009 · Why Doesn't the Moon Fall to Earth?
 
-`███████░░░░░░░░░░░░░` **35%**
+`████████████░░░░░░░░` **62%**
 
-Airs **Thu 26 Nov** · ready for Ben's OK by **Sun 22 Nov** · ⛔ blocked
+Airs **Thu 26 Nov** · ready for Ben's OK by **Sun 22 Nov** · 🟠 behind
 
-Long VO v01 locked (Chief KEEP, desk 6101629662). Plate boards v04 KEEP (Chief PASS 15 Oct, J0335): 90 rows, 46 Quality / 31 Fast / 12 £0 code graphics / 1 reuse. Flow expected 12,534 (tranche 1 7,354, tranche 2 5,180). No mint until after 006, 007 and 008.
+Long VO v01 locked (Chief KEEP, desk 6101629662). Plate boards v04 KEEP (Chief PASS 15 Oct, J0335): 90 rows, 46 Quality / 31 Fast / 12 £0 code graphics / 1 reuse. Tranche 1 complete: all 57/57 Flow rows (26 Quality + 31 Fast) minted and KEEP (J1192, 29 Oct: 3,170 cr vs 7,354 expected / 7,585 cap; live Flow 15,380 >= 3,000 buffer) + 12 £0 code graphics (J0342/J0383) + 1 reuse = 70/90 rows. Synced to NAS. Parked for Chief tranche 1 PASS; tranche 2 (20 Quality rows, 5,180 expected) waits for ~12 Nov renewal.
 
 - ✅ **Topic** — done
 - ✅ **Script** — done: v01, 91.3
@@ -191,7 +191,7 @@ Long VO v01 locked (Chief KEEP, desk 6101629662). Plate boards v04 KEEP (Chief P
 - ✅ **Voiceover (long)** — done: long VO locked 11 Oct: 5 parts v01, 508 s speech; Chief KEEP all five, no pickups (VO_TAKES_KEEP.json, desk 6101629662)
 - ✅ **Shorts scripts** — done: v02 (test B): two search-titled Shorts, 9 Oct
 - ⬜ **Shorts voiceover** — to do (with Cursor, due Thu 8 Oct (21 d late))
-- ⛔ **Picture** — blocked (0%, with Cursor since Thu 15 Oct, ⛔ blocked: mint after 006 (0 Flow), 007 and 008; tranche 1 only when a live Flow read stays at least 3,000 after 7,354; tranche 2 (5,180) after the ~12 Nov AI Ultra renewal, due Sun 15 Nov (in 17 d)): J0336 v04 plate boards KEEP (Chief PASS 15 Oct): 90 rows (46 Quality / 31 Fast / 12 £0 code graphics / 1 reuse); Flow expected 12,534 (tranche 1 7,354 / tranche 2 5,180). No mint. See PRICE_REVIEW_v04.md.
+- 🔄 **Picture** — in progress (78%, 70/90 board rows rendered (12 code graphics + 57/57 tranche-1 Flow plates KEEP + 1 reuse; 20 tranche-2 wait ~12 Nov), with Gemini since Thu 15 Oct, ⏸ waiting: Chief tranche 1 PASS (J1192); tranche 2 (20 Quality rows, 5,180 expected) after the ~12 Nov AI Ultra renewal, due Sun 15 Nov (in 17 d)): J1192 tranche 1 complete (parked for Chief tranche 1 PASS): all 57/57 tranche-1 Flow v04 rows minted and KEEP (Part 01 12/12 + Part 02 10/10 + Part 03 7/7 + Part 04 13/13 + Part 05 15/15, including 8 UAT retakes; 26 Quality + 31 Fast = 3,170 cr used vs 7,354 expected / 7,585 cap; live Flow 18,550 -> 15,380 >= 3,000 buffer) + 12 £0 code graphics (J0342/J0383) + 1 reuse = 70/90 rows. Synced to NAS.
 - ⬜ **Edit + master** — to do (with Grok, due Thu 19 Nov (in 21 d))
 - ⬜ **Thumbnails** — to do (with Grok, due Thu 19 Nov (in 21 d))
 - ⬜ **Ben's final OK** — to do (with Ben, due Sun 22 Nov (in 24 d))
