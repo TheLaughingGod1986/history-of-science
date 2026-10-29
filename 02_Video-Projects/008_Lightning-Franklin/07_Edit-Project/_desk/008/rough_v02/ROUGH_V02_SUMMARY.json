@@ -1,0 +1,305 @@
+{
+  "film": "008_Lightning-Franklin",
+  "job": "J1218",
+  "version": "rough_v02",
+  "mp4": "/Volumes/data/mac-mini-archive/tmp-render-scratch/j1218-hos008-rough-v02/full_join_v01/hos_008_rough_v02.mp4",
+  "sha256": "edebeaf7e71d29051135859d7ad7e87bb4ee73d7e52a37b8251ccfb951dcad06",
+  "duration_s": 540.021,
+  "rows": 112,
+  "polish_gate": {
+    "verdict": "PASS",
+    "failed": 0,
+    "warn": 6
+  },
+  "picture_qa": {
+    "verdict": "PASS",
+    "failed": 0,
+    "warn_note": "see picture_qa_rough_v02.txt"
+  },
+  "music_gate": {
+    "status": "SKIPPED_NO_BED",
+    "note": "NOT PASS \u2014 Chief OK / credit for bed still required"
+  },
+  "j1193": "still open \u2014 required for final graphics PASS",
+  "pause_trim": {
+    "trimmed_s": 17.493,
+    "duration_in": 557.814,
+    "duration_out": 540.021,
+    "under_9min": true,
+    "method": "reuse_trimmed",
+    "source": "/Volumes/data/mac-mini-archive/tmp-render-scratch/j1218-hos008-rough-v02/full_join_v01/hos_008_rough_v02.mp4",
+    "cuts": [
+      {
+        "from": 9.388,
+        "to": 9.884
+      },
+      {
+        "from": 18.111,
+        "to": 18.934
+      },
+      {
+        "from": 32.269,
+        "to": 32.99
+      },
+      {
+        "from": 53.311,
+        "to": 53.744
+      },
+      {
+        "from": 66.947,
+        "to": 67.852
+      },
+      {
+        "from": 87.062,
+        "to": 87.573
+      },
+      {
+        "from": 95.283,
+        "to": 96.018
+      },
+      {
+        "from": 118.269,
+        "to": 118.652
+      },
+      {
+        "from": 125.711,
+        "to": 126.091
+      },
+      {
+        "from": 132.896,
+        "to": 133.353
+      },
+      {
+        "from": 148.169,
+        "to": 148.654
+      },
+      {
+        "from": 160.036,
+        "to": 160.52
+      },
+      {
+        "from": 179.625,
+        "to": 180.167
+      },
+      {
+        "from": 191.324,
+        "to": 192.142
+      },
+      {
+        "from": 236.112,
+        "to": 236.524
+      },
+      {
+        "from": 252.696,
+        "to": 253.24
+      },
+      {
+        "from": 272.086,
+        "to": 272.569
+      },
+      {
+        "from": 280.145,
+        "to": 280.573
+      },
+      {
+        "from": 298.376,
+        "to": 298.85
+      },
+      {
+        "from": 306.512,
+        "to": 307.117
+      },
+      {
+        "from": 319.084,
+        "to": 319.701
+      },
+      {
+        "from": 322.862,
+        "to": 323.414
+      },
+      {
+        "from": 335.638,
+        "to": 336.169
+      },
+      {
+        "from": 344.435,
+        "to": 345.182
+      },
+      {
+        "from": 351.871,
+        "to": 352.657
+      },
+      {
+        "from": 363.385,
+        "to": 364.031
+      },
+      {
+        "from": 382.472,
+        "to": 383.107
+      },
+      {
+        "from": 398.045,
+        "to": 398.828
+      },
+      {
+        "from": 412.413,
+        "to": 412.908
+      },
+      {
+        "from": 485.794,
+        "to": 486.254
+      },
+      {
+        "from": 546.145,
+        "to": 546.607
+      },
+      {
+        "from": 557.049,
+        "to": 557.514
+      }
+    ],
+    "prior_cuts": [
+      {
+        "from": 9.388,
+        "to": 9.884
+      },
+      {
+        "from": 18.111,
+        "to": 18.934
+      },
+      {
+        "from": 32.269,
+        "to": 32.99
+      },
+      {
+        "from": 53.311,
+        "to": 53.744
+      },
+      {
+        "from": 66.947,
+        "to": 67.852
+      },
+      {
+        "from": 87.062,
+        "to": 87.573
+      },
+      {
+        "from": 95.283,
+        "to": 96.018
+      },
+      {
+        "from": 118.269,
+        "to": 118.652
+      },
+      {
+        "from": 125.711,
+        "to": 126.091
+      },
+      {
+        "from": 132.896,
+        "to": 133.353
+      },
+      {
+        "from": 148.169,
+        "to": 148.654
+      },
+      {
+        "from": 160.036,
+        "to": 160.52
+      },
+      {
+        "from": 179.625,
+        "to": 180.167
+      },
+      {
+        "from": 191.324,
+        "to": 192.142
+      },
+      {
+        "from": 236.112,
+        "to": 236.524
+      },
+      {
+        "from": 252.696,
+        "to": 253.24
+      },
+      {
+        "from": 272.086,
+        "to": 272.569
+      },
+      {
+        "from": 280.145,
+        "to": 280.573
+      },
+      {
+        "from": 298.376,
+        "to": 298.85
+      },
+      {
+        "from": 306.512,
+        "to": 307.117
+      },
+      {
+        "from": 319.084,
+        "to": 319.701
+      },
+      {
+        "from": 322.862,
+        "to": 323.414
+      },
+      {
+        "from": 335.638,
+        "to": 336.169
+      },
+      {
+        "from": 344.435,
+        "to": 345.182
+      },
+      {
+        "from": 351.871,
+        "to": 352.657
+      },
+      {
+        "from": 363.385,
+        "to": 364.031
+      },
+      {
+        "from": 382.472,
+        "to": 383.107
+      },
+      {
+        "from": 398.045,
+        "to": 398.828
+      },
+      {
+        "from": 412.413,
+        "to": 412.908
+      },
+      {
+        "from": 485.794,
+        "to": 486.254
+      },
+      {
+        "from": 546.145,
+        "to": 546.607
+      },
+      {
+        "from": 557.049,
+        "to": 557.514
+      }
+    ]
+  },
+  "v01_preserved": true,
+  "repairs": [
+    "06_same_thing sequential",
+    "10_metal_easy full-frame CG",
+    "09_window_storm left-5pct reframe",
+    "\u00a74 pause trim \u22649:00",
+    "cuts remapped through pause-trim"
+  ],
+  "gates_method": "local /private/tmp/j1218_gates then sync",
+  "delivered_pending": [
+    "desk",
+    "nas"
+  ]
+}
