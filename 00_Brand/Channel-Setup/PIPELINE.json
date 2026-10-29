@@ -510,13 +510,18 @@
           "waiting": "after 010 long VO"
         },
         "picture": {
-          "status": "blocked",
+          "status": "doing",
           "due": "2026-11-15",
-          "owner": "Cursor",
-          "note": "J0336 v04 plate boards KEEP (Chief PASS 15 Oct): 90 rows (46 Quality / 31 Fast / 12 \u00a30 code graphics / 1 reuse); Flow expected 12,534 (tranche 1 7,354 / tranche 2 5,180). No mint. See PRICE_REVIEW_v04.md.",
+          "owner": "gemini",
+          "note": "J1192 tranche 1 in progress: Parts 01-02 complete (22/57 KEEP, 1,490 cr spent, live Flow 17,060); Parts 03-05 (35 rows) next.",
           "since": "2026-10-15",
-          "underway": false,
-          "waiting": "mint after 006 (0 Flow), 007 and 008; tranche 1 only when a live Flow read stays at least 3,000 after 7,354; tranche 2 (5,180) after the ~12 Nov AI Ultra renewal"
+          "underway": true,
+          "waiting": "mint after 006 (0 Flow), 007 and 008; tranche 1 only when a live Flow read stays at least 3,000 after 7,354; tranche 2 (5,180) after the ~12 Nov AI Ultra renewal",
+          "steps": [
+            22,
+            57
+          ],
+          "steps_unit": "tranche-1 Flow rows KEEP"
         },
         "edit": {
           "status": "todo",

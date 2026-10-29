@@ -332,6 +332,286 @@
       "credits_ui_drop": 10,
       "account": "benoats@googlemail.com",
       "at": "2026-10-29T18:51:20+00:00"
+    },
+    "01_cambridge_closes": {
+      "plate": "01_cambridge_closes",
+      "part": "02",
+      "tranche": 1,
+      "take": 1,
+      "prior_credits_used": 0,
+      "model": "Veo 3.1 - Quality",
+      "quality": "Quality",
+      "start_frame": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part02/refs/v04_flow_stills/01_cambridge_closes_t1.png",
+      "start_frame_sha256": "b9fb5740369e790e64d5880df7dd2a2ddf695cb3ed196652ec0c2b3d62874254",
+      "credits_before": 18060,
+      "status": "KEEP",
+      "submitted_at": "2026-10-29T18:59:11+00:00",
+      "project_url": "https://flow.google.com/project/e3de3348-d047-4ebe-8687-6108bb299b37",
+      "uat_note": "KEEP vs v04 board, sources and period look (3D cartoon house look, continuous motion, no readable text)",
+      "file": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part02/raw/v01/01_cambridge_closes_t1.mp4",
+      "sha256": "c9291ef78bb4e558e66c9eae83a63e3652a9fab4391b100a9ba46da5f76df2d7",
+      "duration_s": 8.0,
+      "uat_sheet": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part02/uat/01_cambridge_closes_t1_sheet.jpg",
+      "motion": {
+        "freeze_events_0p8s": 0
+      },
+      "credits_after": 17960,
+      "credits_used": 100,
+      "credits_ui_drop": 100,
+      "account": "benoats@googlemail.com",
+      "at": "2026-10-29T19:01:30+00:00"
+    },
+    "02_newton_arrives": {
+      "plate": "02_newton_arrives",
+      "part": "02",
+      "tranche": 1,
+      "take": 1,
+      "prior_credits_used": 0,
+      "model": "Veo 3.1 - Quality",
+      "quality": "Quality",
+      "start_frame": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part02/refs/v04_flow_stills/02_newton_arrives_t1.png",
+      "start_frame_sha256": "bdfdf3484e8194be1b89c1607aecbdac0e526f2165f750fe240de09e9960d0ea",
+      "credits_before": 17960,
+      "status": "KEEP",
+      "submitted_at": "2026-10-29T19:02:29+00:00",
+      "project_url": "https://flow.google.com/project/bbc3aa96-77de-46e6-a1e2-5a737e684fc5",
+      "uat_note": "KEEP vs v04 board, sources and period look (3D cartoon house look, continuous motion, no readable text)",
+      "file": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part02/raw/v01/02_newton_arrives_t1.mp4",
+      "sha256": "fab0fcef3433cb47c80d0b70cf810e295e17bebbd6720e2ac1a0580edf79fa01",
+      "duration_s": 8.0,
+      "uat_sheet": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part02/uat/02_newton_arrives_t1_sheet.jpg",
+      "motion": {
+        "freeze_events_0p8s": 0
+      },
+      "credits_after": 17860,
+      "credits_used": 100,
+      "credits_ui_drop": 100,
+      "account": "benoats@googlemail.com",
+      "at": "2026-10-29T19:05:11+00:00"
+    },
+    "03_christmas_birth": {
+      "plate": "03_christmas_birth",
+      "part": "02",
+      "tranche": 1,
+      "take": 1,
+      "prior_credits_used": 0,
+      "model": "Veo 3.1 - Quality",
+      "quality": "Quality",
+      "start_frame": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part02/refs/v04_flow_stills/03_christmas_birth_t1.png",
+      "start_frame_sha256": "1cea5ab9cf9ea74097ac2e2e2e1200bd4f6265fbf44eb85cff2f804816c70831",
+      "credits_before": 17860,
+      "status": "KEEP",
+      "submitted_at": "2026-10-29T19:06:11+00:00",
+      "project_url": "https://flow.google.com/project/0baca708-feb5-4346-bcf3-1e54b1dd3dcd",
+      "uat_note": "KEEP vs v04 board, sources and period look (3D cartoon house look, continuous motion, no readable text)",
+      "file": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part02/raw/v01/03_christmas_birth_t1.mp4",
+      "sha256": "8138cc652f00e611b61bad54e119cf816befa4e2361c0a38f101e97bdd190cca",
+      "duration_s": 8.0,
+      "uat_sheet": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part02/uat/03_christmas_birth_t1_sheet.jpg",
+      "motion": {
+        "freeze_events_0p8s": 0
+      },
+      "credits_after": 17760,
+      "credits_used": 100,
+      "credits_ui_drop": 100,
+      "account": "benoats@googlemail.com",
+      "at": "2026-10-29T19:08:33+00:00"
+    },
+    "04_quart_pot": {
+      "plate": "04_quart_pot",
+      "part": "02",
+      "tranche": 1,
+      "take": 1,
+      "prior_credits_used": 0,
+      "model": "Veo 3.1 - Quality",
+      "quality": "Quality",
+      "start_frame": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part02/refs/v04_flow_stills/04_quart_pot_t1.png",
+      "start_frame_sha256": "63b27502a75bef00b12c6a6570b871f93aa4f00562ea074e3b47e38c7b64eca6",
+      "credits_before": 17760,
+      "status": "KEEP",
+      "submitted_at": "2026-10-29T19:09:33+00:00",
+      "project_url": "https://flow.google.com/project/36324cf0-57de-49a8-b6dd-aba9459f3638",
+      "uat_note": "KEEP vs v04 board, sources and period look (3D cartoon house look, continuous motion, no readable text)",
+      "file": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part02/raw/v01/04_quart_pot_t1.mp4",
+      "sha256": "b455b600565bb4c7946e1554a0cd9babfbb32bc20648f80a0deadaa73e4252b7",
+      "duration_s": 8.0,
+      "uat_sheet": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part02/uat/04_quart_pot_t1_sheet.jpg",
+      "motion": {
+        "freeze_events_0p8s": 0
+      },
+      "credits_after": 17660,
+      "credits_used": 100,
+      "credits_ui_drop": 100,
+      "account": "benoats@googlemail.com",
+      "at": "2026-10-29T19:11:49+00:00"
+    },
+    "05_working_alone": {
+      "plate": "05_working_alone",
+      "part": "02",
+      "tranche": 1,
+      "take": 1,
+      "prior_credits_used": 0,
+      "model": "Veo 3.1 - Quality",
+      "quality": "Quality",
+      "start_frame": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part02/refs/v04_flow_stills/05_working_alone_t1.png",
+      "start_frame_sha256": "561fb4001195800c97f16b6c6c77c60f0d96da11321aab5e5eacd0bbf848eafc",
+      "credits_before": 17660,
+      "status": "KEEP",
+      "submitted_at": "2026-10-29T19:12:49+00:00",
+      "project_url": "https://flow.google.com/project/6f54e8c1-db18-4d0c-9488-cd07fe5d5031",
+      "uat_note": "KEEP vs v04 board, sources and period look (3D cartoon house look, continuous motion, no readable text)",
+      "file": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part02/raw/v01/05_working_alone_t1.mp4",
+      "sha256": "a274e766e5dd8f2040d785aa7009ffaf8d5f7efd8b35e9c28cea69c15bdf2e37",
+      "duration_s": 8.0,
+      "uat_sheet": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part02/uat/05_working_alone_t1_sheet.jpg",
+      "motion": {
+        "freeze_events_0p8s": 0
+      },
+      "credits_after": 17560,
+      "credits_used": 100,
+      "credits_ui_drop": 100,
+      "account": "benoats@googlemail.com",
+      "at": "2026-10-29T19:15:05+00:00"
+    },
+    "06_old_newton_tells": {
+      "plate": "06_old_newton_tells",
+      "part": "02",
+      "tranche": 1,
+      "take": 1,
+      "prior_credits_used": 0,
+      "model": "Veo 3.1 - Quality",
+      "quality": "Quality",
+      "start_frame": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part02/refs/v04_flow_stills/06_old_newton_tells_t1.png",
+      "start_frame_sha256": "72857441017a364e2fcc002e737c26d71cd50d24f7ad6545f153fa5dfe0ad991",
+      "credits_before": 17560,
+      "status": "KEEP",
+      "submitted_at": "2026-10-29T19:16:05+00:00",
+      "project_url": "https://flow.google.com/project/1a4d2d0e-185a-45b9-b832-0a3273651155",
+      "uat_note": "KEEP vs v04 board, sources and period look (3D cartoon house look, continuous motion, no readable text)",
+      "file": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part02/raw/v01/06_old_newton_tells_t1.mp4",
+      "sha256": "9da5073d049841960b1a53459aa58d817c8b229ec8f71f78266f5a10fcbac37f",
+      "duration_s": 8.0,
+      "uat_sheet": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part02/uat/06_old_newton_tells_t1_sheet.jpg",
+      "motion": {
+        "freeze_events_0p8s": 0
+      },
+      "credits_after": 17460,
+      "credits_used": 100,
+      "credits_ui_drop": 100,
+      "account": "benoats@googlemail.com",
+      "at": "2026-10-29T19:18:30+00:00"
+    },
+    "07_orchard_bench": {
+      "plate": "07_orchard_bench",
+      "part": "02",
+      "tranche": 1,
+      "take": 1,
+      "prior_credits_used": 0,
+      "model": "Veo 3.1 - Quality",
+      "quality": "Quality",
+      "start_frame": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part02/refs/v04_flow_stills/07_orchard_bench_t1.png",
+      "start_frame_sha256": "d8ef23c0716cedb759f5b7a143e5011b06d97cde05ca8e24e696238a71f59008",
+      "credits_before": 17460,
+      "status": "KEEP",
+      "submitted_at": "2026-10-29T19:19:30+00:00",
+      "project_url": "https://flow.google.com/project/a0cbae55-f662-4ff9-bc1d-33f8c3e737d7",
+      "uat_note": "KEEP vs v04 board, sources and period look (3D cartoon house look, continuous motion, no readable text)",
+      "file": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part02/raw/v01/07_orchard_bench_t1.mp4",
+      "sha256": "028ee06be5e3fb76cbc58265837633993c4834c961735c191c36379c5e7afa02",
+      "duration_s": 8.0,
+      "uat_sheet": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part02/uat/07_orchard_bench_t1_sheet.jpg",
+      "motion": {
+        "freeze_events_0p8s": 0
+      },
+      "credits_after": 17360,
+      "credits_used": 100,
+      "credits_ui_drop": 100,
+      "account": "benoats@googlemail.com",
+      "at": "2026-10-29T19:22:04+00:00"
+    },
+    "08_the_apple": {
+      "plate": "08_the_apple",
+      "part": "02",
+      "tranche": 1,
+      "take": 1,
+      "prior_credits_used": 0,
+      "model": "Veo 3.1 - Quality",
+      "quality": "Quality",
+      "start_frame": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part02/refs/v04_flow_stills/08_the_apple_t1.png",
+      "start_frame_sha256": "bdb376d567b6061daeda7fa4eb266191e53c5094b14cfe88105bf7bcb319529f",
+      "credits_before": 17360,
+      "status": "KEEP",
+      "submitted_at": "2026-10-29T19:23:04+00:00",
+      "project_url": "https://flow.google.com/project/d010c76c-beba-4085-ab7f-9e1d3347b4fb",
+      "uat_note": "KEEP vs v04 board, sources and period look (trimmed 2.90s-8.00s = 5.10s >= use_s 4.99s: clean downward apple fall from branch to grass roll; 0 freeze events)",
+      "file": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part02/raw/v01/08_the_apple_t1.mp4",
+      "sha256": "357e8de3e9c771ef212fb01ee0a6052ebfedbc0de0ad9794270f5ff2128a5b44",
+      "duration_s": 5.083,
+      "uat_sheet": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part02/uat/08_the_apple_t1_sheet.jpg",
+      "motion": {
+        "freeze_events_0p8s": 0
+      },
+      "credits_after": 17260,
+      "credits_used": 100,
+      "credits_ui_drop": 100,
+      "account": "benoats@googlemail.com",
+      "at": "2026-10-29T19:25:22+00:00"
+    },
+    "11_explorer_apple": {
+      "plate": "11_explorer_apple",
+      "part": "02",
+      "tranche": 1,
+      "take": 1,
+      "prior_credits_used": 0,
+      "model": "Veo 3.1 - Quality",
+      "quality": "Quality",
+      "start_frame": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part02/refs/v04_flow_stills/11_explorer_apple_t1.png",
+      "start_frame_sha256": "eaa10b0b1bbde9cff0b8e9e71bc31a0ac910ceae6dbf4b670109905860e4f91b",
+      "credits_before": 17260,
+      "status": "KEEP",
+      "submitted_at": "2026-10-29T19:26:22+00:00",
+      "project_url": "https://flow.google.com/project/152b8435-f297-4277-b443-c6722c21a164",
+      "uat_note": "KEEP vs v04 board, sources and period look (3D cartoon house look, continuous motion, no readable text)",
+      "file": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part02/raw/v01/11_explorer_apple_t1.mp4",
+      "sha256": "9425e81dec83d8cf55706b65b4b52b2b8268b53cc08c0d995f0261de9c94a803",
+      "duration_s": 8.0,
+      "uat_sheet": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part02/uat/11_explorer_apple_t1_sheet.jpg",
+      "motion": {
+        "freeze_events_0p8s": 0
+      },
+      "credits_after": 17160,
+      "credits_used": 100,
+      "credits_ui_drop": 100,
+      "account": "benoats@googlemail.com",
+      "at": "2026-10-29T19:28:41+00:00"
+    },
+    "12_still_up_there": {
+      "plate": "12_still_up_there",
+      "part": "02",
+      "tranche": 1,
+      "take": 1,
+      "prior_credits_used": 0,
+      "model": "Veo 3.1 - Quality",
+      "quality": "Quality",
+      "start_frame": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part02/refs/v04_flow_stills/12_still_up_there_t1.png",
+      "start_frame_sha256": "2ab54ef6f9e3340db04af0d529b4d910e384fe7829499a86da423bce16302aaf",
+      "credits_before": 17160,
+      "status": "KEEP",
+      "submitted_at": "2026-10-29T19:29:41+00:00",
+      "project_url": "https://flow.google.com/project/03f37ed2-120d-4b76-9683-0630db3d0046",
+      "uat_note": "KEEP vs v04 board, sources and period look (3D cartoon house look, continuous motion, no readable text)",
+      "file": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part02/raw/v01/12_still_up_there_t1.mp4",
+      "sha256": "3706ce37d5c8c27157e52e4445b2c858175c65a78893385fd22dff93853acead",
+      "duration_s": 8.0,
+      "uat_sheet": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part02/uat/12_still_up_there_t1_sheet.jpg",
+      "motion": {
+        "freeze_events_0p8s": 0
+      },
+      "credits_after": 17060,
+      "credits_used": 100,
+      "credits_ui_drop": 100,
+      "account": "benoats@googlemail.com",
+      "at": "2026-10-29T19:31:59+00:00"
     }
   },
   "balance_reads": [
@@ -419,7 +699,67 @@
       "at": "2026-10-29T18:56:36+00:00",
       "credits": 18060,
       "when": "batch-end-p01"
+    },
+    {
+      "at": "2026-10-29T18:58:11+00:00",
+      "credits": 18060,
+      "when": "batch-start-p02"
+    },
+    {
+      "at": "2026-10-29T19:01:30+00:00",
+      "credits": 17960,
+      "after": "01_cambridge_closes"
+    },
+    {
+      "at": "2026-10-29T19:05:11+00:00",
+      "credits": 17860,
+      "after": "02_newton_arrives"
+    },
+    {
+      "at": "2026-10-29T19:08:33+00:00",
+      "credits": 17760,
+      "after": "03_christmas_birth"
+    },
+    {
+      "at": "2026-10-29T19:11:49+00:00",
+      "credits": 17660,
+      "after": "04_quart_pot"
+    },
+    {
+      "at": "2026-10-29T19:15:05+00:00",
+      "credits": 17560,
+      "after": "05_working_alone"
+    },
+    {
+      "at": "2026-10-29T19:18:30+00:00",
+      "credits": 17460,
+      "after": "06_old_newton_tells"
+    },
+    {
+      "at": "2026-10-29T19:22:04+00:00",
+      "credits": 17360,
+      "after": "07_orchard_bench"
+    },
+    {
+      "at": "2026-10-29T19:25:22+00:00",
+      "credits": 17260,
+      "after": "08_the_apple"
+    },
+    {
+      "at": "2026-10-29T19:28:41+00:00",
+      "credits": 17160,
+      "after": "11_explorer_apple"
+    },
+    {
+      "at": "2026-10-29T19:31:59+00:00",
+      "credits": 17060,
+      "after": "12_still_up_there"
+    },
+    {
+      "at": "2026-10-29T19:32:01+00:00",
+      "credits": 17060,
+      "when": "batch-end-p02"
     }
   ],
-  "updated": "2026-10-29T18:56:36+00:00"
+  "updated": "2026-10-29T19:32:01+00:00"
 }
