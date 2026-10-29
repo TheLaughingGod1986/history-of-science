@@ -920,6 +920,48 @@
       "credits_ui_drop": 100,
       "account": "benoats@googlemail.com",
       "at": "2026-10-29T20:10:57+00:00"
+    },
+    "06_pretty_nearly": {
+      "plate": "06_pretty_nearly",
+      "part": "04",
+      "tranche": 1,
+      "take": 1,
+      "prior_credits_used": 0,
+      "model": "Veo 3.1 - Fast",
+      "quality": "Fast",
+      "start_frame": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part04/refs/v04_flow_stills/06_pretty_nearly_t1.png",
+      "start_frame_sha256": "3602efdab7c0849f6ab55fbd2218efe796cd75a861acb56eeadbf81e8bd89751",
+      "credits_before": 16680,
+      "status": "KEEP",
+      "submitted_at": "2026-10-29T21:32:49+00:00",
+      "project_url": "https://flow.google.com/project/d97ba054-7c74-4b02-9ebf-a8f95071ab00",
+      "uat_note": "KEEP vs v04 board, sources and period look (3D cartoon house look, continuous motion, no readable text)",
+      "file": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part04/raw/v01/06_pretty_nearly_t1.mp4",
+      "sha256": "af487165258059d44e1f3ad9682d80d50c2239882f5495c82d7907a3e98d47ad",
+      "duration_s": 8.0,
+      "uat_sheet": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part04/uat/06_pretty_nearly_t1_sheet.jpg",
+      "motion": {
+        "freeze_events_0p8s": 0
+      },
+      "credits_after": 16670,
+      "credits_used": 10,
+      "credits_ui_drop": 10,
+      "account": "benoats@googlemail.com",
+      "at": "2026-10-29T21:34:51+00:00"
+    },
+    "06_pretty_nearly_c1": {
+      "plate": "06_pretty_nearly_c1",
+      "part": "04",
+      "tranche": 1,
+      "take": 1,
+      "prior_credits_used": 0,
+      "model": "Veo 3.1 - Fast",
+      "quality": "Fast",
+      "start_frame": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part04/refs/v04_flow_stills/06_pretty_nearly_c1_t1.png",
+      "start_frame_sha256": "46f370face4352401cc10c89c3a22aa844a5bf4f442da879d64a89c8a14fbdc3",
+      "credits_before": 16670,
+      "status": "SUBMITTING",
+      "submitted_at": "2026-10-29T21:35:51+00:00"
     }
   },
   "balance_reads": [
@@ -1127,7 +1169,17 @@
       "at": "2026-10-29T20:10:57+00:00",
       "credits": 16680,
       "after": "05_minute_second"
+    },
+    {
+      "at": "2026-10-29T21:31:48+00:00",
+      "credits": 16680,
+      "when": "batch-start-p05"
+    },
+    {
+      "at": "2026-10-29T21:34:51+00:00",
+      "credits": 16670,
+      "after": "06_pretty_nearly"
     }
   ],
-  "updated": "2026-10-29T20:10:57+00:00"
+  "updated": "2026-10-29T21:35:51+00:00"
 }
