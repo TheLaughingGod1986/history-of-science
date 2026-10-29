@@ -180,8 +180,22 @@
       "start_frame": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part01/refs/v04_flow_stills/05_heavens_map_t1.png",
       "start_frame_sha256": "6459708b2314177f34da1ef7fdade10baba00462591427eb323a43c0906d60d5",
       "credits_before": 18310,
-      "status": "SUBMITTING",
-      "submitted_at": "2026-10-29T18:33:17+00:00"
+      "status": "KEEP",
+      "submitted_at": "2026-10-29T18:33:17+00:00",
+      "project_url": "https://flow.google.com/project/7131828d-6bbc-4b00-8b70-cd1640b10822",
+      "uat_note": "KEEP vs v04 board, sources and period look (3D cartoon house look, continuous motion, no readable text)",
+      "file": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part01/raw/v01/05_heavens_map_t1.mp4",
+      "sha256": "94558b64e8f2c8a97a4c1bba6dd9cbaf9c958dbde4e73d55b3e41c5124f63dbc",
+      "duration_s": 8.0,
+      "uat_sheet": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part01/uat/05_heavens_map_t1_sheet.jpg",
+      "motion": {
+        "freeze_events_0p8s": 0
+      },
+      "credits_after": 18210,
+      "credits_used": 100,
+      "credits_ui_drop": 100,
+      "account": "benoats@googlemail.com",
+      "at": "2026-10-29T18:35:44+00:00"
     }
   },
   "balance_reads": [
@@ -219,7 +233,12 @@
       "at": "2026-10-29T18:32:16+00:00",
       "credits": 18310,
       "after": "04_things_fall"
+    },
+    {
+      "at": "2026-10-29T18:35:44+00:00",
+      "credits": 18210,
+      "after": "05_heavens_map"
     }
   ],
-  "updated": "2026-10-29T18:33:17+00:00"
+  "updated": "2026-10-29T18:35:44+00:00"
 }
