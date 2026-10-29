@@ -1,0 +1,69 @@
+{
+  "at": "2026-10-29T20:25:53.873Z",
+  "job": "J1219",
+  "items": [
+    {
+      "id": "cLKDiYP55J8",
+      "title": "What Was the Edward Jenner Experiment?",
+      "description": "Why Vaccines Are Named After a Cow\nhttps://www.youtube.com/watch?v=ETynHpIYLeY\n\nOn 1 July 1796, Edward Jenner tested whether cowpox had protected James from smallpox. No disease followed.",
+      "privacy": "private",
+      "publishAt": "2026-11-13T11:30:00Z",
+      "kids": false,
+      "synthetic": null,
+      "lang": "en-GB",
+      "audioLang": "en-GB",
+      "tags": [
+        "cowpox",
+        "edward jenner experiment",
+        "edward jenner smallpox vaccine",
+        "first vaccine",
+        "history of science",
+        "what was the edward jenner experiment"
+      ],
+      "duration": "PT23S",
+      "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+      "categoryId": "27",
+      "hasCustomThumbnail": true
+    },
+    {
+      "id": "-I_GHK-GcFs",
+      "title": "What Was the Edward Jenner Experiment?",
+      "description": "Why Vaccines Are Named After a Cow\nhttps://www.youtube.com/watch?v=ETynHpIYLeY\n\nOn 1 July 1796, Edward Jenner tested whether cowpox had protected James from smallpox. No disease followed.",
+      "privacy": "private",
+      "publishAt": "2026-11-13T11:30:00Z",
+      "kids": false,
+      "synthetic": null,
+      "lang": "en-GB",
+      "audioLang": "en-GB",
+      "tags": [
+        "cowpox",
+        "edward jenner experiment",
+        "edward jenner smallpox vaccine",
+        "first vaccine",
+        "history of science",
+        "what was the edward jenner experiment"
+      ],
+      "duration": "PT27S",
+      "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+      "categoryId": "27",
+      "hasCustomThumbnail": true
+    }
+  ],
+  "captions": [
+    {
+      "id": "AUieDaZt_D15hdryI_oOiOwgSTO84TBCufmrZAUf_DxnDIbUU5Q",
+      "language": "en",
+      "trackKind": "asr",
+      "status": "serving",
+      "isDraft": false
+    },
+    {
+      "id": "AUieDaahtls5_fTawUlhj-tl0Q-92871Rv-XNts3-gpDD6V1Zw_Q08zXdxtd_bsau3DKqvi7GG-PVCZgg3A",
+      "language": "en-GB",
+      "trackKind": "standard",
+      "status": "serving",
+      "isDraft": false
+    }
+  ],
+  "captionError": null
+}
