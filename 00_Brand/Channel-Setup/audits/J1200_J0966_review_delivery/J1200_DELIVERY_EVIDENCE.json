@@ -64,5 +64,45 @@
       "decode_phone": true
     }
   ],
-  "nas_dest": "/Volumes/data/mac-mini-archive/YouTube/History Of Science/J1200_J0966_review_2026-10-29"
+  "nas_dest": "/Volumes/data/mac-mini-archive/YouTube/History Of Science/J1200_J0966_review_2026-10-29",
+  "play_link_verify": {
+    "at": "2026-10-29T17:54:06.746778+00:00",
+    "board_check": "ok expected=4 problems=[] site=200",
+    "method": "GET studio-kanban /api/watch -> R2 video/mp4; full download SHA256 vs local PHONE; ffmpeg -t 1 decode",
+    "results": [
+      {
+        "ask": "J0966.1",
+        "id": "-I_GHK-GcFs",
+        "bytes": 5793111,
+        "sha12": "17c916d2d586",
+        "http": 200,
+        "decode": "PASS"
+      },
+      {
+        "ask": "J0966.2",
+        "id": "x_3L_IdYgEc",
+        "bytes": 4752976,
+        "sha12": "1cd37e5fbf2b",
+        "http": 200,
+        "decode": "PASS"
+      },
+      {
+        "ask": "J0966.3",
+        "id": "-sa2t7dAtCk",
+        "bytes": 7670313,
+        "sha12": "ef760260e1da",
+        "http": 200,
+        "decode": "PASS"
+      },
+      {
+        "ask": "J0966.4",
+        "id": "4WUs0beKn0A",
+        "bytes": 6383210,
+        "sha12": "066c6774add2",
+        "http": 200,
+        "decode": "PASS"
+      }
+    ]
+  },
+  "legacy_uat_edeadlk": "Reading HOS UAT/.../10_Shorts/hos_007_s04_smallpox_test_v04.mp4 raised OSError errno 11 Resource deadlock avoided; new folder used instead."
 }

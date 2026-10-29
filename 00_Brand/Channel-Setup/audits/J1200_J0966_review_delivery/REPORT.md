@@ -26,3 +26,7 @@ Four `jobs.py awaits J0966` entries set with PHONE paths in the new folder, air 
 
 ## Next
 Elected Chief: verify hold/cards, then Ben swap OK per Short. HOS-007/J0925 OK is the long only — not these swaps. First pack cutoff 12 Nov 20:00Z.
+
+## Play link verify (published board)
+
+`board_check.py` ok (4/4). Each Ready-for-OK Play URL returned `video/mp4` from R2; full-file SHA matched the local PHONE; `ffmpeg -t 1` decode PASS. Not a 302-only check.
