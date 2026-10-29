@@ -119,10 +119,16 @@ def ordered_rows(rows: list[dict], priority_only: bool = False) -> list[dict]:
 
 
 def log_paths() -> list[Path]:
-    return [
+    wt_edit = Path.home() / "_desk/wt-j1191-hos/02_Video-Projects/008_Lightning-Franklin/07_Edit-Project"
+    paths = [
         MEDIA / "07_Edit-Project/FLOW_MINT_LOG_v03.json",
         REPO_EDIT / "FLOW_MINT_LOG_v03.json",
     ]
+    if wt_edit.exists():
+        p3 = wt_edit / "FLOW_MINT_LOG_v03.json"
+        if p3 not in paths:
+            paths.append(p3)
+    return paths
 
 
 def load_log() -> dict:
@@ -200,6 +206,11 @@ def sanitize_person_names(text: str) -> str:
         ("people safe behind their doors", "adult townsfolk safe behind their doors"),
         ("a child at a window, seen from behind, looks up", "an adult figure at a window, seen from behind, looks up"),
         ("a child", "an adult figure seen from behind"),
+        ("straight pointed iron wire", "slender upright iron rod"),
+        ("pointed iron wire", "slender upright iron rod"),
+        ("sharp tip", "upright metal tip"),
+        ("pointed metal rod", "slender upright metal rod"),
+        ("pointed iron rods", "slender upright iron rods"),
     ):
         text = text.replace(src, dst)
     return text
@@ -218,6 +229,7 @@ def still_prompt(still, plate: dict, extra_suffix: str = "") -> str:
                  " any secondary figure is an adult seen from a distance or from behind.")
     core += (" Opening frame only. No readable words, numbers, letters or text anywhere."
              " Book spines, almanac pages, newspaper pages and notebook pages show no legible glyphs."
+             " No knives, blades or open notebooks on the workbench."
              " The kite and string are never struck by a lightning bolt.")
     if "no faces readable" in core.lower() or "faces not readable" in core.lower():
         core += (" Every person is seen from behind with their head turned completely away from camera;"
@@ -402,7 +414,16 @@ def one_video(page, flow, still, plate: dict, start: Path, credits: int, log: di
         if "/project/" not in entry["project_url"]:
             raise RuntimeError(f"no mp4 and no project URL: {entry['project_url']!r}")
         print(f"  gallery harvest {entry['project_url']}", flush=True)
-        harvest_project_mp4(page, flow, entry["project_url"], dest, wait_s=420)
+        try:
+            wait_s = 360 if plate.get("quality") == "Quality" else 160
+            harvest_project_mp4(page, flow, entry["project_url"], dest, wait_s=wait_s)
+        except RuntimeError as exc:
+            credits_now, _ = mint006.read_account(page)
+            if credits_now is not None and credits_now == credits:
+                raise StartFrameRejectedError(
+                    f"Flow dropped video generation with 0 credits charged ({exc})"
+                ) from exc
+            raise
     return finalize_video(page, plate, dest, entry, credits, log)
 
 
@@ -691,17 +712,27 @@ def main() -> int:
                     print(f"RECOVER {plate['id']} from {proj} (0 credits)", flush=True)
                     dest = video_dest(plate)
                     dest.parent.mkdir(parents=True, exist_ok=True)
-                    harvest_project_mp4(page, flow, proj, dest, wait_s=180)
-                    credits = finalize_video(page, plate, dest, prev, int(prev.get("credits_before") or credits), log)
-                    minted_this_run += 1
-                    continue
+                    try:
+                        harvest_project_mp4(page, flow, proj, dest, wait_s=60)
+                        credits = finalize_video(page, plate, dest, prev, int(prev.get("credits_before") or credits), log)
+                        minted_this_run += 1
+                        continue
+                    except RuntimeError as exc:
+                        print(f"  RECOVER harvest failed ({exc}); checking credits…", flush=True)
                 credits_now, _ = mint006.read_account(page)
                 if credits_now is not None and credits_now == prev.get("credits_before"):
-                    print(f"CLEAR un-submitted {plate['id']} (credits unchanged={credits_now})", flush=True)
+                    print(f"CLEAR un-charged {plate['id']} (credits unchanged={credits_now})", flush=True)
+                    sf_old = still_dest(plate)
+                    for p_del in (sf_old, sf_old.with_suffix(".armed.png")):
+                        try:
+                            if p_del.exists():
+                                p_del.unlink()
+                        except Exception:
+                            pass
                     log["takes"].pop(plate["id"], None)
                     save_log(log)
                 else:
-                    raise SystemExit(f"STOP {plate['id']} already SUBMITTING without project_url — inspect before retake")
+                    raise SystemExit(f"STOP {plate['id']} already SUBMITTING with credit change — inspect before retake")
             cost = TRY1[plate["quality"]]
             credits, account = mint006.read_account(page)
             if credits is None:
