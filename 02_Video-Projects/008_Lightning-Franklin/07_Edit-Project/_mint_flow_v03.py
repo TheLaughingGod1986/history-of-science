@@ -196,29 +196,34 @@ def sanitize_person_names(text: str) -> str:
         ("beside his father", "beside the older scientist"),
         ("families going indoors", "adult townsfolk going indoors"),
         ("a family waits", "adult townsfolk wait"),
+        ("people sit on doorsteps", "adult townsfolk sit on doorsteps"),
+        ("people safe behind their doors", "adult townsfolk safe behind their doors"),
+        ("a child at a window, seen from behind, looks up", "an adult figure at a window, seen from behind, looks up"),
+        ("a child", "an adult figure seen from behind"),
     ):
         text = text.replace(src, dst)
     return text
 
 
-def still_prompt(still, plate: dict) -> str:
+class StartFrameRejectedError(RuntimeError):
+    """Raised when Flow's start-frame upload filter rejects a still image."""
+
+
+def still_prompt(still, plate: dict, extra_suffix: str = "") -> str:
     core = sanitize_person_names(" ".join(plate["prompt"].split()))
     if plate.get("explorer"):
         core = core.replace("No Explorer.", "") + " " + mint006.EXPLORER
-    elif any(w in core.lower() for w in ("child", "children", "boy", "sons", "son", "families", "family")):
-        for src, dst in (
-            ("a child at a window, seen from behind, looks up", "an adult figure at a window, seen from behind, looks up"),
-            ("a child", "an adult figure seen from behind"),
-        ):
-            core = core.replace(src, dst)
-        core += (" No children or young boys in the opening still frame;"
-                 " any secondary figure is an adult seen from behind with head turned away.")
+    else:
+        core += (" Adult figures only; no children, boys, girls or young minors anywhere in the opening still frame;"
+                 " any secondary figure is an adult seen from a distance or from behind.")
     core += (" Opening frame only. No readable words, numbers, letters or text anywhere."
              " Book spines, almanac pages, newspaper pages and notebook pages show no legible glyphs."
              " The kite and string are never struck by a lightning bolt.")
     if "no faces readable" in core.lower() or "faces not readable" in core.lower():
         core += (" Every person is seen from behind with their head turned completely away from camera;"
                  " no face or profile shown.")
+    if extra_suffix:
+        core += " " + extra_suffix.strip()
     return still.still_prompt(
         "History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm cinematic period light.",
         core,
@@ -245,7 +250,7 @@ def gate(live: int, rem: int, cost: int, log: dict, plate_id: str) -> str | None
     return None
 
 
-def mint_still(page, still, plate: dict, credits: int) -> tuple[Path, int]:
+def mint_still(page, still, plate: dict, credits: int, extra_suffix: str = "") -> tuple[Path, int]:
     dest = still_dest(plate)
     if dest.exists() and dest.stat().st_size > 80_000:
         print(f"  reuse still {dest}", flush=True)
@@ -255,7 +260,7 @@ def mint_still(page, still, plate: dict, credits: int) -> tuple[Path, int]:
     if stills_proj not in (page.url or ""):
         page.goto(stills_proj, wait_until="domcontentloaded", timeout=120_000)
         page.wait_for_timeout(3000)
-    still.make_still(page, still_prompt(still, plate), dest, timeout_s=300)
+    still.make_still(page, still_prompt(still, plate, extra_suffix=extra_suffix), dest, timeout_s=300)
     after, _ = mint006_read(page)
     if after is not None and after < credits:
         raise SystemExit(f"STOP still for {plate['id']} cost {credits - after} credits (priced at 0)")
@@ -358,6 +363,7 @@ def finalize_video(page, plate: dict, dest: Path, entry: dict, credits: int, log
     log["takes"][plate["id"]] = entry
     log.setdefault("balance_reads", []).append({"at": now(), "credits": after, "after": plate["id"]})
     save_log(log)
+    record_flow_balance(after, f"J1191 P{plate['_part']}:{plate['id']} KEEP; spent={spent(log)}")
     if ui_drop > priced:
         raise SystemExit(f"STOP {plate['id']} charged {ui_drop} > priced {priced} (check x1 setting)")
     print(f"  -> KEEP used={used} (ui_drop={ui_drop}) balance={after} sha={entry['sha256'][:12]}", flush=True)
@@ -568,7 +574,8 @@ def main() -> int:
         fc.value.set_files(str(ref))
         print("  uploaded — waiting for Add to prompt…", flush=True)
         t0 = time.time()
-        while time.time() - t0 < 60:
+        enabled_ready = False
+        while time.time() - t0 < 40:
             page.evaluate(
                 """() => {
                   for (const b of document.querySelectorAll('button')) {
@@ -585,7 +592,9 @@ def main() -> int:
                     const r = b.getBoundingClientRect();
                     return r.width > 20 && r.height > 16 && /^Add to prompt$/i.test((b.innerText || '').trim());
                   });
-                  if (!btns.length) return {found: false};
+                  const bodyTxt = (document.body && document.body.innerText) || '';
+                  const noAssets = /No assets found/i.test(bodyTxt);
+                  if (!btns.length) return {found: false, noAssets};
                   const b = btns[btns.length - 1];
                   const disabled = b.disabled || b.getAttribute('aria-disabled') === 'true' || /disabled/i.test(b.className || '');
                   if (disabled) {
@@ -597,13 +606,24 @@ def main() -> int:
                       }
                     }
                   }
-                  return {found: true, disabled};
+                  return {found: true, disabled, noAssets};
                 }""",
                 ref.name,
             )
             if ready.get("found") and not ready.get("disabled"):
+                enabled_ready = True
+                break
+            if time.time() - t0 > 18 and not ready.get("found") and ready.get("noAssets"):
                 break
             page.wait_for_timeout(1000)
+        if not enabled_ready:
+            for _ in range(2):
+                try:
+                    page.keyboard.press("Escape")
+                    page.wait_for_timeout(200)
+                except Exception:
+                    pass
+            raise StartFrameRejectedError(f"Flow start-frame upload rejected or timed out for {ref.name}")
         add_btn = page.locator('button:has-text("Add to prompt")').last
         add_btn.click(timeout=5000)
         page.wait_for_timeout(1500)
@@ -614,7 +634,7 @@ def main() -> int:
         )
         print(f"  start frame attached={attached}", flush=True)
         if not attached:
-            raise RuntimeError(f"Start frame {ref.name} did not attach after Add to prompt")
+            raise StartFrameRejectedError(f"Start frame {ref.name} did not attach after Add to prompt")
         return True
 
     mint006._orig_read_account = mint006.read_account
@@ -696,8 +716,31 @@ def main() -> int:
                 f"live={credits} rem={remaining(all_rows, log)} disk={free_disk_gib():.1f}GiB ===",
                 flush=True,
             )
-            frame, credits = mint_still(page, still, plate, credits)
-            credits = one_video(page, flow, still, plate, frame, credits, log)
+            for sf_try in range(1, 4):
+                extra = (
+                    ""
+                    if sf_try == 1
+                    else " Wide architectural view, any adult figures small and seen from behind with heads turned away from camera; no faces, no children or minors anywhere."
+                )
+                frame, credits = mint_still(page, still, plate, credits, extra_suffix=extra)
+                try:
+                    credits = one_video(page, flow, still, plate, frame, credits, log)
+                    break
+                except StartFrameRejectedError as exc:
+                    print(f"  WARN {exc} (try {sf_try}/3) — deleting {frame.name} and regenerating still", flush=True)
+                    for p_del in (frame, frame.with_suffix(".armed.png")):
+                        try:
+                            if p_del.exists():
+                                p_del.unlink()
+                        except Exception:
+                            pass
+                    log["takes"].pop(plate["id"], None)
+                    save_log(log)
+                    if sf_try == 3:
+                        raise
+                    credits_r, _ = mint006.read_account(page)
+                    if credits_r is not None:
+                        credits = credits_r
             minted_this_run += 1
 
         end_credits, _ = mint006.read_account(page)
