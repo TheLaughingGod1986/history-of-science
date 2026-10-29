@@ -820,8 +820,106 @@
       "start_frame": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part04/refs/v04_flow_stills/02_spray_paint_t1.png",
       "start_frame_sha256": "1a47603f1a19c62a3b9c49cb095c362f86d6116a84fdec21187a43c5e006a991",
       "credits_before": 16810,
-      "status": "SUBMITTING",
-      "submitted_at": "2026-10-29T19:58:00+00:00"
+      "status": "KEEP",
+      "submitted_at": "2026-10-29T19:58:00+00:00",
+      "project_url": "https://flow.google.com/project/2aac824a-7a76-41ce-9450-2340eb9c3584",
+      "uat_note": "KEEP vs v04 board, sources and period look (3D cartoon house look, continuous motion, no readable text)",
+      "file": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part04/raw/v01/02_spray_paint_t1.mp4",
+      "sha256": "8a7b7d907240f959e7db25d3c9108439c5df79ae1b8261cde7079ac23342b092",
+      "duration_s": 7.917,
+      "uat_sheet": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part04/uat/02_spray_paint_t1_sheet.jpg",
+      "motion": {
+        "freeze_events_0p8s": 0
+      },
+      "credits_after": 16800,
+      "credits_used": 10,
+      "credits_ui_drop": 10,
+      "account": "benoats@googlemail.com",
+      "at": "2026-10-29T20:00:00+00:00"
+    },
+    "02_spray_paint_c1": {
+      "plate": "02_spray_paint_c1",
+      "part": "04",
+      "tranche": 1,
+      "take": 1,
+      "prior_credits_used": 0,
+      "model": "Veo 3.1 - Fast",
+      "quality": "Fast",
+      "start_frame": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part04/refs/v04_flow_stills/02_spray_paint_c1_t1.png",
+      "start_frame_sha256": "bbd27599b2ec63b936ac5742295bf0a03e32af8176b58d077d5c8c7e4f170281",
+      "credits_before": 16800,
+      "status": "KEEP",
+      "submitted_at": "2026-10-29T20:01:00+00:00",
+      "project_url": "https://flow.google.com/project/37f235d5-de08-47ec-9312-cf880423bffb",
+      "uat_note": "KEEP vs v04 board, sources and period look (3D cartoon house look, continuous motion, no readable text)",
+      "file": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part04/raw/v01/02_spray_paint_c1_t1.mp4",
+      "sha256": "bfeebfa2b3441cce3cd4fed50b971bff0a6979c01fe02a7c15f3b6f82bc3588b",
+      "duration_s": 8.0,
+      "uat_sheet": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part04/uat/02_spray_paint_c1_t1_sheet.jpg",
+      "motion": {
+        "freeze_events_0p8s": 0
+      },
+      "credits_after": 16790,
+      "credits_used": 10,
+      "credits_ui_drop": 10,
+      "account": "benoats@googlemail.com",
+      "at": "2026-10-29T20:03:00+00:00"
+    },
+    "02_spray_paint_c2": {
+      "plate": "02_spray_paint_c2",
+      "part": "04",
+      "tranche": 1,
+      "take": 1,
+      "prior_credits_used": 0,
+      "model": "Veo 3.1 - Fast",
+      "quality": "Fast",
+      "start_frame": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part04/refs/v04_flow_stills/02_spray_paint_c2_t1.png",
+      "start_frame_sha256": "80b4091762bd034a5a3335eae52f3612f08a003f666a0c3ce8961fcb70ca5747",
+      "credits_before": 16790,
+      "status": "KEEP",
+      "submitted_at": "2026-10-29T20:04:01+00:00",
+      "project_url": "https://flow.google.com/project/4c58de1b-966f-47d2-9d0c-aa89e221516b",
+      "uat_note": "KEEP vs v04 board, sources and period look (3D cartoon house look, continuous motion, no readable text)",
+      "file": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part04/raw/v01/02_spray_paint_c2_t1.mp4",
+      "sha256": "ecbe0ece96a91d5b826426ff15276ab465323666c37c7fecfa9054cf459f6f25",
+      "duration_s": 8.0,
+      "uat_sheet": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part04/uat/02_spray_paint_c2_t1_sheet.jpg",
+      "motion": {
+        "freeze_events_0p8s": 0
+      },
+      "credits_after": 16780,
+      "credits_used": 10,
+      "credits_ui_drop": 10,
+      "account": "benoats@googlemail.com",
+      "at": "2026-10-29T20:06:11+00:00"
+    },
+    "05_minute_second": {
+      "plate": "05_minute_second",
+      "part": "04",
+      "tranche": 1,
+      "take": 1,
+      "prior_credits_used": 0,
+      "model": "Veo 3.1 - Quality",
+      "quality": "Quality",
+      "start_frame": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part04/refs/v04_flow_stills/05_minute_second_t1.png",
+      "start_frame_sha256": "6a40b10a4df521532fd73831440468c6679aa99b3c8f5686f64d4ee230e57c9b",
+      "credits_before": 16780,
+      "status": "KEEP",
+      "submitted_at": "2026-10-29T20:07:11+00:00",
+      "project_url": "https://flow.google.com/project/6c8f658d-3ec6-4ba3-8648-815ac6a4e13f",
+      "uat_note": "KEEP vs v04 board, sources and period look (3D cartoon house look, continuous motion, no readable text)",
+      "file": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part04/raw/v01/05_minute_second_t1.mp4",
+      "sha256": "7f56f05930cefc854aabde17cd204510771dfbaaa5faa2f6b410facebbd3cd66",
+      "duration_s": 8.0,
+      "uat_sheet": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part04/uat/05_minute_second_t1_sheet.jpg",
+      "motion": {
+        "freeze_events_0p8s": 0
+      },
+      "credits_after": 16680,
+      "credits_used": 100,
+      "credits_ui_drop": 100,
+      "account": "benoats@googlemail.com",
+      "at": "2026-10-29T20:10:57+00:00"
     }
   },
   "balance_reads": [
@@ -1009,7 +1107,27 @@
       "at": "2026-10-29T19:56:59+00:00",
       "credits": 16810,
       "after": "09_can_he_calculate_c1"
+    },
+    {
+      "at": "2026-10-29T20:00:00+00:00",
+      "credits": 16800,
+      "after": "02_spray_paint"
+    },
+    {
+      "at": "2026-10-29T20:03:00+00:00",
+      "credits": 16790,
+      "after": "02_spray_paint_c1"
+    },
+    {
+      "at": "2026-10-29T20:06:11+00:00",
+      "credits": 16780,
+      "after": "02_spray_paint_c2"
+    },
+    {
+      "at": "2026-10-29T20:10:57+00:00",
+      "credits": 16680,
+      "after": "05_minute_second"
     }
   ],
-  "updated": "2026-10-29T19:58:00+00:00"
+  "updated": "2026-10-29T20:10:57+00:00"
 }

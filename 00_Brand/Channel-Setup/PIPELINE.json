@@ -513,12 +513,12 @@
           "status": "doing",
           "due": "2026-11-15",
           "owner": "gemini",
-          "note": "J1192 tranche 1 in progress: Parts 01-03 complete (29/57 KEEP, 1,740 cr spent, live Flow 16,810); Part 04 (13 rows) running in detached tmux j1192-render, then Part 05 (15 rows).",
+          "note": "J1192 tranche 1 in progress: Parts 01-03 complete (29/57 KEEP) + Part 04 4/13 KEEP (33/57 cumulative, 1,870 cr spent, live Flow 16,680); remaining Part 04 (9 rows) + Part 05 (15 rows) running in detached tmux j1192-render.",
           "since": "2026-10-15",
           "underway": true,
           "waiting": "mint after 006 (0 Flow), 007 and 008; tranche 1 only when a live Flow read stays at least 3,000 after 7,354; tranche 2 (5,180) after the ~12 Nov AI Ultra renewal",
           "steps": [
-            29,
+            33,
             57
           ],
           "steps_unit": "tranche-1 Flow rows KEEP"
