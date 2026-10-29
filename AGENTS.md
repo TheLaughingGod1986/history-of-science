@@ -343,6 +343,7 @@ Ben, 2 Oct 2026: *"Claude and Grok have more authority and fewer checks with me.
   - Swap the file on an existing YouTube id (no Studio Replace).
   - Re-upload an idea that already went public. (A fixed copy of a broken, e.g. silent, Short may go up on Chief's OK; the broken id goes private.)
   - Delete a video. The old id goes private instead.
+  - Re-render over a file that has been uploaded, or rewrite its manifest. Write a new version (`_v02`, `_v03` …) beside it and leave the uploaded file, its sha256 and its manifest untouched, so the local copy always shows what is live. (Chief, 29 Oct 2026: HOS Herschel c2q7w0pgcn8 and Snow OnJ8MFu0Mi0 were re-rendered in place on 17 Oct after their 15 Oct upload, so J1202 couldn't back-post them and J1107's opening-frame checks read a cut that never aired.)
 - **Publishing:**
   - Premiere a long (until subscribers are in the hundreds).
   - Leave any video or Short marked **Made for Kids**. Re-check Audience after every Studio save (`STUDIO_PLAYBOOK.md` §9).
