@@ -140,6 +140,7 @@ def save_log(log: dict) -> None:
 def spent(log: dict) -> int:
     total = 0
     for e in log["takes"].values():
+        total += int(e.get("prior_credits_used") or 0)
         if e.get("status") in ("PENDING_UAT", "KEEP", "SUBMITTING"):
             priced = TRY1.get(e.get("quality") or "", 0)
             total += max(int(e.get("credits_used") or 0), priced)
@@ -189,14 +190,32 @@ class StartFrameRejectedError(RuntimeError):
 
 def still_prompt(still, plate: dict, extra_suffix: str = "") -> str:
     core = sanitize_person_names(" ".join(plate["prompt"].split()))
+    low = core.lower()
+    has_person = any(
+        w in low
+        for w in (
+            "natural philosopher",
+            "visiting astronomer",
+            "students",
+            "old man",
+            "young man",
+            "printer",
+            "astronauts",
+            "farmer-astronomer",
+            "unseen hands",
+            "boots",
+            "friend",
+        )
+    )
     if plate.get("explorer"):
         core = core.replace("No Explorer.", "") + " " + mint006.EXPLORER
+    elif has_person:
+        core += (" Adult figures only; no children, babies, boys, girls or young minors anywhere in the opening still frame.")
     else:
-        core += (" Adult figures only; no children, babies, boys, girls or young minors anywhere in the opening still frame;"
-                 " any secondary figure is an adult seen from a distance or from behind.")
+        core += (" No people, hands, children or human figures anywhere in the frame.")
     core += (" Opening frame only. No readable words, numbers, letters or text anywhere."
              " Book spines, printed pages and manuscript sheets show no legible glyphs.")
-    if "no readable face" in core.lower() or "no faces" in core.lower() or "no face." in core.lower():
+    if "no readable face" in low or "no faces" in low or "no face." in low:
         core += (" Any person is seen from behind or from the hand/arm only with head turned completely away from camera;"
                  " no face or profile shown.")
     if extra_suffix:
@@ -365,11 +384,15 @@ def one_video(page, flow, still, plate: dict, start: Path, credits: int, log: di
     model = f"Veo 3.1 - {plate['quality']}"
     os.environ["ORBIT_FLOW_VEO_MODEL"] = model
     os.environ["OWB_AGENT"] = "gemini"
+    old = log["takes"].get(plate["id"]) or {}
+    prior_used = int(old.get("prior_credits_used") or 0)
+    take_no = int(old.get("take") or 1)
     entry = {
         "plate": plate["id"],
         "part": plate["_part"],
         "tranche": 1,
-        "take": 1,
+        "take": take_no,
+        "prior_credits_used": prior_used,
         "model": model,
         "quality": plate["quality"],
         "start_frame": str(start),
@@ -748,7 +771,19 @@ def main() -> int:
                                 p_del.unlink()
                         except Exception:
                             pass
-                    log["takes"].pop(plate["id"], None)
+                    old_e = log["takes"].get(plate["id"]) or {}
+                    if old_e.get("prior_credits_used"):
+                        log["takes"][plate["id"]] = {
+                            "plate": plate["id"],
+                            "part": plate["_part"],
+                            "tranche": 1,
+                            "take": int(old_e.get("take") or 1),
+                            "prior_credits_used": int(old_e["prior_credits_used"]),
+                            "quality": plate["quality"],
+                            "status": "REDO",
+                        }
+                    else:
+                        log["takes"].pop(plate["id"], None)
                     save_log(log)
                     if sf_try == 3:
                         raise
