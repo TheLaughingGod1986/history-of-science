@@ -196,6 +196,33 @@
       "credits_ui_drop": 100,
       "account": "benoats@googlemail.com",
       "at": "2026-10-29T18:35:44+00:00"
+    },
+    "06_perfect_circles": {
+      "plate": "06_perfect_circles",
+      "part": "01",
+      "tranche": 1,
+      "take": 1,
+      "model": "Veo 3.1 - Fast",
+      "quality": "Fast",
+      "start_frame": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part01/refs/v04_flow_stills/06_perfect_circles_t1.png",
+      "start_frame_sha256": "5ec96bb6cf6ccede41f13b6ed76a3e9a78c37efdde987c3d3650126a3bb2064d",
+      "credits_before": 18210,
+      "status": "KEEP",
+      "submitted_at": "2026-10-29T18:36:44+00:00",
+      "project_url": "https://flow.google.com/project/efa34d40-2912-4f51-9af3-94036030d5ef",
+      "uat_note": "KEEP vs v04 board, sources and period look (3D cartoon house look, continuous motion, no readable text)",
+      "file": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part01/raw/v01/06_perfect_circles_t1.mp4",
+      "sha256": "3b57d2b81fae688832bf4a340f1ca7c3d937e8870ccf81d8754322bf2084d6f1",
+      "duration_s": 7.917,
+      "uat_sheet": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part01/uat/06_perfect_circles_t1_sheet.jpg",
+      "motion": {
+        "freeze_events_0p8s": 0
+      },
+      "credits_after": 18200,
+      "credits_used": 10,
+      "credits_ui_drop": 10,
+      "account": "benoats@googlemail.com",
+      "at": "2026-10-29T18:38:47+00:00"
     }
   },
   "balance_reads": [
@@ -238,7 +265,12 @@
       "at": "2026-10-29T18:35:44+00:00",
       "credits": 18210,
       "after": "05_heavens_map"
+    },
+    {
+      "at": "2026-10-29T18:38:47+00:00",
+      "credits": 18200,
+      "after": "06_perfect_circles"
     }
   ],
-  "updated": "2026-10-29T18:35:44+00:00"
+  "updated": "2026-10-29T18:38:47+00:00"
 }
