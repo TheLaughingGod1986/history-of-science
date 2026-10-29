@@ -1,0 +1,68 @@
+{
+  "job": "J1200",
+  "at": "2026-10-29T17:51:15.422654+00:00",
+  "dest": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/J1200_J0966_review_2026-10-29",
+  "items": [
+    {
+      "youtube_id": "-I_GHK-GcFs",
+      "film": "HOS:007",
+      "version": "v04",
+      "stem": "hos_007_s04_smallpox_test_v04",
+      "master_sha256": "3ef3fa77375083622e8f8d6dee99f009cf60cbc27fc01f9d21857ba6b5b0c4e7",
+      "phone_sha256": "17c916d2d586aaddade0e57422a18902d8bd33ac9c7a235357767734dd61e0fc",
+      "uat_master": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/J1200_J0966_review_2026-10-29/hos_007_s04_smallpox_test_v04.mp4",
+      "uat_phone": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/J1200_J0966_review_2026-10-29/hos_007_s04_smallpox_test_v04_PHONE.mp4",
+      "awaits_file": "HOS UAT/J1200_J0966_review_2026-10-29/hos_007_s04_smallpox_test_v04_PHONE.mp4",
+      "airs_london": "2026-11-13 11:30",
+      "due_london": "2026-11-13 10:30",
+      "decode_master": true,
+      "decode_phone": true
+    },
+    {
+      "youtube_id": "x_3L_IdYgEc",
+      "film": "HOS:005",
+      "version": "v04",
+      "stem": "hos_005_s03_never_saw_v04",
+      "master_sha256": "e1f862ba737acc4276dd676fc93181b41e729fce029fed57318bf43add3e9f63",
+      "phone_sha256": "1cd37e5fbf2b6b3cf4f04c0e3d25680858ce4414ea8598889f09c1c5f7d3b2d0",
+      "uat_master": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/J1200_J0966_review_2026-10-29/hos_005_s03_never_saw_v04.mp4",
+      "uat_phone": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/J1200_J0966_review_2026-10-29/hos_005_s03_never_saw_v04_PHONE.mp4",
+      "awaits_file": "HOS UAT/J1200_J0966_review_2026-10-29/hos_005_s03_never_saw_v04_PHONE.mp4",
+      "airs_london": "2026-11-15 11:30",
+      "due_london": "2026-11-15 10:30",
+      "decode_master": true,
+      "decode_phone": true
+    },
+    {
+      "youtube_id": "-sa2t7dAtCk",
+      "film": "HOS:004",
+      "version": "v04",
+      "stem": "hos_004_s05_dalton_v04",
+      "master_sha256": "8ce07a60569707f689c7d90e06826493bf7a40e5c3c3a4a05216d6a48dbb082c",
+      "phone_sha256": "ef760260e1da9594b8abd71e4ffcbad1600a25276de1d227bd825c4f5533adc7",
+      "uat_master": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/J1200_J0966_review_2026-10-29/hos_004_s05_dalton_v04.mp4",
+      "uat_phone": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/J1200_J0966_review_2026-10-29/hos_004_s05_dalton_v04_PHONE.mp4",
+      "awaits_file": "HOS UAT/J1200_J0966_review_2026-10-29/hos_004_s05_dalton_v04_PHONE.mp4",
+      "airs_london": "2026-11-16 11:30",
+      "due_london": "2026-11-16 10:30",
+      "decode_master": true,
+      "decode_phone": true
+    },
+    {
+      "youtube_id": "4WUs0beKn0A",
+      "film": "HOS:007",
+      "version": "v05",
+      "stem": "hos_007_s05_vacca_jesty_v05",
+      "master_sha256": "e5ea76f012fb94c54c4a7224140d2d8ca342ea8c02a2fbdb30df17661f94f1ad",
+      "phone_sha256": "066c6774add20b1ad8c5859d27b5e14ca094d9de153597c1b7105e648a62afe1",
+      "uat_master": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/J1200_J0966_review_2026-10-29/hos_007_s05_vacca_jesty_v05.mp4",
+      "uat_phone": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/J1200_J0966_review_2026-10-29/hos_007_s05_vacca_jesty_v05_PHONE.mp4",
+      "awaits_file": "HOS UAT/J1200_J0966_review_2026-10-29/hos_007_s05_vacca_jesty_v05_PHONE.mp4",
+      "airs_london": "2026-11-17 11:30",
+      "due_london": "2026-11-17 10:30",
+      "decode_master": true,
+      "decode_phone": true
+    }
+  ],
+  "nas_dest": "/Volumes/data/mac-mini-archive/YouTube/History Of Science/J1200_J0966_review_2026-10-29"
+}
