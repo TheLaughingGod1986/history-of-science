@@ -2714,6 +2714,33 @@
       "credits_ui_drop": 10,
       "account": "benoats@googlemail.com",
       "at": "2026-10-29T17:19:04+00:00"
+    },
+    "22_newton_handoff_c1": {
+      "plate": "22_newton_handoff_c1",
+      "part": "05",
+      "take": 1,
+      "model": "Veo 3.1 - Fast",
+      "quality": "Fast",
+      "priority_overlay_plate": false,
+      "start_frame": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/refs/v03_flow_stills/22_newton_handoff_c1_t1.png",
+      "start_frame_sha256": "022461cd7bbd71ad71e8130e7e7e0a4cafc9e6205178f297a5d26c02bbd28cb6",
+      "credits_before": 18560,
+      "status": "KEEP",
+      "submitted_at": "2026-10-29T17:20:05+00:00",
+      "project_url": "https://flow.google.com/project/d3a29c71-2d55-47e3-8f58-e469a82fa98c",
+      "uat_note": "KEEP vs v03 board, sources and period look (3D cartoon house look, continuous motion, no readable text)",
+      "file": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/22_newton_handoff_c1_t1.mp4",
+      "sha256": "3c83755d1ff620df7366a8e889995547ee31743b133b0527bd726ec761d685e2",
+      "duration_s": 8.0,
+      "uat_sheet": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/uat/22_newton_handoff_c1_t1_sheet.jpg",
+      "motion": {
+        "freeze_events_0p8s": 0
+      },
+      "credits_after": 18550,
+      "credits_used": 10,
+      "credits_ui_drop": 10,
+      "account": "benoats@googlemail.com",
+      "at": "2026-10-29T17:22:14+00:00"
     }
   },
   "balance_reads": [
@@ -3266,7 +3293,17 @@
       "at": "2026-10-29T17:19:04+00:00",
       "credits": 18560,
       "after": "22_newton_handoff"
+    },
+    {
+      "at": "2026-10-29T17:22:14+00:00",
+      "credits": 18550,
+      "after": "22_newton_handoff_c1"
+    },
+    {
+      "at": "2026-10-29T17:22:16+00:00",
+      "credits": 18550,
+      "when": "batch-end-p05"
     }
   ],
-  "updated": "2026-10-29T17:19:04+00:00"
+  "updated": "2026-10-29T17:22:16+00:00"
 }

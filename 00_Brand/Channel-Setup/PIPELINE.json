@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-25",
-  "updated_by": "gemini",
+  "updated": "2026-10-29",
+  "updated_by": "gemini (J1191)",
   "board_url": "https://claude.ai/artifact/Hhk519dkbHMzeaZfp3efhc",
   "stages": [
     {
@@ -104,9 +104,9 @@
     },
     {
       "pool": "Flow (picture)",
-      "left": "20,900 (read 21 Oct 23:14 London after J0352 P5:12_kite_storm Quality 100 cr; all 73/73 Flow rows of 007 minted for 2,890 cr)",
-      "rule": "Flow first for picture; AI Ultra active (renewed 12 Oct). Floor 0 (3,000 buffer on 007): never buy credits, top up or spill into billing.",
-      "checked": "21 Oct"
+      "left": "18,550 (read 29 Oct 17:22Z after J1191 P5:22_newton_handoff_c1 Fast 10 cr; all 101/101 Flow rows of 008 minted for 2,320 cr vs 6,500 cap)",
+      "rule": "Flow first for picture; AI Ultra active (renewed 12 Oct). Floor 0 (3,000 buffer on 008): never buy credits, top up or spill into billing.",
+      "checked": "29 Oct"
     }
   ],
   "films": [
@@ -397,7 +397,7 @@
       "title": "Why Did Franklin Fly a Kite in a Storm?",
       "air": "2026-11-19",
       "ready_by": "2026-11-15",
-      "summary": "Long VO (9:14.8) + Shorts VO (v02 pair) locked. Plate boards v03 KEEP (Chief PASS 15 Oct, J0240): 112 rows, 15 Quality / 86 non-emissive Fast / 11 \u00a30 code graphics / 0 reuse. Flow expected 5,605 cr (try-1 2,360 cr). No mint until after 006 and 007.",
+      "summary": "Long VO (9:14.8) + Shorts VO (v02 pair) locked. All 101/101 Flow rows of boards v03 minted and KEEP (J1191, 29 Oct: 15 Quality + 86 Fast = 2,320 cr vs 5,605 expected / 6,500 cap; live Flow 18,550 >= 3,000 buffer) + 11 \u00a30 code graphics (J0329) = 112/112 rows. Synced to NAS. Parked for Chief picture PASS.",
       "stages": {
         "topic": {
           "status": "done"
@@ -440,14 +440,14 @@
           "due": "2026-11-08",
           "owner": "Gemini",
           "since": "2026-10-16",
-          "underway": true,
-          "note": "J1191 in progress: 100/101 Flow v03 rows KEEP (6/6 priority overlay plates + Part 01 22/22 + Part 02 17/17 + Part 03 25/25 + Part 04 16/16 complete + Part 05 20/21; 2,310 cr used vs 6,500 cap, live Flow 18,560, rem_expected 20, buffer 18,540 >= 3,000) + 11 \u00a30 code graphics (J0329).",
-          "waiting": "Chief review of J0329 graphics; mint only after 006 and 007 with live Flow reading leaving at least 3,000 credits after 008 expected spend",
+          "underway": false,
+          "note": "J1191 complete (parked for Chief picture PASS): all 101/101 Flow v03 rows minted and KEEP (6/6 priority overlay moving plates + Part 01 22/22 + Part 02 17/17 + Part 03 25/25 + Part 04 16/16 + Part 05 21/21; 15 Quality + 86 Fast = 2,320 cr used vs 5,605 expected / 6,500 cap; live Flow 20,870 -> 18,550 >= 3,000 buffer) + 11 \u00a30 code graphics (J0329). Synced to NAS.",
+          "waiting": "Chief picture PASS (J1191 + J0329)",
           "steps": [
-            111,
+            112,
             112
           ],
-          "steps_unit": "board rows rendered (11 code graphics + 100/101 Flow plates KEEP)"
+          "steps_unit": "board rows rendered (11 code graphics + 101/101 Flow plates KEEP)"
         },
         "edit": {
           "status": "todo",
