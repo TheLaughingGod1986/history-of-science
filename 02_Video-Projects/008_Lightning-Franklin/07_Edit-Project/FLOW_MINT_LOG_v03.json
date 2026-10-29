@@ -1931,6 +1931,276 @@
       "credits_ui_drop": 10,
       "account": "benoats@googlemail.com",
       "at": "2026-10-29T15:46:15+00:00"
+    },
+    "09_charge_string": {
+      "plate": "09_charge_string",
+      "part": "04",
+      "take": 1,
+      "model": "Veo 3.1 - Quality",
+      "quality": "Quality",
+      "priority_overlay_plate": false,
+      "start_frame": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part04/refs/v03_flow_stills/09_charge_string_t1.png",
+      "start_frame_sha256": "61162630ff315b222e5b1cd60c9b1276975befdbba1fb9ae2621e89c23d5799c",
+      "credits_before": 19300,
+      "status": "KEEP",
+      "submitted_at": "2026-10-29T15:49:09+00:00",
+      "project_url": "https://flow.google.com/project/62f513c8-8953-4b9f-9220-08d4341a18d0",
+      "uat_note": "KEEP vs v03 board, sources and period look (3D cartoon house look, continuous motion, no readable text)",
+      "file": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part04/raw/v01/09_charge_string_t1.mp4",
+      "sha256": "e2045b3626ae919e2086f9d3b7254d82fd67a2cc38d5e9673a5812674a1b9061",
+      "duration_s": 8.0,
+      "uat_sheet": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part04/uat/09_charge_string_t1_sheet.jpg",
+      "motion": {
+        "freeze_events_0p8s": 0
+      },
+      "credits_after": 19200,
+      "credits_used": 100,
+      "credits_ui_drop": 100,
+      "account": "benoats@googlemail.com",
+      "at": "2026-10-29T15:51:36+00:00"
+    },
+    "09_charge_string_c1": {
+      "plate": "09_charge_string_c1",
+      "part": "04",
+      "take": 1,
+      "model": "Veo 3.1 - Fast",
+      "quality": "Fast",
+      "priority_overlay_plate": false,
+      "start_frame": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part04/refs/v03_flow_stills/09_charge_string_c1_t1.png",
+      "start_frame_sha256": "d8395d3e1901d59134353f8996a6822c166fbc30286683b7ac54154dc54d932e",
+      "credits_before": 19200,
+      "status": "KEEP",
+      "submitted_at": "2026-10-29T15:52:36+00:00",
+      "project_url": "https://flow.google.com/project/15c68e2b-fc91-41bb-a493-0a2614a14b12",
+      "uat_note": "KEEP vs v03 board, sources and period look (3D cartoon house look, continuous motion, no readable text)",
+      "file": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part04/raw/v01/09_charge_string_c1_t1.mp4",
+      "sha256": "611e2633f2ea7f4417272b91af41b857bb6733d416363918a17a111be56f9c80",
+      "duration_s": 8.0,
+      "uat_sheet": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part04/uat/09_charge_string_c1_t1_sheet.jpg",
+      "motion": {
+        "freeze_events_0p8s": 0
+      },
+      "credits_after": 19190,
+      "credits_used": 10,
+      "credits_ui_drop": 10,
+      "account": "benoats@googlemail.com",
+      "at": "2026-10-29T15:54:34+00:00"
+    },
+    "10_richmann_rod": {
+      "plate": "10_richmann_rod",
+      "part": "04",
+      "take": 1,
+      "model": "Veo 3.1 - Fast",
+      "quality": "Fast",
+      "priority_overlay_plate": false,
+      "start_frame": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part04/refs/v03_flow_stills/10_richmann_rod_t1.png",
+      "start_frame_sha256": "8512f1601fc918fb80c6530198e1272555517ade1f3153bf33351a2995f9b6ed",
+      "credits_before": 19190,
+      "status": "KEEP",
+      "submitted_at": "2026-10-29T15:55:34+00:00",
+      "project_url": "https://flow.google.com/project/25f648ff-04a1-4308-ae8a-e8437dacc70c",
+      "uat_note": "KEEP vs v03 board, sources and period look (3D cartoon house look, continuous motion, no readable text)",
+      "file": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part04/raw/v01/10_richmann_rod_t1.mp4",
+      "sha256": "f630e64c01c2d910415257ac5d1348b65837fe1326d81e8e0e81cbca0116e618",
+      "duration_s": 8.0,
+      "uat_sheet": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part04/uat/10_richmann_rod_t1_sheet.jpg",
+      "motion": {
+        "freeze_events_0p8s": 0
+      },
+      "credits_after": 19180,
+      "credits_used": 10,
+      "credits_ui_drop": 10,
+      "account": "benoats@googlemail.com",
+      "at": "2026-10-29T15:57:59+00:00"
+    },
+    "11_richmann_room": {
+      "plate": "11_richmann_room",
+      "part": "04",
+      "take": 1,
+      "model": "Veo 3.1 - Fast",
+      "quality": "Fast",
+      "priority_overlay_plate": false,
+      "start_frame": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part04/refs/v03_flow_stills/11_richmann_room_t1.png",
+      "start_frame_sha256": "b10e1d0d53ce5f192b703ab06c45332f4686de66fb2dcb646651dbaed64bda17",
+      "credits_before": 19180,
+      "status": "KEEP",
+      "submitted_at": "2026-10-29T15:58:51+00:00",
+      "project_url": "https://flow.google.com/project/80b71aff-c5bc-4778-85b1-9d0dd9348cc5",
+      "uat_note": "KEEP vs v03 board, sources and period look (3D cartoon house look, continuous motion, no readable text)",
+      "file": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part04/raw/v01/11_richmann_room_t1.mp4",
+      "sha256": "78fe57426ce5b0c274aa588069096e39f66875fbd5148804fe7441f6df23a7d8",
+      "duration_s": 8.0,
+      "uat_sheet": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part04/uat/11_richmann_room_t1_sheet.jpg",
+      "motion": {
+        "freeze_events_0p8s": 1
+      },
+      "credits_after": 19170,
+      "credits_used": 10,
+      "credits_ui_drop": 10,
+      "account": "benoats@googlemail.com",
+      "at": "2026-10-29T16:01:23+00:00"
+    },
+    "12_careful_lucky": {
+      "plate": "12_careful_lucky",
+      "part": "04",
+      "take": 1,
+      "model": "Veo 3.1 - Fast",
+      "quality": "Fast",
+      "priority_overlay_plate": false,
+      "start_frame": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part04/refs/v03_flow_stills/12_careful_lucky_t1.png",
+      "start_frame_sha256": "f7ad8d6e2f5416842ae3385d43f7f0cef988e078335533a87ae07128055c1d8c",
+      "credits_before": 19170,
+      "status": "KEEP",
+      "submitted_at": "2026-10-29T16:02:23+00:00",
+      "project_url": "https://flow.google.com/project/cb1d1b18-4258-4199-a525-fbe7d43a69e2",
+      "uat_note": "KEEP vs v03 board, sources and period look (3D cartoon house look, continuous motion, no readable text)",
+      "file": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part04/raw/v01/12_careful_lucky_t1.mp4",
+      "sha256": "ef801318171f4af42488938193cf20dfdd62a7fdee8b98c6558f3892d1abcd81",
+      "duration_s": 8.0,
+      "uat_sheet": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part04/uat/12_careful_lucky_t1_sheet.jpg",
+      "motion": {
+        "freeze_events_0p8s": 0
+      },
+      "credits_after": 19160,
+      "credits_used": 10,
+      "credits_ui_drop": 10,
+      "account": "benoats@googlemail.com",
+      "at": "2026-10-29T16:04:24+00:00"
+    },
+    "13_gazette_page": {
+      "plate": "13_gazette_page",
+      "part": "04",
+      "take": 1,
+      "model": "Veo 3.1 - Fast",
+      "quality": "Fast",
+      "priority_overlay_plate": false,
+      "start_frame": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part04/refs/v03_flow_stills/13_gazette_page_t1.png",
+      "start_frame_sha256": "6fdc782b0f8df353516b20698ebfe74762e0f133f29ee3a281b4ae6103589469",
+      "credits_before": 19160,
+      "status": "KEEP",
+      "submitted_at": "2026-10-29T16:05:24+00:00",
+      "project_url": "https://flow.google.com/project/eb3e600a-f724-4184-97a4-427470c6421b",
+      "uat_note": "KEEP vs v03 board, sources and period look (3D cartoon house look, continuous motion, no readable text)",
+      "file": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part04/raw/v01/13_gazette_page_t1.mp4",
+      "sha256": "d236114e3003ff55776ce716000e5b69a37106cbbae861719073d86f54a8e8f9",
+      "duration_s": 8.0,
+      "uat_sheet": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part04/uat/13_gazette_page_t1_sheet.jpg",
+      "motion": {
+        "freeze_events_0p8s": 0
+      },
+      "credits_after": 19150,
+      "credits_used": 10,
+      "credits_ui_drop": 10,
+      "account": "benoats@googlemail.com",
+      "at": "2026-10-29T16:07:42+00:00"
+    },
+    "14_royal_society": {
+      "plate": "14_royal_society",
+      "part": "04",
+      "take": 1,
+      "model": "Veo 3.1 - Fast",
+      "quality": "Fast",
+      "priority_overlay_plate": false,
+      "start_frame": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part04/refs/v03_flow_stills/14_royal_society_t1.png",
+      "start_frame_sha256": "db25a0c86c2b490721eea489d272b9e2e5abcd1d9eaa59302dd48740b6bc968f",
+      "credits_before": 19150,
+      "status": "KEEP",
+      "submitted_at": "2026-10-29T16:08:42+00:00",
+      "project_url": "https://flow.google.com/project/1dbbce87-3d05-4a92-8cd3-553d4d7cd882",
+      "uat_note": "KEEP vs v03 board, sources and period look (3D cartoon house look, continuous motion, no readable text)",
+      "file": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part04/raw/v01/14_royal_society_t1.mp4",
+      "sha256": "b1d8718e8029e20f5188a5218fe12e361b01ed388298563119e5c1d8f9620151",
+      "duration_s": 8.0,
+      "uat_sheet": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part04/uat/14_royal_society_t1_sheet.jpg",
+      "motion": {
+        "freeze_events_0p8s": 0
+      },
+      "credits_after": 19140,
+      "credits_used": 10,
+      "credits_ui_drop": 10,
+      "account": "benoats@googlemail.com",
+      "at": "2026-10-29T16:10:39+00:00"
+    },
+    "15_copley_medal": {
+      "plate": "15_copley_medal",
+      "part": "04",
+      "take": 1,
+      "model": "Veo 3.1 - Fast",
+      "quality": "Fast",
+      "priority_overlay_plate": false,
+      "start_frame": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part04/refs/v03_flow_stills/15_copley_medal_t1.png",
+      "start_frame_sha256": "5ce3e2e724e322b68ee50bb2a514cd61040985e9b2b216ece4a75199ad75684d",
+      "credits_before": 19140,
+      "status": "KEEP",
+      "submitted_at": "2026-10-29T16:11:39+00:00",
+      "project_url": "https://flow.google.com/project/0fc0eecf-8883-4472-816f-f86620ed52b8",
+      "uat_note": "KEEP vs v03 board, sources and period look (3D cartoon house look, continuous motion, no readable text)",
+      "file": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part04/raw/v01/15_copley_medal_t1.mp4",
+      "sha256": "821bb355c2b13a47bcb710f8f1680c516e4cccb7446b61d410ef77d3087bf3e4",
+      "duration_s": 8.0,
+      "uat_sheet": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part04/uat/15_copley_medal_t1_sheet.jpg",
+      "motion": {
+        "freeze_events_0p8s": 0
+      },
+      "credits_after": 19130,
+      "credits_used": 10,
+      "credits_ui_drop": 10,
+      "account": "benoats@googlemail.com",
+      "at": "2026-10-29T16:13:37+00:00"
+    },
+    "16_rod_idea": {
+      "plate": "16_rod_idea",
+      "part": "04",
+      "take": 1,
+      "model": "Veo 3.1 - Fast",
+      "quality": "Fast",
+      "priority_overlay_plate": false,
+      "start_frame": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part04/refs/v03_flow_stills/16_rod_idea_t1.png",
+      "start_frame_sha256": "54faefb927446ad8ede00ac41099979575b4576dab79eacad7655ba5b3fc2e4f",
+      "credits_before": 19130,
+      "status": "KEEP",
+      "submitted_at": "2026-10-29T16:14:37+00:00",
+      "project_url": "https://flow.google.com/project/c598a1fa-34f7-4725-af67-092f70f31eb7",
+      "uat_note": "KEEP vs v03 board, sources and period look (3D cartoon house look, continuous motion, no readable text)",
+      "file": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part04/raw/v01/16_rod_idea_t1.mp4",
+      "sha256": "e3a3fffa741ed48ce1ff75c30d79d78a5b16a10df8d57df382585397e00d5674",
+      "duration_s": 8.0,
+      "uat_sheet": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part04/uat/16_rod_idea_t1_sheet.jpg",
+      "motion": {
+        "freeze_events_0p8s": 0
+      },
+      "credits_after": 19120,
+      "credits_used": 10,
+      "credits_ui_drop": 10,
+      "account": "benoats@googlemail.com",
+      "at": "2026-10-29T16:16:54+00:00"
+    },
+    "17_roofs_storm": {
+      "plate": "17_roofs_storm",
+      "part": "04",
+      "take": 1,
+      "model": "Veo 3.1 - Fast",
+      "quality": "Fast",
+      "priority_overlay_plate": false,
+      "start_frame": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part04/refs/v03_flow_stills/17_roofs_storm_t1.png",
+      "start_frame_sha256": "080dbb019ae44d5b40c51ff5a5563520a15e347c1b48b0e7d313f248c1b605a5",
+      "credits_before": 19120,
+      "status": "KEEP",
+      "submitted_at": "2026-10-29T16:17:54+00:00",
+      "project_url": "https://flow.google.com/project/c4d01b22-8f79-44c2-8f05-c18593bf1668",
+      "uat_note": "KEEP vs v03 board, sources and period look (3D cartoon house look, continuous motion, no readable text)",
+      "file": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part04/raw/v01/17_roofs_storm_t1.mp4",
+      "sha256": "ca48726a4059904f287578270110d72832d0832a3421584b7ab5ce781b0e772f",
+      "duration_s": 8.0,
+      "uat_sheet": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part04/uat/17_roofs_storm_t1_sheet.jpg",
+      "motion": {
+        "freeze_events_0p8s": 0
+      },
+      "credits_after": 19110,
+      "credits_used": 10,
+      "credits_ui_drop": 10,
+      "account": "benoats@googlemail.com",
+      "at": "2026-10-29T16:20:05+00:00"
     }
   },
   "balance_reads": [
@@ -2333,7 +2603,62 @@
       "at": "2026-10-29T15:46:15+00:00",
       "credits": 19300,
       "after": "07_kite_cloud_wide"
+    },
+    {
+      "at": "2026-10-29T15:48:23+00:00",
+      "credits": 19300,
+      "when": "batch-start-p05"
+    },
+    {
+      "at": "2026-10-29T15:51:36+00:00",
+      "credits": 19200,
+      "after": "09_charge_string"
+    },
+    {
+      "at": "2026-10-29T15:54:34+00:00",
+      "credits": 19190,
+      "after": "09_charge_string_c1"
+    },
+    {
+      "at": "2026-10-29T15:57:59+00:00",
+      "credits": 19180,
+      "after": "10_richmann_rod"
+    },
+    {
+      "at": "2026-10-29T16:01:23+00:00",
+      "credits": 19170,
+      "after": "11_richmann_room"
+    },
+    {
+      "at": "2026-10-29T16:04:24+00:00",
+      "credits": 19160,
+      "after": "12_careful_lucky"
+    },
+    {
+      "at": "2026-10-29T16:07:42+00:00",
+      "credits": 19150,
+      "after": "13_gazette_page"
+    },
+    {
+      "at": "2026-10-29T16:10:39+00:00",
+      "credits": 19140,
+      "after": "14_royal_society"
+    },
+    {
+      "at": "2026-10-29T16:13:37+00:00",
+      "credits": 19130,
+      "after": "15_copley_medal"
+    },
+    {
+      "at": "2026-10-29T16:16:54+00:00",
+      "credits": 19120,
+      "after": "16_rod_idea"
+    },
+    {
+      "at": "2026-10-29T16:20:05+00:00",
+      "credits": 19110,
+      "after": "17_roofs_storm"
     }
   ],
-  "updated": "2026-10-29T15:46:15+00:00"
+  "updated": "2026-10-29T16:20:58+00:00"
 }
