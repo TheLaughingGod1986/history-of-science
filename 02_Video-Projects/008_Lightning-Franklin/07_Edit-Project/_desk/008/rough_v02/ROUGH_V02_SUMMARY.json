@@ -298,8 +298,13 @@
     "cuts remapped through pause-trim"
   ],
   "gates_method": "local /private/tmp/j1218_gates then sync",
-  "delivered_pending": [
+  "delivered_pending": [],
+  "delivered": [
     "desk",
-    "nas"
-  ]
+    "nas",
+    "pr376"
+  ],
+  "episode_gate": "PASS",
+  "warn_motion_review": "done_2026-10-29",
+  "pipeline_updated": true
 }

@@ -98,3 +98,7 @@ Diagnostic rough v02 delivered for Chief review (J1213 FIX). v01 preserved.
 
 Evidence: `_desk/008/rough_v02/J1218_REPAIR_NOTES.md` + gate packs beside the master.
 
+- Episode gate **PASS** (re-run on diagnostic pack 29 Oct late)
+- WARN motion sample: 3 Flow plates moving; 3 code-graphic near-holds deferred to **J1193**
+
+

@@ -40,3 +40,23 @@ See `polish_gate_rough_v02.*`, `picture_qa_rough_v02/`, `music_gate_rough_v02.*`
 
 - No upload, schedule, privacy change, or Ben Ready-for-OK card.
 - No final OK / PASS / merge of AGENTS or Never-list changes.
+
+
+## WARN motion review (Cursor, 29 Oct late)
+
+Six low-detail WARNs sampled at mid-row +0.5s (MAD = mean abs luma diff):
+
+| Row | t | MAD/0.5s | Note |
+|---|---|---|---|
+| `13_ring_the_bells_c1` | 1:19 | 9.97 | Moving plate; soft rain/steeple — WARN only |
+| `14_likeness_pairs` | 2:46 | 0.12 | Code graphic near-hold; **J1193** |
+| `15_wet_dry` | 4:28 | 0.04 | Code graphic near-hold; **J1193** |
+| `19_kite_climb` | 4:51 | 19.15 | Moving plate OK |
+| `09_wood_vs_metal` | 7:36 | 0.03 | Code graphic near-hold; **J1193** |
+| `18_rod_closeup` | 8:31 | 11.71 | Moving plate OK (edge floor WARN only) |
+
+No automated freeze FAILs on polish_gate v02. CG near-holds are expected for static teaching cards; final graphics PASS still waits on **J1193**. Frames under `/private/tmp/j1218_warn_frames/` (not committed).
+
+## Episode gate
+
+`npm run gate:episode` **PASS** (script 92.1) — see `episode_gate_rough_v02.txt`.
