@@ -12,7 +12,7 @@
 | **005** The Tied Arm That Proved Your Blood Circulates | Thu 29 Oct (0 d) | 100% | all stages done | — | — | Fri 2 Oct | 🟢 on track |
 | **006** The Willow Tree That Was Made of Air | Thu 5 Nov (7 d) | 100% | all stages done | — | — | Sun 1 Nov (in 3 d) | 🟢 on track |
 | **007** Why Vaccines Are Named After a Cow | Thu 12 Nov (14 d) | 100% | all stages done | — | — | Sun 8 Nov (in 10 d) | 🟢 on track |
-| **008** Why Did Franklin Fly a Kite in a Storm? | Thu 19 Nov (21 d) | 75% | Picture (in progress) | **Gemini** · ⏸ waiting: Chief picture PASS (J1191 + J0329) | 112/112 board rows rendered (11 code graphics + 101/101 Flow plates KEEP) | Sun 15 Nov (in 17 d) | 🟢 on track |
+| **008** Why Did Franklin Fly a Kite in a Storm? | Thu 19 Nov (21 d) | 80% | Picture (in progress) | **Gemini** · ⏸ waiting: Chief picture PASS (J1191 + J0329); J1193 code-graphic motion review | 112/112 board rows rendered (11 code graphics + 101/101 Flow plates KEEP) | Sun 15 Nov (in 17 d) | 🟢 on track |
 | **009** Why Doesn't the Moon Fall to Earth? | Thu 26 Nov (28 d) | 35% | Shorts voiceover (to do) | **Cursor** · queued (after 010 long VO) | starts later; due 21 d late | Sun 22 Nov (in 24 d) | ⛔ blocked |
 | **010** What Killed the Dinosaurs Was Hidden in a Line of Clay | Thu 3 Dec (35 d) | 35% | Shorts voiceover (to do) | **Cursor** · queued (after 010 long VO) | starts later; due 21 d late | Sun 29 Nov (in 31 d) | 🟠 behind |
 
@@ -23,7 +23,7 @@
 
 **Grok**
 - ▶️ Underway: nothing right now
-- ⏭ Next up: 008 Edit + master, due Thu 12 Nov; 009 Edit + master, due Thu 19 Nov; 010 Edit + master, due Thu 26 Nov
+- ⏭ Next up: 008 Thumbnails, due Thu 12 Nov; 009 Edit + master, due Thu 19 Nov; 010 Edit + master, due Thu 26 Nov
 
 **Ben**
 - ▶️ Underway: nothing right now
@@ -31,7 +31,7 @@
 
 **Cursor**
 - ▶️ Underway: nothing right now
-- ⏸ Waiting: 004 Thumbnails: J0106: C v07b file (don't touch the armed test), then the Chief's OK; 009 Picture: mint after 006 (0 Flow), 007 and 008; tranche 1 only when a live Flow read stays at least 3,000 after 7,354; tranche 2 (5,180) after the ~12 Nov AI Ultra renewal
+- ⏸ Waiting: 004 Thumbnails: J0106: C v07b file (don't touch the armed test), then the Chief's OK; 008 Edit + master: Chief review of rough v02; J1193 graphics motion review; music/SFX after Chief OK / credit; 009 Picture: mint after 006 (0 Flow), 007 and 008; tranche 1 only when a live Flow read stays at least 3,000 after 7,354; tranche 2 (5,180) after the ~12 Nov AI Ultra renewal
 - ⏭ Next up: 009 Shorts voiceover, due Thu 8 Oct; 010 Shorts voiceover, due Thu 8 Oct
 
 **Chief**
@@ -39,12 +39,13 @@
 
 **Gemini**
 - ▶️ Underway: nothing right now
-- ⏸ Waiting: 008 Picture: Chief picture PASS (J1191 + J0329)
+- ⏸ Waiting: 008 Picture: Chief picture PASS (J1191 + J0329); J1193 code-graphic motion review
 
 ## Being worked on right now
 
 - **004** · 🔄 **Thumbnails** — in progress (0%, with Cursor since Fri 9 Oct, ⏸ waiting: J0106: C v07b file (don't touch the armed test), then the Chief's OK, due Tue 13 Oct (16 d late)): A + B live in the armed test; C v07 armed but not OK'd. v07b re-letter (no spend) is J0106; Chief's OK by Wed 14 Oct 18:00, else pair 2 comes out
-- **008** · 🔄 **Picture** — in progress (100%, 112/112 board rows rendered (11 code graphics + 101/101 Flow plates KEEP), with Gemini since Fri 16 Oct, ⏸ waiting: Chief picture PASS (J1191 + J0329), due Sun 8 Nov (in 10 d)): J1191 complete (parked for Chief picture PASS): all 101/101 Flow v03 rows minted and KEEP (6/6 priority overlay moving plates + Part 01 22/22 + Part 02 17/17 + Part 03 25/25 + Part 04 16/16 + Part 05 21/21; 15 Quality + 86 Fast = 2,320 cr used vs 5,605 expected / 6,500 cap; live Flow 20,870 -> 18,550 >= 3,000 buffer) + 11 £0 code graphics (J0329). Synced to NAS.
+- **008** · 🔄 **Picture** — in progress (100%, 112/112 board rows rendered (11 code graphics + 101/101 Flow plates KEEP), with Gemini since Fri 16 Oct, ⏸ waiting: Chief picture PASS (J1191 + J0329); J1193 code-graphic motion review, due Sun 8 Nov (in 10 d)): J1191 complete (parked for Chief picture PASS): all 101/101 Flow v03 rows minted and KEEP (6/6 priority overlay moving plates + Part 01 22/22 + Part 02 17/17 + Part 03 25/25 + Part 04 16/16 + Part 05 21/21; 15 Quality + 86 Fast = 2,320 cr used vs 5,605 expected / 6,500 cap; live Flow 20,870 -> 18,550 >= 3,000 buffer) + 11 £0 code graphics (J0329). Synced to NAS.
+- **008** · 🔄 **Edit + master** — in progress (50%, 1/2 diagnostic rough (v02 delivered; Chief+J1193 pending), with Cursor since Thu 29 Oct, ⏸ waiting: Chief review of rough v02; J1193 graphics motion review; music/SFX after Chief OK / credit, due Thu 12 Nov (in 14 d)): J1218 diagnostic rough v02: sequential 06_same_thing, full-frame 10_metal_easy, 09_window_storm left-5pct reframe, §4 pause-trim 557.8→540.0s. sha256 edebeaf7… Desk+NAS. polish/picture PASS (6 WARN). music SKIPPED_NO_BED. Assembler _assemble_rough_v02.py. PR #376.
 - **009** · ⛔ **Picture** — blocked (0%, with Cursor since Thu 15 Oct, ⛔ blocked: mint after 006 (0 Flow), 007 and 008; tranche 1 only when a live Flow read stays at least 3,000 after 7,354; tranche 2 (5,180) after the ~12 Nov AI Ultra renewal, due Sun 15 Nov (in 17 d)): J0336 v04 plate boards KEEP (Chief PASS 15 Oct): 90 rows (46 Quality / 31 Fast / 12 £0 code graphics / 1 reuse); Flow expected 12,534 (tranche 1 7,354 / tranche 2 5,180). No mint. See PRICE_REVIEW_v04.md.
 
 ## Next steps (in order)
@@ -157,11 +158,11 @@ Private `ETynHpIYLeY`, publishAt Thu 12 Nov 2026 18:00 London. End screen saved:
 
 ### 008 · Why Did Franklin Fly a Kite in a Storm?
 
-`███████████████░░░░░` **75%**
+`████████████████░░░░` **80%**
 
 Airs **Thu 19 Nov** · ready for Ben's OK by **Sun 15 Nov** · 🟢 on track
 
-Long VO (9:14.8) + Shorts VO (v02 pair) locked. All 101/101 Flow rows of boards v03 minted and KEEP (J1191, 29 Oct: 15 Quality + 86 Fast = 2,320 cr vs 5,605 expected / 6,500 cap; live Flow 18,550 >= 3,000 buffer) + 11 £0 code graphics (J0329) = 112/112 rows. Synced to NAS. Parked for Chief picture PASS.
+Long VO + Shorts VO locked. Picture 101/101 Flow KEEP (J1191) + 11 code graphics. Edit: J1218 diagnostic rough v02 delivered 29 Oct (540.02s ≤9:00; polish+picture PASS, 6 low-detail WARNs; music SKIPPED_NO_BED NOT PASS). Parked for Chief; J1193 still required for graphics PASS. v01 preserved.
 
 - ✅ **Topic** — done
 - ✅ **Script** — done: v01, 92.1
@@ -170,8 +171,8 @@ Long VO (9:14.8) + Shorts VO (v02 pair) locked. All 101/101 Flow rows of boards 
 - ✅ **Voiceover (long)** — done: long VO locked 7 Oct: 5 parts, 555 s (9:14.8), 7,497 chars; Part 01 pause trimmed, Part 05 one sentence re-recorded; Claude PASS each part (VO_TAKES_KEEP.json)
 - ✅ **Shorts scripts** — done: v02 (test B): two search-titled Shorts, 9 Oct
 - ✅ **Shorts voiceover** — done: locked 12 Oct (PR #296): Short 01 v01 (22.36 s), Short 02 v02 (22.42 s); both PASS vo_check + Claude listening
-- 🔄 **Picture** — in progress (100%, 112/112 board rows rendered (11 code graphics + 101/101 Flow plates KEEP), with Gemini since Fri 16 Oct, ⏸ waiting: Chief picture PASS (J1191 + J0329), due Sun 8 Nov (in 10 d)): J1191 complete (parked for Chief picture PASS): all 101/101 Flow v03 rows minted and KEEP (6/6 priority overlay moving plates + Part 01 22/22 + Part 02 17/17 + Part 03 25/25 + Part 04 16/16 + Part 05 21/21; 15 Quality + 86 Fast = 2,320 cr used vs 5,605 expected / 6,500 cap; live Flow 20,870 -> 18,550 >= 3,000 buffer) + 11 £0 code graphics (J0329). Synced to NAS.
-- ⬜ **Edit + master** — to do (with Grok, due Thu 12 Nov (in 14 d))
+- 🔄 **Picture** — in progress (100%, 112/112 board rows rendered (11 code graphics + 101/101 Flow plates KEEP), with Gemini since Fri 16 Oct, ⏸ waiting: Chief picture PASS (J1191 + J0329); J1193 code-graphic motion review, due Sun 8 Nov (in 10 d)): J1191 complete (parked for Chief picture PASS): all 101/101 Flow v03 rows minted and KEEP (6/6 priority overlay moving plates + Part 01 22/22 + Part 02 17/17 + Part 03 25/25 + Part 04 16/16 + Part 05 21/21; 15 Quality + 86 Fast = 2,320 cr used vs 5,605 expected / 6,500 cap; live Flow 20,870 -> 18,550 >= 3,000 buffer) + 11 £0 code graphics (J0329). Synced to NAS.
+- 🔄 **Edit + master** — in progress (50%, 1/2 diagnostic rough (v02 delivered; Chief+J1193 pending), with Cursor since Thu 29 Oct, ⏸ waiting: Chief review of rough v02; J1193 graphics motion review; music/SFX after Chief OK / credit, due Thu 12 Nov (in 14 d)): J1218 diagnostic rough v02: sequential 06_same_thing, full-frame 10_metal_easy, 09_window_storm left-5pct reframe, §4 pause-trim 557.8→540.0s. sha256 edebeaf7… Desk+NAS. polish/picture PASS (6 WARN). music SKIPPED_NO_BED. Assembler _assemble_rough_v02.py. PR #376.
 - ⬜ **Thumbnails** — to do (with Grok, due Thu 12 Nov (in 14 d))
 - ⬜ **Ben's final OK** — to do (with Ben, due Sun 15 Nov (in 17 d))
 - ⬜ **Scheduled** — to do (with Grok, due Mon 16 Nov (in 18 d))

@@ -84,3 +84,21 @@ ALL CHECKS PASS
 ```
 
 
+## 29 October 2026 — J1218 rough v02 (Cursor)
+
+Diagnostic rough v02 delivered for Chief review (J1213 FIX). v01 preserved.
+
+- Master 540.02s (≤9:00), sha256 `edebeaf7e71d29051135859d7ad7e87bb4ee73d7e52a37b8251ccfb951dcad06`
+- Desk: `07_Edit-Project/_desk/008/rough_v02/` · NAS: `…/008_Lightning-Franklin/07_Edit-Project/rough_v02/`
+- Assembler: `_assemble_rough_v02.py` (pause-trim cut remap fix)
+- polish_gate **PASS** (0 fail / 6 low-detail WARN) · picture_qa **PASS** (0 fail / 6 WARN)
+- music_gate **SKIPPED_NO_BED** (NOT PASS) · SFX unfinished
+- J1193 still open (required for final graphics PASS)
+- No Ben Ready-for-OK · no upload · £0 · no new Flow/music
+
+Evidence: `_desk/008/rough_v02/J1218_REPAIR_NOTES.md` + gate packs beside the master.
+
+- Episode gate **PASS** (re-run on diagnostic pack 29 Oct late)
+- WARN motion sample: 3 Flow plates moving; 3 code-graphic near-holds deferred to **J1193**
+
+
