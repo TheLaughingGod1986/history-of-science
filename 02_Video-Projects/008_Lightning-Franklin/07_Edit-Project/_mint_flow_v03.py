@@ -325,6 +325,16 @@ def harvest_project_mp4(page, flow, project_url: str, dest: Path, wait_s: int = 
             elapsed = time.time() - t0
             print(f"  harvest poll gen_thumbs={gen_thumbs} vids={vids} elapsed={elapsed:.0f}s", flush=True)
             if gen_thumbs > 0 or vids > 0 or elapsed >= 45:
+                try:
+                    close_btn = page.locator('[aria-label="Close account panel"]')
+                    if close_btn.count():
+                        close_btn.first.click(timeout=1500)
+                        page.wait_for_timeout(300)
+                    if gen_thumbs > 0 and vids == 0:
+                        page.locator('img[alt*="Generated video" i]').first.hover(timeout=3000)
+                        page.wait_for_timeout(2000)
+                except Exception:
+                    pass
                 body = mint006.hover_fetch(page)
                 if body and len(body) >= 400_000:
                     dest.write_bytes(body)
@@ -500,40 +510,46 @@ def main() -> int:
         print(f"  pill before={pill0!r}", flush=True)
         if still._pill_is_image_wide(pill0) and "x1" in pill0:
             return pill0
-        flow._open_prompt_settings_pill(page)
-        page.wait_for_timeout(900)
-        for kind in ("image", "16:9", "x1"):
-            box = page.evaluate(
-                """(kind) => {
-                  for (const b of document.querySelectorAll('button[role=radio],button[role=tab],[role=radio],button')) {
-                    const aria = (b.getAttribute('aria-label') || '').trim();
-                    if (/Settings trigger/i.test(aria)) continue;
-                    const t = ((b.innerText||'')+' '+aria).trim().replace(/\\n+/g, ' ');
-                    let ok = false;
-                    if (kind === 'image') ok = (/\\bimage\\b/i.test(t) || /banana/i.test(t)) && !/video|veo|omni|All media|Images/i.test(t) && t.length < 30;
-                    else if (kind === '16:9') ok = (/crop_16_9|\\b16:9\\b|crop_landscape/.test(t)) && t.length < 30;
-                    else if (kind === 'x1') ok = (b.innerText||'').trim() === 'x1';
-                    if (!ok) continue;
-                    const r = b.getBoundingClientRect();
-                    if (r.width > 16 && r.height > 14 && r.x > 400) return { x: r.x + r.width/2, y: r.y + r.height/2, t: t.slice(0,40) };
-                  }
-                  return null;
-                }""",
-                kind,
-            )
-            if box:
-                page.mouse.click(box["x"], box["y"])
-                page.wait_for_timeout(450)
-        page.keyboard.press("Escape")
-        page.wait_for_timeout(400)
-        pill = still.v02.pill_text(page)
-        print(f"  image-mode pill={pill!r}", flush=True)
-        if not still._pill_is_image_wide(pill):
-            raise RuntimeError(f"Flow Image 16:9 not selected: {pill!r}")
-        return pill
+        pill = pill0
+        for attempt in range(1, 4):
+            flow._open_prompt_settings_pill(page)
+            page.wait_for_timeout(900)
+            for kind in ("image", "16:9", "x1"):
+                box = page.evaluate(
+                    """(kind) => {
+                      for (const b of document.querySelectorAll('button[role=radio],button[role=tab],[role=radio],button')) {
+                        const aria = (b.getAttribute('aria-label') || '').trim();
+                        if (/Settings trigger/i.test(aria)) continue;
+                        const t = ((b.innerText||'')+' '+aria).trim().replace(/\\n+/g, ' ');
+                        let ok = false;
+                        if (kind === 'image') ok = (/\\bimage\\b/i.test(t) || /banana/i.test(t)) && !/video|veo|omni|All media|Images/i.test(t) && t.length < 30;
+                        else if (kind === '16:9') ok = (/crop_16_9|\\b16:9\\b|crop_landscape/.test(t)) && t.length < 30;
+                        else if (kind === 'x1') ok = (b.innerText||'').trim() === 'x1';
+                        if (!ok) continue;
+                        const r = b.getBoundingClientRect();
+                        if (r.width > 16 && r.height > 14 && r.x > 400) return { x: r.x + r.width/2, y: r.y + r.height/2, t: t.slice(0,40) };
+                      }
+                      return null;
+                    }""",
+                    kind,
+                )
+                if box:
+                    page.mouse.click(box["x"], box["y"])
+                    page.wait_for_timeout(450)
+            page.keyboard.press("Escape")
+            page.wait_for_timeout(500)
+            pill = still.v02.pill_text(page)
+            print(f"  image-mode pill (try {attempt})={pill!r}", flush=True)
+            if still._pill_is_image_wide(pill):
+                return pill
+            page.wait_for_timeout(1000)
+        raise RuntimeError(f"Flow Image 16:9 not selected: {pill!r}")
 
     def _safe_read_account(page) -> tuple[int | None, str | None]:
         try:
+            close_btn = page.locator('[aria-label="Close account panel"]')
+            if close_btn.count():
+                close_btn.first.click(timeout=1500)
             page.keyboard.press("Escape")
             page.wait_for_timeout(250)
         except Exception:
@@ -555,10 +571,13 @@ def main() -> int:
             big = [h for h in hits if h > 200]
             if big:
                 credits = max(big)
-            try:
-                page.keyboard.press("Escape")
-            except Exception:
-                pass
+        try:
+            close_btn = page.locator('[aria-label="Close account panel"]')
+            if close_btn.count():
+                close_btn.first.click(timeout=1500)
+            page.keyboard.press("Escape")
+        except Exception:
+            pass
         return credits, account
 
     def _safe_attach_image_to_prompt(page, ref: Path) -> bool:
