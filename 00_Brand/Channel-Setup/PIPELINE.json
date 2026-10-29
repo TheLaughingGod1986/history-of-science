@@ -441,13 +441,13 @@
           "owner": "Gemini",
           "since": "2026-10-16",
           "underway": true,
-          "note": "J1191 in progress: 81/101 Flow v03 rows KEEP (6/6 priority overlay plates + Part 01 22/22 + Part 02 17/17 + Part 03 25/25 + Part 04 16/16 complete + Part 05 1/21; 1,760 cr used vs 6,500 cap, live Flow 19,110, rem_expected 1,356, buffer 17,754 >= 3,000) + 11 \u00a30 code graphics (J0329).",
+          "note": "J1191 in progress: 100/101 Flow v03 rows KEEP (6/6 priority overlay plates + Part 01 22/22 + Part 02 17/17 + Part 03 25/25 + Part 04 16/16 complete + Part 05 20/21; 2,310 cr used vs 6,500 cap, live Flow 18,560, rem_expected 20, buffer 18,540 >= 3,000) + 11 \u00a30 code graphics (J0329).",
           "waiting": "Chief review of J0329 graphics; mint only after 006 and 007 with live Flow reading leaving at least 3,000 credits after 008 expected spend",
           "steps": [
-            92,
+            111,
             112
           ],
-          "steps_unit": "board rows rendered (11 code graphics + 81/101 Flow plates KEEP)"
+          "steps_unit": "board rows rendered (11 code graphics + 100/101 Flow plates KEEP)"
         },
         "edit": {
           "status": "todo",
