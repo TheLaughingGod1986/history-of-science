@@ -170,7 +170,7 @@
       "buffer": "registered in OWB social/hos/UPLOADS.json (long ETynHpIYLeY, J0875); held until public (2026-11-13T11:30:00Z), then the full film",
       "related": "unset while 007 long ETynHpIYLeY is Private (publishAt 2026-11-12T18:00:00Z); Studio picker lists public videos only. J0875 sets ETynHpIYLeY once the long is public on Thu 12 Nov 18:00Z (before Fri 13 Nov 11:30Z).",
       "social": {
-        "hook": "On 1 July 1796, Edward Jenner tested whether cowpox protected a boy from smallpox — and no disease followed.",
+        "hook": "On 1 July 1796, Edward Jenner tested whether cowpox protected a boy from smallpox \u2014 and no disease followed.",
         "question": "What did Edward Jenner's first vaccine test prove?",
         "alt": "A mahogany lancet case with ivory-handled steel lancets on Edward Jenner's study table in 1796; hook caption THE FIRST TEST."
       },
@@ -195,7 +195,7 @@
       "buffer": "registered in OWB social/hos/UPLOADS.json (long ETynHpIYLeY, J0875); held until public (2026-11-17T11:30:00Z), then the full film",
       "related": "unset while 007 long ETynHpIYLeY is Private (publishAt 2026-11-12T18:00:00Z); Studio picker lists public videos only. J0875 sets ETynHpIYLeY once the long is public on Thu 12 Nov 18:00Z (before Fri 13 Nov 11:30Z).",
       "social": {
-        "hook": "Twenty-two years before Edward Jenner's 1798 book, Benjamin Jesty tried cowpox — and from vacca, Latin for cow, came vaccination.",
+        "hook": "Twenty-two years before Edward Jenner's 1798 book, Benjamin Jesty tried cowpox \u2014 and from vacca, Latin for cow, came vaccination.",
         "question": "Why are vaccines named after a cow?",
         "alt": "A dairy cow in a golden Dorset meadow at sunset; hook caption NOT THE FIRST."
       }
@@ -442,7 +442,7 @@
       "captions": "en-GB standard, serving, from the v05 spoken line, AUieDaYHjCQCo8qCUgxoKXYRRpigg8iwXKXSXIPXhvplpKSn",
       "related": "not set this run. Source mTY67qet7cM Related was None. J0280 sets wwcjcFfC-5M on PFj6172YU4Q after the long is public, before 8 Nov.",
       "social": {
-        "hook": "One tight band on an arm proved blood goes round — Harvey's De Motu Cordis experiment.",
+        "hook": "One tight band on an arm proved blood goes round \u2014 Harvey's De Motu Cordis experiment.",
         "question": "Which way does the blood in your hand travel?",
         "alt": "A linen band tightening on an arm. Cover text ONE TIGHT BAND."
       }
@@ -501,9 +501,51 @@
       "related": "unset while 007 long ETynHpIYLeY is Private (publishAt 2026-11-12T18:00:00Z); Studio picker lists public videos only. J0875 sets ETynHpIYLeY on cLKDiYP55J8 (not -I_GHK-GcFs) once the long is public on Thu 12 Nov 18:00Z (before Fri 13 Nov 11:30Z).",
       "captions": "en-GB standard, from the v04 spoken line (J1219)",
       "social": {
-        "hook": "On 1 July 1796, Edward Jenner tested whether cowpox protected a boy from smallpox — and no disease followed.",
+        "hook": "On 1 July 1796, Edward Jenner tested whether cowpox protected a boy from smallpox \u2014 and no disease followed.",
         "question": "What did Edward Jenner's first vaccine test prove?",
         "alt": "A mahogany lancet case with ivory-handled steel lancets on Edward Jenner's study table in 1796; hook caption THE FIRST TEST."
+      }
+    },
+    "x_3L_IdYgEc": {
+      "kind": "short",
+      "standalone": false,
+      "standaloneTest": false,
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s03_never_saw_v01.mp4",
+      "long": "wwcjcFfC-5M",
+      "promotes": "005",
+      "registeredAt": "2026-10-01T00:00:00Z",
+      "social": {
+        "hook": "Harvey never saw how blood crosses from arteries to veins \u2014 Malpighi found vessels finer than a hair.",
+        "question": "What are the vessels finer than a hair called?",
+        "alt": "A frog's lung under a microscope; a net of vessels finer than hairs. Hook caption THE LAST LINK."
+      },
+      "publishAt": null,
+      "privacyStatus": "private",
+      "supersededBy": "Wvjd8g0CpzE",
+      "unscheduledAt": "2026-10-29T23:48:30Z",
+      "note": "J1223. Private and unscheduled. Title unchanged. Nothing deleted. Replaced by v04 Wvjd8g0CpzE (sha e1f862ba737a)."
+    },
+    "Wvjd8g0CpzE": {
+      "kind": "short",
+      "standalone": false,
+      "standaloneTest": false,
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s03_never_saw_v04.mp4",
+      "sha256": "e1f862ba737acc4276dd676fc93181b41e729fce029fed57318bf43add3e9f63",
+      "packageDir": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/11_Upload-Package/s03_never_saw_v04",
+      "thumb": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/11_Upload-Package/s03_never_saw_v04/cover.jpg",
+      "long": "wwcjcFfC-5M",
+      "promotes": "005",
+      "publishAt": "2026-11-15T11:30:00Z",
+      "privacyStatus": "private",
+      "replaces": "x_3L_IdYgEc",
+      "registeredAt": "2026-10-29T23:48:30Z",
+      "buffer": "registered in OWB social/hos/UPLOADS.json (long wwcjcFfC-5M, J1223 swap from x_3L_IdYgEc); held until public (2026-11-15T11:30:00Z), then the full film",
+      "related": "Studio: set Related -> wwcjcFfC-5M on Wvjd8g0CpzE (J0280 retargeted from x_3L_IdYgEc). Long is public since 29 Oct.",
+      "captions": "en-GB standard, from the v04 spoken line (J1223)",
+      "social": {
+        "hook": "Harvey never saw how blood crosses from arteries to veins \u2014 Malpighi found vessels finer than a hair.",
+        "question": "What are the vessels finer than a hair called?",
+        "alt": "A frog's lung under a microscope; a net of vessels finer than hairs. Hook caption THE LAST LINK."
       }
     }
   }
