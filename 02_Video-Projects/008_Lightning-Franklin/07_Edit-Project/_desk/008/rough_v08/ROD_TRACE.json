@@ -1,0 +1,72 @@
+{
+  "plate_in_point_s": 4.541666666666667,
+  "source_frame": 109,
+  "window_end_s": 7.5,
+  "aim_pct": 1.0,
+  "align_ok": true,
+  "seam_ok": true,
+  "polish_rc": 0,
+  "picture_rc": 0,
+  "samples": [
+    {
+      "pct": 10,
+      "plate_s": 4.8375,
+      "row_s": 0.2958,
+      "rod_x": 1172.0,
+      "trace_x": 1180.5,
+      "offset_px": -8.5,
+      "offset_pct_of_width": -0.44,
+      "offset_px_at_1024": -4.5,
+      "tip_y": 27,
+      "vertical_seams": []
+    },
+    {
+      "pct": 25,
+      "plate_s": 5.2812,
+      "row_s": 0.7396,
+      "rod_x": 1163.5,
+      "trace_x": 1180.5,
+      "offset_px": -17.0,
+      "offset_pct_of_width": -0.89,
+      "offset_px_at_1024": -9.1,
+      "tip_y": 20,
+      "vertical_seams": []
+    },
+    {
+      "pct": 50,
+      "plate_s": 6.0208,
+      "row_s": 1.4792,
+      "rod_x": 1189.5,
+      "trace_x": 1180.5,
+      "offset_px": 9.0,
+      "offset_pct_of_width": 0.47,
+      "offset_px_at_1024": 4.8,
+      "tip_y": 25,
+      "vertical_seams": []
+    },
+    {
+      "pct": 75,
+      "plate_s": 6.7604,
+      "row_s": 2.2188,
+      "rod_x": 1198.0,
+      "trace_x": 1180.5,
+      "offset_px": 17.5,
+      "offset_pct_of_width": 0.91,
+      "offset_px_at_1024": 9.3,
+      "tip_y": 24,
+      "vertical_seams": []
+    },
+    {
+      "pct": 90,
+      "plate_s": 7.2042,
+      "row_s": 2.6625,
+      "rod_x": 1198.0,
+      "trace_x": 1180.5,
+      "offset_px": 17.5,
+      "offset_pct_of_width": 0.91,
+      "offset_px_at_1024": 9.3,
+      "tip_y": 23,
+      "vertical_seams": []
+    }
+  ]
+}
