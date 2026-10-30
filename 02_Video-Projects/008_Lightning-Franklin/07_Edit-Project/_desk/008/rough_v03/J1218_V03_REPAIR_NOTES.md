@@ -1,24 +1,25 @@
 # J1218 — HOS 008 diagnostic rough v03 (in progress)
 
-**Worker:** cursor. **Ruling:** FIX / NOT APPROVED (Chief 29–30 Oct). No Ben Ready-for-OK.
+**Worker:** cursor. **No Ben Ready-for-OK.** Park for Chief after gates.
 
-## Scope this run
+## Status (30 Oct ~02:10 UTC)
 
-1. Non-destructive assembler `_assemble_rough_v03.py` (fresh WORK `…/j1218-hos008-rough-v03`, never unlink/rmtree prior NAS v01/v02).
-2. Graphics pack `code_graphics_v02/` via `_build_code_graphics_v02.py` (ten J1193 FIX rows + P5:11 KEEP).
-3. P5:10 alpha over KEEP `06_rod_fitting` (breaks 09/10/11 full-frame chain).
-4. Side labels cleared on P4:08 / P5:11 boards.
-5. Contact-sheet labels = actual sampled mid times.
-6. Bellin/1752 coordinate claims corrected as UNVERIFIED PROPOSALS — illustrative Atlantic only.
+- Graphics pack `code_graphics_v02` rendered (£0) with J1193 ten-FIX timing/contrast/alpha changes; P5:11 KEEP label.
+- Source correction addendum: Bellin coords are UNVERIFIED PROPOSALS — illustrative geography only.
+- Assembler `_assemble_rough_v03.py`: non-destructive NAS; P5:10 alpha over KEEP `06_rod_fitting`; side-label suppress; contact-sheet mid-interval labels.
+- First asm attempt failed at part 01 (`NameError: pid`); fixed `p["id"]` and restarted detached.
 
-## Outstanding after render
+## Detached run
 
-- picture_qa / polish_gate / episode gate on v03
-- Per-row motion/VO/phone evidence table
-- Music SKIPPED_NO_BED (NOT PASS); SFX unfinished
-- J1193 formal graphics approval still required for picture PASS
-- Park for Chief with SHA + paths; no upload
+- tmux: `j1218-asm-v03`
+- log: `~/_desk/logs/j1218-asm-v03.log`
+- done: `~/_desk/logs/j1218-asm-v03.done` (missing = still running)
+- WORK: `/Volumes/data/mac-mini-archive/tmp-render-scratch/j1218-hos008-rough-v03/`
 
-## £0
+## Outstanding after master lands
 
-No Flow / ElevenLabs / Vertex spend under this job.
+- picture_qa / polish_gate / episode_gate on remapped cuts
+- WARN motion findings + Teach/Polish checklist
+- Music SKIPPED_NO_BED (not PASS); SFX unfinished
+- Durable SHA + desk/NAS copy; production-status + PIPELINE update in PR
+- Elected-Chief graphics/composite review (J1193 formal PASS still separate prerequisite for film picture PASS)
