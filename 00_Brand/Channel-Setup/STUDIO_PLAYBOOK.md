@@ -399,6 +399,10 @@ HOS social posting is **Buffer via HOS Showrunner only**.
 - **Auth:** `BUFFER_HOS_API_KEY` against the **HOS** Buffer org. Never the Orbit Buffer org, and never the Buffer connector (Orbit-only).
 - **YouTube** uploads stay in Studio / the YouTube Data API (`STUDIO_PLAYBOOK.md` §9). Buffer does not upload to YouTube.
 - **What Buffer posts:** Shorts only (TikTok, Instagram, Facebook when those channels are connected in the HOS Buffer org). **Long films are never cross-posted via Buffer.**
+- **Register every Short at upload/swap (J1202, 29–30 Oct 2026).** Do **not** leave a "Buffer held until public" note and walk away. The HOS `youtube:package` `afterUpload` hook registers the final PHONE/master mp4 + long id into Orbit `orbit-with-ben/00_Brand/Channel-Setup/social/hos/UPLOADS.json` (sha256 recorded). Studio CDP / hand uploads and file swaps must run the same registration from the Orbit checkout:
+  `cd ../orbit-with-ben/07_Content-Ops && npx tsx scripts/buffer-mirror.ts register --channel hos --video <shortId> --media <master.mp4> --long <longId>`
+  (or `--standalone` if there is no long). Any swap, rebuild or hold of a Short also updates or cancels its Buffer posts and its `social/hos/UPLOADS.json` entry in the same job.
+- **Daily mirror when Public/scheduled:** Orbit's 07:05 `buffer-mirror.ts check --channel hos` picks up registered Shorts (hosts on R2, never Vercel Blob), schedules Instagram/Facebook/TikTok for the YouTube go-public time inside Buffer's 7-day / 10-slot free-plan window, and never duplicates an existing `BUFFER_POSTS.json` row. Dry-run: `check --channel hos --dry-run`. Nothing is posted while the upload hook runs.
 - **Captions point to the full film:**
   - **Facebook:** include the direct YouTube link to the long.
   - **TikTok / Instagram:** "Full film on YouTube, link in bio" (no raw YouTube URL in-caption where the platform punishes links).
