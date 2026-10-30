@@ -702,7 +702,8 @@ def assemble_part(part_no: int, mint: dict, special: dict[str, Path]) -> dict:
 
         seg_path = seg_dir / f"seg_{k:02d}_{p['id']}.mp4"
         label = (p.get("side_label") or "").strip()
-        if pid in SUPPRESS_SIDE_LABEL:
+        # Suppress duplicate headers already baked into CG / overlay rows (J1193 / Chief).
+        if p["id"] in SUPPRESS_SIDE_LABEL:
             label = ""
         t_in_part = f_in / FPS
         t_out_part = f_out / FPS
