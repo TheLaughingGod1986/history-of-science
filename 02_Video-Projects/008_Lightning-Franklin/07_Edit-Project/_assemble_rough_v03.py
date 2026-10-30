@@ -777,24 +777,29 @@ def assemble_part(part_no: int, mint: dict, special: dict[str, Path]) -> dict:
         cur_frames += n_frames
         print(f"  P{pstr} {k+1}/{len(plates)} {p['id']} {n_frames}f", flush=True)
 
-    concat_txt = out_dir / "concat.txt"
-    concat_txt.write_text("".join(f"file '{s}'\n" for s in segs))
-    pic_mp4 = out_dir / "picture_only.mp4"
-    sp.run(
-        ["ffmpeg", "-y", "-v", "error", "-f", "concat", "-safe", "0", "-i", str(concat_txt), "-c", "copy", str(pic_mp4)],
-        check=True,
-    )
     total_s = cur_frames / FPS
     cut_mp4 = out_dir / f"{name}.mp4"
-    # Mux on local /tmp without +faststart, then rsync — NAS +faststart hangs (J1218).
+    # Concat + VO mux entirely on local /tmp, then rsync masters — NAS ffmpeg writes hang (J1218).
     import tempfile
 
     local_mux_dir = Path(tempfile.mkdtemp(prefix=f"j1218v03_p{pstr}_mux_", dir="/private/tmp"))
+    local_concat = local_mux_dir / "concat.txt"
+    local_pic = local_mux_dir / "picture_only.mp4"
     local_cut = local_mux_dir / cut_mp4.name
+    # Rewrite concat paths; keep NAS segs as source inputs (read-only).
+    local_concat.write_text("".join(f"file '{s}'\n" for s in segs))
+    (out_dir / "concat.txt").write_text(local_concat.read_text())
     try:
         sp.run(
             [
-                "ffmpeg", "-y", "-v", "error", "-i", str(pic_mp4), "-i", str(vo_path),
+                "ffmpeg", "-y", "-v", "error", "-f", "concat", "-safe", "0",
+                "-i", str(local_concat), "-c", "copy", str(local_pic),
+            ],
+            check=True,
+        )
+        sp.run(
+            [
+                "ffmpeg", "-y", "-v", "error", "-i", str(local_pic), "-i", str(vo_path),
                 "-map", "0:v", "-map", "1:a", "-c:v", "copy",
                 "-af", "apad", "-c:a", "aac", "-b:a", "192k", "-ar", "48000",
                 "-t", f"{total_s:.3f}", str(local_cut),
@@ -802,10 +807,10 @@ def assemble_part(part_no: int, mint: dict, special: dict[str, Path]) -> dict:
             check=True,
         )
         sp.run(["rsync", "-a", str(local_cut), str(cut_mp4)], check=True)
+        # Optional local picture_only retained briefly for debug; do not leave NAS picture_only.
     finally:
         shutil.rmtree(local_mux_dir, ignore_errors=True)
     shutil.rmtree(seg_dir, ignore_errors=True)
-    pic_mp4.unlink(missing_ok=True)
 
     # Per-part freezedetect / polish / picture_qa deferred to full-film join
     # (Chief needs gates on the delivered v03 master; per-part gates on NAS were multi-hour).
