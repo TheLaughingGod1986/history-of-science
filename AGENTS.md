@@ -42,7 +42,7 @@ Also in force as references: `01_Character/CHARACTER_BIBLE.md` (the Explorer) an
 | `docs/` | Tech notes (Veo, playback fixes, publishing adapters, affiliate) |
 | `_archive/` | Superseded docs, rules, one-off scripts, old audits and the Orbit leftovers. **Ignore unless asked.** |
 
-**Social posting (5 Oct 2026):** HOS Shorts go out through **Buffer via HOS Showrunner** only (`BUFFER_HOS_API_KEY`, HOS Buffer org). Never the Orbit Buffer org or the Buffer connector. YouTube stays in Studio. Long films are never cross-posted via Buffer. HOS Threads posting stops until Ben adds a Threads channel. Old Meta/Threads/TikTok CDP auto-post trees are under `_archive/00_Brand/Channel-Setup/`. Details: `STUDIO_PLAYBOOK.md` §12.
+**Social posting (5 Oct 2026; register-at-upload J1202, 30 Oct 2026):** HOS Shorts go out through **Buffer via HOS Showrunner** only (`BUFFER_HOS_API_KEY`, HOS Buffer org). Never the Orbit Buffer org or the Buffer connector. YouTube stays in Studio. Long films are never cross-posted via Buffer. HOS Threads posting stops until Ben adds a Threads channel. **Every Short upload/swap registers** the final master into Orbit `social/hos/UPLOADS.json` at upload time (`youtube:package` `afterUpload`, or `buffer-mirror.ts register --channel hos …`); the daily `check --channel hos` mirrors when Public/scheduled. Never end an upload with only "Buffer held until public". Old Meta/Threads/TikTok CDP auto-post trees are under `_archive/00_Brand/Channel-Setup/`. Details: `STUDIO_PLAYBOOK.md` §12.
 
 ## Commands
 
