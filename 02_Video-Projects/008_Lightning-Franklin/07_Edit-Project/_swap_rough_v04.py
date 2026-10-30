@@ -172,14 +172,19 @@ def splice_master(assets: dict[str, Path]) -> Path:
     parts: list[Path] = []
     for i, (kind, src, a, b) in enumerate(segments):
         out = work / f"seg_{i:02d}.mp4"
+        want = max(0.0, b - a)
+        # Accurate seek: -ss AFTER -i, duration via -t. Input -ss/-to inflated
+        # keep video (seg0 was 177.7s vs 168.2s audio) and broke the ≤540s lock.
         if kind == "keep":
             # Re-encode keeps so concat stays frame-accurate (copy drifts on keyframes).
             sp.run(
                 [
                     "ffmpeg", "-y", "-v", "error",
-                    "-ss", f"{a:.4f}", "-to", f"{b:.4f}", "-i", str(V03_MP4),
+                    "-i", str(V03_MP4),
+                    "-ss", f"{a:.4f}", "-t", f"{want:.4f}",
                     "-c:v", "libx264", "-preset", "veryfast", "-crf", "18", "-pix_fmt", "yuv420p",
                     "-c:a", "aac", "-b:a", "192k",
+                    "-avoid_negative_ts", "make_zero",
                     str(out),
                 ],
                 check=True,
@@ -190,7 +195,8 @@ def splice_master(assets: dict[str, Path]) -> Path:
             sp.run(
                 [
                     "ffmpeg", "-y", "-v", "error",
-                    "-ss", f"{a:.4f}", "-to", f"{b:.4f}", "-i", str(V03_MP4),
+                    "-i", str(V03_MP4),
+                    "-ss", f"{a:.4f}", "-t", f"{want:.4f}",
                     "-vn", "-c:a", "aac", "-b:a", "192k", str(aud),
                 ],
                 check=True,
@@ -206,8 +212,11 @@ def splice_master(assets: dict[str, Path]) -> Path:
                 ],
                 check=True,
             )
+        got = probe_dur(out)
+        if abs(got - want) > 0.35:
+            raise RuntimeError(f"seg {i} {kind} duration {got:.3f}s != want {want:.3f}s ({a:.3f}-{b:.3f})")
         parts.append(out)
-        print(f"  seg {i} {kind} {a:.3f}-{b:.3f} -> {probe_dur(out):.3f}s", flush=True)
+        print(f"  seg {i} {kind} {a:.3f}-{b:.3f} -> {got:.3f}s (want {want:.3f})", flush=True)
 
     # Re-encode concat (copy across mixed codecs is fragile after -c copy keeps).
     lst = work / "concat.txt"
