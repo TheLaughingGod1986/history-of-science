@@ -84,16 +84,31 @@ ALL CHECKS PASS
 ```
 
 
+## 30 October 2026 — J1218 diagnostic rough v03 (Cursor)
+
+Chief FIX / NOT APPROVED on v02 → separate diagnostic **v03** (v01/v02 preserved). £0; no new Flow/music; no Ben Ready-for-OK.
+
+- Master **540.02 s**, sha256 `0da87a8272ad5849abccf5d86acbf352cedf30d3189ef9ac8127efd24fc2934d`
+- Desk: `07_Edit-Project/_desk/008/rough_v03/` · NAS: `…/008_Lightning-Franklin/07_Edit-Project/rough_v03/`
+- Assembler: `_assemble_rough_v03.py` (non-destructive NAS; P5:10 alpha over KEEP `06_rod_fitting`; contact mid-interval labels; local mux)
+- Graphics: `code_graphics_v02` (J1193 ten-FIX + P5:11 KEEP). Bellin coords = **UNVERIFIED PROPOSALS** (`CODE_GRAPHICS_v01_REVIEW_SOURCE_CORRECTION.md`) — not historical fact.
+- polish_gate **PASS** (0 fail / 6 WARN) · picture_qa **PASS** (0 fail / 6 WARN)
+- music_gate **SKIPPED_NO_BED** (NOT PASS) · SFX unfinished
+- Formal elected-Chief graphics/composite PASS still required (J1193 review complete; assets not approved)
+- PR #379
+
+Evidence: `_desk/008/rough_v03/J1218_V03_REPAIR_NOTES.md` + gate packs beside the master.
+
 ## 29 October 2026 — J1218 rough v02 (Cursor)
 
-Diagnostic rough v02 delivered for Chief review (J1213 FIX). v01 preserved.
+Diagnostic rough v02 delivered for Chief review (J1213 FIX). v01 preserved. **Superseded for review by v03 above; v02 master retained.**
 
 - Master 540.02s (≤9:00), sha256 `edebeaf7e71d29051135859d7ad7e87bb4ee73d7e52a37b8251ccfb951dcad06`
 - Desk: `07_Edit-Project/_desk/008/rough_v02/` · NAS: `…/008_Lightning-Franklin/07_Edit-Project/rough_v02/`
 - Assembler: `_assemble_rough_v02.py` (pause-trim cut remap fix)
 - polish_gate **PASS** (0 fail / 6 low-detail WARN) · picture_qa **PASS** (0 fail / 6 WARN)
 - music_gate **SKIPPED_NO_BED** (NOT PASS) · SFX unfinished
-- J1193 still open (required for final graphics PASS)
+- J1193 still open at time of v02 (required for final graphics PASS)
 - No Ben Ready-for-OK · no upload · £0 · no new Flow/music
 
 Evidence: `_desk/008/rough_v02/J1218_REPAIR_NOTES.md` + gate packs beside the master.

@@ -1,35 +1,61 @@
-# J1218 — HOS 008 diagnostic rough v03 (render in progress)
+# J1218 — HOS 008 diagnostic rough v03
 
-**Worker:** cursor. **No Ben Ready-for-OK.** Park for Chief after gates + evidence pack.
+**Worker:** cursor. **No Ben Ready-for-OK.** Park for elected-Chief graphics/composite review.
 
-## Status (30 Oct ~02:19 UTC)
+## Master
 
-- `code_graphics_v02` rendered (£0): J1193 ten-FIX timing/contrast/alpha; P5:11 KEEP.
-- Source correction: Bellin coords = UNVERIFIED PROPOSALS (illustrative geography only).
-- Assembler `_assemble_rough_v03.py` (PR #379):
-  - non-destructive NAS WORK siblings (`*_rNN`)
-  - P5:10 cleaned alpha over KEEP `06_rod_fitting` (breaks 09/10/11 full-frame chain)
-  - side-label suppress for baked CG headers
-  - contact-sheet mid-interval labels (join)
-  - part concat+VO mux on local `/tmp` then rsync (NAS ffmpeg write hang)
-  - per-part polish/picture deferred; full-film gates on join
-- Live: part 01 DONE (105.42 s, sha `3c1d06ec4c52…`); part 02 assembling.
+| Field | Value |
+|---|---|
+| Version | `rough_v03` (v01 + v02 preserved) |
+| Duration | **540.02 s** container (pause-trim −17.792 s from 557.81 s) |
+| SHA256 | `0da87a8272ad5849abccf5d86acbf352cedf30d3189ef9ac8127efd24fc2934d` |
+| WORK | `/Volumes/data/mac-mini-archive/tmp-render-scratch/j1218-hos008-rough-v03/full_join_v03/` |
+| Desk | `07_Edit-Project/_desk/008/rough_v03/` |
+| NAS | `/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/rough_v03/` |
+| Assembler | `_assemble_rough_v03.py` |
+| Graphics | `code_graphics_v02` (£0; J1193 ten-FIX + P5:11 KEEP) |
+| PR | https://github.com/TheLaughingGod1986/history-of-science/pull/379 |
 
-## Detached run (do NOT start a second copy)
+## Chief FIX items addressed (29–30 Oct rulings)
+
+1. **Teach MOTION:** P5 `10_metal_easy` is cleaned alpha over KEEP `06_rod_fitting` (between full-frame `09_wood_vs_metal` and `11_safe_path`).
+2. **NAS safety:** fresh WORK/run dirs; no unlink/rmtree of prior NAS deliverables; local `/tmp` mux then rsync.
+3. **Contact-sheet labels:** mid-interval sampled master time (not stale `film_t`).
+4. **P4 `06_same_thing`:** sequential full-frame moving plates (no split); CG label from graphics v02.
+5. **J1193:** ten FIX rows rebuilt in `code_graphics_v02`; Bellin coords corrected as **UNVERIFIED PROPOSALS** (`CODE_GRAPHICS_v01_REVIEW_SOURCE_CORRECTION.md`). Formal graphics PASS still Chief.
+6. **Runtime ≤9:00:** 540.02 s; VO wording locked; no music generation.
+
+## Automated gates (full join)
+
+| Gate | Result |
+|---|---|
+| picture_qa | **PASS** — 0 FAIL / 6 low-detail WARN |
+| polish_gate | **PASS** — 0 FAIL / 6 WARN |
+| music_gate | **SKIPPED_NO_BED** — NOT PASS (credit hold / Chief OK) |
+| episode gate | see `episode_gate_rough_v03.txt` (this pack) |
+
+## Six WARN rows (picture_qa)
+
+| t | Row | Note |
+|---|---|---|
+| 1:19 | `13_ring_the_bells_c1` | soft rain/steeple plate |
+| 4:28 | `15_wet_dry` | code graphic |
+| 4:51 | `19_kite_climb` | moving plate |
+| 5:46 | `06_same_thing` | sequential overlay |
+| 6:58 | `02_wire_bells` | moving plate |
+| 8:31 | `18_rod_closeup` | moving plate |
+
+Motion/phone/Teach beyond these automated WARNs: Chief review of contact sheet + master. No freeze FAILs claimed cleared solely from contact sheet.
+
+## Outstanding (not PASS)
+
+- Elected-Chief graphics/composite PASS on the eleven rows + v03 cut
+- Music / SFX finishing (`SKIPPED_NO_BED`)
+- No Ben watch / upload / privacy change
+- £0 spend under this job; no new Flow mint
+
+## Detached run record
 
 - tmux: `j1218-asm-v03`
 - log: `~/_desk/logs/j1218-asm-v03.log`
-- done: `~/_desk/logs/j1218-asm-v03.done` (missing = still running; then read exit code)
-- WORK: `/Volumes/data/mac-mini-archive/tmp-render-scratch/j1218-hos008-rough-v03/`
-- branch/PR: `cursor/j1218-hos008-rough-v03` · https://github.com/TheLaughingGod1986/history-of-science/pull/379
-
-## Next run when `.done` present
-
-1. exit 0 → verify master ≤540 s, sha, desk/NAS copy; episode gate; WARN motion notes; production-status + PIPELINE (008-only, no HOS005/J1223); update PR; park for Chief graphics/composite review with eleven-row dispositions.
-2. non-zero → read log; fix; restart once.
-
-## Outstanding (not claimed as PASS)
-
-- Music `SKIPPED_NO_BED` (not PASS); SFX unfinished
-- Formal J1193/J1218 elected-Chief graphics PASS
-- No Ben watch / upload / privacy change
+- done: `~/_desk/logs/j1218-asm-v03.done`

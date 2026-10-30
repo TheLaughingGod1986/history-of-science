@@ -1,0 +1,401 @@
+{
+  "film": "008_Lightning-Franklin",
+  "job": "J1218",
+  "version": "rough_v03",
+  "work_dir": "/Volumes/data/mac-mini-archive/tmp-render-scratch/j1218-hos008-rough-v03/full_join_v03",
+  "mp4": "/Volumes/data/mac-mini-archive/tmp-render-scratch/j1218-hos008-rough-v03/full_join_v03/hos_008_rough_v03.mp4",
+  "sha256": "0da87a8272ad5849abccf5d86acbf352cedf30d3189ef9ac8127efd24fc2934d",
+  "duration_s": 540.021321,
+  "rows": 112,
+  "parts": [
+    {
+      "part": 1,
+      "slug": "part01_rough_v03",
+      "out_dir": "/Volumes/data/mac-mini-archive/tmp-render-scratch/j1218-hos008-rough-v03/part01_rough_v03_r04",
+      "authority": "J1218 diagnostic v03; J1191 KEEP; PR374 MERGED; J1193 Chief FIX 30 Oct (ten FIX + P5:11 KEEP)",
+      "vo": "/private/tmp/j1218-v03-wt/02_Video-Projects/008_Lightning-Franklin/02_Voiceover/hos_008_part01_fire_from_the_sky_v01b.mp3",
+      "vo_sha256": "70d09944dc04d1a5875644fd42496cc25ba042e6ad7b2339ca20fa2678ba5cce",
+      "picture_s": 105.4167,
+      "frames": 2530,
+      "rows": 22,
+      "mp4": "/Volumes/data/mac-mini-archive/tmp-render-scratch/j1218-hos008-rough-v03/part01_rough_v03_r04/hos_008_part01_rough_v03.mp4",
+      "sha256": "3c1d06ec4c52f36101fb35c06a60fcdffd9bfaa24299b7684331b26a8807034c",
+      "polish_gate_exit": null,
+      "picture_qa_exit": null,
+      "freeze_lines": null,
+      "part_gates": "deferred_to_full_join",
+      "no_music": true,
+      "j1193_note": "J1193 findings dispositioned in code_graphics_v02 + assembler; formal graphics PASS still Chief"
+    },
+    {
+      "part": 2,
+      "slug": "part02_rough_v03",
+      "out_dir": "/Volumes/data/mac-mini-archive/tmp-render-scratch/j1218-hos008-rough-v03/part02_rough_v03",
+      "authority": "J1218 diagnostic v03; J1191 KEEP; PR374 MERGED; J1193 Chief FIX 30 Oct (ten FIX + P5:11 KEEP)",
+      "vo": "/private/tmp/j1218-v03-wt/02_Video-Projects/008_Lightning-Franklin/02_Voiceover/hos_008_part02_the_sparks_in_a_jar_v01.mp3",
+      "vo_sha256": "59daa3df240a20c098eb0a70f03133ef0e8fbf59a42abf790f8c91410720e7ed",
+      "picture_s": 91.25,
+      "frames": 2190,
+      "rows": 19,
+      "mp4": "/Volumes/data/mac-mini-archive/tmp-render-scratch/j1218-hos008-rough-v03/part02_rough_v03/hos_008_part02_rough_v03.mp4",
+      "sha256": "676b53d813dccc41d24e8d709b1b223a6831784089f003f5d543e01f9c298050",
+      "polish_gate_exit": null,
+      "picture_qa_exit": null,
+      "freeze_lines": null,
+      "part_gates": "deferred_to_full_join",
+      "no_music": true,
+      "j1193_note": "J1193 findings dispositioned in code_graphics_v02 + assembler; formal graphics PASS still Chief"
+    },
+    {
+      "part": 3,
+      "slug": "part03_rough_v03",
+      "out_dir": "/Volumes/data/mac-mini-archive/tmp-render-scratch/j1218-hos008-rough-v03/part03_rough_v03",
+      "authority": "J1218 diagnostic v03; J1191 KEEP; PR374 MERGED; J1193 Chief FIX 30 Oct (ten FIX + P5:11 KEEP)",
+      "vo": "/private/tmp/j1218-v03-wt/02_Video-Projects/008_Lightning-Franklin/02_Voiceover/hos_008_part03_a_kite_in_the_storm_v01.mp3",
+      "vo_sha256": "94ca02f76daa22b3a138ecd0977f9e69cff2a71ca270f62b4962a8398758c086",
+      "picture_s": 135.1667,
+      "frames": 3244,
+      "rows": 28,
+      "mp4": "/Volumes/data/mac-mini-archive/tmp-render-scratch/j1218-hos008-rough-v03/part03_rough_v03/hos_008_part03_rough_v03.mp4",
+      "sha256": "eff4d2f6540f3b2f6eb2288adf6d688ce0fdaec2826d783588a603c38c0aaa61",
+      "polish_gate_exit": null,
+      "picture_qa_exit": null,
+      "freeze_lines": null,
+      "part_gates": "deferred_to_full_join",
+      "no_music": true,
+      "j1193_note": "J1193 findings dispositioned in code_graphics_v02 + assembler; formal graphics PASS still Chief"
+    },
+    {
+      "part": 4,
+      "slug": "part04_rough_v03",
+      "out_dir": "/Volumes/data/mac-mini-archive/tmp-render-scratch/j1218-hos008-rough-v03/part04_rough_v03",
+      "authority": "J1218 diagnostic v03; J1191 KEEP; PR374 MERGED; J1193 Chief FIX 30 Oct (ten FIX + P5:11 KEEP)",
+      "vo": "/private/tmp/j1218-v03-wt/02_Video-Projects/008_Lightning-Franklin/02_Voiceover/hos_008_part04_the_spark_from_the_key_v01.mp3",
+      "vo_sha256": "4f2d3ddc133a9de2d718ee951d7b0f62d70d567d78701ee73642a791eeba1e01",
+      "picture_s": 94.5833,
+      "frames": 2270,
+      "rows": 18,
+      "mp4": "/Volumes/data/mac-mini-archive/tmp-render-scratch/j1218-hos008-rough-v03/part04_rough_v03/hos_008_part04_rough_v03.mp4",
+      "sha256": "a70aaed81e425a0cb2740d0894e5f262212a3b5b75ef4e4426f70c80ad2dda21",
+      "polish_gate_exit": null,
+      "picture_qa_exit": null,
+      "freeze_lines": null,
+      "part_gates": "deferred_to_full_join",
+      "no_music": true,
+      "j1193_note": "J1193 findings dispositioned in code_graphics_v02 + assembler; formal graphics PASS still Chief"
+    },
+    {
+      "part": 5,
+      "slug": "part05_rough_v03",
+      "out_dir": "/Volumes/data/mac-mini-archive/tmp-render-scratch/j1218-hos008-rough-v03/part05_rough_v03",
+      "authority": "J1218 diagnostic v03; J1191 KEEP; PR374 MERGED; J1193 Chief FIX 30 Oct (ten FIX + P5:11 KEEP)",
+      "vo": "/private/tmp/j1218-v03-wt/02_Video-Projects/008_Lightning-Franklin/02_Voiceover/hos_008_part05_the_rod_on_every_roof_v01b.mp3",
+      "vo_sha256": "e5e86140d0b7e5598eb8eeca39d0f260c2dcc9b698b36c119a8c51283c990c38",
+      "picture_s": 131.375,
+      "frames": 3153,
+      "rows": 25,
+      "mp4": "/Volumes/data/mac-mini-archive/tmp-render-scratch/j1218-hos008-rough-v03/part05_rough_v03/hos_008_part05_rough_v03.mp4",
+      "sha256": "142cda95cc32f73c204eea4a649c41d9454ab3becf50c20bc05fc6847351e665",
+      "polish_gate_exit": null,
+      "picture_qa_exit": null,
+      "freeze_lines": null,
+      "part_gates": "deferred_to_full_join",
+      "no_music": true,
+      "j1193_note": "J1193 findings dispositioned in code_graphics_v02 + assembler; formal graphics PASS still Chief"
+    }
+  ],
+  "polish_gate_exit": 0,
+  "picture_qa_exit": 0,
+  "music_gate": {
+    "status": "SKIPPED_NO_BED",
+    "reason": "J1218: no music bed without Chief OK (ElevenLabs credit hold to 30 Oct). VO-only rough.",
+    "video": "/Volumes/data/mac-mini-archive/tmp-render-scratch/j1218-hos008-rough-v03/full_join_v03/hos_008_rough_v03.mp4",
+    "duration_s": 540.021321
+  },
+  "j1193": "review delivered (PR378) + Chief FIX 30 Oct; formal graphics approval still required; ten FIX rows dispositioned in v03",
+  "pr_374": "MERGED before assemble",
+  "pause_trim": {
+    "trimmed_s": 17.792,
+    "duration_in": 557.813,
+    "duration_out": 540.021,
+    "max_pause_s": 0.6,
+    "cuts": [
+      {
+        "from": 9.388,
+        "to": 9.884
+      },
+      {
+        "from": 18.111,
+        "to": 18.934
+      },
+      {
+        "from": 32.269,
+        "to": 32.99
+      },
+      {
+        "from": 53.311,
+        "to": 53.744
+      },
+      {
+        "from": 66.947,
+        "to": 67.852
+      },
+      {
+        "from": 87.062,
+        "to": 87.573
+      },
+      {
+        "from": 95.283,
+        "to": 96.018
+      },
+      {
+        "from": 118.269,
+        "to": 118.652
+      },
+      {
+        "from": 125.711,
+        "to": 126.091
+      },
+      {
+        "from": 132.896,
+        "to": 133.353
+      },
+      {
+        "from": 148.169,
+        "to": 148.654
+      },
+      {
+        "from": 160.036,
+        "to": 160.52
+      },
+      {
+        "from": 179.625,
+        "to": 180.167
+      },
+      {
+        "from": 191.324,
+        "to": 192.142
+      },
+      {
+        "from": 236.112,
+        "to": 236.524
+      },
+      {
+        "from": 252.696,
+        "to": 253.24
+      },
+      {
+        "from": 272.086,
+        "to": 272.569
+      },
+      {
+        "from": 280.145,
+        "to": 280.573
+      },
+      {
+        "from": 298.376,
+        "to": 298.85
+      },
+      {
+        "from": 306.512,
+        "to": 307.117
+      },
+      {
+        "from": 319.084,
+        "to": 319.701
+      },
+      {
+        "from": 322.862,
+        "to": 323.414
+      },
+      {
+        "from": 335.638,
+        "to": 336.169
+      },
+      {
+        "from": 344.435,
+        "to": 345.182
+      },
+      {
+        "from": 351.871,
+        "to": 352.657
+      },
+      {
+        "from": 363.385,
+        "to": 364.031
+      },
+      {
+        "from": 382.472,
+        "to": 383.107
+      },
+      {
+        "from": 398.045,
+        "to": 398.828
+      },
+      {
+        "from": 412.413,
+        "to": 412.908
+      },
+      {
+        "from": 485.794,
+        "to": 486.254
+      },
+      {
+        "from": 546.145,
+        "to": 546.607
+      },
+      {
+        "from": 557.048,
+        "to": 557.513
+      }
+    ],
+    "keep_ranges": [
+      {
+        "from": 0.0,
+        "to": 9.388
+      },
+      {
+        "from": 9.884,
+        "to": 18.111
+      },
+      {
+        "from": 18.934,
+        "to": 32.269
+      },
+      {
+        "from": 32.99,
+        "to": 53.311
+      },
+      {
+        "from": 53.744,
+        "to": 66.947
+      },
+      {
+        "from": 67.852,
+        "to": 87.062
+      },
+      {
+        "from": 87.573,
+        "to": 95.283
+      },
+      {
+        "from": 96.018,
+        "to": 118.269
+      },
+      {
+        "from": 118.652,
+        "to": 125.711
+      },
+      {
+        "from": 126.091,
+        "to": 132.896
+      },
+      {
+        "from": 133.353,
+        "to": 148.169
+      },
+      {
+        "from": 148.654,
+        "to": 160.036
+      },
+      {
+        "from": 160.52,
+        "to": 179.625
+      },
+      {
+        "from": 180.167,
+        "to": 191.324
+      },
+      {
+        "from": 192.142,
+        "to": 236.112
+      },
+      {
+        "from": 236.524,
+        "to": 252.696
+      },
+      {
+        "from": 253.24,
+        "to": 272.086
+      },
+      {
+        "from": 272.569,
+        "to": 280.145
+      },
+      {
+        "from": 280.573,
+        "to": 298.376
+      },
+      {
+        "from": 298.85,
+        "to": 306.512
+      },
+      {
+        "from": 307.117,
+        "to": 319.084
+      },
+      {
+        "from": 319.701,
+        "to": 322.862
+      },
+      {
+        "from": 323.414,
+        "to": 335.638
+      },
+      {
+        "from": 336.169,
+        "to": 344.435
+      },
+      {
+        "from": 345.182,
+        "to": 351.871
+      },
+      {
+        "from": 352.657,
+        "to": 363.385
+      },
+      {
+        "from": 364.031,
+        "to": 382.472
+      },
+      {
+        "from": 383.107,
+        "to": 398.045
+      },
+      {
+        "from": 398.828,
+        "to": 412.413
+      },
+      {
+        "from": 412.908,
+        "to": 485.794
+      },
+      {
+        "from": 486.254,
+        "to": 546.145
+      },
+      {
+        "from": 546.607,
+        "to": 557.048
+      },
+      {
+        "from": 557.513,
+        "to": 557.813
+      }
+    ],
+    "under_9min": true,
+    "method": "local_tmp_accurate_seek_segments",
+    "n_keep_segs": 33,
+    "trailing_cap_s": 0.321
+  },
+  "v01_preserved": true,
+  "repairs": [
+    "06_same_thing sequential",
+    "10_metal_easy alpha over KEEP rod_fitting",
+    "09_window_storm left-5pct reframe",
+    "side_label suppress P4:08/P5:11",
+    "non-destructive NAS",
+    "J1193 graphics v02",
+    "\u00a74 pause trim \u22649:00"
+  ]
+}

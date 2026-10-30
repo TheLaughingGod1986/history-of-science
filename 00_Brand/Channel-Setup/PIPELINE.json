@@ -397,7 +397,7 @@
       "title": "Why Did Franklin Fly a Kite in a Storm?",
       "air": "2026-11-19",
       "ready_by": "2026-11-15",
-      "summary": "Long VO + Shorts VO locked. Picture 101/101 Flow KEEP (J1191) + 11 code graphics. Edit: J1218 diagnostic rough v02 delivered 29 Oct (540.02s ≤9:00; polish+picture PASS, 6 low-detail WARNs; music SKIPPED_NO_BED NOT PASS). Parked for Chief; J1193 still required for graphics PASS. v01 preserved.",
+      "summary": "Long VO + Shorts VO locked. Picture 101/101 Flow KEEP (J1191) + code_graphics_v02 (J1193 ten-FIX). Edit: J1218 diagnostic rough v03 delivered 30 Oct (540.02s; sha 0da87a82…; polish+picture PASS, 6 WARN; music SKIPPED_NO_BED NOT PASS). Parked for elected-Chief graphics/composite review. v01/v02 preserved. Bellin coords UNVERIFIED PROPOSALS.",
       "stages": {
         "topic": {
           "status": "done"
@@ -441,8 +441,8 @@
           "owner": "Gemini",
           "since": "2026-10-16",
           "underway": false,
-          "note": "J1191 complete (parked for Chief picture PASS): all 101/101 Flow v03 rows minted and KEEP (6/6 priority overlay moving plates + Part 01 22/22 + Part 02 17/17 + Part 03 25/25 + Part 04 16/16 + Part 05 21/21; 15 Quality + 86 Fast = 2,320 cr used vs 5,605 expected / 6,500 cap; live Flow 20,870 -> 18,550 >= 3,000 buffer) + 11 £0 code graphics (J0329). Synced to NAS.",
-          "waiting": "Chief picture PASS (J1191 + J0329); J1193 code-graphic motion review",
+          "note": "J1191 complete: 101/101 Flow v03 KEEP + code_graphics_v02 (J1193 ten-FIX + P5:11 KEEP; Bellin UNVERIFIED). Synced locally; formal graphics PASS still Chief.",
+          "waiting": "Elected-Chief graphics/composite PASS on J1218 v03 + eleven-row dispositions",
           "steps": [
             112,
             112
@@ -455,13 +455,13 @@
           "owner": "Cursor",
           "since": "2026-10-29",
           "underway": false,
-          "note": "J1218 diagnostic rough v02: sequential 06_same_thing, full-frame 10_metal_easy, 09_window_storm left-5pct reframe, §4 pause-trim 557.8→540.0s. sha256 edebeaf7… Desk+NAS. polish/picture PASS (6 WARN). music SKIPPED_NO_BED. Assembler _assemble_rough_v02.py. PR #376.",
-          "waiting": "Chief review of rough v02; J1193 graphics motion review; music/SFX after Chief OK / credit",
+          "note": "J1218 diagnostic rough v03: P5:10 alpha over KEEP rod_fitting; sequential 06_same_thing; non-destructive NAS; mid-interval contact labels; pause-trim 557.8→540.0s. sha256 0da87a82…. Desk pack ready. polish/picture PASS (6 WARN). music SKIPPED_NO_BED. Assembler _assemble_rough_v03.py. PR #379.",
+          "waiting": "Elected-Chief review of rough v03 + graphics; music/SFX after Chief OK / credit",
           "steps": [
-            1,
+            2,
             2
           ],
-          "steps_unit": "diagnostic rough (v02 delivered; Chief+J1193 pending)"
+          "steps_unit": "diagnostic rough (v03 delivered; Chief graphics pending)"
         },
         "thumbnails": {
           "status": "todo",
