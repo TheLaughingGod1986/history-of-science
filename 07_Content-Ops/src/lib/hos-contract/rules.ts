@@ -205,6 +205,7 @@ export function isPublished(manifest: Record<string, unknown>, now = new Date())
 }
 
 const CHAPTER_LINE = /^((?:\d{1,2}:)?\d{1,2}:\d{2})\s+\S/;
+const RELEASE_WINDOW_MS = 7 * 24 * 60 * 60 * 1000;
 
 function stampSeconds(stamp: string): number {
   return stamp.split(":").reduce((t, part) => t * 60 + Number(part), 0);
@@ -215,18 +216,24 @@ function stampSeconds(stamp: string): number {
  * after the last: YouTube's own rules for showing chapters) and a Sources block (a "Sources" line
  * with at least one source after it). Shorts don't go through this.
  */
-export function checkChaptersAndSources(description: string): Finding[] {
+export function checkChaptersAndSources(description: string, severity: Severity = "error"): Finding[] {
   const f: Finding[] = [];
+  const suffix = severity === "warn" ? " (blocks at release)" : "";
+  const emit = (rule: string, message: string): Finding => ({
+    severity,
+    rule,
+    message: `${message}${suffix}`,
+  });
   const lines = description.split(/\r?\n/).map((l) => l.trim());
   const stamps = lines.map((l) => CHAPTER_LINE.exec(l)?.[1]).filter((x): x is string => !!x).map(stampSeconds);
   if (!stamps.length) {
-    f.push(err("description.chapters", "no Chapters block (0:00 first, then at least 2 more timestamps)"));
+    f.push(emit("description.chapters", "no Chapters block (0:00 first, then at least 2 more timestamps)"));
   } else {
-    if (stamps[0] !== 0) f.push(err("description.chapters", "the first chapter must start at 0:00"));
-    if (stamps.length < 3) f.push(err("description.chapters", `only ${stamps.length} chapter stamp(s); YouTube needs at least 3`));
+    if (stamps[0] !== 0) f.push(emit("description.chapters", "the first chapter must start at 0:00"));
+    if (stamps.length < 3) f.push(emit("description.chapters", `only ${stamps.length} chapter stamp(s); YouTube needs at least 3`));
     for (let i = 1; i < stamps.length; i++)
       if (stamps[i] - stamps[i - 1] < 10) {
-        f.push(err("description.chapters", "chapter stamps must rise by at least 10 s each"));
+        f.push(emit("description.chapters", "chapter stamps must rise by at least 10 s each"));
         break;
       }
   }
@@ -234,7 +241,7 @@ export function checkChaptersAndSources(description: string): Finding[] {
   const inline = at === -1 ? "" : lines[at].replace(/^sources\s*:?/i, "").trim();
   const next = at === -1 ? "" : lines.slice(at + 1).find((l) => l) || "";
   if (at === -1 || (!inline && (!next || CHAPTER_LINE.test(next))))
-    f.push(err("description.sources", "no Sources block (a Sources line with the sources under it)"));
+    f.push(emit("description.sources", "no Sources block (a Sources line with the sources under it)"));
   return f;
 }
 
@@ -276,7 +283,15 @@ export function lintLongPackage(input: LongPackageInput): Finding[] {
   if (/\/go\//.test(input.description) && !m.affiliate)
     f.push(err("description.go-link", "/go/ link in a description with no affiliate product"));
   if (!input.description.trim()) f.push(err("description.missing", "description is empty"));
-  else f.push(...checkChaptersAndSources(input.description));
+  else {
+    const hasVideo = typeof m.video === "string" && m.video.trim().length > 0;
+    const withinReleaseWindow =
+      typeof m.schedule === "string" &&
+      input.now != null &&
+      new Date(m.schedule).getTime() - input.now.getTime() <= RELEASE_WINDOW_MS;
+    const atRelease = hasVideo || withinReleaseWindow;
+    f.push(...checkChaptersAndSources(input.description, atRelease ? "error" : "warn"));
+  }
   if (!m.captionsFile) f.push(warn("captions", "no captionsFile (captions from the script)"));
   f.push(
     ...checkNeighbours({

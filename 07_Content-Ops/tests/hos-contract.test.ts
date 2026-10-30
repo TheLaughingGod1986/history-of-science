@@ -21,6 +21,7 @@ const goodManifest = {
   alteredContent: true,
   premiere: false,
   privacy: "private",
+  video: "../09_Final-Export/x.mp4",
   schedule: "2026-10-15T17:00:00.000Z", // Thu 18:00 BST
   captionsFile: "Captions/x.srt",
 };
@@ -63,6 +64,53 @@ describe("long description: chapters and sources", () => {
   it("fails a long package whose description has neither (Shorts are not checked)", () => {
     const r = rules(lintLongPackage(longInput(goodManifest, { description: "Why did Franklin fly a kite?" })));
     expect(r).toEqual(expect.arrayContaining(["description.chapters", "description.sources"]));
+  });
+  const draftManifest = {
+    ...goodManifest,
+    video: null,
+    schedule: "2026-11-26T18:00:00.000Z", // Thu 18:00 GMT
+  };
+  it("(a) warns (no error) on a draft package with neither block, video null, and schedule 30 days out", () => {
+    const findings = lintLongPackage(
+      longInput(draftManifest, {
+        description: "Why did Franklin fly a kite?",
+        now: new Date("2026-10-27T18:00:00.000Z"),
+      }),
+    );
+    expect(rules(findings)).toEqual([]);
+    expect(rules(findings, "warn")).toEqual(
+      expect.arrayContaining(["description.chapters", "description.sources"]),
+    );
+    expect(
+      findings
+        .filter((f) => f.rule === "description.chapters" || f.rule === "description.sources")
+        .every((f) => f.message.endsWith(" (blocks at release)")),
+    ).toBe(true);
+  });
+  it("(b) errors on the same package when video is set", () => {
+    const findings = lintLongPackage(
+      longInput(
+        { ...draftManifest, video: "../09_Final-Export/x.mp4" },
+        {
+          description: "Why did Franklin fly a kite?",
+          now: new Date("2026-10-27T18:00:00.000Z"),
+        },
+      ),
+    );
+    expect(rules(findings)).toEqual(
+      expect.arrayContaining(["description.chapters", "description.sources"]),
+    );
+  });
+  it("(c) errors on the same package with video null and schedule 3 days out", () => {
+    const findings = lintLongPackage(
+      longInput(draftManifest, {
+        description: "Why did Franklin fly a kite?",
+        now: new Date("2026-11-23T18:00:00.000Z"),
+      }),
+    );
+    expect(rules(findings)).toEqual(
+      expect.arrayContaining(["description.chapters", "description.sources"]),
+    );
   });
 });
 
