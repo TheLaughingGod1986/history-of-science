@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-29",
-  "updated_by": "gemini (J1191)",
+  "updated_by": "gemini (J1192)",
   "board_url": "https://claude.ai/artifact/Hhk519dkbHMzeaZfp3efhc",
   "stages": [
     {
@@ -104,8 +104,8 @@
     },
     {
       "pool": "Flow (picture)",
-      "left": "18,550 (read 29 Oct 17:22Z after J1191 P5:22_newton_handoff_c1 Fast 10 cr; all 101/101 Flow rows of 008 minted for 2,320 cr vs 6,500 cap)",
-      "rule": "Flow first for picture; AI Ultra active (renewed 12 Oct). Floor 0 (3,000 buffer on 008): never buy credits, top up or spill into billing.",
+      "left": "15,380 (read 29 Oct 23:06Z after J1192 P05:08_cup_and_planets_c1 Fast retake 10 cr; all 57/57 tranche-1 Flow rows of 009 minted for 3,170 cr vs 7,354 expected / 7,585 cap)",
+      "rule": "Flow first for picture; AI Ultra active (renewed 12 Oct). Floor 0 (3,000 buffer on 009 tranche 1): never buy credits, top up or spill into billing.",
       "checked": "29 Oct"
     }
   ],
@@ -472,7 +472,7 @@
       "title": "Why Doesn't the Moon Fall to Earth?",
       "air": "2026-11-26",
       "ready_by": "2026-11-22",
-      "summary": "Long VO v01 locked (Chief KEEP, desk 6101629662). Plate boards v04 KEEP (Chief PASS 15 Oct, J0335): 90 rows, 46 Quality / 31 Fast / 12 \u00a30 code graphics / 1 reuse. Flow expected 12,534 (tranche 1 7,354, tranche 2 5,180). No mint until after 006, 007 and 008.",
+      "summary": "Long VO v01 locked (Chief KEEP, desk 6101629662). Plate boards v04 KEEP (Chief PASS 15 Oct, J0335): 90 rows, 46 Quality / 31 Fast / 12 \u00a30 code graphics / 1 reuse. Tranche 1 complete: all 57/57 Flow rows (26 Quality + 31 Fast) minted and KEEP (J1192, 29 Oct: 3,170 cr vs 7,354 expected / 7,585 cap; live Flow 15,380 >= 3,000 buffer) + 12 \u00a30 code graphics (J0342/J0383) + 1 reuse = 70/90 rows. Synced to NAS. Parked for Chief tranche 1 PASS; tranche 2 (20 Quality rows, 5,180 expected) waits for ~12 Nov renewal.",
       "stages": {
         "topic": {
           "status": "done"
@@ -510,13 +510,18 @@
           "waiting": "after 010 long VO"
         },
         "picture": {
-          "status": "blocked",
+          "status": "doing",
           "due": "2026-11-15",
-          "owner": "Cursor",
-          "note": "J0336 v04 plate boards KEEP (Chief PASS 15 Oct): 90 rows (46 Quality / 31 Fast / 12 \u00a30 code graphics / 1 reuse); Flow expected 12,534 (tranche 1 7,354 / tranche 2 5,180). No mint. See PRICE_REVIEW_v04.md.",
+          "owner": "Gemini",
+          "note": "J1192 tranche 1 complete (parked for Chief tranche 1 PASS): all 57/57 tranche-1 Flow v04 rows minted and KEEP (Part 01 12/12 + Part 02 10/10 + Part 03 7/7 + Part 04 13/13 + Part 05 15/15, including 8 UAT retakes; 26 Quality + 31 Fast = 3,170 cr used vs 7,354 expected / 7,585 cap; live Flow 18,550 -> 15,380 >= 3,000 buffer) + 12 \u00a30 code graphics (J0342/J0383) + 1 reuse = 70/90 rows. Synced to NAS.",
           "since": "2026-10-15",
           "underway": false,
-          "waiting": "mint after 006 (0 Flow), 007 and 008; tranche 1 only when a live Flow read stays at least 3,000 after 7,354; tranche 2 (5,180) after the ~12 Nov AI Ultra renewal"
+          "waiting": "Chief tranche 1 PASS (J1192); tranche 2 (20 Quality rows, 5,180 expected) after the ~12 Nov AI Ultra renewal",
+          "steps": [
+            70,
+            90
+          ],
+          "steps_unit": "board rows rendered (12 code graphics + 57/57 tranche-1 Flow plates KEEP + 1 reuse; 20 tranche-2 wait ~12 Nov)"
         },
         "edit": {
           "status": "todo",
