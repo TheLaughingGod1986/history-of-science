@@ -83,4 +83,49 @@ NAS mirror pending: detached session `j0329-mirror-v2` is blocked in filesystem 
 ALL CHECKS PASS
 ```
 
+## 30 October 2026 — J1265 Long description Chapters + Sources block (Chief h13 on J1261, £0, Gemini covering)
+
+- **Authority:** Chief (Grok) ruling `h13` on `J1261` (30 Oct 2026, HOS `#180` re `6521114044`) and queue job `J1265`. Records only, `£0`, no YouTube/Studio change, no upload.
+- **Provisional chapters status:** **re-verify chapters against the locked master at picture lock** (any later trim moves stamps; the picture-lock job must re-check them).
+- **Chapters added to `11_Upload-Package/Descriptions/lightning_long_description_v01.txt` from Chief-reviewed rough `v08` (`hos_008_rough_v08.mp4`, master `sha256: c1f952a714c8758f66bf284b578873a449eb9bdecdff1782672983834be4d382`, `539.626 s`, `cuts_rough_v08.json`):**
+
+| Stamp | Chapter title | VO part (`02_Voiceover/`) | `cuts_rough_v08.json` first row & `timeline_in` (24 fps frame) | First VO word onset in `v08` (`c1f952a7`) |
+|---|---|---|---|---|
+| `0:00` | `Fire from the sky` | `part01_fire_from_the_sky` (`hos_008_part01_fire_from_the_sky_v01b.mp3`) | `01_kite_open` · `0.0000 s` (frame `0`) | `"In"` at `0.050 s` (`0:00.05`, frame `1`) |
+| `1:40` | `The sparks in a jar` | `part02_the_sparks_in_a_jar` (`hos_008_part02_the_sparks_in_a_jar_v01.mp3`) | `01_salon_tube` · `100.2510 s` (`1:40.25`, frame `2406`) | `"In"` at `100.5665 s` (`1:40.57`, frame `2414`) |
+| `3:08` | `A kite in the storm` | `part03_a_kite_in_the_storm` (`hos_008_part03_a_kite_in_the_storm_v01.mp3`) | `01_points_desk` · `187.9520 s` (`3:07.95`, frame `4511`) | `"Franklin"` at `188.5227 s` (`3:08.52`, frame `4525`) |
+| `5:19` | `The spark from the key` | `part04_the_spark_from_the_key` (`hos_008_part04_the_spark_from_the_key_v01.mp3`) | `01_knuckle_close` · `319.0037 s` (`5:19.00`, frame `7656`) | `"Slowly"` at `319.7680 s` (`5:19.77`, frame `7674`) |
+| `6:49` | `The rod on every roof` | `part05_the_rod_on_every_roof` (`hos_008_part05_the_rod_on_every_roof_v01b.mp3`) | `01_house_rod` · `408.9640 s` (`6:48.96`, frame `9815`) | `"In"` at `409.9576 s` (`6:49.96`, frame `9839`) |
+
+- **Sources block added under `Chapters` (7 plain citations from `01_Script/FACT_NOTES_v01.md` source column only; Founders Online / *Poor Richard Improved* (1753) cited for almanac wording, not NOAA):**
+  - `Benjamin Franklin, Pennsylvania Gazette (19 October 1752)`
+  - `Benjamin Franklin, Poor Richard Improved (1753), Founders Online`
+  - `Benjamin Franklin, Experiments and Observations on Electricity (London, 1751)`
+  - `Benjamin Franklin, Autobiography, Founders Online`
+  - `Joseph Priestley, The History and Present State of Electricity (1767)`
+  - `E. Philip Krider, "Benjamin Franklin and Lightning Rods", Physics Today (2006)`
+  - `NOAA / National Weather Service, "Lightning Myths and Facts"`
+- **Rest of description (`lightning_long_description_v01.txt`) and `PACKAGE_MANIFEST.json`:** opener, bullet list, `Watch next:` links, and sign-off kept byte-identical to `#383`; `PACKAGE_MANIFEST.json` `chaptersFile` left `null` (no `Chapters/` file for `008`).
+- **Repository check output (`00_Brand/Channel-Setup/tools/check_all.sh 02_Video-Projects/008_Lightning-Franklin`):**
+```text
+-- no media: PASS
+-- status board in sync: PASS
+-- ElevenLabs guard tests: PASS
+-- vo_check word tests: PASS
+-- contract tests: PASS
+-- package-lint: PASS
+-- review:script lightning_script_master_v01.md: PASS
+-- gate:episode: PASS
+ALL CHECKS PASS
+```
+- **Package lint on `main` and against PR `#387` (`origin/gemini/j1259-release-gate-chapters-sources` @ `592eaae7`, `checkChaptersAndSources`):**
+```text
+> content-ops@0.1.0 lint:package
+> tsx scripts/package-lint.ts --film 008
+
+PASS  02_Video-Projects/008_Lightning-Franklin/11_Upload-Package/PACKAGE_MANIFEST.json
+   warn  [captions] no captionsFile (captions from the script)
+```
+
+
 
