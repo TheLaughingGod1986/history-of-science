@@ -1,0 +1,31 @@
+1
+00:00:00,000 --> 00:00:01,735
+Every element is made of its own kind
+
+2
+00:00:01,786 --> 00:00:04,143
+of atom, and each kind has its own
+
+3
+00:00:04,210 --> 00:00:08,337
+weight. Hydrogen is the lightest. Oxygen is heavier.
+
+4
+00:00:08,508 --> 00:00:12,933
+Gold is heavier still. Why believe him? Because
+
+5
+00:00:12,984 --> 00:00:15,884
+elements always combine in the same fixed amounts.
+
+6
+00:00:16,014 --> 00:00:18,525
+Water is always the same mix of hydrogen
+
+7
+00:00:18,545 --> 00:00:21,407
+and oxygen, That only makes sense if both
+
+8
+00:00:21,426 --> 00:00:23,892
+are made of tiny pieces with fixed weights.

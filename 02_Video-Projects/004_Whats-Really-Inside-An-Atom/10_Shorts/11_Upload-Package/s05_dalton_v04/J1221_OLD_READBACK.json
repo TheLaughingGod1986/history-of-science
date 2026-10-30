@@ -1,0 +1,55 @@
+{
+  "at": "2026-10-30T00:33:44.691Z",
+  "job": "J1221",
+  "found": true,
+  "id": "-sa2t7dAtCk",
+  "title": "What Is Dalton's Atomic Theory?",
+  "description": "What's Really Inside an Atom?\nhttps://www.youtube.com/watch?v=GHZDsiH7L7A\n\nDalton's atomic theory: every element has its own kind of atom, and each kind has its own weight.",
+  "tags": [
+    "atomic theory",
+    "dalton atomic theory",
+    "history of science",
+    "history of the atom",
+    "john dalton",
+    "what is dalton's atomic theory"
+  ],
+  "categoryId": "27",
+  "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+  "defaultLanguage": "en-GB",
+  "defaultAudioLanguage": "en-GB",
+  "privacy": "private",
+  "publishAt": "2026-11-16T11:30:00Z",
+  "kids": false,
+  "synthetic": false,
+  "license": "youtube",
+  "embeddable": true,
+  "duration": "PT25S",
+  "hasCustomThumbnail": true,
+  "thumbnails": {
+    "default": {
+      "url": "https://i9.ytimg.com/vi/-sa2t7dAtCk/default.jpg?sqp=CIjKj9cG&rs=AOn4CLBJ4I9Ca0u0-7eS_4nvwg6SbX4JhQ",
+      "width": 120,
+      "height": 90
+    },
+    "medium": {
+      "url": "https://i9.ytimg.com/vi/-sa2t7dAtCk/mqdefault.jpg?sqp=CIjKj9cG&rs=AOn4CLC-Z-GuOpK7eWowYw89oWXpqlLImQ",
+      "width": 320,
+      "height": 180
+    },
+    "high": {
+      "url": "https://i9.ytimg.com/vi/-sa2t7dAtCk/hqdefault.jpg?sqp=CIjKj9cG&rs=AOn4CLAz0wU23ZOSbFXTsCrF4sEXvLlk8A",
+      "width": 480,
+      "height": 360
+    },
+    "standard": {
+      "url": "https://i9.ytimg.com/vi/-sa2t7dAtCk/sddefault.jpg?sqp=CIjKj9cG&rs=AOn4CLAXwiediKX79u5Xg_a6Bb_iAejNaQ",
+      "width": 640,
+      "height": 480
+    },
+    "maxres": {
+      "url": "https://i9.ytimg.com/vi/-sa2t7dAtCk/maxresdefault.jpg?sqp=CIjKj9cG&rs=AOn4CLBokSD-EzBTcfs7WuaL-MTktXUczA",
+      "width": 1280,
+      "height": 720
+    }
+  }
+}

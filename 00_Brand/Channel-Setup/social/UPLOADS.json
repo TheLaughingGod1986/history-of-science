@@ -547,6 +547,48 @@
         "question": "What are the vessels finer than a hair called?",
         "alt": "A frog's lung under a microscope; a net of vessels finer than hairs. Hook caption THE LAST LINK."
       }
+    },
+    "-sa2t7dAtCk": {
+      "kind": "short",
+      "standalone": false,
+      "standaloneTest": false,
+      "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/hos_004_s05_dalton_v03.mp4",
+      "long": "GHZDsiH7L7A",
+      "promotes": "004",
+      "registeredAt": "2026-10-01T00:00:00Z",
+      "social": {
+        "hook": "Every element is made of its own kind of atom, and each kind has its own weight.",
+        "question": "What is Dalton's atomic theory?",
+        "alt": "Hook caption EACH ATOM over Dalton's theory beat; elements combine in fixed amounts."
+      },
+      "publishAt": null,
+      "privacyStatus": "private",
+      "supersededBy": "xzKoHg0E0_U",
+      "unscheduledAt": "2026-10-30T00:36:06Z",
+      "note": "J1221. Private and unscheduled. Title unchanged. Nothing deleted. Replaced by v04 xzKoHg0E0_U (sha 8ce07a605697)."
+    },
+    "xzKoHg0E0_U": {
+      "kind": "short",
+      "standalone": false,
+      "standaloneTest": false,
+      "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/hos_004_s05_dalton_v04.mp4",
+      "sha256": "8ce07a60569707f689c7d90e06826493bf7a40e5c3c3a4a05216d6a48dbb082c",
+      "packageDir": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/11_Upload-Package/s05_dalton_v04",
+      "thumb": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/11_Upload-Package/s05_dalton_v04/cover.jpg",
+      "long": "GHZDsiH7L7A",
+      "promotes": "004",
+      "publishAt": "2026-11-16T11:30:00Z",
+      "privacyStatus": "private",
+      "replaces": "-sa2t7dAtCk",
+      "registeredAt": "2026-10-30T00:36:06Z",
+      "buffer": "registered in OWB social/hos/UPLOADS.json (long GHZDsiH7L7A, J1221 swap from -sa2t7dAtCk); held until public (2026-11-16T11:30:00Z), then the full film",
+      "related": "Studio: set Related -> GHZDsiH7L7A on xzKoHg0E0_U (004 long public). Description already links GHZDsiH7L7A.",
+      "captions": "en-GB standard, from the v04 spoken line (J1221)",
+      "social": {
+        "hook": "Every element is made of its own kind of atom, and each kind has its own weight.",
+        "question": "What is Dalton's atomic theory?",
+        "alt": "Hook caption EACH ATOM over Dalton's theory beat; elements combine in fixed amounts."
+      }
     }
   }
 }
