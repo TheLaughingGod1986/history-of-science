@@ -43,3 +43,14 @@
   - Local media: `/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part01..05/` (silent `.mp4` clips, Nano Banana 2 `.png` start stills, UAT contact sheets).
   - NAS copy (copy-only verified, 57/57 matching sha256): `/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/` and `07_Edit-Project/FLOW_MINT_LOG_v04_tranche1.json`.
 - **Next:** Parked for Chief tranche 1 PASS (`J1192`); tranche 2 (`20` Quality rows, `5,180` expected) waits for the ~12 Nov AI Ultra renewal.
+
+## 30 Oct 2026 — J1237: Motion evidence for the 3 flagged windows of J1192 tranche 1 (Gemini covering)
+
+- **Authority:** Acting Chief (Claude) queue job `J1237` (answering desk `#6511102950`). `£0` spend, no new mint, no retake, no upload.
+- **Exported evidence (`02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/review_J1192_motion/`):**
+  - Full-size (`1280×720`) PNG frames across each `freezedetect=n=-50dB:d=0.8` flagged window `±0.5 s` (`P01_03_table_three/frames/` 50 frames, `P04_07_put_aside/frames/` 34 frames, `P04_10_write_it_down_c1/frames/` 38 frames), full-size PNG strips (`*_strip.png`), 1-row contact sheets (`*_contact_1row.png`), 6-column contact grids (`*_contact_grid.png`), and full-clip frame-difference plots (`*_frame_diff_plot.png` + `frame_diff_metrics.json`).
+- **Per-clip 3-line read & trimmed in/out:**
+  1. **`P01:03_table_three` (`3.333–4.375 s`, `f080–f105`):** Continuous slow camera push-in (`0` duplicate frames, `MAD = 0.137–0.380`, `RMS = 0.552–2.750`) after the parchment and apple settle; no freeze, pop, morph or warp; holds full board `use_s = 7.00 s` at **`0.000–7.000 s`** (or `1.000–8.000 s`).
+  2. **`P04:07_put_aside` (`7.083–8.000 s`, `f170–f191`):** Brisk continuous motion `0.000–7.083 s` (`MAD` median `1.15`, papers slide into drawer + summer→autumn→winter→spring light shift) followed by a `0.917 s` tail settle; board `use_s = 3.76 s` avoids the tail completely at **`0.000–3.760 s`** (or `3.200–6.960 s`, `out <= 7.042 s`).
+  3. **`P04:10_write_it_down_c1` (`0.000–1.042 s`, `f000–f025`):** Opening `1.042 s` (`MAD = 0.099–0.508`) is a low-motion pre-action hold before Newton turns/raises his arm at `1.042 s`; board `use_s = 5.34 s` out of `8.00 s` avoids the opening completely via trimmed in/out **`1.083–6.423 s`** (or `2.583–7.923 s`).
+- **Next:** Parked for Chief: tranche 1 PASS.

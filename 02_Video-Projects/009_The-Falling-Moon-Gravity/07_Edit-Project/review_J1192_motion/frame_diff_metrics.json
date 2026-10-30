@@ -1,0 +1,125 @@
+{
+  "P01_03_table_three": {
+    "board_id": "P01:03_table_three",
+    "file": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part01/raw/v01/03_table_three_t1.mp4",
+    "sha256": "49f567480e505ede6ff068c5ec8e7959767287536049fb1c814df761f5a6b238",
+    "fps": 24,
+    "total_frames": 192,
+    "duration_s": 8.0,
+    "flag_window_s": [
+      3.333333,
+      4.375
+    ],
+    "flag_frames": [
+      80,
+      105
+    ],
+    "exported_window_s": [
+      2.833333,
+      4.875
+    ],
+    "exported_frames": [
+      68,
+      117
+    ],
+    "exported_frame_count": 50,
+    "board_use_s": 7.0,
+    "board_default_in_out_s": [
+      0.0,
+      7.0
+    ],
+    "recommended_in_out_s": [
+      0.0,
+      7.0
+    ],
+    "clip_mad_min": 0.0534,
+    "clip_mad_median": 0.9473,
+    "clip_mad_max": 2.7162,
+    "flag_window_mad_min": 0.1367,
+    "flag_window_mad_mean": 0.2634,
+    "flag_window_mad_max": 0.4698,
+    "zero_diff_frames": 0
+  },
+  "P04_07_put_aside": {
+    "board_id": "P04:07_put_aside",
+    "file": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part04/raw/v01/07_put_aside_t1.mp4",
+    "sha256": "abfc25c1c87593a5db109d10ff7971620d60a5505237d892523b5c359ad9834d",
+    "fps": 24,
+    "total_frames": 192,
+    "duration_s": 8.0,
+    "flag_window_s": [
+      7.083333,
+      8.0
+    ],
+    "flag_frames": [
+      170,
+      191
+    ],
+    "exported_window_s": [
+      6.583333,
+      7.958333
+    ],
+    "exported_frames": [
+      158,
+      191
+    ],
+    "exported_frame_count": 34,
+    "board_use_s": 3.76,
+    "board_default_in_out_s": [
+      0.0,
+      3.76
+    ],
+    "recommended_in_out_s": [
+      0.0,
+      3.76
+    ],
+    "clip_mad_min": 0.0771,
+    "clip_mad_median": 0.9548,
+    "clip_mad_max": 2.9176,
+    "flag_window_mad_min": 0.0771,
+    "flag_window_mad_mean": 0.2321,
+    "flag_window_mad_max": 1.3134,
+    "zero_diff_frames": 0
+  },
+  "P04_10_write_it_down_c1": {
+    "board_id": "P04:10_write_it_down_c1",
+    "file": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part04/raw/v01/10_write_it_down_c1_t1.mp4",
+    "sha256": "364e616e730efe21ce73f32ab487c8a1a8f17994854ff8fb497127d7344d6b7d",
+    "fps": 24,
+    "total_frames": 192,
+    "duration_s": 8.0,
+    "flag_window_s": [
+      0.0,
+      1.041667
+    ],
+    "flag_frames": [
+      0,
+      25
+    ],
+    "exported_window_s": [
+      0.0,
+      1.541667
+    ],
+    "exported_frames": [
+      0,
+      37
+    ],
+    "exported_frame_count": 38,
+    "board_use_s": 5.34,
+    "board_default_in_out_s": [
+      0.0,
+      5.34
+    ],
+    "recommended_in_out_s": [
+      1.083,
+      6.423
+    ],
+    "clip_mad_min": 0.0992,
+    "clip_mad_median": 0.7742,
+    "clip_mad_max": 2.5169,
+    "flag_window_mad_min": 0.0992,
+    "flag_window_mad_mean": 0.2484,
+    "flag_window_mad_max": 0.5085,
+    "zero_diff_frames": 0
+  }
+}
