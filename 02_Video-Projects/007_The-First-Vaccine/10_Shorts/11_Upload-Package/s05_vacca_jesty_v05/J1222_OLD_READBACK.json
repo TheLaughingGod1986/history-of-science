@@ -1,0 +1,55 @@
+{
+  "at": "2026-10-30T00:56:53.802Z",
+  "job": "J1222",
+  "found": true,
+  "id": "4WUs0beKn0A",
+  "title": "Why Is It Called a Vaccine?",
+  "description": "Why Vaccines Are Named After a Cow\nhttps://www.youtube.com/watch?v=ETynHpIYLeY\n\nTwenty-two years before Edward Jenner's 1798 book, Benjamin Jesty tried cowpox in 1774. Jenner called the disease variolae vaccinae (\"smallpox of the cow\"), and from vacca, the Latin word for cow, came the name vaccination.\n\nPictures: AI-generated 3D scenes; voice: AI narration.",
+  "tags": [
+    "benjamin jesty",
+    "edward jenner cowpox vaccine",
+    "first vaccine",
+    "history of science",
+    "vaccine latin word",
+    "why is it called a vaccine"
+  ],
+  "categoryId": "27",
+  "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+  "defaultLanguage": "en-GB",
+  "defaultAudioLanguage": "en-GB",
+  "privacy": "private",
+  "publishAt": "2026-11-17T11:30:00Z",
+  "kids": false,
+  "synthetic": null,
+  "license": "youtube",
+  "embeddable": true,
+  "duration": "PT25S",
+  "hasCustomThumbnail": true,
+  "thumbnails": {
+    "default": {
+      "url": "https://i9.ytimg.com/vi/4WUs0beKn0A/default.jpg?sqp=COTVj9cG&rs=AOn4CLDkqIjxM1GXGylI5aMVvQQPTlEMDQ",
+      "width": 120,
+      "height": 90
+    },
+    "medium": {
+      "url": "https://i9.ytimg.com/vi/4WUs0beKn0A/mqdefault.jpg?sqp=COTVj9cG&rs=AOn4CLAx7PQWZOh61MvCh_s-_zPnKF-_bw",
+      "width": 320,
+      "height": 180
+    },
+    "high": {
+      "url": "https://i9.ytimg.com/vi/4WUs0beKn0A/hqdefault.jpg?sqp=COTVj9cG&rs=AOn4CLCPIggYHkXg7xVp2nVuuFQiVrnaiw",
+      "width": 480,
+      "height": 360
+    },
+    "standard": {
+      "url": "https://i9.ytimg.com/vi/4WUs0beKn0A/sddefault.jpg?sqp=COTVj9cG&rs=AOn4CLCC7gvtEUz9JiF1htbi4R2PckWi1w",
+      "width": 640,
+      "height": 480
+    },
+    "maxres": {
+      "url": "https://i9.ytimg.com/vi/4WUs0beKn0A/maxresdefault.jpg?sqp=COTVj9cG&rs=AOn4CLBGwZMrMWXez3fmOWRPfHFus-1HwA",
+      "width": 1280,
+      "height": 720
+    }
+  }
+}

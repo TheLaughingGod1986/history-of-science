@@ -1,0 +1,69 @@
+{
+  "at": "2026-10-30T00:58:15.652Z",
+  "job": "J1222",
+  "items": [
+    {
+      "id": "xgx2lYHhYZM",
+      "title": "Why Is It Called a Vaccine?",
+      "description": "Why Vaccines Are Named After a Cow\nhttps://www.youtube.com/watch?v=ETynHpIYLeY\n\nTwenty-two years before Edward Jenner's 1798 book, Benjamin Jesty tried cowpox in 1774. Jenner called the disease variolae vaccinae (\"smallpox of the cow\"), and from vacca, the Latin word for cow, came the name vaccination.\n\nPictures: AI-generated 3D scenes; voice: AI narration.",
+      "privacy": "private",
+      "publishAt": "2026-11-17T11:30:00Z",
+      "kids": false,
+      "synthetic": null,
+      "lang": "en-GB",
+      "audioLang": "en-GB",
+      "tags": [
+        "benjamin jesty",
+        "edward jenner cowpox vaccine",
+        "first vaccine",
+        "history of science",
+        "vaccine latin word",
+        "why is it called a vaccine"
+      ],
+      "duration": "PT25S",
+      "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+      "categoryId": "27",
+      "hasCustomThumbnail": true
+    },
+    {
+      "id": "4WUs0beKn0A",
+      "title": "Why Is It Called a Vaccine?",
+      "description": "Why Vaccines Are Named After a Cow\nhttps://www.youtube.com/watch?v=ETynHpIYLeY\n\nTwenty-two years before Edward Jenner's 1798 book, Benjamin Jesty tried cowpox in 1774. Jenner called the disease variolae vaccinae (\"smallpox of the cow\"), and from vacca, the Latin word for cow, came the name vaccination.\n\nPictures: AI-generated 3D scenes; voice: AI narration.",
+      "privacy": "private",
+      "publishAt": null,
+      "kids": false,
+      "synthetic": null,
+      "lang": "en-GB",
+      "audioLang": "en-GB",
+      "tags": [
+        "benjamin jesty",
+        "edward jenner cowpox vaccine",
+        "first vaccine",
+        "history of science",
+        "vaccine latin word",
+        "why is it called a vaccine"
+      ],
+      "duration": "PT25S",
+      "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+      "categoryId": "27",
+      "hasCustomThumbnail": true
+    }
+  ],
+  "captions": [
+    {
+      "id": "AUieDabaN-E5nPhCSyZNT61lqyxqbHuWPZgKU5v8yFVQn0434NQ",
+      "language": "en",
+      "trackKind": "asr",
+      "status": "serving",
+      "isDraft": false
+    },
+    {
+      "id": "AUieDaZSRAy-6XmFcTB2G6YvbmyP9TGXOuWOh3Bw9C2G2z_Y",
+      "language": "en-GB",
+      "trackKind": "standard",
+      "status": "serving",
+      "isDraft": false
+    }
+  ],
+  "captionError": null
+}

@@ -190,7 +190,7 @@
       "thumb": "02_Video-Projects/007_The-First-Vaccine/10_Shorts/_work_s05_vacca_jesty_v02/hos_007_s05_vacca_jesty_v02_t000.0.jpg",
       "long": "ETynHpIYLeY",
       "promotes": "007",
-      "publishAt": "2026-11-17T11:30:00Z",
+      "publishAt": null,
       "registeredAt": "2026-10-24T18:05:00Z",
       "buffer": "registered in OWB social/hos/UPLOADS.json (long ETynHpIYLeY, J0875); held until public (2026-11-17T11:30:00Z), then the full film",
       "related": "unset while 007 long ETynHpIYLeY is Private (publishAt 2026-11-12T18:00:00Z); Studio picker lists public videos only. J0875 sets ETynHpIYLeY once the long is public on Thu 12 Nov 18:00Z (before Fri 13 Nov 11:30Z).",
@@ -198,7 +198,11 @@
         "hook": "Twenty-two years before Edward Jenner's 1798 book, Benjamin Jesty tried cowpox \u2014 and from vacca, Latin for cow, came vaccination.",
         "question": "Why are vaccines named after a cow?",
         "alt": "A dairy cow in a golden Dorset meadow at sunset; hook caption NOT THE FIRST."
-      }
+      },
+      "privacyStatus": "private",
+      "supersededBy": "xgx2lYHhYZM",
+      "unscheduledAt": "2026-10-30T00:58:30Z",
+      "note": "J1222. Private and unscheduled. Title unchanged. Nothing deleted. Replaced by v05 xgx2lYHhYZM (sha e5ea76f012fb)."
     },
     "Rl2uZ-KOTl8": {
       "kind": "short",
@@ -588,6 +592,29 @@
         "hook": "Every element is made of its own kind of atom, and each kind has its own weight.",
         "question": "What is Dalton's atomic theory?",
         "alt": "Hook caption EACH ATOM over Dalton's theory beat; elements combine in fixed amounts."
+      }
+    },
+    "xgx2lYHhYZM": {
+      "kind": "short",
+      "standalone": false,
+      "standaloneTest": false,
+      "file": "02_Video-Projects/007_The-First-Vaccine/10_Shorts/hos_007_s05_vacca_jesty_v05.mp4",
+      "sha256": "e5ea76f012fb94c54c4a7224140d2d8ca342ea8c02a2fbdb30df17661f94f1ad",
+      "packageDir": "02_Video-Projects/007_The-First-Vaccine/10_Shorts/11_Upload-Package/s05_vacca_jesty_v05",
+      "thumb": "02_Video-Projects/007_The-First-Vaccine/10_Shorts/11_Upload-Package/s05_vacca_jesty_v05/cover.jpg",
+      "long": "ETynHpIYLeY",
+      "promotes": "007",
+      "publishAt": "2026-11-17T11:30:00Z",
+      "privacyStatus": "private",
+      "replaces": "4WUs0beKn0A",
+      "registeredAt": "2026-10-30T00:58:30Z",
+      "buffer": "registered in OWB social/hos/UPLOADS.json (long ETynHpIYLeY, J1222 swap from 4WUs0beKn0A); held until public (2026-11-17T11:30:00Z), then the full film",
+      "related": "unset while 007 long ETynHpIYLeY is Private (publishAt 2026-11-12T18:00:00Z); Studio picker lists public videos only. J0875 sets ETynHpIYLeY once the long is public on Thu 12 Nov 18:00Z (before Fri 13 Nov 11:30Z).",
+      "captions": "en-GB standard, from the v05 spoken line (J1222)",
+      "social": {
+        "hook": "Twenty-two years before Edward Jenner's 1798 book, Benjamin Jesty tried cowpox \u2014 and from vacca, Latin for cow, came vaccination.",
+        "question": "Why are vaccines named after a cow?",
+        "alt": "A dairy cow in a golden Dorset meadow at sunset; hook caption NOT THE FIRST."
       }
     }
   }
