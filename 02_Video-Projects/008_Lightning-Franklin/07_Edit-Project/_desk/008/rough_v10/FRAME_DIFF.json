@@ -1,0 +1,44 @@
+{
+  "samples": [
+    {
+      "t": 463.2,
+      "mean_abs": 0.0,
+      "v10_frame_index": 11090,
+      "v10_pts": 463.208333,
+      "v08_frame_index": 11090,
+      "v08_pts": 463.208333,
+      "same_index": true
+    },
+    {
+      "t": 464.0,
+      "mean_abs": 0.0,
+      "v10_frame_index": 11109,
+      "v10_pts": 464.0,
+      "v08_frame_index": 11109,
+      "v08_pts": 464.0,
+      "same_index": true
+    },
+    {
+      "t": 466.0,
+      "mean_abs": 0.0,
+      "v10_frame_index": 11157,
+      "v10_pts": 466.0,
+      "v08_frame_index": 11157,
+      "v08_pts": 466.0,
+      "same_index": true
+    },
+    {
+      "t": 468.7,
+      "mean_abs": 0.0,
+      "v10_frame_index": 11222,
+      "v10_pts": 468.708333,
+      "v08_frame_index": 11222,
+      "v08_pts": 468.708333,
+      "same_index": true
+    }
+  ],
+  "worst": 0.0,
+  "limit": 1.0,
+  "pass": true,
+  "note": "Samples are after v08's plate ends at 463.125s and on the tail keyframe GOP, which is stream-copied from v08. A miss is a source frame shift when the indexes differ, and a re-encode when they match."
+}

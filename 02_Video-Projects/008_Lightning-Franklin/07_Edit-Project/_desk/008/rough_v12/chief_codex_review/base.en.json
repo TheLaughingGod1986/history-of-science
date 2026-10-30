@@ -1,0 +1,226 @@
+{
+  "master_sha256": "d032e5fb7ae89f492f1d4df59070ce13a419c23287834780f8996999d17520b4",
+  "audio_sha256": "1a04a00831e1a575bd5a6482f2d90366c3b063f12df1f968f1387ada9e76b3da",
+  "extract_command": [
+    "ffmpeg",
+    "-v",
+    "error",
+    "-ss",
+    "455",
+    "-i",
+    "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_precheck/rough_v12/hos_008_rough_v12.mp4",
+    "-t",
+    "15",
+    "-vn",
+    "-ac",
+    "1",
+    "-ar",
+    "16000",
+    "-c:a",
+    "pcm_s16le",
+    "/Users/benjaminoats/_desk/chief/j1267-v12-review/window.wav"
+  ],
+  "model": "base.en",
+  "words": [
+    {
+      "word": " steeple",
+      "start": 455.0,
+      "end": 455.48
+    },
+    {
+      "word": " is",
+      "start": 455.48,
+      "end": 455.82
+    },
+    {
+      "word": " a",
+      "start": 455.82,
+      "end": 455.94
+    },
+    {
+      "word": " terrible",
+      "start": 455.94,
+      "end": 456.32
+    },
+    {
+      "word": " path,",
+      "start": 456.32,
+      "end": 456.76
+    },
+    {
+      "word": " so",
+      "start": 457.3,
+      "end": 457.4
+    },
+    {
+      "word": " it",
+      "start": 457.4,
+      "end": 457.5
+    },
+    {
+      "word": " bursts",
+      "start": 457.5,
+      "end": 457.74
+    },
+    {
+      "word": " into",
+      "start": 457.74,
+      "end": 458.1
+    },
+    {
+      "word": " flame",
+      "start": 458.1,
+      "end": 458.4
+    },
+    {
+      "word": " or",
+      "start": 458.4,
+      "end": 458.74
+    },
+    {
+      "word": " cracks",
+      "start": 458.74,
+      "end": 458.98
+    },
+    {
+      "word": " apart.",
+      "start": 458.98,
+      "end": 459.4
+    },
+    {
+      "word": " But",
+      "start": 460.26,
+      "end": 460.5
+    },
+    {
+      "word": " a",
+      "start": 460.5,
+      "end": 460.6
+    },
+    {
+      "word": " metal",
+      "start": 460.6,
+      "end": 460.9
+    },
+    {
+      "word": " rod",
+      "start": 460.9,
+      "end": 461.24
+    },
+    {
+      "word": " is",
+      "start": 461.24,
+      "end": 461.8
+    },
+    {
+      "word": " an",
+      "start": 461.8,
+      "end": 461.92
+    },
+    {
+      "word": " easy",
+      "start": 461.92,
+      "end": 462.12
+    },
+    {
+      "word": " path,",
+      "start": 462.12,
+      "end": 462.58
+    },
+    {
+      "word": " so",
+      "start": 463.12,
+      "end": 463.4
+    },
+    {
+      "word": " the",
+      "start": 463.4,
+      "end": 463.52
+    },
+    {
+      "word": " lightning",
+      "start": 463.52,
+      "end": 463.8
+    },
+    {
+      "word": " takes",
+      "start": 463.8,
+      "end": 464.16
+    },
+    {
+      "word": " the",
+      "start": 464.16,
+      "end": 464.44
+    },
+    {
+      "word": " rod,",
+      "start": 464.44,
+      "end": 464.68
+    },
+    {
+      "word": " round",
+      "start": 465.14,
+      "end": 465.34
+    },
+    {
+      "word": " the",
+      "start": 465.34,
+      "end": 465.54
+    },
+    {
+      "word": " outside",
+      "start": 465.54,
+      "end": 465.76
+    },
+    {
+      "word": " of",
+      "start": 465.76,
+      "end": 466.08
+    },
+    {
+      "word": " the",
+      "start": 466.08,
+      "end": 466.18
+    },
+    {
+      "word": " building,",
+      "start": 466.18,
+      "end": 466.48
+    },
+    {
+      "word": " and",
+      "start": 467.02,
+      "end": 467.12
+    },
+    {
+      "word": " goes",
+      "start": 467.12,
+      "end": 467.42
+    },
+    {
+      "word": " harmlessly",
+      "start": 467.42,
+      "end": 467.9
+    },
+    {
+      "word": " into",
+      "start": 467.9,
+      "end": 468.44
+    },
+    {
+      "word": " the",
+      "start": 468.44,
+      "end": 468.62
+    },
+    {
+      "word": " earth.",
+      "start": 468.62,
+      "end": 468.84
+    },
+    {
+      "word": " Frankly",
+      "start": 469.58,
+      "end": 469.96
+    }
+  ]
+}

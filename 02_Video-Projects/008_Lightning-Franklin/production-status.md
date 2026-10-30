@@ -129,3 +129,17 @@ PASS  02_Video-Projects/008_Lightning-Franklin/11_Upload-Package/PACKAGE_MANIFES
 
 
 
+
+
+## J1273 tracked-rod preflight — 30 Oct 2026, Codex worker
+
+Candidate only, parked for Chief; no film/stage PASS. Evidence: `07_Edit-Project/_desk/008/J1273_tracked_preflight/REVIEW.md`. Durable media: `/Users/benjaminoats/_desk/j1273-candidate-v08/`. Alpha/composite 42 frames, 24 fps; source 109–150 exactly. Five required offsets: -4.5/-11/+3.5/+0.5/+1.5 px, limit 19.2 px. Retained source-hand/bracket occlusion and picture warning need Chief review.
+
+Unmodified row tool output:
+```
+polish gate PASS: 0 of 1 rows failed, 0 to look at
+picture QA PASS: 0 of 1 cuts fail, 1 to look at
+WARN: kind of picture: no title in the pool, so nobody can tell what it is
+```
+
+J1267 remains held at 2/6; only Chief acceptance can resume it. No master splice, stage approval, spend, music, upload or Ben watch. Delivery code now uses verified copies and refuses conflicts instead of deleting folders.

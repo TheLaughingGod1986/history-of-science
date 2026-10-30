@@ -1,0 +1,43 @@
+{
+  "samples": [
+    {
+      "t": 464.2,
+      "mean_abs": 0.405,
+      "frame_index": 11114,
+      "stream_copy": false,
+      "same_picture": true
+    },
+    {
+      "t": 466.0,
+      "mean_abs": 0.409,
+      "frame_index": 11157,
+      "stream_copy": false,
+      "same_picture": true
+    },
+    {
+      "t": 468.7,
+      "mean_abs": 0.397,
+      "frame_index": 11222,
+      "stream_copy": false,
+      "same_picture": true
+    },
+    {
+      "t": 469.6,
+      "mean_abs": 0.399,
+      "frame_index": 11243,
+      "stream_copy": false,
+      "same_picture": true
+    },
+    {
+      "t": 469.708,
+      "mean_abs": 0.0,
+      "frame_index": 11246,
+      "stream_copy": true,
+      "same_picture": true
+    }
+  ],
+  "body_worst": 0.409,
+  "limit": 1.0,
+  "pass": true,
+  "note": "Body is the re-encoded card GOP. From 469.708 s the packets are stream-copied, so the tail sample is 0."
+}

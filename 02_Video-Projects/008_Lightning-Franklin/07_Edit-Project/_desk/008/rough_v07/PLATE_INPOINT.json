@@ -1,0 +1,11 @@
+{
+  "plate": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/06_rod_fitting_t1.mp4",
+  "plate_in_point_s": 3.5,
+  "why": "+/-0.5s still has a full-height brick corner (row coverage 0.86-0.90). +3.50s is the first in-point where the man covers that edge and polish_gate's middle frame passes. Man, ladder, rod and METAL CONDUCTS stay in shot.",
+  "alpha": "/private/tmp/j1248-hos008-cg-v04-wt/02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/code_graphics_v04/code_graphic_008_p5_10_metal_easy.mov",
+  "alpha_sha256": "bb821f402a2d1ca5a1536a6592e572b8a4d1653d6573ca733c2ae853db4c8056",
+  "locked_composite_left_untouched": "/Volumes/data/mac-mini-archive/tmp-render-scratch/j1248-hos008-rough-v05/special_assets/overlay_10_metal_easy.mp4",
+  "locked_composite_sha256": "eaf7bf88d890423750d0952043cf3f8239efb1c7f0343da5e879096266615ad8",
+  "new_composite_sha256": "a7c515e14a23d481715ce4411d67272a576df7fcb4ad88f7f1966acdf305f69c",
+  "frames": 71
+}

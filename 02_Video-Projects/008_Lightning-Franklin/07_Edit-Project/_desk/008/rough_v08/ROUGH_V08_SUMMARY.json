@@ -1,0 +1,127 @@
+{
+  "version": "rough_v08",
+  "job": "J1263",
+  "source_master": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_precheck/rough_v04/hos_008_rough_v04.mp4",
+  "source_sha256": "e00bb897a05c5a53843db9c7e7e62669194ced6f28f986daed6a142da54d7d5e",
+  "master_sha256": "c1f952a714c8758f66bf284b578873a449eb9bdecdff1782672983834be4d382",
+  "durations": {
+    "format": 539.626479,
+    "video": 539.5,
+    "video_start": 0.125,
+    "nb_frames": 12923,
+    "r_frame_rate": "24/1",
+    "audio": 539.626479,
+    "audio_start": 0.0,
+    "av_end_offset": 0.0014790000000175496
+  },
+  "gates": {
+    "polish_rc": 0,
+    "picture_rc": 0
+  },
+  "plate_in_point": {
+    "plate": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/06_rod_fitting_t1.mp4",
+    "plate_in_point_s": 4.541666666666667,
+    "why": "Chief h11: smallest source frame at or after 4.40 s (frame 109, 4.541667s) whose 71-frame window ends by 7.60 s. Clears the hammer morph (plate 4.00-4.375 s) and the repeat of 06_rod_fitting at 437.7-438.6 s. Rod-top vs gold trace stays within 1% of width at p10/p25/p50/p75/p90. Alpha mov unchanged.",
+    "alpha": "/private/tmp/j1248-hos008-cg-v04-wt/02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/code_graphics_v04/code_graphic_008_p5_10_metal_easy.mov",
+    "alpha_sha256": "bb821f402a2d1ca5a1536a6592e572b8a4d1653d6573ca733c2ae853db4c8056",
+    "locked_composite_left_untouched": "/Volumes/data/mac-mini-archive/tmp-render-scratch/j1248-hos008-rough-v05/special_assets/overlay_10_metal_easy.mp4",
+    "locked_composite_sha256": "eaf7bf88d890423750d0952043cf3f8239efb1c7f0343da5e879096266615ad8",
+    "new_composite_sha256": "4c9faab741ade338ccad09e0261ee09955507872317987d3fc8578f8b1fa5afa",
+    "frames": 71
+  },
+  "pause": {
+    "source": "PAUSE_TRIM_v03.json joins, after 0:30, trim contains a shot boundary",
+    "choice": {
+      "silence": [
+        64.301979,
+        64.926083
+      ],
+      "trim_start": 64.333333,
+      "trim_end": 64.875,
+      "frame0": 1539,
+      "frame1": 1552,
+      "trim_s": 0.5416670000000039,
+      "join_dist": 0.1301664999999872,
+      "boundary_rows": [
+        "10_wait_shutter"
+      ],
+      "hook": "no trim before 0:30",
+      "audio": "splice audio stream-copied; this pause cut is one AAC encode of the joined track"
+    },
+    "vo": "pause only; trim sits inside silencedetect, clear of the hook and the FIX rows",
+    "moved_from": "v06 trim 9.167-9.708s inside the kite plate"
+  },
+  "note": "Parked for Chief: graphics + composite. No finished-film PASS. No music bed.",
+  "rod_trace": {
+    "plate_in_point_s": 4.541666666666667,
+    "source_frame": 109,
+    "window_end_s": 7.5,
+    "aim_pct": 1.0,
+    "align_ok": true,
+    "seam_ok": true,
+    "polish_rc": 0,
+    "picture_rc": 0,
+    "samples": [
+      {
+        "pct": 10,
+        "plate_s": 4.8375,
+        "row_s": 0.2958,
+        "rod_x": 1172.0,
+        "trace_x": 1180.5,
+        "offset_px": -8.5,
+        "offset_pct_of_width": -0.44,
+        "offset_px_at_1024": -4.5,
+        "tip_y": 27,
+        "vertical_seams": []
+      },
+      {
+        "pct": 25,
+        "plate_s": 5.2812,
+        "row_s": 0.7396,
+        "rod_x": 1163.5,
+        "trace_x": 1180.5,
+        "offset_px": -17.0,
+        "offset_pct_of_width": -0.89,
+        "offset_px_at_1024": -9.1,
+        "tip_y": 20,
+        "vertical_seams": []
+      },
+      {
+        "pct": 50,
+        "plate_s": 6.0208,
+        "row_s": 1.4792,
+        "rod_x": 1189.5,
+        "trace_x": 1180.5,
+        "offset_px": 9.0,
+        "offset_pct_of_width": 0.47,
+        "offset_px_at_1024": 4.8,
+        "tip_y": 25,
+        "vertical_seams": []
+      },
+      {
+        "pct": 75,
+        "plate_s": 6.7604,
+        "row_s": 2.2188,
+        "rod_x": 1198.0,
+        "trace_x": 1180.5,
+        "offset_px": 17.5,
+        "offset_pct_of_width": 0.91,
+        "offset_px_at_1024": 9.3,
+        "tip_y": 24,
+        "vertical_seams": []
+      },
+      {
+        "pct": 90,
+        "plate_s": 7.2042,
+        "row_s": 2.6625,
+        "rod_x": 1198.0,
+        "trace_x": 1180.5,
+        "offset_px": 17.5,
+        "offset_pct_of_width": 0.91,
+        "offset_px_at_1024": 9.3,
+        "tip_y": 23,
+        "vertical_seams": []
+      }
+    ]
+  }
+}

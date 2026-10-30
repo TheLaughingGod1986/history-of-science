@@ -1,0 +1,66 @@
+{
+  "offset_film_minus_part_s": 409.875,
+  "correlation_of_this_run": 0.108,
+  "correlation_offset_s": 425.72,
+  "note": "Audio is v08's stream copy. Words use the v09 lock offset 409.875s, which is this film's part-05 alignment. This run's raw correlation is reported beside it.",
+  "spans": [
+    {
+      "film": [
+        459.3,
+        461.05
+      ],
+      "words": [
+        {
+          "text": "apart.",
+          "part_s": 49.34,
+          "film_s": 459.215
+        },
+        {
+          "text": "But",
+          "part_s": 50.58,
+          "film_s": 460.455
+        },
+        {
+          "text": "a",
+          "part_s": 50.72,
+          "film_s": 460.595
+        },
+        {
+          "text": "metal",
+          "part_s": 50.86,
+          "film_s": 460.735
+        }
+      ],
+      "text": "apart. But a metal"
+    },
+    {
+      "film": [
+        461.05,
+        462.26
+      ],
+      "words": [
+        {
+          "text": "rod",
+          "part_s": 51.26,
+          "film_s": 461.135
+        },
+        {
+          "text": "is",
+          "part_s": 51.9,
+          "film_s": 461.775
+        },
+        {
+          "text": "an",
+          "part_s": 52.02,
+          "film_s": 461.895
+        },
+        {
+          "text": "easy",
+          "part_s": 52.2,
+          "film_s": 462.075
+        }
+      ],
+      "text": "rod is an easy"
+    }
+  ]
+}

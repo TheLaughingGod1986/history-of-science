@@ -1,0 +1,55 @@
+{
+  "version": "rough_v07",
+  "job": "J1260",
+  "source_master": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_precheck/rough_v04/hos_008_rough_v04.mp4",
+  "source_sha256": "e00bb897a05c5a53843db9c7e7e62669194ced6f28f986daed6a142da54d7d5e",
+  "master_sha256": "b69525f87bf81a3d5f92023b0b0d2777ebc5f562341a42cff04ad4bec95565ed",
+  "durations": {
+    "format": 539.626479,
+    "video": 539.5,
+    "video_start": 0.125,
+    "nb_frames": 12923,
+    "r_frame_rate": "24/1",
+    "audio": 539.626479,
+    "audio_start": 0.0,
+    "av_end_offset": 0.0014790000000175496
+  },
+  "gates": {
+    "polish_rc": 0,
+    "picture_rc": 0
+  },
+  "plate_in_point": {
+    "plate": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/06_rod_fitting_t1.mp4",
+    "plate_in_point_s": 3.5,
+    "why": "+/-0.5s still has a full-height brick corner (row coverage 0.86-0.90). +3.50s is the first in-point where the man covers that edge and polish_gate's middle frame passes. Man, ladder, rod and METAL CONDUCTS stay in shot.",
+    "alpha": "/private/tmp/j1248-hos008-cg-v04-wt/02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/code_graphics_v04/code_graphic_008_p5_10_metal_easy.mov",
+    "alpha_sha256": "bb821f402a2d1ca5a1536a6592e572b8a4d1653d6573ca733c2ae853db4c8056",
+    "locked_composite_left_untouched": "/Volumes/data/mac-mini-archive/tmp-render-scratch/j1248-hos008-rough-v05/special_assets/overlay_10_metal_easy.mp4",
+    "locked_composite_sha256": "eaf7bf88d890423750d0952043cf3f8239efb1c7f0343da5e879096266615ad8",
+    "new_composite_sha256": "a7c515e14a23d481715ce4411d67272a576df7fcb4ad88f7f1966acdf305f69c",
+    "frames": 71
+  },
+  "pause": {
+    "source": "PAUSE_TRIM_v03.json joins, after 0:30, trim contains a shot boundary",
+    "choice": {
+      "silence": [
+        64.301979,
+        64.926083
+      ],
+      "trim_start": 64.333333,
+      "trim_end": 64.875,
+      "frame0": 1539,
+      "frame1": 1552,
+      "trim_s": 0.5416670000000039,
+      "join_dist": 0.1301664999999872,
+      "boundary_rows": [
+        "10_wait_shutter"
+      ],
+      "hook": "no trim before 0:30",
+      "audio": "splice audio stream-copied; this pause cut is one AAC encode of the joined track"
+    },
+    "vo": "pause only; trim sits inside silencedetect, clear of the hook and the FIX rows",
+    "moved_from": "v06 trim 9.167-9.708s inside the kite plate"
+  },
+  "note": "Parked for Chief: graphics + composite. No finished-film PASS. No music bed."
+}

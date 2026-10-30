@@ -1,0 +1,97 @@
+{
+  "version": "rough_v11",
+  "job": "J1267",
+  "ruling": "Chief h20",
+  "built_from": "rough v08 stream copy, one GOP replaced",
+  "master_sha256": "6d620fd118836ed719c5a4942e39732e43e01da5b7e977b54ee99e3a068338b0",
+  "alpha_sha256": "53454827126be943dc4b11b51c52a32e9131637094dc4ca869a57e2165a68312",
+  "composite_sha256": "f8453cc78529871ef12a5ce4b1ad84a55f1d3d3759b98d180507b4c09d400ca9",
+  "render_alpha_called": false,
+  "durations": {
+    "format": 539.626479,
+    "nb_packets": 12923,
+    "video": 539.5,
+    "video_start": 0.125,
+    "nb_frames": 12923,
+    "r_frame_rate": "24/1",
+    "audio": 539.626479,
+    "audio_start": 0.0,
+    "av_end_offset": 0.0014790000000175496
+  },
+  "composite_match": {
+    "worst": 0.834,
+    "pass": true
+  },
+  "frame_diff": {
+    "worst": 0.0,
+    "pass": true,
+    "samples": [
+      {
+        "t": 463.2,
+        "mean_abs": 0.0,
+        "v11_frame_index": 11090,
+        "v11_pts": 463.208333,
+        "v08_frame_index": 11090,
+        "v08_pts": 463.208333,
+        "same_index": true
+      },
+      {
+        "t": 464.0,
+        "mean_abs": 0.0,
+        "v11_frame_index": 11109,
+        "v11_pts": 464.0,
+        "v08_frame_index": 11109,
+        "v08_pts": 464.0,
+        "same_index": true
+      },
+      {
+        "t": 466.0,
+        "mean_abs": 0.0,
+        "v11_frame_index": 11157,
+        "v11_pts": 466.0,
+        "v08_frame_index": 11157,
+        "v08_pts": 466.0,
+        "same_index": true
+      },
+      {
+        "t": 468.7,
+        "mean_abs": 0.0,
+        "v11_frame_index": 11222,
+        "v11_pts": 468.708333,
+        "v08_frame_index": 11222,
+        "v08_pts": 468.708333,
+        "same_index": true
+      }
+    ]
+  },
+  "plate_gone": {
+    "min_mean_abs": 44.427,
+    "pass": true
+  },
+  "join": {
+    "last_leadin_frame": 11088,
+    "first_card_frame": 11089,
+    "first_card_time_s": 463.166667,
+    "mean_abs": 1.747,
+    "limit": 1.0,
+    "pass": false,
+    "note": "h20: report this number with both frames when the opening-state hold does not match the card's first stream-copied frame."
+  },
+  "tip": {
+    "worst_abs_px": 10.5,
+    "pass": true
+  },
+  "audio_match": true,
+  "gates": {
+    "polish_rc": 0,
+    "picture_rc": 0
+  },
+  "safe_path_frames": {
+    "lead_in": 51,
+    "fade": 29,
+    "hold": 22,
+    "body_from_v08": 135,
+    "row_frames": 186
+  },
+  "note": "Parked for Chief. No finished-film PASS. No UAT. No upload. GBP0."
+}

@@ -1,0 +1,15 @@
+{
+  "plate": "06_rod_fitting_t1 frames 109-150 via J1273 composite f8453cc7",
+  "alpha_sha256": "53454827126be943dc4b11b51c52a32e9131637094dc4ca869a57e2165a68312",
+  "composite_sha256": "f8453cc78529871ef12a5ce4b1ad84a55f1d3d3759b98d180507b4c09d400ca9",
+  "render_alpha_called": false,
+  "title_source": "v08 frame 11114 title box, the card's own full SAFE PATH DOWN",
+  "title_box": [
+    640,
+    115,
+    1280,
+    182
+  ],
+  "paste_through_s": 464.375,
+  "plate_encode_sha256": "178c9248de1bd1e2c904f4a72435eed324374d9c480f4099dca4a6125a2950e2"
+}
