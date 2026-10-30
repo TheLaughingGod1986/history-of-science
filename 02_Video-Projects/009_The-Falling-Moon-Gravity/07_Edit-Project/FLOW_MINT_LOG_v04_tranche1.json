@@ -75,7 +75,7 @@
       "status": "KEEP",
       "submitted_at": "2026-10-29T18:18:48+00:00",
       "project_url": "https://flow.google.com/project/b42ae83b-bf2f-4f67-9102-8bb75ab419b7",
-      "uat_note": "KEEP vs v04 board (J1237 motion review): continuous camera push-in across 3.333-4.375s (f080-f105, 0 dup frames, MAD=0.137-0.380, RMS=0.552-2.750) after parchment/apple settle; no freeze, pop, morph or warp; holds full board use_s=7.00s at 0.000-7.000s (or 1.000-8.000s).",
+      "uat_note": "KEEP vs v04 board (Chief ruling J1237): PASS in 0.000 → out 7.000 s ONLY (use_s 7.00). f080–f105 (3.333–4.375 s) is a low-motion beat not a freeze (0 dup frames, MAD=0.137–0.380, RMS=0.552–2.750; apple rocks/settles, centroid ~10 px); camera essentially static across f080–f105 (best-fit scale 1.000); push-in only builds after ~4.5 s. FORBIDDEN: 1.000–8.000 s alt (starts mid-settle). Ruling: https://github.com/TheLaughingGod1986/history-of-science/pull/180#issuecomment-6516310345",
       "file": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part01/raw/v01/03_table_three_t1.mp4",
       "sha256": "49f567480e505ede6ff068c5ec8e7959767287536049fb1c814df761f5a6b238",
       "duration_s": 8.0,
@@ -97,7 +97,13 @@
             0.0,
             7.0
           ],
-          "evidence": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/review_J1192_motion/P01_03_table_three_strip.png"
+          "evidence": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/review_J1192_motion/P01_03_table_three_strip.png",
+          "forbidden_alt_in_out_s": [
+            1.0,
+            8.0
+          ],
+          "chief_note": "Camera static across f080–f105 (best-fit scale 1.000); low-motion beat (apple rocks/settles); push-in only after ~4.5 s. Use 0.000–7.000 only.",
+          "ruling": "https://github.com/TheLaughingGod1986/history-of-science/pull/180#issuecomment-6516310345"
         }
       },
       "credits_after": 18340,
@@ -1008,7 +1014,7 @@
       "status": "KEEP",
       "submitted_at": "2026-10-29T21:38:51+00:00",
       "project_url": "https://flow.google.com/project/56608c89-738d-47d4-afd3-41ca250ed74f",
-      "uat_note": "KEEP vs v04 board (J1237 motion review): brisk continuous motion 0.000-7.083s (f000-f170, MAD median 1.15, papers slide into drawer + summer->autumn->winter->spring light shift); 7.083-8.000s tail hold avoided by board use_s=3.76s at trimmed in/out 0.000-3.760s (or 3.200-6.960s, out <= 7.042s).",
+      "uat_note": "KEEP vs v04 board (Chief ruling J1237): PASS in 0.000 → out 3.760 s (use_s 3.76). Brisk continuous motion 0.000–7.083 s (f000–f170, MAD median 1.15, papers slide into drawer + summer→autumn→winter→spring light shift); 7.083–8.000 s tail hold stays out. Hard limit out ≤ 7.042 s. Ruling: https://github.com/TheLaughingGod1986/history-of-science/pull/180#issuecomment-6516310345",
       "file": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part04/raw/v01/07_put_aside_t1.mp4",
       "sha256": "abfc25c1c87593a5db109d10ff7971620d60a5505237d892523b5c359ad9834d",
       "duration_s": 8.0,
@@ -1030,7 +1036,10 @@
             0.0,
             3.76
           ],
-          "evidence": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/review_J1192_motion/P04_07_put_aside_strip.png"
+          "evidence": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/review_J1192_motion/P04_07_put_aside_strip.png",
+          "hard_limit_out_s": 7.042,
+          "chief_note": "in 0.000 → out 3.760 s; hard limit out ≤ 7.042 s.",
+          "ruling": "https://github.com/TheLaughingGod1986/history-of-science/pull/180#issuecomment-6516310345"
         }
       },
       "credits_after": 16650,
@@ -1137,7 +1146,7 @@
       "status": "KEEP",
       "submitted_at": "2026-10-29T21:51:39+00:00",
       "project_url": "https://flow.google.com/project/89bdd19d-4bed-4268-a807-c9ef6e63a6a8",
-      "uat_note": "KEEP vs v04 board (J1237 motion review): 0.000-1.042s (f000-f025, MAD=0.099-0.508) is a low-motion pre-action hold before Newton turns/raises arm at 1.042s; board use_s=5.34s out of 8.00s avoids the opening completely via trimmed in/out 1.083-6.423s (or 2.583-7.923s).",
+      "uat_note": "KEEP vs v04 board (Chief ruling J1237): PASS in 1.083 → out 6.423 s (use_s 5.340). 0.000–1.042 s (f000–f025, MAD=0.099–0.508) is a low-motion pre-action hold; hard limit in ≥ 1.083 s. Arm/figure note: checked by Chief J1237, clean (green sleeve belongs to a second standing figure correctly occluded; no arm-through-body or hand morph). 2.583–7.923 s alt not required. Ruling: https://github.com/TheLaughingGod1986/history-of-science/pull/180#issuecomment-6516310345",
       "file": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part04/raw/v01/10_write_it_down_c1_t1.mp4",
       "sha256": "364e616e730efe21ce73f32ab487c8a1a8f17994854ff8fb497127d7344d6b7d",
       "duration_s": 8.0,
@@ -1159,7 +1168,15 @@
             1.083,
             6.423
           ],
-          "evidence": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/review_J1192_motion/P04_10_write_it_down_c1_strip.png"
+          "evidence": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/review_J1192_motion/P04_10_write_it_down_c1_strip.png",
+          "hard_limit_in_s": 1.083,
+          "arm_figure_note": "checked by Chief J1237, clean",
+          "alt_not_required_in_out_s": [
+            2.583,
+            7.923
+          ],
+          "chief_note": "in 1.083 → out 6.423 s; hard limit in ≥ 1.083 s; arm/figure checked by Chief J1237, clean; 2.583–7.923 s alt not required.",
+          "ruling": "https://github.com/TheLaughingGod1986/history-of-science/pull/180#issuecomment-6516310345"
         }
       },
       "credits_after": 16430,
