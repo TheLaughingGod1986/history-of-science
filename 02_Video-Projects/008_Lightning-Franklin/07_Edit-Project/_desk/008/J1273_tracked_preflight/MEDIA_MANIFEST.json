@@ -1,0 +1,1632 @@
+[
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/OFFSETS.json",
+    "bytes": 38903,
+    "sha256": "af302b7bfd27eb6dab1e99f3a4060cc3cbbc5f277ca977252c1d4be221175c49"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/TRACKING.json",
+    "bytes": 20973,
+    "sha256": "87056ca8ee123dd7a713807ee95733f9c6ae5072ca822057650baf3a9a75ed36"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/VALIDATION.json",
+    "bytes": 2195,
+    "sha256": "3c6724f660d65890028cf372bb0d22a20e8be9d97cae8a97d44b8368d2ec914e"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/all_frames_00.jpg",
+    "bytes": 702406,
+    "sha256": "c2e5f238a6875d57ce40e3ffe6c5d4847abcee14c25b36d455729e9560f21ff5"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/all_frames_14.jpg",
+    "bytes": 717038,
+    "sha256": "ff0bd97504190e0e732fd5debaefadb6deb026c663ce2ac7b77461ae050e630a"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/all_frames_28.jpg",
+    "bytes": 715618,
+    "sha256": "024d4df4ebe26e69ce34712e0e49c8ec93ba354336a8faf283f29097a85df171"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/alpha_png/00.png",
+    "bytes": 12867,
+    "sha256": "c6f79c73f3168771a37bb29b2246dd0424783be46f48f1286238df03b8817ef3"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/alpha_png/01.png",
+    "bytes": 15844,
+    "sha256": "afbd86b5c3a379de744006129e3db787bc041d634fd14f8fdaa3dbb57ee1517e"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/alpha_png/02.png",
+    "bytes": 16817,
+    "sha256": "2bf0f04ceba2ef9406a399f6694881f3b82874a1a51f5324853fab8879d45614"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/alpha_png/03.png",
+    "bytes": 17205,
+    "sha256": "2478396db0ee1d003e54d41fe06be31840f163ecb174924eeb9a1218464f5886"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/alpha_png/04.png",
+    "bytes": 36336,
+    "sha256": "eaf1042a1b7c70c76f331cedcc972aacdd51b1d2cc11fa179b73c170832a1d58"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/alpha_png/05.png",
+    "bytes": 39041,
+    "sha256": "335a6651519ead19cd3e4aef396111eb0dab75d891606d6acdc0442f4ed2b97f"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/alpha_png/06.png",
+    "bytes": 40428,
+    "sha256": "c6d1d0a4a6ab20dea590f199e5ca2ee04e46479719db5504a89c569bd1b79971"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/alpha_png/07.png",
+    "bytes": 41377,
+    "sha256": "7701173c94159376dd1a2ce3675f7377e673413a6b057f35b0ca29907f440731"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/alpha_png/08.png",
+    "bytes": 42233,
+    "sha256": "1cd6ea4da66a9181ce9f224c988ecdcdbbc5909f5e02066fb6f66119f9750a04"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/alpha_png/09.png",
+    "bytes": 42560,
+    "sha256": "2fda1bd74112b3e123b7d3a7806f910a9d5bf2bc60c7edbf3b0c1ebfa5ce9527"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/alpha_png/10.png",
+    "bytes": 43047,
+    "sha256": "3f83c0288cf818b436934f4d3bd866b2bc08e71a6f555365c582daabc57b156c"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/alpha_png/11.png",
+    "bytes": 43199,
+    "sha256": "617d739aca16383cda594cbf6a3c469209425a65c03257c4ed98d00ada7aa602"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/alpha_png/12.png",
+    "bytes": 43189,
+    "sha256": "da2307ef353dce643a4488f3f11bb4234c575087392f9ebd01346c870a5d97c2"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/alpha_png/13.png",
+    "bytes": 43186,
+    "sha256": "0779d56e021683adaa7b019f33911b96b2266a70fdf04044f12dc9a6dc6166f9"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/alpha_png/14.png",
+    "bytes": 43226,
+    "sha256": "32ac007a9ba39ab1eedd3acd37985f10391222e4a2c614bbe004cb0202091550"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/alpha_png/15.png",
+    "bytes": 43243,
+    "sha256": "9f13f7ab3c3b978f4e9fc85d9a907486754d6d97f073b8dd68a567a7b5e3ec1c"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/alpha_png/16.png",
+    "bytes": 43212,
+    "sha256": "4c173f850017c1049be0ae40f9716879dac27f6b384d9f6a5ac2bc761a12df72"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/alpha_png/17.png",
+    "bytes": 43141,
+    "sha256": "2154245919659601b6fb8380a75b0b754c6855ef34e2d617cc1beb75aa7ea1c2"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/alpha_png/18.png",
+    "bytes": 43037,
+    "sha256": "a359ab212700946a809ed795a9a1eb3e3e672f9c923675fde7478771b6bf9c06"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/alpha_png/19.png",
+    "bytes": 43061,
+    "sha256": "29d38893edc226c2239fe349a5af40cb1c3065c931f4f5f0e5f27e19294f3d76"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/alpha_png/20.png",
+    "bytes": 43100,
+    "sha256": "d85204aead4f697c58b8b471964f58c7ae186eed60e61e005236d73ff4698f67"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/alpha_png/21.png",
+    "bytes": 43051,
+    "sha256": "e8afd91cfd494b1af13400a17ae6284e517499e944fef93ee11b4bb8dfba5b83"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/alpha_png/22.png",
+    "bytes": 43169,
+    "sha256": "05c5141e8b0fb0b937f8b40f068a536a6b36e91ba9a53dc9edaa8f854d9af104"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/alpha_png/23.png",
+    "bytes": 43127,
+    "sha256": "b434b98faad6eee244e13bb5e5b6d430283b506ce6ab4090a0d913fbbc22a165"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/alpha_png/24.png",
+    "bytes": 43055,
+    "sha256": "83c7c0f7d3dd34042f43d82d4e5c56441c1e2c4510aef58f0703911054329c14"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/alpha_png/25.png",
+    "bytes": 43125,
+    "sha256": "a8ee223f6260d64ae3e68311b815a3adb913cc7b6dcebaaef7c4c9d8c68c7310"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/alpha_png/26.png",
+    "bytes": 43107,
+    "sha256": "a4cc76a21de93b079b8940c92e57e03725c9d27090f1e91878482a8a84bb133b"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/alpha_png/27.png",
+    "bytes": 43198,
+    "sha256": "13c7141cac5fc64a7414cc1d8147c9f940c1e0fefdd55c4dc430a252a4599b45"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/alpha_png/28.png",
+    "bytes": 43254,
+    "sha256": "a1e988513a26338fd17755ae2f1f643367140eb33525a0bdf81015e02c8f2381"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/alpha_png/29.png",
+    "bytes": 43321,
+    "sha256": "c411535434f42edd5df4ba0c83b01b81386a54eaa6a25ad6ee10e50120360fb4"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/alpha_png/30.png",
+    "bytes": 43275,
+    "sha256": "e80cf05084df7f2cad2051e549d293f5c93f771a805a3d76de8dd32fa764fc8b"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/alpha_png/31.png",
+    "bytes": 43313,
+    "sha256": "910d35a1dd8246447626ab58ce620c9acaa727e3a4828bfec214894379949bc5"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/alpha_png/32.png",
+    "bytes": 43399,
+    "sha256": "8354b32db8618f9d188f92c9ef6cd98f646215957309ddc3d0d41adfc491d1d3"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/alpha_png/33.png",
+    "bytes": 43480,
+    "sha256": "5253e7bf077df85b867709a875e0c00001534278964845562540e52a1ac1dbd3"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/alpha_png/34.png",
+    "bytes": 43394,
+    "sha256": "4831df30607c6dbdebb3ea0e2d825b79c1e34e79558fecf5c15ae32752dd5f84"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/alpha_png/35.png",
+    "bytes": 43412,
+    "sha256": "fb7786f0343d30675355be61ca7d8e6948938a55a5170b6117b8a5b2501925d8"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/alpha_png/36.png",
+    "bytes": 43549,
+    "sha256": "379f0b3c1857467e0c5d0db8042a4b4495e193ca6180cb2b2f0dfc53e750ce4f"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/alpha_png/37.png",
+    "bytes": 43484,
+    "sha256": "1940e67f2e99f73f65adafca4b9ed36093095c3a44bab2b6ea1d91559fa66a08"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/alpha_png/38.png",
+    "bytes": 43438,
+    "sha256": "1b42017e61a74bfa7dc7d1a11538448e247a1028b031ad83b91b954521636319"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/alpha_png/39.png",
+    "bytes": 43413,
+    "sha256": "5bd507019fcf699d530d0dfb9ad1c824239c8a02bb23766cd42caac3d4598d7e"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/alpha_png/40.png",
+    "bytes": 43310,
+    "sha256": "dd43bb7088f8ad93e71163e137473401b733e8ec77567f6a17b1019e3719da04"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/alpha_png/41.png",
+    "bytes": 43316,
+    "sha256": "5d5bf14ea8b33236bc11df3f324a8fb98fb0b0dc38833aaa77903994b2b76bb0"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/code_graphic_008_p5_10_metal_easy_v08.mov",
+    "bytes": 9717306,
+    "sha256": "53454827126be943dc4b11b51c52a32e9131637094dc4ca869a57e2165a68312"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/composite_v08.mp4",
+    "bytes": 1315441,
+    "sha256": "f8453cc78529871ef12a5ce4b1ad84a55f1d3d3759b98d180507b4c09d400ca9"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/cuts.json",
+    "bytes": 672,
+    "sha256": "439904ea2e0156c369ed4caddff79097a508c9e2b33b1849794366bae6456db2"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_alpha/00.png",
+    "bytes": 30323,
+    "sha256": "b28e41b1eaf78af4d734754c924c72ba509f22bc97eecec4ddf70d3c637b72f5"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_alpha/01.png",
+    "bytes": 38799,
+    "sha256": "d9f415241106d1575cb353e63571ba53b725441c56d97448809e515076ef7962"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_alpha/02.png",
+    "bytes": 39382,
+    "sha256": "b8c7cf3ca9ce2ecda373796bd67540323e5534d2d40b162d639882c1c7de92b0"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_alpha/03.png",
+    "bytes": 39509,
+    "sha256": "617571e7aae852c9b2f0357bf373a6e95f6b3acbb8a42e74d30ef7f9a10ab579"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_alpha/04.png",
+    "bytes": 58771,
+    "sha256": "1ce2ae4c9119f10a99c4acdffd593925981ad3102b87b9d7e6f9eb2986ffafd4"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_alpha/05.png",
+    "bytes": 61508,
+    "sha256": "c823ce63c52b0551f9391f2d74f9600c47a3683302a33cd80cca3f82abdd1c1e"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_alpha/06.png",
+    "bytes": 62856,
+    "sha256": "d2b167f423875ee6fbc61cb2c37733b33ed34d6f81ea99d6341b8381bccfa19c"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_alpha/07.png",
+    "bytes": 63594,
+    "sha256": "15e680e58184f99e747eccc0eef3f1ff37f8e9fda6d354735dd8a04260b4aea8"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_alpha/08.png",
+    "bytes": 64383,
+    "sha256": "c2811bc5db670d5bebd174d68f9241f2cbe88b8668c7b3949ef2f9b88013b40b"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_alpha/09.png",
+    "bytes": 64666,
+    "sha256": "313e5d7acf4f7e2aa43051763f040960c95c9e8ea379d32a3685230628d27564"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_alpha/10.png",
+    "bytes": 65692,
+    "sha256": "99a51dc04d152dc92be830dc7b6281ef67e0040b32ceac4986f0aaeb8ab899ba"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_alpha/11.png",
+    "bytes": 66114,
+    "sha256": "046fa4b91962fce2ddae3cf550131d95f82910f67ea3c768cb38fc41e0b806ff"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_alpha/12.png",
+    "bytes": 66059,
+    "sha256": "af26d10219e52644b0579f8232b42c9b199e12cffd84d71372da733b206c2324"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_alpha/13.png",
+    "bytes": 65915,
+    "sha256": "776466ea9e8ca516c106ec32c03f70fef35df3cc563216999dcada06feff7e1d"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_alpha/14.png",
+    "bytes": 66123,
+    "sha256": "76dbcdbb4b3119e1e80be6d6cb371c57228ae7291d0da98f7b483d5f2164cd46"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_alpha/15.png",
+    "bytes": 66076,
+    "sha256": "d322205af36f502689e87baca168518cb6f2d5ea7b2b236d0e5472e62be04a29"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_alpha/16.png",
+    "bytes": 65717,
+    "sha256": "d53a67a410b72d96a1c5c9367cfff5c2cccba18e5f2560452bd41822be6f47cc"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_alpha/17.png",
+    "bytes": 65564,
+    "sha256": "0d699c3c5ae5c525eed8b2f04e7ca0110701908fd877ee80c94f4e01feeebc31"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_alpha/18.png",
+    "bytes": 65702,
+    "sha256": "bc5a170f2d7432155705acdd68b23b05363a21cc603c16dfb9586744581bb635"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_alpha/19.png",
+    "bytes": 65304,
+    "sha256": "952402c5f98815a574d6d16134cff3e56fd83c2ec49b5be8d654ccf49cf0b68c"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_alpha/20.png",
+    "bytes": 65507,
+    "sha256": "75c4cd6ccfdc777ef80cb4caffae0385846501be06c43d45d25b24008b127e02"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_alpha/21.png",
+    "bytes": 65450,
+    "sha256": "81672f401a04776a30f533cfd342f15435052259e861ac7e9b2ffc92b56c0f4a"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_alpha/22.png",
+    "bytes": 66437,
+    "sha256": "c59ec379120b437867a90354ffbc4b6e72907ce2783cf3faad9aafbfd96f46af"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_alpha/23.png",
+    "bytes": 65876,
+    "sha256": "ec3ce5c94d185f270afa95f1733e2ede04af2ef99bbd3e389be8c947cc5a31c7"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_alpha/24.png",
+    "bytes": 65933,
+    "sha256": "0ecfa47a473d094f941f5fdcfb1c96da72b1a94466743f5079795c489cf1af9b"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_alpha/25.png",
+    "bytes": 66093,
+    "sha256": "638460bf6386e0cee9cf0ab755dc3ee2e8f573d5e9ca7fe462bee10fb7053cfb"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_alpha/26.png",
+    "bytes": 66436,
+    "sha256": "965dff61213788cf24601d0372ea34519fe0877efae5f76446e889f6eab06583"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_alpha/27.png",
+    "bytes": 66247,
+    "sha256": "c0346d655385ce7185984ca187e55280ddd22492a9c3df869f40692cea09b099"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_alpha/28.png",
+    "bytes": 66383,
+    "sha256": "5888b5373ebd9e2d65075cdad2b8fcd75f56ada0e02aac84d3338090be2cccae"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_alpha/29.png",
+    "bytes": 66490,
+    "sha256": "08789b7491aca3d91187693ff2c45604238a962943faa3817e3e4568242b2b55"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_alpha/30.png",
+    "bytes": 66614,
+    "sha256": "6f190d270b2ce7aba214b4708383a86573d579ace65323d657416bc929a5680c"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_alpha/31.png",
+    "bytes": 67058,
+    "sha256": "937e49598fff007e7a593e358d1d836d726b2016fce767b39e3dc0c9935994c8"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_alpha/32.png",
+    "bytes": 66515,
+    "sha256": "d37cbd058e7bf45fcbe9aa2891632b68b7892a173f5634a167cc7ce8510e7bcb"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_alpha/33.png",
+    "bytes": 67042,
+    "sha256": "d5aca494d332aab76dad2205043833f70f8cb43b0a20fc013e70b27da32e8926"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_alpha/34.png",
+    "bytes": 67000,
+    "sha256": "680900b2599c8c6a034cbe29fa401367dc38b42f9e29e3e93c201153cf76c7d6"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_alpha/35.png",
+    "bytes": 67443,
+    "sha256": "cff3685e7fd30ff32f757e176bea64c686dbe149ca1618e88e44ad35a2eda0da"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_alpha/36.png",
+    "bytes": 67152,
+    "sha256": "ac0fc62904f1eea8bcebab33e8c8fe3aa636d7a345f602bb82b2ef83d8845663"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_alpha/37.png",
+    "bytes": 66995,
+    "sha256": "fff49a296f5582a1df8c3526e1b04dc3bed49c08f9189e7139b15d0669eef782"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_alpha/38.png",
+    "bytes": 66870,
+    "sha256": "18215cdbeac89724cf19eafacc246fa7da0ef99cc06a52971107230a3dc93b23"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_alpha/39.png",
+    "bytes": 67348,
+    "sha256": "e111704a360fb05720eebd6940b8bdf9a1a84c4a0c3d93650de059a3b39534f7"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_alpha/40.png",
+    "bytes": 66640,
+    "sha256": "6de33f957b9d6e08192967ae6f054fbcefdb6f7510fd1f761b40062573233528"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_alpha/41.png",
+    "bytes": 66865,
+    "sha256": "3d5a2a79bd20f5988aa0735c836f33498d0048de9f889184144d6a423eee0134"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_composite/00.png",
+    "bytes": 2497945,
+    "sha256": "cddb630ef18105004e832d7d65a7e3d4e31e16a7c9701a4992f5f0cead0005a8"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_composite/01.png",
+    "bytes": 2519274,
+    "sha256": "78c11c6bf3041b927c163fb38f4b65a3191547af6c36b7672224dd9263ac9154"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_composite/02.png",
+    "bytes": 2530820,
+    "sha256": "48a7645eb50b4fcb47549740490dccf560bc85622e0d0ccf3d9dacbfd7cf4406"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_composite/03.png",
+    "bytes": 2548773,
+    "sha256": "a2c71d7a4ecafb5fda315544bbda08b1e81de99ef3024c87461ef0a4c7d712a7"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_composite/04.png",
+    "bytes": 2557136,
+    "sha256": "130bebaad99f067cf1d668614114adf28213147fd2626a52d03a7c8f463c3a55"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_composite/05.png",
+    "bytes": 2578515,
+    "sha256": "f8730882cdc4400b300217ba78a6aedf8d66a9bc86b8851ce5bdfb67620579f9"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_composite/06.png",
+    "bytes": 2580721,
+    "sha256": "f9731e40adc47a4811383fb36f09b30ae6026810fb7db9262550adb8344d802e"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_composite/07.png",
+    "bytes": 2592586,
+    "sha256": "43fc815ea6f584ac8eec1d146fdca7344a3b10ad93789fb7a52a2a2048bfbdc9"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_composite/08.png",
+    "bytes": 2593657,
+    "sha256": "bfbcf54dc4c2e3f740049b40e7510260863a3fe46a289e43b537b5604d6da623"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_composite/09.png",
+    "bytes": 2606040,
+    "sha256": "a37c852544e85a319b784e88b70035f390eb80b9e102e8fe165ba440f86018f6"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_composite/10.png",
+    "bytes": 2603414,
+    "sha256": "2b89b50460c4b4c7275c65b4d9751fb35eb6249da9092abea5e7c3d300f71b00"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_composite/11.png",
+    "bytes": 2612561,
+    "sha256": "462aef39a3b11ff6b0bbdba50f16670c64a3dfa142b5c42a8603455bb70aeb51"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_composite/12.png",
+    "bytes": 2612957,
+    "sha256": "5de333c57a1b737922ad64bafbe1e82c5fb2547ad66868530450d17e122386f9"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_composite/13.png",
+    "bytes": 2627941,
+    "sha256": "31ab91ef0b611120f0791040ccdbec3753fe04cc17ed81780a03d808ada008bd"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_composite/14.png",
+    "bytes": 2626617,
+    "sha256": "a5d3561279f18cfc5f3f92c9a2aab2870b7ada46f7f5aebe1eb3fb013ebb80d0"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_composite/15.png",
+    "bytes": 2634821,
+    "sha256": "b70251b29b3a2fc6b788ea5d1a3f1672e027ab1e52cb00cf830843109de2c0ca"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_composite/16.png",
+    "bytes": 2632850,
+    "sha256": "7d2ae32dc02a1389ecd8c4136855559c4f0f998a5e87fe0258c6c5823e394dc3"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_composite/17.png",
+    "bytes": 2646088,
+    "sha256": "451c3d29d26aeacaeb21874dc7c2f7d0e581f7400cbdef1b339fa11abbf451a3"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_composite/18.png",
+    "bytes": 2646119,
+    "sha256": "4fdf1d0adda96407602cd659fdf655741e42269c7b03304fcc5701eef2ad4cf6"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_composite/19.png",
+    "bytes": 2670526,
+    "sha256": "f51c4ddef81d4ed627549acb5d9eadd4e3ff7ec84fc27341b07f844c1eaff0f0"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_composite/20.png",
+    "bytes": 2661563,
+    "sha256": "8a8b791dc18118f8ab82000dae1049a979a5d25913fb342f452bf7c6537b4537"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_composite/21.png",
+    "bytes": 2678940,
+    "sha256": "7114c6f0b1e62ea6a4a03a665dbc53c08bd5f704baf0f7ccb14ca29121d35550"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_composite/22.png",
+    "bytes": 2666393,
+    "sha256": "8b5396d8f1704f6a0415fe3c986c2cd06bdb1ae234d444861b480f912ecb0c5d"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_composite/23.png",
+    "bytes": 2669646,
+    "sha256": "3b01a52716e662fae3fb290a1cf98afb553c6e677004126a0a8048348dec3f3e"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_composite/24.png",
+    "bytes": 2667015,
+    "sha256": "04ecc41984165616c2909185d2a0830ea3661e9369143d3d97f3eb7c35a38548"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_composite/25.png",
+    "bytes": 2679784,
+    "sha256": "6431a0cf90dc3ff7845350ae534f6a7b0108eee5dc1132e24a768f0dfbeaee0b"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_composite/26.png",
+    "bytes": 2671859,
+    "sha256": "10f4a8b617a2bd177f26410bf1aee6ff470d5e1c2b74fab9a2e36d57ab1de9a9"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_composite/27.png",
+    "bytes": 2694254,
+    "sha256": "af87b59a74c550fe7a23ae9aab7eaf0185f84092fb40583d6f88714f9b9b9c31"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_composite/28.png",
+    "bytes": 2680581,
+    "sha256": "07627cf98794067620c025485c441fa0d43a6b498cdfd1487e57c37d68e25d4b"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_composite/29.png",
+    "bytes": 2698261,
+    "sha256": "06a2b010583ebbeda7ea280c2ffbd3af55cf38177c9baae5e0f4258238602c90"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_composite/30.png",
+    "bytes": 2683402,
+    "sha256": "c24306f58b6ad2ab3b52bd6ab0d0d2c4dcf42f57aee4053a9ae50e3d4b60301e"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_composite/31.png",
+    "bytes": 2686134,
+    "sha256": "679843d9af31bdb259d17081cb2c10147a8186d75db6467b1fe29ba14ce5dad2"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_composite/32.png",
+    "bytes": 2686647,
+    "sha256": "833d5e36810a3f03b6128adf381dc54c80dbbf637be5f58379734dee2198ada4"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_composite/33.png",
+    "bytes": 2698207,
+    "sha256": "59c0db59096aa19fb98e1a64907ef3a0053f9f376ca5fc2636c91d4deb204fe5"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_composite/34.png",
+    "bytes": 2681017,
+    "sha256": "b5a3c7b1f6a44959c3c4f61e7731b54712c07f6aa20ca341af812a7ce3f6400f"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_composite/35.png",
+    "bytes": 2682019,
+    "sha256": "f15a32fecd2e1c0cc75ad0660f1fae423410bec57bdd2e745fb9796575d4f7a8"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_composite/36.png",
+    "bytes": 2681716,
+    "sha256": "06070421bd8a063e66c228af50334a3d6fc9e684968563e302a7753f11cd914a"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_composite/37.png",
+    "bytes": 2695735,
+    "sha256": "4e5f2398457a9622f90ce5aec71e51b2d9eede86bbfe1007a079a08e6395983c"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_composite/38.png",
+    "bytes": 2682693,
+    "sha256": "139e590201f973dc3ba322dd574136cf37785aec4f5721b6fe58069f08dd2e9f"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_composite/39.png",
+    "bytes": 2685680,
+    "sha256": "c50cd0ee90438f1c3f9fa8dfc913bf591ce49e54f716ef67a7caaa2b6ecfeaf7"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_composite/40.png",
+    "bytes": 2676490,
+    "sha256": "2756028f6e574716b176b280d75c6d8bce3cf9d03ba0d666676d11d4e7eced6b"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/decoded_composite/41.png",
+    "bytes": 2679711,
+    "sha256": "eed93effbaa2895189b2dfa349bf714fe2c69930b68ae752bab429bbcd67600a"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/p10_frame05.png",
+    "bytes": 2563771,
+    "sha256": "c06e2003b526e9f373dbfbfe8ee5bfa6b70c73484a021b8a61ecfbe46f858493"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/p25_frame11.png",
+    "bytes": 2599017,
+    "sha256": "c23ce1bfd89c2451c01ed2dfd32b343302260fc7e9bf43f33031174781494764"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/p50_frame21.png",
+    "bytes": 2665910,
+    "sha256": "c9c4169af3df4fb8657b7e4bbfd4edede0e9213e163baeeaf4f7abf26f309191"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/p75_frame32.png",
+    "bytes": 2673866,
+    "sha256": "0dedd746b6f821cd824369f23ae1bede57b0f2191d5d3b30d3bcc2b76b764d1e"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/p90_frame38.png",
+    "bytes": 2669821,
+    "sha256": "73e11561231ecce68062812ee82157b116a849e929ac8426398efd2159aea316"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/picture_qa/PICTURE_QA.md",
+    "bytes": 450,
+    "sha256": "9fbfd5096a3b4e98bb2db62eed1c94c7f0da3caa84515fa5b206132bda29fcaa"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/picture_qa/picture_qa.json",
+    "bytes": 1981,
+    "sha256": "92fc2132cf860daece3f89f883a2a04f76a814d84d299f8812a6a9bb5cafc675"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/picture_qa/picture_qa_review.jpg",
+    "bytes": 143351,
+    "sha256": "e796da7805a7dd6f66f5576264e2adb753210145e743e99c4274f6d51aac8e63"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/polish_gate.json",
+    "bytes": 1720,
+    "sha256": "05ef12045d1436bf92a80e91730e31c1bab7dae7e6ab828014452e21f1ba368f"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v08/workman_42f_24fps.mp4",
+    "bytes": 796669,
+    "sha256": "94e413b002f8ac06b23019477f04746e415bcba56d9aa6621e735ac4af7ccb7f"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/OFFSETS.json",
+    "bytes": 44906,
+    "sha256": "c5615a2374f09867a13bc43a7526b4f8c8a38c205ac1e052378df8f1fda81757"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/TRACKING.json",
+    "bytes": 24753,
+    "sha256": "7ef5a96b155acd527e765a2ac179a2a69022119deb793001aade8e6b0eab799f"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/all_frames_00.jpg",
+    "bytes": 702908,
+    "sha256": "996eda0d76dda6eb78052bfa04f8225562bda669e809e0c54e20f58d291c4b70"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/all_frames_14.jpg",
+    "bytes": 717469,
+    "sha256": "80c828b8d91fe117475a59549e05b04b44efaa49b3339211b7b9f80672616bc2"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/all_frames_28.jpg",
+    "bytes": 715666,
+    "sha256": "a9955aee4dde6c5026a18ce53509ae7b25784ce7734b8fe89d38324b19d82bfe"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/alpha_png/00.png",
+    "bytes": 12867,
+    "sha256": "c6f79c73f3168771a37bb29b2246dd0424783be46f48f1286238df03b8817ef3"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/alpha_png/01.png",
+    "bytes": 15931,
+    "sha256": "03331036d5bf06ca0dbebd8dd05a0514bede34933f175f08c9192cb83eec8357"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/alpha_png/02.png",
+    "bytes": 16924,
+    "sha256": "99309039fc3310f2275bbe366ce812898167377df4ad9ff205275cb443c0b6c1"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/alpha_png/03.png",
+    "bytes": 17500,
+    "sha256": "f408f411b65153e180bf83c0bce89765270a54242ad678b0e43a34c2b6cd9f99"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/alpha_png/04.png",
+    "bytes": 36585,
+    "sha256": "77670085a3a76108649096980639edde705a5c66e2e8984cf265d9fac3051335"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/alpha_png/05.png",
+    "bytes": 39251,
+    "sha256": "2609e3bb2f75c61606c269c57a610492e9b5485d85a8d782302db796b1d756db"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/alpha_png/06.png",
+    "bytes": 40775,
+    "sha256": "a0c69c3517ab51a90a7ce02aa498e9e4d57b633f11ee6890d027cc9549a9f4d6"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/alpha_png/07.png",
+    "bytes": 41816,
+    "sha256": "7e4e1854078da3a3904cb915e4b48961c540e263eafa2e269128880dda464ceb"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/alpha_png/08.png",
+    "bytes": 42371,
+    "sha256": "1aa45cbd51164bff19e92e4560b25ea8d32ecc64ebd06be8a83a229661e68de3"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/alpha_png/09.png",
+    "bytes": 42660,
+    "sha256": "f26c67f22da540a7176eb3a76a2206d5ebb5741c7aa88ade9bf67b104f6ff495"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/alpha_png/10.png",
+    "bytes": 43106,
+    "sha256": "af33eca68a8960ee83317758d4a205e81a871f06c51d8a8f7da91602c53238fe"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/alpha_png/11.png",
+    "bytes": 43302,
+    "sha256": "a9e910933f79f59fd0240e0c7b1f2671773a99a799f49a5b2623e534079ea0ae"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/alpha_png/12.png",
+    "bytes": 43412,
+    "sha256": "9bb79f99c348a6fc4d9c761ed0f298f4b77350ccc9513dbdae5163eb99408b07"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/alpha_png/13.png",
+    "bytes": 43464,
+    "sha256": "fb206813c67000cf563f81304f39c6b51d75be1ca47b91f9a5d89badcf500235"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/alpha_png/14.png",
+    "bytes": 43597,
+    "sha256": "53b0c3093a99101cee4c8122eea67289b1c5f52f6681c34e8c3e17f38ddca0ac"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/alpha_png/15.png",
+    "bytes": 43560,
+    "sha256": "7fd9a361f41a386d67544382227dc80ac96cc12870f2f872eefdda77226ed715"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/alpha_png/16.png",
+    "bytes": 43630,
+    "sha256": "3a8af6deb5371a59d88632f32ddd8d1211c8f3f46a7a6b8b564d7d48f3936c5d"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/alpha_png/17.png",
+    "bytes": 43539,
+    "sha256": "0fadc84efc6b242ad04cb0fb3dd5ad352cafb187961724c7c3b5f659d70b245b"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/alpha_png/18.png",
+    "bytes": 43587,
+    "sha256": "7b3ebbe05ce456946be19507d7a33520712470d1a6c2762c8d3710cb6218bd11"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/alpha_png/19.png",
+    "bytes": 43685,
+    "sha256": "21c0305e2ed211237ebff429d55603a98c97d79145f78c005f68f95853fa976a"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/alpha_png/20.png",
+    "bytes": 43662,
+    "sha256": "8c16c7d28d6c56fad3f579dd34a7acf09e09fe80e71a847b634f50671365b55a"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/alpha_png/21.png",
+    "bytes": 43455,
+    "sha256": "a083ca6de4af435475975190f63400ba274e59008ee5718296f4bde14d29cd10"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/alpha_png/22.png",
+    "bytes": 43645,
+    "sha256": "fc2781c90e0106496736e824f5ba762679883cd0fbc82ff468038b2452e82c18"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/alpha_png/23.png",
+    "bytes": 43443,
+    "sha256": "2071b3a30484509aece4b5be032f88d2e4f760efd082caaacedd424787fc4f36"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/alpha_png/24.png",
+    "bytes": 43399,
+    "sha256": "92c47e72e4d0ca3857ab0b91ee5f1f39bcd5cfbe06d37cc19c98638c16c72688"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/alpha_png/25.png",
+    "bytes": 43659,
+    "sha256": "0ac88ecfc58c3cc0ce0a227ad3c82098c8a8a289f725d44f70e64ade9fb8b33a"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/alpha_png/26.png",
+    "bytes": 43330,
+    "sha256": "1357f792f4fb2110c977a97531be0c0bc448e318a55a222765f3133051a10f78"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/alpha_png/27.png",
+    "bytes": 43363,
+    "sha256": "634a1c1de414684bb35650db60b0b9107c2dbe44e50a658cccddbb43ce74c13a"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/alpha_png/28.png",
+    "bytes": 43593,
+    "sha256": "9a75164990d66bbe5e537fbd292239542a508b6252d0a2ff4970efa0ac49cda1"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/alpha_png/29.png",
+    "bytes": 43556,
+    "sha256": "654e4a2452bf05642c6bfa1c8d12044a82f67b6f1612a1b62ad0347e9b5a1866"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/alpha_png/30.png",
+    "bytes": 43400,
+    "sha256": "f57c062fe2f10cff2ece10747654562945bf59379fd666a560b6924f5ef6ad44"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/alpha_png/31.png",
+    "bytes": 43677,
+    "sha256": "23a520fb320bb8ae01f7a55a0b0920a12bb458ca9c38d700e9390861c7d1e1ca"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/alpha_png/32.png",
+    "bytes": 43718,
+    "sha256": "84e5ed4228f13b515d29fba030e64c44d7361cc28e6d04d2c7f80d3cff7ab0cf"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/alpha_png/33.png",
+    "bytes": 43733,
+    "sha256": "c3a47a9d0628efc78fda94e6520745c063456654e1dbb1202c41d030d3d0f2a3"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/alpha_png/34.png",
+    "bytes": 43732,
+    "sha256": "c85f9f1403eace083e52779213f98b9a32bac7b82f081b5db1a318245a4608e9"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/alpha_png/35.png",
+    "bytes": 43710,
+    "sha256": "7e9f2c04588e50711f0d13c1cdf63342e2c1e4bc1dc884d418c77cb78412ea61"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/alpha_png/36.png",
+    "bytes": 43816,
+    "sha256": "8448187cdc5f97e8c58f207557a007ad904d37776a6c88dfdb386c5805b1326c"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/alpha_png/37.png",
+    "bytes": 43811,
+    "sha256": "0daa1eed38dd6cb82f5621c6a269ba05539dc0f385babd389c8229ff8cc18fd0"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/alpha_png/38.png",
+    "bytes": 43796,
+    "sha256": "380aca1114f1ebe46f976253f9213bbbed7ace08ce982655120a5788028d99b7"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/alpha_png/39.png",
+    "bytes": 43727,
+    "sha256": "08e388a77b6cc6b0732bf56d6d33d2ea09326d571ea806c05f8894b4500aa1ff"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/alpha_png/40.png",
+    "bytes": 43523,
+    "sha256": "454782a3f1e5e3c62e2a0c6ddbf948c370fe07f54e1b812172770cefadbd5f37"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/alpha_png/41.png",
+    "bytes": 43502,
+    "sha256": "2c347e8446c1f2d67c387311a1934b374a80fc88fe43fdb15d75dc621ff130ae"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/code_graphic_008_p5_10_metal_easy_v07.mov",
+    "bytes": 9885152,
+    "sha256": "5e9cf90d0bb69dd485c366d92cc448c6afb03e9b11306c24c70c6117b0b3d4ba"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/composite_v07.mp4",
+    "bytes": 1325933,
+    "sha256": "3eadd303ffedb61ee5fcd66eba7931aac91ef9e30b297ec0a40511f1ec45accb"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_alpha/00.png",
+    "bytes": 30323,
+    "sha256": "b28e41b1eaf78af4d734754c924c72ba509f22bc97eecec4ddf70d3c637b72f5"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_alpha/01.png",
+    "bytes": 39072,
+    "sha256": "10828a378da35d7574c97274b735ceb5005dd1d25d2a20e826d50d4a4fafee2f"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_alpha/02.png",
+    "bytes": 39667,
+    "sha256": "7e1ff922e46ab9e60179c7e1171e605ab7b31b7058c6ec81752757e322d88f8a"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_alpha/03.png",
+    "bytes": 40284,
+    "sha256": "420363f2d589c4ee1c89ecc5514fdc134ab5dc588ad241b533f741a4ba985c0e"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_alpha/04.png",
+    "bytes": 59404,
+    "sha256": "ae7ca63e04df1a155ac177d7da8275b8350e459677f587e22c3d582a451ca1e5"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_alpha/05.png",
+    "bytes": 62227,
+    "sha256": "58d9f2bb8ea1c87389432e004a7ceaf721d90e14142006836166e00f348a07a5"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_alpha/06.png",
+    "bytes": 63837,
+    "sha256": "64d674e70d8e6feab02b84eba035d7703ec80c24e5b55de139321ca4ff8cf77e"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_alpha/07.png",
+    "bytes": 64870,
+    "sha256": "0827d21888b45f6a5a1ce4f715464643fe6a55ff93deab0318d7ac3dc5e8e2fc"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_alpha/08.png",
+    "bytes": 64915,
+    "sha256": "55e1c62d33ecf8323841b7e3db67ee00efe153d035485c69085b7bfa57bb1ab5"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_alpha/09.png",
+    "bytes": 65193,
+    "sha256": "f3d639b2ae3b4c47fda0f60006688010f56b48425bcac172dd148adc53627a22"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_alpha/10.png",
+    "bytes": 65788,
+    "sha256": "f7bfc41a12041a0291d28e6cb7c87ef19eee6b0143111c436817c31228eef43c"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_alpha/11.png",
+    "bytes": 66558,
+    "sha256": "ec741a77f682fa32ee54fb08f475ecedaca68a1f3a0e0849683a7475971cc4b2"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_alpha/12.png",
+    "bytes": 67064,
+    "sha256": "9c114f261572b86179ff764fb37f3cd84c5654d47c168f922b69a5aa69cb6aaa"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_alpha/13.png",
+    "bytes": 67067,
+    "sha256": "2cf6bcecfdbf1e298362e54b8735085df07a998d9ee382ab298304f3fad0e38f"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_alpha/14.png",
+    "bytes": 67262,
+    "sha256": "57092c91dae1b1988188ca0ca5b6841aa58645b134babdef7077ea8d486d0636"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_alpha/15.png",
+    "bytes": 67275,
+    "sha256": "d34084186dad6de3a59fdca99d8b40f0ec198b64b9ecb868bef65a4130bd6277"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_alpha/16.png",
+    "bytes": 67395,
+    "sha256": "58546c5e73503d8adccb5ebecaebc40f8f4f1e2c89382a421fbca9ef9f5104f5"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_alpha/17.png",
+    "bytes": 67293,
+    "sha256": "4b26f86eaf0d88e2d1e14d44984050cc66319cb4e7486f2ccd7b8fd73444d94b"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_alpha/18.png",
+    "bytes": 67313,
+    "sha256": "06aee17bac6a105d150ce4494887497cc2a299cca28432ef707b95a1c8bd2414"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_alpha/19.png",
+    "bytes": 67596,
+    "sha256": "264e7b2ae611984fa3c1313a4a1497a7df7ca20f9f5193dc2da0b16c953b9b88"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_alpha/20.png",
+    "bytes": 67544,
+    "sha256": "824476cdf3f39971a283da4c8d93ce44aeddb4c84ba8f992817d2b232efefe79"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_alpha/21.png",
+    "bytes": 66423,
+    "sha256": "7a9bdbc97cb5d888c797b8b82add02536039c7898fc28b6ed6123168c59f8c8e"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_alpha/22.png",
+    "bytes": 67637,
+    "sha256": "f90a6e496065f5ac2bbe33d7daf933cb178114a3c3f3823f3b48b679fbd845c5"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_alpha/23.png",
+    "bytes": 66964,
+    "sha256": "6a318bb1799e117dd335c647709d20afeef4aa7c5b592630b478c0e989fd3a1e"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_alpha/24.png",
+    "bytes": 66755,
+    "sha256": "4c9bc2b3cb67a57c23a953e9f968a2f971e686c052184f2dac1be35ad4e768d4"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_alpha/25.png",
+    "bytes": 67828,
+    "sha256": "d449e2c34fd8e367394bc651b17ac3ba2ec2d1e9098322e750dfd4dc840c4fa7"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_alpha/26.png",
+    "bytes": 66979,
+    "sha256": "07519bc7791f7e4adff5e868cd86c076f01706f591952cc2c64e51767c79f01b"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_alpha/27.png",
+    "bytes": 66769,
+    "sha256": "773f27cb5fe9ed98d2f97f12fff3383acb6132ba0d10c739b6e7eda59ac58342"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_alpha/28.png",
+    "bytes": 67321,
+    "sha256": "97b442da84c8b2c68b9b87565783e4032ab9164694d28f57b143f363ad9c17dc"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_alpha/29.png",
+    "bytes": 67044,
+    "sha256": "c29b5e2a25949cf85b945cca2231f1927bda74a8003139031244ba96aa58b8d3"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_alpha/30.png",
+    "bytes": 67009,
+    "sha256": "7c38669974c84b721e30e2c3a7e5eb78f94cbdef797d3dfc6c21517aa83aa020"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_alpha/31.png",
+    "bytes": 67943,
+    "sha256": "fa153da994545f78a03f565d99195b9c4f563252aab4a10cf1085acc2986a60d"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_alpha/32.png",
+    "bytes": 67529,
+    "sha256": "fbd15cb408b2ec3a6b9893ef5b5d95df7f9945e8f06bf69f5ddbb4f4f82da0c3"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_alpha/33.png",
+    "bytes": 67827,
+    "sha256": "e97dc9141cb6c4e6d9abe3adc98f917c669c637f8119cb9994aca699864b257b"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_alpha/34.png",
+    "bytes": 67965,
+    "sha256": "ba112c7803ed3037f9c26321504cd81af91a65ea5e98cf0e4fae35803c77b6ce"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_alpha/35.png",
+    "bytes": 68180,
+    "sha256": "1144ea04dee820f0494518b1e9feed869c1ee6ad65f2eebaf4e38c70f607759c"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_alpha/36.png",
+    "bytes": 67972,
+    "sha256": "541c44a8e0593c87591cecbb45d357bc3696669a08b454f878fa606f42273ffd"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_alpha/37.png",
+    "bytes": 67986,
+    "sha256": "c8a26bfd33e6b4fafc355795d4fff4b7864914d07f2b58b337f0f5f6c16d33f4"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_alpha/38.png",
+    "bytes": 67902,
+    "sha256": "97ef3c2962b11cb00642254019c40472d56358d84791bcf11ca24fccda386cfd"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_alpha/39.png",
+    "bytes": 68239,
+    "sha256": "bb0d6bf3a19a2310e786655fa68a8a83ece6798484b1e9f65cf97db344391824"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_alpha/40.png",
+    "bytes": 67420,
+    "sha256": "c556f60b705f0af6c66aec0d742a776f0f2771a109d5f4b2647fee415352a268"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_alpha/41.png",
+    "bytes": 67487,
+    "sha256": "e9649469d71b07feb27b3fb6c8239e37702b3ad69151f7305291de87be75b317"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_composite/00.png",
+    "bytes": 2497429,
+    "sha256": "411436cc9a4b025496308d746b0fdf378ad218f6279269cba6f023a866ae5590"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_composite/01.png",
+    "bytes": 2519505,
+    "sha256": "458aca94b21165a805cdf3fa660730b58a5a4f83c7b4eb29d7c3d693034fcdec"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_composite/02.png",
+    "bytes": 2532333,
+    "sha256": "3ce3cd458a9158e17b6848a63d784d73ba650afc9a1c6a5a990f0f549a356e91"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_composite/03.png",
+    "bytes": 2550017,
+    "sha256": "4d0d34da57af5addcfa2e263d174eae99adf66b8be20d6c4288be65f6d6a1040"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_composite/04.png",
+    "bytes": 2558072,
+    "sha256": "db6ecbb63dc912270e33a522db063e297bc3f41a204a63b1c420b6fa955381b7"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_composite/05.png",
+    "bytes": 2579988,
+    "sha256": "190f32ad6cf04416a4d57a8434187acdddf213cbfcb718217b15c92d3e5a4969"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_composite/06.png",
+    "bytes": 2583308,
+    "sha256": "c2a67397ce70b3e019bdd9949fe0262f43f03e627438fca3d836e360f647c85b"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_composite/07.png",
+    "bytes": 2595427,
+    "sha256": "9235272bf8a820ca0df58d5a2a014d6202300c15ad6368e49f0f32e038521375"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_composite/08.png",
+    "bytes": 2596287,
+    "sha256": "baddd7db5b564edbf512cd1bb0ddc8eb24eeafbf6b5aa116a141e0e1a9f1e205"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_composite/09.png",
+    "bytes": 2607777,
+    "sha256": "a6993dfd51448547a4a3270392694227888ff37439398165e7fbd94a40f28e44"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_composite/10.png",
+    "bytes": 2605609,
+    "sha256": "81a5cefa7be59734cd3168cfa608d31f6b7f140f07acebc93843031088e3c58b"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_composite/11.png",
+    "bytes": 2615204,
+    "sha256": "cddfd9fb21e84c7fa75f7eeed369e2700f4db36bb29b1a80efc9bf7aec09a0cb"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_composite/12.png",
+    "bytes": 2615348,
+    "sha256": "c48d1bdf3bb67f8fd40851d0aa0ee2713117defc796af9322ce4a5135cf24bba"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_composite/13.png",
+    "bytes": 2629717,
+    "sha256": "09d17ff07bcf6b7b3a8fa3549d3c128c64c570d757226c30580eccabc9d9e08e"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_composite/14.png",
+    "bytes": 2629108,
+    "sha256": "12e1af287f3201fa3df10377d6a2d047dda5b93a37aa415b659007fed3db5973"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_composite/15.png",
+    "bytes": 2637167,
+    "sha256": "bd9ab1c322039a3b18693faae489924dc2fef22f1e29d81878f999ec202904f5"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_composite/16.png",
+    "bytes": 2635814,
+    "sha256": "340d9b8a883556c2f22c9ac8e2e92360b80d1eac090e4be26805f4df34153f10"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_composite/17.png",
+    "bytes": 2649481,
+    "sha256": "b1a9a98e29f89fba7d032e7411fe30c9b1e3be9aec00767300a73fae095d8176"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_composite/18.png",
+    "bytes": 2648638,
+    "sha256": "de28416e3e94bf1c6493f8aaf5705f66bf0254388fbfa827869c9c9211c99edd"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_composite/19.png",
+    "bytes": 2673305,
+    "sha256": "a95f3b2b6877fe12d9ef1c6d7fc4fddcc34a7d3549f512d8a23de03046e8f410"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_composite/20.png",
+    "bytes": 2664087,
+    "sha256": "d35c479eccecd1870c2f4164533a87da70806b1d4998e9851c895966af6f45e0"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_composite/21.png",
+    "bytes": 2681051,
+    "sha256": "f807391f2446a2af6ef1894deb747329e2f4bbe9f94f8a83c4b3009048b74a1c"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_composite/22.png",
+    "bytes": 2668821,
+    "sha256": "02441935f98dea2c11e19685fc1fd54c1e44d8f3637f508cf07437d1592e5dca"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_composite/23.png",
+    "bytes": 2671889,
+    "sha256": "03dd01b3e12b696e45b16cb32c9a1023966f251e96aa79c04c27de9f57f37cb8"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_composite/24.png",
+    "bytes": 2668475,
+    "sha256": "f1df9673f41b8efe825d5e88924c4a6effdf99909d6ecdaeadfcdc1c74d7d11e"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_composite/25.png",
+    "bytes": 2683207,
+    "sha256": "c5d5f4ab5e4047d90f5b261e7693e908fdeebf25dfc2ed14ea3710f4ecdf89a8"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_composite/26.png",
+    "bytes": 2664747,
+    "sha256": "5bf3b6d27410cc0da7d5e99fe1a3eadef33feae45b7a2dea5619628417064084"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_composite/27.png",
+    "bytes": 2669454,
+    "sha256": "4bd8030cbf3a2c5ba6415da6b53f9c46202e3145fc260643be94c87c2be4a419"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_composite/28.png",
+    "bytes": 2670191,
+    "sha256": "e5d6e59a737090dac754d4ab6c34c950b4f077643c61c4b244154cafaa5e24b6"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_composite/29.png",
+    "bytes": 2688077,
+    "sha256": "e1fdf2f1da8daa9efe44f8086f446341d7af4ba7f7057e8bbcc413035d7f346b"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_composite/30.png",
+    "bytes": 2683564,
+    "sha256": "2947515b15542194f65d8781253dda9ae0a58f989e6f8d192f0e7172f2a6f9c5"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_composite/31.png",
+    "bytes": 2699621,
+    "sha256": "93d3da3d593e92f6037f60c9d7ec2ff8ed0402b216e1ab335fb0ed490685836f"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_composite/32.png",
+    "bytes": 2692509,
+    "sha256": "15dc23415b0a2b7f95cd80a9f6048320bbabc1d9b1cd40d228cc9e958a0402ca"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_composite/33.png",
+    "bytes": 2700726,
+    "sha256": "429d93a438f4f1fe3efebe20efa2cc9e65aa1d35e70db5156e108feb55aa248b"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_composite/34.png",
+    "bytes": 2684633,
+    "sha256": "400fcab714f6463885257eb262a77016d816dc9c015b1688e916c3f8a93a5619"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_composite/35.png",
+    "bytes": 2685762,
+    "sha256": "e7ad6f99f8f93001ac6b0caeb44fbb750803683cc52eef4c42f150f2de122df0"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_composite/36.png",
+    "bytes": 2684083,
+    "sha256": "6a7a320cd90efe349cd9e87ee72ae043114c972b1226497126beae4913ee832f"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_composite/37.png",
+    "bytes": 2697891,
+    "sha256": "d4a09a3a752e8ce6e834b5f03a2604a15848ec4553cb0639006f1b7b8d70776b"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_composite/38.png",
+    "bytes": 2684547,
+    "sha256": "56ce869d45b366e2be4e24260201bdcb3c2e54848029dfb755af20bb06a2f377"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_composite/39.png",
+    "bytes": 2686070,
+    "sha256": "d4139efacb3f80cd7841669e96beb574a28bae3250cc30b816af69ae029f4dd0"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_composite/40.png",
+    "bytes": 2677152,
+    "sha256": "d932638f796ca685b82acd0b652dcfda946ca8ada94e1b806c847211744a58b6"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/decoded_composite/41.png",
+    "bytes": 2680439,
+    "sha256": "1b94a45edf9c602466e044e00c0b8a31399d7ecbfe9db1ab343debeb4bb0c78b"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/p10_frame05.png",
+    "bytes": 2565502,
+    "sha256": "55d1e8a63643ced4809e7837826f9c10699b47b71cb68f7b98a48c0a1cb2e9f2"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/p25_frame11.png",
+    "bytes": 2601829,
+    "sha256": "b05afe32b0495ea5a07942a53d99a33e394e21c2e42937a25b9592e37e8c3f2d"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/p50_frame21.png",
+    "bytes": 2668441,
+    "sha256": "b794a04e1ddb65275c62ab146319e6d4f01d3af451dbb2bce6da8d49004e2716"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/p75_frame32.png",
+    "bytes": 2679852,
+    "sha256": "57202937c673079a926bc9e8508162d5929cfd12f6e81a499b7771229c4828b9"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/p90_frame38.png",
+    "bytes": 2672429,
+    "sha256": "b3f163a2e5edc3207fe188ee52a5c310d1b6dfaca82eaf8bf320847d3e6e5e65"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/shaft_sheet.jpg",
+    "bytes": 297690,
+    "sha256": "948cd2f8eb04da08c3a69fb109f6f8c92fb106bc6d36f3f56c538615253be1f3"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/source/00.png",
+    "bytes": 2610208,
+    "sha256": "72c530b8119414ce72771912dd42cf1a09b32088196ed00dcc18a55e13d0b3d0"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/source/01.png",
+    "bytes": 2616646,
+    "sha256": "fa0cfc6e852d21d0af46389e3fa6f631b5284cb5354a8772871aed1ed681692b"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/source/02.png",
+    "bytes": 2610929,
+    "sha256": "d89f35382928d88496cad8c4400727594ac095e30df55959deba191db8b1e8db"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/source/03.png",
+    "bytes": 2627124,
+    "sha256": "8f5ef47e7b1b55a26feb61295642372aaeda7eb336a085884d57d3ea96561b2f"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/source/04.png",
+    "bytes": 2609254,
+    "sha256": "7c928719a25656f5d3ce276a641f50b62da940c0a8e41b7616d23c7f681b4231"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/source/05.png",
+    "bytes": 2614102,
+    "sha256": "33aed49cae7742c2ce03e7d318ca012ee667d1fa953dd083f9dddd2dc61075f5"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/source/06.png",
+    "bytes": 2610224,
+    "sha256": "acba9188987c0b128c30b01ec5ff86d41cefadeb1b155ba57a247aa38cf07a11"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/source/07.png",
+    "bytes": 2626901,
+    "sha256": "6996dbafaa798bd60c0924fdf15c7b34ea43e6e0a590f1311768b17634f7b437"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/source/08.png",
+    "bytes": 2605786,
+    "sha256": "ea0aaf3546523d9317c05eb43f0659749ad83f07b86cb7b43aa5b40bf0ed39af"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/source/09.png",
+    "bytes": 2610965,
+    "sha256": "52bc104882e011dba94fea09def16eac11f8bdc56e4e810b293f8c7e82905317"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/source/10.png",
+    "bytes": 2602920,
+    "sha256": "21450d6b5cf3ca2e4da50b71b106009ea97405fb79d8c664c7f5cd8100dc1f69"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/source/11.png",
+    "bytes": 2621673,
+    "sha256": "ff6c056d7366f703e0f4d6b9f38eed4fa6053a6b333abd24a88ac77e39cfbf8b"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/source/12.png",
+    "bytes": 2601410,
+    "sha256": "37e2a1c3138a42b7bd51ce359d2fcb58062e433581f296c5701e6a041faa7540"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/source/13.png",
+    "bytes": 2610774,
+    "sha256": "61b69806ea624c98e9c1beb582c0a87abf19c318fe5ad62ade0ce268e78d59a9"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/source/14.png",
+    "bytes": 2610041,
+    "sha256": "0f97178ddc877dda3322744a4da40ca00630a570b95b9860ac088b371e443476"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/source/15.png",
+    "bytes": 2626856,
+    "sha256": "1ab4488d78ffbb126d94e85280b45846333b99e8626f70d69a72da1403c147a8"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/source/16.png",
+    "bytes": 2606147,
+    "sha256": "e6beb1f8a3dde9c8f5a8146688c7639a26f1451dae683437cd0ff89dce998792"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/source/17.png",
+    "bytes": 2613675,
+    "sha256": "59a92746ce32e77a05c4b26764ad7f5011b6a8c41854d13a1d1daa5cca1d4f85"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/source/18.png",
+    "bytes": 2605633,
+    "sha256": "04e36dc66addba9e2e9a3ab7bd4217ab13485f0cf25949cdb4ff39a83940e988"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/source/19.png",
+    "bytes": 2628991,
+    "sha256": "47d4314bb0e666b5f4c67d52107f4648d91bc4ba465751726fcfc610bb3daafb"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/source/20.png",
+    "bytes": 2607671,
+    "sha256": "61fe041aafeac66d9a65b3f3d47ee495bb10e08ead30f3e68a31aab8661eb66e"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/source/21.png",
+    "bytes": 2614639,
+    "sha256": "9c7fc2c3cb9a6a4d8f9f020b123cfa9fbc1d8e5365910e8b3cdcdfa44f561049"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/source/22.png",
+    "bytes": 2613226,
+    "sha256": "fa14adda8a12c97b5d16e38dd300c6bb6fc83f95862f1c6bac396b0f88ffe491"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/source/23.png",
+    "bytes": 2633751,
+    "sha256": "9815b38974e06feac0fe597afa99f55c9560f78b168de70f6313e3727f353f07"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/source/24.png",
+    "bytes": 2607185,
+    "sha256": "aa75c0dad8e53fd92f6547a935e2286c8c56d1b5e4dd32b336f94f66dbf16442"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/source/25.png",
+    "bytes": 2613852,
+    "sha256": "bb7f62a5c8e56cb2993bd4dc921b01790b956932569f1ee6895d9adfbc701a25"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/source/26.png",
+    "bytes": 2606500,
+    "sha256": "2f4edc84be4cea185db28e710074304674cedebdfede931b936770b4cbbc8095"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/source/27.png",
+    "bytes": 2628365,
+    "sha256": "87a883638518f02488e5d95110e044f64e7c597bbae40b7901fa98fd09bc50e7"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/source/28.png",
+    "bytes": 2605448,
+    "sha256": "91c5cf8f1f354736fc1ad3570a1e0db45e7884c50da59bf7b362b0ed8720d364"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/source/29.png",
+    "bytes": 2615383,
+    "sha256": "af90aacf8353333a2b750caed4a6fdf918e4690c03cee4424280accf34ab98e4"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/source/30.png",
+    "bytes": 2612481,
+    "sha256": "b2959f82cd749c04edf0e2e95e9b711e8f4ea1b5639954ed9a14f9facdcc1914"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/source/31.png",
+    "bytes": 2629483,
+    "sha256": "7358566eb2f98d55fff0dbb4e14de5b53a85c9ac754b2d2e7493634ee5c1d981"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/source/32.png",
+    "bytes": 2610301,
+    "sha256": "32cfb2298ef872b5a59e990c5ff2586104fbb3fb44f4f833e17fc1505732f399"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/source/33.png",
+    "bytes": 2615036,
+    "sha256": "9a674fca860b85f62754f9a160ea48997b21968114702e6b3c74e0688a9887df"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/source/34.png",
+    "bytes": 2609873,
+    "sha256": "a90eb8d288038822db5157ea66e1adc735acd2e7edc5983d32ec54b908e4e184"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/source/35.png",
+    "bytes": 2630716,
+    "sha256": "6a0c837764758f9a1008c114209cb685485bd2352deca224d25efdf67a3540ea"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/source/36.png",
+    "bytes": 2610620,
+    "sha256": "a93f42c24eea865798c0505a29786cad90b8ae05ab5a62cc14d88cc73c7ff950"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/source/37.png",
+    "bytes": 2616494,
+    "sha256": "b877755ba40cfb69c54b432a5079ce3393a486400bab09144c49a7c952fcf4e3"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/source/38.png",
+    "bytes": 2613217,
+    "sha256": "adc4324be3242354c82c81cc420ccba0e00bbb8962e61c11798bc7446c2c450a"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/source/39.png",
+    "bytes": 2630010,
+    "sha256": "132b31ddd6a6193ab9c54d8c218599a0622db664d9523ae74273b213494be0dd"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/source/40.png",
+    "bytes": 2608957,
+    "sha256": "03d6b7f0ae40d72bf94d27a58bb20d7d25a7643c5b7a5654c5ad08f552ff9a87"
+  },
+  {
+    "path": "/Users/benjaminoats/_desk/j1273-candidate-v07/source/41.png",
+    "bytes": 2613503,
+    "sha256": "63de8a2ae7a6dfc699d2a9addab4ab3257256e0070c7e9f1f7fc0c33e073863e"
+  }
+]

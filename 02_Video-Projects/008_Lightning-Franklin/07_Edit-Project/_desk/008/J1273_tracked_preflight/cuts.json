@@ -1,0 +1,23 @@
+[
+  {
+    "row": "10_metal_easy",
+    "film_t": 467.419,
+    "timeline_in": 0,
+    "timeline_out": 1.75,
+    "frames": 42,
+    "upscale": 1.0,
+    "side_label": null,
+    "source": "composite_v08.mp4",
+    "source_path": "/Users/benjaminoats/_desk/j1273-candidate-v08/composite_v08.mp4",
+    "source_sha256": "f8453cc78529871ef12a5ce4b1ad84a55f1d3d3759b98d180507b4c09d400ca9",
+    "framing": {
+      "offset": 4.541666666666667
+    },
+    "disposition": "J1273 candidate v08, 42 exact source frames, no master splice",
+    "quality": "code_graphic",
+    "part": 5,
+    "timeline_pretrim_in": 476.75,
+    "timeline_pretrim_out": 479.7084,
+    "film_t_pretrim": 484.33
+  }
+]
