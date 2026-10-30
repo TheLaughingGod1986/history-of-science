@@ -55,3 +55,49 @@
   2. **`P04:07_put_aside` (`7.083–8.000 s`, `f170–f191`):** Brisk continuous motion `0.000–7.083 s` (`MAD` median `1.15`, papers slide into drawer + summer→autumn→winter→spring light shift) followed by a `0.917 s` tail settle; board `use_s = 3.76 s` avoids the tail at locked **`0.000–3.760 s`**. Hard limit **`out ≤ 7.042 s`**.
   3. **`P04:10_write_it_down_c1` (`0.000–1.042 s`, `f000–f025`):** Opening `1.042 s` (`MAD = 0.099–0.508`) is a low-motion pre-action hold; locked trimmed in/out **`1.083–6.423 s`** (`use_s = 5.34`). Hard limit **`in ≥ 1.083 s`**. Arm/figure note: **checked by Chief J1237, clean** (green sleeve = second standing figure correctly occluded; no arm-through-body or hand morph). `2.583–7.923 s` alt not required.
 - **Next:** Tranche 1 picture PASS (Chief J1237). Tranche 2 (`20` Quality rows, `5,180` expected) waits for the ~12 Nov AI Ultra renewal; future 009 assembly brief carries the locked in/outs above.
+
+## 30 Oct 2026 — J1266: Final Sources and provisional Chapters in `Descriptions/moon_long_description_v01.txt` (Chief h13 on J1261, £0, Gemini covering)
+
+- **Authority:** Chief (Grok) ruling `h13` on `J1261` (30 Oct 2026, HOS `#180` re `6521114044`) and queue job `J1266`. Records only, `£0` spend, no YouTube/Studio change, no upload.
+- **Provisional chapters status:** Chapters provisional from VO part timings (this job); the rough-cut and picture-lock jobs must re-time them against the master before upload.
+- **Provisional `Chapters` block added to `11_Upload-Package/Descriptions/moon_long_description_v01.txt` from locked VO part takes in `02_Voiceover/VO_TAKES_KEEP.json` and part `.wav` durations (summed in film order, no picture yet):**
+
+| Stamp | Chapter title | VO part (`02_Voiceover/`) | Part duration (`VO_TAKES_KEEP.json` & `.wav` `ffprobe`) | Summed part start (s) | First word in part (`stt_raw.json`) | First word in film order (s / `m:ss.ss`) |
+|---|---|---|---:|---:|---|---:|
+| `0:00` | `The falling Moon` | `hos_009_part01_the_falling_moon_v01` (`sha256: 81b6c45f…`) | `83.84 s` | `0.00 s` | `"Right"` at `+0.10 s` | `0.10 s` (`0:00.10`) → **`0:00`** |
+| `1:24` | `An apple in a plague year` | `hos_009_part02_an_apple_in_a_plague_year_v01` (`sha256: 36855907…`) | `89.84 s` | `83.84 s` | `"In"` at `+0.14 s` | `83.98 s` (`1:23.98`) → **`1:24`** |
+| `2:54` | `The cannon on the mountain` | `hos_009_part03_the_cannon_on_the_mountain_v01` (`sha256: 53235ab0…`) | `80.88 s` | `173.68 s` | `"Newton's"` at `+0.12 s` | `173.80 s` (`2:53.80`) → **`2:54`** |
+| `4:15` | `The Moon test` | `hos_009_part04_the_moon_test_v01` (`sha256: 2d03f372…`) | `131.20 s` | `254.56 s` | `"Newton"` at `+0.10 s` | `254.66 s` (`4:14.66`) → **`4:15`** |
+| `6:26` | `Falling around the world` | `hos_009_part05_falling_around_the_world_v01` (`sha256: 10ebaf45…`) | `122.64 s` | `385.76 s` | `"Newton's"` at `+0.16 s` | `385.92 s` (`6:25.92`) → **`6:26`** |
+
+  - Total summed VO duration (`Parts 01–05`): `83.84 + 89.84 + 80.88 + 131.20 + 122.64 = 508.40 s` (`8:28.40`).
+- **Final `Sources` block added under `Chapters` (8 plain citations strictly from `01_Script/FACT_NOTES_v01.md` source column; no URLs; honours row 33 "Do not attribute to Newton" on spray-paint analogy and row 41 "Not a Newton cite" on the 010 Alvarez hand-off):**
+  - `Isaac Newton, Philosophiæ Naturalis Principia Mathematica (London, 1687), Book III, Prop. IV`
+  - `Isaac Newton, A Treatise of the System of the World (London, 1728)`
+  - `Isaac Newton, memorandum (c. 1714–18), Cambridge University Library Add. MS 3968`
+  - `William Stukeley, Memoirs of Sir Isaac Newton's Life (1752), entry for 15 April 1726`
+  - `John Conduitt, memoranda, Keynes MS 130 (Newton Project)`
+  - `Edmond Halley, Synopsis of the Astronomy of Comets (1705)`
+  - `Richard S. Westfall, Never at Rest (1980)`
+  - `NASA NSSDC, "Moon Fact Sheet", and NASA, "ISS Facts and Figures"`
+- **Rest of description (`moon_long_description_v01.txt`) and `PACKAGE_MANIFEST.json`:** opener, bullet list, and sign-off kept byte-identical to `#383`.
+- **Repository check output (`00_Brand/Channel-Setup/tools/check_all.sh 02_Video-Projects/009_The-Falling-Moon-Gravity`):**
+```text
+-- no media: PASS
+-- status board in sync: PASS
+-- ElevenLabs guard tests: PASS
+-- vo_check word tests: PASS
+-- contract tests: PASS
+-- package-lint: PASS
+-- review:script moon_script_master_v01.md: PASS
+-- gate:episode: PASS
+ALL CHECKS PASS
+```
+- **Package lint on `main` and against PR `#387` (`origin/gemini/j1259-release-gate-chapters-sources` @ `592eaae7`, `checkChaptersAndSources`):**
+```text
+> content-ops@0.1.0 lint:package
+> tsx scripts/package-lint.ts --film 009
+
+PASS  02_Video-Projects/009_The-Falling-Moon-Gravity/11_Upload-Package/PACKAGE_MANIFEST.json
+   warn  [captions] no captionsFile (captions from the script)
+```
