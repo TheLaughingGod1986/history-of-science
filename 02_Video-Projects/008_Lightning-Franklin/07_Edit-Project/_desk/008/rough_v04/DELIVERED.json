@@ -1,0 +1,25 @@
+{
+  "job": "J1241",
+  "version": "rough_v04",
+  "master_sha256": "e00bb897a05c5a53843db9c7e7e62669194ced6f28f986daed6a142da54d7d5e",
+  "duration_s": 540.168146,
+  "gates": {
+    "polish": "PASS",
+    "picture_qa": "PASS",
+    "music": "SKIPPED_NO_BED"
+  },
+  "paths": {
+    "precheck": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_precheck/rough_v04",
+    "desk": "/private/tmp/j1241-hos008-cg-v03-wt/02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_desk/008/rough_v04",
+    "uat": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/HOS-008_Lightning-Franklin_rough_v04",
+    "nas": "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_desk/008/rough_v04"
+  },
+  "composite_evidence": "composite_evidence_v04/",
+  "fix_rows": [
+    "15_likeness_fire",
+    "03_rod_cloud",
+    "04_letter_crosses",
+    "15_wet_dry"
+  ],
+  "note": "Parked for Chief: graphics + composite evidence. No finished-film PASS. No music bed."
+}

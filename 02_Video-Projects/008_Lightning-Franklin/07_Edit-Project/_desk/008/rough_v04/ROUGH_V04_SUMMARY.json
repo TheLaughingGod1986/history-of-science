@@ -1,0 +1,28 @@
+{
+  "version": "rough_v04",
+  "job": "J1241",
+  "source_master": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_precheck/rough_v03/hos_008_rough_v03.mp4",
+  "source_sha256": "0da87a8272ad5849abccf5d86acbf352cedf30d3189ef9ac8127efd24fc2934d",
+  "master": "/Volumes/data/mac-mini-archive/tmp-render-scratch/j1241-hos008-rough-v04/hos_008_rough_v04.mp4",
+  "master_sha256": "e00bb897a05c5a53843db9c7e7e62669194ced6f28f986daed6a142da54d7d5e",
+  "duration_s": 540.168146,
+  "fix_rows": [
+    "15_likeness_fire",
+    "03_rod_cloud",
+    "04_letter_crosses",
+    "15_wet_dry"
+  ],
+  "gates": {
+    "polish_rc": 0,
+    "picture_rc": 0,
+    "polish_tail": "0_table_three_again   521.5s 20_table_three_again_t1.mp4  ok\n21_roofs_golden   526.1s 21_roofs_golden_t1.mp4       ok\n22_newton_handoff   531.8s 22_newton_handoff_t1.mp4     ok\n22_newton_handoff_c1   537.0s 22_newton_handoff_c1_t1.mp4  ok\npolish gate PASS: 0 of 112 rows failed, 6 to look at -> /Volumes/data/mac-mini-archive/tmp-render-scratch/j1241-hos008-rough-v04/pack/polish_gate_rough_v04.json\n",
+    "picture_tail": "5 0.0258\nWARN   8:31 row 18_rod_closeup 18_rod_closeup_t1.mp4: low detail: edge density 0.0256 < film p5 0.0258\npicture QA PASS: 0 of 112 cuts fail, 6 to look at -> /Volumes/data/mac-mini-archive/tmp-render-scratch/j1241-hos008-rough-v04/pack/picture_qa_rough_v04/PICTURE_QA.md, /Volumes/data/mac-mini-archive/tmp-render-scratch/j1241-hos008-rough-v04/pack/picture_qa_rough_v04/picture_qa_review.jpg\n"
+  },
+  "deliver": {
+    "precheck": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_precheck/rough_v04",
+    "desk": "/private/tmp/j1241-hos008-cg-v03-wt/02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_desk/008/rough_v04",
+    "uat": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/HOS-008_Lightning-Franklin_rough_v04",
+    "nas": "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_desk/008/rough_v04"
+  },
+  "note": "Parked for Chief: graphics + composite evidence. No finished-film PASS."
+}
