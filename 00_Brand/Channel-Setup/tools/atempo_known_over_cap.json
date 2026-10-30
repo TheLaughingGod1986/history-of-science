@@ -20,8 +20,8 @@
     "02_Video-Projects/007_The-First-Vaccine/10_Shorts/SHORT_s04_smallpox_test_v02.json": {"note": "superseded local cut, never uploaded"},
     "02_Video-Projects/007_The-First-Vaccine/10_Shorts/_build_short_s04_smallpox_test_v02.py": {"note": "superseded local cut, never uploaded"},
     "02_Video-Projects/007_The-First-Vaccine/10_Shorts/SHORT_s05_vacca_jesty_v01.json": {"note": "superseded by v02 before upload"},
-    "02_Video-Projects/007_The-First-Vaccine/10_Shorts/_build_short_s05_vacca_jesty_v01.py": {"note": "SCHEDULED: builds v02 = 4WUs0beKn0A, airs Tue 17 Nov; J0966 v05 (1.03) swap awaits Chief + Ben"},
-    "02_Video-Projects/007_The-First-Vaccine/10_Shorts/SHORT_s05_vacca_jesty_v02.json": {"note": "SCHEDULED: 4WUs0beKn0A, airs Tue 17 Nov; J0966 v05 (1.03) swap awaits Chief + Ben"},
+    "02_Video-Projects/007_The-First-Vaccine/10_Shorts/_build_short_s05_vacca_jesty_v01.py": {"note": "built v02 (was 4WUs0beKn0A); J1222 swapped the 17 Nov slot to v05 (1.03) as xgx2lYHhYZM on 30 Oct"},
+    "02_Video-Projects/007_The-First-Vaccine/10_Shorts/SHORT_s05_vacca_jesty_v02.json": {"note": "was 4WUs0beKn0A, now private and unscheduled; J1222 swapped the 17 Nov slot to v05 (1.03) as xgx2lYHhYZM on 30 Oct"},
     "02_Video-Projects/007_The-First-Vaccine/10_Shorts/SHORT_s05_vacca_jesty_v03.json": {"note": "superseded local cut, never uploaded"},
     "02_Video-Projects/007_The-First-Vaccine/10_Shorts/_build_short_s05_vacca_jesty_v03.py": {"note": "superseded local cut, never uploaded"}
   }
