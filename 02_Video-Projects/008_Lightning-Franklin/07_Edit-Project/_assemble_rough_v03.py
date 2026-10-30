@@ -786,24 +786,33 @@ def assemble_part(part_no: int, mint: dict, special: dict[str, Path]) -> dict:
     )
     total_s = cur_frames / FPS
     cut_mp4 = out_dir / f"{name}.mp4"
-    sp.run(
-        [
-            "ffmpeg", "-y", "-v", "error", "-i", str(pic_mp4), "-i", str(vo_path),
-            "-map", "0:v", "-map", "1:a", "-c:v", "copy",
-            "-af", "apad", "-c:a", "aac", "-b:a", "192k", "-ar", "48000",
-            "-t", f"{total_s:.3f}", "-movflags", "+faststart", str(cut_mp4),
-        ],
-        check=True,
-    )
+    # Mux on local /tmp without +faststart, then rsync — NAS +faststart hangs (J1218).
+    import tempfile
+
+    local_mux_dir = Path(tempfile.mkdtemp(prefix=f"j1218v03_p{pstr}_mux_", dir="/private/tmp"))
+    local_cut = local_mux_dir / cut_mp4.name
+    try:
+        sp.run(
+            [
+                "ffmpeg", "-y", "-v", "error", "-i", str(pic_mp4), "-i", str(vo_path),
+                "-map", "0:v", "-map", "1:a", "-c:v", "copy",
+                "-af", "apad", "-c:a", "aac", "-b:a", "192k", "-ar", "48000",
+                "-t", f"{total_s:.3f}", str(local_cut),
+            ],
+            check=True,
+        )
+        sp.run(["rsync", "-a", str(local_cut), str(cut_mp4)], check=True)
+    finally:
+        shutil.rmtree(local_mux_dir, ignore_errors=True)
     shutil.rmtree(seg_dir, ignore_errors=True)
     pic_mp4.unlink(missing_ok=True)
 
-    fd = sp.run(
-        ["ffmpeg", "-i", str(cut_mp4), "-vf", "freezedetect=n=-60dB:d=0.8", "-map", "0:v", "-f", "null", "-"],
-        stderr=sp.PIPE, text=True,
-    ).stderr
-    freeze = [ln for ln in fd.splitlines() if "lavfi.freezedetect" in ln]
-    (out_dir / "freezedetect.log").write_text("\n".join(freeze) + ("\n" if freeze else ""))
+    # Per-part freezedetect / polish / picture_qa deferred to full-film join
+    # (Chief needs gates on the delivered v03 master; per-part gates on NAS were multi-hour).
+    freeze: list[str] = []
+    (out_dir / "freezedetect.log").write_text(
+        "DEFERRED_TO_FULL_JOIN: per-part freezedetect skipped; run on joined rough_v03.\n"
+    )
 
     cuts_path = out_dir / f"cuts_{slug}.json"
     cuts_path.write_text(json.dumps(cuts, indent=2) + "\n")
@@ -822,35 +831,12 @@ def assemble_part(part_no: int, mint: dict, special: dict[str, Path]) -> dict:
     pool_path = out_dir / f"pool_{slug}.json"
     pool_path.write_text(json.dumps(pool, indent=2) + "\n")
 
-    sheet_path = out_dir / f"contact_{slug}.jpg"
-    contact_sheet(cut_mp4, cuts, out_dir, sheet_path)
-
-    # Gates
-    pg_json = out_dir / f"polish_gate_{slug}.json"
-    pq_dir = out_dir / f"picture_qa_{slug}"
-    pq_dir.mkdir(exist_ok=True)
-    polish = sp.run(
-        [
-            sys.executable, str(OWB_ROOT / "scripts/polish_gate.py"),
-            str(cut_mp4), "--cuts", str(cuts_path), "--out", str(pg_json),
-        ],
-        capture_output=True, text=True,
-    )
-    (out_dir / f"polish_gate_{slug}.txt").write_text(polish.stdout + polish.stderr)
-    picture = sp.run(
-        [
-            sys.executable, str(OWB_ROOT / "scripts/picture_qa.py"),
-            str(cut_mp4), "--cuts", str(cuts_path), "--pool", str(pool_path),
-            "--out-dir", str(pq_dir),
-        ],
-        capture_output=True, text=True,
-    )
-    (out_dir / f"picture_qa_{slug}.txt").write_text(picture.stdout + picture.stderr)
-
+    # Contact sheet + gates only on the joined master (join_full).
     meta = {
         "part": part_no,
         "slug": slug,
-        "authority": "J1218 repair after J1213 v01; J1191 PASS; PR #374 MERGED; J1193 code-graphic review still open at assemble start",
+        "out_dir": str(out_dir),
+        "authority": "J1218 diagnostic v03; J1191 KEEP; PR374 MERGED; J1193 Chief FIX 30 Oct (ten FIX + P5:11 KEEP)",
         "vo": str(vo_path),
         "vo_sha256": board["vo_sha256"],
         "picture_s": round(total_s, 4),
@@ -858,14 +844,15 @@ def assemble_part(part_no: int, mint: dict, special: dict[str, Path]) -> dict:
         "rows": len(cuts),
         "mp4": str(cut_mp4),
         "sha256": sha256_file(cut_mp4),
-        "polish_gate_exit": polish.returncode,
-        "picture_qa_exit": picture.returncode,
-        "freeze_lines": len(freeze),
+        "polish_gate_exit": None,
+        "picture_qa_exit": None,
+        "freeze_lines": None,
+        "part_gates": "deferred_to_full_join",
         "no_music": True,
-        "j1193_note": "J1193 not landed; overlays used as delivered in CODE_GRAPHICS_v01 (P5:11 SAFE PATH DOWN fix applied)",
+        "j1193_note": "J1193 findings dispositioned in code_graphics_v02 + assembler; formal graphics PASS still Chief",
     }
     (out_dir / f"ROUGH_META_part{pstr}_v01.json").write_text(json.dumps(meta, indent=2) + "\n")
-    print(f"DONE part {pstr}: {total_s:.2f}s sha={meta['sha256'][:12]} polish={polish.returncode} pq={picture.returncode}", flush=True)
+    print(f"DONE part {pstr}: {total_s:.2f}s sha={meta['sha256'][:12]} (gates deferred to join)", flush=True)
     return meta
 
 
@@ -880,11 +867,16 @@ def _collect_part_timeline(part_metas: list[dict] | None = None) -> tuple[list[d
     for m in parts:
         part = int(m["part"])
         pstr = f"{part:02d}"
-        slug = f"part{pstr}_rough_v02"
-        part_dir = WORK / slug
-        cuts_path = part_dir / f"cuts_{slug}.json"
-        meta_path = part_dir / f"META_{slug}.json"
-        mp4 = part_dir / f"hos_008_{slug}.mp4"
+        base_slug = f"part{pstr}_rough_v03"
+        # Prefer the latest sibling if a collision stamped _rNN (non-destructive WORK).
+        part_dir = WORK / base_slug
+        sibs = sorted(WORK.glob(f"{base_slug}_r*"), key=lambda p: p.stat().st_mtime if p.exists() else 0)
+        if sibs:
+            part_dir = sibs[-1]
+        # assemble_part keeps cuts_/mp4 named with base_slug even when out_dir is *_rNN.
+        cuts_path = part_dir / f"cuts_{base_slug}.json"
+        meta_path = part_dir / f"ROUGH_META_part{pstr}_v01.json"
+        mp4 = part_dir / f"hos_008_{base_slug}.mp4"
         if not cuts_path.exists() or not mp4.exists():
             raise FileNotFoundError(f"missing part assemble: {part_dir}")
         cuts = json.loads(cuts_path.read_text())
@@ -1003,14 +995,33 @@ def join_full(
         lines = []
         for m in metas:
             pstr = f"{int(m['part']):02d}"
-            slug = f"part{pstr}_rough_v02"
-            mp4 = WORK / slug / f"hos_008_{slug}.mp4"
-            lines.append(f"file '{mp4}'\n")
+            mp4_path = Path(m["mp4"]) if m.get("mp4") else None
+            if mp4_path is None or not mp4_path.exists():
+                # Fall back to latest part sibling under WORK.
+                base = WORK / f"part{pstr}_rough_v03"
+                sibs = sorted(WORK.glob(f"part{pstr}_rough_v03_r*"), key=lambda p: p.stat().st_mtime if p.exists() else 0)
+                part_dir = sibs[-1] if sibs else base
+                mp4_path = part_dir / f"hos_008_part{pstr}_rough_v03.mp4"
+            if not mp4_path.exists():
+                raise FileNotFoundError(f"part {pstr} master missing: {mp4_path}")
+            lines.append(f"file '{mp4_path}'\n")
         concat.write_text("".join(lines))
-        sp.run(
-            ["ffmpeg", "-y", "-v", "error", "-f", "concat", "-safe", "0", "-i", str(concat), "-c", "copy", "-movflags", "+faststart", str(raw_mp4)],
-            check=True,
-        )
+        # Concat on local /tmp (no +faststart), then rsync — NAS +faststart hangs (J1218).
+        import tempfile as _tf
+
+        local_join = Path(_tf.mkdtemp(prefix="j1218v03_join_", dir="/private/tmp"))
+        local_raw = local_join / "pretrim.mp4"
+        try:
+            sp.run(
+                [
+                    "ffmpeg", "-y", "-v", "error", "-f", "concat", "-safe", "0",
+                    "-i", str(concat), "-c", "copy", str(local_raw),
+                ],
+                check=True,
+            )
+            sp.run(["rsync", "-a", str(local_raw), str(raw_mp4)], check=True)
+        finally:
+            shutil.rmtree(local_join, ignore_errors=True)
         pause_report = pause_trim_av(raw_mp4, out_mp4, max_pause=0.6, target_max_s=540.0)
         (out_dir / "PAUSE_TRIM_v03.json").write_text(json.dumps(pause_report, indent=2) + "\n")
     # Remap cut times through pause-trim removals so polish/picture_qa sample inside the trimmed master.
