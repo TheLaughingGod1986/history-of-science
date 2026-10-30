@@ -204,6 +204,40 @@ export function isPublished(manifest: Record<string, unknown>, now = new Date())
   return !schedule || schedule.getTime() <= now.getTime();
 }
 
+const CHAPTER_LINE = /^((?:\d{1,2}:)?\d{1,2}:\d{2})\s+\S/;
+
+function stampSeconds(stamp: string): number {
+  return stamp.split(":").reduce((t, part) => t * 60 + Number(part), 0);
+}
+
+/**
+ * A long's description needs a Chapters block (0:00 first, at least 3 stamps, each at least 10 s
+ * after the last: YouTube's own rules for showing chapters) and a Sources block (a "Sources" line
+ * with at least one source after it). Shorts don't go through this.
+ */
+export function checkChaptersAndSources(description: string): Finding[] {
+  const f: Finding[] = [];
+  const lines = description.split(/\r?\n/).map((l) => l.trim());
+  const stamps = lines.map((l) => CHAPTER_LINE.exec(l)?.[1]).filter((x): x is string => !!x).map(stampSeconds);
+  if (!stamps.length) {
+    f.push(err("description.chapters", "no Chapters block (0:00 first, then at least 2 more timestamps)"));
+  } else {
+    if (stamps[0] !== 0) f.push(err("description.chapters", "the first chapter must start at 0:00"));
+    if (stamps.length < 3) f.push(err("description.chapters", `only ${stamps.length} chapter stamp(s); YouTube needs at least 3`));
+    for (let i = 1; i < stamps.length; i++)
+      if (stamps[i] - stamps[i - 1] < 10) {
+        f.push(err("description.chapters", "chapter stamps must rise by at least 10 s each"));
+        break;
+      }
+  }
+  const at = lines.findIndex((l) => /^sources\b/i.test(l));
+  const inline = at === -1 ? "" : lines[at].replace(/^sources\s*:?/i, "").trim();
+  const next = at === -1 ? "" : lines.slice(at + 1).find((l) => l) || "";
+  if (at === -1 || (!inline && (!next || CHAPTER_LINE.test(next))))
+    f.push(err("description.sources", "no Sources block (a Sources line with the sources under it)"));
+  return f;
+}
+
 export function lintLongPackage(input: LongPackageInput): Finding[] {
   const m = input.manifest;
   const f: Finding[] = [];
@@ -242,6 +276,7 @@ export function lintLongPackage(input: LongPackageInput): Finding[] {
   if (/\/go\//.test(input.description) && !m.affiliate)
     f.push(err("description.go-link", "/go/ link in a description with no affiliate product"));
   if (!input.description.trim()) f.push(err("description.missing", "description is empty"));
+  else f.push(...checkChaptersAndSources(input.description));
   if (!m.captionsFile) f.push(warn("captions", "no captionsFile (captions from the script)"));
   f.push(
     ...checkNeighbours({
