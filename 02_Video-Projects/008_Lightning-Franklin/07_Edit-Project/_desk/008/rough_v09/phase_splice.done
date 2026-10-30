@@ -1,0 +1,1 @@
+{"gates": {"polish_rc": 0, "picture_rc": 0}, "diff": {"samples": [{"t": 462.3, "mean_abs": 44.311}, {"t": 464.0, "mean_abs": 1.531}, {"t": 466.0, "mean_abs": 1.07}, {"t": 468.7, "mean_abs": 1.001}], "worst": 44.311, "limit": 1.0, "pass": false}}

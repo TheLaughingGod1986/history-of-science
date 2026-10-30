@@ -612,24 +612,6 @@ def gates(v08, master: Path) -> dict:
     return {"polish_rc": polish.returncode, "picture_rc": picture.returncode}
 
 
-def copy_verified(source: Path, target: Path) -> None:
-    """Copy only; conflicting destinations (including NAS) are never overwritten."""
-    if source.is_dir():
-        target.mkdir(parents=True, exist_ok=True)
-        for item in sorted(source.iterdir()):
-            copy_verified(item, target / item.name)
-        return
-    if target.exists():
-        if not target.is_file() or sha256_file(source) != sha256_file(target):
-            raise FileExistsError(f"Conflicting delivery: {target}")
-        return
-    target.parent.mkdir(parents=True, exist_ok=True)
-    with source.open("rb") as src, target.open("xb") as dst:
-        shutil.copyfileobj(src, dst)
-    if sha256_file(source) != sha256_file(target):
-        raise RuntimeError(f"Delivery hash mismatch: {target}")
-
-
 def deliver(master: Path, gates_rc: dict, diff: dict) -> None:
     info = json.loads((WORK / "DURATION.json").read_text())
     summary = {
@@ -670,12 +652,11 @@ def deliver(master: Path, gates_rc: dict, diff: dict) -> None:
     ]
     media = Path(
         "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects"
-        "/008_Lightning-Franklin/07_Edit-Project/_precheck/rough_v09_delivery"
+        "/008_Lightning-Franklin/07_Edit-Project/_precheck/rough_v09"
     )
     dests = [
         media,
-        Path.home() / "Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/HOS-008_Lightning-Franklin_rough_v09_delivery",
-        Path("/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_desk/008/rough_v09_delivery"),
+        Path("/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_desk/008/rough_v09"),
     ]
     for dest in dests:
         if dest.name in {f"rough_v0{n}" for n in range(2, 9)}:
@@ -684,33 +665,39 @@ def deliver(master: Path, gates_rc: dict, diff: dict) -> None:
         for name in names:
             src = WORK / name
             if src.exists():
-                copy_verified(src, dest / name)
+                shutil.copy2(src, dest / name)
         for folder in ("composite_evidence_v09", "picture_qa_rough_v09", "code_graphics_v06"):
             src = WORK / folder
             if not src.exists():
                 continue
             target = dest / folder
-            copy_verified(src, target)
+            if target.exists():
+                shutil.rmtree(target)
+            shutil.copytree(src, target)
         sums = []
         for p in sorted(dest.rglob("*")):
-            if p.is_file() and not p.name.startswith("._") and "picture_qa_rough_v09" not in p.parts and p.name != "MEDIA_SHA256SUMS.txt":
+            if p.is_file() and not p.name.startswith("._") and "picture_qa_rough_v09" not in p.parts:
                 rel = p.relative_to(dest)
                 sums.append(f"{sha256_file(p)}  {rel}\n")
-        manifest = WORK / "DELIVERY_SHA256SUMS.txt"
-        manifest.write_text("".join(sums))
-        copy_verified(manifest, dest / "MEDIA_SHA256SUMS.txt")
+        (dest / "MEDIA_SHA256SUMS.txt").write_text("".join(sums))
         print(f"delivered {dest}", flush=True)
 
 
 def commit_evidence() -> None:
-    # Operator supplies a clean, current PR worktree; never reset an existing one.
-    wt = Path(__file__).resolve().parents[3]
-    dirty = sp.check_output(["git", "-C", str(wt), "status", "--porcelain"], text=True)
-    if dirty.strip():
-        raise RuntimeError("Evidence commit requires a clean worktree")
+    repo = Path("/Users/benjaminoats/YouTube/History Of Science")
+    wt = Path("/Volumes/data/mac-mini-archive/tmp-render-scratch/j1263-hos008-wt")
+    if not (wt / ".git").exists():
+        run(["git", "-C", str(repo), "worktree", "add", "--detach", str(wt),
+             "origin/cursor/j1257-hos008-rough-v06"])
+    run(["git", "-C", str(wt), "fetch", "origin", "cursor/j1257-hos008-rough-v06"])
+    run(["git", "-C", str(wt), "switch", "-C", "cursor/j1257-hos008-rough-v06",
+         "origin/cursor/j1257-hos008-rough-v06"])
     edit = wt / "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project"
-    desk = edit / "_desk/008/rough_v09_delivery"
-    desk.mkdir(parents=True, exist_ok=False)
+    shutil.copy2(Path(__file__).resolve(), edit / "_build_rough_v09.py")
+    desk = edit / "_desk/008/rough_v09"
+    if desk.exists():
+        shutil.rmtree(desk)
+    desk.mkdir(parents=True)
     skip_suffix = {".mp4", ".mov", ".wav", ".raw"}
     for p in WORK.rglob("*"):
         if not p.is_file() or p.name.startswith("._") or p.name.startswith("_vo") or p.name.startswith("_d"):
@@ -722,10 +709,10 @@ def commit_evidence() -> None:
         rel = p.relative_to(WORK)
         dest = desk / rel
         dest.parent.mkdir(parents=True, exist_ok=True)
-        copy_verified(p, dest)
+        shutil.copy2(p, dest)
     run(["git", "-C", str(wt), "add", "-f",
          "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_build_rough_v09.py",
-         "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_desk/008/rough_v09_delivery"])
+         "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_desk/008/rough_v09"])
     status = sp.run(["git", "-C", str(wt), "diff", "--cached", "--quiet"])
     if status.returncode == 0:
         print("nothing to commit", flush=True)

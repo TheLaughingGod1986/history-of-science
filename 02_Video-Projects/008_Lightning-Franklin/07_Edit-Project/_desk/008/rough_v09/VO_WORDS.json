@@ -1,0 +1,78 @@
+{
+  "method": "Envelope match of part-05 'But a metal rod is an easy' (50.4-53.0s) against the v09 mix, highpass 300 / lowpass 3000.",
+  "score": 0.82,
+  "second_score": 0.486,
+  "offset_film_minus_part_s": 409.875,
+  "part_stt": "hos_008_part05_the_rod_on_every_roof_v01b/stt_raw.json",
+  "spans": [
+    {
+      "film": [
+        459.3,
+        461.05
+      ],
+      "words": "apart. But a metal",
+      "detail": [
+        {
+          "text": "apart.",
+          "part_s": 49.34,
+          "film_s": 459.215
+        },
+        {
+          "text": "But",
+          "part_s": 50.58,
+          "film_s": 460.455
+        },
+        {
+          "text": "a",
+          "part_s": 50.72,
+          "film_s": 460.595
+        },
+        {
+          "text": "metal",
+          "part_s": 50.86,
+          "film_s": 460.735
+        }
+      ],
+      "next_word": {
+        "text": "rod",
+        "part_s": 51.26,
+        "film_s": 461.135
+      }
+    },
+    {
+      "film": [
+        461.05,
+        462.26
+      ],
+      "words": "rod is an easy",
+      "detail": [
+        {
+          "text": "rod",
+          "part_s": 51.26,
+          "film_s": 461.135
+        },
+        {
+          "text": "is",
+          "part_s": 51.9,
+          "film_s": 461.775
+        },
+        {
+          "text": "an",
+          "part_s": 52.02,
+          "film_s": 461.895
+        },
+        {
+          "text": "easy",
+          "part_s": 52.2,
+          "film_s": 462.075
+        }
+      ],
+      "next_word": {
+        "text": "path,",
+        "part_s": 52.56,
+        "film_s": 462.435
+      }
+    }
+  ],
+  "note": "Brief expected 'But a metal rod' on the plate and 'is an easy path' into the card. Measured: 'rod' starts at 461.14s (just onto the lead-in) and 'path' at 462.44s (just after 462.26)."
+}

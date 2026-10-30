@@ -1,0 +1,24 @@
+{
+  "samples": [
+    {
+      "t": 462.3,
+      "mean_abs": 44.311
+    },
+    {
+      "t": 464.0,
+      "mean_abs": 1.531
+    },
+    {
+      "t": 466.0,
+      "mean_abs": 1.07
+    },
+    {
+      "t": 468.7,
+      "mean_abs": 1.001
+    }
+  ],
+  "worst": 44.311,
+  "limit": 1.0,
+  "pass": false,
+  "note": "Sampled on absolute PTS with -copyts. At 462.3s v08 is still the METAL CONDUCTS plate (plate picture runs 459.292-463.125s; the 71-frame v08 overlay ends ~462.25s and the underlying v04 plate holds the same label for ~22 more frames; the card starts at 463.167s). v09's 42-frame plate ends at 461.042s, so 462.3s is the SAFE PATH DOWN lead-in. 464/466/468.7 are the settled card, 1.0-1.5 over the limit from the re-encode. Frames outside the edit match v08 at mean abs 0. Not forced."
+}

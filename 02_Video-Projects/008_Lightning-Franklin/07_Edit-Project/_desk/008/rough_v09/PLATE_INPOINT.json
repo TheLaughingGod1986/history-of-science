@@ -1,0 +1,18 @@
+{
+  "plate": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/06_rod_fitting_t1.mp4",
+  "source_frames": "109-150 inclusive",
+  "plate_in_point_s": 4.541666666666667,
+  "frames": 42,
+  "alpha": "/private/tmp/j1267-hos008-rough-v09/code_graphics_v06/code_graphic_008_p5_10_metal_easy.mov",
+  "alpha_sha256": "dd2ab58280f047c4e91a2b378aaf72f5e79cea823c4193046371d3cbfe353733",
+  "locked_alpha_left_untouched": "/Volumes/data/mac-mini-archive/tmp-render-scratch/j1257-hos008-rough-v06/code_graphics_v05/code_graphic_008_p5_10_metal_easy.mov",
+  "locked_alpha_sha256": "bb821f402a2d1ca5a1536a6592e572b8a4d1653d6573ca733c2ae853db4c8056",
+  "new_composite_sha256": "56348a8e02549e5540e99102f9cc33714f0729d56dbbd23add684140c8c0c766",
+  "timing": {
+    "callout_on_by_s": 0.125,
+    "trace_start_s": 0.3,
+    "trace_reaches_foot_s": 1.5,
+    "label_full_from_s": 0.48,
+    "label_fade_out": false
+  }
+}

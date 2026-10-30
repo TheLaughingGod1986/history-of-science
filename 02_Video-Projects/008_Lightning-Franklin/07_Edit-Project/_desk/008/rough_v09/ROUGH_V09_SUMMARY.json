@@ -1,0 +1,466 @@
+{
+  "version": "rough_v09",
+  "job": "J1267",
+  "source_master": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_precheck/rough_v08/hos_008_rough_v04.mp4",
+  "built_from": "rough v04 e00bb897, same splice as v08",
+  "master_sha256": "d14122365548d2bf31dda72180df9010850b44695d044d163c8babffa234285f",
+  "durations": {
+    "format": 539.626479,
+    "video": 539.5,
+    "video_start": 0.125,
+    "nb_frames": 12923,
+    "r_frame_rate": "24/1",
+    "audio": 539.626479,
+    "audio_start": 0.0,
+    "av_end_offset": 0.0014790000000175496
+  },
+  "gates": {
+    "polish_rc": 0,
+    "picture_rc": 0
+  },
+  "frame_diff": {
+    "samples": [
+      {
+        "t": 462.3,
+        "mean_abs": 44.311
+      },
+      {
+        "t": 464.0,
+        "mean_abs": 1.531
+      },
+      {
+        "t": 466.0,
+        "mean_abs": 1.07
+      },
+      {
+        "t": 468.7,
+        "mean_abs": 1.001
+      }
+    ],
+    "worst": 44.311,
+    "limit": 1.0,
+    "pass": false,
+    "note": "Sampled on absolute PTS with -copyts. At 462.3s v08 is still the METAL CONDUCTS plate (plate picture runs 459.292-463.125s; the 71-frame v08 overlay ends ~462.25s and the underlying v04 plate holds the same label for ~22 more frames; the card starts at 463.167s). v09's 42-frame plate ends at 461.042s, so 462.3s is the SAFE PATH DOWN lead-in. 464/466/468.7 are the settled card, 1.0-1.5 over the limit from the re-encode. Frames outside the edit match v08 at mean abs 0. Not forced."
+  },
+  "plate_in_point": {
+    "plate": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/06_rod_fitting_t1.mp4",
+    "source_frames": "109-150 inclusive",
+    "plate_in_point_s": 4.541666666666667,
+    "frames": 42,
+    "alpha": "/private/tmp/j1267-hos008-rough-v09/code_graphics_v06/code_graphic_008_p5_10_metal_easy.mov",
+    "alpha_sha256": "dd2ab58280f047c4e91a2b378aaf72f5e79cea823c4193046371d3cbfe353733",
+    "locked_alpha_left_untouched": "/Volumes/data/mac-mini-archive/tmp-render-scratch/j1257-hos008-rough-v06/code_graphics_v05/code_graphic_008_p5_10_metal_easy.mov",
+    "locked_alpha_sha256": "bb821f402a2d1ca5a1536a6592e572b8a4d1653d6573ca733c2ae853db4c8056",
+    "new_composite_sha256": "56348a8e02549e5540e99102f9cc33714f0729d56dbbd23add684140c8c0c766",
+    "timing": {
+      "callout_on_by_s": 0.125,
+      "trace_start_s": 0.3,
+      "trace_reaches_foot_s": 1.5,
+      "label_full_from_s": 0.48,
+      "label_fade_out": false
+    }
+  },
+  "pause": {
+    "source": "PAUSE_TRIM_v03.json joins, after 0:30, trim contains a shot boundary",
+    "choice": {
+      "silence": [
+        64.301979,
+        64.926083
+      ],
+      "trim_start": 64.333333,
+      "trim_end": 64.875,
+      "frame0": 1539,
+      "frame1": 1552,
+      "trim_s": 0.5416670000000039,
+      "join_dist": 0.1301664999999872,
+      "boundary_rows": [
+        "10_wait_shutter"
+      ],
+      "hook": "no trim before 0:30",
+      "audio": "splice audio stream-copied; this pause cut is one AAC encode of the joined track"
+    },
+    "vo": "pause only; trim sits inside silencedetect, clear of the hook and the FIX rows",
+    "moved_from": "v06 trim 9.167-9.708s inside the kite plate"
+  },
+  "safe_path_frames": {
+    "lead_in": 29,
+    "body_from_existing_asset": 157,
+    "asset_file_frames": 168,
+    "row_frames": 186,
+    "note": "The v08 row holds 157 frames of the 168-frame asset. 29+157=186 keeps the row end and the 12923-frame total. 29+168=197 would cover 11 frames of the next row."
+  },
+  "note": "Parked for Chief: graphics + composite. No finished-film PASS. No music bed.",
+  "rod_trace": {
+    "version": 2,
+    "rule": "Chief h15: at p10/p25/p50/p75/p90, rod x vs trace x at the top, middle and foot of the gold trace. Worst of the three. Limit 1% of width.",
+    "trace_span_y": [
+      280,
+      920
+    ],
+    "plate_in_point_s": 4.541666666666667,
+    "source_frame": 109,
+    "source_frame_end_inclusive": 150,
+    "window_frames": 42,
+    "aim_pct": 1.0,
+    "limit_px": 19.2,
+    "worst_abs_px": 14.0,
+    "align_ok": true,
+    "method": "Rod centre is the midpoint of the dark metal shaft (edge pair, width 8-20 px, interior luma <= 68). The mid-row shaft anchors the search; top and foot use the pair whose centre stays within 24 px of that anchor, so the gripping hand is not counted as the rod. Trace x is the median gold-stroke pixel in the v06 alpha at that row. Locked alpha bb821f40 was not moved.",
+    "samples": [
+      {
+        "pct": 10,
+        "plate_s": 4.7167,
+        "row_s": 0.175,
+        "shaft_anchor_x": 1190.5,
+        "worst_abs_px": 14.0,
+        "pass": true,
+        "heights": [
+          {
+            "height": "top",
+            "y": 282,
+            "asked_y": 292,
+            "rod_x": 1194.5,
+            "trace_x": 1180.5,
+            "offset_px": 14.0,
+            "offset_pct_of_width": 0.73,
+            "width_px": 9,
+            "depth": 64.4,
+            "edges": [
+              1190,
+              1199
+            ]
+          },
+          {
+            "height": "mid",
+            "y": 618,
+            "asked_y": 600,
+            "rod_x": 1190.5,
+            "trace_x": 1180.5,
+            "offset_px": 10.0,
+            "offset_pct_of_width": 0.52,
+            "width_px": 11,
+            "depth": 29.5,
+            "edges": [
+              1185,
+              1196
+            ]
+          },
+          {
+            "height": "foot",
+            "y": 920,
+            "asked_y": 908,
+            "rod_x": 1191.0,
+            "trace_x": 1180.5,
+            "offset_px": 10.5,
+            "offset_pct_of_width": 0.55,
+            "width_px": 12,
+            "depth": 28.8,
+            "edges": [
+              1185,
+              1197
+            ]
+          }
+        ]
+      },
+      {
+        "pct": 25,
+        "plate_s": 4.9792,
+        "row_s": 0.4375,
+        "shaft_anchor_x": 1174.0,
+        "worst_abs_px": 13.0,
+        "pass": true,
+        "heights": [
+          {
+            "height": "top",
+            "y": 320,
+            "asked_y": 292,
+            "rod_x": 1167.5,
+            "trace_x": 1180.5,
+            "offset_px": -13.0,
+            "offset_pct_of_width": -0.68,
+            "width_px": 19,
+            "depth": 58.1,
+            "edges": [
+              1158,
+              1177
+            ]
+          },
+          {
+            "height": "mid",
+            "y": 610,
+            "asked_y": 600,
+            "rod_x": 1174.0,
+            "trace_x": 1180.5,
+            "offset_px": -6.5,
+            "offset_pct_of_width": -0.34,
+            "width_px": 12,
+            "depth": 37.4,
+            "edges": [
+              1168,
+              1180
+            ]
+          },
+          {
+            "height": "foot",
+            "y": 896,
+            "asked_y": 908,
+            "rod_x": 1188.0,
+            "trace_x": 1180.5,
+            "offset_px": 7.5,
+            "offset_pct_of_width": 0.39,
+            "width_px": 12,
+            "depth": 27.1,
+            "edges": [
+              1182,
+              1194
+            ]
+          }
+        ]
+      },
+      {
+        "pct": 50,
+        "plate_s": 5.4167,
+        "row_s": 0.875,
+        "shaft_anchor_x": 1176.0,
+        "worst_abs_px": 4.5,
+        "pass": true,
+        "heights": [
+          {
+            "height": "top",
+            "y": 316,
+            "asked_y": 292,
+            "rod_x": 1184.0,
+            "trace_x": 1182.0,
+            "offset_px": 2.0,
+            "offset_pct_of_width": 0.1,
+            "width_px": 20,
+            "depth": 44.4,
+            "edges": [
+              1174,
+              1194
+            ]
+          },
+          {
+            "height": "mid",
+            "y": 616,
+            "asked_y": 600,
+            "rod_x": 1176.0,
+            "trace_x": 1180.5,
+            "offset_px": -4.5,
+            "offset_pct_of_width": -0.23,
+            "width_px": 12,
+            "depth": 36.4,
+            "edges": [
+              1170,
+              1182
+            ]
+          },
+          {
+            "height": "foot",
+            "y": 904,
+            "asked_y": 908,
+            "rod_x": 1179.0,
+            "trace_x": 1180.0,
+            "offset_px": -1.0,
+            "offset_pct_of_width": -0.05,
+            "width_px": 12,
+            "depth": 26.5,
+            "edges": [
+              1173,
+              1185
+            ]
+          }
+        ]
+      },
+      {
+        "pct": 75,
+        "plate_s": 5.8542,
+        "row_s": 1.3125,
+        "shaft_anchor_x": 1195.0,
+        "worst_abs_px": 13.0,
+        "pass": true,
+        "heights": [
+          {
+            "height": "top",
+            "y": 284,
+            "asked_y": 292,
+            "rod_x": 1194.5,
+            "trace_x": 1183.0,
+            "offset_px": 11.5,
+            "offset_pct_of_width": 0.6,
+            "width_px": 15,
+            "depth": 64.1,
+            "edges": [
+              1187,
+              1202
+            ]
+          },
+          {
+            "height": "mid",
+            "y": 604,
+            "asked_y": 600,
+            "rod_x": 1195.0,
+            "trace_x": 1183.0,
+            "offset_px": 12.0,
+            "offset_pct_of_width": 0.62,
+            "width_px": 12,
+            "depth": 30.7,
+            "edges": [
+              1189,
+              1201
+            ]
+          },
+          {
+            "height": "foot",
+            "y": 896,
+            "asked_y": 908,
+            "rod_x": 1193.5,
+            "trace_x": 1180.5,
+            "offset_px": 13.0,
+            "offset_pct_of_width": 0.68,
+            "width_px": 11,
+            "depth": 30.5,
+            "edges": [
+              1188,
+              1199
+            ]
+          }
+        ]
+      },
+      {
+        "pct": 90,
+        "plate_s": 6.1167,
+        "row_s": 1.575,
+        "shaft_anchor_x": 1194.5,
+        "worst_abs_px": 14.0,
+        "pass": true,
+        "heights": [
+          {
+            "height": "top",
+            "y": 282,
+            "asked_y": 292,
+            "rod_x": 1197.0,
+            "trace_x": 1183.0,
+            "offset_px": 14.0,
+            "offset_pct_of_width": 0.73,
+            "width_px": 8,
+            "depth": 63.6,
+            "edges": [
+              1193,
+              1201
+            ]
+          },
+          {
+            "height": "mid",
+            "y": 614,
+            "asked_y": 600,
+            "rod_x": 1194.5,
+            "trace_x": 1181.0,
+            "offset_px": 13.5,
+            "offset_pct_of_width": 0.7,
+            "width_px": 11,
+            "depth": 29.9,
+            "edges": [
+              1189,
+              1200
+            ]
+          },
+          {
+            "height": "foot",
+            "y": 896,
+            "asked_y": 908,
+            "rod_x": 1193.5,
+            "trace_x": 1181.0,
+            "offset_px": 12.5,
+            "offset_pct_of_width": 0.65,
+            "width_px": 11,
+            "depth": 28.7,
+            "edges": [
+              1188,
+              1199
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "vo_words": {
+    "method": "Envelope match of part-05 'But a metal rod is an easy' (50.4-53.0s) against the v09 mix, highpass 300 / lowpass 3000.",
+    "score": 0.82,
+    "second_score": 0.486,
+    "offset_film_minus_part_s": 409.875,
+    "part_stt": "hos_008_part05_the_rod_on_every_roof_v01b/stt_raw.json",
+    "spans": [
+      {
+        "film": [
+          459.3,
+          461.05
+        ],
+        "words": "apart. But a metal",
+        "detail": [
+          {
+            "text": "apart.",
+            "part_s": 49.34,
+            "film_s": 459.215
+          },
+          {
+            "text": "But",
+            "part_s": 50.58,
+            "film_s": 460.455
+          },
+          {
+            "text": "a",
+            "part_s": 50.72,
+            "film_s": 460.595
+          },
+          {
+            "text": "metal",
+            "part_s": 50.86,
+            "film_s": 460.735
+          }
+        ],
+        "next_word": {
+          "text": "rod",
+          "part_s": 51.26,
+          "film_s": 461.135
+        }
+      },
+      {
+        "film": [
+          461.05,
+          462.26
+        ],
+        "words": "rod is an easy",
+        "detail": [
+          {
+            "text": "rod",
+            "part_s": 51.26,
+            "film_s": 461.135
+          },
+          {
+            "text": "is",
+            "part_s": 51.9,
+            "film_s": 461.775
+          },
+          {
+            "text": "an",
+            "part_s": 52.02,
+            "film_s": 461.895
+          },
+          {
+            "text": "easy",
+            "part_s": 52.2,
+            "film_s": 462.075
+          }
+        ],
+        "next_word": {
+          "text": "path,",
+          "part_s": 52.56,
+          "film_s": 462.435
+        }
+      }
+    ],
+    "note": "Brief expected 'But a metal rod' on the plate and 'is an easy path' into the card. Measured: 'rod' starts at 461.14s (just onto the lead-in) and 'path' at 462.44s (just after 462.26)."
+  },
+  "check": "FAIL frame-diff at 462.3s mean_abs 44.311. Parked for Chief. See CHECK_NOTE.md."
+}
