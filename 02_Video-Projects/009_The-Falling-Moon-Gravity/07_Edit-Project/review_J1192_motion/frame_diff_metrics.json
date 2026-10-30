@@ -38,7 +38,13 @@
     "flag_window_mad_min": 0.1367,
     "flag_window_mad_mean": 0.2634,
     "flag_window_mad_max": 0.4698,
-    "zero_diff_frames": 0
+    "zero_diff_frames": 0,
+    "forbidden_alt_in_out_s": [
+      1.0,
+      8.0
+    ],
+    "chief_ruling": "https://github.com/TheLaughingGod1986/history-of-science/pull/180#issuecomment-6516310345",
+    "chief_note": "PASS in 0.000–7.000 only. f080–f105 low-motion beat (not freeze); camera static (best-fit scale 1.000); push-in only after ~4.5 s. 1.000–8.000 forbidden (mid-settle)."
   },
   "P04_07_put_aside": {
     "board_id": "P04:07_put_aside",
@@ -79,7 +85,10 @@
     "flag_window_mad_min": 0.0771,
     "flag_window_mad_mean": 0.2321,
     "flag_window_mad_max": 1.3134,
-    "zero_diff_frames": 0
+    "zero_diff_frames": 0,
+    "hard_limit_out_s": 7.042,
+    "chief_ruling": "https://github.com/TheLaughingGod1986/history-of-science/pull/180#issuecomment-6516310345",
+    "chief_note": "PASS in 0.000–3.760; hard limit out ≤ 7.042 s."
   },
   "P04_10_write_it_down_c1": {
     "board_id": "P04:10_write_it_down_c1",
@@ -120,6 +129,10 @@
     "flag_window_mad_min": 0.0992,
     "flag_window_mad_mean": 0.2484,
     "flag_window_mad_max": 0.5085,
-    "zero_diff_frames": 0
+    "zero_diff_frames": 0,
+    "hard_limit_in_s": 1.083,
+    "arm_figure_note": "checked by Chief J1237, clean",
+    "chief_ruling": "https://github.com/TheLaughingGod1986/history-of-science/pull/180#issuecomment-6516310345",
+    "chief_note": "PASS in 1.083–6.423; hard limit in ≥ 1.083 s; arm/figure checked by Chief J1237, clean; 2.583–7.923 alt not required."
   }
 }
