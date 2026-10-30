@@ -240,9 +240,9 @@
       "privacyStatus": "private",
       "replaces": "5n7xFQRBUvI",
       "registeredAt": "2026-10-25T18:40:00Z",
-      "buffer": "held until the long wwcjcFfC-5M is public, then the full film",
+      "buffer": "scheduled HOS org IG/FB/TikTok dueAt 2026-10-31T11:30:00Z (J0241 readback; posts from 29 Oct register)",
       "captions": "en-GB standard, from the v04 spoken line",
-      "related": "unset; J0241 sets wwcjcFfC-5M after that long is public",
+      "related": "wwcjcFfC-5M (set J0241 2026-10-30; Studio readback Tied Arm)",
       "social": {
         "hook": "Galen taught that the heart's job was to heat the blood, not to pump it.",
         "question": "What did you think the heart did, before anyone told you?",
@@ -351,9 +351,9 @@
       "packageDir": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/11_Upload-Package",
       "thumb": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/08_Thumbnail/Selected/hos_005_thumb_A_one_tight_band_v02.jpg",
       "publishAt": "2026-10-29T18:00:00Z",
-      "privacyStatus": "private",
+      "privacyStatus": "public",
       "registeredAt": "2026-10-25T22:58:00Z",
-      "readBack": "YouTube Data API videos.list (read only), 25 Oct 2026 22:58 London: channel History of Science, private, publishAt 2026-10-29T18:00:00Z, processed, PT8M49S, title as above.",
+      "readBack": "YouTube Data API videos.list (read only), 30 Oct 2026 ~01:24Z: channel History of Science, public, no publishAt (already aired), title The Tied Arm That Proved Your Blood Circulates.",
       "note": "Registered late so the Studio Kanban can read the long's schedule (it had no UPLOADS row, so the HOS 005 card sat in In progress). Uploaded and scheduled in early Oct; nothing on YouTube was changed. After-air jobs: J0241 (Related on BW_CFAX-mxc + HOS Buffer) once public."
     },
     "JyRjM-9Yc8g": {
