@@ -59,3 +59,7 @@ Motion/phone/Teach beyond these automated WARNs: Chief review of contact sheet +
 - tmux: `j1218-asm-v03`
 - log: `~/_desk/logs/j1218-asm-v03.log`
 - done: `~/_desk/logs/j1218-asm-v03.done`
+
+## Delivery follow-up (Cursor, 30 Oct ~03:28 UTC)
+
+Assembler deliver hit `rsync` exit 20 into the NAS film folder. Same-volume `cp` later completed: film-folder `rough_v03/hos_008_rough_v03.mp4` is **990399088** bytes (matches WORK). UAT sha256 verified `0da87a82…`. Container **540.021321 s** (21 ms mux padding; not extra speech). Sidecars + SHA256SUMS written beside the NAS master.
