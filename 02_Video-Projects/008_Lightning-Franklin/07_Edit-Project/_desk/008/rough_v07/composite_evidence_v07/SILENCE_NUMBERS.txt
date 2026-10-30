@@ -1,0 +1,36 @@
+BEFORE v04 silence containing the trim:
+  64.302-64.926s dur=0.624
+TRIM removed 64.333-64.875s (0.542s), frames 1539-1552
+boundary rows: ['10_wait_shutter']
+join_dist to PAUSE_TRIM_v03 point: 0.130s
+AFTER, silences in the first 40s of v07:
+[Parsed_silencedetect_0 @ 0xaed01da40] silence_start: 2.038625
+[Parsed_silencedetect_0 @ 0xaed01da40] silence_end: 2.482271 | silence_duration: 0.443646
+[Parsed_silencedetect_0 @ 0xaed01da40] silence_start: 5.265458
+[Parsed_silencedetect_0 @ 0xaed01da40] silence_end: 5.645979 | silence_duration: 0.380521
+[Parsed_silencedetect_0 @ 0xaed01da40] silence_start: 7.651667
+[Parsed_silencedetect_0 @ 0xaed01da40] silence_end: 8.133812 | silence_duration: 0.482146
+[Parsed_silencedetect_0 @ 0xaed01da40] silence_start: 9.130604
+[Parsed_silencedetect_0 @ 0xaed01da40] silence_end: 9.759417 | silence_duration: 0.628812
+[Parsed_silencedetect_0 @ 0xaed01da40] silence_start: 10.924229
+[Parsed_silencedetect_0 @ 0xaed01da40] silence_end: 11.657438 | silence_duration: 0.733208
+[Parsed_silencedetect_0 @ 0xaed01da40] silence_start: 15.206167
+[Parsed_silencedetect_0 @ 0xaed01da40] silence_end: 15.566875 | silence_duration: 0.360708
+[Parsed_silencedetect_0 @ 0xaed01da40] silence_start: 17.386375
+[Parsed_silencedetect_0 @ 0xaed01da40] silence_end: 18.009479 | silence_duration: 0.623104
+[Parsed_silencedetect_0 @ 0xaed01da40] silence_start: 19.214479
+[Parsed_silencedetect_0 @ 0xaed01da40] silence_end: 19.57875 | silence_duration: 0.364271
+[Parsed_silencedetect_0 @ 0xaed01da40] silence_start: 21.870646
+[Parsed_silencedetect_0 @ 0xaed01da40] silence_end: 22.187562 | silence_duration: 0.316917
+[Parsed_silencedetect_0 @ 0xaed01da40] silence_start: 23.314833
+[Parsed_silencedetect_0 @ 0xaed01da40] silence_end: 23.631833 | silence_duration: 0.317
+[Parsed_silencedetect_0 @ 0xaed01da40] silence_start: 26.074333
+[Parsed_silencedetect_0 @ 0xaed01da40] silence_end: 26.6355 | silence_duration: 0.561167
+[Parsed_silencedetect_0 @ 0xaed01da40] silence_start: 28.371479
+[Parsed_silencedetect_0 @ 0xaed01da40] silence_end: 28.72675 | silence_duration: 0.355271
+[Parsed_silencedetect_0 @ 0xaed01da40] silence_start: 30.744521
+[Parsed_silencedetect_0 @ 0xaed01da40] silence_end: 31.379896 | silence_duration: 0.635375
+[Parsed_silencedetect_0 @ 0xaed01da40] silence_start: 32.870521
+[Parsed_silencedetect_0 @ 0xaed01da40] silence_end: 33.184562 | silence_duration: 0.314042
+[Parsed_silencedetect_0 @ 0xaed01da40] silence_start: 34.530146
+[Parsed_silencedetect_0 @ 0xaed01da40] silence_end: 35.140792 | silence_duration: 0.610646
