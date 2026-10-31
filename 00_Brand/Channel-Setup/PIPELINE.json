@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-29",
-  "updated_by": "gemini (J1192)",
+  "updated": "2026-10-31",
+  "updated_by": "cursor (J1297)",
   "board_url": "https://claude.ai/artifact/Hhk519dkbHMzeaZfp3efhc",
   "stages": [
     {
@@ -397,7 +397,7 @@
       "title": "Why Did Franklin Fly a Kite in a Storm?",
       "air": "2026-11-19",
       "ready_by": "2026-11-15",
-      "summary": "Long VO (9:14.8) + Shorts VO (v02 pair) locked. All 101/101 Flow rows of boards v03 minted and KEEP (J1191, 29 Oct: 15 Quality + 86 Fast = 2,320 cr vs 5,605 expected / 6,500 cap; live Flow 18,550 >= 3,000 buffer) + 11 \u00a30 code graphics (J0329) = 112/112 rows. Synced to NAS. Parked for Chief picture PASS.",
+      "summary": "Long VO (9:14.8) + Shorts VO (v02 pair) locked. All 101/101 Flow rows of boards v03 minted and KEEP (J1191, 29 Oct: 15 Quality + 86 Fast = 2,320 cr vs 5,605 expected / 6,500 cap; live Flow 18,550 >= 3,000 buffer) + 11 \u00a30 code graphics (J0329) = 112/112 rows. Synced to NAS. Chief h35 PASS on master v03 (J1287). In HOS UAT for the normal watch: 008_Lightning-Franklin/hos_008_master_v03.mp4 sha256 cf1561c218bace7bc14ed3d625b0790a457027a90f392262f45ca7172723099b (393,139,693 bytes) and hos_008_master_v03_PHONE.mp4 sha256 2e4f94eb2f220fd2f4e17d1c404cc08591fb03d7341e9aac6c82cfebbbeb45c7 (115,314,504 bytes). Not uploaded.",
       "stages": {
         "topic": {
           "status": "done"
@@ -450,8 +450,17 @@
           "steps_unit": "board rows rendered (11 code graphics + 101/101 Flow plates KEEP)"
         },
         "edit": {
-          "status": "todo",
-          "due": "2026-11-12"
+          "status": "doing",
+          "due": "2026-11-12",
+          "owner": "Cursor",
+          "since": "2026-10-31T02:00",
+          "underway": false,
+          "waiting": "Ben watch (HOS UAT/008_Lightning-Franklin/hos_008_master_v03.mp4)",
+          "note": "Chief h35 PASS (J1287). Master v03 copied to HOS UAT/008_Lightning-Franklin/hos_008_master_v03.mp4, sha256 cf1561c218bace7bc14ed3d625b0790a457027a90f392262f45ca7172723099b, 393,139,693 bytes, 539.626 s, fully on disk. Phone copy hos_008_master_v03_PHONE.mp4 sha256 2e4f94eb2f220fd2f4e17d1c404cc08591fb03d7341e9aac6c82cfebbbeb45c7, 115,314,504 bytes. J1297. Not uploaded.",
+          "jobs": [
+            "J1287",
+            "J1297"
+          ]
         },
         "thumbnails": {
           "status": "todo",
