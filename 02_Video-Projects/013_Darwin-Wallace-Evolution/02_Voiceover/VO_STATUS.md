@@ -2,7 +2,7 @@
 
 Parked for Chief. Not a lock.
 
-J1300 repair candidate: listen to `hos_013_vo_v03.wav` (512.48 s); final vo_check/sign-off belongs to J1301. `hos_013_vo_v02.wav` is preserved. `hos_013_vo_v01.wav` is the untouched API take.
+J1301 ran unmodified `vo_check.py` on `hos_013_vo_v03.wav`: checker PASS, 0 fails. SHA-256 `d56ba2a45a76125e29b0d620ab84772a9311399354c07d860ac168938ff05038`. This is the checker result, not a VO lock. `hos_013_vo_v02.wav` is preserved. `hos_013_vo_v01.wav` is the untouched API take.
 
 | File | What | Duration | Check |
 |---|---|---|---|
@@ -41,4 +41,23 @@ Three-model evidence: base.en and small.en hear **doing was shaping**; medium.en
 
 v03 SHA-256 `d56ba2a45a76125e29b0d620ab84772a9311399354c07d860ac168938ff05038`; **512.48 s, −19.5 LUFS**, mean −23.0 dB, peak −3.6 dB. v01/v02 unchanged. [Full transcripts, word timings/probabilities, envelope and repair record](rehear_J1300/REPORT.md). Cut record: `hos_013_vo_v03_SPLICE.json`.
 
-Not a lock. J1301 runs the final vo_check after J1299; no picture or upload.
+Not a lock at the time of J1300. The J1301 check is recorded below. No picture or upload.
+
+## J1301 — vo_check on v03 (31 Oct 2026)
+
+Checker result: **PASS**, 0 fails. Not a VO lock. Parked for Chief review.
+
+| | |
+|---|---|
+| Take | `hos_013_vo_v03.wav` |
+| SHA-256 | `d56ba2a45a76125e29b0d620ab84772a9311399354c07d860ac168938ff05038` (matches J1300) |
+| Duration | 512.48 s (8:32.48) |
+| Levels | mean −23.0 dB, peak −3.6 dB, 146 wpm |
+| ASR | faster-whisper small.en |
+| Script | `01_Script/darwin_script_master_v02.md` |
+| Checker | `vo_check.py` on main after J1299 merge `725a6e45` (PR #392). Run with `vo_check_py312.sh` and `--json` only. No local edits. |
+| JSON | `vo_check/hos_013_vo_v03.json` |
+
+The five v02 fails are gone: "doing the shaping", both "Lyell" lines, "first of July", and "better beak". Six warns remain, the same kind already on v02: a 1.69 s silence at 0:20.34 (part join) and five sounds-alike spellings (unlabelled, islands', Russel, Linnean, Fleeming).
+
+No regeneration. No picture. No upload.
