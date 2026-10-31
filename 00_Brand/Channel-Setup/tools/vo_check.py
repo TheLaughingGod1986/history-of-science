@@ -39,9 +39,10 @@ PEAK_MAX = -1.0
 SILENCE_DB, SILENCE_FAIL_S = -45, 1.5
 WPM_WARN = 145
 
-# Words a transcriber writes differently from the script. Numbers are dropped from both
-# sides before the diff (the script spells them out, the transcriber writes digits).
+# Words a transcriber writes differently from the script. Cardinal numbers are dropped
+# from both sides before the diff; ordinal words are retained after digit normalisation.
 ALIASES = {"thompson": "thomson", "thompson's": "thomson's", "center": "centre", "st": "saint",
+           "lyle": "lyell", "lyle's": "lyell's", "bedder": "better",
            "dimitri": "dmitri", "vandenbroek": "van den broek", "vandenbroek's": "van den broek's",
            "schoolteacher": "school teacher", "p": "pea", "pee": "pea", "dmitry": "dmitri", "leiden": "leyden"}
 # The transcriber writes US spellings; the script is UK (008 Part 02: traveling, color).
@@ -62,13 +63,38 @@ ALIASES |= {us: uk for uk, us in (
 NUMBER_WORDS = set(("zero one two three four five six seven eight nine ten eleven twelve thirteen fourteen "
                     "fifteen sixteen seventeen eighteen nineteen twenty thirty forty fifty sixty seventy eighty "
                     "ninety hundred thousand oh").split())
-# Whisper writes "seventeenth" as "17th" and "the sixteen-hundreds" as "1600s"; drop both spellings.
+# Whisper writes "the sixteen-hundreds" as "1600s"; drop both spellings.
 NUMBER_WORDS |= {w + "s" for w in ("hundred", "thousand")}
 # "the seventeen-forties" is heard as "1740s" (008 Part 02, 7 Oct 2026).
 NUMBER_WORDS |= set("teens twenties thirties forties fifties sixties seventies eighties nineties".split())
-NUMBER_WORDS |= set(("third fourth fifth sixth seventh eighth ninth tenth eleventh twelfth thirteenth fourteenth "
-                     "fifteenth sixteenth seventeenth eighteenth nineteenth twentieth thirtieth").split())
-NUMERAL = re.compile(r"^\d+(st|nd|rd|th|s)?$")
+NUMERAL = re.compile(r"^\d+s?$")
+ORDINAL = re.compile(r"^(\d+)(?:st|nd|rd|th)$")
+ORDINAL_SMALL = ("zeroth first second third fourth fifth sixth seventh eighth ninth tenth eleventh twelfth "
+                 "thirteenth fourteenth fifteenth sixteenth seventeenth eighteenth nineteenth").split()
+ORDINAL_TENS = "twentieth thirtieth fortieth fiftieth sixtieth seventieth eightieth ninetieth".split()
+ORDINAL_SCALES = ((10**12, "trillionth"), (10**9, "billionth"), (10**6, "millionth"),
+                  (1000, "thousandth"), (100, "hundredth"))
+ORDINAL_WORDS = set(ORDINAL_SMALL + ORDINAL_TENS + [word for _, word in ORDINAL_SCALES])
+
+
+def ordinal_tail(word: str) -> str:
+    """Keep the ordinal word: 23rd -> third (cardinal 'twenty' is already ignored).
+
+    Unlike cardinals, retain ordinals on both sides so 'second' as a time unit,
+    or a missing 'first', still participates in the word check.
+    """
+    match = ORDINAL.fullmatch(word)
+    if not match:
+        return word
+    number = int(match[1])
+    for scale, name in ORDINAL_SCALES:
+        if number >= scale:
+            if number % scale == 0:
+                return name
+            number %= scale
+    if number < 20:
+        return ORDINAL_SMALL[number]
+    return ORDINAL_SMALL[number % 10] if number % 10 else ORDINAL_TENS[number // 10 - 2]
 
 
 def run(cmd: list[str]) -> str:
@@ -115,13 +141,14 @@ def norm(text: str) -> list[str]:
     text = unicodedata.normalize("NFKD", text).encode("ascii", "ignore").decode()  # Röntgen -> Rontgen
     text = text.lower().replace("’", "'").replace("**", "")
     words = re.sub(r"[^a-z0-9' -]+", " ", text).replace("-", " ").split()
-    pieces = [p.strip("'") for w in words for p in ALIASES.get(w, w).split()]
+    pieces = [ordinal_tail(p.strip("'")) for w in words for p in ALIASES.get(w, w).split()]
     is_num = [bool(NUMERAL.match(p)) or p in NUMBER_WORDS for p in pieces]
+    number_context = [is_num[i] or p in ORDINAL_WORDS for i, p in enumerate(pieces)]
     out: list[str] = []
     for i, piece in enumerate(pieces):
         if not piece or is_num[i]:
             continue
-        nxt = i + 1 < len(pieces) and is_num[i + 1]
+        nxt = i + 1 < len(pieces) and number_context[i + 1]
         # "a hundred and sixty-nine" is heard as "169": drop the "a"/"and" that only belong to the number.
         if piece in ("a", "an") and nxt:
             continue

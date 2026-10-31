@@ -29,6 +29,47 @@ class Norm(unittest.TestCase):
     def test_real_word_change_still_differs(self):
         self.assertNotEqual(vo_check.norm("a garden at Marly near Paris"), vo_check.norm("a garden at Mali near Paris"))
         self.assertNotEqual(vo_check.norm("in the forties"), vo_check.norm("in the fortress"))
+        self.assertNotEqual(vo_check.norm("what was doing the shaping"), vo_check.norm("what was doing was shaping"))
+        self.assertNotEqual(vo_check.norm("one second later"), vo_check.norm("one sec later"))
+        self.assertNotEqual(vo_check.norm("one second later"), vo_check.norm("one later"))
+        self.assertNotEqual(vo_check.norm("the first of July"), vo_check.norm("the of July"))
+        self.assertNotEqual(vo_check.norm("the third of July"), vo_check.norm("the fourth of July"))
+
+    def test_lyell_and_better_aliases(self):
+        self.same("his friend Charles Lyell", "his friend Charles Lyle")
+        self.same("Lyell's book", "Lyle's book")
+        self.same("a half better beak", "a half bedder beak")
+
+    def test_ordinal_dates(self):
+        self.same("On the first of July", "On the 1st of July")
+        self.same("the second of May", "the 2nd of May")
+        self.same("the twenty-third of June", "the 23rd of June")
+        ordinals = ("first second third fourth fifth sixth seventh eighth ninth tenth eleventh twelfth "
+                    "thirteenth fourteenth fifteenth sixteenth seventeenth eighteenth nineteenth twentieth "
+                    "twenty-first twenty-second twenty-third twenty-fourth twenty-fifth twenty-sixth "
+                    "twenty-seventh twenty-eighth twenty-ninth thirtieth thirty-first").split()
+        for n, word in enumerate(ordinals, 1):
+            suffix = "th" if 10 <= n % 100 <= 20 else {1: "st", 2: "nd", 3: "rd"}.get(n % 10, "th")
+            with self.subTest(n=n):
+                self.same(f"the {word} of June", f"the {n}{suffix} of June")
+
+    def test_large_ordinals(self):
+        for digits, words in (
+            ("40th", "fortieth"), ("50th", "fiftieth"), ("60th", "sixtieth"),
+            ("70th", "seventieth"), ("80th", "eightieth"), ("90th", "ninetieth"),
+            ("100th", "hundredth"), ("101st", "one hundred and first"),
+            ("123rd", "one hundred and twenty-third"), ("200th", "two hundredth"),
+            ("1000th", "thousandth"), ("1100th", "one thousand one hundredth"),
+            ("1234th", "one thousand two hundred and thirty-fourth"),
+            ("1000000th", "millionth"), ("1000000000th", "billionth"),
+        ):
+            with self.subTest(digits=digits):
+                self.same(f"the {words} attempt", f"the {digits} attempt")
+
+    def test_ordinal_words_are_retained(self):
+        self.assertEqual(vo_check.norm("first and second"), ["first", "and", "second"])
+        self.assertEqual(vo_check.norm("one second later"), ["second", "later"])
+        self.assertEqual(vo_check.norm("the 23rd of June"), ["the", "third", "of", "june"])
 
 
 class ScriptLines(unittest.TestCase):
