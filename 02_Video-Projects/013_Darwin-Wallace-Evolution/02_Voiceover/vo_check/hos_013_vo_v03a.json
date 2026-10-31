@@ -1,0 +1,145 @@
+{
+  "file": "02_Video-Projects/013_Darwin-Wallace-Evolution/02_Voiceover/hos_013_vo_v03a.wav",
+  "part": null,
+  "fails": [],
+  "warns": [
+    "silence 1.69s at 0:20.34 (part join?)",
+    "replace at ~0:10.14: script 'how a few unlabelled birds years of' / heard 'how a few unlabeled birds years of' — sounds alike (likely the transcriber); listen",
+    "replace at ~1:40.22: script 'overboard then the islands vice governor nicholas' / heard 'overboard then the island's vice governor nicholas' — sounds alike (likely the transcriber); listen",
+    "replace at ~4:27.84: script 'that someone alfred russel wallace was not' / heard 'that someone alfred russell wallace was not' — sounds alike (likely the transcriber); listen",
+    "replace at ~4:50.50: script 'again anyway this time to the islands of' / heard 'again anyway this times the islands of' — sounds alike (likely the transcriber); listen",
+    "replace at ~6:01.48: script 'together at the linnean society in london' / heard 'together at the linnaean society in london' — sounds alike (likely the transcriber); listen",
+    "replace at ~7:15.96: script 'an engineer called fleeming jenkin in everyone' / heard 'an engineer called fleming jenkin in everyone' — sounds alike (likely the transcriber); listen"
+  ],
+  "duration_s": 512.48,
+  "duration": "8:32.48",
+  "mean_db": -23.0,
+  "peak_db": -3.6,
+  "pauses_over_1s": [
+    [
+      6.98,
+      1.01
+    ],
+    [
+      20.34,
+      1.69
+    ],
+    [
+      32.5,
+      1.02
+    ],
+    [
+      50.18,
+      1.33
+    ],
+    [
+      66.71,
+      1.07
+    ],
+    [
+      114.97,
+      1.07
+    ],
+    [
+      142.49,
+      1.09
+    ],
+    [
+      181.52,
+      1.19
+    ],
+    [
+      190.91,
+      1.25
+    ],
+    [
+      266.27,
+      1.14
+    ],
+    [
+      274.94,
+      1.36
+    ],
+    [
+      307.67,
+      1.12
+    ],
+    [
+      344.0,
+      1.0
+    ],
+    [
+      348.93,
+      1.19
+    ],
+    [
+      359.71,
+      1.13
+    ],
+    [
+      423.54,
+      1.15
+    ],
+    [
+      434.26,
+      1.03
+    ],
+    [
+      440.07,
+      1.19
+    ]
+  ],
+  "asr": "faster-whisper small.en",
+  "script_words": 1174,
+  "heard_words": 1173,
+  "wpm": 146,
+  "word_diffs": [
+    {
+      "at": "0:10.14",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "how a few unlabelled birds years of",
+      "heard": "how a few unlabeled birds years of"
+    },
+    {
+      "at": "1:40.22",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "overboard then the islands vice governor nicholas",
+      "heard": "overboard then the island's vice governor nicholas"
+    },
+    {
+      "at": "4:27.84",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "that someone alfred russel wallace was not",
+      "heard": "that someone alfred russell wallace was not"
+    },
+    {
+      "at": "4:50.50",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "again anyway this time to the islands of",
+      "heard": "again anyway this times the islands of"
+    },
+    {
+      "at": "6:01.48",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "together at the linnean society in london",
+      "heard": "together at the linnaean society in london"
+    },
+    {
+      "at": "7:15.96",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "an engineer called fleeming jenkin in everyone",
+      "heard": "an engineer called fleming jenkin in everyone"
+    }
+  ],
+  "first_minute": {
+    "title_question": 67.68,
+    "promise": 7.9
+  },
+  "verdict": "PASS"
+}
