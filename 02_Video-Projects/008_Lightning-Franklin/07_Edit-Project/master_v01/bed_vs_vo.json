@@ -1,0 +1,26 @@
+{
+  "source": "stem_bed_v01c",
+  "out": "stem_bed_v01g",
+  "before": {
+    "speech_mean": 20.35,
+    "p10": 13.8,
+    "min": 12.6,
+    "under16": 964,
+    "pause_under_i": 20.46,
+    "long_pause_under_i": 19.27,
+    "breach_runs_0.3s": 0,
+    "worst_breach_frames": 0
+  },
+  "after": {
+    "speech_mean": 20.75,
+    "p10": 14.93,
+    "min": 11.6,
+    "under16": 713,
+    "pause_under_i": 20.0,
+    "long_pause_under_i": 16.86,
+    "breach_runs_0.3s": 0,
+    "worst_breach_frames": 0,
+    "bed_integrated": -40.6,
+    "vo_integrated": -20.5
+  }
+}
