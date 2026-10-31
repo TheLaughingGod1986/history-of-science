@@ -52,6 +52,18 @@ Integrated **−14.3 LUFS**. True peak **−1.3 dBFS**. LRA 3.8 LU.
 
 Stamps in `lightning_long_description_v01.txt` were not moved. They still sit on the locked part starts (0:00, 1:40, 3:08, 5:19, 6:49).
 
+## Gates
+
+| Gate | Result |
+|---|---|
+| polish_gate | PASS, 0 of 112 failed. One low-detail warn on `13_ring_the_bells_c1`, same class as v01. |
+| picture_qa | PASS, 0 of 112 cuts fail, 7 warns |
+| music_gate | PASS, 66.7 BPM, 0 fails, 0 warns. 54 readable beds compared (127 iCloud placeholders skipped). Top similarity 0.394, nearest-star bed. |
+| gate:episode | PASS, script 92.1/90 |
+| package-lint | PASS. One captions warning: no captionsFile. Chapters unchanged. |
+
+Top five music similarities: 0.394 nearest-star, 0.289 Venus, 0.286 HOS 005 part 03, 0.251 HOS 004 part 03, 0.244 HOS 005 part 05. Fail line is 0.8. This film's own v01 arrangement of the same take scores 0.605, under that line. It was left out of the other-film list.
+
 ## Not done here
 
 PR #385 is not merged. No UAT copy and no upload until Chief passes this master.
