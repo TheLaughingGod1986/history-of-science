@@ -1,0 +1,101 @@
+{
+  "model": "medium.en",
+  "device": "cpu",
+  "compute_type": "int8",
+  "word_timestamps": true,
+  "beam_size": 5,
+  "clip_start": 165,
+  "segments": [
+    {
+      "start": 165.0,
+      "end": 170.28,
+      "text": " one kind of animal could split into many. But what was doing the shaping?",
+      "words": [
+        {
+          "word": " one",
+          "start": 165.0,
+          "end": 165.36,
+          "probability": 0.9252276420593262
+        },
+        {
+          "word": " kind",
+          "start": 165.36,
+          "end": 165.74,
+          "probability": 0.9908648133277893
+        },
+        {
+          "word": " of",
+          "start": 165.74,
+          "end": 165.92,
+          "probability": 0.9921491146087646
+        },
+        {
+          "word": " animal",
+          "start": 165.92,
+          "end": 166.3,
+          "probability": 0.9877030253410339
+        },
+        {
+          "word": " could",
+          "start": 166.3,
+          "end": 166.74,
+          "probability": 0.9696800708770752
+        },
+        {
+          "word": " split",
+          "start": 166.74,
+          "end": 167.2,
+          "probability": 0.9788955450057983
+        },
+        {
+          "word": " into",
+          "start": 167.2,
+          "end": 167.52,
+          "probability": 0.9903237819671631
+        },
+        {
+          "word": " many.",
+          "start": 167.52,
+          "end": 167.96,
+          "probability": 0.9943324327468872
+        },
+        {
+          "word": " But",
+          "start": 168.8,
+          "end": 168.94,
+          "probability": 0.9704710245132446
+        },
+        {
+          "word": " what",
+          "start": 168.94,
+          "end": 169.16,
+          "probability": 0.9875870943069458
+        },
+        {
+          "word": " was",
+          "start": 169.16,
+          "end": 169.36,
+          "probability": 0.9921974539756775
+        },
+        {
+          "word": " doing",
+          "start": 169.36,
+          "end": 169.6,
+          "probability": 0.9692575335502625
+        },
+        {
+          "word": " the",
+          "start": 169.6,
+          "end": 169.8,
+          "probability": 0.9770659804344177
+        },
+        {
+          "word": " shaping?",
+          "start": 169.8,
+          "end": 170.28,
+          "probability": 0.9958806037902832
+        }
+      ]
+    }
+  ]
+}

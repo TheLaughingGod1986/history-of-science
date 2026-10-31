@@ -1,0 +1,43 @@
+[
+  {
+    "text": " But what was doing was shaping",
+    "words": [
+      {
+        "word": " But",
+        "start": 168.4,
+        "end": 168.88,
+        "probability": 0.6717113852500916
+      },
+      {
+        "word": " what",
+        "start": 168.88,
+        "end": 169.08,
+        "probability": 0.9822646379470825
+      },
+      {
+        "word": " was",
+        "start": 169.08,
+        "end": 169.26000000000002,
+        "probability": 0.9806178212165833
+      },
+      {
+        "word": " doing",
+        "start": 169.26000000000002,
+        "end": 169.46,
+        "probability": 0.9976200461387634
+      },
+      {
+        "word": " was",
+        "start": 169.46,
+        "end": 169.70000000000002,
+        "probability": 0.734124481678009
+      },
+      {
+        "word": " shaping",
+        "start": 169.70000000000002,
+        "end": 170.08,
+        "probability": 0.9956113696098328
+      }
+    ]
+  }
+]

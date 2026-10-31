@@ -1,0 +1,36 @@
+{
+  "stem": "hos_013_vo_v03",
+  "built": "2026-10-31",
+  "job": "J1300",
+  "from": "hos_013_vo_v02.wav",
+  "pickup": "hos_013_pickup_shaping_v01.wav",
+  "why": "Unclear article: base.en and small.en repeatedly hear doing was shaping; medium.en hears doing the shaping. One authorized pickup makes the locked line unambiguous; not proof the original article was absent.",
+  "v02_sha256": "fa100bb9cf771fd5bc7889a2fb0c217f1577df9a1927302d448e7cd9469b47b6",
+  "v03_sha256": "d56ba2a45a76125e29b0d620ab84772a9311399354c07d860ac168938ff05038",
+  "pickup_sha256": "e2e6bf2c02629cfe7192fbffe5bf4a4ec7212a72759c1b4888f3af4013cb9bcb",
+  "cut": {
+    "v02_head_end_s": 168.75,
+    "v02_tail_start_s": 170.5,
+    "pickup_trim_s": [
+      0,
+      1.6
+    ],
+    "pickup_gain_db": 1.0,
+    "pickup_pad_after_s": 0.19,
+    "crossfade_s": 0.02,
+    "curve": "tri",
+    "original_sentence_lufs": -19.0,
+    "pickup_original_lufs": -20.0,
+    "pickup_tail_fade_s": [
+      1.58,
+      1.6
+    ]
+  },
+  "duration_s": 512.48,
+  "loudness": {
+    "lufs_integrated": -19.5,
+    "mean_volume_db": -23.0,
+    "max_volume_db": -3.6
+  },
+  "note": "Audio stays out of git. No final vo_check run; J1301 owns sign-off."
+}

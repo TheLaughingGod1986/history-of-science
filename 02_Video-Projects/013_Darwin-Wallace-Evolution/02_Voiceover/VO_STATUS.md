@@ -2,7 +2,7 @@
 
 Parked for Chief. Not a lock.
 
-Listen to `hos_013_vo_v02.wav` (512.48 s). `hos_013_vo_v01.wav` is the untouched API take.
+J1300 repair candidate: listen to `hos_013_vo_v03.wav` (512.48 s); final vo_check/sign-off belongs to J1301. `hos_013_vo_v02.wav` is preserved. `hos_013_vo_v01.wav` is the untouched API take.
 
 | File | What | Duration | Check |
 |---|---|---|---|
@@ -31,3 +31,14 @@ The last line is complete in Scribe: "…how biologists explain the living world
 ElevenLabs before the take: 104,886 of 121,114 left (used 16,228). After v01 and the pickup: 101,592 left (used 19,522). Counter delta 3,294. Nothing bought, nothing billed past the balance.
 
 No picture. No upload.
+
+## J1300 — shaping re-hear and v03 (31 Oct 2026)
+
+Final take for the J1301 check: **v03**. This is a worker repair record, not a VO lock or final sign-off.
+
+
+Three-model evidence: base.en and small.en hear **doing was shaping**; medium.en hears **doing the shaping**. A tighter clip repeats the disagreement. The envelope shows an energy shoulder but cannot identify the article. One authorized 31-character pickup of the exact locked sentence returned Scribe **100%**; no money spent.
+
+v03 SHA-256 `d56ba2a45a76125e29b0d620ab84772a9311399354c07d860ac168938ff05038`; **512.48 s, −19.5 LUFS**, mean −23.0 dB, peak −3.6 dB. v01/v02 unchanged. [Full transcripts, word timings/probabilities, envelope and repair record](rehear_J1300/REPORT.md). Cut record: `hos_013_vo_v03_SPLICE.json`.
+
+Not a lock. J1301 runs the final vo_check after J1299; no picture or upload.
