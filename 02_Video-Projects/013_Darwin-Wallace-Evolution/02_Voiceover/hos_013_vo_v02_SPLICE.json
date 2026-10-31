@@ -1,0 +1,19 @@
+{
+  "stem": "hos_013_vo_v02",
+  "built": "2026-10-31",
+  "job": "J0807",
+  "from": "hos_013_vo_v01.wav",
+  "pickup": "hos_013_pickup_credit_v01.wav",
+  "why": "v01 says credits at 5:34; the locked script says credit",
+  "v01_sha256": "d41c910a136c621eccaaf11bf8ce9f2aec2952050b25532650e85933913b68d4",
+  "v02_sha256": "fa100bb9cf771fd5bc7889a2fb0c217f1577df9a1927302d448e7cd9469b47b6",
+  "pickup_sha256": "60349f2b5210d4acb73fa68d78e87f9971be5e31c6b42ace1c3959f45eca7424",
+  "cut": {
+    "v01_head_end_s": 330.80,
+    "v01_tail_start_s": 334.20,
+    "pickup_trim_s": [0.10, 3.32],
+    "crossfade_s": 0.02
+  },
+  "duration_s": 512.48,
+  "note": "Audio stays out of git. This file is the cut record only."
+}

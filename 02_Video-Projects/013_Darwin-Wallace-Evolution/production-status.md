@@ -5,11 +5,11 @@
 | Slug | `013_Darwin-Wallace-Evolution` |
 | Channel | `@HistoryOfScienceYT` only |
 | Topic | **Evolution** — Darwin's 20-year secret (*Notebook B* 1837 → 1844 essay → Wallace's 1858 letter → *Origin* 1859 → Jenkin/Mendel/Spencer) |
-| Stage | **Script v02 + FACT_NOTES_v02 ready for Chief review** (`J0307` / `J0364`, review **92.6 PASS**, episode gate **PASS**). |
+| Stage | **VO v02 recorded, parked for Chief review** (`J0807`, 31 Oct 2026). Script v02 Chief PASS `J0307`. |
 | Neighbour gate | **PASS** (15 Oct 2026, `J0295`): 13 education ≥1M; TED-Ed/TED yes. Evidence `00_Brand/Channel-Setup/ideas/evidence_2026-10-15_J0295/n_darwin.json` |
 | Script review | `01_Script/darwin_script_master_v02.md` (**92.6/100 PASS**, 1,227 spoken words, 8/8 structure gates) |
 | FACT_NOTES | `01_Script/FACT_NOTES_v02.md` (`30 OK · 0 PARTIAL · 0 FLAG`, following `J0304` Gemini quote pass + `J0307` chronology/age updates) |
-| VO | **waits Chief PASS** on `darwin_script_master_v02.md` + `FACT_NOTES_v02.md` |
+| VO | **v02 recorded, not locked.** Listen file `02_Voiceover/hos_013_vo_v02.wav` (512.48 s). v01 kept. See `02_Voiceover/VO_STATUS.md`. |
 | Picture | **pre-VO boards only, no mint** |
 | Runtime target | 7–9 min, 6 parts (1,227 spoken words) |
 
@@ -67,8 +67,12 @@ Pass threshold: 90
 Script score: **92.6/100** · PASS
 ```
 
+## 31 Oct 2026 — VO recorded (`J0807`)
+
+House voice, `eleven_v3`. Full take `hos_013_vo_v01` (512.70 s, −19.5 LUFS). One sentence said "credits" where the locked script says "credit" (5:34). Pickup `hos_013_pickup_credit_v01` is spliced into `hos_013_vo_v02`. v01 is untouched. No picture, no upload. Parked for Chief. Detail: `02_Voiceover/VO_STATUS.md`.
+
 ## STOP
 
 - No Vertex/Veo/Flow minting on this film.
-- No ElevenLabs VO until Chief PASSes `darwin_script_master_v02.md` + `FACT_NOTES_v02.md`.
+- No further ElevenLabs on this film until Chief reviews `hos_013_vo_v02`.
 - Do not merge or close desk PR #180 from this work.

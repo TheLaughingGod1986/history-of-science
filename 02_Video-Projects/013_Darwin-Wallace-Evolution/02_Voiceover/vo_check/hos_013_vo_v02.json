@@ -1,0 +1,175 @@
+{
+  "file": "02_Video-Projects/013_Darwin-Wallace-Evolution/02_Voiceover/hos_013_vo_v02.wav",
+  "part": null,
+  "fails": [
+    "replace at ~2:44.58: script 'what was doing the shaping on the' / heard 'what was doing was shaping on the' — listen, then regenerate that sentence alone if real",
+    "replace at ~5:27.70: script 'his friend charles lyell all my originality' / heard 'his friend charles lyle all my originality' — listen, then regenerate that sentence alone if real",
+    "delete at ~5:51.96: script 'heard on the first of july darwin's' / heard 'heard on the of july darwin's' — listen, then regenerate that sentence alone if real",
+    "replace at ~5:53.38: script 'darwin's friends charles lyell and joseph hooker' / heard 'darwin's friends charles lyle and joseph hooker' — listen, then regenerate that sentence alone if real",
+    "replace at ~7:23.56: script 'with a half better beak then a' / heard 'with a half bedder beak then a' — listen, then regenerate that sentence alone if real"
+  ],
+  "warns": [
+    "silence 1.69s at 0:20.34 (part join?)",
+    "re-checked 7:23.36: 'better beak would have children with a' is present (the full-file transcription skipped it)",
+    "replace at ~0:10.14: script 'how a few unlabelled birds years of' / heard 'how a few unlabeled birds years of' — sounds alike (likely the transcriber); listen",
+    "replace at ~1:40.22: script 'overboard then the islands vice governor nicholas' / heard 'overboard then the island's vice governor nicholas' — sounds alike (likely the transcriber); listen",
+    "replace at ~4:27.50: script 'that someone alfred russel wallace was not' / heard 'that someone alfred russell wallace was not' — sounds alike (likely the transcriber); listen",
+    "replace at ~5:59.22: script 'together at the linnean society in london' / heard 'together at the linnaean society in london' — sounds alike (likely the transcriber); listen",
+    "replace at ~7:13.66: script 'an engineer called fleeming jenkin in everyone' / heard 'an engineer called fleming jenkin in everyone' — sounds alike (likely the transcriber); listen"
+  ],
+  "duration_s": 512.48,
+  "duration": "8:32.48",
+  "mean_db": -23.0,
+  "peak_db": -3.6,
+  "pauses_over_1s": [
+    [
+      6.98,
+      1.01
+    ],
+    [
+      20.34,
+      1.69
+    ],
+    [
+      32.5,
+      1.02
+    ],
+    [
+      50.18,
+      1.33
+    ],
+    [
+      66.71,
+      1.07
+    ],
+    [
+      114.97,
+      1.07
+    ],
+    [
+      142.49,
+      1.09
+    ],
+    [
+      181.52,
+      1.19
+    ],
+    [
+      190.91,
+      1.25
+    ],
+    [
+      266.27,
+      1.14
+    ],
+    [
+      307.67,
+      1.12
+    ],
+    [
+      344.0,
+      1.0
+    ],
+    [
+      348.93,
+      1.19
+    ],
+    [
+      359.71,
+      1.13
+    ],
+    [
+      423.54,
+      1.15
+    ],
+    [
+      434.26,
+      1.03
+    ],
+    [
+      440.07,
+      1.19
+    ]
+  ],
+  "asr": "faster-whisper small.en",
+  "script_words": 1171,
+  "heard_words": 1163,
+  "wpm": 146,
+  "word_diffs": [
+    {
+      "at": "0:10.14",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "how a few unlabelled birds years of",
+      "heard": "how a few unlabeled birds years of"
+    },
+    {
+      "at": "1:40.22",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "overboard then the islands vice governor nicholas",
+      "heard": "overboard then the island's vice governor nicholas"
+    },
+    {
+      "at": "2:44.58",
+      "op": "replace",
+      "sounds_alike": false,
+      "script": "what was doing the shaping on the",
+      "heard": "what was doing was shaping on the"
+    },
+    {
+      "at": "4:27.50",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "that someone alfred russel wallace was not",
+      "heard": "that someone alfred russell wallace was not"
+    },
+    {
+      "at": "5:27.70",
+      "op": "replace",
+      "sounds_alike": false,
+      "script": "his friend charles lyell all my originality",
+      "heard": "his friend charles lyle all my originality"
+    },
+    {
+      "at": "5:51.96",
+      "op": "delete",
+      "sounds_alike": false,
+      "script": "heard on the first of july darwin's",
+      "heard": "heard on the of july darwin's"
+    },
+    {
+      "at": "5:53.38",
+      "op": "replace",
+      "sounds_alike": false,
+      "script": "darwin's friends charles lyell and joseph hooker",
+      "heard": "darwin's friends charles lyle and joseph hooker"
+    },
+    {
+      "at": "5:59.22",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "together at the linnean society in london",
+      "heard": "together at the linnaean society in london"
+    },
+    {
+      "at": "7:13.66",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "an engineer called fleeming jenkin in everyone",
+      "heard": "an engineer called fleming jenkin in everyone"
+    },
+    {
+      "at": "7:23.56",
+      "op": "replace",
+      "sounds_alike": false,
+      "script": "with a half better beak then a",
+      "heard": "with a half bedder beak then a"
+    }
+  ],
+  "first_minute": {
+    "title_question": 67.7,
+    "promise": 7.9
+  },
+  "verdict": "FAIL"
+}
