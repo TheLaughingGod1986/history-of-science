@@ -646,3 +646,8 @@ picture QA PASS: 0 of 8 cuts fail, 1 to look at -> 02_Video-Projects/004_Whats-R
 
 **STOP:** parked for Chief: Short PASS, title and slot. Nothing uploaded.
 
+
+
+## J1599 — Atom title-test read-only verification, 2 November 2026
+
+Gemini (acting Chief): fresh Studio read at 2026-11-02T07:25:49Z still shows A/B testing titles / Results ready, original title and Public. J0978 remains blocked; next read-only check 2026-11-02T13:25:00Z. Evidence: `00_Brand/Channel-Setup/audits/J1599_ATOM_TITLE_TEST_2026-11-02/`. Post-session channel:audit: 62 videos, 0 errors. Studio-only settings outside this scoped read were not re-certified. No YouTube changes or spend.
