@@ -397,7 +397,7 @@
       "title": "Why Did Franklin Fly a Kite in a Storm?",
       "air": "2026-11-19",
       "ready_by": "2026-11-15",
-      "summary": "Chief h22 locked rough v12 picture; h35 approved master v03 (539.626 s). J1755 verified the NAS master and restored a byte-identical UAT copy after old iCloud copies became unreadable. Ben watch remains pending on J1297; no upload approval. Locked Test B pair has no built Shorts; J0912 resumes one existing-media Short through the assembly chain.",
+      "summary": "Chief h22 locked rough v12 picture; h35 approved master v03 (539.626 s). J1755 verified the NAS master and restored a byte-identical UAT copy after old iCloud copies became unreadable. Ben watch remains pending on J1297; no upload approval. Locked Test B pair has no built Shorts; J0912 resumes one existing-media Short through the assembly chain. Browser Play is currently blocked: redirect succeeds but R2 media returns HTTP 403; J1755 remains open for delivery repair.",
       "stages": {
         "topic": {
           "status": "done"
@@ -477,7 +477,7 @@
         "ben_ok": {
           "status": "todo",
           "due": "2026-11-15",
-          "note": "J1297 Ready-for-OK card restored with verified J1755 UAT master v03. No Ben decision in live checks or later desk messages at reconciliation; existing 15 Nov watch date retained.",
+          "note": "J1297 Ready-for-OK card restored with verified J1755 UAT master v03. No Ben decision in live checks or later desk messages at reconciliation; existing 15 Nov watch date retained. Browser Play is not verified: endpoint 302 then media host 403. Restored iCloud file is readable; J1755 needs explicit R2 watch-upload scope approval after automatic review rejection.",
           "jobs": [
             "J1297"
           ]

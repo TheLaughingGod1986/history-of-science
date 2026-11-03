@@ -163,7 +163,7 @@ Private `ETynHpIYLeY`, publishAt Thu 12 Nov 2026 18:00 London. End screen saved:
 
 Airs **Thu 19 Nov** · ready for Ben's OK by **Sun 15 Nov** · 🟢 on track
 
-Chief h22 locked rough v12 picture; h35 approved master v03 (539.626 s). J1755 verified the NAS master and restored a byte-identical UAT copy after old iCloud copies became unreadable. Ben watch remains pending on J1297; no upload approval. Locked Test B pair has no built Shorts; J0912 resumes one existing-media Short through the assembly chain.
+Chief h22 locked rough v12 picture; h35 approved master v03 (539.626 s). J1755 verified the NAS master and restored a byte-identical UAT copy after old iCloud copies became unreadable. Ben watch remains pending on J1297; no upload approval. Locked Test B pair has no built Shorts; J0912 resumes one existing-media Short through the assembly chain. Browser Play is currently blocked: redirect succeeds but R2 media returns HTTP 403; J1755 remains open for delivery repair.
 
 - ✅ **Topic** — done
 - ✅ **Script** — done: v01, 92.1
@@ -175,7 +175,7 @@ Chief h22 locked rough v12 picture; h35 approved master v03 (539.626 s). J1755 v
 - ✅ **Picture** — done: Chief h22 graphics/composite PASS and rough-v12 picture lock, desk 6533306017. J1755 traced J1218 -> J1241 -> J1248 -> J1257 -> J1260 -> J1263 -> J1267. Older failed cuts retained.
 - ✅ **Edit + master** — done: Chief h35 master-v03 PASS, desk 6537320070. J1755 rehashed NAS and new HOS UAT/008_Lightning-Franklin/J1755_verified/hos_008_master_v03.mp4: cf1561c218bace7bc14ed3d625b0790a457027a90f392262f45ca7172723099b, 393139693 bytes, 539.626 s. Old iCloud master/PHONE return OSError 11 and are preserved. J1213 superseded; no rough re-render. PR391 merged. Ben watch on J1297; no upload authority.
 - ⬜ **Thumbnails** — to do (with Grok, due Thu 12 Nov (in 9 d))
-- ⬜ **Ben's final OK** — to do (with Ben, due Sun 15 Nov (in 12 d)): J1297 Ready-for-OK card restored with verified J1755 UAT master v03. No Ben decision in live checks or later desk messages at reconciliation; existing 15 Nov watch date retained.
+- ⬜ **Ben's final OK** — to do (with Ben, due Sun 15 Nov (in 12 d)): J1297 Ready-for-OK card restored with verified J1755 UAT master v03. No Ben decision in live checks or later desk messages at reconciliation; existing 15 Nov watch date retained. Browser Play is not verified: endpoint 302 then media host 403. Restored iCloud file is readable; J1755 needs explicit R2 watch-upload scope approval after automatic review rejection.
 - ⬜ **Scheduled** — to do (with Grok, due Mon 16 Nov (in 13 d))
 
 ### 009 · Why Doesn't the Moon Fall to Earth?
