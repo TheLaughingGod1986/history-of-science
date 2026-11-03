@@ -66,9 +66,9 @@ def parse(body: str) -> dict | None:
     return dict(re.findall(r"(\w+)=(\S+)", m.group(1)))
 
 
-def compose(frm: str, to: str, film: str, stage: str, status: str, body: str, images: list[str]) -> str:
+def compose(frm: str, to: str, film: str, stage: str, status: str, body: str, images: list[str], reply_to: str = "") -> str:
     title = f"### {frm.title()} → {to.title()} · {film or '—'} · {stage or '—'} · {status}"
-    parts = [header(**{"from": frm, "to": to, "film": film, "stage": stage, "status": status}), title, "", body.strip()]
+    parts = [header(**{"from": frm, "to": to, "film": film, "stage": stage, "status": status, "reply_to": str(reply_to) if reply_to else ""}), title, "", body.strip()]
     if images:
         parts += ["", *[f"![{Path(u.split('?')[0]).name}]({u})" for u in images]]
     return "\n".join(parts) + "\n"
@@ -191,7 +191,7 @@ def cmd_post(ns) -> None:
     if not body.strip():
         sys.exit("Empty message: pass --body or --body-file")
     urls = push_images(r, ns.film, ns.stage, ns.image) if ns.image else []
-    text = compose(ns.frm, ns.to, ns.film, ns.stage, ns.status, body, urls)
+    text = compose(ns.frm, ns.to, ns.film, ns.stage, ns.status, body, urls, getattr(ns, "reply_to", ""))
     f = HOME / "outbox.md"
     HOME.mkdir(parents=True, exist_ok=True)
     f.write_text(text)
@@ -203,13 +203,15 @@ def cmd_post(ns) -> None:
 def load_state() -> dict:
     try:
         return json.loads((HOME / "state.json").read_text())
-    except Exception:
+    except FileNotFoundError:
         return {"last": 0}
 
 
 def save_state(s: dict) -> None:
     HOME.mkdir(parents=True, exist_ok=True)
-    (HOME / "state.json").write_text(json.dumps(s))
+    temporary = HOME / "state.json.tmp"
+    temporary.write_text(json.dumps(s))
+    temporary.replace(HOME / "state.json")
 
 
 def notify(msg: str) -> None:
@@ -226,14 +228,80 @@ def run_agent(msg_file: Path) -> int:
     return subprocess.run(cmd, shell=True, cwd=os.environ.get("HOS_REPO_DIR") or None).returncode
 
 
+from contextlib import contextmanager
+import fcntl
+
+@contextmanager
+def state_transaction():
+    HOME.mkdir(parents=True, exist_ok=True)
+    with (HOME / "state.lock").open("a") as lock:
+        fcntl.flock(lock, fcntl.LOCK_EX)
+        state = load_state()
+        yield state
+        save_state(state)
+
+
+def pending_messages(state, incoming, agent):
+    pending = state.setdefault("pending", {}).setdefault(agent, {})
+    acked = state.get("acknowledged", {}).get(agent, {})
+    for comment in incoming:
+        if comment.get("header", {}).get("status") == "done":
+            continue  # terminal notifications must not create an acknowledgement ping-pong
+        if str(comment["id"]) not in acked:
+            pending.setdefault(str(comment["id"]), comment)
+    return sorted(pending.values(), key=lambda c: c["id"])
+
+
+def acknowledge(state, agent, message_id, reply, trusted):
+    pending = state.get("pending", {}).get(agent, {})
+    original = pending.get(str(message_id))
+    h = parse(reply.get("body", "")) or {}
+    if not original:
+        raise ValueError("No pending message for this agent/id")
+    source = original["header"]
+    if (reply.get("user", {}).get("login", "").lower() != trusted.lower()
+            or reply.get("id", 0) <= message_id or h.get("from") != agent
+            or h.get("status") not in ("review", "approval", "done", "blocked")
+            or h.get("reply_to") != str(message_id)
+            or any(h.get(k, "") != source.get(k, "") for k in ("film", "stage"))):
+        raise ValueError("Acknowledgement requires a trusted later outcome on the same film/stage, from this agent, with reply_to=<original id>")
+    state.setdefault("acknowledged", {}).setdefault(agent, {})[str(message_id)] = reply["id"]
+    del pending[str(message_id)]
+
+
+def cmd_ack(ns):
+    r = repo()
+    replies = comments(r, desk_pr(r))
+    reply = next((c for c in replies if c["id"] == ns.ref), None)
+    if not reply:
+        raise ValueError("Outcome comment is not on the current desk thread")
+    with state_transaction() as state:
+        acknowledge(state, ns.agent, ns.id, reply, os.environ.get("HOS_DESK_TRUSTED") or r.split("/")[0])
+    print(f"Acknowledged {ns.id} with outcome {ns.ref}")
+
+
 def check_inbox(ns) -> int:
+    HOME.mkdir(parents=True, exist_ok=True)
+    with (HOME / f"dispatch-{ns.agent}.lock").open("a") as lock:
+        try:
+            fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
+        except BlockingIOError:
+            print("Inbox delivery already running for this agent")
+            return 0
+        return deliver_inbox(ns)
+
+
+def deliver_inbox(ns) -> int:
     r = repo()
     pr = desk_pr(r)
     trusted = os.environ.get("HOS_DESK_TRUSTED") or r.split("/")[0]
     me = ns.agent
     key = "last" if me == "grok" else f"last_{me}"
-    state = load_state()
-    new = for_agent(comments(r, pr), state.get(key, 0), trusted, me)
+    with state_transaction() as state:
+        incoming = for_agent(comments(r, pr), getattr(ns, "recover_since_id", None) if getattr(ns, "recover_since_id", None) is not None else state.get(key, 0), trusted, me)
+        new = pending_messages(state, incoming, me)
+        if incoming:
+            state[key] = max(state.get(key, 0), max(c["id"] for c in incoming))
     inbox = HOME / "inbox"
     inbox.mkdir(parents=True, exist_ok=True)
     for c in new:
@@ -244,7 +312,7 @@ def check_inbox(ns) -> int:
             "Follow AGENTS.md. When finished, reply on the desk with:\n"
             f"  python3 00_Brand/Channel-Setup/tools/hos_desk.py post --from {me} --to claude --film {h.get('film', '')} "
             f"--stage {h.get('stage', '')} --status review --body-file <report.md> [--image <png/jpg> …]\n\n"
-            + c["body"])
+            + c["body"] + f"\n\nThis message remains pending until an outcome is posted. Post the outcome with --reply-to {c['id']}, then run: python3 00_Brand/Channel-Setup/tools/hos_desk.py ack {c['id']} --as {me} --ref <outcome comment id>\n")
         print(f"\n=== {f}\n{c['body']}")
         if ns.run:
             rc = run_agent(f)
@@ -252,8 +320,7 @@ def check_inbox(ns) -> int:
                 notify(f"Task for {me.title()}: {h.get('film', '')} {h.get('stage', '')}")
             elif rc:
                 print(f"agent exited {rc}; message left in {f}")
-        state[key] = c["id"]
-        save_state(state)
+        # Successful process exit also requires an explicit outcome acknowledgement.
     if not new:
         print(f"No new messages for {me.title()}.")
     return len(new)
@@ -296,12 +363,19 @@ def main() -> None:
     p.add_argument("--body")
     p.add_argument("--body-file")
     p.add_argument("--image", action="append", default=[])
+    p.add_argument("--reply-to", type=int, help="original desk message id this outcome resolves")
     p.set_defaults(fn=cmd_post)
     p = sub.add_parser("inbox")
     p.add_argument("--watch", type=int, default=0, help="poll every N seconds")
     p.add_argument("--run", action="store_true", help="start the agent with $HOS_DESK_AGENT_CMD")
     p.add_argument("--as", dest="agent", choices=WRITERS, default="grok", help="whose inbox (cursor or codex while Grok is out)")
+    p.add_argument("--recover-since-id", type=int, help="replay older messages after this id; acknowledged messages stay excluded")
     p.set_defaults(fn=cmd_inbox)
+    p = sub.add_parser("ack")
+    p.add_argument("id", type=int)
+    p.add_argument("--as", dest="agent", choices=WRITERS, required=True)
+    p.add_argument("--ref", type=int, required=True, help="posted outcome comment id on this desk")
+    p.set_defaults(fn=cmd_ack)
     p = sub.add_parser("thread")
     p.add_argument("--last", type=int, default=10)
     p.set_defaults(fn=cmd_thread)
