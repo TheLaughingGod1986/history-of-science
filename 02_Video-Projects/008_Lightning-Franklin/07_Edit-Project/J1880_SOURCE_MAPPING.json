@@ -1,0 +1,650 @@
+{
+  "job": "J1880",
+  "status": "PARTIAL_CAPABILITY_HOLD",
+  "master": {
+    "path": "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_desk/008/master_v03/hos_008_master_v03.mp4",
+    "bytes": 393139693,
+    "sha256": "cf1561c218bace7bc14ed3d625b0790a457027a90f392262f45ca7172723099b",
+    "verified_this_session": true
+  },
+  "capabilities": {
+    "audio_input": false,
+    "moving_video_input": false,
+    "still_image_input": true,
+    "evidence": "Tool inventory inspected; six ffmpeg-extracted stills viewed. No actual audio or moving-video perception demonstrated. ffmpeg/ASR/measurements do not establish that capability."
+  },
+  "clock": "Use timeline_in/out for master seeking, not film_t. Single still subject matches checked at six timestamps. Boundaries remain rounded metadata until verified against decoded PTS; 24 fps picture begins at 0.125s. Do not round timeline seconds to frame numbers without the actual PTS table.",
+  "notes": [
+    {
+      "original": {
+        "t": "00:20",
+        "text": "text on screen in readable needs maybe background colour"
+      },
+      "seconds": 20,
+      "cut": {
+        "row": "03_table_three",
+        "film_t": 17.761,
+        "timeline_in": 17.7643,
+        "timeline_out": 22.681,
+        "frames": 118,
+        "upscale": 1.5,
+        "side_label": "A KITE \u00b7 A KEY \u00b7 A JAR",
+        "source": "03_table_three_t1.mp4",
+        "source_path": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part01/raw/v01/03_table_three_t1.mp4",
+        "source_sha256": "482a254d7f7b195241eea96511a736d212c971988decb33c38b183347639a9bb",
+        "framing": {
+          "offset": 0.0
+        },
+        "disposition": "KEEP Flow Fast t1 (J1191)",
+        "quality": "Fast",
+        "part": 1,
+        "timeline_pretrim_in": 19.0833,
+        "timeline_pretrim_out": 24.0,
+        "film_t_pretrim": 19.08
+      },
+      "adjacent_cuts": [
+        {
+          "row": "02_tower_tilt",
+          "film_t": 11.344,
+          "timeline_in": 11.3373,
+          "timeline_out": 17.7643,
+          "frames": 174,
+          "upscale": 1.5,
+          "side_label": "THE ANSWER IS ON THE ROOF",
+          "source": "02_tower_tilt_t1.mp4",
+          "source_path": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part01/raw/v01/02_tower_tilt_t1.mp4",
+          "source_sha256": "b2dc0bb4f2ac2dd632efba2b087b1c68c8351ee4c93fd367224a4ad3ae75fdac",
+          "framing": {
+            "offset": 0.0
+          },
+          "disposition": "KEEP Flow Fast t1 (J1191)",
+          "quality": "Fast",
+          "part": 1,
+          "timeline_pretrim_in": 11.8333,
+          "timeline_pretrim_out": 19.0833,
+          "film_t_pretrim": 11.84
+        },
+        {
+          "row": "03_table_three",
+          "film_t": 17.761,
+          "timeline_in": 17.7643,
+          "timeline_out": 22.681,
+          "frames": 118,
+          "upscale": 1.5,
+          "side_label": "A KITE \u00b7 A KEY \u00b7 A JAR",
+          "source": "03_table_three_t1.mp4",
+          "source_path": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part01/raw/v01/03_table_three_t1.mp4",
+          "source_sha256": "482a254d7f7b195241eea96511a736d212c971988decb33c38b183347639a9bb",
+          "framing": {
+            "offset": 0.0
+          },
+          "disposition": "KEEP Flow Fast t1 (J1191)",
+          "quality": "Fast",
+          "part": 1,
+          "timeline_pretrim_in": 19.0833,
+          "timeline_pretrim_out": 24.0,
+          "film_t_pretrim": 19.08
+        },
+        {
+          "row": "03_table_three_c1",
+          "film_t": 22.681,
+          "timeline_in": 22.681,
+          "timeline_out": 27.5977,
+          "frames": 118,
+          "upscale": 1.5,
+          "side_label": null,
+          "source": "03_table_three_c1_t1.mp4",
+          "source_path": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part01/raw/v01/03_table_three_c1_t1.mp4",
+          "source_sha256": "5ac6ee52a281d53b2685b65ca8a30334393d63701aa281beecf5efee2a2956b7",
+          "framing": {
+            "offset": 0.0
+          },
+          "disposition": "KEEP Flow Fast t1 (J1191)",
+          "quality": "Fast",
+          "part": 1,
+          "timeline_pretrim_in": 24.0,
+          "timeline_pretrim_out": 28.9167,
+          "film_t_pretrim": 24.0
+        }
+      ],
+      "script_context": "By the end of this film, you'll know how a kite, a key and a glass jar proved what lightning really is, and how one simple idea stopped it burning our towns down.",
+      "script_context_status": "Exact locked-script excerpt; word-level alignment to this instant not independently verified by listening",
+      "source_interval": {
+        "recorded_inpoint_s": 0.0,
+        "nominal_pretrim_length_s": 4.916666666666667,
+        "status": "Not an executable safe interval. Pause-trim removals can alter row duration; recover original removal map before source-frame substitution."
+      },
+      "proposed_edit": "Rebuild only this row from its clean moving source. Replace the existing burnt-in label rather than layering a second label over it. White Didot italic, fitted to <=1500 px, start font 76 px at 1920x1080; short text: KITE \u00b7 KEY \u00b7 JAR (existing spoken nouns, no new claim). Centre at (960,940), keep off key/jar. Use a fitted soft cream-on-brown backing with 32px horizontal/18px vertical padding, 16px feather and 85% maximum opacity; no full-width slab. Fade 0.35s in/out; visible from row+0.15s to min(row+3.75s,row_out-0.25s). Check full-size and phone readability before finalising dimensions. Duration unchanged.",
+      "acceptance": "text on screen in readable needs maybe background colour \u2014 verify corrected result at normal speed, phone size, and adjacent transitions; retain all unchanged gates and sync",
+      "status": "UNRESOLVED; proposal only"
+    },
+    {
+      "original": {
+        "t": "0:30",
+        "text": "flash the next scene"
+      },
+      "seconds": 30,
+      "cut": {
+        "row": "03b_town_safe",
+        "film_t": 27.601,
+        "timeline_in": 27.5977,
+        "timeline_out": 31.1267,
+        "frames": 102,
+        "upscale": 1.5,
+        "side_label": null,
+        "source": "03b_town_safe_t1.mp4",
+        "source_path": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part01/raw/v01/03b_town_safe_t1.mp4",
+        "source_sha256": "f89bec2a38ae7707881637aad9ee3e0e7408febd85ebb1b6f31e88e6c735e9a0",
+        "framing": {
+          "offset": 0.0
+        },
+        "disposition": "KEEP Flow Fast t1 (J1191)",
+        "quality": "Fast",
+        "part": 1,
+        "timeline_pretrim_in": 28.9167,
+        "timeline_pretrim_out": 33.1667,
+        "film_t_pretrim": 28.92
+      },
+      "adjacent_cuts": [
+        {
+          "row": "03_table_three_c1",
+          "film_t": 22.681,
+          "timeline_in": 22.681,
+          "timeline_out": 27.5977,
+          "frames": 118,
+          "upscale": 1.5,
+          "side_label": null,
+          "source": "03_table_three_c1_t1.mp4",
+          "source_path": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part01/raw/v01/03_table_three_c1_t1.mp4",
+          "source_sha256": "5ac6ee52a281d53b2685b65ca8a30334393d63701aa281beecf5efee2a2956b7",
+          "framing": {
+            "offset": 0.0
+          },
+          "disposition": "KEEP Flow Fast t1 (J1191)",
+          "quality": "Fast",
+          "part": 1,
+          "timeline_pretrim_in": 24.0,
+          "timeline_pretrim_out": 28.9167,
+          "film_t_pretrim": 24.0
+        },
+        {
+          "row": "03b_town_safe",
+          "film_t": 27.601,
+          "timeline_in": 27.5977,
+          "timeline_out": 31.1267,
+          "frames": 102,
+          "upscale": 1.5,
+          "side_label": null,
+          "source": "03b_town_safe_t1.mp4",
+          "source_path": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part01/raw/v01/03b_town_safe_t1.mp4",
+          "source_sha256": "f89bec2a38ae7707881637aad9ee3e0e7408febd85ebb1b6f31e88e6c735e9a0",
+          "framing": {
+            "offset": 0.0
+          },
+          "disposition": "KEEP Flow Fast t1 (J1191)",
+          "quality": "Fast",
+          "part": 1,
+          "timeline_pretrim_in": 28.9167,
+          "timeline_pretrim_out": 33.1667,
+          "film_t_pretrim": 28.92
+        },
+        {
+          "row": "04_storm_mystery",
+          "film_t": 31.14,
+          "timeline_in": 31.1267,
+          "timeline_out": 34.96,
+          "frames": 92,
+          "upscale": 1.5,
+          "side_label": null,
+          "source": "04_storm_mystery_t1.mp4",
+          "source_path": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part01/raw/v01/04_storm_mystery_t1.mp4",
+          "source_sha256": "e1b2de5d8cd4bbc8ace98d6d5c17af3c75651f8949d54e062fe91fbe6ee31271",
+          "framing": {
+            "offset": 0.0
+          },
+          "disposition": "KEEP Flow Fast t1 (J1191)",
+          "quality": "Fast",
+          "part": 1,
+          "timeline_pretrim_in": 33.1667,
+          "timeline_pretrim_out": 37.0,
+          "film_t_pretrim": 33.18
+        }
+      ],
+      "script_context": "For thousands of years, lightning was a mystery. It fell without warning, split trees, killed animals in the fields and set roofs alight.",
+      "script_context_status": "Exact locked-script excerpt; word-level alignment to this instant not independently verified by listening",
+      "source_interval": {
+        "recorded_inpoint_s": 0.0,
+        "nominal_pretrim_length_s": 4.25,
+        "status": "Not an executable safe interval. Pause-trim removals can alter row duration; recover original removal map before source-frame substitution."
+      },
+      "proposed_edit": "Inspect every frame of the town-safe row plus both adjacent cuts at normal speed and frame-step. Do not assume the intended 31.1267s boundary is the reported flash. Once exact anomalous frame(s) are identified, substitute the same count of chronologically contiguous clean native source frames; retain row boundary and audio samples. No deletion from timeline, duplicated frame, freeze, optical-flow invention or VO cut. Exact bad-frame index and safe source interval remain unestablished.",
+      "acceptance": "flash the next scene \u2014 verify corrected result at normal speed, phone size, and adjacent transitions; retain all unchanged gates and sync",
+      "status": "UNRESOLVED; proposal only"
+    },
+    {
+      "original": {
+        "t": "1:49",
+        "text": "strange behaviour as hair flies out the tube"
+      },
+      "seconds": 109,
+      "cut": {
+        "row": "02_salon_spark",
+        "film_t": 106.806,
+        "timeline_in": 104.376,
+        "timeline_out": 111.0427,
+        "frames": 160,
+        "upscale": 1.5,
+        "side_label": null,
+        "source": "02_salon_spark_t1.mp4",
+        "source_path": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part02/raw/v01/02_salon_spark_t1.mp4",
+        "source_sha256": "4b61312e9416b68853409b7d67683643934b44cc2d56e48623b8b0c4e8c58a92",
+        "framing": {
+          "offset": 0.0
+        },
+        "disposition": "KEEP Flow Fast t1 (J1191)",
+        "quality": "Fast",
+        "part": 2,
+        "timeline_pretrim_in": 109.5417,
+        "timeline_pretrim_out": 116.2084,
+        "film_t_pretrim": 111.43
+      },
+      "adjacent_cuts": [
+        {
+          "row": "01_salon_tube",
+          "film_t": 102.686,
+          "timeline_in": 100.251,
+          "timeline_out": 104.376,
+          "frames": 99,
+          "upscale": 1.5,
+          "side_label": "ELECTRICITY \u00b7 A PARTY TRICK",
+          "source": "01_salon_tube_t1.mp4",
+          "source_path": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part02/raw/v01/01_salon_tube_t1.mp4",
+          "source_sha256": "d3a0b24c996c9d388baaf4e764b7561f9144e50a6fe21d94e8a3d2f9f2c45170",
+          "framing": {
+            "offset": 0.0
+          },
+          "disposition": "KEEP Flow Fast t1 (J1191)",
+          "quality": "Fast",
+          "part": 2,
+          "timeline_pretrim_in": 105.4167,
+          "timeline_pretrim_out": 109.5417,
+          "film_t_pretrim": 107.31
+        },
+        {
+          "row": "02_salon_spark",
+          "film_t": 106.806,
+          "timeline_in": 104.376,
+          "timeline_out": 111.0427,
+          "frames": 160,
+          "upscale": 1.5,
+          "side_label": null,
+          "source": "02_salon_spark_t1.mp4",
+          "source_path": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part02/raw/v01/02_salon_spark_t1.mp4",
+          "source_sha256": "4b61312e9416b68853409b7d67683643934b44cc2d56e48623b8b0c4e8c58a92",
+          "framing": {
+            "offset": 0.0
+          },
+          "disposition": "KEEP Flow Fast t1 (J1191)",
+          "quality": "Fast",
+          "part": 2,
+          "timeline_pretrim_in": 109.5417,
+          "timeline_pretrim_out": 116.2084,
+          "film_t_pretrim": 111.43
+        },
+        {
+          "row": "03_audience_shock",
+          "film_t": 113.466,
+          "timeline_in": 111.0427,
+          "timeline_out": 113.2013,
+          "frames": 61,
+          "upscale": 1.5,
+          "side_label": null,
+          "source": "03_audience_shock_t1.mp4",
+          "source_path": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part02/raw/v01/03_audience_shock_t1.mp4",
+          "source_sha256": "3717c583f074b39c88a7de1cd569fa2160f0e3ff011a3f91d40962a9f9db0916",
+          "framing": {
+            "offset": 0.0
+          },
+          "disposition": "KEEP Flow Fast t1 (J1191)",
+          "quality": "Fast",
+          "part": 2,
+          "timeline_pretrim_in": 116.2084,
+          "timeline_pretrim_out": 118.75,
+          "film_t_pretrim": 118.09
+        }
+      ],
+      "script_context": "Travelling lecturers rubbed glass tubes with silk and made sparks fly from people's fingers and hair. Audiences paid to feel the shock.",
+      "script_context_status": "Exact locked-script excerpt; word-level alignment to this instant not independently verified by listening",
+      "source_interval": {
+        "recorded_inpoint_s": 0.0,
+        "nominal_pretrim_length_s": 6.666666666666667,
+        "status": "Not an executable safe interval. Pause-trim removals can alter row duration; recover original removal map before source-frame substitution."
+      },
+      "proposed_edit": "Inspect full salon-spark row and preceding salon-tube source. Prefer a continuous native interval showing silk rubbed on tube or restrained hair attraction that stays attached to the guest; no loose hair emerging from tube. Preserve locked line and target duration. No safe alternative interval is approved by this session; current take is not cleared merely because J1191 previously KEEP-ed it.",
+      "acceptance": "strange behaviour as hair flies out the tube \u2014 verify corrected result at normal speed, phone size, and adjacent transitions; retain all unchanged gates and sync",
+      "status": "UNRESOLVED; proposal only"
+    },
+    {
+      "original": {
+        "t": "2:20",
+        "text": "strange behaviour with the silver foil"
+      },
+      "seconds": 140,
+      "cut": {
+        "row": "08_jar_spark",
+        "film_t": 141.666,
+        "timeline_in": 139.2393,
+        "timeline_out": 141.921,
+        "frames": 76,
+        "upscale": 1.0,
+        "side_label": null,
+        "source": "08_jar_spark_t1.mp4",
+        "source_path": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part02/raw/v01/08_jar_spark_t1.mp4",
+        "source_sha256": "6a24bb5487447e000f2041833f9ef8ef575f678a82ffc10c8ddbb513fa585b4c",
+        "framing": {
+          "offset": 0.0
+        },
+        "disposition": "KEEP Flow Quality t1 (J1191)",
+        "quality": "Quality",
+        "part": 2,
+        "timeline_pretrim_in": 145.625,
+        "timeline_pretrim_out": 148.7917,
+        "film_t_pretrim": 147.51
+      },
+      "adjacent_cuts": [
+        {
+          "row": "07_foil_jar",
+          "film_t": 134.346,
+          "timeline_in": 131.906,
+          "timeline_out": 139.2393,
+          "frames": 176,
+          "upscale": 1.5,
+          "side_label": null,
+          "source": "07_foil_jar_t1.mp4",
+          "source_path": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part02/raw/v01/07_foil_jar_t1.mp4",
+          "source_sha256": "8e28cc24ed747a60f6a305f3f1014a65ead7bde964a682bcb4939c527b59ec11",
+          "framing": {
+            "offset": 0.0
+          },
+          "disposition": "KEEP Flow Fast t1 (J1191)",
+          "quality": "Fast",
+          "part": 2,
+          "timeline_pretrim_in": 138.2917,
+          "timeline_pretrim_out": 145.625,
+          "film_t_pretrim": 140.19
+        },
+        {
+          "row": "08_jar_spark",
+          "film_t": 141.666,
+          "timeline_in": 139.2393,
+          "timeline_out": 141.921,
+          "frames": 76,
+          "upscale": 1.0,
+          "side_label": null,
+          "source": "08_jar_spark_t1.mp4",
+          "source_path": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part02/raw/v01/08_jar_spark_t1.mp4",
+          "source_sha256": "6a24bb5487447e000f2041833f9ef8ef575f678a82ffc10c8ddbb513fa585b4c",
+          "framing": {
+            "offset": 0.0
+          },
+          "disposition": "KEEP Flow Quality t1 (J1191)",
+          "quality": "Quality",
+          "part": 2,
+          "timeline_pretrim_in": 145.625,
+          "timeline_pretrim_out": 148.7917,
+          "film_t_pretrim": 147.51
+        },
+        {
+          "row": "09_window_storm",
+          "film_t": 144.361,
+          "timeline_in": 141.921,
+          "timeline_out": 145.046,
+          "frames": 75,
+          "upscale": 1.5789,
+          "side_label": null,
+          "source": "09_window_storm_t1.mp4",
+          "source_path": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part02/raw/v01/09_window_storm_t1.mp4",
+          "source_sha256": "2e1d342fa4a14f366ad85b801b808595403a21a6d897f3bf97dca2607705676a",
+          "framing": {
+            "offset": 0.0
+          },
+          "disposition": "KEEP Flow Fast t1 (J1191); J1218: crop left 5% to clear natural window-edge seam at 0.06; document if detector still FAILs",
+          "quality": "Fast",
+          "part": 2,
+          "timeline_pretrim_in": 148.7917,
+          "timeline_pretrim_out": 151.9167,
+          "film_t_pretrim": 150.69
+        }
+      ],
+      "script_context": "It was a glass jar lined with metal foil, and it could store electricity, then let it all go at once, in a bright spark with a loud crack.",
+      "script_context_status": "Exact locked-script excerpt; word-level alignment to this instant not independently verified by listening",
+      "source_interval": {
+        "recorded_inpoint_s": 0.0,
+        "nominal_pretrim_length_s": 3.1666666666666665,
+        "status": "Not an executable safe interval. Pause-trim removals can alter row duration; recover original removal map before source-frame substitution."
+      },
+      "proposed_edit": "Inspect jar-spark plus preceding foil-jar source. Select continuous coherent jar/foil motion: lining remains attached, cork and ring-wire stable, no foil flying or morphing. Spark supports locked narration. Do not conceal artefact with still frame or misleading patch. Safe replacement interval remains missing.",
+      "acceptance": "strange behaviour with the silver foil \u2014 verify corrected result at normal speed, phone size, and adjacent transitions; retain all unchanged gates and sync",
+      "status": "UNRESOLVED; proposal only"
+    },
+    {
+      "original": {
+        "t": "3:31",
+        "text": "the diagram/ map is not easy to understand"
+      },
+      "seconds": 211,
+      "cut": {
+        "row": "04_letter_crosses",
+        "film_t": 212.137,
+        "timeline_in": 207.827,
+        "timeline_out": 211.577,
+        "frames": 90,
+        "upscale": 1.0,
+        "side_label": null,
+        "source": "overlay_04_letter_crosses.mp4",
+        "source_path": "/Volumes/data/mac-mini-archive/tmp-render-scratch/j1257-hos008-rough-v06/special_assets/overlay_04_letter_crosses.mp4",
+        "source_sha256": "3d827e7f7433a5d1c50ff0278fc6b8e5ae49d1a4c25c8bb025eedde7cec6e32a",
+        "framing": {
+          "offset": 0.0
+        },
+        "disposition": "J1267 v09 frame-exact lock (overlay_04_letter_crosses.mp4)",
+        "quality": "code_graphic",
+        "part": 3,
+        "timeline_pretrim_in": 216.5417,
+        "timeline_pretrim_out": 220.2917,
+        "film_t_pretrim": 220.31
+      },
+      "adjacent_cuts": [
+        {
+          "row": "03_rod_cloud",
+          "film_t": 205.637,
+          "timeline_in": 201.327,
+          "timeline_out": 207.827,
+          "frames": 156,
+          "upscale": 1.0,
+          "side_label": null,
+          "source": "cg_03_rod_cloud.mp4",
+          "source_path": "/Volumes/data/mac-mini-archive/tmp-render-scratch/j1248-hos008-rough-v05/special_assets/cg_03_rod_cloud.mp4",
+          "source_sha256": "0c5e352fe33b98ea21c0b5d9583ede8eb7f5ddc1cf64db3cda2283cdf7f372eb",
+          "framing": {
+            "offset": 0.0
+          },
+          "disposition": "J1267 v09 frame-exact lock (cg_03_rod_cloud.mp4)",
+          "quality": "code_graphic",
+          "part": 3,
+          "timeline_pretrim_in": 210.0417,
+          "timeline_pretrim_out": 216.5417,
+          "film_t_pretrim": 213.81
+        },
+        {
+          "row": "04_letter_crosses",
+          "film_t": 212.137,
+          "timeline_in": 207.827,
+          "timeline_out": 211.577,
+          "frames": 90,
+          "upscale": 1.0,
+          "side_label": null,
+          "source": "overlay_04_letter_crosses.mp4",
+          "source_path": "/Volumes/data/mac-mini-archive/tmp-render-scratch/j1257-hos008-rough-v06/special_assets/overlay_04_letter_crosses.mp4",
+          "source_sha256": "3d827e7f7433a5d1c50ff0278fc6b8e5ae49d1a4c25c8bb025eedde7cec6e32a",
+          "framing": {
+            "offset": 0.0
+          },
+          "disposition": "J1267 v09 frame-exact lock (overlay_04_letter_crosses.mp4)",
+          "quality": "code_graphic",
+          "part": 3,
+          "timeline_pretrim_in": 216.5417,
+          "timeline_pretrim_out": 220.2917,
+          "film_t_pretrim": 220.31
+        },
+        {
+          "row": "05_marly_garden",
+          "film_t": 215.897,
+          "timeline_in": 211.577,
+          "timeline_out": 216.702,
+          "frames": 123,
+          "upscale": 1.5,
+          "side_label": "MARLY, FRANCE \u00b7 MAY 1752",
+          "source": "05_marly_garden_t1.mp4",
+          "source_path": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part03/raw/v01/05_marly_garden_t1.mp4",
+          "source_sha256": "90945fa4601812e68ac97720d64a5d2b84f4c1f11758ef98c7e1021c30073501",
+          "framing": {
+            "offset": 0.0
+          },
+          "disposition": "KEEP Flow Fast t1 (J1191)",
+          "quality": "Fast",
+          "part": 3,
+          "timeline_pretrim_in": 220.2917,
+          "timeline_pretrim_out": 225.4167,
+          "film_t_pretrim": 224.07
+        }
+      ],
+      "script_context": "He published the idea, and it crossed the ocean. In May seventeen fifty-two, in a garden at Marly, near Paris, French scientists put up a tall pointed rod and tried it.",
+      "script_context_status": "Exact locked-script excerpt; word-level alignment to this instant not independently verified by listening",
+      "source_interval": {
+        "recorded_inpoint_s": 0.0,
+        "nominal_pretrim_length_s": 3.75,
+        "status": "Not an executable safe interval. Pause-trim removals can alter row duration; recover original removal map before source-frame substitution."
+      },
+      "proposed_edit": "Rebuild own alpha overlay over moving ship plate, removing existing composite map/text first. One idea: published letter crosses ocean. Use sequential PHILADELPHIA then PARIS, one label at a time, white Didot italic, <=4 words per label, >=76px at 1080p. A single letter icon moves between two named points across an unscaled schematic ocean band; no invented coastline, bearings, distance or travel-time metric. 0.4s ink/fade entry/exit, continuous animation within existing row. FACT_NOTES must support destinations; source-backed geometry required if any map outline is retained. Underlying clean plate provenance and source interval must be recovered from v06 compositor before executable recipe.",
+      "acceptance": "the diagram/ map is not easy to understand \u2014 verify corrected result at normal speed, phone size, and adjacent transitions; retain all unchanged gates and sync",
+      "status": "UNRESOLVED; proposal only"
+    },
+    {
+      "original": {
+        "t": "7:58",
+        "text": "the rods fall down for some reason"
+      },
+      "seconds": 478,
+      "cut": {
+        "row": "13_rods_spread",
+        "film_t": 481.579,
+        "timeline_in": 473.4623,
+        "timeline_out": 479.0873,
+        "frames": 135,
+        "upscale": 1.5,
+        "side_label": null,
+        "source": "13_rods_spread_t1.mp4",
+        "source_path": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/13_rods_spread_t1.mp4",
+        "source_sha256": "d9fa5f1329ad0e190ffd43c5b3d8cd47ab3c39b58402dc76eeb43c74290d9607",
+        "framing": {
+          "offset": 0.0
+        },
+        "disposition": "KEEP Flow Fast t1 (J1191)",
+        "quality": "Fast",
+        "part": 5,
+        "timeline_pretrim_in": 491.375,
+        "timeline_pretrim_out": 497.0,
+        "film_t_pretrim": 498.95
+      },
+      "adjacent_cuts": [
+        {
+          "row": "12_no_patent",
+          "film_t": 476.919,
+          "timeline_in": 468.7957,
+          "timeline_out": 473.4623,
+          "frames": 112,
+          "upscale": 1.5,
+          "side_label": null,
+          "source": "12_no_patent_t1.mp4",
+          "source_path": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/12_no_patent_t1.mp4",
+          "source_sha256": "9fab7ce3f4442a75659f522a11a69aef4ba8cfc407e6f49e91f34a27bcce2d45",
+          "framing": {
+            "offset": 0.0
+          },
+          "disposition": "KEEP Flow Fast t1 (J1191)",
+          "quality": "Fast",
+          "part": 5,
+          "timeline_pretrim_in": 486.7084,
+          "timeline_pretrim_out": 491.375,
+          "film_t_pretrim": 494.29
+        },
+        {
+          "row": "13_rods_spread",
+          "film_t": 481.579,
+          "timeline_in": 473.4623,
+          "timeline_out": 479.0873,
+          "frames": 135,
+          "upscale": 1.5,
+          "side_label": null,
+          "source": "13_rods_spread_t1.mp4",
+          "source_path": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/13_rods_spread_t1.mp4",
+          "source_sha256": "d9fa5f1329ad0e190ffd43c5b3d8cd47ab3c39b58402dc76eeb43c74290d9607",
+          "framing": {
+            "offset": 0.0
+          },
+          "disposition": "KEEP Flow Fast t1 (J1191)",
+          "quality": "Fast",
+          "part": 5,
+          "timeline_pretrim_in": 491.375,
+          "timeline_pretrim_out": 497.0,
+          "film_t_pretrim": 498.95
+        },
+        {
+          "row": "14_safe_towers",
+          "film_t": 487.219,
+          "timeline_in": 479.0873,
+          "timeline_out": 484.0457,
+          "frames": 119,
+          "upscale": 1.0,
+          "side_label": null,
+          "source": "14_safe_towers_t1.mp4",
+          "source_path": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/14_safe_towers_t1.mp4",
+          "source_sha256": "0c7e98c2d89d2e4ef61271af00d71ae77d9e1e55b871b70bdc33ea79e81ffbdd",
+          "framing": {
+            "offset": 0.0
+          },
+          "disposition": "KEEP Flow Quality t1 (J1191)",
+          "quality": "Quality",
+          "part": 5,
+          "timeline_pretrim_in": 497.0,
+          "timeline_pretrim_out": 501.9584,
+          "film_t_pretrim": 504.59
+        }
+      ],
+      "script_context": "Within a few years, rods were going up on churches, houses and ships' masts. And one by one, church towers became safer places to stand.",
+      "script_context_status": "Exact locked-script excerpt; word-level alignment to this instant not independently verified by listening",
+      "source_interval": {
+        "recorded_inpoint_s": 0.0,
+        "nominal_pretrim_length_s": 5.625,
+        "status": "Not an executable safe interval. Pause-trim removals can alter row duration; recover original removal map before source-frame substitution."
+      },
+      "proposed_edit": "Inspect rods-spread source and safe-towers native source, including full transitions. Rods must stay anchored to church/house/mast; no downward translation, detached floating hardware or unexplained falling. Prefer an approved continuous safe-towers interval if it supports the line and reuse limits. No safe interval selected here; do not approve from the single still.",
+      "acceptance": "the rods fall down for some reason \u2014 verify corrected result at normal speed, phone size, and adjacent transitions; retain all unchanged gates and sync",
+      "status": "UNRESOLVED; proposal only"
+    }
+  ],
+  "search_budget": {
+    "external_candidates_examined": 0,
+    "safe_intervals_accepted": 0,
+    "note": "Only existing source paths and neighbouring KEEP provenance inventoried; no archive/stock search or in-depth moving candidate review performed. Do not count filenames or stills as motion inspection. Existing cumulative budgets, if any, must be recovered before new search."
+  },
+  "invariants": [
+    "new version only; preserve every original source/master/review/hash",
+    "539.626479s runtime, 12923 video packets and original picture clock",
+    "copy master v03 audio stream unchanged for picture-only work; no remix or AAC re-encode",
+    "h35 VO sync and full-runtime arranged score preserved",
+    "no render, generation, spend, publication, upload or YouTube metadata change"
+  ],
+  "next": "Resume J1880 with demonstrated moving_video_input; inspect candidates, recover source trim/VO alignment, finalise exact safe intervals and six acceptance checks. J1881 remains after J1880; no correction production or final approval here."
+}

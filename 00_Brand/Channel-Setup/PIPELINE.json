@@ -1,6 +1,6 @@
 {
   "updated": "2026-11-03",
-  "updated_by": "codex (J1868 UAT triage)",
+  "updated_by": "codex (J1880 capability hold)",
   "board_url": "https://claude.ai/artifact/Hhk519dkbHMzeaZfp3efhc",
   "stages": [
     {
@@ -456,18 +456,23 @@
         "edit": {
           "status": "blocked",
           "due": "2026-11-12",
-          "owner": "Assembly capability chain",
+          "owner": "codex",
           "since": "2026-11-03T18:54",
           "underway": false,
-          "waiting": "J1880 correction recipe -> J1881 elected-Chief scope review; J1755 separate browser-delivery hold",
-          "note": "J1868 preserved six original Ben notes in 07_Edit-Project/J1868_BEN_REVIEW_v03.json. Historical h35 master v03 cf1561c2...3099b and J1297 delivery stand; Ben requested changes, not approval. No replacement render or publication authorized. PR401 delivery reconciliation remains separate.",
+          "waiting": "J1880 requires demonstrated moving_video_input to select safe native intervals and finalise exact recipe; J1881 still dependent; J1755 separate delivery hold",
+          "note": "J1880 partial mapping/recipe in 07_Edit-Project/J1880_CORRECTION_RECIPE_PARTIAL.md. Master SHA verified; six stills inspected only. No motion/audio PASS, no notes resolved, no media changes.",
           "jobs": [
             "J1297",
             "J1755",
             "J1868",
             "J1880",
             "J1881"
-          ]
+          ],
+          "steps": [
+            1,
+            4
+          ],
+          "steps_unit": "J1880 preparation steps"
         },
         "thumbnails": {
           "status": "todo",

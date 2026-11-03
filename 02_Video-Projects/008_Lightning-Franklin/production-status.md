@@ -163,3 +163,26 @@ Repository validation (record-only; not corrected-media approval):
 -- gate:episode: PASS
 ALL CHECKS PASS
 ```
+
+
+## J1880 correction preparation — 3 November 2026
+
+Codex covering. Partial source mapping and bounded proposals: `07_Edit-Project/J1880_CORRECTION_RECIPE_PARTIAL.md`, `J1880_SOURCE_MAPPING.json`, and current `J1880_CURRENT_CHECK.json`. Current review remains v03/change with the same six original notes. NAS master SHA256 cf1561c218bace7bc14ed3d625b0790a457027a90f392262f45ca7172723099b verified this session (393139693 bytes). Six extracted stills inspected; no demonstrated moving-video/audio perception. All notes unresolved. J1880 held for moving_video_input to inspect approved alternatives and select safe exact source intervals; source trim map and spoken alignment remain unfinished. J1881 remains dependent. No media changes, spend or publishing. J1755's delivery/publication restriction remains separate.
+
+Repository validation (record checks only; no media PASS): initial check_all could not write the sandboxed npm cache. Retried unchanged checks using a task-specific /private/tmp npm cache and existing checkout dependencies:
+
+```text
+-- durable desk handoffs: PASS
+-- no media: PASS
+-- status board in sync: PASS
+-- ElevenLabs guard tests: PASS
+-- vo_check word tests: PASS
+-- contract tests: PASS
+-- package-lint: PASS
+-- review:script lightning_script_master_v01.md: PASS
+-- gate:episode: PASS
+ALL CHECKS PASS
+J1880 record checks PASS: six original unresolved notes, source+adjacent records, explicit capability and clock limits; no media execution.
+```
+
+No picture/edit stage approval is claimed by these repository checks.

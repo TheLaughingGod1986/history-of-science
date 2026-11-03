@@ -1,6 +1,6 @@
 # HOS status board
 
-**As of Tue 3 Nov 2026**, updated by codex (J1868 UAT triage). Generated from `00_Brand/Channel-Setup/PIPELINE.json` by `00_Brand/Channel-Setup/tools/status_board.py`. Don't edit this file by hand.
+**As of Tue 3 Nov 2026**, updated by codex (J1880 capability hold). Generated from `00_Brand/Channel-Setup/PIPELINE.json` by `00_Brand/Channel-Setup/tools/status_board.py`. Don't edit this file by hand.
 
 **Kanban board (live):** https://claude.ai/artifact/Hhk519dkbHMzeaZfp3efhc — reads this same file from `main` every 5 minutes. The first time you open it, allow GitHub when it asks.
 
@@ -12,7 +12,7 @@
 | **005** The Tied Arm That Proved Your Blood Circulates | Thu 29 Oct (-5 d) | 100% | all stages done | — | — | Fri 2 Oct | 🟢 on track |
 | **006** The Willow Tree That Was Made of Air | Thu 5 Nov (2 d) | 100% | all stages done | — | — | Sun 1 Nov | 🟢 on track |
 | **007** Why Vaccines Are Named After a Cow | Thu 12 Nov (9 d) | 100% | all stages done | — | — | Sun 8 Nov (in 5 d) | 🟢 on track |
-| **008** Why Did Franklin Fly a Kite in a Storm? | Thu 19 Nov (16 d) | 75% | Picture (blocked) | **Assembly capability chain** · ⛔ blocked: J1880 maps three motion defects and diagram/text corrections; J1881 scopes production | 112/112 board rows rendered (11 code graphics + 101/101 Flow plates KEEP) | Sun 15 Nov (in 12 d) | ⛔ blocked |
+| **008** Why Did Franklin Fly a Kite in a Storm? | Thu 19 Nov (16 d) | 78% | Picture (blocked) | **Assembly capability chain** · ⛔ blocked: J1880 maps three motion defects and diagram/text corrections; J1881 scopes production | 112/112 board rows rendered (11 code graphics + 101/101 Flow plates KEEP) | Sun 15 Nov (in 12 d) | ⛔ blocked |
 | **009** Why Doesn't the Moon Fall to Earth? | Thu 26 Nov (23 d) | 62% | Shorts voiceover (to do) | **Cursor** · queued (after 010 long VO) | starts later; due 26 d late | Sun 22 Nov (in 19 d) | 🟠 behind |
 | **010** What Killed the Dinosaurs Was Hidden in a Line of Clay | Thu 3 Dec (30 d) | 35% | Shorts voiceover (to do) | **Cursor** · queued (after 010 long VO) | starts later; due 26 d late | Sun 29 Nov (in 26 d) | 🟠 behind |
 
@@ -39,7 +39,11 @@
 
 **Assembly capability chain**
 - ▶️ Underway: nothing right now
-- ⏸ Waiting: 008 Picture: J1880 maps three motion defects and diagram/text corrections; J1881 scopes production; 008 Edit + master: J1880 correction recipe -> J1881 elected-Chief scope review; J1755 separate browser-delivery hold
+- ⏸ Waiting: 008 Picture: J1880 maps three motion defects and diagram/text corrections; J1881 scopes production
+
+**codex**
+- ▶️ Underway: nothing right now
+- ⏸ Waiting: 008 Edit + master: J1880 requires demonstrated moving_video_input to select safe native intervals and finalise exact recipe; J1881 still dependent; J1755 separate delivery hold
 
 **Gemini**
 - ▶️ Underway: nothing right now
@@ -49,7 +53,7 @@
 
 - **004** · 🔄 **Thumbnails** — in progress (0%, with Cursor since Fri 9 Oct, ⏸ waiting: J0106: C v07b file (don't touch the armed test), then the Chief's OK, due Tue 13 Oct (21 d late)): A + B live in the armed test; C v07 armed but not OK'd. v07b re-letter (no spend) is J0106; Chief's OK by Wed 14 Oct 18:00, else pair 2 comes out
 - **008** · ⛔ **Picture** — blocked (100%, 112/112 board rows rendered (11 code graphics + 101/101 Flow plates KEEP), with Assembly capability chain since Fri 16 Oct, ⛔ blocked: J1880 maps three motion defects and diagram/text corrections; J1881 scopes production, due Sun 8 Nov (in 5 d)): Historical rough-v12 picture lock: Chief h22, HOS #180 comment 6533306017. Ben v03 change request 2026-11-03T16:08:33.439Z now requires scoped corrections. J1868 records evidence, not a new picture PASS.
-- **008** · ⛔ **Edit + master** — blocked (0%, with Assembly capability chain since Tue 3 Nov 18:54, ⛔ blocked: J1880 correction recipe -> J1881 elected-Chief scope review; J1755 separate browser-delivery hold, due Thu 12 Nov (in 9 d)): J1868 preserved six original Ben notes in 07_Edit-Project/J1868_BEN_REVIEW_v03.json. Historical h35 master v03 cf1561c2...3099b and J1297 delivery stand; Ben requested changes, not approval. No replacement render or publication authorized. PR401 delivery reconciliation remains separate.
+- **008** · ⛔ **Edit + master** — blocked (25%, 1/4 J1880 preparation steps, with codex since Tue 3 Nov 18:54, ⛔ blocked: J1880 requires demonstrated moving_video_input to select safe native intervals and finalise exact recipe; J1881 still dependent; J1755 separate delivery hold, due Thu 12 Nov (in 9 d)): J1880 partial mapping/recipe in 07_Edit-Project/J1880_CORRECTION_RECIPE_PARTIAL.md. Master SHA verified; six stills inspected only. No motion/audio PASS, no notes resolved, no media changes.
 - **009** · 🔄 **Picture** — in progress (78%, 70/90 board rows rendered (12 code graphics + 57/57 tranche-1 Flow plates KEEP + 1 reuse; 20 tranche-2 wait ~12 Nov), with Gemini since Thu 15 Oct, ⏸ waiting: Chief tranche 1 PASS (J1192); tranche 2 (20 Quality rows, 5,180 expected) after the ~12 Nov AI Ultra renewal, due Sun 15 Nov (in 12 d)): J1192 tranche 1 complete (parked for Chief tranche 1 PASS): all 57/57 tranche-1 Flow v04 rows minted and KEEP (Part 01 12/12 + Part 02 10/10 + Part 03 7/7 + Part 04 13/13 + Part 05 15/15, including 8 UAT retakes; 26 Quality + 31 Fast = 3,170 cr used vs 7,354 expected / 7,585 cap; live Flow 18,550 -> 15,380 >= 3,000 buffer) + 12 £0 code graphics (J0342/J0383) + 1 reuse = 70/90 rows. Synced to NAS.
 
 ## Next steps (in order)
@@ -162,7 +166,7 @@ Private `ETynHpIYLeY`, publishAt Thu 12 Nov 2026 18:00 London. End screen saved:
 
 ### 008 · Why Did Franklin Fly a Kite in a Storm?
 
-`███████████████░░░░░` **75%**
+`████████████████░░░░` **78%**
 
 Airs **Thu 19 Nov** · ready for Ben's OK by **Sun 15 Nov** · ⛔ blocked
 
@@ -176,7 +180,7 @@ Master v03 historically passed Chief h35 and was delivered by J1297; Ben request
 - ✅ **Shorts scripts** — done: v02 (test B): two search-titled Shorts, 9 Oct
 - ✅ **Shorts voiceover** — done: locked 12 Oct (PR #296): Short 01 v01 (22.36 s), Short 02 v02 (22.42 s); both PASS vo_check + Claude listening
 - ⛔ **Picture** — blocked (100%, 112/112 board rows rendered (11 code graphics + 101/101 Flow plates KEEP), with Assembly capability chain since Fri 16 Oct, ⛔ blocked: J1880 maps three motion defects and diagram/text corrections; J1881 scopes production, due Sun 8 Nov (in 5 d)): Historical rough-v12 picture lock: Chief h22, HOS #180 comment 6533306017. Ben v03 change request 2026-11-03T16:08:33.439Z now requires scoped corrections. J1868 records evidence, not a new picture PASS.
-- ⛔ **Edit + master** — blocked (0%, with Assembly capability chain since Tue 3 Nov 18:54, ⛔ blocked: J1880 correction recipe -> J1881 elected-Chief scope review; J1755 separate browser-delivery hold, due Thu 12 Nov (in 9 d)): J1868 preserved six original Ben notes in 07_Edit-Project/J1868_BEN_REVIEW_v03.json. Historical h35 master v03 cf1561c2...3099b and J1297 delivery stand; Ben requested changes, not approval. No replacement render or publication authorized. PR401 delivery reconciliation remains separate.
+- ⛔ **Edit + master** — blocked (25%, 1/4 J1880 preparation steps, with codex since Tue 3 Nov 18:54, ⛔ blocked: J1880 requires demonstrated moving_video_input to select safe native intervals and finalise exact recipe; J1881 still dependent; J1755 separate delivery hold, due Thu 12 Nov (in 9 d)): J1880 partial mapping/recipe in 07_Edit-Project/J1880_CORRECTION_RECIPE_PARTIAL.md. Master SHA verified; six stills inspected only. No motion/audio PASS, no notes resolved, no media changes.
 - ⬜ **Thumbnails** — to do (with Grok, due Thu 12 Nov (in 9 d))
 - ⬜ **Ben's final OK** — to do (with Ben, due Sun 15 Nov (in 12 d)): Change request 2026-11-03T16:08:33.439Z; no Ben OK.
 - ⬜ **Scheduled** — to do (with Grok, due Mon 16 Nov (in 13 d))
