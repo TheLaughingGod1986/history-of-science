@@ -18,3 +18,9 @@ Codex, elected acting Chief. Reconciliation of existing approvals, not a new med
 Local and NAS `008_Lightning-Franklin/10_Shorts` contain no built MP4/MOV or export manifests. The locked v02 Test B pair and VO records exist. The old J0912 claim that 101 picture rows still await renewal is superseded by h22/h35. Reopened the existing J0912, retaining 1/3 progress and its single-Short scope: re-inventory on claim, build one locked HOS008 Short from approved existing media, no extra 007 Short, no generation or upload. Assembly chain: Cursor → Codex → Gemini, with no exclusive-worker hold. Return gates and media evidence to elected Chief; only a reviewer with verified media-input capability can assess motion/audio. No Short PASS granted here.
 
 No credits spent, media/NAS deletions, YouTube changes or new film approval. Old masters and failed cuts remain untouched.
+
+## Final verification and remaining delivery blocker
+
+`check_all.sh` ALL CHECKS PASS. Published HOS:008 is in Ready for OK with the J1297 ask and restored local file. However the published watch selection still selects the old PHONE registration: /api/watch returns 302, then the R2 media host returns HTTP 403. Browser playback is NOT verified and this task remains incomplete.
+
+Automatic approval review rejected the proposed new R2 watch-object upload because J1755 explicitly says no upload and the video payload/destination were not specifically authorised. No replacement upload occurred. Ben approval is required by that review before uploading this exact approved master to the existing studio R2 watch store under new ID hos-008-v03-j1755. Do not bypass the rejection via automatic upload or another route. Existing local restored UAT and NAS master remain readable. Next owner: elected Chief resumes J1755 after that scope approval, restores the watch object/registration, verifies an actual range read, then closes the reconciliation. No YouTube upload is authorised.
