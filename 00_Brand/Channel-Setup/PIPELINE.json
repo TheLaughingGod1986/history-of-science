@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-31",
-  "updated_by": "cursor (J1297)",
+  "updated": "2026-11-03",
+  "updated_by": "codex (J1868 UAT triage)",
   "board_url": "https://claude.ai/artifact/Hhk519dkbHMzeaZfp3efhc",
   "stages": [
     {
@@ -86,7 +86,7 @@
     "006 picture: Mon 12 Oct after 09:00 read the Flow balance and price P3:06 + Parts 04\u201305 (J0138), the Chief passes the prices (J0139), then Flow mints and the Part 04/05 roughs (J0140); picture by Sun 25 Oct, edit and thumbnails by Thu 29 Oct, Ben's final OK Sun 1 Nov.",
     "Mon 12 Oct: Flow credits refill (AI Ultra). J0138 reads the balance and re-prices 006 (P3:06, Parts 04\u201305), then 007, on Flow rates; the Chief passes before any mint (J0139).",
     "007 picture: plate boards priced (96 rows, 80 mints); spend starts after 006 and once the whole voiceover batch has passed.",
-    "008 edit: narration runs 9:14.8, over the 7\u20139 min window; the \u00a74 pause trim on the assembled film has to bring it in.",
+    "008: J1880 prepares corrections for six Ben v03 notes, then J1881 reviews scope and queues production/QA. J1755 separately holds browser delivery; no new watch or upload approval.",
     "Thu 29 Oct 18:05: 005 post-air jobs (Related on its Shorts, cards, end screen, pinned comment)."
   ],
   "credits": [
@@ -397,7 +397,7 @@
       "title": "Why Did Franklin Fly a Kite in a Storm?",
       "air": "2026-11-19",
       "ready_by": "2026-11-15",
-      "summary": "Long VO (9:14.8) + Shorts VO (v02 pair) locked. All 101/101 Flow rows of boards v03 minted and KEEP (J1191, 29 Oct: 15 Quality + 86 Fast = 2,320 cr vs 5,605 expected / 6,500 cap; live Flow 18,550 >= 3,000 buffer) + 11 \u00a30 code graphics (J0329) = 112/112 rows. Synced to NAS. Chief h35 PASS on master v03 (J1287). In HOS UAT for the normal watch: 008_Lightning-Franklin/hos_008_master_v03.mp4 sha256 cf1561c218bace7bc14ed3d625b0790a457027a90f392262f45ca7172723099b (393,139,693 bytes) and hos_008_master_v03_PHONE.mp4 sha256 2e4f94eb2f220fd2f4e17d1c404cc08591fb03d7341e9aac6c82cfebbbeb45c7 (115,314,504 bytes). Not uploaded.",
+      "summary": "Master v03 historically passed Chief h35 and was delivered by J1297; Ben requested six changes on 3 Nov 16:08Z. J1880 prepares the exact correction recipe, then J1881 scopes production and capable QA. All six notes unresolved; no new media approval. J1755 separately holds browser delivery repair. Planned 19 Nov, not uploaded; plan is not a public YouTube record.",
       "stages": {
         "topic": {
           "status": "done"
@@ -436,30 +436,37 @@
           "note": "locked 12 Oct (PR #296): Short 01 v01 (22.36 s), Short 02 v02 (22.42 s); both PASS vo_check + Claude listening"
         },
         "picture": {
-          "status": "doing",
+          "status": "blocked",
           "due": "2026-11-08",
-          "owner": "Gemini",
+          "owner": "Assembly capability chain",
           "since": "2026-10-16",
           "underway": false,
-          "note": "J1191 complete (parked for Chief picture PASS): all 101/101 Flow v03 rows minted and KEEP (6/6 priority overlay moving plates + Part 01 22/22 + Part 02 17/17 + Part 03 25/25 + Part 04 16/16 + Part 05 21/21; 15 Quality + 86 Fast = 2,320 cr used vs 5,605 expected / 6,500 cap; live Flow 20,870 -> 18,550 >= 3,000 buffer) + 11 \u00a30 code graphics (J0329). Synced to NAS.",
-          "waiting": "Chief picture PASS (J1191 + J0329)",
+          "note": "Historical rough-v12 picture lock: Chief h22, HOS #180 comment 6533306017. Ben v03 change request 2026-11-03T16:08:33.439Z now requires scoped corrections. J1868 records evidence, not a new picture PASS.",
+          "waiting": "J1880 maps three motion defects and diagram/text corrections; J1881 scopes production",
           "steps": [
             112,
             112
           ],
-          "steps_unit": "board rows rendered (11 code graphics + 101/101 Flow plates KEEP)"
+          "steps_unit": "board rows rendered (11 code graphics + 101/101 Flow plates KEEP)",
+          "jobs": [
+            "J1880",
+            "J1881"
+          ]
         },
         "edit": {
-          "status": "doing",
+          "status": "blocked",
           "due": "2026-11-12",
-          "owner": "Cursor",
-          "since": "2026-10-31T02:00",
+          "owner": "Assembly capability chain",
+          "since": "2026-11-03T18:54",
           "underway": false,
-          "waiting": "Ben watch (HOS UAT/008_Lightning-Franklin/hos_008_master_v03.mp4)",
-          "note": "Chief h35 PASS (J1287). Master v03 copied to HOS UAT/008_Lightning-Franklin/hos_008_master_v03.mp4, sha256 cf1561c218bace7bc14ed3d625b0790a457027a90f392262f45ca7172723099b, 393,139,693 bytes, 539.626 s, fully on disk. Phone copy hos_008_master_v03_PHONE.mp4 sha256 2e4f94eb2f220fd2f4e17d1c404cc08591fb03d7341e9aac6c82cfebbbeb45c7, 115,314,504 bytes. J1297. Not uploaded.",
+          "waiting": "J1880 correction recipe -> J1881 elected-Chief scope review; J1755 separate browser-delivery hold",
+          "note": "J1868 preserved six original Ben notes in 07_Edit-Project/J1868_BEN_REVIEW_v03.json. Historical h35 master v03 cf1561c2...3099b and J1297 delivery stand; Ben requested changes, not approval. No replacement render or publication authorized. PR401 delivery reconciliation remains separate.",
           "jobs": [
-            "J1287",
-            "J1297"
+            "J1297",
+            "J1755",
+            "J1868",
+            "J1880",
+            "J1881"
           ]
         },
         "thumbnails": {
@@ -468,7 +475,9 @@
         },
         "ben_ok": {
           "status": "todo",
-          "due": "2026-11-15"
+          "due": "2026-11-15",
+          "waiting": "Six v03 notes unresolved; corrected cut must pass gates and Chief review before renewed watch",
+          "note": "Change request 2026-11-03T16:08:33.439Z; no Ben OK."
         },
         "scheduled": {
           "status": "todo",
