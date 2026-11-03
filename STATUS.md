@@ -1,6 +1,6 @@
 # HOS status board
 
-**As of Thu 29 Oct 2026**, updated by gemini (J1192). Generated from `00_Brand/Channel-Setup/PIPELINE.json` by `00_Brand/Channel-Setup/tools/status_board.py`. Don't edit this file by hand.
+**As of Sat 31 Oct 2026**, updated by cursor (J1297). Generated from `00_Brand/Channel-Setup/PIPELINE.json` by `00_Brand/Channel-Setup/tools/status_board.py`. Don't edit this file by hand.
 
 **Kanban board (live):** https://claude.ai/artifact/Hhk519dkbHMzeaZfp3efhc — reads this same file from `main` every 5 minutes. The first time you open it, allow GitHub when it asks.
 
@@ -8,13 +8,13 @@
 
 | Film | Airs | Done | Now | With · underway? | Time left on it | Ready for Ben's OK | Health |
 |---|---|---:|---|---|---|---|---|
-| **004** What's Really Inside an Atom? | Thu 15 Oct (-14 d) | 95% | Thumbnails (in progress) | **Cursor** · ⏸ waiting: J0106: C v07b file (don't touch the armed test), then the Chief's OK | not estimated | Tue 29 Sep | 🟠 behind |
-| **005** The Tied Arm That Proved Your Blood Circulates | Thu 29 Oct (0 d) | 100% | all stages done | — | — | Fri 2 Oct | 🟢 on track |
-| **006** The Willow Tree That Was Made of Air | Thu 5 Nov (7 d) | 100% | all stages done | — | — | Sun 1 Nov (in 3 d) | 🟢 on track |
-| **007** Why Vaccines Are Named After a Cow | Thu 12 Nov (14 d) | 100% | all stages done | — | — | Sun 8 Nov (in 10 d) | 🟢 on track |
-| **008** Why Did Franklin Fly a Kite in a Storm? | Thu 19 Nov (21 d) | 75% | Picture (in progress) | **Gemini** · ⏸ waiting: Chief picture PASS (J1191 + J0329) | 112/112 board rows rendered (11 code graphics + 101/101 Flow plates KEEP) | Sun 15 Nov (in 17 d) | 🟢 on track |
-| **009** Why Doesn't the Moon Fall to Earth? | Thu 26 Nov (28 d) | 62% | Shorts voiceover (to do) | **Cursor** · queued (after 010 long VO) | starts later; due 21 d late | Sun 22 Nov (in 24 d) | 🟠 behind |
-| **010** What Killed the Dinosaurs Was Hidden in a Line of Clay | Thu 3 Dec (35 d) | 35% | Shorts voiceover (to do) | **Cursor** · queued (after 010 long VO) | starts later; due 21 d late | Sun 29 Nov (in 31 d) | 🟠 behind |
+| **004** What's Really Inside an Atom? | Thu 15 Oct (-16 d) | 95% | Thumbnails (in progress) | **Cursor** · ⏸ waiting: J0106: C v07b file (don't touch the armed test), then the Chief's OK | not estimated | Tue 29 Sep | 🟠 behind |
+| **005** The Tied Arm That Proved Your Blood Circulates | Thu 29 Oct (-2 d) | 100% | all stages done | — | — | Fri 2 Oct | 🟢 on track |
+| **006** The Willow Tree That Was Made of Air | Thu 5 Nov (5 d) | 100% | all stages done | — | — | Sun 1 Nov (tomorrow) | 🟢 on track |
+| **007** Why Vaccines Are Named After a Cow | Thu 12 Nov (12 d) | 100% | all stages done | — | — | Sun 8 Nov (in 8 d) | 🟢 on track |
+| **008** Why Did Franklin Fly a Kite in a Storm? | Thu 19 Nov (19 d) | 75% | Picture (in progress) | **Gemini** · ⏸ waiting: Chief picture PASS (J1191 + J0329) | 112/112 board rows rendered (11 code graphics + 101/101 Flow plates KEEP) | Sun 15 Nov (in 15 d) | 🟢 on track |
+| **009** Why Doesn't the Moon Fall to Earth? | Thu 26 Nov (26 d) | 62% | Shorts voiceover (to do) | **Cursor** · queued (after 010 long VO) | starts later; due 23 d late | Sun 22 Nov (in 22 d) | 🟠 behind |
+| **010** What Killed the Dinosaurs Was Hidden in a Line of Clay | Thu 3 Dec (33 d) | 35% | Shorts voiceover (to do) | **Cursor** · queued (after 010 long VO) | starts later; due 23 d late | Sun 29 Nov (in 29 d) | 🟠 behind |
 
 ## Who's on what
 
@@ -23,7 +23,7 @@
 
 **Grok**
 - ▶️ Underway: nothing right now
-- ⏭ Next up: 008 Edit + master, due Thu 12 Nov; 009 Edit + master, due Thu 19 Nov; 010 Edit + master, due Thu 26 Nov
+- ⏭ Next up: 008 Thumbnails, due Thu 12 Nov; 009 Edit + master, due Thu 19 Nov; 010 Edit + master, due Thu 26 Nov
 
 **Ben**
 - ▶️ Underway: nothing right now
@@ -31,7 +31,7 @@
 
 **Cursor**
 - ▶️ Underway: nothing right now
-- ⏸ Waiting: 004 Thumbnails: J0106: C v07b file (don't touch the armed test), then the Chief's OK
+- ⏸ Waiting: 004 Thumbnails: J0106: C v07b file (don't touch the armed test), then the Chief's OK; 008 Edit + master: Ben watch (HOS UAT/008_Lightning-Franklin/hos_008_master_v03.mp4)
 - ⏭ Next up: 009 Shorts voiceover, due Thu 8 Oct; 010 Shorts voiceover, due Thu 8 Oct
 
 **Chief**
@@ -43,9 +43,10 @@
 
 ## Being worked on right now
 
-- **004** · 🔄 **Thumbnails** — in progress (0%, with Cursor since Fri 9 Oct, ⏸ waiting: J0106: C v07b file (don't touch the armed test), then the Chief's OK, due Tue 13 Oct (16 d late)): A + B live in the armed test; C v07 armed but not OK'd. v07b re-letter (no spend) is J0106; Chief's OK by Wed 14 Oct 18:00, else pair 2 comes out
-- **008** · 🔄 **Picture** — in progress (100%, 112/112 board rows rendered (11 code graphics + 101/101 Flow plates KEEP), with Gemini since Fri 16 Oct, ⏸ waiting: Chief picture PASS (J1191 + J0329), due Sun 8 Nov (in 10 d)): J1191 complete (parked for Chief picture PASS): all 101/101 Flow v03 rows minted and KEEP (6/6 priority overlay moving plates + Part 01 22/22 + Part 02 17/17 + Part 03 25/25 + Part 04 16/16 + Part 05 21/21; 15 Quality + 86 Fast = 2,320 cr used vs 5,605 expected / 6,500 cap; live Flow 20,870 -> 18,550 >= 3,000 buffer) + 11 £0 code graphics (J0329). Synced to NAS.
-- **009** · 🔄 **Picture** — in progress (78%, 70/90 board rows rendered (12 code graphics + 57/57 tranche-1 Flow plates KEEP + 1 reuse; 20 tranche-2 wait ~12 Nov), with Gemini since Thu 15 Oct, ⏸ waiting: Chief tranche 1 PASS (J1192); tranche 2 (20 Quality rows, 5,180 expected) after the ~12 Nov AI Ultra renewal, due Sun 15 Nov (in 17 d)): J1192 tranche 1 complete (parked for Chief tranche 1 PASS): all 57/57 tranche-1 Flow v04 rows minted and KEEP (Part 01 12/12 + Part 02 10/10 + Part 03 7/7 + Part 04 13/13 + Part 05 15/15, including 8 UAT retakes; 26 Quality + 31 Fast = 3,170 cr used vs 7,354 expected / 7,585 cap; live Flow 18,550 -> 15,380 >= 3,000 buffer) + 12 £0 code graphics (J0342/J0383) + 1 reuse = 70/90 rows. Synced to NAS.
+- **004** · 🔄 **Thumbnails** — in progress (0%, with Cursor since Fri 9 Oct, ⏸ waiting: J0106: C v07b file (don't touch the armed test), then the Chief's OK, due Tue 13 Oct (18 d late)): A + B live in the armed test; C v07 armed but not OK'd. v07b re-letter (no spend) is J0106; Chief's OK by Wed 14 Oct 18:00, else pair 2 comes out
+- **008** · 🔄 **Picture** — in progress (100%, 112/112 board rows rendered (11 code graphics + 101/101 Flow plates KEEP), with Gemini since Fri 16 Oct, ⏸ waiting: Chief picture PASS (J1191 + J0329), due Sun 8 Nov (in 8 d)): J1191 complete (parked for Chief picture PASS): all 101/101 Flow v03 rows minted and KEEP (6/6 priority overlay moving plates + Part 01 22/22 + Part 02 17/17 + Part 03 25/25 + Part 04 16/16 + Part 05 21/21; 15 Quality + 86 Fast = 2,320 cr used vs 5,605 expected / 6,500 cap; live Flow 20,870 -> 18,550 >= 3,000 buffer) + 11 £0 code graphics (J0329). Synced to NAS.
+- **008** · 🔄 **Edit + master** — in progress (0%, with Cursor since Sat 31 Oct 02:00, ⏸ waiting: Ben watch (HOS UAT/008_Lightning-Franklin/hos_008_master_v03.mp4), due Thu 12 Nov (in 12 d)): Chief h35 PASS (J1287). Master v03 copied to HOS UAT/008_Lightning-Franklin/hos_008_master_v03.mp4, sha256 cf1561c218bace7bc14ed3d625b0790a457027a90f392262f45ca7172723099b, 393,139,693 bytes, 539.626 s, fully on disk. Phone copy hos_008_master_v03_PHONE.mp4 sha256 2e4f94eb2f220fd2f4e17d1c404cc08591fb03d7341e9aac6c82cfebbbeb45c7, 115,314,504 bytes. J1297. Not uploaded.
+- **009** · 🔄 **Picture** — in progress (78%, 70/90 board rows rendered (12 code graphics + 57/57 tranche-1 Flow plates KEEP + 1 reuse; 20 tranche-2 wait ~12 Nov), with Gemini since Thu 15 Oct, ⏸ waiting: Chief tranche 1 PASS (J1192); tranche 2 (20 Quality rows, 5,180 expected) after the ~12 Nov AI Ultra renewal, due Sun 15 Nov (in 15 d)): J1192 tranche 1 complete (parked for Chief tranche 1 PASS): all 57/57 tranche-1 Flow v04 rows minted and KEEP (Part 01 12/12 + Part 02 10/10 + Part 03 7/7 + Part 04 13/13 + Part 05 15/15, including 8 UAT retakes; 26 Quality + 31 Fast = 3,170 cr used vs 7,354 expected / 7,585 cap; live Flow 18,550 -> 15,380 >= 3,000 buffer) + 12 £0 code graphics (J0342/J0383) + 1 reuse = 70/90 rows. Synced to NAS.
 
 ## Next steps (in order)
 
@@ -88,7 +89,7 @@ Finished and scheduled: long `GHZDsiH7L7A` airs Thu 15 Oct 18:00 (Premiere off).
 - ✅ **Shorts voiceover** — done
 - ✅ **Picture** — done
 - ✅ **Edit + master** — done: master v02
-- 🔄 **Thumbnails** — in progress (0%, with Cursor since Fri 9 Oct, ⏸ waiting: J0106: C v07b file (don't touch the armed test), then the Chief's OK, due Tue 13 Oct (16 d late)): A + B live in the armed test; C v07 armed but not OK'd. v07b re-letter (no spend) is J0106; Chief's OK by Wed 14 Oct 18:00, else pair 2 comes out
+- 🔄 **Thumbnails** — in progress (0%, with Cursor since Fri 9 Oct, ⏸ waiting: J0106: C v07b file (don't touch the armed test), then the Chief's OK, due Tue 13 Oct (18 d late)): A + B live in the armed test; C v07 armed but not OK'd. v07b re-letter (no spend) is J0106; Chief's OK by Wed 14 Oct 18:00, else pair 2 comes out
 - ✅ **Ben's final OK** — done: long OK'd before upload (29 Sep); thumb C is the Chief's call now
 - ✅ **Scheduled** — done: Thu 15 Oct 18:00; pin + Related at 18:05
 
@@ -161,7 +162,7 @@ Private `ETynHpIYLeY`, publishAt Thu 12 Nov 2026 18:00 London. End screen saved:
 
 Airs **Thu 19 Nov** · ready for Ben's OK by **Sun 15 Nov** · 🟢 on track
 
-Long VO (9:14.8) + Shorts VO (v02 pair) locked. All 101/101 Flow rows of boards v03 minted and KEEP (J1191, 29 Oct: 15 Quality + 86 Fast = 2,320 cr vs 5,605 expected / 6,500 cap; live Flow 18,550 >= 3,000 buffer) + 11 £0 code graphics (J0329) = 112/112 rows. Synced to NAS. Parked for Chief picture PASS.
+Long VO (9:14.8) + Shorts VO (v02 pair) locked. All 101/101 Flow rows of boards v03 minted and KEEP (J1191, 29 Oct: 15 Quality + 86 Fast = 2,320 cr vs 5,605 expected / 6,500 cap; live Flow 18,550 >= 3,000 buffer) + 11 £0 code graphics (J0329) = 112/112 rows. Synced to NAS. Chief h35 PASS on master v03 (J1287). In HOS UAT for the normal watch: 008_Lightning-Franklin/hos_008_master_v03.mp4 sha256 cf1561c218bace7bc14ed3d625b0790a457027a90f392262f45ca7172723099b (393,139,693 bytes) and hos_008_master_v03_PHONE.mp4 sha256 2e4f94eb2f220fd2f4e17d1c404cc08591fb03d7341e9aac6c82cfebbbeb45c7 (115,314,504 bytes). Not uploaded.
 
 - ✅ **Topic** — done
 - ✅ **Script** — done: v01, 92.1
@@ -170,11 +171,11 @@ Long VO (9:14.8) + Shorts VO (v02 pair) locked. All 101/101 Flow rows of boards 
 - ✅ **Voiceover (long)** — done: long VO locked 7 Oct: 5 parts, 555 s (9:14.8), 7,497 chars; Part 01 pause trimmed, Part 05 one sentence re-recorded; Claude PASS each part (VO_TAKES_KEEP.json)
 - ✅ **Shorts scripts** — done: v02 (test B): two search-titled Shorts, 9 Oct
 - ✅ **Shorts voiceover** — done: locked 12 Oct (PR #296): Short 01 v01 (22.36 s), Short 02 v02 (22.42 s); both PASS vo_check + Claude listening
-- 🔄 **Picture** — in progress (100%, 112/112 board rows rendered (11 code graphics + 101/101 Flow plates KEEP), with Gemini since Fri 16 Oct, ⏸ waiting: Chief picture PASS (J1191 + J0329), due Sun 8 Nov (in 10 d)): J1191 complete (parked for Chief picture PASS): all 101/101 Flow v03 rows minted and KEEP (6/6 priority overlay moving plates + Part 01 22/22 + Part 02 17/17 + Part 03 25/25 + Part 04 16/16 + Part 05 21/21; 15 Quality + 86 Fast = 2,320 cr used vs 5,605 expected / 6,500 cap; live Flow 20,870 -> 18,550 >= 3,000 buffer) + 11 £0 code graphics (J0329). Synced to NAS.
-- ⬜ **Edit + master** — to do (with Grok, due Thu 12 Nov (in 14 d))
-- ⬜ **Thumbnails** — to do (with Grok, due Thu 12 Nov (in 14 d))
-- ⬜ **Ben's final OK** — to do (with Ben, due Sun 15 Nov (in 17 d))
-- ⬜ **Scheduled** — to do (with Grok, due Mon 16 Nov (in 18 d))
+- 🔄 **Picture** — in progress (100%, 112/112 board rows rendered (11 code graphics + 101/101 Flow plates KEEP), with Gemini since Fri 16 Oct, ⏸ waiting: Chief picture PASS (J1191 + J0329), due Sun 8 Nov (in 8 d)): J1191 complete (parked for Chief picture PASS): all 101/101 Flow v03 rows minted and KEEP (6/6 priority overlay moving plates + Part 01 22/22 + Part 02 17/17 + Part 03 25/25 + Part 04 16/16 + Part 05 21/21; 15 Quality + 86 Fast = 2,320 cr used vs 5,605 expected / 6,500 cap; live Flow 20,870 -> 18,550 >= 3,000 buffer) + 11 £0 code graphics (J0329). Synced to NAS.
+- 🔄 **Edit + master** — in progress (0%, with Cursor since Sat 31 Oct 02:00, ⏸ waiting: Ben watch (HOS UAT/008_Lightning-Franklin/hos_008_master_v03.mp4), due Thu 12 Nov (in 12 d)): Chief h35 PASS (J1287). Master v03 copied to HOS UAT/008_Lightning-Franklin/hos_008_master_v03.mp4, sha256 cf1561c218bace7bc14ed3d625b0790a457027a90f392262f45ca7172723099b, 393,139,693 bytes, 539.626 s, fully on disk. Phone copy hos_008_master_v03_PHONE.mp4 sha256 2e4f94eb2f220fd2f4e17d1c404cc08591fb03d7341e9aac6c82cfebbbeb45c7, 115,314,504 bytes. J1297. Not uploaded.
+- ⬜ **Thumbnails** — to do (with Grok, due Thu 12 Nov (in 12 d))
+- ⬜ **Ben's final OK** — to do (with Ben, due Sun 15 Nov (in 15 d))
+- ⬜ **Scheduled** — to do (with Grok, due Mon 16 Nov (in 16 d))
 
 ### 009 · Why Doesn't the Moon Fall to Earth?
 
@@ -190,12 +191,12 @@ Long VO v01 locked (Chief KEEP, desk 6101629662). Plate boards v04 KEEP (Chief P
 - ✅ **Audit + upload package** — done
 - ✅ **Voiceover (long)** — done: long VO locked 11 Oct: 5 parts v01, 508 s speech; Chief KEEP all five, no pickups (VO_TAKES_KEEP.json, desk 6101629662)
 - ✅ **Shorts scripts** — done: v02 (test B): two search-titled Shorts, 9 Oct
-- ⬜ **Shorts voiceover** — to do (with Cursor, due Thu 8 Oct (21 d late))
-- 🔄 **Picture** — in progress (78%, 70/90 board rows rendered (12 code graphics + 57/57 tranche-1 Flow plates KEEP + 1 reuse; 20 tranche-2 wait ~12 Nov), with Gemini since Thu 15 Oct, ⏸ waiting: Chief tranche 1 PASS (J1192); tranche 2 (20 Quality rows, 5,180 expected) after the ~12 Nov AI Ultra renewal, due Sun 15 Nov (in 17 d)): J1192 tranche 1 complete (parked for Chief tranche 1 PASS): all 57/57 tranche-1 Flow v04 rows minted and KEEP (Part 01 12/12 + Part 02 10/10 + Part 03 7/7 + Part 04 13/13 + Part 05 15/15, including 8 UAT retakes; 26 Quality + 31 Fast = 3,170 cr used vs 7,354 expected / 7,585 cap; live Flow 18,550 -> 15,380 >= 3,000 buffer) + 12 £0 code graphics (J0342/J0383) + 1 reuse = 70/90 rows. Synced to NAS.
-- ⬜ **Edit + master** — to do (with Grok, due Thu 19 Nov (in 21 d))
-- ⬜ **Thumbnails** — to do (with Grok, due Thu 19 Nov (in 21 d))
-- ⬜ **Ben's final OK** — to do (with Ben, due Sun 22 Nov (in 24 d))
-- ⬜ **Scheduled** — to do (with Grok, due Mon 23 Nov (in 25 d))
+- ⬜ **Shorts voiceover** — to do (with Cursor, due Thu 8 Oct (23 d late))
+- 🔄 **Picture** — in progress (78%, 70/90 board rows rendered (12 code graphics + 57/57 tranche-1 Flow plates KEEP + 1 reuse; 20 tranche-2 wait ~12 Nov), with Gemini since Thu 15 Oct, ⏸ waiting: Chief tranche 1 PASS (J1192); tranche 2 (20 Quality rows, 5,180 expected) after the ~12 Nov AI Ultra renewal, due Sun 15 Nov (in 15 d)): J1192 tranche 1 complete (parked for Chief tranche 1 PASS): all 57/57 tranche-1 Flow v04 rows minted and KEEP (Part 01 12/12 + Part 02 10/10 + Part 03 7/7 + Part 04 13/13 + Part 05 15/15, including 8 UAT retakes; 26 Quality + 31 Fast = 3,170 cr used vs 7,354 expected / 7,585 cap; live Flow 18,550 -> 15,380 >= 3,000 buffer) + 12 £0 code graphics (J0342/J0383) + 1 reuse = 70/90 rows. Synced to NAS.
+- ⬜ **Edit + master** — to do (with Grok, due Thu 19 Nov (in 19 d))
+- ⬜ **Thumbnails** — to do (with Grok, due Thu 19 Nov (in 19 d))
+- ⬜ **Ben's final OK** — to do (with Ben, due Sun 22 Nov (in 22 d))
+- ⬜ **Scheduled** — to do (with Grok, due Mon 23 Nov (in 23 d))
 
 ### 010 · What Killed the Dinosaurs Was Hidden in a Line of Clay
 
@@ -211,12 +212,12 @@ Long VO v01 locked (5 parts); Chief KEEP all five, no pickups (desk 6101773293).
 - ✅ **Audit + upload package** — done
 - ✅ **Voiceover (long)** — done: long VO locked 11 Oct: 5 parts v01, 500 s speech; Chief KEEP all five, no pickups (VO_TAKES_KEEP.json, desk 6101773293)
 - ✅ **Shorts scripts** — done: v02 (test B): two search-titled Shorts, 9 Oct
-- ⬜ **Shorts voiceover** — to do (with Cursor, due Thu 8 Oct (21 d late))
-- ⬜ **Picture** — to do (with Cursor, due Sun 22 Nov (in 24 d)): shot list v01 ready (07_Edit-Project/SHOT_LIST_v01.md, about 55 plates; period details P1–P8 all confirmed (J0860, 22 Oct; sources in FACT_NOTES_v01)); plates start after the whole VO batch passes
-- ⬜ **Edit + master** — to do (with Grok, due Thu 26 Nov (in 28 d))
-- ⬜ **Thumbnails** — to do (with Grok, due Thu 26 Nov (in 28 d))
-- ⬜ **Ben's final OK** — to do (with Ben, due Sun 29 Nov (in 31 d))
-- ⬜ **Scheduled** — to do (with Grok, due Mon 30 Nov (in 32 d))
+- ⬜ **Shorts voiceover** — to do (with Cursor, due Thu 8 Oct (23 d late))
+- ⬜ **Picture** — to do (with Cursor, due Sun 22 Nov (in 22 d)): shot list v01 ready (07_Edit-Project/SHOT_LIST_v01.md, about 55 plates; period details P1–P8 all confirmed (J0860, 22 Oct; sources in FACT_NOTES_v01)); plates start after the whole VO batch passes
+- ⬜ **Edit + master** — to do (with Grok, due Thu 26 Nov (in 26 d))
+- ⬜ **Thumbnails** — to do (with Grok, due Thu 26 Nov (in 26 d))
+- ⬜ **Ben's final OK** — to do (with Ben, due Sun 29 Nov (in 29 d))
+- ⬜ **Scheduled** — to do (with Grok, due Mon 30 Nov (in 30 d))
 
 ## How the % works
 
