@@ -143,3 +143,23 @@ WARN: kind of picture: no title in the pool, so nobody can tell what it is
 ```
 
 J1267 remains held at 2/6; only Chief acceptance can resume it. No master splice, stage approval, spend, music, upload or Ben watch. Delivery code now uses verified copies and refuses conflicts instead of deleting folders.
+
+
+## 3 November 2026 — J1868 Franklin v03 UAT triage (Codex acting Chief)
+
+Live review confirmed six original notes at 2026-11-03T16:08:33.439Z. Exact notes and correction criteria: `07_Edit-Project/J1868_UAT_CORRECTIONS.md`; original JSON preserved beside it. J1880 owns no-spend source mapping and edit recipe; J1881 follows J1880 to review and scope correction assembly/media QA. Six notes remain unresolved. Historical h22/h35 approvals are retained, with no invented completion of undocumented stages. J1755 and open PR401 remain separate delivery work; its automatic-publication rejection stays intact. No media, credit, upload, scheduling or YouTube changes.
+
+Repository validation (record-only; not corrected-media approval):
+
+```text
+-- durable desk handoffs: PASS
+-- no media: PASS
+-- status board in sync: PASS
+-- ElevenLabs guard tests: PASS
+-- vo_check word tests: PASS
+-- contract tests: PASS
+-- package-lint: PASS
+-- review:script lightning_script_master_v01.md: PASS
+-- gate:episode: PASS
+ALL CHECKS PASS
+```
