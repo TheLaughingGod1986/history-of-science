@@ -439,11 +439,11 @@
         "picture": {
           "status": "blocked",
           "due": "2026-11-08",
-          "owner": "Assembly capability chain",
+          "owner": "gemini",
           "since": "2026-10-16",
           "underway": false,
-          "note": "Historical rough-v12 picture lock: Chief h22, HOS #180 comment 6533306017. Ben v03 change request 2026-11-03T16:08:33.439Z now requires scoped corrections. J1868 records evidence, not a new picture PASS.",
-          "waiting": "J1880 maps three motion defects and diagram/text corrections; J1881 scopes production",
+          "note": "Historical rough-v12 picture lock: Chief h22, HOS #180 comment 6533306017. Ben v03 change request 2026-11-03T16:08:33.439Z now requires scoped corrections. J1880 mapped all six notes and candidate windows in 07_Edit-Project/J1880_SOURCE_INVENTORY_v04.json (GBP0, no new picture PASS).",
+          "waiting": "J1881 elected-Chief scope review of J1880 Option A (GBP0 native) vs Option B (bounded Flow retakes for P2:02_salon_spark and P5:13_rods_spread)",
           "steps": [
             112,
             112
@@ -457,11 +457,11 @@
         "edit": {
           "status": "blocked",
           "due": "2026-11-12",
-          "owner": "Assembly capability chain",
+          "owner": "gemini",
           "since": "2026-11-03T18:54",
           "underway": false,
-          "waiting": "J1880 correction recipe -> J1881 elected-Chief scope review; J1755 separate browser-delivery hold",
-          "note": "J1868 preserved six original Ben notes in 07_Edit-Project/J1868_BEN_REVIEW_v03.json. Historical h35 master v03 cf1561c2...3099b and J1297 delivery stand; Ben requested changes, not approval. No replacement render or publication authorized. PR401 delivery reconciliation remains separate.",
+          "waiting": "J1881 elected-Chief scope review of J1880 recipe (_build_rough_v13_recipe.py + J1880_SOURCE_INVENTORY_v04.json); J1755 separate browser-delivery hold",
+          "note": "J1880 delivered exact rough_v13 -> master_v04 recipe (_build_rough_v13_recipe.py, 0-frame delta, 12923 packets, h35 0.000 ms VO sync) and six acceptance checks in 07_Edit-Project/J1868_UAT_CORRECTIONS.md + J1880_SOURCE_INVENTORY_v04.json (GBP0, 0 media changed). All six Ben notes remain unresolved; historical h35 master v03 cf1561c2...3099b and J1297 delivery stand; J1755/PR401 remain separate.",
           "jobs": [
             "J1297",
             "J1755",
