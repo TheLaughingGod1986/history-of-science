@@ -1,6 +1,6 @@
 {
   "updated": "2026-11-04",
-  "updated_by": "codex (J2026 bounded HOS009 picture continuation)",
+  "updated_by": "codex",
   "board_url": "https://claude.ai/artifact/Hhk519dkbHMzeaZfp3efhc",
   "stages": [
     {
@@ -86,7 +86,7 @@
     "006 picture: Mon 12 Oct after 09:00 read the Flow balance and price P3:06 + Parts 04\u201305 (J0138), the Chief passes the prices (J0139), then Flow mints and the Part 04/05 roughs (J0140); picture by Sun 25 Oct, edit and thumbnails by Thu 29 Oct, Ben's final OK Sun 1 Nov.",
     "Mon 12 Oct: Flow credits refill (AI Ultra). J0138 reads the balance and re-prices 006 (P3:06, Parts 04\u201305), then 007, on Flow rates; the Chief passes before any mint (J0139).",
     "007 picture: plate boards priced (96 rows, 80 mints); spend starts after 006 and once the whole voiceover batch has passed.",
-    "008: J1880 prepares corrections for six Ben v03 notes, then J1881 reviews scope and queues production/QA. J1755 separately holds browser delivery; no new watch or upload approval.",
+    "008: J2163 repairs the unsafe correction recipe; J1881 held at 2/3 pending repaired input, then Chief scopes production and capable QA. Six notes unresolved; J1755 delivery hold separate.",
     "Thu 29 Oct 18:05: 005 post-air jobs (Related on its Shorts, cards, end screen, pinned comment).",
     "009: J2033 remaining20 Quality rows now under J2026 bounded cap6000 (live15430;floor3000); J2034 picture review -> J2035 edit -> J2036 package QA/J1275 chapters -> J2037 Ben watch. Long VO locked; J0862 separate. No pickup claimed yet."
   ],
@@ -398,7 +398,7 @@
       "title": "Why Did Franklin Fly a Kite in a Storm?",
       "air": "2026-11-19",
       "ready_by": "2026-11-15",
-      "summary": "Master v03 historically passed Chief h35 and was delivered by J1297; Ben requested six changes on 3 Nov 16:08Z. J1880 prepares the exact correction recipe, then J1881 scopes production and capable QA. All six notes unresolved; no new media approval. J1755 separately holds browser delivery repair. Planned 19 Nov, not uploaded; plan is not a public YouTube record.",
+      "summary": "J1881 reviewed Franklin six-note recipe: FIX. J2163 repairs PTS preservation, verification and teaching labels before Chief can scope production. All six notes unresolved; J1755 browser delivery hold separate. No new media approved.",
       "stages": {
         "topic": {
           "status": "done"
@@ -439,11 +439,11 @@
         "picture": {
           "status": "blocked",
           "due": "2026-11-08",
-          "owner": "Assembly capability chain",
+          "owner": "codex",
           "since": "2026-10-16",
           "underway": false,
-          "note": "Historical rough-v12 picture lock: Chief h22, HOS #180 comment 6533306017. Ben v03 change request 2026-11-03T16:08:33.439Z now requires scoped corrections. J1868 records evidence, not a new picture PASS.",
-          "waiting": "J1880 maps three motion defects and diagram/text corrections; J1881 scopes production",
+          "note": "J1881_SCOPE_REVIEW.md: recipe FIX, future sync unmeasured; h22/h35 and v03 cf1561c2 preserved. No new media approval; all six Ben notes unresolved.",
+          "waiting": "J2163 recipe repair, then J1881 Chief production scope; J1755 separate delivery hold",
           "steps": [
             112,
             112
@@ -451,23 +451,25 @@
           "steps_unit": "board rows rendered (11 code graphics + 101/101 Flow plates KEEP)",
           "jobs": [
             "J1880",
-            "J1881"
+            "J1881",
+            "J2163"
           ]
         },
         "edit": {
           "status": "blocked",
           "due": "2026-11-12",
-          "owner": "Assembly capability chain",
+          "owner": "codex",
           "since": "2026-11-03T18:54",
           "underway": false,
-          "waiting": "J1880 correction recipe -> J1881 elected-Chief scope review; J1755 separate browser-delivery hold",
-          "note": "J1868 preserved six original Ben notes in 07_Edit-Project/J1868_BEN_REVIEW_v03.json. Historical h35 master v03 cf1561c2...3099b and J1297 delivery stand; Ben requested changes, not approval. No replacement render or publication authorized. PR401 delivery reconciliation remains separate.",
+          "waiting": "J2163 recipe repair, then J1881 Chief production scope; J1755 separate delivery hold",
+          "note": "J1881_SCOPE_REVIEW.md: recipe FIX, future sync unmeasured; h22/h35 and v03 cf1561c2 preserved. No new media approval; all six Ben notes unresolved.",
           "jobs": [
             "J1297",
             "J1755",
             "J1868",
             "J1880",
-            "J1881"
+            "J1881",
+            "J2163"
           ]
         },
         "thumbnails": {
