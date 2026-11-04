@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-03",
-  "updated_by": "codex (J1868 UAT triage)",
+  "updated": "2026-11-04",
+  "updated_by": "codex (J2026 bounded HOS009 picture continuation)",
   "board_url": "https://claude.ai/artifact/Hhk519dkbHMzeaZfp3efhc",
   "stages": [
     {
@@ -87,7 +87,8 @@
     "Mon 12 Oct: Flow credits refill (AI Ultra). J0138 reads the balance and re-prices 006 (P3:06, Parts 04\u201305), then 007, on Flow rates; the Chief passes before any mint (J0139).",
     "007 picture: plate boards priced (96 rows, 80 mints); spend starts after 006 and once the whole voiceover batch has passed.",
     "008: J1880 prepares corrections for six Ben v03 notes, then J1881 reviews scope and queues production/QA. J1755 separately holds browser delivery; no new watch or upload approval.",
-    "Thu 29 Oct 18:05: 005 post-air jobs (Related on its Shorts, cards, end screen, pinned comment)."
+    "Thu 29 Oct 18:05: 005 post-air jobs (Related on its Shorts, cards, end screen, pinned comment).",
+    "009: J2033 remaining20 Quality rows now under J2026 bounded cap6000 (live15430;floor3000); J2034 picture review -> J2035 edit -> J2036 package QA/J1275 chapters -> J2037 Ben watch. Long VO locked; J0862 separate. No pickup claimed yet."
   ],
   "credits": [
     {
@@ -490,7 +491,7 @@
       "title": "Why Doesn't the Moon Fall to Earth?",
       "air": "2026-11-26",
       "ready_by": "2026-11-22",
-      "summary": "Long VO v01 locked (Chief KEEP, desk 6101629662). Plate boards v04 KEEP (Chief PASS 15 Oct, J0335): 90 rows, 46 Quality / 31 Fast / 12 \u00a30 code graphics / 1 reuse. Tranche 1 complete: all 57/57 Flow rows (26 Quality + 31 Fast) minted and KEEP (J1192, 29 Oct: 3,170 cr vs 7,354 expected / 7,585 cap; live Flow 15,380 >= 3,000 buffer) + 12 \u00a30 code graphics (J0342/J0383) + 1 reuse = 70/90 rows. Synced to NAS. Parked for Chief tranche 1 PASS; tranche 2 (20 Quality rows, 5,180 expected) waits for ~12 Nov renewal.",
+      "summary": "J1237 tranche1 Chief PASS retained: 57 Flow +12 code graphics +1 reuse =70/90 recorded rows; 20 Quality rows remain. J2026 authorizes bounded tranche2 now (live15430;100/take;cap6000;floor3000), replacing renewal-only wait. J2033 generation -> J2034 picture review -> J2035 edit -> J2036 package QA -> J2037 Ben finished-film watch. Long VO locked; Shorts J0862 separate. No new milestone completion.",
       "stages": {
         "topic": {
           "status": "done"
@@ -500,7 +501,8 @@
           "note": "v01, 91.3"
         },
         "facts": {
-          "status": "done"
+          "status": "done",
+          "note": "Existing done retained, not newly verified by J2026. production-status FACT_NOTES hard-checks7/7 but historical Claude signature marked UNSIGNED; final QA reconciles source evidence without inventing a new sign-off."
         },
         "package": {
           "status": "done"
@@ -530,20 +532,23 @@
         "picture": {
           "status": "doing",
           "due": "2026-11-15",
-          "owner": "Gemini",
-          "note": "J1192 tranche 1 complete (parked for Chief tranche 1 PASS): all 57/57 tranche-1 Flow v04 rows minted and KEEP (Part 01 12/12 + Part 02 10/10 + Part 03 7/7 + Part 04 13/13 + Part 05 15/15, including 8 UAT retakes; 26 Quality + 31 Fast = 3,170 cr used vs 7,354 expected / 7,585 cap; live Flow 18,550 -> 15,380 >= 3,000 buffer) + 12 \u00a30 code graphics (J0342/J0383) + 1 reuse = 70/90 rows. Synced to NAS.",
+          "owner": "Cursor (J2033; Codex/Gemini fallback)",
+          "note": "J1237 tranche1 PASS; all57 original Flow hashes reverified local/NAS. 70/90 recorded rows unchanged. J2033 owns remaining20 Quality rows under J2026 cap6000/max3 takes each/floor3000; J2034 independent picture review. Generated is not approved.",
           "since": "2026-10-15",
           "underway": false,
-          "waiting": "Chief tranche 1 PASS (J1192); tranche 2 (20 Quality rows, 5,180 expected) after the ~12 Nov AI Ultra renewal",
+          "waiting": "J2033 ready after J2026 handoff completes; worker not yet claimed. Fresh Flow credit/price/writer-lock gate before generation.",
           "steps": [
             70,
             90
           ],
-          "steps_unit": "board rows rendered (12 code graphics + 57/57 tranche-1 Flow plates KEEP + 1 reuse; 20 tranche-2 wait ~12 Nov)"
+          "steps_unit": "board rows recorded: 57 accepted Flow +12 code graphics +1 reuse; 20 Quality remain"
         },
         "edit": {
           "status": "todo",
-          "due": "2026-11-19"
+          "due": "2026-11-19",
+          "owner": "Cursor (J2035; Codex/Gemini fallback)",
+          "waiting": "J2034 full picture approval, then J2035 versioned no-new-spend edit; J2036 gates/package and J1275 chapters; J2037 Chief watch handoff",
+          "underway": false
         },
         "thumbnails": {
           "status": "todo",

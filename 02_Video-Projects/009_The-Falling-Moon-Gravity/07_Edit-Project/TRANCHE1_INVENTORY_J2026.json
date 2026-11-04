@@ -1,0 +1,401 @@
+[
+  {
+    "id": "P01:01_moon_falling",
+    "local": true,
+    "nas": true,
+    "local_hash_ok": true,
+    "nas_hash_ok": true
+  },
+  {
+    "id": "P01:02_apple_and_moon",
+    "local": true,
+    "nas": true,
+    "local_hash_ok": true,
+    "nas_hash_ok": true
+  },
+  {
+    "id": "P01:03_table_three",
+    "local": true,
+    "nas": true,
+    "local_hash_ok": true,
+    "nas_hash_ok": true
+  },
+  {
+    "id": "P01:03_table_three_c1",
+    "local": true,
+    "nas": true,
+    "local_hash_ok": true,
+    "nas_hash_ok": true
+  },
+  {
+    "id": "P01:03_table_three_c2",
+    "local": true,
+    "nas": true,
+    "local_hash_ok": true,
+    "nas_hash_ok": true
+  },
+  {
+    "id": "P01:04_things_fall",
+    "local": true,
+    "nas": true,
+    "local_hash_ok": true,
+    "nas_hash_ok": true
+  },
+  {
+    "id": "P01:05_heavens_map",
+    "local": true,
+    "nas": true,
+    "local_hash_ok": true,
+    "nas_hash_ok": true
+  },
+  {
+    "id": "P01:06_perfect_circles",
+    "local": true,
+    "nas": true,
+    "local_hash_ok": true,
+    "nas_hash_ok": true
+  },
+  {
+    "id": "P01:07_night_field",
+    "local": true,
+    "nas": true,
+    "local_hash_ok": true,
+    "nas_hash_ok": true
+  },
+  {
+    "id": "P01:08_cold_ground",
+    "local": true,
+    "nas": true,
+    "local_hash_ok": true,
+    "nas_hash_ok": true
+  },
+  {
+    "id": "P01:09_stone_and_moon",
+    "local": true,
+    "nas": true,
+    "local_hash_ok": true,
+    "nas_hash_ok": true
+  },
+  {
+    "id": "P01:10_farmhouse_dawn",
+    "local": true,
+    "nas": true,
+    "local_hash_ok": true,
+    "nas_hash_ok": true
+  },
+  {
+    "id": "P02:01_cambridge_closes",
+    "local": true,
+    "nas": true,
+    "local_hash_ok": true,
+    "nas_hash_ok": true
+  },
+  {
+    "id": "P02:02_newton_arrives",
+    "local": true,
+    "nas": true,
+    "local_hash_ok": true,
+    "nas_hash_ok": true
+  },
+  {
+    "id": "P02:03_christmas_birth",
+    "local": true,
+    "nas": true,
+    "local_hash_ok": true,
+    "nas_hash_ok": true
+  },
+  {
+    "id": "P02:04_quart_pot",
+    "local": true,
+    "nas": true,
+    "local_hash_ok": true,
+    "nas_hash_ok": true
+  },
+  {
+    "id": "P02:05_working_alone",
+    "local": true,
+    "nas": true,
+    "local_hash_ok": true,
+    "nas_hash_ok": true
+  },
+  {
+    "id": "P02:06_old_newton_tells",
+    "local": true,
+    "nas": true,
+    "local_hash_ok": true,
+    "nas_hash_ok": true
+  },
+  {
+    "id": "P02:07_orchard_bench",
+    "local": true,
+    "nas": true,
+    "local_hash_ok": true,
+    "nas_hash_ok": true
+  },
+  {
+    "id": "P02:08_the_apple",
+    "local": true,
+    "nas": true,
+    "local_hash_ok": true,
+    "nas_hash_ok": true
+  },
+  {
+    "id": "P02:11_explorer_apple",
+    "local": true,
+    "nas": true,
+    "local_hash_ok": true,
+    "nas_hash_ok": true
+  },
+  {
+    "id": "P02:12_still_up_there",
+    "local": true,
+    "nas": true,
+    "local_hash_ok": true,
+    "nas_hash_ok": true
+  },
+  {
+    "id": "P03:01_really_falling",
+    "local": true,
+    "nas": true,
+    "local_hash_ok": true,
+    "nas_hash_ok": true
+  },
+  {
+    "id": "P03:02_cannon_world",
+    "local": true,
+    "nas": true,
+    "local_hash_ok": true,
+    "nas_hash_ok": true
+  },
+  {
+    "id": "P03:03_shot_slow",
+    "local": true,
+    "nas": true,
+    "local_hash_ok": true,
+    "nas_hash_ok": true
+  },
+  {
+    "id": "P03:04_shot_faster",
+    "local": true,
+    "nas": true,
+    "local_hash_ok": true,
+    "nas_hash_ok": true
+  },
+  {
+    "id": "P03:05_shot_orbit",
+    "local": true,
+    "nas": true,
+    "local_hash_ok": true,
+    "nas_hash_ok": true
+  },
+  {
+    "id": "P03:09_can_he_calculate",
+    "local": true,
+    "nas": true,
+    "local_hash_ok": true,
+    "nas_hash_ok": true
+  },
+  {
+    "id": "P03:09_can_he_calculate_c1",
+    "local": true,
+    "nas": true,
+    "local_hash_ok": true,
+    "nas_hash_ok": true
+  },
+  {
+    "id": "P04:02_spray_paint",
+    "local": true,
+    "nas": true,
+    "local_hash_ok": true,
+    "nas_hash_ok": true
+  },
+  {
+    "id": "P04:02_spray_paint_c1",
+    "local": true,
+    "nas": true,
+    "local_hash_ok": true,
+    "nas_hash_ok": true
+  },
+  {
+    "id": "P04:02_spray_paint_c2",
+    "local": true,
+    "nas": true,
+    "local_hash_ok": true,
+    "nas_hash_ok": true
+  },
+  {
+    "id": "P04:05_minute_second",
+    "local": true,
+    "nas": true,
+    "local_hash_ok": true,
+    "nas_hash_ok": true
+  },
+  {
+    "id": "P04:06_pretty_nearly",
+    "local": true,
+    "nas": true,
+    "local_hash_ok": true,
+    "nas_hash_ok": true
+  },
+  {
+    "id": "P04:06_pretty_nearly_c1",
+    "local": true,
+    "nas": true,
+    "local_hash_ok": true,
+    "nas_hash_ok": true
+  },
+  {
+    "id": "P04:07_put_aside",
+    "local": true,
+    "nas": true,
+    "local_hash_ok": true,
+    "nas_hash_ok": true
+  },
+  {
+    "id": "P04:08_halley_visit",
+    "local": true,
+    "nas": true,
+    "local_hash_ok": true,
+    "nas_hash_ok": true
+  },
+  {
+    "id": "P04:09_ellipse_answer",
+    "local": true,
+    "nas": true,
+    "local_hash_ok": true,
+    "nas_hash_ok": true
+  },
+  {
+    "id": "P04:10_write_it_down",
+    "local": true,
+    "nas": true,
+    "local_hash_ok": true,
+    "nas_hash_ok": true
+  },
+  {
+    "id": "P04:10_write_it_down_c1",
+    "local": true,
+    "nas": true,
+    "local_hash_ok": true,
+    "nas_hash_ok": true
+  },
+  {
+    "id": "P04:11_principia_press",
+    "local": true,
+    "nas": true,
+    "local_hash_ok": true,
+    "nas_hash_ok": true
+  },
+  {
+    "id": "P04:12_fish_book",
+    "local": true,
+    "nas": true,
+    "local_hash_ok": true,
+    "nas_hash_ok": true
+  },
+  {
+    "id": "P05:01_one_law",
+    "local": true,
+    "nas": true,
+    "local_hash_ok": true,
+    "nas_hash_ok": true
+  },
+  {
+    "id": "P05:01_one_law_c1",
+    "local": true,
+    "nas": true,
+    "local_hash_ok": true,
+    "nas_hash_ok": true
+  },
+  {
+    "id": "P05:02_tides_harbour",
+    "local": true,
+    "nas": true,
+    "local_hash_ok": true,
+    "nas_hash_ok": true
+  },
+  {
+    "id": "P05:03_halley_comet_path",
+    "local": true,
+    "nas": true,
+    "local_hash_ok": true,
+    "nas_hash_ok": true
+  },
+  {
+    "id": "P05:03_halley_comet_path_c1",
+    "local": true,
+    "nas": true,
+    "local_hash_ok": true,
+    "nas_hash_ok": true
+  },
+  {
+    "id": "P05:04_comet_1758",
+    "local": true,
+    "nas": true,
+    "local_hash_ok": true,
+    "nas_hash_ok": true
+  },
+  {
+    "id": "P05:05_iss_orbit",
+    "local": true,
+    "nas": true,
+    "local_hash_ok": true,
+    "nas_hash_ok": true
+  },
+  {
+    "id": "P05:06_iss_apple",
+    "local": true,
+    "nas": true,
+    "local_hash_ok": true,
+    "nas_hash_ok": true
+  },
+  {
+    "id": "P05:08_cup_and_planets",
+    "local": true,
+    "nas": true,
+    "local_hash_ok": true,
+    "nas_hash_ok": true
+  },
+  {
+    "id": "P05:08_cup_and_planets_c1",
+    "local": true,
+    "nas": true,
+    "local_hash_ok": true,
+    "nas_hash_ok": true
+  },
+  {
+    "id": "P05:08_cup_and_planets_c2",
+    "local": true,
+    "nas": true,
+    "local_hash_ok": true,
+    "nas_hash_ok": true
+  },
+  {
+    "id": "P05:09_orchard_dusk",
+    "local": true,
+    "nas": true,
+    "local_hash_ok": true,
+    "nas_hash_ok": true
+  },
+  {
+    "id": "P05:10_explorer_bench",
+    "local": true,
+    "nas": true,
+    "local_hash_ok": true,
+    "nas_hash_ok": true
+  },
+  {
+    "id": "P05:12_clay_handoff",
+    "local": true,
+    "nas": true,
+    "local_hash_ok": true,
+    "nas_hash_ok": true
+  },
+  {
+    "id": "P05:12_clay_handoff_c1",
+    "local": true,
+    "nas": true,
+    "local_hash_ok": true,
+    "nas_hash_ok": true
+  }
+]
