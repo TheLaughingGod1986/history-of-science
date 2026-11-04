@@ -7,7 +7,7 @@ Filled 19 Oct 2026 from public signals collected in `00_Brand/Channel-Setup/idea
 | Field | Value |
 |-------|-------|
 | ID / slug | 013 · `013_Darwin-Wallace-Evolution` |
-| Working title | *Evolution: The Letter That Forced Darwin to Publish* (T&C B: *Why Darwin Kept Natural Selection Secret for 20 Years*) |
+| Working title | *The Letter That Forced Darwin to Publish Evolution* (50 chars; T&C B: *Why Darwin Kept Evolution Secret for 20 Years*, 45 chars; Rule 15 `J2019` <=50-char update of *Evolution: The Letter That Forced Darwin to Publish*) |
 | Date pulled | 2026-10-15 |
 | Credits used (approx) | 0 (vidIQ waived) |
 | Brand guardrails | Notebook B "I think" tree + Wallace's June 1858 letter first · no Ternate receipt-date overclaim · no unhedged finch/barnacle counts · 1844 essay before *Vestiges* · 25 June fairness letter before 28 June death · 22 Nov 1859 Murray trade sale before 24 Nov publication |
@@ -40,9 +40,9 @@ Filled 19 Oct 2026 from public signals collected in `00_Brand/Channel-Setup/idea
 
 | | Title | vidIQ score | Rules check | Keep? |
 |---|-------|------:|-------|-------|
-| A | Evolution: The Letter That Forced Darwin to Publish | waived | Pass: big subject (*Evolution*) + concrete hook (*The Letter That Forced Darwin to Publish*), 51 chars | **Main (J0295 lock)** |
-| B | Why Darwin Kept Natural Selection Secret for 20 Years | waived | Pass: search question + exact 20-year span, 53 chars | **Test & Compare (J0295 lock)** |
-| C | How a Letter From the Jungle Forced Darwin to Publish | waived | Pass: concrete story hook, 53 chars | **Alt** |
+| A | The Letter That Forced Darwin to Publish Evolution | waived | Pass: big subject (*Evolution* + *Darwin*) + concrete hook (*The Letter That Forced Darwin to Publish*), 50 chars (Rule 15 `J2019` update of 51-char *Evolution: The Letter That Forced Darwin to Publish*) | **Main (J0295/J2019)** |
+| B | Why Darwin Kept Evolution Secret for 20 Years | waived | Pass: search question + exact 20-year span, 45 chars (Rule 15 `J2019` update of 53-char *Why Darwin Kept Natural Selection Secret for 20 Years*) | **Test & Compare (J0295/J2019)** |
+| C | How a Jungle Letter Forced Darwin to Publish | waived | Pass: concrete story hook, 44 chars (Rule 15 `J2019` update of 53-char draft) | **Alt** |
 
 **Locked title:** J0295 Chief topic lock (6196336541); final package subject to Ben's watch.
 

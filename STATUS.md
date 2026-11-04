@@ -14,7 +14,7 @@
 | **007** Why Vaccines Are Named After a Cow | Thu 12 Nov (9 d) | 100% | all stages done | — | — | Sun 8 Nov (in 5 d) | 🟢 on track |
 | **008** Why Did Franklin Fly a Kite in a Storm? | Thu 19 Nov (16 d) | 75% | Picture (blocked) | **Assembly capability chain** · ⛔ blocked: J1880 maps three motion defects and diagram/text corrections; J1881 scopes production | 112/112 board rows rendered (11 code graphics + 101/101 Flow plates KEEP) | Sun 15 Nov (in 12 d) | ⛔ blocked |
 | **009** Why Doesn't the Moon Fall to Earth? | Thu 26 Nov (23 d) | 62% | Shorts voiceover (to do) | **Cursor** · queued (after 010 long VO) | starts later; due 26 d late | Sun 22 Nov (in 19 d) | 🟠 behind |
-| **010** What Killed the Dinosaurs Was Hidden in a Line of Clay | Thu 3 Dec (30 d) | 35% | Shorts voiceover (to do) | **Cursor** · queued (after 010 long VO) | starts later; due 26 d late | Sun 29 Nov (in 26 d) | 🟠 behind |
+| **010** What Killed the Dinosaurs Was in a Line of Clay | Thu 3 Dec (30 d) | 35% | Shorts voiceover (to do) | **Cursor** · queued (after 010 long VO) | starts later; due 26 d late | Sun 29 Nov (in 26 d) | 🟠 behind |
 
 ## Who's on what
 
@@ -202,7 +202,7 @@ Long VO v01 locked (Chief KEEP, desk 6101629662). Plate boards v04 KEEP (Chief P
 - ⬜ **Ben's final OK** — to do (with Ben, due Sun 22 Nov (in 19 d))
 - ⬜ **Scheduled** — to do (with Grok, due Mon 23 Nov (in 20 d))
 
-### 010 · What Killed the Dinosaurs Was Hidden in a Line of Clay
+### 010 · What Killed the Dinosaurs Was in a Line of Clay
 
 `███████░░░░░░░░░░░░░` **35%**
 

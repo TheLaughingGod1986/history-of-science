@@ -2,7 +2,7 @@
   "format": "longform",
   "video": null,
   "youtubeId": null,
-  "title": "What Killed the Dinosaurs Was Hidden in a Line of Clay",
+  "title": "What Killed the Dinosaurs Was in a Line of Clay",
   "titleVariant": "A",
   "descriptionFile": "Descriptions/clay_long_description_v01.txt",
   "tagsFile": "Tags/clay_long_tags_v01.txt",
@@ -11,8 +11,8 @@
   "thumbnail": null,
   "thumbnailAbc": [],
   "titleAbc": [
-    "What Killed the Dinosaurs Was Hidden in a Line of Clay",
-    "How a 1-Centimetre Line of Clay Solved What Killed the Dinosaurs"
+    "What Killed the Dinosaurs Was in a Line of Clay",
+    "How a 1-cm Line of Clay Explained the Dinosaurs"
   ],
   "schedule": "2026-12-03T18:00:00.000Z",
   "playlistId": null,
@@ -25,7 +25,7 @@
   "affiliate": null,
   "channel": "@HistoryOfScienceYT",
   "premiere": false,
-  "note": "Scaffold (4 Oct 2026); updated 24 Oct 2026 (J0899/J0909 Chief PASS). Arm 2-way Title Test & Compare on launch ('What Killed the Dinosaurs Was Hidden in a Line of Clay' vs 'How a 1-Centimetre Line of Clay Solved What Killed the Dinosaurs'); record/keep v02 Shorts VO with positive question titles ('What Killed the Dinosaurs?', 'Are Birds Really Dinosaurs?') and payoffs held past 15 s (>=70% runtime, after the 9-14 s long-title banner); pair '300\\u00d7 TOO MUCH' cover text with sfx_kit.py rumble_low on the Part 04 crater reveal. Long VO + P1-P8 period details (J0860) locked. Neighbours from evidence_2026-10-04_neighbours.json (gate PASS, 10 education >=1M). Proposed air Thu 3 Dec 2026 18:00 UK = 18:00 UTC (GMT). Nothing changed on YouTube now.",
+  "note": "Scaffold (4 Oct 2026); updated 24 Oct 2026 (J0899/J0909 Chief PASS) and 4 Nov 2026 (J2019 Rule 15 <=50-char title rewrite). Arm 2-way Title Test & Compare on launch ('What Killed the Dinosaurs Was in a Line of Clay' vs 'How a 1-cm Line of Clay Explained the Dinosaurs'); record/keep v02 Shorts VO with positive question titles ('What Killed the Dinosaurs?', 'Are Birds Really Dinosaurs?') and payoffs held past 15 s (>=70% runtime, after the 9-14 s long-title banner); pair '300\\u00d7 TOO MUCH' cover text with sfx_kit.py rumble_low on the Part 04 crater reveal. Long VO + P1-P8 period details (J0860) locked. Neighbours from evidence_2026-10-04_neighbours.json (gate PASS, 10 education >=1M). Proposed air Thu 3 Dec 2026 18:00 UK = 18:00 UTC (GMT). Nothing changed on YouTube now.",
   "neighbours": {
     "phrases": [
       "dinosaurs",
