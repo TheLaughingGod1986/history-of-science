@@ -1,0 +1,16 @@
+{
+  "created_at": "2026-10-31T00:30:00+00:00",
+  "project": "lightning008",
+  "script": null,
+  "music_cues": [],
+  "prompt": "HOS 008 Lightning: original instrumental score for an eighteenth-century experiment. Soft gut-string quartet, a quiet baroque pulse you can hear, and one wooden flute. Storm chapters are low and wondering; the jar and the lightning-rod chapters are lighter and clearer. Leave room for a spoken voice. No vocals. Pace: 64-72 BPM. NOT the 007 vaccine wooden-harp bed, NOT the Trees of Air bed, NOT Orbit cosmic pads, Betelgeuse, Saturn, Sun, Venus, Light Speed, Mars or the nearest-star bed; no drums, no EDM, no cartoon sting, no menace drone.",
+  "length_ms": 539626,
+  "model_id": "arranged-from-take",
+  "force_instrumental": true,
+  "generate": false,
+  "audio_file": "lightning008_score_bed_v02.mp3",
+  "status": "arranged from lightning008_score_bed_v01_take.mp3, no second ElevenLabs take",
+  "source_take": "lightning008_score_bed_v01_take.mp3",
+  "song_id": "XV6uI76yzdLON8PmTVwC",
+  "note": "Same take as v01. Film starts at take 50.70 s. One 15-bar mid-body repeat, 3.0 s equal-power crossfade. No new generate."
+}

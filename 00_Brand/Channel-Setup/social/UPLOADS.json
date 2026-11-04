@@ -166,7 +166,6 @@
       "thumb": "02_Video-Projects/007_The-First-Vaccine/10_Shorts/_work_s04_smallpox_test_v01/hos_007_s04_smallpox_test_v01_t000.0.jpg",
       "long": "ETynHpIYLeY",
       "promotes": "007",
-      "publishAt": "2026-11-13T11:30:00Z",
       "registeredAt": "2026-10-23T05:16:00Z",
       "buffer": "registered in OWB social/hos/UPLOADS.json (long ETynHpIYLeY, J0875); held until public (2026-11-13T11:30:00Z), then the full film",
       "related": "unset while 007 long ETynHpIYLeY is Private (publishAt 2026-11-12T18:00:00Z); Studio picker lists public videos only. J0875 sets ETynHpIYLeY once the long is public on Thu 12 Nov 18:00Z (before Fri 13 Nov 11:30Z).",
@@ -174,7 +173,12 @@
         "hook": "On 1 July 1796, Edward Jenner tested whether cowpox protected a boy from smallpox \u2014 and no disease followed.",
         "question": "What did Edward Jenner's first vaccine test prove?",
         "alt": "A mahogany lancet case with ivory-handled steel lancets on Edward Jenner's study table in 1796; hook caption THE FIRST TEST."
-      }
+      },
+      "publishAt": null,
+      "privacyStatus": "private",
+      "supersededBy": "cLKDiYP55J8",
+      "unscheduledAt": "2026-10-29T20:27:02Z",
+      "note": "J1219. Private and unscheduled. Title unchanged. Nothing deleted. Replaced by v04 cLKDiYP55J8 (sha 3ef3fa773750)."
     },
     "4WUs0beKn0A": {
       "kind": "short",
@@ -186,7 +190,7 @@
       "thumb": "02_Video-Projects/007_The-First-Vaccine/10_Shorts/_work_s05_vacca_jesty_v02/hos_007_s05_vacca_jesty_v02_t000.0.jpg",
       "long": "ETynHpIYLeY",
       "promotes": "007",
-      "publishAt": "2026-11-17T11:30:00Z",
+      "publishAt": null,
       "registeredAt": "2026-10-24T18:05:00Z",
       "buffer": "registered in OWB social/hos/UPLOADS.json (long ETynHpIYLeY, J0875); held until public (2026-11-17T11:30:00Z), then the full film",
       "related": "unset while 007 long ETynHpIYLeY is Private (publishAt 2026-11-12T18:00:00Z); Studio picker lists public videos only. J0875 sets ETynHpIYLeY once the long is public on Thu 12 Nov 18:00Z (before Fri 13 Nov 11:30Z).",
@@ -194,7 +198,11 @@
         "hook": "Twenty-two years before Edward Jenner's 1798 book, Benjamin Jesty tried cowpox \u2014 and from vacca, Latin for cow, came vaccination.",
         "question": "Why are vaccines named after a cow?",
         "alt": "A dairy cow in a golden Dorset meadow at sunset; hook caption NOT THE FIRST."
-      }
+      },
+      "privacyStatus": "private",
+      "supersededBy": "xgx2lYHhYZM",
+      "unscheduledAt": "2026-10-30T00:58:30Z",
+      "note": "J1222. Private and unscheduled. Title unchanged. Nothing deleted. Replaced by v05 xgx2lYHhYZM (sha e5ea76f012fb)."
     },
     "Rl2uZ-KOTl8": {
       "kind": "short",
@@ -232,9 +240,9 @@
       "privacyStatus": "private",
       "replaces": "5n7xFQRBUvI",
       "registeredAt": "2026-10-25T18:40:00Z",
-      "buffer": "held until the long wwcjcFfC-5M is public, then the full film",
+      "buffer": "scheduled HOS org IG/FB/TikTok dueAt 2026-10-31T11:30:00Z (J0241 readback; posts from 29 Oct register)",
       "captions": "en-GB standard, from the v04 spoken line",
-      "related": "unset; J0241 sets wwcjcFfC-5M after that long is public",
+      "related": "wwcjcFfC-5M (set J0241 2026-10-30; Studio readback Tied Arm)",
       "social": {
         "hook": "Galen taught that the heart's job was to heat the blood, not to pump it.",
         "question": "What did you think the heart did, before anyone told you?",
@@ -343,9 +351,9 @@
       "packageDir": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/11_Upload-Package",
       "thumb": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/08_Thumbnail/Selected/hos_005_thumb_A_one_tight_band_v02.jpg",
       "publishAt": "2026-10-29T18:00:00Z",
-      "privacyStatus": "private",
+      "privacyStatus": "public",
       "registeredAt": "2026-10-25T22:58:00Z",
-      "readBack": "YouTube Data API videos.list (read only), 25 Oct 2026 22:58 London: channel History of Science, private, publishAt 2026-10-29T18:00:00Z, processed, PT8M49S, title as above.",
+      "readBack": "YouTube Data API videos.list (read only), 30 Oct 2026 ~01:24Z: channel History of Science, public, no publishAt (already aired), title The Tied Arm That Proved Your Blood Circulates.",
       "note": "Registered late so the Studio Kanban can read the long's schedule (it had no UPLOADS row, so the HOS 005 card sat in In progress). Uploaded and scheduled in early Oct; nothing on YouTube was changed. After-air jobs: J0241 (Related on BW_CFAX-mxc + HOS Buffer) once public."
     },
     "JyRjM-9Yc8g": {
@@ -477,6 +485,136 @@
         "hook": "The flaps in a vein let blood move only one way.",
         "question": "Guess which way the blood is allowed to go?",
         "alt": "A vein drawing with one-way flaps, the valves Fabricius found."
+      }
+    },
+    "cLKDiYP55J8": {
+      "kind": "short",
+      "standalone": false,
+      "standaloneTest": false,
+      "file": "02_Video-Projects/007_The-First-Vaccine/10_Shorts/hos_007_s04_smallpox_test_v04.mp4",
+      "sha256": "3ef3fa77375083622e8f8d6dee99f009cf60cbc27fc01f9d21857ba6b5b0c4e7",
+      "packageDir": "02_Video-Projects/007_The-First-Vaccine/10_Shorts/11_Upload-Package/s04_smallpox_test_v04",
+      "thumb": "02_Video-Projects/007_The-First-Vaccine/10_Shorts/11_Upload-Package/s04_smallpox_test_v04/cover.jpg",
+      "long": "ETynHpIYLeY",
+      "promotes": "007",
+      "publishAt": "2026-11-13T11:30:00Z",
+      "privacyStatus": "private",
+      "replaces": "-I_GHK-GcFs",
+      "registeredAt": "2026-10-29T20:27:02Z",
+      "buffer": "registered in OWB social/hos/UPLOADS.json (long ETynHpIYLeY, J1219 swap from -I_GHK-GcFs); held until public (2026-11-13T11:30:00Z), then the full film",
+      "related": "unset while 007 long ETynHpIYLeY is Private (publishAt 2026-11-12T18:00:00Z); Studio picker lists public videos only. J0875 sets ETynHpIYLeY on cLKDiYP55J8 (not -I_GHK-GcFs) once the long is public on Thu 12 Nov 18:00Z (before Fri 13 Nov 11:30Z).",
+      "captions": "en-GB standard, from the v04 spoken line (J1219)",
+      "social": {
+        "hook": "On 1 July 1796, Edward Jenner tested whether cowpox protected a boy from smallpox \u2014 and no disease followed.",
+        "question": "What did Edward Jenner's first vaccine test prove?",
+        "alt": "A mahogany lancet case with ivory-handled steel lancets on Edward Jenner's study table in 1796; hook caption THE FIRST TEST."
+      }
+    },
+    "x_3L_IdYgEc": {
+      "kind": "short",
+      "standalone": false,
+      "standaloneTest": false,
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s03_never_saw_v01.mp4",
+      "long": "wwcjcFfC-5M",
+      "promotes": "005",
+      "registeredAt": "2026-10-01T00:00:00Z",
+      "social": {
+        "hook": "Harvey never saw how blood crosses from arteries to veins \u2014 Malpighi found vessels finer than a hair.",
+        "question": "What are the vessels finer than a hair called?",
+        "alt": "A frog's lung under a microscope; a net of vessels finer than hairs. Hook caption THE LAST LINK."
+      },
+      "publishAt": null,
+      "privacyStatus": "private",
+      "supersededBy": "Wvjd8g0CpzE",
+      "unscheduledAt": "2026-10-29T23:48:30Z",
+      "note": "J1223. Private and unscheduled. Title unchanged. Nothing deleted. Replaced by v04 Wvjd8g0CpzE (sha e1f862ba737a)."
+    },
+    "Wvjd8g0CpzE": {
+      "kind": "short",
+      "standalone": false,
+      "standaloneTest": false,
+      "file": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s03_never_saw_v04.mp4",
+      "sha256": "e1f862ba737acc4276dd676fc93181b41e729fce029fed57318bf43add3e9f63",
+      "packageDir": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/11_Upload-Package/s03_never_saw_v04",
+      "thumb": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/11_Upload-Package/s03_never_saw_v04/cover.jpg",
+      "long": "wwcjcFfC-5M",
+      "promotes": "005",
+      "publishAt": "2026-11-15T11:30:00Z",
+      "privacyStatus": "private",
+      "replaces": "x_3L_IdYgEc",
+      "registeredAt": "2026-10-29T23:48:30Z",
+      "buffer": "registered in OWB social/hos/UPLOADS.json (long wwcjcFfC-5M, J1223 swap from x_3L_IdYgEc); held until public (2026-11-15T11:30:00Z), then the full film",
+      "related": "Studio: set Related -> wwcjcFfC-5M on Wvjd8g0CpzE (J0280 retargeted from x_3L_IdYgEc). Long is public since 29 Oct.",
+      "captions": "en-GB standard, from the v04 spoken line (J1223)",
+      "social": {
+        "hook": "Harvey never saw how blood crosses from arteries to veins \u2014 Malpighi found vessels finer than a hair.",
+        "question": "What are the vessels finer than a hair called?",
+        "alt": "A frog's lung under a microscope; a net of vessels finer than hairs. Hook caption THE LAST LINK."
+      }
+    },
+    "-sa2t7dAtCk": {
+      "kind": "short",
+      "standalone": false,
+      "standaloneTest": false,
+      "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/hos_004_s05_dalton_v03.mp4",
+      "long": "GHZDsiH7L7A",
+      "promotes": "004",
+      "registeredAt": "2026-10-01T00:00:00Z",
+      "social": {
+        "hook": "Every element is made of its own kind of atom, and each kind has its own weight.",
+        "question": "What is Dalton's atomic theory?",
+        "alt": "Hook caption EACH ATOM over Dalton's theory beat; elements combine in fixed amounts."
+      },
+      "publishAt": null,
+      "privacyStatus": "private",
+      "supersededBy": "xzKoHg0E0_U",
+      "unscheduledAt": "2026-10-30T00:36:06Z",
+      "note": "J1221. Private and unscheduled. Title unchanged. Nothing deleted. Replaced by v04 xzKoHg0E0_U (sha 8ce07a605697)."
+    },
+    "xzKoHg0E0_U": {
+      "kind": "short",
+      "standalone": false,
+      "standaloneTest": false,
+      "file": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/hos_004_s05_dalton_v04.mp4",
+      "sha256": "8ce07a60569707f689c7d90e06826493bf7a40e5c3c3a4a05216d6a48dbb082c",
+      "packageDir": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/11_Upload-Package/s05_dalton_v04",
+      "thumb": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/11_Upload-Package/s05_dalton_v04/cover.jpg",
+      "long": "GHZDsiH7L7A",
+      "promotes": "004",
+      "publishAt": "2026-11-16T11:30:00Z",
+      "privacyStatus": "private",
+      "replaces": "-sa2t7dAtCk",
+      "registeredAt": "2026-10-30T00:36:06Z",
+      "buffer": "registered in OWB social/hos/UPLOADS.json (long GHZDsiH7L7A, J1221 swap from -sa2t7dAtCk); held until public (2026-11-16T11:30:00Z), then the full film",
+      "related": "Studio: set Related -> GHZDsiH7L7A on xzKoHg0E0_U (004 long public). Description already links GHZDsiH7L7A.",
+      "captions": "en-GB standard, from the v04 spoken line (J1221)",
+      "social": {
+        "hook": "Every element is made of its own kind of atom, and each kind has its own weight.",
+        "question": "What is Dalton's atomic theory?",
+        "alt": "Hook caption EACH ATOM over Dalton's theory beat; elements combine in fixed amounts."
+      }
+    },
+    "xgx2lYHhYZM": {
+      "kind": "short",
+      "standalone": false,
+      "standaloneTest": false,
+      "file": "02_Video-Projects/007_The-First-Vaccine/10_Shorts/hos_007_s05_vacca_jesty_v05.mp4",
+      "sha256": "e5ea76f012fb94c54c4a7224140d2d8ca342ea8c02a2fbdb30df17661f94f1ad",
+      "packageDir": "02_Video-Projects/007_The-First-Vaccine/10_Shorts/11_Upload-Package/s05_vacca_jesty_v05",
+      "thumb": "02_Video-Projects/007_The-First-Vaccine/10_Shorts/11_Upload-Package/s05_vacca_jesty_v05/cover.jpg",
+      "long": "ETynHpIYLeY",
+      "promotes": "007",
+      "publishAt": "2026-11-17T11:30:00Z",
+      "privacyStatus": "private",
+      "replaces": "4WUs0beKn0A",
+      "registeredAt": "2026-10-30T00:58:30Z",
+      "buffer": "registered in OWB social/hos/UPLOADS.json (long ETynHpIYLeY, J1222 swap from 4WUs0beKn0A); held until public (2026-11-17T11:30:00Z), then the full film",
+      "related": "unset while 007 long ETynHpIYLeY is Private (publishAt 2026-11-12T18:00:00Z); Studio picker lists public videos only. J0875 sets ETynHpIYLeY once the long is public on Thu 12 Nov 18:00Z (before Fri 13 Nov 11:30Z).",
+      "captions": "en-GB standard, from the v05 spoken line (J1222)",
+      "social": {
+        "hook": "Twenty-two years before Edward Jenner's 1798 book, Benjamin Jesty tried cowpox \u2014 and from vacca, Latin for cow, came vaccination.",
+        "question": "Why are vaccines named after a cow?",
+        "alt": "A dairy cow in a golden Dorset meadow at sunset; hook caption NOT THE FIRST."
       }
     }
   }

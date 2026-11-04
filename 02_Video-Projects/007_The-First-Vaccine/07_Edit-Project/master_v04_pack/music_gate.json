@@ -1,0 +1,16 @@
+{
+  "verdict": "PASS",
+  "bed": "/private/tmp/j0925-hos007-v04-wt/02_Video-Projects/007_The-First-Vaccine/05_Music/vaccine_score_bed_v01.mp3",
+  "seconds": 531.1,
+  "bpm": 60.0,
+  "brief_pace": "Pace: 58-64 BPM",
+  "fail": [],
+  "warn": [],
+  "waived": [],
+  "matches": [],
+  "waiver": null,
+  "rules": {
+    "similarity_fail": 0.8,
+    "compared_seconds": 300
+  }
+}

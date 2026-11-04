@@ -122,3 +122,6 @@ node_modules/
 # HOS 007 part roughs v01 + full_join_v01 contact & QA review sheets (J0820, J0827)
 !02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/_desk/007/part*_rough_v01/*.jpg
 !02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/_desk/007/full_join_v01/*.jpg
+
+# HOS 009 J1192 / J1237 tranche 1 motion review strips, contact sheets & frame-diff plots
+!02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/review_J1192_motion/*.png

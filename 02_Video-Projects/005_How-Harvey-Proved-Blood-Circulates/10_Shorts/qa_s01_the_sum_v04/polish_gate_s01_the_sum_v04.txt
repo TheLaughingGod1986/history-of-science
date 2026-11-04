@@ -8,4 +8,4 @@ s07_jug    15.8s 09_jug_tower_t1.mp4          ok
 s08_glow    18.6s 12_glowing_loop_t2.mp4       ok
 s09_round    21.4s 07_capillaries_loop_t2.mp4   ok
 s10_loop    23.5s loop_span_01_pulse_wrist_t1. WARN low detail: edge density 0.0234 < film p5 0.0237
-polish gate PASS: 0 of 10 rows failed, 1 to look at -> 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s01_the_sum_v04/polish_gate_s01_the_sum_v04.json
+polish gate PASS: 0 of 10 rows failed, 1 to look at -> /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s01_the_sum_v04/polish_gate_s01_the_sum_v04.json

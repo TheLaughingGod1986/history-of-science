@@ -1,0 +1,30 @@
+{
+  "same_frames": true,
+  "unchanged_head": true,
+  "unchanged_tail": true,
+  "boundaries": [
+    {
+      "time": 168.73,
+      "sample_jump_fraction": 0.0
+    },
+    {
+      "time": 168.75,
+      "sample_jump_fraction": 3.0517578125e-05
+    },
+    {
+      "time": 170.33,
+      "sample_jump_fraction": 0.0
+    },
+    {
+      "time": 170.48,
+      "sample_jump_fraction": 0.0
+    },
+    {
+      "time": 170.5,
+      "sample_jump_fraction": 0.0
+    }
+  ],
+  "v01_sha256": "d41c910a136c621eccaaf11bf8ce9f2aec2952050b25532650e85933913b68d4",
+  "v02_sha256": "fa100bb9cf771fd5bc7889a2fb0c217f1577df9a1927302d448e7cd9469b47b6",
+  "v03_sha256": "d56ba2a45a76125e29b0d620ab84772a9311399354c07d860ac168938ff05038"
+}

@@ -1,0 +1,23 @@
+{
+  "source": "PAUSE_TRIM_v03.json joins, after 0:30, trim contains a shot boundary",
+  "choice": {
+    "silence": [
+      64.301979,
+      64.926083
+    ],
+    "trim_start": 64.333333,
+    "trim_end": 64.875,
+    "frame0": 1539,
+    "frame1": 1552,
+    "trim_s": 0.5416670000000039,
+    "join_dist": 0.1301664999999872,
+    "boundary_rows": [
+      "10_wait_shutter"
+    ],
+    "hook": "no trim before 0:30",
+    "audio": "splice audio stream-copied; this pause cut is one AAC encode of the joined track"
+  },
+  "vo": "pause only; trim sits inside silencedetect, clear of the hook and the FIX rows",
+  "moved_from": "v06 trim 9.167-9.708s inside the kite plate",
+  "inherited": "v08 bitstream already contains this pause trim; v12 does not re-trim"
+}

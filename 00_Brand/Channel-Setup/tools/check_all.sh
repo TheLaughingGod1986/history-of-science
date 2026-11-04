@@ -24,6 +24,7 @@ cd "$ROOT"
 
 media=$(git diff --cached --name-only --diff-filter=AM; git ls-files --others --exclude-standard) || true
 media=$(printf '%s\n' "$media" | grep -iE '\.(mp4|mov|m4v|webm|wav|mp3|aiff?|m4a|flac|ogg)$' || true)
+run "durable desk handoffs" python3 -m unittest discover -s scripts -p "test_hos_desk_handoffs.py"
 run "no media" test -z "$media"
 [ -n "$media" ] && printf '%s\n' "$media"
 

@@ -96,7 +96,7 @@
   "words": 65,
   "max_pause_s": 0.25,
   "atempo": 1.03,
-  "bed": "hos003_s04_synth_pad_v01.wav (own synthesis, 0 credits)",
+  "bed": "05_Music/hos003_s04_synth_pad_v01.wav (own synthesis, 0 credits)",
   "bed_gain_db": -22.1,
   "hook": "NAMED IT X",
   "hook_layer": {
@@ -214,6 +214,10 @@
     "picture_qa": {
       "exit": 0,
       "output": "picture QA PASS: 0 of 8 cuts fail, 1 to look at -> 02_Video-Projects/003_Invisible-Bones-X-Rays/10_Shorts/qa_s04_unknown_x_v01/picture_qa_s04_unknown_x_v01/PICTURE_QA.md, 02_Video-Projects/003_Invisible-Bones-X-Rays/10_Shorts/qa_s04_unknown_x_v01/picture_qa_s04_unknown_x_v01/picture_qa_review.jpg"
+    },
+    "music_gate": {
+      "exit": 0,
+      "output": "music gate PASS: hos003_s04_synth_pad_v01.wav, 27.5 s, about 200.0 BPM, brief Pace: 60-80 BPM"
     }
   },
   "stills": [

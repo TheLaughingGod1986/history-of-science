@@ -1,0 +1,40 @@
+{
+  "verdict": "PASS",
+  "bed": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/008_Lightning-Franklin/05_Music/lightning008_score_bed_v02.mp3",
+  "seconds": 539.6,
+  "bpm": 66.7,
+  "brief_pace": "Pace: 64-72 BPM",
+  "fail": [],
+  "warn": [],
+  "waived": [],
+  "matches": [],
+  "waiver": null,
+  "rules": {
+    "similarity_fail": 0.8,
+    "compared_seconds": 300
+  },
+  "top5": [
+    {
+      "similarity": 0.394,
+      "file": "/Users/benjaminoats/YouTube/orbit-with-ben/02_Video-Projects/026_How-Far-Is-The-Nearest-Star/05_Music/nearest-star_score_bed_v01_full.wav"
+    },
+    {
+      "similarity": 0.289,
+      "file": "/Users/benjaminoats/YouTube/orbit-with-ben/02_Video-Projects/023_What-Happened-To-Venus/05_Music/venus_score_bed_v01_full.mp3"
+    },
+    {
+      "similarity": 0.286,
+      "file": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/05_Music/hos005-part03-temp_score_bed_v01.mp3"
+    },
+    {
+      "similarity": 0.251,
+      "file": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/05_Music/hos004-part03-temp_score_bed_v01.mp3"
+    },
+    {
+      "similarity": 0.244,
+      "file": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/05_Music/hos005-part05-temp_score_bed_v01.mp3"
+    }
+  ],
+  "compared_readable": 54,
+  "skipped_unreadable": 127
+}

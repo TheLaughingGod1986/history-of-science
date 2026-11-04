@@ -1,0 +1,59 @@
+{
+  "film": "007_The-First-Vaccine",
+  "job": "J0887",
+  "engine": "Flow Image Nano Banana 2 16:9 (0 Flow credits)",
+  "stills": {
+    "01_milking_dawn_v03": {
+      "id": "01_milking_dawn_v03",
+      "part": "02",
+      "file": "/private/tmp/j0887-hos007-v03-wt/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/master_v03_pack/stills/01_milking_dawn_v03.png",
+      "sha256": "d9e932012d78718c503469eac6116c37ea52843a000d9c50c0c13408ade31c66",
+      "prompt": "STYLE LOCK from the attached stills: the same premium Animistry-class 3D cartoon look, rounded stylised shapes, soft finished materials, warm sunlit cinematic light. Use them for look only; do not copy their objects or layout.\nLANDSCAPE 16:9 wide single still frame, the opening frame of a shot.\nHistory of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm sunlit cinematic light, natural-history world of the 1600s-1800s. Not photoreal, not flat 2D. No logos, no captions, no signs, no UI. No Orbit orange robot. No DNA helix. Animals are always alive, lively and unhurt.\n1790s Gloucestershire timber dairy byre at dawn with warm golden morning sunbeams slanting through the open barn doorway on the left onto the straw floor. A calm brown-and-white dairy cow stands in profile in the centre. Seated close beside the cow's flank on a low three-legged wooden milking stool is a young English dairymaid in a white linen cap, brown laced bodice, rolled sleeves and cream apron. Both of the dairymaid's hands reach directly underneath the cow's pink udder, with her fingers wrapped firmly and naturally around the udder teats, actively milking a thin white stream of milk straight down from her hands into a wooden bucket resting on the straw directly beneath her hands and the udder. Her hands physically grip the teats of the udder with zero gap or misalignment. No text, letters or numbers.\nHARD REJECT: photoreal photo, live-action, flat 2D, letterbox bars, watermark, text, captions, signs, UI, logos, Orbit orange robot, DNA helix.",
+      "credits_used": 0,
+      "credits_after": 20870,
+      "at": "2026-10-23T18:16:33+00:00"
+    },
+    "14_explorer_stool_v03": {
+      "id": "14_explorer_stool_v03",
+      "part": "02",
+      "file": "/private/tmp/j0887-hos007-v03-wt/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/master_v03_pack/stills/14_explorer_stool_v03.png",
+      "sha256": "f54e73c286ae9b4ddbd41df88327bc1a95e7d8047b3843108e1b31e4cb5cb26c",
+      "prompt": "STYLE LOCK from the attached stills: the same premium Animistry-class 3D cartoon look, rounded stylised shapes, soft finished materials, warm sunlit cinematic light. Use them for look only; do not copy their objects or layout.\nLANDSCAPE 16:9 wide single still frame, the opening frame of a shot.\nHistory of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm sunlit cinematic light, natural-history world of the 1600s-1800s. Not photoreal, not flat 2D. No logos, no captions, no signs, no UI. No Orbit orange robot. No DNA helix. Animals are always alive, lively and unhurt.\nWide establishing shot inside a spacious 1790s Gloucestershire timber dairy byre in warm morning light, camera placed well back showing the high timber roof beams, wooden stalls, and wide straw floor. On the left, a large brown-and-white dairy cow stands in her wooden stall beside a wooden bucket, and a full-grown adult English dairymaid in a white linen cap, brown bodice and cream apron sits on a wooden milking stool holding out her hand. Standing a step further back in the mid-ground on the right is the Explorer \u2014 a small petite 8-year-old boy side character who is much smaller than the adult dairymaid and cow (occupying only about one-third of the frame height, never dominating the frame), with messy wavy brown hair, round thin gold wire-rim glasses, teal-blue long coat, tan waistcoat, brown bow tie, rolled brown trousers, brown boots and a small brown leather satchel \u2014 leaning slightly forward at a respectful distance to peer curiously at the dairymaid's hand and the cow. No text, letters or numbers.\nHARD REJECT: photoreal photo, live-action, flat 2D, letterbox bars, watermark, text, captions, signs, UI, logos, Orbit orange robot, DNA helix.",
+      "credits_used": 0,
+      "credits_after": 20870,
+      "at": "2026-10-23T18:17:16+00:00"
+    },
+    "01_milking_dawn_v03b": {
+      "id": "01_milking_dawn_v03b",
+      "part": "02",
+      "file": "/private/tmp/j0887-hos007-v03-wt/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/master_v03_pack/stills/01_milking_dawn_v03b.png",
+      "sha256": "74781b8742c423ab120d281e6621068f90c72413d7026963407af52b8c268fc1",
+      "prompt": "Medium shot inside a 1790s Gloucestershire timber dairy byre at dawn with warm golden morning sunbeams slanting through the open barn doorway onto the straw floor. Dairymaid seated beside the cow on a three-legged wooden stool; both hands directly under the cow right above the wooden bucket, milking a thin white stream straight down into the centre of the bucket.",
+      "credits_used": 0,
+      "credits_after": 20870,
+      "at": "2026-10-23T19:43:13+00:00"
+    }
+  },
+  "balance_reads": [
+    {
+      "at": "2026-10-23T18:15:50+00:00",
+      "credits": 20870,
+      "when": "start"
+    },
+    {
+      "at": "2026-10-23T18:16:33+00:00",
+      "credits": 20870,
+      "after": "01_milking_dawn_v03"
+    },
+    {
+      "at": "2026-10-23T18:17:16+00:00",
+      "credits": 20870,
+      "after": "14_explorer_stool_v03"
+    },
+    {
+      "at": "2026-10-23T19:43:13+00:00",
+      "credits": 20870,
+      "after": "01_milking_dawn_v03b"
+    }
+  ]
+}

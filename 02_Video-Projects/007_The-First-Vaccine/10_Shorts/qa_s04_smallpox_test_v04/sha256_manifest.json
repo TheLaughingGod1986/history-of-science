@@ -1,0 +1,20 @@
+{
+  "job": "J0966",
+  "youtube_id": "-I_GHK-GcFs",
+  "version": "v04",
+  "master_sha256": "3ef3fa77375083622e8f8d6dee99f009cf60cbc27fc01f9d21857ba6b5b0c4e7",
+  "phone_sha256": "17c916d2d586aaddade0e57422a18902d8bd33ac9c7a235357767734dd61e0fc",
+  "v01_sha256": "3daff43d04bcebf538cd4c405a8eeb723a7329f425bec536d876cb7c69d696af",
+  "v02_sha256": "745de3f56a11b8e05cd3e046011079e3358578afdcad46b15e1d21a2e0c2baff",
+  "v03_sha256": "858495ea7dcb28788f1277367dbd4d1d30e4c95ca95ffd230f1c1a82a0513ea5",
+  "copies": {
+    "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/007_The-First-Vaccine/10_Shorts/hos_007_s04_smallpox_test_v04.mp4": "3ef3fa77375083622e8f8d6dee99f009cf60cbc27fc01f9d21857ba6b5b0c4e7",
+    "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/007_The-First-Vaccine/10_Shorts/hos_007_s04_smallpox_test_v04_PHONE.mp4": "17c916d2d586aaddade0e57422a18902d8bd33ac9c7a235357767734dd61e0fc",
+    "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/007_The-First-Vaccine/10_Shorts/hos_007_s04_smallpox_test_v04_2fps_sheet.jpg": "7ec9496e2fb53ffa11c2dfae26388d6a679dd3b6b8d8ebb8445d0ef018b90704",
+    "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/007_The-First-Vaccine/10_Shorts/s04_smallpox_test_v04/hos_007_s04_smallpox_test_v04.mp4": "3ef3fa77375083622e8f8d6dee99f009cf60cbc27fc01f9d21857ba6b5b0c4e7",
+    "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/007_The-First-Vaccine/10_Shorts/s04_smallpox_test_v04/hos_007_s04_smallpox_test_v04_PHONE.mp4": "17c916d2d586aaddade0e57422a18902d8bd33ac9c7a235357767734dd61e0fc",
+    "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/007_The-First-Vaccine/10_Shorts/s04_smallpox_test_v04/hos_007_s04_smallpox_test_v04_2fps_sheet.jpg": "7ec9496e2fb53ffa11c2dfae26388d6a679dd3b6b8d8ebb8445d0ef018b90704"
+  },
+  "aac_lufs": -14.3,
+  "aac_true_peak_dbfs": -1.6
+}

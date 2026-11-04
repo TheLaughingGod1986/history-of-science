@@ -1,0 +1,198 @@
+{
+  "model": "base.en",
+  "device": "cpu",
+  "compute_type": "int8",
+  "word_timestamps": true,
+  "beam_size": 5,
+  "clip_start": 165,
+  "segments": [
+    {
+      "start": 165.0,
+      "end": 170.02,
+      "text": " one kind of animal could split into many. But what was doing was shaping.",
+      "words": [
+        {
+          "word": " one",
+          "start": 165.0,
+          "end": 165.24,
+          "probability": 0.8309119343757629
+        },
+        {
+          "word": " kind",
+          "start": 165.24,
+          "end": 165.66,
+          "probability": 0.9916845560073853
+        },
+        {
+          "word": " of",
+          "start": 165.66,
+          "end": 165.8,
+          "probability": 0.9974955916404724
+        },
+        {
+          "word": " animal",
+          "start": 165.8,
+          "end": 166.22,
+          "probability": 0.9991169571876526
+        },
+        {
+          "word": " could",
+          "start": 166.22,
+          "end": 166.66,
+          "probability": 0.9579197764396667
+        },
+        {
+          "word": " split",
+          "start": 166.66,
+          "end": 166.98,
+          "probability": 0.9938790798187256
+        },
+        {
+          "word": " into",
+          "start": 166.98,
+          "end": 167.4,
+          "probability": 0.9808958768844604
+        },
+        {
+          "word": " many.",
+          "start": 167.4,
+          "end": 167.78,
+          "probability": 0.9947252869606018
+        },
+        {
+          "word": " But",
+          "start": 168.82,
+          "end": 168.86,
+          "probability": 0.980583131313324
+        },
+        {
+          "word": " what",
+          "start": 168.86,
+          "end": 169.08,
+          "probability": 0.9887502789497375
+        },
+        {
+          "word": " was",
+          "start": 169.08,
+          "end": 169.26,
+          "probability": 0.9945849776268005
+        },
+        {
+          "word": " doing",
+          "start": 169.26,
+          "end": 169.48,
+          "probability": 0.9915822148323059
+        },
+        {
+          "word": " was",
+          "start": 169.48,
+          "end": 169.7,
+          "probability": 0.648158073425293
+        },
+        {
+          "word": " shaping.",
+          "start": 169.7,
+          "end": 170.02,
+          "probability": 0.997033953666687
+        }
+      ]
+    },
+    {
+      "start": 170.94,
+      "end": 176.8,
+      "text": " On the 28th of September, 1838, Darwin started reading a book about human population-",
+      "words": [
+        {
+          "word": " On",
+          "start": 170.94,
+          "end": 171.18,
+          "probability": 0.9856535792350769
+        },
+        {
+          "word": " the",
+          "start": 171.18,
+          "end": 171.26,
+          "probability": 0.6207292079925537
+        },
+        {
+          "word": " 28th",
+          "start": 171.26,
+          "end": 172.0,
+          "probability": 0.9796135425567627
+        },
+        {
+          "word": " of",
+          "start": 172.0,
+          "end": 172.0,
+          "probability": 0.9231297373771667
+        },
+        {
+          "word": " September,",
+          "start": 172.0,
+          "end": 172.54,
+          "probability": 0.9537752866744995
+        },
+        {
+          "word": " 1838,",
+          "start": 172.72,
+          "end": 173.48,
+          "probability": 0.9849948585033417
+        },
+        {
+          "word": " Darwin",
+          "start": 174.12,
+          "end": 174.38,
+          "probability": 0.9981054067611694
+        },
+        {
+          "word": " started",
+          "start": 174.38,
+          "end": 174.82,
+          "probability": 0.9860272407531738
+        },
+        {
+          "word": " reading",
+          "start": 174.82,
+          "end": 175.22,
+          "probability": 0.9987155199050903
+        },
+        {
+          "word": " a",
+          "start": 175.22,
+          "end": 175.44,
+          "probability": 0.9976048469543457
+        },
+        {
+          "word": " book",
+          "start": 175.44,
+          "end": 175.66,
+          "probability": 0.9990923404693604
+        },
+        {
+          "word": " about",
+          "start": 175.66,
+          "end": 176.1,
+          "probability": 0.9953000545501709
+        },
+        {
+          "word": " human",
+          "start": 176.1,
+          "end": 176.46,
+          "probability": 0.9741709232330322
+        },
+        {
+          "word": " population",
+          "start": 176.46,
+          "end": 176.72,
+          "probability": 0.8823874592781067
+        },
+        {
+          "word": "-",
+          "start": 176.72,
+          "end": 176.8,
+          "probability": 0.11042401939630508
+        }
+      ]
+    }
+  ]
+}

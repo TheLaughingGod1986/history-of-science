@@ -1,0 +1,11 @@
+{
+  "prompt": "Warm 1895 W\u00fcrzburg X-ray absorption harmonic pad in E-minor / Cmaj7 voicing (C3, G3, B3, D4, G4) under spoken narration, slow and even, no chase. Pace: 60-80 BPM. NOT a trailer sting, NOT a piano solo, NOT s04/s05/s07 pads, NOT any 001/002/004 bed, NOT any Orbit With Ben bed, NOT a drum loop.",
+  "film": "003",
+  "short": "s06_how_xrays_work_v01",
+  "job": "J1064",
+  "orig_job": "J0548",
+  "source": "own synthesis in _build_short_s06_how_xrays_work_v01.py, 0 credits",
+  "pace_bpm": "60-80",
+  "sha256": "e958c374ab282a7e5ce11ffaf31c7f0e2dd68cfb42de0ff983160093dc9f92fe",
+  "voicing": "E3-G3-B3-E4-B4 warm harmonic pad (E-minor/phrygian voicing, distinct per-voice LFO rates)"
+}

@@ -1,0 +1,27 @@
+{
+  "source": "v08 word timings, part offset 409.875s from the v09 lock. This run's correlator did not re-lock (it printed 'Here's how it works' / 'Lightning is a'). Audio streamhash matches v08, so the spoken words are unchanged.",
+  "offset_film_minus_part_s": 409.875,
+  "spans": [
+    {
+      "film": [
+        459.3,
+        461.05
+      ],
+      "words": "apart. But a metal"
+    },
+    {
+      "film": [
+        461.05,
+        462.26
+      ],
+      "words": "rod is an easy"
+    },
+    {
+      "film": [
+        462.26,
+        463.17
+      ],
+      "words": "easy path,"
+    }
+  ]
+}

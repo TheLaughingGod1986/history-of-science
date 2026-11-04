@@ -485,9 +485,19 @@ def run_qa(mp4: Path, plan: list[dict]) -> dict:
                            cwd=REPO, capture_output=True, text=True)
     pqa_out = (r_pqa.stdout + r_pqa.stderr).strip()
     pqa_txt.write_text(pqa_out + "\n")
+
+    mg_json = QA_DIR / f"music_gate_{SID}_{VER}.json"
+    mg_txt = QA_DIR / f"music_gate_{SID}_{VER}.txt"
+    r_mg = subprocess.run([sys.executable, str(OWB_REPO / "scripts/music_gate.py"),
+                           str(PROJ), "--bed", str(PROJ / "05_Music" / BED.name),
+                           "--video", str(mp4), "--out", str(mg_json)],
+                          cwd=REPO, capture_output=True, text=True)
+    mg_out = (r_mg.stdout + r_mg.stderr).strip()
+    mg_txt.write_text(mg_out + "\n")
     return {
         "polish_gate": {"exit": r_pg.returncode, "output": pg_out.splitlines()[-1] if pg_out else ""},
         "picture_qa": {"exit": r_pqa.returncode, "output": pqa_out.splitlines()[-1] if pqa_out else ""},
+        "music_gate": {"exit": r_mg.returncode, "output": mg_out.splitlines()[-1] if mg_out else ""},
     }
 
 

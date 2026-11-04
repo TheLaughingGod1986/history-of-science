@@ -1,0 +1,29 @@
+{
+  "job": "J1005",
+  "parent_job": "J0966",
+  "date": "2026-10-27",
+  "reviewer": "gemini (gemini-argon)",
+  "route": "native multimodal audio (192kbps 48kHz mp3 extracted from master) + video (_PHONE.mp4) ingestion via read_file + 15ms PCM RMS envelope check",
+  "spend_gbp": 0.0,
+  "short": "hos_007_s05_vacca_jesty_v05.mp4",
+  "youtube_id": "4WUs0beKn0A",
+  "duration_s": 24.533,
+  "master_sha256": "e5ea76f012fb94c54c4a7224140d2d8ca342ea8c02a2fbdb30df17661f94f1ad",
+  "phone_sha256": "066c6774add20b1ad8c5859d27b5e14ca094d9de153597c1b7105e648a62afe1",
+  "verdict": "PASS_WITH_PROSODIC_SPLICE_NOTE",
+  "pronunciation_rulings": {
+    "variolae vaccinae (~12.10s VO check / 12.973-14.930s master)": "RESOLVED PASS (/ˌvær.iˈoʊ.laɪ vækˈsiː.neɪ/ 'va-ree-OH-lye vak-SEE-nay'; Faster-Whisper 'varioli' is an English ASR diphthong mapping false positive)",
+    "vacca (~17.56s VO check / 18.693-19.140s master)": "RESOLVED PASS (/ˈvæk.ə/ 'VAK-uh'; Faster-Whisper 'vaca' is a homophone spelling false positive)",
+    "Benjamin Jesty (2.355-3.512s)": "PASS (/ˈbɛndʒəmɪn ˈdʒɛsti/, clear and natural)"
+  },
+  "splice_check_5p536s": {
+    "timestamp_s": "5.536-6.221",
+    "intelligibility": "PASS (both donor word 176 'Jenner' at 5.536-5.827s and word 104 'tested' at 5.888-6.221s are 100% intelligible and unclipped; Jesty/Jenner attribution is unambiguous)",
+    "prosodic_note": "Because word 176 ('Jenner' from 'Jenner sent...') fades to -120 dBFS anullsrc for 44ms (5.840-5.880s) before mid-sentence word 104 ('tested' from 'He tested', -12.5 dBFS) enters, the cadence across 'Jenner tested' is slightly tight/abrupt.",
+    "optional_gbp0_polish": "Can ship as-is, or in _build_short_s05_vacca_jesty_v05.py widen INLINE_SPLICE[(176, 104)] from 0.045s to 0.075s, extend word 176 end trim from 76.835s to 76.855s with 45ms fade-out, and attenuate the 'tested more people,' span by -1.0 dB."
+  },
+  "defects": [],
+  "body_intelligibility": "PASS (0.019-24.111s: 60 words crisp, clean open on 'Jenner wasn't the first to try cowpox.', 0 repeated/stumbled/clipped words, 146 wpm)",
+  "bed_sfx_fit": "PASS (-14.2 LUFS, -1.6 dBFS TP, 68 BPM G-major plucked bed + soft whoosh + 2 ink ticks)",
+  "picture_and_loop": "PASS (single BENJAMIN JESTY card 2.36-5.25s strictly inside s02; all 8 cuts at inter-word pause midpoints; clean visual and audio loop on 09_meadow_golden_t1.mp4)"
+}

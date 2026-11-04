@@ -908,6 +908,7 @@ ALL CHECKS PASS (00_Brand/Channel-Setup/tools/check_all.sh)
 
 **STOP:** parked for Chief: thumb B review. No Studio change made.
 
+
 ## J0608 s07_heart_pulse_v01 (Test B search-titled Short, Part 03 lift) — Gemini, 19 Oct 2026
 
 - **What:** Built search-titled Test B Short `s07_heart_pulse_v01` (4th search-titled Short on `005`, second in Round 4 after `004 s07`) from `005` Part 03 existing VO (`02_Voiceover/part03_the_sum_that_broke_the_old_idea_v01_raw.mp3`, claim-first lift of indices 49–78, 200–219, and 228–241: *"The heart isn't a stove. It's a muscle, and it squeezes. Each squeeze pushes blood out into the arteries, and that push is the pulse you feel in your wrist. The heart pumps it out through the arteries, and it comes back through the veins, round and round. It circulates. Your heart pumps all of your blood round your body in about a minute."*), existing Part 03/01/05 KEEP plates (`03_stove_to_muscle_t1`, `02_slow_hearts_t2`, `04_squeeze_pulse_t1`, `01_pulse_wrist_t1`, `08_your_blood_t2`, `12_glowing_loop_t2`, `13_one_minute_t3`, and `03_stove_to_muscle_t1` loop), and Part 03 score bed (`hos005-part03-temp_score_bed_v01.mp3`). £0 spend, no upload.
@@ -943,6 +944,7 @@ ALL CHECKS PASS (00_Brand/Channel-Setup/tools/check_all.sh)
 
 **STOP:** parked for Chief: thumb B review. No Studio change made.
 
+
 ## 19 Oct 2026 — Thumbnail B `v08` `PINCHED LINEN KNOT` (`1.095x` hero push-in + linen-knot, forearm blue-cord & arterial-glow boost, OWB J0655)
 
 - **Selection:** HOS `005` (`wwcjcFfC-5M`, *The Tied Arm That Proved Your Blood Circulates*, scheduled Thu 29 Oct 18:00) has no Test & Compare on record in `THUMB_LEDGER.json` (`003` has `T001` active; `004` has an armed test, never touched; in the `001` → `005` → `002` rotation, `005` got `B v07` in `J0609`, `002` got `B v09` in `J0624`, and `001` got `B v06` in `J0640`, making `005` next in rotation).
@@ -960,6 +962,7 @@ ALL CHECKS PASS (00_Brand/Channel-Setup/tools/check_all.sh)
 
 **STOP:** parked for Chief: thumb B review. No Studio change made.
 
+
 ## 20 Oct 2026 — Thumbnail B `v09` `PALE COLD HAND` (`1.10x` hero push-in + pale-hand, forearm blue-cord, linen-knot & arterial-glow boost, OWB J0700)
 
 - **Selection:** HOS `005` (`wwcjcFfC-5M`, *The Tied Arm That Proved Your Blood Circulates*, scheduled Thu 29 Oct 18:00) has no Test & Compare on record in `THUMB_LEDGER.json` (`003` has `T001` active; `004` has an armed test, never touched; in the `001` → `005` → `002` rotation, `005` got `B v08` in `J0655`, `002` got `B v10` in `J0670`, and `001` got `B v07` in `J0685`, making `005` next in rotation).
@@ -976,6 +979,7 @@ ALL CHECKS PASS (00_Brand/Channel-Setup/tools/check_all.sh)
 ```
 
 **STOP:** parked for Chief: thumb B review. No Studio change made.
+
 
 ## J0730 s08_capillaries_v01 (Test B search-titled Short, Part 05 lift) — Gemini, 20 Oct 2026
 
@@ -1013,4 +1017,16 @@ ALL CHECKS PASS (00_Brand/Channel-Setup/tools/check_all.sh)
 ```
 
 **STOP:** parked for Chief: thumb B review. No Studio change made.
+
+## J1058 s06/s07/s08 v01 music_gate brief/bed fix (£0, no spend) — Gemini, 28 Oct 2026
+
+- **What:** Updated the pre-8-Oct `05_Music/hos005-part01..05-temp_score_bed_v01_plan.json` sidecars to include explicit `Pace: 60-80 BPM.` and `NOT ...` lines in their prompts, wired `music_gate.py` into `10_Shorts/_build_short_s06_blood_pressure_cuff_v01.py`, `10_Shorts/_build_short_s07_heart_pulse_v01.py`, and `10_Shorts/_build_short_s08_capillaries_v01.py`, and re-ran `music_gate.py` across `s06_blood_pressure_cuff_v01`, `s07_heart_pulse_v01`, and `s08_capillaries_v01` (£0 spend, 0 credits).
+- **Results:**
+```
+music gate PASS: hos005-part05-temp_score_bed_v01.mp3, 128.0 s, about 150.0 BPM, brief Pace: 60-80 BPM
+music gate PASS: hos005-part03-temp_score_bed_v01.mp3, 108.0 s, about 48.0 BPM, brief Pace: 60-80 BPM
+music gate PASS: hos005-part05-temp_score_bed_v01.mp3, 128.0 s, about 150.0 BPM, brief Pace: 60-80 BPM
+```
+
+
 

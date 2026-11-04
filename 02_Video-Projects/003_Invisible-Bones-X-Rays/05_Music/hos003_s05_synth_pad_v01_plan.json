@@ -1,0 +1,9 @@
+{
+  "prompt": "Warm 1895 W\u00fcrzburg first-radiograph discovery harmonic pad in A-aeolian / Fmaj7 voicing (A2, E3, A3, C4, E4) under spoken narration, slow and even, no chase. Pace: 60-80 BPM. NOT a trailer sting, NOT a piano solo, NOT s04/s06/s07 pads, NOT any 001/002/004 bed, NOT any Orbit With Ben bed, NOT a drum loop.",
+  "film": "003",
+  "short": "s05_first_xray_v01",
+  "job": "J1064",
+  "orig_job": "J0423",
+  "source": "own synthesis in _build_short_s05_first_xray_v01.py, 0 credits",
+  "pace_bpm": "60-80"
+}

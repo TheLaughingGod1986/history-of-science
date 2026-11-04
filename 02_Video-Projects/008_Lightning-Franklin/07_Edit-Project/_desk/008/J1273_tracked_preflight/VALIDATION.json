@@ -1,0 +1,107 @@
+{
+  "composite_v08.mp4": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "width": 1920,
+        "height": 1080,
+        "pix_fmt": "yuv420p",
+        "r_frame_rate": "24/1",
+        "duration": "1.750000",
+        "nb_frames": "42"
+      }
+    ]
+  },
+  "code_graphic_008_p5_10_metal_easy_v08.mov": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "width": 1920,
+        "height": 1080,
+        "pix_fmt": "yuva444p12le",
+        "r_frame_rate": "24/1",
+        "duration": "1.750000",
+        "nb_frames": "42"
+      }
+    ]
+  },
+  "workman_42f_24fps.mp4": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "width": 900,
+        "height": 860,
+        "pix_fmt": "yuv420p",
+        "r_frame_rate": "24/1",
+        "duration": "1.750000",
+        "nb_frames": "42"
+      }
+    ]
+  },
+  "adjacent_trace_start_max_step_px": 7.0,
+  "timing": {
+    "callout_full_frame": 3,
+    "callout_full_s": 0.125,
+    "trace_first_frame": 8,
+    "trace_first_s": 0.3333333333333333,
+    "trace_complete_frame": 36,
+    "trace_complete_s": 1.5,
+    "label_full_frame": 12,
+    "label_full_s": 0.5,
+    "last_frame": 41,
+    "fade_out": false
+  },
+  "label_static_max_byte_difference": 0,
+  "source_frames": [
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150
+  ],
+  "source_plate": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/06_rod_fitting_t1.mp4",
+  "source_sha256": "73c43fc2502c38dbbc8e65691402c6ee84e4937c429647f6270e2cc372fd38ad",
+  "locked_alpha_sha256": "bb821f402a2d1ca5a1536a6592e572b8a4d1653d6573ca733c2ae853db4c8056",
+  "polish_gate_sha256": "61ddff01253c7744570b51c3ca7a728fad177fcdd4dc7a42bd1649d4cbda211d",
+  "picture_qa_sha256": "11d24621021a403902985d606e1747ecf977dcc370d4bead364c697ad02ca220"
+}

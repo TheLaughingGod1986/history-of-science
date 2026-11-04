@@ -8,4 +8,4 @@ s07_which    16.3s 01_cow_meadow_t1.mp4         ok
 s08_From    19.2s 10a_packets_t1.mp4           ok
 s09_came    21.8s 06_line_underlined_t1.mp4    ok
 s10_loop    23.6s loop_end_09_meadow_golden_t1 ok
-polish gate PASS: 0 of 10 rows failed, 1 to look at -> 02_Video-Projects/007_The-First-Vaccine/10_Shorts/qa_s05_vacca_jesty_v03/polish_gate_s05_vacca_jesty_v03.json
+polish gate PASS: 0 of 10 rows failed, 1 to look at -> /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/007_The-First-Vaccine/10_Shorts/qa_s05_vacca_jesty_v03/polish_gate_s05_vacca_jesty_v03.json

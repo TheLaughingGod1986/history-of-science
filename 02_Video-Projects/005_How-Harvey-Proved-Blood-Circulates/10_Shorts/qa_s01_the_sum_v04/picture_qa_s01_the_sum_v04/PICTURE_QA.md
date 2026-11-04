@@ -1,6 +1,6 @@
 # Picture QA: PASS
 
-02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s01_the_sum_v04.mp4 · 10 cuts · 0 fail · 1 for Claude to look at full size
+/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s01_the_sum_v04.mp4 · 10 cuts · 0 fail · 1 for Claude to look at full size
 
 ## Claude looks at these full size
 

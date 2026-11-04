@@ -200,6 +200,10 @@
     "picture_qa": {
       "exit": 0,
       "output": "picture QA PASS: 0 of 8 cuts fail, 1 to look at -> 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s07_heart_pulse_v01/picture_qa_s07_heart_pulse_v01/PICTURE_QA.md, 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s07_heart_pulse_v01/picture_qa_s07_heart_pulse_v01/picture_qa_review.jpg"
+    },
+    "music_gate": {
+      "exit": 0,
+      "output": "music gate PASS: hos005-part03-temp_score_bed_v01.mp3, 108.0 s, about 48.0 BPM, brief Pace: 60-80 BPM"
     }
   },
   "stills": [

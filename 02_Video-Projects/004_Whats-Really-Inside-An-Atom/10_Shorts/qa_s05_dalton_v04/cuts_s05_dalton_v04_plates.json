@@ -1,0 +1,101 @@
+[
+  {
+    "row": "s01_0",
+    "timeline_in": 0.0,
+    "timeline_out": 2.556,
+    "source": "01_dalton_schoolroom_v01.mp4",
+    "upscale": 1.78,
+    "framing": {
+      "offset": 2.8
+    },
+    "video": true
+  },
+  {
+    "row": "s02_and",
+    "timeline_in": 2.556,
+    "timeline_out": 4.769,
+    "source": "15_knife_coin_return_v01.mp4",
+    "upscale": 1.78,
+    "framing": {
+      "offset": 0.5
+    },
+    "video": true
+  },
+  {
+    "row": "s03_Hydrogen",
+    "timeline_in": 4.769,
+    "timeline_out": 8.358,
+    "source": "05_fixed_amounts_v01.mp4",
+    "upscale": 1.78,
+    "framing": {
+      "offset": 0.4
+    },
+    "video": true
+  },
+  {
+    "row": "s04_Gold",
+    "timeline_in": 8.358,
+    "timeline_out": 10.929,
+    "source": "07_water_always_v01.mp4",
+    "upscale": 1.78,
+    "framing": {
+      "offset": 2.0
+    },
+    "video": true
+  },
+  {
+    "row": "s05_Why",
+    "timeline_in": 10.929,
+    "timeline_out": 13.618,
+    "source": "02_atomic_theory_v01.mp4",
+    "upscale": 1.78,
+    "framing": {
+      "offset": 0.8
+    },
+    "video": true
+  },
+  {
+    "row": "s06_combine",
+    "timeline_in": 13.618,
+    "timeline_out": 17.101,
+    "source": "04_gold_heavier_v01.mp4",
+    "upscale": 1.78,
+    "framing": {
+      "offset": 0.15
+    },
+    "video": true
+  },
+  {
+    "row": "s07_same",
+    "timeline_in": 17.101,
+    "timeline_out": 20.868,
+    "source": "20_what_is_order_v01.mp4",
+    "upscale": 1.78,
+    "framing": {
+      "offset": 0.4
+    },
+    "video": true
+  },
+  {
+    "row": "s08_if",
+    "timeline_in": 20.868,
+    "timeline_out": 23.365,
+    "source": "03_atom_turns_v01.mp4",
+    "upscale": 1.78,
+    "framing": {
+      "offset": 0.4
+    },
+    "video": true
+  },
+  {
+    "row": "s09_loop",
+    "timeline_in": 23.365,
+    "timeline_out": 24.515,
+    "source": "loop_span_01_dalton_schoolroom_v01.mp4",
+    "upscale": 1.78,
+    "framing": {
+      "offset": 1.65
+    },
+    "video": true
+  }
+]

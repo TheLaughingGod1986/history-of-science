@@ -82,7 +82,7 @@
   "words": 64,
   "max_pause_s": 0.25,
   "atempo": 1.04,
-  "bed": "hos004-full-sect2_score_bed_v02.mp3",
+  "bed": "05_Music/hos_004_s07_outer_electrons_v01_bed.wav (own synthesis, 0 credits)",
   "bed_gain_db": -26.8,
   "hook": "OUTER SHELL",
   "hook_layer": {
@@ -200,6 +200,10 @@
     "picture_qa": {
       "exit": 0,
       "output": "picture QA PASS: 0 of 8 cuts fail, 1 to look at -> 02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/qa_s07_outer_electrons_v01/picture_qa_s07_outer_electrons_v01/PICTURE_QA.md, 02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/qa_s07_outer_electrons_v01/picture_qa_s07_outer_electrons_v01/picture_qa_review.jpg"
+    },
+    "music_gate": {
+      "exit": 0,
+      "output": "music gate PASS: hos_004_s07_outer_electrons_v01_bed.wav, 25.8 s, about 70.6 BPM, brief Pace: 68-76 BPM"
     }
   },
   "stills": [

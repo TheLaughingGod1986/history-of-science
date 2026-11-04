@@ -1,0 +1,45 @@
+{
+  "samples": [
+    {
+      "t": 463.2,
+      "mean_abs": 0.0,
+      "v11_frame_index": 11090,
+      "v11_pts": 463.208333,
+      "v08_frame_index": 11090,
+      "v08_pts": 463.208333,
+      "same_index": true
+    },
+    {
+      "t": 464.0,
+      "mean_abs": 0.0,
+      "v11_frame_index": 11109,
+      "v11_pts": 464.0,
+      "v08_frame_index": 11109,
+      "v08_pts": 464.0,
+      "same_index": true
+    },
+    {
+      "t": 466.0,
+      "mean_abs": 0.0,
+      "v11_frame_index": 11157,
+      "v11_pts": 466.0,
+      "v08_frame_index": 11157,
+      "v08_pts": 466.0,
+      "same_index": true
+    },
+    {
+      "t": 468.7,
+      "mean_abs": 0.0,
+      "v11_frame_index": 11222,
+      "v11_pts": 468.708333,
+      "v08_frame_index": 11222,
+      "v08_pts": 468.708333,
+      "same_index": true
+    }
+  ],
+  "worst": 0.0,
+  "limit": 1.0,
+  "pass": true,
+  "body_frames": 135,
+  "note": "Body samples are on the tail keyframe GOP, stream-copied from v08. The card body is 135 frames, from 463.167s. A miss is a source frame shift when the indexes differ, and a re-encode when they match."
+}

@@ -1,0 +1,57 @@
+{
+  "offset_film_minus_part_s": 425.72,
+  "correlation": 0.108,
+  "spans": [
+    {
+      "film": [
+        459.3,
+        461.05
+      ],
+      "words": [
+        {
+          "text": "Here's",
+          "part_s": 34.02,
+          "film_s": 459.74
+        },
+        {
+          "text": "how",
+          "part_s": 34.22,
+          "film_s": 459.94
+        },
+        {
+          "text": "it",
+          "part_s": 34.36,
+          "film_s": 460.08
+        },
+        {
+          "text": "works.",
+          "part_s": 34.5,
+          "film_s": 460.22
+        }
+      ]
+    },
+    {
+      "film": [
+        461.05,
+        462.26
+      ],
+      "words": [
+        {
+          "text": "Lightning",
+          "part_s": 35.74,
+          "film_s": 461.46
+        },
+        {
+          "text": "is",
+          "part_s": 36.34,
+          "film_s": 462.06
+        },
+        {
+          "text": "a",
+          "part_s": 36.46,
+          "film_s": 462.18
+        }
+      ]
+    }
+  ]
+}

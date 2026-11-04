@@ -1,0 +1,32 @@
+{
+  "job": "J0241",
+  "version": "v03",
+  "started": "2026-10-30T01:24:39.457Z",
+  "ended": "2026-10-30T01:25:03.877Z",
+  "passed": 1,
+  "total": 1,
+  "results": [
+    {
+      "n": 1,
+      "id": "BW_CFAX-mxc",
+      "related_id": "wwcjcFfC-5M",
+      "related_title": "The Tied Arm That Proved Your Blood Circulates",
+      "at": "2026-10-30T01:24:45.515Z",
+      "before": {
+        "chunk": "Related video\nNone\nSubtitles"
+      },
+      "action": "set_saved",
+      "picker": {
+        "open": true,
+        "via": "shorts-content-links-picker",
+        "dialog": true
+      },
+      "search": "grid_first",
+      "hit": "The Tied Arm That Proved Your Blood Circulates",
+      "after": {
+        "chunk": "Related video\nThe Tied Arm That Proved Your Blood Circulates\nSubtitles"
+      },
+      "ok": true
+    }
+  ]
+}

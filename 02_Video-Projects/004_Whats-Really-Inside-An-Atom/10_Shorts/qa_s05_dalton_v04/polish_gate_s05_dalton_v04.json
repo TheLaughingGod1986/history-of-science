@@ -1,0 +1,220 @@
+{
+  "rule": {
+    "low_detail": "FAIL: luma std < 13.44 and edge density < 0.0259 (absolute floor); WARN: luma std < 18.0 or edge density < film p5",
+    "split_panel": "full-height/width seam or gutter",
+    "split_panel_gutter": "gutter counts only with edge density >= 0.01 in the 10% band on both sides",
+    "near_black": "mean < 28.0 or p95 < 50.0",
+    "noise": "grain std > 6 over structure std < 12, and the 8x-downscaled frame under the low-detail floor (std < 13.44 and edge density < 0.0259)",
+    "jitter": "centre-patch phase correlation: reversal against trend or > 0.35 px off trend"
+  },
+  "low_detail_floor": {
+    "std": 13.44,
+    "edge": 0.0259,
+    "calibration": {
+      "video": "025_MarsRobot_full_rough_v02d.mp4",
+      "factor": 1.2,
+      "frames": [
+        {
+          "source": "PIA22223.jpg",
+          "t": 201.0,
+          "std": 12.1,
+          "edge": 0.0223
+        },
+        {
+          "source": "PIA22223.jpg",
+          "t": 216.3,
+          "std": 11.2,
+          "edge": 0.0216
+        },
+        {
+          "source": "PIA22929.jpg",
+          "t": 297.4,
+          "std": 26.54,
+          "edge": 0.5735
+        }
+      ]
+    }
+  },
+  "video": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/hos_004_s05_dalton_v04.mp4",
+  "edge_floor": 0.0339,
+  "verdict": "PASS",
+  "failed": [],
+  "warn": [
+    {
+      "row": "s03_Hydrogen",
+      "cut": 2,
+      "t": 6.56,
+      "source": "05_fixed_amounts_v01.mp4",
+      "why": [
+        "low detail: edge density 0.0245 < film p5 0.0339"
+      ]
+    }
+  ],
+  "reviewed_ok": [],
+  "rows": [
+    {
+      "cut": 0,
+      "row": "s01_0",
+      "source": "01_dalton_schoolroom_v01.mp4",
+      "t": 1.28,
+      "std": 57.51,
+      "mean": 86.83,
+      "p95": 214.0,
+      "edge": 0.1036,
+      "hf": 14.12,
+      "lf": 47.86,
+      "std8": 51.73,
+      "edge8": 0.4439,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 1,
+      "row": "s02_and",
+      "source": "15_knife_coin_return_v01.mp4",
+      "t": 3.66,
+      "std": 54.86,
+      "mean": 80.33,
+      "p95": 198.0,
+      "edge": 0.048,
+      "hf": 8.54,
+      "lf": 49.76,
+      "std8": 51.98,
+      "edge8": 0.3999,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 2,
+      "row": "s03_Hydrogen",
+      "source": "05_fixed_amounts_v01.mp4",
+      "t": 6.56,
+      "std": 43.73,
+      "mean": 79.03,
+      "p95": 173.0,
+      "edge": 0.0245,
+      "hf": 5.03,
+      "lf": 39.77,
+      "std8": 42.07,
+      "edge8": 0.2956,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0245 < film p5 0.0339"
+      ]
+    },
+    {
+      "cut": 3,
+      "row": "s04_Gold",
+      "source": "07_water_always_v01.mp4",
+      "t": 9.64,
+      "std": 52.13,
+      "mean": 82.25,
+      "p95": 186.0,
+      "edge": 0.1061,
+      "hf": 11.54,
+      "lf": 44.5,
+      "std8": 47.55,
+      "edge8": 0.4482,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 4,
+      "row": "s05_Why",
+      "source": "02_atomic_theory_v01.mp4",
+      "t": 12.27,
+      "std": 47.36,
+      "mean": 68.48,
+      "p95": 170.0,
+      "edge": 0.0521,
+      "hf": 8.99,
+      "lf": 39.99,
+      "std8": 43.53,
+      "edge8": 0.3314,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 5,
+      "row": "s06_combine",
+      "source": "04_gold_heavier_v01.mp4",
+      "t": 15.36,
+      "std": 57.41,
+      "mean": 103.22,
+      "p95": 238.0,
+      "edge": 0.0484,
+      "hf": 6.27,
+      "lf": 52.83,
+      "std8": 55.33,
+      "edge8": 0.3233,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 6,
+      "row": "s07_same",
+      "source": "20_what_is_order_v01.mp4",
+      "t": 18.98,
+      "std": 61.58,
+      "mean": 93.72,
+      "p95": 227.0,
+      "edge": 0.0879,
+      "hf": 8.41,
+      "lf": 55.53,
+      "std8": 58.09,
+      "edge8": 0.5008,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 7,
+      "row": "s08_if",
+      "source": "03_atom_turns_v01.mp4",
+      "t": 22.12,
+      "std": 33.92,
+      "mean": 95.44,
+      "p95": 164.0,
+      "edge": 0.0568,
+      "hf": 7.11,
+      "lf": 28.46,
+      "std8": 30.84,
+      "edge8": 0.2778,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 8,
+      "row": "s09_loop",
+      "source": "loop_span_01_dalton_schoolroom_v01.mp4",
+      "t": 23.94,
+      "std": 57.59,
+      "mean": 97.66,
+      "p95": 218.0,
+      "edge": 0.0857,
+      "hf": 8.86,
+      "lf": 51.27,
+      "std8": 54.43,
+      "edge8": 0.4235,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    }
+  ]
+}

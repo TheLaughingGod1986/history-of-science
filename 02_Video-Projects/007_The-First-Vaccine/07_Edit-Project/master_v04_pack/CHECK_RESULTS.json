@@ -1,0 +1,14 @@
+{
+  "music_gate": 0,
+  "polish_gate": 0,
+  "picture_qa": 0,
+  "episode": 0,
+  "freeze_events": 0,
+  "loudness": {
+    "integrated_lufs": -14.0,
+    "true_peak_dbtp": -1.4
+  },
+  "sfx_level": 0,
+  "sfx_hits": 44,
+  "bed_bpm": 60.0
+}

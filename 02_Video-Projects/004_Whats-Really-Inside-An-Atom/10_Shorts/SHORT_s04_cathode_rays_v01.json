@@ -15,7 +15,7 @@
   "words": 61,
   "max_pause_s": 0.45,
   "atempo": 1.03,
-  "bed": "hos004-part03-temp_score_bed_v01.mp3",
+  "bed": "05_Music/hos004-part03-temp_score_bed_v01.mp3",
   "bed_gain_db": -24.0,
   "hook": "THE BEAM BENT",
   "hook_layer": {
@@ -145,5 +145,11 @@
     "note": "Both 'What Are Cathode Rays?' and 'How Did Thomson Discover Electrons?' are signed-out GB YouTube autocomplete hits. The lifted VO explicitly asks 'Scientists called them cathode rays. But what were they made of? Light, or stuff?' and answers with Thomson's magnet and charged-plate deflections ('Tiny charged particles do.')."
   },
   "air_date_draft_note": "2026-10-27 used for the gate only (clear of 004 gold-halves 16 Oct and 004 gold-foil 1 Nov); slot is Chief's call",
-  "who_card_note": "card sits over 08_measures_bend_v01 (in_s 0.8, crop_x 640: Thomson at the cathode-ray tube as the glowing beam bends, scale card cropped out on the right, lower-third card below his face and the bent arc) at 14.1\u201317.5 s while 'Thomson brings a magnet close. The beam bends.' is spoken; clear of 0\u20132 s hook and 9\u201314 s title; long's own label text"
+  "who_card_note": "card sits over 08_measures_bend_v01 (in_s 0.8, crop_x 640: Thomson at the cathode-ray tube as the glowing beam bends, scale card cropped out on the right, lower-third card below his face and the bent arc) at 14.1\u201317.5 s while 'Thomson brings a magnet close. The beam bends.' is spoken; clear of 0\u20132 s hook and 9\u201314 s title; long's own label text",
+  "qa": {
+    "music_gate": {
+      "exit": 0,
+      "output": "music gate PASS: hos004-part03-temp_score_bed_v01.mp3, 95.0 s, about 85.7 BPM, brief Pace: 60-80 BPM"
+    }
+  }
 }

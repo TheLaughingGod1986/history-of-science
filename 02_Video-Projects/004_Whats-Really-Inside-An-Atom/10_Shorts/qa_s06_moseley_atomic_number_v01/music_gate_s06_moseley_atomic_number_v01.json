@@ -1,0 +1,16 @@
+{
+  "verdict": "PASS",
+  "bed": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/05_Music/hos_004_s06_moseley_atomic_number_v01_bed.wav",
+  "seconds": 26.9,
+  "bpm": 66.7,
+  "brief_pace": "Pace: 64-72 BPM",
+  "fail": [],
+  "warn": [],
+  "waived": [],
+  "matches": [],
+  "waiver": null,
+  "rules": {
+    "similarity_fail": 0.8,
+    "compared_seconds": 300
+  }
+}

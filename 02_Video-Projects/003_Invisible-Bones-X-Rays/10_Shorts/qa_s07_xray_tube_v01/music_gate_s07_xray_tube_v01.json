@@ -1,0 +1,16 @@
+{
+  "verdict": "PASS",
+  "bed": "02_Video-Projects/003_Invisible-Bones-X-Rays/05_Music/hos003_s07_synth_pad_v01.wav",
+  "seconds": 25.0,
+  "bpm": 150.0,
+  "brief_pace": "Pace: 60-80 BPM",
+  "fail": [],
+  "warn": [],
+  "waived": [],
+  "matches": [],
+  "waiver": null,
+  "rules": {
+    "similarity_fail": 0.8,
+    "compared_seconds": 300
+  }
+}

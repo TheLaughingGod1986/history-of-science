@@ -83,7 +83,7 @@
   "words": 64,
   "max_pause_s": 0.3,
   "atempo": 1.04,
-  "bed": "hos004-part05-temp_score_bed_v01.mp3",
+  "bed": "05_Music/hos_004_s06_moseley_atomic_number_v01_bed.wav (own synthesis, 0 credits)",
   "bed_gain_db": -23.6,
   "hook": "COUNT THE RUNGS",
   "hook_layer": {
@@ -201,6 +201,10 @@
     "picture_qa": {
       "exit": 0,
       "output": "picture QA PASS: 0 of 8 cuts fail, 1 to look at -> 02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/qa_s06_moseley_atomic_number_v01/picture_qa_s06_moseley_atomic_number_v01/PICTURE_QA.md, 02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/qa_s06_moseley_atomic_number_v01/picture_qa_s06_moseley_atomic_number_v01/picture_qa_review.jpg"
+    },
+    "music_gate": {
+      "exit": 0,
+      "output": "music gate PASS: hos_004_s06_moseley_atomic_number_v01_bed.wav, 26.9 s, about 66.7 BPM, brief Pace: 64-72 BPM"
     }
   },
   "stills": [

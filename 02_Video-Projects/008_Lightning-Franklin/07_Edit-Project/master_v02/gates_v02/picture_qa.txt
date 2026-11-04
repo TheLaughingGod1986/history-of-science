@@ -1,0 +1,8 @@
+WARN   1:18 row 13_ring_the_bells_c1 13_ring_the_bells_c1_t1.mp4: low detail: edge density 0.0198 < film p5 0.0255
+WARN   4:28 row 15_wet_dry cg_15_wet_dry.mp4: low detail: edge density 0.0242 < film p5 0.0255
+WARN   4:45 row 18_william_runs 18_william_runs_t1.mp4: low detail: edge density 0.0214 < film p5 0.0255
+WARN   5:50 row 07_kite_cloud_wide 07_kite_cloud_wide_t1.mp4: low detail: edge density 0.0254 < film p5 0.0255
+WARN   7:40 row 10_metal_easy composite_v08.mp4: kind of picture: no title in the pool, so nobody can tell what it is
+WARN   7:45 row 11_safe_path body.mp4: kind of picture: no title in the pool, so nobody can tell what it is
+WARN   8:30 row 18_rod_closeup 18_rod_closeup_t1.mp4: low detail: edge density 0.0253 < film p5 0.0255
+picture QA PASS: 0 of 112 cuts fail, 7 to look at -> /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/master_v02/gates_v02/picture_qa/PICTURE_QA.md, /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/master_v02/gates_v02/picture_qa/picture_qa_review.jpg
