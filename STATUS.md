@@ -67,7 +67,7 @@
 7. 006 picture: Mon 12 Oct after 09:00 read the Flow balance and price P3:06 + Parts 04–05 (J0138), the Chief passes the prices (J0139), then Flow mints and the Part 04/05 roughs (J0140); picture by Sun 25 Oct, edit and thumbnails by Thu 29 Oct, Ben's final OK Sun 1 Nov.
 8. Mon 12 Oct: Flow credits refill (AI Ultra). J0138 reads the balance and re-prices 006 (P3:06, Parts 04–05), then 007, on Flow rates; the Chief passes before any mint (J0139).
 9. 007 picture: plate boards priced (96 rows, 80 mints); spend starts after 006 and once the whole voiceover batch has passed.
-10. 008: J1880 prepares corrections for six Ben v03 notes, then J1881 reviews scope and queues production/QA. J1755 separately holds browser delivery; no new watch or upload approval.
+10. 008: J2163 repairs the unsafe correction recipe; J1881 held at 2/3 pending repaired input, then Chief scopes production and capable QA. Six notes unresolved; J1755 delivery hold separate.
 11. Thu 29 Oct 18:05: 005 post-air jobs (Related on its Shorts, cards, end screen, pinned comment).
 12. 009: J2033 remaining20 Quality rows now under J2026 bounded cap6000 (live15430;floor3000); J2034 picture review -> J2035 edit -> J2036 package QA/J1275 chapters -> J2037 Ben watch. Long VO locked; J0862 separate. No pickup claimed yet.
 
