@@ -1,0 +1,34 @@
+# Voice speed cap: no build may speed the VO above atempo 1.06 (AGENTS.md Never list).
+# Rules: 00_Brand/Channel-Setup/tools/atempo_check.py. Runs on direct pushes to main too,
+# because Short builds often land there without a PR.
+name: Voice speed
+
+on:
+  pull_request:
+    paths:
+      - "02_Video-Projects/**/*.py"
+      - "02_Video-Projects/**/*.json"
+      - "docs/**/*.py"
+      - "docs/**/*.json"
+      - "00_Brand/Channel-Setup/tools/atempo_check.py"
+      - "00_Brand/Channel-Setup/tools/atempo_known_over_cap.json"
+      - "00_Brand/Channel-Setup/tools/test_atempo_check.py"
+      - ".github/workflows/voice-speed.yml"
+  push:
+    branches: [main]
+    paths:
+      - "02_Video-Projects/**/*.py"
+      - "02_Video-Projects/**/*.json"
+      - "docs/**/*.py"
+      - "docs/**/*.json"
+
+jobs:
+  atempo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python3 00_Brand/Channel-Setup/tools/test_atempo_check.py
+      - run: python3 00_Brand/Channel-Setup/tools/atempo_check.py
