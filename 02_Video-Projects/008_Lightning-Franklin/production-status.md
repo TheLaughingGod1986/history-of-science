@@ -163,3 +163,10 @@ Repository validation (record-only; not corrected-media approval):
 -- gate:episode: PASS
 ALL CHECKS PASS
 ```
+
+
+## J1881 — 4 November 2026
+
+Recipe scope review: FIX, production held. J2163 queued to repair timing/preservation, truthful verification and teaching labels; J1881 resumes on that input. See `07_Edit-Project/J1881_SCOPE_REVIEW.md`. No media PASS, six notes unresolved, J1755 delivery hold separate.
+
+Validation of review records (not media): `bash 00_Brand/Channel-Setup/tools/check_all.sh` output: **ALL CHECKS PASS**. `git diff --check` passed.
