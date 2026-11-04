@@ -163,3 +163,45 @@ Repository validation (record-only; not corrected-media approval):
 -- gate:episode: PASS
 ALL CHECKS PASS
 ```
+
+## 4 November 2026 — J1880 Franklin v03 six UAT corrections mapped & exact edit recipe prepared (Gemini worker)
+
+- **Authority & scope:** Queue job `J1880` (`HOS-008:v03:2026-11-03T16:08:33.439Z / J1868`), HOS `008` `edit` claimed by `gemini`. Correction preparation only: **£0 spend, 0 Flow/ElevenLabs credits spent, 0 media files modified or rendered, 0 watch-object/R2/YouTube actions.** All six Ben notes remain unresolved pending `J1881` elected-Chief scope review, correction execution, capable QA, and Ben's watch. Historical `h22`/`h35` approvals (`hos_008_master_v03.mp4`, `cf1561c218bace7bc14ed3d625b0790a457027a90f392262f45ca7172723099b`, `393,139,693` bytes, `12,923` video packets @ 24 fps, `539.626 s`) and `J1297` delivery are preserved untouched; `J1755` / PR `#401` browser delivery repair and automatic-publication rejection remain separate.
+- **Demonstrated media-input capability (`chief_relay.py capabilities`):** `gemini` demonstrated both `audio_input` and `moving_video_input` via native `read_file` perception on the 6 extracted moving-video + synchronized-audio segments (`01_00m20s.mp4`..`06_07m58s.mp4`) and candidate clips (`01_salon_tube_t1.mp4`, `03_audience_shock_t1.mp4`, `11_jar_crack_t1.mp4`, `21_roofs_golden_t1.mp4`, `01_house_rod_t1.mp4`), cross-checked against packet/PTS/frame boundaries of `hos_008_master_v03.mp4` and `hos_008_rough_v12.mp4` (`02db759e...`).
+- **Deliverables & handoff to `J1881` (elected Chief):**
+  1. `07_Edit-Project/J1880_SOURCE_INVENTORY_v04.json`: complete source inventory, exact display-frame/PTS/timeline/pre-trim intervals, adjacent cuts, spoken VO word windows, missing-footage search log (`9.5` cumulative active minutes across `1:49`, `2:20`, `7:58`; `<= 20 min` / `<= 3 candidates` per input), and Option A (£0 native) vs Option B (bounded Flow Veo 3.1 retakes on CDP `9222` for `P2:02_salon_spark` and `P5:13_rods_spread`: `<= 3` takes each, `30 cr` Fast or `300 cr` Quality cap per plate, live Flow balance `15,430` credits vs `0` floor).
+  2. `07_Edit-Project/_build_rough_v13_recipe.py`: exact new-version (`rough_v13 -> master_v04`) Python edit recipe preserving all `12,923` packets (`0` frame delta across `6` patched intervals = `919` frames patched, `12,004` frames unchanged) and `0.000 ms` `h35` VO sync.
+  3. `07_Edit-Project/J1868_UAT_CORRECTIONS.md`: updated with the 6-row source/defect/correction table, 6 acceptance checks, and Chief `J1881` decision summary.
+
+Dry-run recipe verification (`python3 02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_build_rough_v13_recipe.py --dry-run`):
+
+```json
+{
+  "status": "DRY_RUN_VERIFIED",
+  "master_v03": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_precheck/master_v03/hos_008_master_v03.mp4",
+  "expected_packets": 12923,
+  "patched_intervals": 6,
+  "patched_frames": 919,
+  "unchanged_frames": 12004,
+  "frame_count_delta": 0,
+  "vo_sync_lag_ms": 0.0,
+  "spend_gbp": 0.0
+}
+```
+
+Repository validation (`00_Brand/Channel-Setup/tools/check_all.sh 02_Video-Projects/008_Lightning-Franklin`, record-only; not corrected-media approval):
+
+```text
+-- durable desk handoffs: PASS
+-- no media: PASS
+-- status board in sync: PASS
+-- ElevenLabs guard tests: PASS
+-- vo_check word tests: PASS
+-- atempo check tests: PASS
+-- voice speed (atempo <= 1.06): PASS
+-- contract tests: PASS
+-- package-lint: PASS
+-- review:script lightning_script_master_v01.md: PASS
+-- gate:episode: PASS
+ALL CHECKS PASS
+```
