@@ -8,12 +8,12 @@
 | FACT_NOTES | Sourced from script new-claims; **7/7 hard-checks PASS**; Claude UNSIGNED |
 | Neighbour gate | **PASS — 5 education ≥1M; TED-Ed yes** |
 | Upload package | Manifest / description / tags / PRE_BUILD (UNSIGNED) / checklist scaffolded |
-| Picture | **Tranche 1 minted & KEEP** (J1192, 29 Oct: 57/57 Flow rows = 26 Quality + 31 Fast, 3,170 cr vs 7,354 expected / 7,585 cap; live Flow 15,380 >= 3,000 buffer) + 12 £0 code graphics (J0342/J0383) + 1 reuse = **70/90 rows**. Tranche 2 (20 Quality rows, 5,180 expected) waits for ~12 Nov renewal. |
+| Picture | **Tranche 1 minted & KEEP** (J1192, 29 Oct: 57/57 Flow rows = 26 Quality + 31 Fast, 3,170 cr vs 7,354 expected / 7,585 cap; live Flow 15,380 >= 3,000 buffer) + 12 £0 code graphics (J0342/J0383) + 1 reuse = **70/90 rows**. Tranche 2: **20 Quality rows remain**, now authorized by J2026 (4 Nov), hard cap6,000, max3 takes/row, >=3,000 headroom; worker J2033. |
 | VO | **LOCKED v01** (Chief KEEP, desk #180 comment 6101629662, 11 Oct). Retime 8:38.4 in `07_Edit-Project/VO_RETIME_v01.json`. |
 
 ## STOP
 
-- Tranche 1 is complete (57/57 KEEP) and Chief J1237 picture PASS with locked assembly in/outs on the v05 board; tranche 2 (20 Quality rows, 5,180 expected) waits for the ~12 Nov AI Ultra renewal.
+- Tranche 1 remains Chief J1237 PASS, with v05 locked trims. J2026 supersedes ONLY the old renewal-only wait and false generation flags for the20 named tranche2 rows; J2033 owns bounded production. Full picture is not complete; no edit/publishing approval.
 - Do not merge or close desk PR #180 from this work.
 - Does **not** close #180.
 
@@ -101,3 +101,13 @@ ALL CHECKS PASS
 PASS  02_Video-Projects/009_The-Falling-Moon-Gravity/11_Upload-Package/PACKAGE_MANIFEST.json
    warn  [captions] no captionsFile (captions from the script)
 ```
+
+## 4 Nov 2026 — J2026: funded tranche2 scope and production handoff (Codex acting Chief)
+
+Authority rechecked: Codex elected; Grok/Claude unavailable. HOS has2/4 November complete vs OWB5/4, so HOS priority. Live authenticated Ultra balance15,430; reset displayed12Nov19:13. Live Flow UI Veo3.1 Quality, Frames,16:9,720p,8s,x1 costs100. Default was Omni/x2: worker MUST verify approved model and one output. No generation or credits spent in this scope job.
+
+**Decision:** authorize exact20 remaining v05 Quality rows now, max3 takes/row, hard total6,000, batch<=5 rows/1,500. Preserve3,000 floor after remaining full cap and all other outstanding commitments. 15,430−6,000=9,430, leaving6,430 above floor. Prior7,550/5,605 reservations are fulfilled (J0352/J1191 done), not charged again. No active Flow mint process or new committed Flow production reservation identified; worker repeats reconciliation under writer lock. No money/overage/upgrade/Vertex/Omni. Scope and exact rows/board hashes: `07_Edit-Project/TRANCHE2_SCOPE_J2026.json`. Historical notes below/above retain the old wait as history, superseded here.
+
+**Chain:** J2033 video worker (Cursor, Codex/Gemini fallback) after J2026 -> J2034 elected-Chief picture review -> J2035 no-new-spend versioned assembly -> J2036 technical QA/package plus J1275 actual chapter retiming -> J2037 elected-Chief Ben-watch handoff. All have HOS:009 links in the existing queue. Queued is not claimed: no generation worker pickup observed at this checkpoint. Final-watch card only after real finished-cut gates and durable verified media. Ben's actual finished-film watch/listen applies under4Nov standing order; no worker perception invented.
+
+All57 tranche1 files exist locally and on NAS and match ledger sha256 (`TRANCHE1_INVENTORY_J2026.json`); accepted70/90 and existing completion percentage unchanged. Source facts signature remains historically UNSIGNED despite existing PIPELINE done: no new sign-off inferred. New graphics must composite named newly generated plates where boarded. J2034 must resolve callback P05:11_table_three_again1.20–7.90 against J1237 P01 source0–7 lock before edit; do not silently extend. Other locks: P04:07 0–3.760/hardout<=7.042; P04:10_c1 1.083–6.423/in>=1.083. Long narration stays locked; J0862 Shorts work does not block long picture. No YouTube/Buffer changes.
