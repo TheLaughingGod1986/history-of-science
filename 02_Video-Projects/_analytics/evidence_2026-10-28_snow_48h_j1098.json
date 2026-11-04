@@ -1,0 +1,3369 @@
+{
+  "job": "J1098",
+  "rulingRef": "6472484257",
+  "parentJob": "J0984",
+  "videoId": "OnJ8MFu0Mi0",
+  "title": "How Did John Snow Stop Cholera?",
+  "publishedAtUtc": "2026-10-26T11:30:12Z",
+  "mature48hBoundaryUtc": "2026-10-28T11:30:12Z",
+  "ageHoursAtStudioRead": 51.8,
+  "durationSeconds": {
+    "timelinePlan": 22.14,
+    "ffprobeContainer": 22.167,
+    "youtubeContentDetails": 23
+  },
+  "dataApiV3": {
+    "queriedAtUtc": "2026-10-28T15:09:05.998Z",
+    "viewCount": 214,
+    "likeCount": 8,
+    "commentCount": 0,
+    "morningSnapshot_0640Z": {
+      "takenAtUtc": "2026-10-28T06:40:32.861Z",
+      "viewCount": 213,
+      "likeCount": 7,
+      "commentCount": 0
+    }
+  },
+  "youtubeAnalyticsRestApiV2": {
+    "queriedAtUtc": "2026-10-28T15:09:25.736Z",
+    "endpoint": "https://youtubeanalytics.googleapis.com/v2/reports",
+    "windowQueried": {
+      "startDate": "2026-08-01",
+      "endDate": "2026-10-28"
+    },
+    "channelSettledThroughDate": "2026-10-25",
+    "channelRecentSettledDailyRows": [
+      [
+        "2026-10-20",
+        167,
+        16,
+        1,
+        4
+      ],
+      [
+        "2026-10-21",
+        125,
+        14,
+        1,
+        6
+      ],
+      [
+        "2026-10-22",
+        62,
+        17,
+        0,
+        2
+      ],
+      [
+        "2026-10-23",
+        52,
+        4,
+        0,
+        2
+      ],
+      [
+        "2026-10-24",
+        19,
+        2,
+        0,
+        0
+      ],
+      [
+        "2026-10-25",
+        11,
+        2,
+        0,
+        0
+      ]
+    ],
+    "queries": {
+      "videoSummary": {
+        "params": "ids=channel==MINE&startDate=2026-08-01&endDate=2026-10-28&metrics=views,estimatedMinutesWatched,averageViewDuration,averageViewPercentage,subscribersGained,subscribersLost,likes,comments,shares&filters=video==OnJ8MFu0Mi0",
+        "rows": []
+      },
+      "trafficSources": {
+        "params": "ids=channel==MINE&startDate=2026-08-01&endDate=2026-10-28&dimensions=insightTrafficSourceType&metrics=views,estimatedMinutesWatched,averageViewDuration,averageViewPercentage&filters=video==OnJ8MFu0Mi0&sort=-views",
+        "rows": []
+      },
+      "retentionCurve": {
+        "params": "ids=channel==MINE&startDate=2026-08-01&endDate=2026-10-28&dimensions=elapsedVideoTimeRatio&metrics=audienceWatchRatio,relativeRetentionPerformance&filters=video==OnJ8MFu0Mi0;audienceType==ORGANIC",
+        "rows": []
+      }
+    },
+    "statusNote": "Public YouTube Analytics v2 REST API daily reporting is settled through 2026-10-25 (2-3 day standard lag) and returns 0 rows for 2026-10-26..2026-10-28. Mature >=48h video analytics and the full 100-bucket retention curve are settled and captured directly from YouTube Studio yta_web/get_screen below."
+  },
+  "studioAnalyticsReads": {
+    "morningTrackerRead_0751Z": {
+      "sourceFile": "orbit-with-ben/05_Analytics/hos/studio_ctr.json",
+      "readAtUtc": "2026-10-28T07:51:04.462420Z",
+      "ageHours": 44.3,
+      "period": "lifetime",
+      "metrics": {
+        "views": 204,
+        "avgViewSeconds": 15,
+        "avgViewPct": 66.6,
+        "stayedToWatchPct": 28.0,
+        "impressions": 68,
+        "impressionsCtrPct": 2.9
+      }
+    },
+    "matureVideoAnalyticsRead_1519Z_1520Z": {
+      "domReadAtUtc": "2026-10-28T15:19:49.683Z",
+      "networkPayloadCapturedAtUtc": "2026-10-28T15:20:25Z",
+      "ageHours": 51.8,
+      "endpoint": "https://studio.youtube.com/youtubei/v1/yta_web/get_screen?alt=json",
+      "lifetimeAudienceRetentionCard": {
+        "metricTotals": {
+          "avgViewDurationMillis": 15017,
+          "avgPercentageWatched": 0.6529,
+          "views": 213,
+          "shortsFeedImpressionsVtr": 27.96
+        },
+        "views": 213,
+        "stayedToWatchPct": 27.96,
+        "stayedToWatchDisplayPct": 28.0,
+        "swipedAwayPct": 72.04,
+        "avgPercentageWatched": 65.29,
+        "avgPercentageWatchedDisplayPct": 65.3,
+        "avgViewDurationSeconds": 15.017,
+        "avgViewDurationDisplay": "0:15",
+        "retentionValues100": [
+          139.29,
+          139.29,
+          139.29,
+          135.71,
+          132.14,
+          132.14,
+          130.36,
+          121.43,
+          121.43,
+          119.64,
+          119.64,
+          119.64,
+          117.86,
+          117.86,
+          116.07,
+          114.29,
+          112.5,
+          112.5,
+          110.71,
+          110.71,
+          108.93,
+          105.36,
+          103.57,
+          101.79,
+          98.21,
+          94.64,
+          89.29,
+          85.71,
+          78.57,
+          78.57,
+          73.21,
+          71.43,
+          71.43,
+          71.43,
+          66.07,
+          64.29,
+          64.29,
+          62.5,
+          60.71,
+          58.93,
+          57.14,
+          55.36,
+          53.57,
+          53.57,
+          53.57,
+          53.57,
+          53.57,
+          53.57,
+          55.36,
+          55.36,
+          55.36,
+          53.57,
+          53.57,
+          53.57,
+          51.79,
+          51.79,
+          51.79,
+          51.79,
+          51.79,
+          51.79,
+          51.79,
+          51.79,
+          51.79,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          48.21,
+          48.21,
+          48.21,
+          46.43,
+          42.86,
+          41.07,
+          41.07,
+          41.07,
+          41.07,
+          41.07,
+          41.07,
+          41.07,
+          41.07,
+          41.07,
+          41.07,
+          41.07,
+          41.07,
+          39.29,
+          39.29,
+          39.29,
+          39.29,
+          39.29,
+          39.29,
+          39.29,
+          39.29,
+          39.29,
+          39.29,
+          39.29,
+          39.29,
+          39.29
+        ]
+      },
+      "sincePublishedOverviewAndEngagement": {
+        "views": 220,
+        "realtimeLast48hViews": 36,
+        "engagedViews": 62,
+        "uniqueViewers": 56,
+        "watchTimeHours": 0.3,
+        "engagedAvgViewDurationDisplay": "0:14",
+        "subscribersNetChange": 0,
+        "stayedToWatchPct": 28.31,
+        "stayedToWatchDisplayPct": 28.3,
+        "swipedAwayPct": 71.69,
+        "swipedAwayDisplayPct": 71.7,
+        "endScreenElementClickRatePct": 0.0,
+        "trafficSourcesSincePublishedPct": {
+          "shortsFeed": 92.7,
+          "youtubeSearch": 6.4,
+          "otherYoutubeFeatures": 0.9,
+          "directOrUnknown": 0.0
+        },
+        "overviewTopTrafficSourcesCardPct": {
+          "shortsFeed": 72.2,
+          "youtubeSearch": 27.8,
+          "directOrUnknown": 0.0,
+          "otherYoutubeFeatures": 0.0
+        },
+        "youtubeSearchTermsPct": {
+          "2020 lock down bedroom": 11.1,
+          "cholera disease": 11.1,
+          "mummy pregnant": 11.1
+        },
+        "devicePlatformWatchTimePct": {
+          "MOBILE": 69.54,
+          "TABLET": 25.99,
+          "DESKTOP": 2.38,
+          "TV": 2.08
+        },
+        "topCountryViewsPct": {
+          "GB": 45.54
+        },
+        "captionLanguageViewsPct": {
+          "none": 92.49,
+          "en": 3.29
+        },
+        "hourlyCumulativeViewsSincePublished": [
+          {
+            "x": 1793014212000,
+            "y": 0
+          },
+          {
+            "x": 1793017812000,
+            "y": 32
+          },
+          {
+            "x": 1793021412000,
+            "y": 51
+          },
+          {
+            "x": 1793025012000,
+            "y": 104
+          },
+          {
+            "x": 1793028612000,
+            "y": 169
+          },
+          {
+            "x": 1793032212000,
+            "y": 198
+          },
+          {
+            "x": 1793035812000,
+            "y": 202
+          },
+          {
+            "x": 1793039412000,
+            "y": 202
+          },
+          {
+            "x": 1793043012000,
+            "y": 202
+          },
+          {
+            "x": 1793046612000,
+            "y": 203
+          },
+          {
+            "x": 1793050212000,
+            "y": 203
+          },
+          {
+            "x": 1793053812000,
+            "y": 204
+          },
+          {
+            "x": 1793057412000,
+            "y": 204
+          },
+          {
+            "x": 1793061012000,
+            "y": 204
+          },
+          {
+            "x": 1793064612000,
+            "y": 204
+          },
+          {
+            "x": 1793068212000,
+            "y": 204
+          },
+          {
+            "x": 1793071812000,
+            "y": 204
+          },
+          {
+            "x": 1793075412000,
+            "y": 204
+          },
+          {
+            "x": 1793079012000,
+            "y": 204
+          },
+          {
+            "x": 1793082612000,
+            "y": 204
+          },
+          {
+            "x": 1793086212000,
+            "y": 204
+          },
+          {
+            "x": 1793089812000,
+            "y": 205
+          },
+          {
+            "x": 1793093412000,
+            "y": 205
+          },
+          {
+            "x": 1793097012000,
+            "y": 206
+          },
+          {
+            "x": 1793100612000,
+            "y": 206
+          },
+          {
+            "x": 1793104212000,
+            "y": 208
+          },
+          {
+            "x": 1793107812000,
+            "y": 208
+          },
+          {
+            "x": 1793111412000,
+            "y": 209
+          },
+          {
+            "x": 1793115012000,
+            "y": 209
+          },
+          {
+            "x": 1793118612000,
+            "y": 212
+          },
+          {
+            "x": 1793122212000,
+            "y": 212
+          },
+          {
+            "x": 1793125812000,
+            "y": 212
+          },
+          {
+            "x": 1793129412000,
+            "y": 212
+          },
+          {
+            "x": 1793133012000,
+            "y": 212
+          },
+          {
+            "x": 1793136612000,
+            "y": 213
+          },
+          {
+            "x": 1793140212000,
+            "y": 213
+          },
+          {
+            "x": 1793143812000,
+            "y": 213
+          },
+          {
+            "x": 1793147412000,
+            "y": 213
+          },
+          {
+            "x": 1793151012000,
+            "y": 213
+          },
+          {
+            "x": 1793154612000,
+            "y": 213
+          },
+          {
+            "x": 1793158212000,
+            "y": 213
+          },
+          {
+            "x": 1793161812000,
+            "y": 213
+          },
+          {
+            "x": 1793165412000,
+            "y": 213
+          },
+          {
+            "x": 1793169012000,
+            "y": 213
+          },
+          {
+            "x": 1793172612000,
+            "y": 213
+          },
+          {
+            "x": 1793176212000,
+            "y": 213
+          },
+          {
+            "x": 1793179812000,
+            "y": 213
+          },
+          {
+            "x": 1793183412000,
+            "y": 214
+          },
+          {
+            "x": 1793187012000,
+            "y": 218
+          },
+          {
+            "x": 1793190612000,
+            "y": 219
+          },
+          {
+            "x": 1793194212000,
+            "y": 220
+          },
+          {
+            "x": 1793197812000,
+            "y": 220
+          },
+          {
+            "x": 1793200822243,
+            "y": 220
+          }
+        ]
+      }
+    },
+    "matureChannelExploreTableLifetime_1523Z": {
+      "readAtUtc": "2026-10-28T15:23:27.792Z",
+      "ageHours": 51.9,
+      "columns": [
+        "views",
+        "avgPercentageViewed",
+        "stayedToWatchPct",
+        "avgViewDuration",
+        "impressions",
+        "impressionsCtrPct"
+      ],
+      "snowRow": {
+        "videoId": "OnJ8MFu0Mi0",
+        "title": "How Did John Snow Stop Cholera?",
+        "views": 213,
+        "avgPercentageViewed": 65.3,
+        "stayedToWatchPct": 28.0,
+        "avgViewDuration": "0:15",
+        "impressions": 129,
+        "impressionsCtrPct": 1.6
+      },
+      "standaloneCohortRows": {
+        "c2q7w0pgcn8": {
+          "title": "Who Discovered Infrared Light?",
+          "airDate": "2026-10-19",
+          "views": 134,
+          "avgPercentageViewed": 105.6,
+          "stayedToWatchPct": 43.4,
+          "avgViewDuration": "0:24",
+          "impressions": 229,
+          "impressionsCtrPct": 6.1
+        },
+        "oKqmnJNGiHg": {
+          "title": "How Was Phosphorus Discovered?",
+          "airDate": "2026-10-21",
+          "views": 171,
+          "avgPercentageViewed": 86.6,
+          "stayedToWatchPct": 40.0,
+          "avgViewDuration": "0:19",
+          "impressions": 306,
+          "impressionsCtrPct": 3.9
+        },
+        "OnJ8MFu0Mi0": {
+          "title": "How Did John Snow Stop Cholera?",
+          "airDate": "2026-10-26",
+          "views": 213,
+          "avgPercentageViewed": 65.3,
+          "stayedToWatchPct": 28.0,
+          "avgViewDuration": "0:15",
+          "impressions": 129,
+          "impressionsCtrPct": 1.6
+        }
+      }
+    }
+  },
+  "twoTargetGrading": {
+    "sampleStatus": "mature_ge_48h_and_ge_100_studio_views",
+    "studioViewsLifetime": 213,
+    "studioViewsSincePublished": 220,
+    "stayedToWatchTarget60": {
+      "floorPct": 60.0,
+      "measuredLifetimePct": 27.96,
+      "measuredDisplayPct": 28.0,
+      "measuredSincePublishedPct": 28.31,
+      "grade": "MISS",
+      "rulesEvaluated": {
+        "R1_movingFrame0": "FAIL (plates_v01/s3/05_handle_off_v03.jpg NB2 still zoom 1.52->1.22 over 4.66s; mean 0-1.5s frame diff 0.47 < 1.50)",
+        "R2_positiveQuestionTitle": "PASS (How Did John Snow Stop Cholera?)",
+        "R3_subjectAndSurpriseBy1_5s": "FAIL (VO starts at 0.10s with \"In 1854,\" [0.10-1.42s] + 0.24s pause [1.42-1.66s]; \"a killer was hiding\" lands at 1.66-2.74s and \"water pump\" at 2.98-3.64s > 1.50s)",
+        "R4_firstCutBy3_0s_laterMax4_0s": "FAIL (first cut at 4.66s > 3.0s; s02 still 02_soho_1854_v01.jpg held 6.38s [4.66-11.04s] > 4.0s; s05 still held 4.32s [17.82-22.14s] > 4.0s)",
+        "R5_loopTailLe1_5s_noCta": "PASS (last word \"water\" ends at 21.54s [stt] / 21.84s [caption], tail 0.30-0.60s <= 1.5s, no CTA, returns to 05_handle_off_v03.jpg)",
+        "R6_noMetaPromiseOrSetup": "PASS on no meta-promise (chronological dateline \"In 1854,\" recorded under R3)"
+      }
+    },
+    "avgViewedTarget70": {
+      "floorPct": 70.0,
+      "measuredLifetimePct": 65.29,
+      "measuredDisplayPct": 65.3,
+      "avdSeconds": 15.017,
+      "avdDisplay": "0:15",
+      "avdNote": "AVD (0:15 / 15.017s) is the mean view duration across views and is never used to locate viewer exit timestamps.",
+      "grade": "WATCH",
+      "diagnostics": {
+        "runtimeSeconds": 22.14,
+        "maxPlateHoldSeconds": 6.38,
+        "payoffLine": "He had its handle taken off. The killer was in the water",
+        "payoffStartSeconds": 17.94,
+        "payoffStartRatioPct": 81.0,
+        "payoffStartMeets70PctRule": true,
+        "tailGapSeconds": 0.6,
+        "loopsIntoLine1": true
+      }
+    }
+  },
+  "retentionCurveAnalysis": {
+    "largestSingleBucketDrop": {
+      "fromBucket": 7,
+      "toBucket": 8,
+      "ratioWindow": [
+        0.07,
+        0.08
+      ],
+      "timeWindowEdit22_14s": [
+        1.55,
+        1.77
+      ],
+      "timeWindowFfprobe22_167s": [
+        1.55,
+        1.77
+      ],
+      "fromPct": 130.36,
+      "toPct": 121.43,
+      "deltaPp": -8.93,
+      "onScreenAndSaid": "Plate s01 (plates_v01/s3/05_handle_off_v03.jpg, 0.00-4.66s NB2 still zoom-out + hook overlay THE KILLER PUMP 0.0-2.6s); VO is in the 0.24s pause (1.42-1.66s) immediately after \"In 1854,\" (0.10-1.42s) as \"a\" (1.66-1.76s) begins before \"killer\" (1.82-2.14s)."
+    },
+    "secondLargestSingleBucketDrop": {
+      "fromBucket": 28,
+      "toBucket": 29,
+      "ratioWindow": [
+        0.28,
+        0.29
+      ],
+      "timeWindowEdit22_14s": [
+        6.2,
+        6.42
+      ],
+      "timeWindowFfprobe22_167s": [
+        6.21,
+        6.43
+      ],
+      "fromPct": 85.71,
+      "toPct": 78.57,
+      "deltaPp": -7.14,
+      "onScreenAndSaid": "Plate s02 (plates_v01/s3/02_soho_1854_v01.jpg, 4.66-11.04s, 6.38s NB2 still hold); VO finishes \"hundreds\" (5.80-6.22s) and says \"in\" (6.26-6.40s) before \"Soho,\" (6.46-6.90s)."
+    },
+    "largestContiguousMultiBucketDrop": {
+      "fromBucket": 21,
+      "toBucket": 32,
+      "ratioWindow": [
+        0.21,
+        0.32
+      ],
+      "timeWindowEdit22_14s": [
+        4.65,
+        7.08
+      ],
+      "timeWindowFfprobe22_167s": [
+        4.66,
+        7.09
+      ],
+      "fromPct": 108.93,
+      "toPct": 71.43,
+      "deltaPp": -37.5,
+      "extendedDeclineToBucket43": {
+        "fromBucket": 21,
+        "toBucket": 43,
+        "timeWindowEdit22_14s": [
+          4.65,
+          9.52
+        ],
+        "fromPct": 108.93,
+        "toPct": 53.57,
+        "deltaPp": -55.36
+      },
+      "onScreenAndSaid": "Begins right at the 4.66s cut from s01 (05_handle_off_v03.jpg, after a 1.14s VO silence 3.64-4.78s following \"pump.\") into the 6.38s still s02 (02_soho_1854_v01.jpg, 4.66-11.04s) while VO says \"Cholera was killing hundreds in Soho, London, and many still blamed bad air.\" (4.78-9.98s)."
+    },
+    "lateDropAndPayoffPlateau": {
+      "dropWindowBuckets": [
+        70,
+        76
+      ],
+      "timeWindowEdit22_14s": [
+        15.5,
+        16.83
+      ],
+      "fromPct": 50.0,
+      "toPct": 41.07,
+      "deltaPp": -8.93,
+      "payoffPlateauBuckets": [
+        76,
+        87
+      ],
+      "payoffPlateauTimeEdit22_14s": [
+        16.83,
+        19.26
+      ],
+      "payoffPlateauPct": 41.07,
+      "endPlateauBuckets": [
+        88,
+        100
+      ],
+      "endPlateauTimeEdit22_14s": [
+        19.48,
+        22.14
+      ],
+      "endPlateauPct": 39.29,
+      "onScreenAndSaid": "Across b70->b76 (15.50-16.83s, on s04 04_map_bars_v01.jpg 14.72-17.82s), retention steps down -8.93 pp (50.00% -> 41.07%, incl. -3.57 pp at b74->b75, 16.38-16.61s) as VO says \"round one pump on Broad Street\" (15.46-17.34s). It then holds flat at 41.07% across b76..b87 (16.83-19.26s) across the 17.82s cut to s05 (05_handle_off_v03.jpg) and payoff \"He had its handle taken off\" (17.94-19.44s), steps -1.78 pp at b87->b88 (19.26-19.48s) in the 0.80s pause (19.44-20.24s), and holds flat at 39.29% across b88..b100 (19.48-22.14s) through \"The killer was in the water\" (20.24-21.54s) and the 0.60s loop tail."
+    },
+    "top15SingleBucketDrops": [
+      {
+        "bucket": 8,
+        "ratio": 0.08,
+        "t_window_edit_22_14s": [
+          1.55,
+          1.77
+        ],
+        "t_window_ffprobe_22_167s": [
+          1.55,
+          1.77
+        ],
+        "retention_pct": 121.43,
+        "delta_pp_from_prev": -8.93,
+        "plates": [
+          "plates_v01/s3/05_handle_off_v03.jpg"
+        ],
+        "words": [
+          "a"
+        ],
+        "overlays": [
+          "THE KILLER PUMP",
+          "In 1854,",
+          "a killer was hiding"
+        ]
+      },
+      {
+        "bucket": 29,
+        "ratio": 0.29,
+        "t_window_edit_22_14s": [
+          6.2,
+          6.42
+        ],
+        "t_window_ffprobe_22_167s": [
+          6.21,
+          6.43
+        ],
+        "retention_pct": 78.57,
+        "delta_pp_from_prev": -7.14,
+        "plates": [
+          "plates_v01/s3/02_soho_1854_v01.jpg"
+        ],
+        "words": [
+          "hundreds",
+          "in"
+        ],
+        "overlays": [
+          "Cholera was killing hundreds",
+          "in Soho,"
+        ]
+      },
+      {
+        "bucket": 31,
+        "ratio": 0.31,
+        "t_window_edit_22_14s": [
+          6.64,
+          6.86
+        ],
+        "t_window_ffprobe_22_167s": [
+          6.65,
+          6.87
+        ],
+        "retention_pct": 73.21,
+        "delta_pp_from_prev": -5.36,
+        "plates": [
+          "plates_v01/s3/02_soho_1854_v01.jpg"
+        ],
+        "words": [
+          "Soho,"
+        ],
+        "overlays": [
+          "in Soho,"
+        ]
+      },
+      {
+        "bucket": 35,
+        "ratio": 0.35,
+        "t_window_edit_22_14s": [
+          7.53,
+          7.75
+        ],
+        "t_window_ffprobe_22_167s": [
+          7.54,
+          7.76
+        ],
+        "retention_pct": 66.07,
+        "delta_pp_from_prev": -5.36,
+        "plates": [
+          "plates_v01/s3/02_soho_1854_v01.jpg"
+        ],
+        "words": [],
+        "overlays": [
+          "London, and many"
+        ]
+      },
+      {
+        "bucket": 27,
+        "ratio": 0.27,
+        "t_window_edit_22_14s": [
+          5.76,
+          5.98
+        ],
+        "t_window_ffprobe_22_167s": [
+          5.76,
+          5.99
+        ],
+        "retention_pct": 89.29,
+        "delta_pp_from_prev": -5.35,
+        "plates": [
+          "plates_v01/s3/02_soho_1854_v01.jpg"
+        ],
+        "words": [
+          "hundreds"
+        ],
+        "overlays": [
+          "Cholera was killing hundreds"
+        ]
+      },
+      {
+        "bucket": 4,
+        "ratio": 0.04,
+        "t_window_edit_22_14s": [
+          0.66,
+          0.89
+        ],
+        "t_window_ffprobe_22_167s": [
+          0.67,
+          0.89
+        ],
+        "retention_pct": 135.71,
+        "delta_pp_from_prev": -3.58,
+        "plates": [
+          "plates_v01/s3/05_handle_off_v03.jpg"
+        ],
+        "words": [
+          "1854,"
+        ],
+        "overlays": [
+          "THE KILLER PUMP",
+          "In 1854,"
+        ]
+      },
+      {
+        "bucket": 25,
+        "ratio": 0.25,
+        "t_window_edit_22_14s": [
+          5.31,
+          5.54
+        ],
+        "t_window_ffprobe_22_167s": [
+          5.32,
+          5.54
+        ],
+        "retention_pct": 98.21,
+        "delta_pp_from_prev": -3.58,
+        "plates": [
+          "plates_v01/s3/02_soho_1854_v01.jpg"
+        ],
+        "words": [
+          "was",
+          "killing"
+        ],
+        "overlays": [
+          "Cholera was killing hundreds"
+        ]
+      },
+      {
+        "bucket": 28,
+        "ratio": 0.28,
+        "t_window_edit_22_14s": [
+          5.98,
+          6.2
+        ],
+        "t_window_ffprobe_22_167s": [
+          5.99,
+          6.21
+        ],
+        "retention_pct": 85.71,
+        "delta_pp_from_prev": -3.58,
+        "plates": [
+          "plates_v01/s3/02_soho_1854_v01.jpg"
+        ],
+        "words": [
+          "hundreds"
+        ],
+        "overlays": [
+          "Cholera was killing hundreds"
+        ]
+      },
+      {
+        "bucket": 5,
+        "ratio": 0.05,
+        "t_window_edit_22_14s": [
+          0.89,
+          1.11
+        ],
+        "t_window_ffprobe_22_167s": [
+          0.89,
+          1.11
+        ],
+        "retention_pct": 132.14,
+        "delta_pp_from_prev": -3.57,
+        "plates": [
+          "plates_v01/s3/05_handle_off_v03.jpg"
+        ],
+        "words": [
+          "1854,"
+        ],
+        "overlays": [
+          "THE KILLER PUMP",
+          "In 1854,"
+        ]
+      },
+      {
+        "bucket": 22,
+        "ratio": 0.22,
+        "t_window_edit_22_14s": [
+          4.65,
+          4.87
+        ],
+        "t_window_ffprobe_22_167s": [
+          4.66,
+          4.88
+        ],
+        "retention_pct": 105.36,
+        "delta_pp_from_prev": -3.57,
+        "plates": [
+          "plates_v01/s3/05_handle_off_v03.jpg",
+          "plates_v01/s3/02_soho_1854_v01.jpg"
+        ],
+        "words": [
+          "Cholera"
+        ],
+        "overlays": [
+          "in a water pump.",
+          "Cholera was killing hundreds"
+        ]
+      },
+      {
+        "bucket": 26,
+        "ratio": 0.26,
+        "t_window_edit_22_14s": [
+          5.54,
+          5.76
+        ],
+        "t_window_ffprobe_22_167s": [
+          5.54,
+          5.76
+        ],
+        "retention_pct": 94.64,
+        "delta_pp_from_prev": -3.57,
+        "plates": [
+          "plates_v01/s3/02_soho_1854_v01.jpg"
+        ],
+        "words": [
+          "killing"
+        ],
+        "overlays": [
+          "Cholera was killing hundreds"
+        ]
+      },
+      {
+        "bucket": 75,
+        "ratio": 0.75,
+        "t_window_edit_22_14s": [
+          16.38,
+          16.61
+        ],
+        "t_window_ffprobe_22_167s": [
+          16.4,
+          16.63
+        ],
+        "retention_pct": 42.86,
+        "delta_pp_from_prev": -3.57,
+        "plates": [
+          "plates_v01/s3/04_map_bars_v01.jpg"
+        ],
+        "words": [
+          "on",
+          "Broad"
+        ],
+        "overlays": [
+          "pump on Broad Street."
+        ]
+      },
+      {
+        "bucket": 10,
+        "ratio": 0.1,
+        "t_window_edit_22_14s": [
+          1.99,
+          2.21
+        ],
+        "t_window_ffprobe_22_167s": [
+          2.0,
+          2.22
+        ],
+        "retention_pct": 119.64,
+        "delta_pp_from_prev": -1.79,
+        "plates": [
+          "plates_v01/s3/05_handle_off_v03.jpg"
+        ],
+        "words": [
+          "killer",
+          "was"
+        ],
+        "overlays": [
+          "THE KILLER PUMP",
+          "a killer was hiding"
+        ]
+      },
+      {
+        "bucket": 15,
+        "ratio": 0.15,
+        "t_window_edit_22_14s": [
+          3.1,
+          3.32
+        ],
+        "t_window_ffprobe_22_167s": [
+          3.1,
+          3.33
+        ],
+        "retention_pct": 116.07,
+        "delta_pp_from_prev": -1.79,
+        "plates": [
+          "plates_v01/s3/05_handle_off_v03.jpg"
+        ],
+        "words": [
+          "water"
+        ],
+        "overlays": [
+          "in a water pump."
+        ]
+      },
+      {
+        "bucket": 17,
+        "ratio": 0.17,
+        "t_window_edit_22_14s": [
+          3.54,
+          3.76
+        ],
+        "t_window_ffprobe_22_167s": [
+          3.55,
+          3.77
+        ],
+        "retention_pct": 112.5,
+        "delta_pp_from_prev": -1.79,
+        "plates": [
+          "plates_v01/s3/05_handle_off_v03.jpg"
+        ],
+        "words": [
+          "pump."
+        ],
+        "overlays": [
+          "in a water pump."
+        ]
+      }
+    ],
+    "buckets100": [
+      {
+        "bucket": 1,
+        "ratio": 0.01,
+        "t_window_edit_22_14s": [
+          0.0,
+          0.22
+        ],
+        "t_window_ffprobe_22_167s": [
+          0.0,
+          0.22
+        ],
+        "retention_pct": 139.29,
+        "delta_pp_from_prev": 0.0,
+        "plates": [
+          "plates_v01/s3/05_handle_off_v03.jpg"
+        ],
+        "words": [
+          "In",
+          "1854,"
+        ],
+        "overlays": [
+          "THE KILLER PUMP",
+          "In 1854,"
+        ]
+      },
+      {
+        "bucket": 2,
+        "ratio": 0.02,
+        "t_window_edit_22_14s": [
+          0.22,
+          0.44
+        ],
+        "t_window_ffprobe_22_167s": [
+          0.22,
+          0.44
+        ],
+        "retention_pct": 139.29,
+        "delta_pp_from_prev": 0.0,
+        "plates": [
+          "plates_v01/s3/05_handle_off_v03.jpg"
+        ],
+        "words": [
+          "1854,"
+        ],
+        "overlays": [
+          "THE KILLER PUMP",
+          "In 1854,"
+        ]
+      },
+      {
+        "bucket": 3,
+        "ratio": 0.03,
+        "t_window_edit_22_14s": [
+          0.44,
+          0.66
+        ],
+        "t_window_ffprobe_22_167s": [
+          0.44,
+          0.67
+        ],
+        "retention_pct": 139.29,
+        "delta_pp_from_prev": 0.0,
+        "plates": [
+          "plates_v01/s3/05_handle_off_v03.jpg"
+        ],
+        "words": [
+          "1854,"
+        ],
+        "overlays": [
+          "THE KILLER PUMP",
+          "In 1854,"
+        ]
+      },
+      {
+        "bucket": 4,
+        "ratio": 0.04,
+        "t_window_edit_22_14s": [
+          0.66,
+          0.89
+        ],
+        "t_window_ffprobe_22_167s": [
+          0.67,
+          0.89
+        ],
+        "retention_pct": 135.71,
+        "delta_pp_from_prev": -3.58,
+        "plates": [
+          "plates_v01/s3/05_handle_off_v03.jpg"
+        ],
+        "words": [
+          "1854,"
+        ],
+        "overlays": [
+          "THE KILLER PUMP",
+          "In 1854,"
+        ]
+      },
+      {
+        "bucket": 5,
+        "ratio": 0.05,
+        "t_window_edit_22_14s": [
+          0.89,
+          1.11
+        ],
+        "t_window_ffprobe_22_167s": [
+          0.89,
+          1.11
+        ],
+        "retention_pct": 132.14,
+        "delta_pp_from_prev": -3.57,
+        "plates": [
+          "plates_v01/s3/05_handle_off_v03.jpg"
+        ],
+        "words": [
+          "1854,"
+        ],
+        "overlays": [
+          "THE KILLER PUMP",
+          "In 1854,"
+        ]
+      },
+      {
+        "bucket": 6,
+        "ratio": 0.06,
+        "t_window_edit_22_14s": [
+          1.11,
+          1.33
+        ],
+        "t_window_ffprobe_22_167s": [
+          1.11,
+          1.33
+        ],
+        "retention_pct": 132.14,
+        "delta_pp_from_prev": 0.0,
+        "plates": [
+          "plates_v01/s3/05_handle_off_v03.jpg"
+        ],
+        "words": [
+          "1854,"
+        ],
+        "overlays": [
+          "THE KILLER PUMP",
+          "In 1854,"
+        ]
+      },
+      {
+        "bucket": 7,
+        "ratio": 0.07,
+        "t_window_edit_22_14s": [
+          1.33,
+          1.55
+        ],
+        "t_window_ffprobe_22_167s": [
+          1.33,
+          1.55
+        ],
+        "retention_pct": 130.36,
+        "delta_pp_from_prev": -1.78,
+        "plates": [
+          "plates_v01/s3/05_handle_off_v03.jpg"
+        ],
+        "words": [
+          "1854,"
+        ],
+        "overlays": [
+          "THE KILLER PUMP",
+          "In 1854,"
+        ]
+      },
+      {
+        "bucket": 8,
+        "ratio": 0.08,
+        "t_window_edit_22_14s": [
+          1.55,
+          1.77
+        ],
+        "t_window_ffprobe_22_167s": [
+          1.55,
+          1.77
+        ],
+        "retention_pct": 121.43,
+        "delta_pp_from_prev": -8.93,
+        "plates": [
+          "plates_v01/s3/05_handle_off_v03.jpg"
+        ],
+        "words": [
+          "a"
+        ],
+        "overlays": [
+          "THE KILLER PUMP",
+          "In 1854,",
+          "a killer was hiding"
+        ]
+      },
+      {
+        "bucket": 9,
+        "ratio": 0.09,
+        "t_window_edit_22_14s": [
+          1.77,
+          1.99
+        ],
+        "t_window_ffprobe_22_167s": [
+          1.77,
+          2.0
+        ],
+        "retention_pct": 121.43,
+        "delta_pp_from_prev": 0.0,
+        "plates": [
+          "plates_v01/s3/05_handle_off_v03.jpg"
+        ],
+        "words": [
+          "killer"
+        ],
+        "overlays": [
+          "THE KILLER PUMP",
+          "a killer was hiding"
+        ]
+      },
+      {
+        "bucket": 10,
+        "ratio": 0.1,
+        "t_window_edit_22_14s": [
+          1.99,
+          2.21
+        ],
+        "t_window_ffprobe_22_167s": [
+          2.0,
+          2.22
+        ],
+        "retention_pct": 119.64,
+        "delta_pp_from_prev": -1.79,
+        "plates": [
+          "plates_v01/s3/05_handle_off_v03.jpg"
+        ],
+        "words": [
+          "killer",
+          "was"
+        ],
+        "overlays": [
+          "THE KILLER PUMP",
+          "a killer was hiding"
+        ]
+      },
+      {
+        "bucket": 11,
+        "ratio": 0.11,
+        "t_window_edit_22_14s": [
+          2.21,
+          2.44
+        ],
+        "t_window_ffprobe_22_167s": [
+          2.22,
+          2.44
+        ],
+        "retention_pct": 119.64,
+        "delta_pp_from_prev": 0.0,
+        "plates": [
+          "plates_v01/s3/05_handle_off_v03.jpg"
+        ],
+        "words": [
+          "was",
+          "hiding"
+        ],
+        "overlays": [
+          "THE KILLER PUMP",
+          "a killer was hiding"
+        ]
+      },
+      {
+        "bucket": 12,
+        "ratio": 0.12,
+        "t_window_edit_22_14s": [
+          2.44,
+          2.66
+        ],
+        "t_window_ffprobe_22_167s": [
+          2.44,
+          2.66
+        ],
+        "retention_pct": 119.64,
+        "delta_pp_from_prev": 0.0,
+        "plates": [
+          "plates_v01/s3/05_handle_off_v03.jpg"
+        ],
+        "words": [
+          "hiding"
+        ],
+        "overlays": [
+          "THE KILLER PUMP",
+          "a killer was hiding"
+        ]
+      },
+      {
+        "bucket": 13,
+        "ratio": 0.13,
+        "t_window_edit_22_14s": [
+          2.66,
+          2.88
+        ],
+        "t_window_ffprobe_22_167s": [
+          2.66,
+          2.88
+        ],
+        "retention_pct": 117.86,
+        "delta_pp_from_prev": -1.78,
+        "plates": [
+          "plates_v01/s3/05_handle_off_v03.jpg"
+        ],
+        "words": [
+          "hiding",
+          "in"
+        ],
+        "overlays": [
+          "a killer was hiding",
+          "in a water pump."
+        ]
+      },
+      {
+        "bucket": 14,
+        "ratio": 0.14,
+        "t_window_edit_22_14s": [
+          2.88,
+          3.1
+        ],
+        "t_window_ffprobe_22_167s": [
+          2.88,
+          3.1
+        ],
+        "retention_pct": 117.86,
+        "delta_pp_from_prev": 0.0,
+        "plates": [
+          "plates_v01/s3/05_handle_off_v03.jpg"
+        ],
+        "words": [
+          "a",
+          "water"
+        ],
+        "overlays": [
+          "in a water pump."
+        ]
+      },
+      {
+        "bucket": 15,
+        "ratio": 0.15,
+        "t_window_edit_22_14s": [
+          3.1,
+          3.32
+        ],
+        "t_window_ffprobe_22_167s": [
+          3.1,
+          3.33
+        ],
+        "retention_pct": 116.07,
+        "delta_pp_from_prev": -1.79,
+        "plates": [
+          "plates_v01/s3/05_handle_off_v03.jpg"
+        ],
+        "words": [
+          "water"
+        ],
+        "overlays": [
+          "in a water pump."
+        ]
+      },
+      {
+        "bucket": 16,
+        "ratio": 0.16,
+        "t_window_edit_22_14s": [
+          3.32,
+          3.54
+        ],
+        "t_window_ffprobe_22_167s": [
+          3.33,
+          3.55
+        ],
+        "retention_pct": 114.29,
+        "delta_pp_from_prev": -1.78,
+        "plates": [
+          "plates_v01/s3/05_handle_off_v03.jpg"
+        ],
+        "words": [
+          "pump."
+        ],
+        "overlays": [
+          "in a water pump."
+        ]
+      },
+      {
+        "bucket": 17,
+        "ratio": 0.17,
+        "t_window_edit_22_14s": [
+          3.54,
+          3.76
+        ],
+        "t_window_ffprobe_22_167s": [
+          3.55,
+          3.77
+        ],
+        "retention_pct": 112.5,
+        "delta_pp_from_prev": -1.79,
+        "plates": [
+          "plates_v01/s3/05_handle_off_v03.jpg"
+        ],
+        "words": [
+          "pump."
+        ],
+        "overlays": [
+          "in a water pump."
+        ]
+      },
+      {
+        "bucket": 18,
+        "ratio": 0.18,
+        "t_window_edit_22_14s": [
+          3.76,
+          3.99
+        ],
+        "t_window_ffprobe_22_167s": [
+          3.77,
+          3.99
+        ],
+        "retention_pct": 112.5,
+        "delta_pp_from_prev": 0.0,
+        "plates": [
+          "plates_v01/s3/05_handle_off_v03.jpg"
+        ],
+        "words": [],
+        "overlays": [
+          "in a water pump."
+        ]
+      },
+      {
+        "bucket": 19,
+        "ratio": 0.19,
+        "t_window_edit_22_14s": [
+          3.99,
+          4.21
+        ],
+        "t_window_ffprobe_22_167s": [
+          3.99,
+          4.21
+        ],
+        "retention_pct": 110.71,
+        "delta_pp_from_prev": -1.79,
+        "plates": [
+          "plates_v01/s3/05_handle_off_v03.jpg"
+        ],
+        "words": [],
+        "overlays": [
+          "in a water pump."
+        ]
+      },
+      {
+        "bucket": 20,
+        "ratio": 0.2,
+        "t_window_edit_22_14s": [
+          4.21,
+          4.43
+        ],
+        "t_window_ffprobe_22_167s": [
+          4.21,
+          4.43
+        ],
+        "retention_pct": 110.71,
+        "delta_pp_from_prev": 0.0,
+        "plates": [
+          "plates_v01/s3/05_handle_off_v03.jpg"
+        ],
+        "words": [],
+        "overlays": [
+          "in a water pump."
+        ]
+      },
+      {
+        "bucket": 21,
+        "ratio": 0.21,
+        "t_window_edit_22_14s": [
+          4.43,
+          4.65
+        ],
+        "t_window_ffprobe_22_167s": [
+          4.43,
+          4.66
+        ],
+        "retention_pct": 108.93,
+        "delta_pp_from_prev": -1.78,
+        "plates": [
+          "plates_v01/s3/05_handle_off_v03.jpg"
+        ],
+        "words": [],
+        "overlays": [
+          "in a water pump."
+        ]
+      },
+      {
+        "bucket": 22,
+        "ratio": 0.22,
+        "t_window_edit_22_14s": [
+          4.65,
+          4.87
+        ],
+        "t_window_ffprobe_22_167s": [
+          4.66,
+          4.88
+        ],
+        "retention_pct": 105.36,
+        "delta_pp_from_prev": -3.57,
+        "plates": [
+          "plates_v01/s3/05_handle_off_v03.jpg",
+          "plates_v01/s3/02_soho_1854_v01.jpg"
+        ],
+        "words": [
+          "Cholera"
+        ],
+        "overlays": [
+          "in a water pump.",
+          "Cholera was killing hundreds"
+        ]
+      },
+      {
+        "bucket": 23,
+        "ratio": 0.23,
+        "t_window_edit_22_14s": [
+          4.87,
+          5.09
+        ],
+        "t_window_ffprobe_22_167s": [
+          4.88,
+          5.1
+        ],
+        "retention_pct": 103.57,
+        "delta_pp_from_prev": -1.79,
+        "plates": [
+          "plates_v01/s3/02_soho_1854_v01.jpg"
+        ],
+        "words": [
+          "Cholera"
+        ],
+        "overlays": [
+          "Cholera was killing hundreds"
+        ]
+      },
+      {
+        "bucket": 24,
+        "ratio": 0.24,
+        "t_window_edit_22_14s": [
+          5.09,
+          5.31
+        ],
+        "t_window_ffprobe_22_167s": [
+          5.1,
+          5.32
+        ],
+        "retention_pct": 101.79,
+        "delta_pp_from_prev": -1.78,
+        "plates": [
+          "plates_v01/s3/02_soho_1854_v01.jpg"
+        ],
+        "words": [
+          "Cholera",
+          "was"
+        ],
+        "overlays": [
+          "Cholera was killing hundreds"
+        ]
+      },
+      {
+        "bucket": 25,
+        "ratio": 0.25,
+        "t_window_edit_22_14s": [
+          5.31,
+          5.54
+        ],
+        "t_window_ffprobe_22_167s": [
+          5.32,
+          5.54
+        ],
+        "retention_pct": 98.21,
+        "delta_pp_from_prev": -3.58,
+        "plates": [
+          "plates_v01/s3/02_soho_1854_v01.jpg"
+        ],
+        "words": [
+          "was",
+          "killing"
+        ],
+        "overlays": [
+          "Cholera was killing hundreds"
+        ]
+      },
+      {
+        "bucket": 26,
+        "ratio": 0.26,
+        "t_window_edit_22_14s": [
+          5.54,
+          5.76
+        ],
+        "t_window_ffprobe_22_167s": [
+          5.54,
+          5.76
+        ],
+        "retention_pct": 94.64,
+        "delta_pp_from_prev": -3.57,
+        "plates": [
+          "plates_v01/s3/02_soho_1854_v01.jpg"
+        ],
+        "words": [
+          "killing"
+        ],
+        "overlays": [
+          "Cholera was killing hundreds"
+        ]
+      },
+      {
+        "bucket": 27,
+        "ratio": 0.27,
+        "t_window_edit_22_14s": [
+          5.76,
+          5.98
+        ],
+        "t_window_ffprobe_22_167s": [
+          5.76,
+          5.99
+        ],
+        "retention_pct": 89.29,
+        "delta_pp_from_prev": -5.35,
+        "plates": [
+          "plates_v01/s3/02_soho_1854_v01.jpg"
+        ],
+        "words": [
+          "hundreds"
+        ],
+        "overlays": [
+          "Cholera was killing hundreds"
+        ]
+      },
+      {
+        "bucket": 28,
+        "ratio": 0.28,
+        "t_window_edit_22_14s": [
+          5.98,
+          6.2
+        ],
+        "t_window_ffprobe_22_167s": [
+          5.99,
+          6.21
+        ],
+        "retention_pct": 85.71,
+        "delta_pp_from_prev": -3.58,
+        "plates": [
+          "plates_v01/s3/02_soho_1854_v01.jpg"
+        ],
+        "words": [
+          "hundreds"
+        ],
+        "overlays": [
+          "Cholera was killing hundreds"
+        ]
+      },
+      {
+        "bucket": 29,
+        "ratio": 0.29,
+        "t_window_edit_22_14s": [
+          6.2,
+          6.42
+        ],
+        "t_window_ffprobe_22_167s": [
+          6.21,
+          6.43
+        ],
+        "retention_pct": 78.57,
+        "delta_pp_from_prev": -7.14,
+        "plates": [
+          "plates_v01/s3/02_soho_1854_v01.jpg"
+        ],
+        "words": [
+          "hundreds",
+          "in"
+        ],
+        "overlays": [
+          "Cholera was killing hundreds",
+          "in Soho,"
+        ]
+      },
+      {
+        "bucket": 30,
+        "ratio": 0.3,
+        "t_window_edit_22_14s": [
+          6.42,
+          6.64
+        ],
+        "t_window_ffprobe_22_167s": [
+          6.43,
+          6.65
+        ],
+        "retention_pct": 78.57,
+        "delta_pp_from_prev": 0.0,
+        "plates": [
+          "plates_v01/s3/02_soho_1854_v01.jpg"
+        ],
+        "words": [
+          "Soho,"
+        ],
+        "overlays": [
+          "in Soho,"
+        ]
+      },
+      {
+        "bucket": 31,
+        "ratio": 0.31,
+        "t_window_edit_22_14s": [
+          6.64,
+          6.86
+        ],
+        "t_window_ffprobe_22_167s": [
+          6.65,
+          6.87
+        ],
+        "retention_pct": 73.21,
+        "delta_pp_from_prev": -5.36,
+        "plates": [
+          "plates_v01/s3/02_soho_1854_v01.jpg"
+        ],
+        "words": [
+          "Soho,"
+        ],
+        "overlays": [
+          "in Soho,"
+        ]
+      },
+      {
+        "bucket": 32,
+        "ratio": 0.32,
+        "t_window_edit_22_14s": [
+          6.86,
+          7.08
+        ],
+        "t_window_ffprobe_22_167s": [
+          6.87,
+          7.09
+        ],
+        "retention_pct": 71.43,
+        "delta_pp_from_prev": -1.78,
+        "plates": [
+          "plates_v01/s3/02_soho_1854_v01.jpg"
+        ],
+        "words": [
+          "Soho,",
+          "London,"
+        ],
+        "overlays": [
+          "in Soho,",
+          "London, and many"
+        ]
+      },
+      {
+        "bucket": 33,
+        "ratio": 0.33,
+        "t_window_edit_22_14s": [
+          7.08,
+          7.31
+        ],
+        "t_window_ffprobe_22_167s": [
+          7.09,
+          7.32
+        ],
+        "retention_pct": 71.43,
+        "delta_pp_from_prev": 0.0,
+        "plates": [
+          "plates_v01/s3/02_soho_1854_v01.jpg"
+        ],
+        "words": [
+          "London,"
+        ],
+        "overlays": [
+          "London, and many"
+        ]
+      },
+      {
+        "bucket": 34,
+        "ratio": 0.34,
+        "t_window_edit_22_14s": [
+          7.31,
+          7.53
+        ],
+        "t_window_ffprobe_22_167s": [
+          7.32,
+          7.54
+        ],
+        "retention_pct": 71.43,
+        "delta_pp_from_prev": 0.0,
+        "plates": [
+          "plates_v01/s3/02_soho_1854_v01.jpg"
+        ],
+        "words": [
+          "London,"
+        ],
+        "overlays": [
+          "London, and many"
+        ]
+      },
+      {
+        "bucket": 35,
+        "ratio": 0.35,
+        "t_window_edit_22_14s": [
+          7.53,
+          7.75
+        ],
+        "t_window_ffprobe_22_167s": [
+          7.54,
+          7.76
+        ],
+        "retention_pct": 66.07,
+        "delta_pp_from_prev": -5.36,
+        "plates": [
+          "plates_v01/s3/02_soho_1854_v01.jpg"
+        ],
+        "words": [],
+        "overlays": [
+          "London, and many"
+        ]
+      },
+      {
+        "bucket": 36,
+        "ratio": 0.36,
+        "t_window_edit_22_14s": [
+          7.75,
+          7.97
+        ],
+        "t_window_ffprobe_22_167s": [
+          7.76,
+          7.98
+        ],
+        "retention_pct": 64.29,
+        "delta_pp_from_prev": -1.78,
+        "plates": [
+          "plates_v01/s3/02_soho_1854_v01.jpg"
+        ],
+        "words": [
+          "and"
+        ],
+        "overlays": [
+          "London, and many"
+        ]
+      },
+      {
+        "bucket": 37,
+        "ratio": 0.37,
+        "t_window_edit_22_14s": [
+          7.97,
+          8.19
+        ],
+        "t_window_ffprobe_22_167s": [
+          7.98,
+          8.2
+        ],
+        "retention_pct": 64.29,
+        "delta_pp_from_prev": 0.0,
+        "plates": [
+          "plates_v01/s3/02_soho_1854_v01.jpg"
+        ],
+        "words": [
+          "and",
+          "many"
+        ],
+        "overlays": [
+          "London, and many"
+        ]
+      },
+      {
+        "bucket": 38,
+        "ratio": 0.38,
+        "t_window_edit_22_14s": [
+          8.19,
+          8.41
+        ],
+        "t_window_ffprobe_22_167s": [
+          8.2,
+          8.42
+        ],
+        "retention_pct": 62.5,
+        "delta_pp_from_prev": -1.79,
+        "plates": [
+          "plates_v01/s3/02_soho_1854_v01.jpg"
+        ],
+        "words": [
+          "many"
+        ],
+        "overlays": [
+          "London, and many"
+        ]
+      },
+      {
+        "bucket": 39,
+        "ratio": 0.39,
+        "t_window_edit_22_14s": [
+          8.41,
+          8.63
+        ],
+        "t_window_ffprobe_22_167s": [
+          8.42,
+          8.65
+        ],
+        "retention_pct": 60.71,
+        "delta_pp_from_prev": -1.79,
+        "plates": [
+          "plates_v01/s3/02_soho_1854_v01.jpg"
+        ],
+        "words": [
+          "still"
+        ],
+        "overlays": [
+          "London, and many",
+          "still blamed bad air."
+        ]
+      },
+      {
+        "bucket": 40,
+        "ratio": 0.4,
+        "t_window_edit_22_14s": [
+          8.63,
+          8.86
+        ],
+        "t_window_ffprobe_22_167s": [
+          8.65,
+          8.87
+        ],
+        "retention_pct": 58.93,
+        "delta_pp_from_prev": -1.78,
+        "plates": [
+          "plates_v01/s3/02_soho_1854_v01.jpg"
+        ],
+        "words": [
+          "still",
+          "blamed"
+        ],
+        "overlays": [
+          "still blamed bad air."
+        ]
+      },
+      {
+        "bucket": 41,
+        "ratio": 0.41,
+        "t_window_edit_22_14s": [
+          8.86,
+          9.08
+        ],
+        "t_window_ffprobe_22_167s": [
+          8.87,
+          9.09
+        ],
+        "retention_pct": 57.14,
+        "delta_pp_from_prev": -1.79,
+        "plates": [
+          "plates_v01/s3/02_soho_1854_v01.jpg"
+        ],
+        "words": [
+          "blamed"
+        ],
+        "overlays": [
+          "still blamed bad air."
+        ]
+      },
+      {
+        "bucket": 42,
+        "ratio": 0.42,
+        "t_window_edit_22_14s": [
+          9.08,
+          9.3
+        ],
+        "t_window_ffprobe_22_167s": [
+          9.09,
+          9.31
+        ],
+        "retention_pct": 55.36,
+        "delta_pp_from_prev": -1.78,
+        "plates": [
+          "plates_v01/s3/02_soho_1854_v01.jpg"
+        ],
+        "words": [
+          "blamed"
+        ],
+        "overlays": [
+          "still blamed bad air."
+        ]
+      },
+      {
+        "bucket": 43,
+        "ratio": 0.43,
+        "t_window_edit_22_14s": [
+          9.3,
+          9.52
+        ],
+        "t_window_ffprobe_22_167s": [
+          9.31,
+          9.53
+        ],
+        "retention_pct": 53.57,
+        "delta_pp_from_prev": -1.79,
+        "plates": [
+          "plates_v01/s3/02_soho_1854_v01.jpg"
+        ],
+        "words": [
+          "bad"
+        ],
+        "overlays": [
+          "still blamed bad air."
+        ]
+      },
+      {
+        "bucket": 44,
+        "ratio": 0.44,
+        "t_window_edit_22_14s": [
+          9.52,
+          9.74
+        ],
+        "t_window_ffprobe_22_167s": [
+          9.53,
+          9.75
+        ],
+        "retention_pct": 53.57,
+        "delta_pp_from_prev": 0.0,
+        "plates": [
+          "plates_v01/s3/02_soho_1854_v01.jpg"
+        ],
+        "words": [
+          "bad",
+          "air."
+        ],
+        "overlays": [
+          "still blamed bad air."
+        ]
+      },
+      {
+        "bucket": 45,
+        "ratio": 0.45,
+        "t_window_edit_22_14s": [
+          9.74,
+          9.96
+        ],
+        "t_window_ffprobe_22_167s": [
+          9.75,
+          9.98
+        ],
+        "retention_pct": 53.57,
+        "delta_pp_from_prev": 0.0,
+        "plates": [
+          "plates_v01/s3/02_soho_1854_v01.jpg"
+        ],
+        "words": [
+          "air."
+        ],
+        "overlays": [
+          "still blamed bad air."
+        ]
+      },
+      {
+        "bucket": 46,
+        "ratio": 0.46,
+        "t_window_edit_22_14s": [
+          9.96,
+          10.18
+        ],
+        "t_window_ffprobe_22_167s": [
+          9.98,
+          10.2
+        ],
+        "retention_pct": 53.57,
+        "delta_pp_from_prev": 0.0,
+        "plates": [
+          "plates_v01/s3/02_soho_1854_v01.jpg"
+        ],
+        "words": [
+          "air."
+        ],
+        "overlays": [
+          "still blamed bad air."
+        ]
+      },
+      {
+        "bucket": 47,
+        "ratio": 0.47,
+        "t_window_edit_22_14s": [
+          10.18,
+          10.41
+        ],
+        "t_window_ffprobe_22_167s": [
+          10.2,
+          10.42
+        ],
+        "retention_pct": 53.57,
+        "delta_pp_from_prev": 0.0,
+        "plates": [
+          "plates_v01/s3/02_soho_1854_v01.jpg"
+        ],
+        "words": [],
+        "overlays": [
+          "still blamed bad air."
+        ]
+      },
+      {
+        "bucket": 48,
+        "ratio": 0.48,
+        "t_window_edit_22_14s": [
+          10.41,
+          10.63
+        ],
+        "t_window_ffprobe_22_167s": [
+          10.42,
+          10.64
+        ],
+        "retention_pct": 53.57,
+        "delta_pp_from_prev": 0.0,
+        "plates": [
+          "plates_v01/s3/02_soho_1854_v01.jpg"
+        ],
+        "words": [],
+        "overlays": [
+          "still blamed bad air."
+        ]
+      },
+      {
+        "bucket": 49,
+        "ratio": 0.49,
+        "t_window_edit_22_14s": [
+          10.63,
+          10.85
+        ],
+        "t_window_ffprobe_22_167s": [
+          10.64,
+          10.86
+        ],
+        "retention_pct": 55.36,
+        "delta_pp_from_prev": 1.79,
+        "plates": [
+          "plates_v01/s3/02_soho_1854_v01.jpg"
+        ],
+        "words": [],
+        "overlays": [
+          "still blamed bad air."
+        ]
+      },
+      {
+        "bucket": 50,
+        "ratio": 0.5,
+        "t_window_edit_22_14s": [
+          10.85,
+          11.07
+        ],
+        "t_window_ffprobe_22_167s": [
+          10.86,
+          11.08
+        ],
+        "retention_pct": 55.36,
+        "delta_pp_from_prev": 0.0,
+        "plates": [
+          "plates_v01/s3/02_soho_1854_v01.jpg",
+          "plates_v01/s3/03_snow_tracking_v01.jpg"
+        ],
+        "words": [],
+        "overlays": [
+          "still blamed bad air."
+        ]
+      },
+      {
+        "bucket": 51,
+        "ratio": 0.51,
+        "t_window_edit_22_14s": [
+          11.07,
+          11.29
+        ],
+        "t_window_ffprobe_22_167s": [
+          11.08,
+          11.31
+        ],
+        "retention_pct": 55.36,
+        "delta_pp_from_prev": 0.0,
+        "plates": [
+          "plates_v01/s3/03_snow_tracking_v01.jpg"
+        ],
+        "words": [
+          "John"
+        ],
+        "overlays": [
+          "still blamed bad air.",
+          "John Snow tracked where"
+        ]
+      },
+      {
+        "bucket": 52,
+        "ratio": 0.52,
+        "t_window_edit_22_14s": [
+          11.29,
+          11.51
+        ],
+        "t_window_ffprobe_22_167s": [
+          11.31,
+          11.53
+        ],
+        "retention_pct": 53.57,
+        "delta_pp_from_prev": -1.79,
+        "plates": [
+          "plates_v01/s3/03_snow_tracking_v01.jpg"
+        ],
+        "words": [
+          "John",
+          "Snow"
+        ],
+        "overlays": [
+          "John Snow tracked where"
+        ]
+      },
+      {
+        "bucket": 53,
+        "ratio": 0.53,
+        "t_window_edit_22_14s": [
+          11.51,
+          11.73
+        ],
+        "t_window_ffprobe_22_167s": [
+          11.53,
+          11.75
+        ],
+        "retention_pct": 53.57,
+        "delta_pp_from_prev": 0.0,
+        "plates": [
+          "plates_v01/s3/03_snow_tracking_v01.jpg"
+        ],
+        "words": [
+          "Snow"
+        ],
+        "overlays": [
+          "John Snow tracked where"
+        ]
+      },
+      {
+        "bucket": 54,
+        "ratio": 0.54,
+        "t_window_edit_22_14s": [
+          11.73,
+          11.96
+        ],
+        "t_window_ffprobe_22_167s": [
+          11.75,
+          11.97
+        ],
+        "retention_pct": 53.57,
+        "delta_pp_from_prev": 0.0,
+        "plates": [
+          "plates_v01/s3/03_snow_tracking_v01.jpg"
+        ],
+        "words": [
+          "Snow"
+        ],
+        "overlays": [
+          "John Snow tracked where"
+        ]
+      },
+      {
+        "bucket": 55,
+        "ratio": 0.55,
+        "t_window_edit_22_14s": [
+          11.96,
+          12.18
+        ],
+        "t_window_ffprobe_22_167s": [
+          11.97,
+          12.19
+        ],
+        "retention_pct": 51.79,
+        "delta_pp_from_prev": -1.78,
+        "plates": [
+          "plates_v01/s3/03_snow_tracking_v01.jpg"
+        ],
+        "words": [
+          "tracked"
+        ],
+        "overlays": [
+          "John Snow tracked where"
+        ]
+      },
+      {
+        "bucket": 56,
+        "ratio": 0.56,
+        "t_window_edit_22_14s": [
+          12.18,
+          12.4
+        ],
+        "t_window_ffprobe_22_167s": [
+          12.19,
+          12.41
+        ],
+        "retention_pct": 51.79,
+        "delta_pp_from_prev": 0.0,
+        "plates": [
+          "plates_v01/s3/03_snow_tracking_v01.jpg"
+        ],
+        "words": [
+          "tracked"
+        ],
+        "overlays": [
+          "John Snow tracked where"
+        ]
+      },
+      {
+        "bucket": 57,
+        "ratio": 0.57,
+        "t_window_edit_22_14s": [
+          12.4,
+          12.62
+        ],
+        "t_window_ffprobe_22_167s": [
+          12.41,
+          12.64
+        ],
+        "retention_pct": 51.79,
+        "delta_pp_from_prev": 0.0,
+        "plates": [
+          "plates_v01/s3/03_snow_tracking_v01.jpg"
+        ],
+        "words": [
+          "tracked",
+          "where"
+        ],
+        "overlays": [
+          "John Snow tracked where"
+        ]
+      },
+      {
+        "bucket": 58,
+        "ratio": 0.58,
+        "t_window_edit_22_14s": [
+          12.62,
+          12.84
+        ],
+        "t_window_ffprobe_22_167s": [
+          12.64,
+          12.86
+        ],
+        "retention_pct": 51.79,
+        "delta_pp_from_prev": 0.0,
+        "plates": [
+          "plates_v01/s3/03_snow_tracking_v01.jpg"
+        ],
+        "words": [
+          "where",
+          "the"
+        ],
+        "overlays": [
+          "John Snow tracked where",
+          "the dead had lived."
+        ]
+      },
+      {
+        "bucket": 59,
+        "ratio": 0.59,
+        "t_window_edit_22_14s": [
+          12.84,
+          13.06
+        ],
+        "t_window_ffprobe_22_167s": [
+          12.86,
+          13.08
+        ],
+        "retention_pct": 51.79,
+        "delta_pp_from_prev": 0.0,
+        "plates": [
+          "plates_v01/s3/03_snow_tracking_v01.jpg"
+        ],
+        "words": [
+          "dead"
+        ],
+        "overlays": [
+          "the dead had lived."
+        ]
+      },
+      {
+        "bucket": 60,
+        "ratio": 0.6,
+        "t_window_edit_22_14s": [
+          13.06,
+          13.28
+        ],
+        "t_window_ffprobe_22_167s": [
+          13.08,
+          13.3
+        ],
+        "retention_pct": 51.79,
+        "delta_pp_from_prev": 0.0,
+        "plates": [
+          "plates_v01/s3/03_snow_tracking_v01.jpg"
+        ],
+        "words": [
+          "dead",
+          "had"
+        ],
+        "overlays": [
+          "the dead had lived."
+        ]
+      },
+      {
+        "bucket": 61,
+        "ratio": 0.61,
+        "t_window_edit_22_14s": [
+          13.28,
+          13.51
+        ],
+        "t_window_ffprobe_22_167s": [
+          13.3,
+          13.52
+        ],
+        "retention_pct": 51.79,
+        "delta_pp_from_prev": 0.0,
+        "plates": [
+          "plates_v01/s3/03_snow_tracking_v01.jpg"
+        ],
+        "words": [
+          "had",
+          "lived."
+        ],
+        "overlays": [
+          "the dead had lived."
+        ]
+      },
+      {
+        "bucket": 62,
+        "ratio": 0.62,
+        "t_window_edit_22_14s": [
+          13.51,
+          13.73
+        ],
+        "t_window_ffprobe_22_167s": [
+          13.52,
+          13.74
+        ],
+        "retention_pct": 51.79,
+        "delta_pp_from_prev": 0.0,
+        "plates": [
+          "plates_v01/s3/03_snow_tracking_v01.jpg"
+        ],
+        "words": [
+          "lived."
+        ],
+        "overlays": [
+          "the dead had lived."
+        ]
+      },
+      {
+        "bucket": 63,
+        "ratio": 0.63,
+        "t_window_edit_22_14s": [
+          13.73,
+          13.95
+        ],
+        "t_window_ffprobe_22_167s": [
+          13.74,
+          13.97
+        ],
+        "retention_pct": 51.79,
+        "delta_pp_from_prev": 0.0,
+        "plates": [
+          "plates_v01/s3/03_snow_tracking_v01.jpg"
+        ],
+        "words": [
+          "lived."
+        ],
+        "overlays": [
+          "the dead had lived."
+        ]
+      },
+      {
+        "bucket": 64,
+        "ratio": 0.64,
+        "t_window_edit_22_14s": [
+          13.95,
+          14.17
+        ],
+        "t_window_ffprobe_22_167s": [
+          13.97,
+          14.19
+        ],
+        "retention_pct": 50,
+        "delta_pp_from_prev": -1.79,
+        "plates": [
+          "plates_v01/s3/03_snow_tracking_v01.jpg"
+        ],
+        "words": [],
+        "overlays": [
+          "the dead had lived."
+        ]
+      },
+      {
+        "bucket": 65,
+        "ratio": 0.65,
+        "t_window_edit_22_14s": [
+          14.17,
+          14.39
+        ],
+        "t_window_ffprobe_22_167s": [
+          14.19,
+          14.41
+        ],
+        "retention_pct": 50,
+        "delta_pp_from_prev": 0,
+        "plates": [
+          "plates_v01/s3/03_snow_tracking_v01.jpg"
+        ],
+        "words": [],
+        "overlays": [
+          "the dead had lived."
+        ]
+      },
+      {
+        "bucket": 66,
+        "ratio": 0.66,
+        "t_window_edit_22_14s": [
+          14.39,
+          14.61
+        ],
+        "t_window_ffprobe_22_167s": [
+          14.41,
+          14.63
+        ],
+        "retention_pct": 50,
+        "delta_pp_from_prev": 0,
+        "plates": [
+          "plates_v01/s3/03_snow_tracking_v01.jpg"
+        ],
+        "words": [],
+        "overlays": [
+          "the dead had lived."
+        ]
+      },
+      {
+        "bucket": 67,
+        "ratio": 0.67,
+        "t_window_edit_22_14s": [
+          14.61,
+          14.83
+        ],
+        "t_window_ffprobe_22_167s": [
+          14.63,
+          14.85
+        ],
+        "retention_pct": 50,
+        "delta_pp_from_prev": 0,
+        "plates": [
+          "plates_v01/s3/03_snow_tracking_v01.jpg",
+          "plates_v01/s3/04_map_bars_v01.jpg"
+        ],
+        "words": [],
+        "overlays": [
+          "the dead had lived."
+        ]
+      },
+      {
+        "bucket": 68,
+        "ratio": 0.68,
+        "t_window_edit_22_14s": [
+          14.83,
+          15.06
+        ],
+        "t_window_ffprobe_22_167s": [
+          14.85,
+          15.07
+        ],
+        "retention_pct": 50,
+        "delta_pp_from_prev": 0,
+        "plates": [
+          "plates_v01/s3/04_map_bars_v01.jpg"
+        ],
+        "words": [
+          "They",
+          "crowded"
+        ],
+        "overlays": [
+          "the dead had lived.",
+          "They crowded round one"
+        ]
+      },
+      {
+        "bucket": 69,
+        "ratio": 0.69,
+        "t_window_edit_22_14s": [
+          15.06,
+          15.28
+        ],
+        "t_window_ffprobe_22_167s": [
+          15.07,
+          15.3
+        ],
+        "retention_pct": 50,
+        "delta_pp_from_prev": 0,
+        "plates": [
+          "plates_v01/s3/04_map_bars_v01.jpg"
+        ],
+        "words": [
+          "crowded"
+        ],
+        "overlays": [
+          "They crowded round one"
+        ]
+      },
+      {
+        "bucket": 70,
+        "ratio": 0.7,
+        "t_window_edit_22_14s": [
+          15.28,
+          15.5
+        ],
+        "t_window_ffprobe_22_167s": [
+          15.3,
+          15.52
+        ],
+        "retention_pct": 50,
+        "delta_pp_from_prev": 0,
+        "plates": [
+          "plates_v01/s3/04_map_bars_v01.jpg"
+        ],
+        "words": [
+          "crowded",
+          "round"
+        ],
+        "overlays": [
+          "They crowded round one"
+        ]
+      },
+      {
+        "bucket": 71,
+        "ratio": 0.71,
+        "t_window_edit_22_14s": [
+          15.5,
+          15.72
+        ],
+        "t_window_ffprobe_22_167s": [
+          15.52,
+          15.74
+        ],
+        "retention_pct": 48.21,
+        "delta_pp_from_prev": -1.79,
+        "plates": [
+          "plates_v01/s3/04_map_bars_v01.jpg"
+        ],
+        "words": [
+          "round"
+        ],
+        "overlays": [
+          "They crowded round one"
+        ]
+      },
+      {
+        "bucket": 72,
+        "ratio": 0.72,
+        "t_window_edit_22_14s": [
+          15.72,
+          15.94
+        ],
+        "t_window_ffprobe_22_167s": [
+          15.74,
+          15.96
+        ],
+        "retention_pct": 48.21,
+        "delta_pp_from_prev": 0.0,
+        "plates": [
+          "plates_v01/s3/04_map_bars_v01.jpg"
+        ],
+        "words": [
+          "one"
+        ],
+        "overlays": [
+          "They crowded round one"
+        ]
+      },
+      {
+        "bucket": 73,
+        "ratio": 0.73,
+        "t_window_edit_22_14s": [
+          15.94,
+          16.16
+        ],
+        "t_window_ffprobe_22_167s": [
+          15.96,
+          16.18
+        ],
+        "retention_pct": 48.21,
+        "delta_pp_from_prev": 0.0,
+        "plates": [
+          "plates_v01/s3/04_map_bars_v01.jpg"
+        ],
+        "words": [
+          "pump"
+        ],
+        "overlays": [
+          "They crowded round one",
+          "pump on Broad Street."
+        ]
+      },
+      {
+        "bucket": 74,
+        "ratio": 0.74,
+        "t_window_edit_22_14s": [
+          16.16,
+          16.38
+        ],
+        "t_window_ffprobe_22_167s": [
+          16.18,
+          16.4
+        ],
+        "retention_pct": 46.43,
+        "delta_pp_from_prev": -1.78,
+        "plates": [
+          "plates_v01/s3/04_map_bars_v01.jpg"
+        ],
+        "words": [
+          "pump",
+          "on"
+        ],
+        "overlays": [
+          "pump on Broad Street."
+        ]
+      },
+      {
+        "bucket": 75,
+        "ratio": 0.75,
+        "t_window_edit_22_14s": [
+          16.38,
+          16.61
+        ],
+        "t_window_ffprobe_22_167s": [
+          16.4,
+          16.63
+        ],
+        "retention_pct": 42.86,
+        "delta_pp_from_prev": -3.57,
+        "plates": [
+          "plates_v01/s3/04_map_bars_v01.jpg"
+        ],
+        "words": [
+          "on",
+          "Broad"
+        ],
+        "overlays": [
+          "pump on Broad Street."
+        ]
+      },
+      {
+        "bucket": 76,
+        "ratio": 0.76,
+        "t_window_edit_22_14s": [
+          16.61,
+          16.83
+        ],
+        "t_window_ffprobe_22_167s": [
+          16.63,
+          16.85
+        ],
+        "retention_pct": 41.07,
+        "delta_pp_from_prev": -1.79,
+        "plates": [
+          "plates_v01/s3/04_map_bars_v01.jpg"
+        ],
+        "words": [
+          "Broad"
+        ],
+        "overlays": [
+          "pump on Broad Street."
+        ]
+      },
+      {
+        "bucket": 77,
+        "ratio": 0.77,
+        "t_window_edit_22_14s": [
+          16.83,
+          17.05
+        ],
+        "t_window_ffprobe_22_167s": [
+          16.85,
+          17.07
+        ],
+        "retention_pct": 41.07,
+        "delta_pp_from_prev": 0.0,
+        "plates": [
+          "plates_v01/s3/04_map_bars_v01.jpg"
+        ],
+        "words": [
+          "Broad",
+          "Street."
+        ],
+        "overlays": [
+          "pump on Broad Street."
+        ]
+      },
+      {
+        "bucket": 78,
+        "ratio": 0.78,
+        "t_window_edit_22_14s": [
+          17.05,
+          17.27
+        ],
+        "t_window_ffprobe_22_167s": [
+          17.07,
+          17.29
+        ],
+        "retention_pct": 41.07,
+        "delta_pp_from_prev": 0.0,
+        "plates": [
+          "plates_v01/s3/04_map_bars_v01.jpg"
+        ],
+        "words": [
+          "Street."
+        ],
+        "overlays": [
+          "pump on Broad Street."
+        ]
+      },
+      {
+        "bucket": 79,
+        "ratio": 0.79,
+        "t_window_edit_22_14s": [
+          17.27,
+          17.49
+        ],
+        "t_window_ffprobe_22_167s": [
+          17.29,
+          17.51
+        ],
+        "retention_pct": 41.07,
+        "delta_pp_from_prev": 0.0,
+        "plates": [
+          "plates_v01/s3/04_map_bars_v01.jpg"
+        ],
+        "words": [
+          "Street."
+        ],
+        "overlays": [
+          "pump on Broad Street."
+        ]
+      },
+      {
+        "bucket": 80,
+        "ratio": 0.8,
+        "t_window_edit_22_14s": [
+          17.49,
+          17.71
+        ],
+        "t_window_ffprobe_22_167s": [
+          17.51,
+          17.73
+        ],
+        "retention_pct": 41.07,
+        "delta_pp_from_prev": 0.0,
+        "plates": [
+          "plates_v01/s3/04_map_bars_v01.jpg"
+        ],
+        "words": [],
+        "overlays": [
+          "pump on Broad Street."
+        ]
+      },
+      {
+        "bucket": 81,
+        "ratio": 0.81,
+        "t_window_edit_22_14s": [
+          17.71,
+          17.93
+        ],
+        "t_window_ffprobe_22_167s": [
+          17.73,
+          17.96
+        ],
+        "retention_pct": 41.07,
+        "delta_pp_from_prev": 0.0,
+        "plates": [
+          "plates_v01/s3/04_map_bars_v01.jpg",
+          "plates_v01/s3/05_handle_off_v03.jpg"
+        ],
+        "words": [],
+        "overlays": [
+          "pump on Broad Street."
+        ]
+      },
+      {
+        "bucket": 82,
+        "ratio": 0.82,
+        "t_window_edit_22_14s": [
+          17.93,
+          18.15
+        ],
+        "t_window_ffprobe_22_167s": [
+          17.96,
+          18.18
+        ],
+        "retention_pct": 41.07,
+        "delta_pp_from_prev": 0.0,
+        "plates": [
+          "plates_v01/s3/05_handle_off_v03.jpg"
+        ],
+        "words": [
+          "He",
+          "had"
+        ],
+        "overlays": [
+          "pump on Broad Street.",
+          "He had its handle"
+        ]
+      },
+      {
+        "bucket": 83,
+        "ratio": 0.83,
+        "t_window_edit_22_14s": [
+          18.15,
+          18.38
+        ],
+        "t_window_ffprobe_22_167s": [
+          18.18,
+          18.4
+        ],
+        "retention_pct": 41.07,
+        "delta_pp_from_prev": 0.0,
+        "plates": [
+          "plates_v01/s3/05_handle_off_v03.jpg"
+        ],
+        "words": [
+          "had",
+          "its",
+          "handle"
+        ],
+        "overlays": [
+          "He had its handle"
+        ]
+      },
+      {
+        "bucket": 84,
+        "ratio": 0.84,
+        "t_window_edit_22_14s": [
+          18.38,
+          18.6
+        ],
+        "t_window_ffprobe_22_167s": [
+          18.4,
+          18.62
+        ],
+        "retention_pct": 41.07,
+        "delta_pp_from_prev": 0.0,
+        "plates": [
+          "plates_v01/s3/05_handle_off_v03.jpg"
+        ],
+        "words": [
+          "handle"
+        ],
+        "overlays": [
+          "He had its handle"
+        ]
+      },
+      {
+        "bucket": 85,
+        "ratio": 0.85,
+        "t_window_edit_22_14s": [
+          18.6,
+          18.82
+        ],
+        "t_window_ffprobe_22_167s": [
+          18.62,
+          18.84
+        ],
+        "retention_pct": 41.07,
+        "delta_pp_from_prev": 0.0,
+        "plates": [
+          "plates_v01/s3/05_handle_off_v03.jpg"
+        ],
+        "words": [
+          "handle",
+          "taken"
+        ],
+        "overlays": [
+          "He had its handle",
+          "taken off."
+        ]
+      },
+      {
+        "bucket": 86,
+        "ratio": 0.86,
+        "t_window_edit_22_14s": [
+          18.82,
+          19.04
+        ],
+        "t_window_ffprobe_22_167s": [
+          18.84,
+          19.06
+        ],
+        "retention_pct": 41.07,
+        "delta_pp_from_prev": 0.0,
+        "plates": [
+          "plates_v01/s3/05_handle_off_v03.jpg"
+        ],
+        "words": [
+          "taken"
+        ],
+        "overlays": [
+          "taken off."
+        ]
+      },
+      {
+        "bucket": 87,
+        "ratio": 0.87,
+        "t_window_edit_22_14s": [
+          19.04,
+          19.26
+        ],
+        "t_window_ffprobe_22_167s": [
+          19.06,
+          19.29
+        ],
+        "retention_pct": 41.07,
+        "delta_pp_from_prev": 0.0,
+        "plates": [
+          "plates_v01/s3/05_handle_off_v03.jpg"
+        ],
+        "words": [
+          "taken",
+          "off."
+        ],
+        "overlays": [
+          "taken off."
+        ]
+      },
+      {
+        "bucket": 88,
+        "ratio": 0.88,
+        "t_window_edit_22_14s": [
+          19.26,
+          19.48
+        ],
+        "t_window_ffprobe_22_167s": [
+          19.29,
+          19.51
+        ],
+        "retention_pct": 39.29,
+        "delta_pp_from_prev": -1.78,
+        "plates": [
+          "plates_v01/s3/05_handle_off_v03.jpg"
+        ],
+        "words": [
+          "off."
+        ],
+        "overlays": [
+          "taken off."
+        ]
+      },
+      {
+        "bucket": 89,
+        "ratio": 0.89,
+        "t_window_edit_22_14s": [
+          19.48,
+          19.7
+        ],
+        "t_window_ffprobe_22_167s": [
+          19.51,
+          19.73
+        ],
+        "retention_pct": 39.29,
+        "delta_pp_from_prev": 0.0,
+        "plates": [
+          "plates_v01/s3/05_handle_off_v03.jpg"
+        ],
+        "words": [],
+        "overlays": [
+          "taken off."
+        ]
+      },
+      {
+        "bucket": 90,
+        "ratio": 0.9,
+        "t_window_edit_22_14s": [
+          19.7,
+          19.93
+        ],
+        "t_window_ffprobe_22_167s": [
+          19.73,
+          19.95
+        ],
+        "retention_pct": 39.29,
+        "delta_pp_from_prev": 0.0,
+        "plates": [
+          "plates_v01/s3/05_handle_off_v03.jpg"
+        ],
+        "words": [],
+        "overlays": [
+          "taken off."
+        ]
+      },
+      {
+        "bucket": 91,
+        "ratio": 0.91,
+        "t_window_edit_22_14s": [
+          19.93,
+          20.15
+        ],
+        "t_window_ffprobe_22_167s": [
+          19.95,
+          20.17
+        ],
+        "retention_pct": 39.29,
+        "delta_pp_from_prev": 0.0,
+        "plates": [
+          "plates_v01/s3/05_handle_off_v03.jpg"
+        ],
+        "words": [],
+        "overlays": [
+          "taken off."
+        ]
+      },
+      {
+        "bucket": 92,
+        "ratio": 0.92,
+        "t_window_edit_22_14s": [
+          20.15,
+          20.37
+        ],
+        "t_window_ffprobe_22_167s": [
+          20.17,
+          20.39
+        ],
+        "retention_pct": 39.29,
+        "delta_pp_from_prev": 0.0,
+        "plates": [
+          "plates_v01/s3/05_handle_off_v03.jpg"
+        ],
+        "words": [
+          "The"
+        ],
+        "overlays": [
+          "taken off.",
+          "The killer was in"
+        ]
+      },
+      {
+        "bucket": 93,
+        "ratio": 0.93,
+        "t_window_edit_22_14s": [
+          20.37,
+          20.59
+        ],
+        "t_window_ffprobe_22_167s": [
+          20.39,
+          20.62
+        ],
+        "retention_pct": 39.29,
+        "delta_pp_from_prev": 0.0,
+        "plates": [
+          "plates_v01/s3/05_handle_off_v03.jpg"
+        ],
+        "words": [
+          "killer"
+        ],
+        "overlays": [
+          "The killer was in"
+        ]
+      },
+      {
+        "bucket": 94,
+        "ratio": 0.94,
+        "t_window_edit_22_14s": [
+          20.59,
+          20.81
+        ],
+        "t_window_ffprobe_22_167s": [
+          20.62,
+          20.84
+        ],
+        "retention_pct": 39.29,
+        "delta_pp_from_prev": 0.0,
+        "plates": [
+          "plates_v01/s3/05_handle_off_v03.jpg"
+        ],
+        "words": [
+          "killer",
+          "was"
+        ],
+        "overlays": [
+          "The killer was in"
+        ]
+      },
+      {
+        "bucket": 95,
+        "ratio": 0.95,
+        "t_window_edit_22_14s": [
+          20.81,
+          21.03
+        ],
+        "t_window_ffprobe_22_167s": [
+          20.84,
+          21.06
+        ],
+        "retention_pct": 39.29,
+        "delta_pp_from_prev": 0.0,
+        "plates": [
+          "plates_v01/s3/05_handle_off_v03.jpg"
+        ],
+        "words": [
+          "was",
+          "in",
+          "the"
+        ],
+        "overlays": [
+          "The killer was in",
+          "the water"
+        ]
+      },
+      {
+        "bucket": 96,
+        "ratio": 0.96,
+        "t_window_edit_22_14s": [
+          21.03,
+          21.25
+        ],
+        "t_window_ffprobe_22_167s": [
+          21.06,
+          21.28
+        ],
+        "retention_pct": 39.29,
+        "delta_pp_from_prev": 0.0,
+        "plates": [
+          "plates_v01/s3/05_handle_off_v03.jpg"
+        ],
+        "words": [
+          "the",
+          "water"
+        ],
+        "overlays": [
+          "the water"
+        ]
+      },
+      {
+        "bucket": 97,
+        "ratio": 0.97,
+        "t_window_edit_22_14s": [
+          21.25,
+          21.48
+        ],
+        "t_window_ffprobe_22_167s": [
+          21.28,
+          21.5
+        ],
+        "retention_pct": 39.29,
+        "delta_pp_from_prev": 0.0,
+        "plates": [
+          "plates_v01/s3/05_handle_off_v03.jpg"
+        ],
+        "words": [
+          "water"
+        ],
+        "overlays": [
+          "the water"
+        ]
+      },
+      {
+        "bucket": 98,
+        "ratio": 0.98,
+        "t_window_edit_22_14s": [
+          21.48,
+          21.7
+        ],
+        "t_window_ffprobe_22_167s": [
+          21.5,
+          21.72
+        ],
+        "retention_pct": 39.29,
+        "delta_pp_from_prev": 0.0,
+        "plates": [
+          "plates_v01/s3/05_handle_off_v03.jpg"
+        ],
+        "words": [
+          "water"
+        ],
+        "overlays": [
+          "the water"
+        ]
+      },
+      {
+        "bucket": 99,
+        "ratio": 0.99,
+        "t_window_edit_22_14s": [
+          21.7,
+          21.92
+        ],
+        "t_window_ffprobe_22_167s": [
+          21.72,
+          21.95
+        ],
+        "retention_pct": 39.29,
+        "delta_pp_from_prev": 0.0,
+        "plates": [
+          "plates_v01/s3/05_handle_off_v03.jpg"
+        ],
+        "words": [],
+        "overlays": [
+          "the water"
+        ]
+      },
+      {
+        "bucket": 100,
+        "ratio": 1.0,
+        "t_window_edit_22_14s": [
+          21.92,
+          22.14
+        ],
+        "t_window_ffprobe_22_167s": [
+          21.95,
+          22.17
+        ],
+        "retention_pct": 39.29,
+        "delta_pp_from_prev": 0.0,
+        "plates": [
+          "plates_v01/s3/05_handle_off_v03.jpg"
+        ],
+        "words": [],
+        "overlays": []
+      }
+    ]
+  }
+}

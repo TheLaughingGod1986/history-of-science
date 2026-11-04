@@ -1,0 +1,17 @@
+{
+  "source": "PAUSE_TRIM_v03.json joins, nearest remaining silence >=0.5s",
+  "choice": {
+    "silence": [
+      9.117938,
+      9.759417
+    ],
+    "trim_start": 9.166667,
+    "trim_end": 9.708333,
+    "frame0": 217,
+    "frame1": 230,
+    "trim_s": 0.5416659999999993,
+    "join_dist": 0.05067750000000082,
+    "audio": "splice audio stream-copied; this pause cut is one AAC encode of the joined track"
+  },
+  "vo": "pause only; trim sits inside silencedetect, clear of FIX rows"
+}

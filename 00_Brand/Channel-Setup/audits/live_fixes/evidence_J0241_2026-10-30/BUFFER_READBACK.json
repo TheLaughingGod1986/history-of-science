@@ -1,0 +1,60 @@
+{
+  "at": "2026-10-30T01:26:04.982Z",
+  "dueAt_registry": "2026-10-31T11:30:00.000Z",
+  "mode": "customScheduled",
+  "media": "https://pub-01001dd688b44d358058422d37345434.r2.dev/social/hos/BW_CFAX-mxc-15a397b574f439b0.mp4",
+  "organizationId": "6431f03385378b838b780157",
+  "readback": [
+    {
+      "channel": "instagram",
+      "postId": "6ae32c556b2f54fd85377bd7",
+      "http": 200,
+      "errors": null,
+      "post": {
+        "id": "6ae32c556b2f54fd85377bd7",
+        "status": "scheduled",
+        "dueAt": "2026-10-31T11:30:00.000Z",
+        "text": "Galen taught that the heart's job was to heat the blood, not to pump it.\n\nWhat did you think the heart did, before anyone told you?\n\nFull film on YouTube. Link in bio.\n\n#Galen #IsTheHeartAPump #BloodCirculation #HistoryOfMedicine #HistoryOfScience",
+        "channel": {
+          "id": "6ac36d3c6a5c39ccb61d3b5f",
+          "name": "historyofscienceyt",
+          "service": "instagram"
+        }
+      }
+    },
+    {
+      "channel": "facebook",
+      "postId": "6ae32c566b2f54fd85377c5e",
+      "http": 200,
+      "errors": null,
+      "post": {
+        "id": "6ae32c566b2f54fd85377c5e",
+        "status": "scheduled",
+        "dueAt": "2026-10-31T11:30:00.000Z",
+        "text": "Galen taught that the heart's job was to heat the blood, not to pump it.\n\nWhat did you think the heart did, before anyone told you?\n\nFull film: https://youtu.be/wwcjcFfC-5M\n\n#Galen #IsTheHeartAPump #BloodCirculation",
+        "channel": {
+          "id": "6ac369f16a5c39ccb61d223b",
+          "name": "History of Science",
+          "service": "facebook"
+        }
+      }
+    },
+    {
+      "channel": "tiktok",
+      "postId": "6ae32c57a0a200dca8b8d764",
+      "http": 200,
+      "errors": null,
+      "post": {
+        "id": "6ae32c57a0a200dca8b8d764",
+        "status": "scheduled",
+        "dueAt": "2026-10-31T11:30:00.000Z",
+        "text": "Galen taught that the heart's job was to heat the blood, not to pump it.\n\nWhat did you think the heart did, before anyone told you?\n\nFull film on YouTube. Link in bio.\n\n#Galen #IsTheHeartAPump #BloodCirculation #HistoryOfMedicine #HistoryOfScience",
+        "channel": {
+          "id": "6ac381bc6a5c39ccb61dd8aa",
+          "name": "historyofscienceyt",
+          "service": "tiktok"
+        }
+      }
+    }
+  ]
+}

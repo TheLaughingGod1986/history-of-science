@@ -42,7 +42,7 @@ Also in force as references: `01_Character/CHARACTER_BIBLE.md` (the Explorer) an
 | `docs/` | Tech notes (Veo, playback fixes, publishing adapters, affiliate) |
 | `_archive/` | Superseded docs, rules, one-off scripts, old audits and the Orbit leftovers. **Ignore unless asked.** |
 
-**Social posting (5 Oct 2026):** HOS Shorts go out through **Buffer via HOS Showrunner** only (`BUFFER_HOS_API_KEY`, HOS Buffer org). Never the Orbit Buffer org or the Buffer connector. YouTube stays in Studio. Long films are never cross-posted via Buffer. HOS Threads posting stops until Ben adds a Threads channel. Old Meta/Threads/TikTok CDP auto-post trees are under `_archive/00_Brand/Channel-Setup/`. Details: `STUDIO_PLAYBOOK.md` §12.
+**Social posting (5 Oct 2026; register-at-upload J1202, 30 Oct 2026):** HOS Shorts go out through **Buffer via HOS Showrunner** only (`BUFFER_HOS_API_KEY`, HOS Buffer org). Never the Orbit Buffer org or the Buffer connector. YouTube stays in Studio. Long films are never cross-posted via Buffer. HOS Threads posting stops until Ben adds a Threads channel. **Every Short upload/swap registers** the final master into Orbit `social/hos/UPLOADS.json` at upload time (`youtube:package` `afterUpload`, or `buffer-mirror.ts register --channel hos …`); the daily `check --channel hos` mirrors when Public/scheduled. Never end an upload with only "Buffer held until public". Old Meta/Threads/TikTok CDP auto-post trees are under `_archive/00_Brand/Channel-Setup/`. Details: `STUDIO_PLAYBOOK.md` §12.
 
 ## Commands
 
@@ -343,6 +343,7 @@ Ben, 2 Oct 2026: *"Claude and Grok have more authority and fewer checks with me.
   - Swap the file on an existing YouTube id (no Studio Replace).
   - Re-upload an idea that already went public. (A fixed copy of a broken, e.g. silent, Short may go up on Chief's OK; the broken id goes private.)
   - Delete a video. The old id goes private instead.
+  - Re-render over a file that has been uploaded, or rewrite its manifest. Write a new version (`_v02`, `_v03` …) beside it and leave the uploaded file, its sha256 and its manifest untouched, so the local copy always shows what is live. (Chief, 29 Oct 2026: HOS Herschel c2q7w0pgcn8 and Snow OnJ8MFu0Mi0 were re-rendered in place on 17 Oct after their 15 Oct upload, so J1202 couldn't back-post them and J1107's opening-frame checks read a cut that never aired.)
 - **Publishing:**
   - Premiere a long (until subscribers are in the hundreds).
   - Leave any video or Short marked **Made for Kids**. Re-check Audience after every Studio save (`STUDIO_PLAYBOOK.md` §9).
@@ -370,6 +371,17 @@ Ben, 2 Oct 2026: *"Claude and Grok have more authority and fewer checks with me.
 ## Git
 
 Never commit video or audio (`.mp4`, `.mov`, `.wav`, `.mp3`, `.aiff`…), not even with `git add -f`: record the path and sha256 instead; the `No media in git` check fails any PR that adds one. Film records (status, upload results, schedules) land on `main` within a day, so an agent starting from `main` sees what is live. One branch per job, closed when the job ends.
+
+## Missing footage fallback
+
+**Ben, 3 Nov 2026:** approved the archive/stock → generated illustration or revised shot fallback after the ISS opening stalled on unsuitable motion. Missing footage must lead to a bounded investigation and a concrete next action, not repeated checks of the same rejected clip.
+
+1. **Define the actual missing input.** Record the spoken claim/shot, duration (including any loop preroll), format, resolution/upscale limits, native-motion and subject-recognition requirements. Distinguish “not found” from “found but unsuitable”. Preserve the locked script/VO, existing versions, source evidence and all applicable gates.
+2. **Search in order.** Check approved project/NAS assets where reuse rules permit; then official archives (NASA, ESA or the relevant institution/mission); then rights-cleared stock (for example Wikimedia Commons, Pexels or Pixabay). Check the actual asset identity, provenance and usage terms, including third-party restrictions and attribution. Neither an archive host nor a “free stock” label alone establishes permission. Footage must depict the subject/claim honestly.
+3. **Bound the investigation.** Default: **20 minutes of active investigation and at most three candidate assets examined in depth**, stopping earlier when a suitable candidate is found. A tighter existing job limit wins. The budget belongs to the missing input: a new agent, restart or follow-up does not reset it. Record candidates/intervals tried and specific failures. Chief may scope another bounded pass only with a genuinely new source or approach and a recorded reason; do not endlessly recheck an unchanged cache.
+4. **Make the fallback decision.** If no real clip passes, Chief chooses a separately scoped generated illustration, an accurate sourced diagram/composite, or another shot that still supports the locked line. Do not silently swap factual archive footage for a misleading reconstruction, invent scientific geometry, change a locked line, or waive motion/quality checks. Generated visuals follow the channel's existing style, disclosure and credit rules. Use the existing HOS Flow/Veo engine and fallback table; Omni remains prohibited on HOS.
+5. **Scope generation before spending.** Chief records the shot/reference, approved tool/route, bounded takes and credit cap, acceptance checks and named capable worker. Verify the live balance and apply the existing ledger, billing margin and no-overage guards. Never buy credits, top up, upgrade, use paid overage or introduce an unapproved model/service under this rule. An existing “no generation” brief still requires a separate explicit Chief scope; this standing rule is not blanket generation permission. Ordinary reversible fallback decisions go to Chief, not back to Ben; existing money/irreversibility gates remain.
+6. **Verify and hand off immediately.** Deliver the source ID/URL, terms, hash, interval, crop/scale recipe and actual moving/phone/preroll evidence where required. A generation result or passing metric is not KEEP/approval. Use a reviewer with verified media-input capability; Chief retains the required final decision. Record a linked next job, owner/role and remaining action in the existing queue/shot/provenance records. Ready work/review is queued immediately; a follow-up timestamp is not a delayed start. Timed holds are for genuinely changing external conditions. Never invent a completion/free-agent time or treat missing approval as passed. Keep one production state source: existing job/stage records, not a parallel tracker.
 
 ## Studio core (Ben, 15 Oct 2026)
 

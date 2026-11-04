@@ -1,0 +1,12 @@
+{
+  "plate": "06_rod_fitting_t1 frames 109-150 via J1273 composite f8453cc7",
+  "alpha": "/private/tmp/j1267-hos008-rough-v11/code_graphics_v07/code_graphic_008_p5_10_metal_easy.mov",
+  "alpha_sha256": "53454827126be943dc4b11b51c52a32e9131637094dc4ca869a57e2165a68312",
+  "composite_sha256": "f8453cc78529871ef12a5ce4b1ad84a55f1d3d3759b98d180507b4c09d400ca9",
+  "render_alpha_called": false,
+  "plate_encode": "/private/tmp/j1267-hos008-rough-v11/_seg/plate.mp4",
+  "plate_encode_sha256": "2d01fe4191c734b14da38f15e8589f10bfb767f5c81e1b82cb9a58fdc4f25bec",
+  "row_start_s": 459.291667,
+  "frames": 42,
+  "master_frame_index_0": 10996
+}

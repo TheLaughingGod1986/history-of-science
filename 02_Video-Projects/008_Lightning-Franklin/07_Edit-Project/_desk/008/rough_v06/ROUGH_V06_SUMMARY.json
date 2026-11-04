@@ -1,0 +1,39 @@
+{
+  "version": "rough_v06",
+  "job": "J1257",
+  "source_master": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_precheck/rough_v04/hos_008_rough_v04.mp4",
+  "source_sha256": "e00bb897a05c5a53843db9c7e7e62669194ced6f28f986daed6a142da54d7d5e",
+  "master_sha256": "3c69d96fbf9f578f758110fb9db9e74750255ce8df1419123dfe2b085b3ea7d1",
+  "durations": {
+    "format": 539.626479,
+    "video": 539.5,
+    "video_start": 0.125,
+    "nb_frames": 12923,
+    "r_frame_rate": "24/1",
+    "audio": 539.626479,
+    "audio_start": 0.0,
+    "av_end_offset": 0.0014790000000175496
+  },
+  "gates": {
+    "polish_rc": 1,
+    "picture_rc": 1
+  },
+  "pause": {
+    "source": "PAUSE_TRIM_v03.json joins, nearest remaining silence >=0.5s",
+    "choice": {
+      "silence": [
+        9.117938,
+        9.759417
+      ],
+      "trim_start": 9.166667,
+      "trim_end": 9.708333,
+      "frame0": 217,
+      "frame1": 230,
+      "trim_s": 0.5416659999999993,
+      "join_dist": 0.05067750000000082,
+      "audio": "splice audio stream-copied; this pause cut is one AAC encode of the joined track"
+    },
+    "vo": "pause only; trim sits inside silencedetect, clear of FIX rows"
+  },
+  "note": "Parked for Chief: graphics + composite. No finished-film PASS. No music bed."
+}

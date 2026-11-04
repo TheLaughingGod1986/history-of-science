@@ -38,6 +38,11 @@ class Json(unittest.TestCase):
     def test_nested_key_over_cap(self):
         self.assertEqual([v for _, v in atempo_check.scan_json('{"vo": {"atempo": 1.07}}')], [1.07])
 
+    def test_superseded_record_ignored(self):
+        text = '{"atempo": 1.05, "superseded": {"atempo": 1.08}, "supersededMedia": {"atempo": 1.07}}'
+        self.assertEqual(atempo_check.scan_json(text), [])
+        self.assertEqual([v for _, v in atempo_check.scan_json('{"atempo": 1.07, "superseded": {}}')], [1.07])
+
     def test_under_cap_and_bad_json(self):
         self.assertEqual(atempo_check.scan_json('{"atempo": 1.03}'), [])
         self.assertEqual(atempo_check.scan_json("not json"), [])

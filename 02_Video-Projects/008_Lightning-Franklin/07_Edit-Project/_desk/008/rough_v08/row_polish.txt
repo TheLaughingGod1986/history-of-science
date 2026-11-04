@@ -1,0 +1,2 @@
+10_metal_easy     1.5s overlay_10_metal_easy.mp4    ok
+polish gate PASS: 0 of 1 rows failed, 0 to look at -> /private/tmp/j1263-hos008-rough-v08/row_polish.json

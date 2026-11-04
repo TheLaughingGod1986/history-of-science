@@ -1,0 +1,55 @@
+{
+  "job": "J1287",
+  "ruling": "Chief h29, bed seam only, no ElevenLabs",
+  "take": "05_Music/lightning008_score_bed_v01_take.mp3",
+  "song_id": "XV6uI76yzdLON8PmTVwC",
+  "credits_new": 0,
+  "take_start_s": 50.7,
+  "loop_bars": 15,
+  "loop_s": 54.0,
+  "bpm_grid": 66.7,
+  "xfade_s": 3.0,
+  "source_in_s": 370.45,
+  "source_out_s": 424.45,
+  "take_end_used_s": 539.326,
+  "bed_arranged_sha256": "142b7d41bb5aaf3403ec0c09f73af875c40b3f3f9953bde3361d18cd91c17355",
+  "bed_ducked_sha256": "812b149a463673294ff16abb625a295d45a06e922c3c01ef97b07444c5a86a10",
+  "bed_mp3_sha256": "40937135976eeb99fe33acedc5924b0bd41f89b20244b81a2759da7792f4404c",
+  "master_sha256": "b43185edd215a68f876d28d5a19ef1482d713ce1dcfd1e888473047371484fe3",
+  "video_md5": "1ab08ec6b7bb7dbb7b44d272710474dd",
+  "video_packets": 12923,
+  "mix_vs_vo_lag_ms": 0.0,
+  "master_vs_v12_lag_ms": -1.0,
+  "duck": {
+    "speech_mean": 20.22,
+    "min": 3.1,
+    "long_pause_under_i": 16.18,
+    "breach_runs_0.3s": 0,
+    "worst_breach_frames": 2,
+    "pause_above_speech": 4.04,
+    "bed_integrated": -39.9,
+    "vo_integrated": -20.5
+  },
+  "whoosh": [
+    {
+      "name": "ch2",
+      "old_start": 100.05,
+      "new_start": 99.67,
+      "body_end": 100.36,
+      "word": 100.46,
+      "clear_s": 0.1
+    },
+    {
+      "name": "ch3",
+      "old_start": 187.75,
+      "new_start": 187.75,
+      "body_end": 188.44,
+      "word": 188.54,
+      "clear_s": 0.1
+    }
+  ],
+  "paths": {
+    "precheck": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_precheck/master_v02/hos_008_master_v02.mp4",
+    "nas_desk": "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_desk/008/master_v02/hos_008_master_v02.mp4"
+  }
+}

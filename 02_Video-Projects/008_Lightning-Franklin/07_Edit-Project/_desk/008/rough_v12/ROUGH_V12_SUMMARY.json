@@ -1,0 +1,54 @@
+{
+  "version": "rough_v12",
+  "job": "J1267",
+  "ruling": "Chief h21",
+  "master_sha256": "d032e5fb7ae89f492f1d4df59070ce13a419c23287834780f8996999d17520b4",
+  "alpha_sha256": "53454827126be943dc4b11b51c52a32e9131637094dc4ca869a57e2165a68312",
+  "render_alpha_called": false,
+  "title_source": "v08 frame 11114 title box",
+  "durations": {
+    "format": 539.626479,
+    "nb_packets": 12923,
+    "video": 539.5,
+    "video_start": 0.125,
+    "nb_frames": 12923,
+    "r_frame_rate": "24/1",
+    "audio": 539.626479,
+    "audio_start": 0.0,
+    "av_end_offset": 0.0014790000000175496
+  },
+  "title_box": {
+    "worst": 0.952,
+    "pass": true
+  },
+  "join": {
+    "last_leadin_frame": 11088,
+    "first_card_frame": 11089,
+    "first_card_time_s": 463.166667,
+    "mean_abs": 0.001,
+    "limit": 1.0,
+    "pass": true
+  },
+  "frame_diff": {
+    "body_worst": 0.409,
+    "pass": true
+  },
+  "plate_gone": {
+    "min_mean_abs": 44.408,
+    "pass": true
+  },
+  "composite_match": {
+    "worst": 0.866,
+    "pass": true
+  },
+  "tip": {
+    "worst_abs_px": 10.5,
+    "pass": true
+  },
+  "audio_match": true,
+  "gates": {
+    "polish_rc": 0,
+    "picture_rc": 0
+  },
+  "note": "Parked for Chief. No finished-film PASS. No UAT. No upload. GBP0."
+}

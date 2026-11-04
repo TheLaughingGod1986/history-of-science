@@ -1,0 +1,132 @@
+{
+  "version": "rough_v10",
+  "job": "J1267",
+  "ruling": "Chief h19",
+  "built_from": "rough v08 stream copy, one GOP replaced",
+  "master_sha256": "09d358442307823bbfbfe4422761541f9045c60a7b84d9284f7f3706d4fe984a",
+  "alpha_sha256": "53454827126be943dc4b11b51c52a32e9131637094dc4ca869a57e2165a68312",
+  "composite_sha256": "f8453cc78529871ef12a5ce4b1ad84a55f1d3d3759b98d180507b4c09d400ca9",
+  "render_alpha_called": false,
+  "durations": {
+    "format": 539.626479,
+    "nb_packets": 12923,
+    "video": 539.5,
+    "video_start": 0.125,
+    "nb_frames": 12923,
+    "r_frame_rate": "24/1",
+    "audio": 539.626479,
+    "audio_start": 0.0,
+    "av_end_offset": 0.0014790000000175496
+  },
+  "composite_match": {
+    "composite_sha256": "f8453cc78529871ef12a5ce4b1ad84a55f1d3d3759b98d180507b4c09d400ca9",
+    "alpha_sha256": "53454827126be943dc4b11b51c52a32e9131637094dc4ca869a57e2165a68312",
+    "limit": 1.0,
+    "worst": 0.834,
+    "pass": true,
+    "samples": [
+      {
+        "row_frame": 0,
+        "master_frame_index": 10996,
+        "plate_source_frame": 109,
+        "mean_abs": 0.463
+      },
+      {
+        "row_frame": 5,
+        "master_frame_index": 11001,
+        "plate_source_frame": 114,
+        "mean_abs": 0.593
+      },
+      {
+        "row_frame": 11,
+        "master_frame_index": 11007,
+        "plate_source_frame": 120,
+        "mean_abs": 0.696
+      },
+      {
+        "row_frame": 21,
+        "master_frame_index": 11017,
+        "plate_source_frame": 130,
+        "mean_abs": 0.71
+      },
+      {
+        "row_frame": 32,
+        "master_frame_index": 11028,
+        "plate_source_frame": 141,
+        "mean_abs": 0.71
+      },
+      {
+        "row_frame": 38,
+        "master_frame_index": 11034,
+        "plate_source_frame": 147,
+        "mean_abs": 0.786
+      },
+      {
+        "row_frame": 41,
+        "master_frame_index": 11037,
+        "plate_source_frame": 150,
+        "mean_abs": 0.834
+      }
+    ]
+  },
+  "frame_diff": {
+    "samples": [
+      {
+        "t": 463.2,
+        "mean_abs": 0.0,
+        "v10_frame_index": 11090,
+        "v10_pts": 463.208333,
+        "v08_frame_index": 11090,
+        "v08_pts": 463.208333,
+        "same_index": true
+      },
+      {
+        "t": 464.0,
+        "mean_abs": 0.0,
+        "v10_frame_index": 11109,
+        "v10_pts": 464.0,
+        "v08_frame_index": 11109,
+        "v08_pts": 464.0,
+        "same_index": true
+      },
+      {
+        "t": 466.0,
+        "mean_abs": 0.0,
+        "v10_frame_index": 11157,
+        "v10_pts": 466.0,
+        "v08_frame_index": 11157,
+        "v08_pts": 466.0,
+        "same_index": true
+      },
+      {
+        "t": 468.7,
+        "mean_abs": 0.0,
+        "v10_frame_index": 11222,
+        "v10_pts": 468.708333,
+        "v08_frame_index": 11222,
+        "v08_pts": 468.708333,
+        "same_index": true
+      }
+    ],
+    "worst": 0.0,
+    "limit": 1.0,
+    "pass": true,
+    "note": "Samples are after v08's plate ends at 463.125s and on the tail keyframe GOP, which is stream-copied from v08. A miss is a source frame shift when the indexes differ, and a re-encode when they match."
+  },
+  "tip": {
+    "worst_abs_px": 10.5,
+    "pass": true
+  },
+  "gates": {
+    "polish_rc": 0,
+    "picture_rc": 0
+  },
+  "safe_path_frames": {
+    "lead_in": 29,
+    "body_from_v08": 157,
+    "row_frames": 186
+  },
+  "note": "Parked for Chief. No finished-film PASS. No UAT. No upload. GBP0.",
+  "timeline": "video_start 0.125 after itsoffset; unaligned mux kept aside and not delivered as the review master",
+  "vo": "459.30-461.05 apart. But a metal; 461.05-462.26 rod is an easy"
+}

@@ -1,0 +1,59 @@
+{
+  "ok": true,
+  "seam_centre_s": 372.25,
+  "fade_s": [
+    370.75,
+    373.75
+  ],
+  "xfade_s": 3.0,
+  "source_in_s": 370.45,
+  "source_out_s": 424.45,
+  "take_end_s": 539.326,
+  "rms_db": [
+    -42.57,
+    -43.26
+  ],
+  "rms_delta_db": 0.693,
+  "short_term_lufs": [
+    -40.3,
+    -40.7
+  ],
+  "lufs_delta": 0.4,
+  "click_seam": 0.0015836700872538887,
+  "click_body_max": 0.003750608607238217,
+  "click_ok": true,
+  "flux_seam": 5.232715049289616,
+  "flux_body_p999": 14.506092659652602,
+  "flux_ok": true,
+  "quiet_stretches": [],
+  "arranged": {
+    "ok": true,
+    "seam_centre_s": 372.25,
+    "fade_s": [
+      370.75,
+      373.75
+    ],
+    "xfade_s": 3.0,
+    "source_in_s": 370.45,
+    "source_out_s": 424.45,
+    "take_end_s": 539.326,
+    "rms_db": [
+      -29.49,
+      -29.64
+    ],
+    "rms_delta_db": 0.146,
+    "short_term_lufs": [
+      -26.9,
+      -27.7
+    ],
+    "lufs_delta": 0.8,
+    "click_seam": 0.00708075612783432,
+    "click_body_max": 0.0108795166015625,
+    "click_ok": true,
+    "flux_seam": 19.238224029541016,
+    "flux_body_p999": 56.07905578613281,
+    "flux_ok": true,
+    "quiet_stretches": [],
+    "unused_tail_dbfs": -89.11
+  }
+}

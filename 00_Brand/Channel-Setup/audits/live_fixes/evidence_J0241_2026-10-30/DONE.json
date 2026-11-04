@@ -1,0 +1,45 @@
+{
+  "job": "J0241",
+  "ended": "2026-10-30T01:26:23.990400+00:00",
+  "long_public": true,
+  "long_id": "wwcjcFfC-5M",
+  "short_id": "BW_CFAX-mxc",
+  "related": {
+    "target": "wwcjcFfC-5M",
+    "ok": true,
+    "chunk": "Related video\\nThe Tied Arm That Proved Your Blood Circulates\\nSubtitles"
+  },
+  "buffer": {
+    "org": "6431f03385378b838b780157",
+    "dueAt": "2026-10-31T11:30:00.000Z",
+    "channels": {
+      "instagram": {
+        "postId": "6ae32c556b2f54fd85377bd7",
+        "status": "scheduled",
+        "dueAt": "2026-10-31T11:30:00.000Z",
+        "service": "instagram",
+        "name": "historyofscienceyt"
+      },
+      "facebook": {
+        "postId": "6ae32c566b2f54fd85377c5e",
+        "status": "scheduled",
+        "dueAt": "2026-10-31T11:30:00.000Z",
+        "service": "facebook",
+        "name": "History of Science"
+      },
+      "tiktok": {
+        "postId": "6ae32c57a0a200dca8b8d764",
+        "status": "scheduled",
+        "dueAt": "2026-10-31T11:30:00.000Z",
+        "service": "tiktok",
+        "name": "historyofscienceyt"
+      }
+    },
+    "already_scheduled_before_this_run": true,
+    "captions_match_approved_hook_question": true
+  },
+  "not_touched": [
+    "5n7xFQRBUvI"
+  ],
+  "note": "Related set via CDP :9460 puppeteer (J0280 method). Buffer IG/FB/TikTok already scheduled 29 Oct; GraphQL readback confirms scheduled 31 Oct 11:30Z on HOS destinations only."
+}

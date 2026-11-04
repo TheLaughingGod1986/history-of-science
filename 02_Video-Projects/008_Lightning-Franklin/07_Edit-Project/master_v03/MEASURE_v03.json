@@ -1,0 +1,188 @@
+{
+  "job": "J1287",
+  "ruling": "Chief h33, VO sync and chapter-3 whoosh only, no ElevenLabs",
+  "credits_new": 0,
+  "normalization_type": "linear",
+  "chain": "amix normalize=0, volume static gain, alimiter attack=0.1 latency=true (compensated). No loudnorm.",
+  "gain_db": 7.1,
+  "limiter_db": -1.5,
+  "wav_I": -14.1,
+  "wav_TP": -1.2,
+  "master_I": -14.1,
+  "master_TP": -1.2,
+  "master_LRA": 4.1,
+  "bed_arranged_sha256": "142b7d41bb5aaf3403ec0c09f73af875c40b3f3f9953bde3361d18cd91c17355",
+  "bed_ducked_sha256": "34145f7fdbcc66fd129d1d0a0975b68b5e27e3cdad2b14f7a8fe9988386375f7",
+  "master_sha256": "cf1561c218bace7bc14ed3d625b0790a457027a90f392262f45ca7172723099b",
+  "video_md5": "1ab08ec6b7bb7dbb7b44d272710474dd",
+  "video_packets": 12923,
+  "film_samples": 25902071,
+  "vo_trim_samples": 0,
+  "lag_precheck": [
+    {
+      "tool": "vo-ffmpeg",
+      "t": 5.0,
+      "lag_ms": 0.0
+    },
+    {
+      "tool": "vo-ffmpeg",
+      "t": 100.0,
+      "lag_ms": 0.0
+    },
+    {
+      "tool": "vo-ffmpeg",
+      "t": 300.0,
+      "lag_ms": 0.0
+    },
+    {
+      "tool": "vo-ffmpeg",
+      "t": 500.0,
+      "lag_ms": 0.0
+    }
+  ],
+  "lag": [
+    {
+      "tool": "ffmpeg",
+      "t": 5.0,
+      "lag_ms": 0.0
+    },
+    {
+      "tool": "ffmpeg",
+      "t": 100.0,
+      "lag_ms": 0.0
+    },
+    {
+      "tool": "ffmpeg",
+      "t": 300.0,
+      "lag_ms": 0.0
+    },
+    {
+      "tool": "ffmpeg",
+      "t": 500.0,
+      "lag_ms": 0.0
+    },
+    {
+      "tool": "afconvert",
+      "t": 5.0,
+      "lag_ms": 0.0
+    },
+    {
+      "tool": "afconvert",
+      "t": 100.0,
+      "lag_ms": 0.0
+    },
+    {
+      "tool": "afconvert",
+      "t": 300.0,
+      "lag_ms": 0.0
+    },
+    {
+      "tool": "afconvert",
+      "t": 500.0,
+      "lag_ms": 0.0
+    }
+  ],
+  "duck": {
+    "speech_mean": 20.25,
+    "min": 4.2,
+    "long_pause_under_i": 16.26,
+    "breach_runs_0.3s": 0,
+    "worst_breach_frames": 2,
+    "pause_above_speech": 3.99,
+    "bed_integrated": -39.8,
+    "vo_integrated": -20.5
+  },
+  "seam": {
+    "ok": true,
+    "seam_centre_s": 372.25,
+    "fade_s": [
+      370.75,
+      373.75
+    ],
+    "xfade_s": 3.0,
+    "source_in_s": 370.45,
+    "source_out_s": 424.45,
+    "take_end_s": 539.326,
+    "rms_db": [
+      -42.54,
+      -43.28
+    ],
+    "rms_delta_db": 0.742,
+    "short_term_lufs": [
+      -40.3,
+      -40.7
+    ],
+    "lufs_delta": 0.4,
+    "click_seam": 0.0015878071482900904,
+    "click_body_max": 0.003750608607410919,
+    "click_ok": true,
+    "flux_seam": 5.252617055314045,
+    "flux_body_p999": 14.534820143958575,
+    "flux_ok": true,
+    "quiet_stretches": []
+  },
+  "whoosh": [
+    {
+      "name": "ch2",
+      "start": 99.67,
+      "body_end": 100.51,
+      "onset": 100.62,
+      "clear_s": 0.11
+    },
+    {
+      "name": "ch3",
+      "old_start": 187.75,
+      "new_start": 187.65,
+      "body_s": 0.76,
+      "body_end": 188.41,
+      "onset": 188.61,
+      "clear_s": 0.2
+    }
+  ],
+  "probe_master": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_type": "video",
+        "start_time": "0.125000",
+        "duration": "539.500000",
+        "nb_frames": "12923"
+      },
+      {
+        "codec_type": "audio",
+        "start_time": "0.000000",
+        "duration": "539.626479",
+        "nb_frames": "25296"
+      }
+    ],
+    "format": {
+      "duration": "539.626479"
+    }
+  },
+  "probe_v12": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_type": "video",
+        "start_time": "0.125000",
+        "duration": "539.500000",
+        "nb_frames": "12923"
+      },
+      {
+        "codec_type": "audio",
+        "start_time": "0.000000",
+        "duration": "539.626479",
+        "nb_frames": "25308"
+      }
+    ],
+    "format": {
+      "duration": "539.626479"
+    }
+  },
+  "paths": {
+    "precheck": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_precheck/master_v03/hos_008_master_v03.mp4",
+    "nas_desk": "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_desk/008/master_v03/hos_008_master_v03.mp4"
+  }
+}

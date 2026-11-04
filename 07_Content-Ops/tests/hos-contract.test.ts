@@ -5,6 +5,9 @@ import {
   checkTags,
   checkNeighbours,
   checkTitle,
+  dedupeVideoIds,
+  dedupeVideosById,
+  checkChaptersAndSources,
   lintLongPackage,
   lintShortsRelease,
   ukSlot,
@@ -20,6 +23,7 @@ const goodManifest = {
   alteredContent: true,
   premiere: false,
   privacy: "private",
+  video: "../09_Final-Export/x.mp4",
   schedule: "2026-10-15T17:00:00.000Z", // Thu 18:00 BST
   captionsFile: "Captions/x.srt",
 };
@@ -29,7 +33,8 @@ const longInput = (manifest: Record<string, unknown>, extra: Partial<Parameters<
   title: "What's Really Inside an Atom?",
   titleAbc: ["What's Really Inside an Atom?", "Why Is the Periodic Table in This Order?"],
   tags: ["atom", "periodic table", "rutherford", "moseley", "history of science"],
-  description: "What's inside an atom? Mostly nothing.",
+  description:
+    "What's inside an atom? Mostly nothing.\n\nChapters\n0:00 How small can you cut gold?\n1:09 The table that broke its own rule\n2:41 The crumb inside the atom\n\nSources\nH. Moseley, Phil. Mag. 26 (1913)",
   liveTitles: ["How Did We Discover the Periodic Table?"],
   ...extra,
 });
@@ -39,6 +44,75 @@ describe("UK slots", () => {
     expect(ukSlot("2026-10-15T17:00:00Z")).toMatchObject({ weekday: "Thu", time: "18:00" });
     expect(ukSlot("2026-10-16T10:30:00Z").time).toBe("11:30");
     expect(ukSlot("2026-10-29T18:00:00Z")).toMatchObject({ weekday: "Thu", time: "18:00" }); // after clocks change
+  });
+});
+
+describe("long description: chapters and sources", () => {
+  const ok = "Hook.\n\nChapters\n0:00 One\n1:00 Two\n2:00 Three\n\nSources\nA. Author, Book (1900)";
+  it("passes a description with both blocks", () => {
+    expect(rules(checkChaptersAndSources(ok))).toEqual([]);
+    expect(rules(checkChaptersAndSources(ok.replace("Sources\nA.", "Sources: A.")))).toEqual([]);
+  });
+  it("fails no chapters, a first stamp after 0:00, fewer than 3 stamps, or stamps under 10 s apart", () => {
+    expect(rules(checkChaptersAndSources("Hook.\n\nSources\nA. Author"))).toEqual(["description.chapters"]);
+    expect(rules(checkChaptersAndSources(ok.replace("0:00 One", "0:05 One")))).toEqual(["description.chapters"]);
+    expect(rules(checkChaptersAndSources(ok.replace("2:00 Three\n", "")))).toEqual(["description.chapters"]);
+    expect(rules(checkChaptersAndSources(ok.replace("1:00 Two", "0:05 Two")))).toEqual(["description.chapters"]);
+  });
+  it("fails no Sources block, or a Sources heading with nothing under it", () => {
+    expect(rules(checkChaptersAndSources(ok.replace("\n\nSources\nA. Author, Book (1900)", "")))).toEqual(["description.sources"]);
+    expect(rules(checkChaptersAndSources(ok.replace("A. Author, Book (1900)", "")))).toEqual(["description.sources"]);
+  });
+  it("fails a long package whose description has neither (Shorts are not checked)", () => {
+    const r = rules(lintLongPackage(longInput(goodManifest, { description: "Why did Franklin fly a kite?" })));
+    expect(r).toEqual(expect.arrayContaining(["description.chapters", "description.sources"]));
+  });
+  const draftManifest = {
+    ...goodManifest,
+    video: null,
+    schedule: "2026-11-26T18:00:00.000Z", // Thu 18:00 GMT
+  };
+  it("(a) warns (no error) on a draft package with neither block, video null, and schedule 30 days out", () => {
+    const findings = lintLongPackage(
+      longInput(draftManifest, {
+        description: "Why did Franklin fly a kite?",
+        now: new Date("2026-10-27T18:00:00.000Z"),
+      }),
+    );
+    expect(rules(findings)).toEqual([]);
+    expect(rules(findings, "warn")).toEqual(
+      expect.arrayContaining(["description.chapters", "description.sources"]),
+    );
+    expect(
+      findings
+        .filter((f) => f.rule === "description.chapters" || f.rule === "description.sources")
+        .every((f) => f.message.endsWith(" (blocks at release)")),
+    ).toBe(true);
+  });
+  it("(b) errors on the same package when video is set", () => {
+    const findings = lintLongPackage(
+      longInput(
+        { ...draftManifest, video: "../09_Final-Export/x.mp4" },
+        {
+          description: "Why did Franklin fly a kite?",
+          now: new Date("2026-10-27T18:00:00.000Z"),
+        },
+      ),
+    );
+    expect(rules(findings)).toEqual(
+      expect.arrayContaining(["description.chapters", "description.sources"]),
+    );
+  });
+  it("(c) errors on the same package with video null and schedule 3 days out", () => {
+    const findings = lintLongPackage(
+      longInput(draftManifest, {
+        description: "Why did Franklin fly a kite?",
+        now: new Date("2026-11-23T18:00:00.000Z"),
+      }),
+    );
+    expect(rules(findings)).toEqual(
+      expect.arrayContaining(["description.chapters", "description.sources"]),
+    );
   });
 });
 
@@ -202,6 +276,37 @@ describe("channel audit", () => {
     ]);
     expect(rules(cross.get("a") || [])).toEqual(expect.arrayContaining(["schedule.one-a-day", "title.duplicate-live"]));
     expect(rules(cross.get("c") || [])).toContain("title.duplicate-live");
+  });
+  it("deduplicates repeated identical video IDs across playlist page boundaries while still flagging equal titles on distinct IDs", () => {
+    const short = (id: string, when: string, title: string): ApiVideo => ({
+      ...good,
+      id,
+      snippet: { ...good.snippet, title },
+      status: { ...good.status, privacyStatus: "public", publishAt: when },
+      contentDetails: { duration: "PT25S" },
+    });
+    // Page-boundary reproduction: uU12JA5rMWg returned at end of page 1 (idx 49) and start of page 2 (idx 50).
+    const rawPageIds = ["-3L6HzJ_d_4", "uU12JA5rMWg", "uU12JA5rMWg", "_C92tIJCk8A"];
+    expect(dedupeVideoIds(rawPageIds)).toEqual(["-3L6HzJ_d_4", "uU12JA5rMWg", "_C92tIJCk8A"]);
+
+    const boundaryDup1 = short("uU12JA5rMWg", "2026-09-29T10:30:00Z", "The periodic table's empty chairs");
+    const boundaryDup2 = short("uU12JA5rMWg", "2026-09-29T10:30:00Z", "The periodic table's empty chairs");
+    const distinctOther = short("LanTHJckYx8", "2026-09-30T10:30:00Z", "What other table has empty chairs?");
+    expect(dedupeVideosById([boundaryDup1, boundaryDup2, distinctOther]).map((v) => v.id)).toEqual([
+      "uU12JA5rMWg",
+      "LanTHJckYx8",
+    ]);
+
+    // Repeated identical ID alone must not self-flag title.duplicate-live or schedule.one-a-day.
+    const selfOnly = auditChannel([boundaryDup1, boundaryDup2, distinctOther]);
+    expect(rules(selfOnly.get("uU12JA5rMWg") || [])).toEqual([]);
+    expect(rules(selfOnly.get("LanTHJckYx8") || [])).toEqual([]);
+
+    // Equal titles on distinct video IDs must still fail title.duplicate-live, even when one ID also repeats.
+    const realTitleDup = short("distinctDupId", "2026-10-02T10:30:00Z", "The periodic table's empty chairs");
+    const withRealDup = auditChannel([boundaryDup1, boundaryDup2, realTitleDup]);
+    expect(rules(withRealDup.get("uU12JA5rMWg") || [])).toContain("title.duplicate-live");
+    expect(rules(withRealDup.get("distinctDupId") || [])).toContain("title.duplicate-live");
   });
 });
 

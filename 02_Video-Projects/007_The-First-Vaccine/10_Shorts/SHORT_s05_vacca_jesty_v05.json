@@ -2,7 +2,9 @@
   "id": "s05_vacca_jesty",
   "version": "v05",
   "job": "J0966",
-  "youtube_id": "4WUs0beKn0A",
+  "youtube_id": "xgx2lYHhYZM",
+  "replaces": "4WUs0beKn0A",
+  "superseded_by": null,
   "fixes": "J0966 Chief FIX v05 (6426432872: restores Jenner as explicit subject before 1798 Inquiry publication/naming using existing word 176 'Jenner', realigns BENJAMIN JESTY card to 2.36-5.25s inside s02, aligns all 8 cuts to exact inter-word pause midpoints, ATEMPO 1.03 <= 1.06)",
   "test": "B (search-titled)",
   "air_date": "2026-11-17",
@@ -487,7 +489,8 @@
     "last_word_to_loop_s": 0.422,
     "payoff_frac": 0.743,
     "meta_promise": "no",
-    "youtube_id": "4WUs0beKn0A"
+    "youtube_id": "xgx2lYHhYZM",
+    "replaces": "4WUs0beKn0A"
   },
   "plan": [
     {

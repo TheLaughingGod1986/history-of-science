@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-25",
-  "updated_by": "gemini",
+  "updated": "2026-11-03",
+  "updated_by": "codex (J1868 UAT triage)",
   "board_url": "https://claude.ai/artifact/Hhk519dkbHMzeaZfp3efhc",
   "stages": [
     {
@@ -86,7 +86,7 @@
     "006 picture: Mon 12 Oct after 09:00 read the Flow balance and price P3:06 + Parts 04\u201305 (J0138), the Chief passes the prices (J0139), then Flow mints and the Part 04/05 roughs (J0140); picture by Sun 25 Oct, edit and thumbnails by Thu 29 Oct, Ben's final OK Sun 1 Nov.",
     "Mon 12 Oct: Flow credits refill (AI Ultra). J0138 reads the balance and re-prices 006 (P3:06, Parts 04\u201305), then 007, on Flow rates; the Chief passes before any mint (J0139).",
     "007 picture: plate boards priced (96 rows, 80 mints); spend starts after 006 and once the whole voiceover batch has passed.",
-    "008 edit: narration runs 9:14.8, over the 7\u20139 min window; the \u00a74 pause trim on the assembled film has to bring it in.",
+    "008: J1880 prepares corrections for six Ben v03 notes, then J1881 reviews scope and queues production/QA. J1755 separately holds browser delivery; no new watch or upload approval.",
     "Thu 29 Oct 18:05: 005 post-air jobs (Related on its Shorts, cards, end screen, pinned comment)."
   ],
   "credits": [
@@ -104,9 +104,9 @@
     },
     {
       "pool": "Flow (picture)",
-      "left": "20,900 (read 21 Oct 23:14 London after J0352 P5:12_kite_storm Quality 100 cr; all 73/73 Flow rows of 007 minted for 2,890 cr)",
-      "rule": "Flow first for picture; AI Ultra active (renewed 12 Oct). Floor 0 (3,000 buffer on 007): never buy credits, top up or spill into billing.",
-      "checked": "21 Oct"
+      "left": "15,380 (read 29 Oct 23:06Z after J1192 P05:08_cup_and_planets_c1 Fast retake 10 cr; all 57/57 tranche-1 Flow rows of 009 minted for 3,170 cr vs 7,354 expected / 7,585 cap)",
+      "rule": "Flow first for picture; AI Ultra active (renewed 12 Oct). Floor 0 (3,000 buffer on 009 tranche 1): never buy credits, top up or spill into billing.",
+      "checked": "29 Oct"
     }
   ],
   "films": [
@@ -397,7 +397,7 @@
       "title": "Why Did Franklin Fly a Kite in a Storm?",
       "air": "2026-11-19",
       "ready_by": "2026-11-15",
-      "summary": "Long VO (9:14.8) + Shorts VO (v02 pair) locked. Plate boards v03 KEEP (Chief PASS 15 Oct, J0240): 112 rows, 15 Quality / 86 non-emissive Fast / 11 \u00a30 code graphics / 0 reuse. Flow expected 5,605 cr (try-1 2,360 cr). No mint until after 006 and 007.",
+      "summary": "Master v03 historically passed Chief h35 and was delivered by J1297; Ben requested six changes on 3 Nov 16:08Z. J1880 prepares the exact correction recipe, then J1881 scopes production and capable QA. All six notes unresolved; no new media approval. J1755 separately holds browser delivery repair. Planned 19 Nov, not uploaded; plan is not a public YouTube record.",
       "stages": {
         "topic": {
           "status": "done"
@@ -438,20 +438,36 @@
         "picture": {
           "status": "blocked",
           "due": "2026-11-08",
-          "owner": "chief",
+          "owner": "Assembly capability chain",
           "since": "2026-10-16",
           "underway": false,
-          "note": "J0329: eleven no-spend v01 code graphics rendered from KEEP v03 boards, plus five alpha overlays and paper review previews. Awaiting Chief visual review; five moving-plate composites still pending. PICTURE_PLAN_v03 mint gate unchanged (5,605 cr expected). See CODE_GRAPHICS_v01_REVIEW.md.",
-          "waiting": "Chief review of J0329 graphics; mint only after 006 and 007 with live Flow reading leaving at least 3,000 credits after 008 expected spend",
+          "note": "Historical rough-v12 picture lock: Chief h22, HOS #180 comment 6533306017. Ben v03 change request 2026-11-03T16:08:33.439Z now requires scoped corrections. J1868 records evidence, not a new picture PASS.",
+          "waiting": "J1880 maps three motion defects and diagram/text corrections; J1881 scopes production",
           "steps": [
-            11,
+            112,
             112
           ],
-          "steps_unit": "board rows rendered (11 graphics awaiting review)"
+          "steps_unit": "board rows rendered (11 code graphics + 101/101 Flow plates KEEP)",
+          "jobs": [
+            "J1880",
+            "J1881"
+          ]
         },
         "edit": {
-          "status": "todo",
-          "due": "2026-11-12"
+          "status": "blocked",
+          "due": "2026-11-12",
+          "owner": "Assembly capability chain",
+          "since": "2026-11-03T18:54",
+          "underway": false,
+          "waiting": "J1880 correction recipe -> J1881 elected-Chief scope review; J1755 separate browser-delivery hold",
+          "note": "J1868 preserved six original Ben notes in 07_Edit-Project/J1868_BEN_REVIEW_v03.json. Historical h35 master v03 cf1561c2...3099b and J1297 delivery stand; Ben requested changes, not approval. No replacement render or publication authorized. PR401 delivery reconciliation remains separate.",
+          "jobs": [
+            "J1297",
+            "J1755",
+            "J1868",
+            "J1880",
+            "J1881"
+          ]
         },
         "thumbnails": {
           "status": "todo",
@@ -459,7 +475,9 @@
         },
         "ben_ok": {
           "status": "todo",
-          "due": "2026-11-15"
+          "due": "2026-11-15",
+          "waiting": "Six v03 notes unresolved; corrected cut must pass gates and Chief review before renewed watch",
+          "note": "Change request 2026-11-03T16:08:33.439Z; no Ben OK."
         },
         "scheduled": {
           "status": "todo",
@@ -472,7 +490,7 @@
       "title": "Why Doesn't the Moon Fall to Earth?",
       "air": "2026-11-26",
       "ready_by": "2026-11-22",
-      "summary": "Long VO v01 locked (Chief KEEP, desk 6101629662). Plate boards v04 KEEP (Chief PASS 15 Oct, J0335): 90 rows, 46 Quality / 31 Fast / 12 \u00a30 code graphics / 1 reuse. Flow expected 12,534 (tranche 1 7,354, tranche 2 5,180). No mint until after 006, 007 and 008.",
+      "summary": "Long VO v01 locked (Chief KEEP, desk 6101629662). Plate boards v04 KEEP (Chief PASS 15 Oct, J0335): 90 rows, 46 Quality / 31 Fast / 12 \u00a30 code graphics / 1 reuse. Tranche 1 complete: all 57/57 Flow rows (26 Quality + 31 Fast) minted and KEEP (J1192, 29 Oct: 3,170 cr vs 7,354 expected / 7,585 cap; live Flow 15,380 >= 3,000 buffer) + 12 \u00a30 code graphics (J0342/J0383) + 1 reuse = 70/90 rows. Synced to NAS. Parked for Chief tranche 1 PASS; tranche 2 (20 Quality rows, 5,180 expected) waits for ~12 Nov renewal.",
       "stages": {
         "topic": {
           "status": "done"
@@ -510,13 +528,18 @@
           "waiting": "after 010 long VO"
         },
         "picture": {
-          "status": "blocked",
+          "status": "doing",
           "due": "2026-11-15",
-          "owner": "Cursor",
-          "note": "J0336 v04 plate boards KEEP (Chief PASS 15 Oct): 90 rows (46 Quality / 31 Fast / 12 \u00a30 code graphics / 1 reuse); Flow expected 12,534 (tranche 1 7,354 / tranche 2 5,180). No mint. See PRICE_REVIEW_v04.md.",
+          "owner": "Gemini",
+          "note": "J1192 tranche 1 complete (parked for Chief tranche 1 PASS): all 57/57 tranche-1 Flow v04 rows minted and KEEP (Part 01 12/12 + Part 02 10/10 + Part 03 7/7 + Part 04 13/13 + Part 05 15/15, including 8 UAT retakes; 26 Quality + 31 Fast = 3,170 cr used vs 7,354 expected / 7,585 cap; live Flow 18,550 -> 15,380 >= 3,000 buffer) + 12 \u00a30 code graphics (J0342/J0383) + 1 reuse = 70/90 rows. Synced to NAS.",
           "since": "2026-10-15",
           "underway": false,
-          "waiting": "mint after 006 (0 Flow), 007 and 008; tranche 1 only when a live Flow read stays at least 3,000 after 7,354; tranche 2 (5,180) after the ~12 Nov AI Ultra renewal"
+          "waiting": "Chief tranche 1 PASS (J1192); tranche 2 (20 Quality rows, 5,180 expected) after the ~12 Nov AI Ultra renewal",
+          "steps": [
+            70,
+            90
+          ],
+          "steps_unit": "board rows rendered (12 code graphics + 57/57 tranche-1 Flow plates KEEP + 1 reuse; 20 tranche-2 wait ~12 Nov)"
         },
         "edit": {
           "status": "todo",

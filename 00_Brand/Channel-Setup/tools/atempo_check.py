@@ -53,6 +53,9 @@ def scan_json(text: str) -> list[tuple[str, float]]:
     def walk(node, path: str) -> None:
         if isinstance(node, dict):
             for key, val in node.items():
+                # A superseded/supersededMedia block records a cut that was replaced, not a build.
+                if str(key).lower().startswith("superseded"):
+                    continue
                 here = f"{path}.{key}" if path else str(key)
                 if "atempo" in str(key).lower() and isinstance(val, (int, float)) and not isinstance(val, bool):
                     if over(float(val)):

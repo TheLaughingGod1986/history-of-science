@@ -1,0 +1,52 @@
+1
+00:00:00,019 --> 00:00:01,042
+Jenner did the test.
+
+2
+00:00:01,297 --> 00:00:04,210
+He gave James a standard variolation, the old
+
+3
+00:00:04,255 --> 00:00:07,106
+treatment that used real smallpox matter, which would
+
+4
+00:00:07,140 --> 00:00:09,544
+normally cause at least a mild illness.
+
+5
+00:00:09,799 --> 00:00:10,544
+Then he waited.
+
+6
+00:00:10,799 --> 00:00:11,237
+One day.
+
+7
+00:00:11,492 --> 00:00:12,226
+Three days.
+
+8
+00:00:12,481 --> 00:00:13,024
+A week.
+
+9
+00:00:13,279 --> 00:00:14,265
+Nothing happened.
+
+10
+00:00:14,520 --> 00:00:16,958
+In Jenner's words, no disease followed.
+
+11
+00:00:17,213 --> 00:00:18,633
+Months later, he tried again.
+
+12
+00:00:18,811 --> 00:00:19,852
+Still nothing.
+
+13
+00:00:20,108 --> 00:00:21,979
+The cowpox had protected the boy.
+

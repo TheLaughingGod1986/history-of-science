@@ -1,0 +1,44 @@
+{
+  "composite_sha256": "f8453cc78529871ef12a5ce4b1ad84a55f1d3d3759b98d180507b4c09d400ca9",
+  "alpha_sha256": "53454827126be943dc4b11b51c52a32e9131637094dc4ca869a57e2165a68312",
+  "limit": 1.0,
+  "worst": 0.866,
+  "pass": true,
+  "samples": [
+    {
+      "row_frame": 0,
+      "master_frame_index": 10996,
+      "mean_abs": 0.592
+    },
+    {
+      "row_frame": 5,
+      "master_frame_index": 11001,
+      "mean_abs": 0.695
+    },
+    {
+      "row_frame": 11,
+      "master_frame_index": 11007,
+      "mean_abs": 0.785
+    },
+    {
+      "row_frame": 21,
+      "master_frame_index": 11017,
+      "mean_abs": 0.782
+    },
+    {
+      "row_frame": 32,
+      "master_frame_index": 11028,
+      "mean_abs": 0.781
+    },
+    {
+      "row_frame": 38,
+      "master_frame_index": 11034,
+      "mean_abs": 0.844
+    },
+    {
+      "row_frame": 41,
+      "master_frame_index": 11037,
+      "mean_abs": 0.866
+    }
+  ]
+}

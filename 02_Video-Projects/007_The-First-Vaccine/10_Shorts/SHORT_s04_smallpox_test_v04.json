@@ -2,7 +2,9 @@
   "id": "s04_smallpox_test",
   "version": "v04",
   "job": "J0966",
-  "youtube_id": "-I_GHK-GcFs",
+  "youtube_id": "cLKDiYP55J8",
+  "replaces": "-I_GHK-GcFs",
+  "superseded_by": null,
   "fixes": "J0966 Acting-Chief FIX v04 (HOS desk 6454289043): mute 0.000-0.075 s + 20 ms fade-in at 0.075 s on VO stem to remove 'July,' phoneme bleed before 'Jenner did the test.' Picture, cuts, overlays, duration (22.400 s), ATEMPO 1.05, and mix unchanged.",
   "test": "B (search-titled)",
   "air_date": "2026-11-13",
@@ -442,7 +444,8 @@
     "last_word_to_loop_s": 0.421,
     "payoff_frac": 0.898,
     "meta_promise": "no",
-    "youtube_id": "-I_GHK-GcFs"
+    "youtube_id": "cLKDiYP55J8",
+    "replaces": "-I_GHK-GcFs"
   },
   "plan": [
     {
