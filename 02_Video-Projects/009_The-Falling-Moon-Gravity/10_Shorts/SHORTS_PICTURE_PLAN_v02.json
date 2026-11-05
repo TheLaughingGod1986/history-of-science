@@ -425,7 +425,16 @@
         "bounded_edit_proposal": "Sentence 1 ('In one minute, the moon falls about as far as an apple falls in one second.') ends at 4.27 s (3.18 s pure speech even after the 0.31 s pause trim); S01 cuts after 'apple' at 2.75 s while 'falls in one second.' lands in S02. Both time intervals ('In one minute' and 'in one second') must be preserved for the lunar-vs-apple comparison, and the 16-word hook cannot fit <= 2.85 s using existing words and lawful pause trims (or within the 1.06x studio atempo cap); keep this Short explicitly blocked and unresolved (no new VO, scientific claim, approved wording change, or speed exception is authorised)."
       },
       "status": "blocked_hook_and_missing_plates",
-      "blocked_reason": "S01 cuts at 2.75 s before hook sentence ends at 4.27 s, and target long plates exist only in board JSON (no .mp4 files on disk/NAS)."
+      "blocked_reason": "S01 cuts at 2.75 s before hook sentence ends at 4.27 s, and target long plates exist only in board JSON (no .mp4 files on disk/NAS).",
+      "pending_vo_revision": {
+        "stem": "hos_009_short_B_v03",
+        "script": "In one minute the Moon drops an apple's one-second fall. About five metres each. Isaac Newton worked out why. The Moon is sixty times further from the Earth's centre than we are, so the pull on it is sixty times sixty weaker. Three thousand six hundred times. And the numbers matched. One pull, for apples and Moons.",
+        "review": "J1894",
+        "status": "blocked_hook_timing",
+        "raw_hook_end_s": 3.68,
+        "vo_duration_s": 23.68,
+        "note": "Existing rows remain historical v02 timing; do not assemble until Chief resolves v03 hook failure."
+      }
     }
   ],
   "rules": {

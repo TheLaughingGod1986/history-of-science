@@ -111,3 +111,16 @@ Authority rechecked: Codex elected; Grok/Claude unavailable. HOS has2/4 November
 **Chain:** J2033 video worker (Cursor, Codex/Gemini fallback) after J2026 -> J2034 elected-Chief picture review -> J2035 no-new-spend versioned assembly -> J2036 technical QA/package plus J1275 actual chapter retiming -> J2037 elected-Chief Ben-watch handoff. All have HOS:009 links in the existing queue. Queued is not claimed: no generation worker pickup observed at this checkpoint. Final-watch card only after real finished-cut gates and durable verified media. Ben's actual finished-film watch/listen applies under4Nov standing order; no worker perception invented.
 
 All57 tranche1 files exist locally and on NAS and match ledger sha256 (`TRANCHE1_INVENTORY_J2026.json`); accepted70/90 and existing completion percentage unchanged. Source facts signature remains historically UNSIGNED despite existing PIPELINE done: no new sign-off inferred. New graphics must composite named newly generated plates where boarded. J2034 must resolve callback P05:11_table_three_again1.20–7.90 against J1237 P01 source0–7 lock before edit; do not silently extend. Other locks: P04:07 0–3.760/hardout<=7.042; P04:10_c1 1.083–6.423/in>=1.083. Long narration stays locked; J0862 Shorts work does not block long picture. No YouTube/Buffer changes.
+
+
+# J0862 single-take result — 5 Nov 2026
+
+Worker: codex. No final approval. J1894 scope executed once; three accepted v02 takes remain unchanged.
+
+009 B v03: exact review text is 316 characters, 57 whitespace words (review claimed 311). House client, Ben Orbit Narrator, eleven_v3, unchanged settings. Live balance 97,352 / 121,114 before and after (counter lag); 316 submitted characters conservatively logged. No further take authorized or made.
+
+vo_check_py312.sh: PASS, 23.68 s, mean -24.2 dB, peak -4.3 dB, 147 wpm; homophone warning an apple's / and apples requires Ben's final listen. No audio perception claimed.
+
+Hook FAIL: Scribe ends fall at 3.680 s. The scoped 0.150 s trim plus maximum 1.06 speed yields 3.330 s, over 2.850 s. Total with 1 s tail would be 24.680 s. J1894's predicted token timings are not measurements of this new take. No larger gap surgery, second take, script rewrite or timing waiver performed. Chief must scope the next repair.
+
+Media preserved in the HOS checkout, 009/10_Shorts/vo_v02/hos_009_short_B_v03.{mp3,wav}; TAKE and VO_CHECK records accompany this report. All old v02 files preserved. 010 A retains J1004 Option A1. Downstream J2171 remains blocked on this hook; no film stage approved. Nothing uploaded or published.

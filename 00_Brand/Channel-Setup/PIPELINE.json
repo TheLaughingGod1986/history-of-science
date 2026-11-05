@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04",
+  "updated": "2026-11-05",
   "updated_by": "codex",
   "board_url": "https://claude.ai/artifact/Hhk519dkbHMzeaZfp3efhc",
   "stages": [
@@ -526,10 +526,16 @@
           "note": "v02 (test B): two search-titled Shorts, 9 Oct"
         },
         "shorts_vo": {
-          "status": "todo",
+          "status": "blocked",
           "due": "2026-10-08",
-          "owner": "Cursor",
-          "waiting": "after 010 long VO"
+          "owner": "Chief",
+          "waiting": "Chief: 009 B v03 hook 3.68s exceeds 2.85s; one-take scope exhausted",
+          "underway": false,
+          "note": "J0862: single 009 B v03 recorded; word/levels PASS, hook FAIL. No regeneration of other takes.",
+          "steps": [
+            2,
+            3
+          ]
         },
         "picture": {
           "status": "doing",
@@ -603,10 +609,16 @@
           "note": "v02 (test B): two search-titled Shorts, 9 Oct"
         },
         "shorts_vo": {
-          "status": "todo",
+          "status": "blocked",
           "due": "2026-10-08",
-          "owner": "Cursor",
-          "waiting": "after 010 long VO"
+          "owner": "Chief",
+          "waiting": "Chief records review of retained A/C takes; no new take required",
+          "underway": false,
+          "note": "J0862: single 009 B v03 recorded; word/levels PASS, hook FAIL. No regeneration of other takes.",
+          "steps": [
+            2,
+            3
+          ]
         },
         "picture": {
           "status": "todo",
