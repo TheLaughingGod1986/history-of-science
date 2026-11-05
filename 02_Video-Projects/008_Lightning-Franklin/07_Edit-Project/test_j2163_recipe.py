@@ -83,14 +83,20 @@ class PlannerTests(unittest.TestCase):
         self.assertEqual([x['timestamp'] for x in d['eight_rows']],
                          ['00:20', '0:30', '0:51', '1:49', '2:20', '3:13', '3:31', '7:58'])
         self.assertEqual([x['candidate_frames'] for x in d['eight_rows']],
-                         [[427, 544], [744, 839], [1129, 1232], [2506, 2665],
-                          [3260, 3343], [4513, 4672], [4977, 5077], [11358, 11492]])
+                         [[427, 544], [744, 839], [1129, 1231], [2506, 2665],
+                          [3260, 3343], [4511, 4670], [4977, 5077], [11358, 11492]])
+        self.assertEqual(len(d['required_inputs']), 6)
         self.assertFalse(d['eight_rows'][2]['same_source_as_1_49'])
         self.assertEqual(d['eight_rows'][2]['hair_tube_source']['candidate_frames'], [2506, 2665])
+        self.assertEqual(d['eight_rows'][2]['hair_tube_source']['clock_1_51_frame'], 2658)
         self.assertFalse(d['eight_rows'][2]['recipe']['generation_proposal']['authorized'])
         self.assertFalse(d['eight_rows'][3]['recipe']['generation_proposal']['authorized'])
         self.assertFalse(d['eight_rows'][5]['recipe']['generation_proposal']['authorized'])
+        self.assertEqual(d['eight_rows'][5]['recipe']['generation_proposal']['reference_sha256'],
+                         'cc16a515a43e881c54a207eb2cb3f700ab9a4166bbb83a366dc09431db403e51')
+        self.assertEqual(d['eight_rows'][5]['recipe']['generation_proposal']['subscription_credit_cap'], 300)
         self.assertFalse(d['eight_rows'][7]['recipe']['generation_proposal']['authorized'])
+        self.assertEqual(d['eight_rows'][7]['recipe']['generation_proposal']['subscription_credit_cap'], 300)
         flip = d['eight_rows'][4]['jar_flip_2_18']
         self.assertEqual(flip['master_frame'], 3305)
         self.assertTrue(flip['inside_replace_3260_3343'])
@@ -98,7 +104,7 @@ class PlannerTests(unittest.TestCase):
         self.assertFalse(flip['new_row'])
         cap = d['caption_treatment']
         self.assertEqual(cap['scope'], 'every_bottom_onscreen_text_over_moving_footage')
-        self.assertGreater(len(cap['labels']), 8)
+        self.assertEqual(len(cap['labels']), 27)
         self.assertTrue(all(lab['splice'] is False for lab in cap['labels']))
         self.assertIn('J1755', '\n'.join(d['holds']))
         self.assertTrue(all(row['status'].startswith('UNRESOLVED') for row in d['eight_rows']))
@@ -107,19 +113,29 @@ class PlannerTests(unittest.TestCase):
         pts = json.loads(Path(r.__file__).with_name('J2163_MASTER_FRAME_PTS.json').read_text())
         self.assertEqual(pts['master_sha256'], r.MASTER_SHA)
         self.assertEqual(r.clock_frame(pts['frames'], pts['time_base'], 51), 1220)
+        self.assertEqual(r.clock_frame(pts['frames'], pts['time_base'], 111), 2658)
         self.assertEqual(r.clock_frame(pts['frames'], pts['time_base'], 193), 4621)
         self.assertEqual(r.clock_frame(pts['frames'], pts['time_base'], 138), 3305)
         self.assertEqual(r.clock_frame(pts['frames'], pts['time_base'], 479), 11469)
         timeline = {'frames': [{'index': f[0], 'pts': f[1], 'duration': f[2], 'key_frame': f[3]} for f in pts['frames']]}
-        patches = r.build_plan(timeline, r.load_manifest()['eight_rows'])
+        d = r.load_manifest()
+        patches = r.build_plan(timeline, d['eight_rows'])
         self.assertEqual(len(patches), 8)
+        self.assertEqual([p['candidate_boundary_gop_envelope'] for p in patches],
+                         [[423, 544], [744, 839], [1129, 1231], [2506, 2665],
+                          [3168, 3343], [4511, 4670], [4977, 5077], [11358, 11492]])
         self.assertEqual(patches[2]['measured_pts_in'], timeline['frames'][1129]['pts'])
         self.assertEqual(timeline['frames'][1220]['pts'], 626688)
-        self.assertTrue(1129 <= 1220 <= 1232)
-        self.assertEqual(patches[5]['measured_pts_in'], timeline['frames'][4513]['pts'])
-        self.assertTrue(4513 <= 4621 <= 4672)
+        self.assertTrue(1129 <= 1220 <= 1231)
+        self.assertEqual(patches[5]['measured_pts_in'], timeline['frames'][4511]['pts'])
+        self.assertTrue(4511 <= 4621 <= 4670)
         self.assertEqual(timeline['frames'][4621]['pts'], 2371584)
         self.assertEqual(timeline['frames'][3305]['pts'], 1695744)
+        for lab in d['caption_treatment']['labels']:
+            lo, hi = lab['master_frames']
+            self.assertEqual(timeline['frames'][lo]['key_frame'], 1)
+            self.assertTrue(hi + 1 == len(timeline['frames']) or timeline['frames'][hi + 1]['key_frame'] == 1)
+            self.assertEqual(lab['master_frame_count'], hi - lo + 1)
         self.assertTrue(all(p['pts_reconciled'] is False for p in patches))
         self.assertNotIn('caption_treatment', patches[0])
 

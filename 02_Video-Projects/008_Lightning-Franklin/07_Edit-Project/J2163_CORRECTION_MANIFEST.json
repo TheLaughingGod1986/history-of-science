@@ -145,6 +145,24 @@
         "7.5"
       ],
       "minimum_frames": 84
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part01/raw/v01/07_hot_night_t1.mp4",
+      "sha256": "30da07fe8860c3640fdb99a4439b858cfbd2460b94510e5e20d23da6b1b728c3",
+      "required_seconds": [
+        "0",
+        "4.35"
+      ],
+      "minimum_frames": 103
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part03/raw/v01/01_points_desk_t1.mp4",
+      "sha256": "a9a32aa475424a973ea6e75ad1b9e260897f554723b57e6a5fc3a946980cbf15",
+      "required_seconds": [
+        "0",
+        "6.7"
+      ],
+      "minimum_frames": 160
     }
   ],
   "holds": [
@@ -237,9 +255,9 @@
       "row": "07_hot_night",
       "candidate_frames": [
         1129,
-        1232
+        1231
       ],
-      "bounds_method": "Chained from verified master frames 427-544 and 2506-2665 by summing round((timeline_out-timeline_in)*24). That chain hits both anchors with zero error, so 1129-1232 is the hot-night span. The earlier 1124-1227 guess included five frames of 06_heavens and dropped the last five hot-night frames.",
+      "bounds_method": "Exact closed-GOP boundaries from J2163_MASTER_FRAME_PTS.json: frame 1129 (key_frame=1, PTS 580096 = 47.208333s) through frame 1231 (key_frame=0, PTS 632832 = 51.500000s, end 633344 = 51.541667s; 103 decoded frames spanning 104 nominal 1/24s intervals due to the 1024-tick step at 1230->1231). Frame 1232 (key_frame=1) starts the next cut 08_sky_flash.",
       "clock_frame": 1220,
       "clock_pts_ticks": 626688,
       "clock_pts_s": "51",
@@ -259,11 +277,14 @@
           2506,
           2665
         ],
-        "why_not_retargeted": "Those frames are already the unresolved 1:49 row. Copying them here would overlap that splice."
+        "why_not_retargeted": "Those frames are already the unresolved 1:49 row. Copying them here would overlap that splice.",
+        "clock_1_51_frame": 2658,
+        "clock_1_51_pts_ticks": 1363968,
+        "clock_1_51_pts_s": "111"
       },
       "status": "UNRESOLVED_CLOCK_VS_HAIR_SOURCE",
       "recipe": {
-        "design": "Rebuild, not trim. Master clock 51 s is frame 1220 inside P1:07_hot_night (frames 1129-1232). That plate is the night street, not a glass tube. The hair-and-tube picture is 02_salon_spark, the same source as 1:49. This row stays on the measured 0:51 plate. J1881 chooses a distinct hot-night rebuild or treats the clock as pointing at the salon rebuild. No trim and no generation.",
+        "design": "Rebuild, not trim. Master clock 51 s is frame 1220 inside P1:07_hot_night (closed GOP frames 1129-1231, 103 frames). That plate is the night street, not a glass tube. The hair-and-tube picture is 02_salon_spark (frames 2506-2665, ending at 1:51.33s / frame 2658 = 111.000s), the same source as 1:49. This row stays on the measured 0:51 plate. J1881 chooses a distinct hot-night rebuild or treats the clock as pointing at the salon rebuild. No trim and no generation.",
         "generation_proposal": {
           "authorized": false,
           "reason": "Wrong plate for a hair retake; salon retake remains the unauthorized 1:49 proposal."
@@ -337,10 +358,10 @@
       "verbatim_note": "strange behaviour as paper seems to roll out the globe",
       "row": "01_points_desk",
       "candidate_frames": [
-        4513,
-        4672
+        4511,
+        4670
       ],
-      "bounds_method": "Chained from verified jar-spark frames 3344-3407. The walk gives 4513-4672. The same walk predicts letter_crosses at 4990, but J1880 measured 4977: a 13-frame residual whose cut is not identified. Frame 4621 stays inside this row if that residual sits entirely before the cut (4500-4659) or entirely after it.",
+      "bounds_method": "Exact closed-GOP boundaries from J2163_MASTER_FRAME_PTS.json: frame 4511 (key_frame=1, PTS 2315264 = 188.416667s) through frame 4670 (key_frame=0, PTS 2396672 = 195.041667s, end 2397184 = 195.083333s; 160 decoded frames). Frame 4671 (key_frame=1) starts 02_sentry_box. Zero residual: the 13-frame offset vs nominal timeline_in*24 is accounted for by 13 earlier inter-cut 1024-tick steps in J2163_MASTER_FRAME_PTS.json.",
       "clock_frame": 4621,
       "clock_pts_ticks": 2371584,
       "clock_pts_s": "193",
@@ -354,10 +375,24 @@
       "distinct_from": "3:31 map/diagram frames 4977-5077",
       "status": "UNRESOLVED_CONDITIONAL_ON_MASTER_PTS_AND_QA",
       "recipe": {
-        "design": "New defect row. Master clock 193 s is frame 4621 inside P3:01_points_desk (chained frames 4513-4672; 13-frame residual before the map cut is unresolved). The brass globe and parchment plate. Not the 3:31 map. No replacement plate selected. Rebuild only after J1881 scopes it. No trim of the map row and no generation.",
+        "design": "New defect row. Master clock 193 s is frame 4621 inside P3:01_points_desk (closed GOP frames 4511-4670, 160 frames: clean linen thread 4511-4606 = 96f, paper-strip unroll from globe 4607-4670 = 64f). Distinct from the 3:31 map (4977-5077). No replacement plate selected yet; J1881 scopes clean-prefix/HOLD-pool splice or bounded Flow retake. No trim of the map row and no generation.",
         "generation_proposal": {
+          "route": "Flow Veo3.1 Quality",
+          "reference": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part03/refs/v03_flow_stills/01_points_desk_t1.png",
+          "reference_sha256": "cc16a515a43e881c54a207eb2cb3f700ab9a4166bbb83a366dc09431db403e51",
+          "takes_max": 3,
+          "subscription_credit_cap": 300,
+          "balance": "fresh live balance required",
           "authorized": false
-        }
+        },
+        "clean_frames": [
+          4511,
+          4606
+        ],
+        "defect_frames": [
+          4607,
+          4670
+        ]
       }
     },
     {
@@ -393,7 +428,8 @@
           "reference": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/refs/v03_flow_stills/13_rods_spread_t1.png",
           "reference_sha256": "84a92bf6ce1abd1a5780c37ac2e8ae50ea6099f5cff5c7f728a70060b394819c",
           "takes_max": 3,
-          "authorized": false
+          "authorized": false,
+          "subscription_credit_cap": 300
         }
       },
       "item": 8,
@@ -429,9 +465,9 @@
         "timeline_out": 5.9167,
         "master_frames": [
           0,
-          139
+          141
         ],
-        "master_frame_count": 140,
+        "master_frame_count": 142,
         "splice": false
       },
       {
@@ -440,10 +476,10 @@
         "timeline_in": 11.3373,
         "timeline_out": 17.7643,
         "master_frames": [
-          269,
-          423
+          272,
+          422
         ],
-        "master_frame_count": 155,
+        "master_frame_count": 151,
         "splice": false
       },
       {
@@ -453,9 +489,9 @@
         "timeline_out": 22.681,
         "master_frames": [
           423,
-          541
+          544
         ],
-        "master_frame_count": 119,
+        "master_frame_count": 122,
         "splice": false
       },
       {
@@ -464,10 +500,10 @@
         "timeline_in": 67.2886,
         "timeline_out": 70.5386,
         "master_frames": [
-          1609,
-          1687
+          1615,
+          1692
         ],
-        "master_frame_count": 79,
+        "master_frame_count": 78,
         "splice": false
       },
       {
@@ -476,10 +512,10 @@
         "timeline_in": 70.5386,
         "timeline_out": 75.5803,
         "master_frames": [
-          1687,
-          1808
+          1693,
+          1801
         ],
-        "master_frame_count": 122,
+        "master_frame_count": 109,
         "splice": false
       },
       {
@@ -488,10 +524,10 @@
         "timeline_in": 100.251,
         "timeline_out": 104.376,
         "master_frames": [
-          2400,
-          2499
+          2407,
+          2505
         ],
-        "master_frame_count": 100,
+        "master_frame_count": 99,
         "splice": false
       },
       {
@@ -500,8 +536,8 @@
         "timeline_in": 113.2013,
         "timeline_out": 120.2797,
         "master_frames": [
-          2710,
-          2879
+          2718,
+          2887
         ],
         "master_frame_count": 170,
         "splice": false
@@ -512,8 +548,8 @@
         "timeline_in": 126.9673,
         "timeline_out": 131.906,
         "master_frames": [
-          3040,
-          3158
+          3049,
+          3167
         ],
         "master_frame_count": 119,
         "splice": false
@@ -524,10 +560,10 @@
         "timeline_in": 153.1653,
         "timeline_out": 158.7703,
         "master_frames": [
-          3667,
-          3802
+          3678,
+          3812
         ],
-        "master_frame_count": 136,
+        "master_frame_count": 135,
         "splice": false
       },
       {
@@ -536,10 +572,10 @@
         "timeline_in": 175.4783,
         "timeline_out": 179.895,
         "master_frames": [
-          4201,
-          4307
+          4212,
+          4317
         ],
-        "master_frame_count": 107,
+        "master_frame_count": 106,
         "splice": false
       },
       {
@@ -548,10 +584,10 @@
         "timeline_in": 194.6187,
         "timeline_out": 201.327,
         "master_frames": [
-          4659,
+          4671,
           4820
         ],
-        "master_frame_count": 162,
+        "master_frame_count": 150,
         "splice": false
       },
       {
@@ -560,10 +596,10 @@
         "timeline_in": 211.577,
         "timeline_out": 216.702,
         "master_frames": [
-          5066,
-          5187
+          5078,
+          5200
         ],
-        "master_frame_count": 122,
+        "master_frame_count": 123,
         "splice": false
       },
       {
@@ -572,8 +608,8 @@
         "timeline_in": 243.6627,
         "timeline_out": 250.9127,
         "master_frames": [
-          5833,
-          6006
+          5848,
+          6021
         ],
         "master_frame_count": 174,
         "splice": false
@@ -584,10 +620,10 @@
         "timeline_in": 270.21,
         "timeline_out": 276.2517,
         "master_frames": [
-          6469,
-          6612
+          6483,
+          6627
         ],
-        "master_frame_count": 144,
+        "master_frame_count": 145,
         "splice": false
       },
       {
@@ -596,10 +632,10 @@
         "timeline_in": 282.2933,
         "timeline_out": 288.3193,
         "master_frames": [
-          6757,
-          6901
+          6773,
+          6904
         ],
-        "master_frame_count": 145,
+        "master_frame_count": 132,
         "splice": false
       },
       {
@@ -608,10 +644,10 @@
         "timeline_in": 314.7953,
         "timeline_out": 319.0037,
         "master_frames": [
-          7534,
-          7635
+          7552,
+          7640
         ],
-        "master_frame_count": 102,
+        "master_frame_count": 89,
         "splice": false
       },
       {
@@ -620,10 +656,10 @@
         "timeline_in": 322.9727,
         "timeline_out": 326.681,
         "master_frames": [
-          7730,
-          7819
+          7748,
+          7836
         ],
-        "master_frame_count": 90,
+        "master_frame_count": 89,
         "splice": false
       },
       {
@@ -632,10 +668,10 @@
         "timeline_in": 331.184,
         "timeline_out": 337.773,
         "master_frames": [
-          7927,
-          8085
+          7946,
+          8103
         ],
-        "master_frame_count": 159,
+        "master_frame_count": 158,
         "splice": false
       },
       {
@@ -644,10 +680,10 @@
         "timeline_in": 368.9087,
         "timeline_out": 375.367,
         "master_frames": [
-          8829,
-          8984
+          8849,
+          9003
         ],
-        "master_frame_count": 156,
+        "master_frame_count": 155,
         "splice": false
       },
       {
@@ -656,10 +692,10 @@
         "timeline_in": 381.8757,
         "timeline_out": 387.834,
         "master_frames": [
-          9141,
-          9283
+          9161,
+          9302
         ],
-        "master_frame_count": 143,
+        "master_frame_count": 142,
         "splice": false
       },
       {
@@ -668,10 +704,10 @@
         "timeline_in": 387.834,
         "timeline_out": 393.1257,
         "master_frames": [
-          9283,
-          9410
+          9303,
+          9429
         ],
-        "master_frame_count": 128,
+        "master_frame_count": 127,
         "splice": false
       },
       {
@@ -680,8 +716,8 @@
         "timeline_in": 393.1257,
         "timeline_out": 395.464,
         "master_frames": [
-          9410,
-          9466
+          9430,
+          9486
         ],
         "master_frame_count": 57,
         "splice": false
@@ -692,8 +728,8 @@
         "timeline_in": 408.964,
         "timeline_out": 414.964,
         "master_frames": [
-          9789,
-          9932
+          9810,
+          9953
         ],
         "master_frame_count": 144,
         "splice": false
@@ -704,10 +740,10 @@
         "timeline_in": 420.0473,
         "timeline_out": 424.8807,
         "master_frames": [
-          10054,
-          10170
+          10076,
+          10191
         ],
-        "master_frame_count": 117,
+        "master_frame_count": 116,
         "splice": false
       },
       {
@@ -716,10 +752,10 @@
         "timeline_in": 428.2557,
         "timeline_out": 434.214,
         "master_frames": [
-          10251,
-          10394
+          10273,
+          10415
         ],
-        "master_frame_count": 144,
+        "master_frame_count": 143,
         "splice": false
       },
       {
@@ -728,10 +764,10 @@
         "timeline_in": 442.964,
         "timeline_out": 449.2557,
         "master_frames": [
-          10604,
-          10755
+          10626,
+          10776
         ],
-        "master_frame_count": 152,
+        "master_frame_count": 151,
         "splice": false
       },
       {
@@ -740,10 +776,10 @@
         "timeline_in": 512.5873,
         "timeline_out": 519.4623,
         "master_frames": [
-          12275,
-          12440
+          12297,
+          12461
         ],
-        "master_frame_count": 166,
+        "master_frame_count": 165,
         "splice": false
       }
     ]

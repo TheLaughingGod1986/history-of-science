@@ -10,17 +10,17 @@ Source: `J2163_MASTER_FRAME_PTS.json`. Master SHA256 `cf1561c218bace7bc14ed3d625
 
 | Ben clock | Decoded frame | PTS | What the cut list puts there | Planner row |
 |---|---|---|---|---|
-| 0:51 | 1220 | 51.000 s (`626688` ticks) | `07_hot_night_t1.mp4`, rough window 47.0017–51.3187 s, master frames 1129–1232. SHA256 `30da07fe8860c3640fdb99a4439b858cfbd2460b94510e5e20d23da6b1b728c3`, rechecked this session. | New row. Rebuild, not trim. |
+| 0:51 | 1220 | 51.000 s (`626688` ticks) | `07_hot_night_t1.mp4`, rough window 47.0017–51.3187 s, closed GOP master frames 1129–1231 (`103` frames). SHA256 `30da07fe8860c3640fdb99a4439b858cfbd2460b94510e5e20d23da6b1b728c3`, rechecked this session. | New row. Rebuild, not trim. |
 | 1:49 | 2506–2665 | 104.667–111.333 s | `02_salon_spark_t1.mp4`. SHA256 `4b61312e9416b68853409b7d67683643934b44cc2d56e48623b8b0c4e8c58a92`, rechecked this session. | Original row, still unresolved. |
 | 2:18 | 3305 | 138.000 s (`1695744` ticks) | `07_foil_jar_t1.mp4` | Evidence on the 2:20 row. Not a ninth splice. |
-| 3:13 | 4621 | 193.000 s (`2371584` ticks) | `01_points_desk_t1.mp4`, rough window 187.952–194.6187 s, chained master frames 4513–4672. SHA256 `a9a32aa475424a973ea6e75ad1b9e260897f554723b57e6a5fc3a946980cbf15`, rechecked this session. | New row. |
+| 3:13 | 4621 | 193.000 s (`2371584` ticks) | `01_points_desk_t1.mp4`, rough window 187.952–194.6187 s, closed GOP master frames 4511–4670 (`160` frames: clean `4511–4606`, paper unroll `4607–4670`). SHA256 `a9a32aa475424a973ea6e75ad1b9e260897f554723b57e6a5fc3a946980cbf15`, rechecked this session. | New row. |
 | 7:59 | 11469 | 479.000 s | `13_rods_spread_t1.mp4` | Inside existing frames 11358–11492. |
 
 ## Cut bounds
 
-Hot-night frames 1129–1232 come from summing each rough-v12 timeline duration, in frames, from the verified table-three window 427–544. That same chain lands on the verified salon window 2506–2665 with zero error. The earlier 1124–1227 span was a PTS-edge guess: it took five frames of `06_heavens` and left out the last five hot-night frames.
+Hot-night frames 1129–1231 (`103` decoded frames) are the exact closed GOP in `J2163_MASTER_FRAME_PTS.json` (`frame 1129` `key_frame=1` at PTS `580096` = `47.208333 s` through `frame 1231` at PTS `632832` = `51.500000 s`, end `633344` = `51.541667 s`; `frame 1232` `key_frame=1` starts `08_sky_flash`).
 
-Points-desk frames 4513–4672 are chained the same way from the verified jar-spark window 3344–3407. That walk predicts the map cut at frame 4990, and J1880 measured it at 4977. The 13-frame residual is not pinned to one cut. Frame 4621 stays inside the row if the residual sits entirely before this cut or entirely after it. J1881 should treat 4672 as conditional.
+Points-desk frames 4511–4670 (`160` decoded frames) are the exact closed GOP in `J2163_MASTER_FRAME_PTS.json` (`frame 4511` `key_frame=1` at PTS `2315264` = `188.416667 s` through `frame 4670` at PTS `2396672` = `195.041667 s`, end `2397184` = `195.083333 s`; `frame 4671` `key_frame=1` starts `02_sentry_box`). Zero residual: the 13-frame difference vs nominal `timeline_in*24` comes from 13 earlier inter-cut `1024`-tick steps in `J2163_MASTER_FRAME_PTS.json`. All 27 `caption_treatment.labels` use their exact closed-GOP `[kf_in, kf_out - 1]` intervals (`[0, 141]` through `[12297, 12461]`).
 
 ## 0:51 is not the 1:49 source
 
