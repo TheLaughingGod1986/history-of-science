@@ -1,0 +1,210 @@
+[
+  {
+    "row": "S01",
+    "source": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/j2213_shorts_inserts/short_c_s01_t01.mp4",
+    "video": true,
+    "spoken": "",
+    "timeline_in": 0.0,
+    "timeline_out": 2.5833333333333335,
+    "upscale": 1.7777777777777777,
+    "framing": {
+      "offset": 1.0,
+      "crop": [
+        438,
+        0,
+        405,
+        720
+      ],
+      "output": [
+        720,
+        1280
+      ]
+    },
+    "title_hint": "Veo scene: leaf bubbling in sunlight"
+  },
+  {
+    "row": "S02",
+    "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/01_villa_t1.mp4",
+    "video": true,
+    "spoken": "",
+    "timeline_in": 2.5833333333333335,
+    "timeline_out": 5.708333333333333,
+    "upscale": 1.1842105263157894,
+    "framing": {
+      "offset": 0.0,
+      "crop": [
+        656,
+        0,
+        608,
+        1080
+      ],
+      "output": [
+        720,
+        1280
+      ]
+    },
+    "title_hint": "Veo scene: a villa in daylight"
+  },
+  {
+    "row": "S03",
+    "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/03_plunge_leaf_t1.mp4",
+    "video": true,
+    "spoken": "",
+    "timeline_in": 5.708333333333333,
+    "timeline_out": 8.833333333333334,
+    "upscale": 1.1842105263157894,
+    "framing": {
+      "offset": 0.0,
+      "crop": [
+        656,
+        0,
+        608,
+        1080
+      ],
+      "output": [
+        720,
+        1280
+      ]
+    },
+    "title_hint": "Veo scene: a leaf lowered into water"
+  },
+  {
+    "row": "S04",
+    "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/04_sunny_window_t1.mp4",
+    "video": true,
+    "spoken": "",
+    "timeline_in": 8.833333333333334,
+    "timeline_out": 12.041666666666666,
+    "upscale": 1.1842105263157894,
+    "framing": {
+      "offset": 0.0,
+      "crop": [
+        656,
+        0,
+        608,
+        1080
+      ],
+      "output": [
+        720,
+        1280
+      ]
+    },
+    "title_hint": "Veo scene: jars by a sunny window"
+  },
+  {
+    "row": "S05",
+    "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/raw/v01/03_pot_jar_leaf_t1.mp4",
+    "video": true,
+    "spoken": "",
+    "timeline_in": 12.041666666666666,
+    "timeline_out": 15.0,
+    "upscale": 1.1842105263157894,
+    "framing": {
+      "offset": 0.0,
+      "crop": [
+        1120,
+        0,
+        608,
+        1080
+      ],
+      "output": [
+        720,
+        1280
+      ]
+    },
+    "title_hint": "Veo scene: jar, leaf and pot"
+  },
+  {
+    "row": "S06",
+    "source": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/j2213_shorts_inserts/short_c_s06_t01.mp4",
+    "video": true,
+    "spoken": "",
+    "timeline_in": 15.0,
+    "timeline_out": 18.5,
+    "upscale": 1.7777777777777777,
+    "framing": {
+      "offset": 4.375,
+      "crop": [
+        438,
+        0,
+        405,
+        720
+      ],
+      "output": [
+        720,
+        1280
+      ]
+    },
+    "title_hint": "Veo scene: jar in shade, bubbles stopped"
+  },
+  {
+    "row": "S07",
+    "source": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/j2213_shorts_inserts/short_c_s07_t01.mp4",
+    "video": true,
+    "spoken": "",
+    "timeline_in": 18.5,
+    "timeline_out": 21.291666666666668,
+    "upscale": 1.7777777777777777,
+    "framing": {
+      "offset": 0.0,
+      "crop": [
+        438,
+        0,
+        405,
+        720
+      ],
+      "output": [
+        720,
+        1280
+      ]
+    },
+    "title_hint": "Veo scene: jar moved back into sun"
+  },
+  {
+    "row": "S08",
+    "source": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/j2213_shorts_inserts/short_c_s08_t01.mp4",
+    "video": true,
+    "spoken": "",
+    "timeline_in": 21.291666666666668,
+    "timeline_out": 24.166666666666668,
+    "upscale": 1.7777777777777777,
+    "framing": {
+      "offset": 0.0,
+      "crop": [
+        438,
+        0,
+        405,
+        720
+      ],
+      "output": [
+        720,
+        1280
+      ]
+    },
+    "title_hint": "Veo scene: sunlit leaf and rising bubbles"
+  },
+  {
+    "row": "loop_tail",
+    "source": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/j2213_shorts_inserts/short_c_s01_t01.mp4",
+    "video": true,
+    "spoken": "",
+    "timeline_in": 24.166666666666668,
+    "timeline_out": 25.166666666666668,
+    "upscale": 1.7777777777777777,
+    "framing": {
+      "offset": 1.0,
+      "crop": [
+        438,
+        0,
+        405,
+        720
+      ],
+      "output": [
+        720,
+        1280
+      ]
+    },
+    "title_hint": "Veo scene: leaf bubbling in sunlight",
+    "role": "prescribed_terminal_loop"
+  }
+]

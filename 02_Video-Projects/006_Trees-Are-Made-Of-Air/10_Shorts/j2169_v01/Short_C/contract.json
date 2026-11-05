@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "format": "short",
+  "cut": 8,
+  "duration": 25.166666666666668,
+  "last_vo_word": 24.16,
+  "prescription": {
+    "path": "/Users/benjaminoats/_desk/renders/J2169/RECIPE.md",
+    "sha256": "f77bf56ce33eb2028af1d9b0d16836aa99d31721ff489350927948de76877d45"
+  },
+  "words": {
+    "path": "/Users/benjaminoats/_desk/renders/J2169/Short_C/words.json",
+    "sha256": "816d6a8c36178ace8bb613f5605601c8595ea4dfd08c2e9062550609a9a31d75"
+  },
+  "vo": {
+    "path": "/Users/benjaminoats/_desk/006/shorts_vo_20261004/vo/t3_bubbles_sunlight_vo_v01.mp3",
+    "sha256": "5b5d84e560d51ed9ad6f9bf5588f458802620f48f008b9409c532f8a1ea4e269"
+  },
+  "source": {
+    "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/j2213_shorts_inserts/short_c_s01_t01.mp4",
+    "sha256": "14f9ca4a020dbe9326aa674961d81d59c5937498299524c79e59d1aae1ba8f51"
+  },
+  "source_in": 1.0,
+  "source_out": 2.0,
+  "framing": {
+    "crop": [
+      438,
+      0,
+      405,
+      720
+    ],
+    "output": [
+      720,
+      1280
+    ]
+  }
+}

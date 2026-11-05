@@ -1,0 +1,202 @@
+{
+  "rule": {
+    "low_detail": "FAIL: luma std < 13.44 and edge density < 0.0259 (absolute floor); WARN: luma std < 18.0 or edge density < film p5",
+    "split_panel": "full-height/width seam or gutter",
+    "split_panel_gutter": "gutter counts only with edge density >= 0.01 in the 10% band on both sides",
+    "near_black": "mean < 28.0 or p95 < 50.0",
+    "noise": "grain std > 6 over structure std < 12, and the 8x-downscaled frame under the low-detail floor (std < 13.44 and edge density < 0.0259)",
+    "jitter": "centre-patch phase correlation: reversal against trend or > 0.35 px off trend"
+  },
+  "low_detail_floor": {
+    "std": 13.44,
+    "edge": 0.0259,
+    "calibration": {
+      "video": "025_MarsRobot_full_rough_v02d.mp4",
+      "factor": 1.2,
+      "frames": [
+        {
+          "source": "PIA22223.jpg",
+          "t": 201.0,
+          "std": 12.1,
+          "edge": 0.0223
+        },
+        {
+          "source": "PIA22223.jpg",
+          "t": 216.3,
+          "std": 11.2,
+          "edge": 0.0216
+        },
+        {
+          "source": "PIA22929.jpg",
+          "t": 297.4,
+          "std": 26.54,
+          "edge": 0.5735
+        }
+      ]
+    }
+  },
+  "video": "/Users/benjaminoats/_desk/renders/J2169/Short_B/hos006_short_b_v01.mp4",
+  "edge_floor": 0.0327,
+  "verdict": "PASS",
+  "failed": [],
+  "warn": [
+    {
+      "row": "S07",
+      "cut": 6,
+      "t": 21.38,
+      "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part03/raw/v01/01_soil_to_sky_t1.mp4",
+      "why": [
+        "low detail: edge density 0.0259 < film p5 0.0327"
+      ]
+    }
+  ],
+  "reviewed_ok": [],
+  "rows": [
+    {
+      "cut": 0,
+      "row": "S01",
+      "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/raw/v01/03_pot_jar_leaf_t1.mp4",
+      "t": 1.12,
+      "std": 40.34,
+      "mean": 120.71,
+      "p95": 192.0,
+      "edge": 0.0688,
+      "hf": 11.73,
+      "lf": 34.74,
+      "std8": 36.27,
+      "edge8": 0.2638,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 1,
+      "row": "S02",
+      "source": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/j2213_shorts_inserts/short_b_s02_t01.mp4",
+      "t": 3.94,
+      "std": 58.81,
+      "mean": 116.09,
+      "p95": 227.0,
+      "edge": 0.0591,
+      "hf": 9.96,
+      "lf": 53.73,
+      "std8": 56.12,
+      "edge8": 0.3589,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 2,
+      "row": "S03",
+      "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part03/raw/v01/09_injured_air_t1.mp4",
+      "t": 7.52,
+      "std": 67.51,
+      "mean": 121.77,
+      "p95": 238.0,
+      "edge": 0.0454,
+      "hf": 8.63,
+      "lf": 64.75,
+      "std8": 65.62,
+      "edge8": 0.2082,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 3,
+      "row": "S04",
+      "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part03/raw/v01/10_mint_jar_t1.mp4",
+      "t": 11.23,
+      "std": 61.88,
+      "mean": 91.34,
+      "p95": 234.0,
+      "edge": 0.0745,
+      "hf": 12.11,
+      "lf": 57.91,
+      "std8": 59.06,
+      "edge8": 0.2315,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 4,
+      "row": "S05",
+      "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part03/raw/v01/11_candle_tall_t1.mp4",
+      "t": 14.69,
+      "std": 53.22,
+      "mean": 91.23,
+      "p95": 229.0,
+      "edge": 0.0565,
+      "hf": 8.99,
+      "lf": 49.34,
+      "std8": 50.89,
+      "edge8": 0.2389,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 5,
+      "row": "S06",
+      "source": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/j2213_shorts_inserts/short_b_s06_t01.mp4",
+      "t": 17.92,
+      "std": 55.47,
+      "mean": 112.42,
+      "p95": 221.0,
+      "edge": 0.1005,
+      "hf": 10.3,
+      "lf": 48.61,
+      "std8": 51.59,
+      "edge8": 0.5204,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 6,
+      "row": "S07",
+      "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part03/raw/v01/01_soil_to_sky_t1.mp4",
+      "t": 21.38,
+      "std": 61.26,
+      "mean": 111.46,
+      "p95": 212.0,
+      "edge": 0.0259,
+      "hf": 5.86,
+      "lf": 58.18,
+      "std8": 60.0,
+      "edge8": 0.224,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0259 < film p5 0.0327"
+      ]
+    },
+    {
+      "cut": 7,
+      "row": "loop_tail",
+      "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/raw/v01/03_pot_jar_leaf_t1.mp4",
+      "t": 23.75,
+      "std": 38.56,
+      "mean": 115.74,
+      "p95": 188.0,
+      "edge": 0.0467,
+      "hf": 7.03,
+      "lf": 35.57,
+      "std8": 36.67,
+      "edge8": 0.2046,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    }
+  ]
+}

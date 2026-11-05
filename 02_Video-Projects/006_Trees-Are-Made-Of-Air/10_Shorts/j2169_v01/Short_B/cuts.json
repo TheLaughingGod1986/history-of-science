@@ -1,0 +1,187 @@
+[
+  {
+    "row": "S01",
+    "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/raw/v01/03_pot_jar_leaf_t1.mp4",
+    "video": true,
+    "spoken": "",
+    "timeline_in": 0.0,
+    "timeline_out": 2.25,
+    "upscale": 1.565217391304348,
+    "framing": {
+      "offset": 1.0,
+      "crop": [
+        712,
+        190,
+        460,
+        818
+      ],
+      "output": [
+        720,
+        1280
+      ]
+    },
+    "title_hint": "Veo scene: jar, leaf and pot"
+  },
+  {
+    "row": "S02",
+    "source": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/j2213_shorts_inserts/short_b_s02_t01.mp4",
+    "video": true,
+    "spoken": "",
+    "timeline_in": 2.25,
+    "timeline_out": 5.625,
+    "upscale": 1.7777777777777777,
+    "framing": {
+      "offset": 0.0,
+      "crop": [
+        438,
+        0,
+        405,
+        720
+      ],
+      "output": [
+        720,
+        1280
+      ]
+    },
+    "title_hint": "Veo scene: candle in a sealed jar"
+  },
+  {
+    "row": "S03",
+    "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part03/raw/v01/09_injured_air_t1.mp4",
+    "video": true,
+    "spoken": "",
+    "timeline_in": 5.625,
+    "timeline_out": 9.416666666666666,
+    "upscale": 1.1842105263157894,
+    "framing": {
+      "offset": 0.0,
+      "crop": [
+        656,
+        0,
+        608,
+        1080
+      ],
+      "output": [
+        720,
+        1280
+      ]
+    },
+    "title_hint": "Veo scene: flame dying in a jar"
+  },
+  {
+    "row": "S04",
+    "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part03/raw/v01/10_mint_jar_t1.mp4",
+    "video": true,
+    "spoken": "",
+    "timeline_in": 9.416666666666666,
+    "timeline_out": 13.041666666666666,
+    "upscale": 1.1842105263157894,
+    "framing": {
+      "offset": 0.0,
+      "crop": [
+        780,
+        0,
+        608,
+        1080
+      ],
+      "output": [
+        720,
+        1280
+      ]
+    },
+    "title_hint": "Veo scene: mint sprig slid into a jar"
+  },
+  {
+    "row": "S05",
+    "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part03/raw/v01/11_candle_tall_t1.mp4",
+    "video": true,
+    "spoken": "",
+    "timeline_in": 13.041666666666666,
+    "timeline_out": 16.333333333333332,
+    "upscale": 1.1842105263157894,
+    "framing": {
+      "offset": 0.0,
+      "crop": [
+        840,
+        0,
+        608,
+        1080
+      ],
+      "output": [
+        720,
+        1280
+      ]
+    },
+    "title_hint": "Veo scene: tall candle burning"
+  },
+  {
+    "row": "S06",
+    "source": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/j2213_shorts_inserts/short_b_s06_t01.mp4",
+    "video": true,
+    "spoken": "",
+    "timeline_in": 16.333333333333332,
+    "timeline_out": 19.5,
+    "upscale": 1.7777777777777777,
+    "framing": {
+      "offset": 0.0,
+      "crop": [
+        438,
+        0,
+        405,
+        720
+      ],
+      "output": [
+        720,
+        1280
+      ]
+    },
+    "title_hint": "Veo scene: candle and mint in one jar"
+  },
+  {
+    "row": "S07",
+    "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part03/raw/v01/01_soil_to_sky_t1.mp4",
+    "video": true,
+    "spoken": "",
+    "timeline_in": 19.5,
+    "timeline_out": 23.25,
+    "upscale": 1.1842105263157894,
+    "framing": {
+      "offset": 0.0,
+      "crop": [
+        600,
+        0,
+        608,
+        1080
+      ],
+      "output": [
+        720,
+        1280
+      ]
+    },
+    "title_hint": "Veo scene: green plant and open sky"
+  },
+  {
+    "row": "loop_tail",
+    "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/raw/v01/03_pot_jar_leaf_t1.mp4",
+    "video": true,
+    "spoken": "",
+    "timeline_in": 23.25,
+    "timeline_out": 24.25,
+    "upscale": 1.565217391304348,
+    "framing": {
+      "offset": 1.0,
+      "crop": [
+        712,
+        190,
+        460,
+        818
+      ],
+      "output": [
+        720,
+        1280
+      ]
+    },
+    "title_hint": "Veo scene: jar, leaf and pot",
+    "role": "prescribed_terminal_loop"
+  }
+]

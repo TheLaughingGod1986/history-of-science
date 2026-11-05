@@ -1,0 +1,288 @@
+{
+  "rule": {
+    "low_detail": "FAIL: luma std < 13.44 and edge density < 0.0259 (absolute floor); WARN: luma std < 18.0 or edge density < film p5",
+    "split_panel": "full-height/width seam or gutter",
+    "split_panel_gutter": "gutter counts only with edge density >= 0.01 in the 10% band on both sides",
+    "near_black": "mean < 28.0 or p95 < 50.0",
+    "noise": "grain std > 6 over structure std < 12, and the 8x-downscaled frame under the low-detail floor (std < 13.44 and edge density < 0.0259)",
+    "jitter": "centre-patch phase correlation: reversal against trend or > 0.35 px off trend"
+  },
+  "low_detail_floor": {
+    "std": 13.44,
+    "edge": 0.0259,
+    "calibration": {
+      "video": "025_MarsRobot_full_rough_v02d.mp4",
+      "factor": 1.2,
+      "frames": [
+        {
+          "source": "PIA22223.jpg",
+          "t": 201.0,
+          "std": 12.1,
+          "edge": 0.0223
+        },
+        {
+          "source": "PIA22223.jpg",
+          "t": 216.3,
+          "std": 11.2,
+          "edge": 0.0216
+        },
+        {
+          "source": "PIA22929.jpg",
+          "t": 297.4,
+          "std": 26.54,
+          "edge": 0.5735
+        }
+      ]
+    }
+  },
+  "video": "/Users/benjaminoats/_desk/renders/J2169/Short_C/hos006_short_c_v01.mp4",
+  "edge_floor": 0.0507,
+  "verdict": "FAIL",
+  "failed": [
+    {
+      "row": "S02",
+      "cut": 1,
+      "t": 4.15,
+      "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/01_villa_t1.mp4",
+      "why": [
+        "split panel: horizontal seam at 0.05, horizontal seam at 0.057, horizontal seam at 0.067, horizontal seam at 0.076, horizontal seam at 0.087, horizontal seam at 0.107, horizontal seam at 0.117, horizontal seam at 0.417, horizontal seam at 0.431, horizontal seam at 0.437, horizontal seam at 0.485"
+      ]
+    }
+  ],
+  "warn": [
+    {
+      "row": "S05",
+      "cut": 4,
+      "t": 13.52,
+      "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/raw/v01/03_pot_jar_leaf_t1.mp4",
+      "why": [
+        "low detail: edge density 0.0498 < film p5 0.0507"
+      ]
+    }
+  ],
+  "reviewed_ok": [],
+  "rows": [
+    {
+      "cut": 0,
+      "row": "S01",
+      "source": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/j2213_shorts_inserts/short_c_s01_t01.mp4",
+      "t": 1.29,
+      "std": 52.05,
+      "mean": 110.68,
+      "p95": 203.0,
+      "edge": 0.0968,
+      "hf": 12.75,
+      "lf": 42.27,
+      "std8": 46.31,
+      "edge8": 0.4785,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 1,
+      "row": "S02",
+      "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/01_villa_t1.mp4",
+      "t": 4.15,
+      "std": 31.32,
+      "mean": 103.05,
+      "p95": 162.0,
+      "edge": 0.1317,
+      "hf": 12.58,
+      "lf": 23.75,
+      "std8": 25.47,
+      "edge8": 0.2723,
+      "seams": [
+        {
+          "kind": "horizontal seam",
+          "at": 0.05,
+          "step": 16.0
+        },
+        {
+          "kind": "horizontal seam",
+          "at": 0.057,
+          "step": 16.0
+        },
+        {
+          "kind": "horizontal seam",
+          "at": 0.067,
+          "step": 73.0
+        },
+        {
+          "kind": "horizontal seam",
+          "at": 0.076,
+          "step": 16.0
+        },
+        {
+          "kind": "horizontal seam",
+          "at": 0.087,
+          "step": 32.5
+        },
+        {
+          "kind": "horizontal seam",
+          "at": 0.107,
+          "step": 22.0
+        },
+        {
+          "kind": "horizontal seam",
+          "at": 0.117,
+          "step": 18.0
+        },
+        {
+          "kind": "horizontal seam",
+          "at": 0.417,
+          "step": 33.5
+        },
+        {
+          "kind": "horizontal seam",
+          "at": 0.431,
+          "step": 43.5
+        },
+        {
+          "kind": "horizontal seam",
+          "at": 0.437,
+          "step": 68.0
+        },
+        {
+          "kind": "horizontal seam",
+          "at": 0.485,
+          "step": 50.0
+        }
+      ],
+      "video": true,
+      "fail": [
+        "split panel: horizontal seam at 0.05, horizontal seam at 0.057, horizontal seam at 0.067, horizontal seam at 0.076, horizontal seam at 0.087, horizontal seam at 0.107, horizontal seam at 0.117, horizontal seam at 0.417, horizontal seam at 0.431, horizontal seam at 0.437, horizontal seam at 0.485"
+      ],
+      "warn": []
+    },
+    {
+      "cut": 2,
+      "row": "S03",
+      "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/03_plunge_leaf_t1.mp4",
+      "t": 7.27,
+      "std": 56.99,
+      "mean": 139.08,
+      "p95": 230.0,
+      "edge": 0.0521,
+      "hf": 10.69,
+      "lf": 52.98,
+      "std8": 54.15,
+      "edge8": 0.2832,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 3,
+      "row": "S04",
+      "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/04_sunny_window_t1.mp4",
+      "t": 10.44,
+      "std": 51.07,
+      "mean": 185.08,
+      "p95": 245.0,
+      "edge": 0.0554,
+      "hf": 12.23,
+      "lf": 45.04,
+      "std8": 47.02,
+      "edge8": 0.2806,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 4,
+      "row": "S05",
+      "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/raw/v01/03_pot_jar_leaf_t1.mp4",
+      "t": 13.52,
+      "std": 55.3,
+      "mean": 128.55,
+      "p95": 240.0,
+      "edge": 0.0498,
+      "hf": 10.91,
+      "lf": 51.73,
+      "std8": 52.42,
+      "edge8": 0.1982,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0498 < film p5 0.0507"
+      ]
+    },
+    {
+      "cut": 5,
+      "row": "S06",
+      "source": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/j2213_shorts_inserts/short_c_s06_t01.mp4",
+      "t": 16.75,
+      "std": 62.26,
+      "mean": 135.83,
+      "p95": 232.1,
+      "edge": 0.1614,
+      "hf": 13.89,
+      "lf": 55.89,
+      "std8": 58.22,
+      "edge8": 0.4447,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 6,
+      "row": "S07",
+      "source": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/j2213_shorts_inserts/short_c_s07_t01.mp4",
+      "t": 19.9,
+      "std": 55.12,
+      "mean": 114.7,
+      "p95": 211.0,
+      "edge": 0.1344,
+      "hf": 12.61,
+      "lf": 46.83,
+      "std8": 50.07,
+      "edge8": 0.4856,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 7,
+      "row": "S08",
+      "source": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/j2213_shorts_inserts/short_c_s08_t01.mp4",
+      "t": 22.73,
+      "std": 54.79,
+      "mean": 130.23,
+      "p95": 215.0,
+      "edge": 0.0694,
+      "hf": 7.99,
+      "lf": 47.41,
+      "std8": 51.17,
+      "edge8": 0.507,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 8,
+      "row": "loop_tail",
+      "source": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/j2213_shorts_inserts/short_c_s01_t01.mp4",
+      "t": 24.67,
+      "std": 51.68,
+      "mean": 109.82,
+      "p95": 202.0,
+      "edge": 0.0783,
+      "hf": 8.06,
+      "lf": 44.0,
+      "std8": 47.59,
+      "edge8": 0.4689,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    }
+  ]
+}
