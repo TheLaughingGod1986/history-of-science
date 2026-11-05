@@ -205,3 +205,8 @@ Repository validation (`00_Brand/Channel-Setup/tools/check_all.sh 02_Video-Proje
 -- gate:episode: PASS
 ALL CHECKS PASS
 ```
+
+
+## 4 November 2026 — J2163 recipe repair (Codex worker)
+
+J2163 supersedes J1880 planning claims with a read-only actual-PTS planner and conditional six-row manifest. Hash-verified h35 master decoded:12923 frames, start0.125s, duration539.500s;24 nonstandard PTS steps make global CFR reconstruction unsafe. Four candidate native inputs hash/decode checked. No output frame identity or sync measured; previous zero-delta/0ms recipe claims withdrawn. See `07_Edit-Project/J2163_REPAIR.md`, measured PTS and dry-run/test evidence. All six v03 notes remain unresolved. Two exact-match assets and master-derived word alignment still required; J1881 retains production scope. J1297/h22/h35 and J1755/PR401 rejection preserved. GBP0; no render, generation, upload, watch publication or YouTube change.

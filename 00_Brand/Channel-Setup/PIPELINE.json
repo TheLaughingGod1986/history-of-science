@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-04",
-  "updated_by": "codex (J2026 bounded HOS009 picture continuation)",
+  "updated": "2026-11-05",
+  "updated_by": "codex (J2163 repair delivered for J1881 review)",
   "board_url": "https://claude.ai/artifact/Hhk519dkbHMzeaZfp3efhc",
   "stages": [
     {
@@ -398,7 +398,7 @@
       "title": "Why Did Franklin Fly a Kite in a Storm?",
       "air": "2026-11-19",
       "ready_by": "2026-11-15",
-      "summary": "Master v03 historically passed Chief h35 and was delivered by J1297; Ben requested six changes on 3 Nov 16:08Z. J1880 prepares the exact correction recipe, then J1881 scopes production and capable QA. All six notes unresolved; no new media approval. J1755 separately holds browser delivery repair. Planned 19 Nov, not uploaded; plan is not a public YouTube record.",
+      "summary": "Historical h35 master/J1297 preserved. Six v03 change notes unresolved. J2163 repairs J1880 with measured PTS planner; J1881 reviews code/evidence and scopes production. Two exact-match assets missing; J1755 delivery/publication rejection separate.",
       "stages": {
         "topic": {
           "status": "done"
@@ -442,8 +442,8 @@
           "owner": "gemini",
           "since": "2026-10-16",
           "underway": false,
-          "note": "Historical rough-v12 picture lock: Chief h22, HOS #180 comment 6533306017. Ben v03 change request 2026-11-03T16:08:33.439Z now requires scoped corrections. J1880 mapped all six notes and candidate windows in 07_Edit-Project/J1880_SOURCE_INVENTORY_v04.json (GBP0, no new picture PASS).",
-          "waiting": "J1881 elected-Chief scope review of J1880 Option A (GBP0 native) vs Option B (bounded Flow retakes for P2:02_salon_spark and P5:13_rods_spread)",
+          "note": "Historical h22 picture lock preserved. Six v03 change notes remain unresolved. J2163 conditional manifest supersedes J1880 recipe; missing glass-tube/hair and church/house/ship-mast assets, exhausted three-candidate searches. No new picture approval.",
+          "waiting": "J1881 scopes two exact-match assets after J2163 repair; no native fallback selected and no generation authorized",
           "steps": [
             112,
             112
@@ -451,23 +451,25 @@
           "steps_unit": "board rows rendered (11 code graphics + 101/101 Flow plates KEEP)",
           "jobs": [
             "J1880",
-            "J1881"
+            "J1881",
+            "J2163"
           ]
         },
         "edit": {
           "status": "blocked",
           "due": "2026-11-12",
-          "owner": "gemini",
-          "since": "2026-11-03T18:54",
+          "owner": "claude",
+          "since": "2026-11-05T00:00:40.142053+00:00",
           "underway": false,
-          "waiting": "J1881 elected-Chief scope review of J1880 recipe (_build_rough_v13_recipe.py + J1880_SOURCE_INVENTORY_v04.json); J1755 separate browser-delivery hold",
-          "note": "J1880 delivered exact rough_v13 -> master_v04 recipe (_build_rough_v13_recipe.py, 0-frame delta, 12923 packets, h35 0.000 ms VO sync) and six acceptance checks in 07_Edit-Project/J1868_UAT_CORRECTIONS.md + J1880_SOURCE_INVENTORY_v04.json (GBP0, 0 media changed). All six Ben notes remain unresolved; historical h35 master v03 cf1561c2...3099b and J1297 delivery stand; J1755/PR401 remain separate.",
+          "waiting": "J1881 reviews J2163 repaired input; separately scoped PTS/GOP splicer, master-word alignment and exact-match assets required. J1755 separate delivery hold.",
+          "note": "J2163 code/evidence delivered: master hash/full decoded PTS and four source hashes verified; 11 tests pass. Output frame delta/sync/unchanged-frame/audio identity UNMEASURED. Six v03 notes unresolved; h22/h35/J1297 preserved. No render or new approval.",
           "jobs": [
             "J1297",
             "J1755",
             "J1868",
             "J1880",
-            "J1881"
+            "J1881",
+            "J2163"
           ]
         },
         "thumbnails": {

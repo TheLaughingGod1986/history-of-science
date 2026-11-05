@@ -1,0 +1,47 @@
+{
+  "read_at": "2026-11-04T23:55:09.375137+00:00",
+  "endpoint": "https://studio-kanban.vercel.app/api/checks",
+  "check": {
+    "film": "HOS:008",
+    "version": "v03",
+    "verdict": "change",
+    "fixes": [
+      {
+        "t": "00:20",
+        "text": "text on screen in readable needs maybe background colour"
+      },
+      {
+        "t": "0:30",
+        "text": "flash the next scene"
+      },
+      {
+        "t": "1:49",
+        "text": "strange behaviour as hair flies out the tube"
+      },
+      {
+        "t": "2:20",
+        "text": "strange behaviour with the silver foil"
+      },
+      {
+        "t": "3:31",
+        "text": "the diagram/ map is not easy to understand"
+      },
+      {
+        "t": "7:58",
+        "text": "the rods fall down for some reason"
+      }
+    ],
+    "note": "00:20 text on screen in readable needs maybe background colour \n0:30 flash the next scene \n1:49 strange behaviour as hair flies out the tube\n2:20 strange behaviour with the silver foil\n3:31 the diagram/ map is not easy to understand \n7:58 the rods fall down for some reason",
+    "at": "2026-11-03T16:08:33.439Z",
+    "job": "J1297",
+    "what": "Watch Franklin master v03; browser Play needs repair, verified copy is in HOS UAT/J1755_verified",
+    "handled": true,
+    "handledBy": "codex",
+    "handling": "Tracked by J1868; six notes unresolved. J1880 correction preparation -> J1881 Chief scope review. J1755 delivery repair remains separate.",
+    "handoffJobs": [
+      "J1880",
+      "J1881"
+    ],
+    "triageRef": "https://github.com/TheLaughingGod1986/history-of-science/pull/402"
+  }
+}

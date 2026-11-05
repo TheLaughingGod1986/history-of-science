@@ -1,0 +1,188 @@
+{
+  "schema": "hos.uat_correction_plan.v2",
+  "job": "J2163",
+  "film": "HOS:008",
+  "supersedes_plan_only": "J1880_SOURCE_INVENTORY_v04.json (preserved unchanged as historical evidence)",
+  "original_evidence_commit": "bd5302494c7337058426b2d8714fa4cf4c90efa9",
+  "six_rows": [
+    {
+      "note": 1,
+      "timestamp": "00:20",
+      "verbatim_note": "text on screen in readable needs maybe background colour",
+      "row": "03_table_three",
+      "candidate_frames": [
+        427,
+        544
+      ],
+      "status": "UNRESOLVED_CONDITIONAL_ON_MASTER_PTS_AND_QA",
+      "recipe": {
+        "design": "White Didot italic over moving plate; soft cream/umber contrast treatment, no border or pill. One label at a time, <=4 words; A KITE / A KEY / A JAR sequential only if master-derived word alignment supports each. Animate 0.3-0.5 s; phone still required.",
+        "word_timing": "UNVERIFIED: align master audio, not part offsets"
+      }
+    },
+    {
+      "note": 2,
+      "timestamp": "0:30",
+      "verbatim_note": "flash the next scene",
+      "row": "03b_town_safe -> 04_storm_mystery",
+      "candidate_frames": [
+        744,
+        839
+      ],
+      "status": "UNRESOLVED_CONDITIONAL_ON_MASTER_PTS_AND_QA",
+      "recipe": {
+        "design": "Conditional advance of storm scene into candidate 744..839 only. Copy clean 663..743 unchanged.",
+        "word_timing": "Proposed sentence end 30.70 and next start31.24 are unverified against master; reconcile before boundary decision."
+      }
+    },
+    {
+      "note": 3,
+      "timestamp": "1:49",
+      "verbatim_note": "strange behaviour as hair flies out the tube",
+      "row": "02_salon_spark",
+      "candidate_frames": [
+        2506,
+        2665
+      ],
+      "status": "UNRESOLVED_CONDITIONAL_ON_MASTER_PTS_AND_QA",
+      "recipe": {
+        "design": "Exact glass-tube/hair asset missing. No native option selected; table globe spark does not match locked line. Preserve adjacent2666..2717.",
+        "generation_proposal": {
+          "route": "Flow Veo3.1 Quality only (fragile spark)",
+          "reference": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part02/refs/v03_flow_stills/02_salon_spark_t1.png",
+          "reference_sha256": "aefd6338aded1037c11306a99fc580d1a62a66d9367409f01e0edd993cc8cc58",
+          "takes_max": 3,
+          "subscription_credit_cap": 300,
+          "balance": "fresh live balance required",
+          "authorized": false
+        }
+      }
+    },
+    {
+      "note": 4,
+      "timestamp": "2:20",
+      "verbatim_note": "strange behaviour with the silver foil",
+      "row": "07_foil_jar",
+      "candidate_frames": [
+        3260,
+        3343
+      ],
+      "status": "UNRESOLVED_CONDITIONAL_ON_MASTER_PTS_AND_QA",
+      "recipe": {
+        "design": "Keep3168..3259 unchanged; conditional replacement3260..3343 with11_jar_crack_t1.mp4 4.000-7.500 s. Following spark3344..3407 unchanged. KEEP/repeat/PTS verification outstanding."
+      }
+    },
+    {
+      "note": 5,
+      "timestamp": "3:31",
+      "verbatim_note": "the diagram/ map is not easy to understand",
+      "row": "04_letter_crosses",
+      "candidate_frames": [
+        4977,
+        5077
+      ],
+      "status": "UNRESOLVED_CONDITIONAL_ON_MASTER_PTS_AND_QA",
+      "recipe": {
+        "design": "One animated cream ink letter travels across moving07_slow_news_t1.mp4, upper sky off ship. No bordered banner, invented geography, distance, city or date labels. Optional single <=4-word label crossed the ocean only at matching master-derived speech. Fade0.3-0.5s, no hold>4s; phone evidence required.",
+        "claims": "No new number/location/date; any future addition requires exact FACT_NOTES source before use."
+      }
+    },
+    {
+      "note": 6,
+      "timestamp": "7:58",
+      "verbatim_note": "the rods fall down for some reason",
+      "row": "13_rods_spread",
+      "candidate_frames": [
+        11358,
+        11492
+      ],
+      "status": "UNRESOLVED_CONDITIONAL_ON_MASTER_PTS_AND_QA",
+      "recipe": {
+        "design": "Exact church/house/ship-mast asset missing. No roofs fallback selected. Preserve candidate135-frame cut pending corrected PTS.",
+        "generation_proposal": {
+          "route": "Flow Veo3.1; current rate and live balance required in separately scoped job",
+          "reference": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/refs/v03_flow_stills/13_rods_spread_t1.png",
+          "reference_sha256": "84a92bf6ce1abd1a5780c37ac2e8ae50ea6099f5cff5c7f728a70060b394819c",
+          "takes_max": 3,
+          "authorized": false
+        }
+      }
+    }
+  ],
+  "required_inputs": [
+    {
+      "path": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part01/raw/v01/03_table_three_t1.mp4",
+      "sha256": "482a254d7f7b195241eea96511a736d212c971988decb33c38b183347639a9bb",
+      "required_seconds": [
+        "0",
+        "5"
+      ],
+      "minimum_frames": 118
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part01/raw/v01/04_storm_mystery_t1.mp4",
+      "sha256": "e1b2de5d8cd4bbc8ace98d6d5c17af3c75651f8949d54e062fe91fbe6ee31271",
+      "required_seconds": [
+        "0",
+        "4"
+      ],
+      "minimum_frames": 96
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part03/raw/v01/07_slow_news_t1.mp4",
+      "sha256": "775e6d72eeb9bcec1ba61a72ee2fab14669620a23626bb5c1b0b5c80d7b5d749",
+      "required_seconds": [
+        "0",
+        "4.3"
+      ],
+      "minimum_frames": 101
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part02/raw/v01/11_jar_crack_t1.mp4",
+      "sha256": "7629a5dfdc5b649535c9816ece5bf0acf250a13133bf294bf43cfb1f21588270",
+      "required_seconds": [
+        "4",
+        "7.5"
+      ],
+      "minimum_frames": 84
+    }
+  ],
+  "holds": [
+    "J1881 elected-Chief production scope required; no execution authority",
+    "Master-derived word alignment needed, all proposed row boundaries remain candidates",
+    "Two exact-match assets missing; three-candidate searches exhausted, no new search",
+    "Closed-GOP dependency validation and lossless boundary splicer not implemented; future authorized production job",
+    "All six notes unresolved; no new watch publication or upload approval"
+  ],
+  "identity": {
+    "master_sha256": "cf1561c218bace7bc14ed3d625b0790a457027a90f392262f45ca7172723099b",
+    "master_bytes": 393139693,
+    "video_start_s": 0.125,
+    "video_duration_s": 539.5,
+    "decoded_frames_expected": 12923,
+    "rough_v12_h22_h35_sha256": "d032e5fb7ae89f492f1d4df59070ce13a419c23287834780f8996999d17520b4",
+    "other_claimed_rough_v12_sha256": "02db759e1c4a0fa3fbcf5b19037d8c52527c93750df4d80aa9a6c8e0c9bf7745",
+    "rough_reconciliation": "Different byte identities; do not relabel or use02db as h22. Verified master is sole timeline/picture reference. Compare elementary video, decoded frame hashes and PTS before using any alternate rough.",
+    "h35_integrated_lufs": -14.129,
+    "h35_true_peak_dbtp": -1.2
+  },
+  "future_verification": {
+    "unchanged_picture": "Compare source/output per-decoded-frame SHA256 (same native pixel format) keyed by original integer PTS and duration. Require every unchanged frame identical. Copy closed GOP packets unchanged; record and losslessly encode only explicitly approved boundary windows. Keyframe flag alone does not prove closed GOP. No setpts=N/24 or global fps conversion. Preserve source gaps and0.125 start.",
+    "audio": "Stream-copy original master audio without timestamp shifting. Compare every compressed packet payload hash plus PTS,DTS,duration,timebase,side data/edit lists, packet count and decoded sample count. Measure VO sync at original checkpoints and each patch; never infer sync from equal counts.",
+    "gates": [
+      "picture_qa",
+      "polish_gate",
+      "gate:episode",
+      "package_lint",
+      "music_gate",
+      "sfx_kit level",
+      "VO sync",
+      "six corrections plus full-cut transitions",
+      "phone readability",
+      "elected-Chief review",
+      "Ben final watch/listen"
+    ]
+  },
+  "spend_gbp": 0,
+  "media_changed": false
+}

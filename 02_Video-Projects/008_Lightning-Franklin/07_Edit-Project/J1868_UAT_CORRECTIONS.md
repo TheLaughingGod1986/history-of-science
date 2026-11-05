@@ -38,6 +38,10 @@ Record-only change. Repository check output is recorded in production-status.md.
 
 ---
 
+## Current correction: J2163 supersedes the J1880 proposal below
+
+See `J2163_REPAIR.md`, `J2163_CORRECTION_MANIFEST.json` and measured `J2163_MASTER_FRAME_PTS.json`. J1880 material below is preserved historical evidence, not the active recipe. Its inferred zero frame delta/sync, global CFR renderer, native Option A and overlay banner are rejected. All six notes remain unresolved; J1881 reviews this repair before separately scoping production. No media approval.
+
 ## J1880 — Source mapping, bounded correction recipe & six acceptance checks (Gemini worker, 4 November 2026)
 
 - **Authority & scope:** Queue job `J1880` (`HOS-008:v03:2026-11-03T16:08:33.439Z / J1868`), HOS `008` `edit` claimed by `gemini`. Correction preparation only: **£0 spend, 0 Flow/ElevenLabs credits spent, 0 media files modified or rendered, 0 watch-object/R2/YouTube actions.** All six Ben notes remain unresolved pending `J1881` elected-Chief scope review, correction execution, capable QA, and Ben's watch.
