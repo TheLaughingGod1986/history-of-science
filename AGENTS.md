@@ -122,11 +122,31 @@ A Short is scored on 5 and 6 only, plus whichever of 1–4 its single overlay is
 - **Every rule from the start:** topics picked after 11 Oct (011 on).
 - **No rework:** 004 and 005 are finished and scheduled.
 
+**Proof-first first 30 seconds (experiment HOS-2026-11-E2, Chief h47, 5 Nov 2026).** Applies at picture and edit on longs 008, 009 and 010 only. Spend stays inside each film's existing budget. Locked VO is unchanged. Plates already marked KEEP are used in the edit; this experiment does not authorise a remint. Films 004–007 and 011 onward keep the standing 4–6 s picture change.
+
+The locked first-minute milestones stay: the answer image by 0:05, the title question by 0:08, the promise by 0:15, the stakes by 0:25, and the first real fact before 0:45. Part 01 still has no chapter card, no intro and no title card. The Explorer stays out of the first minute.
+
+On those three films the opening adds three picture rules:
+
+1. **Cuts.** From 0:00 to 0:30 every visual cut is under 4.5 s, there are at least 7 distinct moving plates, and no hold runs over 4.5 s. That pace replaces the standing 4–6 s picture-change band inside this window only. After 0:30 the 4–6 s band returns. A card still does not hold still for more than 4 s, and two full-frame teach graphics still do not run back to back.
+2. **Proof.** From 0:05 to 0:15 the picture is the physical proof or the apparatus (the instrument, the sample, the hands on it), already moving. The answer image by 0:05 is that proof. An exterior establishing shot (a building, a street, a landscape or a campus) does not fill this window.
+3. **Early DATA+SCALE.** The first animated DATA graphic, with its SCALE comparison, is on screen between 0:25 and 0:40. House style: ink on period paper or a cream teach card, drawing on with the spoken number, one idea, 4 words or fewer, over a moving plate. On a VO-locked film it rides a number already spoken. The SCALE is the comparison already on the DATA marker, sourced in `FACT_NOTES`. It counts as one of the film's DATA moments.
+
+**Review gate (008–010 only),** scored PASS or FAIL in the desk report with the Teach and Polish gates:
+
+1. **CUTS:** 0:00–0:30 has at least 7 distinct moving plates and no hold over 4.5 s.
+2. **PROOF:** 0:05–0:15 is the apparatus or the physical proof.
+3. **EARLY:** the first animated DATA+SCALE graphic is on screen between 0:25 and 0:40, and it matches `FACT_NOTES`.
+
+Any FAIL goes back to the plate board or the edit before Ben's watch.
+
+**Read (not a ship gate).** A long is scored once it has at least 100 Studio views. Under that, 0:30 retention and average percentage viewed are recorded and left unscored. **Pass:** 0:30 retention at least 60%, and days 0–13 average percentage viewed at least 22% (views-weighted across the longs that have crossed 100 views). **Stop and revert** this experiment for any 008–010 edit that is not yet locked if a cut built to it hits a UAT hard fail, or if a scored long's 0:30 retention is under 40%. An uploaded file stays as it aired. Readouts 3 Dec 2026 and 3 Jan 2027. The log is orbit-with-ben `05_Analytics/tests/HOS_LONG_TESTS.md` and `05_Analytics/LEARNINGS.md` → *HOS-2026-11-E2*.
+
 ## Polish pass (Astrum ref, 11 Oct 2026)
 
 Ben, 11 Oct 2026 22:17, sent Astrum's *What Is It Like on the Surface of a Black Hole Planet?* (`PxJSOWyYWkc`, 27 min, 1.1M views) as a style reference for both channels: *"let me know what you think we can incorporate into our workflow."* Chief adopted five of its techniques the same night. They apply to every picture part and edit started after 11 Oct 2026, in the HOS house style. **Where an Astrum technique meets a HOS lock, the HOS lock wins**: the premium 3D cartoon look, white Didot italic, one label at a time, no flat poster or UI cards, the UAT hard fails and the first-minute timings all stand.
 
-**Not adopted:** Astrum's long shot holds (6–8 s, some 15 s). The picture still changes every 4–6 s, no card holds still for more than 4 s, and length still comes from narration, not holds.
+**Not adopted:** Astrum's long shot holds (6–8 s, some 15 s). The picture still changes every 4–6 s, except the HOS-2026-11-E2 window on 008–010 (cuts under 4.5 s from 0:00 to 0:30). No card holds still for more than 4 s, and length still comes from narration, not holds.
 
 **1. Sound design (SFX).**
 - **Three kinds, where the shot calls for them,** on top of the period foley we already lay (ward walla, glass, wood):
@@ -160,6 +180,7 @@ Ben, 11 Oct 2026 22:17, sent Astrum's *What Is It Like on the Surface of a Black
 **4. Script.**
 - **Every big number gets a scale.** Give it a plain comparison or an everyday analogy in the same or the next sentence ("smaller than a grain of salt"). Mark it on its DATA marker: `· DATA: <graphic> · SCALE: <comparison>`. The comparison goes on the new-claims list and into `FACT_NOTES` like any spoken claim, and it's right for the year in the scene.
 - **The hook doesn't change.** HOS keeps its first-minute timings, which are stricter than Astrum's question by 0:50: the answer image by 0:05, the title question by 0:08, the promise by 0:15, the stakes by 0:25, and the first real fact before 0:45.
+- **008–010 first 30 seconds (HOS-2026-11-E2).** From 0:00 to 0:30 the picture cuts in under 4.5 s, with at least 7 distinct moving plates, and 0:05–0:15 is the apparatus or the physical proof. The first animated DATA+SCALE graphic lands between 0:25 and 0:40. Milestones in the bullet above stay. Full rule, review scores and the stop line: *Teach on screen* → *Proof-first first 30 seconds*.
 - **Word counts don't change:** about 1,200–1,300 spoken words, and `review:script` at 90 or more. An analogy replaces words; it doesn't add them. Shorts stay at 55–65 words.
 
 **5. Finishing.**
@@ -188,7 +209,7 @@ A Short is scored on 1 and 3 only. Any FAIL goes back to the edit before Ben's w
 Chief studied two more reference channels on 11 Oct 2026. *History of the Universe* (HOTU) was read through `cqGhCCDC_Sw`, *Have We Finally Proven Einstein Wrong?*, and SEA through `7oR0Pmd-WIk`, *Higgs Boson: The God Particle*. The evidence is in `/workspace/hotu-pack/TAKEAWAYS.md` and `/workspace/sea-pack/TAKEAWAYS.md` on the box. Ben delegates creative calls to Chief and the AIs, and these are Chief's calls. They add to *Teach on screen*, *Polish pass* and *Packaging*.
 
 **These HOS locks win wherever a lesson meets them:**
-- **The first-minute timings:** the answer image by 0:05, the title question by 0:08, the promise by 0:15, the stakes by 0:25, the first real fact before 0:45.
+- **The first-minute timings:** the answer image by 0:05, the title question by 0:08, the promise by 0:15, the stakes by 0:25, the first real fact before 0:45. On 008–010 the opening cut, the apparatus window and the first DATA+SCALE graphic also follow *Teach on screen* → *Proof-first first 30 seconds* (HOS-2026-11-E2). These milestones stay.
 - **The 22–27 s / under-40 s Shorts lock**, and the yellow hook word on the frame-0 caption.
 - **The house look:** the premium 3D cartoon look, white Didot italic, one label at a time, no flat poster, UI card or photoreal card.
 - **The Explorer's limits:** never in the first minute, 1–3 beats.

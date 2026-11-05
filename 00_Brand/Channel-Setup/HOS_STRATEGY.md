@@ -68,6 +68,7 @@ Then one hard fact. The promoted film's exact live title is on screen at 9–14 
 
 - **The first 3 s of picture are the story itself.** No logo, no title card, no bumper.
 - **Sentence one is the promise.** Name the payoff within 30 s: the belief, the moment it broke, and what it made possible.
+- **008–010 opening (experiment HOS-2026-11-E2, Chief h47, 5 Nov 2026):** assemblers follow AGENTS.md → *Teach on screen* → *Proof-first first 30 seconds*. In short: the first-minute milestones stay; 0:00–0:30 cuts under 4.5 s with at least 7 moving plates; 0:05–0:15 is the apparatus or the physical proof; the first animated DATA+SCALE graphic is between 0:25 and 0:40. No remint and no VO rewrite. Readouts 3 Dec 2026 and 3 Jan 2027, in the Orbit repo `05_Analytics/tests/HOS_LONG_TESTS.md`.
 - **5 acts, cause and effect.** This happened, but, therefore. Each act teaches one idea a newcomer can say out loud afterwards.
 - **The out is the cream end card** (`STUDIO_PLAYBOOK.md` §7). The last spoken line hands off to the next film. No "thanks for watching".
 

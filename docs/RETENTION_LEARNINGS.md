@@ -85,6 +85,7 @@ Analytics CTR / APV / retention curves **not pulled** this night (vidIQ credits 
 
 | Date | Source | Note |
 |------|--------|------|
+| 2026-11-05 | Chief h47, J2204 | HOS-2026-11-E2: proof-first first 30 seconds on longs 008–010. Build rule in AGENTS.md → *Teach on screen*. Readouts 3 Dec 2026 and 3 Jan 2027. Locked VO and first-minute milestones unchanged. |
 | 2026-08-25 | vidIQ stats + RSS + scrape | 4 subs / 949 views; Shorts>>longs; title formula confirmed; indexes stale |
 | 2026-08-04 | Studio + vidIQ early | Seeded opening-cliff + **22–30s** package rule |
 | 2026-08-04 | diagnose helper | Sample: “First Alien Clue” 44s / stayed 20.4% → WEAK OPEN + length pad |
