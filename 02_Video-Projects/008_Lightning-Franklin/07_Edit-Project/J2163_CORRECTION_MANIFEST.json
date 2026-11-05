@@ -1,5 +1,5 @@
 {
-  "schema": "hos.uat_correction_plan.v3",
+  "schema": "hos.uat_correction_plan.v4",
   "job": "J2217",
   "film": "HOS:008",
   "supersedes_plan_only": "J1880_SOURCE_INVENTORY_v04.json (preserved unchanged as historical evidence)",
@@ -257,7 +257,7 @@
         1129,
         1231
       ],
-      "bounds_method": "Exact closed-GOP boundaries from J2163_MASTER_FRAME_PTS.json: frame 1129 (key_frame=1, PTS 580096 = 47.208333s) through frame 1231 (key_frame=0, PTS 632832 = 51.500000s, end 633344 = 51.541667s; 103 decoded frames spanning 104 nominal 1/24s intervals due to the 1024-tick step at 1230->1231). Frame 1232 (key_frame=1) starts the next cut 08_sky_flash.",
+      "bounds_method": "Candidate keyframe envelope only, not a proven closed GOP. J2163_MASTER_FRAME_PTS.json flags frame 1129 key_frame=1 at PTS 580096 (47.208333s) through frame 1231 at PTS 632832 (51.500000s), end 633344 (51.541667s); 103 decoded frames. Frame 1232 key_frame=1 starts 08_sky_flash. Dependency validation is outstanding. J2242 must prove closure and preservation before any splice.",
       "clock_frame": 1220,
       "clock_pts_ticks": 626688,
       "clock_pts_s": "51",
@@ -284,11 +284,23 @@
       },
       "status": "UNRESOLVED_CLOCK_VS_HAIR_SOURCE",
       "recipe": {
-        "design": "Rebuild, not trim. Master clock 51 s is frame 1220 inside P1:07_hot_night (closed GOP frames 1129-1231, 103 frames). That plate is the night street, not a glass tube. The hair-and-tube picture is 02_salon_spark (frames 2506-2665, ending at 1:51.33s / frame 2658 = 111.000s), the same source as 1:49. This row stays on the measured 0:51 plate. J1881 chooses a distinct hot-night rebuild or treats the clock as pointing at the salon rebuild. No trim and no generation.",
+        "design": "Ben's words stay: \"still have hair flying out the tube, this needs rebuilt\". Source map only: master clock 51s is frame 1220 on 07_hot_night, candidate keyframe envelope 1129-1231. That plate is the night street in the cut list. Leave it untouched. Do not rebuild it. The hair-and-tube file in the cut list is 02_salon_spark (frames 2506-2665, 1:51 is frame 2658). Treating this note as that salon rebuild is an inference pending capable in-context confirmation, not a watched fact. The note is not resolved. No generation on the night street.",
         "generation_proposal": {
           "authorized": false,
-          "reason": "Wrong plate for a hair retake; salon retake remains the unauthorized 1:49 proposal."
+          "reason": "Night street stays untouched. The salon retarget is an unconfirmed inference, not an authorized rebuild."
         }
+      },
+      "splice": false,
+      "disposition": {
+        "ben_verbatim_kept": true,
+        "evidence_level": "source_map_only",
+        "native_perception": false,
+        "perception_note": "The clock-to-plate map uses the stored PTS list and the rough_v12 cut list. This planner did not watch the picture.",
+        "night_street": "leave_untouched",
+        "distinct_hot_night_rebuild": false,
+        "proposed_salon_retarget": "inference_pending_capable_in_context_confirmation",
+        "inference": "The cut list places the hair-and-tube picture on 02_salon_spark, already the unresolved 1:49 row, near 1:51. Reading Ben's 0:51 words as that salon rebuild is an inference. It stays unresolved until a worker who can watch the shot in context confirms it.",
+        "note_resolved": false
       }
     },
     {
@@ -326,7 +338,7 @@
       ],
       "status": "UNRESOLVED_CONDITIONAL_ON_MASTER_PTS_AND_QA",
       "recipe": {
-        "design": "Keep3168..3259 unchanged; conditional replacement3260..3343 with11_jar_crack_t1.mp4 4.000-7.500 s. Following spark3344..3407 unchanged. KEEP/repeat/PTS verification outstanding."
+        "design": "Two distinct unresolved checks. 2:18 jar flip is frame 3305 inside replace 3260-3343 (136.125-139.625s) and outside keep 3168-3259. 2:20 silver foil is frame 3353 at 140s, beyond that replacement end. The following spark starts at keyframe 3344. Keep 3168-3259 unchanged. The jar-crack replacement proposal covers only 3260-3343. It does not cover 140s. Neither check is resolved. No generation."
       },
       "item": 5,
       "jar_flip_2_18": {
@@ -349,6 +361,27 @@
         ],
         "new_row": false,
         "note": "Same jar/foil family as the 2:20 row. 138 s is outside J1880 kept source frames 0-91 (display 3168-3259) and inside the existing replace zone."
+      },
+      "foil_next_spark_2_20": {
+        "ben_time": "2:20",
+        "verbatim_note": "strange behaviour with the silver foil",
+        "master_frame": 3353,
+        "pts_ticks": 1720320,
+        "pts_s": "140",
+        "replacement_end_s": "139.625",
+        "replacement_end_frame": 3343,
+        "beyond_replacement_ending_139_625s": true,
+        "inside_replace_3260_3343": false,
+        "distinct_from_jar_flip": true,
+        "next_keyframe": 3344,
+        "candidate_keyframe_envelope": [
+          3344,
+          3404
+        ],
+        "gop_closure_proven": false,
+        "splice": false,
+        "note_resolved": false,
+        "note": "140s is frame 3353, after the jar replacement that ends at frame 3343 / 139.625s. The next keyframe is 3344 and the following one is 3405, so the candidate envelope is 3344-3404. This check is not the 2:18 jar flip and replacing 3260-3343 does not cover it."
       }
     },
     {
@@ -361,7 +394,7 @@
         4511,
         4670
       ],
-      "bounds_method": "Exact closed-GOP boundaries from J2163_MASTER_FRAME_PTS.json: frame 4511 (key_frame=1, PTS 2315264 = 188.416667s) through frame 4670 (key_frame=0, PTS 2396672 = 195.041667s, end 2397184 = 195.083333s; 160 decoded frames). Frame 4671 (key_frame=1) starts 02_sentry_box. Zero residual: the 13-frame offset vs nominal timeline_in*24 is accounted for by 13 earlier inter-cut 1024-tick steps in J2163_MASTER_FRAME_PTS.json.",
+      "bounds_method": "Candidate keyframe envelope only, not a proven closed GOP. J2163_MASTER_FRAME_PTS.json flags frame 4511 key_frame=1 at PTS 2315264 (188.416667s) through frame 4670 at PTS 2396672 (195.041667s), end 2397184 (195.083333s); 160 decoded frames. Frame 4671 key_frame=1 starts 02_sentry_box. Dependency validation is outstanding. The 13-frame offset versus nominal timeline_in*24 comes from 13 earlier inter-cut 1024-tick steps in the PTS list. J2242 must prove closure and preservation.",
       "clock_frame": 4621,
       "clock_pts_ticks": 2371584,
       "clock_pts_s": "193",
@@ -375,7 +408,7 @@
       "distinct_from": "3:31 map/diagram frames 4977-5077",
       "status": "UNRESOLVED_CONDITIONAL_ON_MASTER_PTS_AND_QA",
       "recipe": {
-        "design": "New defect row. Master clock 193 s is frame 4621 inside P3:01_points_desk (closed GOP frames 4511-4670, 160 frames: clean linen thread 4511-4606 = 96f, paper-strip unroll from globe 4607-4670 = 64f). Distinct from the 3:31 map (4977-5077). No replacement plate selected yet; J1881 scopes clean-prefix/HOLD-pool splice or bounded Flow retake. No trim of the map row and no generation.",
+        "design": "New defect row. Master clock 193 s is frame 4621 inside P3:01_points_desk (candidate keyframe envelope 4511-4670, 160 frames: clean linen thread 4511-4606 = 96f, paper-strip unroll from globe 4607-4670 = 64f). Distinct from the 3:31 map (4977-5077). No replacement plate selected yet; J1881 scopes clean-prefix/HOLD-pool splice or bounded Flow retake. No trim of the map row and no generation.",
         "generation_proposal": {
           "route": "Flow Veo3.1 Quality",
           "reference": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part03/refs/v03_flow_stills/01_points_desk_t1.png",
@@ -782,6 +815,14 @@
         "master_frame_count": 165,
         "splice": false
       }
-    ]
-  }
+    ],
+    "max_words": 4,
+    "max_static_hold_s": "4",
+    "one_label_at_a_time": true,
+    "rendered": false,
+    "background": "unbordered umber over the moving plate",
+    "side_label_inventory_proves_film_wide_coverage": false,
+    "planned_table": "plan_captions() in _build_rough_v13_recipe.py, from these labels and J2163_MASTER_FRAME_PTS.json. Not a render."
+  },
+  "fix_ruling": "J1881 elected-Chief FIX 2026-11-05. Planning only. No note resolved. No spend."
 }

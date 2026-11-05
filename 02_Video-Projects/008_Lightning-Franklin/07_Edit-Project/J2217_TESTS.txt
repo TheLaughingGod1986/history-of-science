@@ -1,4 +1,5 @@
 test_actual_start_and_gap_survive (test_j2163_recipe.PlannerTests.test_actual_start_and_gap_survive) ... ok
+test_caption_plan_and_bottom_text (test_j2163_recipe.PlannerTests.test_caption_plan_and_bottom_text) ... ok
 test_clocks_map_on_stored_master_pts (test_j2163_recipe.PlannerTests.test_clocks_map_on_stored_master_pts) ... ok
 test_decoder_failure_and_stderr_rejected (test_j2163_recipe.PlannerTests.test_decoder_failure_and_stderr_rejected) ... ok
 test_eight_item_amend_stays_unresolved_and_unbordered (test_j2163_recipe.PlannerTests.test_eight_item_amend_stays_unresolved_and_unbordered) ... ok
@@ -10,12 +11,15 @@ test_manifest_safe_windows_and_missing_assets (test_j2163_recipe.PlannerTests.te
 test_missing_timestamp_rejected (test_j2163_recipe.PlannerTests.test_missing_timestamp_rejected) ... ok
 test_nonmonotonic_rejected (test_j2163_recipe.PlannerTests.test_nonmonotonic_rejected) ... ok
 test_overlapping_or_unavailable_patch_refused (test_j2163_recipe.PlannerTests.test_overlapping_or_unavailable_patch_refused) ... ok
+test_retake_p3_01_missing_hash_and_short (test_j2163_recipe.PlannerTests.test_retake_p3_01_missing_hash_and_short) ... ok
 test_short_decode_rejected (test_j2163_recipe.PlannerTests.test_short_decode_rejected) ... ok
 test_short_explicit_retake_refused (test_j2163_recipe.PlannerTests.test_short_explicit_retake_refused) ... ok
+test_spend_preflight_names_real_commands (test_j2163_recipe.PlannerTests.test_spend_preflight_names_real_commands) ... ok
+test_zero_five_one_and_foil_boundary (test_j2163_recipe.PlannerTests.test_zero_five_one_and_foil_boundary) ... ok
 
 ----------------------------------------------------------------------
-Ran 14 tests in 0.136s
+Ran 18 tests in 0.272s
 
 OK
 
-# Closed-GOP bound verification re-run, 5 Nov 2026. 0:51 is closed GOP frames 1129-1231 (103f). 3:13 is closed GOP frames 4511-4670 (160f). All 27 caption_treatment.labels use closed-GOP master_frames. --execute exits 2. 14 tests OK.
+# J1881 FIX re-run, 5 Nov 2026. Candidate keyframe envelopes, not proven closed GOPs. --retake-p3-01 missing/hash/short refused. 0:51 night street is not a splice. 140s is outside the jar replacement. 32 caption cards from 27 labels plus SAFE PATH DOWN. ai_spend.py check is not a command. --execute exits 2. 18 tests OK.
