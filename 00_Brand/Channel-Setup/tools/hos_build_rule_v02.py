@@ -405,6 +405,10 @@ def resolve_plate_path(root: Path, folder_or_film: str, plate: str, media_root: 
         pnum = int(m_pid.group(1))
         stem = m_pid.group(2)
         for croot in candidate_roots:
+            film_id = folder.split("_", 1)[0]
+            graphic = croot / "07_Edit-Project/code_graphics_v01" / f"code_graphic_{film_id}_p{pnum}_{stem}.mp4"
+            if graphic.is_file():
+                return graphic
             part_dir = croot / f"04_Generated-Clips/part0{pnum}/raw/v01"
             if not part_dir.exists():
                 continue
