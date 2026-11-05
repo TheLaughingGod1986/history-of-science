@@ -170,3 +170,41 @@ ALL CHECKS PASS
 Recipe scope review: FIX, production held. J2163 queued to repair timing/preservation, truthful verification and teaching labels; J1881 resumes on that input. See `07_Edit-Project/J1881_SCOPE_REVIEW.md`. No media PASS, six notes unresolved, J1755 delivery hold separate.
 
 Validation of review records (not media): `bash 00_Brand/Channel-Setup/tools/check_all.sh` output: **ALL CHECKS PASS**. `git diff --check` passed.
+
+
+
+## 5 November 2026 — J2170 Short C paper hook resolution & conditional 2 Dec slot preflight (Gemini worker)
+
+`£0` preparation only (`0` credits spent, no VO recording, no Flow/Vertex generation, no media modification, no upload/schedule/privacy/retitle or Buffer writes). Original `10_Shorts/SHORTS_SCRIPTS_v02.md`, `10_Shorts/SHORTS_PICTURE_PLAN_v02.json`, `10_Shorts/vo_v02/*`, and `J1004` / `J1273` / `J1868` / `J1881` / `J2163` rulings preserved unmodified.
+
+- **Deliverables:**
+  - `10_Shorts/J2170/SHORT_C_PAPER_PLAN.md`: complete paper plan, timing proof, source-checked 1-sentence hook options, whole-sentence re-indexing of unmodified `hos_008_short_C_v02.wav` (`w[13..61]`), and 8-cut approved Flow Veo plate mapping (`J1881`/`J2163` six-note overlap = 0).
+  - `10_Shorts/J2170/INPUT_INVENTORY.json`: 47 verified local/NAS input rows with exact SHA-256 hashes (`all_rows_exist: true`).
+- **Conditional 2 Dec 11:30Z slot status (`Ben watch by 29 Nov`):** **EXPLICITLY NOT ACHIEVABLE on existing audio alone; slot remains EMPTY / HELD.**
+  - Re-confirmed `J1004` proof: `hos_008_short_C_v02.mp3` (`ba8ffec96f137ce14b71a192a49461a3c0332b010dfde5e4ddfb96985e5cf758`) Sentence 1 (`w[00..12]`, 13 words: *"That thin metal rod on top of tall buildings was Benjamin Franklin's idea."*) ends at `4.840 s` (`3.720 s` pure speech at `1.00x`, `3.509 s > 2.85 s` at `1.06x` cap with zero inter-word gaps). Excising `w[04..08]` (*"on top of tall buildings"*) leaves `3.240 s > 2.85 s` at `1.00x` and violates the `AGENTS.md` Never list.
+  - Re-confirmed `02_Voiceover/hos_008_part05_the_rod_on_every_roof_v01b.mp3` (`e5e86140174f30164b9fd4856e982b0c2bfbb05b6d8858bf8d5c9bc491b4a6ae`): no contiguous `22–27 s` lightning-rod mechanism passage starts with a `<= 2.85 s` hook sentence naming both subject and surprise claim.
+- **Paper hook resolution & source check (`01_Script/FACT_NOTES_v01.md` rows 25, 38, 39, 41, 42, 44):**
+  - Primary 1-sentence pickup `C-Open-1` (7 words, 47 chars, 10 syllables): **`"That rooftop lightning rod was Franklin's idea."`** (est. `2.35–2.55 s <= 2.85 s` at `speed=1.04`, `1.00x`).
+  - Alternative `C-Open-2` (6 words, 45 chars, 10 syllables): **`"Benjamin Franklin invented the lightning rod."`** (est. `2.15–2.35 s <= 2.85 s`).
+  - Paired with unchanged `hos_008_short_C_v02.wav` (`0a25b6dab2ca193e9549c2463d5c03c05348b0e2eb2d28258749db3fbeb99f77`) slice `w[13..61]` (`5.720–24.400 s`, 49 words, `18.680 s`), total spoken words = `55–56` (`55–65` lock PASS) and total runtime = **`~22.35 s`** (`21.35 s` VO + `1.00 s` loop tail, `22–27 s` lock PASS). Both original sentence order (`Layout C-v03a`, scale payoff `w[52..61]` at `82.3% >= 70%`) and whole-sentence reordered `Layout C-v03b` (`w[52..61]` moved whole to `S02` so mechanism answer `w[40..51]` starts at `76.1% >= 70%`) are specified.
+- **Plate inventory vs `J1881` / `J2163` six-note corrections:**
+  - All 6 `J1881`/`J2163` UAT notes (`00:20` `P1:03_table_three`, `0:30` `P1:03b_town_safe -> P1:04_storm_mystery`, `1:49` `P2:02_salon_spark`, `2:20` `P2:07_foil_jar`, `3:31` `P3:04_letter_crosses`, `7:58` `P5:13_rods_spread`) are disjoint from `Short_C`. Defective `P5:13_rods_spread` (`d9fa5f13...`) is explicitly excluded.
+  - `SHORTS_PICTURE_PLAN_v02.json` used 4 pre-labelled code graphics (`P5:08..P5:11`) that collide with the `9.0–14.0 s` promoted long title banner and violate the HOS Shorts 1-overlay cap, plus `P5:10` (`J1273` `composite_v08.mp4`, 42 clean frames / `1.75 s`) remains parked for Chief. Replaced on paper with 8 verified `J1191` KEEP moving Flow Veo plates (`P5:19_skyline_strike`, `P5:01_house_rod`, `P5:07_giant_spark`, `P1:12_steeple_fire`, `P5:18_rod_closeup`, `P5:06_rod_fitting_c1`, `P5:06_rod_fitting`, `P5:14_safe_towers`).
+  - `Short_A` (`J0912`, target 24 Nov / watch 20 Nov) remains completely separate and untouched.
+  - Separate bounded decision/pickup job queued for Chief/Claude (`J2023` does not authorize credit spend).
+
+Repository check output (`bash 00_Brand/Channel-Setup/tools/check_all.sh 02_Video-Projects/008_Lightning-Franklin`):
+```text
+-- durable desk handoffs: PASS
+-- no media: PASS
+-- status board in sync: PASS
+-- ElevenLabs guard tests: PASS
+-- vo_check word tests: PASS
+-- atempo check tests: PASS
+-- voice speed (atempo <= 1.06): PASS
+-- contract tests: PASS
+-- package-lint: PASS
+-- review:script lightning_script_master_v01.md: PASS
+-- gate:episode: PASS
+ALL CHECKS PASS
+```
