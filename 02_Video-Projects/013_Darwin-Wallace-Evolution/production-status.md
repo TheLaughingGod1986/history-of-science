@@ -75,6 +75,45 @@ House voice, `eleven_v3`. Full take `hos_013_vo_v01` (512.70 s, −19.5 LUFS). O
 
 Chief h39 on J1301 passed v03. `hos_013_vo_v03a` is the locked take: the same words with six measured chapter-end fades. No re-take and no ElevenLabs. Chapter starts on the VO clock: ch01 1:15.50, ch02 2:51.08, ch03 4:36.26, ch04 6:06.34, ch05 7:28.16. Film 8:32.48. The 1.69 s beat after "into the open." at 0:20.34 is accepted; the editor may tighten it to no less than 0.6 s if the hook needs it. Detail: `02_Voiceover/VO_STATUS.md`.
 
+## 5 Nov 2026 — Shorts scripts v02, Upload Package & Shot List v01 (`J2240`)
+
+- **Slotted:** **Thu 17 Dec 2026** 18:00 UK (`2026-12-17T18:00:00.000Z`, `J2231`; active in `jobs/WIP.json` `#541`).
+- **Shorts scripts v02 (`10_Shorts/SHORTS_SCRIPTS_v02.md`):** Two search-titled Test B Shorts checked against signed-out YouTube GB autocomplete (`10_Shorts/evidence_2026-11-05_shorts_search.json`):
+  - **Short A (`10_Shorts/vo_v02/hos_013_short_A_v02.txt`, 60 words):** *How Did Darwin Discover Evolution?* (autocomplete: **yes**; payoff withheld past `14.5 s`).
+  - **Short B (`10_Shorts/vo_v02/hos_013_short_B_v02.txt`, 61 words):** *What Is Survival of the Fittest?* (autocomplete: **yes**; payoff withheld past `15.0 s`).
+  - Queued Shorts VO as **`J2246`** (`--kind vo`, `--needs mini`).
+- **Upload package (`11_Upload-Package/`):** Built `PACKAGE_MANIFEST.json`, `PRODUCTION_CHECKLIST_V2.md`, `Descriptions/darwin_long_description_v01.txt` (chapters timed to `hos_013_vo_v03a`: `0:00, 1:15, 2:51, 4:36, 6:06, 7:28`; primary sources from `FACT_NOTES_v02.md`), and `Tags/darwin_long_tags_v01.txt`.
+- **Shot list (`07_Edit-Project/SHOT_LIST_v01.md`):** 62 rows across 6 parts timed to `hos_013_vo_v03a` (`512.48 s`), with all 5 `DATA + SCALE` graphics, 11 `WHO` cards, 19 `WHEN` stamps, 4 `FACT` cards, and 2 Explorer beats outside the first minute.
+
+### `npm run lint:package -- --film 013` output
+
+```text
+PASS  02_Video-Projects/013_Darwin-Wallace-Evolution/11_Upload-Package/PACKAGE_MANIFEST.json
+   warn  [captions] no captionsFile (captions from the script)
+```
+
+### `npm run gate:episode` output
+
+```text
+# Episode gate — 013_Darwin-Wallace-Evolution
+
+**Decision:** PASS — VO / Gemini Veo allowed
+
+| Check | Status | Detail |
+|---|---|---|
+| project_dir | OK | Project: /Users/ben/_desk/worker/history-of-science/02_Video-Projects/013_Darwin-Wallace-Evolution |
+| prebuild_vidiq | OK | Pre-build vidIQ audit present and looks signed off. |
+| script_file | OK | Script: 01_Script/darwin_script_master_v02.md |
+| script_review | OK | Script reviewer PASS 92.6/90 (need ≥90). |
+| explorer_acts | OK | [EXPLORER ACTS] beats 1 (need ≥1). |
+| visual_must | OK | [VISUAL MUST] count 24 (need ≥4). |
+| teach | OK | [TEACH] count 6 (need ≥4). |
+| chapters | OK | [CHAPTER CARD] count 5 (aim 4–6 film acts). |
+| production_checklist | OK | Checklist present: 11_Upload-Package/PRODUCTION_CHECKLIST_V2.md |
+
+Script score: **92.6/100** · PASS
+```
+
 ## STOP
 
 - No Vertex/Veo/Flow minting on this film.
