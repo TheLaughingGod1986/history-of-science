@@ -36,3 +36,5 @@ J2169 stays **blocked1/3**, waiting on J2190/J2191, actual sources and final com
 Source decision due7Nov18Z; watch-pack target15Nov18Z; B18Nov/C21Nov11:30 are conditional on longPublic and all approvals. No generation, render, publishing, Buffer, NAS/media changes or spend in this decision. Required disk offload found no eligible old scratch. Capability registration is empty for audio/moving video; evidence here is documents, code and machine-readable text only.
 
 Validation: canonical17-row assertions PASS, six missing physical inputs/seven rows including shared C tail, spend/build/generation flags remain false. Full HOS repository checks recorded alongside this decision.
+
+Final validation: `check_all.sh` **ALL CHECKS PASS** (REPO_CHECKS_FINAL.txt). Initial isolated-worktree attempts lacked writable npm cache/dependencies; final run used `/private/tmp/j2189-npm-cache` and the existing HOS `07_Content-Ops/node_modules` through a local ignored symlink. No shared cache ownership or dependency files changed. `git diff --check` PASS.
