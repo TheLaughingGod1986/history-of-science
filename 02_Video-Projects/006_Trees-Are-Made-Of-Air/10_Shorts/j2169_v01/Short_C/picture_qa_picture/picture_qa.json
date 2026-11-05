@@ -1,5 +1,5 @@
 {
-  "verdict": "FAIL",
+  "verdict": "PASS",
   "terminal_loop": {
     "status": "rendered_correspondence",
     "eligible_cut": 8,
@@ -24,7 +24,7 @@
       },
       "last_vo_word": 24.16,
       "words_sha256": "816d6a8c36178ace8bb613f5605601c8595ea4dfd08c2e9062550609a9a31d75",
-      "prescription_sha256": "f77bf56ce33eb2028af1d9b0d16836aa99d31721ff489350927948de76877d45",
+      "prescription_sha256": "c2797aa90d4e39b7f6db38fa8629ae2a2c32136032d71c92344d9ff55f088bbd",
       "source_sample_sha256": [
         "b302a949b16c27b9ded2f20b0848d2f9e68fcb9ae072299adeacc23d775bd60a",
         "e1d024ec3f02227cbe6e044316546580be61c634c58c21f2cd83d7ce1a8d2d9e"
@@ -35,7 +35,7 @@
         0.3181,
         0.3918
       ],
-      "render_sha256": "900afaf937e7f2b3df57d2251988aa36c1cab8c076efddc297ab90aa7bf324a9"
+      "render_sha256": "a1ef55df1c7ea819a76b806d34bd3ce623ab589b4e6667129c58a9974f77d952"
     },
     "pending": [
       "human moving/phone and audio review; samples do not establish seamless motion"
@@ -52,21 +52,7 @@
     "same_stretch": 10.0,
     "pixels": "scripts/polish_gate.py"
   },
-  "failed": [
-    {
-      "cut": 1,
-      "row": "S02",
-      "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/01_villa_t1.mp4",
-      "title": "Veo scene: a villa in daylight",
-      "t": 4.15,
-      "at": "0:04",
-      "fail": [
-        "split panel: horizontal seam at 0.057, horizontal seam at 0.067, horizontal seam at 0.076, horizontal seam at 0.087, horizontal seam at 0.107, horizontal seam at 0.117, horizontal seam at 0.417, horizontal seam at 0.431, horizontal seam at 0.437, horizontal seam at 0.485"
-      ],
-      "warn": [],
-      "offset": 0.0
-    }
-  ],
+  "failed": [],
   "warn": [
     {
       "cut": 4,
@@ -117,7 +103,7 @@
           },
           "last_vo_word": 24.16,
           "words_sha256": "816d6a8c36178ace8bb613f5605601c8595ea4dfd08c2e9062550609a9a31d75",
-          "prescription_sha256": "f77bf56ce33eb2028af1d9b0d16836aa99d31721ff489350927948de76877d45",
+          "prescription_sha256": "c2797aa90d4e39b7f6db38fa8629ae2a2c32136032d71c92344d9ff55f088bbd",
           "source_sample_sha256": [
             "b302a949b16c27b9ded2f20b0848d2f9e68fcb9ae072299adeacc23d775bd60a",
             "e1d024ec3f02227cbe6e044316546580be61c634c58c21f2cd83d7ce1a8d2d9e"
@@ -128,7 +114,7 @@
             0.3181,
             0.3918
           ],
-          "render_sha256": "900afaf937e7f2b3df57d2251988aa36c1cab8c076efddc297ab90aa7bf324a9"
+          "render_sha256": "a1ef55df1c7ea819a76b806d34bd3ce623ab589b4e6667129c58a9974f77d952"
         },
         "pending": [
           "human moving/phone and audio review; samples do not establish seamless motion"
@@ -155,9 +141,7 @@
       "title": "Veo scene: a villa in daylight",
       "t": 4.15,
       "at": "0:04",
-      "fail": [
-        "split panel: horizontal seam at 0.057, horizontal seam at 0.067, horizontal seam at 0.076, horizontal seam at 0.087, horizontal seam at 0.107, horizontal seam at 0.117, horizontal seam at 0.417, horizontal seam at 0.431, horizontal seam at 0.437, horizontal seam at 0.485"
-      ],
+      "fail": [],
       "warn": [],
       "offset": 0.0
     },
@@ -265,7 +249,7 @@
           },
           "last_vo_word": 24.16,
           "words_sha256": "816d6a8c36178ace8bb613f5605601c8595ea4dfd08c2e9062550609a9a31d75",
-          "prescription_sha256": "f77bf56ce33eb2028af1d9b0d16836aa99d31721ff489350927948de76877d45",
+          "prescription_sha256": "c2797aa90d4e39b7f6db38fa8629ae2a2c32136032d71c92344d9ff55f088bbd",
           "source_sample_sha256": [
             "b302a949b16c27b9ded2f20b0848d2f9e68fcb9ae072299adeacc23d775bd60a",
             "e1d024ec3f02227cbe6e044316546580be61c634c58c21f2cd83d7ce1a8d2d9e"
@@ -276,7 +260,7 @@
             0.3181,
             0.3918
           ],
-          "render_sha256": "900afaf937e7f2b3df57d2251988aa36c1cab8c076efddc297ab90aa7bf324a9"
+          "render_sha256": "a1ef55df1c7ea819a76b806d34bd3ce623ab589b4e6667129c58a9974f77d952"
         },
         "pending": [
           "human moving/phone and audio review; samples do not establish seamless motion"

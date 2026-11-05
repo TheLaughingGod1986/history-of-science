@@ -1,10 +1,10 @@
 {
   "job": "J2169",
   "short": "C",
-  "master": "/Users/benjaminoats/_desk/renders/J2169/Short_C/hos006_short_c_v01.mp4",
-  "sha256": "883cee08cb5e197ef6dfe5f44a1f8ae47cfeaa5c576a14f5aad2670fe516fbc2",
+  "master": "/Users/benjaminoats/_desk/renders/J2169/Short_C/hos006_short_c_v02.mp4",
+  "sha256": "3f8c1390523cbf05632abefb592b178b2b211c0e74ae31e9c4b7b96423091327",
   "picture": "/Users/benjaminoats/_desk/renders/J2169/Short_C/picture.mp4",
-  "picture_sha256": "900afaf937e7f2b3df57d2251988aa36c1cab8c076efddc297ab90aa7bf324a9",
+  "picture_sha256": "a1ef55df1c7ea819a76b806d34bd3ce623ab589b4e6667129c58a9974f77d952",
   "duration_s": 25.166667,
   "vo_sha256": "5b5d84e560d51ed9ad6f9bf5588f458802620f48f008b9409c532f8a1ea4e269",
   "long": "VbPubYd6Fbs",

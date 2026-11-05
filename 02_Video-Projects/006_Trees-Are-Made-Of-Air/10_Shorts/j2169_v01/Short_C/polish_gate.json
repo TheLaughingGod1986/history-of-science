@@ -35,20 +35,10 @@
       ]
     }
   },
-  "video": "/Users/benjaminoats/_desk/renders/J2169/Short_C/hos006_short_c_v01.mp4",
+  "video": "/Users/benjaminoats/_desk/renders/J2169/Short_C/hos006_short_c_v02.mp4",
   "edge_floor": 0.0507,
-  "verdict": "FAIL",
-  "failed": [
-    {
-      "row": "S02",
-      "cut": 1,
-      "t": 4.15,
-      "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/01_villa_t1.mp4",
-      "why": [
-        "split panel: horizontal seam at 0.05, horizontal seam at 0.057, horizontal seam at 0.067, horizontal seam at 0.076, horizontal seam at 0.087, horizontal seam at 0.107, horizontal seam at 0.117, horizontal seam at 0.417, horizontal seam at 0.431, horizontal seam at 0.437, horizontal seam at 0.485"
-      ]
-    }
-  ],
+  "verdict": "PASS",
+  "failed": [],
   "warn": [
     {
       "row": "S05",
@@ -85,75 +75,17 @@
       "row": "S02",
       "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/01_villa_t1.mp4",
       "t": 4.15,
-      "std": 31.32,
-      "mean": 103.05,
-      "p95": 162.0,
-      "edge": 0.1317,
-      "hf": 12.58,
-      "lf": 23.75,
-      "std8": 25.47,
-      "edge8": 0.2723,
-      "seams": [
-        {
-          "kind": "horizontal seam",
-          "at": 0.05,
-          "step": 16.0
-        },
-        {
-          "kind": "horizontal seam",
-          "at": 0.057,
-          "step": 16.0
-        },
-        {
-          "kind": "horizontal seam",
-          "at": 0.067,
-          "step": 73.0
-        },
-        {
-          "kind": "horizontal seam",
-          "at": 0.076,
-          "step": 16.0
-        },
-        {
-          "kind": "horizontal seam",
-          "at": 0.087,
-          "step": 32.5
-        },
-        {
-          "kind": "horizontal seam",
-          "at": 0.107,
-          "step": 22.0
-        },
-        {
-          "kind": "horizontal seam",
-          "at": 0.117,
-          "step": 18.0
-        },
-        {
-          "kind": "horizontal seam",
-          "at": 0.417,
-          "step": 33.5
-        },
-        {
-          "kind": "horizontal seam",
-          "at": 0.431,
-          "step": 43.5
-        },
-        {
-          "kind": "horizontal seam",
-          "at": 0.437,
-          "step": 68.0
-        },
-        {
-          "kind": "horizontal seam",
-          "at": 0.485,
-          "step": 50.0
-        }
-      ],
+      "std": 32.75,
+      "mean": 98.12,
+      "p95": 161.0,
+      "edge": 0.1064,
+      "hf": 11.64,
+      "lf": 26.81,
+      "std8": 28.32,
+      "edge8": 0.2252,
+      "seams": [],
       "video": true,
-      "fail": [
-        "split panel: horizontal seam at 0.05, horizontal seam at 0.057, horizontal seam at 0.067, horizontal seam at 0.076, horizontal seam at 0.087, horizontal seam at 0.107, horizontal seam at 0.117, horizontal seam at 0.417, horizontal seam at 0.431, horizontal seam at 0.437, horizontal seam at 0.485"
-      ],
+      "fail": [],
       "warn": []
     },
     {

@@ -12,6 +12,6 @@ Output is 720×1280. A 720p 16:9 plate cannot fill 1080×1920 under the 2.35× u
 
 Each cut is an integer number of 24 fps frames (opening rounds up so it still covers the locked first sentence; the return is 24 frames). The earlier duration filter let ffmpeg add a frame per clip, and the terminal-loop contract then rejected the file.
 
-Short C S02 stays on 01_villa_t1 at crop 656,0,608,1080. Its brick courses are full-width straight lines, so polish_gate reports a split panel. No other crop of that house stayed clear of the seam across the shot. That fail is recorded, not waived. No new plate was generated.
+Short C S02 stays on 01_villa_t1. Centre crop 656,0,608,1080 fails because the brick courses run the full width. Crop 144,0,608,1080 keeps the house, the corner stones and the jars, and those courses no longer cross the frame. The centre-crop master is kept as v01. This file is v02. No new plate was generated.
 
 No generation, no upload. Long id VbPubYd6Fbs is not a publish instruction. Standalone S7 stays planned and is not built here. Short A, s04, s05, s06, s07 and s08 are not built.
