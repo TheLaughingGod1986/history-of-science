@@ -174,11 +174,13 @@ def read_account(page) -> tuple[int | None, str | None]:
 
 def flow_page(browser, flow):
     ctx = browser.contexts[0]
-    for pg in ctx.pages:
-        if "flow.google.com" in (pg.url or "") and "/about" not in (pg.url or ""):
-            pg.bring_to_front()
-            return pg
-    pg = ctx.new_page()
+    # The shared Mini helper also reuses blank tabs and ignores closed pages.
+    owb = Path(os.environ.get("OWB_REPO", str(Path.home() / "YouTube/orbit-with-ben")))
+    sys.path.insert(0, str(owb / "scripts"))
+    from cdp_tabs import reuse_page
+    pg = reuse_page(ctx, "flow.google.com")
+    if "flow.google.com" in (pg.url or "") and "/about" not in (pg.url or ""):
+        return pg
     pg.goto(flow.FLOW_HOME, wait_until="domcontentloaded", timeout=120_000)
     time.sleep(3)
     flow.dismiss_banners(pg)
