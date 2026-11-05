@@ -1,0 +1,26 @@
+{
+  "at": "2026-11-05T06:42:11.197219+00:00",
+  "read_only": true,
+  "query": "Veo",
+  "rows": [
+    "Google service\n\t\nService description\n\t\nService ID\n\t\nSKU ID\n\t\nSKU description\n\t\nConsumption model description\n\t\nProduct taxonomy \n\t\nUnit description\n\t\nPer-unit quantity \n\t\nTiered usage start \n\t\nList price (\u00a3)",
+    "GCP\tVertex AI\tC7E2-9256-1C43\t0000-9B70-F099\tVertex AI: Online/Batch Prediction Nvidia Tesla P4 GPU running in Americas for AI Platform\tDefault\tGCP > Cloud AI > Vertex AI Platform > Vertex AI Infra > Inference > Custom Inference > P4\thour\t1\t0\t0.518673",
+    "GCP\tVertex AI\tC7E2-9256-1C43\t0000-9B70-F099\tVertex AI: Online/Batch Prediction Nvidia Tesla P4 GPU running in Americas for AI Platform\tGemini Enterprise Flexible Savings Plan - 1 Year\tGCP > Cloud AI > Vertex AI Platform > Vertex AI Infra > Inference > Custom Inference > P4\thour\t1\t0\t0.4668057",
+    "GCP\tVertex AI\tC7E2-9256-1C43\t0000-9B70-F099\tVertex AI: Online/Batch Prediction Nvidia Tesla P4 GPU running in Americas for AI Platform\tGemini Enterprise Flexible Savings Plan - 3 Year\tGCP > Cloud AI > Vertex AI Platform > Vertex AI Infra > Inference > Custom Inference > P4\thour\t1\t0\t0.4149384",
+    "GCP\tCloud SQL\t9662-B51E-5089\t0001-0118-796B\tCloud SQL for PostgreSQL: Zonal - Enterprise Plus Extended support vCPU v13 in Northern Virginia\tDefault\tGCP > Databases > Cloud SQL > Postgres > Enterprise Plus > Extended Support\thour\t1\t0\t0.05630233",
+    "GCP\tCloud Firestore\tEE2C-7FAC-5E08\t0001-48D2-BE14\tCloud Firestore Entity Writes Europe 3 (with free tier)\tCloud Firestore CUD - 3 Year\tGCP > Databases > Firestore > Ops\tcount\t100,000\t0\t0.00",
+    "GCP\tCloud Firestore\tEE2C-7FAC-5E08\t0001-48D2-BE14\tCloud Firestore Entity Writes Europe 3 (with free tier)\tCloud Firestore CUD - 1 Year\tGCP > Databases > Firestore > Ops\tcount\t100,000\t0\t0.00",
+    "GCP\tCloud Firestore\tEE2C-7FAC-5E08\t0001-48D2-BE14\tCloud Firestore Entity Writes Europe 3 (with free tier)\tDefault\tGCP > Databases > Firestore > Ops\tcount\t100,000\t0\t0.00",
+    "GCP\tCloud Firestore\tEE2C-7FAC-5E08\t0001-48D2-BE14\tCloud Firestore Entity Writes Europe 3 (with free tier)\tCloud Firestore CUD - 3 Year\tGCP > Databases > Firestore > Ops\tcount\t100,000\t20,000\t0.0811836",
+    "GCP\tCloud Firestore\tEE2C-7FAC-5E08\t0001-48D2-BE14\tCloud Firestore Entity Writes Europe 3 (with free tier)\tCloud Firestore CUD - 1 Year\tGCP > Databases > Firestore > Ops\tcount\t100,000\t20,000\t0.1082448",
+    "GCP\tCloud Firestore\tEE2C-7FAC-5E08\t0001-48D2-BE14\tCloud Firestore Entity Writes Europe 3 (with free tier)\tDefault\tGCP > Databases > Firestore > Ops\tcount\t100,000\t20,000\t0.135306"
+  ],
+  "filter": "",
+  "footer": [
+    "console.cloud.google.com uses cookies from Google to deliver and enhance the quality of its services and to analyse traffic. Learn more",
+    "The following is the list of SKUs and prices for Google Cloud Platform services and Google Maps Platform (last updated on 05/11/2026). Any price changes will be made in accordance with the Agreement. We will not notify you for increases in non-USD prices that are due to currency conversion fluctuations. The SKU pricing information below does not include credits (including promotions, sustained use discounts, committed use discounts or spending-based discounts). Learn more",
+    "List price (\u00a3)",
+    "1 \u2013 10 of 174154",
+    "1 Operators result. 20 Properties results. Out of 21 results showing."
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "at": "2026-11-05T06:42:53.016626+00:00",
+  "read_only": true,
+  "rows": [
+    "Google service\n\t\nService description\n\t\nService ID\n\t\nSKU ID\n\t\nSKU description\n\t\nConsumption model description\n\t\nProduct taxonomy \n\t\nUnit description\n\t\nPer-unit quantity \n\t\nTiered usage start \n\t\nList price (\u00a3)",
+    "GCP\tVertex AI\tC7E2-9256-1C43\t0000-9B70-F099\tVertex AI: Online/Batch Prediction Nvidia Tesla P4 GPU running in Americas for AI Platform\tDefault\tGCP > Cloud AI > Vertex AI Platform > Vertex AI Infra > Inference > Custom Inference > P4\thour\t1\t0\t0.518673",
+    "GCP\tVertex AI\tC7E2-9256-1C43\t0000-9B70-F099\tVertex AI: Online/Batch Prediction Nvidia Tesla P4 GPU running in Americas for AI Platform\tGemini Enterprise Flexible Savings Plan - 1 Year\tGCP > Cloud AI > Vertex AI Platform > Vertex AI Infra > Inference > Custom Inference > P4\thour\t1\t0\t0.4668057",
+    "GCP\tVertex AI\tC7E2-9256-1C43\t0000-9B70-F099\tVertex AI: Online/Batch Prediction Nvidia Tesla P4 GPU running in Americas for AI Platform\tGemini Enterprise Flexible Savings Plan - 3 Year\tGCP > Cloud AI > Vertex AI Platform > Vertex AI Infra > Inference > Custom Inference > P4\thour\t1\t0\t0.4149384",
+    "GCP\tCloud SQL\t9662-B51E-5089\t0001-0118-796B\tCloud SQL for PostgreSQL: Zonal - Enterprise Plus Extended support vCPU v13 in Northern Virginia\tDefault\tGCP > Databases > Cloud SQL > Postgres > Enterprise Plus > Extended Support\thour\t1\t0\t0.05630233",
+    "GCP\tCloud Firestore\tEE2C-7FAC-5E08\t0001-48D2-BE14\tCloud Firestore Entity Writes Europe 3 (with free tier)\tCloud Firestore CUD - 3 Year\tGCP > Databases > Firestore > Ops\tcount\t100,000\t0\t0.00",
+    "GCP\tCloud Firestore\tEE2C-7FAC-5E08\t0001-48D2-BE14\tCloud Firestore Entity Writes Europe 3 (with free tier)\tCloud Firestore CUD - 1 Year\tGCP > Databases > Firestore > Ops\tcount\t100,000\t0\t0.00",
+    "GCP\tCloud Firestore\tEE2C-7FAC-5E08\t0001-48D2-BE14\tCloud Firestore Entity Writes Europe 3 (with free tier)\tDefault\tGCP > Databases > Firestore > Ops\tcount\t100,000\t0\t0.00",
+    "GCP\tCloud Firestore\tEE2C-7FAC-5E08\t0001-48D2-BE14\tCloud Firestore Entity Writes Europe 3 (with free tier)\tCloud Firestore CUD - 3 Year\tGCP > Databases > Firestore > Ops\tcount\t100,000\t20,000\t0.0811836",
+    "GCP\tCloud Firestore\tEE2C-7FAC-5E08\t0001-48D2-BE14\tCloud Firestore Entity Writes Europe 3 (with free tier)\tCloud Firestore CUD - 1 Year\tGCP > Databases > Firestore > Ops\tcount\t100,000\t20,000\t0.1082448",
+    "GCP\tCloud Firestore\tEE2C-7FAC-5E08\t0001-48D2-BE14\tCloud Firestore Entity Writes Europe 3 (with free tier)\tDefault\tGCP > Databases > Firestore > Ops\tcount\t100,000\t20,000\t0.135306"
+  ],
+  "options": [
+    "OR",
+    "Google service",
+    "Service description",
+    "Service ID",
+    "SKU ID",
+    "SKU description",
+    "Consumption model description",
+    "Consumption model ID",
+    "Product taxonomy",
+    "Geo taxonomy type",
+    "Geo taxonomy regions",
+    "SKU groups",
+    "Discount migrated from",
+    "Destination migration mappings",
+    "Aggregation level",
+    "Aggregation interval",
+    "Unit",
+    "Unit description",
+    "Per unit quantity",
+    "Tiered usage start",
+    "Conversion rate to USD"
+  ]
+}

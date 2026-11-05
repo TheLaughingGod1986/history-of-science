@@ -1,0 +1,29 @@
+{
+  "at": "2026-11-05T06:40:51.319602+00:00",
+  "controls": [
+    {
+      "placeholder": "Search (/) for resources, docs, products and more",
+      "aria": "Enter query to search for resources, docs, products and more",
+      "role": null
+    },
+    {
+      "placeholder": "",
+      "aria": null,
+      "role": null
+    },
+    {
+      "placeholder": "",
+      "aria": null,
+      "role": null
+    }
+  ],
+  "rows": [],
+  "status": [
+    "The following is the list of SKUs and prices for Google Cloud Platform services and Google Maps Platform (last updated on 05/11/2026). Any price changes will be made in accordance with the Agreement. We will not notify you for increases in non-USD prices that are due to currency conversion fluctuations. The SKU pricing information below does not include credits (including promotions, sustained use discounts, committed use discounts or spending-based discounts). Learn more",
+    "View SKUs with historical usage",
+    "View all SKUs",
+    "Filter",
+    "SKU ID",
+    "SKU description"
+  ]
+}
