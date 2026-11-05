@@ -1,0 +1,3 @@
+PASS: 17 rows preserve exact canonical words, intervals and canonical_row objects.
+PASS: six unresolved physical inputs occupy seven rows including C loop_tail.
+PASS: generation_authorized=false; build_authorized=false; spend=0.

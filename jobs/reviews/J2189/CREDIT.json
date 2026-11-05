@@ -1,0 +1,25 @@
+{
+  "at": "2026-11-05T06:30:11.047795+00:00",
+  "remaining_gbp": 69.48,
+  "rows": [
+    [
+      "Google Developer Program premium benefit - CREDIT_TYPE_MONTHLY",
+      69.48
+    ],
+    [
+      "Free Trial",
+      0.0
+    ],
+    [
+      "Google Developer Program premium benefit - CREDIT_TYPE_MONTHLY",
+      0.0
+    ],
+    [
+      "Google Developer Program premium benefit - CREDIT_TYPE_MONTHLY",
+      0.0
+    ]
+  ],
+  "read_only": true,
+  "floor_gbp": 5,
+  "source": "Cloud Billing Credits UI via reused console tab"
+}
