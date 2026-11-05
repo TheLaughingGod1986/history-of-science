@@ -64,6 +64,10 @@ Your two best Shorts already do this: *Microbes in a drop of pond water* (110 vi
 
 Then one hard fact. The promoted film's exact live title is on screen at 9–14 s. The last 4 s return to the opening picture so the Short loops. Captions all the way through.
 
+### Anomaly-first open (experiment HOS-2026-11-E1, Chief h47, 5 Nov 2026)
+
+The six new Test B Shorts on films 008, 009 and 010 only. Assemblers follow `.cursor/rules/hos-build-shorts.mdc` → *Anomaly-first open*. In short: words 1–4 are the physical contradiction by 2.0 s over subject motion already running; no "In \<year\>," and no bare biographer-name opening; cuts at 1.8–2.5 s and again before 4.5 s; no plate held over 3.5 s in the first 8 s; no VO pause over 0.25 s in 0–5 s; 22–25 s; payoff start at or after 70% of the runtime; loop tail under 1.2 s. J1004 (PR #366) still locks the words, including 009 Short B's "one minute" / "one second" and 010 Short A's sentence ending by 2.85 s. `gate_shorts_open.py` checks this on those films. Readout 3 Dec 2026, in the OWB repo `05_Analytics/tests/SHORTS_TESTS.md`.
+
 ## Long hook
 
 - **The first 3 s of picture are the story itself.** No logo, no title card, no bumper.
