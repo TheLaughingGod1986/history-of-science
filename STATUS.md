@@ -15,14 +15,14 @@
 | **008** Why Did Franklin Fly a Kite in a Storm? | Thu 19 Nov (14 d) | 75% | Picture (blocked) | **codex** · ⛔ blocked: J2163 recipe repair, then J1881 Chief production scope; J1755 separate delivery hold | 112/112 board rows rendered (11 code graphics + 101/101 Flow plates KEEP) | Sun 15 Nov (in 10 d) | ⛔ blocked |
 | **009** Why Doesn't the Moon Fall to Earth? | Thu 26 Nov (21 d) | 62% | Shorts voiceover (to do) | **Cursor** · queued (after 010 long VO) | starts later; due 28 d late | Sun 22 Nov (in 17 d) | 🟠 behind |
 | **010** What Killed the Dinosaurs Was Hidden in a Line of Clay | Thu 3 Dec (28 d) | 35% | Shorts voiceover (to do) | **Cursor** · queued (after 010 long VO) | starts later; due 28 d late | Sun 29 Nov (in 24 d) | 🟠 behind |
-| **011** Anesthesia: The Day Surgery Stopped Hurting | Thu 10 Dec (35 d) | 18% | Audit + upload package (to do) | **Claude** · queued | starts later; due in 7 d | Sun 6 Dec (in 31 d) | 🟢 on track |
+| **011** Anesthesia: The Day Surgery Stopped Hurting | Thu 10 Dec (35 d) | 25% | Voiceover (long) (to do) | **Cursor** · queued (queued as J2245 (5 parts, eleven_v3, Mac Mini)) | starts later; due in 10 d | Sun 6 Dec (in 31 d) | 🟢 on track |
 | **013** Evolution: The Letter That Forced Darwin to Publish | Thu 17 Dec (42 d) | 28% | Audit + upload package (to do) | **Claude** · queued | starts later; due in 7 d | Sun 13 Dec (in 38 d) | 🟢 on track |
 
 ## Who's on what
 
 **Claude**
 - ▶️ Underway: nothing right now
-- ⏭ Next up: 011 Audit + upload package, due Thu 12 Nov; 013 Audit + upload package, due Thu 12 Nov
+- ⏭ Next up: 013 Audit + upload package, due Thu 12 Nov
 
 **Grok**
 - ▶️ Underway: nothing right now
@@ -236,18 +236,18 @@ Long VO v01 locked (5 parts); Chief KEEP all five, no pickups (desk 6101773293).
 
 ### 011 · Anesthesia: The Day Surgery Stopped Hurting
 
-`████░░░░░░░░░░░░░░░░` **18%**
+`█████░░░░░░░░░░░░░░░` **25%**
 
 Airs **Thu 10 Dec** · ready for Ben's OK by **Sun 6 Dec** · 🟢 on track
 
-Locked for Thu 10 Dec (J2231; first in jobs/WIP.json next_hos). Neighbour gate PASS (6 education >=1M incl. TED-Ed 19.73M & 2.66M). Script v02 (91.1 PASS), Gemini facts (J0198) and Claude primary-source quote check (J0224) done; Shorts scripts v02 + upload package scaffold + long VO queued (J2239).
+Locked for Thu 10 Dec (J2231; first in jobs/WIP.json next_hos). Neighbour gate PASS (6 education >=1M incl. TED-Ed 19.73M & 2.66M). Script v02 (91.1 PASS, J2204 first-30s check PASS), Gemini facts (J0198), Claude quote check (J0224), Shorts scripts v02 (Test B) and upload package scaffold (lint:package PASS) done (J2239). Long VO queued (J2245).
 
 - ✅ **Topic** — done: J0180 / J2231: 6 education >=1M (TED-Ed 19.73M & 2.66M)
-- ✅ **Script** — done: v02, 91.1 (J0183 / J0224)
+- ✅ **Script** — done: v02, 91.1 (J0183 / J0224; J2204 first-30s proof-first + early DATA/SCALE check PASS in J2239)
 - ✅ **Fact check** — done: J0198 Gemini facts (35 OK, 1 hedged) + J0224 Claude quote check PASS
-- ⬜ **Audit + upload package** — to do (with Claude, due Thu 12 Nov (in 7 d)): PRE_BUILD_VIDIQ_AUDIT.md + neighbour/search evidence saved; manifest + description queued (J2239)
+- ✅ **Audit + upload package** — done: PACKAGE_MANIFEST.json + PRODUCTION_CHECKLIST_V2.md + Descriptions/surgery_long_description_v01.txt + Tags/surgery_long_tags_v01.txt (lint:package PASS, J2239)
 - ⬜ **Voiceover (long)** — to do (with Cursor, due Sun 15 Nov (in 10 d))
-- ⬜ **Shorts scripts** — to do (with Claude, due Thu 12 Nov (in 7 d)): two search-titled Shorts (Test B, J2239)
+- ✅ **Shorts scripts** — done: v02 (Test B): two search-titled Shorts ('How Was Surgery Done Before Anesthesia?', 'Who Invented Anesthesia?'), 5 Nov (J2239)
 - ⬜ **Shorts voiceover** — to do (with Cursor, due Mon 16 Nov (in 11 d))
 - ⬜ **Picture** — to do (with Cursor, due Sun 29 Nov (in 24 d))
 - ⬜ **Edit + master** — to do (with Grok, due Thu 3 Dec (in 28 d))

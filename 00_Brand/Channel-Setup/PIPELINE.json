@@ -640,7 +640,7 @@
       "title": "Anesthesia: The Day Surgery Stopped Hurting",
       "air": "2026-12-10",
       "ready_by": "2026-12-06",
-      "summary": "Locked for Thu 10 Dec (J2231; first in jobs/WIP.json next_hos). Neighbour gate PASS (6 education >=1M incl. TED-Ed 19.73M & 2.66M). Script v02 (91.1 PASS), Gemini facts (J0198) and Claude primary-source quote check (J0224) done; Shorts scripts v02 + upload package scaffold + long VO queued (J2239).",
+      "summary": "Locked for Thu 10 Dec (J2231; first in jobs/WIP.json next_hos). Neighbour gate PASS (6 education >=1M incl. TED-Ed 19.73M & 2.66M). Script v02 (91.1 PASS, J2204 first-30s check PASS), Gemini facts (J0198), Claude quote check (J0224), Shorts scripts v02 (Test B) and upload package scaffold (lint:package PASS) done (J2239). Long VO queued (J2245).",
       "stages": {
         "topic": {
           "status": "done",
@@ -648,29 +648,32 @@
         },
         "script": {
           "status": "done",
-          "note": "v02, 91.1 (J0183 / J0224)"
+          "note": "v02, 91.1 (J0183 / J0224; J2204 first-30s proof-first + early DATA/SCALE check PASS in J2239)"
         },
         "facts": {
           "status": "done",
           "note": "J0198 Gemini facts (35 OK, 1 hedged) + J0224 Claude quote check PASS"
         },
         "package": {
-          "status": "todo",
+          "status": "done",
           "due": "2026-11-12",
           "owner": "Claude",
-          "note": "PRE_BUILD_VIDIQ_AUDIT.md + neighbour/search evidence saved; manifest + description queued (J2239)"
+          "note": "PACKAGE_MANIFEST.json + PRODUCTION_CHECKLIST_V2.md + Descriptions/surgery_long_description_v01.txt + Tags/surgery_long_tags_v01.txt (lint:package PASS, J2239)"
         },
         "vo": {
           "status": "todo",
           "due": "2026-11-15",
           "owner": "Cursor",
-          "waiting": "after J2239 package scaffold + Shorts scripts v02"
+          "waiting": "queued as J2245 (5 parts, eleven_v3, Mac Mini)",
+          "jobs": [
+            "J2245"
+          ]
         },
         "shorts_scripts": {
-          "status": "todo",
+          "status": "done",
           "due": "2026-11-12",
           "owner": "Claude",
-          "note": "two search-titled Shorts (Test B, J2239)"
+          "note": "v02 (Test B): two search-titled Shorts ('How Was Surgery Done Before Anesthesia?', 'Who Invented Anesthesia?'), 5 Nov (J2239)"
         },
         "shorts_vo": {
           "status": "todo",
