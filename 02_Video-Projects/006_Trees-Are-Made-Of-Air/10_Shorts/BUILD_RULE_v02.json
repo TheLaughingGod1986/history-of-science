@@ -336,7 +336,9 @@
       "hook_sentence_end_s": 2.24,
       "plates_on_disk": true,
       "status": "planned",
-      "duration_note": "Timed directly from t2_mint_fixed_vo_v03b_align.json (23.20 s, sha256 0f109926...) matching the locked take t2_mint_fixed_vo_v03b.mp3 (23.20 s VO + 1.00 s loop = 24.20 s total). No new VO."
+      "duration_note": "Timed directly from t2_mint_fixed_vo_v03b_align.json (23.20 s, sha256 0f109926...) matching the locked take t2_mint_fixed_vo_v03b.mp3 (23.20 s VO + 1.00 s loop = 24.20 s total). No new VO.",
+      "repair_status": "blocked_pending_J2180_and_J2181_mapping_review",
+      "repair_decision_ref": "jobs/reviews/J2178/REVIEW.md"
     },
     {
       "id": "Short_C",
@@ -508,7 +510,9 @@
       "hook_complete_in_s01": true,
       "hook_sentence_end_s": 2.56,
       "plates_on_disk": true,
-      "status": "planned"
+      "status": "planned",
+      "repair_status": "blocked_pending_J2180_and_J2181_mapping_review",
+      "repair_decision_ref": "jobs/reviews/J2178/REVIEW.md"
     },
     {
       "id": "s04_photosynthesis",
@@ -1406,5 +1410,20 @@
       "status": "blocked_unfinished_hook",
       "blocked_reason": "S01 cuts at 2.84 s ('He took a big clay pot and filled it with') before the opening hook sentence finishes at 8.96 s."
     }
-  ]
+  ],
+  "repair_decision": {
+    "job": "J2178",
+    "by": "codex",
+    "date": "2026-11-05",
+    "disposition": "FIX: existing-media qualification and reviewed checker correction required",
+    "parent": "J2169",
+    "checker_producer": "J2179",
+    "checker_review": "J2180",
+    "source_mapping_producer": "J2181",
+    "build_authorized": false,
+    "generation_authorized": false,
+    "spend_gbp": 0,
+    "review": "jobs/reviews/J2178/REVIEW.md",
+    "release_condition": "J2180 merges validated checker correction AND J2181 exact mappings receive reviewer KEEP; reviewer then reopens J2169 for build and all current gates. No film approval."
+  }
 }
