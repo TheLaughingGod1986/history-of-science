@@ -5,7 +5,8 @@
 | Slug | `013_Darwin-Wallace-Evolution` |
 | Channel | `@HistoryOfScienceYT` only |
 | Topic | **Evolution** — Darwin's 20-year secret (*Notebook B* 1837 → 1844 essay → Wallace's 1858 letter → *Origin* 1859 → Jenkin/Mendel/Spencer) |
-| Stage | **VO locked** `hos_013_vo_v03a` (`J1310`, Chief h39 on J1301, 31 Oct 2026). Script v02 Chief PASS `J0307`. |
+| Air (slotted) | **Thu 17 Dec 2026** 18:00 UK (`2026-12-17T18:00:00.000Z`) — locked in `J2231` (ready for Ben's OK by **Sun 13 Dec 2026**) |
+| Stage | **VO locked** `hos_013_vo_v03a` (`J1310`, Chief h39 on J1301, 31 Oct 2026). Script v02 Chief PASS `J0307`. Active in `jobs/WIP.json` (`#541`); Shorts scripts v02 + upload package + shot list queued (`J2240` from `J2231`). |
 | Neighbour gate | **PASS** (15 Oct 2026, `J0295`): 13 education ≥1M; TED-Ed/TED yes. Evidence `00_Brand/Channel-Setup/ideas/evidence_2026-10-15_J0295/n_darwin.json` |
 | Script review | `01_Script/darwin_script_master_v02.md` (**92.6/100 PASS**, 1,227 spoken words, 8/8 structure gates) |
 | FACT_NOTES | `01_Script/FACT_NOTES_v02.md` (`30 OK · 0 PARTIAL · 0 FLAG`, following `J0304` Gemini quote pass + `J0307` chronology/age updates) |
