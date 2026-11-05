@@ -83,8 +83,8 @@ class PlannerTests(unittest.TestCase):
         self.assertEqual([x['timestamp'] for x in d['eight_rows']],
                          ['00:20', '0:30', '0:51', '1:49', '2:20', '3:13', '3:31', '7:58'])
         self.assertEqual([x['candidate_frames'] for x in d['eight_rows']],
-                         [[427, 544], [744, 839], [1124, 1227], [2506, 2665],
-                          [3260, 3343], [4500, 4659], [4977, 5077], [11358, 11492]])
+                         [[427, 544], [744, 839], [1129, 1232], [2506, 2665],
+                          [3260, 3343], [4513, 4672], [4977, 5077], [11358, 11492]])
         self.assertFalse(d['eight_rows'][2]['same_source_as_1_49'])
         self.assertEqual(d['eight_rows'][2]['hair_tube_source']['candidate_frames'], [2506, 2665])
         self.assertFalse(d['eight_rows'][2]['recipe']['generation_proposal']['authorized'])
@@ -113,9 +113,11 @@ class PlannerTests(unittest.TestCase):
         timeline = {'frames': [{'index': f[0], 'pts': f[1], 'duration': f[2], 'key_frame': f[3]} for f in pts['frames']]}
         patches = r.build_plan(timeline, r.load_manifest()['eight_rows'])
         self.assertEqual(len(patches), 8)
-        self.assertEqual(patches[2]['measured_pts_in'], timeline['frames'][1124]['pts'])
+        self.assertEqual(patches[2]['measured_pts_in'], timeline['frames'][1129]['pts'])
         self.assertEqual(timeline['frames'][1220]['pts'], 626688)
-        self.assertEqual(patches[5]['measured_pts_in'], timeline['frames'][4500]['pts'])
+        self.assertTrue(1129 <= 1220 <= 1232)
+        self.assertEqual(patches[5]['measured_pts_in'], timeline['frames'][4513]['pts'])
+        self.assertTrue(4513 <= 4621 <= 4672)
         self.assertEqual(timeline['frames'][4621]['pts'], 2371584)
         self.assertEqual(timeline['frames'][3305]['pts'], 1695744)
         self.assertTrue(all(p['pts_reconciled'] is False for p in patches))

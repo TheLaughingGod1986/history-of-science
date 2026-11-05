@@ -17,3 +17,5 @@ test_short_explicit_retake_refused (test_j2163_recipe.PlannerTests.test_short_ex
 Ran 14 tests in 0.118s
 
 OK
+
+# Bound correction re-run, 5 Nov 2026. 0:51 is frames 1129-1232 (anchor chain). 3:13 is frames 4513-4672 (13-frame residual before the map cut). --execute exits 2. 14 tests OK.

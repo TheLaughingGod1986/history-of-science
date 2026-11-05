@@ -236,9 +236,10 @@
       "verbatim_note": "still have hair flying out the tube, this needs rebuilt",
       "row": "07_hot_night",
       "candidate_frames": [
-        1124,
-        1227
+        1129,
+        1232
       ],
+      "bounds_method": "Chained from verified master frames 427-544 and 2506-2665 by summing round((timeline_out-timeline_in)*24). That chain hits both anchors with zero error, so 1129-1232 is the hot-night span. The earlier 1124-1227 guess included five frames of 06_heavens and dropped the last five hot-night frames.",
       "clock_frame": 1220,
       "clock_pts_ticks": 626688,
       "clock_pts_s": "51",
@@ -262,7 +263,7 @@
       },
       "status": "UNRESOLVED_CLOCK_VS_HAIR_SOURCE",
       "recipe": {
-        "design": "Rebuild, not trim. Master clock 51 s is frame 1220 inside P1:07_hot_night (frames 1124-1227). That plate is the night street, not a glass tube. The hair-and-tube picture is 02_salon_spark, the same source as 1:49. This row stays on the measured 0:51 plate. J1881 chooses a distinct hot-night rebuild or treats the clock as pointing at the salon rebuild. No trim and no generation.",
+        "design": "Rebuild, not trim. Master clock 51 s is frame 1220 inside P1:07_hot_night (frames 1129-1232). That plate is the night street, not a glass tube. The hair-and-tube picture is 02_salon_spark, the same source as 1:49. This row stays on the measured 0:51 plate. J1881 chooses a distinct hot-night rebuild or treats the clock as pointing at the salon rebuild. No trim and no generation.",
         "generation_proposal": {
           "authorized": false,
           "reason": "Wrong plate for a hair retake; salon retake remains the unauthorized 1:49 proposal."
@@ -336,9 +337,10 @@
       "verbatim_note": "strange behaviour as paper seems to roll out the globe",
       "row": "01_points_desk",
       "candidate_frames": [
-        4500,
-        4659
+        4513,
+        4672
       ],
+      "bounds_method": "Chained from verified jar-spark frames 3344-3407. The walk gives 4513-4672. The same walk predicts letter_crosses at 4990, but J1880 measured 4977: a 13-frame residual whose cut is not identified. Frame 4621 stays inside this row if that residual sits entirely before the cut (4500-4659) or entirely after it.",
       "clock_frame": 4621,
       "clock_pts_ticks": 2371584,
       "clock_pts_s": "193",
@@ -352,7 +354,7 @@
       "distinct_from": "3:31 map/diagram frames 4977-5077",
       "status": "UNRESOLVED_CONDITIONAL_ON_MASTER_PTS_AND_QA",
       "recipe": {
-        "design": "New defect row. Master clock 193 s is frame 4621 inside P3:01_points_desk (frames 4500-4659), the brass globe and parchment plate. Not the 3:31 map. No replacement plate selected. Rebuild only after J1881 scopes it. No trim of the map row and no generation.",
+        "design": "New defect row. Master clock 193 s is frame 4621 inside P3:01_points_desk (chained frames 4513-4672; 13-frame residual before the map cut is unresolved). The brass globe and parchment plate. Not the 3:31 map. No replacement plate selected. Rebuild only after J1881 scopes it. No trim of the map row and no generation.",
         "generation_proposal": {
           "authorized": false
         }
