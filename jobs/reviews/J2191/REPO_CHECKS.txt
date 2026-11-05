@@ -2,19 +2,19 @@
 == durable desk handoffs
 ......
 ----------------------------------------------------------------------
-Ran 6 tests in 0.024s
+Ran 6 tests in 0.022s
 
 OK
 
-=== /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/tmpfqi58pjj/inbox/10_031_vo.md
+=== /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/tmpb_yd5wh9/inbox/10_031_vo.md
 <!-- hos-desk v1 from=claude to=codex film=031 stage=vo status=task -->
 Check recording
-agent exited 2; message left in /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/tmpfqi58pjj/inbox/10_031_vo.md
+agent exited 2; message left in /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/tmpb_yd5wh9/inbox/10_031_vo.md
 
-=== /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/tmpfqi58pjj/inbox/10_031_vo.md
+=== /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/tmpb_yd5wh9/inbox/10_031_vo.md
 <!-- hos-desk v1 from=claude to=codex film=031 stage=vo status=task -->
 Check recording
-agent exited 2; message left in /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/tmpfqi58pjj/inbox/10_031_vo.md
+agent exited 2; message left in /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/tmpb_yd5wh9/inbox/10_031_vo.md
 No new messages for Codex.
 -- durable desk handoffs: PASS
 
@@ -28,7 +28,7 @@ STATUS.md and kanban/index.html match PIPELINE.json
 == ElevenLabs guard tests
 ...........
 ----------------------------------------------------------------------
-Ran 11 tests in 0.039s
+Ran 11 tests in 0.033s
 
 OK
 -- ElevenLabs guard tests: PASS
@@ -36,7 +36,7 @@ OK
 == vo_check word tests
 .........
 ----------------------------------------------------------------------
-Ran 9 tests in 0.003s
+Ran 9 tests in 0.002s
 
 OK
 -- vo_check word tests: PASS
@@ -77,33 +77,40 @@ atempo check PASS: no new build above 1.06 (23 known file(s) listed above).
 -- voice speed (atempo <= 1.06): PASS
 
 == contract tests
-npm error code EPERM
-npm error syscall open
-npm error path /Users/benjaminoats/.npm/_cacache/tmp/24e30e80
-npm error errno EPERM
-npm error
-npm error Your cache folder contains root-owned files, due to a bug in
-npm error previous versions of npm which has since been addressed.
-npm error
-npm error To permanently fix this problem, please run:
-npm error   sudo chown -R 501:20 "/Users/benjaminoats/.npm"
-npm error Log files were not written due to an error writing to the directory: /Users/benjaminoats/.npm/_logs
-npm error You can rerun the command with `--loglevel=verbose` to see the logs in your terminal
--- contract tests: FAIL
+(!) Your Vite config uses features that are unsupported by `configLoader: 'native'`, which is planned to become the default in a future major version of Vite:
+  - ESM syntax in a file loaded as CommonJS (vitest.config.ts:1:1). Use a `.mjs` extension or set `"type": "module"` in the closest package.json
+Set `VITE_CONFIG_NATIVE_IGNORE_WARNING=true` to suppress this warning.
+
+ RUN  v4.1.10 /private/tmp/hos-J2191/07_Content-Ops
+
+
+ Test Files  1 passed (1)
+      Tests  28 passed (28)
+   Start at  06:50:00
+   Duration  497ms (transform 30ms, setup 0ms, import 432ms, tests 9ms, environment 0ms)
+
+-- contract tests: PASS
 
 == package-lint
-npm error code EPERM
-npm error syscall open
-npm error path /Users/benjaminoats/.npm/_cacache/tmp/84ac20d3
-npm error errno EPERM
-npm error
-npm error Your cache folder contains root-owned files, due to a bug in
-npm error previous versions of npm which has since been addressed.
-npm error
-npm error To permanently fix this problem, please run:
-npm error   sudo chown -R 501:20 "/Users/benjaminoats/.npm"
-npm error Log files were not written due to an error writing to the directory: /Users/benjaminoats/.npm/_logs
-npm error You can rerun the command with `--loglevel=verbose` to see the logs in your terminal
--- package-lint: FAIL
+SKIP  02_Video-Projects/001_How-Did-We-Discover-Germs/11_Upload-Package/PACKAGE_MANIFEST.json  (long already public; use channel:audit)
+SKIP  02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/SHORTS_RELEASE.json  (all Shorts already aired)
+SKIP  02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/11_Upload-Package/PACKAGE_MANIFEST.json  (long already public; use channel:audit)
+SKIP  02_Video-Projects/004_Whats-Really-Inside-An-Atom/11_Upload-Package/PACKAGE_MANIFEST.json  (long already public; use channel:audit)
+SKIP  02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/SHORTS_RELEASE.json  (all Shorts already aired)
+SKIP  02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/11_Upload-Package/PACKAGE_MANIFEST.json  (long already public; use channel:audit)
+SKIP  02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/SHORTS_RELEASE.json  (all Shorts already aired)
+PASS  02_Video-Projects/006_Trees-Are-Made-Of-Air/11_Upload-Package/PACKAGE_MANIFEST.json
+PASS  02_Video-Projects/007_The-First-Vaccine/11_Upload-Package/PACKAGE_MANIFEST.json
+PASS  02_Video-Projects/007_The-First-Vaccine/10_Shorts/SHORTS_RELEASE.json
+   warn  [related] What Was the Edward Jenner Experiment?: Related video not set yet (set it to the 007 long once that long is public)
+   warn  [related] Why Is It Called a Vaccine?: Related video not set yet (set it to the 007 long once that long is public)
+PASS  02_Video-Projects/008_Lightning-Franklin/11_Upload-Package/PACKAGE_MANIFEST.json
+   warn  [captions] no captionsFile (captions from the script)
+PASS  02_Video-Projects/009_The-Falling-Moon-Gravity/11_Upload-Package/PACKAGE_MANIFEST.json
+   warn  [captions] no captionsFile (captions from the script)
+PASS  02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/11_Upload-Package/PACKAGE_MANIFEST.json
+   warn  [title.length] T&C title: "How a 1-Centimetre Line of Clay Solved What Killed the Dinosaurs" is 64 chars (aim ≤ 60)
+   warn  [captions] no captionsFile (captions from the script)
+-- package-lint: PASS
 
-SOME CHECKS FAILED
+ALL CHECKS PASS
