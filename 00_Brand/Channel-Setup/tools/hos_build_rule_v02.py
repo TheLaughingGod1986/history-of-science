@@ -1251,6 +1251,20 @@ def load_words_for_short(root: Path, parent_name: str, short: dict, media_root: 
         w = stt_words(stt_p)
         if parent_name.startswith("009_") and sid == "Short_B":
             w = [(t, round(a if a <= 0.84 else a - 0.31, 3), round(b if b <= 0.84 else b - 0.31, 3)) for t, a, b in w]
+        recipe = short.get("assembly_audio_recipe") or {}
+        if recipe.get("silence_removals_s") is not None and recipe.get("hook_atempo"):
+            removals = [(float(s), float(e)) for s, e in recipe["silence_removals_s"]]
+            hook_end = float(recipe.get("source_hook_end_s", 3.28))
+            hook_atempo = float(recipe["hook_atempo"])
+            body_shift = float(recipe.get("body_shift_s", 0.0))
+
+            def _map_recipe_t(t_raw: float) -> float:
+                if t_raw <= hook_end:
+                    rem = sum(max(0.0, min(t_raw, b) - a) for a, b in removals if a < t_raw)
+                    return round((t_raw - rem) / hook_atempo, 3)
+                return round(t_raw + body_shift, 3)
+
+            w = [(t, _map_recipe_t(a), _map_recipe_t(b)) for t, a, b in w]
         return w
     stt_dir = resolve_repo_file(root, "docs/STANDALONE_SHORTS_TEST_2026-10/vo_v01/stt")
     stem_map = {

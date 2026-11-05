@@ -612,11 +612,11 @@
           "status": "blocked",
           "due": "2026-11-22",
           "owner": "codex",
-          "note": "J2210 £0 plans repaired: Option A1 hook 2.849s, distinct pigeon/gull plates, 2 code graphics hash verified. S02 1.900s remains below 2.500s floor; no assembly release.",
+          "note": "J2210/J2211 £0 plans repaired and verified: Option A1 hook 2.849s with 7-body-shot S01..S07 + loop_tail segmentation PASS (S02..S07 in 2.900-3.720s, P1:08_hand_on_rock dropped), distinct pigeon/gull plates, 2 code graphics hash verified. 12 moving Shorts plates and long Flow plates unminted; no assembly release.",
           "underway": false,
-          "waiting": "J2210 plan review and Short A body-cut resegmentation; separate Chief HOS 010 mint authorization after HOS 009 J2033",
+          "waiting": "Separate Chief HOS 010 mint authorization after HOS 009 J2033",
           "steps": [
-            2,
+            3,
             3
           ],
           "steps_unit": "J2210 readiness steps",

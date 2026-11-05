@@ -14,7 +14,7 @@
 | **007** Why Vaccines Are Named After a Cow | Thu 12 Nov (7 d) | 100% | all stages done | — | — | Sun 8 Nov (in 3 d) | 🟢 on track |
 | **008** Why Did Franklin Fly a Kite in a Storm? | Thu 19 Nov (14 d) | 75% | Picture (blocked) | **codex** · ⛔ blocked: J2163 recipe repair, then J1881 Chief production scope; J1755 separate delivery hold | 112/112 board rows rendered (11 code graphics + 101/101 Flow plates KEEP) | Sun 15 Nov (in 10 d) | ⛔ blocked |
 | **009** Why Doesn't the Moon Fall to Earth? | Thu 26 Nov (21 d) | 62% | Shorts voiceover (to do) | **Cursor** · queued (after 010 long VO) | starts later; due 28 d late | Sun 22 Nov (in 17 d) | 🟠 behind |
-| **010** What Killed the Dinosaurs Was Hidden in a Line of Clay | Thu 3 Dec (28 d) | 58% | Shorts voiceover (to do) | **Cursor** · queued (after 010 long VO) | starts later; due 28 d late | Sun 29 Nov (in 24 d) | ⛔ blocked |
+| **010** What Killed the Dinosaurs Was Hidden in a Line of Clay | Thu 3 Dec (28 d) | 70% | Shorts voiceover (to do) | **Cursor** · queued (after 010 long VO) | starts later; due 28 d late | Sun 29 Nov (in 24 d) | ⛔ blocked |
 
 ## Who's on what
 
@@ -39,7 +39,7 @@
 
 **codex**
 - ▶️ Underway: nothing right now
-- ⏸ Waiting: 008 Picture: J2163 recipe repair, then J1881 Chief production scope; J1755 separate delivery hold; 008 Edit + master: J2163 recipe repair, then J1881 Chief production scope; J1755 separate delivery hold; 010 Picture: J2210 plan review and Short A body-cut resegmentation; separate Chief HOS 010 mint authorization after HOS 009 J2033
+- ⏸ Waiting: 008 Picture: J2163 recipe repair, then J1881 Chief production scope; J1755 separate delivery hold; 008 Edit + master: J2163 recipe repair, then J1881 Chief production scope; J1755 separate delivery hold; 010 Picture: Separate Chief HOS 010 mint authorization after HOS 009 J2033
 
 **Cursor (J2033; Codex/Gemini fallback)**
 - ▶️ Underway: nothing right now
@@ -55,7 +55,7 @@
 - **008** · ⛔ **Picture** — blocked (100%, 112/112 board rows rendered (11 code graphics + 101/101 Flow plates KEEP), with codex since Fri 16 Oct, ⛔ blocked: J2163 recipe repair, then J1881 Chief production scope; J1755 separate delivery hold, due Sun 8 Nov (in 3 d)): J1881_SCOPE_REVIEW.md: recipe FIX, future sync unmeasured; h22/h35 and v03 cf1561c2 preserved. No new media approval; all six Ben notes unresolved.
 - **008** · ⛔ **Edit + master** — blocked (0%, with codex since Tue 3 Nov 18:54, ⛔ blocked: J2163 recipe repair, then J1881 Chief production scope; J1755 separate delivery hold, due Thu 12 Nov (in 7 d)): J1881_SCOPE_REVIEW.md: recipe FIX, future sync unmeasured; h22/h35 and v03 cf1561c2 preserved. No new media approval; all six Ben notes unresolved.
 - **009** · 🔄 **Picture** — in progress (78%, 70/90 board rows recorded: 57 accepted Flow +12 code graphics +1 reuse; 20 Quality remain, with Cursor (J2033; Codex/Gemini fallback) since Thu 15 Oct, ⏸ waiting: J2033 ready after J2026 handoff completes; worker not yet claimed. Fresh Flow credit/price/writer-lock gate before generation., due Sun 15 Nov (in 10 d)): J1237 tranche1 PASS; all57 original Flow hashes reverified local/NAS. 70/90 recorded rows unchanged. J2033 owns remaining20 Quality rows under J2026 cap6000/max3 takes each/floor3000; J2034 independent picture review. Generated is not approved.
-- **010** · ⛔ **Picture** — blocked (67%, 2/3 J2210 readiness steps, with codex since Thu 5 Nov, ⛔ blocked: J2210 plan review and Short A body-cut resegmentation; separate Chief HOS 010 mint authorization after HOS 009 J2033, due Sun 22 Nov (in 17 d)): J2210 £0 plans repaired: Option A1 hook 2.849s, distinct pigeon/gull plates, 2 code graphics hash verified. S02 1.900s remains below 2.500s floor; no assembly release.
+- **010** · ⛔ **Picture** — blocked (100%, 3/3 J2210 readiness steps, with codex since Thu 5 Nov, ⛔ blocked: Separate Chief HOS 010 mint authorization after HOS 009 J2033, due Sun 22 Nov (in 17 d)): J2210/J2211 £0 plans repaired and verified: Option A1 hook 2.849s with 7-body-shot S01..S07 + loop_tail segmentation PASS (S02..S07 in 2.900-3.720s, P1:08_hand_on_rock dropped), distinct pigeon/gull plates, 2 code graphics hash verified. 12 moving Shorts plates and long Flow plates unminted; no assembly release.
 
 ## Next steps (in order)
 
@@ -210,7 +210,7 @@ J1237 tranche1 Chief PASS retained: 57 Flow +12 code graphics +1 reuse =70/90 re
 
 ### 010 · What Killed the Dinosaurs Was Hidden in a Line of Clay
 
-`████████████░░░░░░░░` **58%**
+`██████████████░░░░░░` **70%**
 
 Airs **Thu 3 Dec** · ready for Ben's OK by **Sun 29 Nov** · ⛔ blocked
 
@@ -223,7 +223,7 @@ Long VO v01 locked (5 parts); Chief KEEP all five, no pickups (desk 6101773293).
 - ✅ **Voiceover (long)** — done: long VO locked 11 Oct: 5 parts v01, 500 s speech; Chief KEEP all five, no pickups (VO_TAKES_KEEP.json, desk 6101773293)
 - ✅ **Shorts scripts** — done: v02 (test B): two search-titled Shorts, 9 Oct
 - ⬜ **Shorts voiceover** — to do (with Cursor, due Thu 8 Oct (28 d late))
-- ⛔ **Picture** — blocked (67%, 2/3 J2210 readiness steps, with codex since Thu 5 Nov, ⛔ blocked: J2210 plan review and Short A body-cut resegmentation; separate Chief HOS 010 mint authorization after HOS 009 J2033, due Sun 22 Nov (in 17 d)): J2210 £0 plans repaired: Option A1 hook 2.849s, distinct pigeon/gull plates, 2 code graphics hash verified. S02 1.900s remains below 2.500s floor; no assembly release.
+- ⛔ **Picture** — blocked (100%, 3/3 J2210 readiness steps, with codex since Thu 5 Nov, ⛔ blocked: Separate Chief HOS 010 mint authorization after HOS 009 J2033, due Sun 22 Nov (in 17 d)): J2210/J2211 £0 plans repaired and verified: Option A1 hook 2.849s with 7-body-shot S01..S07 + loop_tail segmentation PASS (S02..S07 in 2.900-3.720s, P1:08_hand_on_rock dropped), distinct pigeon/gull plates, 2 code graphics hash verified. 12 moving Shorts plates and long Flow plates unminted; no assembly release.
 - ⬜ **Edit + master** — to do (with Grok, due Thu 26 Nov (in 21 d))
 - ⬜ **Thumbnails** — to do (with Grok, due Thu 26 Nov (in 21 d))
 - ⬜ **Ben's final OK** — to do (with Ben, due Sun 29 Nov (in 24 d))

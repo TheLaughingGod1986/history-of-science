@@ -3,19 +3,19 @@
   "folder": "010_Alvarez-Clay-Line-Dinosaurs",
   "version": "v03",
   "written": "2026-11-05",
-  "task": "J2210: £0 readiness repair; no generation, VO edits or render performed.",
+  "task": "J2210/J2211: £0 readiness repair and Option A1 7-body-shot segmentation; no generation, VO edits or render performed.",
   "long_board_version": "02_Shot-List/PICTURE_PLAN_v04.json",
   "totals": {
     "shorts_count": 2,
-    "rows": 18,
+    "rows": 17,
     "new_mints": 0,
-    "reuse_long_plates": 15,
+    "reuse_long_plates": 14,
     "flow_credits_try1": 0,
     "flow_credits_expected": 0,
     "vertex_try1_gbp": 0.0,
     "vertex_expected_gbp": 0.0,
     "available_unique_plates": 2,
-    "missing_unique_moving_plates": 13
+    "missing_unique_moving_plates": 12
   },
   "shorts": [
     {
@@ -36,11 +36,11 @@
       "rows": [
         {
           "id": "S01",
-          "t_start_s": 0,
+          "t_start_s": 0.0,
           "t_end_s": 2.849,
           "use_s": 2.849,
           "word_end_s": 2.849,
-          "word_gap_s": 0,
+          "word_gap_s": 0.0,
           "source_long_plate": "P1:01_clay_line",
           "plate_on_disk": false,
           "probed_dur_s": null,
@@ -54,9 +54,9 @@
         {
           "id": "S02",
           "t_start_s": 2.849,
-          "t_end_s": 4.749,
-          "use_s": 1.9,
-          "word_end_s": 4.749,
+          "t_end_s": 6.189,
+          "use_s": 3.34,
+          "word_end_s": 6.189,
           "word_gap_s": 0.0,
           "source_long_plate": "P2:01_walter_hammer",
           "plate_on_disk": false,
@@ -64,33 +64,16 @@
           "plate_dur_s": 8.0,
           "status": "blocked_missing_plate",
           "route": "reuse-long-plate",
-          "spoken": "It's in a cliff in Italy",
+          "spoken": "It's in a cliff in Italy about a centimeter thick.",
           "flow_credits_expected": 0,
           "board_dur_s": 8.0
         },
         {
           "id": "S03",
-          "t_start_s": 4.749,
-          "t_end_s": 7.389,
-          "use_s": 2.64,
-          "word_end_s": 7.389,
-          "word_gap_s": 0.0,
-          "source_long_plate": "P1:08_hand_on_rock",
-          "plate_on_disk": false,
-          "probed_dur_s": null,
-          "plate_dur_s": 8.0,
-          "status": "blocked_missing_plate",
-          "route": "reuse-long-plate",
-          "spoken": "about a centimeter thick. Below it,",
-          "flow_credits_expected": 0,
-          "board_dur_s": 8.0
-        },
-        {
-          "id": "S04",
-          "t_start_s": 7.389,
-          "t_end_s": 10.129,
-          "use_s": 2.74,
-          "word_end_s": 10.129,
+          "t_start_s": 6.189,
+          "t_end_s": 9.549,
+          "use_s": 3.36,
+          "word_end_s": 9.549,
           "word_gap_s": 0.0,
           "source_long_plate": "P2:03_tiny_shells",
           "plate_on_disk": false,
@@ -98,15 +81,15 @@
           "plate_dur_s": 8.0,
           "status": "blocked_missing_plate",
           "route": "reuse-long-plate",
-          "spoken": "the rock is full of tiny fossil shells.",
+          "spoken": "Below it, the rock is full of tiny fossil",
           "flow_credits_expected": 0,
           "board_dur_s": 8.0
         },
         {
-          "id": "S05",
-          "t_start_s": 10.129,
+          "id": "S04",
+          "t_start_s": 9.549,
           "t_end_s": 13.269,
-          "use_s": 3.14,
+          "use_s": 3.72,
           "word_end_s": 13.269,
           "word_gap_s": 0.0,
           "source_long_plate": "P2:05_almost_none",
@@ -115,12 +98,12 @@
           "plate_dur_s": 8.0,
           "status": "blocked_missing_plate",
           "route": "reuse-long-plate",
-          "spoken": "Above it, almost all of them are gone.",
+          "spoken": "shells. Above it, almost all of them are gone.",
           "flow_credits_expected": 0,
           "board_dur_s": 8.0
         },
         {
-          "id": "S06",
+          "id": "S05",
           "t_start_s": 13.269,
           "t_end_s": 16.389,
           "use_s": 3.12,
@@ -137,7 +120,7 @@
           "board_dur_s": 8.0
         },
         {
-          "id": "S07",
+          "id": "S06",
           "t_start_s": 16.389,
           "t_end_s": 19.289,
           "use_s": 2.9,
@@ -156,7 +139,7 @@
           "plate_sha256": "f9b504cf26e927d988a55aea58b4b2173660c2188b0ca94561e2c85479c2fd84"
         },
         {
-          "id": "S08",
+          "id": "S07",
           "t_start_s": 19.289,
           "t_end_s": 22.289,
           "use_s": 3.0,
@@ -207,7 +190,7 @@
       "status": "blocked_missing_plates",
       "blocked_reason": "Moving plates remain unminted; separate Chief authorization and capable media review required.",
       "vo_sha256_wav": "2488aa8b49beb3a642597e08f30ca53e723fbee00cd21ad8bdc581a9293ff228",
-      "teach_overlay_note": "Omitted to keep only S07 built-in ABOUT 30 TIMES; no second label over the code graphic.",
+      "teach_overlay_note": "Omitted to keep only S06 built-in ABOUT 30 TIMES; no second label over the code graphic.",
       "assembly_audio_recipe": {
         "source_sha256_mp3": "68d88b5b5883f2376bcec29c26d77efea7634d5c7705693f41202ca587b927fb",
         "source_sha256_wav": "2488aa8b49beb3a642597e08f30ca53e723fbee00cd21ad8bdc581a9293ff228",
@@ -242,14 +225,29 @@
         "hook_atempo": 1.06,
         "body_atempo": 1.0,
         "body_shift_s": -0.431,
-        "authority": "J2210 brief / J1004 Option A1; recipe only, accepted source VO unchanged",
+        "optional_sentence3_pause_trim_s": {
+          "raw_window_s": [
+            6.8,
+            6.94
+          ],
+          "trim_s": 0.14,
+          "effect": "Optional Option A1-7B: trims 0.140 s inside the 0.660 s inter-sentence silence after 'thick.' (leaving 0.520 s breath) so S02 = 2.849-6.289 s (3.440 s), S03 = 6.289-9.989 s (3.700 s, ending after 'shells.'), and S04 = 9.989-13.129 s (3.140 s)."
+        },
+        "optional_tail_silence_trim_s": {
+          "raw_window_s": [
+            22.7,
+            22.72
+          ],
+          "trim_s": 0.02,
+          "effect": "Optional: trims 0.020 s of trailing file silence so S07 ends at 22.269 s (use_s = 2.980 s, word_gap_s = 0.100 s) if a strict <=0.100 s final-shot gap is desired at assembly in addition to the 0.200 s vo_duration_s check."
+        },
+        "authority": "J2210 brief / J1004 Option A1 / J2211 7-shot body resolution; recipe only, accepted source VO unchanged",
         "rendered": false
       },
       "readiness_blockers": [
-        "Option A1 plus the requested unchanged S02..S08 endpoints yields S02 = 1.900 s, below 2.500 s body-cut floor. Re-segmentation decision required before assembly; no gate waiver.",
-        "Inherited final word gap is 0.120 s (0.100 s maximum); final cut timing needs review."
+        "Six unique moving plates for Short_A (P1:01_clay_line, P2:01_walter_hammer, P2:03_tiny_shells, P2:05_almost_none, P3:08_asaro_michel, P4:06_dust_veil) remain unminted; separate Chief HOS 010 mint authorization required."
       ],
-      "body_cut_validation": "FAIL: S02 1.900 s; planning conflict, not waived"
+      "body_cut_validation": "PASS: 7 body shots (S01 2.849 s <= 2.850 s; S02..S07 in [2.900, 3.720] s within [2.500, 3.800] s; interior word gaps 0.000 s <= 0.100 s; final S07 to loop_tail 0.120 s <= 0.200 s) + 1.000 s loop_tail = 8 rows; P1:08_hand_on_rock dropped"
     },
     {
       "id": "Short_C",
