@@ -208,3 +208,37 @@ Repository check output (`bash 00_Brand/Channel-Setup/tools/check_all.sh 02_Vide
 -- gate:episode: PASS
 ALL CHECKS PASS
 ```
+
+## 5 November 2026 — J2175 Rule H Review of J2170 Short C Paper Hook Lock, `read_file` Clip Windows & 1-Sentence VO Pickup Scope (`gemini`, `audio_input` + `moving_video_input`)
+
+- **Review Job / Verdict:** `J2175` (`ref: J2170`, `kind: review`, Rule H review lane) — **Verdict: `KEEP`** (with `C-Open-1` + `Layout C-v03a` locked, 4 `read_file`-verified clip-window/framing refinements applied to `10_Shorts/J2170/SHORT_C_PAPER_PLAN.md` and `10_Shorts/J2170/INPUT_INVENTORY.json`, and `source_qa_v03/` preflight verified at `£0` / `0` credits spent).
+- **Direct Audio & Moving-Video Verification (`read_file`):**
+  1. **Audio (`10_Shorts/vo_v02/hos_008_short_C_v02.mp3`, `sha256: ba8ffec9...`, and `hos_008_short_C_v02.wav`, `sha256: 0a25b6da...`):** Confirmed `w[00..12]` (*"That thin metal rod on top of tall buildings was Benjamin Franklin's idea."*, 13 words) spans `0.080–4.840 s` (`3.720 s` pure speech, `3.509 s > 2.850 s` at `atempo = 1.06x` cap), and no Long Part 05 sentence finishes `<= 2.850 s` with both subject and surprise claim. The conditional **Wed 2 Dec 2026 11:30Z** (Ben watch by **29 Nov**) slot is **explicitly not achievable on existing audio alone** and remains **HELD / EMPTY**.
+  2. **Locked Sentence 1 & Body Order (`C-Open-1` + `Layout C-v03a`):**
+     - **Sentence 1 (`S01`, `0.00–2.45 s`):** **`C-Open-1` — *"That rooftop lightning rod was Franklin's idea."*** (`7` words, `47` chars, `10` syllables; empirical word-duration sum from `hos_008_short_C_v02/stt_raw.json`: `2.300 s` pure speech, `~2.660 s <= 2.850 s` at `1.00x`, `2.453 s <= 2.850 s` at `1.06x`; 6-word zero-extra-spend trim fallback *"That lightning rod was Franklin's idea."* [`6` words, `39` chars, `8` syllables, `1.920 s` pure speech] pre-approved from the same single take if needed). Sourced to `01_Script/FACT_NOTES_v01.md` rows 25, 38, 39, 41, 42, 44.
+     - **Body (`S02–S08`, `2.67–21.35 s`):** **`Layout C-v03a`** — preserves the unchanged contiguous 49-word body (`w[13..61]`, `5.720–24.400 s`, `18.680 s`) of `hos_008_short_C_v02.wav` (`0a25b6da...`) with zero internal audio splices (`56` words total / `55` with 6w fallback, `21.35 s` VO, `22.35 s` total duration with `1.00 s` `terminal_loop.py` v1 return; grounding completion at `70.3%–78.3%` and scale payoff at `82.3%–95.5%`, both `>= 70%`).
+  3. **Direct Moving-Video (`read_file`) Clip-Window Refinements & `picture_qa.py` Preflight (`10_Shorts/J2170/source_qa_v03/`):**
+     - Portrait framing locked to `crop = [438, 0, 405, 720]`, `output = [936, 1664]` (`936 * 16 == 1664 * 9 == 14976` exact 9:16 integer ratio required by `terminal_loop.py` v1, `upscale = 2.3111x <= 2.35x`).
+     - `S01` (`0.00–2.45 s`) & `loop_tail` (`21.35–22.35 s`): `P5:19_skyline_strike` (`19_skyline_strike_t1.mp4`, `06caaeb6...`), `offset = 1.00 s` (`1.00–3.45 s` for `S01`, `1.00–2.00 s` for `loop_tail`; bolt strikes top rod on Frame 0 and channels down/extinguishes at `t = 2.00 s` = `+1.00 s` into `S01`).
+     - `S05` (`11.15–13.95 s`): `P5:18_rod_closeup` (`18_rod_closeup_t1.mp4`, `9535c72f...`), locked to `offset = 0.00 s` (`0.00–2.80 s < 4.00 s`), excluding the `4.80–6.50 s` Veo white smoke/steam puff artifact identified via `read_file`.
+     - `S06` (`13.95–16.75 s`) & `S07` (`16.75–19.45 s`): un-swapped so `S06` (*"The lightning runs down the rod, round the building"*) uses `P5:06_rod_fitting` (`06_rod_fitting_t1.mp4`, `73c43fc2...`, `1.50–4.30 s < 6.00 s`, workman on ladder fastening conductor down brick wall) and `S07` (*"and into the earth"*) uses `P5:06_rod_fitting_c1` (`06_rod_fitting_c1_t1.mp4`, `de605071...`, `1.50–4.20 s < 5.80 s`, workman driving grounding rod into damp earth).
+     - `S08` (`19.45–21.35 s`): `P5:14_safe_towers` (`14_safe_towers_t1.mp4`, `0c7e98c2...`), locked to `offset = 4.20 s` (`4.20–6.10 s`), excluding the `1.00–2.20 s` street-level spark splash identified via `read_file`, with single Short teach overlay `DATA: 20+ STRIKES A YEAR` (`18.50–21.20 s`).
+     - `J2217` (Ben 5 Nov 2026 second review notes, `4e94001e`): all 8 Long UAT defect items (`00:20`, `0:30`, `0:51`, `1:49`, `2:18`, `2:20`, `3:13`, `3:31`, `7:58/7:59`) are 100% disjoint from `Short_C`'s 8 moving plates; soft dark/warm background panel locked behind all bottom captions over moving footage.
+     - `picture_qa.py` source preflight output (`10_Shorts/J2170/source_qa_v03/body_out/PICTURE_QA.md`): `picture QA PASS: 0 of 8 cuts fail, 8 to look at`.
+  4. **Protected Call Parked for Chief on `J2175`:** Chief credit authorization for the 1-sentence (`47`-char) ElevenLabs VO pickup (`"That rooftop lightning rod was Franklin's idea."`, `vo_take.py` + `vo_check_py312.sh`) and dispatch of `£0` `Short_C_v03` assembly (with `008` Long public prerequisite retained).
+
+Repository check output (`bash 00_Brand/Channel-Setup/tools/check_all.sh 02_Video-Projects/008_Lightning-Franklin`):
+```text
+-- durable desk handoffs: PASS
+-- no media: PASS
+-- status board in sync: PASS
+-- ElevenLabs guard tests: PASS
+-- vo_check word tests: PASS
+-- atempo check tests: PASS
+-- voice speed (atempo <= 1.06): PASS
+-- contract tests: PASS
+-- package-lint: PASS
+-- review:script lightning_script_master_v01.md: PASS
+-- gate:episode: PASS
+ALL CHECKS PASS
+```

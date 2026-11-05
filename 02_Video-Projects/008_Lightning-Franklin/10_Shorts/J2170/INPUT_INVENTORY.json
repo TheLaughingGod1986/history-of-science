@@ -67,7 +67,7 @@
       "category": "script_and_plans",
       "role": "locked_long_script",
       "relative_path": "01_Script/lightning_script_master_v01.md",
-      "resolved_path": "/private/tmp/J2170-hos-wt/02_Video-Projects/008_Lightning-Franklin/01_Script/lightning_script_master_v01.md",
+      "resolved_path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/008_Lightning-Franklin/01_Script/lightning_script_master_v01.md",
       "exists": true,
       "bytes": 17950,
       "sha256": "964a20b7db3c266c12f3f345ce7c806c4e0e287721521425775d90a11253b826",
@@ -79,7 +79,7 @@
       "category": "script_and_plans",
       "role": "locked_fact_notes",
       "relative_path": "01_Script/FACT_NOTES_v01.md",
-      "resolved_path": "/private/tmp/J2170-hos-wt/02_Video-Projects/008_Lightning-Franklin/01_Script/FACT_NOTES_v01.md",
+      "resolved_path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/008_Lightning-Franklin/01_Script/FACT_NOTES_v01.md",
       "exists": true,
       "bytes": 25219,
       "sha256": "bab1bb388caed2c95fbf89fa3b9d3ecec27e95b3c46f82af32395edc0fbbaf0d",
@@ -91,7 +91,7 @@
       "category": "script_and_plans",
       "role": "locked_shorts_scripts_v02",
       "relative_path": "10_Shorts/SHORTS_SCRIPTS_v02.md",
-      "resolved_path": "/private/tmp/J2170-hos-wt/02_Video-Projects/008_Lightning-Franklin/10_Shorts/SHORTS_SCRIPTS_v02.md",
+      "resolved_path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/008_Lightning-Franklin/10_Shorts/SHORTS_SCRIPTS_v02.md",
       "exists": true,
       "bytes": 5318,
       "sha256": "381d3e15cdd67ba496568e13cd2946219544acf026da97c7d2fd6271b5995410",
@@ -103,7 +103,7 @@
       "category": "script_and_plans",
       "role": "shorts_picture_plan_v02",
       "relative_path": "10_Shorts/SHORTS_PICTURE_PLAN_v02.json",
-      "resolved_path": "/private/tmp/J2170-hos-wt/02_Video-Projects/008_Lightning-Franklin/10_Shorts/SHORTS_PICTURE_PLAN_v02.json",
+      "resolved_path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/008_Lightning-Franklin/10_Shorts/SHORTS_PICTURE_PLAN_v02.json",
       "exists": true,
       "bytes": 15066,
       "sha256": "28adc8c411120608232c2f82ef4b1c4a2b5cb03d93101bcbfe4bff1bd5de0982",
@@ -115,7 +115,7 @@
       "category": "script_and_plans",
       "role": "long_picture_plan_v03",
       "relative_path": "07_Edit-Project/PICTURE_PLAN_v03.json",
-      "resolved_path": "/private/tmp/J2170-hos-wt/02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/PICTURE_PLAN_v03.json",
+      "resolved_path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/PICTURE_PLAN_v03.json",
       "exists": true,
       "bytes": 25125,
       "sha256": "ccd67018cea08ff3ea40600c26de5b2021cb3115ec4cb5f0c332427f51e5c2c1",
@@ -127,7 +127,7 @@
       "category": "script_and_plans",
       "role": "flow_mint_log_v03",
       "relative_path": "07_Edit-Project/FLOW_MINT_LOG_v03.json",
-      "resolved_path": "/private/tmp/J2170-hos-wt/02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/FLOW_MINT_LOG_v03.json",
+      "resolved_path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/FLOW_MINT_LOG_v03.json",
       "exists": true,
       "bytes": 160751,
       "sha256": "de0e85fc0adb083fb1c1c072c5cbaec1a9a2f8dd94160b00a2d7c1197a1c97ff",
@@ -139,13 +139,13 @@
       "category": "script_and_plans",
       "role": "j1868_uat_corrections",
       "relative_path": "07_Edit-Project/J1868_UAT_CORRECTIONS.md",
-      "resolved_path": "/private/tmp/J2170-hos-wt/02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/J1868_UAT_CORRECTIONS.md",
+      "resolved_path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/J1868_UAT_CORRECTIONS.md",
       "exists": true,
       "bytes": 4619,
       "sha256": "3cefd5d11ca12b3388069b3ec31eb8b8aacc986569d9874b506e34b0a257fe5a",
       "nas_path": "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/J1868_UAT_CORRECTIONS.md",
       "nas_exists": false,
-      "note": ""
+      "note": "SHA-256 on main (e908c3e2); 5 Nov 8-note + film-wide caption addendum recorded on chief/J1868-5nov-notes (4e94001e, J1868_BEN_NOTES_2026-11-05.md)"
     },
     {
       "category": "script_and_plans",
@@ -163,7 +163,7 @@
       "category": "script_and_plans",
       "role": "j1881_scope_review",
       "relative_path": "07_Edit-Project/J1881_SCOPE_REVIEW.md",
-      "resolved_path": "/private/tmp/J2170-hos-wt/02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/J1881_SCOPE_REVIEW.md",
+      "resolved_path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/J1881_SCOPE_REVIEW.md",
       "exists": true,
       "bytes": 6752,
       "sha256": "ee4bf9518f0a7637becfa2d5ac2c8462807446e79e1d7efd5ca220b2a37e1cd2",
@@ -175,7 +175,7 @@
       "category": "script_and_plans",
       "role": "j1004_disposition",
       "relative_path": "00_Brand/Channel-Setup/audits/J1004_SHORTS_HOOK_DURATION_DISPOSITION_2026-10-27.md",
-      "resolved_path": "/private/tmp/J2170-hos-wt/00_Brand/Channel-Setup/audits/J1004_SHORTS_HOOK_DURATION_DISPOSITION_2026-10-27.md",
+      "resolved_path": "/Users/benjaminoats/YouTube/History Of Science/00_Brand/Channel-Setup/audits/J1004_SHORTS_HOOK_DURATION_DISPOSITION_2026-10-27.md",
       "exists": true,
       "bytes": 63921,
       "sha256": "2e57f96756ee787abb14c8da065c69958e1cca1a40d40f7fa48c974d81cc830e",
@@ -627,5 +627,41 @@
       "nas_exists": true,
       "note": "42 frames (1.750 s, source frames 109-150 of 06_rod_fitting_t1.mp4); parked for Chief in J1273 with hand/bracket occlusion caveats and too short for a 2.6-2.8 s Short cut."
     }
-  ]
+  ],
+  "j2175_rule_h_review": {
+    "reviewed_at": "2026-11-05T18:10:00Z",
+    "reviewer": "gemini",
+    "verdict": "KEEP",
+    "locked_sentence_1": "That rooftop lightning rod was Franklin's idea.",
+    "locked_sentence_1_words": 7,
+    "locked_sentence_1_chars": 47,
+    "locked_sentence_1_syllables": 10,
+    "locked_sentence_1_fallback_6w": "That lightning rod was Franklin's idea.",
+    "locked_body_layout": "Layout C-v03a (contiguous w[13..61] 5.720-24.400s of hos_008_short_C_v02.wav 0a25b6da..., 49w, 18.680s unchanged)",
+    "portrait_framing": {
+      "crop": [
+        438,
+        0,
+        405,
+        720
+      ],
+      "output": [
+        936,
+        1664
+      ],
+      "upscale": 2.3111
+    },
+    "read_file_clip_window_locks": {
+      "S01": "19_skyline_strike_t1.mp4 offset=1.00s (1.00-3.45s, bolt strikes Frame 0 and extinguishes at 2.00s = +1.00s)",
+      "S02": "01_house_rod_t1.mp4 offset=0.80s (0.80-3.68s)",
+      "S03": "07_giant_spark_t1.mp4 offset=0.60s (0.60-3.52s)",
+      "S04": "12_steeple_fire_t1.mp4 offset=0.80s (0.80-3.70s, 9.0-14.0s promoted-long title enters at 9.00s)",
+      "S05": "18_rod_closeup_t1.mp4 offset=0.00s (0.00-2.80s < 4.00s; excludes 4.80-6.50s Veo smoke/steam puff artifact)",
+      "S06": "06_rod_fitting_t1.mp4 offset=1.50s (1.50-4.30s < 6.00s; workman on ladder fastening conductor down brick wall, un-swapped)",
+      "S07": "06_rod_fitting_c1_t1.mp4 offset=1.50s (1.50-4.20s < 5.80s; workman driving grounding rod into damp earth, un-swapped)",
+      "S08": "14_safe_towers_t1.mp4 offset=4.20s (4.20-6.10s; excludes 1.00-2.20s street spark splash; DATA: 20+ STRIKES A YEAR at 18.50-21.20s)",
+      "loop_tail": "19_skyline_strike_t1.mp4 offset=1.00s (source_in=1.00, source_out=2.00, prescribed_terminal_loop via terminal_loop.py v1)"
+    },
+    "j2217_eight_note_and_caption_check": "All 8 Ben UAT defect items (00:20 P1:03, 0:30 P1:03b/04, 0:51 P1:07/P2:02, 1:49 P2:02, 2:18 P2:07, 2:20 P2:07/08, 3:13 P3:01, 3:31 P3:04, 7:58/7:59 P5:13) are 100% disjoint from Short C's 8 moving plates. Soft dark/warm background panel locked for all bottom on-screen captions over moving footage per Ben 5 Nov 2026 note."
+  }
 }
