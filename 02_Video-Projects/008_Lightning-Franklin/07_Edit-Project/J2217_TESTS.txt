@@ -1,0 +1,19 @@
+test_actual_start_and_gap_survive (test_j2163_recipe.PlannerTests.test_actual_start_and_gap_survive) ... ok
+test_clocks_map_on_stored_master_pts (test_j2163_recipe.PlannerTests.test_clocks_map_on_stored_master_pts) ... ok
+test_decoder_failure_and_stderr_rejected (test_j2163_recipe.PlannerTests.test_decoder_failure_and_stderr_rejected) ... ok
+test_eight_item_amend_stays_unresolved_and_unbordered (test_j2163_recipe.PlannerTests.test_eight_item_amend_stays_unresolved_and_unbordered) ... ok
+test_execution_is_unconditionally_refused (test_j2163_recipe.PlannerTests.test_execution_is_unconditionally_refused) ... ok
+test_execution_names_the_j1881_rereview (test_j2163_recipe.PlannerTests.test_execution_names_the_j1881_rereview) ... ok
+test_explicit_missing_retake_has_no_fallback (test_j2163_recipe.PlannerTests.test_explicit_missing_retake_has_no_fallback) ... ok
+test_hash_size_missing_and_overwrite_refused (test_j2163_recipe.PlannerTests.test_hash_size_missing_and_overwrite_refused) ... ok
+test_manifest_safe_windows_and_missing_assets (test_j2163_recipe.PlannerTests.test_manifest_safe_windows_and_missing_assets) ... ok
+test_missing_timestamp_rejected (test_j2163_recipe.PlannerTests.test_missing_timestamp_rejected) ... ok
+test_nonmonotonic_rejected (test_j2163_recipe.PlannerTests.test_nonmonotonic_rejected) ... ok
+test_overlapping_or_unavailable_patch_refused (test_j2163_recipe.PlannerTests.test_overlapping_or_unavailable_patch_refused) ... ok
+test_short_decode_rejected (test_j2163_recipe.PlannerTests.test_short_decode_rejected) ... ok
+test_short_explicit_retake_refused (test_j2163_recipe.PlannerTests.test_short_explicit_retake_refused) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.118s
+
+OK

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""J2163 read-only correction planner. Original J1880 code is preserved at bd530249.
-No renderer is exposed: a separately scoped implementation must preserve source PTS,
-packet-copy untouched closed GOPs and losslessly encode only recorded boundary GOPs.
+"""J2217 read-only correction planner. J2163's measured-PTS repair is kept.
+Eight defect rows plus a film-wide caption panel. Execution stays refused until
+J1881 re-reviews this amend. Original J1880 code remains at bd530249.
 """
 from __future__ import annotations
 import argparse
@@ -89,6 +89,58 @@ def probe_video(path, expected_count=None):
         raise PlanError('Expected one video stream')
     return validate_frames(data.get('frames', []), data['streams'][0], expected_count)
 
+def clock_frame(frames, time_base, seconds):
+    """Return the one decoded frame whose PTS interval contains this clock time."""
+    tb = Fraction(time_base)
+    t = Fraction(str(seconds))
+    hits = []
+    for f in frames:
+        if isinstance(f, dict):
+            idx, pts, dur = f['index'], f['pts'], f['duration']
+        else:
+            idx, pts, dur = f[0], f[1], f[2]
+        start = Fraction(pts) * tb
+        end = start + Fraction(dur) * tb
+        if start <= t < end:
+            hits.append(idx)
+    if len(hits) != 1:
+        raise PlanError(f'Clock {seconds}s matched {hits}')
+    return hits[0]
+
+def load_manifest():
+    manifest = json.loads((EDIT_DIR / 'J2163_CORRECTION_MANIFEST.json').read_text())
+    if 'eight_rows' not in manifest:
+        raise PlanError('J2217 eight-row amend missing; refusing to plan the six-row list')
+    rows = manifest['eight_rows']
+    if len(rows) != 8:
+        raise PlanError('Expected eight defect rows')
+    cap = manifest['caption_treatment']
+    if cap.get('scope') != 'every_bottom_onscreen_text_over_moving_footage':
+        raise PlanError('Caption treatment must be film-wide')
+    if cap.get('background_panel') is not True or cap.get('bordered_ui_chrome') is not False or cap.get('border') is not False:
+        raise PlanError('Caption treatment must be an unbordered background panel')
+    if cap.get('inventory_is_splice_list') is not False:
+        raise PlanError('Caption inventory is not a splice list')
+    by_ts = {row['timestamp']: row for row in rows}
+    if set(by_ts) != {'00:20', '0:30', '0:51', '1:49', '2:20', '3:13', '3:31', '7:58'}:
+        raise PlanError('Eight-row timestamps drifted')
+    for row in rows:
+        if not str(row.get('status', '')).startswith('UNRESOLVED'):
+            raise PlanError('Notes stay unresolved')
+    hair, salon = by_ts['0:51']['candidate_frames'], by_ts['1:49']['candidate_frames']
+    if not (hair[1] < salon[0] or salon[1] < hair[0]):
+        raise PlanError('0:51 overlaps the 1:49 hair source')
+    if by_ts['0:51'].get('same_source_as_1_49') is not False:
+        raise PlanError('0:51 stays off the 1:49 salon source until J1881 retargets it')
+    foil = by_ts['2:20']
+    ev = foil['jar_flip_2_18']
+    lo, hi = foil['candidate_frames']
+    if not (lo <= ev['master_frame'] <= hi) or ev['inside_replace_3260_3343'] is not True or ev['inside_keep_3168_3259'] is not False:
+        raise PlanError('2:18 must sit in the foil replace zone and outside the kept frames')
+    if by_ts['7:58']['clock_7_59']['inside_candidate_11358_11492'] is not True:
+        raise PlanError('7:59 must stay inside the existing rods row')
+    return manifest
+
 def build_plan(timeline, rows):
     frames = timeline['frames']; keys = [f['index'] for f in frames if f['key_frame']]
     if not keys or keys[0] != 0:
@@ -110,7 +162,7 @@ def build_plan(timeline, rows):
     return patches
 
 def verify_plan(master=DEFAULT_MASTER, retakes=None):
-    manifest = json.loads((EDIT_DIR / 'J2163_CORRECTION_MANIFEST.json').read_text())
+    manifest = load_manifest()
     retakes = retakes or {}
     for name, item in retakes.items():
         # Explicitly requested missing/short retakes never fall back to another plate.
@@ -138,7 +190,8 @@ def verify_plan(master=DEFAULT_MASTER, retakes=None):
         if len(selected) < item['minimum_frames']:
             raise PlanError(f'Insufficient actual frames: {item["path"]}')
         inputs.append({'path': item['path'], 'sha256': item['sha256'], 'available_frames': len(selected), 'decode': 'verified'})
-    patches = build_plan(timeline, manifest['six_rows'])
+    # Caption labels are a panel policy. They are not splice intervals.
+    patches = build_plan(timeline, manifest['eight_rows'])
     return {'status': 'PLANNED_NOT_EXECUTABLE', 'master': str(master), 'master_sha256': MASTER_SHA,
             'timeline': timeline, 'patches': patches, 'inputs': inputs,
             'frame_count_delta': 'UNMEASURED', 'vo_sync_lag_ms': 'UNMEASURED',
@@ -149,7 +202,7 @@ def extract_unchanged_range(*args, **kwargs):
     raise PlanError('Removed unsafe CFR/re-encode path. Future scoped packet/GOP splicer required.')
 
 def execute_recipe(*args, **kwargs):
-    raise PlanError('Execution refused: separate elected-Chief production scope and tested PTS/GOP splicer required.')
+    raise PlanError('Execution refused until J1881 re-reviews the J2217 eight-item amend. No splice, replacement render, spend, upload, or YouTube change.')
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
@@ -163,7 +216,7 @@ def main():
     ap.add_argument('--retake-p5-13-sha256')
     args = ap.parse_args()
     if args.execute:
-        ap.exit(2, 'Execution refused: J2163 permits code/evidence only.\n')
+        ap.exit(2, 'Execution refused until J1881 re-reviews the J2217 eight-item amend.\n')
     if args.report and args.report.exists():
         ap.exit(2, 'Refusing to overwrite report.\n')
     retakes = {}

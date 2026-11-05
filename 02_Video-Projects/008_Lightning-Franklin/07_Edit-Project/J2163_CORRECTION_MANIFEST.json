@@ -1,6 +1,6 @@
 {
-  "schema": "hos.uat_correction_plan.v2",
-  "job": "J2163",
+  "schema": "hos.uat_correction_plan.v3",
+  "job": "J2217",
   "film": "HOS:008",
   "supersedes_plan_only": "J1880_SOURCE_INVENTORY_v04.json (preserved unchanged as historical evidence)",
   "original_evidence_commit": "bd5302494c7337058426b2d8714fa4cf4c90efa9",
@@ -148,11 +148,18 @@
     }
   ],
   "holds": [
-    "J1881 elected-Chief production scope required; no execution authority",
-    "Master-derived word alignment needed, all proposed row boundaries remain candidates",
-    "Two exact-match assets missing; three-candidate searches exhausted, no new search",
-    "Closed-GOP dependency validation and lossless boundary splicer not implemented; future authorized production job",
-    "All six notes unresolved; no new watch publication or upload approval"
+    "J1881 re-review of the J2217 eight-item amend required; no execution authority",
+    "J1881 must not authorize render from the old six-only list",
+    "All eight defect items unresolved; no note marked resolved",
+    "0:51 clock is hot_night frame 1220, not the 1:49 salon hair source; row kept; no retarget",
+    "2:18 frame 3305 is outside keep 3168-3259 and inside replace 3260-3343",
+    "Film-wide caption panel is policy, not a splice interval; no bordered UI chrome",
+    "Master-derived word alignment needed; all proposed row boundaries remain candidates",
+    "1:49 and 7:58 exact-match assets still missing; three-candidate searches exhausted, no new search",
+    "3:13 points_desk has no selected replacement and no generation authority",
+    "Closed-GOP dependency validation and lossless boundary splicer not implemented",
+    "h22/h35 historical approvals preserved; J1297 and J1755/PR401 publication rejection preserved",
+    "No new watch publication or upload approval"
   ],
   "identity": {
     "master_sha256": "cf1561c218bace7bc14ed3d625b0790a457027a90f392262f45ca7172723099b",
@@ -177,12 +184,566 @@
       "music_gate",
       "sfx_kit level",
       "VO sync",
-      "six corrections plus full-cut transitions",
+      "eight defect rows plus film-wide caption panel",
       "phone readability",
       "elected-Chief review",
       "Ben final watch/listen"
     ]
   },
   "spend_gbp": 0,
-  "media_changed": false
+  "media_changed": false,
+  "amends": "J2163",
+  "amends_commit": "50620e408667c6ec0c8a959acd051fcfa458fd8d",
+  "execution": "REFUSED_UNTIL_J1881_REREVIEW",
+  "eight_rows": [
+    {
+      "note": 1,
+      "timestamp": "00:20",
+      "verbatim_note": "text on screen in readable needs maybe background colour",
+      "row": "03_table_three",
+      "candidate_frames": [
+        427,
+        544
+      ],
+      "status": "UNRESOLVED_CONDITIONAL_ON_MASTER_PTS_AND_QA",
+      "recipe": {
+        "design": "Film-wide exemplar only. Soft unbordered umber background panel behind bottom on-screen text over the moving plate. No border, no gold rule, no pill chrome. One label at a time, at most 4 words, taken from the line already on screen. Animate 0.3-0.5 s. The same panel is required on every bottom label, not only frames 427-544. Master-derived word alignment and a phone still are still required.",
+        "word_timing": "UNVERIFIED: align master audio, not part offsets",
+        "caption_role": "exemplar_only"
+      },
+      "item": 1
+    },
+    {
+      "note": 2,
+      "timestamp": "0:30",
+      "verbatim_note": "flash the next scene",
+      "row": "03b_town_safe -> 04_storm_mystery",
+      "candidate_frames": [
+        744,
+        839
+      ],
+      "status": "UNRESOLVED_CONDITIONAL_ON_MASTER_PTS_AND_QA",
+      "recipe": {
+        "design": "Conditional advance of storm scene into candidate 744..839 only. Copy clean 663..743 unchanged.",
+        "word_timing": "Proposed sentence end 30.70 and next start31.24 are unverified against master; reconcile before boundary decision."
+      },
+      "item": 2
+    },
+    {
+      "item": 3,
+      "timestamp": "0:51",
+      "origin": "5 Nov",
+      "verbatim_note": "still have hair flying out the tube, this needs rebuilt",
+      "row": "07_hot_night",
+      "candidate_frames": [
+        1124,
+        1227
+      ],
+      "clock_frame": 1220,
+      "clock_pts_ticks": 626688,
+      "clock_pts_s": "51",
+      "rough_v12_timeline": [
+        "47.0017",
+        "51.3187"
+      ],
+      "source_file": "07_hot_night_t1.mp4",
+      "source_path": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part01/raw/v01/07_hot_night_t1.mp4",
+      "source_sha256": "30da07fe8860c3640fdb99a4439b858cfbd2460b94510e5e20d23da6b1b728c3",
+      "same_source_as_1_49": false,
+      "hair_tube_source": {
+        "row": "02_salon_spark",
+        "file": "02_salon_spark_t1.mp4",
+        "sha256": "4b61312e9416b68853409b7d67683643934b44cc2d56e48623b8b0c4e8c58a92",
+        "candidate_frames": [
+          2506,
+          2665
+        ],
+        "why_not_retargeted": "Those frames are already the unresolved 1:49 row. Copying them here would overlap that splice."
+      },
+      "status": "UNRESOLVED_CLOCK_VS_HAIR_SOURCE",
+      "recipe": {
+        "design": "Rebuild, not trim. Master clock 51 s is frame 1220 inside P1:07_hot_night (frames 1124-1227). That plate is the night street, not a glass tube. The hair-and-tube picture is 02_salon_spark, the same source as 1:49. This row stays on the measured 0:51 plate. J1881 chooses a distinct hot-night rebuild or treats the clock as pointing at the salon rebuild. No trim and no generation.",
+        "generation_proposal": {
+          "authorized": false,
+          "reason": "Wrong plate for a hair retake; salon retake remains the unauthorized 1:49 proposal."
+        }
+      }
+    },
+    {
+      "note": 3,
+      "timestamp": "1:49",
+      "verbatim_note": "strange behaviour as hair flies out the tube",
+      "row": "02_salon_spark",
+      "candidate_frames": [
+        2506,
+        2665
+      ],
+      "status": "UNRESOLVED_CONDITIONAL_ON_MASTER_PTS_AND_QA",
+      "recipe": {
+        "design": "Exact glass-tube/hair asset missing. No native option selected; table globe spark does not match locked line. Preserve adjacent2666..2717.",
+        "generation_proposal": {
+          "route": "Flow Veo3.1 Quality only (fragile spark)",
+          "reference": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part02/refs/v03_flow_stills/02_salon_spark_t1.png",
+          "reference_sha256": "aefd6338aded1037c11306a99fc580d1a62a66d9367409f01e0edd993cc8cc58",
+          "takes_max": 3,
+          "subscription_credit_cap": 300,
+          "balance": "fresh live balance required",
+          "authorized": false
+        }
+      },
+      "item": 4
+    },
+    {
+      "note": 4,
+      "timestamp": "2:20",
+      "verbatim_note": "strange behaviour with the silver foil",
+      "row": "07_foil_jar",
+      "candidate_frames": [
+        3260,
+        3343
+      ],
+      "status": "UNRESOLVED_CONDITIONAL_ON_MASTER_PTS_AND_QA",
+      "recipe": {
+        "design": "Keep3168..3259 unchanged; conditional replacement3260..3343 with11_jar_crack_t1.mp4 4.000-7.500 s. Following spark3344..3407 unchanged. KEEP/repeat/PTS verification outstanding."
+      },
+      "item": 5,
+      "jar_flip_2_18": {
+        "ben_time": "2:18",
+        "verbatim_note": "the jar flips upside down like magic",
+        "same_source_row": "07_foil_jar",
+        "source_file": "07_foil_jar_t1.mp4",
+        "master_frame": 3305,
+        "pts_ticks": 1695744,
+        "pts_s": "138",
+        "inside_keep_3168_3259": false,
+        "inside_replace_3260_3343": true,
+        "keep_window_s": [
+          "132.291667",
+          "136.125"
+        ],
+        "replace_window_s": [
+          "136.125",
+          "139.625"
+        ],
+        "new_row": false,
+        "note": "Same jar/foil family as the 2:20 row. 138 s is outside J1880 kept source frames 0-91 (display 3168-3259) and inside the existing replace zone."
+      }
+    },
+    {
+      "item": 6,
+      "timestamp": "3:13",
+      "origin": "5 Nov",
+      "verbatim_note": "strange behaviour as paper seems to roll out the globe",
+      "row": "01_points_desk",
+      "candidate_frames": [
+        4500,
+        4659
+      ],
+      "clock_frame": 4621,
+      "clock_pts_ticks": 2371584,
+      "clock_pts_s": "193",
+      "rough_v12_timeline": [
+        "187.952",
+        "194.6187"
+      ],
+      "source_file": "01_points_desk_t1.mp4",
+      "source_path": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part03/raw/v01/01_points_desk_t1.mp4",
+      "source_sha256": "a9a32aa475424a973ea6e75ad1b9e260897f554723b57e6a5fc3a946980cbf15",
+      "distinct_from": "3:31 map/diagram frames 4977-5077",
+      "status": "UNRESOLVED_CONDITIONAL_ON_MASTER_PTS_AND_QA",
+      "recipe": {
+        "design": "New defect row. Master clock 193 s is frame 4621 inside P3:01_points_desk (frames 4500-4659), the brass globe and parchment plate. Not the 3:31 map. No replacement plate selected. Rebuild only after J1881 scopes it. No trim of the map row and no generation.",
+        "generation_proposal": {
+          "authorized": false
+        }
+      }
+    },
+    {
+      "note": 5,
+      "timestamp": "3:31",
+      "verbatim_note": "the diagram/ map is not easy to understand",
+      "row": "04_letter_crosses",
+      "candidate_frames": [
+        4977,
+        5077
+      ],
+      "status": "UNRESOLVED_CONDITIONAL_ON_MASTER_PTS_AND_QA",
+      "recipe": {
+        "design": "One animated cream ink letter travels across moving07_slow_news_t1.mp4, upper sky off ship. No bordered banner, invented geography, distance, city or date labels. Optional single <=4-word label crossed the ocean only at matching master-derived speech. Fade0.3-0.5s, no hold>4s; phone evidence required.",
+        "claims": "No new number/location/date; any future addition requires exact FACT_NOTES source before use."
+      },
+      "item": 7
+    },
+    {
+      "note": 6,
+      "timestamp": "7:58",
+      "verbatim_note": "the rods fall down for some reason",
+      "row": "13_rods_spread",
+      "candidate_frames": [
+        11358,
+        11492
+      ],
+      "status": "UNRESOLVED_CONDITIONAL_ON_MASTER_PTS_AND_QA",
+      "recipe": {
+        "design": "Exact church/house/ship-mast asset missing. No roofs fallback selected. Preserve candidate135-frame cut pending corrected PTS.",
+        "generation_proposal": {
+          "route": "Flow Veo3.1; current rate and live balance required in separately scoped job",
+          "reference": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/refs/v03_flow_stills/13_rods_spread_t1.png",
+          "reference_sha256": "84a92bf6ce1abd1a5780c37ac2e8ae50ea6099f5cff5c7f728a70060b394819c",
+          "takes_max": 3,
+          "authorized": false
+        }
+      },
+      "item": 8,
+      "clock_7_59": {
+        "ben_time": "7:59",
+        "verbatim_note": "the rods on the church's seem to fall right",
+        "master_frame": 11469,
+        "pts_s": "479",
+        "inside_candidate_11358_11492": true,
+        "new_row": false
+      }
+    }
+  ],
+  "caption_treatment": {
+    "scope": "every_bottom_onscreen_text_over_moving_footage",
+    "background_panel": true,
+    "bordered_ui_chrome": false,
+    "border": false,
+    "gold_rule": false,
+    "pill_chrome": false,
+    "exemplar_timestamp": "00:20",
+    "exemplar_frames": [
+      427,
+      544
+    ],
+    "inventory_is_splice_list": false,
+    "source": "rough_v12 side_label cuts, master frames from J2163_MASTER_FRAME_PTS.json overlap of each cut timeline",
+    "labels": [
+      {
+        "row": "01_kite_open",
+        "label": "PHILADELPHIA \u00b7 1752",
+        "timeline_in": 0.0,
+        "timeline_out": 5.9167,
+        "master_frames": [
+          0,
+          139
+        ],
+        "master_frame_count": 140,
+        "splice": false
+      },
+      {
+        "row": "02_tower_tilt",
+        "label": "THE ANSWER IS ON THE ROOF",
+        "timeline_in": 11.3373,
+        "timeline_out": 17.7643,
+        "master_frames": [
+          269,
+          423
+        ],
+        "master_frame_count": 155,
+        "splice": false
+      },
+      {
+        "row": "03_table_three",
+        "label": "A KITE \u00b7 A KEY \u00b7 A JAR",
+        "timeline_in": 17.7643,
+        "timeline_out": 22.681,
+        "master_frames": [
+          423,
+          541
+        ],
+        "master_frame_count": 119,
+        "splice": false
+      },
+      {
+        "row": "12_steeple_fire",
+        "label": "LIGHTNING",
+        "timeline_in": 67.2886,
+        "timeline_out": 70.5386,
+        "master_frames": [
+          1609,
+          1687
+        ],
+        "master_frame_count": 79,
+        "splice": false
+      },
+      {
+        "row": "13_ring_the_bells",
+        "label": "RING THE BELLS",
+        "timeline_in": 70.5386,
+        "timeline_out": 75.5803,
+        "master_frames": [
+          1687,
+          1808
+        ],
+        "master_frame_count": 122,
+        "splice": false
+      },
+      {
+        "row": "01_salon_tube",
+        "label": "ELECTRICITY \u00b7 A PARTY TRICK",
+        "timeline_in": 100.251,
+        "timeline_out": 104.376,
+        "master_frames": [
+          2400,
+          2499
+        ],
+        "master_frame_count": 100,
+        "splice": false
+      },
+      {
+        "row": "04_franklin_watches",
+        "label": "BENJAMIN FRANKLIN \u00b7 PHILADELPHIA",
+        "timeline_in": 113.2013,
+        "timeline_out": 120.2797,
+        "master_frames": [
+          2710,
+          2879
+        ],
+        "master_frame_count": 170,
+        "splice": false
+      },
+      {
+        "row": "06_leyden_jar",
+        "label": "THE LEYDEN JAR",
+        "timeline_in": 126.9673,
+        "timeline_out": 131.906,
+        "master_frames": [
+          3040,
+          3158
+        ],
+        "master_frame_count": 119,
+        "splice": false
+      },
+      {
+        "row": "12_notebook_list",
+        "label": "7 NOVEMBER 1749",
+        "timeline_in": 153.1653,
+        "timeline_out": 158.7703,
+        "master_frames": [
+          3667,
+          3802
+        ],
+        "master_frame_count": 136,
+        "splice": false
+      },
+      {
+        "row": "17_page_bottom",
+        "label": "LET THE EXPERIMENT BE MADE",
+        "timeline_in": 175.4783,
+        "timeline_out": 179.895,
+        "master_frames": [
+          4201,
+          4307
+        ],
+        "master_frame_count": 107,
+        "splice": false
+      },
+      {
+        "row": "02_sentry_box",
+        "label": "THE SENTRY-BOX",
+        "timeline_in": 194.6187,
+        "timeline_out": 201.327,
+        "master_frames": [
+          4659,
+          4820
+        ],
+        "master_frame_count": 162,
+        "splice": false
+      },
+      {
+        "row": "05_marly_garden",
+        "label": "MARLY, FRANCE \u00b7 MAY 1752",
+        "timeline_in": 211.577,
+        "timeline_out": 216.702,
+        "master_frames": [
+          5066,
+          5187
+        ],
+        "master_frame_count": 122,
+        "splice": false
+      },
+      {
+        "row": "11_kite_build",
+        "label": "SILK \u00b7 CEDAR \u00b7 WIRE",
+        "timeline_in": 243.6627,
+        "timeline_out": 250.9127,
+        "master_frames": [
+          5833,
+          6006
+        ],
+        "master_frame_count": 174,
+        "splice": false
+      },
+      {
+        "row": "16_keep_silk_dry",
+        "label": "KEEP THE SILK DRY",
+        "timeline_in": 270.21,
+        "timeline_out": 276.2517,
+        "master_frames": [
+          6469,
+          6612
+        ],
+        "master_frame_count": 144,
+        "splice": false
+      },
+      {
+        "row": "18_william_runs",
+        "label": "JUNE 1752",
+        "timeline_in": 282.2933,
+        "timeline_out": 288.3193,
+        "master_frames": [
+          6757,
+          6901
+        ],
+        "master_frame_count": 145,
+        "splice": false
+      },
+      {
+        "row": "25_fibres_rise",
+        "label": "THE THREADS STAND UP",
+        "timeline_in": 314.7953,
+        "timeline_out": 319.0037,
+        "master_frames": [
+          7534,
+          7635
+        ],
+        "master_frame_count": 102,
+        "splice": false
+      },
+      {
+        "row": "02_knuckle_spark",
+        "label": "A SPARK",
+        "timeline_in": 322.9727,
+        "timeline_out": 326.681,
+        "master_frames": [
+          7730,
+          7819
+        ],
+        "master_frame_count": 90,
+        "splice": false
+      },
+      {
+        "row": "04_fill_the_jar",
+        "label": "LIGHTNING IN A JAR",
+        "timeline_in": 331.184,
+        "timeline_out": 337.773,
+        "master_frames": [
+          7927,
+          8085
+        ],
+        "master_frame_count": 159,
+        "splice": false
+      },
+      {
+        "row": "10_richmann_rod",
+        "label": "ST PETERSBURG \u00b7 1753",
+        "timeline_in": 368.9087,
+        "timeline_out": 375.367,
+        "master_frames": [
+          8829,
+          8984
+        ],
+        "master_frame_count": 156,
+        "splice": false
+      },
+      {
+        "row": "13_gazette_page",
+        "label": "PENNSYLVANIA GAZETTE \u00b7 19 OCTOBER 1752",
+        "timeline_in": 381.8757,
+        "timeline_out": 387.834,
+        "master_frames": [
+          9141,
+          9283
+        ],
+        "master_frame_count": 143,
+        "splice": false
+      },
+      {
+        "row": "14_royal_society",
+        "label": "THE ROYAL SOCIETY",
+        "timeline_in": 387.834,
+        "timeline_out": 393.1257,
+        "master_frames": [
+          9283,
+          9410
+        ],
+        "master_frame_count": 128,
+        "splice": false
+      },
+      {
+        "row": "15_copley_medal",
+        "label": "THE COPLEY MEDAL \u00b7 1753",
+        "timeline_in": 393.1257,
+        "timeline_out": 395.464,
+        "master_frames": [
+          9410,
+          9466
+        ],
+        "master_frame_count": 57,
+        "splice": false
+      },
+      {
+        "row": "01_house_rod",
+        "label": "SEPTEMBER 1752",
+        "timeline_in": 408.964,
+        "timeline_out": 414.964,
+        "master_frames": [
+          9789,
+          9932
+        ],
+        "master_frame_count": 144,
+        "splice": false
+      },
+      {
+        "row": "03_bells_ring",
+        "label": "THE BELLS THAT RING",
+        "timeline_in": 420.0473,
+        "timeline_out": 424.8807,
+        "master_frames": [
+          10054,
+          10170
+        ],
+        "master_frame_count": 117,
+        "splice": false
+      },
+      {
+        "row": "05_almanac_page",
+        "label": "POOR RICHARD \u00b7 1753",
+        "timeline_in": 428.2557,
+        "timeline_out": 434.214,
+        "master_frames": [
+          10251,
+          10394
+        ],
+        "master_frame_count": 144,
+        "splice": false
+      },
+      {
+        "row": "07_giant_spark",
+        "label": "HOTTER THAN THE SUN",
+        "timeline_in": 442.964,
+        "timeline_out": 449.2557,
+        "master_frames": [
+          10604,
+          10755
+        ],
+        "master_frame_count": 152,
+        "splice": false
+      },
+      {
+        "row": "19_skyline_strike",
+        "label": "20+ STRIKES A YEAR",
+        "timeline_in": 512.5873,
+        "timeline_out": 519.4623,
+        "master_frames": [
+          12275,
+          12440
+        ],
+        "master_frame_count": 166,
+        "splice": false
+      }
+    ]
+  }
 }

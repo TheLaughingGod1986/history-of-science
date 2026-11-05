@@ -77,4 +77,54 @@ class PlannerTests(unittest.TestCase):
         for i in [2,5]:self.assertFalse(d['six_rows'][i]['recipe']['generation_proposal']['authorized'])
         self.assertNotIn('3,600',json.dumps(d))
 
+    def test_eight_item_amend_stays_unresolved_and_unbordered(self):
+        d = r.load_manifest()
+        self.assertEqual(d['execution'], 'REFUSED_UNTIL_J1881_REREVIEW')
+        self.assertEqual([x['timestamp'] for x in d['eight_rows']],
+                         ['00:20', '0:30', '0:51', '1:49', '2:20', '3:13', '3:31', '7:58'])
+        self.assertEqual([x['candidate_frames'] for x in d['eight_rows']],
+                         [[427, 544], [744, 839], [1124, 1227], [2506, 2665],
+                          [3260, 3343], [4500, 4659], [4977, 5077], [11358, 11492]])
+        self.assertFalse(d['eight_rows'][2]['same_source_as_1_49'])
+        self.assertEqual(d['eight_rows'][2]['hair_tube_source']['candidate_frames'], [2506, 2665])
+        self.assertFalse(d['eight_rows'][2]['recipe']['generation_proposal']['authorized'])
+        self.assertFalse(d['eight_rows'][3]['recipe']['generation_proposal']['authorized'])
+        self.assertFalse(d['eight_rows'][5]['recipe']['generation_proposal']['authorized'])
+        self.assertFalse(d['eight_rows'][7]['recipe']['generation_proposal']['authorized'])
+        flip = d['eight_rows'][4]['jar_flip_2_18']
+        self.assertEqual(flip['master_frame'], 3305)
+        self.assertTrue(flip['inside_replace_3260_3343'])
+        self.assertFalse(flip['inside_keep_3168_3259'])
+        self.assertFalse(flip['new_row'])
+        cap = d['caption_treatment']
+        self.assertEqual(cap['scope'], 'every_bottom_onscreen_text_over_moving_footage')
+        self.assertGreater(len(cap['labels']), 8)
+        self.assertTrue(all(lab['splice'] is False for lab in cap['labels']))
+        self.assertIn('J1755', '\n'.join(d['holds']))
+        self.assertTrue(all(row['status'].startswith('UNRESOLVED') for row in d['eight_rows']))
+
+    def test_clocks_map_on_stored_master_pts(self):
+        pts = json.loads(Path(r.__file__).with_name('J2163_MASTER_FRAME_PTS.json').read_text())
+        self.assertEqual(pts['master_sha256'], r.MASTER_SHA)
+        self.assertEqual(r.clock_frame(pts['frames'], pts['time_base'], 51), 1220)
+        self.assertEqual(r.clock_frame(pts['frames'], pts['time_base'], 193), 4621)
+        self.assertEqual(r.clock_frame(pts['frames'], pts['time_base'], 138), 3305)
+        self.assertEqual(r.clock_frame(pts['frames'], pts['time_base'], 479), 11469)
+        timeline = {'frames': [{'index': f[0], 'pts': f[1], 'duration': f[2], 'key_frame': f[3]} for f in pts['frames']]}
+        patches = r.build_plan(timeline, r.load_manifest()['eight_rows'])
+        self.assertEqual(len(patches), 8)
+        self.assertEqual(patches[2]['measured_pts_in'], timeline['frames'][1124]['pts'])
+        self.assertEqual(timeline['frames'][1220]['pts'], 626688)
+        self.assertEqual(patches[5]['measured_pts_in'], timeline['frames'][4500]['pts'])
+        self.assertEqual(timeline['frames'][4621]['pts'], 2371584)
+        self.assertEqual(timeline['frames'][3305]['pts'], 1695744)
+        self.assertTrue(all(p['pts_reconciled'] is False for p in patches))
+        self.assertNotIn('caption_treatment', patches[0])
+
+    def test_execution_names_the_j1881_rereview(self):
+        with self.assertRaises(r.PlanError) as caught:
+            r.execute_recipe()
+        self.assertIn('J1881', str(caught.exception))
+        self.assertIn('eight-item', str(caught.exception))
+
 if __name__=='__main__':unittest.main(verbosity=2)

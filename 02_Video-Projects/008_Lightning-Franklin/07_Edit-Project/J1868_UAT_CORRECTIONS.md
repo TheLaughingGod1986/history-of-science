@@ -78,3 +78,32 @@ See `J2163_REPAIR.md`, `J2163_CORRECTION_MANIFEST.json` and measured `J2163_MAST
   - `P2:02_salon_spark` (`1:49`): start frame `04_Generated-Clips/part02/refs/v03_flow_stills/02_salon_spark_t1.png` (`sha256: aefd6338...`), bounded `<= 3` takes (`30 cr` Fast cap or `300 cr` Quality cap), prompt & acceptance in `J1880_SOURCE_INVENTORY_v04.json`.
   - `P5:13_rods_spread` (`7:58`): start frame `04_Generated-Clips/part05/refs/v03_flow_stills/13_rods_spread_t1.png` (`sha256: 84a92bf6...`), bounded `<= 3` takes (`30 cr` Fast cap or `300 cr` Quality cap), prompt & acceptance in `J1880_SOURCE_INVENTORY_v04.json`.
   - Combined 2-plate cap: `60 cr` (Fast) or `600 cr` (Quality). No generation started in `J1880`.
+
+## Ben second v03 review (5 Nov 2026)
+
+See **[J1868_BEN_NOTES_2026-11-05.md](./J1868_BEN_NOTES_2026-11-05.md)** for the full record (Ben comment `6658371896`, Claude advisory `6658387533`). Ben's wording stays the record. No note is marked resolved.
+
+> [Ben] changes 008 v03:
+> 1. 0:51 still have hair flying out the tube, this needs rebuilt
+> 2. Also the bottom text needs a background colour it’s hard to read over a moving video
+> 3. 2:18 the jar flips upside down like magic
+> 4. 3:13 strange behaviour as paper seems to roll out the globe
+> 5. 7:59 the rods on the church’s seem to fall right
+
+Net scope before any splice: eight defect items = the original six 3 Nov notes (unchanged, still unresolved) plus new **0:51 hair rebuild** plus new **3:13 paper/globe**, with a film-wide bottom-caption background over every bottom on-screen text on moving footage. No production splice on the old six-only list.
+
+## J2217 amend (5 Nov 2026) — measured, not executed
+
+Active plan is `eight_rows` in `J2163_CORRECTION_MANIFEST.json` (`schema` `hos.uat_correction_plan.v3`). `six_rows` is unchanged historical evidence. `_build_rough_v13_recipe.py` plans those eight rows and refuses `--execute` until J1881 re-reviews. GBP0. No render, spend, upload, or YouTube change. h22/h35, J1297, and the J1755/PR401 publication rejection stay as they were.
+
+Master `cf1561c218bace7bc14ed3d625b0790a457027a90f392262f45ca7172723099b`, timebase `1/12288`, from `J2163_MASTER_FRAME_PTS.json`:
+
+| Clock | Master frame | PTS | Plate | Row |
+|---|---|---|---|---|
+| 0:51 | 1220 | 51.000 s | `07_hot_night_t1.mp4` frames 1124–1227 | New row. Not the same source as 1:49. |
+| 1:49 | 2506–2665 | 104.667–111.333 s | `02_salon_spark_t1.mp4` | Original hair/tube row, still unresolved. |
+| 2:18 | 3305 | 138.000 s | `07_foil_jar_t1.mp4` | Outside keep 3168–3259. Inside replace 3260–3343. Not a new row. |
+| 3:13 | 4621 | 193.000 s | `01_points_desk_t1.mp4` frames 4500–4659 | New row. Distinct from the 3:31 map. |
+| 7:59 | 11469 | 479.000 s | `13_rods_spread_t1.mp4` | Inside the existing 11358–11492 rods row. |
+
+0:51 stays on the hot-night plate because that is where the clock lands. The hair-and-tube picture is the salon plate already listed at 1:49. The row is not dropped and not retargeted. J1881 chooses which rebuild to scope. 27 rough-v12 bottom labels get an unbordered background panel. That inventory is not a splice list. Details: `J2217_AMEND.md`.
