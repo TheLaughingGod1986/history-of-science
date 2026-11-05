@@ -35,3 +35,29 @@ Intake acknowledgment through the existing checks API may mark the request handl
 ## Validation
 
 Record-only change. Repository check output is recorded in production-status.md.
+
+
+## Ben second v03 review (5 Nov 2026)
+
+See **[J1868_BEN_NOTES_2026-11-05.md](./J1868_BEN_NOTES_2026-11-05.md)** for the full record (Ben comment `6658371896`, Claude advisory `6658387533`).
+
+**Net scope before any splice:** eight defect items = the original six 3 Nov notes (unchanged, still unresolved) **plus** new **0:51 hair rebuild** **plus** new **3:13 paper/globe**, with **film-wide bottom-caption background** over every bottom on-screen text on moving footage. Ben’s original wording stays the record. No note marked resolved. No production splice on the old six-only list.
+
+| Time | Status vs 3 Nov | Verbatim cue |
+|---|---|---|
+| 00:20 | original; caption now film-wide | text on screen… needs maybe background colour |
+| 0:30 | original | flash the next scene |
+| **0:51** | **NEW** | still have hair flying out the tube, this needs rebuilt |
+| 1:49 | original | strange behaviour as hair flies out the tube |
+| **2:18** | ≈2:20 jar/foil | the jar flips upside down like magic |
+| 2:20 | original | strange behaviour with the silver foil |
+| **3:13** | **NEW** | strange behaviour as paper seems to roll out the globe |
+| 3:31 | original | the diagram/ map is not easy to understand |
+| 7:58/7:59 | original (same rods) | the rods… fall |
+
+Master stills + plate map: `~/_desk/008/ben_notes_2026-11-05/` (sha `cf1561c2…3099b`).
+- **0:51** exact still → **P1:07_hot_night** (`07_hot_night_t1.mp4`); no tube in frame — hair/tube picture is **P2:02_salon_spark** at 1:49; J2217 must resolve clock vs rebuild target while keeping Ben’s 0:51 wording.
+- **3:13** → **P3:01_points_desk** (`01_points_desk_t1.mp4`) NEW paper/globe row.
+- **2:18** → **P2:07_foil_jar**, **outside** keep 3168–3259 / inside replace 3260–3343.
+- **7:59** → **P5:13_rods_spread** (same as 7:58).
+J2217 amends recipe; J1881 held for eight-item re-review before production scope.
