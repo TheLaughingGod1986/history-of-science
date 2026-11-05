@@ -10,4 +10,4 @@ Hook FAIL: Scribe ends fall at 3.680 s. The scoped 0.150 s trim plus maximum 1.0
 
 Media preserved in the HOS checkout, 009/10_Shorts/vo_v02/hos_009_short_B_v03.{mp3,wav}; TAKE and VO_CHECK records accompany this report. All old v02 files preserved. 010 A retains J1004 Option A1. Downstream J2171 remains blocked on this hook; no film stage approved. Nothing uploaded or published.
 
-Validation: board regenerated; git diff --check clean. check_all.sh: script review 91.3 and episode gate pass; contract tests and package lint could not run because this clean worktree lacks vitest/config and zod. Full output: J0862_CHECKS.log.
+Validation: board regenerated; git diff --check clean. check_all.sh ALL CHECKS PASS after reusing installed HOS node_modules (untracked local symlink). Full output: J0862_CHECKS.md.
