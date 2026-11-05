@@ -1,0 +1,52 @@
+{
+  "start_utc": "2026-11-05T04:02:00Z",
+  "end_utc": "2026-11-05T04:11:08.826314+00:00",
+  "budget_seconds": 1200,
+  "active_search_ceiling_seconds": 780,
+  "closed": true,
+  "note": "Wall-clock upper bound charged conservatively; this pass is CLOSED. No fresh search budget on restart. Baseline J2169 clips not re-investigated; unchanged rows decoded only for honest complete mapping checks.",
+  "inputs": {
+    "B S02": {
+      "candidates": [
+        "07_priestley",
+        "09_injured_air",
+        "15_quill_vegetable"
+      ],
+      "results": [
+        "REJECT: brewery air collection, no candle",
+        "REJECT for burning-candle line: already dead wick/smoke",
+        "PROPOSE: actual burning candles, no mint; crop isolates jar, not quill/face. Reviewer checks multiple-candle continuity."
+      ]
+    },
+    "B S04 / alternative opening": {
+      "candidates": [
+        "12_mouse_mint",
+        "03_pot_jar_leaf"
+      ],
+      "results": [
+        "REJECT: mouse overlaps plant; no full-height crop removes unrelated animal honestly at <=2.35x",
+        "PROPOSE distinct mint opening1\u20133.24s plus terminal0\u20131s; frees original10_mint_jar forS04"
+      ]
+    },
+    "B S07": {
+      "candidates": [
+        "15_leaf_turns_sun",
+        "01_soil_to_sky"
+      ],
+      "results": [
+        "REJECT full portrait:720-high ->>=2.6667x",
+        "PROPOSE0\u20133.74s nativeplant shot; illustrative conclusion, not another experiment as proof"
+      ]
+    },
+    "C S05": {
+      "candidates": [
+        "10_only_green",
+        "03_pot_jar_leaf"
+      ],
+      "results": [
+        "REJECT full portrait:720-high; isolating jar further increases enlargement",
+        "PROPOSE native crop1120:0:608:1080,0\u20132.96s isolates leaf/bubbles without other jars"
+      ]
+    }
+  }
+}

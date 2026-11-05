@@ -1,0 +1,324 @@
+[
+  {
+    "path": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/raw/v01/03_pot_jar_leaf_t1.mp4",
+    "sha256": "b1aaba6dbb36659388751fe942c5a7b367d35a9e181c3599a5cf8f4e7b6c96cb",
+    "bytes": 7162540,
+    "duration": 8.0,
+    "width": 1920,
+    "height": 1080,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 1920,
+          "height": 1080,
+          "r_frame_rate": "24/1"
+        }
+      ],
+      "format": {
+        "duration": "8.000000"
+      }
+    }
+  },
+  {
+    "path": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part03/raw/v01/15_quill_vegetable_t1.mp4",
+    "sha256": "ccc237cf6edfb24e29d1e9031077786209e2fcf749bbbe33cb1ac040603a9f21",
+    "bytes": 3109038,
+    "duration": 6.0,
+    "width": 1920,
+    "height": 1080,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 1920,
+          "height": 1080,
+          "r_frame_rate": "24/1"
+        }
+      ],
+      "format": {
+        "duration": "6.000000"
+      }
+    }
+  },
+  {
+    "path": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part03/raw/v01/08_candles_out_t1.mp4",
+    "sha256": "765525feee477f84f6e2b42a255d941dcbf9ec9053c6716a94c9cd888dfcae44",
+    "bytes": 5790507,
+    "duration": 8.0,
+    "width": 1920,
+    "height": 1080,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 1920,
+          "height": 1080,
+          "r_frame_rate": "24/1"
+        }
+      ],
+      "format": {
+        "duration": "8.000000"
+      }
+    }
+  },
+  {
+    "path": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part03/raw/v01/10_mint_jar_t1.mp4",
+    "sha256": "309957a192218bc7d1ff66a896adce207e18331a3f66a1f4b7d7acef84e52adf",
+    "bytes": 4072176,
+    "duration": 8.0,
+    "width": 1920,
+    "height": 1080,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 1920,
+          "height": 1080,
+          "r_frame_rate": "24/1"
+        }
+      ],
+      "format": {
+        "duration": "8.000000"
+      }
+    }
+  },
+  {
+    "path": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part03/raw/v01/11_candle_tall_t1.mp4",
+    "sha256": "3fe88ccf83a1eb65bbf59ee8bf75b605f72e03dc7204c6b6cef84a6ffbd06d28",
+    "bytes": 6344422,
+    "duration": 8.0,
+    "width": 1920,
+    "height": 1080,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 1920,
+          "height": 1080,
+          "r_frame_rate": "24/1"
+        }
+      ],
+      "format": {
+        "duration": "8.000000"
+      }
+    }
+  },
+  {
+    "path": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/06_collect_blaze_t3.mp4",
+    "sha256": "69e790e4e14c530f98f07986c35d294e89b6c2d0905d3e513e611d3e4531dd41",
+    "bytes": 1301217,
+    "duration": 8.0,
+    "width": 1280,
+    "height": 720,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 1280,
+          "height": 720,
+          "r_frame_rate": "24/1"
+        }
+      ],
+      "format": {
+        "duration": "8.000000"
+      }
+    }
+  },
+  {
+    "path": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part03/raw/v01/01_soil_to_sky_t1.mp4",
+    "sha256": "d23f24d6dbd1f3283af322a9dd112a2b67357dfda9b9b2f844fcf79e33bd317f",
+    "bytes": 3738273,
+    "duration": 6.0,
+    "width": 1920,
+    "height": 1080,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 1920,
+          "height": 1080,
+          "r_frame_rate": "24/1"
+        }
+      ],
+      "format": {
+        "duration": "6.000000"
+      }
+    }
+  },
+  {
+    "path": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/05_bubbles_macro_t1.mp4",
+    "sha256": "0596f3b0287f79d36177a1e0c835c8184e001995c7ef0473e903568638851704",
+    "bytes": 1970375,
+    "duration": 8.0,
+    "width": 1280,
+    "height": 720,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 1280,
+          "height": 720,
+          "r_frame_rate": "24/1"
+        }
+      ],
+      "format": {
+        "duration": "8.000000"
+      }
+    }
+  },
+  {
+    "path": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/01_villa_t1.mp4",
+    "sha256": "a05dadf636ed97cbbd937004072b67ff9af3ded5df578d5c198d3387fe0c3b17",
+    "bytes": 27841790,
+    "duration": 8.0,
+    "width": 1920,
+    "height": 1080,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 1920,
+          "height": 1080,
+          "r_frame_rate": "24/1"
+        }
+      ],
+      "format": {
+        "duration": "8.000000"
+      }
+    }
+  },
+  {
+    "path": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/03_plunge_leaf_t1.mp4",
+    "sha256": "609a0da61f0d83cc3f68f6d6f233b938b657e585a0cccf8fe0b8dbc83989dadd",
+    "bytes": 3408533,
+    "duration": 6.0,
+    "width": 1920,
+    "height": 1080,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 1920,
+          "height": 1080,
+          "r_frame_rate": "24/1"
+        }
+      ],
+      "format": {
+        "duration": "6.000000"
+      }
+    }
+  },
+  {
+    "path": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/04_sunny_window_t1.mp4",
+    "sha256": "33612a9b8c551ed07744dd78a6ce5f33b63c71966bac11b983dce8deb226acf8",
+    "bytes": 6110189,
+    "duration": 6.0,
+    "width": 1920,
+    "height": 1080,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 1920,
+          "height": 1080,
+          "r_frame_rate": "24/1"
+        }
+      ],
+      "format": {
+        "duration": "6.000000"
+      }
+    }
+  },
+  {
+    "path": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part03/raw/v01/18_dark_window_t1.mp4",
+    "sha256": "5184300024fa1c88c8598a28ea1d22eaeb76ca0550c0b4fa3372c49cf7ef1134",
+    "bytes": 2076819,
+    "duration": 6.0,
+    "width": 1920,
+    "height": 1080,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 1920,
+          "height": 1080,
+          "r_frame_rate": "24/1"
+        }
+      ],
+      "format": {
+        "duration": "6.000000"
+      }
+    }
+  },
+  {
+    "path": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/12_shutters_open_t1.mp4",
+    "sha256": "fc339534bf90405afa369213590f9f9e674eedb7ac11b1f57b7569fbc7885a94",
+    "bytes": 2159780,
+    "duration": 8.0,
+    "width": 1280,
+    "height": 720,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 1280,
+          "height": 720,
+          "r_frame_rate": "24/1"
+        }
+      ],
+      "format": {
+        "duration": "8.000000"
+      }
+    }
+  },
+  {
+    "path": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/14_leaf_glow_t1.mp4",
+    "sha256": "43b24863448a6860acf0a7ae798af23d734a906da261e8bb4aacd95bb05eaf52",
+    "bytes": 1880931,
+    "duration": 8.0,
+    "width": 1280,
+    "height": 720,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 1280,
+          "height": 720,
+          "r_frame_rate": "24/1"
+        }
+      ],
+      "format": {
+        "duration": "8.000000"
+      }
+    }
+  }
+]

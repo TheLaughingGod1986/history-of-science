@@ -1,0 +1,110 @@
+{
+  "job": "J2181",
+  "status": "PARTIAL_PROPOSAL_NOT_BUILD_READY",
+  "gbp": 0,
+  "build_rule_sha256": "55c31dd7ef05f286032e7c505b749e2d66894aa428da9f881643804b72b98a96",
+  "canonical_vo_sha256": {
+    "Short_B": "0f1099262037b62ea2b2a003ce86e196458fa983e9ca97877afb5600e97c7479",
+    "Short_C": "5b5d84e560d51ed9ad6f9bf5588f458802620f48f008b9409c532f8a1ea4e269"
+  },
+  "unchanged": "All spoken lines and row times; original BUILD_RULE, exclusions, S7 planned-only and long/live stage unchanged.",
+  "rows": [
+    {
+      "short": "Short_B",
+      "row": "S01",
+      "candidate": "03_pot_jar_leaf",
+      "crop_native_xywh": [
+        700,
+        190,
+        460,
+        818
+      ],
+      "source_in": 1.0,
+      "source_sha256": "b1aaba6dbb36659388751fe942c5a7b367d35a9e181c3599a5cf8f4e7b6c96cb"
+    },
+    {
+      "short": "Short_B",
+      "row": "S02",
+      "candidate": "15_quill_vegetable",
+      "crop_native_xywh": [
+        0,
+        0,
+        608,
+        1080
+      ],
+      "source_in": 0.0,
+      "source_sha256": "ccc237cf6edfb24e29d1e9031077786209e2fcf749bbbe33cb1ac040603a9f21"
+    },
+    {
+      "short": "Short_B",
+      "row": "S07",
+      "candidate": "01_soil_to_sky",
+      "crop_native_xywh": [
+        600,
+        0,
+        608,
+        1080
+      ],
+      "source_in": 0.0,
+      "source_sha256": "d23f24d6dbd1f3283af322a9dd112a2b67357dfda9b9b2f844fcf79e33bd317f"
+    },
+    {
+      "short": "Short_B",
+      "row": "loop_tail",
+      "candidate": "03_pot_jar_leaf",
+      "crop_native_xywh": [
+        700,
+        190,
+        460,
+        818
+      ],
+      "source_in": 0.0,
+      "source_sha256": "b1aaba6dbb36659388751fe942c5a7b367d35a9e181c3599a5cf8f4e7b6c96cb"
+    },
+    {
+      "short": "Short_C",
+      "row": "S05",
+      "candidate": "03_pot_jar_leaf",
+      "crop_native_xywh": [
+        1120,
+        0,
+        608,
+        1080
+      ],
+      "source_in": 0.0,
+      "source_sha256": "b1aaba6dbb36659388751fe942c5a7b367d35a9e181c3599a5cf8f4e7b6c96cb"
+    }
+  ],
+  "body_assignment": {
+    "Short_B_S04": "Original 10_mint_jar_t1 now unique at S04; S01/loop change to pot_jar_leaf",
+    "Short_B_S05": "11_candle_tall_t1 now unique at S05"
+  },
+  "blockers": [
+    {
+      "short": "Short_B",
+      "row": "S06",
+      "reason": "Native 720-high source requires >=2.6667x to fill 1920-high portrait, above2.35x"
+    },
+    {
+      "short": "Short_C",
+      "row": "S01",
+      "reason": "Native 720-high source requires >=2.6667x to fill 1920-high portrait, above2.35x"
+    },
+    {
+      "short": "Short_C",
+      "row": "S07",
+      "reason": "Native 720-high source requires >=2.6667x to fill 1920-high portrait, above2.35x"
+    },
+    {
+      "short": "Short_C",
+      "row": "S08",
+      "reason": "Native 720-high source requires >=2.6667x to fill 1920-high portrait, above2.35x"
+    },
+    {
+      "short": "Short_C",
+      "row": "loop_tail",
+      "reason": "Native 720-high source requires >=2.6667x to fill 1920-high portrait, above2.35x"
+    }
+  ],
+  "system_dependency": "J2180 FIX on PR512 be2c980ffa; J2179 corrections and J2182 re-review still required. No reopen of J2169."
+}

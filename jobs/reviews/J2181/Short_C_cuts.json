@@ -1,0 +1,317 @@
+[
+  {
+    "row": "S01",
+    "timeline_in": 0.0,
+    "timeline_out": 2.56,
+    "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/05_bubbles_macro_t1.mp4",
+    "upscale": 2.6732673267326734,
+    "framing": {
+      "offset": 1.0,
+      "crop_native_xywh": [
+        438,
+        0,
+        404,
+        720
+      ],
+      "output": [
+        1080,
+        1920
+      ],
+      "scale": "lanczos",
+      "setsar": 1,
+      "speed": 1.0
+    },
+    "video": true,
+    "spoken": "Leaves only make oxygen in the light.",
+    "source_sha256": "0596f3b0287f79d36177a1e0c835c8184e001995c7ef0473e903568638851704",
+    "source_in": 1.0,
+    "source_out": 3.56,
+    "source_duration": 8.0,
+    "source_dimensions": [
+      1280,
+      720
+    ],
+    "role": "body",
+    "qualification": "inherited_requires_render_review"
+  },
+  {
+    "row": "S02",
+    "timeline_in": 2.56,
+    "timeline_out": 5.68,
+    "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/01_villa_t1.mp4",
+    "upscale": 1.7777777777777777,
+    "framing": {
+      "offset": 0.0,
+      "crop_native_xywh": [
+        656,
+        0,
+        608,
+        1080
+      ],
+      "output": [
+        1080,
+        1920
+      ],
+      "scale": "lanczos",
+      "setsar": 1,
+      "speed": 1.0
+    },
+    "video": true,
+    "spoken": "In 1779, a Dutch doctor",
+    "source_sha256": "a05dadf636ed97cbbd937004072b67ff9af3ded5df578d5c198d3387fe0c3b17",
+    "source_in": 0.0,
+    "source_out": 3.12,
+    "source_duration": 8.0,
+    "source_dimensions": [
+      1920,
+      1080
+    ],
+    "role": "body",
+    "qualification": "inherited_requires_render_review"
+  },
+  {
+    "row": "S03",
+    "timeline_in": 5.68,
+    "timeline_out": 8.8,
+    "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/03_plunge_leaf_t1.mp4",
+    "upscale": 1.7777777777777777,
+    "framing": {
+      "offset": 0.0,
+      "crop_native_xywh": [
+        656,
+        0,
+        608,
+        1080
+      ],
+      "output": [
+        1080,
+        1920
+      ],
+      "scale": "lanczos",
+      "setsar": 1,
+      "speed": 1.0
+    },
+    "video": true,
+    "spoken": "called Jan Ingenhousz put fresh leaves in",
+    "source_sha256": "609a0da61f0d83cc3f68f6d6f233b938b657e585a0cccf8fe0b8dbc83989dadd",
+    "source_in": 0.0,
+    "source_out": 3.12,
+    "source_duration": 6.0,
+    "source_dimensions": [
+      1920,
+      1080
+    ],
+    "role": "body",
+    "qualification": "inherited_requires_render_review"
+  },
+  {
+    "row": "S04",
+    "timeline_in": 8.8,
+    "timeline_out": 12.0,
+    "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/04_sunny_window_t1.mp4",
+    "upscale": 1.7777777777777777,
+    "framing": {
+      "offset": 0.0,
+      "crop_native_xywh": [
+        656,
+        0,
+        608,
+        1080
+      ],
+      "output": [
+        1080,
+        1920
+      ],
+      "scale": "lanczos",
+      "setsar": 1,
+      "speed": 1.0
+    },
+    "video": true,
+    "spoken": "jars of water by a sunny window. Tiny",
+    "source_sha256": "33612a9b8c551ed07744dd78a6ce5f33b63c71966bac11b983dce8deb226acf8",
+    "source_in": 0.0,
+    "source_out": 3.2,
+    "source_duration": 6.0,
+    "source_dimensions": [
+      1920,
+      1080
+    ],
+    "role": "body",
+    "qualification": "inherited_requires_render_review"
+  },
+  {
+    "row": "S05",
+    "timeline_in": 12.0,
+    "timeline_out": 14.96,
+    "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/raw/v01/03_pot_jar_leaf_t1.mp4",
+    "upscale": 1.7777777777777777,
+    "framing": {
+      "offset": 0.0,
+      "crop_native_xywh": [
+        1120,
+        0,
+        608,
+        1080
+      ],
+      "output": [
+        1080,
+        1920
+      ],
+      "scale": "lanczos",
+      "setsar": 1,
+      "speed": 1.0
+    },
+    "video": true,
+    "spoken": "silver bubbles rose from the green leaves.",
+    "source_sha256": "b1aaba6dbb36659388751fe942c5a7b367d35a9e181c3599a5cf8f4e7b6c96cb",
+    "source_in": 0.0,
+    "source_out": 2.96,
+    "source_duration": 8.0,
+    "source_dimensions": [
+      1920,
+      1080
+    ],
+    "role": "body",
+    "qualification": "proposal_requires_review"
+  },
+  {
+    "row": "S06",
+    "timeline_in": 14.96,
+    "timeline_out": 18.48,
+    "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part03/raw/v01/18_dark_window_t1.mp4",
+    "upscale": 1.7777777777777777,
+    "framing": {
+      "offset": 0.0,
+      "crop_native_xywh": [
+        656,
+        0,
+        608,
+        1080
+      ],
+      "output": [
+        1080,
+        1920
+      ],
+      "scale": "lanczos",
+      "setsar": 1,
+      "speed": 1.0
+    },
+    "video": true,
+    "spoken": "Move the jar into the shade, and the bubbles stopped.",
+    "source_sha256": "5184300024fa1c88c8598a28ea1d22eaeb76ca0550c0b4fa3372c49cf7ef1134",
+    "source_in": 0.0,
+    "source_out": 3.52,
+    "source_duration": 6.0,
+    "source_dimensions": [
+      1920,
+      1080
+    ],
+    "role": "body",
+    "qualification": "inherited_requires_render_review"
+  },
+  {
+    "row": "S07",
+    "timeline_in": 18.48,
+    "timeline_out": 21.28,
+    "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/12_shutters_open_t1.mp4",
+    "upscale": 2.6732673267326734,
+    "framing": {
+      "offset": 0.0,
+      "crop_native_xywh": [
+        438,
+        0,
+        404,
+        720
+      ],
+      "output": [
+        1080,
+        1920
+      ],
+      "scale": "lanczos",
+      "setsar": 1,
+      "speed": 1.0
+    },
+    "video": true,
+    "spoken": "Back into the sun, and they started again.",
+    "source_sha256": "fc339534bf90405afa369213590f9f9e674eedb7ac11b1f57b7569fbc7885a94",
+    "source_in": 0.0,
+    "source_out": 2.8,
+    "source_duration": 8.0,
+    "source_dimensions": [
+      1280,
+      720
+    ],
+    "role": "body",
+    "qualification": "inherited_requires_render_review"
+  },
+  {
+    "row": "S08",
+    "timeline_in": 21.28,
+    "timeline_out": 24.16,
+    "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/14_leaf_glow_t1.mp4",
+    "upscale": 2.6732673267326734,
+    "framing": {
+      "offset": 0.0,
+      "crop_native_xywh": [
+        438,
+        0,
+        404,
+        720
+      ],
+      "output": [
+        1080,
+        1920
+      ],
+      "scale": "lanczos",
+      "setsar": 1,
+      "speed": 1.0
+    },
+    "video": true,
+    "spoken": "Plants run on sunlight.",
+    "source_sha256": "43b24863448a6860acf0a7ae798af23d734a906da261e8bb4aacd95bb05eaf52",
+    "source_in": 0.0,
+    "source_out": 2.88,
+    "source_duration": 8.0,
+    "source_dimensions": [
+      1280,
+      720
+    ],
+    "role": "body",
+    "qualification": "inherited_requires_render_review"
+  },
+  {
+    "row": "loop_tail",
+    "timeline_in": 24.16,
+    "timeline_out": 25.16,
+    "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/05_bubbles_macro_t1.mp4",
+    "upscale": 2.6732673267326734,
+    "framing": {
+      "offset": 0.0,
+      "crop_native_xywh": [
+        438,
+        0,
+        404,
+        720
+      ],
+      "output": [
+        1080,
+        1920
+      ],
+      "scale": "lanczos",
+      "setsar": 1,
+      "speed": 1.0
+    },
+    "video": true,
+    "spoken": "",
+    "source_sha256": "0596f3b0287f79d36177a1e0c835c8184e001995c7ef0473e903568638851704",
+    "source_in": 0.0,
+    "source_out": 1.0,
+    "source_duration": 8.0,
+    "source_dimensions": [
+      1280,
+      720
+    ],
+    "role": "loop_tail",
+    "qualification": "inherited_requires_render_review"
+  }
+]
