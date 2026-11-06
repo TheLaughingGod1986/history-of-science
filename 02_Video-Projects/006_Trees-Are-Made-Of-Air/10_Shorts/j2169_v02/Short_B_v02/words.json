@@ -1,0 +1,291 @@
+{
+  "vo_sha256": "0f1099262037b62ea2b2a003ce86e196458fa983e9ca97877afb5600e97c7479",
+  "words": [
+    {
+      "word": "A",
+      "start": 0.0,
+      "end": 0.24
+    },
+    {
+      "word": "sprig",
+      "start": 0.24,
+      "end": 0.5
+    },
+    {
+      "word": "of",
+      "start": 0.5,
+      "end": 0.7
+    },
+    {
+      "word": "mint",
+      "start": 0.7,
+      "end": 1.12
+    },
+    {
+      "word": "repaired",
+      "start": 1.12,
+      "end": 1.64
+    },
+    {
+      "word": "the",
+      "start": 1.64,
+      "end": 1.9
+    },
+    {
+      "word": "air.",
+      "start": 1.9,
+      "end": 2.24
+    },
+    {
+      "word": "Joseph",
+      "start": 2.98,
+      "end": 3.22
+    },
+    {
+      "word": "Priestley",
+      "start": 3.22,
+      "end": 3.96
+    },
+    {
+      "word": "burned",
+      "start": 3.96,
+      "end": 4.34
+    },
+    {
+      "word": "a",
+      "start": 4.34,
+      "end": 4.56
+    },
+    {
+      "word": "candle",
+      "start": 4.56,
+      "end": 4.9
+    },
+    {
+      "word": "in",
+      "start": 4.9,
+      "end": 5.12
+    },
+    {
+      "word": "a",
+      "start": 5.12,
+      "end": 5.28
+    },
+    {
+      "word": "sealed",
+      "start": 5.28,
+      "end": 5.62
+    },
+    {
+      "word": "jar",
+      "start": 5.62,
+      "end": 6.16
+    },
+    {
+      "word": "until",
+      "start": 6.16,
+      "end": 6.74
+    },
+    {
+      "word": "the",
+      "start": 6.74,
+      "end": 6.92
+    },
+    {
+      "word": "flame",
+      "start": 6.92,
+      "end": 7.22
+    },
+    {
+      "word": "died,",
+      "start": 7.22,
+      "end": 7.62
+    },
+    {
+      "word": "and",
+      "start": 7.62,
+      "end": 8.24
+    },
+    {
+      "word": "no",
+      "start": 8.24,
+      "end": 8.52
+    },
+    {
+      "word": "new",
+      "start": 8.52,
+      "end": 8.8
+    },
+    {
+      "word": "flame",
+      "start": 8.8,
+      "end": 9.14
+    },
+    {
+      "word": "would",
+      "start": 9.14,
+      "end": 9.4
+    },
+    {
+      "word": "light.",
+      "start": 9.4,
+      "end": 9.78
+    },
+    {
+      "word": "He",
+      "start": 10.8,
+      "end": 10.9
+    },
+    {
+      "word": "slid",
+      "start": 10.9,
+      "end": 11.14
+    },
+    {
+      "word": "in",
+      "start": 11.14,
+      "end": 11.36
+    },
+    {
+      "word": "a",
+      "start": 11.36,
+      "end": 11.46
+    },
+    {
+      "word": "sprig",
+      "start": 11.46,
+      "end": 11.68
+    },
+    {
+      "word": "of",
+      "start": 11.68,
+      "end": 11.88
+    },
+    {
+      "word": "mint",
+      "start": 11.88,
+      "end": 12.22
+    },
+    {
+      "word": "and",
+      "start": 12.22,
+      "end": 12.54
+    },
+    {
+      "word": "waited.",
+      "start": 12.54,
+      "end": 13.02
+    },
+    {
+      "word": "Ten",
+      "start": 13.96,
+      "end": 14.14
+    },
+    {
+      "word": "days",
+      "start": 14.14,
+      "end": 14.42
+    },
+    {
+      "word": "later,",
+      "start": 14.42,
+      "end": 14.98
+    },
+    {
+      "word": "a",
+      "start": 14.98,
+      "end": 15.5
+    },
+    {
+      "word": "candle",
+      "start": 15.5,
+      "end": 15.88
+    },
+    {
+      "word": "burned",
+      "start": 15.88,
+      "end": 16.3
+    },
+    {
+      "word": "bright",
+      "start": 16.3,
+      "end": 16.76
+    },
+    {
+      "word": "in",
+      "start": 16.76,
+      "end": 17.24
+    },
+    {
+      "word": "that",
+      "start": 17.24,
+      "end": 17.42
+    },
+    {
+      "word": "same",
+      "start": 17.42,
+      "end": 17.8
+    },
+    {
+      "word": "air.",
+      "start": 17.8,
+      "end": 18.32
+    },
+    {
+      "word": "Somehow,",
+      "start": 18.32,
+      "end": 19.46
+    },
+    {
+      "word": "the",
+      "start": 19.46,
+      "end": 20.12
+    },
+    {
+      "word": "little",
+      "start": 20.12,
+      "end": 20.38
+    },
+    {
+      "word": "green",
+      "start": 20.38,
+      "end": 20.66
+    },
+    {
+      "word": "plant",
+      "start": 20.66,
+      "end": 21.16
+    },
+    {
+      "word": "had",
+      "start": 21.16,
+      "end": 21.46
+    },
+    {
+      "word": "made",
+      "start": 21.46,
+      "end": 21.7
+    },
+    {
+      "word": "the",
+      "start": 21.7,
+      "end": 21.88
+    },
+    {
+      "word": "air",
+      "start": 21.88,
+      "end": 22.24
+    },
+    {
+      "word": "good",
+      "start": 22.24,
+      "end": 22.62
+    },
+    {
+      "word": "again.",
+      "start": 22.62,
+      "end": 23.08
+    }
+  ],
+  "note": "Word ends taken from the locked alignment. No spoken line was rewritten."
+}

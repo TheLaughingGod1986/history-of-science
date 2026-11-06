@@ -1,0 +1,202 @@
+{
+  "rule": {
+    "low_detail": "FAIL: luma std < 13.44 and edge density < 0.0259 (absolute floor); WARN: luma std < 18.0 or edge density < film p5",
+    "split_panel": "full-height/width seam or gutter",
+    "split_panel_gutter": "gutter counts only with edge density >= 0.01 in the 10% band on both sides",
+    "near_black": "mean < 28.0 or p95 < 50.0",
+    "noise": "grain std > 6 over structure std < 12, and the 8x-downscaled frame under the low-detail floor (std < 13.44 and edge density < 0.0259)",
+    "jitter": "centre-patch phase correlation: reversal against trend or > 0.35 px off trend"
+  },
+  "low_detail_floor": {
+    "std": 13.44,
+    "edge": 0.0259,
+    "calibration": {
+      "video": "025_MarsRobot_full_rough_v02d.mp4",
+      "factor": 1.2,
+      "frames": [
+        {
+          "source": "PIA22223.jpg",
+          "t": 201.0,
+          "std": 12.1,
+          "edge": 0.0223
+        },
+        {
+          "source": "PIA22223.jpg",
+          "t": 216.3,
+          "std": 11.2,
+          "edge": 0.0216
+        },
+        {
+          "source": "PIA22929.jpg",
+          "t": 297.4,
+          "std": 26.54,
+          "edge": 0.5735
+        }
+      ]
+    }
+  },
+  "video": "/Users/benjaminoats/_desk/renders/J2169/Short_B_v02/hos006_short_b_v02.mp4",
+  "edge_floor": 0.0334,
+  "verdict": "PASS",
+  "failed": [],
+  "warn": [
+    {
+      "row": "S07",
+      "cut": 6,
+      "t": 21.35,
+      "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part03/raw/v01/01_soil_to_sky_t1.mp4",
+      "why": [
+        "low detail: edge density 0.0305 < film p5 0.0334"
+      ]
+    }
+  ],
+  "reviewed_ok": [],
+  "rows": [
+    {
+      "cut": 0,
+      "row": "S01",
+      "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/raw/v01/03_pot_jar_leaf_t1.mp4",
+      "t": 1.12,
+      "std": 43.44,
+      "mean": 114.8,
+      "p95": 197.0,
+      "edge": 0.071,
+      "hf": 13.95,
+      "lf": 35.93,
+      "std8": 38.03,
+      "edge8": 0.2345,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 1,
+      "row": "S02",
+      "source": "/Users/benjaminoats/_desk/renders/J2169/norm_1920/short_b_s02_t01_1920.mp4",
+      "t": 3.94,
+      "std": 58.24,
+      "mean": 114.28,
+      "p95": 225.0,
+      "edge": 0.0642,
+      "hf": 9.87,
+      "lf": 53.32,
+      "std8": 55.49,
+      "edge8": 0.3606,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 2,
+      "row": "S03",
+      "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part03/raw/v01/09_injured_air_t1.mp4",
+      "t": 7.52,
+      "std": 67.19,
+      "mean": 120.52,
+      "p95": 236.0,
+      "edge": 0.0459,
+      "hf": 8.26,
+      "lf": 64.59,
+      "std8": 65.31,
+      "edge8": 0.208,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 3,
+      "row": "S04",
+      "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part03/raw/v01/10_mint_jar_t1.mp4",
+      "t": 11.23,
+      "std": 62.04,
+      "mean": 90.68,
+      "p95": 233.0,
+      "edge": 0.0841,
+      "hf": 12.96,
+      "lf": 57.5,
+      "std8": 58.77,
+      "edge8": 0.2433,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 4,
+      "row": "S05",
+      "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part03/raw/v01/11_candle_tall_t1.mp4",
+      "t": 14.67,
+      "std": 53.07,
+      "mean": 89.63,
+      "p95": 228.0,
+      "edge": 0.0577,
+      "hf": 8.65,
+      "lf": 49.62,
+      "std8": 50.82,
+      "edge8": 0.2301,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 5,
+      "row": "S06",
+      "source": "/Users/benjaminoats/_desk/renders/J2169/norm_1920/short_b_s06_t01_1920.mp4",
+      "t": 17.88,
+      "std": 55.27,
+      "mean": 111.17,
+      "p95": 219.0,
+      "edge": 0.1018,
+      "hf": 9.9,
+      "lf": 48.65,
+      "std8": 51.5,
+      "edge8": 0.5117,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 6,
+      "row": "S07",
+      "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part03/raw/v01/01_soil_to_sky_t1.mp4",
+      "t": 21.35,
+      "std": 61.01,
+      "mean": 109.27,
+      "p95": 211.0,
+      "edge": 0.0305,
+      "hf": 7.5,
+      "lf": 57.46,
+      "std8": 59.3,
+      "edge8": 0.2331,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0305 < film p5 0.0334"
+      ]
+    },
+    {
+      "cut": 7,
+      "row": "loop_tail",
+      "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/raw/v01/03_pot_jar_leaf_t1.mp4",
+      "t": 23.75,
+      "std": 37.15,
+      "mean": 108.45,
+      "p95": 185.0,
+      "edge": 0.0387,
+      "hf": 6.14,
+      "lf": 34.34,
+      "std8": 35.42,
+      "edge8": 0.1683,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    }
+  ]
+}

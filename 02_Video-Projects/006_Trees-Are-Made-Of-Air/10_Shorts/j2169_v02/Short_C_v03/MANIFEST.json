@@ -1,0 +1,20 @@
+{
+  "job": "J2169",
+  "short": "C",
+  "version": "v03",
+  "master": "/Users/benjaminoats/_desk/renders/J2169/Short_C_v03/hos006_short_c_v03.mp4",
+  "sha256": "e1e3ff0ce3b5622b4a43d010a0df827bcd34e25ccd76a87338b286b0632c40c5",
+  "picture": "/Users/benjaminoats/_desk/renders/J2169/Short_C_v03/picture.mp4",
+  "picture_sha256": "7f88fec1831fde6d687482b0bf8d997f84aa7a07c38e982740e52d3f0adf62bb",
+  "duration_s": 25.166667,
+  "frames": 604,
+  "size": [
+    1080,
+    1920
+  ],
+  "vo_sha256": "5b5d84e560d51ed9ad6f9bf5588f458802620f48f008b9409c532f8a1ea4e269",
+  "long": "VbPubYd6Fbs",
+  "watched": false,
+  "heard": false,
+  "approved": false
+}

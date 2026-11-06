@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "format": "short",
+  "cut": 8,
+  "duration": 25.166666666666668,
+  "last_vo_word": 24.16,
+  "prescription": {
+    "path": "/Users/benjaminoats/_desk/renders/J2169/RECIPE_v02.md",
+    "sha256": "b9195a0594a5df5c1065ef8f6f189145afc86e3c5a33746c187e599d2a24b7d5"
+  },
+  "words": {
+    "path": "/Users/benjaminoats/_desk/renders/J2169/Short_C_v03/words.json",
+    "sha256": "816d6a8c36178ace8bb613f5605601c8595ea4dfd08c2e9062550609a9a31d75"
+  },
+  "vo": {
+    "path": "/Users/benjaminoats/_desk/006/shorts_vo_20261004/vo/t3_bubbles_sunlight_vo_v01.mp3",
+    "sha256": "5b5d84e560d51ed9ad6f9bf5588f458802620f48f008b9409c532f8a1ea4e269"
+  },
+  "source": {
+    "path": "/Users/benjaminoats/_desk/renders/J2169/norm_1920/short_c_s01_t01_1920.mp4",
+    "sha256": "610c323b550394a72f48cfe4ae04de8f7cb42e2dacf619458263035e466704e0"
+  },
+  "source_in": 0.0,
+  "source_out": 1.0,
+  "framing": {
+    "crop": [
+      656,
+      0,
+      608,
+      1080
+    ],
+    "output": [
+      1080,
+      1920
+    ]
+  }
+}

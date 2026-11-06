@@ -1,0 +1,30 @@
+[
+  {
+    "file": "/Users/benjaminoats/_desk/renders/J2169/Short_B_v02/hos006_short_b_v02.mp4",
+    "air_date": "2026-11-18",
+    "fails": [],
+    "warns": [],
+    "stayed_fails": [],
+    "duration_s": 24.25,
+    "audio": {
+      "stream": true,
+      "mean_db": -17.3,
+      "open_mean_db": -16.3
+    },
+    "vo_src": "/Users/benjaminoats/_desk/006/shorts_vo_20261004/vo/t2_mint_fixed_vo_v03b.mp3",
+    "vo_onset_s": 0.047,
+    "last_word_end_s": 23.2,
+    "tail_gap_s": 1.05,
+    "level": {
+      "lufs": -14.5,
+      "true_peak_dbtp": -1.9
+    },
+    "motion_0_1s": 10.36,
+    "frame0_diff_0_1_5s": 2.15,
+    "first_cut_s": 2.25,
+    "dhash": "20000a978eb30393",
+    "near_opens": [],
+    "contact_sheet": "/var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos006_short_b_v02_open_sheet.jpg",
+    "verdict": "PASS"
+  }
+]
