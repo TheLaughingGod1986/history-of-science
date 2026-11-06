@@ -1,0 +1,411 @@
+{
+  "verdict": "PASS",
+  "terminal_loop": {
+    "status": "rendered_correspondence",
+    "eligible_cut": 8,
+    "errors": [],
+    "evidence": {
+      "source": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/19_skyline_strike_t1.mp4",
+      "sha256": "06caaeb6b7394ad590547b2f3f09db2dbe3a4a0354977591d36fb72769065026",
+      "source_in": 1.0,
+      "source_out": 2.0,
+      "source_duration": 8.0,
+      "framing": {
+        "crop": [
+          438,
+          0,
+          405,
+          720
+        ],
+        "output": [
+          936,
+          1664
+        ]
+      },
+      "last_vo_word": 21.58,
+      "words_sha256": "b176680e210a9e48b73fab29c0024df1d1570beea035fd33029561d838fae0a8",
+      "prescription_sha256": "b3a67968326680f338b4ee6899b09412f2be94d9d496fea42fce5544e2a95445",
+      "source_sample_sha256": [
+        "696524f9a282ef8e6e3721d2ced0ed385aefb5a8540fe284a8e69d4228da1dc7",
+        "e79b52fc804a1026c6ef547ad5fbbf87b5d14f6ce9f0db617f79fe4f6deaa548"
+      ],
+      "rendered_frame_mae": [
+        2.066,
+        0.1972,
+        2.0971,
+        0.526
+      ],
+      "render_sha256": "9f25a16de5fc7d454be7adbc0e301614c7b060cd28b10cd076bcd2b4a6642161"
+    },
+    "pending": [
+      "human moving/phone and audio review; samples do not establish seamless motion"
+    ]
+  },
+  "video": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/008_Lightning-Franklin/10_Shorts/hos_008_short_C_v03.mp4",
+  "rules": {
+    "kind_fail": "computer[- ]?(reconstruction|model|generated|simulation|graphic)|\\bsimulation\\b|\\bdiagram|\\bchart\\b|\\bgraph\\b|\\bschematic|\\bannotated\\b|\\blabell?ed\\b|\\bscreen ?shot|\\bwireframe|\\bcad\\b|\\binfographic",
+    "kind_warn": "\\bartist|\\billustration|\\bconcept\\b|\\brender|\\banimation\\b|\\bmap\\b|\\bmosaic\\b|\\bcomposite\\b",
+    "upscale_fail": 2.35,
+    "upscale_warn": 2.0,
+    "max_reuse": 2,
+    "max_stretches": 5,
+    "same_stretch": 10.0,
+    "pixels": "scripts/polish_gate.py"
+  },
+  "failed": [],
+  "warn": [
+    {
+      "cut": 0,
+      "row": "S01",
+      "source": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/19_skyline_strike_t1.mp4",
+      "title": "Flow plate 19_skyline_strike_t1.mp4 (colonial tower struck on rooftop lightning rod at night)",
+      "t": 1.42,
+      "at": "0:01",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.31x, may look soft"
+      ],
+      "offset": 1.0
+    },
+    {
+      "cut": 1,
+      "row": "S02",
+      "source": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/01_house_rod_t1.mp4",
+      "title": "Flow plate 01_house_rod_t1.mp4 (Franklin brick house with pointed iron lightning rod)",
+      "t": 4.27,
+      "at": "0:04",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.31x, may look soft"
+      ],
+      "offset": 0.8
+    },
+    {
+      "cut": 2,
+      "row": "S03",
+      "source": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/07_giant_spark_t1.mp4",
+      "title": "Flow plate 07_giant_spark_t1.mp4 (branching lightning bolts over colonial town)",
+      "t": 7.17,
+      "at": "0:07",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.31x, may look soft"
+      ],
+      "offset": 0.6
+    },
+    {
+      "cut": 3,
+      "row": "S04",
+      "source": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part01/raw/v01/12_steeple_fire_t1.mp4",
+      "title": "Flow plate 12_steeple_fire_t1.mp4 (wooden church steeple burning in storm)",
+      "t": 10.08,
+      "at": "0:10",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.31x, may look soft"
+      ],
+      "offset": 0.8
+    },
+    {
+      "cut": 4,
+      "row": "S05",
+      "source": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/18_rod_closeup_t1.mp4",
+      "title": "Flow plate 18_rod_closeup_t1.mp4 (pointed iron lightning rod closeup 0.0-2.8s)",
+      "t": 12.94,
+      "at": "0:13",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.31x, may look soft"
+      ],
+      "offset": 0.0
+    },
+    {
+      "cut": 5,
+      "row": "S06",
+      "source": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/06_rod_fitting_t1.mp4",
+      "title": "Flow plate 06_rod_fitting_t1.mp4 (workman fastening conductor down brick wall 1.5-4.3s)",
+      "t": 15.73,
+      "at": "0:16",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.31x, may look soft"
+      ],
+      "offset": 1.5
+    },
+    {
+      "cut": 6,
+      "row": "S07",
+      "source": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/06_rod_fitting_c1_t1.mp4",
+      "title": "Flow plate 06_rod_fitting_c1_t1.mp4 (workman driving grounding rod into damp earth 1.5-4.2s)",
+      "t": 18.48,
+      "at": "0:18",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.31x, may look soft"
+      ],
+      "offset": 1.5
+    },
+    {
+      "cut": 7,
+      "row": "S08",
+      "source": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/14_safe_towers_t1.mp4",
+      "title": "Flow plate 14_safe_towers_t1.mp4 (church steeple and town towers safe under storm clouds 4.2-6.1s)",
+      "t": 20.77,
+      "at": "0:21",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.31x, may look soft",
+        "low detail: edge density 0.0253 < film p5 0.0258"
+      ],
+      "offset": 4.2
+    },
+    {
+      "cut": 8,
+      "row": "loop_tail",
+      "source": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/19_skyline_strike_t1.mp4",
+      "title": "Flow plate 19_skyline_strike_t1.mp4 (colonial tower struck on rooftop lightning rod at night)",
+      "t": 22.21,
+      "at": "0:22",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.31x, may look soft",
+        "terminal loop: prescribed return classified; human moving/phone and audio review; samples do not establish seamless motion"
+      ],
+      "offset": 1.0,
+      "terminal_loop": {
+        "status": "rendered_correspondence",
+        "eligible_cut": 8,
+        "errors": [],
+        "evidence": {
+          "source": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/19_skyline_strike_t1.mp4",
+          "sha256": "06caaeb6b7394ad590547b2f3f09db2dbe3a4a0354977591d36fb72769065026",
+          "source_in": 1.0,
+          "source_out": 2.0,
+          "source_duration": 8.0,
+          "framing": {
+            "crop": [
+              438,
+              0,
+              405,
+              720
+            ],
+            "output": [
+              936,
+              1664
+            ]
+          },
+          "last_vo_word": 21.58,
+          "words_sha256": "b176680e210a9e48b73fab29c0024df1d1570beea035fd33029561d838fae0a8",
+          "prescription_sha256": "b3a67968326680f338b4ee6899b09412f2be94d9d496fea42fce5544e2a95445",
+          "source_sample_sha256": [
+            "696524f9a282ef8e6e3721d2ced0ed385aefb5a8540fe284a8e69d4228da1dc7",
+            "e79b52fc804a1026c6ef547ad5fbbf87b5d14f6ce9f0db617f79fe4f6deaa548"
+          ],
+          "rendered_frame_mae": [
+            2.066,
+            0.1972,
+            2.0971,
+            0.526
+          ],
+          "render_sha256": "9f25a16de5fc7d454be7adbc0e301614c7b060cd28b10cd076bcd2b4a6642161"
+        },
+        "pending": [
+          "human moving/phone and audio review; samples do not establish seamless motion"
+        ]
+      }
+    }
+  ],
+  "rows": [
+    {
+      "cut": 0,
+      "row": "S01",
+      "source": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/19_skyline_strike_t1.mp4",
+      "title": "Flow plate 19_skyline_strike_t1.mp4 (colonial tower struck on rooftop lightning rod at night)",
+      "t": 1.42,
+      "at": "0:01",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.31x, may look soft"
+      ],
+      "offset": 1.0
+    },
+    {
+      "cut": 1,
+      "row": "S02",
+      "source": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/01_house_rod_t1.mp4",
+      "title": "Flow plate 01_house_rod_t1.mp4 (Franklin brick house with pointed iron lightning rod)",
+      "t": 4.27,
+      "at": "0:04",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.31x, may look soft"
+      ],
+      "offset": 0.8
+    },
+    {
+      "cut": 2,
+      "row": "S03",
+      "source": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/07_giant_spark_t1.mp4",
+      "title": "Flow plate 07_giant_spark_t1.mp4 (branching lightning bolts over colonial town)",
+      "t": 7.17,
+      "at": "0:07",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.31x, may look soft"
+      ],
+      "offset": 0.6
+    },
+    {
+      "cut": 3,
+      "row": "S04",
+      "source": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part01/raw/v01/12_steeple_fire_t1.mp4",
+      "title": "Flow plate 12_steeple_fire_t1.mp4 (wooden church steeple burning in storm)",
+      "t": 10.08,
+      "at": "0:10",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.31x, may look soft"
+      ],
+      "offset": 0.8
+    },
+    {
+      "cut": 4,
+      "row": "S05",
+      "source": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/18_rod_closeup_t1.mp4",
+      "title": "Flow plate 18_rod_closeup_t1.mp4 (pointed iron lightning rod closeup 0.0-2.8s)",
+      "t": 12.94,
+      "at": "0:13",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.31x, may look soft"
+      ],
+      "offset": 0.0
+    },
+    {
+      "cut": 5,
+      "row": "S06",
+      "source": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/06_rod_fitting_t1.mp4",
+      "title": "Flow plate 06_rod_fitting_t1.mp4 (workman fastening conductor down brick wall 1.5-4.3s)",
+      "t": 15.73,
+      "at": "0:16",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.31x, may look soft"
+      ],
+      "offset": 1.5
+    },
+    {
+      "cut": 6,
+      "row": "S07",
+      "source": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/06_rod_fitting_c1_t1.mp4",
+      "title": "Flow plate 06_rod_fitting_c1_t1.mp4 (workman driving grounding rod into damp earth 1.5-4.2s)",
+      "t": 18.48,
+      "at": "0:18",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.31x, may look soft"
+      ],
+      "offset": 1.5
+    },
+    {
+      "cut": 7,
+      "row": "S08",
+      "source": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/14_safe_towers_t1.mp4",
+      "title": "Flow plate 14_safe_towers_t1.mp4 (church steeple and town towers safe under storm clouds 4.2-6.1s)",
+      "t": 20.77,
+      "at": "0:21",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.31x, may look soft",
+        "low detail: edge density 0.0253 < film p5 0.0258"
+      ],
+      "offset": 4.2
+    },
+    {
+      "cut": 8,
+      "row": "loop_tail",
+      "source": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/19_skyline_strike_t1.mp4",
+      "title": "Flow plate 19_skyline_strike_t1.mp4 (colonial tower struck on rooftop lightning rod at night)",
+      "t": 22.21,
+      "at": "0:22",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.31x, may look soft",
+        "terminal loop: prescribed return classified; human moving/phone and audio review; samples do not establish seamless motion"
+      ],
+      "offset": 1.0,
+      "terminal_loop": {
+        "status": "rendered_correspondence",
+        "eligible_cut": 8,
+        "errors": [],
+        "evidence": {
+          "source": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/19_skyline_strike_t1.mp4",
+          "sha256": "06caaeb6b7394ad590547b2f3f09db2dbe3a4a0354977591d36fb72769065026",
+          "source_in": 1.0,
+          "source_out": 2.0,
+          "source_duration": 8.0,
+          "framing": {
+            "crop": [
+              438,
+              0,
+              405,
+              720
+            ],
+            "output": [
+              936,
+              1664
+            ]
+          },
+          "last_vo_word": 21.58,
+          "words_sha256": "b176680e210a9e48b73fab29c0024df1d1570beea035fd33029561d838fae0a8",
+          "prescription_sha256": "b3a67968326680f338b4ee6899b09412f2be94d9d496fea42fce5544e2a95445",
+          "source_sample_sha256": [
+            "696524f9a282ef8e6e3721d2ced0ed385aefb5a8540fe284a8e69d4228da1dc7",
+            "e79b52fc804a1026c6ef547ad5fbbf87b5d14f6ce9f0db617f79fe4f6deaa548"
+          ],
+          "rendered_frame_mae": [
+            2.066,
+            0.1972,
+            2.0971,
+            0.526
+          ],
+          "render_sha256": "9f25a16de5fc7d454be7adbc0e301614c7b060cd28b10cd076bcd2b4a6642161"
+        },
+        "pending": [
+          "human moving/phone and audio review; samples do not establish seamless motion"
+        ]
+      }
+    }
+  ],
+  "polish": {
+    "edge_floor": 0.0258,
+    "low_detail_floor": {
+      "std": 13.44,
+      "edge": 0.0259,
+      "calibration": {
+        "video": "025_MarsRobot_full_rough_v02d.mp4",
+        "factor": 1.2,
+        "frames": [
+          {
+            "source": "PIA22223.jpg",
+            "t": 201.0,
+            "std": 12.1,
+            "edge": 0.0223
+          },
+          {
+            "source": "PIA22223.jpg",
+            "t": 216.3,
+            "std": 11.2,
+            "edge": 0.0216
+          },
+          {
+            "source": "PIA22929.jpg",
+            "t": 297.4,
+            "std": 26.54,
+            "edge": 0.5735
+          }
+        ]
+      }
+    }
+  }
+}
