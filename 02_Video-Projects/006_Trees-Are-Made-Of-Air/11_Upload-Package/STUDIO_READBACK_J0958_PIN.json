@@ -1,0 +1,34 @@
+{
+  "job": "J0958",
+  "at": "2026-11-06T00:30:00Z",
+  "channel": "History of Science",
+  "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+  "videoId": "VbPubYd6Fbs",
+  "cdp": 9460,
+  "api": {
+    "privacy": "public",
+    "publishAt": null,
+    "title": "The Willow Tree That Was Made of Air",
+    "madeForKids": false,
+    "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+    "commentCount": "1"
+  },
+  "comment": {
+    "id": "UgyN-6wKr4EfDkXI1h54AaABAg",
+    "author": "@HistoryOfScienceYT",
+    "publishedAt": "2026-11-06T00:16:18Z",
+    "text": "So where does a tree's weight really come from?\n\nThank you for being here this early. It genuinely helps. A new film every Thursday.",
+    "subscriberCountInText": false
+  },
+  "pin": {
+    "confirmed": false,
+    "studioOnce": "perform_comment_action pinCommentAction actionResult STATUS_SUCCEEDED, feedbackText Comment pinned, on-page badge Pinned by @HistoryOfScienceYT",
+    "freshLoad": "comments page offers Pin and does not show a Pinned-by badge"
+  },
+  "endScreen": "left as saved 25 Oct; not reopened",
+  "testAndCompare": "left as saved 25 Oct; not reopened",
+  "buffer": "deferred",
+  "privacyChanged": false,
+  "publishAtChanged": false,
+  "gbp": 0
+}

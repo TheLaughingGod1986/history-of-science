@@ -311,15 +311,16 @@
       "thumbB": "02_Video-Projects/006_Trees-Are-Made-Of-Air/08_Thumbnail/Selected/hos_006_thumb_B_do_plants_eat_soil_v01.jpg",
       "thumbBSha256": "ee5f2605520a0155f146d26700d41c99d47b45596457f84d9692415fe15360c4",
       "publishAt": "2026-11-05T18:00:00Z",
-      "privacyStatus": "private",
+      "privacyStatus": "public",
       "registeredAt": "2026-10-25T20:22:00Z",
       "captions": "en-GB standard, serving, AUieDaZBE-6vyjG9eGdzhiF0twPvrL2rqU2EHE8yie_3OPQi",
       "buffer": "deferred: long films are never cross-posted through Buffer",
       "endScreen": "Subscribe (History of Science) + specific video What's Really Inside an Atom? GHZDsiH7L7A, 8:31:22-8:51:22. Read back after reload. Elements do not show on the watch page while Private.",
       "testAndCompare": "Set 25 Oct 2026 from the Title and thumbnail dialog: A WOOD / FROM / SKY? + The Willow Tree That Was Made of Air; B DO PLANTS / EAT / SOIL? + Where Does a Tree's Weight Come From?. After save, Studio lists both titles under A/B testing titles, status Ineligible (scheduled). Opening A/B testing offers to delete the current test; Cancelled and left.",
-      "pinnedComment": "not posted. update-pinned-comment.ts --create returned 403 forbidden. Studio comments: this account doesn't have permission to create comments.",
+      "pinnedComment": "posted 2026-11-06T00:16:18Z, id UgyN-6wKr4EfDkXI1h54AaABAg, author @HistoryOfScienceYT. Text is the open question plus the early thank-you. No subscriber count (6 subscribers, under the first milestone). No /go/ link. Studio pin is not confirmed: one perform_comment_action returned STATUS_SUCCEEDED and the page showed Pinned by @HistoryOfScienceYT, then a fresh comments load offered Pin again and had no Pinned-by badge.",
       "cards": "not added",
-      "note": "J0958. End screen and title/thumbnail test saved. Privacy still private, publishAt still 2026-11-05T18:00:00Z. Pinned comment refused by the API and by Studio. Cards not added. Buffer stays deferred. Nothing replaced or deleted."
+      "readBack": "YouTube Data API videos.list 2026-11-06T00:16Z: public, publishAt null (the 5 Nov 18:00Z schedule has aired), title The Willow Tree That Was Made of Air, channel UCXp7HkBIl1LgaznXuZHJyRg, madeForKids false, commentCount 1.",
+      "note": "J0958. End screen and title test left as saved on 25 Oct. Video is public; privacy and publishAt were not changed. Comment posted. Pin not confirmed after reload. Do not post a second comment. Buffer stays deferred. Nothing replaced or deleted."
     },
     "ETynHpIYLeY": {
       "kind": "long",

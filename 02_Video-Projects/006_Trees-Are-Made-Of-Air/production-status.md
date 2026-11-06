@@ -834,3 +834,11 @@ Desktop Studio over CDP `:9460`, channel History of Science (`UCXp7HkBIl1LgaznXu
 - **Cards:** not added.
 - **Pinned comment:** not posted. `update-pinned-comment.ts --create` returned 403 forbidden. The Studio comment box says this account doesn't have permission to create comments. No subscriber count, no `/go/` link.
 - **Buffer:** deferred. Evidence: `11_Upload-Package/STUDIO_READBACK_J0958.json`.
+
+## 6 Nov 2026 — J0958: comment posted on public `VbPubYd6Fbs` (Cursor covering)
+
+The 5 Nov 18:00 London schedule had aired. Data API read-back: public, `publishAt` null, title unchanged, channel `UCXp7HkBIl1LgaznXuZHJyRg`, not made for kids. Privacy and the schedule were not changed. End screen and the title test were not opened again.
+
+- **Comment:** `update-pinned-comment.ts --create` posted `UgyN-6wKr4EfDkXI1h54AaABAg` at 2026-11-06T00:16:18Z as `@HistoryOfScienceYT`. Text: "So where does a tree's weight really come from?" then the early thank-you. Six subscribers, so no subscriber count. No `/go/` link. It is the only comment.
+- **Pin:** not confirmed. Studio's pin action once returned `STATUS_SUCCEEDED` / "Comment pinned", and the comments page showed "Pinned by @HistoryOfScienceYT". A fresh load of the same comments page offered Pin again and did not show that badge. Do not post a second comment.
+- **Buffer:** still deferred. Evidence: `11_Upload-Package/STUDIO_READBACK_J0958_PIN.json`.
