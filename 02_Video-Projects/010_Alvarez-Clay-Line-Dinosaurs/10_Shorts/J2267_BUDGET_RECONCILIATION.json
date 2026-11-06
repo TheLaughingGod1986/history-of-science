@@ -1,0 +1,103 @@
+{
+  "job": "J2267",
+  "source_head": "0a9250614ec1a591aa705d5f8e12280c597f507a",
+  "picture_plan_sha256": "2159d8f823dc4a12afb9532400a763040713866ac4573733fb3f7d66ac97c110",
+  "shorts_plan_sha256": "56659703c5b0fdb6e5e1a48ba83ddd5234e2d3f64b2fa500b2d82c2dca07a2e2",
+  "parts": [
+    {
+      "part": 1,
+      "path": "07_Edit-Project/parts/part-01_plates_v03.json",
+      "sha256": "12f2ad83c4c126ea2f360060a5bab74b3cd29e2fd25ccdec8e24b3ccc9350bf8",
+      "rows": 15,
+      "counts": {
+        "Quality": 10,
+        "Fast": 5
+      },
+      "flow_credits_try1": 1050,
+      "flow_credits_expected": 2690,
+      "vertex_try1_gbp": 14.24,
+      "vertex_expected_gbp": 36.46
+    },
+    {
+      "part": 2,
+      "path": "07_Edit-Project/parts/part-02_plates_v03.json",
+      "sha256": "e8288df2e05426a6d779f0e865b228883bc8dd1566e91c4959950902dd359809",
+      "rows": 13,
+      "counts": {
+        "Quality": 11,
+        "code_graphic": 2
+      },
+      "flow_credits_try1": 1100,
+      "flow_credits_expected": 2849,
+      "vertex_try1_gbp": 10.88,
+      "vertex_expected_gbp": 28.99
+    },
+    {
+      "part": 3,
+      "path": "07_Edit-Project/parts/part-03_plates_v03.json",
+      "sha256": "ee896f9b8608441f52cc784f3e198c9488ec941e98775b14d1d89c709dd889bf",
+      "rows": 12,
+      "counts": {
+        "Quality": 8,
+        "code_graphic": 2,
+        "reuse": 1,
+        "Fast": 1
+      },
+      "flow_credits_try1": 810,
+      "flow_credits_expected": 2092,
+      "vertex_try1_gbp": 8.64,
+      "vertex_expected_gbp": 22.84
+    },
+    {
+      "part": 4,
+      "path": "07_Edit-Project/parts/part-04_plates_v03.json",
+      "sha256": "68c10bba647920b7e34baad04677b06aa8ac3fe77ad063847f5e7717709e352a",
+      "rows": 12,
+      "counts": {
+        "code_graphic": 6,
+        "Quality": 5,
+        "Fast": 1
+      },
+      "flow_credits_try1": 510,
+      "flow_credits_expected": 1315,
+      "vertex_try1_gbp": 5.12,
+      "vertex_expected_gbp": 13.3
+    },
+    {
+      "part": 5,
+      "path": "07_Edit-Project/parts/part-05_plates_v04.json",
+      "sha256": "48b1130e6cc86e561f3cce83ea84700607d1cc1868cdbbeda11d31b33f7db120",
+      "rows": 23,
+      "counts": {
+        "Quality": 15,
+        "code_graphic": 3,
+        "Fast": 4,
+        "reuse": 1
+      },
+      "flow_credits_try1": 1540,
+      "flow_credits_expected": 3965,
+      "vertex_try1_gbp": 18.4,
+      "vertex_expected_gbp": 47.55
+    }
+  ],
+  "totals": {
+    "rows": 75,
+    "counts": {
+      "Quality": 49,
+      "Fast": 11,
+      "code_graphic": 13,
+      "reuse": 2
+    },
+    "flow_credits_try1": 5010,
+    "flow_credits_expected": 12911,
+    "vertex_try1_gbp": 57.28,
+    "vertex_expected_gbp": 149.14
+  },
+  "notes": [
+    "109 rows/93 Flow/21796 credits/GBP282.46 in J2211 are unsupported by these exact boards; actual rows=75 and Flow=60.",
+    "Part03 08_asaro_michel_c1 is quality=reuse (0.06s edit hold); summary calls it edit_hold. Total two reuse-class rows, one semantically an edit hold.",
+    "Two added bird rows are Shorts-only. They have use_s 2.64 and 2.72 for the Short, no long timeline t_s/local_s, and no duration_s field. They add zero long-film time; do not interpret use_s as added long time.",
+    "Costs are summed row fields at inherited rates, not live quotes or authority. Expected estimates are not a spend cap.",
+    "Original plan vo_film_total_s 510.44 is retained; review claim locked 500.28s is not supported. VO_TAKES_KEEP total_speech_s=499.84; speech and assembled timeline are different quantities."
+  ]
+}
