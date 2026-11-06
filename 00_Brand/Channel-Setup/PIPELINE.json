@@ -1,6 +1,6 @@
 {
   "updated": "2026-11-06",
-  "updated_by": "codex",
+  "updated_by": "cursor",
   "board_url": "https://claude.ai/artifact/Hhk519dkbHMzeaZfp3efhc",
   "stages": [
     {
@@ -644,7 +644,7 @@
       "title": "Anesthesia: The Day Surgery Stopped Hurting",
       "air": "2026-12-10",
       "ready_by": "2026-12-06",
-      "summary": "Locked for Thu 10 Dec (J2231; first in jobs/WIP.json next_hos). Neighbour gate PASS (6 education >=1M incl. TED-Ed 19.73M & 2.66M). Script v02 (91.1 PASS), Gemini facts (J0198) and Claude primary-source quote check (J0224) done; Shorts scripts v02 + upload package scaffold + long VO queued (J2239).",
+      "summary": "Locked for Thu 10 Dec (J2231). Script v02, facts and quote check done. J2245 recorded hos_011_vo_v01 (532.72 s, five chapters). Full vo_check PASS with spelling warns. The Across the Ocean chapter fails two internal pauses of 1.52 s and 1.55 s. Not a VO lock: parked for review.",
       "stages": {
         "topic": {
           "status": "done",
@@ -665,10 +665,14 @@
           "note": "PRE_BUILD_VIDIQ_AUDIT.md + neighbour/search evidence saved; manifest + description queued (J2239)"
         },
         "vo": {
-          "status": "todo",
+          "status": "doing",
           "due": "2026-11-15",
           "owner": "Cursor",
-          "waiting": "after J2239 package scaffold + Shorts scripts v02"
+          "note": "J2245 hos_011_vo_v01 recorded, 532.72 s, Ben Orbit Narrator eleven_v3. Chapters 1-4 vo_check PASS. Chapter 5 (Across the Ocean) FAIL: silences 1.52 s at 0:27.87 and 1.55 s at 0:33.47, which are 6:34.83 and 6:40.43 in the full take, not chapter joins. Full-file vo_check PASS, 0 word fails. Not locked.",
+          "steps": [5, 5],
+          "steps_unit": "parts recorded; review still open",
+          "underway": false,
+          "waiting": "VO review of hos_011_vo_v01 (chapter 5 pauses)"
         },
         "shorts_scripts": {
           "status": "todo",

@@ -1,6 +1,6 @@
 # HOS status board
 
-**As of Fri 6 Nov 2026**, updated by codex. Generated from `00_Brand/Channel-Setup/PIPELINE.json` by `00_Brand/Channel-Setup/tools/status_board.py`. Don't edit this file by hand.
+**As of Fri 6 Nov 2026**, updated by cursor. Generated from `00_Brand/Channel-Setup/PIPELINE.json` by `00_Brand/Channel-Setup/tools/status_board.py`. Don't edit this file by hand.
 
 **Kanban board (live):** https://claude.ai/artifact/Hhk519dkbHMzeaZfp3efhc — reads this same file from `main` every 5 minutes. The first time you open it, allow GitHub when it asks.
 
@@ -15,7 +15,7 @@
 | **008** Why Did Franklin Fly a Kite in a Storm? | Thu 19 Nov (13 d) | 75% | Picture (blocked) | **codex** · ⛔ blocked: J2163 recipe repair, then J1881 Chief production scope; J1755 separate delivery hold | 112/112 board rows rendered (11 code graphics + 101/101 Flow plates KEEP) | Sun 15 Nov (in 9 d) | ⛔ blocked |
 | **009** Why Doesn't the Moon Fall to Earth? | Thu 26 Nov (20 d) | 62% | Shorts voiceover (to do) | **Cursor** · queued (after 010 long VO) | starts later; due 29 d late | Sun 22 Nov (in 16 d) | 🟠 behind |
 | **010** What Killed the Dinosaurs Was Hidden in a Line of Clay | Thu 3 Dec (27 d) | 35% | Shorts voiceover (to do) | **Cursor** · queued (after 010 long VO) | starts later; due 29 d late | Sun 29 Nov (in 23 d) | ⛔ blocked |
-| **011** Anesthesia: The Day Surgery Stopped Hurting | Thu 10 Dec (34 d) | 18% | Audit + upload package (to do) | **Claude** · queued | starts later; due in 6 d | Sun 6 Dec (in 30 d) | 🟢 on track |
+| **011** Anesthesia: The Day Surgery Stopped Hurting | Thu 10 Dec (34 d) | 28% | Audit + upload package (to do) | **Claude** · queued | starts later; due in 6 d | Sun 6 Dec (in 30 d) | 🟢 on track |
 | **013** Evolution: The Letter That Forced Darwin to Publish | Thu 17 Dec (41 d) | 28% | Audit + upload package (to do) | **Claude** · queued | starts later; due in 6 d | Sun 13 Dec (in 37 d) | 🟢 on track |
 
 ## Who's on what
@@ -34,8 +34,8 @@
 
 **Cursor**
 - ▶️ Underway: nothing right now
-- ⏸ Waiting: 004 Thumbnails: J0106: C v07b file (don't touch the armed test), then the Chief's OK
-- ⏭ Next up: 009 Shorts voiceover, due Thu 8 Oct; 010 Shorts voiceover, due Thu 8 Oct; 011 Voiceover (long), due Sun 15 Nov
+- ⏸ Waiting: 004 Thumbnails: J0106: C v07b file (don't touch the armed test), then the Chief's OK; 011 Voiceover (long): VO review of hos_011_vo_v01 (chapter 5 pauses)
+- ⏭ Next up: 009 Shorts voiceover, due Thu 8 Oct; 010 Shorts voiceover, due Thu 8 Oct; 011 Shorts voiceover, due Mon 16 Nov
 
 **Chief**
 - ▶️ Underway: nothing right now
@@ -59,6 +59,7 @@
 - **008** · ⛔ **Edit + master** — blocked (0%, with codex since Tue 3 Nov 18:54, ⛔ blocked: J2163 recipe repair, then J1881 Chief production scope; J1755 separate delivery hold, due Thu 12 Nov (in 6 d)): J1881_SCOPE_REVIEW.md: recipe FIX, future sync unmeasured; h22/h35 and v03 cf1561c2 preserved. No new media approval; all six Ben notes unresolved.
 - **009** · 🔄 **Picture** — in progress (78%, 70/90 board rows recorded: 57 accepted Flow +12 code graphics +1 reuse; 20 Quality remain, with Cursor (J2033; Codex/Gemini fallback) since Thu 15 Oct, ⏸ waiting: J2033 ready after J2026 handoff completes; worker not yet claimed. Fresh Flow credit/price/writer-lock gate before generation., due Sun 15 Nov (in 9 d)): J1237 tranche1 PASS; all57 original Flow hashes reverified local/NAS. 70/90 recorded rows unchanged. J2033 owns remaining20 Quality rows under J2026 cap6000/max3 takes each/floor3000; J2034 independent picture review. Generated is not approved.
 - **010** · ⛔ **Picture** — blocked (0%, with codex since Fri 6 Nov, ⛔ blocked: Tested HOS010 runner and live guarded spend preflight after HOS009 J2033; then independent plate review before J2172 assembly, due Sun 22 Nov (in 16 d)): J2267: readiness integrated and budget reconciled; 12 Quality Shorts parents scoped, not generated or authorized. 75 total board rows / historical 12911 expected credits. Existing VO and Option A1 retained.
+- **011** · 🔄 **Voiceover (long)** — in progress (100%, 5/5 parts recorded; review still open, with Cursor, ⏸ waiting: VO review of hos_011_vo_v01 (chapter 5 pauses), due Sun 15 Nov (in 9 d)): J2245 hos_011_vo_v01 recorded, 532.72 s, Ben Orbit Narrator eleven_v3. Chapters 1-4 vo_check PASS. Chapter 5 (Across the Ocean) FAIL: silences 1.52 s at 0:27.87 and 1.55 s at 0:33.47, which are 6:34.83 and 6:40.43 in the full take, not chapter joins. Full-file vo_check PASS, 0 word fails. Not locked.
 
 ## Next steps (in order)
 
@@ -237,17 +238,17 @@ Long VO v01 locked (5 parts); Chief KEEP all five, no pickups (desk 6101773293).
 
 ### 011 · Anesthesia: The Day Surgery Stopped Hurting
 
-`████░░░░░░░░░░░░░░░░` **18%**
+`██████░░░░░░░░░░░░░░` **28%**
 
 Airs **Thu 10 Dec** · ready for Ben's OK by **Sun 6 Dec** · 🟢 on track
 
-Locked for Thu 10 Dec (J2231; first in jobs/WIP.json next_hos). Neighbour gate PASS (6 education >=1M incl. TED-Ed 19.73M & 2.66M). Script v02 (91.1 PASS), Gemini facts (J0198) and Claude primary-source quote check (J0224) done; Shorts scripts v02 + upload package scaffold + long VO queued (J2239).
+Locked for Thu 10 Dec (J2231). Script v02, facts and quote check done. J2245 recorded hos_011_vo_v01 (532.72 s, five chapters). Full vo_check PASS with spelling warns. The Across the Ocean chapter fails two internal pauses of 1.52 s and 1.55 s. Not a VO lock: parked for review.
 
 - ✅ **Topic** — done: J0180 / J2231: 6 education >=1M (TED-Ed 19.73M & 2.66M)
 - ✅ **Script** — done: v02, 91.1 (J0183 / J0224)
 - ✅ **Fact check** — done: J0198 Gemini facts (35 OK, 1 hedged) + J0224 Claude quote check PASS
 - ⬜ **Audit + upload package** — to do (with Claude, due Thu 12 Nov (in 6 d)): PRE_BUILD_VIDIQ_AUDIT.md + neighbour/search evidence saved; manifest + description queued (J2239)
-- ⬜ **Voiceover (long)** — to do (with Cursor, due Sun 15 Nov (in 9 d))
+- 🔄 **Voiceover (long)** — in progress (100%, 5/5 parts recorded; review still open, with Cursor, ⏸ waiting: VO review of hos_011_vo_v01 (chapter 5 pauses), due Sun 15 Nov (in 9 d)): J2245 hos_011_vo_v01 recorded, 532.72 s, Ben Orbit Narrator eleven_v3. Chapters 1-4 vo_check PASS. Chapter 5 (Across the Ocean) FAIL: silences 1.52 s at 0:27.87 and 1.55 s at 0:33.47, which are 6:34.83 and 6:40.43 in the full take, not chapter joins. Full-file vo_check PASS, 0 word fails. Not locked.
 - ⬜ **Shorts scripts** — to do (with Claude, due Thu 12 Nov (in 6 d)): two search-titled Shorts (Test B, J2239)
 - ⬜ **Shorts voiceover** — to do (with Cursor, due Mon 16 Nov (in 10 d))
 - ⬜ **Picture** — to do (with Cursor, due Sun 29 Nov (in 23 d))
