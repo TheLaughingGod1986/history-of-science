@@ -1,0 +1,207 @@
+{
+  "file": "02_Video-Projects/011_Surgery-Before-Anaesthesia/02_Voiceover/hos_011_vo_v01.wav",
+  "part": null,
+  "fails": [],
+  "warns": [
+    "silence 1.52s at 6:34.83 (part join?)",
+    "silence 1.55s at 6:40.43 (part join?)",
+    "pace 139 wpm (< 145); expect a long film — see STUDIO_PLAYBOOK.md §4 speed",
+    "replace at ~1:27.54: script 'young chemist called humphry davy was breathing' / heard 'young chemist called humphrey davy was breathing' — sounds alike (likely the transcriber); listen",
+    "replace at ~3:24.56: script 'a fake but wells's old business partner' / heard 'a fake but wells old business partner' — sounds alike (likely the transcriber); listen",
+    "replace at ~4:16.98: script 'it's called the ether dome and within weeks' / heard 'it's called the etherdome and within weeks' — sounds alike (likely the transcriber); listen",
+    "replace at ~4:36.84: script 'he called it letheon after a river' / heard 'he called it lethion after a river' — sounds alike (likely the transcriber); listen",
+    "replace at ~5:03.04: script 'sleep without pain anaesthesia from the greek' / heard 'sleep without pain anesthesia from the greek' — sounds alike (likely the transcriber); listen",
+    "replace at ~6:05.20: script 'for himself his patient slept through the' / heard 'for himself his patience slept through the' — sounds alike (likely the transcriber); listen",
+    "replace at ~6:23.36: script 'this yankee dodge gentlemen beats mesmerism hollow' / heard 'this yankee dodge gentleman beats mesmerism hollow' — sounds alike (likely the transcriber); listen",
+    "replace at ~7:26.98: script 'caused by an anaesthetic are very rare' / heard 'caused by an anesthetic are very rare' — sounds alike (likely the transcriber); listen",
+    "replace at ~7:40.46: script 'because of the anaesthetic that's because a' / heard 'because of the anesthetic that's because a' — sounds alike (likely the transcriber); listen",
+    "replace at ~7:44.26: script 'specially trained doctor an anaesthetist stays beside you' / heard 'specially trained doctor and anesthetist stays beside you' — sounds alike (likely the transcriber); listen",
+    "replace at ~7:55.48: script 'you stay just asleep enough and no' / heard 'you stay just to sleep enough and no' — sounds alike (likely the transcriber); listen"
+  ],
+  "duration_s": 532.72,
+  "duration": "8:52.72",
+  "mean_db": -23.1,
+  "peak_db": -3.6,
+  "pauses_over_1s": [
+    [
+      28.2,
+      1.08
+    ],
+    [
+      47.14,
+      1.15
+    ],
+    [
+      58.83,
+      1.29
+    ],
+    [
+      71.39,
+      1.1
+    ],
+    [
+      121.03,
+      1.03
+    ],
+    [
+      258.22,
+      1.08
+    ],
+    [
+      359.25,
+      1.07
+    ],
+    [
+      374.02,
+      1.08
+    ],
+    [
+      377.55,
+      1.0
+    ],
+    [
+      384.82,
+      1.22
+    ],
+    [
+      394.83,
+      1.52
+    ],
+    [
+      400.43,
+      1.55
+    ],
+    [
+      408.67,
+      1.23
+    ],
+    [
+      419.59,
+      1.3
+    ],
+    [
+      423.85,
+      1.2
+    ],
+    [
+      437.51,
+      1.17
+    ],
+    [
+      442.99,
+      1.16
+    ],
+    [
+      451.41,
+      1.29
+    ],
+    [
+      473.27,
+      1.34
+    ],
+    [
+      490.23,
+      1.27
+    ],
+    [
+      496.54,
+      1.03
+    ],
+    [
+      506.38,
+      1.35
+    ],
+    [
+      516.24,
+      1.11
+    ]
+  ],
+  "asr": "faster-whisper small.en",
+  "script_words": 1192,
+  "heard_words": 1192,
+  "wpm": 139,
+  "word_diffs": [
+    {
+      "at": "1:27.54",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "young chemist called humphry davy was breathing",
+      "heard": "young chemist called humphrey davy was breathing"
+    },
+    {
+      "at": "3:24.56",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "a fake but wells's old business partner",
+      "heard": "a fake but wells old business partner"
+    },
+    {
+      "at": "4:16.98",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "it's called the ether dome and within weeks",
+      "heard": "it's called the etherdome and within weeks"
+    },
+    {
+      "at": "4:36.84",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "he called it letheon after a river",
+      "heard": "he called it lethion after a river"
+    },
+    {
+      "at": "5:03.04",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "sleep without pain anaesthesia from the greek",
+      "heard": "sleep without pain anesthesia from the greek"
+    },
+    {
+      "at": "6:05.20",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "for himself his patient slept through the",
+      "heard": "for himself his patience slept through the"
+    },
+    {
+      "at": "6:23.36",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "this yankee dodge gentlemen beats mesmerism hollow",
+      "heard": "this yankee dodge gentleman beats mesmerism hollow"
+    },
+    {
+      "at": "7:26.98",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "caused by an anaesthetic are very rare",
+      "heard": "caused by an anesthetic are very rare"
+    },
+    {
+      "at": "7:40.46",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "because of the anaesthetic that's because a",
+      "heard": "because of the anesthetic that's because a"
+    },
+    {
+      "at": "7:44.26",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "specially trained doctor an anaesthetist stays beside you",
+      "heard": "specially trained doctor and anesthetist stays beside you"
+    },
+    {
+      "at": "7:55.48",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "you stay just asleep enough and no",
+      "heard": "you stay just to sleep enough and no"
+    }
+  ],
+  "first_minute": {
+    "title_question": 36.3,
+    "promise": 48.1
+  },
+  "verdict": "PASS"
+}
