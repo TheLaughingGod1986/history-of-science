@@ -1,0 +1,170 @@
+[
+  {
+    "row": "S01",
+    "timeline_in": 0.0,
+    "timeline_out": 2.45,
+    "source": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/19_skyline_strike_t1.mp4",
+    "upscale": 2.3111,
+    "video": true,
+    "framing": {
+      "offset": 1.0,
+      "crop": [
+        438,
+        0,
+        405,
+        720
+      ],
+      "output": [
+        936,
+        1664
+      ]
+    }
+  },
+  {
+    "row": "S02",
+    "timeline_in": 2.45,
+    "timeline_out": 5.33,
+    "source": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/01_house_rod_t1.mp4",
+    "upscale": 2.3111,
+    "video": true,
+    "framing": {
+      "offset": 0.8,
+      "crop": [
+        438,
+        0,
+        405,
+        720
+      ],
+      "output": [
+        936,
+        1664
+      ]
+    }
+  },
+  {
+    "row": "S03",
+    "timeline_in": 5.33,
+    "timeline_out": 8.25,
+    "source": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/07_giant_spark_t1.mp4",
+    "upscale": 2.3111,
+    "video": true,
+    "framing": {
+      "offset": 0.6,
+      "crop": [
+        438,
+        0,
+        405,
+        720
+      ],
+      "output": [
+        936,
+        1664
+      ]
+    }
+  },
+  {
+    "row": "S04",
+    "timeline_in": 8.25,
+    "timeline_out": 11.15,
+    "source": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part01/raw/v01/12_steeple_fire_t1.mp4",
+    "upscale": 2.3111,
+    "video": true,
+    "framing": {
+      "offset": 0.8,
+      "crop": [
+        438,
+        0,
+        405,
+        720
+      ],
+      "output": [
+        936,
+        1664
+      ]
+    }
+  },
+  {
+    "row": "S05",
+    "timeline_in": 11.15,
+    "timeline_out": 13.95,
+    "source": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/18_rod_closeup_t1.mp4",
+    "upscale": 2.3111,
+    "video": true,
+    "framing": {
+      "offset": 0.0,
+      "crop": [
+        438,
+        0,
+        405,
+        720
+      ],
+      "output": [
+        936,
+        1664
+      ]
+    }
+  },
+  {
+    "row": "S06",
+    "timeline_in": 13.95,
+    "timeline_out": 16.75,
+    "source": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/06_rod_fitting_t1.mp4",
+    "upscale": 2.3111,
+    "video": true,
+    "framing": {
+      "offset": 1.5,
+      "crop": [
+        438,
+        0,
+        405,
+        720
+      ],
+      "output": [
+        936,
+        1664
+      ]
+    }
+  },
+  {
+    "row": "S07",
+    "timeline_in": 16.75,
+    "timeline_out": 19.45,
+    "source": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/06_rod_fitting_c1_t1.mp4",
+    "upscale": 2.3111,
+    "video": true,
+    "framing": {
+      "offset": 1.5,
+      "crop": [
+        438,
+        0,
+        405,
+        720
+      ],
+      "output": [
+        936,
+        1664
+      ]
+    }
+  },
+  {
+    "row": "S08",
+    "timeline_in": 19.45,
+    "timeline_out": 21.35,
+    "source": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/14_safe_towers_t1.mp4",
+    "upscale": 2.3111,
+    "video": true,
+    "framing": {
+      "offset": 4.2,
+      "crop": [
+        438,
+        0,
+        405,
+        720
+      ],
+      "output": [
+        936,
+        1664
+      ]
+    }
+  }
+]

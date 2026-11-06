@@ -1,6 +1,6 @@
 # HOS status board
 
-**As of Thu 5 Nov 2026**, updated by codex. Generated from `00_Brand/Channel-Setup/PIPELINE.json` by `00_Brand/Channel-Setup/tools/status_board.py`. Don't edit this file by hand.
+**As of Thu 5 Nov 2026**, updated by macbook. Generated from `00_Brand/Channel-Setup/PIPELINE.json` by `00_Brand/Channel-Setup/tools/status_board.py`. Don't edit this file by hand.
 
 **Kanban board (live):** https://claude.ai/artifact/Hhk519dkbHMzeaZfp3efhc — reads this same file from `main` every 5 minutes. The first time you open it, allow GitHub when it asks.
 
@@ -14,12 +14,15 @@
 | **007** Why Vaccines Are Named After a Cow | Thu 12 Nov (7 d) | 100% | all stages done | — | — | Sun 8 Nov (in 3 d) | 🟢 on track |
 | **008** Why Did Franklin Fly a Kite in a Storm? | Thu 19 Nov (14 d) | 75% | Picture (blocked) | **codex** · ⛔ blocked: J2163 recipe repair, then J1881 Chief production scope; J1755 separate delivery hold | 112/112 board rows rendered (11 code graphics + 101/101 Flow plates KEEP) | Sun 15 Nov (in 10 d) | ⛔ blocked |
 | **009** Why Doesn't the Moon Fall to Earth? | Thu 26 Nov (21 d) | 62% | Shorts voiceover (to do) | **Cursor** · queued (after 010 long VO) | starts later; due 28 d late | Sun 22 Nov (in 17 d) | 🟠 behind |
-| **010** What Killed the Dinosaurs Was Hidden in a Line of Clay | Thu 3 Dec (28 d) | 70% | Shorts voiceover (to do) | **Cursor** · queued (after 010 long VO) | starts later; due 28 d late | Sun 29 Nov (in 24 d) | ⛔ blocked |
+| **010** What Killed the Dinosaurs Was Hidden in a Line of Clay | Thu 3 Dec (28 d) | 35% | Shorts voiceover (to do) | **Cursor** · queued (after 010 long VO) | starts later; due 28 d late | Sun 29 Nov (in 24 d) | 🟠 behind |
+| **011** Anesthesia: The Day Surgery Stopped Hurting | Thu 10 Dec (35 d) | 18% | Audit + upload package (to do) | **Claude** · queued | starts later; due in 7 d | Sun 6 Dec (in 31 d) | 🟢 on track |
+| **013** Evolution: The Letter That Forced Darwin to Publish | Thu 17 Dec (42 d) | 28% | Audit + upload package (to do) | **Claude** · queued | starts later; due in 7 d | Sun 13 Dec (in 38 d) | 🟢 on track |
 
 ## Who's on what
 
 **Claude**
 - ▶️ Underway: nothing right now
+- ⏭ Next up: 011 Audit + upload package, due Thu 12 Nov; 013 Audit + upload package, due Thu 12 Nov
 
 **Grok**
 - ▶️ Underway: nothing right now
@@ -32,14 +35,14 @@
 **Cursor**
 - ▶️ Underway: nothing right now
 - ⏸ Waiting: 004 Thumbnails: J0106: C v07b file (don't touch the armed test), then the Chief's OK
-- ⏭ Next up: 009 Shorts voiceover, due Thu 8 Oct; 010 Shorts voiceover, due Thu 8 Oct
+- ⏭ Next up: 009 Shorts voiceover, due Thu 8 Oct; 010 Shorts voiceover, due Thu 8 Oct; 011 Voiceover (long), due Sun 15 Nov
 
 **Chief**
 - ▶️ Underway: nothing right now
 
 **codex**
 - ▶️ Underway: nothing right now
-- ⏸ Waiting: 008 Picture: J2163 recipe repair, then J1881 Chief production scope; J1755 separate delivery hold; 008 Edit + master: J2163 recipe repair, then J1881 Chief production scope; J1755 separate delivery hold; 010 Picture: Separate Chief HOS 010 mint authorization after HOS 009 J2033
+- ⏸ Waiting: 008 Picture: J2163 recipe repair, then J1881 Chief production scope; J1755 separate delivery hold; 008 Edit + master: J2163 recipe repair, then J1881 Chief production scope; J1755 separate delivery hold
 
 **Cursor (J2033; Codex/Gemini fallback)**
 - ▶️ Underway: nothing right now
@@ -55,7 +58,6 @@
 - **008** · ⛔ **Picture** — blocked (100%, 112/112 board rows rendered (11 code graphics + 101/101 Flow plates KEEP), with codex since Fri 16 Oct, ⛔ blocked: J2163 recipe repair, then J1881 Chief production scope; J1755 separate delivery hold, due Sun 8 Nov (in 3 d)): J1881_SCOPE_REVIEW.md: recipe FIX, future sync unmeasured; h22/h35 and v03 cf1561c2 preserved. No new media approval; all six Ben notes unresolved.
 - **008** · ⛔ **Edit + master** — blocked (0%, with codex since Tue 3 Nov 18:54, ⛔ blocked: J2163 recipe repair, then J1881 Chief production scope; J1755 separate delivery hold, due Thu 12 Nov (in 7 d)): J1881_SCOPE_REVIEW.md: recipe FIX, future sync unmeasured; h22/h35 and v03 cf1561c2 preserved. No new media approval; all six Ben notes unresolved.
 - **009** · 🔄 **Picture** — in progress (78%, 70/90 board rows recorded: 57 accepted Flow +12 code graphics +1 reuse; 20 Quality remain, with Cursor (J2033; Codex/Gemini fallback) since Thu 15 Oct, ⏸ waiting: J2033 ready after J2026 handoff completes; worker not yet claimed. Fresh Flow credit/price/writer-lock gate before generation., due Sun 15 Nov (in 10 d)): J1237 tranche1 PASS; all57 original Flow hashes reverified local/NAS. 70/90 recorded rows unchanged. J2033 owns remaining20 Quality rows under J2026 cap6000/max3 takes each/floor3000; J2034 independent picture review. Generated is not approved.
-- **010** · ⛔ **Picture** — blocked (100%, 3/3 J2210 readiness steps, with codex since Thu 5 Nov, ⛔ blocked: Separate Chief HOS 010 mint authorization after HOS 009 J2033, due Sun 22 Nov (in 17 d)): J2210/J2211 £0 plans repaired and verified: Option A1 hook 2.849s with 7-body-shot S01..S07 + loop_tail segmentation PASS (S02..S07 in 2.900-3.720s, P1:08_hand_on_rock dropped), distinct pigeon/gull plates, 2 code graphics hash verified. 12 moving Shorts plates and long Flow plates unminted; no assembly release.
 
 ## Next steps (in order)
 
@@ -71,6 +73,9 @@
 10. 008: J2163 repairs the unsafe correction recipe; J1881 held at 2/3 pending repaired input, then Chief scopes production and capable QA. Six notes unresolved; J1755 delivery hold separate.
 11. Thu 29 Oct 18:05: 005 post-air jobs (Related on its Shorts, cards, end screen, pinned comment).
 12. 009: J2033 remaining20 Quality rows now under J2026 bounded cap6000 (live15430;floor3000); J2034 picture review -> J2035 edit -> J2036 package QA/J1275 chapters -> J2037 Ben watch. Long VO locked; J0862 separate. No pickup claimed yet.
+13. 011 (airs Thu 10 Dec 18:00): Anesthesia / Ether Day 1846 locked from backlog (neighbour gate PASS: 6 education >=1M incl. TED-Ed 19.73M & 2.66M; script v02 91.1 PASS, Gemini facts J0198 + Claude quote check J0224 PASS); Shorts scripts v02 + upload package scaffold + long VO queued (J2239; HOS:011 first in jobs/WIP.json next_hos).
+14. 013 (airs Thu 17 Dec 18:00): Evolution / Darwin & Wallace active in jobs/WIP.json (#541); script v02 (92.6 PASS) and long VO hos_013_vo_v03a (512.48 s, J1310) locked; Shorts scripts v02 + upload package + shot list v01 queued (J2240).
+15. Mid-Jan HOS line (jobs/WIP.json next_hos after 011): Thu 24 Dec 012 Genetics (Mendel's 28,000 pea plants, 8 >=1M incl. TED-Ed 5.02M) -> Thu 31 Dec 014 Extinction & Fossils (Mary Anning's Lyme Regis sea dragons, 4 >=1M) -> Thu 7 Jan 015 Cell Theory (Hooke's cork & Remak's dividing cells, 12 >=1M incl. TED-Ed 8.35M) -> Thu 14 Jan 018 Invisible Light (Herschel's thermometer past the rainbow & Ritter's UV, 5 >=1M).
 
 ## Credit left
 
@@ -210,9 +215,9 @@ J1237 tranche1 Chief PASS retained: 57 Flow +12 code graphics +1 reuse =70/90 re
 
 ### 010 · What Killed the Dinosaurs Was Hidden in a Line of Clay
 
-`██████████████░░░░░░` **70%**
+`███████░░░░░░░░░░░░░` **35%**
 
-Airs **Thu 3 Dec** · ready for Ben's OK by **Sun 29 Nov** · ⛔ blocked
+Airs **Thu 3 Dec** · ready for Ben's OK by **Sun 29 Nov** · 🟠 behind
 
 Long VO v01 locked (5 parts); Chief KEEP all five, no pickups (desk 6101773293). Picture next after Claude's board review and credit.
 
@@ -223,11 +228,53 @@ Long VO v01 locked (5 parts); Chief KEEP all five, no pickups (desk 6101773293).
 - ✅ **Voiceover (long)** — done: long VO locked 11 Oct: 5 parts v01, 500 s speech; Chief KEEP all five, no pickups (VO_TAKES_KEEP.json, desk 6101773293)
 - ✅ **Shorts scripts** — done: v02 (test B): two search-titled Shorts, 9 Oct
 - ⬜ **Shorts voiceover** — to do (with Cursor, due Thu 8 Oct (28 d late))
-- ⛔ **Picture** — blocked (100%, 3/3 J2210 readiness steps, with codex since Thu 5 Nov, ⛔ blocked: Separate Chief HOS 010 mint authorization after HOS 009 J2033, due Sun 22 Nov (in 17 d)): J2210/J2211 £0 plans repaired and verified: Option A1 hook 2.849s with 7-body-shot S01..S07 + loop_tail segmentation PASS (S02..S07 in 2.900-3.720s, P1:08_hand_on_rock dropped), distinct pigeon/gull plates, 2 code graphics hash verified. 12 moving Shorts plates and long Flow plates unminted; no assembly release.
+- ⬜ **Picture** — to do (with Cursor, due Sun 22 Nov (in 17 d)): shot list v01 ready (07_Edit-Project/SHOT_LIST_v01.md, about 55 plates; period details P1–P8 all confirmed (J0860, 22 Oct; sources in FACT_NOTES_v01)); plates start after the whole VO batch passes
 - ⬜ **Edit + master** — to do (with Grok, due Thu 26 Nov (in 21 d))
 - ⬜ **Thumbnails** — to do (with Grok, due Thu 26 Nov (in 21 d))
 - ⬜ **Ben's final OK** — to do (with Ben, due Sun 29 Nov (in 24 d))
 - ⬜ **Scheduled** — to do (with Grok, due Mon 30 Nov (in 25 d))
+
+### 011 · Anesthesia: The Day Surgery Stopped Hurting
+
+`████░░░░░░░░░░░░░░░░` **18%**
+
+Airs **Thu 10 Dec** · ready for Ben's OK by **Sun 6 Dec** · 🟢 on track
+
+Locked for Thu 10 Dec (J2231; first in jobs/WIP.json next_hos). Neighbour gate PASS (6 education >=1M incl. TED-Ed 19.73M & 2.66M). Script v02 (91.1 PASS), Gemini facts (J0198) and Claude primary-source quote check (J0224) done; Shorts scripts v02 + upload package scaffold + long VO queued (J2239).
+
+- ✅ **Topic** — done: J0180 / J2231: 6 education >=1M (TED-Ed 19.73M & 2.66M)
+- ✅ **Script** — done: v02, 91.1 (J0183 / J0224)
+- ✅ **Fact check** — done: J0198 Gemini facts (35 OK, 1 hedged) + J0224 Claude quote check PASS
+- ⬜ **Audit + upload package** — to do (with Claude, due Thu 12 Nov (in 7 d)): PRE_BUILD_VIDIQ_AUDIT.md + neighbour/search evidence saved; manifest + description queued (J2239)
+- ⬜ **Voiceover (long)** — to do (with Cursor, due Sun 15 Nov (in 10 d))
+- ⬜ **Shorts scripts** — to do (with Claude, due Thu 12 Nov (in 7 d)): two search-titled Shorts (Test B, J2239)
+- ⬜ **Shorts voiceover** — to do (with Cursor, due Mon 16 Nov (in 11 d))
+- ⬜ **Picture** — to do (with Cursor, due Sun 29 Nov (in 24 d))
+- ⬜ **Edit + master** — to do (with Grok, due Thu 3 Dec (in 28 d))
+- ⬜ **Thumbnails** — to do (with Grok, due Thu 3 Dec (in 28 d))
+- ⬜ **Ben's final OK** — to do (with Ben, due Sun 6 Dec (in 31 d))
+- ⬜ **Scheduled** — to do (with Grok, due Mon 7 Dec (in 32 d))
+
+### 013 · Evolution: The Letter That Forced Darwin to Publish
+
+`██████░░░░░░░░░░░░░░` **28%**
+
+Airs **Thu 17 Dec** · ready for Ben's OK by **Sun 13 Dec** · 🟢 on track
+
+Slotted Thu 17 Dec (J2231; active in jobs/WIP.json #541). Script v02 (92.6 PASS, J0307) and FACT_NOTES_v02 (30 OK, J0304) locked; long VO hos_013_vo_v03a locked (512.48 s, -19.5 LUFS, vo_check 0 fails, J1310). Shorts scripts v02 + upload package + shot list v01 queued (J2240). Next four proposed to mid-Jan (jobs/WIP.json next_hos): 012 Mendel (24 Dec), 014 Anning (31 Dec), 015 Hooke (7 Jan), 018 Herschel (14 Jan).
+
+- ✅ **Topic** — done: J0295 / J2231: 13 education >=1M (Primer 15.7M, Kurzgesagt 11.4M, TED-Ed 3.29M)
+- ✅ **Script** — done: v02, 92.6 (J0299 / J0307)
+- ✅ **Fact check** — done: FACT_NOTES_v02 30 OK, 0 PARTIAL, 0 FLAG (J0304 / J0307)
+- ⬜ **Audit + upload package** — to do (with Claude, due Thu 12 Nov (in 7 d)): PRE_BUILD_VIDIQ_AUDIT.md + neighbour/search evidence saved; manifest + description queued (J2240)
+- ✅ **Voiceover (long)** — done: locked hos_013_vo_v03a (512.48 s, 8:32.48, -19.5 LUFS, vo_check 0 fails, J1310 / Chief h39 on J1301)
+- ⬜ **Shorts scripts** — to do (with Claude, due Thu 12 Nov (in 7 d)): two search-titled Shorts (Test B, J2240)
+- ⬜ **Shorts voiceover** — to do (with Cursor, due Mon 16 Nov (in 11 d))
+- ⬜ **Picture** — to do (with Cursor, due Sun 6 Dec (in 31 d))
+- ⬜ **Edit + master** — to do (with Grok, due Thu 10 Dec (in 35 d))
+- ⬜ **Thumbnails** — to do (with Grok, due Thu 10 Dec (in 35 d))
+- ⬜ **Ben's final OK** — to do (with Ben, due Sun 13 Dec (in 38 d))
+- ⬜ **Scheduled** — to do (with Grok, due Mon 14 Dec (in 39 d))
 
 ## How the % works
 

@@ -1,6 +1,6 @@
 {
   "updated": "2026-11-05",
-  "updated_by": "codex",
+  "updated_by": "macbook",
   "board_url": "https://claude.ai/artifact/Hhk519dkbHMzeaZfp3efhc",
   "stages": [
     {
@@ -77,18 +77,21 @@
     }
   ],
   "next_steps": [
-    "004 airs Thu 15 Oct 18:00: Test & Compare A/B/C armed 9 Oct (C = v07) but on hold — C has no OK. J0106 makes v07b (52/53 at about 2×, file only, due Tue 13 Oct); the Chief OKs it and swaps it in by Wed 14 Oct 18:00, or pair 2 comes out, leaving A and B (desk #180). No other Studio changes on 004 until then.",
+    "004 airs Thu 15 Oct 18:00: Test & Compare A/B/C armed 9 Oct (C = v07) but on hold \u2014 C has no OK. J0106 makes v07b (52/53 at about 2\u00d7, file only, due Tue 13 Oct); the Chief OKs it and swaps it in by Wed 14 Oct 18:00, or pair 2 comes out, leaving A and B (desk #180). No other Studio changes on 004 until then.",
     "005: the 2 Oct thumbnail/Test & Compare/end-screen settings went on a stray private copy; manifest now points at the scheduled long wwcjcFfC-5M (#262). Check and re-arm them on wwcjcFfC-5M before Thu 29 Oct (queue J0101).",
-    "006 Part 03: all 16 Vertex first takes minted 10 Oct (J0107, about £11.86) and KEPT by the Chief (desk #180, 10 Oct 23:38). Next: Part 03 rough v01 on the Mini (J0137, no spend), with the P3:06 Flow slot held.",
-    "Shorts test B (Ben: yes, 9 Oct): two search-titled Shorts per film from 007, v02 scripts for 007–010 (titles autocomplete-checked). Shorts voiceover records the v02 pair.",
-    "Voice queue (ElevenLabs 18,653 until 30 Oct): 007 Shorts B + C (J0109), then 009 long (opening to the Chief J0108/J0110, VO J0111), then 010 long (J0112, J0113), then the 008–010 Shorts. Each job checks the balance first; no music beds without the Chief's OK.",
+    "006 Part 03: all 16 Vertex first takes minted 10 Oct (J0107, about \u00a311.86) and KEPT by the Chief (desk #180, 10 Oct 23:38). Next: Part 03 rough v01 on the Mini (J0137, no spend), with the P3:06 Flow slot held.",
+    "Shorts test B (Ben: yes, 9 Oct): two search-titled Shorts per film from 007, v02 scripts for 007\u2013010 (titles autocomplete-checked). Shorts voiceover records the v02 pair.",
+    "Voice queue (ElevenLabs 18,653 until 30 Oct): 007 Shorts B + C (J0109), then 009 long (opening to the Chief J0108/J0110, VO J0111), then 010 long (J0112, J0113), then the 008\u2013010 Shorts. Each job checks the balance first; no music beds without the Chief's OK.",
     "Four a month on each channel (Ben, 9 Oct): the channel short of 4 gets work and credits first.",
-    "006 picture: Mon 12 Oct after 09:00 read the Flow balance and price P3:06 + Parts 04–05 (J0138), the Chief passes the prices (J0139), then Flow mints and the Part 04/05 roughs (J0140); picture by Sun 25 Oct, edit and thumbnails by Thu 29 Oct, Ben's final OK Sun 1 Nov.",
-    "Mon 12 Oct: Flow credits refill (AI Ultra). J0138 reads the balance and re-prices 006 (P3:06, Parts 04–05), then 007, on Flow rates; the Chief passes before any mint (J0139).",
+    "006 picture: Mon 12 Oct after 09:00 read the Flow balance and price P3:06 + Parts 04\u201305 (J0138), the Chief passes the prices (J0139), then Flow mints and the Part 04/05 roughs (J0140); picture by Sun 25 Oct, edit and thumbnails by Thu 29 Oct, Ben's final OK Sun 1 Nov.",
+    "Mon 12 Oct: Flow credits refill (AI Ultra). J0138 reads the balance and re-prices 006 (P3:06, Parts 04\u201305), then 007, on Flow rates; the Chief passes before any mint (J0139).",
     "007 picture: plate boards priced (96 rows, 80 mints); spend starts after 006 and once the whole voiceover batch has passed.",
     "008: J2163 repairs the unsafe correction recipe; J1881 held at 2/3 pending repaired input, then Chief scopes production and capable QA. Six notes unresolved; J1755 delivery hold separate.",
     "Thu 29 Oct 18:05: 005 post-air jobs (Related on its Shorts, cards, end screen, pinned comment).",
-    "009: J2033 remaining20 Quality rows now under J2026 bounded cap6000 (live15430;floor3000); J2034 picture review -> J2035 edit -> J2036 package QA/J1275 chapters -> J2037 Ben watch. Long VO locked; J0862 separate. No pickup claimed yet."
+    "009: J2033 remaining20 Quality rows now under J2026 bounded cap6000 (live15430;floor3000); J2034 picture review -> J2035 edit -> J2036 package QA/J1275 chapters -> J2037 Ben watch. Long VO locked; J0862 separate. No pickup claimed yet.",
+    "011 (airs Thu 10 Dec 18:00): Anesthesia / Ether Day 1846 locked from backlog (neighbour gate PASS: 6 education >=1M incl. TED-Ed 19.73M & 2.66M; script v02 91.1 PASS, Gemini facts J0198 + Claude quote check J0224 PASS); Shorts scripts v02 + upload package scaffold + long VO queued (J2239; HOS:011 first in jobs/WIP.json next_hos).",
+    "013 (airs Thu 17 Dec 18:00): Evolution / Darwin & Wallace active in jobs/WIP.json (#541); script v02 (92.6 PASS) and long VO hos_013_vo_v03a (512.48 s, J1310) locked; Shorts scripts v02 + upload package + shot list v01 queued (J2240).",
+    "Mid-Jan HOS line (jobs/WIP.json next_hos after 011): Thu 24 Dec 012 Genetics (Mendel's 28,000 pea plants, 8 >=1M incl. TED-Ed 5.02M) -> Thu 31 Dec 014 Extinction & Fossils (Mary Anning's Lyme Regis sea dragons, 4 >=1M) -> Thu 7 Jan 015 Cell Theory (Hooke's cork & Remak's dividing cells, 12 >=1M incl. TED-Ed 8.35M) -> Thu 14 Jan 018 Invisible Light (Herschel's thermometer past the rainbow & Ritter's UV, 5 >=1M)."
   ],
   "credits": [
     {
@@ -99,8 +102,8 @@
     },
     {
       "pool": "Vertex free trial (picture)",
-      "left": "about £4.25 projected after 006 Part 03 (16 takes about £11.86; last console reading £16.11 at 10 Oct 22:03Z, console lags)",
-      "rule": "free trial, use it before it ends 10 Nov; spend down to £0, no £5 floor (Ben, 10 Oct 22:50); never onto real money or the card. 006 Part 03 is done (J0107). Each job reads the live Free Trial balance first; a job needing more than is left goes to Ben.",
+      "left": "about \u00a34.25 projected after 006 Part 03 (16 takes about \u00a311.86; last console reading \u00a316.11 at 10 Oct 22:03Z, console lags)",
+      "rule": "free trial, use it before it ends 10 Nov; spend down to \u00a30, no \u00a35 floor (Ben, 10 Oct 22:50); never onto real money or the card. 006 Part 03 is done (J0107). Each job reads the live Free Trial balance first; a job needing more than is left goes to Ben.",
       "checked": "10 Oct"
     },
     {
@@ -243,7 +246,7 @@
         },
         "shorts_vo": {
           "status": "done",
-          "note": "A v02 · B v03b · C v01 locked"
+          "note": "A v02 \u00b7 B v03b \u00b7 C v01 locked"
         },
         "picture": {
           "status": "done",
@@ -341,7 +344,7 @@
         "picture": {
           "status": "done",
           "due": "2026-11-01",
-          "note": "BOARD_V02 all 73/73 Flow rows minted on Flow and KEEP (Chief J0352, 21 Oct, HOS PR #351 merged; 2,890 cr vs 7,550 cap; live Flow 20,900 >= 3,000 buffer). Face lock P2:08_jenner_window KEEP applied to all later readable Jenner faces. 3 £0 code graphics on main (`7808f751`); 2 archive + 18 reuse (£0).",
+          "note": "BOARD_V02 all 73/73 Flow rows minted on Flow and KEEP (Chief J0352, 21 Oct, HOS PR #351 merged; 2,890 cr vs 7,550 cap; live Flow 20,900 >= 3,000 buffer). Face lock P2:08_jenner_window KEEP applied to all later readable Jenner faces. 3 \u00a30 code graphics on main (`7808f751`); 2 archive + 18 reuse (\u00a30).",
           "steps": [
             73,
             73
@@ -609,18 +612,10 @@
           "waiting": "after 010 long VO"
         },
         "picture": {
-          "status": "blocked",
+          "status": "todo",
           "due": "2026-11-22",
-          "owner": "codex",
-          "note": "J2210/J2211 £0 plans repaired and verified: Option A1 hook 2.849s with 7-body-shot S01..S07 + loop_tail segmentation PASS (S02..S07 in 2.900-3.720s, P1:08_hand_on_rock dropped), distinct pigeon/gull plates, 2 code graphics hash verified. 12 moving Shorts plates and long Flow plates unminted; no assembly release.",
-          "underway": false,
-          "waiting": "Separate Chief HOS 010 mint authorization after HOS 009 J2033",
-          "steps": [
-            3,
-            3
-          ],
-          "steps_unit": "J2210 readiness steps",
-          "since": "2026-11-05"
+          "owner": "Cursor",
+          "note": "shot list v01 ready (07_Edit-Project/SHOT_LIST_v01.md, about 55 plates; period details P1\u2013P8 all confirmed (J0860, 22 Oct; sources in FACT_NOTES_v01)); plates start after the whole VO batch passes"
         },
         "edit": {
           "status": "todo",
@@ -637,6 +632,145 @@
         "scheduled": {
           "status": "todo",
           "due": "2026-11-30"
+        }
+      }
+    },
+    {
+      "id": "011",
+      "title": "Anesthesia: The Day Surgery Stopped Hurting",
+      "air": "2026-12-10",
+      "ready_by": "2026-12-06",
+      "summary": "Locked for Thu 10 Dec (J2231; first in jobs/WIP.json next_hos). Neighbour gate PASS (6 education >=1M incl. TED-Ed 19.73M & 2.66M). Script v02 (91.1 PASS), Gemini facts (J0198) and Claude primary-source quote check (J0224) done; Shorts scripts v02 + upload package scaffold + long VO queued (J2239).",
+      "stages": {
+        "topic": {
+          "status": "done",
+          "note": "J0180 / J2231: 6 education >=1M (TED-Ed 19.73M & 2.66M)"
+        },
+        "script": {
+          "status": "done",
+          "note": "v02, 91.1 (J0183 / J0224)"
+        },
+        "facts": {
+          "status": "done",
+          "note": "J0198 Gemini facts (35 OK, 1 hedged) + J0224 Claude quote check PASS"
+        },
+        "package": {
+          "status": "todo",
+          "due": "2026-11-12",
+          "owner": "Claude",
+          "note": "PRE_BUILD_VIDIQ_AUDIT.md + neighbour/search evidence saved; manifest + description queued (J2239)"
+        },
+        "vo": {
+          "status": "todo",
+          "due": "2026-11-15",
+          "owner": "Cursor",
+          "waiting": "after J2239 package scaffold + Shorts scripts v02"
+        },
+        "shorts_scripts": {
+          "status": "todo",
+          "due": "2026-11-12",
+          "owner": "Claude",
+          "note": "two search-titled Shorts (Test B, J2239)"
+        },
+        "shorts_vo": {
+          "status": "todo",
+          "due": "2026-11-16",
+          "owner": "Cursor",
+          "waiting": "after 011 long VO"
+        },
+        "picture": {
+          "status": "todo",
+          "due": "2026-11-29",
+          "owner": "Cursor"
+        },
+        "edit": {
+          "status": "todo",
+          "due": "2026-12-03"
+        },
+        "thumbnails": {
+          "status": "todo",
+          "due": "2026-12-03"
+        },
+        "ben_ok": {
+          "status": "todo",
+          "due": "2026-12-06"
+        },
+        "scheduled": {
+          "status": "todo",
+          "due": "2026-12-07"
+        }
+      }
+    },
+    {
+      "id": "013",
+      "title": "Evolution: The Letter That Forced Darwin to Publish",
+      "air": "2026-12-17",
+      "ready_by": "2026-12-13",
+      "summary": "Slotted Thu 17 Dec (J2231; active in jobs/WIP.json #541). Script v02 (92.6 PASS, J0307) and FACT_NOTES_v02 (30 OK, J0304) locked; long VO hos_013_vo_v03a locked (512.48 s, -19.5 LUFS, vo_check 0 fails, J1310). Shorts scripts v02 + upload package + shot list v01 queued (J2240). Next four proposed to mid-Jan (jobs/WIP.json next_hos): 012 Mendel (24 Dec), 014 Anning (31 Dec), 015 Hooke (7 Jan), 018 Herschel (14 Jan).",
+      "stages": {
+        "topic": {
+          "status": "done",
+          "note": "J0295 / J2231: 13 education >=1M (Primer 15.7M, Kurzgesagt 11.4M, TED-Ed 3.29M)"
+        },
+        "script": {
+          "status": "done",
+          "note": "v02, 92.6 (J0299 / J0307)"
+        },
+        "facts": {
+          "status": "done",
+          "note": "FACT_NOTES_v02 30 OK, 0 PARTIAL, 0 FLAG (J0304 / J0307)"
+        },
+        "package": {
+          "status": "todo",
+          "due": "2026-11-12",
+          "owner": "Claude",
+          "note": "PRE_BUILD_VIDIQ_AUDIT.md + neighbour/search evidence saved; manifest + description queued (J2240)"
+        },
+        "vo": {
+          "status": "done",
+          "due": "2026-10-31",
+          "owner": "Cursor",
+          "note": "locked hos_013_vo_v03a (512.48 s, 8:32.48, -19.5 LUFS, vo_check 0 fails, J1310 / Chief h39 on J1301)",
+          "steps": [
+            6,
+            6
+          ],
+          "steps_unit": "chapters passed",
+          "underway": false
+        },
+        "shorts_scripts": {
+          "status": "todo",
+          "due": "2026-11-12",
+          "owner": "Claude",
+          "note": "two search-titled Shorts (Test B, J2240)"
+        },
+        "shorts_vo": {
+          "status": "todo",
+          "due": "2026-11-16",
+          "owner": "Cursor",
+          "waiting": "after J2240 013 Shorts scripts v02"
+        },
+        "picture": {
+          "status": "todo",
+          "due": "2026-12-06",
+          "owner": "Cursor",
+          "waiting": "after J2240 013 shot list v01 + price review"
+        },
+        "edit": {
+          "status": "todo",
+          "due": "2026-12-10"
+        },
+        "thumbnails": {
+          "status": "todo",
+          "due": "2026-12-10"
+        },
+        "ben_ok": {
+          "status": "todo",
+          "due": "2026-12-13"
+        },
+        "scheduled": {
+          "status": "todo",
+          "due": "2026-12-14"
         }
       }
     }
