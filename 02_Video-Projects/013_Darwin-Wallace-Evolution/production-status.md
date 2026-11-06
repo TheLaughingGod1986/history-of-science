@@ -10,6 +10,7 @@
 | Script review | `01_Script/darwin_script_master_v02.md` (**92.6/100 PASS**, 1,227 spoken words, 8/8 structure gates) |
 | FACT_NOTES | `01_Script/FACT_NOTES_v02.md` (`30 OK · 0 PARTIAL · 0 FLAG`, following `J0304` Gemini quote pass + `J0307` chronology/age updates) |
 | VO | **locked** `hos_013_vo_v03a` (512.480 s, 8:32.48). WAV sha256 `837178125a72fb250d255f1039c5cb7f8630bbb313cf23801a1155f257d796e0`. MP3 sha256 `ada7eaa775104ee5dea9e9be98155abfc0b1e9fda010097f42ca9fa25bed7f85`. v01, v02 and v03 kept. See `02_Voiceover/VO_STATUS.md`. |
+| Shorts VO | **recorded, not locked** (`J2246`, 6 Nov 2026). `hos_013_short_A_v02` 26.64 s and `hos_013_short_B_v02` 26.00 s. Both `vo_check` PASS. See `10_Shorts/vo_v02/VO_STATUS.md`. |
 | Picture | **pre-VO boards only, no mint** |
 | Runtime target | 7–9 min, 6 parts (1,227 spoken words) |
 
@@ -114,8 +115,20 @@ PASS  02_Video-Projects/013_Darwin-Wallace-Evolution/11_Upload-Package/PACKAGE_M
 Script score: **92.6/100** · PASS
 ```
 
+## 6 Nov 2026 — Shorts VO recorded (`J2246`)
+
+House voice, `eleven_v3`, speed 1.04. Two takes, one each, from the v02 txt files. Not a lock.
+
+| Stem | Duration | vo_check | WAV sha256 |
+|---|---|---|---|
+| `hos_013_short_A_v02` | 26.64 s | PASS (pace warn 140 wpm) | `9f80fa1c22951b5f7d25b2365fa5d62a58e848898262e6d5365bb2e68047bef8` |
+| `hos_013_short_B_v02` | 26.00 s | PASS (pace warn 143 wpm; Russel/Russell sounds-alike at 0:11.42) | `6745bd813bd390bdf5091460bd9b5425eca568e4dbb3cf37f2c0a53f70ad47c0` |
+
+Scribe mismatches are the years only (`1835`, `1864`). ElevenLabs 90,171 → 89,847 left (delta 324). Nothing bought. Detail: `10_Shorts/vo_v02/VO_STATUS.md`.
+
 ## STOP
 
 - No Vertex/Veo/Flow minting on this film.
-- VO is locked as `hos_013_vo_v03a`. No further ElevenLabs on this film.
+- The long VO stays locked as `hos_013_vo_v03a`. Do not re-record it.
+- The two Shorts takes above are waiting on review. No further ElevenLabs on them unless that review orders one pickup.
 - Do not merge or close desk PR #180 from this work.

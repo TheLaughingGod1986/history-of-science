@@ -1,0 +1,22 @@
+{
+  "file": "02_Video-Projects/013_Darwin-Wallace-Evolution/10_Shorts/vo_v02/hos_013_short_A_v02.wav",
+  "part": null,
+  "fails": [],
+  "warns": [
+    "pace 140 wpm (< 145); expect a long film — see STUDIO_PLAYBOOK.md §4 speed"
+  ],
+  "duration_s": 26.64,
+  "duration": "0:26.64",
+  "mean_db": -23.7,
+  "peak_db": -3.9,
+  "pauses_over_1s": [],
+  "asr": "faster-whisper small.en",
+  "script_words": 58,
+  "heard_words": 58,
+  "wpm": 140,
+  "word_diffs": [],
+  "first_minute": {
+    "title_question": 0.0
+  },
+  "verdict": "PASS"
+}
