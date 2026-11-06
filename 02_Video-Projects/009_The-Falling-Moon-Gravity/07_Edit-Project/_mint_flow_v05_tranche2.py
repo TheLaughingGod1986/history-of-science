@@ -520,6 +520,173 @@ class WriterLock:
         return False
 
 
+def shared_flow_state_dir() -> Path:
+    """One account ledger for both channels and all checkouts; never repo-local."""
+    return Path.home() / "_desk/state/flow/shared"
+
+
+class SharedFlowAccounting:
+    """Durable liabilities, serialized across channels, with explicit reconciliation.
+
+    A caller must hold this context from the live browser read through Create and
+    outcome persistence. Pending intents survive a crash and block every writer.
+    This component does not infer posted charges from a falling UI balance.
+    Production stays interlocked until all Flow writers adopt this protocol.
+    """
+
+    def __init__(self, state: Path | None = None):
+        self.state = state if state is not None else shared_flow_state_dir()
+        self.lock = WriterLock(self.state / "writer.lock")
+        self.path = self.state / "account.jsonl"
+        self.held = False
+
+    def __enter__(self):
+        self.lock.__enter__()
+        self.held = True
+        try:
+            self.snapshot()
+        except BaseException:
+            self.__exit__(None, None, None)
+            raise
+        return self
+
+    def __exit__(self, *args):
+        self.held = False
+        return self.lock.__exit__(*args)
+
+    def _assert_held(self):
+        if not self.held:
+            raise GuardError("shared Flow writer lock is not held")
+
+    @staticmethod
+    def _amount(value):
+        if type(value) is not int or value < 0:
+            raise GuardError("invalid shared credit amount")
+        return value
+
+    def snapshot(self) -> dict:
+        self._assert_held()
+        reservations, charges = {}, {}
+        try:
+            data = self.path.read_bytes() if self.path.exists() else b""
+            if data and not data.endswith(b"\n"):
+                raise GuardError("torn shared Flow ledger; reconcile before any Create")
+            for line in data.splitlines():
+                event = json.loads(line)
+                if not isinstance(event, dict):
+                    raise GuardError("shared Flow event is not an object")
+                kind, key = event["kind"], event["id"]
+                if not isinstance(key, str) or not key:
+                    raise GuardError("invalid shared event identity")
+                if kind == "reserve":
+                    cap = self._amount(event["cap"])
+                    if not event.get("film") or key in reservations:
+                        raise GuardError("duplicate or unowned reservation")
+                    reservations[key] = dict(cap=cap, film=event["film"], active=True)
+                elif kind == "release":
+                    if key not in reservations or not reservations[key]["active"]:
+                        raise GuardError("unknown/repeated reservation release")
+                    if any(c["reservation"] == key and c["status"] == "PENDING" for c in charges.values()):
+                        raise GuardError("cannot release unresolved pending charge")
+                    reservations[key]["active"] = False
+                elif kind == "intent":
+                    reservation = event["reservation"]
+                    if key in charges or reservation not in reservations or not reservations[reservation]["active"]:
+                        raise GuardError("duplicate charge or inactive reservation")
+                    amount = self._amount(event["amount"])
+                    used = sum(c["amount"] for c in charges.values() if c["reservation"] == reservation)
+                    if amount <= 0 or used + amount > reservations[reservation]["cap"]:
+                        raise GuardError("charge exceeds reservation cap")
+                    charges[key] = dict(reservation=reservation, amount=amount, status="PENDING", posted=False)
+                elif kind in ("charged", "not_submitted"):
+                    charge = charges[key]
+                    if charge["status"] != "PENDING" or not event.get("evidence"):
+                        raise GuardError("invalid pending charge resolution")
+                    charge["status"] = "CHARGED" if kind == "charged" else "NOT_SUBMITTED"
+                    if kind == "not_submitted":
+                        charge["amount"] = 0
+                elif kind == "posted":
+                    charge = charges[key]
+                    if charge["status"] != "CHARGED" or charge["posted"] or not event.get("evidence"):
+                        raise GuardError("invalid posted charge reconciliation")
+                    charge["posted"] = True
+                else:
+                    raise GuardError(f"unknown shared Flow event {kind!r}")
+        except (ValueError, KeyError, TypeError) as exc:
+            raise GuardError("unreadable shared Flow ledger; no Create permitted") from exc
+        # Each unposted charge remains a liability even after its reservation is
+        # released. Active reservations cover only their not-yet-used capacity.
+        unposted = sum(c["amount"] for c in charges.values() if not c["posted"])
+        remaining = sum(
+            r["cap"] - sum(c["amount"] for c in charges.values() if c["reservation"] == key)
+            for key, r in reservations.items() if r["active"])
+        return dict(reservations=reservations, charges=charges,
+                    liability=unposted + remaining,
+                    pending=any(c["status"] == "PENDING" for c in charges.values()))
+
+    def _event(self, event):
+        self._assert_held()
+        append_ledger(self.path, {**event, "at": now_iso()})
+        # Persist the first directory entry as well as the file contents.
+        directory = os.open(self.state, os.O_RDONLY)
+        try:
+            os.fsync(directory)
+        finally:
+            os.close(directory)
+
+    def reserve(self, key: str, film: str, cap: int, *, live: int, floor: int = HEADROOM_FLOOR):
+        state = self.snapshot()
+        self._amount(cap)
+        self._amount(live)
+        self._amount(floor)
+        if not isinstance(key, str) or not key or not isinstance(film, str) or not film or cap <= 0:
+            raise GuardError("reservation needs an identity, film and positive cap")
+        existing = state["reservations"].get(key)
+        if existing:
+            if existing != dict(cap=cap, film=film, active=True):
+                raise GuardError("reservation identity collision")
+            return
+        if state["pending"] or live - state["liability"] - cap < floor:
+            raise GuardError("pending charge or insufficient shared Flow headroom")
+        self._event(dict(kind="reserve", id=key, film=film, cap=cap))
+
+    def intent(self, key: str, reservation: str, amount: int, *, live: int,
+               floor: int = HEADROOM_FLOOR):
+        state = self.snapshot()
+        self._amount(amount)
+        self._amount(live)
+        self._amount(floor)
+        if state["pending"] or live - state["liability"] < floor:
+            raise GuardError("pending charge or insufficient shared Flow headroom")
+        record = state["reservations"].get(reservation)
+        if not isinstance(key, str) or not key or key in state["charges"] or not record or not record["active"]:
+            raise GuardError("duplicate intent or inactive reservation")
+        used = sum(c["amount"] for c in state["charges"].values() if c["reservation"] == reservation)
+        if amount <= 0 or used + amount > record["cap"]:
+            raise GuardError("charge exceeds reservation cap")
+        self._event(dict(kind="intent", id=key, reservation=reservation, amount=amount))
+
+    def resolve(self, key: str, *, submitted: bool, evidence: dict):
+        charge = self.snapshot()["charges"].get(key)
+        if type(submitted) is not bool or not charge or charge["status"] != "PENDING" or not evidence:
+            raise GuardError("resolution needs a pending charge and evidence")
+        self._event(dict(kind="charged" if submitted else "not_submitted", id=key, evidence=evidence))
+
+    def reconcile_posted(self, key: str, *, evidence: dict):
+        charge = self.snapshot()["charges"].get(key)
+        if not charge or charge["status"] != "CHARGED" or charge["posted"] or not evidence:
+            raise GuardError("posted reconciliation needs an unposted charge and evidence")
+        self._event(dict(kind="posted", id=key, evidence=evidence))
+
+    def release(self, key: str):
+        state = self.snapshot()
+        record = state["reservations"].get(key)
+        if not record or not record["active"] or any(
+                c["reservation"] == key and c["status"] == "PENDING" for c in state["charges"].values()):
+            raise GuardError("cannot release inactive reservation or pending charge")
+        self._event(dict(kind="release", id=key))
+
+
 def process_alive(pid: int) -> bool:
     if pid <= 0:
         return False

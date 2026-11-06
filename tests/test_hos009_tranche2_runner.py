@@ -664,6 +664,168 @@ class DetachedSafetyTests(unittest.TestCase):
                 RUNNER.detached_command(SCRIPT, root / "log", root / "done", **defaults)
 
 
+class SharedAccountingTests(unittest.TestCase):
+    def test_floor_and_cross_channel_reservations(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            with RUNNER.SharedFlowAccounting(Path(tmp)) as account:
+                for live in (8900, 8999):
+                    with self.assertRaises(RUNNER.GuardError):
+                        account.reserve('J2033', 'HOS:009', 6000, live=live)
+                account.reserve('J2033', 'HOS:009', 6000, live=9000)
+                account.reserve('J2033', 'HOS:009', 6000, live=9000)  # idempotent
+                with self.assertRaises(RUNNER.GuardError):
+                    account.reserve('OWB-job', 'OWB:032', 1, live=9000)
+                with self.assertRaises(RUNNER.GuardError):
+                    account.reserve('J2033', 'OWB:032', 6000, live=20000)
+                self.assertEqual(account.snapshot()['liability'], 6000)
+
+    def test_crashed_pending_intent_blocks_other_channel_and_retry(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            state = Path(tmp)
+            with RUNNER.SharedFlowAccounting(state) as account:
+                account.reserve('hos', 'HOS:009', 6000, live=20000)
+                account.reserve('owb', 'OWB:032', 100, live=20000)
+                account.intent('take1', 'hos', 100, live=20000)
+            # A new process/session must see the durable intent even with a high balance.
+            with RUNNER.SharedFlowAccounting(state) as account:
+                self.assertTrue(account.snapshot()['pending'])
+                for key, reservation in [('take1', 'hos'), ('take2', 'owb')]:
+                    with self.assertRaises(RUNNER.GuardError):
+                        account.intent(key, reservation, 100, live=20000)
+                with self.assertRaises(RUNNER.GuardError):
+                    account.release('hos')
+                with self.assertRaises(RUNNER.GuardError):
+                    account.reserve('third', 'OWB:031', 100, live=20000)
+
+    def test_unposted_charges_survive_release_and_only_evidence_reconciles(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            with RUNNER.SharedFlowAccounting(Path(tmp)) as account:
+                account.reserve('hos', 'HOS:009', 6000, live=9000)
+                account.intent('take1', 'hos', 100, live=9000)
+                self.assertEqual(account.snapshot()['liability'], 6000)
+                account.resolve('take1', submitted=True, evidence={'receipt': 'fake-create-1'})
+                self.assertEqual(account.snapshot()['liability'], 6000)
+                # Delayed UI deduction cannot be treated as posted automatically.
+                with self.assertRaises(RUNNER.GuardError):
+                    account.intent('take2', 'hos', 100, live=8900)
+                with self.assertRaises(RUNNER.GuardError):
+                    account.reconcile_posted('take1', evidence={})
+                account.reconcile_posted('take1', evidence={'transaction': 'fake-confirmed-1'})
+                self.assertEqual(account.snapshot()['liability'], 5900)
+                account.intent('take2', 'hos', 100, live=8900)
+                account.resolve('take2', submitted=True, evidence={'receipt': 'fake-create-2'})
+                account.release('hos')
+                self.assertEqual(account.snapshot()['liability'], 100)
+                with self.assertRaises(RUNNER.GuardError):
+                    account.reconcile_posted('take1', evidence={'transaction': 'repeat'})
+
+    def test_confirmed_non_submission_restores_capacity_but_identity_cannot_retry(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            with RUNNER.SharedFlowAccounting(Path(tmp)) as account:
+                account.reserve('job', 'HOS:009', 100, live=3100)
+                account.intent('take1', 'job', 100, live=3100)
+                account.resolve('take1', submitted=False, evidence={'guard': 'never-clicked'})
+                self.assertEqual(account.snapshot()['liability'], 100)
+                with self.assertRaises(RUNNER.GuardError):
+                    account.intent('take1', 'job', 100, live=3100)
+                account.intent('take2', 'job', 100, live=3100)
+                account.resolve('take2', submitted=True, evidence={'receipt': 'fake'})
+                with self.assertRaises(RUNNER.GuardError):
+                    account.intent('take3', 'job', 100, live=10000)
+
+    def test_torn_or_invalid_ledger_fails_closed_and_releases_lock(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            state = Path(tmp)
+            for data in (b'{"kind":"reserve"}', b'not-json\n', b'[]\n', b'null\n',
+                         b'{"kind":"unknown","id":"x"}\n'):
+                (state / 'account.jsonl').write_bytes(data)
+                for _ in range(2):
+                    with self.assertRaises(RUNNER.GuardError):
+                        with RUNNER.SharedFlowAccounting(state):
+                            self.fail('invalid ledger accepted')
+            # Failed validation must not leave the OS lock held.
+            (state / 'account.jsonl').write_bytes(b'')
+            with RUNNER.SharedFlowAccounting(state) as account:
+                self.assertEqual(account.snapshot()['liability'], 0)
+
+    def test_mutation_requires_context_and_invalid_amounts_do_not_append(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            state = Path(tmp)
+            account = RUNNER.SharedFlowAccounting(state)
+            with self.assertRaises(RUNNER.GuardError):
+                account.reserve('x', 'HOS:009', 100, live=5000)
+            with account:
+                for amount in (-1, True, 1.5, '100'):
+                    with self.assertRaises(RUNNER.GuardError):
+                        account.reserve('x', 'HOS:009', amount, live=5000)
+                self.assertFalse(account.path.exists())
+
+    def test_real_two_process_competition_only_one_can_reserve_floor(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            code = (
+                "import importlib.util,sys,time\n"
+                f"s=importlib.util.spec_from_file_location('r',{str(SCRIPT)!r})\n"
+                "m=importlib.util.module_from_spec(s);sys.modules[s.name]=m;s.loader.exec_module(m)\n"
+                "from pathlib import Path\n"
+                f"state=Path({str(root)!r})\n"
+                "try:\n"
+                " with m.SharedFlowAccounting(state) as a:\n"
+                "  a.reserve(sys.argv[1],sys.argv[2],6000,live=9000)\n"
+                "  time.sleep(0.2)\n"
+                "except m.GuardError:\n"
+                " raise SystemExit(75)\n")
+            processes = [subprocess.Popen([sys.executable, '-c', code, key, film])
+                         for key, film in [('hos', 'HOS:009'), ('owb', 'OWB:032')]]
+            self.assertEqual(sorted(p.wait(timeout=5) for p in processes), [0, 75])
+            with RUNNER.SharedFlowAccounting(root) as account:
+                self.assertEqual(len(account.snapshot()['reservations']), 1)
+                self.assertEqual(account.snapshot()['liability'], 6000)
+
+    def test_killed_writer_preserves_intent_and_os_lock_recovers(self):
+        import time
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            code = (
+                "import importlib.util,sys,time\n"
+                f"s=importlib.util.spec_from_file_location('r',{str(SCRIPT)!r})\n"
+                "m=importlib.util.module_from_spec(s);sys.modules[s.name]=m;s.loader.exec_module(m)\n"
+                "from pathlib import Path\n"
+                f"root=Path({str(root)!r})\n"
+                "with m.SharedFlowAccounting(root) as a:\n"
+                " a.reserve('hos','HOS:009',6000,live=9000)\n"
+                " a.intent('take','hos',100,live=9000)\n"
+                " (root/'persisted').touch()\n"
+                " time.sleep(30)\n")
+            writer = subprocess.Popen([sys.executable, '-c', code])
+            try:
+                deadline = time.monotonic() + 5
+                while not (root / 'persisted').exists() and time.monotonic() < deadline:
+                    time.sleep(0.02)
+                self.assertTrue((root / 'persisted').exists())
+                writer.kill()
+                writer.wait(timeout=5)
+                with RUNNER.SharedFlowAccounting(root) as recovered:
+                    self.assertTrue(recovered.snapshot()['pending'])
+                    self.assertEqual(recovered.snapshot()['liability'], 6000)
+                    with self.assertRaises(RUNNER.GuardError):
+                        recovered.intent('retry', 'hos', 100, live=20000)
+            finally:
+                if writer.poll() is None:
+                    writer.kill()
+                    writer.wait()
+
+    def test_pending_write_is_fsynced_before_return(self):
+        from unittest.mock import patch
+        with tempfile.TemporaryDirectory() as tmp:
+            with RUNNER.SharedFlowAccounting(Path(tmp)) as account:
+                account.reserve('job', 'HOS:009', 100, live=3100)
+                with patch.object(RUNNER.os, 'fsync', wraps=os.fsync) as sync:
+                    account.intent('take', 'job', 100, live=3100)
+                    self.assertGreaterEqual(sync.call_count, 1)
+                self.assertTrue(account.snapshot()['pending'])
+
+
 class FlowPageTests(unittest.TestCase):
     def test_reuses_shared_helper(self):
         class Page:

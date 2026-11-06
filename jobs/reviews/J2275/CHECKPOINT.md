@@ -83,3 +83,43 @@ Continue from branch `codex/J2275-runner-safety`, linked repair PR445. This
 isolated continuation worktree is `/private/tmp/codex-j2275`. J2275 is released
 for continuation, not complete; J2200 remains FIX and J2033 remains held. No
 Chief re-review is requested until findings 2/3 and inventory checks are ready.
+
+Continuation checkpoint (third bounded run, 6 November 2026):
+
+- Added `SharedFlowAccounting`, a no-browser account protocol with canonical
+  default `~/_desk/state/flow/shared` for both channels and every worktree.
+  Exclusive writer ownership covers the context. JSONL reservation, pre-Create
+  intent, resolution and explicit posted-charge events fsync the file and its
+  directory. A torn, malformed or unknown event fails closed.
+- Full unused reservation capacity plus all unposted charges remain liabilities.
+  Releasing a reservation never releases an unposted charge. Pending intents
+  block both channels, survive a SIGKILL, and require an evidence-bearing
+  resolution. No balance heuristic assumes that a delayed charge has posted.
+  Reservation identity collisions and duplicate take identities are rejected.
+- Nine new regressions cover the exact floor, cross-channel reservations,
+  idempotency/collisions, delayed deductions, non-submission recovery, released
+  reservations with unposted charges, corrupt ledgers, real competing processes,
+  fsync, and a writer killed after persisting its intent.
+
+This is a tested accounting component, **not completion of finding 3**. The
+existing Flow writers do not yet consume it; the live adapter and execute_batch
+still use the old evidence/accounting interfaces. Production's explicit
+`cmd_submit` interlock remains in place. The next continuation must integrate
+this protocol into the real per-Create adapter (including idempotent ai_spend
+receipts), make other channel writers use the same lock/account state, replace
+the environment-based selected-control reader with live UI evidence, and test
+that actual adapter against a fake browser. Only then verify parent-still
+inventory and request the new J2200 system review. Do not remove the interlock
+or mark J2275 done on the strength of these component tests.
+
+Validation for this continuation: 51 zero-submit runner tests pass; full
+`check_all.sh` reports ALL CHECKS PASS (existing installed node_modules used via
+an ignored symlink). No real browser, Create, Flow credit, NAS media, narration,
+accepted trim, scope, upload or publishing change occurred.
+
+Resume from PR445 branch `codex/J2275-runner-safety`; this run's isolated
+worktree is `/private/tmp/codex-j2275-resume`. The HOS shared checkout pull was
+retried after the explicitly authorised mini repair and reports up to date.
+Repair preserved unpushed/dirty work and reclaimed about 346 MB. The disk is
+still below 20 GB; nas_offload reports that moves wait for 01:00–06:00 (above
+the under-8-GB emergency exception), so no out-of-window bulk transfer ran.
