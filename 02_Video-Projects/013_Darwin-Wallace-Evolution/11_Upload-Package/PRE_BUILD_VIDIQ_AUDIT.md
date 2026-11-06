@@ -7,6 +7,7 @@ Filled 19 Oct 2026 from public signals collected in `00_Brand/Channel-Setup/idea
 | Field | Value |
 |-------|-------|
 | ID / slug | 013 · `013_Darwin-Wallace-Evolution` |
+| Air date | **Thu 17 Dec 2026** 18:00 UK (`2026-12-17T18:00:00.000Z`) |
 | Working title | *Evolution: The Letter That Forced Darwin to Publish* (T&C B: *Why Darwin Kept Natural Selection Secret for 20 Years*) |
 | Date pulled | 2026-10-15 |
 | Credits used (approx) | 0 (vidIQ waived) |
