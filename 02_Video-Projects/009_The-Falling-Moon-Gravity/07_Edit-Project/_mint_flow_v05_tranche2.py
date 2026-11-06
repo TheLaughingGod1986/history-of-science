@@ -542,19 +542,81 @@ def refuse_duplicate(pid_path: Path, done_path: Path) -> None:
         raise GuardError(f"runner already live as pid {pid}; {done_path.name} is absent")
 
 
-def detached_command(script: Path, log_path: Path, done_path: Path,
+def runner_state_dir() -> Path:
+    """Runner ownership is independent of the film checkout and worktree."""
+    return Path.home() / "_desk/state/flow/hos009-tranche2"
+
+
+def detached_command(script: Path, log_path: Path, done_path: Path, *,
+                     repo: Path, media: Path, archive: Path, other: int,
+                     ledger: Path, lock: Path, pid: Path,
                      session: str = "hos009-tranche2") -> list[str]:
-    python = shlex.quote(sys.executable)
-    inner = (
-        f"cd {shlex.quote(str(script.parent))} && {python} {shlex.quote(str(script))} submit "
-        f"> {shlex.quote(str(log_path))} 2>&1; echo $? > {shlex.quote(str(done_path))}"
-    )
-    return ["tmux", "new", "-d", "-s", session, inner]
+    """Print-only launch recipe; never arms generation or overwrites logs."""
+    paths = [script, repo, media, archive, ledger, lock, pid, log_path, done_path]
+    if not all(path.is_absolute() for path in paths):
+        raise GuardError("detached inputs and state paths must be absolute")
+    if not script.is_file() or not repo.is_dir() or not media.is_dir() or not archive.is_dir():
+        raise GuardError("detached script/repo/media/archive must already exist")
+    if other < 0 or not re.fullmatch(r"[A-Za-z0-9_-]+", session):
+        raise GuardError("invalid reservation or tmux session")
+    resolved = [path.resolve() for path in (ledger, lock, pid, log_path, done_path)]
+    if len(set(resolved)) != len(resolved):
+        raise GuardError("detached state/log/done paths must be distinct")
+    if log_path.exists() or done_path.exists():
+        raise GuardError("use fresh per-run log and done paths; existing files are preserved")
+    args = [sys.executable, str(script), "launch-worker", "--repo", str(repo),
+            "--media", str(media), "--archive", str(archive),
+            "--other-reservations", str(other), "--ledger", str(ledger),
+            "--lock", str(lock), "--pid", str(pid), "--log", str(log_path),
+            "--done", str(done_path)]
+    return ["tmux", "new", "-d", "-s", session, shlex.join(args)]
 
 
-def claim_pid(pid_path: Path) -> None:
+def launch_once(command: list[str], *, ownership: Path, pid: Path,
+                log: Path, done: Path) -> int:
+    """Own the runner for the child's entire lifetime, including failures.
+
+    flock is acquired before inspecting PID/done or starting a child. A stale
+    .done file never bypasses ownership. SIGKILL leaves a live child's PID for
+    the next owner to refuse; an unreadable PID fails closed.
+    """
+    with WriterLock(ownership):
+        refuse_duplicate(pid, done)
+        if done.exists():
+            raise GuardError("done file already exists; use a fresh run id")
+        log.parent.mkdir(parents=True, exist_ok=True)
+        done.parent.mkdir(parents=True, exist_ok=True)
+        # Exclusive open prevents two launch recipes sharing a log path.
+        with log.open("xb") as handle:
+            gate = ("import os,sys; token=os.read(0,1); "
+                    "sys.exit(125) if token != b'1' else None; "
+                    "os.execvp(sys.argv[1], sys.argv[1:])")
+            child = subprocess.Popen([sys.executable, "-c", gate, *command],
+                                     stdin=subprocess.PIPE, stdout=handle,
+                                     stderr=subprocess.STDOUT)
+            signalled = False
+            try:
+                claim_pid(pid, child.pid)
+                child.stdin.write(b"1")
+                child.stdin.close()
+                signalled = True
+                code = child.wait()
+            except BaseException:
+                if child.stdin and not child.stdin.closed:
+                    child.stdin.close()  # unsignalled child exits without executing
+                if not signalled:
+                    child.wait(timeout=5)
+                # Preserve child pid and ownership evidence on interrupted waits.
+                raise
+        immutable_bytes(done, (str(code) + "\n").encode())
+        return code
+
+
+def claim_pid(pid_path: Path, pid: int | None = None) -> None:
     pid_path.parent.mkdir(parents=True, exist_ok=True)
-    pid_path.write_text(str(os.getpid()) + "\n")
+    temporary = pid_path.with_name(pid_path.name + f".{os.getpid()}.tmp")
+    immutable_bytes(temporary, (str(os.getpid() if pid is None else pid) + "\n").encode())
+    os.replace(temporary, pid_path)
 
 
 def append_ledger(path: Path, entry: dict) -> None:
@@ -958,18 +1020,45 @@ def main(argv: list[str] | None = None) -> int:
     submit.add_argument("--pid", required=False)
     submit.add_argument("--done", required=False)
     submit.add_argument("--archive", required=False)
-    detach = sub.add_parser("detach-command", help="print the tmux command; start nothing")
-    detach.add_argument("--log", required=True)
-    detach.add_argument("--done", required=True)
+    state = runner_state_dir()
+    for name, help_text in (("detach-command", "print a tmux command; start nothing"),
+                            ("launch-worker", "exclusive detached process owner")):
+        launch = sub.add_parser(name, help=help_text)
+        launch.add_argument("--repo", required=True)
+        launch.add_argument("--media", required=True)
+        launch.add_argument("--archive", required=True)
+        launch.add_argument("--other-reservations", type=int, required=True)
+        launch.add_argument("--ledger", default=str(state / "ledger.jsonl"))
+        launch.add_argument("--lock", default=str(state / "writer.lock"))
+        launch.add_argument("--pid", default=str(state / "runner.pid"))
+        launch.add_argument("--log", required=True)
+        launch.add_argument("--done", required=True)
     args = parser.parse_args(argv)
     if args.cmd == "plan":
         repo = Path(args.repo) if args.repo else repo_root_from()
         cmd_plan(repo, Path(args.out) if args.out else None)
         return 0
-    if args.cmd == "detach-command":
-        command = detached_command(Path(__file__).resolve(), Path(args.log), Path(args.done))
-        sys.stdout.write(json.dumps(command) + "\n")
-        return 0
+    if args.cmd in ("detach-command", "launch-worker"):
+        # Validation is shared by the printer and the detached entry point.
+        command = detached_command(
+            Path(__file__).resolve(), Path(args.log), Path(args.done),
+            repo=Path(args.repo), media=Path(args.media), archive=Path(args.archive),
+            other=args.other_reservations, ledger=Path(args.ledger),
+            lock=Path(args.lock), pid=Path(args.pid))
+        load_scope(Path(args.repo))
+        if args.cmd == "detach-command":
+            sys.stdout.write(json.dumps(command) + "\n")
+            return 0
+        # PID evidence must also be canonical for recovery after an owner crash.
+        if Path(args.pid).resolve() != (state / "runner.pid").resolve():
+            raise GuardError("launch-worker requires the canonical runner pid path")
+        # The canonical ownership lock cannot be overridden by another worktree.
+        child_args = shlex.split(command[-1])
+        child_args[2] = "submit"
+        log_index = child_args.index("--log")
+        del child_args[log_index:log_index + 2]
+        return launch_once(child_args, ownership=state / "runner.lock",
+                           pid=Path(args.pid), log=Path(args.log), done=Path(args.done))
     if not submit_armed():
         raise SystemExit(
             "refusing submit: generation is not armed "
@@ -983,10 +1072,10 @@ def main(argv: list[str] | None = None) -> int:
         repo,
         other=args.other_reservations,
         media=Path(args.media),
-        ledger_path=Path(args.ledger) if args.ledger else edit / "FLOW_MINT_LEDGER_v05_tranche2.jsonl",
-        lock_path=Path(args.lock) if args.lock else edit / "tranche2_writer.lock",
-        pid_path=Path(args.pid) if args.pid else edit / "tranche2_runner.pid",
-        done_path=Path(args.done) if args.done else edit / "tranche2_runner.done",
+        ledger_path=Path(args.ledger) if args.ledger else runner_state_dir() / "ledger.jsonl",
+        lock_path=Path(args.lock) if args.lock else runner_state_dir() / "writer.lock",
+        pid_path=Path(args.pid) if args.pid else runner_state_dir() / "runner.pid",
+        done_path=Path(args.done) if args.done else runner_state_dir() / "runner.done",
         archive_dir=Path(args.archive) if args.archive else None,
     )
     return 0

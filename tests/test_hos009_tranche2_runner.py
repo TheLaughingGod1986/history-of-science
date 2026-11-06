@@ -328,11 +328,26 @@ class ExecuteAndProcessTests(unittest.TestCase):
             RUNNER.refuse_duplicate(pid_path, done)
 
     def test_detached_command_records_log_and_done_and_starts_nothing(self):
-        command = RUNNER.detached_command(SCRIPT, Path("/tmp/j2200.log"), Path("/tmp/j2200.done"))
-        self.assertEqual(command[:4], ["tmux", "new", "-d", "-s"])
-        self.assertIn("/tmp/j2200.log", command[-1])
-        self.assertIn("/tmp/j2200.done", command[-1])
-        self.assertNotIn(RUNNER.SUBMIT_ENV, os.environ)
+        import shlex
+        with tempfile.TemporaryDirectory(prefix="launch spaces ") as tmp:
+            root = Path(tmp)
+            command = RUNNER.detached_command(
+                SCRIPT, root / "run.log", root / "run.done", repo=ROOT,
+                media=root, archive=root, other=42, ledger=root / "shared.jsonl",
+                lock=root / "writer.lock", pid=root / "runner.pid")
+            self.assertEqual(command[:4], ["tmux", "new", "-d", "-s"])
+            args = shlex.split(command[-1])
+            self.assertEqual(args[2], "launch-worker")
+            for flag, value in (("--repo", ROOT), ("--media", root),
+                                ("--archive", root), ("--other-reservations", 42),
+                                ("--ledger", root / "shared.jsonl"),
+                                ("--lock", root / "writer.lock"),
+                                ("--pid", root / "runner.pid"),
+                                ("--log", root / "run.log"), ("--done", root / "run.done")):
+                self.assertEqual(args[args.index(flag) + 1], str(value))
+            self.assertFalse((root / "run.log").exists())
+            self.assertFalse((root / "run.done").exists())
+            self.assertNotIn(RUNNER.SUBMIT_ENV, os.environ)
 
     def test_cli_plan_and_unarmed_submit(self):
         env = os.environ.copy()
@@ -467,6 +482,186 @@ class SafetyRegressionTests(unittest.TestCase):
                 RUNNER.cmd_submit(ROOT, other=0, media=Path("/absent"),
                                   ledger_path=Path("/absent"), lock_path=Path("/absent"),
                                   pid_path=Path("/absent"), done_path=Path("/absent"), archive_dir=None)
+
+
+class DetachedSafetyTests(unittest.TestCase):
+    def launch(self, root, command, **overrides):
+        args = dict(ownership=root / "owner.lock", pid=root / "runner.pid",
+                    log=root / "run.log", done=root / "run.done")
+        args.update(overrides)
+        return RUNNER.launch_once(command, **args)
+
+    def test_fake_child_exit_and_output_are_preserved(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            code = self.launch(root, [sys.executable, "-c", "print('fake submit'); raise SystemExit(7)"])
+            self.assertEqual(code, 7)
+            self.assertEqual((root / "run.done").read_text(), "7\n")
+            self.assertEqual((root / "run.log").read_text(), "fake submit\n")
+            # Existing output is immutable even if the old pid has exited.
+            with self.assertRaises(RUNNER.GuardError):
+                self.launch(root, [sys.executable, "-c", "raise SystemExit(0)"])
+            self.assertEqual((root / "run.done").read_text(), "7\n")
+
+    def test_live_owner_blocks_even_with_stale_done_and_different_pid_file(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / "run.done").write_text("0\n")
+            with RUNNER.WriterLock(root / "owner.lock"):
+                with self.assertRaises(RUNNER.GuardError):
+                    self.launch(root, ["unreachable"], pid=root / "different.pid")
+            self.assertFalse((root / "run.log").exists())
+
+    def test_live_or_unreadable_child_pid_blocks_after_owner_crash(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            sleeper = subprocess.Popen([sys.executable, "-c", "import time; time.sleep(30)"])
+            try:
+                (root / "runner.pid").write_text(str(sleeper.pid))
+                with self.assertRaises(RUNNER.GuardError):
+                    self.launch(root, ["unreachable"])
+                (root / "runner.pid").write_text("torn-pid")
+                with self.assertRaises(RUNNER.GuardError):
+                    self.launch(root, ["unreachable"])
+            finally:
+                sleeper.terminate()
+                sleeper.wait()
+            self.assertFalse((root / "run.log").exists())
+
+    def test_killed_owner_leaves_live_child_that_blocks_restart(self):
+        import time
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            owner = root / "crash-owner.py"
+            owner.write_text(
+                "import importlib.util,sys\n"
+                f"s=importlib.util.spec_from_file_location('r',{str(SCRIPT)!r})\n"
+                "m=importlib.util.module_from_spec(s); sys.modules[s.name]=m; s.loader.exec_module(m)\n"
+                "from pathlib import Path\n"
+                f"root=Path({str(root)!r})\n"
+                "command=[sys.executable,'-c',\"from pathlib import Path; import time; Path(\"+repr(str(root/'started'))+\").touch(); time.sleep(30)\"]\n"
+                "m.launch_once(command,ownership=root/'owner.lock',pid=root/'runner.pid',log=root/'first.log',done=root/'first.done')\n")
+            parent = subprocess.Popen([sys.executable, str(owner)])
+            child_pid = None
+            try:
+                deadline = time.monotonic() + 5
+                while not (root / "started").exists() and time.monotonic() < deadline:
+                    time.sleep(0.02)
+                self.assertTrue((root / "started").exists())
+                child_pid = int((root / "runner.pid").read_text())
+                parent.kill()
+                parent.wait(timeout=5)
+                self.assertFalse((root / "first.done").exists())
+                self.assertTrue(RUNNER.process_alive(child_pid))
+                # The kernel released the owner's flock. Durable child identity
+                # must still stop a second child, even with a new log/done pair.
+                with self.assertRaisesRegex(RUNNER.GuardError, "runner already live"):
+                    self.launch(root, ["unreachable"], log=root / "second.log", done=root / "second.done")
+                self.assertFalse((root / "second.log").exists())
+            finally:
+                if parent.poll() is None:
+                    parent.kill()
+                    parent.wait()
+                if child_pid and RUNNER.process_alive(child_pid):
+                    import signal
+                    os.kill(child_pid, signal.SIGTERM)
+
+    def test_pid_record_failure_cannot_start_child_work(self):
+        from unittest.mock import patch
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            marker = root / "must-not-exist"
+            with patch.object(RUNNER, "claim_pid", side_effect=RUNNER.GuardError("pid persistence failed")):
+                with self.assertRaises(RUNNER.GuardError):
+                    self.launch(root, [sys.executable, "-c", f"from pathlib import Path; Path({str(marker)!r}).touch()"])
+            # stdin EOF releases the unsignalled child without executing its command.
+            self.assertFalse(marker.exists())
+
+    def test_same_log_collision_never_starts_child(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / "run.log").write_text("preserve")
+            with self.assertRaises(FileExistsError):
+                self.launch(root, ["unreachable"])
+            self.assertEqual((root / "run.log").read_text(), "preserve")
+            self.assertFalse((root / "runner.pid").exists())
+
+    def test_emitted_command_runs_real_launch_with_fake_submit_entry(self):
+        import shlex
+        with tempfile.TemporaryDirectory(prefix="launch integration ") as tmp:
+            root = Path(tmp)
+            fake = root / "fake runner.py"
+            # Exercise the real CLI and launch owner, replacing ONLY the final
+            # submit function. There is no Flow import or browser in this fake.
+            fake.write_text(
+                "import importlib.util,sys,json,os\n"
+                f"spec=importlib.util.spec_from_file_location('runner',{str(SCRIPT)!r})\n"
+                "m=importlib.util.module_from_spec(spec); sys.modules[spec.name]=m; spec.loader.exec_module(m)\n"
+                "from pathlib import Path\n"
+                f"m.runner_state_dir=lambda: Path({str(root)!r})\n"
+                f"m.__file__={str(fake)!r}\n"
+                "m.cmd_submit=lambda repo,**kw: print(json.dumps(dict(repo=str(repo), **{k:str(v) for k,v in kw.items()}),sort_keys=True))\n"
+                "os.environ[m.SUBMIT_ENV]='1'\n"
+                "raise SystemExit(m.main())\n")
+            command = RUNNER.detached_command(
+                fake, root / "run.log", root / "run.done", repo=ROOT,
+                media=root, archive=root, other=321, ledger=root / "ledger.jsonl",
+                lock=root / "writer.lock", pid=root / "runner.pid")
+            result = subprocess.run(shlex.split(command[-1]), capture_output=True, text=True)
+            self.assertEqual(result.returncode, 0, result.stderr)
+            received = json.loads((root / "run.log").read_text())
+            self.assertEqual(received["media"], str(root))
+            self.assertEqual(received["archive_dir"], str(root))
+            self.assertEqual(received["ledger_path"], str(root / "ledger.jsonl"))
+            self.assertEqual(received["lock_path"], str(root / "writer.lock"))
+            self.assertEqual(received["pid_path"], str(root / "runner.pid"))
+            self.assertEqual(received["done_path"], str(root / "run.done"))
+            self.assertEqual(received["other"], "321")
+            self.assertEqual((root / "run.done").read_text(), "0\n")
+
+    def test_two_launch_processes_start_only_one_fake_child(self):
+        import time
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            owner = root / "owner.py"
+            owner.write_text(
+                "import importlib.util,sys\n"
+                f"s=importlib.util.spec_from_file_location('r',{str(SCRIPT)!r})\n"
+                "m=importlib.util.module_from_spec(s); sys.modules[s.name]=m; s.loader.exec_module(m)\n"
+                "from pathlib import Path\n"
+                f"root=Path({str(root)!r})\n"
+                "tag=sys.argv[1]\n"
+                "command=[sys.executable,'-c',\"from pathlib import Path; import time; Path(\"+repr(str(root/'started'))+\").touch(); time.sleep(1)\"]\n"
+                "raise SystemExit(m.launch_once(command,ownership=root/'shared.lock',pid=root/'runner.pid',log=root/(tag+'.log'),done=root/(tag+'.done')))\n")
+            first = subprocess.Popen([sys.executable, str(owner), "first"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+            try:
+                deadline = time.monotonic() + 5
+                while not (root / "started").exists() and time.monotonic() < deadline:
+                    time.sleep(0.02)
+                self.assertTrue((root / "started").exists())
+                second = subprocess.run([sys.executable, str(owner), "second"], capture_output=True, text=True)
+                self.assertNotEqual(second.returncode, 0)
+                self.assertIn("writer lock held", second.stderr)
+                self.assertFalse((root / "second.log").exists())
+                stdout, stderr = first.communicate(timeout=5)
+                self.assertEqual(first.returncode, 0, stderr)
+            finally:
+                if first.poll() is None:
+                    first.terminate()
+                    first.communicate()
+
+    def test_invalid_launch_paths_or_reservations_are_refused(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            defaults = dict(repo=ROOT, media=root, archive=root, other=0,
+                            ledger=root / "ledger", lock=root / "lock", pid=root / "pid")
+            for change in ({"other": -1}, {"media": root / "absent"},
+                           {"ledger": Path("relative")}, {"lock": root / "pid"}):
+                with self.assertRaises(RUNNER.GuardError):
+                    RUNNER.detached_command(SCRIPT, root / "log", root / "done", **(defaults | change))
+            (root / "done").write_text("0")
+            with self.assertRaises(RUNNER.GuardError):
+                RUNNER.detached_command(SCRIPT, root / "log", root / "done", **defaults)
 
 
 class FlowPageTests(unittest.TestCase):

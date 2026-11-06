@@ -26,7 +26,18 @@ Implemented and covered by zero-submit regressions:
   generated outputs advance. In-scope continuations select the latest verified
   parent take/hash rather than blindly using t1. Existing parent start stills
   must decode and get immutable hash evidence. No perceptual KEEP is inferred.
-- A stale done file no longer hides a live PID.
+- Detached launch now forwards validated absolute repo/media/archive paths,
+  other reservations, ledger/writer/PID state and per-run log/done paths. Missing
+  inputs, negative reservations, aliased state paths and existing log/done files
+  are rejected. The printed recipe never arms generation. The real launch entry
+  owns a canonical cross-worktree runner flock for the child's whole lifetime;
+  it records the child PID before signalling an execution gate. A killed owner
+  leaves durable child PID evidence, preventing another start while that child
+  lives. Missing/torn PID evidence fails closed. A stale done file cannot hide
+  either a live runner lock or a live child. Logs and completion files are created
+  exclusively and preserved. State defaults now live under
+  `~/_desk/state/flow/hos009-tranche2`, not the worktree. These path defaults do
+  not implement cross-channel spend reconciliation (finding 3 below).
 - `cmd_submit` explicitly refuses even when armed until the remaining repairs
   below are implemented. It cannot reach the old unsafe live adapter.
 
@@ -38,15 +49,12 @@ Remaining required work, still on J2275:
    `read_live_evidence` still reads environment strings and is NOT repaired.
 2. Finding 3: canonical cross-channel writer lock plus durable shared reservation,
    pending and spend accounting, reconciliation and concurrency/crash tests.
-   Current ledger/lock CLI defaults are still worktree-local. Do not arm them.
-3. Finding 6: detached command must carry validated media/archive/reservation and
-   canonical state/log/done paths with atomic runner ownership. Only the stale
-   done-file bypass is fixed; detached argument propagation and atomic ownership
-   are NOT fixed.
-4. Expand integration tests for the above and re-run all checks; verify real
+   Defaults are now canonical for this runner, but other channel writers do not
+   yet share its reservation ledger or generation lock. Do not arm them.
+3. Expand integration tests for findings 2/3 and re-run all checks; verify real
    parent-still inventory before a later production release. The zero-price
    still preparation route is still unavailable and fails closed.
-5. Request fresh elected-Chief re-review of J2200 only after all six findings are
+4. Request fresh elected-Chief re-review of J2200 only after all six findings are
    repaired. Worker completion is never authorisation to start J2033.
 
 The original exact20 v05 scope, board hashes, locked narration, accepted trims,
@@ -56,10 +64,22 @@ Validation from this isolated worktree:
 
 ```
 python3 -m unittest tests.test_hos009_tranche2_runner -q
-Ran 33 tests — OK
+Ran 42 tests — OK
 bash 00_Brand/Channel-Setup/tools/check_all.sh
 ALL CHECKS PASS
 ```
 
 The repository checks used an ignored symlink to the existing HOS node_modules.
 Passing these checks does not complete the outstanding safety work.
+
+Continuation checkpoint (second bounded run): launcher finding 6 is implemented.
+The new tests execute the printed command through a fake final submit function,
+start two competing owner processes, kill an owner while its child is live,
+simulate PID-persistence failure, and verify exclusive immutable log/completion
+handling. All fixtures use local temporary files and fake children; no browser,
+Flow credit or NAS operation is involved. Production interlock remains unchanged.
+
+Continue from branch `codex/J2275-runner-safety`, linked repair PR445. This
+isolated continuation worktree is `/private/tmp/codex-j2275`. J2275 is released
+for continuation, not complete; J2200 remains FIX and J2033 remains held. No
+Chief re-review is requested until findings 2/3 and inventory checks are ready.
