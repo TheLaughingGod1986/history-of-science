@@ -1,0 +1,15 @@
+{
+  "checked_utc": "2026-11-05T05:47:00Z",
+  "surface": "Flow existing project settings and account panel via CDP9222",
+  "balance": 15390,
+  "reset_display": "12 Nov at 19:13",
+  "fast_8s_x1": 10,
+  "quality_8s_x1": 100,
+  "displayed_resolution": "720p",
+  "native_1080_route_verified": false,
+  "generation_invoked": false,
+  "settings_restored": "Fast, 8s, portrait, x1",
+  "ledger_record_utc": "2026-11-05T05:46:54Z",
+  "minimum_five_clip_estimate_if_C_fast_eligible": 230,
+  "ceiling": 200
+}
