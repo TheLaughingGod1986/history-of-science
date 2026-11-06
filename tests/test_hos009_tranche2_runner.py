@@ -40,7 +40,7 @@ def price(credits=100, outputs="x1", model=None, line=None):
 def silent_mp4(directory: Path) -> Path:
     dest = directory / "silent.mp4"
     subprocess.run(
-        ["ffmpeg", "-y", "-v", "error", "-f", "lavfi", "-i", "color=c=0x224466:s=160x90:d=1:r=25",
+        ["ffmpeg", "-y", "-v", "error", "-f", "lavfi", "-i", "color=c=0x224466:s=1280x720:d=8:r=25",
          "-c:v", "libx264", "-pix_fmt", "yuv420p", "-an", str(dest)],
         check=True,
     )
@@ -183,13 +183,14 @@ class ExecuteAndProcessTests(unittest.TestCase):
             for row in parents:
                 still = RUNNER.still_path(media, row.part, row.plate_id)
                 still.parent.mkdir(parents=True, exist_ok=True)
-                still.write_bytes(b"still")
+                subprocess.run(["ffmpeg", "-v", "error", "-i", str(clip), "-frames:v", "1", str(still)], check=True)
             now = datetime.now(timezone.utc)
+            (root / "archive").mkdir()
             written = RUNNER.execute_batch(
                 parents, media=media, ledger_path=root / "ledger.jsonl", lock_path=root / "writer.lock",
                 live=15430, other=0, price=price(), account=RUNNER.REQUIRED_ACCOUNT,
                 read_at=now.isoformat(), now=now, submitter=submitter,
-                archive_dir=root / "archive", receipt_path=root / "receipt.json",
+                archive_dir=root / "archive", receipt_path=root / "receipt.json", test_archive=True,
             )
             self.assertEqual([item[0] for item in calls], ["10_how_high", "07_ball_to_moon"])
             self.assertTrue(all(item[1] for item in calls))
@@ -200,8 +201,8 @@ class ExecuteAndProcessTests(unittest.TestCase):
             self.assertNotIn("KEEP", {entry["status"] for entry in ledger})
             archived = list((root / "archive").glob("*.mp4"))
             self.assertEqual(len(archived), 2)
-            sums = (root / "archive" / "SHA256SUMS.txt").read_text()
-            self.assertIn(RUNNER.sha256_file(archived[0]), sums)
+            proof = json.loads(archived[0].with_suffix(".mp4.sha256.json").read_text())
+            self.assertEqual(RUNNER.sha256_file(archived[0]), proof["sha256"])
             again = RUNNER.next_batch(rows, ledger)
             self.assertNotIn("10_how_high", [row.plate_id for row in again])
             self.assertNotIn("07_ball_to_moon", [row.plate_id for row in again])
@@ -281,7 +282,7 @@ class ExecuteAndProcessTests(unittest.TestCase):
             try:
                 with self.assertRaises(RUNNER.GuardError):
                     RUNNER.archive_verified(src, root / "nas-like" / "src.bin")
-                self.assertFalse((root / "nas-like" / "src.bin").exists())
+                self.assertTrue((root / "nas-like" / "src.bin").exists())
             finally:
                 RUNNER.sha256_file = original
 
@@ -353,6 +354,119 @@ class ExecuteAndProcessTests(unittest.TestCase):
             self.assertNotEqual(submit_run.returncode, 0)
             self.assertIn("refusing submit", submit_run.stderr + submit_run.stdout)
             self.assertNotIn("connect_over_cdp", submit_run.stderr + submit_run.stdout)
+
+
+class SafetyRegressionTests(unittest.TestCase):
+    def test_full_reservation_boundary_includes_impending_charge(self):
+        for live in (8900, 8999):
+            with self.assertRaises(RUNNER.GuardError):
+                RUNNER.can_take(live=live, spent=0, pending=0, other=0,
+                                takes_done=0, unknown_pending=False)
+        self.assertEqual(RUNNER.can_take(live=9000, spent=0, pending=0, other=0,
+                                        takes_done=0, unknown_pending=False), 3000)
+
+    def test_delayed_deductions_do_not_release_reservation(self):
+        for spent, pending in ((0, 100), (100, 0), (200, 100)):
+            self.assertEqual(RUNNER.headroom(9000, spent, pending, 0), 3000)
+            with self.assertRaises(RUNNER.GuardError):
+                RUNNER.headroom(8999, spent, pending, 0)
+        self.assertEqual(RUNNER.headroom(8900, 100, 0, 0, posted=100), 3000)
+        with self.assertRaises(RUNNER.GuardError):
+            RUNNER.headroom(9000, 100, 0, 1)
+        with self.assertRaises(RUNNER.GuardError):
+            RUNNER.headroom(9000, 0, 0, 0, posted=100)
+
+    def test_archive_collision_preserves_old_bytes_and_same_hash_is_idempotent(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            src, dest = root / "src", root / "archive"
+            src.write_bytes(b"first")
+            first = RUNNER.archive_verified(src, dest)
+            self.assertEqual(RUNNER.archive_verified(src, dest), first)
+            src.write_bytes(b"different")
+            with self.assertRaises(RUNNER.GuardError):
+                RUNNER.archive_verified(src, dest)
+            self.assertEqual(dest.read_bytes(), b"first")
+            self.assertEqual(json.loads(dest.with_suffix(".sha256.json").read_text())["sha256"],
+                             first["sha256"])
+
+    def test_receipts_cannot_be_overwritten(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "receipt.json"
+            RUNNER.write_receipt(path, ["a"], [])
+            RUNNER.write_receipt(path, ["a"], [])
+            with self.assertRaises(RUNNER.GuardError):
+                RUNNER.write_receipt(path, ["b"], [])
+
+    def test_production_requires_mounted_archive(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            for path in (None, Path(tmp), Path(tmp) / "absent"):
+                with self.assertRaises(RUNNER.GuardError):
+                    RUNNER.require_archive(path)
+
+    def test_technical_checks_duration_dimensions_and_decode(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            good = silent_mp4(root)
+            self.assertTrue(RUNNER.technical_report(good)["ok"])
+            self.assertFalse(RUNNER.technical_report(good, required_s=9)["ok"])
+            small = root / "small.mp4"
+            subprocess.run(["ffmpeg", "-v", "error", "-i", str(good), "-vf", "scale=160:90",
+                            str(small)], check=True)
+            self.assertFalse(RUNNER.technical_report(small)["ok"])
+            small.write_bytes(b"invalid" * 100)
+            self.assertFalse(RUNNER.technical_report(small)["ok"])
+
+    def test_failed_or_missing_output_never_advances(self):
+        rows = RUNNER.order_rows(RUNNER.load_scope(ROOT))
+        entry = {"plate_id": rows[0].plate_id, "part": rows[0].part, "take": 1,
+                 "status": "PENDING_REVIEW", "generated": True, "keep": False,
+                 "technical": {"ok": False}}
+        self.assertEqual(RUNNER.next_batch(rows, [entry]), rows[:2])
+        entry["technical"]["ok"] = True
+        entry["archive"] = {"verified": True, "dest": "/absent", "sha256": "x"}
+        entry["file"] = "/absent"
+        self.assertFalse(RUNNER.verified_output(entry))
+
+    def test_verified_parent_selects_later_take_and_rechecks_hash(self):
+        rows = {r.plate_id: r for r in RUNNER.load_scope(ROOT)}
+        row = rows["08_halley_visit_c1"]
+        self.assertIsNotNone(row.parent)
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            clip = silent_mp4(root)
+            archive = RUNNER.archive_verified(clip, root / "saved.mp4")
+            entry = RUNNER.review_record(row.parent.plate_id, row.parent.part, 2, clip,
+                                         RUNNER.technical_report(clip))
+            entry["archive"] = archive
+            frame = RUNNER.prepare_start_frame(row, root, in_scope_keys={row.parent.key},
+                                                still_price=None, still_maker=None, ledger=[entry])
+            self.assertTrue(frame.exists())
+            clip.write_bytes(b"changed")
+            with self.assertRaises(RUNNER.GuardError):
+                RUNNER.prepare_start_frame(row, root, in_scope_keys={row.parent.key},
+                                           still_price=None, still_maker=None, ledger=[entry])
+
+    def test_stale_done_never_hides_live_process(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            sleeper = subprocess.Popen(["sleep", "30"])
+            try:
+                (root / "pid").write_text(str(sleeper.pid))
+                (root / "done").write_text("0")
+                with self.assertRaises(RUNNER.GuardError):
+                    RUNNER.refuse_duplicate(root / "pid", root / "done")
+            finally:
+                sleeper.kill()
+                sleeper.wait()
+
+    def test_checkpoint_blocks_even_armed_production(self):
+        from unittest.mock import patch
+        with patch.dict(os.environ, {RUNNER.SUBMIT_ENV: "1"}):
+            with self.assertRaisesRegex(RUNNER.GuardError, "repair checkpoint"):
+                RUNNER.cmd_submit(ROOT, other=0, media=Path("/absent"),
+                                  ledger_path=Path("/absent"), lock_path=Path("/absent"),
+                                  pid_path=Path("/absent"), done_path=Path("/absent"), archive_dir=None)
 
 
 class FlowPageTests(unittest.TestCase):

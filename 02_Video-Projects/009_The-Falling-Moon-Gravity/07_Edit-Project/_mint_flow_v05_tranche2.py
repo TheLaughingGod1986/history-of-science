@@ -87,6 +87,7 @@ class Row:
     i2v: str | None
     parent: ParentRef | None
     prompt: str
+    use_s: float = 8.0
 
     @property
     def key(self) -> tuple[int, str]:
@@ -187,6 +188,7 @@ def load_scope(repo: Path) -> list[Row]:
             i2v=i2v,
             parent=parse_parent(i2v),
             prompt=str(plate.get("prompt") or ""),
+            use_s=float(raw["use_s"]),
         ))
     missing = [f"P{part:02d}:{plate_id}" for part, plate_id in PARENTS if (part, plate_id) not in seen]
     if missing:
@@ -327,13 +329,19 @@ def ledger_totals(entries: list[dict], cost: int = MAX_CREDITS_PER_TAKE) -> tupl
     return spent, pending, unknown, takes
 
 
-def headroom(live: int | None, spent: int, pending: int, other: int) -> int:
+def headroom(live: int | None, spent: int, pending: int, other: int, *,
+             posted: int = 0) -> int:
     if live is None or other is None or other < 0:
         raise GuardError("unknown balance or other reservations")
+    if min(spent, pending, posted) < 0 or posted > spent:
+        raise GuardError("invalid posted/unposted accounting")
     remaining_cap = MAX_TOTAL_CREDITS - spent - pending
     if remaining_cap < 0 or spent + pending > MAX_TOTAL_CREDITS:
         raise GuardError(f"spend {spent}+{pending} exceeds the {MAX_TOTAL_CREDITS} cap")
-    left = int(live) - remaining_cap - int(other)
+    # Only reconciled posted charges may already be reflected in the UI balance.
+    # Every other charge remains a liability, including the impending take.
+    unposted = spent - posted + pending
+    left = int(live) - unposted - remaining_cap - int(other)
     if left < HEADROOM_FLOOR:
         raise GuardError(
             f"headroom {left} < {HEADROOM_FLOOR} after reserving remaining cap {remaining_cap} "
@@ -343,7 +351,7 @@ def headroom(live: int | None, spent: int, pending: int, other: int) -> int:
 
 
 def can_take(*, live: int | None, spent: int, pending: int, other: int, takes_done: int,
-             unknown_pending: bool, cost: int = MAX_CREDITS_PER_TAKE) -> int:
+             unknown_pending: bool, cost: int = MAX_CREDITS_PER_TAKE, posted: int = 0) -> int:
     if unknown_pending:
         raise GuardError("unknown outstanding charges")
     if takes_done >= MAX_TAKES_PER_ROW:
@@ -353,7 +361,7 @@ def can_take(*, live: int | None, spent: int, pending: int, other: int, takes_do
     if spent + pending + cost > MAX_TOTAL_CREDITS:
         raise GuardError(f"cap {MAX_TOTAL_CREDITS}: spent {spent} pending {pending} cost {cost}")
     # The new take joins pending charges before Flow is clicked.
-    return headroom(live, spent, pending + cost, other)
+    return headroom(live, spent, pending + cost, other, posted=posted)
 
 
 def start_plan(row: Row) -> dict:
@@ -444,10 +452,20 @@ def extract_last_frame(src: Path, dest: Path) -> Path:
 
 
 def prepare_start_frame(row: Row, media: Path, *, in_scope_keys: set[tuple[int, str]],
-                         still_price: dict | None, still_maker) -> Path:
+                         still_price: dict | None, still_maker, ledger: list[dict] | None = None) -> Path:
     if row.parent is not None:
         in_scope = row.parent.key in in_scope_keys
-        clip = resolve_parent_clip(media, row.parent, in_scope=in_scope)
+        if in_scope:
+            candidates = [entry for entry in latest_entries(ledger or [])
+                          if entry.get("plate_id") == row.parent.plate_id and
+                          entry.get("part") == row.parent.part and verified_output(entry)]
+            if not candidates:
+                raise GuardError(f"no technically verified parent: {row.parent.raw}")
+            clip = Path(max(candidates, key=lambda entry: entry["take"])["file"])
+        else:
+            clip = resolve_parent_clip(media, row.parent, in_scope=False)
+            if clip is not None and not technical_report(clip)["ok"]:
+                raise GuardError(f"invalid external parent: {clip}")
         if clip is None:
             raise GuardError(f"missing parent clip for {row.parent.raw}")
         dest = (media / "04_Generated-Clips" / f"part{row.part:02d}" / "refs" / "v05_flow_stills"
@@ -455,6 +473,11 @@ def prepare_start_frame(row: Row, media: Path, *, in_scope_keys: set[tuple[int, 
         return extract_last_frame(clip, dest)
     existing = still_path(media, row.part, row.plate_id)
     if existing.exists() and existing.stat().st_size > 0:
+        probe = subprocess.run(["ffmpeg", "-v", "error", "-xerror", "-i", str(existing),
+                                "-frames:v", "1", "-f", "null", "-"], capture_output=True)
+        if probe.returncode:
+            raise GuardError(f"start still does not decode: {existing}")
+        immutable_bytes(existing.with_suffix(".sha256"), (sha256_file(existing) + "\n").encode())
         return existing
     displayed = None if still_price is None else still_price.get("displayed_credits")
     if displayed != 0:
@@ -508,9 +531,7 @@ def process_alive(pid: int) -> bool:
 
 
 def refuse_duplicate(pid_path: Path, done_path: Path) -> None:
-    """A missing .done file plus a live pid means the runner is already going."""
-    if done_path.exists():
-        return
+    """A live pid wins even when a stale .done file is present."""
     if not pid_path.exists():
         return
     try:
@@ -542,6 +563,8 @@ def append_ledger(path: Path, entry: dict) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("a") as handle:
         handle.write(json.dumps(entry, sort_keys=True) + "\n")
+        handle.flush()
+        os.fsync(handle.fileno())
 
 
 def read_ledger(path: Path) -> list[dict]:
@@ -589,34 +612,38 @@ def submitting_record(plate_id: str, part: int, take: int, dest: Path) -> dict:
     }
 
 
-def technical_report(path: Path) -> dict:
-    if not path.exists() or path.stat().st_size < 500:
-        return {"ok": False, "reason": "missing or tiny", "review": "PENDING_REVIEW", "keep": False}
-    digest = sha256_file(path)
+def technical_report(path: Path, *, required_s: float = 8.0,
+                     min_width: int = 1280, min_height: int = 720) -> dict:
+    """Decode/format checks only; these never imply perceptual KEEP."""
+    report = {"ok": False, "review": "PENDING_REVIEW", "keep": False}
+    if not path.is_file() or path.stat().st_size < 500:
+        return report | {"reason": "missing or tiny"}
+    report.update(sha256=sha256_file(path), bytes=path.stat().st_size)
     probe = subprocess.run(
-        ["ffprobe", "-v", "error", "-show_entries", "format=duration:stream=codec_type",
-         "-of", "json", str(path)],
+        ["ffprobe", "-v", "error", "-show_entries",
+         "format=duration:stream=codec_type,width,height", "-of", "json", str(path)],
         capture_output=True, text=True, check=False,
     )
-    duration = None
-    audio_streams = None
-    if probe.returncode == 0 and probe.stdout.strip():
+    try:
         payload = json.loads(probe.stdout)
-        try:
-            duration = float((payload.get("format") or {}).get("duration") or 0)
-        except (TypeError, ValueError):
-            duration = None
-        audio_streams = sum(1 for stream in payload.get("streams") or [] if stream.get("codec_type") == "audio")
-    ok = bool(duration and duration > 0 and audio_streams == 0)
-    return {
-        "ok": ok,
-        "sha256": digest,
-        "duration_s": duration,
-        "audio_streams": audio_streams,
-        "bytes": path.stat().st_size,
-        "review": "PENDING_REVIEW",
-        "keep": False,
-    }
+        duration = float(payload["format"]["duration"])
+        videos = [v for v in payload["streams"] if v["codec_type"] == "video"]
+        audio = sum(v["codec_type"] == "audio" for v in payload["streams"])
+        video = videos[0] if len(videos) == 1 else {}
+        width, height = int(video.get("width", 0)), int(video.get("height", 0))
+    except (ValueError, KeyError, TypeError):
+        return report | {"reason": "invalid probe"}
+    decode = subprocess.run(
+        ["ffmpeg", "-v", "error", "-xerror", "-i", str(path),
+         "-map", "0:v:0", "-f", "null", "-"], capture_output=True, check=False,
+    )
+    report.update(duration_s=duration, audio_streams=audio, width=width, height=height,
+                  decode_ok=decode.returncode == 0)
+    report["ok"] = bool(probe.returncode == 0 and decode.returncode == 0 and
+                        len(videos) == 1 and audio == 0 and duration >= required_s - 0.08 and
+                        width >= min_width and height >= min_height and
+                        abs(width / max(height, 1) - 16 / 9) < 0.02)
+    return report
 
 
 def strip_audio(path: Path) -> None:
@@ -628,44 +655,68 @@ def strip_audio(path: Path) -> None:
     silent.replace(path)
 
 
+def immutable_bytes(path: Path, data: bytes) -> None:
+    """Exclusive create; identical retries are idempotent, collisions are errors."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    try:
+        with path.open("xb") as handle:
+            handle.write(data)
+            handle.flush()
+            os.fsync(handle.fileno())
+    except FileExistsError:
+        if path.read_bytes() != data:
+            raise GuardError(f"immutable destination differs: {path}")
+
+
 def archive_verified(src: Path, dest: Path) -> dict:
-    """Copy and compare hashes. A NAS mismatch is left in place, never deleted."""
-    dest.parent.mkdir(parents=True, exist_ok=True)
-    shutil.copy2(src, dest)
+    """Never overwrite or delete an archive, including failed copies."""
     src_hash = sha256_file(src)
+    immutable_bytes(dest, src.read_bytes())
     dest_hash = sha256_file(dest)
     if src_hash != dest_hash:
-        nas = str(dest).startswith("/Volumes/")
-        if not nas:
-            dest.unlink()
-        raise GuardError(f"hash mismatch for {dest}; deleted={not nas}")
-    sums = dest.parent / "SHA256SUMS.txt"
-    line = f"{dest_hash}  {dest.name}\n"
-    existing = sums.read_text() if sums.exists() else ""
-    if line not in existing:
-        with sums.open("a") as handle:
-            handle.write(line)
-    return {"sha256": dest_hash, "dest": str(dest), "verified": True}
+        raise GuardError(f"hash mismatch for {dest}; archive preserved")
+    evidence = {"sha256": dest_hash, "dest": str(dest), "verified": True}
+    immutable_bytes(dest.with_suffix(dest.suffix + ".sha256.json"),
+                    (json.dumps(evidence, sort_keys=True) + "\n").encode())
+    return evidence
+
+
+def require_archive(archive_dir: Path | None, *, nas: bool = True) -> Path:
+    if archive_dir is None:
+        raise GuardError("a verified archive is mandatory before submit")
+    archive = archive_dir.resolve()
+    if not archive.is_dir():
+        raise GuardError("archive directory must already exist")
+    if nas:
+        volumes = Path("/Volumes")
+        if volumes not in archive.parents:
+            raise GuardError("production archive must be on the mounted NAS")
+        mount = volumes / archive.relative_to(volumes).parts[0]
+        if not os.path.ismount(mount):
+            raise GuardError("archive volume is not mounted")
+    # Persist/read back a unique sentinel, without touching an existing file.
+    import uuid
+    probe = archive / (".tranche2-write-probe-" + uuid.uuid4().hex)
+    immutable_bytes(probe, b"tranche2 archive writable\n")
+    if probe.read_bytes() != b"tranche2 archive writable\n":
+        raise GuardError("archive write verification failed")
+    return archive
 
 
 def write_receipt(path: Path, batch_ids: list[str], entries: list[dict]) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    payload = {
-        "rows": batch_ids,
-        "keep": False,
-        "review": "PENDING_REVIEW",
-        "entries": entries,
-    }
-    path.write_text(json.dumps(payload, indent=2) + "\n")
+    payload = {"rows": batch_ids, "keep": False, "review": "PENDING_REVIEW", "entries": entries}
+    immutable_bytes(path, (json.dumps(payload, indent=2, sort_keys=True) + "\n").encode())
 
 
 def execute_batch(batch: list[Row], *, media: Path, ledger_path: Path, lock_path: Path,
                   live: int, other: int, price: PriceEvidence, account: str, read_at: str,
                   now: datetime, submitter, still_price: dict | None = None, still_maker=None,
                   archive_dir: Path | None = None, receipt_path: Path | None = None,
-                  in_scope_keys: set[tuple[int, str]] | None = None) -> list[dict]:
+                  in_scope_keys: set[tuple[int, str]] | None = None,
+                  test_archive: bool = False) -> list[dict]:
     """Mint one guarded batch. submitter is the only Flow video call, and tests pass a fake."""
     assert_batch_limits(batch)
+    archive_dir = require_archive(archive_dir, nas=not test_archive)
     accept_price(price)
     accept_account(account, read_at, now=now)
     keys = in_scope_keys or set()
@@ -685,8 +736,12 @@ def execute_batch(batch: list[Row], *, media: Path, ledger_path: Path, lock_path
                      cost=price.credits)
             pending += price.credits
         for row in batch:
+            # All unresolved submits stop retries after a crash.
+            if any(item.get("status") == "SUBMITTING" for item in latest_entries(entries)):
+                raise GuardError("unresolved submit; reconcile before retry")
             frame = prepare_start_frame(
                 row, media, in_scope_keys=keys, still_price=still_price, still_maker=still_maker,
+                ledger=entries,
             )
             take, dest = next_version(media, row.part, row.plate_id)
             dest.parent.mkdir(parents=True, exist_ok=True)
@@ -695,14 +750,21 @@ def execute_batch(batch: list[Row], *, media: Path, ledger_path: Path, lock_path
             submitter(row, dest, frame)
             if dest.exists():
                 strip_audio(dest)
-            technical = technical_report(dest)
+            technical = technical_report(dest, required_s=max(8.0, row.use_s))
             if not dest.exists():
-                continue
+                raise GuardError("submitted output missing; charge remains unresolved")
             entry = review_record(row.plate_id, row.part, take, dest, technical)
+            entry["archive"] = archive_verified(dest, archive_dir / dest.name)
+            entry["price_evidence"] = vars(price)
+            entry["balance_evidence"] = {"live": live, "account": account, "read_at": read_at}
+            if not technical["ok"]:
+                entry["status"] = "FAILED"
+            write_receipt(archive_dir / (dest.name + ".receipt.json"), [row.plate_id], [entry])
             append_ledger(ledger_path, entry)
-            if archive_dir is not None:
-                archive_verified(dest, archive_dir / dest.name)
+            entries.append(entry)
             written.append(entry)
+            if not technical["ok"]:
+                raise GuardError(f"technical validation failed: {dest}; no advancement")
     if receipt_path is not None:
         write_receipt(receipt_path, [row.plate_id for row in batch], written)
     return written
@@ -769,12 +831,31 @@ def submit_armed(env: dict | None = None) -> bool:
     return (env if env is not None else os.environ).get(SUBMIT_ENV) == "1"
 
 
+def latest_entries(entries: list[dict]) -> list[dict]:
+    latest = {}
+    for entry in entries:
+        latest[(entry.get("part"), entry.get("plate_id"), entry.get("take"))] = entry
+    return list(latest.values())
+
+
+def verified_output(entry: dict) -> bool:
+    if not (entry.get("status") == "PENDING_REVIEW" and entry.get("generated") is True
+            and entry.get("keep") is False and (entry.get("technical") or {}).get("ok") is True
+            and (entry.get("archive") or {}).get("verified") is True):
+        return False
+    path = Path(entry.get("file", ""))
+    archive = Path(entry["archive"].get("dest", ""))
+    return (path.is_file() and archive.is_file() and
+            sha256_file(path) == entry.get("sha256") == sha256_file(archive) ==
+            entry["archive"].get("sha256"))
+
+
 def next_batch(rows: list[Row], ledger: list[dict]) -> list[Row]:
     """Parents first until both are pending review. Then at most five continuations."""
     done = {
         entry.get("plate_id")
-        for entry in ledger
-        if entry.get("status") == "PENDING_REVIEW" and entry.get("generated") is True and entry.get("keep") is False
+        for entry in latest_entries(ledger)
+        if verified_output(entry)
     }
     ordered = [row for row in order_rows(rows) if row.plate_id not in done]
     if not ordered:
@@ -787,37 +868,13 @@ def next_batch(rows: list[Row], ledger: list[dict]) -> list[Row]:
 
 def cmd_submit(repo: Path, *, other: int, media: Path, ledger_path: Path, lock_path: Path,
                pid_path: Path, done_path: Path, archive_dir: Path | None) -> list[dict]:
-    """One guarded batch. Caller must already have armed HOS009_TRANCHE2_SUBMIT."""
+    """Production interlock until the remaining J2275 repairs are reviewed."""
     if not submit_armed():
         raise SystemExit(
             "refusing submit: generation is not armed "
             f"({SUBMIT_ENV} is not 1). Plan only. J2033 stays blocked until Chief passes this runner."
         )
-    refuse_duplicate(pid_path, done_path)
-    claim_pid(pid_path)
-    rows = load_scope(repo)
-    batch = next_batch(rows, read_ledger(ledger_path))
-    if not batch:
-        return []
-    evidence = read_live_evidence()
-    return execute_batch(
-        batch,
-        media=media,
-        ledger_path=ledger_path,
-        lock_path=lock_path,
-        live=evidence["live"],
-        other=other,
-        price=evidence["price"],
-        account=evidence["account"],
-        read_at=evidence["read_at"],
-        now=datetime.now(timezone.utc),
-        submitter=live_video_submit,
-        still_price=evidence.get("still_price"),
-        still_maker=live_still_maker,
-        archive_dir=archive_dir,
-        receipt_path=repo / EDIT_REL / "receipts" / f"tranche2_{batch[0].plate_id}.json",
-        in_scope_keys={row.key for row in rows},
-    )
+    raise GuardError("J2275 repair checkpoint: live per-Create UI guard and shared accounting still pending; no generation")
 
 
 def read_live_evidence() -> dict:
