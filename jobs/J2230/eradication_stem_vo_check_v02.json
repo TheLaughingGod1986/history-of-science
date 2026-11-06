@@ -1,0 +1,37 @@
+{
+  "file": "/Users/benjaminoats/_desk/renders/J2230/vaccine_stems_v02/eradication_vo_input_v02.wav",
+  "part": null,
+  "fails": [
+    "replace at ~0:00.82: script 'a disease that had killed of millions' / heard 'a disease that have killed of millions' — listen, then regenerate that sentence alone if real"
+  ],
+  "warns": [
+    "replace at ~0:06.96: script 'ever ended by humans health workers travelled' / heard 'ever ended by human health workers travelled' — sounds alike (likely the transcriber); listen"
+  ],
+  "duration_s": 22.46,
+  "duration": "0:22.46",
+  "mean_db": -24.0,
+  "peak_db": -5.4,
+  "pauses_over_1s": [],
+  "asr": "faster-whisper small.en",
+  "script_words": 61,
+  "heard_words": 61,
+  "wpm": 171,
+  "word_diffs": [
+    {
+      "at": "0:00.82",
+      "op": "replace",
+      "sounds_alike": false,
+      "script": "a disease that had killed of millions",
+      "heard": "a disease that have killed of millions"
+    },
+    {
+      "at": "0:06.96",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "ever ended by humans health workers travelled",
+      "heard": "ever ended by human health workers travelled"
+    }
+  ],
+  "first_minute": {},
+  "verdict": "FAIL"
+}
