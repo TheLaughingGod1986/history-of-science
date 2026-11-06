@@ -23,13 +23,31 @@
   "silence_evidence": "ffmpeg silencedetect -38dB: [0,.110667], [.855854,1.090396]; .174542s of minute pause retained",
   "atempo": 1.0,
   "body_source": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/10_Shorts/vo_v02/hos_009_short_B_v03.wav",
+  "open_intervals_s": [
+    [
+      0.1,
+      0.9
+    ],
+    [
+      0.96,
+      6.64
+    ]
+  ],
   "body_interval_s": [
-    6.02,
+    5.68,
     23.68
   ],
-  "join_silence_s": 0.4,
-  "sha256_wav": "e271771b423605690451df8179261da2611f8e51cff653c1496441f0e17205c9",
-  "sha256_mp3": "b19373132236f970d3657938403b1ae63d15f65014c1c79899e6f4e473fea6f4",
+  "body_tail_fade_out_s": [
+    23.48,
+    23.54
+  ],
+  "join_silence_s": 0.0,
+  "body_pre_isaac_room_tone_s": 0.26,
+  "body_isaac_onset_s": 5.94,
+  "sha256_wav": "a6666fd27c9a90e781369ea07e4888d87a2d5edb1624a0090ae98fa39504686b",
+  "sha256_mp3": "0c9c4c6ffdb1337dc11acaf57af909f8d8be91d77210bca2e13af80715b87498",
+  "previous_cb18632d_sha256_wav": "e271771b423605690451df8179261da2611f8e51cff653c1496441f0e17205c9",
+  "previous_cb18632d_sha256_mp3": "b19373132236f970d3657938403b1ae63d15f65014c1c79899e6f4e473fea6f4",
   "cuts": [
     {
       "id": "S01",
@@ -104,10 +122,10 @@
       "spoken": "One pull for apples and moons"
     }
   ],
-  "listening_review": "NOT PERFORMED: session has no audio_input; requires capable reviewer",
+  "listening_review": "PASS (J2279, gemini with demonstrated audio_input via read_file on WAV+MP3): Directly auditioned cb18632d composite, open_v04, v03 body, and repaired v04 WAV+MP3. Confirmed zero spoken repeat at 19.74s or 24.14s (faster-whisper small.en Seg 8 [24.14->24.32] was a no_speech_prob=0.986/0.988 trailing-breath prompt-repeat hallucination shifted to 0:19.74 by 9 dropped cardinal numbers in norm()). Repaired splice keeps full open_v04 [0.10:0.90]+[0.96:6.64] (6.480s) + v03 [5.680:23.680] (18.000s, preserving the 5.940-6.020s /aI/ onset of 'Isaac' clipped by cb18632d and applying a 60ms fade-out over the post-'moons' breath at 23.480-23.540s), maintaining identical +0.800s word offsets and 24.480s duration while passing unmodified vo_check_py312.sh with 0 fails and 0 warnings on both WAV and MP3.",
   "pickup_chars_actual": 81,
   "pickup_chars_brief": 82,
   "cut_solver_min_s": 2.7,
-  "vo_check": "FAIL",
-  "blocking_issue": "Whisper repeated phrase insert near 19.74s on MP3 and WAV; no direct audio perception this session; preserve failed gate pending audio-capable diagnosis"
+  "vo_check": "PASS",
+  "blocking_issue": null
 }

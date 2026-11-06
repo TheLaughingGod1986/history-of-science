@@ -2,19 +2,19 @@
 == durable desk handoffs
 ......
 ----------------------------------------------------------------------
-Ran 6 tests in 0.020s
+Ran 6 tests in 0.019s
 
 OK
 
-=== /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/tmppe4qclbp/inbox/10_031_vo.md
+=== /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/tmpe06q_01e/inbox/10_031_vo.md
 <!-- hos-desk v1 from=claude to=codex film=031 stage=vo status=task -->
 Check recording
-agent exited 2; message left in /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/tmppe4qclbp/inbox/10_031_vo.md
+agent exited 2; message left in /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/tmpe06q_01e/inbox/10_031_vo.md
 
-=== /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/tmppe4qclbp/inbox/10_031_vo.md
+=== /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/tmpe06q_01e/inbox/10_031_vo.md
 <!-- hos-desk v1 from=claude to=codex film=031 stage=vo status=task -->
 Check recording
-agent exited 2; message left in /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/tmppe4qclbp/inbox/10_031_vo.md
+agent exited 2; message left in /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/tmpe06q_01e/inbox/10_031_vo.md
 No new messages for Codex.
 -- durable desk handoffs: PASS
 
@@ -28,7 +28,7 @@ STATUS.md and kanban/index.html match PIPELINE.json
 == ElevenLabs guard tests
 ...........
 ----------------------------------------------------------------------
-Ran 11 tests in 0.039s
+Ran 11 tests in 0.037s
 
 OK
 -- ElevenLabs guard tests: PASS
@@ -81,13 +81,14 @@ atempo check PASS: no new build above 1.06 (23 known file(s) listed above).
   - ESM syntax in a file loaded as CommonJS (vitest.config.ts:1:1). Use a `.mjs` extension or set `"type": "module"` in the closest package.json
 Set `VITE_CONFIG_NATIVE_IGNORE_WARNING=true` to suppress this warning.
 
- RUN  v4.1.10 /Users/benjaminoats/_desk/worktrees/j0862-v04/07_Content-Ops
+ RUN  v4.1.10 /private/tmp/j2279-hos-wt/07_Content-Ops
 
+ ✓ tests/hos-contract.test.ts (28 tests) 9ms
 
  Test Files  1 passed (1)
       Tests  28 passed (28)
-   Start at  12:12:56
-   Duration  698ms (transform 51ms, setup 0ms, import 588ms, tests 10ms, environment 0ms)
+   Start at  18:05:27
+   Duration  453ms (transform 27ms, setup 0ms, import 392ms, tests 9ms, environment 0ms)
 
 -- contract tests: PASS
 
@@ -152,7 +153,7 @@ Pass threshold: 90
 
 | Check | Status | Detail |
 |---|---|---|
-| project_dir | OK | Project: /Users/benjaminoats/_desk/worktrees/j0862-v04/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs |
+| project_dir | OK | Project: /tmp/j2279-hos-wt/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs |
 | prebuild_vidiq | OK | Pre-build vidIQ audit present and looks signed off. |
 | script_file | OK | Script: 01_Script/clay_script_master_v01.md |
 | script_review | OK | Script reviewer PASS 92.1/90 (need ≥90). |

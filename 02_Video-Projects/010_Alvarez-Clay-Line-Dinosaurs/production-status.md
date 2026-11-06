@@ -95,18 +95,12 @@ Hook FAIL: Scribe ends fall at 3.680 s. The scoped 0.150 s trim plus maximum 1.0
 Media preserved in the HOS checkout, 009/10_Shorts/vo_v02/hos_009_short_B_v03.{mp3,wav}; TAKE and VO_CHECK records accompany this report. All old v02 files preserved. 010 A retains J1004 Option A1. Downstream J2171 remains blocked on this hook; no film stage approved. Nothing uploaded or published.
 
 
-## J0862 v04 — 6 November 2026
+## J0862 v04 & J2279 audio-capable splice repair — 6 November 2026
 
-Codex covering. J2195 scoped one opening-only pickup; recorded exactly once with Ben Orbit Narrator, eleven_v3, speed1.04. Actual text is 81 characters (brief says82). Live ElevenLabs balance before: 93,478 remaining /121,114; immediate after counter unchanged; guarded spend ledger records81 characters. No top-up or overage.
+Codex covering (`cb18632d` pickup) + Gemini covering (`J2279` direct `audio_input` audition and zero-spend splice/tail-fade repair). `J2195` scoped one opening-only pickup for `009 Short B`; recorded once with Ben Orbit Narrator, `eleven_v3`, `speed=1.04` (`81` actual chars logged; `93,478 / 121,114` ElevenLabs credits remaining; `0` additional chars generated in `J2279`).
 
-Three retained takes are untouched: 009 A v02, 010 A v02 (J1004 Option A1 retained), 010 C v02. All three rerun word gates PASS; A spelling/homophone warnings remain documented. Old 009 B v02/v03 preserved.
+Three retained takes are untouched and PASS `vo_check_py312.sh`: `009 A v02`, `010 A v02` (`J1004` Option A1 retained: `hook_end_s = 2.849 s <= 2.850 s`, `23.289 s` total), and `010 C v02` (`hook_end_s = 1.780 s <= 2.850 s`, `23.560 s` total).
 
-New pickup raw hook2.980s. Removed only measured silence [0,.100] and [.900,.960]; .174542s of the minute pause remains, atempo1.00. Hook now2.820s <=2.850. Opening through second ends6.420s, then .400s clean silence, then original v03 body[6.020:23.680]. Composite24.480s; with1s loop tail25.480s. Eight word-boundary cuts generated with the existing solver, lo2.7 (inside allowed2.5–3.8), no gate code changed. Historical hook_conflict retained as required by negative tests.
+In `J2279`, `gemini` (`audio_input` verified) directly auditioned `009 Short B v04` (`hos_009_short_B_v04.{wav,mp3}`), confirmed zero spoken repeat at `19.74 s` or `24.14 s` (Whisper `Seg 8 [24.14->24.32]` was a `no_speech_prob=0.986/0.988` post-word breath hallucination shifted to `0:19.74` by 9 dropped cardinal numbers in `norm()`), and repaired the `cb18632d` splice (`open_v04[0.100:0.900]+[0.960:6.640]` `6.480 s` + `v03[5.680:23.680]` `18.000 s` with `afade=t=out:st=23.480:d=0.060`), restoring the full `5.940–6.020 s` `"Isaac"` onset while keeping identical `+0.800 s` word offsets, `hook_end_s = 2.820 s`, `24.480 s` VO (`25.480 s` with `1.000 s` loop tail), and 8 cuts. Both `hos_009_short_B_v04.mp3` (`0c9c4c6ffdb1337dc11acaf57af909f8d8be91d77210bca2e13af80715b87498`) and `hos_009_short_B_v04.wav` (`a6666fd27c9a90e781369ea07e4888d87a2d5edb1624a0090ae98fa39504686b`) now PASS unmodified `vo_check_py312.sh` with `0` fails and `0` warnings.
 
-BLOCKED: vo_check_py312.sh FAIL on both new MP3 and WAV. Whisper reports an inserted repeated phrase near19.74s: “pull for apples and moons”. Levels PASS (-24.4dB mean/-4.2dB peak MP3), pace145wpm. No audio_input demonstrated in this session; no claim to hear or approve the splice. Requires a capable reviewer to audition the new composite and original body, diagnose the repeated-phrase report, and return a concrete repair or verified gate correction. No second generation authorized; no failed-gate override.
-
-check_all.sh 009: ALL CHECKS PASS. check_all.sh 010: ALL CHECKS PASS. These repository passes do not override the failed VO gate. Exact outputs and scripts are alongside this report.
-
-Media lives in the main HOS checkout under009/10_Shorts/vo_v02, with original files retained; no media committed. New WAV sha256: e271771b423605690451df8179261da2611f8e51cff653c1496441f0e17205c9. New MP3 sha256: b19373132236f970d3657938403b1ae63d15f65014c1c79899e6f4e473fea6f4.
-
-PR423 board changes removed per J2195; current main board retained. No stage approved, upload, schedule or privacy change. NAS offload checked at5GB free: no eligible scratch to move.
+`check_all.sh 009`: ALL CHECKS PASS. `check_all.sh 010`: ALL CHECKS PASS. PR #423 board changes removed per `J2195`; current main board retained. No stage approved, upload, schedule or privacy change.
