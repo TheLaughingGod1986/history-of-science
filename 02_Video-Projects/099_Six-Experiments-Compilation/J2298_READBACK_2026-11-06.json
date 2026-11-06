@@ -1,0 +1,95 @@
+{
+  "job": "J2298",
+  "agent": "cursor",
+  "video": "uAomPaOBrM8",
+  "channel": "UCXp7HkBIl1LgaznXuZHJyRg",
+  "browser_port": 9460,
+  "captured_utc": "2026-11-06T20:10:16Z",
+  "verdict": "Return to the elected Chief. Not a PASS. Cards are saved and reopened. Level is the expanded readback.",
+  "lint": {
+    "command": "npx tsx scripts/package-lint.ts --film 099",
+    "source": "canonical commit c26a79bd, not the current listing",
+    "result": "PASS",
+    "warn": "[captions] no captionsFile (captions from the script)",
+    "manifest_sha256": "ce57c596df487dda08e12106bb2890ee7c3b74b0458b9dbc8838c95ed5df91da",
+    "master_hash": "not recomputed"
+  },
+  "api_after_card_save": {
+    "channelOk": true,
+    "privacy": "private",
+    "publishAt": "2026-12-10T18:00:00Z",
+    "madeForKids": false,
+    "title": "How Did Experiments Explain Blood, Germs and Atoms?",
+    "videos_list_before_sha256": "daa607b6a6f1bd4e40a2881a504b300793e33a613c59a192e66bffc8dfd2ef01",
+    "videos_list_after_sha256": "daa607b6a6f1bd4e40a2881a504b300793e33a613c59a192e66bffc8dfd2ef01",
+    "note": "The before and after videos.list files are byte-identical. Card changes are not in this API."
+  },
+  "channel_audit": {
+    "before_sha256": "ae3d3f565a837c8a60c4336ab413e919e06e8cda2f3cc00feae1019c6fb5273c",
+    "after_sha256": "ae3d3f565a837c8a60c4336ab413e919e06e8cda2f3cc00feae1019c6fb5273c",
+    "line": "PASS long uAomPaOBrM8 private 2026-12-10 18:00 UK",
+    "summary": "64 videos, 0 errors. The only warn on this video is the standing Data API AI-disclosure omission."
+  },
+  "cards": {
+    "saved": true,
+    "edit_video_status": 200,
+    "reopen": [
+      {
+        "stamp": "17:57:00",
+        "video_id": "_C92tIJCk8A",
+        "title": "How Did We Discover Germs?"
+      },
+      {
+        "stamp": "24:14:00",
+        "video_id": "AL_-qlWko_g",
+        "title": "How Did We Discover the Periodic Table?"
+      }
+    ],
+    "proof": "Each row was expanded on its own after a reload. The Cards dialog Save was grey, so the dialog was clean. One earlier save in this job had written the two times the wrong way round; that layout was corrected before this readback and is not the live state.",
+    "shots": {
+      "cards_saved_1757.png": "10717f5423954d24b9990a25bfa50e455db8a165f817eca3f29877049adc360f",
+      "cards_saved_2414.png": "991505d53b175b4ed7d12be204d97b92b074322dc4a43b7aabf9f60cada4476f"
+    }
+  },
+  "level": {
+    "saved": false,
+    "expanded_read": {
+      "level": "None",
+      "academic_system": "England",
+      "exam": "None",
+      "type_from_dom": "Concept overview"
+    },
+    "tooltip": "To select this level, set Audience to Yes, it's Made for Kids",
+    "why_not_saved": "Year 10 was not selected. The Level control itself says it can be chosen only when Audience is Made for Kids. Audience was left as Not Made for Kids. No header Save was clicked for Level.",
+    "shot": {
+      "level_not_set.png": "0a58b172eba6a45c48d32b3a6ac361a25158e89659f11933e3734dce3f4d168a"
+    }
+  },
+  "schedule_left_as": {
+    "browser_zone": "Europe/London",
+    "visibility_dialog": "10 Dec 2026, Premiere checkbox unchecked, video private before publishing",
+    "publishAt": "2026-12-10T18:00:00Z",
+    "premiere_checkbox": false,
+    "not_made_for_kids": true,
+    "timezone_write": "none. Chief's narrow exception for this video and this slot stands. The dialog text does not include the characters 18:00; the stored instant is the videos.list publishAt."
+  },
+  "untouched": [
+    "title",
+    "description",
+    "privacy",
+    "publishAt",
+    "end screen",
+    "playlist",
+    "places",
+    "chapters",
+    "concepts",
+    "comments",
+    "exam",
+    "premiere",
+    "timezone",
+    "pinned comment",
+    "Test & Compare"
+  ],
+  "desk_evidence": "/Users/benjaminoats/_desk/jobs/J2298/evidence",
+  "studio_json_sha256": "65501446831c265642ea6def35979eecc3e7780b4df9db6ffac8e2db3ab5da3a"
+}
