@@ -1,5 +1,23 @@
 # J2230 — six HOS Shorts gap-fill: preflight and continuation
 
+## Continuation, 6 Nov, Codex second run
+
+Still incomplete, step 1/4. No finished-cut PASS or new watch card. Extraction completed with exit 0; nothing is running. New files:
+
+- `prepare_vaccine_inputs.py`: hash-checks the locked v04 master, extracts two native-resolution edit-reference inputs, and fully decodes both.
+- `VACCINE_ASSEMBLY_INPUTS_v01.json`: exact source intervals, text, 61/64 word counts, 24.50/22.04 s durations, output paths and SHA-256s. Both files are in `_desk/renders/J2230/vaccine_inputs_v01`, not git. These are 16:9 assembly inputs carrying the original mix, **not finished Shorts**, not substitutes for separate stems.
+- `AUTOCOMPLETE_2026-11-06.json`: fresh signed-out GB YouTube suggestions. Exact hits for both Harvey titles, `How Was Smallpox Eradicated?`, and `What Is Variolation?`. The earlier draft `What Was Variolation?` returned none; use the supported present-tense question as the working draft.
+
+Important findings for the editor:
+
+1. The old Part01 v01b character alignment predates the chalk-cross pickup. Locked Part01 is v03. Use `VO_RETIME_v01.json` / the locked master SRT, not the obsolete alignment. Extraction preserves whole locked clauses; exact splice/ASR checks still remain.
+2. The outcome-first eradication input still opens with `A disease...`, not the subject name. **FIX under LEARNINGS rule 8** before final assembly. Do not mistake the input's decode PASS for an opening PASS. Both inputs still need the anomaly-first opening decision, distinct moving frame 0, vertical edit, current title/captions, four-second loop, separate stems and every existing gate.
+3. The latest snapshot says Vaccine `ETynHpIYLeY` is **private, scheduled 12 Nov 18:00 UTC**, despite the job brief calling all sources public. Its exact listing title is `Why Vaccines Are Named After a Cow`. The proposed 25/28 Nov dates are later, but recheck public state before scheduling. Harvey is public as `The Tied Arm That Proved Your Blood Circulates`.
+4. Authorized under-8GB NAS scratch offload ran and found no eligible files; it moved nothing. About 3.7 GiB remains free. Two inputs together use about 39 MiB. No NAS deletion, new generation, spend, YouTube, Buffer, registry or await changes.
+5. This run cannot demonstrate audio/motion perception. Under AGENTS.md's 4 Nov watch rule this alone does **not** park assembly: do measurable checks and frame review, then Chief ruling and Ben's final finished-cut watch. Never claim actual listening/watching.
+
+Detached extraction log: `/Users/benjaminoats/_desk/logs/J2230-vaccine-inputs.log`; `.done` alongside contains `0`. Do not rerun extraction over these inputs. Continue the same four-step job; finish the four compliant cuts, review and verified durable copies before adding watch cards. Full four-cut finishing and QA exceed the remaining single-run scope, so released at this clean handoff.
+
 Codex covering, acting Chief, 6 November 2026. GBP0. **Incomplete; step 1 of 4.**
 
 ## Selection and calendar ruling
