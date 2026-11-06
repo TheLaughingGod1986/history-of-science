@@ -434,6 +434,119 @@
         "raw_hook_end_s": 3.68,
         "vo_duration_s": 23.68,
         "note": "Existing rows remain historical v02 timing; do not assemble until Chief resolves v03 hook failure."
+      },
+      "approved_vo_v04": {
+        "stem": "hos_009_short_B_v04",
+        "orders": [
+          "J2195",
+          "6631275536"
+        ],
+        "text": "In one minute, the Moon falls five metres. An apple falls that far in one second. Isaac Newton worked out why. The Moon is sixty times further from the Earth's centre than we are, so the pull on it is sixty times sixty weaker. Three thousand six hundred times. And the numbers matched. One pull, for apples and Moons.",
+        "duration_s": 24.48,
+        "total_with_loop_tail_s": 25.48,
+        "hook_end_s": 2.82,
+        "hook_raw_end_s": 2.98,
+        "silence_trim_s": 0.16,
+        "trim_intervals_s": [
+          [
+            0,
+            0.1
+          ],
+          [
+            0.9,
+            0.96
+          ]
+        ],
+        "silence_evidence": "ffmpeg silencedetect -38dB: [0,.110667], [.855854,1.090396]; .174542s of minute pause retained",
+        "atempo": 1.0,
+        "body_source": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/10_Shorts/vo_v02/hos_009_short_B_v03.wav",
+        "body_interval_s": [
+          6.02,
+          23.68
+        ],
+        "join_silence_s": 0.4,
+        "sha256_wav": "e271771b423605690451df8179261da2611f8e51cff653c1496441f0e17205c9",
+        "sha256_mp3": "b19373132236f970d3657938403b1ae63d15f65014c1c79899e6f4e473fea6f4",
+        "cuts": [
+          {
+            "id": "S01",
+            "t_start_s": 0.0,
+            "t_end_s": 2.82,
+            "use_s": 2.82,
+            "word_end_s": 2.82,
+            "word_gap_s": 0.0,
+            "spoken": "In one minute, the moon falls five meters."
+          },
+          {
+            "id": "S02",
+            "t_start_s": 2.82,
+            "t_end_s": 5.56,
+            "use_s": 2.74,
+            "word_end_s": 5.56,
+            "word_gap_s": 0.0,
+            "spoken": "An apple falls that far in"
+          },
+          {
+            "id": "S03",
+            "t_start_s": 5.56,
+            "t_end_s": 8.42,
+            "use_s": 2.86,
+            "word_end_s": 8.42,
+            "word_gap_s": 0.0,
+            "spoken": "one second Isaac Newton worked out why."
+          },
+          {
+            "id": "S04",
+            "t_start_s": 8.42,
+            "t_end_s": 11.44,
+            "use_s": 3.02,
+            "word_end_s": 11.44,
+            "word_gap_s": 0.0,
+            "spoken": "The moon is 60 times further"
+          },
+          {
+            "id": "S05",
+            "t_start_s": 11.44,
+            "t_end_s": 14.5,
+            "use_s": 3.06,
+            "word_end_s": 14.5,
+            "word_gap_s": 0.0,
+            "spoken": "from the Earth's center than we are, so the pull on it is"
+          },
+          {
+            "id": "S06",
+            "t_start_s": 14.5,
+            "t_end_s": 17.65,
+            "use_s": 3.15,
+            "word_end_s": 17.65,
+            "word_gap_s": 0.0,
+            "spoken": "60 times 60 weaker, Three thousand"
+          },
+          {
+            "id": "S07",
+            "t_start_s": 17.65,
+            "t_end_s": 20.82,
+            "use_s": 3.17,
+            "word_end_s": 20.82,
+            "word_gap_s": 0.0,
+            "spoken": "six hundred times. And the numbers matched."
+          },
+          {
+            "id": "S08",
+            "t_start_s": 20.82,
+            "t_end_s": 24.48,
+            "use_s": 3.66,
+            "word_end_s": 24.38,
+            "word_gap_s": 0.1,
+            "spoken": "One pull for apples and moons"
+          }
+        ],
+        "listening_review": "NOT PERFORMED: session has no audio_input; requires capable reviewer",
+        "pickup_chars_actual": 81,
+        "pickup_chars_brief": 82,
+        "cut_solver_min_s": 2.7,
+        "vo_check": "FAIL",
+        "blocking_issue": "Whisper repeated phrase insert near 19.74s on MP3 and WAV; no direct audio perception this session; preserve failed gate pending audio-capable diagnosis"
       }
     }
   ],

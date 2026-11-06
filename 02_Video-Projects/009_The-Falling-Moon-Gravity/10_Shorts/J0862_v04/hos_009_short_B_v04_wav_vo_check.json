@@ -1,0 +1,33 @@
+{
+  "file": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/10_Shorts/vo_v02/hos_009_short_B_v04.wav",
+  "part": null,
+  "fails": [
+    "insert at ~0:19.74: script 'apples and moons' / heard 'apples and moons pull for apples and moons' — listen, then regenerate that sentence alone if real"
+  ],
+  "warns": [],
+  "duration_s": 24.48,
+  "duration": "0:24.48",
+  "mean_db": -24.2,
+  "peak_db": -4.0,
+  "pauses_over_1s": [
+    [
+      8.45,
+      1.05
+    ]
+  ],
+  "asr": "faster-whisper small.en",
+  "script_words": 48,
+  "heard_words": 53,
+  "wpm": 145,
+  "word_diffs": [
+    {
+      "at": "0:19.74",
+      "op": "insert",
+      "sounds_alike": false,
+      "script": "apples and moons",
+      "heard": "apples and moons pull for apples and moons"
+    }
+  ],
+  "first_minute": {},
+  "verdict": "FAIL"
+}
