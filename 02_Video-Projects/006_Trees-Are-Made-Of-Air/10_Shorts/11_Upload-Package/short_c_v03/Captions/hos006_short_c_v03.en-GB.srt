@@ -1,0 +1,23 @@
+1
+00:00:00,000 --> 00:00:02,560
+Leaves only make oxygen in the light.
+
+2
+00:00:02,853 --> 00:00:10,880
+In 1779, a Dutch doctor called Jan Ingenhousz put fresh leaves in jars of water by a sunny window.
+
+3
+00:00:11,104 --> 00:00:14,960
+Tiny silver bubbles rose from the green leaves.
+
+4
+00:00:15,120 --> 00:00:18,480
+Move the jar into the shade, and the bubbles stopped.
+
+5
+00:00:18,608 --> 00:00:21,280
+Back into the sun, and they started again.
+
+6
+00:00:21,451 --> 00:00:24,160
+Plants run on sunlight.
