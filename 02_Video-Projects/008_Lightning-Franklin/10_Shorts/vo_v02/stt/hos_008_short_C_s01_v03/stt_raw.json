@@ -1,0 +1,100 @@
+{
+  "language_code": "eng",
+  "language_probability": 1.0,
+  "text": "That rooftop lightning rod was Franklin's idea",
+  "words": [
+    {
+      "text": "That",
+      "start": 0.1,
+      "end": 0.22,
+      "type": "word",
+      "logprob": -3.576272320060525e-06
+    },
+    {
+      "text": " ",
+      "start": 0.22,
+      "end": 0.34,
+      "type": "spacing",
+      "logprob": -1.7404405298293568e-05
+    },
+    {
+      "text": "rooftop",
+      "start": 0.34,
+      "end": 0.78,
+      "type": "word",
+      "logprob": -1.7404405298293568e-05
+    },
+    {
+      "text": " ",
+      "start": 0.78,
+      "end": 0.88,
+      "type": "spacing",
+      "logprob": -2.610649426060263e-05
+    },
+    {
+      "text": "lightning",
+      "start": 0.88,
+      "end": 1.2,
+      "type": "word",
+      "logprob": -2.610649426060263e-05
+    },
+    {
+      "text": " ",
+      "start": 1.2,
+      "end": 1.28,
+      "type": "spacing",
+      "logprob": -1.9073468138230965e-06
+    },
+    {
+      "text": "rod",
+      "start": 1.28,
+      "end": 1.48,
+      "type": "word",
+      "logprob": -1.9073468138230965e-06
+    },
+    {
+      "text": " ",
+      "start": 1.48,
+      "end": 1.52,
+      "type": "spacing",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": "was",
+      "start": 1.52,
+      "end": 1.7,
+      "type": "word",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": " ",
+      "start": 1.7,
+      "end": 1.72,
+      "type": "spacing",
+      "logprob": -1.2993727978027891e-05
+    },
+    {
+      "text": "Franklin's",
+      "start": 1.72,
+      "end": 2.26,
+      "type": "word",
+      "logprob": -8.143040104187093e-05
+    },
+    {
+      "text": " ",
+      "start": 2.26,
+      "end": 2.34,
+      "type": "spacing",
+      "logprob": -2.622600959512056e-06
+    },
+    {
+      "text": "idea",
+      "start": 2.34,
+      "end": 2.68,
+      "type": "word",
+      "logprob": -2.622600959512056e-06
+    }
+  ],
+  "transcription_id": "mQSg3OXmk4NOzzJjEsrb",
+  "audio_duration_secs": 2.88
+}

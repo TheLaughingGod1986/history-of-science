@@ -186,7 +186,7 @@ J1881 reviewed Franklin six-note recipe: FIX. J2163 repairs PTS preservation, ve
 - ✅ **Audit + upload package** — done
 - ✅ **Voiceover (long)** — done: long VO locked 7 Oct: 5 parts, 555 s (9:14.8), 7,497 chars; Part 01 pause trimmed, Part 05 one sentence re-recorded; Claude PASS each part (VO_TAKES_KEEP.json)
 - ✅ **Shorts scripts** — done: v02 (test B): two search-titled Shorts, 9 Oct
-- ✅ **Shorts voiceover** — done: locked 12 Oct (PR #296): Short 01 v01 (22.36 s), Short 02 v02 (22.42 s); both PASS vo_check + Claude listening
+- ✅ **Shorts voiceover** — done: Earlier locked takes retained. J2254 h94 Short C opening pickup PASS: independent vo_check + Scribe 7/7 words; 2.88 s file, last word 2.68 s. J2255 assembles/gates; Short C held for Ben watch and Long Public.
 - ⛔ **Picture** — blocked (100%, 112/112 board rows rendered (11 code graphics + 101/101 Flow plates KEEP), with codex since Fri 16 Oct, ⛔ blocked: J2163 recipe repair, then J1881 Chief production scope; J1755 separate delivery hold, due Sun 8 Nov (in 2 d)): J1881_SCOPE_REVIEW.md: recipe FIX, future sync unmeasured; h22/h35 and v03 cf1561c2 preserved. No new media approval; all six Ben notes unresolved.
 - ⛔ **Edit + master** — blocked (0%, with codex since Tue 3 Nov 18:54, ⛔ blocked: J2163 recipe repair, then J1881 Chief production scope; J1755 separate delivery hold, due Thu 12 Nov (in 6 d)): J1881_SCOPE_REVIEW.md: recipe FIX, future sync unmeasured; h22/h35 and v03 cf1561c2 preserved. No new media approval; all six Ben notes unresolved.
 - ⬜ **Thumbnails** — to do (with Grok, due Thu 12 Nov (in 6 d))
