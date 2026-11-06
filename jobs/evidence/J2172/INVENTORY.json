@@ -1,0 +1,1070 @@
+{
+  "job": "J2172",
+  "roots": [
+    "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs",
+    "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs"
+  ],
+  "files": [
+    {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/02_Voiceover/hos_010_part01_the_line_in_the_rock_v01.wav",
+      "bytes": 17095758,
+      "sha256": "8a043b24e576b8f410aa81c00c0d63ca669a19f051e1a124843e0fc99d512a99",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "audio"
+          }
+        ],
+        "format": {
+          "duration": "89.040000"
+        }
+      }
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/02_Voiceover/hos_010_part03_a_clock_made_of_stardust_v01.wav",
+      "bytes": 15559758,
+      "sha256": "f7303e0bf986ff567c5f01537385225356f90cfb8d5408a59968e2ce605fe287",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "audio"
+          }
+        ],
+        "format": {
+          "duration": "81.040000"
+        }
+      }
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/02_Voiceover/hos_010_part02_the_gorge_at_gubbio_v01.wav",
+      "bytes": 15313998,
+      "sha256": "65f29d59b24c33a6138b2c6d8075b7a1bf253fac26960cf727c9f293a059a9fa",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "audio"
+          }
+        ],
+        "format": {
+          "duration": "79.760000"
+        }
+      }
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/02_Voiceover/hos_010_part04_too_much_iridium_v01.wav",
+      "bytes": 19937358,
+      "sha256": "8922332171f2deedbf548a681daa590e71649d755559393e316b31af7706c072",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "audio"
+          }
+        ],
+        "format": {
+          "duration": "103.840000"
+        }
+      }
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/02_Voiceover/hos_010_part05_the_crater_and_the_birds_v01.wav",
+      "bytes": 28062798,
+      "sha256": "3db989409ee30e8b91cae80785c9af43e744dbc18dc9efbae4409d8a2ec3c79f",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "audio"
+          }
+        ],
+        "format": {
+          "duration": "146.160000"
+        }
+      }
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/02_Voiceover/hos_010_part01_the_line_in_the_rock_v01.mp3",
+      "bytes": 1425452,
+      "sha256": "1ed2e52768aae1486fafbb42d5c7eaa62c705c635a44b3bad5900ae89b97cd41",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "audio"
+          }
+        ],
+        "format": {
+          "duration": "89.040000"
+        }
+      }
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/02_Voiceover/hos_010_part03_a_clock_made_of_stardust_v01.mp3",
+      "bytes": 1297580,
+      "sha256": "9f25fbeb0cd847a0f60e0e21b3a7a1c1072b8900aad4db66114db5bf3cfb0e85",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "audio"
+          }
+        ],
+        "format": {
+          "duration": "81.040000"
+        }
+      }
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/02_Voiceover/hos_010_part02_the_gorge_at_gubbio_v01.mp3",
+      "bytes": 1277228,
+      "sha256": "fc34abf304a6050d110abcd52d7c8da3565fe3da55e5f1734440396d4fb08f10",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "audio"
+          }
+        ],
+        "format": {
+          "duration": "79.760000"
+        }
+      }
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/02_Voiceover/hos_010_part04_too_much_iridium_v01.mp3",
+      "bytes": 1662380,
+      "sha256": "245df0013294e64016b66456d838d2538687158d8064f0dbc570587ac30cda40",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "audio"
+          }
+        ],
+        "format": {
+          "duration": "103.840000"
+        }
+      }
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/02_Voiceover/hos_010_part05_the_crater_and_the_birds_v01.mp3",
+      "bytes": 2339372,
+      "sha256": "7e3c9c4f7122b5a80bad54eb135f08bcc9dba09cbf3da83ca841cebc71d7a67b",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "audio"
+          }
+        ],
+        "format": {
+          "duration": "146.160000"
+        }
+      }
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/07_Edit-Project/code_graphics_v01/code_graphic_010_p5_11_why_survive.jpg",
+      "bytes": 217740,
+      "sha256": "5fe0a8fca25d115126022f7d8e521946bcf4bc840263ada940b17bff8cfd921e"
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/07_Edit-Project/code_graphics_v01/code_graphic_010_p2_02_layers_build.mp4",
+      "bytes": 889615,
+      "sha256": "7ed8394d7301c121b2c81dc96713e231ce402c316375f03e22ba165c32b4a4c6",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "video",
+            "width": 1920,
+            "height": 1080
+          }
+        ],
+        "format": {
+          "duration": "8.033333"
+        }
+      }
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/07_Edit-Project/code_graphics_v01/code_graphic_010_p3_07_clock_idea.mp4",
+      "bytes": 1451698,
+      "sha256": "1616cafdf7400bb199710b0ec0a5d6798726b92233245b9d76af29748012c4c4",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "video",
+            "width": 1920,
+            "height": 1080
+          }
+        ],
+        "format": {
+          "duration": "22.766667"
+        }
+      }
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/07_Edit-Project/code_graphics_v01/code_graphic_010_p4_04_supernova_test.mp4",
+      "bytes": 3258145,
+      "sha256": "b36dd079600d1c72c143f61bd5b1c7758329b1ae15c30cd75cd3fa3e45518ad1",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "video",
+            "width": 1920,
+            "height": 1080
+          }
+        ],
+        "format": {
+          "duration": "20.466667"
+        }
+      }
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/07_Edit-Project/code_graphics_v01/code_graphic_010_p4_05_ten_km.mp4",
+      "bytes": 899637,
+      "sha256": "8c50206c9dcccff276778a0ec4dce563a9a923dea3304722f323c2108731f2d5",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "video",
+            "width": 1920,
+            "height": 1080
+          }
+        ],
+        "format": {
+          "duration": "9.766667"
+        }
+      }
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/07_Edit-Project/code_graphics_v01/code_graphic_010_p4_03_world_pins.jpg",
+      "bytes": 199721,
+      "sha256": "5a5430049c9acca7a19f4f453750cb757e4d407f6cd08767e2ff12e3dae9927d"
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/07_Edit-Project/code_graphics_v01/code_graphic_010_p4_07_food_chain.mp4",
+      "bytes": 724462,
+      "sha256": "048595544b34280bda19994bba5cef77db0d3a4cdbe982935439abf47a1a70bf",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "video",
+            "width": 1920,
+            "height": 1080
+          }
+        ],
+        "format": {
+          "duration": "7.666667"
+        }
+      }
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/07_Edit-Project/code_graphics_v01/code_graphic_010_p5_05_ring_scale.mp4",
+      "bytes": 485704,
+      "sha256": "8f5cd5cf153f8b26cb5cd9667f3c869be05d50d2bb4b0da8bd7ca80acff27723",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "video",
+            "width": 1920,
+            "height": 1080
+          }
+        ],
+        "format": {
+          "duration": "6.533333"
+        }
+      }
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/07_Edit-Project/code_graphics_v01/code_graphic_010_p5_03_caribbean_hunt.mp4",
+      "bytes": 2328437,
+      "sha256": "6813b68c2b68c4c410d3c581a525d2bc6c1fd63a3148c307aa0d1fc9b84e1ce9",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "video",
+            "width": 1920,
+            "height": 1080
+          }
+        ],
+        "format": {
+          "duration": "15.966667"
+        }
+      }
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/07_Edit-Project/code_graphics_v01/code_graphic_010_p2_08_two_clocks.mp4",
+      "bytes": 849910,
+      "sha256": "c6d85b24396419457d20cbd351033030d678a331305e09b67b9c751f5b701784",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "video",
+            "width": 1920,
+            "height": 1080
+          }
+        ],
+        "format": {
+          "duration": "15.766667"
+        }
+      }
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/07_Edit-Project/code_graphics_v01/code_graphic_010_p4_01_iridium_spike.jpg",
+      "bytes": 201305,
+      "sha256": "0e5009bcbdc417252f277cce986ccb15315adf26f754a5da33e7fb3b1b99d925"
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/07_Edit-Project/code_graphics_v01/code_graphic_010_p4_10_where_hole.mp4",
+      "bytes": 499799,
+      "sha256": "8c86250c794cec92e1f676addc746721cd13ded22e66b5fde956882bf5b9caaa",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "video",
+            "width": 1920,
+            "height": 1080
+          }
+        ],
+        "format": {
+          "duration": "4.966667"
+        }
+      }
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/07_Edit-Project/code_graphics_v01/code_graphic_010_p3_02_pyramid_muons.mp4",
+      "bytes": 714021,
+      "sha256": "37372c191695d90a62da2d6a04c8de2e0afd82e3173d1991841e4d380c3bf047",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "video",
+            "width": 1920,
+            "height": 1080
+          }
+        ],
+        "format": {
+          "duration": "7.366667"
+        }
+      }
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/07_Edit-Project/code_graphics_v01/code_graphic_010_p5_05_ring_scale.jpg",
+      "bytes": 192811,
+      "sha256": "a56d5c95eff3d750f7d63baa7d3a203dd8654c82c7385ffa88f44cadce62cc9a"
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/07_Edit-Project/code_graphics_v01/code_graphic_010_p4_10_where_hole.jpg",
+      "bytes": 200776,
+      "sha256": "5899efd87f3a2c9814cebb58b4b0328d36772e11652c7a20292dc78dd7033f86"
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/07_Edit-Project/code_graphics_v01/code_graphic_010_p3_02_pyramid_muons.jpg",
+      "bytes": 181650,
+      "sha256": "62716b11c7f3297481d6c019adef0b037691e66ca0a627c5486ec0cc6481aabb"
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/07_Edit-Project/code_graphics_v01/code_graphic_010_p5_03_caribbean_hunt.jpg",
+      "bytes": 189885,
+      "sha256": "a8f6201f32b80d97ff96d31bf7c4e6cdbaa99768caa0383f09788b43997f77e6"
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/07_Edit-Project/code_graphics_v01/code_graphic_010_p4_01_iridium_spike.mp4",
+      "bytes": 1142457,
+      "sha256": "f9b504cf26e927d988a55aea58b4b2173660c2188b0ca94561e2c85479c2fd84",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "video",
+            "width": 1920,
+            "height": 1080
+          }
+        ],
+        "format": {
+          "duration": "17.033333"
+        }
+      }
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/07_Edit-Project/code_graphics_v01/code_graphic_010_p2_08_two_clocks.jpg",
+      "bytes": 195845,
+      "sha256": "cc947849b805659393e378f91ede5dd12740996e4ac8036b0ba429f6bc8fe990"
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/07_Edit-Project/code_graphics_v01/code_graphic_010_p4_05_ten_km.jpg",
+      "bytes": 183590,
+      "sha256": "c1cd74afc82e42b7eb588354486e6b00ea9dcb9d37b555863f4fbb6290bfe631"
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/07_Edit-Project/code_graphics_v01/code_graphic_010_p5_11_why_survive.mp4",
+      "bytes": 1075008,
+      "sha256": "0e71b03e41d0b16bb92afeb318798f796c06ae9cb78bdb776eba0e4f99940acd",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "video",
+            "width": 1920,
+            "height": 1080
+          }
+        ],
+        "format": {
+          "duration": "14.400000"
+        }
+      }
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/07_Edit-Project/code_graphics_v01/code_graphic_010_p2_02_layers_build.jpg",
+      "bytes": 179854,
+      "sha256": "0a01e0430528e3758ab8d2e560c98cb569400eb0ec49a7c0e62644bca7e477fd"
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/07_Edit-Project/code_graphics_v01/code_graphic_010_p4_04_supernova_test.jpg",
+      "bytes": 235851,
+      "sha256": "c57d7bd2b45b9d70bc692de1056cbb4d18b9ba8094f286c551c1959cc3456014"
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/07_Edit-Project/code_graphics_v01/code_graphic_010_p3_07_clock_idea.jpg",
+      "bytes": 173579,
+      "sha256": "c7b2c9d43860b1fc9c88cb54a13395eb96b81b496b9245671368be6342734f79"
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/07_Edit-Project/code_graphics_v01/CONTACT_SHEET.jpg",
+      "bytes": 212906,
+      "sha256": "b28d8d099db150746f836ff932c46c8786e2a31a503efbfea2ab8e72dbc3eccd"
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/07_Edit-Project/code_graphics_v01/code_graphic_010_p4_03_world_pins.mp4",
+      "bytes": 1030656,
+      "sha256": "bb220b6e6874c93f1baf31fe0a1ff48841e56fffc7c2604feabfb30add6b0a79",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "video",
+            "width": 1920,
+            "height": 1080
+          }
+        ],
+        "format": {
+          "duration": "16.166667"
+        }
+      }
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/07_Edit-Project/code_graphics_v01/code_graphic_010_p4_07_food_chain.jpg",
+      "bytes": 209308,
+      "sha256": "35d7d12ddeccfd573f115a79dfacffbacfa2c271d2996925e017797ed2070227"
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/07_Edit-Project/code_graphics_v01/picture_qa_v01/picture_qa_review.jpg",
+      "bytes": 215351,
+      "sha256": "55a3e3d7c01dcfb5915e33f2bedee9034368a7ebc38ad5c12d3e5886ff031f38"
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/10_Shorts/vo_v02/hos_010_short_A_v02.wav",
+      "bytes": 4362318,
+      "sha256": "2488aa8b49beb3a642597e08f30ca53e723fbee00cd21ad8bdc581a9293ff228",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "audio"
+          }
+        ],
+        "format": {
+          "duration": "22.720000"
+        }
+      }
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/10_Shorts/vo_v02/hos_010_short_C_v02.wav",
+      "bytes": 4331598,
+      "sha256": "ca814ab01ad72fde015b4e157638b5e346d592e5df54cefe97e38969340fcb0c",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "audio"
+          }
+        ],
+        "format": {
+          "duration": "22.560000"
+        }
+      }
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/10_Shorts/vo_v02/hos_010_short_A_v02.mp3",
+      "bytes": 364460,
+      "sha256": "68d88b5b5883f2376bcec29c26d77efea7634d5c7705693f41202ca587b927fb",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "audio"
+          }
+        ],
+        "format": {
+          "duration": "22.720000"
+        }
+      }
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/10_Shorts/vo_v02/hos_010_short_C_v02.mp3",
+      "bytes": 361772,
+      "sha256": "20432ecd645b28e9fdc051578a284cb2845bd09f3040170b192089b256055b87",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "audio"
+          }
+        ],
+        "format": {
+          "duration": "22.560000"
+        }
+      }
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/10_Shorts/vo_v02/parts/hos_010_short_A_v02/ch00.mp3",
+      "bytes": 364504,
+      "sha256": "414710ce48028a13368707436fa0126adf8933a1fa508d8ee6fbb6ec3c8598b0",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "audio"
+          }
+        ],
+        "format": {
+          "duration": "22.720000"
+        }
+      }
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/10_Shorts/vo_v02/parts/hos_010_short_A_v02/gap.wav",
+      "bytes": 134478,
+      "sha256": "51d0ba2b49d741f0d1fa1c2db9eb39746688506d07cbdf14e98455cac9448d67",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "audio"
+          }
+        ],
+        "format": {
+          "duration": "0.700000"
+        }
+      }
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/10_Shorts/vo_v02/parts/hos_010_short_A_v02/ch00.wav",
+      "bytes": 4362318,
+      "sha256": "2488aa8b49beb3a642597e08f30ca53e723fbee00cd21ad8bdc581a9293ff228",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "audio"
+          }
+        ],
+        "format": {
+          "duration": "22.720000"
+        }
+      }
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/10_Shorts/vo_v02/parts/hos_010_short_C_v02/ch00.mp3",
+      "bytes": 361996,
+      "sha256": "e921484aa02ef2475df439b44eefa96572e3292a5a00c9c623bdfa4f4f39344c",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "audio"
+          }
+        ],
+        "format": {
+          "duration": "22.560000"
+        }
+      }
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/10_Shorts/vo_v02/parts/hos_010_short_C_v02/gap.wav",
+      "bytes": 134478,
+      "sha256": "51d0ba2b49d741f0d1fa1c2db9eb39746688506d07cbdf14e98455cac9448d67",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "audio"
+          }
+        ],
+        "format": {
+          "duration": "0.700000"
+        }
+      }
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/10_Shorts/vo_v02/parts/hos_010_short_C_v02/ch00.wav",
+      "bytes": 4331598,
+      "sha256": "ca814ab01ad72fde015b4e157638b5e346d592e5df54cefe97e38969340fcb0c",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "audio"
+          }
+        ],
+        "format": {
+          "duration": "22.560000"
+        }
+      }
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/02_Voiceover/parts/hos_010_part04_too_much_iridium_v01/ch00.mp3",
+      "bytes": 1662685,
+      "sha256": "7dd34c175aed0f47b7f68fc7d2af019218258c6cffd97e76400aab9f355ee418",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "audio"
+          }
+        ],
+        "format": {
+          "duration": "103.840000"
+        }
+      }
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/02_Voiceover/parts/hos_010_part04_too_much_iridium_v01/gap.wav",
+      "bytes": 134478,
+      "sha256": "51d0ba2b49d741f0d1fa1c2db9eb39746688506d07cbdf14e98455cac9448d67",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "audio"
+          }
+        ],
+        "format": {
+          "duration": "0.700000"
+        }
+      }
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/02_Voiceover/parts/hos_010_part04_too_much_iridium_v01/ch00.wav",
+      "bytes": 19937358,
+      "sha256": "8922332171f2deedbf548a681daa590e71649d755559393e316b31af7706c072",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "audio"
+          }
+        ],
+        "format": {
+          "duration": "103.840000"
+        }
+      }
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/02_Voiceover/parts/hos_010_part03_a_clock_made_of_stardust_v01/ch00.mp3",
+      "bytes": 1297807,
+      "sha256": "255055873b0de95c8ba0a016f7f2245f80db3aa8867530c32e9985ed80a0718b",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "audio"
+          }
+        ],
+        "format": {
+          "duration": "81.040000"
+        }
+      }
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/02_Voiceover/parts/hos_010_part03_a_clock_made_of_stardust_v01/gap.wav",
+      "bytes": 134478,
+      "sha256": "51d0ba2b49d741f0d1fa1c2db9eb39746688506d07cbdf14e98455cac9448d67",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "audio"
+          }
+        ],
+        "format": {
+          "duration": "0.700000"
+        }
+      }
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/02_Voiceover/parts/hos_010_part03_a_clock_made_of_stardust_v01/ch00.wav",
+      "bytes": 15559758,
+      "sha256": "f7303e0bf986ff567c5f01537385225356f90cfb8d5408a59968e2ce605fe287",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "audio"
+          }
+        ],
+        "format": {
+          "duration": "81.040000"
+        }
+      }
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/02_Voiceover/parts/hos_010_part05_the_crater_and_the_birds_v01/ch00.mp3",
+      "bytes": 2339779,
+      "sha256": "70f6a59bad981474d4993b7c33dc5b8e3c2afd9537958dc0c1beab4449fe173c",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "audio"
+          }
+        ],
+        "format": {
+          "duration": "146.160000"
+        }
+      }
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/02_Voiceover/parts/hos_010_part05_the_crater_and_the_birds_v01/gap.wav",
+      "bytes": 134478,
+      "sha256": "51d0ba2b49d741f0d1fa1c2db9eb39746688506d07cbdf14e98455cac9448d67",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "audio"
+          }
+        ],
+        "format": {
+          "duration": "0.700000"
+        }
+      }
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/02_Voiceover/parts/hos_010_part05_the_crater_and_the_birds_v01/ch00.wav",
+      "bytes": 28062798,
+      "sha256": "3db989409ee30e8b91cae80785c9af43e744dbc18dc9efbae4409d8a2ec3c79f",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "audio"
+          }
+        ],
+        "format": {
+          "duration": "146.160000"
+        }
+      }
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/02_Voiceover/parts/hos_010_part01_the_line_in_the_rock_v01/ch00.mp3",
+      "bytes": 1425702,
+      "sha256": "cc6382db5e9fdcadf19313fc3276adfdaa8b77eb316ac542b06ee0195d8809b8",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "audio"
+          }
+        ],
+        "format": {
+          "duration": "89.040000"
+        }
+      }
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/02_Voiceover/parts/hos_010_part01_the_line_in_the_rock_v01/gap.wav",
+      "bytes": 134478,
+      "sha256": "51d0ba2b49d741f0d1fa1c2db9eb39746688506d07cbdf14e98455cac9448d67",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "audio"
+          }
+        ],
+        "format": {
+          "duration": "0.700000"
+        }
+      }
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/02_Voiceover/parts/hos_010_part01_the_line_in_the_rock_v01/ch00.wav",
+      "bytes": 17095758,
+      "sha256": "8a043b24e576b8f410aa81c00c0d63ca669a19f051e1a124843e0fc99d512a99",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "audio"
+          }
+        ],
+        "format": {
+          "duration": "89.040000"
+        }
+      }
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/02_Voiceover/parts/hos_010_part02_the_gorge_at_gubbio_v01/ch00.mp3",
+      "bytes": 1277327,
+      "sha256": "b19e0c971e45fc74f7bbc41f319ba418274fe249509fdb4b03ed9ceda1af95c4",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "audio"
+          }
+        ],
+        "format": {
+          "duration": "79.760000"
+        }
+      }
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/02_Voiceover/parts/hos_010_part02_the_gorge_at_gubbio_v01/gap.wav",
+      "bytes": 134478,
+      "sha256": "51d0ba2b49d741f0d1fa1c2db9eb39746688506d07cbdf14e98455cac9448d67",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "audio"
+          }
+        ],
+        "format": {
+          "duration": "0.700000"
+        }
+      }
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/02_Voiceover/parts/hos_010_part02_the_gorge_at_gubbio_v01/ch00.wav",
+      "bytes": 15313998,
+      "sha256": "65f29d59b24c33a6138b2c6d8075b7a1bf253fac26960cf727c9f293a059a9fa",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "audio"
+          }
+        ],
+        "format": {
+          "duration": "79.760000"
+        }
+      }
+    }
+  ],
+  "required_plates": [
+    {
+      "source_long_plate": "P1:01_clay_line",
+      "uses": [
+        "Short_A:S01",
+        "Short_A:loop_tail"
+      ],
+      "candidates": []
+    },
+    {
+      "source_long_plate": "P1:08_hand_on_rock",
+      "uses": [
+        "Short_A:S03"
+      ],
+      "candidates": []
+    },
+    {
+      "source_long_plate": "P2:01_walter_hammer",
+      "uses": [
+        "Short_A:S02"
+      ],
+      "candidates": []
+    },
+    {
+      "source_long_plate": "P2:03_tiny_shells",
+      "uses": [
+        "Short_A:S04"
+      ],
+      "candidates": []
+    },
+    {
+      "source_long_plate": "P2:05_almost_none",
+      "uses": [
+        "Short_A:S05"
+      ],
+      "candidates": []
+    },
+    {
+      "source_long_plate": "P3:08_asaro_michel",
+      "uses": [
+        "Short_A:S06"
+      ],
+      "candidates": []
+    },
+    {
+      "source_long_plate": "P4:01_iridium_spike",
+      "uses": [
+        "Short_A:S07"
+      ],
+      "candidates": [
+        {
+          "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/07_Edit-Project/code_graphics_v01/code_graphic_010_p4_01_iridium_spike.mp4",
+          "bytes": 1142457,
+          "sha256": "f9b504cf26e927d988a55aea58b4b2173660c2188b0ca94561e2c85479c2fd84",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_type": "video",
+                "width": 1920,
+                "height": 1080
+              }
+            ],
+            "format": {
+              "duration": "17.033333"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "source_long_plate": "P4:06_dust_veil",
+      "uses": [
+        "Short_A:S08",
+        "Short_C:S02"
+      ],
+      "candidates": []
+    },
+    {
+      "source_long_plate": "P5:08_all_at_once",
+      "uses": [
+        "Short_C:S04"
+      ],
+      "candidates": []
+    },
+    {
+      "source_long_plate": "P5:09_robin",
+      "uses": [
+        "Short_C:S01",
+        "Short_C:S05",
+        "Short_C:loop_tail"
+      ],
+      "candidates": []
+    },
+    {
+      "source_long_plate": "P5:10_explorer_robin",
+      "uses": [
+        "Short_C:S07"
+      ],
+      "candidates": []
+    },
+    {
+      "source_long_plate": "P5:11_why_survive",
+      "uses": [
+        "Short_C:S03"
+      ],
+      "candidates": [
+        {
+          "path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/07_Edit-Project/code_graphics_v01/code_graphic_010_p5_11_why_survive.mp4",
+          "bytes": 1075008,
+          "sha256": "0e71b03e41d0b16bb92afeb318798f796c06ae9cb78bdb776eba0e4f99940acd",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_type": "video",
+                "width": 1920,
+                "height": 1080
+              }
+            ],
+            "format": {
+              "duration": "14.400000"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "source_long_plate": "P5:12_clay_callback",
+      "uses": [
+        "Short_C:S08"
+      ],
+      "candidates": []
+    },
+    {
+      "source_long_plate": "P5:13_window_song",
+      "uses": [
+        "Short_C:S06"
+      ],
+      "candidates": []
+    }
+  ]
+}
