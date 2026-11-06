@@ -1,0 +1,72 @@
+{
+  "sources": [
+    {
+      "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/raw/v01/03_pot_jar_leaf_t1.mp4",
+      "matches_KEEP_hash": true
+    },
+    {
+      "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part03/raw/v01/15_quill_vegetable_t1.mp4",
+      "matches_KEEP_hash": true
+    },
+    {
+      "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part03/raw/v01/08_candles_out_t1.mp4",
+      "matches_KEEP_hash": true
+    },
+    {
+      "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part03/raw/v01/10_mint_jar_t1.mp4",
+      "matches_KEEP_hash": true
+    },
+    {
+      "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part03/raw/v01/11_candle_tall_t1.mp4",
+      "matches_KEEP_hash": true
+    },
+    {
+      "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/06_collect_blaze_t3.mp4",
+      "matches_KEEP_hash": true
+    },
+    {
+      "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part03/raw/v01/01_soil_to_sky_t1.mp4",
+      "matches_KEEP_hash": true
+    },
+    {
+      "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/05_bubbles_macro_t1.mp4",
+      "matches_KEEP_hash": true
+    },
+    {
+      "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/01_villa_t1.mp4",
+      "matches_KEEP_hash": true
+    },
+    {
+      "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/03_plunge_leaf_t1.mp4",
+      "matches_KEEP_hash": true
+    },
+    {
+      "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/04_sunny_window_t1.mp4",
+      "matches_KEEP_hash": true
+    },
+    {
+      "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part03/raw/v01/18_dark_window_t1.mp4",
+      "matches_KEEP_hash": true
+    },
+    {
+      "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/12_shutters_open_t1.mp4",
+      "matches_KEEP_hash": true
+    },
+    {
+      "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/14_leaf_glow_t1.mp4",
+      "matches_KEEP_hash": true
+    }
+  ],
+  "voice": [
+    {
+      "path": "/Users/benjaminoats/_desk/006/shorts_vo_20261004/vo/t2_mint_fixed_vo_v03b.mp3",
+      "sha256": "0f1099262037b62ea2b2a003ce86e196458fa983e9ca97877afb5600e97c7479",
+      "lock_match": true
+    },
+    {
+      "path": "/Users/benjaminoats/_desk/006/shorts_vo_20261004/vo/t3_bubbles_sunlight_vo_v01.mp3",
+      "sha256": "5b5d84e560d51ed9ad6f9bf5588f458802620f48f008b9409c532f8a1ea4e269",
+      "lock_match": true
+    }
+  ]
+}
