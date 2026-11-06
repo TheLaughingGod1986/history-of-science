@@ -1,0 +1,28 @@
+{
+  "job": "J0958",
+  "by": "codex",
+  "at": "2026-11-06T06:31:36.307832+00:00",
+  "videoId": "VbPubYd6Fbs",
+  "channel": "@HistoryOfScienceYT",
+  "cdp": 9460,
+  "commentId": "UgyN-6wKr4EfDkXI1h54AaABAg",
+  "commentCreated": false,
+  "pinConfirmed": false,
+  "saveResponse": {
+    "httpStatus": 200,
+    "challengeType": "CHALLENGE_PROMPT_TYPE_AUTHENTICATE",
+    "actionResultAbsent": true
+  },
+  "freshReload": {
+    "pinnedBadgePresent": false,
+    "menuAction": "Pin"
+  },
+  "blocker": "Authenticated Studio session requires owner reauthentication before pin can persist. No password/2FA attempted.",
+  "next": "Ben reauthenticates the existing HOS Studio session; worker pins existing comment and verifies badge after reload. Never create another comment.",
+  "endScreen": "prior PASS retained; untouched",
+  "testAndCompare": "prior saved state retained; untouched",
+  "privacyChanged": false,
+  "publishAtChanged": false,
+  "buffer": "long films are not cross-posted; untouched",
+  "gbp": 0
+}

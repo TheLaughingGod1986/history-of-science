@@ -317,9 +317,12 @@
       "buffer": "deferred: long films are never cross-posted through Buffer",
       "endScreen": "Subscribe (History of Science) + specific video What's Really Inside an Atom? GHZDsiH7L7A, 8:31:22-8:51:22. Read back after reload. Elements do not show on the watch page while Private.",
       "testAndCompare": "Set 25 Oct 2026 from the Title and thumbnail dialog: A WOOD / FROM / SKY? + The Willow Tree That Was Made of Air; B DO PLANTS / EAT / SOIL? + Where Does a Tree's Weight Come From?. After save, Studio lists both titles under A/B testing titles, status Ineligible (scheduled). Opening A/B testing offers to delete the current test; Cancelled and left.",
-      "pinnedComment": "not posted. update-pinned-comment.ts --create returned 403 forbidden. Studio comments: this account doesn't have permission to create comments.",
+      "pinnedComment": "Existing comment UgyN-6wKr4EfDkXI1h54AaABAg by @HistoryOfScienceYT is visible: So where does a tree's weight really come from? Pin unconfirmed; authentication challenge on save (J0958, 6 Nov). Do not recreate.",
       "cards": "not added",
-      "note": "J0958. End screen and title/thumbnail test saved. Privacy still private, publishAt still 2026-11-05T18:00:00Z. Pinned comment refused by the API and by Studio. Cards not added. Buffer stays deferred. Nothing replaced or deleted."
+      "note": "J0958. End screen and title/thumbnail test saved. Privacy still private, publishAt still 2026-11-05T18:00:00Z. Pinned comment refused by the API and by Studio. Cards not added. Buffer stays deferred. Nothing replaced or deleted.",
+      "pinConfirmed": false,
+      "pinBlocker": "J0958: Studio pin response requires CHALLENGE_PROMPT_TYPE_AUTHENTICATE; fresh reload still offers Pin. Existing comment UgyN-6wKr4EfDkXI1h54AaABAg must not be recreated.",
+      "pinEvidence": "02_Video-Projects/006_Trees-Are-Made-Of-Air/11_Upload-Package/STUDIO_READBACK_J0958_PIN_AUTH.json"
     },
     "ETynHpIYLeY": {
       "kind": "long",
