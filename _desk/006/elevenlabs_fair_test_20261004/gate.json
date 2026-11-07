@@ -1,0 +1,160 @@
+{
+  "task": "HOS PR#180 comment 5981137240 \u2014 ElevenLabs credit read + \u00a30 video fair-test gate",
+  "ran_at_london": "2026-10-04 15:40 BST",
+  "key_source": {
+    "confirmed_hos": true,
+    "locations_same_fingerprint": [
+      "~/.config/elevenlabs/api_key",
+      "YouTube/History Of Science/.../001|002|003/.../.env ELEVENLABS_API_KEY"
+    ],
+    "orbit_keys_not_used": true,
+    "orbit_note": "Orbit archive uses JWT .elevenlabs_bearer files (distinct fingerprints); not used.",
+    "key_fingerprint_sha256_12": "22ce87abc51f",
+    "key_value": "REDACTED"
+  },
+  "subscription": {
+    "tier": "creator",
+    "plan_name": "Creator",
+    "status": "active",
+    "character_count": 42052,
+    "character_limit": 209536,
+    "remaining": 167484,
+    "next_character_count_reset_unix": 1793357431,
+    "next_reset_london": "2026-10-30 10:50 GMT",
+    "billing_period": "monthly_period",
+    "character_refresh_period": "monthly_period",
+    "currency": "usd",
+    "next_invoice_amount_due_cents": 2640,
+    "next_invoice_subtotal_cents": 2200,
+    "next_payment_attempt_unix": 1793361031,
+    "current_overage": {
+      "amount": "0",
+      "currency": "usd"
+    },
+    "video_or_creative_separate_pool_in_api": false,
+    "credit_pool": "shared across platform (voice + Image & Video + others)",
+    "rollover": {
+      "api_field_present": false,
+      "docs_rule": "Unused credits roll over for up to two months (up to 2\u00d7 monthly quota), so balance can reach at most 3\u00d7 monthly quota while paid subscription stays active; downgrade/cancel forfeits unused at end of cycle.",
+      "docs_sources": [
+        "https://elevenlabs.io/docs/overview/administration/billing",
+        "https://elevenlabs.io/pricing (FAQ: When do my credits reset, and do unused credits roll over?)"
+      ],
+      "evidence_on_account": "character_limit 209536 > Creator base monthly 121000 \u21d2 rollover already applied (~88536 rolled)."
+    }
+  },
+  "video_models": {
+    "plan_ui_access": "Starter+ includes Image & Video in Creative UI (Creator qualifies for app video).",
+    "api_access": "Image & Video / Flows API requires Pro plan or above. Creator rejected with HTTP 402 paid_plan_required.",
+    "api_probe": {
+      "POST /v1/flows/video veo-3.1-generate-001": "HTTP 402 paid_plan_required \u2014 This endpoint requires a Pro plan or above.",
+      "POST /v1/flows/video veo-3.1-fast-generate-001": "HTTP 402 paid_plan_required",
+      "GET /v1/flows/video": "HTTP 402 paid_plan_required",
+      "credits_spent_by_probes": 0,
+      "post_probe_character_count": 42052
+    },
+    "api_models_documented_if_pro": [
+      {
+        "model_id": "veo-3.1-generate-001",
+        "name": "Google Veo 3.1 (Quality)",
+        "duration_secs": [
+          4,
+          6,
+          8
+        ],
+        "resolution": [
+          "720p",
+          "1080p",
+          "4K"
+        ],
+        "notes": "preferred for fair test"
+      },
+      {
+        "model_id": "veo-3.1-fast-generate-001",
+        "name": "Google Veo 3.1 Fast",
+        "duration_secs": [
+          4,
+          6,
+          8
+        ],
+        "resolution": [
+          "720p",
+          "1080p",
+          "4K"
+        ]
+      },
+      {
+        "model_id": "bytedance-seedance-v2",
+        "name": "Seedance 2.0",
+        "notes": "ByteDance; API disabled by default pending approval; Claude order: Seedance second only"
+      },
+      {
+        "model_id": "bytedance-seedance-v2-fast",
+        "name": "Seedance 2.0 Fast"
+      },
+      {
+        "model_id": "bytedance-seedance-v2-mini",
+        "name": "Seedance 2.0 Mini"
+      },
+      {
+        "model_id": "bytedance-seedance-v2.5",
+        "name": "Seedance 2.5"
+      },
+      {
+        "model_id": "creatify-aurora",
+        "name": "Creatify Aurora (lip-sync)",
+        "notes": "not a general plate model"
+      }
+    ],
+    "kling_on_api": "Not listed in Image & Video API model table in official quickstart; Kling exists in app docs but Claude ordered Kling left out.",
+    "per_clip_cost_1080p_8s": {
+      "veo_3_1_quality": "NOT PUBLISHED as a fixed number \u2014 official docs say cost varies by settings/duration; UI shows cost before submit; pricing FAQ lists TTS/STT/Music/SFX/Dubbing etc but NOT Image & Video rates.",
+      "veo_3_1_fast": "NOT PUBLISHED (same)",
+      "seedance": "NOT PUBLISHED (same)",
+      "kling": "NOT PUBLISHED (same)",
+      "sources": [
+        "https://elevenlabs.io/docs/overview/capabilities/image-video",
+        "https://help.elevenlabs.io/hc/en-us/articles/41121058357137-How-much-does-Image-Video-cost",
+        "https://elevenlabs.io/docs/eleven-api/guides/cookbooks/image-and-video (Pricing: same credits as app; shown before submit)",
+        "https://elevenlabs.io/pricing (FAQ product credit list omits Image & Video numeric rates)"
+      ],
+      "do_not_invent": true
+    }
+  },
+  "reserve_math": {
+    "007_vo_reserve_chars": 29000,
+    "breakdown": "1300 words \u2248 8000 chars \u00d7 3 takes = 24000 + ~5000 Shorts/pickups = 29000",
+    "remaining_before_reserve": 167484,
+    "surplus_above_reserve": 138484,
+    "shared_pool": true,
+    "reserve_applies_to": "same character/credit pool used by Image & Video",
+    "go_no_go": "NO-GO for fair test",
+    "reasons": [
+      "Primary blocker: HOS is on Creator; Flows/Image&Video API requires Pro+ (confirmed 402).",
+      "Secondary: cannot compute whether surplus covers 3\u00d71080p\u00d78s clips because ElevenLabs does not publish per-clip Image & Video credit prices.",
+      "Did not buy/upgrade plan (Ben money / Claude order).",
+      "Did not use browser UI fair test on Mini (avoid competing with in-flight Vertex Part 02 mint; API-first path blocked).",
+      "House lock: Playbook \u00a75 bans ElevenLabs Image & Video on HOS production; this was Ben-ordered test-only \u2014 still skipped due to Pro gate."
+    ]
+  },
+  "fair_test": {
+    "ran": false,
+    "plates_ready": [
+      "01_willow_air",
+      "06_aristotle",
+      "07_roots_mouths"
+    ],
+    "stills_prompts_located": true,
+    "controls_exist": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/flow_vs_vertex_fair_test_20261004/",
+    "clips": [],
+    "sheets": [],
+    "credits_spent": 0
+  },
+  "house_lock_note_for_claude": "Playbook \u00a75 (Claude 5981148012): No Omni, Seedance, Kling or ElevenLabs Image & Video on HOS. This run was test-only per Ben; nothing enters film unless Ben lifts the line. Fair test did not run \u2014 API Pro gate. If Ben later upgrades to Pro for a test, still keep mint routes unchanged until Claude verdict.",
+  "files_created": [],
+  "git": {
+    "committed": false,
+    "branch": null,
+    "pr": "desk remains #180 \u2014 no new PR, no merge"
+  }
+}
