@@ -31,6 +31,7 @@ Only comments by $HOS_DESK_TRUSTED (default: the repo owner) are ever acted on.
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import os
 import re
@@ -51,7 +52,8 @@ PARTIES = ("claude", "grok", "cursor", "codex", "ben", "chief", "gemini")
 WRITERS = ("grok", "cursor", "codex", "claude", "gemini")  # who may post and read an inbox; not the role name
 SENDERS = ("claude", "grok", "cursor", "codex", "ben", "gemini")  # never post as chief; that would impersonate the role
 CHIEF_DESK_IDS = ("grok", "claude", "codex", "gemini")  # Cursor is outside the succession (Ben, 26 Oct 2026)
-CODE = "j1809-role-routing"
+CODE = "j2324-safe-role-routing"
+LOADED_SHA256 = hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
 STATUSES = ("task", "review", "question", "blocked", "approval", "done")
 MEDIA = re.compile(r"\.(mp4|mov|m4v|webm|wav|mp3|m4a|aac|aif|aiff|flac)$", re.I)
 HEADER = re.compile(r"<!--\s*hos-desk v1 (.*?)-->", re.S)
@@ -232,15 +234,6 @@ def classify_message(comment: dict, later: list[dict], state: dict) -> str:
         if other_header.get("reply_to") == mid and other_header.get("status") in ("review", "approval", "done", "blocked"):
             return "later-outcome"
     return "unresolved"
-
-
-def refresh_decision(*, children: int, code_installed: bool) -> str:
-    """A launchd restart is allowed only when the new code is what the watcher will load and nothing is mid-run."""
-    if children:
-        return "wait"
-    if not code_installed:
-        return "refuse"
-    return "refresh"
 
 
 # ---------- GitHub via gh ----------
@@ -461,20 +454,36 @@ def deliver_inbox(ns) -> int:
     me = ns.agent
     key = "last" if me == "grok" else f"last_{me}"
     with state_transaction() as state:
-        # Ids already pending at the upgrade are not auto-run. New mail still redelivers until it is acknowledged.
+        snapshot = comments(r, pr)
         fence = state.setdefault("run_fence", {})
-        if me not in fence:
-            fence[me] = list((state.get("pending") or {}).get(me, {}))
-        incoming = for_agent(comments(r, pr), getattr(ns, "recover_since_id", None) if getattr(ns, "recover_since_id", None) is not None else state.get(key, 0), trusted, me)
+        # Seed EVERY recipient from the same upgrade snapshot, including literal
+        # mail above an old watermark and recipients which have never polled.
+        if not state.get("literal_snapshot_v2"):
+            for recipient in WRITERS:
+                historical = for_agent(snapshot, 0, trusted, recipient)
+                old_pending = (state.get("pending") or {}).get(recipient, {})
+                fence[recipient] = sorted(set(fence.get(recipient, [])) |
+                    {str(c["id"]) for c in historical} |
+                    {mid for mid, c in old_pending.items() if not c.get("role")})
+                watermark = "last" if recipient == "grok" else f"last_{recipient}"
+                state[watermark] = max(state.get(watermark, 0), max((c["id"] for c in snapshot), default=0))
+            state.setdefault("last_role", max((c["id"] for c in snapshot), default=0))
+            state["literal_snapshot_v2"] = True
+        recover_id = getattr(ns, "recover_id", None)
+        if getattr(ns, "recover_since_id", None) is not None:
+            raise ValueError("Bulk recovery is disabled; classify and admit one reviewed --recover-id")
+        incoming = for_agent(snapshot, state.get(key, 0), trusted, me)
+        if recover_id is not None:
+            incoming += [c for c in for_agent(snapshot, 0, trusted, me) if c["id"] == recover_id]
+            fence[me] = [mid for mid in fence.get(me, []) if mid != str(recover_id)]
         new = pending_messages(state, incoming, me)
-        if incoming:
-            state[key] = max(state.get(key, 0), max(c["id"] for c in incoming))
+        state[key] = max(state.get(key, 0), max((c["id"] for c in snapshot), default=0))
         fenced = set(fence.get(me, []))
     inbox = HOME / "inbox"
     inbox.mkdir(parents=True, exist_ok=True)
     shown = 0
     for c in new:
-        if str(c["id"]) in fenced:
+        if c.get("role") or str(c["id"]) in fenced:
             continue
         shown += 1
         h = c["header"]
@@ -490,7 +499,7 @@ def deliver_inbox(ns) -> int:
         # Successful process exit also requires an explicit outcome acknowledgement.
     if not shown:
         print(f"No new messages for {me.title()}.")
-    return len(new)
+    return shown
 
 
 def task_text(me: str, pr: int, comment: dict) -> str:
@@ -535,10 +544,9 @@ def deliver_role(ns) -> int:
             new = pending_messages(state, incoming, me)
     inbox = HOME / "inbox"
     inbox.mkdir(parents=True, exist_ok=True)
-    fresh = {c["id"] for c in incoming}
     shown = 0
     for c in new:
-        if c["id"] not in fresh:
+        if not c.get("role"):
             continue
         shown += 1
         f = inbox / f"{c['id']}_{c['header'].get('film', 'x')}_{c['header'].get('stage', 'msg')}.md"
@@ -546,7 +554,7 @@ def deliver_role(ns) -> int:
         print(f"\n=== {f}\n{c['body']}")
     if not shown:
         print(f"No new chief-role messages for {me}.")
-    return len([c for c in new if c["id"] in fresh])
+    return shown
 
 
 def cmd_inbox(ns) -> None:
@@ -554,7 +562,12 @@ def cmd_inbox(ns) -> None:
         check_inbox(ns)
         deliver_role(ns)
         return
-    print(f"HOS desk watcher {CODE}")
+    HOME.mkdir(parents=True, exist_ok=True)
+    marker = HOME / "loaded.json"
+    temporary = marker.with_suffix(".tmp")
+    temporary.write_text(json.dumps({"pid": os.getpid(), "code": CODE, "sha256": LOADED_SHA256}))
+    temporary.replace(marker)
+    print(f"HOS desk watcher {CODE} pid={os.getpid()} sha256={LOADED_SHA256}")
     while True:
         try:
             check_inbox(ns)
@@ -574,24 +587,84 @@ def cmd_handback(ns) -> None:
     print(f"Handed {ns.id} from {ns.agent} back to {desk_id_for(ns.to)}")
 
 
+def watcher_pid(target: str) -> int:
+    output = subprocess.run(["launchctl", "print", target], text=True, capture_output=True, check=True).stdout
+    match = re.search(r"^\s*pid = (\d+)\s*$", output, re.M)
+    if not match or int(match[1]) <= 0:
+        raise ValueError("Cannot identify running launchd watcher")
+    return int(match[1])
+
+
+def inspect_idle(target: str) -> int:
+    pid = watcher_pid(target)
+    output = subprocess.run(["ps", "-axo", "pid=,ppid="], text=True, capture_output=True, check=True).stdout
+    processes = {}
+    for line in output.splitlines():
+        child, parent = map(int, line.split())
+        processes[child] = parent
+    if pid not in processes:
+        raise ValueError("Watcher absent from process snapshot")
+    descendants = {pid}
+    while True:
+        expanded = descendants | {child for child, parent in processes.items() if parent in descendants}
+        if expanded == descendants:
+            break
+        descendants = expanded
+    if descendants != {pid}:
+        raise ValueError("Watcher has active descendants")
+    lease = HOME / "execution.json"
+    if lease.exists():
+        value = json.loads(lease.read_text())
+        if not isinstance(value, dict) or not isinstance(value.get("pid"), int) or value["pid"] <= 0:
+            raise ValueError("Invalid desk execution lease")
+        lease_pid = value["pid"]
+        if lease_pid in processes:
+            raise ValueError("Desk execution lease is active")
+    return pid
+
+
 def cmd_refresh(ns) -> None:
-    """Report whether launchd may reload this code. The default does not restart anything."""
-    installed_path = Path(os.environ.get(
-        "HOS_DESK_INSTALLED",
+    """Inspect the OS boundary while holding every dispatch lock, or fail closed.
+
+    Locks span kickstart and loaded-process confirmation, preventing a new
+    dispatch in the inspection/restart gap (also for the pre-upgrade watcher).
+    """
+    from contextlib import ExitStack
+    installed_path = Path(os.environ.get("HOS_DESK_INSTALLED",
         "/Users/benjaminoats/YouTube/History Of Science/00_Brand/Channel-Setup/tools/hos_desk.py"))
-    try:
-        installed = CODE in installed_path.read_text(errors="ignore")
-    except OSError:
-        installed = False
-    children = int(getattr(ns, "children", 0) or 0)
-    decision = refresh_decision(children=children, code_installed=installed)
-    print(f"decision={decision} code={CODE} installed={installed} children={children} path={installed_path}")
-    if decision != "refresh" or not getattr(ns, "apply", False):
-        print("Watcher left as it is. No launchd restart and no watermark reset.")
-        return
     target = f"gui/{os.getuid()}/com.hos.desk"
-    subprocess.run(["launchctl", "kickstart", "-k", target], check=True)
-    print(f"Restarted {target}. The new process seeds last_role and does not auto-run the old pending fence.")
+    HOME.mkdir(parents=True, exist_ok=True)
+    try:
+        if hashlib.sha256(installed_path.read_bytes()).hexdigest() != LOADED_SHA256:
+            raise ValueError("Installed source differs from this loaded code")
+        with ExitStack() as stack:
+            # Serialise refreshers too; lock order is fixed across all callers.
+            for name in ["refresh", *[f"dispatch-{agent}" for agent in sorted(WRITERS)]]:
+                lock = stack.enter_context((HOME / f"{name}.lock").open("a"))
+                fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
+            old_pid = inspect_idle(target)
+            print(f"decision=refresh code={CODE} pid={old_pid} sha256={LOADED_SHA256}")
+            if not getattr(ns, "apply", False):
+                return
+            if inspect_idle(target) != old_pid:
+                raise ValueError("Watcher changed during inspection")
+            subprocess.run(["launchctl", "kickstart", "-k", target], check=True)
+            for attempt in range(50):
+                new_pid = watcher_pid(target)
+                try:
+                    loaded = json.loads((HOME / "loaded.json").read_text())
+                except (OSError, ValueError):
+                    loaded = {}
+                if (new_pid != old_pid and loaded.get("pid") == new_pid
+                        and loaded.get("code") == CODE and loaded.get("sha256") == LOADED_SHA256):
+                    evidence = {"old_pid": old_pid, **loaded, "confirmed_at": datetime.now(timezone.utc).isoformat()}
+                    (HOME / "refresh-result.json").write_text(json.dumps(evidence))
+                    print(json.dumps(evidence))
+                    return
+                time.sleep(0.1)
+            raise ValueError("Restart requested but loaded PID/version was not confirmed; inspect launchd before retry")
+    except (OSError, ValueError, subprocess.SubprocessError) as error:
+        raise SystemExit(f"Refresh refused or unconfirmed: {error}")
 
 
 def cmd_thread(ns) -> None:
@@ -631,8 +704,8 @@ def main() -> None:
     p.add_argument("--watch", type=int, default=0, help="poll every N seconds")
     p.add_argument("--run", action="store_true", help="start the agent with $HOS_DESK_AGENT_CMD")
     p.add_argument("--as", dest="agent", choices=WRITERS, default="grok", help="whose inbox (cursor or codex while Grok is out)")
-    p.add_argument("--recover-since-id", type=int, help="replay older literal messages after this id; acknowledged messages stay excluded")
-    p.add_argument("--recover-id", type=int, help="admit one older chief-role message by id; does not rewind the watermark")
+    p.add_argument("--recover-since-id", type=int, help="disabled: bulk replay is unsafe; use reviewed --recover-id")
+    p.add_argument("--recover-id", type=int, help="admit one reviewed unresolved message by id; never rewinds watermarks")
     p.set_defaults(fn=cmd_inbox)
     p = sub.add_parser("handback")
     p.add_argument("id", type=int)
@@ -640,8 +713,7 @@ def main() -> None:
     p.add_argument("--to", dest="to", choices=CHIEF_DESK_IDS, required=True)
     p.set_defaults(fn=cmd_handback)
     p = sub.add_parser("refresh")
-    p.add_argument("--apply", action="store_true", help="recorded for the Chief; this worker still does not kickstart launchd")
-    p.add_argument("--children", type=int, default=0)
+    p.add_argument("--apply", action="store_true", help="restart only after OS idle checks and dispatch locks; Chief authorisation required")
     p.set_defaults(fn=cmd_refresh)
     p = sub.add_parser("ack")
     p.add_argument("id", type=int)

@@ -35,6 +35,7 @@ class Delivery(unittest.TestCase):
         source={'id':10,'user':{'login':'owner'},'body':desk.header(**{'from':'claude','to':'codex','film':'031','stage':'vo','status':'task'})+'\nCheck recording'}
         ns=types.SimpleNamespace(agent='codex',run=True,recover_since_id=None)
         with tempfile.TemporaryDirectory() as root, patch.object(desk,'HOME',pathlib.Path(root)),patch.object(desk,'repo',return_value='owner/repo'),patch.object(desk,'desk_pr',return_value=180),patch.object(desk,'comments',return_value=[source]),patch.object(desk,'run_agent',return_value=2) as worker:
+            desk.save_state({'literal_snapshot_v2': True})
             self.assertEqual(desk.check_inbox(ns),1)
             self.assertEqual(desk.check_inbox(ns),1)
             self.assertEqual(worker.call_count,2)
@@ -115,9 +116,9 @@ class RoleRouting(unittest.TestCase):
         ns = types.SimpleNamespace(agent='grok', run=True, recover_since_id=None)
         with tempfile.TemporaryDirectory() as root, patch.object(desk, 'HOME', pathlib.Path(root)), patch.object(desk, 'repo', return_value='owner/repo'), patch.object(desk, 'desk_pr', return_value=180), patch.object(desk, 'comments', return_value=[source]), patch.object(desk, 'run_agent', return_value=0) as worker:
             desk.save_state({'last': 2, 'pending': {'grok': {'1': old}}})
-            self.assertEqual(desk.check_inbox(ns), 2)
-            self.assertEqual(desk.check_inbox(ns), 2)
-        self.assertEqual(worker.call_count, 2)
+            self.assertEqual(desk.check_inbox(ns), 0)
+            self.assertEqual(desk.check_inbox(ns), 0)
+        self.assertEqual(worker.call_count, 0)
         ran = [pathlib.Path(call.args[0]).name for call in worker.call_args_list]
         self.assertTrue(all(name.startswith('4_') for name in ran))
 
@@ -130,16 +131,149 @@ class RoleRouting(unittest.TestCase):
         with tempfile.TemporaryDirectory() as root, patch.object(desk, 'HOME', pathlib.Path(root)), patch.object(desk, 'repo', return_value='owner/repo'), patch.object(desk, 'desk_pr', return_value=180), patch.object(desk, 'comments', return_value=[source]), patch.object(desk, 'run_agent') as worker:
             desk.save_state({'last_role': 0})
             self.assertEqual(desk.deliver_role(ns), 1)
-            self.assertEqual(desk.deliver_role(ns), 0)
+            self.assertEqual(desk.deliver_role(ns), 1)
             text = (pathlib.Path(root) / 'inbox' / '6_031_edit.md').read_text()
         worker.assert_not_called()
         self.assertIn('Cursor does not hold Chief authority', text)
 
-    def test_refresh_waits_for_idle_installed_code(self):
-        self.assertEqual(desk.refresh_decision(children=1, code_installed=True), 'wait')
-        self.assertEqual(desk.refresh_decision(children=0, code_installed=False), 'refuse')
-        self.assertEqual(desk.refresh_decision(children=0, code_installed=True), 'refresh')
+    def test_classifies_later_outcome_without_delivery(self):
         self.assertEqual(desk.classify_message(comment(5, 'chief'), [ {'id': 9, 'body': desk.compose('codex', 'claude', '031', 'edit', 'done', 'Done', [], reply_to='5')} ], {}), 'later-outcome')
+
+
+
+class CommandRegressions(unittest.TestCase):
+    def setUp(self):
+        import tempfile, types
+        from unittest.mock import patch
+        self.tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(self.tmp.cleanup)
+        self.home = pathlib.Path(self.tmp.name)
+        for name, value in [('HOME', self.home), ('repo', lambda: 'owner/repo'), ('desk_pr', lambda r: 180)]:
+            patcher = patch.object(desk, name, value)
+            patcher.start(); self.addCleanup(patcher.stop)
+        self.ns = types.SimpleNamespace(agent='codex', elected='codex', run=True, recover_id=None, recover_since_id=None)
+
+    def test_upgrade_unseen_literal_all_recipients_and_specific_recovery(self):
+        from unittest.mock import patch
+        snapshot = [comment(4, 'grok'), comment(5, 'gemini')]
+        desk.save_state({'last': 2, 'pending': {}})
+        with patch.object(desk, 'comments', return_value=snapshot), patch.object(desk, 'run_agent') as worker:
+            self.ns.agent = 'grok'
+            self.assertEqual(desk.check_inbox(self.ns), 0)
+            self.ns.agent = 'gemini'
+            self.assertEqual(desk.check_inbox(self.ns), 0)
+            worker.assert_not_called()
+            state = desk.load_state()
+            self.assertEqual(state['last'], 5)
+            self.assertEqual(state['last_gemini'], 5)
+            self.ns.recover_id = 5
+            self.assertEqual(desk.check_inbox(self.ns), 1)
+            self.assertEqual(desk.load_state()['last_gemini'], 5)
+            self.assertEqual(worker.call_count, 1)
+            self.ns.recover_since_id = 0
+            with self.assertRaises(ValueError): desk.check_inbox(self.ns)
+
+    def test_new_literal_after_snapshot_still_runs(self):
+        from unittest.mock import patch
+        with patch.object(desk, 'comments', return_value=[]):
+            self.assertEqual(desk.check_inbox(self.ns), 0)
+        with patch.object(desk, 'comments', return_value=[comment(6, 'codex,codex')]), patch.object(desk, 'run_agent', return_value=0) as worker:
+            self.assertEqual(desk.check_inbox(self.ns), 1)
+            worker.assert_called_once()
+
+    def test_role_restart_handback_first_poll_and_trusted_ack(self):
+        import json
+        from unittest.mock import patch
+        desk.save_state({'last_role': 0})
+        with patch.object(desk, 'comments', return_value=[comment(4, 'chief,codex,chief')]), patch.object(desk, 'run_agent') as worker:
+            self.assertEqual(desk.deliver_role(self.ns), 1)
+            desk.save_state(json.loads(json.dumps(desk.load_state())))
+            self.assertEqual(desk.deliver_role(self.ns), 1)
+            self.ns.agent = self.ns.elected = 'grok'
+            self.assertEqual(desk.deliver_role(self.ns), 0)  # held by Codex until explicit handback
+            desk.cmd_handback(type('NS', (), {'agent':'codex', 'id':4, 'to':'grok'})())
+            self.assertEqual(desk.check_inbox(self.ns), 0)  # first literal poll cannot swallow role mail
+            self.assertEqual(desk.deliver_role(self.ns), 1)
+            reply = {'id':9, 'user':{'login':'intruder'}, 'body':desk.compose('grok','claude','031','edit','done','Resolved',[],reply_to='4')}
+            with patch.object(desk, 'comments', return_value=[reply]):
+                with self.assertRaises(ValueError): desk.cmd_ack(type('NS', (), {'agent':'grok','id':4,'ref':9})())
+            reply['user']['login'] = 'owner'
+            with patch.object(desk, 'comments', return_value=[reply]):
+                desk.cmd_ack(type('NS', (), {'agent':'grok','id':4,'ref':9})())
+            self.assertEqual(desk.deliver_role(self.ns), 0)
+            self.ns.agent = self.ns.elected = 'cursor'
+            self.assertEqual(desk.deliver_role(self.ns), 0)
+            worker.assert_not_called()
+
+    def refresh(self, *, ps='100 1\n', fail_print=False, change_pid=False, confirm=True):
+        import types
+        from unittest.mock import patch
+        self.calls = []
+        self.restarted = False
+        def run(args, **kwargs):
+            self.calls.append(args)
+            if args[:2] == ['launchctl', 'print']:
+                if fail_print: raise desk.subprocess.CalledProcessError(1, args)
+                pid = 101 if self.restarted or (change_pid and sum(c[:2] == ['launchctl','print'] for c in self.calls) > 1) else 100
+                return types.SimpleNamespace(stdout=f'pid = {pid}\n')
+            if args[0] == 'ps': return types.SimpleNamespace(stdout=ps)
+            if args[:2] == ['launchctl', 'kickstart']:
+                self.restarted = True
+                if confirm:
+                    (self.home/'loaded.json').write_text(desk.json.dumps({'pid':101,'code':desk.CODE,'sha256':desk.LOADED_SHA256}))
+                return types.SimpleNamespace(stdout='')
+            self.fail(f'Unexpected OS call {args}')
+        with patch.dict(desk.os.environ, {'HOS_DESK_INSTALLED':str(p)}), patch.object(desk.subprocess, 'run', side_effect=run), patch.object(desk.time, 'sleep'):
+            desk.cmd_refresh(types.SimpleNamespace(apply=True))
+
+    def test_watch_start_records_actual_loaded_pid_and_hash(self):
+        import types
+        from unittest.mock import patch
+        ns = types.SimpleNamespace(watch=120, agent='grok')
+        with patch.object(desk, 'check_inbox'), patch.object(desk, 'resolve_elected', return_value=None), patch.object(desk.time, 'sleep', side_effect=KeyboardInterrupt):
+            with self.assertRaises(KeyboardInterrupt): desk.cmd_inbox(ns)
+        loaded = desk.json.loads((self.home/'loaded.json').read_text())
+        self.assertEqual(loaded, {'pid':desk.os.getpid(), 'code':desk.CODE, 'sha256':desk.LOADED_SHA256})
+
+    def test_refresh_rejects_changed_installed_source_before_os_calls(self):
+        import types
+        from unittest.mock import patch
+        wrong = self.home/'wrong.py'
+        wrong.write_text(desk.CODE)  # a matching marker is insufficient
+        with patch.dict(desk.os.environ, {'HOS_DESK_INSTALLED':str(wrong)}), patch.object(desk.subprocess,'run') as run:
+            with self.assertRaises(SystemExit): desk.cmd_refresh(types.SimpleNamespace(apply=True))
+            run.assert_not_called()
+
+    def test_refresh_proves_pid_hash_and_holds_all_locks(self):
+        from unittest.mock import patch
+        original = desk.inspect_idle
+        def inspect(target):
+            for agent in desk.WRITERS:
+                with (self.home/f'dispatch-{agent}.lock').open('a') as lock:
+                    with self.assertRaises(BlockingIOError): desk.fcntl.flock(lock, desk.fcntl.LOCK_EX | desk.fcntl.LOCK_NB)
+            return original(target)
+        with patch.object(desk, 'inspect_idle', side_effect=inspect): self.refresh()
+        result = desk.json.loads((self.home/'refresh-result.json').read_text())
+        self.assertEqual((result['old_pid'], result['pid'], result['sha256']), (100,101,desk.LOADED_SHA256))
+
+    def test_refresh_refuses_descendants_unknown_process_lease_and_race(self):
+        for kwargs in [{'ps':'100 1\n200 100\n300 200\n'}, {'ps':'bad'}, {'ps':''}, {'fail_print':True}, {'change_pid':True}]:
+            with self.subTest(kwargs=kwargs), self.assertRaises(SystemExit): self.refresh(**kwargs)
+            self.assertFalse(self.restarted)
+        (self.home/'execution.json').write_text('{')
+        with self.assertRaises(SystemExit): self.refresh()
+        (self.home/'execution.json').write_text('{"pid":100}')
+        with self.assertRaises(SystemExit): self.refresh()
+        self.assertFalse(self.restarted)
+
+    def test_refresh_refuses_busy_dispatch_and_unconfirmed_version(self):
+        with (self.home/'dispatch-grok.lock').open('a') as lock:
+            desk.fcntl.flock(lock, desk.fcntl.LOCK_EX | desk.fcntl.LOCK_NB)
+            with self.assertRaises(SystemExit): self.refresh()
+            self.assertEqual(self.calls, [])
+        with self.assertRaises(SystemExit): self.refresh(confirm=False)
+        self.assertTrue(self.restarted)
+        self.assertFalse((self.home/'refresh-result.json').exists())
 
 
 if __name__ == '__main__':
