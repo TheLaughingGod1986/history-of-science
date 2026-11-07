@@ -1,0 +1,202 @@
+{
+  "rule": {
+    "low_detail": "FAIL: luma std < 13.44 and edge density < 0.0259 (absolute floor); WARN: luma std < 18.0 or edge density < film p5",
+    "split_panel": "full-height/width seam or gutter",
+    "split_panel_gutter": "gutter counts only with edge density >= 0.01 in the 10% band on both sides",
+    "near_black": "mean < 28.0 or p95 < 50.0",
+    "noise": "grain std > 6 over structure std < 12, and the 8x-downscaled frame under the low-detail floor (std < 13.44 and edge density < 0.0259)",
+    "jitter": "centre-patch phase correlation: reversal against trend or > 0.35 px off trend"
+  },
+  "low_detail_floor": {
+    "std": 13.44,
+    "edge": 0.0259,
+    "calibration": {
+      "video": "025_MarsRobot_full_rough_v02d.mp4",
+      "factor": 1.2,
+      "frames": [
+        {
+          "source": "PIA22223.jpg",
+          "t": 201.0,
+          "std": 12.1,
+          "edge": 0.0223
+        },
+        {
+          "source": "PIA22223.jpg",
+          "t": 216.3,
+          "std": 11.2,
+          "edge": 0.0216
+        },
+        {
+          "source": "PIA22929.jpg",
+          "t": 297.4,
+          "std": 26.54,
+          "edge": 0.5735
+        }
+      ]
+    }
+  },
+  "video": "/private/tmp/j0912-short-a-v04/02_Video-Projects/008_Lightning-Franklin/10_Shorts/hos_008_short_A_v04.mp4",
+  "edge_floor": 0.0297,
+  "verdict": "PASS",
+  "failed": [],
+  "warn": [
+    {
+      "row": "s08",
+      "cut": 7,
+      "t": 22.74,
+      "source": "loop_01_kite_open_t1.mp4",
+      "why": [
+        "low detail: edge density 0.0278 < film p5 0.0297"
+      ]
+    }
+  ],
+  "reviewed_ok": [],
+  "rows": [
+    {
+      "cut": 0,
+      "row": "s01",
+      "source": "01_kite_open_t1.mp4",
+      "t": 1.29,
+      "std": 40.43,
+      "mean": 70.89,
+      "p95": 155.0,
+      "edge": 0.0521,
+      "hf": 12.06,
+      "lf": 32.97,
+      "std8": 35.56,
+      "edge8": 0.2166,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 1,
+      "row": "s02",
+      "source": "19_kite_climb_t1.mp4",
+      "t": 4.17,
+      "std": 43.76,
+      "mean": 71.82,
+      "p95": 172.0,
+      "edge": 0.0386,
+      "hf": 9.48,
+      "lf": 39.87,
+      "std8": 41.32,
+      "edge8": 0.171,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 2,
+      "row": "s03",
+      "source": "13_key_ribbon_t1.mp4",
+      "t": 7.45,
+      "std": 46.89,
+      "mean": 90.52,
+      "p95": 169.0,
+      "edge": 0.0332,
+      "hf": 6.66,
+      "lf": 43.23,
+      "std8": 44.71,
+      "edge8": 0.2684,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 3,
+      "row": "s04",
+      "source": "25_fibres_rise_t1.mp4",
+      "t": 10.62,
+      "std": 44.17,
+      "mean": 116.93,
+      "p95": 183.0,
+      "edge": 0.08,
+      "hf": 11.85,
+      "lf": 38.22,
+      "std8": 40.05,
+      "edge8": 0.2535,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 4,
+      "row": "s05",
+      "source": "02_knuckle_spark_t1.mp4",
+      "t": 13.93,
+      "std": 62.09,
+      "mean": 98.12,
+      "p95": 230.0,
+      "edge": 0.0657,
+      "hf": 10.97,
+      "lf": 57.04,
+      "std8": 59.13,
+      "edge8": 0.2754,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 5,
+      "row": "s06",
+      "source": "09_charge_string_c1_t1.mp4",
+      "t": 17.64,
+      "std": 45.8,
+      "mean": 58.82,
+      "p95": 161.0,
+      "edge": 0.0744,
+      "hf": 7.83,
+      "lf": 40.13,
+      "std8": 42.42,
+      "edge8": 0.3622,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 6,
+      "row": "s07",
+      "source": "10_richmann_rod_t1.mp4",
+      "t": 20.88,
+      "std": 41.68,
+      "mean": 84.26,
+      "p95": 172.0,
+      "edge": 0.0902,
+      "hf": 9.87,
+      "lf": 37.24,
+      "std8": 38.59,
+      "edge8": 0.2721,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 7,
+      "row": "s08",
+      "source": "loop_01_kite_open_t1.mp4",
+      "t": 22.74,
+      "std": 39.54,
+      "mean": 73.93,
+      "p95": 139.0,
+      "edge": 0.0278,
+      "hf": 5.17,
+      "lf": 36.94,
+      "std8": 38.05,
+      "edge8": 0.1595,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0278 < film p5 0.0297"
+      ]
+    }
+  ]
+}
