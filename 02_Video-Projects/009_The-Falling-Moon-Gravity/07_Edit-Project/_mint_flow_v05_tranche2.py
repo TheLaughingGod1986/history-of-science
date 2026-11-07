@@ -1106,52 +1106,92 @@ def cmd_submit(repo: Path, *, other: int, media: Path, ledger_path: Path, lock_p
     raise GuardError("J2275 repair checkpoint: live per-Create UI guard and shared accounting still pending; no generation")
 
 
-def read_live_evidence() -> dict:
-    """Fresh account, balance and the exact Quality x1 price. Stops before any generate."""
-    if not submit_armed():
-        raise GuardError("refusing to read Flow because generation is not armed")
-    repo = repo_root_from()
-    sys.path.insert(0, str(repo / "04_Audio/tools"))
-    sys.path.insert(0, str(repo / "02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project"))
-    import orbit_flow_veo_ui as flow
-    from playwright.sync_api import sync_playwright
-    mint006 = _load_mint006(repo)
-    cdp = os.environ.get("ORBIT_FLOW_CDP", "http://127.0.0.1:9222")
-    with sync_playwright() as playwright:
-        browser = playwright.chromium.connect_over_cdp(cdp)
-        page = open_flow_page(
-            browser,
-            flow.FLOW_HOME,
-            lambda current, url: current.goto(url, wait_until="domcontentloaded", timeout=120_000),
-        )
-        credits, account = mint006.read_account(page)
-        text = ""
-        try:
-            text = page.locator("body").inner_text(timeout=8000)
-        except Exception as exc:
-            raise GuardError(f"could not read the Flow price: {exc}") from exc
-    read_at = now_iso()
-    lines = [line.strip() for line in text.splitlines() if line.strip().startswith("Generating will use")]
-    if len(lines) != 1:
-        raise GuardError("Flow price line is missing or not unique; refusing to guess")
-    # The selected model and outputs have to be passed as their own fields. A menu
-    # that also lists x2/x4 is not evidence that x1 is selected.
-    model = os.environ.get("HOS009_TRANCHE2_SELECTED_MODEL", "")
-    outputs = os.environ.get("HOS009_TRANCHE2_SELECTED_OUTPUTS", "")
-    if model != REQUIRED_MODEL or outputs != REQUIRED_OUTPUTS:
-        raise GuardError(
-            "set HOS009_TRANCHE2_SELECTED_MODEL and HOS009_TRANCHE2_SELECTED_OUTPUTS "
-            "from the selected Flow controls (Veo 3.1 - Quality and x1) before submit"
-        )
-    price = PriceEvidence(
-        model=model, outputs=outputs, credits=MAX_CREDITS_PER_TAKE,
-        generate_line=lines[0], read_at=read_at,
-    )
-    accept_price(price)
-    accept_account(account, read_at, now=datetime.now(timezone.utc))
-    if credits is None:
-        raise GuardError("Flow balance was not readable")
-    return {"live": int(credits), "account": account, "read_at": read_at, "price": price, "still_price": None}
+# One synchronous DOM turn rechecks the evidence and clicks the same unique
+# enabled Create control. No coordinate fallback or delayed selector click.
+CREATE_EVIDENCE_JS = r"""(expected) => {
+  const visible = e => { const r = e.getBoundingClientRect();
+    const s = getComputedStyle(e);
+    return r.width > 0 && r.height > 0 && s.visibility !== 'hidden' && s.display !== 'none'; };
+  const text = e => (e.innerText || e.getAttribute('aria-label') || '').trim().replace(/\s+/g, ' ');
+  const unique = a => [...new Set(a)];
+  const selected = [...document.querySelectorAll(
+    '[aria-selected="true"],[aria-checked="true"],[aria-pressed="true"],select option:checked')]
+    .filter(visible).map(text);
+  const body = document.body.innerText;
+  const accounts = unique([...document.querySelectorAll('[aria-label]')].filter(visible)
+    .map(e => e.getAttribute('aria-label')).filter(t => /Google Account|Account details/i.test(t))
+    .flatMap(t => t.match(/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/ig) || [])
+    .map(t => t.toLowerCase()));
+  const prices = unique(body.split('\n').map(t => t.trim())
+    .filter(t => /^Generating will use \d+ credits$/.test(t)));
+  const balances = unique([...body.matchAll(/(?:^|\n)\s*([\d,]+)\s+AI credits\s*(?=\n|$)/g)]
+    .map(m => Number(m[1].replace(/,/g, ''))));
+  const buttons = [...document.querySelectorAll('button')].filter(visible).filter(e => {
+    const t = text(e); return (t === 'Create' || t === 'arrow_forward') &&
+      !e.disabled && e.getAttribute('aria-disabled') !== 'true'; });
+  const evidence = {
+    host: location.hostname,
+    models: unique(selected.filter(t => /^Veo /.test(t))),
+    outputs: unique(selected.filter(t => /^x[124]$/.test(t))),
+    aspects: unique(selected.filter(t => t === '16:9' || t === '9:16')),
+    durations: unique(selected.filter(t => /^\d+s$/.test(t))),
+    accounts, prices, balances,
+    ultra: body.split('\n').some(t => t.trim() === 'ULTRA'),
+    create_count: buttons.length
+  };
+  if (expected === null) return evidence;
+  if (JSON.stringify(evidence) !== JSON.stringify(expected))
+    return {clicked: false, reason: 'live UI changed', evidence};
+  if (buttons.length !== 1) return {clicked: false, reason: 'Create not unique', evidence};
+  buttons[0].click();
+  return {clicked: true, evidence};
+}"""
+
+
+def read_live_evidence(page) -> dict:
+    """Strict selected-state DOM evidence, never environment or menu-option text.
+
+    Unknown UI layouts fail closed. Deployment still needs a reviewed live DOM
+    fixture; this reader must not be loosened by guessing at a missing field.
+    """
+    evidence = page.evaluate(CREATE_EVIDENCE_JS, None)
+    required = dict(host=FLOW_HOST, models=[REQUIRED_MODEL], outputs=[REQUIRED_OUTPUTS],
+                    aspects=['16:9'], durations=['8s'], accounts=[REQUIRED_ACCOUNT],
+                    prices=[f'Generating will use {MAX_CREDITS_PER_TAKE} credits'],
+                    ultra=True, create_count=1)
+    if not isinstance(evidence, dict) or any(evidence.get(k) != v for k, v in required.items()):
+        raise GuardError('live Flow selected controls/account/entitlement/price are missing or changed')
+    balances = evidence.get('balances')
+    if not isinstance(balances, list) or len(balances) != 1 or type(balances[0]) is not int or balances[0] < 0:
+        raise GuardError('live Flow balance is missing or ambiguous')
+    # Reject extra fields so the atomic comparison has one exact schema.
+    if set(evidence) != set(required) | {'balances'}:
+        raise GuardError('unknown live Flow evidence schema')
+    return evidence
+
+
+def guarded_create(page, accounting: SharedFlowAccounting, *, reservation: str,
+                   charge: str, evidence_path: Path) -> dict:
+    """Real browser adapter; caller owns shared writer lock through persistence.
+
+    The intent is durable before the click. Any ambiguous browser failure leaves
+    it pending, blocking both channels until explicit reconciliation. No retry.
+    """
+    accounting._assert_held()
+    evidence = read_live_evidence(page)
+    record = dict(read_at=now_iso(), ui=evidence, charge=charge, reservation=reservation)
+    immutable_bytes(evidence_path, (json.dumps(record, sort_keys=True) + '\n').encode())
+    accounting.intent(charge, reservation, MAX_CREDITS_PER_TAKE, live=evidence['balances'][0])
+    outcome = page.evaluate(CREATE_EVIDENCE_JS, evidence)
+    if not isinstance(outcome, dict) or type(outcome.get('clicked')) is not bool:
+        raise GuardError('ambiguous Create outcome; shared charge remains pending')
+    if not outcome['clicked']:
+        accounting.resolve(charge, submitted=False,
+                           evidence=dict(reason=outcome.get('reason'), read_at=record['read_at']))
+        raise GuardError('live UI drift before Create; no submission')
+    accounting.resolve(charge, submitted=True,
+                       evidence=dict(ui=evidence, read_at=record['read_at']))
+    return record
 
 
 def _load_mint006(repo: Path):

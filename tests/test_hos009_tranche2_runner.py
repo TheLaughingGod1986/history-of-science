@@ -860,5 +860,132 @@ class FlowPageTests(unittest.TestCase):
         self.assertEqual(about.visits, ["https://flow.google.com/"])
 
 
+class LiveCreateAdapterTests(unittest.TestCase):
+    def evidence(self):
+        return dict(host=RUNNER.FLOW_HOST, models=[RUNNER.REQUIRED_MODEL], outputs=['x1'],
+                    aspects=['16:9'], durations=['8s'], accounts=[RUNNER.REQUIRED_ACCOUNT],
+                    prices=['Generating will use 100 credits'], balances=[10000],
+                    ultra=True, create_count=1)
+
+    class Page:
+        def __init__(self, evidence, before_click=None):
+            self.evidence, self.before_click = evidence, before_click
+            self.clicks = 0
+        def evaluate(self, js, expected):
+            if expected is None:
+                return dict(self.evidence)
+            if self.before_click:
+                self.before_click()
+            if self.evidence != expected:
+                return dict(clicked=False, reason='live UI changed', evidence=self.evidence)
+            self.clicks += 1
+            return dict(clicked=True, evidence=self.evidence)
+
+    def test_rejects_each_drift_without_create_or_intent(self):
+        for field, value in dict(host='example.com', models=['Veo 3.1 - Fast'], outputs=['x2'],
+                                 aspects=['9:16'], durations=['4s'], accounts=[RUNNER.FORBIDDEN_ACCOUNT],
+                                 prices=['Generating will use 200 credits'], balances=[],
+                                 ultra=False, create_count=2).items():
+            with self.subTest(field=field), tempfile.TemporaryDirectory() as tmp:
+                state = Path(tmp)
+                with RUNNER.SharedFlowAccounting(state) as account:
+                    account.reserve('job', 'HOS:009', 6000, live=10000)
+                    evidence = self.evidence(); evidence[field] = value
+                    page = self.Page(evidence)
+                    with self.assertRaises(RUNNER.GuardError):
+                        RUNNER.guarded_create(page, account, reservation='job', charge='take',
+                                              evidence_path=state/'evidence.json')
+                    self.assertEqual(page.clicks, 0)
+                    self.assertFalse(account.snapshot()['charges'])
+
+    def test_intent_and_evidence_exist_before_click(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            state = Path(tmp)
+            with RUNNER.SharedFlowAccounting(state) as account:
+                account.reserve('job', 'HOS:009', 6000, live=10000)
+                def check():
+                    self.assertTrue(account.snapshot()['pending'])
+                    self.assertTrue((state/'evidence.json').is_file())
+                page = self.Page(self.evidence(), check)
+                RUNNER.guarded_create(page, account, reservation='job', charge='take',
+                                      evidence_path=state/'evidence.json')
+                self.assertEqual(page.clicks, 1)
+                self.assertEqual(account.snapshot()['charges']['take']['status'], 'CHARGED')
+                # Same take cannot click twice, even with a different evidence file.
+                with self.assertRaises(RUNNER.GuardError):
+                    RUNNER.guarded_create(page, account, reservation='job', charge='take',
+                                          evidence_path=state/'retry.json')
+                self.assertEqual(page.clicks, 1)
+
+    def test_last_moment_drift_resolves_only_explicit_no_click(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            state = Path(tmp)
+            with RUNNER.SharedFlowAccounting(state) as account:
+                account.reserve('job', 'HOS:009', 6000, live=10000)
+                page = self.Page(self.evidence())
+                page.before_click = lambda: page.evidence.update(outputs=['x4'])
+                with self.assertRaises(RUNNER.GuardError):
+                    RUNNER.guarded_create(page, account, reservation='job', charge='take',
+                                          evidence_path=state/'evidence.json')
+                self.assertEqual(page.clicks, 0)
+                self.assertEqual(account.snapshot()['charges']['take']['status'], 'NOT_SUBMITTED')
+
+    def test_browser_disconnect_preserves_pending_and_blocks_other_channel(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            state = Path(tmp)
+            with RUNNER.SharedFlowAccounting(state) as account:
+                account.reserve('job', 'HOS:009', 6000, live=10000)
+                def disconnect():
+                    raise ConnectionError('fake browser disconnected around click')
+                page = self.Page(self.evidence(), disconnect)
+                with self.assertRaises(ConnectionError):
+                    RUNNER.guarded_create(page, account, reservation='job', charge='take',
+                                          evidence_path=state/'evidence.json')
+            with RUNNER.SharedFlowAccounting(state) as account:
+                self.assertTrue(account.snapshot()['pending'])
+                with self.assertRaises(RUNNER.GuardError):
+                    account.reserve('other', 'OWB:032', 100, live=10000)
+
+    def test_adapter_requires_shared_lock(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            state = Path(tmp); page = self.Page(self.evidence())
+            with self.assertRaises(RUNNER.GuardError):
+                RUNNER.guarded_create(page, RUNNER.SharedFlowAccounting(state),
+                                      reservation='job', charge='take', evidence_path=state/'e.json')
+            self.assertEqual(page.clicks, 0)
+
+    def test_actual_dom_script_rejects_unselected_menu_and_atomic_drift(self):
+        # Execute the production JavaScript against a small DOM browser fixture,
+        # rather than allowing the Python fake to stand in for selector behavior.
+        harness = r"""
+const fs = require('fs'); const input = JSON.parse(fs.readFileSync(0,'utf8'));
+let clicks=0;
+const node = (t, attrs={}) => ({innerText:t, disabled:false,
+ getAttribute:k=>attrs[k] || null,
+ getBoundingClientRect:()=>({width:100,height:20}), click:()=>{clicks++;}});
+let selected = [node('Veo 3.1 - Quality'),node('x1'),node('16:9'),node('8s')];
+const account = node('', {'aria-label':'Google Account: '+input.account});
+const create = node('arrow_forward');
+global.location={hostname:'flow.google.com'};
+global.getComputedStyle=()=>({visibility:'visible',display:'block'});
+global.document={body:{innerText:'ULTRA\n10,000 AI credits\nGenerating will use 100 credits'},
+ querySelectorAll:q=>q==='button' ? [create] : q==='[aria-label]' ? [account] : selected};
+const fn = eval('('+input.js+')'); const evidence=fn(null);
+if (input.menuOnly) selected=selected.filter(n=>n.innerText!=='x1');
+if (input.drift) selected[1]=node('x4');
+const outcome=fn(input.menuOnly ? null : evidence);
+process.stdout.write(JSON.stringify({evidence,outcome,clicks}));
+"""
+        for drift, menu in [(False,False),(True,False),(False,True)]:
+            result = subprocess.run(['node','-e',harness], input=json.dumps(dict(
+                js=RUNNER.CREATE_EVIDENCE_JS, account=RUNNER.REQUIRED_ACCOUNT,
+                drift=drift, menuOnly=menu)), text=True, capture_output=True, check=True)
+            data=json.loads(result.stdout)
+            self.assertEqual(data['evidence'], self.evidence())
+            self.assertEqual(data['clicks'], 0 if drift or menu else 1)
+            if menu:
+                self.assertEqual(data['outcome']['outputs'], [])
+
+
 if __name__ == "__main__":
     unittest.main()

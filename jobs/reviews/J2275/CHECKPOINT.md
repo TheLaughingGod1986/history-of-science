@@ -45,8 +45,8 @@ Remaining required work, still on J2275:
 
 1. Finding 2: actual selected-control/model/output/price/account/Ultra/balance UI
    evidence under the writer lock immediately before every Create, plus a fake
-   browser exercising the real adapter with zero submits on drift. Existing
-   `read_live_evidence` still reads environment strings and is NOT repaired.
+   browser exercising the real adapter with zero submits on drift. The original environment reader was replaced at the fourth checkpoint below;
+   production wiring and live DOM validation are still unfinished.
 2. Finding 3: canonical cross-channel writer lock plus durable shared reservation,
    pending and spend accounting, reconciliation and concurrency/crash tests.
    Defaults are now canonical for this runner, but other channel writers do not
@@ -123,3 +123,47 @@ retried after the explicitly authorised mini repair and reports up to date.
 Repair preserved unpushed/dirty work and reclaimed about 346 MB. The disk is
 still below 20 GB; nas_offload reports that moves wait for 01:00–06:00 (above
 the under-8-GB emergency exception), so no out-of-window bulk transfer ran.
+
+
+Continuation checkpoint (fourth bounded run, 7 November 2026):
+
+- Replaced the environment-based selected-control reader with strict DOM evidence
+  for selected model, output count, aspect and duration; account control identity;
+  explicit ULTRA entitlement; unique exact price and unambiguous AI-credit balance.
+  Menu option text and environment variables cannot establish selection. Missing,
+  changed or unknown layouts fail closed. No live browser was opened or inspected.
+- Added `guarded_create`, an actual page adapter requiring ownership of the shared
+  account lock. It preserves immutable UI evidence and fsyncs the shared charge
+  intent before attempting Create. Its synchronous DOM operation rereads all
+  evidence and clicks the same unique enabled control only if unchanged. It has
+  no coordinate fallback or automatic retry. An explicit no-click drift resolves
+  NOT_SUBMITTED; a disconnect or unknown response leaves PENDING and blocks both
+  channels. A known click resolves CHARGED without assuming billing has posted.
+- Six additional tests cover each rejected evidence field with zero clicks,
+  intent/evidence-before-click ordering, duplicate identities, last-moment drift,
+  disconnect recovery blocking the other channel, lock ownership, and execution
+  of the production JavaScript against a Node DOM fixture. These use fake pages
+  and DOM nodes only, never a real Create or Flow browser.
+
+Validation: 57 runner regressions OK; `check_all.sh` ALL CHECKS PASS. The installed
+HOS node_modules was used via an ignored symlink. No credits, media, scope, trim,
+VO, upload, schedule or privacy changed. This is still step 1 of 3, not completion
+of finding 2/3 and not a request for production review.
+
+Required continuation: connect the new guard to the actual configured Create
+boundary (the current `live_video_submit` still calls the legacy helper), validate
+its strict selectors against a read-only real DOM fixture, integrate the shared
+reservation/charge protocol into execute_batch and every active cross-channel
+Flow writer, and provide idempotent ai_spend receipts. Preserve the production
+interlock until all of that, parent inventory verification and independent J2200
+re-review are complete. Do not merely call the guard before generate_clip: that
+helper changes settings and can retry later; the guard belongs at its exact click
+boundary. Any legacy spend/confirmation paths also need the shared lock/account
+protocol. The core helper's current version must be changed in OWB first if it is
+a registered shared core file, then synchronized under the studio core rules.
+
+Resume PR445 branch `codex/J2275-runner-safety`; this worktree is
+`/private/tmp/codex-j2275-live` (the previous /private/tmp continuation was gone).
+Remaining multi-writer integration exceeds a bounded 20-minute run, so the claim
+is released at this tested checkpoint. J2200 remains FIX, J2033 remains held;
+nothing is waiting on Ben. No production interlock was removed.
