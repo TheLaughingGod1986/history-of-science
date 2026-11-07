@@ -1,0 +1,33 @@
+{
+  "checked_utc": "2026-11-05T05:59:34.938372+00:00",
+  "checks_total": 3,
+  "budget_active_minutes_max": 20,
+  "checks": [
+    {
+      "number": 1,
+      "type": "live UI options",
+      "evidence": "UI_CHECK.txt / ACCOUNT_CHECK.txt",
+      "result": "Fast10 / Quality100,8s,x1,portrait; both720p; balance15390 reset12Nov19:13. No native1080 selection found in generation settings. Fast restored. No submit/download."
+    },
+    {
+      "number": 2,
+      "type": "existing delivery tool evidence",
+      "file": "04_Audio/tools/orbit_flow_veo_ui.py",
+      "sha256": "204acc443b9f8fb5c0afc631dc3aeccd74229292ef38df72b1be2a4414c395f6",
+      "result": "Tool selects model then downloads returned media; no native1080 generation selector or proof. Existing accepted Flow source probes at J2181 are1280x720;1920x1080 sources have Vertex origin and prove no current Flow native route."
+    },
+    {
+      "number": 3,
+      "type": "official documentation",
+      "urls": [
+        "https://support.google.com/flow/answer/16352836?hl=en",
+        "https://blog.google/innovation-and-ai/technology/ai/veo-3-1-ingredients-to-video/"
+      ],
+      "result": "Google Jan13 provider article separates native9:16 aspect ratio from1080/4K upscaling; native aspect ratio is not native1080 pixels. Help page supports Quality first-frame but not ingredients. No current native1080 Flow generation evidence."
+    }
+  ],
+  "native_route_verified": false,
+  "conclusion": "REFUSE current Flow route for required native1080 delivery; stop route investigation. No generic retry, no generation test. Not a claim that every Google API lacks native1080; API/Vertex investigation outside authority.",
+  "balance": 15390,
+  "spend": 0
+}
