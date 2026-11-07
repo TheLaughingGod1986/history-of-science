@@ -40,7 +40,7 @@ def price(credits=100, outputs="x1", model=None, line=None):
 def silent_mp4(directory: Path) -> Path:
     dest = directory / "silent.mp4"
     subprocess.run(
-        ["ffmpeg", "-y", "-v", "error", "-f", "lavfi", "-i", "color=c=0x224466:s=160x90:d=1:r=25",
+        ["ffmpeg", "-y", "-v", "error", "-f", "lavfi", "-i", "color=c=0x224466:s=1280x720:d=8:r=25",
          "-c:v", "libx264", "-pix_fmt", "yuv420p", "-an", str(dest)],
         check=True,
     )
@@ -184,6 +184,7 @@ class ExecuteAndProcessTests(unittest.TestCase):
                 still = RUNNER.still_path(media, row.part, row.plate_id)
                 still.parent.mkdir(parents=True, exist_ok=True)
                 still.write_bytes(b"still")
+            (root / "archive").mkdir()
             now = datetime.now(timezone.utc)
             written = RUNNER.execute_batch(
                 parents, media=media, ledger_path=root / "ledger.jsonl", lock_path=root / "writer.lock",
@@ -198,9 +199,9 @@ class ExecuteAndProcessTests(unittest.TestCase):
                                 for entry in written))
             ledger = RUNNER.read_ledger(root / "ledger.jsonl")
             self.assertNotIn("KEEP", {entry["status"] for entry in ledger})
-            archived = list((root / "archive").glob("*.mp4"))
+            archived = list((root / "archive").glob("part*/*.mp4"))
             self.assertEqual(len(archived), 2)
-            sums = (root / "archive" / "SHA256SUMS.txt").read_text()
+            sums = "".join(p.read_text() for p in (root / "archive").glob("part*/SHA256SUMS.txt"))
             self.assertIn(RUNNER.sha256_file(archived[0]), sums)
             again = RUNNER.next_batch(rows, ledger)
             self.assertNotIn("10_how_high", [row.plate_id for row in again])
@@ -281,7 +282,7 @@ class ExecuteAndProcessTests(unittest.TestCase):
             try:
                 with self.assertRaises(RUNNER.GuardError):
                     RUNNER.archive_verified(src, root / "nas-like" / "src.bin")
-                self.assertFalse((root / "nas-like" / "src.bin").exists())
+                self.assertTrue((root / "nas-like" / "src.bin").exists())
             finally:
                 RUNNER.sha256_file = original
 
@@ -327,7 +328,9 @@ class ExecuteAndProcessTests(unittest.TestCase):
             RUNNER.refuse_duplicate(pid_path, done)
 
     def test_detached_command_records_log_and_done_and_starts_nothing(self):
-        command = RUNNER.detached_command(SCRIPT, Path("/tmp/j2200.log"), Path("/tmp/j2200.done"))
+        command = RUNNER.detached_command(SCRIPT, Path("/tmp/j2200.log"), Path("/tmp/j2200.done"),
+                                          media=ROOT, archive=ROOT, ledger=Path("/tmp/ledger"),
+                                          lock=Path("/tmp/lock"), pid=Path("/tmp/pid"), other=0, repo=ROOT)
         self.assertEqual(command[:4], ["tmux", "new", "-d", "-s"])
         self.assertIn("/tmp/j2200.log", command[-1])
         self.assertIn("/tmp/j2200.done", command[-1])
@@ -353,6 +356,159 @@ class ExecuteAndProcessTests(unittest.TestCase):
             self.assertNotEqual(submit_run.returncode, 0)
             self.assertIn("refusing submit", submit_run.stderr + submit_run.stdout)
             self.assertNotIn("connect_over_cdp", submit_run.stderr + submit_run.stdout)
+
+
+class RepairRegressionTests(unittest.TestCase):
+    def test_full_reservation_includes_impending_take(self):
+        for live in (8900, 8999):
+            with self.assertRaises(RUNNER.GuardError):
+                RUNNER.can_take(live=live, spent=0, pending=0, other=0,
+                                takes_done=0, unknown_pending=False)
+        self.assertEqual(RUNNER.can_take(live=9000, spent=0, pending=0, other=0,
+                                        takes_done=0, unknown_pending=False), 3000)
+
+    def test_delayed_deductions_do_not_release_reservations(self):
+        for spent, pending in ((0, 100), (100, 0), (300, 200), (5900, 0)):
+            self.assertEqual(RUNNER.headroom(10000, spent, pending, 1000), 3000)
+            with self.assertRaises(RUNNER.GuardError):
+                RUNNER.headroom(9999, spent, pending, 1000)
+        with self.assertRaises(RUNNER.GuardError):
+            RUNNER.headroom(20000, 5900, 200, 0)
+
+    def test_archive_collision_preserves_existing_bytes_and_retry_is_idempotent(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            src, dest = root / "src", root / "archive" / "clip"
+            src.write_bytes(b"approved bytes")
+            first = RUNNER.archive_verified(src, dest)
+            self.assertEqual(RUNNER.archive_verified(src, dest), first)
+            src.write_bytes(b"different bytes")
+            with self.assertRaises(RUNNER.GuardError):
+                RUNNER.archive_verified(src, dest)
+            self.assertEqual(dest.read_bytes(), b"approved bytes")
+
+    def test_receipts_are_immutable(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            receipt = Path(tmp) / "receipt.json"
+            RUNNER.write_receipt(receipt, ["parent"], [{"hash": "abc"}])
+            original = receipt.read_bytes()
+            RUNNER.write_receipt(receipt, ["parent"], [{"hash": "abc"}])
+            with self.assertRaises(RUNNER.GuardError):
+                RUNNER.write_receipt(receipt, ["parent"], [{"hash": "different"}])
+            self.assertEqual(receipt.read_bytes(), original)
+
+    def test_missing_archive_stops_before_submit(self):
+        rows = RUNNER.order_rows(RUNNER.load_scope(ROOT))
+        now = datetime.now(timezone.utc)
+        calls = []
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            with self.assertRaises(RUNNER.GuardError):
+                RUNNER.execute_batch(rows[:1], media=root, ledger_path=root / "ledger",
+                                     lock_path=root / "lock", live=20000, other=0,
+                                     price=price(), account=RUNNER.REQUIRED_ACCOUNT,
+                                     read_at=now.isoformat(), now=now,
+                                     submitter=lambda *a: calls.append(a))
+        self.assertEqual(calls, [])
+
+    def test_technical_guard_requires_hd_eight_second_decodable_video(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            good = silent_mp4(root)
+            self.assertTrue(RUNNER.technical_report(good)["ok"])
+            for name, spec in (("short", "1280x720:d=1"), ("small", "160x90:d=8"),
+                               ("portrait", "720x1280:d=8")):
+                bad = root / (name + ".mp4")
+                subprocess.run(["ffmpeg", "-v", "error", "-f", "lavfi", "-i",
+                                "color=c=blue:s=" + spec + ":r=25", "-c:v", "libx264",
+                                "-pix_fmt", "yuv420p", "-an", str(bad)], check=True)
+                self.assertFalse(RUNNER.technical_report(bad)["ok"], name)
+            broken = root / "broken.mp4"
+            broken.write_bytes(b"not video" * 100)
+            self.assertFalse(RUNNER.technical_report(broken)["ok"])
+
+    def test_failed_output_is_archived_but_does_not_advance_or_become_parent(self):
+        parents = RUNNER.order_rows(RUNNER.load_scope(ROOT))[:2]
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            archive = root / "archive"
+            archive.mkdir()
+            row = parents[0]
+            still = RUNNER.still_path(root, row.part, row.plate_id)
+            still.parent.mkdir(parents=True)
+            still.write_bytes(b"test input")
+            def bad_submit(row, dest, frame):
+                dest.write_bytes(b"invalid output")
+            now = datetime.now(timezone.utc)
+            # Invalid media is preserved, charged and refused as a parent.
+            with self.assertRaises(RUNNER.GuardError):
+                RUNNER.execute_batch(parents[:1], media=root, ledger_path=root / "ledger",
+                                     lock_path=root / "lock", live=20000, other=0,
+                                     price=price(), account=RUNNER.REQUIRED_ACCOUNT,
+                                     read_at=now.isoformat(), now=now, submitter=bad_submit,
+                                     archive_dir=archive)
+            ledger = RUNNER.read_ledger(root / "ledger")
+            self.assertEqual(ledger[-1]["status"], "FAILED")
+            self.assertTrue(ledger[-1]["archive"]["verified"])
+            self.assertEqual(RUNNER.next_batch(RUNNER.load_scope(ROOT), ledger)[0].key, row.key)
+            parent = RUNNER.ParentRef(row.part, row.plate_id, "test")
+            self.assertIsNone(RUNNER.resolve_parent_clip(root, parent, in_scope=True, ledger=ledger))
+
+    def test_verified_parent_version_and_hash_are_required(self):
+        row = RUNNER.order_rows(RUNNER.load_scope(ROOT))[0]
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            clip = silent_mp4(root)
+            archive = RUNNER.archive_verified(clip, root / "archive" / "parent.mp4")
+            good = RUNNER.review_record(row.plate_id, row.part, 2, clip, RUNNER.technical_report(clip))
+            good["archive"] = archive
+            failed = dict(good, take=1, technical={"ok": False})
+            parent = RUNNER.ParentRef(row.part, row.plate_id, "test")
+            self.assertEqual(RUNNER.resolve_parent_clip(root, parent, in_scope=True,
+                                                       ledger=[failed, good]), clip)
+            self.assertIsNone(RUNNER.resolve_parent_clip(root, parent, in_scope=True, ledger=[failed]))
+            clip.write_bytes(b"changed")
+            self.assertIsNone(RUNNER.resolve_parent_clip(root, parent, in_scope=True, ledger=[good]))
+
+    def test_live_pid_wins_over_stale_done(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            child = subprocess.Popen(["sleep", "30"])
+            try:
+                (root / "pid").write_text(str(child.pid))
+                (root / "done").write_text("0")
+                with self.assertRaises(RUNNER.GuardError):
+                    RUNNER.refuse_duplicate(root / "pid", root / "done")
+            finally:
+                child.kill()
+                child.wait()
+
+    def test_detached_command_propagates_arguments_to_fake_entrypoint(self):
+        with tempfile.TemporaryDirectory(prefix="j2275 args ") as tmp:
+            root = Path(tmp)
+            script = root / "fake entry.py"
+            script.write_text("import json,sys;from pathlib import Path;"
+                              "Path(__file__).with_suffix('.json').write_text(json.dumps(sys.argv[1:]))")
+            command = RUNNER.detached_command(script, root / "log", root / "done",
+                                              media=root, archive=root, ledger=root / "ledger",
+                                              lock=root / "lock", pid=root / "pid", other=123, repo=ROOT)
+            result = subprocess.run(["/bin/sh", "-c", command[-1]], capture_output=True, text=True)
+            self.assertEqual(result.returncode, 0, result.stderr)
+            argv = json.loads(script.with_suffix('.json').read_text())
+            for arg, value in (("--media", root), ("--archive", root), ("--ledger", root / "ledger"),
+                               ("--lock", root / "lock"), ("--pid", root / "pid"),
+                               ("--other-reservations", 123), ("--repo", ROOT)):
+                self.assertEqual(argv[argv.index(arg) + 1], str(value))
+            done = Path(argv[argv.index("--done") + 1])
+            self.assertEqual(done.read_text().strip(), "0")
+
+    def test_incomplete_repair_cannot_reach_browser_even_when_armed(self):
+        from unittest.mock import patch
+        with patch.dict(os.environ, {RUNNER.SUBMIT_ENV: "1"}):
+            with self.assertRaisesRegex(RUNNER.GuardError, "J2275 incomplete"):
+                RUNNER.cmd_submit(ROOT, other=0, media=ROOT, ledger_path=ROOT / "unused",
+                                  lock_path=ROOT / "unused", pid_path=Path(tempfile.gettempdir()) / "j2275-test.pid",
+                                  done_path=ROOT / "unused", archive_dir=ROOT)
 
 
 class FlowPageTests(unittest.TestCase):

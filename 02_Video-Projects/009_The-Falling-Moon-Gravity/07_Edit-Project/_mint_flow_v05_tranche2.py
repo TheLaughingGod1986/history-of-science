@@ -37,6 +37,7 @@ import shlex
 import shutil
 import subprocess
 import sys
+import uuid
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
@@ -328,12 +329,14 @@ def ledger_totals(entries: list[dict], cost: int = MAX_CREDITS_PER_TAKE) -> tupl
 
 
 def headroom(live: int | None, spent: int, pending: int, other: int) -> int:
-    if live is None or other is None or other < 0:
-        raise GuardError("unknown balance or other reservations")
+    if live is None or other is None or min(live, spent, pending, other) < 0:
+        raise GuardError("unknown or negative balance/spend/reservations")
     remaining_cap = MAX_TOTAL_CREDITS - spent - pending
     if remaining_cap < 0 or spent + pending > MAX_TOTAL_CREDITS:
         raise GuardError(f"spend {spent}+{pending} exceeds the {MAX_TOTAL_CREDITS} cap")
-    left = int(live) - remaining_cap - int(other)
+    # Until a charge is explicitly reconciled to a balance reading, it is an
+    # additional liability. Never assume billing has caught up.
+    left = int(live) - spent - pending - remaining_cap - int(other)
     if left < HEADROOM_FLOOR:
         raise GuardError(
             f"headroom {left} < {HEADROOM_FLOOR} after reserving remaining cap {remaining_cap} "
@@ -352,8 +355,9 @@ def can_take(*, live: int | None, spent: int, pending: int, other: int, takes_do
         raise GuardError(f"refusing cost {cost}")
     if spent + pending + cost > MAX_TOTAL_CREDITS:
         raise GuardError(f"cap {MAX_TOTAL_CREDITS}: spent {spent} pending {pending} cost {cost}")
-    # The new take joins pending charges before Flow is clicked.
-    return headroom(live, spent, pending + cost, other)
+    # The impending take is already inside the remaining cap. Do not release
+    # its reservation before the UI has charged it.
+    return headroom(live, spent, pending, other)
 
 
 def start_plan(row: Row) -> dict:
@@ -423,9 +427,20 @@ def parent_clip_candidates(media: Path, parent: ParentRef, *, in_scope: bool) ->
     return found
 
 
-def resolve_parent_clip(media: Path, parent: ParentRef, *, in_scope: bool) -> Path | None:
-    for candidate in parent_clip_candidates(media, parent, in_scope=in_scope):
-        if candidate.exists() and candidate.stat().st_size > 0:
+def resolve_parent_clip(media: Path, parent: ParentRef, *, in_scope: bool,
+                        ledger: list[dict] | None = None) -> Path | None:
+    # In-scope parents must be a proven version from this runner, never a
+    # guessed t1 or an older tranche substituted for a failed parent.
+    if in_scope:
+        for entry in reversed(ledger or []):
+            if (entry.get("part"), entry.get("plate_id")) != parent.key:
+                continue
+            if not verified_entry(entry):
+                continue
+            return Path(entry["file"])
+        return None
+    for candidate in parent_clip_candidates(media, parent, in_scope=False):
+        if technical_report(candidate)["ok"]:
             return candidate
     return None
 
@@ -444,10 +459,10 @@ def extract_last_frame(src: Path, dest: Path) -> Path:
 
 
 def prepare_start_frame(row: Row, media: Path, *, in_scope_keys: set[tuple[int, str]],
-                         still_price: dict | None, still_maker) -> Path:
+                         still_price: dict | None, still_maker, ledger: list[dict] | None = None) -> Path:
     if row.parent is not None:
         in_scope = row.parent.key in in_scope_keys
-        clip = resolve_parent_clip(media, row.parent, in_scope=in_scope)
+        clip = resolve_parent_clip(media, row.parent, in_scope=in_scope, ledger=ledger)
         if clip is None:
             raise GuardError(f"missing parent clip for {row.parent.raw}")
         dest = (media / "04_Generated-Clips" / f"part{row.part:02d}" / "refs" / "v05_flow_stills"
@@ -508,9 +523,7 @@ def process_alive(pid: int) -> bool:
 
 
 def refuse_duplicate(pid_path: Path, done_path: Path) -> None:
-    """A missing .done file plus a live pid means the runner is already going."""
-    if done_path.exists():
-        return
+    """A live PID always wins over old completion output."""
     if not pid_path.exists():
         return
     try:
@@ -518,16 +531,27 @@ def refuse_duplicate(pid_path: Path, done_path: Path) -> None:
     except ValueError as exc:
         raise GuardError(f"unreadable pid file {pid_path}") from exc
     if process_alive(pid) and pid != os.getpid():
-        raise GuardError(f"runner already live as pid {pid}; {done_path.name} is absent")
+        raise GuardError(f"runner already live as pid {pid}; completion files cannot override a live PID")
 
 
 def detached_command(script: Path, log_path: Path, done_path: Path,
-                     session: str = "hos009-tranche2") -> list[str]:
-    python = shlex.quote(sys.executable)
-    inner = (
-        f"cd {shlex.quote(str(script.parent))} && {python} {shlex.quote(str(script))} submit "
-        f"> {shlex.quote(str(log_path))} 2>&1; echo $? > {shlex.quote(str(done_path))}"
-    )
+                     session: str = "hos009-tranche2", *, media: Path,
+                     archive: Path, ledger: Path, lock: Path, pid: Path,
+                     other: int, repo: Path) -> list[str]:
+    if other < 0 or not media.is_dir() or not archive.is_dir():
+        raise GuardError("detach needs existing media/archive and nonnegative reservations")
+    # Each invocation has immutable logs and completion output. A running PID
+    # is checked inside the runner under its process lock, regardless of .done.
+    token = uuid.uuid4().hex
+    log_path = log_path.with_name(log_path.name + "." + token)
+    done_path = done_path.with_name(done_path.name + "." + token)
+    argv = [sys.executable, str(script), "submit", "--repo", str(repo),
+            "--media", str(media), "--archive", str(archive), "--ledger", str(ledger),
+            "--lock", str(lock), "--pid", str(pid), "--done", str(done_path),
+            "--other-reservations", str(other)]
+    inner = (shlex.join(argv) + " > " + shlex.quote(str(log_path)) + " 2>&1; "
+             + "result=$?; printf '%s\\n' \"$result\" > " + shlex.quote(str(done_path))
+             + "; exit \"$result\"")
     return ["tmux", "new", "-d", "-s", session, inner]
 
 
@@ -542,6 +566,8 @@ def append_ledger(path: Path, entry: dict) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("a") as handle:
         handle.write(json.dumps(entry, sort_keys=True) + "\n")
+        handle.flush()
+        os.fsync(handle.fileno())
 
 
 def read_ledger(path: Path) -> list[dict]:
@@ -589,34 +615,49 @@ def submitting_record(plate_id: str, part: int, take: int, dest: Path) -> dict:
     }
 
 
-def technical_report(path: Path) -> dict:
+def technical_report(path: Path, *, required_duration: float = 8.0) -> dict:
+    report = {"ok": False, "review": "PENDING_REVIEW", "keep": False}
     if not path.exists() or path.stat().st_size < 500:
-        return {"ok": False, "reason": "missing or tiny", "review": "PENDING_REVIEW", "keep": False}
-    digest = sha256_file(path)
+        return report | {"reason": "missing or tiny"}
+    report.update(sha256=sha256_file(path), bytes=path.stat().st_size)
     probe = subprocess.run(
-        ["ffprobe", "-v", "error", "-show_entries", "format=duration:stream=codec_type",
-         "-of", "json", str(path)],
+        ["ffprobe", "-v", "error", "-show_entries",
+         "format=duration:stream=codec_type,width,height", "-of", "json", str(path)],
         capture_output=True, text=True, check=False,
     )
-    duration = None
-    audio_streams = None
-    if probe.returncode == 0 and probe.stdout.strip():
+    try:
         payload = json.loads(probe.stdout)
-        try:
-            duration = float((payload.get("format") or {}).get("duration") or 0)
-        except (TypeError, ValueError):
-            duration = None
-        audio_streams = sum(1 for stream in payload.get("streams") or [] if stream.get("codec_type") == "audio")
-    ok = bool(duration and duration > 0 and audio_streams == 0)
-    return {
-        "ok": ok,
-        "sha256": digest,
-        "duration_s": duration,
-        "audio_streams": audio_streams,
-        "bytes": path.stat().st_size,
-        "review": "PENDING_REVIEW",
-        "keep": False,
-    }
+        duration = float(payload["format"]["duration"])
+        streams = payload["streams"]
+        videos = [v for v in streams if v.get("codec_type") == "video"]
+        audio = [v for v in streams if v.get("codec_type") == "audio"]
+        width, height = int(videos[0]["width"]), int(videos[0]["height"])
+    except (ValueError, KeyError, IndexError, TypeError):
+        return report | {"reason": "unreadable video stream"}
+    report.update(duration_s=duration, width=width, height=height, audio_streams=len(audio))
+    if (probe.returncode or len(videos) != 1 or audio or duration < required_duration - 0.1
+            or duration > required_duration + 0.25 or width < 1280 or height < 720
+            or abs(width / height - 16 / 9) > 0.01):
+        return report | {"reason": "duration, streams or dimensions outside approved 8s 16:9 HD output"}
+    decode = subprocess.run(
+        ["ffmpeg", "-v", "error", "-xerror", "-i", str(path), "-map", "0:v:0",
+         "-f", "null", "-"], capture_output=True, text=True, check=False,
+    )
+    return report | {"ok": decode.returncode == 0 and not decode.stderr.strip(),
+                     "decode_ok": decode.returncode == 0 and not decode.stderr.strip()}
+
+
+def verified_entry(entry: dict) -> bool:
+    if (entry.get("status") != "PENDING_REVIEW" or entry.get("generated") is not True
+            or entry.get("keep") is not False or not (entry.get("technical") or {}).get("ok")
+            or not (entry.get("archive") or {}).get("verified")):
+        return False
+    path = Path(entry.get("file") or "")
+    archived = Path(entry["archive"].get("dest") or "")
+    digest = entry.get("sha256")
+    return (path.is_file() and archived.is_file() and digest is not None
+            and sha256_file(path) == digest == sha256_file(archived)
+            and technical_report(path)["ok"])
 
 
 def strip_audio(path: Path) -> None:
@@ -629,34 +670,55 @@ def strip_audio(path: Path) -> None:
 
 
 def archive_verified(src: Path, dest: Path) -> dict:
-    """Copy and compare hashes. A NAS mismatch is left in place, never deleted."""
+    """Exclusive creation; identical retries succeed, collisions are never replaced."""
     dest.parent.mkdir(parents=True, exist_ok=True)
-    shutil.copy2(src, dest)
     src_hash = sha256_file(src)
+    try:
+        with dest.open("xb") as target, src.open("rb") as source:
+            shutil.copyfileobj(source, target)
+            target.flush()
+            os.fsync(target.fileno())
+    except FileExistsError:
+        if not dest.is_file() or sha256_file(dest) != src_hash:
+            raise GuardError(f"archive collision: {dest}; existing bytes preserved")
     dest_hash = sha256_file(dest)
     if src_hash != dest_hash:
-        nas = str(dest).startswith("/Volumes/")
-        if not nas:
-            dest.unlink()
-        raise GuardError(f"hash mismatch for {dest}; deleted={not nas}")
+        raise GuardError(f"archive hash mismatch: {dest}; preserved for investigation")
     sums = dest.parent / "SHA256SUMS.txt"
     line = f"{dest_hash}  {dest.name}\n"
     existing = sums.read_text() if sums.exists() else ""
     if line not in existing:
         with sums.open("a") as handle:
             handle.write(line)
+            handle.flush()
+            os.fsync(handle.fileno())
     return {"sha256": dest_hash, "dest": str(dest), "verified": True}
+
+
+def verify_archive_root(archive: Path | None) -> None:
+    if archive is None or not archive.is_dir():
+        raise GuardError("verified archive is required before any spend")
+    # Production additionally enforces the mounted NAS root in cmd_submit.
+    # Probe immutable write/read before any submit; never remove NAS evidence.
+    probe = archive / (".tranche2-preflight-" + uuid.uuid4().hex + ".json")
+    value = {"at": now_iso(), "purpose": "archive writable/readable preflight", "submissions": 0}
+    write_receipt(probe, [], [value])
+    if json.loads(probe.read_text())["entries"] != [value]:
+        raise GuardError("archive write/read verification failed")
 
 
 def write_receipt(path: Path, batch_ids: list[str], entries: list[dict]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    payload = {
-        "rows": batch_ids,
-        "keep": False,
-        "review": "PENDING_REVIEW",
-        "entries": entries,
-    }
-    path.write_text(json.dumps(payload, indent=2) + "\n")
+    payload = {"rows": batch_ids, "keep": False, "review": "PENDING_REVIEW", "entries": entries}
+    text = json.dumps(payload, indent=2) + "\n"
+    try:
+        with path.open("x") as handle:
+            handle.write(text)
+            handle.flush()
+            os.fsync(handle.fileno())
+    except FileExistsError:
+        if path.read_text() != text:
+            raise GuardError(f"immutable receipt collision: {path}")
 
 
 def execute_batch(batch: list[Row], *, media: Path, ledger_path: Path, lock_path: Path,
@@ -666,6 +728,7 @@ def execute_batch(batch: list[Row], *, media: Path, ledger_path: Path, lock_path
                   in_scope_keys: set[tuple[int, str]] | None = None) -> list[dict]:
     """Mint one guarded batch. submitter is the only Flow video call, and tests pass a fake."""
     assert_batch_limits(batch)
+    verify_archive_root(archive_dir)
     accept_price(price)
     accept_account(account, read_at, now=now)
     keys = in_scope_keys or set()
@@ -687,22 +750,47 @@ def execute_batch(batch: list[Row], *, media: Path, ledger_path: Path, lock_path
         for row in batch:
             frame = prepare_start_frame(
                 row, media, in_scope_keys=keys, still_price=still_price, still_maker=still_maker,
+                ledger=read_ledger(ledger_path),
             )
+            previous = read_ledger(ledger_path)
+            recorded = [int(e.get("take") or 0) for e in previous
+                        if (e.get("part"), e.get("plate_id")) == row.key]
             take, dest = next_version(media, row.part, row.plate_id)
+            take = max(take, max(recorded, default=0) + 1)
+            if take > MAX_TAKES_PER_ROW:
+                raise GuardError(f"{row.plate_id} has exhausted its three immutable takes")
+            dest = versioned_output(media, row.part, row.plate_id, take)
+            if dest.exists():
+                raise GuardError(f"output collision: {dest}")
             dest.parent.mkdir(parents=True, exist_ok=True)
             submit_entry = submitting_record(row.plate_id, row.part, take, dest)
+            submit_entry["input"] = {"file": str(frame), "sha256": sha256_file(frame)}
             append_ledger(ledger_path, submit_entry)
             submitter(row, dest, frame)
+            strip_error = None
             if dest.exists():
-                strip_audio(dest)
+                try:
+                    strip_audio(dest)
+                except subprocess.CalledProcessError as exc:
+                    strip_error = str(exc)
             technical = technical_report(dest)
+            if strip_error:
+                technical.update(ok=False, reason="audio stripping failed: " + strip_error)
             if not dest.exists():
-                continue
+                raise GuardError("submit has no output; charge unresolved, no automatic retry")
             entry = review_record(row.plate_id, row.part, take, dest, technical)
+            entry["input"] = submit_entry["input"]
+            entry["evidence"] = {"live": live, "account": account, "read_at": read_at,
+                                 "price": price.__dict__}
+            entry["archive"] = archive_verified(dest, archive_dir / f"part{row.part:02d}" / dest.name)
+            if not technical["ok"]:
+                entry["status"] = "FAILED"
+            write_receipt(archive_dir / "receipts" / f"p{row.part}_{row.plate_id}_t{take}.json",
+                          [row.plate_id], [entry])
             append_ledger(ledger_path, entry)
-            if archive_dir is not None:
-                archive_verified(dest, archive_dir / dest.name)
             written.append(entry)
+            if not technical["ok"]:
+                raise GuardError(f"technical failure for {row.plate_id}; no advancement")
     if receipt_path is not None:
         write_receipt(receipt_path, [row.plate_id for row in batch], written)
     return written
@@ -771,11 +859,7 @@ def submit_armed(env: dict | None = None) -> bool:
 
 def next_batch(rows: list[Row], ledger: list[dict]) -> list[Row]:
     """Parents first until both are pending review. Then at most five continuations."""
-    done = {
-        entry.get("plate_id")
-        for entry in ledger
-        if entry.get("status") == "PENDING_REVIEW" and entry.get("generated") is True and entry.get("keep") is False
-    }
+    done = {entry.get("plate_id") for entry in ledger if verified_entry(entry)}
     ordered = [row for row in order_rows(rows) if row.plate_id not in done]
     if not ordered:
         return []
@@ -785,14 +869,28 @@ def next_batch(rows: list[Row], ledger: list[dict]) -> list[Row]:
     return batch_rows(ordered, parents_already_done=True)[0]
 
 
-def cmd_submit(repo: Path, *, other: int, media: Path, ledger_path: Path, lock_path: Path,
+def cmd_submit(repo: Path, **kwargs) -> list[dict]:
+    with WriterLock(Path(str(kwargs["pid_path"]) + ".lock")):
+        return _cmd_submit_locked(repo, **kwargs)
+
+
+def _cmd_submit_locked(repo: Path, *, other: int, media: Path, ledger_path: Path, lock_path: Path,
                pid_path: Path, done_path: Path, archive_dir: Path | None) -> list[dict]:
     """One guarded batch. Caller must already have armed HOS009_TRANCHE2_SUBMIT."""
+    # J2275 checkpoint: live control verification and cross-channel accounting
+    # remain unresolved. No partial repair may accidentally enable production.
+    raise GuardError("J2275 incomplete: live pre-Create proof and canonical shared accounting still require repair")
     if not submit_armed():
         raise SystemExit(
             "refusing submit: generation is not armed "
             f"({SUBMIT_ENV} is not 1). Plan only. J2033 stays blocked until Chief passes this runner."
         )
+    nas_root = Path("/Volumes/data/mac-mini-archive")
+    if (archive_dir is None or not nas_root.is_dir()
+            or not Path("/Volumes/data").is_mount()
+            or not archive_dir.resolve().is_relative_to(nas_root.resolve())):
+        raise GuardError("submit requires mounted approved NAS archive")
+    verify_archive_root(archive_dir)
     refuse_duplicate(pid_path, done_path)
     claim_pid(pid_path)
     rows = load_scope(repo)
@@ -815,7 +913,7 @@ def cmd_submit(repo: Path, *, other: int, media: Path, ledger_path: Path, lock_p
         still_price=evidence.get("still_price"),
         still_maker=live_still_maker,
         archive_dir=archive_dir,
-        receipt_path=repo / EDIT_REL / "receipts" / f"tranche2_{batch[0].plate_id}.json",
+        receipt_path=repo / EDIT_REL / "receipts" / f"tranche2_{uuid.uuid4().hex}.json",
         in_scope_keys={row.key for row in rows},
     )
 
@@ -902,6 +1000,9 @@ def main(argv: list[str] | None = None) -> int:
     submit.add_argument("--done", required=False)
     submit.add_argument("--archive", required=False)
     detach = sub.add_parser("detach-command", help="print the tmux command; start nothing")
+    for name in ("media", "archive", "ledger", "lock", "pid", "repo"):
+        detach.add_argument("--" + name, required=True)
+    detach.add_argument("--other-reservations", type=int, required=True)
     detach.add_argument("--log", required=True)
     detach.add_argument("--done", required=True)
     args = parser.parse_args(argv)
@@ -910,7 +1011,10 @@ def main(argv: list[str] | None = None) -> int:
         cmd_plan(repo, Path(args.out) if args.out else None)
         return 0
     if args.cmd == "detach-command":
-        command = detached_command(Path(__file__).resolve(), Path(args.log), Path(args.done))
+        command = detached_command(Path(__file__).resolve(), Path(args.log), Path(args.done),
+                                   media=Path(args.media), archive=Path(args.archive),
+                                   ledger=Path(args.ledger), lock=Path(args.lock), pid=Path(args.pid),
+                                   other=args.other_reservations, repo=Path(args.repo))
         sys.stdout.write(json.dumps(command) + "\n")
         return 0
     if not submit_armed():
