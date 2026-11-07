@@ -125,4 +125,40 @@ class SharedBatchTests(unittest.TestCase):
             self.assertEqual(len(calls),1)
 
 
+class ProductionPathTests(unittest.TestCase):
+    def test_defaults_are_canonical_and_independent_of_environment(self):
+        import os
+        rows = RUNNER.load_scope(ROOT)
+        with patch.dict(os.environ, {'OWB_REPO': '/wrong/owb', 'HOS_REPO': '/wrong/hos'}), \
+             patch.object(RUNNER, 'repo_root_from', return_value=ROOT):
+            state, report = RUNNER.production_batch_paths(
+                accounting_state=None, spend_ledger=None, inventory_rows=rows)
+        self.assertEqual(state, Path.home() / '_desk/state/flow/shared')
+        self.assertEqual(report, Path.home() / 'YouTube/orbit-with-ben/05_Analytics/ai_spend/ledger.jsonl')
+
+    def test_missing_subset_duplicate_and_modified_inventory_refused(self):
+        from dataclasses import replace
+        rows = RUNNER.load_scope(ROOT)
+        for inventory in (None, rows[:2], rows + [rows[0]],
+                          [replace(rows[0], prompt='changed')] + rows[1:]):
+            with self.subTest(inventory=inventory), \
+                 patch.object(RUNNER, 'repo_root_from', return_value=ROOT):
+                with self.assertRaises(RUNNER.GuardError):
+                    RUNNER.production_batch_paths(accounting_state=None,
+                        spend_ledger=None, inventory_rows=inventory)
+
+    def test_wrong_account_or_report_stops_before_archive_and_browser(self):
+        rows = RUNNER.order_rows(RUNNER.load_scope(ROOT))[:2]
+        for overrides in ({'accounting_state': Path('/tmp/worktree/account')},
+                          {'spend_ledger': Path('/tmp/worktree/report')}):
+            with patch.object(RUNNER, 'require_archive') as archive, \
+                 patch.object(RUNNER, 'live_video_submit') as submit:
+                with self.assertRaises(RUNNER.GuardError):
+                    RUNNER.execute_shared_batch(rows, media=Path('/unused'),
+                        ledger_path=Path('/unused/ledger'), archive_dir=Path('/unused/archive'),
+                        **overrides)
+                archive.assert_not_called()
+                submit.assert_not_called()
+
+
 if __name__=='__main__': unittest.main()

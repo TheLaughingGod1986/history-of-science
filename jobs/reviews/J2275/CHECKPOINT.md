@@ -340,3 +340,31 @@ reported 7,924 MB free. It deleted nothing on the NAS. Three zero-byte untracked
 OWB blockers were preserved in `~/_desk/rescue/j2275-1794061168964108000/`.
 
 Validation for this checkpoint: 81 zero-submit tests OK; repository `check_all.sh` ALL CHECKS PASS (existing package warnings only); `git diff --check` clean. Existing installed node_modules reused via ignored symlink.
+
+
+Continuation checkpoint (7 November 2026, mandatory production destinations):
+
+- Resumed latest PR445 fc1b6a35 in /private/tmp/j2275-1525. Older local
+  /private/tmp/codex-j2275 belongs to divergent PR457; do not resume that copy.
+- Production shared batches now require the canonical account store and OWB
+  ai_spend report source independent of cwd or OWB_REPO/HOS_REPO overrides.
+  Omitted paths resolve to those canonical destinations; worktree-local
+  alternatives fail before archive or browser entry. Test fixtures can still
+  explicitly use isolated temporary stores with test_archive=True.
+- Production inventory must match every Row in the full hash-validated locked
+  scope, including prompts and durations. Missing, duplicate, partial or altered
+  scopes fail; a batch cannot contain a row outside that inventory. This closes
+  the silent optional-report / current-batch-only production defaults, without
+  enabling cmd_submit. It does not prove other writers adopted this protocol.
+- 84 zero-submit runner/helper/accounting/inventory tests OK; check_all.sh ALL
+  CHECKS PASS; git diff --check clean. Existing installed node_modules reused
+  through an ignored symlink. No browser/Create, credits, NAS media, narration,
+  accepted trims, scope or publishing change. Disk offload reports another
+  offload already running and 6,791 MB free; no duplicate offload started.
+
+Still 1/3, incomplete: cross-channel generation-writer protocol adoption;
+PR622 report lock contract review/merge; configured live UI schema validation;
+actual parent/media inventory verification and full production launch integration.
+These require another bounded continuation. Keep cmd_submit disabled, J2200 FIX
+and J2033 held. No Chief production re-review requested yet and nothing on Ben.
+Resume PR445 latest head, not PR457. This worktree is /private/tmp/j2275-1525.

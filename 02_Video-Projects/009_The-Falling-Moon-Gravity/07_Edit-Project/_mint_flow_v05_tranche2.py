@@ -1113,6 +1113,35 @@ def execute_batch(batch: list[Row], *, media: Path, ledger_path: Path, lock_path
     return written
 
 
+def canonical_spend_ledger() -> Path:
+    """The installed OWB report source, independent of cwd and repo overrides."""
+    return Path.home() / "YouTube/orbit-with-ben/05_Analytics/ai_spend/ledger.jsonl"
+
+
+def production_batch_paths(*, accounting_state: Path | None,
+                           spend_ledger: Path | None,
+                           inventory_rows: list[Row] | None) -> tuple[Path, Path]:
+    """Reject per-worktree accounting and incomplete inventory before side effects.
+
+    This only supplies mandatory production inputs. It does not enable submit or
+    establish adoption of the protocol by other writers / the report CLI.
+    """
+    state = shared_flow_state_dir()
+    target = canonical_spend_ledger()
+    if accounting_state is not None and Path(accounting_state).resolve() != state.resolve():
+        raise GuardError("production requires canonical shared Flow accounting")
+    if spend_ledger is not None and Path(spend_ledger).resolve() != target.resolve():
+        raise GuardError("production requires canonical OWB spend report")
+    if inventory_rows is None:
+        raise GuardError("production requires the full locked inventory scope")
+    # Compare the exact scope, including duplicate/missing rows. load_scope also
+    # validates board hashes and accepted trims; no caller can invent a subset.
+    locked = load_scope(repo_root_from())
+    if sorted(inventory_rows, key=lambda row: row.key) != sorted(locked, key=lambda row: row.key):
+        raise GuardError("production inventory differs from the full locked scope")
+    return state, target
+
+
 def execute_shared_batch(batch: list[Row], *, media: Path, ledger_path: Path,
                          archive_dir: Path, accounting_state: Path | None = None,
                          spend_ledger: Path | None = None, recorder: str = "codex",
@@ -1127,6 +1156,12 @@ def execute_shared_batch(batch: list[Row], *, media: Path, ledger_path: Path,
     download, archive and receipts. This remains behind cmd_submit's interlock.
     """
     assert_batch_limits(batch)
+    if not test_archive:
+        accounting_state, spend_ledger = production_batch_paths(
+            accounting_state=accounting_state, spend_ledger=spend_ledger,
+            inventory_rows=inventory_rows)
+        if any(row not in inventory_rows for row in batch):
+            raise GuardError("batch contains a row outside the locked inventory scope")
     archive_dir = require_archive(archive_dir, nas=not test_archive)
     submitter = submitter or live_video_submit
     written = []
