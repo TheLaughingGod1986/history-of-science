@@ -425,7 +425,143 @@
         "bounded_edit_proposal": "Sentence 1 ('In one minute, the moon falls about as far as an apple falls in one second.') ends at 4.27 s (3.18 s pure speech even after the 0.31 s pause trim); S01 cuts after 'apple' at 2.75 s while 'falls in one second.' lands in S02. Both time intervals ('In one minute' and 'in one second') must be preserved for the lunar-vs-apple comparison, and the 16-word hook cannot fit <= 2.85 s using existing words and lawful pause trims (or within the 1.06x studio atempo cap); keep this Short explicitly blocked and unresolved (no new VO, scientific claim, approved wording change, or speed exception is authorised)."
       },
       "status": "blocked_hook_and_missing_plates",
-      "blocked_reason": "S01 cuts at 2.75 s before hook sentence ends at 4.27 s, and target long plates exist only in board JSON (no .mp4 files on disk/NAS)."
+      "blocked_reason": "S01 cuts at 2.75 s before hook sentence ends at 4.27 s, and target long plates exist only in board JSON (no .mp4 files on disk/NAS).",
+      "pending_vo_revision": {
+        "stem": "hos_009_short_B_v03",
+        "script": "In one minute the Moon drops an apple's one-second fall. About five metres each. Isaac Newton worked out why. The Moon is sixty times further from the Earth's centre than we are, so the pull on it is sixty times sixty weaker. Three thousand six hundred times. And the numbers matched. One pull, for apples and Moons.",
+        "review": "J1894",
+        "status": "blocked_hook_timing",
+        "raw_hook_end_s": 3.68,
+        "vo_duration_s": 23.68,
+        "note": "Existing rows remain historical v02 timing; do not assemble until Chief resolves v03 hook failure."
+      },
+      "approved_vo_v04": {
+        "stem": "hos_009_short_B_v04",
+        "orders": [
+          "J2195",
+          "6631275536"
+        ],
+        "text": "In one minute, the Moon falls five metres. An apple falls that far in one second. Isaac Newton worked out why. The Moon is sixty times further from the Earth's centre than we are, so the pull on it is sixty times sixty weaker. Three thousand six hundred times. And the numbers matched. One pull, for apples and Moons.",
+        "duration_s": 24.48,
+        "total_with_loop_tail_s": 25.48,
+        "hook_end_s": 2.82,
+        "hook_raw_end_s": 2.98,
+        "silence_trim_s": 0.16,
+        "trim_intervals_s": [
+          [
+            0,
+            0.1
+          ],
+          [
+            0.9,
+            0.96
+          ]
+        ],
+        "silence_evidence": "ffmpeg silencedetect -38dB: [0,.110667], [.855854,1.090396]; .174542s of minute pause retained",
+        "atempo": 1.0,
+        "body_source": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/10_Shorts/vo_v02/hos_009_short_B_v03.wav",
+        "open_intervals_s": [
+          [
+            0.1,
+            0.9
+          ],
+          [
+            0.96,
+            6.64
+          ]
+        ],
+        "body_interval_s": [
+          5.68,
+          23.68
+        ],
+        "body_tail_fade_out_s": [
+          23.48,
+          23.54
+        ],
+        "join_silence_s": 0.0,
+        "sha256_wav": "a6666fd27c9a90e781369ea07e4888d87a2d5edb1624a0090ae98fa39504686b",
+        "sha256_mp3": "0c9c4c6ffdb1337dc11acaf57af909f8d8be91d77210bca2e13af80715b87498",
+        "cuts": [
+          {
+            "id": "S01",
+            "t_start_s": 0.0,
+            "t_end_s": 2.82,
+            "use_s": 2.82,
+            "word_end_s": 2.82,
+            "word_gap_s": 0.0,
+            "spoken": "In one minute, the moon falls five meters."
+          },
+          {
+            "id": "S02",
+            "t_start_s": 2.82,
+            "t_end_s": 5.56,
+            "use_s": 2.74,
+            "word_end_s": 5.56,
+            "word_gap_s": 0.0,
+            "spoken": "An apple falls that far in"
+          },
+          {
+            "id": "S03",
+            "t_start_s": 5.56,
+            "t_end_s": 8.42,
+            "use_s": 2.86,
+            "word_end_s": 8.42,
+            "word_gap_s": 0.0,
+            "spoken": "one second Isaac Newton worked out why."
+          },
+          {
+            "id": "S04",
+            "t_start_s": 8.42,
+            "t_end_s": 11.44,
+            "use_s": 3.02,
+            "word_end_s": 11.44,
+            "word_gap_s": 0.0,
+            "spoken": "The moon is 60 times further"
+          },
+          {
+            "id": "S05",
+            "t_start_s": 11.44,
+            "t_end_s": 14.5,
+            "use_s": 3.06,
+            "word_end_s": 14.5,
+            "word_gap_s": 0.0,
+            "spoken": "from the Earth's center than we are, so the pull on it is"
+          },
+          {
+            "id": "S06",
+            "t_start_s": 14.5,
+            "t_end_s": 17.65,
+            "use_s": 3.15,
+            "word_end_s": 17.65,
+            "word_gap_s": 0.0,
+            "spoken": "60 times 60 weaker, Three thousand"
+          },
+          {
+            "id": "S07",
+            "t_start_s": 17.65,
+            "t_end_s": 20.82,
+            "use_s": 3.17,
+            "word_end_s": 20.82,
+            "word_gap_s": 0.0,
+            "spoken": "six hundred times. And the numbers matched."
+          },
+          {
+            "id": "S08",
+            "t_start_s": 20.82,
+            "t_end_s": 24.48,
+            "use_s": 3.66,
+            "word_end_s": 24.38,
+            "word_gap_s": 0.1,
+            "spoken": "One pull for apples and moons"
+          }
+        ],
+        "listening_review": "PASS (J2279, gemini with demonstrated audio_input via read_file on WAV+MP3): Directly auditioned cb18632d composite, open_v04, v03 body, and repaired v04 WAV+MP3. Zero spoken repeat; full 'Isaac' onset (5.940-6.020s in v03) restored and post-'moons' breath tail (23.480-23.540s in v03) faded so unmodified vo_check_py312.sh passes with 0 fails and 0 warnings on both WAV and MP3.",
+        "pickup_chars_actual": 81,
+        "pickup_chars_brief": 82,
+        "cut_solver_min_s": 2.7,
+        "vo_check": "PASS",
+        "blocking_issue": null
+      }
     }
   ],
   "rules": {

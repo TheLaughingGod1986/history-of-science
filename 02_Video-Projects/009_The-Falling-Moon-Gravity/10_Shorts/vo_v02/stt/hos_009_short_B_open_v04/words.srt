@@ -1,0 +1,7 @@
+1
+00:00:00,160 --> 00:00:02,980
+In one minute, the moon falls five meters.
+
+2
+00:00:03,840 --> 00:00:06,580
+An apple falls that far in one second

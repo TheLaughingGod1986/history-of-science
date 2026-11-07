@@ -111,3 +111,35 @@ Authority rechecked: Codex elected; Grok/Claude unavailable. HOS has2/4 November
 **Chain:** J2033 video worker (Cursor, Codex/Gemini fallback) after J2026 -> J2034 elected-Chief picture review -> J2035 no-new-spend versioned assembly -> J2036 technical QA/package plus J1275 actual chapter retiming -> J2037 elected-Chief Ben-watch handoff. All have HOS:009 links in the existing queue. Queued is not claimed: no generation worker pickup observed at this checkpoint. Final-watch card only after real finished-cut gates and durable verified media. Ben's actual finished-film watch/listen applies under4Nov standing order; no worker perception invented.
 
 All57 tranche1 files exist locally and on NAS and match ledger sha256 (`TRANCHE1_INVENTORY_J2026.json`); accepted70/90 and existing completion percentage unchanged. Source facts signature remains historically UNSIGNED despite existing PIPELINE done: no new sign-off inferred. New graphics must composite named newly generated plates where boarded. J2034 must resolve callback P05:11_table_three_again1.20–7.90 against J1237 P01 source0–7 lock before edit; do not silently extend. Other locks: P04:07 0–3.760/hardout<=7.042; P04:10_c1 1.083–6.423/in>=1.083. Long narration stays locked; J0862 Shorts work does not block long picture. No YouTube/Buffer changes.
+
+
+# J0862 single-take result — 5 Nov 2026
+
+Worker: codex. No final approval. J1894 scope executed once; three accepted v02 takes remain unchanged.
+
+009 B v03: exact review text is 316 characters, 57 whitespace words (review claimed 311). House client, Ben Orbit Narrator, eleven_v3, unchanged settings. Live balance 97,352 / 121,114 before and after (counter lag); 316 submitted characters conservatively logged. No further take authorized or made.
+
+vo_check_py312.sh: PASS, 23.68 s, mean -24.2 dB, peak -4.3 dB, 147 wpm; homophone warning an apple's / and apples requires Ben's final listen. No audio perception claimed.
+
+Hook FAIL: Scribe ends fall at 3.680 s. The scoped 0.150 s trim plus maximum 1.06 speed yields 3.330 s, over 2.850 s. Total with 1 s tail would be 24.680 s. J1894's predicted token timings are not measurements of this new take. No larger gap surgery, second take, script rewrite or timing waiver performed. Chief must scope the next repair.
+
+Media preserved in the HOS checkout, 009/10_Shorts/vo_v02/hos_009_short_B_v03.{mp3,wav}; TAKE and VO_CHECK records accompany this report. All old v02 files preserved. 010 A retains J1004 Option A1. Downstream J2171 remains blocked on this hook; no film stage approved. Nothing uploaded or published.
+
+
+## J0862 v04 & J2279 audio-capable splice repair — 6 November 2026
+
+Codex covering (`cb18632d` pickup) + Gemini covering (`J2279` direct `audio_input` audition and zero-spend splice/tail-fade repair). `J2195` scoped one opening-only pickup; recorded once with Ben Orbit Narrator, `eleven_v3`, `speed=1.04`. Actual text is 81 characters (brief says 82). Live ElevenLabs balance before: `93,478` remaining / `121,114`; immediate after counter unchanged; guarded spend ledger records 81 characters. No top-up or overage; `0` additional characters generated in `J2279`.
+
+Three retained takes are untouched: `009 A v02`, `010 A v02` (`J1004` Option A1 retained), `010 C v02`. All three rerun word gates PASS; `A` spelling/homophone warnings remain documented. Old `009 B v02/v03` preserved, and `cb18632d`'s initial `v04` composite is backed up at `/Users/benjaminoats/_desk/media/HOS/009_The-Falling-Moon-Gravity/vo_v02_cb18632d_backup/`.
+
+- **Direct `audio_input` audition & splice repair (`J2279`, `gemini`):**
+  1. Confirmed **zero spoken repeat** in `hos_009_short_B_v04.{wav,mp3}` or `v03.{wav,mp3}`: `faster-whisper small.en` (`word_timestamps=True`) hallucinated a `0.18 s` duplicate `Seg 8 [24.14->24.32]` (`no_speech_prob=0.986` WAV / `0.988` MP3, `avg_logprob=-0.987` / `-0.966`, 4 zero-duration words with `prob=0.000`) over the `-41.3 dBFS` post-word breath tail (`23.480–23.640 s` in `v03`), which `vo_check.py` mis-indexed to `0:19.74` after `norm()` stripped 9 cardinal numbers.
+  2. Caught and repaired an `80 ms` onset clip on `"Isaac"` in `cb18632d`: in `v03.wav`, `"Isaac"` begins at `5.940 s` (`-45.5 dBFS`), whereas Scribe's `6.020 s` marks the `-13.7 dBFS` vowel peak. Keeping full `open_v04.wav` `[0.100:0.900]+[0.960:6.640]` (`6.480 s`, `hook_end_s = 2.820 s <= 2.850 s`, `atempo = 1.00`) + `v03.wav[5.680:23.680]` (`18.000 s`, starting in `-66.0 dBFS` room tone `260 ms` before `"Isaac"` and fading the post-`"moons"` breath tail with `afade=t=out:st=23.480:d=0.060`) maintains the **exact same `+0.800 s` word-timing offset (`6.480 - 5.680 = +0.800 s`), `24.480 s` VO duration (`25.480 s` with `1.000 s` loop tail), and 8 word-boundary cuts (`S01..S08`)**, restores 100% of the `"Isaac"` onset, and passes the unmodified `vo_check_py312.sh` on both encodings with `0` fails and `0` warnings:
+     ```text
+     PASS  hos_009_short_B_v04.mp3  0:24.48  mean -24.4 dB  peak -4.2 dB  145 wpm
+     PASS  hos_009_short_B_v04.wav  0:24.48  mean -24.1 dB  peak -4.0 dB  145 wpm
+     ```
+- **Media & SHA-256 (`02_Video-Projects/009_The-Falling-Moon-Gravity/10_Shorts/vo_v02/`):**
+  - `hos_009_short_B_v04.wav`: `a6666fd27c9a90e781369ea07e4888d87a2d5edb1624a0090ae98fa39504686b`
+  - `hos_009_short_B_v04.mp3`: `0c9c4c6ffdb1337dc11acaf57af909f8d8be91d77210bca2e13af80715b87498`
+- **Repository gates:** `check_all.sh 009` ALL CHECKS PASS; `check_all.sh 010` ALL CHECKS PASS. PR #423 board changes removed per `J2195`; current main board retained. No stage approved, upload, schedule or privacy change.
