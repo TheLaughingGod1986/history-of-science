@@ -230,3 +230,45 @@ Resume branch `codex/J2275-runner-safety`, draft PR445, isolated worktree
 `/private/tmp/codex-j2275`. J2275 remains step 0 of the original 3-step plan:
 implementation is unfinished. Released at a tested clean checkpoint because the
 remaining multi-writer integration exceeds one bounded run. Nothing is on Ben.
+
+Continuation checkpoint (sixth bounded run, 7 November 2026):
+
+- Restored the existing PR445 branch at df064017 into /private/tmp/J2275-cont;
+  do not restart from PR439 or the separate, older PR454 repair branch.
+- Added export_ai_spend(target, by=...) on the shared account protocol. It exports
+  confirmed charge events into the existing ai_spend record/spend schema with
+  stable receipt IDs. It records the configured balance and per-film spend,
+  excludes account addresses, preserves the original recorder across recovery,
+  and never reduces pending/reserved/unposted liability or infers billing posted.
+- Export retains account ownership and an exclusive destination lock. It rejects
+  torn/corrupt destinations, duplicate IDs, identity collisions and aliasing the
+  account ledger before any append. Appends and the destination directory fsync.
+  A crash after the complete append is idempotent on replay; a torn append fails
+  closed for explicit reconciliation. Historical report rows without IDs remain.
+- execute_shared_batch accepts an explicit spend_ledger/recorder, replays known
+  charges before local recovery holds, and exports in finally after the submitter
+  so a confirmed click followed by download failure still records the charge.
+  Unknown clicks remain PENDING and are never represented as confirmed spend.
+- Six new tests cover exact-once replay/reopen, a changed recovery recorder,
+  retained liabilities, private account omission, pending/not-submitted exclusion,
+  append crash, corrupt/colliding destinations, lock contention, and actual batch
+  download failure followed by a refused retry without duplicate spend.
+
+Validation: 77 zero-submit tests OK (test_hos009_spend_export,
+ test_flow_guard_boundary, test_hos009_tranche2_runner,
+ test_hos009_shared_batch); check_all.sh ALL CHECKS PASS.
+Only temporary fixture ledgers were written. No actual ai_spend ledger, Flow
+browser, Create, credits, media, NAS, narration, scope, trims or publishing changed.
+The required NAS offload invocation found the relay already owns the offload lock;
+no duplicate offload was started.
+
+Still unfinished: adopt the protocol in all active cross-channel writers and
+make their reporting use the same destination lock; supply the canonical OWB
+ai_spend destination at production entry (tests use explicit temporary paths);
+validate real configured UI controls without spend; verify parent-still inventory;
+connect and exercise the full production launch only after those safeguards.
+The exporter is integrated only when spend_ledger is explicitly passed. It is not
+blanket cross-writer adoption or a finding-3 PASS. Production cmd_submit remains
+interlocked, J2200 remains FIX, J2033 remains held. Do not request final runner
+review until all remaining work is complete. Remaining multi-writer integration
+exceeds the bounded run; release for immediate continuation, nothing on Ben.

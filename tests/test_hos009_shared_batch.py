@@ -34,7 +34,7 @@ class SharedBatchTests(unittest.TestCase):
              patch.object(RUNNER,'strip_audio'),patch.object(RUNNER,'technical_report',side_effect=technical):
             return RUNNER.execute_shared_batch(rows,media=root/'media',ledger_path=root/'ledger.jsonl',
                 archive_dir=root/'archive',accounting_state=root/'shared',submitter=submitter,
-                test_archive=True)
+                test_archive=True,spend_ledger=root/'spend.jsonl')
 
     def test_two_outputs_have_distinct_shared_charges_and_immutable_receipts(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -42,6 +42,8 @@ class SharedBatchTests(unittest.TestCase):
             rows,calls,submit,technical=self.setup_batch(root)
             outputs=self.run_batch(root,rows,submit,technical)
             self.assertEqual(len(outputs),2)
+            spend=[__import__('json').loads(line) for line in (root/'spend.jsonl').read_text().splitlines()]
+            self.assertEqual(sum(r.get('amount',0) for r in spend),200)
             self.assertEqual(calls,[r.plate_id for r in rows])
             with RUNNER.SharedFlowAccounting(root/'shared') as account:
                 snapshot=account.snapshot()
@@ -86,6 +88,22 @@ class SharedBatchTests(unittest.TestCase):
                     account.reserve('owb','OWB:032',100,live=20000)
             with self.assertRaisesRegex(RUNNER.GuardError,'unresolved shared Create'):
                 self.run_batch(root,rows,submit,technical)
+            self.assertEqual(len(calls),1)
+
+    def test_known_click_download_error_still_exports_once_and_blocks_retry(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);(root/'archive').mkdir()
+            rows,calls,submit,technical=self.setup_batch(root)
+            def failed_download(*args,**kwargs):
+                submit(*args,**kwargs)
+                raise RuntimeError('download failed after charge')
+            with self.assertRaisesRegex(RuntimeError,'download failed'):
+                self.run_batch(root,rows,failed_download,technical)
+            original=(root/'spend.jsonl').read_bytes()
+            self.assertEqual(len(original.splitlines()),2)
+            with self.assertRaisesRegex(RUNNER.GuardError,'unresolved local output'):
+                self.run_batch(root,rows,failed_download,technical)
+            self.assertEqual((root/'spend.jsonl').read_bytes(),original)
             self.assertEqual(len(calls),1)
 
     def test_archive_missing_or_ui_drift_never_advances(self):

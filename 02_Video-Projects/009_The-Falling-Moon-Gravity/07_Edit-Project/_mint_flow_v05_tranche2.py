@@ -678,6 +678,81 @@ class SharedFlowAccounting:
             raise GuardError("posted reconciliation needs an unposted charge and evidence")
         self._event(dict(kind="posted", id=key, evidence=evidence))
 
+    def export_ai_spend(self, target: Path, *, by: str) -> int:
+        """Replay confirmed charges into the shared ai_spend schema, exactly once.
+
+        The destination is explicit: never guess a checkout or commit from a
+        generation process. The caller retains account ownership; an additional
+        destination lock serializes exporters from different account stores.
+        Unknown submissions stay pending, never fabricated as confirmed spend.
+        Export does not reconcile billing or reduce any reserved liability.
+        """
+        self._assert_held()
+        state = self.snapshot()
+        if not isinstance(by, str) or not by.strip():
+            raise GuardError("spend export needs a recorder identity")
+        target = Path(target).resolve()
+        if target == self.path.resolve():
+            raise GuardError("spend destination aliases the account ledger")
+        rows = []
+        events = [json.loads(line) for line in self.path.read_text().splitlines()] if self.path.exists() else []
+        for event in events:
+            if event['kind'] != 'charged':
+                continue
+            key = event['id']
+            charge = state['charges'][key]
+            film = state['reservations'][charge['reservation']]['film']
+            evidence = event['evidence']
+            # Actual guarded Create evidence contains only the already-validated
+            # balance needed by the report. Never export the account address.
+            balances = evidence.get('ui', {}).get('balances', [])
+            base = dict(at=event['at'], pool='flow', by=by,
+                        source='shared-flow', charge=key)
+            if balances:
+                if len(balances) != 1 or type(balances[0]) is not int or balances[0] < 0:
+                    raise GuardError("invalid confirmed charge balance evidence")
+                rows.append(dict(base, id='flow:read:'+key, kind='record',
+                                 left=balances[0], note='Configured UI before Create'))
+            rows.append(dict(base, id='flow:spend:'+key, kind='spend',
+                             amount=charge['amount'], film=film, what=key))
+        target.parent.mkdir(parents=True, exist_ok=True)
+        with WriterLock(target.with_name(target.name+'.lock')):
+            data = target.read_bytes() if target.exists() else b''
+            if data and not data.endswith(b'\n'):
+                raise GuardError("torn ai_spend ledger; reconcile before export")
+            try:
+                existing = [json.loads(line) for line in data.splitlines()]
+                if any(not isinstance(row, dict) for row in existing):
+                    raise ValueError('non-object row')
+            except (ValueError, TypeError) as exc:
+                raise GuardError("unreadable ai_spend ledger") from exc
+            indexed = {}
+            for row in existing:
+                if 'id' in row:
+                    if row['id'] in indexed:
+                        raise GuardError("duplicate ai_spend receipt identity")
+                    indexed[row['id']] = row
+            missing = []
+            for row in rows:
+                previous = indexed.get(row['id'])
+                # A recovery worker may differ; preserve the first recorder.
+                if previous is not None:
+                    if {k:v for k,v in previous.items() if k != 'by'} != {k:v for k,v in row.items() if k != 'by'}:
+                        raise GuardError("ai_spend receipt identity collision")
+                else:
+                    missing.append(row)
+            if missing:
+                with target.open('ab') as handle:
+                    handle.write(b''.join((json.dumps(row, sort_keys=True)+'\n').encode() for row in missing))
+                    handle.flush()
+                    os.fsync(handle.fileno())
+                directory = os.open(target.parent, os.O_RDONLY)
+                try:
+                    os.fsync(directory)
+                finally:
+                    os.close(directory)
+            return len(missing)
+
     def release(self, key: str):
         state = self.snapshot()
         record = state["reservations"].get(key)
@@ -1001,6 +1076,7 @@ def execute_batch(batch: list[Row], *, media: Path, ledger_path: Path, lock_path
 
 def execute_shared_batch(batch: list[Row], *, media: Path, ledger_path: Path,
                          archive_dir: Path, accounting_state: Path | None = None,
+                         spend_ledger: Path | None = None, recorder: str = "codex",
                          reservation: str = "J2033", submitter=None,
                          in_scope_keys: set[tuple[int, str]] | None = None,
                          test_archive: bool = False) -> list[dict]:
@@ -1015,6 +1091,9 @@ def execute_shared_batch(batch: list[Row], *, media: Path, ledger_path: Path,
     submitter = submitter or live_video_submit
     written = []
     with SharedFlowAccounting(accounting_state) as accounting:
+        # Replay known charges before refusing recovery on a local output hold.
+        if spend_ledger is not None:
+            accounting.export_ai_spend(spend_ledger, by=recorder)
         if accounting.snapshot()['pending']:
             raise GuardError('unresolved shared Create; no batch or retry')
         entries = read_ledger(ledger_path)
@@ -1034,9 +1113,15 @@ def execute_shared_batch(batch: list[Row], *, media: Path, ledger_path: Path,
             intent = submitting_record(row.plate_id, row.part, take, dest)
             intent['shared_charge'] = charge
             append_ledger(ledger_path, intent)
-            evidence = submitter(row, dest, frame, accounting=accounting,
-                                 reservation=reservation, charge=charge,
-                                 evidence_path=archive_dir/(dest.name+'.create.json'))
+            try:
+                evidence = submitter(row, dest, frame, accounting=accounting,
+                                     reservation=reservation, charge=charge,
+                                     evidence_path=archive_dir/(dest.name+'.create.json'))
+            finally:
+                # A known click may have charged even when download raised.
+                # Ambiguous PENDING intents remain absent from confirmed spend.
+                if spend_ledger is not None:
+                    accounting.export_ai_spend(spend_ledger, by=recorder)
             shared = accounting.snapshot()['charges'].get(charge)
             if not shared or shared['status'] != 'CHARGED' or shared['amount'] != MAX_CREDITS_PER_TAKE:
                 raise GuardError('submitter returned without exact shared charge; no advancement')
