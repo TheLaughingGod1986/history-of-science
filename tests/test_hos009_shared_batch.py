@@ -1,0 +1,105 @@
+"""Shared-account batch integration. Fake browser and outputs; zero real submits."""
+from pathlib import Path
+from unittest.mock import patch
+import tempfile
+import unittest
+from tests.test_hos009_tranche2_runner import RUNNER, ROOT
+from tests import test_hos009_tranche2_runner as fixtures
+
+
+class SharedBatchTests(unittest.TestCase):
+    def setup_batch(self, root, *, valid=True, drift=False, missing=False, disconnect=False):
+        rows=RUNNER.order_rows(RUNNER.load_scope(ROOT))[:2]
+        calls=[]
+        def submitter(row,dest,frame,*,accounting,reservation,charge,evidence_path):
+            calls.append(row.plate_id)
+            accounting._assert_held()
+            self.assertTrue(list((root/'archive').glob('.tranche2-write-probe-*')))
+            page=fixtures.LiveCreateAdapterTests.Page(fixtures.LiveCreateAdapterTests().evidence())
+            accounting.reserve(reservation,'HOS:009',RUNNER.MAX_TOTAL_CREDITS,live=10000)
+            if drift: page.evidence['outputs']=['x4']
+            if disconnect:
+                def lost(): raise ConnectionError('uncertain around click')
+                page.before_click=lost
+            evidence=RUNNER.guarded_create(page,accounting,reservation=reservation,
+                charge=charge,evidence_path=evidence_path)
+            if not missing: dest.write_bytes(b'fake video fixture')
+            return evidence
+        def technical(dest,**kwargs):
+            return {'ok':valid,'sha256':RUNNER.sha256_file(dest)}
+        return rows,calls,submitter,technical
+
+    def run_batch(self,root,rows,submitter,technical):
+        with patch.object(RUNNER,'prepare_start_frame',return_value=root/'frame.png'), \
+             patch.object(RUNNER,'strip_audio'),patch.object(RUNNER,'technical_report',side_effect=technical):
+            return RUNNER.execute_shared_batch(rows,media=root/'media',ledger_path=root/'ledger.jsonl',
+                archive_dir=root/'archive',accounting_state=root/'shared',submitter=submitter,
+                test_archive=True)
+
+    def test_two_outputs_have_distinct_shared_charges_and_immutable_receipts(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);(root/'archive').mkdir()
+            rows,calls,submit,technical=self.setup_batch(root)
+            outputs=self.run_batch(root,rows,submit,technical)
+            self.assertEqual(len(outputs),2)
+            self.assertEqual(calls,[r.plate_id for r in rows])
+            with RUNNER.SharedFlowAccounting(root/'shared') as account:
+                snapshot=account.snapshot()
+                self.assertEqual(len(snapshot['charges']),2)
+                self.assertEqual(snapshot['liability'],6000)
+            for entry in outputs:
+                self.assertFalse(entry['keep'])
+                self.assertEqual(entry['status'],'PENDING_REVIEW')
+                self.assertTrue(Path(entry['archive']['dest']).exists())
+                self.assertEqual(entry['shared_charge'],entry['create_evidence']['charge'])
+                self.assertTrue((root/'archive'/(Path(entry['file']).name+'.receipt.json')).is_file())
+
+    def test_bad_output_stops_before_second_row_and_cannot_be_parent(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);(root/'archive').mkdir()
+            rows,calls,submit,technical=self.setup_batch(root,valid=False)
+            with self.assertRaisesRegex(RUNNER.GuardError,'technical output failed'):
+                self.run_batch(root,rows,submit,technical)
+            self.assertEqual(len(calls),1)
+            latest=RUNNER.latest_entries(RUNNER.read_ledger(root/'ledger.jsonl'))
+            self.assertEqual(latest[0]['status'],'FAILED')
+            self.assertFalse(RUNNER.verified_output(latest[0]))
+
+    def test_missing_output_keeps_local_hold_and_blocks_retry(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);(root/'archive').mkdir()
+            rows,calls,submit,technical=self.setup_batch(root,missing=True)
+            with self.assertRaisesRegex(RUNNER.GuardError,'charged output missing'):
+                self.run_batch(root,rows,submit,technical)
+            with self.assertRaisesRegex(RUNNER.GuardError,'unresolved local output'):
+                self.run_batch(root,rows,submit,technical)
+            self.assertEqual(len(calls),1)
+
+    def test_disconnect_blocks_another_channel_and_future_batch(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);(root/'archive').mkdir()
+            rows,calls,submit,technical=self.setup_batch(root,disconnect=True)
+            with self.assertRaises(ConnectionError): self.run_batch(root,rows,submit,technical)
+            with RUNNER.SharedFlowAccounting(root/'shared') as account:
+                self.assertTrue(account.snapshot()['pending'])
+                with self.assertRaises(RUNNER.GuardError):
+                    account.reserve('owb','OWB:032',100,live=20000)
+            with self.assertRaisesRegex(RUNNER.GuardError,'unresolved shared Create'):
+                self.run_batch(root,rows,submit,technical)
+            self.assertEqual(len(calls),1)
+
+    def test_archive_missing_or_ui_drift_never_advances(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp)
+            rows,calls,submit,technical=self.setup_batch(root)
+            with self.assertRaises(RUNNER.GuardError): self.run_batch(root,rows,submit,technical)
+            self.assertFalse(calls)
+            (root/'archive').mkdir()
+            rows,calls,submit,technical=self.setup_batch(root,drift=True)
+            with self.assertRaises(RUNNER.GuardError): self.run_batch(root,rows,submit,technical)
+            with RUNNER.SharedFlowAccounting(root/'shared') as account:
+                self.assertFalse(account.snapshot()['charges'])
+            self.assertEqual(len(calls),1)
+
+
+if __name__=='__main__': unittest.main()

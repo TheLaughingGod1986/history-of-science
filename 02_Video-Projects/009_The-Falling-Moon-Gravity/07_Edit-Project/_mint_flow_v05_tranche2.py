@@ -999,6 +999,68 @@ def execute_batch(batch: list[Row], *, media: Path, ledger_path: Path, lock_path
     return written
 
 
+def execute_shared_batch(batch: list[Row], *, media: Path, ledger_path: Path,
+                         archive_dir: Path, accounting_state: Path | None = None,
+                         reservation: str = "J2033", submitter=None,
+                         in_scope_keys: set[tuple[int, str]] | None = None,
+                         test_archive: bool = False) -> list[dict]:
+    """Production accounting integration; no caller-supplied balance/price.
+
+    Each actual configured Create obtains its own UI evidence and durable shared
+    charge through live_video_submit. The shared lock covers preparation, Create,
+    download, archive and receipts. This remains behind cmd_submit's interlock.
+    """
+    assert_batch_limits(batch)
+    archive_dir = require_archive(archive_dir, nas=not test_archive)
+    submitter = submitter or live_video_submit
+    written = []
+    with SharedFlowAccounting(accounting_state) as accounting:
+        if accounting.snapshot()['pending']:
+            raise GuardError('unresolved shared Create; no batch or retry')
+        entries = read_ledger(ledger_path)
+        if any(e.get('status') == 'SUBMITTING' for e in latest_entries(entries)):
+            raise GuardError('unresolved local output; reconcile before batch')
+        _, _, _, takes = ledger_totals(entries)
+        for row in batch:
+            if takes.get(row.plate_id, 0) >= MAX_TAKES_PER_ROW:
+                raise GuardError(f'{row.plate_id}: take cap reached')
+            frame = prepare_start_frame(row, media, in_scope_keys=in_scope_keys or set(),
+                                        still_price=None, still_maker=None, ledger=entries)
+            take, dest = next_version(media, row.part, row.plate_id)
+            dest.parent.mkdir(parents=True, exist_ok=True)
+            charge = f'HOS:009:P{row.part:02d}:{row.plate_id}:t{take}'
+            # Persist local intent before entering the browser; failures cannot
+            # silently skip a take or erase an unknown submission.
+            intent = submitting_record(row.plate_id, row.part, take, dest)
+            intent['shared_charge'] = charge
+            append_ledger(ledger_path, intent)
+            evidence = submitter(row, dest, frame, accounting=accounting,
+                                 reservation=reservation, charge=charge,
+                                 evidence_path=archive_dir/(dest.name+'.create.json'))
+            shared = accounting.snapshot()['charges'].get(charge)
+            if not shared or shared['status'] != 'CHARGED' or shared['amount'] != MAX_CREDITS_PER_TAKE:
+                raise GuardError('submitter returned without exact shared charge; no advancement')
+            if not isinstance(evidence, dict) or evidence.get('charge') != charge:
+                raise GuardError('submitter returned without per-Create evidence')
+            if not dest.is_file():
+                raise GuardError('charged output missing; reconcile before retry')
+            strip_audio(dest)
+            technical = technical_report(dest, required_s=max(8.0, row.use_s))
+            entry = review_record(row.plate_id, row.part, take, dest, technical)
+            entry.update(shared_charge=charge, create_evidence=evidence,
+                         archive=archive_verified(dest, archive_dir/dest.name))
+            if not technical['ok']:
+                entry['status'] = 'FAILED'
+            write_receipt(archive_dir/(dest.name+'.receipt.json'),[row.plate_id],[entry])
+            append_ledger(ledger_path, entry)
+            entries.append(entry)
+            written.append(entry)
+            takes[row.plate_id] = takes.get(row.plate_id, 0) + 1
+            if not technical['ok']:
+                raise GuardError('technical output failed; no batch advancement')
+    return written
+
+
 def open_flow_page(browser, flow_home: str, goto):
     """Reuse the open Flow tab via the shared Orbit helper. Does not open a second Flow tab."""
     owb = Path(os.environ.get("OWB_REPO", str(Path.home() / "YouTube/orbit-with-ben")))
@@ -1012,10 +1074,13 @@ def open_flow_page(browser, flow_home: str, goto):
     return page
 
 
-def live_video_submit(row: Row, dest: Path, frame: Path) -> None:
+def live_video_submit(row: Row, dest: Path, frame: Path, *,
+                      accounting: SharedFlowAccounting, reservation: str,
+                      charge: str, evidence_path: Path) -> dict:
     """Real Flow call. Unreachable unless submit was armed. Tests never call this."""
     if os.environ.get(SUBMIT_ENV) != "1":
         raise GuardError("live submit is not armed")
+    accounting._assert_held()
     repo = repo_root_from()
     sys.path.insert(0, str(repo / "04_Audio/tools"))
     import orbit_flow_veo_ui as flow
@@ -1037,10 +1102,22 @@ def live_video_submit(row: Row, dest: Path, frame: Path) -> None:
             flow.FLOW_HOME,
             lambda current, url: current.goto(url, wait_until="domcontentloaded", timeout=120_000),
         )
+        evidence = {}
+        def create_guard(configured_page):
+            # Reserve the complete approved liability from the actual configured
+            # UI, under the shared lock. A second read at guarded_create checks
+            # that controls and current headroom still agree before intent/click.
+            ui = read_live_evidence(configured_page)
+            accounting.reserve(reservation, 'HOS:009', MAX_TOTAL_CREDITS, live=ui['balances'][0])
+            evidence.update(guarded_create(
+                configured_page, accounting, reservation=reservation, charge=charge,
+                evidence_path=evidence_path))
         flow.generate_clip(
             page, prompt, dest, model=model, timeout_s=700,
-            start_frame=frame, attempts=1, reuse_project=False,
+            start_frame=frame, attempts=1, reuse_project=False, create_guard=create_guard,
         )
+
+    return evidence
 
 
 def cmd_plan(repo: Path, out: Path | None) -> dict:
@@ -1103,7 +1180,7 @@ def cmd_submit(repo: Path, *, other: int, media: Path, ledger_path: Path, lock_p
             "refusing submit: generation is not armed "
             f"({SUBMIT_ENV} is not 1). Plan only. J2033 stays blocked until Chief passes this runner."
         )
-    raise GuardError("J2275 repair checkpoint: live per-Create UI guard and shared accounting still pending; no generation")
+    raise GuardError("J2275 repair checkpoint: cross-channel writer adoption, ai_spend receipts, live UI validation and parent inventory still pending; no generation")
 
 
 # One synchronous DOM turn rechecks the evidence and clicks the same unique

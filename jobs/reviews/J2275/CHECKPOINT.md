@@ -167,3 +167,66 @@ Resume PR445 branch `codex/J2275-runner-safety`; this worktree is
 Remaining multi-writer integration exceeds a bounded 20-minute run, so the claim
 is released at this tested checkpoint. J2200 remains FIX, J2033 remains held;
 nothing is waiting on Ben. No production interlock was removed.
+
+
+Continuation checkpoint (fifth bounded run, 7 November 2026):
+
+- Connected `live_video_submit` to the actual HOS helper's configured Create
+  boundary, using a callback passed through `generate_clip` and
+  `_generate_clip_once` into `submit_create`. The callback reserves the complete
+  6000-credit liability from live UI evidence under the shared lock, then invokes
+  the strict atomic evidence/intent/click guard. No pre-helper guard is used.
+- Guarded helper calls require exactly one attempt, refuse an existing output,
+  refuse a missing frame rather than using context Animate, and propagate mode
+  setup failure. They bypass legacy spend hooks and all post-Create confirmation,
+  retry, re-submit and agent-status requests. A separate passive downloader only
+  reads media IDs and responses, writes a new file exclusively, and times out
+  without another UI action. Unsupported gallery layouts remain a recovery task.
+- Added `execute_shared_batch`, which holds shared account ownership from parent
+  preparation through per-Create evidence, charge verification, technical check,
+  NAS archive and immutable receipts. It accepts no caller-provided balance or
+  price. Missing outputs preserve a local unresolved intent; uncertain clicks
+  preserve the shared pending charge; either prevents retries. Failed technical
+  outputs stop the batch and cannot become valid parents. This entry point is
+  tested but is **not wired through the still-disabled production command**.
+- Added integration tests executing the real live adapter and actual helper
+  functions against fake Playwright/browser objects and the real accounting
+  guard. Price/output/account/entitlement drift and the 8900-credit full-cap
+  boundary produce zero fake clicks. A valid fake click has durable shared
+  intent and immutable evidence first. Batch tests cover two receipts, failed
+  output, missing output, disconnect recovery and required pre-spend archive.
+- Read-only live DOM probe (`LIVE_DOM_PROBE.json`): reused the one existing Flow
+  tab under the shared account lock, without navigation or any click. The account
+  matched and ULTRA was visible, but selected model/output/aspect/duration, exact
+  price, balance and enabled Create were absent from that page. The reader
+  correctly returned FAIL CLOSED. This does not validate the configured UI schema
+  and is not permission to relax it or submit. No account address is in the probe.
+
+Validation:
+
+```
+python3 -m unittest tests.test_flow_guard_boundary tests.test_hos009_tranche2_runner tests.test_hos009_shared_batch -q
+Ran 71 tests in 3.754s
+OK
+bash 00_Brand/Channel-Setup/tools/check_all.sh
+ALL CHECKS PASS
+```
+
+The check used the existing installed HOS node_modules through an ignored symlink.
+No registered studio-core file changed; the pre-existing HOS-specific Flow helper
+is not in CORE_FILES.json. No actual Create, credit spend, NAS media write,
+narration/scope/trim change, media approval or publishing action occurred.
+
+Next continuation must adopt the same canonical account protocol in every active
+cross-channel Flow writer, add idempotent ai_spend reading/spend receipts and
+explicit charge reconciliation, validate the configured live UI schema without
+spending, and verify the real parent-still inventory. Then connect cmd_submit to
+the shared path, test the full launch, and request independent elected-Chief
+J2200 re-review. The old execute_batch remains a legacy test interface and must
+not be selected for production. Keep the explicit cmd_submit interlock until
+these requirements and J2200 review are satisfied. J2033 stays held.
+
+Resume branch `codex/J2275-runner-safety`, draft PR445, isolated worktree
+`/private/tmp/codex-j2275`. J2275 remains step 0 of the original 3-step plan:
+implementation is unfinished. Released at a tested clean checkpoint because the
+remaining multi-writer integration exceeds one bounded run. Nothing is on Ben.
