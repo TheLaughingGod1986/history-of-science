@@ -1,0 +1,147 @@
+{
+  "job": "J2230",
+  "by": "codex",
+  "updated": "2026-11-06",
+  "spend": 0,
+  "approval": "NONE: candidates only; do not upload or schedule",
+  "preserve_occupied_dates": {
+    "2026-11-18": "ChbsigHD5_o, Willow",
+    "2026-11-21": "Bks_JLId1ew, Willow",
+    "2026-11-27": "J2171 Moon A conditional",
+    "2026-11-30": "J2171 Moon B conditional",
+    "2026-12-02": "J2170/J2255 Franklin C conditional",
+    "2026-12-04": "J2172 Alvarez A conditional"
+  },
+  "candidates": [
+    {
+      "film": "005",
+      "id": "s06_blood_pressure_cuff",
+      "title_draft": "How Does a Blood Pressure Cuff Work?",
+      "source": "/Volumes/data/mac-mini-archive/2026-11-05/YouTube/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s06_blood_pressure_cuff_v01.mp4",
+      "sha256": "b9bc921502c311e2bba585868dff48746eaefdf44380f5a5f8464f946e5b8bf3",
+      "metadata": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/SHORT_s06_blood_pressure_cuff_v01.json",
+      "proposed_air_utc": "2026-11-20T11:30:00Z",
+      "status": "current_open_gate_FAIL_not_approved",
+      "duration_s": 24.233
+    },
+    {
+      "film": "005",
+      "id": "s07_heart_pulse",
+      "title_draft": "How Does the Heart Pump Blood?",
+      "source": "/Volumes/data/mac-mini-archive/2026-11-05/YouTube/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s07_heart_pulse_v01.mp4",
+      "sha256": "a6513555187f65ee887877824ecaae732f85cf72498f3d17bbaa6c924ca7b310",
+      "metadata": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/SHORT_s07_heart_pulse_v01.json",
+      "proposed_air_utc": "2026-11-23T11:30:00Z",
+      "status": "current_open_gate_FAIL_not_approved",
+      "duration_s": 25.533
+    },
+    {
+      "film": "006",
+      "id": "s05_charcoal_gas",
+      "title_draft": "Who Discovered Carbon Dioxide?",
+      "source": "/Volumes/data/mac-mini-archive/2026-11-05/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/hos_006_s05_charcoal_gas_v01.mp4",
+      "sha256": "06fbeceda494be07be4b4b5b5084b5a27c6bff4d1ce8973c11b3d05972d48c4c",
+      "metadata": "02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/SHORT_s05_charcoal_gas_v01.json",
+      "proposed_air_utc": "2026-11-25T11:30:00Z",
+      "status": "current_open_gate_FAIL_not_approved",
+      "duration_s": 26.133
+    },
+    {
+      "film": "006",
+      "id": "s06_ingenhousz_oxygen",
+      "title_draft": "How Do Plants Make Oxygen?",
+      "source": "/Volumes/data/mac-mini-archive/2026-11-05/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/hos_006_s06_ingenhousz_oxygen_v01.mp4",
+      "sha256": "3daf38e7f3f5becb5e63c838fba6dfdf1d662ef3f6782cd55961d8b992cd11ae",
+      "metadata": "02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/SHORT_s06_ingenhousz_oxygen_v01.json",
+      "proposed_air_utc": "2026-11-28T11:30:00Z",
+      "status": "current_open_gate_FAIL_not_approved",
+      "duration_s": 25.333
+    }
+  ],
+  "vaccine_remaining": [
+    {
+      "film": "007",
+      "title_draft": "What Was Variolation?",
+      "proposed_air_utc": "2026-11-25T11:30:00Z",
+      "source_srt_blocks": [
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "source_interval_s": [
+        67.7,
+        85.22
+      ],
+      "note": "Existing passage is too short for 22s floor: choose additional locked words and verify 55-65 words; no invented VO or silent padding."
+    },
+    {
+      "film": "007",
+      "title_draft": "How Was Smallpox Eradicated?",
+      "proposed_air_utc": "2026-11-28T11:30:00Z",
+      "status": "extract_not_built",
+      "note": "Use existing Part05 eradication narration, distinct from scheduled Jenner experiment and vacca/Jesty Shorts. Exact 55\u201365-word lift and alignment still required."
+    }
+  ],
+  "permitted_dates": [
+    "2026-11-18",
+    "2026-11-20",
+    "2026-11-21",
+    "2026-11-23",
+    "2026-11-25",
+    "2026-11-27",
+    "2026-11-28",
+    "2026-11-30",
+    "2026-12-02",
+    "2026-12-04",
+    "2026-12-05"
+  ],
+  "calendar_finding": "There are 11 permitted dates, not enough for six new Shorts plus the two registered Willow Shorts and all conditional 008/009/010 Shorts. No production or publishing permission follows from this plan.",
+  "chief_calendar_decision": {
+    "by": "codex",
+    "date": "2026-11-06",
+    "authority": "chief_relay.py status confirmed codex elected; Grok and Claude down",
+    "decision": "Count the existing two J2263 Willow replacement cuts toward the six-film batch; do not build duplicate Willow Shorts. Finish two Harvey and two Vaccine cuts at GBP0. Preserve original six-cut job objective, one Short/day and all conditional Franklin/Moon/Alvarez dates. This is internal selection only; no upload, schedule, media approval or failed-gate waiver.",
+    "reason": "11 permitted dates cannot fit six incremental cuts plus existing/conditional reservations; two Willow finished replacements already have a KEEP and Ben-watch cards."
+  },
+  "selected": [
+    {
+      "film": "006",
+      "job": "J2263",
+      "awaits": [
+        "J2263.1",
+        "J2263.2"
+      ],
+      "dates": [
+        "2026-11-18T11:30:00Z",
+        "2026-11-21T11:30:00Z"
+      ],
+      "files": [
+        "/Users/benjaminoats/_desk/renders/J2169/Short_B_v02/hos006_short_b_v02.mp4",
+        "/Users/benjaminoats/_desk/renders/J2169/Short_C_v03/hos006_short_c_v03.mp4"
+      ],
+      "hashes": [
+        "f4b046d41d0d6fcfbd14258abe472d57db5c9d53c1ed535141aa3281e1f3915b",
+        "e1e3ff0ce3b5622b4a43d010a0df827bcd34e25ccd76a87338b286b0632c40c5"
+      ],
+      "status": "KEEP in existing J2263; Ben final watch pending; retain existing cards, no duplicate awaits"
+    },
+    {
+      "film": "005",
+      "dates": [
+        "2026-11-20T11:30:00Z",
+        "2026-11-23T11:30:00Z"
+      ],
+      "status": "must build new versions; old s06/s07 gate FAIL; check LEARNINGS rule 8 and any prior retirement before adapting"
+    },
+    {
+      "film": "007",
+      "dates": [
+        "2026-11-25T11:30:00Z",
+        "2026-11-28T11:30:00Z"
+      ],
+      "status": "two distinct new extracts required from locked long; titles and exact word timing not locked"
+    }
+  ]
+}

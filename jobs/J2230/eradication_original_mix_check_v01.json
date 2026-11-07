@@ -1,0 +1,45 @@
+{
+  "file": "/Users/benjaminoats/_desk/renders/J2230/vaccine_inputs_v01/eradication_assembly_input_v01.mp4",
+  "part": null,
+  "fails": [
+    "speech mean -16.6 dB outside -28.0 to -19.0 dB",
+    "insert at ~0:00.00: script 'a disease that' / heard 'humans why was this so groundbreaking because it showed that the body can learn to fight a disease before' — listen, then regenerate that sentence alone if real",
+    "replace at ~0:06.88: script 'a disease that had killed of millions of people over the centuries had been wiped out the first ever ended by humans health workers travelled to every country where smallpox still lived vaccinating everyone around each new case until there was nowhere left for' / heard 'fight a disease before nowhere left for' — listen, then regenerate that sentence alone if real",
+    "insert at ~0:15.16: script 'smallpox was gone' / heard 'smallpox was gone a diseased of millions of people over the centuries had been wiped out' — listen, then regenerate that sentence alone if real"
+  ],
+  "warns": [],
+  "duration_s": 22.07,
+  "duration": "0:22.07",
+  "mean_db": -16.6,
+  "peak_db": -1.4,
+  "pauses_over_1s": [],
+  "asr": "faster-whisper small.en",
+  "script_words": 61,
+  "heard_words": 52,
+  "wpm": 174,
+  "word_diffs": [
+    {
+      "at": "0:00.00",
+      "op": "insert",
+      "sounds_alike": false,
+      "script": "a disease that",
+      "heard": "humans why was this so groundbreaking because it showed that the body can learn to fight a disease before"
+    },
+    {
+      "at": "0:06.88",
+      "op": "replace",
+      "sounds_alike": false,
+      "script": "a disease that had killed of millions of people over the centuries had been wiped out the first ever ended by humans health workers travelled to every country where smallpox still lived vaccinating everyone around each new case until there was nowhere left for",
+      "heard": "fight a disease before nowhere left for"
+    },
+    {
+      "at": "0:15.16",
+      "op": "insert",
+      "sounds_alike": false,
+      "script": "smallpox was gone",
+      "heard": "smallpox was gone a diseased of millions of people over the centuries had been wiped out"
+    }
+  ],
+  "first_minute": {},
+  "verdict": "FAIL"
+}

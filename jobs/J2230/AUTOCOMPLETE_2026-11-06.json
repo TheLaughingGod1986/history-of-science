@@ -1,0 +1,85 @@
+{
+  "job": "J2230",
+  "date": "2026-11-06",
+  "method": "Unauthenticated YouTube autocomplete endpoint; no browser cookies",
+  "results": [
+    {
+      "query": "what was variolation",
+      "url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&gl=GB&hl=en&q=what+was+variolation",
+      "suggestions": [],
+      "exact_hit": false
+    },
+    {
+      "query": "how was smallpox eradicated",
+      "url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&gl=GB&hl=en&q=how+was+smallpox+eradicated",
+      "suggestions": [
+        "how was smallpox eradicated"
+      ],
+      "exact_hit": true
+    },
+    {
+      "query": "how does a blood pressure cuff work",
+      "url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&gl=GB&hl=en&q=how+does+a+blood+pressure+cuff+work",
+      "suggestions": [
+        "how does a blood pressure cuff work",
+        "how does a blood pressure machine work",
+        "how does a manual blood pressure cuff work",
+        "how does automatic blood pressure cuff work",
+        "how a blood pressure machine works",
+        "how blood pressure machine works animation"
+      ],
+      "exact_hit": true
+    },
+    {
+      "query": "how does the heart pump blood",
+      "url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&gl=GB&hl=en&q=how+does+the+heart+pump+blood",
+      "suggestions": [
+        "how does the heart pump blood",
+        "how does the heart pump blood through the body",
+        "how does the heart pump blood around the body",
+        "how does the heart pump blood step by step",
+        "how do heart pump blood",
+        "mystery doug how does the heart pump blood",
+        "how does your heart pump blood",
+        "how the heart pump blood",
+        "how the heart pumps blood animation",
+        "how the heart pumps blood dr binocs"
+      ],
+      "exact_hit": true
+    },
+    {
+      "query": "variolation",
+      "url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&gl=GB&hl=en&q=variolation",
+      "suggestions": [
+        "variolation",
+        "variolation process",
+        "variolation vs vaccination",
+        "variolation in hindi",
+        "variolation process in hindi"
+      ],
+      "exact_hit": true
+    },
+    {
+      "query": "how did variolation work",
+      "url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&gl=GB&hl=en&q=how+did+variolation+work",
+      "suggestions": [],
+      "exact_hit": false
+    },
+    {
+      "query": "what is variolation",
+      "url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&gl=GB&hl=en&q=what+is+variolation",
+      "suggestions": [
+        "what is variolation"
+      ],
+      "exact_hit": true
+    },
+    {
+      "query": "smallpox inoculation",
+      "url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&gl=GB&hl=en&q=smallpox+inoculation",
+      "suggestions": [
+        "smallpox inoculation"
+      ],
+      "exact_hit": true
+    }
+  ]
+}

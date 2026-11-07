@@ -1,0 +1,673 @@
+[
+  {
+    "id": "variolation",
+    "status": "ASSEMBLY INPUT ONLY; opening FIX and all final gates/review pending",
+    "source": "/Volumes/data/mac-mini-archive/2026-11-05/YouTube/History Of Science/02_Video-Projects/007_The-First-Vaccine/02_Voiceover/part01_the_speckled_monster_v03.mp3",
+    "source_sha256": "3881da7b96b4efaadde58287c4151b31c1dd39d337af4fd5dae0c6925ab5fb83",
+    "source_part": 1,
+    "master_offset_s": 0,
+    "source_intervals_s": [
+      [
+        67.66,
+        92.16
+      ]
+    ],
+    "file": "/Users/benjaminoats/_desk/renders/J2230/vaccine_stems_v01/variolation_vo_input_v01.wav",
+    "sha256": "cdf6e02772fc244fcc7d944ca7a75a136a5bedeb6f6050abfc925e53a3bad767",
+    "duration_s": 24.5,
+    "decode_exit": 0,
+    "expected_text": "Doctors took a little matter from a smallpox sore and scratched it into a healthy person's arm. It usually gave a milder illness, and lifelong protection. It was called variolation. But some people died from it, and they could pass full smallpox on to others. So people faced a terrible choice. Risk the treatment, or wait for the monster to come.",
+    "timing_words": [
+      {
+        "text": "Doctors",
+        "start_s": 0.04,
+        "source_start_s": 67.7
+      },
+      {
+        "text": "took",
+        "start_s": 0.24,
+        "source_start_s": 67.9
+      },
+      {
+        "text": "a",
+        "start_s": 0.58,
+        "source_start_s": 68.24
+      },
+      {
+        "text": "little",
+        "start_s": 0.74,
+        "source_start_s": 68.4
+      },
+      {
+        "text": "matter",
+        "start_s": 0.96,
+        "source_start_s": 68.62
+      },
+      {
+        "text": "from",
+        "start_s": 1.26,
+        "source_start_s": 68.92
+      },
+      {
+        "text": "a",
+        "start_s": 1.62,
+        "source_start_s": 69.28
+      },
+      {
+        "text": "smallpox",
+        "start_s": 1.78,
+        "source_start_s": 69.44
+      },
+      {
+        "text": "sore",
+        "start_s": 2.3,
+        "source_start_s": 69.96
+      },
+      {
+        "text": "and",
+        "start_s": 2.64,
+        "source_start_s": 70.3
+      },
+      {
+        "text": "scratched",
+        "start_s": 3.24,
+        "source_start_s": 70.9
+      },
+      {
+        "text": "it",
+        "start_s": 3.6,
+        "source_start_s": 71.26
+      },
+      {
+        "text": "into",
+        "start_s": 3.94,
+        "source_start_s": 71.6
+      },
+      {
+        "text": "a",
+        "start_s": 4.14,
+        "source_start_s": 71.8
+      },
+      {
+        "text": "healthy",
+        "start_s": 4.34,
+        "source_start_s": 72.0
+      },
+      {
+        "text": "person's",
+        "start_s": 4.66,
+        "source_start_s": 72.32
+      },
+      {
+        "text": "arm.",
+        "start_s": 5.3,
+        "source_start_s": 72.96
+      },
+      {
+        "text": "It",
+        "start_s": 6.44,
+        "source_start_s": 74.1
+      },
+      {
+        "text": "usually",
+        "start_s": 6.72,
+        "source_start_s": 74.38
+      },
+      {
+        "text": "gave",
+        "start_s": 7.02,
+        "source_start_s": 74.68
+      },
+      {
+        "text": "a",
+        "start_s": 7.34,
+        "source_start_s": 75.0
+      },
+      {
+        "text": "milder",
+        "start_s": 7.54,
+        "source_start_s": 75.2
+      },
+      {
+        "text": "illness",
+        "start_s": 8.02,
+        "source_start_s": 75.68
+      },
+      {
+        "text": "and",
+        "start_s": 8.38,
+        "source_start_s": 76.04
+      },
+      {
+        "text": "lifelong",
+        "start_s": 8.96,
+        "source_start_s": 76.62
+      },
+      {
+        "text": "protection.",
+        "start_s": 9.36,
+        "source_start_s": 77.02
+      },
+      {
+        "text": "It",
+        "start_s": 10.62,
+        "source_start_s": 78.28
+      },
+      {
+        "text": "was",
+        "start_s": 10.92,
+        "source_start_s": 78.58
+      },
+      {
+        "text": "called",
+        "start_s": 11.06,
+        "source_start_s": 78.72
+      },
+      {
+        "text": "variolation",
+        "start_s": 11.46,
+        "source_start_s": 79.12
+      },
+      {
+        "text": "but",
+        "start_s": 12.4,
+        "source_start_s": 80.06
+      },
+      {
+        "text": "some",
+        "start_s": 13.3,
+        "source_start_s": 80.96
+      },
+      {
+        "text": "people",
+        "start_s": 13.6,
+        "source_start_s": 81.26
+      },
+      {
+        "text": "died",
+        "start_s": 13.9,
+        "source_start_s": 81.56
+      },
+      {
+        "text": "from",
+        "start_s": 14.2,
+        "source_start_s": 81.86
+      },
+      {
+        "text": "it",
+        "start_s": 14.46,
+        "source_start_s": 82.12
+      },
+      {
+        "text": "and",
+        "start_s": 14.72,
+        "source_start_s": 82.38
+      },
+      {
+        "text": "they",
+        "start_s": 15.12,
+        "source_start_s": 82.78
+      },
+      {
+        "text": "could",
+        "start_s": 15.22,
+        "source_start_s": 82.88
+      },
+      {
+        "text": "pass",
+        "start_s": 15.4,
+        "source_start_s": 83.06
+      },
+      {
+        "text": "full",
+        "start_s": 15.68,
+        "source_start_s": 83.34
+      },
+      {
+        "text": "smallpox",
+        "start_s": 16.08,
+        "source_start_s": 83.74
+      },
+      {
+        "text": "onto",
+        "start_s": 16.68,
+        "source_start_s": 84.34
+      },
+      {
+        "text": "others.",
+        "start_s": 17.12,
+        "source_start_s": 84.78
+      },
+      {
+        "text": "So",
+        "start_s": 18.6,
+        "source_start_s": 86.26
+      },
+      {
+        "text": "people",
+        "start_s": 18.82,
+        "source_start_s": 86.48
+      },
+      {
+        "text": "faced",
+        "start_s": 19.12,
+        "source_start_s": 86.78
+      },
+      {
+        "text": "a",
+        "start_s": 19.46,
+        "source_start_s": 87.12
+      },
+      {
+        "text": "terrible",
+        "start_s": 19.7,
+        "source_start_s": 87.36
+      },
+      {
+        "text": "choice,",
+        "start_s": 20.06,
+        "source_start_s": 87.72
+      },
+      {
+        "text": "risk",
+        "start_s": 21.16,
+        "source_start_s": 88.82
+      },
+      {
+        "text": "the",
+        "start_s": 21.54,
+        "source_start_s": 89.2
+      },
+      {
+        "text": "treatment",
+        "start_s": 21.78,
+        "source_start_s": 89.44
+      },
+      {
+        "text": "or",
+        "start_s": 22.24,
+        "source_start_s": 89.9
+      },
+      {
+        "text": "wait",
+        "start_s": 22.86,
+        "source_start_s": 90.52
+      },
+      {
+        "text": "for",
+        "start_s": 23.12,
+        "source_start_s": 90.78
+      },
+      {
+        "text": "the",
+        "start_s": 23.38,
+        "source_start_s": 91.04
+      },
+      {
+        "text": "monster",
+        "start_s": 23.5,
+        "source_start_s": 91.16
+      },
+      {
+        "text": "to",
+        "start_s": 23.82,
+        "source_start_s": 91.48
+      },
+      {
+        "text": "come.",
+        "start_s": 24.1,
+        "source_start_s": 91.76
+      }
+    ],
+    "timing_warning": "VO_RETIME word starts are ASR estimates, not word-end proof. Preserve the canonical expected text; check splice consonants by ear. No fade, tempo or gain applied.",
+    "approval": "NONE",
+    "spend": 0
+  },
+  {
+    "id": "eradication",
+    "status": "ASSEMBLY INPUT ONLY; opening FIX and all final gates/review pending",
+    "source": "/Volumes/data/mac-mini-archive/2026-11-05/YouTube/History Of Science/02_Video-Projects/007_The-First-Vaccine/02_Voiceover/part05_the_word_that_saved_millions_v01b.mp3",
+    "source_sha256": "18b725326c0b40e6bba2250be9f25a2581366a2ff76a2121fa889191f727557f",
+    "source_part": 5,
+    "master_offset_s": 409.59,
+    "source_intervals_s": [
+      [
+        41.34,
+        49.1
+      ],
+      [
+        25.36,
+        34.5
+      ],
+      [
+        35.16,
+        40.3
+      ]
+    ],
+    "file": "/Users/benjaminoats/_desk/renders/J2230/vaccine_stems_v01/eradication_vo_input_v01.wav",
+    "sha256": "73990ebc84479fb2aa136345b90a2cea4548368c10615b246d4ec8369379d75e",
+    "duration_s": 22.04,
+    "decode_exit": 0,
+    "expected_text": "A disease that had killed hundreds of millions of people over the centuries had been wiped out, the first ever ended by humans. Health workers travelled to every country where smallpox still lived, vaccinating everyone around each new case, until there was nowhere left for it to go. On the eighth of May, nineteen eighty, the world's health leaders declared that smallpox was gone.",
+    "timing_words": [
+      {
+        "text": "A",
+        "start_s": 0.04,
+        "source_start_s": 41.38
+      },
+      {
+        "text": "disease",
+        "start_s": 0.22,
+        "source_start_s": 41.56
+      },
+      {
+        "text": "that",
+        "start_s": 0.52,
+        "source_start_s": 41.86
+      },
+      {
+        "text": "have",
+        "start_s": 0.82,
+        "source_start_s": 42.16
+      },
+      {
+        "text": "killed",
+        "start_s": 0.96,
+        "source_start_s": 42.3
+      },
+      {
+        "text": "hundreds",
+        "start_s": 1.32,
+        "source_start_s": 42.66
+      },
+      {
+        "text": "of",
+        "start_s": 1.66,
+        "source_start_s": 43.0
+      },
+      {
+        "text": "millions",
+        "start_s": 1.94,
+        "source_start_s": 43.28
+      },
+      {
+        "text": "of",
+        "start_s": 2.14,
+        "source_start_s": 43.48
+      },
+      {
+        "text": "people",
+        "start_s": 2.4,
+        "source_start_s": 43.74
+      },
+      {
+        "text": "over",
+        "start_s": 2.74,
+        "source_start_s": 44.08
+      },
+      {
+        "text": "the",
+        "start_s": 3.04,
+        "source_start_s": 44.38
+      },
+      {
+        "text": "centuries",
+        "start_s": 3.18,
+        "source_start_s": 44.52
+      },
+      {
+        "text": "had",
+        "start_s": 3.64,
+        "source_start_s": 44.98
+      },
+      {
+        "text": "been",
+        "start_s": 4.2,
+        "source_start_s": 45.54
+      },
+      {
+        "text": "wiped",
+        "start_s": 4.38,
+        "source_start_s": 45.72
+      },
+      {
+        "text": "out,",
+        "start_s": 4.68,
+        "source_start_s": 46.02
+      },
+      {
+        "text": "the",
+        "start_s": 5.6,
+        "source_start_s": 46.94
+      },
+      {
+        "text": "first",
+        "start_s": 5.9,
+        "source_start_s": 47.24
+      },
+      {
+        "text": "ever",
+        "start_s": 6.24,
+        "source_start_s": 47.58
+      },
+      {
+        "text": "ended",
+        "start_s": 6.58,
+        "source_start_s": 47.92
+      },
+      {
+        "text": "by",
+        "start_s": 6.96,
+        "source_start_s": 48.3
+      },
+      {
+        "text": "humans.",
+        "start_s": 7.22,
+        "source_start_s": 48.56
+      },
+      {
+        "text": "health",
+        "start_s": 7.8,
+        "source_start_s": 25.4
+      },
+      {
+        "text": "workers",
+        "start_s": 7.94,
+        "source_start_s": 25.54
+      },
+      {
+        "text": "traveled",
+        "start_s": 8.36,
+        "source_start_s": 25.96
+      },
+      {
+        "text": "to",
+        "start_s": 8.7,
+        "source_start_s": 26.3
+      },
+      {
+        "text": "every",
+        "start_s": 8.98,
+        "source_start_s": 26.58
+      },
+      {
+        "text": "country",
+        "start_s": 9.32,
+        "source_start_s": 26.92
+      },
+      {
+        "text": "where",
+        "start_s": 9.68,
+        "source_start_s": 27.28
+      },
+      {
+        "text": "smallpox",
+        "start_s": 9.98,
+        "source_start_s": 27.58
+      },
+      {
+        "text": "still",
+        "start_s": 10.48,
+        "source_start_s": 28.08
+      },
+      {
+        "text": "lived,",
+        "start_s": 10.78,
+        "source_start_s": 28.38
+      },
+      {
+        "text": "vaccinating",
+        "start_s": 11.9,
+        "source_start_s": 29.5
+      },
+      {
+        "text": "everyone",
+        "start_s": 12.32,
+        "source_start_s": 29.92
+      },
+      {
+        "text": "around",
+        "start_s": 12.88,
+        "source_start_s": 30.48
+      },
+      {
+        "text": "each",
+        "start_s": 13.18,
+        "source_start_s": 30.78
+      },
+      {
+        "text": "new",
+        "start_s": 13.48,
+        "source_start_s": 31.08
+      },
+      {
+        "text": "case",
+        "start_s": 13.78,
+        "source_start_s": 31.38
+      },
+      {
+        "text": "until",
+        "start_s": 14.12,
+        "source_start_s": 31.72
+      },
+      {
+        "text": "there",
+        "start_s": 14.86,
+        "source_start_s": 32.46
+      },
+      {
+        "text": "was",
+        "start_s": 15.04,
+        "source_start_s": 32.64
+      },
+      {
+        "text": "nowhere",
+        "start_s": 15.16,
+        "source_start_s": 32.76
+      },
+      {
+        "text": "left",
+        "start_s": 15.46,
+        "source_start_s": 33.06
+      },
+      {
+        "text": "for",
+        "start_s": 15.84,
+        "source_start_s": 33.44
+      },
+      {
+        "text": "it",
+        "start_s": 16.12,
+        "source_start_s": 33.72
+      },
+      {
+        "text": "to",
+        "start_s": 16.2,
+        "source_start_s": 33.8
+      },
+      {
+        "text": "go.",
+        "start_s": 16.38,
+        "source_start_s": 33.98
+      },
+      {
+        "text": "On",
+        "start_s": 16.94,
+        "source_start_s": 35.2
+      },
+      {
+        "text": "the",
+        "start_s": 17.1,
+        "source_start_s": 35.36
+      },
+      {
+        "text": "8th",
+        "start_s": 17.2,
+        "source_start_s": 35.46
+      },
+      {
+        "text": "of",
+        "start_s": 17.48,
+        "source_start_s": 35.74
+      },
+      {
+        "text": "May",
+        "start_s": 17.62,
+        "source_start_s": 35.88
+      },
+      {
+        "text": "1980,",
+        "start_s": 17.8,
+        "source_start_s": 36.06
+      },
+      {
+        "text": "the",
+        "start_s": 19.2,
+        "source_start_s": 37.46
+      },
+      {
+        "text": "world's",
+        "start_s": 19.28,
+        "source_start_s": 37.54
+      },
+      {
+        "text": "health",
+        "start_s": 19.74,
+        "source_start_s": 38.0
+      },
+      {
+        "text": "leaders",
+        "start_s": 19.92,
+        "source_start_s": 38.18
+      },
+      {
+        "text": "declared",
+        "start_s": 20.34,
+        "source_start_s": 38.6
+      },
+      {
+        "text": "that",
+        "start_s": 20.8,
+        "source_start_s": 39.06
+      },
+      {
+        "text": "smallpox",
+        "start_s": 21.1,
+        "source_start_s": 39.36
+      },
+      {
+        "text": "was",
+        "start_s": 21.72,
+        "source_start_s": 39.98
+      },
+      {
+        "text": "gone.",
+        "start_s": 21.98,
+        "source_start_s": 40.24
+      }
+    ],
+    "timing_warning": "VO_RETIME word starts are ASR estimates, not word-end proof. Preserve the canonical expected text; check splice consonants by ear. No fade, tempo or gain applied.",
+    "approval": "NONE",
+    "spend": 0
+  }
+]

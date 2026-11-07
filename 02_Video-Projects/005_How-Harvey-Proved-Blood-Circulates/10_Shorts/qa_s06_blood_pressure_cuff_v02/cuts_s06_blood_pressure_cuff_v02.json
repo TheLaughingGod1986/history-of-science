@@ -1,0 +1,68 @@
+[
+  {
+    "row": "s01_0",
+    "timeline_in": 0.0,
+    "timeline_out": 2.637,
+    "source": "14_cuff_release_t2.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 2.0
+    },
+    "video": true
+  },
+  {
+    "row": "s02_It",
+    "timeline_in": 2.637,
+    "timeline_out": 6.098,
+    "source": "02_linen_tie_t2.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 3.2
+    },
+    "video": true
+  },
+  {
+    "row": "s03_lets",
+    "timeline_in": 6.098,
+    "timeline_out": 10.53,
+    "source": "08_knots_valve_t1.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 2.0
+    },
+    "video": true
+  },
+  {
+    "row": "s04_A",
+    "timeline_in": 10.53,
+    "timeline_out": 14.599,
+    "source": "08_your_blood_t2.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 3.0
+    },
+    "video": true
+  },
+  {
+    "row": "s05_Harvey",
+    "timeline_in": 14.599,
+    "timeline_out": 20.092,
+    "source": "14_steering_home_t1.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 1.2
+    },
+    "video": true
+  },
+  {
+    "row": "s06_loop",
+    "timeline_in": 20.092,
+    "timeline_out": 23.092,
+    "source": "loop_end_14_cuff_release_t2.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 2.0
+    },
+    "video": true
+  }
+]
