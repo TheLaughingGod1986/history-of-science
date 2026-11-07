@@ -11,6 +11,8 @@ class SharedBatchTests(unittest.TestCase):
     def setup_batch(self, root, *, valid=True, drift=False, missing=False, disconnect=False):
         rows=RUNNER.order_rows(RUNNER.load_scope(ROOT))[:2]
         calls=[]
+        frame=root/'frame.png'
+        frame.write_bytes(b'fake start still')
         def submitter(row,dest,frame,*,accounting,reservation,charge,evidence_path):
             calls.append(row.plate_id)
             accounting._assert_held()
@@ -30,7 +32,10 @@ class SharedBatchTests(unittest.TestCase):
         return rows,calls,submitter,technical
 
     def run_batch(self,root,rows,submitter,technical):
-        with patch.object(RUNNER,'prepare_start_frame',return_value=root/'frame.png'), \
+        inventory=[{'part':row.part,'plate_id':row.plate_id,'path':str((root/'frame.png').resolve()),
+                    'sha256':RUNNER.sha256_file(root/'frame.png')} for row in rows if row.parent is None]
+        with patch.object(RUNNER,'verify_still_inventory',return_value=inventory), \
+             patch.object(RUNNER,'prepare_start_frame',return_value=root/'frame.png'), \
              patch.object(RUNNER,'strip_audio'),patch.object(RUNNER,'technical_report',side_effect=technical):
             return RUNNER.execute_shared_batch(rows,media=root/'media',ledger_path=root/'ledger.jsonl',
                 archive_dir=root/'archive',accounting_state=root/'shared',submitter=submitter,

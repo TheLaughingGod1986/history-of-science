@@ -305,3 +305,38 @@ runner PASS. Resume PR445 plus linked OWB PR622. Remaining integration exceeds
 this run's bounded scope; release J2275 for immediate continuation, nothing on Ben.
 Isolated worktrees: /private/tmp/codex-j2275 (HOS checkpoint) and
 /private/tmp/codex-j2275-owb (OWB reporting repair).
+
+Continuation checkpoint (7 November 2026, inventory integration):
+
+- Resume **PR445**, branch `codex/J2275-runner-safety`, worktree
+  `/private/tmp/j2275-integrate`. PR457/68680265 is a divergent partial branch;
+  it lacks the actual guarded adapter, stronger launcher and spend exporter.
+  Do not restart from PR439 or substitute PR457 for this continuation. No PR
+  was merged or closed; Chief owns that decision.
+- Ported PR457's independent-still decoder/dimension/hash inventory into the
+  shared-account batch, rather than adding a second accounting implementation.
+  The entire supplied inventory scope is checked under shared ownership and its
+  content-addressed receipt is archived before any local intent or Create.
+  Pinned hash mismatch, missing/corrupt/small images, or a frame changed after
+  preparation stop before browser entry. Output receipts include inventory ID
+  and actual input hash. `inventory_rows` must receive the full locked scope at
+  eventual production entry; absent that, it checks the current batch.
+- 81 zero-submit regressions pass, including real synthetic image decoding,
+  missing later asset preventing the first submit, pinned-hash mismatch, and
+  changed input after verification. Existing fake-browser tests remain intact.
+  No real media inventory was read or approved, and no actual Flow Create ran.
+
+Still incomplete at **1/3**: all active cross-channel generation writers must
+adopt the same account protocol; production must use the canonical OWB spend
+report destination (and PR622 lock contract), full inventory scope and shared
+batch; configured live UI schema needs read-only validation; real parent/media
+inventory remains unverified. Then test complete launch and obtain elected-Chief
+J2200 re-review. Keep cmd_submit disabled and J2033 held. No Ben action needed.
+
+Disk offload ran safely with the existing tool, detached session
+`j2275-disk-1419`; log `~/_desk/logs/J2275-disk-1419.log`, completion file
+`~/_desk/logs/J2275-disk-1419.done`. It found nothing old enough to move and
+reported 7,924 MB free. It deleted nothing on the NAS. Three zero-byte untracked
+OWB blockers were preserved in `~/_desk/rescue/j2275-1794061168964108000/`.
+
+Validation for this checkpoint: 81 zero-submit tests OK; repository `check_all.sh` ALL CHECKS PASS (existing package warnings only); `git diff --check` clean. Existing installed node_modules reused via ignored symlink.

@@ -488,6 +488,45 @@ def prepare_start_frame(row: Row, media: Path, *, in_scope_keys: set[tuple[int, 
     return Path(made)
 
 
+def verify_still_inventory(rows: list[Row], media: Path) -> list[dict]:
+    """Validate every independent start still before batch spending is enabled.
+
+    In-scope continuations are derived from proven parent outputs later. Missing
+    independent stills stop here; this is not permission to mint a replacement.
+    """
+    inventory = []
+    for row in rows:
+        if row.parent is not None:
+            continue
+        path = still_path(media, row.part, row.plate_id)
+        if not path.is_file():
+            raise GuardError(f"missing inventory start still P{row.part:02d}:{row.plate_id}")
+        digest = sha256_file(path)
+        try:
+            probe = subprocess.run(
+                ["ffprobe", "-v", "error", "-show_streams", "-of", "json", str(path)],
+                check=True, capture_output=True, text=True)
+            streams = json.loads(probe.stdout)["streams"]
+            if len(streams) != 1 or streams[0].get("codec_type") != "video":
+                raise GuardError("still needs exactly one image stream")
+            width, height = int(streams[0]["width"]), int(streams[0]["height"])
+            subprocess.run(["ffmpeg", "-v", "error", "-xerror", "-i", str(path),
+                            "-frames:v", "1", "-f", "null", "-"],
+                           check=True, capture_output=True)
+        except Exception as exc:
+            raise GuardError(f"invalid inventory still {path}") from exc
+        if width < 1280 or height < 720 or abs(width / height - 16 / 9) > 0.01:
+            raise GuardError(f"inventory still is not 16:9 HD: {path}")
+        if digest != sha256_file(path):
+            raise GuardError(f"inventory changed while reading: {path}")
+        pin = path.with_suffix(".sha256")
+        if pin.exists() and pin.read_text().strip() != digest:
+            raise GuardError(f"inventory differs from pinned start still: {path}")
+        inventory.append({"part": row.part, "plate_id": row.plate_id,
+                          "path": str(path.resolve()), "sha256": digest,
+                          "width": width, "height": height})
+    return inventory
+
 def accept_zero_still_price(still_price: dict | None) -> None:
     if not still_price or still_price.get("displayed_credits") != 0:
         raise GuardError("Nano Banana still price is not a verified 0")
@@ -1079,7 +1118,8 @@ def execute_shared_batch(batch: list[Row], *, media: Path, ledger_path: Path,
                          spend_ledger: Path | None = None, recorder: str = "codex",
                          reservation: str = "J2033", submitter=None,
                          in_scope_keys: set[tuple[int, str]] | None = None,
-                         test_archive: bool = False) -> list[dict]:
+                         test_archive: bool = False,
+                         inventory_rows: list[Row] | None = None) -> list[dict]:
     """Production accounting integration; no caller-supplied balance/price.
 
     Each actual configured Create obtains its own UI evidence and durable shared
@@ -1096,6 +1136,14 @@ def execute_shared_batch(batch: list[Row], *, media: Path, ledger_path: Path,
             accounting.export_ai_spend(spend_ledger, by=recorder)
         if accounting.snapshot()['pending']:
             raise GuardError('unresolved shared Create; no batch or retry')
+        # Check the whole supplied scope before any charge, including later rows.
+        # Archive the inventory before browser entry; a missing later asset must
+        # never spend the first row's credits.
+        inventory = verify_still_inventory(inventory_rows if inventory_rows is not None else batch, media)
+        inventory_bytes = json.dumps(inventory, sort_keys=True).encode()
+        inventory_id = hashlib.sha256(inventory_bytes).hexdigest()
+        immutable_bytes(archive_dir / ("inventory-" + inventory_id + ".json"), inventory_bytes)
+        inventory_by_key = {(item["part"], item["plate_id"]): item for item in inventory}
         entries = read_ledger(ledger_path)
         if any(e.get('status') == 'SUBMITTING' for e in latest_entries(entries)):
             raise GuardError('unresolved local output; reconcile before batch')
@@ -1105,6 +1153,11 @@ def execute_shared_batch(batch: list[Row], *, media: Path, ledger_path: Path,
                 raise GuardError(f'{row.plate_id}: take cap reached')
             frame = prepare_start_frame(row, media, in_scope_keys=in_scope_keys or set(),
                                         still_price=None, still_maker=None, ledger=entries)
+            expected = inventory_by_key.get(row.key)
+            if row.parent is None and (expected is None or
+                    Path(expected["path"]) != frame.resolve() or
+                    sha256_file(frame) != expected["sha256"]):
+                raise GuardError("start still changed after inventory; no Create")
             take, dest = next_version(media, row.part, row.plate_id)
             dest.parent.mkdir(parents=True, exist_ok=True)
             charge = f'HOS:009:P{row.part:02d}:{row.plate_id}:t{take}'
@@ -1112,6 +1165,8 @@ def execute_shared_batch(batch: list[Row], *, media: Path, ledger_path: Path,
             # silently skip a take or erase an unknown submission.
             intent = submitting_record(row.plate_id, row.part, take, dest)
             intent['shared_charge'] = charge
+            intent['inventory'] = inventory_id
+            intent['input'] = {'file': str(frame.resolve()), 'sha256': sha256_file(frame)}
             append_ledger(ledger_path, intent)
             try:
                 evidence = submitter(row, dest, frame, accounting=accounting,
@@ -1133,6 +1188,7 @@ def execute_shared_batch(batch: list[Row], *, media: Path, ledger_path: Path,
             technical = technical_report(dest, required_s=max(8.0, row.use_s))
             entry = review_record(row.plate_id, row.part, take, dest, technical)
             entry.update(shared_charge=charge, create_evidence=evidence,
+                         inventory=inventory_id, input=intent["input"],
                          archive=archive_verified(dest, archive_dir/dest.name))
             if not technical['ok']:
                 entry['status'] = 'FAILED'
