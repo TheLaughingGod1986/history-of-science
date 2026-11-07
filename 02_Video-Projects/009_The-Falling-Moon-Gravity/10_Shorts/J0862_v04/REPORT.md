@@ -1,0 +1,20 @@
+# J0862 v04 delivery & J2279 audio-capable splice repair — 6 November 2026
+
+Codex covering (`cb18632d` pickup) + Gemini covering (`J2279` direct `audio_input` audition and zero-spend splice/tail-fade repair). `J2195` scoped one opening-only pickup; recorded once with Ben Orbit Narrator, `eleven_v3`, `speed=1.04`. Actual text is 81 characters (brief says 82). Live ElevenLabs balance before: `93,478` remaining / `121,114`; immediate after counter unchanged; guarded spend ledger records 81 characters. No top-up or overage; `0` additional characters generated in `J2279`.
+
+Three retained takes are untouched: `009 A v02`, `010 A v02` (`J1004` Option A1 retained), `010 C v02`. All three rerun word gates PASS; `A` spelling/homophone warnings remain documented. Old `009 B v02/v03` preserved, and `cb18632d`'s initial `v04` composite is backed up at `/Users/benjaminoats/_desk/media/HOS/009_The-Falling-Moon-Gravity/vo_v02_cb18632d_backup/`.
+
+## J2279 Direct Audio Audition & Zero-Spend Splice Repair (`gemini`, `audio_input` verified)
+
+1. **Repeated-Phrase Gate Diagnosis (`~0:19.74` insert in `cb18632d`)**:
+   - Direct `audio_input` audition (`read_file` on `hos_009_short_B_v04.{wav,mp3}`, `hos_009_short_B_open_v04.mp3`, and `hos_009_short_B_v03.mp3`) confirmed **zero spoken repeat exists** at `19.74 s` or `24.14 s`. Ben speaks *"And the numbers matched. One pull, for apples and Moons."* **once** (`19.40–24.14 s` in `v04`).
+   - In `v03.wav`, the `/z/` sibilant of `"moons"` ends at `23.480 s` (`-42.0 dBFS`), followed by `160 ms` (`23.480–23.640 s`) of `-41.3 dBFS` post-word breath release. When shifted by `+0.800 s` (`23.680 s -> 24.480 s`), `faster-whisper small.en` (`word_timestamps=True`) ended `Seg 7` (`' One pull for apples and moons.'`) at `24.14 s` and ran a second seek pass on `[24.14:24.48]`, hallucinating a `0.18 s` duplicate `Seg 8 [24.14 -> 24.32]: ' One pull for apples and moons.'` (`no_speech_prob = 0.986` WAV / `0.988` MP3, `avg_logprob = -0.987` / `-0.966`, 4 zero-duration words with `prob = 0.000`). `vo_check.py` then reported `24.14 s` as `0:19.74` because `norm()` drops 9 cardinal numbers before indexing the un-normalized `words` list.
+2. **Acoustic Splice Defect at `6.420–6.820 s` Caught by Direct Audition & Fixed**:
+   - In `hos_009_short_B_v03.wav`, Scribe's `"start": 6.02` for `"Isaac"` is the `-13.7 dBFS` vowel peak, while the true `/aɪ/` diphthong onset of `"Isaac"` begins `80 ms` earlier at **`5.940 s`** (`5.900 s: -78.5 dBFS -> 5.940 s: -45.5 dBFS -> 5.960 s: -31.1 dBFS -> 5.980 s: -18.6 dBFS -> 6.000 s: -15.2 dBFS -> 6.020 s: -13.7 dBFS`). Cutting `v03.wav` at `6.020 s` after `-100 dBFS` digital zero clipped the first `80 ms` of `"Isaac"`.
+   - **Bounded `£0` / `0`-credit ffmpeg repair**: Keep the full decay of `open_v04.wav` (`[0.100:0.900] + [0.960:6.640] = 6.480 s`, `hook_end_s = 2.820 s <= 2.850 s`, `atempo = 1.00`) and concatenate `v03.wav[5.680:23.680]` (`18.000 s`, starting in the `-66.0 dBFS` room-tone minimum `260 ms` before the `5.940 s` onset of `"Isaac"` and applying a `60 ms` fade-out `afade=t=out:st=23.480:d=0.060` over the post-word breath tail after `"moons."`).
+   - Because `6.480 - 5.680 = +0.800 s` (identical to `6.820 - 6.020 = +0.800 s`), **every word timestamp, the `24.480 s` VO duration (`25.480 s` with `1.000 s` loop tail), `hook_end_s = 2.820 s`, and all 8 word-boundary cuts (`S01..S08`) remain unchanged to the millisecond**, while restoring the full `"Isaac"` onset and natural sentence pause.
+3. **Unmodified `vo_check_py312.sh` Gate Verification (Both Encodings PASS)**:
+   - `PASS  hos_009_short_B_v04.mp3  0:24.48  mean -24.4 dB  peak -4.2 dB  145 wpm` (`0` fails, `0` warnings; `sha256: 0c9c4c6ffdb1337dc11acaf57af909f8d8be91d77210bca2e13af80715b87498`)
+   - `PASS  hos_009_short_B_v04.wav  0:24.48  mean -24.1 dB  peak -4.0 dB  145 wpm` (`0` fails, `0` warnings; `sha256: a6666fd27c9a90e781369ea07e4888d87a2d5edb1624a0090ae98fa39504686b`)
+
+`check_all.sh 009`: ALL CHECKS PASS. `check_all.sh 010`: ALL CHECKS PASS. No stage approved, upload, schedule or privacy change.

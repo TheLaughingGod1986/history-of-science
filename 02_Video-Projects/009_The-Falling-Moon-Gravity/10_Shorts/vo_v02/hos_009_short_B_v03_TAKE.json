@@ -1,0 +1,129 @@
+{
+  "stem": "hos_009_short_B_v03",
+  "voice": "Ben Orbit Narrator",
+  "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+  "model_id": "eleven_v3",
+  "settings": {
+    "stability": 0.34,
+    "similarity_boost": 0.78,
+    "style": 0.42,
+    "speed": 1.04,
+    "use_speaker_boost": true
+  },
+  "orders": [
+    "J1894",
+    "6631275536"
+  ],
+  "retake_of": null,
+  "chapters": [
+    {
+      "title": "take",
+      "chars": 316,
+      "duration_s": 23.68
+    }
+  ],
+  "gap_s": 0.7,
+  "spoken_chars": 316,
+  "words": 57,
+  "duration_s": 23.68,
+  "loudness": {
+    "lufs_integrated": -20.7,
+    "mean_volume_db": -23.7,
+    "max_volume_db": -3.9
+  },
+  "sha256_mp3": "ea0babb393cb68036ef0ed29e1acd5c200bfb57c3dc74f6af29eba4eebb7b10f",
+  "scribe": {
+    "transcript": "In one minute, the moon drops and apples one second fall, about five meters each. Isaac Newton worked out why. The moon is 60 times further from the Earth's center than we are, so the pull on it is 60 times 60 weaker, 3,600 times. And the numbers matched. One pull for apples and moons",
+    "script_words": 58,
+    "scribe_words": 56,
+    "match_rate_pct": 81.03,
+    "exact_match": false,
+    "mismatches": [
+      {
+        "op": "replace",
+        "script": [
+          "an",
+          "apple's"
+        ],
+        "scribe": [
+          "and",
+          "apples"
+        ]
+      },
+      {
+        "op": "replace",
+        "script": [
+          "metres"
+        ],
+        "scribe": [
+          "meters"
+        ]
+      },
+      {
+        "op": "replace",
+        "script": [
+          "sixty"
+        ],
+        "scribe": [
+          "60"
+        ]
+      },
+      {
+        "op": "replace",
+        "script": [
+          "centre"
+        ],
+        "scribe": [
+          "center"
+        ]
+      },
+      {
+        "op": "replace",
+        "script": [
+          "sixty"
+        ],
+        "scribe": [
+          "60"
+        ]
+      },
+      {
+        "op": "replace",
+        "script": [
+          "sixty"
+        ],
+        "scribe": [
+          "60"
+        ]
+      },
+      {
+        "op": "replace",
+        "script": [
+          "three",
+          "thousand",
+          "six",
+          "hundred"
+        ],
+        "scribe": [
+          "3",
+          "600"
+        ]
+      }
+    ]
+  },
+  "vo_check": "REVIEW",
+  "credits": {
+    "before": {
+      "used": 23762,
+      "limit": 121114,
+      "remaining": 97352
+    },
+    "after": {
+      "used": 23762,
+      "limit": 121114,
+      "remaining": 97352
+    },
+    "counter_delta": 0
+  },
+  "text": "In one minute the Moon drops an apple's one-second fall. About five metres each. Isaac Newton worked out why. The Moon is sixty times further from the Earth's centre than we are, so the pull on it is sixty times sixty weaker. Three thousand six hundred times. And the numbers matched. One pull, for apples and Moons.",
+  "made_at": "2026-11-05T07:41:16+0000"
+}
