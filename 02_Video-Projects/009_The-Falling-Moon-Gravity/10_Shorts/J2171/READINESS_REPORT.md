@@ -44,12 +44,12 @@
 | Row | Window (s) | `use_s` | Source Plate | Kind | Probed Dur (s) | SHA-256 (verified local + NAS) | Status | Spoken |
 |---|---|---:|---|---|---:|---|---|---|
 | `S01` | `0.00–2.80` | `2.80` | `P1:01_moon_falling` | Flow Veo Quality (T1 KEEP, `J1237` PASS) | `8.000` | `3e0774a7dd510b5ee32358c188f5efe4903aaf45aafab8870df662bcc1cd4c1f` | Ready | *The moon is falling towards the Earth right now.* |
-| `S02` | `2.80–5.74` | `2.94` | `P3:08_km_a_second` | `code_graphics_v01` (`SIDEWAYS AND DOWN`) | `4.950` | `b18c90bc720791f384805c83bd9b15ab85999c7f81878ef9e682a4523df1e040` | Ready | *Every second, it moves sideways about a* |
+| `S02` | `2.80–5.74` | `2.94` | `P3:08_km_a_second` | `code_graphics_v01` (`SIDEWAYS AND DOWN`) | `4.950` | `b18c90bc720791f3b4e084db41ca2df4e573d791db74191032366ae9d42a6f58` | Ready | *Every second, it moves sideways about a* |
 | `S03` | `5.74–8.98` | `3.24` | `P3:07_ball_to_moon` | Flow Veo Quality (Tranche 2 parent) | — | — | **Blocked (`J2033`/`J2034`)** | *kilometer and drops a tiny bit towards us.* |
 | `S04` | `8.98–12.14` | `3.16` | `P3:05_shot_orbit` | Flow Veo Quality (T1 KEEP, `J1237` PASS) | `8.000` | `0878c30646fa8b7158044a5e3d52a584a1cf4fda8accc76f6aa747fca8405f1b` | Ready | *But the Earth curves away beneath it,* |
 | `S05` | `12.14–15.42` | `3.28` | `P2:07_orchard_bench` | Flow Veo Fast (T1 KEEP, `J1237` PASS) | `8.000` | `028ee06be5e3fb76cbc58265837633993c4834c961735c191c36379c5e7afa02` | Ready | *so it keeps on missing. Isaac* |
 | `S06` | `15.42–18.62` | `3.20` | `P2:08_the_apple` | Flow Veo Quality (T1 KEEP, `J1237` PASS) | `5.083` | `357e8de3e9c771ef212fb01ee0a6052ebfedbc0de0ad9794270f5ff2128a5b44` | Ready | *Newton worked this out more than three hundred years ago.* |
-| `S07` | `18.62–21.28` | `2.66` | `P3:06_orbit_teach` | `code_graphics_v01` (`FALLING SIDEWAYS`) | `4.400` | `840706a32f1717c7a265f269fdab333d9d7f55fc82297274ce541502736d7c49` | Ready | *An orbit isn't floating at all.* |
+| `S07` | `18.62–21.28` | `2.66` | `P3:06_orbit_teach` | `code_graphics_v01` (`FALLING SIDEWAYS`) | `4.400` | `840706a32f1717c789317f13c0a4481e334c34f8a39c9393f78a660ea9d9a178` | Ready | *An orbit isn't floating at all.* |
 | `S08` | `21.28–24.32` | `3.04` | `P5:09_orchard_dusk` | Flow Veo Quality (T1 KEEP, `J1237` PASS) | `8.000` | `1266d61a73ccb6854051836495df72e9f0d0cbd71dd836981d887b9a5a41f` | Ready | *It's falling and missing forever* |
 | `loop_tail` | `24.32–25.32` | `1.00` | `P1:01_moon_falling` | Flow Veo Quality (T1 KEEP, `J1237` PASS) | `8.000` | `3e0774a7dd510b5ee32358c188f5efe4903aaf45aafab8870df662bcc1cd4c1f` | Ready | *(loop return)* |
 
@@ -67,9 +67,9 @@
 | `S01` | `0.00–2.82` | `2.82` | `P4:05_minute_second` | Flow Veo Quality (T1 KEEP, `J1237` PASS) | `8.000` | `7f56f05930cefc854aabde17cd204510771dfbaaa5faa2f6b410facebbd3cd66` | Ready | *In one minute, the moon falls five meters.* |
 | `S02` | `2.82–5.56` | `2.74` | `P1:02_apple_and_moon` | Flow Veo Quality (T1 KEEP, `J1237` PASS) | `7.917` | `bc3ad225b09a2fc090c4cbe694eb3aeeb0cf5999cd6c6d6262be81a1adcc90e6` | Ready | *An apple falls that far in* |
 | `S03` | `5.56–8.42` | `2.86` | `P4:06_pretty_nearly` | Flow Veo Quality (T1 KEEP, `J1237` PASS) | `8.000` | `af487165258059d44e1f3ad9682d80d50c2239882f5495c82d7907a3e98d47ad` | Ready | *one second Isaac Newton worked out why.* |
-| `S04` | `8.42–11.44` | `3.02` | `P4:03_sixty_earths` | `code_graphics_v01` (`SIXTY EARTHS`) | `4.680` | `4de87bc274d984979424bb308e164c561997253e63c4bc375303f2ba483ca69a` | Ready | *The moon is 60 times further* |
+| `S04` | `8.42–11.44` | `3.02` | `P4:03_sixty_earths` | `code_graphics_v01` (`SIXTY EARTHS`) | `4.680` | `4de87bc274d984971dabea10403c42ccb45ef654279414d36c19f3c3fce1ac10` | Ready | *The moon is 60 times further* |
 | `S05` | `11.44–14.50` | `3.06` | `P4:02_spray_paint` *(v02: `P4:01_weaker_far`)* | Flow Veo Fast (T1 KEEP, `J1237` PASS) | `7.917` | `8a7b7d907240f959e7db25d3c9108439c5df79ae1b8261cde7079ac23342b092` | Ready | *from the Earth's center than we are, so the pull on it is* |
-| `S06` | `14.50–17.65` | `3.15` | `P4:04_dots_square` (over `02_spray_paint_c2`) | `code_graphics_v01` (`SIXTY TIMES SIXTY`) | `5.530` | `7c393d99592073b9a84bd220833890980d3a159f887478fd5a7033db210a30f6` | **Pending `J2034`/`J2035` composite** | *60 times 60 weaker, Three thousand* |
+| `S06` | `14.50–17.65` | `3.15` | `P4:04_dots_square` (over `02_spray_paint_c2`) | `code_graphics_v01` (`SIXTY TIMES SIXTY`) | `5.530` | `7c393d99592073b975adb3faf4196f1253c5c193fd9316b839bc367e32cad072` | **Pending `J2034`/`J2035` composite** | *60 times 60 weaker, Three thousand* |
 | `S07` | `17.65–20.82` | `3.17` | `P4:06_pretty_nearly_c1` *(v02: `P4:06_pretty_nearly`)* | Flow Veo Quality (T1 KEEP, `J1237` PASS) | `8.000` | `eb3f5d5030b9b18a545ce0922377771c10f499f14f08d1b64239adca975078cf` | Ready | *six hundred times. And the numbers matched.* |
 | `S08` | `20.82–24.48` | `3.66` | `P5:01_one_law` | Flow Veo Quality (T1 KEEP, `J1237` PASS) | `7.917` | `ed89eb1e5c519f18984284d144ae924616f6d08560179fc6b2e4c3942e6053a0` | Ready | *One pull for apples and moons* |
 | `loop_tail` | `24.48–25.48` | `1.00` | `P4:05_minute_second` | Flow Veo Quality (T1 KEEP, `J1237` PASS) | `8.000` | `7f56f05930cefc854aabde17cd204510771dfbaaa5faa2f6b410facebbd3cd66` | Ready | *(loop return)* |
