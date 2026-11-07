@@ -480,6 +480,43 @@ def prepare_start_frame(row: Row, media: Path, *, in_scope_keys: set[tuple[int, 
     return Path(made)
 
 
+
+def verify_still_inventory(rows: list[Row], media: Path) -> list[dict]:
+    """Validate every independent start still before batch spending is enabled.
+
+    In-scope continuations are derived from proven parent outputs later. Missing
+    independent stills stop here; this is not permission to mint a replacement.
+    """
+    inventory = []
+    for row in rows:
+        if row.parent is not None:
+            continue
+        path = still_path(media, row.part, row.plate_id)
+        if not path.is_file():
+            raise GuardError(f"missing inventory start still P{row.part:02d}:{row.plate_id}")
+        digest = sha256_file(path)
+        try:
+            probe = subprocess.run(
+                ["ffprobe", "-v", "error", "-show_streams", "-of", "json", str(path)],
+                check=True, capture_output=True, text=True)
+            streams = json.loads(probe.stdout)["streams"]
+            if len(streams) != 1 or streams[0].get("codec_type") != "video":
+                raise GuardError("still needs exactly one image stream")
+            width, height = int(streams[0]["width"]), int(streams[0]["height"])
+            subprocess.run(["ffmpeg", "-v", "error", "-xerror", "-i", str(path),
+                            "-frames:v", "1", "-f", "null", "-"],
+                           check=True, capture_output=True)
+        except Exception as exc:
+            raise GuardError(f"invalid inventory still {path}") from exc
+        if width < 1280 or height < 720 or abs(width / height - 16 / 9) > 0.01:
+            raise GuardError(f"inventory still is not 16:9 HD: {path}")
+        if digest != sha256_file(path):
+            raise GuardError(f"inventory changed while reading: {path}")
+        inventory.append({"part": row.part, "plate_id": row.plate_id,
+                          "path": str(path.resolve()), "sha256": digest,
+                          "width": width, "height": height})
+    return inventory
+
 def accept_zero_still_price(still_price: dict | None) -> None:
     if not still_price or still_price.get("displayed_credits") != 0:
         raise GuardError("Nano Banana still price is not a verified 0")
@@ -511,6 +548,138 @@ class WriterLock:
             self.handle = None
         return False
 
+
+
+# Machine-wide paths: independent of channel, checkout, HOS_REPO and cwd.
+# Production remains disabled until all Flow writers adopt this contract.
+SHARED_FLOW_ROOT = Path.home() / "_desk" / "state" / "flow"
+SHARED_FLOW_LOCK = Path.home() / "_desk" / "locks" / "flow-generation.lock"
+
+
+class SharedFlowState:
+    """Crash-safe reservation journal. Caller owns the machine-wide writer lock.
+
+    A SUBMITTING take is uncertain after any interruption; it is never retried or
+    silently released. A completed download does not prove a charge is posted.
+    Only an explicit reconciliation with external evidence marks a charge posted.
+    """
+
+    def __init__(self, root: Path = SHARED_FLOW_ROOT, lock: Path = SHARED_FLOW_LOCK):
+        self.root = root
+        self.lock_path = lock
+        self.lock = None
+        self.state = None
+
+    def __enter__(self):
+        self.lock = WriterLock(self.lock_path)
+        self.lock.__enter__()
+        try:
+            self.root.mkdir(parents=True, exist_ok=True)
+            path = self.root / "state.json"
+            self.state = json.loads(path.read_text()) if path.exists() else {
+                "schema": 1, "reservations": {}, "takes": {}}
+            if (self.state.get("schema") != 1
+                    or not isinstance(self.state.get("reservations"), dict)
+                    or not isinstance(self.state.get("takes"), dict)):
+                raise GuardError("unknown shared Flow journal schema")
+            return self
+        except BaseException:
+            self.lock.__exit__(*sys.exc_info())
+            self.lock = None
+            raise
+
+    def __exit__(self, *args):
+        self.state = None
+        if self.lock:
+            self.lock.__exit__(*args)
+            self.lock = None
+
+    def _save(self):
+        if self.state is None or self.lock is None:
+            raise GuardError("shared Flow state requires its writer lock")
+        dest = self.root / "state.json"
+        temp = self.root / (".state-" + uuid.uuid4().hex)
+        with temp.open("x") as handle:
+            json.dump(self.state, handle, sort_keys=True)
+            handle.flush()
+            os.fsync(handle.fileno())
+        os.replace(temp, dest)
+        fd = os.open(self.root, os.O_RDONLY)
+        try:
+            os.fsync(fd)
+        finally:
+            os.close(fd)
+
+    def reserve(self, owner: str, cap: int):
+        if not owner or not isinstance(cap, int) or cap < 0:
+            raise GuardError("invalid shared reservation")
+        old = self.state["reservations"].get(owner)
+        if old is not None and old != cap:
+            raise GuardError("reservation cannot change implicitly")
+        self.state["reservations"][owner] = cap
+        self._save()
+
+    def liabilities(self, owner: str) -> tuple[int, int, int]:
+        if owner not in self.state["reservations"]:
+            raise GuardError("missing shared reservation")
+        consumed = {key: 0 for key in self.state["reservations"]}
+        unposted = 0
+        for take in self.state["takes"].values():
+            who, amount = take["owner"], take["credits"]
+            if who not in consumed or not isinstance(amount, int) or amount <= 0:
+                raise GuardError("invalid shared charge")
+            if take["status"] not in ("SUBMITTING", "COMPLETED", "FAILED"):
+                raise GuardError("unknown shared charge status")
+            consumed[who] += amount
+            if not take.get("posted"):
+                unposted += amount
+        remaining = {}
+        for who, cap in self.state["reservations"].items():
+            if not isinstance(cap, int) or cap < consumed[who]:
+                raise GuardError("shared reservation cap exceeded")
+            remaining[who] = cap - consumed[who]
+        return remaining[owner], sum(v for k, v in remaining.items() if k != owner), unposted
+
+    def begin(self, owner: str, take_id: str, live: int, evidence: dict, credits: int = 100):
+        if take_id in self.state["takes"]:
+            raise GuardError("take already recorded; never retry an uncertain Create")
+        if any(t["status"] == "SUBMITTING" for t in self.state["takes"].values()):
+            raise GuardError("unresolved shared Create; reconcile before another submit")
+        if not evidence or not isinstance(live, int) or live < 0 or credits != 100:
+            raise GuardError("invalid live submit evidence")
+        own, other, unposted = self.liabilities(owner)
+        # The impending charge is INCLUDED in own, not subtracted first.
+        if own < credits or live - own - other - unposted < HEADROOM_FLOOR:
+            raise GuardError("shared reservation or floor refuses next take")
+        self.state["takes"][take_id] = {
+            "owner": owner, "credits": credits, "status": "SUBMITTING",
+            "posted": False, "evidence": evidence, "at": now_iso()}
+        self._save()  # durable BEFORE Create; exceptions leave an uncertain take
+
+    def complete(self, take_id: str, receipt: dict, *, failed: bool = False):
+        take = self.state["takes"][take_id]
+        if take["status"] != "SUBMITTING" or not receipt:
+            raise GuardError("completion requires one pending take and evidence")
+        take.update(status="FAILED" if failed else "COMPLETED", receipt=receipt)
+        self._save()
+
+    def reconcile_posted(self, take_id: str, proof: dict):
+        take = self.state["takes"][take_id]
+        if take["status"] == "SUBMITTING" or not proof.get("external_charge_id") or not proof.get("balance_read_at"):
+            raise GuardError("posted charge needs resolved take and external charge/balance proof")
+        if take.get("posted") and take.get("reconciliation") != proof:
+            raise GuardError("posted reconciliation is immutable")
+        if any(t.get("reconciliation", {}).get("external_charge_id") == proof["external_charge_id"]
+               for key, t in self.state["takes"].items() if key != take_id):
+            raise GuardError("external charge already reconciles another take")
+        take.update(posted=True, reconciliation=proof)
+        self._save()
+
+    def spend_receipt(self, take_id: str) -> dict:
+        """Stable outbox payload for idempotent ai_spend integration, not delivery."""
+        take = self.state["takes"][take_id]
+        return {"id": "flow:" + take_id, "pool": "flow", "amount": take["credits"],
+                "film": take["owner"], "at": take["at"]}
 
 def process_alive(pid: int) -> bool:
     if pid <= 0:
@@ -894,6 +1063,9 @@ def _cmd_submit_locked(repo: Path, *, other: int, media: Path, ledger_path: Path
     refuse_duplicate(pid_path, done_path)
     claim_pid(pid_path)
     rows = load_scope(repo)
+    inventory = verify_still_inventory(rows, media)
+    write_receipt(archive_dir / "receipts" / ("inventory-" + uuid.uuid4().hex + ".json"),
+                  [item["plate_id"] for item in inventory], inventory)
     batch = next_batch(rows, read_ledger(ledger_path))
     if not batch:
         return []

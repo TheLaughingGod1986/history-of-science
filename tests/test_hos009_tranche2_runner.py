@@ -547,3 +547,116 @@ class FlowPageTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class SharedAccountingTests(unittest.TestCase):
+    def setUp(self):
+        self.temp = tempfile.TemporaryDirectory()
+        self.addCleanup(self.temp.cleanup)
+        self.root = Path(self.temp.name)
+
+    def state(self):
+        return RUNNER.SharedFlowState(self.root / 'state', self.root / 'writer.lock')
+
+    def test_full_cap_boundary_and_other_channel_reservations(self):
+        with self.state() as state:
+            state.reserve('HOS:009', 6000)
+            with self.assertRaises(RUNNER.GuardError):
+                state.begin('HOS:009', 'take1', 8900, {'ui': 'proof'})
+            self.assertEqual(state.state['takes'], {})
+            state.reserve('OWB:031', 500)
+            with self.assertRaises(RUNNER.GuardError):
+                state.begin('HOS:009', 'take1', 9000, {'ui': 'proof'})
+            state.begin('HOS:009', 'take1', 9500, {'ui': 'proof'})
+            self.assertEqual(state.liabilities('HOS:009'), (5900, 500, 100))
+
+    def test_crash_preserves_uncertain_create_and_refuses_retry(self):
+        with self.state() as state:
+            state.reserve('HOS:009', 6000)
+            state.begin('HOS:009', 'uncertain', 9000, {'ui': 'proof'})
+        with self.state() as recovered:
+            for take_id in ('uncertain', 'new-id'):
+                with self.assertRaises(RUNNER.GuardError):
+                    recovered.begin('HOS:009', take_id, 10000, {'ui': 'proof'})
+            with self.assertRaises(RUNNER.GuardError):
+                recovered.reconcile_posted('uncertain', {
+                    'external_charge_id': 'bill1', 'balance_read_at': 'now'})
+
+    def test_pending_charge_remains_liability_until_explicit_reconciliation(self):
+        with self.state() as state:
+            state.reserve('HOS:009', 6000)
+            state.begin('HOS:009', 'one', 9000, {'ui': 'proof'})
+            state.complete('one', {'sha256': 'fixture'})
+            self.assertEqual(state.liabilities('HOS:009'), (5900, 0, 100))
+            with self.assertRaises(RUNNER.GuardError):
+                state.begin('HOS:009', 'two', 8900, {'ui': 'proof'})
+            proof = {'external_charge_id': 'bill1', 'balance_read_at': 'now'}
+            state.reconcile_posted('one', proof)
+            state.reconcile_posted('one', proof)
+            self.assertEqual(state.liabilities('HOS:009'), (5900, 0, 0))
+            state.begin('HOS:009', 'two', 8900, {'ui': 'proof'})
+            state.complete('two', {'failed': True}, failed=True)
+            with self.assertRaises(RUNNER.GuardError):
+                state.reconcile_posted('two', proof)
+            self.assertEqual(state.spend_receipt('one'), state.spend_receipt('one'))
+
+    def test_separate_process_cannot_write_through_held_lock(self):
+        with self.state():
+            code = '''import importlib.util,sys
+from pathlib import Path
+spec=importlib.util.spec_from_file_location('runner',sys.argv[1])
+m=importlib.util.module_from_spec(spec);sys.modules[spec.name]=m;spec.loader.exec_module(m)
+try:
+    with m.SharedFlowState(Path(sys.argv[2]),Path(sys.argv[3])): pass
+except m.GuardError:
+    sys.exit(17)
+sys.exit(1)
+'''
+            result = subprocess.run([sys.executable, '-c', code, str(SCRIPT),
+                                     str(self.root / 'state'), str(self.root / 'writer.lock')],
+                                    capture_output=True, text=True)
+            self.assertEqual(result.returncode, 17, result.stderr)
+
+    def test_default_paths_ignore_checkout_and_repo_override(self):
+        from unittest.mock import patch
+        with patch.dict(os.environ, {'HOS_REPO': '/other/worktree', 'OWB_REPO': '/other/channel'}):
+            state = RUNNER.SharedFlowState()
+        self.assertEqual(state.root, Path.home() / '_desk/state/flow')
+        self.assertEqual(state.lock_path, Path.home() / '_desk/locks/flow-generation.lock')
+
+    def test_corrupt_journal_fails_closed_then_releases_lock(self):
+        (self.root / 'state').mkdir()
+        journal = self.root / 'state/state.json'
+        journal.write_text('{broken')
+        with self.assertRaises(json.JSONDecodeError):
+            with self.state():
+                pass
+        journal.write_text('{"schema":1,"takes":{},"reservations":{}}')
+        with self.state() as state:
+            state.reserve('HOS:009', 6000)
+        self.assertEqual(json.loads(journal.read_text())['reservations'], {'HOS:009': 6000})
+
+
+class StillInventoryTests(unittest.TestCase):
+    def test_missing_corrupt_small_and_valid_inventory(self):
+        rows = [row for row in RUNNER.load_scope(ROOT) if row.parent is None][:1]
+        self.assertEqual(len(rows), 1)
+        row = rows[0]
+        with tempfile.TemporaryDirectory() as tmp:
+            media = Path(tmp)
+            path = RUNNER.still_path(media, row.part, row.plate_id)
+            with self.assertRaises(RUNNER.GuardError):
+                RUNNER.verify_still_inventory(rows, media)
+            path.parent.mkdir(parents=True)
+            path.write_bytes(b'not an image')
+            with self.assertRaises(RUNNER.GuardError):
+                RUNNER.verify_still_inventory(rows, media)
+            subprocess.run(['ffmpeg', '-v', 'error', '-y', '-f', 'lavfi', '-i',
+                            'color=s=640x360', '-frames:v', '1', str(path)], check=True)
+            with self.assertRaises(RUNNER.GuardError):
+                RUNNER.verify_still_inventory(rows, media)
+            subprocess.run(['ffmpeg', '-v', 'error', '-y', '-f', 'lavfi', '-i',
+                            'color=s=1280x720', '-frames:v', '1', str(path)], check=True)
+            inventory = RUNNER.verify_still_inventory(rows, media)
+            self.assertEqual(inventory[0]['sha256'], RUNNER.sha256_file(path))
+            self.assertEqual(inventory[0]['path'], str(path.resolve()))
