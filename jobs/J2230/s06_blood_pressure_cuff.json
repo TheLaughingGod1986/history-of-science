@@ -1,0 +1,19 @@
+{
+  "id": "s06_blood_pressure_cuff",
+  "sha256": "b9bc921502c311e2bba585868dff48746eaefdf44380f5a5f8464f946e5b8bf3",
+  "command": [
+    "python3",
+    "/private/tmp/J2230-codex-hos/00_Brand/Channel-Setup/tools/gate_shorts_open.py",
+    "check",
+    "/Volumes/data/mac-mini-archive/2026-11-05/YouTube/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s06_blood_pressure_cuff_v01.mp4",
+    "--air-date",
+    "2026-11-20",
+    "--meta",
+    "/private/tmp/J2230-codex-hos/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/SHORT_s06_blood_pressure_cuff_v01.json",
+    "--sheet-dir",
+    "/Users/benjaminoats/_desk/renders/J2230/preflight/s06_blood_pressure_cuff"
+  ],
+  "exit": 1,
+  "stdout": "FAIL  hos_005_s06_blood_pressure_cuff_v01.mp4  dur=24.23s  audio=-23.2dB  motion=16.3  f0diff=3.63  cut1=2.47s  vo_onset=0.70s  tail_gap=0.60s  vo_src=mix  dhash=17962f692f0f06ab\n   FAIL  integrated loudness -20.0 LUFS outside -14.5..-13.5 (target -14.0)\n   warn  first VO word starts at 0.70s > 0.15s \u2014 trim leading silence\n   sheet /Users/benjaminoats/_desk/renders/J2230/preflight/s06_blood_pressure_cuff/hos_005_s06_blood_pressure_cuff_v01_open_sheet.jpg\n",
+  "stderr": ""
+}
