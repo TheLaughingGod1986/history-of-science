@@ -28,4 +28,4 @@ The algorithm follows the audience.
 
 ## Consistency
 
-One long a week and three Shorts. A finished film beats a rushed one.
+One long a week and four Shorts (Ben, 7 Nov 2026). A finished film beats a rushed one.

@@ -8,6 +8,8 @@ Read this first, whatever agent you are (Cursor, Claude Code, Codex or others). 
 
 **The job:** make 7–9 minute discovery films that hold people, and Shorts that send them there. Why the channel is where it is: `00_Brand/Channel-Setup/audits/HOS_STUDIO_AUDIT_2026-09-25/AUDIT.md`.
 
+**The week (Ben, 7 Nov 2026):** **1 long + 4 Shorts a week** (was 1 long + 3 Shorts). Thursday 18:00 London for the long (normal publish, no Premiere); Shorts at 11:30 on Saturday (go-public-day Short for the new long; Thursday 11:30 would air before the long), Friday, Sunday and Tuesday. Never more than one Short a day; never a Short before its long is public; fill gaps only with ready approved cuts. Full table: `STUDIO_PLAYBOOK.md` §1 / `HOS_STRATEGY.md` → *The week*.
+
 **Not this repo:** Orbit With Ben (`orbit-with-ben`, `@OrbitWithBen`) is a separate channel and repo. Never upload, schedule or post HOS work there, or Orbit work here.
 
 ## Docs in force (in order of precedence)

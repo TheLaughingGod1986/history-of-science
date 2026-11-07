@@ -2,12 +2,12 @@
   "channel": "History of Science",
   "handle": "@HistoryOfScienceYT",
   "channel_id": "UCXp7HkBIl1LgaznXuZHJyRg",
-  "updated": "2026-11-05",
+  "updated": "2026-11-07",
   "note": "HOS only. Orbit's old space backlog is in _archive/00_Brand/Channel-Setup/VIDEO_BACKLOG.json. Status 'idea' means proposed, not picked: Ben picks every topic (AGENTS.md sign-off 1).",
   "cadence": {
     "strategy": "HOS_STRATEGY.md",
     "long": "Thu 18:00 UK, 7-9 min, normal publish (no Premiere)",
-    "shorts": "Fri, Sun, Tue 11:30 UK, 22-27 s, one a day at most, each promoting a different film"
+    "shorts": "Sat, Fri, Sun, Tue 11:30 UK, 22-27 s, four a week (Ben 7 Nov 2026; Sat is go-public-day Short — Thu 11:30 would air before the long), one a day at most, never before its long is public, fill gaps only with ready approved cuts"
   },
   "lane": "A familiar thing, and the moment we found out the truth about it.",
   "videos": [
