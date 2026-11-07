@@ -1899,14 +1899,22 @@ def _dismiss_asset_search_modal(page) -> None:
         page.wait_for_timeout(350)
 
 
-def submit_create(page) -> None:
+def submit_create(page, *, create_guard=None) -> None:
     """Click the prompt-bar send (arrow_forward). Never click add_2 (asset picker)."""
     _dismiss_asset_search_modal(page)
     # Hard gate: Agent chip ON → chat, not Veo. Always force Create mode first.
     try:
         _ensure_create_prompt_mode(page)
     except Exception as e:
+        if create_guard is not None:
+            raise
         print(f"  submit_create create-mode warn: {e}", flush=True)
+
+    if create_guard is not None:
+        # The guard owns the exact click after settings and prompt preparation.
+        # No later coordinate/selector fallback may bypass its decision.
+        create_guard(page)
+        return
 
     deadline = time.time() + 45
     while time.time() < deadline:
@@ -2493,6 +2501,33 @@ def download_media(page, name_or_url: str, dest: Path) -> int:
     return len(data)
 
 
+def wait_and_download_passive(page, dest: Path, *, before_ids: set[str],
+                              timeout_s: int) -> str:
+    """Guarded takes only: observe/download, never confirm, retry or resubmit.
+
+    Unknown gallery layouts time out for explicit recovery instead of invoking
+    the legacy UI automation, which can cause another charge.
+    """
+    deadline = time.monotonic() + timeout_s
+    while time.monotonic() < deadline:
+        for media_id in sorted(collect_media_ids(page) - before_ids):
+            response = page.request.get(absolute_media_url(media_id), timeout=60_000)
+            data = response.body()
+            content_type = (response.headers.get("content-type") or "").lower()
+            if not response.ok or ("video" not in content_type and b"ftyp" not in data[:32]):
+                continue
+            if len(data) < 200_000:
+                continue
+            # Never replace a previous output or a file from another writer.
+            with dest.open("xb") as stream:
+                stream.write(data)
+                stream.flush()
+                os.fsync(stream.fileno())
+            return media_id
+        page.wait_for_timeout(4000)
+    raise TimeoutError("Guarded Flow output unavailable; no automatic retry or confirmation")
+
+
 def wait_and_download(
     page,
     dest: Path,
@@ -2826,6 +2861,7 @@ def _generate_clip_once(
     timeout_s: int = 900,
     reuse_project: bool = False,
     scenery_only: bool = False,
+    create_guard=None,
 ) -> dict:
     """One attempt: generate a silent Veo clip via Google Flow Ultra UI.
 
@@ -2834,6 +2870,8 @@ def _generate_clip_once(
       - scenery_only: no attachment chip
       - start_frame: I2V from an arbitrary still (History of Science / custom)
     """
+    if create_guard is not None and dest.exists():
+        raise FileExistsError(f"Guarded output already exists: {dest}")
     t0 = time.time()
     ref = None
     if start_frame is not None:
@@ -2896,6 +2934,8 @@ def _generate_clip_once(
         # Frames Start attach is trusted. Do NOT right-click Animate afterward —
         # it often wipes the Start slot / closes the page (Sep 2026).
         if not attached and not _start_frame_present(page):
+            if create_guard is not None:
+                raise RuntimeError("Guarded start frame missing; no Animate fallback")
             if try_context_animate(page):
                 configure_veo_settings(
                     page,
@@ -2920,12 +2960,14 @@ def _generate_clip_once(
                 flush=True,
             )
         print("  submitting Create…", flush=True)
-        submit_create(page)
+        submit_create(page, create_guard=create_guard)
         print("  submitted Create (start-frame I2V)", flush=True)
-        _record_flow_spend(dest, model)
+        if create_guard is None:
+            _record_flow_spend(dest, model)
         settle_after_nav(page, wait_ms=1200)
         try:
-            confirm_generation_spend(page)
+            if create_guard is None:
+                confirm_generation_spend(page)
         except Exception as e:
             if not is_transient_ui_error(e):
                 raise
@@ -2943,12 +2985,14 @@ def _generate_clip_once(
         except Exception:
             pass
         print("  submitting Create…", flush=True)
-        submit_create(page)
+        submit_create(page, create_guard=create_guard)
         print("  submitted Create (scenery-only, no Orbit ref)", flush=True)
-        _record_flow_spend(dest, model)
+        if create_guard is None:
+            _record_flow_spend(dest, model)
         settle_after_nav(page, wait_ms=1200)
         try:
-            confirm_generation_spend(page)
+            if create_guard is None:
+                confirm_generation_spend(page)
         except Exception as e:
             if not is_transient_ui_error(e):
                 raise
@@ -2969,20 +3013,25 @@ def _generate_clip_once(
         if _prompt_attachment_count(page) < 1:
             raise RuntimeError("Orbit prompt chip missing after attach — aborting")
         print("  submitting Create…", flush=True)
-        submit_create(page)
+        submit_create(page, create_guard=create_guard)
         print("  submitted Create (identity-locked, Orbit ref attached)", flush=True)
-        _record_flow_spend(dest, model)
+        if create_guard is None:
+            _record_flow_spend(dest, model)
         settle_after_nav(page, wait_ms=1200)
         try:
-            confirm_generation_spend(page)
+            if create_guard is None:
+                confirm_generation_spend(page)
         except Exception as e:
             if not is_transient_ui_error(e):
                 raise
             print(f"  confirm spend race after Create (ok): {e}", flush=True)
             settle_after_nav(page, wait_ms=1500)
-    media_id = wait_and_download(
-        page, dest, before_ids=before, timeout_s=timeout_s, min_elapsed_s=25
-    )
+    if create_guard is not None:
+        media_id = wait_and_download_passive(page, dest, before_ids=before, timeout_s=timeout_s)
+    else:
+        media_id = wait_and_download(
+            page, dest, before_ids=before, timeout_s=timeout_s, min_elapsed_s=25
+        )
     proj_url = getattr(page, "_orbit_flow_project_url", None) or ""
     if "flow.google.com" not in proj_url or "/project/" not in proj_url:
         # Fall back carefully — never harvest a non-Flow URL from a polluted profile.
@@ -3045,9 +3094,12 @@ def generate_clip(
     timeout_s: int = 900,
     reuse_project: bool = False,
     scenery_only: bool = False,
+    create_guard=None,
     attempts: int = 3,
 ) -> dict:
     """Generate one silent Veo clip via Google Flow Ultra UI (with soft retries)."""
+    if create_guard is not None and attempts != 1:
+        raise ValueError("Guarded Flow calls require attempts=1; no automatic retries")
     last: BaseException | None = None
     use_reuse = reuse_project
     for attempt in range(1, attempts + 1):
@@ -3062,6 +3114,7 @@ def generate_clip(
                 timeout_s=timeout_s,
                 reuse_project=use_reuse,
                 scenery_only=scenery_only,
+                create_guard=create_guard,
             )
         except Exception as e:
             last = e
