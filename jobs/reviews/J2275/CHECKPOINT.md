@@ -272,3 +272,36 @@ blanket cross-writer adoption or a finding-3 PASS. Production cmd_submit remains
 interlocked, J2200 remains FIX, J2033 remains held. Do not request final runner
 review until all remaining work is complete. Remaining multi-writer integration
 exceeds the bounded run; release for immediate continuation, nothing on Ben.
+
+Continuation checkpoint (seventh bounded run, 7 November 2026):
+
+- Resumed PR445 at 2660c8b4, preserving the original 0/3 plan and production
+  interlock. Do not restart from PR439.
+- Added the required reporting-writer lock adoption in canonical OWB tooling:
+  https://github.com/TheLaughingGod1986/orbit-with-ben/pull/622
+  (draft, commit 7197269164). ai_spend.append now resolves the destination and
+  uses the exact ledger.jsonl.lock used by export_ai_spend, refuses torn/corrupt
+  data and duplicate receipt IDs before append, and fsyncs file and directory.
+  Recovery reports sort event timestamps so an old exported balance cannot
+  supersede a newer balance reading merely because it was appended later.
+- 26 OWB ai_spend regressions PASS, including actual separate-process contention
+  through a symlink, unchanged corrupt ledgers, fsync and report chronology.
+  A temporary-ledger integration using the actual PR445 exporter and modified
+  OWB writer PASSed: two receipts plus one ordinary balance; replay added zero;
+  held exporter destination lock refused the CLI append; liability stayed 6000.
+- Existing 77 HOS zero-submit regressions PASS; check_all ALL CHECKS PASS. No
+  real Flow browser/Create, credit, media/NAS write, narration/scope/trim or
+  publishing change. The scratch-offload invocation detected another existing
+  offload owner and exited without moving anything; log/done:
+  ~/_desk/logs/J2275-disk.log and J2275-disk.done (exit 0).
+
+Still unfinished: PR622 needs review/merge before its lock protects installed
+report writers; active cross-channel generation writers must adopt the shared
+account protocol; supply canonical report destination at production entry;
+validate configured real UI, verify parent inventory and exercise the complete
+launch. Production cmd_submit remains disabled. J2200 remains FIX; J2033 held.
+This is a tested reporting increment, not completion or a request for final
+runner PASS. Resume PR445 plus linked OWB PR622. Remaining integration exceeds
+this run's bounded scope; release J2275 for immediate continuation, nothing on Ben.
+Isolated worktrees: /private/tmp/codex-j2275 (HOS checkpoint) and
+/private/tmp/codex-j2275-owb (OWB reporting repair).
