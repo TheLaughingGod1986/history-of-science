@@ -1,0 +1,2 @@
+PASS  hos_008_short_A_v04.mp4  dur=23.3s  audio=-17.5dB  motion=35.5  f0diff=10.63  cut1=2.57s  vo_onset=0.14s  tail_gap=1.13s  vo_src=/private/tmp/j0912-short-a-v04/02_Video-Projects/008_Lightning-Franklin/10_Shorts/_work_short_A_v04/vo.wav  dhash=1c062d3d0f5f5b4a
+   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_008_short_A_v04_open_sheet.jpg

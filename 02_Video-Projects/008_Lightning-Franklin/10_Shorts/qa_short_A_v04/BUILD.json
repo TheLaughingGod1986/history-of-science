@@ -1,0 +1,142 @@
+{
+  "file": "/private/tmp/j0912-short-a-v04/02_Video-Projects/008_Lightning-Franklin/10_Shorts/hos_008_short_A_v04.mp4",
+  "sha256": "76d801a34714ba90f286330dfab1c9e38b3025502340f20c8e414a8907a3192d",
+  "duration_s": 23.3,
+  "vo_sha256": "40ed4c4e2a1f2e58608cfe690bb8afd6e1d64c80eafb0a75f37d47648a7ba28e",
+  "words": 59,
+  "first_word_s": 0.14,
+  "payoff_word": "If",
+  "payoff_s": 17.84,
+  "payoff_frac_of_total": 0.768,
+  "last_word_s": 22.2,
+  "last_word_to_end_s": 1.04,
+  "level": {
+    "lufs": -14.3,
+    "true_peak_dbtp": -1.9,
+    "loudnorm_I": -11.5
+  },
+  "hook": {
+    "font_size": 215,
+    "cap_px": 153,
+    "cap_pct": 9.04,
+    "block_pct": [
+      33.5,
+      66.4
+    ],
+    "widest_pct": 82.0
+  },
+  "card": {
+    "text": "PHILADELPHIA \u00b7 1752",
+    "size_px": 61,
+    "pct_of_band": 11.4,
+    "in_s": 2.7,
+    "out_s": 6.2
+  },
+  "sfx_level": {
+    "exit": 0,
+    "output": "SFX level PASS: VO -20.7 LUFS, SFX -50.6 LUFS, 1 hits",
+    "bed_db": -16.0,
+    "sfx_db": -18.0
+  },
+  "plan": [
+    {
+      "t0": 0.0,
+      "t1": 2.58,
+      "plate": "01_kite_open_t1.mp4",
+      "in_s": 1.2,
+      "hold_s": 2.58,
+      "lands_on": "plate",
+      "upscale": 2.35
+    },
+    {
+      "t0": 2.58,
+      "t1": 5.76,
+      "plate": "19_kite_climb_t1.mp4",
+      "in_s": 0.6,
+      "hold_s": 3.18,
+      "lands_on": "plate",
+      "upscale": 2.35
+    },
+    {
+      "t0": 5.76,
+      "t1": 9.14,
+      "plate": "13_key_ribbon_t1.mp4",
+      "in_s": 0.6,
+      "hold_s": 3.38,
+      "lands_on": "plate",
+      "upscale": 2.35
+    },
+    {
+      "t0": 9.14,
+      "t1": 12.1,
+      "plate": "25_fibres_rise_t1.mp4",
+      "in_s": 0.6,
+      "hold_s": 2.96,
+      "lands_on": "plate",
+      "upscale": 2.35
+    },
+    {
+      "t0": 12.1,
+      "t1": 15.76,
+      "plate": "02_knuckle_spark_t1.mp4",
+      "in_s": 0.6,
+      "hold_s": 3.66,
+      "lands_on": "plate",
+      "upscale": 2.35
+    },
+    {
+      "t0": 15.76,
+      "t1": 19.52,
+      "plate": "09_charge_string_c1_t1.mp4",
+      "in_s": 0.6,
+      "hold_s": 3.76,
+      "lands_on": "plate",
+      "upscale": 2.35
+    },
+    {
+      "t0": 19.52,
+      "t1": 22.24,
+      "plate": "10_richmann_rod_t1.mp4",
+      "in_s": 0.6,
+      "hold_s": 2.72,
+      "lands_on": "plate",
+      "upscale": 2.35
+    },
+    {
+      "t0": 22.24,
+      "t1": 23.24,
+      "plate": "01_kite_open_t1.mp4",
+      "in_s": 0.19999999999999996,
+      "hold_s": 1.0,
+      "lands_on": "loop",
+      "upscale": 2.35
+    }
+  ],
+  "youtube_title_draft": "Why Was Franklin's Kite Experiment So Dangerous?",
+  "title_on_screen": "Why Did Franklin Fly a Kite in a Storm?",
+  "bed": "/private/tmp/j0912-short-a-v04/02_Video-Projects/008_Lightning-Franklin/05_Music/hos_008_short_A_v04_bed.wav",
+  "upscale": 2.35,
+  "spoken": "Franklin's kite was never hit by lightning. In seventeen fifty-two, he flew it into a storm cloud holding a dry silk ribbon inside a shed. The loose threads of the twine stood up on end. He brought his knuckle to the key, and a spark jumped across. If lightning had struck the kite, he would almost certainly have died",
+  "gates": {
+    "polish": {
+      "exit": 0,
+      "tail": "s01     1.3s 01_kite_open_t1.mp4          ok\n s02     4.2s 19_kite_climb_t1.mp4         ok\n s03     7.5s 13_key_ribbon_t1.mp4         ok\n s04    10.6s 25_fibres_rise_t1.mp4        ok\n s05    13.9s 02_knuckle_spark_t1.mp4      ok\n s06    17.6s 09_charge_string_c1_t1.mp4   ok\n s07    20.9s 10_richmann_rod_t1.mp4       ok\n s08    22.7s loop_01_kite_open_t1.mp4     WARN low detail: edge density 0.0278 < film p5 0.0297\npolish gate PASS: 0 of 8 rows failed, 1 to look at -> /private/tmp/j0912-short-a-v04/02_Video-Projects/008_Lightning-Franklin/10_Shorts/qa_short_A_v04/polish_gate.json"
+    },
+    "picture": {
+      "exit": 0,
+      "tail": "WARN   0:01 row s01 01_kite_open_t1.mp4: sharpness: upscaled 2.35x, may look soft\nWARN   0:04 row s02 19_kite_climb_t1.mp4: sharpness: upscaled 2.35x, may look soft\nWARN   0:07 row s03 13_key_ribbon_t1.mp4: sharpness: upscaled 2.35x, may look soft\nWARN   0:11 row s04 25_fibres_rise_t1.mp4: sharpness: upscaled 2.35x, may look soft\nWARN   0:14 row s05 02_knuckle_spark_t1.mp4: sharpness: upscaled 2.35x, may look soft\nWARN   0:18 row s06 09_charge_string_c1_t1.mp4: sharpness: upscaled 2.35x, may look soft\nWARN   0:21 row s07 10_richmann_rod_t1.mp4: sharpness: upscaled 2.35x, may look soft\nWARN   0:23 row s08 loop_01_kite_open_t1.mp4: sharpness: upscaled 2.35x, may look soft; low detail: edge density 0.0278 < film p5 0.0297\npicture QA PASS: 0 of 8 cuts fail, 8 to look at -> /private/tmp/j0912-short-a-v04/02_Video-Projects/008_Lightning-Franklin/10_Shorts/qa_short_A_v04/picture_qa/PICTURE_QA.md, /private/tmp/j0912-short-a-v04/02_Video-Projects/008_Lightning-Franklin/10_Shorts/qa_short_A_v04/picture_qa/picture_qa_review.jpg"
+    },
+    "music": {
+      "exit": 0,
+      "tail": "_long_vo_v02_LISTEN.wav to compare (OSError); download it or pass --others\nWARN reused: couldn't read jupiter-vo.mp3 to compare (OSError); download it or pass --others\nWARN reused: couldn't read jupiter-music.mp3 to compare (OSError); download it or pass --others\nWARN reused: couldn't read friday_black_dwarf_short_vo_v01_LISTEN.wav to compare (OSError); download it or pass --others\nWARN reused: couldn't read saturn_long_vo_v02_LISTEN.m4a to compare (OSError); download it or pass --others\nWARN reused: couldn't read monday_saturn_short_vo_v02_how_long.wav to compare (OSError); download it or pass --others\nWARN reused: couldn't read saturn_long_vo_v03_tightened.m4a to compare (OSError); download it or pass --others\nWARN reused: couldn't read monday_saturn_short_vo_v01_LISTEN.wav to compare (OSError); download it or pass --others\nWARN reused: couldn't read saturn_long_vo_v03b_tightened_LOCK.m4a to compare (OSError); download it or pass --others\nWARN reused: couldn't read saturn_long_vo_v03b_tightened_LOCK.wav to compare (OSError); download it or pass --others\nWARN reused: couldn't read saturn_long_vo_v01_LISTEN.wav to compare (OSError); download it or pass --others\nWARN reused: couldn't read monday_saturn_short_vo_v02_how_long.mp3 to compare (OSError); download it or pass --others\nWARN reused: couldn't read saturn_long_vo_v03_tightened.wav to compare (OSError); download it or pass --others\nmusic gate PASS: hos_008_short_A_v04_bed.wav, 23.6 s, about 66.7 BPM, brief Pace: 64-76 BPM"
+    },
+    "open": {
+      "exit": 0,
+      "tail": "PASS  hos_008_short_A_v04.mp4  dur=23.3s  audio=-17.5dB  motion=35.5  f0diff=10.63  cut1=2.57s  vo_onset=0.14s  tail_gap=1.13s  vo_src=/private/tmp/j0912-short-a-v04/02_Video-Projects/008_Lightning-Franklin/10_Shorts/_work_short_A_v04/vo.wav  dhash=1c062d3d0f5f5b4a\n   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_008_short_A_v04_open_sheet.jpg"
+    },
+    "sfx": {
+      "exit": 0,
+      "tail": "SFX level PASS: VO -20.7 LUFS, SFX -50.6 LUFS, 1 hits"
+    }
+  }
+}
