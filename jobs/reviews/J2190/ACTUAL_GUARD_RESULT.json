@@ -1,0 +1,10 @@
+{
+  "mode": "NO_NETWORK",
+  "global_unknown_rows": 13,
+  "spend_authorised": false,
+  "missing": [
+    "current official Quality GBP/second SKU",
+    "authoritative settlement cutoff or proved upper bounds for 13 unpriced Omni entries and unlogged global usage"
+  ],
+  "actual_guard_result": "STOP: missing/malformed evidence or ledger"
+}
