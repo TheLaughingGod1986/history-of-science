@@ -1,0 +1,71 @@
+{
+  "stem": "hos_013_short_B_v02",
+  "voice": "Ben Orbit Narrator",
+  "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+  "model_id": "eleven_v3",
+  "settings": {
+    "stability": 0.34,
+    "similarity_boost": 0.78,
+    "style": 0.42,
+    "speed": 1.04,
+    "use_speaker_boost": true
+  },
+  "orders": [
+    "J2240",
+    "J2246"
+  ],
+  "retake_of": null,
+  "chapters": [
+    {
+      "title": "take",
+      "chars": 339,
+      "duration_s": 26.0
+    }
+  ],
+  "gap_s": 0.7,
+  "spoken_chars": 339,
+  "words": 61,
+  "duration_s": 26.0,
+  "loudness": {
+    "lufs_integrated": -20.6,
+    "mean_volume_db": -24.0,
+    "max_volume_db": -4.0
+  },
+  "sha256_mp3": "9e1eaa2fb9ae2719dd378895820ed7599d8c8532d94f5f39475edf00635c6631",
+  "scribe": {
+    "transcript": "What is survival of the fittest? Charles Darwin didn't even coin the famous phrase. The writer Herbert Spencer came up with it in 1864, and Alfred Russel Wallace persuaded Darwin to add it to his book years later. And fittest never meant the strongest animal. It means the one that fits its world best, like a key in a lock",
+    "script_words": 62,
+    "scribe_words": 60,
+    "match_rate_pct": 95.16,
+    "exact_match": false,
+    "mismatches": [
+      {
+        "op": "replace",
+        "script": [
+          "eighteen",
+          "sixty",
+          "four"
+        ],
+        "scribe": [
+          "1864"
+        ]
+      }
+    ]
+  },
+  "vo_check": "PASS",
+  "credits": {
+    "before": {
+      "used": 30943,
+      "limit": 121114,
+      "remaining": 90171
+    },
+    "after": {
+      "used": 30961,
+      "limit": 121114,
+      "remaining": 90153
+    },
+    "counter_delta": 18
+  },
+  "text": "What is survival of the fittest? Charles Darwin didn't even coin the famous phrase. The writer Herbert Spencer came up with it in eighteen sixty-four, and Alfred Russel Wallace persuaded Darwin to add it to his book years later. And fittest never meant the strongest animal. It means the one that fits its world best, like a key in a lock.",
+  "made_at": "2026-11-06T15:40:00+0000"
+}

@@ -1,0 +1,71 @@
+{
+  "stem": "hos_013_short_A_v02",
+  "voice": "Ben Orbit Narrator",
+  "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+  "model_id": "eleven_v3",
+  "settings": {
+    "stability": 0.34,
+    "similarity_boost": 0.78,
+    "style": 0.42,
+    "speed": 1.04,
+    "use_speaker_boost": true
+  },
+  "orders": [
+    "J2240",
+    "J2246"
+  ],
+  "retake_of": null,
+  "chapters": [
+    {
+      "title": "take",
+      "chars": 356,
+      "duration_s": 26.64
+    }
+  ],
+  "gap_s": 0.7,
+  "spoken_chars": 356,
+  "words": 60,
+  "duration_s": 26.64,
+  "loudness": {
+    "lufs_integrated": -20.3,
+    "mean_volume_db": -23.7,
+    "max_volume_db": -3.9
+  },
+  "sha256_mp3": "ba46ffaa29dab5ef3dfcc3af7f66c31f3550f90dadcc4e7ed305f643d8c384e1",
+  "scribe": {
+    "transcript": "How did Charles Darwin discover evolution? Not on a Galapagos beach. In 1835, he thought the birds there were blackbirds and wrens, and mostly forgot to label which island each came from. Only back in London did John Gould show him they were all finches with different beaks. Months later, Darwin drew a branching tree and wrote, \"I think...\"",
+    "script_words": 61,
+    "scribe_words": 59,
+    "match_rate_pct": 95.08,
+    "exact_match": false,
+    "mismatches": [
+      {
+        "op": "replace",
+        "script": [
+          "eighteen",
+          "thirty",
+          "five"
+        ],
+        "scribe": [
+          "1835"
+        ]
+      }
+    ]
+  },
+  "vo_check": "PASS",
+  "credits": {
+    "before": {
+      "used": 30943,
+      "limit": 121114,
+      "remaining": 90171
+    },
+    "after": {
+      "used": 30943,
+      "limit": 121114,
+      "remaining": 90171
+    },
+    "counter_delta": 0
+  },
+  "text": "How did Charles Darwin discover evolution? Not on a Galápagos beach. In eighteen thirty-five, he thought the birds there were blackbirds and wrens, and mostly forgot to label which island each came from. Only back in London did John Gould show him they were all finches, with different beaks. Months later, Darwin drew a branching tree, and wrote: I think.",
+  "made_at": "2026-11-06T15:39:42+0000"
+}
