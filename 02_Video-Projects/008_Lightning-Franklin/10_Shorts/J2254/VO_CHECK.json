@@ -1,0 +1,18 @@
+{
+  "file": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/008_Lightning-Franklin/10_Shorts/vo_v02/hos_008_short_C_s01_v03.wav",
+  "part": null,
+  "fails": [],
+  "warns": [],
+  "duration_s": 2.88,
+  "duration": "0:02.88",
+  "mean_db": -23.0,
+  "peak_db": -4.6,
+  "pauses_over_1s": [],
+  "asr": "faster-whisper small.en",
+  "script_words": 7,
+  "heard_words": 7,
+  "wpm": 146,
+  "word_diffs": [],
+  "first_minute": {},
+  "verdict": "PASS"
+}

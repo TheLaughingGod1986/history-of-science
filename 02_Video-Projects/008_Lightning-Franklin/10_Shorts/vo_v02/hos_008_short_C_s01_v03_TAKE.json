@@ -1,0 +1,58 @@
+{
+  "stem": "hos_008_short_C_s01_v03",
+  "voice": "Ben Orbit Narrator",
+  "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+  "model_id": "eleven_v3",
+  "settings": {
+    "stability": 0.34,
+    "similarity_boost": 0.78,
+    "style": 0.42,
+    "speed": 1.04,
+    "use_speaker_boost": true
+  },
+  "orders": [
+    "h94-J2175"
+  ],
+  "retake_of": null,
+  "chapters": [
+    {
+      "title": "take",
+      "chars": 47,
+      "duration_s": 2.88
+    }
+  ],
+  "gap_s": 0.7,
+  "spoken_chars": 47,
+  "words": 7,
+  "duration_s": 2.88,
+  "loudness": {
+    "lufs_integrated": -20.4,
+    "mean_volume_db": -23.0,
+    "max_volume_db": -4.6
+  },
+  "sha256_mp3": "0bf3ff810e3bb2f48fcb651c8a8a6ead400fc9c4e7ed2f62f07e6bc685eea32c",
+  "scribe": {
+    "transcript": "That rooftop lightning rod was Franklin's idea",
+    "script_words": 7,
+    "scribe_words": 7,
+    "match_rate_pct": 100.0,
+    "exact_match": true,
+    "mismatches": []
+  },
+  "vo_check": "PASS",
+  "credits": {
+    "before": {
+      "used": 27688,
+      "limit": 121114,
+      "remaining": 93426
+    },
+    "after": {
+      "used": 27688,
+      "limit": 121114,
+      "remaining": 93426
+    },
+    "counter_delta": 0
+  },
+  "text": "That rooftop lightning rod was Franklin's idea.",
+  "made_at": "2026-11-06T12:42:14+0000"
+}

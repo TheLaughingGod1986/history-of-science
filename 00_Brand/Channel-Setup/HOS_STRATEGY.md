@@ -27,21 +27,24 @@ Inspiration: [Animistry](https://www.youtube.com/@ytAnimistry) for the look and 
 
 ## The week
 
-One long and three Shorts (two from 007 on: test B, search-titled; see AGENTS.md). Never more than one Short a day.
+**Ben, 7 Nov 2026:** one long and **four** Shorts a week (was three; two from 007 on stay test B, search-titled; see AGENTS.md). Never more than one Short a day.
 
 | Day (UK) | Type | Job |
 |---|---|---|
 | Thu 18:00 | Long, 7–9 min | The new film, **normal publish, not a Premiere** |
+| Sat 11:30 | Short | Go-public-day Short that promotes the new long (see note) |
 | Fri 11:30 | Short | Promotes the new long (now public, so Related can point at it) |
 | Sun 11:30 | Short | Promotes a different film already out |
 | Tue 11:30 | Short | Promotes a third film |
 
+- **Note (Ben, 7 Nov 2026):** Thursday 11:30 was preferred for the go-public-day Short (same idea as Orbit's Short on the long's day), but it would publish before the Thu 18:00 long and break "never a Short before its long is public". Saturday 11:30 takes that slot — the next free day that is not already a Short day.
 - A Short never goes out before the long it promotes is public.
-- Each Short points at the film it is about, through Studio Related. The week is spread across films, not five Shorts on one film in five days.
+- Fill calendar gaps only with ready approved cuts, not placeholders to hit the number.
+- Each Short points at the film it is about, through Studio Related. The week is spread across films, not a burst of Shorts on one film in consecutive days.
 - Films that already won stay in the rotation.
 - **Topic fatigue (5 Oct 2026, R2):** at most 6 Shorts in a row on one topic. Stop a topic after **2 not-fed Shorts in a row** (see *Measure*), then give it a 2-week break.
 - No Premieres until subscribers are in the hundreds. All three HOS longs premiered; Germs has 4 views after three weeks. Orbit saw 0 views in a Premiere's first hour.
-- A finished film beats a rushed one. If a film isn't ready by Thursday, the week runs on three back-catalogue Shorts.
+- A finished film beats a rushed one. If a film isn't ready by Thursday, fill the week only with ready approved back-catalogue Shorts — never placeholders.
 
 ## Short hook (22–27 s)
 

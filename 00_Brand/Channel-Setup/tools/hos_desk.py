@@ -9,7 +9,9 @@ message is a PR comment that starts with a hidden header:
 
   <!-- hos-desk v1 from=grok to=claude film=005 stage=thumbnails status=review -->
 
-  from/to:  claude | grok | cursor | codex | ben     status: task | review | question | blocked | approval | done
+  from/to:  claude | grok | cursor | codex | ben | gemini | chief
+  status: task | review | question | blocked | approval | done
+  `to=chief` is the elected Chief (Grok, else Claude, Codex, Gemini), never Cursor.
 A comment with no header is Ben talking. Claude reads every comment (GitHub wakes its session);
 the Mini's watcher hands Grok every comment addressed to Grok. Images go on the `hos-desk`
 branch under _desk/ (never on main); video and audio never go in git.
@@ -29,6 +31,7 @@ Only comments by $HOS_DESK_TRUSTED (default: the repo owner) are ever acted on.
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import os
 import re
@@ -45,8 +48,12 @@ LABEL = "hos-desk"
 NEEDS_BEN = "needs-ben"
 TITLE = "HOS desk — Claude ↔ Grok (never merge)"
 HOME = Path(os.environ.get("HOS_DESK_HOME", Path.home() / ".hos_desk"))
-PARTIES = ("claude", "grok", "cursor", "codex", "ben")
-WRITERS = ("grok", "cursor", "codex")  # the write lane: Grok, or the next Chief in the relay chain while Grok is out (AGENTS.md)
+PARTIES = ("claude", "grok", "cursor", "codex", "ben", "chief", "gemini")
+WRITERS = ("grok", "cursor", "codex", "claude", "gemini")  # who may post and read an inbox; not the role name
+SENDERS = ("claude", "grok", "cursor", "codex", "ben", "gemini")  # never post as chief; that would impersonate the role
+CHIEF_DESK_IDS = ("grok", "claude", "codex", "gemini")  # Cursor is outside the succession (Ben, 26 Oct 2026)
+CODE = "j2324-safe-role-routing"
+LOADED_SHA256 = hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
 STATUSES = ("task", "review", "question", "blocked", "approval", "done")
 MEDIA = re.compile(r"\.(mp4|mov|m4v|webm|wav|mp3|m4a|aac|aif|aiff|flac)$", re.I)
 HEADER = re.compile(r"<!--\s*hos-desk v1 (.*?)-->", re.S)
@@ -54,8 +61,41 @@ HEADER = re.compile(r"<!--\s*hos-desk v1 (.*?)-->", re.S)
 
 # ---------- message format (pure, tested) ----------
 
+def recipient_list(to: str) -> list[str]:
+    """Comma-separated recipients, in order, with duplicates removed."""
+    seen = []
+    for part in str(to or "").split(","):
+        name = part.strip().lower()
+        if name and name not in seen:
+            seen.append(name)
+    return seen
+
+
+def desk_id_for(agent: str | None) -> str | None:
+    """Map a relay id onto a desk id. `chief` is Grok's desk id. Cursor is never a Chief."""
+    if not agent:
+        return None
+    name = str(agent).strip().lower()
+    if name in ("", "none", "cursor"):
+        return None
+    if name == "chief":
+        return "grok"
+    if name in CHIEF_DESK_IDS:
+        return name
+    return None
+
+
 def header(**kv: str) -> str:
-    return "<!-- hos-desk v1 " + " ".join(f"{k}={re.sub(r'[^A-Za-z0-9_.-]+', '-', v)}" for k, v in kv.items() if v) + " -->"
+    parts = []
+    for k, v in kv.items():
+        if not v:
+            continue
+        if k == "to":
+            cleaned = ",".join(recipient_list(str(v)))
+        else:
+            cleaned = re.sub(r"[^A-Za-z0-9_.-]+", "-", str(v))
+        parts.append(f"{k}={cleaned}")
+    return "<!-- hos-desk v1 " + " ".join(parts) + " -->"
 
 
 def parse(body: str) -> dict | None:
@@ -74,15 +114,126 @@ def compose(frm: str, to: str, film: str, stage: str, status: str, body: str, im
     return "\n".join(parts) + "\n"
 
 
-def for_agent(comments: list[dict], after_id: int, trusted: str, me: str = "grok") -> list[dict]:
+def role_holder(state: dict | None, message_id: int, elected: str | None) -> str | None:
+    """Who holds a chief-role message. An existing assignment stays put until handback."""
+    assignment = ((state or {}).get("assignments") or {}).get(str(message_id)) or {}
+    holder = assignment.get("holder")
+    if holder in CHIEF_DESK_IDS:
+        return holder
+    return desk_id_for(elected)
+
+
+def addressed(header: dict, me: str, elected: str | None = None, state: dict | None = None, message_id: int | None = None) -> bool:
+    """Literal recipients match once. `chief` matches only the elected desk id, never Cursor.
+    The literal inbox (elected is None) does not take role mail; deliver_role owns that copy."""
+    recips = recipient_list(header.get("to", ""))
+    if "chief" in recips:
+        if elected is None or me not in CHIEF_DESK_IDS:
+            return False
+        return role_holder(state, message_id if message_id is not None else -1, elected) == me
+    return me in recips
+
+
+def for_agent(comments: list[dict], after_id: int, trusted: str, me: str = "grok", elected: str | None = None, state: dict | None = None) -> list[dict]:
     out = []
+    seen = set()
     for c in comments:
-        if c["id"] <= after_id or c["user"]["login"].lower() != trusted.lower():
+        if c["id"] <= after_id or c["user"]["login"].lower() != trusted.lower() or c["id"] in seen:
             continue
         h = parse(c["body"])
-        if h and h.get("to") == me:
-            out.append({**c, "header": h})
+        if not h or not addressed(h, me, elected, state, c["id"]):
+            continue
+        seen.add(c["id"])
+        role = "chief" in recipient_list(h.get("to", "")) and role_holder(state, c["id"], elected) == me
+        out.append({**c, "header": h, "role": role})
     return out
+
+
+def worker_may_run(header: dict, me: str) -> bool:
+    """A message addressed to the Chief role must not start the Cursor worker."""
+    if "chief" in recipient_list(header.get("to", "")):
+        return False
+    return me != "chief"
+
+
+def resolve_elected() -> str | None:
+    """Desk id recorded by the Chief relay, unless HOS_DESK_ELECTED overrides it. Cursor never comes back."""
+    raw = os.environ.get("HOS_DESK_ELECTED")
+    if raw is not None:
+        return desk_id_for(raw)
+    path = Path(os.environ.get("CHIEF_CURRENT", str(Path.home() / "_desk/state/chief/current.json")))
+    try:
+        agent = json.loads(path.read_text()).get("agent")
+    except (OSError, ValueError):
+        return None
+    return desk_id_for(agent)
+
+
+def select_role_messages(comments: list[dict], state: dict, me: str, elected: str | None, trusted: str, recover_id: int | None = None) -> list[dict]:
+    """New chief-role mail for the elected holder.
+
+    The first call seeds last_role to the current max id and delivers nothing older.
+    A single recover_id is the only older id that may be admitted. The watermark only moves forward.
+    """
+    if me != desk_id_for(elected) or me not in CHIEF_DESK_IDS:
+        return []
+    ids = [c.get("id", 0) for c in comments]
+    if "last_role" not in state:
+        state["last_role"] = max(ids) if ids else 0
+        state["role_seeded"] = True
+        if recover_id is None:
+            return []
+    acked = set()
+    for bucket in (state.get("acknowledged") or {}).values():
+        acked.update(str(item) for item in bucket)
+    chosen = []
+    seen = set()
+    for c in comments:
+        if c["id"] in seen or str(c.get("user", {}).get("login", "")).lower() != trusted.lower():
+            continue
+        h = parse(c.get("body") or "")
+        if not h or h.get("status") == "done" or "chief" not in recipient_list(h.get("to", "")):
+            continue
+        if role_holder(state, c["id"], elected) != me or str(c["id"]) in acked:
+            continue
+        if c["id"] == recover_id or c["id"] > state.get("last_role", 0):
+            seen.add(c["id"])
+            chosen.append({**c, "header": h, "role": True})
+    if chosen:
+        state["last_role"] = max(state.get("last_role", 0), max(c["id"] for c in chosen))
+    return chosen
+
+
+def handback(state: dict, holder: str, message_id: int, restored: str) -> None:
+    """The stand-in returns one unacked role message to the restored Chief. Cursor cannot hold or receive it."""
+    restored_id = desk_id_for(restored)
+    if holder not in CHIEF_DESK_IDS or restored_id is None:
+        raise ValueError("Only a Chief-chain holder can hand a role message back, and never to Cursor")
+    pending = (state.get("pending") or {}).get(holder, {})
+    comment = pending.get(str(message_id))
+    assignment = (state.get("assignments") or {}).get(str(message_id)) or {}
+    if not comment or assignment.get("holder") != holder or assignment.get("role") != "chief":
+        raise ValueError("No chief-role assignment is held by this agent")
+    del pending[str(message_id)]
+    state.setdefault("pending", {}).setdefault(restored_id, {})[str(message_id)] = comment
+    assignment["holder"] = restored_id
+    assignment["handed_back_by"] = holder
+
+
+def classify_message(comment: dict, later: list[dict], state: dict) -> str:
+    """Label one candidate. This does not deliver it or move a watermark."""
+    mid = str(comment.get("id"))
+    for bucket in (state.get("acknowledged") or {}).values():
+        if mid in {str(item) for item in bucket}:
+            return "acknowledged"
+    header = parse(comment.get("body") or "") or comment.get("header") or {}
+    if header.get("status") in ("done", "approval"):
+        return "terminal"
+    for other in later:
+        other_header = parse(other.get("body") or "") or {}
+        if other_header.get("reply_to") == mid and other_header.get("status") in ("review", "approval", "done", "blocked"):
+            return "later-outcome"
+    return "unresolved"
 
 
 # ---------- GitHub via gh ----------
@@ -247,8 +398,12 @@ def pending_messages(state, incoming, agent):
     for comment in incoming:
         if comment.get("header", {}).get("status") == "done":
             continue  # terminal notifications must not create an acknowledgement ping-pong
+        if comment.get("role") and agent not in CHIEF_DESK_IDS:
+            continue  # Cursor does not take a chief-role copy
         if str(comment["id"]) not in acked:
             pending.setdefault(str(comment["id"]), comment)
+            if comment.get("role"):
+                state.setdefault("assignments", {}).setdefault(str(comment["id"]), {"role": "chief", "holder": agent})
     return sorted(pending.values(), key=lambda c: c["id"])
 
 
@@ -267,6 +422,7 @@ def acknowledge(state, agent, message_id, reply, trusted):
         raise ValueError("Acknowledgement requires a trusted later outcome on the same film/stage, from this agent, with reply_to=<original id>")
     state.setdefault("acknowledged", {}).setdefault(agent, {})[str(message_id)] = reply["id"]
     del pending[str(message_id)]
+    (state.get("assignments") or {}).pop(str(message_id), None)
 
 
 def cmd_ack(ns):
@@ -298,46 +454,217 @@ def deliver_inbox(ns) -> int:
     me = ns.agent
     key = "last" if me == "grok" else f"last_{me}"
     with state_transaction() as state:
-        incoming = for_agent(comments(r, pr), getattr(ns, "recover_since_id", None) if getattr(ns, "recover_since_id", None) is not None else state.get(key, 0), trusted, me)
+        snapshot = comments(r, pr)
+        fence = state.setdefault("run_fence", {})
+        # Seed EVERY recipient from the same upgrade snapshot, including literal
+        # mail above an old watermark and recipients which have never polled.
+        if not state.get("literal_snapshot_v2"):
+            for recipient in WRITERS:
+                historical = for_agent(snapshot, 0, trusted, recipient)
+                old_pending = (state.get("pending") or {}).get(recipient, {})
+                fence[recipient] = sorted(set(fence.get(recipient, [])) |
+                    {str(c["id"]) for c in historical} |
+                    {mid for mid, c in old_pending.items() if not c.get("role")})
+                watermark = "last" if recipient == "grok" else f"last_{recipient}"
+                state[watermark] = max(state.get(watermark, 0), max((c["id"] for c in snapshot), default=0))
+            state.setdefault("last_role", max((c["id"] for c in snapshot), default=0))
+            state["literal_snapshot_v2"] = True
+        recover_id = getattr(ns, "recover_id", None)
+        if getattr(ns, "recover_since_id", None) is not None:
+            raise ValueError("Bulk recovery is disabled; classify and admit one reviewed --recover-id")
+        incoming = for_agent(snapshot, state.get(key, 0), trusted, me)
+        if recover_id is not None:
+            incoming += [c for c in for_agent(snapshot, 0, trusted, me) if c["id"] == recover_id]
+            fence[me] = [mid for mid in fence.get(me, []) if mid != str(recover_id)]
         new = pending_messages(state, incoming, me)
-        if incoming:
-            state[key] = max(state.get(key, 0), max(c["id"] for c in incoming))
+        state[key] = max(state.get(key, 0), max((c["id"] for c in snapshot), default=0))
+        fenced = set(fence.get(me, []))
     inbox = HOME / "inbox"
     inbox.mkdir(parents=True, exist_ok=True)
+    shown = 0
     for c in new:
+        if c.get("role") or str(c["id"]) in fenced:
+            continue
+        shown += 1
         h = c["header"]
         f = inbox / f"{c['id']}_{h.get('film', 'x')}_{h.get('stage', 'msg')}.md"
-        f.write_text(
-            f"# Desk task for {me.title()} (PR #{pr}, comment {c['id']})\n\n"
-            "Follow AGENTS.md. When finished, reply on the desk with:\n"
-            f"  python3 00_Brand/Channel-Setup/tools/hos_desk.py post --from {me} --to claude --film {h.get('film', '')} "
-            f"--stage {h.get('stage', '')} --status review --body-file <report.md> [--image <png/jpg> …]\n\n"
-            + c["body"] + f"\n\nThis message remains pending until an outcome is posted. Post the outcome with --reply-to {c['id']}, then run: python3 00_Brand/Channel-Setup/tools/hos_desk.py ack {c['id']} --as {me} --ref <outcome comment id>\n")
+        f.write_text(task_text(me, pr, c))
         print(f"\n=== {f}\n{c['body']}")
-        if ns.run:
+        if ns.run and worker_may_run(h, me):
             rc = run_agent(f)
             if rc == -1:
                 notify(f"Task for {me.title()}: {h.get('film', '')} {h.get('stage', '')}")
             elif rc:
                 print(f"agent exited {rc}; message left in {f}")
         # Successful process exit also requires an explicit outcome acknowledgement.
-    if not new:
+    if not shown:
         print(f"No new messages for {me.title()}.")
-    return len(new)
+    return shown
+
+
+def task_text(me: str, pr: int, comment: dict) -> str:
+    h = comment["header"]
+    authority = ""
+    if comment.get("role") or "chief" in recipient_list(h.get("to", "")):
+        authority = (
+            f"This message is for the elected Chief ({me}). Use that identity on the desk. "
+            "Cursor does not hold Chief authority and must not decide it.\n\n"
+        )
+    return (
+        f"# Desk task for {me.title()} (PR #{pr}, comment {comment['id']})\n\n"
+        + authority
+        + "Follow AGENTS.md. When finished, reply on the desk with:\n"
+        f"  python3 00_Brand/Channel-Setup/tools/hos_desk.py post --from {me} --to claude --film {h.get('film', '')} "
+        f"--stage {h.get('stage', '')} --status review --body-file <report.md> [--image <png/jpg> …]\n\n"
+        + comment["body"]
+        + f"\n\nThis message remains pending until an outcome is posted. Post the outcome with --reply-to {comment['id']}, "
+        f"then run: python3 00_Brand/Channel-Setup/tools/hos_desk.py ack {comment['id']} --as {me} --ref <outcome comment id>\n"
+    )
+
+
+def deliver_role(ns) -> int:
+    """Persist chief-role mail for the elected desk id. Never starts the Cursor worker."""
+    HOME.mkdir(parents=True, exist_ok=True)
+    elected = desk_id_for(getattr(ns, "elected", None)) or resolve_elected()
+    me = ns.agent
+    if me != elected:
+        return 0
+    r = repo()
+    pr = desk_pr(r)
+    trusted = os.environ.get("HOS_DESK_TRUSTED") or r.split("/")[0]
+    recover_id = getattr(ns, "recover_id", None)
+    with (HOME / f"dispatch-{me}.lock").open("a") as lock:
+        try:
+            fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
+        except BlockingIOError:
+            print("Role delivery already running for this agent")
+            return 0
+        with state_transaction() as state:
+            incoming = select_role_messages(comments(r, pr), state, me, elected, trusted, recover_id)
+            new = pending_messages(state, incoming, me)
+    inbox = HOME / "inbox"
+    inbox.mkdir(parents=True, exist_ok=True)
+    shown = 0
+    for c in new:
+        if not c.get("role"):
+            continue
+        shown += 1
+        f = inbox / f"{c['id']}_{c['header'].get('film', 'x')}_{c['header'].get('stage', 'msg')}.md"
+        f.write_text(task_text(me, pr, c))
+        print(f"\n=== {f}\n{c['body']}")
+    if not shown:
+        print(f"No new chief-role messages for {me}.")
+    return shown
 
 
 def cmd_inbox(ns) -> None:
     if not ns.watch:
         check_inbox(ns)
+        deliver_role(ns)
         return
+    HOME.mkdir(parents=True, exist_ok=True)
+    marker = HOME / "loaded.json"
+    temporary = marker.with_suffix(".tmp")
+    temporary.write_text(json.dumps({"pid": os.getpid(), "code": CODE, "sha256": LOADED_SHA256}))
+    temporary.replace(marker)
+    print(f"HOS desk watcher {CODE} pid={os.getpid()} sha256={LOADED_SHA256}")
     while True:
         try:
             check_inbox(ns)
+            elected = resolve_elected()
+            if elected:
+                deliver_role(argparse.Namespace(agent=elected, elected=elected, run=False, recover_id=None))
         except SystemExit as e:
             print(e)
         except Exception as e:  # keep the watcher alive through network blips
             print(f"inbox error: {e}")
         time.sleep(ns.watch)
+
+
+def cmd_handback(ns) -> None:
+    with state_transaction() as state:
+        handback(state, ns.agent, ns.id, ns.to)
+    print(f"Handed {ns.id} from {ns.agent} back to {desk_id_for(ns.to)}")
+
+
+def watcher_pid(target: str) -> int:
+    output = subprocess.run(["launchctl", "print", target], text=True, capture_output=True, check=True).stdout
+    match = re.search(r"^\s*pid = (\d+)\s*$", output, re.M)
+    if not match or int(match[1]) <= 0:
+        raise ValueError("Cannot identify running launchd watcher")
+    return int(match[1])
+
+
+def inspect_idle(target: str) -> int:
+    pid = watcher_pid(target)
+    output = subprocess.run(["ps", "-axo", "pid=,ppid="], text=True, capture_output=True, check=True).stdout
+    processes = {}
+    for line in output.splitlines():
+        child, parent = map(int, line.split())
+        processes[child] = parent
+    if pid not in processes:
+        raise ValueError("Watcher absent from process snapshot")
+    descendants = {pid}
+    while True:
+        expanded = descendants | {child for child, parent in processes.items() if parent in descendants}
+        if expanded == descendants:
+            break
+        descendants = expanded
+    if descendants != {pid}:
+        raise ValueError("Watcher has active descendants")
+    lease = HOME / "execution.json"
+    if lease.exists():
+        value = json.loads(lease.read_text())
+        if not isinstance(value, dict) or not isinstance(value.get("pid"), int) or value["pid"] <= 0:
+            raise ValueError("Invalid desk execution lease")
+        lease_pid = value["pid"]
+        if lease_pid in processes:
+            raise ValueError("Desk execution lease is active")
+    return pid
+
+
+def cmd_refresh(ns) -> None:
+    """Inspect the OS boundary while holding every dispatch lock, or fail closed.
+
+    Locks span kickstart and loaded-process confirmation, preventing a new
+    dispatch in the inspection/restart gap (also for the pre-upgrade watcher).
+    """
+    from contextlib import ExitStack
+    installed_path = Path(os.environ.get("HOS_DESK_INSTALLED",
+        "/Users/benjaminoats/YouTube/History Of Science/00_Brand/Channel-Setup/tools/hos_desk.py"))
+    target = f"gui/{os.getuid()}/com.hos.desk"
+    HOME.mkdir(parents=True, exist_ok=True)
+    try:
+        if hashlib.sha256(installed_path.read_bytes()).hexdigest() != LOADED_SHA256:
+            raise ValueError("Installed source differs from this loaded code")
+        with ExitStack() as stack:
+            # Serialise refreshers too; lock order is fixed across all callers.
+            for name in ["refresh", *[f"dispatch-{agent}" for agent in sorted(WRITERS)]]:
+                lock = stack.enter_context((HOME / f"{name}.lock").open("a"))
+                fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
+            old_pid = inspect_idle(target)
+            print(f"decision=refresh code={CODE} pid={old_pid} sha256={LOADED_SHA256}")
+            if not getattr(ns, "apply", False):
+                return
+            if inspect_idle(target) != old_pid:
+                raise ValueError("Watcher changed during inspection")
+            subprocess.run(["launchctl", "kickstart", "-k", target], check=True)
+            for attempt in range(50):
+                new_pid = watcher_pid(target)
+                try:
+                    loaded = json.loads((HOME / "loaded.json").read_text())
+                except (OSError, ValueError):
+                    loaded = {}
+                if (new_pid != old_pid and loaded.get("pid") == new_pid
+                        and loaded.get("code") == CODE and loaded.get("sha256") == LOADED_SHA256):
+                    evidence = {"old_pid": old_pid, **loaded, "confirmed_at": datetime.now(timezone.utc).isoformat()}
+                    (HOME / "refresh-result.json").write_text(json.dumps(evidence))
+                    print(json.dumps(evidence))
+                    return
+                time.sleep(0.1)
+            raise ValueError("Restart requested but loaded PID/version was not confirmed; inspect launchd before retry")
+    except (OSError, ValueError, subprocess.SubprocessError) as error:
+        raise SystemExit(f"Refresh refused or unconfirmed: {error}")
 
 
 def cmd_thread(ns) -> None:
@@ -348,6 +675,14 @@ def cmd_thread(ns) -> None:
         print(HEADER.sub("", c["body"]).strip())
 
 
+def party_list(value: str) -> str:
+    parts = recipient_list(value)
+    bad = [p for p in parts if p not in PARTIES]
+    if not parts or bad:
+        raise argparse.ArgumentTypeError("unknown desk party: " + (", ".join(bad) or value))
+    return ",".join(parts)
+
+
 def main() -> None:
     # launchd writes stdout to a file; without line buffering watch.log stays empty.
     sys.stdout.reconfigure(line_buffering=True)
@@ -355,8 +690,8 @@ def main() -> None:
     sub = ap.add_subparsers(dest="cmd", required=True)
     sub.add_parser("init").set_defaults(fn=cmd_init)
     p = sub.add_parser("post")
-    p.add_argument("--from", dest="frm", choices=PARTIES, default="grok")
-    p.add_argument("--to", choices=PARTIES, required=True)
+    p.add_argument("--from", dest="frm", choices=SENDERS, default="grok")
+    p.add_argument("--to", type=party_list, required=True)
     p.add_argument("--film", default="")
     p.add_argument("--stage", default="")
     p.add_argument("--status", choices=STATUSES, default="review")
@@ -369,8 +704,17 @@ def main() -> None:
     p.add_argument("--watch", type=int, default=0, help="poll every N seconds")
     p.add_argument("--run", action="store_true", help="start the agent with $HOS_DESK_AGENT_CMD")
     p.add_argument("--as", dest="agent", choices=WRITERS, default="grok", help="whose inbox (cursor or codex while Grok is out)")
-    p.add_argument("--recover-since-id", type=int, help="replay older messages after this id; acknowledged messages stay excluded")
+    p.add_argument("--recover-since-id", type=int, help="disabled: bulk replay is unsafe; use reviewed --recover-id")
+    p.add_argument("--recover-id", type=int, help="admit one reviewed unresolved message by id; never rewinds watermarks")
     p.set_defaults(fn=cmd_inbox)
+    p = sub.add_parser("handback")
+    p.add_argument("id", type=int)
+    p.add_argument("--as", dest="agent", choices=CHIEF_DESK_IDS, required=True)
+    p.add_argument("--to", dest="to", choices=CHIEF_DESK_IDS, required=True)
+    p.set_defaults(fn=cmd_handback)
+    p = sub.add_parser("refresh")
+    p.add_argument("--apply", action="store_true", help="restart only after OS idle checks and dispatch locks; Chief authorisation required")
+    p.set_defaults(fn=cmd_refresh)
     p = sub.add_parser("ack")
     p.add_argument("id", type=int)
     p.add_argument("--as", dest="agent", choices=WRITERS, required=True)

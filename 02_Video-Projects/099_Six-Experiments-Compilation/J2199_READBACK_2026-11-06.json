@@ -1,0 +1,42 @@
+{
+  "job": "J2199",
+  "agent": "cursor",
+  "video": "uAomPaOBrM8",
+  "channel": "UCXp7HkBIl1LgaznXuZHJyRg",
+  "browser_port": 9460,
+  "captured_utc": "2026-11-06T13:08:00Z",
+  "lint": "npm run lint:package -- --film 099 exited 0 with 'No packages found'. The compilation has no PACKAGE_MANIFEST.json.",
+  "untouched": ["title", "privacy", "publishAt", "end screen 48:58-49:18", "playlists", "AI disclosure", "not made for kids", "Premiere", "pinned comment", "Test & Compare"],
+  "saved_and_reloaded": {
+    "visibility": "Scheduled",
+    "not_made_for_kids": true,
+    "description_opening_present": true,
+    "category_type": "Concept overview",
+    "academic_system": "England",
+    "automatic_places": false,
+    "automatic_chapters": true,
+    "automatic_concepts": true,
+    "moderation": "Basic",
+    "likes_shown": true,
+    "caption_certification": "This content has never aired on television in the US",
+    "paid_promotion_no": true
+  },
+  "not_saved": {
+    "level": "Key stage 4 and Year 10 both appeared in the control. A reload still reads Level None. Exam, course or standard left blank: no single GCSE subject covers blood, germs and atoms.",
+    "timezone": "Still (GMT+0000) Local Time, aria-selected. Choosing (GMT+00:00) London updates the control, but Done stays disabled while the clock is 18:00 on 10 Dec 2026 and Premiere is off, so the change was discarded.",
+    "cards": "Editor was empty. No card was saved. Intended, not written: 00:17:57 How Did We Discover Germs? (_C92tIJCk8A) and 00:24:14 How Did We Discover the Periodic Table? (AL_-qlWko_g)."
+  },
+  "schedule_left_as": {
+    "date": "10 Dec 2026",
+    "time": "18:00",
+    "premiere": false,
+    "timezone_selected": "(GMT+0000) Local Time"
+  },
+  "desk_evidence": "/Users/benjaminoats/_desk/jobs/J2199/evidence",
+  "sha256": {
+    "final_reload.png": "4852002472035e958bcba38f832a944c446227d22d06f2a47bdca9c46949dbe5",
+    "final_reload.txt": "ab561945f4a5dcf10c9ed63777df7a16b44c247bb80235a32314499eddd9ef7b",
+    "cards_before.png": "9cfe402361a3b1b8237338b5f3dd8a4896a8931c53c8f2d725ca886aa56c0885",
+    "tz_current_list.png": "52daf4d0e12f8359f1cafccec375997c30109eaba41ff06aaf9912dc4be46ddc"
+  }
+}

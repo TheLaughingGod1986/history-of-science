@@ -50,3 +50,28 @@ Pinned comment and running Test & Compare are **pending until public**, not pass
 Fresh authenticated merged-main `channel:audit` exited 0: **62 videos, 0 errors**. This code result does not cover the Studio-only gaps above. Audit used the clean worktree with existing local dependencies and the existing HOS credential file; no secrets were recorded. The first attempt lacked a dependency path; linking the existing ignored node_modules resolved it without installing anything.
 
 Raw DOM readbacks, screenshots and full audit output stay locally in `/Users/benjaminoats/_desk/jobs/J0999/evidence-2026-11-04/`; SHA-256 manifest is `J0999_EVIDENCE_2026-11-04.json`. Screenshots are still evidence only. No upload, schedule, retitle, privacy, Buffer, credit, merge or metadata action occurred. J0999 stays parked for Chief to review this narrow evidence PR and scope the checklist corrections; historical 5/5 milestones are retained, not film approval.
+
+## J2199 checklist writes — 6 November 2026
+
+Cursor worker, not Chief. Channel `UCXp7HkBIl1LgaznXuZHJyRg`, video `uAomPaOBrM8`, CDP 9460, one reused Studio tab. `npm run lint:package -- --film 099` exited 0 with "No packages found" (this compilation has no package manifest). Title, privacy, publishAt, end screen, playlists, AI disclosure and Not Made for Kids were not edited. Premiere stayed off. Pinned comment and Test & Compare were not started.
+
+Reloaded readback of what saved:
+
+| Item | Reloaded value |
+|---|---|
+| Visibility | Scheduled |
+| Type | Concept overview |
+| Academic system | England |
+| Automatic places | Off |
+| Automatic chapters / concepts | On / On |
+| Moderation | Basic. Comments On, Anyone, Top, likes shown |
+| Caption certification | This content has never aired on television in the US |
+| Paid promotion | No |
+
+What did not save, so it is not a pass:
+
+- Level. Key stage 4 and Year 10 both showed in the control, then a reload still read Level None. Exam was left blank because no single GCSE subject covers blood, germs and atoms.
+- Time zone. The saved selection is still `(GMT+0000) Local Time`. Choosing `(GMT+00:00) London` updates the control, and the clock stays 18:00 on 10 Dec 2026 with Premiere off, but Done stays disabled, so the London choice was discarded.
+- Cards. The editor was empty and nothing was saved. The two cards not written are 00:17:57 *How Did We Discover Germs?* (`_C92tIJCk8A`) and 00:24:14 *How Did We Discover the Periodic Table?* (`AL_-qlWko_g`).
+
+Schedule left in place: 10 Dec 2026, 18:00, Premiere off. Screenshots and the SHA manifest are in `J2199_READBACK_2026-11-06.json` and on the desk at `/Users/benjaminoats/_desk/jobs/J2199/evidence`. This note is evidence for Chief. It is not a film approval.
