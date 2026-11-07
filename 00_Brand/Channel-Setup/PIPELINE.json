@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-06",
-  "updated_by": "codex",
+  "updated": "2026-11-07",
+  "updated_by": "cursor",
   "board_url": "https://claude.ai/artifact/Hhk519dkbHMzeaZfp3efhc",
   "stages": [
     {
@@ -77,14 +77,14 @@
     }
   ],
   "next_steps": [
-    "004 airs Thu 15 Oct 18:00: Test & Compare A/B/C armed 9 Oct (C = v07) but on hold — C has no OK. J0106 makes v07b (52/53 at about 2×, file only, due Tue 13 Oct); the Chief OKs it and swaps it in by Wed 14 Oct 18:00, or pair 2 comes out, leaving A and B (desk #180). No other Studio changes on 004 until then.",
+    "004 airs Thu 15 Oct 18:00: Test & Compare A/B/C armed 9 Oct (C = v07) but on hold \u2014 C has no OK. J0106 makes v07b (52/53 at about 2\u00d7, file only, due Tue 13 Oct); the Chief OKs it and swaps it in by Wed 14 Oct 18:00, or pair 2 comes out, leaving A and B (desk #180). No other Studio changes on 004 until then.",
     "005: the 2 Oct thumbnail/Test & Compare/end-screen settings went on a stray private copy; manifest now points at the scheduled long wwcjcFfC-5M (#262). Check and re-arm them on wwcjcFfC-5M before Thu 29 Oct (queue J0101).",
-    "006 Part 03: all 16 Vertex first takes minted 10 Oct (J0107, about £11.86) and KEPT by the Chief (desk #180, 10 Oct 23:38). Next: Part 03 rough v01 on the Mini (J0137, no spend), with the P3:06 Flow slot held.",
-    "Shorts test B (Ben: yes, 9 Oct): two search-titled Shorts per film from 007, v02 scripts for 007–010 (titles autocomplete-checked). Shorts voiceover records the v02 pair.",
-    "Voice queue (ElevenLabs 18,653 until 30 Oct): 007 Shorts B + C (J0109), then 009 long (opening to the Chief J0108/J0110, VO J0111), then 010 long (J0112, J0113), then the 008–010 Shorts. Each job checks the balance first; no music beds without the Chief's OK.",
+    "006 Part 03: all 16 Vertex first takes minted 10 Oct (J0107, about \u00a311.86) and KEPT by the Chief (desk #180, 10 Oct 23:38). Next: Part 03 rough v01 on the Mini (J0137, no spend), with the P3:06 Flow slot held.",
+    "Shorts test B (Ben: yes, 9 Oct): two search-titled Shorts per film from 007, v02 scripts for 007\u2013010 (titles autocomplete-checked). Shorts voiceover records the v02 pair.",
+    "Voice queue (ElevenLabs 18,653 until 30 Oct): 007 Shorts B + C (J0109), then 009 long (opening to the Chief J0108/J0110, VO J0111), then 010 long (J0112, J0113), then the 008\u2013010 Shorts. Each job checks the balance first; no music beds without the Chief's OK.",
     "Four a month on each channel (Ben, 9 Oct): the channel short of 4 gets work and credits first.",
-    "006 picture: Mon 12 Oct after 09:00 read the Flow balance and price P3:06 + Parts 04–05 (J0138), the Chief passes the prices (J0139), then Flow mints and the Part 04/05 roughs (J0140); picture by Sun 25 Oct, edit and thumbnails by Thu 29 Oct, Ben's final OK Sun 1 Nov.",
-    "Mon 12 Oct: Flow credits refill (AI Ultra). J0138 reads the balance and re-prices 006 (P3:06, Parts 04–05), then 007, on Flow rates; the Chief passes before any mint (J0139).",
+    "006 picture: Mon 12 Oct after 09:00 read the Flow balance and price P3:06 + Parts 04\u201305 (J0138), the Chief passes the prices (J0139), then Flow mints and the Part 04/05 roughs (J0140); picture by Sun 25 Oct, edit and thumbnails by Thu 29 Oct, Ben's final OK Sun 1 Nov.",
+    "Mon 12 Oct: Flow credits refill (AI Ultra). J0138 reads the balance and re-prices 006 (P3:06, Parts 04\u201305), then 007, on Flow rates; the Chief passes before any mint (J0139).",
     "007 picture: plate boards priced (96 rows, 80 mints); spend starts after 006 and once the whole voiceover batch has passed.",
     "008: J2163 repairs the unsafe correction recipe; J1881 held at 2/3 pending repaired input, then Chief scopes production and capable QA. Six notes unresolved; J1755 delivery hold separate.",
     "Thu 29 Oct 18:05: 005 post-air jobs (Related on its Shorts, cards, end screen, pinned comment).",
@@ -102,8 +102,8 @@
     },
     {
       "pool": "Vertex free trial (picture)",
-      "left": "about £4.25 projected after 006 Part 03 (16 takes about £11.86; last console reading £16.11 at 10 Oct 22:03Z, console lags)",
-      "rule": "free trial, use it before it ends 10 Nov; spend down to £0, no £5 floor (Ben, 10 Oct 22:50); never onto real money or the card. 006 Part 03 is done (J0107). Each job reads the live Free Trial balance first; a job needing more than is left goes to Ben.",
+      "left": "about \u00a34.25 projected after 006 Part 03 (16 takes about \u00a311.86; last console reading \u00a316.11 at 10 Oct 22:03Z, console lags)",
+      "rule": "free trial, use it before it ends 10 Nov; spend down to \u00a30, no \u00a35 floor (Ben, 10 Oct 22:50); never onto real money or the card. 006 Part 03 is done (J0107). Each job reads the live Free Trial balance first; a job needing more than is left goes to Ben.",
       "checked": "10 Oct"
     },
     {
@@ -246,7 +246,7 @@
         },
         "shorts_vo": {
           "status": "done",
-          "note": "A v02 · B v03b · C v01 locked"
+          "note": "A v02 \u00b7 B v03b \u00b7 C v01 locked"
         },
         "picture": {
           "status": "done",
@@ -344,7 +344,7 @@
         "picture": {
           "status": "done",
           "due": "2026-11-01",
-          "note": "BOARD_V02 all 73/73 Flow rows minted on Flow and KEEP (Chief J0352, 21 Oct, HOS PR #351 merged; 2,890 cr vs 7,550 cap; live Flow 20,900 >= 3,000 buffer). Face lock P2:08_jenner_window KEEP applied to all later readable Jenner faces. 3 £0 code graphics on main (`7808f751`); 2 archive + 18 reuse (£0).",
+          "note": "BOARD_V02 all 73/73 Flow rows minted on Flow and KEEP (Chief J0352, 21 Oct, HOS PR #351 merged; 2,890 cr vs 7,550 cap; live Flow 20,900 >= 3,000 buffer). Face lock P2:08_jenner_window KEEP applied to all later readable Jenner faces. 3 \u00a30 code graphics on main (`7808f751`); 2 archive + 18 reuse (\u00a30).",
           "steps": [
             73,
             73
@@ -706,6 +706,51 @@
       }
     },
     {
+      "id": "012",
+      "title": "Genetics: The Monk Who Counted 28,000 Pea Plants",
+      "air": "2026-12-24",
+      "ready_by": "2026-12-20",
+      "summary": "Planned for Thu 24 Dec (J2328 / jobs/WIP.json next_hos #2). Topic prep and draft script master v01 live under ideas/012_Mendel-Pea-Plants; not entered into active WIP. Go/no-go package prepared on HOS PR #453 (not yet on main).",
+      "stages": {
+        "topic": {
+          "status": "todo"
+        },
+        "script": {
+          "status": "todo"
+        },
+        "facts": {
+          "status": "todo"
+        },
+        "package": {
+          "status": "todo"
+        },
+        "vo": {
+          "status": "todo"
+        },
+        "shorts_scripts": {
+          "status": "todo"
+        },
+        "shorts_vo": {
+          "status": "todo"
+        },
+        "picture": {
+          "status": "todo"
+        },
+        "edit": {
+          "status": "todo"
+        },
+        "thumbnails": {
+          "status": "todo"
+        },
+        "ben_ok": {
+          "status": "todo"
+        },
+        "scheduled": {
+          "status": "todo"
+        }
+      }
+    },
+    {
       "id": "013",
       "title": "Evolution: The Letter That Forced Darwin to Publish",
       "air": "2026-12-17",
@@ -775,6 +820,141 @@
         "scheduled": {
           "status": "todo",
           "due": "2026-12-14"
+        }
+      }
+    },
+    {
+      "id": "014",
+      "title": "Extinction: The 12-Year-Old Who Dug Up a Sea Dragon",
+      "air": "2026-12-31",
+      "ready_by": "2026-12-27",
+      "summary": "Planned for Thu 31 Dec (J2328 / jobs/WIP.json next_hos #3). Topic prep and draft script master v01 live under ideas/014_Anning-Fossils-Extinction; not entered into active WIP. Go/no-go package prepared on HOS PR #453 (not yet on main).",
+      "stages": {
+        "topic": {
+          "status": "todo"
+        },
+        "script": {
+          "status": "todo"
+        },
+        "facts": {
+          "status": "todo"
+        },
+        "package": {
+          "status": "todo"
+        },
+        "vo": {
+          "status": "todo"
+        },
+        "shorts_scripts": {
+          "status": "todo"
+        },
+        "shorts_vo": {
+          "status": "todo"
+        },
+        "picture": {
+          "status": "todo"
+        },
+        "edit": {
+          "status": "todo"
+        },
+        "thumbnails": {
+          "status": "todo"
+        },
+        "ben_ok": {
+          "status": "todo"
+        },
+        "scheduled": {
+          "status": "todo"
+        }
+      }
+    },
+    {
+      "id": "015",
+      "title": "Cells: The Slice of Cork That Changed Biology",
+      "air": "2027-01-07",
+      "ready_by": "2027-01-03",
+      "summary": "On the next_hos waiting line after 014 (jobs/WIP.json). Draft script master v01 under ideas/015_Hooke-Cell-Theory; topic prepared, not entered into active WIP. Title from hooke_script_master_v01.md.",
+      "stages": {
+        "topic": {
+          "status": "todo"
+        },
+        "script": {
+          "status": "todo"
+        },
+        "facts": {
+          "status": "todo"
+        },
+        "package": {
+          "status": "todo"
+        },
+        "vo": {
+          "status": "todo"
+        },
+        "shorts_scripts": {
+          "status": "todo"
+        },
+        "shorts_vo": {
+          "status": "todo"
+        },
+        "picture": {
+          "status": "todo"
+        },
+        "edit": {
+          "status": "todo"
+        },
+        "thumbnails": {
+          "status": "todo"
+        },
+        "ben_ok": {
+          "status": "todo"
+        },
+        "scheduled": {
+          "status": "todo"
+        }
+      }
+    },
+    {
+      "id": "018",
+      "title": "Infrared: The Thermometer Experiment That Found Invisible Light",
+      "air": "2027-01-14",
+      "ready_by": "2027-01-10",
+      "summary": "On the next_hos waiting line after 015 (jobs/WIP.json). Draft script master v01 under ideas/018_Herschel-Ritter-Invisible-Light; topic prepared, not entered into active WIP. Title from herschel_script_master_v01.md.",
+      "stages": {
+        "topic": {
+          "status": "todo"
+        },
+        "script": {
+          "status": "todo"
+        },
+        "facts": {
+          "status": "todo"
+        },
+        "package": {
+          "status": "todo"
+        },
+        "vo": {
+          "status": "todo"
+        },
+        "shorts_scripts": {
+          "status": "todo"
+        },
+        "shorts_vo": {
+          "status": "todo"
+        },
+        "picture": {
+          "status": "todo"
+        },
+        "edit": {
+          "status": "todo"
+        },
+        "thumbnails": {
+          "status": "todo"
+        },
+        "ben_ok": {
+          "status": "todo"
+        },
+        "scheduled": {
+          "status": "todo"
         }
       }
     }

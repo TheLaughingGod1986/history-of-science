@@ -7,7 +7,7 @@
   "cadence": {
     "strategy": "HOS_STRATEGY.md",
     "long": "Thu 18:00 UK, 7-9 min, normal publish (no Premiere)",
-    "shorts": "Sat, Fri, Sun, Tue 11:30 UK, 22-27 s, four a week (Ben 7 Nov 2026; Sat is go-public-day Short — Thu 11:30 would air before the long), one a day at most, never before its long is public, fill gaps only with ready approved cuts"
+    "shorts": "Sat, Fri, Sun, Tue 11:30 UK, 22-27 s, four a week (Ben 7 Nov 2026; Sat is go-public-day Short \u2014 Thu 11:30 would air before the long), one a day at most, never before its long is public, fill gaps only with ready approved cuts"
   },
   "lane": "A familiar thing, and the moment we found out the truth about it.",
   "videos": [
@@ -128,46 +128,46 @@
     {
       "id": "012",
       "working_title": "Genetics: The Monk Who Counted 28,000 Pea Plants",
-      "status": "proposed (Thu 24 Dec 2026, next_hos #2)",
+      "status": "backlog",
       "folder": "00_Brand/Channel-Setup/ideas/012_Mendel-Pea-Plants",
       "familiar_thing": "why a child has their grandfather's red hair when neither parent has it",
-      "moment": "Gregor Mendel's 28,000 pea plants in Brünn (1856–1865) and the 35-year gap to 1900",
+      "moment": "Gregor Mendel's 28,000 pea plants in Br\u00fcnn (1856\u20131865) and the 35-year gap to 1900",
       "person": "Gregor Mendel",
-      "room": "St Thomas's Abbey walled garden and study in Brünn",
-      "public": "2026-12-24 (proposed)"
+      "room": "St Thomas's Abbey walled garden and study in Br\u00fcnn",
+      "public": "2026-12-24 (planned)"
     },
     {
       "id": "014",
       "working_title": "Extinction: The 12-Year-Old Who Dug Up a Sea Dragon",
-      "status": "proposed (Thu 31 Dec 2026, next_hos #3)",
+      "status": "backlog",
       "folder": "00_Brand/Channel-Setup/ideas/014_Anning-Fossils-Extinction",
       "familiar_thing": "a fossil on a beach",
-      "moment": "Mary Anning's 17-foot ichthyosaur (1811–12) and plesiosaur (1823) at Lyme Regis proving extinction",
+      "moment": "Mary Anning's 17-foot ichthyosaur (1811\u201312) and plesiosaur (1823) at Lyme Regis proving extinction",
       "person": "Mary Anning and Georges Cuvier",
       "room": "the Lyme Regis cliffs and her fossil shop",
-      "public": "2026-12-31 (proposed)"
+      "public": "2026-12-31 (planned)"
     },
     {
       "id": "015",
-      "working_title": "Cell Theory: How Cork, a Microscope and a Stolen Idea Revealed Our Cells",
-      "status": "proposed (Thu 7 Jan 2027, next_hos #4)",
+      "working_title": "Cells: The Slice of Cork That Changed Biology",
+      "status": "backlog",
       "folder": "00_Brand/Channel-Setup/ideas/015_Hooke-Cell-Theory",
       "familiar_thing": "the 30 trillion cells that make up your body",
       "moment": "Robert Hooke's 1665 Micrographia cork cells and Robert Remak's 1852 proof that cells divide",
       "person": "Robert Hooke and Robert Remak",
       "room": "the Royal Society experiment room in London and Remak's Berlin attic lab",
-      "public": "2027-01-07 (proposed)"
+      "public": "2027-01-07 (planned)"
     },
     {
       "id": "018",
-      "working_title": "Invisible Light: How a Thermometer Past the Rainbow Found Infrared",
-      "status": "proposed (Thu 14 Jan 2027, next_hos #5)",
+      "working_title": "Infrared: The Thermometer Experiment That Found Invisible Light",
+      "status": "backlog",
       "folder": "00_Brand/Channel-Setup/ideas/018_Herschel-Ritter-Invisible-Light",
       "familiar_thing": "the warmth of sunlight on your skin or a TV remote",
       "moment": "William Herschel's thermometer past the red end of the spectrum (11 Feb 1800) and Ritter's ultraviolet (1801)",
       "person": "William Herschel (with Caroline Herschel and Johann Wilhelm Ritter)",
       "room": "a darkened room in Slough with a window-shutter prism",
-      "public": "2027-01-14 (proposed)"
+      "public": "2027-01-14 (planned)"
     },
     {
       "id": "idea-penicillin",
