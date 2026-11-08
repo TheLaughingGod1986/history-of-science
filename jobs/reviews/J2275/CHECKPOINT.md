@@ -368,3 +368,14 @@ actual parent/media inventory verification and full production launch integratio
 These require another bounded continuation. Keep cmd_submit disabled, J2200 FIX
 and J2033 held. No Chief production re-review requested yet and nothing on Ben.
 Resume PR445 latest head, not PR457. This worktree is /private/tmp/j2275-1525.
+
+
+Continuation checkpoint (8 November 2026, HOS Flow helper guard boundary + real tranche-1 parent media verification):
+
+- Resumed PR #445 (`codex/J2275-runner-safety`, `950babff`) in clean worktree `/Users/benjaminoats/_desk/worktrees/J2275-hos`.
+- Enforced `create_guard` in `04_Audio/tools/orbit_flow_veo_ui.py` (`submit_create` and `generate_clip` now fail closed if `create_guard is None`), preventing any legacy HOS Flow caller or internal retry from clicking Create without holding the shared Flow lock (`~/_desk/state/flow/shared`).
+- Verified the 14 tranche-1 external parent clips on the real local media root (`/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity`): adjusted `prepare_start_frame` external-parent duration check (`required_s=4.99` for trimmed tranche-1 parents such as `P02:08_the_apple_t1.mp4` at `5.083s`) and `technical_report` duration tolerance (`0.09s` so 190-frame 24fps `7.916667s` 8s Veo clips `P05:04_comet_1758_t1.mp4` and `P05:05_iss_orbit_t1.mp4` pass). All 14 external tranche-1 parent clips now validate cleanly.
+- Verified real parent start-still inventory on `/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity`: the two independent tranche-2 parent start stills (`P02:10_how_high` and `P03:07_ball_to_moon` under `04_Generated-Clips/part0N/refs/v05_flow_stills/`) are not yet generated (`verify_still_inventory` fails closed with `missing inventory start still P02:10_how_high`).
+- Forwarded `--other-reservations` (`other`) through `execute_shared_batch` -> `live_video_submit` -> `guarded_create` (`floor = HEADROOM_FLOOR + other`).
+- Validation: 91 zero-submit unit tests OK (`python3 -m unittest discover -s tests -p "test_*.py" -q`); `00_Brand/Channel-Setup/tools/check_all.sh 02_Video-Projects/009_The-Falling-Moon-Gravity` ALL CHECKS PASS.
+- Remaining for next continuation: merge OWB PR #622 + sync `orbit_flow_veo_ui.py` guard boundary in OWB, validate configured live UI schema / generate or verify the 2 zero-credit Nano Banana parent start stills (`P02:10_how_high` and `P03:07_ball_to_moon`), wire `cmd_submit` when ready, and complete `J2200` re-review. `cmd_submit` remains interlocked and `J2033` held.

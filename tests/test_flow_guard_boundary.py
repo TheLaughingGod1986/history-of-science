@@ -91,6 +91,10 @@ class BoundaryTests(unittest.TestCase):
         for attempts in (0,2,3):
             with self.assertRaises(ValueError):
                 env['generate_clip'](page,'p',Path('out'),attempts=attempts,create_guard=Mock())
+        with self.assertRaises(ValueError):
+            env['generate_clip'](page,'p',Path('out'),attempts=1,create_guard=None)
+        with self.assertRaises(RuntimeError):
+            env['submit_create'](page,create_guard=None)
         self.assertEqual(page.mock_calls, [])
 
     def test_guarded_missing_frame_never_uses_context_animate(self):

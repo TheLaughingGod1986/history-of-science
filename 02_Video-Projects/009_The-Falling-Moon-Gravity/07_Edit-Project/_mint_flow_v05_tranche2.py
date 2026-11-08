@@ -464,7 +464,7 @@ def prepare_start_frame(row: Row, media: Path, *, in_scope_keys: set[tuple[int, 
             clip = Path(max(candidates, key=lambda entry: entry["take"])["file"])
         else:
             clip = resolve_parent_clip(media, row.parent, in_scope=False)
-            if clip is not None and not technical_report(clip)["ok"]:
+            if clip is not None and not technical_report(clip, required_s=4.99)["ok"]:
                 raise GuardError(f"invalid external parent: {clip}")
         if clip is None:
             raise GuardError(f"missing parent clip for {row.parent.raw}")
@@ -983,7 +983,7 @@ def technical_report(path: Path, *, required_s: float = 8.0,
     report.update(duration_s=duration, audio_streams=audio, width=width, height=height,
                   decode_ok=decode.returncode == 0)
     report["ok"] = bool(probe.returncode == 0 and decode.returncode == 0 and
-                        len(videos) == 1 and audio == 0 and duration >= required_s - 0.08 and
+                        len(videos) == 1 and audio == 0 and duration >= required_s - 0.09 and
                         width >= min_width and height >= min_height and
                         abs(width / max(height, 1) - 16 / 9) < 0.02)
     return report
@@ -1145,7 +1145,7 @@ def production_batch_paths(*, accounting_state: Path | None,
 def execute_shared_batch(batch: list[Row], *, media: Path, ledger_path: Path,
                          archive_dir: Path, accounting_state: Path | None = None,
                          spend_ledger: Path | None = None, recorder: str = "codex",
-                         reservation: str = "J2033", submitter=None,
+                         reservation: str = "J2033", other: int = 0, submitter=None,
                          in_scope_keys: set[tuple[int, str]] | None = None,
                          test_archive: bool = False,
                          inventory_rows: list[Row] | None = None) -> list[dict]:
@@ -1155,6 +1155,8 @@ def execute_shared_batch(batch: list[Row], *, media: Path, ledger_path: Path,
     charge through live_video_submit. The shared lock covers preparation, Create,
     download, archive and receipts. This remains behind cmd_submit's interlock.
     """
+    if type(other) is not int or other < 0:
+        raise GuardError("invalid other reservations")
     assert_batch_limits(batch)
     if not test_archive:
         accounting_state, spend_ledger = production_batch_paths(
@@ -1252,10 +1254,12 @@ def open_flow_page(browser, flow_home: str, goto):
 
 def live_video_submit(row: Row, dest: Path, frame: Path, *,
                       accounting: SharedFlowAccounting, reservation: str,
-                      charge: str, evidence_path: Path) -> dict:
+                      charge: str, evidence_path: Path, other: int = 0) -> dict:
     """Real Flow call. Unreachable unless submit was armed. Tests never call this."""
     if os.environ.get(SUBMIT_ENV) != "1":
         raise GuardError("live submit is not armed")
+    if type(other) is not int or other < 0:
+        raise GuardError("invalid other reservations")
     accounting._assert_held()
     repo = repo_root_from()
     sys.path.insert(0, str(repo / "04_Audio/tools"))
@@ -1271,6 +1275,7 @@ def live_video_submit(row: Row, dest: Path, frame: Path, *,
         + " No readable handwriting, letters or numbers anywhere."
     )
     cdp = os.environ.get("ORBIT_FLOW_CDP", "http://127.0.0.1:9222")
+    floor = HEADROOM_FLOOR + other
     with sync_playwright() as playwright:
         browser = playwright.chromium.connect_over_cdp(cdp)
         page = open_flow_page(
@@ -1284,10 +1289,10 @@ def live_video_submit(row: Row, dest: Path, frame: Path, *,
             # UI, under the shared lock. A second read at guarded_create checks
             # that controls and current headroom still agree before intent/click.
             ui = read_live_evidence(configured_page)
-            accounting.reserve(reservation, 'HOS:009', MAX_TOTAL_CREDITS, live=ui['balances'][0])
+            accounting.reserve(reservation, 'HOS:009', MAX_TOTAL_CREDITS, live=ui['balances'][0], floor=floor)
             evidence.update(guarded_create(
                 configured_page, accounting, reservation=reservation, charge=charge,
-                evidence_path=evidence_path))
+                evidence_path=evidence_path, floor=floor))
         flow.generate_clip(
             page, prompt, dest, model=model, timeout_s=700,
             start_frame=frame, attempts=1, reuse_project=False, create_guard=create_guard,
@@ -1424,7 +1429,7 @@ def read_live_evidence(page) -> dict:
 
 
 def guarded_create(page, accounting: SharedFlowAccounting, *, reservation: str,
-                   charge: str, evidence_path: Path) -> dict:
+                   charge: str, evidence_path: Path, floor: int = HEADROOM_FLOOR) -> dict:
     """Real browser adapter; caller owns shared writer lock through persistence.
 
     The intent is durable before the click. Any ambiguous browser failure leaves
@@ -1434,7 +1439,7 @@ def guarded_create(page, accounting: SharedFlowAccounting, *, reservation: str,
     evidence = read_live_evidence(page)
     record = dict(read_at=now_iso(), ui=evidence, charge=charge, reservation=reservation)
     immutable_bytes(evidence_path, (json.dumps(record, sort_keys=True) + '\n').encode())
-    accounting.intent(charge, reservation, MAX_CREDITS_PER_TAKE, live=evidence['balances'][0])
+    accounting.intent(charge, reservation, MAX_CREDITS_PER_TAKE, live=evidence['balances'][0], floor=floor)
     outcome = page.evaluate(CREATE_EVIDENCE_JS, evidence)
     if not isinstance(outcome, dict) or type(outcome.get('clicked')) is not bool:
         raise GuardError('ambiguous Create outcome; shared charge remains pending')

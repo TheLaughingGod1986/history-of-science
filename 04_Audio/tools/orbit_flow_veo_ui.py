@@ -1901,20 +1901,17 @@ def _dismiss_asset_search_modal(page) -> None:
 
 def submit_create(page, *, create_guard=None) -> None:
     """Click the prompt-bar send (arrow_forward). Never click add_2 (asset picker)."""
+    if create_guard is None:
+        raise RuntimeError(
+            "Flow Create requires an explicit create_guard owning the shared Flow accounting lock (~/_desk/state/flow/shared)"
+        )
     _dismiss_asset_search_modal(page)
     # Hard gate: Agent chip ON → chat, not Veo. Always force Create mode first.
-    try:
-        _ensure_create_prompt_mode(page)
-    except Exception as e:
-        if create_guard is not None:
-            raise
-        print(f"  submit_create create-mode warn: {e}", flush=True)
-
-    if create_guard is not None:
-        # The guard owns the exact click after settings and prompt preparation.
-        # No later coordinate/selector fallback may bypass its decision.
-        create_guard(page)
-        return
+    _ensure_create_prompt_mode(page)
+    # The guard owns the exact click after settings and prompt preparation.
+    # No later coordinate/selector fallback may bypass its decision.
+    create_guard(page)
+    return
 
     deadline = time.time() + 45
     while time.time() < deadline:
@@ -3098,7 +3095,11 @@ def generate_clip(
     attempts: int = 3,
 ) -> dict:
     """Generate one silent Veo clip via Google Flow Ultra UI (with soft retries)."""
-    if create_guard is not None and attempts != 1:
+    if create_guard is None:
+        raise ValueError(
+            "Flow generation requires an explicit create_guard owning the shared Flow accounting lock (~/_desk/state/flow/shared)"
+        )
+    if attempts != 1:
         raise ValueError("Guarded Flow calls require attempts=1; no automatic retries")
     last: BaseException | None = None
     use_reuse = reuse_project
