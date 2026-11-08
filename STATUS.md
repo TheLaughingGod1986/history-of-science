@@ -21,6 +21,8 @@
 | **014** Extinction: The 12-Year-Old Who Dug Up a Sea Dragon | Thu 31 Dec (54 d) | 0% | Topic (to do) | **Claude** · queued | — | Sun 27 Dec (in 50 d) | 🟢 on track |
 | **015** Cells: The Slice of Cork That Changed Biology | Thu 7 Jan (61 d) | 0% | Topic (to do) | **Claude** · queued | — | Sun 3 Jan (in 57 d) | 🟢 on track |
 | **018** Infrared: The Thermometer Experiment That Found Invisible Light | Thu 14 Jan (68 d) | 0% | Topic (to do) | **Claude** · queued | — | Sun 10 Jan (in 64 d) | 🟢 on track |
+| **100** How Do Migrating Birds See Earth's Magnetic Field? | Thu 21 Jan (75 d) | 0% | Topic (to do) | **Claude** · queued | — | Sun 17 Jan (in 71 d) | 🟢 on track |
+| **101** How Does Life Survive at the Bottom of the Ocean? | Thu 28 Jan (82 d) | 0% | Topic (to do) | **Claude** · queued | — | Sun 24 Jan (in 78 d) | 🟢 on track |
 
 ## Who's on what
 
@@ -354,6 +356,48 @@ On the next_hos waiting line after 014 (jobs/WIP.json). Draft script master v01 
 Airs **Thu 14 Jan** · ready for Ben's OK by **Sun 10 Jan** · 🟢 on track
 
 On the next_hos waiting line after 015 (jobs/WIP.json). Draft script master v01 under ideas/018_Herschel-Ritter-Invisible-Light; topic prepared, not entered into active WIP. Title from herschel_script_master_v01.md.
+
+- ⬜ **Topic** — to do (with Claude)
+- ⬜ **Script** — to do (with Grok)
+- ⬜ **Fact check** — to do (with Grok)
+- ⬜ **Audit + upload package** — to do (with Grok)
+- ⬜ **Voiceover (long)** — to do (with Grok)
+- ⬜ **Shorts scripts** — to do (with Grok)
+- ⬜ **Shorts voiceover** — to do (with Grok)
+- ⬜ **Picture** — to do (with Grok)
+- ⬜ **Edit + master** — to do (with Grok)
+- ⬜ **Thumbnails** — to do (with Grok)
+- ⬜ **Ben's final OK** — to do (with Ben)
+- ⬜ **Scheduled** — to do (with Grok)
+
+### 100 · How Do Migrating Birds See Earth's Magnetic Field?
+
+`░░░░░░░░░░░░░░░░░░░░` **0%**
+
+Airs **Thu 21 Jan** · ready for Ben's OK by **Sun 17 Jan** · 🟢 on track
+
+On the next_hos waiting line after 097 (jobs/WIP.json; added in J2411, 8 Nov 2026). Topic brief + data ranking in 02_Video-Projects/100_Gilbert-Wiltschko-Mouritsen-Bird-Magnetic-Compass/TOPIC.md; neighbour gate PASS (13 education >=1M incl. TED-Ed 9.21M & TED 1.11M Jim Al-Khalili) and public search evidence saved. Waits on Rule-E go/no-go review and Rule-G WIP slot.
+
+- ⬜ **Topic** — to do (with Claude)
+- ⬜ **Script** — to do (with Grok)
+- ⬜ **Fact check** — to do (with Grok)
+- ⬜ **Audit + upload package** — to do (with Grok)
+- ⬜ **Voiceover (long)** — to do (with Grok)
+- ⬜ **Shorts scripts** — to do (with Grok)
+- ⬜ **Shorts voiceover** — to do (with Grok)
+- ⬜ **Picture** — to do (with Grok)
+- ⬜ **Edit + master** — to do (with Grok)
+- ⬜ **Thumbnails** — to do (with Grok)
+- ⬜ **Ben's final OK** — to do (with Ben)
+- ⬜ **Scheduled** — to do (with Grok)
+
+### 101 · How Does Life Survive at the Bottom of the Ocean?
+
+`░░░░░░░░░░░░░░░░░░░░` **0%**
+
+Airs **Thu 28 Jan** · ready for Ben's OK by **Sun 24 Jan** · 🟢 on track
+
+On the next_hos waiting line after 100 (jobs/WIP.json; added in J2411, 8 Nov 2026). Topic brief + data ranking in 02_Video-Projects/101_Corliss-Ballard-Cavanaugh-Deep-Sea-Hydrothermal-Vents/TOPIC.md; neighbour gate PASS (3 education >=1M: Kurzgesagt 25.80M, TED 1.55M, TED-Ed 1.16M) and public search evidence saved (all 3 core queries autocomplete yes). Waits on Rule-E go/no-go review and Rule-G WIP slot.
 
 - ⬜ **Topic** — to do (with Claude)
 - ⬜ **Script** — to do (with Grok)

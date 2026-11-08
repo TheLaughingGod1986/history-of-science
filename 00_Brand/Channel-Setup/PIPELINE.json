@@ -959,6 +959,96 @@
           "status": "todo"
         }
       }
+    },
+    {
+      "id": "100",
+      "title": "How Do Migrating Birds See Earth's Magnetic Field?",
+      "air": "2027-01-21",
+      "ready_by": "2027-01-17",
+      "summary": "On the next_hos waiting line after 097 (jobs/WIP.json; added in J2411, 8 Nov 2026). Topic brief + data ranking in 02_Video-Projects/100_Gilbert-Wiltschko-Mouritsen-Bird-Magnetic-Compass/TOPIC.md; neighbour gate PASS (13 education >=1M incl. TED-Ed 9.21M & TED 1.11M Jim Al-Khalili) and public search evidence saved. Waits on Rule-E go/no-go review and Rule-G WIP slot.",
+      "stages": {
+        "topic": {
+          "status": "todo"
+        },
+        "script": {
+          "status": "todo"
+        },
+        "facts": {
+          "status": "todo"
+        },
+        "package": {
+          "status": "todo"
+        },
+        "vo": {
+          "status": "todo"
+        },
+        "shorts_scripts": {
+          "status": "todo"
+        },
+        "shorts_vo": {
+          "status": "todo"
+        },
+        "picture": {
+          "status": "todo"
+        },
+        "edit": {
+          "status": "todo"
+        },
+        "thumbnails": {
+          "status": "todo"
+        },
+        "ben_ok": {
+          "status": "todo"
+        },
+        "scheduled": {
+          "status": "todo"
+        }
+      }
+    },
+    {
+      "id": "101",
+      "title": "How Does Life Survive at the Bottom of the Ocean?",
+      "air": "2027-01-28",
+      "ready_by": "2027-01-24",
+      "summary": "On the next_hos waiting line after 100 (jobs/WIP.json; added in J2411, 8 Nov 2026). Topic brief + data ranking in 02_Video-Projects/101_Corliss-Ballard-Cavanaugh-Deep-Sea-Hydrothermal-Vents/TOPIC.md; neighbour gate PASS (3 education >=1M: Kurzgesagt 25.80M, TED 1.55M, TED-Ed 1.16M) and public search evidence saved (all 3 core queries autocomplete yes). Waits on Rule-E go/no-go review and Rule-G WIP slot.",
+      "stages": {
+        "topic": {
+          "status": "todo"
+        },
+        "script": {
+          "status": "todo"
+        },
+        "facts": {
+          "status": "todo"
+        },
+        "package": {
+          "status": "todo"
+        },
+        "vo": {
+          "status": "todo"
+        },
+        "shorts_scripts": {
+          "status": "todo"
+        },
+        "shorts_vo": {
+          "status": "todo"
+        },
+        "picture": {
+          "status": "todo"
+        },
+        "edit": {
+          "status": "todo"
+        },
+        "thumbnails": {
+          "status": "todo"
+        },
+        "ben_ok": {
+          "status": "todo"
+        },
+        "scheduled": {
+          "status": "todo"
+        }
+      }
     }
   ]
 }
