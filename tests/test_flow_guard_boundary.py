@@ -208,5 +208,24 @@ class BoundaryTests(unittest.TestCase):
                     env['confirm_generation_spend'].assert_not_called()
                     env['_record_flow_spend'].assert_not_called()
 
+    def test_still_helpers_require_create_guard(self):
+        repo = Path(__file__).resolve().parents[1]
+        v02_src = repo / '02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/_mint_covers_live_v02_stills_cdp.py'
+        still_src = repo / '02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/_flow_still_v01.py'
+        v02_nodes = [n for n in ast.parse(v02_src.read_text()).body
+                     if isinstance(n, ast.FunctionDef) and n.name == 'submit_create']
+        still_nodes = [n for n in ast.parse(still_src.read_text()).body
+                       if isinstance(n, ast.FunctionDef) and n.name == 'make_still']
+        v02_env = {'Path': Path}
+        exec(compile(ast.Module(body=v02_nodes, type_ignores=[]), str(v02_src), 'exec'), v02_env)
+        still_env = {'Path': Path}
+        exec(compile(ast.Module(body=still_nodes, type_ignores=[]), str(still_src), 'exec'), still_env)
+        page = Mock()
+        with self.assertRaises(RuntimeError):
+            v02_env['submit_create'](page)
+        with self.assertRaises(RuntimeError):
+            still_env['make_still'](page, 'prompt', Path('out.png'))
+        self.assertEqual(page.mock_calls, [])
+
 
 if __name__=='__main__': unittest.main()

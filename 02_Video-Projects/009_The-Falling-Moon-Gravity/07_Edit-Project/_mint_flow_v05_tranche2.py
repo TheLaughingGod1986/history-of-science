@@ -30,6 +30,7 @@ from __future__ import annotations
 import argparse
 import fcntl
 import hashlib
+import inspect
 import json
 import os
 import re
@@ -51,6 +52,7 @@ MAX_BATCH_ROWS = 5
 MAX_BATCH_CREDITS = 1500
 HEADROOM_FLOOR = 3000
 REQUIRED_MODEL = "Veo 3.1 - Quality"
+REQUIRED_STILL_MODEL = "Nano Banana 2"
 REQUIRED_OUTPUTS = "x1"
 SUBMIT_ENV = "HOS009_TRANCHE2_SUBMIT"
 FLOW_HOST = "flow.google.com"
@@ -1146,6 +1148,7 @@ def execute_shared_batch(batch: list[Row], *, media: Path, ledger_path: Path,
                          archive_dir: Path, accounting_state: Path | None = None,
                          spend_ledger: Path | None = None, recorder: str = "codex",
                          reservation: str = "J2033", other: int = 0, submitter=None,
+                         still_maker=None,
                          in_scope_keys: set[tuple[int, str]] | None = None,
                          test_archive: bool = False,
                          inventory_rows: list[Row] | None = None) -> list[dict]:
@@ -1166,6 +1169,7 @@ def execute_shared_batch(batch: list[Row], *, media: Path, ledger_path: Path,
             raise GuardError("batch contains a row outside the locked inventory scope")
     archive_dir = require_archive(archive_dir, nas=not test_archive)
     submitter = submitter or live_video_submit
+    accepts_other = "other" in inspect.signature(submitter).parameters
     written = []
     with SharedFlowAccounting(accounting_state) as accounting:
         # Replay known charges before refusing recovery on a local output hold.
@@ -1173,10 +1177,25 @@ def execute_shared_batch(batch: list[Row], *, media: Path, ledger_path: Path,
             accounting.export_ai_spend(spend_ledger, by=recorder)
         if accounting.snapshot()['pending']:
             raise GuardError('unresolved shared Create; no batch or retry')
+        scope_rows = inventory_rows if inventory_rows is not None else batch
+        if still_maker is not None:
+            for srow in scope_rows:
+                if srow.parent is not None:
+                    continue
+                spath = still_path(media, srow.part, srow.plate_id)
+                if not spath.is_file():
+                    made = Path(still_maker(
+                        srow, spath, accounting=accounting, reservation=reservation,
+                        evidence_path=archive_dir / (spath.name + '.still.create.json'),
+                        other=other,
+                    ))
+                    if not made.is_file():
+                        raise GuardError(f"zero-price still for {srow.plate_id} was not written")
+                    archive_verified(made, archive_dir / made.name)
         # Check the whole supplied scope before any charge, including later rows.
         # Archive the inventory before browser entry; a missing later asset must
         # never spend the first row's credits.
-        inventory = verify_still_inventory(inventory_rows if inventory_rows is not None else batch, media)
+        inventory = verify_still_inventory(scope_rows, media)
         inventory_bytes = json.dumps(inventory, sort_keys=True).encode()
         inventory_id = hashlib.sha256(inventory_bytes).hexdigest()
         immutable_bytes(archive_dir / ("inventory-" + inventory_id + ".json"), inventory_bytes)
@@ -1205,10 +1224,16 @@ def execute_shared_batch(batch: list[Row], *, media: Path, ledger_path: Path,
             intent['inventory'] = inventory_id
             intent['input'] = {'file': str(frame.resolve()), 'sha256': sha256_file(frame)}
             append_ledger(ledger_path, intent)
+            submit_kwargs = dict(
+                accounting=accounting,
+                reservation=reservation,
+                charge=charge,
+                evidence_path=archive_dir / (dest.name + '.create.json'),
+            )
+            if accepts_other:
+                submit_kwargs['other'] = other
             try:
-                evidence = submitter(row, dest, frame, accounting=accounting,
-                                     reservation=reservation, charge=charge,
-                                     evidence_path=archive_dir/(dest.name+'.create.json'))
+                evidence = submitter(row, dest, frame, **submit_kwargs)
             finally:
                 # A known click may have charged even when download raised.
                 # Ambiguous PENDING intents remain absent from confirmed spend.
@@ -1354,14 +1379,40 @@ def next_batch(rows: list[Row], ledger: list[dict]) -> list[Row]:
 
 
 def cmd_submit(repo: Path, *, other: int, media: Path, ledger_path: Path, lock_path: Path,
-               pid_path: Path, done_path: Path, archive_dir: Path | None) -> list[dict]:
-    """Production interlock until the remaining J2275 repairs are reviewed."""
+               pid_path: Path, done_path: Path, archive_dir: Path | None,
+               accounting_state: Path | None = None, spend_ledger: Path | None = None,
+               recorder: str = "codex", submitter=None, still_maker=None,
+               test_archive: bool = False) -> list[dict]:
+    """Run one guarded tranche-2 batch when explicitly armed."""
     if not submit_armed():
         raise SystemExit(
             "refusing submit: generation is not armed "
             f"({SUBMIT_ENV} is not 1). Plan only. J2033 stays blocked until Chief passes this runner."
         )
-    raise GuardError("J2275 repair checkpoint: cross-channel writer adoption, ai_spend receipts, live UI validation and parent inventory still pending; no generation")
+    refuse_duplicate(pid_path, done_path)
+    with WriterLock(lock_path):
+        claim_pid(pid_path)
+        rows = load_scope(repo)
+        entries = read_ledger(ledger_path)
+        batch = next_batch(rows, entries)
+        if not batch:
+            return []
+        return execute_shared_batch(
+            batch,
+            media=media,
+            ledger_path=ledger_path,
+            archive_dir=archive_dir,
+            accounting_state=accounting_state,
+            spend_ledger=spend_ledger,
+            recorder=recorder,
+            reservation="J2033",
+            other=other,
+            submitter=submitter,
+            still_maker=still_maker or live_still_maker,
+            in_scope_keys={r.key for r in rows},
+            test_archive=test_archive,
+            inventory_rows=rows,
+        )
 
 
 # One synchronous DOM turn rechecks the evidence and clicks the same unique
@@ -1462,12 +1513,132 @@ def _load_mint006(repo: Path):
     return mod
 
 
-def live_still_maker(row: Row, dest: Path) -> Path:
-    """Zero-credit stills only. This build does not call it unless a verified 0 is on screen."""
-    raise GuardError(
-        f"no start still for {row.plate_id}. A Nano Banana still needs a verified on-screen price of 0 "
-        "and a separate still call; stopping rather than guessing."
+STILL_EVIDENCE_JS = r"""(expected) => {
+  const visible = e => { const r = e.getBoundingClientRect();
+    const s = getComputedStyle(e);
+    return r.width > 0 && r.height > 0 && s.visibility !== 'hidden' && s.display !== 'none'; };
+  const text = e => (e.innerText || e.getAttribute('aria-label') || '').trim().replace(/\s+/g, ' ');
+  const unique = a => [...new Set(a)];
+  const selected = [...document.querySelectorAll(
+    '[aria-selected="true"],[aria-checked="true"],[aria-pressed="true"],select option:checked')]
+    .filter(visible).map(text);
+  const body = document.body.innerText;
+  const accounts = unique([...document.querySelectorAll('[aria-label]')].filter(visible)
+    .map(e => e.getAttribute('aria-label')).filter(t => /Google Account|Account details/i.test(t))
+    .flatMap(t => t.match(/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/ig) || [])
+    .map(t => t.toLowerCase()));
+  const prices = unique(body.split('\n').map(t => t.trim())
+    .filter(t => /^Generating will use \d+ credits$/.test(t)));
+  const balances = unique([...body.matchAll(/(?:^|\n)\s*([\d,]+)\s+AI credits\s*(?=\n|$)/g)]
+    .map(m => Number(m[1].replace(/,/g, ''))));
+  const buttons = [...document.querySelectorAll('button')].filter(visible).filter(e => {
+    const t = text(e); return (t === 'Create' || t === 'Start generation' || t === 'arrow_forward') &&
+      !e.disabled && e.getAttribute('aria-disabled') !== 'true'; });
+  const evidence = {
+    host: location.hostname,
+    models: unique(selected.filter(t => /Nano Banana/i.test(t))),
+    outputs: unique(selected.filter(t => /^x[124]$/.test(t))),
+    aspects: unique(selected.filter(t => t === '16:9' || t === '9:16')),
+    accounts, prices, balances,
+    ultra: body.split('\n').some(t => t.trim() === 'ULTRA'),
+    create_count: buttons.length
+  };
+  if (expected === null) return evidence;
+  if (JSON.stringify(evidence) !== JSON.stringify(expected))
+    return {clicked: false, reason: 'live UI changed', evidence};
+  if (buttons.length !== 1) return {clicked: false, reason: 'Create not unique', evidence};
+  buttons[0].click();
+  return {clicked: true, evidence};
+}"""
+
+
+def read_live_still_evidence(page) -> dict:
+    """Strict selected-state DOM evidence for 0-credit Nano Banana 2 16:9 start stills."""
+    evidence = page.evaluate(STILL_EVIDENCE_JS, None)
+    required = dict(host=FLOW_HOST, models=[REQUIRED_STILL_MODEL], outputs=[REQUIRED_OUTPUTS],
+                    aspects=['16:9'], accounts=[REQUIRED_ACCOUNT],
+                    prices=['Generating will use 0 credits'],
+                    ultra=True, create_count=1)
+    if not isinstance(evidence, dict) or any(evidence.get(k) != v for k, v in required.items()):
+        raise GuardError('live Flow still selected controls/account/entitlement/zero-price are missing or changed')
+    balances = evidence.get('balances')
+    if not isinstance(balances, list) or len(balances) != 1 or type(balances[0]) is not int or balances[0] < 0:
+        raise GuardError('live Flow balance is missing or ambiguous')
+    if set(evidence) != set(required) | {'balances'}:
+        raise GuardError('unknown live Flow still evidence schema')
+    return evidence
+
+
+def guarded_still_create(page, accounting: SharedFlowAccounting, *, reservation: str,
+                         plate_id: str, evidence_path: Path, floor: int = HEADROOM_FLOOR) -> dict:
+    """Zero-price Nano Banana 2 still adapter; caller owns shared writer lock."""
+    accounting._assert_held()
+    state = accounting.snapshot()
+    evidence = read_live_still_evidence(page)
+    if state['pending'] or evidence['balances'][0] - state['liability'] < floor:
+        raise GuardError('pending charge or insufficient shared Flow headroom for still')
+    record = dict(read_at=now_iso(), ui=evidence, plate_id=plate_id, reservation=reservation, credits=0)
+    immutable_bytes(evidence_path, (json.dumps(record, sort_keys=True) + '\n').encode())
+    outcome = page.evaluate(STILL_EVIDENCE_JS, evidence)
+    if not isinstance(outcome, dict) or type(outcome.get('clicked')) is not bool:
+        raise GuardError('ambiguous still Create outcome; stopping before video generation')
+    if not outcome['clicked']:
+        raise GuardError('live UI drift before still Create; no submission')
+    return record
+
+
+def live_still_maker(row: Row, dest: Path, *, accounting: SharedFlowAccounting | None = None,
+                     reservation: str = "J2033", evidence_path: Path | None = None,
+                     other: int = 0) -> Path:
+    """Zero-credit stills only, guarded under SharedFlowAccounting with verified 0 on screen."""
+    if os.environ.get(SUBMIT_ENV) != "1":
+        raise GuardError(
+            f"no start still for {row.plate_id}. A Nano Banana still needs a verified on-screen price of 0 "
+            "and a separate still call; stopping rather than guessing."
+        )
+    if type(other) is not int or other < 0:
+        raise GuardError("invalid other reservations")
+    if accounting is None or evidence_path is None:
+        raise GuardError(
+            f"no start still for {row.plate_id}. A Nano Banana still needs shared Flow accounting, "
+            "a verified on-screen price of 0 and an evidence path; stopping rather than guessing."
+        )
+    accounting._assert_held()
+    repo = repo_root_from()
+    sys.path.insert(0, str(repo / "04_Audio/tools"))
+    sys.path.insert(0, str(repo / "02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project"))
+    import orbit_flow_veo_ui as flow
+    import _flow_still_v01 as still_tool
+    from playwright.sync_api import sync_playwright
+
+    cdp = os.environ.get("ORBIT_FLOW_CDP", "http://127.0.0.1:9222")
+    floor = HEADROOM_FLOOR + other
+    prompt = still_tool.still_prompt(
+        "History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm cinematic period light.",
+        " ".join(row.prompt.split()) + " Opening frame only. No readable words, numbers, letters or text anywhere.",
     )
+    with sync_playwright() as playwright:
+        browser = playwright.chromium.connect_over_cdp(cdp)
+        page = open_flow_page(
+            browser,
+            flow.FLOW_HOME,
+            lambda current, url: current.goto(url, wait_until="domcontentloaded", timeout=120_000),
+        )
+        evidence = {}
+        def create_guard(configured_page):
+            ui = read_live_still_evidence(configured_page)
+            accounting.reserve(reservation, "HOS:009", MAX_TOTAL_CREDITS, live=ui["balances"][0], floor=floor)
+            evidence.update(guarded_still_create(
+                configured_page, accounting, reservation=reservation,
+                plate_id=row.plate_id, evidence_path=evidence_path, floor=floor))
+        still_tool.make_still(page, prompt, dest, timeout_s=300, create_guard=create_guard)
+        after_ui = read_live_still_evidence(page)
+        if after_ui["balances"][0] < evidence["ui"]["balances"][0]:
+            raise GuardError("zero-price still reduced Flow balance")
+    if not dest.is_file():
+        raise GuardError(f"zero-price still for {row.plate_id} was not written")
+    immutable_bytes(dest.with_suffix(".sha256"), (sha256_file(dest) + "\n").encode())
+    return dest
 
 
 def main(argv: list[str] | None = None) -> int:

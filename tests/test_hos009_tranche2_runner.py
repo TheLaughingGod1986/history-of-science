@@ -475,13 +475,62 @@ class SafetyRegressionTests(unittest.TestCase):
                 sleeper.kill()
                 sleeper.wait()
 
-    def test_checkpoint_blocks_even_armed_production(self):
+    def test_cmd_submit_requires_archive_and_executes_guarded_first_batch(self):
         from unittest.mock import patch
-        with patch.dict(os.environ, {RUNNER.SUBMIT_ENV: "1"}):
-            with self.assertRaisesRegex(RUNNER.GuardError, "repair checkpoint"):
-                RUNNER.cmd_submit(ROOT, other=0, media=Path("/absent"),
-                                  ledger_path=Path("/absent"), lock_path=Path("/absent"),
-                                  pid_path=Path("/absent"), done_path=Path("/absent"), archive_dir=None)
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            with patch.dict(os.environ, {RUNNER.SUBMIT_ENV: "1"}):
+                with self.assertRaisesRegex(RUNNER.GuardError, "verified archive is mandatory"):
+                    RUNNER.cmd_submit(
+                        ROOT, other=0, media=root / "media",
+                        ledger_path=root / "ledger.jsonl", lock_path=root / "writer.lock",
+                        pid_path=root / "runner.pid", done_path=root / "runner.done",
+                        archive_dir=None,
+                    )
+                archive = root / "archive"
+                archive.mkdir()
+                stills_made = []
+                def fake_still_maker(row, dest, *, accounting, reservation, evidence_path, other=0):
+                    accounting._assert_held()
+                    stills_made.append(row.plate_id)
+                    dest.parent.mkdir(parents=True, exist_ok=True)
+                    subprocess.run(
+                        ["ffmpeg", "-v", "error", "-y", "-f", "lavfi", "-i",
+                         "color=s=1280x720", "-frames:v", "1", str(dest)],
+                        check=True,
+                    )
+                    RUNNER.immutable_bytes(
+                        evidence_path,
+                        b'{"credits":0,"ui":{"balances":[10000]}}\n',
+                    )
+                    return dest
+                def fake_submitter(row, dest, frame, *, accounting, reservation, charge, evidence_path, other=0):
+                    page = LiveCreateAdapterTests.Page(LiveCreateAdapterTests().evidence())
+                    accounting.reserve(reservation, "HOS:009", RUNNER.MAX_TOTAL_CREDITS,
+                                       live=10000, floor=RUNNER.HEADROOM_FLOOR + other)
+                    ev = RUNNER.guarded_create(
+                        page, accounting, reservation=reservation,
+                        charge=charge, evidence_path=evidence_path,
+                        floor=RUNNER.HEADROOM_FLOOR + other,
+                    )
+                    dest.write_bytes(b"fake video fixture")
+                    return ev
+                with patch.object(RUNNER, "strip_audio"), \
+                     patch.object(RUNNER, "technical_report",
+                                  side_effect=lambda p, **kw: {"ok": True, "sha256": RUNNER.sha256_file(p)}):
+                    written = RUNNER.cmd_submit(
+                        ROOT, other=500, media=root / "media",
+                        ledger_path=root / "ledger.jsonl", lock_path=root / "writer.lock",
+                        pid_path=root / "runner.pid", done_path=root / "runner.done",
+                        archive_dir=archive, accounting_state=root / "shared",
+                        spend_ledger=root / "spend.jsonl", submitter=fake_submitter,
+                        still_maker=fake_still_maker, test_archive=True,
+                    )
+                self.assertEqual([e["plate_id"] for e in written], ["10_how_high", "07_ball_to_moon"])
+                self.assertEqual(stills_made, ["10_how_high", "07_ball_to_moon"])
+                self.assertTrue((archive / "10_how_high_t1.png").is_file())
+                self.assertTrue((archive / "07_ball_to_moon_t1.png").is_file())
+                self.assertEqual((root / "runner.pid").read_text().strip(), str(os.getpid()))
 
 
 class DetachedSafetyTests(unittest.TestCase):
@@ -985,6 +1034,60 @@ process.stdout.write(JSON.stringify({evidence,outcome,clicks}));
             self.assertEqual(data['clicks'], 0 if drift or menu else 1)
             if menu:
                 self.assertEqual(data['outcome']['outputs'], [])
+
+    def still_evidence(self):
+        return dict(host=RUNNER.FLOW_HOST, models=[RUNNER.REQUIRED_STILL_MODEL], outputs=['x1'],
+                    aspects=['16:9'], accounts=[RUNNER.REQUIRED_ACCOUNT],
+                    prices=['Generating will use 0 credits'], balances=[10000],
+                    ultra=True, create_count=1)
+
+    def test_still_guard_rejects_nonzero_price_drift_and_low_headroom(self):
+        for field, value in dict(host='example.com', models=['Veo 3.1 - Fast'], outputs=['x2'],
+                                 aspects=['9:16'], accounts=[RUNNER.FORBIDDEN_ACCOUNT],
+                                 prices=['Generating will use 10 credits'], balances=[8900],
+                                 ultra=False, create_count=2).items():
+            with self.subTest(field=field), tempfile.TemporaryDirectory() as tmp:
+                state = Path(tmp)
+                with RUNNER.SharedFlowAccounting(state) as account:
+                    account.reserve('job', 'HOS:009', 6000, live=10000)
+                    evidence = self.still_evidence()
+                    evidence[field] = value
+                    page = self.Page(evidence)
+                    with self.assertRaises(RUNNER.GuardError):
+                        RUNNER.guarded_still_create(
+                            page, account, reservation='job', plate_id='10_how_high',
+                            evidence_path=state / 'still.json')
+                    self.assertEqual(page.clicks, 0)
+
+    def test_still_dom_script_verifies_zero_price_and_clicks_once(self):
+        harness = r"""
+const fs = require('fs'); const input = JSON.parse(fs.readFileSync(0,'utf8'));
+let clicks=0;
+const node = (t, attrs={}) => ({innerText:t, disabled:false,
+ getAttribute:k=>attrs[k] || null,
+ getBoundingClientRect:()=>({width:100,height:20}), click:()=>{clicks++;}});
+let selected = [node('Nano Banana 2'),node('x1'),node('16:9')];
+const account = node('', {'aria-label':'Google Account: '+input.account});
+const create = node('Start generation');
+global.location={hostname:'flow.google.com'};
+global.getComputedStyle=()=>({visibility:'visible',display:'block'});
+global.document={body:{innerText:'ULTRA\n10,000 AI credits\nGenerating will use 0 credits'},
+ querySelectorAll:q=>q==='button' ? [create] : q==='[aria-label]' ? [account] : selected};
+const fn = eval('('+input.js+')'); const evidence=fn(null);
+if (input.drift) selected[2]=node('9:16');
+const outcome=fn(evidence);
+process.stdout.write(JSON.stringify({evidence,outcome,clicks}));
+"""
+        for drift in (False, True):
+            result = subprocess.run(
+                ['node', '-e', harness],
+                input=json.dumps(dict(js=RUNNER.STILL_EVIDENCE_JS,
+                                      account=RUNNER.REQUIRED_ACCOUNT, drift=drift)),
+                text=True, capture_output=True, check=True,
+            )
+            data = json.loads(result.stdout)
+            self.assertEqual(data['evidence'], self.still_evidence())
+            self.assertEqual(data['clicks'], 0 if drift else 1)
 
 
 if __name__ == "__main__":
