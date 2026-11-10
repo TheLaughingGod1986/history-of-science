@@ -1,0 +1,31 @@
+{
+  "checker_sha256": "11d24621021a403902985d606e1747ecf977dcc370d4bead364c697ad02ca220",
+  "source_commit": "e3410b07437d067afd0c7b9f65ab2b2506193e9e",
+  "results": {
+    "B": {
+      "cuts_sha256": "fb363d6e5c7fafa1187f63593a485836a6aea7501b2ba1c1356175b6a2423632",
+      "failures": {
+        "S04": [
+          "reuse: same stretch as 0:01 (give it a new stretch, or a new render)"
+        ],
+        "S05": [
+          "reuse: same stretch as 0:04 (give it a new stretch, or a new render)"
+        ],
+        "loop_tail": [
+          "reuse: same stretch as 0:01 (give it a new stretch, or a new render)"
+        ]
+      }
+    },
+    "C": {
+      "cuts_sha256": "71fbf7183c823b0e9bfd0e48e3337bec64459bc699b66bb1f5c095dc9311d598",
+      "failures": {
+        "S05": [
+          "reuse: same stretch as 0:01 (give it a new stretch, or a new render)"
+        ],
+        "loop_tail": [
+          "reuse: same stretch as 0:01 (give it a new stretch, or a new render)"
+        ]
+      }
+    }
+  }
+}

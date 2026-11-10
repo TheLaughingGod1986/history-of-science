@@ -819,44 +819,14 @@ def normalize_to_png(src: Path, dest: Path) -> Path:
     return dest
 
 
-def submit_create(page) -> None:
+def submit_create(page, *, create_guard=None) -> None:
     """Click Image-mode Start generation (arrow_forward) — never fall into Veo submit."""
-    # Prefer accessible name used by Image mode
-    for pattern in (
-        r"Start generation",
-        r"arrow_forward",
-    ):
-        loc = page.get_by_role("button", name=re.compile(pattern, re.I))
-        if loc.count():
-            try:
-                loc.last.click(force=True, timeout=4000)
-                print(f"  clicked send role={pattern!r}", flush=True)
-                return
-            except Exception as e:
-                print(f"  send role {pattern!r} warn: {e}", flush=True)
-    box = page.evaluate(
-        """() => {
-          const ranked = [];
-          for (const b of document.querySelectorAll('button')) {
-            const t = ((b.innerText || '') + ' ' + (b.getAttribute('aria-label') || ''))
-              .trim().replace(/\\n/g, ' ');
-            if (!/arrow_forward|Start generation/i.test(t)) continue;
-            const dis = b.disabled || b.getAttribute('aria-disabled') === 'true';
-            const r = b.getBoundingClientRect();
-            if (r.width < 8 || r.height < 8) continue;
-            ranked.push({x:r.x+r.width/2, y:r.y+r.height/2, t:t.slice(0,60), dis});
-          }
-          if (!ranked.length) return null;
-          ranked.sort((a, c) => c.y - a.y);
-          // Prefer enabled; else try the disabled one anyway (sometimes stale aria)
-          ranked.sort((a, c) => Number(a.dis) - Number(c.dis) || c.y - a.y);
-          return ranked[0];
-        }"""
-    )
-    if not box:
-        raise RuntimeError("Image Start generation / arrow_forward not found")
-    page.mouse.click(box["x"], box["y"])
-    print(f"  mouse-clicked send ({box.get('t')!r} dis={box.get('dis')})", flush=True)
+    if create_guard is None:
+        raise RuntimeError(
+            "Flow still Create requires an explicit create_guard owning the shared Flow accounting lock (~/_desk/state/flow/shared)"
+        )
+    create_guard(page)
+    return
 
 
 def mint_one(page, key: str, try_n: int, credits_session_start: int | None) -> dict:

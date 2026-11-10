@@ -266,8 +266,12 @@ def attach_completed_style_ref(page, ref: Path, timeout_s: float = 120) -> bool:
     return False
 
 
-def make_still(page, prompt: str, dest: Path, timeout_s: float = 300) -> Path:
+def make_still(page, prompt: str, dest: Path, timeout_s: float = 300, *, create_guard=None) -> Path:
     """Arm Flow Image 16:9 with the style refs and prompt, Create once, save the new still."""
+    if create_guard is None:
+        raise RuntimeError(
+            "Flow still generation requires an explicit create_guard owning the shared Flow accounting lock (~/_desk/state/flow/shared)"
+        )
     import orbit_flow_veo_ui as flow
 
     if "/project/" not in (page.url or ""):
@@ -299,9 +303,7 @@ def make_still(page, prompt: str, dest: Path, timeout_s: float = 300) -> Path:
     before = all_img_srcs(page)
     dest.parent.mkdir(parents=True, exist_ok=True)
     page.screenshot(path=str(dest.with_suffix(".armed.png")))
-    v02.submit_create(page)
-    page.wait_for_timeout(900)
-    flow.confirm_generation_spend(page, timeout_s=12.0)
+    v02.submit_create(page, create_guard=create_guard)
     t0 = time.time()
     while time.time() - t0 < timeout_s:
         page.wait_for_timeout(4000)

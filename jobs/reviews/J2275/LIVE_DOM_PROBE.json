@@ -1,0 +1,18 @@
+{
+  "mode": "read-only existing tab; no navigation or clicks",
+  "flow_tabs": 1,
+  "selected": {
+    "host": "flow.google.com",
+    "models": [],
+    "outputs": [],
+    "aspects": [],
+    "durations": [],
+    "prices": [],
+    "ultra": true,
+    "create_count": 0
+  },
+  "account_matches_required": true,
+  "balance_count": 0,
+  "result": "FAIL CLOSED",
+  "reason": "live Flow selected controls/account/entitlement/price are missing or changed"
+}

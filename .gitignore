@@ -125,3 +125,10 @@ node_modules/
 
 # HOS 009 J1192 / J1237 tranche 1 motion review strips, contact sheets & frame-diff plots
 !02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/review_J1192_motion/*.png
+
+# Login tokens and cookies never belong in a public repo (security pass, 9 Nov 2026)
+.elevenlabs_bearer
+*.bearer
+*_bearer
+*.cookies.json
+storage_state*.json

@@ -1,0 +1,18 @@
+{
+  "file": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/10_Shorts/vo_v02/hos_010_short_C_v02.mp3",
+  "part": null,
+  "fails": [],
+  "warns": [],
+  "duration_s": 22.56,
+  "duration": "0:22.56",
+  "mean_db": -23.6,
+  "peak_db": -4.6,
+  "pauses_over_1s": [],
+  "asr": "faster-whisper small.en",
+  "script_words": 56,
+  "heard_words": 56,
+  "wpm": 154,
+  "word_diffs": [],
+  "first_minute": {},
+  "verdict": "PASS"
+}

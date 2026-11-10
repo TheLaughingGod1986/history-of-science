@@ -55,16 +55,16 @@ The Moon is falling towards the Earth right now. Every second, it moves sideways
 
 | s | Picture | Spoken |
 |---|---|---|
-| 0–2 | split screen | In one minute, the Moon falls about as far as an apple falls in one second. |
+| 0–2 | split screen | In one minute, the Moon falls five metres. An apple falls that far in one second. |
 | 2–5 | Newton at his desk with the sum | Isaac Newton worked out why. |
 | 5–11 | sixty Earths in a line to the Moon | The Moon is sixty times further from the Earth's centre than we are, |
 | 9–14 | **title on screen:** *Why Doesn't the Moon Fall to Earth?* |  |
 | 11–18 | 60 × 60 dot square shrinks the pull arrow | so the pull on it is sixty times sixty weaker. Three thousand six hundred times. |
 | 18–24 | back to the split screen (loop) | And the numbers matched. One pull, for apples and Moons. |
 
-**Script (59 words):**
+**Script (59 words; J2195 approved v04 opening pickup; mechanical timing verified):**
 
-In one minute, the Moon falls about as far as an apple falls in one second. Isaac Newton worked out why. The Moon is sixty times further from the Earth's centre than we are, so the pull on it is sixty times sixty weaker. Three thousand six hundred times. And the numbers matched. One pull, for apples and Moons.
+In one minute, the Moon falls five metres. An apple falls that far in one second. Isaac Newton worked out why. The Moon is sixty times further from the Earth's centre than we are, so the pull on it is sixty times sixty weaker. Three thousand six hundred times. And the numbers matched. One pull, for apples and Moons.
 
 *Fact check:* *Principia* III Prop. IV (15 1/12 Paris feet in one minute vs one second); Add. MS 3968 ("answer pretty nearly"). The long's FACT_NOTES rows.
 

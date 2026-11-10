@@ -80,3 +80,28 @@ PASS  02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/11_Upload-Package/PACKAG
    warn  [title.length] T&C title: "How a 1-Centimetre Line of Clay Solved What Killed the Dinosaurs" is 64 chars (aim ≤ 60)
    warn  [captions] no captionsFile (captions from the script)
 ```
+
+
+# J0862 single-take result — 5 Nov 2026
+
+Worker: codex. No final approval. J1894 scope executed once; three accepted v02 takes remain unchanged.
+
+009 B v03: exact review text is 316 characters, 57 whitespace words (review claimed 311). House client, Ben Orbit Narrator, eleven_v3, unchanged settings. Live balance 97,352 / 121,114 before and after (counter lag); 316 submitted characters conservatively logged. No further take authorized or made.
+
+vo_check_py312.sh: PASS, 23.68 s, mean -24.2 dB, peak -4.3 dB, 147 wpm; homophone warning an apple's / and apples requires Ben's final listen. No audio perception claimed.
+
+Hook FAIL: Scribe ends fall at 3.680 s. The scoped 0.150 s trim plus maximum 1.06 speed yields 3.330 s, over 2.850 s. Total with 1 s tail would be 24.680 s. J1894's predicted token timings are not measurements of this new take. No larger gap surgery, second take, script rewrite or timing waiver performed. Chief must scope the next repair.
+
+Media preserved in the HOS checkout, 009/10_Shorts/vo_v02/hos_009_short_B_v03.{mp3,wav}; TAKE and VO_CHECK records accompany this report. All old v02 files preserved. 010 A retains J1004 Option A1. Downstream J2171 remains blocked on this hook; no film stage approved. Nothing uploaded or published.
+
+
+## J0862 v04 & J2279 audio-capable splice repair — 6 November 2026
+
+Codex covering (`cb18632d` pickup) + Gemini covering (`J2279` direct `audio_input` audition and zero-spend splice/tail-fade repair). `J2195` scoped one opening-only pickup for `009 Short B`; recorded once with Ben Orbit Narrator, `eleven_v3`, `speed=1.04` (`81` actual chars logged; `93,478 / 121,114` ElevenLabs credits remaining; `0` additional chars generated in `J2279`).
+
+Three retained takes are untouched and PASS `vo_check_py312.sh`: `009 A v02`, `010 A v02` (`J1004` Option A1 retained: `hook_end_s = 2.849 s <= 2.850 s`, `23.289 s` total), and `010 C v02` (`hook_end_s = 1.780 s <= 2.850 s`, `23.560 s` total).
+
+In `J2279`, `gemini` (`audio_input` verified) directly auditioned `009 Short B v04` (`hos_009_short_B_v04.{wav,mp3}`), confirmed zero spoken repeat at `19.74 s` or `24.14 s` (Whisper `Seg 8 [24.14->24.32]` was a `no_speech_prob=0.986/0.988` post-word breath hallucination shifted to `0:19.74` by 9 dropped cardinal numbers in `norm()`), and repaired the `cb18632d` splice (`open_v04[0.100:0.900]+[0.960:6.640]` `6.480 s` + `v03[5.680:23.680]` `18.000 s` with `afade=t=out:st=23.480:d=0.060`), restoring the full `5.940–6.020 s` `"Isaac"` onset while keeping identical `+0.800 s` word offsets, `hook_end_s = 2.820 s`, `24.480 s` VO (`25.480 s` with `1.000 s` loop tail), and 8 cuts. Both `hos_009_short_B_v04.mp3` (`0c9c4c6ffdb1337dc11acaf57af909f8d8be91d77210bca2e13af80715b87498`) and `hos_009_short_B_v04.wav` (`a6666fd27c9a90e781369ea07e4888d87a2d5edb1624a0090ae98fa39504686b`) now PASS unmodified `vo_check_py312.sh` with `0` fails and `0` warnings.
+
+`check_all.sh 009`: ALL CHECKS PASS. `check_all.sh 010`: ALL CHECKS PASS.
+- **Elected Chief PASS (`J2281` / `J0862`, `gemini`, 7 Nov 2026):** Condition for `J0862` verified satisfied (`J2279` complete at `fc1a23f3`; direct `audio_input` audition and `vo_check_py312.sh` PASS verified across all four `009` + `010` Shorts VO takes; Option A1 retained for `010 Short A` `hos_010_short_A_v02.mp3` `68d88b5b5883f2376bcec29c26d77efea7634d5c7705693f41202ca587b927fb` and `010 Short C` `hos_010_short_C_v02.mp3` `20432ecd645b28e9fdc051578a284cb2845bd09f3040170b192089b256055b87`). `009` and `010` `shorts_vo` marked `done` in `PIPELINE.json`; HOS PR #423 approved and merged; `J0862` and `J2281` closed `done` (`J2172` remains gated on `J2271` 12-plate production/review chain).

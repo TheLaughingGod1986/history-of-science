@@ -1,0 +1,229 @@
+{
+  "verdict": "PASS",
+  "terminal_loop": null,
+  "video": "",
+  "rules": {
+    "kind_fail": "computer[- ]?(reconstruction|model|generated|simulation|graphic)|\\bsimulation\\b|\\bdiagram|\\bchart\\b|\\bgraph\\b|\\bschematic|\\bannotated\\b|\\blabell?ed\\b|\\bscreen ?shot|\\bwireframe|\\bcad\\b|\\binfographic",
+    "kind_warn": "\\bartist|\\billustration|\\bconcept\\b|\\brender|\\banimation\\b|\\bmap\\b|\\bmosaic\\b|\\bcomposite\\b",
+    "upscale_fail": 2.35,
+    "upscale_warn": 2.0,
+    "max_reuse": 2,
+    "max_stretches": 5,
+    "same_stretch": 10.0,
+    "pixels": "not run (no video)"
+  },
+  "failed": [],
+  "warn": [
+    {
+      "cut": 0,
+      "row": "S01",
+      "source": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/19_skyline_strike_t1.mp4",
+      "title": "Flow plate 19_skyline_strike_t1.mp4 (colonial tower struck on rooftop lightning rod at night)",
+      "t": 1.23,
+      "at": "0:01",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.31x, may look soft"
+      ],
+      "offset": 1.0
+    },
+    {
+      "cut": 1,
+      "row": "S02",
+      "source": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/01_house_rod_t1.mp4",
+      "title": "Flow plate 01_house_rod_t1.mp4 (Franklin brick house with pointed iron lightning rod)",
+      "t": 3.89,
+      "at": "0:04",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.31x, may look soft"
+      ],
+      "offset": 0.8
+    },
+    {
+      "cut": 2,
+      "row": "S03",
+      "source": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/07_giant_spark_t1.mp4",
+      "title": "Flow plate 07_giant_spark_t1.mp4 (branching lightning bolts over colonial town)",
+      "t": 6.79,
+      "at": "0:07",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.31x, may look soft"
+      ],
+      "offset": 0.6
+    },
+    {
+      "cut": 3,
+      "row": "S04",
+      "source": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part01/raw/v01/12_steeple_fire_t1.mp4",
+      "title": "Flow plate 12_steeple_fire_t1.mp4 (wooden church steeple burning in storm)",
+      "t": 9.7,
+      "at": "0:10",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.31x, may look soft"
+      ],
+      "offset": 0.8
+    },
+    {
+      "cut": 4,
+      "row": "S05",
+      "source": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/18_rod_closeup_t1.mp4",
+      "title": "Flow plate 18_rod_closeup_t1.mp4 (pointed iron lightning rod closeup 0.0-2.8s)",
+      "t": 12.55,
+      "at": "0:13",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.31x, may look soft"
+      ],
+      "offset": 0.0
+    },
+    {
+      "cut": 5,
+      "row": "S06",
+      "source": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/06_rod_fitting_t1.mp4",
+      "title": "Flow plate 06_rod_fitting_t1.mp4 (workman fastening conductor down brick wall 1.5-4.3s)",
+      "t": 15.35,
+      "at": "0:15",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.31x, may look soft"
+      ],
+      "offset": 1.5
+    },
+    {
+      "cut": 6,
+      "row": "S07",
+      "source": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/06_rod_fitting_c1_t1.mp4",
+      "title": "Flow plate 06_rod_fitting_c1_t1.mp4 (workman driving grounding rod into damp earth 1.5-4.2s)",
+      "t": 18.1,
+      "at": "0:18",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.31x, may look soft"
+      ],
+      "offset": 1.5
+    },
+    {
+      "cut": 7,
+      "row": "S08",
+      "source": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/14_safe_towers_t1.mp4",
+      "title": "Flow plate 14_safe_towers_t1.mp4 (church steeple and town towers safe under storm clouds 4.2-6.1s)",
+      "t": 20.4,
+      "at": "0:20",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.31x, may look soft"
+      ],
+      "offset": 4.2
+    }
+  ],
+  "rows": [
+    {
+      "cut": 0,
+      "row": "S01",
+      "source": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/19_skyline_strike_t1.mp4",
+      "title": "Flow plate 19_skyline_strike_t1.mp4 (colonial tower struck on rooftop lightning rod at night)",
+      "t": 1.23,
+      "at": "0:01",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.31x, may look soft"
+      ],
+      "offset": 1.0
+    },
+    {
+      "cut": 1,
+      "row": "S02",
+      "source": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/01_house_rod_t1.mp4",
+      "title": "Flow plate 01_house_rod_t1.mp4 (Franklin brick house with pointed iron lightning rod)",
+      "t": 3.89,
+      "at": "0:04",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.31x, may look soft"
+      ],
+      "offset": 0.8
+    },
+    {
+      "cut": 2,
+      "row": "S03",
+      "source": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/07_giant_spark_t1.mp4",
+      "title": "Flow plate 07_giant_spark_t1.mp4 (branching lightning bolts over colonial town)",
+      "t": 6.79,
+      "at": "0:07",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.31x, may look soft"
+      ],
+      "offset": 0.6
+    },
+    {
+      "cut": 3,
+      "row": "S04",
+      "source": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part01/raw/v01/12_steeple_fire_t1.mp4",
+      "title": "Flow plate 12_steeple_fire_t1.mp4 (wooden church steeple burning in storm)",
+      "t": 9.7,
+      "at": "0:10",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.31x, may look soft"
+      ],
+      "offset": 0.8
+    },
+    {
+      "cut": 4,
+      "row": "S05",
+      "source": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/18_rod_closeup_t1.mp4",
+      "title": "Flow plate 18_rod_closeup_t1.mp4 (pointed iron lightning rod closeup 0.0-2.8s)",
+      "t": 12.55,
+      "at": "0:13",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.31x, may look soft"
+      ],
+      "offset": 0.0
+    },
+    {
+      "cut": 5,
+      "row": "S06",
+      "source": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/06_rod_fitting_t1.mp4",
+      "title": "Flow plate 06_rod_fitting_t1.mp4 (workman fastening conductor down brick wall 1.5-4.3s)",
+      "t": 15.35,
+      "at": "0:15",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.31x, may look soft"
+      ],
+      "offset": 1.5
+    },
+    {
+      "cut": 6,
+      "row": "S07",
+      "source": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/06_rod_fitting_c1_t1.mp4",
+      "title": "Flow plate 06_rod_fitting_c1_t1.mp4 (workman driving grounding rod into damp earth 1.5-4.2s)",
+      "t": 18.1,
+      "at": "0:18",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.31x, may look soft"
+      ],
+      "offset": 1.5
+    },
+    {
+      "cut": 7,
+      "row": "S08",
+      "source": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/14_safe_towers_t1.mp4",
+      "title": "Flow plate 14_safe_towers_t1.mp4 (church steeple and town towers safe under storm clouds 4.2-6.1s)",
+      "t": 20.4,
+      "at": "0:20",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.31x, may look soft"
+      ],
+      "offset": 4.2
+    }
+  ],
+  "polish": null
+}
