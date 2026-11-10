@@ -1,0 +1,166 @@
+{
+  "rule": {
+    "low_detail": "FAIL: luma std < 13.44 and edge density < 0.0259 (absolute floor); WARN: luma std < 18.0 or edge density < film p5",
+    "split_panel": "full-height/width seam or gutter",
+    "split_panel_gutter": "gutter counts only with edge density >= 0.01 in the 10% band on both sides",
+    "near_black": "mean < 28.0 or p95 < 50.0",
+    "noise": "grain std > 6 over structure std < 12, and the 8x-downscaled frame under the low-detail floor (std < 13.44 and edge density < 0.0259)",
+    "jitter": "centre-patch phase correlation: reversal against trend or > 0.35 px off trend"
+  },
+  "low_detail_floor": {
+    "std": 13.44,
+    "edge": 0.0259,
+    "calibration": {
+      "video": "025_MarsRobot_full_rough_v02d.mp4",
+      "factor": 1.2,
+      "frames": [
+        {
+          "source": "PIA22223.jpg",
+          "t": 201.0,
+          "std": 12.1,
+          "edge": 0.0223
+        },
+        {
+          "source": "PIA22223.jpg",
+          "t": 216.3,
+          "std": 11.2,
+          "edge": 0.0216
+        },
+        {
+          "source": "PIA22929.jpg",
+          "t": 297.4,
+          "std": 26.54,
+          "edge": 0.5735
+        }
+      ]
+    }
+  },
+  "video": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s06_blood_pressure_cuff_v02.mp4",
+  "edge_floor": 0.0209,
+  "verdict": "PASS",
+  "failed": [],
+  "warn": [
+    {
+      "row": "s06_loop",
+      "cut": 5,
+      "t": 21.59,
+      "source": "loop_end_14_cuff_release_t2.mp4",
+      "why": [
+        "low detail: edge density 0.0155 < film p5 0.0209"
+      ]
+    }
+  ],
+  "reviewed_ok": [],
+  "rows": [
+    {
+      "cut": 0,
+      "row": "s01_0",
+      "source": "14_cuff_release_t2.mp4",
+      "t": 1.32,
+      "std": 40.14,
+      "mean": 136.49,
+      "p95": 210.0,
+      "edge": 0.0406,
+      "hf": 11.12,
+      "lf": 34.86,
+      "std8": 36.36,
+      "edge8": 0.1437,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 1,
+      "row": "s02_It",
+      "source": "02_linen_tie_t2.mp4",
+      "t": 4.37,
+      "std": 56.15,
+      "mean": 80.01,
+      "p95": 177.0,
+      "edge": 0.0369,
+      "hf": 7.65,
+      "lf": 52.42,
+      "std8": 54.39,
+      "edge8": 0.2373,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 2,
+      "row": "s03_lets",
+      "source": "08_knots_valve_t1.mp4",
+      "t": 8.31,
+      "std": 77.13,
+      "mean": 110.07,
+      "p95": 239.0,
+      "edge": 0.0517,
+      "hf": 7.86,
+      "lf": 74.57,
+      "std8": 75.78,
+      "edge8": 0.2462,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 3,
+      "row": "s04_A",
+      "source": "08_your_blood_t2.mp4",
+      "t": 12.56,
+      "std": 51.92,
+      "mean": 109.6,
+      "p95": 214.0,
+      "edge": 0.1188,
+      "hf": 15.66,
+      "lf": 44.44,
+      "std8": 46.58,
+      "edge8": 0.3704,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 4,
+      "row": "s05_Harvey",
+      "source": "14_steering_home_t1.mp4",
+      "t": 17.35,
+      "std": 60.37,
+      "mean": 136.84,
+      "p95": 203.0,
+      "edge": 0.071,
+      "hf": 12.68,
+      "lf": 55.71,
+      "std8": 57.15,
+      "edge8": 0.2727,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 5,
+      "row": "s06_loop",
+      "source": "loop_end_14_cuff_release_t2.mp4",
+      "t": 21.59,
+      "std": 35.76,
+      "mean": 135.56,
+      "p95": 207.0,
+      "edge": 0.0155,
+      "hf": 4.86,
+      "lf": 34.27,
+      "std8": 34.79,
+      "edge8": 0.0751,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0155 < film p5 0.0209"
+      ]
+    }
+  ]
+}

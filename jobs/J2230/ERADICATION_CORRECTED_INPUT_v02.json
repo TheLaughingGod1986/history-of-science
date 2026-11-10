@@ -1,0 +1,45 @@
+{
+  "status": "ASSEMBLY INPUT ONLY; not a final Short or approval",
+  "master": "/Volumes/data/mac-mini-archive/hos-007-vaccine/master_v04_J0925/hos_007_master_v04.mp4",
+  "master_sha256": "c7f62adbb241bf3fbfaa3a17929f05768eedcf89044cb2cc5ebd2971c163e810",
+  "source_vo": "/Volumes/data/mac-mini-archive/hos-007-vaccine/master_v03_J0887/stem_vo_v03.wav",
+  "source_vo_sha256": "289b543efd5d1e01975a75ab7b07e03f27fda0c0847bba75d532202f8917a8dd",
+  "part5_master_start_s": 401.9583333333333,
+  "obsolete_part5_start_s": 409.59,
+  "raw_part5_intervals_s": [
+    [
+      41.34,
+      49.1
+    ],
+    [
+      25.36,
+      34.5
+    ],
+    [
+      35.16,
+      40.72
+    ]
+  ],
+  "master_intervals_s": [
+    [
+      443.298333,
+      451.058333
+    ],
+    [
+      427.318333,
+      436.458333
+    ],
+    [
+      437.118333,
+      442.678333
+    ]
+  ],
+  "file": "/Users/benjaminoats/_desk/renders/J2230/eradication_corrected_inputs_v02/eradication_assembly_input_v02.mp4",
+  "sha256": "339d21b99162532cd6711c947976f9cdf4303ba88fee855b29a346fefa3aae84",
+  "vo_file": "/Users/benjaminoats/_desk/renders/J2230/eradication_corrected_inputs_v02/eradication_vo_from_master_v02.wav",
+  "vo_sha256": "388ae394a55e0d850bcf40a4ad73105b517e13814d8e113e665f50dfbc2a4963",
+  "vo_gain_db": -7,
+  "duration_s": 22.46,
+  "decode_exit": 0,
+  "explanation": "Old input used obsolete planned film times and selects different narration. v02 follows actual master cut offsets. Last interval extends through raw 40.72 to preserve gone. Original v01 files remain untouched. Opening A disease still needs editorial FIX; had/have source flag requires actual listening. No new VO, music, picture, generation or publishing."
+}

@@ -1,0 +1,7 @@
+s01_0     1.3s 14_cuff_release_t2.mp4       ok
+s02_It     4.4s 02_linen_tie_t2.mp4          ok
+s03_lets     8.3s 08_knots_valve_t1.mp4        ok
+s04_A    12.6s 08_your_blood_t2.mp4         ok
+s05_Harvey    17.4s 14_steering_home_t1.mp4      ok
+s06_loop    21.6s loop_end_14_cuff_release_t2. WARN low detail: edge density 0.0155 < film p5 0.0209
+polish gate PASS: 0 of 6 rows failed, 1 to look at -> 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s06_blood_pressure_cuff_v02/polish_gate_s06_blood_pressure_cuff_v02.json

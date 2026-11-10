@@ -1,0 +1,28 @@
+{
+  "file": "/Users/benjaminoats/_desk/renders/J2230/vaccine_stems_v01/variolation_vo_input_v01.wav",
+  "part": null,
+  "fails": [],
+  "warns": [
+    "replace at ~0:16.70: script 'pass full smallpox on to others so people' / heard 'pass full smallpox onto others so people' — sounds alike (likely the transcriber); listen"
+  ],
+  "duration_s": 24.5,
+  "duration": "0:24.50",
+  "mean_db": -22.8,
+  "peak_db": -4.5,
+  "pauses_over_1s": [],
+  "asr": "faster-whisper small.en",
+  "script_words": 61,
+  "heard_words": 60,
+  "wpm": 149,
+  "word_diffs": [
+    {
+      "at": "0:16.70",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "pass full smallpox on to others so people",
+      "heard": "pass full smallpox onto others so people"
+    }
+  ],
+  "first_minute": {},
+  "verdict": "PASS"
+}
