@@ -52,7 +52,10 @@ MAX_BATCH_ROWS = 5
 MAX_BATCH_CREDITS = 1500
 HEADROOM_FLOOR = 3000
 REQUIRED_MODEL = "Veo 3.1 - Quality"
-REQUIRED_STILL_MODEL = "Nano Banana 2"
+# Chief price pass, 10 Nov 2026 (J2481): Flow replaced "Nano Banana 2" with "Nano Banana 2.1" in place in the model
+# menu, and live Flow reads "Generating will use 0 credits" for one 16:9 image on Ultra. One exact name is approved;
+# the zero-price line and the balance-did-not-drop check below still gate every still, whatever the model is called.
+REQUIRED_STILL_MODEL = "Nano Banana 2.1"
 REQUIRED_OUTPUTS = "x1"
 SUBMIT_ENV = "HOS009_TRANCHE2_SUBMIT"
 FLOW_HOST = "flow.google.com"
@@ -1756,7 +1759,7 @@ def _read_and_validate_live_still_evidence(page, *, balance: int | None = None,
 
 
 def read_live_still_evidence(page, *, balance: int | None = None, open_overlay: bool = False) -> dict:
-    """Strict selected-state DOM evidence for 0-credit Nano Banana 2 16:9 start stills."""
+    """Strict selected-state DOM evidence for 0-credit 16:9 start stills on the one approved still model."""
     _raw, evidence = _read_and_validate_live_still_evidence(page, balance=balance, open_overlay=open_overlay)
     return evidence
 
@@ -1764,7 +1767,7 @@ def read_live_still_evidence(page, *, balance: int | None = None, open_overlay: 
 def guarded_still_create(page, accounting: SharedFlowAccounting, *, reservation: str,
                          plate_id: str, evidence_path: Path, floor: int = HEADROOM_FLOOR,
                          balance: int | None = None) -> dict:
-    """Zero-price Nano Banana 2 still adapter; caller owns shared writer lock."""
+    """Zero-price still adapter for the one approved still model; caller owns shared writer lock."""
     accounting._assert_held()
     state = accounting.snapshot()
     raw, evidence = _read_and_validate_live_still_evidence(page, balance=balance)

@@ -1066,7 +1066,7 @@ let clicks=0;
 const node = (t, attrs={}) => ({innerText:t, disabled:false,
  getAttribute:k=>attrs[k] || null,
  getBoundingClientRect:()=>({width:100,height:20}), click:()=>{clicks++;}});
-let selected = [node('Nano Banana 2'),node('x1'),node('16:9')];
+let selected = [node(input.model),node('x1'),node('16:9')];
 const account = node('', {'aria-label':'Google Account: '+input.account});
 const create = node('Start generation');
 global.location={hostname:'flow.google.com'};
@@ -1081,7 +1081,7 @@ process.stdout.write(JSON.stringify({evidence,outcome,clicks}));
         for drift in (False, True):
             result = subprocess.run(
                 ['node', '-e', harness],
-                input=json.dumps(dict(js=RUNNER.STILL_EVIDENCE_JS,
+                input=json.dumps(dict(js=RUNNER.STILL_EVIDENCE_JS, model=RUNNER.REQUIRED_STILL_MODEL,
                                       account=RUNNER.REQUIRED_ACCOUNT, drift=drift)),
                 text=True, capture_output=True, check=True,
             )
@@ -1323,7 +1323,7 @@ process.stdout.write(JSON.stringify({ result, clicks }));
         self.assertEqual(ev_legacy_valid["models"], ["Veo 3.1 - Quality"])
         self.assertEqual(ev_legacy_valid["balances"], [10000])
 
-    def test_captured_10nov_still_reader_reads_nano_banana_21_and_refuses_until_approved(self):
+    def test_captured_10nov_still_reader_passes_nano_banana_21_at_zero_price_only(self):
         still_state = self.capture["still_mode_settings_open"]
         enabled_controls = [
             dict(c, disabled=False) if "Start generation" in (c.get("ariaLabel") or c.get("text") or "") else dict(c)
@@ -1349,12 +1349,22 @@ process.stdout.write(JSON.stringify({ result, clicks }));
             def evaluate(self, _script, _arg=None):
                 return dict(self.evidence)
 
-        # Nano Banana 2.1 is NOT in REQUIRED_STILL_MODEL ("Nano Banana 2") yet: must fail closed.
-        self.assertEqual(RUNNER.REQUIRED_STILL_MODEL, "Nano Banana 2")
+        # Chief price pass, 10 Nov 2026: "Nano Banana 2.1" is the one approved still model, at zero credits.
+        self.assertEqual(RUNNER.REQUIRED_STILL_MODEL, "Nano Banana 2.1")
+        ev_valid = RUNNER.read_live_still_evidence(StaticPage(ev_still), balance=14890)
+        self.assertEqual(ev_valid["models"], ["Nano Banana 2.1"])
+        self.assertEqual(ev_valid["prices"], ["Generating will use 0 credits"])
+        self.assertEqual(ev_valid["balances"], [14890])
+        # The approval is for a free still only: any price line but zero still fails closed, as does no balance.
+        for price_line in ("Generating will use 1 credits", "Generating will use 10 credits"):
+            with self.assertRaises(RUNNER.GuardError):
+                RUNNER.read_live_still_evidence(StaticPage(dict(ev_still, prices=[price_line])), balance=14890)
         with self.assertRaises(RUNNER.GuardError):
-            RUNNER.read_live_still_evidence(StaticPage(ev_still), balance=14890)
+            RUNNER.read_live_still_evidence(StaticPage(dict(ev_still, prices=[])), balance=14890)
+        with self.assertRaises(RUNNER.GuardError):
+            RUNNER.read_live_still_evidence(StaticPage(ev_still))
 
-        # Legacy still shape ("Nano Banana 2") passes.
+        # The retired name ("Nano Banana 2", legacy page shape) is read correctly and now refused.
         legacy_still = self.legacy_fixture()["still_settings_open"]
         ev_legacy_still, clicks = self.eval_dom(
             RUNNER.STILL_EVIDENCE_JS,
@@ -1363,9 +1373,10 @@ process.stdout.write(JSON.stringify({ result, clicks }));
             expected=None,
         )
         self.assertEqual(clicks, 0)
-        ev_legacy_still_valid = RUNNER.read_live_still_evidence(StaticPage(ev_legacy_still))
-        self.assertEqual(ev_legacy_still_valid["models"], ["Nano Banana 2"])
-        self.assertEqual(ev_legacy_still_valid["balances"], [10000])
+        self.assertEqual(ev_legacy_still["models"], ["Nano Banana 2"])
+        self.assertEqual(ev_legacy_still["balances"], [10000])
+        with self.assertRaises(RUNNER.GuardError):
+            RUNNER.read_live_still_evidence(StaticPage(ev_legacy_still))
 
     def test_unknown_model_or_aspect_fails_closed(self):
         video_state = self.capture["video_mode_veo31_quality_settings_open"]
