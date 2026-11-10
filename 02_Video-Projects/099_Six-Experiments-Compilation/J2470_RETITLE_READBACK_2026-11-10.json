@@ -1,0 +1,45 @@
+{
+  "job": "J2470",
+  "videoId": "uAomPaOBrM8",
+  "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+  "changedAt": "2026-11-10T01:44:22.051Z",
+  "authorisation": "Acting Chief (Claude), 10 Nov 2026, job J2470; titles approved in orbit-with-ben 05_Analytics/tests/RULE_26_TITLE_PASS_2026-11.md section 7 (J2462, LEARNINGS rule 26)",
+  "before": {
+    "title": "How Did Experiments Explain Blood, Germs and Atoms?",
+    "descriptionLine1": "How did experiments explain blood, germs and atoms? Six discovery stories follow the evidence across almost three hundred years, from a tied arm and a willow tree to a swan-neck flask, the periodic table, X-rays and gold foil.",
+    "privacy": "private",
+    "publishAt": "2026-12-10T18:00:00Z",
+    "descriptionSha256": "ac58286271b50c9916fb88cb6acbdc4f2e58cf01b66ade2dd496c878836f5af1"
+  },
+  "afterApi": {
+    "title": "Experiments That Changed the World (Blood, Germs and Atoms)",
+    "descriptionLine1": "Six experiments that changed the world: how did we prove how blood circulates, what trees are made of, and what hides in germs, X-rays and atoms?",
+    "restOfDescriptionUnchanged": true,
+    "tagsUnchanged": true,
+    "categoryId": "27",
+    "defaultLanguage": "en-GB",
+    "defaultAudioLanguage": "en-GB",
+    "privacy": "private",
+    "publishAt": "2026-12-10T18:00:00Z",
+    "descriptionSha256": "a6d91a3b2cbe5e50fe0d5e6efbc1dce07ae04b896980fd278f5958cd48866106"
+  },
+  "afterStudio": {
+    "cdp": 9460,
+    "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+    "url": "https://studio.youtube.com/video/uAomPaOBrM8/edit",
+    "titleField": "Experiments That Changed the World (Blood, Germs and Atoms)",
+    "descriptionLine1": "Six experiments that changed the world: how did we prove how blood circulates, what trees are made of, and what hides in germs, X-rays and atoms?",
+    "visibility": "Scheduled",
+    "testAndCompare": "none set (plain title field; only the A/B testing button)"
+  },
+  "notChanged": [
+    "thumbnail",
+    "end screen",
+    "playlist",
+    "schedule",
+    "privacy",
+    "tags",
+    "rest of description"
+  ],
+  "gbp": 0
+}
