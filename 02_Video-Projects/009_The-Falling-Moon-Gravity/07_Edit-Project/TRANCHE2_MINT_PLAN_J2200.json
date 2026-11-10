@@ -6,6 +6,10 @@
   "review": "PENDING_REVIEW",
   "file_state_when_written": "GENERATED",
   "row_count": 20,
+  "style_refs": [
+    "04_Generated-Clips/_style_refs/04_sunny_window_v01.jpg",
+    "04_Generated-Clips/_style_refs/10_mint_jar_v01.jpg"
+  ],
   "caps": {
     "per_take": 100,
     "takes_per_row": 3,
