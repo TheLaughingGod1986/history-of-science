@@ -1,6 +1,6 @@
-# HOS 011 Anesthesia VO — `hos_011_vo_v01` recorded (J2245, 6 Nov 2026)
+# HOS 011 Anesthesia VO — locked `hos_011_vo_v01` (J2475, 10 Nov 2026)
 
-This is a take record, not a VO lock. No one has passed it.
+VO **locked**. The J2475 section at the foot is the lock record. The sections above it are the J2245 take record of 6 Nov, unchanged.
 
 Listen file: `02_Voiceover/hos_011_vo_v01.wav` (532.72 s). WAV and MP3 stay on the Mini in this worktree (`/_desk/worktrees/J2245-011-vo`). They are gitignored.
 
@@ -34,3 +34,19 @@ No Scribe run shows a dropped clause. The whisper warns that are not the two pau
 ElevenLabs before the take: 93,404 of 121,114 left (used 27,710). After: 90,350 left (used 30,764). Counter delta 3,054 against 6,941 spoken characters. Floor 0. Nothing bought, nothing billed past the balance.
 
 No picture. No upload.
+
+## J2475 — VO locked as `hos_011_vo_v01` (10 Nov 2026)
+
+`J2286` (Gemini, listening review of all five chapters) returned **KEEP**: no pickups, no re-recording; the two 1.5 s pauses in *Across the Ocean* sit inside a held beat and stay. The acting Chief closed `J2245` on 10 Nov and the job brief for `J2475` orders this lock. This section records that decision; the worker who wrote it did not listen to the audio and makes no judgement of its own.
+
+| Item | Value |
+|---|---|
+| Take | `hos_011_vo_v01.wav` (532.72 s, five chapters, 0.7 s gaps) |
+| WAV sha256 | `d873f1d0c9158087fd61ce0b9f53de985055d778cd58b8df70c67c0701300ae2` (from the J2245 take record; the WAV is gitignored and was not re-hashed in J2475) |
+| MP3 sha256 | `9fdd84d50ac2f85bcdf8aea0d5ceefd261cae5458dafa1e6865adf2a3053f496` |
+| Verdict | `J2286` KEEP; acting Chief closed `J2245`, 10 Nov 2026 |
+| Script | `01_Script/surgery_script_master_v02.md` |
+| Timings | `stt/hos_011_vo_v01/words.srt` (193 phrase cues) and `stt/hos_011_vo_v01/stt_raw.json` |
+| Loudness | −19.6 LUFS, peak −3.6 dB |
+
+Chapter voice starts on the VO clock for the edit: ch01 0:00.00, ch02 1:27.50, ch03 2:56.36, ch04 4:32.58, ch05 6:06.96. Film 8:52.72. The shot list built on these timings is `07_Edit-Project/SHOT_LIST_v01.md`.
