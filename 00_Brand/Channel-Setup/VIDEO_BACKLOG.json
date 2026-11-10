@@ -170,6 +170,32 @@
       "public": "2027-01-14 (planned)"
     },
     {
+      "id": "100",
+      "working_title": "How Do Migrating Birds See Earth's Magnetic Field?",
+      "title_b": "The Quantum Compass Hidden Inside a Robin's Eye",
+      "title_d": "How Do Birds Navigate? (The Quantum Compass in a Robin's Eye)",
+      "status": "backlog",
+      "folder": "02_Video-Projects/100_Gilbert-Wiltschko-Mouritsen-Bird-Magnetic-Compass",
+      "familiar_thing": "a garden robin flying 4,000 km in the dark to a forest it has never seen",
+      "moment": "William Gilbert's 1600 terrella globe, Stephen Emlen's 1966 ink-pad funnel & Wolfgang and Roswitha Wiltschko's 1972 Frankfurt Helmholtz-coil inclination-compass experiment, and Henrik Mouritsen & Peter Hore's 2021 Nature proof of quantum radical pairs in robin retinal cryptochrome CRY4",
+      "person": "William Gilbert, Stephen Emlen, Wolfgang & Roswitha Wiltschko, Klaus Schulten, Henrik Mouritsen & Peter Hore",
+      "room": "Gilbert's 1600 London study, Wiltschko's 1972 copper-coil room in Frankfurt, and Mouritsen & Hore's 2021 Oldenburg/Oxford spectroscopy lab",
+      "public": "2027-01-21 (backlog; Rule-E GO 94/100 in J2473)"
+    },
+    {
+      "id": "101",
+      "working_title": "How Do Deep Sea Vents Feed Life Without Sunlight?",
+      "title_b": "Deep Sea Vents: The World That Lives Without Sun",
+      "title_d": "Deep Sea Hydrothermal Vents (The 1977 Dive That Found Sunless Life)",
+      "status": "backlog",
+      "folder": "02_Video-Projects/101_Corliss-Ballard-Cavanaugh-Deep-Sea-Hydrothermal-Vents",
+      "familiar_thing": "every food chain on Earth needing sunlight — until a 2.5 km submarine dive into pitch darkness",
+      "moment": "Jack Corliss, Tjeerd van Andel and Robert Ballard's 17 Feb 1977 Alvin dive on the Galápagos Rift finding warm vents and 2-metre mouthless giant tube worms (followed by the 1979 21°N East Pacific Rise 380 °C black-smoker dive), and 23-year-old Colleen Cavanaugh's 1981 Nature proof of internal chemosynthetic sulphur bacteria",
+      "person": "Edward Forbes, Sergei Winogradsky, Jack Corliss, Tjeerd van Andel, Robert Ballard, Meredith Jones & Colleen Cavanaugh",
+      "room": "the cramped titanium sphere of DSV Alvin at 2,500 m depth and Cavanaugh's 1980–81 Harvard lab",
+      "public": "2027-01-28 (backlog; Rule-E GO 95/100 in J2473)"
+    },
+    {
       "id": "idea-penicillin",
       "status": "idea",
       "familiar_thing": "the mould on old bread",

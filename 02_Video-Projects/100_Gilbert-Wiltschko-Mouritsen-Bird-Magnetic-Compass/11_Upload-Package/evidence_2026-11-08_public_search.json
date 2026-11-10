@@ -1,0 +1,346 @@
+{
+ "pulled": "2026-11-08",
+ "source": "YouTube GB search results and autocomplete; public, no login. Not vidIQ.",
+ "queries": {
+  "how do birds navigate": {
+   "suggest": [
+    "how do birds navigate",
+    "how do birds navigate using magnetic fields"
+   ],
+   "search": [
+    {
+     "id": "0SPD2r0xV8k",
+     "title": "How quantum mechanics help birds find their way",
+     "channel": "nature video",
+     "views": "291,854 views",
+     "age": "5 yr ago",
+     "length": "6:21"
+    },
+    {
+     "id": "sHmdzXjgrHA",
+     "title": "How do Birds Navigate? - Sun, Stars, and Magnetic Senses",
+     "channel": "BioBush",
+     "views": "73,516 views",
+     "age": "8 yr ago",
+     "length": "5:56"
+    },
+    {
+     "id": "_2n0H8X9HhY",
+     "title": "How Do Birds Navigate Thousands of Miles Without Getting Lost?",
+     "channel": "History of Simple Things",
+     "views": "193,426 views",
+     "age": "9 mo ago",
+     "length": "8:36"
+    },
+    {
+     "id": "Kxpg7NAo6Y0",
+     "title": "How Birds Use Quantum Entanglement For Their Journey Across The Globe?",
+     "channel": "Noesis Corner",
+     "views": "2,540 views",
+     "age": "1 yr ago",
+     "length": "11:41"
+    },
+    {
+     "id": "GHgaVtU0UDM",
+     "title": "How do birds navigate and pigeons home?",
+     "channel": "Rupert Sheldrake",
+     "views": "23,701 views",
+     "age": "3 yr ago",
+     "length": "54:36"
+    },
+    {
+     "id": "PRYmx7Lk9F0",
+     "title": "This Quantum ‘Sixth Sense’ Could Allow Birds to Navigate Earth’s Magnetic Field",
+     "channel": "Seeker",
+     "views": "146,606 views",
+     "age": "8 yr ago",
+     "length": "3:40"
+    },
+    {
+     "id": "hi1UVPeuXKY",
+     "title": "How Birds Navigate, Communicate, and Fly Together | Compilation",
+     "channel": "History of Simple Things",
+     "views": "10,248 views",
+     "age": "1 mo ago",
+     "length": "22:40"
+    },
+    {
+     "id": "m3ovU5Wu1Rg",
+     "title": "How Do Birds Know Where to Migrate ?",
+     "channel": "Xplainify",
+     "views": "294 views",
+     "age": "1 yr ago",
+     "length": "5:03"
+    }
+   ]
+  },
+  "bird magnetic compass": {
+   "suggest": [],
+   "search": [
+    {
+     "id": "0SPD2r0xV8k",
+     "title": "How quantum mechanics help birds find their way",
+     "channel": "nature video",
+     "views": "291,854 views",
+     "age": "5 yr ago",
+     "length": "6:21"
+    },
+    {
+     "id": "I_VUXq3coGQ",
+     "title": "Bird's magnetic compass",
+     "channel": "CAnMoveLund",
+     "views": "1,470 views",
+     "age": "11 yr ago",
+     "length": "1:13"
+    },
+    {
+     "id": "PRYmx7Lk9F0",
+     "title": "This Quantum ‘Sixth Sense’ Could Allow Birds to Navigate Earth’s Magnetic Field",
+     "channel": "Seeker",
+     "views": "146,606 views",
+     "age": "8 yr ago",
+     "length": "3:40"
+    },
+    {
+     "id": "hGm-swEFryw",
+     "title": "The Quantum Compass: How Birds Navigate Earth's Magnetic Field",
+     "channel": "The Kosmoscope",
+     "views": "487 views",
+     "age": "3 wk ago",
+     "length": "3:45"
+    },
+    {
+     "id": "uoaxl1GmbVs",
+     "title": "The Magnetic Compass Navigation of the Homing Pigeon",
+     "channel": "Claws & Paws",
+     "views": "92 views",
+     "age": "1 yr ago",
+     "length": "2:29"
+    },
+    {
+     "id": "c7-gEH9fsfE",
+     "title": "How Do Birds Sense Earth's Magnetic Field? Eye, Beak, or Both?",
+     "channel": "The Impossible Camera",
+     "views": "5 views",
+     "age": "2 wk ago",
+     "length": "6:09"
+    },
+    {
+     "id": "4aV8_UWjOoc",
+     "title": "How Do Birds Know Where to Fly? 🐦 Earth's Hidden Magnetic Compass! | Brainfeed TV",
+     "channel": "Brainfeed TV",
+     "views": "7 views",
+     "age": "4 wk ago",
+     "length": "1:15"
+    }
+   ]
+  },
+  "quantum biology robin eye": {
+   "suggest": [],
+   "search": [
+    {
+     "id": "_R9qzvidimI",
+     "title": "The Quantum Robin: Entanglement, Smell Vibrations and the Tunneling Life of Cells",
+     "channel": "Learn Physics",
+     "views": "11,250 views",
+     "age": "3 mo ago",
+     "length": "59:07"
+    },
+    {
+     "id": "0SPD2r0xV8k",
+     "title": "How quantum mechanics help birds find their way",
+     "channel": "nature video",
+     "views": "291,854 views",
+     "age": "5 yr ago",
+     "length": "6:21"
+    },
+    {
+     "id": "_qgSz1UmcBM",
+     "title": "How Quantum Biology Might Explain Life’s Biggest Questions | Jim Al-Khalili | TED Talks",
+     "channel": "TED",
+     "views": "1,110,062 views",
+     "age": "11 yr ago",
+     "length": "16:09"
+    },
+    {
+     "id": "asps5mZ4Kp8",
+     "title": "Quantum Biology | Explained by Jim Al-Khalili",
+     "channel": "BULLAKI",
+     "views": "84,800 views",
+     "age": "6 yr ago",
+     "length": "21:13"
+    },
+    {
+     "id": "WOGhy_IOzs0",
+     "title": "Bird migration and quantum entanglement",
+     "channel": "ThePerotto",
+     "views": "5,490 views",
+     "age": "3 yr ago",
+     "length": "11:40"
+    },
+    {
+     "id": "njG85rKv8PQ",
+     "title": "How the European Robin Sees Earth’s Magnetic Field - The Quantum Compass",
+     "channel": "Pure Physics",
+     "views": "4,695 views",
+     "age": "2 mo ago",
+     "length": "59:07"
+    },
+    {
+     "id": "PRYmx7Lk9F0",
+     "title": "This Quantum ‘Sixth Sense’ Could Allow Birds to Navigate Earth’s Magnetic Field",
+     "channel": "Seeker",
+     "views": "146,606 views",
+     "age": "8 yr ago",
+     "length": "3:40"
+    },
+    {
+     "id": "Q2mKbjW6shY",
+     "title": "Quantum Biology Explained - How Quantum Physics Powers Life Itself",
+     "channel": "Learn Science",
+     "views": "790 views",
+     "age": "5 mo ago",
+     "length": "59:07"
+    }
+   ]
+  },
+  "How Do Migrating Birds See Earth's Magnetic Field?": {
+   "suggest": [],
+   "search": [
+    {
+     "id": "0SPD2r0xV8k",
+     "title": "How quantum mechanics help birds find their way",
+     "channel": "nature video",
+     "views": "291,854 views",
+     "age": "5 yr ago",
+     "length": "6:21"
+    },
+    {
+     "id": "PRYmx7Lk9F0",
+     "title": "This Quantum ‘Sixth Sense’ Could Allow Birds to Navigate Earth’s Magnetic Field",
+     "channel": "Seeker",
+     "views": "146,606 views",
+     "age": "8 yr ago",
+     "length": "3:40"
+    },
+    {
+     "id": "jmxiMZ67VZs",
+     "title": "How Migratory Birds Use Earth's Magnetic Field as an Aid to Navigation | Biomagnetism",
+     "channel": "Arbor Scientific",
+     "views": "36,848 views",
+     "age": "6 yr ago",
+     "length": "1:20"
+    },
+    {
+     "id": "tdXb_4EkYtU",
+     "title": "We Don't Know: Magnetoreception",
+     "channel": "Science Magazine",
+     "views": "155,729 views",
+     "age": "9 yr ago",
+     "length": "3:36"
+    },
+    {
+     "id": "EP8VnX-_8DI",
+     "title": "How Animals Use the Earth's Magnetic Field for Navigation",
+     "channel": "Atoms and Galaxies",
+     "views": "14,195 views",
+     "age": "3 yr ago",
+     "length": "4:20"
+    },
+    {
+     "id": "4JUYyMHOHb8",
+     "title": "How Do Birds Know Where To Go When They Migrate?",
+     "channel": "BrainStuff - HowStuffWorks",
+     "views": "142,064 views",
+     "age": "11 yr ago",
+     "length": "2:37"
+    },
+    {
+     "id": "Kxpg7NAo6Y0",
+     "title": "How Birds Use Quantum Entanglement For Their Journey Across The Globe?",
+     "channel": "Noesis Corner",
+     "views": "2,540 views",
+     "age": "1 yr ago",
+     "length": "11:41"
+    },
+    {
+     "id": "nEALpvfRJI4",
+     "title": "Birds Can See Magnetic Fields (And It Breaks Physics)",
+     "channel": "Extraordinary Science",
+     "views": "6,753 views",
+     "age": "6 mo ago",
+     "length": "9:52"
+    }
+   ]
+  },
+  "The Quantum Compass Hidden Inside a Robin's Eye": {
+   "suggest": [],
+   "search": [
+    {
+     "id": "pjW-rURXk5E",
+     "title": "The Quantum Compass Hidden in a Bird's Eye",
+     "channel": "Nature’s Blueprint",
+     "views": "29 views",
+     "age": "4 mo ago",
+     "length": "5:25"
+    },
+    {
+     "id": "yY-88kL88oY",
+     "title": "The Quantum Secret Hidden Inside a Robin's Eye",
+     "channel": "Quantum Questions",
+     "views": "29 views",
+     "age": "8 mo ago",
+     "length": "1:11:16"
+    },
+    {
+     "id": "0SPD2r0xV8k",
+     "title": "How quantum mechanics help birds find their way",
+     "channel": "nature video",
+     "views": "291,854 views",
+     "age": "5 yr ago",
+     "length": "6:21"
+    },
+    {
+     "id": "igvtyA71SmU",
+     "title": "The Bird That Can See the Magnetic Field — European Robin Mystery",
+     "channel": "Biography Plus",
+     "views": "640 views",
+     "age": "11 mo ago",
+     "length": "6:33"
+    },
+    {
+     "id": "-v3U5d6tT_k",
+     "title": "The Quantum Compass: How Robins \"See\" Earth’s Magnetic Field | Quantum Biology",
+     "channel": "The Fear Archive",
+     "views": "26 views",
+     "age": "3 wk ago",
+     "length": "0:41"
+    },
+    {
+     "id": "69_2_UfDvzM",
+     "title": "How Robins See the Invisible World Explained",
+     "channel": "Primal Data",
+     "views": "56 views",
+     "age": "5 mo ago",
+     "length": "1:28"
+    },
+    {
+     "id": "njG85rKv8PQ",
+     "title": "How the European Robin Sees Earth’s Magnetic Field - The Quantum Compass",
+     "channel": "Pure Physics",
+     "views": "4,698 views",
+     "age": "2 mo ago",
+     "length": "59:07"
+    },
+    {
+     "id": "yxmW4R0c5ZA",
+     "title": "The Tiny Bird That May Have a Quantum Compass in Its Eyes",
+     "channel": "Super Banana Cat",
+     "views": "95 views",
+     "age": "3 days ago",
+     "length": "3:36"
+    }
+   ]
+  }
+ }
+}

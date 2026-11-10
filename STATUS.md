@@ -21,6 +21,8 @@
 | **014** Extinction: The 12-Year-Old Who Dug Up a Sea Dragon | Thu 31 Dec (51 d) | 0% | Topic (to do) | **Claude** · queued | — | Sun 27 Dec (in 47 d) | 🟢 on track |
 | **015** Cells: The Slice of Cork That Changed Biology | Thu 7 Jan (58 d) | 0% | Topic (to do) | **Claude** · queued | — | Sun 3 Jan (in 54 d) | 🟢 on track |
 | **018** Infrared: The Thermometer Experiment That Found Invisible Light | Thu 14 Jan (65 d) | 0% | Topic (to do) | **Claude** · queued | — | Sun 10 Jan (in 61 d) | 🟢 on track |
+| **100** How Do Migrating Birds See Earth's Magnetic Field? | Thu 21 Jan (72 d) | 3% | Script (to do) | **Grok** · queued | — | Sun 17 Jan (in 68 d) | 🟢 on track |
+| **101** How Do Deep Sea Vents Feed Life Without Sunlight? | Thu 28 Jan (79 d) | 3% | Script (to do) | **Grok** · queued | — | Sun 24 Jan (in 75 d) | 🟢 on track |
 
 ## Who's on what
 
@@ -361,6 +363,48 @@ Airs **Thu 14 Jan** · ready for Ben's OK by **Sun 10 Jan** · 🟢 on track
 On the next_hos waiting line after 015 (jobs/WIP.json). Draft script master v01 under ideas/018_Herschel-Ritter-Invisible-Light; topic prepared, not entered into active WIP. Title from herschel_script_master_v01.md.
 
 - ⬜ **Topic** — to do (with Claude)
+- ⬜ **Script** — to do (with Grok)
+- ⬜ **Fact check** — to do (with Grok)
+- ⬜ **Audit + upload package** — to do (with Grok)
+- ⬜ **Voiceover (long)** — to do (with Grok)
+- ⬜ **Shorts scripts** — to do (with Grok)
+- ⬜ **Shorts voiceover** — to do (with Grok)
+- ⬜ **Picture** — to do (with Grok)
+- ⬜ **Edit + master** — to do (with Grok)
+- ⬜ **Thumbnails** — to do (with Grok)
+- ⬜ **Ben's final OK** — to do (with Ben)
+- ⬜ **Scheduled** — to do (with Grok)
+
+### 100 · How Do Migrating Birds See Earth's Magnetic Field?
+
+`█░░░░░░░░░░░░░░░░░░░` **3%**
+
+Airs **Thu 21 Jan** · ready for Ben's OK by **Sun 17 Jan** · 🟢 on track
+
+On the next_hos waiting line after 097 (jobs/WIP.json; added in J2411, Rule-E GO 94/100 in J2473). Topic brief + §2 package in 02_Video-Projects/100_Gilbert-Wiltschko-Mouritsen-Bird-Magnetic-Compass/; neighbour gate PASS (13 education >=1M incl. TED-Ed 9.21M, Royal Institution 1.59M & TED 1.11M Jim Al-Khalili), Rule 26 search-led phrase ('how do birds navigate') verified, and public search evidence saved. Waits in next_hos under Rule G for an active HOS WIP slot.
+
+- ✅ **Topic** — done: J2411 + J2473 Rule-E GO (94/100); pre-cleared in next_hos under Rule G
+- ⬜ **Script** — to do (with Grok)
+- ⬜ **Fact check** — to do (with Grok)
+- ⬜ **Audit + upload package** — to do (with Grok)
+- ⬜ **Voiceover (long)** — to do (with Grok)
+- ⬜ **Shorts scripts** — to do (with Grok)
+- ⬜ **Shorts voiceover** — to do (with Grok)
+- ⬜ **Picture** — to do (with Grok)
+- ⬜ **Edit + master** — to do (with Grok)
+- ⬜ **Thumbnails** — to do (with Grok)
+- ⬜ **Ben's final OK** — to do (with Ben)
+- ⬜ **Scheduled** — to do (with Grok)
+
+### 101 · How Do Deep Sea Vents Feed Life Without Sunlight?
+
+`█░░░░░░░░░░░░░░░░░░░` **3%**
+
+Airs **Thu 28 Jan** · ready for Ben's OK by **Sun 24 Jan** · 🟢 on track
+
+On the next_hos waiting line after 100 (jobs/WIP.json; added in J2411, Rule-E GO 95/100 in J2473). Topic brief + §2 package in 02_Video-Projects/101_Corliss-Ballard-Cavanaugh-Deep-Sea-Hydrothermal-Vents/; neighbour gate PASS (3 education >=1M: Kurzgesagt 25.80M, TED 1.55M, TED-Ed 1.16M), Rule 26 search-led phrases ('deep sea hydrothermal vents', 'deep sea vents') verified, and public search evidence saved (all 3 core queries autocomplete yes). Waits in next_hos under Rule G for an active HOS WIP slot.
+
+- ✅ **Topic** — done: J2411 + J2473 Rule-E GO (95/100); pre-cleared in next_hos under Rule G
 - ⬜ **Script** — to do (with Grok)
 - ⬜ **Fact check** — to do (with Grok)
 - ⬜ **Audit + upload package** — to do (with Grok)
