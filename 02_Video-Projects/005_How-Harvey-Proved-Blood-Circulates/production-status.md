@@ -1030,3 +1030,19 @@ music gate PASS: hos005-part05-temp_score_bed_v01.mp3, 128.0 s, about 150.0 BPM,
 
 
 
+
+
+## J2168 — 5 November 2026, Codex
+
+Negative candidate qualification, no film-stage PASS: cuff s06 v01 needs rule-8 opening and exact clinical-source repair; pulse s07 reserve rejected for existing pump/stove premise overlap. 10 December stays unfilled. Both local master hashes verified; all 21 source/master paths inventoried, missing local sources resolved in archived hos-005-blood. No media changed, spend or publishing. See `10_Shorts/J2168/QUALIFICATION.md` and `INPUT_INVENTORY.json`. Immediate bounded £0 review decision queued as J2174; no watch-ready cut or awaits card.
+
+Record validation: `bash 00_Brand/Channel-Setup/tools/check_all.sh` → `ALL CHECKS PASS`. Historical media gates are not current approval.
+
+## J2174 — 5 November 2026, Gemini (`gemini-4-argon-high`)
+
+Bounded £0 rule-8 opening and clinical-source repair decision (`10_Shorts/J2174/DECISION.md`):
+1. **Clinical-source repair (`01_Script/FACT_NOTES_v01.md` row 38):** Replaced `"Any clinical-methods text."` with the AHA Scientific Statement on human blood pressure measurement (T. G. Pickering et al., *J. Clin. Hypertens.* 7(2):102–109, 2005, PMID 15722655, https://pmc.ncbi.nlm.nih.gov/articles/PMC8109470/) and exact verbatim quotes distinguishing **manual auscultatory sphygmomanometry** (occluding the brachial artery above systolic pressure and listening with a stethoscope over the antecubital fossa for Phase I Korotkoff tapping sounds as pulsatile blood flow resumes) from **automated oscillometric cuffs** (detecting cuff-pressure oscillations maximal at mean intra-arterial pressure and estimating systolic/diastolic values algorithmically without listening for sound).
+2. **Bounded £0 opening / EDL verdict — NO-GO for unchanged-word assembly:** Word-level alignment check of `02_Voiceover/part05_the_vessels_he_never_saw_v01_raw_align.json` proves the entire locked cuff passage (`indices 178–220`, `80.740–95.440 s`) is only **43 words** / **14.513 s** pause-capped. Starting at `107–126` (`v01`) fails `LEARNINGS.md` Rules 2 & 8 (generic circulation for `8.304 s`, `"cuff"` at `~10.81 s`); starting at `178` (*"And the next time a nurse wraps a cuff round your arm, think of Harvey"*) opens on a continuation conjunction with `"cuff"` at `2.044 s > 1.50 s`, no surprise in sentence 1, and only 43 words (`14.513 s`)—while extending into `221–251` reaches 74 words (`>65` cap) and finishes the cuff mechanism at `14.51 s` (`54% < 70%`, failing `LEARNINGS.md` Rule 6); starting at `193` (*"A blood pressure cuff is his band"*) leaves `"his band"` anaphoric/pronoun-broken at `0.0 s` (`LEARNINGS.md` Rule 2 FAIL) and is only 28 words (`9.880 s`), with non-chronological sentence splicing barred without new line/splice approval. Furthermore, Part 05 has only two 8.0 s modern-cuff plates (`13_cuff_t1.mp4`, `14_cuff_release_t1..t4.mp4`), so filling `22–27 s` at `≤3.8 s` holds without reusing `PFj6172YU4Q` Part 04 ligature plates requires additional modern-cuff visual coverage.
+3. **Disposition:** No `v02` assembly queued; no media generated or modified; no spend, upload, scheduling, Buffer write, or `awaits`. Conditional **10 November 11:30** and **10 December** (`s07` rejected in `J2168`; `s08` excluded; no extra `007` Short) remain unfilled unless Chief separately scopes the missing inputs (`58–62`w standalone script + new `vo_take.py` VO + 2–3 modern-cuff/auscultation plates or £0 inked teach graphics under the recipe in `10_Shorts/J2174/DECISION.md`).
+
+Record validation: `bash 00_Brand/Channel-Setup/tools/check_all.sh` → `ALL CHECKS PASS`.

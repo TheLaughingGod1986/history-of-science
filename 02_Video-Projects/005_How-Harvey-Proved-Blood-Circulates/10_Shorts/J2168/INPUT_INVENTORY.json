@@ -1,0 +1,175 @@
+{
+  "job": "J2168",
+  "rows": [
+    {
+      "short": "s06_blood_pressure_cuff",
+      "relative_path": "10_Shorts/hos_005_s06_blood_pressure_cuff_v01.mp4",
+      "resolved_path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s06_blood_pressure_cuff_v01.mp4",
+      "exists": true,
+      "bytes": 21449700,
+      "sha256": "b9bc921502c311e2bba585868dff48746eaefdf44380f5a5f8464f946e5b8bf3"
+    },
+    {
+      "short": "s06_blood_pressure_cuff",
+      "relative_path": "02_Voiceover/part05_the_vessels_he_never_saw_v01_raw.mp3",
+      "resolved_path": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-005-blood/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/02_Voiceover/part05_the_vessels_he_never_saw_v01_raw.mp3",
+      "exists": true,
+      "bytes": 1951913,
+      "sha256": "49445e57c79b48bcf55775be901aca509236298b160f8543640227c4a75f252d"
+    },
+    {
+      "short": "s06_blood_pressure_cuff",
+      "relative_path": "02_Voiceover/part05_the_vessels_he_never_saw_v01_raw_align.json",
+      "resolved_path": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-005-blood/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/02_Voiceover/part05_the_vessels_he_never_saw_v01_raw_align.json",
+      "exists": true,
+      "bytes": 40851,
+      "sha256": "8313148b80400f47134c8690104985b08643b5dfcbbbb7cff10545dcec9056a0"
+    },
+    {
+      "short": "s06_blood_pressure_cuff",
+      "relative_path": "04_Generated-Clips/part05/raw/v01/08_your_blood_t2.mp4",
+      "resolved_path": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-005-blood/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part05/raw/v01/08_your_blood_t2.mp4",
+      "exists": true,
+      "bytes": 11288027,
+      "sha256": "c31c84e7cb29bb4322d558073f976bdc17a1f037b997c04a276877a0293da9c9"
+    },
+    {
+      "short": "s06_blood_pressure_cuff",
+      "relative_path": "04_Generated-Clips/part05/raw/v01/16_proved_last_link_t4.mp4",
+      "resolved_path": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-005-blood/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part05/raw/v01/16_proved_last_link_t4.mp4",
+      "exists": true,
+      "bytes": 5790117,
+      "sha256": "abb8dd846f3409afbf794d28b5cb1468d44a7857d15095a5c9ee7008c184b912"
+    },
+    {
+      "short": "s06_blood_pressure_cuff",
+      "relative_path": "04_Generated-Clips/part05/raw/v01/07_capillaries_loop_t2.mp4",
+      "resolved_path": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-005-blood/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part05/raw/v01/07_capillaries_loop_t2.mp4",
+      "exists": true,
+      "bytes": 9142418,
+      "sha256": "ec6ead629983d45a043dfc8e144ac42e05c536c448d18901a18d2b43e5526249"
+    },
+    {
+      "short": "s06_blood_pressure_cuff",
+      "relative_path": "04_Generated-Clips/part05/raw/v01/10_one_vein_t1.mp4",
+      "resolved_path": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-005-blood/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part05/raw/v01/10_one_vein_t1.mp4",
+      "exists": true,
+      "bytes": 8868275,
+      "sha256": "e638585aee6fbda76512d855cd34b4448a79c2f05f2d48f0e76488ec5bbb5c9c"
+    },
+    {
+      "short": "s06_blood_pressure_cuff",
+      "relative_path": "04_Generated-Clips/part05/raw/v01/13_cuff_t1.mp4",
+      "resolved_path": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-005-blood/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part05/raw/v01/13_cuff_t1.mp4",
+      "exists": true,
+      "bytes": 2083807,
+      "sha256": "0faa6e715d62e41894820ecf12f05234b49c60d9813371a0339d68ad7e90666c"
+    },
+    {
+      "short": "s06_blood_pressure_cuff",
+      "relative_path": "04_Generated-Clips/part04/raw/v01/04_stopped_loosen_t5.mp4",
+      "resolved_path": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-005-blood/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part04/raw/v01/04_stopped_loosen_t5.mp4",
+      "exists": true,
+      "bytes": 5094744,
+      "sha256": "ba236a31cb10fcb311d152b8dd4339823af5314d209baa63714f624eb072e433"
+    },
+    {
+      "short": "s06_blood_pressure_cuff",
+      "relative_path": "04_Generated-Clips/part05/raw/v01/14_cuff_release_t4.mp4",
+      "resolved_path": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-005-blood/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part05/raw/v01/14_cuff_release_t4.mp4",
+      "exists": true,
+      "bytes": 2648991,
+      "sha256": "b3c170158bdd3afad68c9f9f73c30127327d88fce0f8108c8816dc3a9372db1e"
+    },
+    {
+      "short": "s06_blood_pressure_cuff",
+      "relative_path": "04_Generated-Clips/part04/raw/v01/07_in_out_doors_t2.mp4",
+      "resolved_path": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-005-blood/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part04/raw/v01/07_in_out_doors_t2.mp4",
+      "exists": true,
+      "bytes": 3082223,
+      "sha256": "8fc5b8035c03134a6f8b1a157bc1f88bd3c461fb45980fa860c6fa3a280455d1"
+    },
+    {
+      "short": "s07_heart_pulse",
+      "relative_path": "10_Shorts/hos_005_s07_heart_pulse_v01.mp4",
+      "resolved_path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s07_heart_pulse_v01.mp4",
+      "exists": true,
+      "bytes": 26618612,
+      "sha256": "a6513555187f65ee887877824ecaae732f85cf72498f3d17bbaa6c924ca7b310"
+    },
+    {
+      "short": "s07_heart_pulse",
+      "relative_path": "02_Voiceover/part03_the_sum_that_broke_the_old_idea_v01_raw.mp3",
+      "resolved_path": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-005-blood/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/02_Voiceover/part03_the_sum_that_broke_the_old_idea_v01_raw.mp3",
+      "exists": true,
+      "bytes": 1592050,
+      "sha256": "0c1f5c5467a01ccc3d21dc59183c069ade6c6ec100138491617692eb86cf4e89"
+    },
+    {
+      "short": "s07_heart_pulse",
+      "relative_path": "02_Voiceover/part03_the_sum_that_broke_the_old_idea_v01_raw_align.json",
+      "resolved_path": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-005-blood/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/02_Voiceover/part03_the_sum_that_broke_the_old_idea_v01_raw_align.json",
+      "exists": true,
+      "bytes": 34575,
+      "sha256": "4c1aaa7d968d224d730b9213b18021d71209ce28e19b14db5a3bce2c34d40607"
+    },
+    {
+      "short": "s07_heart_pulse",
+      "relative_path": "04_Generated-Clips/part03/raw/v01/03_stove_to_muscle_t1.mp4",
+      "resolved_path": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-005-blood/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/raw/v01/03_stove_to_muscle_t1.mp4",
+      "exists": true,
+      "bytes": 4843348,
+      "sha256": "6f857363435b615b36ec38f52a67000ac6c864865e56602a1db3c78a4f8d99ba"
+    },
+    {
+      "short": "s07_heart_pulse",
+      "relative_path": "04_Generated-Clips/part03/raw/v01/02_slow_hearts_t2.mp4",
+      "resolved_path": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-005-blood/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/raw/v01/02_slow_hearts_t2.mp4",
+      "exists": true,
+      "bytes": 5963747,
+      "sha256": "97d6d1e8db36af6d7d2b1c1d7c431b66184d148dcc4ffd0d44867c9142664ecc"
+    },
+    {
+      "short": "s07_heart_pulse",
+      "relative_path": "04_Generated-Clips/part03/raw/v01/04_squeeze_pulse_t1.mp4",
+      "resolved_path": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-005-blood/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/raw/v01/04_squeeze_pulse_t1.mp4",
+      "exists": true,
+      "bytes": 5688187,
+      "sha256": "e21dc11b255e9ac90763b258f02135c6b3cf8d3d8377d3cdd643bf2f800704b2"
+    },
+    {
+      "short": "s07_heart_pulse",
+      "relative_path": "04_Generated-Clips/part01/raw/v01/01_pulse_wrist_t1.mp4",
+      "resolved_path": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-005-blood/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part01/raw/v01/01_pulse_wrist_t1.mp4",
+      "exists": true,
+      "bytes": 6578575,
+      "sha256": "aa7b65b04fc25ae89a99c8a8994667957ed6befc525ae3a91124f38cf4c1a29e"
+    },
+    {
+      "short": "s07_heart_pulse",
+      "relative_path": "04_Generated-Clips/part05/raw/v01/08_your_blood_t2.mp4",
+      "resolved_path": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-005-blood/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part05/raw/v01/08_your_blood_t2.mp4",
+      "exists": true,
+      "bytes": 11288027,
+      "sha256": "c31c84e7cb29bb4322d558073f976bdc17a1f037b997c04a276877a0293da9c9"
+    },
+    {
+      "short": "s07_heart_pulse",
+      "relative_path": "04_Generated-Clips/part03/raw/v01/12_glowing_loop_t2.mp4",
+      "resolved_path": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-005-blood/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/raw/v01/12_glowing_loop_t2.mp4",
+      "exists": true,
+      "bytes": 6573975,
+      "sha256": "67487492467b0093d06a76d67438b1c6ef542389abeb9d99883a83e70894d791"
+    },
+    {
+      "short": "s07_heart_pulse",
+      "relative_path": "04_Generated-Clips/part03/raw/v01/13_one_minute_t3.mp4",
+      "resolved_path": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-005-blood/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part03/raw/v01/13_one_minute_t3.mp4",
+      "exists": true,
+      "bytes": 8347526,
+      "sha256": "57b6a63b49471b3624d332113e9c7e93280f834096526f0a8b7e7c532e6c5cb5"
+    }
+  ],
+  "master_manifest_hashes_match": true,
+  "no_media_changed": true
+}
