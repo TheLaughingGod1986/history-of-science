@@ -1,0 +1,158 @@
+
+== durable desk handoffs
+......
+----------------------------------------------------------------------
+Ran 6 tests in 0.023s
+
+OK
+
+=== /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/tmpp70mox49/inbox/10_031_vo.md
+<!-- hos-desk v1 from=claude to=codex film=031 stage=vo status=task -->
+Check recording
+agent exited 2; message left in /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/tmpp70mox49/inbox/10_031_vo.md
+
+=== /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/tmpp70mox49/inbox/10_031_vo.md
+<!-- hos-desk v1 from=claude to=codex film=031 stage=vo status=task -->
+Check recording
+agent exited 2; message left in /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/tmpp70mox49/inbox/10_031_vo.md
+No new messages for Codex.
+-- durable desk handoffs: PASS
+
+== no media
+-- no media: PASS
+
+== status board in sync
+STATUS.md and kanban/index.html match PIPELINE.json
+-- status board in sync: PASS
+
+== ElevenLabs guard tests
+...........
+----------------------------------------------------------------------
+Ran 11 tests in 0.034s
+
+OK
+-- ElevenLabs guard tests: PASS
+
+== vo_check word tests
+.........
+----------------------------------------------------------------------
+Ran 9 tests in 0.003s
+
+OK
+-- vo_check word tests: PASS
+
+== atempo check tests
+.........
+----------------------------------------------------------------------
+Ran 9 tests in 0.000s
+
+OK
+-- atempo check tests: PASS
+
+== voice speed (atempo <= 1.06)
+KNOWN  02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/SHORT_s07_semmelweis_hands_v01.json: atempo (1.07)  [built, never uploaded: rebuild at <=1.06 before any upload]
+KNOWN  02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/SHORT_s09_lister_antiseptic_v01.json: atempo (1.1)  [built, never uploaded: rebuild at <=1.06 before any upload]
+KNOWN  02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/SHORT_s11_curved_flask_v01.json: atempo (1.12)  [superseded by v07 (-3L6HzJ_d_4, public 27 Oct)]
+KNOWN  02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/SHORT_s11_curved_flask_v02.json: atempo (1.12)  [was 1-BZaFIMwYU, now private and unscheduled; v07 aired instead]
+KNOWN  02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/_build_short_s07_semmelweis_hands_v01.py: line 146 ATEMPO = 1.07 (1.07)  [built, never uploaded: rebuild at <=1.06 before any upload]
+KNOWN  02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/_build_short_s09_lister_antiseptic_v01.py: line 142 ATEMPO = 1.10 (1.1)  [built, never uploaded: rebuild at <=1.06 before any upload]
+KNOWN  02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/_build_short_s11_curved_flask_v01.py: line 109 ATEMPO = 1.12 (1.12)  [superseded by v07 (-3L6HzJ_d_4, public 27 Oct)]
+KNOWN  02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/_build_short_s11_curved_flask_v02.py: line 109 ATEMPO = 1.12 (1.12)  [was 1-BZaFIMwYU, now private and unscheduled; v07 aired instead]
+KNOWN  02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/_build_backcat_four_elements_v02.py: line 47 OPEN_RATE = 1.40 (1.4)  [SCHEDULED: v03 inherits this 1.40x open and is qW2OsD4mujc, airs Tue 3 Nov 11:30 London]
+KNOWN  02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/_build_backcat_four_elements_v03.py: line 163 "open_atempo" = 1.4 (1.4)  [SCHEDULED: qW2OsD4mujc, airs Tue 3 Nov 11:30 London]
+KNOWN  02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/hos_002_backcat_four_elements_v02_meta.json: open_atempo (1.4)  [SCHEDULED: v03 inherits this 1.40x open and is qW2OsD4mujc, airs Tue 3 Nov 11:30 London]
+KNOWN  02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/hos_002_backcat_four_elements_v03_meta.json: open_atempo (1.4)  [SCHEDULED: qW2OsD4mujc, airs Tue 3 Nov 11:30 London]
+KNOWN  02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/SHORT_s08_capillaries_v01.json: atempo (1.11)  [built, never uploaded: rebuild at <=1.06 before any upload]
+KNOWN  02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/_build_short_s08_capillaries_v01.py: line 60 ATEMPO = 1.11 (1.11)  [built, never uploaded: rebuild at <=1.06 before any upload]
+KNOWN  02_Video-Projects/007_The-First-Vaccine/10_Shorts/SHORT_s04_smallpox_test_v01.json: atempo (1.08)  [was -I_GHK-GcFs, now private and unscheduled; J1219 swapped the 13 Nov slot to v04 (1.05) as cLKDiYP55J8 on 29 Oct]
+KNOWN  02_Video-Projects/007_The-First-Vaccine/10_Shorts/SHORT_s04_smallpox_test_v02.json: atempo (1.08)  [superseded local cut, never uploaded]
+KNOWN  02_Video-Projects/007_The-First-Vaccine/10_Shorts/SHORT_s05_vacca_jesty_v01.json: atempo (1.07)  [superseded by v02 before upload]
+KNOWN  02_Video-Projects/007_The-First-Vaccine/10_Shorts/SHORT_s05_vacca_jesty_v02.json: atempo (1.07)  [was 4WUs0beKn0A, now private and unscheduled; J1222 swapped the 17 Nov slot to v05 (1.03) as xgx2lYHhYZM on 30 Oct]
+KNOWN  02_Video-Projects/007_The-First-Vaccine/10_Shorts/SHORT_s05_vacca_jesty_v03.json: atempo (1.07)  [superseded local cut, never uploaded]
+KNOWN  02_Video-Projects/007_The-First-Vaccine/10_Shorts/_build_short_s04_smallpox_test_v01.py: line 76 ATEMPO = 1.08 (1.08)  [was -I_GHK-GcFs, now private and unscheduled; J1219 swapped the 13 Nov slot to v04 (1.05) as cLKDiYP55J8 on 29 Oct]
+KNOWN  02_Video-Projects/007_The-First-Vaccine/10_Shorts/_build_short_s04_smallpox_test_v02.py: line 73 ATEMPO = 1.08 (1.08)  [superseded local cut, never uploaded]
+KNOWN  02_Video-Projects/007_The-First-Vaccine/10_Shorts/_build_short_s05_vacca_jesty_v01.py: line 79 ATEMPO = 1.07 (1.07)  [built v02 (was 4WUs0beKn0A); J1222 swapped the 17 Nov slot to v05 (1.03) as xgx2lYHhYZM on 30 Oct]
+KNOWN  02_Video-Projects/007_The-First-Vaccine/10_Shorts/_build_short_s05_vacca_jesty_v03.py: line 79 ATEMPO = 1.07 (1.07)  [superseded local cut, never uploaded]
+atempo check PASS: no new build above 1.06 (23 known file(s) listed above).
+-- voice speed (atempo <= 1.06): PASS
+
+== contract tests
+npm warn exec The following package was not found and will be installed: vitest@5.1.0
+vitest.config.ts (1:331) [33m[UNRESOLVED_IMPORT] [0mCould not resolve 'vitest/config' in vitest.config.ts
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m vitest.config.ts:1:332 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m1 │[0m [38;5;249mc[0m[38;5;249mo[0m[38;5;249mn[0m[38;5;249ms[0m[38;5;249mt[0m[38;5;249m [0m[38;5;249m_[0m[38;5;249m_[0m[38;5;249mv[0m[38;5;249mi[0m[38;5;249mt[0m[38;5;249me[0m[38;5;249m_[0m[38;5;249mi[0m[38;5;249mn[0m[38;5;249mj[0m[38;5;249me[0m[38;5;249mc[0m[38;5;249mt[0m[38;5;249me[0m[38;5;249md[0m[38;5;249m_[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mi[0m[38;5;249mg[0m[38;5;249mi[0m[38;5;249mn[0m[38;5;249ma[0m[38;5;249ml[0m[38;5;249m_[0m[38;5;249md[0m[38;5;249mi[0m[38;5;249mr[0m[38;5;249mn[0m[38;5;249ma[0m[38;5;249mm[0m[38;5;249me[0m[38;5;249m [0m[38;5;249m=[0m[38;5;249m [0m[38;5;249m"[0m[38;5;249m/[0m[38;5;249mp[0m[38;5;249mr[0m[38;5;249mi[0m[38;5;249mv[0m[38;5;249ma[0m[38;5;249mt[0m[38;5;249me[0m[38;5;249m/[0m[38;5;249mt[0m[38;5;249mm[0m[38;5;249mp[0m[38;5;249m/[0m[38;5;249mh[0m[38;5;249mo[0m[38;5;249ms[0m[38;5;249m-[0m[38;5;249mJ[0m[38;5;249m2[0m[38;5;249m1[0m[38;5;249m8[0m[38;5;249m9[0m[38;5;249m-[0m[38;5;249mw[0m[38;5;249mt[0m[38;5;249m/[0m[38;5;249m0[0m[38;5;249m7[0m[38;5;249m_[0m[38;5;249mC[0m[38;5;249mo[0m[38;5;249mn[0m[38;5;249mt[0m[38;5;249me[0m[38;5;249mn[0m[38;5;249mt[0m[38;5;249m-[0m[38;5;249mO[0m[38;5;249mp[0m[38;5;249ms[0m[38;5;249m"[0m[38;5;249m;[0m[38;5;249mc[0m[38;5;249mo[0m[38;5;249mn[0m[38;5;249ms[0m[38;5;249mt[0m[38;5;249m [0m[38;5;249m_[0m[38;5;249m_[0m[38;5;249mv[0m[38;5;249mi[0m[38;5;249mt[0m[38;5;249me[0m[38;5;249m_[0m[38;5;249mi[0m[38;5;249mn[0m[38;5;249mj[0m[38;5;249me[0m[38;5;249mc[0m[38;5;249mt[0m[38;5;249me[0m[38;5;249md[0m[38;5;249m_[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mi[0m[38;5;249mg[0m[38;5;249mi[0m[38;5;249mn[0m[38;5;249ma[0m[38;5;249ml[0m[38;5;249m_[0m[38;5;249mf[0m[38;5;249mi[0m[38;5;249ml[0m[38;5;249me[0m[38;5;249mn[0m[38;5;249ma[0m[38;5;249mm[0m[38;5;249me[0m[38;5;249m [0m[38;5;249m=[0m[38;5;249m [0m[38;5;249m"[0m[38;5;249m/[0m[38;5;249mp[0m[38;5;249mr[0m[38;5;249mi[0m[38;5;249mv[0m[38;5;249ma[0m[38;5;249mt[0m[38;5;249me[0m[38;5;249m/[0m[38;5;249mt[0m[38;5;249mm[0m[38;5;249mp[0m[38;5;249m/[0m[38;5;249mh[0m[38;5;249mo[0m[38;5;249ms[0m[38;5;249m-[0m[38;5;249mJ[0m[38;5;249m2[0m[38;5;249m1[0m[38;5;249m8[0m[38;5;249m9[0m[38;5;249m-[0m[38;5;249mw[0m[38;5;249mt[0m[38;5;249m/[0m[38;5;249m0[0m[38;5;249m7[0m[38;5;249m_[0m[38;5;249mC[0m[38;5;249mo[0m[38;5;249mn[0m[38;5;249mt[0m[38;5;249me[0m[38;5;249mn[0m[38;5;249mt[0m[38;5;249m-[0m[38;5;249mO[0m[38;5;249mp[0m[38;5;249ms[0m[38;5;249m/[0m[38;5;249mv[0m[38;5;249mi[0m[38;5;249mt[0m[38;5;249me[0m[38;5;249ms[0m[38;5;249mt[0m[38;5;249m.[0m[38;5;249mc[0m[38;5;249mo[0m[38;5;249mn[0m[38;5;249mf[0m[38;5;249mi[0m[38;5;249mg[0m[38;5;249m.[0m[38;5;249mt[0m[38;5;249ms[0m[38;5;249m"[0m[38;5;249m;[0m[38;5;249mc[0m[38;5;249mo[0m[38;5;249mn[0m[38;5;249ms[0m[38;5;249mt[0m[38;5;249m [0m[38;5;249m_[0m[38;5;249m_[0m[38;5;249mv[0m[38;5;249mi[0m[38;5;249mt[0m[38;5;249me[0m[38;5;249m_[0m[38;5;249mi[0m[38;5;249mn[0m[38;5;249mj[0m[38;5;249me[0m[38;5;249mc[0m[38;5;249mt[0m[38;5;249me[0m[38;5;249md[0m[38;5;249m_[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mi[0m[38;5;249mg[0m[38;5;249mi[0m[38;5;249mn[0m[38;5;249ma[0m[38;5;249ml[0m[38;5;249m_[0m[38;5;249mi[0m[38;5;249mm[0m[38;5;249mp[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mt[0m[38;5;249m_[0m[38;5;249mm[0m[38;5;249me[0m[38;5;249mt[0m[38;5;249ma[0m[38;5;249m_[0m[38;5;249mu[0m[38;5;249mr[0m[38;5;249ml[0m[38;5;249m [0m[38;5;249m=[0m[38;5;249m [0m[38;5;249m"[0m[38;5;249mf[0m[38;5;249mi[0m[38;5;249ml[0m[38;5;249me[0m[38;5;249m:[0m[38;5;249m/[0m[38;5;249m/[0m[38;5;249m/[0m[38;5;249mp[0m[38;5;249mr[0m[38;5;249mi[0m[38;5;249mv[0m[38;5;249ma[0m[38;5;249mt[0m[38;5;249me[0m[38;5;249m/[0m[38;5;249mt[0m[38;5;249mm[0m[38;5;249mp[0m[38;5;249m/[0m[38;5;249mh[0m[38;5;249mo[0m[38;5;249ms[0m[38;5;249m-[0m[38;5;249mJ[0m[38;5;249m2[0m[38;5;249m1[0m[38;5;249m8[0m[38;5;249m9[0m[38;5;249m-[0m[38;5;249mw[0m[38;5;249mt[0m[38;5;249m/[0m[38;5;249m0[0m[38;5;249m7[0m[38;5;249m_[0m[38;5;249mC[0m[38;5;249mo[0m[38;5;249mn[0m[38;5;249mt[0m[38;5;249me[0m[38;5;249mn[0m[38;5;249mt[0m[38;5;249m-[0m[38;5;249mO[0m[38;5;249mp[0m[38;5;249ms[0m[38;5;249m/[0m[38;5;249mv[0m[38;5;249mi[0m[38;5;249mt[0m[38;5;249me[0m[38;5;249ms[0m[38;5;249mt[0m[38;5;249m.[0m[38;5;249mc[0m[38;5;249mo[0m[38;5;249mn[0m[38;5;249mf[0m[38;5;249mi[0m[38;5;249mg[0m[38;5;249m.[0m[38;5;249mt[0m[38;5;249ms[0m[38;5;249m"[0m[38;5;249m;[0m[38;5;249mi[0m[38;5;249mm[0m[38;5;249mp[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mt[0m[38;5;249m [0m[38;5;249m{[0m[38;5;249m [0m[38;5;249md[0m[38;5;249me[0m[38;5;249mf[0m[38;5;249mi[0m[38;5;249mn[0m[38;5;249me[0m[38;5;249mC[0m[38;5;249mo[0m[38;5;249mn[0m[38;5;249mf[0m[38;5;249mi[0m[38;5;249mg[0m[38;5;249m [0m[38;5;249m}[0m[38;5;249m [0m[38;5;249mf[0m[38;5;249mr[0m[38;5;249mo[0m[38;5;249mm[0m[38;5;249m [0m"vitest/config"[38;5;249m;[0m
+ [38;5;240m  │[0m                                                                                                                                                                                                                                                                                                                                            ───────┬───────  
+ [38;5;240m  │[0m                                                                                                                                                                                                                                                                                                                                                   ╰───────── Module not found, treating it as an external dependency
+[38;5;246m───╯[0m
+
+failed to load config from /private/tmp/hos-J2189-wt/07_Content-Ops/vitest.config.ts
+
+⎯⎯⎯⎯⎯⎯⎯ Startup Error ⎯⎯⎯⎯⎯⎯⎯⎯
+Error: Cannot find module 'vitest/config'
+Require stack:
+- /private/tmp/hos-J2189-wt/07_Content-Ops/vitest.config.ts
+- /private/tmp/j2189-npm-cache/_npx/69c381f8ad94b576/node_modules/vite/dist/node/chunks/node.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)
+    at Function._load (node:internal/modules/cjs/loader:1211:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1487:12)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (/private/tmp/hos-J2189-wt/07_Content-Ops/vitest.config.ts:22:21)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/private/tmp/hos-J2189-wt/07_Content-Ops/vitest.config.ts',
+    '/private/tmp/j2189-npm-cache/_npx/69c381f8ad94b576/node_modules/vite/dist/node/chunks/node.js'
+  ]
+}
+
+
+
+npm notice
+npm notice New minor version of npm available! 11.4.1 -> 11.21.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.21.2
+npm notice To update run: npm install -g npm@11.21.2
+npm notice
+-- contract tests: FAIL
+
+== package-lint
+npm warn exec The following package was not found and will be installed: tsx@4.23.15
+node:internal/modules/cjs/loader:1401
+  const err = new Error(message);
+              ^
+
+Error: Cannot find module 'zod'
+Require stack:
+- /private/tmp/hos-J2189-wt/07_Content-Ops/src/lib/env.ts
+- /private/tmp/hos-J2189-wt/07_Content-Ops/src/lib/affiliate/go-redirect-urls.ts
+- /private/tmp/hos-J2189-wt/07_Content-Ops/src/lib/affiliate/description.ts
+- /private/tmp/hos-J2189-wt/07_Content-Ops/src/lib/publishing/youtube-package.ts
+- /private/tmp/hos-J2189-wt/07_Content-Ops/scripts/package-lint.ts
+    at node:internal/modules/cjs/loader:1401:15
+    at nextResolveSimple (/private/tmp/j2189-npm-cache/_npx/fd45a72a545557e9/node_modules/tsx/dist/register-B1c7OH6V.cjs:23:1010)
+    at /private/tmp/j2189-npm-cache/_npx/fd45a72a545557e9/node_modules/tsx/dist/register-B1c7OH6V.cjs:22:4512
+    at /private/tmp/j2189-npm-cache/_npx/fd45a72a545557e9/node_modules/tsx/dist/register-B1c7OH6V.cjs:22:2830
+    at resolveTsPaths (/private/tmp/j2189-npm-cache/_npx/fd45a72a545557e9/node_modules/tsx/dist/register-B1c7OH6V.cjs:23:762)
+    at /private/tmp/j2189-npm-cache/_npx/fd45a72a545557e9/node_modules/tsx/dist/register-B1c7OH6V.cjs:23:1203
+    at j._resolveFilename (file:///private/tmp/j2189-npm-cache/_npx/fd45a72a545557e9/node_modules/tsx/dist/register-nyXW-TH3.mjs:2:18825)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)
+    at Function._load (node:internal/modules/cjs/loader:1211:37) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/private/tmp/hos-J2189-wt/07_Content-Ops/src/lib/env.ts',
+    '/private/tmp/hos-J2189-wt/07_Content-Ops/src/lib/affiliate/go-redirect-urls.ts',
+    '/private/tmp/hos-J2189-wt/07_Content-Ops/src/lib/affiliate/description.ts',
+    '/private/tmp/hos-J2189-wt/07_Content-Ops/src/lib/publishing/youtube-package.ts',
+    '/private/tmp/hos-J2189-wt/07_Content-Ops/scripts/package-lint.ts'
+  ]
+}
+
+Node.js v22.16.0
+-- package-lint: FAIL
+
+SOME CHECKS FAILED
