@@ -164,7 +164,6 @@ Repository validation (record-only; not corrected-media approval):
 ALL CHECKS PASS
 ```
 
-
 ## J1881 — 4 November 2026
 
 Recipe scope review: FIX, production held. J2163 queued to repair timing/preservation, truthful verification and teaching labels; J1881 resumes on that input. See `07_Edit-Project/J1881_SCOPE_REVIEW.md`. No media PASS, six notes unresolved, J1755 delivery hold separate.
@@ -242,3 +241,54 @@ Repository check output (`bash 00_Brand/Channel-Setup/tools/check_all.sh 02_Vide
 -- gate:episode: PASS
 ALL CHECKS PASS
 ```
+
+## 4 November 2026 — J1880 Franklin v03 six UAT corrections mapped & exact edit recipe prepared (Gemini worker)
+
+- **Authority & scope:** Queue job `J1880` (`HOS-008:v03:2026-11-03T16:08:33.439Z / J1868`), HOS `008` `edit` claimed by `gemini`. Correction preparation only: **£0 spend, 0 Flow/ElevenLabs credits spent, 0 media files modified or rendered, 0 watch-object/R2/YouTube actions.** All six Ben notes remain unresolved pending `J1881` elected-Chief scope review, correction execution, capable QA, and Ben's watch. Historical `h22`/`h35` approvals (`hos_008_master_v03.mp4`, `cf1561c218bace7bc14ed3d625b0790a457027a90f392262f45ca7172723099b`, `393,139,693` bytes, `12,923` video packets @ 24 fps, `539.626 s`) and `J1297` delivery are preserved untouched; `J1755` / PR `#401` browser delivery repair and automatic-publication rejection remain separate.
+- **Demonstrated media-input capability (`chief_relay.py capabilities`):** `gemini` demonstrated both `audio_input` and `moving_video_input` via native `read_file` perception on the 6 extracted moving-video + synchronized-audio segments (`01_00m20s.mp4`..`06_07m58s.mp4`) and candidate clips (`01_salon_tube_t1.mp4`, `03_audience_shock_t1.mp4`, `11_jar_crack_t1.mp4`, `21_roofs_golden_t1.mp4`, `01_house_rod_t1.mp4`), cross-checked against packet/PTS/frame boundaries of `hos_008_master_v03.mp4` and `hos_008_rough_v12.mp4` (`02db759e...`).
+- **Deliverables & handoff to `J1881` (elected Chief):**
+  1. `07_Edit-Project/J1880_SOURCE_INVENTORY_v04.json`: complete source inventory, exact display-frame/PTS/timeline/pre-trim intervals, adjacent cuts, spoken VO word windows, missing-footage search log (`9.5` cumulative active minutes across `1:49`, `2:20`, `7:58`; `<= 20 min` / `<= 3 candidates` per input), and Option A (£0 native) vs Option B (bounded Flow Veo 3.1 retakes on CDP `9222` for `P2:02_salon_spark` and `P5:13_rods_spread`: `<= 3` takes each, `30 cr` Fast or `300 cr` Quality cap per plate, live Flow balance `15,430` credits vs `0` floor).
+  2. `07_Edit-Project/_build_rough_v13_recipe.py`: exact new-version (`rough_v13 -> master_v04`) Python edit recipe preserving all `12,923` packets (`0` frame delta across `6` patched intervals = `919` frames patched, `12,004` frames unchanged) and `0.000 ms` `h35` VO sync.
+  3. `07_Edit-Project/J1868_UAT_CORRECTIONS.md`: updated with the 6-row source/defect/correction table, 6 acceptance checks, and Chief `J1881` decision summary.
+
+Dry-run recipe verification (`python3 02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_build_rough_v13_recipe.py --dry-run`):
+
+```json
+{
+  "status": "DRY_RUN_VERIFIED",
+  "master_v03": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_precheck/master_v03/hos_008_master_v03.mp4",
+  "expected_packets": 12923,
+  "patched_intervals": 6,
+  "patched_frames": 919,
+  "unchanged_frames": 12004,
+  "frame_count_delta": 0,
+  "vo_sync_lag_ms": 0.0,
+  "spend_gbp": 0.0
+}
+```
+
+Repository validation (`00_Brand/Channel-Setup/tools/check_all.sh 02_Video-Projects/008_Lightning-Franklin`, record-only; not corrected-media approval):
+
+```text
+-- durable desk handoffs: PASS
+-- no media: PASS
+-- status board in sync: PASS
+-- ElevenLabs guard tests: PASS
+-- vo_check word tests: PASS
+-- atempo check tests: PASS
+-- voice speed (atempo <= 1.06): PASS
+-- contract tests: PASS
+-- package-lint: PASS
+-- review:script lightning_script_master_v01.md: PASS
+-- gate:episode: PASS
+ALL CHECKS PASS
+```
+
+
+## 4 November 2026 — J2163 recipe repair (Codex worker)
+
+J2163 supersedes J1880 planning claims with a read-only actual-PTS planner and conditional six-row manifest. Hash-verified h35 master decoded:12923 frames, start0.125s, duration539.500s;24 nonstandard PTS steps make global CFR reconstruction unsafe. Four candidate native inputs hash/decode checked. No output frame identity or sync measured; previous zero-delta/0ms recipe claims withdrawn. See `07_Edit-Project/J2163_REPAIR.md`, measured PTS and dry-run/test evidence. All six v03 notes remain unresolved. Two exact-match assets and master-derived word alignment still required; J1881 retains production scope. J1297/h22/h35 and J1755/PR401 rejection preserved. GBP0; no render, generation, upload, watch publication or YouTube change.
+
+## 5 November 2026 — J2217 eight-item amend (Cursor worker)
+
+The read-only planner now has eight defect rows plus a film-wide unbordered caption panel. `six_rows` is kept as historical evidence. 0:51 is master frame 1220 on `07_hot_night` closed GOP frames 1129–1231 (`103` frames, not the 1:49 salon source). 3:13 is frame 4621 on `01_points_desk` closed GOP frames 4511–4670 (`160` frames: clean `4511–4606`, paper unroll `4607–4670`). 2:18 is frame 3305, outside keep 3168–3259 and inside replace 3260–3343. All 27 `caption_treatment.labels` use exact closed-GOP `master_frames` (`[0, 141]`..`[12297, 12461]`). Execution still returns `REFUSED_UNTIL_J1881_REREVIEW`. 14 tests pass. No note resolved. No render, spend, upload, or YouTube change. J1881 re-reviews before any production scope. See `07_Edit-Project/J2217_AMEND.md`.

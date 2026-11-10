@@ -12,7 +12,7 @@
 | **005** The Tied Arm That Proved Your Blood Circulates | Thu 29 Oct (-9 d) | 100% | all stages done | — | — | Fri 2 Oct | 🟢 on track |
 | **006** The Willow Tree That Was Made of Air | Thu 5 Nov (-2 d) | 100% | all stages done | — | — | Sun 1 Nov | 🟢 on track |
 | **007** Why Vaccines Are Named After a Cow | Thu 12 Nov (5 d) | 100% | all stages done | — | — | Sun 8 Nov (tomorrow) | 🟢 on track |
-| **008** Why Did Franklin Fly a Kite in a Storm? | Thu 19 Nov (12 d) | 75% | Picture (blocked) | **codex** · ⛔ blocked: J2163 recipe repair, then J1881 Chief production scope; J1755 separate delivery hold | 112/112 board rows rendered (11 code graphics + 101/101 Flow plates KEEP) | Sun 15 Nov (in 8 d) | ⛔ blocked |
+| **008** Why Did Franklin Fly a Kite in a Storm? | Thu 19 Nov (12 d) | 75% | Picture (blocked) | **gemini** · ⛔ blocked: J1881 scopes two exact-match assets after J2163 repair; no native fallback selected and no generation authorized | 112/112 board rows rendered (11 code graphics + 101/101 Flow plates KEEP) | Sun 15 Nov (in 8 d) | ⛔ blocked |
 | **009** Why Doesn't the Moon Fall to Earth? | Thu 26 Nov (19 d) | 67% | Picture (in progress) | **Cursor (J2033; Codex/Gemini fallback)** · ⏸ waiting: J2033 ready after J2026 handoff completes; worker not yet claimed. Fresh Flow credit/price/writer-lock gate before generation. | 70/90 board rows recorded: 57 accepted Flow +12 code graphics +1 reuse; 20 Quality remain | Sun 22 Nov (in 15 d) | 🟢 on track |
 | **010** What Killed the Dinosaurs Was Hidden in a Line of Clay | Thu 3 Dec (26 d) | 40% | Picture (blocked) | **codex** · ⛔ blocked: Tested HOS010 runner and live guarded spend preflight after HOS009 J2033; then independent plate review before J2172 assembly | not estimated | Sun 29 Nov (in 22 d) | ⛔ blocked |
 | **011** Anesthesia: The Day Surgery Stopped Hurting | Thu 10 Dec (33 d) | 18% | Audit + upload package (to do) | **Claude** · queued | starts later; due in 5 d | Sun 6 Dec (in 29 d) | 🟢 on track |
@@ -48,10 +48,15 @@
 
 **codex**
 - ▶️ Underway: nothing right now
-- ⏸ Waiting: 008 Picture: J2163 recipe repair, then J1881 Chief production scope; J1755 separate delivery hold; 008 Edit + master: J2163 recipe repair, then J1881 Chief production scope; J1755 separate delivery hold; 010 Picture: Tested HOS010 runner and live guarded spend preflight after HOS009 J2033; then independent plate review before J2172 assembly
+- ⏸ Waiting: 010 Picture: Tested HOS010 runner and live guarded spend preflight after HOS009 J2033; then independent plate review before J2172 assembly
 
 **gemini**
 - ▶️ Underway: nothing right now
+- ⏸ Waiting: 008 Picture: J1881 scopes two exact-match assets after J2163 repair; no native fallback selected and no generation authorized
+
+**claude**
+- ▶️ Underway: nothing right now
+- ⏸ Waiting: 008 Edit + master: J1881 reviews J2163 repaired input; separately scoped PTS/GOP splicer, master-word alignment and exact-match assets required. J1755 separate delivery hold.
 
 **Cursor (J2033; Codex/Gemini fallback)**
 - ▶️ Underway: nothing right now
@@ -64,8 +69,8 @@
 ## Being worked on right now
 
 - **004** · 🔄 **Thumbnails** — in progress (0%, with Cursor since Fri 9 Oct, ⏸ waiting: J0106: C v07b file (don't touch the armed test), then the Chief's OK, due Tue 13 Oct (25 d late)): A + B live in the armed test; C v07 armed but not OK'd. v07b re-letter (no spend) is J0106; Chief's OK by Wed 14 Oct 18:00, else pair 2 comes out
-- **008** · ⛔ **Picture** — blocked (100%, 112/112 board rows rendered (11 code graphics + 101/101 Flow plates KEEP), with codex since Fri 16 Oct, ⛔ blocked: J2163 recipe repair, then J1881 Chief production scope; J1755 separate delivery hold, due Sun 8 Nov (tomorrow)): J1881_SCOPE_REVIEW.md: recipe FIX, future sync unmeasured; h22/h35 and v03 cf1561c2 preserved. No new media approval; all six Ben notes unresolved.
-- **008** · ⛔ **Edit + master** — blocked (0%, with codex since Tue 3 Nov 18:54, ⛔ blocked: J2163 recipe repair, then J1881 Chief production scope; J1755 separate delivery hold, due Thu 12 Nov (in 5 d)): J1881_SCOPE_REVIEW.md: recipe FIX, future sync unmeasured; h22/h35 and v03 cf1561c2 preserved. No new media approval; all six Ben notes unresolved.
+- **008** · ⛔ **Picture** — blocked (100%, 112/112 board rows rendered (11 code graphics + 101/101 Flow plates KEEP), with gemini since Fri 16 Oct, ⛔ blocked: J1881 scopes two exact-match assets after J2163 repair; no native fallback selected and no generation authorized, due Sun 8 Nov (tomorrow)): Historical h22 picture lock preserved. Six v03 change notes remain unresolved. J2163 conditional manifest supersedes J1880 recipe; missing glass-tube/hair and church/house/ship-mast assets, exhausted three-candidate searches. No new picture approval.
+- **008** · ⛔ **Edit + master** — blocked (0%, with claude since Thu 5 Nov 00:00, ⛔ blocked: J1881 reviews J2163 repaired input; separately scoped PTS/GOP splicer, master-word alignment and exact-match assets required. J1755 separate delivery hold., due Thu 12 Nov (in 5 d)): J2163 code/evidence delivered: master hash/full decoded PTS and four source hashes verified; 11 tests pass. Output frame delta/sync/unchanged-frame/audio identity UNMEASURED. Six v03 notes unresolved; h22/h35/J1297 preserved. No render or new approval.
 - **009** · 🔄 **Picture** — in progress (78%, 70/90 board rows recorded: 57 accepted Flow +12 code graphics +1 reuse; 20 Quality remain, with Cursor (J2033; Codex/Gemini fallback) since Thu 15 Oct, ⏸ waiting: J2033 ready after J2026 handoff completes; worker not yet claimed. Fresh Flow credit/price/writer-lock gate before generation., due Sun 15 Nov (in 8 d)): J1237 tranche1 PASS; all57 original Flow hashes reverified local/NAS. 70/90 recorded rows unchanged. J2033 owns remaining20 Quality rows under J2026 cap6000/max3 takes each/floor3000; J2034 independent picture review. Generated is not approved.
 - **010** · ⛔ **Picture** — blocked (0%, with codex since Fri 6 Nov, ⛔ blocked: Tested HOS010 runner and live guarded spend preflight after HOS009 J2033; then independent plate review before J2172 assembly, due Sun 22 Nov (in 15 d)): J2267: readiness integrated and budget reconciled; 12 Quality Shorts parents scoped, not generated or authorized. 75 total board rows / historical 12911 expected credits. Existing VO and Option A1 retained.
 
@@ -187,7 +192,7 @@ Private `ETynHpIYLeY`, publishAt Thu 12 Nov 2026 18:00 London. End screen saved:
 
 Airs **Thu 19 Nov** · ready for Ben's OK by **Sun 15 Nov** · ⛔ blocked
 
-J1881 reviewed Franklin six-note recipe: FIX. J2163 repairs PTS preservation, verification and teaching labels before Chief can scope production. All six notes unresolved; J1755 browser delivery hold separate. No new media approved.
+Historical h35 master/J1297 preserved. Six v03 change notes unresolved. J2163 repairs J1880 with measured PTS planner; J1881 reviews code/evidence and scopes production. Two exact-match assets missing; J1755 delivery/publication rejection separate.
 
 - ✅ **Topic** — done
 - ✅ **Script** — done: v01, 92.1
@@ -196,8 +201,8 @@ J1881 reviewed Franklin six-note recipe: FIX. J2163 repairs PTS preservation, ve
 - ✅ **Voiceover (long)** — done: long VO locked 7 Oct: 5 parts, 555 s (9:14.8), 7,497 chars; Part 01 pause trimmed, Part 05 one sentence re-recorded; Claude PASS each part (VO_TAKES_KEEP.json)
 - ✅ **Shorts scripts** — done: v02 (test B): two search-titled Shorts, 9 Oct
 - ✅ **Shorts voiceover** — done: Earlier locked takes retained. J2254 h94 Short C opening pickup PASS: independent vo_check + Scribe 7/7 words; 2.88 s file, last word 2.68 s. J2255 assembles/gates; Short C held for Ben watch and Long Public.
-- ⛔ **Picture** — blocked (100%, 112/112 board rows rendered (11 code graphics + 101/101 Flow plates KEEP), with codex since Fri 16 Oct, ⛔ blocked: J2163 recipe repair, then J1881 Chief production scope; J1755 separate delivery hold, due Sun 8 Nov (tomorrow)): J1881_SCOPE_REVIEW.md: recipe FIX, future sync unmeasured; h22/h35 and v03 cf1561c2 preserved. No new media approval; all six Ben notes unresolved.
-- ⛔ **Edit + master** — blocked (0%, with codex since Tue 3 Nov 18:54, ⛔ blocked: J2163 recipe repair, then J1881 Chief production scope; J1755 separate delivery hold, due Thu 12 Nov (in 5 d)): J1881_SCOPE_REVIEW.md: recipe FIX, future sync unmeasured; h22/h35 and v03 cf1561c2 preserved. No new media approval; all six Ben notes unresolved.
+- ⛔ **Picture** — blocked (100%, 112/112 board rows rendered (11 code graphics + 101/101 Flow plates KEEP), with gemini since Fri 16 Oct, ⛔ blocked: J1881 scopes two exact-match assets after J2163 repair; no native fallback selected and no generation authorized, due Sun 8 Nov (tomorrow)): Historical h22 picture lock preserved. Six v03 change notes remain unresolved. J2163 conditional manifest supersedes J1880 recipe; missing glass-tube/hair and church/house/ship-mast assets, exhausted three-candidate searches. No new picture approval.
+- ⛔ **Edit + master** — blocked (0%, with claude since Thu 5 Nov 00:00, ⛔ blocked: J1881 reviews J2163 repaired input; separately scoped PTS/GOP splicer, master-word alignment and exact-match assets required. J1755 separate delivery hold., due Thu 12 Nov (in 5 d)): J2163 code/evidence delivered: master hash/full decoded PTS and four source hashes verified; 11 tests pass. Output frame delta/sync/unchanged-frame/audio identity UNMEASURED. Six v03 notes unresolved; h22/h35/J1297 preserved. No render or new approval.
 - ⬜ **Thumbnails** — to do (with Grok, due Thu 12 Nov (in 5 d))
 - ⬜ **Ben's final OK** — to do (with Ben, due Sun 15 Nov (in 8 d)): Change request 2026-11-03T16:08:33.439Z; no Ben OK.
 - ⬜ **Scheduled** — to do (with Grok, due Mon 16 Nov (in 9 d))
