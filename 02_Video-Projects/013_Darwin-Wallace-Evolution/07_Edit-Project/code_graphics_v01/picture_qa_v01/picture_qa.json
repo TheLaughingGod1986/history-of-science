@@ -1,0 +1,355 @@
+{
+  "verdict": "PASS",
+  "terminal_loop": null,
+  "video": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v01/code_graphics_013_reel_v01.mp4",
+  "rules": {
+    "kind_fail": "computer[- ]?(reconstruction|model|generated|simulation|graphic)|\\bsimulation\\b|\\bdiagram|\\bchart\\b|\\bgraph\\b|\\bschematic|\\bannotated\\b|\\blabell?ed\\b|\\bscreen ?shot|\\bwireframe|\\bcad\\b|\\binfographic",
+    "kind_warn": "\\bartist|\\billustration|\\bconcept\\b|\\brender|\\banimation\\b|\\bmap\\b|\\bmosaic\\b|\\bcomposite\\b",
+    "upscale_fail": 2.35,
+    "upscale_warn": 2.0,
+    "max_reuse": 2,
+    "max_stretches": 5,
+    "same_stretch": 10.0,
+    "pixels": "scripts/polish_gate.py"
+  },
+  "failed": [],
+  "warn": [
+    {
+      "cut": 7,
+      "row": "P3:03_cg_malthus_curve",
+      "source": "code_graphic_013_p3_03_cg_malthus_curve.mp4",
+      "title": "own code graphic P3:03_cg_malthus_curve",
+      "t": 50.8,
+      "at": "0:51",
+      "fail": [],
+      "warn": [
+        "low detail: luma std 17.23 < 18.0",
+        "low detail: edge density 0.0302 < film p5 0.0304"
+      ],
+      "offset": 0.0
+    },
+    {
+      "cut": 11,
+      "row": "P4:01_card_p04",
+      "source": "code_graphic_013_p4_01_card_p04.mp4",
+      "title": "own code graphic P4:01_card_p04",
+      "t": 73.98,
+      "at": "1:14",
+      "fail": [],
+      "warn": [
+        "low detail: luma std 17.94 < 18.0"
+      ],
+      "offset": 0.0
+    },
+    {
+      "cut": 18,
+      "row": "P6:01_card_p06",
+      "source": "code_graphic_013_p6_01_card_p06.mp4",
+      "title": "own code graphic P6:01_card_p06",
+      "t": 108.98,
+      "at": "1:49",
+      "fail": [],
+      "warn": [
+        "low detail: luma std 17.91 < 18.0"
+      ],
+      "offset": 0.0
+    },
+    {
+      "cut": 19,
+      "row": "P6:03_cg_blending_beaks",
+      "source": "code_graphic_013_p6_03_cg_blending_beaks.mp4",
+      "title": "own code graphic P6:03_cg_blending_beaks",
+      "t": 115.87,
+      "at": "1:56",
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0254 < film p5 0.0304"
+      ],
+      "offset": 0.0
+    }
+  ],
+  "rows": [
+    {
+      "cut": 0,
+      "row": "P1:08_cg_i_think_tree",
+      "source": "code_graphic_013_p1_08_cg_i_think_tree.mp4",
+      "title": "own code graphic P1:08_cg_i_think_tree",
+      "t": 7.45,
+      "at": "0:07",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 1,
+      "row": "P1:10_cg_globe_arc",
+      "source": "code_graphic_013_p1_10_cg_globe_arc.mp4",
+      "title": "own code graphic P1:10_cg_globe_arc",
+      "t": 17.7,
+      "at": "0:18",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 2,
+      "row": "P2:01_card_p02",
+      "source": "code_graphic_013_p2_01_card_p02.mp4",
+      "title": "own code graphic P2:01_card_p02",
+      "t": 21.25,
+      "at": "0:21",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 3,
+      "row": "P2:06b_cg_tortoise_shells",
+      "source": "code_graphic_013_p2_06b_cg_tortoise_shells.mp4",
+      "title": "own code graphic P2:06b_cg_tortoise_shells",
+      "t": 24.43,
+      "at": "0:24",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 4,
+      "row": "P2:09_cg_finch_toolbox",
+      "source": "code_graphic_013_p2_09_cg_finch_toolbox.mp4",
+      "title": "own code graphic P2:09_cg_finch_toolbox",
+      "t": 33.03,
+      "at": "0:33",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 5,
+      "row": "P2:12a_arch_notebook_tree_zoom",
+      "source": "code_graphic_013_p2_12a_arch_notebook_tree_zoom.mp4",
+      "title": "own code graphic P2:12a_arch_notebook_tree_zoom",
+      "t": 41.9,
+      "at": "0:42",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 6,
+      "row": "P3:01_card_p03",
+      "source": "code_graphic_013_p3_01_card_p03.mp4",
+      "title": "own code graphic P3:01_card_p03",
+      "t": 45.35,
+      "at": "0:45",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 7,
+      "row": "P3:03_cg_malthus_curve",
+      "source": "code_graphic_013_p3_03_cg_malthus_curve.mp4",
+      "title": "own code graphic P3:03_cg_malthus_curve",
+      "t": 50.8,
+      "at": "0:51",
+      "fail": [],
+      "warn": [
+        "low detail: luma std 17.23 < 18.0",
+        "low detail: edge density 0.0302 < film p5 0.0304"
+      ],
+      "offset": 0.0
+    },
+    {
+      "cut": 8,
+      "row": "P3:06_nature_keeps_fit",
+      "source": "code_graphic_013_p3_06_nature_keeps_fit.mp4",
+      "title": "own code graphic P3:06_nature_keeps_fit",
+      "t": 59.28,
+      "at": "0:59",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 9,
+      "row": "P3:10a_arch_vestiges_1844",
+      "source": "code_graphic_013_p3_10a_arch_vestiges_1844.mp4",
+      "title": "own code graphic P3:10a_arch_vestiges_1844",
+      "t": 65.17,
+      "at": "1:05",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 10,
+      "row": "P3:12_cg_barnacle_counter",
+      "source": "code_graphic_013_p3_12_cg_barnacle_counter.mp4",
+      "title": "own code graphic P3:12_cg_barnacle_counter",
+      "t": 70.25,
+      "at": "1:10",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 11,
+      "row": "P4:01_card_p04",
+      "source": "code_graphic_013_p4_01_card_p04.mp4",
+      "title": "own code graphic P4:01_card_p04",
+      "t": 73.98,
+      "at": "1:14",
+      "fail": [],
+      "warn": [
+        "low detail: luma std 17.94 < 18.0"
+      ],
+      "offset": 0.0
+    },
+    {
+      "cut": 12,
+      "row": "P4:05_cg_wallace_counter",
+      "source": "code_graphic_013_p4_05_cg_wallace_counter.mp4",
+      "title": "own code graphic P4:05_cg_wallace_counter",
+      "t": 79.98,
+      "at": "1:20",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 13,
+      "row": "P4:06b_arch_malthus_1798",
+      "source": "code_graphic_013_p4_06b_arch_malthus_1798.mp4",
+      "title": "own code graphic P4:06b_arch_malthus_1798",
+      "t": 88.27,
+      "at": "1:28",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 14,
+      "row": "P5:01_card_p05",
+      "source": "code_graphic_013_p5_01_card_p05.mp4",
+      "title": "own code graphic P5:01_card_p05",
+      "t": 92.42,
+      "at": "1:32",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 15,
+      "row": "P5:05b_arch_origin_1859_title",
+      "source": "code_graphic_013_p5_05b_arch_origin_1859_title.mp4",
+      "title": "own code graphic P5:05b_arch_origin_1859_title",
+      "t": 94.97,
+      "at": "1:35",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 16,
+      "row": "P5:07_cg_timeline_origin",
+      "source": "code_graphic_013_p5_07_cg_timeline_origin.mp4",
+      "title": "own code graphic P5:07_cg_timeline_origin",
+      "t": 99.18,
+      "at": "1:39",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 17,
+      "row": "P5:09_arch_darwinism_1889",
+      "source": "code_graphic_013_p5_09_arch_darwinism_1889.mp4",
+      "title": "own code graphic P5:09_arch_darwinism_1889",
+      "t": 105.1,
+      "at": "1:45",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 18,
+      "row": "P6:01_card_p06",
+      "source": "code_graphic_013_p6_01_card_p06.mp4",
+      "title": "own code graphic P6:01_card_p06",
+      "t": 108.98,
+      "at": "1:49",
+      "fail": [],
+      "warn": [
+        "low detail: luma std 17.91 < 18.0"
+      ],
+      "offset": 0.0
+    },
+    {
+      "cut": 19,
+      "row": "P6:03_cg_blending_beaks",
+      "source": "code_graphic_013_p6_03_cg_blending_beaks.mp4",
+      "title": "own code graphic P6:03_cg_blending_beaks",
+      "t": 115.87,
+      "at": "1:56",
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0254 < film p5 0.0304"
+      ],
+      "offset": 0.0
+    },
+    {
+      "cut": 20,
+      "row": "P6:04b_arch_mendel_1866_paper",
+      "source": "code_graphic_013_p6_04b_arch_mendel_1866_paper.mp4",
+      "title": "own code graphic P6:04b_arch_mendel_1866_paper",
+      "t": 123.69,
+      "at": "2:04",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 21,
+      "row": "P6:09_cream_end_card",
+      "source": "code_graphic_013_p6_09_cream_end_card.mp4",
+      "title": "own code graphic P6:09_cream_end_card",
+      "t": 126.64,
+      "at": "2:07",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    }
+  ],
+  "polish": {
+    "edge_floor": 0.0304,
+    "low_detail_floor": {
+      "std": 13.44,
+      "edge": 0.0259,
+      "calibration": {
+        "video": "025_MarsRobot_full_rough_v02d.mp4",
+        "factor": 1.2,
+        "frames": [
+          {
+            "source": "PIA22223.jpg",
+            "t": 201.0,
+            "std": 12.1,
+            "edge": 0.0223
+          },
+          {
+            "source": "PIA22223.jpg",
+            "t": 216.3,
+            "std": 11.2,
+            "edge": 0.0216
+          },
+          {
+            "source": "PIA22929.jpg",
+            "t": 297.4,
+            "std": 26.54,
+            "edge": 0.5735
+          }
+        ]
+      }
+    }
+  }
+}

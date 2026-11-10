@@ -11,8 +11,8 @@
 | Script review | `01_Script/darwin_script_master_v02.md` (**92.6/100 PASS**, 1,227 spoken words, 8/8 structure gates) |
 | FACT_NOTES | `01_Script/FACT_NOTES_v02.md` (`30 OK · 0 PARTIAL · 0 FLAG`, following `J0304` Gemini quote pass + `J0307` chronology/age updates) |
 | VO | **locked** `hos_013_vo_v03a` (512.480 s, 8:32.48). WAV sha256 `837178125a72fb250d255f1039c5cb7f8630bbb313cf23801a1155f257d796e0`. MP3 sha256 `ada7eaa775104ee5dea9e9be98155abfc0b1e9fda010097f42ca9fa25bed7f85`. v01, v02 and v03 kept. See `02_Voiceover/VO_STATUS.md`. |
-| Shorts VO | **recorded, not locked** (`J2246`, 6 Nov 2026). `hos_013_short_A_v02` 26.64 s and `hos_013_short_B_v02` 26.00 s. Both `vo_check` PASS. See `10_Shorts/vo_v02/VO_STATUS.md`. |
-| Picture | **pre-VO boards only, no mint** |
+| Shorts VO | **accepted** (`J2246`, 6 Nov 2026; `J2288` KEEP, PR #444 merged 10 Nov 2026). `hos_013_short_A_v02` 26.64 s and `hos_013_short_B_v02` 26.00 s. Both `vo_check` PASS. See `10_Shorts/vo_v02/VO_STATUS.md`. |
+| Picture | **Picture plan v01 + 22 free CG/ARCH clips + 10 WHO overlays built & QA'd (`J2476`, 10 Nov 2026).** 71 mint rows (`48` Quality + `23` Fast = `5,030` Flow credits try-1 / `12,892` expected) priced and parked for Chief behind HOS 009 and 010 (`generation_authorized: false`). |
 | Runtime target | 7–9 min, 6 parts (1,227 spoken words) |
 
 ## 19 Oct 2026 — Script v02 & Episode Gate (`J0307`)
@@ -126,6 +126,37 @@ House voice, `eleven_v3`, speed 1.04. Two takes, one each, from the v02 txt file
 | `hos_013_short_B_v02` | 26.00 s | PASS (pace warn 143 wpm; Russel/Russell sounds-alike at 0:11.42) | `6745bd813bd390bdf5091460bd9b5425eca568e4dbb3cf37f2c0a53f70ad47c0` |
 
 Scribe mismatches are the years only (`1835`, `1864`). ElevenLabs 90,171 → 89,847 left (delta 324). Nothing bought. Detail: `10_Shorts/vo_v02/VO_STATUS.md`.
+
+## 10 Nov 2026 — Picture Plan v01 on Locked VO, Free Picture Built & QA'd, Paid Mint Priced (`J2476`)
+
+- **Picture plan v01 (`07_Edit-Project/PICTURE_PLAN_v01.json`, `07_Edit-Project/PICTURE_PLAN_v01.md`, `07_Edit-Project/PRICE_REVIEW_v01.md`, `07_Edit-Project/parts/part-01_plates_v01.json .. part-06_plates_v01.json`, `10_Shorts/SHORTS_PICTURE_PLAN_v01.json`):**
+  - 94 contiguous rows across `515.00 s` (`512.480 s` locked `hos_013_vo_v03a.wav` + `2.52 s` house cream end card). Every minted row (`Q` or `F`) is **`≤ 8.00 s`**, so 0 rows exceed a single 8 s Veo 3.1 clip.
+  - **HOS-2026-11-E2 proof-first first 30 seconds (`0:00.00–0:40.00`):**
+    - **CUTS (`0:00–0:30`):** 9 distinct moving plates overlapping `0:00–0:30` (`P1:01` `3.80 s`, `P1:02` `4.10 s`, `P1:03a` `4.00 s`, `P1:03b` `4.12 s`, `P1:04a` `2.98 s`, `P1:04b` `2.64 s`, `P1:05a` `4.00 s`, `P1:05b` `3.58 s`, `P1:06` `4.22 s`), max cut **`4.22 s ≤ 4.50 s`** — **PASS**.
+    - **PROOF (`0:05–0:15`):** `P1:02` (`0:03.80–0:07.90`: hands locking *Notebook B* in drawer), `P1:03a` (`0:07.90–0:11.90`: unlabelled Galápagos finch skins with blank parchment tags), `P1:03b` (`0:11.90–0:16.02`: barnacle specimen jar, brass dissecting microscope, and Wallace's packet landing on desk) — **PASS**.
+    - **EARLY (`0:25–0:40`):** `P1:08_cg_i_think_tree` starts at **`0:39.40`** (`0:39.40–0:54.30`, inside `0:25–0:40`), tracing the public-domain 1837 *Notebook B* p. 36 branching tree (`MS DAR 121:36`) + 20-year secrecy bar (`1838 → 1858`, `SCALE: 20 years in a drawer — longer than a child takes to grow up`) — **PASS**.
+- **Free (`£0` / `0` credit) picture built and QA'd (23 rows + 10 WHO overlays):**
+  - **16 code graphics, maps, diagrams, chapter cards & end card** + **6 public-domain archive composites** = **22 rendered `1920×1080` 30 fps H.264 `.mp4` clips + `.jpg` stills** in `07_Edit-Project/code_graphics_v01/` (and mirrored to `/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v01/`).
+  - **17 verified Public Domain Wikimedia Commons files** in `07_Edit-Project/archive_pulls_v01/ARCHIVE_PULLS_RAW_v01.json` (7 historical scans/lithographs + 10 portraits rendered into framed circular cut-out overlays in `07_Edit-Project/code_graphics_v01/who_overlays/`).
+  - **1 intra-film reuse (`P6:08a_reuse_study_beaks_callback`):** reuses the `[3.80s..8.00s]` tail of `P1:01_study_beaks` (`0` extra credits).
+- **Cost table (71 rows need minting; `generation_authorized: false` on every row; parked behind HOS 009 and 010):**
+
+| Part | Chapter title | Time (`in–out`) | Rows | Quality (`100`) | Fast (`10`) | Code graphic (`0`) | Free archive (`0`) | Reuse (`0`) | Mint rows | Free rows | Flow credits (try-1) | Flow credits (expected) | Vertex try-1 (£) | Vertex expected (£) |
+|---|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Part 01 | The Twenty-Year Secret | `0:00.00–1:15.50` | 13 | 6 | 5 | 2 | 0 | 0 | 11 | 2 | 650 | 1,654 | £8.32 | £21.40 |
+| Part 02 | The Birds He Forgot to Label | `1:15.50–2:51.08` | 16 | 9 | 3 | 3 | 1 | 0 | 12 | 4 | 930 | 2,391 | £11.04 | £28.43 |
+| Part 03 | The Engine and the Barnacles | `2:51.08–4:36.26` | 19 | 8 | 6 | 4 | 1 | 0 | 14 | 5 | 860 | 2,192 | £11.68 | £29.58 |
+| Part 04 | Fever in the Islands | `4:36.26–6:06.34` | 16 | 10 | 3 | 2 | 1 | 0 | 13 | 3 | 1,030 | 2,650 | £12.00 | £30.99 |
+| Part 05 | The Night Nobody Noticed | `6:06.34–7:28.16` | 15 | 7 | 4 | 2 | 2 | 0 | 11 | 4 | 740 | 1,893 | £9.76 | £24.85 |
+| Part 06 | The Missing Piece | `7:28.16–8:35.00` | 15 | 8 | 2 | 3 | 1 | 1 | 10 | 5 | 820 | 2,112 | £11.20 | £28.45 |
+| **Total** | **Full film (`8:35.00`)** | `0:00.00–8:35.00` | **94** | **48** | **23** | **16** | **6** | **1** | **71** | **23** | **5,030** | **12,892** | **£64.00** | **£163.70** |
+
+### `polish_gate.py` & `picture_qa.py` output on the 22 built free clips
+
+```text
+polish gate PASS: 0 of 22 rows failed, 4 to look at -> 02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v01/polish_gate_v01.json
+picture QA PASS: 0 of 22 cuts fail, 4 to look at -> 02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v01/picture_qa_v01/PICTURE_QA.md, 02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v01/picture_qa_v01/picture_qa_review.jpg
+```
 
 ## STOP
 

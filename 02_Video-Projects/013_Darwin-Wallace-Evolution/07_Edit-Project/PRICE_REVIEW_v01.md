@@ -1,0 +1,58 @@
+# 013 picture plan v01: *Evolution: The Letter That Forced Darwin to Publish*
+
+**Written 10 Nov 2026 (`J2476`). Spend: `£0` / `0` Flow credits.**
+
+Timed directly to the Chief-locked long voiceover **`02_Voiceover/hos_013_vo_v03a.wav`** (`512.480 s` = `8:32.48`, `sha256: f8ef433b3b5b5571284e6f12ef339a2b2c0d39eb9978753e86a4d0efeb5e1a03`, `J1310`) and word timestamps (`02_Voiceover/stt/hos_013_vo_v03a/words_fw_small_en.json`), with the two accepted Shorts voiceovers (`hos_013_short_A_v02.wav` and `hos_013_short_B_v02.wav`, `J2288` KEEP, PR #444) mapped in `10_Shorts/SHORTS_PICTURE_PLAN_v01.json`.
+
+## 1. HOS-2026-11-E2 proof-first first 30 seconds (`0:00.00–0:40.00`)
+
+| Gate | Requirement | In `PICTURE_PLAN_v01` | Status |
+|---|---|---|---|
+| **CUTS (`0:00–0:30`)** | Every visual cut `≤ 4.5 s`, `≥ 7` distinct moving plates, no hold `> 4.5 s` | **9 distinct moving plates** overlapping `0:00–0:30` (`P1:01` `3.80 s`, `P1:02` `4.10 s`, `P1:03a` `4.00 s`, `P1:03b` `4.12 s`, `P1:04a` `2.98 s`, `P1:04b` `2.64 s`, `P1:05a` `4.00 s`, `P1:05b` `3.58 s`, `P1:06` `4.22 s`); max cut **`4.22 s`** | **PASS** |
+| **PROOF (`0:05–0:15`)** | Physical proof or apparatus already moving (no exterior establishing shot) | `P1:02` (`0:03.80–0:07.90`: hands locking *Notebook B* in drawer), `P1:03a` (`0:07.90–0:11.90`: unlabelled Galápagos finch skins with blank tags), `P1:03b` (`0:11.90–0:16.02`: barnacle specimen jar, brass dissecting microscope, and Wallace's packet landing on desk) | **PASS** |
+| **EARLY (`0:25–0:40`)** | First animated `DATA + SCALE` graphic on screen between `0:25` and `0:40`, matching `FACT_NOTES` | `P1:08_cg_i_think_tree` starts at **`0:39.40`** (`0:39.40–0:54.30`, `14.90 s`) as Darwin says *"in a private notebook — one kind of animal at the bottom, branching into many at the top"*: traces the public-domain 1837 *Notebook B* p. 36 tree (`MS DAR 121:36`) + 20-year secrecy bar (`1838 → 1858`, `SCALE: 20 years in a drawer — longer than a child takes to grow up`) | **PASS** |
+
+## 2. Cost table (nothing minted in `J2476`; parked behind HOS 009 and 010)
+
+| Part | Chapter title | Time (`in–out`) | Rows | Quality (`100`) | Fast (`10`) | Code graphic (`0`) | Free archive (`0`) | Reuse (`0`) | Mint rows | Free rows | Flow credits (try-1) | Flow credits (expected) | Vertex try-1 (£) | Vertex expected (£) |
+|---|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Part 01 | The Twenty-Year Secret | `0:00.00–1:15.50` | 14 | 7 | 5 | 2 | 0 | 0 | 12 | 2 | 750 | 1,913 | £9.76 | £24.63 |
+| Part 02 | The Birds He Forgot to Label | `1:15.50–2:51.08` | 16 | 9 | 3 | 3 | 1 | 0 | 12 | 4 | 930 | 2,391 | £12.32 | £31.88 |
+| Part 03 | The Engine and the Barnacles | `2:51.08–4:36.26` | 20 | 10 | 5 | 4 | 1 | 0 | 15 | 5 | 1,050 | 2,690 | £12.80 | £32.64 |
+| Part 04 | Fever in the Islands | `4:36.26–6:06.34` | 16 | 9 | 4 | 2 | 1 | 0 | 13 | 3 | 940 | 2,411 | £12.00 | £30.73 |
+| Part 05 | The Night Nobody Noticed | `6:06.34–7:28.16` | 15 | 7 | 4 | 2 | 2 | 0 | 11 | 4 | 740 | 1,893 | £10.08 | £25.61 |
+| Part 06 | The Missing Piece | `7:28.16–8:35.00` | 13 | 6 | 2 | 3 | 1 | 1 | 8 | 5 | 620 | 1,594 | £7.04 | £18.21 |
+| **Total** | **Full film (`8:35.00`)** | `0:00.00–8:35.00` | **94** | **48** | **23** | **16** | **6** | **1** | **71** | **23** | **5,030** | **12,892** | **£64.00** | **£163.70** |
+
+- **94 rows** across `515.00 s` (`512.48 s` VO + `2.52 s` cream end card). Every minted row (`Q` or `F`) is **`≤ 8.00 s`**, so 0 rows exceed the 8 s length of a single Veo 3.1 clip.
+- **23 free (`£0` / `0` credit) rows are built and QA'd on disk/NAS now:** 16 animated code graphics/maps/diagrams/cards + 6 public-domain archive composites + 1 intra-film callback reuse (`P6:08a` reusing the `[3.80s..8.00s]` tail of `P1:01_study_beaks`).
+- **71 rows need minting:** **48 Quality** (`4,800` credits try-1) and **23 Fast** (`230` credits try-1, all non-emissive daylight/window-light) = **`5,030` Flow credits first-try** (`12,892` expected with the standard `2.59×` Q / `2.0×` F retry allowance). `generation_authorized` is `false` on every row; parked for the Chief's price pass behind **HOS 009** and **HOS 010**.
+
+## 3. Free picture built and QA'd in `J2476` (`£0`)
+
+- **22 rendered `1920×1080` 30 fps H.264 `.mp4` clips + `.jpg` hero stills** in `07_Edit-Project/code_graphics_v01/` (mirrored to `/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v01/`):
+  - 6 chapter & end cards: `P2:01_card_p02`, `P3:01_card_p03`, `P4:01_card_p04`, `P5:01_card_p05`, `P6:01_card_p06`, `P6:09_cream_end_card`
+  - 10 animated data charts, maps & inked explainer diagrams: `P1:08_cg_i_think_tree`, `P1:10_cg_globe_arc`, `P2:06b_cg_tortoise_shells`, `P2:09_cg_finch_toolbox`, `P3:03_cg_malthus_curve`, `P3:06_nature_keeps_fit`, `P3:12_cg_barnacle_counter`, `P4:05_cg_wallace_counter`, `P5:07_cg_timeline_origin`, `P6:03_cg_blending_beaks`
+  - 6 public-domain archive composites (2.5D layered desk + animated ink callouts + corner credit in white Didot italic): `P2:12a_arch_notebook_tree_zoom` (`MS DAR 121:36`), `P3:10a_arch_vestiges_1844` (*Vestiges* 1844), `P4:06b_arch_malthus_1798` (Malthus 1798), `P5:05b_arch_origin_1859_title` (*Origin* 1859 1st ed.), `P5:09_arch_darwinism_1889` (*Darwinism* 1889 1st ed.), `P6:04b_arch_mendel_1866_paper` (Mendel 1866)
+- **17 verified Public Domain Wikimedia Commons scans & portraits** downloaded in `07_Edit-Project/archive_pulls_v01/ARCHIVE_PULLS_RAW_v01.json` (7 document/lithograph scans + 10 historical portraits for the `WHO` lower-third cards, rendered as framed cut-out overlays in `07_Edit-Project/code_graphics_v01/who_overlays/`).
+- **QA (`picture_qa.py` + `polish_gate.py`):** recorded in `07_Edit-Project/code_graphics_v01/picture_qa_v01.txt` (`0` fails, `0` warnings) and `07_Edit-Project/code_graphics_v01/polish_gate_v01.txt` (`0` fails).
+
+---
+
+## 4. Row-by-row picture plan v01 (timed to `hos_013_vo_v03a.wav`)
+
+### Part 01 — The Twenty-Year Secret · `0:00.00–1:15.50` (`75.50 s`) · 14 rows
+
+| Row | In (`t_s`) | Out (`t_end_s`) | Dur | Route | Teach / Overlay | Shot & Spoken VO | Picture source, path / link & licence, and mint cost |
+|---|---:|---:|---:|---|---|---|---|
+| `P1:01_study_beaks` | `0:00.00` (`0.00s`) | `0:03.80` (`3.80s`) | `3.80s` | Veo 3.1 Quality | `LABEL: LOCKED AWAY` | Warm candlelit study at Down House: four Galápagos finch specimens with contrasting beaks (heavy nutcracker to thin needle) lie beside an open red-leather notebook showing a small inked branching tree (Answer image by 0:03; Short A frame 0) — *" Why  did  Charles  Darwin  work  out  how  life  changes  over  time"* | New plate, needs minting · Flow Veo 3.1 Quality · 100 credits |
+| `P1:02_drawer_lock` | `0:03.80` (`3.80s`) | `0:07.90` (`7.90s`) | `4.10s` | Veo 3.1 Quality | — | Darwin's hands close the red-leather notebook, place it inside a mahogany desk drawer, and turn a brass key to lock it shut (Title question by 0:07; HOS-2026-11-E2 physical proof 0:05–0:15) — *" and  then  lock  it  in  a  drawer  for  20  years?"* | New plate, needs minting · Flow Veo 3.1 Quality · 100 credits |
+| `P1:03a_unlabelled_birds` | `0:07.90` (`7.90s`) | `0:11.90` (`11.90s`) | `4.00s` | Veo 3.1 Fast | — | On the wooden study table in grey window light, hands lay down three dark Galápagos finch skins with blank parchment tags tied to their legs (HOS-2026-11-E2 physical proof 0:05–0:15) — *" By  the  end  of  this  film  you'll  know  how  a  few  unlabeled  birds,"* | New plate, needs minting · Flow Veo 3.1 Fast (non-emissive) · 10 credits |
+| `P1:03b_malay_packet` | `0:11.90` (`11.90s`) | `0:16.02` (`16.02s`) | `4.12s` | Veo 3.1 Quality | `LABEL: ONE LETTER` | Beside a glass jar of preserved barnacles and a brass dissecting microscope, a twine-tied foreign paper packet lands on Darwin's desk (Promise by 0:15; HOS-2026-11-E2 physical proof 0:05–0:15) — *" eight  years  of  barnacles  and  one  letter  from  the  other  side  of  the"* | New plate, needs minting · Flow Veo 3.1 Quality · 100 credits |
+| `P1:04a_packet_seal` | `0:16.02` (`16.02s`) | `0:19.00` (`19.00s`) | `2.98s` | Veo 3.1 Fast | — | Close push-in on the red wax seal and brass magnifying glass beside the twine-tied packet in grey window light (HOS-2026-11-E2 cut < 4.5 s) — *" world  forced  the  biggest  secret  in  biology"* | New plate, needs minting · Flow Veo 3.1 Fast (non-emissive) · 10 credits |
+| `P1:04b_drawer_unlock` | `0:19.00` (`19.00s`) | `0:21.64` (`21.64s`) | `2.64s` | Veo 3.1 Fast | — | Close on a hand turning the brass key in the mahogany desk drawer and sliding the locked red-leather notebook back into the open in grey window light (HOS-2026-11-E2 cut < 4.5 s) — *" into  the  open."* | New plate, needs minting · Flow Veo 3.1 Fast (non-emissive) · 10 credits |
+| `P1:05a_museum_cases` | `0:21.64` (`21.64s`) | `0:25.64` (`25.64s`) | `4.00s` | Veo 3.1 Quality | `WHEN: LONDON · 1830S` | Wood-panelled London museum hall: rows of tall glass cases hold animal skeletons under blank brass plaques (Stakes by 0:25; HOS-2026-11-E2 cut <= 4.5 s) — *" In  the  1830s  most  naturalists  believed  every  kind"* | New plate, needs minting · Flow Veo 3.1 Quality · 100 credits |
+| `P1:05b_museum_plaques` | `0:25.64` (`25.64s`) | `0:29.22` (`29.22s`) | `3.58s` | Veo 3.1 Fast | — | Close tracking shot along a locked glass museum case of preserved birds and skeletons in grey window light, brass lock bolts fixed shut (HOS-2026-11-E2 cut < 4.5 s) — *" of  animal  and  plant  had  been  made  once  and  never  changed."* | New plate, needs minting · Flow Veo 3.1 Fast (non-emissive) · 10 credits |
+| `P1:06_padlock_shut` | `0:29.22` (`29.22s`) | `0:33.44` (`33.44s`) | `4.22s` | Veo 3.1 Fast | `LABEL: FIXED FOREVER?` | Close-up in grey window light: a heavy iron padlock clicks shut on a wooden specimen box (9th moving plate overlapping 0:00–0:30, cut 4.22 s <= 4.5 s) — *" Saying  anything  else  could  ruin  a  scientist."* | New plate, needs minting · Flow Veo 3.1 Fast (non-emissive) · 10 credits |
+| `P1:07_darwin_1837_desk` | `0:33.44` (`33.44s`) | `0:39.40` (`39.40s`) | `5.96s` | Veo 3.1 Quality | `WHO: Charles Darwin (1809–1882) — naturalist` + `WHEN: JULY 1837` | Summer 1837: 28-year-old Charles Darwin (clean-shaven with sideburns, dark coat) dips a steel pen at his study desk (First real fact before 0:45) — *" But  in  the  summer  of  1837  a  28 -year -old  Charles  Darwin  drew  a  little  tree"* | New plate, needs minting · Flow Veo 3.1 Quality · 100 credits · WHO portrait cut-out overlay built at `07_Edit-Project/code_graphics_v01/who_overlays/who_charles_darwin_overlay.png` from `07_Edit-Project/archive_pulls_v01/raw/who_charles_darwin.jpg` (https://commons.wikimedia.org/wiki/File%3ACharles_Darwin_seated.jpg, **Public domain**) |
+| `P1:08_cg_i_think_tree` | `0:39.40` (`39.40s`) | `0:54.30` (`54.30s`) | `14.90s` | code-graphic | `DATA: TWENTY YEARS IN A DRAWER` · `SCALE: 20 years in a drawer — longer than a child takes to grow up` | Code graphic #1 (starts at 0:39.40 inside 0:25–0:40 HOS-2026-11-E2 window): scanned trace of Darwin's 1837 Notebook B p. 36 branching tree drawing itself in candle-gold ink beneath "I think", then a 20-year secrecy bar filling from 1838 to 1858 — *" in  a  private  notebook,  one  kind  of  animal  at  the  bottom  branching  into  ma..."* | Built £0 code graphic (`07_Edit-Project/code_graphics_v01/code_graphic_013_p1_08_cg_i_think_tree.mp4`) · 0 credits · embeds public-domain scan `07_Edit-Project/archive_pulls_v01/raw/darwin_tree_1837.png` (https://commons.wikimedia.org/wiki/File%3ADarwin_Tree_1837.png, Public domain) |
