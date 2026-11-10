@@ -1,0 +1,23 @@
+P1:08_cg_i_think_tree     7.5s code_graphic_013_p1_08_cg_i_ ok
+P1:10_cg_globe_arc    17.7s code_graphic_013_p1_10_cg_gl ok
+P2:01_card_p02    21.2s code_graphic_013_p2_01_card_ ok
+P2:06b_cg_tortoise_shells    24.4s code_graphic_013_p2_06b_cg_t ok
+P2:09_cg_finch_toolbox    33.0s code_graphic_013_p2_09_cg_fi ok
+P2:12a_arch_notebook_tree_zoom    41.9s code_graphic_013_p2_12a_arch ok
+P3:01_card_p03    45.4s code_graphic_013_p3_01_card_ ok
+P3:03_cg_malthus_curve    50.8s code_graphic_013_p3_03_cg_ma WARN low detail: luma std 17.23 < 18.0; low detail: edge density 0.0302 < film p5 0.0304
+P3:06_nature_keeps_fit    59.3s code_graphic_013_p3_06_natur ok
+P3:10a_arch_vestiges_1844    65.2s code_graphic_013_p3_10a_arch ok
+P3:12_cg_barnacle_counter    70.2s code_graphic_013_p3_12_cg_ba ok
+P4:01_card_p04    74.0s code_graphic_013_p4_01_card_ WARN low detail: luma std 17.94 < 18.0
+P4:05_cg_wallace_counter    80.0s code_graphic_013_p4_05_cg_wa ok
+P4:06b_arch_malthus_1798    88.3s code_graphic_013_p4_06b_arch ok
+P5:01_card_p05    92.4s code_graphic_013_p5_01_card_ ok
+P5:05b_arch_origin_1859_title    95.0s code_graphic_013_p5_05b_arch ok
+P5:07_cg_timeline_origin    99.2s code_graphic_013_p5_07_cg_ti ok
+P5:09_arch_darwinism_1889   105.1s code_graphic_013_p5_09_arch_ ok
+P6:01_card_p06   109.0s code_graphic_013_p6_01_card_ WARN low detail: luma std 17.91 < 18.0
+P6:03_cg_blending_beaks   115.9s code_graphic_013_p6_03_cg_bl WARN low detail: edge density 0.0254 < film p5 0.0304
+P6:04b_arch_mendel_1866_paper   123.7s code_graphic_013_p6_04b_arch ok
+P6:09_cream_end_card   126.6s code_graphic_013_p6_09_cream ok
+polish gate PASS: 0 of 22 rows failed, 4 to look at -> /Users/benjaminoats/_desk/wt/hos-J2476/02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v01/polish_gate_v01.json

@@ -1,0 +1,244 @@
+[
+  {
+    "row": "P1:08_cg_i_think_tree",
+    "timeline_in": 0.0,
+    "timeline_out": 14.9,
+    "source": "code_graphic_013_p1_08_cg_i_think_tree.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  },
+  {
+    "row": "P1:10_cg_globe_arc",
+    "timeline_in": 14.9,
+    "timeline_out": 20.5,
+    "source": "code_graphic_013_p1_10_cg_globe_arc.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  },
+  {
+    "row": "P2:01_card_p02",
+    "timeline_in": 20.5,
+    "timeline_out": 22.0,
+    "source": "code_graphic_013_p2_01_card_p02.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  },
+  {
+    "row": "P2:06b_cg_tortoise_shells",
+    "timeline_in": 22.0,
+    "timeline_out": 26.867,
+    "source": "code_graphic_013_p2_06b_cg_tortoise_shells.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  },
+  {
+    "row": "P2:09_cg_finch_toolbox",
+    "timeline_in": 26.867,
+    "timeline_out": 39.2,
+    "source": "code_graphic_013_p2_09_cg_finch_toolbox.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  },
+  {
+    "row": "P2:12a_arch_notebook_tree_zoom",
+    "timeline_in": 39.2,
+    "timeline_out": 44.6,
+    "source": "code_graphic_013_p2_12a_arch_notebook_tree_zoom.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  },
+  {
+    "row": "P3:01_card_p03",
+    "timeline_in": 44.6,
+    "timeline_out": 46.1,
+    "source": "code_graphic_013_p3_01_card_p03.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  },
+  {
+    "row": "P3:03_cg_malthus_curve",
+    "timeline_in": 46.1,
+    "timeline_out": 55.5,
+    "source": "code_graphic_013_p3_03_cg_malthus_curve.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  },
+  {
+    "row": "P3:06_nature_keeps_fit",
+    "timeline_in": 55.5,
+    "timeline_out": 63.067,
+    "source": "code_graphic_013_p3_06_nature_keeps_fit.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  },
+  {
+    "row": "P3:10a_arch_vestiges_1844",
+    "timeline_in": 63.067,
+    "timeline_out": 67.267,
+    "source": "code_graphic_013_p3_10a_arch_vestiges_1844.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  },
+  {
+    "row": "P3:12_cg_barnacle_counter",
+    "timeline_in": 67.267,
+    "timeline_out": 73.234,
+    "source": "code_graphic_013_p3_12_cg_barnacle_counter.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  },
+  {
+    "row": "P4:01_card_p04",
+    "timeline_in": 73.234,
+    "timeline_out": 74.734,
+    "source": "code_graphic_013_p4_01_card_p04.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  },
+  {
+    "row": "P4:05_cg_wallace_counter",
+    "timeline_in": 74.734,
+    "timeline_out": 85.234,
+    "source": "code_graphic_013_p4_05_cg_wallace_counter.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  },
+  {
+    "row": "P4:06b_arch_malthus_1798",
+    "timeline_in": 85.234,
+    "timeline_out": 91.301,
+    "source": "code_graphic_013_p4_06b_arch_malthus_1798.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  },
+  {
+    "row": "P5:01_card_p05",
+    "timeline_in": 91.301,
+    "timeline_out": 93.534,
+    "source": "code_graphic_013_p5_01_card_p05.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  },
+  {
+    "row": "P5:05b_arch_origin_1859_title",
+    "timeline_in": 93.534,
+    "timeline_out": 96.401,
+    "source": "code_graphic_013_p5_05b_arch_origin_1859_title.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  },
+  {
+    "row": "P5:07_cg_timeline_origin",
+    "timeline_in": 96.401,
+    "timeline_out": 101.968,
+    "source": "code_graphic_013_p5_07_cg_timeline_origin.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  },
+  {
+    "row": "P5:09_arch_darwinism_1889",
+    "timeline_in": 101.968,
+    "timeline_out": 108.235,
+    "source": "code_graphic_013_p5_09_arch_darwinism_1889.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  },
+  {
+    "row": "P6:01_card_p06",
+    "timeline_in": 108.235,
+    "timeline_out": 109.735,
+    "source": "code_graphic_013_p6_01_card_p06.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  },
+  {
+    "row": "P6:03_cg_blending_beaks",
+    "timeline_in": 109.735,
+    "timeline_out": 122.002,
+    "source": "code_graphic_013_p6_03_cg_blending_beaks.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  },
+  {
+    "row": "P6:04b_arch_mendel_1866_paper",
+    "timeline_in": 122.002,
+    "timeline_out": 125.369,
+    "source": "code_graphic_013_p6_04b_arch_mendel_1866_paper.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  },
+  {
+    "row": "P6:09_cream_end_card",
+    "timeline_in": 125.369,
+    "timeline_out": 127.902,
+    "source": "code_graphic_013_p6_09_cream_end_card.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  }
+]

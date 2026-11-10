@@ -1,0 +1,5 @@
+WARN   0:51 row P3:03_cg_malthus_curve code_graphic_013_p3_03_cg_malthus_curve.mp4: low detail: luma std 17.23 < 18.0; low detail: edge density 0.0302 < film p5 0.0304
+WARN   1:14 row P4:01_card_p04 code_graphic_013_p4_01_card_p04.mp4: low detail: luma std 17.94 < 18.0
+WARN   1:49 row P6:01_card_p06 code_graphic_013_p6_01_card_p06.mp4: low detail: luma std 17.91 < 18.0
+WARN   1:56 row P6:03_cg_blending_beaks code_graphic_013_p6_03_cg_blending_beaks.mp4: low detail: edge density 0.0254 < film p5 0.0304
+picture QA PASS: 0 of 22 cuts fail, 4 to look at -> /Users/benjaminoats/_desk/wt/hos-J2476/02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v01/picture_qa_v01/PICTURE_QA.md, /Users/benjaminoats/_desk/wt/hos-J2476/02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v01/picture_qa_v01/picture_qa_review.jpg
