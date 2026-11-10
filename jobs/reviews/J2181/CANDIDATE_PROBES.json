@@ -1,0 +1,385 @@
+[
+  {
+    "id": "07_priestley",
+    "path": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part03/raw/v01/07_priestley_t1.mp4",
+    "expected_sha256": "b8a981ea74471bd28997f13bce0899c832bb67f36fa78048f2c615a129256ad6",
+    "board": {
+      "id": "07_priestley",
+      "t_s": 214.67,
+      "t": "3:34.67",
+      "explorer": false,
+      "side_label": "JOSEPH PRIESTLEY",
+      "quality": "Quality",
+      "engine_reason": "Quality: a named person's readable face is the hero (first appearance).",
+      "prompt": "Premium Animistry-class 3D cartoon. Inside the brewery beside a great steaming vat: Joseph Priestley, a man of about thirty-eight, long face, strong nose, short grey wig, plain dark coat, holds a glass jar up into the rising air and studies it with delight. Readable, finished face. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 6.16,
+      "vo_land": [
+        "(continues) Leeds, seventeen seventy-one.",
+        "He knew that if you burn a candle inside a sealed glass jar, the flame soon dies, and the air left behind won't let another candle burn."
+      ],
+      "route": "vertex",
+      "clip_s": 8,
+      "cost_try1_gbp": 1.28,
+      "cost_expected_gbp": 3.39,
+      "cum_expected_gbp": 60.67,
+      "beyond_floor": false,
+      "uat_disposition": "KEEP",
+      "kept_source": "07_priestley_t1.mp4",
+      "kept_sha256": "b8a981ea74471bd28997f13bce0899c832bb67f36fa78048f2c615a129256ad6",
+      "uat_note": "KEEP t1 (Chief, desk #180 6102934743)"
+    },
+    "exists": true,
+    "sha256": "b8a981ea74471bd28997f13bce0899c832bb67f36fa78048f2c615a129256ad6",
+    "hash_match": true,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 1920,
+          "height": 1080,
+          "r_frame_rate": "24/1"
+        }
+      ],
+      "format": {
+        "duration": "8.000000"
+      }
+    },
+    "sheet": "/Users/benjaminoats/_desk/handoff/J2181/07_priestley_sheet.jpg"
+  },
+  {
+    "id": "12_mouse_mint",
+    "path": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part03/raw/v01/12_mouse_mint_t1.mp4",
+    "expected_sha256": "485002cfd782fc68b705e41c75c4ebb9765465e5e6f30ddf2cea3e02d81901b6",
+    "board": {
+      "id": "12_mouse_mint",
+      "t_s": 243.89,
+      "t": "4:03.89",
+      "explorer": false,
+      "side_label": "THE MOUSE LIVED",
+      "quality": "Fast",
+      "engine_reason": "Fast: daylight or window light; nothing emissive in frame.",
+      "prompt": "Premium Animistry-class 3D cartoon. Two glass jars side by side on Priestley's table: in the one with the mint, a small brown mouse sniffs about, lively and well, washing its whiskers. Wonder, not cruelty: the mouse is bright-eyed and busy. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 7.87,
+      "vo_land": [
+        "Then he tried air that mice had made stale with their breathing.",
+        "In the jar where mint had grown, a mouse lived perfectly well."
+      ],
+      "route": "vertex",
+      "clip_s": 8,
+      "cost_try1_gbp": 0.64,
+      "cost_expected_gbp": 1.33,
+      "cum_expected_gbp": 70.8,
+      "beyond_floor": true,
+      "uat_disposition": "KEEP",
+      "kept_source": "12_mouse_mint_t1.mp4",
+      "kept_sha256": "485002cfd782fc68b705e41c75c4ebb9765465e5e6f30ddf2cea3e02d81901b6",
+      "uat_note": "KEEP t1 (Chief, desk #180 6102934743)"
+    },
+    "exists": true,
+    "sha256": "485002cfd782fc68b705e41c75c4ebb9765465e5e6f30ddf2cea3e02d81901b6",
+    "hash_match": true,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 1920,
+          "height": 1080,
+          "r_frame_rate": "24/1"
+        }
+      ],
+      "format": {
+        "duration": "8.000000"
+      }
+    },
+    "sheet": "/Users/benjaminoats/_desk/handoff/J2181/12_mouse_mint_sheet.jpg"
+  },
+  {
+    "id": "10_only_green",
+    "path": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/10_only_green_t2.mp4",
+    "expected_sha256": "cfd7a02a6d3f203e9528feef1bcfe1fc9f0e7a5a482a83f791de77daec55334d",
+    "board": {
+      "id": "10_only_green",
+      "t_s": 332.14,
+      "t": "5:32.14",
+      "explorer": false,
+      "side_label": "ONLY THE GREEN PARTS",
+      "quality": "Fast",
+      "engine_reason": "Fast: daylight or window light; nothing emissive in frame.",
+      "prompt": "Premium Animistry-class 3D cartoon. Three jars of water on the sunny sill: a pale root, a red flower and a green leaf; only the green leaf fizzes with bubbles. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 4.6,
+      "vo_land": [
+        "Only the green parts made bubbles.",
+        "Roots and flowers didn't."
+      ],
+      "route": "vertex",
+      "clip_s": 6,
+      "cost_try1_gbp": 0.48,
+      "cost_expected_gbp": 1.01,
+      "cum_expected_gbp": 94.39,
+      "beyond_floor": true,
+      "uat_disposition": "KEEP",
+      "kept_source": "10_only_green_t2.mp4",
+      "kept_sha256": "cfd7a02a6d3f203e9528feef1bcfe1fc9f0e7a5a482a83f791de77daec55334d",
+      "uat_note": "KEEP Flow t2 (Chief, desk #180 6136917197)"
+    },
+    "exists": true,
+    "sha256": "cfd7a02a6d3f203e9528feef1bcfe1fc9f0e7a5a482a83f791de77daec55334d",
+    "hash_match": true,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 1280,
+          "height": 720,
+          "r_frame_rate": "24/1"
+        }
+      ],
+      "format": {
+        "duration": "8.000000"
+      }
+    },
+    "sheet": "/Users/benjaminoats/_desk/handoff/J2181/10_only_green_sheet.jpg"
+  },
+  {
+    "id": "15_leaf_turns_sun",
+    "path": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/15_leaf_turns_sun_t1.mp4",
+    "expected_sha256": "c69d74e82e593507617d728567009110ea7cfff7d9e5a465f3854f03586ac7ae",
+    "board": {
+      "id": "15_leaf_turns_sun",
+      "t_s": 361.24,
+      "t": "6:01.24",
+      "explorer": false,
+      "side_label": null,
+      "quality": "Fast",
+      "engine_reason": "Fast: daylight or window light; nothing emissive in frame.",
+      "prompt": "Premium Animistry-class 3D cartoon. A potted plant on the sunny sill slowly turns its leaves towards the window. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 2.92,
+      "vo_land": [
+        "(continues) We now call that photosynthesis, from the Greek for putting together with light."
+      ],
+      "route": "vertex",
+      "clip_s": 4,
+      "cost_try1_gbp": 0.32,
+      "cost_expected_gbp": 0.7,
+      "cum_expected_gbp": 103.57,
+      "beyond_floor": true,
+      "uat_disposition": "KEEP",
+      "kept_source": "15_leaf_turns_sun_t1.mp4",
+      "kept_sha256": "c69d74e82e593507617d728567009110ea7cfff7d9e5a465f3854f03586ac7ae",
+      "uat_note": "KEEP (Flow t1 (J0140 batch 2; Chief 15 Oct sweep #180 IC_kwDOUEPCF88AAAABcNg8Bw))"
+    },
+    "exists": true,
+    "sha256": "c69d74e82e593507617d728567009110ea7cfff7d9e5a465f3854f03586ac7ae",
+    "hash_match": true,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 1280,
+          "height": 720,
+          "r_frame_rate": "24/1"
+        }
+      ],
+      "format": {
+        "duration": "8.000000"
+      }
+    },
+    "sheet": "/Users/benjaminoats/_desk/handoff/J2181/15_leaf_turns_sun_sheet.jpg"
+  },
+  {
+    "id": "03_pot_jar_leaf",
+    "path": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/raw/v01/03_pot_jar_leaf_t1.mp4",
+    "expected_sha256": "b1aaba6dbb36659388751fe942c5a7b367d35a9e181c3599a5cf8f4e7b6c96cb",
+    "board": {
+      "id": "03_pot_jar_leaf",
+      "t_s": 7.36,
+      "t": "0:07.36",
+      "explorer": false,
+      "side_label": "A POT \u00b7 A JAR \u00b7 THE SUN (one at a time)",
+      "quality": "Fast",
+      "engine_reason": "Fast: daylight or window light; nothing emissive in frame.",
+      "prompt": "Premium Animistry-class 3D cartoon. A sunlit oak table by a window. Three things appear one after another: a clay pot with a thin willow shoot, a glass jar turned over a green sprig of mint, and a green leaf in a jar of water beaded with tiny silver bubbles. The camera eases along them in that order. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 7.5,
+      "vo_land": [
+        "By the end of this film, you'll know how a willow in a pot, a sprig of mint and a sunny window cracked one of nature's oldest secrets, and why it took more than a hundred and fifty years."
+      ],
+      "route": "vertex",
+      "clip_s": 8,
+      "cost_try1_gbp": 0.64,
+      "cost_expected_gbp": 1.33,
+      "cum_expected_gbp": 5.41,
+      "beyond_floor": false,
+      "uat_disposition": "KEEP",
+      "kept_source": "03_pot_jar_leaf_t1.mp4",
+      "kept_sha256": "b1aaba6dbb36659388751fe942c5a7b367d35a9e181c3599a5cf8f4e7b6c96cb",
+      "uat_note": "KEEP Vertex Fast t1 (Claude #180 5951520953)"
+    },
+    "exists": true,
+    "sha256": "b1aaba6dbb36659388751fe942c5a7b367d35a9e181c3599a5cf8f4e7b6c96cb",
+    "hash_match": true,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "width": 1920,
+          "height": 1080,
+          "r_frame_rate": "24/1"
+        }
+      ],
+      "format": {
+        "duration": "8.000000"
+      }
+    },
+    "sheet": "/Users/benjaminoats/_desk/handoff/J2181/03_pot_jar_leaf_sheet.jpg"
+  },
+  {
+    "id": "09_injured_air",
+    "path": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part03/raw/v01/09_injured_air_t1.mp4",
+    "expected_sha256": "23cc12c39387d6795072dda135139e6a589b93ede341c2f9ce89af016099adf5",
+    "board": {
+      "id": "09_injured_air",
+      "t_s": 228.47,
+      "t": "3:48.47",
+      "explorer": false,
+      "side_label": "\"INJURED\" AIR",
+      "quality": "Fast",
+      "engine_reason": "Fast: daylight or window light; nothing emissive in frame.",
+      "prompt": "Premium Animistry-class 3D cartoon. Close on the sealed glass jar in its bowl of water: a thin wisp of smoke curls from a dead wick inside and hangs, trapped. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 2.72,
+      "vo_land": [
+        "Priestley called that air injured."
+      ],
+      "route": "vertex",
+      "clip_s": 4,
+      "cost_try1_gbp": 0.32,
+      "cost_expected_gbp": 0.7,
+      "cum_expected_gbp": 64.76,
+      "beyond_floor": false,
+      "uat_disposition": "KEEP",
+      "kept_source": "09_injured_air_t1.mp4",
+      "kept_sha256": "23cc12c39387d6795072dda135139e6a589b93ede341c2f9ce89af016099adf5",
+      "uat_note": "KEEP t1 (Chief, desk #180 6102934743)"
+    },
+    "exists": true,
+    "sha256": "23cc12c39387d6795072dda135139e6a589b93ede341c2f9ce89af016099adf5",
+    "hash_match": true,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "width": 1920,
+          "height": 1080,
+          "r_frame_rate": "24/1"
+        }
+      ],
+      "format": {
+        "duration": "4.000000"
+      }
+    },
+    "sheet": "/Users/benjaminoats/_desk/handoff/J2181/09_injured_air_sheet.jpg"
+  },
+  {
+    "id": "15_quill_vegetable",
+    "path": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part03/raw/v01/15_quill_vegetable_t1.mp4",
+    "expected_sha256": "ccc237cf6edfb24e29d1e9031077786209e2fcf749bbbe33cb1ac040603a9f21",
+    "board": {
+      "id": "15_quill_vegetable",
+      "t_s": 261.35,
+      "t": "4:21.35",
+      "explorer": false,
+      "side_label": null,
+      "quality": "Fast",
+      "engine_reason": "Fast: hands and props only, no face, nothing emissive.",
+      "prompt": "Premium Animistry-class 3D cartoon. Close on Priestley's hand writing with a quill in a notebook, the mint jar blurred beside it; no readable text. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 4.5,
+      "vo_land": [
+        "Priestley wrote that the damage animals do to the air is repaired by \"the vegetable creation.\" Plants repair the air."
+      ],
+      "route": "vertex",
+      "clip_s": 6,
+      "cost_try1_gbp": 0.48,
+      "cost_expected_gbp": 1.01,
+      "cum_expected_gbp": 74.46,
+      "beyond_floor": true,
+      "uat_disposition": "KEEP",
+      "kept_source": "15_quill_vegetable_t1.mp4",
+      "kept_sha256": "ccc237cf6edfb24e29d1e9031077786209e2fcf749bbbe33cb1ac040603a9f21",
+      "uat_note": "KEEP t1 (Chief, desk #180 6102934743)"
+    },
+    "exists": true,
+    "sha256": "ccc237cf6edfb24e29d1e9031077786209e2fcf749bbbe33cb1ac040603a9f21",
+    "hash_match": true,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "width": 1920,
+          "height": 1080,
+          "r_frame_rate": "24/1"
+        }
+      ],
+      "format": {
+        "duration": "6.000000"
+      }
+    },
+    "sheet": "/Users/benjaminoats/_desk/handoff/J2181/15_quill_vegetable_sheet.jpg"
+  },
+  {
+    "id": "01_soil_to_sky",
+    "path": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part03/raw/v01/01_soil_to_sky_t1.mp4",
+    "expected_sha256": "d23f24d6dbd1f3283af322a9dd112a2b67357dfda9b9b2f844fcf79e33bd317f",
+    "board": {
+      "id": "01_soil_to_sky",
+      "t_s": 183.05,
+      "t": "3:03.05",
+      "explorer": false,
+      "side_label": null,
+      "quality": "Fast",
+      "engine_reason": "Fast: daylight or window light; nothing emissive in frame.",
+      "prompt": "Premium Animistry-class 3D cartoon. Close on dark garden soil; the camera rises slowly up a plant stem, through leaves and out into a wide blue sky with drifting clouds. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.",
+      "use_s": 5.04,
+      "vo_land": [
+        "Nearly a century later, the question moved from the soil to the sky."
+      ],
+      "route": "vertex",
+      "clip_s": 6,
+      "cost_try1_gbp": 0.48,
+      "cost_expected_gbp": 1.01,
+      "cum_expected_gbp": 50.87,
+      "beyond_floor": false,
+      "uat_disposition": "KEEP",
+      "kept_source": "01_soil_to_sky_t1.mp4",
+      "kept_sha256": "d23f24d6dbd1f3283af322a9dd112a2b67357dfda9b9b2f844fcf79e33bd317f",
+      "uat_note": "KEEP t1 (Chief, desk #180 6102934743)"
+    },
+    "exists": true,
+    "sha256": "d23f24d6dbd1f3283af322a9dd112a2b67357dfda9b9b2f844fcf79e33bd317f",
+    "hash_match": true,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "width": 1920,
+          "height": 1080,
+          "r_frame_rate": "24/1"
+        }
+      ],
+      "format": {
+        "duration": "6.000000"
+      }
+    },
+    "sheet": "/Users/benjaminoats/_desk/handoff/J2181/01_soil_to_sky_sheet.jpg"
+  }
+]

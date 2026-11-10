@@ -1,0 +1,158 @@
+{
+  "verdict": "FAIL",
+  "video": "",
+  "rules": {
+    "kind_fail": "computer[- ]?(reconstruction|model|generated|simulation|graphic)|\\bsimulation\\b|\\bdiagram|\\bchart\\b|\\bgraph\\b|\\bschematic|\\bannotated\\b|\\blabell?ed\\b|\\bscreen ?shot|\\bwireframe|\\bcad\\b|\\binfographic",
+    "kind_warn": "\\bartist|\\billustration|\\bconcept\\b|\\brender|\\banimation\\b|\\bmap\\b|\\bmosaic\\b|\\bcomposite\\b",
+    "upscale_fail": 2.35,
+    "upscale_warn": 2.0,
+    "max_reuse": 2,
+    "max_stretches": 5,
+    "same_stretch": 10.0,
+    "pixels": "not run (no video)"
+  },
+  "failed": [
+    {
+      "cut": 5,
+      "row": "S06",
+      "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/06_collect_blaze_t3.mp4",
+      "title": "Existing generated HOS006 KEEP long plate; new interval/crop unapproved",
+      "t": 17.88,
+      "at": "0:18",
+      "fail": [
+        "sharpness: upscaled 2.67x (limit 2.35x)"
+      ],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 7,
+      "row": "loop_tail",
+      "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/raw/v01/03_pot_jar_leaf_t1.mp4",
+      "title": "Existing generated HOS006 KEEP long plate; new interval/crop unapproved",
+      "t": 23.7,
+      "at": "0:24",
+      "fail": [
+        "reuse: same stretch as 0:01 (give it a new stretch, or a new render)"
+      ],
+      "warn": [
+        "sharpness: upscaled 2.35x, may look soft"
+      ],
+      "offset": 0.0
+    }
+  ],
+  "warn": [
+    {
+      "cut": 0,
+      "row": "S01",
+      "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/raw/v01/03_pot_jar_leaf_t1.mp4",
+      "title": "Existing generated HOS006 KEEP long plate; new interval/crop unapproved",
+      "t": 1.12,
+      "at": "0:01",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.35x, may look soft"
+      ],
+      "offset": 1.0
+    }
+  ],
+  "rows": [
+    {
+      "cut": 0,
+      "row": "S01",
+      "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/raw/v01/03_pot_jar_leaf_t1.mp4",
+      "title": "Existing generated HOS006 KEEP long plate; new interval/crop unapproved",
+      "t": 1.12,
+      "at": "0:01",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.35x, may look soft"
+      ],
+      "offset": 1.0
+    },
+    {
+      "cut": 1,
+      "row": "S02",
+      "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part03/raw/v01/15_quill_vegetable_t1.mp4",
+      "title": "Existing generated HOS006 KEEP long plate; new interval/crop unapproved",
+      "t": 3.93,
+      "at": "0:04",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 2,
+      "row": "S03",
+      "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part03/raw/v01/08_candles_out_t1.mp4",
+      "title": "Existing generated HOS006 KEEP long plate; new interval/crop unapproved",
+      "t": 7.51,
+      "at": "0:08",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 3,
+      "row": "S04",
+      "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part03/raw/v01/10_mint_jar_t1.mp4",
+      "title": "Existing generated HOS006 KEEP long plate; new interval/crop unapproved",
+      "t": 11.21,
+      "at": "0:11",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 4,
+      "row": "S05",
+      "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part03/raw/v01/11_candle_tall_t1.mp4",
+      "title": "Existing generated HOS006 KEEP long plate; new interval/crop unapproved",
+      "t": 14.66,
+      "at": "0:15",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 5,
+      "row": "S06",
+      "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/06_collect_blaze_t3.mp4",
+      "title": "Existing generated HOS006 KEEP long plate; new interval/crop unapproved",
+      "t": 17.88,
+      "at": "0:18",
+      "fail": [
+        "sharpness: upscaled 2.67x (limit 2.35x)"
+      ],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 6,
+      "row": "S07",
+      "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part03/raw/v01/01_soil_to_sky_t1.mp4",
+      "title": "Existing generated HOS006 KEEP long plate; new interval/crop unapproved",
+      "t": 21.33,
+      "at": "0:21",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 7,
+      "row": "loop_tail",
+      "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/raw/v01/03_pot_jar_leaf_t1.mp4",
+      "title": "Existing generated HOS006 KEEP long plate; new interval/crop unapproved",
+      "t": 23.7,
+      "at": "0:24",
+      "fail": [
+        "reuse: same stretch as 0:01 (give it a new stretch, or a new render)"
+      ],
+      "warn": [
+        "sharpness: upscaled 2.35x, may look soft"
+      ],
+      "offset": 0.0
+    }
+  ],
+  "polish": null
+}

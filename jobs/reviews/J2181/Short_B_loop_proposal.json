@@ -1,0 +1,34 @@
+{
+  "status": "UNAPPROVED; contract pending J2179/J2182",
+  "opening_row": "S01",
+  "terminal_row": "loop_tail",
+  "source_sha256": "b1aaba6dbb36659388751fe942c5a7b367d35a9e181c3599a5cf8f4e7b6c96cb",
+  "source": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/raw/v01/03_pot_jar_leaf_t1.mp4",
+  "opening_interval": [
+    1.0,
+    3.24
+  ],
+  "terminal_interval": [
+    0.0,
+    1.0
+  ],
+  "framing": {
+    "offset": 1.0,
+    "crop_native_xywh": [
+      700,
+      190,
+      460,
+      818
+    ],
+    "output": [
+      1080,
+      1920
+    ],
+    "scale": "lanczos",
+    "setsar": 1,
+    "speed": 1.0
+  },
+  "last_vo_word_s": 23.08,
+  "total_duration_s": 24.2,
+  "note": "Terminal 0\u20131s precedes opening source at1s. Same native crop. No declaration is passed to old checker; rendered correspondence/seam not verified."
+}
