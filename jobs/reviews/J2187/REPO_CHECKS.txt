@@ -1,0 +1,109 @@
+
+== durable desk handoffs
+......
+----------------------------------------------------------------------
+Ran 6 tests in 0.025s
+
+OK
+
+=== /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/tmptfk77l6q/inbox/10_031_vo.md
+<!-- hos-desk v1 from=claude to=codex film=031 stage=vo status=task -->
+Check recording
+agent exited 2; message left in /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/tmptfk77l6q/inbox/10_031_vo.md
+
+=== /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/tmptfk77l6q/inbox/10_031_vo.md
+<!-- hos-desk v1 from=claude to=codex film=031 stage=vo status=task -->
+Check recording
+agent exited 2; message left in /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/tmptfk77l6q/inbox/10_031_vo.md
+No new messages for Codex.
+-- durable desk handoffs: PASS
+
+== no media
+-- no media: PASS
+
+== status board in sync
+STATUS.md and kanban/index.html match PIPELINE.json
+-- status board in sync: PASS
+
+== ElevenLabs guard tests
+...........
+----------------------------------------------------------------------
+Ran 11 tests in 0.042s
+
+OK
+-- ElevenLabs guard tests: PASS
+
+== vo_check word tests
+.........
+----------------------------------------------------------------------
+Ran 9 tests in 0.002s
+
+OK
+-- vo_check word tests: PASS
+
+== atempo check tests
+.........
+----------------------------------------------------------------------
+Ran 9 tests in 0.000s
+
+OK
+-- atempo check tests: PASS
+
+== voice speed (atempo <= 1.06)
+KNOWN  02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/SHORT_s07_semmelweis_hands_v01.json: atempo (1.07)  [built, never uploaded: rebuild at <=1.06 before any upload]
+KNOWN  02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/SHORT_s09_lister_antiseptic_v01.json: atempo (1.1)  [built, never uploaded: rebuild at <=1.06 before any upload]
+KNOWN  02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/SHORT_s11_curved_flask_v01.json: atempo (1.12)  [superseded by v07 (-3L6HzJ_d_4, public 27 Oct)]
+KNOWN  02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/SHORT_s11_curved_flask_v02.json: atempo (1.12)  [was 1-BZaFIMwYU, now private and unscheduled; v07 aired instead]
+KNOWN  02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/_build_short_s07_semmelweis_hands_v01.py: line 146 ATEMPO = 1.07 (1.07)  [built, never uploaded: rebuild at <=1.06 before any upload]
+KNOWN  02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/_build_short_s09_lister_antiseptic_v01.py: line 142 ATEMPO = 1.10 (1.1)  [built, never uploaded: rebuild at <=1.06 before any upload]
+KNOWN  02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/_build_short_s11_curved_flask_v01.py: line 109 ATEMPO = 1.12 (1.12)  [superseded by v07 (-3L6HzJ_d_4, public 27 Oct)]
+KNOWN  02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/_build_short_s11_curved_flask_v02.py: line 109 ATEMPO = 1.12 (1.12)  [was 1-BZaFIMwYU, now private and unscheduled; v07 aired instead]
+KNOWN  02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/_build_backcat_four_elements_v02.py: line 47 OPEN_RATE = 1.40 (1.4)  [SCHEDULED: v03 inherits this 1.40x open and is qW2OsD4mujc, airs Tue 3 Nov 11:30 London]
+KNOWN  02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/_build_backcat_four_elements_v03.py: line 163 "open_atempo" = 1.4 (1.4)  [SCHEDULED: qW2OsD4mujc, airs Tue 3 Nov 11:30 London]
+KNOWN  02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/hos_002_backcat_four_elements_v02_meta.json: open_atempo (1.4)  [SCHEDULED: v03 inherits this 1.40x open and is qW2OsD4mujc, airs Tue 3 Nov 11:30 London]
+KNOWN  02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/hos_002_backcat_four_elements_v03_meta.json: open_atempo (1.4)  [SCHEDULED: qW2OsD4mujc, airs Tue 3 Nov 11:30 London]
+KNOWN  02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/SHORT_s08_capillaries_v01.json: atempo (1.11)  [built, never uploaded: rebuild at <=1.06 before any upload]
+KNOWN  02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/_build_short_s08_capillaries_v01.py: line 60 ATEMPO = 1.11 (1.11)  [built, never uploaded: rebuild at <=1.06 before any upload]
+KNOWN  02_Video-Projects/007_The-First-Vaccine/10_Shorts/SHORT_s04_smallpox_test_v01.json: atempo (1.08)  [was -I_GHK-GcFs, now private and unscheduled; J1219 swapped the 13 Nov slot to v04 (1.05) as cLKDiYP55J8 on 29 Oct]
+KNOWN  02_Video-Projects/007_The-First-Vaccine/10_Shorts/SHORT_s04_smallpox_test_v02.json: atempo (1.08)  [superseded local cut, never uploaded]
+KNOWN  02_Video-Projects/007_The-First-Vaccine/10_Shorts/SHORT_s05_vacca_jesty_v01.json: atempo (1.07)  [superseded by v02 before upload]
+KNOWN  02_Video-Projects/007_The-First-Vaccine/10_Shorts/SHORT_s05_vacca_jesty_v02.json: atempo (1.07)  [was 4WUs0beKn0A, now private and unscheduled; J1222 swapped the 17 Nov slot to v05 (1.03) as xgx2lYHhYZM on 30 Oct]
+KNOWN  02_Video-Projects/007_The-First-Vaccine/10_Shorts/SHORT_s05_vacca_jesty_v03.json: atempo (1.07)  [superseded local cut, never uploaded]
+KNOWN  02_Video-Projects/007_The-First-Vaccine/10_Shorts/_build_short_s04_smallpox_test_v01.py: line 76 ATEMPO = 1.08 (1.08)  [was -I_GHK-GcFs, now private and unscheduled; J1219 swapped the 13 Nov slot to v04 (1.05) as cLKDiYP55J8 on 29 Oct]
+KNOWN  02_Video-Projects/007_The-First-Vaccine/10_Shorts/_build_short_s04_smallpox_test_v02.py: line 73 ATEMPO = 1.08 (1.08)  [superseded local cut, never uploaded]
+KNOWN  02_Video-Projects/007_The-First-Vaccine/10_Shorts/_build_short_s05_vacca_jesty_v01.py: line 79 ATEMPO = 1.07 (1.07)  [built v02 (was 4WUs0beKn0A); J1222 swapped the 17 Nov slot to v05 (1.03) as xgx2lYHhYZM on 30 Oct]
+KNOWN  02_Video-Projects/007_The-First-Vaccine/10_Shorts/_build_short_s05_vacca_jesty_v03.py: line 79 ATEMPO = 1.07 (1.07)  [superseded local cut, never uploaded]
+atempo check PASS: no new build above 1.06 (23 known file(s) listed above).
+-- voice speed (atempo <= 1.06): PASS
+
+== contract tests
+npm error code EPERM
+npm error syscall open
+npm error path /Users/benjaminoats/.npm/_cacache/tmp/a572cca8
+npm error errno EPERM
+npm error
+npm error Your cache folder contains root-owned files, due to a bug in
+npm error previous versions of npm which has since been addressed.
+npm error
+npm error To permanently fix this problem, please run:
+npm error   sudo chown -R 501:20 "/Users/benjaminoats/.npm"
+npm error Log files were not written due to an error writing to the directory: /Users/benjaminoats/.npm/_logs
+npm error You can rerun the command with `--loglevel=verbose` to see the logs in your terminal
+-- contract tests: FAIL
+
+== package-lint
+npm error code EPERM
+npm error syscall open
+npm error path /Users/benjaminoats/.npm/_cacache/tmp/3f95ca17
+npm error errno EPERM
+npm error
+npm error Your cache folder contains root-owned files, due to a bug in
+npm error previous versions of npm which has since been addressed.
+npm error
+npm error To permanently fix this problem, please run:
+npm error   sudo chown -R 501:20 "/Users/benjaminoats/.npm"
+npm error Log files were not written due to an error writing to the directory: /Users/benjaminoats/.npm/_logs
+npm error You can rerun the command with `--loglevel=verbose` to see the logs in your terminal
+-- package-lint: FAIL
+
+SOME CHECKS FAILED
