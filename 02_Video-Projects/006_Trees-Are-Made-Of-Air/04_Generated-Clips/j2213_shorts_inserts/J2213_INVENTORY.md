@@ -1,6 +1,6 @@
 # J2213 inventory for J2169
 
-Six HOS 006 Short insert plates. Flow Veo 3.1 Quality, Frames, 16:9, 720p, x1, silent. Ultra `benoats@googlemail.com`. GBP 0. Not a PASS. Motion was not watched.
+Six HOS 006 Short insert plates. Flow Veo 3.1 Quality, Frames, 16:9, 720p, x1, silent. On the studio Ultra account. GBP 0. Not a PASS. Motion was not watched.
 
 | Input | File | SHA-256 | Need |
 |---|---|---|---|
