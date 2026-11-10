@@ -1,0 +1,21 @@
+{
+  "note": "Ben OK, 10 Nov 2026 (chat): retitle the underperforming longs and Shorts. Titles only: retitle-videos.ts keeps description, tags, privacy and publishAt. Dry-run first. Before applying, end any running Test & Compare on these ids (never touch 004 GHZDsiH7L7A). Source: CHANNEL_AUDIT_2026-11-10/AUDIT.md.",
+  "retitle": [
+    { "id": "VbPubYd6Fbs", "expectCurrentTitle": "The Willow Tree That Was Made of Air", "title": "Where Does a Tree's Mass Come From? The Willow Experiment" },
+    { "id": "wwcjcFfC-5M", "expectCurrentTitle": "The Tied Arm That Proved Your Blood Circulates", "title": "How William Harvey Discovered Blood Circulation: The Tied Arm" },
+    { "id": "_C92tIJCk8A", "expectCurrentTitle": "How Did We Discover Germs?", "title": "Pasteur's Swan Neck Flask: How We Discovered Germs" },
+    { "id": "frP_YrNShsU", "expectCurrentTitle": "How Did We Discover X-rays?", "title": "Who Discovered X-Rays? Röntgen's Accidental Discovery" },
+
+    { "id": "LanTHJckYx8", "expectCurrentTitle": "What other table has empty chairs?", "title": "The Table That Predicted New Elements" },
+    { "id": "zI_eD3vFWmE", "expectCurrentTitle": "The first X-ray showed a wedding ring", "title": "The First X-Ray Ever Taken" },
+    { "id": "CnHwX1L9XHg", "expectCurrentTitle": "Gallium sat where the table said", "title": "How Was Gallium Discovered?" },
+    { "id": "uU12JA5rMWg", "expectCurrentTitle": "The periodic table's empty chairs", "title": "Why Did Mendeleev Leave Gaps in the Periodic Table?" },
+    { "id": "nba0-f7PPeU", "expectCurrentTitle": "Why tellurium sat before iodine", "title": "Why Is Tellurium Before Iodine on the Periodic Table?" },
+    { "id": "nFQRWmpulTQ", "expectCurrentTitle": "He predicted a metal before it was found", "title": "How Mendeleev Predicted an Element Nobody Had Seen" },
+    { "id": "TbMMJSRKC3U", "expectCurrentTitle": "He said every eighth element repeats", "title": "What Is Newlands' Law of Octaves?" },
+    { "id": "xvanpsLeADE", "expectCurrentTitle": "How did Röntgen see bones without cutting", "title": "How Do X-Rays See Through Skin?" },
+    { "id": "qW2OsD4mujc", "expectCurrentTitle": "The Four Elements Were Wrong", "title": "Earth, Air, Fire, Water: Why the Four Elements Were Wrong" },
+    { "id": "sILtQxgYQk8", "expectCurrentTitle": "A flask that proved germs come from outside", "title": "How a Bent Flask Proved Germs Are Real" },
+    { "id": "8_Edn_HCi1s", "expectCurrentTitle": "Germs hitch a ride on you", "title": "Why Did Doctors Start Washing Their Hands?" }
+  ]
+}
