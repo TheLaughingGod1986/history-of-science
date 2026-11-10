@@ -1,0 +1,366 @@
+{
+  "status": "PLANNED_NOT_EXECUTABLE",
+  "master": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_precheck/master_v03/hos_008_master_v03.mp4",
+  "master_sha256": "cf1561c218bace7bc14ed3d625b0790a457027a90f392262f45ca7172723099b",
+  "inputs": [
+    {
+      "path": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part01/raw/v01/03_table_three_t1.mp4",
+      "sha256": "482a254d7f7b195241eea96511a736d212c971988decb33c38b183347639a9bb",
+      "available_frames": 120,
+      "decode": "verified"
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part01/raw/v01/04_storm_mystery_t1.mp4",
+      "sha256": "e1b2de5d8cd4bbc8ace98d6d5c17af3c75651f8949d54e062fe91fbe6ee31271",
+      "available_frames": 96,
+      "decode": "verified"
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part03/raw/v01/07_slow_news_t1.mp4",
+      "sha256": "775e6d72eeb9bcec1ba61a72ee2fab14669620a23626bb5c1b0b5c80d7b5d749",
+      "available_frames": 104,
+      "decode": "verified"
+    },
+    {
+      "path": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part02/raw/v01/11_jar_crack_t1.mp4",
+      "sha256": "7629a5dfdc5b649535c9816ece5bf0acf250a13133bf294bf43cfb1f21588270",
+      "available_frames": 84,
+      "decode": "verified"
+    }
+  ],
+  "frame_count_delta": "UNMEASURED",
+  "vo_sync_lag_ms": "UNMEASURED",
+  "unchanged_frame_identity": "UNMEASURED",
+  "audio_packet_identity_and_timestamps": "UNMEASURED",
+  "holds": [
+    "J1881 elected-Chief production scope required; no execution authority",
+    "Master-derived word alignment needed, all proposed row boundaries remain candidates",
+    "Two exact-match assets missing; three-candidate searches exhausted, no new search",
+    "Closed-GOP dependency validation and lossless boundary splicer not implemented; future authorized production job",
+    "All six notes unresolved; no new watch publication or upload approval"
+  ],
+  "spend_gbp": 0,
+  "media_rendered": false,
+  "timeline_summary": {
+    "time_base": "1/12288",
+    "start_pts": 1536,
+    "end_pts": 6630912,
+    "gaps": [
+      {
+        "after_frame": 743,
+        "delta_ticks": 512
+      },
+      {
+        "after_frame": 745,
+        "delta_ticks": -512
+      },
+      {
+        "after_frame": 1230,
+        "delta_ticks": 512
+      },
+      {
+        "after_frame": 1232,
+        "delta_ticks": -512
+      },
+      {
+        "after_frame": 1995,
+        "delta_ticks": 512
+      },
+      {
+        "after_frame": 1996,
+        "delta_ticks": -512
+      },
+      {
+        "after_frame": 2715,
+        "delta_ticks": 512
+      },
+      {
+        "after_frame": 2717,
+        "delta_ticks": -512
+      },
+      {
+        "after_frame": 3404,
+        "delta_ticks": 512
+      },
+      {
+        "after_frame": 3407,
+        "delta_ticks": -512
+      },
+      {
+        "after_frame": 4135,
+        "delta_ticks": 512
+      },
+      {
+        "after_frame": 4138,
+        "delta_ticks": -512
+      },
+      {
+        "after_frame": 4510,
+        "delta_ticks": 512
+      },
+      {
+        "after_frame": 4513,
+        "delta_ticks": -512
+      },
+      {
+        "after_frame": 5457,
+        "delta_ticks": 512
+      },
+      {
+        "after_frame": 5460,
+        "delta_ticks": -512
+      },
+      {
+        "after_frame": 5845,
+        "delta_ticks": 512
+      },
+      {
+        "after_frame": 5846,
+        "delta_ticks": -512
+      },
+      {
+        "after_frame": 6297,
+        "delta_ticks": 512
+      },
+      {
+        "after_frame": 6299,
+        "delta_ticks": -512
+      },
+      {
+        "after_frame": 6477,
+        "delta_ticks": 512
+      },
+      {
+        "after_frame": 6480,
+        "delta_ticks": -512
+      },
+      {
+        "after_frame": 7375,
+        "delta_ticks": 512
+      },
+      {
+        "after_frame": 7376,
+        "delta_ticks": -512
+      },
+      {
+        "after_frame": 7450,
+        "delta_ticks": 512
+      },
+      {
+        "after_frame": 7455,
+        "delta_ticks": -512
+      },
+      {
+        "after_frame": 8103,
+        "delta_ticks": 512
+      },
+      {
+        "after_frame": 8106,
+        "delta_ticks": -512
+      },
+      {
+        "after_frame": 8360,
+        "delta_ticks": 512
+      },
+      {
+        "after_frame": 8362,
+        "delta_ticks": -512
+      },
+      {
+        "after_frame": 8802,
+        "delta_ticks": 512
+      },
+      {
+        "after_frame": 8803,
+        "delta_ticks": -512
+      },
+      {
+        "after_frame": 9160,
+        "delta_ticks": 512
+      },
+      {
+        "after_frame": 9163,
+        "delta_ticks": -512
+      },
+      {
+        "after_frame": 9486,
+        "delta_ticks": 512
+      },
+      {
+        "after_frame": 9490,
+        "delta_ticks": -512
+      },
+      {
+        "after_frame": 9809,
+        "delta_ticks": 512
+      },
+      {
+        "after_frame": 9811,
+        "delta_ticks": -512
+      },
+      {
+        "after_frame": 12672,
+        "delta_ticks": 512
+      },
+      {
+        "after_frame": 12673,
+        "delta_ticks": -512
+      }
+    ],
+    "decoded_frames": 12923
+  },
+  "patches": [
+    {
+      "note": 1,
+      "timestamp": "00:20",
+      "verbatim_note": "text on screen in readable needs maybe background colour",
+      "row": "03_table_three",
+      "candidate_frames": [
+        427,
+        544
+      ],
+      "status": "UNRESOLVED_CONDITIONAL_ON_MASTER_PTS_AND_QA",
+      "recipe": {
+        "design": "White Didot italic over moving plate; soft cream/umber contrast treatment, no border or pill. One label at a time, <=4 words; A KITE / A KEY / A JAR sequential only if master-derived word alignment supports each. Animate 0.3-0.5 s; phone still required.",
+        "word_timing": "UNVERIFIED: align master audio, not part offsets"
+      },
+      "measured_pts_in": 220160,
+      "measured_pts_end": 280576,
+      "candidate_boundary_gop_envelope": [
+        423,
+        544
+      ],
+      "boundary_policy": "UNAPPROVED: closed-GOP dependency check required; lossless only outside changed frames; no global re-encode",
+      "pts_reconciled": false
+    },
+    {
+      "note": 2,
+      "timestamp": "0:30",
+      "verbatim_note": "flash the next scene",
+      "row": "03b_town_safe -> 04_storm_mystery",
+      "candidate_frames": [
+        744,
+        839
+      ],
+      "status": "UNRESOLVED_CONDITIONAL_ON_MASTER_PTS_AND_QA",
+      "recipe": {
+        "design": "Conditional advance of storm scene into candidate 744..839 only. Copy clean 663..743 unchanged.",
+        "word_timing": "Proposed sentence end 30.70 and next start31.24 are unverified against master; reconcile before boundary decision."
+      },
+      "measured_pts_in": 382976,
+      "measured_pts_end": 432128,
+      "candidate_boundary_gop_envelope": [
+        744,
+        839
+      ],
+      "boundary_policy": "UNAPPROVED: closed-GOP dependency check required; lossless only outside changed frames; no global re-encode",
+      "pts_reconciled": false
+    },
+    {
+      "note": 3,
+      "timestamp": "1:49",
+      "verbatim_note": "strange behaviour as hair flies out the tube",
+      "row": "02_salon_spark",
+      "candidate_frames": [
+        2506,
+        2665
+      ],
+      "status": "UNRESOLVED_CONDITIONAL_ON_MASTER_PTS_AND_QA",
+      "recipe": {
+        "design": "Exact glass-tube/hair asset missing. No native option selected; table globe spark does not match locked line. Preserve adjacent2666..2717.",
+        "generation_proposal": {
+          "route": "Flow Veo3.1 Quality only (fragile spark)",
+          "reference": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part02/refs/v03_flow_stills/02_salon_spark_t1.png",
+          "reference_sha256": "aefd6338aded1037c11306a99fc580d1a62a66d9367409f01e0edd993cc8cc58",
+          "takes_max": 3,
+          "subscription_credit_cap": 300,
+          "balance": "fresh live balance required",
+          "authorized": false
+        }
+      },
+      "measured_pts_in": 1286144,
+      "measured_pts_end": 1368064,
+      "candidate_boundary_gop_envelope": [
+        2506,
+        2665
+      ],
+      "boundary_policy": "UNAPPROVED: closed-GOP dependency check required; lossless only outside changed frames; no global re-encode",
+      "pts_reconciled": false
+    },
+    {
+      "note": 4,
+      "timestamp": "2:20",
+      "verbatim_note": "strange behaviour with the silver foil",
+      "row": "07_foil_jar",
+      "candidate_frames": [
+        3260,
+        3343
+      ],
+      "status": "UNRESOLVED_CONDITIONAL_ON_MASTER_PTS_AND_QA",
+      "recipe": {
+        "design": "Keep3168..3259 unchanged; conditional replacement3260..3343 with11_jar_crack_t1.mp4 4.000-7.500 s. Following spark3344..3407 unchanged. KEEP/repeat/PTS verification outstanding."
+      },
+      "measured_pts_in": 1672704,
+      "measured_pts_end": 1715712,
+      "candidate_boundary_gop_envelope": [
+        3168,
+        3343
+      ],
+      "boundary_policy": "UNAPPROVED: closed-GOP dependency check required; lossless only outside changed frames; no global re-encode",
+      "pts_reconciled": false
+    },
+    {
+      "note": 5,
+      "timestamp": "3:31",
+      "verbatim_note": "the diagram/ map is not easy to understand",
+      "row": "04_letter_crosses",
+      "candidate_frames": [
+        4977,
+        5077
+      ],
+      "status": "UNRESOLVED_CONDITIONAL_ON_MASTER_PTS_AND_QA",
+      "recipe": {
+        "design": "One animated cream ink letter travels across moving07_slow_news_t1.mp4, upper sky off ship. No bordered banner, invented geography, distance, city or date labels. Optional single <=4-word label crossed the ocean only at matching master-derived speech. Fade0.3-0.5s, no hold>4s; phone evidence required.",
+        "claims": "No new number/location/date; any future addition requires exact FACT_NOTES source before use."
+      },
+      "measured_pts_in": 2553856,
+      "measured_pts_end": 2606592,
+      "candidate_boundary_gop_envelope": [
+        4977,
+        5077
+      ],
+      "boundary_policy": "UNAPPROVED: closed-GOP dependency check required; lossless only outside changed frames; no global re-encode",
+      "pts_reconciled": false
+    },
+    {
+      "note": 6,
+      "timestamp": "7:58",
+      "verbatim_note": "the rods fall down for some reason",
+      "row": "13_rods_spread",
+      "candidate_frames": [
+        11358,
+        11492
+      ],
+      "status": "UNRESOLVED_CONDITIONAL_ON_MASTER_PTS_AND_QA",
+      "recipe": {
+        "design": "Exact church/house/ship-mast asset missing. No roofs fallback selected. Preserve candidate135-frame cut pending corrected PTS.",
+        "generation_proposal": {
+          "route": "Flow Veo3.1; current rate and live balance required in separately scoped job",
+          "reference": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/refs/v03_flow_stills/13_rods_spread_t1.png",
+          "reference_sha256": "84a92bf6ce1abd1a5780c37ac2e8ae50ea6099f5cff5c7f728a70060b394819c",
+          "takes_max": 3,
+          "authorized": false
+        }
+      },
+      "measured_pts_in": 5829120,
+      "measured_pts_end": 5898240,
+      "candidate_boundary_gop_envelope": [
+        11358,
+        11492
+      ],
+      "boundary_policy": "UNAPPROVED: closed-GOP dependency check required; lossless only outside changed frames; no global re-encode",
+      "pts_reconciled": false
+    }
+  ],
+  "final_validation": "Repeated after adding explicit master-duration and short-retake guards; same verified master/source evidence."
+}
