@@ -194,3 +194,13 @@ What History of Science Studio showed at 01:42Z (CDP 9460, channel `UCXp7HkBIl1L
 No write was attempted through the Data API: with a title test attached it refuses a title change (`UPDATE_TITLE_NOT_ALLOWED_DURING_TEST_AND_COMPARE`, seen on J0978, 30 Oct). `Edit title` was not opened and "Run a new test?" was never reached.
 
 For Chief, before Thu 12 Nov 18:00 London: decide whether the approved title replaces title A inside the existing test, the test is removed, or the film airs on the test as set. Package manifest, description file and upload record are left as they are, because they still match what is live.
+
+## 10 Nov 2026 — J2470 option (c): description line 1 set on `ETynHpIYLeY`; title test untouched (Claude Code worker)
+
+Acting Chief ruling, 10 Nov 04:00Z: leave the J0959 title test as it is and change description line 1 only.
+
+- **Changed, 05:02Z (Data API, description only; title sent back as read):** line 1 *Every vaccine is named after a cow. How did the Edward Jenner cowpox vaccine conquer the deadly smallpox virus?* → *How was the first vaccine made? Every vaccine is named after a cow — here is how the Edward Jenner cowpox vaccine conquered the smallpox virus.*
+- **Read-back, Studio 05:03Z (CDP 9460, channel `UCXp7HkBIl1LgaznXuZHJyRg`):** `A/B testing titles` · `Ineligible` · arm A *Why Vaccines Are Named After a Cow* · arm B *How Was the First Vaccine Made?* (both unchanged); description line 1 is the new line; Visibility `Scheduled`; no dialog or test warning appeared.
+- **Read-back, API 05:04Z:** title *Why Vaccines Are Named After a Cow*, new line 1, private, `publishAt=2026-11-12T18:00:00Z` (Thu 12 Nov 18:00 London). Rest of description and tags identical.
+- **Records:** `11_Upload-Package/Descriptions/vaccine_long_description_v02.txt` (v01 kept as uploaded), manifest `descriptionFile` points at v02, `11_Upload-Package/J2470_DESCRIPTION_READBACK_2026-11-10.json`. Manifest title stays arm A.
+- **Not applied:** the approved title *How Was the First Vaccine Made? (And Why It's Named After a Cow)*. Studio deletes the whole test if one arm is edited; that is Ben's call. £0.
