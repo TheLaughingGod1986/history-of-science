@@ -32,6 +32,7 @@ import fcntl
 import hashlib
 import inspect
 import json
+import math
 import os
 import re
 import shlex
@@ -1158,6 +1159,19 @@ def production_batch_paths(*, accounting_state: Path | None,
     return state, target
 
 
+def next_still_evidence_path(archive_dir: Path, still_filename: str) -> Path:
+    """Return an unused immutable still Create evidence path in archive_dir."""
+    first = archive_dir / f"{still_filename}.still.create.json"
+    if not first.exists():
+        return first
+    attempt = 2
+    while True:
+        candidate = archive_dir / f"{still_filename}.still.attempt{attempt}.create.json"
+        if not candidate.exists():
+            return candidate
+        attempt += 1
+
+
 def execute_shared_batch(batch: list[Row], *, media: Path, ledger_path: Path,
                          archive_dir: Path, accounting_state: Path | None = None,
                          spend_ledger: Path | None = None, recorder: str = "codex",
@@ -1200,7 +1214,7 @@ def execute_shared_batch(batch: list[Row], *, media: Path, ledger_path: Path,
                 if not spath.is_file():
                     made = Path(still_maker(
                         srow, spath, accounting=accounting, reservation=reservation,
-                        evidence_path=archive_dir / (spath.name + '.still.create.json'),
+                        evidence_path=next_still_evidence_path(archive_dir, spath.name),
                         other=other,
                     ))
                     if not made.is_file():
@@ -1537,8 +1551,10 @@ def _open_settings_trigger_if_needed(page) -> bool:
     return bool(clicked)
 
 
-# One synchronous DOM turn rechecks the evidence and clicks the same unique
-# enabled Create control. No coordinate fallback or delayed selector click.
+# One synchronous DOM turn rechecks the evidence and resolves the exact center
+# of the unique enabled unobstructed Create control for a trusted CDP mouse
+# click. Never call element.click() here: Flow's FLOW-BASE-PROMPT-BOX.submit(a)
+# drops untrusted synthetic DOM clicks (a.isTrusted === false).
 CREATE_EVIDENCE_JS = r"""(expected) => {
   const visible = e => { const r = e.getBoundingClientRect();
     const s = getComputedStyle(e);
@@ -1588,10 +1604,22 @@ CREATE_EVIDENCE_JS = r"""(expected) => {
   };
   if (expected === null) return evidence;
   if (JSON.stringify(evidence) !== JSON.stringify(expected))
-    return {clicked: false, reason: 'live UI changed', evidence};
-  if (buttons.length !== 1) return {clicked: false, reason: 'Create not unique', evidence};
-  buttons[0].click();
-  return {clicked: true, evidence};
+    return {ready: false, reason: 'live UI changed', evidence};
+  if (buttons.length !== 1) return {ready: false, reason: 'Create not unique', evidence};
+  const rect = buttons[0].getBoundingClientRect();
+  if (!Number.isFinite(rect.left) || !Number.isFinite(rect.top) || !(rect.width > 0 && rect.height > 0))
+    return {ready: false, reason: 'Create geometry invalid', evidence};
+  const cx = rect.left + rect.width / 2;
+  const cy = rect.top + rect.height / 2;
+  if (typeof innerWidth === 'number' && typeof innerHeight === 'number' &&
+      (cx < 0 || cy < 0 || cx > innerWidth || cy > innerHeight))
+    return {ready: false, reason: 'Create outside viewport', evidence};
+  if (typeof document.elementFromPoint === 'function') {
+    const hit = document.elementFromPoint(cx, cy);
+    if (!hit || (hit !== buttons[0] && !(typeof buttons[0].contains === 'function' && buttons[0].contains(hit))))
+      return {ready: false, reason: 'Create obstructed', evidence};
+  }
+  return {ready: true, target: {x: cx, y: cy}, evidence};
 }"""
 
 
@@ -1644,13 +1672,30 @@ def read_live_evidence(page, *, balance: int | None = None, open_overlay: bool =
     return evidence
 
 
+def _extract_trusted_click_target(target: object) -> tuple[float, float] | None:
+    if not isinstance(target, dict):
+        return None
+    x, y = target.get('x'), target.get('y')
+    if (
+        isinstance(x, bool)
+        or isinstance(y, bool)
+        or not isinstance(x, (int, float))
+        or not isinstance(y, (int, float))
+        or not math.isfinite(x)
+        or not math.isfinite(y)
+    ):
+        return None
+    return float(x), float(y)
+
+
 def guarded_create(page, accounting: SharedFlowAccounting, *, reservation: str,
                    charge: str, evidence_path: Path, floor: int = HEADROOM_FLOOR,
                    balance: int | None = None) -> dict:
     """Real browser adapter; caller owns shared writer lock through persistence.
 
-    The intent is durable before the click. Any ambiguous browser failure leaves
-    it pending, blocking both channels until explicit reconciliation. No retry.
+    The intent is durable before the trusted CDP mouse click. Any ambiguous
+    browser failure around the click leaves it pending, blocking both channels
+    until explicit reconciliation. No retry.
     """
     accounting._assert_held()
     raw, evidence = _read_and_validate_live_evidence(page, balance=balance)
@@ -1658,14 +1703,23 @@ def guarded_create(page, accounting: SharedFlowAccounting, *, reservation: str,
     immutable_bytes(evidence_path, (json.dumps(record, sort_keys=True) + '\n').encode())
     accounting.intent(charge, reservation, MAX_CREDITS_PER_TAKE, live=evidence['balances'][0], floor=floor)
     outcome = page.evaluate(CREATE_EVIDENCE_JS, raw)
-    if not isinstance(outcome, dict) or type(outcome.get('clicked')) is not bool:
-        raise GuardError('ambiguous Create outcome; shared charge remains pending')
-    if not outcome['clicked']:
+    if not isinstance(outcome, dict) or type(outcome.get('ready')) is not bool:
+        raise GuardError('ambiguous Create precheck outcome; shared charge remains pending')
+    if not outcome['ready']:
         accounting.resolve(charge, submitted=False,
                            evidence=dict(reason=outcome.get('reason'), read_at=record['read_at']))
         raise GuardError('live UI drift before Create; no submission')
+    coords = _extract_trusted_click_target(outcome.get('target'))
+    mouse = getattr(page, 'mouse', None)
+    if coords is None or mouse is None or not callable(getattr(mouse, 'click', None)):
+        accounting.resolve(charge, submitted=False,
+                           evidence=dict(reason='missing trusted click target or mouse adapter',
+                                         read_at=record['read_at']))
+        raise GuardError('missing trusted Create click target or mouse adapter; no submission')
+    mouse.click(coords[0], coords[1])
     accounting.resolve(charge, submitted=True,
-                       evidence=dict(ui=evidence, read_at=record['read_at']))
+                       evidence=dict(ui=evidence, target=dict(x=coords[0], y=coords[1]),
+                                     read_at=record['read_at']))
     return record
 
 
@@ -1728,10 +1782,22 @@ STILL_EVIDENCE_JS = r"""(expected) => {
   };
   if (expected === null) return evidence;
   if (JSON.stringify(evidence) !== JSON.stringify(expected))
-    return {clicked: false, reason: 'live UI changed', evidence};
-  if (buttons.length !== 1) return {clicked: false, reason: 'Create not unique', evidence};
-  buttons[0].click();
-  return {clicked: true, evidence};
+    return {ready: false, reason: 'live UI changed', evidence};
+  if (buttons.length !== 1) return {ready: false, reason: 'Create not unique', evidence};
+  const rect = buttons[0].getBoundingClientRect();
+  if (!Number.isFinite(rect.left) || !Number.isFinite(rect.top) || !(rect.width > 0 && rect.height > 0))
+    return {ready: false, reason: 'Create geometry invalid', evidence};
+  const cx = rect.left + rect.width / 2;
+  const cy = rect.top + rect.height / 2;
+  if (typeof innerWidth === 'number' && typeof innerHeight === 'number' &&
+      (cx < 0 || cy < 0 || cx > innerWidth || cy > innerHeight))
+    return {ready: false, reason: 'Create outside viewport', evidence};
+  if (typeof document.elementFromPoint === 'function') {
+    const hit = document.elementFromPoint(cx, cy);
+    if (!hit || (hit !== buttons[0] && !(typeof buttons[0].contains === 'function' && buttons[0].contains(hit))))
+      return {ready: false, reason: 'Create obstructed', evidence};
+  }
+  return {ready: true, target: {x: cx, y: cy}, evidence};
 }"""
 
 
@@ -1776,10 +1842,15 @@ def guarded_still_create(page, accounting: SharedFlowAccounting, *, reservation:
     record = dict(read_at=now_iso(), ui=evidence, plate_id=plate_id, reservation=reservation, credits=0)
     immutable_bytes(evidence_path, (json.dumps(record, sort_keys=True) + '\n').encode())
     outcome = page.evaluate(STILL_EVIDENCE_JS, raw)
-    if not isinstance(outcome, dict) or type(outcome.get('clicked')) is not bool:
-        raise GuardError('ambiguous still Create outcome; stopping before video generation')
-    if not outcome['clicked']:
+    if not isinstance(outcome, dict) or type(outcome.get('ready')) is not bool:
+        raise GuardError('ambiguous still Create precheck outcome; stopping before video generation')
+    if not outcome['ready']:
         raise GuardError('live UI drift before still Create; no submission')
+    coords = _extract_trusted_click_target(outcome.get('target'))
+    mouse = getattr(page, 'mouse', None)
+    if coords is None or mouse is None or not callable(getattr(mouse, 'click', None)):
+        raise GuardError('missing trusted still Create click target or mouse adapter; no submission')
+    mouse.click(coords[0], coords[1])
     return record
 
 

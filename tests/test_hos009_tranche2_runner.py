@@ -414,7 +414,8 @@ class SafetyRegressionTests(unittest.TestCase):
                 RUNNER.write_receipt(path, ["b"], [])
 
     def test_production_requires_mounted_archive(self):
-        with tempfile.TemporaryDirectory() as tmp:
+        base = "/tmp" if Path("/tmp").is_dir() else None
+        with tempfile.TemporaryDirectory(dir=base) as tmp:
             for path in (None, Path(tmp), Path(tmp) / "absent"):
                 with self.assertRaises(RUNNER.GuardError):
                     RUNNER.require_archive(path)
@@ -531,6 +532,64 @@ class SafetyRegressionTests(unittest.TestCase):
                 self.assertTrue((archive / "10_how_high_t1.png").is_file())
                 self.assertTrue((archive / "07_ball_to_moon_t1.png").is_file())
                 self.assertEqual((root / "runner.pid").read_text().strip(), str(os.getpid()))
+
+    def test_retry_still_preserves_prior_still_create_evidence(self):
+        from unittest.mock import patch
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            archive = root / "archive"
+            archive.mkdir()
+            prior_bytes = b'{"credits":0,"note":"prior untrusted click timeout"}\n'
+            prior_ev = archive / "10_how_high_t1.png.still.create.json"
+            prior_ev.write_bytes(prior_bytes)
+            seen_paths = []
+
+            def fake_still_maker(row, dest, *, accounting, reservation, evidence_path, other=0):
+                accounting._assert_held()
+                seen_paths.append(evidence_path.name)
+                dest.parent.mkdir(parents=True, exist_ok=True)
+                subprocess.run(
+                    ["ffmpeg", "-v", "error", "-y", "-f", "lavfi", "-i",
+                     "color=s=1280x720", "-frames:v", "1", str(dest)],
+                    check=True,
+                )
+                RUNNER.immutable_bytes(
+                    evidence_path,
+                    b'{"credits":0,"ui":{"balances":[14890]}}\n',
+                )
+                return dest
+
+            def fake_submitter(row, dest, frame, *, accounting, reservation, charge, evidence_path, other=0):
+                page = LiveCreateAdapterTests.Page(LiveCreateAdapterTests().evidence())
+                accounting.reserve(reservation, "HOS:009", RUNNER.MAX_TOTAL_CREDITS,
+                                   live=14890, floor=RUNNER.HEADROOM_FLOOR + other)
+                ev = RUNNER.guarded_create(
+                    page, accounting, reservation=reservation,
+                    charge=charge, evidence_path=evidence_path,
+                    floor=RUNNER.HEADROOM_FLOOR + other,
+                )
+                dest.write_bytes(b"fake video fixture")
+                return ev
+
+            with patch.dict(os.environ, {RUNNER.SUBMIT_ENV: "1"}), \
+                 patch.object(RUNNER, "strip_audio"), \
+                 patch.object(RUNNER, "technical_report",
+                              side_effect=lambda p, **kw: {"ok": True, "sha256": RUNNER.sha256_file(p)}):
+                written = RUNNER.cmd_submit(
+                    ROOT, other=0, media=root / "media",
+                    ledger_path=root / "ledger.jsonl", lock_path=root / "writer.lock",
+                    pid_path=root / "runner.pid", done_path=root / "runner.done",
+                    archive_dir=archive, accounting_state=root / "shared",
+                    spend_ledger=root / "spend.jsonl", submitter=fake_submitter,
+                    still_maker=fake_still_maker, test_archive=True,
+                )
+            self.assertEqual([e["plate_id"] for e in written], ["10_how_high", "07_ball_to_moon"])
+            self.assertEqual(seen_paths, [
+                "10_how_high_t1.png.still.attempt2.create.json",
+                "07_ball_to_moon_t1.png.still.create.json",
+            ])
+            self.assertEqual(prior_ev.read_bytes(), prior_bytes)
+            self.assertTrue((archive / "10_how_high_t1.png.still.attempt2.create.json").is_file())
 
 
 class DetachedSafetyTests(unittest.TestCase):
@@ -917,18 +976,28 @@ class LiveCreateAdapterTests(unittest.TestCase):
                     ultra=True, create_count=1)
 
     class Page:
-        def __init__(self, evidence, before_click=None):
+        def __init__(self, evidence, before_click=None, on_mouse_click=None):
             self.evidence, self.before_click = evidence, before_click
+            self.on_mouse_click = on_mouse_click
             self.clicks = 0
+            self.mouse_coords = []
+            page_self = self
+            class Mouse:
+                @staticmethod
+                def click(x, y):
+                    if page_self.on_mouse_click:
+                        page_self.on_mouse_click(x, y)
+                    page_self.clicks += 1
+                    page_self.mouse_coords.append((x, y))
+            self.mouse = Mouse()
         def evaluate(self, js, expected):
             if expected is None:
                 return dict(self.evidence)
             if self.before_click:
                 self.before_click()
             if self.evidence != expected:
-                return dict(clicked=False, reason='live UI changed', evidence=self.evidence)
-            self.clicks += 1
-            return dict(clicked=True, evidence=self.evidence)
+                return dict(ready=False, reason='live UI changed', evidence=self.evidence)
+            return dict(ready=True, target=dict(x=1000.0, y=844.0), evidence=self.evidence)
 
     def test_rejects_each_drift_without_create_or_intent(self):
         for field, value in dict(host='example.com', models=['Veo 3.1 - Fast'], outputs=['x2'],
@@ -980,20 +1049,22 @@ class LiveCreateAdapterTests(unittest.TestCase):
                 self.assertEqual(account.snapshot()['charges']['take']['status'], 'NOT_SUBMITTED')
 
     def test_browser_disconnect_preserves_pending_and_blocks_other_channel(self):
-        with tempfile.TemporaryDirectory() as tmp:
-            state = Path(tmp)
-            with RUNNER.SharedFlowAccounting(state) as account:
-                account.reserve('job', 'HOS:009', 6000, live=10000)
-                def disconnect():
-                    raise ConnectionError('fake browser disconnected around click')
-                page = self.Page(self.evidence(), disconnect)
-                with self.assertRaises(ConnectionError):
-                    RUNNER.guarded_create(page, account, reservation='job', charge='take',
-                                          evidence_path=state/'evidence.json')
-            with RUNNER.SharedFlowAccounting(state) as account:
-                self.assertTrue(account.snapshot()['pending'])
-                with self.assertRaises(RUNNER.GuardError):
-                    account.reserve('other', 'OWB:032', 100, live=10000)
+        for fail_on_mouse in (False, True):
+            with self.subTest(fail_on_mouse=fail_on_mouse), tempfile.TemporaryDirectory() as tmp:
+                state = Path(tmp)
+                with RUNNER.SharedFlowAccounting(state) as account:
+                    account.reserve('job', 'HOS:009', 6000, live=10000)
+                    def disconnect(*_args):
+                        raise ConnectionError('fake browser disconnected around click')
+                    page = (self.Page(self.evidence(), on_mouse_click=disconnect)
+                            if fail_on_mouse else self.Page(self.evidence(), disconnect))
+                    with self.assertRaises(ConnectionError):
+                        RUNNER.guarded_create(page, account, reservation='job', charge='take',
+                                              evidence_path=state/'evidence.json')
+                with RUNNER.SharedFlowAccounting(state) as account:
+                    self.assertTrue(account.snapshot()['pending'])
+                    with self.assertRaises(RUNNER.GuardError):
+                        account.reserve('other', 'OWB:032', 100, live=10000)
 
     def test_adapter_requires_shared_lock(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -1006,34 +1077,50 @@ class LiveCreateAdapterTests(unittest.TestCase):
     def test_actual_dom_script_rejects_unselected_menu_and_atomic_drift(self):
         # Execute the production JavaScript against a small DOM browser fixture,
         # rather than allowing the Python fake to stand in for selector behavior.
+        # JS must NEVER call element.click() (Flow drops untrusted DOM clicks);
+        # instead it returns {ready: true, target: {x, y}} for page.mouse.click.
         harness = r"""
 const fs = require('fs'); const input = JSON.parse(fs.readFileSync(0,'utf8'));
-let clicks=0;
+let domClicks=0;
 const node = (t, attrs={}) => ({innerText:t, disabled:false,
  getAttribute:k=>attrs[k] || null,
- getBoundingClientRect:()=>({width:100,height:20}), click:()=>{clicks++;}});
+ contains:other=>other===null ? false : false,
+ getBoundingClientRect:()=>({left:984,top:828,width:32,height:32}),
+ click:()=>{domClicks++;}});
 let selected = [node('Veo 3.1 - Quality'),node('x1'),node('16:9'),node('8s')];
 const account = node('', {'aria-label':'Google Account: '+input.account});
-const create = node('arrow_forward');
+const createIcon = {};
+const create = {innerText:'arrow_forward', disabled:false,
+ getAttribute:()=>null, contains:other=>other===createIcon,
+ getBoundingClientRect:()=>({left:984,top:828,width:32,height:32}),
+ click:()=>{domClicks++;}};
+const backdrop = {};
+global.innerWidth=1440; global.innerHeight=900;
 global.location={hostname:'flow.google.com'};
 global.getComputedStyle=()=>({visibility:'visible',display:'block'});
 global.document={body:{innerText:'ULTRA\n10,000 AI credits\nGenerating will use 100 credits'},
+ elementFromPoint:()=>input.obstructed ? backdrop : createIcon,
  querySelectorAll:q=>q==='button' ? [create] : q==='[aria-label]' ? [account] : selected};
 const fn = eval('('+input.js+')'); const evidence=fn(null);
 if (input.menuOnly) selected=selected.filter(n=>n.innerText!=='x1');
 if (input.drift) selected[1]=node('x4');
 const outcome=fn(input.menuOnly ? null : evidence);
-process.stdout.write(JSON.stringify({evidence,outcome,clicks}));
+process.stdout.write(JSON.stringify({evidence,outcome,domClicks}));
 """
-        for drift, menu in [(False,False),(True,False),(False,True)]:
+        for drift, menu, obstructed in [(False,False,False),(True,False,False),(False,True,False),(False,False,True)]:
             result = subprocess.run(['node','-e',harness], input=json.dumps(dict(
                 js=RUNNER.CREATE_EVIDENCE_JS, account=RUNNER.REQUIRED_ACCOUNT,
-                drift=drift, menuOnly=menu)), text=True, capture_output=True, check=True)
+                drift=drift, menuOnly=menu, obstructed=obstructed)), text=True, capture_output=True, check=True)
             data=json.loads(result.stdout)
             self.assertEqual(data['evidence'], self.evidence())
-            self.assertEqual(data['clicks'], 0 if drift or menu else 1)
+            self.assertEqual(data['domClicks'], 0)
             if menu:
                 self.assertEqual(data['outcome']['outputs'], [])
+            elif drift or obstructed:
+                self.assertIs(data['outcome']['ready'], False)
+            else:
+                self.assertIs(data['outcome']['ready'], True)
+                self.assertEqual(data['outcome']['target'], {'x': 1000, 'y': 844})
 
     def still_evidence(self):
         return dict(host=RUNNER.FLOW_HOST, models=[RUNNER.REQUIRED_STILL_MODEL], outputs=['x1'],
@@ -1059,35 +1146,55 @@ process.stdout.write(JSON.stringify({evidence,outcome,clicks}));
                             evidence_path=state / 'still.json')
                     self.assertEqual(page.clicks, 0)
 
-    def test_still_dom_script_verifies_zero_price_and_clicks_once(self):
+    def test_still_dom_script_verifies_zero_price_and_returns_trusted_target(self):
         harness = r"""
 const fs = require('fs'); const input = JSON.parse(fs.readFileSync(0,'utf8'));
-let clicks=0;
+let domClicks=0;
 const node = (t, attrs={}) => ({innerText:t, disabled:false,
  getAttribute:k=>attrs[k] || null,
- getBoundingClientRect:()=>({width:100,height:20}), click:()=>{clicks++;}});
+ getBoundingClientRect:()=>({left:984,top:828,width:32,height:32}), click:()=>{domClicks++;}});
 let selected = [node(input.model),node('x1'),node('16:9')];
 const account = node('', {'aria-label':'Google Account: '+input.account});
-const create = node('Start generation');
+const createIcon = {};
+const create = {innerText:'Start generation', disabled:false,
+ getAttribute:()=>null, contains:other=>other===createIcon,
+ getBoundingClientRect:()=>({left:984,top:828,width:32,height:32}), click:()=>{domClicks++;}};
+global.innerWidth=1440; global.innerHeight=900;
 global.location={hostname:'flow.google.com'};
 global.getComputedStyle=()=>({visibility:'visible',display:'block'});
 global.document={body:{innerText:'ULTRA\n10,000 AI credits\nGenerating will use 0 credits'},
+ elementFromPoint:()=>input.obstructed ? {} : createIcon,
  querySelectorAll:q=>q==='button' ? [create] : q==='[aria-label]' ? [account] : selected};
 const fn = eval('('+input.js+')'); const evidence=fn(null);
 if (input.drift) selected[2]=node('9:16');
 const outcome=fn(evidence);
-process.stdout.write(JSON.stringify({evidence,outcome,clicks}));
+process.stdout.write(JSON.stringify({evidence,outcome,domClicks}));
 """
-        for drift in (False, True):
+        for drift, obstructed in [(False, False), (True, False), (False, True)]:
             result = subprocess.run(
                 ['node', '-e', harness],
                 input=json.dumps(dict(js=RUNNER.STILL_EVIDENCE_JS, model=RUNNER.REQUIRED_STILL_MODEL,
-                                      account=RUNNER.REQUIRED_ACCOUNT, drift=drift)),
+                                      account=RUNNER.REQUIRED_ACCOUNT, drift=drift, obstructed=obstructed)),
                 text=True, capture_output=True, check=True,
             )
             data = json.loads(result.stdout)
             self.assertEqual(data['evidence'], self.still_evidence())
-            self.assertEqual(data['clicks'], 0 if drift else 1)
+            self.assertEqual(data['domClicks'], 0)
+            if drift or obstructed:
+                self.assertIs(data['outcome']['ready'], False)
+            else:
+                self.assertIs(data['outcome']['ready'], True)
+                self.assertEqual(data['outcome']['target'], {'x': 1000, 'y': 844})
+        with tempfile.TemporaryDirectory() as tmp:
+            state = Path(tmp)
+            with RUNNER.SharedFlowAccounting(state) as account:
+                account.reserve('job', 'HOS:009', 6000, live=10000)
+                page = self.Page(self.still_evidence())
+                RUNNER.guarded_still_create(
+                    page, account, reservation='job', plate_id='10_how_high',
+                    evidence_path=state / 'still.json')
+                self.assertEqual(page.clicks, 1)
+                self.assertEqual(page.mouse_coords, [(1000.0, 844.0)])
 
 
 class CapturedAndLegacyDomFixtureTests(unittest.TestCase):
