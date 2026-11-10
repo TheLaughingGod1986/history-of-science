@@ -1,0 +1,76 @@
+{
+  "job": "J0999",
+  "checkedAt": "2026-10-27T18:19:00Z",
+  "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+  "videoId": "uAomPaOBrM8",
+  "stubVideoId": "Hmw4iMDfWFE",
+  "playlist": {
+    "playlistId": "PLEbpfUzWzcXU",
+    "title": "How Did We Discover…? | History of Science",
+    "addedViaDataApi": true,
+    "itemCountAfterAdd": 6
+  },
+  "detailsAfterReload": {
+    "url": "https://studio.youtube.com/video/uAomPaOBrM8/edit",
+    "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+    "title": "How Did Experiments Explain Blood, Germs and Atoms?",
+    "privacyStatus": "private",
+    "publishAt": "2026-12-10T18:00:00Z",
+    "visibilityText": "Visibility Scheduled",
+    "playlistsText": "How Did We Discover…? | History of Science",
+    "abTestText": "A/B testing",
+    "madeForKids": false,
+    "madeForKidsRadio": "VIDEO_MADE_FOR_KIDS_NOT_MFK (No, it's not Made for Kids)",
+    "alteredContent": true,
+    "alteredContentRadio": "VIDEO_HAS_ALTERED_CONTENT_YES (Yes)",
+    "paidPromotion": false,
+    "hasCustomThumbnail": true
+  },
+  "endScreenAfterReload": {
+    "start": "48:58:06",
+    "end": "49:18:06",
+    "saveDisabledOnReopen": true,
+    "rows": [
+      {
+        "idx": 0,
+        "text": "Subscribe: History of Science"
+      },
+      {
+        "idx": 1,
+        "text": "Video: What's Really Inside an Atom?",
+        "videoId": "GHZDsiH7L7A"
+      },
+      {
+        "idx": 2,
+        "text": "Playlist: How Did We Discover…? | History of Science",
+        "playlistId": "PLEbpfUzWzcXU"
+      }
+    ],
+    "overlays": [
+      {
+        "idx": 0,
+        "text": "",
+        "x": 1235,
+        "y": 356,
+        "w": 74,
+        "h": 74
+      },
+      {
+        "idx": 1,
+        "text": "What's Really Inside an Atom? 8:45",
+        "x": 1044,
+        "y": 349,
+        "w": 155,
+        "h": 87
+      },
+      {
+        "idx": 2,
+        "text": "How Did We Discover…? | History of Science 6 videos",
+        "x": 1347,
+        "y": 349,
+        "w": 155,
+        "h": 87
+      }
+    ]
+  }
+}
