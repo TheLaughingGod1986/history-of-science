@@ -10,7 +10,10 @@ SOURCE = Path(__file__).resolve().parents[1] / '04_Audio/tools/orbit_flow_veo_ui
 
 
 def functions():
-    names = {'submit_create', '_generate_clip_once', 'generate_clip', 'wait_and_download_passive'}
+    names = {
+        'submit_create', '_generate_clip_once', 'generate_clip',
+        'wait_and_download_passive', '_prompt_attachment_count', '_start_frame_present',
+    }
     tree = ast.parse(SOURCE.read_text())
     nodes = [n for n in tree.body if isinstance(n, ast.FunctionDef) and n.name in names]
     env = dict(Path=Path, DEFAULT_MODEL='Veo 3.1 - Quality', FLOW_HOME='https://flow.google.com/',
@@ -284,6 +287,127 @@ class BoundaryTests(unittest.TestCase):
         with self.assertRaises(RuntimeError):
             still_env['make_still'](page, 'prompt', Path('out.png'))
         self.assertEqual(page.mock_calls, [])
+
+    def test_start_frame_present_rejects_image_editor_route_and_canvas_tiles(self):
+        import json
+        import subprocess
+        env = functions()
+        edit_page = Mock(url='https://flow.google.com/project/p1/edit/a1')
+        self.assertEqual(env['_prompt_attachment_count'](edit_page), 0)
+        self.assertFalse(env['_start_frame_present'](edit_page))
+        edit_page.evaluate.assert_not_called()
+
+        # Execute the real JS from _start_frame_present against Node fixtures:
+        # 1) /edit/ pathname -> false
+        # 2) flow-image-tile or .cdk-overlay-pane preview -> false
+        # 3) real composer Start slot thumb (/asb/ URL, lower composer, outside tile/overlay) -> true
+        tree = ast.parse(SOURCE.read_text())
+        sf_fn = next(n for n in tree.body if isinstance(n, ast.FunctionDef) and n.name == '_start_frame_present')
+        js_literals = [
+            n.value for n in ast.walk(sf_fn)
+            if isinstance(n, ast.Constant) and isinstance(n.value, str) and 'window.innerHeight' in n.value
+        ]
+        self.assertEqual(len(js_literals), 1)
+        harness = r"""
+const fs = require('fs');
+const input = JSON.parse(fs.readFileSync(0, 'utf8'));
+global.window = { innerHeight: 900 };
+global.location = { pathname: input.pathname };
+const img = {
+  currentSrc: input.src,
+  getBoundingClientRect: () => ({ x: 444, y: 716, width: 56, height: 56 }),
+  closest: (sel) => input.closestMatch && sel.includes(input.closestMatch) ? {} : null,
+};
+global.document = { querySelectorAll: () => [img] };
+const fn = eval('(' + input.js + ')');
+process.stdout.write(JSON.stringify({ present: fn() }));
+"""
+        cases = [
+            ('/project/p1/edit/a1', 'blob:https://flow.google.com/1', None, False),
+            ('/project/p1', 'blob:https://flow.google.com/1', 'flow-image-tile', False),
+            ('/project/p1', 'https://flow.google.com/asb/tok1', '.cdk-overlay-pane', False),
+            ('/project/p1', 'https://flow.google.com/asb/tok1', None, True),
+        ]
+        for pathname, src, closest_match, expected in cases:
+            res = subprocess.run(
+                ['node', '-e', harness],
+                input=json.dumps({'js': js_literals[0], 'pathname': pathname, 'src': src, 'closestMatch': closest_match}),
+                text=True, capture_output=True, check=True,
+            )
+            self.assertEqual(json.loads(res.stdout)['present'], expected)
+
+    def test_attach_image_overlay_picker_never_clicks_canvas_flow_image_tile(self):
+        import json
+        import subprocess
+        tree = ast.parse(SOURCE.read_text())
+        attach_fn = next(n for n in tree.body if isinstance(n, ast.FunctionDef) and n.name == 'attach_image_to_prompt')
+        stem_scripts = [
+            n.value for n in ast.walk(attach_fn)
+            if isinstance(n, ast.Constant) and isinstance(n.value, str) and 'inOverlay' in n.value
+        ]
+        self.assertEqual(len(stem_scripts), 2)
+        harness = r"""
+const fs = require('fs');
+const input = JSON.parse(fs.readFileSync(0, 'utf8'));
+let canvasClicks = 0;
+let overlayClicks = 0;
+const canvasTileImg = {
+  innerText: '08_the_apple_c1_from_08_the_apple.png',
+  currentSrc: 'blob:https://flow.google.com/canvas-tile',
+  classList: { contains: () => false },
+  getAttribute: () => 'Tile displaying a user image',
+  getBoundingClientRect: () => ({ x: 248, y: 120, width: 444, height: 250 }),
+  closest: (sel) => sel.includes('flow-image-tile') ? {} : null,
+  click: () => { canvasClicks++; },
+};
+const overlayOption = {
+  innerText: '08_the_apple_c1_from_08_the_apple.png',
+  currentSrc: '',
+  classList: { contains: (c) => input.alreadyActive && c === 'asset-item-active' },
+  getAttribute: () => null,
+  getBoundingClientRect: () => ({ x: 223, y: 227, width: 200, height: 48 }),
+  closest: (sel) => sel.includes('.cdk-overlay-pane') ? {} : null,
+  click: () => { overlayClicks++; },
+};
+global.document = {
+  querySelectorAll: (q) => {
+    if (!input.overlayOpen) return q.includes('option') && !q.includes('img') ? [] : [canvasTileImg];
+    if (q.includes('role="option"') && !q.includes('img')) return [overlayOption];
+    return [canvasTileImg, overlayOption];
+  },
+};
+const fn = eval('(' + input.js + ')');
+const out = fn('08_the_apple_c1_from_08_');
+process.stdout.write(JSON.stringify({ out, canvasClicks, overlayClicks }));
+"""
+        for js in stem_scripts:
+            # Closed overlay with a background blob canvas tile: 0 canvas clicks!
+            closed = json.loads(subprocess.run(
+                ['node', '-e', harness],
+                input=json.dumps({'js': js, 'overlayOpen': False, 'alreadyActive': False}),
+                text=True, capture_output=True, check=True,
+            ).stdout)
+            self.assertEqual(closed['canvasClicks'], 0)
+            self.assertFalse(closed['out'])
+
+            # Open overlay with active asset item: 0 canvas clicks, 0 toggle-off clicks!
+            active = json.loads(subprocess.run(
+                ['node', '-e', harness],
+                input=json.dumps({'js': js, 'overlayOpen': True, 'alreadyActive': True}),
+                text=True, capture_output=True, check=True,
+            ).stdout)
+            self.assertEqual(active['canvasClicks'], 0)
+            self.assertEqual(active['overlayClicks'], 0)
+            self.assertTrue(active['out'])
+
+            # Open overlay with inactive asset item: clicks overlay item only, 0 canvas clicks!
+            inactive = json.loads(subprocess.run(
+                ['node', '-e', harness],
+                input=json.dumps({'js': js, 'overlayOpen': True, 'alreadyActive': False}),
+                text=True, capture_output=True, check=True,
+            ).stdout)
+            self.assertEqual(inactive['canvasClicks'], 0)
+            self.assertEqual(inactive['overlayClicks'], 1)
 
 
 if __name__=='__main__': unittest.main()

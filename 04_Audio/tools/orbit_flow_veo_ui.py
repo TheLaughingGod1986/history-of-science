@@ -1023,13 +1023,19 @@ def upload_orbit_ref(page, ref: Path) -> bool:
 
 def _prompt_attachment_count(page) -> int:
     """Count image chips near the agent prompt editor (not the whole page)."""
+    if "/edit/" in (getattr(page, "url", "") or ""):
+        return 0
     return page.evaluate(
         """() => {
+          if (typeof location !== 'undefined' && String(location.pathname || '').includes('/edit/')) return 0;
           const ed = document.querySelector('[data-slate-editor="true"]');
           if (!ed) return 0;
           const er = ed.getBoundingClientRect();
           // Attachment chips sit just above the slate editor in the composer.
           return [...document.querySelectorAll('img')].filter(i => {
+            if (typeof i.closest === 'function' && i.closest(
+              'flow-image-tile,flow-tile-container,flow-grid-tile-container,.cdk-overlay-pane,[role="dialog"]'
+            )) return false;
             const r = i.getBoundingClientRect();
             if (r.width < 24 || r.height < 24 || r.width > 200) return false;
             // Exclude avatar / header chrome
@@ -1037,7 +1043,7 @@ def _prompt_attachment_count(page) -> int:
             const nearY = r.y >= er.y - 280 && r.bottom <= er.bottom + 100;
             const nearX = r.x >= er.x - 60 && r.x <= er.right + 60;
             const src = i.currentSrc || i.src || '';
-            const isMedia = /media\\.getMediaUrlRedirect|blob:|data:image|flow-content\\.google|googleusercontent/i.test(src);
+            const isMedia = /media\\.getMediaUrlRedirect|\\/asb\\/|blob:|data:image|flow-content\\.google|googleusercontent/i.test(src);
             return nearY && nearX && isMedia;
           }).length;
         }"""
@@ -1046,21 +1052,27 @@ def _prompt_attachment_count(page) -> int:
 
 def _start_frame_present(page) -> bool:
     """True if Ingredients chip OR Frames Start preview is wired near the prompt."""
+    if "/edit/" in (getattr(page, "url", "") or ""):
+        return False
     if _prompt_attachment_count(page) >= 1:
         return True
     return bool(
         page.evaluate(
             """() => {
+              if (typeof location !== 'undefined' && String(location.pathname || '').includes('/edit/')) return false;
               const h = window.innerHeight || 800;
               // Frames Start thumb often sits mid/lower composer; gallery tiles are higher.
               const imgs = [...document.querySelectorAll('img')].filter(i => {
+                if (typeof i.closest === 'function' && i.closest(
+                  'flow-image-tile,flow-tile-container,flow-grid-tile-container,.cdk-overlay-pane,[role="dialog"]'
+                )) return false;
                 const r = i.getBoundingClientRect();
                 const src = i.currentSrc || i.src || '';
                 if (r.width < 28 || r.height < 28 || r.width > 420) return false;
                 if (r.y < 80) return false;
                 // Prefer lower-half (Start slot / chip); allow mid for taller windows.
                 if (r.y < h * 0.35) return false;
-                return /flow-content\\.google|googleusercontent|blob:|media\\.getMediaUrlRedirect/i.test(src);
+                return /flow-content\\.google|\\/asb\\/|googleusercontent|blob:|media\\.getMediaUrlRedirect/i.test(src);
               });
               return imgs.length > 0;
             }"""
@@ -1323,23 +1335,33 @@ def attach_image_to_prompt(page, ref: Path) -> bool:
         )
         return True
 
-    # Prefer selecting the just-uploaded asset by filename stem when possible
+    # Prefer selecting the just-uploaded asset by filename stem inside an open picker overlay only
+    # (never click a background flow-image-tile on the project canvas, which navigates to /edit/).
+    project_url = getattr(page, "_orbit_flow_project_url", None) or (
+        page.url if "/edit/" not in (getattr(page, "url", "") or "") else None
+    )
     stem = ref.stem.lower()[:24]
     page.evaluate(
         """(stem) => {
+          const inOverlay = el => typeof el.closest === 'function' &&
+            !!el.closest('.cdk-overlay-pane,[role="dialog"],[role="listbox"],[role="menu"]') &&
+            !el.closest('flow-image-tile,flow-tile-container,flow-grid-tile-container');
           for (const el of document.querySelectorAll('div,button,li,[role="option"],img')) {
+            if (!inOverlay(el)) continue;
+            if (el.classList && el.classList.contains('asset-item-active')) return true;
             const t = ((el.innerText || el.getAttribute('alt') || el.getAttribute('aria-label') || '') + '').trim().toLowerCase();
             if (stem && t.includes(stem) && t.length < 200) {
               try { el.click(); } catch (e) {}
               return true;
             }
           }
-          // Fallback: click the newest/largest media thumbnail in the picker.
+          // Fallback: click the newest media thumbnail inside an open picker overlay only.
           const imgs = [...document.querySelectorAll('img')].filter(i => {
+            if (!inOverlay(i)) return false;
             const r = i.getBoundingClientRect();
             const src = i.currentSrc || i.src || '';
-            return r.width > 48 && r.height > 48 && r.y > 80 &&
-              (/flow-content\\.google|googleusercontent|blob:/i.test(src) || r.width > 120);
+            return r.width > 36 && r.height > 36 && r.y > 80 &&
+              (/flow-content\\.google|\\/asb\\/|googleusercontent|blob:/i.test(src) || r.width > 120);
           });
           if (imgs.length) {
             try { imgs[imgs.length - 1].click(); return true; } catch (e) {}
@@ -1349,6 +1371,9 @@ def attach_image_to_prompt(page, ref: Path) -> bool:
         stem,
     )
     page.wait_for_timeout(500)
+    if project_url and "/edit/" in (getattr(page, "url", "") or ""):
+        page.goto(project_url, wait_until="domcontentloaded", timeout=60_000)
+        page.wait_for_timeout(1200)
 
     # Sep 2026 HOS: Ingredients "Add to Prompt" often never enables.
     # Prefer Frames Start slot FIRST (proven on Mini), then Animate, then chip.
@@ -1364,7 +1389,7 @@ def attach_image_to_prompt(page, ref: Path) -> bool:
         print(f"  frames settings warn: {e}", flush=True)
     start_btn = page.get_by_role("button", name=re.compile(r"^Start$", re.I))
     if start_btn.count() == 0:
-        start_btn = page.locator('button:has-text("Start")')
+        start_btn = page.locator('button:text-is("Start")')
     if start_btn.count():
         try:
             start_btn.last.click(force=True, timeout=4000)
@@ -1372,19 +1397,38 @@ def attach_image_to_prompt(page, ref: Path) -> bool:
         except Exception:
             pass
     clicked = page.evaluate(
-        """() => {
+        """(stem) => {
+          const inOverlay = el => typeof el.closest === 'function' &&
+            !!el.closest('.cdk-overlay-pane,[role="dialog"],[role="listbox"],[role="menu"]') &&
+            !el.closest('flow-image-tile,flow-tile-container,flow-grid-tile-container');
+          const opts = [...document.querySelectorAll('button[role="option"],[role="option"]')].filter(inOverlay);
+          if (opts.some(o => o.classList && o.classList.contains('asset-item-active'))) return 'already-active';
+          for (const o of opts) {
+            const t = ((o.innerText || o.getAttribute('aria-label') || '') + '').trim().toLowerCase();
+            if (stem && t.includes(stem)) {
+              try { o.click(); return true; } catch (e) {}
+            }
+          }
+          if (opts.length) {
+            try { opts[0].click(); return true; } catch (e) {}
+          }
           const imgs = [...document.querySelectorAll('img')].filter(i => {
+            if (!inOverlay(i)) return false;
             const r = i.getBoundingClientRect();
             const src = i.currentSrc || i.src || '';
-            return r.width > 80 && r.height > 60 &&
-              /flow-content\\.google|googleusercontent|blob:/i.test(src);
+            return r.width > 36 && r.height > 36 &&
+              /flow-content\\.google|\\/asb\\/|googleusercontent|blob:/i.test(src);
           });
           if (!imgs.length) return false;
           try { imgs[imgs.length - 1].click(); return true; } catch (e) { return false; }
-        }"""
+        }""",
+        stem,
     )
     print(f"  frames tile click={clicked}", flush=True)
     page.wait_for_timeout(800)
+    if project_url and "/edit/" in (getattr(page, "url", "") or ""):
+        page.goto(project_url, wait_until="domcontentloaded", timeout=60_000)
+        page.wait_for_timeout(1200)
     for pattern in (
         r"Add to Prompt",
         r"Use as start",
