@@ -1,0 +1,76 @@
+{
+  "format": "longform",
+  "video": null,
+  "youtubeId": null,
+  "title": "Anesthesia: The Day Surgery Stopped Hurting",
+  "titleVariant": "A",
+  "descriptionFile": "Descriptions/surgery_long_description_v01.txt",
+  "tagsFile": "Tags/surgery_long_tags_v01.txt",
+  "chaptersFile": null,
+  "pinnedCommentFile": null,
+  "thumbnail": null,
+  "thumbnailAbc": [],
+  "titleAbc": [
+    "Anesthesia: The Day Surgery Stopped Hurting",
+    "What Surgery Was Like Before Anesthesia"
+  ],
+  "schedule": "2026-12-10T18:00:00.000Z",
+  "playlistId": null,
+  "relatedVideoId": null,
+  "privacy": "private",
+  "madeForKids": false,
+  "alteredContent": true,
+  "language": "en-GB",
+  "categoryId": "27",
+  "affiliate": null,
+  "channel": "@HistoryOfScienceYT",
+  "premiere": false,
+  "note": "Scaffold (5 Nov 2026, J2239). Topic locked for Thu 10 Dec 2026 18:00 UK = 18:00 UTC (GMT) in J2231 (ready for Ben's OK Sun 6 Dec). Arm 2-way Title Test & Compare on launch ('Anesthesia: The Day Surgery Stopped Hurting' vs 'What Surgery Was Like Before Anesthesia', per J0180 spelling/title lock). Script v02 (91.1/100 PASS), J0198 Gemini facts pass (35 OK, 1 PARTIAL hedged, 0 FLAG) and J0224 Claude primary-source quote check PASS. Apply HOS-2026-11-E2 (J2204) in 0:00-0:30 at picture/edit (>=7 moving plates, sub-4.5s cuts, immediate pocket-watch/ether-globe apparatus at 0:05-0:15, first animated stopwatch DATA+SCALE at 0:25-0:32). Two Test B search-titled Shorts in 10_Shorts/SHORTS_SCRIPTS_v02.md ('How Was Surgery Done Before Anesthesia?', 'Who Invented Anesthesia?'). Nothing changed on YouTube now.",
+  "neighbours": {
+    "phrases": [
+      "anesthesia",
+      "surgery before anesthesia",
+      "how anesthesia was discovered"
+    ],
+    "checked": "2026-11-05",
+    "videos": [
+      {
+        "id": "B_tTymvDWXk",
+        "channel": "TED-Ed",
+        "title": "How does anesthesia work? - Steven Zheng",
+        "views": 19734385
+      },
+      {
+        "id": "XPDVmBg5DeE",
+        "channel": "TED-Ed",
+        "title": "How does laser eye surgery work? - Dan Reinstein",
+        "views": 6830607
+      },
+      {
+        "id": "o1z2DfFZBS4",
+        "channel": "TED-Ed",
+        "title": "How does heart transplant surgery work? - Roni Shanoada",
+        "views": 4584699
+      },
+      {
+        "id": "uRhkDN2WjzI",
+        "channel": "TED-Ed",
+        "title": "How aspirin was discovered - Krishna Sudhir",
+        "views": 3078948
+      },
+      {
+        "id": "FBlcU4GdxCc",
+        "channel": "TED-Ed",
+        "title": "What did people do before anesthesia? - Sally Frampton",
+        "views": 2659053
+      },
+      {
+        "id": "43z7NovmlHk",
+        "channel": "SciShow",
+        "title": "What Does Anesthesia Do to Your Brain?",
+        "views": 1381676
+      }
+    ],
+    "note": "From evidence_2026-11-05_neighbours.json (gate PASS: 6 education >=1M; TED-Ed yes, led by TED-Ed 'How does anesthesia work?' 19.73M and 'What did people do before anesthesia?' 2.66M). US spelling 'Anesthesia' in title/tags matches top neighbours (J0180 Chief lock)."
+  }
+}

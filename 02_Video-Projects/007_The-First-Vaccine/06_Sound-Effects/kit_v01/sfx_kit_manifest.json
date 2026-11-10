@@ -1,0 +1,27 @@
+{
+  "kit": "hos",
+  "seed": 830,
+  "source": "own synthesis (scripts/sfx_kit.py), no third-party samples",
+  "licence": "ours; no attribution needed",
+  "spend": "none",
+  "files": [
+    {
+      "file": "sfx_hos_rumble_low_v01.wav",
+      "seconds": 4.0,
+      "peak_dbfs": -12.0,
+      "sha256": "99359195f55c3235b6c1aa9963edddcc23e2964dc5c85b1559d4517e1d9dda87"
+    },
+    {
+      "file": "sfx_hos_whoosh_soft_v01.wav",
+      "seconds": 1.0,
+      "peak_dbfs": -12.0,
+      "sha256": "ed75216cd9c497cce28a7b7f9693aeb1bac04b8d9aa63b6dfaec4111561f97c0"
+    },
+    {
+      "file": "sfx_hos_tick_ink_v01.wav",
+      "seconds": 0.06,
+      "peak_dbfs": -12.0,
+      "sha256": "d56397c74f9ae37307e5c5bdc4df0f1ccc74922d477aa7c6be57077a29d761af"
+    }
+  ]
+}
