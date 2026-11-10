@@ -1,0 +1,36 @@
+{
+  "at": "2026-11-05T06:41:28.713588+00:00",
+  "read_only": true,
+  "price_verified": false,
+  "filter_elements": [
+    {
+      "role": "combobox",
+      "aria": null,
+      "outer": "<div _ngcontent-onecloudbarmicroui__dbac50bd-3e15-4650-8045-b5922ad23e6b-c2708329371=\"\" role=\"combobox\" aria-haspopup=\"grid\" aria-owns=\"pcc-search-results-list-wrapper\" class=\"pcc-combobox\" aria-expanded=\"false\"><div _ngcontent-onecloudbarmicroui__dbac50bd-3e15-4650-8045-b5922ad23e6b-c2708329371=\"\" aria-hidden=\"true\" class=\"pcc-search-autocomplete-overlay\"></div><input _ngcontent-onecloudbarmicroui__dbac50bd-3e15-4650-8045-b5922ad23e6b-c2708329371=\"\" matinput=\"\" autocomplete=\"off\" type=\"search\" "
+    },
+    {
+      "role": "combobox",
+      "aria": "Billing account Orbit API",
+      "outer": "<button _ngcontent-pantheon-host-app-id__pantheon-host-binary-id-c3077465873=\"\" cdk-overlay-origin=\"\" role=\"combobox\" aria-haspopup=\"listbox\" aria-activedescendant=\"cfc-scope-picker-selection-button-text\" class=\"cfc-scope-picker-selection-button cfc-border-primary\" aria-label=\"Billing account Orbit API\" aria-expanded=\"false\" jslog=\"238075;track:generic_click\"><div _ngcontent-pantheon-host-app-id__pantheon-host-binary-id-c3077465873=\"\" class=\"cfc-flex-container cfc-flex-justify-center cfc-flex-ce"
+    },
+    {
+      "role": "combobox",
+      "aria": null,
+      "outer": "<div _ngcontent-ng-c534924016=\"\" aria-autocomplete=\"list\" aria-multiline=\"false\" autocomplete=\"off\" autocapitalize=\"none\" contenteditable=\"true\" spellcheck=\"false\" tabindex=\"0\" class=\"cfc-filter-input cfc-outline-focus-indicator\" data-ph=\"Enter property name or value\" aria-expanded=\"false\" aria-labelledby=\"_0rif_filter-label-goog_1667895838\" aria-description=\"Use arrow keys and press enter to select\" id=\"_0rif_chip-list-input-goog_1667895840\" role=\"combobox\" sandboxuid=\"0\"></div>"
+    },
+    {
+      "role": "combobox",
+      "aria": "Rows per page",
+      "outer": "<cfc-select _ngcontent-ng-c3094675086=\"\" class=\"cfc-select cfc-select-inline mat-focus-indicator\" _nghost-ng-c1316587615=\"\" jslog=\"54820;track:generic_click\" role=\"combobox\" id=\"_0rif_cfc-select-0\" aria-expanded=\"false\" aria-haspopup=\"listbox\" aria-label=\"Rows per page\" aria-invalid=\"false\" tabindex=\"0\" sandboxuid=\"0\"><template _ngcontent-ng-c1316587615=\"\" id=\"_0rif_cfc-select-has-dialog-description-1\" sandboxuid=\"0\">\n  Has popup dialog.\n</template><div _ngcontent-ng-c1316587615=\"\" cdk-overlay-o"
+    }
+  ],
+  "veo_rows": [],
+  "table_rows": 11,
+  "footer": [
+    "console.cloud.google.com uses cookies from Google to deliver and enhance the quality of its services and to analyse traffic. Learn more",
+    "The following is the list of SKUs and prices for Google Cloud Platform services and Google Maps Platform (last updated on 05/11/2026). Any price changes will be made in accordance with the Agreement. We will not notify you for increases in non-USD prices that are due to currency conversion fluctuations. The SKU pricing information below does not include credits (including promotions, sustained use discounts, committed use discounts or spending-based discounts). Learn more",
+    "Filter",
+    "Rows per page:",
+    "1 \u2013 10 of 174154"
+  ]
+}

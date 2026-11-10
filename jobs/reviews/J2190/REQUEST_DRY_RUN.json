@@ -1,0 +1,306 @@
+{
+  "mode": "NO_NETWORK_DRY_RUN",
+  "spend_authorised": false,
+  "requests": [
+    {
+      "input": "Short_B S02",
+      "take": 1,
+      "request": {
+        "project": "gen-lang-client-0538779324",
+        "location": "us-central1",
+        "model": "veo-3.1-generate-001",
+        "source": {
+          "prompt": "Premium HOS Animistry-class 3D cartoon, warm Georgian oak-and-glass natural-history room, finished tactile materials. One continuous real camera/object movement, modest camera drift, centred subject readable on a phone. No text, labels, digits, logos, subtitles, dialogue, narration, Explorer, robot, animal or modern apparatus. Silent picture. No still push, freeze, repeated frames or slow padding. Keep complete subject within portrait-safe centre throughout. One single lit wax candle already enclosed in a sealed transparent Priestley bell jar. No mint yet. Hold the visible flame burning inside the jar for the entire usable interval; the dying phase belongs to the next shot. No second candle, smoking dead stub or flame leaving frame."
+        },
+        "config": {
+          "number_of_videos": 1,
+          "duration_seconds": 8,
+          "resolution": "1080p",
+          "aspect_ratio": "9:16",
+          "generate_audio": false
+        }
+      },
+      "request_sha256": "5d332d72506471f738a9c8b2cdb984628a0f91a9167c09e5f8a75b3d6080b289",
+      "identity": "J2190:Short_B S02:t1",
+      "output": "04_Generated-Clips/shorts_J2190/v01/Short_B_S02_t1.mp4",
+      "operation": null,
+      "output_sha256": null,
+      "status": "PREPARATION_ONLY"
+    },
+    {
+      "input": "Short_B S02",
+      "take": 2,
+      "request": {
+        "project": "gen-lang-client-0538779324",
+        "location": "us-central1",
+        "model": "veo-3.1-generate-001",
+        "source": {
+          "prompt": "Premium HOS Animistry-class 3D cartoon, warm Georgian oak-and-glass natural-history room, finished tactile materials. One continuous real camera/object movement, modest camera drift, centred subject readable on a phone. No text, labels, digits, logos, subtitles, dialogue, narration, Explorer, robot, animal or modern apparatus. Silent picture. No still push, freeze, repeated frames or slow padding. Keep complete subject within portrait-safe centre throughout. One single lit wax candle already enclosed in a sealed transparent Priestley bell jar. No mint yet. Hold the visible flame burning inside the jar for the entire usable interval; the dying phase belongs to the next shot. No second candle, smoking dead stub or flame leaving frame."
+        },
+        "config": {
+          "number_of_videos": 1,
+          "duration_seconds": 8,
+          "resolution": "1080p",
+          "aspect_ratio": "9:16",
+          "generate_audio": false
+        }
+      },
+      "request_sha256": "5d332d72506471f738a9c8b2cdb984628a0f91a9167c09e5f8a75b3d6080b289",
+      "identity": "J2190:Short_B S02:t2",
+      "output": "04_Generated-Clips/shorts_J2190/v01/Short_B_S02_t2.mp4",
+      "operation": null,
+      "output_sha256": null,
+      "status": "PREPARATION_ONLY"
+    },
+    {
+      "input": "Short_B S06",
+      "take": 1,
+      "request": {
+        "project": "gen-lang-client-0538779324",
+        "location": "us-central1",
+        "model": "veo-3.1-generate-001",
+        "source": {
+          "prompt": "Premium HOS Animistry-class 3D cartoon, warm Georgian oak-and-glass natural-history room, finished tactile materials. One continuous real camera/object movement, modest camera drift, centred subject readable on a phone. No text, labels, digits, logos, subtitles, dialogue, narration, Explorer, robot, animal or modern apparatus. Silent picture. No still push, freeze, repeated frames or slow padding. Keep complete subject within portrait-safe centre throughout. A new distinct close view of one candle burning bright and steady inside the sealed mint-restored Priestley bell jar, green mint sprig beside it. Match the jar and wooden tray from the reference, but flame must be inside sealed jar. No underwater leaves, gas-collection tube or second candle."
+        },
+        "config": {
+          "number_of_videos": 1,
+          "duration_seconds": 8,
+          "resolution": "1080p",
+          "aspect_ratio": "9:16",
+          "generate_audio": false
+        }
+      },
+      "request_sha256": "b4c0f90a36a8d5204bf6fe3168ea0c7ed1c25203986d021b9fe64813e397f5d2",
+      "identity": "J2190:Short_B S06:t1",
+      "output": "04_Generated-Clips/shorts_J2190/v01/Short_B_S06_t1.mp4",
+      "operation": null,
+      "output_sha256": null,
+      "status": "PREPARATION_ONLY"
+    },
+    {
+      "input": "Short_B S06",
+      "take": 2,
+      "request": {
+        "project": "gen-lang-client-0538779324",
+        "location": "us-central1",
+        "model": "veo-3.1-generate-001",
+        "source": {
+          "prompt": "Premium HOS Animistry-class 3D cartoon, warm Georgian oak-and-glass natural-history room, finished tactile materials. One continuous real camera/object movement, modest camera drift, centred subject readable on a phone. No text, labels, digits, logos, subtitles, dialogue, narration, Explorer, robot, animal or modern apparatus. Silent picture. No still push, freeze, repeated frames or slow padding. Keep complete subject within portrait-safe centre throughout. A new distinct close view of one candle burning bright and steady inside the sealed mint-restored Priestley bell jar, green mint sprig beside it. Match the jar and wooden tray from the reference, but flame must be inside sealed jar. No underwater leaves, gas-collection tube or second candle."
+        },
+        "config": {
+          "number_of_videos": 1,
+          "duration_seconds": 8,
+          "resolution": "1080p",
+          "aspect_ratio": "9:16",
+          "generate_audio": false
+        }
+      },
+      "request_sha256": "b4c0f90a36a8d5204bf6fe3168ea0c7ed1c25203986d021b9fe64813e397f5d2",
+      "identity": "J2190:Short_B S06:t2",
+      "output": "04_Generated-Clips/shorts_J2190/v01/Short_B_S06_t2.mp4",
+      "operation": null,
+      "output_sha256": null,
+      "status": "PREPARATION_ONLY"
+    },
+    {
+      "input": "Short_C S01",
+      "take": 1,
+      "request": {
+        "project": "gen-lang-client-0538779324",
+        "location": "us-central1",
+        "model": "veo-3.1-generate-001",
+        "source": {
+          "prompt": "Premium HOS Animistry-class 3D cartoon, warm Georgian oak-and-glass natural-history room, finished tactile materials. One continuous real camera/object movement, modest camera drift, centred subject readable on a phone. No text, labels, digits, logos, subtitles, dialogue, narration, Explorer, robot, animal or modern apparatus. Silent picture. No still push, freeze, repeated frames or slow padding. Keep complete subject within portrait-safe centre throughout. Underwater macro of a fresh green leaf with small silver bubbles visibly detaching and rising in sunlight from the very first frame. Tiny moving water ripples, stable leaf identity. No magical glow, golden particles or visible chemistry. Reserve source 0-1s for terminal preroll, opening uses contiguous 1-3.56s with identical crop."
+        },
+        "config": {
+          "number_of_videos": 1,
+          "duration_seconds": 8,
+          "resolution": "1080p",
+          "aspect_ratio": "9:16",
+          "generate_audio": false
+        }
+      },
+      "request_sha256": "861cd17e7e7e8157478b06d2ad708cf8c7dc892ac3265347a1153aeeb0adedd2",
+      "identity": "J2190:Short_C S01:t1",
+      "output": "04_Generated-Clips/shorts_J2190/v01/Short_C_S01_t1.mp4",
+      "operation": null,
+      "output_sha256": null,
+      "status": "PREPARATION_ONLY"
+    },
+    {
+      "input": "Short_C S01",
+      "take": 2,
+      "request": {
+        "project": "gen-lang-client-0538779324",
+        "location": "us-central1",
+        "model": "veo-3.1-generate-001",
+        "source": {
+          "prompt": "Premium HOS Animistry-class 3D cartoon, warm Georgian oak-and-glass natural-history room, finished tactile materials. One continuous real camera/object movement, modest camera drift, centred subject readable on a phone. No text, labels, digits, logos, subtitles, dialogue, narration, Explorer, robot, animal or modern apparatus. Silent picture. No still push, freeze, repeated frames or slow padding. Keep complete subject within portrait-safe centre throughout. Underwater macro of a fresh green leaf with small silver bubbles visibly detaching and rising in sunlight from the very first frame. Tiny moving water ripples, stable leaf identity. No magical glow, golden particles or visible chemistry. Reserve source 0-1s for terminal preroll, opening uses contiguous 1-3.56s with identical crop."
+        },
+        "config": {
+          "number_of_videos": 1,
+          "duration_seconds": 8,
+          "resolution": "1080p",
+          "aspect_ratio": "9:16",
+          "generate_audio": false
+        }
+      },
+      "request_sha256": "861cd17e7e7e8157478b06d2ad708cf8c7dc892ac3265347a1153aeeb0adedd2",
+      "identity": "J2190:Short_C S01:t2",
+      "output": "04_Generated-Clips/shorts_J2190/v01/Short_C_S01_t2.mp4",
+      "operation": null,
+      "output_sha256": null,
+      "status": "PREPARATION_ONLY"
+    },
+    {
+      "input": "Short_C S06",
+      "take": 1,
+      "request": {
+        "project": "gen-lang-client-0538779324",
+        "location": "us-central1",
+        "model": "veo-3.1-generate-001",
+        "source": {
+          "prompt": "Premium HOS Animistry-class 3D cartoon, warm Georgian oak-and-glass natural-history room, finished tactile materials. Close view of one clear water jar containing a fully submerged fresh green leaf, matching the adjacent return-to-sun shot. Hands slide the jar from sunlight into bright daytime shade; silver bubbles cease rising during the usable 3.52 seconds. Keep water, leaf and jar clearly readable throughout. Shade is not nightfall: lifted natural light, no black fade. Continuous real object and water motion at 1x, no freeze, repeated frames or still push. No terracotta pot, dry mint plant, air bell jar, Explorer, text, labels, logos, magical glow, speech or music. No visible chemistry beyond ordinary bubbles."
+        },
+        "config": {
+          "number_of_videos": 1,
+          "duration_seconds": 8,
+          "resolution": "1080p",
+          "aspect_ratio": "9:16",
+          "generate_audio": false
+        }
+      },
+      "request_sha256": "62d00faba567c6cd80f7fd6c7d73d5810c4ab7ec6173a180763605320a590df2",
+      "identity": "J2190:Short_C S06:t1",
+      "output": "04_Generated-Clips/shorts_J2190/v01/Short_C_S06_t1.mp4",
+      "operation": null,
+      "output_sha256": null,
+      "status": "PREPARATION_ONLY"
+    },
+    {
+      "input": "Short_C S06",
+      "take": 2,
+      "request": {
+        "project": "gen-lang-client-0538779324",
+        "location": "us-central1",
+        "model": "veo-3.1-generate-001",
+        "source": {
+          "prompt": "Premium HOS Animistry-class 3D cartoon, warm Georgian oak-and-glass natural-history room, finished tactile materials. Close view of one clear water jar containing a fully submerged fresh green leaf, matching the adjacent return-to-sun shot. Hands slide the jar from sunlight into bright daytime shade; silver bubbles cease rising during the usable 3.52 seconds. Keep water, leaf and jar clearly readable throughout. Shade is not nightfall: lifted natural light, no black fade. Continuous real object and water motion at 1x, no freeze, repeated frames or still push. No terracotta pot, dry mint plant, air bell jar, Explorer, text, labels, logos, magical glow, speech or music. No visible chemistry beyond ordinary bubbles."
+        },
+        "config": {
+          "number_of_videos": 1,
+          "duration_seconds": 8,
+          "resolution": "1080p",
+          "aspect_ratio": "9:16",
+          "generate_audio": false
+        }
+      },
+      "request_sha256": "62d00faba567c6cd80f7fd6c7d73d5810c4ab7ec6173a180763605320a590df2",
+      "identity": "J2190:Short_C S06:t2",
+      "output": "04_Generated-Clips/shorts_J2190/v01/Short_C_S06_t2.mp4",
+      "operation": null,
+      "output_sha256": null,
+      "status": "PREPARATION_ONLY"
+    },
+    {
+      "input": "Short_C S07",
+      "take": 1,
+      "request": {
+        "project": "gen-lang-client-0538779324",
+        "location": "us-central1",
+        "model": "veo-3.1-generate-001",
+        "source": {
+          "prompt": "Premium HOS Animistry-class 3D cartoon, warm Georgian oak-and-glass natural-history room, finished tactile materials. One continuous real camera/object movement, modest camera drift, centred subject readable on a phone. No text, labels, digits, logos, subtitles, dialogue, narration, Explorer, robot, animal or modern apparatus. Silent picture. No still push, freeze, repeated frames or slow padding. Keep complete subject within portrait-safe centre throughout. Close on one clear water jar with submerged fresh green leaf. Hands slide the jar from the edge of shade back into ordinary sunlight; small silver bubbles visibly resume and rise. Complete return and visible resumption within the first 2.8 seconds. Keep jar, water and leaf fully visible throughout. No dry potted vine, shutter-only view or continued stopped bubbles."
+        },
+        "config": {
+          "number_of_videos": 1,
+          "duration_seconds": 8,
+          "resolution": "1080p",
+          "aspect_ratio": "9:16",
+          "generate_audio": false
+        }
+      },
+      "request_sha256": "56a37d4fd19e42d14e14e5fe4c15baef251853478a9405421871e9f4cba1ecd0",
+      "identity": "J2190:Short_C S07:t1",
+      "output": "04_Generated-Clips/shorts_J2190/v01/Short_C_S07_t1.mp4",
+      "operation": null,
+      "output_sha256": null,
+      "status": "PREPARATION_ONLY"
+    },
+    {
+      "input": "Short_C S07",
+      "take": 2,
+      "request": {
+        "project": "gen-lang-client-0538779324",
+        "location": "us-central1",
+        "model": "veo-3.1-generate-001",
+        "source": {
+          "prompt": "Premium HOS Animistry-class 3D cartoon, warm Georgian oak-and-glass natural-history room, finished tactile materials. One continuous real camera/object movement, modest camera drift, centred subject readable on a phone. No text, labels, digits, logos, subtitles, dialogue, narration, Explorer, robot, animal or modern apparatus. Silent picture. No still push, freeze, repeated frames or slow padding. Keep complete subject within portrait-safe centre throughout. Close on one clear water jar with submerged fresh green leaf. Hands slide the jar from the edge of shade back into ordinary sunlight; small silver bubbles visibly resume and rise. Complete return and visible resumption within the first 2.8 seconds. Keep jar, water and leaf fully visible throughout. No dry potted vine, shutter-only view or continued stopped bubbles."
+        },
+        "config": {
+          "number_of_videos": 1,
+          "duration_seconds": 8,
+          "resolution": "1080p",
+          "aspect_ratio": "9:16",
+          "generate_audio": false
+        }
+      },
+      "request_sha256": "56a37d4fd19e42d14e14e5fe4c15baef251853478a9405421871e9f4cba1ecd0",
+      "identity": "J2190:Short_C S07:t2",
+      "output": "04_Generated-Clips/shorts_J2190/v01/Short_C_S07_t2.mp4",
+      "operation": null,
+      "output_sha256": null,
+      "status": "PREPARATION_ONLY"
+    },
+    {
+      "input": "Short_C S08",
+      "take": 1,
+      "request": {
+        "project": "gen-lang-client-0538779324",
+        "location": "us-central1",
+        "model": "veo-3.1-generate-001",
+        "source": {
+          "prompt": "Premium HOS Animistry-class 3D cartoon, warm Georgian oak-and-glass natural-history room, finished tactile materials. One continuous real camera/object movement, modest camera drift, centred subject readable on a phone. No text, labels, digits, logos, subtitles, dialogue, narration, Explorer, robot, animal or modern apparatus. Silent picture. No still push, freeze, repeated frames or slow padding. Keep complete subject within portrait-safe centre throughout. A distinct close view of a green leaf underwater in ordinary sunlight, gently moving water and small bubbles rising from the leaf as a closing illustration. Different camera position and composition from opening macro and return-to-sun shot. No magic glow, cell cutaway, golden specks or fabricated visible chemistry."
+        },
+        "config": {
+          "number_of_videos": 1,
+          "duration_seconds": 8,
+          "resolution": "1080p",
+          "aspect_ratio": "9:16",
+          "generate_audio": false
+        }
+      },
+      "request_sha256": "480759788647226bf39d5eb3bc0422aca8f4284dde920631e5ab1216d53ab490",
+      "identity": "J2190:Short_C S08:t1",
+      "output": "04_Generated-Clips/shorts_J2190/v01/Short_C_S08_t1.mp4",
+      "operation": null,
+      "output_sha256": null,
+      "status": "PREPARATION_ONLY"
+    },
+    {
+      "input": "Short_C S08",
+      "take": 2,
+      "request": {
+        "project": "gen-lang-client-0538779324",
+        "location": "us-central1",
+        "model": "veo-3.1-generate-001",
+        "source": {
+          "prompt": "Premium HOS Animistry-class 3D cartoon, warm Georgian oak-and-glass natural-history room, finished tactile materials. One continuous real camera/object movement, modest camera drift, centred subject readable on a phone. No text, labels, digits, logos, subtitles, dialogue, narration, Explorer, robot, animal or modern apparatus. Silent picture. No still push, freeze, repeated frames or slow padding. Keep complete subject within portrait-safe centre throughout. A distinct close view of a green leaf underwater in ordinary sunlight, gently moving water and small bubbles rising from the leaf as a closing illustration. Different camera position and composition from opening macro and return-to-sun shot. No magic glow, cell cutaway, golden specks or fabricated visible chemistry."
+        },
+        "config": {
+          "number_of_videos": 1,
+          "duration_seconds": 8,
+          "resolution": "1080p",
+          "aspect_ratio": "9:16",
+          "generate_audio": false
+        }
+      },
+      "request_sha256": "480759788647226bf39d5eb3bc0422aca8f4284dde920631e5ab1216d53ab490",
+      "identity": "J2190:Short_C S08:t2",
+      "output": "04_Generated-Clips/shorts_J2190/v01/Short_C_S08_t2.mp4",
+      "operation": null,
+      "output_sha256": null,
+      "status": "PREPARATION_ONLY"
+    }
+  ]
+}
