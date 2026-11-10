@@ -1,0 +1,261 @@
+{
+  "verdict": "PASS",
+  "terminal_loop": null,
+  "video": "/private/tmp/j0912-short-a-v04/02_Video-Projects/008_Lightning-Franklin/10_Shorts/hos_008_short_A_v04.mp4",
+  "rules": {
+    "kind_fail": "computer[- ]?(reconstruction|model|generated|simulation|graphic)|\\bsimulation\\b|\\bdiagram|\\bchart\\b|\\bgraph\\b|\\bschematic|\\bannotated\\b|\\blabell?ed\\b|\\bscreen ?shot|\\bwireframe|\\bcad\\b|\\binfographic",
+    "kind_warn": "\\bartist|\\billustration|\\bconcept\\b|\\brender|\\banimation\\b|\\bmap\\b|\\bmosaic\\b|\\bcomposite\\b",
+    "upscale_fail": 2.35,
+    "upscale_warn": 2.0,
+    "max_reuse": 2,
+    "max_stretches": 5,
+    "same_stretch": 10.0,
+    "pixels": "scripts/polish_gate.py"
+  },
+  "failed": [],
+  "warn": [
+    {
+      "cut": 0,
+      "row": "s01",
+      "source": "01_kite_open_t1.mp4",
+      "title": "Flow plate 01_kite_open_t1.mp4",
+      "t": 1.29,
+      "at": "0:01",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.35x, may look soft"
+      ],
+      "offset": 1.2
+    },
+    {
+      "cut": 1,
+      "row": "s02",
+      "source": "19_kite_climb_t1.mp4",
+      "title": "Flow plate 19_kite_climb_t1.mp4",
+      "t": 4.17,
+      "at": "0:04",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.35x, may look soft"
+      ],
+      "offset": 0.6
+    },
+    {
+      "cut": 2,
+      "row": "s03",
+      "source": "13_key_ribbon_t1.mp4",
+      "title": "Flow plate 13_key_ribbon_t1.mp4",
+      "t": 7.45,
+      "at": "0:07",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.35x, may look soft"
+      ],
+      "offset": 0.6
+    },
+    {
+      "cut": 3,
+      "row": "s04",
+      "source": "25_fibres_rise_t1.mp4",
+      "title": "Flow plate 25_fibres_rise_t1.mp4",
+      "t": 10.62,
+      "at": "0:11",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.35x, may look soft"
+      ],
+      "offset": 0.6
+    },
+    {
+      "cut": 4,
+      "row": "s05",
+      "source": "02_knuckle_spark_t1.mp4",
+      "title": "Flow plate 02_knuckle_spark_t1.mp4",
+      "t": 13.93,
+      "at": "0:14",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.35x, may look soft"
+      ],
+      "offset": 0.6
+    },
+    {
+      "cut": 5,
+      "row": "s06",
+      "source": "09_charge_string_c1_t1.mp4",
+      "title": "Flow plate 09_charge_string_c1_t1.mp4",
+      "t": 17.64,
+      "at": "0:18",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.35x, may look soft"
+      ],
+      "offset": 0.6
+    },
+    {
+      "cut": 6,
+      "row": "s07",
+      "source": "10_richmann_rod_t1.mp4",
+      "title": "Flow plate 10_richmann_rod_t1.mp4",
+      "t": 20.88,
+      "at": "0:21",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.35x, may look soft"
+      ],
+      "offset": 0.6
+    },
+    {
+      "cut": 7,
+      "row": "s08",
+      "source": "loop_01_kite_open_t1.mp4",
+      "title": "Flow plate 01_kite_open_t1.mp4",
+      "t": 22.74,
+      "at": "0:23",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.35x, may look soft",
+        "low detail: edge density 0.0278 < film p5 0.0297"
+      ],
+      "offset": 0.19999999999999996
+    }
+  ],
+  "rows": [
+    {
+      "cut": 0,
+      "row": "s01",
+      "source": "01_kite_open_t1.mp4",
+      "title": "Flow plate 01_kite_open_t1.mp4",
+      "t": 1.29,
+      "at": "0:01",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.35x, may look soft"
+      ],
+      "offset": 1.2
+    },
+    {
+      "cut": 1,
+      "row": "s02",
+      "source": "19_kite_climb_t1.mp4",
+      "title": "Flow plate 19_kite_climb_t1.mp4",
+      "t": 4.17,
+      "at": "0:04",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.35x, may look soft"
+      ],
+      "offset": 0.6
+    },
+    {
+      "cut": 2,
+      "row": "s03",
+      "source": "13_key_ribbon_t1.mp4",
+      "title": "Flow plate 13_key_ribbon_t1.mp4",
+      "t": 7.45,
+      "at": "0:07",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.35x, may look soft"
+      ],
+      "offset": 0.6
+    },
+    {
+      "cut": 3,
+      "row": "s04",
+      "source": "25_fibres_rise_t1.mp4",
+      "title": "Flow plate 25_fibres_rise_t1.mp4",
+      "t": 10.62,
+      "at": "0:11",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.35x, may look soft"
+      ],
+      "offset": 0.6
+    },
+    {
+      "cut": 4,
+      "row": "s05",
+      "source": "02_knuckle_spark_t1.mp4",
+      "title": "Flow plate 02_knuckle_spark_t1.mp4",
+      "t": 13.93,
+      "at": "0:14",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.35x, may look soft"
+      ],
+      "offset": 0.6
+    },
+    {
+      "cut": 5,
+      "row": "s06",
+      "source": "09_charge_string_c1_t1.mp4",
+      "title": "Flow plate 09_charge_string_c1_t1.mp4",
+      "t": 17.64,
+      "at": "0:18",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.35x, may look soft"
+      ],
+      "offset": 0.6
+    },
+    {
+      "cut": 6,
+      "row": "s07",
+      "source": "10_richmann_rod_t1.mp4",
+      "title": "Flow plate 10_richmann_rod_t1.mp4",
+      "t": 20.88,
+      "at": "0:21",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.35x, may look soft"
+      ],
+      "offset": 0.6
+    },
+    {
+      "cut": 7,
+      "row": "s08",
+      "source": "loop_01_kite_open_t1.mp4",
+      "title": "Flow plate 01_kite_open_t1.mp4",
+      "t": 22.74,
+      "at": "0:23",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.35x, may look soft",
+        "low detail: edge density 0.0278 < film p5 0.0297"
+      ],
+      "offset": 0.19999999999999996
+    }
+  ],
+  "polish": {
+    "edge_floor": 0.0297,
+    "low_detail_floor": {
+      "std": 13.44,
+      "edge": 0.0259,
+      "calibration": {
+        "video": "025_MarsRobot_full_rough_v02d.mp4",
+        "factor": 1.2,
+        "frames": [
+          {
+            "source": "PIA22223.jpg",
+            "t": 201.0,
+            "std": 12.1,
+            "edge": 0.0223
+          },
+          {
+            "source": "PIA22223.jpg",
+            "t": 216.3,
+            "std": 11.2,
+            "edge": 0.0216
+          },
+          {
+            "source": "PIA22929.jpg",
+            "t": 297.4,
+            "std": 26.54,
+            "edge": 0.5735
+          }
+        ]
+      }
+    }
+  }
+}
