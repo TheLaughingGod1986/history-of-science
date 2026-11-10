@@ -813,12 +813,14 @@ def _set_video_aspect_and_outputs(
     def _mouse_click_match(kind: str) -> str | None:
         box = page.evaluate(
             """(kind) => {
-              for (const b of document.querySelectorAll('button')) {
+              for (const b of document.querySelectorAll('button,[role=radio]')) {
+                const aria = (b.getAttribute('aria-label') || '').trim();
+                if (/Settings trigger/i.test(aria)) continue;
                 const t = (b.innerText || '').trim().replace(/\\n/g, ' ');
                 let ok = false;
                 if (kind === 'frames') ok = /crop_free|\\bFrames\\b/i.test(t) && t.length < 40;
                 else if (kind === 'ingredients') ok = /Ingredients|chrome_extension/i.test(t) && t.length < 50;
-                else if (kind === '16:9') ok = /crop_16_9/.test(t) || /\\b16:9\\b/.test(t);
+                else if (kind === '16:9') ok = (/crop_16_9/.test(t) || /\\b16:9\\b/.test(t)) && t.length < 30;
                 else if (kind === '8s') ok = t === '8s';
                 else if (kind === 'x1') ok = t === 'x1';
                 if (!ok) continue;
@@ -2505,23 +2507,154 @@ def wait_and_download_passive(page, dest: Path, *, before_ids: set[str],
     Unknown gallery layouts time out for explicit recovery instead of invoking
     the legacy UI automation, which can cause another charge.
     """
+    def _write_exclusive(payload: bytes) -> None:
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        with dest.open("xb") as stream:
+            stream.write(payload)
+            stream.flush()
+            os.fsync(stream.fileno())
+
+    def _allowed_video_url(url: str) -> bool:
+        low = (url or "").lower()
+        return low.startswith("https://") and any(
+            host in low
+            for host in (
+                "flow.google.com/asb/",
+                "labs.google/asb/",
+                "flow-content.google",
+                "storage.googleapis.com/ai-sandbox-videofx",
+                "googlevideo.com",
+                "googleusercontent.com",
+                "labs.google/fx/api/trpc/media.getmediaurlredirect",
+                "flow.google.com/fx/api/trpc/media.getmediaurlredirect",
+            )
+        )
+
+    def _asb_mp4_url(src: str) -> str | None:
+        if not _allowed_video_url(src) or "/asb/" not in src.lower():
+            return None
+        base = src.split("?", 1)[0]
+        idx = base.rfind("/asb/")
+        tail = base[idx + 5 :]
+        if "=" in tail:
+            token = tail.split("=", 1)[0]
+            base = base[: idx + 5] + token
+        return base + "=mm,22,15"
+
+    def _try_fetch_video(url: str) -> bool:
+        if not _allowed_video_url(url):
+            return False
+        response = page.request.get(url, timeout=60_000)
+        data = response.body()
+        content_type = (response.headers.get("content-type") or "").lower()
+        if not response.ok or ("video" not in content_type and b"ftyp" not in data[:64]):
+            return False
+        if len(data) < 200_000:
+            return False
+        _write_exclusive(data)
+        return True
+
+    captured: list[tuple[str, bytes]] = []
+    listener_attached = False
+    before_srcs: set[str] | None = None
+    before_thumb_srcs: set[str] | None = None
+
+    def _on_response(resp) -> None:
+        try:
+            url = resp.url or ""
+            if not _allowed_video_url(url) or getattr(resp, "status", 0) != 200:
+                return
+            ct = ((resp.headers or {}).get("content-type") or "").lower()
+            body = resp.body()
+            if body and len(body) >= 200_000 and ("video" in ct or b"ftyp" in body[:64]):
+                captured.append((url, body))
+        except Exception:
+            pass
+
     deadline = time.monotonic() + timeout_s
-    while time.monotonic() < deadline:
-        for media_id in sorted(collect_media_ids(page) - before_ids):
-            response = page.request.get(absolute_media_url(media_id), timeout=60_000)
-            data = response.body()
-            content_type = (response.headers.get("content-type") or "").lower()
-            if not response.ok or ("video" not in content_type and b"ftyp" not in data[:32]):
-                continue
-            if len(data) < 200_000:
-                continue
-            # Never replace a previous output or a file from another writer.
-            with dest.open("xb") as stream:
-                stream.write(data)
-                stream.flush()
-                os.fsync(stream.fileno())
-            return media_id
-        page.wait_for_timeout(4000)
+    try:
+        while time.monotonic() < deadline:
+            for media_id in sorted(collect_media_ids(page) - before_ids):
+                response = page.request.get(absolute_media_url(media_id), timeout=60_000)
+                data = response.body()
+                content_type = (response.headers.get("content-type") or "").lower()
+                if not response.ok or ("video" not in content_type and b"ftyp" not in data[:32]):
+                    continue
+                if len(data) < 200_000:
+                    continue
+                # Never replace a previous output or a file from another writer.
+                _write_exclusive(data)
+                return media_id
+
+            if not listener_attached and callable(getattr(page, "on", None)):
+                try:
+                    page.on("response", _on_response)
+                    listener_attached = True
+                except Exception:
+                    pass
+
+            if captured:
+                url, data = captured[-1]
+                _write_exclusive(data)
+                return url
+
+            state = page.evaluate(
+                """() => ({
+                  videos: [...document.querySelectorAll('video')]
+                    .map(v => v.currentSrc || v.src).filter(Boolean),
+                  thumbs: [...document.querySelectorAll('img[alt*="Generated video" i]')]
+                    .map(i => { const r = i.getBoundingClientRect();
+                      return {src: i.currentSrc || i.src || '',
+                              x: r.left + r.width / 2, y: r.top + r.height / 2,
+                              w: r.width, h: r.height}; })
+                    .filter(b => b.w > 80 && b.h > 45)
+                })"""
+            )
+            if isinstance(state, dict):
+                videos = [u for u in (state.get("videos") or []) if isinstance(u, str)]
+                raw_thumbs = [t for t in (state.get("thumbs") or []) if isinstance(t, dict)]
+                if before_srcs is None:
+                    before_srcs = set(videos)
+                if before_thumb_srcs is None:
+                    before_thumb_srcs = {
+                        str(t.get("src") or "") for t in raw_thumbs if t.get("src")
+                    }
+                for src in videos:
+                    if src in before_srcs:
+                        continue
+                    if _try_fetch_video(src):
+                        return src
+                new_thumbs = [
+                    t for t in raw_thumbs
+                    if not t.get("src") or str(t.get("src")) not in before_thumb_srcs
+                ]
+                mouse = getattr(page, "mouse", None)
+                if new_thumbs and callable(getattr(mouse, "move", None)):
+                    top = new_thumbs[0]
+                    mouse.move(float(top["x"]), float(top["y"]))
+                    page.wait_for_timeout(1500)
+                    mounted = page.evaluate(
+                        """() => [...document.querySelectorAll('video')]
+                          .map(v => v.currentSrc || v.src).filter(Boolean)"""
+                    )
+                    if isinstance(mounted, list):
+                        for src in mounted:
+                            if not isinstance(src, str) or src in (before_srcs or set()):
+                                continue
+                            if _try_fetch_video(src):
+                                return src
+                if new_thumbs:
+                    asb_url = _asb_mp4_url(str(new_thumbs[0].get("src") or ""))
+                    if asb_url and _try_fetch_video(asb_url):
+                        return asb_url
+
+            page.wait_for_timeout(4000)
+    finally:
+        if listener_attached and callable(getattr(page, "remove_listener", None)):
+            try:
+                page.remove_listener("response", _on_response)
+            except Exception:
+                pass
     raise TimeoutError("Guarded Flow output unavailable; no automatic retry or confirmation")
 
 

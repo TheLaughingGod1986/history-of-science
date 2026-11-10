@@ -122,6 +122,64 @@ class BoundaryTests(unittest.TestCase):
                 env['wait_and_download_passive'](page,out,before_ids={'old'},timeout_s=1)
             page.evaluate.assert_not_called();page.mouse.click.assert_not_called()
 
+    def test_passive_download_hover_fetches_mounted_flow_video_without_clicking(self):
+        tick = [0.0]
+        env = functions()
+        env['time'] = SimpleNamespace(time=lambda: tick[0], monotonic=lambda: tick[0])
+        env['collect_media_ids'] = lambda p: set()
+        env['absolute_media_url'] = lambda mid: mid
+        payload = b'\0\0\0\x18ftyp' + b'x' * 200000
+        video_url = 'https://flow.google.com/asb/ANqvLOTestToken123=mm,22,15'
+        eval_calls = [
+            {'videos': [], 'thumbs': [{'src': 'https://flow.google.com/asb/ANqvLOOldPriorThumb', 'x': 100.0, 'y': 100.0, 'w': 320.0, 'h': 180.0}]},
+            {'videos': [], 'thumbs': [
+                {'src': 'https://flow.google.com/asb/ANqvLOTestToken123', 'x': 240.0, 'y': 180.0, 'w': 320.0, 'h': 180.0},
+                {'src': 'https://flow.google.com/asb/ANqvLOOldPriorThumb', 'x': 100.0, 'y': 100.0, 'w': 320.0, 'h': 180.0},
+            ]},
+            [video_url],
+        ]
+        page = Mock()
+        page.evaluate.side_effect = lambda _js: eval_calls.pop(0)
+        page.wait_for_timeout.side_effect = lambda ms: tick.__setitem__(0, tick[0] + ms / 1000.0)
+        page.request.get.return_value = SimpleNamespace(
+            ok=True, headers={'content-type': 'video/mp4'}, body=lambda: payload
+        )
+        with tempfile.TemporaryDirectory() as tmp:
+            out = Path(tmp) / 'out.mp4'
+            got = env['wait_and_download_passive'](page, out, before_ids=set(), timeout_s=30)
+            self.assertEqual(got, video_url)
+            self.assertEqual(out.read_bytes(), payload)
+            page.mouse.move.assert_called_once_with(240.0, 180.0)
+            page.mouse.click.assert_not_called()
+
+    def test_passive_download_asb_thumb_fallback_without_mounted_video_or_clicks(self):
+        tick = [0.0]
+        env = functions()
+        env['time'] = SimpleNamespace(time=lambda: tick[0], monotonic=lambda: tick[0])
+        env['collect_media_ids'] = lambda p: set()
+        env['absolute_media_url'] = lambda mid: mid
+        payload = b'\0\0\0\x18ftyp' + b'x' * 200000
+        thumb_url = 'https://flow.google.com/asb/ANqvLONewThumb456=s1600-rw'
+        expected_mp4 = 'https://flow.google.com/asb/ANqvLONewThumb456=mm,22,15'
+        eval_calls = [
+            {'videos': [], 'thumbs': []},
+            {'videos': [], 'thumbs': [{'src': thumb_url, 'x': 300.0, 'y': 200.0, 'w': 320.0, 'h': 180.0}]},
+            [],
+        ]
+        page = Mock()
+        page.evaluate.side_effect = lambda _js: eval_calls.pop(0)
+        page.wait_for_timeout.side_effect = lambda ms: tick.__setitem__(0, tick[0] + ms / 1000.0)
+        page.request.get.return_value = SimpleNamespace(
+            ok=True, headers={'content-type': 'video/mp4'}, body=lambda: payload
+        )
+        with tempfile.TemporaryDirectory() as tmp:
+            out = Path(tmp) / 'out.mp4'
+            got = env['wait_and_download_passive'](page, out, before_ids=set(), timeout_s=30)
+            self.assertEqual(got, expected_mp4)
+            self.assertEqual(out.read_bytes(), payload)
+            page.request.get.assert_called_once_with(expected_mp4, timeout=60_000)
+            page.mouse.click.assert_not_called()
+
     def test_actual_account_guard_rejects_settings_drift_at_helper_boundary(self):
         from tests.test_hos009_tranche2_runner import RUNNER, LiveCreateAdapterTests
         for field, value in [('outputs', ['x4']), ('prices', ['Generating will use 200 credits']),
@@ -129,7 +187,7 @@ class BoundaryTests(unittest.TestCase):
             with self.subTest(field=field), tempfile.TemporaryDirectory() as tmp:
                 root=Path(tmp); env,page,frame,events=self.prepared(root,None)
                 fixture=LiveCreateAdapterTests.Page(LiveCreateAdapterTests().evidence())
-                page.evaluate=fixture.evaluate
+                page.evaluate=fixture.evaluate; page.mouse=fixture.mouse
                 # Drift occurs during configuration, after any earlier batch check.
                 env['configure_veo_settings']=lambda *a, **kw: fixture.evidence.update({field:value})
                 with RUNNER.SharedFlowAccounting(root/'state') as account:
@@ -153,7 +211,7 @@ class BoundaryTests(unittest.TestCase):
                     self.assertTrue(account.snapshot()['pending'])
                     self.assertTrue((root/'evidence.json').exists())
                 fixture=LiveCreateAdapterTests.Page(LiveCreateAdapterTests().evidence(),before_click)
-                page.evaluate=fixture.evaluate
+                page.evaluate=fixture.evaluate; page.mouse=fixture.mouse
                 env['generate_clip'](page,'p',root/'out.mp4',start_frame=frame,
                     reuse_project=True,attempts=1,create_guard=lambda p: RUNNER.guarded_create(
                         p,account,reservation='job',charge='take',evidence_path=root/'evidence.json'))
@@ -177,7 +235,7 @@ class BoundaryTests(unittest.TestCase):
                 fixture=LiveCreateAdapterTests.Page(LiveCreateAdapterTests().evidence())
                 fixture.evidence['balances']=[live]
                 if drift: fixture.evidence['outputs']=['x4']
-                page.evaluate=fixture.evaluate
+                page.evaluate=fixture.evaluate; page.mouse=fixture.mouse
                 fake_flow=ModuleType('orbit_flow_veo_ui')
                 fake_flow.FLOW_HOME='https://flow.google.com/'
                 fake_flow.generate_clip=env['generate_clip']
