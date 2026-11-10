@@ -184,3 +184,13 @@ ALL CHECKS PASS
 ```
 
 
+
+## 10 Nov 2026 — J2470: search-led title (rule 26) NOT applied to `ETynHpIYLeY` (Claude Code worker)
+
+Nothing was changed on `ETynHpIYLeY`. J2470 asked for the title *How Was the First Vaccine Made? (And Why It's Named After a Cow)* and a new description line 1, with the instruction to stop if a Test and Compare is set and YouTube will not take the title without removing it.
+
+What History of Science Studio showed at 01:42Z (CDP 9460, channel `UCXp7HkBIl1LgaznXuZHJyRg`, read only): the edit page has no plain title field. In its place: `A/B testing titles` · `Ineligible` · *Why Vaccines Are Named After a Cow* · *How Was the First Vaccine Made?* · `Edit title`. The title lives inside the J0959 Test and Compare. Visibility: Scheduled. API read: private, `publishAt=2026-11-12T18:00:00Z`, title *Why Vaccines Are Named After a Cow*. Description line 1 is unchanged: *Every vaccine is named after a cow. How did the Edward Jenner cowpox vaccine conquer the deadly smallpox virus?*
+
+No write was attempted through the Data API: with a title test attached it refuses a title change (`UPDATE_TITLE_NOT_ALLOWED_DURING_TEST_AND_COMPARE`, seen on J0978, 30 Oct). `Edit title` was not opened and "Run a new test?" was never reached.
+
+For Chief, before Thu 12 Nov 18:00 London: decide whether the approved title replaces title A inside the existing test, the test is removed, or the film airs on the test as set. Package manifest, description file and upload record are left as they are, because they still match what is live.
