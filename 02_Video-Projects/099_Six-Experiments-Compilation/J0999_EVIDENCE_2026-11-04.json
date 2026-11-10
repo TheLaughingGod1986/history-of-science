@@ -1,0 +1,28 @@
+{
+  "agent": "codex",
+  "captured_utc": "2026-11-04T12:55:24.374668+00:00",
+  "video": "uAomPaOBrM8",
+  "channel": "UCXp7HkBIl1LgaznXuZHJyRg",
+  "browser_port": 9460,
+  "local_evidence_dir": "/Users/benjaminoats/_desk/jobs/J0999/evidence-2026-11-04",
+  "sha256": {
+    "cards.png": "ff6693fb3ba781108297729335c955b675906ff38902484ef4e266e04ae58744",
+    "cards.txt": "cd2bc3af1562aa26518b36d8e6d30db019367f3b330fe30399b0e93d2fba6bb4",
+    "channel-audit.txt": "77810ccc4eb09520034c54a2fc6e7039e980d078df0e5a7d52c42afb84e7bb13",
+    "controls.json": "d3f6c72ffe2b50e0293355bf1f18b6993c6e5eaa0da658cab8ff73c41d9eccd6",
+    "details-expanded.png": "a3c93aa03b29210de685df2f5c7af2f92cb97040a84a267a4f39584ad3d88054",
+    "details-expanded.txt": "19540b8b4d9d16cc18c0ad6031a52a8674c71e331500f65f609abb9d205e84c5",
+    "details-initial.png": "8f08b5e40b4e82a76d2f32bfca94d617290312a61c99ae9a2d07e171e9ab6224",
+    "details-studio.png": "0a06053177d919eaa8ccd981e5b1554d499e712b8217b4ff5f95dff55148168e",
+    "endscreen.png": "7c722ef1e8e88ae6ac2241fa0d9a8818554a1b45a19e35bf66de286a9bfc6c60",
+    "endscreen.txt": "bb42c621b609fcd3d7addf97843e351d9c45b21fc639e52c2f03c4d5e3036369",
+    "hos-details.png": "cda4e2019aefea92215735c19ae83990544b67ad6fb90deefc6733cecd911f7e",
+    "timezone.png": "dc88c31575657fba57a0de3ae0e2083a1b78664cf8f5e282263a7dd6491b100b",
+    "timezone.txt": "be498297b470238f02496c6a52d847e4d552a7128dadd91b937ffbbba7f67b71",
+    "visibility.png": "2c1d6b22fa23584dff4a75d2c40f7a1d0047589dc5aa9930c813e98b58ad522a",
+    "visibility.txt": "f84c8e9d7098cc1dd69e1117301458832a3234e3b28111a141a93e2a375c66b0"
+  },
+  "channel_audit_exit": 0,
+  "channel_audit_summary": "62 videos, 0 errors",
+  "youtube_writes": false
+}

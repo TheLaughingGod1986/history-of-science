@@ -1,0 +1,23 @@
+{
+  "file": "02_Video-Projects/009_The-Falling-Moon-Gravity/10_Shorts/vo_v02/hos_009_short_B_v04.wav",
+  "part": null,
+  "fails": [],
+  "warns": [],
+  "duration_s": 24.48,
+  "duration": "0:24.48",
+  "mean_db": -24.1,
+  "peak_db": -4.0,
+  "pauses_over_1s": [
+    [
+      8.45,
+      1.05
+    ]
+  ],
+  "asr": "faster-whisper small.en",
+  "script_words": 48,
+  "heard_words": 48,
+  "wpm": 145,
+  "word_diffs": [],
+  "first_minute": {},
+  "verdict": "PASS"
+}

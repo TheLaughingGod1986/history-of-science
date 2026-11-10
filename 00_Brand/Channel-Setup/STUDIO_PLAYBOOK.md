@@ -17,12 +17,16 @@ Those are in `_archive/` for history only. Every rule they held that still appli
 
 ## 1. The week
 
+**Ben, 7 Nov 2026:** locked at **1 long and 4 Shorts a week** (was 1 long and 3 Shorts).
+
 | Slot (UK) | What |
 |---|---|
 | Thu 18:00 | One long, 7–9 min, **normal publish (no Premiere)** |
-| Fri · Sun · Tue 11:30 | Three Shorts, 22–27 s. Friday promotes the new long; Sunday and Tuesday promote two other films. |
+| Sat · Fri · Sun · Tue 11:30 | Four Shorts, 22–27 s. Saturday is the go-public-day Short that promotes the new long; Friday, Sunday and Tuesday stay. Friday also supports the new long now that it is public; Sunday and Tuesday promote other films. |
 
+- **Table note (Ben, 7 Nov 2026):** Thursday 11:30 was the preferred go-public-day Short (same idea as Orbit's Short on the long's day), but it would publish before the Thu 18:00 long and break "never a Short before its long is public". Saturday 11:30 takes that slot — the next free day that is not already a Short day (Fri · Sun · Tue).
 - Never more than one Short a day. Never a Short before its long is public.
+- Fill calendar gaps only with ready approved cuts, not placeholders to hit the number.
 - Never a second long on a subject that already has a public long.
 
 ## 2. Pick the topic (before any script)
@@ -78,7 +82,7 @@ Those are in `_archive/` for history only. Every rule they held that still appli
   - the first line after the title is the first spoken line (never "What is…", "Welcome", "In this video");
   - title, fields, fact notes, teach list, launch plan and change log live beside it: the film's `README.md`, `01_Script/FACT_NOTES_vNN.md`, `11_Upload-Package/LAUNCH_PLAN.md`;
   - one live version. Old versions are kept but renamed without "master" (e.g. `<slug>_script_v01_ben.md`), because `gate:episode` scores the first "master" file alphabetically.
-- **Title and launch are written with the script:** a main title plus one Test & Compare alternative, both from `THUMBNAIL_AND_TITLE_RULES.md` (never *How Did We Discover X?*); a launch plan in the week from `HOS_STRATEGY.md` (normal publish, three Shorts on different days promoting different films, the lead Short from this film).
+- **Title and launch are written with the script:** a main title plus one Test & Compare alternative, both from `THUMBNAIL_AND_TITLE_RULES.md` (never *How Did We Discover X?*); a launch plan in the week from `HOS_STRATEGY.md` (normal publish, four Shorts on different days promoting different films, the go-public Short from this film).
 - **Report the score honestly.** Quote the reviewer's number as it is. Don't pad words or change the reviewer to pass a script; a scoring problem is raised separately for Ben.
 - **Gates (both before any voice or picture spend):**
   ```bash

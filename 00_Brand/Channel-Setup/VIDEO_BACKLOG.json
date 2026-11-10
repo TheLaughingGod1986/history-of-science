@@ -2,12 +2,12 @@
   "channel": "History of Science",
   "handle": "@HistoryOfScienceYT",
   "channel_id": "UCXp7HkBIl1LgaznXuZHJyRg",
-  "updated": "2026-10-01",
+  "updated": "2026-11-07",
   "note": "HOS only. Orbit's old space backlog is in _archive/00_Brand/Channel-Setup/VIDEO_BACKLOG.json. Status 'idea' means proposed, not picked: Ben picks every topic (AGENTS.md sign-off 1).",
   "cadence": {
     "strategy": "HOS_STRATEGY.md",
     "long": "Thu 18:00 UK, 7-9 min, normal publish (no Premiere)",
-    "shorts": "Fri, Sun, Tue 11:30 UK, 22-27 s, one a day at most, each promoting a different film"
+    "shorts": "Sat, Fri, Sun, Tue 11:30 UK, 22-27 s, four a week (Ben 7 Nov 2026; Sat is go-public-day Short \u2014 Thu 11:30 would air before the long), one a day at most, never before its long is public, fill gaps only with ready approved cuts"
   },
   "lane": "A familiar thing, and the moment we found out the truth about it.",
   "videos": [
@@ -36,15 +36,138 @@
       "public": "2026-09-24 (Premiere)"
     },
     {
+      "id": "004",
+      "working_title": "What's Really Inside an Atom?",
+      "status": "published",
+      "youtube_id": "GHZDsiH7L7A",
+      "folder": "02_Video-Projects/004_Whats-Really-Inside-An-Atom",
+      "public": "2026-10-15"
+    },
+    {
       "id": "005",
       "working_title": "The Tied Arm That Proved Your Blood Circulates",
-      "status": "in production",
+      "status": "published",
+      "youtube_id": "wwcjcFfC-5M",
       "folder": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates",
       "picked": "2026-10-01 (Ben: \"Blood\")",
       "familiar_thing": "your heartbeat",
       "moment": "Harvey proves blood circulates, De Motu Cordis 1628",
       "person": "William Harvey",
-      "room": "the Royal College of Physicians, London"
+      "room": "the Royal College of Physicians, London",
+      "public": "2026-10-29"
+    },
+    {
+      "id": "006",
+      "working_title": "The Willow Tree That Was Made of Air",
+      "status": "scheduled",
+      "youtube_id": "VbPubYd6Fbs",
+      "folder": "02_Video-Projects/006_Trees-Are-Made-Of-Air",
+      "public": "2026-11-05"
+    },
+    {
+      "id": "007",
+      "working_title": "Why Vaccines Are Named After a Cow",
+      "status": "scheduled",
+      "youtube_id": "ETynHpIYLeY",
+      "folder": "02_Video-Projects/007_The-First-Vaccine",
+      "familiar_thing": "a vaccine jab",
+      "moment": "Jenner and the milkmaid's cowpox, 1796",
+      "person": "Edward Jenner",
+      "room": "a Gloucestershire country surgery",
+      "public": "2026-11-12"
+    },
+    {
+      "id": "008",
+      "working_title": "Why Did Franklin Fly a Kite in a Storm?",
+      "status": "in production",
+      "folder": "02_Video-Projects/008_Lightning-Franklin",
+      "familiar_thing": "a lightning storm",
+      "moment": "proving lightning is electricity, 1752",
+      "person": "Benjamin Franklin (and Dalibard in France)",
+      "room": "a field under a storm",
+      "public": "2026-11-19"
+    },
+    {
+      "id": "009",
+      "working_title": "Why Doesn't the Moon Fall to Earth?",
+      "status": "in production",
+      "folder": "02_Video-Projects/009_The-Falling-Moon-Gravity",
+      "public": "2026-11-26"
+    },
+    {
+      "id": "010",
+      "working_title": "What Killed the Dinosaurs Was Hidden in a Line of Clay",
+      "status": "in production",
+      "folder": "02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs",
+      "public": "2026-12-03"
+    },
+    {
+      "id": "011",
+      "working_title": "Anesthesia: The Day Surgery Stopped Hurting",
+      "status": "in production",
+      "folder": "02_Video-Projects/011_Surgery-Before-Anaesthesia",
+      "picked": "2026-10-12 (J0180) / slotted 2026-11-05 (J2231)",
+      "familiar_thing": "being asleep for an operation",
+      "moment": "the first public ether operation, Boston, 16 October 1846",
+      "person": "William Morton (with John Collins Warren, Crawford Long, Horace Wells, Robert Liston, James Young Simpson, John Snow)",
+      "room": "the domed operating theatre at Massachusetts General Hospital",
+      "public": "2026-12-10"
+    },
+    {
+      "id": "013",
+      "working_title": "Evolution: The Letter That Forced Darwin to Publish",
+      "status": "in production",
+      "folder": "02_Video-Projects/013_Darwin-Wallace-Evolution",
+      "picked": "2026-10-15 (J0295) / slotted 2026-11-05 (J2231)",
+      "familiar_thing": "why a bird's beak fits the place it lives",
+      "moment": "Wallace's June 1858 letter from Ternate forcing Darwin's 20-year secret into print",
+      "person": "Charles Darwin and Alfred Russel Wallace",
+      "room": "Darwin's Down House study and Wallace's bamboo hut on Ternate",
+      "public": "2026-12-17"
+    },
+    {
+      "id": "012",
+      "working_title": "Genetics: The Monk Who Counted 28,000 Pea Plants",
+      "status": "backlog",
+      "folder": "00_Brand/Channel-Setup/ideas/012_Mendel-Pea-Plants",
+      "familiar_thing": "why a child has their grandfather's red hair when neither parent has it",
+      "moment": "Gregor Mendel's 28,000 pea plants in Br\u00fcnn (1856\u20131865) and the 35-year gap to 1900",
+      "person": "Gregor Mendel",
+      "room": "St Thomas's Abbey walled garden and study in Br\u00fcnn",
+      "public": "2026-12-24 (planned)"
+    },
+    {
+      "id": "014",
+      "working_title": "Extinction: The 12-Year-Old Who Dug Up a Sea Dragon",
+      "status": "backlog",
+      "folder": "00_Brand/Channel-Setup/ideas/014_Anning-Fossils-Extinction",
+      "familiar_thing": "a fossil on a beach",
+      "moment": "Mary Anning's 17-foot ichthyosaur (1811\u201312) and plesiosaur (1823) at Lyme Regis proving extinction",
+      "person": "Mary Anning and Georges Cuvier",
+      "room": "the Lyme Regis cliffs and her fossil shop",
+      "public": "2026-12-31 (planned)"
+    },
+    {
+      "id": "015",
+      "working_title": "Cells: The Slice of Cork That Changed Biology",
+      "status": "backlog",
+      "folder": "00_Brand/Channel-Setup/ideas/015_Hooke-Cell-Theory",
+      "familiar_thing": "the 30 trillion cells that make up your body",
+      "moment": "Robert Hooke's 1665 Micrographia cork cells and Robert Remak's 1852 proof that cells divide",
+      "person": "Robert Hooke and Robert Remak",
+      "room": "the Royal Society experiment room in London and Remak's Berlin attic lab",
+      "public": "2027-01-07 (planned)"
+    },
+    {
+      "id": "018",
+      "working_title": "Infrared: The Thermometer Experiment That Found Invisible Light",
+      "status": "backlog",
+      "folder": "00_Brand/Channel-Setup/ideas/018_Herschel-Ritter-Invisible-Light",
+      "familiar_thing": "the warmth of sunlight on your skin or a TV remote",
+      "moment": "William Herschel's thermometer past the red end of the spectrum (11 Feb 1800) and Ritter's ultraviolet (1801)",
+      "person": "William Herschel (with Caroline Herschel and Johann Wilhelm Ritter)",
+      "room": "a darkened room in Slough with a window-shutter prism",
+      "public": "2027-01-14 (planned)"
     },
     {
       "id": "idea-penicillin",
@@ -53,38 +176,6 @@
       "moment": "Fleming's contaminated dish, 1928, and the ten years before anyone could make it into medicine",
       "person": "Alexander Fleming (then Florey and Chain)",
       "room": "a cluttered London lab bench"
-    },
-    {
-      "id": "idea-smallpox",
-      "status": "idea",
-      "familiar_thing": "a vaccine jab",
-      "moment": "Jenner and the milkmaid's cowpox, 1796",
-      "person": "Edward Jenner",
-      "room": "a Gloucestershire country surgery"
-    },
-    {
-      "id": "idea-anaesthesia",
-      "status": "idea",
-      "familiar_thing": "being asleep for an operation",
-      "moment": "the first public ether operation, Boston, 1846",
-      "person": "William Morton",
-      "room": "the domed operating theatre"
-    },
-    {
-      "id": "idea-lightning",
-      "status": "idea",
-      "familiar_thing": "a lightning storm",
-      "moment": "proving lightning is electricity, 1752",
-      "person": "Benjamin Franklin (and Dalibard in France)",
-      "room": "a field under a storm"
-    },
-    {
-      "id": "idea-fossils",
-      "status": "idea",
-      "familiar_thing": "a fossil on a beach",
-      "moment": "Mary Anning's ichthyosaur, Lyme Regis, 1811–12",
-      "person": "Mary Anning",
-      "room": "the cliffs and her fossil shop"
     }
   ]
 }

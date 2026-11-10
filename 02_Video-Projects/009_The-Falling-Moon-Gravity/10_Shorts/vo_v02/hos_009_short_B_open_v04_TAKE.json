@@ -1,0 +1,69 @@
+{
+  "stem": "hos_009_short_B_open_v04",
+  "voice": "Ben Orbit Narrator",
+  "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+  "model_id": "eleven_v3",
+  "settings": {
+    "stability": 0.34,
+    "similarity_boost": 0.78,
+    "style": 0.42,
+    "speed": 1.04,
+    "use_speaker_boost": true
+  },
+  "orders": [
+    "J2195",
+    "6631275536"
+  ],
+  "retake_of": null,
+  "chapters": [
+    {
+      "title": "take",
+      "chars": 81,
+      "duration_s": 6.64
+    }
+  ],
+  "gap_s": 0.7,
+  "spoken_chars": 81,
+  "words": 16,
+  "duration_s": 6.64,
+  "loudness": {
+    "lufs_integrated": -20.0,
+    "mean_volume_db": -23.1,
+    "max_volume_db": -4.3
+  },
+  "sha256_mp3": "46f740fed774a36a1853b908989c9c20812bf92a1c09b4c8f5ee3b270eeaa26b",
+  "scribe": {
+    "transcript": "In one minute, the moon falls five meters. An apple falls that far in one second",
+    "script_words": 16,
+    "scribe_words": 16,
+    "match_rate_pct": 93.75,
+    "exact_match": false,
+    "mismatches": [
+      {
+        "op": "replace",
+        "script": [
+          "metres"
+        ],
+        "scribe": [
+          "meters"
+        ]
+      }
+    ]
+  },
+  "vo_check": "REVIEW",
+  "credits": {
+    "before": {
+      "used": 27636,
+      "limit": 121114,
+      "remaining": 93478
+    },
+    "after": {
+      "used": 27636,
+      "limit": 121114,
+      "remaining": 93478
+    },
+    "counter_delta": 0
+  },
+  "text": "In one minute, the Moon falls five metres. An apple falls that far in one second.",
+  "made_at": "2026-11-06T12:10:17+0000"
+}
