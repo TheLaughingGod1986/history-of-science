@@ -1,0 +1,118 @@
+
+> content-ops@0.1.0 channel:audit
+> tsx --env-file=.env scripts/channel-audit.ts
+
+FAIL  long  uAomPaOBrM8  private 2026-12-10 18:00 UK  How Did Experiments Explain Blood, Germs and Atoms?
+   FAIL  [title.duplicate-live] same title as Hmw4iMDfWFE
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+FAIL  long  Hmw4iMDfWFE  private 2026-12-10 18:00 UK  How Did Experiments Explain Blood, Germs and Atoms?
+   FAIL  [title.duplicate-live] same title as uAomPaOBrM8
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+PASS  Short LCZRHUyTiq0  public  What Are Cathode Rays?
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+PASS  Short -I_GHK-GcFs  private 2026-11-13 11:30 UK  What Was the Edward Jenner Experiment?
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+PASS  Short 1-BZaFIMwYU  private 2026-10-27 11:30 UK  What Is the Pasteur Swan Neck Flask Experiment?
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+PASS  Short oKqmnJNGiHg  public  How Was Phosphorus Discovered?
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+PASS  Short clV6E10NLPw  public  The spray that stopped surgery killing patients
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+PASS  Short c2q7w0pgcn8  public  Who Discovered Infrared Light?
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+PASS  Short TbMMJSRKC3U  public  He said every eighth element repeats
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+PASS  Short 29bpGAI0wb8  public  What happens if you keep cutting gold in half?
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+PASS  Short -sa2t7dAtCk  private 2026-11-16 11:30 UK  What Is Dalton's Atomic Theory?
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+PASS  long  GHZDsiH7L7A  public  What's Really Inside an Atom?
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+PASS  Short PlihWC5uA2E  private 2026-11-05 11:30 UK  Why Do Veins Have Valves?
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+PASS  Short vEg_tLIm0Co  private 2026-10-28 11:30 UK  Are Marie Curie's Notebooks Still Radioactive?
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+PASS  Short OnJ8MFu0Mi0  private 2026-10-26 11:30 UK  How Did John Snow Stop Cholera?
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+PASS  Short 5n7xFQRBUvI  private 2026-10-31 11:30 UK  Is the Heart a Pump?
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+PASS  Short qOZgess30h0  public  Invisible life is still everywhere
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+PASS  Short mTY67qet7cM  private 2026-11-08 11:30 UK  One Tight Band Proved Your Blood Goes Round
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+PASS  Short KIWJRl0dzjw  private  One Tight Band Proved Your Blood Goes Round (duplicate)
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+   warn  [embeddable] embedding is off
+   warn  [tags.count] Short: 11 tags (want 5–8)
+PASS  long  wwcjcFfC-5M  private 2026-10-29 18:00 UK  The Tied Arm That Proved Your Blood Circulates
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+PASS  Short K0TQHg4XCHY  private  The Four Elements Were Wrong (duplicate)
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+   warn  [tags.count] Short: 11 tags (want 5–8)
+PASS  Short JI2ewIT1KSM  private  The Four Elements Were Wrong (duplicate)
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+   warn  [tags.count] Short: 0 tags (want 5–8)
+PASS  Short x_3L_IdYgEc  private 2026-11-15 11:30 UK  The Blood Vessels Finer Than a Hair
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+PASS  Short 6btaax7wp2E  private  The Blood Vessels Finer Than a Hair (duplicate)
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+   warn  [tags.count] Short: 13 tags (want 5–8)
+PASS  Short Pp5LmjsduI4  private 2026-11-03 11:30 UK  The Four Elements Were Wrong
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+PASS  Short DdggTdAzk84  private  Why Gold Foil Bounced Rutherford's Particles Back (duplicate)
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+   warn  [tags.count] Short: 13 tags (want 5–8)
+PASS  Short VZsUxmzGyyE  private  hos 005 s01 the sum v02 (duplicate)
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+   warn  [tags.count] Short: 0 tags (want 5–8)
+PASS  Short JyRjM-9Yc8g  private 2026-11-01 11:30 UK  Why Gold Foil Bounced Rutherford's Particles Back
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+PASS  Short 1lszTrYRp-8  private 2026-10-30 11:30 UK  Your Heart Pumps More Blood Than You Have
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+PASS  Short CUu8k38iAMc  private  The first X-ray showed a wedding ring
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+PASS  Short zI_eD3vFWmE  public  The first X-ray showed a wedding ring
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+PASS  Short xvanpsLeADE  public  How did Röntgen see bones without cutting
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+PASS  Short oowAOWTBoq0  public  How X-rays Were Discovered by Accident
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+PASS  long  frP_YrNShsU  public  How Did We Discover X-rays?
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+PASS  Short LanTHJckYx8  public  What other table has empty chairs?
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+PASS  Short nba0-f7PPeU  public  Why tellurium sat before iodine
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+PASS  Short CnHwX1L9XHg  public  Gallium sat where the table said
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+PASS  Short nFQRWmpulTQ  public  He predicted a metal before it was found
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+PASS  Short uU12JA5rMWg  public  The periodic table's empty chairs
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+PASS  long  AL_-qlWko_g  public  How Did We Discover the Periodic Table?
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+PASS  Short kzDiVk4603s  private  He predicted a metal before it was found
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+PASS  Short sILtQxgYQk8  public  A flask that proved germs come from outside
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+PASS  Short 93fPUG-hW0A  private  Invisible life is still everywhere
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+PASS  Short 8_Edn_HCi1s  public  Germs hitch a ride on you
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+PASS  Short iqToagXnjX0  public  Microbes in a drop of pond water
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+PASS  Short H1y0DXFVmw8  public  Germs don't cast a shadow
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+PASS  long  _C92tIJCk8A  public  How Did We Discover Germs?
+   warn  [ai-disclosure] Data API omits altered/synthetic — confirm Yes in Studio (Altered content)
+
+47 videos, 2 errors.
+Confirm in Studio (not readable through the API):
+  - AI disclosure = Yes (confirm by eye)
+  - Every video: Altered / synthetic content = Yes (Data API videos.list omits this field)
+  - Shorts: Related video points at the long it promotes (set at 18:05 on the long's day if needed)
+  - Longs: end screen (related long + Subscribe) and 2 cards, none in the first minute
+  - Longs: Test & Compare (title+thumbnail pairs, or thumbnails only) running after publish
+  - Longs: pinned comment posted as the channel
+  - Paid promotion = No; education fields (concept overview, secondary, GCSE subject)
+  - Automatic places off; comments on (Basic moderation); Studio time zone London
