@@ -1,0 +1,105 @@
+{
+  "film": "001",
+  "video": "_C92tIJCk8A",
+  "job": "J0685",
+  "variant": "B v07 (1.175x pond-water droplet hero push-in + microbe & slide-rim clarity boost + concrete pond-microbes hook; pairs with B v06 'STERILE LIQUID FLASK' and B v05 'TINY LIVING CELLS')",
+  "maker": "gemini",
+  "hook": "UNSEEN POND MICROBES",
+  "punch": "MICROBES",
+  "jpg": "Selected/hos_001_thumb_B_unseen_pond_microbes_v07.jpg",
+  "sha256": "cf3bbefadf0c61e5c386a5919a71ad10c35d59cfd6a629fd94c2dc839265d731",
+  "bytes": 235369,
+  "plates": [
+    "04_Generated-Clips/part02/refs/03_drop_of_water_v01.jpg (1024x1024 Part 02 pond-water drop master plate, crop [104, 192, 1024, 928] + 1.10x local sphere push-in = 1.175x combined hero push-in on right two-thirds)",
+    "08_Thumbnail/Selected/hos_001_tc_thumb_v02.jpg (001 painted library key-art plate: lower-left Explorer at 54.4% frame height + original painted gold scroll flourishes)"
+  ],
+  "method": "existing_001_plates_only_1.175x_pond_drop_hero_push_in_plus_explorer_and_painted_flourishes_GeorgiaBold",
+  "spend": 0,
+  "heroBox": [
+    588,
+    96,
+    1026,
+    534
+  ],
+  "slideBox": [
+    420,
+    468,
+    1223,
+    650
+  ],
+  "explorer": {
+    "source": "hos_001_tc_thumb_v02.jpg",
+    "box": [
+      88,
+      328,
+      316,
+      720
+    ],
+    "height_px": 392,
+    "height_frac": 0.544
+  },
+  "lettering": [
+    {
+      "word": "UNSEEN",
+      "kind": "cream",
+      "size": 84,
+      "box": [
+        106,
+        80,
+        464,
+        156
+      ]
+    },
+    {
+      "word": "POND",
+      "kind": "cream",
+      "size": 96,
+      "box": [
+        142,
+        148,
+        428,
+        235
+      ]
+    },
+    {
+      "word": "MICROBES",
+      "kind": "gold",
+      "size": 76,
+      "box": [
+        78,
+        229,
+        492,
+        298
+      ]
+    }
+  ],
+  "ornaments": {
+    "top_scroll_box": [
+      88,
+      20,
+      496,
+      60
+    ],
+    "bottom_scroll_box": [
+      140,
+      318,
+      445,
+      356
+    ]
+  },
+  "clearOfHero": true,
+  "clearOfExplorer": true,
+  "clearOfBadge": true,
+  "scores": {
+    "HOOK": "PASS \u2014 'UNSEEN POND MICROBES' (3 words, punch word 'MICROBES' in gold) names the concrete microorganisms visible inside Leeuwenhoek's glowing pond-water bead on the microscope slide (001 script Part 01 & Part 02: 'microbes drifting unseen... A drop of pond water is not empty. It is a bustling kingdom \u2014 darting shapes, spinning cells... People could watch microbes dance' and THUMBNAIL_AND_TITLE_RULES.md \u00a71.2 & \u00a72.B.1 'name the thing'), shares zero words with the video title ('How Did We Discover Germs?'), Live A ('WHAT PROVED GERMS WERE REAL?'), J0391 ('THE SWAN NECK'), J0457 ('TRAPPED IN GLASS'), J0503 ('DROP OF WATER'), J0549 ('BOILED CLEAR BROTH'), J0594 ('TINY LIVING CELLS'), or J0640 ('STERILE LIQUID FLASK'), and uses no vague questions or pronouns.",
+    "BAND": "PASS \u2014 Upper-left lettering band (x=78..492, y=80..298, framed by 001's original painted gold scroll flourishes at y=20..356) sits completely left of the pushed-in glowing pond-water sphere (x=588..1026), above the Explorer's hair (y=328) and bottom flourish (y=318), and clear of the bottom-right duration badge.",
+    "PHONE": "PASS \u2014 Checked on 168x94 preview sheet and 4-panel comparison strip: the 1.175x hero push-in and internal microbe + glass-slide rim clarity boost make the glowing pond-water sphere (438x438 px, +39% larger area than v03) and its faceless rods, spiked spheres, and golden spiral read immediately at 168x94 alongside 'UNSEEN POND MICROBES' and the lower-left Explorer (54.4% height)."
+  },
+  "previews": [
+    "Selected/hos_001_thumb_B_unseen_pond_microbes_v07_preview.jpg",
+    "Selected/hos_001_thumb_B_unseen_pond_microbes_v07_style_sheet.jpg",
+    "Selected/hos_001_thumb_TC_4way_unseen_pond_microbes_v07_phone_168.jpg"
+  ],
+  "studio": false,
+  "status": "Test & Compare B v07 candidate for 001 (_C92tIJCk8A, built from existing 001 plates only with 1.175x pond-drop hero push-in, \u00a30). Parked for Chief: thumb B review. No Studio until OK."
+}

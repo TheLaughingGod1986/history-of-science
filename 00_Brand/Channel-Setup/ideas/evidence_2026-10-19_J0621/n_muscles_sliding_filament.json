@@ -1,0 +1,155 @@
+{
+ "pulled": "2026-10-19",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "how your muscular system works",
+  "muscle contraction sliding filament"
+ ],
+ "autocomplete": {
+  "how your muscular system works": [
+   "how your muscular system works"
+  ],
+  "muscle contraction sliding filament": [
+   "muscle contraction sliding filament model class 12",
+   "muscle contraction sliding filament theory",
+   "muscle contraction sliding filament model",
+   "muscle contraction sliding filament model class 12 fbise",
+   "muscle contraction sliding filament theory animation",
+   "muscle contraction sliding filament",
+   "muscle contraction sliding filament model animation",
+   "mechanism of muscle contraction sliding filament theory in hindi",
+   "how do muscles contraction sliding filament theory",
+   "skeletal muscle contraction the sliding filament mechanism"
+  ]
+ },
+ "sharedTitleWords": [
+  "your muscles",
+  "muscular system"
+ ],
+ "neighbours": [
+  {
+   "id": "2tM1LFFxeKg",
+   "title": "What makes muscles grow? - Jeffrey Siegel",
+   "channel": "TED-Ed",
+   "views": "23,701,710 views",
+   "age": "10 yr ago",
+   "length": "4:20",
+   "tier": 1,
+   "viewCount": 23701710,
+   "foundBy": "how your muscular system works",
+   "onTopic": true
+  },
+  {
+   "id": "g1pb2aK2we4",
+   "title": "How stretching actually changes your muscles - Malachy McHugh",
+   "channel": "TED-Ed",
+   "views": "12,928,066 views",
+   "age": "3 yr ago",
+   "length": "5:03",
+   "tier": 1,
+   "viewCount": 12928066,
+   "foundBy": "ted-ed how your muscular system works",
+   "onTopic": true
+  },
+  {
+   "id": "rLsimrBoYXc",
+   "title": "The surprising reason our muscles get tired - Christian Moro",
+   "channel": "TED-Ed",
+   "views": "5,816,677 views",
+   "age": "7 yr ago",
+   "length": "4:25",
+   "tier": 1,
+   "viewCount": 5816677,
+   "foundBy": "ted-ed how your muscular system works",
+   "onTopic": true
+  },
+  {
+   "id": "itEXhxjOPjk",
+   "title": "How do steroids affect your muscles— and the rest of your body? - Anees Bahji",
+   "channel": "TED-Ed",
+   "views": "3,950,688 views",
+   "age": "5 yr ago",
+   "length": "5:49",
+   "tier": 1,
+   "viewCount": 3950688,
+   "foundBy": "ted-ed how your muscular system works",
+   "onTopic": true
+  },
+  {
+   "id": "VVL-8zr2hk4",
+   "title": "How your muscular system works - Emma Bryce",
+   "channel": "TED-Ed",
+   "views": "3,233,767 views",
+   "age": "8 yr ago",
+   "length": "4:45",
+   "tier": 1,
+   "viewCount": 3233767,
+   "foundBy": "how your muscular system works",
+   "onTopic": true
+  },
+  {
+   "id": "Ktv-CaOt6UQ",
+   "title": "Muscles, Part 1 - Muscle Cells: Crash Course Anatomy & Physiology #21",
+   "channel": "CrashCourse",
+   "views": "8,235,921 views",
+   "age": "11 yr ago",
+   "length": "10:24",
+   "tier": 2,
+   "viewCount": 8235921,
+   "foundBy": "how your muscular system works",
+   "onTopic": true
+  },
+  {
+   "id": "dpxalWACO7k",
+   "title": "Muscle Tissues and Sliding Filament Model",
+   "channel": "Amoeba Sisters",
+   "views": "2,859,134 views",
+   "age": "4 yr ago",
+   "length": "8:21",
+   "tier": 2,
+   "viewCount": 2859134,
+   "foundBy": "how your muscular system works",
+   "onTopic": true
+  },
+  {
+   "id": "zopoN2i7ALQ",
+   "title": "Myosin and actin | Circulatory system physiology | NCLEX-RN | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "1,080,027 views",
+   "age": "16 yr ago",
+   "length": "9:38",
+   "tier": 2,
+   "viewCount": 1080027,
+   "foundBy": "khan academy muscle contraction sliding filament",
+   "onTopic": true
+  },
+  {
+   "id": "uY2ZOsCnXIA",
+   "title": "Anatomy of a muscle cell",
+   "channel": "Khan Academy",
+   "views": "718,899 views",
+   "age": "16 yr ago",
+   "length": "16:32",
+   "tier": 2,
+   "viewCount": 718899,
+   "foundBy": "khan academy how your muscular system works",
+   "onTopic": true
+  },
+  {
+   "id": "lIqCHsV5kBM",
+   "title": "KS3 Biology - Muscular System - How Muscles Cause Movement | Antagonistic Muscles & How They Work",
+   "channel": "Cognito",
+   "views": "18,033 views",
+   "age": "10 mo ago",
+   "length": "2:49",
+   "tier": 2,
+   "viewCount": 18033,
+   "foundBy": "how your muscular system works",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 8,
+ "gate": "PASS",
+ "hasTed": true,
+ "failedQueries": []
+}

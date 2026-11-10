@@ -1,0 +1,14 @@
+P2:02_layers_build     4.0s code_graphic_010_p2_02_layer ok
+P2:08_two_clocks    15.9s code_graphic_010_p2_08_two_c ok
+P3:02_pyramid_muons    27.5s code_graphic_010_p3_02_pyram ok
+P3:07_clock_idea    42.5s code_graphic_010_p3_07_clock ok
+P4:01_iridium_spike    62.5s code_graphic_010_p4_01_iridi ok
+P4:03_world_pins    79.0s code_graphic_010_p4_03_world ok
+P4:04_supernova_test    97.4s code_graphic_010_p4_04_super ok
+P4:05_ten_km   112.5s code_graphic_010_p4_05_ten_k ok
+P4:07_food_chain   121.2s code_graphic_010_p4_07_food_ ok
+P4:10_where_hole   127.5s code_graphic_010_p4_10_where ok
+P5:03_caribbean_hunt   138.0s code_graphic_010_p5_03_carib ok
+P5:05_ring_scale   149.2s code_graphic_010_p5_05_ring_ ok
+P5:11_why_survive   159.7s code_graphic_010_p5_11_why_s ok
+polish gate PASS: 0 of 13 rows failed, 0 to look at -> 02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/07_Edit-Project/code_graphics_v01/polish_gate_v01.json

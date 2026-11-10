@@ -1,0 +1,74 @@
+{
+  "film": "006_Trees-Are-Made-Of-Air",
+  "task": "Claude desk PR #180 comment 5951520953",
+  "model": "Veo 3.1 - Lite [Lower Priority]",
+  "account": "benoats@googlemail.com",
+  "control": "Vertex veo-3.1-fast-generate-001, same start frame and prompt",
+  "takes": [
+    {
+      "part": "02",
+      "plate": "06_garden_years",
+      "take": 1,
+      "model": "Veo 3.1 - Lite [Lower Priority]",
+      "path": "flow-cdp",
+      "submitted": "by hand in the Flow composer (settings panel showed 'Generating will use 0 credits')",
+      "prompt": "Same Vilvoorde garden in one continuous time-lapse: spring leaves burst out on the willow in the clay pot, autumn leaves fall, snow settles, spring again; the willow climbs past the garden wall while the pot never changes. No people. Silent.",
+      "start_frame": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part02/refs/v01_vertex_stills/06_garden_years_v01.jpg",
+      "start_frame_sha256": "5fa900a86d676220a2ea2b6e3ff110af90f0332d3926c7c980f6b332414c228c",
+      "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part02/raw/v01/06_garden_years_lite_t1.mp4",
+      "sha256": "2adcb376ca79ba91e9609a1969631101d7be21f670e14b01068092815407c276",
+      "duration_s": 8.0,
+      "uat_sheet": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part02/uat/06_garden_years_lite_t1_sheet.jpg",
+      "motion": {
+        "freeze_events_0p8s": 0
+      },
+      "project_url": "https://flow.google.com/project/73e4b99b-0f7a-4452-aaca-c30c81f12253",
+      "flow_credits_after": {
+        "hits": [
+          62
+        ],
+        "account_seen": "benoats@googlemail.com",
+        "screenshot": "flow_credits_lite_06_garden_years_t1_after.png",
+        "at": "2026-10-02T12:09:32+00:00"
+      },
+      "seconds": 8.7,
+      "status": "FAIL",
+      "at": "2026-10-02T12:09:32+00:00",
+      "why": "Hard fail 1 (consistency): the willow turns into a generic broadleaf tree from autumn on and never returns to a weeping willow; flagstone path drifts to lawn. Pot holds, no freeze, finished look, 720p.",
+      "uat_at": "2026-10-02T12:23:11+00:00"
+    },
+    {
+      "part": "05",
+      "plate": "18_forest_sea",
+      "take": 1,
+      "model": "Veo 3.1 - Lite [Lower Priority]",
+      "path": "flow-cdp",
+      "submitted": "by hand in the Flow composer (settings panel showed 'Generating will use 0 credits')",
+      "prompt": "IMAGE-TO-VIDEO of the attached start frame. A green forest running down to a sunlit sea full of drifting green algae; tiny clear oxygen bubbles rise from the leaves and the water. Slow aerial drift. No people. Silent.",
+      "start_frame": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part05/refs/v01_vertex_stills/18_forest_sea_v01.jpg",
+      "start_frame_sha256": "6be268260ad4fd4c181bc54005c88ee249e93920670887d4572cb49291f7c73f",
+      "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part05/raw/v01/18_forest_sea_lite_t1.mp4",
+      "sha256": "e885e73f476f2aa33e7ea41a617ebc67d646a97d481ef774c5fcea948b103951",
+      "duration_s": 8.0,
+      "uat_sheet": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part05/uat/18_forest_sea_lite_t1_sheet.jpg",
+      "motion": {
+        "freeze_events_0p8s": 0
+      },
+      "project_url": "https://flow.google.com/project/dffe479b-2cd9-41d7-8b9e-21fe1481d9ce",
+      "flow_credits_after": {
+        "hits": [
+          62
+        ],
+        "account_seen": "benoats@googlemail.com",
+        "screenshot": "flow_credits_lite_18_forest_sea_t1_after.png",
+        "at": "2026-10-02T12:22:16+00:00"
+      },
+      "seconds": 8.8,
+      "status": "FAIL",
+      "at": "2026-10-02T12:22:17+00:00",
+      "why": "Hard fails 2 and 8: camera drifts off the forest into open sea by ~5 s so the forest-plus-sea idea is lost; the oxygen bubbles become giant soap bubbles floating in the air above the water. No freeze, 720p.",
+      "uat_at": "2026-10-02T12:23:11+00:00"
+    }
+  ],
+  "updated": "2026-10-02T12:23:11+00:00"
+}

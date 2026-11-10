@@ -1,0 +1,353 @@
+{
+  "film": "007_The-First-Vaccine",
+  "part": 3,
+  "kind": "rough_v01",
+  "job": "J0820",
+  "authority": "Chief KEEP J0352 (Claude, acting Chief, 21 Oct 2026); HOS PR #351 merged",
+  "applied_by": "gemini",
+  "no_new_mints": true,
+  "spend": "\u00a30 (assembly only)",
+  "assemble_method": "VO-first: board t_s/use_s per plate on locked 007 VO, 24 fps 1080p, HOS house overlays (WHO cards, WHEN date stamps, chapter cards, board side labels, archive credits), captions off, P4:05_days_pass trimmed to clean back half (4.50-7.76 s)",
+  "board": "02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/parts/part-03_plates_v02.json",
+  "vo_file": "02_Voiceover/part03_a_pail_a_lancet_and_a_boy_v02b.mp3",
+  "vo_sha256": "4fff3c55884f94dd0c51294de1eecb2b400450b526a1cca15b18137b1fd23f22",
+  "vo_duration_s": 78.16,
+  "rough_duration_s": 78.75,
+  "picture_s": 78.75,
+  "frames": 1890,
+  "rough_path": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/_precheck/part03_rough_v01/hos_007_part03_rough_v01.mp4",
+  "sha256": "62a14a089f2e8c62dc7a711f9fe439c667e21472341e4478336a23743f03169e",
+  "size_mb": 85.21,
+  "proxy_path": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/_precheck/part03_rough_v01/hos_007_part03_rough_v01_uat_proxy.mp4",
+  "proxy_sha256": "1534645dc6c6b6febd3821460d699c4123d6a79609e943c410d502cc06dd3a43",
+  "contact_sheet": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/_precheck/part03_rough_v01/hos_007_part03_rough_v01_contact_sheet.jpg",
+  "overlays_applied": [
+    {
+      "id": "p3_ch",
+      "kind": "chapter",
+      "start": 0.0,
+      "end": 1.55,
+      "text": "A Pail, a Lancet and a Boy"
+    },
+    {
+      "id": "p3_who_sarah",
+      "kind": "who",
+      "start": 4.55,
+      "end": 8.15,
+      "name": "Sarah Nelmes",
+      "line2": "May 1796 \u00b7 Dairymaid"
+    },
+    {
+      "id": "p3_blossom",
+      "kind": "label",
+      "start": 12.8,
+      "end": 16.2,
+      "text": "BLOSSOM \u00b7 THE COW"
+    },
+    {
+      "id": "p3_when_may14",
+      "kind": "stamp",
+      "start": 21.85,
+      "end": 25.15,
+      "text": "14 May 1796"
+    },
+    {
+      "id": "p3_who_phipps",
+      "kind": "who",
+      "start": 28.1,
+      "end": 31.7,
+      "name": "James Phipps",
+      "line2": "Age about 8"
+    },
+    {
+      "id": "p3_quill_date",
+      "kind": "label",
+      "start": 32.3,
+      "end": 35.8,
+      "text": "14 MAY 1796"
+    },
+    {
+      "id": "p3_mild_fever",
+      "kind": "label",
+      "start": 42.9,
+      "end": 46.5,
+      "text": "A MILD FEVER, THEN WELL"
+    }
+  ],
+  "freeze_events": [],
+  "polish_gate_rc": 0,
+  "polish_gate_stdout": "01a_garden_path     2.2s 01a_garden_path_t1.mp4       ok\n01_sarah_nelmes     6.9s 01_sarah_nelmes_t1.mp4       ok\n02_cow_from_lane    13.3s 02_cow_from_lane_t1.mp4      ok\n03_phipps_stool    19.4s 03_phipps_stool_t1.mp4       ok\n03b_lancet_case    23.5s 03b_lancet_case_t1.mp4       ok\n04_lancet_touch    28.7s 04_lancet_touch_t1.mp4       ok\n05_quill_writes    35.6s 05_quill_writes_t1.mp4       WARN low detail: edge density 0.0175 < film p5 0.0209\n05b_week_passes    41.0s 05b_week_passes_t1.mp4       ok\n06_mild_fever    45.1s 06_mild_fever_t1.mp4         ok\n07_playing_garden    50.4s 07_playing_garden_t1.mp4     ok\n08_jenner_thinks    55.4s 08_jenner_thinks_t1.mp4      ok\n08b_uneasy_hand    60.3s 08b_uneasy_hand_t1.mp4       ok\n08c_map_again    66.4s code_graphic_007_p3_08c_map_ ok\n09_casebook_open    72.7s 13_casebook_t1.mp4           ok\n09b_phipps_again    77.2s 03_phipps_stool_t1.mp4       ok\npolish gate PASS: 0 of 15 rows failed, 1 to look at -> /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/_desk/007/part03_rough_v01/polish_gate.json",
+  "picture_qa_rc": 0,
+  "picture_qa_stdout": "WARN   0:36 row 05_quill_writes 05_quill_writes_t1.mp4: low detail: edge density 0.0175 < film p5 0.0209\npicture QA PASS: 0 of 15 cuts fail, 1 to look at -> /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/_desk/007/part03_rough_v01/PICTURE_QA.md, /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/_desk/007/part03_rough_v01/picture_qa_review.jpg",
+  "segments": [
+    {
+      "row": "01a_garden_path",
+      "film_t": 234.27,
+      "timeline_in": 0.0,
+      "timeline_out": 4.3333,
+      "frames": 104,
+      "upscale": 1.5,
+      "side_label": null,
+      "overlays": [
+        "p3_ch"
+      ],
+      "source": "01a_garden_path_t1.mp4",
+      "source_path": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part03/raw/v01/01a_garden_path_t1.mp4",
+      "source_sha256": "98a068a16eb1d300ce2496a800a61f362b3c732352d269d7d3beb4edbe51d5ad",
+      "framing": {
+        "offset": 0.0
+      },
+      "disposition": "KEEP Flow Fast t1 (J0352 Chief KEEP)"
+    },
+    {
+      "row": "01_sarah_nelmes",
+      "film_t": 238.61,
+      "timeline_in": 4.3333,
+      "timeline_out": 9.5,
+      "frames": 124,
+      "upscale": 1.0,
+      "side_label": "SARAH NELMES \u00b7 MAY 1796",
+      "overlays": [
+        "p3_who_sarah"
+      ],
+      "source": "01_sarah_nelmes_t1.mp4",
+      "source_path": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part03/raw/v01/01_sarah_nelmes_t1.mp4",
+      "source_sha256": "b995820f412d13630f60fd50383ce2b9596a2e0962b008392577a8b376006da0",
+      "framing": {
+        "offset": 0.0
+      },
+      "disposition": "KEEP Flow Quality t1 (J0352 Chief KEEP)"
+    },
+    {
+      "row": "02_cow_from_lane",
+      "film_t": 243.75,
+      "timeline_in": 9.5,
+      "timeline_out": 17.2083,
+      "frames": 185,
+      "upscale": 1.5,
+      "side_label": null,
+      "overlays": [
+        "p3_blossom"
+      ],
+      "source": "02_cow_from_lane_t1.mp4",
+      "source_path": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part03/raw/v01/02_cow_from_lane_t1.mp4",
+      "source_sha256": "5fa999643054018fb9508f18ecd5c2f05d9fbc253b8cdd13872e839a7f629a1a",
+      "framing": {
+        "offset": 0.0
+      },
+      "disposition": "KEEP Flow Fast t1 (J0352 Chief KEEP)"
+    },
+    {
+      "row": "03_phipps_stool",
+      "film_t": 251.47,
+      "timeline_in": 17.2083,
+      "timeline_out": 21.625,
+      "frames": 106,
+      "upscale": 1.0,
+      "side_label": null,
+      "overlays": [],
+      "source": "03_phipps_stool_t1.mp4",
+      "source_path": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part03/raw/v01/03_phipps_stool_t1.mp4",
+      "source_sha256": "e0b9b88d8bc1bc4e93df483fcef9a102a9a2cfe8b2ca1e31a34f476318bd736a",
+      "framing": {
+        "offset": 0.0
+      },
+      "disposition": "KEEP Flow Quality t1 (J0352 Chief KEEP)"
+    },
+    {
+      "row": "03b_lancet_case",
+      "film_t": 255.89,
+      "timeline_in": 21.625,
+      "timeline_out": 25.375,
+      "frames": 90,
+      "upscale": 1.5,
+      "side_label": null,
+      "overlays": [
+        "p3_when_may14"
+      ],
+      "source": "03b_lancet_case_t1.mp4",
+      "source_path": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part03/raw/v01/03b_lancet_case_t1.mp4",
+      "source_sha256": "82ac0afa0346d69f47744be1d86821fc467478764a0c3f9c2845a421b8a9fa5c",
+      "framing": {
+        "offset": 0.0
+      },
+      "disposition": "KEEP Flow Fast t1 (J0352 Chief KEEP)"
+    },
+    {
+      "row": "04_lancet_touch",
+      "film_t": 259.65,
+      "timeline_in": 25.375,
+      "timeline_out": 31.9583,
+      "frames": 158,
+      "upscale": 1.0,
+      "side_label": "JAMES PHIPPS \u00b7 AGE ABOUT 8 (on the word, +4.56 s)",
+      "overlays": [
+        "p3_who_phipps"
+      ],
+      "source": "04_lancet_touch_t1.mp4",
+      "source_path": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part03/raw/v01/04_lancet_touch_t1.mp4",
+      "source_sha256": "6e67740a539e058f27856fc1bfbd8eae04d2b31fc3a2b097b50d9ca3d3a2e1bb",
+      "framing": {
+        "offset": 0.0
+      },
+      "disposition": "KEEP Flow Quality t1 (J0352 Chief KEEP)"
+    },
+    {
+      "row": "05_quill_writes",
+      "film_t": 266.23,
+      "timeline_in": 31.9583,
+      "timeline_out": 39.3333,
+      "frames": 177,
+      "upscale": 1.5,
+      "side_label": null,
+      "overlays": [
+        "p3_quill_date"
+      ],
+      "source": "05_quill_writes_t1.mp4",
+      "source_path": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part03/raw/v01/05_quill_writes_t1.mp4",
+      "source_sha256": "b3d3ed334f9fddb2d582d0a882c9b21c0564063565c1558cdc33cf3b4dbc8cc3",
+      "framing": {
+        "offset": 0.0
+      },
+      "disposition": "KEEP Flow Fast t1 (J0352 Chief KEEP)"
+    },
+    {
+      "row": "05b_week_passes",
+      "film_t": 273.61,
+      "timeline_in": 39.3333,
+      "timeline_out": 42.6667,
+      "frames": 80,
+      "upscale": 1.5,
+      "side_label": null,
+      "overlays": [],
+      "source": "05b_week_passes_t1.mp4",
+      "source_path": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part03/raw/v01/05b_week_passes_t1.mp4",
+      "source_sha256": "471f99793c9720174522bf46b37768b8de7382bb9d17f0c2cdb0d36f011a1e7c",
+      "framing": {
+        "offset": 0.0
+      },
+      "disposition": "KEEP Flow Fast t1 (J0352 Chief KEEP)"
+    },
+    {
+      "row": "06_mild_fever",
+      "film_t": 276.93,
+      "timeline_in": 42.6667,
+      "timeline_out": 47.5833,
+      "frames": 118,
+      "upscale": 1.5,
+      "side_label": "A MILD FEVER, THEN WELL",
+      "overlays": [
+        "p3_mild_fever"
+      ],
+      "source": "06_mild_fever_t1.mp4",
+      "source_path": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part03/raw/v01/06_mild_fever_t1.mp4",
+      "source_sha256": "6f9d0463f1cc98f054552930387cb43b313e3aff5c1f0b474c1371bdf5851b66",
+      "framing": {
+        "offset": 0.0
+      },
+      "disposition": "KEEP Flow Fast t1 (J0352 Chief KEEP)"
+    },
+    {
+      "row": "07_playing_garden",
+      "film_t": 281.85,
+      "timeline_in": 47.5833,
+      "timeline_out": 53.125,
+      "frames": 133,
+      "upscale": 1.5,
+      "side_label": null,
+      "overlays": [],
+      "source": "07_playing_garden_t1.mp4",
+      "source_path": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part03/raw/v01/07_playing_garden_t1.mp4",
+      "source_sha256": "b0f0c380b6fbc9c69e6d37a62a22767c4e2cb9f7653a363edb5043071b7af1ce",
+      "framing": {
+        "offset": 0.0
+      },
+      "disposition": "KEEP Flow Fast t1 (J0352 Chief KEEP)"
+    },
+    {
+      "row": "08_jenner_thinks",
+      "film_t": 287.41,
+      "timeline_in": 53.125,
+      "timeline_out": 57.7083,
+      "frames": 110,
+      "upscale": 1.5,
+      "side_label": null,
+      "overlays": [],
+      "source": "08_jenner_thinks_t1.mp4",
+      "source_path": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part03/raw/v01/08_jenner_thinks_t1.mp4",
+      "source_sha256": "0638c83d2288e32f052dd111b5767b01a1ec1460c0543bd1601e0553d62174e2",
+      "framing": {
+        "offset": 0.0
+      },
+      "disposition": "KEEP Flow Fast t1 (J0352 Chief KEEP)"
+    },
+    {
+      "row": "08b_uneasy_hand",
+      "film_t": 291.97,
+      "timeline_in": 57.7083,
+      "timeline_out": 62.9167,
+      "frames": 125,
+      "upscale": 1.5,
+      "side_label": null,
+      "overlays": [],
+      "source": "08b_uneasy_hand_t1.mp4",
+      "source_path": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part03/raw/v01/08b_uneasy_hand_t1.mp4",
+      "source_sha256": "1d432444c977d54ca0de0600d5986f216b1484237430b4eb7f4378eca1b2f5bd",
+      "framing": {
+        "offset": 0.0
+      },
+      "disposition": "KEEP Flow Fast t1 (J0352 Chief KEEP)"
+    },
+    {
+      "row": "08c_map_again",
+      "film_t": 297.19,
+      "timeline_in": 62.9167,
+      "timeline_out": 69.875,
+      "frames": 167,
+      "upscale": 1.0,
+      "side_label": null,
+      "overlays": [],
+      "source": "code_graphic_007_p3_08c_map_again.mp4",
+      "source_path": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/special_assets_v01/code_graphic_007_p3_08c_map_again.mp4",
+      "source_sha256": "4cfada1d87ab7a2d9ffe2cf8ecfb73fccfc66763a91c2ff730f318c8a41c9fbe",
+      "framing": {
+        "offset": 0.0
+      },
+      "disposition": "Dedicated \u00a30 code graphic reuse render of P1:07_map_shadows"
+    },
+    {
+      "row": "09_casebook_open",
+      "film_t": 304.15,
+      "timeline_in": 69.875,
+      "timeline_out": 75.5417,
+      "frames": 136,
+      "upscale": 1.0,
+      "side_label": null,
+      "overlays": [],
+      "source": "13_casebook_t1.mp4",
+      "source_path": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part02/raw/v01/13_casebook_t1.mp4",
+      "source_sha256": "e990851701f671f8301ddc56d73b28e01c5361980fc948a43c14148ed1a760e5",
+      "framing": {
+        "offset": 1.1
+      },
+      "disposition": "REUSE window 1.10-6.76 s of P2:13_casebook"
+    },
+    {
+      "row": "09b_phipps_again",
+      "film_t": 309.81,
+      "timeline_in": 75.5417,
+      "timeline_out": 78.75,
+      "frames": 77,
+      "upscale": 1.0,
+      "side_label": null,
+      "overlays": [],
+      "source": "03_phipps_stool_t1.mp4",
+      "source_path": "/Users/benjaminoats/YouTube/hos-007-vaccine/02_Video-Projects/007_The-First-Vaccine/04_Generated-Clips/part03/raw/v01/03_phipps_stool_t1.mp4",
+      "source_sha256": "e0b9b88d8bc1bc4e93df483fcef9a102a9a2cfe8b2ca1e31a34f476318bd736a",
+      "framing": {
+        "offset": 4.68
+      },
+      "disposition": "REUSE window 4.68-7.90 s of P3:03_phipps_stool"
+    }
+  ]
+}

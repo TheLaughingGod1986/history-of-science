@@ -1,0 +1,220 @@
+{
+  "rule": {
+    "low_detail": "FAIL: luma std < 13.44 and edge density < 0.0259 (absolute floor); WARN: luma std < 18.0 or edge density < film p5",
+    "split_panel": "full-height/width seam or gutter",
+    "split_panel_gutter": "gutter counts only with edge density >= 0.01 in the 10% band on both sides",
+    "near_black": "mean < 28.0 or p95 < 50.0",
+    "noise": "grain std > 6 over structure std < 12, and the 8x-downscaled frame under the low-detail floor (std < 13.44 and edge density < 0.0259)",
+    "jitter": "centre-patch phase correlation: reversal against trend or > 0.35 px off trend"
+  },
+  "low_detail_floor": {
+    "std": 13.44,
+    "edge": 0.0259,
+    "calibration": {
+      "video": "025_MarsRobot_full_rough_v02d.mp4",
+      "factor": 1.2,
+      "frames": [
+        {
+          "source": "PIA22223.jpg",
+          "t": 201.0,
+          "std": 12.1,
+          "edge": 0.0223
+        },
+        {
+          "source": "PIA22223.jpg",
+          "t": 216.3,
+          "std": 11.2,
+          "edge": 0.0216
+        },
+        {
+          "source": "PIA22929.jpg",
+          "t": 297.4,
+          "std": 26.54,
+          "edge": 0.5735
+        }
+      ]
+    }
+  },
+  "video": "02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/hos_006_s08_willow_pot_v01.mp4",
+  "edge_floor": 0.0399,
+  "verdict": "PASS",
+  "failed": [],
+  "warn": [
+    {
+      "row": "s07_and",
+      "cut": 6,
+      "t": 18.55,
+      "source": "12_pointer_short_t1.mp4",
+      "why": [
+        "low detail: edge density 0.0368 < film p5 0.0399"
+      ]
+    }
+  ],
+  "reviewed_ok": [],
+  "rows": [
+    {
+      "cut": 0,
+      "row": "s01_0",
+      "source": "11_shoot_in_pot_t1.mp4",
+      "t": 1.38,
+      "std": 46.26,
+      "mean": 96.71,
+      "p95": 208.0,
+      "edge": 0.0629,
+      "hf": 13.58,
+      "lf": 38.1,
+      "std8": 40.7,
+      "edge8": 0.2354,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 1,
+      "row": "s02_two",
+      "source": "10_van_helmont_sack_t1.mp4",
+      "t": 4.35,
+      "std": 64.23,
+      "mean": 106.58,
+      "p95": 210.0,
+      "edge": 0.0621,
+      "hf": 10.72,
+      "lf": 60.54,
+      "std8": 61.93,
+      "edge8": 0.2524,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 2,
+      "row": "s03_planted",
+      "source": "03_willow_shoot_scale_t1.mp4",
+      "t": 7.57,
+      "std": 36.04,
+      "mean": 65.09,
+      "p95": 163.0,
+      "edge": 0.0642,
+      "hf": 11.24,
+      "lf": 29.14,
+      "std8": 31.6,
+      "edge8": 0.2101,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 3,
+      "row": "s04_Then,",
+      "source": "04_lid_rain_t1.mp4",
+      "t": 10.75,
+      "std": 41.55,
+      "mean": 104.08,
+      "p95": 182.0,
+      "edge": 0.1403,
+      "hf": 13.59,
+      "lf": 34.48,
+      "std8": 36.46,
+      "edge8": 0.2998,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 4,
+      "row": "s05_the",
+      "source": "08_haul_tree_t1_trim_0to4p8.mp4",
+      "t": 13.27,
+      "std": 38.39,
+      "mean": 92.57,
+      "p95": 169.0,
+      "edge": 0.0953,
+      "hf": 11.84,
+      "lf": 32.56,
+      "std8": 34.1,
+      "edge8": 0.2287,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 5,
+      "row": "s06_A",
+      "source": "13_tree_vs_pinch_t1.mp4",
+      "t": 15.8,
+      "std": 44.87,
+      "mean": 113.92,
+      "p95": 190.0,
+      "edge": 0.0449,
+      "hf": 7.2,
+      "lf": 41.84,
+      "std8": 42.74,
+      "edge8": 0.3267,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 6,
+      "row": "s07_and",
+      "source": "12_pointer_short_t1.mp4",
+      "t": 18.55,
+      "std": 32.85,
+      "mean": 77.61,
+      "p95": 181.0,
+      "edge": 0.0368,
+      "hf": 7.39,
+      "lf": 28.85,
+      "std8": 28.85,
+      "edge8": 0.1203,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0368 < film p5 0.0399"
+      ]
+    },
+    {
+      "cut": 7,
+      "row": "s08_The",
+      "source": "02_balance_trunk_t1.mp4",
+      "t": 20.59,
+      "std": 56.84,
+      "mean": 133.75,
+      "p95": 226.0,
+      "edge": 0.2543,
+      "hf": 15.12,
+      "lf": 51.89,
+      "std8": 53.04,
+      "edge8": 0.3121,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 8,
+      "row": "s09_loop",
+      "source": "loop_end_11_shoot_in_pot_t1.mp4",
+      "t": 22.92,
+      "std": 40.33,
+      "mean": 94.56,
+      "p95": 178.0,
+      "edge": 0.0445,
+      "hf": 8.48,
+      "lf": 35.68,
+      "std8": 37.11,
+      "edge8": 0.1944,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    }
+  ]
+}

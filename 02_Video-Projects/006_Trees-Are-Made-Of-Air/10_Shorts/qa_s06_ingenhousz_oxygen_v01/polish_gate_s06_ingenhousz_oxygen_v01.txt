@@ -1,0 +1,9 @@
+s01_0     1.5s 05_bubbles_macro_t1.mp4      ok
+s02_and     3.9s 03_plunge_leaf_t1.mp4        ok
+s03_He     6.3s 06_collect_blaze_t3.mp4      ok
+s04_A    10.1s 11_candle_tall_t1.mp4        ok
+s05_Move    14.4s 18_dark_window_t1.mp4        ok
+s06_Move    18.2s 12_shutters_open_t1.mp4      ok
+s07_Only    21.2s 10_only_green_t2.mp4         ok
+s08_loop    23.8s loop_end_05_bubbles_macro_t1 ok
+polish gate PASS: 0 of 8 rows failed, 0 to look at -> 02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/qa_s06_ingenhousz_oxygen_v01/polish_gate_s06_ingenhousz_oxygen_v01.json

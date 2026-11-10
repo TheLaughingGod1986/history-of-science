@@ -93,3 +93,31 @@ Asked on HOS #180 (6018501899). Picture questions only; no script line changes h
 | P8 | Part 05 7:15: astronauts and a floating apple on the ISS | Fresh apples go up on cargo flights. NASA photos show a fresh apple floating in the Cupola (12 Jan 2014, Cygnus) and crew playing with fresh apples and oranges (19 Apr 2026, Cygnus XL). | **Keep:** two generic astronauts (no likeness, no readable patches) with one apple drifting between them. The Cupola windows with the Earth beyond are a documented setting. | NASA, "Fresh Fruit Delivery to Station": https://www.nasa.gov/image-article/fresh-fruit-delivery-station/ · NASA, "Fresh Food Delivery for Space Station" (2026): https://www.nasa.gov/image-article/fresh-food-delivery-for-space-station/ |
 
 **Shot-list changes these imply (for Claude):** P3 (no door plaque; green-red Flower of Kent apples), P5 (**Halley in his own long dark hair, not a fair wig**) and P7 (Palitzsch's long wooden reflector; no snow). The rest keep their fallbacks. P4's cannon is supported by *Principia* Def. V.
+
+## Teach on screen & Polish pass markers (16 Oct 2026, J0379 — zero spoken words changed)
+
+Every `WHO`, `WHEN`, `DATA`, `SCALE` and `FACT` marker added inside `[VISUAL MUST]` of `moon_script_master_v01.md`, sourced against the rows above:
+
+| Marker | Beat | Card / graphic text | Source / verification |
+|---|---|---|---|
+| `WHEN` | 0:50 | `England, 1665` | Great Plague year; ODNB "Newton, Isaac"; Westfall (1980) |
+| `WHEN` | 1:23 | `Cambridge, 1665` | Trinity College Conclusion Book (7 Aug 1665); Brewster, *Memoirs of Newton* |
+| `WHO` | 1:38 | `Isaac Newton (1642–1727) — Cambridge student` | Born 25 Dec 1642 OS, died 20 Mar 1726/27; B.A. student at Trinity College in 1665 (ODNB) |
+| `WHEN` | 1:38 | `Woolsthorpe, 25 December 1642` | John Conduitt memoranda, Keynes MS 130 (Newton Project THEM00165); ODNB |
+| `FACT` | 1:38 | `Fitted in quart pot` (4 words) | Keynes MS 130 (Conduitt): mother said he was so little "they could have put him into a quart pot" |
+| `WHEN` | 2:00 | `Woolsthorpe, 1665–1667` (timeline marker) | Cambridge University Library Add. MS 3968; Westfall (1980) |
+| `FACT` | 2:00 | `Never hit his head` (4 words) | William Stukeley, *Memoirs of Sir Isaac Newton's Life* (1752), entry for 15 April 1726 |
+| `DATA` + `SCALE` | 4:10 | `1 km/s sideways motion + continuous fall` · `SCALE: one kilometre every second — three times the speed of sound` | NASA Moon Fact Sheet: mean orbital velocity 1.022 km/s (~3× sea-level speed of sound, 0.343 km/s) |
+| `DATA` + `SCALE` | 4:43 | `60 Earth radii Earth–Moon distance` · `SCALE: 60 Earth radii — 30 full Earths laid side by side` | *Principia* Book III, Prop. IV (60 semi-diameters = 30 full Earth diameters); NASA Moon Fact Sheet (~60.3 Earth radii, 384,400 km) |
+| `DATA` + `SCALE` | 5:00 | `60 × 60 inverse-square grid (3,600× weaker)` · `SCALE: 3,600 times weaker — as many seconds as in one hour` | *Principia* Book III, Prop. IV ($60^2 = 3,600$, matching 60 minutes × 60 seconds = 3,600 s/hr) |
+| `DATA` + `SCALE` | 5:20 | `Apple falls ~5 m in 1 s vs Moon falls ~5 m in 1 min` · `SCALE: about five metres — the height of a two-storey house` | *Principia* Book III, Prop. IV (15 1/12 Paris feet ≈ 4.90 m in 1 minute vs 1 second; standard UK 2-storey house eaves height ~4.8–5.2 m) |
+| `WHO` | 5:45 | `Edmond Halley (1656–1742) — English astronomer` | Born 29 Oct 1656 OS, died 14 Jan 1741/42; visited Newton at Cambridge in August 1684 aged 27 (ODNB) |
+| `WHEN` | 5:45 | `Cambridge, August 1684` (timeline marker) | De Moivre account via Conduitt; Westfall (1980) |
+| `WHEN` | 6:10 | `London, 1687` (timeline marker) | *Philosophiæ Naturalis Principia Mathematica* title page (London, 1687; imprimatur 5 July 1686) |
+| `FACT` | 6:10 | `Halley paid for printing` (4 words) | Royal Society Council minutes, 2 June 1686 (Halley to print at his own charge after *De Historia Piscium* drained RS funds) |
+| `DATA` + `SCALE` | 6:10 | `Animated timeline: 1642 · 1665–1667 · 1684 · 1687 · 1758` · `SCALE: twenty years from the plague orchard (1666) to the Principia (1687)` | Add. MS 3968 (1666 Moon test) to *Principia* (1686–1687) |
+| `WHEN` | 6:45 | `Saxony, 25 December 1758` (timeline marker) | Johann Georg Palitzsch recovery at Prohlis near Dresden, Christmas night 1758; Halley *Synopsis* (1705) |
+| `FACT` | 6:45 | `Returned on Christmas night` (4 words) | Palitzsch observation report, 25 December 1758 |
+| `DATA` + `SCALE` | 7:15 | `ISS orbital free-fall curve at 28,000 km/h (7.66 km/s)` · `SCALE: 28,000 km/h — circling the Earth every 90 minutes` | NASA ISS Facts and Figures (~7.66 km/s, ~27,600–28,000 km/h, orbital period ~90–93 minutes) |
+| `WHEN` | 7:45 | `66 million years ago` (hand-off) | Renne et al., *Science* 339 (2013); Alvarez et al., *Science* 208 (1980) |
+

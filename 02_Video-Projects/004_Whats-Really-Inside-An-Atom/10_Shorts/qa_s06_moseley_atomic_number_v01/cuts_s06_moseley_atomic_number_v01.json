@@ -1,0 +1,90 @@
+[
+  {
+    "row": "s01_0",
+    "timeline_in": 0.0,
+    "timeline_out": 4.603,
+    "source": "07_crystal_split_v01.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.4
+    },
+    "video": true
+  },
+  {
+    "row": "s02_Element",
+    "timeline_in": 4.603,
+    "timeline_out": 7.911,
+    "source": "09_one_rung_each_v01.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.5
+    },
+    "video": true
+  },
+  {
+    "row": "s03_even",
+    "timeline_in": 7.911,
+    "timeline_out": 10.855,
+    "source": "05_xrays_from_metal_v01.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.5
+    },
+    "video": true
+  },
+  {
+    "row": "s04_Count",
+    "timeline_in": 10.855,
+    "timeline_out": 15.118,
+    "source": "04_electrons_fire_v01.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 1.6
+    },
+    "video": true
+  },
+  {
+    "row": "s05_the",
+    "timeline_in": 15.118,
+    "timeline_out": 17.889,
+    "source": "14_nucleus_electrons_v01.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.5
+    },
+    "video": true
+  },
+  {
+    "row": "s06_The",
+    "timeline_in": 17.889,
+    "timeline_out": 20.375,
+    "source": "02_train_in_tube_v01.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.5
+    },
+    "video": true
+  },
+  {
+    "row": "s07_Mendeleev's",
+    "timeline_in": 20.375,
+    "timeline_out": 23.36,
+    "source": "03_targets_swap_v01.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 1.2
+    },
+    "video": true
+  },
+  {
+    "row": "s08_loop",
+    "timeline_in": 23.36,
+    "timeline_out": 26.36,
+    "source": "loop_end_07_crystal_split_v01.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.4
+    },
+    "video": true
+  }
+]

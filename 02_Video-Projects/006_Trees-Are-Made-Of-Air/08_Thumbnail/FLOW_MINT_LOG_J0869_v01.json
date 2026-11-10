@@ -1,0 +1,53 @@
+{
+  "film": "006_Trees-Are-Made-Of-Air",
+  "job": "J0869",
+  "decisionRef": "Chief pick on J0858 (OWB #99 comment 6355648154)",
+  "engine": "Flow Image \u00b7 Nano Banana 2 (16:9) via CDP :9222",
+  "styleRefs": [
+    "00_Brand/Channel-Setup/style/long/001_how_did_we_discover_germs.jpg",
+    "02_Video-Projects/006_Trees-Are-Made-Of-Air/08_Thumbnail/_assets_v01/04_sunny_window_v01.jpg",
+    "01_Character/05_Generation-References/hos-explorer-reference-v01.jpg"
+  ],
+  "plates": {
+    "A": {
+      "concept": "A",
+      "png": "08_Thumbnail/_assets_v01/hos_006_thumb_A_wood_from_sky_plate01.png",
+      "jpg": "08_Thumbnail/_assets_v01/hos_006_thumb_A_wood_from_sky_plate01.jpg",
+      "sha256_png": "3f207205b99cbd314c338dfa0e28f6ccaf79c51d3c6053123ede6c9f9ae6abd8",
+      "sha256_jpg": "7e7a9877b4234ba00489818f4cdfb8e4ae14edb3f91bc6b3e55769dff66785b8",
+      "size": [
+        1280,
+        720
+      ],
+      "styleRefChips": 3,
+      "creditsBefore": 20830,
+      "creditsAfter": 20830,
+      "creditsUsed": 0,
+      "elapsedSeconds": 78.5,
+      "mintedAt": "2026-10-23T02:16:48+00:00",
+      "prompt": "STYLE LOCK from the attached stills: match the live History of Science long thumbnail's premium 3D cartoon painting, warm golden library/study light, arched window, and rounded stylised materials. Use the attached thumbnail ONLY for paint style, lighting, and depth \u2014 IGNORE and DO NOT COPY any text or letters on it. Match the Explorer reference exactly (round thin gold glasses, teal long coat, tan waistcoat, brown bow tie, messy brown hair, satchel), exactly one Explorer.\nLANDSCAPE 16:9 wide single still frame.\nHero object on the right two-thirds (x=520..1240): a lush young willow tree growing in a large terracotta pot on a polished oak table beside an arched sunlit window; luminous golden-teal ribbons of air stream visibly in through the open window into the green willow leaves and flow down into a glowing cutaway section of the thick wooden trunk showing warm solid wood rings. Whole tree and pot clearly visible.\nLower left (x=80..340, y=340..720): the Explorer at about half the frame height, standing in the lower-left corner looking up in wonder at the glowing trunk cutaway.\nUpper left (x=40..510, y=20..335): warm shaded dark-wood bookshelves only, completely empty and uncluttered with ZERO text or letters so title lettering can be added in post.\nBottom-right corner: empty dark tabletop shadow only.\nHARD REJECT: any text, letters, words, numbers, symbols, signs, watermarks, flat 2D shapes, split panels, photoreal, orange robot."
+    },
+    "B": {
+      "concept": "B",
+      "png": "08_Thumbnail/_assets_v01/hos_006_thumb_B_do_plants_eat_soil_plate01.png",
+      "jpg": "08_Thumbnail/_assets_v01/hos_006_thumb_B_do_plants_eat_soil_plate01.jpg",
+      "sha256_png": "80d90cb4a15cf6e21ac9a10c1945c877206710f762b025ddae80310524910b55",
+      "sha256_jpg": "9ea89834cdbea312e848be8d9a65e1ac5a21cdc89816816cbfd96a6e9e1ece46",
+      "size": [
+        1280,
+        720
+      ],
+      "styleRefChips": 3,
+      "creditsBefore": 20830,
+      "creditsAfter": 20830,
+      "creditsUsed": 0,
+      "elapsedSeconds": 53.0,
+      "mintedAt": "2026-10-23T02:17:53+00:00",
+      "prompt": "STYLE LOCK from the attached stills: match the live History of Science long thumbnail's premium 3D cartoon painting, warm golden Flemish laboratory/library light, and rounded stylised materials. Use the attached thumbnail ONLY for paint style, lighting, and depth \u2014 IGNORE and DO NOT COPY any text or letters on it. Match the Explorer reference exactly (round thin gold glasses, teal long coat, tan waistcoat, brown bow tie, messy brown hair, satchel), exactly one Explorer.\nLANDSCAPE 16:9 wide single still frame.\nHero object on the right two-thirds (x=520..1240): a grand 17th-century polished brass balance scale on a heavy oak table; the right-hand pan hangs low, weighed down by a massive uprooted willow tree with thick wooden trunk, roots, and bright green leaves, while the other pan holds a smaller clay pot of dark dried soil lifted high in the air, the brass beam tilted dramatically toward the heavy willow. All brass pans, beams, and weights are completely smooth and blank with ZERO markings or numbers.\nLower left (x=80..340, y=340..720): the Explorer at about half the frame height, standing in the lower-left corner leaning in with wide curious eyes behind his gold glasses looking at the tilted brass scale.\nUpper left (x=40..510, y=20..335): warm shaded dark-wood bookshelves only, completely empty and uncluttered with ZERO text or letters so title lettering can be added in post.\nBottom-right corner: empty dark tabletop shadow only.\nHARD REJECT: any text, letters, words, numbers (no 169 lb or 200 lb), symbols, engravings on weights or pans, flat 2D shapes, split panels, photoreal, orange robot."
+    }
+  },
+  "account": "benoats@googlemail.com",
+  "creditsStart": 20830,
+  "creditsEnd": 20830,
+  "totalCreditsUsed": 0
+}

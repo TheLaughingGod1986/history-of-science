@@ -1,0 +1,66 @@
+{
+  "file": "02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/02_Voiceover/hos_010_part05_the_crater_and_the_birds_v01.mp3",
+  "part": 5,
+  "fails": [
+    "replace at ~1:50.72: script 'giants didn't that's still a mystery scientists are' / heard 'giants didn't that's to the mystery scientists are' — listen, then regenerate that sentence alone if real"
+  ],
+  "warns": [
+    "pace 138 wpm (< 145); expect a long film — see STUDIO_PLAYBOOK.md §4 speed",
+    "replace at ~0:37.92: script 'enormous crater about kilometres wide it's called' / heard 'enormous crater about kilometers wide it's called' — sounds alike (likely the transcriber); listen"
+  ],
+  "duration_s": 146.16,
+  "duration": "2:26.16",
+  "mean_db": -24.6,
+  "peak_db": -4.3,
+  "pauses_over_1s": [
+    [
+      25.38,
+      1.14
+    ],
+    [
+      31.01,
+      1.08
+    ],
+    [
+      38.55,
+      1.1
+    ],
+    [
+      52.64,
+      1.22
+    ],
+    [
+      69.21,
+      1.15
+    ],
+    [
+      81.04,
+      1.15
+    ],
+    [
+      90.71,
+      1.09
+    ]
+  ],
+  "asr": "faster-whisper small.en",
+  "script_words": 323,
+  "heard_words": 323,
+  "wpm": 138,
+  "word_diffs": [
+    {
+      "at": "0:37.92",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "enormous crater about kilometres wide it's called",
+      "heard": "enormous crater about kilometers wide it's called"
+    },
+    {
+      "at": "1:50.72",
+      "op": "replace",
+      "sounds_alike": false,
+      "script": "giants didn't that's still a mystery scientists are",
+      "heard": "giants didn't that's to the mystery scientists are"
+    }
+  ],
+  "verdict": "FAIL"
+}

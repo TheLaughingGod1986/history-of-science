@@ -1,0 +1,278 @@
+{
+ "pulled": "2026-10-19",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "mitosis meiosis chromosomes",
+  "thomas hunt morgan fruit fly genetics"
+ ],
+ "autocomplete": {
+  "mitosis meiosis chromosomes": [],
+  "thomas hunt morgan fruit fly genetics": [
+   "thomas hunt morgan experiment fruit fly",
+   "thomas hunt morgan experiment fruit fly in hindi",
+   "thomas hunt morgan experiment fruit fly class 12",
+   "thomas hunt morgan experiment fruit fly malayalam"
+  ]
+ },
+ "sharedTitleWords": [
+  "phases of"
+ ],
+ "neighbours": [
+  {
+   "id": "Mehz7tCxjSE",
+   "title": "How Mendel's pea plants helped us understand genetics - Hortensia Jiménez Díaz",
+   "channel": "TED-Ed",
+   "views": "5,026,697 views",
+   "age": "13 yr ago",
+   "length": "3:07",
+   "tier": 1,
+   "viewCount": 5026697,
+   "foundBy": "ted-ed thomas hunt morgan fruit fly genetics",
+   "onTopic": true
+  },
+  {
+   "id": "f-ldPgEfAHI",
+   "title": "Mitosis: The Amazing Cell Process that Uses Division to Multiply! (Older Video 2016 )",
+   "channel": "Amoeba Sisters",
+   "views": "15,323,785 views",
+   "age": "10 yr ago",
+   "length": "8:27",
+   "tier": 2,
+   "viewCount": 15323785,
+   "foundBy": "ted-ed mitosis meiosis chromosomes",
+   "onTopic": true
+  },
+  {
+   "id": "zrKdz93WlVk",
+   "title": "Mitosis vs. Meiosis: Side by Side Comparison",
+   "channel": "Amoeba Sisters",
+   "views": "9,127,312 views",
+   "age": "8 yr ago",
+   "length": "6:22",
+   "tier": 2,
+   "viewCount": 9127312,
+   "foundBy": "mitosis meiosis chromosomes",
+   "onTopic": true
+  },
+  {
+   "id": "L0k-enzoeOM",
+   "title": "Mitosis: Splitting Up is Complicated - Crash Course Biology #12",
+   "channel": "CrashCourse",
+   "views": "7,198,027 views",
+   "age": "14 yr ago",
+   "length": "10:48",
+   "tier": 2,
+   "viewCount": 7198027,
+   "foundBy": "mitosis meiosis chromosomes ted",
+   "onTopic": true
+  },
+  {
+   "id": "IQJ4DBkCnco",
+   "title": "Comparing mitosis and meiosis | Cells | MCAT | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "1,946,495 views",
+   "age": "11 yr ago",
+   "length": "5:50",
+   "tier": 2,
+   "viewCount": 1946495,
+   "foundBy": "mitosis meiosis chromosomes ted",
+   "onTopic": true
+  },
+  {
+   "id": "ijLc52LmFQg",
+   "title": "Phases of Meiosis",
+   "channel": "Khan Academy",
+   "views": "1,894,585 views",
+   "age": "17 yr ago",
+   "length": "27:23",
+   "tier": 2,
+   "viewCount": 1894585,
+   "foundBy": "khan academy mitosis meiosis chromosomes",
+   "onTopic": true
+  },
+  {
+   "id": "LLKX_4DHE3I",
+   "title": "Phases of Mitosis",
+   "channel": "Khan Academy",
+   "views": "1,688,326 views",
+   "age": "17 yr ago",
+   "length": "20:42",
+   "tier": 2,
+   "viewCount": 1688326,
+   "foundBy": "khan academy mitosis meiosis chromosomes",
+   "onTopic": true
+  },
+  {
+   "id": "s9HPNwXd9fk",
+   "title": "Chromosomes, Chromatids, Chromatin, etc.",
+   "channel": "Khan Academy",
+   "views": "1,642,090 views",
+   "age": "17 yr ago",
+   "length": "18:23",
+   "tier": 2,
+   "viewCount": 1642090,
+   "foundBy": "khan academy mitosis meiosis chromosomes",
+   "onTopic": true
+  },
+  {
+   "id": "kaSIjIzAtYA",
+   "title": "Mitosis, Meiosis and Sexual Reproduction",
+   "channel": "Khan Academy",
+   "views": "1,207,150 views",
+   "age": "17 yr ago",
+   "length": "18:24",
+   "tier": 2,
+   "viewCount": 1207150,
+   "foundBy": "mitosis meiosis chromosomes",
+   "onTopic": true
+  },
+  {
+   "id": "5pvwIsDE6eg",
+   "title": "Meiosis | Genetics | Biology | FuseSchool",
+   "channel": "FuseSchool - Global Education",
+   "views": "427,734 views",
+   "age": "7 yr ago",
+   "length": "4:55",
+   "tier": 2,
+   "viewCount": 427734,
+   "foundBy": "mitosis meiosis chromosomes ted",
+   "onTopic": true
+  },
+  {
+   "id": "22V73bs4FAo",
+   "title": "What is Mitosis? | Genetics | Biology | FuseSchool",
+   "channel": "FuseSchool - Global Education",
+   "views": "414,064 views",
+   "age": "10 yr ago",
+   "length": "3:36",
+   "tier": 2,
+   "viewCount": 414064,
+   "foundBy": "ted-ed mitosis meiosis chromosomes",
+   "onTopic": true
+  },
+  {
+   "id": "lzhp5NuXo-k",
+   "title": "Mutations | Genetics | Biology | FuseSchool",
+   "channel": "FuseSchool - Global Education",
+   "views": "400,152 views",
+   "age": "6 yr ago",
+   "length": "5:00",
+   "tier": 2,
+   "viewCount": 400152,
+   "foundBy": "khan academy thomas hunt morgan fruit fly genetics",
+   "onTopic": true
+  },
+  {
+   "id": "kZIYkYNpnP0",
+   "title": "GM Crops | Genetics | Biology | FuseSchool",
+   "channel": "FuseSchool - Global Education",
+   "views": "359,541 views",
+   "age": "5 yr ago",
+   "length": "4:30",
+   "tier": 2,
+   "viewCount": 359541,
+   "foundBy": "khan academy thomas hunt morgan fruit fly genetics",
+   "onTopic": true
+  },
+  {
+   "id": "ShEzlXZPpPM",
+   "title": "Mitosis (UPDATED 2026)",
+   "channel": "Amoeba Sisters",
+   "views": "339,022 views",
+   "age": "2 mo ago",
+   "length": "8:42",
+   "tier": 2,
+   "viewCount": 339022,
+   "foundBy": "mitosis meiosis chromosomes",
+   "onTopic": true
+  },
+  {
+   "id": "UsovRxQAUZ4",
+   "title": "GCSE Biology - Mitosis | Chromosomes | Cell Division | Cytokinesis (2027/28 exams)",
+   "channel": "Cognito",
+   "views": "301,773 views",
+   "age": "1 yr ago",
+   "length": "5:28",
+   "tier": 2,
+   "viewCount": 301773,
+   "foundBy": "mitosis meiosis chromosomes",
+   "onTopic": true
+  },
+  {
+   "id": "Al7FueXTCKs",
+   "title": "Chromosome Numbers Before and After Mitosis and Meiosis (UPDATED)",
+   "channel": "Amoeba Sisters",
+   "views": "254,237 views",
+   "age": "10 mo ago",
+   "length": "7:58",
+   "tier": 2,
+   "viewCount": 254237,
+   "foundBy": "mitosis meiosis chromosomes",
+   "onTopic": true
+  },
+  {
+   "id": "huDDaj0PjLU",
+   "title": "Thomas Hunt Morgan and fruit flies",
+   "channel": "Khan Academy",
+   "views": "240,127 views",
+   "age": "10 yr ago",
+   "length": "10:39",
+   "tier": 2,
+   "viewCount": 240127,
+   "foundBy": "thomas hunt morgan fruit fly genetics",
+   "onTopic": true
+  },
+  {
+   "id": "nRAwve3OVp4",
+   "title": "GCSE Biology - Meiosis (2027/28 exams)",
+   "channel": "Cognito",
+   "views": "193,630 views",
+   "age": "1 yr ago",
+   "length": "5:33",
+   "tier": 2,
+   "viewCount": 193630,
+   "foundBy": "mitosis meiosis chromosomes",
+   "onTopic": true
+  },
+  {
+   "id": "ZjWGadPO_yc",
+   "title": "What Fruit Flies Taught Us About Human Biology",
+   "channel": "SciShow",
+   "views": "132,182 views",
+   "age": "5 yr ago",
+   "length": "5:46",
+   "tier": 2,
+   "viewCount": 132182,
+   "foundBy": "thomas hunt morgan fruit fly genetics",
+   "onTopic": true
+  },
+  {
+   "id": "G7PydoX_WNQ",
+   "title": "How you can make a fruit fly eat veggies | DIY Neuroscience, a TED series",
+   "channel": "TED",
+   "views": "79,777 views",
+   "age": "8 yr ago",
+   "length": "4:30",
+   "tier": 1,
+   "viewCount": 79777,
+   "foundBy": "ted-ed thomas hunt morgan fruit fly genetics",
+   "onTopic": true
+  },
+  {
+   "id": "6Au1o25WHd0",
+   "title": "A-Level Biology - Mitosis - Stages of Mitosis & Cytokinesis | Cell Division & Cancer (2027/28 exams)",
+   "channel": "Cognito",
+   "views": "51,483 views",
+   "age": "10 mo ago",
+   "length": "6:44",
+   "tier": 2,
+   "viewCount": 51483,
+   "foundBy": "mitosis meiosis chromosomes",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 9,
+ "gate": "PASS",
+ "hasTed": true,
+ "failedQueries": []
+}

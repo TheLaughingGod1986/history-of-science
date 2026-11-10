@@ -1,0 +1,89 @@
+{
+  "stem": "hos_010_part04_too_much_iridium_v01",
+  "voice": "Ben Orbit Narrator",
+  "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+  "model_id": "eleven_v3",
+  "settings": {
+    "stability": 0.34,
+    "similarity_boost": 0.78,
+    "style": 0.42,
+    "speed": 1.04,
+    "use_speaker_boost": true
+  },
+  "orders": [
+    "J0113"
+  ],
+  "retake_of": null,
+  "chapters": [
+    {
+      "title": "take",
+      "chars": 1557,
+      "duration_s": 103.84
+    }
+  ],
+  "gap_s": 0.7,
+  "spoken_chars": 1557,
+  "words": 274,
+  "duration_s": 103.84,
+  "loudness": {
+    "lufs_integrated": -18.9,
+    "mean_volume_db": -22.2,
+    "max_volume_db": -3.7
+  },
+  "sha256_mp3": "245df0013294e64016b66456d838d2538687158d8064f0dbc570587ac30cda40",
+  "scribe": {
+    "transcript": "In the Gubbio clay, there was about 30 times more iridium than in the rock around it, far too much for a slow, gentle rain of space dust. At first, they wondered whether it was a strange local accident, so they tested the same boundary in a completely different place, a white sea cliff in Denmark. The iridium spike was there, too, even bigger. Later, it turned up in New Zealand, and then all around the world. Something had sprinkled iridium over the whole planet all at once. Luis Alvarez worked through the possibilities one by one. What could spread a rare metal over the whole world? First, he wondered about an exploding star nearby. A supernova should leave behind a rare kind of plutonium, so they tested the clay for it. For a few exciting days, it looked as if they'd found it, but when they checked again, it wasn't there. The supernova idea was wrong. In the end, only one idea fitted every clue. A giant asteroid about 10 kilometers across had struck the Earth. An asteroid that size would hit with unimaginable force. It would throw dust high into the sky, spreading the asteroid's iridium around the globe. The dust would block out sunlight for months or even years. Plants would stop growing, and without plants, the animals that ate them, and the animals that ate those animals would starve. In June 1980, the four scientists published their idea in the journal Science. It was bold, and a lot of other scientists didn't believe it because if an asteroid that big had really hit the Earth, where was the hole?",
+    "script_words": 274,
+    "scribe_words": 273,
+    "match_rate_pct": 98.18,
+    "exact_match": false,
+    "mismatches": [
+      {
+        "op": "replace",
+        "script": [
+          "thirty"
+        ],
+        "scribe": [
+          "30"
+        ]
+      },
+      {
+        "op": "replace",
+        "script": [
+          "ten",
+          "kilometres"
+        ],
+        "scribe": [
+          "10",
+          "kilometers"
+        ]
+      },
+      {
+        "op": "replace",
+        "script": [
+          "nineteen",
+          "eighty"
+        ],
+        "scribe": [
+          "1980"
+        ]
+      }
+    ]
+  },
+  "vo_check": "PASS",
+  "credits": {
+    "before": {
+      "used": 195965,
+      "limit": 209536,
+      "remaining": 13571
+    },
+    "after": {
+      "used": 195965,
+      "limit": 209536,
+      "remaining": 13571
+    },
+    "counter_delta": 0
+  },
+  "text": "In the Gubbio clay, there was about thirty times more iridium than in the rock around it. Far too much for a slow, gentle rain of space dust.\n\nAt first, they wondered whether it was a strange local accident. So they tested the same boundary in a completely different place, a white sea cliff in Denmark. The iridium spike was there too, even bigger. Later it turned up in New Zealand, and then all around the world.\n\nSomething had sprinkled iridium over the whole planet, all at once.\n\nLuis Alvarez worked through the possibilities, one by one. What could spread a rare metal over the whole world?\n\nFirst, he wondered about an exploding star nearby. A supernova should leave behind a rare kind of plutonium. So they tested the clay for it. For a few exciting days, it looked as if they'd found it. But when they checked again, it wasn't there. The supernova idea was wrong.\n\nIn the end, only one idea fitted every clue. A giant asteroid, about ten kilometres across, had struck the Earth.\n\nAn asteroid that size would hit with unimaginable force. It would throw dust high into the sky, spreading the asteroid's iridium around the globe. The dust would block out sunlight, for months or even years. Plants would stop growing. And without plants, the animals that ate them, and the animals that ate those animals, would starve.\n\nIn June nineteen eighty, the four scientists published their idea in the journal Science. It was bold. And a lot of other scientists didn't believe it.\n\nBecause if an asteroid that big had really hit the Earth, where was the hole?",
+  "made_at": "2026-10-10T21:15:13+0100"
+}

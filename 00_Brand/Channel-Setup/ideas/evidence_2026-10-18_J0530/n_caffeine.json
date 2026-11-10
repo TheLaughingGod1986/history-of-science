@@ -1,0 +1,132 @@
+{
+ "pulled": "2026-10-18",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "how caffeine works coffee",
+  "friedlieb runge"
+ ],
+ "autocomplete": {
+  "how caffeine works coffee": [],
+  "friedlieb runge": [
+   "friedlieb ferdinand runge"
+  ]
+ },
+ "sharedTitleWords": [
+  "know about",
+  "about coffee"
+ ],
+ "neighbours": [
+  {
+   "id": "foLf5Bi9qXs",
+   "title": "How does caffeine keep us awake? - Hanan Qasim",
+   "channel": "TED-Ed",
+   "views": "5,883,062 views",
+   "age": "9 yr ago",
+   "length": "5:15",
+   "tier": 1,
+   "viewCount": 5883062,
+   "foundBy": "how caffeine works coffee",
+   "onTopic": true
+  },
+  {
+   "id": "xQ156y4TtJs",
+   "title": "How humanity got hooked on coffee - Jonathan Morris",
+   "channel": "TED-Ed",
+   "views": "3,285,223 views",
+   "age": "2 yr ago",
+   "length": "5:35",
+   "tier": 1,
+   "viewCount": 3285223,
+   "foundBy": "ted-ed how caffeine works coffee",
+   "onTopic": true
+  },
+  {
+   "id": "JaQNy0Ef4YY",
+   "title": "What you didn't know about coffee: Asher Yaron at TEDxUbud",
+   "channel": "TEDx Talks",
+   "views": "2,873,393 views",
+   "age": "14 yr ago",
+   "length": "11:40",
+   "tier": 1,
+   "viewCount": 2873393,
+   "foundBy": "ted-ed how caffeine works coffee",
+   "onTopic": true
+  },
+  {
+   "id": "N8meCjVsJWI",
+   "title": "Everything you've ever wanted to know about coffee | Chandler Graf | TEDxACU",
+   "channel": "TEDx Talks",
+   "views": "2,595,305 views",
+   "age": "9 yr ago",
+   "length": "14:37",
+   "tier": 1,
+   "viewCount": 2595305,
+   "foundBy": "ted-ed how caffeine works coffee",
+   "onTopic": true
+  },
+  {
+   "id": "M0VWroX0gZA",
+   "title": "The life cycle of a cup of coffee - A.J. Jacobs",
+   "channel": "TED-Ed",
+   "views": "1,643,801 views",
+   "age": "5 yr ago",
+   "length": "5:05",
+   "tier": 1,
+   "viewCount": 1643801,
+   "foundBy": "ted-ed how caffeine works coffee",
+   "onTopic": true
+  },
+  {
+   "id": "KQ9FfzMKBNc",
+   "title": "How caffeine and alcohol affect your sleep | Sleeping with Science, a TED series",
+   "channel": "TED",
+   "views": "873,478 views",
+   "age": "6 yr ago",
+   "length": "4:55",
+   "tier": 1,
+   "viewCount": 873478,
+   "foundBy": "ted-ed how caffeine works coffee",
+   "onTopic": true
+  },
+  {
+   "id": "0tQjJSqqZvs",
+   "title": "How coffee got quicker | Moments of Vision 2 - Jessica Oreck",
+   "channel": "TED-Ed",
+   "views": "466,705 views",
+   "age": "10 yr ago",
+   "length": "1:48",
+   "tier": 1,
+   "viewCount": 466705,
+   "foundBy": "ted-ed how caffeine works coffee",
+   "onTopic": true
+  },
+  {
+   "id": "l_nhDm9nFiE",
+   "title": "Innovation needs connection | Joe Runge | TEDxOmaha",
+   "channel": "TEDx Talks",
+   "views": "26,486 views",
+   "age": "1 yr ago",
+   "length": "9:09",
+   "tier": 1,
+   "viewCount": 26486,
+   "foundBy": "friedlieb runge ted",
+   "onTopic": true
+  },
+  {
+   "id": "ds3YgzvkdSc",
+   "title": "The surprise of life: Clint! Runge at TEDxLincoln",
+   "channel": "TEDx Talks",
+   "views": "4,963 views",
+   "age": "12 yr ago",
+   "length": "13:33",
+   "tier": 1,
+   "viewCount": 4963,
+   "foundBy": "friedlieb runge ted",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 5,
+ "gate": "PASS",
+ "hasTed": true,
+ "failedQueries": []
+}

@@ -1,0 +1,86 @@
+{
+  "film": "002",
+  "video": "AL_-qlWko_g",
+  "job": "J0374",
+  "replaces": "J0255 v01 (hos_002_thumb_B_missing_element_v01.jpg)",
+  "variant": "B v02",
+  "maker": "gemini",
+  "hook": "THE MISSING ELEMENT",
+  "punch": "MISSING",
+  "jpg": "Selected/hos_002_thumb_B_missing_element_v02.jpg",
+  "sha256": "1c48fffc34c5fc867044d3dba2bb0ca78602684575bd3be132d89187b110bb1c",
+  "bytes": 206904,
+  "plates": [
+    "_stills_v05/hos_002_empty_slot_hero_v01.jpg (1376x768 Flow Nano Banana plate, 1.25x hero push-in crop [272, 72, 1296, 648])",
+    "Selected/hos_002_thumb_A_gallium_live_v02.png (Explorer lower-left at 55.8% frame height)"
+  ],
+  "method": "existing_plates_only_hero_pushin_plus_explorer_and_house_GeorgiaBold_flourishes",
+  "spend": 0,
+  "heroBox": [
+    634,
+    222,
+    1018,
+    556
+  ],
+  "explorer": {
+    "source": "hos_002_thumb_A_gallium_live_v02.png",
+    "box": [
+      0,
+      323,
+      257,
+      720
+    ],
+    "height_px": 397,
+    "height_frac": 0.551
+  },
+  "lettering": [
+    {
+      "word": "THE",
+      "kind": "cream",
+      "size": 70,
+      "box": [
+        42,
+        34,
+        190,
+        98
+      ]
+    },
+    {
+      "word": "MISSING",
+      "kind": "gold",
+      "size": 112,
+      "box": [
+        42,
+        101,
+        523,
+        203
+      ]
+    },
+    {
+      "word": "ELEMENT",
+      "kind": "cream",
+      "size": 94,
+      "box": [
+        42,
+        206,
+        484,
+        287
+      ]
+    }
+  ],
+  "clearOfHero": true,
+  "clearOfExplorer": true,
+  "clearOfBadge": true,
+  "scores": {
+    "HOOK": "PASS \u2014 'THE MISSING ELEMENT' (3 words, punch word 'MISSING' in gold) names the concrete discovery object/gap without repeating the video title ('How Did We Discover the Periodic Table?').",
+    "BAND": "PASS \u2014 Upper-left lettering band (x=42..523, y=18..309 with gold flourishes) sits completely left of the glowing hero slot (x=634..1018), above the Explorer's hair (y=323), and clear of the bottom-right duration badge.",
+    "PHONE": "PASS \u2014 Checked on 168x94 preview sheet and side-by-side strip: 'THE MISSING ELEMENT', the glowing periodic-table slot (384x334 px), and the Explorer's face/glasses (55.8% height) all read at a glance at 168x94."
+  },
+  "previews": [
+    "Selected/hos_002_thumb_B_missing_element_v02_preview.jpg",
+    "Selected/hos_002_thumb_B_missing_element_v02_style_sheet.jpg",
+    "Selected/hos_002_thumb_A_vs_B_missing_element_v02_phone_168.jpg"
+  ],
+  "studio": false,
+  "status": "Test & Compare B v02 candidate for 002 (fixes J0255 Explorer + hero size notes from existing 002 plates, \u00a30). Parked for Chief: thumb B review. No Studio until OK."
+}

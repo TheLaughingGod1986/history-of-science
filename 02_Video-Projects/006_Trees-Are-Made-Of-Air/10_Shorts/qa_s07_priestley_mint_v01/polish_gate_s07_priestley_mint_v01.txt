@@ -1,0 +1,9 @@
+s01_0     1.6s 11_candle_tall_t1.mp4        ok
+s02_flame     4.4s 08_candles_out_t1.mp4        ok
+s03_behind     7.0s 07_priestley_t1.mp4          ok
+s04_He    10.7s 10_mint_jar_t1.mp4           ok
+s05_Ten    14.9s 06_collect_blaze_t3.mp4      ok
+s06_It    17.7s 15_quill_vegetable_t1.mp4    WARN low detail: edge density 0.0437 < film p5 0.0459
+s07_Something    19.8s 14_trees_breathe_t1.mp4      ok
+s08_loop    22.2s loop_end_11_candle_tall_t1.m ok
+polish gate PASS: 0 of 8 rows failed, 1 to look at -> 02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/qa_s07_priestley_mint_v01/polish_gate_s07_priestley_mint_v01.json

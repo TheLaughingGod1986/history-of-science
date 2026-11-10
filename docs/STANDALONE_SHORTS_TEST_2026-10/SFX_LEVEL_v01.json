@@ -1,0 +1,111 @@
+{
+  "job": "J0171",
+  "check": "sfx_kit.py level",
+  "shorts": {
+    "s1_herschel_infrared": {
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/shorts_v01/hos_sa_s1_herschel_infrared_v01.mp4",
+      "sha256": "e00f20b39383da192187e080b1307cd1e61b9f4fe68c3052c0f0fe66e3372f1c",
+      "air_date": "2026-10-19",
+      "cover": "docs/STANDALONE_SHORTS_TEST_2026-10/covers_j0209_v01/hos_sa_s1_cover_v01.png",
+      "stems": {
+        "vo": "docs/STANDALONE_SHORTS_TEST_2026-10/_work_shorts_v01/s1_herschel_infrared/stems/vo.wav",
+        "bed": "docs/STANDALONE_SHORTS_TEST_2026-10/_work_shorts_v01/s1_herschel_infrared/stems/bed.wav",
+        "sfx": "docs/STANDALONE_SHORTS_TEST_2026-10/_work_shorts_v01/s1_herschel_infrared/stems/sfx.wav"
+      },
+      "level_exit": 0,
+      "level_output": "SFX level PASS: VO -20.8 LUFS, SFX -34.9 LUFS, 1 hits"
+    },
+    "s2_brand_phosphorus": {
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/shorts_v01/hos_sa_s2_brand_phosphorus_v01.mp4",
+      "sha256": "66462ea906155fb15269a8c471e2fbc3021dd76132d442219295f553ad49eebb",
+      "air_date": "2026-10-21",
+      "cover": "docs/STANDALONE_SHORTS_TEST_2026-10/covers_j0209_v01/hos_sa_s2_cover_v01.png",
+      "stems": {
+        "vo": "docs/STANDALONE_SHORTS_TEST_2026-10/_work_shorts_v01/s2_brand_phosphorus/stems/vo.wav",
+        "bed": "docs/STANDALONE_SHORTS_TEST_2026-10/_work_shorts_v01/s2_brand_phosphorus/stems/bed.wav",
+        "sfx": "docs/STANDALONE_SHORTS_TEST_2026-10/_work_shorts_v01/s2_brand_phosphorus/stems/sfx.wav"
+      },
+      "level_exit": 0,
+      "level_output": "SFX level PASS: VO -20.0 LUFS, SFX -34.9 LUFS, 1 hits"
+    },
+    "s3_snow_pump": {
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/shorts_v01/hos_sa_s3_snow_pump_v02.mp4",
+      "sha256": "634abd5ef8a0d031c0926b049e612efc56e41c22cdd96a17e3cf76ba2508ec1b",
+      "air_date": "2026-10-26",
+      "cover": "docs/STANDALONE_SHORTS_TEST_2026-10/covers_j0209_v01/hos_sa_s3_cover_v01.png",
+      "stems": {
+        "vo": "docs/STANDALONE_SHORTS_TEST_2026-10/_work_shorts_v01/s3_snow_pump_v02/stems/vo.wav",
+        "bed": "docs/STANDALONE_SHORTS_TEST_2026-10/_work_shorts_v01/s3_snow_pump_v02/stems/bed.wav",
+        "sfx": "docs/STANDALONE_SHORTS_TEST_2026-10/_work_shorts_v01/s3_snow_pump_v02/stems/sfx.wav"
+      },
+      "level_exit": 0,
+      "level_output": "SFX level PASS: VO -19.7 LUFS, SFX -34.9 LUFS, 1 hits"
+    },
+    "s4_curie_notebooks": {
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/shorts_v01/hos_sa_s4_curie_notebooks_v04.mp4",
+      "sha256": "13a3bf5e07cb65014f5aa607c0a0e47be02753e82f4e7fb96f7830456d6fd3eb",
+      "air_date": "2026-10-28",
+      "cover": "docs/STANDALONE_SHORTS_TEST_2026-10/covers_j0209_v01/hos_sa_s4_cover_v01.png",
+      "stems": {
+        "vo": "docs/STANDALONE_SHORTS_TEST_2026-10/_work_shorts_v01/s4_curie_notebooks_v02/stems/vo.wav",
+        "bed": "docs/STANDALONE_SHORTS_TEST_2026-10/_work_shorts_v01/s4_curie_notebooks_v02/stems/bed.wav",
+        "sfx": "docs/STANDALONE_SHORTS_TEST_2026-10/_work_shorts_v01/s4_curie_notebooks_v02/stems/sfx.wav"
+      },
+      "level_exit": 0,
+      "level_output": "SFX level PASS: VO -19.6 LUFS, SFX -34.9 LUFS, 1 hits"
+    },
+    "s5_penzias_pigeons": {
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/shorts_v01/hos_sa_s5_penzias_pigeons_v01.mp4",
+      "sha256": "77cc187a07947e92f2510fb157efd1cbb8bee9b9cd3476c5d72ea1e42a5831e1",
+      "air_date": "2026-11-02",
+      "cover": "docs/STANDALONE_SHORTS_TEST_2026-10/covers_j0209_v01/hos_sa_s5_cover_v01.png",
+      "stems": {
+        "vo": "docs/STANDALONE_SHORTS_TEST_2026-10/_work_shorts_v01/s5_penzias_pigeons/stems/vo.wav",
+        "bed": "docs/STANDALONE_SHORTS_TEST_2026-10/_work_shorts_v01/s5_penzias_pigeons/stems/bed.wav",
+        "sfx": "docs/STANDALONE_SHORTS_TEST_2026-10/_work_shorts_v01/s5_penzias_pigeons/stems/sfx.wav"
+      },
+      "level_exit": 0,
+      "level_output": "SFX level PASS: VO -19.3 LUFS, SFX -38.9 LUFS, 1 hits"
+    },
+    "s6_fleming_mould": {
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/shorts_v01/hos_sa_s6_fleming_mould_v01.mp4",
+      "sha256": "fd5bf3469734c1e4a081ac85baa2a3e7ff5a166fd617de79650db35d6a3b6a03",
+      "air_date": "2026-11-04",
+      "cover": "docs/STANDALONE_SHORTS_TEST_2026-10/covers_j0209_v01/hos_sa_s6_cover_v01.png",
+      "stems": {
+        "vo": "docs/STANDALONE_SHORTS_TEST_2026-10/_work_shorts_v01/s6_fleming_mould/stems/vo.wav",
+        "bed": "docs/STANDALONE_SHORTS_TEST_2026-10/_work_shorts_v01/s6_fleming_mould/stems/bed.wav",
+        "sfx": "docs/STANDALONE_SHORTS_TEST_2026-10/_work_shorts_v01/s6_fleming_mould/stems/sfx.wav"
+      },
+      "level_exit": 0,
+      "level_output": "SFX level PASS: VO -19.9 LUFS, SFX -34.9 LUFS, 1 hits"
+    },
+    "s7_priestley_mint": {
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/shorts_v01/hos_sa_s7_priestley_mint_v02.mp4",
+      "sha256": "6857ac9374bc582c67d642f365cc0a50861c5fb02ab26f151c62936c815dc049",
+      "air_date": "2026-11-09",
+      "cover": "docs/STANDALONE_SHORTS_TEST_2026-10/covers_j0209_v01/hos_sa_s7_cover_v01.png",
+      "stems": {
+        "vo": "docs/STANDALONE_SHORTS_TEST_2026-10/_work_shorts_v01/s7_priestley_mint_v02/stems/vo.wav",
+        "bed": "docs/STANDALONE_SHORTS_TEST_2026-10/_work_shorts_v01/s7_priestley_mint_v02/stems/bed.wav",
+        "sfx": "docs/STANDALONE_SHORTS_TEST_2026-10/_work_shorts_v01/s7_priestley_mint_v02/stems/sfx.wav"
+      },
+      "level_exit": 0,
+      "level_output": "SFX level PASS: VO -19.2 LUFS, SFX -34.9 LUFS, 1 hits"
+    },
+    "s8_hales_blood": {
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/shorts_v01/hos_sa_s8_hales_blood_v01.mp4",
+      "sha256": "56ea2256cee60ed28d1f8f1e3abb344f65a4557fdaa0edb3e53e8499286b579a",
+      "air_date": "2026-11-11",
+      "cover": "docs/STANDALONE_SHORTS_TEST_2026-10/covers_j0209_v01/hos_sa_s8_cover_v01.png",
+      "stems": {
+        "vo": "docs/STANDALONE_SHORTS_TEST_2026-10/_work_shorts_v01/s8_hales_blood/stems/vo.wav",
+        "bed": "docs/STANDALONE_SHORTS_TEST_2026-10/_work_shorts_v01/s8_hales_blood/stems/bed.wav",
+        "sfx": "docs/STANDALONE_SHORTS_TEST_2026-10/_work_shorts_v01/s8_hales_blood/stems/sfx.wav"
+      },
+      "level_exit": 0,
+      "level_output": "SFX level PASS: VO -20.0 LUFS, SFX -34.9 LUFS, 1 hits"
+    }
+  },
+  "all_pass": true
+}

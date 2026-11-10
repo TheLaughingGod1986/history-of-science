@@ -1,0 +1,123 @@
+{
+  "id": "s05_dalton",
+  "job": "J0298",
+  "test": "B (search-titled)",
+  "air_date_draft": "2026-11-10",
+  "file": "10_Shorts/hos_004_s05_dalton_v01.mp4",
+  "sha256": "623c74f8d6068fe0a7cf72e186f21d22855b05076033fb79f0865ebd6b583a79",
+  "duration_s": 23.967,
+  "vo_source": "02_Voiceover/05_Master/hos_004_part02_vo_v01.mp3",
+  "vo_window_raw_s": [
+    0.0,
+    24.3
+  ],
+  "vo_s": 23.386,
+  "words": 57,
+  "max_pause_s": 0.45,
+  "atempo": 1.03,
+  "bed": "hos004-part02-temp_score_bed_v01.mp3",
+  "bed_gain_db": -22.7,
+  "hook": "EACH ATOM",
+  "hook_layer": {
+    "font_size": 243,
+    "cap_px": 173,
+    "cap_pct": 9.01,
+    "lines": 2,
+    "block_pct": [
+      39.5,
+      60.4
+    ],
+    "widest_pct": 72.5
+  },
+  "who_card": {
+    "name": "JOHN DALTON",
+    "line2": "Manchester, 1808",
+    "line1_px": 72,
+    "line1_pct_of_band": 12.0,
+    "band": [
+      656,
+      1264
+    ],
+    "in_s": 3.3,
+    "out_s": 6.9,
+    "fade_s": 0.35
+  },
+  "title_on_screen": "What's Really Inside an Atom?",
+  "youtube_title_draft": "What Is Dalton's Atomic Theory?",
+  "plan": [
+    {
+      "t0": 0.0,
+      "t1": 5.656,
+      "plate": "04_Generated-Clips/part02/raw/v01/01_dalton_schoolroom_v01.mp4",
+      "in_s": 0.4,
+      "crop_x": 656,
+      "lands_on": 0
+    },
+    {
+      "t0": 5.656,
+      "t1": 12.258,
+      "plate": "04_Generated-Clips/part02/raw/v01/02_atomic_theory_v01.mp4",
+      "in_s": 0.4,
+      "crop_x": 656,
+      "lands_on": "His"
+    },
+    {
+      "t0": 12.258,
+      "t1": 15.846,
+      "plate": "04_Generated-Clips/part02/raw/v01/03_weights_line_v01.mp4",
+      "in_s": 0.3,
+      "crop_x": 656,
+      "lands_on": "Hydrogen"
+    },
+    {
+      "t0": 15.846,
+      "t1": 18.567,
+      "plate": "04_Generated-Clips/part02/raw/v01/04_gold_heavier_v01.mp4",
+      "in_s": 0.4,
+      "crop_x": 656,
+      "lands_on": "Gold"
+    },
+    {
+      "t0": 18.567,
+      "t1": 23.936,
+      "plate": "04_Generated-Clips/part02/raw/v01/01_dalton_schoolroom_v01.mp4",
+      "in_s": 0.4,
+      "crop_x": 656,
+      "lands_on": "loop"
+    }
+  ],
+  "captions": 19,
+  "caption_check": {
+    "ok": true,
+    "changes": 18,
+    "ratio": 1.0
+  },
+  "gate": {
+    "exit": 0,
+    "output": "PASS  hos_004_s05_dalton_v01.mp4  dur=23.97s  audio=-22.3dB  motion=10.36  dhash=86db1e1e0e060e19\n   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_004_s05_dalton_v01_open_sheet.jpg"
+  },
+  "vo_check": {
+    "exit": 0,
+    "output": "PASS  hos_004_s05_dalton_v01.mp4  0:23.97  mean -22.3 dB  peak -3.8 dB  148 wpm\n   first minute: title_question 18.72s"
+  },
+  "freezedetect_starts": [],
+  "stills": [
+    "10_Shorts/_work_s05_dalton_v01/hos_004_s05_dalton_v01_t000.0.jpg",
+    "10_Shorts/_work_s05_dalton_v01/hos_004_s05_dalton_v01_t011.5.jpg",
+    "10_Shorts/_work_s05_dalton_v01/hos_004_s05_dalton_v01_t015.8.jpg",
+    "10_Shorts/_work_s05_dalton_v01/hos_004_s05_dalton_v01_t023.0.jpg"
+  ],
+  "autocomplete_check": {
+    "date": "2026-10-15",
+    "source": "suggestqueries client=youtube ds=yt gl=GB signed-out",
+    "hits": [
+      "what is dalton's atomic theory",
+      "what is dalton's atomic theory class 9",
+      "what is dalton's atomic theory class 11",
+      "what is dalton atomic model"
+    ],
+    "note": "What Is Dalton's Atomic Theory? is a signed-out GB YouTube autocomplete hit (also class 9, class 11, and dalton atomic model). The lifted VO says 'His atomic theory says every element is made of its own kind of atom, and each kind has its own weight.' Gold-foil bounce is already scheduled as JyRjM-9Yc8g (1 Nov), so this is 004's second search-titled Short."
+  },
+  "air_date_draft_note": "2026-11-10 used for the gate only; slot is Chief's call. Clear of 004 gold-foil 1 Nov (JyRjM-9Yc8g).",
+  "who_card_note": "card is the long's own Part 02 label JOHN DALTON \u00b7 1808, on screen 3.3\u20136.9 s while 'John Dalton' is spoken; clear of the 0\u20132 s hook and the 9\u201314 s title"
+}

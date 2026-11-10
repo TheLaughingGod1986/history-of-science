@@ -1,0 +1,148 @@
+{
+  "film": "008_Lightning-Franklin",
+  "written": "2026-10-14",
+  "task": "J0184 (OWB queue, repo hos): plate boards from the locked VO; mint nothing; parked for Chief's price pass",
+  "shot_list": "07_Edit-Project/SHOT_LIST_v01.md",
+  "readings": {
+    "flow_credits_left": 52,
+    "flow_note": "AI Ultra refill not landed at 15:47Z 12 Oct",
+    "vertex_free_trial_gbp": 4.93,
+    "vertex_margin_gbp": 0.1,
+    "vertex_usable_gbp": 4.83,
+    "vertex_note": "HOS 006 (J0107/J0160) goes first on the Vertex trial; trial ends 11 Nov"
+  },
+  "rates": {
+    "flow_credits_per_take": {
+      "Quality": 100,
+      "Fast": 10
+    },
+    "vertex_usd_per_s": {
+      "Quality": 0.2,
+      "Fast": 0.1
+    },
+    "usd_per_still": 0.039,
+    "gbp_per_usd_planning": 0.8,
+    "takes_per_keep_005": {
+      "Quality": 2.59,
+      "Fast": 1.96
+    },
+    "stills_per_plate_005": 2.28
+  },
+  "vo_film_total_s": 564.79,
+  "totals": {
+    "rows": 112,
+    "mints": 97,
+    "added": 12,
+    "Quality": 15,
+    "Fast": 82,
+    "reuse": 15,
+    "flow_credits_try1": 2320,
+    "flow_credits_expected": 5525,
+    "vertex_try1_gbp": 58.08,
+    "vertex_expected_gbp": 130.95
+  },
+  "per_part": [
+    {
+      "part": 1,
+      "rows": 22,
+      "mints": 18,
+      "added": 4,
+      "Quality": 3,
+      "Fast": 15,
+      "reuse": 4,
+      "flow_credits_try1": 450,
+      "flow_credits_expected": 1077,
+      "vertex_try1_gbp": 11.04,
+      "vertex_expected_gbp": 25.15
+    },
+    {
+      "part": 2,
+      "rows": 19,
+      "mints": 18,
+      "added": 1,
+      "Quality": 2,
+      "Fast": 16,
+      "reuse": 1,
+      "flow_credits_try1": 360,
+      "flow_credits_expected": 838,
+      "vertex_try1_gbp": 9.44,
+      "vertex_expected_gbp": 20.81
+    },
+    {
+      "part": 3,
+      "rows": 28,
+      "mints": 24,
+      "added": 3,
+      "Quality": 3,
+      "Fast": 21,
+      "reuse": 4,
+      "flow_credits_try1": 510,
+      "flow_credits_expected": 1197,
+      "vertex_try1_gbp": 14.08,
+      "vertex_expected_gbp": 31.35
+    },
+    {
+      "part": 4,
+      "rows": 18,
+      "mints": 16,
+      "added": 1,
+      "Quality": 4,
+      "Fast": 12,
+      "reuse": 2,
+      "flow_credits_try1": 520,
+      "flow_credits_expected": 1276,
+      "vertex_try1_gbp": 10.56,
+      "vertex_expected_gbp": 24.49
+    },
+    {
+      "part": 5,
+      "rows": 25,
+      "mints": 21,
+      "added": 3,
+      "Quality": 3,
+      "Fast": 18,
+      "reuse": 4,
+      "flow_credits_try1": 480,
+      "flow_credits_expected": 1137,
+      "vertex_try1_gbp": 12.96,
+      "vertex_expected_gbp": 29.15
+    }
+  ],
+  "all_on_flow_credits_expected": 5525,
+  "all_on_vertex_gbp_expected": 130.95,
+  "fits_now": {
+    "flow": null,
+    "vertex": null
+  },
+  "price_pass_questions": [
+    "Chief reviews proposed hero/cover list and conditional Fast prices; flagged non-hero prompts cannot mint unchanged on Fast.",
+    "Measure unused KEEP motion for all continuation reuses; no repeat, loop or freeze permitted. Distinct cutaways or longer sources may alter price.",
+    "Own code-graphic treatment for inherited explainer/card prompts remains a shot-list review item.",
+    "Flow/Vertex split waits for Ultra refill and live balance check. Historical 12 Oct balances are not a current credit reading."
+  ],
+  "status": "PARKED_FOR_CHIEF_PRICE_PASS",
+  "mint": false,
+  "readings_as_of": "2026-10-12; historical planning inputs, not live spend authority",
+  "hero_candidates": {
+    "P1:01_kite_open": "Long title opening",
+    "P1:13_ring_the_bells": "Short B cover",
+    "P1:17_globe_spark": "Bench electricity proof and later callback",
+    "P2:08_jar_spark": "Leyden jar discharge proof",
+    "P2:13_explorer_jar": "Explorer hero beat",
+    "P3:06_marly_spark": "First physical lightning proof",
+    "P3:19_kite_climb": "Short A cover",
+    "P3:25_fibres_rise": "First visible charge evidence",
+    "P4:02_knuckle_spark": "Kite experiment proof",
+    "P4:04_fill_the_jar": "Stored lightning proof",
+    "P4:05_jar_spark_field": "Stored-charge discharge proof",
+    "P4:09_charge_string": "Core charge mechanism",
+    "P5:14_safe_towers": "Lightning rod protection proof",
+    "P5:16_explorer_rooftop": "Explorer hero beat",
+    "P5:19_skyline_strike": "Short C cover / modern title payoff"
+  },
+  "changes": {
+    "continuations_to_reuse": 12,
+    "quality_to_fast": 42
+  },
+  "estimate_scope": "Conditional video estimate using unchanged v01 clip lengths and empirical take multipliers. Reuse availability and eligible Fast framing unverified; no spend authorization."
+}

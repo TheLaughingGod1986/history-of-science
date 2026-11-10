@@ -1,0 +1,184 @@
+{
+  "rule": {
+    "low_detail": "FAIL: luma std < 13.44 and edge density < 0.0259 (absolute floor); WARN: luma std < 18.0 or edge density < film p5",
+    "split_panel": "full-height/width seam or gutter",
+    "split_panel_gutter": "gutter counts only with edge density >= 0.01 in the 10% band on both sides",
+    "near_black": "mean < 28.0 or p95 < 50.0",
+    "noise": "grain std > 6 over structure std < 12, and the 8x-downscaled frame under the low-detail floor (std < 13.44 and edge density < 0.0259)",
+    "jitter": "centre-patch phase correlation: reversal against trend or > 0.35 px off trend"
+  },
+  "low_detail_floor": {
+    "std": 13.44,
+    "edge": 0.0259,
+    "calibration": {
+      "video": "025_MarsRobot_full_rough_v02d.mp4",
+      "factor": 1.2,
+      "frames": [
+        {
+          "source": "PIA22223.jpg",
+          "t": 201.0,
+          "std": 12.1,
+          "edge": 0.0223
+        },
+        {
+          "source": "PIA22223.jpg",
+          "t": 216.3,
+          "std": 11.2,
+          "edge": 0.0216
+        },
+        {
+          "source": "PIA22929.jpg",
+          "t": 297.4,
+          "std": 26.54,
+          "edge": 0.5735
+        }
+      ]
+    }
+  },
+  "video": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/hos_004_s05_dalton_v02.mp4",
+  "edge_floor": 0.0341,
+  "verdict": "PASS",
+  "failed": [],
+  "warn": [
+    {
+      "row": "s02_Hydrogen",
+      "cut": 1,
+      "t": 6.56,
+      "source": "05_fixed_amounts_v01.mp4",
+      "why": [
+        "low detail: edge density 0.0296 < film p5 0.0341"
+      ]
+    }
+  ],
+  "reviewed_ok": [],
+  "rows": [
+    {
+      "cut": 0,
+      "row": "s01_0",
+      "source": "01_dalton_schoolroom_v01.mp4",
+      "t": 2.38,
+      "std": 56.51,
+      "mean": 95.86,
+      "p95": 215.0,
+      "edge": 0.0911,
+      "hf": 9.66,
+      "lf": 50.01,
+      "std8": 53.14,
+      "edge8": 0.4223,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 1,
+      "row": "s02_Hydrogen",
+      "source": "05_fixed_amounts_v01.mp4",
+      "t": 6.56,
+      "std": 40.71,
+      "mean": 76.71,
+      "p95": 158.0,
+      "edge": 0.0296,
+      "hf": 5.5,
+      "lf": 36.52,
+      "std8": 38.87,
+      "edge8": 0.2907,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0296 < film p5 0.0341"
+      ]
+    },
+    {
+      "cut": 2,
+      "row": "s03_Gold",
+      "source": "07_water_always_v01.mp4",
+      "t": 9.64,
+      "std": 52.13,
+      "mean": 82.25,
+      "p95": 186.0,
+      "edge": 0.1061,
+      "hf": 11.54,
+      "lf": 44.5,
+      "std8": 47.55,
+      "edge8": 0.4482,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 3,
+      "row": "s04_Why",
+      "source": "02_atomic_theory_v01.mp4",
+      "t": 12.27,
+      "std": 47.36,
+      "mean": 68.48,
+      "p95": 170.0,
+      "edge": 0.0521,
+      "hf": 8.99,
+      "lf": 39.99,
+      "std8": 43.53,
+      "edge8": 0.3314,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 4,
+      "row": "s05_combine",
+      "source": "04_gold_heavier_v01.mp4",
+      "t": 15.75,
+      "std": 57.75,
+      "mean": 105.14,
+      "p95": 238.0,
+      "edge": 0.0445,
+      "hf": 5.79,
+      "lf": 53.58,
+      "std8": 55.62,
+      "edge8": 0.3131,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 5,
+      "row": "s06_hydrogen",
+      "source": "20_what_is_order_v01.mp4",
+      "t": 19.6,
+      "std": 62.35,
+      "mean": 88.13,
+      "p95": 226.0,
+      "edge": 0.0883,
+      "hf": 8.42,
+      "lf": 56.37,
+      "std8": 59.24,
+      "edge8": 0.4798,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 6,
+      "row": "s07_loop",
+      "source": "loop_end_01_dalton_schoolroom_v01.mp4",
+      "t": 22.91,
+      "std": 57.83,
+      "mean": 97.71,
+      "p95": 219.0,
+      "edge": 0.0878,
+      "hf": 9.64,
+      "lf": 51.35,
+      "std8": 54.51,
+      "edge8": 0.4228,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    }
+  ]
+}

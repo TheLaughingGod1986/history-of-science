@@ -1,0 +1,98 @@
+{
+  "film": "005",
+  "video": "wwcjcFfC-5M",
+  "job": "J0609",
+  "variant": "B v07 (1.095x hero push-in + forearm blue-cord & arterial-glow definition boost + concrete venous-cord hook; pairs with B v06 'STOPPED RED PULSE' and B v04 'HIDDEN VEIN VALVES')",
+  "maker": "gemini",
+  "hook": "SWOLLEN BLUE CORDS",
+  "punch": "SWOLLEN",
+  "jpg": "Selected/hos_005_thumb_B_swollen_blue_cords_v07.jpg",
+  "sha256": "2acc663367d35dda77a06ea279ff15961b111886ab8c3928bd98a65256a82feb",
+  "bytes": 256997,
+  "plates": [
+    "Selected/hos_005_thumb_A_one_tight_band_v02.jpg (005 painted 16:9 key-art plate: glowing red artery stopped at linen band, pale forearm with branching blue veins, Explorer lower-left, original gold scroll flourishes)"
+  ],
+  "method": "existing_005_plate_only_1.095x_hero_push_in_and_forearm_blue_cord_boost_reletter_GeorgiaBold_with_original_painted_flourishes",
+  "spend": 0,
+  "heroBox": [
+    556,
+    0,
+    1244,
+    706
+  ],
+  "explorer": {
+    "source": "hos_005_thumb_A_one_tight_band_v02.jpg",
+    "box": [
+      88,
+      344,
+      318,
+      720
+    ],
+    "height_px": 376,
+    "height_frac": 0.522
+  },
+  "lettering": [
+    {
+      "word": "SWOLLEN",
+      "kind": "gold",
+      "size": 76,
+      "box": [
+        99,
+        71,
+        477,
+        140
+      ]
+    },
+    {
+      "word": "BLUE",
+      "kind": "cream",
+      "size": 94,
+      "box": [
+        160,
+        145,
+        416,
+        228
+      ]
+    },
+    {
+      "word": "CORDS",
+      "kind": "cream",
+      "size": 90,
+      "box": [
+        133,
+        233,
+        443,
+        315
+      ]
+    }
+  ],
+  "ornaments": {
+    "top_scroll_box": [
+      60,
+      24,
+      468,
+      59
+    ],
+    "bottom_scroll_box": [
+      154,
+      328,
+      438,
+      356
+    ]
+  },
+  "clearOfHero": true,
+  "clearOfExplorer": true,
+  "clearOfBadge": true,
+  "scores": {
+    "HOOK": "PASS \u2014 'SWOLLEN BLUE CORDS' (3 words, punch word 'SWOLLEN' in gold) names the concrete visible venous proof below the tight linen band on the pale forearm (branching blue venous cords swollen under the skin where superficial veins are pinched shut below the band while deep arterial blood enters, De Motu Cordis ch. 11 & 13, FACT_NOTES_v01 rows 26\u201328; 005 script Part 04 line 100: 'the veins below the band swell into blue cords' and THUMBNAIL_AND_TITLE_RULES.md \u00a71.2 & \u00a72.B.1 'name the thing'), shares zero words with the video title ('The Tied Arm That Proved Your Blood Circulates'), Variant A ('ONE TIGHT BAND'), Variant B v03 ('THE BLOCKED ARTERY'), Variant B v04 ('HIDDEN VEIN VALVES'), Variant B v05 ('TRAPPED UNDER SKIN'), or Variant B v06 ('STOPPED RED PULSE'), and uses no vague questions or pronouns.",
+    "BAND": "PASS \u2014 Upper-left lettering band (x=99..477, y=71..315, framed by original painted gold scroll flourishes at y=24..356) sits completely left of the pushed-in hero arm (x=556..1244), above the Explorer's hair (y=344), and clear of the bottom-right duration badge.",
+    "PHONE": "PASS \u2014 Checked on 168x94 preview sheet and 4-way comparison strip: the 1.095x hero push-in and targeted forearm venous-cord definition boost make the branching swollen blue cords below the linen knot and stopped glowing red arterial column above it larger and sharper at 168x94 while keeping 'SWOLLEN BLUE CORDS' and the Explorer's face/glasses (52.2% height) immediately legible in under a second."
+  },
+  "previews": [
+    "Selected/hos_005_thumb_B_swollen_blue_cords_v07_preview.jpg",
+    "Selected/hos_005_thumb_B_swollen_blue_cords_v07_style_sheet.jpg",
+    "Selected/hos_005_thumb_TC_4way_swollen_blue_cords_v07_phone_168.jpg"
+  ],
+  "studio": false,
+  "status": "Test & Compare B v07 candidate for 005 (wwcjcFfC-5M, built from existing 005 plate only with 1.095x hero push-in + forearm blue-cord boost, \u00a30). Parked for Chief: thumb B review. No Studio until OK."
+}

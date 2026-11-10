@@ -79,6 +79,20 @@
       "visibility": "public",
       "published_now": true,
       "go": null
+    },
+    {
+      "id": "s11_curved_flask",
+      "file": "10_Shorts/hos_001_s11_curved_flask_v02.mp4",
+      "title": "What Is the Pasteur Swan Neck Flask Experiment?",
+      "schedule_iso": "2026-10-27T11:30:00Z",
+      "description": "How Did We Discover Germs?\nhttps://www.youtube.com/watch?v=_C92tIJCk8A\n\nLouis Pasteur's swan-neck flask kept boiled broth clear until contact, proving germs come from outside.",
+      "video_id": "1-BZaFIMwYU",
+      "youtube_video_id": "1-BZaFIMwYU",
+      "url": "https://youtu.be/1-BZaFIMwYU",
+      "related": "_C92tIJCk8A",
+      "visibility": "private",
+      "published_now": false,
+      "go": null
     }
   ]
 }

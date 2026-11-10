@@ -1,0 +1,68 @@
+[
+  {
+    "row": "s01_01_lead_box_v01",
+    "timeline_in": 0.0,
+    "timeline_out": 3.3,
+    "source": "01_lead_box_v01.jpg",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  },
+  {
+    "row": "s02_02_shed_lab_v01",
+    "timeline_in": 3.3,
+    "timeline_out": 9.3,
+    "source": "02_shed_lab_v01.jpg",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 3.3
+    },
+    "video": true
+  },
+  {
+    "row": "s03_03_glowing_vials_v01",
+    "timeline_in": 9.3,
+    "timeline_out": 10.92,
+    "source": "03_glowing_vials_v01.jpg",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 9.3
+    },
+    "video": true
+  },
+  {
+    "row": "s04_04_bare_hands_v01",
+    "timeline_in": 10.92,
+    "timeline_out": 14.16,
+    "source": "04_bare_hands_v01.jpg",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 10.92
+    },
+    "video": true
+  },
+  {
+    "row": "s05_05_paris_archive_v02",
+    "timeline_in": 14.16,
+    "timeline_out": 20.04,
+    "source": "05_paris_archive_v02.jpg",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 14.16
+    },
+    "video": true
+  },
+  {
+    "row": "s06_01_lead_box_v01",
+    "timeline_in": 20.04,
+    "timeline_out": 22.64,
+    "source": "end_card_loop_01_lead_box_v01.jpg",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 20.04
+    },
+    "video": true
+  }
+]

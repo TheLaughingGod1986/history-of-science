@@ -1,0 +1,9 @@
+s01_0     2.3s 20_charge_electrons_v01.mp4  ok
+s02_and     6.1s 14_electrons_named_v01.mp4   ok
+s03_Elements     9.2s 15_positive_balance_v01.mp4  ok
+s04_end    11.7s 13_gaps_left_v01.mp4         ok
+s05_That's    14.2s 10_two_thousand_lighter_v01. ok
+s06_and    17.4s 19_columns_why_v01.mp4       ok
+s07_Every    20.6s 14_nucleus_electrons_v01.mp4 WARN low detail: edge density 0.0244 < film p5 0.0266
+s08_loop    23.8s loop_end_20_charge_electrons ok
+polish gate PASS: 0 of 8 rows failed, 1 to look at -> 02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/qa_s07_outer_electrons_v01/polish_gate_s07_outer_electrons_v01.json

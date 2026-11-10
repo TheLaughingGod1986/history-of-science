@@ -1,0 +1,90 @@
+[
+  {
+    "row": "s01_0",
+    "timeline_in": 0.0,
+    "timeline_out": 3.233,
+    "source": "11_candle_tall_t1.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 2.0
+    },
+    "video": true
+  },
+  {
+    "row": "s02_flame",
+    "timeline_in": 3.233,
+    "timeline_out": 5.652,
+    "source": "08_candles_out_t1.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 5.4
+    },
+    "video": true
+  },
+  {
+    "row": "s03_behind",
+    "timeline_in": 5.652,
+    "timeline_out": 8.403,
+    "source": "07_priestley_t1.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 2.2
+    },
+    "video": true
+  },
+  {
+    "row": "s04_He",
+    "timeline_in": 8.403,
+    "timeline_out": 13.036,
+    "source": "10_mint_jar_t1.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.3
+    },
+    "video": true
+  },
+  {
+    "row": "s05_Ten",
+    "timeline_in": 13.036,
+    "timeline_out": 16.683,
+    "source": "06_collect_blaze_t3.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 3.6
+    },
+    "video": true
+  },
+  {
+    "row": "s06_It",
+    "timeline_in": 16.683,
+    "timeline_out": 18.806,
+    "source": "15_quill_vegetable_t1.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.4
+    },
+    "video": true
+  },
+  {
+    "row": "s07_Something",
+    "timeline_in": 18.806,
+    "timeline_out": 20.734,
+    "source": "14_trees_breathe_t1.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 3.2
+    },
+    "video": true
+  },
+  {
+    "row": "s08_loop",
+    "timeline_in": 20.734,
+    "timeline_out": 23.734,
+    "source": "loop_end_11_candle_tall_t1.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 2.0
+    },
+    "video": true
+  }
+]

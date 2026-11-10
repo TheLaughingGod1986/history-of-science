@@ -1,0 +1,99 @@
+{
+  "film": "005",
+  "video": "wwcjcFfC-5M",
+  "job": "J0424",
+  "replaces": "hos_005_thumb_C_tie_it_tight_v04.jpg (pre-11-Oct 'TIE IT TIGHT', repeats 'Tied' from title + vague pronoun 'IT' + dark wipe slab)",
+  "variant": "B v04 (T&C slot C replacement)",
+  "maker": "gemini",
+  "hook": "HIDDEN VEIN VALVES",
+  "punch": "VALVES",
+  "jpg": "Selected/hos_005_thumb_B_vein_valves_v04.jpg",
+  "sha256": "96ee2890410c7e8eb0b691f8ad84f544679f7f14c84f0b452945ce0e50f1e897",
+  "bytes": 249430,
+  "plates": [
+    "Selected/hos_005_thumb_A_one_tight_band_v02.jpg (005 painted 16:9 key-art plate: glowing red artery stopped at linen band, pale forearm with branching blue veins, Explorer lower-left, original gold scroll flourishes)"
+  ],
+  "method": "existing_005_plate_only_reletter_GeorgiaBold_with_original_painted_flourishes",
+  "spend": 0,
+  "heroBox": [
+    560,
+    0,
+    1200,
+    692
+  ],
+  "explorer": {
+    "source": "hos_005_thumb_A_one_tight_band_v02.jpg",
+    "box": [
+      88,
+      344,
+      318,
+      720
+    ],
+    "height_px": 376,
+    "height_frac": 0.522
+  },
+  "lettering": [
+    {
+      "word": "HIDDEN",
+      "kind": "cream",
+      "size": 78,
+      "box": [
+        129,
+        73,
+        447,
+        141
+      ]
+    },
+    {
+      "word": "VEIN",
+      "kind": "cream",
+      "size": 88,
+      "box": [
+        172,
+        146,
+        403,
+        224
+      ]
+    },
+    {
+      "word": "VALVES",
+      "kind": "gold",
+      "size": 92,
+      "box": [
+        100,
+        229,
+        475,
+        313
+      ]
+    }
+  ],
+  "ornaments": {
+    "top_scroll_box": [
+      60,
+      24,
+      468,
+      59
+    ],
+    "bottom_scroll_box": [
+      154,
+      328,
+      438,
+      356
+    ]
+  },
+  "clearOfHero": true,
+  "clearOfExplorer": true,
+  "clearOfBadge": true,
+  "scores": {
+    "HOOK": "PASS \u2014 'HIDDEN VEIN VALVES' (3 words, punch word 'VALVES' in gold) names the concrete anatomical mechanism Harvey proved with the tied-arm test (Fabricius's one-way vein valves / 'little doors', De Motu Cordis ch. 11 & 13, FACT_NOTES_v01 rows 13 & 26\u201329), shares zero words with the video title ('The Tied Arm That Proved Your Blood Circulates'), Variant A ('ONE TIGHT BAND'), or Variant B v03 ('THE BLOCKED ARTERY'), and uses no vague questions or pronouns.",
+    "BAND": "PASS \u2014 Upper-left lettering band (x=100..475, y=73..313, framed by original painted gold scroll flourishes at y=24..356) sits completely left of the hero arm (x=560..1200), above the Explorer's hair (y=344), and clear of the bottom-right duration badge.",
+    "PHONE": "PASS \u2014 Checked on 168x94 preview sheet and side-by-side strip: 'HIDDEN VEIN VALVES', the giant tied arm with glowing red artery and forearm veins, and the Explorer's face/glasses (52.2% height) all read in under a second at 168x94."
+  },
+  "previews": [
+    "Selected/hos_005_thumb_B_vein_valves_v04_preview.jpg",
+    "Selected/hos_005_thumb_B_vein_valves_v04_style_sheet.jpg",
+    "Selected/hos_005_thumb_TC_3way_vein_valves_v04_phone_168.jpg"
+  ],
+  "studio": false,
+  "status": "Test & Compare B v04 (slot C replacement) candidate for 005 (wwcjcFfC-5M, built from existing 005 plate only, \u00a30). Parked for Chief: thumb B review. No Studio until OK."
+}

@@ -1,0 +1,149 @@
+{
+ "pulled": "2026-10-19",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "how do lungs work gas exchange",
+  "alveoli hemoglobin oxygen"
+ ],
+ "autocomplete": {
+  "how do lungs work gas exchange": [],
+  "alveoli hemoglobin oxygen": []
+ },
+ "sharedTitleWords": [
+  "how breathing",
+  "breathing works",
+  "the lungs",
+  "health medicine",
+  "medicine khan",
+  "khan academy",
+  "gas exchange",
+  "a level",
+  "level biology"
+ ],
+ "neighbours": [
+  {
+   "id": "PzfLDi-sL3w",
+   "title": "How does asthma work? - Christopher E. Gaw",
+   "channel": "TED-Ed",
+   "views": "8,712,053 views",
+   "age": "9 yr ago",
+   "length": "5:10",
+   "tier": 1,
+   "viewCount": 8712053,
+   "foundBy": "ted-ed how do lungs work gas exchange",
+   "onTopic": true
+  },
+  {
+   "id": "8NUxvJS-_0k",
+   "title": "How do lungs work? - Emma Bryce",
+   "channel": "TED-Ed",
+   "views": "3,649,850 views",
+   "age": "11 yr ago",
+   "length": "3:22",
+   "tier": 1,
+   "viewCount": 3649850,
+   "foundBy": "how do lungs work gas exchange",
+   "onTopic": true
+  },
+  {
+   "id": "GVU_zANtroE",
+   "title": "Oxygen’s surprisingly complex journey through your body - Enda Butler",
+   "channel": "TED-Ed",
+   "views": "3,520,558 views",
+   "age": "9 yr ago",
+   "length": "5:10",
+   "tier": 1,
+   "viewCount": 3520558,
+   "foundBy": "ted-ed how do lungs work gas exchange",
+   "onTopic": true
+  },
+  {
+   "id": "Kl4cU9sG_08",
+   "title": "How breathing works - Nirvair Kaur",
+   "channel": "TED-Ed",
+   "views": "492,845 views",
+   "age": "14 yr ago",
+   "length": "5:19",
+   "tier": 1,
+   "viewCount": 492845,
+   "foundBy": "ted-ed how do lungs work gas exchange",
+   "onTopic": true
+  },
+  {
+   "id": "SPGRkexI_cs",
+   "title": "The lungs and pulmonary system | Health & Medicine | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "1,444,591 views",
+   "age": "16 yr ago",
+   "length": "20:33",
+   "tier": 2,
+   "viewCount": 1444591,
+   "foundBy": "khan academy how do lungs work gas exchange",
+   "onTopic": true
+  },
+  {
+   "id": "LWtXthfG9_M",
+   "title": "Hemoglobin | Human anatomy and physiology | Health & Medicine | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "1,033,355 views",
+   "age": "16 yr ago",
+   "length": "14:34",
+   "tier": 2,
+   "viewCount": 1033355,
+   "foundBy": "khan academy alveoli hemoglobin oxygen",
+   "onTopic": true
+  },
+  {
+   "id": "Nn4ke02sW8Q",
+   "title": "GCSE Biology - The Lungs & Gas Exchange (2027/28 exams)",
+   "channel": "Cognito",
+   "views": "169,605 views",
+   "age": "11 mo ago",
+   "length": "6:53",
+   "tier": 2,
+   "viewCount": 169605,
+   "foundBy": "how do lungs work gas exchange",
+   "onTopic": true
+  },
+  {
+   "id": "rsA-4TroH6Y",
+   "title": "Ventilation Mechanism | How Breathing Works | Inspiration & Expiration (2027/28 exams)",
+   "channel": "Cognito",
+   "views": "55,922 views",
+   "age": "10 mo ago",
+   "length": "5:56",
+   "tier": 2,
+   "viewCount": 55922,
+   "foundBy": "how do lungs work gas exchange",
+   "onTopic": true
+  },
+  {
+   "id": "_d7wBrrnGN0",
+   "title": "A-Level Biology - Haemoglobin - Oxygen Dissociation Curve | Bohr Effect (2027/28 exams)",
+   "channel": "Cognito",
+   "views": "34,006 views",
+   "age": "8 mo ago",
+   "length": "9:44",
+   "tier": 2,
+   "viewCount": 34006,
+   "foundBy": "alveoli hemoglobin oxygen",
+   "onTopic": true
+  },
+  {
+   "id": "EfJ98vWYcNQ",
+   "title": "A-Level Biology - Human Gas Exchange System - Structure | Adaptations (2027/28 exams)",
+   "channel": "Cognito",
+   "views": "26,216 views",
+   "age": "9 mo ago",
+   "length": "9:51",
+   "tier": 2,
+   "viewCount": 26216,
+   "foundBy": "how do lungs work gas exchange ted",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 5,
+ "gate": "PASS",
+ "hasTed": true,
+ "failedQueries": []
+}

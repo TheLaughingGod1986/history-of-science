@@ -1,0 +1,207 @@
+{
+ "pulled": "2026-10-17",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "how lasers work",
+  "fiber optics",
+  "stimulated emission"
+ ],
+ "autocomplete": {
+  "how lasers work": [
+   "how lasers work",
+   "how lasers work kurzgesagt",
+   "how lasers work a complete guide",
+   "how laser works animation",
+   "how laser works on acne scars",
+   "how laser works for hair removal",
+   "how laser works on pigmentation",
+   "how laser works in eye surgery",
+   "how laser works in hindi",
+   "how laser works on skin"
+  ],
+  "fiber optics": [
+   "fiber optics",
+   "fiber optics engineering physics",
+   "fiber optics and laser engineering physics",
+   "fiber optics explained",
+   "fiber optics fallout 76",
+   "fiber optics light",
+   "fiber optics and laser engineering physics gateway classes",
+   "fiber optics technician",
+   "fiber optics physics",
+   "fiber optics installation"
+  ],
+  "stimulated emission": [
+   "stimulated emission",
+   "stimulated emission in laser",
+   "stimulated emission and spontaneous emission",
+   "stimulated emission animation",
+   "stimulated emission of radiation",
+   "stimulated emission in tamil",
+   "stimulated emission engineering physics",
+   "stimulated emission and population inversion",
+   "stimulated emission depletion microscopy",
+   "stimulated emission in hindi"
+  ]
+ },
+ "sharedTitleWords": [
+  "how does",
+  "how lasers",
+  "lasers work",
+  "work in",
+  "geometric optics",
+  "optics physics",
+  "physics khan",
+  "khan academy"
+ ],
+ "neighbours": [
+  {
+   "id": "XPDVmBg5DeE",
+   "title": "How does laser eye surgery work? - Dan Reinstein",
+   "channel": "TED-Ed",
+   "views": "6,827,309 views",
+   "age": "6 yr ago",
+   "length": "5:37",
+   "tier": 1,
+   "viewCount": 6827309,
+   "foundBy": "ted-ed how lasers work",
+   "onTopic": true
+  },
+  {
+   "id": "RgWQCGX3MOk",
+   "title": "How does chemotherapy work? - Hyunsoo Joshua No",
+   "channel": "TED-Ed",
+   "views": "6,230,123 views",
+   "age": "6 yr ago",
+   "length": "5:26",
+   "tier": 1,
+   "viewCount": 6230123,
+   "foundBy": "ted-ed how lasers work",
+   "onTopic": true
+  },
+  {
+   "id": "y3SBSbsdiYg",
+   "title": "How lasers work (in theory)",
+   "channel": "minutephysics",
+   "views": "3,148,623 views",
+   "age": "14 yr ago",
+   "length": "1:42",
+   "tier": 2,
+   "viewCount": 3148623,
+   "foundBy": "how lasers work",
+   "onTopic": true
+  },
+  {
+   "id": "lW4Uq_2VPhE",
+   "title": "How Lasers Work (in practice) - Smarter Every Day 33",
+   "channel": "SmarterEveryDay",
+   "views": "1,599,187 views",
+   "age": "14 yr ago",
+   "length": "3:54",
+   "tier": 2,
+   "viewCount": 1599187,
+   "foundBy": "how lasers work",
+   "onTopic": true
+  },
+  {
+   "id": "WRuatAcd2WY",
+   "title": "Total internal reflection | Geometric optics | Physics | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "557,145 views",
+   "age": "15 yr ago",
+   "length": "7:55",
+   "tier": 2,
+   "viewCount": 557145,
+   "foundBy": "khan academy fiber optics",
+   "onTopic": true
+  },
+  {
+   "id": "K0sjZ5nqQ7g",
+   "title": "Convex lenses | Geometric optics | Physics | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "463,325 views",
+   "age": "15 yr ago",
+   "length": "9:23",
+   "tier": 2,
+   "viewCount": 463325,
+   "foundBy": "khan academy fiber optics",
+   "onTopic": true
+  },
+  {
+   "id": "zaTH7LnyCdE",
+   "title": "Gavin McCormick: Tracking the whole world's carbon emissions -- with satellites & AI | TED Countdown",
+   "channel": "TED",
+   "views": "73,903 views",
+   "age": "4 yr ago",
+   "length": "11:15",
+   "tier": 1,
+   "viewCount": 73903,
+   "foundBy": "stimulated emission ted",
+   "onTopic": true
+  },
+  {
+   "id": "l5azMXvBfaw",
+   "title": "The Secret Force for Limitless Energy? Lasers | Tammy Ma | TED",
+   "channel": "TED",
+   "views": "64,638 views",
+   "age": "2 yr ago",
+   "length": "13:41",
+   "tier": 1,
+   "viewCount": 64638,
+   "foundBy": "how lasers work ted",
+   "onTopic": true
+  },
+  {
+   "id": "4BFL4MCnZg8",
+   "title": "5 Lessons on Building an Emissions-Free City | Heidi Sørensen | TED",
+   "channel": "TED",
+   "views": "27,815 views",
+   "age": "3 yr ago",
+   "length": "15:15",
+   "tier": 1,
+   "viewCount": 27815,
+   "foundBy": "stimulated emission ted",
+   "onTopic": true
+  },
+  {
+   "id": "GBkNO4yDyOE",
+   "title": "How New Kinds of Lasers Shape Our Future | Clara Saraceno | TEDxRuhrUniversityBochum",
+   "channel": "TEDx Talks",
+   "views": "2,312 views",
+   "age": "9 yr ago",
+   "length": "15:07",
+   "tier": 1,
+   "viewCount": 2312,
+   "foundBy": "stimulated emission ted",
+   "onTopic": true
+  },
+  {
+   "id": "6Gx55kA_Yds",
+   "title": "The Next Generation Infrared Lasers | Irina Sorokina | TEDxArendal",
+   "channel": "TEDx Talks",
+   "views": "1,379 views",
+   "age": "4 yr ago",
+   "length": "14:28",
+   "tier": 1,
+   "viewCount": 1379,
+   "foundBy": "ted-ed how lasers work",
+   "onTopic": true
+  },
+  {
+   "id": "b1XH_PB6AmY",
+   "title": "Emission Impossible- can we build without global warming? | Reidun Dahl Schlanbusch | TEDxBergen",
+   "channel": "TEDx Talks",
+   "views": "957 views",
+   "age": "10 yr ago",
+   "length": "11:18",
+   "tier": 1,
+   "viewCount": 957,
+   "foundBy": "stimulated emission ted",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 4,
+ "gate": "PASS",
+ "hasTed": true,
+ "failedQueries": []
+}

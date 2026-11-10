@@ -1,0 +1,12 @@
+P2:14_likeness_pairs     2.5s code_graphic_008_p2_14_liken ok
+P2:15_likeness_fire     7.8s code_graphic_008_p2_15_liken ok
+P3:03_rod_cloud    13.7s code_graphic_008_p3_03_rod_c ok
+P3:04_letter_crosses    18.8s code_graphic_008_p3_04_lette WARN low detail: edge density 0.0135 < film p5 0.0162
+P3:15_wet_dry    23.3s code_graphic_008_p3_15_wet_d ok
+P4:06_same_thing    29.6s code_graphic_008_p4_06_same_ ok
+P4:08_teach_charge    36.8s code_graphic_008_p4_08_teach ok
+P5:08_looking_path    42.0s code_graphic_008_p5_08_looki ok
+P5:09_wood_vs_metal    47.0s code_graphic_008_p5_09_wood_ ok
+P5:10_metal_easy    51.9s code_graphic_008_p5_10_metal ok
+P5:11_safe_path    56.9s code_graphic_008_p5_11_safe_ ok
+polish gate PASS: 0 of 11 rows failed, 1 to look at -> 02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/code_graphics_v01/polish_gate_v01.json

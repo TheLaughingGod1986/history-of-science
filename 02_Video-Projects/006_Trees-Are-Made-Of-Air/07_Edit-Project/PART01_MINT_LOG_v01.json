@@ -1,0 +1,833 @@
+{
+  "film": "006_Trees-Are-Made-Of-Air",
+  "part": "01",
+  "board": "02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/parts/part-01_plates_v01.json",
+  "path": "vertex",
+  "vertex_project": "gen-lang-client-0538779324",
+  "vertex_location": "us-central1",
+  "account": "benoats@googlemail.com",
+  "authority": "Claude on desk PR #180 comment 5951520953 (2 Oct 2026): mint 006 on Vertex to a £0 floor",
+  "models": {
+    "Quality": "veo-3.1-generate-001",
+    "Fast": "veo-3.1-fast-generate-001"
+  },
+  "image_model": "gemini-2.5-flash-image",
+  "pricing_usd": {
+    "veo_per_s_video_only_1080p": {
+      "Quality": 0.2,
+      "Fast": 0.1
+    },
+    "still": 0.039,
+    "source": "Vertex AI generative pricing page, video-only rows, Sept 2026"
+  },
+  "credit_check": null,
+  "takes": [
+    {
+      "plate": "01_willow_air",
+      "take": 1,
+      "model": "veo-3.1-generate-001",
+      "quality": "Quality",
+      "path": "vertex",
+      "seconds": 8,
+      "resolution": "1080p",
+      "generate_audio": false,
+      "framing": "try1",
+      "extra": null,
+      "replace": null,
+      "tag": null,
+      "prompt": "History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm sunlit cinematic light, natural-history world of the 1600s-1800s. Not photoreal, not flat 2D. No logos, no captions, no signs, no UI. No Orbit orange robot. No DNA helix. Animals are always alive, lively and unhurt. Premium Animistry-class 3D cartoon. Frame 0, already moving: a huge willow on a riverbank at golden hour. Fine glittering threads of air stream in through its leaves from every side and run down along the branches into the trunk, which glows faintly from within. Slow continuous push towards the trunk. No people. Silent. Continuous motion through the final frame. No Explorer.  No Explorer. Silent picture only. Continuous real camera and subject motion through the final frame. HARD REJECT: photoreal, Ken Burns or still push, freeze frame, slow motion, Orbit orange robot, DNA helix, lava drip, gore, garbled text.",
+      "start_frame": "../04_Generated-Clips/part01/refs/v01_vertex_stills/01_willow_air_v02.jpg",
+      "start_frame_sha256": "bc49a9e35bfa39dde8d75c2c586e2d94365ac1c5c5ac995ceba60fc4182754b6",
+      "op_name": "projects/gen-lang-client-0538779324/locations/us-central1/publishers/google/models/veo-3.1-generate-001/operations/8d7b388c-2b71-477f-b0fa-a7f8ca03e7cd",
+      "submitted_at": "2026-10-02T11:42:37+00:00",
+      "cost_usd": 1.6,
+      "status": "KEEP",
+      "why": "Dense 24-frame read + start/mid/end at 1280: continuous push from wide willow to trunk, air threads weave in through the leaves and pour into a glowing trunk; finished stylised 3D, no face, no text, no ghosting, no freeze (freezedetect 0 at 0.5 s). First 4.28 s lands 'built mostly out of thin air'.",
+      "at": "2026-10-02T11:44:53+00:00",
+      "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/raw/v01/01_willow_air_t1.mp4",
+      "sha256": "19b78371f472bef6ee193d3f87aa5afd5c3ae5b51a2d4f91f9ea2c5d733c9711",
+      "duration_s": 8.0,
+      "uat_sheet": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/uat/01_willow_air_t1_sheet.jpg",
+      "motion": {
+        "freeze_events_0p8s": 0
+      },
+      "api_s": 137.7,
+      "uat_at": "2026-10-02T11:45:32+00:00"
+    },
+    {
+      "plate": "03_pot_jar_leaf",
+      "take": 1,
+      "model": "veo-3.1-fast-generate-001",
+      "quality": "Fast",
+      "path": "vertex",
+      "seconds": 8,
+      "resolution": "1080p",
+      "generate_audio": false,
+      "framing": "try1",
+      "extra": null,
+      "replace": null,
+      "tag": null,
+      "prompt": "History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm sunlit cinematic light, natural-history world of the 1600s-1800s. Not photoreal, not flat 2D. No logos, no captions, no signs, no UI. No Orbit orange robot. No DNA helix. Animals are always alive, lively and unhurt. Premium Animistry-class 3D cartoon. A sunlit oak table by a window. Three things appear one after another: a clay pot with a thin willow shoot, a glass jar turned over a green sprig of mint, and a green leaf in a jar of water beaded with tiny silver bubbles. The camera eases along them in that order. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.  No Explorer. Silent picture only. Continuous real camera and subject motion through the final frame. HARD REJECT: photoreal, Ken Burns or still push, freeze frame, slow motion, Orbit orange robot, DNA helix, lava drip, gore, garbled text.",
+      "start_frame": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/refs/v01_vertex_stills/03_pot_jar_leaf_v01.jpg",
+      "start_frame_sha256": "9ac35a1a9c7ed0dff10666774cd189180efd5dbaea329bd367ada2a9aa8ecd8c",
+      "op_name": "projects/gen-lang-client-0538779324/locations/us-central1/publishers/google/models/veo-3.1-fast-generate-001/operations/cdd8d2dc-c202-4abe-92ed-3ba13f833eba",
+      "submitted_at": "2026-10-02T11:47:52+00:00",
+      "cost_usd": 0.8,
+      "status": "KEEP",
+      "why": "Camera eases pot → jar over mint → leaf in water beaded with bubbles, in that order, sunlit oak table, no flame or lamp; finished; a few bubbles rise above the waterline (cartoon licence, not a hard fail).",
+      "at": "2026-10-02T11:49:37+00:00",
+      "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/raw/v01/03_pot_jar_leaf_t1.mp4",
+      "sha256": "b1aaba6dbb36659388751fe942c5a7b367d35a9e181c3599a5cf8f4e7b6c96cb",
+      "duration_s": 8.0,
+      "uat_sheet": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/uat/03_pot_jar_leaf_t1_sheet.jpg",
+      "motion": {
+        "freeze_events_0p8s": 0
+      },
+      "api_s": 106.9,
+      "uat_at": "2026-10-02T11:52:21+00:00"
+    },
+    {
+      "plate": "05_olive_grove",
+      "take": 1,
+      "model": "veo-3.1-fast-generate-001",
+      "quality": "Fast",
+      "path": "vertex",
+      "seconds": 6,
+      "resolution": "1080p",
+      "generate_audio": false,
+      "framing": "try1",
+      "extra": null,
+      "replace": null,
+      "tag": null,
+      "prompt": "History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm sunlit cinematic light, natural-history world of the 1600s-1800s. Not photoreal, not flat 2D. No logos, no captions, no signs, no UI. No Orbit orange robot. No DNA helix. Animals are always alive, lively and unhurt. Premium Animistry-class 3D cartoon. An ancient Greek olive grove on a hillside in hot sun: small farmers at a distance pile dark soil round the roots of young olive trees with their hands, as if feeding them. Slow drift between the trees. Silent. Continuous motion through the final frame. No Explorer.  No Explorer. Silent picture only. Continuous real camera and subject motion through the final frame. HARD REJECT: photoreal, Ken Burns or still push, freeze frame, slow motion, Orbit orange robot, DNA helix, lava drip, gore, garbled text.",
+      "start_frame": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/refs/v01_vertex_stills/05_olive_grove_v01.jpg",
+      "start_frame_sha256": "2c373db27e6051d98a2f79f9a5ee66b0f6b8f7b7ad80275b944243231c7856fc",
+      "op_name": "projects/gen-lang-client-0538779324/locations/us-central1/publishers/google/models/veo-3.1-fast-generate-001/operations/26bb2b7a-e27b-4839-8e33-9dbea6b25a6a",
+      "submitted_at": "2026-10-02T11:47:52+00:00",
+      "cost_usd": 0.6,
+      "status": "KEEP",
+      "why": "Slow drift through a hot Greek olive grove; small far farmers pile soil round young trees; faces not readable; finished; no freeze.",
+      "at": "2026-10-02T11:50:06+00:00",
+      "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/raw/v01/05_olive_grove_t1.mp4",
+      "sha256": "c7bd73390291ee772858e411f597f2045ef99f4d8692b11ad5c1993c6975837a",
+      "duration_s": 6.0,
+      "uat_sheet": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/uat/05_olive_grove_t1_sheet.jpg",
+      "motion": {
+        "freeze_events_0p8s": 0
+      },
+      "api_s": 136.3,
+      "uat_at": "2026-10-02T11:52:21+00:00"
+    },
+    {
+      "plate": "06_aristotle",
+      "take": 1,
+      "model": "veo-3.1-generate-001",
+      "quality": "Quality",
+      "path": "vertex",
+      "seconds": 8,
+      "resolution": "1080p",
+      "generate_audio": false,
+      "framing": "try1",
+      "extra": null,
+      "replace": null,
+      "tag": null,
+      "prompt": "History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm sunlit cinematic light, natural-history world of the 1600s-1800s. Not photoreal, not flat 2D. No logos, no captions, no signs, no UI. No Orbit orange robot. No DNA helix. Animals are always alive, lively and unhurt. Premium Animistry-class 3D cartoon. A sunny stone courtyard in ancient Athens: Aristotle, a Greek thinker of about fifty, short grey curly hair and a neat grey beard, cream Greek robe, stands beside a young olive tree and points down at its roots while explaining to two listening students. Readable, finished face. Camera eases in. Silent. Continuous motion through the final frame. No Explorer.  No Explorer. Silent picture only. Continuous real camera and subject motion through the final frame. HARD REJECT: photoreal, Ken Burns or still push, freeze frame, slow motion, Orbit orange robot, DNA helix, lava drip, gore, garbled text.",
+      "start_frame": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/refs/v01_vertex_stills/06_aristotle_v01.jpg",
+      "start_frame_sha256": "ced7d70f67d5a9a5c362481a0d006917029195672e5dd41e20b1c94704b32689",
+      "op_name": "projects/gen-lang-client-0538779324/locations/us-central1/publishers/google/models/veo-3.1-generate-001/operations/bd2b94a9-30f9-4e1a-918a-a88c79c349ed",
+      "submitted_at": "2026-10-02T11:47:52+00:00",
+      "cost_usd": 1.6,
+      "status": "KEEP",
+      "why": "Aristotle (grey curls, beard, cream robe) bends and points at the olive roots; two students lean in; readable finished faces (checked at 3.0 s, 1024 px); real body motion; courtyard consistent.",
+      "at": "2026-10-02T11:49:51+00:00",
+      "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/raw/v01/06_aristotle_t1.mp4",
+      "sha256": "ad1aae4cecd1a6e312ad771769c1de0d538b514937e6989fbab27d871de4b368",
+      "duration_s": 8.0,
+      "uat_sheet": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/uat/06_aristotle_t1_sheet.jpg",
+      "motion": {
+        "freeze_events_0p8s": 0
+      },
+      "api_s": 121.0,
+      "uat_at": "2026-10-02T11:52:21+00:00"
+    },
+    {
+      "plate": "02_balance_trunk",
+      "take": 1,
+      "model": "veo-3.1-fast-generate-001",
+      "quality": "Fast",
+      "path": "vertex",
+      "seconds": 4,
+      "resolution": "1080p",
+      "generate_audio": false,
+      "framing": "try1",
+      "extra": null,
+      "replace": null,
+      "tag": null,
+      "prompt": "History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm sunlit cinematic light, natural-history world of the 1600s-1800s. Not photoreal, not flat 2D. No logos, no captions, no signs, no UI. No Orbit orange robot. No DNA helix. Animals are always alive, lively and unhurt. Premium Animistry-class 3D cartoon. A giant brass balance in a sunny field: a whole tree trunk lies on one pan and sinks; on the other pan a small heap of dark soil flies up, far too light. The camera drifts along the beam. Silent. Continuous motion through the final frame. No Explorer.  No Explorer. Silent picture only. Continuous real camera and subject motion through the final frame. HARD REJECT: photoreal, Ken Burns or still push, freeze frame, slow motion, Orbit orange robot, DNA helix, lava drip, gore, garbled text.",
+      "start_frame": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/refs/v01_vertex_stills/02_balance_trunk_v01.jpg",
+      "start_frame_sha256": "886d8a0ec9f93f70c8950914fc2f877846f1b2f0cd223c2359ea65115d56a892",
+      "op_name": "projects/gen-lang-client-0538779324/locations/us-central1/publishers/google/models/veo-3.1-fast-generate-001/operations/b0740885-ce2c-4f3f-b399-a668cbc24f3d",
+      "submitted_at": "2026-10-02T11:47:52+00:00",
+      "cost_usd": 0.4,
+      "status": "KEEP",
+      "why": "Dense read + 1280 frames: willow on the low pan, light soil pan high and its soil lifting off into the air; camera drifts; finished, no face, no text, no freeze. Lands 'where does a tree's weight really come from?'",
+      "at": "2026-10-02T11:49:38+00:00",
+      "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/raw/v01/02_balance_trunk_t1.mp4",
+      "sha256": "41e811d22fe80080a48afb2a6b43ada48642915c28e61eb98871ff50e61b56cb",
+      "duration_s": 4.0,
+      "uat_sheet": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/uat/02_balance_trunk_t1_sheet.jpg",
+      "motion": {
+        "freeze_events_0p8s": 0
+      },
+      "api_s": 108.4,
+      "uat_at": "2026-10-02T11:52:21+00:00"
+    },
+    {
+      "plate": "10_van_helmont_sack",
+      "take": 1,
+      "model": "veo-3.1-generate-001",
+      "quality": "Quality",
+      "path": "vertex",
+      "seconds": 8,
+      "resolution": "1080p",
+      "generate_audio": false,
+      "framing": "try1",
+      "extra": null,
+      "replace": null,
+      "tag": null,
+      "prompt": "History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm sunlit cinematic light, natural-history world of the 1600s-1800s. Not photoreal, not flat 2D. No logos, no captions, no signs, no UI. No Orbit orange robot. No DNA helix. Animals are always alive, lively and unhurt. Premium Animistry-class 3D cartoon. Same Vilvoorde garden: Jan Baptist van Helmont, a Flemish doctor of about forty, long dark wavy hair to the shoulders, moustache and small pointed beard, black coat with a plain white falling collar, heaves a sack of dark soil onto the pan of a big brass balance standing on the flagstones, and watches the beam settle. Readable, finished face. Silent. Continuous motion through the final frame. No Explorer.  No Explorer. Silent picture only. Continuous real camera and subject motion through the final frame. HARD REJECT: photoreal, Ken Burns or still push, freeze frame, slow motion, Orbit orange robot, DNA helix, lava drip, gore, garbled text.",
+      "start_frame": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/refs/v01_vertex_stills/10_van_helmont_sack_v01.jpg",
+      "start_frame_sha256": "499c8063e0a41370084c6d2851ff5fcc6c143b498259a379bcfc1551317c79fa",
+      "op_name": "projects/gen-lang-client-0538779324/locations/us-central1/publishers/google/models/veo-3.1-generate-001/operations/ef946d06-1377-4006-ac5b-7a6afe218fd6",
+      "submitted_at": "2026-10-02T11:47:52+00:00",
+      "cost_usd": 1.6,
+      "status": "KEEP",
+      "why": "Van Helmont (long dark hair, moustache and beard, black coat, white falling collar) tips the soil sack onto the balance pan, which sinks to the flagstones; then stands by the beam; readable finished face; same Vilvoorde garden as the 006 garden still.",
+      "at": "2026-10-02T11:49:50+00:00",
+      "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/raw/v01/10_van_helmont_sack_t1.mp4",
+      "sha256": "092c9919758ca77ed48e183f42f38af82332d36930936607b4aaa96e90dc4036",
+      "duration_s": 8.0,
+      "uat_sheet": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/uat/10_van_helmont_sack_t1_sheet.jpg",
+      "motion": {
+        "freeze_events_0p8s": 0
+      },
+      "api_s": 120.1,
+      "uat_at": "2026-10-02T11:52:21+00:00"
+    },
+    {
+      "plate": "12_garden_sky",
+      "take": 1,
+      "model": "veo-3.1-fast-generate-001",
+      "quality": "Fast",
+      "path": "vertex",
+      "seconds": 8,
+      "resolution": "1080p",
+      "generate_audio": false,
+      "framing": "try1",
+      "extra": null,
+      "replace": null,
+      "tag": null,
+      "prompt": "History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm sunlit cinematic light, natural-history world of the 1600s-1800s. Not photoreal, not flat 2D. No logos, no captions, no signs, no UI. No Orbit orange robot. No DNA helix. Animals are always alive, lively and unhurt. Premium Animistry-class 3D cartoon. Same Vilvoorde garden: the clay pot with its little willow shoot alone on the flagstones while clouds race across the sky above in time-lapse and shadows swing round the walls. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.  No Explorer. Silent picture only. Continuous real camera and subject motion through the final frame. HARD REJECT: photoreal, Ken Burns or still push, freeze frame, slow motion, Orbit orange robot, DNA helix, lava drip, gore, garbled text.",
+      "start_frame": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/refs/v01_vertex_stills/12_garden_sky_v01.jpg",
+      "start_frame_sha256": "505a6ccfb04174e2ca01f93bb6a5957dc34cb094983d7b38adf3f20d85b738c0",
+      "op_name": "projects/gen-lang-client-0538779324/locations/us-central1/publishers/google/models/veo-3.1-fast-generate-001/operations/89535d3c-fda8-4445-af6f-c60f2881283d",
+      "submitted_at": "2026-10-02T11:47:52+00:00",
+      "cost_usd": 0.8,
+      "status": "FAIL",
+      "why": "Clouds fly down through the garden at pot height in 1.2-3.5 s and read as smoke puffs; not the clouds-racing-overhead time-lapse. Reframe: low camera, clouds stay high above the walls.",
+      "at": "2026-10-02T11:49:38+00:00",
+      "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/raw/v01/12_garden_sky_t1.mp4",
+      "sha256": "bdf54ef2574e16434eea073e27e3d5cbd859cee9d369397f4b1c15c7cac1e042",
+      "duration_s": 8.0,
+      "uat_sheet": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/uat/12_garden_sky_t1_sheet.jpg",
+      "motion": {
+        "freeze_events_0p8s": 0
+      },
+      "api_s": 107.8,
+      "uat_at": "2026-10-02T11:52:21+00:00"
+    },
+    {
+      "plate": "04_years_pass",
+      "take": 1,
+      "model": "veo-3.1-fast-generate-001",
+      "quality": "Fast",
+      "path": "vertex",
+      "seconds": 6,
+      "resolution": "1080p",
+      "generate_audio": false,
+      "framing": "try1",
+      "extra": null,
+      "replace": null,
+      "tag": null,
+      "prompt": "History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm sunlit cinematic light, natural-history world of the 1600s-1800s. Not photoreal, not flat 2D. No logos, no captions, no signs, no UI. No Orbit orange robot. No DNA helix. Animals are always alive, lively and unhurt. Premium Animistry-class 3D cartoon. Same sunlit table seen from above as time races: patches of sunlight sweep across it day after day, leaves outside the window flicker green, gold, bare and green again; the pot, the jar and the leaf stay put. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.  No Explorer. Silent picture only. Continuous real camera and subject motion through the final frame. HARD REJECT: photoreal, Ken Burns or still push, freeze frame, slow motion, Orbit orange robot, DNA helix, lava drip, gore, garbled text.",
+      "start_frame": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/refs/v01_vertex_stills/04_years_pass_v01.jpg",
+      "start_frame_sha256": "18fb392b306a33c25326e6a2210128c598146a46d57f77bd1de7d3e52d5d7bba",
+      "op_name": "projects/gen-lang-client-0538779324/locations/us-central1/publishers/google/models/veo-3.1-fast-generate-001/operations/c161dbb0-895e-43ce-8881-8b2ca567fa2c",
+      "submitted_at": "2026-10-02T11:52:35+00:00",
+      "cost_usd": 0.6,
+      "status": "FAIL",
+      "why": "Frozen for the first 0.54 s (freezedetect) and the time-lapse barely reads: faint shadow drift, no visible seasons outside the window.",
+      "at": "2026-10-02T11:55:09+00:00",
+      "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/raw/v01/04_years_pass_t1.mp4",
+      "sha256": "1c0023710a16b2f8b7627699d63bcb1baf40dc1a1d8d5dc967c42c2d00347f7b",
+      "duration_s": 6.0,
+      "uat_sheet": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/uat/04_years_pass_t1_sheet.jpg",
+      "motion": {
+        "freeze_events_0p8s": 0
+      },
+      "api_s": 0.6,
+      "uat_at": "2026-10-02T11:59:26+00:00"
+    },
+    {
+      "plate": "11_shoot_in_pot",
+      "take": 1,
+      "model": "veo-3.1-fast-generate-001",
+      "quality": "Fast",
+      "path": "vertex",
+      "seconds": 6,
+      "resolution": "1080p",
+      "generate_audio": false,
+      "framing": "try1",
+      "extra": null,
+      "replace": null,
+      "tag": null,
+      "prompt": "History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm sunlit cinematic light, natural-history world of the 1600s-1800s. Not photoreal, not flat 2D. No logos, no captions, no signs, no UI. No Orbit orange robot. No DNA helix. Animals are always alive, lively and unhurt. Premium Animistry-class 3D cartoon. Close on van Helmont's hands in black sleeves pressing a thin willow shoot into a big clay pot of dark soil and firming it in. Grey daylight. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.  No Explorer. Silent picture only. Continuous real camera and subject motion through the final frame. HARD REJECT: photoreal, Ken Burns or still push, freeze frame, slow motion, Orbit orange robot, DNA helix, lava drip, gore, garbled text.",
+      "start_frame": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/refs/v01_vertex_stills/11_shoot_in_pot_v01.jpg",
+      "start_frame_sha256": "ce3f66b5e92bae48ca8eefd3344041de8b6f501f22cdc2652e11f02d31ab88ec",
+      "op_name": "projects/gen-lang-client-0538779324/locations/us-central1/publishers/google/models/veo-3.1-fast-generate-001/operations/24066616-2ee7-4f79-8644-2f1f8c7d22a7",
+      "submitted_at": "2026-10-02T11:52:35+00:00",
+      "cost_usd": 0.6,
+      "status": "KEEP",
+      "why": "Van Helmont's hands (black sleeves, white cuffs) press soil round a thin willow shoot in the clay pot (checked 3.0 s at 1024 px); no face; use the first 4.8 s only — a hand deforms after ~5.0 s, outside the window.",
+      "at": "2026-10-02T11:55:09+00:00",
+      "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/raw/v01/11_shoot_in_pot_t1.mp4",
+      "sha256": "6e1066306155bdb461bdcf1a67bd13982670c573d2d6a3ed57dd5c8dfc4f06ad",
+      "duration_s": 6.0,
+      "uat_sheet": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/uat/11_shoot_in_pot_t1_sheet.jpg",
+      "motion": {
+        "freeze_events_0p8s": 0
+      },
+      "api_s": 0.5,
+      "uat_at": "2026-10-02T11:59:26+00:00"
+    },
+    {
+      "plate": "12_garden_sky",
+      "take": 2,
+      "model": "veo-3.1-fast-generate-001",
+      "quality": "Fast",
+      "path": "vertex",
+      "seconds": 8,
+      "resolution": "1080p",
+      "generate_audio": false,
+      "framing": "try2_low_sky",
+      "extra": null,
+      "replace": [
+        "while clouds race across the sky above in time-lapse and shadows swing round the walls.=>while, high in the sky far above the walls, clouds race past in time-lapse and shadows swing round the walls; the clouds stay up in the sky and never come down into the garden. Low camera looking slightly up past the pot."
+      ],
+      "tag": null,
+      "prompt": "History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm sunlit cinematic light, natural-history world of the 1600s-1800s. Not photoreal, not flat 2D. No logos, no captions, no signs, no UI. No Orbit orange robot. No DNA helix. Animals are always alive, lively and unhurt. Premium Animistry-class 3D cartoon. Same Vilvoorde garden: the clay pot with its little willow shoot alone on the flagstones while, high in the sky far above the walls, clouds race past in time-lapse and shadows swing round the walls; the clouds stay up in the sky and never come down into the garden. Low camera looking slightly up past the pot. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.  No Explorer. Silent picture only. Continuous real camera and subject motion through the final frame. HARD REJECT: photoreal, Ken Burns or still push, freeze frame, slow motion, Orbit orange robot, DNA helix, lava drip, gore, garbled text.",
+      "start_frame": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/refs/v01_vertex_stills/12_garden_sky_v01.jpg",
+      "start_frame_sha256": "505a6ccfb04174e2ca01f93bb6a5957dc34cb094983d7b38adf3f20d85b738c0",
+      "op_name": "projects/gen-lang-client-0538779324/locations/us-central1/publishers/google/models/veo-3.1-fast-generate-001/operations/4fcc0279-7e99-4a02-a4d4-c7ed7ecb385b",
+      "submitted_at": "2026-10-02T11:53:13+00:00",
+      "cost_usd": 0.8,
+      "status": "KEEP",
+      "why": "Low camera on the potted willow; clouds race high above the walls and the wall shadows swing round in time-lapse; same Vilvoorde garden; no freeze.",
+      "at": "2026-10-02T11:55:10+00:00",
+      "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/raw/v01/12_garden_sky_t2.mp4",
+      "sha256": "1713f3c33e3482f059df859c940c9f7685056d2a9180eb27605ff74194c8adf0",
+      "duration_s": 8.0,
+      "uat_sheet": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/uat/12_garden_sky_t2_sheet.jpg",
+      "motion": {
+        "freeze_events_0p8s": 0
+      },
+      "api_s": 0.8,
+      "uat_at": "2026-10-02T11:59:26+00:00"
+    },
+    {
+      "plate": "07_roots_mouths",
+      "take": 1,
+      "model": "veo-3.1-fast-generate-001",
+      "quality": "Fast",
+      "path": "vertex",
+      "seconds": 6,
+      "resolution": "1080p",
+      "generate_audio": false,
+      "framing": "try1",
+      "extra": null,
+      "replace": null,
+      "tag": null,
+      "prompt": "History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm sunlit cinematic light, natural-history world of the 1600s-1800s. Not photoreal, not flat 2D. No logos, no captions, no signs, no UI. No Orbit orange robot. No DNA helix. Animals are always alive, lively and unhurt. Premium Animistry-class 3D cartoon. Cutaway below the young olive tree: its roots in dark earth open little round mouths and drink the soil, gulping as the camera sinks slowly down through the layers. Friendly, not creepy. Silent. Continuous motion through the final frame. No Explorer.  No Explorer. Silent picture only. Continuous real camera and subject motion through the final frame. HARD REJECT: photoreal, Ken Burns or still push, freeze frame, slow motion, Orbit orange robot, DNA helix, lava drip, gore, garbled text.",
+      "start_frame": "../04_Generated-Clips/part01/refs/v01_vertex_stills/07_roots_mouths_v03.jpg",
+      "start_frame_sha256": "82b189685d9fb224666cacd918668d6ff37f3298c170f4e458a52cf48ba7e422",
+      "op_name": "projects/gen-lang-client-0538779324/locations/us-central1/publishers/google/models/veo-3.1-fast-generate-001/operations/6bd652c5-08b4-4b58-85af-e1f247127f3d",
+      "submitted_at": "2026-10-02T11:54:11+00:00",
+      "cost_usd": 0.6,
+      "status": "KEEP",
+      "why": "Root tips open as mouths and draw streams of soil up into themselves (checked 1.3 s at 1024 px), then the camera sinks through the earth into the root mass; gentle, not creepy; no face; no freeze.",
+      "at": "2026-10-02T11:57:44+00:00",
+      "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/raw/v01/07_roots_mouths_t1.mp4",
+      "sha256": "d1690730c0975b973b6ca884780466ec685d33c184c13a24e6f9c2b0f3bdaa07",
+      "duration_s": 6.0,
+      "uat_sheet": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/uat/07_roots_mouths_t1_sheet.jpg",
+      "motion": {
+        "freeze_events_0p8s": 0
+      },
+      "api_s": 157.4,
+      "uat_at": "2026-10-02T11:59:26+00:00"
+    },
+    {
+      "plate": "08_wood_food_air",
+      "take": 1,
+      "model": "veo-3.1-fast-generate-001",
+      "quality": "Fast",
+      "path": "vertex",
+      "seconds": 6,
+      "cost_usd": 0.6,
+      "status": "LOST",
+      "op_name": null,
+      "why": "local process killed while generate_videos was in flight (no op name returned); may or may not have been billed, counted as spent",
+      "at": "2026-10-02T11:54:57+00:00"
+    },
+    {
+      "plate": "08_wood_food_air",
+      "take": 2,
+      "model": "veo-3.1-fast-generate-001",
+      "quality": "Fast",
+      "path": "vertex",
+      "seconds": 6,
+      "resolution": "1080p",
+      "generate_audio": false,
+      "framing": "try1",
+      "extra": null,
+      "replace": null,
+      "tag": null,
+      "prompt": "History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm sunlit cinematic light, natural-history world of the 1600s-1800s. Not photoreal, not flat 2D. No logos, no captions, no signs, no UI. No Orbit orange robot. No DNA helix. Animals are always alive, lively and unhurt. Premium Animistry-class 3D cartoon. A stack of split logs, a round loaf of bread and a man's misty breath on a cold morning in the same shot; each one drifts slowly in turn into focus as the camera pans. No faces. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.  No Explorer. Silent picture only. Continuous real camera and subject motion through the final frame. HARD REJECT: photoreal, Ken Burns or still push, freeze frame, slow motion, Orbit orange robot, DNA helix, lava drip, gore, garbled text.",
+      "start_frame": "../04_Generated-Clips/part01/refs/v01_vertex_stills/08_wood_food_air_v02.jpg",
+      "start_frame_sha256": "554c20d27709762f7960769760776a5b0f9fc7e41e53ead77d5fb5266b18bdbe",
+      "op_name": "projects/gen-lang-client-0538779324/locations/us-central1/publishers/google/models/veo-3.1-fast-generate-001/operations/31e836bb-5557-435c-8694-81dffa0af9bb",
+      "submitted_at": "2026-10-02T11:55:07+00:00",
+      "cost_usd": 0.6,
+      "status": "FAIL",
+      "why": "A campfire flame appears at the right edge from ~2.4 s: a flame on a Fast plate is a hard fail. Breath puff only arrives at ~6 s.",
+      "at": "2026-10-02T11:57:04+00:00",
+      "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/raw/v01/08_wood_food_air_t2.mp4",
+      "sha256": "2e44b62a924786d8b9ee4012c4c0f6fbd0a4fa87d8e01f9f8ee66efc70ea769d",
+      "duration_s": 6.0,
+      "uat_sheet": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/uat/08_wood_food_air_t2_sheet.jpg",
+      "motion": {
+        "freeze_events_0p8s": 0
+      },
+      "api_s": 118.8,
+      "uat_at": "2026-10-02T11:59:26+00:00"
+    },
+    {
+      "plate": "04_years_pass",
+      "take": 2,
+      "model": "veo-3.1-fast-generate-001",
+      "quality": "Fast",
+      "path": "vertex",
+      "seconds": 6,
+      "resolution": "1080p",
+      "generate_audio": false,
+      "framing": "try2_fast_timelapse",
+      "extra": "Fast time-lapse from the very first frame, no pause: the bright patch of window sunlight slides right across the table and back again several times as days pass, and through the window the tree outside visibly turns green, then gold, then bare with snow, then green again.",
+      "replace": null,
+      "tag": null,
+      "prompt": "History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm sunlit cinematic light, natural-history world of the 1600s-1800s. Not photoreal, not flat 2D. No logos, no captions, no signs, no UI. No Orbit orange robot. No DNA helix. Animals are always alive, lively and unhurt. Premium Animistry-class 3D cartoon. Same sunlit table seen from above as time races: patches of sunlight sweep across it day after day, leaves outside the window flicker green, gold, bare and green again; the pot, the jar and the leaf stay put. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer. Fast time-lapse from the very first frame, no pause: the bright patch of window sunlight slides right across the table and back again several times as days pass, and through the window the tree outside visibly turns green, then gold, then bare with snow, then green again. No Explorer. Silent picture only. Continuous real camera and subject motion through the final frame. HARD REJECT: photoreal, Ken Burns or still push, freeze frame, slow motion, Orbit orange robot, DNA helix, lava drip, gore, garbled text.",
+      "start_frame": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/refs/v01_vertex_stills/04_years_pass_v01.jpg",
+      "start_frame_sha256": "18fb392b306a33c25326e6a2210128c598146a46d57f77bd1de7d3e52d5d7bba",
+      "op_name": "projects/gen-lang-client-0538779324/locations/us-central1/publishers/google/models/veo-3.1-fast-generate-001/operations/f9c5bb86-ee17-464e-91a0-240366f2e034",
+      "submitted_at": "2026-10-02T11:59:29+00:00",
+      "cost_usd": 0.6,
+      "status": "FAIL",
+      "why": "Seasons now race outside the window, but at ~2.0-3.2 s clumps of snow fall off the sill INSIDE the room in front of the wall; physics break in the window.",
+      "at": "2026-10-02T12:02:07+00:00",
+      "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/raw/v01/04_years_pass_t2.mp4",
+      "sha256": "ed4be443067bd1feec2083122e170443c2e6b0e307ef2e726b01c6b1e5106238",
+      "duration_s": 6.0,
+      "uat_sheet": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/uat/04_years_pass_t2_sheet.jpg",
+      "motion": {
+        "freeze_events_0p8s": 0
+      },
+      "api_s": 158.9,
+      "uat_at": "2026-10-02T12:11:18+00:00"
+    },
+    {
+      "plate": "08_wood_food_air",
+      "take": 3,
+      "model": "veo-3.1-fast-generate-001",
+      "quality": "Fast",
+      "path": "vertex",
+      "seconds": 6,
+      "resolution": "1080p",
+      "generate_audio": false,
+      "framing": "try3_no_fire",
+      "extra": "Absolutely no campfire, bonfire, fire, flame, embers or glow anywhere in frame at any time; the right side of the frame is open frosty grass. The farmer's misty breath puffs out within the first second.",
+      "replace": null,
+      "tag": null,
+      "prompt": "History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm sunlit cinematic light, natural-history world of the 1600s-1800s. Not photoreal, not flat 2D. No logos, no captions, no signs, no UI. No Orbit orange robot. No DNA helix. Animals are always alive, lively and unhurt. Premium Animistry-class 3D cartoon. A stack of split logs, a round loaf of bread and a man's misty breath on a cold morning in the same shot; each one drifts slowly in turn into focus as the camera pans. No faces. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer. Absolutely no campfire, bonfire, fire, flame, embers or glow anywhere in frame at any time; the right side of the frame is open frosty grass. The farmer's misty breath puffs out within the first second. No Explorer. Silent picture only. Continuous real camera and subject motion through the final frame. HARD REJECT: photoreal, Ken Burns or still push, freeze frame, slow motion, Orbit orange robot, DNA helix, lava drip, gore, garbled text.",
+      "start_frame": "../04_Generated-Clips/part01/refs/v01_vertex_stills/08_wood_food_air_v02.jpg",
+      "start_frame_sha256": "554c20d27709762f7960769760776a5b0f9fc7e41e53ead77d5fb5266b18bdbe",
+      "op_name": "projects/gen-lang-client-0538779324/locations/us-central1/publishers/google/models/veo-3.1-fast-generate-001/operations/047cd371-f53a-4ee6-9f5a-48c46ba501ee",
+      "submitted_at": "2026-10-02T11:59:29+00:00",
+      "cost_usd": 0.6,
+      "status": "KEEP",
+      "why": "Frosty field at dawn: cold log stack, loaf on a bench, farmer seen from behind breathing out misty puffs from the first second; camera pans; no fire, flame or glow anywhere (checked dense + 4.1 s at 1024 px); only his back, hat and cheek, no readable face in the 4.22 s window.",
+      "at": "2026-10-02T12:02:00+00:00",
+      "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/raw/v01/08_wood_food_air_t3.mp4",
+      "sha256": "8af6d144ce9741bf33ce9afebfc804ace366954f375c3566610614fcdb3aa7f6",
+      "duration_s": 6.0,
+      "uat_sheet": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/uat/08_wood_food_air_t3_sheet.jpg",
+      "motion": {
+        "freeze_events_0p8s": 0
+      },
+      "api_s": 152.7,
+      "uat_at": "2026-10-02T12:11:17+00:00"
+    },
+    {
+      "plate": "04_years_pass",
+      "take": 3,
+      "model": "veo-3.1-fast-generate-001",
+      "quality": "Fast",
+      "path": "vertex",
+      "seconds": 6,
+      "resolution": "1080p",
+      "generate_audio": false,
+      "framing": "try3_table_only",
+      "extra": null,
+      "replace": [
+        "Same sunlit table seen from above as time races: patches of sunlight sweep across it day after day, leaves outside the window flicker green, gold, bare and green again; the pot, the jar and the leaf stay put.=>Same table seen from above, framed tight on the tabletop so the window is out of frame. Fast time-lapse from the first frame: bright patches of sunlight and dappled leaf shadows sweep across the table again and again as days pass, and the light changes from warm summer gold to pale winter blue and back; the pot, the jar and the leaf stay put. Nothing falls or flies in the room."
+      ],
+      "tag": null,
+      "prompt": "History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm sunlit cinematic light, natural-history world of the 1600s-1800s. Not photoreal, not flat 2D. No logos, no captions, no signs, no UI. No Orbit orange robot. No DNA helix. Animals are always alive, lively and unhurt. Premium Animistry-class 3D cartoon. Same table seen from above, framed tight on the tabletop so the window is out of frame. Fast time-lapse from the first frame: bright patches of sunlight and dappled leaf shadows sweep across the table again and again as days pass, and the light changes from warm summer gold to pale winter blue and back; the pot, the jar and the leaf stay put. Nothing falls or flies in the room. Daylight from out of frame; no candle, flame, lantern, lamp or fire in shot. Silent. Continuous motion through the final frame. No Explorer.  No Explorer. Silent picture only. Continuous real camera and subject motion through the final frame. HARD REJECT: photoreal, Ken Burns or still push, freeze frame, slow motion, Orbit orange robot, DNA helix, lava drip, gore, garbled text.",
+      "start_frame": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/refs/v01_vertex_stills/04_years_pass_v01.jpg",
+      "start_frame_sha256": "18fb392b306a33c25326e6a2210128c598146a46d57f77bd1de7d3e52d5d7bba",
+      "op_name": "projects/gen-lang-client-0538779324/locations/us-central1/publishers/google/models/veo-3.1-fast-generate-001/operations/22ca8d70-7599-4cf3-a926-ad8977760149",
+      "submitted_at": "2026-10-02T12:11:20+00:00",
+      "cost_usd": 0.6,
+      "status": "KEEP",
+      "why": "Tabletop from above: warm summer light turns pale winter blue and back while sunlight patches and leaf shadows sweep the table; pot, jar and leaf stay put; nothing falls or flies; window only a sliver at the top edge; no freeze.",
+      "at": "2026-10-02T12:13:03+00:00",
+      "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/raw/v01/04_years_pass_t3.mp4",
+      "sha256": "778765c8a0b23e52a694061999afe0471a3e15f711c13ca219987d8fc02d7a1e",
+      "duration_s": 6.0,
+      "uat_sheet": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/uat/04_years_pass_t3_sheet.jpg",
+      "motion": {
+        "freeze_events_0p8s": 0
+      },
+      "api_s": 105.1,
+      "uat_at": "2026-10-02T12:13:43+00:00"
+    }
+  ],
+  "stills": [
+    {
+      "plate": "01_willow_air",
+      "v": 1,
+      "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/refs/v01_vertex_stills/01_willow_air_v01.jpg",
+      "sha256": "a4a9d2766b6b6ea790d769dd9ef6f163fbd0349ecad066e4422adc564928c6fe",
+      "model": "gemini-2.5-flash-image",
+      "seed": null,
+      "style_refs": [
+        "/Users/benjaminoats/YouTube/hos-005-blood/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part01/refs/v02_vertex_stills/03_band_tightens_v02.jpg"
+      ],
+      "extra": null,
+      "cost_usd": 0.039,
+      "at": "2026-10-02T11:41:56+00:00"
+    },
+    {
+      "plate": "01_willow_air",
+      "v": 2,
+      "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/refs/v01_vertex_stills/01_willow_air_v02.jpg",
+      "sha256": "bc49a9e35bfa39dde8d75c2c586e2d94365ac1c5c5ac995ceba60fc4182754b6",
+      "model": "gemini-2.5-flash-image",
+      "seed": null,
+      "style_refs": [
+        "/Users/benjaminoats/YouTube/hos-005-blood/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part01/refs/v02_vertex_stills/03_band_tightens_v02.jpg",
+        "/Users/benjaminoats/YouTube/hos-005-blood/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part01/refs/v02_vertex_stills/09_heart_clock_v02.jpg"
+      ],
+      "extra": "Stylised 3D cartoon like a premium animated feature: rounded simplified willow, chunky soft leaves, painterly sky, NOT a photograph. The air is shown as a few dozen soft, curving, glittering pale-gold ribbons that drift in from the sky on all sides, weave through the hanging leaves and flow down along the branches into the trunk. No starburst, no lens flare, no straight laser lines, no bright point in the middle.",
+      "cost_usd": 0.039,
+      "at": "2026-10-02T11:42:24+00:00"
+    },
+    {
+      "plate": "12_garden_sky",
+      "v": 1,
+      "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/refs/v01_vertex_stills/12_garden_sky_v01.jpg",
+      "sha256": "505a6ccfb04174e2ca01f93bb6a5957dc34cb094983d7b38adf3f20d85b738c0",
+      "model": "gemini-2.5-flash-image",
+      "seed": "../04_Generated-Clips/part02/refs/v01_vertex_stills/06_garden_years_v01.jpg",
+      "style_refs": [
+        "../04_Generated-Clips/part01/refs/v01_vertex_stills/01_willow_air_v02.jpg"
+      ],
+      "extra": "Stylised 3D cartoon like a premium animated feature, rounded simplified shapes, NOT a photograph.",
+      "cost_usd": 0.039,
+      "at": "2026-10-02T11:45:44+00:00"
+    },
+    {
+      "plate": "06_aristotle",
+      "v": 1,
+      "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/refs/v01_vertex_stills/06_aristotle_v01.jpg",
+      "sha256": "ced7d70f67d5a9a5c362481a0d006917029195672e5dd41e20b1c94704b32689",
+      "model": "gemini-2.5-flash-image",
+      "seed": null,
+      "style_refs": [
+        "../04_Generated-Clips/part01/refs/v01_vertex_stills/01_willow_air_v02.jpg"
+      ],
+      "extra": "Stylised 3D cartoon like a premium animated feature, rounded simplified shapes, NOT a photograph.",
+      "cost_usd": 0.039,
+      "at": "2026-10-02T11:45:44+00:00"
+    },
+    {
+      "plate": "10_van_helmont_sack",
+      "v": 1,
+      "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/refs/v01_vertex_stills/10_van_helmont_sack_v01.jpg",
+      "sha256": "499c8063e0a41370084c6d2851ff5fcc6c143b498259a379bcfc1551317c79fa",
+      "model": "gemini-2.5-flash-image",
+      "seed": "../04_Generated-Clips/part02/refs/v01_vertex_stills/06_garden_years_v01.jpg",
+      "style_refs": [
+        "../04_Generated-Clips/part01/refs/v01_vertex_stills/01_willow_air_v02.jpg"
+      ],
+      "extra": "Stylised 3D cartoon like a premium animated feature, rounded simplified shapes, NOT a photograph.",
+      "cost_usd": 0.039,
+      "at": "2026-10-02T11:45:44+00:00"
+    },
+    {
+      "plate": "03_pot_jar_leaf",
+      "v": 1,
+      "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/refs/v01_vertex_stills/03_pot_jar_leaf_v01.jpg",
+      "sha256": "9ac35a1a9c7ed0dff10666774cd189180efd5dbaea329bd367ada2a9aa8ecd8c",
+      "model": "gemini-2.5-flash-image",
+      "seed": null,
+      "style_refs": [
+        "../04_Generated-Clips/part01/refs/v01_vertex_stills/01_willow_air_v02.jpg"
+      ],
+      "extra": "Stylised 3D cartoon like a premium animated feature, rounded simplified shapes, NOT a photograph.",
+      "cost_usd": 0.039,
+      "at": "2026-10-02T11:45:44+00:00"
+    },
+    {
+      "plate": "08_wood_food_air",
+      "v": 1,
+      "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/refs/v01_vertex_stills/08_wood_food_air_v01.jpg",
+      "sha256": "fbca4ae5b488ccad94a091e9eea181aa626c251ccbd84cd0ad289a679ddf86f9",
+      "model": "gemini-2.5-flash-image",
+      "seed": null,
+      "style_refs": [
+        "../04_Generated-Clips/part01/refs/v01_vertex_stills/01_willow_air_v02.jpg"
+      ],
+      "extra": "Stylised 3D cartoon like a premium animated feature, rounded simplified shapes, NOT a photograph.",
+      "cost_usd": 0.039,
+      "at": "2026-10-02T11:45:45+00:00"
+    },
+    {
+      "plate": "02_balance_trunk",
+      "v": 1,
+      "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/refs/v01_vertex_stills/02_balance_trunk_v01.jpg",
+      "sha256": "886d8a0ec9f93f70c8950914fc2f877846f1b2f0cd223c2359ea65115d56a892",
+      "model": "gemini-2.5-flash-image",
+      "seed": null,
+      "style_refs": [
+        "../04_Generated-Clips/part01/refs/v01_vertex_stills/01_willow_air_v02.jpg"
+      ],
+      "extra": "Stylised 3D cartoon like a premium animated feature, rounded simplified shapes, NOT a photograph.",
+      "cost_usd": 0.039,
+      "at": "2026-10-02T11:46:25+00:00"
+    },
+    {
+      "plate": "05_olive_grove",
+      "v": 1,
+      "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/refs/v01_vertex_stills/05_olive_grove_v01.jpg",
+      "sha256": "2c373db27e6051d98a2f79f9a5ee66b0f6b8f7b7ad80275b944243231c7856fc",
+      "model": "gemini-2.5-flash-image",
+      "seed": null,
+      "style_refs": [
+        "../04_Generated-Clips/part01/refs/v01_vertex_stills/01_willow_air_v02.jpg"
+      ],
+      "extra": "Stylised 3D cartoon like a premium animated feature, rounded simplified shapes, NOT a photograph.",
+      "cost_usd": 0.039,
+      "at": "2026-10-02T11:47:02+00:00"
+    },
+    {
+      "plate": "04_years_pass",
+      "v": 1,
+      "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/refs/v01_vertex_stills/04_years_pass_v01.jpg",
+      "sha256": "18fb392b306a33c25326e6a2210128c598146a46d57f77bd1de7d3e52d5d7bba",
+      "model": "gemini-2.5-flash-image",
+      "seed": "../04_Generated-Clips/part01/refs/v01_vertex_stills/03_pot_jar_leaf_v01.jpg",
+      "style_refs": [
+        "../04_Generated-Clips/part01/refs/v01_vertex_stills/01_willow_air_v02.jpg"
+      ],
+      "extra": "Stylised 3D cartoon like a premium animated feature, rounded simplified shapes, NOT a photograph. Seen from directly above.",
+      "cost_usd": 0.039,
+      "at": "2026-10-02T11:48:01+00:00"
+    },
+    {
+      "plate": "11_shoot_in_pot",
+      "v": 1,
+      "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/refs/v01_vertex_stills/11_shoot_in_pot_v01.jpg",
+      "sha256": "ce3f66b5e92bae48ca8eefd3344041de8b6f501f22cdc2652e11f02d31ab88ec",
+      "model": "gemini-2.5-flash-image",
+      "seed": "../04_Generated-Clips/part01/refs/v01_vertex_stills/10_van_helmont_sack_v01.jpg",
+      "style_refs": [
+        "../04_Generated-Clips/part01/refs/v01_vertex_stills/01_willow_air_v02.jpg"
+      ],
+      "extra": "Stylised 3D cartoon like a premium animated feature, rounded simplified shapes, NOT a photograph. Close shot: only his hands and black sleeves with white cuffs; no face in frame.",
+      "cost_usd": 0.039,
+      "at": "2026-10-02T11:49:14+00:00"
+    },
+    {
+      "plate": "08_wood_food_air",
+      "v": 2,
+      "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/refs/v01_vertex_stills/08_wood_food_air_v02.jpg",
+      "sha256": "554c20d27709762f7960769760776a5b0f9fc7e41e53ead77d5fb5266b18bdbe",
+      "model": "gemini-2.5-flash-image",
+      "seed": null,
+      "style_refs": [
+        "../04_Generated-Clips/part01/refs/v01_vertex_stills/01_willow_air_v02.jpg"
+      ],
+      "extra": "Stylised 3D cartoon like a premium animated feature, rounded simplified shapes, NOT a photograph. OUTDOORS on a frosty farmyard at dawn, frost on the ground, cold blue-gold light. Left: a stack of split logs, cold, unlit. Middle: a round loaf of bread on a wooden bench. Right: a farmer seen from behind, only his back, hat and shoulders, breathing out one soft white puff of misty breath into the cold air. No smoke, no fire, no chimney, no steam from the logs or bread; nothing burns.",
+      "cost_usd": 0.039,
+      "at": "2026-10-02T11:50:22+00:00"
+    },
+    {
+      "plate": "07_roots_mouths",
+      "v": 1,
+      "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/refs/v01_vertex_stills/07_roots_mouths_v01.jpg",
+      "sha256": "bb076b860f20137cf49032026c9548b3c4756e23619ac12f4b74099e8596c64a",
+      "model": "gemini-2.5-flash-image",
+      "seed": "../04_Generated-Clips/part01/refs/v01_vertex_stills/06_aristotle_v01.jpg",
+      "style_refs": [
+        "../04_Generated-Clips/part01/refs/v01_vertex_stills/01_willow_air_v02.jpg"
+      ],
+      "extra": "Stylised 3D cartoon like a premium animated feature, rounded simplified shapes, NOT a photograph. Side cutaway through the earth showing the same young olive tree's roots; no people in frame.",
+      "cost_usd": 0.039,
+      "at": "2026-10-02T11:51:50+00:00"
+    },
+    {
+      "plate": "07_roots_mouths",
+      "v": 2,
+      "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/refs/v01_vertex_stills/07_roots_mouths_v02.jpg",
+      "sha256": "c49e1c1ebeff14280250e79c41c84432d8291261240c08a30ed8d11d9b5b1cbc",
+      "model": "gemini-2.5-flash-image",
+      "seed": "../04_Generated-Clips/part01/refs/v01_vertex_stills/06_aristotle_v01.jpg",
+      "style_refs": [
+        "../04_Generated-Clips/part01/refs/v01_vertex_stills/01_willow_air_v02.jpg"
+      ],
+      "extra": "Stylised 3D cartoon like a premium animated feature, NOT a photograph. Side cutaway through warm brown earth under the same young olive tree. Only four or five root tips, each with ONE big friendly cartoon mouth, round and smiling, happily gulping crumbs of soil like a cheerful character. No other holes, spots, eyes or sores on the roots; bright, warm and funny, never creepy. No people in frame.",
+      "cost_usd": 0.039,
+      "at": "2026-10-02T11:53:22+00:00"
+    },
+    {
+      "plate": "07_roots_mouths",
+      "v": 3,
+      "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/refs/v01_vertex_stills/07_roots_mouths_v03.jpg",
+      "sha256": "82b189685d9fb224666cacd918668d6ff37f3298c170f4e458a52cf48ba7e422",
+      "model": "gemini-2.5-flash-image",
+      "seed": null,
+      "style_refs": [
+        "../04_Generated-Clips/part01/refs/v01_vertex_stills/01_willow_air_v02.jpg",
+        "../04_Generated-Clips/part01/refs/v01_vertex_stills/06_aristotle_v01.jpg"
+      ],
+      "extra": "Stylised 3D cartoon like a premium animated feature, NOT a photograph. Side cutaway: the young olive tree's trunk above ground, and below it its real, natural branching roots growing down continuously from the trunk into warm brown earth. At the tips of four of the roots, the root end opens like a small round mouth, drinking up crumbs of soil. Mouths only: NO eyes, NO faces, NO teeth, no holes or spots anywhere else. Warm, clean, gentle.",
+      "cost_usd": 0.039,
+      "at": "2026-10-02T11:53:54+00:00"
+    },
+    {
+      "plate": "09_vilvoorde",
+      "v": 1,
+      "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/refs/v01_vertex_stills/09_vilvoorde_v01.jpg",
+      "sha256": "f3223248e623b238327c07c6229e84d4ff7034767b2f24152b7491966fed54b8",
+      "model": "gemini-2.5-flash-image",
+      "seed": null,
+      "style_refs": [
+        "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/refs/v01_vertex_stills/01_willow_air_v01.jpg",
+        "/Users/benjaminoats/YouTube/hos-005-blood/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/04_Generated-Clips/part01/refs/v02_vertex_stills/03_band_tightens_v02.jpg"
+      ],
+      "extra": null,
+      "cost_usd": 0.039,
+      "at": "2026-10-02T12:24:07+00:00"
+    }
+  ],
+  "plates": {
+    "01_willow_air": {
+      "keep": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/raw/v01/01_willow_air_t1.mp4",
+      "take": 1,
+      "sha256": "19b78371f472bef6ee193d3f87aa5afd5c3ae5b51a2d4f91f9ea2c5d733c9711",
+      "model": "veo-3.1-generate-001",
+      "path": "vertex"
+    },
+    "02_balance_trunk": {
+      "keep": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/raw/v01/02_balance_trunk_t1.mp4",
+      "take": 1,
+      "sha256": "41e811d22fe80080a48afb2a6b43ada48642915c28e61eb98871ff50e61b56cb",
+      "model": "veo-3.1-fast-generate-001",
+      "path": "vertex"
+    },
+    "03_pot_jar_leaf": {
+      "keep": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/raw/v01/03_pot_jar_leaf_t1.mp4",
+      "take": 1,
+      "sha256": "b1aaba6dbb36659388751fe942c5a7b367d35a9e181c3599a5cf8f4e7b6c96cb",
+      "model": "veo-3.1-fast-generate-001",
+      "path": "vertex"
+    },
+    "05_olive_grove": {
+      "keep": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/raw/v01/05_olive_grove_t1.mp4",
+      "take": 1,
+      "sha256": "c7bd73390291ee772858e411f597f2045ef99f4d8692b11ad5c1993c6975837a",
+      "model": "veo-3.1-fast-generate-001",
+      "path": "vertex"
+    },
+    "06_aristotle": {
+      "keep": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/raw/v01/06_aristotle_t1.mp4",
+      "take": 1,
+      "sha256": "ad1aae4cecd1a6e312ad771769c1de0d538b514937e6989fbab27d871de4b368",
+      "model": "veo-3.1-generate-001",
+      "path": "vertex"
+    },
+    "10_van_helmont_sack": {
+      "keep": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/raw/v01/10_van_helmont_sack_t1.mp4",
+      "take": 1,
+      "sha256": "092c9919758ca77ed48e183f42f38af82332d36930936607b4aaa96e90dc4036",
+      "model": "veo-3.1-generate-001",
+      "path": "vertex"
+    },
+    "07_roots_mouths": {
+      "keep": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/raw/v01/07_roots_mouths_t1.mp4",
+      "take": 1,
+      "sha256": "d1690730c0975b973b6ca884780466ec685d33c184c13a24e6f9c2b0f3bdaa07",
+      "model": "veo-3.1-fast-generate-001",
+      "path": "vertex"
+    },
+    "11_shoot_in_pot": {
+      "keep": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/raw/v01/11_shoot_in_pot_t1.mp4",
+      "take": 1,
+      "sha256": "6e1066306155bdb461bdcf1a67bd13982670c573d2d6a3ed57dd5c8dfc4f06ad",
+      "model": "veo-3.1-fast-generate-001",
+      "path": "vertex"
+    },
+    "12_garden_sky": {
+      "keep": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/raw/v01/12_garden_sky_t2.mp4",
+      "take": 2,
+      "sha256": "1713f3c33e3482f059df859c940c9f7685056d2a9180eb27605ff74194c8adf0",
+      "model": "veo-3.1-fast-generate-001",
+      "path": "vertex"
+    },
+    "08_wood_food_air": {
+      "keep": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/raw/v01/08_wood_food_air_t3.mp4",
+      "take": 3,
+      "sha256": "8af6d144ce9741bf33ce9afebfc804ace366954f375c3566610614fcdb3aa7f6",
+      "model": "veo-3.1-fast-generate-001",
+      "path": "vertex"
+    },
+    "04_years_pass": {
+      "keep": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part01/raw/v01/04_years_pass_t3.mp4",
+      "take": 3,
+      "sha256": "778765c8a0b23e52a694061999afe0471a3e15f711c13ca219987d8fc02d7a1e",
+      "model": "veo-3.1-fast-generate-001",
+      "path": "vertex"
+    }
+  },
+  "cost_usd_total": 13.624,
+  "updated": "2026-10-02T12:24:07+00:00"
+}

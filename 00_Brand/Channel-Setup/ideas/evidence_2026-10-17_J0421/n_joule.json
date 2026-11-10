@@ -1,0 +1,215 @@
+{
+ "pulled": "2026-10-17",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "thermodynamics",
+  "james prescott joule"
+ ],
+ "autocomplete": {
+  "thermodynamics": [
+   "thermodynamics",
+   "thermodynamics chemistry",
+   "thermodynamics organic chemistry tutor",
+   "thermodynamics engineering",
+   "thermodynamics physics",
+   "thermodynamics chemistry class 11",
+   "thermodynamics 1",
+   "thermodynamics physics class 11",
+   "thermodynamics chemistry class 11 one shot",
+   "thermodynamics one shot"
+  ],
+  "james prescott joule": [
+   "james prescott joule",
+   "james prescott joule biography",
+   "james prescott joule experiment",
+   "james prescott joule drawing",
+   "james prescott joule cz",
+   "experimento de james prescott joule"
+  ]
+ },
+ "sharedTitleWords": [
+  "khan academy",
+  "physics khan",
+  "of thermodynamics",
+  "thermodynamics physics",
+  "thermodynamics crash",
+  "crash course",
+  "first law",
+  "law of",
+  "the first"
+ ],
+ "neighbours": [
+  {
+   "id": "lmWh9jV_1ac",
+   "title": "How do tornadoes form? - James Spann",
+   "channel": "TED-Ed",
+   "views": "10,816,169 views",
+   "age": "12 yr ago",
+   "length": "4:12",
+   "tier": 1,
+   "viewCount": 10816169,
+   "foundBy": "ted-ed thermodynamics",
+   "onTopic": true
+  },
+  {
+   "id": "MBRTR2dlwvA",
+   "title": "The vocabulary of electricity - James Sheils",
+   "channel": "TED-Ed",
+   "views": "692,528 views",
+   "age": "14 yr ago",
+   "length": "6:57",
+   "tier": 1,
+   "viewCount": 692528,
+   "foundBy": "ted-ed james prescott joule",
+   "onTopic": true
+  },
+  {
+   "id": "4i1MUWJoI0U",
+   "title": "Thermodynamics: Crash Course Physics #23",
+   "channel": "CrashCourse",
+   "views": "2,037,511 views",
+   "age": "10 yr ago",
+   "length": "10:04",
+   "tier": 2,
+   "viewCount": 2037511,
+   "foundBy": "thermodynamics",
+   "onTopic": true
+  },
+  {
+   "id": "Xb05CaG7TsQ",
+   "title": "First law of thermodynamics / internal energy | Thermodynamics | Physics | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "1,570,743 views",
+   "age": "17 yr ago",
+   "length": "17:40",
+   "tier": 2,
+   "viewCount": 1570743,
+   "foundBy": "khan academy thermodynamics",
+   "onTopic": true
+  },
+  {
+   "id": "fucyI7Ouj2c",
+   "title": "Enthalpy | Thermodynamics | Chemistry | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "1,555,218 views",
+   "age": "17 yr ago",
+   "length": "15:07",
+   "tier": 2,
+   "viewCount": 1555218,
+   "foundBy": "khan academy thermodynamics",
+   "onTopic": true
+  },
+  {
+   "id": "tQcB9BLUoVI",
+   "title": "Thermodynamics part 1: Molecular theory of gases | Physics | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "1,073,427 views",
+   "age": "18 yr ago",
+   "length": "9:49",
+   "tier": 2,
+   "viewCount": 1073427,
+   "foundBy": "khan academy thermodynamics",
+   "onTopic": true
+  },
+  {
+   "id": "aAfBSJObd6Y",
+   "title": "Carnot cycle and Carnot engine | Thermodynamics | Physics | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "765,957 views",
+   "age": "17 yr ago",
+   "length": "20:53",
+   "tier": 2,
+   "viewCount": 765957,
+   "foundBy": "khan academy thermodynamics",
+   "onTopic": true
+  },
+  {
+   "id": "fSEFfWf2au0",
+   "title": "The First & Zeroth Laws of Thermodynamics: Crash Course Engineering #9",
+   "channel": "CrashCourse",
+   "views": "466,450 views",
+   "age": "8 yr ago",
+   "length": "10:05",
+   "tier": 2,
+   "viewCount": 466450,
+   "foundBy": "thermodynamics",
+   "onTopic": true
+  },
+  {
+   "id": "1OFlW8OXN64",
+   "title": "What is the First Law of Thermodynamics?",
+   "channel": "The Royal Institution",
+   "views": "439,163 views",
+   "age": "9 yr ago",
+   "length": "4:09",
+   "tier": 2,
+   "viewCount": 439163,
+   "foundBy": "thermodynamics",
+   "onTopic": true
+  },
+  {
+   "id": "xJf6pHqLzs0",
+   "title": "Entropy intuition | Thermodynamics | Physics | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "421,613 views",
+   "age": "17 yr ago",
+   "length": "19:15",
+   "tier": 2,
+   "viewCount": 421613,
+   "foundBy": "khan academy thermodynamics",
+   "onTopic": true
+  },
+  {
+   "id": "VpiLucwH-AQ",
+   "title": "Thermodynamics: Crash Course History of Science #26",
+   "channel": "CrashCourse",
+   "views": "344,609 views",
+   "age": "7 yr ago",
+   "length": "12:29",
+   "tier": 2,
+   "viewCount": 344609,
+   "foundBy": "thermodynamics",
+   "onTopic": true
+  },
+  {
+   "id": "f1OokOgtcqg",
+   "title": "First and second laws of thermodynamics | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "73,731 views",
+   "age": "2 yr ago",
+   "length": "12:20",
+   "tier": 2,
+   "viewCount": 73731,
+   "foundBy": "thermodynamics",
+   "onTopic": true
+  },
+  {
+   "id": "FPPv1mkRpKw",
+   "title": "Heat transfer | Thermodynamics | High school physics | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "31,578 views",
+   "age": "5 yr ago",
+   "length": "6:04",
+   "tier": 2,
+   "viewCount": 31578,
+   "foundBy": "khan academy thermodynamics",
+   "onTopic": true
+  },
+  {
+   "id": "jhCRq0acSDg",
+   "title": "Emotional Thermodynamics | Josh Kim | TEDxHarry Ainlay School Youth",
+   "channel": "TEDx Talks",
+   "views": "88 views",
+   "age": "1 yr ago",
+   "length": "13:21",
+   "tier": 1,
+   "viewCount": 88,
+   "foundBy": "thermodynamics ted",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 5,
+ "gate": "PASS",
+ "hasTed": true,
+ "failedQueries": []
+}

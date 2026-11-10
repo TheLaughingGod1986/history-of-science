@@ -1,0 +1,133 @@
+{
+  "job": "J0211",
+  "author": "codex",
+  "status": "draft_for_chief",
+  "channel_id": "UCXp7HkBIl1LgaznXuZHJyRg",
+  "channel_handle": "@HistoryOfScienceYT",
+  "upload_authorized": false,
+  "inputs": {
+    "SCRIPTS_v02.md": "0c6bf7dbf2eb5a366dcf0eab6fda578117216c7ed0c4747f5691883b47bf5fbc",
+    "SFX_LEVEL_v01.json": "018f71666e418a19903e7755579d48d0efac4b605ca031836a5982ca728d313a",
+    "COVERS_J0209_v01.json": "f932d7fcea8038781b1470c3ddb75aa08e9e162353c55c6a20c90f89de342639",
+    "SOURCES_v01.md": "af65e76d32400e1154a04de8bc17f5015c123b7a1da3ab7f21815fff62be7dfc"
+  },
+  "review_required": [
+    "Chief listing approval and merge",
+    "Gemini listing facts check not run: automatic approval review rejected external repository-content transfer",
+    "Confirm current S4 v04 acceptance; brief cites v03 KEEP, git history records v04 Chief AMEND 6133314609"
+  ],
+  "listings": [
+    {
+      "id": "s1",
+      "title": "Who Discovered Infrared Light?",
+      "description": "William Herschel discovered infrared light in 1800, with a prism and thermometers.\n\nJust beyond the red end of the visible spectrum, his thermometer grew warmer still. The light was invisible, but its warmth gave it away.\n\nSources:\nCaltech IPAC, Herschel experiment: https://coolcosmos.ipac.caltech.edu/page/herschel_experiment\nNASA, Infrared Waves: https://science.nasa.gov/ems/07_infraredwaves/\n\nPictures: AI-generated 3D scenes. Historical claims follow the sources listed above.",
+      "tags": [
+        "infrared light",
+        "William Herschel",
+        "infrared discovery",
+        "Herschel experiment",
+        "light spectrum",
+        "prism experiment"
+      ],
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/shorts_v01/hos_sa_s1_herschel_infrared_v01.mp4",
+      "file_sha256": "e00f20b39383da192187e080b1307cd1e61b9f4fe68c3052c0f0fe66e3372f1c",
+      "cover": "docs/STANDALONE_SHORTS_TEST_2026-10/covers_j0209_v01/hos_sa_s1_cover_v01.png",
+      "cover_sha256": "2e7de244f872d38ea60aed212c90a1185f592759512f17a5ec7c0e0293ea8d8d",
+      "cover_words": "HEAT beyond RED",
+      "planned_air_date": "2026-10-19",
+      "planned_local_time": "11:30",
+      "timezone": "Europe/London",
+      "related_video_id": "frP_YrNShsU",
+      "source_rows": [
+        "1a",
+        "1b",
+        "1b+",
+        "1c"
+      ],
+      "facts_review": "Local comparison with locked script and source record only; independent Gemini review pending"
+    },
+    {
+      "id": "s2",
+      "title": "How Was Phosphorus Discovered?",
+      "description": "Hennig Brand discovered phosphorus while trying to find gold in urine in Hamburg in 1669.\n\nHe boiled it down to a black sludge. Instead of gold, he found a white substance that glowed in the dark.\n\nSources:\nHennig Brand biography: https://www.famousscientists.org/hennig-brand/\nLos Alamos National Laboratory, Phosphorus: https://periodic.lanl.gov/15.shtml\n\nPictures: AI-generated 3D scenes. Historical claims follow the sources listed above.",
+      "tags": [
+        "phosphorus",
+        "Hennig Brand",
+        "phosphorus discovery",
+        "white phosphorus",
+        "alchemy",
+        "history of chemistry"
+      ],
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/shorts_v01/hos_sa_s2_brand_phosphorus_v01.mp4",
+      "file_sha256": "66462ea906155fb15269a8c471e2fbc3021dd76132d442219295f553ad49eebb",
+      "cover": "docs/STANDALONE_SHORTS_TEST_2026-10/covers_j0209_v01/hos_sa_s2_cover_v01.png",
+      "cover_sha256": "36710ffdc0c7cdc0b0713ba2badc51a83431e87b80b95824880dfd9b44c6fdc4",
+      "cover_words": "GLOW not GOLD",
+      "planned_air_date": "2026-10-21",
+      "planned_local_time": "11:30",
+      "timezone": "Europe/London",
+      "related_video_id": "AL_-qlWko_g",
+      "source_rows": [
+        "2a",
+        "2b"
+      ],
+      "facts_review": "Local comparison with locked script and source record only; independent Gemini review pending"
+    },
+    {
+      "id": "s3",
+      "title": "How Did John Snow Stop Cholera?",
+      "description": "John Snow traced cholera deaths to the Broad Street water pump and had its handle removed.\n\nIn Soho, London, in 1854, many still blamed bad air. Snow tracked where the dead had lived: the deaths clustered around one pump.\n\nSources:\nUCLA, Broad Street pump outbreak: https://epi-snow.ph.ucla.edu/Stream2_BSPoutbreak_a.html\nUCLA, Removal of the pump handle: https://epi-snow.ph.ucla.edu/Stream2_BSPoutbreak_e.html\n\nPictures: AI-generated 3D scenes. Historical claims follow the sources listed above.",
+      "tags": [
+        "John Snow",
+        "cholera",
+        "Broad Street pump",
+        "1854 cholera outbreak",
+        "Soho cholera",
+        "history of epidemiology"
+      ],
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/shorts_v01/hos_sa_s3_snow_pump_v02.mp4",
+      "file_sha256": "634abd5ef8a0d031c0926b049e612efc56e41c22cdd96a17e3cf76ba2508ec1b",
+      "cover": "docs/STANDALONE_SHORTS_TEST_2026-10/covers_j0209_v01/hos_sa_s3_cover_v01.png",
+      "cover_sha256": "49fe8beb5e0b6dbf1ed7808992cd287c4e3b5bc71e70f9126891ed5c0dd1fddf",
+      "cover_words": "REMOVE the HANDLE",
+      "planned_air_date": "2026-10-26",
+      "planned_local_time": "11:30",
+      "timezone": "Europe/London",
+      "related_video_id": "_C92tIJCk8A",
+      "source_rows": [
+        "3a+",
+        "3c",
+        "3d"
+      ],
+      "facts_review": "Local comparison with locked script and source record only; independent Gemini review pending"
+    },
+    {
+      "id": "s4",
+      "title": "Are Marie Curie's Notebooks Still Radioactive?",
+      "description": "Yes. Marie Curie's notebooks are still radioactive, and her papers are kept in lead-lined boxes in Paris.\n\nIn 1898, Marie and Pierre Curie discovered polonium, then radium. This Short tells the story behind the notebooks.\n\nSources:\nAIP, The discovery of radium: https://history.aip.org/history/exhibits/curie/resbr2.htm\nScienceAlert, Marie Curie personal effects: https://www.sciencealert.com/these-personal-effects-of-marie-curie-will-be-radioactive-for-another-1-500-years\n\nPictures: AI-generated 3D scenes. Historical claims follow the sources listed above.",
+      "tags": [
+        "Marie Curie",
+        "radioactive notebooks",
+        "Curie notebooks",
+        "Pierre Curie",
+        "radium",
+        "polonium"
+      ],
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/shorts_v01/hos_sa_s4_curie_notebooks_v04.mp4",
+      "file_sha256": "13a3bf5e07cb65014f5aa607c0a0e47be02753e82f4e7fb96f7830456d6fd3eb",
+      "cover": "docs/STANDALONE_SHORTS_TEST_2026-10/covers_j0209_v01/hos_sa_s4_cover_v01.png",
+      "cover_sha256": "e6bc8835b48c68180ae6ddc12397c08df615856cdda0b7385d19306d8f326e04",
+      "cover_words": "BOOKS behind LEAD",
+      "planned_air_date": "2026-10-28",
+      "planned_local_time": "11:30",
+      "timezone": "Europe/London",
+      "related_video_id": "GHZDsiH7L7A",
+      "source_rows": [
+        "4a",
+        "4a+",
+        "4d"
+      ],
+      "facts_review": "Local comparison with locked script and source record only; independent Gemini review pending"
+    }
+  ]
+}

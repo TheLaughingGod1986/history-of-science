@@ -1,0 +1,68 @@
+[
+  {
+    "row": "s01_01_mouldy_dish_v01",
+    "timeline_in": 0.0,
+    "timeline_out": 4.1,
+    "source": "01_mouldy_dish_v01.jpg",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  },
+  {
+    "row": "s02_02_back_from_holiday_v01",
+    "timeline_in": 4.1,
+    "timeline_out": 8.5,
+    "source": "02_back_from_holiday_v01.jpg",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 4.1
+    },
+    "video": true
+  },
+  {
+    "row": "s03_03_fuzzy_mould_v01",
+    "timeline_in": 8.5,
+    "timeline_out": 11.32,
+    "source": "03_fuzzy_mould_v01.jpg",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 8.5
+    },
+    "video": true
+  },
+  {
+    "row": "s04_04_clear_ring_v01",
+    "timeline_in": 11.32,
+    "timeline_out": 16.92,
+    "source": "04_clear_ring_v01.jpg",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 11.32
+    },
+    "video": true
+  },
+  {
+    "row": "s05_05_medicine_bottles_v01",
+    "timeline_in": 16.92,
+    "timeline_out": 18.9,
+    "source": "05_medicine_bottles_v01.jpg",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 16.92
+    },
+    "video": true
+  },
+  {
+    "row": "s06_01_mouldy_dish_v01",
+    "timeline_in": 18.9,
+    "timeline_out": 21.5,
+    "source": "end_card_loop_01_mouldy_dish_v01.jpg",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 18.9
+    },
+    "video": true
+  }
+]

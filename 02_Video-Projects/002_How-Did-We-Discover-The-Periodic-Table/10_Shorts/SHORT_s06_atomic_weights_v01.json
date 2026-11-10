@@ -1,0 +1,168 @@
+{
+  "id": "s06_atomic_weights",
+  "job": "J0441",
+  "test": "B (search-titled)",
+  "air_date_draft": "2026-12-03",
+  "file": "10_Shorts/hos_002_s06_atomic_weights_v01.mp4",
+  "sha256": "fb24bbdc5c12db87570bf408b6359e86d30c070518523b7a808f255840b7a55e",
+  "duration_s": 25.733,
+  "vo_source": "02_Voiceover/part03_ruler_for_atoms_v01.wav",
+  "vo_span_windows_s": [
+    [
+      8.52,
+      12.96
+    ],
+    [
+      16.3,
+      22.76
+    ],
+    [
+      26.92,
+      30.96
+    ],
+    [
+      35.5,
+      50.7
+    ]
+  ],
+  "route": "claim-first lift: Stanislao Cannizzaro wins with a method, not poetry. \u2026 A hole in a column is not failure. It is a prediction. (8.72\u201312.90 s, 16.34\u201322.68 s, 27.38\u201330.84 s, 35.90\u201350.56 s from Part 03)",
+  "vo_s": 25.282,
+  "words": 62,
+  "max_pause_s": 0.18,
+  "atempo": 1.06,
+  "bed": "hos002_s06_synth_pad_v01.wav (own synthesis, 0 credits)",
+  "bed_gain_db": -23.4,
+  "hook": "ATOMIC WEIGHT",
+  "hook_layer": {
+    "font_size": 222,
+    "cap_px": 158,
+    "cap_pct": 8.23,
+    "lines": 2,
+    "block_pct": [
+      40.4,
+      59.5
+    ],
+    "widest_pct": 92.1
+  },
+  "who_card": {
+    "name": "STANISLAO CANNIZZARO",
+    "line2": "Karlsruhe, 1860",
+    "line1_px": 66,
+    "line1_pct_of_band": 10.9,
+    "band": [
+      656,
+      1264
+    ],
+    "in_s": 2.15,
+    "out_s": 5.75,
+    "fade_s": 0.35
+  },
+  "title_on_screen": "How Did We Discover the Periodic Table?",
+  "youtube_title_draft": "How Is the Periodic Table Arranged?",
+  "plan": [
+    {
+      "t0": 0.0,
+      "t1": 3.806,
+      "plate": "04_Generated-Clips/part03/raw/v02_fast/06_cards_snap_line_v02.mp4",
+      "in_s": 0.6,
+      "crop_x": 656,
+      "lands_on": 0
+    },
+    {
+      "t0": 3.806,
+      "t1": 6.155,
+      "plate": "04_Generated-Clips/part03/raw/v02_fast/11_fix_weights_v02.mp4",
+      "in_s": 0.8,
+      "crop_x": 656,
+      "lands_on": "Derive"
+    },
+    {
+      "t0": 6.155,
+      "t1": 9.475,
+      "plate": "04_Generated-Clips/part03/raw/v02_fast/02_hall_argument_v02.mp4",
+      "in_s": 1.0,
+      "crop_x": 656,
+      "lands_on": "Put"
+    },
+    {
+      "t0": 9.475,
+      "t1": 13.17,
+      "plate": "04_Generated-Clips/part03/raw/v02_fast/04_zoo_gets_ruler_v02.mp4",
+      "in_s": 1.5,
+      "crop_x": 656,
+      "lands_on": "Cards"
+    },
+    {
+      "t0": 13.17,
+      "t1": 17.721,
+      "plate": "04_Generated-Clips/part03/raw/v08_fast/08_property_waves_v08.mp4",
+      "in_s": 0.8,
+      "crop_x": 656,
+      "lands_on": "Properties"
+    },
+    {
+      "t0": 17.721,
+      "t1": 22.703,
+      "plate": "04_Generated-Clips/part03/raw/v04_fast/09_empty_chair_claim_v04.mp4",
+      "in_s": 1.2,
+      "crop_x": 656,
+      "lands_on": "If"
+    },
+    {
+      "t0": 22.703,
+      "t1": 25.703,
+      "plate": "04_Generated-Clips/part03/raw/v02_fast/06_cards_snap_line_v02.mp4",
+      "in_s": 0.6,
+      "crop_x": 656,
+      "lands_on": "loop"
+    }
+  ],
+  "captions": 19,
+  "caption_check": {
+    "ok": true,
+    "changes": 19,
+    "ratio": 1.0
+  },
+  "gate": {
+    "exit": 0,
+    "output": "PASS  hos_002_s06_atomic_weights_v01.mp4  dur=25.73s  audio=-24.2dB  motion=38.29  dhash=4d408e4b8f0f0f07\n   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_002_s06_atomic_weights_v01_open_sheet.jpg"
+  },
+  "vo_check": {
+    "exit": 0,
+    "output": "PASS  hos_002_s06_atomic_weights_v01.mp4  0:25.73  mean -24.2 dB  peak -4.2 dB  145 wpm"
+  },
+  "freezedetect_starts": [],
+  "qa": {
+    "polish_gate": {
+      "exit": 0,
+      "output": "polish gate PASS: 0 of 7 rows failed, 1 to look at -> 02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/qa_s06_atomic_weights_v01/polish_gate_s06_atomic_weights_v01.json"
+    },
+    "picture_qa": {
+      "exit": 0,
+      "output": "picture QA PASS: 0 of 7 cuts fail, 1 to look at -> 02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/qa_s06_atomic_weights_v01/picture_qa_s06_atomic_weights_v01/PICTURE_QA.md, 02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/qa_s06_atomic_weights_v01/picture_qa_s06_atomic_weights_v01/picture_qa_review.jpg"
+    }
+  },
+  "stills": [
+    "10_Shorts/_work_s06_atomic_weights_v01/hos_002_s06_atomic_weights_v01_t000.0.jpg",
+    "10_Shorts/_work_s06_atomic_weights_v01/hos_002_s06_atomic_weights_v01_t003.8.jpg",
+    "10_Shorts/_work_s06_atomic_weights_v01/hos_002_s06_atomic_weights_v01_t011.5.jpg",
+    "10_Shorts/_work_s06_atomic_weights_v01/hos_002_s06_atomic_weights_v01_t024.7.jpg"
+  ],
+  "icloud": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/hos_002_s06_atomic_weights_v01.mp4",
+  "autocomplete_check": {
+    "date": "2026-10-17",
+    "source": "suggestqueries client=youtube ds=yt gl=GB signed-out",
+    "hits": [
+      "how is the periodic table arranged",
+      "how is the periodic table organised",
+      "how is atomic mass measured",
+      "how did chemists measure atomic mass",
+      "who arranged the periodic table of elements",
+      "periodic table atomic weight"
+    ],
+    "note": "'how is the periodic table arranged', 'how is the periodic table organised', and 'how is atomic mass measured' are exact signed-out GB YouTube autocomplete hits. The lifted VO opens on Stanislao Cannizzaro at Karlsruhe in 1860 establishing repeatable atomic weights so every element gets one shared number, snapping floating cards onto a line of mass where properties pulse in waves and columns reveal predictive gaps. Chief's call."
+  },
+  "air_date_draft_note": "2026-12-03 used for the gate only; slot is Chief's call.",
+  "who_card_note": "card is the long's own Part 03 VO and label STANISLAO CANNIZZARO \u00b7 Karlsruhe, 1860, on screen 2.15\u20135.75 s (3.6 s) right after the 0\u20132 s hook. Clear of the 0\u20132 s hook, the 9\u201314 s title, and the last 3.0 s CTA.",
+  "overlap_note": "No overlap with 002 S1\u2013S5 (Part 04/05 Mendeleev empty chairs, gallium, tellurium vs iodine, other table), Newlands octaves (Part 02), or the Oct 2 four-elements Short (Part 01): this lifts Part 03 (Karlsruhe 1860 / Stanislao Cannizzaro / atomic weights ruler), which had never been used in any 002 Short."
+}

@@ -1,0 +1,702 @@
+{
+  "language_code": "eng",
+  "language_probability": 1.0,
+  "text": "In 1928, a moldy dish gave us penicillin. Alexander Fleming came back from holiday to old dishes of bacteria. On one, a fuzzy mold had landed. All around it, the bacteria were dead. He called it mold juice, penicillin. Others later turned it into a medicine that has saved millions",
+  "words": [
+    {
+      "text": "In",
+      "start": 0.18,
+      "end": 0.3,
+      "type": "word",
+      "logprob": -3.933898824470816e-06
+    },
+    {
+      "text": " ",
+      "start": 0.3,
+      "end": 0.32,
+      "type": "spacing",
+      "logprob": -1.5497195136049413e-06
+    },
+    {
+      "text": "1928,",
+      "start": 0.34,
+      "end": 1.44,
+      "type": "word",
+      "logprob": -0.0003016350088728359
+    },
+    {
+      "text": " ",
+      "start": 1.44,
+      "end": 1.64,
+      "type": "spacing",
+      "logprob": -1.9073304429184645e-05
+    },
+    {
+      "text": "a",
+      "start": 1.64,
+      "end": 1.68,
+      "type": "word",
+      "logprob": -1.9073304429184645e-05
+    },
+    {
+      "text": " ",
+      "start": 1.68,
+      "end": 1.76,
+      "type": "spacing",
+      "logprob": -0.007143551483750343
+    },
+    {
+      "text": "moldy",
+      "start": 1.76,
+      "end": 2.08,
+      "type": "word",
+      "logprob": -0.005714841187000275
+    },
+    {
+      "text": " ",
+      "start": 2.08,
+      "end": 2.16,
+      "type": "spacing",
+      "logprob": -3.576278118089249e-07
+    },
+    {
+      "text": "dish",
+      "start": 2.16,
+      "end": 2.5,
+      "type": "word",
+      "logprob": -3.576278118089249e-07
+    },
+    {
+      "text": " ",
+      "start": 2.5,
+      "end": 2.72,
+      "type": "spacing",
+      "logprob": -5.006777428206988e-06
+    },
+    {
+      "text": "gave",
+      "start": 2.72,
+      "end": 2.9,
+      "type": "word",
+      "logprob": -5.006777428206988e-06
+    },
+    {
+      "text": " ",
+      "start": 2.9,
+      "end": 2.92,
+      "type": "spacing",
+      "logprob": 0.0
+    },
+    {
+      "text": "us",
+      "start": 2.92,
+      "end": 3.06,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": " ",
+      "start": 3.06,
+      "end": 3.12,
+      "type": "spacing",
+      "logprob": -0.00043585337698459625
+    },
+    {
+      "text": "penicillin.",
+      "start": 3.12,
+      "end": 3.82,
+      "type": "word",
+      "logprob": -0.00039630620313925067
+    },
+    {
+      "text": " ",
+      "start": 3.82,
+      "end": 3.82,
+      "type": "spacing",
+      "logprob": -2.6225699912174605e-05
+    },
+    {
+      "text": "Alexander",
+      "start": 4.92,
+      "end": 5.42,
+      "type": "word",
+      "logprob": -2.6225699912174605e-05
+    },
+    {
+      "text": " ",
+      "start": 5.42,
+      "end": 5.46,
+      "type": "spacing",
+      "logprob": -1.3351351299206726e-05
+    },
+    {
+      "text": "Fleming",
+      "start": 5.46,
+      "end": 5.84,
+      "type": "word",
+      "logprob": -1.3351351299206726e-05
+    },
+    {
+      "text": " ",
+      "start": 5.84,
+      "end": 5.96,
+      "type": "spacing",
+      "logprob": -9.536738616588991e-07
+    },
+    {
+      "text": "came",
+      "start": 5.96,
+      "end": 6.14,
+      "type": "word",
+      "logprob": -9.536738616588991e-07
+    },
+    {
+      "text": " ",
+      "start": 6.14,
+      "end": 6.18,
+      "type": "spacing",
+      "logprob": -3.576278118089249e-07
+    },
+    {
+      "text": "back",
+      "start": 6.18,
+      "end": 6.32,
+      "type": "word",
+      "logprob": -3.576278118089249e-07
+    },
+    {
+      "text": " ",
+      "start": 6.32,
+      "end": 6.36,
+      "type": "spacing",
+      "logprob": 0.0
+    },
+    {
+      "text": "from",
+      "start": 6.36,
+      "end": 6.5,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": " ",
+      "start": 6.5,
+      "end": 6.54,
+      "type": "spacing",
+      "logprob": -4.768370445162873e-07
+    },
+    {
+      "text": "holiday",
+      "start": 6.54,
+      "end": 7.14,
+      "type": "word",
+      "logprob": -4.768370445162873e-07
+    },
+    {
+      "text": " ",
+      "start": 7.14,
+      "end": 7.18,
+      "type": "spacing",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": "to",
+      "start": 7.18,
+      "end": 7.3,
+      "type": "word",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": " ",
+      "start": 7.3,
+      "end": 7.38,
+      "type": "spacing",
+      "logprob": -5.960462772236497e-07
+    },
+    {
+      "text": "old",
+      "start": 7.38,
+      "end": 7.62,
+      "type": "word",
+      "logprob": -5.960462772236497e-07
+    },
+    {
+      "text": " ",
+      "start": 7.62,
+      "end": 7.66,
+      "type": "spacing",
+      "logprob": -5.602820692729438e-06
+    },
+    {
+      "text": "dishes",
+      "start": 7.66,
+      "end": 8.02,
+      "type": "word",
+      "logprob": -5.602820692729438e-06
+    },
+    {
+      "text": " ",
+      "start": 8.02,
+      "end": 8.06,
+      "type": "spacing",
+      "logprob": 0.0
+    },
+    {
+      "text": "of",
+      "start": 8.06,
+      "end": 8.16,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": " ",
+      "start": 8.16,
+      "end": 8.2,
+      "type": "spacing",
+      "logprob": -2.50339189733495e-06
+    },
+    {
+      "text": "bacteria.",
+      "start": 8.2,
+      "end": 8.92,
+      "type": "word",
+      "logprob": -2.291464606211472e-06
+    },
+    {
+      "text": " ",
+      "start": 8.92,
+      "end": 9.52,
+      "type": "spacing",
+      "logprob": -2.861018856492592e-06
+    },
+    {
+      "text": "On",
+      "start": 9.52,
+      "end": 9.68,
+      "type": "word",
+      "logprob": -2.861018856492592e-06
+    },
+    {
+      "text": " ",
+      "start": 9.68,
+      "end": 9.76,
+      "type": "spacing",
+      "logprob": -4.768370445162873e-07
+    },
+    {
+      "text": "one,",
+      "start": 9.76,
+      "end": 10.08,
+      "type": "word",
+      "logprob": -3.1379920898189084e-05
+    },
+    {
+      "text": " ",
+      "start": 10.08,
+      "end": 10.3,
+      "type": "spacing",
+      "logprob": 0.0
+    },
+    {
+      "text": "a",
+      "start": 10.3,
+      "end": 10.4,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": " ",
+      "start": 10.4,
+      "end": 10.44,
+      "type": "spacing",
+      "logprob": -1.823885577323381e-05
+    },
+    {
+      "text": "fuzzy",
+      "start": 10.44,
+      "end": 10.68,
+      "type": "word",
+      "logprob": -1.823885577323381e-05
+    },
+    {
+      "text": " ",
+      "start": 10.68,
+      "end": 10.82,
+      "type": "spacing",
+      "logprob": -0.000262106885202229
+    },
+    {
+      "text": "mold",
+      "start": 10.82,
+      "end": 11.18,
+      "type": "word",
+      "logprob": -0.000262106885202229
+    },
+    {
+      "text": " ",
+      "start": 11.18,
+      "end": 11.22,
+      "type": "spacing",
+      "logprob": -8.344646857949556e-07
+    },
+    {
+      "text": "had",
+      "start": 11.22,
+      "end": 11.32,
+      "type": "word",
+      "logprob": -8.344646857949556e-07
+    },
+    {
+      "text": " ",
+      "start": 11.32,
+      "end": 11.38,
+      "type": "spacing",
+      "logprob": -3.576278118089249e-07
+    },
+    {
+      "text": "landed.",
+      "start": 11.38,
+      "end": 11.94,
+      "type": "word",
+      "logprob": -1.2431794890030038e-06
+    },
+    {
+      "text": " ",
+      "start": 11.94,
+      "end": 11.94,
+      "type": "spacing",
+      "logprob": 0.0
+    },
+    {
+      "text": "All",
+      "start": 12.72,
+      "end": 12.84,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": " ",
+      "start": 12.84,
+      "end": 12.9,
+      "type": "spacing",
+      "logprob": -9.536738616588991e-07
+    },
+    {
+      "text": "around",
+      "start": 12.9,
+      "end": 13.26,
+      "type": "word",
+      "logprob": -9.536738616588991e-07
+    },
+    {
+      "text": " ",
+      "start": 13.26,
+      "end": 13.34,
+      "type": "spacing",
+      "logprob": 0.0
+    },
+    {
+      "text": "it,",
+      "start": 13.34,
+      "end": 13.52,
+      "type": "word",
+      "logprob": -0.0006430300418287516
+    },
+    {
+      "text": " ",
+      "start": 13.52,
+      "end": 13.64,
+      "type": "spacing",
+      "logprob": -2.3841855067985307e-07
+    },
+    {
+      "text": "the",
+      "start": 13.64,
+      "end": 13.72,
+      "type": "word",
+      "logprob": -2.3841855067985307e-07
+    },
+    {
+      "text": " ",
+      "start": 13.72,
+      "end": 13.74,
+      "type": "spacing",
+      "logprob": -1.5497195136049413e-06
+    },
+    {
+      "text": "bacteria",
+      "start": 13.74,
+      "end": 14.3,
+      "type": "word",
+      "logprob": -1.5497195136049413e-06
+    },
+    {
+      "text": " ",
+      "start": 14.3,
+      "end": 14.32,
+      "type": "spacing",
+      "logprob": -2.3841855067985307e-07
+    },
+    {
+      "text": "were",
+      "start": 14.32,
+      "end": 14.48,
+      "type": "word",
+      "logprob": -2.3841855067985307e-07
+    },
+    {
+      "text": " ",
+      "start": 14.48,
+      "end": 14.52,
+      "type": "spacing",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": "dead.",
+      "start": 14.52,
+      "end": 14.9,
+      "type": "word",
+      "logprob": -9.536742595628311e-08
+    },
+    {
+      "text": " ",
+      "start": 14.9,
+      "end": 15.5,
+      "type": "spacing",
+      "logprob": -2.3841855067985307e-07
+    },
+    {
+      "text": "He",
+      "start": 15.5,
+      "end": 15.6,
+      "type": "word",
+      "logprob": -2.3841855067985307e-07
+    },
+    {
+      "text": " ",
+      "start": 15.6,
+      "end": 15.64,
+      "type": "spacing",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": "called",
+      "start": 15.64,
+      "end": 15.82,
+      "type": "word",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": " ",
+      "start": 15.82,
+      "end": 15.88,
+      "type": "spacing",
+      "logprob": 0.0
+    },
+    {
+      "text": "it",
+      "start": 15.88,
+      "end": 15.96,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": " ",
+      "start": 15.96,
+      "end": 16.12,
+      "type": "spacing",
+      "logprob": -0.0008660380262881517
+    },
+    {
+      "text": "mold",
+      "start": 16.12,
+      "end": 16.5,
+      "type": "word",
+      "logprob": -0.0008660380262881517
+    },
+    {
+      "text": " ",
+      "start": 16.5,
+      "end": 16.64,
+      "type": "spacing",
+      "logprob": -3.2066785934148356e-05
+    },
+    {
+      "text": "juice,",
+      "start": 16.64,
+      "end": 17.04,
+      "type": "word",
+      "logprob": -3.105353607679717e-05
+    },
+    {
+      "text": " ",
+      "start": 17.04,
+      "end": 17.42,
+      "type": "spacing",
+      "logprob": -8.999896090244874e-05
+    },
+    {
+      "text": "penicillin.",
+      "start": 17.42,
+      "end": 18.12,
+      "type": "word",
+      "logprob": -8.182807439153935e-05
+    },
+    {
+      "text": " ",
+      "start": 18.12,
+      "end": 18.12,
+      "type": "spacing",
+      "logprob": -1.728519782773219e-05
+    },
+    {
+      "text": "Others",
+      "start": 18.88,
+      "end": 19.18,
+      "type": "word",
+      "logprob": -1.728519782773219e-05
+    },
+    {
+      "text": " ",
+      "start": 19.18,
+      "end": 19.28,
+      "type": "spacing",
+      "logprob": -7.152555099310121e-07
+    },
+    {
+      "text": "later",
+      "start": 19.28,
+      "end": 19.54,
+      "type": "word",
+      "logprob": -7.152555099310121e-07
+    },
+    {
+      "text": " ",
+      "start": 19.54,
+      "end": 19.64,
+      "type": "spacing",
+      "logprob": -9.536738616588991e-07
+    },
+    {
+      "text": "turned",
+      "start": 19.64,
+      "end": 19.9,
+      "type": "word",
+      "logprob": -9.536738616588991e-07
+    },
+    {
+      "text": " ",
+      "start": 19.9,
+      "end": 19.92,
+      "type": "spacing",
+      "logprob": 0.0
+    },
+    {
+      "text": "it",
+      "start": 19.92,
+      "end": 20.0,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": " ",
+      "start": 20.0,
+      "end": 20.04,
+      "type": "spacing",
+      "logprob": 0.0
+    },
+    {
+      "text": "into",
+      "start": 20.04,
+      "end": 20.24,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": " ",
+      "start": 20.24,
+      "end": 20.28,
+      "type": "spacing",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": "a",
+      "start": 20.28,
+      "end": 20.36,
+      "type": "word",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": " ",
+      "start": 20.36,
+      "end": 20.4,
+      "type": "spacing",
+      "logprob": -0.0012086475035175681
+    },
+    {
+      "text": "medicine",
+      "start": 20.4,
+      "end": 20.96,
+      "type": "word",
+      "logprob": -0.0012086475035175681
+    },
+    {
+      "text": " ",
+      "start": 20.96,
+      "end": 21.2,
+      "type": "spacing",
+      "logprob": 0.0
+    },
+    {
+      "text": "that",
+      "start": 21.2,
+      "end": 21.32,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": " ",
+      "start": 21.32,
+      "end": 21.36,
+      "type": "spacing",
+      "logprob": -1.311301275563892e-06
+    },
+    {
+      "text": "has",
+      "start": 21.36,
+      "end": 21.5,
+      "type": "word",
+      "logprob": -1.311301275563892e-06
+    },
+    {
+      "text": " ",
+      "start": 21.5,
+      "end": 21.58,
+      "type": "spacing",
+      "logprob": -3.2186455882765586e-06
+    },
+    {
+      "text": "saved",
+      "start": 21.58,
+      "end": 21.98,
+      "type": "word",
+      "logprob": -3.2186455882765586e-06
+    },
+    {
+      "text": " ",
+      "start": 21.98,
+      "end": 22.12,
+      "type": "spacing",
+      "logprob": -1.0251946150674485e-05
+    },
+    {
+      "text": "millions",
+      "start": 22.12,
+      "end": 22.74,
+      "type": "word",
+      "logprob": -1.0251946150674485e-05
+    }
+  ],
+  "transcription_id": "Ctf2tD8aF6xdqUU8d7FD",
+  "audio_duration_secs": 22.8
+}

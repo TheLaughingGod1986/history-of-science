@@ -1,0 +1,2 @@
+WARN   0:09 row s03_a 10_zoo_became_city_v01_try4.mp4: low detail: edge density 0.0463 < film p5 0.0465
+picture QA PASS: 0 of 8 cuts fail, 1 to look at -> 02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/qa_s08_periodic_table_work_v01/picture_qa_s08_periodic_table_work_v01/PICTURE_QA.md, 02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/qa_s08_periodic_table_work_v01/picture_qa_s08_periodic_table_work_v01/picture_qa_review.jpg

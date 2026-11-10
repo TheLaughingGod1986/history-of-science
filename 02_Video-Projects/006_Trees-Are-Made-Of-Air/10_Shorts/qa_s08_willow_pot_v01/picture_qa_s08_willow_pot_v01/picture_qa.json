@@ -1,0 +1,164 @@
+{
+  "verdict": "PASS",
+  "video": "02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/hos_006_s08_willow_pot_v01.mp4",
+  "rules": {
+    "kind_fail": "computer[- ]?(reconstruction|model|generated|simulation|graphic)|\\bsimulation\\b|\\bdiagram|\\bchart\\b|\\bgraph\\b|\\bschematic|\\bannotated\\b|\\blabell?ed\\b|\\bscreen ?shot|\\bwireframe|\\bcad\\b|\\binfographic",
+    "kind_warn": "\\bartist|\\billustration|\\bconcept\\b|\\brender|\\banimation\\b|\\bmap\\b|\\bmosaic\\b|\\bcomposite\\b",
+    "upscale_fail": 2.35,
+    "upscale_warn": 2.0,
+    "max_reuse": 2,
+    "max_stretches": 5,
+    "same_stretch": 10.0,
+    "pixels": "scripts/polish_gate.py"
+  },
+  "failed": [],
+  "warn": [
+    {
+      "cut": 6,
+      "row": "s07_and",
+      "source": "12_pointer_short_t1.mp4",
+      "title": "Flow Veo 3.1 plate 12_pointer_short_t1.mp4",
+      "t": 18.55,
+      "at": "0:19",
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0368 < film p5 0.0399"
+      ],
+      "offset": 0.5
+    }
+  ],
+  "rows": [
+    {
+      "cut": 0,
+      "row": "s01_0",
+      "source": "11_shoot_in_pot_t1.mp4",
+      "title": "Flow Veo 3.1 plate 11_shoot_in_pot_t1.mp4",
+      "t": 1.38,
+      "at": "0:01",
+      "fail": [],
+      "warn": [],
+      "offset": 0.2
+    },
+    {
+      "cut": 1,
+      "row": "s02_two",
+      "source": "10_van_helmont_sack_t1.mp4",
+      "title": "Flow Veo 3.1 plate 10_van_helmont_sack_t1.mp4",
+      "t": 4.35,
+      "at": "0:04",
+      "fail": [],
+      "warn": [],
+      "offset": 0.8
+    },
+    {
+      "cut": 2,
+      "row": "s03_planted",
+      "source": "03_willow_shoot_scale_t1.mp4",
+      "title": "Flow Veo 3.1 plate 03_willow_shoot_scale_t1.mp4",
+      "t": 7.57,
+      "at": "0:08",
+      "fail": [],
+      "warn": [],
+      "offset": 0.4
+    },
+    {
+      "cut": 3,
+      "row": "s04_Then,",
+      "source": "04_lid_rain_t1.mp4",
+      "title": "Flow Veo 3.1 plate 04_lid_rain_t1.mp4",
+      "t": 10.75,
+      "at": "0:11",
+      "fail": [],
+      "warn": [],
+      "offset": 1.5
+    },
+    {
+      "cut": 4,
+      "row": "s05_the",
+      "source": "08_haul_tree_t1_trim_0to4p8.mp4",
+      "title": "Flow Veo 3.1 plate 08_haul_tree_t1_trim_0to4p8.mp4",
+      "t": 13.27,
+      "at": "0:13",
+      "fail": [],
+      "warn": [],
+      "offset": 0.5
+    },
+    {
+      "cut": 5,
+      "row": "s06_A",
+      "source": "13_tree_vs_pinch_t1.mp4",
+      "title": "Flow Veo 3.1 plate 13_tree_vs_pinch_t1.mp4",
+      "t": 15.8,
+      "at": "0:16",
+      "fail": [],
+      "warn": [],
+      "offset": 0.4
+    },
+    {
+      "cut": 6,
+      "row": "s07_and",
+      "source": "12_pointer_short_t1.mp4",
+      "title": "Flow Veo 3.1 plate 12_pointer_short_t1.mp4",
+      "t": 18.55,
+      "at": "0:19",
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0368 < film p5 0.0399"
+      ],
+      "offset": 0.5
+    },
+    {
+      "cut": 7,
+      "row": "s08_The",
+      "source": "02_balance_trunk_t1.mp4",
+      "title": "Flow Veo 3.1 plate 02_balance_trunk_t1.mp4",
+      "t": 20.59,
+      "at": "0:21",
+      "fail": [],
+      "warn": [],
+      "offset": 0.3
+    },
+    {
+      "cut": 8,
+      "row": "s09_loop",
+      "source": "loop_end_11_shoot_in_pot_t1.mp4",
+      "title": "Loop end plate 11_shoot_in_pot_t1.mp4",
+      "t": 22.92,
+      "at": "0:23",
+      "fail": [],
+      "warn": [],
+      "offset": 0.2
+    }
+  ],
+  "polish": {
+    "edge_floor": 0.0399,
+    "low_detail_floor": {
+      "std": 13.44,
+      "edge": 0.0259,
+      "calibration": {
+        "video": "025_MarsRobot_full_rough_v02d.mp4",
+        "factor": 1.2,
+        "frames": [
+          {
+            "source": "PIA22223.jpg",
+            "t": 201.0,
+            "std": 12.1,
+            "edge": 0.0223
+          },
+          {
+            "source": "PIA22223.jpg",
+            "t": 216.3,
+            "std": 11.2,
+            "edge": 0.0216
+          },
+          {
+            "source": "PIA22929.jpg",
+            "t": 297.4,
+            "std": 26.54,
+            "edge": 0.5735
+          }
+        ]
+      }
+    }
+  }
+}

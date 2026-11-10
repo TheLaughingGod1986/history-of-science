@@ -1,0 +1,99 @@
+{
+  "film": "002",
+  "video": "AL_-qlWko_g",
+  "job": "J0670",
+  "variant": "B v10 (1.31x empty-slot hero push-in + concrete skipped-seat hook; pairs with B v09 'SOFT MELTING GALLIUM' and B v08 'ONE GLOWING GAP')",
+  "maker": "gemini",
+  "hook": "SKIPPED ATOMIC SEAT",
+  "punch": "SKIPPED",
+  "jpg": "Selected/hos_002_thumb_B_skipped_atomic_seat_v10.jpg",
+  "sha256": "0d123e27d18e46f5e9a0f0b5cb674ad574318cda036b285c8ee4362cb6bfc941",
+  "bytes": 206038,
+  "plates": [
+    "_stills_v05/hos_002_empty_slot_hero_v01.jpg (1376x768 Flow Nano Banana periodic-table cabinet plate with 1.31x hero push-in on the glowing open seat)",
+    "Selected/hos_002_thumb_A_gallium_live_v02.png (NAS 002 painted key-art lower-left Explorer cutout)"
+  ],
+  "method": "existing_002_plates_only_1.31x_hero_push_in_and_Explorer_cutout_with_GeorgiaBold_and_gold_flourishes",
+  "spend": 0,
+  "heroBox": [
+    607,
+    210,
+    1010,
+    560
+  ],
+  "explorer": {
+    "source": "hos_002_thumb_A_gallium_live_v02.png",
+    "box": [
+      0,
+      331,
+      256,
+      720
+    ],
+    "height_px": 389,
+    "height_frac": 0.54
+  },
+  "lettering": [
+    {
+      "word": "SKIPPED",
+      "kind": "gold",
+      "size": 86,
+      "box": [
+        106,
+        44,
+        493,
+        123
+      ]
+    },
+    {
+      "word": "ATOMIC",
+      "kind": "cream",
+      "size": 88,
+      "box": [
+        112,
+        113,
+        488,
+        194
+      ]
+    },
+    {
+      "word": "SEAT",
+      "kind": "cream",
+      "size": 96,
+      "box": [
+        168,
+        184,
+        431,
+        271
+      ]
+    }
+  ],
+  "ornaments": {
+    "top_scroll_box": [
+      134,
+      17,
+      466,
+      39
+    ],
+    "bottom_scroll_box": [
+      178,
+      271,
+      422,
+      293
+    ]
+  },
+  "clearOfHero": true,
+  "clearOfExplorer": true,
+  "clearOfBadge": true,
+  "scores": {
+    "HOOK": "PASS \u2014 'SKIPPED ATOMIC SEAT' (3 words, punch word 'SKIPPED' in gold) names the concrete visual hero on the right two-thirds (the open, skipped element seat in Mendeleev's atomic-weight column on the wooden periodic-table cabinet; 002 script Part 04: 'Sixty-three names. Cards on a desk. Increase the atomic weight. Watch cousins fall into columns... Then he does the thing that looks like cheating. He skips a seat' and THUMBNAIL_AND_TITLE_RULES.md \u00a71.2 & \u00a72.B.1 'name the thing'), shares zero words with the video title ('How Did We Discover the Periodic Table?'), J0374 ('THE MISSING ELEMENT'), J0442 ('PREDICTED BEFORE FOUND'), J0488 ('EMPTY ON PURPOSE'), J0534 ('METAL TURNS LIQUID'), J0579 ('ONE GLOWING GAP'), or J0624 ('SOFT MELTING GALLIUM'), and uses no vague questions or pronouns.",
+    "BAND": "PASS \u2014 Upper-left lettering band (x=106..493, y=44..271, framed by top/bottom gold scroll flourishes at y=17..293) sits completely left of the pushed-in glowing hero slot (x=607..1010), above the Explorer's hair (y=331), and clear of the bottom-right duration badge.",
+    "PHONE": "PASS \u2014 Checked on 168x94 preview sheet and 4-panel strip: the 1.31x hero push-in and golden rim clarity boost make the glowing skipped seat (403x350 px) and surrounding column of blank cream cards bold and unmistakable at 168x94 while keeping 'SKIPPED ATOMIC SEAT' and the lower-left Explorer (54.4% height) immediately legible in under a second."
+  },
+  "previews": [
+    "Selected/hos_002_thumb_B_skipped_atomic_seat_v10_preview.jpg",
+    "Selected/hos_002_thumb_B_skipped_atomic_seat_v10_style_sheet.jpg",
+    "Selected/hos_002_thumb_TC_4way_skipped_atomic_seat_v10_phone_168.jpg"
+  ],
+  "studio": false,
+  "status": "Test & Compare B v10 candidate for 002 (AL_-qlWko_g, built from existing 002 plates only with 1.31x hero push-in, \u00a30). Parked for Chief: thumb B review. No Studio until OK."
+}

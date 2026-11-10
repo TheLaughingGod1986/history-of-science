@@ -1,0 +1,124 @@
+{
+  "job": "J0218",
+  "author": "codex",
+  "draft_model": "gemini-agy",
+  "status": "draft_for_chief",
+  "channel_id": "UCXp7HkBIl1LgaznXuZHJyRg",
+  "channel_handle": "@HistoryOfScienceYT",
+  "upload_authorized": false,
+  "inputs": {
+    "SCRIPTS_v02.md": "0c6bf7dbf2eb5a366dcf0eab6fda578117216c7ed0c4747f5691883b47bf5fbc",
+    "SOURCES_v01.md": "af65e76d32400e1154a04de8bc17f5015c123b7a1da3ab7f21815fff62be7dfc",
+    "COVERS_J0217_v01.json": "7f60ab7679222e9b3fb59df2302820e1aac744edc7c2f56b1ae6ebb3f5b6e9b6"
+  },
+  "review_required": [
+    "Chief listing approval and merge",
+    "Chief cover acceptance remains pending in J0217 record",
+    "Confirm S7 title scope and Related HOS 006 id before packaging"
+  ],
+  "listings": [
+    {
+      "id": "s5",
+      "title": "How Was the Cosmic Microwave Background Discovered?",
+      "description": "In 1964, Arno Penzias and Robert Wilson picked up a strange noise in their giant antenna. Pigeons were nesting inside, leaving droppings, but the noise was not the pigeons. It came from every direction in the sky: the afterglow of the Big Bang.\n\nSources:\nAPS, Holmdel horn antenna: https://www.aps.org/funding-recognition/historic-sites/holmdel-horn-antenna\nNobel Prize, 1978 physics press release: https://www.nobelprize.org/prizes/physics/1978/press-release/\nAIP, Tools of Cosmology: https://history.aip.org/exhibits/cosmology/tools/tools-new.htm\n\nPictures: AI-generated 3D scenes. Historical claims follow the sources listed above.\n\nMore discovery stories on History of Science: https://www.youtube.com/@HistoryOfScienceYT",
+      "tags": [
+        "cosmic microwave background",
+        "big bang",
+        "astronomy history",
+        "arno penzias",
+        "robert wilson",
+        "history of science"
+      ],
+      "source_rows": [
+        "5a",
+        "5b",
+        "5c",
+        "5b+"
+      ],
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/shorts_v01/hos_sa_s5_penzias_pigeons_v01.mp4",
+      "file_sha256": "77cc187a07947e92f2510fb157efd1cbb8bee9b9cd3476c5d72ea1e42a5831e1",
+      "cover": "docs/STANDALONE_SHORTS_TEST_2026-10/covers_j0209_v01/hos_sa_s5_cover_v01.png",
+      "cover_sha256": "af16464dd5514e06a7878acb3f49fb6b11fa52aa254b2659d070547982b018a7",
+      "cover_words": "BLAMED the PIGEONS",
+      "facts_review": "Gemini draft compared with locked script and recorded source rows by Codex; independent live-source check not claimed",
+      "related_video_id": "frP_YrNShsU"
+    },
+    {
+      "id": "s6",
+      "title": "How Was Penicillin Discovered?",
+      "description": "In 1928, Alexander Fleming returned from holiday to find mould on a dish of bacteria. Around the mould, the bacteria were dying. He called the mould juice penicillin; others later turned it into a medicine that has saved millions.\n\nSources:\nPubMed Central, discovery of penicillin: https://pmc.ncbi.nlm.nih.gov/articles/PMC5403050/\nPubMed Central, penicillin history: https://pmc.ncbi.nlm.nih.gov/articles/PMC4520913/\n\nPictures: AI-generated 3D scenes. Historical claims follow the sources listed above.\n\nMore discovery stories on History of Science: https://www.youtube.com/@HistoryOfScienceYT",
+      "tags": [
+        "penicillin",
+        "alexander fleming",
+        "antibiotics",
+        "medical history",
+        "discovery of penicillin",
+        "history of science"
+      ],
+      "source_rows": [
+        "6a",
+        "6b",
+        "6c",
+        "6d",
+        "6a+"
+      ],
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/shorts_v01/hos_sa_s6_fleming_mould_v01.mp4",
+      "file_sha256": "fd5bf3469734c1e4a081ac85baa2a3e7ff5a166fd617de79650db35d6a3b6a03",
+      "cover": "docs/STANDALONE_SHORTS_TEST_2026-10/covers_j0209_v01/hos_sa_s6_cover_v01.png",
+      "cover_sha256": "1367099afd2a9b7801134371d56b588b57c1942ce5cd152a15a46360755a7095",
+      "cover_words": "SAVED by MOULD",
+      "facts_review": "Gemini draft compared with locked script and recorded source rows by Codex; independent live-source check not claimed",
+      "related_video_id": "_C92tIJCk8A"
+    },
+    {
+      "id": "s7",
+      "title": "Who Discovered That Plants Produce Oxygen?",
+      "description": "In 1771, Joseph Priestley put a sprig of mint into air in which a candle had burned out. Ten days later, a fresh candle burned perfectly well. This Short tells the story of his mint experiment.\n\nSource:\nJoseph Priestley, Observations on Different Kinds of Air: https://www.gutenberg.org/files/29734/29734-h/29734-h.htm\n\nPictures: AI-generated 3D scenes. Historical claims follow the sources listed above.\n\nMore discovery stories on History of Science: https://www.youtube.com/@HistoryOfScienceYT",
+      "tags": [
+        "joseph priestley",
+        "restoring air",
+        "candle experiment",
+        "plant experiment",
+        "chemistry history",
+        "history of science"
+      ],
+      "source_rows": [
+        "7a",
+        "7b"
+      ],
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/shorts_v01/hos_sa_s7_priestley_mint_v02.mp4",
+      "file_sha256": "6857ac9374bc582c67d642f365cc0a50861c5fb02ab26f151c62936c815dc049",
+      "cover": "docs/STANDALONE_SHORTS_TEST_2026-10/covers_j0209_v01/hos_sa_s7_cover_v01.png",
+      "cover_sha256": "ace0bc08b0e1cac27d1c0c125671aabf74e09fa8310b7b263d72fd0ad4ea9414",
+      "cover_words": "MINT fixed AIR",
+      "facts_review": "Gemini draft compared with locked script and recorded source rows by Codex; independent live-source check not claimed",
+      "related_video_id": null
+    },
+    {
+      "id": "s8",
+      "title": "Who First Measured Blood Pressure?",
+      "description": "Stephen Hales measured blood pressure using a tall glass tube connected to a mare's artery. The blood rose about eight feet, rising and falling with each heartbeat. In 1733, he published the first blood pressure reading.\n\nSources:\nUniversity of Minnesota, Stephen Hales: http://www.epi.umn.edu/cvdepi/essay/reverend-stephen-hales-on-blood-pressure/\nPubMed Central, blood pressure measurement history: https://pmc.ncbi.nlm.nih.gov/articles/PMC10751046/\n\nPictures: AI-generated 3D scenes. Historical claims follow the sources listed above.\n\nMore discovery stories on History of Science: https://www.youtube.com/@HistoryOfScienceYT",
+      "tags": [
+        "blood pressure",
+        "stephen hales",
+        "medical history",
+        "haemastaticks",
+        "cardiovascular",
+        "history of science"
+      ],
+      "source_rows": [
+        "8a",
+        "8b",
+        "8c",
+        "8b+"
+      ],
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/shorts_v01/hos_sa_s8_hales_blood_v01.mp4",
+      "file_sha256": "56ea2256cee60ed28d1f8f1e3abb344f65a4557fdaa0edb3e53e8499286b579a",
+      "cover": "docs/STANDALONE_SHORTS_TEST_2026-10/covers_j0209_v01/hos_sa_s8_cover_v01.png",
+      "cover_sha256": "4f1ec1aaf9779e071e79150c0ced0688cf9240dfc499350bd32c23dd71d5e978",
+      "cover_words": "BLOOD eight feet UP",
+      "facts_review": "Gemini draft compared with locked script and recorded source rows by Codex; independent live-source check not claimed",
+      "related_video_id": "wwcjcFfC-5M"
+    }
+  ]
+}

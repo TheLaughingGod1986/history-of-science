@@ -1,0 +1,68 @@
+{
+  "stem": "hos_008_short_C_v02",
+  "voice": "Ben Orbit Narrator",
+  "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+  "model_id": "eleven_v3",
+  "settings": {
+    "stability": 0.34,
+    "similarity_boost": 0.78,
+    "style": 0.42,
+    "speed": 1.04,
+    "use_speaker_boost": true
+  },
+  "orders": [
+    "J0159"
+  ],
+  "retake_of": null,
+  "chapters": [
+    {
+      "title": "take",
+      "chars": 331,
+      "duration_s": 24.48
+    }
+  ],
+  "gap_s": 0.7,
+  "spoken_chars": 331,
+  "words": 62,
+  "duration_s": 24.48,
+  "loudness": {
+    "lufs_integrated": -19.9,
+    "mean_volume_db": -23.3,
+    "max_volume_db": -3.7
+  },
+  "sha256_mp3": "ba8ffec9c234c68961e5d7e3811d8104feb7d5485ab9d567c10ff91604803d08",
+  "scribe": {
+    "transcript": "That thin metal rod on top of tall buildings was Benjamin Franklin's idea. Lightning takes the easiest path to the ground. A wooden roof is a terrible path, so it bursts into flame. A metal rod is an easy one. The lightning runs down the rod, round the building, and into the earth. Some towers are struck over 20 times a year",
+    "script_words": 62,
+    "scribe_words": 62,
+    "match_rate_pct": 98.39,
+    "exact_match": false,
+    "mismatches": [
+      {
+        "op": "replace",
+        "script": [
+          "twenty"
+        ],
+        "scribe": [
+          "20"
+        ]
+      }
+    ]
+  },
+  "vo_check": "PASS",
+  "credits": {
+    "before": {
+      "used": 200761,
+      "limit": 209536,
+      "remaining": 8775
+    },
+    "after": {
+      "used": 200761,
+      "limit": 209536,
+      "remaining": 8775
+    },
+    "counter_delta": 0
+  },
+  "text": "That thin metal rod on top of tall buildings was Benjamin Franklin's idea. Lightning takes the easiest path to the ground. A wooden roof is a terrible path, so it bursts into flame. A metal rod is an easy one. The lightning runs down the rod, round the building, and into the earth. Some towers are struck over twenty times a year.",
+  "made_at": "2026-10-12T19:55:33+0100"
+}

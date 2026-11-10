@@ -1,0 +1,3 @@
+lavfi.freezedetect.freeze_start: 27.125
+lavfi.freezedetect.freeze_duration: 4.5
+lavfi.freezedetect.freeze_end: 31.625

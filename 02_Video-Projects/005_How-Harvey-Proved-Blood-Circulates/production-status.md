@@ -825,3 +825,192 @@ Same scenes and lettering assets as v01. Stack centred across the top: starts 4.
 `thumb_preview.py short` on each (`covers_v02/*_preview.jpg`) and `style_sheet.py short` (`covers_v02/hos_005_shorts_covers_v02_style_sheet.jpg`, 3 new vs 8 live). Notes: in the Shorts-list 16:9 crop only the bottom word shows, as with the live covers. On A the glass figure's head and the top of the jug tower sit behind the lettering; on B the band still shows beside TIGHT.
 
 **STOP:** Claude takes the Shorts package to Ben for his final OK. Nothing is in Studio.
+
+
+## J0188 s04 scheduling — Codex, 14 Oct 2026
+
+- Uploaded once: `5n7xFQRBUvI`, **Is the Heart a Pump?**, private + publishAt **2026-10-31T11:30:00Z** (31 Oct 11:30 London). Claude acting Chief authorized first free day on/after 30 Oct in desk #6177253583; live Studio showed 30 Oct occupied and 31 Oct free. Old state: not uploaded.
+- Package lint, Short opening gate and package dry run passed. Channel audit: 37 videos, zero errors after repair of title/description language on five existing private drafts (only defaultLanguage=en-GB; titles/status preserved).
+- API said thumbnail set; Studio cover explicitly uploaded and verified after reopening (IS THE / HEART A / PUMP?). Audience not made for kids, AI Yes, paid promotion No, both languages en-GB, Education / Concept overview / England, comments On / Basic / Top, automatic places off, chapters/concepts on, embedding/notify/remix on.
+- Related pending: Studio selector only offers public videos; ID search for private long `wwcjcFfC-5M` returned no match. Set after long airs 29 Oct 18:00Z and before Short airs.
+- Buffer pending: HOS `BUFFER_HOS_API_KEY` absent from runtime and available env files; Orbit key never used. Copy prepared in package evidence; no social posts made.
+- No spend, delete, retitle or protected call. Prior OWB Short IDs remain scheduled; never re-upload any of these three.
+
+## J0254 s05 valves v01 (test B, second search-titled lift) — Cursor, 15 Oct 2026
+
+- **What:** a second search-titled Short lifted from the long's own Part 04, no new VO, picture or bed, no spend. Build `10_Shorts/_build_short_s05_valves_v01.py`, record `10_Shorts/SHORT_s05_valves_v01.json`.
+- **VO:** `part04_the_tied_arm_v01_raw.mp3` 46.5–69.5 s, "Now the little doors. … and it slides through easily." 57 words, pauses capped at 0.6 s. The Part 04 v02/v03 fix only replaced the earlier "artery throbs" sentence, so this is the long's own take.
+- **Picture:** Part 04 KEEP takes 13 t3 (frame 0 and loop), 06 t1, 08 t4, 09 t3, 10 t3. Hook **DOORS IN VEINS**. Person card **FABRICIUS · Padua, c. 1600** at 5.5–8.95 s over the vein drawing (no figure); the long's title at 9–14 s; captions throughout.
+- **Title draft:** *Why Do Veins Have Valves?* (signed-out GB YouTube autocomplete exact hit, 15 Oct; alt *How Do Valves in Veins Work?*).
+- **File:** `10_Shorts/hos_005_s05_valves_v01.mp4` (in the hos-005-blood worktree), 23.70 s, sha256 `bea80a80838c2c72afa02dc409a978ecc7467749566484929c733aee8e7814cd`; phone copy iCloud `HOS UAT/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s05_valves_v01.mp4`.
+
+```
+PASS  hos_005_s05_valves_v01.mp4  dur=23.7s  audio=-23.8dB  motion=12.76  dhash=fe1f96eb9c6028aa
+PASS  hos_005_s05_valves_v01.mp4  0:23.70  mean -23.8 dB  peak -3.9 dB  144 wpm
+   warn  pace 144 wpm (< 145); expect a long film — see STUDIO_PLAYBOOK.md §4 speed
+   warn  replace at ~0:07.92: script '... fabricius found ...' / heard '... fabriceus found ...' — sounds alike (likely the transcriber); listen
+```
+
+Gate run with `--air-date 2026-11-29` (gate only). Caption check 19 changes, ratio 1.0. Freezedetect 0 events.
+
+**STOP:** parked for Chief: Short PASS, title and slot. Nothing uploaded.
+
+## J0416 s05_valves_v01 seam & reuse fix — Gemini, 17 Oct 2026
+
+- **What:** Fixed `polish_gate` horizontal seam on `s03_Each` (0:08, FABRICIUS WHO card shade feathered with cosine ramp, plus feathered title shade) and fixed `picture_qa` reuse FAIL on `s06_It` (0:17, swapped repeated `08_knots_valve_t4` to unused Part 04 KEEP plate `11_two_fingers_t3` at `in_s=4.0, crop_x=656`). £0 spend, existing Part 04 KEEP plates only.
+- **File:** `10_Shorts/hos_005_s05_valves_v01.mp4` (untracked local + iCloud `HOS UAT/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s05_valves_v01.mp4`), **23.70 s**, 57 words, sha256 `a4e7e6416f4f6c9857da73496cc2c3b61d50f7ab4f8b4fbb226fdb46d3f1920f`.
+- **Record & QA:** `10_Shorts/SHORT_s05_valves_v01.json`, `10_Shorts/qa_s05_valves_v01/polish_gate_s05_valves_v01.json`, `10_Shorts/qa_s05_valves_v01/picture_qa_s05_valves_v01/PICTURE_QA.md`.
+
+```
+PASS  hos_005_s05_valves_v01.mp4  dur=23.7s  audio=-23.8dB  motion=12.76  dhash=fe1f96eb9c6028aa   (--air-date 2026-11-29)
+PASS  hos_005_s05_valves_v01.mp4  0:23.70  mean -23.8 dB  peak -3.9 dB  144 wpm
+   warn  pace 144 wpm (< 145); expect a long film — see STUDIO_PLAYBOOK.md §4 speed
+   warn  replace at ~0:07.92: script 'valve the flaps fabricius found harvey presses' / heard 'valve the flaps fabriceus found harvey presses' — sounds alike (likely the transcriber); listen
+freezedetect: 0 events []
+polish gate PASS: 0 of 8 rows failed, 1 to look at -> 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s05_valves_v01/polish_gate_s05_valves_v01.json
+picture QA PASS: 0 of 8 cuts fail, 1 to look at -> 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s05_valves_v01/picture_qa_s05_valves_v01/PICTURE_QA.md, 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s05_valves_v01/picture_qa_s05_valves_v01/picture_qa_review.jpg
+```
+
+**STOP:** parked for Chief review, title and slot. Nothing uploaded.
+
+## J0517 s06_blood_pressure_cuff_v01 (Test B search-titled Short, Part 05 lift) — Gemini, 18 Oct 2026
+
+- **What:** Built search-titled Test B Short `s06_blood_pressure_cuff_v01` from `005` Part 05 existing VO (`02_Voiceover/part05_the_vessels_he_never_saw_v01_raw.mp3`, claim-first lift of indices 107–126 and 178–220: *"Your blood leaves your heart, runs out through your arteries, crosses through the capillaries, and comes home through your veins. And the next time a nurse wraps a cuff round your arm, think of Harvey. A blood pressure cuff is his band. It squeezes until the blood stops getting in, then lets go, and listens for the moment it starts to flow again."*), existing Part 05/04 KEEP plates (`08_your_blood_t2`, `16_proved_last_link_t4`, `07_capillaries_loop_t2`, `10_one_vein_t1`, `13_cuff_t1`, `04_stopped_loosen_t5`, `14_cuff_release_t4`, `07_in_out_doors_t2`, and `08_your_blood_t2` loop), and Part 05 score bed (`hos005-part05-temp_score_bed_v01.mp3`). £0 spend, no upload.
+- **Title draft:** *How Does a Blood Pressure Cuff Work?* (exact signed-out GB YouTube autocomplete hit; alternatives *How Does Blood Circulate in the Body?* / *How Does Blood Flow Through the Body?*).
+- **On screen:** Frame-0 hook `HIS BAND **TODAY**` (9.01% cap, centred), WHO card `WILLIAM HARVEY · London, 1628` (`14.2–17.8 s`, lower third of 16:9 band with cosine-feathered shade), exact live title *The Tied Arm That Proved Your Blood Circulates* (`9.0–14.0 s`), captions throughout (`19/19` changes), `3.0 s` loop back to `08_your_blood_t2`.
+- **File:** `10_Shorts/hos_005_s06_blood_pressure_cuff_v01.mp4` (untracked local + iCloud `HOS UAT/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s06_blood_pressure_cuff_v01.mp4`), **24.233 s**, 63 words, 156 wpm, sha256 `b9bc921502c311e2bba585868dff48746eaefdf44380f5a5f8464f946e5b8bf3`.
+- **Record & QA:** `10_Shorts/SHORT_s06_blood_pressure_cuff_v01.json`, `10_Shorts/_build_short_s06_blood_pressure_cuff_v01.py`, `10_Shorts/qa_s06_blood_pressure_cuff_v01/polish_gate_s06_blood_pressure_cuff_v01.json`, `10_Shorts/qa_s06_blood_pressure_cuff_v01/picture_qa_s06_blood_pressure_cuff_v01/PICTURE_QA.md`.
+
+```
+PASS  hos_005_s06_blood_pressure_cuff_v01.mp4  dur=24.23s  audio=-23.2dB  motion=16.3  dhash=17962f692f0f06ab   (--air-date 2026-12-20)
+PASS  hos_005_s06_blood_pressure_cuff_v01.mp4  0:24.23  mean -23.2 dB  peak -4.7 dB  156 wpm
+freezedetect: 0 events []
+polish gate PASS: 0 of 9 rows failed, 1 to look at -> 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s06_blood_pressure_cuff_v01/polish_gate_s06_blood_pressure_cuff_v01.json
+picture QA PASS: 0 of 9 cuts fail, 1 to look at -> 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s06_blood_pressure_cuff_v01/picture_qa_s06_blood_pressure_cuff_v01/PICTURE_QA.md, 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s06_blood_pressure_cuff_v01/picture_qa_s06_blood_pressure_cuff_v01/picture_qa_review.jpg
+```
+
+**STOP:** parked for Chief review, title and slot. Nothing uploaded.
+
+## 18 Oct 2026 — Thumbnail B `v06` `STOPPED RED PULSE` (`1.08x` hero push-in, OWB J0564)
+
+- **Selection:** HOS `005` (`wwcjcFfC-5M`, *The Tied Arm That Proved Your Blood Circulates*, scheduled Thu 29 Oct 18:00) has no Test & Compare on record in `THUMB_LEDGER.json` (`003` has `T001` active; `004` has an armed test, never touched; `002` got `B v07` in `J0534` and `001` got `B v04` in `J0549`, making `005` next in rotation).
+- **Build (`£0` spend, existing `005` key-art plate only):** Built `Selected/hos_005_thumb_B_stopped_red_pulse_v06.jpg` (`1280×720`, `253,882` bytes, sha256 `1501646eb3b6d37259dd7738d226f8c1c482d75423023d4549378ffb1be0d174`) via `08_Thumbnail/_compose_hos_005_thumb_B_stopped_red_pulse_v06.py` and `08_Thumbnail/THUMB_B_STOPPED_RED_PULSE_v06.json` from `Selected/hos_005_thumb_A_one_tight_band_v02.jpg` with a `1.08×` push-in + clarity boost on the right-hand tied arm, glowing stopped red arterial pulse above the linen knot, and branching blue forearm veins (`heroBox = [560, 0, 1236, 704]`), Explorer in lower-left at `52.2%` frame height (`376 px`, `box = [88, 344, 318, 720]`), and Georgia Bold upper-left 3-word hook **`STOPPED RED PULSE`** (`STOPPED` in gold `#E49C20`, framed by the original painted gold scroll flourishes at `y=24..356`).
+- **Scores (`THUMB_B_STOPPED_RED_PULSE_v06.json`):**
+  - **HOOK: PASS** — `STOPPED RED PULSE` (3 words, punch word `STOPPED` in gold) names the concrete visible arterial proof above the tight linen band on the upper arm (`De Motu Cordis` ch. 2–3 & 11, `FACT_NOTES_v01` rows 21 & 26; `005` script Part 03–04: *"Each squeeze pushes blood out into the arteries, and that push is the pulse... Above it, the artery throbs. Why? The tight band has stopped the blood getting in"* and `THUMBNAIL_AND_TITLE_RULES.md` §1.2 & §2.B.1 *"name the thing"*), shares zero words with the video title (*The Tied Arm That Proved Your Blood Circulates*), Variant A (`ONE TIGHT BAND`), `J0407` (`THE BLOCKED ARTERY`), `J0424` (`HIDDEN VEIN VALVES`), or `J0518` (`TRAPPED UNDER SKIN`), and uses no vague questions or pronouns.
+  - **BAND: PASS** — Upper-left lettering band (`x=108..468`, `y=70..316`, framed by `005`'s original painted gold scroll flourishes at `y=24..356`) sits completely left of the pushed-in hero arm (`x=560..1236`), above the Explorer's hair (`y=344`) and bottom flourish (`y=328`), and clear of the bottom-right duration badge.
+  - **PHONE: PASS** — Checked on `168×94` preview sheet (`Selected/hos_005_thumb_B_stopped_red_pulse_v06_preview.jpg`), style sheet (`Selected/hos_005_thumb_B_stopped_red_pulse_v06_style_sheet.jpg`), and 4-panel strip (`Selected/hos_005_thumb_TC_4way_stopped_red_pulse_v06_phone_168.jpg`).
+
+```
+02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/08_Thumbnail/Selected/hos_005_thumb_B_stopped_red_pulse_v06_preview.jpg
+02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/08_Thumbnail/Selected/hos_005_thumb_B_stopped_red_pulse_v06_style_sheet.jpg  (1 new vs 4 live long references)
+ALL CHECKS PASS (00_Brand/Channel-Setup/tools/check_all.sh)
+```
+
+**STOP:** parked for Chief: thumb B review. No Studio change made.
+
+## J0608 s07_heart_pulse_v01 (Test B search-titled Short, Part 03 lift) — Gemini, 19 Oct 2026
+
+- **What:** Built search-titled Test B Short `s07_heart_pulse_v01` (4th search-titled Short on `005`, second in Round 4 after `004 s07`) from `005` Part 03 existing VO (`02_Voiceover/part03_the_sum_that_broke_the_old_idea_v01_raw.mp3`, claim-first lift of indices 49–78, 200–219, and 228–241: *"The heart isn't a stove. It's a muscle, and it squeezes. Each squeeze pushes blood out into the arteries, and that push is the pulse you feel in your wrist. The heart pumps it out through the arteries, and it comes back through the veins, round and round. It circulates. Your heart pumps all of your blood round your body in about a minute."*), existing Part 03/01/05 KEEP plates (`03_stove_to_muscle_t1`, `02_slow_hearts_t2`, `04_squeeze_pulse_t1`, `01_pulse_wrist_t1`, `08_your_blood_t2`, `12_glowing_loop_t2`, `13_one_minute_t3`, and `03_stove_to_muscle_t1` loop), and Part 03 score bed (`hos005-part03-temp_score_bed_v01.mp3`). £0 spend, no upload.
+- **Title draft:** *How Does the Heart Pump Blood?* (exact signed-out GB YouTube autocomplete hit; alternatives *What Causes a Pulse?* / *How Fast Does Blood Flow Through the Body?*).
+- **On screen:** Frame-0 hook `YOUR **PULSE**` (9.01% cap, 2 lines, centred), WHO card `WILLIAM HARVEY · London, 1628` (`2.2–5.8 s`, lower third of 16:9 band with cosine-feathered shade), exact live title *The Tied Arm That Proved Your Blood Circulates* (`9.0–14.0 s`), captions throughout (`18/18` changes), `3.0 s` loop back to `03_stove_to_muscle_t1`.
+- **File:** `10_Shorts/hos_005_s07_heart_pulse_v01.mp4` (untracked local + iCloud `HOS UAT/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s07_heart_pulse_v01.mp4`), **25.533 s**, 64 words, 150 wpm, sha256 `a6513555187fe143d9a87039da2f3f0796fd21576c38764308bf5477e0df306d`.
+- **Record & QA:** `10_Shorts/SHORT_s07_heart_pulse_v01.json`, `10_Shorts/_build_short_s07_heart_pulse_v01.py`, `10_Shorts/qa_s07_heart_pulse_v01/polish_gate_s07_heart_pulse_v01.json`, `10_Shorts/qa_s07_heart_pulse_v01/picture_qa_s07_heart_pulse_v01/PICTURE_QA.md`.
+
+```
+PASS  hos_005_s07_heart_pulse_v01.mp4  dur=25.53s  audio=-24.0dB  motion=17.29  dhash=e04d0e2b63272159   (--air-date 2027-01-05)
+PASS  hos_005_s07_heart_pulse_v01.mp4  0:25.53  mean -24.0 dB  peak -5.1 dB  150 wpm
+freezedetect: 0 events []
+polish gate PASS: 0 of 8 rows failed, 1 to look at -> 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s07_heart_pulse_v01/polish_gate_s07_heart_pulse_v01.json
+picture QA PASS: 0 of 8 cuts fail, 1 to look at -> 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s07_heart_pulse_v01/picture_qa_s07_heart_pulse_v01/PICTURE_QA.md, 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s07_heart_pulse_v01/picture_qa_s07_heart_pulse_v01/picture_qa_review.jpg
+```
+
+**STOP:** parked for Chief review, title and slot. Nothing uploaded.
+
+## 19 Oct 2026 — Thumbnail B `v07` `SWOLLEN BLUE CORDS` (`1.095x` hero push-in + forearm blue-cord & arterial-glow boost, OWB J0609)
+
+- **Selection:** HOS `005` (`wwcjcFfC-5M`, *The Tied Arm That Proved Your Blood Circulates*, scheduled Thu 29 Oct 18:00) has no Test & Compare on record in `THUMB_LEDGER.json` (`003` has `T001` active; `004` has an armed test, never touched; in the `001` → `005` → `002` rotation, `005` got `B v06` in `J0564`, `002` got `B v08` in `J0579`, and `001` got `B v05` in `J0594`, making `005` next in rotation).
+- **Build (`£0` spend, existing `005` key-art plate only):** Built `Selected/hos_005_thumb_B_swollen_blue_cords_v07.jpg` (`1280×720`, `254,484` bytes, sha256 `2acc663367d35dda77a06ea279ff15961b111886ab8c3928bd98a65256a82feb`) via `08_Thumbnail/_compose_hos_005_thumb_B_swollen_blue_cords_v07.py` and `08_Thumbnail/THUMB_B_SWOLLEN_BLUE_CORDS_v07.json` from `Selected/hos_005_thumb_A_one_tight_band_v02.jpg` with a `1.095×` push-in + targeted local clarity/contrast boost on the branching blue venous cords on the pale forearm below the tight linen knot (`x=680..980, y=420..680`) and the stopped glowing red arterial column above the band (`x=890..1120, y=0..290`, `heroBox = [556, 0, 1244, 706]`), Explorer in lower-left at `52.2%` frame height (`376 px`, `box = [88, 344, 318, 720]`), and Georgia Bold upper-left 3-word hook **`SWOLLEN BLUE CORDS`** (`SWOLLEN` in gold `#E49C20`, `BLUE` and `CORDS` in cream, framed by the original painted gold scroll flourishes at `y=24..356`).
+- **Scores (`THUMB_B_SWOLLEN_BLUE_CORDS_v07.json`):**
+  - **HOOK: PASS** — `SWOLLEN BLUE CORDS` (3 words, punch word `SWOLLEN` in gold) names the concrete visible venous proof below the tight linen band on the pale forearm (`De Motu Cordis` ch. 11 & 13, `FACT_NOTES_v01` rows 26–28; `005` script Part 04 line 100: *"the veins below the band swell into blue cords"* and `THUMBNAIL_AND_TITLE_RULES.md` §1.2 & §2.B.1 *"name the thing"*), shares zero words with the video title (*The Tied Arm That Proved Your Blood Circulates*), Variant A (`ONE TIGHT BAND`), `J0407` (`THE BLOCKED ARTERY`), `J0424` (`HIDDEN VEIN VALVES`), `J0518` (`TRAPPED UNDER SKIN`), or `J0564` (`STOPPED RED PULSE`), and uses no vague questions or pronouns.
+  - **BAND: PASS** — Upper-left lettering band (`x=99..477`, `y=71..315`, framed by `005`'s original painted gold scroll flourishes at `y=24..356`) sits completely left of the pushed-in hero arm (`x=556..1244`), above the Explorer's hair (`y=344`) and bottom flourish (`y=328`), and clear of the bottom-right duration badge.
+  - **PHONE: PASS** — Checked on `168×94` preview sheet (`Selected/hos_005_thumb_B_swollen_blue_cords_v07_preview.jpg`), style sheet (`Selected/hos_005_thumb_B_swollen_blue_cords_v07_style_sheet.jpg`), and 4-panel strip (`Selected/hos_005_thumb_TC_4way_swollen_blue_cords_v07_phone_168.jpg`).
+
+```
+02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/08_Thumbnail/Selected/hos_005_thumb_B_swollen_blue_cords_v07_preview.jpg
+02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/08_Thumbnail/Selected/hos_005_thumb_B_swollen_blue_cords_v07_style_sheet.jpg  (1 new vs 4 live long references)
+ALL CHECKS PASS (00_Brand/Channel-Setup/tools/check_all.sh)
+```
+
+**STOP:** parked for Chief: thumb B review. No Studio change made.
+
+## 19 Oct 2026 — Thumbnail B `v08` `PINCHED LINEN KNOT` (`1.095x` hero push-in + linen-knot, forearm blue-cord & arterial-glow boost, OWB J0655)
+
+- **Selection:** HOS `005` (`wwcjcFfC-5M`, *The Tied Arm That Proved Your Blood Circulates*, scheduled Thu 29 Oct 18:00) has no Test & Compare on record in `THUMB_LEDGER.json` (`003` has `T001` active; `004` has an armed test, never touched; in the `001` → `005` → `002` rotation, `005` got `B v07` in `J0609`, `002` got `B v09` in `J0624`, and `001` got `B v06` in `J0640`, making `005` next in rotation).
+- **Build (`£0` spend, existing `005` key-art plate only):** Built `Selected/hos_005_thumb_B_pinched_linen_knot_v08.jpg` (`1280×720`, `253,876` bytes, sha256 `812dde2ede8f1628c1ab8f675ab0c01b8d2d84bcb082d30ea50e4548d5622539`) via `08_Thumbnail/_compose_hos_005_thumb_B_pinched_linen_knot_v08.py` and `08_Thumbnail/THUMB_B_PINCHED_LINEN_KNOT_v08.json` from `Selected/hos_005_thumb_A_one_tight_band_v02.jpg` with a `1.095×` push-in + targeted local clarity/contrast boost on the tight linen knot and strip pinching the upper arm (`x=835..1240, y=260..420`), the branching blue venous cords on the pale forearm below the knot (`x=680..980, y=420..680`), and the stopped glowing red arterial column above the band (`x=890..1120, y=0..290`, `heroBox = [556, 0, 1244, 706]`), Explorer in lower-left at `52.2%` frame height (`376 px`, `box = [88, 344, 318, 720]`), and Georgia Bold upper-left 3-word hook **`PINCHED LINEN KNOT`** (`PINCHED` in gold `#E49C20`, `LINEN` and `KNOT` in cream, framed by the original painted gold scroll flourishes at `y=24..356`).
+- **Scores (`THUMB_B_PINCHED_LINEN_KNOT_v08.json`):**
+  - **HOOK: PASS** — `PINCHED LINEN KNOT` (3 words, punch word `PINCHED` in gold) names the concrete visible experimental instrument pinching the upper arm on the plate (the tight linen strip and knot pinching superficial veins shut below while stopping arterial blood above, `De Motu Cordis` ch. 11 & 13, `FACT_NOTES_v01` rows 26–28; `005` script Part 04 lines 101 & 110: *"The most famous one needs nothing but a strip of linen... the veins near the skin are pinched shut, so blood piles up below it"* and `THUMBNAIL_AND_TITLE_RULES.md` §1.2 & §2.B.1 *"name the thing"*), shares zero words with the video title (*The Tied Arm That Proved Your Blood Circulates*), Variant A (`ONE TIGHT BAND`), `J0407` (`THE BLOCKED ARTERY`), `J0424` (`HIDDEN VEIN VALVES`), `J0518` (`TRAPPED UNDER SKIN`), `J0564` (`STOPPED RED PULSE`), or `J0609` (`SWOLLEN BLUE CORDS`), and uses no vague questions or pronouns.
+  - **BAND: PASS** — Upper-left lettering band (`x=116..461`, `y=72..314`, framed by `005`'s original painted gold scroll flourishes at `y=24..356`) sits completely left of the pushed-in hero arm (`x=556..1244`), above the Explorer's hair (`y=344`) and bottom flourish (`y=328`), and clear of the bottom-right duration badge.
+  - **PHONE: PASS** — Checked on `168×94` preview sheet (`Selected/hos_005_thumb_B_pinched_linen_knot_v08_preview.jpg`), style sheet (`Selected/hos_005_thumb_B_pinched_linen_knot_v08_style_sheet.jpg`), and 4-panel strip (`Selected/hos_005_thumb_TC_4way_pinched_linen_knot_v08_phone_168.jpg`).
+
+```
+02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/08_Thumbnail/Selected/hos_005_thumb_B_pinched_linen_knot_v08_preview.jpg
+02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/08_Thumbnail/Selected/hos_005_thumb_B_pinched_linen_knot_v08_style_sheet.jpg  (1 new vs 4 live long references)
+ALL CHECKS PASS (00_Brand/Channel-Setup/tools/check_all.sh)
+```
+
+**STOP:** parked for Chief: thumb B review. No Studio change made.
+
+## 20 Oct 2026 — Thumbnail B `v09` `PALE COLD HAND` (`1.10x` hero push-in + pale-hand, forearm blue-cord, linen-knot & arterial-glow boost, OWB J0700)
+
+- **Selection:** HOS `005` (`wwcjcFfC-5M`, *The Tied Arm That Proved Your Blood Circulates*, scheduled Thu 29 Oct 18:00) has no Test & Compare on record in `THUMB_LEDGER.json` (`003` has `T001` active; `004` has an armed test, never touched; in the `001` → `005` → `002` rotation, `005` got `B v08` in `J0655`, `002` got `B v10` in `J0670`, and `001` got `B v07` in `J0685`, making `005` next in rotation).
+- **Build (`£0` spend, existing `005` key-art plate only):** Built `Selected/hos_005_thumb_B_pale_cold_hand_v09.jpg` (`1280×720`, `250,069` bytes, sha256 `5b239b28ec1e2ad8218b22d7a639af34ff566802fdd261d0a48947f3e18ebefc`) via `08_Thumbnail/_compose_hos_005_thumb_B_pale_cold_hand_v09.py` and `08_Thumbnail/THUMB_B_PALE_COLD_HAND_v09.json` from `Selected/hos_005_thumb_A_one_tight_band_v02.jpg` with a `1.10×` push-in + targeted local clarity/contrast boost on the pale, cool foreground open hand below the band (`x=250..760, y=445..700`), the branching blue venous cords on the pale forearm (`x=660..980, y=410..680`), the tight linen knot (`x=835..1235, y=265..415`), and the stopped glowing red arterial column above the band (`x=890..1120, y=0..290`, `heroBox = [554, 0, 1246, 708]`), Explorer in lower-left at `52.2%` frame height (`376 px`, `box = [88, 344, 318, 720]`), and Georgia Bold upper-left 3-word hook **`PALE COLD HAND`** (`COLD` in gold `#E49C20`, `PALE` and `HAND` in cream, framed by the original painted gold scroll flourishes at `y=24..356`).
+- **Scores (`THUMB_B_PALE_COLD_HAND_v09.json`):**
+  - **HOOK: PASS** — `PALE COLD HAND` (3 words, punch word `COLD` in gold) names the concrete visible anatomical symptom below the tight linen band on the plate (the pale, cool open hand below the tight ligature while the artery throbs red above it, `De Motu Cordis` ch. 11, `FACT_NOTES_v01` row 26; `005` script Part 04 lines 99 & 112: *"the hand below turns pale and cool; above the band the artery throbs... Below the band, the hand goes pale and cold"* and `THUMBNAIL_AND_TITLE_RULES.md` §1.2 & §2.B.1 *"name the thing"*), shares zero words with the video title (*The Tied Arm That Proved Your Blood Circulates*), Variant A (`ONE TIGHT BAND`), `J0407` (`THE BLOCKED ARTERY`), `J0424` (`HIDDEN VEIN VALVES`), `J0518` (`TRAPPED UNDER SKIN`), `J0564` (`STOPPED RED PULSE`), `J0609` (`SWOLLEN BLUE CORDS`), or `J0655` (`PINCHED LINEN KNOT`), and uses no vague questions or pronouns.
+  - **BAND: PASS** — Upper-left lettering band (`x=146..429`, `y=67..318`, framed by `005`'s original painted gold scroll flourishes at `y=24..356`) sits completely left of the pushed-in hero arm (`x=554..1246`), above the Explorer's hair (`y=344`) and bottom flourish (`y=328`), and clear of the bottom-right duration badge.
+  - **PHONE: PASS** — Checked on `168×94` preview sheet (`Selected/hos_005_thumb_B_pale_cold_hand_v09_preview.jpg`), style sheet (`Selected/hos_005_thumb_B_pale_cold_hand_v09_style_sheet.jpg`), and 4-panel strip (`Selected/hos_005_thumb_TC_4way_pale_cold_hand_v09_phone_168.jpg`).
+
+```
+02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/08_Thumbnail/Selected/hos_005_thumb_B_pale_cold_hand_v09_preview.jpg
+02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/08_Thumbnail/Selected/hos_005_thumb_B_pale_cold_hand_v09_style_sheet.jpg  (1 new vs 4 live long references)
+ALL CHECKS PASS (00_Brand/Channel-Setup/tools/check_all.sh)
+```
+
+**STOP:** parked for Chief: thumb B review. No Studio change made.
+
+## J0730 s08_capillaries_v01 (Test B search-titled Short, Part 05 lift) — Gemini, 20 Oct 2026
+
+- **What:** Built search-titled Test B Short `s08_capillaries_v01` (5th search-titled Short on `005`, second in Round 5 after `004 s08`) from `005` Part 05 existing VO (`02_Voiceover/part05_the_vessels_he_never_saw_v01_raw.mp3`, claim-first lift of indices 7–17, 53–70, and 75–106: *"How did the blood get from the arteries into the veins? In Bologna, a doctor called Marcello Malpighi looked at the thin lung of a frog through a microscope. A net of tiny vessels, finer than hairs, carrying blood from the smallest arteries into the smallest veins. We call them capillaries, from the Latin word for hair. The circle was closed."*), existing Part 05 KEEP plates (`01_loop_gap_t5`, `04_malpighi_slide_t1`, `02_tiny_gaps_t1`, `06_eyepiece_mesh_t1`, `07_capillaries_loop_t2`, `16_proved_last_link_t4`, and `01_loop_gap_t5` loop), and Part 05 score bed (`hos005-part05-temp_score_bed_v01.mp3`). £0 spend, no upload.
+- **Title draft:** *What Are Capillaries?* (exact signed-out GB YouTube autocomplete hit; alternatives *How Do Capillaries Work?* / *What Do Capillaries Do?*).
+- **On screen:** Frame-0 hook `FINER THAN **HAIRS**` (9.01% cap, 3 lines, centred), WHO card `MARCELLO MALPIGHI · Bologna, 1661` (`4.6–8.1 s`, lower third of 16:9 band with cosine-feathered shade), exact live title *The Tied Arm That Proved Your Blood Circulates* (`9.0–14.0 s`), captions throughout (`20/20` changes), `3.0 s` loop back to `01_loop_gap_t5`.
+- **File:** `10_Shorts/hos_005_s08_capillaries_v01.mp4` (untracked local + iCloud `HOS UAT/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s08_capillaries_v01.mp4`), **25.167 s**, 61 words, 145 wpm, sha256 `64f746e6572110751e4369e112573f38e12b71cb38c8df4e4979bf36de79b0b1`.
+- **Record & QA:** `10_Shorts/SHORT_s08_capillaries_v01.json`, `10_Shorts/_build_short_s08_capillaries_v01.py`, `10_Shorts/qa_s08_capillaries_v01/polish_gate_s08_capillaries_v01.json`, `10_Shorts/qa_s08_capillaries_v01/picture_qa_s08_capillaries_v01/PICTURE_QA.md`.
+
+```
+PASS  hos_005_s08_capillaries_v01.mp4  dur=25.17s  audio=-23.8dB  motion=13.81  dhash=17160faa2f0f1717   (--air-date 2027-01-12)
+PASS  hos_005_s08_capillaries_v01.mp4  0:25.17  mean -23.8 dB  peak -4.7 dB  145 wpm
+freezedetect: 0 events []
+polish gate PASS: 0 of 7 rows failed, 1 to look at -> 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s08_capillaries_v01/polish_gate_s08_capillaries_v01.json
+picture QA PASS: 0 of 7 cuts fail, 1 to look at -> 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s08_capillaries_v01/picture_qa_s08_capillaries_v01/PICTURE_QA.md, 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s08_capillaries_v01/picture_qa_s08_capillaries_v01/picture_qa_review.jpg
+```
+
+**STOP:** parked for Chief review, title and slot. Nothing uploaded.
+
+
+
+## J0761 long thumbnail B v10 (`SQUEEZED CLOTH STRIP`) — Gemini, 21 Oct 2026
+
+- **Selection:** HOS `005` (`wwcjcFfC-5M`, *The Tied Arm That Proved Your Blood Circulates*, scheduled Thu 29 Oct 18:00) has no Test & Compare on record in `THUMB_LEDGER.json` (`003` has `T001` active; `004` has an armed test, never touched; in the `001` → `005` → `002` rotation, `005` got `B v09` in `J0700`, `002` got `B v11` in `J0731`, and `001` got `B v08` in `J0746`, making `005` next in rotation).
+- **Build (`£0` spend, existing `005` key-art plate only):** Built `Selected/hos_005_thumb_B_squeezed_cloth_strip_v10.jpg` (`1280×720`, `256,205` bytes, sha256 `2ef47700d84219aecdc91a02b28acce5e94540226a3eceb2c3bd40494714c88a`) via `08_Thumbnail/_compose_hos_005_thumb_B_squeezed_cloth_strip_v10.py` and `08_Thumbnail/THUMB_B_SQUEEZED_CLOTH_STRIP_v10.json` from `Selected/hos_005_thumb_A_one_tight_band_v02.jpg` with a `1.11×` push-in + targeted local weave/fold relief boost on the squeezed cloth strip and knot around the upper arm (`x=825..1245, y=255..425`), the stopped glowing red arterial column directly above the strip (`x=885..1125, y=0..290`), and the branching blue venous cords and pale foreground hand below it (`heroBox = [550, 0, 1252, 710]`), Explorer in lower-left at `52.2%` frame height (`376 px`, `box = [88, 344, 318, 720]`), and Georgia Bold upper-left 3-word hook **`SQUEEZED CLOTH STRIP`** (`STRIP` in gold `#E49C20`, `SQUEEZED` and `CLOTH` in cream, framed by the original painted gold scroll flourishes at `y=24..356`).
+- **Scores (`THUMB_B_SQUEEZED_CLOTH_STRIP_v10.json`):**
+  - **HOOK: PASS** — `SQUEEZED CLOTH STRIP` (3 words, punch word `STRIP` in gold) names the concrete visible ligature instrument wrapped around the upper arm on the plate (the strip of woven cloth/linen squeezing the upper arm to stop arterial inflow and pinch the superficial veins shut, `De Motu Cordis` ch. 11, `FACT_NOTES_v01` rows 26–27; `005` script Part 04 lines 110 & 114 and Part 05 line 158: *"The most famous one needs nothing but a strip of linen... the veins near the skin are still squeezed shut... It squeezes until the blood stops getting in"* and `THUMBNAIL_AND_TITLE_RULES.md` §1.2 & §2.B.1 *"name the thing"*), shares zero words with the video title (*The Tied Arm That Proved Your Blood Circulates*), Variant A (`ONE TIGHT BAND`), Variant B v02 (`IT GOES ROUND`), Variant C v04 (`TIE IT TIGHT`), `J0407` (`THE BLOCKED ARTERY`), `J0424` (`HIDDEN VEIN VALVES`), `J0518` (`TRAPPED UNDER SKIN`), `J0564` (`STOPPED RED PULSE`), `J0609` (`SWOLLEN BLUE CORDS`), `J0655` (`PINCHED LINEN KNOT`), or `J0700` (`PALE COLD HAND`), and uses no vague questions or pronouns.
+  - **BAND: PASS** — Upper-left lettering band (`x=110..467`, `y=68..318`, framed by `005`'s original painted gold scroll flourishes at `y=24..356`) sits completely left of the pushed-in hero arm (`x=550..1252`), above the Explorer's hair (`y=344`) and bottom flourish (`y=328`), and clear of the bottom-right duration badge.
+  - **PHONE: PASS** — Checked on `168×94` preview sheet (`Selected/hos_005_thumb_B_squeezed_cloth_strip_v10_preview.jpg`), style sheet (`Selected/hos_005_thumb_B_squeezed_cloth_strip_v10_style_sheet.jpg`), and 4-panel strip (`Selected/hos_005_thumb_TC_4way_squeezed_cloth_strip_v10_phone_168.jpg`).
+
+```
+02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/08_Thumbnail/Selected/hos_005_thumb_B_squeezed_cloth_strip_v10_preview.jpg
+02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/08_Thumbnail/Selected/hos_005_thumb_B_squeezed_cloth_strip_v10_style_sheet.jpg  (1 new vs 4 live long references)
+ALL CHECKS PASS (00_Brand/Channel-Setup/tools/check_all.sh)
+```
+
+**STOP:** parked for Chief: thumb B review. No Studio change made.
+

@@ -15,6 +15,7 @@ import { classifyHttpError, redactSummary } from "@/lib/publishing/errors";
 import { probeVideo, validateForPlatform } from "@/lib/publishing/media/ffprobe";
 import fs from "fs";
 import { getEnv } from "@/lib/env";
+import { retryOn403 } from "@/lib/youtube/upload";
 
 const YT_UPLOAD = "https://www.googleapis.com/auth/youtube.upload";
 const YT_READONLY = "https://www.googleapis.com/auth/youtube.readonly";
@@ -476,21 +477,8 @@ export class YouTubePublishingAdapter implements PublishingAdapter {
 
 type ThumbnailResult = { ok: boolean; message: string; status?: number };
 
-/** thumbnails.set answers 403 while a fresh upload is still processing; it succeeds a minute later. */
-export async function retryOn403(
-  attempt: () => Promise<ThumbnailResult>,
-  opts: { tries?: number; delayMs?: number; sleep?: (ms: number) => Promise<void> } = {},
-): Promise<ThumbnailResult> {
-  const tries = opts.tries ?? 3;
-  const delayMs = opts.delayMs ?? 60_000;
-  const sleep = opts.sleep ?? ((ms: number) => new Promise<void>((r) => setTimeout(r, ms)));
-  let result = await attempt();
-  for (let i = 1; i < tries && !result.ok && result.status === 403; i++) {
-    await sleep(delayMs);
-    result = await attempt();
-  }
-  return result;
-}
+/** thumbnails.set 403 retry: one copy, in the shared uploader (studio core). Re-exported for this adapter's callers. */
+export { retryOn403 };
 
 async function setYouTubeThumbnail(
   accessToken: string,

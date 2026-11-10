@@ -1,0 +1,2 @@
+WARN   0:10 row s03_The 20_shimmer_coals_t1.mp4: low detail: edge density 0.0285 < film p5 0.0309
+picture QA PASS: 0 of 7 cuts fail, 1 to look at -> /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/qa_s05_charcoal_gas_v01/picture_qa_s05_charcoal_gas_v01/PICTURE_QA.md, /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/qa_s05_charcoal_gas_v01/picture_qa_s05_charcoal_gas_v01/picture_qa_review.jpg

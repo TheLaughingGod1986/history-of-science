@@ -1,0 +1,98 @@
+{
+  "film": "001",
+  "video": "_C92tIJCk8A",
+  "job": "J0549",
+  "variant": "B v04 (1.055x swan-neck flask hero push-in + concrete sterile-proof hook; pairs with B v02 'TRAPPED IN GLASS' and B v03 'DROP OF WATER')",
+  "maker": "gemini",
+  "hook": "BOILED CLEAR BROTH",
+  "punch": "CLEAR",
+  "jpg": "Selected/hos_001_thumb_B_boiled_clear_broth_v04.jpg",
+  "sha256": "d171f796e9499502f1a0787339e50ee64b5b74701dc9cc39402258a10ed6b114",
+  "bytes": 263113,
+  "plates": [
+    "08_Thumbnail/Selected/hos_001_tc_thumb_v02.jpg (NAS 001 painted 16:9 library key-art plate: giant swan-neck flask with clear boiled broth & S-curve dust trap on right two-thirds with 1.055x hero push-in + lower-left Explorer at 54.4% frame height + original painted gold scroll flourishes)"
+  ],
+  "method": "existing_001_plate_only_1.055x_hero_push_in_and_reletter_GeorgiaBold_with_original_painted_flourishes",
+  "spend": 0,
+  "heroBox": [
+    584,
+    14,
+    1134,
+    692
+  ],
+  "explorer": {
+    "source": "hos_001_tc_thumb_v02.jpg",
+    "box": [
+      88,
+      328,
+      316,
+      720
+    ],
+    "height_px": 392,
+    "height_frac": 0.544
+  },
+  "lettering": [
+    {
+      "word": "BOILED",
+      "kind": "cream",
+      "size": 88,
+      "box": [
+        108,
+        69,
+        462,
+        150
+      ]
+    },
+    {
+      "word": "CLEAR",
+      "kind": "gold",
+      "size": 104,
+      "box": [
+        97,
+        140,
+        473,
+        234
+      ]
+    },
+    {
+      "word": "BROTH",
+      "kind": "cream",
+      "size": 92,
+      "box": [
+        111,
+        224,
+        459,
+        308
+      ]
+    }
+  ],
+  "ornaments": {
+    "top_scroll_box": [
+      88,
+      20,
+      496,
+      60
+    ],
+    "bottom_scroll_box": [
+      140,
+      318,
+      445,
+      356
+    ]
+  },
+  "clearOfHero": true,
+  "clearOfExplorer": true,
+  "clearOfBadge": true,
+  "scores": {
+    "HOOK": "PASS \u2014 'BOILED CLEAR BROTH' (3 words, punch word 'CLEAR' in gold) names the concrete discovery substance ('BROTH') and visible sterile proof ('BOILED CLEAR') shown inside Pasteur's giant curved-neck flask on the right (001 script Part 04: 'Boil broth. Keep the swan neck intact... The liquid stays clear. Watch it again in your mind: clear\u2026 clear\u2026 still clear' and THUMBNAIL_AND_TITLE_RULES.md \u00a71.2 & \u00a72.B.1 'name the thing'), shares zero words with the video title ('How Did We Discover Germs?'), J0391 ('THE SWAN NECK'), J0457 ('TRAPPED IN GLASS'), or J0503 ('DROP OF WATER'), and uses no vague questions or pronouns.",
+    "BAND": "PASS \u2014 Upper-left lettering band (x=97..473, y=69..308, framed by 001's original painted gold scroll flourishes at y=20..356) sits completely left of the pushed-in hero swan-neck flask (x=584..1134), above the Explorer's hair (y=328) and bottom flourish (y=318), and clear of the bottom-right duration badge.",
+    "PHONE": "PASS \u2014 Checked on 168x94 preview sheet and 4-panel strip: the 1.055x hero push-in and glass/broth specular clarity boost make the giant swan-neck flask bulb, golden liquid level, and S-curve dust-trap bend larger and crisper at 168x94 while keeping 'BOILED CLEAR BROTH' and the Explorer's face/glasses (54.4% height) immediately legible in under a second."
+  },
+  "previews": [
+    "Selected/hos_001_thumb_B_boiled_clear_broth_v04_preview.jpg",
+    "Selected/hos_001_thumb_B_boiled_clear_broth_v04_style_sheet.jpg",
+    "Selected/hos_001_thumb_TC_4way_boiled_clear_broth_v04_phone_168.jpg"
+  ],
+  "studio": false,
+  "status": "Test & Compare B v04 candidate for 001 (_C92tIJCk8A, built from existing 001 plate only with 1.055x hero push-in, \u00a30). Parked for Chief: thumb B review. No Studio until OK."
+}

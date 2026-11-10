@@ -1,0 +1,166 @@
+{
+  "rule": {
+    "low_detail": "FAIL: luma std < 13.44 and edge density < 0.0259 (absolute floor); WARN: luma std < 18.0 or edge density < film p5",
+    "split_panel": "full-height/width seam or gutter",
+    "split_panel_gutter": "gutter counts only with edge density >= 0.01 in the 10% band on both sides",
+    "near_black": "mean < 28.0 or p95 < 50.0",
+    "noise": "grain std > 6 over structure std < 12, and the 8x-downscaled frame under the low-detail floor (std < 13.44 and edge density < 0.0259)",
+    "jitter": "centre-patch phase correlation: reversal against trend or > 0.35 px off trend"
+  },
+  "low_detail_floor": {
+    "std": 13.44,
+    "edge": 0.0259,
+    "calibration": {
+      "video": "025_MarsRobot_full_rough_v02d.mp4",
+      "factor": 1.2,
+      "frames": [
+        {
+          "source": "PIA22223.jpg",
+          "t": 201.0,
+          "std": 12.1,
+          "edge": 0.0223
+        },
+        {
+          "source": "PIA22223.jpg",
+          "t": 216.3,
+          "std": 11.2,
+          "edge": 0.0216
+        },
+        {
+          "source": "PIA22929.jpg",
+          "t": 297.4,
+          "std": 26.54,
+          "edge": 0.5735
+        }
+      ]
+    }
+  },
+  "video": "/Users/benjaminoats/YouTube/History Of Science/docs/STANDALONE_SHORTS_TEST_2026-10/shorts_v01/hos_sa_s5_penzias_pigeons_v01.mp4",
+  "edge_floor": 0.0455,
+  "verdict": "PASS",
+  "failed": [],
+  "warn": [
+    {
+      "row": "s04_02_receiver_needle_v01",
+      "cut": 3,
+      "t": 14.97,
+      "source": "02_receiver_needle_v01.jpg#b4",
+      "why": [
+        "low detail: edge density 0.0454 < film p5 0.0455"
+      ]
+    }
+  ],
+  "reviewed_ok": [],
+  "rows": [
+    {
+      "cut": 0,
+      "row": "s01_01_pigeons_horn_v01",
+      "source": "01_pigeons_horn_v01.jpg",
+      "t": 2.76,
+      "std": 62.5,
+      "mean": 124.98,
+      "p95": 215.0,
+      "edge": 0.0702,
+      "hf": 10.12,
+      "lf": 59.24,
+      "std8": 60.26,
+      "edge8": 0.2133,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 1,
+      "row": "s02_02_receiver_needle_v01",
+      "source": "02_receiver_needle_v01.jpg",
+      "t": 8.21,
+      "std": 40.87,
+      "mean": 64.46,
+      "p95": 127.0,
+      "edge": 0.0457,
+      "hf": 8.58,
+      "lf": 35.52,
+      "std8": 37.69,
+      "edge8": 0.2156,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 2,
+      "row": "s03_03_nests_inside_v01",
+      "source": "03_nests_inside_v01.jpg",
+      "t": 12.4,
+      "std": 45.47,
+      "mean": 85.2,
+      "p95": 161.0,
+      "edge": 0.0758,
+      "hf": 9.79,
+      "lf": 42.42,
+      "std8": 42.55,
+      "edge8": 0.1127,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 3,
+      "row": "s04_02_receiver_needle_v01",
+      "source": "02_receiver_needle_v01.jpg#b4",
+      "t": 14.97,
+      "std": 53.92,
+      "mean": 68.92,
+      "p95": 207.0,
+      "edge": 0.0454,
+      "hf": 7.87,
+      "lf": 50.46,
+      "std8": 51.83,
+      "edge8": 0.2283,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0454 < film p5 0.0455"
+      ]
+    },
+    {
+      "cut": 4,
+      "row": "s05_05_every_direction_v01",
+      "source": "05_every_direction_v01.jpg",
+      "t": 17.47,
+      "std": 43.6,
+      "mean": 79.56,
+      "p95": 159.0,
+      "edge": 0.0478,
+      "hf": 8.46,
+      "lf": 40.85,
+      "std8": 41.58,
+      "edge8": 0.0941,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 5,
+      "row": "s06_01_pigeons_horn_v01",
+      "source": "end_card_loop_01_pigeons_horn_v01.jpg",
+      "t": 20.2,
+      "std": 62.62,
+      "mean": 125.59,
+      "p95": 216.0,
+      "edge": 0.0689,
+      "hf": 9.59,
+      "lf": 59.58,
+      "std8": 60.51,
+      "edge8": 0.2079,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    }
+  ]
+}

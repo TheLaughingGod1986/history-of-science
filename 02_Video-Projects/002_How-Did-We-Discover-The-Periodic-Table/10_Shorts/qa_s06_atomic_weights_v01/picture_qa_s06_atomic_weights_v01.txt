@@ -1,0 +1,2 @@
+WARN   0:20 row s06_If 09_empty_chair_claim_v04.mp4: low detail: edge density 0.0297 < film p5 0.0363
+picture QA PASS: 0 of 7 cuts fail, 1 to look at -> 02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/qa_s06_atomic_weights_v01/picture_qa_s06_atomic_weights_v01/PICTURE_QA.md, 02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/qa_s06_atomic_weights_v01/picture_qa_s06_atomic_weights_v01/picture_qa_review.jpg

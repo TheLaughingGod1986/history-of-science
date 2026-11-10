@@ -1,0 +1,220 @@
+{
+  "rule": {
+    "low_detail": "FAIL: luma std < 13.44 and edge density < 0.0259 (absolute floor); WARN: luma std < 18.0 or edge density < film p5",
+    "split_panel": "full-height/width seam or gutter",
+    "split_panel_gutter": "gutter counts only with edge density >= 0.01 in the 10% band on both sides",
+    "near_black": "mean < 28.0 or p95 < 50.0",
+    "noise": "grain std > 6 over structure std < 12, and the 8x-downscaled frame under the low-detail floor (std < 13.44 and edge density < 0.0259)",
+    "jitter": "centre-patch phase correlation: reversal against trend or > 0.35 px off trend"
+  },
+  "low_detail_floor": {
+    "std": 13.44,
+    "edge": 0.0259,
+    "calibration": {
+      "video": "025_MarsRobot_full_rough_v02d.mp4",
+      "factor": 1.2,
+      "frames": [
+        {
+          "source": "PIA22223.jpg",
+          "t": 201.0,
+          "std": 12.1,
+          "edge": 0.0223
+        },
+        {
+          "source": "PIA22223.jpg",
+          "t": 216.3,
+          "std": 11.2,
+          "edge": 0.0216
+        },
+        {
+          "source": "PIA22929.jpg",
+          "t": 297.4,
+          "std": 26.54,
+          "edge": 0.5735
+        }
+      ]
+    }
+  },
+  "video": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s06_blood_pressure_cuff_v01.mp4",
+  "edge_floor": 0.0222,
+  "verdict": "PASS",
+  "failed": [],
+  "warn": [
+    {
+      "row": "s07_It",
+      "cut": 6,
+      "t": 17.93,
+      "source": "14_cuff_release_t4.mp4",
+      "why": [
+        "low detail: edge density 0.0193 < film p5 0.0222"
+      ]
+    }
+  ],
+  "reviewed_ok": [],
+  "rows": [
+    {
+      "cut": 0,
+      "row": "s01_0",
+      "source": "08_your_blood_t2.mp4",
+      "t": 1.23,
+      "std": 56.2,
+      "mean": 117.58,
+      "p95": 233.0,
+      "edge": 0.1739,
+      "hf": 20.77,
+      "lf": 44.35,
+      "std8": 47.43,
+      "edge8": 0.4495,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 1,
+      "row": "s02_runs",
+      "source": "16_proved_last_link_t4.mp4",
+      "t": 3.46,
+      "std": 48.43,
+      "mean": 75.5,
+      "p95": 196.0,
+      "edge": 0.1347,
+      "hf": 18.14,
+      "lf": 38.07,
+      "std8": 40.81,
+      "edge8": 0.3254,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 2,
+      "row": "s03_crosses",
+      "source": "07_capillaries_loop_t2.mp4",
+      "t": 5.42,
+      "std": 30.88,
+      "mean": 221.17,
+      "p95": 241.0,
+      "edge": 0.0551,
+      "hf": 8.79,
+      "lf": 23.52,
+      "std8": 26.62,
+      "edge8": 0.2632,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 3,
+      "row": "s04_comes",
+      "source": "10_one_vein_t1.mp4",
+      "t": 7.59,
+      "std": 59.91,
+      "mean": 99.19,
+      "p95": 241.0,
+      "edge": 0.1289,
+      "hf": 15.55,
+      "lf": 52.65,
+      "std8": 54.73,
+      "edge8": 0.3734,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 4,
+      "row": "s05_And",
+      "source": "13_cuff_t1.mp4",
+      "t": 10.52,
+      "std": 44.35,
+      "mean": 147.1,
+      "p95": 216.0,
+      "edge": 0.038,
+      "hf": 10.42,
+      "lf": 40.73,
+      "std8": 41.4,
+      "edge8": 0.148,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 5,
+      "row": "s06_think",
+      "source": "04_stopped_loosen_t5.mp4",
+      "t": 14.29,
+      "std": 43.51,
+      "mean": 69.62,
+      "p95": 141.0,
+      "edge": 0.0265,
+      "hf": 6.34,
+      "lf": 41.34,
+      "std8": 42.22,
+      "edge8": 0.1245,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 6,
+      "row": "s07_It",
+      "source": "14_cuff_release_t4.mp4",
+      "t": 17.93,
+      "std": 37.54,
+      "mean": 161.23,
+      "p95": 232.0,
+      "edge": 0.0193,
+      "hf": 6.38,
+      "lf": 35.37,
+      "std8": 36.09,
+      "edge8": 0.1049,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0193 < film p5 0.0222"
+      ]
+    },
+    {
+      "cut": 7,
+      "row": "s08_then",
+      "source": "07_in_out_doors_t2.mp4",
+      "t": 20.38,
+      "std": 44.09,
+      "mean": 63.51,
+      "p95": 163.0,
+      "edge": 0.0298,
+      "hf": 7.81,
+      "lf": 41.3,
+      "std8": 42.4,
+      "edge8": 0.119,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 8,
+      "row": "s09_loop",
+      "source": "loop_end_08_your_blood_t2.mp4",
+      "t": 22.72,
+      "std": 50.09,
+      "mean": 114.9,
+      "p95": 216.0,
+      "edge": 0.1478,
+      "hf": 16.87,
+      "lf": 41.72,
+      "std8": 43.55,
+      "edge8": 0.3742,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    }
+  ]
+}

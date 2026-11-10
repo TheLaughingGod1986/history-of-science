@@ -1,0 +1,230 @@
+{
+  "id": "s06_moseley_atomic_number",
+  "job": "J0502",
+  "test": "B (search-titled)",
+  "air_date_draft": "2026-12-15",
+  "file": "10_Shorts/hos_004_s06_moseley_atomic_number_v01.mp4",
+  "sha256": "849264ff34b6861823ad7524e18291c726894116035a41e0528ccd9763bf28bd",
+  "duration_s": 26.367,
+  "vo_source": "02_Voiceover/05_Master/hos_004_part05_vo_v01.mp3",
+  "vo_take_indices": [
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158
+  ],
+  "dropped": [
+    "Then he finds a pattern.",
+    "One rung per element, no matter how heavy it is.",
+    "Van den Broek's guess was right. Now sort the table by that number. Tellurium is fifty-two and iodine is fifty-three. Cobalt is twenty-seven and nickel is twenty-eight."
+  ],
+  "route": "claim-first lift: Moseley splits the X-rays with a crystal and measures their wavelength. \u2026 He was just using the wrong ruler. (53\u201363, 69\u201385, 96\u2013113, 141\u2013158 from Part 05)",
+  "vo_s": 25.81,
+  "words": 64,
+  "max_pause_s": 0.3,
+  "atempo": 1.04,
+  "bed": "hos004-part05-temp_score_bed_v01.mp3",
+  "bed_gain_db": -23.6,
+  "hook": "COUNT THE RUNGS",
+  "hook_layer": {
+    "font_size": 243,
+    "cap_px": 173,
+    "cap_pct": 9.01,
+    "lines": 3,
+    "block_pct": [
+      33.6,
+      66.4
+    ],
+    "widest_pct": 85.0
+  },
+  "who_card": {
+    "name": "HENRY MOSELEY",
+    "line2": "Manchester, 1913",
+    "line1_px": 69,
+    "line1_pct_of_band": 11.3,
+    "band": [
+      656,
+      1264
+    ],
+    "in_s": 2.2,
+    "out_s": 5.8,
+    "fade_s": 0.35
+  },
+  "title_on_screen": "What's Really Inside an Atom?",
+  "youtube_title_draft": "What Is Atomic Number?",
+  "plan": [
+    {
+      "t0": 0.0,
+      "t1": 4.603,
+      "plate": "04_Generated-Clips/part05/raw/v01/07_crystal_split_v01.mp4",
+      "in_s": 0.4,
+      "crop_x": 656,
+      "lands_on": 0
+    },
+    {
+      "t0": 4.603,
+      "t1": 7.911,
+      "plate": "04_Generated-Clips/part05/raw/v01/09_one_rung_each_v01.mp4",
+      "in_s": 0.5,
+      "crop_x": 656,
+      "lands_on": "Element"
+    },
+    {
+      "t0": 7.911,
+      "t1": 10.855,
+      "plate": "04_Generated-Clips/part05/raw/v01/05_xrays_from_metal_v01.mp4",
+      "in_s": 0.5,
+      "crop_x": 656,
+      "lands_on": "even"
+    },
+    {
+      "t0": 10.855,
+      "t1": 15.118,
+      "plate": "04_Generated-Clips/part05/raw/v01/04_electrons_fire_v01.mp4",
+      "in_s": 1.6,
+      "crop_x": 200,
+      "lands_on": "Count"
+    },
+    {
+      "t0": 15.118,
+      "t1": 17.889,
+      "plate": "04_Generated-Clips/part04/raw/v01/14_nucleus_electrons_v01.mp4",
+      "in_s": 0.5,
+      "crop_x": 656,
+      "lands_on": "the"
+    },
+    {
+      "t0": 17.889,
+      "t1": 20.375,
+      "plate": "04_Generated-Clips/part05/raw/v01/02_train_in_tube_v01.mp4",
+      "in_s": 0.5,
+      "crop_x": 656,
+      "lands_on": "The"
+    },
+    {
+      "t0": 20.375,
+      "t1": 23.36,
+      "plate": "04_Generated-Clips/part05/raw/v01/03_targets_swap_v01.mp4",
+      "in_s": 1.2,
+      "crop_x": 656,
+      "lands_on": "Mendeleev's"
+    },
+    {
+      "t0": 23.36,
+      "t1": 26.36,
+      "plate": "04_Generated-Clips/part05/raw/v01/07_crystal_split_v01.mp4",
+      "in_s": 0.4,
+      "crop_x": 656,
+      "lands_on": "loop"
+    }
+  ],
+  "captions": 21,
+  "caption_check": {
+    "ok": true,
+    "changes": 21,
+    "ratio": 1.0
+  },
+  "gate": {
+    "exit": 0,
+    "output": "PASS  hos_004_s06_moseley_atomic_number_v01.mp4  dur=26.37s  audio=-24.3dB  motion=16.26  dhash=44aca5e9c2222737\n   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_004_s06_moseley_atomic_number_v01_open_sheet.jpg"
+  },
+  "vo_check": {
+    "exit": 0,
+    "output": "PASS  hos_004_s06_moseley_atomic_number_v01.mp4  0:26.37  mean -24.3 dB  peak -4.5 dB  150 wpm\n   warn  replace at ~0:00.00: script 'moseley splits the x' / heard 'mosley splits the x' \u2014 sounds alike (likely the transcriber); listen"
+  },
+  "freezedetect_starts": [],
+  "qa": {
+    "polish_gate": {
+      "exit": 0,
+      "output": "polish gate PASS: 0 of 8 rows failed, 1 to look at -> 02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/qa_s06_moseley_atomic_number_v01/polish_gate_s06_moseley_atomic_number_v01.json"
+    },
+    "picture_qa": {
+      "exit": 0,
+      "output": "picture QA PASS: 0 of 8 cuts fail, 1 to look at -> 02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/qa_s06_moseley_atomic_number_v01/picture_qa_s06_moseley_atomic_number_v01/PICTURE_QA.md, 02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/qa_s06_moseley_atomic_number_v01/picture_qa_s06_moseley_atomic_number_v01/picture_qa_review.jpg"
+    }
+  },
+  "stills": [
+    "10_Shorts/_work_s06_moseley_atomic_number_v01/hos_004_s06_moseley_atomic_number_v01_t000.0.jpg",
+    "10_Shorts/_work_s06_moseley_atomic_number_v01/hos_004_s06_moseley_atomic_number_v01_t003.8.jpg",
+    "10_Shorts/_work_s06_moseley_atomic_number_v01/hos_004_s06_moseley_atomic_number_v01_t011.5.jpg",
+    "10_Shorts/_work_s06_moseley_atomic_number_v01/hos_004_s06_moseley_atomic_number_v01_t025.4.jpg"
+  ],
+  "icloud": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/004_Whats-Really-Inside-An-Atom/10_Shorts/hos_004_s06_moseley_atomic_number_v01.mp4",
+  "autocomplete_check": {
+    "date": "2026-10-18",
+    "source": "suggestqueries client=youtube ds=yt gl=GB signed-out",
+    "hits": [
+      "what is atomic number",
+      "what is atomic number and mass number",
+      "henry moseley atomic number",
+      "henry moseley x ray experiment",
+      "henry moseley periodic table",
+      "who discovered atomic numbers",
+      "why is the periodic table ordered by atomic numbers"
+    ],
+    "note": "'what is atomic number', 'henry moseley atomic number', 'henry moseley x ray experiment', 'henry moseley periodic table', and 'who discovered atomic numbers' are exact signed-out GB YouTube autocomplete hits. Title draft 'What Is Atomic Number?' (with 'How Did Henry Moseley Discover Atomic Number?' and 'Why Is the Periodic Table Ordered by Atomic Number?' as exact-autocomplete alternatives) is answered directly by the lifted Part 05 VO: Moseley splits each element's X-rays with a crystal, finds wavelengths stepping up like even ladder rungs, and proves each rung count is the whole-number positive charge in the nucleus \u2014 fixing Mendeleev's weight-order reversals. Chief's call."
+  },
+  "air_date_draft_note": "2026-12-15 used for the gate only; slot is Chief's call.",
+  "who_card_note": "card is the long's own Part 05 setting HENRY MOSELEY \u00b7 Manchester, 1913, on screen 2.2\u20135.8 s (3.6 s) right after 'Moseley splits the X-rays with a crystal'. Clear of the 0\u20132 s hook, the 9\u201314 s title, and the last 3.2 s CTA.",
+  "overlap_note": "No overlap with 004 s01_how_small (Part 01), s02_every_eighth / s05_dalton (Part 02), s04_cathode_rays (Part 03), or backcat_gold_foil (Part 04): this is the first Short lifted from 004 Part 05 (Henry Moseley, X-ray crystal spectroscopy, and atomic number)."
+}

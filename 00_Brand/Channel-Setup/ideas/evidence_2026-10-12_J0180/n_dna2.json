@@ -1,0 +1,139 @@
+{
+ "pulled": "2026-10-12",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "dna structure discovery",
+  "watson and crick",
+  "what is dna"
+ ],
+ "autocomplete": {
+  "dna structure discovery": [
+   "dna structure discovery",
+   "history of dna structure discovery"
+  ],
+  "watson and crick": [
+   "watson and crick model of dna",
+   "watson and crick",
+   "watson and crick model",
+   "watson and crick model of dna bsc 3rd year",
+   "watson and crick model of dna class 11",
+   "watson and crick dna double helix model",
+   "watson and crick model of dna class 12",
+   "watson and crick model of dna in hindi",
+   "watson and crick experiment",
+   "watson and crick model of dna biochemistry"
+  ],
+  "what is dna": [
+   "what is dna",
+   "what is dna fingerprinting",
+   "what is dna and rna",
+   "what is dna and how it works",
+   "what is dna replication",
+   "what is dna test",
+   "what is dna for kids",
+   "what is dna in hindi",
+   "what is dna sequencing",
+   "what is dna in urdu"
+  ]
+ },
+ "sharedTitleWords": [
+  "of dna",
+  "discovered dna",
+  "james watson",
+  "dna structure",
+  "structure and",
+  "what is",
+  "is dna",
+  "structure of"
+ ],
+ "neighbours": [
+  {
+   "id": "RvdxGDJogtA",
+   "title": "How I discovered DNA - James Watson",
+   "channel": "TED-Ed",
+   "views": "364,587 views",
+   "age": "13 yr ago",
+   "length": "20:15",
+   "tier": 1,
+   "viewCount": 364587,
+   "foundBy": "dna structure discovery",
+   "onTopic": true
+  },
+  {
+   "id": "2HgL5OFip-0",
+   "title": "James Watson: How we discovered DNA",
+   "channel": "TED",
+   "views": "302,319 views",
+   "age": "19 yr ago",
+   "length": "20:55",
+   "tier": 1,
+   "viewCount": 302319,
+   "foundBy": "dna structure discovery",
+   "onTopic": true
+  },
+  {
+   "id": "8kK2zwjRV0M",
+   "title": "DNA Structure and Replication: Crash Course Biology #10",
+   "channel": "CrashCourse",
+   "views": "10,649,015 views",
+   "age": "14 yr ago",
+   "length": "12:35",
+   "tier": 2,
+   "viewCount": 10649015,
+   "foundBy": "dna structure discovery",
+   "onTopic": true
+  },
+  {
+   "id": "T6_wKPAbf2k",
+   "title": "GCSE Biology - What is DNA? (Structure and Function of DNA)",
+   "channel": "Cognito",
+   "views": "892,499 views",
+   "age": "6 yr ago",
+   "length": "6:33",
+   "tier": 2,
+   "viewCount": 892499,
+   "foundBy": "dna structure discovery",
+   "onTopic": true
+  },
+  {
+   "id": "L677-Fl0joY",
+   "title": "Molecular structure of DNA | Macromolecules | Biology | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "481,531 views",
+   "age": "11 yr ago",
+   "length": "13:00",
+   "tier": 2,
+   "viewCount": 481531,
+   "foundBy": "khan academy dna structure discovery",
+   "onTopic": true
+  },
+  {
+   "id": "GIzNlISbCxI",
+   "title": "What Is DNA | Genetics | Biology | FuseSchool",
+   "channel": "FuseSchool - Global Education",
+   "views": "315,471 views",
+   "age": "10 yr ago",
+   "length": "3:29",
+   "tier": 2,
+   "viewCount": 315471,
+   "foundBy": "what is dna",
+   "onTopic": true
+  },
+  {
+   "id": "hCUce36Ganc",
+   "title": "The discovery of the double helix structure of DNA",
+   "channel": "Khan Academy",
+   "views": "87,883 views",
+   "age": "10 yr ago",
+   "length": "8:56",
+   "tier": 2,
+   "viewCount": 87883,
+   "foundBy": "khan academy dna structure discovery",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 1,
+ "gate": "FAIL",
+ "hasTed": true,
+ "failedQueries": []
+}

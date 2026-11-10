@@ -1,0 +1,186 @@
+{
+ "pulled": "2026-10-20",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "protein synthesis mrna",
+  "transcription and translation"
+ ],
+ "autocomplete": {
+  "protein synthesis mrna": [
+   "protein synthesis mrna",
+   "protein synthesis mrna trna",
+   "protein synthesis made easy"
+  ],
+  "transcription and translation": [
+   "transcription and translation",
+   "transcription and translation amoeba sisters",
+   "transcription and translation animation",
+   "transcription and translation a level biology",
+   "transcription and translation in prokaryotes and eukaryotes",
+   "transcription and translation explained",
+   "transcription and translation biochemistry",
+   "transcription and translation in prokaryotes",
+   "transcription and translation in hindi",
+   "transcription and translation ninja nerd"
+  ]
+ },
+ "sharedTitleWords": [
+  "khan academy",
+  "transcription and",
+  "how mrna",
+  "protein synthesis",
+  "and translation",
+  "biomolecules mcat",
+  "mcat khan"
+ ],
+ "neighbours": [
+  {
+   "id": "h5D3mv8ewCY",
+   "title": "How mRNA Medicine Will Change the World | Melissa J. Moore | TED",
+   "channel": "TED",
+   "views": "356,852 views",
+   "age": "4 yr ago",
+   "length": "18:04",
+   "tier": 1,
+   "viewCount": 356852,
+   "foundBy": "ted-ed protein synthesis mrna",
+   "onTopic": true
+  },
+  {
+   "id": "oefAI2x2CQM",
+   "title": "Protein Synthesis: Transcription and Translation (Updated)",
+   "channel": "Amoeba Sisters",
+   "views": "11,553,974 views",
+   "age": "8 yr ago",
+   "length": "8:47",
+   "tier": 2,
+   "viewCount": 11553974,
+   "foundBy": "protein synthesis mrna",
+   "onTopic": true
+  },
+  {
+   "id": "6gUY5NoX1Lk",
+   "title": "DNA replication and RNA transcription and translation | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "3,169,012 views",
+   "age": "11 yr ago",
+   "length": "15:23",
+   "tier": 2,
+   "viewCount": 3169012,
+   "foundBy": "khan academy protein synthesis mrna",
+   "onTopic": true
+  },
+  {
+   "id": "JQIwwJqF5D0",
+   "title": "Transcription and mRNA processing | Biomolecules | MCAT | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "1,899,133 views",
+   "age": "10 yr ago",
+   "length": "10:24",
+   "tier": 2,
+   "viewCount": 1899133,
+   "foundBy": "protein synthesis mrna",
+   "onTopic": true
+  },
+  {
+   "id": "ubdoUqmNF98",
+   "title": "How are Proteins Made? Transcription & Translation",
+   "channel": "Cognito",
+   "views": "1,895,594 views",
+   "age": "6 yr ago",
+   "length": "11:21",
+   "tier": 2,
+   "viewCount": 1895594,
+   "foundBy": "protein synthesis mrna",
+   "onTopic": true
+  },
+  {
+   "id": "ocAAkB32Hqs",
+   "title": "Translation (mRNA to protein) | Biomolecules | MCAT | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "1,418,349 views",
+   "age": "10 yr ago",
+   "length": "14:10",
+   "tier": 2,
+   "viewCount": 1418349,
+   "foundBy": "protein synthesis mrna",
+   "onTopic": true
+  },
+  {
+   "id": "x5ZXQo-xeMo",
+   "title": "Protein Synthesis | Cells | Biology | FuseSchool",
+   "channel": "FuseSchool - Global Education",
+   "views": "642,755 views",
+   "age": "9 yr ago",
+   "length": "5:08",
+   "tier": 2,
+   "viewCount": 642755,
+   "foundBy": "ted-ed protein synthesis mrna",
+   "onTopic": true
+  },
+  {
+   "id": "j6YaOqKORYY",
+   "title": "Transcription: How mRNA Helped Save Lives: Crash Course Biology #34",
+   "channel": "CrashCourse",
+   "views": "268,259 views",
+   "age": "2 yr ago",
+   "length": "12:19",
+   "tier": 2,
+   "viewCount": 268259,
+   "foundBy": "protein synthesis mrna",
+   "onTopic": true
+  },
+  {
+   "id": "1Dk0_-fyyDI",
+   "title": "Impact of mutations on translation into amino acids | High school biology | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "84,236 views",
+   "age": "8 yr ago",
+   "length": "8:52",
+   "tier": 2,
+   "viewCount": 84236,
+   "foundBy": "khan academy protein synthesis mrna",
+   "onTopic": true
+  },
+  {
+   "id": "AUy4UxmcQi0",
+   "title": "A-Level Biology - Translation | How Proteins Are Made (2027/28 Exams)",
+   "channel": "Cognito",
+   "views": "37,151 views",
+   "age": "11 mo ago",
+   "length": "5:02",
+   "tier": 2,
+   "viewCount": 37151,
+   "foundBy": "protein synthesis mrna",
+   "onTopic": true
+  },
+  {
+   "id": "DEpFYP1twU8",
+   "title": "A-Level Biology - Transcription | Sense & Antisense Strands (2027/28 exams)",
+   "channel": "Cognito",
+   "views": "33,571 views",
+   "age": "11 mo ago",
+   "length": "5:27",
+   "tier": 2,
+   "viewCount": 33571,
+   "foundBy": "protein synthesis mrna",
+   "onTopic": true
+  },
+  {
+   "id": "8ReRCQkxjnQ",
+   "title": "A-Level Biology - mRNA & tRNA | Messenger RNA & Transfer RNA (2027/28 Exams)",
+   "channel": "Cognito",
+   "views": "22,965 views",
+   "age": "11 mo ago",
+   "length": "5:40",
+   "tier": 2,
+   "viewCount": 22965,
+   "foundBy": "protein synthesis mrna",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 5,
+ "gate": "PASS",
+ "hasTed": true,
+ "failedQueries": []
+}

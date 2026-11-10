@@ -1,0 +1,184 @@
+{
+  "rule": {
+    "low_detail": "FAIL: luma std < 13.44 and edge density < 0.0259 (absolute floor); WARN: luma std < 18.0 or edge density < film p5",
+    "split_panel": "full-height/width seam or gutter",
+    "split_panel_gutter": "gutter counts only with edge density >= 0.01 in the 10% band on both sides",
+    "near_black": "mean < 28.0 or p95 < 50.0",
+    "noise": "grain std > 6 over structure std < 12, and the 8x-downscaled frame under the low-detail floor (std < 13.44 and edge density < 0.0259)",
+    "jitter": "centre-patch phase correlation: reversal against trend or > 0.35 px off trend"
+  },
+  "low_detail_floor": {
+    "std": 13.44,
+    "edge": 0.0259,
+    "calibration": {
+      "video": "025_MarsRobot_full_rough_v02d.mp4",
+      "factor": 1.2,
+      "frames": [
+        {
+          "source": "PIA22223.jpg",
+          "t": 201.0,
+          "std": 12.1,
+          "edge": 0.0223
+        },
+        {
+          "source": "PIA22223.jpg",
+          "t": 216.3,
+          "std": 11.2,
+          "edge": 0.0216
+        },
+        {
+          "source": "PIA22929.jpg",
+          "t": 297.4,
+          "std": 26.54,
+          "edge": 0.5735
+        }
+      ]
+    }
+  },
+  "video": "02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/hos_002_s07_mendeleev_cards_v01.mp4",
+  "edge_floor": 0.0449,
+  "verdict": "PASS",
+  "failed": [],
+  "warn": [
+    {
+      "row": "s04_how",
+      "cut": 3,
+      "t": 12.4,
+      "source": "04_sort_atomic_weight_v01.mp4",
+      "why": [
+        "low detail: edge density 0.0441 < film p5 0.0449"
+      ]
+    }
+  ],
+  "reviewed_ok": [],
+  "rows": [
+    {
+      "cut": 0,
+      "row": "s01_0",
+      "source": "02b_cards_sixty_three_v06.mp4",
+      "t": 1.97,
+      "std": 65.87,
+      "mean": 117.96,
+      "p95": 229.0,
+      "edge": 0.0737,
+      "hf": 14.18,
+      "lf": 60.28,
+      "std8": 62.4,
+      "edge8": 0.2903,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 1,
+      "row": "s02_sits",
+      "source": "desk_try_prior_3.mp4",
+      "t": 6.31,
+      "std": 62.96,
+      "mean": 111.23,
+      "p95": 219.0,
+      "edge": 0.0466,
+      "hf": 7.42,
+      "lf": 59.87,
+      "std8": 61.4,
+      "edge8": 0.2678,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 2,
+      "row": "s03_He",
+      "source": "desk_try_prior_2.mp4",
+      "t": 9.72,
+      "std": 59.7,
+      "mean": 103.36,
+      "p95": 204.0,
+      "edge": 0.0797,
+      "hf": 11.77,
+      "lf": 55.53,
+      "std8": 56.99,
+      "edge8": 0.2539,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 3,
+      "row": "s04_how",
+      "source": "04_sort_atomic_weight_v01.mp4",
+      "t": 12.4,
+      "std": 51.73,
+      "mean": 80.85,
+      "p95": 198.0,
+      "edge": 0.0441,
+      "hf": 9.7,
+      "lf": 47.08,
+      "std8": 48.8,
+      "edge8": 0.2506,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0441 < film p5 0.0449"
+      ]
+    },
+    {
+      "cut": 4,
+      "row": "s05_Cousins",
+      "source": "05_columns_families_v01.mp4",
+      "t": 16.15,
+      "std": 53.76,
+      "mean": 102.8,
+      "p95": 208.0,
+      "edge": 0.0508,
+      "hf": 7.63,
+      "lf": 48.54,
+      "std8": 50.76,
+      "edge8": 0.3252,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 5,
+      "row": "s06_That",
+      "source": "08_prediction_navigation_v25_try1.mp4",
+      "t": 20.24,
+      "std": 51.58,
+      "mean": 92.23,
+      "p95": 172.0,
+      "edge": 0.0812,
+      "hf": 9.07,
+      "lf": 45.13,
+      "std8": 48.23,
+      "edge8": 0.4352,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 6,
+      "row": "s07_loop",
+      "source": "loop_end_02b_cards_sixty_three_v06.mp4",
+      "t": 23.73,
+      "std": 63.35,
+      "mean": 119.12,
+      "p95": 227.0,
+      "edge": 0.0619,
+      "hf": 10.11,
+      "lf": 60.1,
+      "std8": 61.49,
+      "edge8": 0.2494,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    }
+  ]
+}

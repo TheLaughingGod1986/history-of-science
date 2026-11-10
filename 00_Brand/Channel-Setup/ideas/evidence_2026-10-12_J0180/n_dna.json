@@ -1,0 +1,116 @@
+{
+ "pulled": "2026-10-12",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "dna double helix",
+  "rosalind franklin",
+  "photo 51"
+ ],
+ "autocomplete": {
+  "dna double helix": [
+   "dna double helix structure",
+   "dna double helix model",
+   "dna double helix",
+   "dna double helix model project",
+   "dna double helix drawing",
+   "dna double helix working model",
+   "dna double helix structure drawing",
+   "dna double helix structure animation",
+   "dna double helix structure model",
+   "dna double helix structure explanation"
+  ],
+  "rosalind franklin": [
+   "rosalind franklin",
+   "rosalind franklin dna",
+   "rosalind franklin biography",
+   "rosalind franklin medical school",
+   "rosalind franklin documentary",
+   "rosalind franklin story in hindi",
+   "rosalind franklin information",
+   "rosalind franklin university",
+   "rosalind franklin x ray diffraction",
+   "rosalind franklin costume"
+  ],
+  "photo 51": [
+   "photo 51",
+   "photo 51 explained",
+   "photo 51 documentary",
+   "photo 51 dna",
+   "photo 51 rosalind franklin",
+   "photograph 51",
+   "photograph 51 full play",
+   "photograph 51 nicole kidman",
+   "nova photo 51",
+   "51mm*51mm photo size"
+  ]
+ },
+ "sharedTitleWords": [
+  "rosalind franklin"
+ ],
+ "neighbours": [
+  {
+   "id": "BIP0lYrdirI",
+   "title": "Rosalind Franklin: DNA's unsung hero - Cláudio L. Guerra",
+   "channel": "TED-Ed",
+   "views": "1,936,715 views",
+   "age": "10 yr ago",
+   "length": "4:10",
+   "tier": 1,
+   "viewCount": 1936715,
+   "foundBy": "ted-ed dna double helix",
+   "onTopic": true
+  },
+  {
+   "id": "sxE8VSn7E8o",
+   "title": "The Award for Best Comedy Wildlife Photo Goes to… | Tom Sullam | TED",
+   "channel": "TED",
+   "views": "1,746,180 views",
+   "age": "8 mo ago",
+   "length": "7:18",
+   "tier": 1,
+   "viewCount": 1746180,
+   "foundBy": "ted-ed photo 51",
+   "onTopic": true
+  },
+  {
+   "id": "9TPFLHvn024",
+   "title": "Lisa Kristine: Photos that bear witness to modern slavery",
+   "channel": "TED",
+   "views": "312,152 views",
+   "age": "14 yr ago",
+   "length": "19:22",
+   "tier": 1,
+   "viewCount": 312152,
+   "foundBy": "photo 51 ted",
+   "onTopic": true
+  },
+  {
+   "id": "JiME-W58KpU",
+   "title": "Rosalind Franklin: Great Minds",
+   "channel": "SciShow",
+   "views": "381,598 views",
+   "age": "13 yr ago",
+   "length": "3:46",
+   "tier": 2,
+   "viewCount": 381598,
+   "foundBy": "rosalind franklin",
+   "onTopic": true
+  },
+  {
+   "id": "hCUce36Ganc",
+   "title": "The discovery of the double helix structure of DNA",
+   "channel": "Khan Academy",
+   "views": "87,883 views",
+   "age": "10 yr ago",
+   "length": "8:56",
+   "tier": 2,
+   "viewCount": 87883,
+   "foundBy": "dna double helix ted",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 2,
+ "gate": "FAIL",
+ "hasTed": true,
+ "failedQueries": []
+}

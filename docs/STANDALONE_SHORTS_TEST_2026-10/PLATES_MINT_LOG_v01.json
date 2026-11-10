@@ -1,0 +1,467 @@
+{
+  "job": "J0203",
+  "model": "gemini-2.5-flash-image",
+  "usd_per_still": 0.039,
+  "gbp_per_usd": 0.8,
+  "stills": [
+    {
+      "short": "s1",
+      "plate": "01_beyond_red",
+      "at": "2026-10-12T19:35:41+00:00",
+      "prompt": "Image 1 shows this channel's locked look only: match its 3D cartoon material, finish and warm light. Do NOT copy its room, people, objects or any text. Finished 3D cartoon still for a vertical history-of-science Short. A glass thermometer with a blackened bulb lying on a wooden table in the dark just beyond the red edge of a rainbow spectrum, its red liquid column rising. Mysterious, the hook frame. History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm cinematic light. Not photoreal, not flat 2D. Vertical 9:16 frame with the key subject in the centre band. No text, letters, numbers, labels, captions, signs, logos or UI anywhere. No orange robot. No boy explorer character. No DNA helix. No gore.",
+      "cost_usd": 0.039,
+      "ok": true,
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/plates_v01/s1/01_beyond_red_v01.jpg"
+    },
+    {
+      "short": "s1",
+      "plate": "02_prism_window",
+      "at": "2026-10-12T19:35:51+00:00",
+      "prompt": "Image 1 shows this channel's locked look only: match its 3D cartoon material, finish and warm light. Do NOT copy its room, people, objects or any text. Finished 3D cartoon still for a vertical history-of-science Short. William Herschel, an 18th-century astronomer in a powdered wig and dark coat, in his English study in 1800, holding a glass prism in a beam of sunlight from a shuttered window; a bright rainbow spectrum falls across his table. History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm cinematic light. Not photoreal, not flat 2D. Vertical 9:16 frame with the key subject in the centre band. No text, letters, numbers, labels, captions, signs, logos or UI anywhere. No orange robot. No boy explorer character. No DNA helix. No gore.",
+      "cost_usd": 0.039,
+      "ok": true,
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/plates_v01/s1/02_prism_window_v01.jpg"
+    },
+    {
+      "short": "s1",
+      "plate": "03_thermometers_colours",
+      "at": "2026-10-12T19:36:00+00:00",
+      "prompt": "Image 1 shows this channel's locked look only: match its 3D cartoon material, finish and warm light. Do NOT copy its room, people, objects or any text. Finished 3D cartoon still for a vertical history-of-science Short. Close on a wooden table: a vivid rainbow spectrum from a prism, with three glass thermometers laid in the violet, green and red bands, red liquid columns at different heights. History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm cinematic light. Not photoreal, not flat 2D. Vertical 9:16 frame with the key subject in the centre band. No text, letters, numbers, labels, captions, signs, logos or UI anywhere. No orange robot. No boy explorer character. No DNA helix. No gore.",
+      "cost_usd": 0.039,
+      "ok": true,
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/plates_v01/s1/03_thermometers_colours_v01.jpg"
+    },
+    {
+      "short": "s1",
+      "plate": "04_past_the_red",
+      "at": "2026-10-12T19:36:09+00:00",
+      "prompt": "Image 1 shows this channel's locked look only: match its 3D cartoon material, finish and warm light. Do NOT copy its room, people, objects or any text. Finished 3D cartoon still for a vertical history-of-science Short. Herschel's hand sliding one thermometer off the red end of the spectrum into the dark part of the table, leaning in closely, candle-free study lit only by the sunbeam. History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm cinematic light. Not photoreal, not flat 2D. Vertical 9:16 frame with the key subject in the centre band. No text, letters, numbers, labels, captions, signs, logos or UI anywhere. No orange robot. No boy explorer character. No DNA helix. No gore.",
+      "cost_usd": 0.039,
+      "ok": true,
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/plates_v01/s1/04_past_the_red_v01.jpg"
+    },
+    {
+      "short": "s1",
+      "plate": "05_invisible_glow",
+      "at": "2026-10-12T19:36:18+00:00",
+      "prompt": "Image 1 shows this channel's locked look only: match its 3D cartoon material, finish and warm light. Do NOT copy its room, people, objects or any text. Finished 3D cartoon still for a vertical history-of-science Short. The same table in the dark beyond the red band, shown with a soft warm invisible-heat shimmer rising past the red, the thermometer column at its highest. Wonder. History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm cinematic light. Not photoreal, not flat 2D. Vertical 9:16 frame with the key subject in the centre band. No text, letters, numbers, labels, captions, signs, logos or UI anywhere. No orange robot. No boy explorer character. No DNA helix. No gore.",
+      "cost_usd": 0.039,
+      "ok": true,
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/plates_v01/s1/05_invisible_glow_v01.jpg"
+    },
+    {
+      "short": "s2",
+      "plate": "01_glowing_flask",
+      "at": "2026-10-12T19:36:40+00:00",
+      "prompt": "Image 1 shows this channel's locked look only: match its 3D cartoon material, finish and warm light. Do NOT copy its room, people, objects or any text. Finished 3D cartoon still for a vertical history-of-science Short. A glass flask in a dark 17th-century alchemist's workshop, holding a white substance glowing pale green-white, lighting the room. The hook frame. History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm cinematic light. Not photoreal, not flat 2D. Vertical 9:16 frame with the key subject in the centre band. No text, letters, numbers, labels, captions, signs, logos or UI anywhere. No orange robot. No boy explorer character. No DNA helix. No gore.",
+      "cost_usd": 0.039,
+      "ok": true,
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/plates_v01/s2/01_glowing_flask_v01.jpg"
+    },
+    {
+      "short": "s2",
+      "plate": "02_hamburg_lab",
+      "at": "2026-10-12T19:36:49+00:00",
+      "prompt": "Image 1 shows this channel's locked look only: match its 3D cartoon material, finish and warm light. Do NOT copy its room, people, objects or any text. Finished 3D cartoon still for a vertical history-of-science Short. Hennig Brand, a 17th-century Hamburg alchemist with a beard and a leather apron, in his cluttered stone workshop in 1669, large copper vats steaming over a furnace. History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm cinematic light. Not photoreal, not flat 2D. Vertical 9:16 frame with the key subject in the centre band. No text, letters, numbers, labels, captions, signs, logos or UI anywhere. No orange robot. No boy explorer character. No DNA helix. No gore.",
+      "cost_usd": 0.039,
+      "ok": true,
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/plates_v01/s2/02_hamburg_lab_v01.jpg"
+    },
+    {
+      "short": "s2",
+      "plate": "03_black_sludge",
+      "at": "2026-10-12T19:37:05+00:00",
+      "prompt": "Image 1 shows this channel's locked look only: match its 3D cartoon material, finish and warm light. Do NOT copy its room, people, objects or any text. Finished 3D cartoon still for a vertical history-of-science Short. Close on a glass retort over coals, boiled down to thick black sludge, smoke curling, Brand peering in hopefully. History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm cinematic light. Not photoreal, not flat 2D. Vertical 9:16 frame with the key subject in the centre band. No text, letters, numbers, labels, captions, signs, logos or UI anywhere. No orange robot. No boy explorer character. No DNA helix. No gore.",
+      "cost_usd": 0.039,
+      "ok": true,
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/plates_v01/s2/03_black_sludge_v01.jpg"
+    },
+    {
+      "short": "s2",
+      "plate": "04_no_gold",
+      "at": "2026-10-12T19:37:13+00:00",
+      "prompt": "Image 1 shows this channel's locked look only: match its 3D cartoon material, finish and warm light. Do NOT copy its room, people, objects or any text. Finished 3D cartoon still for a vertical history-of-science Short. Brand holding up an empty iron crucible by the furnace, disappointed: no gold, only dull residue. History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm cinematic light. Not photoreal, not flat 2D. Vertical 9:16 frame with the key subject in the centre band. No text, letters, numbers, labels, captions, signs, logos or UI anywhere. No orange robot. No boy explorer character. No DNA helix. No gore.",
+      "cost_usd": 0.039,
+      "ok": true,
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/plates_v01/s2/04_no_gold_v01.jpg"
+    },
+    {
+      "short": "s2",
+      "plate": "05_first_glow",
+      "at": "2026-10-12T19:37:22+00:00",
+      "prompt": "Image 1 shows this channel's locked look only: match its 3D cartoon material, finish and warm light. Do NOT copy its room, people, objects or any text. Finished 3D cartoon still for a vertical history-of-science Short. In the dark workshop, a white waxy substance in a glass dish glowing eerie green-white, Brand's astonished face lit by its glow. History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm cinematic light. Not photoreal, not flat 2D. Vertical 9:16 frame with the key subject in the centre band. No text, letters, numbers, labels, captions, signs, logos or UI anywhere. No orange robot. No boy explorer character. No DNA helix. No gore.",
+      "cost_usd": 0.039,
+      "ok": true,
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/plates_v01/s2/05_first_glow_v01.jpg"
+    },
+    {
+      "short": "s3",
+      "plate": "01_broad_street_pump",
+      "at": "2026-10-12T19:37:33+00:00",
+      "prompt": "Image 1 shows this channel's locked look only: match its 3D cartoon material, finish and warm light. Do NOT copy its room, people, objects or any text. Finished 3D cartoon still for a vertical history-of-science Short. A black cast-iron Victorian street water pump with a long handle on a misty cobbled London street in 1854, ominous, the hook frame. History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm cinematic light. Not photoreal, not flat 2D. Vertical 9:16 frame with the key subject in the centre band. No text, letters, numbers, labels, captions, signs, logos or UI anywhere. No orange robot. No boy explorer character. No DNA helix. No gore.",
+      "cost_usd": 0.039,
+      "ok": true,
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/plates_v01/s3/01_broad_street_pump_v01.jpg"
+    },
+    {
+      "short": "s3",
+      "plate": "02_soho_1854",
+      "at": "2026-10-12T19:38:08+00:00",
+      "prompt": "Image 1 shows this channel's locked look only: match its 3D cartoon material, finish and warm light. Do NOT copy its room, people, objects or any text. Finished 3D cartoon still for a vertical history-of-science Short. A crowded Soho street in 1854, Victorian Londoners in shawls and top hats, worried faces, foggy air, brick terraces. History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm cinematic light. Not photoreal, not flat 2D. Vertical 9:16 frame with the key subject in the centre band. No text, letters, numbers, labels, captions, signs, logos or UI anywhere. No orange robot. No boy explorer character. No DNA helix. No gore.",
+      "cost_usd": 0.039,
+      "ok": true,
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/plates_v01/s3/02_soho_1854_v01.jpg"
+    },
+    {
+      "short": "s3",
+      "plate": "03_snow_tracking",
+      "at": "2026-10-12T19:38:18+00:00",
+      "prompt": "Image 1 shows this channel's locked look only: match its 3D cartoon material, finish and warm light. Do NOT copy its room, people, objects or any text. Finished 3D cartoon still for a vertical history-of-science Short. Dr John Snow, a Victorian physician with sideburns and a dark frock coat, walking a Soho street with a notebook, looking at house doors. History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm cinematic light. Not photoreal, not flat 2D. Vertical 9:16 frame with the key subject in the centre band. No text, letters, numbers, labels, captions, signs, logos or UI anywhere. No orange robot. No boy explorer character. No DNA helix. No gore.",
+      "cost_usd": 0.039,
+      "ok": true,
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/plates_v01/s3/03_snow_tracking_v01.jpg"
+    },
+    {
+      "short": "s3",
+      "plate": "04_map_bars",
+      "at": "2026-10-12T19:38:28+00:00",
+      "prompt": "Image 1 shows this channel's locked look only: match its 3D cartoon material, finish and warm light. Do NOT copy its room, people, objects or any text. Finished 3D cartoon still for a vertical history-of-science Short. A hand-drawn Victorian street map on a desk, with small black bars clustered around one pump symbol in the middle; no lettering or numbers on the map at all. History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm cinematic light. Not photoreal, not flat 2D. Vertical 9:16 frame with the key subject in the centre band. No text, letters, numbers, labels, captions, signs, logos or UI anywhere. No orange robot. No boy explorer character. No DNA helix. No gore.",
+      "cost_usd": 0.039,
+      "ok": true,
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/plates_v01/s3/04_map_bars_v01.jpg"
+    },
+    {
+      "short": "s3",
+      "plate": "05_handle_off",
+      "at": "2026-10-12T19:38:38+00:00",
+      "prompt": "Image 1 shows this channel's locked look only: match its 3D cartoon material, finish and warm light. Do NOT copy its room, people, objects or any text. Finished 3D cartoon still for a vertical history-of-science Short. The cast-iron street pump with its handle removed, Dr John Snow standing beside it holding the detached handle, a calm Soho street. History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm cinematic light. Not photoreal, not flat 2D. Vertical 9:16 frame with the key subject in the centre band. No text, letters, numbers, labels, captions, signs, logos or UI anywhere. No orange robot. No boy explorer character. No DNA helix. No gore.",
+      "cost_usd": 0.039,
+      "ok": true,
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/plates_v01/s3/05_handle_off_v01.jpg"
+    },
+    {
+      "short": "s4",
+      "plate": "01_lead_box",
+      "at": "2026-10-12T19:38:52+00:00",
+      "prompt": "Image 1 shows this channel's locked look only: match its 3D cartoon material, finish and warm light. Do NOT copy its room, people, objects or any text. Finished 3D cartoon still for a vertical history-of-science Short. An open lead-lined box in a quiet archive, holding a stack of old 1890s laboratory notebooks with worn covers, a faint eerie blue-green glow. The hook frame. History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm cinematic light. Not photoreal, not flat 2D. Vertical 9:16 frame with the key subject in the centre band. No text, letters, numbers, labels, captions, signs, logos or UI anywhere. No orange robot. No boy explorer character. No DNA helix. No gore.",
+      "cost_usd": 0.039,
+      "ok": true,
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/plates_v01/s4/01_lead_box_v01.jpg"
+    },
+    {
+      "short": "s4",
+      "plate": "02_shed_lab",
+      "at": "2026-10-12T19:39:01+00:00",
+      "prompt": "Image 1 shows this channel's locked look only: match its 3D cartoon material, finish and warm light. Do NOT copy its room, people, objects or any text. Finished 3D cartoon still for a vertical history-of-science Short. Marie Curie and Pierre Curie in 1898 in their cramped wooden shed laboratory in Paris, glass beakers and an iron cauldron, working side by side. History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm cinematic light. Not photoreal, not flat 2D. Vertical 9:16 frame with the key subject in the centre band. No text, letters, numbers, labels, captions, signs, logos or UI anywhere. No orange robot. No boy explorer character. No DNA helix. No gore.",
+      "cost_usd": 0.039,
+      "ok": true,
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/plates_v01/s4/02_shed_lab_v01.jpg"
+    },
+    {
+      "short": "s4",
+      "plate": "03_glowing_vials",
+      "at": "2026-10-12T19:39:11+00:00",
+      "prompt": "Image 1 shows this channel's locked look only: match its 3D cartoon material, finish and warm light. Do NOT copy its room, people, objects or any text. Finished 3D cartoon still for a vertical history-of-science Short. Small glass vials on a wooden bench in the dark, glowing faint blue-green with radium, softly lighting the lab. History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm cinematic light. Not photoreal, not flat 2D. Vertical 9:16 frame with the key subject in the centre band. No text, letters, numbers, labels, captions, signs, logos or UI anywhere. No orange robot. No boy explorer character. No DNA helix. No gore.",
+      "cost_usd": 0.039,
+      "ok": true,
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/plates_v01/s4/03_glowing_vials_v01.jpg"
+    },
+    {
+      "short": "s4",
+      "plate": "04_bare_hands",
+      "at": "2026-10-12T19:39:20+00:00",
+      "prompt": "Image 1 shows this channel's locked look only: match its 3D cartoon material, finish and warm light. Do NOT copy its room, people, objects or any text. Finished 3D cartoon still for a vertical history-of-science Short. Marie Curie at her bench holding a glowing glass vial in her bare hands, no gloves, calm and absorbed, warm lab light. History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm cinematic light. Not photoreal, not flat 2D. Vertical 9:16 frame with the key subject in the centre band. No text, letters, numbers, labels, captions, signs, logos or UI anywhere. No orange robot. No boy explorer character. No DNA helix. No gore.",
+      "cost_usd": 0.039,
+      "ok": true,
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/plates_v01/s4/04_bare_hands_v01.jpg"
+    },
+    {
+      "short": "s4",
+      "plate": "05_paris_archive",
+      "at": "2026-10-12T19:39:29+00:00",
+      "prompt": "Image 1 shows this channel's locked look only: match its 3D cartoon material, finish and warm light. Do NOT copy its room, people, objects or any text. Finished 3D cartoon still for a vertical history-of-science Short. A grand Paris library archive with rows of lead-lined boxes on shelves, a reader in protective gloves lifting a notebook. Quiet, awe. History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm cinematic light. Not photoreal, not flat 2D. Vertical 9:16 frame with the key subject in the centre band. No text, letters, numbers, labels, captions, signs, logos or UI anywhere. No orange robot. No boy explorer character. No DNA helix. No gore.",
+      "cost_usd": 0.039,
+      "ok": true,
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/plates_v01/s4/05_paris_archive_v01.jpg"
+    },
+    {
+      "short": "s1",
+      "plate": "05_invisible_glow",
+      "ver": "v02",
+      "at": "2026-10-12T19:53:36+00:00",
+      "prompt": "Image 1 shows this channel's locked look only: match its 3D cartoon material, finish and warm light. Do NOT copy its room, people, objects or any text. Finished 3D cartoon still for a vertical history-of-science Short. The same wooden table in the dark just beyond the red edge of a rainbow spectrum, the thermometer's red column at its highest. The invisible heat is shown only as a very soft warm glow and a faint clear air shimmer over the dark strip. No smoke, no trails, no embers, no sparks, no flame. Quiet wonder. History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm cinematic light. Not photoreal, not flat 2D. Vertical 9:16 frame with the key subject in the centre band. No text, letters, numbers, labels, captions, signs, logos or UI anywhere. No orange robot. No boy explorer character. No DNA helix. No gore.",
+      "cost_usd": 0.039,
+      "ok": true,
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/plates_v01/s1/05_invisible_glow_v02.jpg"
+    },
+    {
+      "short": "s2",
+      "plate": "03_black_sludge",
+      "ver": "v02",
+      "at": "2026-10-12T19:53:46+00:00",
+      "prompt": "Image 2 is the character lock for Hennig Brand only (face, beard, age, apron). Image 1 shows this channel's locked look only: match its 3D cartoon material, finish and warm light. Do NOT copy its room, people, objects or any text. Finished 3D cartoon still for a vertical history-of-science Short. Hennig Brand must be the SAME man as in Image 2: the same bearded face, age and hair, the same brown leather apron and clothes, no glasses. Close on a glass retort over glowing coals, boiled down to thick black sludge, Brand leaning in behind it, peering hopefully. History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm cinematic light. Not photoreal, not flat 2D. Vertical 9:16 frame with the key subject in the centre band. No text, letters, numbers, labels, captions, signs, logos or UI anywhere. No orange robot. No boy explorer character. No DNA helix. No gore.",
+      "cost_usd": 0.039,
+      "ok": true,
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/plates_v01/s2/03_black_sludge_v02.jpg"
+    },
+    {
+      "short": "s2",
+      "plate": "04_no_gold",
+      "ver": "v02",
+      "at": "2026-10-12T19:53:57+00:00",
+      "prompt": "Image 2 is the character lock for Hennig Brand only (face, beard, age, apron). Image 1 shows this channel's locked look only: match its 3D cartoon material, finish and warm light. Do NOT copy its room, people, objects or any text. Finished 3D cartoon still for a vertical history-of-science Short. Hennig Brand must be the SAME man as in Image 2: the same bearded face, age and hair, the same brown leather apron and clothes, no glasses. Brand by his furnace holding up an empty iron crucible, disappointed: no gold, only dull residue. History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm cinematic light. Not photoreal, not flat 2D. Vertical 9:16 frame with the key subject in the centre band. No text, letters, numbers, labels, captions, signs, logos or UI anywhere. No orange robot. No boy explorer character. No DNA helix. No gore.",
+      "cost_usd": 0.039,
+      "ok": true,
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/plates_v01/s2/04_no_gold_v02.jpg"
+    },
+    {
+      "short": "s2",
+      "plate": "05_first_glow",
+      "ver": "v02",
+      "at": "2026-10-12T19:54:07+00:00",
+      "prompt": "Image 2 is the character lock for Hennig Brand only (face, beard, age, apron). Image 1 shows this channel's locked look only: match its 3D cartoon material, finish and warm light. Do NOT copy its room, people, objects or any text. Finished 3D cartoon still for a vertical history-of-science Short. Hennig Brand must be the SAME man as in Image 2: the same bearded face, age and hair, the same brown leather apron and clothes, no glasses. In the dark workshop, a white waxy substance in a glass dish glowing eerie green-white, Brand's astonished face lit from below by its glow. History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm cinematic light. Not photoreal, not flat 2D. Vertical 9:16 frame with the key subject in the centre band. No text, letters, numbers, labels, captions, signs, logos or UI anywhere. No orange robot. No boy explorer character. No DNA helix. No gore.",
+      "cost_usd": 0.039,
+      "ok": true,
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/plates_v01/s2/05_first_glow_v02.jpg"
+    },
+    {
+      "short": "s3",
+      "plate": "05_handle_off",
+      "ver": "v02",
+      "at": "2026-10-12T19:54:16+00:00",
+      "prompt": "Image 1 shows this channel's locked look only: match its 3D cartoon material, finish and warm light. Do NOT copy its room, people, objects or any text. Finished 3D cartoon still for a vertical history-of-science Short. A black cast-iron Victorian street water pump on a calm Soho street in 1854 with its handle completely removed: the pump body has only a bare stub where the handle was, nothing attached. Dr John Snow, Victorian physician with sideburns and a dark frock coat, stands beside it holding the long detached iron handle in both hands. Only one handle in the picture. History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm cinematic light. Not photoreal, not flat 2D. Vertical 9:16 frame with the key subject in the centre band. No text, letters, numbers, labels, captions, signs, logos or UI anywhere. No orange robot. No boy explorer character. No DNA helix. No gore.",
+      "cost_usd": 0.039,
+      "ok": true,
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/plates_v01/s3/05_handle_off_v02.jpg"
+    },
+    {
+      "short": "s3",
+      "plate": "05_handle_off",
+      "ver": "v03",
+      "at": "2026-10-12T20:15:35+00:00",
+      "prompt": "Image 1 shows this channel's locked look only: match its 3D cartoon material, finish and warm light. Do NOT copy its room, people, objects or any text. Finished 3D cartoon still for a vertical history-of-science Short. A black cast-iron Victorian street water pump standing alone on wet cobbles on a calm, empty Soho street in 1854. The pump has NO handle at all: on its side there is only a short bare iron stub with a bolt hole where the handle used to be. No person in the frame, no hands, nothing held, no loose handle anywhere. Soft morning light, quiet relief. History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm cinematic light. Not photoreal, not flat 2D. Vertical 9:16 frame with the key subject in the centre band. No text, letters, numbers, labels, captions, signs, logos or UI anywhere. No orange robot. No boy explorer character. No DNA helix. No gore.",
+      "cost_usd": 0.039,
+      "ok": true,
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/plates_v01/s3/05_handle_off_v03.jpg"
+    },
+    {
+      "short": "s4",
+      "plate": "05_paris_archive",
+      "ver": "v02",
+      "at": "2026-10-12T21:15:27+00:00",
+      "prompt": "Image 1 shows this channel's locked look only: match its 3D cartoon material, finish and warm light. Do NOT copy its room, people, objects or any text. Finished 3D cartoon still for a vertical history-of-science Short. A grand, quiet Paris library archive with tall wooden shelves of dark lead-lined boxes receding down a long vaulted aisle, one box on a reading table in the foreground with an old 1890s laboratory notebook lying closed beside it, a faint blue-green glow at its edges. No people, no hands, no gloves, no figures anywhere in the frame. Soft warm light. Quiet, awe. History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm cinematic light. Not photoreal, not flat 2D. Vertical 9:16 frame with the key subject in the centre band. No text, letters, numbers, labels, captions, signs, logos or UI anywhere. No orange robot. No boy explorer character. No DNA helix. No gore.",
+      "cost_usd": 0.039,
+      "ok": true,
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/plates_v01/s4/05_paris_archive_v02.jpg"
+    },
+    {
+      "short": "s5",
+      "plate": "01_pigeons_horn",
+      "ver": "v01",
+      "at": "2026-10-12T22:24:54+00:00",
+      "prompt": "Image 1 shows this channel's locked look only: match its 3D cartoon material, finish and warm light. Do NOT copy its room, people, objects or any text. Finished 3D cartoon still for a vertical history-of-science Short. Two grey pigeons flapping out of the open mouth of a huge horn-shaped metal radio antenna on a grassy New Jersey hill in 1964, the horn like a giant square ear trumpet on a rotating mount. The hook frame. History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm cinematic light. Not photoreal, not flat 2D. Vertical 9:16 frame with the key subject in the centre band. No text, letters, numbers, labels, captions, signs, logos or UI anywhere. No orange robot. No boy explorer character. No DNA helix. No gore.",
+      "cost_usd": 0.039,
+      "job": "J0214",
+      "ok": true,
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/plates_v01/s5/01_pigeons_horn_v01.jpg"
+    },
+    {
+      "short": "s5",
+      "plate": "02_receiver_needle",
+      "ver": "v01",
+      "at": "2026-10-12T22:25:04+00:00",
+      "prompt": "Image 1 shows this channel's locked look only: match its 3D cartoon material, finish and warm light. Do NOT copy its room, people, objects or any text. Finished 3D cartoon still for a vertical history-of-science Short. Two 1960s radio astronomers in shirt sleeves, Arno Penzias with dark hair and glasses and Robert Wilson, tall and lean, at a bank of receiver equipment with glowing valve panels, watching an analogue needle tremble on a dial with a blank face. Puzzled. History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm cinematic light. Not photoreal, not flat 2D. Vertical 9:16 frame with the key subject in the centre band. No text, letters, numbers, labels, captions, signs, logos or UI anywhere. No orange robot. No boy explorer character. No DNA helix. No gore.",
+      "cost_usd": 0.039,
+      "job": "J0214",
+      "ok": true,
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/plates_v01/s5/02_receiver_needle_v01.jpg"
+    },
+    {
+      "short": "s5",
+      "plate": "03_nests_inside",
+      "ver": "v01",
+      "at": "2026-10-12T22:25:13+00:00",
+      "prompt": "Image 1 shows this channel's locked look only: match its 3D cartoon material, finish and warm light. Do NOT copy its room, people, objects or any text. Finished 3D cartoon still for a vertical history-of-science Short. Inside the giant metal horn antenna, looking down its tapering throat: twigs of pigeon nests and white droppings on the riveted aluminium floor, one pigeon perched. Soft daylight. History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm cinematic light. Not photoreal, not flat 2D. Vertical 9:16 frame with the key subject in the centre band. No text, letters, numbers, labels, captions, signs, logos or UI anywhere. No orange robot. No boy explorer character. No DNA helix. No gore.",
+      "cost_usd": 0.039,
+      "job": "J0214",
+      "ok": true,
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/plates_v01/s5/03_nests_inside_v01.jpg"
+    },
+    {
+      "short": "s5",
+      "plate": "04_still_noise",
+      "ver": "v01",
+      "at": "2026-10-12T22:25:22+00:00",
+      "prompt": "Image 2 is the character lock for Arno Penzias and Robert Wilson: the SAME face, hair, age and clothes as in Image 2. Do not copy its framing. Image 1 shows this channel's locked look only: match its 3D cartoon material, finish and warm light. Do NOT copy its room, people, objects or any text. Finished 3D cartoon still for a vertical history-of-science Short. The same two radio astronomers at the receiver, the analogue needle still trembling on its blank dial, both leaning in, baffled, a broom propped against the rack. History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm cinematic light. Not photoreal, not flat 2D. Vertical 9:16 frame with the key subject in the centre band. No text, letters, numbers, labels, captions, signs, logos or UI anywhere. No orange robot. No boy explorer character. No DNA helix. No gore.",
+      "cost_usd": 0.039,
+      "job": "J0214",
+      "ok": true,
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/plates_v01/s5/04_still_noise_v01.jpg"
+    },
+    {
+      "short": "s5",
+      "plate": "05_every_direction",
+      "ver": "v01",
+      "at": "2026-10-12T22:25:30+00:00",
+      "prompt": "Image 1 shows this channel's locked look only: match its 3D cartoon material, finish and warm light. Do NOT copy its room, people, objects or any text. Finished 3D cartoon still for a vertical history-of-science Short. The giant horn antenna on its hill at night, turned up to a starry sky; the whole sky glows with a faint, even, warm microwave haze from every direction. Wonder. History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm cinematic light. Not photoreal, not flat 2D. Vertical 9:16 frame with the key subject in the centre band. No text, letters, numbers, labels, captions, signs, logos or UI anywhere. No orange robot. No boy explorer character. No DNA helix. No gore.",
+      "cost_usd": 0.039,
+      "job": "J0214",
+      "ok": true,
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/plates_v01/s5/05_every_direction_v01.jpg"
+    },
+    {
+      "short": "s6",
+      "plate": "01_mouldy_dish",
+      "ver": "v01",
+      "at": "2026-10-12T22:25:40+00:00",
+      "prompt": "Image 1 shows this channel's locked look only: match its 3D cartoon material, finish and warm light. Do NOT copy its room, people, objects or any text. Finished 3D cartoon still for a vertical history-of-science Short. A cluttered 1920s laboratory bench with stacks of round glass culture dishes, one dish on top with a fuzzy blue-green mould spreading across it. The hook frame. History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm cinematic light. Not photoreal, not flat 2D. Vertical 9:16 frame with the key subject in the centre band. No text, letters, numbers, labels, captions, signs, logos or UI anywhere. No orange robot. No boy explorer character. No DNA helix. No gore.",
+      "cost_usd": 0.039,
+      "job": "J0214",
+      "ok": true,
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/plates_v01/s6/01_mouldy_dish_v01.jpg"
+    },
+    {
+      "short": "s6",
+      "plate": "02_back_from_holiday",
+      "ver": "v01",
+      "at": "2026-10-12T22:25:50+00:00",
+      "prompt": "Image 1 shows this channel's locked look only: match its 3D cartoon material, finish and warm light. Do NOT copy its room, people, objects or any text. Finished 3D cartoon still for a vertical history-of-science Short. Alexander Fleming, a 1920s Scottish scientist with a bow tie and white lab coat over a suit, back from holiday in his small London lab, sorting through a pile of old glass culture dishes by the window. History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm cinematic light. Not photoreal, not flat 2D. Vertical 9:16 frame with the key subject in the centre band. No text, letters, numbers, labels, captions, signs, logos or UI anywhere. No orange robot. No boy explorer character. No DNA helix. No gore.",
+      "cost_usd": 0.039,
+      "job": "J0214",
+      "ok": true,
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/plates_v01/s6/02_back_from_holiday_v01.jpg"
+    },
+    {
+      "short": "s6",
+      "plate": "03_fuzzy_mould",
+      "ver": "v01",
+      "at": "2026-10-12T22:26:25+00:00",
+      "prompt": "Image 2 is the character lock for Alexander Fleming: the SAME face, hair, age and clothes as in Image 2. Do not copy its framing. Image 1 shows this channel's locked look only: match its 3D cartoon material, finish and warm light. Do NOT copy its room, people, objects or any text. Finished 3D cartoon still for a vertical history-of-science Short. Close on one round glass culture dish held up to window light: a fuzzy blue-green mould colony on pale yellow bacteria. History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm cinematic light. Not photoreal, not flat 2D. Vertical 9:16 frame with the key subject in the centre band. No text, letters, numbers, labels, captions, signs, logos or UI anywhere. No orange robot. No boy explorer character. No DNA helix. No gore.",
+      "cost_usd": 0.039,
+      "job": "J0214",
+      "ok": true,
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/plates_v01/s6/03_fuzzy_mould_v01.jpg"
+    },
+    {
+      "short": "s6",
+      "plate": "04_clear_ring",
+      "ver": "v01",
+      "at": "2026-10-12T22:27:01+00:00",
+      "prompt": "Image 1 shows this channel's locked look only: match its 3D cartoon material, finish and warm light. Do NOT copy its room, people, objects or any text. Finished 3D cartoon still for a vertical history-of-science Short. Close on the glass culture dish: a clear empty ring all around the fuzzy mould where the yellow bacteria colonies have vanished, the rest of the dish dotted with colonies. History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm cinematic light. Not photoreal, not flat 2D. Vertical 9:16 frame with the key subject in the centre band. No text, letters, numbers, labels, captions, signs, logos or UI anywhere. No orange robot. No boy explorer character. No DNA helix. No gore.",
+      "cost_usd": 0.039,
+      "job": "J0214",
+      "ok": true,
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/plates_v01/s6/04_clear_ring_v01.jpg"
+    },
+    {
+      "short": "s6",
+      "plate": "05_medicine_bottles",
+      "ver": "v01",
+      "at": "2026-10-12T22:27:09+00:00",
+      "prompt": "Image 1 shows this channel's locked look only: match its 3D cartoon material, finish and warm light. Do NOT copy its room, people, objects or any text. Finished 3D cartoon still for a vertical history-of-science Short. Rows of small 1940s glass medicine vials with plain blank labels on a pharmacy shelf in warm light, hopeful. History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm cinematic light. Not photoreal, not flat 2D. Vertical 9:16 frame with the key subject in the centre band. No text, letters, numbers, labels, captions, signs, logos or UI anywhere. No orange robot. No boy explorer character. No DNA helix. No gore.",
+      "cost_usd": 0.039,
+      "job": "J0214",
+      "ok": true,
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/plates_v01/s6/05_medicine_bottles_v01.jpg"
+    },
+    {
+      "short": "s7",
+      "plate": "01_candle_jar",
+      "ver": "v01",
+      "at": "2026-10-12T22:27:24+00:00",
+      "prompt": "Image 1 shows this channel's locked look only: match its 3D cartoon material, finish and warm light. Do NOT copy its room, people, objects or any text. Finished 3D cartoon still for a vertical history-of-science Short. A candle flame shrinking to almost nothing inside an upturned glass jar standing in a dish of water on an 18th-century wooden bench, a wisp of smoke curling. The hook frame. History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm cinematic light. Not photoreal, not flat 2D. Vertical 9:16 frame with the key subject in the centre band. No text, letters, numbers, labels, captions, signs, logos or UI anywhere. No orange robot. No boy explorer character. No DNA helix. No gore.",
+      "cost_usd": 0.039,
+      "job": "J0214",
+      "ok": true,
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/plates_v01/s7/01_candle_jar_v01.jpg"
+    },
+    {
+      "short": "s7",
+      "plate": "02_priestley_jar",
+      "ver": "v01",
+      "at": "2026-10-12T22:27:34+00:00",
+      "prompt": "Image 1 shows this channel's locked look only: match its 3D cartoon material, finish and warm light. Do NOT copy its room, people, objects or any text. Finished 3D cartoon still for a vertical history-of-science Short. Joseph Priestley, an 18th-century English minister and scientist in a powdered wig and dark coat, at his wooden bench in 1771 lowering an upturned glass jar over a lit candle standing in a dish of water. History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm cinematic light. Not photoreal, not flat 2D. Vertical 9:16 frame with the key subject in the centre band. No text, letters, numbers, labels, captions, signs, logos or UI anywhere. No orange robot. No boy explorer character. No DNA helix. No gore.",
+      "cost_usd": 0.039,
+      "job": "J0214",
+      "ok": true,
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/plates_v01/s7/02_priestley_jar_v01.jpg"
+    },
+    {
+      "short": "s7",
+      "plate": "03_mint_sprig",
+      "ver": "v01",
+      "at": "2026-10-12T22:27:42+00:00",
+      "prompt": "Image 2 is the character lock for Joseph Priestley: the SAME face, hair, age and clothes as in Image 2. Do not copy its framing. Image 1 shows this channel's locked look only: match its 3D cartoon material, finish and warm light. Do NOT copy its room, people, objects or any text. Finished 3D cartoon still for a vertical history-of-science Short. Priestley's hands slipping a fresh green sprig of mint under the rim of the upturned glass jar standing in water, the candle inside burnt out. History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm cinematic light. Not photoreal, not flat 2D. Vertical 9:16 frame with the key subject in the centre band. No text, letters, numbers, labels, captions, signs, logos or UI anywhere. No orange robot. No boy explorer character. No DNA helix. No gore.",
+      "cost_usd": 0.039,
+      "job": "J0214",
+      "ok": true,
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/plates_v01/s7/03_mint_sprig_v01.jpg"
+    },
+    {
+      "short": "s7",
+      "plate": "04_candle_bright",
+      "ver": "v01",
+      "at": "2026-10-12T22:27:53+00:00",
+      "prompt": "Image 1 shows this channel's locked look only: match its 3D cartoon material, finish and warm light. Do NOT copy its room, people, objects or any text. Finished 3D cartoon still for a vertical history-of-science Short. A fresh candle burning bright and tall inside the upturned glass jar beside a healthy green sprig of mint, standing in water on the wooden bench. Quiet triumph. History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm cinematic light. Not photoreal, not flat 2D. Vertical 9:16 frame with the key subject in the centre band. No text, letters, numbers, labels, captions, signs, logos or UI anywhere. No orange robot. No boy explorer character. No DNA helix. No gore.",
+      "cost_usd": 0.039,
+      "job": "J0214",
+      "ok": true,
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/plates_v01/s7/04_candle_bright_v01.jpg"
+    },
+    {
+      "short": "s8",
+      "plate": "01_tall_tube",
+      "ver": "v01",
+      "at": "2026-10-12T22:28:02+00:00",
+      "prompt": "Image 1 shows this channel's locked look only: match its 3D cartoon material, finish and warm light. Do NOT copy its room, people, objects or any text. Finished 3D cartoon still for a vertical history-of-science Short. A very tall upright glass tube against a weathered wooden barn wall in the 18th century, a red column already rising high inside it. The hook frame. No blood outside the tube. History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm cinematic light. Not photoreal, not flat 2D. Vertical 9:16 frame with the key subject in the centre band. No text, letters, numbers, labels, captions, signs, logos or UI anywhere. No orange robot. No boy explorer character. No DNA helix. No gore.",
+      "cost_usd": 0.039,
+      "job": "J0214",
+      "ok": true,
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/plates_v01/s8/01_tall_tube_v01.jpg"
+    },
+    {
+      "short": "s8",
+      "plate": "02_hales_sketch",
+      "ver": "v01",
+      "at": "2026-10-12T22:28:36+00:00",
+      "prompt": "Image 1 shows this channel's locked look only: match its 3D cartoon material, finish and warm light. Do NOT copy its room, people, objects or any text. Finished 3D cartoon still for a vertical history-of-science Short. Stephen Hales, an 18th-century English country vicar in a black clerical coat, white bands at the collar and a short grey wig, at a desk by a window sketching a heart with a quill. No writing visible. History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm cinematic light. Not photoreal, not flat 2D. Vertical 9:16 frame with the key subject in the centre band. No text, letters, numbers, labels, captions, signs, logos or UI anywhere. No orange robot. No boy explorer character. No DNA helix. No gore.",
+      "cost_usd": 0.039,
+      "job": "J0214",
+      "ok": true,
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/plates_v01/s8/02_hales_sketch_v01.jpg"
+    },
+    {
+      "short": "s8",
+      "plate": "03_calm_mare",
+      "ver": "v01",
+      "at": "2026-10-12T22:28:46+00:00",
+      "prompt": "Image 1 shows this channel's locked look only: match its 3D cartoon material, finish and warm light. Do NOT copy its room, people, objects or any text. Finished 3D cartoon still for a vertical history-of-science Short. A calm chestnut mare standing in a straw-filled barn, a thin brass pipe joined to a very tall glass tube rising up the barn wall beside her. No wound, no procedure, no blood visible. History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm cinematic light. Not photoreal, not flat 2D. Vertical 9:16 frame with the key subject in the centre band. No text, letters, numbers, labels, captions, signs, logos or UI anywhere. No orange robot. No boy explorer character. No DNA helix. No gore.",
+      "cost_usd": 0.039,
+      "job": "J0214",
+      "ok": true,
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/plates_v01/s8/03_calm_mare_v01.jpg"
+    },
+    {
+      "short": "s8",
+      "plate": "04_taller_than_man",
+      "ver": "v01",
+      "at": "2026-10-12T22:28:55+00:00",
+      "prompt": "Image 2 is the character lock for Stephen Hales: the SAME face, hair, age and clothes as in Image 2. Do not copy its framing. Image 1 shows this channel's locked look only: match its 3D cartoon material, finish and warm light. Do NOT copy its room, people, objects or any text. Finished 3D cartoon still for a vertical history-of-science Short. Stephen Hales, a country vicar in a black clerical coat and short grey wig, standing in the barn looking up in wonder at the very tall glass tube whose red column rises well above his head. No blood outside the tube. History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm cinematic light. Not photoreal, not flat 2D. Vertical 9:16 frame with the key subject in the centre band. No text, letters, numbers, labels, captions, signs, logos or UI anywhere. No orange robot. No boy explorer character. No DNA helix. No gore.",
+      "cost_usd": 0.039,
+      "job": "J0214",
+      "ok": true,
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/plates_v01/s8/04_taller_than_man_v01.jpg"
+    },
+    {
+      "short": "s7",
+      "plate": "03_mint_sprig",
+      "ver": "v02",
+      "at": "2026-10-12T23:06:37+00:00",
+      "prompt": "Image 2 is the character lock for Joseph Priestley: the SAME face, hair, age and clothes as in Image 2. Do not copy its framing. Image 1 shows this channel's locked look only: match its 3D cartoon material, finish and warm light. Do NOT copy its room, people, objects or any text. Finished 3D cartoon still for a vertical history-of-science Short. Tight close-up at bench height, not a wide shot: Joseph Priestley's hands in dark coat cuffs slipping a fresh green sprig of mint under the rim of an upturned glass jar that stands in a shallow dish of water. Inside the jar the candle has burnt OUT: a short stub with a black, unlit wick and one thin wisp of grey smoke. NO flame, no glow, no fire anywhere in the frame. Priestley's face only partly in soft focus above. Quiet, curious. History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm cinematic light. Not photoreal, not flat 2D. Vertical 9:16 frame with the key subject in the centre band. No text, letters, numbers, labels, captions, signs, logos or UI anywhere. No orange robot. No boy explorer character. No DNA helix. No gore.",
+      "cost_usd": 0.039,
+      "job": "J0215",
+      "ok": true,
+      "file": "docs/STANDALONE_SHORTS_TEST_2026-10/plates_v01/s7/03_mint_sprig_v02.jpg"
+    }
+  ]
+}

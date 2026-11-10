@@ -1,0 +1,98 @@
+{
+  "film": "002",
+  "video": "AL_-qlWko_g",
+  "job": "J0534",
+  "variant": "B v07 (1.032x gallium hero push-in + concrete physical-property hook; pairs with B v06 'EMPTY ON PURPOSE' and B v04 'PREDICTED BEFORE FOUND')",
+  "maker": "gemini",
+  "hook": "METAL TURNS LIQUID",
+  "punch": "LIQUID",
+  "jpg": "Selected/hos_002_thumb_B_metal_turns_liquid_v07.jpg",
+  "sha256": "ddcb6b0fcc5c7bfb4c958043a736886ecb9ca130efe50bf9519ea64f17038dda",
+  "bytes": 285919,
+  "plates": [
+    "Selected/hos_002_thumb_A_gallium_live_v02.png (NAS 002 painted 16:9 key-art plate: giant liquid-gallium arch & droplet on right two-thirds with 1.032x hero push-in + Explorer lower-left + original gold scroll flourishes)"
+  ],
+  "method": "existing_002_plate_only_1.032x_hero_push_in_and_reletter_GeorgiaBold_with_original_painted_flourishes",
+  "spend": 0,
+  "heroBox": [
+    548,
+    19,
+    1274,
+    702
+  ],
+  "explorer": {
+    "source": "hos_002_thumb_A_gallium_live_v02.png",
+    "box": [
+      42,
+      300,
+      256,
+      720
+    ],
+    "height_px": 420,
+    "height_frac": 0.583
+  },
+  "lettering": [
+    {
+      "word": "METAL",
+      "kind": "cream",
+      "size": 94,
+      "box": [
+        116,
+        67,
+        481,
+        148
+      ]
+    },
+    {
+      "word": "TURNS",
+      "kind": "cream",
+      "size": 82,
+      "box": [
+        144,
+        136,
+        452,
+        211
+      ]
+    },
+    {
+      "word": "LIQUID",
+      "kind": "gold",
+      "size": 86,
+      "box": [
+        130,
+        199,
+        467,
+        292
+      ]
+    }
+  ],
+  "ornaments": {
+    "top_scroll_box": [
+      113,
+      28,
+      485,
+      63
+    ],
+    "bottom_scroll_box": [
+      197,
+      311,
+      467,
+      359
+    ]
+  },
+  "clearOfHero": true,
+  "clearOfExplorer": true,
+  "clearOfBadge": true,
+  "scores": {
+    "HOOK": "PASS \u2014 'METAL TURNS LIQUID' (3 words, punch word 'LIQUID' in gold) names the concrete discovery object ('METAL') and visible physical transformation ('TURNS LIQUID') shown by the giant silvery melting gallium arch and droplet on the right (002 script Part 05: '1875. Gallium. Soft, strange, almost liquid in a warm room' and THUMBNAIL_AND_TITLE_RULES.md \u00a71.2 & \u00a72.B.1 'name the thing'), shares zero words with the video title ('How Did We Discover the Periodic Table?'), J0374 ('THE MISSING ELEMENT'), J0442 ('PREDICTED BEFORE FOUND'), or J0488 ('EMPTY ON PURPOSE'), and uses no vague questions or pronouns.",
+    "BAND": "PASS \u2014 Upper-left lettering band (x=116..481, y=67..292, framed by original painted gold scroll flourishes at y=28..359) sits completely left of the pushed-in hero gallium arch (x=548..1274), above the Explorer's hair (y=300) and bottom flourish (y=311), and clear of the bottom-right duration badge.",
+    "PHONE": "PASS \u2014 Checked on 168x94 preview sheet and 4-panel strip: the 1.032x hero push-in and metallic specular clarity boost make the giant silvery liquid-gallium arch and falling droplet larger and crisper at 168x94 while keeping 'METAL TURNS LIQUID' and the Explorer's face/glasses (58.3% height) immediately legible in under a second."
+  },
+  "previews": [
+    "Selected/hos_002_thumb_B_metal_turns_liquid_v07_preview.jpg",
+    "Selected/hos_002_thumb_B_metal_turns_liquid_v07_style_sheet.jpg",
+    "Selected/hos_002_thumb_TC_4way_metal_turns_liquid_v07_phone_168.jpg"
+  ],
+  "studio": false,
+  "status": "Test & Compare B v07 candidate for 002 (AL_-qlWko_g, built from existing 002 plate only with 1.032x hero push-in, \u00a30). Parked for Chief: thumb B review. No Studio until OK."
+}

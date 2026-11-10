@@ -1,0 +1,21 @@
+01_page_turns     1.4s 05_quill_writes_t1.mp4       WARN low detail: edge density 0.0153 < film p5 0.0184
+02_variolation_calm     5.9s 02_variolation_calm_t1.mp4   ok
+03_waiting    11.6s 03_waiting_t1.mp4            ok
+04_day_one    15.4s 04_day_one_t1.mp4            ok
+05_days_pass    18.3s 05_days_pass_t1.mp4          ok
+06_line_underlined    21.8s 06_line_underlined_t1.mp4    ok
+06b_still_nothing    26.2s 06b_still_nothing_t1.mp4     ok
+07_jesty_again    32.2s 06_jesty_family_t1.mp4       ok
+07b_quill_again    37.4s 05_quill_writes_t1.mp4       ok
+07c_cases_again    42.2s 13_casebook_t1.mp4           ok
+08_soho_press    47.7s 08_soho_press_t1.mp4         ok
+08b_title_page    52.7s archive_007_p4_08b_title_pag ok
+08c_cow_again    56.7s 01_cow_meadow_t1.mp4         ok
+12_explorer_press    61.6s 12_explorer_press_t1.mp4     ok
+08d_doctors_scoff    66.9s 08d_doctors_scoff_t1.mp4     ok
+09_satire    71.2s archive_007_p4_09_satire_v01 ok
+09b_boy_well    75.1s 07_playing_garden_t1.mp4     ok
+10a_packets    78.4s 10a_packets_t1.mp4           ok
+10_garden_hut    83.2s 10_garden_hut_t1.mp4         ok
+11_news_spreads    89.5s code_graphic_007_p4_11_news_ ok
+polish gate PASS: 0 of 20 rows failed, 1 to look at -> /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/_desk/007/part04_rough_v01/polish_gate.json

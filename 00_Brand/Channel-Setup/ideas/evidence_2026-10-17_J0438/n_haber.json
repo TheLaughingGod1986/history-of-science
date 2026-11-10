@@ -1,0 +1,240 @@
+{
+ "pulled": "2026-10-17",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "fritz haber",
+  "the man who killed millions and saved billions",
+  "nitrogen cycle"
+ ],
+ "autocomplete": {
+  "fritz haber": [
+   "fritz haber documentary",
+   "fritz haber hindi",
+   "fritz haber sabaton",
+   "fritz haber movie",
+   "fritz haber edit",
+   "fritz haber scishow",
+   "fritz haber reaction",
+   "fritz haber malayalam",
+   "fritz haber institute",
+   "fritz haber tamil"
+  ],
+  "the man who killed millions and saved billions": [],
+  "nitrogen cycle": [
+   "nitrogen cycle",
+   "nitrogen cycle explained",
+   "nitrogen cycle class 8",
+   "nitrogen cycle diagram",
+   "nitrogen cycle grade 10",
+   "nitrogen cycle class 10",
+   "nitrogen cycle drawing",
+   "nitrogen cycle class 12 biology",
+   "nitrogen cycle in hindi",
+   "nitrogen cycle model"
+  ]
+ },
+ "sharedTitleWords": [
+  "the man",
+  "man who",
+  "the nitrogen",
+  "nitrogen cycle"
+ ],
+ "neighbours": [
+  {
+   "id": "0UzMaoaXKaM",
+   "title": "Nature's smallest factory: The Calvin cycle - Cathy Symington",
+   "channel": "TED-Ed",
+   "views": "3,391,154 views",
+   "age": "12 yr ago",
+   "length": "5:38",
+   "tier": 1,
+   "viewCount": 3391154,
+   "foundBy": "ted-ed nitrogen cycle",
+   "onTopic": true
+  },
+  {
+   "id": "A4cPmHGegKI",
+   "title": "The carbon cycle - Nathaniel Manning",
+   "channel": "TED-Ed",
+   "views": "853,987 views",
+   "age": "14 yr ago",
+   "length": "3:55",
+   "tier": 1,
+   "viewCount": 853987,
+   "foundBy": "ted-ed nitrogen cycle",
+   "onTopic": true
+  },
+  {
+   "id": "IV3dnLzthDA",
+   "title": "The Man Who Accidentally Killed The Most People In History",
+   "channel": "Veritasium",
+   "views": "43,434,917 views",
+   "age": "4 yr ago",
+   "length": "24:57",
+   "tier": 2,
+   "viewCount": 43434917,
+   "foundBy": "the man who killed millions and saved billions",
+   "onTopic": true
+  },
+  {
+   "id": "QQkmJI63ykI",
+   "title": "The Man Who Killed Millions and Saved Billions (Clean Version)",
+   "channel": "Veritasium",
+   "views": "10,550,103 views",
+   "age": "3 yr ago",
+   "length": "20:44",
+   "tier": 2,
+   "viewCount": 10550103,
+   "foundBy": "fritz haber",
+   "onTopic": true
+  },
+  {
+   "id": "NHqEthRCqQ4",
+   "title": "Carbon and Nitrogen Cycles",
+   "channel": "Amoeba Sisters",
+   "views": "2,854,342 views",
+   "age": "10 yr ago",
+   "length": "7:56",
+   "tier": 2,
+   "viewCount": 2854342,
+   "foundBy": "nitrogen cycle",
+   "onTopic": true
+  },
+  {
+   "id": "leHy-Y_8nRs",
+   "title": "Nitrogen & Phosphorus Cycles: Always Recycle! Part 2 - Crash Course Ecology #9",
+   "channel": "CrashCourse",
+   "views": "1,935,334 views",
+   "age": "13 yr ago",
+   "length": "9:22",
+   "tier": 2,
+   "viewCount": 1935334,
+   "foundBy": "nitrogen cycle",
+   "onTopic": true
+  },
+  {
+   "id": "1_HoWz5Kxfk",
+   "title": "GCSE Chemistry - The Haber Process Explained (2026/27 exams)",
+   "channel": "Cognito",
+   "views": "657,084 views",
+   "age": "6 yr ago",
+   "length": "5:37",
+   "tier": 2,
+   "viewCount": 657084,
+   "foundBy": "ted-ed fritz haber",
+   "onTopic": true
+  },
+  {
+   "id": "tdEE5uvFhOM",
+   "title": "Fritz Haber: Great Minds",
+   "channel": "SciShow",
+   "views": "602,722 views",
+   "age": "14 yr ago",
+   "length": "9:41",
+   "tier": 2,
+   "viewCount": 602722,
+   "foundBy": "fritz haber",
+   "onTopic": true
+  },
+  {
+   "id": "vZ9b5c8BOT4",
+   "title": "The Nitrogen Cycle | Environmental Chemistry | Chemistry | FuseSchool",
+   "channel": "FuseSchool - Global Education",
+   "views": "491,926 views",
+   "age": "10 yr ago",
+   "length": "3:32",
+   "tier": 2,
+   "viewCount": 491926,
+   "foundBy": "nitrogen cycle",
+   "onTopic": true
+  },
+  {
+   "id": "DsCMYyQ0NWU",
+   "title": "The nitrogen cycle | Energy and matter in biological systems | High school biology | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "426,079 views",
+   "age": "10 yr ago",
+   "length": "5:44",
+   "tier": 2,
+   "viewCount": 426079,
+   "foundBy": "khan academy nitrogen cycle",
+   "onTopic": true
+  },
+  {
+   "id": "XynPVsE1fd4",
+   "title": "The carbon cycle | Middle school Earth and space science | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "189,808 views",
+   "age": "1 yr ago",
+   "length": "4:44",
+   "tier": 2,
+   "viewCount": 189808,
+   "foundBy": "khan academy nitrogen cycle",
+   "onTopic": true
+  },
+  {
+   "id": "ccWUDlKC3dE",
+   "title": "Biogeochemical cycles  | Ecology | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "164,713 views",
+   "age": "10 yr ago",
+   "length": "7:54",
+   "tier": 2,
+   "viewCount": 164713,
+   "foundBy": "khan academy nitrogen cycle",
+   "onTopic": true
+  },
+  {
+   "id": "_Sn8c_-UDG4",
+   "title": "Wonder Stuff - Nitrogen, the Environment and Us | Dave Reay | TEDxUniversityofEdinburghSalon",
+   "channel": "TEDx Talks",
+   "views": "2,169 views",
+   "age": "9 yr ago",
+   "length": "10:38",
+   "tier": 1,
+   "viewCount": 2169,
+   "foundBy": "ted-ed nitrogen cycle",
+   "onTopic": true
+  },
+  {
+   "id": "EcvsbXsOax8",
+   "title": "How ammonia synthesis of Haber and Bosch changed human civilization | Jaeun Shim | TEDxYouth@IASA",
+   "channel": "TEDx Talks",
+   "views": "463 views",
+   "age": "7 yr ago",
+   "length": "3:18",
+   "tier": 1,
+   "viewCount": 463,
+   "foundBy": "fritz haber ted",
+   "onTopic": true
+  },
+  {
+   "id": "RbZ7IIFlVfo",
+   "title": "Feed billions, kill millions: The tragedy of Fritz Haber | Jackson Sarver | TEDxHunting Valley",
+   "channel": "TEDx Talks",
+   "views": "401 views",
+   "age": "4 wk ago",
+   "length": "13:55",
+   "tier": 1,
+   "viewCount": 401,
+   "foundBy": "ted-ed fritz haber",
+   "onTopic": true
+  },
+  {
+   "id": "_4WkrrqJJSs",
+   "title": "How the Haber process has shaped the modern world. | Hari Das | TEDxHabs Elstree Youth",
+   "channel": "TEDx Talks",
+   "views": "81 views",
+   "age": "5 mo ago",
+   "length": "8:42",
+   "tier": 1,
+   "viewCount": 81,
+   "foundBy": "fritz haber ted",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 5,
+ "gate": "PASS",
+ "hasTed": true,
+ "failedQueries": []
+}

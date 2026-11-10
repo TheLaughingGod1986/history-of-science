@@ -1,0 +1,716 @@
+{
+  "language_code": "eng",
+  "language_probability": 1.0,
+  "text": "In 1771, a sprig of mint brought dead air back to life. Joseph Priestley let a candle burn out in a closed jar. The air was spent. He slipped in a sprig of mint and waited 10 days, then a fresh candle burned perfectly well. The plant had remade the air",
+  "words": [
+    {
+      "text": "In",
+      "start": 0.14,
+      "end": 0.26,
+      "type": "word",
+      "logprob": -3.4570634852570947e-06
+    },
+    {
+      "text": " ",
+      "start": 0.26,
+      "end": 0.3,
+      "type": "spacing",
+      "logprob": -0.001210790709592402
+    },
+    {
+      "text": "1771,",
+      "start": 0.3,
+      "end": 1.62,
+      "type": "word",
+      "logprob": -0.00014279585997201139
+    },
+    {
+      "text": " ",
+      "start": 1.62,
+      "end": 1.88,
+      "type": "spacing",
+      "logprob": -4.017272294731811e-05
+    },
+    {
+      "text": "a",
+      "start": 1.88,
+      "end": 1.9,
+      "type": "word",
+      "logprob": -4.017272294731811e-05
+    },
+    {
+      "text": " ",
+      "start": 1.9,
+      "end": 2.06,
+      "type": "spacing",
+      "logprob": -0.0007549058645963669
+    },
+    {
+      "text": "sprig",
+      "start": 2.06,
+      "end": 2.26,
+      "type": "word",
+      "logprob": -0.00045313425357562664
+    },
+    {
+      "text": " ",
+      "start": 2.26,
+      "end": 2.3,
+      "type": "spacing",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": "of",
+      "start": 2.3,
+      "end": 2.42,
+      "type": "word",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": " ",
+      "start": 2.42,
+      "end": 2.5,
+      "type": "spacing",
+      "logprob": -1.311301275563892e-06
+    },
+    {
+      "text": "mint",
+      "start": 2.5,
+      "end": 2.84,
+      "type": "word",
+      "logprob": -1.311301275563892e-06
+    },
+    {
+      "text": " ",
+      "start": 2.84,
+      "end": 3.08,
+      "type": "spacing",
+      "logprob": -2.658331868587993e-05
+    },
+    {
+      "text": "brought",
+      "start": 3.08,
+      "end": 3.4,
+      "type": "word",
+      "logprob": -2.658331868587993e-05
+    },
+    {
+      "text": " ",
+      "start": 3.4,
+      "end": 3.46,
+      "type": "spacing",
+      "logprob": -7.152555099310121e-07
+    },
+    {
+      "text": "dead",
+      "start": 3.46,
+      "end": 3.66,
+      "type": "word",
+      "logprob": -7.152555099310121e-07
+    },
+    {
+      "text": " ",
+      "start": 3.66,
+      "end": 3.76,
+      "type": "spacing",
+      "logprob": -8.344646857949556e-07
+    },
+    {
+      "text": "air",
+      "start": 3.76,
+      "end": 4.019,
+      "type": "word",
+      "logprob": -8.344646857949556e-07
+    },
+    {
+      "text": " ",
+      "start": 4.019,
+      "end": 4.059,
+      "type": "spacing",
+      "logprob": 0.0
+    },
+    {
+      "text": "back",
+      "start": 4.059,
+      "end": 4.24,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": " ",
+      "start": 4.24,
+      "end": 4.3,
+      "type": "spacing",
+      "logprob": 0.0
+    },
+    {
+      "text": "to",
+      "start": 4.3,
+      "end": 4.38,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": " ",
+      "start": 4.38,
+      "end": 4.44,
+      "type": "spacing",
+      "logprob": -2.3841855067985307e-07
+    },
+    {
+      "text": "life.",
+      "start": 4.44,
+      "end": 4.86,
+      "type": "word",
+      "logprob": -4.05311448048451e-07
+    },
+    {
+      "text": " ",
+      "start": 4.86,
+      "end": 4.86,
+      "type": "spacing",
+      "logprob": -6.6756979322235566e-06
+    },
+    {
+      "text": "Joseph",
+      "start": 5.72,
+      "end": 6.12,
+      "type": "word",
+      "logprob": -6.6756979322235566e-06
+    },
+    {
+      "text": " ",
+      "start": 6.12,
+      "end": 6.16,
+      "type": "spacing",
+      "logprob": -0.01613781228661537
+    },
+    {
+      "text": "Priestley",
+      "start": 6.16,
+      "end": 6.66,
+      "type": "word",
+      "logprob": -0.01076334959786133
+    },
+    {
+      "text": " ",
+      "start": 6.66,
+      "end": 6.72,
+      "type": "spacing",
+      "logprob": -2.264974000354414e-06
+    },
+    {
+      "text": "let",
+      "start": 6.72,
+      "end": 6.86,
+      "type": "word",
+      "logprob": -2.264974000354414e-06
+    },
+    {
+      "text": " ",
+      "start": 6.86,
+      "end": 6.9,
+      "type": "spacing",
+      "logprob": 0.0
+    },
+    {
+      "text": "a",
+      "start": 6.9,
+      "end": 6.96,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": " ",
+      "start": 6.96,
+      "end": 7.02,
+      "type": "spacing",
+      "logprob": -8.344646857949556e-07
+    },
+    {
+      "text": "candle",
+      "start": 7.02,
+      "end": 7.38,
+      "type": "word",
+      "logprob": -8.344646857949556e-07
+    },
+    {
+      "text": " ",
+      "start": 7.38,
+      "end": 7.54,
+      "type": "spacing",
+      "logprob": -2.3841830625315197e-06
+    },
+    {
+      "text": "burn",
+      "start": 7.54,
+      "end": 7.78,
+      "type": "word",
+      "logprob": -2.3841830625315197e-06
+    },
+    {
+      "text": " ",
+      "start": 7.78,
+      "end": 7.88,
+      "type": "spacing",
+      "logprob": 0.0
+    },
+    {
+      "text": "out",
+      "start": 7.88,
+      "end": 8.08,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": " ",
+      "start": 8.08,
+      "end": 8.1,
+      "type": "spacing",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": "in",
+      "start": 8.1,
+      "end": 8.16,
+      "type": "word",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": " ",
+      "start": 8.16,
+      "end": 8.2,
+      "type": "spacing",
+      "logprob": -1.4305104514278355e-06
+    },
+    {
+      "text": "a",
+      "start": 8.2,
+      "end": 8.26,
+      "type": "word",
+      "logprob": -1.4305104514278355e-06
+    },
+    {
+      "text": " ",
+      "start": 8.26,
+      "end": 8.3,
+      "type": "spacing",
+      "logprob": -2.9802276912960224e-06
+    },
+    {
+      "text": "closed",
+      "start": 8.3,
+      "end": 8.7,
+      "type": "word",
+      "logprob": -2.9802276912960224e-06
+    },
+    {
+      "text": " ",
+      "start": 8.7,
+      "end": 8.76,
+      "type": "spacing",
+      "logprob": -8.106198947643861e-06
+    },
+    {
+      "text": "jar.",
+      "start": 8.76,
+      "end": 9.12,
+      "type": "word",
+      "logprob": -6.705497185066633e-06
+    },
+    {
+      "text": " ",
+      "start": 9.12,
+      "end": 9.12,
+      "type": "spacing",
+      "logprob": -7.152555099310121e-07
+    },
+    {
+      "text": "The",
+      "start": 9.76,
+      "end": 9.86,
+      "type": "word",
+      "logprob": -7.152555099310121e-07
+    },
+    {
+      "text": " ",
+      "start": 9.86,
+      "end": 9.94,
+      "type": "spacing",
+      "logprob": 0.0
+    },
+    {
+      "text": "air",
+      "start": 9.94,
+      "end": 10.12,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": " ",
+      "start": 10.12,
+      "end": 10.16,
+      "type": "spacing",
+      "logprob": 0.0
+    },
+    {
+      "text": "was",
+      "start": 10.16,
+      "end": 10.28,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": " ",
+      "start": 10.28,
+      "end": 10.38,
+      "type": "spacing",
+      "logprob": -1.5497195136049413e-06
+    },
+    {
+      "text": "spent.",
+      "start": 10.38,
+      "end": 10.84,
+      "type": "word",
+      "logprob": -1.4305103756366104e-06
+    },
+    {
+      "text": " ",
+      "start": 10.84,
+      "end": 10.84,
+      "type": "spacing",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": "He",
+      "start": 11.64,
+      "end": 11.74,
+      "type": "word",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": " ",
+      "start": 11.74,
+      "end": 11.82,
+      "type": "spacing",
+      "logprob": -1.7881233361549675e-05
+    },
+    {
+      "text": "slipped",
+      "start": 11.82,
+      "end": 12.08,
+      "type": "word",
+      "logprob": -1.7881233361549675e-05
+    },
+    {
+      "text": " ",
+      "start": 12.08,
+      "end": 12.12,
+      "type": "spacing",
+      "logprob": 0.0
+    },
+    {
+      "text": "in",
+      "start": 12.12,
+      "end": 12.18,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": " ",
+      "start": 12.18,
+      "end": 12.22,
+      "type": "spacing",
+      "logprob": -2.3841855067985307e-07
+    },
+    {
+      "text": "a",
+      "start": 12.22,
+      "end": 12.28,
+      "type": "word",
+      "logprob": -2.3841855067985307e-07
+    },
+    {
+      "text": " ",
+      "start": 12.28,
+      "end": 12.32,
+      "type": "spacing",
+      "logprob": -0.0003069168305955827
+    },
+    {
+      "text": "sprig",
+      "start": 12.32,
+      "end": 12.6,
+      "type": "word",
+      "logprob": -0.00018415009835734964
+    },
+    {
+      "text": " ",
+      "start": 12.6,
+      "end": 12.64,
+      "type": "spacing",
+      "logprob": 0.0
+    },
+    {
+      "text": "of",
+      "start": 12.64,
+      "end": 12.74,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": " ",
+      "start": 12.74,
+      "end": 12.8,
+      "type": "spacing",
+      "logprob": -5.960462772236497e-07
+    },
+    {
+      "text": "mint",
+      "start": 12.8,
+      "end": 13.08,
+      "type": "word",
+      "logprob": -5.960462772236497e-07
+    },
+    {
+      "text": " ",
+      "start": 13.08,
+      "end": 13.12,
+      "type": "spacing",
+      "logprob": -2.777537883957848e-05
+    },
+    {
+      "text": "and",
+      "start": 13.12,
+      "end": 13.22,
+      "type": "word",
+      "logprob": -2.777537883957848e-05
+    },
+    {
+      "text": " ",
+      "start": 13.22,
+      "end": 13.32,
+      "type": "spacing",
+      "logprob": -2.3841830625315197e-06
+    },
+    {
+      "text": "waited",
+      "start": 13.32,
+      "end": 13.76,
+      "type": "word",
+      "logprob": -2.3841830625315197e-06
+    },
+    {
+      "text": " ",
+      "start": 13.76,
+      "end": 13.82,
+      "type": "spacing",
+      "logprob": -0.0008044582791626453
+    },
+    {
+      "text": "10",
+      "start": 13.82,
+      "end": 14.08,
+      "type": "word",
+      "logprob": -1.1920927533992653e-07
+    },
+    {
+      "text": " ",
+      "start": 14.08,
+      "end": 14.18,
+      "type": "spacing",
+      "logprob": -3.3378546504536644e-06
+    },
+    {
+      "text": "days,",
+      "start": 14.18,
+      "end": 14.66,
+      "type": "word",
+      "logprob": -0.1151914715723251
+    },
+    {
+      "text": " ",
+      "start": 14.66,
+      "end": 15.28,
+      "type": "spacing",
+      "logprob": -3.576272320060525e-06
+    },
+    {
+      "text": "then",
+      "start": 15.28,
+      "end": 15.4,
+      "type": "word",
+      "logprob": -3.576272320060525e-06
+    },
+    {
+      "text": " ",
+      "start": 15.4,
+      "end": 15.44,
+      "type": "spacing",
+      "logprob": -3.576278118089249e-07
+    },
+    {
+      "text": "a",
+      "start": 15.44,
+      "end": 15.52,
+      "type": "word",
+      "logprob": -3.576278118089249e-07
+    },
+    {
+      "text": " ",
+      "start": 15.52,
+      "end": 15.58,
+      "type": "spacing",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": "fresh",
+      "start": 15.58,
+      "end": 15.82,
+      "type": "word",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": " ",
+      "start": 15.82,
+      "end": 15.92,
+      "type": "spacing",
+      "logprob": -2.861018856492592e-06
+    },
+    {
+      "text": "candle",
+      "start": 15.92,
+      "end": 16.28,
+      "type": "word",
+      "logprob": -2.861018856492592e-06
+    },
+    {
+      "text": " ",
+      "start": 16.28,
+      "end": 16.44,
+      "type": "spacing",
+      "logprob": -0.018350357189774513
+    },
+    {
+      "text": "burned",
+      "start": 16.44,
+      "end": 16.82,
+      "type": "word",
+      "logprob": -0.018350357189774513
+    },
+    {
+      "text": " ",
+      "start": 16.82,
+      "end": 16.9,
+      "type": "spacing",
+      "logprob": -4.768370445162873e-07
+    },
+    {
+      "text": "perfectly",
+      "start": 16.9,
+      "end": 17.44,
+      "type": "word",
+      "logprob": -4.768370445162873e-07
+    },
+    {
+      "text": " ",
+      "start": 17.44,
+      "end": 17.5,
+      "type": "spacing",
+      "logprob": -1.6689286894688848e-06
+    },
+    {
+      "text": "well.",
+      "start": 17.5,
+      "end": 17.78,
+      "type": "word",
+      "logprob": -1.3589848080641786e-06
+    },
+    {
+      "text": " ",
+      "start": 17.78,
+      "end": 17.78,
+      "type": "spacing",
+      "logprob": -9.536738616588991e-07
+    },
+    {
+      "text": "The",
+      "start": 18.66,
+      "end": 18.76,
+      "type": "word",
+      "logprob": -9.536738616588991e-07
+    },
+    {
+      "text": " ",
+      "start": 18.76,
+      "end": 18.82,
+      "type": "spacing",
+      "logprob": -3.6954811548639555e-06
+    },
+    {
+      "text": "plant",
+      "start": 18.82,
+      "end": 19.32,
+      "type": "word",
+      "logprob": -3.6954811548639555e-06
+    },
+    {
+      "text": " ",
+      "start": 19.32,
+      "end": 19.7,
+      "type": "spacing",
+      "logprob": 0.0
+    },
+    {
+      "text": "had",
+      "start": 19.7,
+      "end": 19.9,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": " ",
+      "start": 19.9,
+      "end": 19.98,
+      "type": "spacing",
+      "logprob": -3.182837463100441e-05
+    },
+    {
+      "text": "remade",
+      "start": 19.98,
+      "end": 20.68,
+      "type": "word",
+      "logprob": -1.6927465253502305e-05
+    },
+    {
+      "text": " ",
+      "start": 20.68,
+      "end": 20.68,
+      "type": "spacing",
+      "logprob": 0.0
+    },
+    {
+      "text": "the",
+      "start": 20.68,
+      "end": 20.84,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": " ",
+      "start": 20.84,
+      "end": 20.94,
+      "type": "spacing",
+      "logprob": -6.794906312279636e-06
+    },
+    {
+      "text": "air",
+      "start": 20.94,
+      "end": 21.14,
+      "type": "word",
+      "logprob": -6.794906312279636e-06
+    }
+  ],
+  "transcription_id": "MmVRnI2iZ4jk4A5Ss4eL",
+  "audio_duration_secs": 21.2
+}

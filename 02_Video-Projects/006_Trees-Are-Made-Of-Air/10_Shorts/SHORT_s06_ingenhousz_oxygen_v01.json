@@ -1,0 +1,226 @@
+{
+  "id": "s06_ingenhousz_oxygen",
+  "job": "J0533",
+  "test": "B (search-titled)",
+  "air_date_draft": "2026-12-22",
+  "file": "10_Shorts/hos_006_s06_ingenhousz_oxygen_v01.mp4",
+  "sha256": "3daf38e7f3f5becb5e63c838fba6dfdf1d662ef3f6782cd55961d8b992cd11ae",
+  "duration_s": 25.333,
+  "vo_source": "02_Voiceover/part04_bubbles_in_the_sunlight_v01_raw.mp3",
+  "vo_take_indices": [
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134
+  ],
+  "dropped": [
+    "It was the gas Priestley had found in seventeen seventy-four, which we now call oxygen. Then came the clue that solved Priestley's puzzle."
+  ],
+  "route": "claim-first lift: Tiny silver bubbles appear on the green leaf and rise to the top. He collected the bubbles and tested the gas. A candle flame burned brighter in it than in ordinary air. Move the jar into the shade, and the bubbles stop. Move it back into the sun, and they start again. Only the green parts made bubbles. Roots and flowers didn't. (50\u201381, 105\u2013134 from Part 04)",
+  "vo_s": 24.756,
+  "words": 62,
+  "max_pause_s": 0.28,
+  "atempo": 1.05,
+  "bed": "hos006_s06_synth_pad_v01.wav (own synthesis, 0 credits)",
+  "bed_gain_db": -24.5,
+  "hook": "LEAF IN SUN",
+  "hook_layer": {
+    "font_size": 243,
+    "cap_px": 173,
+    "cap_pct": 9.01,
+    "lines": 3,
+    "block_pct": [
+      33.6,
+      66.4
+    ],
+    "widest_pct": 65.0
+  },
+  "who_card": {
+    "name": "JAN INGENHOUSZ",
+    "line2": "Near London, 1779",
+    "line1_px": 69,
+    "line1_pct_of_band": 11.3,
+    "band": [
+      656,
+      1264
+    ],
+    "in_s": 4.6,
+    "out_s": 8.2,
+    "fade_s": 0.35
+  },
+  "title_on_screen": "The Willow Tree That Was Made of Air",
+  "youtube_title_draft": "How Do Plants Make Oxygen?",
+  "plan": [
+    {
+      "t0": 0.0,
+      "t1": 3.046,
+      "plate": "04_Generated-Clips/part04/raw/v01/05_bubbles_macro_t1.mp4",
+      "in_s": 0.6,
+      "crop_x": 656,
+      "lands_on": 0
+    },
+    {
+      "t0": 3.046,
+      "t1": 4.773,
+      "plate": "04_Generated-Clips/part04/raw/v01/03_plunge_leaf_t1.mp4",
+      "in_s": 1.0,
+      "crop_x": 656,
+      "lands_on": "and"
+    },
+    {
+      "t0": 4.773,
+      "t1": 7.917,
+      "plate": "04_Generated-Clips/part04/raw/v01/06_collect_blaze_t3.mp4",
+      "in_s": 0.4,
+      "crop_x": 656,
+      "lands_on": "He"
+    },
+    {
+      "t0": 7.917,
+      "t1": 12.33,
+      "plate": "04_Generated-Clips/part03/raw/v01/11_candle_tall_t1.mp4",
+      "in_s": 0.5,
+      "crop_x": 656,
+      "lands_on": "A"
+    },
+    {
+      "t0": 12.33,
+      "t1": 16.414,
+      "plate": "04_Generated-Clips/part03/raw/v01/18_dark_window_t1.mp4",
+      "in_s": 0.5,
+      "crop_x": 656,
+      "lands_on": "Move"
+    },
+    {
+      "t0": 16.414,
+      "t1": 20.087,
+      "plate": "04_Generated-Clips/part04/raw/v01/12_shutters_open_t1.mp4",
+      "in_s": 0.5,
+      "crop_x": 656,
+      "lands_on": "Move"
+    },
+    {
+      "t0": 20.087,
+      "t1": 22.306,
+      "plate": "04_Generated-Clips/part04/raw/v01/10_only_green_t2.mp4",
+      "in_s": 0.5,
+      "crop_x": 656,
+      "lands_on": "Only"
+    },
+    {
+      "t0": 22.306,
+      "t1": 25.306,
+      "plate": "04_Generated-Clips/part04/raw/v01/05_bubbles_macro_t1.mp4",
+      "in_s": 0.6,
+      "crop_x": 656,
+      "lands_on": "loop"
+    }
+  ],
+  "captions": 19,
+  "caption_check": {
+    "ok": true,
+    "changes": 19,
+    "ratio": 1.0
+  },
+  "gate": {
+    "exit": 0,
+    "output": "PASS  hos_006_s06_ingenhousz_oxygen_v01.mp4  dur=25.33s  audio=-24.8dB  motion=15.38  dhash=9296173351587f6c\n   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_006_s06_ingenhousz_oxygen_v01_open_sheet.jpg"
+  },
+  "vo_check": {
+    "exit": 0,
+    "output": "PASS  hos_006_s06_ingenhousz_oxygen_v01.mp4  0:25.33  mean -24.8 dB  peak -4.9 dB  147 wpm"
+  },
+  "freezedetect_starts": [],
+  "qa": {
+    "polish_gate": {
+      "exit": 0,
+      "output": "polish gate PASS: 0 of 8 rows failed, 0 to look at -> 02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/qa_s06_ingenhousz_oxygen_v01/polish_gate_s06_ingenhousz_oxygen_v01.json"
+    },
+    "picture_qa": {
+      "exit": 0,
+      "output": "picture QA PASS: 0 of 8 cuts fail, 0 to look at -> 02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/qa_s06_ingenhousz_oxygen_v01/picture_qa_s06_ingenhousz_oxygen_v01/PICTURE_QA.md"
+    }
+  },
+  "stills": [
+    "10_Shorts/_work_s06_ingenhousz_oxygen_v01/hos_006_s06_ingenhousz_oxygen_v01_t000.0.jpg",
+    "10_Shorts/_work_s06_ingenhousz_oxygen_v01/hos_006_s06_ingenhousz_oxygen_v01_t005.8.jpg",
+    "10_Shorts/_work_s06_ingenhousz_oxygen_v01/hos_006_s06_ingenhousz_oxygen_v01_t011.5.jpg",
+    "10_Shorts/_work_s06_ingenhousz_oxygen_v01/hos_006_s06_ingenhousz_oxygen_v01_t017.5.jpg",
+    "10_Shorts/_work_s06_ingenhousz_oxygen_v01/hos_006_s06_ingenhousz_oxygen_v01_t024.3.jpg"
+  ],
+  "icloud": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/006_Trees-Are-Made-Of-Air/10_Shorts/hos_006_s06_ingenhousz_oxygen_v01.mp4",
+  "autocomplete_check": {
+    "date": "2026-10-18",
+    "source": "suggestqueries client=youtube ds=yt gl=GB signed-out",
+    "hits": [
+      "how do plants make oxygen",
+      "how do plants produce oxygen",
+      "how do plants create oxygen",
+      "where does oxygen come from",
+      "who discovered photosynthesis",
+      "how do plants breathe at night"
+    ],
+    "note": "'how do plants make oxygen', 'how do plants produce oxygen', 'where does oxygen come from', and 'who discovered photosynthesis' are exact signed-out GB YouTube autocomplete hits. Title draft 'How Do Plants Make Oxygen?' (with 'How Do Plants Produce Oxygen?' and 'Who Discovered Photosynthesis?' as exact-autocomplete alternatives) is answered directly by the lifted Part 04 VO: Jan Ingenhousz's 1779 underwater leaf jars showing tiny silver oxygen bubbles rising in sunlight, making a candle flame burn brighter than in ordinary air, stopping in the shade, and forming only on the green parts. Chief's call."
+  },
+  "air_date_draft_note": "2026-12-22 used for the gate only; slot is Chief's call.",
+  "who_card_note": "card JAN INGENHOUSZ \u00b7 Near London, 1779 on screen 4.6\u20138.2 s (3.6 s) right as 'He collected the bubbles and tested the gas.' is spoken. Clear of the 0\u20132 s hook, the 9\u201314 s title, and the last 3.0 s CTA.",
+  "overlap_note": "No VO overlap with 006 s04_photosynthesis (Part 05 de Saussure / leaf pores to sugar to wood) or s05_charcoal_gas (Part 02 van Helmont 62 lb charcoal \u2192 1 lb ash): this is the first built Short lifted from 006 Part 04 (Jan Ingenhousz's 1779 underwater leaf bubbles, candle flame test for oxygen, sun vs shade, and green parts only)."
+}

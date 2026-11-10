@@ -1,0 +1,166 @@
+{
+ "pulled": "2026-10-20",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "how does soap work",
+  "surface tension"
+ ],
+ "autocomplete": {
+  "how does soap work": [
+   "how does soap work",
+   "how does soap work chemistry",
+   "how does soap work class 10",
+   "how does soap work animation",
+   "how does soap work residency",
+   "how does soap work in hindi",
+   "how does detergent work",
+   "how does detergent work in washing machine",
+   "how does detergent work chemistry",
+   "how does dish soap work"
+  ],
+  "surface tension": [
+   "surface tension minecraft",
+   "surface tension",
+   "surface tension animatic",
+   "surface tension smp",
+   "surface tension squiddo",
+   "surface tension saparata",
+   "surface tension minecraft schpood",
+   "surface tension react to",
+   "surface tension class 11",
+   "surface tension experiment"
+  ]
+ },
+ "sharedTitleWords": [
+  "surface tension",
+  "to make",
+  "chemistry khan",
+  "khan academy"
+ ],
+ "neighbours": [
+  {
+   "id": "x7KKkElpyKQ",
+   "title": "Which is better: Soap or hand sanitizer? - Alex Rosenthal and Pall Thordarson",
+   "channel": "TED-Ed",
+   "views": "5,565,595 views",
+   "age": "6 yr ago",
+   "length": "6:15",
+   "tier": 1,
+   "viewCount": 5565595,
+   "foundBy": "how does soap work",
+   "onTopic": true
+  },
+  {
+   "id": "UukRgqzk-KE",
+   "title": "Why does ice float in water? - George Zaidan and Charles Morton",
+   "channel": "TED-Ed",
+   "views": "2,039,573 views",
+   "age": "12 yr ago",
+   "length": "3:56",
+   "tier": 1,
+   "viewCount": 2039573,
+   "foundBy": "ted-ed surface tension",
+   "onTopic": true
+  },
+  {
+   "id": "awhOrqGb-TU",
+   "title": "How to make your stress work for you - Shannon Odell",
+   "channel": "TED-Ed",
+   "views": "674,853 views",
+   "age": "1 yr ago",
+   "length": "5:29",
+   "tier": 1,
+   "viewCount": 674853,
+   "foundBy": "ted-ed how does soap work",
+   "onTopic": true
+  },
+  {
+   "id": "ez7HOFKTtH0",
+   "title": "The fascinating science of bubbles, from soap to champagne | Li Wei Tan",
+   "channel": "TED",
+   "views": "109,995 views",
+   "age": "7 yr ago",
+   "length": "14:18",
+   "tier": 1,
+   "viewCount": 109995,
+   "foundBy": "how does soap work ted",
+   "onTopic": true
+  },
+  {
+   "id": "WsksFbFZeeU",
+   "title": "7 Science Tricks with Surface Tension",
+   "channel": "Physics Girl",
+   "views": "12,296,385 views",
+   "age": "11 yr ago",
+   "length": "3:28",
+   "tier": 2,
+   "viewCount": 12296385,
+   "foundBy": "surface tension",
+   "onTopic": true
+  },
+  {
+   "id": "_RTF0DAHBBM",
+   "title": "Surface tension | States of matter and intermolecular forces | Chemistry | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "421,839 views",
+   "age": "11 yr ago",
+   "length": "4:30",
+   "tier": 2,
+   "viewCount": 421839,
+   "foundBy": "surface tension ted",
+   "onTopic": true
+  },
+  {
+   "id": "XntinCBEC9U",
+   "title": "How Do Soap and Water Make Us Clean? | Chemistry for Kids",
+   "channel": "SciShow Kids",
+   "views": "318,653 views",
+   "age": "11 yr ago",
+   "length": "3:27",
+   "tier": 2,
+   "viewCount": 318653,
+   "foundBy": "how does soap work",
+   "onTopic": true
+  },
+  {
+   "id": "IzEottrT5XA",
+   "title": "Hydrolysis & How It Is Used To Make Soaps | Organic Chemistry | Chemistry | FuseSchool",
+   "channel": "FuseSchool - Global Education",
+   "views": "86,815 views",
+   "age": "12 yr ago",
+   "length": "4:01",
+   "tier": 2,
+   "viewCount": 86815,
+   "foundBy": "how does soap work",
+   "onTopic": true
+  },
+  {
+   "id": "4ELxJ53mMHE",
+   "title": "Surface tension | Middle school chemistry | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "73,861 views",
+   "age": "1 yr ago",
+   "length": "5:13",
+   "tier": 2,
+   "viewCount": 73861,
+   "foundBy": "surface tension",
+   "onTopic": true
+  },
+  {
+   "id": "tScRXq78tzw",
+   "title": "The answer? Soap: Erin Zaikis at TEDxLafayetteCollege",
+   "channel": "TEDx Talks",
+   "views": "4,595 views",
+   "age": "12 yr ago",
+   "length": "11:23",
+   "tier": 1,
+   "viewCount": 4595,
+   "foundBy": "how does soap work ted",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 3,
+ "gate": "PASS",
+ "hasTed": true,
+ "failedQueries": []
+}

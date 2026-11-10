@@ -1,0 +1,31 @@
+1
+00:00:00,080 --> 00:00:02,420
+In one minute, the moon falls about as far
+
+2
+00:00:02,480 --> 00:00:04,580
+as an apple falls in one second.
+
+3
+00:00:05,560 --> 00:00:07,120
+Isaac Newton worked out why.
+
+4
+00:00:08,260 --> 00:00:10,540
+The moon is 60 times further from the
+
+5
+00:00:10,600 --> 00:00:12,980
+Earth's center than we are, so the pull on
+
+6
+00:00:13,060 --> 00:00:15,300
+it is 60 times 60 weaker,
+
+7
+00:00:16,360 --> 00:00:20,960
+3,600 times, and the numbers matched. One
+
+8
+00:00:21,060 --> 00:00:23,300
+pull for apples and moons

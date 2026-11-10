@@ -1,0 +1,57 @@
+[
+  {
+    "row": "s01_01_candle_jar_v01",
+    "timeline_in": 0.0,
+    "timeline_out": 5.14,
+    "source": "01_candle_jar_v01.jpg",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  },
+  {
+    "row": "s02_01_candle_jar_v01",
+    "timeline_in": 5.14,
+    "timeline_out": 10.42,
+    "source": "01_candle_jar_v01.jpg#b2",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 5.14
+    },
+    "video": true
+  },
+  {
+    "row": "s03_03_mint_sprig_v01",
+    "timeline_in": 10.42,
+    "timeline_out": 13.84,
+    "source": "03_mint_sprig_v01.jpg",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 10.42
+    },
+    "video": true
+  },
+  {
+    "row": "s04_04_candle_bright_v01",
+    "timeline_in": 13.84,
+    "timeline_out": 17.34,
+    "source": "04_candle_bright_v01.jpg",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 13.84
+    },
+    "video": true
+  },
+  {
+    "row": "s05_01_candle_jar_v01",
+    "timeline_in": 17.34,
+    "timeline_out": 19.94,
+    "source": "end_card_loop_01_candle_jar_v01.jpg",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 17.34
+    },
+    "video": true
+  }
+]

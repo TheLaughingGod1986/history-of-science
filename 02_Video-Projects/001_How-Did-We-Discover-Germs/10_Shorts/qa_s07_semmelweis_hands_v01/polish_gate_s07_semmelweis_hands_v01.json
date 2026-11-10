@@ -1,0 +1,202 @@
+{
+  "rule": {
+    "low_detail": "FAIL: luma std < 13.44 and edge density < 0.0259 (absolute floor); WARN: luma std < 18.0 or edge density < film p5",
+    "split_panel": "full-height/width seam or gutter",
+    "split_panel_gutter": "gutter counts only with edge density >= 0.01 in the 10% band on both sides",
+    "near_black": "mean < 28.0 or p95 < 50.0",
+    "noise": "grain std > 6 over structure std < 12, and the 8x-downscaled frame under the low-detail floor (std < 13.44 and edge density < 0.0259)",
+    "jitter": "centre-patch phase correlation: reversal against trend or > 0.35 px off trend"
+  },
+  "low_detail_floor": {
+    "std": 13.44,
+    "edge": 0.0259,
+    "calibration": {
+      "video": "025_MarsRobot_full_rough_v02d.mp4",
+      "factor": 1.2,
+      "frames": [
+        {
+          "source": "PIA22223.jpg",
+          "t": 201.0,
+          "std": 12.1,
+          "edge": 0.0223
+        },
+        {
+          "source": "PIA22223.jpg",
+          "t": 216.3,
+          "std": 11.2,
+          "edge": 0.0216
+        },
+        {
+          "source": "PIA22929.jpg",
+          "t": 297.4,
+          "std": 26.54,
+          "edge": 0.5735
+        }
+      ]
+    }
+  },
+  "video": "02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/hos_001_s07_semmelweis_hands_v01.mp4",
+  "edge_floor": 0.0252,
+  "verdict": "PASS",
+  "failed": [],
+  "warn": [
+    {
+      "row": "s04_stopping",
+      "cut": 3,
+      "t": 9.04,
+      "source": "08_prestige_hands_v01.mp4",
+      "why": [
+        "low detail: edge density 0.0215 < film p5 0.0252"
+      ]
+    }
+  ],
+  "reviewed_ok": [],
+  "rows": [
+    {
+      "cut": 0,
+      "row": "s01_0",
+      "source": "05_wash_works_v03.mp4",
+      "t": 0.92,
+      "std": 58.57,
+      "mean": 107.52,
+      "p95": 209.0,
+      "edge": 0.0602,
+      "hf": 14.25,
+      "lf": 52.66,
+      "std8": 54.4,
+      "edge8": 0.2639,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 1,
+      "row": "s02_the",
+      "source": "02_perfume_windows_v02.mp4",
+      "t": 3.15,
+      "std": 77.16,
+      "mean": 109.33,
+      "p95": 238.0,
+      "edge": 0.0351,
+      "hf": 6.73,
+      "lf": 74.86,
+      "std8": 75.98,
+      "edge8": 0.2136,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 2,
+      "row": "s03_If",
+      "source": "03_bedside_hands_v04.mp4",
+      "t": 5.78,
+      "std": 50.36,
+      "mean": 59.76,
+      "p95": 180.0,
+      "edge": 0.0651,
+      "hf": 8.77,
+      "lf": 45.91,
+      "std8": 47.81,
+      "edge8": 0.2173,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 3,
+      "row": "s04_stopping",
+      "source": "08_prestige_hands_v01.mp4",
+      "t": 9.04,
+      "std": 69.87,
+      "mean": 118.8,
+      "p95": 235.0,
+      "edge": 0.0215,
+      "hf": 6.95,
+      "lf": 67.72,
+      "std8": 68.59,
+      "edge8": 0.2054,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0215 < film p5 0.0252"
+      ]
+    },
+    {
+      "cut": 4,
+      "row": "s05_Suddenly",
+      "source": "10_flask_in_the_room_v03.mp4",
+      "t": 12.78,
+      "std": 55.68,
+      "mean": 98.07,
+      "p95": 217.0,
+      "edge": 0.0509,
+      "hf": 9.14,
+      "lf": 52.08,
+      "std8": 53.54,
+      "edge8": 0.283,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 5,
+      "row": "s06_Ignaz",
+      "source": "04_autopsy_to_ward_v14.mp4",
+      "t": 16.49,
+      "std": 58.59,
+      "mean": 82.0,
+      "p95": 240.0,
+      "edge": 0.0562,
+      "hf": 9.63,
+      "lf": 53.38,
+      "std8": 55.65,
+      "edge8": 0.3298,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 6,
+      "row": "s07_childbirth",
+      "source": "07_mocked_v12.mp4",
+      "t": 20.29,
+      "std": 52.82,
+      "mean": 100.47,
+      "p95": 208.0,
+      "edge": 0.0781,
+      "hf": 8.78,
+      "lf": 47.03,
+      "std8": 49.71,
+      "edge8": 0.4274,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 7,
+      "row": "s08_loop",
+      "source": "loop_end_05_wash_works_v03.mp4",
+      "t": 23.66,
+      "std": 56.61,
+      "mean": 111.3,
+      "p95": 201.0,
+      "edge": 0.032,
+      "hf": 7.91,
+      "lf": 54.11,
+      "std8": 55.11,
+      "edge8": 0.1901,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    }
+  ]
+}

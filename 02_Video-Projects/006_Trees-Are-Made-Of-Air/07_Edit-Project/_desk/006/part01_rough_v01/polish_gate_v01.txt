@@ -1,0 +1,13 @@
+01_willow_air     2.1s 01_willow_air_t1.mp4         ok
+02_balance_trunk     5.8s 02_balance_trunk_t1.mp4      ok
+03_pot_jar_leaf    11.1s 03_pot_jar_leaf_t1.mp4       ok
+04_years_pass    17.6s 04_years_pass_t3.mp4         ok
+05_olive_grove    22.4s 05_olive_grove_t1.mp4        ok
+06_aristotle    27.7s 06_aristotle_t1.mp4          ok
+07_roots_mouths    33.1s 07_roots_mouths_t1.mp4       ok
+08_wood_food_air    37.6s 08_wood_food_air_t3.mp4      ok
+09_vilvoorde    42.2s 09_vilvoorde_flowfast_t1.mp4 ok
+10_van_helmont_sack    48.0s 10_van_helmont_sack_t1.mp4   ok
+11_shoot_in_pot    53.6s 11_shoot_in_pot_t1.mp4       WARN low detail: edge density 0.0275 < film p5 0.0305
+12_garden_sky    58.8s 12_garden_sky_t2.mp4         ok
+polish gate PASS: 0 of 12 rows failed, 1 to look at -> /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/_desk/006/part01_rough_v01/polish_gate_v01.json

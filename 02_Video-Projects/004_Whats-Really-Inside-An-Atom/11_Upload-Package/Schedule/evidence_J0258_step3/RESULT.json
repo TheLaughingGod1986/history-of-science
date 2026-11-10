@@ -1,0 +1,52 @@
+{
+  "at": "2026-10-15T17:49:11.640035+00:00",
+  "related": {
+    "short": "29bpGAI0wb8",
+    "want": "GHZDsiH7L7A",
+    "channel": {
+      "href": "https://studio.youtube.com/video/29bpGAI0wb8/edit",
+      "hos": true,
+      "signed_out": false
+    },
+    "before": "None Subtitles",
+    "picker": {
+      "open": true,
+      "via": "shorts-content-links-picker",
+      "dialog": true
+    },
+    "search": "ytcp-video-pick-dialog input",
+    "cards": [
+      "What's Really Inside an Atom?",
+      "Invisible life is still everywhere",
+      "The first X-ray showed a wedding ring",
+      "How did R\u00f6ntgen see bones without cutting",
+      "How X-rays Were Discovered by Accident",
+      "How Did We Discover X-rays?",
+      "What other table has empty chairs?",
+      "Why tellurium sat before iodine"
+    ],
+    "picked": "What's Really Inside an Atom?",
+    "after_pick": "What's Really Inside an Atom? Subtitles",
+    "save": {
+      "clicked": true,
+      "toast": true,
+      "trouble": false
+    },
+    "readback": "What's Really Inside an Atom? Subtitles",
+    "ok": true,
+    "status": "set"
+  },
+  "pin": {
+    "vid": "GHZDsiH7L7A",
+    "ok": false,
+    "channel": {
+      "href": "https://studio.youtube.com/video/GHZDsiH7L7A/comments",
+      "hos": false,
+      "signed_out": false
+    },
+    "has_text": false,
+    "already_pinned": false,
+    "search_err": "TimeoutError",
+    "status": "comment_missing"
+  }
+}

@@ -1,0 +1,98 @@
+[
+  {
+    "command": [
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "00_Brand/Channel-Setup/tools/style_sheet.py",
+      "short",
+      "/Users/benjaminoats/YouTube/History Of Science/docs/STANDALONE_SHORTS_TEST_2026-10/covers_j0209_v01/hos_sa_s1_cover_v01.png",
+      "--out",
+      "/Users/benjaminoats/YouTube/History Of Science/docs/STANDALONE_SHORTS_TEST_2026-10/covers_j0209_v01/hos_sa_s1_cover_v01_style.jpg"
+    ],
+    "exit": 0,
+    "output": "/Users/benjaminoats/YouTube/History Of Science/docs/STANDALONE_SHORTS_TEST_2026-10/covers_j0209_v01/hos_sa_s1_cover_v01_style.jpg  (1 new vs 8 live short references)\n"
+  },
+  {
+    "command": [
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "00_Brand/Channel-Setup/tools/thumb_preview.py",
+      "short",
+      "/Users/benjaminoats/YouTube/History Of Science/docs/STANDALONE_SHORTS_TEST_2026-10/covers_j0209_v01/hos_sa_s1_cover_v01.png",
+      "--out",
+      "/Users/benjaminoats/YouTube/History Of Science/docs/STANDALONE_SHORTS_TEST_2026-10/covers_j0209_v01/hos_sa_s1_cover_v01_phone.jpg"
+    ],
+    "exit": 0,
+    "output": "/Users/benjaminoats/YouTube/History Of Science/docs/STANDALONE_SHORTS_TEST_2026-10/covers_j0209_v01/hos_sa_s1_cover_v01_phone.jpg\n"
+  },
+  {
+    "command": [
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "00_Brand/Channel-Setup/tools/style_sheet.py",
+      "short",
+      "/Users/benjaminoats/YouTube/History Of Science/docs/STANDALONE_SHORTS_TEST_2026-10/covers_j0209_v01/hos_sa_s2_cover_v01.png",
+      "--out",
+      "/Users/benjaminoats/YouTube/History Of Science/docs/STANDALONE_SHORTS_TEST_2026-10/covers_j0209_v01/hos_sa_s2_cover_v01_style.jpg"
+    ],
+    "exit": 0,
+    "output": "/Users/benjaminoats/YouTube/History Of Science/docs/STANDALONE_SHORTS_TEST_2026-10/covers_j0209_v01/hos_sa_s2_cover_v01_style.jpg  (1 new vs 8 live short references)\n"
+  },
+  {
+    "command": [
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "00_Brand/Channel-Setup/tools/thumb_preview.py",
+      "short",
+      "/Users/benjaminoats/YouTube/History Of Science/docs/STANDALONE_SHORTS_TEST_2026-10/covers_j0209_v01/hos_sa_s2_cover_v01.png",
+      "--out",
+      "/Users/benjaminoats/YouTube/History Of Science/docs/STANDALONE_SHORTS_TEST_2026-10/covers_j0209_v01/hos_sa_s2_cover_v01_phone.jpg"
+    ],
+    "exit": 0,
+    "output": "/Users/benjaminoats/YouTube/History Of Science/docs/STANDALONE_SHORTS_TEST_2026-10/covers_j0209_v01/hos_sa_s2_cover_v01_phone.jpg\n"
+  },
+  {
+    "command": [
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "00_Brand/Channel-Setup/tools/style_sheet.py",
+      "short",
+      "/Users/benjaminoats/YouTube/History Of Science/docs/STANDALONE_SHORTS_TEST_2026-10/covers_j0209_v01/hos_sa_s3_cover_v01.png",
+      "--out",
+      "/Users/benjaminoats/YouTube/History Of Science/docs/STANDALONE_SHORTS_TEST_2026-10/covers_j0209_v01/hos_sa_s3_cover_v01_style.jpg"
+    ],
+    "exit": 0,
+    "output": "/Users/benjaminoats/YouTube/History Of Science/docs/STANDALONE_SHORTS_TEST_2026-10/covers_j0209_v01/hos_sa_s3_cover_v01_style.jpg  (1 new vs 8 live short references)\n"
+  },
+  {
+    "command": [
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "00_Brand/Channel-Setup/tools/thumb_preview.py",
+      "short",
+      "/Users/benjaminoats/YouTube/History Of Science/docs/STANDALONE_SHORTS_TEST_2026-10/covers_j0209_v01/hos_sa_s3_cover_v01.png",
+      "--out",
+      "/Users/benjaminoats/YouTube/History Of Science/docs/STANDALONE_SHORTS_TEST_2026-10/covers_j0209_v01/hos_sa_s3_cover_v01_phone.jpg"
+    ],
+    "exit": 0,
+    "output": "/Users/benjaminoats/YouTube/History Of Science/docs/STANDALONE_SHORTS_TEST_2026-10/covers_j0209_v01/hos_sa_s3_cover_v01_phone.jpg\n"
+  },
+  {
+    "command": [
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "00_Brand/Channel-Setup/tools/style_sheet.py",
+      "short",
+      "/Users/benjaminoats/YouTube/History Of Science/docs/STANDALONE_SHORTS_TEST_2026-10/covers_j0209_v01/hos_sa_s4_cover_v01.png",
+      "--out",
+      "/Users/benjaminoats/YouTube/History Of Science/docs/STANDALONE_SHORTS_TEST_2026-10/covers_j0209_v01/hos_sa_s4_cover_v01_style.jpg"
+    ],
+    "exit": 0,
+    "output": "/Users/benjaminoats/YouTube/History Of Science/docs/STANDALONE_SHORTS_TEST_2026-10/covers_j0209_v01/hos_sa_s4_cover_v01_style.jpg  (1 new vs 8 live short references)\n"
+  },
+  {
+    "command": [
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "00_Brand/Channel-Setup/tools/thumb_preview.py",
+      "short",
+      "/Users/benjaminoats/YouTube/History Of Science/docs/STANDALONE_SHORTS_TEST_2026-10/covers_j0209_v01/hos_sa_s4_cover_v01.png",
+      "--out",
+      "/Users/benjaminoats/YouTube/History Of Science/docs/STANDALONE_SHORTS_TEST_2026-10/covers_j0209_v01/hos_sa_s4_cover_v01_phone.jpg"
+    ],
+    "exit": 0,
+    "output": "/Users/benjaminoats/YouTube/History Of Science/docs/STANDALONE_SHORTS_TEST_2026-10/covers_j0209_v01/hos_sa_s4_cover_v01_phone.jpg\n"
+  }
+]

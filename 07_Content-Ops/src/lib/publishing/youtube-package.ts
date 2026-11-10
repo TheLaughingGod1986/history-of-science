@@ -6,6 +6,19 @@ import {
   type AffiliateDescriptionLink,
 } from "@/lib/affiliate/description";
 
+/** Social copy for a channel's Buffer mirror (hook, question, thumbnail alt text, Reel cover). Lives here, in the
+ *  shared package loader, so the manifest field is typed the same on both channels; Orbit's buffer-mirror re-exports it. */
+export type SocialCopy = {
+  /** First line of every post, written for the feed. Default: the YouTube title. */
+  hook?: string;
+  /** Closing question, to start the comments. */
+  question?: string;
+  /** What the thumbnail shows, for screen readers. Default: names the film. */
+  alt?: string;
+  /** Instagram Reel cover: this many ms into the video. */
+  coverMs?: number;
+};
+
 export type YouTubePackageManifest = {
   format?: "longform" | "shorts";
   video?: string;
@@ -30,7 +43,13 @@ export type YouTubePackageManifest = {
   relatedVideoId?: string;
   privacy?: "private" | "public" | "unlisted";
   madeForKids?: boolean;
+  /** Shorts only: the one Chief-OK'd 50–60 s length-test Short; the ship gate runs with `--length-test`. */
+  lengthTest?: boolean;
   categoryId?: string;
+  /** Buffer mirror copy: hook, question, thumbnail alt text, Reel cover (ms). */
+  social?: SocialCopy;
+  /** Long: vertical trailer (30–60 s) posted as the Instagram and Facebook Reel. Default: Trailer/*.mp4. */
+  trailer?: string;
 };
 
 export type ResolvedYouTubePackage = {
@@ -49,6 +68,9 @@ export type ResolvedYouTubePackage = {
   relatedVideoId: string | null;
   privacy: "private" | "public" | "unlisted";
   madeForKids: boolean;
+  lengthTest: boolean;
+  social: SocialCopy | null;
+  trailerPath: string | null;
   sources: Record<string, string>;
 };
 
@@ -251,10 +273,10 @@ export function buildStudioFinishChecklist(input: {
         : input.relatedVideoId
           ? "pending_studio"
           : "pending_studio",
-    title: "Related / watch next (full film)",
+    title: "Related video (full film)",
     detail: input.relatedVideoId
-      ? `Set Related video to ${input.relatedVideoId} in Studio (Shorts)`
-      : "Set Related → parent long-form in Studio after long is public",
+      ? `Desktop Studio: set Related video to ${input.relatedVideoId} (its own full film). No new Short pins.`
+      : "Desktop Studio: Content → Short → Related video → its own full film (once that long is public) → Save. Required. No new Short pins.",
     studioUrlHint: studioEditUrl || undefined,
   });
 
@@ -441,6 +463,17 @@ export function loadYouTubePackage(input: {
     .map((p) => (path.isAbsolute(p) ? p : path.resolve(packageDir, p)))
     .filter((p) => fs.existsSync(p));
 
+  let trailerPath: string | null = null;
+  if (format === "longform") {
+    trailerPath = merged.trailer
+      ? path.isAbsolute(merged.trailer)
+        ? merged.trailer
+        : path.resolve(packageDir, merged.trailer)
+      : findInSubdir(packageDir, "Trailer", [(n) => /\.(mp4|mov)$/i.test(n)]);
+    if (trailerPath && !fs.existsSync(trailerPath)) throw new Error(`Trailer not found: ${trailerPath}`);
+    if (trailerPath) sources.trailer = trailerPath;
+  }
+
   let scheduledAt: Date | null = null;
   if (merged.schedule) {
     scheduledAt = new Date(merged.schedule);
@@ -465,6 +498,9 @@ export function loadYouTubePackage(input: {
     relatedVideoId: merged.relatedVideoId || null,
     privacy: merged.privacy || "private",
     madeForKids: merged.madeForKids ?? false,
+    lengthTest: format === "shorts" && merged.lengthTest === true,
+    social: merged.social ?? null,
+    trailerPath,
     sources,
   };
 }

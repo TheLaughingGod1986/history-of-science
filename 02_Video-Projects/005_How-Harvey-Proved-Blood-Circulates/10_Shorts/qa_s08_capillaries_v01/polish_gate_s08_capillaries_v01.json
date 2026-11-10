@@ -1,0 +1,184 @@
+{
+  "rule": {
+    "low_detail": "FAIL: luma std < 13.44 and edge density < 0.0259 (absolute floor); WARN: luma std < 18.0 or edge density < film p5",
+    "split_panel": "full-height/width seam or gutter",
+    "split_panel_gutter": "gutter counts only with edge density >= 0.01 in the 10% band on both sides",
+    "near_black": "mean < 28.0 or p95 < 50.0",
+    "noise": "grain std > 6 over structure std < 12, and the 8x-downscaled frame under the low-detail floor (std < 13.44 and edge density < 0.0259)",
+    "jitter": "centre-patch phase correlation: reversal against trend or > 0.35 px off trend"
+  },
+  "low_detail_floor": {
+    "std": 13.44,
+    "edge": 0.0259,
+    "calibration": {
+      "video": "025_MarsRobot_full_rough_v02d.mp4",
+      "factor": 1.2,
+      "frames": [
+        {
+          "source": "PIA22223.jpg",
+          "t": 201.0,
+          "std": 12.1,
+          "edge": 0.0223
+        },
+        {
+          "source": "PIA22223.jpg",
+          "t": 216.3,
+          "std": 11.2,
+          "edge": 0.0216
+        },
+        {
+          "source": "PIA22929.jpg",
+          "t": 297.4,
+          "std": 26.54,
+          "edge": 0.5735
+        }
+      ]
+    }
+  },
+  "video": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s08_capillaries_v01.mp4",
+  "edge_floor": 0.0424,
+  "verdict": "PASS",
+  "failed": [],
+  "warn": [
+    {
+      "row": "s03_looked",
+      "cut": 2,
+      "t": 9.47,
+      "source": "02_tiny_gaps_t1.mp4",
+      "why": [
+        "low detail: edge density 0.0422 < film p5 0.0424"
+      ]
+    }
+  ],
+  "reviewed_ok": [],
+  "rows": [
+    {
+      "cut": 0,
+      "row": "s01_0",
+      "source": "01_loop_gap_t5.mp4",
+      "t": 2.24,
+      "std": 58.6,
+      "mean": 91.59,
+      "p95": 233.0,
+      "edge": 0.1167,
+      "hf": 15.25,
+      "lf": 51.35,
+      "std8": 53.7,
+      "edge8": 0.3648,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 1,
+      "row": "s02_In",
+      "source": "04_malpighi_slide_t1.mp4",
+      "t": 6.11,
+      "std": 44.37,
+      "mean": 69.97,
+      "p95": 148.0,
+      "edge": 0.0658,
+      "hf": 11.26,
+      "lf": 38.3,
+      "std8": 40.34,
+      "edge8": 0.2588,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 2,
+      "row": "s03_looked",
+      "source": "02_tiny_gaps_t1.mp4",
+      "t": 9.47,
+      "std": 32.85,
+      "mean": 129.47,
+      "p95": 165.0,
+      "edge": 0.0422,
+      "hf": 10.15,
+      "lf": 28.24,
+      "std8": 29.43,
+      "edge8": 0.1556,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0422 < film p5 0.0424"
+      ]
+    },
+    {
+      "cut": 3,
+      "row": "s04_A",
+      "source": "06_eyepiece_mesh_t1.mp4",
+      "t": 12.99,
+      "std": 67.92,
+      "mean": 179.93,
+      "p95": 239.0,
+      "edge": 0.1402,
+      "hf": 14.71,
+      "lf": 63.12,
+      "std8": 63.78,
+      "edge8": 0.3025,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 4,
+      "row": "s05_carrying",
+      "source": "07_capillaries_loop_t2.mp4",
+      "t": 16.9,
+      "std": 32.91,
+      "mean": 220.17,
+      "p95": 241.0,
+      "edge": 0.043,
+      "hf": 8.08,
+      "lf": 27.21,
+      "std8": 29.65,
+      "edge8": 0.2275,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 5,
+      "row": "s06_We",
+      "source": "16_proved_last_link_t4.mp4",
+      "t": 20.58,
+      "std": 57.01,
+      "mean": 86.05,
+      "p95": 227.0,
+      "edge": 0.1189,
+      "hf": 15.69,
+      "lf": 49.74,
+      "std8": 51.98,
+      "edge8": 0.32,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 6,
+      "row": "s07_loop",
+      "source": "loop_end_01_loop_gap_t5.mp4",
+      "t": 23.64,
+      "std": 52.42,
+      "mean": 82.3,
+      "p95": 209.0,
+      "edge": 0.1348,
+      "hf": 17.05,
+      "lf": 43.02,
+      "std8": 45.83,
+      "edge8": 0.3549,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+ "pulled": "2026-10-18",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "dna replication pcr",
+  "kary mullis pcr"
+ ],
+ "autocomplete": {
+  "dna replication pcr": [
+   "dna replication pcr",
+   "dna polymerase pcr",
+   "dna replication vs pcr"
+  ],
+  "kary mullis pcr": [
+   "kary mullis pcr",
+   "kary mullis pcr interview",
+   "kary mullis pcr test",
+   "kary mullis pcr test deutsch",
+   "kary mullis pcr deutsch"
+  ]
+ },
+ "sharedTitleWords": [
+  "kary mullis",
+  "dna replication"
+ ],
+ "neighbours": [
+  {
+   "id": "iSVy1b-RyVM",
+   "title": "Sons of Sputnik: Kary Mullis at TEDxOrangeCoast",
+   "channel": "TEDx Talks",
+   "views": "202,123 views",
+   "age": "13 yr ago",
+   "length": "24:01",
+   "tier": 1,
+   "viewCount": 202123,
+   "foundBy": "ted-ed kary mullis pcr",
+   "onTopic": true
+  },
+  {
+   "id": "LNOtiRB3uyk",
+   "title": "Kary Mullis: Celebrating the scientific experiment",
+   "channel": "TED",
+   "views": "153,603 views",
+   "age": "17 yr ago",
+   "length": "31:33",
+   "tier": 1,
+   "viewCount": 153603,
+   "foundBy": "ted-ed kary mullis pcr",
+   "onTopic": true
+  },
+  {
+   "id": "wJttdkKo4nM",
+   "title": "Kary Mullis' next-gen cure for killer infection",
+   "channel": "TED",
+   "views": "136,600 views",
+   "age": "17 yr ago",
+   "length": "5:09",
+   "tier": 1,
+   "viewCount": 136600,
+   "foundBy": "ted-ed kary mullis pcr",
+   "onTopic": true
+  },
+  {
+   "id": "Qqe4thU-os8",
+   "title": "DNA Replication (Updated)",
+   "channel": "Amoeba Sisters",
+   "views": "11,066,401 views",
+   "age": "7 yr ago",
+   "length": "8:12",
+   "tier": 2,
+   "viewCount": 11066401,
+   "foundBy": "dna replication pcr",
+   "onTopic": true
+  },
+  {
+   "id": "8kK2zwjRV0M",
+   "title": "DNA Structure and Replication: Crash Course Biology #10",
+   "channel": "CrashCourse",
+   "views": "10,663,326 views",
+   "age": "14 yr ago",
+   "length": "12:35",
+   "tier": 2,
+   "viewCount": 10663326,
+   "foundBy": "dna replication pcr",
+   "onTopic": true
+  },
+  {
+   "id": "6gUY5NoX1Lk",
+   "title": "DNA replication and RNA transcription and translation | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "3,168,063 views",
+   "age": "11 yr ago",
+   "length": "15:23",
+   "tier": 2,
+   "viewCount": 3168063,
+   "foundBy": "khan academy dna replication pcr",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 3,
+ "gate": "PASS",
+ "hasTed": true,
+ "failedQueries": []
+}

@@ -369,6 +369,10 @@ Ben, 2 Oct 2026: *"Claude and Grok have more authority and fewer checks with me.
 
 Never commit video or audio (`.mp4`, `.mov`, `.wav`, `.mp3`, `.aiff`…), not even with `git add -f`: record the path and sha256 instead; the `No media in git` check fails any PR that adds one. Film records (status, upload results, schedules) land on `main` within a day, so an agent starting from `main` sees what is live. One branch per job, closed when the job ends.
 
+## Studio core (Ben, 15 Oct 2026)
+
+Ben: *"unify HOS and OWB but keeping their own rules."* Tooling both channels share lives once, in orbit-with-ben. `studio-core/CORE_FILES.json` locks each shared file by sha256 here and there, and CI (`core-check.yml`) fails this repo if a core file is edited here alone. **Don't edit a core file in this repo:** change it in orbit-with-ben, run `core_sync.py lock` and `core_sync.py push --to <this checkout>` there, then commit here. HOS rules are never core: `HOS_STRATEGY.md`, thumbnail and title rules, the playbook, the Explorer, `CHANNEL_META.json`, `hos-contract/`.
+
 ## Changing the rules
 
 Only Chief changes `AGENTS.md` and the Never list (see "Ben's check-in"; Claude until 9 Oct); other agents propose changes on the desk. Change the doc in force (1–7 above) and its Cursor rule in the same commit, with the date and the evidence. Don't add a new "locked" doc that restates or contradicts one of them. Move anything it supersedes to `_archive/`.

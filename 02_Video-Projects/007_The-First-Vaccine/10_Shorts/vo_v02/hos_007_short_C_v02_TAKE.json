@@ -1,0 +1,58 @@
+{
+  "stem": "hos_007_short_C_v02",
+  "voice": "Ben Orbit Narrator",
+  "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+  "model_id": "eleven_v3",
+  "settings": {
+    "stability": 0.34,
+    "similarity_boost": 0.78,
+    "style": 0.42,
+    "speed": 1.04,
+    "use_speaker_boost": true
+  },
+  "orders": [
+    "J0109"
+  ],
+  "retake_of": null,
+  "chapters": [
+    {
+      "title": "take",
+      "chars": 326,
+      "duration_s": 24.8
+    }
+  ],
+  "gap_s": 0.7,
+  "spoken_chars": 326,
+  "words": 57,
+  "duration_s": 24.8,
+  "loudness": {
+    "lufs_integrated": -19.7,
+    "mean_volume_db": -23.0,
+    "max_volume_db": -3.9
+  },
+  "sha256_mp3": "8e0df68d5e82625ace5e1b41ee510649acf2101df8a30802e58ada5414c680e9",
+  "scribe": {
+    "transcript": "Smallpox is gone forever. For centuries, it killed about three in every ten people it caught. Then in 1796, one test showed that cowpox could protect you from it. Health workers spread that idea to every country until smallpox had nowhere left to hide. In 1980, it was declared gone, the first disease humans ever wiped out.",
+    "script_words": 57,
+    "scribe_words": 57,
+    "match_rate_pct": 100.0,
+    "exact_match": true,
+    "mismatches": []
+  },
+  "vo_check": "PASS",
+  "credits": {
+    "before": {
+      "used": 191034,
+      "limit": 209536,
+      "remaining": 18502
+    },
+    "after": {
+      "used": 191034,
+      "limit": 209536,
+      "remaining": 18502
+    },
+    "counter_delta": 0
+  },
+  "text": "Smallpox is gone. Forever. For centuries it killed about three in every ten people it caught. Then, in 1796, one test showed that cowpox could protect you from it. Health workers spread that idea to every country, until smallpox had nowhere left to hide. In 1980, it was declared gone. The first disease humans ever wiped out.",
+  "made_at": "2026-10-10T10:44:50+0100"
+}

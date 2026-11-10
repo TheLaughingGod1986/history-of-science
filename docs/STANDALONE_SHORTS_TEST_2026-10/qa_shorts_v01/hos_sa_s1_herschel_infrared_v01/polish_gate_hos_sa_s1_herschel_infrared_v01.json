@@ -1,0 +1,148 @@
+{
+  "rule": {
+    "low_detail": "FAIL: luma std < 13.44 and edge density < 0.0259 (absolute floor); WARN: luma std < 18.0 or edge density < film p5",
+    "split_panel": "full-height/width seam or gutter",
+    "split_panel_gutter": "gutter counts only with edge density >= 0.01 in the 10% band on both sides",
+    "near_black": "mean < 28.0 or p95 < 50.0",
+    "noise": "grain std > 6 over structure std < 12, and the 8x-downscaled frame under the low-detail floor (std < 13.44 and edge density < 0.0259)",
+    "jitter": "centre-patch phase correlation: reversal against trend or > 0.35 px off trend"
+  },
+  "low_detail_floor": {
+    "std": 13.44,
+    "edge": 0.0259,
+    "calibration": {
+      "video": "025_MarsRobot_full_rough_v02d.mp4",
+      "factor": 1.2,
+      "frames": [
+        {
+          "source": "PIA22223.jpg",
+          "t": 201.0,
+          "std": 12.1,
+          "edge": 0.0223
+        },
+        {
+          "source": "PIA22223.jpg",
+          "t": 216.3,
+          "std": 11.2,
+          "edge": 0.0216
+        },
+        {
+          "source": "PIA22929.jpg",
+          "t": 297.4,
+          "std": 26.54,
+          "edge": 0.5735
+        }
+      ]
+    }
+  },
+  "video": "/Users/benjaminoats/YouTube/History Of Science/docs/STANDALONE_SHORTS_TEST_2026-10/shorts_v01/hos_sa_s1_herschel_infrared_v01.mp4",
+  "edge_floor": 0.0115,
+  "verdict": "PASS",
+  "failed": [],
+  "warn": [
+    {
+      "row": "s05_01_beyond_red_v01",
+      "cut": 4,
+      "t": 21.12,
+      "source": "end_card_loop_01_beyond_red_v01.jpg",
+      "why": [
+        "low detail: edge density 0.0099 < film p5 0.0115"
+      ]
+    }
+  ],
+  "reviewed_ok": [],
+  "rows": [
+    {
+      "cut": 0,
+      "row": "s01_01_beyond_red_v01",
+      "source": "01_beyond_red_v01.jpg",
+      "t": 2.48,
+      "std": 56.26,
+      "mean": 67.67,
+      "p95": 210.0,
+      "edge": 0.0482,
+      "hf": 14.64,
+      "lf": 48.21,
+      "std8": 51.3,
+      "edge8": 0.2168,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 1,
+      "row": "s02_02_prism_window_v01",
+      "source": "02_prism_window_v01.jpg",
+      "t": 6.31,
+      "std": 55.15,
+      "mean": 92.06,
+      "p95": 217.0,
+      "edge": 0.041,
+      "hf": 8.52,
+      "lf": 51.13,
+      "std8": 52.62,
+      "edge8": 0.2568,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 2,
+      "row": "s03_03_thermometers_colours_v01",
+      "source": "03_thermometers_colours_v01.jpg",
+      "t": 10.02,
+      "std": 40.04,
+      "mean": 73.31,
+      "p95": 150.0,
+      "edge": 0.0178,
+      "hf": 6.21,
+      "lf": 38.39,
+      "std8": 38.99,
+      "edge8": 0.0807,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 3,
+      "row": "s04_04_past_the_red_v01",
+      "source": "04_past_the_red_v01.jpg",
+      "t": 16.1,
+      "std": 44.47,
+      "mean": 63.85,
+      "p95": 146.0,
+      "edge": 0.0216,
+      "hf": 6.3,
+      "lf": 41.64,
+      "std8": 42.8,
+      "edge8": 0.149,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 4,
+      "row": "s05_01_beyond_red_v01",
+      "source": "end_card_loop_01_beyond_red_v01.jpg",
+      "t": 21.12,
+      "std": 39.82,
+      "mean": 47.93,
+      "p95": 134.0,
+      "edge": 0.0099,
+      "hf": 5.95,
+      "lf": 37.98,
+      "std8": 38.67,
+      "edge8": 0.0945,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0099 < film p5 0.0115"
+      ]
+    }
+  ]
+}

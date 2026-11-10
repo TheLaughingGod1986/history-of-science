@@ -1,0 +1,98 @@
+{
+  "film": "001",
+  "video": "_C92tIJCk8A",
+  "job": "J0746",
+  "variant": "B v08 (1.07x swan-neck flask & S-bend dust trap hero push-in + concrete curved-dust-bend hook; pairs with B v06 'STERILE LIQUID FLASK' and B v07 'UNSEEN POND MICROBES')",
+  "maker": "gemini",
+  "hook": "CURVED DUST BEND",
+  "punch": "BEND",
+  "jpg": "Selected/hos_001_thumb_B_curved_dust_bend_v08.jpg",
+  "sha256": "924ed4d5ddc78d8d2d2128f685f54e2b341f06c840457599d5916d1a2f882638",
+  "bytes": 270187,
+  "plates": [
+    "08_Thumbnail/Selected/hos_001_tc_thumb_v02.jpg (via local un-pushed-in hos_001_thumb_B_swan_neck_v01.jpg: 001 painted 16:9 library key-art plate with giant swan-neck flask, golden sterile liquid & curved S-bend dust trap on right two-thirds with 1.07x hero push-in + lower-left Explorer at 54.4% frame height + original painted gold scroll flourishes)"
+  ],
+  "method": "existing_001_plate_only_1.07x_hero_push_in_and_reletter_GeorgiaBold_with_original_painted_flourishes",
+  "spend": 0,
+  "heroBox": [
+    580,
+    10,
+    1138,
+    696
+  ],
+  "explorer": {
+    "source": "hos_001_tc_thumb_v02.jpg",
+    "box": [
+      88,
+      328,
+      316,
+      720
+    ],
+    "height_px": 392,
+    "height_frac": 0.544
+  },
+  "lettering": [
+    {
+      "word": "CURVED",
+      "kind": "cream",
+      "size": 84,
+      "box": [
+        97,
+        68,
+        473,
+        144
+      ]
+    },
+    {
+      "word": "DUST",
+      "kind": "cream",
+      "size": 94,
+      "box": [
+        150,
+        138,
+        421,
+        223
+      ]
+    },
+    {
+      "word": "BEND",
+      "kind": "gold",
+      "size": 100,
+      "box": [
+        134,
+        221,
+        435,
+        308
+      ]
+    }
+  ],
+  "ornaments": {
+    "top_scroll_box": [
+      88,
+      20,
+      496,
+      60
+    ],
+    "bottom_scroll_box": [
+      140,
+      318,
+      445,
+      356
+    ]
+  },
+  "clearOfHero": true,
+  "clearOfExplorer": true,
+  "clearOfBadge": true,
+  "scores": {
+    "HOOK": "PASS \u2014 'CURVED DUST BEND' (3 words, punch word 'BEND' in gold) names the concrete curved S-bend / U-bend dust trap on Pasteur's giant swan-neck flask on the right where airborne dust settles while the boiled liquid stays clear (001 script Part 04: 'Pasteur-style swan-neck flask \u2014 clear broth, curved glass neck, dust settling at the bend while the liquid stays bright... Air can drift \u2014 but dust and microbes settle in the curve... Hitchhikers are caught at the bend' and THUMBNAIL_AND_TITLE_RULES.md \u00a71.2 & \u00a72.B.1 'name the thing'), shares zero words with the video title ('How Did We Discover Germs?'), Live A ('WHAT PROVED GERMS WERE REAL?'), J0391 ('THE SWAN NECK'), J0457 ('TRAPPED IN GLASS'), J0503 ('DROP OF WATER'), J0549 ('BOILED CLEAR BROTH'), J0594 ('TINY LIVING CELLS'), J0640 ('STERILE LIQUID FLASK'), or J0685 ('UNSEEN POND MICROBES'), and uses no vague questions or pronouns.",
+    "BAND": "PASS \u2014 Upper-left lettering band (x=97..473, y=68..308, framed by 001's original painted gold scroll flourishes at y=20..356) sits completely left of the pushed-in hero swan-neck flask (x=580..1138), above the Explorer's hair (y=328) and bottom flourish (y=318), and clear of the bottom-right duration badge.",
+    "PHONE": "PASS \u2014 Checked on 168x94 preview sheet and 4-panel strip: the 1.07x hero push-in and glass/liquid & S-bend specular clarity boost make the giant swan-neck flask bulb, golden liquid level, and curved dust-trap bend larger and crisper at 168x94 while keeping 'CURVED DUST BEND' and the Explorer's face/glasses (54.4% height) immediately legible in under a second."
+  },
+  "previews": [
+    "Selected/hos_001_thumb_B_curved_dust_bend_v08_preview.jpg",
+    "Selected/hos_001_thumb_B_curved_dust_bend_v08_style_sheet.jpg",
+    "Selected/hos_001_thumb_TC_4way_curved_dust_bend_v08_phone_168.jpg"
+  ],
+  "studio": false,
+  "status": "Test & Compare B v08 candidate for 001 (_C92tIJCk8A, built from existing 001 plate only with 1.07x hero push-in, \u00a30). Parked for Chief: thumb B review. No Studio until OK."
+}

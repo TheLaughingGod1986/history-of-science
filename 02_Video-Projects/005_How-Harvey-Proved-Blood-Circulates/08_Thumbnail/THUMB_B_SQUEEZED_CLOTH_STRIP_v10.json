@@ -1,0 +1,98 @@
+{
+  "film": "005",
+  "video": "wwcjcFfC-5M",
+  "job": "J0761",
+  "variant": "B v10 (1.11x hero push-in + squeezed-cloth-strip weave relief, arterial-cutoff glow & forearm blue-cord definition boost + concrete cloth-strip hook; pairs with B v09 'PALE COLD HAND' and B v08 'PINCHED LINEN KNOT')",
+  "maker": "gemini",
+  "hook": "SQUEEZED CLOTH STRIP",
+  "punch": "STRIP",
+  "jpg": "Selected/hos_005_thumb_B_squeezed_cloth_strip_v10.jpg",
+  "sha256": "2ef47700d84219aecdc91a02b28acce5e94540226a3eceb2c3bd40494714c88a",
+  "bytes": 256205,
+  "plates": [
+    "Selected/hos_005_thumb_A_one_tight_band_v02.jpg (005 painted 16:9 key-art plate: glowing red artery stopped at squeezed cloth strip, pale forearm with branching blue veins and pale open hand, Explorer lower-left, original gold scroll flourishes)"
+  ],
+  "method": "existing_005_plate_only_1.11x_hero_push_in_and_squeezed_cloth_strip_boost_reletter_GeorgiaBold_with_original_painted_flourishes",
+  "spend": 0,
+  "heroBox": [
+    550,
+    0,
+    1252,
+    710
+  ],
+  "explorer": {
+    "source": "hos_005_thumb_A_one_tight_band_v02.jpg",
+    "box": [
+      88,
+      344,
+      318,
+      720
+    ],
+    "height_px": 376,
+    "height_frac": 0.522
+  },
+  "lettering": [
+    {
+      "word": "SQUEEZED",
+      "kind": "cream",
+      "size": 68,
+      "box": [
+        110,
+        68,
+        467,
+        144
+      ]
+    },
+    {
+      "word": "CLOTH",
+      "kind": "cream",
+      "size": 86,
+      "box": [
+        141,
+        150,
+        435,
+        228
+      ]
+    },
+    {
+      "word": "STRIP",
+      "kind": "gold",
+      "size": 92,
+      "box": [
+        150,
+        234,
+        425,
+        318
+      ]
+    }
+  ],
+  "ornaments": {
+    "top_scroll_box": [
+      60,
+      24,
+      468,
+      59
+    ],
+    "bottom_scroll_box": [
+      154,
+      328,
+      438,
+      356
+    ]
+  },
+  "clearOfHero": true,
+  "clearOfExplorer": true,
+  "clearOfBadge": true,
+  "scores": {
+    "HOOK": "PASS \u2014 'SQUEEZED CLOTH STRIP' (3 words, punch word 'STRIP' in gold) names the concrete visible ligature instrument wrapped around the upper arm on the plate (the strip of woven cloth/linen squeezing the upper arm to stop arterial inflow and pinch the superficial veins shut, De Motu Cordis ch. 11, FACT_NOTES_v01 rows 26\u201327; 005 script Part 04 lines 110 & 114 and Part 05 line 158: 'The most famous one needs nothing but a strip of linen... the veins near the skin are still squeezed shut... It squeezes until the blood stops getting in' and THUMBNAIL_AND_TITLE_RULES.md \u00a71.2 & \u00a72.B.1 'name the thing'), shares zero words with the video title ('The Tied Arm That Proved Your Blood Circulates'), Variant A ('ONE TIGHT BAND'), Variant B v02 ('IT GOES ROUND'), Variant C v04 ('TIE IT TIGHT'), Variant B v03 ('THE BLOCKED ARTERY'), Variant B v04 ('HIDDEN VEIN VALVES'), Variant B v05 ('TRAPPED UNDER SKIN'), Variant B v06 ('STOPPED RED PULSE'), Variant B v07 ('SWOLLEN BLUE CORDS'), Variant B v08 ('PINCHED LINEN KNOT'), or Variant B v09 ('PALE COLD HAND'), and uses no vague questions or pronouns.",
+    "BAND": "PASS \u2014 Upper-left lettering band (x=110..467, y=68..318, framed by original painted gold scroll flourishes at y=24..356) sits completely left of the pushed-in hero arm (x=550..1252), above the Explorer's hair (y=344), and clear of the bottom-right duration badge.",
+    "PHONE": "PASS \u2014 Checked on 168x94 preview sheet and 4-way comparison strip: the 1.11x hero push-in and targeted cloth-strip weave relief, stopped arterial glow, and forearm venous-cord definition boost make the squeezed cloth strip, stopped red arterial column above it, and branching blue cords on the pale forearm larger and sharper at 168x94 while keeping 'SQUEEZED CLOTH STRIP' and the Explorer's face/glasses (52.2% height) immediately legible in under a second."
+  },
+  "previews": [
+    "Selected/hos_005_thumb_B_squeezed_cloth_strip_v10_preview.jpg",
+    "Selected/hos_005_thumb_B_squeezed_cloth_strip_v10_style_sheet.jpg",
+    "Selected/hos_005_thumb_TC_4way_squeezed_cloth_strip_v10_phone_168.jpg"
+  ],
+  "studio": false,
+  "status": "Test & Compare B v10 candidate for 005 (wwcjcFfC-5M, built from existing 005 plate only with 1.11x hero push-in + squeezed-cloth-strip & arterial-cutoff boost, \u00a30). Parked for Chief: thumb B review. No Studio until OK."
+}

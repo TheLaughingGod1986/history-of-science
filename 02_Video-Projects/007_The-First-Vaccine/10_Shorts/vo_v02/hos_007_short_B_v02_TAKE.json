@@ -1,0 +1,68 @@
+{
+  "stem": "hos_007_short_B_v02",
+  "voice": "Ben Orbit Narrator",
+  "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+  "model_id": "eleven_v3",
+  "settings": {
+    "stability": 0.34,
+    "similarity_boost": 0.78,
+    "style": 0.42,
+    "speed": 1.04,
+    "use_speaker_boost": true
+  },
+  "orders": [
+    "J0109"
+  ],
+  "retake_of": null,
+  "chapters": [
+    {
+      "title": "take",
+      "chars": 343,
+      "duration_s": 25.52
+    }
+  ],
+  "gap_s": 0.7,
+  "spoken_chars": 343,
+  "words": 59,
+  "duration_s": 25.52,
+  "loudness": {
+    "lufs_integrated": -20.5,
+    "mean_volume_db": -23.8,
+    "max_volume_db": -3.9
+  },
+  "sha256_mp3": "f6d87c757cda1dd8de5254a4fac88c6fcf3fbba7e7d2ea189322f91396579625",
+  "scribe": {
+    "transcript": "The first vaccine began with milkmaids who never caught smallpox. They caught cowpox from the cows instead, a few sore spots and nothing more. And farmers swore that anyone who'd had it was safe from smallpox for life. One country doctor, Edward Jenner, took the rumor seriously and tested it. He was right, and it became the first vaccine",
+    "script_words": 59,
+    "scribe_words": 59,
+    "match_rate_pct": 98.31,
+    "exact_match": false,
+    "mismatches": [
+      {
+        "op": "replace",
+        "script": [
+          "rumour"
+        ],
+        "scribe": [
+          "rumor"
+        ]
+      }
+    ]
+  },
+  "vo_check": "PASS",
+  "credits": {
+    "before": {
+      "used": 190883,
+      "limit": 209536,
+      "remaining": 18653
+    },
+    "after": {
+      "used": 191034,
+      "limit": 209536,
+      "remaining": 18502
+    },
+    "counter_delta": 151
+  },
+  "text": "The first vaccine began with milkmaids, who never caught smallpox. They caught cowpox from the cows instead, a few sore spots and nothing more. And farmers swore that anyone who'd had it was safe from smallpox for life. One country doctor, Edward Jenner, took the rumour seriously, and tested it. He was right, and it became the first vaccine.",
+  "made_at": "2026-10-10T10:44:32+0100"
+}

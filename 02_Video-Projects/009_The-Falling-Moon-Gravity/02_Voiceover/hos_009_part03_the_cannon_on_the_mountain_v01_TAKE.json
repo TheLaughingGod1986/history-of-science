@@ -1,0 +1,78 @@
+{
+  "stem": "hos_009_part03_the_cannon_on_the_mountain_v01",
+  "voice": "Ben Orbit Narrator",
+  "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+  "model_id": "eleven_v3",
+  "settings": {
+    "stability": 0.34,
+    "similarity_boost": 0.78,
+    "style": 0.42,
+    "speed": 1.04,
+    "use_speaker_boost": true
+  },
+  "orders": [
+    "J0111"
+  ],
+  "retake_of": null,
+  "chapters": [
+    {
+      "title": "take",
+      "chars": 1062,
+      "duration_s": 80.88
+    }
+  ],
+  "gap_s": 0.7,
+  "spoken_chars": 1062,
+  "words": 198,
+  "duration_s": 80.88,
+  "loudness": {
+    "lufs_integrated": -20.4,
+    "mean_volume_db": -23.8,
+    "max_volume_db": -4.0
+  },
+  "sha256_mp3": "53235ab062eb782bf1beda7cb5baab2ff472aeb87b4ad2c90ae63ffe35602efb",
+  "scribe": {
+    "transcript": "Newton's answer was so simple, it is easy to miss. The moon isn't held up at all. It really is falling. It just never lands. To explain it, he imagined a cannon on top of a mountain so tall it poked above the air. Fire a cannonball sideways gently, and it curves down and hits the ground near the bottom of the mountain. Fire it faster, and it flies further before it lands. Now imagine firing it so fast that as it falls, the round Earth curves away beneath it just as quickly. What would you see? The ball keeps falling and keeps missing the ground. It falls all the way around the world and comes back to the mountain. That is an orbit. Not something floating, but something falling and moving sideways so fast that it never hits. And that's what the moon is doing. Every second, it moves sideways about a kilometer and falls a tiny bit towards the Earth. Sideways and down, sideways and down, forever. But an idea isn't proof. If the same pull holds the moon and drops the apple, Newton should be able to calculate one from the other. Could he?",
+    "script_words": 198,
+    "scribe_words": 197,
+    "match_rate_pct": 98.48,
+    "exact_match": false,
+    "mismatches": [
+      {
+        "op": "replace",
+        "script": [
+          "kilometre"
+        ],
+        "scribe": [
+          "kilometer"
+        ]
+      },
+      {
+        "op": "replace",
+        "script": [
+          "for",
+          "ever"
+        ],
+        "scribe": [
+          "forever"
+        ]
+      }
+    ]
+  },
+  "vo_check": "PASS",
+  "credits": {
+    "before": {
+      "used": 191252,
+      "limit": 209536,
+      "remaining": 18284
+    },
+    "after": {
+      "used": 192292,
+      "limit": 209536,
+      "remaining": 17244
+    },
+    "counter_delta": 1040
+  },
+  "text": "Newton's answer was so simple it is easy to miss. The Moon isn't held up at all. It really is falling. It just never lands.\n\nTo explain it, he imagined a cannon, on top of a mountain so tall it poked above the air.\n\nFire a cannonball sideways, gently, and it curves down and hits the ground near the bottom of the mountain. Fire it faster, and it flies further before it lands.\n\nNow imagine firing it so fast that, as it falls, the round Earth curves away beneath it, just as quickly. What would you see? The ball keeps falling, and keeps missing the ground. It falls all the way around the world, and comes back to the mountain.\n\nThat is an orbit. Not something floating, but something falling, and moving sideways so fast that it never hits.\n\nAnd that's what the Moon is doing. Every second, it moves sideways about a kilometre, and falls a tiny bit towards the Earth. Sideways and down, sideways and down, for ever.\n\nBut an idea isn't proof. If the same pull holds the Moon and drops the apple, Newton should be able to calculate one from the other. Could he?",
+  "made_at": "2026-10-10T20:57:48+0100"
+}

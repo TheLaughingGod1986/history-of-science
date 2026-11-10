@@ -1,0 +1,217 @@
+{
+ "pulled": "2026-10-19",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "mitochondria powerhouse of the cell",
+  "cellular respiration krebs cycle atp"
+ ],
+ "autocomplete": {
+  "mitochondria powerhouse of the cell": [
+   "mitochondria powerhouse of the cell",
+   "mitochondria powerhouse of the cell meme",
+   "mitochondria powerhouse of the cell song",
+   "bangchan mitochondria powerhouse of the cell",
+   "mitochondria is the powerhouse of the cell funny",
+   "mitochondria is the powerhouse of the cell rap",
+   "mitochondria is the powerhouse of the cell skz",
+   "mitochondria is the powerhouse of the cell original",
+   "mitochondria is the powerhouse of the cell edit",
+   "mitochondria is the powerhouse of the cell joke"
+  ],
+  "cellular respiration krebs cycle atp": []
+ },
+ "sharedTitleWords": [
+  "cellular respiration",
+  "khan academy",
+  "respiration biology",
+  "biology khan",
+  "of glycolysis",
+  "glycolysis cellular"
+ ],
+ "neighbours": [
+  {
+   "id": "4OpBylwH9DU",
+   "title": "The wacky history of cell theory - Lauren Royal-Woods",
+   "channel": "TED-Ed",
+   "views": "8,357,102 views",
+   "age": "14 yr ago",
+   "length": "6:12",
+   "tier": 1,
+   "viewCount": 8357102,
+   "foundBy": "mitochondria powerhouse of the cell ted",
+   "onTopic": true
+  },
+  {
+   "id": "0UzMaoaXKaM",
+   "title": "Nature's smallest factory: The Calvin cycle - Cathy Symington",
+   "channel": "TED-Ed",
+   "views": "3,393,159 views",
+   "age": "12 yr ago",
+   "length": "5:38",
+   "tier": 1,
+   "viewCount": 3393159,
+   "foundBy": "ted-ed cellular respiration krebs cycle atp",
+   "onTopic": true
+  },
+  {
+   "id": "00jbG_cfGuQ",
+   "title": "ATP & Respiration: Crash Course Biology #7",
+   "channel": "CrashCourse",
+   "views": "11,609,908 views",
+   "age": "14 yr ago",
+   "length": "13:26",
+   "tier": 2,
+   "viewCount": 11609908,
+   "foundBy": "cellular respiration krebs cycle atp",
+   "onTopic": true
+  },
+  {
+   "id": "eJ9Zjc-jdys",
+   "title": "Cellular Respiration (UPDATED)",
+   "channel": "Amoeba Sisters",
+   "views": "7,790,414 views",
+   "age": "5 yr ago",
+   "length": "8:47",
+   "tier": 2,
+   "viewCount": 7790414,
+   "foundBy": "cellular respiration krebs cycle atp",
+   "onTopic": true
+  },
+  {
+   "id": "juM2ROSLWfw",
+   "title": "Krebs / citric acid cycle | Cellular respiration | Biology | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "5,659,377 views",
+   "age": "16 yr ago",
+   "length": "17:47",
+   "tier": 2,
+   "viewCount": 5659377,
+   "foundBy": "ted-ed cellular respiration krebs cycle atp",
+   "onTopic": true
+  },
+  {
+   "id": "4Eo7JtRA7lg",
+   "title": "(OLD VIDEO) Cellular Respiration and the Mighty Mitochondria",
+   "channel": "Amoeba Sisters",
+   "views": "3,991,918 views",
+   "age": "11 yr ago",
+   "length": "7:49",
+   "tier": 2,
+   "viewCount": 3991918,
+   "foundBy": "cellular respiration krebs cycle atp",
+   "onTopic": true
+  },
+  {
+   "id": "2f7YwCtHcgk",
+   "title": "Introduction to cellular respiration | Cellular respiration | Biology | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "3,333,026 views",
+   "age": "16 yr ago",
+   "length": "14:19",
+   "tier": 2,
+   "viewCount": 3333026,
+   "foundBy": "khan academy cellular respiration krebs cycle atp",
+   "onTopic": true
+  },
+  {
+   "id": "FE2jfTXAJHg",
+   "title": "Overview of glycolysis | Cellular respiration | Biology | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "2,426,045 views",
+   "age": "16 yr ago",
+   "length": "13:30",
+   "tier": 2,
+   "viewCount": 2426045,
+   "foundBy": "khan academy mitochondria powerhouse of the cell",
+   "onTopic": true
+  },
+  {
+   "id": "ArmlWtDnuys",
+   "title": "Steps of glycolysis | Cellular respiration | Biology | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "2,034,859 views",
+   "age": "11 yr ago",
+   "length": "12:01",
+   "tier": 2,
+   "viewCount": 2034859,
+   "foundBy": "khan academy cellular respiration krebs cycle atp",
+   "onTopic": true
+  },
+  {
+   "id": "TKGcfbyFXsw",
+   "title": "Mitosis | Cells | MCAT | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "1,275,201 views",
+   "age": "11 yr ago",
+   "length": "12:11",
+   "tier": 2,
+   "viewCount": 1275201,
+   "foundBy": "khan academy mitochondria powerhouse of the cell",
+   "onTopic": true
+  },
+  {
+   "id": "i1dAnpSFbyI",
+   "title": "Mitochondria | Structure of a cell | Biology | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "659,513 views",
+   "age": "11 yr ago",
+   "length": "14:20",
+   "tier": 2,
+   "viewCount": 659513,
+   "foundBy": "khan academy mitochondria powerhouse of the cell",
+   "onTopic": true
+  },
+  {
+   "id": "HeO3yagexTw",
+   "title": "Cellular Respiration: Do Cells Breathe?: Crash Course Biology #27",
+   "channel": "CrashCourse",
+   "views": "506,853 views",
+   "age": "2 yr ago",
+   "length": "14:02",
+   "tier": 2,
+   "viewCount": 506853,
+   "foundBy": "cellular respiration krebs cycle atp",
+   "onTopic": true
+  },
+  {
+   "id": "9zoS5WGsmpc",
+   "title": "Overview of cellular respiration | Cellular respiration | Biology | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "309,704 views",
+   "age": "11 yr ago",
+   "length": "13:11",
+   "tier": 2,
+   "viewCount": 309704,
+   "foundBy": "khan academy cellular respiration krebs cycle atp",
+   "onTopic": true
+  },
+  {
+   "id": "1RXk1NJpRDI",
+   "title": "Cellular respiration | Food and energy in organisms | Middle school biology | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "57,024 views",
+   "age": "4 yr ago",
+   "length": "3:47",
+   "tier": 2,
+   "viewCount": 57024,
+   "foundBy": "khan academy cellular respiration krebs cycle atp",
+   "onTopic": true
+  },
+  {
+   "id": "RUScE515p1o",
+   "title": "A-Level Biology - Krebs Cycle - What It Is | Key Stages | Role of Coenzymes (2027/28 exams)",
+   "channel": "Cognito",
+   "views": "20,876 views",
+   "age": "6 mo ago",
+   "length": "6:13",
+   "tier": 2,
+   "viewCount": 20876,
+   "foundBy": "ted-ed cellular respiration krebs cycle atp",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 10,
+ "gate": "PASS",
+ "hasTed": true,
+ "failedQueries": []
+}

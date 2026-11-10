@@ -1,0 +1,27 @@
+{
+  "film": "007",
+  "about": "J0873 Chief-authorized upload of J0865 s04_smallpox_test_v01. First free HOS weekday Short slot on/after Fri 13 Nov 2026 11:30 London (2026-11-13T11:30:00Z, GMT; 007 long airs Thu 12 Nov 18:00).",
+  "shorts": [
+    {
+      "id": "-I_GHK-GcFs",
+      "title": "What Was the Edward Jenner Experiment?",
+      "airDate": "2026-11-13T11:30:00Z",
+      "promotes": "007",
+      "promotesVideoId": null,
+      "relatedVideoId": null,
+      "tags": [
+        "edward jenner experiment",
+        "what was the edward jenner experiment",
+        "edward jenner smallpox vaccine",
+        "first vaccine",
+        "cowpox",
+        "history of science"
+      ],
+      "madeForKids": false,
+      "alteredContent": true,
+      "durationSeconds": 26.13,
+      "cover": "frame 0 of hos_007_s04_smallpox_test_v01 (THE FIRST TEST)",
+      "note": "J0873 Chief PASS J0865 (sha 3daff43d04bc). Private + publishAt Fri 13 Nov 11:30 London (2026-11-13T11:30:00Z). Related -> 007 long once it has an id (set after the long is uploaded, before the Short goes public). Buffer held until public."
+    }
+  ]
+}

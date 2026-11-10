@@ -554,3 +554,95 @@ Claude accepted the Short (splice, 1.58 s loop) with one fix (desk PR #180 comme
 - **Phone copy:** iCloud `HOS UAT/004_Whats-Really-Inside-An-Atom/10_Shorts/covers_backcat_v02/` (sha matches).
 
 **STOP: Ben's final OK** on both back-catalogue Shorts, covers and titles (Claude sends the package). Nothing uploaded or scheduled.
+
+## J0416 s05_dalton_v02 seam & reuse fix — Gemini, 17 Oct 2026
+
+- **What:** Fixed `polish_gate` horizontal seams on `s02_Hydrogen` (0:07, WHO card shade feathered with cosine ramp) and `s04_Why` (0:12, `02_atomic_theory_v01` shifted to `in_s=0.80` to clear early desk-edge seam while keeping the 4.0 s paper close-up out, plus feathered title shade), and fixed `picture_qa` reuse FAIL on `s06_hydrogen` (0:20, swapped repeated `05_fixed_amounts_v01` to unused Part 02 plate `20_what_is_order_v01` at `in_s=0.40, crop_x=500`). £0 spend, existing Part 02 plates only.
+- **File:** `10_Shorts/hos_004_s05_dalton_v02.mp4` (untracked local + iCloud `HOS UAT/004_Whats-Really-Inside-An-Atom/10_Shorts/hos_004_s05_dalton_v02.mp4`), **24.533 s**, 64 words, sha256 `e7f5a6347c5f391c54ce0cadca896f508dce2fe3c6e1f267298267dd26ac3601`.
+- **Record & QA:** `10_Shorts/SHORT_s05_dalton_v02.json`, `10_Shorts/qa_s05_dalton_v02/polish_gate_s05_dalton_v02.json`, `10_Shorts/qa_s05_dalton_v02/picture_qa_s05_dalton_v02/PICTURE_QA.md`.
+
+```
+PASS  hos_004_s05_dalton_v02.mp4  dur=24.53s  audio=-22.1dB  motion=10.24  dhash=86db1e1e0e060e19   (--air-date 2026-11-10)
+PASS  hos_004_s05_dalton_v02.mp4  0:24.53  mean -22.1 dB  peak -3.8 dB  157 wpm
+   first minute: title_question 11.3s
+freezedetect: 0 events []
+polish gate PASS: 0 of 7 rows failed, 1 to look at -> 02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/qa_s05_dalton_v02/polish_gate_s05_dalton_v02.json
+picture QA PASS: 0 of 7 cuts fail, 1 to look at -> 02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/qa_s05_dalton_v02/picture_qa_s05_dalton_v02/PICTURE_QA.md, 02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/qa_s05_dalton_v02/picture_qa_s05_dalton_v02/picture_qa_review.jpg
+```
+
+**STOP:** parked for Chief review, title and slot. Nothing uploaded.
+
+## J0465 s04_cathode_rays_v01 reuse fix — Gemini, 17 Oct 2026
+
+- **What:** Fixed `picture_qa` 1/8 reuse FAIL on `s05_Thomson` (12.747–16.647 s, swapped repeated `05_magnet_bends_v01` to unused Part 03 plate `08_measures_bend_v01` at `in_s=0.8, crop_x=640`: Thomson at the cathode-ray tube as the glowing blue beam bends, scale card cropped out on the right) and cosine-feathered the WHO card and title shades (`BAND_TOP+BAND_H` 0.656 seam check). £0 spend, existing Part 03 plates only, no upload.
+- **File:** `10_Shorts/hos_004_s04_cathode_rays_v01.mp4` (untracked local + iCloud `HOS UAT/004_Whats-Really-Inside-An-Atom/10_Shorts/hos_004_s04_cathode_rays_v01.mp4`), **25.7 s**, 61 words, sha256 `027dc6f11efaa0084e88307c3b476bdf56afe255c33de31946ca40d086084508`.
+- **Record & QA:** `10_Shorts/SHORT_s04_cathode_rays_v01.json`, `10_Shorts/qa_s04_cathode_rays_v01/polish_gate_s04_cathode_rays_v01.json`, `10_Shorts/qa_s04_cathode_rays_v01/picture_qa_s04_cathode_rays_v01/PICTURE_QA.md`.
+
+```
+PASS  hos_004_s04_cathode_rays_v01.mp4  dur=25.7s  audio=-23.6dB  motion=16.87  dhash=80c06c1c90a69819   (--air-date 2026-10-27)
+PASS  hos_004_s04_cathode_rays_v01.mp4  0:25.70  mean -23.6 dB  peak -3.8 dB  142 wpm
+   first minute: title_question 9.08s
+   warn  pace 142 wpm (< 145); expect a long film — see STUDIO_PLAYBOOK.md §4 speed
+freezedetect: 0 events []
+polish gate PASS: 0 of 8 rows failed, 1 to look at -> 02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/qa_s04_cathode_rays_v01/polish_gate_s04_cathode_rays_v01.json
+picture QA PASS: 0 of 8 cuts fail, 1 to look at -> 02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/qa_s04_cathode_rays_v01/picture_qa_s04_cathode_rays_v01/PICTURE_QA.md, 02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/qa_s04_cathode_rays_v01/picture_qa_s04_cathode_rays_v01/picture_qa_review.jpg
+```
+
+**STOP:** parked for Chief review, title and slot. Nothing uploaded.
+
+## J0502 s06_moseley_atomic_number_v01 (Test B search-titled Short, Part 05 lift) — Gemini, 18 Oct 2026
+
+- **What:** Built search-titled Test B Short `s06_moseley_atomic_number_v01` from `004` Part 05 existing VO (`02_Voiceover/05_Master/hos_004_part05_vo_v01.mp3`, claim-first lift of indices 53–63, 69–85, 96–113, 141–158: *"Moseley splits the X-rays with a crystal and measures their wavelength. Element by element, the X-rays step up in perfectly even jumps, like the rungs of a ladder. Count the rungs and you get a whole number for every element: the positive charge in its nucleus. The broken rule fixes itself. Mendeleev's instinct was right all along. He was just using the wrong ruler."*), existing Part 05/04 KEEP plates (`07_crystal_split_v01`, `09_one_rung_each_v01`, `05_xrays_from_metal_v01`, `04_electrons_fire_v01`, `14_nucleus_electrons_v01`, `02_train_in_tube_v01`, `03_targets_swap_v01`, and `07_crystal_split_v01` loop), and Part 05 score bed (`hos004-part05-temp_score_bed_v01.mp3`). £0 spend, no upload.
+- **Title draft:** *What Is Atomic Number?* (exact signed-out GB YouTube autocomplete hit; alternatives *How Did Henry Moseley Discover Atomic Number?* / *Why Is the Periodic Table Ordered by Atomic Number?*).
+- **On screen:** Frame-0 hook `COUNT THE **RUNGS**` (9.01% cap, centred), WHO card `HENRY MOSELEY · Manchester, 1913` (`2.2–5.8 s`, lower third of 16:9 band with cosine-feathered shade), exact live title *What's Really Inside an Atom?* (`9.0–14.0 s`), captions throughout (`21/21` changes), `3.0 s` loop back to `07_crystal_split_v01`.
+- **File:** `10_Shorts/hos_004_s06_moseley_atomic_number_v01.mp4` (untracked local + iCloud `HOS UAT/004_Whats-Really-Inside-An-Atom/10_Shorts/hos_004_s06_moseley_atomic_number_v01.mp4`), **26.367 s**, 64 words, 150 wpm, sha256 `849264ff34b65f17c142bb341157be7f7dcbbbe1512927c44332a17f5dfbc462`.
+- **Record & QA:** `10_Shorts/SHORT_s06_moseley_atomic_number_v01.json`, `10_Shorts/_build_short_s06_moseley_atomic_number_v01.py`, `10_Shorts/qa_s06_moseley_atomic_number_v01/polish_gate_s06_moseley_atomic_number_v01.json`, `10_Shorts/qa_s06_moseley_atomic_number_v01/picture_qa_s06_moseley_atomic_number_v01/PICTURE_QA.md`.
+
+```
+PASS  hos_004_s06_moseley_atomic_number_v01.mp4  dur=26.37s  audio=-24.3dB  motion=16.26  dhash=44aca5e9c2222737   (--air-date 2026-12-15)
+PASS  hos_004_s06_moseley_atomic_number_v01.mp4  0:26.37  mean -24.3 dB  peak -4.5 dB  150 wpm
+freezedetect: 0 events []
+polish gate PASS: 0 of 8 rows failed, 1 to look at -> 02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/qa_s06_moseley_atomic_number_v01/polish_gate_s06_moseley_atomic_number_v01.json
+picture QA PASS: 0 of 8 cuts fail, 1 to look at -> 02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/qa_s06_moseley_atomic_number_v01/picture_qa_s06_moseley_atomic_number_v01/PICTURE_QA.md, 02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/qa_s06_moseley_atomic_number_v01/picture_qa_s06_moseley_atomic_number_v01/picture_qa_review.jpg
+```
+
+**STOP:** parked for Chief review, title and slot. Nothing uploaded.
+
+## J0593 s07_outer_electrons_v01 (Test B search-titled Short, Part 05 lift) — Gemini, 18 Oct 2026
+
+- **Selection:** HOS 001, 002, 003, 004, 005, and 006 each have 3 built search-titled Test B Shorts (and 007+ do not have minted picture yet); per the tie-break rule (`004, 005, then the next locked`), `004` starts Round 4 (`s07_outer_electrons_v01`).
+- **What:** Built search-titled Test B Short `s07_outer_electrons_v01` from `004` Part 05 existing VO (`02_Voiceover/05_Master/hos_004_part05_vo_v01.mp3`, claim-first lift of indices 201–248 and 313–328, zero overlap with `s06_moseley_atomic_number_v01` indices 53–158 or with `s01`–`s05` / `backcat_gold_foil`: *"The charge in the nucleus decides how many electrons an atom holds, and the outer electrons decide how it behaves. Elements with the same kind of outer electrons end up in the same column. That's why the soft metals fizz together, and why chlorine and iodine react alike. Every element has its own number, and that number is the order of the periodic table."*), existing clean KEEP plates (`20_charge_electrons_v01` from `1.80 s`, `14_electrons_named_v01`, `15_positive_balance_v01`, `13_gaps_left_v01`, `10_two_thousand_lighter_v01`, `19_columns_why_v01`, `14_nucleus_electrons_v01`, and `20_charge_electrons_v01` loop), and Section 2 score bed (`hos004-full-sect2_score_bed_v02.mp3`). £0 spend, no upload.
+- **Title draft:** *Why Do Elements in the Same Group Have Similar Properties?* (exact signed-out GB YouTube autocomplete hit; alternatives *How Outer Electrons Shape the Periodic Table* / *Why Elements in the Same Column React Alike* / *What Do Outer Electrons Do in an Atom?*).
+- **On screen:** Frame-0 hook `OUTER **SHELL**` (9.01% cap, centred), WHO card `HENRY MOSELEY · Atomic number, 1913` (`2.2–5.8 s`, lower third of 16:9 band with cosine-feathered shade), exact live title *What's Really Inside an Atom?* (`9.0–14.0 s`), captions throughout (`20/20` changes, ratio `1.0`), `3.0 s` loop back to `20_charge_electrons_v01`.
+- **File:** `10_Shorts/hos_004_s07_outer_electrons_v01.mp4` (untracked local + iCloud `HOS UAT/004_Whats-Really-Inside-An-Atom/10_Shorts/hos_004_s07_outer_electrons_v01.mp4`), **25.333 s**, 64 words, 152 wpm, sha256 `b103251e736c3f515ef8e85b9c37b760821649c73fdeea3bb0f30bb357c93b27`.
+- **Record & QA:** `10_Shorts/SHORT_s07_outer_electrons_v01.json`, `10_Shorts/_build_short_s07_outer_electrons_v01.py`, `10_Shorts/qa_s07_outer_electrons_v01/polish_gate_s07_outer_electrons_v01.json`, `10_Shorts/qa_s07_outer_electrons_v01/picture_qa_s07_outer_electrons_v01/PICTURE_QA.md`.
+
+```
+PASS  hos_004_s07_outer_electrons_v01.mp4  dur=25.33s  audio=-24.1dB  motion=26.26  dhash=170f33296db24e06   (--air-date 2027-01-02)
+PASS  hos_004_s07_outer_electrons_v01.mp4  0:25.33  mean -24.1 dB  peak -4.9 dB  152 wpm
+freezedetect: 0 events []
+polish gate PASS: 0 of 8 rows failed, 1 to look at -> 02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/qa_s07_outer_electrons_v01/polish_gate_s07_outer_electrons_v01.json
+picture QA PASS: 0 of 8 cuts fail, 1 to look at -> 02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/qa_s07_outer_electrons_v01/picture_qa_s07_outer_electrons_v01/PICTURE_QA.md, 02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/qa_s07_outer_electrons_v01/picture_qa_s07_outer_electrons_v01/picture_qa_review.jpg
+```
+
+**STOP:** parked for Chief: Short PASS, title and slot. Nothing uploaded.
+
+## J0699 s08_plum_pudding_v01 (Test B search-titled Short, Part 03 lift) — Gemini, 20 Oct 2026
+
+- **Selection:** HOS 001, 002, 003, 004, 005, and 006 each have 4 built search-titled Test B Shorts on `main` (and 007+ do not have minted picture yet); per the tie-break rule (`004, 005, then the next locked`), `004` starts Round 5 (`s08_plum_pudding_v01`).
+- **What:** Built search-titled Test B Short `s08_plum_pudding_v01` from `004` Part 03 existing VO (`02_Voiceover/05_Master/hos_004_part03_vo_v01.mp3`, claim-first contiguous lift of indices 139–202 / `59.60–88.98 s`, zero overlap with `s04_cathode_rays_v01` indices 11–70 / `5.3–31.6 s` or with `s01`–`s03`, `s05_dalton`, `backcat_gold_foil`, `s06_moseley_atomic_number`, or `s07_outer_electrons`: *"Every atom carries these tiny negative particles. Thomson called them corpuscles. Today we call them electrons. But atoms have no overall charge, so something positive must balance them out. A few years later, in nineteen-oh-four, Thomson made his guess: a soft ball of positive stuff with electrons dotted through it, like raisins in a pudding. It was a lovely idea. It was also wrong."*), existing clean Part 03 KEEP plates (`13_atom_cracks_v01` from `1.20 s`, `14_electrons_named_v01`, `10_two_thousand_lighter_v01`, `15_positive_balance_v01`, `16_plum_pudding_v01`, `17_raisins_settle_v01`, `19_lovely_and_wrong_v01`, and `13_atom_cracks_v01` loop), and Part 03 score bed (`hos004-part03-temp_score_bed_v01.mp3`). £0 spend, no upload.
+- **Title draft:** *What Is the Plum Pudding Model of the Atom?* (exact signed-out GB YouTube autocomplete hit; alternatives *What Was Thomson's Plum Pudding Model?* / *Why Did Thomson Propose the Plum Pudding Model?*).
+- **On screen:** Frame-0 hook `PLUM **MODEL**` (9.01% cap, centred), WHO card `J.J. THOMSON · Plum pudding model, 1904` (`2.3–5.9 s`, lower third of 16:9 band with cosine-feathered shade), exact live title *What's Really Inside an Atom?* (`9.0–14.0 s`), captions throughout (`19/19` changes, ratio `1.0`), `3.0 s` loop back to `13_atom_cracks_v01`.
+- **File:** `10_Shorts/hos_004_s08_plum_pudding_v01.mp4` (untracked local + iCloud `HOS UAT/004_Whats-Really-Inside-An-Atom/10_Shorts/hos_004_s08_plum_pudding_v01.mp4`), **25.033 s**, 64 words, 158 wpm, sha256 `5ddd8c32f45c7d0c41cf8b62479b73d5e5f238742a9d22f580778671713b722f`.
+- **Record & QA:** `10_Shorts/SHORT_s08_plum_pudding_v01.json`, `10_Shorts/_build_short_s08_plum_pudding_v01.py`, `10_Shorts/qa_s08_plum_pudding_v01/polish_gate_s08_plum_pudding_v01.json`, `10_Shorts/qa_s08_plum_pudding_v01/picture_qa_s08_plum_pudding_v01/PICTURE_QA.md`.
+
+```
+PASS  hos_004_s08_plum_pudding_v01.mp4  dur=25.03s  audio=-22.9dB  motion=22.32  dhash=004e844c468486a4   (--air-date 2027-01-08)
+PASS  hos_004_s08_plum_pudding_v01.mp4  0:25.03  mean -22.9 dB  peak -3.8 dB  158 wpm
+freezedetect: 0 events []
+polish gate PASS: 0 of 8 rows failed, 1 to look at -> 02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/qa_s08_plum_pudding_v01/polish_gate_s08_plum_pudding_v01.json
+picture QA PASS: 0 of 8 cuts fail, 1 to look at -> 02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/qa_s08_plum_pudding_v01/picture_qa_s08_plum_pudding_v01/PICTURE_QA.md, 02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/qa_s08_plum_pudding_v01/picture_qa_s08_plum_pudding_v01/picture_qa_review.jpg
+```
+
+**STOP:** parked for Chief: Short PASS, title and slot. Nothing uploaded.
+

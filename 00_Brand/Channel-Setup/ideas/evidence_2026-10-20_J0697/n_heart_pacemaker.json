@@ -1,0 +1,157 @@
+{
+ "pulled": "2026-10-19",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "how the heart pumps blood",
+  "cardiac conduction electrocardiogram"
+ ],
+ "autocomplete": {
+  "how the heart pumps blood": [
+   "how the heart pumps blood",
+   "how the heart pumps blood around the body",
+   "how the heart pumps blood animation",
+   "how the heart pumps blood to the body",
+   "how the heart pumps blood through the body",
+   "how the heart pumps blood for dummies",
+   "how the heart pumps blood step by step",
+   "how the heart pumps blood dr binocs",
+   "how the heart pumps blood anatomy and physiology"
+  ],
+  "cardiac conduction electrocardiogram": []
+ },
+ "sharedTitleWords": [
+  "the heart",
+  "circulatory system",
+  "heart part",
+  "crash course",
+  "course anatomy",
+  "anatomy physiology",
+  "system and"
+ ],
+ "neighbours": [
+  {
+   "id": "Ab9OZsDECZw",
+   "title": "How blood pressure works - Wilfred Manzano",
+   "channel": "TED-Ed",
+   "views": "17,979,182 views",
+   "age": "11 yr ago",
+   "length": "4:32",
+   "tier": 1,
+   "viewCount": 17979182,
+   "foundBy": "ted-ed how the heart pumps blood",
+   "onTopic": true
+  },
+  {
+   "id": "3_PYnWVoUzM",
+   "title": "What happens during a heart attack? - Krishna Sudhir",
+   "channel": "TED-Ed",
+   "views": "9,145,856 views",
+   "age": "9 yr ago",
+   "length": "4:54",
+   "tier": 1,
+   "viewCount": 9145856,
+   "foundBy": "ted-ed how the heart pumps blood",
+   "onTopic": true
+  },
+  {
+   "id": "o1z2DfFZBS4",
+   "title": "How does heart transplant surgery work? - Roni Shanoada",
+   "channel": "TED-Ed",
+   "views": "4,558,884 views",
+   "age": "4 yr ago",
+   "length": "5:09",
+   "tier": 1,
+   "viewCount": 4558884,
+   "foundBy": "ted-ed how the heart pumps blood",
+   "onTopic": true
+  },
+  {
+   "id": "ruM4Xxhx32U",
+   "title": "How the heart actually pumps blood - Edmond Hui",
+   "channel": "TED-Ed",
+   "views": "4,471,285 views",
+   "age": "12 yr ago",
+   "length": "4:28",
+   "tier": 1,
+   "viewCount": 4471285,
+   "foundBy": "how the heart pumps blood",
+   "onTopic": true
+  },
+  {
+   "id": "X9ZZ6tcxArI",
+   "title": "The Heart, Part 1 - Under Pressure: Crash Course Anatomy & Physiology #25",
+   "channel": "CrashCourse",
+   "views": "8,130,579 views",
+   "age": "11 yr ago",
+   "length": "10:08",
+   "tier": 2,
+   "viewCount": 8130579,
+   "foundBy": "how the heart pumps blood",
+   "onTopic": true
+  },
+  {
+   "id": "_vZ0lefPg_0",
+   "title": "Circulatory System and Pathway of Blood Through the Heart",
+   "channel": "Amoeba Sisters",
+   "views": "7,501,565 views",
+   "age": "6 yr ago",
+   "length": "8:14",
+   "tier": 2,
+   "viewCount": 7501565,
+   "foundBy": "how the heart pumps blood",
+   "onTopic": true
+  },
+  {
+   "id": "FLBMwcvOaEo",
+   "title": "The Heart, Part 2 - Heart Throbs: Crash Course Anatomy & Physiology #26",
+   "channel": "CrashCourse",
+   "views": "3,307,265 views",
+   "age": "11 yr ago",
+   "length": "9:34",
+   "tier": 2,
+   "viewCount": 3307265,
+   "foundBy": "ted-ed cardiac conduction electrocardiogram",
+   "onTopic": true
+  },
+  {
+   "id": "QhiVnFvshZg",
+   "title": "Circulatory system and the heart | Human anatomy and physiology | Health & Medicine | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "1,333,735 views",
+   "age": "16 yr ago",
+   "length": "14:57",
+   "tier": 2,
+   "viewCount": 1333735,
+   "foundBy": "khan academy how the heart pumps blood",
+   "onTopic": true
+  },
+  {
+   "id": "31nyaBdC-q8",
+   "title": "The Circulatory System & The Heart (2027/28 Exams)",
+   "channel": "Cognito",
+   "views": "608,419 views",
+   "age": "1 yr ago",
+   "length": "6:51",
+   "tier": 2,
+   "viewCount": 608419,
+   "foundBy": "how the heart pumps blood",
+   "onTopic": true
+  },
+  {
+   "id": "bzZdJn7elaU",
+   "title": "Conduction System of the Heart",
+   "channel": "Amoeba Sisters",
+   "views": "235,835 views",
+   "age": "11 mo ago",
+   "length": "12:08",
+   "tier": 2,
+   "viewCount": 235835,
+   "foundBy": "cardiac conduction electrocardiogram",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 8,
+ "gate": "PASS",
+ "hasTed": true,
+ "failedQueries": []
+}

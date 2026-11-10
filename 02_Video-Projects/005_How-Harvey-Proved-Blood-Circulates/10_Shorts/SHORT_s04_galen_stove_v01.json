@@ -1,0 +1,143 @@
+{
+  "id": "s04_galen_stove",
+  "job": "J0151",
+  "test": "B (search-titled)",
+  "air_date_draft": "2026-11-22",
+  "file": "10_Shorts/hos_005_s04_galen_stove_v01.mp4",
+  "sha256": "c4971738d14c64fc347f054fa4c12dbe1c03d08622ebbab8c3bb3e0ba83fea4f",
+  "duration_s": 24.367,
+  "vo_source": "02_Voiceover/part02_the_liver_that_made_blood_v01_raw.mp3",
+  "vo_window_raw_s": [
+    11.0,
+    35.3
+  ],
+  "vo_s": 23.785,
+  "words": 61,
+  "max_pause_s": 0.6,
+  "bed": "hos005-part02-temp_score_bed_v01.mp3",
+  "bed_gain_db": -19.7,
+  "hook": "NOT A PUMP",
+  "hook_layer": {
+    "font_size": 243,
+    "cap_px": 173,
+    "cap_pct": 9.01,
+    "lines": 3,
+    "block_pct": [
+      33.6,
+      66.4
+    ],
+    "widest_pct": 67.5
+  },
+  "who_card": {
+    "name": "GALEN",
+    "line2": "Rome, c. AD 170",
+    "line1_px": 72,
+    "line1_pct_of_band": 12.0,
+    "band": [
+      656,
+      1264
+    ],
+    "in_s": 2.2,
+    "out_s": 5.6,
+    "fade_s": 0.35
+  },
+  "title_on_screen": "The Tied Arm That Proved Your Blood Circulates",
+  "youtube_title_draft": "Is the Heart a Pump?",
+  "plan": [
+    {
+      "t0": 0.0,
+      "t1": 2.154,
+      "plate": "04_Generated-Clips/part02/raw/v01/05_heart_stove_t1.mp4",
+      "in_s": 0.3,
+      "crop_x": 656,
+      "lands_on": 0
+    },
+    {
+      "t0": 2.154,
+      "t1": 7.027,
+      "plate": "04_Generated-Clips/part02/raw/v01/03_eat_to_liver_t1.mp4",
+      "in_s": 0.3,
+      "crop_x": 656,
+      "lands_on": "You"
+    },
+    {
+      "t0": 7.027,
+      "t1": 9.43,
+      "plate": "04_Generated-Clips/part02/raw/v01/03_eat_to_liver_t1.mp4",
+      "in_s": 4.2,
+      "crop_x": 656,
+      "lands_on": "liver"
+    },
+    {
+      "t0": 9.43,
+      "t1": 13.434,
+      "plate": "04_Generated-Clips/part02/raw/v01/04_veins_soak_t1.mp4",
+      "in_s": 0.3,
+      "crop_x": 656,
+      "lands_on": "Your"
+    },
+    {
+      "t0": 13.434,
+      "t1": 16.474,
+      "plate": "04_Generated-Clips/part02/raw/v01/04_veins_soak_t1.mp4",
+      "in_s": 4.3,
+      "crop_x": 656,
+      "lands_on": "and"
+    },
+    {
+      "t0": 16.474,
+      "t1": 20.335,
+      "plate": "04_Generated-Clips/part02/raw/v01/06_septum_holes_t1.mp4",
+      "in_s": 0.3,
+      "crop_x": 656,
+      "lands_on": "The"
+    },
+    {
+      "t0": 20.335,
+      "t1": 24.335,
+      "plate": "04_Generated-Clips/part02/raw/v01/05_heart_stove_t1.mp4",
+      "in_s": 0.3,
+      "crop_x": 656,
+      "lands_on": "loop"
+    }
+  ],
+  "captions": 19,
+  "caption_check": {
+    "ok": true,
+    "changes": 19,
+    "ratio": 1.0
+  },
+  "gate": {
+    "exit": 0,
+    "output": "PASS  hos_005_s04_galen_stove_v01.mp4  dur=24.37s  audio=-23.2dB  motion=19.96  dhash=dccb39d96f6d6c7a\n   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_005_s04_galen_stove_v01_open_sheet.jpg"
+  },
+  "vo_check": {
+    "exit": 0,
+    "output": "PASS  hos_005_s04_galen_stove_v01.mp4  0:24.37  mean -23.2 dB  peak -4.6 dB  150 wpm"
+  },
+  "freezedetect_starts": [],
+  "stills": [
+    "10_Shorts/_work_s04_galen_stove_v01/hos_005_s04_galen_stove_v01_t000.0.jpg",
+    "10_Shorts/_work_s04_galen_stove_v01/hos_005_s04_galen_stove_v01_t003.5.jpg",
+    "10_Shorts/_work_s04_galen_stove_v01/hos_005_s04_galen_stove_v01_t011.5.jpg",
+    "10_Shorts/_work_s04_galen_stove_v01/hos_005_s04_galen_stove_v01_t023.4.jpg"
+  ],
+  "icloud": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s04_galen_stove_v01.mp4",
+  "autocomplete_check": {
+    "date": "2026-10-12",
+    "source": "suggestqueries client=youtube ds=yt gl=GB signed-out",
+    "hits": [
+      "is the heart a pump",
+      "how is blood made in the body"
+    ],
+    "no_hits": [
+      "why did people think the heart",
+      "what did galen believe about the heart",
+      "galen heart",
+      "what did ancient people think the heart"
+    ],
+    "note": "'is the heart a pump' also suggests 'the heart is not a pump thomas cowan' (pseudoscience); the Short frames Galen's no as the old wrong belief. Alt 'How Is Blood Made in the Body?' is a hit but the Short gives Galen's wrong answer, so not recommended. Chief's call."
+  },
+  "air_date_draft_note": "2026-11-22 used for the gate only (clear of A 30 Oct, B 8 Nov, C 15 Nov); slot is Chief's call",
+  "who_card_note": "card over the eating figure (03_eat_to_liver) may read as a portrait of Galen; long's own label text"
+}

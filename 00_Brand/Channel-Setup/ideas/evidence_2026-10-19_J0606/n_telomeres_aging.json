@@ -1,0 +1,160 @@
+{
+ "pulled": "2026-10-19",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "aging cells telomeres",
+  "why do our bodies age"
+ ],
+ "autocomplete": {
+  "aging cells telomeres": [],
+  "why do our bodies age": [
+   "why do our bodies age"
+  ]
+ },
+ "sharedTitleWords": [
+  "stem cells",
+  "david sinclair",
+  "cells and",
+  "school biology",
+  "biology khan",
+  "khan academy"
+ ],
+ "neighbours": [
+  {
+   "id": "22lGbAVWhro",
+   "title": "The immortal cells of Henrietta Lacks - Robin Bulleri",
+   "channel": "TED-Ed",
+   "views": "6,234,147 views",
+   "age": "10 yr ago",
+   "length": "4:27",
+   "tier": 1,
+   "viewCount": 6234147,
+   "foundBy": "ted-ed aging cells telomeres",
+   "onTopic": true
+  },
+  {
+   "id": "GASaqPv0t0g",
+   "title": "Why do our bodies age? - Monica Menesini",
+   "channel": "TED-Ed",
+   "views": "3,178,711 views",
+   "age": "10 yr ago",
+   "length": "5:10",
+   "tier": 1,
+   "viewCount": 3178711,
+   "foundBy": "ted-ed aging cells telomeres",
+   "onTopic": true
+  },
+  {
+   "id": "evH0I7Coc54",
+   "title": "What are stem cells? - Craig A. Kohn",
+   "channel": "TED-Ed",
+   "views": "2,328,809 views",
+   "age": "13 yr ago",
+   "length": "4:11",
+   "tier": 1,
+   "viewCount": 2328809,
+   "foundBy": "ted-ed aging cells telomeres",
+   "onTopic": true
+  },
+  {
+   "id": "cLZEEOZlTzo",
+   "title": "Is Aging Reversible? A Scientific Look with David Sinclair | David Sinclair | TEDxBoston",
+   "channel": "TEDx Talks",
+   "views": "1,010,549 views",
+   "age": "4 yr ago",
+   "length": "14:15",
+   "tier": 1,
+   "viewCount": 1010549,
+   "foundBy": "aging cells telomeres ted",
+   "onTopic": true
+  },
+  {
+   "id": "2wseM6wWd74",
+   "title": "The science of cells that never get old | Elizabeth Blackburn",
+   "channel": "TED",
+   "views": "625,356 views",
+   "age": "8 yr ago",
+   "length": "18:47",
+   "tier": 1,
+   "viewCount": 625356,
+   "foundBy": "aging cells telomeres",
+   "onTopic": true
+  },
+  {
+   "id": "GoJsr4IwCm4",
+   "title": "Why Age? Should We End Aging Forever?",
+   "channel": "Kurzgesagt – In a Nutshell",
+   "views": "8,987,825 views",
+   "age": "8 yr ago",
+   "length": "6:48",
+   "tier": 2,
+   "viewCount": 8987825,
+   "foundBy": "why do our bodies age",
+   "onTopic": true
+  },
+  {
+   "id": "YE2peDF4Zqg",
+   "title": "Organization in the human body | Cells and organisms | Middle school biology | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "183,330 views",
+   "age": "4 yr ago",
+   "length": "4:14",
+   "tier": 2,
+   "viewCount": 183330,
+   "foundBy": "khan academy why do our bodies age",
+   "onTopic": true
+  },
+  {
+   "id": "mQcT5JyosY4",
+   "title": "How could we reverse aging? | Ronald DePinho | TEDxFordhamUniversity",
+   "channel": "TEDx Talks",
+   "views": "83,219 views",
+   "age": "1 yr ago",
+   "length": "12:30",
+   "tier": 1,
+   "viewCount": 83219,
+   "foundBy": "ted-ed aging cells telomeres",
+   "onTopic": true
+  },
+  {
+   "id": "jYYzBSZ-yEw",
+   "title": "Aging and Stem Cells | Theodore Ho | TEDxMiddlebury",
+   "channel": "TEDx Talks",
+   "views": "52,326 views",
+   "age": "6 yr ago",
+   "length": "17:02",
+   "tier": 1,
+   "viewCount": 52326,
+   "foundBy": "ted-ed aging cells telomeres",
+   "onTopic": true
+  },
+  {
+   "id": "jOBRupYkyaw",
+   "title": "Stem cells and differentiation | From cells to organisms | High school biology | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "24,372 views",
+   "age": "2 yr ago",
+   "length": "6:44",
+   "tier": 2,
+   "viewCount": 24372,
+   "foundBy": "khan academy aging cells telomeres",
+   "onTopic": true
+  },
+  {
+   "id": "sYhmWJG_N1A",
+   "title": "A Talk About Telomeres | Derek Taylor | TEDxSolonHighSchool",
+   "channel": "TEDx Talks",
+   "views": "1,367 views",
+   "age": "7 yr ago",
+   "length": "17:27",
+   "tier": 1,
+   "viewCount": 1367,
+   "foundBy": "ted-ed aging cells telomeres",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 5,
+ "gate": "PASS",
+ "hasTed": true,
+ "failedQueries": []
+}

@@ -1,0 +1,122 @@
+{
+ "pulled": "2026-10-18",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "how earthquakes work richter scale",
+  "inge lehmann"
+ ],
+ "autocomplete": {
+  "how earthquakes work richter scale": [],
+  "inge lehmann": [
+   "inge lehmann",
+   "inge lehmann discovery",
+   "inge lehmann pronunciation",
+   "inge lehmann para niños"
+  ]
+ },
+ "sharedTitleWords": [
+  "the future"
+ ],
+ "neighbours": [
+  {
+   "id": "Wx9vPv-T51I",
+   "title": "How tsunamis work - Alex Gendler",
+   "channel": "TED-Ed",
+   "views": "9,255,725 views",
+   "age": "12 yr ago",
+   "length": "3:37",
+   "tier": 1,
+   "viewCount": 9255725,
+   "foundBy": "ted-ed how earthquakes work richter scale",
+   "onTopic": true
+  },
+  {
+   "id": "H4VQul_SmCg",
+   "title": "Why do buildings fall in earthquakes? - Vicki V. May",
+   "channel": "TED-Ed",
+   "views": "1,896,566 views",
+   "age": "11 yr ago",
+   "length": "4:51",
+   "tier": 1,
+   "viewCount": 1896566,
+   "foundBy": "ted-ed how earthquakes work richter scale",
+   "onTopic": true
+  },
+  {
+   "id": "jhRuUoTnA6g",
+   "title": "Why are earthquakes so hard to predict? - Jean-Baptiste P. Koehl",
+   "channel": "TED-Ed",
+   "views": "1,385,879 views",
+   "age": "7 yr ago",
+   "length": "4:54",
+   "tier": 1,
+   "viewCount": 1385879,
+   "foundBy": "ted-ed how earthquakes work richter scale",
+   "onTopic": true
+  },
+  {
+   "id": "RFn-IGlayAg",
+   "title": "Richter scale | Logarithms | Algebra II | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "170,500 views",
+   "age": "15 yr ago",
+   "length": "11:20",
+   "tier": 2,
+   "viewCount": 170500,
+   "foundBy": "khan academy how earthquakes work richter scale",
+   "onTopic": true
+  },
+  {
+   "id": "G-MqBGiJdQw",
+   "title": "The value of silence in a noisy world | Olga Lehmann | TEDxTrondheim",
+   "channel": "TEDx Talks",
+   "views": "60,588 views",
+   "age": "2 yr ago",
+   "length": "17:30",
+   "tier": 1,
+   "viewCount": 60588,
+   "foundBy": "inge lehmann ted",
+   "onTopic": true
+  },
+  {
+   "id": "jvWEwp0e-D8",
+   "title": "Creativity and Brains | Konrad Lehmann | TEDxUniMannheim",
+   "channel": "TEDx Talks",
+   "views": "965 views",
+   "age": "6 yr ago",
+   "length": "18:16",
+   "tier": 1,
+   "viewCount": 965,
+   "foundBy": "inge lehmann ted",
+   "onTopic": true
+  },
+  {
+   "id": "3CU7RVpTgIk",
+   "title": "The Desert City of the Future: Sustainable Innovations | Dr. Steffen Lehmann | TEDxUNLV",
+   "channel": "TEDx Talks",
+   "views": "843 views",
+   "age": "2 yr ago",
+   "length": "13:02",
+   "tier": 1,
+   "viewCount": 843,
+   "foundBy": "inge lehmann ted",
+   "onTopic": true
+  },
+  {
+   "id": "6rqiH_pOpxA",
+   "title": "Racing into the Future as a Television Journalist | Emerson Lehmann | TEDxBallStateUniversity",
+   "channel": "TEDx Talks",
+   "views": "290 views",
+   "age": "7 yr ago",
+   "length": "7:01",
+   "tier": 1,
+   "viewCount": 290,
+   "foundBy": "inge lehmann ted",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 3,
+ "gate": "PASS",
+ "hasTed": true,
+ "failedQueries": []
+}

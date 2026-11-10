@@ -1,0 +1,129 @@
+{
+ "pulled": "2026-10-18",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "how pandemics spread cholera epidemiology",
+  "john snow"
+ ],
+ "autocomplete": {
+  "how pandemics spread cholera epidemiology": [],
+  "john snow": [
+   "jon snow",
+   "jon snow death",
+   "jon snow resurrection",
+   "jon snow reaction",
+   "jon snow death reaction",
+   "jon snow best moments",
+   "jon snow and daenerys",
+   "jon snow edit",
+   "jon snow reveal",
+   "jon snow scene"
+  ]
+ },
+ "sharedTitleWords": [
+  "john snow",
+  "how do"
+ ],
+ "neighbours": [
+  {
+   "id": "UG8YbNbdaco",
+   "title": "How pandemics spread",
+   "channel": "TED-Ed",
+   "views": "3,503,997 views",
+   "age": "14 yr ago",
+   "length": "8:00",
+   "tier": 1,
+   "viewCount": 3503997,
+   "foundBy": "how pandemics spread cholera epidemiology",
+   "onTopic": true
+  },
+  {
+   "id": "yxonJTWhBJQ",
+   "title": "How do germs spread (and why do they make us sick)? - Yannay Khaikin and Nicole Mideo",
+   "channel": "TED-Ed",
+   "views": "1,033,915 views",
+   "age": "11 yr ago",
+   "length": "5:07",
+   "tier": 1,
+   "viewCount": 1033915,
+   "foundBy": "ted-ed how pandemics spread cholera epidemiology",
+   "onTopic": true
+  },
+  {
+   "id": "TLpzHHbFrHY",
+   "title": "England: The Broad Street Pump - You Know Nothing, John Snow - Extra History - Part 1",
+   "channel": "Extra History",
+   "views": "2,884,671 views",
+   "age": "10 yr ago",
+   "length": "7:34",
+   "tier": 2,
+   "viewCount": 2884671,
+   "foundBy": "ted-ed john snow",
+   "onTopic": true
+  },
+  {
+   "id": "wyWy4PouQxQ",
+   "title": "Snow on Friday | Addition and subtraction within 100 | Early Math | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "170,351 views",
+   "age": "11 yr ago",
+   "length": "4:18",
+   "tier": 2,
+   "viewCount": 170351,
+   "foundBy": "khan academy john snow",
+   "onTopic": true
+  },
+  {
+   "id": "_Uwwhudc-CQ",
+   "title": "The Real Story of John Snow",
+   "channel": "SciShow",
+   "views": "153,364 views",
+   "age": "7 yr ago",
+   "length": "5:40",
+   "tier": 2,
+   "viewCount": 153364,
+   "foundBy": "ted-ed john snow",
+   "onTopic": true
+  },
+  {
+   "id": "CoQuaDKV3xk",
+   "title": "How to make pandemics optional, not inevitable | Sonia Shah",
+   "channel": "TED",
+   "views": "53,644 views",
+   "age": "6 yr ago",
+   "length": "43:46",
+   "tier": 1,
+   "viewCount": 53644,
+   "foundBy": "how pandemics spread cholera epidemiology ted",
+   "onTopic": true
+  },
+  {
+   "id": "hkUCrTfgaw8",
+   "title": "What Did John Snow Know About Cholera? - with James Grime",
+   "channel": "The Royal Institution",
+   "views": "25,084 views",
+   "age": "5 yr ago",
+   "length": "7:15",
+   "tier": 2,
+   "viewCount": 25084,
+   "foundBy": "ted-ed john snow",
+   "onTopic": true
+  },
+  {
+   "id": "hO8dOplwTcs",
+   "title": "How Do Pandemics Get Around the World?",
+   "channel": "The Royal Institution",
+   "views": "15,307 views",
+   "age": "4 yr ago",
+   "length": "2:24",
+   "tier": 2,
+   "viewCount": 15307,
+   "foundBy": "ted-ed how pandemics spread cholera epidemiology",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 3,
+ "gate": "PASS",
+ "hasTed": true,
+ "failedQueries": []
+}

@@ -1,0 +1,13 @@
+[
+  {
+    "row": "code_graphic_comp_card_05",
+    "timeline_in": 0.0,
+    "timeline_out": 3.0,
+    "source": "code_graphic_comp_card_05.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  }
+]

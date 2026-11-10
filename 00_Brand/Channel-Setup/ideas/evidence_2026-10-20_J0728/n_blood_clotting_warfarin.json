@@ -1,0 +1,244 @@
+{
+ "pulled": "2026-10-20",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "how does blood clot",
+  "how does a wound heal"
+ ],
+ "autocomplete": {
+  "how does blood clot": [
+   "how does blood clotting occur",
+   "how does blood clot",
+   "how does blood clot look like",
+   "how does blood clot form",
+   "how does blood clot in brain",
+   "how does blood clot aumsum",
+   "how does blood clot look after tooth extraction"
+  ],
+  "how does a wound heal": [
+   "how does a wound heal",
+   "how does a wound heal itself",
+   "how does a wound heal animation",
+   "how does a cut heal",
+   "how does a burn wound heal",
+   "how do wounds heal dr binocs",
+   "how do wounds heal faster",
+   "how do our wounds heal",
+   "how does c section wound heal",
+   "how a wound heals itself"
+  ]
+ },
+ "sharedTitleWords": [
+  "how does"
+ ],
+ "neighbours": [
+  {
+   "id": "Ab9OZsDECZw",
+   "title": "How blood pressure works - Wilfred Manzano",
+   "channel": "TED-Ed",
+   "views": "17,980,144 views",
+   "age": "11 yr ago",
+   "length": "4:32",
+   "tier": 1,
+   "viewCount": 17980144,
+   "foundBy": "ted-ed how does blood clot",
+   "onTopic": true
+  },
+  {
+   "id": "xfZhb6lmxjk",
+   "title": "Why do blood types matter? - Natalie S. Hodge",
+   "channel": "TED-Ed",
+   "views": "6,752,194 views",
+   "age": "11 yr ago",
+   "length": "4:42",
+   "tier": 1,
+   "viewCount": 6752194,
+   "foundBy": "ted-ed how does blood clot",
+   "onTopic": true
+  },
+  {
+   "id": "TLVwELDMDWs",
+   "title": "How a wound heals itself - Sarthak Sinha",
+   "channel": "TED-Ed",
+   "views": "6,541,205 views",
+   "age": "11 yr ago",
+   "length": "4:01",
+   "tier": 1,
+   "viewCount": 6541205,
+   "foundBy": "ted-ed how does blood clot",
+   "onTopic": true
+  },
+  {
+   "id": "RgWQCGX3MOk",
+   "title": "How does chemotherapy work? - Hyunsoo Joshua No",
+   "channel": "TED-Ed",
+   "views": "6,232,002 views",
+   "age": "6 yr ago",
+   "length": "5:26",
+   "tier": 1,
+   "viewCount": 6232002,
+   "foundBy": "ted-ed how does a wound heal",
+   "onTopic": true
+  },
+  {
+   "id": "PSRJfaAYkW4",
+   "title": "How does your immune system work? - Emma Bryce",
+   "channel": "TED-Ed",
+   "views": "5,197,234 views",
+   "age": "8 yr ago",
+   "length": "5:23",
+   "tier": 1,
+   "viewCount": 5197234,
+   "foundBy": "ted-ed how does a wound heal",
+   "onTopic": true
+  },
+  {
+   "id": "ruM4Xxhx32U",
+   "title": "How the heart actually pumps blood - Edmond Hui",
+   "channel": "TED-Ed",
+   "views": "4,471,746 views",
+   "age": "12 yr ago",
+   "length": "4:28",
+   "tier": 1,
+   "viewCount": 4471746,
+   "foundBy": "ted-ed how does blood clot",
+   "onTopic": true
+  },
+  {
+   "id": "qcZKbjYyOfE",
+   "title": "What happens if you're injected with the wrong blood type? - Bill Schutt",
+   "channel": "TED-Ed",
+   "views": "1,422,291 views",
+   "age": "6 yr ago",
+   "length": "4:52",
+   "tier": 1,
+   "viewCount": 1422291,
+   "foundBy": "ted-ed how does blood clot",
+   "onTopic": true
+  },
+  {
+   "id": "uKHkq6S3kaU",
+   "title": "Give Your Inner Child Permission to Heal | Kristin Folts | TEDxOcala",
+   "channel": "TEDx Talks",
+   "views": "433,825 views",
+   "age": "7 yr ago",
+   "length": "11:50",
+   "tier": 1,
+   "viewCount": 433825,
+   "foundBy": "how does a wound heal ted",
+   "onTopic": true
+  },
+  {
+   "id": "dsCNuB_KBUw",
+   "title": "When time doesn't heal all wounds | Dr. Robert K. Ross | TEDxIronwoodStatePrison",
+   "channel": "TEDx Talks",
+   "views": "322,482 views",
+   "age": "12 yr ago",
+   "length": "13:08",
+   "tier": 1,
+   "viewCount": 322482,
+   "foundBy": "how does a wound heal ted",
+   "onTopic": true
+  },
+  {
+   "id": "r-YXvkWLy-g",
+   "title": "A teen scientist's invention to help wounds heal | Anushka Naiknaware",
+   "channel": "TED",
+   "views": "254,943 views",
+   "age": "8 yr ago",
+   "length": "6:59",
+   "tier": 1,
+   "viewCount": 254943,
+   "foundBy": "ted-ed how does a wound heal",
+   "onTopic": true
+  },
+  {
+   "id": "2ch5FJAqLMk",
+   "title": "How we could teach our bodies to heal faster | Kaitlyn Sadtler",
+   "channel": "TED",
+   "views": "170,683 views",
+   "age": "8 yr ago",
+   "length": "4:58",
+   "tier": 1,
+   "viewCount": 170683,
+   "foundBy": "how does a wound heal ted",
+   "onTopic": true
+  },
+  {
+   "id": "Qs9m8obl0AY",
+   "title": "Art can heal PTSD's invisible wounds | Melissa Walker",
+   "channel": "TED",
+   "views": "128,638 views",
+   "age": "9 yr ago",
+   "length": "9:49",
+   "tier": 1,
+   "viewCount": 128638,
+   "foundBy": "how does a wound heal ted",
+   "onTopic": true
+  },
+  {
+   "id": "gExUCrpAKyQ",
+   "title": "Platelets & Blood Clotting | Biology | FuseSchool",
+   "channel": "FuseSchool - Global Education",
+   "views": "1,079,912 views",
+   "age": "8 yr ago",
+   "length": "3:10",
+   "tier": 2,
+   "viewCount": 1079912,
+   "foundBy": "how does blood clot",
+   "onTopic": true
+  },
+  {
+   "id": "cLEdznnTT8s",
+   "title": "How Do Cuts Heal?",
+   "channel": "SciShow Kids",
+   "views": "700,449 views",
+   "age": "9 yr ago",
+   "length": "3:08",
+   "tier": 2,
+   "viewCount": 700449,
+   "foundBy": "how does a wound heal",
+   "onTopic": true
+  },
+  {
+   "id": "9jAkeXtL5rQ",
+   "title": "What's Better for Wounds: Scabs or Bandages?",
+   "channel": "SciShow",
+   "views": "411,157 views",
+   "age": "7 yr ago",
+   "length": "3:39",
+   "tier": 2,
+   "viewCount": 411157,
+   "foundBy": "how does a wound heal",
+   "onTopic": true
+  },
+  {
+   "id": "xY7kVVS2HVY",
+   "title": "Repairing burn wounds through skin regeneration: Fiona Wood at TEDxFlanders",
+   "channel": "TEDx Talks",
+   "views": "27,981 views",
+   "age": "13 yr ago",
+   "length": "15:58",
+   "tier": 1,
+   "viewCount": 27981,
+   "foundBy": "how does a wound heal ted",
+   "onTopic": true
+  },
+  {
+   "id": "RyLNpDSwYRc",
+   "title": "Time Does Not Heal All Wounds | Chantal Kayumba | TEDxUniversityofWindsor",
+   "channel": "TEDx Talks",
+   "views": "13,532 views",
+   "age": "7 yr ago",
+   "length": "12:29",
+   "tier": 1,
+   "viewCount": 13532,
+   "foundBy": "how does a wound heal ted",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 8,
+ "gate": "PASS",
+ "hasTed": true,
+ "failedQueries": []
+}

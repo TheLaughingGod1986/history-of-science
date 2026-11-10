@@ -1,0 +1,202 @@
+{
+  "rule": {
+    "low_detail": "FAIL: luma std < 13.44 and edge density < 0.0259 (absolute floor); WARN: luma std < 18.0 or edge density < film p5",
+    "split_panel": "full-height/width seam or gutter",
+    "split_panel_gutter": "gutter counts only with edge density >= 0.01 in the 10% band on both sides",
+    "near_black": "mean < 28.0 or p95 < 50.0",
+    "noise": "grain std > 6 over structure std < 12, and the 8x-downscaled frame under the low-detail floor (std < 13.44 and edge density < 0.0259)",
+    "jitter": "centre-patch phase correlation: reversal against trend or > 0.35 px off trend"
+  },
+  "low_detail_floor": {
+    "std": 13.44,
+    "edge": 0.0259,
+    "calibration": {
+      "video": "025_MarsRobot_full_rough_v02d.mp4",
+      "factor": 1.2,
+      "frames": [
+        {
+          "source": "PIA22223.jpg",
+          "t": 201.0,
+          "std": 12.1,
+          "edge": 0.0223
+        },
+        {
+          "source": "PIA22223.jpg",
+          "t": 216.3,
+          "std": 11.2,
+          "edge": 0.0216
+        },
+        {
+          "source": "PIA22929.jpg",
+          "t": 297.4,
+          "std": 26.54,
+          "edge": 0.5735
+        }
+      ]
+    }
+  },
+  "video": "02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/hos_006_s07_priestley_mint_v01.mp4",
+  "edge_floor": 0.0459,
+  "verdict": "PASS",
+  "failed": [],
+  "warn": [
+    {
+      "row": "s06_It",
+      "cut": 5,
+      "t": 17.74,
+      "source": "15_quill_vegetable_t1.mp4",
+      "why": [
+        "low detail: edge density 0.0437 < film p5 0.0459"
+      ]
+    }
+  ],
+  "reviewed_ok": [],
+  "rows": [
+    {
+      "cut": 0,
+      "row": "s01_0",
+      "source": "11_candle_tall_t1.mp4",
+      "t": 1.62,
+      "std": 74.61,
+      "mean": 135.01,
+      "p95": 238.0,
+      "edge": 0.1018,
+      "hf": 16.52,
+      "lf": 67.91,
+      "std8": 69.73,
+      "edge8": 0.3456,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 1,
+      "row": "s02_flame",
+      "source": "08_candles_out_t1.mp4",
+      "t": 4.44,
+      "std": 69.21,
+      "mean": 157.44,
+      "p95": 239.0,
+      "edge": 0.0589,
+      "hf": 8.74,
+      "lf": 66.08,
+      "std8": 66.89,
+      "edge8": 0.2536,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 2,
+      "row": "s03_behind",
+      "source": "07_priestley_t1.mp4",
+      "t": 7.03,
+      "std": 46.64,
+      "mean": 99.62,
+      "p95": 210.0,
+      "edge": 0.0666,
+      "hf": 11.27,
+      "lf": 40.54,
+      "std8": 42.88,
+      "edge8": 0.2973,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 3,
+      "row": "s04_He",
+      "source": "10_mint_jar_t1.mp4",
+      "t": 10.72,
+      "std": 66.2,
+      "mean": 110.78,
+      "p95": 239.0,
+      "edge": 0.0766,
+      "hf": 11.56,
+      "lf": 62.5,
+      "std8": 63.45,
+      "edge8": 0.2706,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 4,
+      "row": "s05_Ten",
+      "source": "06_collect_blaze_t3.mp4",
+      "t": 14.86,
+      "std": 61.06,
+      "mean": 156.46,
+      "p95": 238.0,
+      "edge": 0.0501,
+      "hf": 8.27,
+      "lf": 56.66,
+      "std8": 58.38,
+      "edge8": 0.3748,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 5,
+      "row": "s06_It",
+      "source": "15_quill_vegetable_t1.mp4",
+      "t": 17.74,
+      "std": 72.14,
+      "mean": 144.18,
+      "p95": 240.0,
+      "edge": 0.0437,
+      "hf": 7.33,
+      "lf": 69.22,
+      "std8": 70.06,
+      "edge8": 0.2829,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0437 < film p5 0.0459"
+      ]
+    },
+    {
+      "cut": 6,
+      "row": "s07_Something",
+      "source": "14_trees_breathe_t1.mp4",
+      "t": 19.77,
+      "std": 56.92,
+      "mean": 147.98,
+      "p95": 218.0,
+      "edge": 0.0578,
+      "hf": 8.48,
+      "lf": 55.12,
+      "std8": 55.35,
+      "edge8": 0.1646,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 7,
+      "row": "s08_loop",
+      "source": "loop_end_11_candle_tall_t1.mp4",
+      "t": 22.23,
+      "std": 73.21,
+      "mean": 135.94,
+      "p95": 239.0,
+      "edge": 0.0769,
+      "hf": 10.54,
+      "lf": 69.93,
+      "std8": 70.72,
+      "edge8": 0.2914,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    }
+  ]
+}

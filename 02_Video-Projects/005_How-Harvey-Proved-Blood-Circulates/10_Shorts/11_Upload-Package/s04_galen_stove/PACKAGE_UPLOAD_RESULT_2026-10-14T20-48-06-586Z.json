@@ -1,0 +1,103 @@
+{
+  "ok": true,
+  "dryRun": false,
+  "method": "youtube_data_api_package",
+  "upload": {
+    "published": true,
+    "scheduledOnPlatform": true,
+    "scheduledFor": "2026-10-31T11:30:00.000Z",
+    "platformPostId": "5n7xFQRBUvI",
+    "platformUrl": "https://youtu.be/5n7xFQRBUvI",
+    "message": "Uploaded to YouTube; scheduled to go live at 2026-10-31T11:30:00.000Z; thumbnail set",
+    "responseSummary": "{\"id\":\"5n7xFQRBUvI\",\"privacyStatus\":\"private\",\"publishAt\":\"2026-10-31T11:30:00.000Z\"}"
+  },
+  "package": {
+    "title": "Is the Heart a Pump?",
+    "format": "shorts",
+    "privacy": "private",
+    "tagCount": 7,
+    "hasPinnedComment": false,
+    "thumbnailPath": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/covers_v02/hos_005_s04_galen_stove_cover_v02.jpg",
+    "scheduledAt": "2026-10-31T11:30:00.000Z",
+    "sources": {
+      "manifest": "/private/tmp/j0188-hos-finish/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/11_Upload-Package/s04_galen_stove/PACKAGE_MANIFEST.json",
+      "video": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s04_galen_stove_v01.mp4",
+      "thumbnail": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/covers_v02/hos_005_s04_galen_stove_cover_v02.jpg"
+    }
+  },
+  "postUpload": {
+    "firstCommentPosted": false,
+    "commentMessage": null,
+    "playlistAdded": false,
+    "playlistMessage": null
+  },
+  "studioFinish": {
+    "videoId": "5n7xFQRBUvI",
+    "studioEditUrl": "https://studio.youtube.com/video/5n7xFQRBUvI/edit",
+    "items": [
+      {
+        "id": "api_metadata",
+        "required": true,
+        "status": "api_done",
+        "title": "Title · description · tags · schedule · video",
+        "detail": "Uploaded via YouTube Data API"
+      },
+      {
+        "id": "primary_thumbnail",
+        "required": true,
+        "status": "api_done",
+        "title": "Primary thumbnail",
+        "detail": "Set via thumbnails.set",
+        "studioUrlHint": "https://studio.youtube.com/video/5n7xFQRBUvI/edit"
+      },
+      {
+        "id": "title_thumb_abc",
+        "required": false,
+        "status": "n/a",
+        "title": "Title + thumbnail ABC (Test & Compare)",
+        "detail": "A/B Testing not available for Shorts",
+        "studioUrlHint": "https://studio.youtube.com/video/5n7xFQRBUvI/edit"
+      },
+      {
+        "id": "first_comment",
+        "required": false,
+        "status": "n/a",
+        "title": "First / pinned comment text",
+        "detail": "No pinned comment file in package",
+        "studioUrlHint": "https://studio.youtube.com/video/5n7xFQRBUvI/comments"
+      },
+      {
+        "id": "pin_comment",
+        "required": false,
+        "status": "n/a",
+        "title": "Pin the comment",
+        "detail": "Studio only — no official Data API pin endpoint",
+        "studioUrlHint": "https://studio.youtube.com/video/5n7xFQRBUvI/comments"
+      },
+      {
+        "id": "related_watch_next",
+        "required": true,
+        "status": "pending_studio",
+        "title": "Related / watch next (full film)",
+        "detail": "Set Related video to wwcjcFfC-5M in Studio (Shorts)",
+        "studioUrlHint": "https://studio.youtube.com/video/5n7xFQRBUvI/edit"
+      },
+      {
+        "id": "end_screens_cards",
+        "required": false,
+        "status": "n/a",
+        "title": "End screen + cards",
+        "detail": "Studio only — subscribe + best next video",
+        "studioUrlHint": "https://studio.youtube.com/video/5n7xFQRBUvI/edit"
+      },
+      {
+        "id": "playlist",
+        "required": false,
+        "status": "n/a",
+        "title": "Add to playlist",
+        "detail": "No playlistId in manifest"
+      }
+    ],
+    "summary": "API upload done (5n7xFQRBUvI). 1 required Studio finish step(s) remain."
+  }
+}

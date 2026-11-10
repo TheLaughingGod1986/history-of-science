@@ -1,0 +1,55 @@
+{
+  "film": "002",
+  "video": "AL_-qlWko_g",
+  "job": "J0255",
+  "variant": "B",
+  "maker": "cursor",
+  "hook": "THE MISSING ELEMENT",
+  "punch": "MISSING",
+  "jpg": "Selected/hos_002_thumb_B_missing_element_v01.jpg",
+  "sha256": "bf0ca224fc59bf287277a4d6477750be9cae1645ea7be437e6cb7ee5f72e644c",
+  "plate": "_stills_v05/hos_002_empty_slot_hero_v01.jpg",
+  "method": "reletter_existing_plate_GeorgiaBold_no_image_model",
+  "spend": 0,
+  "lettering": [
+    {
+      "word": "THE",
+      "size": 92,
+      "box": [
+        44,
+        92,
+        242,
+        172
+      ]
+    },
+    {
+      "word": "MISSING",
+      "size": 128,
+      "box": [
+        44,
+        182,
+        600,
+        297
+      ]
+    },
+    {
+      "word": "ELEMENT",
+      "size": 112,
+      "box": [
+        44,
+        307,
+        582,
+        405
+      ]
+    }
+  ],
+  "clearOfHero": true,
+  "clearOfBadge": true,
+  "previews": [
+    "Selected/hos_002_thumb_B_missing_element_v01_preview.jpg",
+    "Selected/hos_002_thumb_B_missing_element_v01_style_sheet.jpg",
+    "Selected/hos_002_thumb_A_vs_B_missing_element_v01_phone_168.jpg"
+  ],
+  "studio": false,
+  "status": "Test & Compare B candidate against live A. Parked for Chief: thumb B review. No Studio until OK."
+}

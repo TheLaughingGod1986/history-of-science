@@ -1,0 +1,2 @@
+WARN   0:20 row s06_01_tall_tube_v01 end_card_loop_01_tall_tube_v01.jpg: low detail: edge density 0.0231 < film p5 0.0239
+picture QA PASS: 0 of 6 cuts fail, 1 to look at -> /Users/benjaminoats/YouTube/History Of Science/docs/STANDALONE_SHORTS_TEST_2026-10/qa_shorts_v01/hos_sa_s8_hales_blood_v01/picture_qa_hos_sa_s8_hales_blood_v01/PICTURE_QA.md, /Users/benjaminoats/YouTube/History Of Science/docs/STANDALONE_SHORTS_TEST_2026-10/qa_shorts_v01/hos_sa_s8_hales_blood_v01/picture_qa_hos_sa_s8_hales_blood_v01/picture_qa_review.jpg

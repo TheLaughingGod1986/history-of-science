@@ -1,0 +1,141 @@
+{
+ "pulled": "2026-10-20",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "why do we get a fever",
+  "why do we sweat"
+ ],
+ "autocomplete": {
+  "why do we get a fever": [
+   "why do we get a fever",
+   "why do we get a fever when sick",
+   "why do you get a fever",
+   "why do we get fever factoholic",
+   "why do we get fever in telugu",
+   "why do we get fever dreams",
+   "why do we get fever in hindi",
+   "why do we get fever aumsum",
+   "why do we get fever in tamil",
+   "why do i have a fever"
+  ],
+  "why do we sweat": [
+   "why do we sweat",
+   "why do we sweat dr binocs",
+   "why do we sweat when we sleep",
+   "why do we sweat a lot",
+   "why do we sweat more in summer",
+   "why do we sweat while eating",
+   "why do we sweat more in a humid day",
+   "why do we sweat when we exercise",
+   "why do we sweat in summer",
+   "why do we sweat after fever"
+  ]
+ },
+ "sharedTitleWords": [
+  "why do",
+  "do we",
+  "we sweat"
+ ],
+ "neighbours": [
+  {
+   "id": "jRvxnpfCDSo",
+   "title": "Why do you get a fever when you're sick? - Christian Moro",
+   "channel": "TED-Ed",
+   "views": "1,617,678 views",
+   "age": "5 yr ago",
+   "length": "5:38",
+   "tier": 1,
+   "viewCount": 1617678,
+   "foundBy": "why do we get a fever",
+   "onTopic": true
+  },
+  {
+   "id": "fctH_1NuqCQ",
+   "title": "Why do we sweat? - John Murnan",
+   "channel": "TED-Ed",
+   "views": "1,461,634 views",
+   "age": "8 yr ago",
+   "length": "4:48",
+   "tier": 1,
+   "viewCount": 1461634,
+   "foundBy": "ted-ed why do we get a fever",
+   "onTopic": true
+  },
+  {
+   "id": "cRZOUcpiOxY",
+   "title": "Fever Feels Horrible, but is Actually Awesome!",
+   "channel": "Kurzgesagt – In a Nutshell",
+   "views": "11,467,378 views",
+   "age": "2 yr ago",
+   "length": "11:08",
+   "tier": 2,
+   "viewCount": 11467378,
+   "foundBy": "why do we get a fever",
+   "onTopic": true
+  },
+  {
+   "id": "qDSc2RkVWAQ",
+   "title": "How Fevers REALLY Work",
+   "channel": "MinuteEarth",
+   "views": "1,199,135 views",
+   "age": "5 yr ago",
+   "length": "3:07",
+   "tier": 2,
+   "viewCount": 1199135,
+   "foundBy": "why do we get a fever",
+   "onTopic": true
+  },
+  {
+   "id": "aVi-zF0Yr8I",
+   "title": "Why Do Fevers Get Worse at Night?",
+   "channel": "SciShow",
+   "views": "490,953 views",
+   "age": "7 yr ago",
+   "length": "3:54",
+   "tier": 2,
+   "viewCount": 490953,
+   "foundBy": "why do we get a fever",
+   "onTopic": true
+  },
+  {
+   "id": "MAUvnCsV6C4",
+   "title": "Why Do I Sweat So Much?",
+   "channel": "SciShow",
+   "views": "440,700 views",
+   "age": "8 yr ago",
+   "length": "3:26",
+   "tier": 2,
+   "viewCount": 440700,
+   "foundBy": "why do we sweat",
+   "onTopic": true
+  },
+  {
+   "id": "c2_aN98p0RM",
+   "title": "Why Do We Sweat? | Sports Science | SciShow Kids",
+   "channel": "SciShow Kids",
+   "views": "294,376 views",
+   "age": "7 yr ago",
+   "length": "4:04",
+   "tier": 2,
+   "viewCount": 294376,
+   "foundBy": "why do we sweat",
+   "onTopic": true
+  },
+  {
+   "id": "FLFd85y7MUM",
+   "title": "How To Sweat Less - The Science of Sweating",
+   "channel": "The Royal Institution",
+   "views": "268,321 views",
+   "age": "11 yr ago",
+   "length": "3:08",
+   "tier": 2,
+   "viewCount": 268321,
+   "foundBy": "why do we sweat",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 4,
+ "gate": "PASS",
+ "hasTed": true,
+ "failedQueries": []
+}

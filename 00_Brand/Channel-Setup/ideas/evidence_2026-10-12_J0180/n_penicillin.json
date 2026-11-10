@@ -1,0 +1,113 @@
+{
+ "pulled": "2026-10-12",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "penicillin",
+  "alexander fleming",
+  "discovery of penicillin"
+ ],
+ "autocomplete": {
+  "penicillin": [
+   "penicillin cocktail",
+   "penicillin",
+   "penicillin injection",
+   "penicillin pharmacology",
+   "penicillin soup",
+   "penicillin tablet",
+   "penicillin football khela",
+   "penicillin discovery",
+   "penicillin video",
+   "penicillin ki khoj kisne ki thi"
+  ],
+  "alexander fleming": [
+   "alexander fleming",
+   "alexander fleming discovery of penicillin",
+   "alexander fleming story",
+   "alexander fleming information in english",
+   "alexander fleming contribution in microbiology",
+   "alexander fleming biography",
+   "alexander fleming penicillin",
+   "alexander fleming drawing",
+   "alexander fleming 10 lines",
+   "alexander fleming marathi mahiti"
+  ],
+  "discovery of penicillin": [
+   "discovery of penicillin",
+   "discovery of penicillin by alexander fleming",
+   "discovery of penicillin animation",
+   "discovery of penicillin documentary",
+   "discovery of penicillin class 8",
+   "discovery of penicillin in hindi",
+   "discovery of penicillin by alexander fleming in hindi",
+   "discovery of penicillin in urdu",
+   "discovery of penicillin class 12"
+  ]
+ },
+ "sharedTitleWords": [],
+ "neighbours": [
+  {
+   "id": "bVjKL1zd-vQ",
+   "title": "Was Alexander the Great really that great? - Stephanie Honchell Smith",
+   "channel": "TED-Ed",
+   "views": "451,357 views",
+   "age": "9 mo ago",
+   "length": "6:27",
+   "tier": 1,
+   "viewCount": 451357,
+   "foundBy": "ted-ed alexander fleming",
+   "onTopic": true
+  },
+  {
+   "id": "tFfYh9THuGo",
+   "title": "How a long-forgotten virus could help us solve the antibiotics crisis | Alexander Belcredi",
+   "channel": "TED",
+   "views": "331,191 views",
+   "age": "7 yr ago",
+   "length": "11:14",
+   "tier": 1,
+   "viewCount": 331191,
+   "foundBy": "penicillin ted",
+   "onTopic": true
+  },
+  {
+   "id": "1bXAkbCyjpo",
+   "title": "Let’s Help Refugees Thrive, Not Just Survive | Melissa Fleming | TED Talks",
+   "channel": "TED",
+   "views": "168,767 views",
+   "age": "11 yr ago",
+   "length": "16:13",
+   "tier": 1,
+   "viewCount": 168767,
+   "foundBy": "ted-ed alexander fleming",
+   "onTopic": true
+  },
+  {
+   "id": "JRl7iJqFGiw",
+   "title": "Penicillin | Microorganisms | Biology | FuseSchool",
+   "channel": "FuseSchool - Global Education",
+   "views": "210,181 views",
+   "age": "6 yr ago",
+   "length": "4:16",
+   "tier": 2,
+   "viewCount": 210181,
+   "foundBy": "penicillin",
+   "onTopic": true
+  },
+  {
+   "id": "LBSGjt4rFnY",
+   "title": "Penicillin: Saving Lives | Alyssa Shahin | TEDxPascoCountySchools",
+   "channel": "TEDx Talks",
+   "views": "218 views",
+   "age": "7 yr ago",
+   "length": "3:09",
+   "tier": 1,
+   "viewCount": 218,
+   "foundBy": "penicillin ted",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 0,
+ "gate": "FAIL",
+ "hasTed": true,
+ "failedQueries": []
+}

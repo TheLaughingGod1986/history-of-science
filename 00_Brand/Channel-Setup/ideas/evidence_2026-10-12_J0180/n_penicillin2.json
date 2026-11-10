@@ -1,0 +1,203 @@
+{
+ "pulled": "2026-10-12",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "who discovered penicillin",
+  "how penicillin was discovered",
+  "antibiotics"
+ ],
+ "autocomplete": {
+  "who discovered penicillin": [
+   "who discovered penicillin",
+   "who discovered penicillin answer",
+   "who invented penicillin",
+   "who found penicillin",
+   "who discovered antibiotics",
+   "name the scientist who discovered penicillin",
+   "who invented penicillin injection"
+  ],
+  "how penicillin was discovered": [
+   "how penicillin was discovered",
+   "how penicillin was discovered by alexander fleming",
+   "how penicillin was discovered in hindi",
+   "how penicillin was invented"
+  ],
+  "antibiotics": [
+   "antibiotics song",
+   "antibiotics",
+   "antibiotics pharmacology",
+   "antibiotics ninja nerd",
+   "antibiotics classification",
+   "antibiotics side effects",
+   "antibiotics simple nursing",
+   "antibiotics drugs",
+   "antibiotics microbiology",
+   "antibiotics medicinal chemistry"
+  ]
+ },
+ "sharedTitleWords": [
+  "biology fuseschool"
+ ],
+ "neighbours": [
+  {
+   "id": "uRhkDN2WjzI",
+   "title": "How aspirin was discovered - Krishna Sudhir",
+   "channel": "TED-Ed",
+   "views": "3,075,796 views",
+   "age": "9 yr ago",
+   "length": "5:45",
+   "tier": 1,
+   "viewCount": 3075796,
+   "foundBy": "ted-ed who discovered penicillin",
+   "onTopic": true
+  },
+  {
+   "id": "o3oDpCb7VqI",
+   "title": "Maryn McKenna: What do we do when antibiotics don’t work any more?",
+   "channel": "TED",
+   "views": "334,735 views",
+   "age": "11 yr ago",
+   "length": "17:00",
+   "tier": 1,
+   "viewCount": 334735,
+   "foundBy": "who discovered penicillin ted",
+   "onTopic": true
+  },
+  {
+   "id": "tFfYh9THuGo",
+   "title": "How a long-forgotten virus could help us solve the antibiotics crisis | Alexander Belcredi",
+   "channel": "TED",
+   "views": "331,191 views",
+   "age": "7 yr ago",
+   "length": "11:14",
+   "tier": 1,
+   "viewCount": 331191,
+   "foundBy": "antibiotics ted",
+   "onTopic": true
+  },
+  {
+   "id": "ZwHapgrF99A",
+   "title": "Factory farms, antibiotics and superbugs: Lance Price at TEDxManhattan",
+   "channel": "TEDx Talks",
+   "views": "114,332 views",
+   "age": "12 yr ago",
+   "length": "13:05",
+   "tier": 1,
+   "viewCount": 114332,
+   "foundBy": "antibiotics ted",
+   "onTopic": true
+  },
+  {
+   "id": "iWHq2m_Hwhw",
+   "title": "Ramanan Laxminarayan: The coming crisis in antibiotics",
+   "channel": "TED",
+   "views": "107,104 views",
+   "age": "11 yr ago",
+   "length": "14:47",
+   "tier": 1,
+   "viewCount": 107104,
+   "foundBy": "ted-ed antibiotics",
+   "onTopic": true
+  },
+  {
+   "id": "uVUf_pt7Sh0",
+   "title": "Antibiotics, Antivirals, and Vaccines",
+   "channel": "Amoeba Sisters",
+   "views": "1,382,248 views",
+   "age": "7 yr ago",
+   "length": "9:29",
+   "tier": 2,
+   "viewCount": 1382248,
+   "foundBy": "antibiotics",
+   "onTopic": true
+  },
+  {
+   "id": "JRl7iJqFGiw",
+   "title": "Penicillin | Microorganisms | Biology | FuseSchool",
+   "channel": "FuseSchool - Global Education",
+   "views": "210,184 views",
+   "age": "6 yr ago",
+   "length": "4:16",
+   "tier": 2,
+   "viewCount": 210184,
+   "foundBy": "ted-ed who discovered penicillin",
+   "onTopic": true
+  },
+  {
+   "id": "r_5GM3_u0Wo",
+   "title": "GCSE Biology - Drugs - Painkillers vs Antibiotics - Relief vs Treatment (2026/27 exams)",
+   "channel": "Cognito",
+   "views": "199,914 views",
+   "age": "7 yr ago",
+   "length": "3:37",
+   "tier": 2,
+   "viewCount": 199914,
+   "foundBy": "antibiotics",
+   "onTopic": true
+  },
+  {
+   "id": "jYaZyZ_Bmkc",
+   "title": "Antibiotics | Health | Biology | FuseSchool",
+   "channel": "FuseSchool - Global Education",
+   "views": "115,412 views",
+   "age": "8 yr ago",
+   "length": "4:42",
+   "tier": 2,
+   "viewCount": 115412,
+   "foundBy": "antibiotics",
+   "onTopic": true
+  },
+  {
+   "id": "oxVzNcGP7M8",
+   "title": "How we're using AI to discover new antibiotics | Jim Collins",
+   "channel": "TED",
+   "views": "42,097 views",
+   "age": "6 yr ago",
+   "length": "7:16",
+   "tier": 1,
+   "viewCount": 42097,
+   "foundBy": "antibiotics ted",
+   "onTopic": true
+  },
+  {
+   "id": "yDrI8q98YpU",
+   "title": "What would the world be like without antibiotics? | BBC Ideas",
+   "channel": "BBC Ideas",
+   "views": "29,867 views",
+   "age": "4 yr ago",
+   "length": "6:36",
+   "tier": 2,
+   "viewCount": 29867,
+   "foundBy": "ted-ed antibiotics",
+   "onTopic": true
+  },
+  {
+   "id": "vJd_oHdMzEM",
+   "title": "Prudent Prescribing of Antibiotics (Experiment with Dr. Prober)",
+   "channel": "Khan Academy",
+   "views": "26,382 views",
+   "age": "15 yr ago",
+   "length": "16:02",
+   "tier": 2,
+   "viewCount": 26382,
+   "foundBy": "khan academy how penicillin was discovered",
+   "onTopic": true
+  },
+  {
+   "id": "7VuoCVbXDm8",
+   "title": "Antibiotics: Cherish or Perish | Dr. Elizabeth Hermsen | TEDxOmaha",
+   "channel": "TEDx Talks",
+   "views": "2,346 views",
+   "age": "6 yr ago",
+   "length": "17:11",
+   "tier": 1,
+   "viewCount": 2346,
+   "foundBy": "antibiotics ted",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 2,
+ "gate": "FAIL",
+ "hasTed": true,
+ "failedQueries": []
+}

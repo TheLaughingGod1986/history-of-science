@@ -1,0 +1,9 @@
+s01_0     1.7s 13_atom_cracks_v01.mp4       ok
+s02_Thomson     5.0s 14_electrons_named_v01.mp4   ok
+s03_electrons.     7.9s 10_two_thousand_lighter_v01. ok
+s04_charge,    10.5s 15_positive_balance_v01.mp4  WARN low detail: edge density 0.0344 < film p5 0.0352
+s05_out.    13.7s 16_plum_pudding_v01.mp4      ok
+s06_his    17.6s 17_raisins_settle_v01.mp4    ok
+s07_through    20.8s 19_lovely_and_wrong_v01.mp4  ok
+s08_loop    23.5s loop_end_13_atom_cracks_v01. ok
+polish gate PASS: 0 of 8 rows failed, 1 to look at -> 02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/qa_s08_plum_pudding_v01/polish_gate_s08_plum_pudding_v01.json

@@ -1,0 +1,68 @@
+{
+  "stem": "hos_sa_s7_priestley_mint_vo_v01",
+  "voice": "Ben Orbit Narrator",
+  "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+  "model_id": "eleven_v3",
+  "settings": {
+    "stability": 0.34,
+    "similarity_boost": 0.78,
+    "style": 0.42,
+    "speed": 1.04,
+    "use_speaker_boost": true
+  },
+  "orders": [
+    "6127927589"
+  ],
+  "retake_of": null,
+  "chapters": [
+    {
+      "title": "take",
+      "chars": 254,
+      "duration_s": 21.2
+    }
+  ],
+  "gap_s": 0.7,
+  "spoken_chars": 254,
+  "words": 51,
+  "duration_s": 21.2,
+  "loudness": {
+    "lufs_integrated": -19.1,
+    "mean_volume_db": -22.5,
+    "max_volume_db": -3.5
+  },
+  "sha256_mp3": "43e888b4674413f274396049a2bcaeda63144698491c7d24c446f5ad80140120",
+  "scribe": {
+    "transcript": "In 1771, a sprig of mint brought dead air back to life. Joseph Priestley let a candle burn out in a closed jar. The air was spent. He slipped in a sprig of mint and waited 10 days, then a fresh candle burned perfectly well. The plant had remade the air",
+    "script_words": 51,
+    "scribe_words": 51,
+    "match_rate_pct": 98.04,
+    "exact_match": false,
+    "mismatches": [
+      {
+        "op": "replace",
+        "script": [
+          "ten"
+        ],
+        "scribe": [
+          "10"
+        ]
+      }
+    ]
+  },
+  "vo_check": "PASS",
+  "credits": {
+    "before": {
+      "used": 203853,
+      "limit": 209536,
+      "remaining": 5683
+    },
+    "after": {
+      "used": 203853,
+      "limit": 209536,
+      "remaining": 5683
+    },
+    "counter_delta": 0
+  },
+  "text": "In 1771, a sprig of mint brought dead air back to life. Joseph Priestley let a candle burn out in a closed jar. The air was spent. He slipped in a sprig of mint and waited ten days. Then a fresh candle burned perfectly well. The plant had remade the air.",
+  "made_at": "2026-10-12T23:05:33+0100"
+}

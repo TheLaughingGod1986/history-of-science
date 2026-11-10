@@ -1,0 +1,98 @@
+{
+  "film": "005",
+  "video": "wwcjcFfC-5M",
+  "job": "J0655",
+  "variant": "B v08 (1.095x hero push-in + linen-knot, forearm blue-cord & arterial-glow definition boost + concrete linen-knot hook; pairs with B v07 'SWOLLEN BLUE CORDS' and B v06 'STOPPED RED PULSE')",
+  "maker": "gemini",
+  "hook": "PINCHED LINEN KNOT",
+  "punch": "PINCHED",
+  "jpg": "Selected/hos_005_thumb_B_pinched_linen_knot_v08.jpg",
+  "sha256": "812dde2ede8f1628c1ab8f675ab0c01b8d2d84bcb082d30ea50e4548d5622539",
+  "bytes": 253876,
+  "plates": [
+    "Selected/hos_005_thumb_A_one_tight_band_v02.jpg (005 painted 16:9 key-art plate: glowing red artery stopped at linen band, pale forearm with branching blue veins, Explorer lower-left, original gold scroll flourishes)"
+  ],
+  "method": "existing_005_plate_only_1.095x_hero_push_in_and_linen_knot_blue_cord_boost_reletter_GeorgiaBold_with_original_painted_flourishes",
+  "spend": 0,
+  "heroBox": [
+    556,
+    0,
+    1244,
+    706
+  ],
+  "explorer": {
+    "source": "hos_005_thumb_A_one_tight_band_v02.jpg",
+    "box": [
+      88,
+      344,
+      318,
+      720
+    ],
+    "height_px": 376,
+    "height_frac": 0.522
+  },
+  "lettering": [
+    {
+      "word": "PINCHED",
+      "kind": "gold",
+      "size": 76,
+      "box": [
+        116,
+        72,
+        461,
+        141
+      ]
+    },
+    {
+      "word": "LINEN",
+      "kind": "cream",
+      "size": 90,
+      "box": [
+        144,
+        146,
+        431,
+        224
+      ]
+    },
+    {
+      "word": "KNOT",
+      "kind": "cream",
+      "size": 94,
+      "box": [
+        152,
+        229,
+        425,
+        314
+      ]
+    }
+  ],
+  "ornaments": {
+    "top_scroll_box": [
+      60,
+      24,
+      468,
+      59
+    ],
+    "bottom_scroll_box": [
+      154,
+      328,
+      438,
+      356
+    ]
+  },
+  "clearOfHero": true,
+  "clearOfExplorer": true,
+  "clearOfBadge": true,
+  "scores": {
+    "HOOK": "PASS \u2014 'PINCHED LINEN KNOT' (3 words, punch word 'PINCHED' in gold) names the concrete visible experimental instrument pinching the upper arm on the plate (the tight linen strip and knot pinching superficial veins shut below while stopping arterial blood above, De Motu Cordis ch. 11 & 13, FACT_NOTES_v01 rows 26\u201328; 005 script Part 04 lines 101 & 110: 'The most famous one needs nothing but a strip of linen... the veins near the skin are pinched shut, so blood piles up below it' and THUMBNAIL_AND_TITLE_RULES.md \u00a71.2 & \u00a72.B.1 'name the thing'), shares zero words with the video title ('The Tied Arm That Proved Your Blood Circulates'), Variant A ('ONE TIGHT BAND'), Variant B v03 ('THE BLOCKED ARTERY'), Variant B v04 ('HIDDEN VEIN VALVES'), Variant B v05 ('TRAPPED UNDER SKIN'), Variant B v06 ('STOPPED RED PULSE'), or Variant B v07 ('SWOLLEN BLUE CORDS'), and uses no vague questions or pronouns.",
+    "BAND": "PASS \u2014 Upper-left lettering band (x=116..461, y=72..314, framed by original painted gold scroll flourishes at y=24..356) sits completely left of the pushed-in hero arm (x=556..1244), above the Explorer's hair (y=344), and clear of the bottom-right duration badge.",
+    "PHONE": "PASS \u2014 Checked on 168x94 preview sheet and 4-way comparison strip: the 1.095x hero push-in and targeted linen-knot, forearm venous-cord, and arterial-glow definition boost make the tight linen knot, stopped red arterial column above it, and branching blue cords below it larger and sharper at 168x94 while keeping 'PINCHED LINEN KNOT' and the Explorer's face/glasses (52.2% height) immediately legible in under a second."
+  },
+  "previews": [
+    "Selected/hos_005_thumb_B_pinched_linen_knot_v08_preview.jpg",
+    "Selected/hos_005_thumb_B_pinched_linen_knot_v08_style_sheet.jpg",
+    "Selected/hos_005_thumb_TC_4way_pinched_linen_knot_v08_phone_168.jpg"
+  ],
+  "studio": false,
+  "status": "Test & Compare B v08 candidate for 005 (wwcjcFfC-5M, built from existing 005 plate only with 1.095x hero push-in + linen-knot & blue-cord boost, \u00a30). Parked for Chief: thumb B review. No Studio until OK."
+}

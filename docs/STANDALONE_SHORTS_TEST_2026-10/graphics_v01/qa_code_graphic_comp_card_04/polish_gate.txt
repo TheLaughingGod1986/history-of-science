@@ -1,0 +1,2 @@
+code_graphic_comp_card_04     1.5s code_graphic_comp_card_04.mp ok
+polish gate PASS: 0 of 1 rows failed, 0 to look at -> /Users/benjaminoats/YouTube/History Of Science/docs/STANDALONE_SHORTS_TEST_2026-10/graphics_v01/qa_code_graphic_comp_card_04/polish_gate.json

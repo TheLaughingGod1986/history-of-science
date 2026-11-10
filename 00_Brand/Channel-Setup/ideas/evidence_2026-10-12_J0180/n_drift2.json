@@ -1,0 +1,131 @@
+{
+ "pulled": "2026-10-12",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "pangaea",
+  "how continents move",
+  "wegener continental drift"
+ ],
+ "autocomplete": {
+  "pangaea": [
+   "pangaea",
+   "pangaeapanga",
+   "pangaea proxima",
+   "pangaea's moving farther apart again song",
+   "pangaea dj",
+   "pangaeapanga super expert",
+   "pangaea ko ang ibigin ka",
+   "pangaea continental drift",
+   "pangaea girls",
+   "pangarap"
+  ],
+  "how continents move": [
+   "how continents move",
+   "how the continents moved over time",
+   "how will continents move in the future",
+   "how do continents move",
+   "how continents have moved over time",
+   "how did the continents move"
+  ],
+  "wegener continental drift": [
+   "wegener continental drift theory",
+   "wegener continental drift theory in hindi",
+   "wegener continental drift",
+   "wegener continental drift theory mcq",
+   "alfred wegener continental drift theory"
+  ]
+ },
+ "sharedTitleWords": [
+  "continental drift"
+ ],
+ "neighbours": [
+  {
+   "id": "PddQvyiBfdc",
+   "title": "What happens when continents collide? - Juan D. Carrillo",
+   "channel": "TED-Ed",
+   "views": "1,880,322 views",
+   "age": "11 yr ago",
+   "length": "4:58",
+   "tier": 1,
+   "viewCount": 1880322,
+   "foundBy": "ted-ed pangaea",
+   "onTopic": true
+  },
+  {
+   "id": "p-vNSqUy0l4",
+   "title": "The Pangaea Pop-up - Michael Molina",
+   "channel": "TED-Ed",
+   "views": "955,440 views",
+   "age": "12 yr ago",
+   "length": "4:26",
+   "tier": 1,
+   "viewCount": 955440,
+   "foundBy": "pangaea",
+   "onTopic": true
+  },
+  {
+   "id": "SbIpWHQI-tE",
+   "title": "The continents are moving. When will they collide? - Jean-Baptiste P. Koehl",
+   "channel": "TED-Ed",
+   "views": "474,808 views",
+   "age": "3 yr ago",
+   "length": "5:12",
+   "tier": 1,
+   "viewCount": 474808,
+   "foundBy": "ted-ed pangaea",
+   "onTopic": true
+  },
+  {
+   "id": "Wq9kLzm36h0",
+   "title": "Continental Drift 101 | National Geographic",
+   "channel": "National Geographic",
+   "views": "983,170 views",
+   "age": "9 yr ago",
+   "length": "1:22",
+   "tier": 2,
+   "viewCount": 983170,
+   "foundBy": "ted-ed pangaea",
+   "onTopic": true
+  },
+  {
+   "id": "nbU809Cyrao",
+   "title": "Alfred Wegener: Great Minds",
+   "channel": "SciShow",
+   "views": "833,928 views",
+   "age": "14 yr ago",
+   "length": "4:55",
+   "tier": 2,
+   "viewCount": 833928,
+   "foundBy": "wegener continental drift",
+   "onTopic": true
+  },
+  {
+   "id": "axB6uhEx628",
+   "title": "Pangaea | Earth geological and climatic history | Cosmology & Astronomy | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "248,983 views",
+   "age": "15 yr ago",
+   "length": "5:58",
+   "tier": 2,
+   "viewCount": 248983,
+   "foundBy": "pangaea",
+   "onTopic": true
+  },
+  {
+   "id": "O5jQLKWvYBA",
+   "title": "Continental Drift: Wegener's Theory | Environmental Chemistry | Chemistry | FuseSchool",
+   "channel": "FuseSchool - Global Education",
+   "views": "187,393 views",
+   "age": "9 yr ago",
+   "length": "3:01",
+   "tier": 2,
+   "viewCount": 187393,
+   "foundBy": "wegener continental drift",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 1,
+ "gate": "FAIL",
+ "hasTed": true,
+ "failedQueries": []
+}

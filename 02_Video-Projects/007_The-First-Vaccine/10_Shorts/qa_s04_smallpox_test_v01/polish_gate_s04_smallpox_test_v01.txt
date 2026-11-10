@@ -1,0 +1,9 @@
+s01_0     1.1s 03b_lancet_case_t1.mp4       ok
+s02_He     3.5s 02_variolation_calm_t1.mp4   ok
+s03_the     7.7s 06_mild_fever_t1.mp4         WARN low detail: edge density 0.0171 < film p5 0.0218
+s04_Then    12.5s 05b_week_passes_t1.mp4       ok
+s05_A    15.8s 07_playing_garden_t1.mp4     ok
+s06_In    18.6s 13_casebook_t1.mp4           ok
+s07_Months    21.6s 05_days_pass_t1.mp4          ok
+s08_loop    24.6s loop_end_03b_lancet_case_t1. ok
+polish gate PASS: 0 of 8 rows failed, 1 to look at -> 02_Video-Projects/007_The-First-Vaccine/10_Shorts/qa_s04_smallpox_test_v01/polish_gate_s04_smallpox_test_v01.json

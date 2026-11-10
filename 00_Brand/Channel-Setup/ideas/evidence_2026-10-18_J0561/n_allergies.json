@@ -1,0 +1,159 @@
+{
+ "pulled": "2026-10-18",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "allergies histamine",
+  "anaphylaxis immune system"
+ ],
+ "autocomplete": {
+  "allergies histamine": [
+   "allergy histamine"
+  ],
+  "anaphylaxis immune system": [
+   "anaphylaxis immunology"
+  ]
+ },
+ "sharedTitleWords": [
+  "immune system",
+  "your immune",
+  "food allergies"
+ ],
+ "neighbours": [
+  {
+   "id": "PSRJfaAYkW4",
+   "title": "How does your immune system work? - Emma Bryce",
+   "channel": "TED-Ed",
+   "views": "5,194,943 views",
+   "age": "8 yr ago",
+   "length": "5:23",
+   "tier": 1,
+   "viewCount": 5194943,
+   "foundBy": "ted-ed anaphylaxis immune system",
+   "onTopic": true
+  },
+  {
+   "id": "-q7Fz7NIMWM",
+   "title": "Why do people have seasonal allergies? - Eleanor Nelsen",
+   "channel": "TED-Ed",
+   "views": "598,209 views",
+   "age": "10 yr ago",
+   "length": "5:02",
+   "tier": 1,
+   "viewCount": 598209,
+   "foundBy": "ted-ed allergies histamine",
+   "onTopic": true
+  },
+  {
+   "id": "9zCH37330f8",
+   "title": "The Real Reason Why You Have Allergies",
+   "channel": "Kurzgesagt – In a Nutshell",
+   "views": "8,867,249 views",
+   "age": "1 yr ago",
+   "length": "12:30",
+   "tier": 2,
+   "viewCount": 8867249,
+   "foundBy": "ted-ed allergies histamine",
+   "onTopic": true
+  },
+  {
+   "id": "GIJK3dwCWCw",
+   "title": "Immune System, Part 1: Crash Course Anatomy & Physiology #45",
+   "channel": "CrashCourse",
+   "views": "7,127,797 views",
+   "age": "10 yr ago",
+   "length": "9:13",
+   "tier": 2,
+   "viewCount": 7127797,
+   "foundBy": "khan academy anaphylaxis immune system",
+   "onTopic": true
+  },
+  {
+   "id": "rp7T4IItbtM",
+   "title": "Types of immune responses: Innate and adaptive, humoral vs. cell-mediated | NCLEX-RN | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "2,086,971 views",
+   "age": "16 yr ago",
+   "length": "8:07",
+   "tier": 2,
+   "viewCount": 2086971,
+   "foundBy": "khan academy anaphylaxis immune system",
+   "onTopic": true
+  },
+  {
+   "id": "WDmGAnRIaiA",
+   "title": "The Incredible Secrets Hidden in Your Immune System | Beck Brachman | TED",
+   "channel": "TED",
+   "views": "38,213 views",
+   "age": "1 yr ago",
+   "length": "4:39",
+   "tier": 1,
+   "viewCount": 38213,
+   "foundBy": "ted-ed anaphylaxis immune system",
+   "onTopic": true
+  },
+  {
+   "id": "9eFHFpG3-EU",
+   "title": "Living the life of food allergies | Julia Cecilia | TEDxWhitneyHigh",
+   "channel": "TEDx Talks",
+   "views": "17,896 views",
+   "age": "9 yr ago",
+   "length": "8:29",
+   "tier": 1,
+   "viewCount": 17896,
+   "foundBy": "allergies histamine ted",
+   "onTopic": true
+  },
+  {
+   "id": "4m4RZ-Iwm4M",
+   "title": "Allergies on the Attack | Alex Cheng | TEDxLCHS",
+   "channel": "TEDx Talks",
+   "views": "1,731 views",
+   "age": "10 yr ago",
+   "length": "5:29",
+   "tier": 1,
+   "viewCount": 1731,
+   "foundBy": "anaphylaxis immune system ted",
+   "onTopic": true
+  },
+  {
+   "id": "ozp620yTDaE",
+   "title": "Food allergies: a shared responsibility for a safer future | Carolyn Stach | TEDxLFHS",
+   "channel": "TEDx Talks",
+   "views": "506 views",
+   "age": "3 yr ago",
+   "length": "6:02",
+   "tier": 1,
+   "viewCount": 506,
+   "foundBy": "allergies histamine ted",
+   "onTopic": true
+  },
+  {
+   "id": "KlVX9fTc12M",
+   "title": "Allergies and the Quality of Our Lives | Jihoon Ha | TEDxYouth@IASA",
+   "channel": "TEDx Talks",
+   "views": "372 views",
+   "age": "4 yr ago",
+   "length": "3:53",
+   "tier": 1,
+   "viewCount": 372,
+   "foundBy": "allergies histamine ted",
+   "onTopic": true
+  },
+  {
+   "id": "u6mgBOjxBC8",
+   "title": "Are Allergies a Big Deal? | Eunu Baek | TEDxHAFS Youth",
+   "channel": "TEDx Talks",
+   "views": "38 views",
+   "age": "9 mo ago",
+   "length": "10:13",
+   "tier": 1,
+   "viewCount": 38,
+   "foundBy": "allergies histamine ted",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 4,
+ "gate": "PASS",
+ "hasTed": true,
+ "failedQueries": []
+}

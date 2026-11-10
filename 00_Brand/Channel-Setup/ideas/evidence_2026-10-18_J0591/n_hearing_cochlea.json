@@ -1,0 +1,99 @@
+{
+ "pulled": "2026-10-18",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "hearing cochlea hair cells",
+  "tinnitus ringing ears"
+ ],
+ "autocomplete": {
+  "hearing cochlea hair cells": [
+   "hair cells in cochlea"
+  ],
+  "tinnitus ringing ears": [
+   "tinnitus ear ringing sound effect",
+   "tinnitus ear ringing",
+   "tinnitus relief for ringing ears"
+  ]
+ },
+ "sharedTitleWords": [
+  "ringing in"
+ ],
+ "neighbours": [
+  {
+   "id": "TnsCsR2wDdk",
+   "title": "What’s that ringing in your ears? - Marc Fagelson",
+   "channel": "TED-Ed",
+   "views": "7,447,949 views",
+   "age": "6 yr ago",
+   "length": "5:39",
+   "tier": 1,
+   "viewCount": 7447949,
+   "foundBy": "ted-ed hearing cochlea hair cells",
+   "onTopic": true
+  },
+  {
+   "id": "XGq3MXQlRJs",
+   "title": "Tinnitus: Ringing in the Brain | Josef Rauschecker | TEDxCharlottesville",
+   "channel": "TEDx Talks",
+   "views": "2,243,645 views",
+   "age": "9 yr ago",
+   "length": "18:01",
+   "tier": 1,
+   "viewCount": 2243645,
+   "foundBy": "ted-ed tinnitus ringing ears",
+   "onTopic": true
+  },
+  {
+   "id": "LkGOGzpbrCk",
+   "title": "The science of hearing - Douglas L. Oliver",
+   "channel": "TED-Ed",
+   "views": "1,295,313 views",
+   "age": "8 yr ago",
+   "length": "5:17",
+   "tier": 1,
+   "viewCount": 1295313,
+   "foundBy": "ted-ed hearing cochlea hair cells",
+   "onTopic": true
+  },
+  {
+   "id": "JKY-hohg8wM",
+   "title": "This tinnitus discovery could lead to a new treatment | Kristin Barry | TEDxKingsParkSalon",
+   "channel": "TEDx Talks",
+   "views": "888,660 views",
+   "age": "3 yr ago",
+   "length": "8:28",
+   "tier": 1,
+   "viewCount": 888660,
+   "foundBy": "ted-ed tinnitus ringing ears",
+   "onTopic": true
+  },
+  {
+   "id": "-R307w05iJc",
+   "title": "Can loud music damage your hearing? - Heather Malyuk",
+   "channel": "TED-Ed",
+   "views": "755,012 views",
+   "age": "5 yr ago",
+   "length": "5:10",
+   "tier": 1,
+   "viewCount": 755012,
+   "foundBy": "ted-ed hearing cochlea hair cells",
+   "onTopic": true
+  },
+  {
+   "id": "Ie2j7GpC4JU",
+   "title": "Hearing & Balance: Crash Course Anatomy & Physiology #17",
+   "channel": "CrashCourse",
+   "views": "4,021,067 views",
+   "age": "11 yr ago",
+   "length": "10:40",
+   "tier": 2,
+   "viewCount": 4021067,
+   "foundBy": "hearing cochlea hair cells",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 4,
+ "gate": "PASS",
+ "hasTed": true,
+ "failedQueries": []
+}

@@ -1,0 +1,28 @@
+{
+  "film": "005",
+  "about": "J0188 pending upload; Claude acting Chief slot ruling HOS desk #6177253583. Calendar checked 14 Oct: 30 Oct occupied, 31 Oct free.",
+  "shorts": [
+    {
+      "title": "Is the Heart a Pump?",
+      "airDate": "2026-10-31T11:30:00Z",
+      "promotes": "005",
+      "promotesVideoId": "wwcjcFfC-5M",
+      "relatedVideoId": null,
+      "tags": [
+        "is the heart a pump",
+        "what did galen believe about the heart",
+        "galen",
+        "william harvey",
+        "blood circulation",
+        "history of medicine",
+        "history of science"
+      ],
+      "madeForKids": false,
+      "alteredContent": true,
+      "durationSeconds": 24.37,
+      "cover": "IS THE / HEART A / PUMP?",
+      "note": "Uploaded J0188 14 Oct, private + publishAt 31 Oct 11:30Z. Related blocked: private long wwcjcFfC-5M not offered in Studio; set after 29 Oct 18:00Z, before Short airs.",
+      "id": "5n7xFQRBUvI"
+    }
+  ]
+}

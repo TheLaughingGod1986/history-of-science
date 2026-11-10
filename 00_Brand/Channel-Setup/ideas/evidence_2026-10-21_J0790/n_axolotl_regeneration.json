@@ -1,0 +1,216 @@
+{
+ "pulled": "2026-10-21",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "axolotl",
+  "how animals regenerate",
+  "salamander regeneration"
+ ],
+ "autocomplete": {
+  "axolotl": [
+   "axolotl",
+   "axolotl song",
+   "axolotl tank setup",
+   "axolotl calming music",
+   "axolotl videos",
+   "axolotl aquarium",
+   "axolotl vr",
+   "axolotl sleep music",
+   "axolotl fish",
+   "axolotl crochet"
+  ],
+  "how animals regenerate": [
+   "how do animals clean themselves",
+   "how do animals regrow limbs",
+   "how do animals feel"
+  ],
+  "salamander regeneration": [
+   "salamander regeneration",
+   "salamander regeneration time-lapse",
+   "salamander limb regeneration",
+   "salamander limb regeneration time lapse"
+  ]
+ },
+ "sharedTitleWords": [
+  "do animals",
+  "and why",
+  "each other",
+  "how do",
+  "limbs and",
+  "why can't"
+ ],
+ "neighbours": [
+  {
+   "id": "7m8QlSPP7t0",
+   "title": "Why do animals have such different lifespans? - Joao Pedro de Magalhaes",
+   "channel": "TED-Ed",
+   "views": "6,394,249 views",
+   "age": "9 yr ago",
+   "length": "4:57",
+   "tier": 1,
+   "viewCount": 6394249,
+   "foundBy": "ted-ed how animals regenerate",
+   "onTopic": true
+  },
+  {
+   "id": "uooR4293p_4",
+   "title": "Axolotls: The salamanders that snack on each other (but don't die) - Luis Zambrano",
+   "channel": "TED-Ed",
+   "views": "4,070,823 views",
+   "age": "5 yr ago",
+   "length": "5:22",
+   "tier": 1,
+   "viewCount": 4070823,
+   "foundBy": "ted-ed axolotl",
+   "onTopic": true
+  },
+  {
+   "id": "-wkdH_wluhw",
+   "title": "What animals are thinking and feeling, and why it should matter | Carl Safina | TEDxMidAtlantic",
+   "channel": "TEDx Talks",
+   "views": "3,034,712 views",
+   "age": "10 yr ago",
+   "length": "16:28",
+   "tier": 1,
+   "viewCount": 3034712,
+   "foundBy": "how animals regenerate ted",
+   "onTopic": true
+  },
+  {
+   "id": "-sEpBGF106k",
+   "title": "Why don’t poisonous animals poison themselves? - Rebecca D. Tarvin",
+   "channel": "TED-Ed",
+   "views": "2,636,293 views",
+   "age": "8 yr ago",
+   "length": "5:10",
+   "tier": 1,
+   "viewCount": 2636293,
+   "foundBy": "ted-ed how animals regenerate",
+   "onTopic": true
+  },
+  {
+   "id": "_hBAr7uJ6L8",
+   "title": "The surprising reasons animals play dead - Tierney Thys",
+   "channel": "TED-Ed",
+   "views": "2,371,971 views",
+   "age": "8 yr ago",
+   "length": "4:47",
+   "tier": 1,
+   "viewCount": 2371971,
+   "foundBy": "ted-ed axolotl",
+   "onTopic": true
+  },
+  {
+   "id": "j43wzuciAkk",
+   "title": "A year in the life of one of Earth's weirdest animals - Gilad Bino",
+   "channel": "TED-Ed",
+   "views": "1,649,769 views",
+   "age": "5 yr ago",
+   "length": "4:56",
+   "tier": 1,
+   "viewCount": 1649769,
+   "foundBy": "ted-ed axolotl",
+   "onTopic": true
+  },
+  {
+   "id": "3uTmcG7CgdI",
+   "title": "How do animals regrow their limbs? And why can't humans do it? - Jessica Whited",
+   "channel": "TED-Ed",
+   "views": "620,744 views",
+   "age": "2 yr ago",
+   "length": "5:28",
+   "tier": 1,
+   "viewCount": 620744,
+   "foundBy": "ted-ed axolotl",
+   "onTopic": true
+  },
+  {
+   "id": "qWG2f9DwwpY",
+   "title": "Why animals help each other - Ashley Ward",
+   "channel": "TED-Ed",
+   "views": "460,862 views",
+   "age": "1 yr ago",
+   "length": "4:19",
+   "tier": 1,
+   "viewCount": 460862,
+   "foundBy": "how animals regenerate ted",
+   "onTopic": true
+  },
+  {
+   "id": "i0PHHLgpdNs",
+   "title": "A Lot About Axolotls! | SciShow Kids",
+   "channel": "SciShow Kids",
+   "views": "1,252,693 views",
+   "age": "2 yr ago",
+   "length": "6:16",
+   "tier": 2,
+   "viewCount": 1252693,
+   "foundBy": "axolotl",
+   "onTopic": true
+  },
+  {
+   "id": "QFa6jP6WgzM",
+   "title": "How Do Animals Re-Grow Limbs (And Why Can't We?)",
+   "channel": "SciShow",
+   "views": "1,002,333 views",
+   "age": "12 yr ago",
+   "length": "3:31",
+   "tier": 2,
+   "viewCount": 1002333,
+   "foundBy": "how animals regenerate",
+   "onTopic": true
+  },
+  {
+   "id": "uGutfyDOmu0",
+   "title": "This Salamander Can Regrow Limbs Like Deadpool",
+   "channel": "Be Smart",
+   "views": "511,641 views",
+   "age": "8 yr ago",
+   "length": "7:37",
+   "tier": 2,
+   "viewCount": 511641,
+   "foundBy": "ted-ed salamander regeneration",
+   "onTopic": true
+  },
+  {
+   "id": "F0_xwHMbPCA",
+   "title": "Axolotls Are In Danger. Here's Why That's Bad For YOU.",
+   "channel": "SciShow",
+   "views": "84,593 views",
+   "age": "2 mo ago",
+   "length": "12:07",
+   "tier": 2,
+   "viewCount": 84593,
+   "foundBy": "axolotl ted",
+   "onTopic": true
+  },
+  {
+   "id": "55PfP0jLcbM",
+   "title": "Regeneration -- science fiction or reality: Voot Yin at TEDxDirigo Generate",
+   "channel": "TEDx Talks",
+   "views": "8,249 views",
+   "age": "12 yr ago",
+   "length": "12:52",
+   "tier": 1,
+   "viewCount": 8249,
+   "foundBy": "salamander regeneration ted",
+   "onTopic": true
+  },
+  {
+   "id": "lv04obcNHsk",
+   "title": "What I learned by noticing salamanders | Sean Flynn | TEDxSNHU",
+   "channel": "TEDx Talks",
+   "views": "360 views",
+   "age": "5 mo ago",
+   "length": "10:24",
+   "tier": 1,
+   "viewCount": 360,
+   "foundBy": "salamander regeneration ted",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 8,
+ "gate": "PASS",
+ "hasTed": true,
+ "failedQueries": []
+}

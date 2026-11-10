@@ -1,0 +1,7 @@
+s01_01_lead_box_v01     1.6s 01_lead_box_v01.jpg          ok
+s02_02_shed_lab_v01     6.3s 02_shed_lab_v01.jpg          ok
+s03_03_glowing_vials_v01    10.1s 03_glowing_vials_v01.jpg     ok
+s04_04_bare_hands_v01    12.5s 04_bare_hands_v01.jpg        ok
+s05_05_paris_archive_v02    17.1s 05_paris_archive_v02.jpg     WARN low detail: edge density 0.0144 < film p5 0.0162
+s06_01_lead_box_v01    21.3s end_card_loop_01_lead_box_v0 ok
+polish gate PASS: 0 of 6 rows failed, 1 to look at -> /Users/benjaminoats/YouTube/History Of Science/docs/STANDALONE_SHORTS_TEST_2026-10/qa_shorts_v01/hos_sa_s4_curie_notebooks_v02/polish_gate_hos_sa_s4_curie_notebooks_v02.json

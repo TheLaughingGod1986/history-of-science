@@ -1,0 +1,166 @@
+{
+  "rule": {
+    "low_detail": "FAIL: luma std < 13.44 and edge density < 0.0259 (absolute floor); WARN: luma std < 18.0 or edge density < film p5",
+    "split_panel": "full-height/width seam or gutter",
+    "split_panel_gutter": "gutter counts only with edge density >= 0.01 in the 10% band on both sides",
+    "near_black": "mean < 28.0 or p95 < 50.0",
+    "noise": "grain std > 6 over structure std < 12, and the 8x-downscaled frame under the low-detail floor (std < 13.44 and edge density < 0.0259)",
+    "jitter": "centre-patch phase correlation: reversal against trend or > 0.35 px off trend"
+  },
+  "low_detail_floor": {
+    "std": 13.44,
+    "edge": 0.0259,
+    "calibration": {
+      "video": "025_MarsRobot_full_rough_v02d.mp4",
+      "factor": 1.2,
+      "frames": [
+        {
+          "source": "PIA22223.jpg",
+          "t": 201.0,
+          "std": 12.1,
+          "edge": 0.0223
+        },
+        {
+          "source": "PIA22223.jpg",
+          "t": 216.3,
+          "std": 11.2,
+          "edge": 0.0216
+        },
+        {
+          "source": "PIA22929.jpg",
+          "t": 297.4,
+          "std": 26.54,
+          "edge": 0.5735
+        }
+      ]
+    }
+  },
+  "video": "/Users/benjaminoats/YouTube/History Of Science/docs/STANDALONE_SHORTS_TEST_2026-10/shorts_v01/hos_sa_s4_curie_notebooks_v04.mp4",
+  "edge_floor": 0.0162,
+  "verdict": "PASS",
+  "failed": [],
+  "warn": [
+    {
+      "row": "s05_05_paris_archive_v02",
+      "cut": 4,
+      "t": 17.1,
+      "source": "05_paris_archive_v02.jpg",
+      "why": [
+        "low detail: edge density 0.0144 < film p5 0.0162"
+      ]
+    }
+  ],
+  "reviewed_ok": [],
+  "rows": [
+    {
+      "cut": 0,
+      "row": "s01_01_lead_box_v01",
+      "source": "01_lead_box_v01.jpg",
+      "t": 1.65,
+      "std": 42.08,
+      "mean": 44.83,
+      "p95": 122.0,
+      "edge": 0.0406,
+      "hf": 10.76,
+      "lf": 34.46,
+      "std8": 37.22,
+      "edge8": 0.2396,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 1,
+      "row": "s02_02_shed_lab_v01",
+      "source": "02_shed_lab_v01.jpg",
+      "t": 6.3,
+      "std": 47.04,
+      "mean": 60.67,
+      "p95": 161.0,
+      "edge": 0.0464,
+      "hf": 8.05,
+      "lf": 43.15,
+      "std8": 44.83,
+      "edge8": 0.1981,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 2,
+      "row": "s03_03_glowing_vials_v01",
+      "source": "03_glowing_vials_v01.jpg",
+      "t": 10.11,
+      "std": 34.89,
+      "mean": 49.82,
+      "p95": 109.0,
+      "edge": 0.0215,
+      "hf": 7.05,
+      "lf": 30.99,
+      "std8": 32.44,
+      "edge8": 0.1252,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 3,
+      "row": "s04_04_bare_hands_v01",
+      "source": "04_bare_hands_v01.jpg",
+      "t": 12.54,
+      "std": 51.28,
+      "mean": 83.22,
+      "p95": 167.0,
+      "edge": 0.0381,
+      "hf": 7.04,
+      "lf": 47.96,
+      "std8": 49.27,
+      "edge8": 0.2433,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 4,
+      "row": "s05_05_paris_archive_v02",
+      "source": "05_paris_archive_v02.jpg",
+      "t": 17.1,
+      "std": 36.05,
+      "mean": 54.14,
+      "p95": 114.0,
+      "edge": 0.0144,
+      "hf": 6.37,
+      "lf": 33.01,
+      "std8": 34.1,
+      "edge8": 0.1375,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0144 < film p5 0.0162"
+      ]
+    },
+    {
+      "cut": 5,
+      "row": "s06_01_lead_box_v01",
+      "source": "end_card_loop_01_lead_box_v01.jpg",
+      "t": 21.34,
+      "std": 35.84,
+      "mean": 41.75,
+      "p95": 111.0,
+      "edge": 0.0219,
+      "hf": 6.9,
+      "lf": 31.88,
+      "std8": 33.56,
+      "edge8": 0.1878,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    }
+  ]
+}

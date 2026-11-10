@@ -1,0 +1,176 @@
+{
+ "pulled": "2026-10-16",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "vitamin c",
+  "scurvy",
+  "james lind"
+ ],
+ "autocomplete": {
+  "vitamin c": [
+   "vitamin c",
+   "vitamin c serum",
+   "vitamin c can",
+   "vitamin c ki kami se kya hota hai",
+   "vitamin c graduation",
+   "vitamin c song",
+   "vitamin c ke fayde",
+   "vitamin club",
+   "vitamin c benefits",
+   "vitamin c tablets"
+  ],
+  "scurvy": [
+   "scurvy",
+   "scurvy pink",
+   "scurvy disease in hindi",
+   "scurvy rog kya hota hai",
+   "scurvy rog",
+   "scurvy toilet",
+   "scurvy ain't for the likes of me",
+   "scurvy symptoms",
+   "scurvy dave",
+   "scurvy biochemistry"
+  ],
+  "james lind": [
+   "james lindsay",
+   "james lindsay charlie kirk",
+   "james linden hogg",
+   "james lind",
+   "james lindsay israel",
+   "james lindsay debate",
+   "james lindsay gnosticism",
+   "james lindsay new discourses",
+   "james lindsay interview",
+   "james lindsay marxism"
+  ]
+ },
+ "sharedTitleWords": [
+  "vitamin c"
+ ],
+ "neighbours": [
+  {
+   "id": "ISZLTJH5lYg",
+   "title": "How do vitamins work? - Ginnie Trinh Nguyen",
+   "channel": "TED-Ed",
+   "views": "6,845,506 views",
+   "age": "12 yr ago",
+   "length": "4:44",
+   "tier": 1,
+   "viewCount": 6845506,
+   "foundBy": "ted-ed vitamin c",
+   "onTopic": true
+  },
+  {
+   "id": "i60wwZDA1CI",
+   "title": "The method that can \"prove\" almost anything - James A. Smith",
+   "channel": "TED-Ed",
+   "views": "881,476 views",
+   "age": "5 yr ago",
+   "length": "5:06",
+   "tier": 1,
+   "viewCount": 881476,
+   "foundBy": "ted-ed james lind",
+   "onTopic": true
+  },
+  {
+   "id": "ySLNkrNGJ3M",
+   "title": "How dementia patients taught me to live with less regret | James Lee | TEDxSouth Congress",
+   "channel": "TEDx Talks",
+   "views": "131,698 views",
+   "age": "9 mo ago",
+   "length": "17:34",
+   "tier": 1,
+   "viewCount": 131698,
+   "foundBy": "james lind ted",
+   "onTopic": true
+  },
+  {
+   "id": "rn5I5tfsFN8",
+   "title": "Why Scurvy Doesn't Make Sense to Science",
+   "channel": "SciShow",
+   "views": "813,856 views",
+   "age": "7 yr ago",
+   "length": "5:46",
+   "tier": 2,
+   "viewCount": 813856,
+   "foundBy": "ted-ed scurvy",
+   "onTopic": true
+  },
+  {
+   "id": "TBNCqRCsSvY",
+   "title": "Introduction to vitamins and minerals | Biology foundations | High school biology | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "360,048 views",
+   "age": "8 yr ago",
+   "length": "6:11",
+   "tier": 2,
+   "viewCount": 360048,
+   "foundBy": "khan academy vitamin c",
+   "onTopic": true
+  },
+  {
+   "id": "Py__GJjQzCA",
+   "title": "We Forgot How to Cure Scurvy 7ish Times",
+   "channel": "SciShow",
+   "views": "354,660 views",
+   "age": "11 mo ago",
+   "length": "15:15",
+   "tier": 2,
+   "viewCount": 354660,
+   "foundBy": "scurvy",
+   "onTopic": true
+  },
+  {
+   "id": "Mp9II8MmuoA",
+   "title": "Vitamin C and the Limeys",
+   "channel": "Khan Academy",
+   "views": "113,800 views",
+   "age": "15 yr ago",
+   "length": "7:21",
+   "tier": 2,
+   "viewCount": 113800,
+   "foundBy": "khan academy vitamin c",
+   "onTopic": true
+  },
+  {
+   "id": "vptZwtyE6ws",
+   "title": "The myth of vitamin C | Maja Grzeszczyk | TEDxIILOPoznań",
+   "channel": "TEDx Talks",
+   "views": "1,796 views",
+   "age": "4 yr ago",
+   "length": "11:51",
+   "tier": 1,
+   "viewCount": 1796,
+   "foundBy": "ted-ed vitamin c",
+   "onTopic": true
+  },
+  {
+   "id": "7aqnLsmOqrM",
+   "title": "The Unknown  | James Hutchinson | TEDxNazarbayevUniversity",
+   "channel": "TEDx Talks",
+   "views": "643 views",
+   "age": "10 mo ago",
+   "length": "14:36",
+   "tier": 1,
+   "viewCount": 643,
+   "foundBy": "james lind ted",
+   "onTopic": true
+  },
+  {
+   "id": "lsBp9z5iEt4",
+   "title": "Nothing Ever Happens Here | David James | TEDxUniversity of Suffolk",
+   "channel": "TEDx Talks",
+   "views": "4 views",
+   "age": "1 hr ago",
+   "length": "17:45",
+   "tier": 1,
+   "viewCount": 4,
+   "foundBy": "james lind ted",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 1,
+ "gate": "FAIL",
+ "hasTed": true,
+ "failedQueries": []
+}

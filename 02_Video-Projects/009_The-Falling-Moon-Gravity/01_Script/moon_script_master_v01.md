@@ -20,7 +20,7 @@ For thousands of years, people believed the sky followed different rules from th
 
 Picture yourself on a clear night in sixteen sixty-five. You would see the Moon rise over the fields, huge and silent. You would feel the cold ground under your feet. And if you dropped a stone, you would hear it thud. Would you ever think that the stone and the Moon were doing the same thing?
 
-[VISUAL MUST: 0:50 — a young man stands in a dark field, drops a pebble from his hand and watches it fall, then looks up at the rising Moon · LABEL: 1665]
+[VISUAL MUST: 0:50 — a young man stands in a dark field, drops a pebble from his hand and watches it fall, then looks up at the rising Moon · WHEN: England, 1665 · LABEL: 1665]
 [TEACH: For centuries, people thought the heavens and the Earth followed different rules. Things on Earth fell, but the Moon and planets seemed to move for ever without falling.]
 
 One young man did. And it started in a year when the whole country was afraid.
@@ -30,9 +30,9 @@ One young man did. And it started in a year when the whole country was afraid.
 ## PART 02: An Apple in a Plague Year (1:20–3:00)
 
 [CHAPTER CARD: An Apple in a Plague Year · 1:20 · ~1.5 s]
-[VISUAL MUST: 1:23 — Cambridge, 1665: college gates swing shut; a notice on the gate; students carry trunks out to waiting carts · LABEL: CAMBRIDGE CLOSES]
-[VISUAL MUST: 1:38 — Woolsthorpe Manor, a small stone farmhouse; Isaac Newton (readable face, about twenty-three, long dark hair, plain dark coat, white collar) carries a stack of books through the door · LABEL: ISAAC NEWTON · WOOLSTHORPE]
-[VISUAL MUST: 2:00 — the orchard in late summer; Newton sits on a bench under an apple tree, thinking; an apple falls in the grass a few feet away, not on his head · LABEL: THE APPLE]
+[VISUAL MUST: 1:23 — Cambridge, 1665: college gates swing shut; students carry trunks out to waiting carts · WHEN: Cambridge, 1665 · LABEL: CAMBRIDGE CLOSES]
+[VISUAL MUST: 1:38 — Woolsthorpe Manor, a small stone farmhouse; Isaac Newton (readable face, about twenty-three, long dark hair, plain dark coat, white collar) carries a stack of books through the door · WHO: Isaac Newton (1642–1727) — Cambridge student · WHEN: Woolsthorpe, 25 December 1642 · FACT: Fitted in quart pot · LABEL: ISAAC NEWTON · WOOLSTHORPE]
+[VISUAL MUST: 2:00 — the orchard in late summer; Newton sits on a bench under an apple tree, thinking; an apple falls in the grass a few feet away, not on his head · WHEN: Woolsthorpe, 1665–1667 (timeline marker) · FACT: Never hit his head · LABEL: THE APPLE]
 [VISUAL MUST: 2:20 — Newton looks from the fallen apple up to the pale daytime Moon above the trees; a faint line of pull stretches from the Earth up towards it · LABEL: HOW HIGH DOES IT REACH?]
 [EXPLORER ACTS: once. In the orchard the Explorer picks up the fallen apple, tosses it gently into the air, catches it, then holds it up beside the pale Moon and squints at the two of them]
 [TEACH: Newton asked whether the pull that makes an apple fall could reach all the way to the Moon.]
@@ -58,7 +58,7 @@ It was an extraordinary idea. If the Earth was pulling on the Moon, then the Moo
 [VISUAL MUST: 3:18 — the cannon fires a ball gently; it curves down and lands near the foot of the mountain · LABEL: SLOW]
 [VISUAL MUST: 3:30 — a faster shot curves further and lands far around the globe · LABEL: FASTER]
 [VISUAL MUST: 3:45 — the fastest shot curves down, but the Earth curves away beneath it just as fast; the ball sweeps all the way around and comes back past the mountain · LABEL: FALLING ALL THE WAY ROUND]
-[VISUAL MUST: 4:10 — the cannonball's circle fades into the Moon's much larger orbit around the Earth · LABEL: AN ORBIT]
+[VISUAL MUST: 4:10 — the cannonball's circle fades into the Moon's much larger orbit around the Earth · DATA: inked orbital path showing 1 km/s sideways motion combined with continuous fall around the Earth · SCALE: one kilometre every second — three times the speed of sound · LABEL: AN ORBIT]
 [TEACH: An orbit is a fall that keeps missing. A ball moving sideways fast enough falls towards the Earth, but the Earth curves away beneath it, so it falls all the way around.]
 
 Newton's answer was so simple it is easy to miss. The Moon isn't held up at all. It really is falling. It just never lands.
@@ -78,12 +78,12 @@ But an idea isn't proof. If the same pull holds the Moon and drops the apple, Ne
 ## PART 04: The Moon Test (4:40–6:30)
 
 [CHAPTER CARD: The Moon Test · 4:40 · ~1.5 s]
-[VISUAL MUST: 4:43 — a calm teach diagram: the Earth, and a line of sixty Earths laid end to end reaching out to the Moon · LABEL: 60 TIMES FURTHER]
+[VISUAL MUST: 4:43 — a calm teach diagram: the Earth, and a line of sixty Earths laid end to end reaching out to the Moon · DATA: inked Earth–Moon distance scale of 60 Earth radii · SCALE: 60 Earth radii — 30 full Earths laid side by side · LABEL: 60 TIMES FURTHER]
 [VISUAL MUST: 4:52 — a hand sprays paint at a wall from close up, a small dark spot; then from twice as far, a patch four times as big and paler · LABEL: TWICE AS FAR, A QUARTER AS STRONG]
-[VISUAL MUST: 5:00 — a square of 60 by 60 small dots fills the screen, then shrinks the pull arrow on the Moon to one tiny dot · LABEL: 3,600 TIMES WEAKER]
-[VISUAL MUST: 5:20 — split screen: on the left, an apple falls for one second beside a ruler; on the right, the Moon falls for one minute along its curve; both drop the same distance · LABEL: 1 MINUTE = 1 SECOND]
-[VISUAL MUST: 5:45 — Cambridge, 1684: a visitor (readable face: Edmond Halley, about twenty-eight, long dark natural hair, travelling coat) sits across from an older Newton in his rooms, books piled everywhere · LABEL: EDMOND HALLEY · 1684]
-[VISUAL MUST: 6:10 — a London printer's shop, 1687; a thick book comes off the press; its title page reads PHILOSOPHIAE NATURALIS PRINCIPIA MATHEMATICA · LABEL: PRINCIPIA · 1687]
+[VISUAL MUST: 5:00 — a square of 60 by 60 small dots fills the screen, then shrinks the pull arrow on the Moon to one tiny dot · DATA: 60 × 60 inverse-square grid showing pull 3,600 times weaker at the Moon · SCALE: 3,600 times weaker — as many seconds as in one hour · LABEL: 3,600 TIMES WEAKER]
+[VISUAL MUST: 5:20 — split screen: on the left, an apple falls for one second beside a ruler; on the right, the Moon falls for one minute along its curve; both drop the same distance · DATA: split-screen comparison of an apple falling ~5 m (15 1/12 Paris feet) in 1 second vs the Moon falling ~5 m in 1 minute · SCALE: about five metres — the height of a two-storey house · LABEL: 1 MINUTE = 1 SECOND]
+[VISUAL MUST: 5:45 — Cambridge, 1684: a visitor (readable face: Edmond Halley, about twenty-eight, long dark natural hair, travelling coat) sits across from an older Newton in his rooms, books piled everywhere · WHO: Edmond Halley (1656–1742) — English astronomer · WHEN: Cambridge, August 1684 (timeline marker) · LABEL: EDMOND HALLEY · 1684]
+[VISUAL MUST: 6:10 — a London printer's shop, 1687; a thick book comes off the press; its title page reads PHILOSOPHIAE NATURALIS PRINCIPIA MATHEMATICA · WHEN: London, 1687 (timeline marker) · FACT: Halley paid for printing · DATA: animated timeline that builds as each date is said (1642 · 1665–1667 · 1684 · 1687 · 1758) · SCALE: twenty years from the plague orchard (1666) to the Principia (1687) · LABEL: PRINCIPIA · 1687]
 [TEACH: The Moon is about sixty times further from the Earth's centre than we are, so the Earth's pull on it is about 3,600 times weaker. Newton showed that this weaker pull is exactly what keeps the Moon in its orbit.]
 
 Newton worked out that a pull like this should get weaker with distance. Twice as far away, it should be four times weaker. Three times as far, nine times weaker.
@@ -108,10 +108,10 @@ Halley was amazed, and he begged Newton to write it all down. The result, three 
 
 [CHAPTER CARD: Falling Around the World · 6:30 · ~1.5 s]
 [VISUAL MUST: 6:33 — a teach diagram of the solar system: the same faint lines of pull reach from the Sun to each planet, and from each planet to its moons · LABEL: ONE LAW EVERYWHERE]
-[VISUAL MUST: 6:45 — a night sky over a German farmhouse, Christmas 1758; a farmer-astronomer at a small telescope spots a faint comet with a glowing tail · LABEL: HALLEY'S COMET · 1758]
+[VISUAL MUST: 6:45 — a night sky over a German farmhouse, Christmas 1758; a farmer-astronomer at a small telescope spots a faint comet with a glowing tail · WHEN: Saxony, 25 December 1758 (timeline marker) · FACT: Returned on Christmas night · LABEL: HALLEY'S COMET · 1758]
 [VISUAL MUST: 6:55 — a calm sea at a harbour; the tide slowly rises up the harbour wall as the Moon hangs overhead · LABEL: THE MOON PULLS BACK]
-[VISUAL MUST: 7:15 — the International Space Station glides over a blue Earth; inside, astronauts and a floating apple drift together · LABEL: FALLING, TOGETHER]
-[VISUAL MUST: 7:45 — back in the Woolsthorpe orchard at dusk; an apple falls, and the camera tilts up past the tree to the rising Moon · LABEL: THE SAME PULL]
+[VISUAL MUST: 7:15 — the International Space Station glides over a blue Earth; inside, astronauts and a floating apple drift together · DATA: ISS orbital free-fall curve at 28,000 km/h (7.66 km/s) around the Earth · SCALE: 28,000 km/h — circling the Earth every 90 minutes · LABEL: FALLING, TOGETHER]
+[VISUAL MUST: 7:45 — back in the Woolsthorpe orchard at dusk; an apple falls, and the camera tilts up past the tree to the rising Moon · WHEN: 66 million years ago (hand-off) · LABEL: THE SAME PULL]
 [EXPLORER ACTS: once. In the orchard at dusk the Explorer sets the apple down on the bench where Newton sat, looks up at the Moon, and gives it a small, knowing nod]
 [TEACH: The same law of gravity explains falling apples, the Moon's orbit, the paths of the planets and the tides. Astronauts float because they and their spacecraft are falling around the Earth together.]
 

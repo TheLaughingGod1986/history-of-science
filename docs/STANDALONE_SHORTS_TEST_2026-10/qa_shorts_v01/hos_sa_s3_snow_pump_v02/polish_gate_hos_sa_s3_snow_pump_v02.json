@@ -1,0 +1,148 @@
+{
+  "rule": {
+    "low_detail": "FAIL: luma std < 13.44 and edge density < 0.0259 (absolute floor); WARN: luma std < 18.0 or edge density < film p5",
+    "split_panel": "full-height/width seam or gutter",
+    "split_panel_gutter": "gutter counts only with edge density >= 0.01 in the 10% band on both sides",
+    "near_black": "mean < 28.0 or p95 < 50.0",
+    "noise": "grain std > 6 over structure std < 12, and the 8x-downscaled frame under the low-detail floor (std < 13.44 and edge density < 0.0259)",
+    "jitter": "centre-patch phase correlation: reversal against trend or > 0.35 px off trend"
+  },
+  "low_detail_floor": {
+    "std": 13.44,
+    "edge": 0.0259,
+    "calibration": {
+      "video": "025_MarsRobot_full_rough_v02d.mp4",
+      "factor": 1.2,
+      "frames": [
+        {
+          "source": "PIA22223.jpg",
+          "t": 201.0,
+          "std": 12.1,
+          "edge": 0.0223
+        },
+        {
+          "source": "PIA22223.jpg",
+          "t": 216.3,
+          "std": 11.2,
+          "edge": 0.0216
+        },
+        {
+          "source": "PIA22929.jpg",
+          "t": 297.4,
+          "std": 26.54,
+          "edge": 0.5735
+        }
+      ]
+    }
+  },
+  "video": "/Users/benjaminoats/YouTube/History Of Science/docs/STANDALONE_SHORTS_TEST_2026-10/shorts_v01/hos_sa_s3_snow_pump_v02.mp4",
+  "edge_floor": 0.0374,
+  "verdict": "PASS",
+  "failed": [],
+  "warn": [
+    {
+      "row": "s02_02_soho_1854_v01",
+      "cut": 1,
+      "t": 7.85,
+      "source": "02_soho_1854_v01.jpg",
+      "why": [
+        "low detail: edge density 0.0366 < film p5 0.0374"
+      ]
+    }
+  ],
+  "reviewed_ok": [],
+  "rows": [
+    {
+      "cut": 0,
+      "row": "s01_05_handle_off_v03",
+      "source": "05_handle_off_v03.jpg",
+      "t": 2.33,
+      "std": 56.83,
+      "mean": 134.08,
+      "p95": 232.0,
+      "edge": 0.1019,
+      "hf": 19.88,
+      "lf": 45.89,
+      "std8": 48.63,
+      "edge8": 0.2953,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 1,
+      "row": "s02_02_soho_1854_v01",
+      "source": "02_soho_1854_v01.jpg",
+      "t": 7.85,
+      "std": 59.72,
+      "mean": 102.68,
+      "p95": 205.0,
+      "edge": 0.0366,
+      "hf": 7.27,
+      "lf": 57.55,
+      "std8": 58.45,
+      "edge8": 0.1692,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0366 < film p5 0.0374"
+      ]
+    },
+    {
+      "cut": 2,
+      "row": "s03_03_snow_tracking_v01",
+      "source": "03_snow_tracking_v01.jpg",
+      "t": 12.88,
+      "std": 51.73,
+      "mean": 103.83,
+      "p95": 179.0,
+      "edge": 0.1052,
+      "hf": 11.35,
+      "lf": 46.55,
+      "std8": 48.38,
+      "edge8": 0.3669,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 3,
+      "row": "s04_04_map_bars_v01",
+      "source": "04_map_bars_v01.jpg",
+      "t": 16.27,
+      "std": 55.78,
+      "mean": 82.58,
+      "p95": 189.0,
+      "edge": 0.1137,
+      "hf": 11.66,
+      "lf": 52.28,
+      "std8": 53.08,
+      "edge8": 0.198,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 4,
+      "row": "s05_05_handle_off_v03",
+      "source": "end_card_loop_05_handle_off_v03.jpg",
+      "t": 19.98,
+      "std": 51.22,
+      "mean": 139.18,
+      "p95": 228.0,
+      "edge": 0.0405,
+      "hf": 7.89,
+      "lf": 48.92,
+      "std8": 49.55,
+      "edge8": 0.1379,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    }
+  ]
+}

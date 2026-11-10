@@ -1,0 +1,176 @@
+{
+ "pulled": "2026-10-20",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "skeletal system bones",
+  "how to grow a bone"
+ ],
+ "autocomplete": {
+  "skeletal system bones": [
+   "skeletal system bones name",
+   "skeletal system bones",
+   "skeletal system bones anatomy",
+   "skeletal system bones song",
+   "skeletal system bones anatomy and physiology",
+   "skeletal system bones and joints",
+   "skeletal system bones joints and muscles",
+   "skeletal system bones and bone tissue",
+   "skeletal system bones name trick"
+  ],
+  "how to grow a bone": [
+   "how to grow a bone blossom",
+   "how to grow a bone",
+   "how to grow a bone blossom big",
+   "how to grow a bone blossom in grow a garden",
+   "how to grow a bone blossom huge",
+   "how to grow a bone blossom very big",
+   "how to grow a bone blossom tree",
+   "how to grow a bone blossom without moon cat",
+   "how to grow a big bone blossom tree",
+   "how to grow a huge bone blossom tree"
+  ]
+ },
+ "sharedTitleWords": [
+  "to grow",
+  "a bone",
+  "skeletal system"
+ ],
+ "neighbours": [
+  {
+   "id": "2tM1LFFxeKg",
+   "title": "What makes muscles grow? - Jeffrey Siegel",
+   "channel": "TED-Ed",
+   "views": "23,704,370 views",
+   "age": "10 yr ago",
+   "length": "4:20",
+   "tier": 1,
+   "viewCount": 23704370,
+   "foundBy": "ted-ed how to grow a bone",
+   "onTopic": true
+  },
+  {
+   "id": "VVL-8zr2hk4",
+   "title": "How your muscular system works - Emma Bryce",
+   "channel": "TED-Ed",
+   "views": "3,235,112 views",
+   "age": "8 yr ago",
+   "length": "4:45",
+   "tier": 1,
+   "viewCount": 3235112,
+   "foundBy": "ted-ed skeletal system bones",
+   "onTopic": true
+  },
+  {
+   "id": "yJoQj5-TIvE",
+   "title": "How to grow a bone - Nina Tandon",
+   "channel": "TED-Ed",
+   "views": "1,375,933 views",
+   "age": "11 yr ago",
+   "length": "4:37",
+   "tier": 1,
+   "viewCount": 1375933,
+   "foundBy": "ted-ed skeletal system bones",
+   "onTopic": true
+  },
+  {
+   "id": "1Qfmkd6C8u8",
+   "title": "How bones make blood - Melody Smith",
+   "channel": "TED-Ed",
+   "views": "981,661 views",
+   "age": "6 yr ago",
+   "length": "4:43",
+   "tier": 1,
+   "viewCount": 981661,
+   "foundBy": "ted-ed skeletal system bones",
+   "onTopic": true
+  },
+  {
+   "id": "IwYut9qF-jM",
+   "title": "Why does hitting your funny bone feel so horrible? - Cella Wright",
+   "channel": "TED-Ed",
+   "views": "933,405 views",
+   "age": "2 yr ago",
+   "length": "4:19",
+   "tier": 1,
+   "viewCount": 933405,
+   "foundBy": "ted-ed skeletal system bones",
+   "onTopic": true
+  },
+  {
+   "id": "gVXoAbeB8QI",
+   "title": "What happens when you break a bone? - Gurpreet Baht and Natalie Pang",
+   "channel": "TED-Ed",
+   "views": "422,889 views",
+   "age": "7 mo ago",
+   "length": "4:12",
+   "tier": 1,
+   "viewCount": 422889,
+   "foundBy": "ted-ed skeletal system bones",
+   "onTopic": true
+  },
+  {
+   "id": "1Zh045t0xcE",
+   "title": "Why Healthy Bones Are About So Much More than Milk | Body Stuff with Dr. Jen Gunter",
+   "channel": "TED",
+   "views": "408,064 views",
+   "age": "5 yr ago",
+   "length": "3:36",
+   "tier": 1,
+   "viewCount": 408064,
+   "foundBy": "ted-ed skeletal system bones",
+   "onTopic": true
+  },
+  {
+   "id": "fYUaWgVF2XA",
+   "title": "Molly Stevens: A new way to grow bone",
+   "channel": "TED",
+   "views": "113,286 views",
+   "age": "12 yr ago",
+   "length": "14:53",
+   "tier": 1,
+   "viewCount": 113286,
+   "foundBy": "ted-ed how to grow a bone",
+   "onTopic": true
+  },
+  {
+   "id": "rDGqkMHPDqE",
+   "title": "The Skeletal System: Crash Course Anatomy & Physiology #19",
+   "channel": "CrashCourse",
+   "views": "6,788,773 views",
+   "age": "11 yr ago",
+   "length": "10:38",
+   "tier": 2,
+   "viewCount": 6788773,
+   "foundBy": "skeletal system bones",
+   "onTopic": true
+  },
+  {
+   "id": "m26gr04HIVE",
+   "title": "Skeletal System",
+   "channel": "Amoeba Sisters",
+   "views": "1,656,896 views",
+   "age": "3 yr ago",
+   "length": "9:05",
+   "tier": 2,
+   "viewCount": 1656896,
+   "foundBy": "skeletal system bones",
+   "onTopic": true
+  },
+  {
+   "id": "jbuGFWsOSlw",
+   "title": "KS3 Biology - Skeletal System - Structure of Bones | Functions of the Skeleton",
+   "channel": "Cognito",
+   "views": "20,999 views",
+   "age": "10 mo ago",
+   "length": "4:30",
+   "tier": 2,
+   "viewCount": 20999,
+   "foundBy": "skeletal system bones",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 5,
+ "gate": "PASS",
+ "hasTed": true,
+ "failedQueries": []
+}

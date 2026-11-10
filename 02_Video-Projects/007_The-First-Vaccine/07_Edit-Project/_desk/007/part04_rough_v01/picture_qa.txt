@@ -1,0 +1,2 @@
+WARN   0:01 row 01_page_turns 05_quill_writes_t1.mp4: low detail: edge density 0.0153 < film p5 0.0184
+picture QA PASS: 0 of 20 cuts fail, 1 to look at -> /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/_desk/007/part04_rough_v01/PICTURE_QA.md, /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/007_The-First-Vaccine/07_Edit-Project/_desk/007/part04_rough_v01/picture_qa_review.jpg

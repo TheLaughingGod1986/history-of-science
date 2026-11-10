@@ -1,0 +1,229 @@
+{
+ "pulled": "2026-10-18",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "how pain relievers work aspirin",
+  "felix hoffmann"
+ ],
+ "autocomplete": {
+  "how pain relievers work aspirin": [],
+  "felix hoffmann": [
+   "felix hoffmann",
+   "felix hoffmann lillehammer",
+   "felix hoffmann interview",
+   "felix hoffmann badminton",
+   "felix hoffmann engelberg",
+   "felix hoffmann skispringen",
+   "olivier felix hoffmann",
+   "jan felix hoffmann",
+   "felix hoffmann innsbruck",
+   "felix hoffmann oberstdorf"
+  ]
+ },
+ "sharedTitleWords": [
+  "your brain",
+  "the mystery",
+  "mystery of",
+  "of chronic",
+  "chronic pain",
+  "elliot krane"
+ ],
+ "neighbours": [
+  {
+   "id": "9mcuIc5O-DE",
+   "title": "How Do Pain Relievers Work? - George Zaidan",
+   "channel": "TED-Ed",
+   "views": "4,252,237 views",
+   "age": "14 yr ago",
+   "length": "4:14",
+   "tier": 1,
+   "viewCount": 4252237,
+   "foundBy": "how pain relievers work aspirin",
+   "onTopic": true
+  },
+  {
+   "id": "uRhkDN2WjzI",
+   "title": "How aspirin was discovered - Krishna Sudhir",
+   "channel": "TED-Ed",
+   "views": "3,076,445 views",
+   "age": "9 yr ago",
+   "length": "5:45",
+   "tier": 1,
+   "viewCount": 3076445,
+   "foundBy": "how pain relievers work aspirin",
+   "onTopic": true
+  },
+  {
+   "id": "I7wfDenj6CQ",
+   "title": "How does your brain respond to pain? - Karen D. Davis",
+   "channel": "TED-Ed",
+   "views": "2,962,457 views",
+   "age": "12 yr ago",
+   "length": "4:58",
+   "tier": 1,
+   "viewCount": 2962457,
+   "foundBy": "ted-ed how pain relievers work aspirin",
+   "onTopic": true
+  },
+  {
+   "id": "eakyDiXX6Uc",
+   "title": "The mysterious science of pain - Joshua W. Pate",
+   "channel": "TED-Ed",
+   "views": "2,057,805 views",
+   "age": "7 yr ago",
+   "length": "5:03",
+   "tier": 1,
+   "viewCount": 2057805,
+   "foundBy": "ted-ed how pain relievers work aspirin",
+   "onTopic": true
+  },
+  {
+   "id": "5SpaXqAQ4Wo",
+   "title": "How to Hack Your Brain When You're in Pain | Amy Baxter | TED",
+   "channel": "TED",
+   "views": "803,705 views",
+   "age": "3 yr ago",
+   "length": "16:16",
+   "tier": 1,
+   "viewCount": 803705,
+   "foundBy": "ted-ed how pain relievers work aspirin",
+   "onTopic": true
+  },
+  {
+   "id": "CZ0gIiwjk_0",
+   "title": "The mystery of chronic pain - Elliot Krane",
+   "channel": "TED-Ed",
+   "views": "258,090 views",
+   "age": "13 yr ago",
+   "length": "8:15",
+   "tier": 1,
+   "viewCount": 258090,
+   "foundBy": "ted-ed how pain relievers work aspirin",
+   "onTopic": true
+  },
+  {
+   "id": "J6--CMhcCfQ",
+   "title": "Elliot Krane: The mystery of chronic pain",
+   "channel": "TED",
+   "views": "257,191 views",
+   "age": "15 yr ago",
+   "length": "8:30",
+   "tier": 1,
+   "viewCount": 257191,
+   "foundBy": "ted-ed how pain relievers work aspirin",
+   "onTopic": true
+  },
+  {
+   "id": "GmHGUTNoL-I",
+   "title": "Why We Feel Pain, and How We Kill it | A Look at Pain & Painkillers",
+   "channel": "SciShow",
+   "views": "1,407,643 views",
+   "age": "12 yr ago",
+   "length": "10:05",
+   "tier": 2,
+   "viewCount": 1407643,
+   "foundBy": "ted-ed how pain relievers work aspirin",
+   "onTopic": true
+  },
+  {
+   "id": "zdYnTHIVL48",
+   "title": "Who Owns Our Wealth? The hidden past and urgent future of money | Felix Oldenburg | TEDxBerlin",
+   "channel": "TEDx Talks",
+   "views": "3,805 views",
+   "age": "1 yr ago",
+   "length": "14:50",
+   "tier": 1,
+   "viewCount": 3805,
+   "foundBy": "felix hoffmann ted",
+   "onTopic": true
+  },
+  {
+   "id": "hCKv-Jyo-zs",
+   "title": "Why ideas don't matter...that much | Florian Hoffmann | TEDxIngolstadt",
+   "channel": "TEDx Talks",
+   "views": "2,667 views",
+   "age": "10 yr ago",
+   "length": "14:21",
+   "tier": 1,
+   "viewCount": 2667,
+   "foundBy": "ted-ed felix hoffmann",
+   "onTopic": true
+  },
+  {
+   "id": "qm8Em4WA7Ug",
+   "title": "Befriend the uncomfortable | Felix Hirschburger | TEDxHochschuleLuzern",
+   "channel": "TEDx Talks",
+   "views": "2,177 views",
+   "age": "7 yr ago",
+   "length": "11:43",
+   "tier": 1,
+   "viewCount": 2177,
+   "foundBy": "ted-ed felix hoffmann",
+   "onTopic": true
+  },
+  {
+   "id": "9xnGvffdHeA",
+   "title": "The Strongest Leaders Build Safer Rooms | Felix Lattacher | TEDxDonauinsel Salon",
+   "channel": "TEDx Talks",
+   "views": "1,800 views",
+   "age": "3 mo ago",
+   "length": "7:48",
+   "tier": 1,
+   "viewCount": 1800,
+   "foundBy": "felix hoffmann ted",
+   "onTopic": true
+  },
+  {
+   "id": "chA9KZIdrEo",
+   "title": "The Psychology of Innovation | Felix Hofmann | TEDxStuttgart",
+   "channel": "TEDx Talks",
+   "views": "1,793 views",
+   "age": "2 yr ago",
+   "length": "15:50",
+   "tier": 1,
+   "viewCount": 1793,
+   "foundBy": "ted-ed felix hoffmann",
+   "onTopic": true
+  },
+  {
+   "id": "8yNMDTBQio0",
+   "title": "The Power of Breaking Rules & Deviating From Expectation | Felix Barrett | TEDxAlleyns School Youth",
+   "channel": "TEDx Talks",
+   "views": "1,122 views",
+   "age": "2 yr ago",
+   "length": "12:42",
+   "tier": 1,
+   "viewCount": 1122,
+   "foundBy": "ted-ed felix hoffmann",
+   "onTopic": true
+  },
+  {
+   "id": "R2o6QkEHlb8",
+   "title": "How AI will revolutionize work | Felix Hoffmann | TEDxXUExponentialUniversity",
+   "channel": "TEDx Talks",
+   "views": "513 views",
+   "age": "3 yr ago",
+   "length": "11:56",
+   "tier": 1,
+   "viewCount": 513,
+   "foundBy": "felix hoffmann",
+   "onTopic": true
+  },
+  {
+   "id": "0Sb68_ydnqw",
+   "title": "Redefining Motivation | Felix Hofer | TEDxThe Global College Youth",
+   "channel": "TEDx Talks",
+   "views": "112 views",
+   "age": "7 mo ago",
+   "length": "11:14",
+   "tier": 1,
+   "viewCount": 112,
+   "foundBy": "ted-ed felix hoffmann",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 5,
+ "gate": "PASS",
+ "hasTed": true,
+ "failedQueries": []
+}

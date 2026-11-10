@@ -1,0 +1,728 @@
+{
+ "pulled": "2026-10-19",
+ "source": "YouTube GB search results and autocomplete; public, no login. Not vidIQ.",
+ "queries": {
+  "what are prions mad cow disease": {
+   "suggest": [
+    "what causes mad cow disease",
+    "what is mad cow disease",
+    "mad cow disease prions"
+   ],
+   "search": [
+    {
+     "id": "tJ2gOTxOSys",
+     "title": "Mad Cow Disease Mostly Infects Teenagers",
+     "channel": "SciShow",
+     "views": "318,611 views",
+     "age": "1 yr ago",
+     "length": "12:47"
+    },
+    {
+     "id": "VEUizku9_ZE",
+     "title": "Prion disease is horrifying 😨",
+     "channel": "Chubbyemu",
+     "views": "4,648,182 views",
+     "age": "10 mo ago",
+     "length": "2:42"
+    },
+    {
+     "id": "Oeb_jwjwOto",
+     "title": "Prion disease: Zombies, Cows, and Cannibalism",
+     "channel": "Med Twins",
+     "views": "37,321 views",
+     "age": "3 yr ago",
+     "length": "10:30"
+    },
+    {
+     "id": "pJZnHL1laU0",
+     "title": "“Surgical Tools Can’t Be Sterilised from Prions” #explain",
+     "channel": "Dr Sermed Mezher",
+     "views": "3,116,195 views",
+     "age": "1 yr ago",
+     "length": "1:00"
+    },
+    {
+     "id": "hmuuin3AaVs",
+     "title": "My friend got prion disease. We watched her forget who we are.",
+     "channel": "Chubbyemu",
+     "views": "4,786,967 views",
+     "age": "2 mo ago",
+     "length": "29:23"
+    },
+    {
+     "id": "Pxojz6grwcU",
+     "title": "What Actually Caused Mad Cow Disease",
+     "channel": "SciShow",
+     "views": "1,114,430 views",
+     "age": "9 yr ago",
+     "length": "4:32"
+    },
+    {
+     "id": "w4o5gYLgdh0",
+     "title": "“She Doesn’t Know it Yet But CJD is Coming” #how",
+     "channel": "Dr Sermed Mezher",
+     "views": "408,829 views",
+     "age": "1 yr ago",
+     "length": "1:04"
+    },
+    {
+     "id": "R2VW2OXICsg",
+     "title": "2-Minute Neuroscience: Prion Diseases",
+     "channel": "Neuroscientifically Challenged",
+     "views": "128,835 views",
+     "age": "1 yr ago",
+     "length": "2:00"
+    }
+   ]
+  },
+  "how do enzymes work": {
+   "suggest": [
+    "how do enzymes work",
+    "how do enzymes work gcse",
+    "how do enzymes work in the body",
+    "how does enzymes work",
+    "how to enzymes work",
+    "how do digestive enzymes work in the body",
+    "how do restriction enzymes work",
+    "how do digestive enzymes work",
+    "how do enzymes actually work",
+    "how do enzyme cleaners work"
+   ],
+   "search": [
+    {
+     "id": "qgVFkRn8f10",
+     "title": "Enzymes (Updated)",
+     "channel": "Amoeba Sisters",
+     "views": "7,121,182 views",
+     "age": "10 yr ago",
+     "length": "5:47"
+    },
+    {
+     "id": "gUncqL1ul8Q",
+     "title": "GCSE Biology - What are Enzymes? (2026/27 exams)",
+     "channel": "Cognito",
+     "views": "685,510 views",
+     "age": "4 yr ago",
+     "length": "4:55"
+    },
+    {
+     "id": "yk14dOOvwMk",
+     "title": "How Enzymes Work (from PDB-101)",
+     "channel": "RCSBProteinDataBank",
+     "views": "1,621,489 views",
+     "age": "9 yr ago",
+     "length": "4:52"
+    },
+    {
+     "id": "rlH1ym916Fo",
+     "title": "Enzymes | Cells | Biology | FuseSchool",
+     "channel": "FuseSchool - Global Education",
+     "views": "1,142,086 views",
+     "age": "9 yr ago",
+     "length": "4:12"
+    },
+    {
+     "id": "UVeoXYJlBtI",
+     "title": "How Enzymes Work",
+     "channel": "RicochetScience",
+     "views": "768,642 views",
+     "age": "10 yr ago",
+     "length": "1:20"
+    },
+    {
+     "id": "wNG2uPao8BI",
+     "title": "Enzymes and How They Work: An Introduction",
+     "channel": "BioMan Biology",
+     "views": "106,552 views",
+     "age": "6 yr ago",
+     "length": "1:57"
+    },
+    {
+     "id": "EHgt0HEsJbk",
+     "title": "Operation Ouch - Amazing Enzymes | Science for Kids",
+     "channel": "Operation Ouch",
+     "views": "165,634 views",
+     "age": "9 yr ago",
+     "length": "4:16"
+    },
+    {
+     "id": "ypHpbHfDJsA",
+     "title": "GCSE Biology Revision \"Digestive Enzymes\"",
+     "channel": "Freesciencelessons",
+     "views": "63,268 views",
+     "age": "7 mo ago",
+     "length": "4:26"
+    }
+   ]
+  },
+  "how does the cell membrane work osmosis": {
+   "suggest": [
+    "how does the cell membrane work",
+    "how the cell membrane works"
+   ],
+   "search": [
+    {
+     "id": "BDDqY7IZhxQ",
+     "title": "Osmosis Animation and Experiments",
+     "channel": "BioMan Biology",
+     "views": "399,008 views",
+     "age": "2 yr ago",
+     "length": "4:14"
+    },
+    {
+     "id": "fJfTDc3WzQ8",
+     "title": "Cell Membrane Structure and Function",
+     "channel": "BioMan Biology",
+     "views": "1,358,843 views",
+     "age": "5 yr ago",
+     "length": "2:36"
+    },
+    {
+     "id": "qBCVVszQQNs",
+     "title": "Inside the Cell Membrane",
+     "channel": "Amoeba Sisters",
+     "views": "5,181,222 views",
+     "age": "8 yr ago",
+     "length": "9:09"
+    },
+    {
+     "id": "nsklF1w4eok",
+     "title": "Cell membranes are way more complicated than you think - Nazzy Pakpour",
+     "channel": "TED-Ed",
+     "views": "1,072,999 views",
+     "age": "9 yr ago",
+     "length": "5:21"
+    },
+    {
+     "id": "hsG2IzLGotY",
+     "title": "Cell Membrane Transport (Passive & Active) Diffusion, Osmosis, Hydrostatic Oncotic Pressure Colloid",
+     "channel": "RegisteredNurseRN",
+     "views": "295,989 views",
+     "age": "3 yr ago",
+     "length": "13:55"
+    },
+    {
+     "id": "Ptmlvtei8hw",
+     "title": "Cell Transport",
+     "channel": "Amoeba Sisters",
+     "views": "8,210,775 views",
+     "age": "10 yr ago",
+     "length": "7:50"
+    },
+    {
+     "id": "mAfw4yHtr1k",
+     "title": "Osmosis | Membrane Transport",
+     "channel": "Dr Matt & Dr Mike",
+     "views": "127,131 views",
+     "age": "7 yr ago",
+     "length": "6:02"
+    },
+    {
+     "id": "AcrqIxt8am8",
+     "title": "Structure Of The Cell Membrane: Active and Passive Transport",
+     "channel": "Professor Dave Explains",
+     "views": "916,368 views",
+     "age": "10 yr ago",
+     "length": "6:53"
+    }
+   ]
+  },
+  "how do your kidneys work": {
+   "suggest": [
+    "how do your kidneys work",
+    "how do the kidneys function",
+    "how your kidneys work",
+    "how your kidneys work in hindi",
+    "how does the liver and kidneys work together",
+    "how does filtration in the kidneys work"
+   ],
+   "search": [
+    {
+     "id": "FN3MFhYPWWo",
+     "title": "How do your kidneys work? - Emma Bryce",
+     "channel": "TED-Ed",
+     "views": "3,112,057 views",
+     "age": "11 yr ago",
+     "length": "3:55"
+    },
+    {
+     "id": "uiiKPdFdlX0",
+     "title": "How Do Kidneys Work?",
+     "channel": "Cleveland Clinic",
+     "views": "60,423 views",
+     "age": "2 yr ago",
+     "length": "3:22"
+    },
+    {
+     "id": "gWnIFIdDeto",
+     "title": "GCSE Biology - How the Kidneys Work - (Kidneys Part 1/3)",
+     "channel": "Cognito",
+     "views": "715,796 views",
+     "age": "6 yr ago",
+     "length": "7:06"
+    },
+    {
+     "id": "8s2uNx9jwB4",
+     "title": "How Kidneys Work | #Clip | TV Show for Kids | Operation Ouch",
+     "channel": "Operation Ouch",
+     "views": "38,535 views",
+     "age": "2 yr ago",
+     "length": "2:18"
+    },
+    {
+     "id": "q5qaGHfdmYM",
+     "title": "Excretory System and the Nephron",
+     "channel": "Amoeba Sisters",
+     "views": "2,932,338 views",
+     "age": "4 yr ago",
+     "length": "9:50"
+    },
+    {
+     "id": "hfKDA5kbL5o",
+     "title": "How do the Kidneys work? Renal Physiology and Filtration Explained for Beginners | Corporis",
+     "channel": "Corporis",
+     "views": "145,498 views",
+     "age": "4 yr ago",
+     "length": "11:01"
+    },
+    {
+     "id": "Bn8czDqPUvY",
+     "title": "Operation Ouch - What are Kidneys? | Biology for Kids",
+     "channel": "Operation Ouch",
+     "views": "959,945 views",
+     "age": "9 yr ago",
+     "length": "4:55"
+    },
+    {
+     "id": "l128tW1H5a8",
+     "title": "Urinary System, Part 1: Crash Course Anatomy & Physiology #38",
+     "channel": "CrashCourse",
+     "views": "5,763,573 views",
+     "age": "11 yr ago",
+     "length": "10:18"
+    }
+   ]
+  },
+  "how do trees transport water xylem": {
+   "suggest": [
+    "how does xylem transport water"
+   ],
+   "search": [
+    {
+     "id": "DhyYtT1K844",
+     "title": "Xylem and Phloem - Transport in Plants | Biology | FreeAnimatedEducation",
+     "channel": "Free Animated Education",
+     "views": "1,019,964 views",
+     "age": "5 yr ago",
+     "length": "3:49"
+    },
+    {
+     "id": "s06FvGH3QJo",
+     "title": "GCSE Biology - Transpiration & Translocation (2027/28 exams)",
+     "channel": "Cognito",
+     "views": "293,101 views",
+     "age": "1 yr ago",
+     "length": "5:17"
+    },
+    {
+     "id": "4Fhzf-Wjt-w",
+     "title": "A-Level Biology - Water Transport in Plants - Root Pathways | Xylem | Transpiration (2027/28 exams)",
+     "channel": "Cognito",
+     "views": "55,478 views",
+     "age": "8 mo ago",
+     "length": "8:06"
+    },
+    {
+     "id": "jtuX7H05tmQ",
+     "title": "Xylem and Phloem - Transport in Plants | Biology | FuseSchool",
+     "channel": "FuseSchool - Global Education",
+     "views": "1,826,211 views",
+     "age": "10 yr ago",
+     "length": "2:28"
+    },
+    {
+     "id": "9-dicqNoODg",
+     "title": "How Do Trees Transport Water from Roots to Leaves? | California Academy of Sciences",
+     "channel": "California Academy of Sciences",
+     "views": "494,745 views",
+     "age": "11 yr ago",
+     "length": "2:01"
+    },
+    {
+     "id": "gpczUPHK5eQ",
+     "title": "Xylem, the basics | Tree Biology",
+     "channel": "Arborist Study Guide",
+     "views": "4,358 views",
+     "age": "2 yr ago",
+     "length": "4:17"
+    },
+    {
+     "id": "jp9BBvYIrG0",
+     "title": "A-Level Biology - Xylem & Phloem - Structure | Function | Distribution (2027/28 exams)",
+     "channel": "Cognito",
+     "views": "58,850 views",
+     "age": "8 mo ago",
+     "length": "5:50"
+    },
+    {
+     "id": "QYYlcLsBMQ8",
+     "title": "Xylem vs. Phloem! 🌳 Plant's Water & Food Transport Systems Explained!",
+     "channel": "Tender Intellects",
+     "views": "12,506 views",
+     "age": "8 mo ago",
+     "length": "2:23"
+    }
+   ]
+  },
+  "stanley prusiner carleton gajdusek kuru prion": {
+   "suggest": [
+    "stanley prusiner"
+   ],
+   "search": [
+    {
+     "id": "KRQ0RHkRTtU",
+     "title": "Prion - discovered by Stanley Prusiner - Lecture",
+     "channel": "Renato Lopes",
+     "views": "2,513 views",
+     "age": "7 yr ago",
+     "length": "1:17:56"
+    },
+    {
+     "id": "LlzVDHeInPk",
+     "title": "The Cannibal Disease That Defied the Laws of Biology: The Mystery of Kuru & Prions",
+     "channel": "Prince vr2093",
+     "views": "98 views",
+     "age": "2 mo ago",
+     "length": "7:53"
+    },
+    {
+     "id": "_bTphQWthJ4",
+     "title": "The Scientist Whose Darkest Experiment Was on the Children He Took Home | The New Yorker",
+     "channel": "The New Yorker",
+     "views": "610,088 views",
+     "age": "1 mo ago",
+     "length": "8:26"
+    },
+    {
+     "id": "ZHOy6hiUcyA",
+     "title": "Kuru - A medical detective story - Trailer",
+     "channel": "ConnectSci News",
+     "views": "473,583 views",
+     "age": "15 yr ago",
+     "length": "2:10"
+    },
+    {
+     "id": "BJn6nWI_RW8",
+     "title": "Stanley B. Prusiner – Mad Cows, Demented People, and the Biology of Prions",
+     "channel": "Gustavus Adolphus College",
+     "views": "1,343 views",
+     "age": "4 yr ago",
+     "length": "1:10:51"
+    },
+    {
+     "id": "_fh0YeyWLxk",
+     "title": "The Strange History of the Prion (how a “protein-only” germ rewrote biology)",
+     "channel": "The Dark History of Science",
+     "views": "53 views",
+     "age": "9 mo ago",
+     "length": "17:09"
+    },
+    {
+     "id": "ZHErgwUJ7Cg",
+     "title": "Kuru Disease - A Curious Case in Papua New Guinea (6 Minutes)",
+     "channel": "BioTech Whisperer",
+     "views": "95,025 views",
+     "age": "3 yr ago",
+     "length": "5:19"
+    },
+    {
+     "id": "vtfViuyM6XM",
+     "title": "The History of Prions: The ultimate pandemic",
+     "channel": "Nostalgic Medicine",
+     "views": "2,177 views",
+     "age": "5 yr ago",
+     "length": "17:05"
+    }
+   ]
+  },
+  "eduard buchner emil fischer james sumner enzymes": {
+   "suggest": [],
+   "search": [
+    {
+     "id": "TZqdDsRbBVk",
+     "title": "The Chemist Who Accidentally Solved Fermentation",
+     "channel": "Rational Thinker",
+     "views": "7,970 views",
+     "age": "2 yr ago",
+     "length": "6:40"
+    },
+    {
+     "id": "VDQ5JA5bV2c",
+     "title": "The Nobel Prize in Chemistry 1907 - Eduard Buchner: Unleashing the Power of Enzymes | 179 Seconds",
+     "channel": "179 Seconds Animated Tales",
+     "views": "517 views",
+     "age": "2 yr ago",
+     "length": "2:43"
+    },
+    {
+     "id": "97bKBDNrHMQ",
+     "title": "A Short History of Enzymology",
+     "channel": "Fatsy Cruz",
+     "views": "1,307 views",
+     "age": "4 yr ago",
+     "length": "7:03"
+    },
+    {
+     "id": "OTCxxcltJZQ",
+     "title": "Eduard Buchner’s Accidental Discovery",
+     "channel": "ThinkTac",
+     "views": "513 views",
+     "age": "2 yr ago",
+     "length": "1:01"
+    },
+    {
+     "id": "6L76JufUENI",
+     "title": "Buchner was successful in extracting a respiratory enzyme complex",
+     "channel": "Doubtnut",
+     "views": "31 views",
+     "age": "4 yr ago",
+     "length": "1:38"
+    },
+    {
+     "id": "JwvnQ04Ok6k",
+     "title": "Nobel Prize in Chemistry 1907 — Eduard Buchner and Cell-Free Fermentation",
+     "channel": "Jack Daniel",
+     "views": "6 views",
+     "age": "9 days ago",
+     "length": "2:03"
+    },
+    {
+     "id": "tICxfNRyJIM",
+     "title": "Episode 11 || Hermann Emil Fischer: The Architect of Modern Biochemistry || Chronicles of Fame",
+     "channel": "Chronicles of Fame",
+     "views": "335 views",
+     "age": "3 yr ago",
+     "length": "1:34"
+    },
+    {
+     "id": "pOLfllxYWbc",
+     "title": "3.9 Enzymes as Biological Catalysts",
+     "channel": "BioCuriosity Lab",
+     "views": "13 views",
+     "age": "1 yr ago",
+     "length": "1:53"
+    }
+   ]
+  },
+  "gorter grendel singer nicolson peter agre aquaporin": {
+   "suggest": [],
+   "search": [
+    {
+     "id": "RLu5gvmcwj4",
+     "title": "Peter Agre   Aquaporin Water Channels from Atomic Structure to Malaria   YouTube",
+     "channel": "Che Dator",
+     "views": "128 views",
+     "age": "7 yr ago",
+     "length": "25:23"
+    },
+    {
+     "id": "xByBSt8Q9JU",
+     "title": "Peter Agre - \"Aquaporin Water Channels from Atomic Structure to Malaria\"",
+     "channel": "QFARF",
+     "views": "9,423 views",
+     "age": "14 yr ago",
+     "length": "25:23"
+    },
+    {
+     "id": "NYxIBsYQWeA",
+     "title": "Peter Agre: Discoverer of Aquaporins and Pioneer of Medical Science",
+     "channel": "Math Mystique",
+     "views": "77 views",
+     "age": "3 mo ago",
+     "length": "5:31"
+    },
+    {
+     "id": "F6vETKZtgxU",
+     "title": "My name is Peter Agre",
+     "channel": "youris.com - European Research Media Center",
+     "views": "5,625 views",
+     "age": "15 yr ago",
+     "length": "3:13"
+    },
+    {
+     "id": "L1TyWo86w4Q",
+     "title": "Aquaporin water channels - from transfusion medicine to malaria",
+     "channel": "NIH VideoCast",
+     "views": "1,538 views",
+     "age": "11 yr ago",
+     "length": "57:37"
+    },
+    {
+     "id": "IxRd2JMRYkU",
+     "title": "2021 Ullyot Public Affairs Lecture: Peter Agre",
+     "channel": "Science History Institute",
+     "views": "140 views",
+     "age": "4 yr ago",
+     "length": "1:01:31"
+    },
+    {
+     "id": "_GeKx5C6YQM",
+     "title": "History of Biology and Medicine Series: Aquaporin Water Channels - From Atomic Structure to Malaria",
+     "channel": "Hopkins Kimmel",
+     "views": "218 views",
+     "age": "7 yr ago",
+     "length": "1:03:41"
+    },
+    {
+     "id": "tNy3Dzusm1Q",
+     "title": "Guest Speaker, Peter Agre, NESA DC Luncheon,  June 9, 2022",
+     "channel": "Scouting America National Capital Area Council",
+     "views": "11 views",
+     "age": "3 yr ago",
+     "length": "55:26"
+    }
+   ]
+  },
+  "william bowman alfred richards willem kolff dialysis": {
+   "suggest": [
+    "william z foster speech",
+    "willem kolff"
+   ],
+   "search": [
+    {
+     "id": "MJszzHDzF90",
+     "title": "The inspiring story of Willem Kolff, inventor of dialysis!",
+     "channel": "European Kidney Health Alliance",
+     "views": "800 views",
+     "age": "3 yr ago",
+     "length": "28:22"
+    },
+    {
+     "id": "kW5YFCbtDG0",
+     "title": "Willem Kolff: Kidney dialysis | Heroes of Progress | Ep. 31",
+     "channel": "Human Progress",
+     "views": "4,367 views",
+     "age": "5 yr ago",
+     "length": "2:05"
+    },
+    {
+     "id": "1WKJ6djNU28",
+     "title": "The Washing Machine That Saved Millions of Lives | Story of the First Artificial Kidney",
+     "channel": "MysterywithHistories",
+     "views": "35 views",
+     "age": "4 mo ago",
+     "length": "7:16"
+    },
+    {
+     "id": "WjQCd7Hi5YQ",
+     "title": "Dr. Kolff and Dr. Scribner Share their ESRD Stories",
+     "channel": "Marian Rosenblum",
+     "views": "5,561 views",
+     "age": "11 yr ago",
+     "length": "6:45"
+    },
+    {
+     "id": "Tz-T1DOqqas",
+     "title": "From Pioneers to Progress: The Past & Future of Kidney Disease Innovation (Dr. Williem Kolff)",
+     "channel": "American Association of Kidney Patients",
+     "views": "181 views",
+     "age": "1 yr ago",
+     "length": "23:04"
+    },
+    {
+     "id": "OzeaCEGl5rc",
+     "title": "October 2024 - Paul Trotman - Dr Willem Kolff and the first artificial kidney",
+     "channel": "OMSAA - Otago Medical School Alumni Association NZ",
+     "views": "381 views",
+     "age": "1 yr ago",
+     "length": "40:40"
+    },
+    {
+     "id": "7g_kzCbc-ks",
+     "title": "The Dialysis Machine: The Artificial Kidney",
+     "channel": "Nomi khattak",
+     "views": "2 views",
+     "age": "3 days ago",
+     "length": "3:31"
+    },
+    {
+     "id": "aTXe7RKCRvM",
+     "title": "Dr. Willem J. Kolff, Academy Class of 1971, Full Interview",
+     "channel": "Academy of Achievement",
+     "views": "3,098 views",
+     "age": "9 yr ago",
+     "length": "1:08:05"
+    }
+   ]
+  },
+  "stephen hales henry dixon john joly cohesion tension": {
+   "suggest": [],
+   "search": [
+    {
+     "id": "tCxp0MpmUkE",
+     "title": "\"Serializing National Cohesion\" (Part 1)",
+     "channel": "wmrussian",
+     "views": "288 views",
+     "age": "15 yr ago",
+     "length": "14:30"
+    },
+    {
+     "id": "vIkbDobRGd0",
+     "title": "Don't Call Roots a Pump Until You Watch This",
+     "channel": "Theo",
+     "views": "6 views",
+     "age": "3 wk ago",
+     "length": "14:26"
+    },
+    {
+     "id": "Pri_VeXbOJA",
+     "title": "The Pennine Tunnel So Deadly Parliament Had to Investigate",
+     "channel": "Chisel Marks",
+     "views": "674 views",
+     "age": "11 days ago",
+     "length": "39:18"
+    },
+    {
+     "id": "62A15rtd0fk",
+     "title": "S02E06 Sleeping Sickness",
+     "channel": "Thomas Thorne",
+     "views": "4 views",
+     "age": "1 day ago",
+     "length": "25:13"
+    },
+    {
+     "id": "BsbqTiR69Xg",
+     "title": "How a Tree Drinks: The 116-Metre Redwood That Beats Every Suction Pump",
+     "channel": "Wild Facts",
+     "views": "8 views",
+     "age": "2 wk ago",
+     "length": "9:21"
+    },
+    {
+     "id": "-38hPQrQUyY",
+     "title": "London's Great Stink: A Right Decision for the Wrong Reason",
+     "channel": "Stack Logic",
+     "views": "No views",
+     "age": "1 hr ago",
+     "length": "9:56"
+    },
+    {
+     "id": "OlM_zFTKTC8",
+     "title": "Enoch Powell and Roy Jenkins Clash Over Europe in Heated Referendum Debate (1975)",
+     "channel": "Frontline by ITN",
+     "views": "98,751 views",
+     "age": "2 yr ago",
+     "length": "14:38"
+    },
+    {
+     "id": "bHpht1nNtB0",
+     "title": "Studying the Conjuncture - STUART HALL: THROUGH THE PRISM OF AN INTELLECTUAL LIFE",
+     "channel": "Media Education Foundation",
+     "views": "17,688 views",
+     "age": "5 yr ago",
+     "length": "18:48"
+    }
+   ]
+  }
+ }
+}

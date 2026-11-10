@@ -1,0 +1,18 @@
+01_villa     3.0s 01_villa_t1.mp4              ok
+02_ingenhousz_jars     9.9s 02_ingenhousz_jars_t1.mp4    ok
+03_plunge_leaf    16.1s 03_plunge_leaf_t1.mp4        ok
+04_sunny_window    20.6s 04_sunny_window_t1.mp4       ok
+05_bubbles_macro    24.9s 05_bubbles_macro_t1.mp4      ok
+06_collect_blaze    30.9s 06_collect_blaze_t3.mp4      ok
+07_priestley_callback    38.3s 11_candle_tall_t1.mp4        ok
+08_explorer_shade    45.4s 08_explorer_shade_t2.mp4     ok
+09_bubbles_again    50.7s 05_bubbles_macro_t1.mp4      ok
+10_only_green    54.7s 10_only_green_t2.mp4         ok
+11_night_jars    60.9s 11_night_jars_t1.mp4         FAIL near-black: mean 19.95, p95 118.0
+12_shutters_open    67.5s 12_shutters_open_t1.mp4      ok
+13_sun_canopy    71.9s 13_sun_canopy_t1.mp4         ok
+14_leaf_glow    77.5s 14_leaf_glow_t1.mp4          ok
+15_leaf_turns_sun    82.9s 15_leaf_turns_sun_t1.mp4     ok
+16_pores_question    88.2s 16_pores_question_t1.mp4     ok
+polish gate FAIL: 1 of 16 rows failed, 0 to look at -> /private/tmp/j0262_hos_gates/polish_gate_p4_v01.json
+exit 1

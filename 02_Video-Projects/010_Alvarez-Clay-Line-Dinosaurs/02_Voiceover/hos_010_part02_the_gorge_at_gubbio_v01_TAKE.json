@@ -1,0 +1,68 @@
+{
+  "stem": "hos_010_part02_the_gorge_at_gubbio_v01",
+  "voice": "Ben Orbit Narrator",
+  "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+  "model_id": "eleven_v3",
+  "settings": {
+    "stability": 0.34,
+    "similarity_boost": 0.78,
+    "style": 0.42,
+    "speed": 1.04,
+    "use_speaker_boost": true
+  },
+  "orders": [
+    "J0113"
+  ],
+  "retake_of": null,
+  "chapters": [
+    {
+      "title": "take",
+      "chars": 1142,
+      "duration_s": 79.76
+    }
+  ],
+  "gap_s": 0.7,
+  "spoken_chars": 1142,
+  "words": 216,
+  "duration_s": 79.76,
+  "loudness": {
+    "lufs_integrated": -19.8,
+    "mean_volume_db": -23.2,
+    "max_volume_db": -3.9
+  },
+  "sha256_mp3": "fc34abf304a6050d110abcd52d7c8da3565fe3da55e5f1734440396d4fb08f10",
+  "scribe": {
+    "transcript": "Walter Alvarez was studying the rocks in a gorge near the town of Gubbio. The cliffs there are made of limestone, laid down layer by layer on an ancient sea floor over millions of years. When he looked through a hand lens, the rock below the clay was crowded with tiny fossil shells, each about the size of a grain of sand. They came from little creatures that had floated in the sea. But just above the clay, almost all of them were gone. Only a few very small ones were left. Why should tiny shells in the sea matter to the story of the dinosaurs? Because they vanished at exactly the same level in the rock. Whatever killed the dinosaurs on land had struck in the sea at the very same moment, and the clay layer, about a centimeter thick, was the moment itself. Walter wondered something simple: How long did that clay take to form? A few years would mean a sudden disaster. Thousands of years would mean a slow decline. If he could time the clay, he could tell the difference. But how do you put a clock on a layer of mud that's sixty-six million years old? He took a piece back home to California, and he showed it to his father",
+    "script_words": 217,
+    "scribe_words": 217,
+    "match_rate_pct": 99.54,
+    "exact_match": false,
+    "mismatches": [
+      {
+        "op": "replace",
+        "script": [
+          "centimetre"
+        ],
+        "scribe": [
+          "centimeter"
+        ]
+      }
+    ]
+  },
+  "vo_check": "PASS",
+  "credits": {
+    "before": {
+      "used": 194912,
+      "limit": 209536,
+      "remaining": 14624
+    },
+    "after": {
+      "used": 194912,
+      "limit": 209536,
+      "remaining": 14624
+    },
+    "counter_delta": 0
+  },
+  "text": "Walter Alvarez was studying the rocks in a gorge near the town of Gubbio. The cliffs there are made of limestone, laid down layer by layer on an ancient sea floor, over millions of years.\n\nWhen he looked through a hand lens, the rock below the clay was crowded with tiny fossil shells, each about the size of a grain of sand. They came from little creatures that had floated in the sea.\n\nBut just above the clay, almost all of them were gone. Only a few very small ones were left.\n\nWhy should tiny shells in the sea matter to the story of the dinosaurs? Because they vanished at exactly the same level in the rock. Whatever killed the dinosaurs on land had struck in the sea at the very same moment. And the clay layer, about a centimetre thick, was the moment itself.\n\nWalter wondered something simple. How long did that clay take to form? A few years would mean a sudden disaster. Thousands of years would mean a slow decline. If he could time the clay, he could tell the difference.\n\nBut how do you put a clock on a layer of mud that's sixty-six million years old?\n\nHe took a piece back home, to California. And he showed it to his father.",
+  "made_at": "2026-10-10T21:14:08+0100"
+}

@@ -1,0 +1,242 @@
+{
+ "pulled": "2026-10-12",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "anesthesia",
+  "history of anesthesia",
+  "ether surgery"
+ ],
+ "autocomplete": {
+  "anesthesia": [
+   "anesthesia",
+   "anesthesia funny",
+   "anesthesia machine",
+   "anesthesia type o negative",
+   "anesthesia pulling teeth",
+   "anesthesia song",
+   "anesthesia injection",
+   "anesthesia moments",
+   "anesthesia funny moments",
+   "anesthesia pharmacology"
+  ],
+  "history of anesthesia": [
+   "history of anesthesia",
+   "history of anesthesia in hindi",
+   "history of anesthesia isa",
+   "history of anesthesia in tamil",
+   "history of anesthesia ppt",
+   "history of nurse anesthesia",
+   "history of local anesthesia"
+  ],
+  "ether surgery": [
+   "ether surgery",
+   "ether anesthetic",
+   "ether anesthesia"
+  ]
+ },
+ "sharedTitleWords": [
+  "how does",
+  "surgery work",
+  "organic chemistry",
+  "chemistry khan",
+  "khan academy"
+ ],
+ "neighbours": [
+  {
+   "id": "B_tTymvDWXk",
+   "title": "How does anesthesia work? - Steven Zheng",
+   "channel": "TED-Ed",
+   "views": "19,706,876 views",
+   "age": "10 yr ago",
+   "length": "4:56",
+   "tier": 1,
+   "viewCount": 19706876,
+   "foundBy": "anesthesia",
+   "onTopic": true
+  },
+  {
+   "id": "XPDVmBg5DeE",
+   "title": "How does laser eye surgery work? - Dan Reinstein",
+   "channel": "TED-Ed",
+   "views": "6,826,194 views",
+   "age": "6 yr ago",
+   "length": "5:37",
+   "tier": 1,
+   "viewCount": 6826194,
+   "foundBy": "ted-ed anesthesia",
+   "onTopic": true
+  },
+  {
+   "id": "o1z2DfFZBS4",
+   "title": "How does heart transplant surgery work? - Roni Shanoada",
+   "channel": "TED-Ed",
+   "views": "4,547,774 views",
+   "age": "4 yr ago",
+   "length": "5:09",
+   "tier": 1,
+   "viewCount": 4547774,
+   "foundBy": "ted-ed anesthesia",
+   "onTopic": true
+  },
+  {
+   "id": "FBlcU4GdxCc",
+   "title": "What did people do before anesthesia? - Sally Frampton",
+   "channel": "TED-Ed",
+   "views": "2,646,860 views",
+   "age": "3 yr ago",
+   "length": "5:27",
+   "tier": 1,
+   "viewCount": 2646860,
+   "foundBy": "ted-ed anesthesia",
+   "onTopic": true
+  },
+  {
+   "id": "6d_dtVTs4CM",
+   "title": "How to perform brain surgery without making a single cut - Hyunsoo Joshua No",
+   "channel": "TED-Ed",
+   "views": "280,100 views",
+   "age": "6 yr ago",
+   "length": "5:18",
+   "tier": 1,
+   "viewCount": 280100,
+   "foundBy": "ted-ed anesthesia",
+   "onTopic": true
+  },
+  {
+   "id": "nQ7QSV4JRSs",
+   "title": "Alcohols | Alcohols, ethers, epoxides, sulfides | Organic chemistry | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "604,614 views",
+   "age": "16 yr ago",
+   "length": "6:51",
+   "tier": 2,
+   "viewCount": 604614,
+   "foundBy": "khan academy ether surgery",
+   "onTopic": true
+  },
+  {
+   "id": "ZSsYjQeK0qg",
+   "title": "We Finally Know How Anesthesia Works",
+   "channel": "SciShow",
+   "views": "443,349 views",
+   "age": "6 yr ago",
+   "length": "3:44",
+   "tier": 2,
+   "viewCount": 443349,
+   "foundBy": "anesthesia ted",
+   "onTopic": true
+  },
+  {
+   "id": "roUGDG1rhPI",
+   "title": "Ether naming and introduction | Organic chemistry | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "360,610 views",
+   "age": "16 yr ago",
+   "length": "10:59",
+   "tier": 2,
+   "viewCount": 360610,
+   "foundBy": "khan academy ether surgery",
+   "onTopic": true
+  },
+  {
+   "id": "HbUeAdVXOVc",
+   "title": "Erica Frenkel: The universal anesthesia machine",
+   "channel": "TED",
+   "views": "59,602 views",
+   "age": "14 yr ago",
+   "length": "11:24",
+   "tier": 1,
+   "viewCount": 59602,
+   "foundBy": "ether surgery ted",
+   "onTopic": true
+  },
+  {
+   "id": "XzvGr79eOQM",
+   "title": "Anesthesia dreams | Nancy Oriol | TEDxBeaconStreet",
+   "channel": "TEDx Talks",
+   "views": "15,838 views",
+   "age": "11 yr ago",
+   "length": "12:33",
+   "tier": 1,
+   "viewCount": 15838,
+   "foundBy": "ted-ed anesthesia",
+   "onTopic": true
+  },
+  {
+   "id": "ipJhkZUFoNk",
+   "title": "Anesthesia killed the anesthesiologist  | Fahad Khan | TEDxShinnecockHills",
+   "channel": "TEDx Talks",
+   "views": "11,794 views",
+   "age": "7 yr ago",
+   "length": "17:18",
+   "tier": 1,
+   "viewCount": 11794,
+   "foundBy": "anesthesia ted",
+   "onTopic": true
+  },
+  {
+   "id": "fKzIEbA8qvA",
+   "title": "Lessons from surgery and Grey's Anatomy | Dr. Scott Ellner | TEDxMountainAve",
+   "channel": "TEDx Talks",
+   "views": "11,349 views",
+   "age": "1 yr ago",
+   "length": "15:07",
+   "tier": 1,
+   "viewCount": 11349,
+   "foundBy": "ether surgery ted",
+   "onTopic": true
+  },
+  {
+   "id": "tt8_2Qdhexg",
+   "title": "Solving the Global Anesthesia Crisis | Kelly McQueen, MD, MPH | TEDxNashvilleSalon",
+   "channel": "TEDx Talks",
+   "views": "5,699 views",
+   "age": "9 yr ago",
+   "length": "15:21",
+   "tier": 1,
+   "viewCount": 5699,
+   "foundBy": "ted-ed anesthesia",
+   "onTopic": true
+  },
+  {
+   "id": "4DI3AAAiF6w",
+   "title": "TEDxMidAtlantic 2011 - Erica Frenkel - Demonstrating the Universal Anesthesia Machine",
+   "channel": "TEDx Talks",
+   "views": "4,471 views",
+   "age": "14 yr ago",
+   "length": "11:34",
+   "tier": 1,
+   "viewCount": 4471,
+   "foundBy": "anesthesia ted",
+   "onTopic": true
+  },
+  {
+   "id": "LtoYMAhhUB8",
+   "title": "How Reconstructive Surgery Can Be Accessible To Everyone | Dr. Ansua Steyn-Ahlstrom | TEDxGeorge",
+   "channel": "TEDx Talks",
+   "views": "827 views",
+   "age": "1 yr ago",
+   "length": "9:08",
+   "tier": 1,
+   "viewCount": 827,
+   "foundBy": "ether surgery ted",
+   "onTopic": true
+  },
+  {
+   "id": "bTTpb14E-f8",
+   "title": "The Silent Pilot: Rethinking Anesthesia | Dr. Sumaiya Tahseen | TEDxPanimalarEngineeringCollege",
+   "channel": "TEDx Talks",
+   "views": "757 views",
+   "age": "1 yr ago",
+   "length": "8:06",
+   "tier": 1,
+   "viewCount": 757,
+   "foundBy": "anesthesia ted",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 4,
+ "gate": "PASS",
+ "hasTed": true,
+ "failedQueries": []
+}

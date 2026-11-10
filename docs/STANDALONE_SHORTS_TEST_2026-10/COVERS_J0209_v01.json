@@ -1,0 +1,185 @@
+{
+  "job": "J0209",
+  "status": "draft for Chief",
+  "font": "/System/Library/Fonts/Supplemental/Arial Rounded Bold.ttf",
+  "font_sha256": "a74ea71c366f15c81f9ce00a757cefb938cda21c0d32e51037d9a038e5ebc14b",
+  "media_root": "/Users/benjaminoats/YouTube/History Of Science",
+  "covers": [
+    {
+      "id": "s1",
+      "title": "Who Discovered Infrared Light?",
+      "draft_words": "HEAT beyond RED",
+      "plate": "docs/STANDALONE_SHORTS_TEST_2026-10/plates_v01/s1/01_beyond_red_v01.jpg",
+      "plate_sha256": "69ef4071aec2c687448cc5f244994baa21c6937462526659bbe2affdcaed0df4",
+      "cover": "docs/STANDALONE_SHORTS_TEST_2026-10/covers_j0209_v01/hos_sa_s1_cover_v01.png",
+      "cover_sha256": "2e7de244f872d38ea60aed212c90a1185f592759512f17a5ec7c0e0293ea8d8d",
+      "size": [
+        1080,
+        1920
+      ],
+      "lettering": [
+        {
+          "word": "HEAT",
+          "box": [
+            60,
+            35,
+            1020,
+            230
+          ]
+        },
+        {
+          "word": "beyond",
+          "box": [
+            403,
+            225,
+            676,
+            330
+          ]
+        },
+        {
+          "word": "RED",
+          "box": [
+            322,
+            325,
+            757,
+            510
+          ]
+        }
+      ],
+      "pixels_below_y530_unchanged": true,
+      "approval": "pending Chief HOOK / BAND / PHONE"
+    },
+    {
+      "id": "s2",
+      "title": "How Was Phosphorus Discovered?",
+      "draft_words": "GLOW not GOLD",
+      "plate": "docs/STANDALONE_SHORTS_TEST_2026-10/plates_v01/s2/01_glowing_flask_v01.jpg",
+      "plate_sha256": "488a90bc08ac80bd1f4083274f1453275f31dca8bfd15a41d947040cb1479bd2",
+      "cover": "docs/STANDALONE_SHORTS_TEST_2026-10/covers_j0209_v01/hos_sa_s2_cover_v01.png",
+      "cover_sha256": "36710ffdc0c7cdc0b0713ba2badc51a83431e87b80b95824880dfd9b44c6fdc4",
+      "size": [
+        1080,
+        1920
+      ],
+      "lettering": [
+        {
+          "word": "GLOW",
+          "box": [
+            60,
+            35,
+            1020,
+            230
+          ]
+        },
+        {
+          "word": "not",
+          "box": [
+            452,
+            225,
+            627,
+            330
+          ]
+        },
+        {
+          "word": "GOLD",
+          "box": [
+            254,
+            325,
+            826,
+            510
+          ]
+        }
+      ],
+      "pixels_below_y530_unchanged": true,
+      "approval": "pending Chief HOOK / BAND / PHONE"
+    },
+    {
+      "id": "s3",
+      "title": "How Did John Snow Stop Cholera?",
+      "draft_words": "REMOVE the HANDLE",
+      "plate": "docs/STANDALONE_SHORTS_TEST_2026-10/plates_v01/s3/05_handle_off_v03.jpg",
+      "plate_sha256": "234ce38165969ab2536cc51aa6394ae33814c94943dc766bacd5c311b42c5387",
+      "cover": "docs/STANDALONE_SHORTS_TEST_2026-10/covers_j0209_v01/hos_sa_s3_cover_v01.png",
+      "cover_sha256": "49fe8beb5e0b6dbf1ed7808992cd287c4e3b5bc71e70f9126891ed5c0dd1fddf",
+      "size": [
+        1080,
+        1920
+      ],
+      "lettering": [
+        {
+          "word": "REMOVE",
+          "box": [
+            60,
+            35,
+            1020,
+            230
+          ]
+        },
+        {
+          "word": "the",
+          "box": [
+            455,
+            225,
+            624,
+            330
+          ]
+        },
+        {
+          "word": "HANDLE",
+          "box": [
+            137,
+            325,
+            943,
+            510
+          ]
+        }
+      ],
+      "pixels_below_y530_unchanged": true,
+      "approval": "pending Chief HOOK / BAND / PHONE"
+    },
+    {
+      "id": "s4",
+      "title": "Are Marie Curie\u2019s Notebooks Still Radioactive?",
+      "draft_words": "BOOKS behind LEAD",
+      "plate": "docs/STANDALONE_SHORTS_TEST_2026-10/plates_v01/s4/01_lead_box_v01.jpg",
+      "plate_sha256": "7b2ae86152e53751a6c9fc6c2f1330cee327f27805a0e7d9d194f7cb6dca5488",
+      "cover": "docs/STANDALONE_SHORTS_TEST_2026-10/covers_j0209_v01/hos_sa_s4_cover_v01.png",
+      "cover_sha256": "e6bc8835b48c68180ae6ddc12397c08df615856cdda0b7385d19306d8f326e04",
+      "size": [
+        1080,
+        1920
+      ],
+      "lettering": [
+        {
+          "word": "BOOKS",
+          "box": [
+            60,
+            35,
+            1020,
+            230
+          ]
+        },
+        {
+          "word": "behind",
+          "box": [
+            385,
+            225,
+            695,
+            330
+          ]
+        },
+        {
+          "word": "LEAD",
+          "box": [
+            271,
+            325,
+            808,
+            510
+          ]
+        }
+      ],
+      "pixels_below_y530_unchanged": true,
+      "approval": "pending Chief HOOK / BAND / PHONE"
+    }
+  ]
+}

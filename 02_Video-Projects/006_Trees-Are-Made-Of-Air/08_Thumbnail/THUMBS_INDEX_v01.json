@@ -1,0 +1,219 @@
+{
+  "film": "006_Trees-Are-Made-Of-Air",
+  "parentTitle": "The Willow Tree That Was Made of Air",
+  "titleAbc": [
+    "The Willow Tree That Was Made of Air",
+    "Where Does a Tree's Weight Come From?"
+  ],
+  "version": "v01",
+  "job": "J0869",
+  "decisionRef": "Chief pick on J0858 (OWB #99 comment 6355648154)",
+  "maker": "gemini",
+  "composer": "08_Thumbnail/_compose_hos_006_thumbs_v01.py",
+  "mintScript": "08_Thumbnail/_mint_hos_006_thumbs_flow_v01.py",
+  "spend": {
+    "flowCredits": 0,
+    "vertexGbp": 0.0,
+    "cashGbp": 0.0,
+    "flowBalanceBefore": 20830,
+    "flowBalanceAfter": 20830
+  },
+  "factLock": "A: Willow tree growing in a terracotta pot by a sunlit arched window; air streams into the leaves and condenses into solid wood rings inside the trunk cutaway (FACT_NOTES_v01 rows 1 & 48: 'The wood of a tree is built mostly out of thin air... About half of dry wood is carbon, and every bit of that carbon came out of the air'). B: Van Helmont's 17th-century brass balance scale with the uprooted willow tree weighing the right pan down low while the pot of dried furnace soil is lifted high, with zero written numbers on the scale (FACT_NOTES_v01 rows 8-19).",
+  "thumbs": [
+    {
+      "id": "A",
+      "role": "Primary",
+      "hook": "WOOD FROM SKY?",
+      "punch": "SKY?",
+      "jpg": "Selected/hos_006_thumb_A_wood_from_sky_v01.jpg",
+      "sha256": "904d2f58be22be993fb36e9c86997d00e239649e9f4b576ccebe4703c83dd0f0",
+      "bytes": 278441,
+      "plate": "_assets_v01/hos_006_thumb_A_wood_from_sky_plate01.jpg",
+      "plateSha256": "7e7a9877b4234ba00489818f4cdfb8e4ae14edb3f91bc6b3e55769dff66785b8",
+      "layout": {
+        "letteringBox": [
+          95,
+          36,
+          369,
+          278
+        ],
+        "ornaments": {
+          "topScrollBox": [
+            83,
+            14,
+            381,
+            32
+          ],
+          "bottomScrollBox": [
+            110,
+            281,
+            354,
+            297
+          ]
+        },
+        "heroBox": [
+          440,
+          20,
+          1120,
+          650
+        ],
+        "explorerBox": [
+          128,
+          323,
+          398,
+          720
+        ],
+        "explorerHeightPx": 397,
+        "explorerHeightFrac": 0.551,
+        "placedWords": [
+          {
+            "word": "WOOD",
+            "kind": "cream",
+            "size": 78,
+            "box": [
+              102,
+              36,
+              363,
+              106
+            ]
+          },
+          {
+            "word": "FROM",
+            "kind": "cream",
+            "size": 78,
+            "box": [
+              114,
+              110,
+              349,
+              180
+            ]
+          },
+          {
+            "word": "SKY?",
+            "kind": "gold",
+            "size": 104,
+            "box": [
+              95,
+              184,
+              369,
+              278
+            ]
+          }
+        ],
+        "clearOfHero": true,
+        "clearOfExplorer": true,
+        "clearOfBadge": true
+      },
+      "scores": {
+        "HOOK": "PASS \u2014 'WOOD FROM SKY?' (3 words, positive question per LEARNINGS Rule #1, gold punch 'SKY?') names the concrete physical substance and source in the cold open & Part 05 without repeating any word of Title A ('The Willow Tree That Was Made of Air') or Title B ('Where Does a Tree\\'s Weight Come From?').",
+        "BAND": "PASS \u2014 Upper-left lettering band [95, 36, 369, 278] (plus gold scroll flourishes y=14..297) sits on dark bookshelves completely left of the hero willow/air-ribbon cutaway (x>=440), above the Explorer's hair (y=323), and clear of the bottom-right duration badge.",
+        "PHONE": "PASS \u2014 Verified on 168x94 thumb_preview sheet: 3 short words ('WOOD / FROM / SKY?'), glowing wood-ring cutaway on the willow trunk, and the Explorer (55.1% frame height) read in under 1 second."
+      },
+      "previews": [
+        "Selected/hos_006_thumb_A_wood_from_sky_v01_preview.jpg",
+        "Selected/hos_006_thumb_A_wood_from_sky_v01_style_sheet.jpg"
+      ]
+    },
+    {
+      "id": "B",
+      "role": "Test & Compare B",
+      "hook": "DO PLANTS EAT SOIL?",
+      "punch": "SOIL?",
+      "jpg": "Selected/hos_006_thumb_B_do_plants_eat_soil_v01.jpg",
+      "sha256": "ee5f2605520a0155f146d26700d41c99d47b45596457f84d9692415fe15360c4",
+      "bytes": 279043,
+      "plate": "_assets_v01/hos_006_thumb_B_do_plants_eat_soil_plate01.jpg",
+      "plateSha256": "9ea89834cdbea312e848be8d9a65e1ac5a21cdc89816816cbfd96a6e9e1ece46",
+      "layout": {
+        "letteringBox": [
+          70,
+          30,
+          431,
+          256
+        ],
+        "ornaments": {
+          "topScrollBox": [
+            80,
+            8,
+            420,
+            28
+          ],
+          "bottomScrollBox": [
+            111,
+            259,
+            389,
+            277
+          ]
+        },
+        "heroBox": [
+          485,
+          65,
+          1265,
+          620
+        ],
+        "explorerBox": [
+          64,
+          295,
+          430,
+          720
+        ],
+        "explorerHeightPx": 425,
+        "explorerHeightFrac": 0.59,
+        "placedWords": [
+          {
+            "word": "DO PLANTS",
+            "kind": "cream",
+            "size": 68,
+            "box": [
+              70,
+              30,
+              431,
+              93
+            ]
+          },
+          {
+            "word": "EAT",
+            "kind": "cream",
+            "size": 78,
+            "box": [
+              167,
+              95,
+              333,
+              163
+            ]
+          },
+          {
+            "word": "SOIL?",
+            "kind": "gold",
+            "size": 100,
+            "box": [
+              106,
+              165,
+              395,
+              256
+            ]
+          }
+        ],
+        "clearOfHero": true,
+        "clearOfExplorer": true,
+        "clearOfBadge": true
+      },
+      "scores": {
+        "HOOK": "PASS \u2014 'DO PLANTS EAT SOIL?' (4 words, positive question per LEARNINGS Rule #1, gold punch 'SOIL?') names the concrete Aristotelian belief tested by van Helmont's scale without repeating any word of Title A or Title B.",
+        "BAND": "PASS \u2014 Upper-left lettering band [70, 30, 431, 256] (plus gold scroll flourishes y=8..277) sits on dark bookshelves completely left of the brass balance scale (x>=485), above the Explorer's hair (y=295), and clear of the bottom-right duration badge. Scale plate is 100% free of written numbers.",
+        "PHONE": "PASS \u2014 Verified on 168x94 thumb_preview sheet: 'DO PLANTS / EAT / SOIL?', the sharply tilted brass balance (heavy willow pan down, small soil pot up), and the Explorer (54.6% frame height) read in under 1 second."
+      },
+      "previews": [
+        "Selected/hos_006_thumb_B_do_plants_eat_soil_v01_preview.jpg",
+        "Selected/hos_006_thumb_B_do_plants_eat_soil_v01_style_sheet.jpg"
+      ]
+    }
+  ],
+  "combinedPreviews": [
+    "Selected/hos_006_thumbs_AB_v01_style_sheet.jpg",
+    "Selected/hos_006_thumbs_AB_v01_phone_168.jpg"
+  ],
+  "upload": false,
+  "studio": false,
+  "status": "Staged A/B pair for Test & Compare (0 Flow credits, \u00a30). Parked for Chief before Ben's 1 Nov watch."
+}

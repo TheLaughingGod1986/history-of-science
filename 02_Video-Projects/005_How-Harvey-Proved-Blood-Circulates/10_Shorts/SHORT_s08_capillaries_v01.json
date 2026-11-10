@@ -1,0 +1,218 @@
+{
+  "id": "s08_capillaries",
+  "job": "J0730",
+  "test": "B (search-titled)",
+  "air_date_draft": "2027-01-12",
+  "file": "10_Shorts/hos_005_s08_capillaries_v01.mp4",
+  "sha256": "64f746e65721cc07f217af3816367c50696c7cfb93c878f625d22752798459c4",
+  "duration_s": 25.167,
+  "vo_source": "02_Voiceover/part05_the_vessels_he_never_saw_v01_raw.mp3",
+  "vo_take_indices": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106
+  ],
+  "dropped": [
+    "Harvey's circle had a hole in it.",
+    "Harvey guessed the blood passed through tiny gaps in the flesh, too small to see. He never saw them. He died in sixteen fifty-seven, with his great idea still missing one piece. Four years later,",
+    "And there it was."
+  ],
+  "route": "claim-first lift: How did the blood get from the arteries into the veins? In Bologna, a doctor called Marcello Malpighi looked at the thin lung of a frog through a microscope. \u2026 We call them capillaries, from the Latin word for hair. The circle was closed. (7\u201317, 53\u201370, 75\u2013106 from Part 05)",
+  "vo_s": 24.594,
+  "words": 61,
+  "max_pause_s": 0.25,
+  "atempo": 1.11,
+  "bed": "hos005-part05-temp_score_bed_v01.mp3",
+  "bed_gain_db": -22.9,
+  "hook": "FINER THAN HAIRS",
+  "hook_layer": {
+    "font_size": 243,
+    "cap_px": 173,
+    "cap_pct": 9.01,
+    "lines": 3,
+    "block_pct": [
+      33.6,
+      66.4
+    ],
+    "widest_pct": 75.8
+  },
+  "who_card": {
+    "name": "MARCELLO MALPIGHI",
+    "line2": "Bologna, 1661",
+    "line1_px": 69,
+    "line1_pct_of_band": 11.3,
+    "band": [
+      656,
+      1264
+    ],
+    "in_s": 4.6,
+    "out_s": 8.1,
+    "fade_s": 0.35
+  },
+  "title_on_screen": "The Tied Arm That Proved Your Blood Circulates",
+  "youtube_title_draft": "What Are Capillaries?",
+  "plan": [
+    {
+      "t0": 0.0,
+      "t1": 4.473,
+      "plate": "04_Generated-Clips/part05/raw/v01/01_loop_gap_t5.mp4",
+      "in_s": 1.0,
+      "crop_x": 656,
+      "lands_on": 0
+    },
+    {
+      "t0": 4.473,
+      "t1": 7.75,
+      "plate": "04_Generated-Clips/part05/raw/v01/04_malpighi_slide_t1.mp4",
+      "in_s": 0.8,
+      "crop_x": 656,
+      "lands_on": "In"
+    },
+    {
+      "t0": 7.75,
+      "t1": 11.189,
+      "plate": "04_Generated-Clips/part05/raw/v01/02_tiny_gaps_t1.mp4",
+      "in_s": 0.8,
+      "crop_x": 656,
+      "lands_on": "looked"
+    },
+    {
+      "t0": 11.189,
+      "t1": 14.796,
+      "plate": "04_Generated-Clips/part05/raw/v01/06_eyepiece_mesh_t1.mp4",
+      "in_s": 0.8,
+      "crop_x": 656,
+      "lands_on": "A"
+    },
+    {
+      "t0": 14.796,
+      "t1": 19.009,
+      "plate": "04_Generated-Clips/part05/raw/v01/07_capillaries_loop_t2.mp4",
+      "in_s": 1.2,
+      "crop_x": 656,
+      "lands_on": "carrying"
+    },
+    {
+      "t0": 19.009,
+      "t1": 22.144,
+      "plate": "04_Generated-Clips/part05/raw/v01/16_proved_last_link_t4.mp4",
+      "in_s": 1.0,
+      "crop_x": 656,
+      "lands_on": "We"
+    },
+    {
+      "t0": 22.144,
+      "t1": 25.144,
+      "plate": "04_Generated-Clips/part05/raw/v01/01_loop_gap_t5.mp4",
+      "in_s": 1.0,
+      "crop_x": 656,
+      "lands_on": "loop"
+    }
+  ],
+  "captions": 20,
+  "caption_check": {
+    "ok": true,
+    "changes": 20,
+    "ratio": 1.0
+  },
+  "gate": {
+    "exit": 0,
+    "output": "PASS  hos_005_s08_capillaries_v01.mp4  dur=25.17s  audio=-23.8dB  motion=13.81  dhash=17160faa2f0f1717\n   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_005_s08_capillaries_v01_open_sheet.jpg"
+  },
+  "vo_check": {
+    "exit": 0,
+    "output": "PASS  hos_005_s08_capillaries_v01.mp4  0:25.17  mean -23.8 dB  peak -4.7 dB  145 wpm\n   first minute: title_question 0.0s"
+  },
+  "freezedetect_starts": [],
+  "qa": {
+    "polish_gate": {
+      "exit": 0,
+      "output": "polish gate PASS: 0 of 7 rows failed, 1 to look at -> 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s08_capillaries_v01/polish_gate_s08_capillaries_v01.json"
+    },
+    "picture_qa": {
+      "exit": 0,
+      "output": "picture QA PASS: 0 of 7 cuts fail, 1 to look at -> 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s08_capillaries_v01/picture_qa_s08_capillaries_v01/PICTURE_QA.md, 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s08_capillaries_v01/picture_qa_s08_capillaries_v01/picture_qa_review.jpg"
+    }
+  },
+  "stills": [
+    "10_Shorts/_work_s08_capillaries_v01/hos_005_s08_capillaries_v01_t000.0.jpg",
+    "10_Shorts/_work_s08_capillaries_v01/hos_005_s08_capillaries_v01_t006.5.jpg",
+    "10_Shorts/_work_s08_capillaries_v01/hos_005_s08_capillaries_v01_t011.5.jpg",
+    "10_Shorts/_work_s08_capillaries_v01/hos_005_s08_capillaries_v01_t024.2.jpg"
+  ],
+  "icloud": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s08_capillaries_v01.mp4",
+  "autocomplete_check": {
+    "date": "2026-10-20",
+    "source": "suggestqueries client=youtube ds=yt gl=GB signed-out",
+    "hits": [
+      "what are capillaries",
+      "what do capillaries do",
+      "how do capillaries work",
+      "capillaries arteries and veins",
+      "capillaries explained",
+      "difference between arteries and veins and capillaries"
+    ],
+    "note": "'what are capillaries', 'what do capillaries do', 'how do capillaries work', and 'capillaries arteries and veins' are exact signed-out GB YouTube autocomplete hits. Title draft 'What Are Capillaries?' (with 'How Do Capillaries Work?' and 'What Do Capillaries Do?' as exact-autocomplete alternatives) is answered directly by the lifted Part 05 VO: how blood gets from the arteries into the veins, how Marcello Malpighi in Bologna (1661) looked at a frog's lung under a microscope and found a net of tiny vessels finer than hairs carrying blood from the smallest arteries into the smallest veins, why we call them capillaries (from the Latin word for hair), and how that closed the circulation loop. Fifth search-titled Short on HOS 005 (second of Round 5 after 004 s08). Chief's call."
+  },
+  "air_date_draft_note": "2027-01-12 used for the gate only; slot is Chief's call.",
+  "who_card_note": "card MARCELLO MALPIGHI \u00b7 Bologna, 1661 on screen 4.6\u20138.1 s (3.5 s) right as 'In Bologna, a doctor called Marcello Malpighi' is spoken over Malpighi at his brass microscope by the Bologna window (04_malpighi_slide_t1). Clear of the 0\u20132 s hook, the 9\u201314 s title, and the last 3.0 s CTA.",
+  "overlap_note": "Zero VO overlap with 005 s01_the_sum (Part 03 dedicated Short VO), s02_the_tied_arm (Part 04 dedicated Short VO), s03_never_saw (Part 05 dedicated Short VO), s04_galen_stove (Part 02), s05_valves (Part 04 middle), s06_blood_pressure_cuff (Part 05 second half, indices 107\u2013126 and 178\u2013220), or s07_heart_pulse (Part 03 long VO): this Test B Short lifts from 005 Part 05's first half (indices 7\u201317, 53\u201370, 75\u2013106: the missing link between arteries and veins, Marcello Malpighi's 1661 microscope discovery in Bologna, the net of vessels finer than hairs called capillaries, and closing the circle)."
+}

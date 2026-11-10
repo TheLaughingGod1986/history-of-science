@@ -1,0 +1,128 @@
+{
+  "stem": "hos_009_part04_the_moon_test_v01",
+  "voice": "Ben Orbit Narrator",
+  "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+  "model_id": "eleven_v3",
+  "settings": {
+    "stability": 0.34,
+    "similarity_boost": 0.78,
+    "style": 0.42,
+    "speed": 1.04,
+    "use_speaker_boost": true
+  },
+  "orders": [
+    "J0111"
+  ],
+  "retake_of": null,
+  "chapters": [
+    {
+      "title": "take",
+      "chars": 1725,
+      "duration_s": 131.2
+    }
+  ],
+  "gap_s": 0.7,
+  "spoken_chars": 1725,
+  "words": 323,
+  "duration_s": 131.2,
+  "loudness": {
+    "lufs_integrated": -20.5,
+    "mean_volume_db": -23.7,
+    "max_volume_db": -3.8
+  },
+  "sha256_mp3": "2d03f372e0a4b071f547b4c887ea5e1c2edcb7c8bd01618366287fa7708f1a84",
+  "scribe": {
+    "transcript": "Newton worked out that a pull like this should get weaker with distance. Twice as far away, it should be four times weaker. Three times as far, nine times weaker. Why would it work like that? Think of a can of spray paint. Hold it close to a wall, and you get a small, dark spot. Step back twice as far, and the same paint spreads over a patch four times as big, so every part of it gets only a quarter as much. Newton's pull spreads out in the same way. The moon is about 60 times further from the center of the Earth than you are, so the pull on the moon should be sixty times sixty weaker, 3,600 times weaker. Then came the beautiful part. In one second, an apple falls about five meters. If the pull on the moon is 3,600 times weaker, then in one minute, the moon should fall about the same distance, five meters, along its curve. Newton checked it against the real moon. Years later, he wrote that the two answered pretty nearly. The apple and the moon were obeying the same rule. But Newton was a careful, private man, and his numbers weren't yet perfect. He put the idea aside for almost 20 years. Then, in 1684, a young astronomer called Edmond Halley came to see him in Cambridge. Halley asked him a question. \"If the sun pulled on the planets with a force that got weaker in just this way, what path would they follow?\" \"An ellipse,\" Newton said at once. He had worked it out years before. Halley was amazed, and he begged Newton to write it all down. The result, three years later, was one of the most important books ever written. Newton called it the Principia. And because the Royal Society had spent its money on a book about fish, Halley paid to print it himself",
+    "script_words": 325,
+    "scribe_words": 321,
+    "match_rate_pct": 96.31,
+    "exact_match": false,
+    "mismatches": [
+      {
+        "op": "replace",
+        "script": [
+          "sixty"
+        ],
+        "scribe": [
+          "60"
+        ]
+      },
+      {
+        "op": "replace",
+        "script": [
+          "centre"
+        ],
+        "scribe": [
+          "center"
+        ]
+      },
+      {
+        "op": "replace",
+        "script": [
+          "three",
+          "thousand",
+          "six",
+          "hundred"
+        ],
+        "scribe": [
+          "3",
+          "600"
+        ]
+      },
+      {
+        "op": "replace",
+        "script": [
+          "metres"
+        ],
+        "scribe": [
+          "meters"
+        ]
+      },
+      {
+        "op": "replace",
+        "script": [
+          "metres"
+        ],
+        "scribe": [
+          "meters"
+        ]
+      },
+      {
+        "op": "replace",
+        "script": [
+          "twenty"
+        ],
+        "scribe": [
+          "20"
+        ]
+      },
+      {
+        "op": "replace",
+        "script": [
+          "sixteen",
+          "eighty",
+          "four"
+        ],
+        "scribe": [
+          "1684"
+        ]
+      }
+    ]
+  },
+  "vo_check": "PASS",
+  "credits": {
+    "before": {
+      "used": 192292,
+      "limit": 209536,
+      "remaining": 17244
+    },
+    "after": {
+      "used": 193545,
+      "limit": 209536,
+      "remaining": 15991
+    },
+    "counter_delta": 1253
+  },
+  "text": "Newton worked out that a pull like this should get weaker with distance. Twice as far away, it should be four times weaker. Three times as far, nine times weaker.\n\nWhy would it work like that? Think of a can of spray paint. Hold it close to a wall and you get a small, dark spot. Step back twice as far, and the same paint spreads over a patch four times as big, so every part of it gets only a quarter as much. Newton's pull spreads out in the same way.\n\nThe Moon is about sixty times further from the centre of the Earth than you are. So the pull on the Moon should be sixty times sixty weaker. Three thousand six hundred times weaker.\n\nThen came the beautiful part. In one second, an apple falls about five metres. If the pull on the Moon is 3,600 times weaker, then in one minute, the Moon should fall about the same distance, five metres, along its curve.\n\nNewton checked it against the real Moon. Years later, he wrote that the two answered pretty nearly. The apple and the Moon were obeying the same rule.\n\nBut Newton was a careful, private man, and his numbers weren't yet perfect. He put the idea aside for almost twenty years.\n\nThen, in sixteen eighty-four, a young astronomer called Edmond Halley came to see him in Cambridge. Halley asked him a question. If the Sun pulled on the planets with a force that got weaker in just this way, what path would they follow?\n\nAn ellipse, Newton said at once. He had worked it out years before.\n\nHalley was amazed, and he begged Newton to write it all down. The result, three years later, was one of the most important books ever written. Newton called it the Principia. And because the Royal Society had spent its money on a book about fish, Halley paid to print it himself.",
+  "made_at": "2026-10-10T20:58:28+0100"
+}

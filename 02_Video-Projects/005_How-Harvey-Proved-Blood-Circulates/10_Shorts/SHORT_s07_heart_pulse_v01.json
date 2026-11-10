@@ -1,0 +1,229 @@
+{
+  "id": "s07_heart_pulse",
+  "job": "J0608",
+  "test": "B (search-titled)",
+  "air_date_draft": "2027-01-05",
+  "file": "10_Shorts/hos_005_s07_heart_pulse_v01.mp4",
+  "sha256": "a6513555187f65ee887877824ecaae732f85cf72498f3d17bbaa6c924ca7b310",
+  "duration_s": 25.533,
+  "vo_source": "02_Voiceover/part03_the_sum_that_broke_the_old_idea_v01_raw.mp3",
+  "vo_take_indices": [
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241
+  ],
+  "dropped": [
+    "Then he asks how much blood each squeeze pushes out. He picks small numbers on purpose. Say the left side of the heart holds about two ounces. Say just one eighth of that goes out with each beat. In half an hour, a heart beats more than a thousand times. Multiply it out. In half an hour, the heart pushes out more blood than there is in the whole body. Why does that matter? Because if the liver made all that blood fresh from food, you'd have to eat more than your own weight every single day. Nobody does. And if the body used it all up, where would it go? There's only one answer that works. It's the same blood.",
+    "We now know he was being very careful:"
+  ],
+  "route": "claim-first lift: The heart isn't a stove. It's a muscle, and it squeezes. Each squeeze pushes blood out into the arteries, and that push is the pulse you feel in your wrist. \u2026 Your heart pumps all of your blood round your body in about a minute. (49\u201378, 200\u2013219, 228\u2013241 from Part 03)",
+  "vo_s": 24.97,
+  "words": 64,
+  "max_pause_s": 0.25,
+  "atempo": 1.04,
+  "bed": "hos005-part03-temp_score_bed_v01.mp3",
+  "bed_gain_db": -22.1,
+  "hook": "YOUR PULSE",
+  "hook_layer": {
+    "font_size": 243,
+    "cap_px": 173,
+    "cap_pct": 9.01,
+    "lines": 2,
+    "block_pct": [
+      39.5,
+      60.4
+    ],
+    "widest_pct": 79.2
+  },
+  "who_card": {
+    "name": "WILLIAM HARVEY",
+    "line2": "London, 1628",
+    "line1_px": 69,
+    "line1_pct_of_band": 11.3,
+    "band": [
+      656,
+      1264
+    ],
+    "in_s": 2.2,
+    "out_s": 5.8,
+    "fade_s": 0.35
+  },
+  "title_on_screen": "The Tied Arm That Proved Your Blood Circulates",
+  "youtube_title_draft": "How Does the Heart Pump Blood?",
+  "plan": [
+    {
+      "t0": 0.0,
+      "t1": 1.928,
+      "plate": "04_Generated-Clips/part03/raw/v01/03_stove_to_muscle_t1.mp4",
+      "in_s": 0.5,
+      "crop_x": 656,
+      "lands_on": 0
+    },
+    {
+      "t0": 1.928,
+      "t1": 4.851,
+      "plate": "04_Generated-Clips/part03/raw/v01/02_slow_hearts_t2.mp4",
+      "in_s": 1.0,
+      "crop_x": 656,
+      "lands_on": "It's"
+    },
+    {
+      "t0": 4.851,
+      "t1": 8.64,
+      "plate": "04_Generated-Clips/part03/raw/v01/04_squeeze_pulse_t1.mp4",
+      "in_s": 1.8,
+      "crop_x": 656,
+      "lands_on": "Each"
+    },
+    {
+      "t0": 8.64,
+      "t1": 12.207,
+      "plate": "04_Generated-Clips/part01/raw/v01/01_pulse_wrist_t1.mp4",
+      "in_s": 0.8,
+      "crop_x": 656,
+      "lands_on": "and"
+    },
+    {
+      "t0": 12.207,
+      "t1": 15.092,
+      "plate": "04_Generated-Clips/part05/raw/v01/08_your_blood_t2.mp4",
+      "in_s": 1.2,
+      "crop_x": 656,
+      "lands_on": "The"
+    },
+    {
+      "t0": 15.092,
+      "t1": 18.739,
+      "plate": "04_Generated-Clips/part03/raw/v01/12_glowing_loop_t2.mp4",
+      "in_s": 1.2,
+      "crop_x": 656,
+      "lands_on": "and"
+    },
+    {
+      "t0": 18.739,
+      "t1": 22.52,
+      "plate": "04_Generated-Clips/part03/raw/v01/13_one_minute_t3.mp4",
+      "in_s": 1.0,
+      "crop_x": 656,
+      "lands_on": "It"
+    },
+    {
+      "t0": 22.52,
+      "t1": 25.52,
+      "plate": "04_Generated-Clips/part03/raw/v01/03_stove_to_muscle_t1.mp4",
+      "in_s": 0.5,
+      "crop_x": 656,
+      "lands_on": "loop"
+    }
+  ],
+  "captions": 19,
+  "caption_check": {
+    "ok": true,
+    "changes": 18,
+    "ratio": 1.0
+  },
+  "gate": {
+    "exit": 0,
+    "output": "PASS  hos_005_s07_heart_pulse_v01.mp4  dur=25.53s  audio=-24.0dB  motion=17.29  dhash=e04d0e2b63272159\n   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_005_s07_heart_pulse_v01_open_sheet.jpg"
+  },
+  "vo_check": {
+    "exit": 0,
+    "output": "PASS  hos_005_s07_heart_pulse_v01.mp4  0:25.53  mean -24.0 dB  peak -5.1 dB  150 wpm"
+  },
+  "freezedetect_starts": [],
+  "qa": {
+    "polish_gate": {
+      "exit": 0,
+      "output": "polish gate PASS: 0 of 8 rows failed, 1 to look at -> 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s07_heart_pulse_v01/polish_gate_s07_heart_pulse_v01.json"
+    },
+    "picture_qa": {
+      "exit": 0,
+      "output": "picture QA PASS: 0 of 8 cuts fail, 1 to look at -> 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s07_heart_pulse_v01/picture_qa_s07_heart_pulse_v01/PICTURE_QA.md, 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s07_heart_pulse_v01/picture_qa_s07_heart_pulse_v01/picture_qa_review.jpg"
+    }
+  },
+  "stills": [
+    "10_Shorts/_work_s07_heart_pulse_v01/hos_005_s07_heart_pulse_v01_t000.0.jpg",
+    "10_Shorts/_work_s07_heart_pulse_v01/hos_005_s07_heart_pulse_v01_t003.8.jpg",
+    "10_Shorts/_work_s07_heart_pulse_v01/hos_005_s07_heart_pulse_v01_t011.5.jpg",
+    "10_Shorts/_work_s07_heart_pulse_v01/hos_005_s07_heart_pulse_v01_t024.5.jpg"
+  ],
+  "icloud": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s07_heart_pulse_v01.mp4",
+  "autocomplete_check": {
+    "date": "2026-10-19",
+    "source": "suggestqueries client=youtube ds=yt gl=GB signed-out",
+    "hits": [
+      "how does the heart pump blood",
+      "how does the heart pump blood around the body",
+      "how does the heart pump blood step by step",
+      "how does the heart pump blood through the body",
+      "what causes a pulse",
+      "how fast does blood flow through the body",
+      "how fast blood circulates in the body"
+    ],
+    "note": "'how does the heart pump blood', 'how does the heart pump blood around the body', 'what causes a pulse', and 'how fast does blood flow through the body' are exact signed-out GB YouTube autocomplete hits. Title draft 'How Does the Heart Pump Blood?' (with 'What Causes a Pulse?' and 'How Fast Does Blood Flow Through the Body?' as exact-autocomplete alternatives) is answered directly by the lifted Part 03 VO: the heart isn't a stove \u2014 it's a muscle that squeezes, each squeeze pushes blood into the arteries (the pulse you feel in your wrist), and it pumps all of your blood out through the arteries and back through the veins round your body in about a minute. Fourth search-titled Short on HOS 005 (second of Round 4 after 004 s07). Chief's call."
+  },
+  "air_date_draft_note": "2027-01-05 used for the gate only; slot is Chief's call.",
+  "who_card_note": "card WILLIAM HARVEY \u00b7 London, 1628 on screen 2.2\u20135.8 s (3.6 s) right as 'It's a muscle, and it squeezes.' is spoken over Harvey's anatomical notebook heart drawing (02_slow_hearts_t2). Clear of the 0\u20132 s hook, the 9\u201314 s title, and the last 3.0 s CTA.",
+  "overlap_note": "Zero VO overlap with 005 s01_the_sum (dedicated Short VO on the 2 oz \u00d7 1/8 \u00d7 1,000 sum), s02_the_tied_arm (Part 04 dedicated Short VO), s03_never_saw (Part 05 dedicated Short VO), s04_galen_stove (Part 02), s05_valves (Part 04 middle), or s06_blood_pressure_cuff (Part 05): this is the first Test B Short lifted from 005 Part 03's long VO (indices 49\u201378, 200\u2013219, 228\u2013241: the heart as a muscular pump, why each squeeze is your wrist pulse, and how it pumps all your blood round the body in about a minute)."
+}

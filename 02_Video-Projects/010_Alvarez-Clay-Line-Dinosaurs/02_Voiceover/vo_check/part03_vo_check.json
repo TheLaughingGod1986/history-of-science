@@ -1,0 +1,41 @@
+{
+  "file": "02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/02_Voiceover/hos_010_part03_a_clock_made_of_stardust_v01.mp3",
+  "part": 3,
+  "fails": [
+    "replace at ~0:07.10: script 'loved a puzzle he had once used tiny' / heard 'loved a puzzle he'd once used tiny' — listen, then regenerate that sentence alone if real"
+  ],
+  "warns": [
+    "replace at ~1:11.16: script 'asaro and helen michel who had a' / heard 'asaro and helen michelle who had a' — sounds alike (likely the transcriber); listen"
+  ],
+  "duration_s": 81.04,
+  "duration": "1:21.04",
+  "mean_db": -23.5,
+  "peak_db": -4.2,
+  "pauses_over_1s": [
+    [
+      16.21,
+      1.01
+    ]
+  ],
+  "asr": "faster-whisper small.en",
+  "script_words": 210,
+  "heard_words": 209,
+  "wpm": 157,
+  "word_diffs": [
+    {
+      "at": "0:07.10",
+      "op": "replace",
+      "sounds_alike": false,
+      "script": "loved a puzzle he had once used tiny",
+      "heard": "loved a puzzle he'd once used tiny"
+    },
+    {
+      "at": "1:11.16",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "asaro and helen michel who had a",
+      "heard": "asaro and helen michelle who had a"
+    }
+  ],
+  "verdict": "FAIL"
+}

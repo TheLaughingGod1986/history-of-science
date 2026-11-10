@@ -1,0 +1,90 @@
+[
+  {
+    "row": "s01_0",
+    "timeline_in": 0.0,
+    "timeline_out": 2.355,
+    "source": "05_magnet_bends_v01.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.5
+    },
+    "video": true
+  },
+  {
+    "row": "s02_run",
+    "timeline_in": 2.355,
+    "timeline_out": 5.932,
+    "source": "03_beam_shoots_v01.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.5
+    },
+    "video": true
+  },
+  {
+    "row": "s03_Scientists",
+    "timeline_in": 5.932,
+    "timeline_out": 8.899,
+    "source": "02_tube_glow_v01.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 1.5
+    },
+    "video": true
+  },
+  {
+    "row": "s04_But",
+    "timeline_in": 8.899,
+    "timeline_out": 12.747,
+    "source": "04_cathode_rays_question_v01.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.5
+    },
+    "video": true
+  },
+  {
+    "row": "s05_Thomson",
+    "timeline_in": 12.747,
+    "timeline_out": 16.647,
+    "source": "08_measures_bend_v01.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.8
+    },
+    "video": true
+  },
+  {
+    "row": "s06_He",
+    "timeline_in": 16.647,
+    "timeline_out": 20.582,
+    "source": "06_plates_bend_v01.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 1.5
+    },
+    "video": true
+  },
+  {
+    "row": "s07_Light",
+    "timeline_in": 20.582,
+    "timeline_out": 22.483,
+    "source": "07_light_doesnt_v01.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.5
+    },
+    "video": true
+  },
+  {
+    "row": "s08_loop",
+    "timeline_in": 22.483,
+    "timeline_out": 25.683,
+    "source": "loop_end_05_magnet_bends_v01.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.5
+    },
+    "video": true
+  }
+]

@@ -1,0 +1,252 @@
+{
+ "pulled": "2026-10-21",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "honey bees",
+  "how bees make honey"
+ ],
+ "autocomplete": {
+  "honey bees": [
+   "honey bees",
+   "honey bees making honey",
+   "honey bees attack",
+   "honey bees sahbabii",
+   "honey bee drawing",
+   "honey bees cartoon",
+   "honey bees video",
+   "honey bees documentary",
+   "honey bees vs hornets",
+   "honey bee song"
+  ],
+  "how bees make honey": [
+   "how bees make honey",
+   "how bees make honey for kids",
+   "how bees make honeycomb",
+   "how bees make honey animation",
+   "how bees make honey cartoon",
+   "how bees make honey documentary",
+   "how bees make honey national geographic",
+   "how bees make honey for toddlers",
+   "how bees make honey for kindergarten",
+   "how bees make honey zack d films"
+  ]
+ },
+ "sharedTitleWords": [
+  "how do",
+  "do bees",
+  "bees make",
+  "make honey",
+  "how bees",
+  "scishow kids"
+ ],
+ "neighbours": [
+  {
+   "id": "q93IfqUbEf4",
+   "title": "Licking bees and pulping trees: The reign of a wasp queen - Kenny Coogan",
+   "channel": "TED-Ed",
+   "views": "3,307,081 views",
+   "age": "6 yr ago",
+   "length": "5:23",
+   "tier": 1,
+   "viewCount": 3307081,
+   "foundBy": "ted-ed honey bees",
+   "onTopic": true
+  },
+  {
+   "id": "dY7iATJVCso",
+   "title": "Marla Spivak: Why bees are disappearing",
+   "channel": "TED",
+   "views": "629,640 views",
+   "age": "13 yr ago",
+   "length": "15:58",
+   "tier": 1,
+   "viewCount": 629640,
+   "foundBy": "ted-ed honey bees",
+   "onTopic": true
+  },
+  {
+   "id": "Y5uRVv7GGQM",
+   "title": "How bees help plants have sex - Fernanda S. Valdovinos",
+   "channel": "TED-Ed",
+   "views": "182,524 views",
+   "age": "12 yr ago",
+   "length": "5:25",
+   "tier": 1,
+   "viewCount": 182524,
+   "foundBy": "ted-ed honey bees",
+   "onTopic": true
+  },
+  {
+   "id": "GqA42M4RtxE",
+   "title": "The Death Of Bees Explained – Parasites, Poison and Humans",
+   "channel": "Kurzgesagt – In a Nutshell",
+   "views": "15,420,024 views",
+   "age": "11 yr ago",
+   "length": "6:12",
+   "tier": 2,
+   "viewCount": 15420024,
+   "foundBy": "ted-ed honey bees",
+   "onTopic": true
+  },
+  {
+   "id": "uKP3lc9SOaA",
+   "title": "Why There Are No King Bees",
+   "channel": "MinuteEarth",
+   "views": "6,991,814 views",
+   "age": "2 yr ago",
+   "length": "4:22",
+   "tier": 2,
+   "viewCount": 6991814,
+   "foundBy": "ted-ed how bees make honey",
+   "onTopic": true
+  },
+  {
+   "id": "m_SlH3Uwslc",
+   "title": "How Bees Choose Their Queen",
+   "channel": "SciShow",
+   "views": "6,426,268 views",
+   "age": "11 yr ago",
+   "length": "3:59",
+   "tier": 2,
+   "viewCount": 6426268,
+   "foundBy": "ted-ed honey bees",
+   "onTopic": true
+  },
+  {
+   "id": "nZlEjDLJCmg",
+   "title": "How Do Bees Make Honey?",
+   "channel": "Be Smart",
+   "views": "5,441,469 views",
+   "age": "10 yr ago",
+   "length": "6:33",
+   "tier": 2,
+   "viewCount": 5441469,
+   "foundBy": "honey bees",
+   "onTopic": true
+  },
+  {
+   "id": "ta154f5Rp5Y",
+   "title": "Busy Bees! | Bumblebees and Honeybees | Amazing Animals | SciShow Kids",
+   "channel": "SciShow Kids",
+   "views": "3,851,437 views",
+   "age": "10 yr ago",
+   "length": "4:00",
+   "tier": 2,
+   "viewCount": 3851437,
+   "foundBy": "honey bees",
+   "onTopic": true
+  },
+  {
+   "id": "A4YIpGQiD3w",
+   "title": "How Do Bees Make Honey? | The Science of Food! | SciShow Kids",
+   "channel": "SciShow Kids",
+   "views": "915,352 views",
+   "age": "4 yr ago",
+   "length": "6:02",
+   "tier": 2,
+   "viewCount": 915352,
+   "foundBy": "ted-ed honey bees",
+   "onTopic": true
+  },
+  {
+   "id": "3h4uVVFCvVg",
+   "title": "Why (and How) Do Bees Make Honey?",
+   "channel": "SciShow",
+   "views": "664,928 views",
+   "age": "12 yr ago",
+   "length": "2:43",
+   "tier": 2,
+   "viewCount": 664928,
+   "foundBy": "how bees make honey",
+   "onTopic": true
+  },
+  {
+   "id": "WlFsUeYzezk",
+   "title": "Why bees hold the key to our future | Noah Wilson-Rich",
+   "channel": "TED",
+   "views": "65,065 views",
+   "age": "7 yr ago",
+   "length": "12:55",
+   "tier": 1,
+   "viewCount": 65065,
+   "foundBy": "honey bees ted",
+   "onTopic": true
+  },
+  {
+   "id": "DwGoZA8ZpHo",
+   "title": "Every city needs healthy honey bees - Noah Wilson-Rich",
+   "channel": "TED-Ed",
+   "views": "42,882 views",
+   "age": "13 yr ago",
+   "length": "12:43",
+   "tier": 1,
+   "viewCount": 42882,
+   "foundBy": "ted-ed honey bees",
+   "onTopic": true
+  },
+  {
+   "id": "tcXkQBY0i0k",
+   "title": "Honey bee societies and dance floor democracy | Margaret Couvillon | TEDxHousesofParliament",
+   "channel": "TEDx Talks",
+   "views": "27,073 views",
+   "age": "14 yr ago",
+   "length": "12:37",
+   "tier": 1,
+   "viewCount": 27073,
+   "foundBy": "honey bees ted",
+   "onTopic": true
+  },
+  {
+   "id": "R2kOgSVF2Uk",
+   "title": "Noah Wilson-Rich: Every city needs healthy honey bees",
+   "channel": "TED",
+   "views": "9,371 views",
+   "age": "11 yr ago",
+   "length": "12:40",
+   "tier": 1,
+   "viewCount": 9371,
+   "foundBy": "ted-ed honey bees",
+   "onTopic": true
+  },
+  {
+   "id": "KjVFqiZ2Sw4",
+   "title": "I speak for the bees | Ted Dennard | TEDxSavannah",
+   "channel": "TEDx Talks",
+   "views": "4,294 views",
+   "age": "9 yr ago",
+   "length": "13:29",
+   "tier": 1,
+   "viewCount": 4294,
+   "foundBy": "honey bees ted",
+   "onTopic": true
+  },
+  {
+   "id": "RjB3t0YZzf4",
+   "title": "How Do Bees Save Lives? Transformation Through the Culture of the Hive  | Sarah Common | TEDxJIBC",
+   "channel": "TEDx Talks",
+   "views": "1,557 views",
+   "age": "6 yr ago",
+   "length": "17:20",
+   "tier": 1,
+   "viewCount": 1557,
+   "foundBy": "how bees make honey ted",
+   "onTopic": true
+  },
+  {
+   "id": "mgmIPtbWD5w",
+   "title": "Luck beyond the honey bee | Kimball Clark | TEDxBountiful",
+   "channel": "TEDx Talks",
+   "views": "169 views",
+   "age": "2 mo ago",
+   "length": "15:41",
+   "tier": 1,
+   "viewCount": 169,
+   "foundBy": "honey bees ted",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 6,
+ "gate": "PASS",
+ "hasTed": true,
+ "failedQueries": []
+}

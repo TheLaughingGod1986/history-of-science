@@ -1,0 +1,13 @@
+09_pull_heights     2.1s code_graphic_009_p2_09_pull_ ok
+09_pull_heights_c1     6.2s code_graphic_009_p2_09_pull_ ok
+06_orbit_teach    10.5s code_graphic_009_p3_06_orbit WARN low detail: edge density 0.0183 < film p5 0.0189
+06_orbit_teach_c1    14.9s code_graphic_009_p3_06_orbit ok
+08_km_a_second    19.6s code_graphic_009_p3_08_km_a_ ok
+08_km_a_second_c1    24.5s code_graphic_009_p3_08_km_a_ ok
+01_weaker_far    30.5s code_graphic_009_p4_01_weake ok
+01_weaker_far_c1    37.6s code_graphic_009_p4_01_weake ok
+03_sixty_earths    43.5s code_graphic_009_p4_03_sixty ok
+04_dots_square    48.6s code_graphic_009_p4_04_dots_ ok
+04_dots_square_c1    54.2s code_graphic_009_p4_04_dots_ ok
+07_station_curve    60.3s code_graphic_009_p5_07_stati ok
+polish gate PASS: 0 of 12 rows failed, 1 to look at -> 02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/code_graphics_v01/polish_gate_v01.json

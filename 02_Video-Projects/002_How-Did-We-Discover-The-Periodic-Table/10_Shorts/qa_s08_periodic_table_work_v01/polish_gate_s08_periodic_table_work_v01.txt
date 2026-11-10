@@ -1,0 +1,9 @@
+s01_0     1.8s 01b_empty_seats_waiting_v01_ ok
+s02_Noble     5.5s 02_guests_as_work_v01_try3.m ok
+s03_a     8.6s 10_zoo_became_city_v01_try4. WARN low detail: edge density 0.0463 < film p5 0.0465
+s04_The    11.3s 11b_late_for_dinner_v01_try2 ok
+s05_Then    15.0s 08b_weight_vs_identity_v01_t ok
+s06_Mass    18.1s 10_rock_not_fire_v01.mp4     ok
+s07_The    20.7s 08_property_waves_v08.mp4    ok
+s08_loop    23.8s loop_end_01b_empty_seats_wai ok
+polish gate PASS: 0 of 8 rows failed, 1 to look at -> 02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/qa_s08_periodic_table_work_v01/polish_gate_s08_periodic_table_work_v01.json

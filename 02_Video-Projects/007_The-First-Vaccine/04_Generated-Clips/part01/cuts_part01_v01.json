@@ -1,0 +1,13 @@
+[
+  {
+    "row": "p1_01_cow_meadow",
+    "timeline_in": 0.0,
+    "timeline_out": 8.0,
+    "source": "01_cow_meadow_t1_silent.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.0
+    },
+    "video": true
+  }
+]

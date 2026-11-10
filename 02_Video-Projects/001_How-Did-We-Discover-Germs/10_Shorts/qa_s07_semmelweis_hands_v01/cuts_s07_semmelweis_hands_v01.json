@@ -1,0 +1,90 @@
+[
+  {
+    "row": "s01_0",
+    "timeline_in": 0.0,
+    "timeline_out": 1.831,
+    "source": "05_wash_works_v03.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.6
+    },
+    "video": true
+  },
+  {
+    "row": "s02_the",
+    "timeline_in": 1.831,
+    "timeline_out": 4.471,
+    "source": "02_perfume_windows_v02.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.6
+    },
+    "video": true
+  },
+  {
+    "row": "s03_If",
+    "timeline_in": 4.471,
+    "timeline_out": 7.087,
+    "source": "03_bedside_hands_v04.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.6
+    },
+    "video": true
+  },
+  {
+    "row": "s04_stopping",
+    "timeline_in": 7.087,
+    "timeline_out": 11.0,
+    "source": "08_prestige_hands_v01.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.6
+    },
+    "video": true
+  },
+  {
+    "row": "s05_Suddenly",
+    "timeline_in": 11.0,
+    "timeline_out": 14.556,
+    "source": "10_flask_in_the_room_v03.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.6
+    },
+    "video": true
+  },
+  {
+    "row": "s06_Ignaz",
+    "timeline_in": 14.556,
+    "timeline_out": 18.425,
+    "source": "04_autopsy_to_ward_v14.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.6
+    },
+    "video": true
+  },
+  {
+    "row": "s07_childbirth",
+    "timeline_in": 18.425,
+    "timeline_out": 22.157,
+    "source": "07_mocked_v12.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.6
+    },
+    "video": true
+  },
+  {
+    "row": "s08_loop",
+    "timeline_in": 22.157,
+    "timeline_out": 25.157,
+    "source": "loop_end_05_wash_works_v03.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.6
+    },
+    "video": true
+  }
+]

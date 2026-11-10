@@ -1,0 +1,23 @@
+01_furnace_soil     2.7s 01_furnace_soil_t1.mp4       ok
+02_balance_200     8.4s 09_weights_169_t1.mp4        ok
+03_willow_shoot_scale    13.4s 03_willow_shoot_scale_t1.mp4 ok
+04_lid_rain    18.8s 04_lid_rain_t1.mp4           ok
+05_pure_water    24.5s 05_pure_water_t1.mp4         ok
+06_garden_years    30.9s 06_garden_years_t2.mp4       ok
+08_haul_tree    37.3s 08_haul_tree_t1_trim_0to4p8. ok
+09_weights_169    41.6s 09_weights_169_t1.mp4        ok
+10_fallen_leaves    45.8s 10_fallen_leaves_t1.mp4      ok
+11_furnace_again    49.8s 01_furnace_soil_t1.mp4       ok
+12_pointer_short    54.9s 12_pointer_short_t1.mp4      ok
+13_tree_vs_pinch    61.0s 13_tree_vs_pinch_t1.mp4      WARN low detail: edge density 0.0188 < film p5 0.0202
+14_why_grown    65.9s 17_mostly_wrong_t1.mp4       ok
+15_desk_candle    70.9s 15_desk_candle_t1.mp4        FAIL split panel: horizontal seam at 0.785
+16_water_drawing    76.2s 16_water_drawing_t1.mp4      ok
+17_mostly_wrong    81.4s 17_mostly_wrong_t1.mp4       ok
+18_charcoal_hearth    87.4s 18_charcoal_hearth_t1.mp4    ok
+19_ash_mound    92.6s 19_ash_mound_t1.mp4          ok
+20_shimmer_coals    97.0s 20_shimmer_coals_t1.mp4      ok
+21_gas_window   102.9s 20_shimmer_coals_t1.mp4      ok
+22_shimmer_willow   109.2s 22_shimmer_willow_t1.mp4     ok
+polish gate FAIL: 1 of 21 rows failed, 1 to look at -> 02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/_desk/006/part02_rough_v02/polish_gate_v02.json
+polish_gate exit 1

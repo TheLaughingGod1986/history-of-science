@@ -1,0 +1,31 @@
+1
+00:00:00,100 --> 00:00:03,620
+In 1964, the afterglow of the Big Bang was
+
+2
+00:00:03,660 --> 00:00:05,240
+blamed on pigeons.
+
+3
+00:00:06,380 --> 00:00:08,980
+Arno Penzias and Robert Wilson picked up a
+
+4
+00:00:09,080 --> 00:00:11,360
+strange noise in their giant antenna.
+
+5
+00:00:12,320 --> 00:00:14,180
+Pigeons were nesting inside, leaving
+
+6
+00:00:14,260 --> 00:00:16,480
+droppings. But the noise wasn't the
+
+7
+00:00:16,520 --> 00:00:19,460
+pigeons. It came from every direction in
+
+8
+00:00:19,500 --> 00:00:22,660
+the sky, the afterglow of the Big Bang

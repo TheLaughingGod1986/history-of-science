@@ -1,0 +1,98 @@
+{
+  "film": "005",
+  "video": "wwcjcFfC-5M",
+  "job": "J0700",
+  "variant": "B v09 (1.10x hero push-in + pale-hand, forearm blue-cord, linen-knot & arterial-glow definition boost + concrete pale-hand hook; pairs with B v08 'PINCHED LINEN KNOT' and B v07 'SWOLLEN BLUE CORDS')",
+  "maker": "gemini",
+  "hook": "PALE COLD HAND",
+  "punch": "COLD",
+  "jpg": "Selected/hos_005_thumb_B_pale_cold_hand_v09.jpg",
+  "sha256": "5b239b28ec1e2ad8218b22d7a639af34ff566802fdd261d0a48947f3e18ebefc",
+  "bytes": 250069,
+  "plates": [
+    "Selected/hos_005_thumb_A_one_tight_band_v02.jpg (005 painted 16:9 key-art plate: glowing red artery stopped at linen band, pale forearm with branching blue veins and pale open hand, Explorer lower-left, original gold scroll flourishes)"
+  ],
+  "method": "existing_005_plate_only_1.10x_hero_push_in_and_pale_hand_blue_cord_boost_reletter_GeorgiaBold_with_original_painted_flourishes",
+  "spend": 0,
+  "heroBox": [
+    554,
+    0,
+    1246,
+    708
+  ],
+  "explorer": {
+    "source": "hos_005_thumb_A_one_tight_band_v02.jpg",
+    "box": [
+      88,
+      344,
+      318,
+      720
+    ],
+    "height_px": 376,
+    "height_frac": 0.522
+  },
+  "lettering": [
+    {
+      "word": "PALE",
+      "kind": "cream",
+      "size": 88,
+      "box": [
+        170,
+        67,
+        406,
+        144
+      ]
+    },
+    {
+      "word": "COLD",
+      "kind": "gold",
+      "size": 92,
+      "box": [
+        161,
+        149,
+        415,
+        233
+      ]
+    },
+    {
+      "word": "HAND",
+      "kind": "cream",
+      "size": 92,
+      "box": [
+        146,
+        238,
+        429,
+        318
+      ]
+    }
+  ],
+  "ornaments": {
+    "top_scroll_box": [
+      60,
+      24,
+      468,
+      59
+    ],
+    "bottom_scroll_box": [
+      154,
+      328,
+      438,
+      356
+    ]
+  },
+  "clearOfHero": true,
+  "clearOfExplorer": true,
+  "clearOfBadge": true,
+  "scores": {
+    "HOOK": "PASS \u2014 'PALE COLD HAND' (3 words, punch word 'COLD' in gold) names the concrete visible anatomical symptom below the tight linen band on the plate (the pale, cool open hand below the tight ligature while the artery throbs red above it, De Motu Cordis ch. 11, FACT_NOTES_v01 row 26; 005 script Part 04 lines 99 & 112: 'the hand below turns pale and cool; above the band the artery throbs... Below the band, the hand goes pale and cold' and THUMBNAIL_AND_TITLE_RULES.md \u00a71.2 & \u00a72.B.1 'name the thing'), shares zero words with the video title ('The Tied Arm That Proved Your Blood Circulates'), Variant A ('ONE TIGHT BAND'), Variant B v03 ('THE BLOCKED ARTERY'), Variant B v04 ('HIDDEN VEIN VALVES'), Variant B v05 ('TRAPPED UNDER SKIN'), Variant B v06 ('STOPPED RED PULSE'), Variant B v07 ('SWOLLEN BLUE CORDS'), or Variant B v08 ('PINCHED LINEN KNOT'), and uses no vague questions or pronouns.",
+    "BAND": "PASS \u2014 Upper-left lettering band (x=146..429, y=67..318, framed by original painted gold scroll flourishes at y=24..356) sits completely left of the pushed-in hero arm (x=554..1246), above the Explorer's hair (y=344), and clear of the bottom-right duration badge.",
+    "PHONE": "PASS \u2014 Checked on 168x94 preview sheet and 4-way comparison strip: the 1.10x hero push-in and targeted pale-hand, forearm venous-cord, linen-knot, and arterial-glow definition boost make the pale open hand in the foreground, branching blue cords on the forearm, tight linen knot, and stopped red arterial column above it larger and sharper at 168x94 while keeping 'PALE COLD HAND' and the Explorer's face/glasses (52.2% height) immediately legible in under a second."
+  },
+  "previews": [
+    "Selected/hos_005_thumb_B_pale_cold_hand_v09_preview.jpg",
+    "Selected/hos_005_thumb_B_pale_cold_hand_v09_style_sheet.jpg",
+    "Selected/hos_005_thumb_TC_4way_pale_cold_hand_v09_phone_168.jpg"
+  ],
+  "studio": false,
+  "status": "Test & Compare B v09 candidate for 005 (wwcjcFfC-5M, built from existing 005 plate only with 1.10x hero push-in + pale-hand & blue-cord boost, \u00a30). Parked for Chief: thumb B review. No Studio until OK."
+}

@@ -6,7 +6,7 @@
   "vertex_project": "gen-lang-client-0538779324",
   "vertex_location": "us-central1",
   "account": "benoats@googlemail.com",
-  "authority": "Claude desk PR #180 comments 5981064652 + 5981112327 (4 Oct 2026): mint 006 Part 02 on Vertex with £5 lag floor; usable = console_plateau − spend_since − 5 (5981276239)",
+  "authority": "Claude desk PR #180 comments 5981064652 + 5981112327 (4 Oct 2026): mint 006 Part 02 on Vertex with \u00a35 lag floor; usable = console_plateau \u2212 spend_since \u2212 5 (5981276239)",
   "models": {
     "Quality": "veo-3.1-generate-001",
     "Fast": "veo-3.1-fast-generate-001"
@@ -41,7 +41,7 @@
       "op_name": "projects/gen-lang-client-0538779324/locations/us-central1/publishers/google/models/veo-3.1-fast-generate-001/operations/1abc2642-2bb9-4bc5-8dad-a656e2019812",
       "submitted_at": "2026-10-12T14:19:25+00:00",
       "cost_usd": 0.8,
-      "status": "PENDING_UAT",
+      "status": "KEEP",
       "why": null,
       "at": "2026-10-12T14:21:13+00:00",
       "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/01_villa_t1.mp4",
@@ -51,7 +51,8 @@
       "motion": {
         "freeze_events_0p8s": 0
       },
-      "api_s": 109.5
+      "api_s": 109.5,
+      "uat_authority": "Chief #180 6131279209 / 15 Oct sweep"
     },
     {
       "plate": "02_ingenhousz_jars",
@@ -72,7 +73,7 @@
       "op_name": "projects/gen-lang-client-0538779324/locations/us-central1/publishers/google/models/veo-3.1-generate-001/operations/c312cddd-e4b6-4e62-ad05-ccc13badbe12",
       "submitted_at": "2026-10-12T14:19:29+00:00",
       "cost_usd": 1.6,
-      "status": "PENDING_UAT",
+      "status": "KEEP",
       "why": null,
       "at": "2026-10-12T14:21:28+00:00",
       "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/02_ingenhousz_jars_t1.mp4",
@@ -82,7 +83,9 @@
       "motion": {
         "freeze_events_0p8s": 0
       },
-      "api_s": 120.1
+      "api_s": 120.1,
+      "uat_authority": "Chief #180 6131279209 / 15 Oct sweep",
+      "uat_note": "KEEP with top 1.10x crop to exclude ceiling light (Chief #180 6131279209)"
     },
     {
       "plate": "03_plunge_leaf",
@@ -103,7 +106,7 @@
       "op_name": "projects/gen-lang-client-0538779324/locations/us-central1/publishers/google/models/veo-3.1-fast-generate-001/operations/f3e945cd-0f60-4383-8337-66a835eec6df",
       "submitted_at": "2026-10-12T14:21:50+00:00",
       "cost_usd": 0.6,
-      "status": "PENDING_UAT",
+      "status": "KEEP",
       "why": null,
       "at": "2026-10-12T14:23:22+00:00",
       "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/03_plunge_leaf_t1.mp4",
@@ -113,7 +116,8 @@
       "motion": {
         "freeze_events_0p8s": 0
       },
-      "api_s": 93.2
+      "api_s": 93.2,
+      "uat_authority": "Chief #180 6131279209 / 15 Oct sweep"
     },
     {
       "plate": "04_sunny_window",
@@ -134,7 +138,7 @@
       "op_name": "projects/gen-lang-client-0538779324/locations/us-central1/publishers/google/models/veo-3.1-fast-generate-001/operations/05011cab-31d7-40e0-9ccc-541d494fe01e",
       "submitted_at": "2026-10-12T14:24:19+00:00",
       "cost_usd": 0.6,
-      "status": "PENDING_UAT",
+      "status": "KEEP",
       "why": null,
       "at": "2026-10-12T14:26:04+00:00",
       "file": "02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/04_sunny_window_t1.mp4",
@@ -144,7 +148,8 @@
       "motion": {
         "freeze_events_0p8s": 0
       },
-      "api_s": 106.3
+      "api_s": 106.3,
+      "uat_authority": "Chief #180 6131279209 / 15 Oct sweep"
     }
   ],
   "stills": [

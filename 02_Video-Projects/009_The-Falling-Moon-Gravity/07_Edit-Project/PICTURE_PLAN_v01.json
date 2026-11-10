@@ -1,0 +1,133 @@
+{
+  "film": "009_The-Falling-Moon-Gravity",
+  "written": "2026-10-15",
+  "task": "J0261 (OWB queue, repo hos): plate boards from the locked VO; mint nothing; parked for Chief's price pass",
+  "shot_list": "07_Edit-Project/SHOT_LIST_v01.md",
+  "vo": "02_Voiceover/VO_TAKES_KEEP.json status LOCKED v01 (Chief KEEP, desk #180 comment 6101629662, 11 Oct)",
+  "readings": {
+    "flow_credits_left": 23730,
+    "flow_read_at": "2026-10-15T12:58:32Z",
+    "flow_note": "ai_spend record by cursor, J0279 Germs thumb still. No Flow spend logged after this reading.",
+    "vertex_promo_gbp": 71.02,
+    "vertex_read_at": "2026-10-15T07:30:31Z",
+    "vertex_margin_gbp": 1.0,
+    "vertex_usable_gbp": 70.02,
+    "vertex_note": "Google Developer Program monthly credit, all Available. Free Trial is £0. Jobs stop at a £1 margin on this reading. No Vertex spend logged after it."
+  },
+  "rates": {
+    "flow_credits_per_take": {
+      "Quality": 100,
+      "Fast": 10
+    },
+    "vertex_usd_per_s": {
+      "Quality": 0.2,
+      "Fast": 0.1
+    },
+    "usd_per_still": 0.039,
+    "gbp_per_usd_planning": 0.8,
+    "takes_per_keep_005": {
+      "Quality": 2.59,
+      "Fast": 1.96
+    },
+    "stills_per_plate_005": 2.28
+  },
+  "vo_film_total_s": 518.4,
+  "totals": {
+    "rows": 90,
+    "mints": 89,
+    "Quality": 58,
+    "Fast": 31,
+    "reuse": 1,
+    "added": 35,
+    "explorer": 2,
+    "flow_credits_try1": 6110,
+    "flow_credits_expected": 15642,
+    "vertex_try1_gbp": 81.6,
+    "vertex_expected_gbp": 206.62
+  },
+  "per_part": [
+    {
+      "part": 1,
+      "rows": 14,
+      "Quality": 7,
+      "Fast": 7,
+      "reuse": 0,
+      "added": 4,
+      "flow_credits_try1": 770,
+      "flow_credits_expected": 1953,
+      "vertex_try1_gbp": 11.68,
+      "vertex_expected_gbp": 28.57
+    },
+    {
+      "part": 2,
+      "rows": 18,
+      "Quality": 16,
+      "Fast": 2,
+      "reuse": 0,
+      "added": 6,
+      "flow_credits_try1": 1620,
+      "flow_credits_expected": 4184,
+      "vertex_try1_gbp": 17.28,
+      "vertex_expected_gbp": 45.47
+    },
+    {
+      "part": 3,
+      "rows": 15,
+      "Quality": 7,
+      "Fast": 8,
+      "reuse": 0,
+      "added": 6,
+      "flow_credits_try1": 780,
+      "flow_credits_expected": 1973,
+      "vertex_try1_gbp": 12.0,
+      "vertex_expected_gbp": 29.45
+    },
+    {
+      "part": 4,
+      "rows": 22,
+      "Quality": 11,
+      "Fast": 11,
+      "reuse": 0,
+      "added": 10,
+      "flow_credits_try1": 1210,
+      "flow_credits_expected": 3069,
+      "vertex_try1_gbp": 19.52,
+      "vertex_expected_gbp": 48.15
+    },
+    {
+      "part": 5,
+      "rows": 21,
+      "Quality": 17,
+      "Fast": 3,
+      "reuse": 1,
+      "added": 9,
+      "flow_credits_try1": 1730,
+      "flow_credits_expected": 4463,
+      "vertex_try1_gbp": 21.12,
+      "vertex_expected_gbp": 54.98
+    }
+  ],
+  "all_on_flow_credits_expected": 15642,
+  "all_on_vertex_gbp_expected": 206.62,
+  "fits_now": {
+    "flow": true,
+    "vertex": false
+  },
+  "departures_from_shot_list": [
+    "Part 02 cart_road (shot-list 02-02, a named cut-first cutaway) is inside 02_newton_arrives: the sentence is one journey, not two plates.",
+    "06_old_newton_tells sits before the orchard, because the locked VO tells the story that way.",
+    "12_still_up_there closes Part 02, where 'still up there, night after night' is said. Part 03 opens on 01_really_falling.",
+    "04_quart_pot is Quality. The shot list said Fast, and the picture is candlelit.",
+    "Fast prompts are non-emissive, including the cannon shots (no muzzle flash) and the parchment cards (matte ink).",
+    "The eyepiece beat (shot-list 05_right_on_time) stays inside 04_comet_1758. 'It has carried his name ever since' is 1.56 s, under a plate.",
+    "02_apple_and_moon opens on 'So why doesn't it ever hit us?' so the apple line (2.31 s) is not its own plate.",
+    "10_explorer_bench is its own plate on 'it is falling towards you', after the dusk orchard and before the table reuse."
+  ],
+  "price_pass_questions": [
+    "All-Flow expected credits against the 15 Oct reading, and whether Quality stays on Flow.",
+    "Which added continuation rows become reuses of a KEEP clip instead of a second mint. Do not loop or freeze.",
+    "Which non-hero Quality rows can move to Fast: farmhouse dawn, the cannon-world reveal, the spray-paint wall, the one-law diagram, the cup-to-planets pull-out, the clay hand-off. Faces, candles, the Moon at night, the comet, water, space, the glowing orbit trail and the three Short frame-0 plates stay Quality.",
+    "Whether the parchment teach rows (pull heights, orbit arrows, weaker-with-distance, sixty Earths, the dot square, the station curve) become £0 code graphics instead of Fast mints, as on 008 v03.",
+    "Vertex does not fit the whole film on the usable promo balance. Flow-first is the split this reading supports, if the price pass agrees."
+  ]
+}

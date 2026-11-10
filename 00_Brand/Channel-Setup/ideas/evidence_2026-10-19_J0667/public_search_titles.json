@@ -1,0 +1,264 @@
+{
+ "pulled": "2026-10-19",
+ "source": "YouTube GB search results and autocomplete; public, no login. Not vidIQ.",
+ "queries": {
+  "How a Misfolded Protein Spreads Disease Without Any DNA": {
+   "suggest": [
+    "how protein folding occurs",
+    "where are proteins synthesized inside the cell"
+   ],
+   "search": [
+    {
+     "id": "ESC3CSApNnk",
+     "title": "CHAPERONES AND MISFOLDED PROTEINS",
+     "channel": "Neural Academy",
+     "views": "186,821 views",
+     "age": "7 yr ago",
+     "length": "4:11"
+    },
+    {
+     "id": "AkN16QDCClg",
+     "title": "Prions-What are they ? Protein Misfolding Mechanism",
+     "channel": "Hussain Biology",
+     "views": "221,581 views",
+     "age": "9 yr ago",
+     "length": "5:22"
+    },
+    {
+     "id": "0wisn9yK_AI",
+     "title": "Prions: The Protein That Infects Without DNA and Destroys the Brain",
+     "channel": "Wiki Wisdom",
+     "views": "2 views",
+     "age": "4 mo ago",
+     "length": "11:52"
+    },
+    {
+     "id": "eZiHrD4PsjQ",
+     "title": "Misfolded Proteins: The Core Problem in Neurodegenerative Disease",
+     "channel": "PennInstituteonAging",
+     "views": "6,404 views",
+     "age": "11 yr ago",
+     "length": "2:42"
+    },
+    {
+     "id": "P_fHJIYENdI",
+     "title": "AlphaFold - The Most Useful Thing AI Has Ever Done",
+     "channel": "Veritasium",
+     "views": "10,974,682 views",
+     "age": "1 yr ago",
+     "length": "24:52"
+    },
+    {
+     "id": "hok2hyED9go",
+     "title": "Protein Structure and Folding",
+     "channel": "Amoeba Sisters",
+     "views": "3,522,843 views",
+     "age": "8 yr ago",
+     "length": "7:46"
+    },
+    {
+     "id": "VQ3NbhFMfH0",
+     "title": "The Deadliest Protein: How Prions Devour the Brain (and Why We Can't Stop Them Yet)",
+     "channel": "FAQ Shack",
+     "views": "68 views",
+     "age": "6 mo ago",
+     "length": "7:40"
+    },
+    {
+     "id": "yeVrB84ijEE",
+     "title": "This Isn’t a Living Thing… So How Does It Spread?  #science   #biology   #prionsensemble #animation",
+     "channel": "PonderScale",
+     "views": "68 views",
+     "age": "5 days ago",
+     "length": "12:19"
+    }
+   ]
+  },
+  "How Crushed Yeast Proved Life Is Powered by Molecular Locks": {
+   "suggest": [],
+   "search": [
+    {
+     "id": "DimaNfvIY7U",
+     "title": "The History of Yeast | The Invisible Worker Science Finally Learned to See",
+     "channel": "Food Empire History",
+     "views": "68 views",
+     "age": "2 wk ago",
+     "length": "21:07"
+    },
+    {
+     "id": "IxvcJo9hTnI",
+     "title": "The Science of Yeast",
+     "channel": "VictorBakesScience",
+     "views": "4,932 views",
+     "age": "13 yr ago",
+     "length": "4:00"
+    }
+   ]
+  },
+  "How a Soap-Bubble Skin Two Molecules Thick Keeps Cells Alive": {
+   "suggest": [
+    "if a soap bubble expands the pressure inside the bubble",
+    "why are bubbles formed in the soap solution",
+    "how bubbles are formed from soap"
+   ],
+   "search": [
+    {
+     "id": "YnyYsEBJ80I",
+     "title": "How Soap Works - 3D Animation",
+     "channel": "L-gic",
+     "views": "514,043 views",
+     "age": "4 yr ago",
+     "length": "1:06"
+    },
+    {
+     "id": "MQwe8lLjJFk",
+     "title": "How Do Bubbles Form from Soap?",
+     "channel": "Explaining Everything",
+     "views": "3,744 views",
+     "age": "1 yr ago",
+     "length": "8:12"
+    },
+    {
+     "id": "uqM-HLSbf5Y",
+     "title": "The basic science behind bubbles",
+     "channel": "the bumbling biochemist",
+     "views": "6,685 views",
+     "age": "3 yr ago",
+     "length": "4:32"
+    },
+    {
+     "id": "FVj1JbHPURM",
+     "title": "The Real Reason Soap Bars Don't Dissolve Like Bubbles",
+     "channel": "Stick guy",
+     "views": "3 views",
+     "age": "2 wk ago",
+     "length": "7:34"
+    },
+    {
+     "id": "pKWtoPt_Y_E",
+     "title": "How does soap work? (3D Animation)",
+     "channel": "ScienceWorld",
+     "views": "105,819 views",
+     "age": "5 yr ago",
+     "length": "2:46"
+    },
+    {
+     "id": "6-Ub_r_GFZY",
+     "title": "The Science of Bubbles (Full Science Documentary) | Spark",
+     "channel": "Spark",
+     "views": "696,989 views",
+     "age": "9 yr ago",
+     "length": "58:55"
+    },
+    {
+     "id": "NjZDTiV2s_w",
+     "title": "Soap Micelles Formation - Science",
+     "channel": "Elearnin",
+     "views": "462,899 views",
+     "age": "14 yr ago",
+     "length": "1:53"
+    },
+    {
+     "id": "EK7IsJ2eFrg",
+     "title": "The Science of Soap",
+     "channel": "cleaninstitute",
+     "views": "63,492 views",
+     "age": "10 yr ago",
+     "length": "2:42"
+    }
+   ]
+  },
+  "How Sausage Casings and a Tin Can Built the First Artificial Kidney": {
+   "suggest": [],
+   "search": [
+    {
+     "id": "3pn4ArWPK7Q",
+     "title": "He Built an Artificial Kidney Using Sausage Casings — And Changed Medicine Forever",
+     "channel": "Medicine, Engineered",
+     "views": "7 views",
+     "age": "9 days ago",
+     "length": "19:31"
+    },
+    {
+     "id": "NwTo9ODzr7E",
+     "title": "How Did Humans Invent Dialysis? (The Artificial Kidney)",
+     "channel": "Suho Pulse",
+     "views": "116 views",
+     "age": "3 wk ago",
+     "length": "11:48"
+    },
+    {
+     "id": "fWcxpfnlkSE",
+     "title": "Artificial Kidney: Born From Sausage Skins",
+     "channel": "Musedrops",
+     "views": "6 views",
+     "age": "7 mo ago",
+     "length": "3:45"
+    }
+   ]
+  },
+  "How Giant Trees Pull Water 100 Metres High Without a Pump": {
+   "suggest": [
+    "how to get water up a hill without a pump"
+   ],
+   "search": [
+    {
+     "id": "lEU1xC7nUlw",
+     "title": "How Trees Pull Water 100 Metres Up Without a Pump",
+     "channel": "Some Guy Explains",
+     "views": "3 views",
+     "age": "2 wk ago",
+     "length": "6:49"
+    },
+    {
+     "id": "eq6DPy2Y9k0",
+     "title": "How do trees lift water hundreds of feet up without a pump?",
+     "channel": "Simple Things - Surprising Histories",
+     "views": "35,051 views",
+     "age": "3 days ago",
+     "length": "4:49"
+    },
+    {
+     "id": "_AnMg9D52oE",
+     "title": "How Trees Lift Water 100 Meters Without a Pump! 🌲 🤔",
+     "channel": "Smart Time 𝗟𝗮𝗽𝘀𝗲",
+     "views": "36 views",
+     "age": "12 days ago",
+     "length": "0:41"
+    },
+    {
+     "id": "5FAInQFvqTk",
+     "title": "How Do Trees Lift Water Without a Pump?",
+     "channel": "First Principles",
+     "views": "74 views",
+     "age": "8 days ago",
+     "length": "4:22"
+    },
+    {
+     "id": "mnTH-dWMM14",
+     "title": "How TREES Lift Water 100m HIGH Without BOILING! ?",
+     "channel": "OmniScient World",
+     "views": "115 views",
+     "age": "6 mo ago",
+     "length": "5:11"
+    },
+    {
+     "id": "BickMFHAZR0",
+     "title": "How Trees Bend the Laws of Physics",
+     "channel": "Veritasium",
+     "views": "4,971,012 views",
+     "age": "13 yr ago",
+     "length": "7:23"
+    },
+    {
+     "id": "089tWHQbXIU",
+     "title": "How Do Trees Lift Water 100 Metres Up Without a Pump? | Ink & Wonder",
+     "channel": "Ink & Wonder",
+     "views": "2 views",
+     "age": "6 days ago",
+     "length": "5:39"
+    }
+   ]
+  }
+ }
+}

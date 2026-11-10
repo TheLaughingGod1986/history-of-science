@@ -1,0 +1,191 @@
+{
+ "pulled": "2026-10-15",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "pavlov",
+  "classical conditioning",
+  "behavior"
+ ],
+ "autocomplete": {
+  "pavlov": [
+   "pavlov's dog",
+   "pavlov vr",
+   "pavlov's dog julia",
+   "pavlova recipe",
+   "pavlov's dog live",
+   "pavlov shack",
+   "pavlov",
+   "pavlov's dog pampered menial",
+   "pavlovic",
+   "pavlov's dog band"
+  ],
+  "classical conditioning": [
+   "classical conditioning",
+   "classical conditioning theory of pavlov",
+   "classical conditioning theory of learning",
+   "classical conditioning theory",
+   "classical conditioning vs operant conditioning",
+   "classical conditioning examples",
+   "classical conditioning experiment",
+   "classical conditioning and operant conditioning",
+   "classical conditioning psychology",
+   "classical conditioning the office"
+  ],
+  "behavior": [
+   "behavior panel",
+   "behavior card day",
+   "behavior chart day",
+   "behavioral arts",
+   "behavioral interview",
+   "behavioral finance",
+   "behavioral interview questions and answers",
+   "behaviorism learning theory",
+   "behavioral psychology",
+   "behavior"
+  ]
+ },
+ "sharedTitleWords": [
+  "how to",
+  "to change",
+  "change your",
+  "your behavior"
+ ],
+ "neighbours": [
+  {
+   "id": "xp0O2vi8DX4",
+   "title": "How to motivate yourself to change your behavior | Tali Sharot | TEDxCambridge",
+   "channel": "TEDx Talks",
+   "views": "17,536,533 views",
+   "age": "11 yr ago",
+   "length": "16:49",
+   "tier": 1,
+   "viewCount": 17536533,
+   "foundBy": "behavior",
+   "onTopic": true
+  },
+  {
+   "id": "r9LCwI5iErE",
+   "title": "The transformative power of classical music | Benjamin Zander | TED",
+   "channel": "TED",
+   "views": "8,387,055 views",
+   "age": "18 yr ago",
+   "length": "20:44",
+   "tier": 1,
+   "viewCount": 8387055,
+   "foundBy": "ted-ed classical conditioning",
+   "onTopic": true
+  },
+  {
+   "id": "g09BQes-B7E",
+   "title": "How brain parasites change their host's behavior - Jaap de Roode",
+   "channel": "TED-Ed",
+   "views": "4,821,015 views",
+   "age": "11 yr ago",
+   "length": "5:14",
+   "tier": 1,
+   "viewCount": 4821015,
+   "foundBy": "ted-ed behavior",
+   "onTopic": true
+  },
+  {
+   "id": "H6LEcM0E0io",
+   "title": "The difference between classical and operant conditioning - Peggy Andover",
+   "channel": "TED-Ed",
+   "views": "3,805,672 views",
+   "age": "13 yr ago",
+   "length": "4:13",
+   "tier": 1,
+   "viewCount": 3805672,
+   "foundBy": "ted-ed pavlov",
+   "onTopic": true
+  },
+  {
+   "id": "m9Pg4K1ZKws",
+   "title": "The effect of trauma on the brain and how it affects behaviors | John Rigg | TEDxAugusta",
+   "channel": "TEDx Talks",
+   "views": "2,764,550 views",
+   "age": "11 yr ago",
+   "length": "28:02",
+   "tier": 1,
+   "viewCount": 2764550,
+   "foundBy": "behavior ted",
+   "onTopic": true
+  },
+  {
+   "id": "tPBFVIxnbDw",
+   "title": "How to change your behavior for the better | Dan Ariely",
+   "channel": "TED",
+   "views": "619,504 views",
+   "age": "6 yr ago",
+   "length": "15:14",
+   "tier": 1,
+   "viewCount": 619504,
+   "foundBy": "behavior ted",
+   "onTopic": true
+  },
+  {
+   "id": "dgCvNSQ82Iw",
+   "title": "Pavlovian reactions aren't just for dogs - Benjamin N. Witts",
+   "channel": "TED-Ed",
+   "views": "168,875 views",
+   "age": "13 yr ago",
+   "length": "3:54",
+   "tier": 1,
+   "viewCount": 168875,
+   "foundBy": "ted-ed pavlov",
+   "onTopic": true
+  },
+  {
+   "id": "b2tcLJWNTWM",
+   "title": "How to Meet Your Child's Difficult Behavior with Compassion | Yvonne Newbold | TED",
+   "channel": "TED",
+   "views": "73,994 views",
+   "age": "3 yr ago",
+   "length": "17:20",
+   "tier": 1,
+   "viewCount": 73994,
+   "foundBy": "behavior ted",
+   "onTopic": true
+  },
+  {
+   "id": "gwf5Xy5p_DI",
+   "title": "Ethology and animal behavior",
+   "channel": "Khan Academy",
+   "views": "62,302 views",
+   "age": "9 yr ago",
+   "length": "11:25",
+   "tier": 2,
+   "viewCount": 62302,
+   "foundBy": "khan academy behavior",
+   "onTopic": true
+  },
+  {
+   "id": "eUsVH8NogSo",
+   "title": "Psychology - Classical Conditioning",
+   "channel": "Cognito",
+   "views": "9,193 views",
+   "age": "5 mo ago",
+   "length": "6:31",
+   "tier": 2,
+   "viewCount": 9193,
+   "foundBy": "ted-ed pavlov",
+   "onTopic": true
+  },
+  {
+   "id": "hdldPFZzta8",
+   "title": "Why Knowing What’s Healthy isn’t Enough for Behavior Change  | Astghik Atanyan | TEDxAUA",
+   "channel": "TEDx Talks",
+   "views": "1,781 views",
+   "age": "1 mo ago",
+   "length": "22:50",
+   "tier": 1,
+   "viewCount": 1781,
+   "foundBy": "behavior ted",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 5,
+ "gate": "PASS",
+ "hasTed": true,
+ "failedQueries": []
+}

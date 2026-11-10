@@ -1,0 +1,100 @@
+{
+  "film": "002",
+  "video": "AL_-qlWko_g",
+  "job": "J0488",
+  "replaces": "hos_002_thumb_C_empty_on_purpose_v05.jpg (27 Sep flat Arial Black sans-serif 'LEFT EMPTY ON PURPOSE', no Explorer, no flourishes, unpushed 24.7%-width slot)",
+  "variant": "B v06 (and T&C slot C replacement; pairs with J0442 'PREDICTED BEFORE FOUND' and J0374 'THE MISSING ELEMENT')",
+  "maker": "gemini",
+  "hook": "EMPTY ON PURPOSE",
+  "punch": "EMPTY",
+  "jpg": "Selected/hos_002_thumb_B_empty_on_purpose_v06.jpg",
+  "sha256": "34b3fa2053e596c7811f39831d5ecfaec2c8236c607c81631d2301c270de6294",
+  "bytes": 200406,
+  "plates": [
+    "_stills_v05/hos_002_empty_slot_hero_v01.jpg (1376x768 Flow Nano Banana periodic-table cabinet plate, 1.25x hero push-in crop [272, 72, 1296, 648])",
+    "Selected/hos_002_thumb_A_gallium_live_v02.png (Explorer lower-left at 54.4% frame height + original painted gold scroll flourishes)"
+  ],
+  "method": "existing_002_plates_only_hero_pushin_plus_explorer_and_painted_flourishes_GeorgiaBold",
+  "spend": 0,
+  "heroBox": [
+    634,
+    222,
+    1018,
+    556
+  ],
+  "explorer": {
+    "source": "hos_002_thumb_A_gallium_live_v02.png",
+    "box": [
+      0,
+      331,
+      256,
+      720
+    ],
+    "height_px": 389,
+    "height_frac": 0.54
+  },
+  "lettering": [
+    {
+      "word": "EMPTY",
+      "kind": "gold",
+      "size": 108,
+      "box": [
+        115,
+        51,
+        497,
+        144
+      ]
+    },
+    {
+      "word": "ON",
+      "kind": "cream",
+      "size": 70,
+      "box": [
+        250,
+        138,
+        362,
+        203
+      ]
+    },
+    {
+      "word": "PURPOSE",
+      "kind": "cream",
+      "size": 98,
+      "box": [
+        76,
+        197,
+        535,
+        285
+      ]
+    }
+  ],
+  "ornaments": {
+    "top_scroll_box": [
+      141,
+      15,
+      471,
+      37
+    ],
+    "bottom_scroll_box": [
+      222,
+      289,
+      462,
+      311
+    ]
+  },
+  "clearOfHero": true,
+  "clearOfExplorer": true,
+  "clearOfBadge": true,
+  "scores": {
+    "HOOK": "PASS \u2014 'EMPTY ON PURPOSE' (3 words, punch word 'EMPTY' in gold) names Mendeleev's deliberate blank spaces in the 1869 table (002 script Part 04 'Empty chairs'), shares zero words with the video title ('How Did We Discover the Periodic Table?'), J0442 ('PREDICTED BEFORE FOUND'), or J0374 ('THE MISSING ELEMENT'), and uses no vague questions or pronouns.",
+    "BAND": "PASS \u2014 Upper-left lettering band (x=76..535, y=51..285, framed by 002's original painted gold scroll flourishes) sits completely left of the glowing empty slot (x=634..1018), above the Explorer's hair (y=331), and clear of the bottom-right duration badge.",
+    "PHONE": "PASS \u2014 Checked on 168x94 preview sheet and 4-panel comparison strip: 'EMPTY ON PURPOSE', the glowing periodic-table slot (384x334 px), and the Explorer's face/glasses (54.0% height) all read at a glance at 168x94."
+  },
+  "previews": [
+    "Selected/hos_002_thumb_B_empty_on_purpose_v06_preview.jpg",
+    "Selected/hos_002_thumb_B_empty_on_purpose_v06_style_sheet.jpg",
+    "Selected/hos_002_thumb_TC_empty_on_purpose_v06_phone_168.jpg"
+  ],
+  "studio": false,
+  "status": "Test & Compare B v06 (slot C upgrade) candidate for 002 (AL_-qlWko_g, built from existing 002 plates only, \u00a30). Parked for Chief: thumb B review. No Studio until OK."
+}

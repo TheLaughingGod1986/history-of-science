@@ -1,0 +1,291 @@
+{
+ "film": "006_Trees-Are-Made-Of-Air",
+ "part": 4,
+ "kind": "rough_v01",
+ "job": "J0140",
+ "authority": "Chief J0139/J0140 rulings (#180 6133713891, 6137551906, 6140112141, 6140142639, 14 Oct 20:50Z)",
+ "applied_by": "gemini",
+ "no_new_mints": true,
+ "spend": "none (assembly only)",
+ "assemble_method": "VO-first: board t_s/use_s per plate, hard cuts, 24 fps 1080p, VO padded to part end",
+ "board": "02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/parts/part-04_plates_v01.json",
+ "vo_file": "02_Voiceover/part04_bubbles_in_the_sunlight_v02.mp3",
+ "vo_sha256": "64dea1c0dd63d3fdbbccedef86ee6d8bcf91911f3ca02f4e9665883f32e32ed2",
+ "vo_duration_s": 91.32,
+ "rough_duration_s": 91.917,
+ "picture_s": 91.91666666666667,
+ "rough_path": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/_precheck/part04_rough_v01/hos_006_part04_rough_v01.mp4",
+ "sha256": "fcdcce5fc5cef0d5e95e6438ba83f50cc02667622b57f2d1146bf3677685c85b",
+ "size_mb": 96.68,
+ "proxy_path": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/_precheck/part04_rough_v01/hos_006_part04_rough_v01_uat_proxy.mp4",
+ "proxy_sha256": "e2e637182296f37fe64af16975b235219f420dab2b14772cf9398e7c4a05f3fd",
+ "contact_sheet": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/_precheck/part04_rough_v01/hos_006_part04_rough_v01_contact_sheet.jpg",
+ "not_in_rough": [
+  "side labels / WHO cards / chapter card (edit overlays, added at fine cut)",
+  "music bed and house SFX",
+  "xfades (board 0.35 s)"
+ ],
+ "freeze_events": [],
+ "segments": [
+  {
+   "row": "01_villa",
+   "film_t": 279.78,
+   "timeline_in": 0.0,
+   "timeline_out": 6.0,
+   "frames": 144,
+   "upscale": 1.0,
+   "side_label": "A VILLA NEAR LONDON \u00b7 1779",
+   "source": "01_villa_t1.mp4",
+   "source_path": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/01_villa_t1.mp4",
+   "source_sha256": "a05dadf636ed97cbbd937004072b67ff9af3ded5df578d5c198d3387fe0c3b17",
+   "framing": {
+    "offset": 0.0
+   },
+   "disposition": "KEEP Vertex t1 (Chief, desk #180 6131279209)"
+  },
+  {
+   "row": "02_ingenhousz_jars",
+   "film_t": 285.76,
+   "timeline_in": 6.0,
+   "timeline_out": 13.791666666666666,
+   "frames": 187,
+   "upscale": 1.1,
+   "side_label": "JAN INGENHOUSZ",
+   "source": "02_ingenhousz_jars_t1.mp4",
+   "source_path": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/02_ingenhousz_jars_t1.mp4",
+   "source_sha256": "204e44b293db8587b483aef791113327768b60d84d3385d510fb3a62ee4e6e38",
+   "framing": {
+    "offset": 0.0
+   },
+   "disposition": "KEEP Vertex t1, top ceiling light cropped out per Chief note (#180 6131279209)"
+  },
+  {
+   "row": "03_plunge_leaf",
+   "film_t": 293.58,
+   "timeline_in": 13.791666666666666,
+   "timeline_out": 18.333333333333332,
+   "frames": 109,
+   "upscale": 1.0,
+   "side_label": null,
+   "source": "03_plunge_leaf_t1.mp4",
+   "source_path": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/03_plunge_leaf_t1.mp4",
+   "source_sha256": "609a0da61f0d83cc3f68f6d6f233b938b657e585a0cccf8fe0b8dbc83989dadd",
+   "framing": {
+    "offset": 0.0
+   },
+   "disposition": "KEEP Vertex t1 (Chief, desk #180 6131279209)"
+  },
+  {
+   "row": "04_sunny_window",
+   "film_t": 298.12,
+   "timeline_in": 18.333333333333332,
+   "timeline_out": 22.875,
+   "frames": 109,
+   "upscale": 1.0,
+   "side_label": null,
+   "source": "04_sunny_window_t1.mp4",
+   "source_path": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/04_sunny_window_t1.mp4",
+   "source_sha256": "33612a9b8c551ed07744dd78a6ce5f33b63c71966bac11b983dce8deb226acf8",
+   "framing": {
+    "offset": 0.0
+   },
+   "disposition": "KEEP Vertex t1 (Chief, desk #180 6131279209)"
+  },
+  {
+   "row": "05_bubbles_macro",
+   "film_t": 302.64,
+   "timeline_in": 22.875,
+   "timeline_out": 27.0,
+   "frames": 99,
+   "upscale": 1.5,
+   "side_label": "BUBBLES",
+   "source": "05_bubbles_macro_t1.mp4",
+   "source_path": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/05_bubbles_macro_t1.mp4",
+   "source_sha256": "0596f3b0287f79d36177a1e0c835c8184e001995c7ef0473e903568638851704",
+   "framing": {
+    "offset": 0.0
+   },
+   "disposition": "KEEP Flow t1 (Chief, desk #180 6137551906)"
+  },
+  {
+   "row": "06_collect_blaze",
+   "film_t": 306.76,
+   "timeline_in": 27.0,
+   "timeline_out": 34.875,
+   "frames": 189,
+   "upscale": 1.6,
+   "side_label": "OXYGEN (on the blaze)",
+   "source": "06_collect_blaze_t3.mp4",
+   "source_path": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/06_collect_blaze_t3.mp4",
+   "source_sha256": "69e790e4e14c530f98f07986c35d294e89b6c2d0905d3e513e611d3e4531dd41",
+   "framing": {
+    "offset": 0.0
+   },
+   "disposition": "KEEP (Flow Fast t3, bottom 6% trimmed to exclude frame-edge seam (Acting-Chief ruling 14 Oct 20:50Z item 1; Chief 15 Oct sweep #180 IC_kwDOUEPCF88AAAABcNg8Bw))"
+  },
+  {
+   "row": "07_priestley_callback",
+   "film_t": 314.64,
+   "timeline_in": 34.875,
+   "timeline_out": 41.75,
+   "frames": 165,
+   "upscale": 1.0,
+   "side_label": null,
+   "source": "11_candle_tall_t1.mp4",
+   "source_path": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part03/raw/v01/11_candle_tall_t1.mp4",
+   "source_sha256": "3fe88ccf83a1eb65bbf59ee8bf75b605f72e03dc7204c6b6cef84a6ffbd06d28",
+   "framing": {
+    "offset": 0.0
+   },
+   "disposition": "REUSE window 0.00-6.90 s of P3:11_candle_tall (board reuse_of)"
+  },
+  {
+   "row": "08_explorer_shade",
+   "film_t": 321.54,
+   "timeline_in": 41.75,
+   "timeline_out": 48.958333333333336,
+   "frames": 173,
+   "upscale": 1.5,
+   "side_label": "NO LIGHT, NO BUBBLES",
+   "source": "08_explorer_shade_t2.mp4",
+   "source_path": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/08_explorer_shade_t2.mp4",
+   "source_sha256": "692c536419f09d0369730dd47b4e071253abbf5f6f16feb78cc525f8b356419f",
+   "framing": {
+    "offset": 0.0
+   },
+   "disposition": "KEEP (Flow Quality t2 (Chief ruling #180 6137551906; Chief 15 Oct sweep #180 IC_kwDOUEPCF88AAAABcNg8Bw))"
+  },
+  {
+   "row": "09_bubbles_again",
+   "film_t": 328.72,
+   "timeline_in": 48.958333333333336,
+   "timeline_out": 52.375,
+   "frames": 82,
+   "upscale": 1.5,
+   "side_label": null,
+   "source": "05_bubbles_macro_t1.mp4",
+   "source_path": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/05_bubbles_macro_t1.mp4",
+   "source_sha256": "0596f3b0287f79d36177a1e0c835c8184e001995c7ef0473e903568638851704",
+   "framing": {
+    "offset": 4.2
+   },
+   "disposition": "REUSE window 4.20-7.62 s of P4:05_bubbles_macro (board reuse_of)"
+  },
+  {
+   "row": "10_only_green",
+   "film_t": 332.14,
+   "timeline_in": 52.375,
+   "timeline_out": 56.958333333333336,
+   "frames": 110,
+   "upscale": 1.5,
+   "side_label": "ONLY THE GREEN PARTS",
+   "source": "10_only_green_t2.mp4",
+   "source_path": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/10_only_green_t2.mp4",
+   "source_sha256": "cfd7a02a6d3f203e9528feef1bcfe1fc9f0e7a5a482a83f791de77daec55334d",
+   "framing": {
+    "offset": 0.0
+   },
+   "disposition": "KEEP Flow t2 (Chief, desk #180 6136917197)"
+  },
+  {
+   "row": "11_night_jars",
+   "film_t": 336.74,
+   "timeline_in": 56.958333333333336,
+   "timeline_out": 64.79166666666667,
+   "frames": 188,
+   "upscale": 1.5,
+   "side_label": "AT NIGHT, LIKE US",
+   "source": "11_night_jars_t1.mp4",
+   "source_path": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/11_night_jars_t1.mp4",
+   "source_sha256": "3461e7512bc3bf61018f42c32cb47dbc55ecf80fd8134a48541f80c9a3e28588",
+   "framing": {
+    "offset": 0.0
+   },
+   "disposition": "KEEP Flow t1 (Chief, desk #180 6137551906)"
+  },
+  {
+   "row": "12_shutters_open",
+   "film_t": 344.58,
+   "timeline_in": 64.79166666666667,
+   "timeline_out": 70.20833333333333,
+   "frames": 130,
+   "upscale": 1.5,
+   "side_label": null,
+   "source": "12_shutters_open_t1.mp4",
+   "source_path": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/12_shutters_open_t1.mp4",
+   "source_sha256": "fc339534bf90405afa369213590f9f9e674eedb7ac11b1f57b7569fbc7885a94",
+   "framing": {
+    "offset": 0.0
+   },
+   "disposition": "KEEP Flow t1 (Chief, desk #180 6137551906)"
+  },
+  {
+   "row": "13_sun_canopy",
+   "film_t": 350.0,
+   "timeline_in": 70.20833333333333,
+   "timeline_out": 73.58333333333333,
+   "frames": 81,
+   "upscale": 1.5,
+   "side_label": null,
+   "source": "13_sun_canopy_t1.mp4",
+   "source_path": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/13_sun_canopy_t1.mp4",
+   "source_sha256": "43500d427cb1667ce98d00b6e1a499e833b71bb5e91897b510eb3f9c127d45fb",
+   "framing": {
+    "offset": 0.0
+   },
+   "disposition": "KEEP (Flow t1 (J0140 batch 2; Chief 15 Oct sweep #180 IC_kwDOUEPCF88AAAABcNg8Bw))"
+  },
+  {
+   "row": "14_leaf_glow",
+   "film_t": 353.38,
+   "timeline_in": 73.58333333333333,
+   "timeline_out": 81.45833333333333,
+   "frames": 189,
+   "upscale": 1.5,
+   "side_label": "PHOTOSYNTHESIS (on the word, +4.6 s)",
+   "source": "14_leaf_glow_t1.mp4",
+   "source_path": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/14_leaf_glow_t1.mp4",
+   "source_sha256": "43b24863448a6860acf0a7ae798af23d734a906da261e8bb4aacd95bb05eaf52",
+   "framing": {
+    "offset": 0.0
+   },
+   "disposition": "KEEP (Flow t1 (J0140 batch 2; Chief 15 Oct sweep #180 IC_kwDOUEPCF88AAAABcNg8Bw))"
+  },
+  {
+   "row": "15_leaf_turns_sun",
+   "film_t": 361.24,
+   "timeline_in": 81.45833333333333,
+   "timeline_out": 84.375,
+   "frames": 70,
+   "upscale": 1.5,
+   "side_label": null,
+   "source": "15_leaf_turns_sun_t1.mp4",
+   "source_path": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/15_leaf_turns_sun_t1.mp4",
+   "source_sha256": "c69d74e82e593507617d728567009110ea7cfff7d9e5a465f3854f03586ac7ae",
+   "framing": {
+    "offset": 0.0
+   },
+   "disposition": "KEEP (Flow t1 (J0140 batch 2; Chief 15 Oct sweep #180 IC_kwDOUEPCF88AAAABcNg8Bw))"
+  },
+  {
+   "row": "16_pores_question",
+   "film_t": 364.16,
+   "timeline_in": 84.375,
+   "timeline_out": 91.91666666666667,
+   "frames": 181,
+   "upscale": 1.5,
+   "side_label": "WHAT GOES IN?",
+   "source": "16_pores_question_t1.mp4",
+   "source_path": "/Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/raw/v01/16_pores_question_t1.mp4",
+   "source_sha256": "968dcaca90963cd6cda723cf19545c7b1f195553587ecd200b1c887c857269f1",
+   "framing": {
+    "offset": 0.0
+   },
+   "disposition": "KEEP (Flow t1 (J0140 batch 2; Chief 15 Oct sweep #180 IC_kwDOUEPCF88AAAABcNg8Bw))"
+  }
+ ],
+ "picture_qa_rc": 1,
+ "picture_qa_stdout": "FAIL   0:51 row 09_bubbles_again 05_bubbles_macro_t1.mp4: reuse: same stretch as 0:25 (give it a new stretch, or a new render)\nFAIL   1:01 row 11_night_jars 11_night_jars_t1.mp4: near-black: mean 19.95, p95 118.0\npicture QA FAIL: 2 of 16 cuts fail, 0 to look at -> /Users/benjaminoats/_desk/scratch/gemini-j0140-wt/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/_desk/006/part04_rough_v01/PICTURE_QA.md, /Users/benjaminoats/_desk/scratch/gemini-j0140-wt/02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/_desk/006/part04_rough_v01/picture_qa_review.jpg",
+ "rough_uat_status": "KEEP",
+ "rough_uat_authority": "Chief 15 Oct sweep (#180 IC_kwDOUEPCF88AAAABcNg8Bw)"
+}

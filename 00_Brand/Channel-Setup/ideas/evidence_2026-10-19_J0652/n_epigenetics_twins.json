@@ -1,0 +1,132 @@
+{
+ "pulled": "2026-10-19",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "what is epigenetics identical twins",
+  "mary lyon x inactivation"
+ ],
+ "autocomplete": {
+  "what is epigenetics identical twins": [
+   "what is epigenetics"
+  ],
+  "mary lyon x inactivation": []
+ },
+ "sharedTitleWords": [
+  "nancy segal",
+  "segal tedxmanhattanbeach"
+ ],
+ "neighbours": [
+  {
+   "id": "_aAhcNjmvhc",
+   "title": "What is epigenetics? - Carlos Guerrero-Bosagna",
+   "channel": "TED-Ed",
+   "views": "2,454,974 views",
+   "age": "10 yr ago",
+   "length": "5:03",
+   "tier": 1,
+   "viewCount": 2454974,
+   "foundBy": "what is epigenetics identical twins",
+   "onTopic": true
+  },
+  {
+   "id": "JTBg6hqeuTg",
+   "title": "Epigenetics and the influence of our genes | Courtney Griffins | TEDxOU",
+   "channel": "TEDx Talks",
+   "views": "1,133,480 views",
+   "age": "14 yr ago",
+   "length": "18:41",
+   "tier": 1,
+   "viewCount": 1133480,
+   "foundBy": "ted-ed what is epigenetics identical twins",
+   "onTopic": true
+  },
+  {
+   "id": "SrqmuYvk3iQ",
+   "title": "Epigenetics - our bodies' way to change the destiny written in our DNA | Moshe Szyf | TEDxBratislava",
+   "channel": "TEDx Talks",
+   "views": "374,543 views",
+   "age": "10 yr ago",
+   "length": "16:44",
+   "tier": 1,
+   "viewCount": 374543,
+   "foundBy": "what is epigenetics identical twins ted",
+   "onTopic": true
+  },
+  {
+   "id": "c2__1Jrcpv4",
+   "title": "Twins: A window into human nature | Nancy Segal | TEDxManhattanBeach",
+   "channel": "TEDx Talks",
+   "views": "199,748 views",
+   "age": "8 yr ago",
+   "length": "11:43",
+   "tier": 1,
+   "viewCount": 199748,
+   "foundBy": "ted-ed what is epigenetics identical twins",
+   "onTopic": true
+  },
+  {
+   "id": "MD3Fc0XOjWk",
+   "title": "Epigenetics",
+   "channel": "Amoeba Sisters",
+   "views": "1,084,161 views",
+   "age": "5 yr ago",
+   "length": "8:42",
+   "tier": 2,
+   "viewCount": 1084161,
+   "foundBy": "what is epigenetics identical twins",
+   "onTopic": true
+  },
+  {
+   "id": "mMUryFgD25Y",
+   "title": "Thinking Twice About Twins | Alex Armer | TEDxOU",
+   "channel": "TEDx Talks",
+   "views": "24,180 views",
+   "age": "8 yr ago",
+   "length": "7:29",
+   "tier": 1,
+   "viewCount": 24180,
+   "foundBy": "what is epigenetics identical twins ted",
+   "onTopic": true
+  },
+  {
+   "id": "XE6oQgjEyqU",
+   "title": "Epigenetics: Unraveling the Mysteries of Nature & Nurture | Natalia Husby | TEDxUniversityofDelaware",
+   "channel": "TEDx Talks",
+   "views": "10,149 views",
+   "age": "3 yr ago",
+   "length": "8:09",
+   "tier": 1,
+   "viewCount": 10149,
+   "foundBy": "ted-ed what is epigenetics identical twins",
+   "onTopic": true
+  },
+  {
+   "id": "jIMziH5GCvQ",
+   "title": "What twins reveal about the future of human cloning | Nancy Segal | TEDxManhattanBeach",
+   "channel": "TEDx Talks",
+   "views": "2,555 views",
+   "age": "8 mo ago",
+   "length": "10:08",
+   "tier": 1,
+   "viewCount": 2555,
+   "foundBy": "what is epigenetics identical twins ted",
+   "onTopic": true
+  },
+  {
+   "id": "ZYKmM6x0uI8",
+   "title": "Identical Twins Are Not So Identical! | Shaun & Jared Murray | TEDxPeabody Park Youth",
+   "channel": "TEDx Talks",
+   "views": "1,175 views",
+   "age": "2 yr ago",
+   "length": "7:02",
+   "tier": 1,
+   "viewCount": 1175,
+   "foundBy": "what is epigenetics identical twins ted",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 3,
+ "gate": "PASS",
+ "hasTed": true,
+ "failedQueries": []
+}

@@ -29,7 +29,7 @@ EDIT = Path(__file__).resolve().parent
 EVID = EDIT / "_evidence"
 LOG = EDIT / "VERTEX_CREDIT_LOG_v01.json"
 URL = "https://console.cloud.google.com/billing/0124D1-E6EFD6-40F6DA/credits/all?project=gen-lang-client-0538779324"
-FLOOR_GBP = 0.10  # Ben, 12 Oct 2026 14:46: floors to 0, but billing account 0124D1-E6EFD6-40F6DA is a Paid account (could bill the card), so stop at £0.10
+FLOOR_GBP = 1.00  # Ben, 12 Oct 2026 23:51: pool = every Available promo credit (Free Trial + Developer Program monthly, scope "All of Google Cloud Platform" on 0124D1-E6EFD6-40F6DA); floor 0, billing account is Paid, so stop £1 short
 GBP_PER_USD = 0.80  # PICTURE_PLAN_v01.json rates.gbp_per_usd_planning
 
 
@@ -73,6 +73,27 @@ def usable_from_log(extra_usd: float = 0.0) -> tuple[float, float, float, dict]:
     return usable, est, spend, plateau
 
 
+def parse_pool(text: str) -> tuple[float | None, str | None]:
+    """Sum every active credit row (Ben, 12 Oct 2026 23:51): Free Trial and Google Developer Program monthly credits.
+    Active = "Available" or "Expiring in N days"; Used / Expired rows count nothing. The sum is stored under
+    free_trial_remaining_gbp so the lag-aware maths and older logs keep working."""
+    rows = [ln.strip() for ln in text.splitlines() if ln.strip()]
+    total, parts = None, []
+    for i, ln in enumerate(rows):
+        if not (ln == "Free Trial" or ln.startswith("Google Developer Program")):
+            continue
+        cell = " ".join(rows[i + 1:i + 3])
+        act = re.search(r"\bAvailable\b|Expiring in \d+ days?", cell)
+        if not act or re.search(r"\bExpired\b|\bUsed\b", cell):
+            continue
+        m = re.search(r"£([\d,]+\.\d\d)", " ".join(rows[i:i + 8]))
+        if m:
+            amt = float(m.group(1).replace(",", ""))
+            total = (total or 0.0) + amt
+            parts.append(f"{'Free Trial' if ln == 'Free Trial' else 'Dev Program'} £{amt:.2f} {act.group(0)}")
+    return (round(total, 2), "; ".join(parts)) if total is not None else (None, None)
+
+
 def main() -> int:
     label = sys.argv[1] if len(sys.argv) > 1 else datetime.now().strftime("%Y-%m-%d_%H%M")
     EVID.mkdir(exist_ok=True)
@@ -89,21 +110,9 @@ def main() -> int:
             text = page.inner_text("body")
         finally:
             page.close()
-    rows = [ln for ln in text.splitlines() if ln.strip()]
-    remaining, status = None, None
-    for i, ln in enumerate(rows):
-        if ln.strip() == "Free Trial":
-            window = " ".join(rows[i:i + 8])
-            # Active credit reads "Available" or, near its end date, "Expiring in N days" (12 Oct 2026: the trial
-            # ends 11 Nov). Anything else (Expired, Used) is not spendable.
-            act = re.search(r"Available|Expiring in \d+ days?", window)
-            if act and not re.search(r"\bExpired\b|\bUsed\b", window.split("Free Trial")[1][:60] if "Free Trial" in window else ""):
-                m = re.search(r"£([\d,]+\.\d\d)", window)
-                if m:
-                    remaining, status = float(m.group(1).replace(",", "")), act.group(0)
-                    break
+    remaining, status = parse_pool(text)
     if remaining is None:
-        print(f"STOP: could not read the Free Trial row (screenshot {shot})")
+        print(f"STOP: could not read an active credit row (screenshot {shot})")
         return 2
     rec = {"label": label, "at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
            "free_trial_remaining_gbp": remaining, "status": status, "screenshot": shot.name,
@@ -124,7 +133,7 @@ def main() -> int:
     print(
         f"CREDIT free_trial_remaining_gbp={remaining:.2f} status={status} "
         f"plateau={plateau['label']}@{plateau['at']} spend_since_usd={spend:.4f} "
-        f"est_remaining_gbp={est:.2f} floor={FLOOR_GBP:.0f} usable_gbp={usable:.2f} "
+        f"est_remaining_gbp={est:.2f} floor={FLOOR_GBP:.2f} usable_gbp={usable:.2f} "
         f"rate={GBP_PER_USD} shot={shot}"
     )
     return 3 if usable < 0 else 0

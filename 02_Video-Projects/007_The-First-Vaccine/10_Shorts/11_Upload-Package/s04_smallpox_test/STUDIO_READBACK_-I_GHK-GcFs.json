@@ -1,0 +1,55 @@
+{
+  "checkedAt": "2026-10-23T05:15:25.125Z",
+  "shortId": "-I_GHK-GcFs",
+  "longId": null,
+  "title": "What Was the Edward Jenner Experiment?",
+  "channel": "UCXp7HkBIl1LgaznXuZHJyRg",
+  "relatedSet": false,
+  "relatedNote": "007 long not uploaded yet; set Related -> 007 long once it has an id, before Fri 13 Nov 11:30Z",
+  "details": {
+    "radios": [
+      {
+        "text": "Yes, it's Made for Kids. Features like personalised ads and notifications won't be available on videos that are Made for",
+        "checked": "false"
+      },
+      {
+        "text": "No, it's not Made for Kids",
+        "checked": "true"
+      },
+      {
+        "text": "Yes, restrict my video to viewers over 18",
+        "checked": "false"
+      },
+      {
+        "text": "No, don't restrict my video to viewers over 18 only",
+        "checked": "true"
+      },
+      {
+        "text": "Yes, my video includes paid promotion",
+        "checked": "false"
+      },
+      {
+        "text": "No, my video doesn't include paid promotion",
+        "checked": "false"
+      },
+      {
+        "text": "Yes",
+        "checked": "true"
+      },
+      {
+        "text": "No",
+        "checked": "false"
+      },
+      {
+        "text": "Allow video and audio remixing",
+        "checked": "true"
+      },
+      {
+        "text": "Allow only audio remixing",
+        "checked": "false"
+      }
+    ],
+    "saveDisabled": false,
+    "relatedChunk": "Related video None Subtitles"
+  }
+}

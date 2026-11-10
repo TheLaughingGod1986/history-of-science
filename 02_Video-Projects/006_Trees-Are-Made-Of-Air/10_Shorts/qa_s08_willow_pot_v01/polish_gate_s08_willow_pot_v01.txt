@@ -1,0 +1,10 @@
+s01_0     1.4s 11_shoot_in_pot_t1.mp4       ok
+s02_two     4.3s 10_van_helmont_sack_t1.mp4   ok
+s03_planted     7.6s 03_willow_shoot_scale_t1.mp4 ok
+s04_Then,    10.8s 04_lid_rain_t1.mp4           ok
+s05_the    13.3s 08_haul_tree_t1_trim_0to4p8. ok
+s06_A    15.8s 13_tree_vs_pinch_t1.mp4      ok
+s07_and    18.6s 12_pointer_short_t1.mp4      WARN low detail: edge density 0.0368 < film p5 0.0399
+s08_The    20.6s 02_balance_trunk_t1.mp4      ok
+s09_loop    22.9s loop_end_11_shoot_in_pot_t1. ok
+polish gate PASS: 0 of 9 rows failed, 1 to look at -> 02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/qa_s08_willow_pot_v01/polish_gate_s08_willow_pot_v01.json

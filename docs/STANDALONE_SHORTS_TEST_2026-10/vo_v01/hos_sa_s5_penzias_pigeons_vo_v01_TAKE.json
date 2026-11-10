@@ -1,0 +1,58 @@
+{
+  "stem": "hos_sa_s5_penzias_pigeons_vo_v01",
+  "voice": "Ben Orbit Narrator",
+  "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+  "model_id": "eleven_v3",
+  "settings": {
+    "stability": 0.34,
+    "similarity_boost": 0.78,
+    "style": 0.42,
+    "speed": 1.04,
+    "use_speaker_boost": true
+  },
+  "orders": [
+    "6127927589"
+  ],
+  "retake_of": null,
+  "chapters": [
+    {
+      "title": "take",
+      "chars": 296,
+      "duration_s": 22.72
+    }
+  ],
+  "gap_s": 0.7,
+  "spoken_chars": 296,
+  "words": 52,
+  "duration_s": 22.72,
+  "loudness": {
+    "lufs_integrated": -19.3,
+    "mean_volume_db": -22.7,
+    "max_volume_db": -3.7
+  },
+  "sha256_mp3": "dda16077804f748e00d235c4ac5f9105a0b7d3eff33b140ad963271f967d4028",
+  "scribe": {
+    "transcript": "In 1964, the afterglow of the Big Bang was blamed on pigeons. Arno Penzias and Robert Wilson picked up a strange noise in their giant antenna. Pigeons were nesting inside, leaving droppings. But the noise wasn't the pigeons. It came from every direction in the sky, the afterglow of the Big Bang",
+    "script_words": 52,
+    "scribe_words": 52,
+    "match_rate_pct": 100.0,
+    "exact_match": true,
+    "mismatches": []
+  },
+  "vo_check": "PASS",
+  "credits": {
+    "before": {
+      "used": 203598,
+      "limit": 209536,
+      "remaining": 5938
+    },
+    "after": {
+      "used": 203598,
+      "limit": 209536,
+      "remaining": 5938
+    },
+    "counter_delta": 0
+  },
+  "text": "In 1964, the afterglow of the Big Bang was blamed on pigeons. Arno Penzias and Robert Wilson picked up a strange noise in their giant antenna. Pigeons were nesting inside, leaving droppings. But the noise wasn't the pigeons. It came from every direction in the sky: the afterglow of the Big Bang.",
+  "made_at": "2026-10-12T23:05:01+0100"
+}

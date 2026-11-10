@@ -1,0 +1,202 @@
+{
+  "rule": {
+    "low_detail": "FAIL: luma std < 13.44 and edge density < 0.0259 (absolute floor); WARN: luma std < 18.0 or edge density < film p5",
+    "split_panel": "full-height/width seam or gutter",
+    "split_panel_gutter": "gutter counts only with edge density >= 0.01 in the 10% band on both sides",
+    "near_black": "mean < 28.0 or p95 < 50.0",
+    "noise": "grain std > 6 over structure std < 12, and the 8x-downscaled frame under the low-detail floor (std < 13.44 and edge density < 0.0259)",
+    "jitter": "centre-patch phase correlation: reversal against trend or > 0.35 px off trend"
+  },
+  "low_detail_floor": {
+    "std": 13.44,
+    "edge": 0.0259,
+    "calibration": {
+      "video": "025_MarsRobot_full_rough_v02d.mp4",
+      "factor": 1.2,
+      "frames": [
+        {
+          "source": "PIA22223.jpg",
+          "t": 201.0,
+          "std": 12.1,
+          "edge": 0.0223
+        },
+        {
+          "source": "PIA22223.jpg",
+          "t": 216.3,
+          "std": 11.2,
+          "edge": 0.0216
+        },
+        {
+          "source": "PIA22929.jpg",
+          "t": 297.4,
+          "std": 26.54,
+          "edge": 0.5735
+        }
+      ]
+    }
+  },
+  "video": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/hos_004_s06_moseley_atomic_number_v01.mp4",
+  "edge_floor": 0.0345,
+  "verdict": "PASS",
+  "failed": [],
+  "warn": [
+    {
+      "row": "s05_the",
+      "cut": 4,
+      "t": 16.5,
+      "source": "14_nucleus_electrons_v01.mp4",
+      "why": [
+        "low detail: edge density 0.0248 < film p5 0.0345"
+      ]
+    }
+  ],
+  "reviewed_ok": [],
+  "rows": [
+    {
+      "cut": 0,
+      "row": "s01_0",
+      "source": "07_crystal_split_v01.mp4",
+      "t": 2.3,
+      "std": 62.47,
+      "mean": 101.46,
+      "p95": 227.0,
+      "edge": 0.0548,
+      "hf": 8.14,
+      "lf": 58.26,
+      "std8": 60.25,
+      "edge8": 0.3293,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 1,
+      "row": "s02_Element",
+      "source": "09_one_rung_each_v01.mp4",
+      "t": 6.26,
+      "std": 37.72,
+      "mean": 89.11,
+      "p95": 166.0,
+      "edge": 0.0535,
+      "hf": 6.83,
+      "lf": 32.42,
+      "std8": 34.63,
+      "edge8": 0.2715,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 2,
+      "row": "s03_even",
+      "source": "05_xrays_from_metal_v01.mp4",
+      "t": 9.38,
+      "std": 42.83,
+      "mean": 84.93,
+      "p95": 166.0,
+      "edge": 0.0524,
+      "hf": 9.03,
+      "lf": 37.71,
+      "std8": 39.69,
+      "edge8": 0.2676,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 3,
+      "row": "s04_Count",
+      "source": "04_electrons_fire_v01.mp4",
+      "t": 12.99,
+      "std": 56.28,
+      "mean": 106.87,
+      "p95": 227.0,
+      "edge": 0.0532,
+      "hf": 8.59,
+      "lf": 52.29,
+      "std8": 53.96,
+      "edge8": 0.3158,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 4,
+      "row": "s05_the",
+      "source": "14_nucleus_electrons_v01.mp4",
+      "t": 16.5,
+      "std": 55.06,
+      "mean": 101.56,
+      "p95": 206.0,
+      "edge": 0.0248,
+      "hf": 5.76,
+      "lf": 51.52,
+      "std8": 53.35,
+      "edge8": 0.3519,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0248 < film p5 0.0345"
+      ]
+    },
+    {
+      "cut": 5,
+      "row": "s06_The",
+      "source": "02_train_in_tube_v01.mp4",
+      "t": 19.13,
+      "std": 43.15,
+      "mean": 99.58,
+      "p95": 186.0,
+      "edge": 0.065,
+      "hf": 7.62,
+      "lf": 37.32,
+      "std8": 39.96,
+      "edge8": 0.416,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 6,
+      "row": "s07_Mendeleev's",
+      "source": "03_targets_swap_v01.mp4",
+      "t": 21.87,
+      "std": 50.71,
+      "mean": 99.9,
+      "p95": 203.0,
+      "edge": 0.1084,
+      "hf": 10.03,
+      "lf": 41.75,
+      "std8": 45.86,
+      "edge8": 0.5067,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 7,
+      "row": "s08_loop",
+      "source": "loop_end_07_crystal_split_v01.mp4",
+      "t": 24.86,
+      "std": 69.69,
+      "mean": 142.75,
+      "p95": 248.0,
+      "edge": 0.1001,
+      "hf": 10.51,
+      "lf": 63.45,
+      "std8": 66.06,
+      "edge8": 0.4566,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    }
+  ]
+}

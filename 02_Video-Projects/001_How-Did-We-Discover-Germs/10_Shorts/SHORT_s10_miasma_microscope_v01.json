@@ -1,0 +1,168 @@
+{
+  "id": "s10_miasma_microscope",
+  "job": "J0669",
+  "test": "B (search-titled)",
+  "air_date_draft": "2027-01-06",
+  "file": "10_Shorts/hos_001_s10_miasma_microscope_v01.mp4",
+  "sha256": "a4d4f4b1e01600c1abc88f009dad87c523707777d5ddb4c6c42bd636010eaa24",
+  "duration_s": 24.8,
+  "vo_source": "06_Sound-Effects/v08_part02_fx/_vo_from_v07.wav",
+  "vo_span_windows_s": [
+    [
+      23.35,
+      45.2
+    ],
+    [
+      54.35,
+      60.6
+    ]
+  ],
+  "route": "claim-first lift: Suddenly the world has a second population living under your nose \u2014 a civilisation of cells dancing in a bead of liquid. \u2026 The story said: clean the air. Burn herbs. Open windows. Chase the stench. (23.35\u201345.20 s and 54.35\u201360.60 s from Part 02)",
+  "vo_s": 24.357,
+  "words": 65,
+  "max_pause_s": 0.2,
+  "atempo": 1.05,
+  "bed": "hos001_s10_synth_pad_v01.wav (own synthesis, 0 credits)",
+  "bed_gain_db": -22.6,
+  "hook": "TINY WORLD",
+  "hook_layer": {
+    "font_size": 237,
+    "cap_px": 169,
+    "cap_pct": 8.8,
+    "lines": 2,
+    "block_pct": [
+      39.8,
+      60.2
+    ],
+    "widest_pct": 90.6
+  },
+  "who_card": {
+    "name": "VAN LEEUWENHOEK",
+    "line2": "First microbes seen, 1674",
+    "line1_px": 66,
+    "line1_pct_of_band": 10.9,
+    "band": [
+      656,
+      1264
+    ],
+    "in_s": 2.15,
+    "out_s": 5.75,
+    "fade_s": 0.35
+  },
+  "title_on_screen": "How Did We Discover Germs?",
+  "youtube_title_draft": "What Is the Miasma Theory of Disease?",
+  "plan": [
+    {
+      "t0": 0.0,
+      "t1": 3.379,
+      "plate": "04_Generated-Clips/part02/raw/v07_flow/04_plunge_into_drop_from_v01_cut.mp4",
+      "in_s": 3.2,
+      "crop_x": 656,
+      "lands_on": 0
+    },
+    {
+      "t0": 3.379,
+      "t1": 7.443,
+      "plate": "04_Generated-Clips/part02/raw/v06_flow/08_drop_hits_slide_v06.mp4",
+      "in_s": 0.6,
+      "crop_x": 620,
+      "lands_on": "a"
+    },
+    {
+      "t0": 7.443,
+      "t1": 9.549,
+      "plate": "04_Generated-Clips/part02/raw/v05_flow/08_scope_focus_v05.mp4",
+      "in_s": 0.6,
+      "crop_x": 420,
+      "lands_on": "But"
+    },
+    {
+      "t0": 9.549,
+      "t1": 12.882,
+      "plate": "04_Generated-Clips/part02/raw/v04_flow/qa/rough/beat_v01.mp4",
+      "in_s": 0.6,
+      "crop_x": 780,
+      "lands_on": "People"
+    },
+    {
+      "t0": 12.882,
+      "t1": 16.782,
+      "plate": "04_Generated-Clips/part01/raw/v20_aisle/aisle_walk_t2.mp4",
+      "in_s": 0.6,
+      "crop_x": 656,
+      "lands_on": "from"
+    },
+    {
+      "t0": 16.782,
+      "t1": 18.916,
+      "plate": "04_Generated-Clips/part02/raw/v04_flow/08_ward_vs_lens_v04.mp4",
+      "in_s": 0.6,
+      "crop_x": 880,
+      "lands_on": "The"
+    },
+    {
+      "t0": 18.916,
+      "t1": 21.777,
+      "plate": "04_Generated-Clips/part03/raw/v02_fast_probe/02_perfume_windows_v02.mp4",
+      "in_s": 0.6,
+      "crop_x": 480,
+      "lands_on": "The"
+    },
+    {
+      "t0": 21.777,
+      "t1": 24.777,
+      "plate": "04_Generated-Clips/part02/raw/v07_flow/04_plunge_into_drop_from_v01_cut.mp4",
+      "in_s": 3.2,
+      "crop_x": 656,
+      "lands_on": "loop"
+    }
+  ],
+  "captions": 21,
+  "caption_check": {
+    "ok": true,
+    "changes": 21,
+    "ratio": 1.0
+  },
+  "gate": {
+    "exit": 0,
+    "output": "PASS  hos_001_s10_miasma_microscope_v01.mp4  dur=24.8s  audio=-23.6dB  motion=42.09  dhash=8bc7a451470b6eac\n   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_001_s10_miasma_microscope_v01_open_sheet.jpg"
+  },
+  "vo_check": {
+    "exit": 0,
+    "output": "PASS  hos_001_s10_miasma_microscope_v01.mp4  0:24.80  mean -23.6 dB  peak -4.0 dB  157 wpm\n   warn  replace at ~0:04.18: script 'your nose a civilisation of cells dancing' / heard 'your nose a civilization of cells dancing' \u2014 sounds alike (likely the transcriber); listen"
+  },
+  "freezedetect_starts": [],
+  "qa": {
+    "polish_gate": {
+      "exit": 0,
+      "output": "polish gate PASS: 0 of 8 rows failed, 1 to look at -> 02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/qa_s10_miasma_microscope_v01/polish_gate_s10_miasma_microscope_v01.json"
+    },
+    "picture_qa": {
+      "exit": 0,
+      "output": "picture QA PASS: 0 of 8 cuts fail, 1 to look at -> 02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/qa_s10_miasma_microscope_v01/picture_qa_s10_miasma_microscope_v01/PICTURE_QA.md, 02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/qa_s10_miasma_microscope_v01/picture_qa_s10_miasma_microscope_v01/picture_qa_review.jpg"
+    }
+  },
+  "stills": [
+    "10_Shorts/_work_s10_miasma_microscope_v01/hos_001_s10_miasma_microscope_v01_t000.0.jpg",
+    "10_Shorts/_work_s10_miasma_microscope_v01/hos_001_s10_miasma_microscope_v01_t003.8.jpg",
+    "10_Shorts/_work_s10_miasma_microscope_v01/hos_001_s10_miasma_microscope_v01_t011.5.jpg",
+    "10_Shorts/_work_s10_miasma_microscope_v01/hos_001_s10_miasma_microscope_v01_t023.8.jpg"
+  ],
+  "icloud": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/001_How-Did-We-Discover-Germs/10_Shorts/hos_001_s10_miasma_microscope_v01.mp4",
+  "autocomplete_check": {
+    "date": "2026-10-19",
+    "source": "suggestqueries client=youtube ds=yt gl=GB signed-out",
+    "hits": [
+      "miasma theory of disease",
+      "miasma theory vs germ theory",
+      "what is miasma",
+      "how did we discover bacteria under microscope",
+      "leeuwenhoek microscope",
+      "who first discovered bacteria"
+    ],
+    "note": "'miasma theory of disease', 'miasma theory vs germ theory', 'what is miasma', 'how did we discover bacteria under microscope', and 'leeuwenhoek microscope' are exact signed-out GB YouTube autocomplete hits. The lifted VO shows how the first microscopes revealed a civilisation of cells dancing in a bead of liquid, yet medicine still blamed miasma ('foul smells, angry gods, or imbalance \u2014 clean the air, burn herbs, open windows, chase the stench') instead of living microbes. Fourth search-titled Short on HOS 001 (matching 002, 003, 004, 005, and 006 which each have 4). Chief's call."
+  },
+  "air_date_draft_note": "2027-01-06 used for the gate only; slot is Chief's call.",
+  "who_card_note": "card is VAN LEEUWENHOEK \u00b7 First microbes seen, 1674 (from 001 Part 02 microscope/pond-water beat and 11_Upload-Package/Shorts/s02_pond_listing_v01.txt), on screen 2.15\u20135.75 s (3.6 s) over 'a civilisation of cells dancing in a bead of liquid.' Clear of the 0\u20132 s hook, the 9\u201314 s title, and the last 3.0 s CTA.",
+  "overlap_note": "Zero overlap with 001 s02_pond (which lifted 0.00\u201320.50 s of Part 02: 'Centuries before the word germ... hospital chart'), s01_shadow (Part 01), s03_vector / s07_semmelweis_hands (Part 03), s04_flask / s08_pasteur_germs (Part 04), or s05_soap / s06_carbolic_spray / s09_lister_antiseptic (Part 05): this lifts 23.35\u201345.20 s and 54.35\u201360.60 s of Part 02, which had never been used in any 001 Short."
+}

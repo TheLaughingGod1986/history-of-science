@@ -1,0 +1,79 @@
+[
+  {
+    "row": "s01_0",
+    "timeline_in": 0.0,
+    "timeline_out": 3.932,
+    "source": "02b_cards_sixty_three_v06.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.6
+    },
+    "video": true
+  },
+  {
+    "row": "s02_sits",
+    "timeline_in": 3.932,
+    "timeline_out": 8.694,
+    "source": "desk_try_prior_3.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.6
+    },
+    "video": true
+  },
+  {
+    "row": "s03_He",
+    "timeline_in": 8.694,
+    "timeline_out": 10.751,
+    "source": "desk_try_prior_2.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.6
+    },
+    "video": true
+  },
+  {
+    "row": "s04_how",
+    "timeline_in": 10.751,
+    "timeline_out": 14.041,
+    "source": "04_sort_atomic_weight_v01.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.8
+    },
+    "video": true
+  },
+  {
+    "row": "s05_Cousins",
+    "timeline_in": 14.041,
+    "timeline_out": 18.257,
+    "source": "05_columns_families_v01.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.6
+    },
+    "video": true
+  },
+  {
+    "row": "s06_That",
+    "timeline_in": 18.257,
+    "timeline_out": 22.232,
+    "source": "08_prediction_navigation_v25_try1.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.8
+    },
+    "video": true
+  },
+  {
+    "row": "s07_loop",
+    "timeline_in": 22.232,
+    "timeline_out": 25.232,
+    "source": "loop_end_02b_cards_sixty_three_v06.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.6
+    },
+    "video": true
+  }
+]

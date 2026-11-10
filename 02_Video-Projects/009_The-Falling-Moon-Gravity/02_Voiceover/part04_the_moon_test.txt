@@ -1,0 +1,17 @@
+Newton worked out that a pull like this should get weaker with distance. Twice as far away, it should be four times weaker. Three times as far, nine times weaker.
+
+Why would it work like that? Think of a can of spray paint. Hold it close to a wall and you get a small, dark spot. Step back twice as far, and the same paint spreads over a patch four times as big, so every part of it gets only a quarter as much. Newton's pull spreads out in the same way.
+
+The Moon is about sixty times further from the centre of the Earth than you are. So the pull on the Moon should be sixty times sixty weaker. Three thousand six hundred times weaker.
+
+Then came the beautiful part. In one second, an apple falls about five metres. If the pull on the Moon is 3,600 times weaker, then in one minute, the Moon should fall about the same distance, five metres, along its curve.
+
+Newton checked it against the real Moon. Years later, he wrote that the two answered pretty nearly. The apple and the Moon were obeying the same rule.
+
+But Newton was a careful, private man, and his numbers weren't yet perfect. He put the idea aside for almost twenty years.
+
+Then, in sixteen eighty-four, a young astronomer called Edmond Halley came to see him in Cambridge. Halley asked him a question. If the Sun pulled on the planets with a force that got weaker in just this way, what path would they follow?
+
+An ellipse, Newton said at once. He had worked it out years before.
+
+Halley was amazed, and he begged Newton to write it all down. The result, three years later, was one of the most important books ever written. Newton called it the Principia. And because the Royal Society had spent its money on a book about fish, Halley paid to print it himself.

@@ -144,3 +144,196 @@ freezedetect (n=0.003, d=0.8): 0 events · caption-change check 19/19
 ```
 
 Frame-0 dHash: 29 bits from the 004 Short (1 Nov), 36/27/26 from 005 A/B/C; nearest in the library 27 (`29bpGAI0wb8`).
+
+
+## 17 Oct 2026 — Short `s06_atomic_weights_v01` (Test B, first search-titled lift from Part 03, OWB J0441)
+
+- **Selection:** HOS 003, 004, 005, and 006 each have 2 built Test B search-titled Shorts (`s04` and `s05`); HOS 007+ do not yet have full-part picture. Among locked HOS longs with existing VO and picture, 002 had 0 built Test B search-titled Shorts (only its Sep 10 punch Shorts S1–S5 and the Oct 2 four-elements Short before Test B), so `s06_atomic_weights_v01` starts 002's pair of Test B search-titled Shorts.
+- **VO (0 spend):** `02_Voiceover/part03_ruler_for_atoms_v01.wav` claim-first lift (`8.52–12.96 s`, `16.30–22.76 s`, `26.92–30.96 s`, `35.50–50.70 s` from Part 03, zero overlap with S1–S5, Newlands, or the Part 01 four-elements Short): *"Stanislao Cannizzaro wins with a method, not poetry. Derive atomic weights you can repeat. Put the same number on the same element everywhere. Cards stop floating and sit on a line of mass. Properties pulse in waves, reactive, calm, reactive again. If mass is a coordinate, families can become columns. A hole in a column is not failure. It is a prediction."* 62 words, pauses capped at 0.18 s, `atempo=1.06`, 25.282 s VO + 0.42 s tail = 25.733 s total.
+- **Picture & bed (0 spend):** Part 03 v09 KEEP plates `06_cards_snap_line_v02` (`0.60 s` swirling-cards-to-mass-line window on frame 0 and 3.0 s loop), `11_fix_weights_v02`, `02_hall_argument_v02`, `04_zoo_gets_ruler_v02`, `08_property_waves_v08`, `09_empty_chair_claim_v04`. Own-synthesis warm harmonic pad (`hos002_s06_synth_pad_v01.wav`, C-lydian/Gmaj7 voicing) at −20 dB under VO. Hook **ATOMIC WEIGHT** (WEIGHT in yellow). Person/date card **STANISLAO CANNIZZARO · Karlsruhe, 1860** at 2.15–5.75 s (3.6 s, lower third of 16:9 centre band, feathered shade, 0.35 s fade in/out); the long's exact title *How Did We Discover the Periodic Table?* at 9.0–14.0 s; word captions throughout; CTA `watch the full film →` at 22.70–25.62 s.
+- **Title draft:** *How Is the Periodic Table Arranged?* (signed-out GB YouTube autocomplete exact hit `how is the periodic table arranged` / `how is atomic mass measured`, 17 Oct 2026; alts *How Is Atomic Mass Measured?*, *How Did Chemists Measure Atomic Mass?*, *Who Arranged the Periodic Table of Elements?*).
+- **File:** `10_Shorts/hos_002_s06_atomic_weights_v01.mp4`, 25.733 s, sha256 `fb24bbdc5c12db87570bf408b6359e86d30c070518523b7a808f255840b7a55e`; phone copy iCloud `HOS UAT/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/hos_002_s06_atomic_weights_v01.mp4`.
+
+```
+PASS  hos_002_s06_atomic_weights_v01.mp4  dur=25.73s  audio=-24.2dB  motion=38.29  dhash=4d408e4b8f0f0f07
+   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_002_s06_atomic_weights_v01_open_sheet.jpg
+PASS  hos_002_s06_atomic_weights_v01.mp4  0:25.73  mean -24.2 dB  peak -4.2 dB  145 wpm
+polish gate PASS: 0 of 7 rows failed, 1 to look at -> 02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/qa_s06_atomic_weights_v01/polish_gate_s06_atomic_weights_v01.json
+picture QA PASS: 0 of 7 cuts fail, 1 to look at -> 02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/qa_s06_atomic_weights_v01/picture_qa_s06_atomic_weights_v01/PICTURE_QA.md, 02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/qa_s06_atomic_weights_v01/picture_qa_s06_atomic_weights_v01/picture_qa_review.jpg
+```
+
+Gate run with `--air-date 2026-12-03` (gate only). Caption check: 19 changes, ratio 1.0. Freezedetect: 0 events.
+
+**STOP:** parked for Chief: Short PASS, title and slot. Nothing uploaded.
+
+
+## 17 Oct 2026 — Short `s07_mendeleev_cards_v01` (Test B, second search-titled lift from Part 04, OWB J0456)
+
+- **Selection:** Completes HOS 002's pair of Test B search-titled Shorts alongside `s06_atomic_weights_v01` (HOS 003, 004, 005, and 006 each have 2 built Test B search-titled Shorts; 002 had 1).
+- **VO (0 spend):** `02_Voiceover/part04_empty_chairs_v01.wav` claim-first lift (`0.00–7.12 s`, `14.70–22.80 s`, `23.30–28.05 s`, `34.00–41.08 s` from Part 04, zero overlap with S1–S5 which began at P04 + 42.00 s, `s06_atomic_weights`, Newlands, or the Part 01 four-elements Short): *"1869. A Russian chemist named Dmitri Mendeleev sits at a desk covered in cards. About 63 are known. He lines them up by atomic weight, how heavy each atom is compared with hydrogen. Cousins fall into columns. Soft, reactive metals together. That grid of columns is the start of the periodic table, a seating chart for the building blocks of matter."* 61 words, pauses capped at 0.20 s, `atempo=1.02`, 24.812 s VO + 0.42 s tail = 25.233 s total.
+- **Picture & bed (0 spend):** Part 04 clean takes `02b_cards_sixty_three_v06` (`0.60 s` shuffling-cards window on frame 0 and 3.0 s loop), `desk_try_prior_3` (`crop_x=200`), `desk_try_prior_2`, `04_sort_atomic_weight_v01`, `05_columns_families_v01`, `08_prediction_navigation_v25_try1`. Own-synthesis warm harmonic pad (`hos002_s07_synth_pad_v01.wav`, F-lydian/Dm9 voicing) at −20 dB under VO. Hook **63 CARDS** (CARDS in yellow). Person/date card **DMITRI MENDELEEV · St Petersburg, 1869** at 2.15–5.75 s (3.6 s, lower third of 16:9 centre band, feathered shade, 0.35 s fade in/out); the long's exact title *How Did We Discover the Periodic Table?* at 9.0–14.0 s; word captions throughout; CTA `watch the full film →` at 22.23–25.15 s.
+- **Title draft:** *Who Invented the Periodic Table?* (signed-out GB YouTube autocomplete exact hit `who invented the periodic table` / `who made the periodic table` / `how many elements did mendeleev have`, 17 Oct 2026; alts *Who Made the Periodic Table?*, *Who Created the Periodic Table?*, *How Many Elements Did Mendeleev Have?*).
+- **File:** `10_Shorts/hos_002_s07_mendeleev_cards_v01.mp4`, 25.233 s, sha256 `8e215ede0a5a7dbe52a07228f04d1464d03842d8c15712bc878c3bfe99889eea`; phone copy iCloud `HOS UAT/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/hos_002_s07_mendeleev_cards_v01.mp4`.
+
+```
+PASS  hos_002_s07_mendeleev_cards_v01.mp4  dur=25.23s  audio=-23.1dB  motion=14.49  dhash=cafcbc3cd88d35ff
+   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_002_s07_mendeleev_cards_v01_open_sheet.jpg
+PASS  hos_002_s07_mendeleev_cards_v01.mp4  0:25.23  mean -23.1 dB  peak -3.7 dB  145 wpm
+polish gate PASS: 0 of 7 rows failed, 1 to look at -> 02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/qa_s07_mendeleev_cards_v01/polish_gate_s07_mendeleev_cards_v01.json
+picture QA PASS: 0 of 7 cuts fail, 1 to look at -> 02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/qa_s07_mendeleev_cards_v01/picture_qa_s07_mendeleev_cards_v01/PICTURE_QA.md, 02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/qa_s07_mendeleev_cards_v01/picture_qa_s07_mendeleev_cards_v01/picture_qa_review.jpg
+```
+
+Gate run with `--air-date 2026-12-06` (gate only). Caption check: 19 changes, ratio 1.0. Freezedetect: 0 events.
+
+**STOP:** parked for Chief: Short PASS, title and slot. Nothing uploaded.
+
+
+## 18 Oct 2026 — Thumbnail B `v07` `METAL TURNS LIQUID` (`1.032x` gallium hero push-in, OWB J0534)
+
+- **Selection:** HOS `002` (`AL_-qlWko_g`, *How Did We Discover the Periodic Table?*) is live on YouTube with no armed Test & Compare yet (`004` has an armed test, never touched).
+- **Build (`£0` spend, existing `002` key-art plate only):** Built `Selected/hos_002_thumb_B_metal_turns_liquid_v07.jpg` (`1280×720`, `285,919` bytes, sha256 `ddcb6b0fcc5c7bfb4c958043a736886ecb9ca130efe50bf9519ea64f17038dda`) via `08_Thumbnail/_compose_hos_002_thumb_B_metal_turns_liquid_v07.py` and `08_Thumbnail/THUMB_B_METAL_TURNS_LIQUID_v07.json` from `Selected/hos_002_thumb_A_gallium_live_v02.png` with a `1.032×` push-in on the right-hand silvery liquid-gallium arch & falling droplet (`heroBox = [548, 19, 1274, 702]`), Explorer in lower-left at `58.3%` frame height (`420 px`, `box = [42, 300, 256, 720]`), and Georgia Bold upper-left 3-word hook **`METAL TURNS LIQUID`** (`LIQUID` in gold `#F0AC28`, framed by the original painted gold scroll flourishes at `y=28..359`).
+- **Scores (`THUMB_B_METAL_TURNS_LIQUID_v07.json`):**
+  - **HOOK: PASS** — `METAL TURNS LIQUID` (3 words, punch word `LIQUID` in gold) names the concrete discovery object (`METAL`) and visible physical transformation (`TURNS LIQUID`) shown by the giant silvery melting gallium arch and droplet on the right (`002` script Part 05: *"1875. Gallium. Soft, strange, almost liquid in a warm room"* and `THUMBNAIL_AND_TITLE_RULES.md` §1.2 & §2.B.1 *"name the thing"*), shares zero words with the video title (*How Did We Discover the Periodic Table?*), `J0374` (`THE MISSING ELEMENT`), `J0442` (`PREDICTED BEFORE FOUND`), or `J0488` (`EMPTY ON PURPOSE`), and uses no vague questions or pronouns.
+  - **BAND: PASS** — Upper-left lettering band (`x=116..481`, `y=67..292`, framed by original painted gold scroll flourishes at `y=28..359`) sits completely left of the pushed-in hero gallium arch (`x=548..1274`), above the Explorer's hair (`y=300`) and bottom flourish (`y=311`), and clear of the bottom-right duration badge.
+  - **PHONE: PASS** — Checked on `168×94` preview sheet (`Selected/hos_002_thumb_B_metal_turns_liquid_v07_preview.jpg`), style sheet (`Selected/hos_002_thumb_B_metal_turns_liquid_v07_style_sheet.jpg`), and 4-panel strip (`Selected/hos_002_thumb_TC_4way_metal_turns_liquid_v07_phone_168.jpg`).
+
+```
+02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/08_Thumbnail/Selected/hos_002_thumb_B_metal_turns_liquid_v07_preview.jpg
+02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/08_Thumbnail/Selected/hos_002_thumb_B_metal_turns_liquid_v07_style_sheet.jpg  (1 new vs 4 live long references)
+ALL CHECKS PASS (00_Brand/Channel-Setup/tools/check_all.sh 02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table)
+```
+
+**STOP:** parked for Chief: thumb B review. No Studio change made.
+
+
+## 18 Oct 2026 — Short `s08_periodic_table_work_v01` (Test B, third search-titled lift from Part 05, OWB J0563)
+
+- **Selection:** HOS 003, 004, 005, and 006 each have 3 built search-titled Shorts (`s04`, `s05`, `s06`); HOS 002 had only 2 built search-titled Shorts (`s06_atomic_weights_v01`, `s07_mendeleev_cards_v01`), making 002 the next locked HOS long with the fewest built search-titled Shorts (007+ do not have minted picture yet).
+- **VO (0 spend):** `02_Voiceover/part05_the_guests_arrive_v01.wav` claim-first lift (`42.30–63.65 s` + `74.00–83.48 s`, zero overlap with S1–S5, `s06_atomic_weights`, `s07_mendeleev_cards`, Newlands octaves, or the Oct 2 four-elements Short): *"But the table is not finished. It never was, in 1869. Noble gases crash the party, colourless, almost aloof, a whole family nobody had a column for. The map stretches. A new street appears. Then a sharper ruler. Atomic number. X-ray fingerprints. Mass was the first coordinate. The deeper coordinate is how many protons sit in the nucleus. A photon can read the difference."* 64 words, pauses capped at 0.18 s, `atempo=1.06`, 24.910 s VO + 0.42 s tail = 25.333 s total.
+- **Picture & bed (0 spend):** Part 05, Part 01, and Part 03 KEEP plates `P5:01b_empty_seats_waiting_v01_try1` (`0.60 s` glowing wooden periodic pigeonhole window on frame 0 and 3.0 s loop), `P5:02_guests_as_work_v01_try3`, `P5:10_zoo_became_city_v01_try4`, `P5:11b_late_for_dinner_v01_try2`, `P5:08b_weight_vs_identity_v01_try1` (`crop_x=1200`), `P1:10_rock_not_fire_v01`, `P3:08_property_waves_v08`. Own-synthesis warm harmonic pad (`hos002_s08_synth_pad_v01.wav`, G-lydian/Em9 voicing, distinct from `s06` C-lydian and `s07` F-lydian) at −20 dB under VO. Hook **NOBLE GASES** (GASES in yellow). Person/date card **DMITRI MENDELEEV · First table, 1869** at 2.15–5.75 s (3.6 s, lower third of 16:9 centre band, feathered shade, 0.35 s fade in/out); the long's exact title *How Did We Discover the Periodic Table?* at 9.0–14.0 s; word captions throughout; CTA `watch the full film →` at 22.33–25.25 s.
+- **Title draft:** *How Does the Periodic Table Work?* (signed-out GB YouTube autocomplete exact hit `how does the periodic table work`, 18 Oct 2026; alts *How Is the Periodic Table Arranged?*, *Noble Gases and the Periodic Table*).
+- **File:** `10_Shorts/hos_002_s08_periodic_table_work_v01.mp4`, 25.333 s, sha256 `daf22bb6b9c687d39413702f0f4e7be96975cfd4550d71715884b38fcb6e75d4`; phone copy iCloud `HOS UAT/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/hos_002_s08_periodic_table_work_v01.mp4`.
+
+```
+PASS  hos_002_s08_periodic_table_work_v01.mp4  dur=25.33s  audio=-23.4dB  motion=38.55  dhash=8c8c0c0c1c0c848c
+   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_002_s08_periodic_table_work_v01_open_sheet.jpg
+PASS  hos_002_s08_periodic_table_work_v01.mp4  0:25.33  mean -23.4 dB  peak -3.9 dB  154 wpm
+polish gate PASS: 0 of 8 rows failed, 1 to look at -> 02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/qa_s08_periodic_table_work_v01/polish_gate_s08_periodic_table_work_v01.json
+picture QA PASS: 0 of 8 cuts fail, 1 to look at -> 02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/qa_s08_periodic_table_work_v01/picture_qa_s08_periodic_table_work_v01/PICTURE_QA.md, 02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/qa_s08_periodic_table_work_v01/picture_qa_s08_periodic_table_work_v01/picture_qa_review.jpg
+```
+
+Gate run with `--air-date 2026-12-28` (gate only). Caption check: 21 changes, ratio 1.0. Freezedetect: 0 events.
+
+**STOP:** parked for Chief: Short PASS, title and slot. Nothing uploaded.
+
+
+## 18 Oct 2026 — Thumbnail B `v08` `ONE GLOWING GAP` (`1.29x` empty-slot hero push-in, OWB J0579)
+
+- **Selection:** HOS `002` (`AL_-qlWko_g`, *How Did We Discover the Periodic Table?*) is live on YouTube with no Test & Compare on record in `THUMB_LEDGER.json` (`003` has `T001` active; `004` has an armed test, never touched; in the `002 -> 001 -> 005` rotation, `002` got `B v07` in `J0534`, `001` got `B v04` in `J0549`, and `005` got `B v06` in `J0564`, making `002` next in rotation).
+- **Build (`£0` spend, existing `002` plates only):** Built `Selected/hos_002_thumb_B_one_glowing_gap_v08.jpg` (`1280×720`, `202,587` bytes, sha256 `418d8e8b15e93fcc3ae6fd981482eb31177f62bcb2023849450f7c0b48b51cf2`) via `08_Thumbnail/_compose_hos_002_thumb_B_one_glowing_gap_v08.py` and `08_Thumbnail/THUMB_B_ONE_GLOWING_GAP_v08.json` from `_stills_v05/hos_002_empty_slot_hero_v01.jpg` with a `1.29×` push-in + clarity boost on the right-hand glowing golden gap inside Mendeleev's wooden periodic-table cabinet (`heroBox = [613, 214, 1009, 559]`, `396×345 px`, `+39%` over `v05`), Explorer cutout from `Selected/hos_002_thumb_A_gallium_live_v02.png` in lower-left at `54.0%` frame height (`389 px`, `box = [0, 331, 256, 720]`), and Georgia Bold upper-left 3-word hook **`ONE GLOWING GAP`** (`GAP` in gold `#E49C20`, framed by gold scroll flourishes at `y=17..305`).
+- **Scores (`THUMB_B_ONE_GLOWING_GAP_v08.json`):**
+  - **HOOK: PASS** — `ONE GLOWING GAP` (3 words, punch word `GAP` in gold) names the concrete visual hero on the right two-thirds (the single glowing golden vacancy inside Mendeleev's wooden periodic-table cabinet; `002` script Intro & Part 04–05: *"why the gaps were the cleverest part... left gaps for undiscovered elements... Hold on the last glowing vacancy"* and `THUMBNAIL_AND_TITLE_RULES.md` §1.2 & §2.B.1 *"name the thing"*), shares zero words with the video title (*How Did We Discover the Periodic Table?*), `J0374` (`THE MISSING ELEMENT`), `J0442` (`PREDICTED BEFORE FOUND`), `J0488` (`EMPTY ON PURPOSE`), or `J0534` (`METAL TURNS LIQUID`), and uses no vague questions or pronouns.
+  - **BAND: PASS** — Upper-left lettering band (`x=89..515`, `y=44..282`, framed by top/bottom gold scroll flourishes at `y=17..305`) sits completely left of the pushed-in glowing hero gap (`x=613..1009`), above the Explorer's hair (`y=331`), and clear of the bottom-right duration badge.
+  - **PHONE: PASS** — Checked on `168×94` preview sheet (`Selected/hos_002_thumb_B_one_glowing_gap_v08_preview.jpg`), style sheet (`Selected/hos_002_thumb_B_one_glowing_gap_v08_style_sheet.jpg`), and 4-panel strip (`Selected/hos_002_thumb_TC_4way_one_glowing_gap_v08_phone_168.jpg`).
+
+```
+02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/08_Thumbnail/Selected/hos_002_thumb_B_one_glowing_gap_v08_preview.jpg
+02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/08_Thumbnail/Selected/hos_002_thumb_B_one_glowing_gap_v08_style_sheet.jpg  (1 new vs 4 live long references)
+ALL CHECKS PASS (00_Brand/Channel-Setup/tools/check_all.sh 02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table)
+```
+
+**STOP:** parked for Chief: thumb B review. No Studio change made.
+
+
+## 19 Oct 2026 — Thumbnail B `v09` `SOFT MELTING GALLIUM` (`1.036x` gallium hero push-in, OWB J0624)
+
+- **Selection:** HOS `002` (`AL_-qlWko_g`, *How Did We Discover the Periodic Table?*) is live on YouTube with no Test & Compare on record in `THUMB_LEDGER.json` (`003` has `T001` active; `004` has an armed test, never touched; in the `002` → `001` → `005` rotation, `002` got `B v08` in `J0579`, `001` got `B v05` in `J0594`, and `005` got `B v07` in `J0609`, making `002` next in rotation).
+- **Build (`£0` spend, existing `002` key-art plate only):** Built `Selected/hos_002_thumb_B_soft_melting_gallium_v09.jpg` (`1280×720`, `290,572` bytes, sha256 `320dabe6fef92cf92954f6e519008dc940182726ba72add4e1b63af4d5bf6148`) via `08_Thumbnail/_compose_hos_002_thumb_B_soft_melting_gallium_v09.py` and `08_Thumbnail/THUMB_B_SOFT_MELTING_GALLIUM_v09.json` from `Selected/hos_002_thumb_A_gallium_live_v02.png` with a `1.036×` push-in + metallic specular & droplet clarity boost on the right-hand silvery liquid-gallium arch & falling droplet (`heroBox = [544, 16, 1276, 705]`), Explorer in lower-left at `58.3%` frame height (`420 px`, `box = [42, 300, 256, 720]`), and Georgia Bold upper-left 3-word hook **`SOFT MELTING GALLIUM`** (`GALLIUM` in gold `#E49C20`, framed by the original painted gold scroll flourishes at `y=28..359`).
+- **Scores (`THUMB_B_SOFT_MELTING_GALLIUM_v09.json`):**
+  - **HOOK: PASS** — `SOFT MELTING GALLIUM` (3 words, punch word `GALLIUM` in gold) names the concrete discovery element (`GALLIUM`) and visible physical state (`SOFT MELTING`) shown by the giant silvery melting gallium arch and falling droplet on the right (`002` script Part 05: *"1875. Gallium. Soft, strange, almost liquid in a warm room"* and `THUMBNAIL_AND_TITLE_RULES.md` §1.2 & §2.B.1 *"name the thing"*), shares zero words with the video title (*How Did We Discover the Periodic Table?*), `J0374` (`THE MISSING ELEMENT`), `J0442` (`PREDICTED BEFORE FOUND`), `J0488` (`EMPTY ON PURPOSE`), `J0534` (`METAL TURNS LIQUID`), or `J0579` (`ONE GLOWING GAP`), and uses no vague questions or pronouns.
+  - **BAND: PASS** — Upper-left lettering band (`x=92..504`, `y=75..284`, framed by original painted gold scroll flourishes at `y=28..359`) sits completely left of the pushed-in hero gallium arch (`x=544..1276`), above the Explorer's hair (`y=300`) and bottom flourish (`y=311`), and clear of the bottom-right duration badge.
+  - **PHONE: PASS** — Checked on `168×94` preview sheet (`Selected/hos_002_thumb_B_soft_melting_gallium_v09_preview.jpg`), style sheet (`Selected/hos_002_thumb_B_soft_melting_gallium_v09_style_sheet.jpg`), and 4-panel strip (`Selected/hos_002_thumb_TC_4way_soft_melting_gallium_v09_phone_168.jpg`).
+
+```
+02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/08_Thumbnail/Selected/hos_002_thumb_B_soft_melting_gallium_v09_preview.jpg
+02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/08_Thumbnail/Selected/hos_002_thumb_B_soft_melting_gallium_v09_style_sheet.jpg  (1 new vs 4 live long references)
+ALL CHECKS PASS (00_Brand/Channel-Setup/tools/check_all.sh 02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table)
+```
+
+**STOP:** parked for Chief: thumb B review. No Studio change made.
+
+
+## 19 Oct 2026 — Short `s09_dobereiner_triads_v01` (Test B, fourth search-titled lift from Part 02, OWB J0654)
+
+- **Selection:** HOS 003, 004, 005, and 006 each have 4 built search-titled Shorts (`s04`, `s05`, `s06`, `s07`); HOS 002 had only 3 built search-titled Shorts (`s06_atomic_weights_v01`, `s07_mendeleev_cards_v01`, `s08_periodic_table_work_v01`), making 002 the next locked HOS long with the fewest built search-titled Shorts (007+ do not have full-part minted picture yet).
+- **VO (0 spend):** `02_Voiceover/part02_first_patterns_v01.wav` claim-first lift (`16.40–32.95 s`, `39.58–43.00 s`, `72.70–78.80 s`, `81.65–83.84 s`, zero overlap with S1–S5, `s06_atomic_weights`, `s07_mendeleev_cards`, `s08_periodic_table_work`, Newlands octaves, or the Oct 2 four-elements Short): *"Johann Döbereiner noticed triads. Three elements that behave like cousins. Lithium, sodium, potassium. Chlorine, bromine, iodine. The middle one often sat between the other two in mass, as if nature had a favourite spacing. Then the list grew again, and the rhymes ran out. Until atomic masses were trusted, every arrangement was a guess with nice handwriting. It was a shared measuring stick."* 63 words, pauses capped at 0.18 s, `atempo=1.06`, 24.013 s VO + 0.42 s tail = 24.433 s total.
+- **Picture & bed (0 spend):** Part 01, Part 03, and Part 05 KEEP plates `P1:11_chemists_more_names_v01` (`0.60 s` element cards & mineral ores on wooden bench window on frame 0 and 3.0 s loop), `P1:06_alchemist_accidents_v01`, `P5:01_chapter_guests_arrive_v01_try1`, `P3:07_light_to_heavy_v02`, `P3:10_city_plan_lots_v09`, `P3:12_pattern_risks_public_v02`. Own-synthesis warm harmonic pad (`hos002_s09_synth_pad_v01.wav`, A-lydian/F#m9 voicing, distinct from `s06` C-lydian, `s07` F-lydian, and `s08` G-lydian) at −20 dB under VO. Hook **THREE TRIADS** (TRIADS in yellow). Person/date card **JOHANN DÖBEREINER · Law of Triads, 1829** at 2.15–5.75 s (3.6 s, lower third of 16:9 centre band, feathered shade, 0.35 s fade in/out); the long's exact title *How Did We Discover the Periodic Table?* at 9.0–14.0 s; word captions throughout; CTA `watch the full film →` at 21.43–24.35 s.
+- **Title draft:** *What Is Döbereiner's Law of Triads?* (signed-out GB YouTube autocomplete exact hit `what is dobereiner's law of triads` / `johann dobereiner periodic table` / `periodic table dobereiner triads`, 19 Oct 2026; alts *What Are Döbereiner's Triads?*, *Johann Döbereiner and the Periodic Table*, *Why Did Döbereiner's Triads Work?*).
+- **File:** `10_Shorts/hos_002_s09_dobereiner_triads_v01.mp4`, 24.433 s, sha256 `f04c73a572b6ca8474fa8090eb60542c8353907320deaa8df8d3e445f6435e78`; phone copy iCloud `HOS UAT/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/hos_002_s09_dobereiner_triads_v01.mp4`.
+
+```
+PASS  hos_002_s09_dobereiner_triads_v01.mp4  dur=24.43s  audio=-22.0dB  motion=37.53  dhash=2b203534b76302e1
+   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_002_s09_dobereiner_triads_v01_open_sheet.jpg
+PASS  hos_002_s09_dobereiner_triads_v01.mp4  0:24.43  mean -22.0 dB  peak -4.0 dB  157 wpm
+polish gate PASS: 0 of 7 rows failed, 1 to look at -> 02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/qa_s09_dobereiner_triads_v01/polish_gate_s09_dobereiner_triads_v01.json
+picture QA PASS: 0 of 7 cuts fail, 1 to look at -> 02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/qa_s09_dobereiner_triads_v01/picture_qa_s09_dobereiner_triads_v01/PICTURE_QA.md, 02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/10_Shorts/qa_s09_dobereiner_triads_v01/picture_qa_s09_dobereiner_triads_v01/picture_qa_review.jpg
+```
+
+Gate run with `--air-date 2027-01-04` (gate only). Caption check: 19 changes, ratio 1.0. Freezedetect: 0 events.
+
+**STOP:** parked for Chief: Short PASS, title and slot. Nothing uploaded.
+
+
+## 19 Oct 2026 — Thumbnail B `v10` `SKIPPED ATOMIC SEAT` (`1.31x` empty-slot hero push-in, OWB J0670)
+
+- **Selection:** HOS `002` (`AL_-qlWko_g`, *How Did We Discover the Periodic Table?*) is live on YouTube with no Test & Compare on record in `THUMB_LEDGER.json` (`003` has `T001` active; `004` has an armed test, never touched; in the `002` → `001` → `005` rotation, `002` got `B v09` in `J0624`, `001` got `B v06` in `J0640`, and `005` got `B v08` in `J0655`, making `002` next in rotation).
+- **Build (`£0` spend, existing `002` plates only):** Built `Selected/hos_002_thumb_B_skipped_atomic_seat_v10.jpg` (`1280×720`, `205,409` bytes, sha256 `0d123e27d18e46f5e9a0f0b5cb674ad574318cda036b285c8ee4362cb6bfc941`) via `08_Thumbnail/_compose_hos_002_thumb_B_skipped_atomic_seat_v10.py` and `08_Thumbnail/THUMB_B_SKIPPED_ATOMIC_SEAT_v10.json` from `_stills_v05/hos_002_empty_slot_hero_v01.jpg` with a `1.31×` push-in + golden-rim & cream-tile clarity boost on the right-hand glowing skipped seat inside Mendeleev's wooden periodic-table cabinet (`heroBox = [607, 210, 1010, 560]`, `403×350 px`), Explorer cutout from `Selected/hos_002_thumb_A_gallium_live_v02.png` in lower-left at `54.0%` frame height (`389 px`, `box = [0, 331, 256, 720]`), and Georgia Bold upper-left 3-word hook **`SKIPPED ATOMIC SEAT`** (`SKIPPED` in gold `#E49C20`, `ATOMIC` and `SEAT` in cream, framed by gold scroll flourishes at `y=17..293`).
+- **Scores (`THUMB_B_SKIPPED_ATOMIC_SEAT_v10.json`):**
+  - **HOOK: PASS** — `SKIPPED ATOMIC SEAT` (3 words, punch word `SKIPPED` in gold) names the concrete visual hero on the right two-thirds (the open, skipped element seat in Mendeleev's atomic-weight column on the wooden periodic-table cabinet; `002` script Part 04: *"Sixty-three names. Cards on a desk. Increase the atomic weight. Watch cousins fall into columns... Then he does the thing that looks like cheating. He skips a seat"* and `THUMBNAIL_AND_TITLE_RULES.md` §1.2 & §2.B.1 *"name the thing"*), shares zero words with the video title (*How Did We Discover the Periodic Table?*), `J0374` (`THE MISSING ELEMENT`), `J0442` (`PREDICTED BEFORE FOUND`), `J0488` (`EMPTY ON PURPOSE`), `J0534` (`METAL TURNS LIQUID`), `J0579` (`ONE GLOWING GAP`), or `J0624` (`SOFT MELTING GALLIUM`), and uses no vague questions or pronouns.
+  - **BAND: PASS** — Upper-left lettering band (`x=106..493`, `y=44..271`, framed by top/bottom gold scroll flourishes at `y=17..293`) sits completely left of the pushed-in glowing hero slot (`x=607..1010`), above the Explorer's hair (`y=331`), and clear of the bottom-right duration badge.
+  - **PHONE: PASS** — Checked on `168×94` preview sheet (`Selected/hos_002_thumb_B_skipped_atomic_seat_v10_preview.jpg`), style sheet (`Selected/hos_002_thumb_B_skipped_atomic_seat_v10_style_sheet.jpg`), and 4-panel strip (`Selected/hos_002_thumb_TC_4way_skipped_atomic_seat_v10_phone_168.jpg`).
+
+```
+02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/08_Thumbnail/Selected/hos_002_thumb_B_skipped_atomic_seat_v10_preview.jpg
+02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/08_Thumbnail/Selected/hos_002_thumb_B_skipped_atomic_seat_v10_style_sheet.jpg  (1 new vs 4 live long references)
+ALL CHECKS PASS (00_Brand/Channel-Setup/tools/check_all.sh 02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table)
+```
+
+**STOP:** parked for Chief: thumb B review. No Studio change made.
+
+
+## 20 Oct 2026 — Thumbnail B `v11` `WARM SILVERY DROP` (`1.05x` gallium droplet & liquid-arch hero push-in, OWB J0731)
+
+- **Selection:** HOS `002` (`AL_-qlWko_g`, *How Did We Discover the Periodic Table?*) is live on YouTube with no Test & Compare on record in `THUMB_LEDGER.json` (`003` has `T001` active; `004` has an armed test, never touched; in the `002` → `005` → `001` rotation, `002` got `B v10` in `J0670`, `005` got `B v09` in `J0700`, and `001` got `B v08` in `J0716`, making `002` next in rotation).
+- **Build (`£0` spend, existing `002` key-art plate only):** Built `Selected/hos_002_thumb_B_warm_silvery_drop_v11.jpg` (`1280×720`, `276,147` bytes, sha256 `e862a8baf9efc673e55d88adfde230c01e5ea464c66407d4b7333c90991bff71`) via `08_Thumbnail/_compose_hos_002_thumb_B_warm_silvery_drop_v11.py` and `08_Thumbnail/THUMB_B_WARM_SILVERY_DROP_v11.json` from `00_Brand/Channel-Setup/style/long/002_how_did_we_discover_the_periodic_table.jpg` (`Selected/hos_002_thumb_A_gallium_live_v02.png`) with a `1.05×` push-in + silvery droplet & liquid-arch specular clarity boost on the right-hand silvery liquid-gallium arch & falling droplet (`heroBox = [540, 14, 1276, 706]`), Explorer in lower-left at `58.3%` frame height (`420 px`, `box = [42, 300, 256, 720]`), and Georgia Bold upper-left 3-word hook **`WARM SILVERY DROP`** (`SILVERY` in gold `#E49C20`, `WARM` and `DROP` in cream, framed by the original painted gold scroll flourishes at `y=28..359`).
+- **Scores (`THUMB_B_WARM_SILVERY_DROP_v11.json`):**
+  - **HOOK: PASS** — `WARM SILVERY DROP` (3 words, punch word `SILVERY` in gold) names the concrete visible silvery falling droplet and room-temperature melting state shown by the giant liquid-gallium arch and suspended droplet on the right two-thirds (`002` script Part 05: *"gallium (1875) cool and silvery... 1875. Gallium. Soft, strange, almost liquid in a warm room"* and `THUMBNAIL_AND_TITLE_RULES.md` §1.2 & §2.B.1 *"name the thing"*), shares zero words with the video title (*How Did We Discover the Periodic Table?*), `J0374` (`THE MISSING ELEMENT`), `J0442` (`PREDICTED BEFORE FOUND`), `J0488` (`EMPTY ON PURPOSE`), `J0534` (`METAL TURNS LIQUID`), `J0579` (`ONE GLOWING GAP`), `J0624` (`SOFT MELTING GALLIUM`), or `J0670` (`SKIPPED ATOMIC SEAT`), and uses no vague questions or pronouns.
+  - **BAND: PASS** — Upper-left lettering band (`x=106..489`, `y=70..290`, framed by original painted gold scroll flourishes at `y=28..359`) sits completely left of the pushed-in hero gallium arch and droplet (`x=540..1276`), above the Explorer's hair (`y=300`) and bottom flourish (`y=311`), and clear of the bottom-right duration badge.
+  - **PHONE: PASS** — Checked on `168×94` preview sheet (`Selected/hos_002_thumb_B_warm_silvery_drop_v11_preview.jpg`), style sheet (`Selected/hos_002_thumb_B_warm_silvery_drop_v11_style_sheet.jpg`), and 4-panel strip (`Selected/hos_002_thumb_TC_4way_warm_silvery_drop_v11_phone_168.jpg`).
+
+```
+02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/08_Thumbnail/Selected/hos_002_thumb_B_warm_silvery_drop_v11_preview.jpg
+02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/08_Thumbnail/Selected/hos_002_thumb_B_warm_silvery_drop_v11_style_sheet.jpg  (1 new vs 4 live long references)
+ALL CHECKS PASS (00_Brand/Channel-Setup/tools/check_all.sh 02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table)
+```
+
+**STOP:** parked for Chief: thumb B review. No Studio change made.
+
+
+## 21 Oct 2026 — Thumbnail B `v12` `VACANT CARD SLOT` (`1.33x` periodic-table cabinet & vacant-slot hero push-in, OWB J0777)
+
+- **Selection:** HOS `002` (`AL_-qlWko_g`, *How Did We Discover the Periodic Table?*) is live on YouTube with no Test & Compare on record in `THUMB_LEDGER.json` (`003` has `T001` active; `004` has an armed test, never touched; in the `002` → `001` → `005` rotation, `002` got `B v11` in `J0731`, `001` got `B v08` in `J0746`, and `005` got `B v10` in `J0761`, making `002` next in rotation).
+- **Build (`£0` spend, existing `002` plates only):** Built `Selected/hos_002_thumb_B_vacant_card_slot_v12.jpg` (`1280×720`, `202,090` bytes, sha256 `937ca5171e179a08f09ef1e34d2138553577b18230102264a30302b6e3a853a2`) via `08_Thumbnail/_compose_hos_002_thumb_B_vacant_card_slot_v12.py` and `08_Thumbnail/THUMB_B_VACANT_CARD_SLOT_v12.json` from `_stills_v05/hos_002_empty_slot_hero_v01.jpg` with a `1.33×` push-in + golden-rim & cream-card clarity boost on the right-hand glowing vacant card slot inside Mendeleev's wooden periodic-table cabinet (`heroBox = [605, 208, 1014, 563]`, `409×355 px`), Explorer cutout from `00_Brand/Channel-Setup/style/long/002_how_did_we_discover_the_periodic_table.jpg` in lower-left at `54.0%` frame height (`389 px`, `box = [0, 331, 256, 720]`), and Georgia Bold upper-left 3-word hook **`VACANT CARD SLOT`** (`VACANT` in gold `#E49C20`, `CARD` and `SLOT` in cream, framed by gold scroll flourishes at `y=17..297`).
+- **Scores (`THUMB_B_VACANT_CARD_SLOT_v12.json`):**
+  - **HOOK: PASS** — `VACANT CARD SLOT` (3 words, punch word `VACANT` in gold) names the concrete visual hero on the right two-thirds (the glowing vacant element-card slot inside the column of cream cards on Mendeleev's wooden periodic-table cabinet; `002` script Part 04: *"Each card is one chemical element... walk toward a vacant chair with an address"* and VISUAL MUST: *"cream cards of known elements sorted by atomic weight; families drop into columns; two-three glowing empty seats / vacant card slots for eka-elements"*, plus `THUMBNAIL_AND_TITLE_RULES.md` §1.2 & §2.B.1 *"name the thing"*), shares zero words with the video title (*How Did We Discover the Periodic Table?*), `J0374` (`THE MISSING ELEMENT`), `J0442` (`PREDICTED BEFORE FOUND`), `J0488` (`EMPTY ON PURPOSE`), `J0534` (`METAL TURNS LIQUID`), `J0579` (`ONE GLOWING GAP`), `J0624` (`SOFT MELTING GALLIUM`), `J0670` (`SKIPPED ATOMIC SEAT`), or `J0731` (`WARM SILVERY DROP`), and uses no vague questions or pronouns.
+  - **BAND: PASS** — Upper-left lettering band (`x=104..497`, `y=44..275`, framed by top/bottom gold scroll flourishes at `y=17..297`) sits completely left of the pushed-in glowing hero slot (`x=605..1014`), above the Explorer's hair (`y=331`), and clear of the bottom-right duration badge.
+  - **PHONE: PASS** — Checked on `168×94` preview sheet (`Selected/hos_002_thumb_B_vacant_card_slot_v12_preview.jpg`), style sheet (`Selected/hos_002_thumb_B_vacant_card_slot_v12_style_sheet.jpg`), and 4-panel strip (`Selected/hos_002_thumb_TC_4way_vacant_card_slot_v12_phone_168.jpg`).
+
+```
+02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/08_Thumbnail/Selected/hos_002_thumb_B_vacant_card_slot_v12_preview.jpg
+02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/08_Thumbnail/Selected/hos_002_thumb_B_vacant_card_slot_v12_style_sheet.jpg  (1 new vs 4 live long references)
+ALL CHECKS PASS (00_Brand/Channel-Setup/tools/check_all.sh 02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table)
+```
+
+**STOP:** parked for Chief: thumb B review. No Studio change made.
+

@@ -1,0 +1,142 @@
+{
+  "verdict": "PASS",
+  "video": "02_Video-Projects/001_How-Did-We-Discover-Germs/10_Shorts/hos_001_s11_curved_flask_v02.mp4",
+  "rules": {
+    "kind_fail": "computer[- ]?(reconstruction|model|generated|simulation|graphic)|\\bsimulation\\b|\\bdiagram|\\bchart\\b|\\bgraph\\b|\\bschematic|\\bannotated\\b|\\blabell?ed\\b|\\bscreen ?shot|\\bwireframe|\\bcad\\b|\\binfographic",
+    "kind_warn": "\\bartist|\\billustration|\\bconcept\\b|\\brender|\\banimation\\b|\\bmap\\b|\\bmosaic\\b|\\bcomposite\\b",
+    "upscale_fail": 2.35,
+    "upscale_warn": 2.0,
+    "max_reuse": 2,
+    "max_stretches": 5,
+    "same_stretch": 10.0,
+    "pixels": "scripts/polish_gate.py"
+  },
+  "failed": [],
+  "warn": [
+    {
+      "cut": 4,
+      "row": "s05_A",
+      "source": "08_passengers_v20.mp4",
+      "title": "Flow Veo 3.1 plate 08_passengers_v20.mp4",
+      "t": 12.96,
+      "at": "0:13",
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0301 < film p5 0.0427"
+      ],
+      "offset": 0.35
+    }
+  ],
+  "rows": [
+    {
+      "cut": 0,
+      "row": "s01_0",
+      "source": "01_question_mark_flask_v17.mp4",
+      "title": "Flow Veo 3.1 plate 01_question_mark_flask_v17.mp4",
+      "t": 1.34,
+      "at": "0:01",
+      "fail": [],
+      "warn": [],
+      "offset": 1.6
+    },
+    {
+      "cut": 1,
+      "row": "s02_Vaccines?",
+      "source": "09_sceptics_watch_v17.mp4",
+      "title": "Flow Veo 3.1 plate 09_sceptics_watch_v17.mp4",
+      "t": 4.43,
+      "at": "0:04",
+      "fail": [],
+      "warn": [],
+      "offset": 0.4
+    },
+    {
+      "cut": 2,
+      "row": "s03_paradox",
+      "source": "05_tip_the_trap_v17.mp4",
+      "title": "Flow Veo 3.1 plate 05_tip_the_trap_v17.mp4",
+      "t": 7.17,
+      "at": "0:07",
+      "fail": [],
+      "warn": [],
+      "offset": 0.4
+    },
+    {
+      "cut": 3,
+      "row": "s04_emptiness",
+      "source": "04_still_clear_v21.mp4",
+      "title": "Flow Veo 3.1 plate 04_still_clear_v21.mp4",
+      "t": 9.73,
+      "at": "0:10",
+      "fail": [],
+      "warn": [],
+      "offset": 0.45
+    },
+    {
+      "cut": 4,
+      "row": "s05_A",
+      "source": "08_passengers_v20.mp4",
+      "title": "Flow Veo 3.1 plate 08_passengers_v20.mp4",
+      "t": 12.96,
+      "at": "0:13",
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0301 < film p5 0.0427"
+      ],
+      "offset": 0.35
+    },
+    {
+      "cut": 5,
+      "row": "s06_invisible",
+      "source": "11_result_returns_v01.mp4",
+      "title": "Flow Veo 3.1 plate 11_result_returns_v01.mp4",
+      "t": 16.99,
+      "at": "0:17",
+      "fail": [],
+      "warn": [],
+      "offset": 0.5
+    },
+    {
+      "cut": 6,
+      "row": "s07_loop",
+      "source": "loop_end_01_question_mark_flask_v17.mp4",
+      "title": "Loop end plate 01_question_mark_flask_v17.mp4",
+      "t": 20.86,
+      "at": "0:21",
+      "fail": [],
+      "warn": [],
+      "offset": 0.35
+    }
+  ],
+  "polish": {
+    "edge_floor": 0.0427,
+    "low_detail_floor": {
+      "std": 13.44,
+      "edge": 0.0259,
+      "calibration": {
+        "video": "025_MarsRobot_full_rough_v02d.mp4",
+        "factor": 1.2,
+        "frames": [
+          {
+            "source": "PIA22223.jpg",
+            "t": 201.0,
+            "std": 12.1,
+            "edge": 0.0223
+          },
+          {
+            "source": "PIA22223.jpg",
+            "t": 216.3,
+            "std": 11.2,
+            "edge": 0.0216
+          },
+          {
+            "source": "PIA22929.jpg",
+            "t": 297.4,
+            "std": 26.54,
+            "edge": 0.5735
+          }
+        ]
+      }
+    }
+  }
+}

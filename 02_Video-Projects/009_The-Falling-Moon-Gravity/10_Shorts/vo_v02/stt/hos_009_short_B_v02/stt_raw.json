@@ -1,0 +1,786 @@
+{
+  "language_code": "eng",
+  "language_probability": 1.0,
+  "text": "In one minute, the moon falls about as far as an apple falls in one second. Isaac Newton worked out why. The moon is 60 times further from the Earth's center than we are, so the pull on it is 60 times 60 weaker, 3,600 times, and the numbers matched. One pull for apples and moons",
+  "words": [
+    {
+      "text": "In",
+      "start": 0.08,
+      "end": 0.18,
+      "type": "word",
+      "logprob": -1.6331539882230572e-05
+    },
+    {
+      "text": " ",
+      "start": 0.18,
+      "end": 0.24,
+      "type": "spacing",
+      "logprob": -8.940656698541716e-06
+    },
+    {
+      "text": "one",
+      "start": 0.24,
+      "end": 0.38,
+      "type": "word",
+      "logprob": -8.940656698541716e-06
+    },
+    {
+      "text": " ",
+      "start": 0.38,
+      "end": 0.44,
+      "type": "spacing",
+      "logprob": -2.264974000354414e-06
+    },
+    {
+      "text": "minute,",
+      "start": 0.44,
+      "end": 0.74,
+      "type": "word",
+      "logprob": -0.00025252082969018375
+    },
+    {
+      "text": " ",
+      "start": 0.74,
+      "end": 1.06,
+      "type": "spacing",
+      "logprob": -5.245195097813848e-06
+    },
+    {
+      "text": "the",
+      "start": 1.06,
+      "end": 1.16,
+      "type": "word",
+      "logprob": -5.245195097813848e-06
+    },
+    {
+      "text": " ",
+      "start": 1.16,
+      "end": 1.22,
+      "type": "spacing",
+      "logprob": -0.04859834536910057
+    },
+    {
+      "text": "moon",
+      "start": 1.22,
+      "end": 1.44,
+      "type": "word",
+      "logprob": -0.04859834536910057
+    },
+    {
+      "text": " ",
+      "start": 1.44,
+      "end": 1.54,
+      "type": "spacing",
+      "logprob": -1.3589766240329482e-05
+    },
+    {
+      "text": "falls",
+      "start": 1.54,
+      "end": 1.76,
+      "type": "word",
+      "logprob": -1.3589766240329482e-05
+    },
+    {
+      "text": " ",
+      "start": 1.76,
+      "end": 1.82,
+      "type": "spacing",
+      "logprob": -5.960462772236497e-07
+    },
+    {
+      "text": "about",
+      "start": 1.82,
+      "end": 2.04,
+      "type": "word",
+      "logprob": -5.960462772236497e-07
+    },
+    {
+      "text": " ",
+      "start": 2.04,
+      "end": 2.08,
+      "type": "spacing",
+      "logprob": -3.576278118089249e-07
+    },
+    {
+      "text": "as",
+      "start": 2.08,
+      "end": 2.2,
+      "type": "word",
+      "logprob": -3.576278118089249e-07
+    },
+    {
+      "text": " ",
+      "start": 2.2,
+      "end": 2.24,
+      "type": "spacing",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": "far",
+      "start": 2.24,
+      "end": 2.42,
+      "type": "word",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": " ",
+      "start": 2.42,
+      "end": 2.48,
+      "type": "spacing",
+      "logprob": -4.768370445162873e-07
+    },
+    {
+      "text": "as",
+      "start": 2.48,
+      "end": 2.56,
+      "type": "word",
+      "logprob": -4.768370445162873e-07
+    },
+    {
+      "text": " ",
+      "start": 2.56,
+      "end": 2.6,
+      "type": "spacing",
+      "logprob": -4.768370445162873e-07
+    },
+    {
+      "text": "an",
+      "start": 2.6,
+      "end": 2.7,
+      "type": "word",
+      "logprob": -4.768370445162873e-07
+    },
+    {
+      "text": " ",
+      "start": 2.7,
+      "end": 2.78,
+      "type": "spacing",
+      "logprob": -9.715084888739511e-05
+    },
+    {
+      "text": "apple",
+      "start": 2.78,
+      "end": 3.06,
+      "type": "word",
+      "logprob": -9.715084888739511e-05
+    },
+    {
+      "text": " ",
+      "start": 3.06,
+      "end": 3.16,
+      "type": "spacing",
+      "logprob": -2.0265558760002023e-06
+    },
+    {
+      "text": "falls",
+      "start": 3.16,
+      "end": 3.44,
+      "type": "word",
+      "logprob": -2.0265558760002023e-06
+    },
+    {
+      "text": " ",
+      "start": 3.44,
+      "end": 3.48,
+      "type": "spacing",
+      "logprob": -7.152555099310121e-07
+    },
+    {
+      "text": "in",
+      "start": 3.48,
+      "end": 3.62,
+      "type": "word",
+      "logprob": -7.152555099310121e-07
+    },
+    {
+      "text": " ",
+      "start": 3.62,
+      "end": 3.68,
+      "type": "spacing",
+      "logprob": -4.0531076592742465e-06
+    },
+    {
+      "text": "one",
+      "start": 3.68,
+      "end": 3.86,
+      "type": "word",
+      "logprob": -4.0531076592742465e-06
+    },
+    {
+      "text": " ",
+      "start": 3.86,
+      "end": 4.059,
+      "type": "spacing",
+      "logprob": -1.7881377516459906e-06
+    },
+    {
+      "text": "second.",
+      "start": 4.059,
+      "end": 4.58,
+      "type": "word",
+      "logprob": -4.887540009284359e-06
+    },
+    {
+      "text": " ",
+      "start": 4.58,
+      "end": 4.58,
+      "type": "spacing",
+      "logprob": -7.748573807475623e-06
+    },
+    {
+      "text": "Isaac",
+      "start": 5.56,
+      "end": 5.82,
+      "type": "word",
+      "logprob": -7.748573807475623e-06
+    },
+    {
+      "text": " ",
+      "start": 5.82,
+      "end": 5.9,
+      "type": "spacing",
+      "logprob": -9.536738616588991e-07
+    },
+    {
+      "text": "Newton",
+      "start": 5.9,
+      "end": 6.22,
+      "type": "word",
+      "logprob": -9.536738616588991e-07
+    },
+    {
+      "text": " ",
+      "start": 6.22,
+      "end": 6.3,
+      "type": "spacing",
+      "logprob": -1.6689286894688848e-06
+    },
+    {
+      "text": "worked",
+      "start": 6.3,
+      "end": 6.54,
+      "type": "word",
+      "logprob": -1.6689286894688848e-06
+    },
+    {
+      "text": " ",
+      "start": 6.54,
+      "end": 6.6,
+      "type": "spacing",
+      "logprob": 0.0
+    },
+    {
+      "text": "out",
+      "start": 6.62,
+      "end": 6.76,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": " ",
+      "start": 6.76,
+      "end": 6.82,
+      "type": "spacing",
+      "logprob": -1.0728830375228426e-06
+    },
+    {
+      "text": "why.",
+      "start": 6.82,
+      "end": 7.12,
+      "type": "word",
+      "logprob": -2.354280107397244e-05
+    },
+    {
+      "text": " ",
+      "start": 7.12,
+      "end": 7.14,
+      "type": "spacing",
+      "logprob": -3.683499380713329e-05
+    },
+    {
+      "text": "The",
+      "start": 8.26,
+      "end": 8.32,
+      "type": "word",
+      "logprob": -3.683499380713329e-05
+    },
+    {
+      "text": " ",
+      "start": 8.32,
+      "end": 8.38,
+      "type": "spacing",
+      "logprob": -0.00015925093612167984
+    },
+    {
+      "text": "moon",
+      "start": 8.38,
+      "end": 8.64,
+      "type": "word",
+      "logprob": -0.00015925093612167984
+    },
+    {
+      "text": " ",
+      "start": 8.64,
+      "end": 8.68,
+      "type": "spacing",
+      "logprob": 0.0
+    },
+    {
+      "text": "is",
+      "start": 8.68,
+      "end": 8.82,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": " ",
+      "start": 8.82,
+      "end": 9.1,
+      "type": "spacing",
+      "logprob": -0.12706433236598969
+    },
+    {
+      "text": "60",
+      "start": 9.1,
+      "end": 9.28,
+      "type": "word",
+      "logprob": -2.3841855067985307e-07
+    },
+    {
+      "text": " ",
+      "start": 9.28,
+      "end": 9.32,
+      "type": "spacing",
+      "logprob": -7.152555099310121e-07
+    },
+    {
+      "text": "times",
+      "start": 9.32,
+      "end": 9.76,
+      "type": "word",
+      "logprob": -7.152555099310121e-07
+    },
+    {
+      "text": " ",
+      "start": 9.76,
+      "end": 9.86,
+      "type": "spacing",
+      "logprob": -0.00043704494601115584
+    },
+    {
+      "text": "further",
+      "start": 9.86,
+      "end": 10.26,
+      "type": "word",
+      "logprob": -0.00043704494601115584
+    },
+    {
+      "text": " ",
+      "start": 10.26,
+      "end": 10.28,
+      "type": "spacing",
+      "logprob": -2.3841855067985307e-07
+    },
+    {
+      "text": "from",
+      "start": 10.28,
+      "end": 10.42,
+      "type": "word",
+      "logprob": -2.3841855067985307e-07
+    },
+    {
+      "text": " ",
+      "start": 10.42,
+      "end": 10.46,
+      "type": "spacing",
+      "logprob": -1.6689286894688848e-06
+    },
+    {
+      "text": "the",
+      "start": 10.46,
+      "end": 10.54,
+      "type": "word",
+      "logprob": -1.6689286894688848e-06
+    },
+    {
+      "text": " ",
+      "start": 10.54,
+      "end": 10.6,
+      "type": "spacing",
+      "logprob": -0.05488456413149834
+    },
+    {
+      "text": "Earth's",
+      "start": 10.6,
+      "end": 10.84,
+      "type": "word",
+      "logprob": -0.039209884570612176
+    },
+    {
+      "text": " ",
+      "start": 10.84,
+      "end": 10.88,
+      "type": "spacing",
+      "logprob": -2.276871418871451e-05
+    },
+    {
+      "text": "center",
+      "start": 10.88,
+      "end": 11.22,
+      "type": "word",
+      "logprob": -2.276871418871451e-05
+    },
+    {
+      "text": " ",
+      "start": 11.22,
+      "end": 11.28,
+      "type": "spacing",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": "than",
+      "start": 11.28,
+      "end": 11.42,
+      "type": "word",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": " ",
+      "start": 11.42,
+      "end": 11.48,
+      "type": "spacing",
+      "logprob": 0.0
+    },
+    {
+      "text": "we",
+      "start": 11.48,
+      "end": 11.62,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": " ",
+      "start": 11.62,
+      "end": 11.68,
+      "type": "spacing",
+      "logprob": 0.0
+    },
+    {
+      "text": "are,",
+      "start": 11.68,
+      "end": 11.82,
+      "type": "word",
+      "logprob": -0.00048230227548629045
+    },
+    {
+      "text": " ",
+      "start": 11.82,
+      "end": 11.82,
+      "type": "spacing",
+      "logprob": -5.960462772236497e-07
+    },
+    {
+      "text": "so",
+      "start": 12.42,
+      "end": 12.52,
+      "type": "word",
+      "logprob": -5.960462772236497e-07
+    },
+    {
+      "text": " ",
+      "start": 12.52,
+      "end": 12.56,
+      "type": "spacing",
+      "logprob": 0.0
+    },
+    {
+      "text": "the",
+      "start": 12.56,
+      "end": 12.66,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": " ",
+      "start": 12.66,
+      "end": 12.7,
+      "type": "spacing",
+      "logprob": -7.152555099310121e-07
+    },
+    {
+      "text": "pull",
+      "start": 12.7,
+      "end": 12.84,
+      "type": "word",
+      "logprob": -7.152555099310121e-07
+    },
+    {
+      "text": " ",
+      "start": 12.84,
+      "end": 12.88,
+      "type": "spacing",
+      "logprob": 0.0
+    },
+    {
+      "text": "on",
+      "start": 12.88,
+      "end": 12.98,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": " ",
+      "start": 12.98,
+      "end": 13.06,
+      "type": "spacing",
+      "logprob": 0.0
+    },
+    {
+      "text": "it",
+      "start": 13.06,
+      "end": 13.24,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": " ",
+      "start": 13.24,
+      "end": 13.3,
+      "type": "spacing",
+      "logprob": 0.0
+    },
+    {
+      "text": "is",
+      "start": 13.3,
+      "end": 13.44,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": " ",
+      "start": 13.44,
+      "end": 13.7,
+      "type": "spacing",
+      "logprob": -0.00975992251187563
+    },
+    {
+      "text": "60",
+      "start": 13.7,
+      "end": 13.84,
+      "type": "word",
+      "logprob": -3.5762775496550603e-07
+    },
+    {
+      "text": " ",
+      "start": 13.84,
+      "end": 13.94,
+      "type": "spacing",
+      "logprob": -1.9073468138230965e-06
+    },
+    {
+      "text": "times",
+      "start": 13.94,
+      "end": 14.18,
+      "type": "word",
+      "logprob": -1.9073468138230965e-06
+    },
+    {
+      "text": " ",
+      "start": 14.18,
+      "end": 14.56,
+      "type": "spacing",
+      "logprob": -3.576278118089249e-07
+    },
+    {
+      "text": "60",
+      "start": 14.56,
+      "end": 14.76,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": " ",
+      "start": 14.76,
+      "end": 14.88,
+      "type": "spacing",
+      "logprob": -0.0004904259694740176
+    },
+    {
+      "text": "weaker,",
+      "start": 14.88,
+      "end": 15.3,
+      "type": "word",
+      "logprob": -0.0004223576009150877
+    },
+    {
+      "text": " ",
+      "start": 15.3,
+      "end": 15.3,
+      "type": "spacing",
+      "logprob": -4.768370445162873e-07
+    },
+    {
+      "text": "3,600",
+      "start": 16.36,
+      "end": 17.92,
+      "type": "word",
+      "logprob": -3.1232615242515747e-06
+    },
+    {
+      "text": " ",
+      "start": 17.92,
+      "end": 17.98,
+      "type": "spacing",
+      "logprob": -1.1920922133867862e-06
+    },
+    {
+      "text": "times,",
+      "start": 17.98,
+      "end": 18.52,
+      "type": "word",
+      "logprob": -9.512229920953057e-05
+    },
+    {
+      "text": " ",
+      "start": 18.52,
+      "end": 18.52,
+      "type": "spacing",
+      "logprob": -1.311301275563892e-06
+    },
+    {
+      "text": "and",
+      "start": 19.0,
+      "end": 19.1,
+      "type": "word",
+      "logprob": -1.311301275563892e-06
+    },
+    {
+      "text": " ",
+      "start": 19.1,
+      "end": 19.12,
+      "type": "spacing",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": "the",
+      "start": 19.12,
+      "end": 19.2,
+      "type": "word",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": " ",
+      "start": 19.2,
+      "end": 19.24,
+      "type": "spacing",
+      "logprob": -5.960462772236497e-07
+    },
+    {
+      "text": "numbers",
+      "start": 19.24,
+      "end": 19.58,
+      "type": "word",
+      "logprob": -5.960462772236497e-07
+    },
+    {
+      "text": " ",
+      "start": 19.58,
+      "end": 19.7,
+      "type": "spacing",
+      "logprob": -1.7523612768854946e-05
+    },
+    {
+      "text": "matched.",
+      "start": 19.7,
+      "end": 20.18,
+      "type": "word",
+      "logprob": -3.135088354611071e-05
+    },
+    {
+      "text": " ",
+      "start": 20.18,
+      "end": 20.8,
+      "type": "spacing",
+      "logprob": -2.682172998902388e-05
+    },
+    {
+      "text": "One",
+      "start": 20.8,
+      "end": 20.96,
+      "type": "word",
+      "logprob": -2.682172998902388e-05
+    },
+    {
+      "text": " ",
+      "start": 20.96,
+      "end": 21.06,
+      "type": "spacing",
+      "logprob": -0.0008229206432588398
+    },
+    {
+      "text": "pull",
+      "start": 21.06,
+      "end": 21.34,
+      "type": "word",
+      "logprob": -0.0008229206432588398
+    },
+    {
+      "text": " ",
+      "start": 21.34,
+      "end": 21.88,
+      "type": "spacing",
+      "logprob": -1.0728830375228426e-06
+    },
+    {
+      "text": "for",
+      "start": 21.88,
+      "end": 22.0,
+      "type": "word",
+      "logprob": -1.0728830375228426e-06
+    },
+    {
+      "text": " ",
+      "start": 22.0,
+      "end": 22.08,
+      "type": "spacing",
+      "logprob": -8.22540732769994e-06
+    },
+    {
+      "text": "apples",
+      "start": 22.08,
+      "end": 22.52,
+      "type": "word",
+      "logprob": -8.22540732769994e-06
+    },
+    {
+      "text": " ",
+      "start": 22.52,
+      "end": 22.54,
+      "type": "spacing",
+      "logprob": -4.887569048150908e-06
+    },
+    {
+      "text": "and",
+      "start": 22.54,
+      "end": 22.64,
+      "type": "word",
+      "logprob": -4.887569048150908e-06
+    },
+    {
+      "text": " ",
+      "start": 22.64,
+      "end": 22.74,
+      "type": "spacing",
+      "logprob": -2.622600959512056e-06
+    },
+    {
+      "text": "moons",
+      "start": 22.74,
+      "end": 23.3,
+      "type": "word",
+      "logprob": -2.622600959512056e-06
+    }
+  ],
+  "transcription_id": "Bl6QEgOOMEiZcqYr9yXT",
+  "audio_duration_secs": 23.44
+}

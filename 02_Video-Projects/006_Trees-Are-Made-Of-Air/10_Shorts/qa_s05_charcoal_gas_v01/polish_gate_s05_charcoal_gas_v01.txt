@@ -1,0 +1,8 @@
+s01_0     2.0s 18_charcoal_hearth_t1.mp4    ok
+s02_and     5.6s 19_ash_mound_t1.mp4          ok
+s03_The     9.9s 20_shimmer_coals_t1.mp4      WARN low detail: edge density 0.0285 < film p5 0.0309
+s04_He    14.2s 15_desk_candle_t1_above_desk ok
+s05_We    17.8s 06_leaf_in_t1.mp4            ok
+s06_He    21.4s 06_garden_years_t2.mp4       ok
+s07_loop    24.6s loop_end_18_charcoal_hearth_ ok
+polish gate PASS: 0 of 7 rows failed, 1 to look at -> /Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/qa_s05_charcoal_gas_v01/polish_gate_s05_charcoal_gas_v01.json

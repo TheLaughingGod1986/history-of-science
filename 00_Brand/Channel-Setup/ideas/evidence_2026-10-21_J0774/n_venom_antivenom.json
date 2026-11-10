@@ -1,0 +1,142 @@
+{
+ "pulled": "2026-10-21",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "snake venom",
+  "poison vs venom",
+  "why dont snakes poison themselves"
+ ],
+ "autocomplete": {
+  "snake venom": [
+   "snake venom",
+   "snake venom vs human blood",
+   "snake venom extraction",
+   "snake venom in blood",
+   "snake venom beer",
+   "snake venom collection",
+   "snake venom under microscope",
+   "snake venom in human blood",
+   "snake venom vs blood",
+   "snake venom milking"
+  ],
+  "poison vs venom": [
+   "poison vs venom",
+   "poison vs venom vs toxin",
+   "poisonous vs venomous meme",
+   "poisonous vs venomous snake",
+   "poisonous vs venomous undertale",
+   "toxin vs venom",
+   "toxin vs venom and carnage",
+   "poisonous or venomous meme",
+   "poisonous or venomous",
+   "poison ivy vs venom"
+  ],
+  "why dont snakes poison themselves": []
+ },
+ "sharedTitleWords": [
+  "poison themselves",
+  "than they"
+ ],
+ "neighbours": [
+  {
+   "id": "KnJ4_xRfxpA",
+   "title": "Poison vs. venom: What's the difference? - Rose Eveleth",
+   "channel": "TED-Ed",
+   "views": "3,121,287 views",
+   "age": "12 yr ago",
+   "length": "3:56",
+   "tier": 1,
+   "viewCount": 3121287,
+   "foundBy": "ted-ed snake venom",
+   "onTopic": true
+  },
+  {
+   "id": "-sEpBGF106k",
+   "title": "Why don’t poisonous animals poison themselves? - Rebecca D. Tarvin",
+   "channel": "TED-Ed",
+   "views": "2,636,274 views",
+   "age": "8 yr ago",
+   "length": "5:10",
+   "tier": 1,
+   "viewCount": 2636274,
+   "foundBy": "ted-ed snake venom",
+   "onTopic": true
+  },
+  {
+   "id": "s_Cs1nbbv_M",
+   "title": "Watch this if you're scared of snakes - Andrew Whitworth",
+   "channel": "TED-Ed",
+   "views": "1,506,410 views",
+   "age": "4 yr ago",
+   "length": "5:10",
+   "tier": 1,
+   "viewCount": 1506410,
+   "foundBy": "ted-ed snake venom",
+   "onTopic": true
+  },
+  {
+   "id": "m2BE9GZJJbs",
+   "title": "How do snakes swallow animals so much bigger than they are? - Niko Zlotnik",
+   "channel": "TED-Ed",
+   "views": "465,925 views",
+   "age": "6 mo ago",
+   "length": "6:47",
+   "tier": 1,
+   "viewCount": 465925,
+   "foundBy": "ted-ed snake venom",
+   "onTopic": true
+  },
+  {
+   "id": "EzoqvBZe_gI",
+   "title": "Why Don't Snakes Poison Themselves?",
+   "channel": "MinuteEarth",
+   "views": "1,149,028 views",
+   "age": "2 yr ago",
+   "length": "3:46",
+   "tier": 2,
+   "viewCount": 1149028,
+   "foundBy": "ted-ed snake venom",
+   "onTopic": true
+  },
+  {
+   "id": "fp1r40w_PtA",
+   "title": "What Happens When a Venomous Snake Bites Itself?",
+   "channel": "SciShow",
+   "views": "645,067 views",
+   "age": "5 yr ago",
+   "length": "6:43",
+   "tier": 2,
+   "viewCount": 645067,
+   "foundBy": "why dont snakes poison themselves",
+   "onTopic": true
+  },
+  {
+   "id": "5LRhKegPCRY",
+   "title": "The power of venom -- and how it could one day save your life | Mandë Holford | TED",
+   "channel": "TED",
+   "views": "39,345 views",
+   "age": "5 yr ago",
+   "length": "9:17",
+   "tier": 1,
+   "viewCount": 39345,
+   "foundBy": "ted-ed snake venom",
+   "onTopic": true
+  },
+  {
+   "id": "ZBic5uUJNv4",
+   "title": "Can snakes really save more lives than they take?  | Kristen Wiley & James Harrison | TEDxCorbin",
+   "channel": "TEDx Talks",
+   "views": "9,099 views",
+   "age": "7 yr ago",
+   "length": "10:52",
+   "tier": 1,
+   "viewCount": 9099,
+   "foundBy": "ted-ed snake venom",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 4,
+ "gate": "PASS",
+ "hasTed": true,
+ "failedQueries": []
+}

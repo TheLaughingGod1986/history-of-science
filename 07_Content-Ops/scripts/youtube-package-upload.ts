@@ -1,7 +1,11 @@
 #!/usr/bin/env tsx
 /**
- * History of Science YouTube package upload — Data API for everything it can do,
- * plus a Studio finish checklist for ABC / pin / Related / end screens.
+ * YouTube package upload, shared by Orbit With Ben and History of Science (studio core, 15 Oct 2026) — Data API
+ * for everything it can do, plus a Studio finish checklist for ABC / pin / Related / end screens.
+ *
+ * What stays each channel's own lives in its scripts/channel-youtube.ts: the sign-in, the desk guard, the category
+ * and language (UPLOAD), the duplicate check before the upload and what runs after it (Orbit: uploads.json and the
+ * Buffer mirror). The Shorts ship gate is shared and has no override.
  *
  * Usage:
  *   npm run youtube:package -- \
@@ -10,16 +14,13 @@
  *     --dry-run
  *
  * Optional: PACKAGE_MANIFEST.json inside the package dir, or --manifest path.
- * Loads 07_Content-Ops/.env. `.env` keeps PUBLISHING_DRY_RUN on; a live upload is
- *   PUBLISHING_DRY_RUN=false npm run youtube:package -- …
  * After a live upload, writes *_PACKAGE_UPLOAD_RESULT.json into Schedule/ (or package root).
  */
 import fs from "fs";
 import path from "path";
-import { prisma } from "../src/lib/storage/prisma";
-import { getEnv, isDryRun } from "../src/lib/env";
-import { decryptSecret } from "../src/lib/security/token-crypto";
-import { YouTubePublishingAdapter } from "../src/lib/publishing/adapters/youtube";
+import * as channel from "./channel-youtube";
+import { isDryRun } from "../src/lib/env";
+import { uploadToYouTube } from "../src/lib/youtube/upload";
 import {
   addVideoToYouTubePlaylist,
   buildStudioFinishChecklist,
@@ -27,6 +28,9 @@ import {
   loadYouTubePackage,
   postYouTubeTopLevelComment,
 } from "../src/lib/publishing/youtube-package";
+import { runShortsGate } from "../src/lib/publishing/shorts-gate";
+
+const REPO_ROOT = path.resolve(__dirname, "..", "..");
 
 function arg(name: string): string | undefined {
   const idx = process.argv.indexOf(`--${name}`);
@@ -47,11 +51,10 @@ function parseBool(v: string | undefined, fallback: boolean): boolean {
 }
 
 async function main() {
-  getEnv();
   const packageDir = arg("package");
   if (!packageDir) {
     console.error(
-      "Usage: youtube-package-upload.ts --package <11_Upload-Package> --video <mp4> [--manifest path] [--schedule ISO] [--thumbnail path] [--playlist-id ID] [--related-video-id ID] [--format longform|shorts] [--privacy private] [--made-for-kids false] [--skip-comment] [--dry-run]",
+      `Usage: youtube-package-upload.ts --package <11_Upload-Package> --video <mp4> [--manifest path] [--schedule ISO] [--thumbnail path] [--playlist-id ID] [--related-video-id ID] [--format longform|shorts] [--privacy private] [--made-for-kids false] [--skip-comment] [--dry-run] ${channel.UPLOAD_FLAGS}`,
     );
     process.exit(1);
   }
@@ -76,52 +79,28 @@ async function main() {
     },
   });
 
-  // Re-validate a stored row first, so one failed refresh doesn't leave it stuck at "expired".
-  {
-    const { youtubeAccessToken } = await import("../src/lib/publishing/youtube-token");
-    await youtubeAccessToken().catch((err: unknown) => {
-      console.error(err instanceof Error ? err.message : String(err));
-      process.exit(1);
-    });
-  }
-  const connection = await prisma.platformConnection.findFirst({
-    where: {
-      platform: "youtube_shorts",
-      connectionStatus: "connected",
-      disconnectedAt: null,
-    },
-    orderBy: { updatedAt: "desc" },
-  });
-  if (!connection?.accessTokenEncrypted) {
-    console.error(
-      "No connected YouTube account. Connect Google OAuth on /settings/connections (reconnect after scope updates).",
-    );
-    process.exit(1);
-  }
+  // The channel's own check before anything is sent (Orbit: refuses a second upload of the same film).
+  const identity = await channel.beforeUpload({ resolved, flag, repoRoot: REPO_ROOT });
 
-  const adapter = new YouTubePublishingAdapter();
-  if (
-    connection.accessTokenExpiresAt &&
-    connection.accessTokenExpiresAt.getTime() < Date.now() + 60_000 &&
-    adapter.refreshConnection
-  ) {
-    const refreshed = await adapter.refreshConnection(connection);
-    if (!refreshed.ok) {
-      console.error(`Token refresh failed: ${refreshed.message}`);
+  // Shorts ship gate: a hard stop, dry run included, so the dry run shows the verdict. No override (Never list).
+  if (resolved.format === "shorts") {
+    const gate = runShortsGate({
+      videoPath: resolved.videoPath, repoRoot: REPO_ROOT, scheduledAt: resolved.scheduledAt,
+      lengthTest: resolved.lengthTest,
+    });
+    console.log(gate.output);
+    if (!gate.ok) {
+      console.error(`gate_shorts_open FAILED (exit ${gate.exitCode}, air date ${gate.airDate}): not uploading. Fix the cut.`);
       process.exit(1);
     }
   }
 
-  const fresh = await prisma.platformConnection.findUnique({ where: { id: connection.id } });
-  if (!fresh?.accessTokenEncrypted) {
-    console.error("Missing access token");
-    process.exit(1);
-  }
-  const accessToken = decryptSecret(fresh.accessTokenEncrypted);
+  // Dry runs never need the YouTube login.
+  const accessToken = dryRun ? "" : await channel.youtubeAccessToken();
 
   const hashtagsJson = JSON.stringify(resolved.tags);
 
-  const upload = await adapter.publish(
+  const upload = await uploadToYouTube(
     {
       id: `pkg-${Date.now()}`,
       platform: "youtube_shorts",
@@ -136,14 +115,7 @@ async function main() {
       thumbnailPath: resolved.thumbnailPath,
       contentFormat: resolved.format,
     },
-    fresh,
-    {
-      dryRun,
-      workerId: "youtube-package-upload-cli",
-      jobId: `pkg-${Date.now()}`,
-      attemptNumber: 1,
-      accessToken,
-    },
+    { dryRun, accessToken, channel: channel.UPLOAD },
   );
 
   let firstCommentPosted = false;
@@ -153,10 +125,7 @@ async function main() {
 
   if (!dryRun && upload.success && upload.platformPostId) {
     if (resolved.pinnedComment && !skipComment) {
-      const channelId =
-        fresh.channelId ||
-        fresh.accountUsername ||
-        (await fetchMineYouTubeChannelId(accessToken));
+      const channelId = await fetchMineYouTubeChannelId(accessToken);
       if (channelId) {
         const comment = await postYouTubeTopLevelComment({
           accessToken,
@@ -182,6 +151,20 @@ async function main() {
     }
   }
 
+  // The channel's own steps after a live upload (Orbit: uploads.json and the Buffer mirror). Never fails the upload.
+  const after =
+    !dryRun && upload.success && upload.platformPostId
+      ? await channel.afterUpload({ videoId: upload.platformPostId, resolved, identity, flag, repoRoot: REPO_ROOT })
+      : {};
+
+  // The upload succeeds even when YouTube refuses the thumbnail (403 on 022, 9 Oct): the reason is only in the message.
+  const thumbnailSkipped = /thumbnail skipped/i.test(upload.message || "");
+  if (!dryRun && resolved.thumbnailPath && thumbnailSkipped) {
+    console.error(
+      `THUMBNAIL NOT SET on ${upload.platformPostId}: ${upload.message}. Set it in Studio (or re-run the thumbnail) before go-live; the video shows an auto frame until then.`,
+    );
+  }
+
   const checklist = buildStudioFinishChecklist({
     videoId: upload.platformPostId || null,
     format: resolved.format,
@@ -190,7 +173,7 @@ async function main() {
     pinnedComment: resolved.pinnedComment,
     relatedVideoId: resolved.relatedVideoId,
     firstCommentPosted,
-    thumbnailSet: Boolean(resolved.thumbnailPath) && (dryRun || upload.success),
+    thumbnailSet: Boolean(resolved.thumbnailPath) && (dryRun || (upload.success && !thumbnailSkipped)),
     playlistAdded,
     playlistId: resolved.playlistId,
   });
@@ -209,6 +192,7 @@ async function main() {
       responseSummary: upload.responseSummary || null,
     },
     package: {
+      ...identity,
       title: resolved.title,
       format: resolved.format,
       privacy: resolved.privacy,
@@ -224,6 +208,7 @@ async function main() {
       playlistAdded,
       playlistMessage,
     },
+    ...after,
     studioFinish: checklist,
   };
 
@@ -240,9 +225,11 @@ async function main() {
   if (!upload.success) process.exit(1);
 }
 
+channel.beforeRun();
+
 main()
   .catch((e) => {
     console.error(e);
-    process.exit(1);
+    process.exitCode = 1;
   })
-  .finally(async () => prisma.$disconnect());
+  .finally(() => channel.afterRun());
