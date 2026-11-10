@@ -1,21 +1,22 @@
-# Production status — 101 How Does Life Survive at the Bottom of the Ocean?
+# Production status — 101 How Do Deep Sea Vents Feed Life Without Sunlight?
 
 | Field | Value |
 |---|---|
 | Slug | `101_Corliss-Ballard-Cavanaugh-Deep-Sea-Hydrothermal-Vents` |
 | Channel | `@HistoryOfScienceYT` only |
-| Topic | Backlog candidate (`J2411`, 8 Nov 2026): queued in `jobs/WIP.json` `next_hos`, Rule-E go/no-go review queued |
-| Working Title (A) | *How Does Life Survive at the Bottom of the Ocean?* |
-| Title B (T&C) | *Deep Sea Vents: The World That Lives Without Sun* |
-| Neighbour gate | **PASS** — `3` education videos `≥1M` views (`TED-Ed/TED: yes`, led by Kurzgesagt `25.80M` *What's Hiding at the Most Solitary Place on Earth? The Deep Sea*, TED `1.55M` Karen Lloyd, and TED-Ed `1.16M` David Gallo *Deep ocean mysteries and wonders*) |
-| Public search | Saved (`11_Upload-Package/evidence_2026-11-08_public_search.json`; `"hydrothermal vents"`, `"deep sea ecosystems"`, and `"chemosynthesis"` all autocomplete `yes`) |
-| Script review | — / 90 (waits on Rule E & Rule G WIP slot) |
+| Topic | **Rule-E Topic Review `GO` (`J2473`, 10 Nov 2026 · `95/100`)**: pre-cleared in `jobs/WIP.json` `next_hos` under Rule G (waits for an active HOS slot to free up). Packages: [`TOPIC_GO_NO_GO_SHEET.md`](11_Upload-Package/TOPIC_GO_NO_GO_SHEET.md) · [`TOPIC_OPPORTUNITY_SCORE.md`](11_Upload-Package/TOPIC_OPPORTUNITY_SCORE.md) · [`PRE_BUILD_VIDIQ_AUDIT.md`](11_Upload-Package/PRE_BUILD_VIDIQ_AUDIT.md) |
+| Working Title (A1 — Collision-Free Primary) | *How Do Deep Sea Vents Feed Life Without Sunlight?* (`49 chars`, `0` exact collisions; replaces `J2411` working string *How Does Life Survive at the Bottom of the Ocean?* which has `1` exact match `U5pd5BfX-5s`) |
+| Title B (T&C) | *Deep Sea Vents: The World That Lives Without Sun* (`48 chars`, `0` exact collisions) |
+| Title D (Rule 26) | *Deep Sea Hydrothermal Vents (The 1977 Dive That Found Sunless Life)* (`67 chars`, `0` exact collisions; exact autocomplete phrase `"deep sea hydrothermal vents"` first) |
+| Neighbour gate | **PASS** — `3` education videos `≥1M` views (`TED-Ed/TED: yes`, led by Kurzgesagt `25.80M` `PaErPyEnDvk` *What's Hiding at the Most Solitary Place on Earth? The Deep Sea*, TED `1.55M` `PbgB2TaYhio` Karen Lloyd, and TED-Ed `1.16M` `Uqly8ERIkHM` David Gallo *Deep ocean mysteries and wonders*) |
+| Public search | Saved (`11_Upload-Package/evidence_2026-11-08_public_search.json`; `"hydrothermal vents"`, `"deep sea hydrothermal vents"`, `"deep sea vents"`, `"deep sea ecosystems"`, `"chemosynthesis"`, and `"life at the bottom of the ocean"` all autocomplete `yes`; ranking videos `PaErPyEnDvk` `25.80M` & `1LrcTa0dDmw` `6.81M`) |
+| Script review | — / 90 (waits on Rule G active HOS WIP slot) |
 | Episode gate | not run |
 | VO | pending (Ben Orbit Narrator) |
 | Picture | pending (Flow Veo 3.1, plate library) |
 | Runtime target | 7–9 min, 5 parts |
 | Air | Backlog (`next_hos`) — Thursday 18:00 UK, normal publish (no Premiere) |
-| Shorts | 2 search-titled Shorts planned (`S01`: *How Do Giant Worms Live Without Sunlight?*, `S02`: *Why Doesn't 400°C Deep-Sea Water Boil?*) |
+| Shorts | 2 search-titled Shorts pre-designed (`S01`: *How Do Giant Worms Live Without Sunlight?*, `S02`: *Why Doesn't 400°C Deep-Sea Water Boil?* / *How Can Deep-Sea Vent Water Reach 400°C?*; expands to 4 Shorts on active build per `STUDIO_PLAYBOOK.md` §1) |
 
 ## Topic Gate Evidence (`neighbours.py` & `public_search.py` PASS)
 

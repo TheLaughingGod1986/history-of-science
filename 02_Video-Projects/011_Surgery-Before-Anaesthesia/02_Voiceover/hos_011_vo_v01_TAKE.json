@@ -1,0 +1,280 @@
+{
+  "stem": "hos_011_vo_v01",
+  "voice": "Ben Orbit Narrator",
+  "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+  "model_id": "eleven_v3",
+  "settings": {
+    "stability": 0.34,
+    "similarity_boost": 0.78,
+    "style": 0.42,
+    "speed": 1.04,
+    "use_speaker_boost": true
+  },
+  "orders": [
+    "J2231",
+    "J0224",
+    "J2245"
+  ],
+  "retake_of": null,
+  "chapters": [
+    {
+      "title": "open",
+      "chars": 1277,
+      "duration_s": 86.8
+    },
+    {
+      "title": "A Gas That Made People Laugh · 1:30 · ~1.5 s",
+      "chars": 1165,
+      "duration_s": 88.16
+    },
+    {
+      "title": "This Is No Humbug · 3:10 · ~1.5 s",
+      "chars": 1254,
+      "duration_s": 95.52
+    },
+    {
+      "title": "The Fight Over Who Was First · 5:00 · ~1.5 s",
+      "chars": 1201,
+      "duration_s": 93.68
+    },
+    {
+      "title": "Across the Ocean · 6:30 · ~1.5 s",
+      "chars": 2044,
+      "duration_s": 165.76
+    }
+  ],
+  "gap_s": 0.7,
+  "spoken_chars": 6941,
+  "words": 1230,
+  "duration_s": 532.72,
+  "loudness": {
+    "lufs_integrated": -19.6,
+    "mean_volume_db": -23.1,
+    "max_volume_db": -3.6
+  },
+  "sha256_mp3": "9fdd84d50ac2f85bcdf8aea0d5ceefd261cae5458dafa1e6865adf2a3053f496",
+  "scribe": {
+    "transcript": "Before 1846, the best surgeon in the world was simply the fastest one. Why? Because the patient was awake for every second of it, and in Europe and America, nobody knew how to stop the pain. In London, one surgeon was famous for his speed. His students timed him with their pocket watches, and he could take off a leg in just a few minutes. Then in one week in the autumn of 1846, all of that changed. In Boston, a dentist held a glass globe to a young man's face, and the young man felt nothing at all. So how do you put a person safely to sleep and bring them back again? Who worked it out first? And why did the men who found it spend the rest of their lives arguing about it? By the end of this film, you'll know how a party trick, a country doctor, and a room full of doubters turned surgery from a race into something you could sleep through. Picture yourself in 1840 about to have an operation. There's no injection, no mask, no sleep, just a strong drink perhaps and a few people to hold you still. What would you want most from your surgeon? Not a gentle touch. Speed. Surgeons had wished for something better for centuries, and the strange thing is the answer had already been written down nearly fifty years earlier. In 1800 in Bristol, a young chemist called Humphry Davy was breathing a gas called nitrous oxide. It made him giddy and made him laugh. People soon called it laughing gas. Davy noticed something else. When he had a sore tooth, the gas seemed to take the pain away, so he wrote that it might be useful during surgical operations. Nobody followed it up. Instead, laughing gas and another vapor called ether became party tricks. Traveling showmen let audiences breathe them on stage, and young people held ether frolics where guests staggered around laughing. And at those parties, something odd kept happening. People would fall over, bang their knees and elbows, and not feel a thing until the next morning. In a small town in Georgia, a young doctor called Crawford Long noticed. In March 1842, a patient called James Venable needed a lump removed from his neck. Long gave him ether on a towel and cut. Venable felt nothing. It worked. But Long didn't tell the wider world. He didn't publish what he'd done for another seven years. So if a country doctor had already done it quietly, who would be the one to show everyone? In Hartford, Connecticut, a dentist called Horace Wells saw a laughing gas show in December 1844. The next day, he breathed the gas himself and had a colleague pull out one of his own teeth. He felt nothing. Wells was thrilled. A few weeks later, he went to a famous hospital in Boston to show the doctors there. It went wrong. The gas wasn't enough, and the patient said it hurt. The students in the room called it a humbug, a fake. But Wells' old business partner was in that room, a young dentist called William Morton, and he didn't give up on the idea. He tried a different vapor instead, ether. On the sixteenth of October, 1846, Morton walked into the same Boston hospital carrying a glass globe. A young man called Edward Abbott had a lump on his neck. Morton held the globe to his mouth, and Abbott breathed the ether in and slowly fell asleep. The surgeon, John Collins Warren, began. Abbott didn't scream. He didn't move. When it was over, Warren is said to have turned to the packed room and told them, \"Gentlemen, this is no humbug.\" The room where it happened is still there. It's called the Ether Dome, and within weeks the news was crossing the Atlantic. A happy ending then? Case closed? Wrong. Morton didn't want to give his discovery away. He colored the ether and hid its smell so nobody could tell what it was. He called it Letheon after a river in the old Greek stories that made people forget, and he took out a patent on it. But doctors soon worked out it was ether. You can't keep a secret like that in a busy hospital. A month after the operation, a doctor and poet called Oliver Wendell Holmes wrote Morton a letter. He suggested a new word for this sleep without pain, anesthesia, from the Greek for without feeling. Then the arguing started. Morton said he was first. His old teacher, a chemist called Charles Jackson, said the idea had been his. Horace Wells said he'd done it two years earlier. And from Georgia, Crawford Long said he'd done it before any of them. The fight dragged on for years in newspapers and in courtrooms, and none of the four men ended it rich or happy. So who really was first? In a way, Boston gave its answer. In the city's public garden, there's a tall stone monument to ether. It celebrates the discovery, and it doesn't name a single one of them. Meanwhile, across the ocean, the fastest surgeon in London was about to try it for himself. On the 21st of December 1846 in London, Robert Liston tried ether for himself. His patient slept through the whole operation. When he woke, he is said to have asked when it would begin. It was already over. Liston was delighted. He is said to have told the room, \"This Yankee dodge, gentlemen, beats mesmerism hollow.\" The fastest knife in London no longer needed to be fast. The next year in Edinburgh, a doctor called James Young Simpson went looking for something even better. One evening, he and two friends sniffed a liquid called chloroform at his dinner table, and moments later, all three were out cold on the floor. When they woke, Simpson knew he'd found it. Not everyone trusted it. Then in 1853, a London doctor called John Snow gave chloroform to Queen Victoria for the birth of her son, Prince Leopold. If it was good enough for the Queen, people decided, it was good enough for them. But here's the frightening question: Is it safe to be put to sleep like that? Doesn't it sometimes go wrong? Today, for a healthy adult, deaths caused by an anesthetic are very rare, about one in every hundred thousand. Imagine a stadium full of 90,000 people all going to sleep for an operation. On average, fewer than one of them would die because of the anesthetic. That's because a specially trained doctor, an anesthetist, stays beside you the whole time. They watch every heartbeat and every breath, and they keep adjusting the medicine so you stay just asleep enough and no more. Why was this so groundbreaking? Because it changed what surgery could be. Once the patient slept, surgeons could slow down, take care, and try operations that nobody would ever have dared before. But there was still one problem. Many patients slept peacefully through their operations and then fell ill a few days later. The answer to that would need a microscope, a spray, and a surgeon called Joseph Lister. A gas, a bag, and a globe. Together, they turned surgery from a race into a sleep.",
+    "script_words": 1238,
+    "scribe_words": 1221,
+    "match_rate_pct": 96.93,
+    "exact_match": false,
+    "mismatches": [
+      {
+        "op": "replace",
+        "script": [
+          "eighteen",
+          "forty",
+          "six"
+        ],
+        "scribe": [
+          "1846"
+        ]
+      },
+      {
+        "op": "replace",
+        "script": [
+          "eighteen",
+          "forty",
+          "six"
+        ],
+        "scribe": [
+          "1846"
+        ]
+      },
+      {
+        "op": "replace",
+        "script": [
+          "eighteen",
+          "forty"
+        ],
+        "scribe": [
+          "1840"
+        ]
+      },
+      {
+        "op": "replace",
+        "script": [
+          "eighteen",
+          "hundred"
+        ],
+        "scribe": [
+          "1800"
+        ]
+      },
+      {
+        "op": "replace",
+        "script": [
+          "vapour"
+        ],
+        "scribe": [
+          "vapor"
+        ]
+      },
+      {
+        "op": "replace",
+        "script": [
+          "travelling"
+        ],
+        "scribe": [
+          "traveling"
+        ]
+      },
+      {
+        "op": "replace",
+        "script": [
+          "eighteen",
+          "forty",
+          "two"
+        ],
+        "scribe": [
+          "1842"
+        ]
+      },
+      {
+        "op": "replace",
+        "script": [
+          "eighteen",
+          "forty",
+          "four"
+        ],
+        "scribe": [
+          "1844"
+        ]
+      },
+      {
+        "op": "replace",
+        "script": [
+          "wells's"
+        ],
+        "scribe": [
+          "wells'"
+        ]
+      },
+      {
+        "op": "replace",
+        "script": [
+          "vapour"
+        ],
+        "scribe": [
+          "vapor"
+        ]
+      },
+      {
+        "op": "replace",
+        "script": [
+          "eighteen",
+          "forty",
+          "six"
+        ],
+        "scribe": [
+          "1846"
+        ]
+      },
+      {
+        "op": "replace",
+        "script": [
+          "coloured"
+        ],
+        "scribe": [
+          "colored"
+        ]
+      },
+      {
+        "op": "replace",
+        "script": [
+          "anaesthesia"
+        ],
+        "scribe": [
+          "anesthesia"
+        ]
+      },
+      {
+        "op": "replace",
+        "script": [
+          "twenty",
+          "first"
+        ],
+        "scribe": [
+          "21st"
+        ]
+      },
+      {
+        "op": "replace",
+        "script": [
+          "eighteen",
+          "forty",
+          "six"
+        ],
+        "scribe": [
+          "1846"
+        ]
+      },
+      {
+        "op": "replace",
+        "script": [
+          "eighteen",
+          "fifty",
+          "three"
+        ],
+        "scribe": [
+          "1853"
+        ]
+      },
+      {
+        "op": "replace",
+        "script": [
+          "anaesthetic"
+        ],
+        "scribe": [
+          "anesthetic"
+        ]
+      },
+      {
+        "op": "replace",
+        "script": [
+          "ninety",
+          "thousand"
+        ],
+        "scribe": [
+          "90",
+          "000"
+        ]
+      },
+      {
+        "op": "replace",
+        "script": [
+          "anaesthetic"
+        ],
+        "scribe": [
+          "anesthetic"
+        ]
+      },
+      {
+        "op": "replace",
+        "script": [
+          "anaesthetist"
+        ],
+        "scribe": [
+          "anesthetist"
+        ]
+      }
+    ]
+  },
+  "vo_check": "PASS",
+  "credits": {
+    "before": {
+      "used": 27710,
+      "limit": 121114,
+      "remaining": 93404
+    },
+    "after": {
+      "used": 30764,
+      "limit": 121114,
+      "remaining": 90350
+    },
+    "counter_delta": 3054
+  },
+  "text": "Before eighteen forty-six, the best surgeon in the world was simply the fastest one. Why? Because the patient was awake for every second of it, and in Europe and America, nobody knew how to stop the pain.\n\nIn London, one surgeon was famous for his speed. His students timed him with their pocket watches, and he could take off a leg in just a few minutes.\n\nThen, in one week in the autumn of eighteen forty-six, all of that changed. In Boston, a dentist held a glass globe to a young man's face, and the young man felt nothing at all.\n\nSo how do you put a person safely to sleep, and bring them back again? Who worked it out first? And why did the men who found it spend the rest of their lives arguing about it?\n\nBy the end of this film, you'll know how a party trick, a country doctor and a room full of doubters turned surgery from a race into something you could sleep through.\n\nPicture yourself in eighteen forty, about to have an operation. There's no injection, no mask, no sleep. Just a strong drink, perhaps, and a few people to hold you still. What would you want most from your surgeon? Not a gentle touch. Speed.\n\nSurgeons had wished for something better for centuries. And the strange thing is, the answer had already been written down, nearly fifty years earlier.\n\nIn eighteen hundred, in Bristol, a young chemist called Humphry Davy was breathing a gas called nitrous oxide. It made him giddy and made him laugh. People soon called it laughing gas.\n\nDavy noticed something else. When he had a sore tooth, the gas seemed to take the pain away. So he wrote that it might be useful during surgical operations.\n\nNobody followed it up. Instead, laughing gas, and another vapour called ether, became party tricks. Travelling showmen let audiences breathe them on stage, and young people held \"ether frolics\", where guests staggered around, laughing.\n\nAnd at those parties, something odd kept happening. People would fall over, bang their knees and elbows, and not feel a thing until the next morning.\n\nIn a small town in Georgia, a young doctor called Crawford Long noticed. In March eighteen forty-two, a patient called James Venable needed a lump removed from his neck. Long gave him ether on a towel, and cut. Venable felt nothing.\n\nIt worked. But Long didn't tell the wider world. He didn't publish what he'd done for another seven years.\n\nSo if a country doctor had already done it, quietly, who would be the one to show everyone?\n\nIn Hartford, Connecticut, a dentist called Horace Wells saw a laughing gas show in December eighteen forty-four. The next day, he breathed the gas himself, and had a colleague pull out one of his own teeth. He felt nothing.\n\nWells was thrilled. A few weeks later, he went to a famous hospital in Boston to show the doctors there.\n\nIt went wrong. The gas wasn't enough, and the patient said it hurt. The students in the room called it a humbug. A fake.\n\nBut Wells's old business partner was in that room. A young dentist called William Morton. And he didn't give up on the idea. He tried a different vapour instead. Ether.\n\nOn the sixteenth of October, eighteen forty-six, Morton walked into the same Boston hospital, carrying a glass globe. A young man called Edward Abbott had a lump on his neck. Morton held the globe to his mouth, and Abbott breathed the ether in, and slowly fell asleep.\n\nThe surgeon, John Collins Warren, began. Abbott didn't scream. He didn't move. When it was over, Warren is said to have turned to the packed room and told them: \"Gentlemen, this is no humbug.\"\n\nThe room where it happened is still there. It's called the Ether Dome. And within weeks, the news was crossing the Atlantic.\n\nA happy ending, then? Case closed? Wrong.\n\nMorton didn't want to give his discovery away. He coloured the ether and hid its smell, so nobody could tell what it was. He called it \"Letheon\", after a river in the old Greek stories that made people forget. And he took out a patent on it.\n\nBut doctors soon worked out it was ether. You can't keep a secret like that in a busy hospital.\n\nA month after the operation, a doctor and poet called Oliver Wendell Holmes wrote Morton a letter. He suggested a new word for this sleep without pain. Anaesthesia. From the Greek for \"without feeling\".\n\nThen the arguing started. Morton said he was first. His old teacher, a chemist called Charles Jackson, said the idea had been his. Horace Wells said he'd done it two years earlier. And from Georgia, Crawford Long said he'd done it before any of them.\n\nThe fight dragged on for years, in newspapers and in courtrooms, and none of the four men ended it rich or happy.\n\nSo who really was first? In a way, Boston gave its answer. In the city's Public Garden there's a tall stone monument to ether. It celebrates the discovery. And it doesn't name a single one of them.\n\nMeanwhile, across the ocean, the fastest surgeon in London was about to try it for himself.\n\nOn the twenty-first of December, eighteen forty-six, in London, Robert Liston tried ether for himself. His patient slept through the whole operation. When he woke, he is said to have asked when it would begin. It was already over.\n\nListon was delighted. He is said to have told the room: \"This Yankee dodge, gentlemen, beats mesmerism hollow.\" The fastest knife in London no longer needed to be fast.\n\nThe next year, in Edinburgh, a doctor called James Young Simpson went looking for something even better. One evening, he and two friends sniffed a liquid called chloroform at his dinner table, and moments later all three were out cold on the floor. When they woke, Simpson knew he'd found it.\n\nNot everyone trusted it. Then, in eighteen fifty-three, a London doctor called John Snow gave chloroform to Queen Victoria, for the birth of her son, Prince Leopold. If it was good enough for the Queen, people decided, it was good enough for them.\n\nBut here's the frightening question. Is it safe to be put to sleep like that? Doesn't it sometimes go wrong?\n\nToday, for a healthy adult, deaths caused by an anaesthetic are very rare. About one in every hundred thousand. Imagine a stadium full of ninety thousand people, all going to sleep for an operation. On average, fewer than one of them would die because of the anaesthetic.\n\nThat's because a specially trained doctor, an anaesthetist, stays beside you the whole time. They watch every heartbeat and every breath, and they keep adjusting the medicine, so you stay just asleep enough, and no more.\n\nWhy was this so groundbreaking? Because it changed what surgery could be. Once the patient slept, surgeons could slow down, take care, and try operations that nobody would ever have dared before.\n\nBut there was still one problem. Many patients slept peacefully through their operations, and then fell ill a few days later. The answer to that would need a microscope, a spray, and a surgeon called Joseph Lister.\n\nA gas, a bag and a globe. Together, they turned surgery from a race into a sleep.",
+  "made_at": "2026-11-06T15:25:58+0000"
+}

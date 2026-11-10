@@ -1,0 +1,27 @@
+{
+  "file": "02_Video-Projects/011_Surgery-Before-Anaesthesia/02_Voiceover/parts/hos_011_vo_v01/ch01.wav",
+  "part": 1,
+  "fails": [],
+  "warns": [
+    "pace 136 wpm (< 145); expect a long film — see STUDIO_PLAYBOOK.md §4 speed"
+  ],
+  "duration_s": 88.16,
+  "duration": "1:28.16",
+  "mean_db": -23.9,
+  "peak_db": -4.2,
+  "pauses_over_1s": [
+    [
+      33.53,
+      1.03
+    ]
+  ],
+  "asr": "faster-whisper small.en",
+  "script_words": 193,
+  "heard_words": 193,
+  "wpm": 136,
+  "word_diffs": [],
+  "first_minute": {
+    "title_question": 82.12
+  },
+  "verdict": "PASS"
+}
