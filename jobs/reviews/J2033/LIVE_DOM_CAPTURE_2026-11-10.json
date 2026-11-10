@@ -1,0 +1,604 @@
+{
+  "job": "J2033",
+  "runner_commit": "02b57a1b72d917c297bbbc6ef07336a02004c1a9",
+  "hos_main_commit": "97e44918",
+  "captured_at": "2026-11-10T03:12:26+00:00",
+  "mode": "read-only live project configuration and DOM evidence probe; 0 Create clicks, 0 credits spent",
+  "project_url": "https://flow.google.com/project/13d84783-a17a-495c-bacd-0cf0e736f6f4",
+  "account_matches_required": true,
+  "account_details_popup": {
+    "still_evidence_js": {
+      "host": "flow.google.com",
+      "models": [],
+      "outputs": [],
+      "aspects": [],
+      "accounts": [
+        "<REQUIRED_HOS_ULTRA_ACCOUNT>"
+      ],
+      "prices": [],
+      "balances": [],
+      "ultra": true,
+      "create_count": 0
+    },
+    "credit_lines": [
+      "ULTRA",
+      "14,890 Google Flow credits"
+    ],
+    "body_lines": [
+      "Skip to main content",
+      "Start creating or drop media",
+      "home",
+      "Nov 10 - 03:07",
+      "more_vert",
+      "search",
+      "filter_list",
+      "add",
+      "help",
+      "settings_2",
+      "more_vert",
+      "ULTRA",
+      "dashboard",
+      "All media",
+      "accessibility_new",
+      "Characters",
+      "movie",
+      "Scenes",
+      "folder",
+      "Library",
+      "add",
+      "apps_spark_2",
+      "Tools",
+      "add",
+      "Create tool",
+      "delete",
+      "Bin",
+      "left_panel_close",
+      "Collapse",
+      "What do you want to create?",
+      "add",
+      "Agent",
+      "\ud83c\udf4c Nano Banana 2.1",
+      "crop_16_9",
+      "x1",
+      "arrow_forward",
+      "Google Flow can make mistakes, so double-check it",
+      "close",
+      "Benjamin Oats",
+      "<REQUIRED_HOS_ULTRA_ACCOUNT>",
+      "Switch account",
+      "movie_filter_auto",
+      "14,890 Google Flow credits",
+      "Resets on 12 Nov at 19:13",
+      "Upgrade",
+      "Manage subscription",
+      "Sign out of all accounts",
+      "frame_spark",
+      "Visible watermarking",
+      "Privacy",
+      "\u00b7",
+      "Terms of Service",
+      "\u00b7",
+      "Licences",
+      "This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply."
+    ]
+  },
+  "still_mode_settings_closed": {
+    "read_live_still_evidence_error": "live Flow still selected controls/account/entitlement/zero-price are missing or changed",
+    "still_evidence_js": {
+      "host": "flow.google.com",
+      "models": [],
+      "outputs": [],
+      "aspects": [],
+      "accounts": [
+        "<REQUIRED_HOS_ULTRA_ACCOUNT>"
+      ],
+      "prices": [],
+      "balances": [],
+      "ultra": true,
+      "create_count": 0
+    }
+  },
+  "still_mode_settings_open": {
+    "read_live_still_evidence_error": "live Flow still selected controls/account/entitlement/zero-price are missing or changed",
+    "still_evidence_js": {
+      "host": "flow.google.com",
+      "models": [],
+      "outputs": [
+        "x1"
+      ],
+      "aspects": [],
+      "accounts": [
+        "<REQUIRED_HOS_ULTRA_ACCOUNT>"
+      ],
+      "prices": [
+        "Generating will use 0 credits"
+      ],
+      "balances": [],
+      "ultra": true,
+      "create_count": 0
+    },
+    "visible_controls": [
+      {
+        "role": null,
+        "ariaHaspopup": "menu",
+        "ariaChecked": null,
+        "ariaLabel": "More options for the project",
+        "disabled": false,
+        "text": "more_vert"
+      },
+      {
+        "role": null,
+        "ariaHaspopup": "menu",
+        "ariaChecked": null,
+        "ariaLabel": "Add media menu",
+        "disabled": false,
+        "text": "add"
+      },
+      {
+        "role": null,
+        "ariaHaspopup": "menu",
+        "ariaChecked": null,
+        "ariaLabel": "Settings",
+        "disabled": false,
+        "text": "settings_2"
+      },
+      {
+        "role": null,
+        "ariaHaspopup": "menu",
+        "ariaChecked": null,
+        "ariaLabel": "More options",
+        "disabled": false,
+        "text": "more_vert"
+      },
+      {
+        "role": null,
+        "ariaHaspopup": null,
+        "ariaChecked": null,
+        "ariaLabel": "Settings trigger",
+        "disabled": false,
+        "text": "\ud83c\udf4c Nano Banana 2.1 crop_16_9 x1"
+      },
+      {
+        "role": null,
+        "ariaHaspopup": null,
+        "ariaChecked": null,
+        "ariaLabel": "Start generation",
+        "disabled": true,
+        "text": "arrow_forward"
+      },
+      {
+        "role": "radio",
+        "ariaHaspopup": null,
+        "ariaChecked": "true",
+        "ariaLabel": null,
+        "disabled": false,
+        "text": "image Image"
+      },
+      {
+        "role": "radio",
+        "ariaHaspopup": null,
+        "ariaChecked": "false",
+        "ariaLabel": null,
+        "disabled": false,
+        "text": "videocam Video"
+      },
+      {
+        "role": "radio",
+        "ariaHaspopup": null,
+        "ariaChecked": "true",
+        "ariaLabel": null,
+        "disabled": false,
+        "text": "crop_16_9 16:9"
+      },
+      {
+        "role": "radio",
+        "ariaHaspopup": null,
+        "ariaChecked": "false",
+        "ariaLabel": null,
+        "disabled": false,
+        "text": "crop_landscape 4:3"
+      },
+      {
+        "role": "radio",
+        "ariaHaspopup": null,
+        "ariaChecked": "false",
+        "ariaLabel": null,
+        "disabled": false,
+        "text": "crop_square 1:1"
+      },
+      {
+        "role": "radio",
+        "ariaHaspopup": null,
+        "ariaChecked": "false",
+        "ariaLabel": null,
+        "disabled": false,
+        "text": "crop_portrait 3:4"
+      },
+      {
+        "role": "radio",
+        "ariaHaspopup": null,
+        "ariaChecked": "false",
+        "ariaLabel": null,
+        "disabled": false,
+        "text": "crop_9_16 9:16"
+      },
+      {
+        "role": null,
+        "ariaHaspopup": "menu",
+        "ariaChecked": null,
+        "ariaLabel": "Select model family",
+        "disabled": false,
+        "text": "\ud83c\udf4c Nano Banana 2.1 arrow_drop_down"
+      },
+      {
+        "role": "radio",
+        "ariaHaspopup": null,
+        "ariaChecked": "false",
+        "ariaLabel": null,
+        "disabled": false,
+        "text": "Low"
+      },
+      {
+        "role": "radio",
+        "ariaHaspopup": null,
+        "ariaChecked": "false",
+        "ariaLabel": null,
+        "disabled": false,
+        "text": "Medium"
+      },
+      {
+        "role": "radio",
+        "ariaHaspopup": null,
+        "ariaChecked": "true",
+        "ariaLabel": null,
+        "disabled": false,
+        "text": "High"
+      },
+      {
+        "role": "radio",
+        "ariaHaspopup": null,
+        "ariaChecked": "true",
+        "ariaLabel": null,
+        "disabled": false,
+        "text": "x1"
+      },
+      {
+        "role": "radio",
+        "ariaHaspopup": null,
+        "ariaChecked": "false",
+        "ariaLabel": null,
+        "disabled": false,
+        "text": "x2"
+      },
+      {
+        "role": "radio",
+        "ariaHaspopup": null,
+        "ariaChecked": "false",
+        "ariaLabel": null,
+        "disabled": false,
+        "text": "x3"
+      },
+      {
+        "role": "radio",
+        "ariaHaspopup": null,
+        "ariaChecked": "false",
+        "ariaLabel": null,
+        "disabled": false,
+        "text": "x4"
+      }
+    ],
+    "body_lines": [
+      "Skip to main content",
+      "Start creating or drop media",
+      "home",
+      "Nov 10 - 03:07",
+      "more_vert",
+      "search",
+      "filter_list",
+      "add",
+      "help",
+      "settings_2",
+      "more_vert",
+      "ULTRA",
+      "dashboard",
+      "All media",
+      "accessibility_new",
+      "Characters",
+      "movie",
+      "Scenes",
+      "folder",
+      "Library",
+      "add",
+      "apps_spark_2",
+      "Tools",
+      "add",
+      "Create tool",
+      "delete",
+      "Bin",
+      "left_panel_close",
+      "Collapse",
+      "What do you want to create?",
+      "add",
+      "Agent",
+      "\ud83c\udf4c Nano Banana 2.1",
+      "crop_16_9",
+      "x1",
+      "arrow_forward",
+      "Google Flow can make mistakes, so double-check it",
+      "image",
+      "Image",
+      "videocam",
+      "Video",
+      "crop_16_9",
+      "16:9",
+      "crop_landscape",
+      "4:3",
+      "crop_square",
+      "1:1",
+      "crop_portrait",
+      "3:4",
+      "crop_9_16",
+      "9:16",
+      "\ud83c\udf4c Nano Banana 2.1",
+      "arrow_drop_down",
+      "Thinking level",
+      "Low",
+      "Medium",
+      "High",
+      "Extra thorough",
+      "x1",
+      "x2",
+      "x3",
+      "x4",
+      "Generating will use 0 credits"
+    ]
+  },
+  "video_mode_veo31_quality_settings_open": {
+    "read_live_evidence_error": "live Flow selected controls/account/entitlement/price are missing or changed",
+    "create_evidence_js": {
+      "host": "flow.google.com",
+      "models": [],
+      "outputs": [
+        "x1"
+      ],
+      "aspects": [],
+      "durations": [
+        "8s"
+      ],
+      "accounts": [
+        "<REQUIRED_HOS_ULTRA_ACCOUNT>"
+      ],
+      "prices": [
+        "Generating will use 100 credits"
+      ],
+      "balances": [],
+      "ultra": true,
+      "create_count": 0
+    },
+    "visible_controls": [
+      {
+        "role": null,
+        "ariaHaspopup": "menu",
+        "ariaChecked": null,
+        "ariaLabel": "More options for the project",
+        "disabled": false,
+        "text": "more_vert"
+      },
+      {
+        "role": null,
+        "ariaHaspopup": "menu",
+        "ariaChecked": null,
+        "ariaLabel": "Add media menu",
+        "disabled": false,
+        "text": "add"
+      },
+      {
+        "role": null,
+        "ariaHaspopup": "menu",
+        "ariaChecked": null,
+        "ariaLabel": "Settings",
+        "disabled": false,
+        "text": "settings_2"
+      },
+      {
+        "role": null,
+        "ariaHaspopup": "menu",
+        "ariaChecked": null,
+        "ariaLabel": "More options",
+        "disabled": false,
+        "text": "more_vert"
+      },
+      {
+        "role": null,
+        "ariaHaspopup": null,
+        "ariaChecked": null,
+        "ariaLabel": "Settings trigger",
+        "disabled": false,
+        "text": "Video \u00b7 720p \u00b7 8s crop_16_9 x1"
+      },
+      {
+        "role": null,
+        "ariaHaspopup": null,
+        "ariaChecked": null,
+        "ariaLabel": "Start generation",
+        "disabled": true,
+        "text": "arrow_forward"
+      },
+      {
+        "role": "radio",
+        "ariaHaspopup": null,
+        "ariaChecked": "false",
+        "ariaLabel": null,
+        "disabled": false,
+        "text": "image Image"
+      },
+      {
+        "role": "radio",
+        "ariaHaspopup": null,
+        "ariaChecked": "true",
+        "ariaLabel": null,
+        "disabled": false,
+        "text": "videocam Video"
+      },
+      {
+        "role": "radio",
+        "ariaHaspopup": null,
+        "ariaChecked": "true",
+        "ariaLabel": null,
+        "disabled": false,
+        "text": "crop_free Frames"
+      },
+      {
+        "role": "radio",
+        "ariaHaspopup": null,
+        "ariaChecked": "false",
+        "ariaLabel": null,
+        "disabled": false,
+        "text": "chrome_extension Ingredients"
+      },
+      {
+        "role": "radio",
+        "ariaHaspopup": null,
+        "ariaChecked": "true",
+        "ariaLabel": null,
+        "disabled": false,
+        "text": "crop_16_9 16:9"
+      },
+      {
+        "role": "radio",
+        "ariaHaspopup": null,
+        "ariaChecked": "false",
+        "ariaLabel": null,
+        "disabled": false,
+        "text": "crop_9_16 9:16"
+      },
+      {
+        "role": null,
+        "ariaHaspopup": "menu",
+        "ariaChecked": null,
+        "ariaLabel": "Select model family",
+        "disabled": false,
+        "text": "Veo 3.1 - Quality arrow_drop_down"
+      },
+      {
+        "role": "radio",
+        "ariaHaspopup": null,
+        "ariaChecked": "false",
+        "ariaLabel": null,
+        "disabled": false,
+        "text": "4s"
+      },
+      {
+        "role": "radio",
+        "ariaHaspopup": null,
+        "ariaChecked": "false",
+        "ariaLabel": null,
+        "disabled": false,
+        "text": "6s"
+      },
+      {
+        "role": "radio",
+        "ariaHaspopup": null,
+        "ariaChecked": "true",
+        "ariaLabel": null,
+        "disabled": false,
+        "text": "8s"
+      },
+      {
+        "role": "radio",
+        "ariaHaspopup": null,
+        "ariaChecked": "true",
+        "ariaLabel": null,
+        "disabled": false,
+        "text": "x1"
+      },
+      {
+        "role": "radio",
+        "ariaHaspopup": null,
+        "ariaChecked": "false",
+        "ariaLabel": null,
+        "disabled": false,
+        "text": "x2"
+      },
+      {
+        "role": "radio",
+        "ariaHaspopup": null,
+        "ariaChecked": "false",
+        "ariaLabel": null,
+        "disabled": false,
+        "text": "x3"
+      },
+      {
+        "role": "radio",
+        "ariaHaspopup": null,
+        "ariaChecked": "false",
+        "ariaLabel": null,
+        "disabled": false,
+        "text": "x4"
+      }
+    ],
+    "body_lines": [
+      "Skip to main content",
+      "Start creating or drop media",
+      "home",
+      "Nov 10 - 03:07",
+      "more_vert",
+      "search",
+      "filter_list",
+      "add",
+      "help",
+      "settings_2",
+      "more_vert",
+      "ULTRA",
+      "dashboard",
+      "All media",
+      "accessibility_new",
+      "Characters",
+      "movie",
+      "Scenes",
+      "folder",
+      "Library",
+      "add",
+      "apps_spark_2",
+      "Tools",
+      "add",
+      "Create tool",
+      "delete",
+      "Bin",
+      "left_panel_close",
+      "Collapse",
+      "Start",
+      "swap_horiz",
+      "End",
+      "What do you want to create?",
+      "Agent",
+      "Video \u00b7 720p \u00b7 8s",
+      "crop_16_9",
+      "x1",
+      "arrow_forward",
+      "Google Flow can make mistakes, so double-check it",
+      "image",
+      "Image",
+      "videocam",
+      "Video",
+      "crop_free",
+      "Frames",
+      "chrome_extension",
+      "Ingredients",
+      "crop_16_9",
+      "16:9",
+      "crop_9_16",
+      "9:16",
+      "Veo 3.1 - Quality",
+      "arrow_drop_down",
+      "4s",
+      "6s",
+      "8s",
+      "x1",
+      "x2",
+      "x3",
+      "x4",
+      "Generating will use 100 credits"
+    ]
+  }
+}
