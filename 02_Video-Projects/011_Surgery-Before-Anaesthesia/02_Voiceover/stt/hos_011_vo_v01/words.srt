@@ -1,0 +1,771 @@
+1
+00:00:00,060 --> 00:00:03,080
+Before 1846, the best surgeon in the world
+
+2
+00:00:03,160 --> 00:00:06,900
+was simply the fastest one. Why? Because
+
+3
+00:00:06,940 --> 00:00:08,980
+the patient was awake for every second of
+
+4
+00:00:09,060 --> 00:00:11,900
+it, and in Europe and America, nobody knew
+
+5
+00:00:11,940 --> 00:00:13,080
+how to stop the pain.
+
+6
+00:00:14,280 --> 00:00:16,379
+In London, one surgeon was famous for his
+
+7
+00:00:16,480 --> 00:00:18,900
+speed. His students timed him with their
+
+8
+00:00:18,940 --> 00:00:20,900
+pocket watches, and he could take off a
+
+9
+00:00:20,960 --> 00:00:24,160
+leg in just a few minutes. Then in one
+
+10
+00:00:24,260 --> 00:00:27,560
+week in the autumn of 1846, all of that
+
+11
+00:00:27,620 --> 00:00:28,200
+changed.
+
+12
+00:00:29,320 --> 00:00:31,900
+In Boston, a dentist held a glass globe to
+
+13
+00:00:31,960 --> 00:00:34,460
+a young man's face, and the young man felt
+
+14
+00:00:34,580 --> 00:00:35,360
+nothing at all.
+
+15
+00:00:36,320 --> 00:00:38,540
+So how do you put a person safely to sleep
+
+16
+00:00:38,880 --> 00:00:40,060
+and bring them back again?
+
+17
+00:00:40,960 --> 00:00:43,540
+Who worked it out first? And why did the
+
+18
+00:00:43,580 --> 00:00:45,560
+men who found it spend the rest of their
+
+19
+00:00:45,620 --> 00:00:47,160
+lives arguing about it?
+
+20
+00:00:48,280 --> 00:00:50,460
+By the end of this film, you'll know how a
+
+21
+00:00:50,520 --> 00:00:53,600
+party trick, a country doctor, and a room
+
+22
+00:00:53,680 --> 00:00:56,160
+full of doubters turned surgery from a
+
+23
+00:00:56,200 --> 00:00:58,460
+race into something you could sleep
+
+24
+00:00:58,520 --> 00:00:58,820
+through.
+
+25
+00:01:00,140 --> 00:01:02,860
+Picture yourself in 1840 about to have an
+
+26
+00:01:02,900 --> 00:01:06,320
+operation. There's no injection, no mask,
+
+27
+00:01:06,660 --> 00:01:09,600
+no sleep, just a strong drink perhaps and
+
+28
+00:01:09,640 --> 00:01:11,340
+a few people to hold you still.
+
+29
+00:01:12,500 --> 00:01:13,800
+What would you want most from your
+
+30
+00:01:13,860 --> 00:01:14,360
+surgeon?
+
+31
+00:01:15,240 --> 00:01:17,580
+Not a gentle touch. Speed.
+
+32
+00:01:18,660 --> 00:01:20,420
+Surgeons had wished for something better
+
+33
+00:01:20,500 --> 00:01:23,180
+for centuries, and the strange thing is
+
+34
+00:01:23,520 --> 00:01:25,360
+the answer had already been written down
+
+35
+00:01:25,400 --> 00:01:28,900
+nearly fifty years earlier. In 1800 in
+
+36
+00:01:28,940 --> 00:01:31,500
+Bristol, a young chemist called Humphry
+
+37
+00:01:31,580 --> 00:01:34,300
+Davy was breathing a gas called nitrous
+
+38
+00:01:34,380 --> 00:01:34,960
+oxide.
+
+39
+00:01:35,900 --> 00:01:38,140
+It made him giddy and made him laugh.
+
+40
+00:01:39,040 --> 00:01:41,300
+People soon called it laughing gas.
+
+41
+00:01:42,160 --> 00:01:43,740
+Davy noticed something else.
+
+42
+00:01:44,700 --> 00:01:47,200
+When he had a sore tooth, the gas seemed
+
+43
+00:01:47,220 --> 00:01:48,260
+to take the pain away,
+
+44
+00:01:49,180 --> 00:01:51,180
+so he wrote that it might be useful during
+
+45
+00:01:51,300 --> 00:01:52,640
+surgical operations.
+
+46
+00:01:53,620 --> 00:01:56,620
+Nobody followed it up. Instead, laughing
+
+47
+00:01:56,720 --> 00:02:00,040
+gas and another vapor called ether became
+
+48
+00:02:00,080 --> 00:02:00,980
+party tricks.
+
+49
+00:02:02,120 --> 00:02:04,320
+Traveling showmen let audiences breathe
+
+50
+00:02:04,360 --> 00:02:07,540
+them on stage, and young people held ether
+
+51
+00:02:07,640 --> 00:02:10,259
+frolics where guests staggered around
+
+52
+00:02:10,380 --> 00:02:13,700
+laughing. And at those parties, something
+
+53
+00:02:13,780 --> 00:02:16,440
+odd kept happening. People would fall
+
+54
+00:02:16,520 --> 00:02:19,760
+over, bang their knees and elbows, and not
+
+55
+00:02:19,800 --> 00:02:21,700
+feel a thing until the next morning.
+
+56
+00:02:22,560 --> 00:02:25,500
+In a small town in Georgia, a young doctor
+
+57
+00:02:25,620 --> 00:02:28,920
+called Crawford Long noticed. In March
+
+58
+00:02:29,000 --> 00:02:32,580
+1842, a patient called James Venable
+
+59
+00:02:32,940 --> 00:02:34,840
+needed a lump removed from his neck.
+
+60
+00:02:35,900 --> 00:02:38,660
+Long gave him ether on a towel and cut.
+
+61
+00:02:39,620 --> 00:02:42,420
+Venable felt nothing. It worked.
+
+62
+00:02:43,320 --> 00:02:46,220
+But Long didn't tell the wider world. He
+
+63
+00:02:46,240 --> 00:02:48,200
+didn't publish what he'd done for another
+
+64
+00:02:48,300 --> 00:02:51,120
+seven years. So if a country doctor had
+
+65
+00:02:51,180 --> 00:02:54,160
+already done it quietly, who would be the
+
+66
+00:02:54,200 --> 00:02:55,620
+one to show everyone?
+
+67
+00:02:56,520 --> 00:02:59,140
+In Hartford, Connecticut, a dentist called
+
+68
+00:02:59,180 --> 00:03:01,880
+Horace Wells saw a laughing gas show in
+
+69
+00:03:01,920 --> 00:03:05,820
+December 1844. The next day, he breathed
+
+70
+00:03:05,880 --> 00:03:08,440
+the gas himself and had a colleague pull
+
+71
+00:03:08,520 --> 00:03:12,060
+out one of his own teeth. He felt nothing.
+
+72
+00:03:12,800 --> 00:03:14,220
+Wells was thrilled.
+
+73
+00:03:15,080 --> 00:03:16,960
+A few weeks later, he went to a famous
+
+74
+00:03:17,000 --> 00:03:19,080
+hospital in Boston to show the doctors
+
+75
+00:03:19,160 --> 00:03:22,720
+there. It went wrong. The gas wasn't
+
+76
+00:03:22,760 --> 00:03:26,060
+enough, and the patient said it hurt. The
+
+77
+00:03:26,140 --> 00:03:29,300
+students in the room called it a humbug, a
+
+78
+00:03:29,500 --> 00:03:29,920
+fake.
+
+79
+00:03:30,900 --> 00:03:32,880
+But Wells' old business partner was in
+
+80
+00:03:32,940 --> 00:03:35,520
+that room, a young dentist called William
+
+81
+00:03:35,620 --> 00:03:38,560
+Morton, and he didn't give up on the idea.
+
+82
+00:03:39,520 --> 00:03:42,880
+He tried a different vapor instead, ether.
+
+83
+00:03:43,500 --> 00:03:47,340
+On the sixteenth of October, 1846, Morton
+
+84
+00:03:47,440 --> 00:03:49,480
+walked into the same Boston hospital
+
+85
+00:03:49,940 --> 00:03:53,180
+carrying a glass globe. A young man called
+
+86
+00:03:53,320 --> 00:03:55,760
+Edward Abbott had a lump on his neck.
+
+87
+00:03:56,580 --> 00:03:59,280
+Morton held the globe to his mouth, and
+
+88
+00:03:59,440 --> 00:04:02,400
+Abbott breathed the ether in and slowly
+
+89
+00:04:02,440 --> 00:04:03,160
+fell asleep.
+
+90
+00:04:04,080 --> 00:04:06,620
+The surgeon, John Collins Warren, began.
+
+91
+00:04:07,320 --> 00:04:10,940
+Abbott didn't scream. He didn't move. When
+
+92
+00:04:10,980 --> 00:04:13,340
+it was over, Warren is said to have turned
+
+93
+00:04:13,400 --> 00:04:15,040
+to the packed room and told them,
+
+94
+00:04:15,040 --> 00:04:18,220
+"Gentlemen, this is no humbug."
+
+95
+00:04:19,300 --> 00:04:21,300
+The room where it happened is still there.
+
+96
+00:04:21,720 --> 00:04:24,760
+It's called the Ether Dome, and within
+
+97
+00:04:24,820 --> 00:04:27,300
+weeks the news was crossing the Atlantic.
+
+98
+00:04:28,040 --> 00:04:31,780
+A happy ending then? Case closed? Wrong.
+
+99
+00:04:32,700 --> 00:04:34,620
+Morton didn't want to give his discovery
+
+100
+00:04:34,680 --> 00:04:37,800
+away. He colored the ether and hid its
+
+101
+00:04:37,880 --> 00:04:41,480
+smell so nobody could tell what it was. He
+
+102
+00:04:41,560 --> 00:04:44,840
+called it Letheon after a river in the old
+
+103
+00:04:44,920 --> 00:04:48,140
+Greek stories that made people forget, and
+
+104
+00:04:48,180 --> 00:04:49,640
+he took out a patent on it.
+
+105
+00:04:50,580 --> 00:04:53,200
+But doctors soon worked out it was ether.
+
+106
+00:04:53,920 --> 00:04:55,860
+You can't keep a secret like that in a
+
+107
+00:04:55,900 --> 00:04:56,800
+busy hospital.
+
+108
+00:04:58,100 --> 00:05:00,660
+A month after the operation, a doctor and
+
+109
+00:05:00,780 --> 00:05:03,620
+poet called Oliver Wendell Holmes wrote
+
+110
+00:05:03,720 --> 00:05:04,700
+Morton a letter.
+
+111
+00:05:05,900 --> 00:05:08,180
+He suggested a new word for this sleep
+
+112
+00:05:08,220 --> 00:05:09,000
+without pain,
+
+113
+00:05:10,000 --> 00:05:13,520
+anesthesia, from the Greek for without
+
+114
+00:05:13,680 --> 00:05:14,160
+feeling.
+
+115
+00:05:15,040 --> 00:05:18,340
+Then the arguing started. Morton said he
+
+116
+00:05:18,400 --> 00:05:21,760
+was first. His old teacher, a chemist
+
+117
+00:05:21,860 --> 00:05:24,400
+called Charles Jackson, said the idea had
+
+118
+00:05:24,440 --> 00:05:27,820
+been his. Horace Wells said he'd done it
+
+119
+00:05:27,880 --> 00:05:30,380
+two years earlier. And from Georgia,
+
+120
+00:05:30,800 --> 00:05:33,440
+Crawford Long said he'd done it before any
+
+121
+00:05:33,500 --> 00:05:33,880
+of them.
+
+122
+00:05:34,780 --> 00:05:37,180
+The fight dragged on for years in
+
+123
+00:05:37,260 --> 00:05:39,880
+newspapers and in courtrooms, and none of
+
+124
+00:05:39,920 --> 00:05:42,440
+the four men ended it rich or happy.
+
+125
+00:05:43,360 --> 00:05:45,200
+So who really was first?
+
+126
+00:05:46,140 --> 00:05:48,720
+In a way, Boston gave its answer.
+
+127
+00:05:49,680 --> 00:05:51,740
+In the city's public garden, there's a
+
+128
+00:05:51,820 --> 00:05:54,960
+tall stone monument to ether. It
+
+129
+00:05:55,020 --> 00:05:57,580
+celebrates the discovery, and it doesn't
+
+130
+00:05:57,640 --> 00:05:59,220
+name a single one of them.
+
+131
+00:06:00,340 --> 00:06:03,240
+Meanwhile, across the ocean, the fastest
+
+132
+00:06:03,320 --> 00:06:05,540
+surgeon in London was about to try it for
+
+133
+00:06:05,580 --> 00:06:10,420
+himself. On the 21st of December 1846 in
+
+134
+00:06:10,460 --> 00:06:13,300
+London, Robert Liston tried ether for
+
+135
+00:06:13,340 --> 00:06:13,960
+himself.
+
+136
+00:06:15,080 --> 00:06:16,720
+His patient slept through the whole
+
+137
+00:06:16,780 --> 00:06:17,520
+operation.
+
+138
+00:06:18,560 --> 00:06:21,020
+When he woke, he is said to have asked
+
+139
+00:06:21,560 --> 00:06:22,620
+when it would begin.
+
+140
+00:06:23,640 --> 00:06:24,800
+It was already over.
+
+141
+00:06:26,360 --> 00:06:29,160
+Liston was delighted. He is said to have
+
+142
+00:06:29,220 --> 00:06:31,780
+told the room, "This Yankee dodge,
+
+143
+00:06:31,920 --> 00:06:34,780
+gentlemen, beats mesmerism hollow."
+
+144
+00:06:36,360 --> 00:06:39,140
+The fastest knife in London no longer
+
+145
+00:06:39,220 --> 00:06:40,440
+needed to be fast.
+
+146
+00:06:41,960 --> 00:06:44,500
+The next year in Edinburgh, a doctor
+
+147
+00:06:44,600 --> 00:06:47,240
+called James Young Simpson went looking
+
+148
+00:06:47,260 --> 00:06:48,640
+for something even better.
+
+149
+00:06:49,940 --> 00:06:52,240
+One evening, he and two friends sniffed a
+
+150
+00:06:52,300 --> 00:06:54,700
+liquid called chloroform at his dinner
+
+151
+00:06:54,740 --> 00:06:58,160
+table, and moments later, all three were
+
+152
+00:06:58,240 --> 00:06:59,560
+out cold on the floor.
+
+153
+00:07:00,900 --> 00:07:03,540
+When they woke, Simpson knew he'd found
+
+154
+00:07:03,620 --> 00:07:03,820
+it.
+
+155
+00:07:05,060 --> 00:07:09,660
+Not everyone trusted it. Then in 1853, a
+
+156
+00:07:09,760 --> 00:07:12,540
+London doctor called John Snow gave
+
+157
+00:07:12,640 --> 00:07:15,380
+chloroform to Queen Victoria for the birth
+
+158
+00:07:15,420 --> 00:07:17,520
+of her son, Prince Leopold.
+
+159
+00:07:18,720 --> 00:07:20,220
+If it was good enough for the Queen,
+
+160
+00:07:20,340 --> 00:07:22,560
+people decided, it was good enough for
+
+161
+00:07:22,620 --> 00:07:22,940
+them.
+
+162
+00:07:24,140 --> 00:07:27,040
+But here's the frightening question: Is it
+
+163
+00:07:27,140 --> 00:07:29,980
+safe to be put to sleep like that? Doesn't
+
+164
+00:07:30,020 --> 00:07:31,360
+it sometimes go wrong?
+
+165
+00:07:32,720 --> 00:07:35,840
+Today, for a healthy adult, deaths caused
+
+166
+00:07:35,880 --> 00:07:37,960
+by an anesthetic are very rare,
+
+167
+00:07:38,880 --> 00:07:41,220
+about one in every hundred thousand.
+
+168
+00:07:42,240 --> 00:07:45,420
+Imagine a stadium full of 90,000 people
+
+169
+00:07:46,060 --> 00:07:48,100
+all going to sleep for an operation.
+
+170
+00:07:49,020 --> 00:07:51,500
+On average, fewer than one of them would
+
+171
+00:07:51,560 --> 00:07:53,300
+die because of the anesthetic.
+
+172
+00:07:54,640 --> 00:07:56,920
+That's because a specially trained doctor,
+
+173
+00:07:57,360 --> 00:08:00,220
+an anesthetist, stays beside you the whole
+
+174
+00:08:00,340 --> 00:08:00,760
+time.
+
+175
+00:08:01,620 --> 00:08:03,760
+They watch every heartbeat and every
+
+176
+00:08:03,880 --> 00:08:06,020
+breath, and they keep adjusting the
+
+177
+00:08:06,080 --> 00:08:09,040
+medicine so you stay just asleep enough
+
+178
+00:08:09,460 --> 00:08:10,220
+and no more.
+
+179
+00:08:11,560 --> 00:08:14,560
+Why was this so groundbreaking? Because it
+
+180
+00:08:14,640 --> 00:08:16,499
+changed what surgery could be.
+
+181
+00:08:17,600 --> 00:08:20,240
+Once the patient slept, surgeons could
+
+182
+00:08:20,340 --> 00:08:24,060
+slow down, take care, and try operations
+
+183
+00:08:24,120 --> 00:08:26,380
+that nobody would ever have dared before.
+
+184
+00:08:27,720 --> 00:08:29,440
+But there was still one problem.
+
+185
+00:08:30,340 --> 00:08:32,380
+Many patients slept peacefully through
+
+186
+00:08:32,420 --> 00:08:35,380
+their operations and then fell ill a few
+
+187
+00:08:35,420 --> 00:08:36,200
+days later.
+
+188
+00:08:37,360 --> 00:08:38,840
+The answer to that would need a
+
+189
+00:08:38,900 --> 00:08:42,540
+microscope, a spray, and a surgeon called
+
+190
+00:08:42,620 --> 00:08:43,600
+Joseph Lister.
+
+191
+00:08:44,660 --> 00:08:47,540
+A gas, a bag, and a globe.
+
+192
+00:08:48,440 --> 00:08:51,340
+Together, they turned surgery from a race
+
+193
+00:08:51,840 --> 00:08:52,680
+into a sleep.

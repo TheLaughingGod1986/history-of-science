@@ -1,0 +1,68 @@
+{
+  "file": "02_Video-Projects/011_Surgery-Before-Anaesthesia/02_Voiceover/parts/hos_011_vo_v01/ch03.wav",
+  "part": 1,
+  "fails": [],
+  "warns": [
+    "pace 141 wpm (< 145); expect a long film — see STUDIO_PLAYBOOK.md §4 speed",
+    "replace at ~0:03.94: script 'he coloured the ether and hid its' / heard 'he coloured the aether and hid its' — sounds alike (likely the transcriber); listen",
+    "replace at ~0:09.64: script 'he called it letheon after a river' / heard 'he called it lethion after a river' — sounds alike (likely the transcriber); listen",
+    "replace at ~0:20.12: script 'out it was ether you can't keep' / heard 'out it was aether you can't keep' — sounds alike (likely the transcriber); listen",
+    "replace at ~0:37.24: script 'sleep without pain anaesthesia from the greek' / heard 'sleep without pain anesthesia from the greek' — sounds alike (likely the transcriber); listen",
+    "replace at ~1:20.12: script 'stone monument to ether it celebrates the' / heard 'stone monument to aether it celebrates the' — sounds alike (likely the transcriber); listen"
+  ],
+  "duration_s": 93.68,
+  "duration": "1:33.68",
+  "mean_db": -21.8,
+  "peak_db": -3.6,
+  "pauses_over_1s": [
+    [
+      86.67,
+      1.07
+    ]
+  ],
+  "asr": "faster-whisper small.en",
+  "script_words": 217,
+  "heard_words": 217,
+  "wpm": 141,
+  "word_diffs": [
+    {
+      "at": "0:03.94",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "he coloured the ether and hid its",
+      "heard": "he coloured the aether and hid its"
+    },
+    {
+      "at": "0:09.64",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "he called it letheon after a river",
+      "heard": "he called it lethion after a river"
+    },
+    {
+      "at": "0:20.12",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "out it was ether you can't keep",
+      "heard": "out it was aether you can't keep"
+    },
+    {
+      "at": "0:37.24",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "sleep without pain anaesthesia from the greek",
+      "heard": "sleep without pain anesthesia from the greek"
+    },
+    {
+      "at": "1:20.12",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "stone monument to ether it celebrates the",
+      "heard": "stone monument to aether it celebrates the"
+    }
+  ],
+  "first_minute": {
+    "title_question": 70.72
+  },
+  "verdict": "PASS"
+}

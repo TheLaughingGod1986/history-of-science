@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07",
+  "updated": "2026-11-10",
   "updated_by": "cursor",
   "board_url": "https://claude.ai/artifact/Hhk519dkbHMzeaZfp3efhc",
   "stages": [
@@ -646,7 +646,7 @@
       "title": "Anesthesia: The Day Surgery Stopped Hurting",
       "air": "2026-12-10",
       "ready_by": "2026-12-06",
-      "summary": "Locked for Thu 10 Dec (J2231; first in jobs/WIP.json next_hos). Neighbour gate PASS (6 education >=1M incl. TED-Ed 19.73M & 2.66M). Script v02 (91.1 PASS), Gemini facts (J0198) and Claude primary-source quote check (J0224) done; Shorts scripts v02 + upload package scaffold + long VO queued (J2239).",
+      "summary": "Locked for Thu 10 Dec (J2231). Script v02, facts and quote check done. Long voice-over hos_011_vo_v01 (532.72 s, five chapters) accepted on 10 Nov after a listening review (J2286 KEEP). Next: shot list on the voice timings with a picture source and mint cost per row (J2475).",
       "stages": {
         "topic": {
           "status": "done",
@@ -667,10 +667,16 @@
           "note": "PRE_BUILD_VIDIQ_AUDIT.md + neighbour/search evidence saved; manifest + description queued (J2239)"
         },
         "vo": {
-          "status": "todo",
+          "status": "done",
           "due": "2026-11-15",
           "owner": "Cursor",
-          "waiting": "after J2239 package scaffold + Shorts scripts v02"
+          "note": "Accepted hos_011_vo_v01 (532.72 s, five chapters, Ben Orbit Narrator eleven_v3; sha256 d873f1d0…). J2286 listening review of all five chapters: KEEP, no pickups, no re-recording; the two 1.5 s pauses in Across the Ocean sit inside a held beat and stay. Full-file vo_check PASS, 0 word fails. Acting Chief closed J2245 on 10 Nov.",
+          "steps": [
+            5,
+            5
+          ],
+          "steps_unit": "chapters accepted",
+          "underway": false
         },
         "shorts_scripts": {
           "status": "todo",

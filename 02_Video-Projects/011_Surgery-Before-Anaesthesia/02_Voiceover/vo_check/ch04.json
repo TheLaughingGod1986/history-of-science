@@ -1,0 +1,139 @@
+{
+  "file": "02_Video-Projects/011_Surgery-Before-Anaesthesia/02_Voiceover/parts/hos_011_vo_v01/ch04.wav",
+  "part": 1,
+  "fails": [
+    "silence 1.52s at 0:27.87",
+    "silence 1.55s at 0:33.47"
+  ],
+  "warns": [
+    "pace 128 wpm (< 145); expect a long film — see STUDIO_PLAYBOOK.md §4 speed",
+    "replace at ~0:05.20: script 'robert liston tried ether for himself his' / heard 'robert liston tried aether for himself his' — sounds alike (likely the transcriber); listen",
+    "replace at ~0:08.10: script 'for himself his patient slept through the' / heard 'for himself his patience slept through the' — sounds alike (likely the transcriber); listen",
+    "replace at ~0:24.34: script 'this yankee dodge gentlemen beats mesmerism hollow' / heard 'this yankee dodge gentleman beats mesmerism hollow' — sounds alike (likely the transcriber); listen",
+    "replace at ~1:44.48: script 'specially trained doctor an anaesthetist stays beside' / heard 'specially trained doctor and anaesthetist stays beside' — sounds alike (likely the transcriber); listen",
+    "replace at ~1:56.82: script 'you stay just asleep enough and no' / heard 'you stay just to sleep enough and no' — sounds alike (likely the transcriber); listen",
+    "replace at ~2:35.06: script 'globe together they turned surgery from a' / heard 'globe together they turn surgery from a' — sounds alike (likely the transcriber); listen"
+  ],
+  "duration_s": 165.76,
+  "duration": "2:45.76",
+  "mean_db": -23.1,
+  "peak_db": -4.0,
+  "pauses_over_1s": [
+    [
+      7.06,
+      1.08
+    ],
+    [
+      10.59,
+      1.0
+    ],
+    [
+      17.86,
+      1.22
+    ],
+    [
+      27.87,
+      1.52
+    ],
+    [
+      33.47,
+      1.55
+    ],
+    [
+      41.71,
+      1.23
+    ],
+    [
+      52.63,
+      1.3
+    ],
+    [
+      56.89,
+      1.2
+    ],
+    [
+      70.55,
+      1.17
+    ],
+    [
+      76.03,
+      1.16
+    ],
+    [
+      84.45,
+      1.29
+    ],
+    [
+      106.31,
+      1.34
+    ],
+    [
+      123.27,
+      1.27
+    ],
+    [
+      129.58,
+      1.03
+    ],
+    [
+      139.42,
+      1.35
+    ],
+    [
+      149.28,
+      1.11
+    ]
+  ],
+  "asr": "faster-whisper small.en",
+  "script_words": 337,
+  "heard_words": 338,
+  "wpm": 128,
+  "word_diffs": [
+    {
+      "at": "0:05.20",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "robert liston tried ether for himself his",
+      "heard": "robert liston tried aether for himself his"
+    },
+    {
+      "at": "0:08.10",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "for himself his patient slept through the",
+      "heard": "for himself his patience slept through the"
+    },
+    {
+      "at": "0:24.34",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "this yankee dodge gentlemen beats mesmerism hollow",
+      "heard": "this yankee dodge gentleman beats mesmerism hollow"
+    },
+    {
+      "at": "1:44.48",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "specially trained doctor an anaesthetist stays beside",
+      "heard": "specially trained doctor and anaesthetist stays beside"
+    },
+    {
+      "at": "1:56.82",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "you stay just asleep enough and no",
+      "heard": "you stay just to sleep enough and no"
+    },
+    {
+      "at": "2:35.06",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "globe together they turned surgery from a",
+      "heard": "globe together they turn surgery from a"
+    }
+  ],
+  "first_minute": {
+    "title_question": 124.5
+  },
+  "verdict": "FAIL"
+}
