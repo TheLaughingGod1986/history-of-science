@@ -1,0 +1,19 @@
+{
+  "id": "s07_heart_pulse",
+  "sha256": "a6513555187f65ee887877824ecaae732f85cf72498f3d17bbaa6c924ca7b310",
+  "command": [
+    "python3",
+    "/private/tmp/J2230-codex-hos/00_Brand/Channel-Setup/tools/gate_shorts_open.py",
+    "check",
+    "/Volumes/data/mac-mini-archive/2026-11-05/YouTube/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s07_heart_pulse_v01.mp4",
+    "--air-date",
+    "2026-11-23",
+    "--meta",
+    "/private/tmp/J2230-codex-hos/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/SHORT_s07_heart_pulse_v01.json",
+    "--sheet-dir",
+    "/Users/benjaminoats/_desk/renders/J2230/preflight/s07_heart_pulse"
+  ],
+  "exit": 1,
+  "stdout": "FAIL  hos_005_s07_heart_pulse_v01.mp4  dur=25.53s  audio=-24.0dB  motion=17.29  f0diff=3.09  cut1=1.93s  vo_onset=0.51s  tail_gap=0.61s  vo_src=mix  dhash=e04d0e2b63272159\n   FAIL  integrated loudness -20.5 LUFS outside -14.5..-13.5 (target -14.0)\n   warn  first VO word starts at 0.51s > 0.15s \u2014 trim leading silence\n   sheet /Users/benjaminoats/_desk/renders/J2230/preflight/s07_heart_pulse/hos_005_s07_heart_pulse_v01_open_sheet.jpg\n",
+  "stderr": ""
+}
