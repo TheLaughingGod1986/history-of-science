@@ -933,6 +933,19 @@ class LiveDomAndTrustedClickTests(unittest.TestCase):
             self.assertEqual(prices["Fast"].credits, 10)
             self.assertEqual(page.clicks, 0)
 
+    def test_create_button_labels_match_the_009_runner_on_both_paths(self):
+        # 10 Nov 2026 (history-of-science #480): the 009 runner learned that the video Create button can read
+        # "Start generation". The still path here already knew; the video path did not, and would have stopped the
+        # first paid take of pass 1 with "Create button is missing". Exactly one such button is still required.
+        labels = "t === 'Create' || t === 'Start generation' || t === 'arrow_forward'"
+        self.assertIn(labels, RUNNER.CREATE_EVIDENCE_JS)
+        self.assertIn(labels, RUNNER.STILL_EVIDENCE_JS)
+        tranche2 = (SCRIPT.parents[2] / "009_The-Falling-Moon-Gravity" / "07_Edit-Project" /
+                    "_mint_flow_v05_tranche2.py").read_text()
+        self.assertEqual(tranche2.count(labels), 2)
+        self.assertIn("if (buttons.length !== 1) return {ready: false, reason: 'Create not unique', evidence};",
+                      RUNNER.CREATE_EVIDENCE_JS)
+
     def test_captured_10nov_dom_for_balance_quality_fast_and_still_never_clicks_dom(self):
         raw_capture = CAPTURE_PATH.read_text().replace("<REQUIRED_HOS_ULTRA_ACCOUNT>", TEST_STUDIO_ACCOUNT)
         capture = json.loads(raw_capture)

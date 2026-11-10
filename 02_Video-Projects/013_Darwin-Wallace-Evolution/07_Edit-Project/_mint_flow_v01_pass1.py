@@ -1807,7 +1807,7 @@ CREATE_EVIDENCE_JS = r"""(expected) => {
   const balances = unique([...body.matchAll(/(?:^|\n)\s*([\d,]+)\s+(?:AI|Google Flow) credits\s*(?=\n|$)/g)]
     .map(m => Number(m[1].replace(/,/g, ''))));
   const buttons = allButtons.filter(e => {
-    const t = text(e); return (t === 'Create' || t === 'arrow_forward') &&
+    const t = text(e); return (t === 'Create' || t === 'Start generation' || t === 'arrow_forward') &&
       !e.disabled && e.getAttribute('aria-disabled') !== 'true'; });
   const evidence = {
     host: location.hostname,
