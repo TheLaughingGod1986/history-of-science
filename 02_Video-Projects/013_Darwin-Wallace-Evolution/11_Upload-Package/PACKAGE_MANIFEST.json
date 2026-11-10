@@ -1,0 +1,118 @@
+{
+  "format": "longform",
+  "video": null,
+  "youtubeId": null,
+  "title": "Evolution: The Letter That Forced Darwin to Publish",
+  "titleVariant": "A",
+  "descriptionFile": "Descriptions/darwin_long_description_v01.txt",
+  "tagsFile": "Tags/darwin_long_tags_v01.txt",
+  "chaptersFile": null,
+  "pinnedCommentFile": null,
+  "thumbnail": null,
+  "thumbnailAbc": [],
+  "titleAbc": [
+    "Evolution: The Letter That Forced Darwin to Publish",
+    "Why Darwin Kept Natural Selection Secret for 20 Years"
+  ],
+  "schedule": "2026-12-17T18:00:00.000Z",
+  "playlistId": null,
+  "relatedVideoId": null,
+  "privacy": "private",
+  "madeForKids": false,
+  "alteredContent": true,
+  "language": "en-GB",
+  "categoryId": "27",
+  "affiliate": null,
+  "channel": "@HistoryOfScienceYT",
+  "premiere": false,
+  "note": "Scaffold (5 Nov 2026, J2240). Slotted Thu 17 Dec 2026 18:00 UK = 18:00 UTC (GMT) per J2231. Long script v02 (92.6 PASS, J0307), FACT_NOTES_v02 (30 OK, J0304/J0307) and long VO hos_013_vo_v03a (512.48 s, -19.5 LUFS, vo_check 0 fails, J1310) locked. Chapters timed to hos_013_vo_v03a (0:00, 1:15, 2:51, 4:36, 6:06, 7:28). Arm 2-way Title Test & Compare on launch ('Evolution: The Letter That Forced Darwin to Publish' vs 'Why Darwin Kept Natural Selection Secret for 20 Years'). Two Test B search-titled Shorts in 10_Shorts/SHORTS_SCRIPTS_v02.md ('How Did Darwin Discover Evolution?', 'What Is Survival of the Fittest?'). Neighbours from 00_Brand/Channel-Setup/ideas/evidence_2026-10-15_J0295/n_darwin.json (gate PASS, 13 education >=1M; TED-Ed/TED yes). Nothing changed on YouTube now.",
+  "neighbours": {
+    "phrases": [
+      "evolution",
+      "natural selection",
+      "charles darwin"
+    ],
+    "checked": "2026-10-15",
+    "videos": [
+      {
+        "id": "0ZGbIKd0XrM",
+        "channel": "Primer",
+        "title": "Simulating Natural Selection",
+        "views": 15749037
+      },
+      {
+        "id": "hOfRN0KihOU",
+        "channel": "Kurzgesagt \u2013 In a Nutshell",
+        "title": "How Evolution works",
+        "views": 11446082
+      },
+      {
+        "id": "7VM9YxmULuo",
+        "channel": "Amoeba Sisters",
+        "title": "Natural Selection",
+        "views": 4609024
+      },
+      {
+        "id": "aTftyFboC_M",
+        "channel": "CrashCourse",
+        "title": "Natural Selection - Crash Course Biology #14",
+        "views": 3758953
+      },
+      {
+        "id": "mZt1Gn0R22Q",
+        "channel": "TED-Ed",
+        "title": "Myths and misconceptions about evolution - Alex Gendler",
+        "views": 3286722
+      },
+      {
+        "id": "NTeOhj6dxsU",
+        "channel": "TED-Ed",
+        "title": "Is human evolution speeding up or slowing down? - Laurence Hurst",
+        "views": 2531702
+      },
+      {
+        "id": "GcjgWov7mTM",
+        "channel": "Khan Academy",
+        "title": "Introduction to Evolution and Natural Selection",
+        "views": 2518450
+      },
+      {
+        "id": "18YwBwIK_no",
+        "channel": "TEDx Talks",
+        "title": "How we found out evolution is true: John van Wyhe at TEDxNTU",
+        "views": 2160194
+      },
+      {
+        "id": "S1t5_iGN0xE",
+        "channel": "minutephysics",
+        "title": "Evolution vs Natural Selection",
+        "views": 2113315
+      },
+      {
+        "id": "5NdMnlt2keE",
+        "channel": "TED-Ed",
+        "title": "Five fingers of evolution - Paul Andersen",
+        "views": 1918735
+      },
+      {
+        "id": "qrKZBh8BL_U",
+        "channel": "TED-Ed",
+        "title": "The evolution of the human eye - Joshua Harvey",
+        "views": 1531725
+      },
+      {
+        "id": "dfsUz2O2jww",
+        "channel": "CrashCourse",
+        "title": "Darwin and Natural Selection: Crash Course History of Science #22",
+        "views": 1344005
+      },
+      {
+        "id": "fI7IV3x-dGI",
+        "channel": "Amoeba Sisters",
+        "title": "Evolution",
+        "views": 1253685
+      }
+    ],
+    "note": "From 00_Brand/Channel-Setup/ideas/evidence_2026-10-15_J0295/n_darwin.json (gate PASS: 13 education >=1M; TED-Ed/TED yes)."
+  }
+}
