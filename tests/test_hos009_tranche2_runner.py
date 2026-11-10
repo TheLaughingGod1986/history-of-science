@@ -1090,5 +1090,354 @@ process.stdout.write(JSON.stringify({evidence,outcome,clicks}));
             self.assertEqual(data['clicks'], 0 if drift else 1)
 
 
+class CapturedAndLegacyDomFixtureTests(unittest.TestCase):
+    CAPTURE_PATH = ROOT / "jobs/reviews/J2033/LIVE_DOM_CAPTURE_2026-11-10.json"
+
+    DOM_HARNESS = r"""
+const fs = require('fs');
+const input = JSON.parse(fs.readFileSync(0, 'utf8'));
+let clicks = 0;
+const makeNode = (ctrl) => ({
+  innerText: ctrl.text || '',
+  disabled: Boolean(ctrl.disabled),
+  getAttribute: (k) => {
+    if (k === 'aria-label') return ctrl.ariaLabel || null;
+    if (k === 'aria-checked') return ctrl.ariaChecked || null;
+    if (k === 'aria-selected') return ctrl.ariaSelected || null;
+    if (k === 'aria-pressed') return ctrl.ariaPressed || null;
+    if (k === 'aria-haspopup') return ctrl.ariaHaspopup || null;
+    if (k === 'role') return ctrl.role || null;
+    return null;
+  },
+  getBoundingClientRect: () => ({ width: ctrl.hidden ? 0 : 100, height: ctrl.hidden ? 0 : 24 }),
+  click: () => { clicks++; },
+});
+const controls = (input.controls || []).map(makeNode);
+global.location = { hostname: input.host || 'flow.google.com' };
+global.getComputedStyle = () => ({ visibility: 'visible', display: 'block' });
+global.document = {
+  body: { innerText: (input.bodyLines || []).join('\n') },
+  querySelectorAll: (q) => {
+    if (q.includes('[aria-selected="true"]')) {
+      return controls.filter((n) =>
+        n.getAttribute('aria-selected') === 'true' ||
+        n.getAttribute('aria-checked') === 'true' ||
+        n.getAttribute('aria-pressed') === 'true'
+      );
+    }
+    if (q === 'button' || q === 'button,[role="button"]') {
+      return controls.filter((n) => !n.getAttribute('role') || n.getAttribute('role') === 'button');
+    }
+    if (q === '[aria-label]') {
+      return controls.filter((n) => Boolean(n.getAttribute('aria-label')));
+    }
+    return [];
+  },
+};
+const fn = eval('(' + input.js + ')');
+const result = input.noArg ? fn() : fn(input.expected || null);
+process.stdout.write(JSON.stringify({ result, clicks }));
+"""
+
+    @classmethod
+    def setUpClass(cls):
+        raw = cls.CAPTURE_PATH.read_text().replace(
+            "<REQUIRED_HOS_ULTRA_ACCOUNT>", RUNNER.REQUIRED_ACCOUNT
+        )
+        cls.capture = json.loads(raw)
+
+    def eval_dom(self, js: str, *, controls: list[dict], body_lines: list[str],
+                 expected: dict | None = None, no_arg: bool = False) -> tuple[dict, int]:
+        has_account = any(
+            "Account details" in (c.get("ariaLabel") or "") or "Google Account" in (c.get("ariaLabel") or "")
+            for c in controls
+        )
+        full_controls = list(controls)
+        if not has_account:
+            full_controls.append({
+                "role": None,
+                "ariaLabel": f"Account details: Benjamin Oats ({RUNNER.REQUIRED_ACCOUNT})",
+                "disabled": False,
+                "text": "",
+            })
+        proc = subprocess.run(
+            ["node", "-e", self.DOM_HARNESS],
+            input=json.dumps({
+                "js": js,
+                "controls": full_controls,
+                "bodyLines": body_lines,
+                "expected": expected,
+                "noArg": no_arg,
+            }),
+            text=True,
+            capture_output=True,
+            check=True,
+        )
+        payload = json.loads(proc.stdout)
+        return payload["result"], payload["clicks"]
+
+    @staticmethod
+    def legacy_fixture() -> dict:
+        account_ctrl = {
+            "role": "button",
+            "ariaLabel": f"Google Account: Benjamin Oats ({RUNNER.REQUIRED_ACCOUNT})",
+            "disabled": False,
+            "text": "",
+        }
+        return {
+            "account_details_popup": {
+                "visible_controls": [account_ctrl],
+                "body_lines": ["ULTRA", "10,000 AI credits"],
+            },
+            "video_settings_open": {
+                "visible_controls": [
+                    account_ctrl,
+                    {"role": "option", "ariaSelected": "true", "disabled": False, "text": "Veo 3.1 - Quality"},
+                    {"role": "radio", "ariaChecked": "true", "disabled": False, "text": "16:9"},
+                    {"role": "radio", "ariaChecked": "true", "disabled": False, "text": "x1"},
+                    {"role": "radio", "ariaChecked": "true", "disabled": False, "text": "8s"},
+                    {"role": None, "disabled": False, "text": "arrow_forward"},
+                ],
+                "body_lines": ["ULTRA", "10,000 AI credits", "Generating will use 100 credits"],
+            },
+            "still_settings_open": {
+                "visible_controls": [
+                    account_ctrl,
+                    {"role": "option", "ariaSelected": "true", "disabled": False, "text": "Nano Banana 2"},
+                    {"role": "radio", "ariaChecked": "true", "disabled": False, "text": "16:9"},
+                    {"role": "radio", "ariaChecked": "true", "disabled": False, "text": "x1"},
+                    {"role": None, "disabled": False, "text": "Start generation"},
+                ],
+                "body_lines": ["ULTRA", "10,000 AI credits", "Generating will use 0 credits"],
+            },
+        }
+
+    def test_captured_10nov_and_legacy_balance_step(self):
+        popup = self.capture["account_details_popup"]
+        account_controls = [
+            {
+                "role": None,
+                "ariaLabel": f"Account details: Benjamin Oats ({RUNNER.REQUIRED_ACCOUNT})",
+                "disabled": False,
+                "text": "",
+            }
+        ]
+        ev_10nov, clicks = self.eval_dom(
+            RUNNER.BALANCE_EVIDENCE_JS,
+            controls=account_controls,
+            body_lines=popup["body_lines"],
+            no_arg=True,
+        )
+        self.assertEqual(clicks, 0)
+        self.assertEqual(ev_10nov["balances"], [14890])
+        self.assertEqual(ev_10nov["accounts"], [RUNNER.REQUIRED_ACCOUNT])
+        self.assertTrue(ev_10nov["ultra"])
+
+        class BalancePage:
+            def __init__(self, evidence):
+                self.evidence = evidence
+            def evaluate(self, _script, _arg=None):
+                return dict(self.evidence)
+
+        self.assertEqual(RUNNER.read_live_balance(BalancePage(ev_10nov), open_overlay=False), 14890)
+
+        legacy = self.legacy_fixture()["account_details_popup"]
+        ev_legacy, _ = self.eval_dom(
+            RUNNER.BALANCE_EVIDENCE_JS,
+            controls=legacy["visible_controls"],
+            body_lines=legacy["body_lines"],
+            no_arg=True,
+        )
+        self.assertEqual(ev_legacy["balances"], [10000])
+        self.assertEqual(RUNNER.read_live_balance(BalancePage(ev_legacy), open_overlay=False), 10000)
+
+        for bad_line in ("14,890 credits", "14,890 Flow tokens", "Google Flow credits"):
+            ev_bad, _ = self.eval_dom(
+                RUNNER.BALANCE_EVIDENCE_JS,
+                controls=account_controls,
+                body_lines=["ULTRA", bad_line],
+                no_arg=True,
+            )
+            self.assertEqual(ev_bad["balances"], [])
+            with self.assertRaises(RUNNER.GuardError):
+                RUNNER.read_live_balance(BalancePage(ev_bad), open_overlay=False)
+
+    def test_captured_10nov_and_legacy_video_reader_with_carried_balance(self):
+        video_state = self.capture["video_mode_veo31_quality_settings_open"]
+        ev_disabled, clicks = self.eval_dom(
+            RUNNER.CREATE_EVIDENCE_JS,
+            controls=video_state["visible_controls"],
+            body_lines=video_state["body_lines"],
+            expected=None,
+        )
+        self.assertEqual(clicks, 0)
+        self.assertEqual(ev_disabled["models"], ["Veo 3.1 - Quality"])
+        self.assertEqual(ev_disabled["aspects"], ["16:9"])
+        self.assertEqual(ev_disabled["durations"], ["8s"])
+        self.assertEqual(ev_disabled["outputs"], ["x1"])
+        self.assertEqual(ev_disabled["prices"], ["Generating will use 100 credits"])
+        self.assertEqual(ev_disabled["balances"], [])
+        self.assertEqual(ev_disabled["create_count"], 0)
+
+        enabled_controls = [
+            dict(c, disabled=False) if "Start generation" in (c.get("ariaLabel") or c.get("text") or "") else dict(c)
+            for c in video_state["visible_controls"]
+        ]
+        ev_enabled, clicks = self.eval_dom(
+            RUNNER.CREATE_EVIDENCE_JS,
+            controls=enabled_controls,
+            body_lines=video_state["body_lines"],
+            expected=None,
+        )
+        self.assertEqual(clicks, 0)
+        self.assertEqual(ev_enabled["create_count"], 1)
+
+        class StaticPage:
+            def __init__(self, evidence):
+                self.evidence = evidence
+            def evaluate(self, _script, _arg=None):
+                return dict(self.evidence)
+
+        # Without carried balance, Settings-open state has balances=[] and must fail closed.
+        with self.assertRaises(RUNNER.GuardError):
+            RUNNER.read_live_evidence(StaticPage(ev_enabled))
+        # Disabled Start generation button in read-only capture must fail closed.
+        with self.assertRaises(RUNNER.GuardError):
+            RUNNER.read_live_evidence(StaticPage(ev_disabled), balance=14890)
+        # With carried balance=14890 from read_live_balance, read_live_evidence succeeds.
+        ev_valid = RUNNER.read_live_evidence(StaticPage(ev_enabled), balance=14890)
+        self.assertEqual(ev_valid["models"], ["Veo 3.1 - Quality"])
+        self.assertEqual(ev_valid["prices"], ["Generating will use 100 credits"])
+        self.assertEqual(ev_valid["balances"], [14890])
+
+        # Legacy video shape also still passes.
+        legacy_video = self.legacy_fixture()["video_settings_open"]
+        ev_legacy, clicks = self.eval_dom(
+            RUNNER.CREATE_EVIDENCE_JS,
+            controls=legacy_video["visible_controls"],
+            body_lines=legacy_video["body_lines"],
+            expected=None,
+        )
+        self.assertEqual(clicks, 0)
+        ev_legacy_valid = RUNNER.read_live_evidence(StaticPage(ev_legacy))
+        self.assertEqual(ev_legacy_valid["models"], ["Veo 3.1 - Quality"])
+        self.assertEqual(ev_legacy_valid["balances"], [10000])
+
+    def test_captured_10nov_still_reader_reads_nano_banana_21_and_refuses_until_approved(self):
+        still_state = self.capture["still_mode_settings_open"]
+        enabled_controls = [
+            dict(c, disabled=False) if "Start generation" in (c.get("ariaLabel") or c.get("text") or "") else dict(c)
+            for c in still_state["visible_controls"]
+        ]
+        ev_still, clicks = self.eval_dom(
+            RUNNER.STILL_EVIDENCE_JS,
+            controls=enabled_controls,
+            body_lines=still_state["body_lines"],
+            expected=None,
+        )
+        self.assertEqual(clicks, 0)
+        self.assertEqual(ev_still["models"], ["Nano Banana 2.1"])
+        self.assertEqual(ev_still["aspects"], ["16:9"])
+        self.assertEqual(ev_still["outputs"], ["x1"])
+        self.assertEqual(ev_still["prices"], ["Generating will use 0 credits"])
+        self.assertEqual(ev_still["balances"], [])
+        self.assertEqual(ev_still["create_count"], 1)
+
+        class StaticPage:
+            def __init__(self, evidence):
+                self.evidence = evidence
+            def evaluate(self, _script, _arg=None):
+                return dict(self.evidence)
+
+        # Nano Banana 2.1 is NOT in REQUIRED_STILL_MODEL ("Nano Banana 2") yet: must fail closed.
+        self.assertEqual(RUNNER.REQUIRED_STILL_MODEL, "Nano Banana 2")
+        with self.assertRaises(RUNNER.GuardError):
+            RUNNER.read_live_still_evidence(StaticPage(ev_still), balance=14890)
+
+        # Legacy still shape ("Nano Banana 2") passes.
+        legacy_still = self.legacy_fixture()["still_settings_open"]
+        ev_legacy_still, clicks = self.eval_dom(
+            RUNNER.STILL_EVIDENCE_JS,
+            controls=legacy_still["visible_controls"],
+            body_lines=legacy_still["body_lines"],
+            expected=None,
+        )
+        self.assertEqual(clicks, 0)
+        ev_legacy_still_valid = RUNNER.read_live_still_evidence(StaticPage(ev_legacy_still))
+        self.assertEqual(ev_legacy_still_valid["models"], ["Nano Banana 2"])
+        self.assertEqual(ev_legacy_still_valid["balances"], [10000])
+
+    def test_unknown_model_or_aspect_fails_closed(self):
+        video_state = self.capture["video_mode_veo31_quality_settings_open"]
+        for bad_model in ("Veo 99 - Ultra\narrow_drop_down", "Anything Model\narrow_drop_down", ""):
+            controls = [
+                dict(c, text=bad_model) if c.get("ariaLabel") == "Select model family"
+                else dict(c, disabled=False) if "Start generation" in (c.get("text") or "")
+                else dict(c)
+                for c in video_state["visible_controls"]
+            ]
+            ev, clicks = self.eval_dom(
+                RUNNER.CREATE_EVIDENCE_JS,
+                controls=controls,
+                body_lines=video_state["body_lines"],
+                expected=None,
+            )
+            self.assertEqual(clicks, 0)
+            self.assertEqual(ev["models"], [])
+
+        for bad_aspect in ("crop_free\nFree", "crop_9_16\n9:16"):
+            controls = [
+                dict(c, text=bad_aspect) if "crop_16_9" in (c.get("text") or "")
+                else dict(c, disabled=False) if "Start generation" in (c.get("ariaLabel") or c.get("text") or "")
+                else dict(c)
+                for c in video_state["visible_controls"]
+            ]
+            ev, clicks = self.eval_dom(
+                RUNNER.CREATE_EVIDENCE_JS,
+                controls=controls,
+                body_lines=video_state["body_lines"],
+                expected=None,
+            )
+            self.assertEqual(clicks, 0)
+            with self.assertRaises(RUNNER.GuardError):
+                RUNNER.read_live_evidence(
+                    type("P", (), {"evaluate": lambda _s, _c, _a=None: ev})(),
+                    balance=14890,
+                )
+
+    def test_flow_still_resolves_style_refs_from_plan_not_constant(self):
+        still_path = ROOT / "02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/_flow_still_v01.py"
+        spec = importlib.util.spec_from_file_location("hos006_flow_still_test", still_path)
+        still_tool = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(still_tool)
+        self.assertFalse(hasattr(still_tool, "STYLE_REFS"))
+        with tempfile.TemporaryDirectory() as tmp:
+            media_root = Path(tmp) / "009_The-Falling-Moon-Gravity"
+            for rel in ("04_Generated-Clips/_style_refs/04_sunny_window_v01.jpg",
+                        "04_Generated-Clips/_style_refs/10_mint_jar_v01.jpg"):
+                target = media_root / rel
+                target.parent.mkdir(parents=True, exist_ok=True)
+                target.write_bytes(b"jpg")
+            resolved = still_tool.style_refs_from_plan(
+                EDIT / "PICTURE_PLAN_v04.json",
+                media_root=media_root,
+            )
+            self.assertEqual(len(resolved), 2)
+            self.assertTrue(all(p.exists() for p in resolved))
+
+            # Missing style_refs in plan fails closed.
+            bad_plan = Path(tmp) / "bad_plan.json"
+            bad_plan.write_text(json.dumps({"episode": "009"}))
+            with self.assertRaises(RuntimeError):
+                still_tool.style_refs_from_plan(bad_plan, media_root=media_root)
+
+            # Path traversal outside media_root fails closed.
+            escape_plan = Path(tmp) / "escape_plan.json"
+            escape_plan.write_text(json.dumps({"style_refs": ["../outside.jpg"]}))
+            (Path(tmp) / "outside.jpg").write_bytes(b"jpg")
+            with self.assertRaises(RuntimeError):
+                still_tool.style_refs_from_plan(escape_plan, media_root=media_root)
+
+
 if __name__ == "__main__":
     unittest.main()

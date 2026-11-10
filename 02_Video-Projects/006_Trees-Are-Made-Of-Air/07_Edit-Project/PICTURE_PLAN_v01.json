@@ -2,6 +2,10 @@
   "film": "006_Trees-Are-Made-Of-Air",
   "written": "2026-10-02",
   "task": "Claude desk PR #180 comment 5951184558",
+  "style_refs": [
+    "04_Generated-Clips/part04/refs/v01_vertex_stills/04_sunny_window_v01.jpg",
+    "04_Generated-Clips/part03/refs/v01_vertex_stills/10_mint_jar_v01.jpg"
+  ],
   "vertex_balance_before_boards": {
     "label": "before_boards_006_2026-10-02",
     "at": "2026-10-02T11:28:23+00:00",

@@ -61,6 +61,7 @@ GENERATE_LINE_RE = re.compile(r"^Generating will use (\d+) credits$")
 
 EDIT_REL = Path("02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project")
 SCOPE_NAME = "TRANCHE2_SCOPE_J2026.json"
+PLAN_NAME = "PICTURE_PLAN_v04.json"
 
 
 class GuardError(RuntimeError):
@@ -106,13 +107,13 @@ class PriceEvidence:
 
 
 def repo_root_from(start: Path | None = None) -> Path:
-    env = os.environ.get("HOS_REPO")
-    if env:
-        return Path(env)
     here = start or Path(__file__).resolve()
     for parent in [here, *here.parents]:
         if (parent / "AGENTS.md").exists() and (parent / EDIT_REL).exists():
             return parent
+    env = os.environ.get("HOS_REPO")
+    if env:
+        return Path(env)
     return Path(__file__).resolve().parents[3]
 
 
@@ -383,7 +384,16 @@ def start_plan(row: Row) -> dict:
     }
 
 
-def build_plan(rows: list[Row]) -> dict:
+def load_plan_style_refs(repo: Path | None = None) -> list[str]:
+    plan_path = (repo or repo_root_from()) / EDIT_REL / PLAN_NAME
+    payload = json.loads(plan_path.read_text())
+    refs = payload.get("style_refs") if isinstance(payload, dict) else None
+    if not isinstance(refs, list) or not refs or not all(isinstance(r, str) and r.strip() for r in refs):
+        raise GuardError(f"film plan {plan_path} is missing non-empty style_refs")
+    return [r.strip() for r in refs]
+
+
+def build_plan(rows: list[Row], *, repo: Path | None = None) -> dict:
     ordered = order_rows(rows)
     batches = batch_rows(ordered)
     return {
@@ -394,6 +404,7 @@ def build_plan(rows: list[Row]) -> dict:
         "review": "PENDING_REVIEW",
         "file_state_when_written": "GENERATED",
         "row_count": len(ordered),
+        "style_refs": load_plan_style_refs(repo),
         "caps": {
             "per_take": MAX_CREDITS_PER_TAKE,
             "takes_per_row": MAX_TAKES_PER_ROW,
@@ -1310,14 +1321,15 @@ def live_video_submit(row: Row, dest: Path, frame: Path, *,
         )
         evidence = {}
         def create_guard(configured_page):
-            # Reserve the complete approved liability from the actual configured
-            # UI, under the shared lock. A second read at guarded_create checks
-            # that controls and current headroom still agree before intent/click.
-            ui = read_live_evidence(configured_page)
+            # Read the balance in its own step before model and aspect, since
+            # Account details and Settings overlays cannot be open together,
+            # and carry the value to the submit guard.
+            live_balance = read_live_balance(configured_page)
+            ui = read_live_evidence(configured_page, balance=live_balance, open_overlay=True)
             accounting.reserve(reservation, 'HOS:009', MAX_TOTAL_CREDITS, live=ui['balances'][0], floor=floor)
             evidence.update(guarded_create(
                 configured_page, accounting, reservation=reservation, charge=charge,
-                evidence_path=evidence_path, floor=floor))
+                evidence_path=evidence_path, floor=floor, balance=live_balance))
         flow.generate_clip(
             page, prompt, dest, model=model, timeout_s=700,
             start_frame=frame, attempts=1, reuse_project=False, create_guard=create_guard,
@@ -1327,7 +1339,7 @@ def live_video_submit(row: Row, dest: Path, frame: Path, *,
 
 
 def cmd_plan(repo: Path, out: Path | None) -> dict:
-    plan = build_plan(load_scope(repo))
+    plan = build_plan(load_scope(repo), repo=repo)
     if plan["submissions"] != 0 or plan["keep"] is not False:
         raise GuardError("plan tried to submit or keep")
     text = json.dumps(plan, indent=2) + "\n"
@@ -1415,6 +1427,113 @@ def cmd_submit(repo: Path, *, other: int, media: Path, ledger_path: Path, lock_p
         )
 
 
+BALANCE_EVIDENCE_JS = r"""(expected) => {
+  const visible = e => { const r = e.getBoundingClientRect();
+    const s = getComputedStyle(e);
+    return r.width > 0 && r.height > 0 && s.visibility !== 'hidden' && s.display !== 'none'; };
+  const unique = a => [...new Set(a)];
+  const body = document.body.innerText;
+  const accounts = unique([...document.querySelectorAll('[aria-label]')].filter(visible)
+    .map(e => e.getAttribute('aria-label')).filter(t => /Google Account|Account details/i.test(t))
+    .flatMap(t => t.match(/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/ig) || [])
+    .map(t => t.toLowerCase()));
+  const balances = unique([...body.matchAll(/(?:^|\n)\s*([\d,]+)\s+(?:AI|Google Flow) credits\s*(?=\n|$)/g)]
+    .map(m => Number(m[1].replace(/,/g, ''))));
+  return {
+    host: location.hostname,
+    accounts,
+    balances,
+    ultra: body.split('\n').some(t => t.trim() === 'ULTRA')
+  };
+}"""
+
+
+def _close_flow_overlays(page) -> None:
+    try:
+        page.evaluate(
+            "() => { for (const b of document.querySelectorAll('.cdk-overlay-backdrop')) b.click(); }",
+            None,
+        )
+    except Exception:
+        pass
+    try:
+        page.keyboard.press("Escape")
+    except Exception:
+        pass
+    try:
+        page.wait_for_timeout(300)
+    except Exception:
+        pass
+
+
+def read_live_balance(page, *, open_overlay: bool = True) -> int:
+    """Read and validate the Flow credit balance in its own step before model and aspect.
+
+    Account details and Settings trigger overlays are mutually exclusive on Flow;
+    when Account details is opened here, it is closed before returning.
+    """
+    evidence = page.evaluate(BALANCE_EVIDENCE_JS, None)
+    opened = False
+    if open_overlay and isinstance(evidence, dict) and not evidence.get("balances"):
+        try:
+            clicked = page.evaluate(
+                """() => {
+                  const e = document.querySelector('[aria-label="Account details"], [aria-label*="Account details" i], [aria-label*="Google Account" i]');
+                  if (e) { e.click(); return true; }
+                  return false;
+                }""",
+                None,
+            )
+        except Exception:
+            clicked = False
+        if clicked:
+            opened = True
+            try:
+                page.wait_for_timeout(600)
+            except Exception:
+                pass
+            evidence = page.evaluate(BALANCE_EVIDENCE_JS, None)
+    try:
+        required = dict(host=FLOW_HOST, accounts=[REQUIRED_ACCOUNT], ultra=True)
+        if not isinstance(evidence, dict) or any(evidence.get(k) != v for k, v in required.items()):
+            raise GuardError('live Flow selected controls/account/entitlement/price are missing or changed')
+        balances = evidence.get('balances')
+        if not isinstance(balances, list) or len(balances) != 1 or type(balances[0]) is not int or balances[0] < 0:
+            raise GuardError('live Flow balance is missing or ambiguous')
+        allowed_keys = set(required) | {'balances'}
+        extra_keys = set(evidence) - allowed_keys
+        if extra_keys and extra_keys not in (
+            {'models', 'outputs', 'aspects', 'durations', 'prices', 'create_count'},
+            {'models', 'outputs', 'aspects', 'prices', 'create_count'},
+        ):
+            raise GuardError('unknown live Flow balance evidence schema')
+        return balances[0]
+    finally:
+        if opened:
+            _close_flow_overlays(page)
+
+
+def _open_settings_trigger_if_needed(page) -> bool:
+    try:
+        clicked = page.evaluate(
+            """() => {
+              if (document.querySelector('button[aria-label="Select model family"]')) return false;
+              const e = document.querySelector('button[aria-label="Settings trigger"]');
+              if (e) { e.click(); return true; }
+              return false;
+            }""",
+            None,
+        )
+    except Exception:
+        return False
+    if clicked:
+        try:
+            page.wait_for_timeout(600)
+        except Exception:
+            pass
+    return bool(clicked)
+
+
 # One synchronous DOM turn rechecks the evidence and clicks the same unique
 # enabled Create control. No coordinate fallback or delayed selector click.
 CREATE_EVIDENCE_JS = r"""(expected) => {
@@ -1426,6 +1545,22 @@ CREATE_EVIDENCE_JS = r"""(expected) => {
   const selected = [...document.querySelectorAll(
     '[aria-selected="true"],[aria-checked="true"],[aria-pressed="true"],select option:checked')]
     .filter(visible).map(text);
+  const allButtons = [...document.querySelectorAll('button')].filter(visible);
+  const modelButtons = allButtons
+    .filter(e => e.getAttribute('aria-label') === 'Select model family' &&
+      !e.disabled && e.getAttribute('aria-disabled') !== 'true')
+    .map(e => (e.innerText || '').trim().replace(/\s+/g, ' ').replace(/\s+arrow_drop_down$/, ''));
+  const knownVideoModels = new Set(['Veo 3.1 - Quality', 'Veo 3.1 - Fast', 'Veo 3.1 - Lite']);
+  const models = modelButtons.some(t => !knownVideoModels.has(t))
+    ? []
+    : unique([...selected.filter(t => knownVideoModels.has(t)), ...modelButtons]);
+  const aspectMap = {
+    '16:9': '16:9', 'crop_16_9 16:9': '16:9',
+    '9:16': '9:16', 'crop_9_16 9:16': '9:16',
+    '4:3': '4:3', 'crop_landscape 4:3': '4:3',
+    '1:1': '1:1', 'crop_square 1:1': '1:1',
+    '3:4': '3:4', 'crop_portrait 3:4': '3:4'
+  };
   const body = document.body.innerText;
   const accounts = unique([...document.querySelectorAll('[aria-label]')].filter(visible)
     .map(e => e.getAttribute('aria-label')).filter(t => /Google Account|Account details/i.test(t))
@@ -1433,16 +1568,16 @@ CREATE_EVIDENCE_JS = r"""(expected) => {
     .map(t => t.toLowerCase()));
   const prices = unique(body.split('\n').map(t => t.trim())
     .filter(t => /^Generating will use \d+ credits$/.test(t)));
-  const balances = unique([...body.matchAll(/(?:^|\n)\s*([\d,]+)\s+AI credits\s*(?=\n|$)/g)]
+  const balances = unique([...body.matchAll(/(?:^|\n)\s*([\d,]+)\s+(?:AI|Google Flow) credits\s*(?=\n|$)/g)]
     .map(m => Number(m[1].replace(/,/g, ''))));
-  const buttons = [...document.querySelectorAll('button')].filter(visible).filter(e => {
+  const buttons = allButtons.filter(e => {
     const t = text(e); return (t === 'Create' || t === 'arrow_forward') &&
       !e.disabled && e.getAttribute('aria-disabled') !== 'true'; });
   const evidence = {
     host: location.hostname,
-    models: unique(selected.filter(t => /^Veo /.test(t))),
-    outputs: unique(selected.filter(t => /^x[124]$/.test(t))),
-    aspects: unique(selected.filter(t => t === '16:9' || t === '9:16')),
+    models,
+    outputs: unique(selected.filter(t => /^x[1234]$/.test(t))),
+    aspects: unique(selected.map(t => aspectMap[t]).filter(Boolean)),
     durations: unique(selected.filter(t => /^\d+s$/.test(t))),
     accounts, prices, balances,
     ultra: body.split('\n').some(t => t.trim() === 'ULTRA'),
@@ -1457,41 +1592,69 @@ CREATE_EVIDENCE_JS = r"""(expected) => {
 }"""
 
 
-def read_live_evidence(page) -> dict:
+def _resolve_evidence_balances(raw: dict, balance: int | None) -> list[int]:
+    balances = raw.get('balances')
+    if not isinstance(balances, list):
+        raise GuardError('live Flow balance is missing or ambiguous')
+    if len(balances) == 0 and balance is not None:
+        if type(balance) is not int or balance < 0:
+            raise GuardError('live Flow balance is missing or ambiguous')
+        return [balance]
+    if len(balances) == 1 and type(balances[0]) is int and balances[0] >= 0:
+        if balance is not None and (type(balance) is not int or balances[0] != balance):
+            raise GuardError('live Flow balance is missing or ambiguous')
+        return list(balances)
+    raise GuardError('live Flow balance is missing or ambiguous')
+
+
+def _read_and_validate_live_evidence(page, *, balance: int | None = None,
+                                     open_overlay: bool = False) -> tuple[dict, dict]:
+    raw = page.evaluate(CREATE_EVIDENCE_JS, None)
+    if (
+        open_overlay
+        and isinstance(raw, dict)
+        and not raw.get('models')
+        and not raw.get('prices')
+        and _open_settings_trigger_if_needed(page)
+    ):
+        raw = page.evaluate(CREATE_EVIDENCE_JS, None)
+    required = dict(host=FLOW_HOST, models=[REQUIRED_MODEL], outputs=[REQUIRED_OUTPUTS],
+                    aspects=['16:9'], durations=['8s'], accounts=[REQUIRED_ACCOUNT],
+                    prices=[f'Generating will use {MAX_CREDITS_PER_TAKE} credits'],
+                    ultra=True, create_count=1)
+    if not isinstance(raw, dict) or any(raw.get(k) != v for k, v in required.items()):
+        raise GuardError('live Flow selected controls/account/entitlement/price are missing or changed')
+    # Reject extra fields so the atomic comparison has one exact schema.
+    if set(raw) != set(required) | {'balances'}:
+        raise GuardError('unknown live Flow evidence schema')
+    balances = _resolve_evidence_balances(raw, balance)
+    return raw, dict(raw, balances=balances)
+
+
+def read_live_evidence(page, *, balance: int | None = None, open_overlay: bool = False) -> dict:
     """Strict selected-state DOM evidence, never environment or menu-option text.
 
     Unknown UI layouts fail closed. Deployment still needs a reviewed live DOM
     fixture; this reader must not be loosened by guessing at a missing field.
     """
-    evidence = page.evaluate(CREATE_EVIDENCE_JS, None)
-    required = dict(host=FLOW_HOST, models=[REQUIRED_MODEL], outputs=[REQUIRED_OUTPUTS],
-                    aspects=['16:9'], durations=['8s'], accounts=[REQUIRED_ACCOUNT],
-                    prices=[f'Generating will use {MAX_CREDITS_PER_TAKE} credits'],
-                    ultra=True, create_count=1)
-    if not isinstance(evidence, dict) or any(evidence.get(k) != v for k, v in required.items()):
-        raise GuardError('live Flow selected controls/account/entitlement/price are missing or changed')
-    balances = evidence.get('balances')
-    if not isinstance(balances, list) or len(balances) != 1 or type(balances[0]) is not int or balances[0] < 0:
-        raise GuardError('live Flow balance is missing or ambiguous')
-    # Reject extra fields so the atomic comparison has one exact schema.
-    if set(evidence) != set(required) | {'balances'}:
-        raise GuardError('unknown live Flow evidence schema')
+    _raw, evidence = _read_and_validate_live_evidence(page, balance=balance, open_overlay=open_overlay)
     return evidence
 
 
 def guarded_create(page, accounting: SharedFlowAccounting, *, reservation: str,
-                   charge: str, evidence_path: Path, floor: int = HEADROOM_FLOOR) -> dict:
+                   charge: str, evidence_path: Path, floor: int = HEADROOM_FLOOR,
+                   balance: int | None = None) -> dict:
     """Real browser adapter; caller owns shared writer lock through persistence.
 
     The intent is durable before the click. Any ambiguous browser failure leaves
     it pending, blocking both channels until explicit reconciliation. No retry.
     """
     accounting._assert_held()
-    evidence = read_live_evidence(page)
+    raw, evidence = _read_and_validate_live_evidence(page, balance=balance)
     record = dict(read_at=now_iso(), ui=evidence, charge=charge, reservation=reservation)
     immutable_bytes(evidence_path, (json.dumps(record, sort_keys=True) + '\n').encode())
     accounting.intent(charge, reservation, MAX_CREDITS_PER_TAKE, live=evidence['balances'][0], floor=floor)
-    outcome = page.evaluate(CREATE_EVIDENCE_JS, evidence)
+    outcome = page.evaluate(CREATE_EVIDENCE_JS, raw)
     if not isinstance(outcome, dict) or type(outcome.get('clicked')) is not bool:
         raise GuardError('ambiguous Create outcome; shared charge remains pending')
     if not outcome['clicked']:
@@ -1522,6 +1685,23 @@ STILL_EVIDENCE_JS = r"""(expected) => {
   const selected = [...document.querySelectorAll(
     '[aria-selected="true"],[aria-checked="true"],[aria-pressed="true"],select option:checked')]
     .filter(visible).map(text);
+  const allButtons = [...document.querySelectorAll('button')].filter(visible);
+  const modelButtons = allButtons
+    .filter(e => e.getAttribute('aria-label') === 'Select model family' &&
+      !e.disabled && e.getAttribute('aria-disabled') !== 'true')
+    .map(e => (e.innerText || '').trim().replace(/\s+/g, ' ')
+      .replace(/\s+arrow_drop_down$/, '').replace(/^🍌\s+/, ''));
+  const knownStillModels = new Set(['Nano Banana 2', 'Nano Banana 2.1']);
+  const models = modelButtons.some(t => !knownStillModels.has(t))
+    ? []
+    : unique([...selected.map(t => t.replace(/^🍌\s+/, '')).filter(t => knownStillModels.has(t)), ...modelButtons]);
+  const aspectMap = {
+    '16:9': '16:9', 'crop_16_9 16:9': '16:9',
+    '9:16': '9:16', 'crop_9_16 9:16': '9:16',
+    '4:3': '4:3', 'crop_landscape 4:3': '4:3',
+    '1:1': '1:1', 'crop_square 1:1': '1:1',
+    '3:4': '3:4', 'crop_portrait 3:4': '3:4'
+  };
   const body = document.body.innerText;
   const accounts = unique([...document.querySelectorAll('[aria-label]')].filter(visible)
     .map(e => e.getAttribute('aria-label')).filter(t => /Google Account|Account details/i.test(t))
@@ -1529,16 +1709,16 @@ STILL_EVIDENCE_JS = r"""(expected) => {
     .map(t => t.toLowerCase()));
   const prices = unique(body.split('\n').map(t => t.trim())
     .filter(t => /^Generating will use \d+ credits$/.test(t)));
-  const balances = unique([...body.matchAll(/(?:^|\n)\s*([\d,]+)\s+AI credits\s*(?=\n|$)/g)]
+  const balances = unique([...body.matchAll(/(?:^|\n)\s*([\d,]+)\s+(?:AI|Google Flow) credits\s*(?=\n|$)/g)]
     .map(m => Number(m[1].replace(/,/g, ''))));
-  const buttons = [...document.querySelectorAll('button')].filter(visible).filter(e => {
+  const buttons = allButtons.filter(e => {
     const t = text(e); return (t === 'Create' || t === 'Start generation' || t === 'arrow_forward') &&
       !e.disabled && e.getAttribute('aria-disabled') !== 'true'; });
   const evidence = {
     host: location.hostname,
-    models: unique(selected.filter(t => /Nano Banana/i.test(t))),
-    outputs: unique(selected.filter(t => /^x[124]$/.test(t))),
-    aspects: unique(selected.filter(t => t === '16:9' || t === '9:16')),
+    models,
+    outputs: unique(selected.filter(t => /^x[1234]$/.test(t))),
+    aspects: unique(selected.map(t => aspectMap[t]).filter(Boolean)),
     accounts, prices, balances,
     ultra: body.split('\n').some(t => t.trim() === 'ULTRA'),
     create_count: buttons.length
@@ -1552,34 +1732,47 @@ STILL_EVIDENCE_JS = r"""(expected) => {
 }"""
 
 
-def read_live_still_evidence(page) -> dict:
-    """Strict selected-state DOM evidence for 0-credit Nano Banana 2 16:9 start stills."""
-    evidence = page.evaluate(STILL_EVIDENCE_JS, None)
+def _read_and_validate_live_still_evidence(page, *, balance: int | None = None,
+                                           open_overlay: bool = False) -> tuple[dict, dict]:
+    raw = page.evaluate(STILL_EVIDENCE_JS, None)
+    if (
+        open_overlay
+        and isinstance(raw, dict)
+        and not raw.get('models')
+        and not raw.get('prices')
+        and _open_settings_trigger_if_needed(page)
+    ):
+        raw = page.evaluate(STILL_EVIDENCE_JS, None)
     required = dict(host=FLOW_HOST, models=[REQUIRED_STILL_MODEL], outputs=[REQUIRED_OUTPUTS],
                     aspects=['16:9'], accounts=[REQUIRED_ACCOUNT],
                     prices=['Generating will use 0 credits'],
                     ultra=True, create_count=1)
-    if not isinstance(evidence, dict) or any(evidence.get(k) != v for k, v in required.items()):
+    if not isinstance(raw, dict) or any(raw.get(k) != v for k, v in required.items()):
         raise GuardError('live Flow still selected controls/account/entitlement/zero-price are missing or changed')
-    balances = evidence.get('balances')
-    if not isinstance(balances, list) or len(balances) != 1 or type(balances[0]) is not int or balances[0] < 0:
-        raise GuardError('live Flow balance is missing or ambiguous')
-    if set(evidence) != set(required) | {'balances'}:
+    if set(raw) != set(required) | {'balances'}:
         raise GuardError('unknown live Flow still evidence schema')
+    balances = _resolve_evidence_balances(raw, balance)
+    return raw, dict(raw, balances=balances)
+
+
+def read_live_still_evidence(page, *, balance: int | None = None, open_overlay: bool = False) -> dict:
+    """Strict selected-state DOM evidence for 0-credit Nano Banana 2 16:9 start stills."""
+    _raw, evidence = _read_and_validate_live_still_evidence(page, balance=balance, open_overlay=open_overlay)
     return evidence
 
 
 def guarded_still_create(page, accounting: SharedFlowAccounting, *, reservation: str,
-                         plate_id: str, evidence_path: Path, floor: int = HEADROOM_FLOOR) -> dict:
+                         plate_id: str, evidence_path: Path, floor: int = HEADROOM_FLOOR,
+                         balance: int | None = None) -> dict:
     """Zero-price Nano Banana 2 still adapter; caller owns shared writer lock."""
     accounting._assert_held()
     state = accounting.snapshot()
-    evidence = read_live_still_evidence(page)
+    raw, evidence = _read_and_validate_live_still_evidence(page, balance=balance)
     if state['pending'] or evidence['balances'][0] - state['liability'] < floor:
         raise GuardError('pending charge or insufficient shared Flow headroom for still')
     record = dict(read_at=now_iso(), ui=evidence, plate_id=plate_id, reservation=reservation, credits=0)
     immutable_bytes(evidence_path, (json.dumps(record, sort_keys=True) + '\n').encode())
-    outcome = page.evaluate(STILL_EVIDENCE_JS, evidence)
+    outcome = page.evaluate(STILL_EVIDENCE_JS, raw)
     if not isinstance(outcome, dict) or type(outcome.get('clicked')) is not bool:
         raise GuardError('ambiguous still Create outcome; stopping before video generation')
     if not outcome['clicked']:
@@ -1613,6 +1806,8 @@ def live_still_maker(row: Row, dest: Path, *, accounting: SharedFlowAccounting |
 
     cdp = os.environ.get("ORBIT_FLOW_CDP", "http://127.0.0.1:9222")
     floor = HEADROOM_FLOOR + other
+    plan_path = repo / EDIT_REL / PLAN_NAME
+    media_root = still_tool.infer_media_root(dest)
     prompt = still_tool.still_prompt(
         "History of Science locked look: premium Animistry-class 3D cartoon, finished materials, warm cinematic period light.",
         " ".join(row.prompt.split()) + " Opening frame only. No readable words, numbers, letters or text anywhere.",
@@ -1626,14 +1821,19 @@ def live_still_maker(row: Row, dest: Path, *, accounting: SharedFlowAccounting |
         )
         evidence = {}
         def create_guard(configured_page):
-            ui = read_live_still_evidence(configured_page)
+            live_balance = read_live_balance(configured_page)
+            ui = read_live_still_evidence(configured_page, balance=live_balance, open_overlay=True)
             accounting.reserve(reservation, "HOS:009", MAX_TOTAL_CREDITS, live=ui["balances"][0], floor=floor)
             evidence.update(guarded_still_create(
                 configured_page, accounting, reservation=reservation,
-                plate_id=row.plate_id, evidence_path=evidence_path, floor=floor))
-        still_tool.make_still(page, prompt, dest, timeout_s=300, create_guard=create_guard)
-        after_ui = read_live_still_evidence(page)
-        if after_ui["balances"][0] < evidence["ui"]["balances"][0]:
+                plate_id=row.plate_id, evidence_path=evidence_path, floor=floor,
+                balance=live_balance))
+        still_tool.make_still(
+            page, prompt, dest, timeout_s=300, create_guard=create_guard,
+            plan_path=plan_path, media_root=media_root,
+        )
+        after_balance = read_live_balance(page)
+        if after_balance < evidence["ui"]["balances"][0]:
             raise GuardError("zero-price still reduced Flow balance")
     if not dest.is_file():
         raise GuardError(f"zero-price still for {row.plate_id} was not written")
