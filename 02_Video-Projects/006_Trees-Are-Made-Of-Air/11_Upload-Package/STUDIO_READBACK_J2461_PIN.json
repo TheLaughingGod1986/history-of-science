@@ -1,0 +1,44 @@
+{
+  "job": "J2461",
+  "by": "macbook-2",
+  "at": "2026-11-10T03:08:35Z",
+  "videoId": "VbPubYd6Fbs",
+  "channel": "@HistoryOfScienceYT",
+  "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+  "cdp": 9222,
+  "commentId": "UgyN-6wKr4EfDkXI1h54AaABAg",
+  "commentText": "So where does a tree's weight really come from? Thank you for being here this early. It genuinely helps. A new film every Thursday.",
+  "commentCreated": false,
+  "attemptCount": 1,
+  "pinConfirmed": false,
+  "saveResponse": {
+    "endpoint": "https://studio.youtube.com/youtubei/v1/comment/perform_comment_action?alt=json",
+    "httpStatus": 200,
+    "performPinRid": "0x82c878e67a73f97e",
+    "optimisticUiBeforeReload": {
+      "toast": "Comment pinned",
+      "badge": "Pinned by @HistoryOfScienceYT"
+    },
+    "persistedAfterReload": false
+  },
+  "freshReload": {
+    "url": "https://studio.youtube.com/video/VbPubYd6Fbs/comments",
+    "filterRemoved": "Response status: Unresponded",
+    "pinnedBadgePresent": false,
+    "menuAction": "Pin",
+    "menuItems": [
+      "Pin",
+      "Brainstorm video ideas",
+      "Find similar comments",
+      "Edit",
+      "Delete"
+    ]
+  },
+  "blocker": "MacBook Studio session (CDP 9222, signed in 9 Nov) shows optimistic 'Comment pinned' / 'Pinned by @HistoryOfScienceYT' on confirm, but PerformPin (rid 0x82c878e67a73f97e) does not persist server-side (same step-up re-authentication gate as Mini J0958); fresh reload shows no 'Pinned by' badge and 'Pin' still in the comment action menu. Left comment visible on screen in CDP 9222 for Ben to pin directly.",
+  "titleTouched": false,
+  "thumbnailTouched": false,
+  "descriptionTouched": false,
+  "endScreenTouched": false,
+  "testAndCompareTouched": false,
+  "gbp": 0
+}

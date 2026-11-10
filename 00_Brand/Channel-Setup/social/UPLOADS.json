@@ -317,9 +317,12 @@
       "buffer": "deferred: long films are never cross-posted through Buffer",
       "endScreen": "Subscribe (History of Science) + specific video What's Really Inside an Atom? GHZDsiH7L7A, 8:31:22-8:51:22. Read back after reload. Elements do not show on the watch page while Private.",
       "testAndCompare": "Set 25 Oct 2026 from the Title and thumbnail dialog: A WOOD / FROM / SKY? + The Willow Tree That Was Made of Air; B DO PLANTS / EAT / SOIL? + Where Does a Tree's Weight Come From?. After save, Studio lists both titles under A/B testing titles, status Ineligible (scheduled). Opening A/B testing offers to delete the current test; Cancelled and left.",
-      "pinnedComment": "not posted. update-pinned-comment.ts --create returned 403 forbidden. Studio comments: this account doesn't have permission to create comments.",
+      "pinnedComment": "Existing comment UgyN-6wKr4EfDkXI1h54AaABAg by @HistoryOfScienceYT is visible: So where does a tree's weight really come from? Pin unconfirmed after 1 try on MacBook CDP 9222 (J2461, 10 Nov) and Mini CDP 9460 (J0958, 6 Nov): PerformPin returns HTTP 200 and optimistic UI badge before reload, but fresh reload has no Pinned by badge and still offers Pin. Do not recreate.",
       "cards": "not added",
-      "note": "J0958. End screen and title/thumbnail test saved. Privacy still private, publishAt still 2026-11-05T18:00:00Z. Pinned comment refused by the API and by Studio. Cards not added. Buffer stays deferred. Nothing replaced or deleted."
+      "note": "J0958 / J2461. End screen and title/thumbnail test saved. Existing comment UgyN-6wKr4EfDkXI1h54AaABAg visible; pin requires Ben's interactive step-up/pin in Studio. Cards not added. Buffer stays deferred. Nothing replaced or deleted.",
+      "pinConfirmed": false,
+      "pinBlocker": "J2461 (MacBook CDP 9222) + J0958 (Mini CDP 9460): PerformPin (0x82c878e67a73f97e) shows optimistic toast/badge but does not persist on reload (menu still shows Pin, no Pinned by badge). Needs Ben by hand.",
+      "pinEvidence": "02_Video-Projects/006_Trees-Are-Made-Of-Air/11_Upload-Package/STUDIO_READBACK_J2461_PIN.json"
     },
     "ETynHpIYLeY": {
       "kind": "long",
