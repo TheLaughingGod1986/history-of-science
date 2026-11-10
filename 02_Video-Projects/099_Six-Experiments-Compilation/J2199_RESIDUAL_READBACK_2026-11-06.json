@@ -1,0 +1,60 @@
+{
+  "job": "J2199",
+  "at": "2026-11-06T21:22:00Z",
+  "video": "uAomPaOBrM8",
+  "channel": "UCXp7HkBIl1LgaznXuZHJyRg",
+  "title": "How Did Experiments Explain Blood, Germs and Atoms?",
+  "worker": "cursor",
+  "scope": "Residual checklist after J2298 ACCEPT. Cards, Level and timezone were not opened or changed.",
+  "studio_writes": 0,
+  "verdict": "Residual items already match the checklist on a reloaded Studio page. No Save. Not a film PASS.",
+  "cdp": "9460 reused existing studio.youtube.com tab",
+  "lint": {
+    "command": "npm run lint:package -- --film 099",
+    "cwd": "07_Content-Ops on the shared HOS checkout",
+    "stdout": "No packages found.",
+    "exit": 0,
+    "note": "Current main has no 099 PACKAGE_MANIFEST. Historical manifest at c26a79bd still hashes to ce57c596, the package J2298 already accepted as limited preflight. No Studio write was made, so this run did not treat 'No packages found' as a new lint PASS."
+  },
+  "api_videos_list": {
+    "privacyStatus": "private",
+    "publishAt": "2026-12-10T18:00:00Z",
+    "madeForKids": false,
+    "selfDeclaredMadeForKids": false,
+    "title": "How Did Experiments Explain Blood, Germs and Atoms?",
+    "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+    "containsSyntheticMedia": null
+  },
+  "residual": {
+    "automatic_places": {"want": false, "observed": false, "shot": "places.png"},
+    "automatic_chapters": {"want": true, "observed": true, "shot": "places.png"},
+    "automatic_concepts": {"want": true, "observed": true, "shot": "places.png"},
+    "comments": "On",
+    "moderation": "Basic",
+    "who_can_comment": "Anyone",
+    "sort_by": "Top",
+    "likes_shown": true,
+    "caption_certification": "This content has never aired on television in the US",
+    "paid_promotion_no_selected": true,
+    "paid_promotion_yes_selected": false
+  },
+  "also_seen_unchanged": {
+    "type": "Concept overview",
+    "academic_system": "England",
+    "level": "None",
+    "category_trigger": "Education",
+    "audience": "No, it's not Made for Kids",
+    "visibility_rail": "Scheduled",
+    "playlist_shown": "How Did We Discover…? | History of Science"
+  },
+  "not_touched": ["cards", "level", "timezone", "end screen", "altered content", "title", "privacy", "publishAt", "premiere", "playlists", "tests", "pinned comment"],
+  "evidence_dir": "/Users/benjaminoats/_desk/jobs/J2199/evidence-residual",
+  "shots": {
+    "places.png": "e9362b8996c6a316d090aa1c31eaa7ade41b7ab2184767e645dda2bab0494df8",
+    "moderation.png": "5a274e2005a1ae943802940a85f22213fbaa3ad60def6b675e0452e3edec6bbc",
+    "caption.png": "627b390d877db2adfea84e0d0d4b8181425886f9d21f8b5594a3a787d501489c",
+    "reload_top.png": "56651e686b26795c1add2ebd242ce024984f703083e80928b9fba2f827ebd3e4",
+    "READ.json": "53895347c71d19ee25e91b180a0786cdadf6dbb213e1f2de5a4710a1e8ab82c7"
+  },
+  "paid_shot_note": "paid.png scrolled to the caption block rather than the radio pair. The radio state is the post-reload DOM read in READ.json: No is selected, Yes is not."
+}
