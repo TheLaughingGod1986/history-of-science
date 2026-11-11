@@ -128,3 +128,11 @@ In `J2279`, `gemini` (`audio_input` verified) directly auditioned `009 Short B v
 ALL CHECKS PASS
 ```
 
+
+## 11 Nov 2026 — prompts name nobody; the twelve-plate runner closes a refused take (£0, 0 Flow credits, Claude as acting Chief, queue side)
+
+- **Why:** Flow refuses a prompt that names a prominent person (HOS 009, `08_halley_visit_c1`, take 1, 0 credits). Chief ruling for 010: desk #180 comment 6786709657, item 2. Nothing was submitted for 010 before or by this change.
+- **Prompts:** five rows on the part 2 and part 3 boards now describe the person and name nobody: `P2:01_walter_hammer`, `P2:09_wrap_sample`, `P3:01_luis_sample`, `P3:01_luis_sample_c1`, `P3:08_asaro_michel`. Side labels, the name captions added in the edit and the narration are unchanged, so the names still reach the screen. Old and new wording, word for word: `jobs/reviews/J2270/PROMPT_CHANGE_2026-11-11.json`.
+- **Pins:** `10_Shorts/TWELVE_PLATE_SCOPE_J2267.json` is now `sha256: 6fa991211a24a8808c20606b83784a925df0024869d86ca51839435ffea2a413` (the hash in the 10 Nov entry above is the file as it stood then). `generation_authorized=false` is retained. The J2269 authorization must pin this new hash.
+- **Runner:** `_mint_flow_twelve_plates_j2268.py` gains `reconcile-policy-refusal` (closes a refused take as `FAILED_POLICY`, 0 credits, both ledgers append-only, safe to run twice), never reuses a take number the ledger holds, and sets a row aside while its prompt is one Flow has refused. A refused take still uses one of the row's three takes.
+- **Tests:** `tests/test_hos010_twelve_plate_runner.py`, 21 tests, all offline.

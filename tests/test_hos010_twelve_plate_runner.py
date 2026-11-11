@@ -1100,5 +1100,257 @@ process.stdout.write(JSON.stringify({ ev, out, domClicks }));
             self.assertFalse((root / "run.done").exists())
 
 
+class PolicyRefusalTests(unittest.TestCase):
+    """A take Flow refuses under its content policy: 0 credits, the take is used, the prompt is not sent twice."""
+
+    REFUSED = "P2:01_walter_hammer"
+    KEY = "HOS:010:P02:01_walter_hammer:t1"
+    EVIDENCE = {"ruling": "desk 6786709657", "balance_before": 14890, "balance_after": 14890}
+
+    @classmethod
+    def setUpClass(cls):
+        cls.rows = RUNNER.load_scope(ROOT)
+
+    def test_no_prompt_on_the_boards_or_in_the_scope_names_a_real_person(self):
+        names = ("Alvarez", "Walter", "Luis", "Asaro", "Michel", "Helen", "Frank ", "likeness")
+        boards = sorted((EDIT_DIR / "parts").glob("part-0[1-4]_plates_v03.json")) + [EDIT_DIR / "parts/part-05_plates_v04.json"]
+        self.assertEqual(len(boards), 5)
+        named = [
+            f"{board.name}:{plate['id']}"
+            for board in boards
+            for plate in json.loads(board.read_text())["plates"]
+            if any(name in (plate.get("prompt") or "") for name in names)
+        ]
+        self.assertEqual(named, [])
+        self.assertEqual([r.row_id for r in self.rows if any(name in r.prompt for name in names)], [])
+        # The name still reaches the screen: the side label and the caption added in the edit keep it.
+        part2 = json.loads((EDIT_DIR / "parts/part-02_plates_v03.json").read_text())["plates"][0]
+        self.assertEqual(part2["side_label"], "WALTER ALVAREZ")
+        self.assertEqual(part2["teach_overlay"]["line_1"], "Walter Alvarez")
+
+    def _run_batches(self, root: Path, refuse: str | None):
+        media = root / "media"
+        archive = root / "archive"
+        archive.mkdir(exist_ok=True)
+        populate_media_style_refs(media)
+        sample_mp4 = make_silent_mp4(root / "fixture.mp4")
+        auth_file = write_auth_file(root / "j2269_auth.json", cap=3600, floor=3000)
+        submitted: list[str] = []
+
+        def fake_still_maker(row, dest, *, repo, media, accounting, reservation, evidence_path, other=0, cap=3600, floor=3000):
+            make_png(dest, width=1280, height=720, color=f"0x{row.index:02x}5577")
+            RUNNER.immutable_bytes(
+                evidence_path,
+                (json.dumps({"row_id": row.row_id, "credits": 0, "ui": {"balances": [14890]}}) + "\n").encode(),
+            )
+            return dest
+
+        def fake_submitter(row, dest, frame, *, accounting, reservation, charge, evidence_path, other=0, cap=3600, floor=3000):
+            page = LiveDomAndCliTests.MockPage(
+                LiveDomAndCliTests.video_evidence(account=TRANCHE2.REQUIRED_ACCOUNT, balance=14890)
+            )
+            accounting.reserve(reservation, RUNNER.FILM_ID, cap, live=14890, floor=floor + other)
+            ev = RUNNER.guarded_create(
+                page, accounting, row=row, reservation=reservation, charge=charge,
+                evidence_path=evidence_path, floor=floor + other,
+            )
+            submitted.append(f"{row.row_id}:{charge.rsplit(':', 1)[1]}")
+            if row.row_id == refuse and charge.endswith(":t1"):
+                raise RUNNER.GuardError("Flow refused the prompt under its policy; no output")
+            shutil.copy2(sample_mp4, dest)
+            return ev
+
+        def run():
+            return RUNNER.cmd_submit(
+                ROOT,
+                other=6000,
+                media=media,
+                ledger_path=root / "ledger.jsonl",
+                lock_path=root / "writer.lock",
+                pid_path=root / "runner.pid",
+                done_path=root / "runner.done",
+                archive_dir=archive,
+                authorization_file=auth_file,
+                accounting_state=root / "shared",
+                spend_ledger=root / "ai_spend.jsonl",
+                batch_price_reader=make_batch_prices,
+                submitter=fake_submitter,
+                still_maker=fake_still_maker,
+                test_archive=True,
+            )
+
+        return run, submitted
+
+    def _reconcile(self, root: Path, **over):
+        args = dict(
+            accounting_state=root / "shared", ledger_path=root / "ledger.jsonl", lock_path=root / "writer.lock",
+            key=self.KEY, plate_id="01_walter_hammer", part=2, take=1,
+            reason="Flow refused the prompt under its policy on prominent people", evidence=self.EVIDENCE,
+        )
+        args.update(over)
+        return RUNNER.reconcile_policy_refusal(**args)
+
+    def test_refused_take_closes_at_zero_and_the_run_goes_on_without_the_row(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            run, submitted = self._run_batches(root, refuse=self.REFUSED)
+            with patch.dict(os.environ, {RUNNER.SUBMIT_ENV: "1"}):
+                with self.assertRaisesRegex(RUNNER.GuardError, "Flow refused"):
+                    run()
+                self.assertEqual(submitted, ["P1:01_clay_line:t1", "P2:01_walter_hammer:t1"])
+                # The open take stops every later batch until it is closed.
+                with self.assertRaisesRegex(RUNNER.GuardError, "unresolved"):
+                    run()
+                self.assertEqual(len(submitted), 2)
+
+                before = RUNNER.SharedFlowAccounting.peek_readonly(root / "shared")
+                self.assertEqual(before["charges"][self.KEY]["status"], "CHARGED")
+                first = self._reconcile(root)
+                self.assertEqual(first, {"shared_appended": True, "local_appended": True,
+                                         "refused_takes": ["P2:01_walter_hammer:t1"]})
+                lines = (root / "ledger.jsonl").read_text().count("\n")
+                shared_lines = (root / "shared/account.jsonl").read_text().count("\n")
+                again = self._reconcile(root)
+                self.assertEqual((again["shared_appended"], again["local_appended"]), (False, False))
+                self.assertEqual((root / "ledger.jsonl").read_text().count("\n"), lines)
+                self.assertEqual((root / "shared/account.jsonl").read_text().count("\n"), shared_lines)
+
+                after = RUNNER.SharedFlowAccounting.peek_readonly(root / "shared")
+                self.assertEqual(after["charges"][self.KEY]["status"], "POLICY_REFUSED")
+                self.assertEqual(after["charges"][self.KEY]["amount"], 0)
+
+                entries = RUNNER.read_ledger(root / "ledger.jsonl")
+                closed = entries[-1]
+                self.assertEqual((closed["status"], closed["credits_used"], closed["file_state"]),
+                                 ("FAILED_POLICY", 0, "REFUSED"))
+                self.assertIs(closed["keep"], False)
+                self.assertEqual(closed["shared_charge"], self.KEY)
+                row = next(r for r in self.rows if r.row_id == self.REFUSED)
+                self.assertEqual(closed["prompt_sha256"], row.prompt_sha256)
+                spent, pending, unknown, takes = RUNNER.ledger_totals(entries)
+                self.assertEqual((spent, pending, unknown), (100, 0, False))  # the clay-line take only
+                self.assertEqual(takes[self.REFUSED], 1)  # the refused take still used one of three
+                self.assertEqual(RUNNER.rows_set_aside(self.rows, entries), [self.REFUSED])
+
+                # The run goes on: the refused prompt is not sent again, the other eleven rows are made.
+                sizes = [len(run()) for _ in range(4)]
+                self.assertEqual(sizes, [5, 5, 0, 0])
+                self.assertEqual(len(submitted), 12)
+                self.assertEqual([s for s in submitted if s.startswith(self.REFUSED)], ["P2:01_walter_hammer:t1"])
+                final = RUNNER.SharedFlowAccounting.peek_readonly(root / "shared")
+                self.assertEqual(sum(c["amount"] for c in final["charges"].values()), 1100)
+                report = [json.loads(line) for line in (root / "ai_spend.jsonl").read_text().splitlines() if line.strip()]
+                # The refused take reached the spend report before it was closed; one receipt takes it back.
+                self.assertEqual(sum(r["amount"] for r in report if r.get("kind") == "spend"), 1100)
+                self.assertEqual([r["amount"] for r in report if r.get("id") == "flow:reversal:" + self.KEY], [-100])
+
+    def test_a_new_prompt_brings_the_row_back_at_take_two(self):
+        import dataclasses
+
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            run, submitted = self._run_batches(root, refuse=self.REFUSED)
+            with patch.dict(os.environ, {RUNNER.SUBMIT_ENV: "1"}):
+                with self.assertRaises(RUNNER.GuardError):
+                    run()
+                self._reconcile(root)
+                entries = RUNNER.read_ledger(root / "ledger.jsonl")
+                row = next(r for r in self.rows if r.row_id == self.REFUSED)
+                self.assertNotIn(self.REFUSED, [r.row_id for r in RUNNER.next_batch(self.rows, entries)])
+
+                # Take 1 left no file. Without the ledger's take numbers the retry would be t1 again.
+                media = root / "media"
+                self.assertEqual(RUNNER.next_version(media, 2, "01_walter_hammer")[0], 1)
+                used = RUNNER.takes_recorded(entries, self.REFUSED)
+                self.assertEqual(used, {1})
+                take, dest = RUNNER.next_version(media, 2, "01_walter_hammer", used=used)
+                self.assertEqual((take, dest.name), (2, "P02_01_walter_hammer_t2.mp4"))
+                with self.assertRaisesRegex(RUNNER.GuardError, "cap refuses take 4"):
+                    RUNNER.next_version(media, 2, "01_walter_hammer", used={1, 2, 3})
+
+                # The scope now carries a new prompt for the row: it is back in the queue.
+                reworded = [
+                    dataclasses.replace(r, prompt=r.prompt + " Reworded.", prompt_sha256="0" * 64)
+                    if r.row_id == self.REFUSED else r
+                    for r in self.rows
+                ]
+                self.assertEqual(RUNNER.rows_set_aside(reworded, entries), [])
+                self.assertIn(self.REFUSED, [r.row_id for r in RUNNER.next_batch(reworded, entries)])
+
+                # End to end with the row's own (unchanged) scope: set aside, so t2 is never sent by itself.
+                while run():
+                    pass
+                self.assertEqual([s for s in submitted if s.startswith(self.REFUSED)], ["P2:01_walter_hammer:t1"])
+
+    def test_reconcile_refuses_the_wrong_row_key_state_or_missing_evidence(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            run, _submitted = self._run_batches(root, refuse=self.REFUSED)
+            with patch.dict(os.environ, {RUNNER.SUBMIT_ENV: "1"}):
+                with self.assertRaises(RUNNER.GuardError):
+                    run()
+            before = (root / "ledger.jsonl").read_text(), (root / "shared/account.jsonl").read_text()
+            with self.assertRaisesRegex(RUNNER.GuardError, "does not belong"):
+                self._reconcile(root, key="HOS:010:P02:01_walter_hammer:t2")
+            with self.assertRaisesRegex(RUNNER.GuardError, "does not belong"):
+                self._reconcile(root, key="HOS:013:P02:01_walter_hammer:t1")
+            with self.assertRaisesRegex(RUNNER.GuardError, "not one of the twelve"):
+                self._reconcile(root, plate_id="09_wrap_sample", key="HOS:010:P02:09_wrap_sample:t1")
+            with self.assertRaisesRegex(RUNNER.GuardError, "only to a SUBMITTING take"):
+                # the clay-line take was made and charged: it is not a refusal
+                self._reconcile(root, plate_id="01_clay_line", part=1, key="HOS:010:P01:01_clay_line:t1")
+            with self.assertRaisesRegex(RUNNER.GuardError, "reason and evidence"):
+                self._reconcile(root, reason=" ")
+            with self.assertRaisesRegex(RUNNER.GuardError, "reason and evidence"):
+                self._reconcile(root, evidence={})
+            # Not one refusal above wrote a line to either ledger.
+            self.assertEqual(before, ((root / "ledger.jsonl").read_text(), (root / "shared/account.jsonl").read_text()))
+
+    def test_ledger_refuses_a_policy_line_with_credits_or_without_a_reason(self):
+        base = {"row_id": self.REFUSED, "plate_id": "01_walter_hammer", "part": 2, "take": 1,
+                "status": "FAILED_POLICY", "keep": False, "review": "PENDING_REVIEW"}
+        good = {**base, "credits_used": 0, "reason": "refused by Flow"}
+        self.assertEqual(RUNNER.ledger_totals([good]), (0, 0, False, {self.REFUSED: 1}))
+        for bad in ({**base, "credits_used": 100, "reason": "x"}, {**base, "credits_used": 0},
+                    {**base, "credits_used": 0.0, "reason": "x"}, {**base, "reason": "x"}):
+            with self.assertRaisesRegex(RUNNER.GuardError, "FAILED_POLICY needs"):
+                RUNNER.ledger_totals([bad])
+        # Three refusals use the row's three takes; a fourth line is over the cap.
+        three = [{**good, "take": t} for t in (1, 2, 3)]
+        self.assertEqual(RUNNER.ledger_totals(three)[3], {self.REFUSED: 3})
+        with self.assertRaisesRegex(RUNNER.GuardError, "exceeds MAX_TAKES_PER_ROW"):
+            RUNNER.ledger_totals(three + [{**good, "take": 4}])
+
+    def test_cli_closes_the_refused_take_and_submits_nothing(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            run, submitted = self._run_batches(root, refuse=self.REFUSED)
+            with patch.dict(os.environ, {RUNNER.SUBMIT_ENV: "1"}):
+                with self.assertRaises(RUNNER.GuardError):
+                    run()
+            evidence = root / "evidence.json"
+            evidence.write_text(json.dumps(self.EVIDENCE))
+            cmd = [
+                sys.executable, str(SCRIPT), "reconcile-policy-refusal",
+                "--key", self.KEY, "--plate", "01_walter_hammer", "--part", "2",
+                "--reason", "Flow refused the prompt under its policy on prominent people",
+                "--evidence", str(evidence),
+                "--accounting-state", str(root / "shared"),
+                "--ledger", str(root / "ledger.jsonl"), "--lock", str(root / "writer.lock"),
+            ]
+            env = {k: v for k, v in os.environ.items() if k != RUNNER.SUBMIT_ENV}
+            proc = subprocess.run(cmd, capture_output=True, text=True, env=env)
+            self.assertEqual(proc.returncode, 0, proc.stderr)
+            self.assertEqual(json.loads(proc.stdout), {"shared_appended": True, "local_appended": True,
+                                                       "refused_takes": ["P2:01_walter_hammer:t1"]})
+            again = subprocess.run(cmd, capture_output=True, text=True, env=env)
+            self.assertEqual(again.returncode, 0, again.stderr)
+            self.assertEqual(json.loads(again.stdout)["local_appended"], False)
+            self.assertEqual(len(submitted), 2)
+            wrong = subprocess.run(cmd[:4] + ["HOS:010:P02:01_walter_hammer:t3"] + cmd[5:], capture_output=True, text=True, env=env)
+            self.assertEqual(wrong.returncode, 2)
+            self.assertIn("STOP", wrong.stderr)
+
+
 if __name__ == "__main__":
     unittest.main()

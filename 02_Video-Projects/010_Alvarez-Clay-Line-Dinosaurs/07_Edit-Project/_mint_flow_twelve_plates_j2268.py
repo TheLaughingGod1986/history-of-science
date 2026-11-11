@@ -49,6 +49,10 @@ Core J2267 / J2268 / J2200 guards:
   durable `account.jsonl` reservation/intent/resolution/reconciliation,
   duplicate-process PID + flock refusal, `cdp_tabs.reuse_page`, silent 8s 16:9
   decode check, and SHA-256-verified immutable NAS archive copies + receipts.
+- A take Flow refuses under its content policy is closed with
+  `reconcile-policy-refusal`: `FAILED_POLICY`, `0` credits, no output. It still
+  uses one of the row's `3` takes and its number is never used again. The row is
+  set aside until its prompt changes: a refused prompt is not sent twice.
 """
 from __future__ import annotations
 
@@ -117,6 +121,10 @@ MAX_BATCH_CREDITS = 1500
 HEADROOM_FLOOR = 3000
 
 SUBMIT_ENV = "HOS010_TWELVE_PLATES_SUBMIT"
+# A take Flow refused under its content policy: no output and no credits (Chief rulings on J2033,
+# desk 6784299215, 6785508086 and 6785808071; for 010, desk 6786709657 item 2). It uses one of
+# the row's takes. The row is set aside until its prompt changes, then goes on at the next take.
+POLICY_REFUSED = "FAILED_POLICY"
 DEFAULT_RESERVATION = "HOS010_TWELVE_PLATES_J2270"
 FLOW_HOST = "flow.google.com"
 GENERATE_LINE_RE = re.compile(r"^Generating will use (\d+) credits$")
@@ -1081,8 +1089,11 @@ def ledger_totals(
         status = entry.get("status")
         if status == "KEEP" or entry.get("keep") is True or entry.get("review") == "KEEP":
             raise GuardError("ledger contains KEEP; twelve-plate runner never auto-KEEPs")
-        if status not in ("SUBMITTING", "PENDING_REVIEW", "GENERATED", "FAILED", "REJECTED_REVIEW"):
+        if status not in ("SUBMITTING", "PENDING_REVIEW", "GENERATED", "FAILED", "REJECTED_REVIEW", POLICY_REFUSED):
             raise GuardError(f"unknown ledger status {status!r}")
+        if status == POLICY_REFUSED and (entry.get("credits_used") != 0 or type(entry.get("credits_used")) is not int
+                                         or not str(entry.get("reason") or "").strip()):
+            raise GuardError(f"{POLICY_REFUSED} needs credits_used 0 and a reason")
         row_id = str(entry.get("row_id") or "")
         if not row_id:
             part = entry.get("part")
@@ -1107,6 +1118,8 @@ def ledger_totals(
                 unknown = True
             else:
                 pending += reserved
+        elif status == POLICY_REFUSED:
+            pass  # refused by Flow, 0 credits; it still used one of the row's takes
         else:
             amount = entry.get("credits_used")
             if amount is None:
@@ -1284,10 +1297,16 @@ def versioned_output(media: Path, part: int, plate_id: str, take: int = 1) -> Pa
     )
 
 
-def next_version(media: Path, part: int, plate_id: str, *, max_takes: int = MAX_TAKES_PER_ROW) -> tuple[int, Path]:
+def next_version(
+    media: Path, part: int, plate_id: str, *, max_takes: int = MAX_TAKES_PER_ROW, used=()
+) -> tuple[int, Path]:
+    """The first take number with no file and no ledger line. `used` holds the take numbers the
+    ledger already has for this row: a take Flow refused leaves no file, and numbering the next
+    take the same would put a new SUBMITTING line over the FAILED_POLICY one and then collide
+    with the refused take's shared charge."""
     for take in range(1, max_takes + 1):
         dest = versioned_output(media, part, plate_id, take)
-        if not dest.exists():
+        if take not in used and not dest.exists():
             return take, dest
     raise GuardError(
         f"P{part}:{plate_id} already has {max_takes} versioned file(s); cap refuses take {max_takes + 1}"
@@ -1819,6 +1838,90 @@ def latest_entries(entries: list[dict]) -> list[dict]:
     return list(latest.values())
 
 
+def _entry_row_id(entry: dict) -> str:
+    return entry.get("row_id") or f"P{int(entry.get('part') or 0)}:{entry.get('plate_id')}"
+
+
+def takes_recorded(entries: list[dict], row_id: str) -> set[int]:
+    return {int(e.get("take") or 0) for e in entries if _entry_row_id(e) == row_id}
+
+
+def refused_takes(entries: list[dict]) -> list[dict]:
+    """Takes Flow refused under its content policy, in ledger order."""
+    return [e for e in latest_entries(entries) if e.get("status") == POLICY_REFUSED]
+
+
+def rows_set_aside(rows: list[Row], entries: list[dict]) -> list[str]:
+    """Rows whose prompt, as it stands in the scope, is one Flow has already refused.
+
+    A refused prompt is not sent again unchanged. When the scope carries a new prompt for the
+    row, its hash differs from the refused take's and the row comes back at the next take number.
+    """
+    refused = {(_entry_row_id(e), e.get("prompt_sha256")) for e in refused_takes(entries)}
+    return [row.row_id for row in rows if (row.row_id, row.prompt_sha256) in refused]
+
+
+def policy_refusal_record(submitting: dict, *, reason: str, evidence: dict) -> dict:
+    """Close a SUBMITTING take that Flow refused under its content policy at 0 credits."""
+    if not str(reason or "").strip() or not evidence:
+        raise GuardError("a policy refusal needs a reason and evidence")
+    if not submitting.get("prompt_sha256"):
+        raise GuardError("the SUBMITTING take carries no prompt hash; refusing to close it blind")
+    return {
+        "row_id": _entry_row_id(submitting),
+        "plate_id": submitting.get("plate_id"),
+        "part": submitting.get("part"),
+        "quality": submitting.get("quality"),
+        "flow_model": submitting.get("flow_model"),
+        "take": int(submitting.get("take") or 0),
+        "status": POLICY_REFUSED,
+        "file_state": "REFUSED",
+        "generated": False,
+        "review": "PENDING_REVIEW",
+        "keep": False,
+        "prompt_sha256": submitting["prompt_sha256"],
+        "credits_used": 0,
+        "reason": reason,
+        "evidence": evidence,
+        "at": now_iso(),
+    }
+
+
+def reconcile_policy_refusal(*, accounting_state: Path, ledger_path: Path, lock_path: Path,
+                             key: str, plate_id: str, part: int, take: int,
+                             reason: str, evidence: dict) -> dict:
+    """Append the shared reversal and the twelve-plate ledger's FAILED_POLICY line; idempotent.
+
+    Both ledgers only gain lines, and nothing is submitted. The local line is skipped when the
+    take's latest entry is already FAILED_POLICY, so a second run changes nothing.
+    """
+    row_id = f"P{int(part)}:{plate_id}"
+    if row_id not in EXPECTED_ROW_IDS:
+        raise GuardError(f"{row_id} is not one of the twelve scoped rows")
+    if key != f"{FILM_ID}:P{int(part):02d}:{plate_id}:t{int(take)}":
+        raise GuardError("the shared charge id does not belong to this row and take")
+    with WriterLock(lock_path), SharedFlowAccounting(accounting_state) as account:
+        entries = read_ledger(ledger_path)
+        latest = {(_entry_row_id(e), int(e.get("take") or 0)): e for e in entries}
+        current = latest.get((row_id, int(take)))
+        if current is None or current.get("status") not in ("SUBMITTING", POLICY_REFUSED):
+            raise GuardError("policy refusal applies only to a SUBMITTING take")
+        if current.get("status") == "SUBMITTING" and current.get("shared_charge") not in (None, key):
+            raise GuardError("the twelve-plate ledger names a different shared charge for this take")
+        local = current.get("status") != POLICY_REFUSED
+        closed = policy_refusal_record(current, reason=reason, evidence=evidence) if local else None
+        shared = account.reverse_policy_refusal(key, evidence=evidence)
+        if local:
+            closed["shared_charge"] = key
+            append_ledger(ledger_path, closed)
+            entries.append(closed)
+        return {
+            "shared_appended": shared,
+            "local_appended": local,
+            "refused_takes": [f"{_entry_row_id(e)}:t{int(e.get('take') or 0)}" for e in refused_takes(entries)],
+        }
+
+
 def submitting_record(row: Row, take: int, dest: Path) -> dict:
     return {
         "row_id": row.row_id,
@@ -2067,7 +2170,14 @@ def next_batch(rows: list[Row], ledger: list[dict]) -> list[Row]:
         for entry in latest_entries(ledger)
         if verified_output(entry)
     }
-    remaining = [row for row in order_rows(rows, require_part1_first=True) if row.row_id not in done]
+    # A refused prompt is not sent again unchanged. Left in, the row would burn its three takes
+    # on the same refusal and then stop every later batch on the take cap.
+    waiting = set(rows_set_aside(rows, ledger))
+    remaining = [
+        row
+        for row in order_rows(rows, require_part1_first=True)
+        if row.row_id not in done and row.row_id not in waiting
+    ]
     if not remaining:
         return []
     return batch_rows(remaining, require_part1_first=False)[0]
@@ -2194,7 +2304,7 @@ def execute_shared_batch(
             ):
                 raise GuardError(f"start still changed after inventory on {row.row_id}; refusing Create")
 
-            take, dest = next_version(media, row.part, row.plate_id)
+            take, dest = next_version(media, row.part, row.plate_id, used=takes_recorded(entries, row.row_id))
             dest.parent.mkdir(parents=True, exist_ok=True)
             charge = f"{FILM_ID}:P{row.part:02d}:{row.plate_id}:t{take}"
             intent = submitting_record(row, take, dest)
@@ -3319,7 +3429,36 @@ def main(argv: list[str] | None = None) -> int:
         launch.add_argument("--log", required=True)
         launch.add_argument("--done", required=True)
 
+    refusal = sub.add_parser(
+        "reconcile-policy-refusal",
+        help="close a take Flow refused under its content policy at 0 credits; submits nothing",
+    )
+    refusal.add_argument("--key", required=True, help="shared charge id, e.g. HOS:010:P02:01_walter_hammer:t1")
+    refusal.add_argument("--plate", required=True)
+    refusal.add_argument("--part", type=int, required=True)
+    refusal.add_argument("--take", type=int, default=1)
+    refusal.add_argument("--reason", required=True)
+    refusal.add_argument("--evidence", required=True, help="JSON file: the Chief ruling and the balance arithmetic")
+    refusal.add_argument("--accounting-state", default=None)
+    refusal.add_argument("--ledger", default=None)
+    refusal.add_argument("--lock", default=None)
+
     args = parser.parse_args(argv)
+    if args.cmd == "reconcile-policy-refusal":
+        evidence = json.loads(Path(args.evidence).read_text())
+        result = reconcile_policy_refusal(
+            accounting_state=Path(args.accounting_state) if args.accounting_state else shared_flow_state_dir(),
+            ledger_path=Path(args.ledger) if args.ledger else state / "ledger.jsonl",
+            lock_path=Path(args.lock) if args.lock else state / "writer.lock",
+            key=args.key,
+            plate_id=args.plate,
+            part=args.part,
+            take=args.take,
+            reason=args.reason,
+            evidence=evidence,
+        )
+        sys.stdout.write(json.dumps(result, sort_keys=True) + "\n")
+        return 0
     if args.cmd == "plan":
         repo = Path(args.repo) if args.repo else repo_root_from()
         cmd_plan(repo, Path(args.out) if args.out else None)

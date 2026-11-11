@@ -1,0 +1,87 @@
+{
+  "job": "J2270",
+  "film": "HOS:010",
+  "date": "2026-11-11",
+  "by": "claude (acting Chief, queue side)",
+  "ruling": [
+    "history-of-science#180 comment 6786709657 (item 2)",
+    "history-of-science#180 comment 6785808071"
+  ],
+  "why": "Flow refuses a prompt that names a prominent person (HOS 009, 08_halley_visit_c1, take 1, 0 credits). The Chief ruled the same fix for 010 before anything is submitted: the prompt describes the person and names nobody. Identity on screen comes from the side label, the name caption added in the edit and the narration, none of which is sent to the picture model.",
+  "boards": [
+    {
+      "board": "07_Edit-Project/parts/part-02_plates_v03.json",
+      "sha256_old": "e8288df2e05426a6d779f0e865b228883bc8dd1566e91c4959950902dd359809",
+      "sha256_new": "68696f838534ea63a62930958990a4ba6331dbb66113c55509a57440cf9e485f"
+    },
+    {
+      "board": "07_Edit-Project/parts/part-03_plates_v03.json",
+      "sha256_old": "ee896f9b8608441f52cc784f3e198c9488ec941e98775b14d1d89c709dd889bf",
+      "sha256_new": "80d0244add132376ecf7b037b14b6d563d818333ac135515bba46e2f6df02cfb"
+    }
+  ],
+  "scope": {
+    "file": "10_Shorts/TWELVE_PLATE_SCOPE_J2267.json",
+    "sha256_old": "5bcfc162af2c87fd6ae9984377d6b54efe76f50e99a493fd8df9f3ae4ecf827f",
+    "sha256_new": "6fa991211a24a8808c20606b83784a925df0024869d86ca51839435ffea2a413",
+    "rows_repinned": [
+      "P2:01_walter_hammer",
+      "P2:03_tiny_shells",
+      "P2:05_almost_none",
+      "P3:08_asaro_michel"
+    ],
+    "prompts_changed": [
+      "P2:01_walter_hammer",
+      "P3:08_asaro_michel"
+    ]
+  },
+  "budget_record": {
+    "file": "10_Shorts/J2267_BUDGET_RECONCILIATION.json",
+    "sha256_old": "0231143fd05ee20d6c5d6bffd6bb860f1b80fefdf750e93226fc33101b4a8b5c",
+    "sha256_new": "88b94acdaa36be8ad30782a8dbcb08bb5d41f1daca37a101b4d8a2ae15fe1422",
+    "changed": "the two board hashes only; no row count, price or credit figure"
+  },
+  "rows": [
+    {
+      "id": "P2:01_walter_hammer",
+      "field": "prompt",
+      "old": "Premium Animistry-class 3D cartoon. Gubbio in the nineteen-seventies. Walter Alvarez, clean-shaven, fair hair, dark-rimmed glasses, a short-sleeved field shirt, taps the sunlit cliff with a geologist's hammer. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "new": "Premium Animistry-class 3D cartoon. Gubbio in the nineteen-seventies. A geologist in his thirties, clean-shaven, fair hair, dark-rimmed glasses, a short-sleeved field shirt, taps the sunlit cliff with a rock hammer. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "note": "in the twelve-row scope; not yet submitted."
+    },
+    {
+      "id": "P2:09_wrap_sample",
+      "field": "prompt",
+      "old": "Premium Animistry-class 3D cartoon. Walter wraps a small piece of the rock, clay band and all, in cloth and puts it in his field bag. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "new": "Premium Animistry-class 3D cartoon. The fair-haired geologist in dark-rimmed glasses and a short-sleeved field shirt wraps a small piece of the rock, clay band and all, in cloth and puts it in his field bag. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "note": "outside the twelve-row scope; changed now so the board's hash moves once. The first name alone left the picture model nothing to draw, so the row repeats the description."
+    },
+    {
+      "id": "P3:01_luis_sample",
+      "field": "prompt",
+      "old": "Premium Animistry-class 3D cartoon. A desk at Berkeley, late nineteen-seventies. Luis Alvarez, late sixties, white thinning hair, glasses, a cardigan, turns the rock sample over in his hands. His son stands beside him. Window light. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "new": "Premium Animistry-class 3D cartoon. A desk at Berkeley, late nineteen-seventies. A physicist in his late sixties, white thinning hair, glasses, a cardigan, turns the rock sample over in his hands. His son stands beside him. Window light. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "note": "outside the twelve-row scope; changed now so the board's hash moves once."
+    },
+    {
+      "id": "P3:01_luis_sample_c1",
+      "field": "prompt",
+      "old": "Premium Animistry-class 3D cartoon. Same shot continues from the last frame of 01_luis_sample, camera keeps moving: A desk at Berkeley, late nineteen-seventies. Luis Alvarez, late sixties, white thinning hair, glasses, a cardigan, turns the rock sample over in his hands. His son stands beside him. Window light. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "new": "Premium Animistry-class 3D cartoon. Same shot continues from the last frame of 01_luis_sample, camera keeps moving: A desk at Berkeley, late nineteen-seventies. A physicist in his late sixties, white thinning hair, glasses, a cardigan, turns the rock sample over in his hands. His son stands beside him. Window light. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "note": "outside the twelve-row scope; continuation of the row above, same wording."
+    },
+    {
+      "id": "P3:08_asaro_michel",
+      "field": "prompt",
+      "old": "Premium Animistry-class 3D cartoon. A late-nineteen-seventies Berkeley lab. Frank Asaro and Helen Michel, kind likenesses in lab coats, press powdered samples into small pills and set them by a detector rack. Tape reels turn. No reactor. No readable screens. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "new": "Premium Animistry-class 3D cartoon. A late-nineteen-seventies Berkeley lab. Two nuclear chemists in lab coats, a man of about fifty and a woman in her mid-forties, press powdered samples into small pills and set them by a detector rack. Tape reels turn. No reactor. No readable screens. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "note": "in the twelve-row scope; not yet submitted. 'Kind likenesses' asked for the two real faces and is gone with the names."
+    }
+  ],
+  "unchanged": "Model, length, aspect, price, take cap, side labels, name captions, narration lines, row ids, file names and every other row. PICTURE_PLAN_v04.json and SHORTS_PICTURE_PLAN_v03.json hold no prompt text and keep their hashes.",
+  "all_five_boards_checked": "No prompt on part 1 to part 4 (v03) or part 5 (v04) names a person after this change.",
+  "not_changed": "The builders (_build_plate_boards_v01.py to v03.py) and the v01 and v02 boards keep the old wording as history. The v03 boards are the pinned source; running the old builders again would put the names back.",
+  "not_checked": "Whether each description matches photographs of the person at that date. That is a picture-review question, not part of this change.",
+  "authorization": "J2269 has not authorized generation; its record must pin the new scope sha256.",
+  "if_refused": "Close the take with reconcile-policy-refusal (0 credits). The row is set aside until its prompt changes; no Vertex fallback without a ruling."
+}
