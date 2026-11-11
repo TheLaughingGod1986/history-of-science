@@ -1,0 +1,1204 @@
+{
+  "job": "J2033",
+  "verified_at": "2026-11-11T05:53:48+00:00",
+  "worker": "codex",
+  "generated": 20,
+  "keep": 0,
+  "remaining_rows": [],
+  "perceptual_review": "Not performed; J2034 owns review",
+  "new_submissions_this_session": 0,
+  "net_tranche_credits": 2000,
+  "pending_charges": false,
+  "charge_summary": {
+    "HOS:009:P02:10_how_high:t1": {
+      "reservation": "J2033",
+      "amount": 100,
+      "status": "CHARGED",
+      "posted": false
+    },
+    "HOS:009:P03:07_ball_to_moon:t1": {
+      "reservation": "J2033",
+      "amount": 100,
+      "status": "CHARGED",
+      "posted": false
+    },
+    "HOS:009:P01:05_heavens_map_c1:t1": {
+      "reservation": "J2033",
+      "amount": 100,
+      "status": "CHARGED",
+      "posted": false
+    },
+    "HOS:009:P01:07_night_field_c1:t1": {
+      "reservation": "J2033",
+      "amount": 100,
+      "status": "CHARGED",
+      "posted": false
+    },
+    "HOS:009:P02:01_cambridge_closes_c1:t1": {
+      "reservation": "J2033",
+      "amount": 100,
+      "status": "CHARGED",
+      "posted": false
+    },
+    "HOS:009:P02:03_christmas_birth_c1:t1": {
+      "reservation": "J2033",
+      "amount": 100,
+      "status": "CHARGED",
+      "posted": false
+    },
+    "HOS:009:P02:05_working_alone_c1:t1": {
+      "reservation": "J2033",
+      "amount": 100,
+      "status": "CHARGED",
+      "posted": false
+    },
+    "HOS:009:P02:08_the_apple_c1:t1": {
+      "reservation": "J2033",
+      "amount": 100,
+      "status": "CHARGED",
+      "posted": false
+    },
+    "HOS:009:P02:11_explorer_apple_c1:t1": {
+      "reservation": "J2033",
+      "amount": 100,
+      "status": "CHARGED",
+      "posted": false
+    },
+    "HOS:009:P03:01_really_falling_c1:t1": {
+      "reservation": "J2033",
+      "amount": 100,
+      "status": "CHARGED",
+      "posted": false
+    },
+    "HOS:009:P03:05_shot_orbit_c1:t1": {
+      "reservation": "J2033",
+      "amount": 100,
+      "status": "CHARGED",
+      "posted": false
+    },
+    "HOS:009:P03:05_shot_orbit_c2:t1": {
+      "reservation": "J2033",
+      "amount": 100,
+      "status": "CHARGED",
+      "posted": false
+    },
+    "HOS:009:P04:05_minute_second_c1:t1": {
+      "reservation": "J2033",
+      "amount": 100,
+      "status": "CHARGED",
+      "posted": false
+    },
+    "HOS:009:P04:05_minute_second_c2:t1": {
+      "reservation": "J2033",
+      "amount": 100,
+      "status": "CHARGED",
+      "posted": false
+    },
+    "HOS:009:P04:08_halley_visit_c1:t1": {
+      "reservation": "J2033",
+      "amount": 0,
+      "status": "POLICY_REFUSED",
+      "posted": false
+    },
+    "HOS:009:P04:08_halley_visit_c1:t2": {
+      "reservation": "J2033",
+      "amount": 100,
+      "status": "CHARGED",
+      "posted": false
+    },
+    "HOS:009:P04:08_halley_visit_c2:t1": {
+      "reservation": "J2033",
+      "amount": 100,
+      "status": "CHARGED",
+      "posted": false
+    },
+    "HOS:009:P05:04_comet_1758_c1:t1": {
+      "reservation": "J2033",
+      "amount": 100,
+      "status": "CHARGED",
+      "posted": false
+    },
+    "HOS:009:P05:05_iss_orbit_c1:t1": {
+      "reservation": "J2033",
+      "amount": 100,
+      "status": "CHARGED",
+      "posted": false
+    },
+    "HOS:009:P05:05_iss_orbit_c2:t1": {
+      "reservation": "J2033",
+      "amount": 100,
+      "status": "CHARGED",
+      "posted": false
+    },
+    "HOS:009:P05:06_iss_apple_c1:t1": {
+      "reservation": "J2033",
+      "amount": 100,
+      "status": "CHARGED",
+      "posted": false
+    }
+  },
+  "reservation": {
+    "cap": 6000,
+    "film": "HOS:009",
+    "active": false
+  },
+  "spend_receipts": [
+    {
+      "at": "2026-11-10T20:19:08+00:00",
+      "by": "codex",
+      "charge": "HOS:009:P02:10_how_high:t1",
+      "id": "flow:read:HOS:009:P02:10_how_high:t1",
+      "kind": "record",
+      "left": 14890,
+      "note": "Configured UI before Create",
+      "pool": "flow",
+      "source": "shared-flow"
+    },
+    {
+      "amount": 100,
+      "at": "2026-11-10T20:19:08+00:00",
+      "by": "codex",
+      "charge": "HOS:009:P02:10_how_high:t1",
+      "film": "HOS:009",
+      "id": "flow:spend:HOS:009:P02:10_how_high:t1",
+      "kind": "spend",
+      "pool": "flow",
+      "source": "shared-flow",
+      "what": "HOS:009:P02:10_how_high:t1"
+    },
+    {
+      "at": "2026-11-10T20:21:26+00:00",
+      "by": "codex",
+      "charge": "HOS:009:P03:07_ball_to_moon:t1",
+      "id": "flow:read:HOS:009:P03:07_ball_to_moon:t1",
+      "kind": "record",
+      "left": 14790,
+      "note": "Configured UI before Create",
+      "pool": "flow",
+      "source": "shared-flow"
+    },
+    {
+      "amount": 100,
+      "at": "2026-11-10T20:21:26+00:00",
+      "by": "codex",
+      "charge": "HOS:009:P03:07_ball_to_moon:t1",
+      "film": "HOS:009",
+      "id": "flow:spend:HOS:009:P03:07_ball_to_moon:t1",
+      "kind": "spend",
+      "pool": "flow",
+      "source": "shared-flow",
+      "what": "HOS:009:P03:07_ball_to_moon:t1"
+    },
+    {
+      "at": "2026-11-10T20:25:35+00:00",
+      "by": "codex",
+      "charge": "HOS:009:P01:05_heavens_map_c1:t1",
+      "id": "flow:read:HOS:009:P01:05_heavens_map_c1:t1",
+      "kind": "record",
+      "left": 14690,
+      "note": "Configured UI before Create",
+      "pool": "flow",
+      "source": "shared-flow"
+    },
+    {
+      "amount": 100,
+      "at": "2026-11-10T20:25:35+00:00",
+      "by": "codex",
+      "charge": "HOS:009:P01:05_heavens_map_c1:t1",
+      "film": "HOS:009",
+      "id": "flow:spend:HOS:009:P01:05_heavens_map_c1:t1",
+      "kind": "spend",
+      "pool": "flow",
+      "source": "shared-flow",
+      "what": "HOS:009:P01:05_heavens_map_c1:t1"
+    },
+    {
+      "at": "2026-11-10T20:27:43+00:00",
+      "by": "codex",
+      "charge": "HOS:009:P01:07_night_field_c1:t1",
+      "id": "flow:read:HOS:009:P01:07_night_field_c1:t1",
+      "kind": "record",
+      "left": 14590,
+      "note": "Configured UI before Create",
+      "pool": "flow",
+      "source": "shared-flow"
+    },
+    {
+      "amount": 100,
+      "at": "2026-11-10T20:27:43+00:00",
+      "by": "codex",
+      "charge": "HOS:009:P01:07_night_field_c1:t1",
+      "film": "HOS:009",
+      "id": "flow:spend:HOS:009:P01:07_night_field_c1:t1",
+      "kind": "spend",
+      "pool": "flow",
+      "source": "shared-flow",
+      "what": "HOS:009:P01:07_night_field_c1:t1"
+    },
+    {
+      "at": "2026-11-10T20:29:48+00:00",
+      "by": "codex",
+      "charge": "HOS:009:P02:01_cambridge_closes_c1:t1",
+      "id": "flow:read:HOS:009:P02:01_cambridge_closes_c1:t1",
+      "kind": "record",
+      "left": 14490,
+      "note": "Configured UI before Create",
+      "pool": "flow",
+      "source": "shared-flow"
+    },
+    {
+      "amount": 100,
+      "at": "2026-11-10T20:29:48+00:00",
+      "by": "codex",
+      "charge": "HOS:009:P02:01_cambridge_closes_c1:t1",
+      "film": "HOS:009",
+      "id": "flow:spend:HOS:009:P02:01_cambridge_closes_c1:t1",
+      "kind": "spend",
+      "pool": "flow",
+      "source": "shared-flow",
+      "what": "HOS:009:P02:01_cambridge_closes_c1:t1"
+    },
+    {
+      "at": "2026-11-10T20:32:14+00:00",
+      "by": "codex",
+      "charge": "HOS:009:P02:03_christmas_birth_c1:t1",
+      "id": "flow:read:HOS:009:P02:03_christmas_birth_c1:t1",
+      "kind": "record",
+      "left": 14390,
+      "note": "Configured UI before Create",
+      "pool": "flow",
+      "source": "shared-flow"
+    },
+    {
+      "amount": 100,
+      "at": "2026-11-10T20:32:14+00:00",
+      "by": "codex",
+      "charge": "HOS:009:P02:03_christmas_birth_c1:t1",
+      "film": "HOS:009",
+      "id": "flow:spend:HOS:009:P02:03_christmas_birth_c1:t1",
+      "kind": "spend",
+      "pool": "flow",
+      "source": "shared-flow",
+      "what": "HOS:009:P02:03_christmas_birth_c1:t1"
+    },
+    {
+      "at": "2026-11-10T20:34:25+00:00",
+      "by": "codex",
+      "charge": "HOS:009:P02:05_working_alone_c1:t1",
+      "id": "flow:read:HOS:009:P02:05_working_alone_c1:t1",
+      "kind": "record",
+      "left": 14290,
+      "note": "Configured UI before Create",
+      "pool": "flow",
+      "source": "shared-flow"
+    },
+    {
+      "amount": 100,
+      "at": "2026-11-10T20:34:25+00:00",
+      "by": "codex",
+      "charge": "HOS:009:P02:05_working_alone_c1:t1",
+      "film": "HOS:009",
+      "id": "flow:spend:HOS:009:P02:05_working_alone_c1:t1",
+      "kind": "spend",
+      "pool": "flow",
+      "source": "shared-flow",
+      "what": "HOS:009:P02:05_working_alone_c1:t1"
+    },
+    {
+      "at": "2026-11-11T00:15:20+00:00",
+      "by": "codex",
+      "charge": "HOS:009:P02:08_the_apple_c1:t1",
+      "id": "flow:read:HOS:009:P02:08_the_apple_c1:t1",
+      "kind": "record",
+      "left": 14190,
+      "note": "Configured UI before Create",
+      "pool": "flow",
+      "source": "shared-flow"
+    },
+    {
+      "amount": 100,
+      "at": "2026-11-11T00:15:20+00:00",
+      "by": "codex",
+      "charge": "HOS:009:P02:08_the_apple_c1:t1",
+      "film": "HOS:009",
+      "id": "flow:spend:HOS:009:P02:08_the_apple_c1:t1",
+      "kind": "spend",
+      "pool": "flow",
+      "source": "shared-flow",
+      "what": "HOS:009:P02:08_the_apple_c1:t1"
+    },
+    {
+      "at": "2026-11-11T00:17:42+00:00",
+      "by": "codex",
+      "charge": "HOS:009:P02:11_explorer_apple_c1:t1",
+      "id": "flow:read:HOS:009:P02:11_explorer_apple_c1:t1",
+      "kind": "record",
+      "left": 14090,
+      "note": "Configured UI before Create",
+      "pool": "flow",
+      "source": "shared-flow"
+    },
+    {
+      "amount": 100,
+      "at": "2026-11-11T00:17:42+00:00",
+      "by": "codex",
+      "charge": "HOS:009:P02:11_explorer_apple_c1:t1",
+      "film": "HOS:009",
+      "id": "flow:spend:HOS:009:P02:11_explorer_apple_c1:t1",
+      "kind": "spend",
+      "pool": "flow",
+      "source": "shared-flow",
+      "what": "HOS:009:P02:11_explorer_apple_c1:t1"
+    },
+    {
+      "at": "2026-11-11T00:19:53+00:00",
+      "by": "codex",
+      "charge": "HOS:009:P03:01_really_falling_c1:t1",
+      "id": "flow:read:HOS:009:P03:01_really_falling_c1:t1",
+      "kind": "record",
+      "left": 13990,
+      "note": "Configured UI before Create",
+      "pool": "flow",
+      "source": "shared-flow"
+    },
+    {
+      "amount": 100,
+      "at": "2026-11-11T00:19:53+00:00",
+      "by": "codex",
+      "charge": "HOS:009:P03:01_really_falling_c1:t1",
+      "film": "HOS:009",
+      "id": "flow:spend:HOS:009:P03:01_really_falling_c1:t1",
+      "kind": "spend",
+      "pool": "flow",
+      "source": "shared-flow",
+      "what": "HOS:009:P03:01_really_falling_c1:t1"
+    },
+    {
+      "at": "2026-11-11T00:22:11+00:00",
+      "by": "codex",
+      "charge": "HOS:009:P03:05_shot_orbit_c1:t1",
+      "id": "flow:read:HOS:009:P03:05_shot_orbit_c1:t1",
+      "kind": "record",
+      "left": 13890,
+      "note": "Configured UI before Create",
+      "pool": "flow",
+      "source": "shared-flow"
+    },
+    {
+      "amount": 100,
+      "at": "2026-11-11T00:22:11+00:00",
+      "by": "codex",
+      "charge": "HOS:009:P03:05_shot_orbit_c1:t1",
+      "film": "HOS:009",
+      "id": "flow:spend:HOS:009:P03:05_shot_orbit_c1:t1",
+      "kind": "spend",
+      "pool": "flow",
+      "source": "shared-flow",
+      "what": "HOS:009:P03:05_shot_orbit_c1:t1"
+    },
+    {
+      "at": "2026-11-11T00:24:19+00:00",
+      "by": "codex",
+      "charge": "HOS:009:P03:05_shot_orbit_c2:t1",
+      "id": "flow:read:HOS:009:P03:05_shot_orbit_c2:t1",
+      "kind": "record",
+      "left": 13790,
+      "note": "Configured UI before Create",
+      "pool": "flow",
+      "source": "shared-flow"
+    },
+    {
+      "amount": 100,
+      "at": "2026-11-11T00:24:19+00:00",
+      "by": "codex",
+      "charge": "HOS:009:P03:05_shot_orbit_c2:t1",
+      "film": "HOS:009",
+      "id": "flow:spend:HOS:009:P03:05_shot_orbit_c2:t1",
+      "kind": "spend",
+      "pool": "flow",
+      "source": "shared-flow",
+      "what": "HOS:009:P03:05_shot_orbit_c2:t1"
+    },
+    {
+      "at": "2026-11-11T00:29:59+00:00",
+      "by": "codex",
+      "charge": "HOS:009:P04:05_minute_second_c1:t1",
+      "id": "flow:read:HOS:009:P04:05_minute_second_c1:t1",
+      "kind": "record",
+      "left": 13690,
+      "note": "Configured UI before Create",
+      "pool": "flow",
+      "source": "shared-flow"
+    },
+    {
+      "amount": 100,
+      "at": "2026-11-11T00:29:59+00:00",
+      "by": "codex",
+      "charge": "HOS:009:P04:05_minute_second_c1:t1",
+      "film": "HOS:009",
+      "id": "flow:spend:HOS:009:P04:05_minute_second_c1:t1",
+      "kind": "spend",
+      "pool": "flow",
+      "source": "shared-flow",
+      "what": "HOS:009:P04:05_minute_second_c1:t1"
+    },
+    {
+      "at": "2026-11-11T00:32:12+00:00",
+      "by": "codex",
+      "charge": "HOS:009:P04:05_minute_second_c2:t1",
+      "id": "flow:read:HOS:009:P04:05_minute_second_c2:t1",
+      "kind": "record",
+      "left": 13590,
+      "note": "Configured UI before Create",
+      "pool": "flow",
+      "source": "shared-flow"
+    },
+    {
+      "amount": 100,
+      "at": "2026-11-11T00:32:12+00:00",
+      "by": "codex",
+      "charge": "HOS:009:P04:05_minute_second_c2:t1",
+      "film": "HOS:009",
+      "id": "flow:spend:HOS:009:P04:05_minute_second_c2:t1",
+      "kind": "spend",
+      "pool": "flow",
+      "source": "shared-flow",
+      "what": "HOS:009:P04:05_minute_second_c2:t1"
+    },
+    {
+      "at": "2026-11-11T00:34:18+00:00",
+      "by": "codex",
+      "charge": "HOS:009:P04:08_halley_visit_c1:t1",
+      "id": "flow:read:HOS:009:P04:08_halley_visit_c1:t1",
+      "kind": "record",
+      "left": 13490,
+      "note": "Configured UI before Create",
+      "pool": "flow",
+      "source": "shared-flow"
+    },
+    {
+      "amount": 100,
+      "at": "2026-11-11T00:34:18+00:00",
+      "by": "codex",
+      "charge": "HOS:009:P04:08_halley_visit_c1:t1",
+      "film": "HOS:009",
+      "id": "flow:spend:HOS:009:P04:08_halley_visit_c1:t1",
+      "kind": "spend",
+      "pool": "flow",
+      "source": "shared-flow",
+      "what": "HOS:009:P04:08_halley_visit_c1:t1"
+    },
+    {
+      "amount": -100,
+      "at": "2026-11-11T04:12:02+00:00",
+      "by": "codex",
+      "charge": "HOS:009:P04:08_halley_visit_c1:t1",
+      "film": "HOS:009",
+      "id": "flow:reversal:HOS:009:P04:08_halley_visit_c1:t1",
+      "kind": "spend",
+      "pool": "flow",
+      "source": "shared-flow",
+      "what": "HOS:009:P04:08_halley_visit_c1:t1 refused by Flow policy, not charged"
+    },
+    {
+      "at": "2026-11-11T04:14:55+00:00",
+      "by": "codex",
+      "charge": "HOS:009:P04:08_halley_visit_c1:t2",
+      "id": "flow:read:HOS:009:P04:08_halley_visit_c1:t2",
+      "kind": "record",
+      "left": 13490,
+      "note": "Configured UI before Create",
+      "pool": "flow",
+      "source": "shared-flow"
+    },
+    {
+      "amount": 100,
+      "at": "2026-11-11T04:14:55+00:00",
+      "by": "codex",
+      "charge": "HOS:009:P04:08_halley_visit_c1:t2",
+      "film": "HOS:009",
+      "id": "flow:spend:HOS:009:P04:08_halley_visit_c1:t2",
+      "kind": "spend",
+      "pool": "flow",
+      "source": "shared-flow",
+      "what": "HOS:009:P04:08_halley_visit_c1:t2"
+    },
+    {
+      "at": "2026-11-11T04:16:54+00:00",
+      "by": "codex",
+      "charge": "HOS:009:P04:08_halley_visit_c2:t1",
+      "id": "flow:read:HOS:009:P04:08_halley_visit_c2:t1",
+      "kind": "record",
+      "left": 13390,
+      "note": "Configured UI before Create",
+      "pool": "flow",
+      "source": "shared-flow"
+    },
+    {
+      "amount": 100,
+      "at": "2026-11-11T04:16:54+00:00",
+      "by": "codex",
+      "charge": "HOS:009:P04:08_halley_visit_c2:t1",
+      "film": "HOS:009",
+      "id": "flow:spend:HOS:009:P04:08_halley_visit_c2:t1",
+      "kind": "spend",
+      "pool": "flow",
+      "source": "shared-flow",
+      "what": "HOS:009:P04:08_halley_visit_c2:t1"
+    },
+    {
+      "at": "2026-11-11T04:19:12+00:00",
+      "by": "codex",
+      "charge": "HOS:009:P05:04_comet_1758_c1:t1",
+      "id": "flow:read:HOS:009:P05:04_comet_1758_c1:t1",
+      "kind": "record",
+      "left": 13290,
+      "note": "Configured UI before Create",
+      "pool": "flow",
+      "source": "shared-flow"
+    },
+    {
+      "amount": 100,
+      "at": "2026-11-11T04:19:12+00:00",
+      "by": "codex",
+      "charge": "HOS:009:P05:04_comet_1758_c1:t1",
+      "film": "HOS:009",
+      "id": "flow:spend:HOS:009:P05:04_comet_1758_c1:t1",
+      "kind": "spend",
+      "pool": "flow",
+      "source": "shared-flow",
+      "what": "HOS:009:P05:04_comet_1758_c1:t1"
+    },
+    {
+      "at": "2026-11-11T04:21:33+00:00",
+      "by": "codex",
+      "charge": "HOS:009:P05:05_iss_orbit_c1:t1",
+      "id": "flow:read:HOS:009:P05:05_iss_orbit_c1:t1",
+      "kind": "record",
+      "left": 13190,
+      "note": "Configured UI before Create",
+      "pool": "flow",
+      "source": "shared-flow"
+    },
+    {
+      "amount": 100,
+      "at": "2026-11-11T04:21:33+00:00",
+      "by": "codex",
+      "charge": "HOS:009:P05:05_iss_orbit_c1:t1",
+      "film": "HOS:009",
+      "id": "flow:spend:HOS:009:P05:05_iss_orbit_c1:t1",
+      "kind": "spend",
+      "pool": "flow",
+      "source": "shared-flow",
+      "what": "HOS:009:P05:05_iss_orbit_c1:t1"
+    },
+    {
+      "at": "2026-11-11T04:23:46+00:00",
+      "by": "codex",
+      "charge": "HOS:009:P05:05_iss_orbit_c2:t1",
+      "id": "flow:read:HOS:009:P05:05_iss_orbit_c2:t1",
+      "kind": "record",
+      "left": 13090,
+      "note": "Configured UI before Create",
+      "pool": "flow",
+      "source": "shared-flow"
+    },
+    {
+      "amount": 100,
+      "at": "2026-11-11T04:23:46+00:00",
+      "by": "codex",
+      "charge": "HOS:009:P05:05_iss_orbit_c2:t1",
+      "film": "HOS:009",
+      "id": "flow:spend:HOS:009:P05:05_iss_orbit_c2:t1",
+      "kind": "spend",
+      "pool": "flow",
+      "source": "shared-flow",
+      "what": "HOS:009:P05:05_iss_orbit_c2:t1"
+    },
+    {
+      "at": "2026-11-11T05:08:17+00:00",
+      "by": "codex",
+      "charge": "HOS:009:P05:06_iss_apple_c1:t1",
+      "id": "flow:read:HOS:009:P05:06_iss_apple_c1:t1",
+      "kind": "record",
+      "left": 12990,
+      "note": "Configured UI before Create",
+      "pool": "flow",
+      "source": "shared-flow"
+    },
+    {
+      "amount": 100,
+      "at": "2026-11-11T05:08:17+00:00",
+      "by": "codex",
+      "charge": "HOS:009:P05:06_iss_apple_c1:t1",
+      "film": "HOS:009",
+      "id": "flow:spend:HOS:009:P05:06_iss_apple_c1:t1",
+      "kind": "spend",
+      "pool": "flow",
+      "source": "shared-flow",
+      "what": "HOS:009:P05:06_iss_apple_c1:t1"
+    }
+  ],
+  "outputs": [
+    {
+      "part": 2,
+      "plate_id": "10_how_high",
+      "take": 1,
+      "file": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part02/raw/v05_tranche2/10_how_high_t1.mp4",
+      "sha256": "540cb3667bbd315aa7db42d1cf989fb1c46f6e3557670ee4f5281e1b4d2d8f05",
+      "archive": {
+        "dest": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/10_how_high_t1.mp4",
+        "sha256": "540cb3667bbd315aa7db42d1cf989fb1c46f6e3557670ee4f5281e1b4d2d8f05",
+        "verified": true
+      },
+      "status": "PENDING_REVIEW",
+      "generated": true,
+      "keep": false,
+      "technical_rechecked": {
+        "ok": true,
+        "review": "PENDING_REVIEW",
+        "keep": false,
+        "sha256": "540cb3667bbd315aa7db42d1cf989fb1c46f6e3557670ee4f5281e1b4d2d8f05",
+        "bytes": 1383360,
+        "duration_s": 7.916667,
+        "audio_streams": 0,
+        "width": 1280,
+        "height": 720,
+        "decode_ok": true
+      },
+      "archive_receipt": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/10_how_high_t1.mp4.receipt.json"
+    },
+    {
+      "part": 3,
+      "plate_id": "07_ball_to_moon",
+      "take": 1,
+      "file": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part03/raw/v05_tranche2/07_ball_to_moon_t1.mp4",
+      "sha256": "fba484bb8b37055948991f701cf788e8b02015f6e230c866c83f0106e838b95d",
+      "archive": {
+        "dest": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/07_ball_to_moon_t1.mp4",
+        "sha256": "fba484bb8b37055948991f701cf788e8b02015f6e230c866c83f0106e838b95d",
+        "verified": true
+      },
+      "status": "PENDING_REVIEW",
+      "generated": true,
+      "keep": false,
+      "technical_rechecked": {
+        "ok": true,
+        "review": "PENDING_REVIEW",
+        "keep": false,
+        "sha256": "fba484bb8b37055948991f701cf788e8b02015f6e230c866c83f0106e838b95d",
+        "bytes": 1435219,
+        "duration_s": 7.916667,
+        "audio_streams": 0,
+        "width": 1280,
+        "height": 720,
+        "decode_ok": true
+      },
+      "archive_receipt": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/07_ball_to_moon_t1.mp4.receipt.json"
+    },
+    {
+      "part": 1,
+      "plate_id": "05_heavens_map_c1",
+      "take": 1,
+      "file": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part01/raw/v05_tranche2/05_heavens_map_c1_t1.mp4",
+      "sha256": "bf781ede9d6524375ed13b4ac02549c76bc4bf9b1750dddaba33e05d9236ac5e",
+      "archive": {
+        "dest": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/05_heavens_map_c1_t1.mp4",
+        "sha256": "bf781ede9d6524375ed13b4ac02549c76bc4bf9b1750dddaba33e05d9236ac5e",
+        "verified": true
+      },
+      "status": "PENDING_REVIEW",
+      "generated": true,
+      "keep": false,
+      "technical_rechecked": {
+        "ok": true,
+        "review": "PENDING_REVIEW",
+        "keep": false,
+        "sha256": "bf781ede9d6524375ed13b4ac02549c76bc4bf9b1750dddaba33e05d9236ac5e",
+        "bytes": 2445351,
+        "duration_s": 7.916667,
+        "audio_streams": 0,
+        "width": 1280,
+        "height": 720,
+        "decode_ok": true
+      },
+      "archive_receipt": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/05_heavens_map_c1_t1.mp4.receipt.json"
+    },
+    {
+      "part": 1,
+      "plate_id": "07_night_field_c1",
+      "take": 1,
+      "file": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part01/raw/v05_tranche2/07_night_field_c1_t1.mp4",
+      "sha256": "3161b6e6993ef2e930c779187ccc3eea507c5041526e1f73ae1d8b07c51df093",
+      "archive": {
+        "dest": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/07_night_field_c1_t1.mp4",
+        "sha256": "3161b6e6993ef2e930c779187ccc3eea507c5041526e1f73ae1d8b07c51df093",
+        "verified": true
+      },
+      "status": "PENDING_REVIEW",
+      "generated": true,
+      "keep": false,
+      "technical_rechecked": {
+        "ok": true,
+        "review": "PENDING_REVIEW",
+        "keep": false,
+        "sha256": "3161b6e6993ef2e930c779187ccc3eea507c5041526e1f73ae1d8b07c51df093",
+        "bytes": 839835,
+        "duration_s": 7.916667,
+        "audio_streams": 0,
+        "width": 1280,
+        "height": 720,
+        "decode_ok": true
+      },
+      "archive_receipt": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/07_night_field_c1_t1.mp4.receipt.json"
+    },
+    {
+      "part": 2,
+      "plate_id": "01_cambridge_closes_c1",
+      "take": 1,
+      "file": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part02/raw/v05_tranche2/01_cambridge_closes_c1_t1.mp4",
+      "sha256": "666c40de800f4f68b09a1668692dbe483ff4e6edfa1cbf2e20bd9a799be26329",
+      "archive": {
+        "dest": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/01_cambridge_closes_c1_t1.mp4",
+        "sha256": "666c40de800f4f68b09a1668692dbe483ff4e6edfa1cbf2e20bd9a799be26329",
+        "verified": true
+      },
+      "status": "PENDING_REVIEW",
+      "generated": true,
+      "keep": false,
+      "technical_rechecked": {
+        "ok": true,
+        "review": "PENDING_REVIEW",
+        "keep": false,
+        "sha256": "666c40de800f4f68b09a1668692dbe483ff4e6edfa1cbf2e20bd9a799be26329",
+        "bytes": 4336877,
+        "duration_s": 7.916667,
+        "audio_streams": 0,
+        "width": 1280,
+        "height": 720,
+        "decode_ok": true
+      },
+      "archive_receipt": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/01_cambridge_closes_c1_t1.mp4.receipt.json"
+    },
+    {
+      "part": 2,
+      "plate_id": "03_christmas_birth_c1",
+      "take": 1,
+      "file": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part02/raw/v05_tranche2/03_christmas_birth_c1_t1.mp4",
+      "sha256": "3a5d884e2e03145328369fae461f34760fb86602c2ac1772ca4bfd7dc9eddcfb",
+      "archive": {
+        "dest": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/03_christmas_birth_c1_t1.mp4",
+        "sha256": "3a5d884e2e03145328369fae461f34760fb86602c2ac1772ca4bfd7dc9eddcfb",
+        "verified": true
+      },
+      "status": "PENDING_REVIEW",
+      "generated": true,
+      "keep": false,
+      "technical_rechecked": {
+        "ok": true,
+        "review": "PENDING_REVIEW",
+        "keep": false,
+        "sha256": "3a5d884e2e03145328369fae461f34760fb86602c2ac1772ca4bfd7dc9eddcfb",
+        "bytes": 1753636,
+        "duration_s": 7.916667,
+        "audio_streams": 0,
+        "width": 1280,
+        "height": 720,
+        "decode_ok": true
+      },
+      "archive_receipt": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/03_christmas_birth_c1_t1.mp4.receipt.json"
+    },
+    {
+      "part": 2,
+      "plate_id": "05_working_alone_c1",
+      "take": 1,
+      "file": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part02/raw/v05_tranche2/05_working_alone_c1_t1.mp4",
+      "sha256": "02f3ccbe6346518230f6ad5d7c78da8781e9518bceec0120071f0177c04362f2",
+      "archive": {
+        "dest": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/05_working_alone_c1_t1.mp4",
+        "sha256": "02f3ccbe6346518230f6ad5d7c78da8781e9518bceec0120071f0177c04362f2",
+        "verified": true
+      },
+      "status": "PENDING_REVIEW",
+      "generated": true,
+      "keep": false,
+      "technical_rechecked": {
+        "ok": true,
+        "review": "PENDING_REVIEW",
+        "keep": false,
+        "sha256": "02f3ccbe6346518230f6ad5d7c78da8781e9518bceec0120071f0177c04362f2",
+        "bytes": 1261210,
+        "duration_s": 7.916667,
+        "audio_streams": 0,
+        "width": 1280,
+        "height": 720,
+        "decode_ok": true
+      },
+      "archive_receipt": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/05_working_alone_c1_t1.mp4.receipt.json"
+    },
+    {
+      "part": 2,
+      "plate_id": "08_the_apple_c1",
+      "take": 1,
+      "file": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part02/raw/v05_tranche2/08_the_apple_c1_t1.mp4",
+      "sha256": "838c28b3d4f5add8c12b0242275c833bc05fb7e751a4dc2af28ff140c845ffc1",
+      "archive": {
+        "dest": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/08_the_apple_c1_t1.mp4",
+        "sha256": "838c28b3d4f5add8c12b0242275c833bc05fb7e751a4dc2af28ff140c845ffc1",
+        "verified": true
+      },
+      "status": "PENDING_REVIEW",
+      "generated": true,
+      "keep": false,
+      "technical_rechecked": {
+        "ok": true,
+        "review": "PENDING_REVIEW",
+        "keep": false,
+        "sha256": "838c28b3d4f5add8c12b0242275c833bc05fb7e751a4dc2af28ff140c845ffc1",
+        "bytes": 2154350,
+        "duration_s": 7.916667,
+        "audio_streams": 0,
+        "width": 1280,
+        "height": 720,
+        "decode_ok": true
+      },
+      "archive_receipt": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/08_the_apple_c1_t1.mp4.receipt.json"
+    },
+    {
+      "part": 2,
+      "plate_id": "11_explorer_apple_c1",
+      "take": 1,
+      "file": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part02/raw/v05_tranche2/11_explorer_apple_c1_t1.mp4",
+      "sha256": "628cc70fa66e8733b6cd87759becf9d0cd1a31ea64b462875d73f6b43a8df183",
+      "archive": {
+        "dest": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/11_explorer_apple_c1_t1.mp4",
+        "sha256": "628cc70fa66e8733b6cd87759becf9d0cd1a31ea64b462875d73f6b43a8df183",
+        "verified": true
+      },
+      "status": "PENDING_REVIEW",
+      "generated": true,
+      "keep": false,
+      "technical_rechecked": {
+        "ok": true,
+        "review": "PENDING_REVIEW",
+        "keep": false,
+        "sha256": "628cc70fa66e8733b6cd87759becf9d0cd1a31ea64b462875d73f6b43a8df183",
+        "bytes": 3792548,
+        "duration_s": 7.916667,
+        "audio_streams": 0,
+        "width": 1280,
+        "height": 720,
+        "decode_ok": true
+      },
+      "archive_receipt": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/11_explorer_apple_c1_t1.mp4.receipt.json"
+    },
+    {
+      "part": 3,
+      "plate_id": "01_really_falling_c1",
+      "take": 1,
+      "file": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part03/raw/v05_tranche2/01_really_falling_c1_t1.mp4",
+      "sha256": "9e6fa8d1beee098fd4e2f322981e218bd103154e5a98d7574969db3fe9e84e8c",
+      "archive": {
+        "dest": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/01_really_falling_c1_t1.mp4",
+        "sha256": "9e6fa8d1beee098fd4e2f322981e218bd103154e5a98d7574969db3fe9e84e8c",
+        "verified": true
+      },
+      "status": "PENDING_REVIEW",
+      "generated": true,
+      "keep": false,
+      "technical_rechecked": {
+        "ok": true,
+        "review": "PENDING_REVIEW",
+        "keep": false,
+        "sha256": "9e6fa8d1beee098fd4e2f322981e218bd103154e5a98d7574969db3fe9e84e8c",
+        "bytes": 2358570,
+        "duration_s": 7.916667,
+        "audio_streams": 0,
+        "width": 1280,
+        "height": 720,
+        "decode_ok": true
+      },
+      "archive_receipt": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/01_really_falling_c1_t1.mp4.receipt.json"
+    },
+    {
+      "part": 3,
+      "plate_id": "05_shot_orbit_c1",
+      "take": 1,
+      "file": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part03/raw/v05_tranche2/05_shot_orbit_c1_t1.mp4",
+      "sha256": "556bc9f79425e1101212efde11d397c8019c18f66a5555ae4282379129329c19",
+      "archive": {
+        "dest": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/05_shot_orbit_c1_t1.mp4",
+        "sha256": "556bc9f79425e1101212efde11d397c8019c18f66a5555ae4282379129329c19",
+        "verified": true
+      },
+      "status": "PENDING_REVIEW",
+      "generated": true,
+      "keep": false,
+      "technical_rechecked": {
+        "ok": true,
+        "review": "PENDING_REVIEW",
+        "keep": false,
+        "sha256": "556bc9f79425e1101212efde11d397c8019c18f66a5555ae4282379129329c19",
+        "bytes": 3526448,
+        "duration_s": 7.916667,
+        "audio_streams": 0,
+        "width": 1280,
+        "height": 720,
+        "decode_ok": true
+      },
+      "archive_receipt": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/05_shot_orbit_c1_t1.mp4.receipt.json"
+    },
+    {
+      "part": 3,
+      "plate_id": "05_shot_orbit_c2",
+      "take": 1,
+      "file": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part03/raw/v05_tranche2/05_shot_orbit_c2_t1.mp4",
+      "sha256": "f62b975a10a7a68c2f519132aee430ae657f3b2f0918b0d963d8913ebc147f93",
+      "archive": {
+        "dest": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/05_shot_orbit_c2_t1.mp4",
+        "sha256": "f62b975a10a7a68c2f519132aee430ae657f3b2f0918b0d963d8913ebc147f93",
+        "verified": true
+      },
+      "status": "PENDING_REVIEW",
+      "generated": true,
+      "keep": false,
+      "technical_rechecked": {
+        "ok": true,
+        "review": "PENDING_REVIEW",
+        "keep": false,
+        "sha256": "f62b975a10a7a68c2f519132aee430ae657f3b2f0918b0d963d8913ebc147f93",
+        "bytes": 3787837,
+        "duration_s": 7.916667,
+        "audio_streams": 0,
+        "width": 1280,
+        "height": 720,
+        "decode_ok": true
+      },
+      "archive_receipt": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/05_shot_orbit_c2_t1.mp4.receipt.json"
+    },
+    {
+      "part": 4,
+      "plate_id": "05_minute_second_c1",
+      "take": 1,
+      "file": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part04/raw/v05_tranche2/05_minute_second_c1_t1.mp4",
+      "sha256": "4d69871bc14ebc9b7077be19ea24e44fa11c96c55e756a5c8483b6220087ca39",
+      "archive": {
+        "dest": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/05_minute_second_c1_t1.mp4",
+        "sha256": "4d69871bc14ebc9b7077be19ea24e44fa11c96c55e756a5c8483b6220087ca39",
+        "verified": true
+      },
+      "status": "PENDING_REVIEW",
+      "generated": true,
+      "keep": false,
+      "technical_rechecked": {
+        "ok": true,
+        "review": "PENDING_REVIEW",
+        "keep": false,
+        "sha256": "4d69871bc14ebc9b7077be19ea24e44fa11c96c55e756a5c8483b6220087ca39",
+        "bytes": 888111,
+        "duration_s": 7.916667,
+        "audio_streams": 0,
+        "width": 1280,
+        "height": 720,
+        "decode_ok": true
+      },
+      "archive_receipt": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/05_minute_second_c1_t1.mp4.receipt.json"
+    },
+    {
+      "part": 4,
+      "plate_id": "05_minute_second_c2",
+      "take": 1,
+      "file": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part04/raw/v05_tranche2/05_minute_second_c2_t1.mp4",
+      "sha256": "c2f862ad7f39143ee5ec1309d031e75bef6001b8a1f0317a28825c9658d1511d",
+      "archive": {
+        "dest": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/05_minute_second_c2_t1.mp4",
+        "sha256": "c2f862ad7f39143ee5ec1309d031e75bef6001b8a1f0317a28825c9658d1511d",
+        "verified": true
+      },
+      "status": "PENDING_REVIEW",
+      "generated": true,
+      "keep": false,
+      "technical_rechecked": {
+        "ok": true,
+        "review": "PENDING_REVIEW",
+        "keep": false,
+        "sha256": "c2f862ad7f39143ee5ec1309d031e75bef6001b8a1f0317a28825c9658d1511d",
+        "bytes": 1120704,
+        "duration_s": 7.916667,
+        "audio_streams": 0,
+        "width": 1280,
+        "height": 720,
+        "decode_ok": true
+      },
+      "archive_receipt": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/05_minute_second_c2_t1.mp4.receipt.json"
+    },
+    {
+      "part": 4,
+      "plate_id": "08_halley_visit_c1",
+      "take": 2,
+      "file": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part04/raw/v05_tranche2/08_halley_visit_c1_t2.mp4",
+      "sha256": "519bbb3da322a3f2d9e4b5463cf2bf267fb7f8734b755ce40b9237ae0d41f496",
+      "archive": {
+        "dest": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/08_halley_visit_c1_t2.mp4",
+        "sha256": "519bbb3da322a3f2d9e4b5463cf2bf267fb7f8734b755ce40b9237ae0d41f496",
+        "verified": true
+      },
+      "status": "PENDING_REVIEW",
+      "generated": true,
+      "keep": false,
+      "technical_rechecked": {
+        "ok": true,
+        "review": "PENDING_REVIEW",
+        "keep": false,
+        "sha256": "519bbb3da322a3f2d9e4b5463cf2bf267fb7f8734b755ce40b9237ae0d41f496",
+        "bytes": 1546791,
+        "duration_s": 8.0,
+        "audio_streams": 0,
+        "width": 1280,
+        "height": 720,
+        "decode_ok": true
+      },
+      "archive_receipt": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/08_halley_visit_c1_t2.mp4.receipt.json"
+    },
+    {
+      "part": 4,
+      "plate_id": "08_halley_visit_c2",
+      "take": 1,
+      "file": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part04/raw/v05_tranche2/08_halley_visit_c2_t1.mp4",
+      "sha256": "d7e9d2748eee0e9b8d475fa0acda8f7caf777cfa4c5eeffc464433f89e3dbbbb",
+      "archive": {
+        "dest": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/08_halley_visit_c2_t1.mp4",
+        "sha256": "d7e9d2748eee0e9b8d475fa0acda8f7caf777cfa4c5eeffc464433f89e3dbbbb",
+        "verified": true
+      },
+      "status": "PENDING_REVIEW",
+      "generated": true,
+      "keep": false,
+      "technical_rechecked": {
+        "ok": true,
+        "review": "PENDING_REVIEW",
+        "keep": false,
+        "sha256": "d7e9d2748eee0e9b8d475fa0acda8f7caf777cfa4c5eeffc464433f89e3dbbbb",
+        "bytes": 1414158,
+        "duration_s": 7.916667,
+        "audio_streams": 0,
+        "width": 1280,
+        "height": 720,
+        "decode_ok": true
+      },
+      "archive_receipt": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/08_halley_visit_c2_t1.mp4.receipt.json"
+    },
+    {
+      "part": 5,
+      "plate_id": "04_comet_1758_c1",
+      "take": 1,
+      "file": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part05/raw/v05_tranche2/04_comet_1758_c1_t1.mp4",
+      "sha256": "655cc16e317aaa8303e0dcfae2a8a49c697d344049374f4f1d68bdb3d086ec19",
+      "archive": {
+        "dest": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/04_comet_1758_c1_t1.mp4",
+        "sha256": "655cc16e317aaa8303e0dcfae2a8a49c697d344049374f4f1d68bdb3d086ec19",
+        "verified": true
+      },
+      "status": "PENDING_REVIEW",
+      "generated": true,
+      "keep": false,
+      "technical_rechecked": {
+        "ok": true,
+        "review": "PENDING_REVIEW",
+        "keep": false,
+        "sha256": "655cc16e317aaa8303e0dcfae2a8a49c697d344049374f4f1d68bdb3d086ec19",
+        "bytes": 1355939,
+        "duration_s": 7.916667,
+        "audio_streams": 0,
+        "width": 1280,
+        "height": 720,
+        "decode_ok": true
+      },
+      "archive_receipt": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/04_comet_1758_c1_t1.mp4.receipt.json"
+    },
+    {
+      "part": 5,
+      "plate_id": "05_iss_orbit_c1",
+      "take": 1,
+      "file": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part05/raw/v05_tranche2/05_iss_orbit_c1_t1.mp4",
+      "sha256": "fb8873d899c9abcbc1642a91cd58b6b3248ebd72914b828e76344617493158b2",
+      "archive": {
+        "dest": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/05_iss_orbit_c1_t1.mp4",
+        "sha256": "fb8873d899c9abcbc1642a91cd58b6b3248ebd72914b828e76344617493158b2",
+        "verified": true
+      },
+      "status": "PENDING_REVIEW",
+      "generated": true,
+      "keep": false,
+      "technical_rechecked": {
+        "ok": true,
+        "review": "PENDING_REVIEW",
+        "keep": false,
+        "sha256": "fb8873d899c9abcbc1642a91cd58b6b3248ebd72914b828e76344617493158b2",
+        "bytes": 1679988,
+        "duration_s": 7.916667,
+        "audio_streams": 0,
+        "width": 1280,
+        "height": 720,
+        "decode_ok": true
+      },
+      "archive_receipt": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/05_iss_orbit_c1_t1.mp4.receipt.json"
+    },
+    {
+      "part": 5,
+      "plate_id": "05_iss_orbit_c2",
+      "take": 1,
+      "file": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part05/raw/v05_tranche2/05_iss_orbit_c2_t1.mp4",
+      "sha256": "07b94285af0c3f2898e6f8f9e6f2c8bfee5d57d4d2c9f96435b3e8d7ce21b8e4",
+      "archive": {
+        "dest": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/05_iss_orbit_c2_t1.mp4",
+        "sha256": "07b94285af0c3f2898e6f8f9e6f2c8bfee5d57d4d2c9f96435b3e8d7ce21b8e4",
+        "verified": true
+      },
+      "status": "PENDING_REVIEW",
+      "generated": true,
+      "keep": false,
+      "technical_rechecked": {
+        "ok": true,
+        "review": "PENDING_REVIEW",
+        "keep": false,
+        "sha256": "07b94285af0c3f2898e6f8f9e6f2c8bfee5d57d4d2c9f96435b3e8d7ce21b8e4",
+        "bytes": 2055606,
+        "duration_s": 7.916667,
+        "audio_streams": 0,
+        "width": 1280,
+        "height": 720,
+        "decode_ok": true
+      },
+      "archive_receipt": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/05_iss_orbit_c2_t1.mp4.receipt.json"
+    },
+    {
+      "part": 5,
+      "plate_id": "06_iss_apple_c1",
+      "take": 1,
+      "file": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part05/raw/v05_tranche2/06_iss_apple_c1_t1.mp4",
+      "sha256": "7eda8b737ff43c906ae358c2d7076131104c50002e53e19bd3610667babcc133",
+      "archive": {
+        "dest": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/06_iss_apple_c1_t1.mp4",
+        "sha256": "7eda8b737ff43c906ae358c2d7076131104c50002e53e19bd3610667babcc133",
+        "verified": true
+      },
+      "status": "PENDING_REVIEW",
+      "generated": true,
+      "keep": false,
+      "technical_rechecked": {
+        "ok": true,
+        "review": "PENDING_REVIEW",
+        "keep": false,
+        "sha256": "7eda8b737ff43c906ae358c2d7076131104c50002e53e19bd3610667babcc133",
+        "bytes": 2595386,
+        "duration_s": 7.916667,
+        "audio_streams": 0,
+        "width": 1280,
+        "height": 720,
+        "decode_ok": true
+      },
+      "archive_receipt": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/06_iss_apple_c1_t1.mp4.receipt.json"
+    }
+  ]
+}
