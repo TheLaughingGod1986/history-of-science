@@ -100,6 +100,27 @@ class RoundTrip(unittest.TestCase):
         stages = kept if isinstance(kept, list) else json.loads(fs.PIPELINE.read_text())["stages"]
         self.assertEqual(sorted(set(fs.KINDS) - {s["key"] for s in stages}), [])
 
+    def test_a_status_file_written_the_old_way_is_named(self):
+        # Agents wrote `"status": "done"` in PIPELINE.json for a month. A film's own file says `state`.
+        cases = {
+            "stage 'script' must be written with `state`": {"film": "020", "stages": {"script": {"status": "done"}}},
+            "stage 'edit' must be written with `state`": {"film": "020", "stages": {"script": {"state": "done"}, "edit": {}}},
+            "stage 'vo' must be written with `state`": {"film": "020", "stages": {"vo": {"state": "done", "status": "done"}}},
+            "needs `film` (its number) and `stages`": {"title": "no number"},
+            "its folder carries another number": {"film": "021", "stages": {}},
+        }
+        for says, doc in cases.items():
+            with tempfile.TemporaryDirectory() as t:
+                films, board_file, channel = Path(t) / "02_Video-Projects", Path(t) / "BOARD.json", Path(t) / "channel.json"
+                (films / "020_X").mkdir(parents=True)
+                (films / "020_X" / "status.json").write_text(json.dumps(doc))
+                board_file.write_text("{}")
+                channel.write_text(json.dumps({"stages": [{"key": "script"}]}))
+                with self.assertRaises(ValueError) as stop:
+                    fs.read(films, board_file, channel)
+                self.assertIn(says, str(stop.exception))
+                self.assertIn("020_X/status.json", str(stop.exception))
+
     def test_a_stage_list_that_is_not_in_the_settings_is_an_error_not_a_guess(self):
         with tempfile.TemporaryDirectory() as t:
             films, board_file, channel = Path(t) / "02_Video-Projects", Path(t) / "BOARD.json", Path(t) / "channel.json"

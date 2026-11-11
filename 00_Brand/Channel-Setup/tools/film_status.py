@@ -159,8 +159,17 @@ def read(films: Path = FILMS, board: Path = BOARD, channel: Path = CHANNEL) -> d
     statuses = {}
     for p in sorted(films.glob(f"*/{STATUS}")):
         doc = json.loads(p.read_text())
+        where = f"{p.parent.name}/{STATUS}"
+        if not isinstance(doc, dict) or not doc.get("film") or not isinstance(doc.get("stages"), dict):
+            raise ValueError(f"{where}: needs `film` (its number) and `stages`")
+        if not p.parent.name.startswith(str(doc["film"]) + "_"):
+            raise ValueError(f"{where}: says it is film {doc['film']}, but its folder carries another number")
         if doc["film"] in statuses:
             raise ValueError(f"two status files are for film {doc['film']}")
+        for key, st in doc["stages"].items():
+            if not isinstance(st, dict) or "status" in st or "state" not in st:
+                raise ValueError(f"{where}: stage '{key}' must be written with `state` (a film's own file says "
+                                 "`state`, not `status`)")
         statuses[doc["film"]] = doc
     stages = json.loads(channel.read_text()).get("stages")
     if not isinstance(stages, list) or not all(isinstance(s, dict) and s.get("key") for s in stages):
