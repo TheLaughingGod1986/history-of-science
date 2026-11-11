@@ -10,13 +10,15 @@
   "layout": "full_frame_period_paper",
   "named_plate": null,
   "background": "moving period paper",
-  "min_sample_mean_luma": 92.11,
+  "min_sample_mean_luma": 92.35,
   "min_sample_p95": 122.0,
   "near_black": "PASS",
   "still": "code_graphic_009_p3_01_really_falling_c1.jpg",
-  "sha256": "80ce9560d9dd6d0edbf4fa81e3d1619ccb0f1f8168bfa78c91901451a003ed8d",
-  "bytes": 924323,
-  "source_path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/code_graphics_v01/code_graphic_009_p3_01_really_falling_c1.mp4",
+  "sha256": "73e77846090c30cc3ae3b67c9df9a3f730dfecad42c1312691f511e13ec3889a",
+  "bytes": 916763,
+  "superseded_sha256": "80ce9560d9dd6d0edbf4fa81e3d1619ccb0f1f8168bfa78c91901451a003ed8d",
+  "revision": "J2632 phone strokes, continent outlines, f116 at 390 on the sheet",
+  "source_path": "/Volumes/MiniWork/scratch/j2632/02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/code_graphics_v01/code_graphic_009_p3_01_really_falling_c1.mp4",
   "nominal_edit_duration_s": 5.26,
   "encoded_duration_s": 5.266016,
   "frame_count": 158,
@@ -31,7 +33,12 @@
   "earth_radius_px": 150,
   "moon_radius_px": 57,
   "min_surface_clearance_px": 513,
-  "review_status": "pending Grok sheet decision and Gemini timing review",
+  "arc_stroke_px": 5,
+  "tangent_stroke_px": 4,
+  "tangent_dash_on_px": 36,
+  "tangent_dash_gap_px": 28,
+  "earth_marks": "continent outlines",
+  "review_status": "revised for phone weight and Earth coastlines; sheet for Grok",
   "no_splice": true,
   "geometry_checks": "158 frames: increasing x and y, constant radius, inside frame, less than quarter turn; no freeze padding",
   "timing_samples": [
@@ -103,21 +110,27 @@
   "boundaries": [
     {
       "source": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part03/raw/v01/01_really_falling_t1.mp4",
-      "source_time_s": 5.218333333333333,
-      "label": "Parent last proposed frame",
+      "source_time_s": 3.9166666666666665,
+      "label": "Parent earlier out f94, trail still up",
       "sha256": "ab4b40bc2e65af13f8303ef41776f67b39c2106bfcf4881a51afc76d84289cec"
     },
     {
-      "source": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/code_graphics_v01/code_graphic_009_p3_01_really_falling_c1.mp4",
-      "source_time_s": 0,
-      "label": "Candidate first frame",
-      "sha256": "80ce9560d9dd6d0edbf4fa81e3d1619ccb0f1f8168bfa78c91901451a003ed8d"
+      "source": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part03/raw/v01/01_really_falling_t1.mp4",
+      "source_time_s": 5.218333333333333,
+      "label": "Parent planned out, trail has curled",
+      "sha256": "ab4b40bc2e65af13f8303ef41776f67b39c2106bfcf4881a51afc76d84289cec"
     },
     {
-      "source": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/code_graphics_v01/code_graphic_009_p3_01_really_falling_c1.mp4",
+      "source": "/Volumes/MiniWork/scratch/j2632/02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/code_graphics_v01/code_graphic_009_p3_01_really_falling_c1.mp4",
+      "source_time_s": 0,
+      "label": "Candidate first frame",
+      "sha256": "73e77846090c30cc3ae3b67c9df9a3f730dfecad42c1312691f511e13ec3889a"
+    },
+    {
+      "source": "/Volumes/MiniWork/scratch/j2632/02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/code_graphics_v01/code_graphic_009_p3_01_really_falling_c1.mp4",
       "source_time_s": 5.233333333333333,
       "label": "Candidate final frame",
-      "sha256": "80ce9560d9dd6d0edbf4fa81e3d1619ccb0f1f8168bfa78c91901451a003ed8d"
+      "sha256": "73e77846090c30cc3ae3b67c9df9a3f730dfecad42c1312691f511e13ec3889a"
     },
     {
       "source": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part03/raw/v01/02_cannon_world_t1.mp4",
@@ -126,9 +139,15 @@
       "sha256": "8beb12f036d956a070893b0430624a80b2c75119384595e50a90b65d2c4a2180"
     }
   ],
-  "boundary_note": "Proposed source-head windows, not an assembled join. Recheck actual source offsets at splice. A short incoming crossfade may be used only after Grok review.",
-  "verified_media_locations": [
-    "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/code_graphics_v01/code_graphic_009_p3_01_really_falling_c1.mp4",
-    "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/code_graphics_v01/code_graphic_009_p3_01_really_falling_c1.mp4"
-  ]
+  "parent_out": {
+    "fps": 24,
+    "planned_out_s": 5.218333333333333,
+    "hook_visible_from_frame": 96,
+    "hook_visible_from_s": 4.0,
+    "earlier_out_frame": 94,
+    "earlier_out_s": 3.9166666666666665,
+    "delta_s": 1.3016666666666663,
+    "instruction": "Cut the parent at frame 94. Hold the graphic first frame for the 1.30s difference, crossfade 0.20s, so the cannon stays at 189.20 and the word timings stay on the moving gap."
+  },
+  "boundary_note": "Parent KEEP is the whole 8s clip. Planned use is the first 5.26s, and that out shows the curled trail. Earlier out is frame 94. Not an assembled join."
 }
