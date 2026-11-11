@@ -1,3 +1,16 @@
+# HOS 008 contact spark — bloom revision (desk 6797257524)
+
+Second size pass. The first pass (peak alpha 80, radius about 25 px) changed pixels under a zoom and did not read at 390 px. Geometry stays the measured pair, (933, 340.5) to (945, 333) at 1080. The core stays about 3.8 px FWHM. The bloom carries the phone read.
+
+- f030: warm white, peak alpha 190, Gaussian radius 60 px at 1080, centred on the gap.
+- f031: the same bloom at half strength, on the shorter half-strength streak.
+- f029: a pre-glow at 25% of f030's bloom, no streak, so the flash is three frames.
+- The streak's lower end stops at the skin edge. It does not continue onto the finger.
+
+The glance test is `review_phone390_pair_bare.png`: the untouched f029 source beside f030, each exactly 390 px wide, with no enlargement. The 4× crop is separate, so a flare can be judged without using the zoom as the proof. Sheets are in `review_J2613_bloom/`. No spend, no take edited, nothing past f060. The first-pass sheets stay in `review_J2613_size/` as the failed comparison.
+
+---
+
 # HOS 008 contact spark — J2613 revision for review
 
 Supersedes the point-shaped J2591 design below. Requested by owner-authored desk rulings 6793746982 (shape) and 6795970738 (take/timing). Existing PR #515 stays unmerged pending Grok’s review.

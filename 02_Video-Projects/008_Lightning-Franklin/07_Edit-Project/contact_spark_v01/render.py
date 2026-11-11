@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""HOS 008 salon tapered contact streak; J2613. No video-take input or placement."""
+"""HOS 008 salon tapered contact streak. J2613 geometry, bloom revision 6797257524. No video-take input or placement."""
 import argparse
 import hashlib
 import json
@@ -11,9 +11,18 @@ import numpy as np
 from PIL import Image
 
 WARM = (255, 246, 224)
+# Desk 6797257524. The core stays about 3.8px FWHM at 1080p.
+# FWHM = 2*sqrt(2*ln2)*sigma. The phone read is the bloom, not a thicker core.
+# Peak alpha 190 (inside 180–200). Radius 60px at 1080 (inside 50–70): about 2 counts
+# there, and gone by about 70px. Phase 0 is full bloom; phase 1 is the same bloom at half.
+CORE_SIGMA_END = 0.50
+CORE_SIGMA_MID = 1.61
+BLOOM_PEAK = 190.0
+BLOOM_RADIUS = 60.0
+BLOOM_SIGMA = BLOOM_RADIUS / math.sqrt(2.0 * math.log(BLOOM_PEAK / 2.0))
 
 
-def spark(size, rod, knuckle, phase, frames=4):
+def spark(size, rod, knuckle, phase, frames=4, *, bloom_scale=None, core=True):
     """Straight-alpha RGBA; phase 0 is the supplied contact frame (zero-based)."""
     w, h = size
     if frames not in (2, 3, 4) or w < 16 or h < 16:
@@ -34,7 +43,8 @@ def spark(size, rod, knuckle, phase, frames=4):
     # Work only in the local support, so a 1080p canvas stays inexpensive.
     rod, knuckle = np.array(rod, dtype=float), np.array(knuckle, dtype=float)
     axis = (rod - knuckle) / gap
-    pad = 7 * scale + 2
+    # Bloom fades by about 70px at 1080p, so the support is the glow, not the streak.
+    pad = (BLOOM_RADIUS + 24) * scale + 2
     x0 = max(0, int(min(rod[0], knuckle[0]) - pad))
     x1 = min(w, int(max(rod[0], knuckle[0]) + pad) + 1)
     y0 = max(0, int(min(rod[1], knuckle[1]) - pad))
@@ -44,22 +54,31 @@ def spark(size, rod, knuckle, phase, frames=4):
                          x0 + (np.arange((x1-x0)*ss)+.5)/ss - .5, indexing='ij')
     along = (xx-knuckle[0])*axis[0] + (yy-knuckle[1])*axis[1]
     across = -(xx-knuckle[0])*axis[1] + (yy-knuckle[1])*axis[0]
-    if phase < 2:
+    alpha = np.zeros(xx.shape, dtype=float)
+    if core and phase < 2:
         start, end = (0., gap) if phase == 0 else (.1*gap, .9*gap)
         t = np.clip((along-start)/(end-start), 0, 1)
-        # ~2px full-width at half maximum in the middle at 1080p,
+        # About 3.8px full-width at half maximum in the middle at 1080p,
         # tapering to rounded fine ends. No rectangle or hard clipping.
-        sigma = scale * (.35 + .50 * np.sin(np.pi*t))
+        sigma = scale * (CORE_SIGMA_END + (CORE_SIGMA_MID - CORE_SIGMA_END) * np.sin(np.pi*t))
         beyond = np.maximum(start-along, 0) + np.maximum(along-end, 0)
-        core = np.exp(-.5*((across/sigma)**2 + (beyond/(.35*scale))**2))
-        alpha = core * (245 if phase == 0 else 122.5)
-        if phase == 0:
-            bloom = 18*np.exp(-.5*((across/(2*scale))**2 + (beyond/(1.1*scale))**2))
-            alpha = np.maximum(alpha, bloom)
-    else:
+        core_a = np.exp(-.5*((across/sigma)**2 + (beyond/(.35*scale))**2))
+        # The knuckle point is the skin edge. along < 0 is on the finger.
+        # Stop the streak there; the bloom still lights the knuckle.
+        core_a = np.where(along < 0, 0, core_a)
+        alpha = core_a * (245 if phase == 0 else 122.5)
+    elif core and phase >= 2:
         # Optional generic +2/+3 tail stays at the knuckle, never mid-gap.
         radius2 = (xx-knuckle[0])**2 + (yy-knuckle[1])**2
         alpha = (55 if phase == 2 else 18)*np.exp(-radius2/(2*(.65*scale)**2))
+    if bloom_scale is None:
+        bloom_scale = 1.0 if phase == 0 else (0.5 if phase == 1 else 0.0)
+    if bloom_scale > 0:
+        mid = (rod + knuckle) / 2
+        bloom_sigma = BLOOM_SIGMA * scale
+        radius2 = (xx-mid[0])**2 + (yy-mid[1])**2
+        bloom = BLOOM_PEAK * bloom_scale * np.exp(-.5 * radius2 / bloom_sigma**2)
+        alpha = np.maximum(alpha, bloom)
     alpha = alpha.reshape(y1-y0, ss, x1-x0, ss).mean(axis=(1, 3))
     out[y0:y1, x0:x1, :3] = WARM
     out[y0:y1, x0:x1, 3] = np.rint(alpha).astype(np.uint8)
@@ -109,7 +128,8 @@ def main():
                     preview_only=True, illustrative_coordinates=a.demo, size=list(bg.size), fps=a.fps,
                     contact_frame_zero_based=a.contact_frame, rod=a.rod, knuckle=a.knuckle,
                     frames=a.frames, rgba='straight alpha; PNG canonical; qtrle argb MOV convenience',
-                    colour_rgb=WARM, bloom_frames=[0], source_still=str(a.still), source_sha256=sha(a.still),
+                    colour_rgb=WARM, bloom_peak=BLOOM_PEAK, bloom_radius_1080=BLOOM_RADIUS,
+                    bloom_frames=[0, 1], source_still=str(a.still), source_sha256=sha(a.still),
                     sfx=str(a.sfx), sfx_sha256=sha(a.sfx), sfx_cue_frame_zero_based=a.contact_frame,
                     demo_contact_frame=demo_frame, placement_job='J2592', video_take_modified=False,
                     files={f.name: sha(f) for f in sorted(a.out.iterdir()) if f.is_file()})
