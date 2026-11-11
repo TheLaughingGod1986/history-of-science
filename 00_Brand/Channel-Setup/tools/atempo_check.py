@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Fail any tracked build that speeds the voice above the house cap (atempo 1.06).
 
-AGENTS.md Never list and STUDIO_PLAYBOOK section 4: `atempo` above 1.06 is never
+The Never list (studio/RULES.md, this channel's additions) and STUDIO_PLAYBOOK section 4: `atempo` above 1.06 is never
 allowed. No gate checked it, and by 28 Oct 2026 builds at 1.07, 1.08, 1.10,
 1.11, 1.12 and 1.40 had all passed every gate (three of them scheduled to air).
 
