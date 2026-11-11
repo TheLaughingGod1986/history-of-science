@@ -646,7 +646,7 @@
       "title": "Anesthesia: The Day Surgery Stopped Hurting",
       "air": "2026-12-10",
       "ready_by": "2026-12-06",
-      "summary": "Locked for Thu 10 Dec (J2231). Script v02, facts and quote check done. Long VO hos_011_vo_v01 (532.72 s, five chapters, sha256 d873f1d0…) locked after J2286 KEEP listening review (recorded in VO_STATUS.md, J2475). Shot list v01 (93 rows across 535.30 s: 71 mint = 48 Q + 23 F = 5,030 Flow credits try-1 / 12,892 expected + 22 free £0 rows) built on words.srt and parked for Chief's price pass (J2475).",
+      "summary": "Locked for Thu 10 Dec (J2231). Script v02, facts and quote check done. Long VO hos_011_vo_v01 (532.72 s, five chapters, sha256 d873f1d0…) locked after J2286 KEEP listening review (recorded in VO_STATUS.md, J2475). Picture plan v02 (93 rows across 535.30 s: 66 mint = 66 Q + 0 F = 6,600 Flow credits try-1 / 17,094 expected + 27 free £0 rows; 0 real-person names in Flow prompts) built on words.srt per Chief ruling #6786715647 and parked for Chief's price pass (J2475).",
       "stages": {
         "topic": {
           "status": "done",
@@ -694,8 +694,8 @@
           "status": "todo",
           "due": "2026-11-29",
           "owner": "Cursor",
-          "note": "Shot list v01 & picture plan v01 built on words.srt (J2475): 93 rows (535.30 s), 71 mint (48 Q + 23 F = 5,030 try-1 / 12,892 expected Flow credits) + 22 free £0 rows (12 CG + 9 ARCH + 1 REUSE). HOS-2026-11-E2 PASS. generation_authorized: false; parked for Chief price pass.",
-          "waiting": "Chief price pass on J2475 (5,030 Flow credits try-1 / 12,892 expected)"
+          "note": "Shot list & picture plan v02 built on words.srt per Chief ruling #6786715647 (J2475): 93 rows (535.30 s), 66 mint (66 Q + 0 F = 6,600 try-1 / 17,094 expected Flow credits; 0 real-person names in Flow prompts) + 27 free £0 rows (13 CG + 13 ARCH + 1 REUSE). HOS-2026-11-E2 PASS. generation_authorized: false; parked for Chief price pass.",
+          "waiting": "Chief price pass on J2475 v02 (6,600 Flow credits try-1 / 17,094 expected)"
         },
         "edit": {
           "status": "todo",

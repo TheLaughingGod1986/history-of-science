@@ -7,35 +7,38 @@
 | Topic | **Anesthesia** — Surgery before anesthesia, Davy's 1800 laughing gas, Long's 1842 ether towel, Wells's 1845 Boston trial, Morton & Warren's 16 Oct 1846 Ether Dome, Simpson's 1847 chloroform, Snow & Queen Victoria 1853 |
 | Air (slotted) | **Thu 10 Dec 2026** 18:00 UK (`2026-12-10T18:00:00.000Z`) — locked in `J2231` |
 | Ready for Ben's OK | **Sun 6 Dec 2026** |
-| Stage | **VO locked** `hos_011_vo_v01` (`J2245` / `J2286` **KEEP** across all 5 chapters; recorded in `J2475`). Shot list v01 & picture plan v01 (`07_Edit-Project/SHOT_LIST_v01.md`, `PICTURE_PLAN_v01.json`) built on `words.srt` and parked for Chief's price pass (`generation_authorized: false`). Waiting in `jobs/WIP.json` `next_hos` (no active production slot claimed). |
+| Stage | **VO locked** `hos_011_vo_v01` (`J2245` / `J2286` **KEEP** across all 5 chapters; recorded in `J2475`). Shot list & picture plan v02 (`07_Edit-Project/SHOT_LIST_v02.md`, `PICTURE_PLAN_v02.json`) built on `words.srt` per Chief ruling `#6786715647` (`0` Fast rows, `0` real-person names in Flow prompts) and parked for Chief's price pass (`generation_authorized: false`). Waiting in `jobs/WIP.json` `next_hos` (no active production slot claimed). |
 | Neighbour gate | **PASS** (12 Oct 2026 `J0180` & 5 Nov 2026 `J2231`): 6 education ≥1M; TED-Ed/TED yes (TED-Ed *How does anesthesia work?* 19.73M, TED-Ed *What did people do before anesthesia?* 2.66M, TED-Ed *How aspirin was discovered* 3.08M, SciShow *What Does Anesthesia Do to Your Brain?* 1.38M). Evidence `11_Upload-Package/evidence_2026-11-05_neighbours.json` |
 | Public search | **PASS** (`11_Upload-Package/evidence_2026-11-05_public_search.json`): `"What Surgery Was Like Before Anesthesia"`, `"who invented anesthesia"`, and `"surgery before anesthesia"` all autocomplete (`yes`). |
 | Script review | `01_Script/surgery_script_master_v02.md` (**91.1/100 PASS**, 1,259 words / ~1,210 spoken, 8/8 structure gates) |
 | Shorts scripts and package | `10_Shorts/SHORTS_SCRIPTS_v02.md` (two search-titled Shorts, 61 and 60 words) and the upload package scaffold under `11_Upload-Package/` (manifest, checklist, long description, tags, Shorts search evidence), written 5 Nov (`J2239`) and carried onto main 10 Nov (`J2502`). |
 | FACT_NOTES | `01_Script/SOURCES_v01.md` / `01_Script/FACT_NOTES_v01.md` (`J0198` Gemini facts PASS: 35 OK, 1 PARTIAL hedged, 0 FLAG) + `01_Script/CLAUDE_QUOTE_CHECK_v01.md` (`J0224` Claude primary-source quote check PASS) |
 | VO | **locked** `hos_011_vo_v01` (`532.720 s` = `8:52.72`, 5 chapters, Ben Orbit Narrator `eleven_v3`). WAV sha256 `d873f1d0c9158087fd61ce0b9f53de985055d778cd58b8df70c67c0701300ae2`. MP3 sha256 `9fdd84d50ac2f85bcdf8aea0d5ceefd261cae5458dafa1e6865adf2a3053f496`. `J2286` listening review **KEEP** on all 5 chapters (`0` pickups, `0` re-recordings); `J2245` closed by acting Chief on 10 Nov 2026. See `02_Voiceover/VO_STATUS.md`. |
-| Picture | **Shot list v01 & picture plan v01 timed to `words.srt` (`J2475`, 11 Nov 2026).** 93 contiguous rows (`535.30 s` / `8:55.30`): 71 mint rows (`48` Quality + `23` Fast = `5,030` Flow credits try-1 / `12,892` expected) + 22 £0/0-credit rows (`12` code graphics + `9` public-domain archive composites + `1` intra-film reuse). Mint nothing (`generation_authorized: false`); parked for Chief's price pass. |
+| Picture | **Shot list & picture plan v02 timed to `words.srt` (`J2475`, 11 Nov 2026, updated per Chief ruling `#6786715647`).** 93 contiguous rows (`535.30 s` / `8:55.30`): 66 mint rows (`66` Quality + `0` Fast = `6,600` Flow credits try-1 / `17,094` expected; `0` real-person names in Flow prompts) + 27 £0/0-credit rows (`13` code graphics + `13` public-domain archive composites + `1` intra-film reuse). Mint nothing (`generation_authorized: false`); parked for Chief's price pass. |
 | Runtime target | 7–9 min, 5 parts (~1,230 spoken words, `8:52.72` VO + `2.58 s` end card = `8:55.30`) |
 
-## 11 Nov 2026 — VO lock recorded & Shot List v01 built on `words.srt` (`J2475`)
+## 11 Nov 2026 — VO lock recorded & Picture Plan v02 built on `words.srt` (`J2475`, Chief ruling `#6786715647`)
 
 - **VO lock (`02_Voiceover/VO_STATUS.md`):** Recorded the lock of `02_Voiceover/hos_011_vo_v01.wav` (`532.720 s` = `8:52.72`, WAV sha256 `d873f1d0c9158087fd61ce0b9f53de985055d778cd58b8df70c67c0701300ae2`, MP3 sha256 `9fdd84d50ac2f85bcdf8aea0d5ceefd261cae5458dafa1e6865adf2a3053f496`) following the `J2286` specialist listening review (**KEEP** on all 5 chapters, `0` pickups, `0` re-recordings) and acting Chief closure of `J2245` on 10 Nov 2026. Re-stamped chapter timestamps (`0:00, 1:27, 2:56, 4:32, 6:06`) in `11_Upload-Package/Descriptions/surgery_long_description_v01.txt`.
-- **Shot list v01 & picture plan v01 (`07_Edit-Project/SHOT_LIST_v01.md`, `07_Edit-Project/PICTURE_PLAN_v01.json`, `07_Edit-Project/PICTURE_PLAN_v01.md`, `07_Edit-Project/PRICE_REVIEW_v01.md`, `07_Edit-Project/parts/part-01_plates_v01.json` .. `part-05_plates_v01.json`):**
-  - **93 contiguous rows** across `535.30 s` (`532.72 s` VO + `2.58 s` house cream end card). Every minted row (`Q` or `F`) is **`≤ 8.00 s`** (`3.16 s – 7.70 s`).
+- **Shot list & picture plan v02 (`07_Edit-Project/PICTURE_PLAN_v02.json`, `07_Edit-Project/PICTURE_PLAN_v02.md`, `07_Edit-Project/PRICE_REVIEW_v02.md`, `07_Edit-Project/SHOT_LIST_v02.md`, `07_Edit-Project/PROMPT_AND_FAST_CHANGE_v02.json`, `07_Edit-Project/parts/part-01_plates_v01.json` .. `part-05_plates_v01.json`):**
+  - **93 contiguous rows** across `535.30 s` (`532.72 s` VO + `2.58 s` house cream end card). Every minted row (`66` Quality, `0` Fast) is **`≤ 8.00 s`** (`3.16 s – 7.70 s`).
+  - **Chief ruling `#6786715647` changes (`PROMPT_AND_FAST_CHANGE_v02.json`):**
+    1. **All 23 `mint_fast` rows eliminated (`0` Fast rows remain):** 5 rows between moving 3D plates swapped to £0 free rows (`P1:09b`, `P3:05b`, `P5:04a`, `P5:14a` as public-domain Wellcome Collection `free_archive` composites + `P5:16a` as a house inked closing triptych `code_graphic`), and the remaining 18 Fast rows upgraded to `mint_quality` (`Veo 3.1 Quality`), saving 500 try-1 / 1,295 expected Flow credits compared to upgrading all 23 to Quality.
+    2. **All 36 named-person rows (+ 3 additional = 39 rows) reworded:** `0` mint prompts name a real person (enforced by automated `FORBIDDEN_NAME_RE` check in `_build_shot_list_v01.py`).
   - **HOS-2026-11-E2 proof-first first 30 seconds (`0:00.00–0:40.00`):**
     - **CUTS (`0:00–0:30`):** 8 distinct moving clips in `0:00–0:30` (`P1:01a` `3.16 s`, `P1:01b` `3.74 s`, `P1:02a` `3.60 s`, `P1:02b` `3.78 s`, `P1:03a` `4.22 s`, `P1:03b` `4.30 s`, `P1:04a` `3.70 s`, `P1:04b_cg_stopwatch_scale` `4.20 s`), max cut **`4.30 s ≤ 4.50 s`** — **PASS**.
     - **PROOF (`0:05–0:15`):** `P1:01b` (`0:03.16–0:06.90`: scarred oak operating chair with leather arm straps & steel surgical knife case), `P1:02a` (`0:06.90–0:10.50`: gallery students' open brass pocket watches ticking in unison), `P1:02b` (`0:10.50–0:14.28`: cordial bottle & leather bite-strap set beside the chair) — **PASS**.
     - **EARLY (`0:25–0:40`):** `P1:04b_cg_stopwatch_scale` on screen at **`0:26.50–0:30.70`**, drawing the brass stopwatch dial stopping short of `3 MINUTES` beside a 3-minute egg sandglass (`SCALE: About as long as boiling an egg`) and flipping to `16 OCTOBER 1846 — 0 PAIN` — **PASS**.
-  - **Cost table (71 rows need minting, 22 rows are £0 / 0 credits; `generation_authorized: false` on every row):**
+  - **Cost table (66 rows need minting, 27 rows are £0 / 0 credits; `generation_authorized: false` on every row):**
 
 | Part | Chapter title | Time (`in–out`) | Rows | Quality (`100`) | Fast (`10`) | Code graphic (`0`) | Free archive (`0`) | Reuse (`0`) | Mint rows | Free rows | Flow credits (try-1) | Flow credits (expected) | Vertex try-1 (£) | Vertex expected (£) |
 |---|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Part 01 | The Fastest Knife | `0:00.00–1:26.80` | 18 | 10 | 6 | 2 | 0 | 0 | 16 | 2 | 1,060 | 2,710 | £19.84 | £49.08 |
-| Part 02 | A Gas That Made People Laugh | `1:26.80–2:55.66` | 15 | 7 | 3 | 2 | 3 | 0 | 10 | 5 | 730 | 1,873 | £13.12 | £32.82 |
-| Part 03 | This Is No Humbug | `2:55.66–4:31.88` | 15 | 11 | 2 | 1 | 1 | 0 | 13 | 2 | 1,120 | 2,889 | £18.88 | £48.10 |
-| Part 04 | The Fight Over Who Was First | `4:31.88–6:06.26` | 17 | 6 | 6 | 3 | 2 | 0 | 12 | 5 | 660 | 1,674 | £13.44 | £32.52 |
-| Part 05 | Across the Ocean | `6:06.26–8:55.30` | 28 | 14 | 6 | 4 | 3 | 1 | 20 | 8 | 1,460 | 3,746 | £26.24 | £65.64 |
-| **Total** | **Full film (`8:55.30`)** | `0:00.00–8:55.30` | **93** | **48** | **23** | **12** | **9** | **1** | **71** | **22** | **5,030** | **12,892** | **£91.52** | **£228.16** |
+| Part 01 | The Fastest Knife | `0:00.00–1:26.80` | 18 | 15 | 0 | 2 | 1 | 0 | 15 | 3 | 1,500 | 3,885 | £24.00 | £62.10 |
+| Part 02 | A Gas That Made People Laugh | `1:26.80–2:55.66` | 15 | 10 | 0 | 2 | 3 | 0 | 10 | 5 | 1,000 | 2,590 | £16.00 | £41.40 |
+| Part 03 | This Is No Humbug | `2:55.66–4:31.88` | 15 | 12 | 0 | 1 | 2 | 0 | 12 | 3 | 1,200 | 3,108 | £19.20 | £49.68 |
+| Part 04 | The Fight Over Who Was First | `4:31.88–6:06.26` | 17 | 12 | 0 | 3 | 2 | 0 | 12 | 5 | 1,200 | 3,108 | £19.20 | £49.68 |
+| Part 05 | Across the Ocean | `6:06.26–8:55.30` | 28 | 17 | 0 | 5 | 5 | 1 | 17 | 11 | 1,700 | 4,403 | £27.20 | £70.38 |
+| **Total** | **Full film (`8:55.30`)** | `0:00.00–8:55.30` | **93** | **66** | **0** | **13** | **13** | **1** | **66** | **27** | **6,600** | **17,094** | **£105.60** | **£273.24** |
 
 ### `00_Brand/Channel-Setup/tools/check_all.sh 02_Video-Projects/011_Surgery-Before-Anaesthesia` output (`J2475`)
 
