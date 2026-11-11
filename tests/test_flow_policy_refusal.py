@@ -336,5 +336,67 @@ class RetryAfterRefusalTests(unittest.TestCase):
             self.assertEqual(latest[("10_how_high", 2)], "PENDING_REVIEW")
 
 
+class NoNameWordingTests(unittest.TestCase):
+    """Chief rulings 6784284999, 6784299215 and 6785808071: the Halley plates describe the two men
+    and name neither. The board changed, so the scope file's pinned hash changed with it."""
+
+    EDIT = ROOT / "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project"
+    RECORD = ROOT / "jobs/reviews/J2033/PROMPT_CHANGE_2026-11-11.json"
+    HALLEY_ROWS = ("08_halley_visit", "08_halley_visit_c1", "08_halley_visit_c2")
+    YOUNG = "young astronomer of about twenty-eight, long dark natural hair, no wig, travelling coat"
+    OLDER = "an older scholar of about forty-one, his own dark hair, no wig, plain dark coat"
+
+    def setUp(self):
+        self.runner = load("009")
+        self.board = json.loads((self.EDIT / "parts/part-04_plates_v05.json").read_text())
+        self.record = json.loads(self.RECORD.read_text())
+
+    def test_the_tranche_still_loads_with_the_edited_board(self):
+        rows = self.runner.load_scope(ROOT)
+        self.assertEqual(len(rows), 20)
+        halley = [r for r in rows if r.plate_id.startswith("08_halley_visit")]
+        self.assertEqual([r.plate_id for r in halley], ["08_halley_visit_c1", "08_halley_visit_c2"])
+        for row in halley:
+            self.assertIn(self.YOUNG, row.prompt)
+            self.assertIn(self.OLDER, row.prompt)
+
+    def test_the_three_halley_prompts_name_nobody(self):
+        prompts = {p["id"]: p["prompt"] for p in self.board["plates"] if p["id"] in self.HALLEY_ROWS}
+        self.assertEqual(sorted(prompts), sorted(self.HALLEY_ROWS))
+        for plate_id, prompt in prompts.items():
+            with self.subTest(row=plate_id):
+                for name in ("Halley", "Newton", "Edmond", "Isaac"):
+                    self.assertNotIn(name, prompt)
+                self.assertIn(self.YOUNG, prompt)
+                self.assertIn(self.OLDER, prompt)
+
+    def test_only_the_names_changed(self):
+        prompts = {p["id"]: p["prompt"] for p in self.board["plates"]}
+        for row in self.record["rows"]:
+            with self.subTest(row=row["id"]):
+                self.assertEqual(row["new"], prompts[row["id"]])
+                self.assertEqual(row["new"], row["old"].replace(self.record["wording_old"], self.record["wording_new"]))
+                self.assertEqual(row["old"].count(self.record["wording_old"]), 1)
+
+    def test_the_record_and_the_scope_pin_the_board_as_it_is(self):
+        digest = self.runner.sha256_file(self.EDIT / "parts/part-04_plates_v05.json")
+        self.assertEqual(self.record["board_sha256_new"], digest)
+        self.assertNotEqual(self.record["board_sha256_old"], digest)
+        scope = json.loads((self.EDIT / "TRANCHE2_SCOPE_J2026.json").read_text())
+        pinned = {r["id"]: r["board_sha256"] for r in scope["rows"] if r["board"].endswith("part-04_plates_v05.json")}
+        self.assertEqual(sorted(pinned), sorted(self.record["scope_rows_repinned"]))
+        self.assertEqual(set(pinned.values()), {digest})
+
+    def test_no_row_still_to_be_made_names_a_real_person(self):
+        still_to_make = {"08_halley_visit_c1", "08_halley_visit_c2", "04_comet_1758_c1",
+                         "05_iss_orbit_c1", "05_iss_orbit_c2", "06_iss_apple_c1"}
+        rows = [r for r in self.runner.load_scope(ROOT) if r.plate_id in still_to_make]
+        self.assertEqual(len(rows), 6)
+        for row in rows:
+            with self.subTest(row=row.plate_id):
+                for name in ("Halley", "Newton", "Edmond", "Isaac", "Hooke", "Wren", "Kepler", "Galileo", "Flamsteed"):
+                    self.assertNotIn(name, row.prompt)
+
+
 if __name__ == "__main__":
     unittest.main()
