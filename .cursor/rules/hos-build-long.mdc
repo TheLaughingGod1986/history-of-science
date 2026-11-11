@@ -27,7 +27,7 @@ Full steps: `00_Brand/Channel-Setup/STUDIO_PLAYBOOK.md` §2–§4 and §7. Hooks
     - Year first plus one human detail; a WHO card plus a sourced parallax archive portrait; rivalries in back-and-forth portrait cuts.
     - An anecdote before each hard idea; maths as a house-style object (a `chart` job for Codex).
     - Banned: a photo used 5+ times, glowing-dot filler, holding back the answer.
-    - The first-minute timings still win. AGENTS.md → *Reference lessons*.
+    - The first-minute timings still win. `studio/RULES.md` → *Reference lessons*.
   - End: last line → 3–4 s cream end card → 20 s Studio end screen. No on-screen "SEE <film>" labels.
   - File format: spoken prose plus markers only (labels inside `[VISUAL MUST: … · LABEL: …]`); no VO in tables; notes, fact notes, launch plan and change log in the film's README, `FACT_NOTES_vNN.md` and `11_Upload-Package/LAUNCH_PLAN.md`; one live `*_master_*` file, older versions renamed without "master".
   - Write a main title + one Test & Compare alternative and a launch plan in the HOS_STRATEGY week alongside the script. Part times are estimates; re-time from the recorded VO.

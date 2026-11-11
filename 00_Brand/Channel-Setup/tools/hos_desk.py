@@ -513,7 +513,7 @@ def task_text(me: str, pr: int, comment: dict) -> str:
     return (
         f"# Desk task for {me.title()} (PR #{pr}, comment {comment['id']})\n\n"
         + authority
-        + "Follow AGENTS.md. When finished, reply on the desk with:\n"
+        + "Follow AGENTS.md, then studio/RULES.md (this channel's own rules). When finished, reply on the desk with:\n"
         f"  python3 00_Brand/Channel-Setup/tools/hos_desk.py post --from {me} --to claude --film {h.get('film', '')} "
         f"--stage {h.get('stage', '')} --status review --body-file <report.md> [--image <png/jpg> …]\n\n"
         + comment["body"]
