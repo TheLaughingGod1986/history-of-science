@@ -305,8 +305,11 @@ def ledger_totals(entries: list[dict], cost: int = MAX_CREDITS_PER_TAKE) -> tupl
         status = entry.get("status")
         if status == "KEEP" or entry.get("keep") is True:
             raise GuardError("ledger contains KEEP; tranche 2 never auto-KEEP")
-        if status not in ("SUBMITTING", "PENDING_REVIEW", "GENERATED", "FAILED"):
+        if status not in ("SUBMITTING", "PENDING_REVIEW", "GENERATED", "FAILED", "FAILED_POLICY"):
             raise GuardError(f"unknown ledger status {status!r}")
+        if status == "FAILED_POLICY" and (entry.get("credits_used") != 0 or type(entry.get("credits_used")) is not int
+                                          or not str(entry.get("reason") or "").strip()):
+            raise GuardError("FAILED_POLICY needs credits_used 0 and a reason")
         plate_id = str(entry.get("plate_id") or "")
         take = int(entry.get("take") or 0)
         latest[(plate_id, take)] = entry
@@ -666,6 +669,14 @@ class SharedFlowAccounting:
                     if charge["status"] != "CHARGED" or charge["posted"] or not event.get("evidence"):
                         raise GuardError("invalid posted charge reconciliation")
                     charge["posted"] = True
+                elif kind == "policy_refused":
+                    # Flow refused the prompt under its content policy and charged
+                    # nothing: a reversal event, appended, never a history rewrite.
+                    charge = charges[key]
+                    if charge["status"] != "CHARGED" or charge["posted"] or not event.get("evidence"):
+                        raise GuardError("invalid policy-refusal reversal")
+                    charge["status"] = "POLICY_REFUSED"
+                    charge["amount"] = 0
                 else:
                     raise GuardError(f"unknown shared Flow event {kind!r}")
         except (ValueError, KeyError, TypeError) as exc:
@@ -734,6 +745,21 @@ class SharedFlowAccounting:
             raise GuardError("posted reconciliation needs an unposted charge and evidence")
         self._event(dict(kind="posted", id=key, evidence=evidence))
 
+    def reverse_policy_refusal(self, key: str, *, evidence: dict) -> bool:
+        """Reverse an unposted CHARGED take that Flow refused under its content policy.
+
+        Appends one ``policy_refused`` event (net charge 0). Re-running for an
+        already reversed take is a no-op and returns False. A posted charge, a
+        PENDING intent or a missing evidence record is refused.
+        """
+        charge = self.snapshot()["charges"].get(key)
+        if charge and charge["status"] == "POLICY_REFUSED":
+            return False
+        if not charge or charge["status"] != "CHARGED" or charge["posted"] or not evidence:
+            raise GuardError("policy-refusal reversal needs an unposted CHARGED take and evidence")
+        self._event(dict(kind="policy_refused", id=key, evidence=evidence))
+        return True
+
     def export_ai_spend(self, target: Path, *, by: str) -> int:
         """Replay confirmed charges into the shared ai_spend schema, exactly once.
 
@@ -757,6 +783,8 @@ class SharedFlowAccounting:
                 continue
             key = event['id']
             charge = state['charges'][key]
+            if charge['status'] == 'POLICY_REFUSED':
+                continue
             film = state['reservations'][charge['reservation']]['film']
             evidence = event['evidence']
             # Actual guarded Create evidence contains only the already-validated
@@ -970,6 +998,45 @@ def submitting_record(plate_id: str, part: int, take: int, dest: Path) -> dict:
         "credits_reserved": MAX_CREDITS_PER_TAKE,
         "at": now_iso(),
     }
+
+
+def policy_refusal_record(plate_id: str, part: int, take: int, *, reason: str, evidence: dict) -> dict:
+    """Close a SUBMITTING take that Flow refused under its content policy at 0 credits."""
+    if not str(reason or "").strip() or not evidence:
+        raise GuardError("a policy refusal needs a reason and evidence")
+    return {
+        "plate_id": plate_id,
+        "part": part,
+        "take": take,
+        "status": "FAILED_POLICY",
+        "generated": False,
+        "review": "PENDING_REVIEW",
+        "keep": False,
+        "credits_used": 0,
+        "reason": reason,
+        "evidence": evidence,
+        "at": now_iso(),
+    }
+
+
+def reconcile_policy_refusal(*, accounting_state: Path, ledger_path: Path, lock_path: Path,
+                             key: str, plate_id: str, part: int, take: int,
+                             reason: str, evidence: dict) -> dict:
+    """Append the shared reversal and the tranche FAILED_POLICY line; idempotent.
+
+    Both ledgers only gain lines. The tranche line is skipped when the take's
+    latest entry is already FAILED_POLICY.
+    """
+    with WriterLock(lock_path), SharedFlowAccounting(accounting_state) as account:
+        latest = {(e.get("plate_id"), int(e.get("take") or 0)): e for e in read_ledger(ledger_path)}
+        current = latest.get((plate_id, take))
+        if current is None or current.get("status") not in ("SUBMITTING", "FAILED_POLICY"):
+            raise GuardError("policy refusal applies only to a SUBMITTING take")
+        shared = account.reverse_policy_refusal(key, evidence=evidence)
+        local = current.get("status") != "FAILED_POLICY"
+        if local:
+            append_ledger(ledger_path, policy_refusal_record(plate_id, part, take, reason=reason, evidence=evidence))
+        return {"shared_appended": shared, "tranche_appended": local}
 
 
 def technical_report(path: Path, *, required_s: float = 8.0,
@@ -1930,6 +1997,17 @@ def main(argv: list[str] | None = None) -> int:
     submit.add_argument("--pid", required=False)
     submit.add_argument("--done", required=False)
     submit.add_argument("--archive", required=False)
+    refusal = sub.add_parser("reconcile-policy-refusal",
+                             help="close a Flow policy-refused take at 0 credits; submits nothing")
+    refusal.add_argument("--key", required=True, help="shared charge id, e.g. HOS:009:P04:08_halley_visit_c1:t1")
+    refusal.add_argument("--plate", required=True)
+    refusal.add_argument("--part", type=int, required=True)
+    refusal.add_argument("--take", type=int, required=True)
+    refusal.add_argument("--reason", required=True)
+    refusal.add_argument("--evidence", required=True, help="JSON file: the desk ruling and balance arithmetic")
+    refusal.add_argument("--accounting-state", default=None)
+    refusal.add_argument("--ledger", default=None)
+    refusal.add_argument("--lock", default=None)
     state = runner_state_dir()
     for name, help_text in (("detach-command", "print a tmux command; start nothing"),
                             ("launch-worker", "exclusive detached process owner")):
@@ -1944,6 +2022,16 @@ def main(argv: list[str] | None = None) -> int:
         launch.add_argument("--log", required=True)
         launch.add_argument("--done", required=True)
     args = parser.parse_args(argv)
+    if args.cmd == "reconcile-policy-refusal":
+        evidence = json.loads(Path(args.evidence).read_text())
+        result = reconcile_policy_refusal(
+            accounting_state=Path(args.accounting_state) if args.accounting_state else shared_flow_state_dir(),
+            ledger_path=Path(args.ledger) if args.ledger else state / "ledger.jsonl",
+            lock_path=Path(args.lock) if args.lock else state / "writer.lock",
+            key=args.key, plate_id=args.plate, part=args.part, take=args.take,
+            reason=args.reason, evidence=evidence)
+        print(json.dumps(result, sort_keys=True))
+        return 0
     if args.cmd == "plan":
         repo = Path(args.repo) if args.repo else repo_root_from()
         cmd_plan(repo, Path(args.out) if args.out else None)
