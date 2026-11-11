@@ -1443,6 +1443,14 @@ class SharedFlowAccounting:
                     if charge["status"] != "CHARGED" or charge["posted"] or not event.get("evidence"):
                         raise GuardError("invalid posted charge reconciliation")
                     charge["posted"] = True
+                elif kind == "policy_refused":
+                    # Flow refused the prompt under its content policy and charged
+                    # nothing: a reversal event, appended, never a history rewrite.
+                    charge = charges[key]
+                    if charge["status"] != "CHARGED" or charge["posted"] or not event.get("evidence"):
+                        raise GuardError("invalid policy-refusal reversal")
+                    charge["status"] = "POLICY_REFUSED"
+                    charge["amount"] = 0
                 else:
                     raise GuardError(f"unknown shared Flow event {kind!r}")
         except GuardError:
@@ -1542,6 +1550,21 @@ class SharedFlowAccounting:
             raise GuardError("cannot release inactive reservation or pending charge")
         self._event(dict(kind="release", id=key))
 
+    def reverse_policy_refusal(self, key: str, *, evidence: dict) -> bool:
+        """Reverse an unposted CHARGED take that Flow refused under its content policy.
+
+        Appends one ``policy_refused`` event (net charge 0). Re-running for an
+        already reversed take is a no-op and returns False. A posted charge, a
+        PENDING intent or a missing evidence record is refused.
+        """
+        charge = self.snapshot()["charges"].get(key)
+        if charge and charge["status"] == "POLICY_REFUSED":
+            return False
+        if not charge or charge["status"] != "CHARGED" or charge["posted"] or not evidence:
+            raise GuardError("policy-refusal reversal needs an unposted CHARGED take and evidence")
+        self._event(dict(kind="policy_refused", id=key, evidence=evidence))
+        return True
+
     def export_ai_spend(self, target: Path, *, by: str) -> int:
         """Idempotently export confirmed charges into the shared OWB ai_spend ledger."""
         self._assert_held()
@@ -1558,6 +1581,8 @@ class SharedFlowAccounting:
                 continue
             key = event["id"]
             charge = state["charges"][key]
+            if charge["status"] == "POLICY_REFUSED":
+                continue
             film = state["reservations"][charge["reservation"]]["film"]
             evidence = event["evidence"]
             balances = evidence.get("ui", {}).get("balances", [])
