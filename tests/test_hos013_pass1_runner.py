@@ -1352,6 +1352,47 @@ class DetachedFloorTests(unittest.TestCase):
                 with self.assertRaisesRegex(RUNNER.GuardError, "insufficient shared Flow headroom"):
                     account.reserve("test", RUNNER.FILM_ID, 6600, live=9599, floor=floor)
 
+    def test_armed_submit_without_floor_refuses_reservation_under_3000(self):
+        """Direct armed `submit` (no --floor) keeps the 3,000 headroom, same as detach."""
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            seen = {}
+
+            def fake_execute(batch, **kwargs):
+                seen["floor"] = kwargs["floor"]
+                with RUNNER.SharedFlowAccounting(root / "accounting") as account:
+                    before = account.snapshot()
+                    try:
+                        account.reserve(
+                            "direct-submit",
+                            RUNNER.FILM_ID,
+                            RUNNER.MAX_TOTAL_CREDITS,
+                            live=9599,
+                            floor=kwargs["floor"],
+                        )
+                    except RUNNER.GuardError:
+                        seen["unchanged"] = account.snapshot() == before
+                        raise
+                return []
+
+            argv = [
+                "submit",
+                "--repo", str(ROOT),
+                "--media", str(root),
+                "--other-reservations", "0",
+                "--ledger", str(root / "ledger.jsonl"),
+                "--lock", str(root / "writer.lock"),
+                "--pid", str(root / "runner.pid"),
+                "--done", str(root / "runner.done"),
+            ]
+            self.assertNotIn("--floor", argv)
+            with patch.dict(os.environ, {RUNNER.SUBMIT_ENV: "1"}), \
+                 patch.object(RUNNER, "execute_shared_batch", side_effect=fake_execute):
+                with self.assertRaisesRegex(RUNNER.GuardError, "insufficient shared Flow headroom"):
+                    RUNNER.main(argv)
+            self.assertEqual(seen["floor"], RUNNER.DETACHED_HEADROOM_FLOOR)
+            self.assertTrue(seen["unchanged"])
+
     def test_negative_detached_floor_is_refused(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
