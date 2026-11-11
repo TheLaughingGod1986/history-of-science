@@ -1,15 +1,17 @@
 {
   "job": "J2499",
   "film": "HOS:013",
+  "plan_file": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/PICTURE_PLAN_v02.json",
+  "plan_sha256": "14212379e2132e94766abffba358dea50640329ffc86db4a6c65c221a8897182",
   "submissions": 0,
   "create_clicks": 0,
   "credits_spent": 0,
   "keep": false,
   "review": "PENDING_REVIEW",
   "file_state_when_written": "GENERATED",
-  "row_count": 71,
-  "quality_count": 48,
-  "fast_count": 23,
+  "row_count": 66,
+  "quality_count": 66,
+  "fast_count": 0,
   "explorer_count": 2,
   "style_refs": [
     "04_Generated-Clips/_style_refs/04_sunny_window_v01.jpg",
@@ -19,19 +21,17 @@
   "caps": {
     "prices": {
       "Quality": 100,
-      "Fast": 10,
       "Still": 0
     },
     "models": {
       "Quality": "Veo 3.1 - Quality",
-      "Fast": "Veo 3.1 - Fast",
       "Still": "Nano Banana 2.1"
     },
     "duration": "8s",
     "aspect": "16:9",
     "outputs": "x1",
     "takes_per_row": 1,
-    "total_credits": 5030,
+    "total_credits": 6600,
     "batch_rows": 5,
     "batch_credits": 1000,
     "floor": 0
@@ -39,45 +39,45 @@
   "per_part": {
     "part_01": {
       "rows": 12,
-      "Quality": 7,
-      "Fast": 5,
+      "Quality": 12,
+      "Fast": 0,
       "explorer": 1,
-      "credits_try1": 750
+      "credits_try1": 1200
     },
     "part_02": {
-      "rows": 12,
-      "Quality": 9,
-      "Fast": 3,
+      "rows": 11,
+      "Quality": 11,
+      "Fast": 0,
       "explorer": 1,
-      "credits_try1": 930
+      "credits_try1": 1100
     },
     "part_03": {
-      "rows": 15,
-      "Quality": 10,
-      "Fast": 5,
+      "rows": 14,
+      "Quality": 14,
+      "Fast": 0,
       "explorer": 0,
-      "credits_try1": 1050
+      "credits_try1": 1400
     },
     "part_04": {
-      "rows": 13,
-      "Quality": 9,
-      "Fast": 4,
+      "rows": 12,
+      "Quality": 12,
+      "Fast": 0,
       "explorer": 0,
-      "credits_try1": 940
+      "credits_try1": 1200
     },
     "part_05": {
-      "rows": 11,
-      "Quality": 7,
-      "Fast": 4,
+      "rows": 9,
+      "Quality": 9,
+      "Fast": 0,
       "explorer": 0,
-      "credits_try1": 740
+      "credits_try1": 900
     },
     "part_06": {
       "rows": 8,
-      "Quality": 6,
-      "Fast": 2,
+      "Quality": 8,
+      "Fast": 0,
       "explorer": 0,
-      "credits_try1": 620
+      "credits_try1": 800
     }
   },
   "order": [
@@ -110,10 +110,10 @@
       "row_id": "P1:03a_unlabelled_birds",
       "part": 1,
       "id": "03a_unlabelled_birds",
-      "quality": "Fast",
-      "flow_model": "Veo 3.1 - Fast",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
       "flow_clip_s": 8,
-      "try1_credits": 10,
+      "try1_credits": 100,
       "explorer": false,
       "prompt_sha256": "549327f0cce02875e1a5a238af26acbe20c6e210f9298d35c12f5b9e7a9c2969"
     },
@@ -134,10 +134,10 @@
       "row_id": "P1:04a_packet_seal",
       "part": 1,
       "id": "04a_packet_seal",
-      "quality": "Fast",
-      "flow_model": "Veo 3.1 - Fast",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
       "flow_clip_s": 8,
-      "try1_credits": 10,
+      "try1_credits": 100,
       "explorer": false,
       "prompt_sha256": "1ca91d09730cb3b1a9b5c2a994802c047802972576cb88ec525e99ad6bb2749e"
     },
@@ -146,10 +146,10 @@
       "row_id": "P1:04b_drawer_unlock",
       "part": 1,
       "id": "04b_drawer_unlock",
-      "quality": "Fast",
-      "flow_model": "Veo 3.1 - Fast",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
       "flow_clip_s": 8,
-      "try1_credits": 10,
+      "try1_credits": 100,
       "explorer": false,
       "prompt_sha256": "711c51e18130860ab995f7fbb8d430a50931470f41adeb8be6926c9fd87fe929"
     },
@@ -170,10 +170,10 @@
       "row_id": "P1:05b_museum_plaques",
       "part": 1,
       "id": "05b_museum_plaques",
-      "quality": "Fast",
-      "flow_model": "Veo 3.1 - Fast",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
       "flow_clip_s": 8,
-      "try1_credits": 10,
+      "try1_credits": 100,
       "explorer": false,
       "prompt_sha256": "baa62d00d0310ca0ed3917423fbe0200a43ae15570b6f57c29d5682234a0ef8d"
     },
@@ -182,10 +182,10 @@
       "row_id": "P1:06_padlock_shut",
       "part": 1,
       "id": "06_padlock_shut",
-      "quality": "Fast",
-      "flow_model": "Veo 3.1 - Fast",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
       "flow_clip_s": 8,
-      "try1_credits": 10,
+      "try1_credits": 100,
       "explorer": false,
       "prompt_sha256": "02582dca057d0a07f2ef7eb276b1a172ece46989ff8d4f0b3de2cf64312ebc0f"
     },
@@ -254,10 +254,10 @@
       "row_id": "P2:04_blank_tags_row",
       "part": 2,
       "id": "04_blank_tags_row",
-      "quality": "Fast",
-      "flow_model": "Veo 3.1 - Fast",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
       "flow_clip_s": 8,
-      "try1_credits": 10,
+      "try1_credits": 100,
       "explorer": false,
       "prompt_sha256": "b7074690b6e9695180b48df7ff6f58eb051d67c620e1965ea49229d08e27e27b"
     },
@@ -314,10 +314,10 @@
       "row_id": "P2:08b_gould_skins_closeup",
       "part": 2,
       "id": "08b_gould_skins_closeup",
-      "quality": "Fast",
-      "flow_model": "Veo 3.1 - Fast",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
       "flow_clip_s": 8,
-      "try1_credits": 10,
+      "try1_credits": 100,
       "explorer": false,
       "prompt_sha256": "7d290fdd7f02ce53751c6e384f4515b6da19a4b597dac7994ba9946c6cf39b29"
     },
@@ -335,18 +335,6 @@
     },
     {
       "index": 22,
-      "row_id": "P2:10b_shipmate_tagged_tray",
-      "part": 2,
-      "id": "10b_shipmate_tagged_tray",
-      "quality": "Fast",
-      "flow_model": "Veo 3.1 - Fast",
-      "flow_clip_s": 8,
-      "try1_credits": 10,
-      "explorer": false,
-      "prompt_sha256": "6d21097baf6903d21366449b1a7416681f2757f3f343832ea64b30b7cb6203e8"
-    },
-    {
-      "index": 23,
       "row_id": "P2:11_island_split_vision",
       "part": 2,
       "id": "11_island_split_vision",
@@ -358,7 +346,7 @@
       "prompt_sha256": "3d115ac4d010655c34fc8a566fd0f8d90045f0f704aa42fc26794fd7b8d7a247"
     },
     {
-      "index": 24,
+      "index": 23,
       "row_id": "P2:12b_tree_question",
       "part": 2,
       "id": "12b_tree_question",
@@ -370,7 +358,7 @@
       "prompt_sha256": "4e9d4212c934c73844aeb7cf9c0089d3baa9ce3e45179dab1465eb5bbe704672"
     },
     {
-      "index": 25,
+      "index": 24,
       "row_id": "P3:02a_malthus_lamplight",
       "part": 3,
       "id": "02a_malthus_lamplight",
@@ -382,7 +370,7 @@
       "prompt_sha256": "fa892acd7234fff28ace3a0d3f5a5bf69a253b33ed790711639cd37850c7e08b"
     },
     {
-      "index": 26,
+      "index": 25,
       "row_id": "P3:02b_notebook_d_open",
       "part": 3,
       "id": "02b_notebook_d_open",
@@ -394,19 +382,19 @@
       "prompt_sha256": "a23e7e6d2ed069c634af7b375c88cbd52449856299f601eef7383bc09f0dcde0"
     },
     {
-      "index": 27,
+      "index": 26,
       "row_id": "P3:04a_drought_island_seeds",
       "part": 3,
       "id": "04a_drought_island_seeds",
-      "quality": "Fast",
-      "flow_model": "Veo 3.1 - Fast",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
       "flow_clip_s": 8,
-      "try1_credits": 10,
+      "try1_credits": 100,
       "explorer": false,
       "prompt_sha256": "6f3f2a7403492649f7b977b30aeb79532a2e2cf4df23d17999df2ce03b605b50"
     },
     {
-      "index": 28,
+      "index": 27,
       "row_id": "P3:04b_finch_cracks_seed",
       "part": 3,
       "id": "04b_finch_cracks_seed",
@@ -418,7 +406,7 @@
       "prompt_sha256": "bac0418b883e0d920794c0dc2fc70a9a8d51f89ecc954405cc5f75d366ea1635"
     },
     {
-      "index": 29,
+      "index": 28,
       "row_id": "P3:05a_chicks_deep_beaks",
       "part": 3,
       "id": "05a_chicks_deep_beaks",
@@ -430,7 +418,7 @@
       "prompt_sha256": "a98e08ab03da98c99fef2b4c521d7d5912d8d900e64479003be7a158bf2c1265"
     },
     {
-      "index": 30,
+      "index": 29,
       "row_id": "P3:05b_finches_next_generation",
       "part": 3,
       "id": "05b_finches_next_generation",
@@ -442,7 +430,7 @@
       "prompt_sha256": "1fef9bd03485ce975b569bb917b292760037fc2188c461ac7ba2b685bf304a6c"
     },
     {
-      "index": 31,
+      "index": 30,
       "row_id": "P3:07a_darwin_afraid_window",
       "part": 3,
       "id": "07a_darwin_afraid_window",
@@ -454,19 +442,19 @@
       "prompt_sha256": "5890969b58b463513c3d1f17cd9a85771e8d37702b4a9963da2c5468388a7585"
     },
     {
-      "index": 32,
+      "index": 31,
       "row_id": "P3:07b_confessing_murder_letter",
       "part": 3,
       "id": "07b_confessing_murder_letter",
-      "quality": "Fast",
-      "flow_model": "Veo 3.1 - Fast",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
       "flow_clip_s": 8,
-      "try1_credits": 10,
+      "try1_credits": 100,
       "explorer": false,
       "prompt_sha256": "b2a7257230bb8412eeb68224cefd6c0b36cfb3892cdfc517db83b0a7bb738cd9"
     },
     {
-      "index": 33,
+      "index": 32,
       "row_id": "P3:08_emma_study",
       "part": 3,
       "id": "08_emma_study",
@@ -478,19 +466,7 @@
       "prompt_sha256": "94f134cbac0123043f0aca34ef3b29f21f15d3948f3487eedee9e9c11910b9c8"
     },
     {
-      "index": 34,
-      "row_id": "P3:09a_essay_1844_sealed",
-      "part": 3,
-      "id": "09a_essay_1844_sealed",
-      "quality": "Fast",
-      "flow_model": "Veo 3.1 - Fast",
-      "flow_clip_s": 8,
-      "try1_credits": 10,
-      "explorer": false,
-      "prompt_sha256": "3dd2513b3537c633d644145232f5bb084fb01034fd86791f4f9ed8438ae5f60a"
-    },
-    {
-      "index": 35,
+      "index": 33,
       "row_id": "P3:09b_emma_letter_cupboard",
       "part": 3,
       "id": "09b_emma_letter_cupboard",
@@ -502,7 +478,7 @@
       "prompt_sha256": "bcdac3c385e563a953229c00504a1323b599bac2c53f3fb4c7557bcd65c5fc7a"
     },
     {
-      "index": 36,
+      "index": 34,
       "row_id": "P3:10b_vestiges_torn_apart",
       "part": 3,
       "id": "10b_vestiges_torn_apart",
@@ -514,7 +490,7 @@
       "prompt_sha256": "3082224cea7b77147800b286e4537e21b01a401b1da75e6eb5a80ce18b0e0d59"
     },
     {
-      "index": 37,
+      "index": 35,
       "row_id": "P3:11_barnacles_microscope",
       "part": 3,
       "id": "11_barnacles_microscope",
@@ -526,31 +502,31 @@
       "prompt_sha256": "2860073885ecee40a28c440b1619965da20efa9adde247913e4f82fbf0a45596"
     },
     {
-      "index": 38,
+      "index": 36,
       "row_id": "P3:13a_lyell_warning",
       "part": 3,
       "id": "13a_lyell_warning",
-      "quality": "Fast",
-      "flow_model": "Veo 3.1 - Fast",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
       "flow_clip_s": 8,
-      "try1_credits": 10,
+      "try1_credits": 100,
       "explorer": false,
       "prompt_sha256": "76702aadf80f358facece40f4fefdf3d2d57a8617cc2aa255764121f22aed4fb"
     },
     {
-      "index": 39,
+      "index": 37,
       "row_id": "P3:13b_brass_globe_turn",
       "part": 3,
       "id": "13b_brass_globe_turn",
-      "quality": "Fast",
-      "flow_model": "Veo 3.1 - Fast",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
       "flow_clip_s": 8,
-      "try1_credits": 10,
+      "try1_credits": 100,
       "explorer": false,
       "prompt_sha256": "9ef83f102c8836dbf43d07563f02b9c6546c9ca8e8ae100c77721f2bfb093f97"
     },
     {
-      "index": 40,
+      "index": 38,
       "row_id": "P4:02_wallace_collector",
       "part": 4,
       "id": "02_wallace_collector",
@@ -562,7 +538,7 @@
       "prompt_sha256": "66e78edc422d88770288dfeaf97a7e89b91aebdd1d96c3422d27b53f84a1bd79"
     },
     {
-      "index": 41,
+      "index": 39,
       "row_id": "P4:03a_helen_burning",
       "part": 4,
       "id": "03a_helen_burning",
@@ -574,7 +550,7 @@
       "prompt_sha256": "9e2f79dce74f22226a3f153ae41cba43bc2bec57a18c4e4bc6ea8efd1aa0c898"
     },
     {
-      "index": 42,
+      "index": 40,
       "row_id": "P4:03b_crates_sinking",
       "part": 4,
       "id": "03b_crates_sinking",
@@ -586,7 +562,7 @@
       "prompt_sha256": "e01fedb65de8709f1cff29dc26274b0612e7f5537ad1043cc70d1bb3417ce94a"
     },
     {
-      "index": 43,
+      "index": 41,
       "row_id": "P4:04_open_boat_ten_days",
       "part": 4,
       "id": "04_open_boat_ten_days",
@@ -598,7 +574,7 @@
       "prompt_sha256": "850d3982e43013b7fd9e320dd06dbbe39017f93ee9ee2b9ee79b6e87191cf339"
     },
     {
-      "index": 44,
+      "index": 42,
       "row_id": "P4:06a_wallace_fever",
       "part": 4,
       "id": "06a_wallace_fever",
@@ -610,7 +586,7 @@
       "prompt_sha256": "52625db1d937447ddb1815ee58803d1d0d43757320988c05d6dfaab9ce5b9983"
     },
     {
-      "index": 45,
+      "index": 43,
       "row_id": "P4:07a_wallace_writes_hut",
       "part": 4,
       "id": "07a_wallace_writes_hut",
@@ -622,19 +598,7 @@
       "prompt_sha256": "4011a010e782199c912ee4a9814f6a9aad8eaa095dd13ea8d24024199040f71d"
     },
     {
-      "index": 46,
-      "row_id": "P4:07b_packet_to_mailbag",
-      "part": 4,
-      "id": "07b_packet_to_mailbag",
-      "quality": "Fast",
-      "flow_model": "Veo 3.1 - Fast",
-      "flow_clip_s": 8,
-      "try1_credits": 10,
-      "explorer": false,
-      "prompt_sha256": "8043994eceb1686677a43bf25c9621aa0e489d84160d43cba61ce60c7467da08"
-    },
-    {
-      "index": 47,
+      "index": 44,
       "row_id": "P4:08_midpoint_twist_packet",
       "part": 4,
       "id": "08_midpoint_twist_packet",
@@ -646,7 +610,7 @@
       "prompt_sha256": "12ceb4288623013fc1c58b9d060dfecb2bfefa878878ae84ebf66f3e6caffd95"
     },
     {
-      "index": 48,
+      "index": 45,
       "row_id": "P4:09a_darwin_reads_wallace",
       "part": 4,
       "id": "09a_darwin_reads_wallace",
@@ -658,31 +622,31 @@
       "prompt_sha256": "269014053bf05cf3065e46e10d1c42f245e182790a4a6d78577a4e9c04dbc960"
     },
     {
-      "index": 49,
+      "index": 46,
       "row_id": "P4:09b_smashed_letter_pen",
       "part": 4,
       "id": "09b_smashed_letter_pen",
-      "quality": "Fast",
-      "flow_model": "Veo 3.1 - Fast",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
       "flow_clip_s": 8,
-      "try1_credits": 10,
+      "try1_credits": 100,
       "explorer": false,
       "prompt_sha256": "03c290b0735aab0d2d055e7025093c6343f3d44909f2f85c13fd50ce06205872"
     },
     {
-      "index": 50,
+      "index": 47,
       "row_id": "P4:10_fairness_25_june",
       "part": 4,
       "id": "10_fairness_25_june",
-      "quality": "Fast",
-      "flow_model": "Veo 3.1 - Fast",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
       "flow_clip_s": 8,
-      "try1_credits": 10,
+      "try1_credits": 100,
       "explorer": false,
       "prompt_sha256": "15002801511eeb7f5fcf41bb1a6044048c42394201ef86a03f60d9bc61cd6e53"
     },
     {
-      "index": 51,
+      "index": 48,
       "row_id": "P4:11_down_house_grief",
       "part": 4,
       "id": "11_down_house_grief",
@@ -694,19 +658,19 @@
       "prompt_sha256": "38eafe4b22678132a847b18ce440368785c9ce6f1856548e9ead50ba5107b535"
     },
     {
-      "index": 52,
+      "index": 49,
       "row_id": "P4:12_lyell_hooker_bundle",
       "part": 4,
       "id": "12_lyell_hooker_bundle",
-      "quality": "Fast",
-      "flow_model": "Veo 3.1 - Fast",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
       "flow_clip_s": 8,
-      "try1_credits": 10,
+      "try1_credits": 100,
       "explorer": false,
       "prompt_sha256": "bdcd5ec4ca175cf3b0fe0da0c8cc9013cb4c58c3afa2025ea49048a917bb7b3b"
     },
     {
-      "index": 53,
+      "index": 50,
       "row_id": "P5:02a_linnean_reading",
       "part": 5,
       "id": "02a_linnean_reading",
@@ -718,19 +682,7 @@
       "prompt_sha256": "2447e43ea21bc00876c4053982d9ad6ae73f4d00a3679f4f4a26d175847dcbd4"
     },
     {
-      "index": 54,
-      "row_id": "P5:02b_joint_papers_lectern",
-      "part": 5,
-      "id": "02b_joint_papers_lectern",
-      "quality": "Fast",
-      "flow_model": "Veo 3.1 - Fast",
-      "flow_clip_s": 8,
-      "try1_credits": 10,
-      "explorer": false,
-      "prompt_sha256": "75a709670a2029764fab040d56cb5f0ae9534ec9b8b27ddb734b7c0a35dafa8f"
-    },
-    {
-      "index": 55,
+      "index": 51,
       "row_id": "P5:03a_two_empty_chairs",
       "part": 5,
       "id": "03a_two_empty_chairs",
@@ -742,7 +694,7 @@
       "prompt_sha256": "63c9420e7600adf17467c0c8abf7502840b296d211f21e81ded240a7aaf7b55b"
     },
     {
-      "index": 56,
+      "index": 52,
       "row_id": "P5:03b_wallace_jungle_clearing",
       "part": 5,
       "id": "03b_wallace_jungle_clearing",
@@ -754,31 +706,19 @@
       "prompt_sha256": "e9bb82c1223445cd731e4054f458c459dbfb34f55f0df41f2e0100036542065b"
     },
     {
-      "index": 57,
+      "index": 53,
       "row_id": "P5:04a_empty_linnean_hall",
       "part": 5,
       "id": "04a_empty_linnean_hall",
-      "quality": "Fast",
-      "flow_model": "Veo 3.1 - Fast",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
       "flow_clip_s": 8,
-      "try1_credits": 10,
+      "try1_credits": 100,
       "explorer": false,
       "prompt_sha256": "22e7efe0eef30f04931ea4d15eb9609c7c0335fd71ccbfc16cc3e693f56fed3c"
     },
     {
-      "index": 58,
-      "row_id": "P5:04b_bell_report_1859",
-      "part": 5,
-      "id": "04b_bell_report_1859",
-      "quality": "Fast",
-      "flow_model": "Veo 3.1 - Fast",
-      "flow_clip_s": 8,
-      "try1_credits": 10,
-      "explorer": false,
-      "prompt_sha256": "074163dee9dd4e0d5a7d8a26f06caf42246dd5cf80b431ff55d9234cc87f142b"
-    },
-    {
-      "index": 59,
+      "index": 54,
       "row_id": "P5:05a_darwin_writes_origin",
       "part": 5,
       "id": "05a_darwin_writes_origin",
@@ -790,7 +730,7 @@
       "prompt_sha256": "74ae26fe0cf3c46072ced0bc2bbf4172c7ee66e7e97e68b5a70024ca6d1aaea0"
     },
     {
-      "index": 60,
+      "index": 55,
       "row_id": "P5:06_murray_bookshop",
       "part": 5,
       "id": "06_murray_bookshop",
@@ -802,19 +742,19 @@
       "prompt_sha256": "8ec5b5eca1717a2b286414896289ba870d0034d6b5ff0a87ca5c966185d50855"
     },
     {
-      "index": 61,
+      "index": 56,
       "row_id": "P5:08a_wallace_opens_origin",
       "part": 5,
       "id": "08a_wallace_opens_origin",
-      "quality": "Fast",
-      "flow_model": "Veo 3.1 - Fast",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
       "flow_clip_s": 8,
-      "try1_credits": 10,
+      "try1_credits": 100,
       "explorer": false,
       "prompt_sha256": "e01aed99508f7631f8551202e8750a18ebbe6bd8d2f37da082d6523630c84b1a"
     },
     {
-      "index": 62,
+      "index": 57,
       "row_id": "P5:08b_wallace_reads_origin",
       "part": 5,
       "id": "08b_wallace_reads_origin",
@@ -826,7 +766,7 @@
       "prompt_sha256": "4b57198be88c3b835d3e4b574b0fa2d90cc41482721740a3595e7e432dfd21c2"
     },
     {
-      "index": 63,
+      "index": 58,
       "row_id": "P5:10_darwin_worried_shelf",
       "part": 5,
       "id": "10_darwin_worried_shelf",
@@ -838,7 +778,7 @@
       "prompt_sha256": "34cdafbf1fbc10f375805a8ce08b39c1414e1bc1f9ff6e5f71f5e096ea4add66"
     },
     {
-      "index": 64,
+      "index": 59,
       "row_id": "P6:02a_jenkin_study",
       "part": 6,
       "id": "02a_jenkin_study",
@@ -850,19 +790,19 @@
       "prompt_sha256": "814ec680d78533462eee04136dda24780e8e68834c17633ffcf2f38b1660967b"
     },
     {
-      "index": 65,
+      "index": 60,
       "row_id": "P6:02b_paint_pots_mix",
       "part": 6,
       "id": "02b_paint_pots_mix",
-      "quality": "Fast",
-      "flow_model": "Veo 3.1 - Fast",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
       "flow_clip_s": 8,
-      "try1_credits": 10,
+      "try1_credits": 100,
       "explorer": false,
       "prompt_sha256": "6ff7974a357e2069150b26f4987a885d64f185de4fa1347b8682156b5d659daf"
     },
     {
-      "index": 66,
+      "index": 61,
       "row_id": "P6:04a_mendel_pea_garden",
       "part": 6,
       "id": "04a_mendel_pea_garden",
@@ -874,7 +814,7 @@
       "prompt_sha256": "e8edf935635e18344c9ce9c33bd989b1af15f6512692d6bc3bf8ce0a40d3b737"
     },
     {
-      "index": 67,
+      "index": 62,
       "row_id": "P6:05_beads_not_paint",
       "part": 6,
       "id": "05_beads_not_paint",
@@ -886,19 +826,19 @@
       "prompt_sha256": "a0eae60d37a40832d50086ea7ceffc74c2b4070c6d1b96457747c48b0333c2fc"
     },
     {
-      "index": 68,
+      "index": 63,
       "row_id": "P6:06a_origin_fifth_edition",
       "part": 6,
       "id": "06a_origin_fifth_edition",
-      "quality": "Fast",
-      "flow_model": "Veo 3.1 - Fast",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
       "flow_clip_s": 8,
-      "try1_credits": 10,
+      "try1_credits": 100,
       "explorer": false,
       "prompt_sha256": "0af2042db66717b084e230962bd5a603b56a9d3123b6328f08c9b8e2d492fd75"
     },
     {
-      "index": 69,
+      "index": 64,
       "row_id": "P6:06b_spencer_coined",
       "part": 6,
       "id": "06b_spencer_coined",
@@ -910,7 +850,7 @@
       "prompt_sha256": "64ce1c701dbab6d2fdd823baaccc01f49c01c43c0af2d1bb8086356d84ffa0b4"
     },
     {
-      "index": 70,
+      "index": 65,
       "row_id": "P6:07_key_in_lock",
       "part": 6,
       "id": "07_key_in_lock",
@@ -922,7 +862,7 @@
       "prompt_sha256": "9445b2992e7bf066518ab61e65532c8d7b1f9c1d2eb7f771fc21fac1f1190b96"
     },
     {
-      "index": 71,
+      "index": 66,
       "row_id": "P6:08b_darwin_mendel_synthesis",
       "part": 6,
       "id": "08b_darwin_mendel_synthesis",
@@ -945,7 +885,7 @@
         "P1:04a_packet_seal"
       ],
       "row_count": 5,
-      "credits": 320
+      "credits": 500
     },
     {
       "batch_index": 2,
@@ -957,7 +897,7 @@
         "P1:07_darwin_1837_desk"
       ],
       "row_count": 5,
-      "credits": 230
+      "credits": 500
     },
     {
       "batch_index": 3,
@@ -969,7 +909,7 @@
         "P2:04_blank_tags_row"
       ],
       "row_count": 5,
-      "credits": 410
+      "credits": 500
     },
     {
       "batch_index": 4,
@@ -981,64 +921,64 @@
         "P2:08b_gould_skins_closeup"
       ],
       "row_count": 5,
-      "credits": 410
+      "credits": 500
     },
     {
       "batch_index": 5,
       "rows": [
         "P2:10a_explorer_shipmates",
-        "P2:10b_shipmate_tagged_tray",
         "P2:11_island_split_vision",
         "P2:12b_tree_question",
-        "P3:02a_malthus_lamplight"
+        "P3:02a_malthus_lamplight",
+        "P3:02b_notebook_d_open"
       ],
       "row_count": 5,
-      "credits": 410
+      "credits": 500
     },
     {
       "batch_index": 6,
       "rows": [
-        "P3:02b_notebook_d_open",
         "P3:04a_drought_island_seeds",
         "P3:04b_finch_cracks_seed",
         "P3:05a_chicks_deep_beaks",
-        "P3:05b_finches_next_generation"
+        "P3:05b_finches_next_generation",
+        "P3:07a_darwin_afraid_window"
       ],
       "row_count": 5,
-      "credits": 410
+      "credits": 500
     },
     {
       "batch_index": 7,
       "rows": [
-        "P3:07a_darwin_afraid_window",
         "P3:07b_confessing_murder_letter",
         "P3:08_emma_study",
-        "P3:09a_essay_1844_sealed",
-        "P3:09b_emma_letter_cupboard"
+        "P3:09b_emma_letter_cupboard",
+        "P3:10b_vestiges_torn_apart",
+        "P3:11_barnacles_microscope"
       ],
       "row_count": 5,
-      "credits": 320
+      "credits": 500
     },
     {
       "batch_index": 8,
       "rows": [
-        "P3:10b_vestiges_torn_apart",
-        "P3:11_barnacles_microscope",
         "P3:13a_lyell_warning",
         "P3:13b_brass_globe_turn",
-        "P4:02_wallace_collector"
+        "P4:02_wallace_collector",
+        "P4:03a_helen_burning",
+        "P4:03b_crates_sinking"
       ],
       "row_count": 5,
-      "credits": 320
+      "credits": 500
     },
     {
       "batch_index": 9,
       "rows": [
-        "P4:03a_helen_burning",
-        "P4:03b_crates_sinking",
         "P4:04_open_boat_ten_days",
         "P4:06a_wallace_fever",
-        "P4:07a_wallace_writes_hut"
+        "P4:07a_wallace_writes_hut",
+        "P4:08_midpoint_twist_packet",
+        "P4:09a_darwin_reads_wallace"
       ],
       "row_count": 5,
       "credits": 500
@@ -1046,41 +986,29 @@
     {
       "batch_index": 10,
       "rows": [
-        "P4:07b_packet_to_mailbag",
-        "P4:08_midpoint_twist_packet",
-        "P4:09a_darwin_reads_wallace",
         "P4:09b_smashed_letter_pen",
-        "P4:10_fairness_25_june"
+        "P4:10_fairness_25_june",
+        "P4:11_down_house_grief",
+        "P4:12_lyell_hooker_bundle",
+        "P5:02a_linnean_reading"
       ],
       "row_count": 5,
-      "credits": 230
+      "credits": 500
     },
     {
       "batch_index": 11,
       "rows": [
-        "P4:11_down_house_grief",
-        "P4:12_lyell_hooker_bundle",
-        "P5:02a_linnean_reading",
-        "P5:02b_joint_papers_lectern",
-        "P5:03a_two_empty_chairs"
-      ],
-      "row_count": 5,
-      "credits": 320
-    },
-    {
-      "batch_index": 12,
-      "rows": [
+        "P5:03a_two_empty_chairs",
         "P5:03b_wallace_jungle_clearing",
         "P5:04a_empty_linnean_hall",
-        "P5:04b_bell_report_1859",
         "P5:05a_darwin_writes_origin",
         "P5:06_murray_bookshop"
       ],
       "row_count": 5,
-      "credits": 320
+      "credits": 500
     },
     {
-      "batch_index": 13,
+      "batch_index": 12,
       "rows": [
         "P5:08a_wallace_opens_origin",
         "P5:08b_wallace_reads_origin",
@@ -1089,10 +1017,10 @@
         "P6:02b_paint_pots_mix"
       ],
       "row_count": 5,
-      "credits": 320
+      "credits": 500
     },
     {
-      "batch_index": 14,
+      "batch_index": 13,
       "rows": [
         "P6:04a_mendel_pea_garden",
         "P6:05_beads_not_paint",
@@ -1101,10 +1029,10 @@
         "P6:07_key_in_lock"
       ],
       "row_count": 5,
-      "credits": 410
+      "credits": 500
     },
     {
-      "batch_index": 15,
+      "batch_index": 14,
       "rows": [
         "P6:08b_darwin_mendel_synthesis"
       ],
