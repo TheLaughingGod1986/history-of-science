@@ -22,8 +22,8 @@
     "rows": 16,
     "Quality": 12,
     "Fast": 0,
-    "code_graphic": 2,
-    "archive": 2,
+    "code_graphic": 3,
+    "archive": 1,
     "reuse": 0,
     "mint_rows": 12,
     "free_rows": 4,
@@ -417,11 +417,11 @@
       "set": "D",
       "explorer": false,
       "side_label": null,
-      "quality": "archive",
-      "route": "archive",
-      "source_kind": "free_archive",
-      "source_detail": "\u00a30 archive composite (`07_Edit-Project/code_graphics_v01/code_graphic_013_p4_07b_packet_to_mailbag.mp4`) from `07_Edit-Project/archive_pulls_v01/raw/who_charles_darwin.jpg` (https://commons.wikimedia.org/wiki/File%3ACharles_Darwin_seated.jpg, **Public domain**) \u00b7 0 credits",
-      "shot_description": "Public-domain Maull & Fox seated photograph of Charles Darwin (c. 1854) composited on the period dispatch desk beside the Ternate \u2192 Down House packet route stamp",
+      "quality": "code_graphic",
+      "route": "code-graphic",
+      "source_kind": "code_graphic",
+      "source_detail": "\u00a30 code graphic (`07_Edit-Project/code_graphics_v01/code_graphic_013_p4_07b_packet_to_mailbag.mp4`) \u00b7 0 credits",
+      "shot_description": "Code graphic / inked route map: Wallace's wax-sealed packet travels along a map line from Ternate (early 1858) to Down House (arrived 18 June 1858)",
       "prompt": null,
       "vo_land": [
         " famous  naturalist  he  knew  would  be  interested.  Charles  Darwin."
@@ -439,18 +439,10 @@
       "cum_flow_credits_expected": 11137,
       "cum_vertex_try1_gbp": 45.44,
       "cum_vertex_expected_gbp": 120.87,
-      "archive_source": {
-        "id": "who_charles_darwin",
-        "local_raw": "07_Edit-Project/archive_pulls_v01/raw/who_charles_darwin.jpg",
-        "commons_page": "https://commons.wikimedia.org/wiki/File%3ACharles_Darwin_seated.jpg",
-        "licence": "Public domain",
-        "description": "Charles Darwin (1809\u20131882), photograph by Maull & Fox (c. 1854)",
-        "sha256": "5406784a366fd851df92a23c6826a81b43e625fb72d4ae047b4610c6067b9f61"
-      },
       "code_graphic_spec": {
         "file": "code_graphic_013_p4_07b_packet_to_mailbag.mp4",
         "path": "07_Edit-Project/code_graphics_v01/code_graphic_013_p4_07b_packet_to_mailbag.mp4",
-        "shows": "Public-domain Maull & Fox seated photograph of Charles Darwin (c. 1854) composited on the period dispatch desk beside the Ternate \u2192 Down House packet route stamp",
+        "shows": "Code graphic / inked route map: Wallace's wax-sealed packet travels along a map line from Ternate (early 1858) to Down House (arrived 18 June 1858)",
         "spend": "\u00a30"
       }
     },

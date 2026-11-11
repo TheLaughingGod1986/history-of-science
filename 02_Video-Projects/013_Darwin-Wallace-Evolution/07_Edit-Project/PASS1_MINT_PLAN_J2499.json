@@ -1,6 +1,8 @@
 {
   "job": "J2499",
   "film": "HOS:013",
+  "plan_file": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/PICTURE_PLAN_v02.json",
+  "plan_sha256": "14212379e2132e94766abffba358dea50640329ffc86db4a6c65c221a8897182",
   "submissions": 0,
   "create_clicks": 0,
   "credits_spent": 0,

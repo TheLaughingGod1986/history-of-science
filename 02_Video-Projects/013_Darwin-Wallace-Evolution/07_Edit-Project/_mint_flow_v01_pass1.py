@@ -730,6 +730,8 @@ def can_take(*, row: Row, live: int | None, spent: int, pending: int, other: int
 
 def build_plan(rows: list[Row], *, repo: Path | None = None) -> dict:
     root = repo or repo_root_from()
+    plan_rel = EDIT_REL / PLAN_NAME
+    plan_path = root / plan_rel
     ordered = order_rows(rows)
     batches = batch_rows(ordered)
     per_part: dict[str, dict] = {}
@@ -745,6 +747,8 @@ def build_plan(rows: list[Row], *, repo: Path | None = None) -> dict:
     return {
         "job": "J2499",
         "film": FILM_ID,
+        "plan_file": str(plan_rel),
+        "plan_sha256": sha256_file(plan_path),
         "submissions": 0,
         "create_clicks": 0,
         "credits_spent": 0,

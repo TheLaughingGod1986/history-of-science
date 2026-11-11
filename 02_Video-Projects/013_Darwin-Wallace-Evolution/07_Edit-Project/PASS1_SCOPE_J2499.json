@@ -8,7 +8,7 @@
   "status": "RUNNER_READY_FOR_CHIEF_REVIEW_NO_GENERATION",
   "generation_authorized": false,
   "plan_file": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/PICTURE_PLAN_v02.json",
-  "plan_sha256": "b2d0258ab3c916d9c31a27f3498d26b54147e4793122037fa3366bab1f671426",
+  "plan_sha256": "14212379e2132e94766abffba358dea50640329ffc86db4a6c65c221a8897182",
   "account_rule": "the studio Ultra account on flow.google.com (verified by SHA-256 digest; ULTRA badge required; personal account rejected)",
   "order_rule": "Part 01 first (first 30 seconds and Shorts opening frames), then Parts 02 to 06 in exact timeline order",
   "caps": {
@@ -67,7 +67,7 @@
     },
     "4": {
       "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/parts/part-04_plates_v02.json",
-      "sha256": "411d93c21f97af5be0f1acbe16a6508dafa3c9020d39eb6c0a791b2b29245266"
+      "sha256": "45514cff0d566db2d26e2821c8884764aea4270e0f5e69741dfeb483875b1a5f"
     },
     "5": {
       "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/parts/part-05_plates_v02.json",
@@ -797,7 +797,7 @@
       "max_takes": 1,
       "explorer": false,
       "board": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/parts/part-04_plates_v02.json",
-      "board_sha256": "411d93c21f97af5be0f1acbe16a6508dafa3c9020d39eb6c0a791b2b29245266",
+      "board_sha256": "45514cff0d566db2d26e2821c8884764aea4270e0f5e69741dfeb483875b1a5f",
       "prompt_sha256": "66e78edc422d88770288dfeaf97a7e89b91aebdd1d96c3422d27b53f84a1bd79",
       "normalized_prompt_sha256": "66e78edc422d88770288dfeaf97a7e89b91aebdd1d96c3422d27b53f84a1bd79"
     },
@@ -816,7 +816,7 @@
       "max_takes": 1,
       "explorer": false,
       "board": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/parts/part-04_plates_v02.json",
-      "board_sha256": "411d93c21f97af5be0f1acbe16a6508dafa3c9020d39eb6c0a791b2b29245266",
+      "board_sha256": "45514cff0d566db2d26e2821c8884764aea4270e0f5e69741dfeb483875b1a5f",
       "prompt_sha256": "9e2f79dce74f22226a3f153ae41cba43bc2bec57a18c4e4bc6ea8efd1aa0c898",
       "normalized_prompt_sha256": "9e2f79dce74f22226a3f153ae41cba43bc2bec57a18c4e4bc6ea8efd1aa0c898"
     },
@@ -835,7 +835,7 @@
       "max_takes": 1,
       "explorer": false,
       "board": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/parts/part-04_plates_v02.json",
-      "board_sha256": "411d93c21f97af5be0f1acbe16a6508dafa3c9020d39eb6c0a791b2b29245266",
+      "board_sha256": "45514cff0d566db2d26e2821c8884764aea4270e0f5e69741dfeb483875b1a5f",
       "prompt_sha256": "e01fedb65de8709f1cff29dc26274b0612e7f5537ad1043cc70d1bb3417ce94a",
       "normalized_prompt_sha256": "e01fedb65de8709f1cff29dc26274b0612e7f5537ad1043cc70d1bb3417ce94a"
     },
@@ -854,7 +854,7 @@
       "max_takes": 1,
       "explorer": false,
       "board": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/parts/part-04_plates_v02.json",
-      "board_sha256": "411d93c21f97af5be0f1acbe16a6508dafa3c9020d39eb6c0a791b2b29245266",
+      "board_sha256": "45514cff0d566db2d26e2821c8884764aea4270e0f5e69741dfeb483875b1a5f",
       "prompt_sha256": "850d3982e43013b7fd9e320dd06dbbe39017f93ee9ee2b9ee79b6e87191cf339",
       "normalized_prompt_sha256": "850d3982e43013b7fd9e320dd06dbbe39017f93ee9ee2b9ee79b6e87191cf339"
     },
@@ -873,7 +873,7 @@
       "max_takes": 1,
       "explorer": false,
       "board": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/parts/part-04_plates_v02.json",
-      "board_sha256": "411d93c21f97af5be0f1acbe16a6508dafa3c9020d39eb6c0a791b2b29245266",
+      "board_sha256": "45514cff0d566db2d26e2821c8884764aea4270e0f5e69741dfeb483875b1a5f",
       "prompt_sha256": "52625db1d937447ddb1815ee58803d1d0d43757320988c05d6dfaab9ce5b9983",
       "normalized_prompt_sha256": "52625db1d937447ddb1815ee58803d1d0d43757320988c05d6dfaab9ce5b9983"
     },
@@ -892,7 +892,7 @@
       "max_takes": 1,
       "explorer": false,
       "board": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/parts/part-04_plates_v02.json",
-      "board_sha256": "411d93c21f97af5be0f1acbe16a6508dafa3c9020d39eb6c0a791b2b29245266",
+      "board_sha256": "45514cff0d566db2d26e2821c8884764aea4270e0f5e69741dfeb483875b1a5f",
       "prompt_sha256": "4011a010e782199c912ee4a9814f6a9aad8eaa095dd13ea8d24024199040f71d",
       "normalized_prompt_sha256": "4011a010e782199c912ee4a9814f6a9aad8eaa095dd13ea8d24024199040f71d"
     },
@@ -911,7 +911,7 @@
       "max_takes": 1,
       "explorer": false,
       "board": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/parts/part-04_plates_v02.json",
-      "board_sha256": "411d93c21f97af5be0f1acbe16a6508dafa3c9020d39eb6c0a791b2b29245266",
+      "board_sha256": "45514cff0d566db2d26e2821c8884764aea4270e0f5e69741dfeb483875b1a5f",
       "prompt_sha256": "12ceb4288623013fc1c58b9d060dfecb2bfefa878878ae84ebf66f3e6caffd95",
       "normalized_prompt_sha256": "12ceb4288623013fc1c58b9d060dfecb2bfefa878878ae84ebf66f3e6caffd95"
     },
@@ -930,7 +930,7 @@
       "max_takes": 1,
       "explorer": false,
       "board": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/parts/part-04_plates_v02.json",
-      "board_sha256": "411d93c21f97af5be0f1acbe16a6508dafa3c9020d39eb6c0a791b2b29245266",
+      "board_sha256": "45514cff0d566db2d26e2821c8884764aea4270e0f5e69741dfeb483875b1a5f",
       "prompt_sha256": "269014053bf05cf3065e46e10d1c42f245e182790a4a6d78577a4e9c04dbc960",
       "normalized_prompt_sha256": "269014053bf05cf3065e46e10d1c42f245e182790a4a6d78577a4e9c04dbc960"
     },
@@ -949,7 +949,7 @@
       "max_takes": 1,
       "explorer": false,
       "board": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/parts/part-04_plates_v02.json",
-      "board_sha256": "411d93c21f97af5be0f1acbe16a6508dafa3c9020d39eb6c0a791b2b29245266",
+      "board_sha256": "45514cff0d566db2d26e2821c8884764aea4270e0f5e69741dfeb483875b1a5f",
       "prompt_sha256": "03c290b0735aab0d2d055e7025093c6343f3d44909f2f85c13fd50ce06205872",
       "normalized_prompt_sha256": "03c290b0735aab0d2d055e7025093c6343f3d44909f2f85c13fd50ce06205872"
     },
@@ -968,7 +968,7 @@
       "max_takes": 1,
       "explorer": false,
       "board": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/parts/part-04_plates_v02.json",
-      "board_sha256": "411d93c21f97af5be0f1acbe16a6508dafa3c9020d39eb6c0a791b2b29245266",
+      "board_sha256": "45514cff0d566db2d26e2821c8884764aea4270e0f5e69741dfeb483875b1a5f",
       "prompt_sha256": "15002801511eeb7f5fcf41bb1a6044048c42394201ef86a03f60d9bc61cd6e53",
       "normalized_prompt_sha256": "15002801511eeb7f5fcf41bb1a6044048c42394201ef86a03f60d9bc61cd6e53"
     },
@@ -987,7 +987,7 @@
       "max_takes": 1,
       "explorer": false,
       "board": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/parts/part-04_plates_v02.json",
-      "board_sha256": "411d93c21f97af5be0f1acbe16a6508dafa3c9020d39eb6c0a791b2b29245266",
+      "board_sha256": "45514cff0d566db2d26e2821c8884764aea4270e0f5e69741dfeb483875b1a5f",
       "prompt_sha256": "38eafe4b22678132a847b18ce440368785c9ce6f1856548e9ead50ba5107b535",
       "normalized_prompt_sha256": "38eafe4b22678132a847b18ce440368785c9ce6f1856548e9ead50ba5107b535"
     },
@@ -1006,7 +1006,7 @@
       "max_takes": 1,
       "explorer": false,
       "board": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/parts/part-04_plates_v02.json",
-      "board_sha256": "411d93c21f97af5be0f1acbe16a6508dafa3c9020d39eb6c0a791b2b29245266",
+      "board_sha256": "45514cff0d566db2d26e2821c8884764aea4270e0f5e69741dfeb483875b1a5f",
       "prompt_sha256": "bdcd5ec4ca175cf3b0fe0da0c8cc9013cb4c58c3afa2025ea49048a917bb7b3b",
       "normalized_prompt_sha256": "bdcd5ec4ca175cf3b0fe0da0c8cc9013cb4c58c3afa2025ea49048a917bb7b3b"
     },

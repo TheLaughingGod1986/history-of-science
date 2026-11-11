@@ -7,7 +7,8 @@
   "ruling": [
     "history-of-science#180 comment 6774289583, item 3",
     "history-of-science#180 comment 6787044973",
-    "history-of-science#180 comment 6788217207 (011 PR #495 pattern)"
+    "history-of-science#180 comment 6788217207 (011 PR #495 pattern)",
+    "history-of-science#180 comment 6788932935 / PR #503 comment 6788932690 (P4:07b_packet_to_mailbag route code graphic)"
   ],
   "base_wording_commits": [
     "f859ac84 (PR #496: 34 prompts reworded to name no real person)",
@@ -17,8 +18,8 @@
     "fast_rows_in_v01": 23,
     "fast_rows_in_v02": 0,
     "fast_swapped_to_free": 5,
-    "fast_swapped_to_archive": 3,
-    "fast_swapped_to_code_graphic": 2,
+    "fast_swapped_to_archive": 2,
+    "fast_swapped_to_code_graphic": 3,
     "fast_upgraded_to_quality": 18,
     "quality_rows_in_v01": 48,
     "quality_rows_in_v02": 66,
@@ -447,22 +448,14 @@
     {
       "duration_s": 4.68,
       "new": {
-        "archive_source": {
-          "commons_page": "https://commons.wikimedia.org/wiki/File%3ACharles_Darwin_seated.jpg",
-          "description": "Charles Darwin (1809\u20131882), photograph by Maull & Fox (c. 1854)",
-          "id": "who_charles_darwin",
-          "licence": "Public domain",
-          "local_raw": "07_Edit-Project/archive_pulls_v01/raw/who_charles_darwin.jpg",
-          "sha256": "5406784a366fd851df92a23c6826a81b43e625fb72d4ae047b4610c6067b9f61"
-        },
         "flow_credits_expected": 0,
         "flow_credits_try1": 0,
         "flow_model": null,
         "prompt": null,
-        "quality": "archive",
-        "route": "archive",
-        "shot_description": "Public-domain Maull & Fox seated photograph of Charles Darwin (c. 1854) composited on the period dispatch desk beside the Ternate \u2192 Down House packet route stamp",
-        "source_kind": "free_archive"
+        "quality": "code_graphic",
+        "route": "code-graphic",
+        "shot_description": "Code graphic / inked route map: Wallace's wax-sealed packet travels along a map line from Ternate (early 1858) to Down House (arrived 18 June 1858)",
+        "source_kind": "code_graphic"
       },
       "next_row": "P4:08_midpoint_twist_packet",
       "old": {
@@ -477,7 +470,7 @@
       },
       "part": 4,
       "prev_row": "P4:07a_wallace_writes_hut",
-      "reason": "Swapped to \u00a30 free_archive composite (Maull & Fox seated photograph of Charles Darwin, c. 1854, Wikimedia Commons File:Charles_Darwin_seated.jpg, Public domain) between moving 3D Quality plates P4:07a_wallace_writes_hut and P4:08_midpoint_twist_packet.",
+      "reason": "Swapped to \u00a30 house code graphic of the packet's route (Ternate, early 1858 -> Down House, arrived 18 June 1858; envelope moving along a map line, no unsourced duration) between moving 3D Quality plates P4:07a_wallace_writes_hut and P4:08_midpoint_twist_packet.",
       "row_id": "P4:07b_packet_to_mailbag",
       "t_in_s": 326.0,
       "t_out_s": 330.68

@@ -142,7 +142,13 @@ class ScopeOrderAndBatchTests(unittest.TestCase):
         self.assertEqual(sum(1 for r in self.rows if r.explorer), 2)
 
         # Cross-check against PICTURE_PLAN_v02.json totals and all 6 part boards.
-        plan = json.loads((EDIT / "PICTURE_PLAN_v02.json").read_text())
+        plan_path = EDIT / "PICTURE_PLAN_v02.json"
+        plan = json.loads(plan_path.read_text())
+        plan_digest = RUNNER.sha256_file(plan_path)
+        scope_doc = json.loads((EDIT / "PASS1_SCOPE_J2499.json").read_text())
+        mint_plan_doc = json.loads((EDIT / "PASS1_MINT_PLAN_J2499.json").read_text())
+        self.assertEqual(scope_doc["plan_sha256"], plan_digest)
+        self.assertEqual(mint_plan_doc["plan_sha256"], plan_digest)
         self.assertEqual(plan["totals"]["mint_rows"], 66)
         self.assertEqual(plan["totals"]["Quality"], 66)
         self.assertEqual(plan["totals"]["Fast"], 0)
@@ -170,8 +176,15 @@ class ScopeOrderAndBatchTests(unittest.TestCase):
         self.assertEqual(change_doc["summary"]["fast_rows_in_v01"], 23)
         self.assertEqual(change_doc["summary"]["fast_rows_in_v02"], 0)
         self.assertEqual(change_doc["summary"]["fast_swapped_to_free"], 5)
+        self.assertEqual(change_doc["summary"]["fast_swapped_to_archive"], 2)
+        self.assertEqual(change_doc["summary"]["fast_swapped_to_code_graphic"], 3)
         self.assertEqual(change_doc["summary"]["fast_upgraded_to_quality"], 18)
         self.assertEqual(len(change_doc["rows"]), 23)
+        by_row = {entry["row_id"]: entry for entry in change_doc["rows"]}
+        self.assertEqual(by_row["P4:07b_packet_to_mailbag"]["new"]["quality"], "code_graphic")
+        self.assertEqual(by_row["P4:07b_packet_to_mailbag"]["new"]["route"], "code-graphic")
+        self.assertIn("Ternate (early 1858)", by_row["P4:07b_packet_to_mailbag"]["new"]["shot_description"])
+        self.assertIn("Down House (arrived 18 June 1858)", by_row["P4:07b_packet_to_mailbag"]["new"]["shot_description"])
         for entry in change_doc["rows"]:
             self.assertEqual(entry["old"]["quality"], "Fast")
             self.assertIn(entry["new"]["quality"], ("Quality", "archive", "code_graphic"))
