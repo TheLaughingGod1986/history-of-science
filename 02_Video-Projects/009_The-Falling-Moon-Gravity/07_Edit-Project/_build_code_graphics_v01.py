@@ -38,7 +38,7 @@ MINUTE_SECOND_SPEC = {
 # arc and 4 px for the tangent dashes, measured on the 1080 frame. The
 # contact sheet must also carry a 390 px-wide copy of one frame at 1:1.
 FALLING_MOON_DURATION = 5.26  # unchanged motion segment
-FALLING_MOON_HEAD_FRAMES = 21
+FALLING_MOON_HEAD_FRAMES = 32
 FALLING_MOON_HEAD_S = FALLING_MOON_HEAD_FRAMES / FPS
 FALLING_MOON_EARTH = (560.0, 880.0)
 FALLING_MOON_RADIUS = 720.0
@@ -68,7 +68,7 @@ def draw_falling_moon(d, t, dur):
     # Fixed tangent originates at the initial Moon centre, never follows it.
     step = FALLING_MOON_DASH_ON + FALLING_MOON_DASH_GAP
     x = int(x0)
-    # Exactly 21 distinct lead-in frames. Start beyond the Moon rim so
+    # Exactly 32 distinct lead-in frames. Start beyond the Moon rim so
     # every frame visibly changes, including before the first paper shift.
     end_x = min(1600, x0 + 64 + (1600 - x0 - 64) * t / FALLING_MOON_HEAD_S)
     while x < end_x:

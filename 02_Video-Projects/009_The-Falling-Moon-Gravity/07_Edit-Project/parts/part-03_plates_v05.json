@@ -137,17 +137,19 @@
       "code_graphic_spec": {
         "file": "code_graphic_009_p3_01_really_falling_c1.mp4",
         "renderer": "_build_code_graphics_v01.py",
-        "duration_s": 5.96,
+        "duration_s": 6.326666666666666,
         "source_in_s": 0,
-        "review_status": "Not KEEP. Desk6806341672 revision:21 drawn head frames, open rings, parent out104.179 unique frames at30fps.0.175s parent/head rate mismatch needs Chief ruling; no hold or splice.",
+        "review_status": "Not KEEP. r4: 32 drawn head frames, 190 unique frames at 30 fps. Motion pinned to 183.94; fade f0-f5, parent out104. Chief KEEP and Claude sheet read pending.",
         "splice_authorized": false,
         "labels": [],
         "approval_ref": "https://github.com/TheLaughingGod1986/history-of-science/pull/180#issuecomment-6800614881",
         "fps_correction_ref": "https://github.com/TheLaughingGod1986/history-of-science/pull/180#issuecomment-6800776453",
-        "sha256": "cb8051bb9d6b46d014be46977522d089e19262fa7fd7fd90dfee3099fb13c2f7",
-        "source_path": "/Volumes/MiniWork/scratch/J2632-r3-media/code_graphics_v01/code_graphic_009_p3_01_really_falling_c1.mp4",
-        "head_frames": 21,
-        "revision_ref": "https://github.com/TheLaughingGod1986/history-of-science/pull/180#issuecomment-6806341672"
+        "sha256": "23c832b09e70f78d8eeece657dac11d6148e2a5f5c701f2ad88b868845b5f3b3",
+        "source_path": "/Volumes/MiniWork/scratch/J2632-r4-media/code_graphics_v01/J2632_r4/code_graphic_009_p3_01_really_falling_c1.mp4",
+        "head_frames": 32,
+        "revision_ref": "https://github.com/TheLaughingGod1986/history-of-science/pull/180#issuecomment-6807936928",
+        "superseded_sha256": "cb8051bb9d6b46d014be46977522d089e19262fa7fd7fd90dfee3099fb13c2f7",
+        "manifest": "code_graphics_v01/J2632_r4/MANIFEST.json"
       },
       "j2632_route_note": "Old Flow prompt and hold check retained as history only. Rejected take 3 stays unused; no new mint or splice authorized."
     },
