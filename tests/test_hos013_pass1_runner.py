@@ -1306,6 +1306,62 @@ process.stdout.write(JSON.stringify({ ev, out, domClicks }));
 
 
 
+class DetachedFloorTests(unittest.TestCase):
+    def test_floor_survives_printed_command_and_launch_worker(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            cli = ["detach-command", "--repo", str(ROOT), "--media", str(root),
+                   "--archive", str(root), "--other-reservations", "0",
+                   "--ledger", str(root / "ledger.jsonl"),
+                   "--lock", str(root / "writer.lock"),
+                   "--pid", str(root / "runner.pid"),
+                   "--log", str(root / "run.log"), "--done", str(root / "run.done")]
+            for explicit in ([], ["--floor", "3000"], ["--floor", "3500"]):
+                expected = explicit[-1] if explicit else "3000"
+                with self.subTest(floor=expected):
+                    from io import StringIO
+                    output = StringIO()
+                    with patch("sys.stdout", output), patch.object(RUNNER, "runner_state_dir", return_value=root):
+                        self.assertEqual(RUNNER.main(cli + explicit), 0)
+                    launch = shlex.split(json.loads(output.getvalue())[-1])
+                    self.assertEqual(launch[launch.index("--floor") + 1], expected)
+                    with patch.object(RUNNER, "runner_state_dir", return_value=root), patch.object(RUNNER, "launch_once", return_value=0) as owner:
+                        self.assertEqual(RUNNER.main(launch[2:]), 0)
+                    child = owner.call_args.args[0]
+                    self.assertEqual(child[2], "submit")
+                    self.assertEqual(child[child.index("--floor") + 1], expected)
+                    self.assertNotIn("--log", child)
+            self.assertEqual(list(root.iterdir()), [])
+
+    def test_detached_floor_rejects_insufficient_reservation_and_accepts_boundary(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            command = RUNNER.detached_command(
+                SCRIPT, root / "run.log", root / "run.done", repo=ROOT,
+                media=root, archive=root, other=0, floor=3000,
+                ledger=root / "ledger.jsonl", lock=root / "writer.lock", pid=root / "runner.pid")
+            args = shlex.split(command[-1])
+            floor = int(args[args.index("--floor") + 1])
+            with RUNNER.SharedFlowAccounting(root / "accounting") as account:
+                before = account.snapshot()
+                with self.assertRaisesRegex(RUNNER.GuardError, "insufficient shared Flow headroom"):
+                    account.reserve("test", RUNNER.FILM_ID, 6600, live=9599, floor=floor)
+                self.assertEqual(account.snapshot(), before)
+                account.reserve("test", RUNNER.FILM_ID, 6600, live=9600, floor=floor)
+                self.assertEqual(account.snapshot()["liability"], 6600)
+                with self.assertRaisesRegex(RUNNER.GuardError, "insufficient shared Flow headroom"):
+                    account.reserve("test", RUNNER.FILM_ID, 6600, live=9599, floor=floor)
+
+    def test_negative_detached_floor_is_refused(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            with self.assertRaisesRegex(RUNNER.GuardError, "invalid detached floor"):
+                RUNNER.detached_command(
+                    SCRIPT, root / "run.log", root / "run.done", repo=ROOT,
+                    media=root, archive=root, other=0, floor=-1,
+                    ledger=root / "ledger.jsonl", lock=root / "writer.lock", pid=root / "runner.pid")
+
+
 class PolicyRefusalTests(unittest.TestCase):
     """A take Flow refuses under its content policy costs nothing, and pass 1 goes on without the row.
 
