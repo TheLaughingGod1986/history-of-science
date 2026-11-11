@@ -67,7 +67,7 @@ Native-resolution alpha verification is used: a first attempt downscaled alpha t
 
 The first mirror attempt stopped on the downscaled-alpha test before any copy. The corrected run passed all decode/alpha checks (`TECHNICAL_CHECKS.json`, 11 rows), then blocked inside macOS `mkdir` while creating the new NAS destination (process sample: stuck in `mkdir`, empty log). Cursor covering stopped that session at 01:24 London on 16 Oct after 45 minutes with no copy started (exit marker `143`). It was not a second render.
 
-The share is mounted (`192.168.1.119:/volume1/data` on `/Volumes/data`). Existing paths stat normally, including `.../History Of Science/02_Video-Projects`. Creating `008_Lightning-Franklin` under that folder, and creating `mini-tmp-scratch/2026-10-16`, did not return within 20–25 seconds. No verified NAS mirror exists. Do not start another mkdir against this share until a create returns; a hung `mkdir` wedges later listings.
+The share is mounted (`<NAS>:/volume1/data` on `/Volumes/data`). Existing paths stat normally, including `.../History Of Science/02_Video-Projects`. Creating `008_Lightning-Franklin` under that folder, and creating `mini-tmp-scratch/2026-10-16`, did not return within 20–25 seconds. No verified NAS mirror exists. Do not start another mkdir against this share until a create returns; a hung `mkdir` wedges later listings.
 
 Local media is intact at `02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/code_graphics_v01/` in the History of Science checkout (untracked; mp4/mov are gitignored). A safety copy, not a NAS mirror, is at `~/_desk/j0329-code-graphics-v01/`.
 
