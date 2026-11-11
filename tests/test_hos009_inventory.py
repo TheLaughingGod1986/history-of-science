@@ -4,11 +4,11 @@ import tempfile
 import unittest
 from pathlib import Path
 from unittest.mock import patch
-from tests.test_hos009_tranche2_runner import RUNNER, ROOT
+from tests.test_hos009_tranche2_runner import RUNNER, THEN
 
 class StillInventoryTests(unittest.TestCase):
     def test_missing_corrupt_small_and_valid_inventory(self):
-        rows = [row for row in RUNNER.load_scope(ROOT) if row.parent is None][:1]
+        rows = [row for row in RUNNER.load_scope(THEN) if row.parent is None][:1]
         self.assertEqual(len(rows), 1)
         row = rows[0]
         with tempfile.TemporaryDirectory() as tmp:
@@ -49,7 +49,7 @@ class InventoryBatchTests(unittest.TestCase):
         return path
 
     def test_missing_later_row_blocks_first_submit(self):
-        rows = RUNNER.order_rows(RUNNER.load_scope(ROOT))[:2]
+        rows = RUNNER.order_rows(RUNNER.load_scope(THEN))[:2]
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp); archive = root/'archive'; archive.mkdir()
             self.make_still(root/'media', rows[0])
@@ -63,7 +63,7 @@ class InventoryBatchTests(unittest.TestCase):
                 self.assertFalse(account.snapshot()['charges'])
 
     def test_pinned_hash_mismatch_stops_inventory(self):
-        rows = RUNNER.order_rows(RUNNER.load_scope(ROOT))[:1]
+        rows = RUNNER.order_rows(RUNNER.load_scope(THEN))[:1]
         with tempfile.TemporaryDirectory() as tmp:
             media = Path(tmp)
             path = self.make_still(media, rows[0])
@@ -72,7 +72,7 @@ class InventoryBatchTests(unittest.TestCase):
                 RUNNER.verify_still_inventory(rows, media)
 
     def test_frame_changed_after_inventory_never_enters_browser(self):
-        rows = RUNNER.order_rows(RUNNER.load_scope(ROOT))[:1]
+        rows = RUNNER.order_rows(RUNNER.load_scope(THEN))[:1]
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp); archive = root/'archive'; archive.mkdir()
             path = self.make_still(root/'media', rows[0])
