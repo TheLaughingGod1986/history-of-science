@@ -8,10 +8,11 @@ what is being worked on now, what is next, and when it should be ready.
   python3 00_Brand/Channel-Setup/tools/status_board.py           # build STATUS.md and the Kanban page here, to read
 
 Each film keeps its own `02_Video-Projects/<NNN_Name>/status.json` (J2622, the studio's standard for every channel:
-one status file per film). What is the channel's and no film's, the stages with their weights and owners, the
-next-steps lines and the credit lines, is in `00_Brand/Channel-Setup/BOARD.json`. The two pages are built from those
-on demand and are not kept in the repo, so a pull request that moves one film changes one small file and cannot
-clash with another film's. Rules for agents: AGENTS.md -> "Status board".
+one status file per film). The stages, with their weights, default owners and kinds of job, are in
+`studio/channel.json` under `stages`. The next-steps lines, the credit lines and the board link are in
+`00_Brand/Channel-Setup/BOARD.json`. The two pages are built from those on demand and are not kept in the repo, so
+a pull request that moves one film changes one small file and cannot clash with another film's. Rules for agents:
+AGENTS.md -> "Status board".
 """
 from __future__ import annotations
 
@@ -277,8 +278,9 @@ def render(data: dict) -> str:
     lines.append("# HOS status board")
     lines.append("")
     lines.append(
-        f"**Built {fmt_date(today)} {today.year}** from each film's `status.json` and "
-        "`00_Brand/Channel-Setup/BOARD.json` by `00_Brand/Channel-Setup/tools/status_board.py`. "
+        f"**Built {fmt_date(today)} {today.year}** from each film's `status.json`, the stage list in "
+        "`studio/channel.json` and `00_Brand/Channel-Setup/BOARD.json`, by "
+        "`00_Brand/Channel-Setup/tools/status_board.py`. "
         "This page is not kept in the repo: run the tool to build it. The studio's board shows the same films live."
     )
     lines.append("")
