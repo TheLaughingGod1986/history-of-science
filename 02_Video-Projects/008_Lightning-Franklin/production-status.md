@@ -292,3 +292,27 @@ J2163 supersedes J1880 planning claims with a read-only actual-PTS planner and c
 ## 5 November 2026 — J2217 eight-item amend (Cursor worker)
 
 The read-only planner now has eight defect rows plus a film-wide unbordered caption panel. `six_rows` is kept as historical evidence. 0:51 is master frame 1220 on `07_hot_night` closed GOP frames 1129–1231 (`103` frames, not the 1:49 salon source). 3:13 is frame 4621 on `01_points_desk` closed GOP frames 4511–4670 (`160` frames: clean `4511–4606`, paper unroll `4607–4670`). 2:18 is frame 3305, outside keep 3168–3259 and inside replace 3260–3343. All 27 `caption_treatment.labels` use exact closed-GOP `master_frames` (`[0, 141]`..`[12297, 12461]`). Execution still returns `REFUSED_UNTIL_J1881_REREVIEW`. 14 tests pass. No note resolved. No render, spend, upload, or YouTube change. J1881 re-reviews before any production scope. See `07_Edit-Project/J2217_AMEND.md`.
+
+
+## 11 November 2026 — J2589 third takes (Codex worker)
+
+Two final scoped takes generated under Chief desk ruling 6793185344: salon then points, Veo 3.1 Quality, x1, 16:9, 8 s, total 200 subscription credits / GBP 0. Shared writer lock and durable accounting guards used. Full live prompts were read back and passed each shot's forbidden-word check, including the runner wrapper. Same start-frame hashes; earlier takes and rods take 2 unchanged.
+
+Technical verification only: both files fully decode, each 190 frames, 1280×720, 24 fps. SHA-256, exact prompts, redacted live balance/price evidence, accounting and half-second sheet locations are recorded in `07_Edit-Project/J2589_TAKE3/`. Runner exited 0. Both remain GENERATED_PENDING_REVIEW. J2590 owns visual acceptance; subsequent overlay and review jobs remain required. No KEEP, film-stage approval, upload or YouTube change.
+
+Repository record checks (not picture acceptance):
+
+```text
+-- durable desk handoffs: PASS
+-- no media: PASS
+-- status board in sync: PASS
+-- ElevenLabs guard tests: PASS
+-- vo_check word tests: PASS
+-- atempo check tests: PASS
+-- voice speed (atempo <= 1.06): PASS
+-- contract tests: PASS
+-- package-lint: PASS
+-- review:script lightning_script_master_v01.md: PASS
+-- gate:episode: PASS
+ALL CHECKS PASS
+```
