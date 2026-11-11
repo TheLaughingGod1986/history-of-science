@@ -1,0 +1,417 @@
+{
+  "unposted_before": 3400,
+  "unposted_after": 3400,
+  "ledger_sha256_before": "42b4dea10e460c44021b47562567286c05be62bf53e4ae678cdcb273a6c607a8",
+  "ledger_sha256_after": "42b4dea10e460c44021b47562567286c05be62bf53e4ae678cdcb273a6c607a8",
+  "posted_count": 0,
+  "charges": [
+    {
+      "charge_id": "HOS:009:P02:10_how_high:t1",
+      "job": "J2033",
+      "amount": 100,
+      "before": [
+        14890
+      ],
+      "before_read_at": "2026-11-10T20:19:07+00:00",
+      "after": null,
+      "posted": false,
+      "reason": "No explicit post-charge balance reading from this take own batch log was found."
+    },
+    {
+      "charge_id": "HOS:009:P03:07_ball_to_moon:t1",
+      "job": "J2033",
+      "amount": 100,
+      "before": [
+        14790
+      ],
+      "before_read_at": "2026-11-10T20:21:26+00:00",
+      "after": null,
+      "posted": false,
+      "reason": "No explicit post-charge balance reading from this take own batch log was found."
+    },
+    {
+      "charge_id": "HOS:009:P01:05_heavens_map_c1:t1",
+      "job": "J2033",
+      "amount": 100,
+      "before": [
+        14690
+      ],
+      "before_read_at": "2026-11-10T20:25:35+00:00",
+      "after": null,
+      "posted": false,
+      "reason": "No explicit post-charge balance reading from this take own batch log was found."
+    },
+    {
+      "charge_id": "HOS:009:P01:07_night_field_c1:t1",
+      "job": "J2033",
+      "amount": 100,
+      "before": [
+        14590
+      ],
+      "before_read_at": "2026-11-10T20:27:43+00:00",
+      "after": null,
+      "posted": false,
+      "reason": "No explicit post-charge balance reading from this take own batch log was found."
+    },
+    {
+      "charge_id": "HOS:009:P02:01_cambridge_closes_c1:t1",
+      "job": "J2033",
+      "amount": 100,
+      "before": [
+        14490
+      ],
+      "before_read_at": "2026-11-10T20:29:48+00:00",
+      "after": null,
+      "posted": false,
+      "reason": "No explicit post-charge balance reading from this take own batch log was found."
+    },
+    {
+      "charge_id": "HOS:009:P02:03_christmas_birth_c1:t1",
+      "job": "J2033",
+      "amount": 100,
+      "before": [
+        14390
+      ],
+      "before_read_at": "2026-11-10T20:32:14+00:00",
+      "after": null,
+      "posted": false,
+      "reason": "No explicit post-charge balance reading from this take own batch log was found."
+    },
+    {
+      "charge_id": "HOS:009:P02:05_working_alone_c1:t1",
+      "job": "J2033",
+      "amount": 100,
+      "before": [
+        14290
+      ],
+      "before_read_at": "2026-11-10T20:34:24+00:00",
+      "after": null,
+      "posted": false,
+      "reason": "No explicit post-charge balance reading from this take own batch log was found."
+    },
+    {
+      "charge_id": "HOS:009:P02:08_the_apple_c1:t1",
+      "job": "J2033",
+      "amount": 100,
+      "before": [
+        14190
+      ],
+      "before_read_at": "2026-11-11T00:15:20+00:00",
+      "after": null,
+      "posted": false,
+      "reason": "No explicit post-charge balance reading from this take own batch log was found."
+    },
+    {
+      "charge_id": "HOS:009:P02:11_explorer_apple_c1:t1",
+      "job": "J2033",
+      "amount": 100,
+      "before": [
+        14090
+      ],
+      "before_read_at": "2026-11-11T00:17:42+00:00",
+      "after": null,
+      "posted": false,
+      "reason": "No explicit post-charge balance reading from this take own batch log was found."
+    },
+    {
+      "charge_id": "HOS:009:P03:01_really_falling_c1:t1",
+      "job": "J2033",
+      "amount": 100,
+      "before": [
+        13990
+      ],
+      "before_read_at": "2026-11-11T00:19:53+00:00",
+      "after": null,
+      "posted": false,
+      "reason": "No explicit post-charge balance reading from this take own batch log was found."
+    },
+    {
+      "charge_id": "HOS:009:P03:05_shot_orbit_c1:t1",
+      "job": "J2033",
+      "amount": 100,
+      "before": [
+        13890
+      ],
+      "before_read_at": "2026-11-11T00:22:11+00:00",
+      "after": null,
+      "posted": false,
+      "reason": "No explicit post-charge balance reading from this take own batch log was found."
+    },
+    {
+      "charge_id": "HOS:009:P03:05_shot_orbit_c2:t1",
+      "job": "J2033",
+      "amount": 100,
+      "before": [
+        13790
+      ],
+      "before_read_at": "2026-11-11T00:24:19+00:00",
+      "after": null,
+      "posted": false,
+      "reason": "No explicit post-charge balance reading from this take own batch log was found."
+    },
+    {
+      "charge_id": "HOS:009:P04:05_minute_second_c1:t1",
+      "job": "J2033",
+      "amount": 100,
+      "before": [
+        13690
+      ],
+      "before_read_at": "2026-11-11T00:29:59+00:00",
+      "after": null,
+      "posted": false,
+      "reason": "No explicit post-charge balance reading from this take own batch log was found."
+    },
+    {
+      "charge_id": "HOS:009:P04:05_minute_second_c2:t1",
+      "job": "J2033",
+      "amount": 100,
+      "before": [
+        13590
+      ],
+      "before_read_at": "2026-11-11T00:32:12+00:00",
+      "after": null,
+      "posted": false,
+      "reason": "No explicit post-charge balance reading from this take own batch log was found."
+    },
+    {
+      "charge_id": "HOS:009:P04:08_halley_visit_c1:t2",
+      "job": "J2033",
+      "amount": 100,
+      "before": [
+        13490
+      ],
+      "before_read_at": "2026-11-11T04:14:54+00:00",
+      "after": null,
+      "posted": false,
+      "reason": "No explicit post-charge balance reading from this take own batch log was found."
+    },
+    {
+      "charge_id": "HOS:009:P04:08_halley_visit_c2:t1",
+      "job": "J2033",
+      "amount": 100,
+      "before": [
+        13390
+      ],
+      "before_read_at": "2026-11-11T04:16:54+00:00",
+      "after": null,
+      "posted": false,
+      "reason": "No explicit post-charge balance reading from this take own batch log was found."
+    },
+    {
+      "charge_id": "HOS:009:P05:04_comet_1758_c1:t1",
+      "job": "J2033",
+      "amount": 100,
+      "before": [
+        13290
+      ],
+      "before_read_at": "2026-11-11T04:19:12+00:00",
+      "after": null,
+      "posted": false,
+      "reason": "No explicit post-charge balance reading from this take own batch log was found."
+    },
+    {
+      "charge_id": "HOS:009:P05:05_iss_orbit_c1:t1",
+      "job": "J2033",
+      "amount": 100,
+      "before": [
+        13190
+      ],
+      "before_read_at": "2026-11-11T04:21:33+00:00",
+      "after": null,
+      "posted": false,
+      "reason": "No explicit post-charge balance reading from this take own batch log was found."
+    },
+    {
+      "charge_id": "HOS:009:P05:05_iss_orbit_c2:t1",
+      "job": "J2033",
+      "amount": 100,
+      "before": [
+        13090
+      ],
+      "before_read_at": "2026-11-11T04:23:46+00:00",
+      "after": null,
+      "posted": false,
+      "reason": "No explicit post-charge balance reading from this take own batch log was found."
+    },
+    {
+      "charge_id": "HOS:009:P05:06_iss_apple_c1:t1",
+      "job": "J2033",
+      "amount": 100,
+      "before": [
+        12990
+      ],
+      "before_read_at": "2026-11-11T05:08:16+00:00",
+      "after": null,
+      "posted": false,
+      "reason": "No explicit post-charge balance reading from this take own batch log was found."
+    },
+    {
+      "charge_id": "HOS:008:P02:02_salon_spark:J2241:t1",
+      "job": "J2241",
+      "amount": 100,
+      "before": [
+        12890
+      ],
+      "before_read_at": "2026-11-11T06:40:44+00:00",
+      "after": null,
+      "posted": false,
+      "reason": "No explicit post-charge balance reading from this take own batch log was found."
+    },
+    {
+      "charge_id": "HOS:008:P03:01_points_desk:J2241:t1",
+      "job": "J2241",
+      "amount": 100,
+      "before": [
+        12790
+      ],
+      "before_read_at": "2026-11-11T06:43:02+00:00",
+      "after": null,
+      "posted": false,
+      "reason": "No explicit post-charge balance reading from this take own batch log was found."
+    },
+    {
+      "charge_id": "HOS:008:P05:13_rods_spread:J2241:t1",
+      "job": "J2241",
+      "amount": 100,
+      "before": [
+        12690
+      ],
+      "before_read_at": "2026-11-11T06:45:09+00:00",
+      "after": null,
+      "posted": false,
+      "reason": "No explicit post-charge balance reading from this take own batch log was found."
+    },
+    {
+      "charge_id": "HOS:008:P05:13_rods_spread:J2241:t2",
+      "job": "J2241",
+      "amount": 100,
+      "before": [
+        12690
+      ],
+      "before_read_at": "2026-11-11T08:12:34+00:00",
+      "after": null,
+      "posted": false,
+      "reason": "No explicit post-charge balance reading from this take own batch log was found."
+    },
+    {
+      "charge_id": "HOS:008:P02:02_salon_spark:J2241:t2",
+      "job": "J2575",
+      "amount": 100,
+      "before": [
+        12090
+      ],
+      "before_read_at": "2026-11-11T09:38:06+00:00",
+      "after": null,
+      "posted": false,
+      "reason": "No explicit post-charge balance reading from this take own batch log was found."
+    },
+    {
+      "charge_id": "HOS:008:P03:01_points_desk:J2241:t2",
+      "job": "J2575",
+      "amount": 100,
+      "before": [
+        11990
+      ],
+      "before_read_at": "2026-11-11T09:40:01+00:00",
+      "after": null,
+      "posted": false,
+      "reason": "No explicit post-charge balance reading from this take own batch log was found."
+    },
+    {
+      "charge_id": "HOS:008:P02:02_salon_spark:J2241:t3",
+      "job": "J2589",
+      "amount": 100,
+      "before": [
+        11890
+      ],
+      "before_read_at": "2026-11-11T10:30:19+00:00",
+      "after": null,
+      "posted": false,
+      "reason": "No explicit post-charge balance reading from this take own batch log was found."
+    },
+    {
+      "charge_id": "HOS:008:P03:01_points_desk:J2241:t3",
+      "job": "J2589",
+      "amount": 100,
+      "before": [
+        11790
+      ],
+      "before_read_at": "2026-11-11T10:32:26+00:00",
+      "after": null,
+      "posted": false,
+      "reason": "No explicit post-charge balance reading from this take own batch log was found."
+    },
+    {
+      "charge_id": "HOS:008:P02:02_salon_spark:J2241:t4",
+      "job": "J2598",
+      "amount": 100,
+      "before": [
+        11690
+      ],
+      "before_read_at": "2026-11-11T12:21:17+00:00",
+      "after": null,
+      "posted": false,
+      "reason": "No explicit post-charge balance reading from this take own batch log was found."
+    },
+    {
+      "charge_id": "HOS:009:P03:01_really_falling_c1:t2",
+      "job": "J2583",
+      "amount": 100,
+      "before": [
+        11590
+      ],
+      "before_read_at": "2026-11-11T14:13:07+00:00",
+      "after": null,
+      "posted": false,
+      "reason": "No explicit post-charge balance reading from this take own batch log was found."
+    },
+    {
+      "charge_id": "HOS:009:P02:08_the_apple_c1:t2",
+      "job": "J2583",
+      "amount": 100,
+      "before": [
+        11490
+      ],
+      "before_read_at": "2026-11-11T14:15:32+00:00",
+      "after": null,
+      "posted": false,
+      "reason": "No explicit post-charge balance reading from this take own batch log was found."
+    },
+    {
+      "charge_id": "HOS:009:P04:05_minute_second_c1:t2",
+      "job": "J2583",
+      "amount": 100,
+      "before": [
+        11390
+      ],
+      "before_read_at": "2026-11-11T14:17:42+00:00",
+      "after": null,
+      "posted": false,
+      "reason": "No explicit post-charge balance reading from this take own batch log was found."
+    },
+    {
+      "charge_id": "HOS:009:P03:01_really_falling_c1:t3",
+      "job": "J2626",
+      "amount": 100,
+      "before": [
+        10840
+      ],
+      "before_read_at": "2026-11-11T15:31:18+00:00",
+      "after": null,
+      "posted": false,
+      "reason": "No explicit post-charge balance reading from this take own batch log was found."
+    },
+    {
+      "charge_id": "HOS:009:P04:05_minute_second_c1:t3",
+      "job": "J2626",
+      "amount": 100,
+      "before": [
+        10740
+      ],
+      "before_read_at": "2026-11-11T15:33:26+00:00",
+      "after": null,
+      "posted": false,
+      "reason": "No explicit post-charge balance reading from this take own batch log was found."
+    }
+  ]
+}
