@@ -22,6 +22,32 @@ Ran 4 tests — OK (new AVC parser/IDR, corrupt-packet and duplicate-PTS checks)
 ALL CHECKS PASS (check_all.sh, full output CHECK_ALL.txt)
 ```
 
+## Salon intermediate checkpoint — second run, 11 November 2026
+
+The clean worktree remains on the same branch; PR #542 carries these checkpoints.
+`_j2242_salon_patch.py` now renders the exact 160-frame salon replacement as a
+lossless FFV1/NUT intermediate. `SALON_PATCH.json` records its path and hash.
+All 160 decoded frame hashes independently match the cropped/scaled tube frames
+99..178 followed by 19 copies of composite f000 and composite f000..f060.
+The spark is therefore on master frame 2635; nothing after source f060 is used.
+The intermediate muxer uses 1/49152; dividing its integer PTS and duration by
+four reproduces every original master tick exactly. This is an intermediate,
+not a final packet splice, and carries no audio. The hold and joins still need
+in-context visual review. The final master must retain 1/12288 and original audio.
+
+Tube hash reconciliation: J1880 inventory says `d3a0b24c996cec6d...`, but the
+actual bytes match BOTH `FLOW_MINT_LOG_v03.json` and rough_v12 cut[22], namely
+`d3a0b24c996c9d388baaf4e764b7561f9144e50a6fe21d94e8a3d2f9f2c45170`.
+The render pins that historically recorded full hash rather than changing an
+expected hash solely to accept current bytes. The old inventory is preserved.
+
+`PATCH_TESTS.txt`: 26 tests OK (18 planner, 4 source preflight, 4 salon).
+`CHECK_ALL_PATCH.txt`: ALL CHECKS PASS. These are code/repository checks;
+no final picture, polish, audio, sync, phone readability or finished-film PASS
+is claimed. No master, captions, packet splicer or publication was created.
+No processes remain running; failed intermediate attempts v01/v02 are retained
+beside successful v03, and only v03 has RESULT.json. No detached render.
+
 ## Remaining assembly and verification
 
 1. Implement the packet/boundary splicer; current planner's execution refusal is intact. Source IDR validation resolves the source reference-reset question, but does not establish safe muxing of new encoded windows. Validate each encoded join and codec parameter handling. Copy unchanged GOP packets and original audio. Do not globally re-encode or rebuild timestamps as frame-index/24. Preserve unchanged decoded frames even inside boundary envelopes (use a lossless boundary encode where necessary), all original integer PTS/durations, and audio packet timestamps/data.
