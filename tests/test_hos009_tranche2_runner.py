@@ -14,6 +14,8 @@ ROOT = Path(__file__).resolve().parents[1]
 SCRIPT = ROOT / "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/_mint_flow_v05_tranche2.py"
 TRANCHE1 = ROOT / "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/_mint_flow_v04_tranche1.py"
 EDIT = ROOT / "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project"
+sys.path.insert(0, str(ROOT))
+from tests.hos009_then import HAS_STUDIO, NEEDS_STUDIO, THEN, THEN_EDIT  # noqa: E402  the boards and scope as they were when the takes were made
 
 
 def load_runner():
@@ -50,7 +52,7 @@ def silent_mp4(directory: Path) -> Path:
 class ScopeAndOrderTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.rows = RUNNER.load_scope(ROOT)
+        cls.rows = RUNNER.load_scope(THEN)
 
     def test_exact_twenty_v05_rows(self):
         self.assertEqual(len(self.rows), 20)
@@ -84,17 +86,17 @@ class ScopeAndOrderTests(unittest.TestCase):
         self.assertEqual(plan["file_state_when_written"], "GENERATED")
         self.assertEqual(plan["order"][0]["kind"], "existing_still_or_zero_price")
         self.assertEqual(plan["order"][2]["kind"], "parent_last_frame")
-        before = (EDIT / "TRANCHE2_SCOPE_J2026.json").read_bytes()
-        RUNNER.cmd_plan(ROOT, None)
-        self.assertEqual((EDIT / "TRANCHE2_SCOPE_J2026.json").read_bytes(), before)
+        before = (THEN_EDIT / "TRANCHE2_SCOPE_J2026.json").read_bytes()
+        RUNNER.cmd_plan(THEN, None)
+        self.assertEqual((THEN_EDIT / "TRANCHE2_SCOPE_J2026.json").read_bytes(), before)
 
     def test_bad_board_hash_is_refused(self):
         with tempfile.TemporaryDirectory() as tmp:
             repo = Path(tmp)
             edit = repo / "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project"
             edit.mkdir(parents=True)
-            os.symlink(EDIT / "parts", edit / "parts")
-            scope = json.loads((EDIT / "TRANCHE2_SCOPE_J2026.json").read_text())
+            os.symlink(THEN_EDIT / "parts", edit / "parts")
+            scope = json.loads((THEN_EDIT / "TRANCHE2_SCOPE_J2026.json").read_text())
             scope["rows"][0]["board_sha256"] = "0" * 64
             (edit / "TRANCHE2_SCOPE_J2026.json").write_text(json.dumps(scope))
             with self.assertRaises(RUNNER.GuardError):
@@ -111,14 +113,14 @@ class ScopeAndOrderTests(unittest.TestCase):
 class RetakeScopeTests(unittest.TestCase):
     def setUp(self):
         from unittest.mock import patch
-        self.rows = RUNNER.load_scope(ROOT)
+        self.rows = RUNNER.load_scope(THEN)
         self.entries = [{"part": part, "plate_id": plate, "take": 1}
                         for part, plate in RUNNER.J2583_KEYS]
         # Two boards changed once more after J2583 (J2626: third takes), and J2583's scope file is left pinning
         # them as its second takes were made from (Chief 6799192687). These tests stand at J2583's time, so each
         # pinned board reads as its pinned hash. tests/test_hos009_third_takes.py checks what the old flag does today.
         scope = json.loads((EDIT / "TRANCHE2_RETAKES_J2583.json").read_text())
-        pins = {(ROOT / row["board"]).resolve(): row["board_sha256"] for row in scope["rows"]}
+        pins = {(THEN / row["board"]).resolve(): row["board_sha256"] for row in scope["rows"]}
         real = RUNNER.sha256_file
         then = patch.object(RUNNER, "sha256_file", side_effect=lambda path: pins.get(Path(path).resolve()) or real(path))
         then.start()
@@ -127,7 +129,7 @@ class RetakeScopeTests(unittest.TestCase):
     def test_only_three_ordered_second_takes(self):
         from unittest.mock import patch
         with tempfile.TemporaryDirectory() as tmp, patch.object(RUNNER, "verified_output", return_value=True):
-            batch = RUNNER.retake_batch(ROOT, self.rows, self.entries, Path(tmp))
+            batch = RUNNER.retake_batch(THEN, self.rows, self.entries, Path(tmp))
             self.assertEqual(tuple(r.key for r in batch), RUNNER.J2583_KEYS)
             self.assertNotIn("05_minute_second_c2", [r.plate_id for r in batch])
 
@@ -141,12 +143,12 @@ class RetakeScopeTests(unittest.TestCase):
             changed[field] = value
             with patch.object(RUNNER.json, "loads", return_value=changed):
                 with self.assertRaises(RUNNER.GuardError):
-                    RUNNER.retake_batch(ROOT, self.rows, self.entries, Path("/unused"))
+                    RUNNER.retake_batch(THEN, self.rows, self.entries, Path("/unused"))
         changed = copy.deepcopy(original)
         changed["rows"][0]["board_sha256"] = "0" * 64
         with patch.object(RUNNER.json, "loads", return_value=changed):
             with self.assertRaises(RUNNER.GuardError):
-                RUNNER.retake_batch(ROOT, self.rows, self.entries, Path("/unused"))
+                RUNNER.retake_batch(THEN, self.rows, self.entries, Path("/unused"))
 
     def test_any_second_take_intent_blocks_repeat_even_if_failed(self):
         from unittest.mock import patch
@@ -154,7 +156,7 @@ class RetakeScopeTests(unittest.TestCase):
             for status in ("SUBMITTING", "FAILED", "FAILED_POLICY", "PENDING_REVIEW"):
                 entries = self.entries + [dict(self.entries[0], take=2, status=status)]
                 with self.assertRaises(RUNNER.GuardError):
-                    RUNNER.retake_batch(ROOT, self.rows, entries, Path(tmp))
+                    RUNNER.retake_batch(THEN, self.rows, entries, Path(tmp))
 
     def test_unverified_first_take_and_existing_file_refused(self):
         from unittest.mock import patch
@@ -162,13 +164,13 @@ class RetakeScopeTests(unittest.TestCase):
             media = Path(tmp)
             with patch.object(RUNNER, "verified_output", return_value=False):
                 with self.assertRaises(RUNNER.GuardError):
-                    RUNNER.retake_batch(ROOT, self.rows, self.entries, media)
+                    RUNNER.retake_batch(THEN, self.rows, self.entries, media)
             dest = RUNNER.versioned_output(media, *RUNNER.J2583_KEYS[0], 2)
             dest.parent.mkdir(parents=True)
             dest.write_bytes(b"preserve")
             with patch.object(RUNNER, "verified_output", return_value=True):
                 with self.assertRaises(RUNNER.GuardError):
-                    RUNNER.retake_batch(ROOT, self.rows, self.entries, media)
+                    RUNNER.retake_batch(THEN, self.rows, self.entries, media)
             self.assertEqual(dest.read_bytes(), b"preserve")
 
     def test_c2_and_unrelated_rows_rejected_under_shared_lock_guard(self):
@@ -182,7 +184,7 @@ class J2583ReservationTests(unittest.TestCase):
     """Retakes reserve J2583 at 300 and leave the closed J2033 record alone."""
 
     def test_cap_is_the_approved_400_and_a_different_ceiling_is_refused(self):
-        self.assertEqual(RUNNER.retake_credit_cap(ROOT), 400)
+        self.assertEqual(RUNNER.retake_credit_cap(THEN), 400)
         self.assertEqual(RUNNER.J2583_RESERVE_CAP, 300)
         with tempfile.TemporaryDirectory() as tmp:
             repo = Path(tmp)
@@ -245,7 +247,7 @@ class J2583ReservationTests(unittest.TestCase):
 
     def test_cmd_submit_uses_j2583_only_for_retakes(self):
         from unittest.mock import patch
-        row = next(item for item in RUNNER.load_scope(ROOT) if item.key == RUNNER.J2583_KEYS[0])
+        row = next(item for item in RUNNER.load_scope(THEN) if item.key == RUNNER.J2583_KEYS[0])
         with tempfile.TemporaryDirectory() as tmp, patch.dict(os.environ, {RUNNER.SUBMIT_ENV: "1"}):
             root = Path(tmp)
             archive = root / "archive"
@@ -256,19 +258,19 @@ class J2583ReservationTests(unittest.TestCase):
                 done_path=root / "runner.done", archive_dir=archive, test_archive=True,
             )
             with patch.object(RUNNER, "execute_shared_batch", return_value=[]) as batch:
-                RUNNER.cmd_submit(ROOT, retakes_j2583=False, **common)
+                RUNNER.cmd_submit(THEN, retakes_j2583=False, **common)
             self.assertEqual(batch.call_args.kwargs["reservation"], "J2033")
             self.assertEqual(batch.call_args.kwargs["reservation_cap"], 6000)
             self.assertFalse(batch.call_args.kwargs["retakes_j2583"])
             with patch.object(RUNNER, "retake_batch", return_value=[row]), \
                  patch.object(RUNNER, "execute_shared_batch", return_value=[]) as retake:
-                RUNNER.cmd_submit(ROOT, retakes_j2583=True, **common)
+                RUNNER.cmd_submit(THEN, retakes_j2583=True, **common)
             self.assertEqual(retake.call_args.kwargs["reservation"], "J2583")
             self.assertEqual(retake.call_args.kwargs["reservation_cap"], 300)
             self.assertTrue(retake.call_args.kwargs["retakes_j2583"])
 
     def _retake_rows(self):
-        rows = RUNNER.load_scope(ROOT)
+        rows = RUNNER.load_scope(THEN)
         by_key = {row.key: row for row in rows}
         selected = [by_key[key] for key in RUNNER.J2583_KEYS]
         self.assertTrue(all(row.parent is not None for row in selected))
@@ -443,12 +445,12 @@ class J2583ReservationTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
             plain = RUNNER.detached_command(
-                SCRIPT, root / "run.log", root / "run.done", repo=ROOT, media=root,
+                SCRIPT, root / "run.log", root / "run.done", repo=THEN, media=root,
                 archive=root, other=0, ledger=root / "ledger.jsonl",
                 lock=root / "writer.lock", pid=root / "runner.pid")
             self.assertNotIn("--retakes-j2583", plain[-1])
             command = RUNNER.detached_command(
-                SCRIPT, root / "retake.log", root / "retake.done", repo=ROOT, media=root,
+                SCRIPT, root / "retake.log", root / "retake.done", repo=THEN, media=root,
                 archive=root, other=0, ledger=root / "ledger.jsonl",
                 lock=root / "writer.lock", pid=root / "runner.pid", retakes_j2583=True)
             child = shlex.split(command[-1])
@@ -517,14 +519,14 @@ class GuardTests(unittest.TestCase):
         self.assertEqual(spent, 0)
 
     def test_batch_over_five_rows_is_refused(self):
-        rows = RUNNER.load_scope(ROOT)[:6]
+        rows = RUNNER.load_scope(THEN)[:6]
         with self.assertRaises(RUNNER.GuardError):
             RUNNER.assert_batch_limits(rows)
 
 
 class ExecuteAndProcessTests(unittest.TestCase):
     def test_fake_batch_is_pending_review_and_does_not_import_playwright_submit(self):
-        rows = RUNNER.order_rows(RUNNER.load_scope(ROOT))
+        rows = RUNNER.order_rows(RUNNER.load_scope(THEN))
         parents = rows[:2]
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
@@ -564,7 +566,7 @@ class ExecuteAndProcessTests(unittest.TestCase):
             self.assertNotIn("07_ball_to_moon", [row.plate_id for row in again])
 
     def test_unresolved_submit_does_not_call_submitter(self):
-        rows = RUNNER.order_rows(RUNNER.load_scope(ROOT))
+        rows = RUNNER.order_rows(RUNNER.load_scope(THEN))
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
             ledger = root / "ledger.jsonl"
@@ -583,7 +585,7 @@ class ExecuteAndProcessTests(unittest.TestCase):
             self.assertEqual(calls, [])
 
     def test_low_balance_submits_nothing(self):
-        rows = RUNNER.order_rows(RUNNER.load_scope(ROOT))
+        rows = RUNNER.order_rows(RUNNER.load_scope(THEN))
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
             now = datetime.now(timezone.utc)
@@ -607,7 +609,7 @@ class ExecuteAndProcessTests(unittest.TestCase):
             self.assertEqual(first.read_bytes(), b"keep-me")
 
     def test_parent_frame_comes_from_the_named_clip(self):
-        rows = {row.plate_id: row for row in RUNNER.load_scope(ROOT)}
+        rows = {row.plate_id: row for row in RUNNER.load_scope(THEN)}
         row = rows["05_heavens_map_c1"]
         with tempfile.TemporaryDirectory() as tmp:
             media = Path(tmp)
@@ -688,13 +690,13 @@ class ExecuteAndProcessTests(unittest.TestCase):
         with tempfile.TemporaryDirectory(prefix="launch spaces ") as tmp:
             root = Path(tmp)
             command = RUNNER.detached_command(
-                SCRIPT, root / "run.log", root / "run.done", repo=ROOT,
+                SCRIPT, root / "run.log", root / "run.done", repo=THEN,
                 media=root, archive=root, other=42, ledger=root / "shared.jsonl",
                 lock=root / "writer.lock", pid=root / "runner.pid")
             self.assertEqual(command[:4], ["tmux", "new", "-d", "-s"])
             args = shlex.split(command[-1])
             self.assertEqual(args[2], "launch-worker")
-            for flag, value in (("--repo", ROOT), ("--media", root),
+            for flag, value in (("--repo", THEN), ("--media", root),
                                 ("--archive", root), ("--other-reservations", 42),
                                 ("--ledger", root / "shared.jsonl"),
                                 ("--lock", root / "writer.lock"),
@@ -711,7 +713,7 @@ class ExecuteAndProcessTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             out = Path(tmp) / "plan.json"
             plan_run = subprocess.run(
-                [sys.executable, str(SCRIPT), "plan", "--repo", str(ROOT), "--out", str(out)],
+                [sys.executable, str(SCRIPT), "plan", "--repo", str(THEN), "--out", str(out)],
                 capture_output=True, text=True, env=env,
             )
             self.assertEqual(plan_run.returncode, 0, plan_run.stderr)
@@ -719,7 +721,7 @@ class ExecuteAndProcessTests(unittest.TestCase):
             self.assertEqual(plan["submissions"], 0)
             self.assertEqual(plan["row_count"], 20)
             submit_run = subprocess.run(
-                [sys.executable, str(SCRIPT), "submit", "--repo", str(ROOT)],
+                [sys.executable, str(SCRIPT), "submit", "--repo", str(THEN)],
                 capture_output=True, text=True, env=env,
             )
             self.assertNotEqual(submit_run.returncode, 0)
@@ -790,7 +792,7 @@ class SafetyRegressionTests(unittest.TestCase):
             self.assertFalse(RUNNER.technical_report(small)["ok"])
 
     def test_failed_or_missing_output_never_advances(self):
-        rows = RUNNER.order_rows(RUNNER.load_scope(ROOT))
+        rows = RUNNER.order_rows(RUNNER.load_scope(THEN))
         entry = {"plate_id": rows[0].plate_id, "part": rows[0].part, "take": 1,
                  "status": "PENDING_REVIEW", "generated": True, "keep": False,
                  "technical": {"ok": False}}
@@ -801,7 +803,7 @@ class SafetyRegressionTests(unittest.TestCase):
         self.assertFalse(RUNNER.verified_output(entry))
 
     def test_verified_parent_selects_later_take_and_rechecks_hash(self):
-        rows = {r.plate_id: r for r in RUNNER.load_scope(ROOT)}
+        rows = {r.plate_id: r for r in RUNNER.load_scope(THEN)}
         row = rows["08_halley_visit_c1"]
         self.assertIsNotNone(row.parent)
         with tempfile.TemporaryDirectory() as tmp:
@@ -836,10 +838,11 @@ class SafetyRegressionTests(unittest.TestCase):
         from unittest.mock import patch
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
-            with patch.dict(os.environ, {RUNNER.SUBMIT_ENV: "1"}):
+            # The production path re-reads the scope from the tool's own repo; these tests stand where the takes were made.
+            with patch.dict(os.environ, {RUNNER.SUBMIT_ENV: "1"}), patch.object(RUNNER, "repo_root_from", return_value=THEN):
                 with self.assertRaisesRegex(RUNNER.GuardError, "verified archive is mandatory"):
                     RUNNER.cmd_submit(
-                        ROOT, other=0, media=root / "media",
+                        THEN, other=0, media=root / "media",
                         ledger_path=root / "ledger.jsonl", lock_path=root / "writer.lock",
                         pid_path=root / "runner.pid", done_path=root / "runner.done",
                         archive_dir=None,
@@ -876,7 +879,7 @@ class SafetyRegressionTests(unittest.TestCase):
                      patch.object(RUNNER, "technical_report",
                                   side_effect=lambda p, **kw: {"ok": True, "sha256": RUNNER.sha256_file(p)}):
                     written = RUNNER.cmd_submit(
-                        ROOT, other=500, media=root / "media",
+                        THEN, other=500, media=root / "media",
                         ledger_path=root / "ledger.jsonl", lock_path=root / "writer.lock",
                         pid_path=root / "runner.pid", done_path=root / "runner.done",
                         archive_dir=archive, accounting_state=root / "shared",
@@ -932,7 +935,7 @@ class SafetyRegressionTests(unittest.TestCase):
                  patch.object(RUNNER, "technical_report",
                               side_effect=lambda p, **kw: {"ok": True, "sha256": RUNNER.sha256_file(p)}):
                 written = RUNNER.cmd_submit(
-                    ROOT, other=0, media=root / "media",
+                    THEN, other=0, media=root / "media",
                     ledger_path=root / "ledger.jsonl", lock_path=root / "writer.lock",
                     pid_path=root / "runner.pid", done_path=root / "runner.done",
                     archive_dir=archive, accounting_state=root / "shared",
@@ -1068,7 +1071,7 @@ class DetachedSafetyTests(unittest.TestCase):
                 "os.environ[m.SUBMIT_ENV]='1'\n"
                 "raise SystemExit(m.main())\n")
             command = RUNNER.detached_command(
-                fake, root / "run.log", root / "run.done", repo=ROOT,
+                fake, root / "run.log", root / "run.done", repo=THEN,
                 media=root, archive=root, other=321, ledger=root / "ledger.jsonl",
                 lock=root / "writer.lock", pid=root / "runner.pid")
             result = subprocess.run(shlex.split(command[-1]), capture_output=True, text=True)
@@ -1117,7 +1120,7 @@ class DetachedSafetyTests(unittest.TestCase):
     def test_invalid_launch_paths_or_reservations_are_refused(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
-            defaults = dict(repo=ROOT, media=root, archive=root, other=0,
+            defaults = dict(repo=THEN, media=root, archive=root, other=0,
                             ledger=root / "ledger", lock=root / "lock", pid=root / "pid")
             for change in ({"other": -1}, {"media": root / "absent"},
                            {"ledger": Path("relative")}, {"lock": root / "pid"}):
@@ -1291,6 +1294,7 @@ class SharedAccountingTests(unittest.TestCase):
 
 
 class FlowPageTests(unittest.TestCase):
+    @unittest.skipUnless(HAS_STUDIO, NEEDS_STUDIO)
     def test_reuses_shared_helper(self):
         class Page:
             def __init__(self, url, closed=False):

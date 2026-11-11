@@ -3,6 +3,9 @@
 Chief rulings on the desk (6792271903, 6792282370, 6792304982, 6792364829, 6792980991, 6792995872): the Moon must stay
 the Moon, and no apple may move upward in a film about gravity. The wording of the four rows changed, so the scope
 file's pinned board hashes changed with it. These tests read files only. They never touch Flow.
+
+"The board as it is" here means the board as it was when the takes were made (tests/hos009_then.py). Shots that
+later became drawn diagrams changed the boards again, and tests/test_hos009_final_boards.py checks those.
 """
 import importlib.util
 import json
@@ -19,6 +22,8 @@ RECORD = ROOT / "jobs/reviews/J2583/PROMPT_CHANGE_2026-11-11.json"
 # tests/test_hos009_third_takes.py checks the later change, and that it starts exactly where this one ended.
 LATER = ROOT / "jobs/reviews/J2626/PROMPT_CHANGE_2026-11-11.json"
 RETAKES = EDIT / "TRANCHE2_RETAKES_J2583.json"
+sys.path.insert(0, str(ROOT))
+from tests.hos009_then import THEN, THEN_EDIT  # noqa: E402  the boards and scope as they were when the takes were made
 CLOSING = "No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit."
 
 # The Chief's wording, word for word from the desk.
@@ -57,7 +62,7 @@ def load_runner():
 
 
 def board(part: int) -> Path:
-    return EDIT / f"parts/part-0{part}_plates_v05.json"
+    return THEN_EDIT / f"parts/part-0{part}_plates_v05.json"
 
 
 def prompts(part: int) -> dict:
@@ -135,10 +140,10 @@ class ThePins(unittest.TestCase):
     def setUp(self):
         self.runner = load_runner()
         self.record = json.loads(RECORD.read_text())
-        self.scope = json.loads((EDIT / "TRANCHE2_SCOPE_J2026.json").read_text())
+        self.scope = json.loads((THEN_EDIT / "TRANCHE2_SCOPE_J2026.json").read_text())
 
     def test_the_tranche_still_loads_with_the_edited_boards(self):
-        rows = self.runner.load_scope(ROOT)
+        rows = self.runner.load_scope(THEN)
         self.assertEqual(len(rows), 20)
         by_id = {r.plate_id: r for r in rows}
         changed_again = {r["id"] for r in later()["rows"]}
@@ -182,7 +187,7 @@ class TheRetakeScope(unittest.TestCase):
     def setUp(self):
         self.runner = load_runner()
         self.retakes = json.loads(RETAKES.read_text())
-        self.scope = json.loads((EDIT / "TRANCHE2_SCOPE_J2026.json").read_text())
+        self.scope = json.loads((THEN_EDIT / "TRANCHE2_SCOPE_J2026.json").read_text())
 
     def test_four_rows_one_take_each_and_400_credits_at_most(self):
         rows = self.retakes["rows"]
@@ -202,7 +207,7 @@ class TheRetakeScope(unittest.TestCase):
             with self.subTest(row=row["id"]):
                 pinned = scope[(row["part"], row["id"])]
                 name = Path(row["board"]).name
-                digest = self.runner.sha256_file(ROOT / row["board"])
+                digest = self.runner.sha256_file(THEN / row["board"])
                 self.assertEqual(row["board"], pinned["board"])
                 self.assertEqual(pinned["board_sha256"], digest)             # the tranche scope pins the board as it is
                 if name in after:

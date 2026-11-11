@@ -1,0 +1,31 @@
+# The repo's own tests (tests/). Nothing ran them before: on 11 Nov 2026 a board change (#533) turned 77 of the
+# picture tools' tests red on main and no check showed it (J2636). They read files and use fakes. They never open a
+# browser, never arm a picture run and never spend.
+name: Tests
+
+on:
+  pull_request:
+    paths-ignore: ["STATUS.md", "05_Analytics/**"]
+  push:
+    branches: [main]
+    paths-ignore: ["STATUS.md", "05_Analytics/**"]
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      # A few tests make a short silent clip to check the tools' own file checks.
+      - name: ffmpeg
+        run: command -v ffmpeg >/dev/null || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
+      # Six tests need the studio's checkout beside this one (its shared tab helper). They are skipped here and run
+      # on the Mini, where it is.
+      - run: python3 -m unittest discover -s tests -p "test_*.py"

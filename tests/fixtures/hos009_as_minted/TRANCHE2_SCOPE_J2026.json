@@ -1,0 +1,228 @@
+{
+  "job": "J2026",
+  "by": "codex",
+  "date": "2026-11-04",
+  "decision": "AUTHORIZE bounded tranche 2 now after J2026 completion; supersedes renewal-only timing and generation_authorized=false ONLY for these 20 v05 rows. Other board content unchanged.",
+  "live_flow_credits": 15430,
+  "live_account": "required HOS Ultra account verified via CDP 9222",
+  "live_price": {
+    "at": "2026-11-04T16:54:01.983188+00:00",
+    "text": "Skip to main content\nhome\nOct 29 - 18:10\nmore_vert\nsearch\nfilter_list\nadd\nhelp\nsettings_2\nmore_vert\nULTRA\ndashboard\nAll media\nimage\nImages\nvideocam\nVideos\naccessibility_new\nCharacters\nmovie\nScenes\ndrive_folder_upload\nUploads\nfolder\nLibrary\nadd\napps_spark_2\nTools\nadd\nCreate tool\ndelete\nBin\nleft_panel_close\nCollapse\nplay_circle\nStart\nswap_horiz\nEnd\nWhat do you want to create?\n\n\n\n\nAgent\nVideo \u00b7 720p \u00b7 8s\ncrop_16_9\nx1\narrow_forward\n\nGoogle Flow can make mistakes, so double-check it\n\nimage\nImage\nvideocam\nVideo\ncrop_free\nFrames\nchrome_extension\nIngredients\ncrop_16_9\n16:9\ncrop_9_16\n9:16\nVeo 3.1 - Quality\narrow_drop_down\n4s\n6s\n8s\nx1\nx2\nx3\nx4\nGenerating will use 100 credits"
+  },
+  "route": "HOS Flow Veo 3.1 - Quality, Frames, 16:9, 720p, 8s, x1; silent output in film",
+  "max_credits_per_take": 100,
+  "max_takes_per_row": 3,
+  "max_total_credits": 6000,
+  "max_batch_rows": 5,
+  "max_batch_credits": 1500,
+  "headroom_floor": 3000,
+  "budget_arithmetic": "15430 - 6000 = 9430; 6430 above required 3000 floor. Historical expected 5180 retained as estimate, not cap.",
+  "commitments": "J0352 HOS007 complete (2890 actual); J1191 HOS008 complete (2320 actual); J1192 tranche1 complete (3170 actual). No running Flow mint process found; no new Flow generation reservation identified in current open/claimed video queue. OWB uses Vertex and has no Flow allocation under this scope. Future HOS008 correction scope is not yet authorized (J1881). Reconcile all writers/pending submissions under lock again before each batch.",
+  "rows": [
+    {
+      "part": 1,
+      "id": "05_heavens_map_c1",
+      "use_s": 4.58,
+      "board": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/parts/part-01_plates_v05.json",
+      "board_sha256": "beb72c067b81ccfab5bf8cc574c06ce4951e8aa08930f7dc2e405c5af68f6cbc",
+      "quality": "Quality",
+      "max_takes": 3
+    },
+    {
+      "part": 1,
+      "id": "07_night_field_c1",
+      "use_s": 4.65,
+      "board": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/parts/part-01_plates_v05.json",
+      "board_sha256": "beb72c067b81ccfab5bf8cc574c06ce4951e8aa08930f7dc2e405c5af68f6cbc",
+      "quality": "Quality",
+      "max_takes": 3
+    },
+    {
+      "part": 2,
+      "id": "01_cambridge_closes_c1",
+      "use_s": 4.19,
+      "board": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/parts/part-02_plates_v05.json",
+      "board_sha256": "0aabf081a6adf7a6921a938bb39fa4e69a5bc64bb562e04a2da0bfc1bb34ad49",
+      "quality": "Quality",
+      "max_takes": 3
+    },
+    {
+      "part": 2,
+      "id": "03_christmas_birth_c1",
+      "use_s": 5.02,
+      "board": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/parts/part-02_plates_v05.json",
+      "board_sha256": "0aabf081a6adf7a6921a938bb39fa4e69a5bc64bb562e04a2da0bfc1bb34ad49",
+      "quality": "Quality",
+      "max_takes": 3
+    },
+    {
+      "part": 2,
+      "id": "05_working_alone_c1",
+      "use_s": 5.16,
+      "board": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/parts/part-02_plates_v05.json",
+      "board_sha256": "0aabf081a6adf7a6921a938bb39fa4e69a5bc64bb562e04a2da0bfc1bb34ad49",
+      "quality": "Quality",
+      "max_takes": 3
+    },
+    {
+      "part": 2,
+      "id": "08_the_apple_c1",
+      "use_s": 4.99,
+      "board": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/parts/part-02_plates_v05.json",
+      "board_sha256": "0aabf081a6adf7a6921a938bb39fa4e69a5bc64bb562e04a2da0bfc1bb34ad49",
+      "quality": "Quality",
+      "max_takes": 3
+    },
+    {
+      "part": 2,
+      "id": "10_how_high",
+      "use_s": 2.58,
+      "board": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/parts/part-02_plates_v05.json",
+      "board_sha256": "0aabf081a6adf7a6921a938bb39fa4e69a5bc64bb562e04a2da0bfc1bb34ad49",
+      "quality": "Quality",
+      "max_takes": 3
+    },
+    {
+      "part": 2,
+      "id": "11_explorer_apple_c1",
+      "use_s": 4.94,
+      "board": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/parts/part-02_plates_v05.json",
+      "board_sha256": "0aabf081a6adf7a6921a938bb39fa4e69a5bc64bb562e04a2da0bfc1bb34ad49",
+      "quality": "Quality",
+      "max_takes": 3
+    },
+    {
+      "part": 3,
+      "id": "01_really_falling_c1",
+      "use_s": 5.26,
+      "board": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/parts/part-03_plates_v05.json",
+      "board_sha256": "36f8f8bb0ebd18006569aa2b10b1df5c01b08b53de90dcd6f706c616ca779899",
+      "quality": "Quality",
+      "max_takes": 3
+    },
+    {
+      "part": 3,
+      "id": "05_shot_orbit_c1",
+      "use_s": 6.42,
+      "board": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/parts/part-03_plates_v05.json",
+      "board_sha256": "36f8f8bb0ebd18006569aa2b10b1df5c01b08b53de90dcd6f706c616ca779899",
+      "quality": "Quality",
+      "max_takes": 3
+    },
+    {
+      "part": 3,
+      "id": "05_shot_orbit_c2",
+      "use_s": 6.42,
+      "board": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/parts/part-03_plates_v05.json",
+      "board_sha256": "36f8f8bb0ebd18006569aa2b10b1df5c01b08b53de90dcd6f706c616ca779899",
+      "quality": "Quality",
+      "max_takes": 3
+    },
+    {
+      "part": 3,
+      "id": "07_ball_to_moon",
+      "use_s": 2.84,
+      "board": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/parts/part-03_plates_v05.json",
+      "board_sha256": "36f8f8bb0ebd18006569aa2b10b1df5c01b08b53de90dcd6f706c616ca779899",
+      "quality": "Quality",
+      "max_takes": 3
+    },
+    {
+      "part": 4,
+      "id": "05_minute_second_c1",
+      "use_s": 6.76,
+      "board": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/parts/part-04_plates_v05.json",
+      "board_sha256": "7eac7c34c8a44edeccb607f9eeda0e1a0855e393f4ab9e131e9e2d370c39a52d",
+      "quality": "Quality",
+      "max_takes": 3
+    },
+    {
+      "part": 4,
+      "id": "05_minute_second_c2",
+      "use_s": 6.75,
+      "board": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/parts/part-04_plates_v05.json",
+      "board_sha256": "7eac7c34c8a44edeccb607f9eeda0e1a0855e393f4ab9e131e9e2d370c39a52d",
+      "quality": "Quality",
+      "max_takes": 3
+    },
+    {
+      "part": 4,
+      "id": "08_halley_visit_c1",
+      "use_s": 5.88,
+      "board": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/parts/part-04_plates_v05.json",
+      "board_sha256": "7eac7c34c8a44edeccb607f9eeda0e1a0855e393f4ab9e131e9e2d370c39a52d",
+      "quality": "Quality",
+      "max_takes": 3
+    },
+    {
+      "part": 4,
+      "id": "08_halley_visit_c2",
+      "use_s": 5.88,
+      "board": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/parts/part-04_plates_v05.json",
+      "board_sha256": "7eac7c34c8a44edeccb607f9eeda0e1a0855e393f4ab9e131e9e2d370c39a52d",
+      "quality": "Quality",
+      "max_takes": 3
+    },
+    {
+      "part": 5,
+      "id": "04_comet_1758_c1",
+      "use_s": 4.49,
+      "board": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/parts/part-05_plates_v05.json",
+      "board_sha256": "3153a646aa83cc2b97208a4267b02909a673a9fef696f4b76e4390b84f26d6b2",
+      "quality": "Quality",
+      "max_takes": 3
+    },
+    {
+      "part": 5,
+      "id": "05_iss_orbit_c1",
+      "use_s": 7.7,
+      "board": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/parts/part-05_plates_v05.json",
+      "board_sha256": "3153a646aa83cc2b97208a4267b02909a673a9fef696f4b76e4390b84f26d6b2",
+      "quality": "Quality",
+      "max_takes": 3
+    },
+    {
+      "part": 5,
+      "id": "05_iss_orbit_c2",
+      "use_s": 7.71,
+      "board": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/parts/part-05_plates_v05.json",
+      "board_sha256": "3153a646aa83cc2b97208a4267b02909a673a9fef696f4b76e4390b84f26d6b2",
+      "quality": "Quality",
+      "max_takes": 3
+    },
+    {
+      "part": 5,
+      "id": "06_iss_apple_c1",
+      "use_s": 4.59,
+      "board": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/parts/part-05_plates_v05.json",
+      "board_sha256": "3153a646aa83cc2b97208a4267b02909a673a9fef696f4b76e4390b84f26d6b2",
+      "quality": "Quality",
+      "max_takes": 3
+    }
+  ],
+  "guards": [
+    "Fresh authenticated balance and exact single-output price before each batch and take; stop on price >100, unknown outstanding charges, wrong model/account, or spend >6000.",
+    "Reserve full remaining tranche cap plus all other approved outstanding commitments; resulting balance must remain >=3000. Count submitting/pending takes at full cost; no retries until resolved.",
+    "Existing Flow/generation writer lock; one output per take; at most five rows / 1500 credits per batch. No paid overage/topup/upgrade/Vertex/Omni/new model.",
+    "Use existing parent start stills and v05 house/prompt/continuation references; free Nano Banana 2 still only after current displayed zero price verified. If charged, stop for revised scope.",
+    "Preserve old media/hashes; version new takes; receipts, local hash and verified copy-only NAS archive per batch; report generated and KEEP separately at least every five minutes.",
+    "No automatic KEEP; technical gates and separate Chief review required. No narration regeneration or publishing."
+  ],
+  "locks": [
+    "P01:03_table_three 0.000-7.000 only",
+    "P04:07_put_aside 0.000-3.760; hard out <=7.042",
+    "P04:10_write_it_down_c1 1.083-6.423; hard in >=1.083"
+  ],
+  "review_notes": [
+    "Existing v05 P05:11_table_three_again reuse says 1.20-7.90; reconcile explicitly against J1237 source lock before assembly, no silent extension.",
+    "Code graphics marked moving_plate_overlay need their named newly generated plates; preserve J0383 alternation and verify final composites.",
+    "No demonstrated worker audio/moving-video perception. Apply current 4 Nov standing order: complete every tool-proven check, Chief evidence ruling, Ben final watch performs actual watch/listen. Never describe measurements/stills as hearing or watching."
+  ],
+  "successors": {
+    "generation": "J2033",
+    "picture_review": "J2034",
+    "assembly": "J2035",
+    "package_qa": "J2036",
+    "watch": "J2037"
+  }
+}
