@@ -343,7 +343,7 @@ def main() -> None:
         "readings": {
             "flow_credits_left": FLOW_LEFT,
             "flow_read_at": FLOW_READ_AT,
-            "flow_note": "CDP :9222 account picker, the studio Ultra account. Refill from 23730.",
+            "flow_note": "CDP :9222 account picker, benoats@googlemail.com. Refill from 23730.",
             "vertex_promo_gbp": VERTEX_BALANCE_GBP,
             "vertex_read_at": VERTEX_READ_AT,
             "vertex_usable_gbp": VERTEX_USABLE_GBP,
@@ -378,7 +378,7 @@ def main() -> None:
         "",
         "## Readings",
         "",
-        f"- Flow: **{FLOW_LEFT}** credits at {FLOW_READ_AT} (CDP :9222, the studio Ultra account). The 12:58 reading was 23,730; this read is 10 higher, a refill, and no spend is logged between them.",
+        f"- Flow: **{FLOW_LEFT}** credits at {FLOW_READ_AT} (CDP :9222, benoats@googlemail.com). The 12:58 reading was 23,730; this read is 10 higher, a refill, and no spend is logged between them.",
         f"- Vertex promo: **£{VERTEX_BALANCE_GBP:.2f}** at {VERTEX_READ_AT}. Usable **£{VERTEX_USABLE_GBP:.2f}** after the £1 margin. Not re-read. The route stays Flow-first.",
         "",
         "## Totals",

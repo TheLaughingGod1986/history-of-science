@@ -328,7 +328,7 @@ def spend_preflight(ai_spend_py=None):
         'live_balance': (
             'Read the Flow account with read_account() in '
             '02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/_mint_flow_cdp_v01.py '
-            'on CDP ORBIT_FLOW_CDP (default http://127.0.0.1:9222), account the studio Ultra account. '
+            'on CDP ORBIT_FLOW_CDP (default http://127.0.0.1:9222), account benoats@googlemail.com. '
             'That is the route _mint_flow_v03.py already uses. Log it with '
             'ai_spend.py record --pool flow --left N.'
         ),

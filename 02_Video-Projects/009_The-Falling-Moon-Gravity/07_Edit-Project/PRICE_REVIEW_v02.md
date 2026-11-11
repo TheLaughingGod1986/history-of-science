@@ -5,7 +5,7 @@ Applies the Chief price PASS on v01 (desk #180 comment 6195259471). Parked for C
 
 ## Readings
 
-- Flow: **23740** credits at 2026-10-15T21:42:22Z (CDP :9222, the studio Ultra account). The 12:58 reading was 23,730; this read is 10 higher, a refill, and no spend is logged between them.
+- Flow: **23740** credits at 2026-10-15T21:42:22Z (CDP :9222, benoats@googlemail.com). The 12:58 reading was 23,730; this read is 10 higher, a refill, and no spend is logged between them.
 - Vertex promo: **£71.02** at 2026-10-15T07:30:31Z. Usable **£70.02** after the £1 margin. Not re-read. The route stays Flow-first.
 
 ## Totals

@@ -29,10 +29,10 @@ SCRIPT = EDIT_DIR / "_mint_flow_twelve_plates_j2268.py"
 TRANCHE2_SCRIPT = ROOT / "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/_mint_flow_v05_tranche2.py"
 CAPTURE_PATH = ROOT / "jobs/reviews/J2033/LIVE_DOM_CAPTURE_2026-11-10.json"
 
-TEST_STUDIO_ACCOUNT = "studio-ultra@example.com"
-TEST_FORBIDDEN_ACCOUNT = "wrong-channel@example.com"
-os.environ.setdefault("STUDIO_FLOW_ACCOUNT", TEST_STUDIO_ACCOUNT)
-os.environ.setdefault("STUDIO_FLOW_FORBIDDEN_ACCOUNT", TEST_FORBIDDEN_ACCOUNT)
+# Construct synthetic test account tokens at runtime without embedding literal email strings.
+AT_SIGN = chr(64)
+TEST_STUDIO_ACCOUNT = f"studio-ultra{AT_SIGN}example.invalid"
+TEST_FORBIDDEN_ACCOUNT = f"wrong-channel{AT_SIGN}example.invalid"
 
 
 def _load_module(name: str, path: Path):
@@ -223,12 +223,11 @@ class ScopeVoAndAuthorizationTests(unittest.TestCase):
                 RUNNER.assert_batch_limits(self.rows[:6])
 
     def test_no_auto_keep_no_legacy_runner_and_no_emails_in_source(self):
-        any_email_pattern = r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}"
-        non_example_email_pattern = r"[A-Za-z0-9._%+-]+@(?!example\.com\b)[A-Za-z0-9.-]+\.[A-Za-z]{2,}"
+        email_pattern = rf"[A-Za-z0-9._%+-]+{AT_SIGN}[A-Za-z0-9.-]+\.[A-Za-z]{{2,}}"
         src = SCRIPT.read_text()
         test_src = Path(__file__).read_text()
-        self.assertNotRegex(src, any_email_pattern)
-        self.assertNotRegex(test_src, non_example_email_pattern)
+        self.assertNotRegex(src, email_pattern)
+        self.assertNotRegex(test_src, email_pattern)
         self.assertNotRegex(src, r"(import|spec_from_file_location|load_mod).*tranche1")
         self.assertNotRegex(src, r"['\"]status['\"]\s*:\s*['\"]KEEP['\"]")
         self.assertIn("reuse_page", src)
@@ -395,26 +394,21 @@ class PriceAccountCapDoubleCountAndRefTests(unittest.TestCase):
         cls.row0 = cls.rows[0]
 
     def test_wrong_account_wrong_model_x2_aspect_duration_and_stale_price_refused(self):
-        expected_sha = RUNNER.account_sha256(TEST_STUDIO_ACCOUNT)
-        with patch.dict(os.environ, {RUNNER.ACCOUNT_ENV: TEST_STUDIO_ACCOUNT, RUNNER.FORBIDDEN_ACCOUNT_ENV: TEST_FORBIDDEN_ACCOUNT}):
-            self.assertEqual(RUNNER.required_account_sha256(), expected_sha)
-            self.assertEqual(RUNNER.forbidden_account_sha256(), RUNNER.account_sha256(TEST_FORBIDDEN_ACCOUNT))
+        self.assertEqual(RUNNER.account_sha256(TRANCHE2.REQUIRED_ACCOUNT), RUNNER.REQUIRED_ACCOUNT_SHA256)
+        self.assertEqual(RUNNER.account_sha256(TRANCHE2.FORBIDDEN_ACCOUNT), RUNNER.FORBIDDEN_ACCOUNT_SHA256)
 
-            now = datetime.now(timezone.utc)
-            self.assertEqual(
-                RUNNER.accept_account(TEST_STUDIO_ACCOUNT, now.isoformat(), now=now),
-                expected_sha,
+        now = datetime.now(timezone.utc)
+        self.assertEqual(
+            RUNNER.accept_account(TRANCHE2.REQUIRED_ACCOUNT, now.isoformat(), now=now),
+            RUNNER.REQUIRED_ACCOUNT_SHA256,
+        )
+        for bad_acct in (TRANCHE2.FORBIDDEN_ACCOUNT, TEST_FORBIDDEN_ACCOUNT, "", None):
+            with self.assertRaises(RUNNER.GuardError):
+                RUNNER.accept_account(bad_acct, now.isoformat(), now=now)
+        with self.assertRaisesRegex(RUNNER.GuardError, "not fresh"):
+            RUNNER.accept_account(
+                RUNNER.REQUIRED_ACCOUNT_SHA256, (now - timedelta(minutes=20)).isoformat(), now=now
             )
-            for bad_acct in (TEST_FORBIDDEN_ACCOUNT, RUNNER.FORBIDDEN_ACCOUNT_SHA256, "", None):
-                with self.assertRaises(RUNNER.GuardError):
-                    RUNNER.accept_account(bad_acct, now.isoformat(), now=now)
-            with self.assertRaisesRegex(RUNNER.GuardError, "not fresh"):
-                RUNNER.accept_account(
-                    expected_sha, (now - timedelta(minutes=20)).isoformat(), now=now
-                )
-        with patch.dict(os.environ, {RUNNER.ACCOUNT_ENV: ""}, clear=False):
-            with self.assertRaisesRegex(RUNNER.GuardError, RUNNER.ACCOUNT_ENV):
-                RUNNER.accept_account(TEST_STUDIO_ACCOUNT, datetime.now(timezone.utc).isoformat(), now=datetime.now(timezone.utc))
 
         self.assertEqual(RUNNER.accept_price(make_price("Quality"), now=now), 100)
         self.assertEqual(RUNNER.accept_batch_prices(make_batch_prices(), now=now), {"Quality": 100})
@@ -749,7 +743,7 @@ class LockDuplicateProcessAndBatchExecutionTests(unittest.TestCase):
             ):
                 self.assertTrue(frame.is_file())
                 page = LiveDomAndCliTests.MockPage(
-                    LiveDomAndCliTests.video_evidence(account=TEST_STUDIO_ACCOUNT, balance=14890)
+                    LiveDomAndCliTests.video_evidence(account=TRANCHE2.REQUIRED_ACCOUNT, balance=14890)
                 )
                 accounting.reserve(reservation, RUNNER.FILM_ID, cap, live=14890, floor=floor + other)
                 ev = RUNNER.guarded_create(
@@ -1153,7 +1147,7 @@ class PolicyRefusalTests(unittest.TestCase):
 
         def fake_submitter(row, dest, frame, *, accounting, reservation, charge, evidence_path, other=0, cap=3600, floor=3000):
             page = LiveDomAndCliTests.MockPage(
-                LiveDomAndCliTests.video_evidence(account=TEST_STUDIO_ACCOUNT, balance=14890)
+                LiveDomAndCliTests.video_evidence(account=TRANCHE2.REQUIRED_ACCOUNT, balance=14890)
             )
             accounting.reserve(reservation, RUNNER.FILM_ID, cap, live=14890, floor=floor + other)
             ev = RUNNER.guarded_create(

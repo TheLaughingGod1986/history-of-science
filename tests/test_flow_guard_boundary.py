@@ -184,9 +184,9 @@ class BoundaryTests(unittest.TestCase):
             page.mouse.click.assert_not_called()
 
     def test_actual_account_guard_rejects_settings_drift_at_helper_boundary(self):
-        from tests.test_hos009_tranche2_runner import RUNNER, TEST_FORBIDDEN_ACCOUNT, LiveCreateAdapterTests
+        from tests.test_hos009_tranche2_runner import RUNNER, LiveCreateAdapterTests
         for field, value in [('outputs', ['x4']), ('prices', ['Generating will use 200 credits']),
-                             ('accounts', [TEST_FORBIDDEN_ACCOUNT]), ('ultra', False)]:
+                             ('accounts', [RUNNER.FORBIDDEN_ACCOUNT]), ('ultra', False)]:
             with self.subTest(field=field), tempfile.TemporaryDirectory() as tmp:
                 root=Path(tmp); env,page,frame,events=self.prepared(root,None)
                 fixture=LiveCreateAdapterTests.Page(LiveCreateAdapterTests().evidence())
@@ -228,7 +228,7 @@ class BoundaryTests(unittest.TestCase):
         import sys
         from types import ModuleType
         from unittest.mock import MagicMock, patch
-        from tests.test_hos009_tranche2_runner import RUNNER, ROOT, TEST_STUDIO_ACCOUNT, LiveCreateAdapterTests
+        from tests.test_hos009_tranche2_runner import RUNNER, ROOT, LiveCreateAdapterTests
         for live, drift in [(10000,False),(8900,False),(10000,True)]:
             with self.subTest(live=live,drift=drift), tempfile.TemporaryDirectory() as tmp:
                 root=Path(tmp); env,page,frame,events=self.prepared(root,None)
@@ -247,7 +247,7 @@ class BoundaryTests(unittest.TestCase):
                 context.__enter__.return_value.chromium.connect_over_cdp.return_value=Mock()
                 fake_api.sync_playwright=lambda: context
                 with RUNNER.SharedFlowAccounting(root/'state') as account, \
-                     patch.dict(os.environ,{RUNNER.SUBMIT_ENV:'1', RUNNER.ACCOUNT_ENV: TEST_STUDIO_ACCOUNT}), \
+                     patch.dict(os.environ,{RUNNER.SUBMIT_ENV:'1'}), \
                      patch.dict(sys.modules,{'orbit_flow_veo_ui':fake_flow,'playwright.sync_api':fake_api}), \
                      patch.object(RUNNER,'open_flow_page',return_value=page):
                     row=RUNNER.order_rows(RUNNER.load_scope(ROOT))[0]

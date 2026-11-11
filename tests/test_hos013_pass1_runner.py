@@ -27,8 +27,6 @@ CAPTURE_PATH = ROOT / "jobs/reviews/J2033/LIVE_DOM_CAPTURE_2026-11-10.json"
 
 TEST_STUDIO_ACCOUNT = "studio-ultra@example.com"
 TEST_FORBIDDEN_ACCOUNT = "wrong-channel@example.com"
-os.environ.setdefault("STUDIO_FLOW_ACCOUNT", TEST_STUDIO_ACCOUNT)
-os.environ.setdefault("STUDIO_FLOW_FORBIDDEN_ACCOUNT", TEST_FORBIDDEN_ACCOUNT)
 
 
 def _load_module(name: str, path: Path):
@@ -72,7 +70,6 @@ def make_price(
 def make_batch_prices(**overrides) -> dict[str, object]:
     out = {
         "Quality": make_price("Quality"),
-        "Fast": make_price("Fast"),
     }
     out.update(overrides)
     return out
@@ -133,31 +130,115 @@ class ScopeOrderAndBatchTests(unittest.TestCase):
     def setUpClass(cls):
         cls.rows = RUNNER.load_scope(ROOT)
 
-    def test_exact_71_rows_48_quality_23_fast_5030_credits(self):
-        self.assertEqual(len(self.rows), 71)
+    def test_exact_66_rows_66_quality_0_fast_6600_credits(self):
+        self.assertEqual(len(self.rows), 66)
         q_rows = [r for r in self.rows if r.quality == "Quality"]
         f_rows = [r for r in self.rows if r.quality == "Fast"]
-        self.assertEqual(len(q_rows), 48)
-        self.assertEqual(len(f_rows), 23)
+        self.assertEqual(len(q_rows), 66)
+        self.assertEqual(len(f_rows), 0)
         self.assertTrue(all(r.flow_model == "Veo 3.1 - Quality" and r.try1_credits == 100 for r in q_rows))
-        self.assertTrue(all(r.flow_model == "Veo 3.1 - Fast" and r.try1_credits == 10 for r in f_rows))
         self.assertTrue(all(r.flow_clip_s == 8 and r.max_takes == 1 for r in self.rows))
-        self.assertEqual(sum(r.try1_credits for r in self.rows), 5030)
+        self.assertEqual(sum(r.try1_credits for r in self.rows), 6600)
         self.assertEqual(sum(1 for r in self.rows if r.explorer), 2)
 
-        # Cross-check against PICTURE_PLAN_v01.json totals and all 6 part boards.
-        plan = json.loads((EDIT / "PICTURE_PLAN_v01.json").read_text())
-        self.assertEqual(plan["totals"]["mint_rows"], 71)
-        self.assertEqual(plan["totals"]["Quality"], 48)
-        self.assertEqual(plan["totals"]["Fast"], 23)
-        self.assertEqual(plan["totals"]["flow_credits_try1"], 5030)
+        # Cross-check against PICTURE_PLAN_v02.json totals and all 6 part boards.
+        plan_path = EDIT / "PICTURE_PLAN_v02.json"
+        plan = json.loads(plan_path.read_text())
+        plan_digest = RUNNER.sha256_file(plan_path)
+        scope_doc = json.loads((EDIT / "PASS1_SCOPE_J2499.json").read_text())
+        mint_plan_doc = json.loads((EDIT / "PASS1_MINT_PLAN_J2499.json").read_text())
+        self.assertEqual(scope_doc["plan_sha256"], plan_digest)
+        self.assertEqual(mint_plan_doc["plan_sha256"], plan_digest)
+        self.assertEqual(plan["totals"]["mint_rows"], 66)
+        self.assertEqual(plan["totals"]["Quality"], 66)
+        self.assertEqual(plan["totals"]["Fast"], 0)
+        self.assertEqual(plan["totals"]["flow_credits_try1"], 6600)
         expected_ids = []
         for p in range(1, 7):
-            board = json.loads((EDIT / "parts" / f"part-0{p}_plates_v01.json").read_text())
+            board = json.loads((EDIT / "parts" / f"part-0{p}_plates_v02.json").read_text())
             for pl in board["plates"]:
+                self.assertNotIn(pl["quality"], ("Fast", "Veo 3.1 - Fast"))
                 if pl["route"] == "flow-first":
                     expected_ids.append(f"P{p}:{pl['id']}")
         self.assertEqual([r.row_id for r in self.rows], expected_ids)
+
+    def test_fast_rows_and_fast_models_are_refused(self):
+        self.assertNotIn("Fast", RUNNER.MODEL_BY_QUALITY)
+        self.assertNotIn("Fast", RUNNER.PRICE_BY_QUALITY)
+        for bad_q in ("Fast", "Veo 3.1 - Fast", "Veo 3.1 Fast"):
+            with self.assertRaisesRegex(RUNNER.GuardError, "Fast is refused"):
+                RUNNER.expected_model_for(bad_q)
+            with self.assertRaisesRegex(RUNNER.GuardError, "Fast is refused"):
+                RUNNER.expected_credits_for(bad_q)
+
+        # Verify FAST_ROW_CHANGE_v02.json documents all 23 former Fast rows (5 free + 18 Quality) with archive sources/licences.
+        change_doc = json.loads((EDIT / "FAST_ROW_CHANGE_v02.json").read_text())
+        self.assertEqual(change_doc["summary"]["fast_rows_in_v01"], 23)
+        self.assertEqual(change_doc["summary"]["fast_rows_in_v02"], 0)
+        self.assertEqual(change_doc["summary"]["fast_swapped_to_free"], 5)
+        self.assertEqual(change_doc["summary"]["fast_swapped_to_archive"], 2)
+        self.assertEqual(change_doc["summary"]["fast_swapped_to_code_graphic"], 3)
+        self.assertEqual(change_doc["summary"]["fast_upgraded_to_quality"], 18)
+        self.assertEqual(len(change_doc["rows"]), 23)
+        by_row = {entry["row_id"]: entry for entry in change_doc["rows"]}
+        self.assertEqual(by_row["P4:07b_packet_to_mailbag"]["new"]["quality"], "code_graphic")
+        self.assertEqual(by_row["P4:07b_packet_to_mailbag"]["new"]["route"], "code-graphic")
+        self.assertIn("Ternate (early 1858)", by_row["P4:07b_packet_to_mailbag"]["new"]["shot_description"])
+        self.assertIn("Down House (arrived 18 June 1858)", by_row["P4:07b_packet_to_mailbag"]["new"]["shot_description"])
+        for entry in change_doc["rows"]:
+            self.assertEqual(entry["old"]["quality"], "Fast")
+            self.assertIn(entry["new"]["quality"], ("Quality", "archive", "code_graphic"))
+            if entry["new"]["quality"] == "archive":
+                arch = entry["new"]["archive_source"]
+                self.assertTrue(arch["local_raw"])
+                self.assertTrue(arch["commons_page"].startswith("https://commons.wikimedia.org/"))
+                self.assertEqual(arch["licence"], "Public domain")
+                self.assertEqual(len(arch["sha256"]), 64)
+
+        # Verify load_scope refuses any Fast row in scope, on a board, in plan totals, or in scope caps.
+        base_scope = json.loads((EDIT / "PASS1_SCOPE_J2499.json").read_text())
+
+        def make_temp_repo(mutator) -> Path:
+            tmp = tempfile.TemporaryDirectory()
+            self.addCleanup(tmp.cleanup)
+            repo = Path(tmp.name)
+            (repo / "AGENTS.md").write_text("# test\n")
+            edit = repo / RUNNER.EDIT_REL
+            edit.mkdir(parents=True)
+            shutil.copy2(EDIT / "PICTURE_PLAN_v02.json", edit / "PICTURE_PLAN_v02.json")
+            (edit / "parts").mkdir()
+            for p in range(1, 7):
+                shutil.copy2(EDIT / "parts" / f"part-0{p}_plates_v02.json", edit / "parts" / f"part-0{p}_plates_v02.json")
+            scope = json.loads(json.dumps(base_scope))
+            mutator(repo, edit, scope)
+            (edit / "PASS1_SCOPE_J2499.json").write_text(json.dumps(scope))
+            return repo
+
+        def mut_scope_row_fast(_r: Path, _e: Path, scope: dict) -> None:
+            scope["rows"][2]["quality"] = "Fast"
+
+        def mut_scope_row_model_fast(_r: Path, _e: Path, scope: dict) -> None:
+            scope["rows"][2]["flow_model"] = "Veo 3.1 - Fast"
+
+        def mut_scope_caps_fast(_r: Path, _e: Path, scope: dict) -> None:
+            scope["caps"]["models"]["Fast"] = "Veo 3.1 - Fast"
+
+        def mut_board_row_fast(_r: Path, edit: Path, scope: dict) -> None:
+            b1_path = edit / "parts/part-01_plates_v02.json"
+            b1 = json.loads(b1_path.read_text())
+            b1["plates"][2]["quality"] = "Fast"
+            b1["plates"][2]["flow_model"] = "Veo 3.1 Fast"
+            b1_path.write_text(json.dumps(b1))
+            new_hash = RUNNER.sha256_file(b1_path)
+            scope["boards"]["1"]["sha256"] = new_hash
+            for r in scope["rows"]:
+                if r["part"] == 1:
+                    r["board_sha256"] = new_hash
+
+        for mut in (mut_scope_row_fast, mut_scope_row_model_fast, mut_scope_caps_fast, mut_board_row_fast):
+            repo = make_temp_repo(mut)
+            with self.assertRaisesRegex(RUNNER.GuardError, "Fast"):
+                RUNNER.load_scope(repo)
 
     def test_order_part01_first_then_parts_02_to_06(self):
         ordered = RUNNER.order_rows(list(reversed(self.rows)))
@@ -168,7 +249,7 @@ class ScopeOrderAndBatchTests(unittest.TestCase):
         self.assertEqual(ordered[-1].row_id, "P6:08b_darwin_mendel_synthesis")
         parts = [r.part for r in ordered]
         self.assertEqual(parts, sorted(parts))
-        self.assertEqual([parts.count(p) for p in range(1, 7)], [12, 12, 15, 13, 11, 8])
+        self.assertEqual([parts.count(p) for p in range(1, 7)], [12, 11, 14, 12, 9, 8])
 
         # Refuses a pass that does not start with Part 01.
         non_p1 = [r for r in self.rows if r.part >= 2]
@@ -177,19 +258,19 @@ class ScopeOrderAndBatchTests(unittest.TestCase):
 
     def test_batches_respect_5_rows_and_1000_credits(self):
         batches = RUNNER.batch_rows(self.rows)
-        self.assertEqual(len(batches), 15)
-        self.assertEqual([len(b) for b in batches], [5] * 14 + [1])
-        self.assertEqual(sum(len(b) for b in batches), 71)
-        self.assertEqual(sum(sum(r.try1_credits for r in b) for b in batches), 5030)
+        self.assertEqual(len(batches), 14)
+        self.assertEqual([len(b) for b in batches], [5] * 13 + [1])
+        self.assertEqual(sum(len(b) for b in batches), 66)
+        self.assertEqual(sum(sum(r.try1_credits for r in b) for b in batches), 6600)
         for batch in batches:
             self.assertLessEqual(len(batch), 5)
             self.assertLessEqual(RUNNER.assert_batch_limits(batch), 1000)
 
-        # 6 Fast rows = 60 credits (<1000) still refused by the 5-row cap.
-        fast_six = [r for r in self.rows if r.quality == "Fast"][:6]
-        self.assertEqual(len(fast_six), 6)
+        # 6 rows = 600 credits (<1000) still refused by the 5-row cap.
+        six_rows = self.rows[:6]
+        self.assertEqual(len(six_rows), 6)
         with self.assertRaisesRegex(RUNNER.GuardError, "MAX_BATCH_ROWS"):
-            RUNNER.assert_batch_limits(fast_six)
+            RUNNER.assert_batch_limits(six_rows)
 
         # Out-of-order batch (Part 02 before Part 01) refused.
         p2_first = [next(r for r in self.rows if r.part == 2), self.rows[0]]
@@ -212,10 +293,10 @@ class ScopeOrderAndBatchTests(unittest.TestCase):
             (repo / "AGENTS.md").write_text("# test\n")
             edit = repo / RUNNER.EDIT_REL
             edit.mkdir(parents=True)
-            shutil.copy2(EDIT / "PICTURE_PLAN_v01.json", edit / "PICTURE_PLAN_v01.json")
+            shutil.copy2(EDIT / "PICTURE_PLAN_v02.json", edit / "PICTURE_PLAN_v02.json")
             (edit / "parts").mkdir()
             for p in range(1, 7):
-                shutil.copy2(EDIT / "parts" / f"part-0{p}_plates_v01.json", edit / "parts" / f"part-0{p}_plates_v01.json")
+                shutil.copy2(EDIT / "parts" / f"part-0{p}_plates_v02.json", edit / "parts" / f"part-0{p}_plates_v02.json")
             scope = json.loads(json.dumps(base_scope))
             mutator(repo, edit, scope)
             (edit / "PASS1_SCOPE_J2499.json").write_text(json.dumps(scope))
@@ -239,7 +320,7 @@ class ScopeOrderAndBatchTests(unittest.TestCase):
 
         # Prompt text edited on disk after scope lock also fails closed (even if board hash were updated).
         def mutate_prompt_on_board(_repo: Path, edit: Path, scope: dict) -> None:
-            b1_path = edit / "parts/part-01_plates_v01.json"
+            b1_path = edit / "parts/part-01_plates_v02.json"
             b1 = json.loads(b1_path.read_text())
             for pl in b1["plates"]:
                 if pl["id"] == "01_study_beaks":
@@ -267,48 +348,47 @@ class PriceAccountStyleAndCapGuardTests(unittest.TestCase):
     def setUpClass(cls):
         cls.rows = RUNNER.load_scope(ROOT)
         cls.q_row = next(r for r in cls.rows if r.quality == "Quality")
-        cls.f_row = next(r for r in cls.rows if r.quality == "Fast")
 
     def test_account_digests_match_studio_ultra_without_storing_emails(self):
-        expected_sha = RUNNER.account_sha256(TEST_STUDIO_ACCOUNT)
-        with patch.dict(os.environ, {RUNNER.ACCOUNT_ENV: TEST_STUDIO_ACCOUNT, RUNNER.FORBIDDEN_ACCOUNT_ENV: TEST_FORBIDDEN_ACCOUNT}):
-            self.assertEqual(RUNNER.required_account_sha256(), expected_sha)
-            self.assertEqual(RUNNER.forbidden_account_sha256(), RUNNER.account_sha256(TEST_FORBIDDEN_ACCOUNT))
-            now = datetime.now(timezone.utc)
-            self.assertEqual(
-                RUNNER.accept_account(TEST_STUDIO_ACCOUNT, now.isoformat(), now=now),
-                expected_sha,
-            )
-            self.assertEqual(
-                RUNNER.accept_account(expected_sha, now.isoformat(), now=now),
-                expected_sha,
-            )
-            for bad in (TEST_FORBIDDEN_ACCOUNT, RUNNER.FORBIDDEN_ACCOUNT_SHA256, "", None):
-                with self.assertRaises(RUNNER.GuardError):
-                    RUNNER.accept_account(bad, now.isoformat(), now=now)
-            stale = (now - timedelta(hours=1)).isoformat()
-            with self.assertRaisesRegex(RUNNER.GuardError, "not fresh"):
-                RUNNER.accept_account(expected_sha, stale, now=now)
-        with patch.dict(os.environ, {RUNNER.ACCOUNT_ENV: ""}, clear=False):
-            with self.assertRaisesRegex(RUNNER.GuardError, RUNNER.ACCOUNT_ENV):
-                RUNNER.accept_account(TEST_STUDIO_ACCOUNT, datetime.now(timezone.utc).isoformat(), now=datetime.now(timezone.utc))
+        self.assertEqual(RUNNER.account_sha256(TRANCHE2.REQUIRED_ACCOUNT), RUNNER.REQUIRED_ACCOUNT_SHA256)
+        self.assertEqual(RUNNER.account_sha256(TRANCHE2.FORBIDDEN_ACCOUNT), RUNNER.FORBIDDEN_ACCOUNT_SHA256)
+        now = datetime.now(timezone.utc)
+        self.assertEqual(
+            RUNNER.accept_account(TRANCHE2.REQUIRED_ACCOUNT, now.isoformat(), now=now),
+            RUNNER.REQUIRED_ACCOUNT_SHA256,
+        )
+        self.assertEqual(
+            RUNNER.accept_account(RUNNER.REQUIRED_ACCOUNT_SHA256, now.isoformat(), now=now),
+            RUNNER.REQUIRED_ACCOUNT_SHA256,
+        )
+        for bad in (TRANCHE2.FORBIDDEN_ACCOUNT, RUNNER.FORBIDDEN_ACCOUNT_SHA256, TEST_FORBIDDEN_ACCOUNT, "", None):
+            with self.assertRaises(RUNNER.GuardError):
+                RUNNER.accept_account(bad, now.isoformat(), now=now)
+        stale = (now - timedelta(hours=1)).isoformat()
+        with self.assertRaisesRegex(RUNNER.GuardError, "not fresh"):
+            RUNNER.accept_account(RUNNER.REQUIRED_ACCOUNT_SHA256, stale, now=now)
 
-    def test_price_guards_for_quality_100_fast_10_and_pre_batch_pair(self):
+    def test_price_guards_for_quality_100_and_fast_refused(self):
         now = datetime.now(timezone.utc)
         self.assertEqual(RUNNER.accept_price(make_price("Quality"), quality="Quality", now=now), 100)
-        self.assertEqual(RUNNER.accept_price(make_price("Fast"), quality="Fast", now=now), 10)
-        self.assertEqual(RUNNER.accept_batch_prices(make_batch_prices(), now=now), {"Quality": 100, "Fast": 10})
+        self.assertEqual(RUNNER.accept_batch_prices(make_batch_prices(), now=now), {"Quality": 100})
 
-        # Mismatched model, credits, duration, aspect, outputs, or missing Fast/Quality fail closed.
+        # Fast price evidence is refused both directly and in pre-batch readings.
+        with self.assertRaisesRegex(RUNNER.GuardError, "Fast is refused"):
+            RUNNER.accept_price(make_price("Fast", model="Veo 3.1 - Fast", credits=10), quality="Fast", now=now)
+        with self.assertRaisesRegex(RUNNER.GuardError, "Fast is refused"):
+            RUNNER.accept_batch_prices(
+                {"Quality": make_price("Quality"), "Fast": make_price("Fast", model="Veo 3.1 - Fast", credits=10)},
+                now=now,
+            )
+
+        # Mismatched model, credits, duration, aspect, outputs, or missing Quality fail closed.
         bad_cases = [
             ("Quality", make_price("Quality", credits=101, line="Generating will use 101 credits")),
             ("Quality", make_price("Quality", model="Veo 3.1 - Fast")),
-            ("Fast", make_price("Fast", credits=20, line="Generating will use 20 credits")),
-            ("Fast", make_price("Fast", model="Veo 3.1 - Quality")),
             ("Quality", make_price("Quality", duration="4s")),
-            ("Fast", make_price("Fast", duration="5s")),
             ("Quality", make_price("Quality", aspect="9:16")),
-            ("Fast", make_price("Fast", outputs="x2")),
+            ("Quality", make_price("Quality", outputs="x2")),
             ("Quality", make_price("Quality", read_at=(now - timedelta(minutes=30)).isoformat())),
         ]
         for q, ev in bad_cases:
@@ -316,32 +396,23 @@ class PriceAccountStyleAndCapGuardTests(unittest.TestCase):
                 with self.assertRaises(RUNNER.GuardError):
                     RUNNER.accept_price(ev, quality=q, now=now)
 
-        with self.assertRaisesRegex(RUNNER.GuardError, "missing pre-batch live price reading for Fast"):
-            RUNNER.accept_batch_prices({"Quality": make_price("Quality")}, now=now)
         with self.assertRaisesRegex(RUNNER.GuardError, "missing pre-batch live price reading for Quality"):
-            RUNNER.accept_batch_prices({"Fast": make_price("Fast")}, now=now)
+            RUNNER.accept_batch_prices({}, now=now)
 
-    def test_headroom_reservations_5030_cap_and_single_take_per_row(self):
-        # Recorded balance 14,890 with HOS 009 J2033 reserving 6,000 leaves 3,860 after 013's 5,030 cap.
-        self.assertEqual(RUNNER.headroom(14890, 0, 0, 6000), 3860)
+    def test_headroom_reservations_6600_cap_and_single_take_per_row(self):
+        # Recorded balance 14,890 with HOS 009 J2033 reserving 6,000 leaves 2,290 after 013's 6,600 cap.
+        self.assertEqual(RUNNER.headroom(14890, 0, 0, 6000), 2290)
         self.assertEqual(
             RUNNER.can_take(
                 row=self.q_row, live=14890, spent=0, pending=0, other=6000,
                 takes_done=0, unknown_pending=False, cost=100,
             ),
-            3860,
+            2290,
         )
-        self.assertEqual(
-            RUNNER.can_take(
-                row=self.f_row, live=14890, spent=0, pending=0, other=6000,
-                takes_done=0, unknown_pending=False, cost=10,
-            ),
-            3860,
-        )
-        # Boundary: 6,000 + 5,030 = 11,030 minimum live balance required.
-        self.assertEqual(RUNNER.headroom(11030, 0, 0, 6000), 0)
+        # Boundary: 6,000 + 6,600 = 12,600 minimum live balance required.
+        self.assertEqual(RUNNER.headroom(12600, 0, 0, 6000), 0)
         with self.assertRaises(RUNNER.GuardError):
-            RUNNER.headroom(11029, 0, 0, 6000)
+            RUNNER.headroom(12599, 0, 0, 6000)
 
         # Refuse 2nd take on any row in pass 1.
         with self.assertRaisesRegex(RUNNER.GuardError, "pass-1 cap is 1"):
@@ -349,22 +420,17 @@ class PriceAccountStyleAndCapGuardTests(unittest.TestCase):
                 row=self.q_row, live=14890, spent=100, pending=0, other=0,
                 takes_done=1, unknown_pending=False, cost=100,
             )
-        # Refuse wrong cost for row quality (10 on Quality or 100 on Fast).
+        # Refuse wrong cost for row quality (10 on Quality).
         with self.assertRaises(RUNNER.GuardError):
             RUNNER.can_take(
                 row=self.q_row, live=14890, spent=0, pending=0, other=0,
                 takes_done=0, unknown_pending=False, cost=10,
             )
+        # Refuse exceeding 6,600 total cap.
         with self.assertRaises(RUNNER.GuardError):
             RUNNER.can_take(
-                row=self.f_row, live=14890, spent=0, pending=0, other=0,
+                row=self.q_row, live=14890, spent=6550, pending=0, other=0,
                 takes_done=0, unknown_pending=False, cost=100,
-            )
-        # Refuse exceeding 5,030 total cap.
-        with self.assertRaises(RUNNER.GuardError):
-            RUNNER.can_take(
-                row=self.f_row, live=14890, spent=5025, pending=0, other=0,
-                takes_done=0, unknown_pending=False, cost=10,
             )
         # Refuse unknown pending charge.
         with self.assertRaises(RUNNER.GuardError):
@@ -426,7 +492,7 @@ class PriceAccountStyleAndCapGuardTests(unittest.TestCase):
             populate_media_style_refs(media)
             fake_repo = root / "repo"
             (fake_repo / RUNNER.EDIT_REL).mkdir(parents=True)
-            shutil.copy2(EDIT / "PICTURE_PLAN_v01.json", fake_repo / RUNNER.EDIT_REL / "PICTURE_PLAN_v01.json")
+            shutil.copy2(EDIT / "PICTURE_PLAN_v02.json", fake_repo / RUNNER.EDIT_REL / "PICTURE_PLAN_v02.json")
             with self.assertRaisesRegex(RUNNER.GuardError, "missing Explorer style reference"):
                 RUNNER.verify_style_references(fake_repo, media, self.rows, check_scope_hashes=False)
 
@@ -442,28 +508,28 @@ class SharedAccountingLockAndDuplicateProcessTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             state = Path(tmp)
             with RUNNER.SharedFlowAccounting(state) as account:
-                # HOS 009 holds 6,000; HOS 013 reserves 5,030 -> total liability 11,030.
+                # HOS 009 holds 6,000; HOS 013 reserves 6,600 -> total liability 12,600.
                 account.reserve("J2033", "HOS:009", 6000, live=14890)
                 with self.assertRaises(RUNNER.GuardError):
-                    account.reserve("HOS013_PASS1", "HOS:013", 5030, live=11029)
-                account.reserve("HOS013_PASS1", "HOS:013", 5030, live=14890)
-                account.reserve("HOS013_PASS1", "HOS:013", 5030, live=14890)  # idempotent
-                self.assertEqual(account.snapshot()["liability"], 11030)
+                    account.reserve("HOS013_PASS1", "HOS:013", 6600, live=12599)
+                account.reserve("HOS013_PASS1", "HOS:013", 6600, live=14890)
+                account.reserve("HOS013_PASS1", "HOS:013", 6600, live=14890)  # idempotent
+                self.assertEqual(account.snapshot()["liability"], 12600)
 
                 # Pending charge blocks retry and cross-channel reserve/intent.
                 account.intent("HOS:013:P01:01_study_beaks:t1", "HOS013_PASS1", 100, live=14890)
                 self.assertTrue(account.snapshot()["pending"])
                 with self.assertRaises(RUNNER.GuardError):
-                    account.intent("HOS:013:P01:02_drawer_lock:t1", "HOS013_PASS1", 10, live=14890)
+                    account.intent("HOS:013:P01:02_drawer_lock:t1", "HOS013_PASS1", 100, live=14890)
                 with self.assertRaises(RUNNER.GuardError):
                     account.reserve("OWB-032", "OWB:032", 100, live=20000)
 
                 # Resolve submitted -> unposted charge stays in liability until explicit posted evidence.
                 account.resolve("HOS:013:P01:01_study_beaks:t1", submitted=True, evidence={"ui": {"balances": [14890]}})
                 self.assertFalse(account.snapshot()["pending"])
-                self.assertEqual(account.snapshot()["liability"], 11030)
+                self.assertEqual(account.snapshot()["liability"], 12600)
                 account.reconcile_posted("HOS:013:P01:01_study_beaks:t1", evidence={"before": 14890, "after": 14790, "delta": 100})
-                self.assertEqual(account.snapshot()["liability"], 10930)
+                self.assertEqual(account.snapshot()["liability"], 12500)
 
     def test_writer_lock_and_two_process_accounting_competition(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -487,7 +553,7 @@ class SharedAccountingLockAndDuplicateProcessTests(unittest.TestCase):
                 )
                 self.assertEqual(probe.returncode, 0, probe.stderr)
 
-            # Two processes competing for the last 5,030 credits: exactly one wins.
+            # Two processes competing for the last 6,600 credits: exactly one wins.
             state = root / "shared"
             code = (
                 "import importlib.util,sys,time\n"
@@ -497,7 +563,7 @@ class SharedAccountingLockAndDuplicateProcessTests(unittest.TestCase):
                 f"state=Path({str(state)!r})\n"
                 "try:\n"
                 " with m.SharedFlowAccounting(state) as a:\n"
-                "  a.reserve(sys.argv[1],sys.argv[2],5030,live=6000)\n"
+                "  a.reserve(sys.argv[1],sys.argv[2],6600,live=7000)\n"
                 "  time.sleep(0.15)\n"
                 "except m.GuardError:\n"
                 " raise SystemExit(75)\n"
@@ -570,9 +636,9 @@ class BatchExecutionArchiveAndReceiptTests(unittest.TestCase):
         cls.rows = RUNNER.load_scope(ROOT)
         cls.batch1 = RUNNER.batch_rows(cls.rows)[0]
 
-    def test_mixed_quality_and_fast_batch_saves_generated_pending_review_and_nas_sha256(self):
-        # Batch 1 has 3 Quality (300) + 2 Fast (20) = 5 rows, 320 credits.
-        self.assertEqual([r.quality for r in self.batch1], ["Quality", "Quality", "Fast", "Quality", "Fast"])
+    def test_quality_batch_saves_generated_pending_review_and_nas_sha256(self):
+        # Batch 1 has 5 Quality (500) = 5 rows, 500 credits (0 Fast).
+        self.assertEqual([r.quality for r in self.batch1], ["Quality"] * 5)
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
             media = root / "media"
@@ -601,7 +667,7 @@ class BatchExecutionArchiveAndReceiptTests(unittest.TestCase):
             def fake_submitter(row, dest, frame, *, accounting, reservation, charge, evidence_path, other=0, floor=0):
                 self.assertTrue(frame.is_file())
                 page = LiveDomAndTrustedClickTests.MockPage(
-                    LiveDomAndTrustedClickTests.video_evidence(quality=row.quality, account=TEST_STUDIO_ACCOUNT, balance=14890)
+                    LiveDomAndTrustedClickTests.video_evidence(quality=row.quality, account=TRANCHE2.REQUIRED_ACCOUNT, balance=14890)
                 )
                 accounting.reserve(reservation, RUNNER.FILM_ID, RUNNER.MAX_TOTAL_CREDITS, live=14890, floor=floor + other)
                 ev = RUNNER.guarded_create(
@@ -637,7 +703,7 @@ class BatchExecutionArchiveAndReceiptTests(unittest.TestCase):
             self.assertEqual(price_reads["count"], 1)
             self.assertEqual(len(written), 5)
             self.assertEqual(stills_called, [r.row_id for r in self.batch1])
-            self.assertEqual([e["credits_used"] for e in written], [100, 100, 10, 100, 10])
+            self.assertEqual([e["credits_used"] for e in written], [100] * 5)
             for entry in written:
                 self.assertEqual(entry["status"], "PENDING_REVIEW")
                 self.assertEqual(entry["file_state"], "GENERATED")
@@ -647,7 +713,7 @@ class BatchExecutionArchiveAndReceiptTests(unittest.TestCase):
                 self.assertTrue(RUNNER.verified_output(entry))
                 # No personal email leaked into persisted create_evidence.
                 self.assertNotIn("accounts", entry["create_evidence"]["ui"])
-                self.assertEqual(entry["create_evidence"]["ui"]["account_sha256"], RUNNER.account_sha256(TEST_STUDIO_ACCOUNT))
+                self.assertEqual(entry["create_evidence"]["ui"]["account_sha256"], RUNNER.REQUIRED_ACCOUNT_SHA256)
 
             # Archive holds 5 mp4s, 5 sha256 sidecars, 5 per-take receipts, and 1 batch receipt.
             archived_mp4s = sorted(archive.glob("*.mp4"))
@@ -660,13 +726,13 @@ class BatchExecutionArchiveAndReceiptTests(unittest.TestCase):
                 self.assertEqual(receipt["file_state"], "GENERATED")
                 self.assertEqual(receipt["review"], "PENDING_REVIEW")
 
-            # Shared accounting recorded 320 credits across 5 takes (3*100 + 2*10) and exported ai_spend.
+            # Shared accounting recorded 500 credits across 5 takes (5*100) and exported ai_spend.
             snap = RUNNER.SharedFlowAccounting.peek_readonly(root / "shared")
-            self.assertEqual(sum(c["amount"] for c in snap["charges"].values()), 320)
+            self.assertEqual(sum(c["amount"] for c in snap["charges"].values()), 500)
             spend_rows = [json.loads(line) for line in (root / "ai_spend.jsonl").read_text().splitlines()]
             self.assertEqual(
                 [r["amount"] for r in spend_rows if r["kind"] == "spend"],
-                [100, 100, 10, 100, 10],
+                [100] * 5,
             )
 
             # Next batch advances cleanly to Batch 2 without repeating Batch 1 rows.
@@ -683,8 +749,8 @@ class BatchExecutionArchiveAndReceiptTests(unittest.TestCase):
             populate_media_style_refs(media)
             submits = []
 
-            # Bad Fast price (20 instead of 10) stops batch before still_maker or submitter.
-            with self.assertRaisesRegex(RUNNER.GuardError, "price 20 is not 10"):
+            # Bad Quality price (101 instead of 100) or any Fast price stops batch before still_maker or submitter.
+            with self.assertRaisesRegex(RUNNER.GuardError, "price 101 is not 100"):
                 RUNNER.execute_shared_batch(
                     self.batch1[:2],
                     repo=ROOT,
@@ -693,7 +759,22 @@ class BatchExecutionArchiveAndReceiptTests(unittest.TestCase):
                     archive_dir=archive,
                     accounting_state=root / "shared",
                     batch_price_reader=lambda: make_batch_prices(
-                        Fast=make_price("Fast", credits=20, line="Generating will use 20 credits")
+                        Quality=make_price("Quality", credits=101, line="Generating will use 101 credits")
+                    ),
+                    submitter=lambda *a, **k: submits.append(1),
+                    test_archive=True,
+                    inventory_rows=self.rows,
+                )
+            with self.assertRaisesRegex(RUNNER.GuardError, "Fast is refused"):
+                RUNNER.execute_shared_batch(
+                    self.batch1[:2],
+                    repo=ROOT,
+                    media=media,
+                    ledger_path=root / "ledger.jsonl",
+                    archive_dir=archive,
+                    accounting_state=root / "shared",
+                    batch_price_reader=lambda: make_batch_prices(
+                        Fast=make_price("Fast", model="Veo 3.1 - Fast", credits=10, line="Generating will use 10 credits")
                     ),
                     submitter=lambda *a, **k: submits.append(1),
                     test_archive=True,
@@ -732,15 +813,15 @@ class BatchExecutionArchiveAndReceiptTests(unittest.TestCase):
                 with self.assertRaises(RUNNER.GuardError):
                     RUNNER.require_archive(candidate, nas=True)
 
-            # Out-of-scope row is rejected even in test_archive mode.
+            # Out-of-scope or Fast row is rejected before any submission.
             fake_row = RUNNER.Row(
                 index=999, row_id="P1:99_out_of_scope", part=1, plate_id="99_out_of_scope",
-                board="x", quality="Fast", flow_model="Veo 3.1 - Fast", max_takes=1,
-                try1_credits=10, flow_clip_s=8, t_s=999.0, t_end_s=1003.0, use_s=4.0,
+                board="x", quality="Quality", flow_model="Veo 3.1 - Quality", max_takes=1,
+                try1_credits=100, flow_clip_s=8, t_s=999.0, t_end_s=1003.0, use_s=4.0,
                 explorer=False, prompt="x", prompt_sha256="0" * 64, normalized_prompt_sha256="0" * 64,
             )
             (root / "archive").mkdir()
-            with self.assertRaisesRegex(RUNNER.GuardError, "outside the locked 71-row scope"):
+            with self.assertRaisesRegex(RUNNER.GuardError, "outside the locked 66-row scope"):
                 RUNNER.execute_shared_batch(
                     [fake_row],
                     repo=ROOT,
@@ -755,9 +836,12 @@ class BatchExecutionArchiveAndReceiptTests(unittest.TestCase):
 
 class LiveDomAndTrustedClickTests(unittest.TestCase):
     @staticmethod
-    def video_evidence(*, quality: str = "Quality", account: str = TEST_STUDIO_ACCOUNT, balance: int = 14890) -> dict:
-        model = RUNNER.expected_model_for(quality)
-        cost = RUNNER.expected_credits_for(quality)
+    def video_evidence(*, quality: str = "Quality", account: str = TEST_STUDIO_ACCOUNT, balance: int = 14890,
+                       model: str | None = None, cost: int | None = None) -> dict:
+        if model is None:
+            model = "Veo 3.1 - Fast" if quality == "Fast" else RUNNER.expected_model_for(quality)
+        if cost is None:
+            cost = 10 if quality == "Fast" else RUNNER.expected_credits_for(quality)
         return dict(
             host=RUNNER.FLOW_HOST,
             models=[model],
@@ -813,18 +897,24 @@ class LiveDomAndTrustedClickTests(unittest.TestCase):
                 return dict(ready=False, reason="live UI changed", evidence=self.evidence)
             return dict(ready=True, target=dict(x=1000.0, y=844.0), evidence=self.evidence)
 
-    def test_guarded_create_validates_quality_and_fast_rows_and_rejects_cross_model_drift(self):
+    def test_guarded_create_validates_quality_rows_and_refuses_fast_row_or_fast_ui(self):
         rows = RUNNER.load_scope(ROOT)
         q_row = next(r for r in rows if r.quality == "Quality")
-        f_row = next(r for r in rows if r.quality == "Fast")
+        synthetic_fast_row = RUNNER.Row(
+            index=99, row_id="P1:99_fast_refused", part=1, plate_id="99_fast_refused",
+            board=q_row.board, quality="Fast", flow_model="Veo 3.1 - Fast", max_takes=1,
+            try1_credits=10, flow_clip_s=8, t_s=1.0, t_end_s=5.0, use_s=4.0,
+            explorer=False, prompt=q_row.prompt, prompt_sha256=q_row.prompt_sha256,
+            normalized_prompt_sha256=q_row.normalized_prompt_sha256,
+        )
 
         with patch.object(RUNNER, "REQUIRED_ACCOUNT_SHA256", RUNNER.account_sha256(TEST_STUDIO_ACCOUNT)), \
              patch.object(RUNNER, "FORBIDDEN_ACCOUNT_SHA256", RUNNER.account_sha256(TEST_FORBIDDEN_ACCOUNT)):
-            # Quality row rejects Fast UI; Fast row rejects Quality UI.
+            # Quality row rejects Fast UI; synthetic Fast row is refused immediately before reading DOM.
             with tempfile.TemporaryDirectory() as tmp:
                 state = Path(tmp)
                 with RUNNER.SharedFlowAccounting(state) as account:
-                    account.reserve("HOS013_PASS1", "HOS:013", 5030, live=14890)
+                    account.reserve("HOS013_PASS1", "HOS:013", 6600, live=14890)
                     fast_page = self.MockPage(self.video_evidence(quality="Fast"))
                     with self.assertRaises(RUNNER.GuardError):
                         RUNNER.guarded_create(
@@ -834,39 +924,33 @@ class LiveDomAndTrustedClickTests(unittest.TestCase):
                     self.assertEqual(fast_page.clicks, 0)
 
                     qual_page = self.MockPage(self.video_evidence(quality="Quality"))
-                    with self.assertRaises(RUNNER.GuardError):
+                    with self.assertRaisesRegex(RUNNER.GuardError, "Fast is refused"):
                         RUNNER.guarded_create(
-                            qual_page, account, row=f_row, reservation="HOS013_PASS1",
+                            qual_page, account, row=synthetic_fast_row, reservation="HOS013_PASS1",
                             charge="f-on-qual", evidence_path=state / "f_bad.json",
                         )
                     self.assertEqual(qual_page.clicks, 0)
                     self.assertFalse(account.snapshot()["charges"])
 
-                    # Matching Quality (100) and Fast (10) rows succeed via trusted mouse.click.
+                    # Matching Quality (100) row succeeds via trusted mouse.click.
                     RUNNER.guarded_create(
                         qual_page, account, row=q_row, reservation="HOS013_PASS1",
                         charge="q-ok", evidence_path=state / "q_ok.json",
                     )
-                    RUNNER.guarded_create(
-                        fast_page, account, row=f_row, reservation="HOS013_PASS1",
-                        charge="f-ok", evidence_path=state / "f_ok.json",
-                    )
                     self.assertEqual(qual_page.clicks, 1)
-                    self.assertEqual(fast_page.clicks, 1)
                     charges = account.snapshot()["charges"]
                     self.assertEqual(charges["q-ok"]["amount"], 100)
-                    self.assertEqual(charges["f-ok"]["amount"], 10)
 
             # UI drift right before click resolves NOT_SUBMITTED without clicking.
             with tempfile.TemporaryDirectory() as tmp:
                 state = Path(tmp)
                 with RUNNER.SharedFlowAccounting(state) as account:
-                    account.reserve("HOS013_PASS1", "HOS:013", 5030, live=14890)
-                    page = self.MockPage(self.video_evidence(quality="Fast"))
+                    account.reserve("HOS013_PASS1", "HOS:013", 6600, live=14890)
+                    page = self.MockPage(self.video_evidence(quality="Quality"))
                     page.before_click = lambda: page.evidence.update(durations=["4s"])
                     with self.assertRaisesRegex(RUNNER.GuardError, "live UI drift"):
                         RUNNER.guarded_create(
-                            page, account, row=f_row, reservation="HOS013_PASS1",
+                            page, account, row=q_row, reservation="HOS013_PASS1",
                             charge="drift", evidence_path=state / "drift.json",
                         )
                     self.assertEqual(page.clicks, 0)
@@ -876,7 +960,7 @@ class LiveDomAndTrustedClickTests(unittest.TestCase):
             with tempfile.TemporaryDirectory() as tmp:
                 state = Path(tmp)
                 with RUNNER.SharedFlowAccounting(state) as account:
-                    account.reserve("HOS013_PASS1", "HOS:013", 5030, live=14890)
+                    account.reserve("HOS013_PASS1", "HOS:013", 6600, live=14890)
                     page = self.MockPage(
                         self.video_evidence(quality="Quality"),
                         on_mouse_click=lambda *_: (_ for _ in ()).throw(ConnectionError("cdp dropped")),
@@ -889,7 +973,7 @@ class LiveDomAndTrustedClickTests(unittest.TestCase):
                 with RUNNER.SharedFlowAccounting(state) as account:
                     self.assertTrue(account.snapshot()["pending"])
 
-    def test_read_live_batch_prices_on_page_reads_both_100_and_10_without_clicking_create(self):
+    def test_read_live_batch_prices_on_page_reads_quality_100_without_clicking_create(self):
         with patch.object(RUNNER, "REQUIRED_ACCOUNT_SHA256", RUNNER.account_sha256(TEST_STUDIO_ACCOUNT)):
             configured_models: list[str] = []
 
@@ -935,9 +1019,9 @@ class LiveDomAndTrustedClickTests(unittest.TestCase):
                 p.current_model = model
 
             prices = RUNNER.read_live_batch_prices_on_page(page, configure_model=configure)
-            self.assertEqual(configured_models, ["Veo 3.1 - Quality", "Veo 3.1 - Fast"])
+            self.assertEqual(configured_models, ["Veo 3.1 - Quality"])
             self.assertEqual(prices["Quality"].credits, 100)
-            self.assertEqual(prices["Fast"].credits, 10)
+            self.assertNotIn("Fast", prices)
             self.assertEqual(page.clicks, 0)
 
     def test_create_button_labels_match_the_009_runner_on_both_paths(self):
@@ -1030,7 +1114,7 @@ process.stdout.write(JSON.stringify({ ev, out, domClicks }));
                 14890,
             )
 
-            # 2. Video Quality (100) and Fast (10) on 10 Nov DOM
+            # 2. Video Quality (100) accepted and Fast (10) refused on 10 Nov DOM
             base_video = capture["video_mode_veo31_quality_settings_open"]
             for quality, model_text, price_line in (
                 ("Quality", "Veo 3.1 - Quality\narrow_drop_down", "Generating will use 100 credits"),
@@ -1063,14 +1147,21 @@ process.stdout.write(JSON.stringify({ ev, out, domClicks }));
                 self.assertEqual(vid_data["domClicks"], 0)
                 self.assertTrue(vid_data["out"]["ready"])
                 self.assertEqual(vid_data["out"]["target"], {"x": 1000, "y": 844})
-                validated = RUNNER.read_live_evidence(
-                    type("P", (), {"evaluate": lambda _s, _j, _a=None, d=vid_data["ev"]: d})(),
-                    quality=quality,
-                    balance=14890,
-                )
-                self.assertEqual(validated["models"], [RUNNER.expected_model_for(quality)])
-                self.assertEqual(validated["prices"], [price_line])
-                self.assertNotIn("accounts", validated)
+                page_obj = type("P", (), {"evaluate": lambda _s, _j, _a=None, d=vid_data["ev"]: d})()
+                if quality == "Quality":
+                    validated = RUNNER.read_live_evidence(
+                        page_obj,
+                        quality="Quality",
+                        balance=14890,
+                    )
+                    self.assertEqual(validated["models"], ["Veo 3.1 - Quality"])
+                    self.assertEqual(validated["prices"], [price_line])
+                    self.assertNotIn("accounts", validated)
+                else:
+                    with self.assertRaisesRegex(RUNNER.GuardError, "Fast is refused"):
+                        RUNNER.read_live_evidence(page_obj, quality="Fast", balance=14890)
+                    with self.assertRaises(RUNNER.GuardError):
+                        RUNNER.read_live_evidence(page_obj, quality="Quality", balance=14890)
 
             # 3. Still Nano Banana 2.1 @ 0 credits on 10 Nov DOM
             still_state = capture["still_mode_settings_open"]
@@ -1113,9 +1204,9 @@ process.stdout.write(JSON.stringify({ ev, out, domClicks }));
             )
             self.assertEqual(proc_plan.returncode, 0, proc_plan.stderr)
             plan = json.loads(plan_out.read_text())
-            self.assertEqual(plan["row_count"], 71)
-            self.assertEqual(plan["quality_count"], 48)
-            self.assertEqual(plan["fast_count"], 23)
+            self.assertEqual(plan["row_count"], 66)
+            self.assertEqual(plan["quality_count"], 66)
+            self.assertEqual(plan["fast_count"], 0)
             self.assertEqual(plan["submissions"], 0)
             self.assertEqual(plan["create_clicks"], 0)
             self.assertIs(plan["keep"], False)
@@ -1146,7 +1237,6 @@ process.stdout.write(JSON.stringify({ ev, out, domClicks }));
 
         rows = RUNNER.load_scope(ROOT)
         q_row = next(r for r in rows if r.quality == "Quality")
-        f_row = next(r for r in rows if r.quality == "Fast")
 
         env = os.environ.copy()
         env.pop(RUNNER.SUBMIT_ENV, None)
@@ -1166,7 +1256,7 @@ process.stdout.write(JSON.stringify({ ev, out, domClicks }));
 
         # Armed live_video_submit exercises create_guard, trusted click, and post-take balance delta check.
         with patch.object(RUNNER, "REQUIRED_ACCOUNT_SHA256", RUNNER.account_sha256(TEST_STUDIO_ACCOUNT)):
-            for row, drop, should_pass in ((q_row, 100, True), (f_row, 10, True), (f_row, 100, False)):
+            for row, drop, should_pass in ((q_row, 100, True), (q_row, 200, False)):
                 with self.subTest(row=row.row_id, drop=drop), tempfile.TemporaryDirectory() as tmp:
                     root = Path(tmp)
                     frame = make_png(root / "frame.png")
@@ -1207,7 +1297,7 @@ process.stdout.write(JSON.stringify({ ev, out, domClicks }));
                             self.assertEqual(ev["charge"], "chg")
                             self.assertTrue(acc.snapshot()["charges"]["chg"]["posted"])
                         else:
-                            with self.assertRaisesRegex(RUNNER.GuardError, "dropped by 100"):
+                            with self.assertRaisesRegex(RUNNER.GuardError, "dropped by 200"):
                                 RUNNER.live_video_submit(
                                     row, out_mp4, frame, accounting=acc,
                                     reservation="HOS013_PASS1", charge="chg",
@@ -1359,7 +1449,7 @@ class PolicyRefusalTests(unittest.TestCase):
             def fake_submitter(row, dest, frame, *, accounting, reservation, charge, evidence_path, other=0, floor=0):
                 charges.append(charge)
                 page = LiveDomAndTrustedClickTests.MockPage(
-                    LiveDomAndTrustedClickTests.video_evidence(quality=row.quality, account=TEST_STUDIO_ACCOUNT, balance=14890))
+                    LiveDomAndTrustedClickTests.video_evidence(quality=row.quality, account=TRANCHE2.REQUIRED_ACCOUNT, balance=14890))
                 accounting.reserve(reservation, RUNNER.FILM_ID, RUNNER.MAX_TOTAL_CREDITS, live=14890, floor=floor + other)
                 ev = RUNNER.guarded_create(page, accounting, row=row, reservation=reservation, charge=charge,
                                            evidence_path=evidence_path, floor=floor + other)
@@ -1434,7 +1524,8 @@ class NoNameWordingTests(unittest.TestCase):
     def test_the_record_matches_the_boards_and_only_those_rows_changed(self):
         prompts = {row.row_id: row.prompt for row in self.rows}
         self.assertEqual(len(self.record["rows"]), self.record["rows_changed"])
-        self.assertEqual(self.record["rows_total"], RUNNER.EXPECTED_ROW_COUNT)
+        self.assertEqual(self.record["rows_total"], 71)
+        self.assertEqual(len(self.rows), RUNNER.EXPECTED_ROW_COUNT)
         for change in self.record["rows"]:
             with self.subTest(row=change["row_id"]):
                 self.assertEqual(prompts[change["row_id"]], self.current[change["row_id"]])
@@ -1476,12 +1567,13 @@ class NoNameWordingTests(unittest.TestCase):
     def test_the_builder_holds_the_same_wording(self):
         # The boards are written by the builder. If it kept the old wording, the next rebuild would
         # bring the names back (and the scope would refuse the boards).
-        source = (EDIT / "_build_picture_plan_v01.py").read_text()
-        for record in [self.record] + self.later:
-            for change in record["rows"]:
-                with self.subTest(row=change["row_id"]):
-                    self.assertIn(json.dumps(self.current[change["row_id"]], ensure_ascii=False), source)
-                    self.assertNotIn(json.dumps(change["old"], ensure_ascii=False), source)
+        for builder_name in ("_build_picture_plan_v01.py", "_build_picture_plan_v02.py"):
+            source = (EDIT / builder_name).read_text()
+            for record in [self.record] + self.later:
+                for change in record["rows"]:
+                    with self.subTest(builder=builder_name, row=change["row_id"]):
+                        self.assertIn(json.dumps(self.current[change["row_id"]], ensure_ascii=False), source)
+                        self.assertNotIn(json.dumps(change["old"], ensure_ascii=False), source)
 
 
 if __name__ == "__main__":

@@ -9,20 +9,20 @@ Default commands (`plan`, `dry-run`) never open Chrome/CDP, never click Create,
 and spend 0 credits (£0). `submit` is refused unless HOS013_PASS1_SUBMIT=1 after
 the Chief reviews the runner against the live Flow panel and queues the mint.
 
-Scope & guards (J2499):
-- Exact 71 flow-first mint rows of PICTURE_PLAN_v01.json (48 Quality @ 100 = 4800,
-  23 Fast @ 10 = 230; total cap = 5030 credits), locked by row_id, board sha256,
+Scope & guards (J2499 / J2558):
+- Exact 66 flow-first mint rows of PICTURE_PLAN_v02.json (66 Quality @ 100 = 6600,
+  0 Fast; total cap = 6600 credits), locked by row_id, board sha256,
   plan sha256, and prompt sha256 in PASS1_SCOPE_J2499.json.
 - Order inside pass 1: Part 01 first (first 30s + Shorts openings), then Parts 02..06.
 - Right account & plan: the studio Ultra account on flow.google.com (verified by
   SHA-256 digest so no personal email address is stored in code or receipts) + ULTRA.
-- Right model & length per row: Veo 3.1 - Quality (8s, 16:9, x1, 100 credits) or
-  Veo 3.1 - Fast (8s, 16:9, x1, 10 credits); Nano Banana 2.1 (16:9, x1, 0 credits)
+- Right model & length per row: Veo 3.1 - Quality (8s, 16:9, x1, 100 credits);
+  Veo 3.1 - Fast is refused; Nano Banana 2.1 (16:9, x1, 0 credits)
   for missing start stills.
-- Live prices (100 and 10 credits) verified before each batch AND atomically
+- Live price (100 credits) verified before each batch AND atomically
   re-verified per row right before the trusted CDP mouse click on Create.
 - Live balance, pending charges, and other films' reservations counted via
-  canonical ~/_desk/state/flow/shared accounting; cap 5030, at most 1 take/row,
+  canonical ~/_desk/state/flow/shared accounting; cap 6600, at most 1 take/row,
   at most 5 rows and 1000 credits per batch.
 - Shared writer lock, duplicate-process refusal, missing/corrupt style reference
   refusal (house style_refs + Explorer sheet), scope/prompt drift refusal,
@@ -46,18 +46,16 @@ from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
 
-# Account verification reads STUDIO_FLOW_ACCOUNT outside the repo (no personal email stored in repo or receipts).
-ACCOUNT_ENV = "STUDIO_FLOW_ACCOUNT"
-FORBIDDEN_ACCOUNT_ENV = "STUDIO_FLOW_FORBIDDEN_ACCOUNT"
-REQUIRED_ACCOUNT_SHA256: str | None = None
+# SHA-256 digests of lowercase account strings (no personal email stored in repo or receipts).
+REQUIRED_ACCOUNT_SHA256 = "81a01c9d841483f444008cd69e98b26019e032ed75b5e33e17409a76c6525ce9"
 FORBIDDEN_ACCOUNT_SHA256 = "93b0f97ef00986fa90ead10a83be910d43707ddc8023daa2018ed1d95cbbb9d4"
 
 FILM_ID = "HOS:013"
 FILM_FOLDER = "013_Darwin-Wallace-Evolution"
-EXPECTED_ROW_COUNT = 71
-EXPECTED_QUALITY_COUNT = 48
-EXPECTED_FAST_COUNT = 23
-MAX_TOTAL_CREDITS = 5030
+EXPECTED_ROW_COUNT = 66
+EXPECTED_QUALITY_COUNT = 66
+EXPECTED_FAST_COUNT = 0
+MAX_TOTAL_CREDITS = 6600
 MAX_TAKES_PER_ROW = 1
 MAX_BATCH_ROWS = 5
 MAX_BATCH_CREDITS = 1000
@@ -65,11 +63,9 @@ HEADROOM_FLOOR = 0
 
 MODEL_BY_QUALITY = {
     "Quality": "Veo 3.1 - Quality",
-    "Fast": "Veo 3.1 - Fast",
 }
 PRICE_BY_QUALITY = {
     "Quality": 100,
-    "Fast": 10,
 }
 # Chief price pass, 10 Nov 2026 (#470): one approved 0-credit 16:9 image model on Ultra.
 REQUIRED_STILL_MODEL = "Nano Banana 2.1"
@@ -88,7 +84,7 @@ GENERATE_LINE_RE = re.compile(r"^Generating will use (\d+) credits$")
 
 EDIT_REL = Path("02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project")
 SCOPE_NAME = "PASS1_SCOPE_J2499.json"
-PLAN_NAME = "PICTURE_PLAN_v01.json"
+PLAN_NAME = "PICTURE_PLAN_v02.json"
 EXPLORER_REF_REL = Path("01_Character/05_Generation-References/hos-explorer-reference-v01.jpg")
 DEFAULT_NAS_MEDIA = Path(
     "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution"
@@ -174,42 +170,19 @@ def account_sha256(account: str | None) -> str:
     return sha256_bytes(account.strip().lower().encode("utf-8"))
 
 
-def forbidden_account_sha256() -> str:
-    raw = os.environ.get(FORBIDDEN_ACCOUNT_ENV, "").strip().lower()
-    if raw:
-        return account_sha256(raw)
-    return (FORBIDDEN_ACCOUNT_SHA256 or "").strip().lower()
-
-
-def required_account_sha256() -> str:
-    if isinstance(REQUIRED_ACCOUNT_SHA256, str) and REQUIRED_ACCOUNT_SHA256.strip():
-        digest = REQUIRED_ACCOUNT_SHA256.strip().lower()
-    else:
-        raw = os.environ.get(ACCOUNT_ENV, "").strip().lower()
-        if not raw:
-            raise GuardError(
-                f"missing required setting {ACCOUNT_ENV} (set {ACCOUNT_ENV} outside the repo)"
-            )
-        digest = account_sha256(raw)
-    forbidden = forbidden_account_sha256()
-    if digest == FORBIDDEN_ACCOUNT_SHA256 or (forbidden and digest == forbidden):
-        raise GuardError("Flow account is not the studio Ultra account")
-    return digest
-
-
 def verify_account_list(accounts: object) -> str:
-    expected = required_account_sha256()
-    forbidden = forbidden_account_sha256()
     if not isinstance(accounts, list) or len(accounts) != 1 or not isinstance(accounts[0], str):
         raise GuardError("live Flow account is missing or ambiguous")
     digest = account_sha256(accounts[0])
-    if digest == FORBIDDEN_ACCOUNT_SHA256 or (forbidden and digest == forbidden) or digest != expected:
+    if digest == FORBIDDEN_ACCOUNT_SHA256 or digest != REQUIRED_ACCOUNT_SHA256:
         raise GuardError("Flow account is not the studio Ultra account")
-    return expected
+    return REQUIRED_ACCOUNT_SHA256
 
 
 def expected_model_for(row_or_quality: Row | str) -> str:
     quality = row_or_quality.quality if isinstance(row_or_quality, Row) else str(row_or_quality)
+    if quality in ("Fast", "Veo 3.1 - Fast", "Veo 3.1 Fast"):
+        raise GuardError(f"Veo 3.1 - Fast is refused ({quality!r})")
     if quality not in MODEL_BY_QUALITY:
         raise GuardError(f"unsupported row quality {quality!r}")
     return MODEL_BY_QUALITY[quality]
@@ -217,13 +190,15 @@ def expected_model_for(row_or_quality: Row | str) -> str:
 
 def expected_credits_for(row_or_quality: Row | str) -> int:
     quality = row_or_quality.quality if isinstance(row_or_quality, Row) else str(row_or_quality)
+    if quality in ("Fast", "Veo 3.1 - Fast", "Veo 3.1 Fast"):
+        raise GuardError(f"Veo 3.1 - Fast is refused ({quality!r})")
     if quality not in PRICE_BY_QUALITY:
         raise GuardError(f"unsupported row quality {quality!r}")
     return PRICE_BY_QUALITY[quality]
 
 
 def load_scope(repo: Path) -> list[Row]:
-    """Load and verify the exact 71 pass-1 mint rows against PICTURE_PLAN_v01 and all 6 part boards."""
+    """Load and verify the exact 66 pass-1 mint rows against PICTURE_PLAN_v02 and all 6 part boards."""
     scope_path = repo / EDIT_REL / SCOPE_NAME
     if not scope_path.is_file():
         raise GuardError(f"missing scope file: {scope_path}")
@@ -238,19 +213,29 @@ def load_scope(repo: Path) -> list[Row]:
     if not plan_path.is_file():
         raise GuardError(f"missing film picture plan: {plan_path}")
     if sha256_file(plan_path) != scope.get("plan_sha256"):
-        raise GuardError("scope drift: PICTURE_PLAN_v01.json sha256 mismatch")
+        raise GuardError("scope drift: PICTURE_PLAN_v02.json sha256 mismatch")
 
     plan = json.loads(plan_path.read_text())
     totals = plan.get("totals") or {}
+    if int(totals.get("Fast") or 0) != 0:
+        raise GuardError("Veo 3.1 - Fast is refused in PICTURE_PLAN_v02 totals")
     if (
         int(totals.get("mint_rows") or 0) != EXPECTED_ROW_COUNT
         or int(totals.get("Quality") or 0) != EXPECTED_QUALITY_COUNT
         or int(totals.get("Fast") or 0) != EXPECTED_FAST_COUNT
         or int(totals.get("flow_credits_try1") or 0) != MAX_TOTAL_CREDITS
     ):
-        raise GuardError("scope drift: PICTURE_PLAN_v01 totals do not match 71 rows (48Q/23F = 5030)")
+        raise GuardError("scope drift: PICTURE_PLAN_v02 totals do not match 66 rows (66Q/0F = 6600)")
 
     caps = scope.get("caps") or {}
+    cap_models = caps.get("models") or {}
+    cap_prices = caps.get("prices") or {}
+    if (
+        "Fast" in cap_models
+        or "Veo 3.1 - Fast" in cap_models.values()
+        or "Fast" in cap_prices
+    ):
+        raise GuardError("Veo 3.1 - Fast is refused in scope caps")
     if (
         int(caps.get("max_total_credits") or 0) != MAX_TOTAL_CREDITS
         or int(caps.get("max_takes_per_row") or 0) != MAX_TAKES_PER_ROW
@@ -260,6 +245,9 @@ def load_scope(repo: Path) -> list[Row]:
         raise GuardError("scope caps do not match J2499 constants")
 
     raw_rows = scope.get("rows") or []
+    for raw in raw_rows:
+        if raw.get("quality") in ("Fast", "Veo 3.1 - Fast") or "Fast" in str(raw.get("flow_model") or ""):
+            raise GuardError(f"Veo 3.1 - Fast row is refused in scope: {raw.get('row_id')!r}")
     if len(raw_rows) != EXPECTED_ROW_COUNT:
         raise GuardError(f"scope drift: scope has {len(raw_rows)} rows, expected {EXPECTED_ROW_COUNT}")
 
@@ -273,7 +261,7 @@ def load_scope(repo: Path) -> list[Row]:
     for part in range(1, 7):
         meta = boards_meta[str(part)]
         board_rel = Path(str(meta.get("path") or ""))
-        expected_name = f"part-0{part}_plates_v01.json"
+        expected_name = f"part-0{part}_plates_v02.json"
         if board_rel != EDIT_REL / "parts" / expected_name:
             raise GuardError(f"unexpected board path for part {part}: {board_rel}")
         board_path = repo / board_rel
@@ -289,6 +277,8 @@ def load_scope(repo: Path) -> list[Row]:
             pid = str(plate.get("id") or "")
             if not pid or pid in by_id:
                 raise GuardError(f"invalid or duplicate plate id {pid!r} on {board_rel}")
+            if plate.get("quality") in ("Fast", "Veo 3.1 - Fast") or "Fast" in str(plate.get("flow_model") or ""):
+                raise GuardError(f"Veo 3.1 - Fast row is refused on {board_rel}:{pid}")
             by_id[pid] = plate
             if plate.get("route") == "flow-first":
                 discovered_flow_rows.append((part, plate, board_rel, digest))
@@ -396,7 +386,7 @@ def load_scope(repo: Path) -> list[Row]:
     total_credits = sum(row.try1_credits for row in rows)
     if q_count != EXPECTED_QUALITY_COUNT or f_count != EXPECTED_FAST_COUNT or total_credits != MAX_TOTAL_CREDITS:
         raise GuardError(
-            f"scope drift: counts {q_count}Q/{f_count}F/{total_credits} credits != 48Q/23F/5030"
+            f"scope drift: counts {q_count}Q/{f_count}F/{total_credits} credits != 66Q/0F/6600"
         )
     return rows
 
@@ -507,11 +497,13 @@ def accept_price(price: PriceEvidence, *, quality: str | None = None,
 
 def accept_batch_prices(prices_by_quality: dict[str, PriceEvidence] | None, *,
                         now: datetime | None = None, max_age_s: int = 900) -> dict[str, int]:
-    """Require fresh live price readings for BOTH Quality (100) and Fast (10) before each batch."""
+    """Require fresh live price reading for Quality (100) before each batch; refuse Fast."""
     if not isinstance(prices_by_quality, dict):
         raise GuardError("missing pre-batch live price readings")
+    if "Fast" in prices_by_quality or "Veo 3.1 - Fast" in prices_by_quality:
+        raise GuardError("Veo 3.1 - Fast is refused in pre-batch live price readings")
     verified: dict[str, int] = {}
-    for quality in ("Quality", "Fast"):
+    for quality in ("Quality",):
         ev = prices_by_quality.get(quality)
         if not isinstance(ev, PriceEvidence):
             raise GuardError(f"missing pre-batch live price reading for {quality}")
@@ -521,8 +513,6 @@ def accept_batch_prices(prices_by_quality: dict[str, PriceEvidence] | None, *,
 
 def accept_account(account_or_sha256: str | None, read_at: str | None, *,
                    now: datetime, max_age_s: int = 900) -> str:
-    expected = required_account_sha256()
-    forbidden = forbidden_account_sha256()
     if not read_at:
         raise GuardError("balance read timestamp is missing")
     stamp = datetime.fromisoformat(read_at)
@@ -535,9 +525,9 @@ def accept_account(account_or_sha256: str | None, read_at: str | None, *,
         raise GuardError("Flow account is missing")
     candidate = account_or_sha256.strip().lower()
     digest = candidate if re.fullmatch(r"[0-9a-f]{64}", candidate) else account_sha256(candidate)
-    if digest == FORBIDDEN_ACCOUNT_SHA256 or (forbidden and digest == forbidden) or digest != expected:
+    if digest == FORBIDDEN_ACCOUNT_SHA256 or digest != REQUIRED_ACCOUNT_SHA256:
         raise GuardError("Flow account is not the studio Ultra account")
-    return expected
+    return REQUIRED_ACCOUNT_SHA256
 
 
 def load_plan_style_refs(repo: Path | None = None) -> list[str]:
@@ -740,6 +730,8 @@ def can_take(*, row: Row, live: int | None, spent: int, pending: int, other: int
 
 def build_plan(rows: list[Row], *, repo: Path | None = None) -> dict:
     root = repo or repo_root_from()
+    plan_rel = EDIT_REL / PLAN_NAME
+    plan_path = root / plan_rel
     ordered = order_rows(rows)
     batches = batch_rows(ordered)
     per_part: dict[str, dict] = {}
@@ -755,6 +747,8 @@ def build_plan(rows: list[Row], *, repo: Path | None = None) -> dict:
     return {
         "job": "J2499",
         "film": FILM_ID,
+        "plan_file": str(plan_rel),
+        "plan_sha256": sha256_file(plan_path),
         "submissions": 0,
         "create_clicks": 0,
         "credits_spent": 0,
@@ -1583,10 +1577,10 @@ def production_batch_paths(*, repo: Path, accounting_state: Path | None,
     if spend_ledger is not None and Path(spend_ledger).resolve() != target.resolve():
         raise GuardError("production requires canonical OWB spend report")
     if inventory_rows is None:
-        raise GuardError("production requires the full locked 71-row scope")
+        raise GuardError(f"production requires the full locked {EXPECTED_ROW_COUNT}-row scope")
     locked = load_scope(repo)
     if inventory_rows != locked:
-        raise GuardError("production inventory differs from the locked 71-row scope")
+        raise GuardError(f"production inventory differs from the locked {EXPECTED_ROW_COUNT}-row scope")
     return state, target
 
 
@@ -1667,7 +1661,7 @@ def execute_shared_batch(
             inventory_rows=inventory_rows,
         )
     if inventory_rows is not None and any(row not in inventory_rows for row in batch):
-        raise GuardError("batch contains a row outside the locked 71-row scope")
+        raise GuardError(f"batch contains a row outside the locked {EXPECTED_ROW_COUNT}-row scope")
 
     # Refuse missing or drifted style references BEFORE opening Flow or spending anything.
     style_manifest = verify_style_references(repo, media, inventory_rows or batch, check_scope_hashes=not test_archive)
@@ -1697,7 +1691,7 @@ def execute_shared_batch(
                 raise GuardError(f"{row.row_id}: batch would exceed {MAX_TOTAL_CREDITS} pass-1 cap")
             pending += row.try1_credits
 
-        # Pre-batch live price check for both Quality (100) and Fast (10).
+        # Pre-batch live price check for Quality (100); Fast is refused.
         batch_prices = batch_price_reader()
         verified_prices = accept_batch_prices(batch_prices, now=datetime.now(timezone.utc))
 
@@ -2284,10 +2278,10 @@ def guarded_still_create(page, accounting: SharedFlowAccounting, *, reservation:
 
 
 def read_live_batch_prices_on_page(page, *, configure_model) -> dict[str, PriceEvidence]:
-    """Read live Quality (100) and Fast (10) prices on Flow without clicking Create."""
+    """Read live Quality (100) price on Flow without clicking Create."""
     live_balance = read_live_balance(page)
     out: dict[str, PriceEvidence] = {}
-    for quality in ("Quality", "Fast"):
+    for quality in ("Quality",):
         model = expected_model_for(quality)
         configure_model(page, model)
         _raw, evidence = _read_and_validate_live_evidence(
