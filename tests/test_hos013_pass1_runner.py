@@ -1393,6 +1393,73 @@ class DetachedFloorTests(unittest.TestCase):
             self.assertEqual(seen["floor"], RUNNER.DETACHED_HEADROOM_FLOOR)
             self.assertTrue(seen["unchanged"])
 
+    def test_armed_submit_refuses_floor_below_3000_and_holds_9599_9600_boundary(self):
+        """An explicit floor under 3,000 never reserves. Floor 3,000 refuses 9,599 and accepts 9,600."""
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            base = [
+                "submit",
+                "--repo", str(ROOT),
+                "--media", str(root),
+                "--other-reservations", "0",
+                "--ledger", str(root / "ledger.jsonl"),
+                "--lock", str(root / "writer.lock"),
+                "--pid", str(root / "runner.pid"),
+                "--done", str(root / "runner.done"),
+            ]
+            with patch.object(RUNNER, "execute_shared_batch") as execute:
+                with patch.dict(os.environ, {RUNNER.SUBMIT_ENV: "0"}, clear=False):
+                    with self.assertRaises(SystemExit) as unarmed:
+                        RUNNER.main(base + ["--floor", "0"])
+                self.assertIn("not armed", str(unarmed.exception))
+                with patch.dict(os.environ, {RUNNER.SUBMIT_ENV: "1"}):
+                    for low in ("0", "2999"):
+                        with self.subTest(floor=low):
+                            with self.assertRaisesRegex(RUNNER.GuardError, "armed submit floor below 3000"):
+                                RUNNER.main(base + ["--floor", low])
+                execute.assert_not_called()
+            self.assertEqual(list(root.iterdir()), [])
+
+            seen = []
+
+            def fake_execute(batch, **kwargs):
+                floor = kwargs["floor"]
+                seen.append(floor)
+                with RUNNER.SharedFlowAccounting(root / f"accounting-{len(seen)}") as account:
+                    before = account.snapshot()
+                    with self.assertRaisesRegex(RUNNER.GuardError, "insufficient shared Flow headroom"):
+                        account.reserve(
+                            "direct-submit", RUNNER.FILM_ID, RUNNER.MAX_TOTAL_CREDITS,
+                            live=9599, floor=floor)
+                    self.assertEqual(account.snapshot(), before)
+                    account.reserve(
+                        "direct-submit", RUNNER.FILM_ID, RUNNER.MAX_TOTAL_CREDITS,
+                        live=9600, floor=floor)
+                    self.assertEqual(account.snapshot()["liability"], RUNNER.MAX_TOTAL_CREDITS)
+                return []
+
+            with patch.dict(os.environ, {RUNNER.SUBMIT_ENV: "1"}), \
+                 patch.object(RUNNER, "execute_shared_batch", side_effect=fake_execute):
+                self.assertEqual(RUNNER.main(base), 0)
+                self.assertEqual(RUNNER.main(base + ["--floor", "3000"]), 0)
+            self.assertEqual(seen, [RUNNER.DETACHED_HEADROOM_FLOOR, RUNNER.DETACHED_HEADROOM_FLOOR])
+
+    def test_dry_run_floor_stays_at_zero(self):
+        captured = {}
+
+        def fake_dry_run(repo, *, media, archive_dir, other, floor, out):
+            captured["floor"] = floor
+            return {}
+
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            with patch.object(RUNNER, "cmd_dry_run", side_effect=fake_dry_run):
+                self.assertEqual(RUNNER.main([
+                    "dry-run", "--repo", str(ROOT), "--media", str(root), "--archive", str(root),
+                ]), 0)
+        self.assertEqual(captured["floor"], 0)
+        self.assertIs(captured["floor"], RUNNER.HEADROOM_FLOOR)
+
     def test_negative_detached_floor_is_refused(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)

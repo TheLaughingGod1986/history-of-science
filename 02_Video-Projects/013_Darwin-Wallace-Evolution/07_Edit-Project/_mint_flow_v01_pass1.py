@@ -60,8 +60,9 @@ MAX_TAKES_PER_ROW = 1
 MAX_BATCH_ROWS = 5
 MAX_BATCH_CREDITS = 1000
 HEADROOM_FLOOR = 0
-# Chief's HOS 013 floor (J2643). Detached launch and a direct armed `submit`
-# both default here. `dry-run` stays on HEADROOM_FLOOR: it never reserves.
+# Chief's HOS 013 floor (J2643 / J2643b). Detached launch and a direct armed
+# `submit` both default here. An armed `submit` below this floor is refused.
+# `dry-run` stays on HEADROOM_FLOOR: it never reserves.
 DETACHED_HEADROOM_FLOOR = 3000
 
 MODEL_BY_QUALITY = {
@@ -2814,6 +2815,8 @@ def main(argv: list[str] | None = None) -> int:
             "refusing submit: generation is not armed "
             f"({SUBMIT_ENV} is not 1). Dry-run / plan only until Chief reviews the guards and queues the mint."
         )
+    if type(args.floor) is not int or args.floor < DETACHED_HEADROOM_FLOOR:
+        raise GuardError(f"armed submit floor below {DETACHED_HEADROOM_FLOOR}")
     if args.other_reservations is None or not args.media:
         raise GuardError("armed submit needs --other-reservations and --media")
     repo = Path(args.repo) if args.repo else repo_root_from()
