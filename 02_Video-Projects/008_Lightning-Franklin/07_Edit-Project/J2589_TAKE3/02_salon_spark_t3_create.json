@@ -1,0 +1,31 @@
+{
+  "charge": "HOS:008:P02:02_salon_spark:J2241:t3",
+  "read_at": "2026-11-11T10:30:19+00:00",
+  "reservation": "J2589",
+  "ui": {
+    "accounts": [
+      "studio Ultra account"
+    ],
+    "aspects": [
+      "16:9"
+    ],
+    "balances": [
+      11890
+    ],
+    "create_count": 1,
+    "durations": [
+      "8s"
+    ],
+    "host": "flow.google.com",
+    "models": [
+      "Veo 3.1 - Quality"
+    ],
+    "outputs": [
+      "x1"
+    ],
+    "prices": [
+      "Generating will use 100 credits"
+    ],
+    "ultra": true
+  }
+}

@@ -1,0 +1,5 @@
+TECHNICAL VERIFICATION ONLY
+Salon take 3: full decode OK; 190 frames; 1280x720; 24/1 fps; reference hash verified; full prompt forbidden-word check passed.
+Points take 3: full decode OK; 190 frames; 1280x720; 24/1 fps; reference hash verified; full prompt forbidden-word check passed.
+Two live 100-credit prices verified; live balances 11890 then 11790. Total 200 subscription credits, GBP 0.
+Runner exit 0; both files GENERATED_PENDING_REVIEW. No visual judgement or KEEP. J2590 owns review.
