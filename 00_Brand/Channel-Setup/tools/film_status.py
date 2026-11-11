@@ -186,6 +186,14 @@ def main(argv=None) -> int:
     ap.add_argument("cmd", choices=["check", "split"])
     ap.add_argument("--write", action="store_true", help="split: write the files (default: only say what would be written)")
     a = ap.parse_args(argv)
+    if not PIPELINE.exists():                 # the switch is made: there is nothing left to split
+        try:
+            data = read()
+        except (OSError, ValueError) as stop:
+            print(f"the per-film files cannot be read: {stop}", file=sys.stderr)
+            return 1
+        print(f"PIPELINE.json is gone: the films are kept in {len(data['films'])} status files, and they read back in order")
+        return 0
     data = json.loads(PIPELINE.read_text())
     board, statuses = split(data)
     if join(board, statuses) != data:

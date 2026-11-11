@@ -28,6 +28,12 @@ def load():
 
 fs = load()
 
+
+def whole_document() -> dict:
+    """Every film and the channel's own part: from PIPELINE.json while the channel still keeps it, and from the
+    per-film files once the switch is made. The promises below hold either way."""
+    return json.loads(fs.PIPELINE.read_text()) if fs.PIPELINE.exists() else fs.read()
+
 MADE_UP = {
     "updated": "2026-11-11", "updated_by": "Claude", "board_url": "https://example.invalid/board",
     "stages": [{"key": "script", "label": "Script", "weight": 60, "owner": "Grok"},
@@ -46,7 +52,7 @@ MADE_UP = {
 
 class RoundTrip(unittest.TestCase):
     def test_the_real_file_comes_back_unchanged(self):
-        data = json.loads(fs.PIPELINE.read_text())
+        data = whole_document()
         board, statuses = fs.split(data)
         self.assertEqual(fs.join(board, statuses), data)
         self.assertEqual(len(statuses), len(data["films"]))
@@ -97,7 +103,7 @@ class RoundTrip(unittest.TestCase):
 
     def test_every_kind_names_a_real_stage(self):
         kept = json.loads(fs.CHANNEL.read_text())["stages"]                    # a list once the switch is made
-        stages = kept if isinstance(kept, list) else json.loads(fs.PIPELINE.read_text())["stages"]
+        stages = kept if isinstance(kept, list) else whole_document()["stages"]
         self.assertEqual(sorted(set(fs.KINDS) - {s["key"] for s in stages}), [])
 
     def test_a_status_file_written_the_old_way_is_named(self):
@@ -194,13 +200,42 @@ class WhereAFilmsFileGoes(unittest.TestCase):
             fs.folder_for(MADE_UP["films"][0], self.films, self.ideas)
 
     def test_every_real_film_has_one_place(self):
-        data = json.loads(fs.PIPELINE.read_text())
+        data = whole_document()
         where = fs.paths(data)
         self.assertEqual(sorted(where), sorted(f["id"] for f in data["films"]))
         self.assertEqual(len({p.parent for p in where.values()}), len(where))        # no two films in one folder
         for fid, path in where.items():
             self.assertTrue(path.parent.name.startswith(fid + "_"), path)
             self.assertEqual(path.name, "status.json")
+
+
+class OnceTheSwitchIsMade(unittest.TestCase):
+    """With PIPELINE.json gone, the command reads the per-film files and says so. It no longer has anything to split."""
+
+    def run_it(self, argv, read):
+        import contextlib, io
+        from unittest import mock
+        out, err = io.StringIO(), io.StringIO()
+        with tempfile.TemporaryDirectory() as t, mock.patch.object(fs, "PIPELINE", Path(t) / "PIPELINE.json"), \
+                mock.patch.object(fs, "read", read), contextlib.redirect_stdout(out), contextlib.redirect_stderr(err):
+            return fs.main(argv), out.getvalue(), err.getvalue()
+
+    def test_check_reads_the_files_back(self):
+        code, out, err = self.run_it(["check"], lambda: copy.deepcopy(MADE_UP))
+        self.assertEqual((code, err), (0, ""))
+        self.assertIn("the films are kept in 2 status files", out)
+
+    def test_split_writes_nothing(self):
+        code, out, _ = self.run_it(["split", "--write"], lambda: copy.deepcopy(MADE_UP))
+        self.assertEqual(code, 0)
+        self.assertNotIn("write ", out)
+
+    def test_files_that_cannot_be_read_are_an_error(self):
+        def broken():
+            raise ValueError("020_X/status.json: needs `film` (its number) and `stages`")
+        code, out, err = self.run_it(["check"], broken)
+        self.assertEqual((code, out), (1, ""))
+        self.assertIn("020_X/status.json", err)
 
 
 if __name__ == "__main__":
