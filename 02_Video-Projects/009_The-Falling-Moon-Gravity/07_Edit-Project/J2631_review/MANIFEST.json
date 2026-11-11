@@ -42,7 +42,8 @@
       "end_s": 10.4
     }
   ],
-  "review_status": "Gemini timing advisory clear; pending Grok sheet decision before splice or KEEP",
+  "review_status": "KEEP by Grok (6802108222); file approved for later splice, splice not authorized",
+  "keep_ref": "https://github.com/TheLaughingGod1986/history-of-science/pull/180#issuecomment-6802108222",
   "source_path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/code_graphics_v01/code_graphic_009_p4_05_minute_second.mp4",
   "no_splice": true,
   "geometry_checks": {
