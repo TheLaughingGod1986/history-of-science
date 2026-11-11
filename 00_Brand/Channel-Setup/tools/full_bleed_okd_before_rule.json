@@ -1,0 +1,4 @@
+{
+  "about": "Cuts Ben OK'd by watching before the whole-Short full-bleed rule existed (11 Nov 2026, J2546). The gate still measures them and says what it found, but their padded stretches are a warning, not a FAIL, so the cut he OK'd can still go up as the fallback while its full-frame version waits for his watch. Matched by the file's sha256: a re-cut is never covered. Add an entry only for an exact file Ben has OK'd, and take it out once its Short has aired. This channel has none.",
+  "cuts": []
+}
