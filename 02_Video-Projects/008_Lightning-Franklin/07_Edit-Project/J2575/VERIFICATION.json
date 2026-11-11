@@ -1,0 +1,49 @@
+{
+  "job": "J2575",
+  "state": "GENERATED_PENDING_REVIEW",
+  "credits": 200,
+  "cash_gbp": 0,
+  "preflight": {
+    "live": 12090,
+    "pending": false,
+    "shared_liability": 5700
+  },
+  "takes": [
+    {
+      "part": "02",
+      "id": "02_salon_spark",
+      "take": 2,
+      "reference_sha256": "aefd6338aded1037c11306a99fc580d1a62a66d9367409f01e0edd993cc8cc58",
+      "file": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part02/j2241/02_salon_spark_j2241_t2.mp4",
+      "minimum_frames": 160,
+      "status": "GENERATED_PENDING_REVIEW",
+      "credits": 100,
+      "charge": "HOS:008:P02:02_salon_spark:J2241:t2",
+      "sha256": "a9cd62a5f927c86f08cb7f3e13235db42aa4ca4dfed5e0a1a361822dfb42031d",
+      "frames": 192,
+      "width": 1280,
+      "height": 720,
+      "frame_rate": "24/1",
+      "sheet": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part02/j2241/02_salon_spark_j2241_t2.jpg",
+      "decode_ok": true
+    },
+    {
+      "part": "03",
+      "id": "01_points_desk",
+      "take": 2,
+      "reference_sha256": "cc16a515a43e881c54a207eb2cb3f700ab9a4166bbb83a366dc09431db403e51",
+      "file": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part03/j2241/01_points_desk_j2241_t2.mp4",
+      "minimum_frames": 160,
+      "status": "GENERATED_PENDING_REVIEW",
+      "credits": 100,
+      "charge": "HOS:008:P03:01_points_desk:J2241:t2",
+      "sha256": "d2e6378da31683e34ef620b6621e96878a5f0600460485d6ccbcf955c387a24b",
+      "frames": 190,
+      "width": 1280,
+      "height": 720,
+      "frame_rate": "24/1",
+      "sheet": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part03/j2241/01_points_desk_j2241_t2.jpg",
+      "decode_ok": true
+    }
+  ]
+}
