@@ -23,6 +23,7 @@ Guards (J2033_PREFLIGHT.md / J2026):
 - pending submits count at full cost; unknown pending charges stop the run
 - the twenty-row path reserves J2033 for the unused part of the 6000 cap
 - `--retakes-j2583` reserves a new identity J2583 at 300 and releases it after the third resolved row. The file ceiling stays 400. It never reopens J2033
+- `--retakes-j2626` (Chief 6798928858) makes one third take each of two rows whose second take failed its sheet. It reserves a new identity J2626 at 200 and releases it after the second resolved row. Its file ceiling is 600: the 300 J2583 spent, this 200, and 100 kept for c2. It never reopens J2033 or J2583, never makes c2 and never makes a fourth take
 - balance after that reservation stays at or above 3000
 - a batch is at most 5 rows and 1500 credits; at most 3 takes a row
 """
@@ -54,6 +55,11 @@ MAX_TOTAL_CREDITS = 6000
 # retake file stays 400, the ceiling shared with c2's later reservation.
 J2583_RESERVE_CAP = 300
 J2583_CEILING = 400
+# Chief 6798928858 (11 Nov 2026): two of the three second takes failed their sheets. Each gets one third take,
+# under its own identity. 600 is the film's retake ceiling in all: J2583's 300, these 200, and 100 kept for c2.
+J2626_RESERVE_CAP = 200
+J2626_CEILING = 600
+J2626_C2_HELD_BACK = 100
 RESOLVED_CHARGE_STATUSES = frozenset({"CHARGED", "NOT_SUBMITTED", "POLICY_REFUSED"})
 MAX_BATCH_ROWS = 5
 MAX_BATCH_CREDITS = 1500
@@ -908,7 +914,7 @@ def detached_command(script: Path, log_path: Path, done_path: Path, *,
                      repo: Path, media: Path, archive: Path, other: int,
                      ledger: Path, lock: Path, pid: Path,
                      session: str = "hos009-tranche2",
-                     retakes_j2583: bool = False) -> list[str]:
+                     retakes_j2583: bool = False, retakes_j2626: bool = False) -> list[str]:
     """Print-only launch recipe; never arms generation or overwrites logs."""
     paths = [script, repo, media, archive, ledger, lock, pid, log_path, done_path]
     if not all(path.is_absolute() for path in paths):
@@ -927,8 +933,11 @@ def detached_command(script: Path, log_path: Path, done_path: Path, *,
             "--other-reservations", str(other), "--ledger", str(ledger),
             "--lock", str(lock), "--pid", str(pid), "--log", str(log_path),
             "--done", str(done_path)]
+    retake_job(retakes_j2583, retakes_j2626)  # never both
     if retakes_j2583:
         args.append("--retakes-j2583")
+    if retakes_j2626:
+        args.append("--retakes-j2626")
     return ["tmux", "new", "-d", "-s", session, shlex.join(args)]
 
 
@@ -1297,7 +1306,7 @@ def execute_shared_batch(batch: list[Row], *, media: Path, ledger_path: Path,
                          in_scope_keys: set[tuple[int, str]] | None = None,
                          test_archive: bool = False,
                          inventory_rows: list[Row] | None = None,
-                         retakes_j2583: bool = False) -> list[dict]:
+                         retakes_j2583: bool = False, retakes_j2626: bool = False) -> list[dict]:
     """Production accounting integration; no caller-supplied balance/price.
 
     Each actual configured Create obtains its own UI evidence and durable shared
@@ -1306,12 +1315,18 @@ def execute_shared_batch(batch: list[Row], *, media: Path, ledger_path: Path,
     J2583 retakes reserve identity J2583 at 300 credits. The local SUBMITTING row
     is written only after that reserve returns. After the third resolved row the
     reservation is released. Unposted charges stay liabilities. J2033 is not reopened.
+    J2626's two third takes run the same way under identity J2626 at 200 credits, released
+    after the second resolved row. Neither J2033 nor J2583 is reopened.
     """
     if type(other) is not int or other < 0:
         raise GuardError("invalid other reservations")
+    retake = retake_job(retakes_j2583, retakes_j2626)
     if retakes_j2583:
         if reservation != "J2583" or reservation_cap != J2583_RESERVE_CAP:
             raise GuardError("J2583 retakes reserve identity J2583 at 300 credits")
+    elif retake:
+        if reservation != retake.job or reservation_cap != retake.reserve:
+            raise GuardError(f"{retake.job} retakes reserve identity {retake.job} at {retake.reserve} credits")
     elif reservation != "J2033" or reservation_cap != MAX_TOTAL_CREDITS:
         raise GuardError("tranche submit reserves J2033 at the 6000 cap")
     assert_batch_limits(batch)
@@ -1340,7 +1355,7 @@ def execute_shared_batch(batch: list[Row], *, media: Path, ledger_path: Path,
                 if not spath.is_file():
                     made = Path(_call_accepting(
                         still_maker, srow, spath,
-                        required=("reservation_cap",) if retakes_j2583 else (),
+                        required=("reservation_cap",) if retake else (),
                         accounting=accounting, reservation=reservation,
                         evidence_path=next_still_evidence_path(archive_dir, spath.name),
                         other=other, reservation_cap=reservation_cap,
@@ -1360,8 +1375,8 @@ def execute_shared_batch(batch: list[Row], *, media: Path, ledger_path: Path,
         if any(e.get('status') == 'SUBMITTING' for e in latest_entries(entries)):
             raise GuardError('unresolved local output; reconcile before batch')
         _, _, _, takes = ledger_totals(entries)
-        if retakes_j2583:
-            validate_retakes(batch, entries, media)
+        if retake:
+            validate_retakes(batch, entries, media, retake.job)
         resolved_rows = 0
         for row in batch:
             if takes.get(row.plate_id, 0) >= MAX_TAKES_PER_ROW:
@@ -1373,12 +1388,14 @@ def execute_shared_batch(batch: list[Row], *, media: Path, ledger_path: Path,
                     Path(expected["path"]) != frame.resolve() or
                     sha256_file(frame) != expected["sha256"]):
                 raise GuardError("start still changed after inventory; no Create")
+            if retake and retake.take > 2:
+                same_start_frame(row, entries, frame)
             take, dest = next_version(media, row.part, row.plate_id,
                                       takes_recorded(entries, row.part, row.plate_id))
             dest.parent.mkdir(parents=True, exist_ok=True)
             charge = f'HOS:009:P{row.part:02d}:{row.plate_id}:t{take}'
             # The twenty-row path persists local intent before the browser so a
-            # crash cannot skip a take. J2583 writes that row only after reserve.
+            # crash cannot skip a take. A retake job writes that row only after reserve.
             intent = submitting_record(row.plate_id, row.part, take, dest)
             intent['shared_charge'] = charge
             intent['inventory'] = inventory_id
@@ -1391,7 +1408,7 @@ def execute_shared_batch(batch: list[Row], *, media: Path, ledger_path: Path,
                 evidence_path=archive_dir / (dest.name + '.create.json'),
             )
             wrote_local = False
-            if retakes_j2583:
+            if retake:
                 def after_reserve(intent=intent):
                     nonlocal wrote_local
                     if wrote_local:
@@ -1414,10 +1431,10 @@ def execute_shared_batch(batch: list[Row], *, media: Path, ledger_path: Path,
                 # Ambiguous PENDING intents remain absent from confirmed spend.
                 if spend_ledger is not None:
                     accounting.export_ai_spend(spend_ledger, by=recorder)
-            if retakes_j2583 and not wrote_local:
+            if retake and not wrote_local:
                 raise GuardError("retake submitter returned without reserving before local intent")
             shared = accounting.snapshot()['charges'].get(charge)
-            if retakes_j2583:
+            if retake:
                 resolved_rows = note_retake_resolution(
                     accounting, reservation, shared, resolved_rows)
             if not shared or shared['status'] != 'CHARGED' or shared['amount'] != MAX_CREDITS_PER_TAKE:
@@ -1578,86 +1595,146 @@ def next_batch(rows: list[Row], ledger: list[dict]) -> list[Row]:
 
 J2583_KEYS = ((3, "01_really_falling_c1"), (2, "08_the_apple_c1"),
               (4, "05_minute_second_c1"))
+J2626_KEYS = ((3, "01_really_falling_c1"), (4, "05_minute_second_c1"))
 
 
-def retake_credit_cap(repo: Path) -> int:
-    """Read max_total_credits as the overall ceiling. The reservation itself is 300.
+@dataclass(frozen=True)
+class Retake:
+    """One approved set of retakes: its own reservation, its rows in order, and the one take each row gets."""
+    job: str                 # the reservation identity, and the `job` of its scope file
+    keys: tuple              # the rows this job makes, in order
+    take: int                # the take it makes of each; the row must hold exactly the takes before it
+    reserve: int             # credits reserved under `job`
+    ceiling: int             # the scope file's max_total_credits
+    file_keys: tuple         # every row the scope file lists, in order (J2583's also lists c2, which it never makes)
+    what: str                # how its scope is named in a refusal
 
-    Refuse a missing or invalid file, a ceiling other than the approved 400, or
-    a ceiling that 300 would exceed. c2's later reservation shares this ceiling.
+    @property
+    def scope_file(self) -> str:
+        return f"TRANCHE2_RETAKES_{self.job}.json"
+
+
+RETAKES = {
+    "J2583": Retake("J2583", J2583_KEYS, 2, J2583_RESERVE_CAP, J2583_CEILING,
+                    (*J2583_KEYS, (4, "05_minute_second_c2")), "four second takes"),
+    "J2626": Retake("J2626", J2626_KEYS, 3, J2626_RESERVE_CAP, J2626_CEILING, J2626_KEYS, "two third takes"),
+}
+
+
+def retake_job(retakes_j2583: bool = False, retakes_j2626: bool = False) -> Retake | None:
+    """The retake set a run was asked for, or None for the twenty-row path. Never two at once."""
+    if retakes_j2583 and retakes_j2626:
+        raise GuardError("one retake job a run: --retakes-j2583 or --retakes-j2626, never both")
+    return RETAKES["J2583"] if retakes_j2583 else RETAKES["J2626"] if retakes_j2626 else None
+
+
+def retake_credit_cap(repo: Path, job: str = "J2583") -> int:
+    """Read max_total_credits as the overall ceiling. The reservation itself is smaller.
+
+    Refuse a missing or invalid file, a ceiling other than the approved one, or a ceiling the
+    reservation would exceed. J2583: 300 reserved under 400, which c2's later reservation shares.
+    J2626: 200 reserved under 600, which also holds J2583's 300 and 100 for c2.
     """
-    path = repo / EDIT_REL / "TRANCHE2_RETAKES_J2583.json"
+    retake = RETAKES[job]
+    path = repo / EDIT_REL / retake.scope_file
     try:
         scope = json.loads(path.read_text())
     except (OSError, json.JSONDecodeError, UnicodeError) as exc:
-        raise GuardError("J2583 retake cap file is missing or invalid") from exc
+        raise GuardError(f"{job} retake cap file is missing or invalid") from exc
     if not isinstance(scope, dict):
-        raise GuardError("J2583 retake cap file is missing or invalid")
+        raise GuardError(f"{job} retake cap file is missing or invalid")
     cap = scope.get("max_total_credits")
-    if scope.get("job") != "J2583" or type(cap) is not int or cap <= 0:
-        raise GuardError("J2583 retake cap file is missing or invalid")
-    if J2583_RESERVE_CAP > cap:
-        raise GuardError("J2583 reservation of 300 exceeds the approved ceiling")
-    if cap != J2583_CEILING:
-        raise GuardError("J2583 retake cap is not the approved 400")
+    if scope.get("job") != job or type(cap) is not int or cap <= 0:
+        raise GuardError(f"{job} retake cap file is missing or invalid")
+    if retake.reserve > cap:
+        raise GuardError(f"{job} reservation of {retake.reserve} exceeds the approved ceiling")
+    if cap != retake.ceiling:
+        raise GuardError(f"{job} retake cap is not the approved {retake.ceiling}")
+    if job == "J2626" and J2583_RESERVE_CAP + retake.reserve + J2626_C2_HELD_BACK > cap:
+        raise GuardError("J2626 reservation leaves no room for c2 under the approved ceiling")
     return cap
 
 
 def note_retake_resolution(accounting: SharedFlowAccounting, reservation: str,
                            charge: dict | None, resolved: int) -> int:
-    """Release J2583 once the third row has resolved. Unposted charges stay liabilities."""
-    if reservation != "J2583" or not charge or charge.get("status") not in RESOLVED_CHARGE_STATUSES:
+    """Release a retake reservation once its last row has resolved. Unposted charges stay liabilities."""
+    if reservation not in RETAKES or not charge or charge.get("status") not in RESOLVED_CHARGE_STATUSES:
         return resolved
     resolved += 1
-    if resolved == len(J2583_KEYS):
+    if resolved == len(RETAKES[reservation].keys):
         record = accounting.snapshot()["reservations"].get(reservation) or {}
         if record.get("active"):
             accounting.release(reservation)
     return resolved
 
 
-def retake_batch(repo: Path, rows: list[Row], entries: list[dict], media: Path) -> list[Row]:
-    """Only J2583's first three second takes; no automatic retry or c2."""
-    scope = json.loads((repo / EDIT_REL / "TRANCHE2_RETAKES_J2583.json").read_text())
+def retake_batch(repo: Path, rows: list[Row], entries: list[dict], media: Path,
+                 job: str = "J2583") -> list[Row]:
+    """Only the job's own rows, in order, one take each; no automatic retry and never c2."""
+    retake = RETAKES[job]
+    scope = json.loads((repo / EDIT_REL / retake.scope_file).read_text())
     raw = scope.get("rows", [])
-    expected = (*J2583_KEYS, (4, "05_minute_second_c2"))
-    if (scope.get("job") != "J2583" or scope.get("max_total_credits") != 400
+    if (scope.get("job") != job or scope.get("max_total_credits") != retake.ceiling
             or scope.get("max_credits_per_take") != 100 or scope.get("takes_per_row") != 1
-            or tuple((r["part"], r["id"]) for r in raw) != expected
-            or any(r.get("take") != 2 for r in raw)):
-        raise GuardError("J2583 retake scope differs from the approved four second takes")
+            or tuple((r["part"], r["id"]) for r in raw) != retake.file_keys
+            or any(r.get("take") != retake.take for r in raw)):
+        raise GuardError(f"{job} retake scope differs from the approved {retake.what}")
+    if job == "J2626" and (scope.get("reservation_cap") != retake.reserve
+                           or scope.get("spent_before_by_j2583") != J2583_RESERVE_CAP
+                           or scope.get("held_back_for_c2") != J2626_C2_HELD_BACK):
+        raise GuardError(f"{job} retake scope differs from the approved {retake.what}")
     by_key = {r.key: r for r in rows}
     for r in raw:
         if sha256_file(repo / r["board"]) != r["board_sha256"]:
-            raise GuardError("J2583 retake board hash mismatch")
+            raise GuardError(f"{job} retake board hash mismatch")
         if (r["part"], r["id"]) not in by_key:
-            raise GuardError("J2583 retake outside original tranche scope")
-    selected = [by_key[key] for key in J2583_KEYS]
-    validate_retakes(selected, entries, media)
+            raise GuardError(f"{job} retake outside original tranche scope")
+    selected = [by_key[key] for key in retake.keys]
+    validate_retakes(selected, entries, media, job)
     return selected
 
 
-def validate_retakes(batch: list[Row], entries: list[dict], media: Path) -> None:
-    if tuple(r.key for r in batch) != J2583_KEYS:
-        raise GuardError("J2583 permits only its three ordered rows, never c2")
+def same_start_frame(row: Row, entries: list[dict], frame: Path) -> None:
+    """A third take starts from the very frame its second take started from (Chief 6799192687 point 3)."""
+    second = [e for e in latest_entries(entries)
+              if (e.get("part"), e.get("plate_id")) == row.key and e.get("take") == 2]
+    recorded = (second[0].get("input") or {}).get("sha256") if second else None
+    if not recorded or sha256_file(frame) != recorded:
+        raise GuardError(f"{row.plate_id}: start frame is not the one take 2 was made from; no Create")
+
+
+def validate_retakes(batch: list[Row], entries: list[dict], media: Path, job: str = "J2583") -> None:
+    retake = RETAKES[job]
+    if tuple(r.key for r in batch) != retake.keys:
+        if job == "J2583":
+            raise GuardError("J2583 permits only its three ordered rows, never c2")
+        raise GuardError(f"{job} permits only its two ordered rows, never the apple row or c2")
+    before = list(range(1, retake.take))
     for row in batch:
-        records = [e for e in latest_entries(entries)
-                   if (e.get("part"), e.get("plate_id")) == row.key]
-        if (len(records) != 1 or records[0].get("take") != 1
-                or not verified_output(records[0])):
-            raise GuardError("J2583 requires verified take 1 only; retry or recovery needs Chief")
+        records = sorted((e for e in latest_entries(entries)
+                          if (e.get("part"), e.get("plate_id")) == row.key),
+                         key=lambda e: e.get("take") or 0)
+        # Exactly the takes before this one, and the last of them a finished, archived output. Any
+        # line for this take itself (SUBMITTING, FAILED, refused, made) means it was already tried.
+        if ([e.get("take") for e in records] != before or not verified_output(records[-1])):
+            if job == "J2583":
+                raise GuardError("J2583 requires verified take 1 only; retry or recovery needs Chief")
+            raise GuardError(f"{job} requires takes 1 and 2 only, with take 2 verified; "
+                             "retry or recovery needs Chief")
         take, _ = next_version(media, row.part, row.plate_id,
                                takes_recorded(entries, row.part, row.plate_id))
-        if take != 2:
-            raise GuardError("J2583 must write take 2 without overwriting any output")
+        if take != retake.take:
+            raise GuardError(f"{job} must write take {retake.take} without overwriting any output")
 
 
 def cmd_submit(repo: Path, *, other: int, media: Path, ledger_path: Path, lock_path: Path,
                pid_path: Path, done_path: Path, archive_dir: Path | None,
                accounting_state: Path | None = None, spend_ledger: Path | None = None,
                recorder: str = "codex", submitter=None, still_maker=None,
-               test_archive: bool = False, retakes_j2583: bool = False) -> list[dict]:
+               test_archive: bool = False, retakes_j2583: bool = False,
+               retakes_j2626: bool = False) -> list[dict]:
     """Run one guarded tranche-2 batch when explicitly armed."""
+    retake = retake_job(retakes_j2583, retakes_j2626)
     if not submit_armed():
         raise SystemExit(
             "refusing submit: generation is not armed "
@@ -1668,8 +1745,12 @@ def cmd_submit(repo: Path, *, other: int, media: Path, ledger_path: Path, lock_p
         claim_pid(pid_path)
         rows = load_scope(repo)
         entries = read_ledger(ledger_path)
-        batch = (retake_batch(repo, rows, entries, media) if retakes_j2583
-                 else next_batch(rows, entries))
+        if retakes_j2583:
+            batch = retake_batch(repo, rows, entries, media)
+        elif retake:
+            batch = retake_batch(repo, rows, entries, media, retake.job)
+        else:
+            batch = next_batch(rows, entries)
         if not batch:
             return []
         if retakes_j2583:
@@ -1678,6 +1759,12 @@ def cmd_submit(repo: Path, *, other: int, media: Path, ledger_path: Path, lock_p
                 raise GuardError("J2583 reservation of 300 exceeds the approved ceiling")
             reservation = "J2583"
             reservation_cap = J2583_RESERVE_CAP
+        elif retake:
+            ceiling = retake_credit_cap(repo, retake.job)
+            if retake.reserve > ceiling:
+                raise GuardError(f"{retake.job} reservation of {retake.reserve} exceeds the approved ceiling")
+            reservation = retake.job
+            reservation_cap = retake.reserve
         else:
             reservation = "J2033"
             reservation_cap = MAX_TOTAL_CREDITS
@@ -1698,6 +1785,7 @@ def cmd_submit(repo: Path, *, other: int, media: Path, ledger_path: Path, lock_p
             test_archive=test_archive,
             inventory_rows=rows,
             retakes_j2583=retakes_j2583,
+            **({"retakes_j2626": True} if retakes_j2626 else {}),
         )
 
 
@@ -2185,6 +2273,8 @@ def main(argv: list[str] | None = None) -> int:
     submit.add_argument("--repo")
     submit.add_argument("--retakes-j2583", action="store_true",
                         help="only the first three approved second takes; Chief runner review required")
+    submit.add_argument("--retakes-j2626", action="store_true",
+                        help="only the two approved third takes (Chief 6798928858); never c2, never a fourth take")
     submit.add_argument("--media", required=False)
     submit.add_argument("--other-reservations", type=int, required=False)
     submit.add_argument("--ledger", required=False)
@@ -2217,6 +2307,7 @@ def main(argv: list[str] | None = None) -> int:
         launch.add_argument("--log", required=True)
         launch.add_argument("--done", required=True)
         launch.add_argument("--retakes-j2583", action="store_true")
+        launch.add_argument("--retakes-j2626", action="store_true")
     args = parser.parse_args(argv)
     if args.cmd == "reconcile-policy-refusal":
         evidence = json.loads(Path(args.evidence).read_text())
@@ -2239,7 +2330,7 @@ def main(argv: list[str] | None = None) -> int:
             repo=Path(args.repo), media=Path(args.media), archive=Path(args.archive),
             other=args.other_reservations, ledger=Path(args.ledger),
             lock=Path(args.lock), pid=Path(args.pid),
-            retakes_j2583=args.retakes_j2583)
+            retakes_j2583=args.retakes_j2583, retakes_j2626=args.retakes_j2626)
         load_scope(Path(args.repo))
         if args.cmd == "detach-command":
             sys.stdout.write(json.dumps(command) + "\n")
@@ -2273,6 +2364,7 @@ def main(argv: list[str] | None = None) -> int:
         done_path=Path(args.done) if args.done else runner_state_dir() / "runner.done",
         archive_dir=Path(args.archive) if args.archive else None,
         retakes_j2583=args.retakes_j2583,
+        retakes_j2626=args.retakes_j2626,
     )
     return 0
 

@@ -14,6 +14,10 @@ ROOT = Path(__file__).resolve().parents[1]
 EDIT = ROOT / "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project"
 RUNNER = EDIT / "_mint_flow_v05_tranche2.py"
 RECORD = ROOT / "jobs/reviews/J2583/PROMPT_CHANGE_2026-11-11.json"
+# Two of the four rows changed once more for their third takes (J2626, Chief 6798928858). These tests check the
+# wording as J2583 left it: for those two rows that is the later record's `old`, for the others the board itself.
+# tests/test_hos009_third_takes.py checks the later change, and that it starts exactly where this one ended.
+LATER = ROOT / "jobs/reviews/J2626/PROMPT_CHANGE_2026-11-11.json"
 RETAKES = EDIT / "TRANCHE2_RETAKES_J2583.json"
 CLOSING = "No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit."
 
@@ -60,11 +64,21 @@ def prompts(part: int) -> dict:
     return {p["id"]: p["prompt"] for p in json.loads(board(part).read_text())["plates"]}
 
 
+def later() -> dict:
+    return json.loads(LATER.read_text())
+
+
+def as_j2583_left(rid: str) -> str:
+    """The row's prompt as this change left it: the later record's `old` if the row changed again, else the board."""
+    changed_again = {r["id"]: r["old"] for r in later()["rows"]}
+    return changed_again.get(rid) or prompts(PART[rid])[rid]
+
+
 class TheWording(unittest.TestCase):
     def setUp(self):
         self.runner = load_runner()
         self.record = json.loads(RECORD.read_text())
-        self.now = {rid: prompts(PART[rid])[rid] for rid in ORDER}
+        self.now = {rid: as_j2583_left(rid) for rid in ORDER}
 
     def test_each_row_carries_the_chiefs_wording_word_for_word(self):
         for rid, wording in WORDING.items():
@@ -127,16 +141,24 @@ class ThePins(unittest.TestCase):
         rows = self.runner.load_scope(ROOT)
         self.assertEqual(len(rows), 20)
         by_id = {r.plate_id: r for r in rows}
+        changed_again = {r["id"] for r in later()["rows"]}
         for rid, wording in WORDING.items():
-            self.assertIn(wording, by_id[rid].prompt)
+            if rid not in changed_again:
+                self.assertIn(wording, by_id[rid].prompt)
+            self.assertIn(wording, as_j2583_left(rid))
 
     def test_the_record_and_the_scope_pin_each_board_as_it_is(self):
+        after = later()["boards"]
         for part in (2, 3, 4):
             name = f"part-0{part}_plates_v05.json"
             digest = self.runner.sha256_file(board(part))
             entry = self.record["boards"][name]
             with self.subTest(board=name):
-                self.assertEqual(entry["board_sha256_new"], digest)
+                if name in after:   # changed once more: this record pins it as it left it, the later one as it is
+                    self.assertEqual(entry["board_sha256_new"], after[name]["board_sha256_old"])
+                    self.assertEqual(after[name]["board_sha256_new"], digest)
+                else:
+                    self.assertEqual(entry["board_sha256_new"], digest)
                 self.assertNotEqual(entry["board_sha256_old"], digest)
                 pinned = {r["id"]: r["board_sha256"] for r in self.scope["rows"] if r["board"].endswith(name)}
                 self.assertEqual(sorted(pinned), entry["scope_rows_repinned"])
@@ -175,12 +197,21 @@ class TheRetakeScope(unittest.TestCase):
 
     def test_every_row_is_one_of_the_twenty_and_pins_its_board(self):
         scope = {(int(r["part"]), r["id"]): r for r in self.scope["rows"]}
+        after = later()["boards"]
         for row in self.retakes["rows"]:
             with self.subTest(row=row["id"]):
                 pinned = scope[(row["part"], row["id"])]
+                name = Path(row["board"]).name
+                digest = self.runner.sha256_file(ROOT / row["board"])
                 self.assertEqual(row["board"], pinned["board"])
-                self.assertEqual(row["board_sha256"], pinned["board_sha256"])
-                self.assertEqual(row["board_sha256"], self.runner.sha256_file(ROOT / row["board"]))
+                self.assertEqual(pinned["board_sha256"], digest)             # the tranche scope pins the board as it is
+                if name in after:
+                    # The board changed once more for the third takes (J2626). This file is left pinning the board
+                    # its second take was made from (Chief 6799192687), so the old flag refuses on the hash alone.
+                    self.assertEqual(row["board_sha256"], after[name]["board_sha256_old"])
+                    self.assertNotEqual(row["board_sha256"], digest)
+                else:
+                    self.assertEqual(row["board_sha256"], digest)
                 self.assertLessEqual(row["take"], self.runner.MAX_TAKES_PER_ROW)
 
     def test_the_last_shot_waits_for_the_one_it_continues(self):

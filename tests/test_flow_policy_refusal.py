@@ -386,7 +386,12 @@ class NoNameWordingTests(unittest.TestCase):
         later = json.loads((ROOT / "jobs/reviews/J2583/PROMPT_CHANGE_2026-11-11.json").read_text())
         later = later["boards"]["part-04_plates_v05.json"]
         self.assertEqual(self.record["board_sha256_new"], later["board_sha256_old"])
-        self.assertEqual(later["board_sha256_new"], digest)
+        # And once more after that (J2626, 11 Nov 2026: one row of this part gets a third take). The chain is this
+        # record, then J2583's, then J2626's, which pins the board as it is now.
+        latest = json.loads((ROOT / "jobs/reviews/J2626/PROMPT_CHANGE_2026-11-11.json").read_text())
+        latest = latest["boards"]["part-04_plates_v05.json"]
+        self.assertEqual(later["board_sha256_new"], latest["board_sha256_old"])
+        self.assertEqual(latest["board_sha256_new"], digest)
         self.assertNotEqual(self.record["board_sha256_old"], digest)
         scope = json.loads((self.EDIT / "TRANCHE2_SCOPE_J2026.json").read_text())
         pinned = {r["id"]: r["board_sha256"] for r in scope["rows"] if r["board"].endswith("part-04_plates_v05.json")}

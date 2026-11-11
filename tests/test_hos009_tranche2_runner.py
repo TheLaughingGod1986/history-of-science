@@ -110,9 +110,19 @@ class ScopeAndOrderTests(unittest.TestCase):
 
 class RetakeScopeTests(unittest.TestCase):
     def setUp(self):
+        from unittest.mock import patch
         self.rows = RUNNER.load_scope(ROOT)
         self.entries = [{"part": part, "plate_id": plate, "take": 1}
                         for part, plate in RUNNER.J2583_KEYS]
+        # Two boards changed once more after J2583 (J2626: third takes), and J2583's scope file is left pinning
+        # them as its second takes were made from (Chief 6799192687). These tests stand at J2583's time, so each
+        # pinned board reads as its pinned hash. tests/test_hos009_third_takes.py checks what the old flag does today.
+        scope = json.loads((EDIT / "TRANCHE2_RETAKES_J2583.json").read_text())
+        pins = {(ROOT / row["board"]).resolve(): row["board_sha256"] for row in scope["rows"]}
+        real = RUNNER.sha256_file
+        then = patch.object(RUNNER, "sha256_file", side_effect=lambda path: pins.get(Path(path).resolve()) or real(path))
+        then.start()
+        self.addCleanup(then.stop)
 
     def test_only_three_ordered_second_takes(self):
         from unittest.mock import patch

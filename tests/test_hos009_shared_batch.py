@@ -100,6 +100,7 @@ class SharedBatchTests(unittest.TestCase):
             root=Path(tmp);(root/'archive').mkdir()
             rows,calls,submit,technical=self.setup_batch(root)
             def failed_download(*args,**kwargs):
+                kwargs.pop('reservation_cap',None)  # the fixture submitter takes no cap (red on main since #522)
                 submit(*args,**kwargs)
                 raise RuntimeError('download failed after charge')
             with self.assertRaisesRegex(RuntimeError,'download failed'):
