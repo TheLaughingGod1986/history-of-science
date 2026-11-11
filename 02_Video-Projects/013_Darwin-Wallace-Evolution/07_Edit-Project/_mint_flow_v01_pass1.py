@@ -60,7 +60,9 @@ MAX_TAKES_PER_ROW = 1
 MAX_BATCH_ROWS = 5
 MAX_BATCH_CREDITS = 1000
 HEADROOM_FLOOR = 0
-DETACHED_HEADROOM_FLOOR = 3000  # Chief's HOS 013 detached-launch floor (J2643).
+# Chief's HOS 013 floor (J2643). Detached launch and a direct armed `submit`
+# both default here. `dry-run` stays on HEADROOM_FLOOR: it never reserves.
+DETACHED_HEADROOM_FLOOR = 3000
 
 MODEL_BY_QUALITY = {
     "Quality": "Veo 3.1 - Quality",
@@ -2713,7 +2715,7 @@ def main(argv: list[str] | None = None) -> int:
     submit_p.add_argument("--media", required=False)
     submit_p.add_argument("--archive", required=False)
     submit_p.add_argument("--other-reservations", type=int, required=False)
-    submit_p.add_argument("--floor", type=int, default=HEADROOM_FLOOR)
+    submit_p.add_argument("--floor", type=int, default=DETACHED_HEADROOM_FLOOR)
     submit_p.add_argument("--reservation", default=DEFAULT_RESERVATION)
     submit_p.add_argument("--recorder", default="gemini")
     submit_p.add_argument("--ledger", required=False)
