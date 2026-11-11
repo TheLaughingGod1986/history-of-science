@@ -430,10 +430,16 @@ def versioned_output(media: Path, part: int, plate_id: str, take: int) -> Path:
             / f"{plate_id}_t{take}.mp4")
 
 
-def next_version(media: Path, part: int, plate_id: str) -> tuple[int, Path]:
+def next_version(media: Path, part: int, plate_id: str, used=()) -> tuple[int, Path]:
+    """The first take number with no file and no ledger line.
+
+    `used` holds the take numbers the tranche ledger already has for this plate. A take Flow
+    refused leaves no file; numbering the retry t1 again would put a new SUBMITTING line over
+    the FAILED_POLICY one and then collide with the refused take's shared charge.
+    """
     for take in range(1, MAX_TAKES_PER_ROW + 1):
         dest = versioned_output(media, part, plate_id, take)
-        if not dest.exists():
+        if take not in used and not dest.exists():
             return take, dest
     raise GuardError(f"{plate_id} already has {MAX_TAKES_PER_ROW} versioned files; none will be overwritten")
 
@@ -816,6 +822,25 @@ class SharedFlowAccounting:
                     if row['id'] in indexed:
                         raise GuardError("duplicate ai_spend receipt identity")
                     indexed[row['id']] = row
+            # A refused take that reached the report before it was reversed is taken back
+            # by one more receipt, for exactly the amount written, so the report nets to
+            # zero. A refused take that never reached the report writes nothing. Nor does
+            # one already taken back, by this receipt or by a correction entered by hand
+            # with the ai_spend tool that names the charge.
+            for event in events:
+                if event["kind"] != "policy_refused":
+                    continue
+                key = event["id"]
+                spent = indexed.get("flow:spend:" + key)
+                taken_back = any(
+                    row.get("kind") == "spend" and type(row.get("amount")) in (int, float)
+                    and row["amount"] < 0 and key in f"{row.get('charge', '')} {row.get('what', '')}"
+                    for row in existing)
+                if spent is not None and not taken_back:
+                    rows.append(dict(at=event["at"], pool="flow", by=by, source="shared-flow",
+                                     charge=key, id="flow:reversal:" + key, kind="spend",
+                                     amount=-spent["amount"], film=spent["film"],
+                                     what=key + " refused by Flow policy, not charged"))
             missing = []
             for row in rows:
                 previous = indexed.get(row['id'])
@@ -1170,7 +1195,8 @@ def execute_batch(batch: list[Row], *, media: Path, ledger_path: Path, lock_path
                 row, media, in_scope_keys=keys, still_price=still_price, still_maker=still_maker,
                 ledger=entries,
             )
-            take, dest = next_version(media, row.part, row.plate_id)
+            take, dest = next_version(media, row.part, row.plate_id,
+                                      takes_recorded(entries, row.part, row.plate_id))
             dest.parent.mkdir(parents=True, exist_ok=True)
             submit_entry = submitting_record(row.plate_id, row.part, take, dest)
             append_ledger(ledger_path, submit_entry)
@@ -1309,7 +1335,8 @@ def execute_shared_batch(batch: list[Row], *, media: Path, ledger_path: Path,
                     Path(expected["path"]) != frame.resolve() or
                     sha256_file(frame) != expected["sha256"]):
                 raise GuardError("start still changed after inventory; no Create")
-            take, dest = next_version(media, row.part, row.plate_id)
+            take, dest = next_version(media, row.part, row.plate_id,
+                                      takes_recorded(entries, row.part, row.plate_id))
             dest.parent.mkdir(parents=True, exist_ok=True)
             charge = f'HOS:009:P{row.part:02d}:{row.plate_id}:t{take}'
             # Persist local intent before entering the browser; failures cannot
@@ -1437,6 +1464,11 @@ def cmd_plan(repo: Path, out: Path | None) -> dict:
 
 def submit_armed(env: dict | None = None) -> bool:
     return (env if env is not None else os.environ).get(SUBMIT_ENV) == "1"
+
+
+def takes_recorded(entries: list[dict], part: int, plate_id: str) -> set[int]:
+    return {int(e.get("take") or 0) for e in entries
+            if e.get("part") == part and e.get("plate_id") == plate_id}
 
 
 def latest_entries(entries: list[dict]) -> list[dict]:
