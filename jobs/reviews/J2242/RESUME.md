@@ -55,3 +55,59 @@ beside successful v03, and only v03 has RESULT.json. No detached render.
 3. Verify all unchanged output frames against the stored source hashes by PTS/duration; verify compressed audio packets and timestamps, original loudness and measured sync checkpoints. Run every mandatory media/package gate and produce the 168×94 contact sheet. Then J2243 and Chief review; no UAT, R2 or Studio action here.
 
 This exceeds a single unattended assembly run; released at a clean source-validation checkpoint under the user's 20-minute scope rule. All processes launched by this run have ended. No detached render needs resuming. No spend, generation, media replacement, upload or final approval.
+
+## Output-preservation verifier checkpoint — third run, 11 November 2026
+
+`_j2242_verify_output.py` now checks a future candidate against the pinned
+source evidence. Its change contract requires two separate inclusive range
+lists: `modified_frames` (pixels allowed to change) and `encoded_envelopes`
+(packets allowed to change). Envelopes must meet actual source IDR boundaries;
+modified frames must be contained inside them. Do not declare whole envelopes
+as modified merely to hide lossy changes to otherwise unchanged frames.
+
+It checks original integer frame PTS/durations and count, decoded SHA-256 on
+every unmodified frame (including inside encoded envelopes), packet SHA-256
+and PTS/DTS/duration/size/flags/side data outside encoded envelopes, and every
+original compressed audio packet with its timestamps and side data. It hashes
+the candidate before and after measurement to reject a concurrently changing
+file. Source evidence files must match their recorded hashes and byte sizes.
+Results explicitly leave loudness, VO sync and visual review unmeasured; this
+is a preservation check, not a media gate or approval. It does not verify
+new encoded-window codec parameters or render any missing captions/splices.
+
+`VERIFY_TESTS.txt`: 17 tests OK (4 source, 4 salon, 9 verifier). The verifier
+tests reject changed audio bytes/timestamps/skip samples, changed unchanged
+pixels inside encoded envelopes, copied-packet corruption, collapsed gaps,
+out-of-scope modifications, invalid ranges and non-IDR boundaries.
+`CHECK_ALL_VERIFY.txt`: ALL CHECKS PASS. Original planner's execution refusal
+remains in force; no v04 master has been assembled.
+
+To run on a candidate:
+
+```sh
+python3 02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_j2242_verify_output.py \
+  --candidate /path/to/candidate.mp4 --contract /path/to/change-contract.json \
+  --evidence jobs/reviews/J2242/SOURCE_PREFLIGHT.json --out /new/evidence/directory
+```
+
+The contract format is `{"modified_frames": [[2506, 2665]],
+"encoded_envelopes": [[2506, 2665]]}` for a salon-only experiment. This does
+not describe all changes in the eventual captioned film: derive those exact
+ranges from the actual render plan. Unchanged frames inside wider boundary
+envelopes still require pixel identity.
+
+The real unchanged-source identity self-check completed: 12,923/12,923 decoded
+frames, 12,923 copied video packets, and all 25,296 audio packets match their
+pinned baselines. The newly computed framehash file is byte-identical to the
+original stored framehash file (SHA-256 `7efa1f043cdf1ba83c87eef97a4e60e24904ac6d606336f17663d8054b150b65`).
+See `VERIFY_IDENTITY_SELFCHECK.json`. This tests v03 against itself, not v04.
+A concurrent-contract hash guard was added after that media run; comparison
+logic is unchanged. The output and change contract are both hashed before and
+after measurement in the final tool. No processes remain running.
+
+Next run should implement a bounded packet-splice experiment using the already
+verified salon intermediate and this verifier, preserving old master/audio and
+explicitly testing encoded-window SPS/PPS compatibility, decoder reset and
+DTS ordering at both joins. Do not call source IDR proof output-join validation.
+Then implement the remaining source reconstructions and caption renderer, and
+run every mandatory final gate. These cannot fit the current unattended run.

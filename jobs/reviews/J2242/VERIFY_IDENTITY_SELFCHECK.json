@@ -1,0 +1,18 @@
+{
+  "status": "PRESERVATION_CHECKS_ONLY",
+  "frames": 12923,
+  "unchanged_decoded_frames_verified": 12923,
+  "copied_video_packets_verified": 12923,
+  "audio_packets_verified": 25296,
+  "sync": "UNMEASURED",
+  "loudness": "UNMEASURED",
+  "visual_review": "OUTSTANDING",
+  "final_film_approval": false,
+  "candidate": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_precheck/master_v03/hos_008_master_v03.mp4",
+  "candidate_sha256": "cf1561c218bace7bc14ed3d625b0790a457027a90f392262f45ca7172723099b",
+  "source_master_sha256": "cf1561c218bace7bc14ed3d625b0790a457027a90f392262f45ca7172723099b",
+  "contract_sha256": "f97ba836dd2c0f89963ea6d5ef4313622e7ec0b0cb0c7d4643db217e70ad15e9",
+  "candidate_framehash_sha256": "7efa1f043cdf1ba83c87eef97a4e60e24904ac6d606336f17663d8054b150b65",
+  "identity_selfcheck": true,
+  "note": "Unchanged v03 source tested against its own pinned baseline; no v04 output exists. Concurrent-contract hash guard was added after this media run; comparison logic unchanged."
+}
