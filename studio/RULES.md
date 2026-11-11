@@ -11,7 +11,8 @@ Read `AGENTS.md` first. It holds the rules that are not this channel's alone: th
 The studio engine (in orbit-with-ben today; see its `docs/MULTI_CHANNEL_PLAN.md`) reads this folder to plug this channel in:
 
 - `channel.json`: who the channel is (slug `hos`, label `HOS`, YouTube handle), where its film state lives
-  (`00_Brand/Channel-Setup/PIPELINE.json`), its share of the studio's production places, and how its pictures are
+  (one `status.json` in each film's folder under `02_Video-Projects/`), its stages, its share of the studio's
+  production places, and how its pictures are
   made (`picture_route: flow_only`, which means Flow on the AI Ultra credits and never the priced Vertex route).
 - This file: where an agent working on a History of Science job finds the channel's own rules.
 

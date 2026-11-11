@@ -162,13 +162,13 @@ footer a{color:var(--ink-2)}
     <div class="box"><h3>Next steps</h3><ol id="next"></ol></div>
     <div class="box" id="creditbox"><h3>HOS credit left</h3><div id="credits"></div></div>
   </div>
-  <footer><b>HOS</b> reads <span class="mono">00_Brand/Channel-Setup/PIPELINE.json</span> in history-of-science (the file behind <a href="https://github.com/TheLaughingGod1986/history-of-science/blob/main/STATUS.md" target="_blank" rel="noopener">STATUS.md</a>). <b>OWB</b> reads each film's <span class="mono">02_Video-Projects/&lt;film&gt;/status.json</span> in orbit-with-ben (the files behind its <a href="https://github.com/TheLaughingGod1986/orbit-with-ben/blob/main/STATUS.md" target="_blank" rel="noopener">STATUS.md</a>; "chief" is shown as Grok). Both from <span class="mono">main</span>, re-read every 5–10 minutes.</footer>
+  <footer><b>HOS</b> shows each film's <span class="mono">02_Video-Projects/&lt;film&gt;/status.json</span> in history-of-science, as they were when this page was built (run <span class="mono">status_board.py</span> to build it again). <b>OWB</b> reads each film's <span class="mono">02_Video-Projects/&lt;film&gt;/status.json</span> in orbit-with-ben (the files behind its <a href="https://github.com/TheLaughingGod1986/orbit-with-ben/blob/main/STATUS.md" target="_blank" rel="noopener">STATUS.md</a>; "chief" is shown as Grok). Both from <span class="mono">main</span>, re-read every 5–10 minutes.</footer>
 </div>
 
 <script>
 const SNAPSHOT = /*SNAPSHOT*/null;
 const OWB_SNAPSHOT = /*OWB_SNAPSHOT*/null;
-const HOS_REPO = {owner:"TheLaughingGod1986", repo:"history-of-science", path:"00_Brand/Channel-Setup/PIPELINE.json"};
+const HOS_REPO = null;  // one status file per film since J2622: there is no single file to read live, so HOS shows the snapshot this page was built with
 const OWB = {owner:"TheLaughingGod1986", repo:"orbit-with-ben", dir:"02_Video-Projects"};
 const WORD = {done:"done", doing:"in progress", blocked:"blocked", todo:"to do", skip:"not needed"};
 const DAY = 86400000;
@@ -493,7 +493,7 @@ async function startLive(){
   if(!mcp){ owb.state = OWB_SNAPSHOT ? "snapshot" : "error"; if(!OWB_SNAPSHOT) owb.msg = "Orbit With Ben shows only when this page can read GitHub live."; render(); return; }
   const btn=$("refresh"); btn.hidden=false;
   btn.onclick = async()=>{ btn.disabled=true; retried.clear(); try{ await mcp.invalidate?.("github","get_file_contents"); }catch(e){} setTimeout(()=>btn.disabled=false,1500); };
-  unsub = mcp.watchTool("github","get_file_contents",HOS_REPO,ev=>{
+  if(HOS_REPO) unsub = mcp.watchTool("github","get_file_contents",HOS_REPO,ev=>{
     if(ev.type==="data"){
       const j = parsePipeline(ev.result);
       if(!j){ banner("GitHub answered, but the HOS board file could not be read. Showing the last good data."); if(source==="live") source="stale"; render(); return; }

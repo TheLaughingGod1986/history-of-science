@@ -133,3 +133,7 @@ node_modules/
 *_bearer
 *.cookies.json
 storage_state*.json
+
+# Built on demand from each film's status.json (J2622): python3 00_Brand/Channel-Setup/tools/status_board.py
+/STATUS.md
+/00_Brand/Channel-Setup/kanban/index.html
