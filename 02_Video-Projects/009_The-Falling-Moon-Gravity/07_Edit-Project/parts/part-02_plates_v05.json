@@ -449,7 +449,7 @@
       "engine_reason": "Continuation: same shot carried on by start-frame I2V from the last frame of the row before (span > one clip).",
       "i2v_from": "P2:08_the_apple last frame",
       "reference": "P2:08_the_apple last frame",
-      "prompt": "Premium Animistry-class 3D cartoon. Same shot continues from the last frame of 08_the_apple, camera keeps moving: a green apple with a red flush falls from the tree and lands in the grass a few feet from the bench. It never touches his head. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "prompt": "Premium Animistry-class 3D cartoon. Same shot continues from the last frame of 08_the_apple, camera keeps moving: The apple that already fell lies still in the grass for the entire shot and never moves. A second green apple with a red flush drops once from a branch straight down and lands in the grass beside it. Exactly two apples in the shot at the end. Nothing moves upward at any moment, and no apple returns to the branch. It never touches his head. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
       "use_s": 4.99,
       "vo_land": [
         "(continues) But it made him wonder.",
