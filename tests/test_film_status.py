@@ -75,13 +75,39 @@ class RoundTrip(unittest.TestCase):
     def test_through_files_on_disk(self):
         with tempfile.TemporaryDirectory() as t:
             films, ideas, board_file = Path(t) / "02_Video-Projects", Path(t) / "ideas", Path(t) / "BOARD.json"
+            channel = Path(t) / "channel.json"
             films.mkdir(), ideas.mkdir()
-            board, statuses = fs.split(MADE_UP)
-            for fid, path in fs.paths(MADE_UP, films, ideas).items():
-                path.parent.mkdir(parents=True)
-                path.write_text(fs.dump(statuses[fid]))
-            board_file.write_text(fs.dump(board))
-            self.assertEqual(fs.read(films, board_file), MADE_UP)
+            channel.write_text(json.dumps({"slug": "x", "stages": "from pipeline", "pipeline": {"kind": "pipeline_json", "path": "P.json"}}))
+            written = fs.write(MADE_UP, films, ideas, board_file, channel)
+            self.assertEqual(len(written), len(MADE_UP["films"]) + 2)
+            self.assertEqual(fs.read(films, board_file, channel), MADE_UP)
+            # the stage list is in the channel's settings, once, with the kind of job each stage is
+            settings = json.loads(channel.read_text())
+            self.assertEqual([s["key"] for s in settings["stages"]], ["script", "edit"])
+            self.assertEqual(settings["stages"][0], {"key": "script", "label": "Script", "weight": 60, "owner": "Grok", "kind": "script"})
+            self.assertEqual(settings["pipeline"], {"kind": "film_status", "path": "02_Video-Projects/*/status.json"})
+            self.assertEqual(settings["slug"], "x")                              # the rest of the settings is untouched
+            self.assertNotIn("stages", json.loads(board_file.read_text()))        # ... and not kept twice
+
+    def test_a_stage_with_no_kind_is_nobodys_to_route_and_still_comes_back(self):
+        stages = [{"key": "script", "label": "Script", "weight": 60, "owner": "Grok"}, {"key": "ben_ok", "label": "OK", "weight": 40, "owner": "Ben"}]
+        out = fs.stages_out(stages)
+        self.assertEqual((out[0]["kind"], "kind" in out[1]), ("script", False))
+        self.assertEqual(fs.stages_back(out), stages)
+
+    def test_every_kind_names_a_real_stage(self):
+        kept = json.loads(fs.CHANNEL.read_text())["stages"]                    # a list once the switch is made
+        stages = kept if isinstance(kept, list) else json.loads(fs.PIPELINE.read_text())["stages"]
+        self.assertEqual(sorted(set(fs.KINDS) - {s["key"] for s in stages}), [])
+
+    def test_a_stage_list_that_is_not_in_the_settings_is_an_error_not_a_guess(self):
+        with tempfile.TemporaryDirectory() as t:
+            films, board_file, channel = Path(t) / "02_Video-Projects", Path(t) / "BOARD.json", Path(t) / "channel.json"
+            films.mkdir()
+            board_file.write_text("{}")
+            channel.write_text(json.dumps({"stages": "from pipeline"}))
+            with self.assertRaisesRegex(ValueError, "`stages` must list each stage"):
+                fs.read(films, board_file, channel)
 
 
 class OneFilmsFile(unittest.TestCase):

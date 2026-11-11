@@ -12,8 +12,10 @@ generated from it and committed. Every pull request that moved a film touched th
 
 What goes where:
   02_Video-Projects/<NNN_Name>/status.json   one film: its number, title, dates, summary and every stage
-  00_Brand/Channel-Setup/BOARD.json          what is the channel's and no film's: the stages and their weights and
-                                             owners, the next-steps lines, the credit lines, the board's address
+  studio/channel.json `stages`               the channel's stages in order, each with its label, weight and default
+                                             owner, and the kind of job it is (the studio reads these too)
+  00_Brand/Channel-Setup/BOARD.json          the rest that is the channel's and no film's: the next-steps lines, the
+                                             credit lines, the board's address
 
 A film's file is in the shape Orbit With Ben's films use (`film`, `title`, `air`, `stages` with a `state` for each,
 `claims`, `next`), so one reader serves both channels. Everything this channel records beyond that (`ready_by`,
@@ -32,6 +34,12 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[3]
 PIPELINE = ROOT / "00_Brand/Channel-Setup/PIPELINE.json"
 BOARD = ROOT / "00_Brand/Channel-Setup/BOARD.json"
+CHANNEL = ROOT / "studio/channel.json"
+# The kind of job each stage is. The studio routes a stage that is still to do, and that nobody has, to the worker
+# for its kind. A stage with no kind here (Ben's OK) is nobody's to route.
+KINDS = {"topic": "review", "script": "script", "facts": "facts", "package": "listing", "vo": "vo",
+         "shorts_scripts": "script", "shorts_vo": "vo", "picture": "video", "edit": "assembly", "thumbnails": "chart",
+         "scheduled": "studio"}
 FILMS = ROOT / "02_Video-Projects"
 IDEAS = ROOT / "00_Brand/Channel-Setup/ideas"
 STATUS = "status.json"
@@ -119,7 +127,34 @@ def paths(data: dict, films: Path = FILMS, ideas: Path = IDEAS) -> dict:
     return {f["id"]: folder_for(f, films, ideas) / STATUS for f in data.get("films") or []}
 
 
-def read(films: Path = FILMS, board: Path = BOARD) -> dict:
+def stages_out(stages: list, kinds: dict = KINDS) -> list:
+    """The stage list as the channel's settings keep it: each stage as it was, plus the kind of job it is."""
+    return [dict(s, **({"kind": kinds[s["key"]]} if s["key"] in kinds else {})) for s in stages]
+
+
+def stages_back(stages: list) -> list:
+    """The way back: the stage list without the kinds, as PIPELINE.json had it."""
+    return [{k: v for k, v in s.items() if k != "kind"} for s in stages]
+
+
+def write(data: dict, films: Path = FILMS, ideas: Path = IDEAS, board: Path = BOARD, channel: Path = CHANNEL) -> list:
+    """Write every film's status file, the stage list into the channel's settings, and the rest into BOARD.json.
+    Returns the paths written."""
+    rest, statuses = split(data)
+    written = []
+    for fid, path in paths(data, films, ideas).items():
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(dump(statuses[fid]))
+        written.append(path)
+    settings = json.loads(channel.read_text())
+    settings["stages"] = stages_out(rest.pop("stages"))
+    settings["pipeline"] = {"kind": "film_status", "path": f"{films.name}/*/{STATUS}"}     # how the studio is told
+    channel.write_text(json.dumps(settings, indent=2) + "\n")
+    board.write_text(dump(rest))
+    return written + [channel, board]
+
+
+def read(films: Path = FILMS, board: Path = BOARD, channel: Path = CHANNEL) -> dict:
     """The whole document, put back together from the files on disk."""
     statuses = {}
     for p in sorted(films.glob(f"*/{STATUS}")):
@@ -127,7 +162,10 @@ def read(films: Path = FILMS, board: Path = BOARD) -> dict:
         if doc["film"] in statuses:
             raise ValueError(f"two status files are for film {doc['film']}")
         statuses[doc["film"]] = doc
-    return join(json.loads(board.read_text()), statuses)
+    stages = json.loads(channel.read_text()).get("stages")
+    if not isinstance(stages, list) or not all(isinstance(s, dict) and s.get("key") for s in stages):
+        raise ValueError(f"{channel.name}: `stages` must list each stage with its key, label, weight and owner")
+    return join(dict(json.loads(board.read_text()), stages=stages_back(stages)), statuses)
 
 
 def dump(doc: dict) -> str:
@@ -151,12 +189,10 @@ def main(argv=None) -> int:
     for fid, path in where.items():
         new = "" if path.parent.is_dir() else "  (new folder)"
         print(f"{'write' if a.write else 'would write'} {path.relative_to(ROOT)}{new}")
-        if a.write:
-            path.parent.mkdir(parents=True, exist_ok=True)
-            path.write_text(dump(statuses[fid]))
-    print(f"{'write' if a.write else 'would write'} {BOARD.relative_to(ROOT)}")
+    for path in (CHANNEL, BOARD):
+        print(f"{'write' if a.write else 'would write'} {path.relative_to(ROOT)}" + ("  (its `stages`)" if path == CHANNEL else ""))
     if a.write:
-        BOARD.write_text(dump(board))
+        write(data)
         if read() != data:
             print("the files on disk do not give PIPELINE.json back: check them before anything else changes", file=sys.stderr)
             return 1

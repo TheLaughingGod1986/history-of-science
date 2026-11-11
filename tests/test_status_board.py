@@ -54,18 +54,20 @@ class FromEachFilmsOwnFile(unittest.TestCase):
         self.tmp = tempfile.TemporaryDirectory()
         self.addCleanup(self.tmp.cleanup)
         root = Path(self.tmp.name)
-        self.films, self.board = root / "02_Video-Projects", root / "BOARD.json"
+        self.films, self.board, self.channel = root / "02_Video-Projects", root / "BOARD.json", root / "channel.json"
         for fid, doc in FILMS.items():
             folder = self.films / f"{fid}_X"
             folder.mkdir(parents=True)
             (folder / "status.json").write_text(json.dumps(doc))
-        self.board.write_text(json.dumps(BOARD))
-        for name, value in (("FILMS", self.films), ("BOARD", self.board)):
+        self.board.write_text(json.dumps({k: v for k, v in BOARD.items() if k != "stages"}))
+        self.channel.write_text(json.dumps({"stages": fs.stages_out(BOARD["stages"])}))
+        for name, value in (("FILMS", self.films), ("BOARD", self.board), ("CHANNEL", self.channel)):
             patch = mock.patch.object(fs, name, value)
             patch.start()
             self.addCleanup(patch.stop)
         # read() takes its defaults when it is defined, so hand it the made-up places
-        patch = mock.patch.object(fs, "read", lambda films=self.films, board=self.board, _read=fs.read: _read(films, board))
+        patch = mock.patch.object(fs, "read", lambda films=self.films, board=self.board, channel=self.channel, _read=fs.read:
+                                  _read(films, board, channel))
         patch.start()
         self.addCleanup(patch.stop)
 
