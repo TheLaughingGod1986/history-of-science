@@ -1,0 +1,11 @@
+{
+  "job": "J2596",
+  "credits_before": 11690,
+  "credits_after": 11690,
+  "price_line": "Generating will use 0 credits",
+  "model_display": "Nano Banana 2.1",
+  "sha256": "8d9445b044fa25db117ebe81e1e16d0a3dcd05c40ff6a86fd6b3ab99cb2f96a0",
+  "prompt": "Match the attached likeness reference: the same people, room, costumes and premium stylised 3D cartoon look, warm cinematic salon lighting. Landscape 16:9. The lecturer holds a clear glass tube horizontally, level and still. The lady guest raises her hand, with one knuckle already very close to the end of the tube, almost touching it. Her powdered wig is smooth and neat, with a clean, solid outline. The end of the tube is empty. The air between the tube and her face is clear.",
+  "reference": "part02/refs/v03_flow_stills/02_salon_spark_t1.png",
+  "status": "generated; unreviewed"
+}
