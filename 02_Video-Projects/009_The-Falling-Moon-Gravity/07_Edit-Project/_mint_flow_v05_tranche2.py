@@ -5,6 +5,10 @@ Plans and, only when generation is explicitly armed, mints the 20 approved v05
 rows in TRANCHE2_SCOPE_J2026.json. This file does not import or modify
 the v04 tranche-1 mint script.
 
+A row the Chief has since replaced with a drawn diagram stays in the scope, marked
+`replaced_by`, and its board is still pinned. This tool never makes it again: it is
+left out of the rows every command works from (J2636).
+
 Default command is `plan`. It reads the scope, checks board hashes, orders the
 rows and writes a plan. It does not open Chrome, Flow, or a socket, and it
 spends nothing.
@@ -14,7 +18,7 @@ Chief passes this runner. A submit run still has to pass the credit guards
 below before it can call Flow.
 
 Guards (J2033_PREFLIGHT.md / J2026):
-- only those 20 v05 rows
+- only those 20 v05 rows, and never one marked `replaced_by` (now a drawn diagram)
 - parents P02:10_how_high and P03:07_ball_to_moon first
 - continuation start frames are the last frame of the named parent clip
 - file state GENERATED and review PENDING_REVIEW; never KEEP
@@ -154,8 +158,27 @@ def parse_parent(i2v: str | None) -> ParentRef | None:
     return ParentRef(part=int(match.group(1)), plate_id=match.group(2), raw=i2v.strip())
 
 
+def replaced_by_a_diagram(raw: dict, plate: dict) -> None:
+    """Check a scope row the Chief has replaced with a drawn diagram.
+
+    The scope row names the job that drew it and the ruling, and its board no longer allows or prices a mint for
+    it. A row that is one and not the other (marked replaced while the board still allows a mint) refuses the run.
+    """
+    note = raw.get("replaced_by")
+    if (not isinstance(note, dict) or note.get("route") != "code-graphic"
+            or not re.fullmatch(r"J\d{4}", str(note.get("job") or "")) or not str(note.get("ruling") or "").strip()):
+        raise GuardError(f"{raw['id']}: `replaced_by` must give the route `code-graphic`, the job and the Chief's ruling")
+    if (plate.get("route") != "code-graphic" or plate.get("tranche") != 0
+            or plate.get("generation_authorized") is not False or int(plate.get("flow_credits_try1") or 0) != 0):
+        raise GuardError(f"{raw['id']} is marked as replaced by a drawn diagram, but its board still allows a mint")
+
+
 def load_scope(repo: Path) -> list[Row]:
-    """Return the 20 approved v05 rows, after the board files match the scope hashes."""
+    """Return the approved v05 rows this tool may make, after the board files match the scope hashes.
+
+    The scope lists the 20 rows that were approved. Every one must match its pinned board. A row marked
+    `replaced_by` is checked and then left out, so no command here can plan, price or make it.
+    """
     scope_path = repo / EDIT_REL / SCOPE_NAME
     scope = json.loads(scope_path.read_text())
     raw_rows = scope.get("rows") or []
@@ -163,6 +186,7 @@ def load_scope(repo: Path) -> list[Row]:
         raise GuardError(f"scope has {len(raw_rows)} rows, expected 20")
     rows: list[Row] = []
     seen: set[tuple[int, str]] = set()
+    replaced: set[tuple[int, str]] = set()
     for raw in raw_rows:
         board_rel = Path(raw["board"])
         if "v05" not in board_rel.name:
@@ -183,6 +207,14 @@ def load_scope(repo: Path) -> list[Row]:
             raise GuardError(f"{raw['id']} part {part} is outside parts 1-5")
         if f"part-0{part}_plates_v05.json" not in board_rel.name:
             raise GuardError(f"{raw['id']} board file does not match part {part}")
+        key = (part, raw["id"])
+        if key in seen:
+            raise GuardError(f"duplicate scope row {key}")
+        seen.add(key)
+        if "replaced_by" in raw:
+            replaced_by_a_diagram(raw, plate)
+            replaced.add(key)
+            continue
         if plate.get("tranche") != 2 or plate.get("route") != "flow-first":
             raise GuardError(f"{raw['id']} is not an authorised flow-first tranche-2 plate")
         if plate.get("quality") != "Quality" or raw.get("quality") != "Quality":
@@ -192,10 +224,6 @@ def load_scope(repo: Path) -> list[Row]:
         try1 = int(plate.get("flow_credits_try1") or 0)
         if try1 != MAX_CREDITS_PER_TAKE or int(raw.get("max_takes") or 0) != MAX_TAKES_PER_ROW:
             raise GuardError(f"{raw['id']} price or take cap does not match the scope")
-        key = (part, raw["id"])
-        if key in seen:
-            raise GuardError(f"duplicate scope row {key}")
-        seen.add(key)
         i2v = plate.get("i2v_from")
         rows.append(Row(
             part=part,
@@ -209,9 +237,12 @@ def load_scope(repo: Path) -> list[Row]:
             prompt=str(plate.get("prompt") or ""),
             use_s=float(raw["use_s"]),
         ))
-    missing = [f"P{part:02d}:{plate_id}" for part, plate_id in PARENTS if (part, plate_id) not in seen]
+    missing = [f"P{part:02d}:{plate_id}" for part, plate_id in PARENTS if (part, plate_id) not in seen - replaced]
     if missing:
         raise GuardError("scope is missing parents " + ", ".join(missing))
+    for row in rows:
+        if row.parent is not None and row.parent.key in replaced:
+            raise GuardError(f"{row.plate_id} continues {row.parent.raw.split()[0]}, which is now a drawn diagram")
     return rows
 
 
