@@ -211,7 +211,7 @@
       "flow_clip_s": 8,
       "try1_credits": 100,
       "explorer": false,
-      "prompt_sha256": "d84c4baf0a010b047b24382347e9e2bd704b45b5878d30a69ed3fe32577c09bc"
+      "prompt_sha256": "aabfb4c76988892e9306dd087c7cad68d6e0b98b321b1b435fa1878ba5da7523"
     },
     {
       "index": 12,
@@ -643,7 +643,7 @@
       "flow_clip_s": 8,
       "try1_credits": 100,
       "explorer": false,
-      "prompt_sha256": "c50e8fcdbaa2f5c1b8e0d78354fb7b8e28c7cf990daeb042a68a2da1bd28f4b3"
+      "prompt_sha256": "12ceb4288623013fc1c58b9d060dfecb2bfefa878878ae84ebf66f3e6caffd95"
     },
     {
       "index": 48,
@@ -655,7 +655,7 @@
       "flow_clip_s": 8,
       "try1_credits": 100,
       "explorer": false,
-      "prompt_sha256": "d2958916f22e47a75f57821cbf902e6bcd4719e330eb360388ebe254985e1cee"
+      "prompt_sha256": "269014053bf05cf3065e46e10d1c42f245e182790a4a6d78577a4e9c04dbc960"
     },
     {
       "index": 49,
@@ -787,7 +787,7 @@
       "flow_clip_s": 8,
       "try1_credits": 100,
       "explorer": false,
-      "prompt_sha256": "5091bd5803fef7097a9aac2f75eacf98e2a47e0d6c30b7c5ed9d04917ea4f976"
+      "prompt_sha256": "74ae26fe0cf3c46072ced0bc2bbf4172c7ee66e7e97e68b5a70024ca6d1aaea0"
     },
     {
       "index": 60,

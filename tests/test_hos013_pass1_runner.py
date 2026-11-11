@@ -1399,6 +1399,8 @@ class NoNameWordingTests(unittest.TestCase):
     """Chief ruling, desk 6785808071 item 4: no prompt sent to Flow names a real person."""
 
     RECORD = ROOT / "jobs/reviews/J2529/PROMPT_CHANGE_2026-11-11.json"
+    # Later changes to the same prompts, in order. Each one's `old` is the wording the one before left.
+    LATER = [ROOT / "jobs/reviews/J2529/PROMPT_CHANGE_2026-11-11_beard.json"]
     NAMES = ("Darwin", "Wallace", "Lawson", "Gould", "Lyell", "Hooker", "Murray", "Jenkin", "Mendel", "Charles",
              "Emma", "Alfred", "Russel", "Nicholas", "Joseph", "Fleeming", "Gregor", "FitzRoy", "Malthus", "Huxley",
              "Owen", "Henslow")
@@ -1407,6 +1409,12 @@ class NoNameWordingTests(unittest.TestCase):
     def setUpClass(cls):
         cls.rows = RUNNER.load_scope(ROOT)
         cls.record = json.loads(cls.RECORD.read_text())
+        cls.later = [json.loads(path.read_text()) for path in cls.LATER]
+        # The wording each changed row should hold now: the newest record that touches it.
+        cls.current = {}
+        for record in [cls.record] + cls.later:
+            for change in record["rows"]:
+                cls.current[change["row_id"]] = change["new"]
 
     def test_no_prompt_of_the_71_names_a_real_person(self):
         import re
@@ -1422,22 +1430,51 @@ class NoNameWordingTests(unittest.TestCase):
         self.assertEqual(self.record["rows_total"], RUNNER.EXPECTED_ROW_COUNT)
         for change in self.record["rows"]:
             with self.subTest(row=change["row_id"]):
-                self.assertEqual(prompts[change["row_id"]], change["new"])
+                self.assertEqual(prompts[change["row_id"]], self.current[change["row_id"]])
                 self.assertNotEqual(change["old"], change["new"])
                 # The fixed opening and closing of the prompt are untouched.
                 self.assertEqual(change["old"][:36], change["new"][:36])
                 self.assertEqual(change["old"][-80:], change["new"][-80:])
-        for part, meta in self.record["boards"].items():
+        # Each later record starts from the wording the one before left, and the newest pins the boards as they are.
+        left = {change["row_id"]: change["new"] for change in self.record["rows"]}
+        boards = dict(self.record["boards"])
+        for record in self.later:
+            for change in record["rows"]:
+                with self.subTest(later=record["ruling"], row=change["row_id"]):
+                    self.assertEqual(change["old"], left[change["row_id"]])
+                    self.assertEqual(change["old"][:36], change["new"][:36])
+                    self.assertEqual(change["old"][-80:], change["new"][-80:])
+                    left[change["row_id"]] = change["new"]
+            for part, meta in record["boards"].items():
+                self.assertEqual(meta["sha256_old"], boards[part]["sha256_new"], part)
+                boards[part] = meta
+        for part, meta in boards.items():
             self.assertEqual(RUNNER.sha256_file(ROOT / meta["path"]), meta["sha256_new"], part)
+
+    def test_before_1862_the_naturalist_of_down_house_is_not_bearded(self):
+        # Chief ruling, desk 6786709657 item 1. With the name out of the prompt the description is the likeness.
+        prompts = {row.row_id: row.prompt for row in self.rows}
+        for row_id in ("P4:08_midpoint_twist_packet", "P4:09a_darwin_reads_wallace", "P5:05a_darwin_writes_origin"):
+            with self.subTest(row=row_id):
+                self.assertNotIn("bearded", prompts[row_id])
+                self.assertIn("clean-shaven with long greying side whiskers", prompts[row_id])
+        split = prompts["P1:09_wallace_hut_split"]
+        left, right = split.split("; on the right, ")
+        self.assertIn("clean-shaven with long greying side whiskers", left)     # Down House, June 1858
+        self.assertNotIn("bearded", left)
+        self.assertIn("bearded field naturalist", right)                        # the other man, in the hut
+        # After 1866 he was bearded: the row with the uncut 1866 journal on the shelf keeps it.
+        self.assertIn("older bearded English naturalist", prompts["P5:10_darwin_worried_shelf"])
 
     def test_the_builder_holds_the_same_wording(self):
         # The boards are written by the builder. If it kept the old wording, the next rebuild would
         # bring the names back (and the scope would refuse the boards).
         source = (EDIT / "_build_picture_plan_v01.py").read_text()
-        for change in self.record["rows"]:
-            with self.subTest(row=change["row_id"]):
-                self.assertIn(json.dumps(change["new"], ensure_ascii=False), source)
-                self.assertNotIn(json.dumps(change["old"], ensure_ascii=False), source)
+        for record in [self.record] + self.later:
+            for change in record["rows"]:
+                with self.subTest(row=change["row_id"]):
+                    self.assertIn(json.dumps(self.current[change["row_id"]], ensure_ascii=False), source)
+                    self.assertNotIn(json.dumps(change["old"], ensure_ascii=False), source)
 
 
 if __name__ == "__main__":
