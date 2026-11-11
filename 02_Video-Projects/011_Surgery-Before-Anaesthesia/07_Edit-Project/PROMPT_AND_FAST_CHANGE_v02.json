@@ -1,0 +1,585 @@
+{
+  "job": "J2475",
+  "film": "HOS:011",
+  "plan_version": "PICTURE_PLAN_v02",
+  "date": "2026-11-11",
+  "by": "gemini",
+  "ruling": "history-of-science#180 comment 6786715647 (Chief Grok, 11 Nov 2026 04:06Z)",
+  "summary": {
+    "fast_rows_in_v01": 23,
+    "fast_rows_in_v02": 0,
+    "fast_swapped_to_free": 5,
+    "fast_upgraded_to_quality": 18,
+    "prompts_reworded_no_person_names": 47,
+    "v01_flow_credits_try1": 5030,
+    "v01_flow_credits_expected": 12892,
+    "v02_flow_credits_try1": 6600,
+    "v02_flow_credits_expected": 17094,
+    "v02_vertex_try1_gbp": 105.6,
+    "v02_vertex_expected_gbp": 273.24
+  },
+  "fast_row_dispositions": [
+    {
+      "row_id": "P1:01b",
+      "old_source_kind": "mint_fast",
+      "new_source_kind": "mint_quality",
+      "old_flow_credits_try1": 10,
+      "new_flow_credits_try1": 100,
+      "reason": "In 0:00–0:30 HOS-2026-11-E2 open (physical proof 0:05–0:15) and reused in Short A; upgraded to Veo 3.1 Quality."
+    },
+    {
+      "row_id": "P1:02a",
+      "old_source_kind": "mint_fast",
+      "new_source_kind": "mint_quality",
+      "old_flow_credits_try1": 10,
+      "new_flow_credits_try1": 100,
+      "reason": "In 0:00–0:30 HOS-2026-11-E2 open (physical proof 0:05–0:15); upgraded to Veo 3.1 Quality."
+    },
+    {
+      "row_id": "P1:03b",
+      "old_source_kind": "mint_fast",
+      "new_source_kind": "mint_quality",
+      "old_flow_credits_try1": 10,
+      "new_flow_credits_try1": 100,
+      "reason": "In 0:00–0:30 HOS-2026-11-E2 open (>=7 moving plates) and reused in Short A; upgraded to Veo 3.1 Quality."
+    },
+    {
+      "row_id": "P1:07b",
+      "old_source_kind": "mint_fast",
+      "new_source_kind": "mint_quality",
+      "old_flow_credits_try1": 10,
+      "new_flow_credits_try1": 100,
+      "reason": "Follows full-frame code graphic P1:07a_cg_three_chapters_map and provides tail reuse for P5:16b; upgraded to Veo 3.1 Quality."
+    },
+    {
+      "row_id": "P1:09a",
+      "old_source_kind": "mint_fast",
+      "new_source_kind": "mint_quality",
+      "old_flow_credits_try1": 10,
+      "new_flow_credits_try1": 100,
+      "reason": "Precedes newly swapped free_archive row P1:09b; upgraded to Veo 3.1 Quality so no back-to-back graphics occur."
+    },
+    {
+      "row_id": "P1:09b",
+      "old_source_kind": "mint_fast",
+      "new_source_kind": "free_archive",
+      "old_flow_credits_try1": 10,
+      "new_flow_credits_try1": 0,
+      "reason": "Swapped to £0 free_archive composite (Ambroise Paré, Oeuvres, 1585 surgical treatise, Wellcome L0002460, Public domain) between moving 3D plates P1:09a and P1:09c."
+    },
+    {
+      "row_id": "P2:04b",
+      "old_source_kind": "mint_fast",
+      "new_source_kind": "mint_quality",
+      "old_flow_credits_try1": 10,
+      "new_flow_credits_try1": 100,
+      "reason": "Sandwiched between free_archive P2:04a_arch_davy_1800 and free_archive P2:05a_arch_laughing_gas_broadside; upgraded to Veo 3.1 Quality."
+    },
+    {
+      "row_id": "P2:09a",
+      "old_source_kind": "mint_fast",
+      "new_source_kind": "mint_quality",
+      "old_flow_credits_try1": 10,
+      "new_flow_credits_try1": 100,
+      "reason": "Immediately precedes free_archive P2:09b_arch_long_1849; upgraded to Veo 3.1 Quality."
+    },
+    {
+      "row_id": "P2:10a",
+      "old_source_kind": "mint_fast",
+      "new_source_kind": "mint_quality",
+      "old_flow_credits_try1": 10,
+      "new_flow_credits_try1": 100,
+      "reason": "Sandwiched between free_archive P2:09b_arch_long_1849 and chapter card P3:01_card_p03; upgraded to Veo 3.1 Quality."
+    },
+    {
+      "row_id": "P3:05b",
+      "old_source_kind": "mint_fast",
+      "new_source_kind": "free_archive",
+      "old_flow_credits_try1": 10,
+      "new_flow_credits_try1": 0,
+      "reason": "Swapped to £0 free_archive composite (Morton's two-necked glass ether inhaler engraving, Wellcome M0011571, Public domain) between moving 3D plates P3:05a and P3:06a."
+    },
+    {
+      "row_id": "P3:10a",
+      "old_source_kind": "mint_fast",
+      "new_source_kind": "mint_quality",
+      "old_flow_credits_try1": 10,
+      "new_flow_credits_try1": 100,
+      "reason": "Sandwiched between free_archive P3:09a_arch_ether_dome_1847 and chapter card P4:01_card_p04; upgraded to Veo 3.1 Quality."
+    },
+    {
+      "row_id": "P4:02b",
+      "old_source_kind": "mint_fast",
+      "new_source_kind": "mint_quality",
+      "old_flow_credits_try1": 10,
+      "new_flow_credits_try1": 100,
+      "reason": "Immediately precedes free_archive P4:03a_arch_letheon_patent; upgraded to Veo 3.1 Quality."
+    },
+    {
+      "row_id": "P4:04b",
+      "old_source_kind": "mint_fast",
+      "new_source_kind": "mint_quality",
+      "old_flow_credits_try1": 10,
+      "new_flow_credits_try1": 100,
+      "reason": "Immediately precedes code_graphic P4:04c_cg_anesthesia_etymology; upgraded to Veo 3.1 Quality."
+    },
+    {
+      "row_id": "P4:05a",
+      "old_source_kind": "mint_fast",
+      "new_source_kind": "mint_quality",
+      "old_flow_credits_try1": 10,
+      "new_flow_credits_try1": 100,
+      "reason": "Immediately follows code_graphic P4:04c_cg_anesthesia_etymology; upgraded to Veo 3.1 Quality."
+    },
+    {
+      "row_id": "P4:07a",
+      "old_source_kind": "mint_fast",
+      "new_source_kind": "mint_quality",
+      "old_flow_credits_try1": 10,
+      "new_flow_credits_try1": 100,
+      "reason": "Immediately follows code_graphic P4:06a_cg_master_timeline; upgraded to Veo 3.1 Quality."
+    },
+    {
+      "row_id": "P4:08a",
+      "old_source_kind": "mint_fast",
+      "new_source_kind": "mint_quality",
+      "old_flow_credits_try1": 10,
+      "new_flow_credits_try1": 100,
+      "reason": "Immediately precedes free_archive P4:08b_arch_ether_monument; upgraded to Veo 3.1 Quality."
+    },
+    {
+      "row_id": "P4:09a",
+      "old_source_kind": "mint_fast",
+      "new_source_kind": "mint_quality",
+      "old_flow_credits_try1": 10,
+      "new_flow_credits_try1": 100,
+      "reason": "Immediately follows free_archive P4:08b_arch_ether_monument and reused in Short B; upgraded to Veo 3.1 Quality."
+    },
+    {
+      "row_id": "P5:04a",
+      "old_source_kind": "mint_fast",
+      "new_source_kind": "free_archive",
+      "old_flow_credits_try1": 10,
+      "new_flow_credits_try1": 0,
+      "reason": "Swapped to £0 free_archive composite (First ether operation in England at UCH London, Wellcome L0011346, Public domain) between moving 3D plates P5:03b and P5:04b."
+    },
+    {
+      "row_id": "P5:07b",
+      "old_source_kind": "mint_fast",
+      "new_source_kind": "mint_quality",
+      "old_flow_credits_try1": 10,
+      "new_flow_credits_try1": 100,
+      "reason": "Immediately follows free_archive P5:07a_arch_snow_chloroform_1858; upgraded to Veo 3.1 Quality."
+    },
+    {
+      "row_id": "P5:09a",
+      "old_source_kind": "mint_fast",
+      "new_source_kind": "mint_quality",
+      "old_flow_credits_try1": 10,
+      "new_flow_credits_try1": 100,
+      "reason": "Immediately precedes code_graphic P5:09b_cg_safety_stadium; upgraded to Veo 3.1 Quality."
+    },
+    {
+      "row_id": "P5:11b",
+      "old_source_kind": "mint_fast",
+      "new_source_kind": "mint_quality",
+      "old_flow_credits_try1": 10,
+      "new_flow_credits_try1": 100,
+      "reason": "Immediately precedes code_graphic P5:12a_cg_anesthetist_monitor; upgraded to Veo 3.1 Quality."
+    },
+    {
+      "row_id": "P5:14a",
+      "old_source_kind": "mint_fast",
+      "new_source_kind": "free_archive",
+      "old_flow_credits_try1": 10,
+      "new_flow_credits_try1": 0,
+      "reason": "Swapped to £0 free_archive composite (1860s Victorian surgical ward & carbolic spray engraving, Wellcome L0002011, Public domain) between moving 3D plates P5:13b and P5:14b."
+    },
+    {
+      "row_id": "P5:16a",
+      "old_source_kind": "mint_fast",
+      "new_source_kind": "code_graphic",
+      "old_flow_credits_try1": 10,
+      "new_flow_credits_try1": 0,
+      "reason": "Swapped to £0 house inked triptych code_graphic ('1800: A GAS · 1844: A BAG · 1846: A GLOBE') between moving 3D plates P5:15a and P5:16b_reuse_pocket_watch_to_globe."
+    }
+  ],
+  "prompt_rewrites": [
+    {
+      "row_id": "P1:03a",
+      "source_kind": "mint_quality",
+      "old_visual": "Tall, broad-shouldered Scottish surgeon Robert Liston in an 1840s dark frock coat stands beside the wooden operating table under the high skylight of University College Hospital, London, nodding once to the gallery as students lift their pocket watches.",
+      "new_visual": "A tall, broad-shouldered 52-year-old Scottish surgeon, clean-shaven with short greying side whiskers and an 1840s dark wool frock coat, stands beside the wooden operating table under the high skylight of a London hospital theatre, nodding once to the gallery as students lift their pocket watches.",
+      "old_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. Tall, broad-shouldered Scottish surgeon Robert Liston in an 1840s dark frock coat stands beside the wooden operating table under the high skylight of University College Hospital, London, nodding once to the gallery as students lift their pocket watches. Camera: push-in.",
+      "new_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. A tall, broad-shouldered 52-year-old Scottish surgeon, clean-shaven with short greying side whiskers and an 1840s dark wool frock coat, stands beside the wooden operating table under the high skylight of a London hospital theatre, nodding once to the gallery as students lift their pocket watches. Camera: push-in."
+    },
+    {
+      "row_id": "P1:04a",
+      "source_kind": "mint_quality",
+      "old_visual": "Golden October 1846 afternoon light streams down through the high glass dome of Massachusetts General Hospital in Boston onto the empty red-plush operating chair and two-necked glass inhaler globe waiting on a side table.",
+      "new_visual": "Golden October 1846 afternoon light streams down through the high glass dome of a classic wooden Boston hospital amphitheatre onto the empty red-plush operating chair and two-necked glass inhaler globe waiting on a side table.",
+      "old_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. Golden October 1846 afternoon light streams down through the high glass dome of Massachusetts General Hospital in Boston onto the empty red-plush operating chair and two-necked glass inhaler globe waiting on a side table. Camera: pan-up.",
+      "new_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. Golden October 1846 afternoon light streams down through the high glass dome of a classic wooden Boston hospital amphitheatre onto the empty red-plush operating chair and two-necked glass inhaler globe waiting on a side table. Camera: pan-up."
+    },
+    {
+      "row_id": "P1:05a",
+      "source_kind": "mint_quality",
+      "old_visual": "Close profile in the Boston operating dome on 16 October 1846: dentist William Morton holds a two-necked clear glass globe containing an ether-soaked sea sponge to young printer Edward Abbott's mouth; Abbott's eyelids close peacefully and his shoulders relax.",
+      "new_visual": "Close profile in the wooden Boston operating dome on 16 October 1846: a 27-year-old Boston dentist with dark parted hair and a neat moustache holds a two-necked clear glass globe containing an ether-soaked sea sponge to a 20-year-old printer's mouth; the young patient's eyelids close peacefully and his shoulders relax.",
+      "old_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. Close profile in the Boston operating dome on 16 October 1846: dentist William Morton holds a two-necked clear glass globe containing an ether-soaked sea sponge to young printer Edward Abbott's mouth; Abbott's eyelids close peacefully and his shoulders relax. Camera: push-in.",
+      "new_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. Close profile in the wooden Boston operating dome on 16 October 1846: a 27-year-old Boston dentist with dark parted hair and a neat moustache holds a two-necked clear glass globe containing an ether-soaked sea sponge to a 20-year-old printer's mouth; the young patient's eyelids close peacefully and his shoulders relax. Camera: push-in."
+    },
+    {
+      "row_id": "P1:09b",
+      "source_kind": "free_archive",
+      "old_visual": "In clean daylight, a slow pan across leather-bound 17th- and 18th-century surgical treatises and stoneware apothecary jars on a hospital library shelf. No candles or flames.",
+      "new_visual": "Public-domain 16th-century surgical treatise engraving from Wellcome Collection framed on warm period rag paper with a gentle push-in and white Didot italic corner credit.",
+      "old_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. In clean daylight, a slow pan across leather-bound 17th- and 18th-century surgical treatises and stoneware apothecary jars on a hospital library shelf. No candles or flames. Camera: pan-right.",
+      "new_prompt": "Public-domain 16th-century surgical treatise engraving from Wellcome Collection framed on warm period rag paper with a gentle push-in and white Didot italic corner credit."
+    },
+    {
+      "row_id": "P2:02a",
+      "source_kind": "mint_quality",
+      "old_visual": "In the 1800 Pneumatic Institution laboratory in Bristol, 21-year-old chemist Humphry Davy in a Regency coat inhales nitrous oxide through a brass mouthpiece attached to a green oiled-silk gas bag beside a water-sealed glass gasometer.",
+      "new_visual": "In the 1800 Pneumatic Institution laboratory in Bristol, a clean-shaven 21-year-old English chemist with wavy dark-brown hair in a Regency coat and white cravat inhales gas through a brass mouthpiece attached to a green oiled-silk gas bag beside a water-sealed glass gasometer.",
+      "old_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. In the 1800 Pneumatic Institution laboratory in Bristol, 21-year-old chemist Humphry Davy in a Regency coat inhales nitrous oxide through a brass mouthpiece attached to a green oiled-silk gas bag beside a water-sealed glass gasometer. Camera: push-in.",
+      "new_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. In the 1800 Pneumatic Institution laboratory in Bristol, a clean-shaven 21-year-old English chemist with wavy dark-brown hair in a Regency coat and white cravat inhales gas through a brass mouthpiece attached to a green oiled-silk gas bag beside a water-sealed glass gasometer. Camera: push-in."
+    },
+    {
+      "row_id": "P2:02b",
+      "source_kind": "mint_quality",
+      "old_visual": "Davy lowers the green silk gas bag, eyes bright and laughing openly as he steadies himself against his oak laboratory workbench while glass flasks catch the morning window light.",
+      "new_visual": "The 21-year-old Bristol chemist lowers the green silk gas bag, eyes bright and laughing openly as he steadies himself against his oak laboratory workbench while glass flasks catch the morning window light.",
+      "old_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. Davy lowers the green silk gas bag, eyes bright and laughing openly as he steadies himself against his oak laboratory workbench while glass flasks catch the morning window light. Camera: orbit-slow.",
+      "new_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. The 21-year-old Bristol chemist lowers the green silk gas bag, eyes bright and laughing openly as he steadies himself against his oak laboratory workbench while glass flasks catch the morning window light. Camera: orbit-slow."
+    },
+    {
+      "row_id": "P2:03a",
+      "source_kind": "mint_quality",
+      "old_visual": "[EXPLORER ACTS] In Davy's 1800 Bristol laboratory, Davy touches his own cheek in surprise as his wisdom-tooth pain vanishes; beside the glass gas-holder, the Explorer presses two fingers to his jaw in quiet recognition and nods toward Davy's open notebook.",
+      "new_visual": "[EXPLORER ACTS] In the 1800 Bristol laboratory, the young Regency chemist touches his own cheek in surprise as his wisdom-tooth pain vanishes; beside the glass gas-holder, the Explorer presses two fingers to his jaw in quiet recognition and nods toward the open laboratory notebook.",
+      "old_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. [EXPLORER ACTS] In Davy's 1800 Bristol laboratory, Davy touches his own cheek in surprise as his wisdom-tooth pain vanishes; beside the glass gas-holder, the Explorer presses two fingers to his jaw in quiet recognition and nods toward Davy's open notebook. Camera: push-in.",
+      "new_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. [EXPLORER ACTS] In the 1800 Bristol laboratory, the young Regency chemist touches his own cheek in surprise as his wisdom-tooth pain vanishes; beside the glass gas-holder, the Explorer presses two fingers to his jaw in quiet recognition and nods toward the open laboratory notebook. Camera: push-in."
+    },
+    {
+      "row_id": "P2:04b",
+      "source_kind": "mint_quality",
+      "old_visual": "In daylight, Davy's 1800 book is pushed onto a dusty library shelf while in foreground a glass apothecary bottle of sulphuric ether and a green silk gas bladder sit on a velvet showman's tray. No candles or flames.",
+      "new_visual": "In daylight, the leather-bound 1800 chemistry volume is pushed onto a dusty library shelf while in foreground a glass apothecary bottle of sulphuric ether and a green silk gas bladder sit on a velvet showman's tray. No candles or flames.",
+      "old_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. In daylight, Davy's 1800 book is pushed onto a dusty library shelf while in foreground a glass apothecary bottle of sulphuric ether and a green silk gas bladder sit on a velvet showman's tray. No candles or flames. Camera: pull-back.",
+      "new_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. In daylight, the leather-bound 1800 chemistry volume is pushed onto a dusty library shelf while in foreground a glass apothecary bottle of sulphuric ether and a green silk gas bladder sit on a velvet showman's tray. No candles or flames. Camera: pull-back."
+    },
+    {
+      "row_id": "P2:07a",
+      "source_kind": "mint_quality",
+      "old_visual": "In a clapboard country doctor's office in Jefferson, Georgia, 26-year-old physician Crawford Long sits at his desk holding a glass bottle of sulphuric ether and a folded white linen towel, deep in thought.",
+      "new_visual": "In a clapboard country doctor's office in rural Georgia, a clean-shaven 26-year-old physician with dark parted hair and an 1840s frock coat sits at his desk holding a glass bottle of sulphuric ether and a folded white linen towel, deep in thought.",
+      "old_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. In a clapboard country doctor's office in Jefferson, Georgia, 26-year-old physician Crawford Long sits at his desk holding a glass bottle of sulphuric ether and a folded white linen towel, deep in thought. Camera: push-in.",
+      "new_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. In a clapboard country doctor's office in rural Georgia, a clean-shaven 26-year-old physician with dark parted hair and an 1840s frock coat sits at his desk holding a glass bottle of sulphuric ether and a folded white linen towel, deep in thought. Camera: push-in."
+    },
+    {
+      "row_id": "P2:08a",
+      "source_kind": "mint_quality",
+      "old_visual": "In his quiet Georgia office on 30 March 1842, Crawford Long holds a white linen towel dampened with ether over patient James Venable's nose and mouth; Venable sleeps calmly and wakes without pain.",
+      "new_visual": "In the quiet rural Georgia office on 30 March 1842, the 26-year-old country physician holds a white linen towel dampened with ether over a young seated patient's nose and mouth; the patient sleeps calmly and wakes without pain.",
+      "old_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. In his quiet Georgia office on 30 March 1842, Crawford Long holds a white linen towel dampened with ether over patient James Venable's nose and mouth; Venable sleeps calmly and wakes without pain. Camera: push-in.",
+      "new_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. In the quiet rural Georgia office on 30 March 1842, the 26-year-old country physician holds a white linen towel dampened with ether over a young seated patient's nose and mouth; the patient sleeps calmly and wakes without pain. Camera: push-in."
+    },
+    {
+      "row_id": "P2:09a",
+      "source_kind": "mint_quality",
+      "old_visual": "In afternoon window daylight, Crawford Long writes '$2.00' in his leather account ledger and closes the cover quietly on his wooden desk inside the small Georgia surgery. No candles or lamps.",
+      "new_visual": "In afternoon window daylight, the young Georgia country physician dips his pen, closes his leather account ledger quietly on his wooden desk inside the small clapboard surgery, and sets it aside. No candles or lamps.",
+      "old_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. In afternoon window daylight, Crawford Long writes '$2.00' in his leather account ledger and closes the cover quietly on his wooden desk inside the small Georgia surgery. No candles or lamps. Camera: pull-back.",
+      "new_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. In afternoon window daylight, the young Georgia country physician dips his pen, closes his leather account ledger quietly on his wooden desk inside the small clapboard surgery, and sets it aside. No candles or lamps. Camera: pull-back."
+    },
+    {
+      "row_id": "P2:10a",
+      "source_kind": "mint_quality",
+      "old_visual": "Daylight wide shot of the quiet wooden porch of Long's Jefferson, Georgia office looking out toward a dusty coach road winding north under clear sky. No flames or lamps.",
+      "new_visual": "Daylight wide shot of the quiet wooden porch of the rural Georgia country doctor's office looking out toward a dusty coach road winding north under a clear sky. No flames or lamps.",
+      "old_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. Daylight wide shot of the quiet wooden porch of Long's Jefferson, Georgia office looking out toward a dusty coach road winding north under clear sky. No flames or lamps. Camera: pan-right.",
+      "new_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. Daylight wide shot of the quiet wooden porch of the rural Georgia country doctor's office looking out toward a dusty coach road winding north under a clear sky. No flames or lamps. Camera: pan-right."
+    },
+    {
+      "row_id": "P3:02a",
+      "source_kind": "mint_quality",
+      "old_visual": "In a Hartford, Connecticut hall in December 1844, attentive dentist Horace Wells leans forward in his front-row seat watching a volunteer on stage stumble against a wooden bench without feeling pain.",
+      "new_visual": "In a Hartford, Connecticut lecture hall in December 1844, an attentive clean-shaven 29-year-old dentist with wavy light-brown hair leans forward in his front-row seat watching a volunteer on stage stumble against a wooden bench without feeling pain.",
+      "old_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. In a Hartford, Connecticut hall in December 1844, attentive dentist Horace Wells leans forward in his front-row seat watching a volunteer on stage stumble against a wooden bench without feeling pain. Camera: push-in.",
+      "new_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. In a Hartford, Connecticut lecture hall in December 1844, an attentive clean-shaven 29-year-old dentist with wavy light-brown hair leans forward in his front-row seat watching a volunteer on stage stumble against a wooden bench without feeling pain. Camera: push-in."
+    },
+    {
+      "row_id": "P3:03a",
+      "source_kind": "mint_quality",
+      "old_visual": "In his Hartford dental office the next morning (11 December 1844), Horace Wells sits in his own red plush dental chair holding a gas bag on his lap while colleague John Riggs steps back with dental forceps.",
+      "new_visual": "In a Hartford dental office the next morning (11 December 1844), the 29-year-old Connecticut dentist sits in his own red plush dental chair holding an oiled-silk gas bag on his lap while a fellow New England dentist steps back holding steel dental forceps.",
+      "old_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. In his Hartford dental office the next morning (11 December 1844), Horace Wells sits in his own red plush dental chair holding a gas bag on his lap while colleague John Riggs steps back with dental forceps. Camera: push-in.",
+      "new_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. In a Hartford dental office the next morning (11 December 1844), the 29-year-old Connecticut dentist sits in his own red plush dental chair holding an oiled-silk gas bag on his lap while a fellow New England dentist steps back holding steel dental forceps. Camera: push-in."
+    },
+    {
+      "row_id": "P3:03b",
+      "source_kind": "mint_quality",
+      "old_visual": "Horace Wells opens his eyes in the dental chair, touches his jaw in amazement, and smiles broadly at his colleague in the bright morning window light.",
+      "new_visual": "The 29-year-old Connecticut dentist opens his eyes in the red plush dental chair, touches his jaw in amazement, and smiles broadly at his colleague in the bright morning window light.",
+      "old_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. Horace Wells opens his eyes in the dental chair, touches his jaw in amazement, and smiles broadly at his colleague in the bright morning window light. Camera: pull-back.",
+      "new_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. The 29-year-old Connecticut dentist opens his eyes in the red plush dental chair, touches his jaw in amazement, and smiles broadly at his colleague in the bright morning window light. Camera: pull-back."
+    },
+    {
+      "row_id": "P3:04a",
+      "source_kind": "mint_quality",
+      "old_visual": "In the crowded Boston amphitheatre in January 1845, Horace Wells stands beside a seated patient with a small gas bag; as the bag is removed early, the patient flinches and cries out.",
+      "new_visual": "In the crowded Boston amphitheatre in January 1845, the 29-year-old Connecticut dentist stands beside a seated patient with a small gas bag; as the bag is removed early, the patient flinches and cries out.",
+      "old_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. In the crowded Boston amphitheatre in January 1845, Horace Wells stands beside a seated patient with a small gas bag; as the bag is removed early, the patient flinches and cries out. Camera: push-in.",
+      "new_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. In the crowded Boston amphitheatre in January 1845, the 29-year-old Connecticut dentist stands beside a seated patient with a small gas bag; as the bag is removed early, the patient flinches and cries out. Camera: push-in."
+    },
+    {
+      "row_id": "P3:04b",
+      "source_kind": "mint_quality",
+      "old_visual": "Up in the steep wooden tiers of the Boston gallery, medical students lean over the brass rail jeering and waving their notebooks while below Horace Wells lowers his head over his gas bag.",
+      "new_visual": "Up in the steep wooden tiers of the Boston gallery, medical students lean over the brass rail jeering and waving their notebooks while below the Connecticut dentist lowers his head over his gas bag.",
+      "old_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. Up in the steep wooden tiers of the Boston gallery, medical students lean over the brass rail jeering and waving their notebooks while below Horace Wells lowers his head over his gas bag. Camera: pan-right.",
+      "new_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. Up in the steep wooden tiers of the Boston gallery, medical students lean over the brass rail jeering and waving their notebooks while below the Connecticut dentist lowers his head over his gas bag. Camera: pan-right."
+    },
+    {
+      "row_id": "P3:05a",
+      "source_kind": "mint_quality",
+      "old_visual": "In the lower gallery row of that same Boston room stands Wells's former dental partner, 26-year-old William Morton, watching the failed demonstration with narrowed, determined eyes instead of laughing.",
+      "new_visual": "In the lower gallery row of that same Boston room stands a 26-year-old Boston dentist with dark parted hair and a neat moustache, watching the failed demonstration with narrowed, determined eyes instead of laughing.",
+      "old_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. In the lower gallery row of that same Boston room stands Wells's former dental partner, 26-year-old William Morton, watching the failed demonstration with narrowed, determined eyes instead of laughing. Camera: push-in.",
+      "new_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. In the lower gallery row of that same Boston room stands a 26-year-old Boston dentist with dark parted hair and a neat moustache, watching the failed demonstration with narrowed, determined eyes instead of laughing. Camera: push-in."
+    },
+    {
+      "row_id": "P3:05b",
+      "source_kind": "free_archive",
+      "old_visual": "In crisp daylight at his Boston workbench, Morton pours clear sulphuric ether from a glass-stoppered bottle onto a natural sponge inside a newly blown two-necked glass inhaler globe. No flames or candles.",
+      "new_visual": "Public-domain 1846 Wellcome Collection engraving of the two-necked glass ether inhaler globe over period rag paper, with an animated ink airflow diagram showing air drawn across the ether-soaked sea sponge.",
+      "old_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. In crisp daylight at his Boston workbench, Morton pours clear sulphuric ether from a glass-stoppered bottle onto a natural sponge inside a newly blown two-necked glass inhaler globe. No flames or candles. Camera: push-in.",
+      "new_prompt": "Public-domain 1846 Wellcome Collection engraving of the two-necked glass ether inhaler globe over period rag paper, with an animated ink airflow diagram showing air drawn across the ether-soaked sea sponge."
+    },
+    {
+      "row_id": "P3:06a",
+      "source_kind": "mint_quality",
+      "old_visual": "On the morning of 16 October 1846, William Morton hurries through the double doors of the Massachusetts General Hospital operating dome cradling the two-necked glass ether globe in both hands.",
+      "new_visual": "On the morning of 16 October 1846, the 27-year-old Boston dentist with dark parted hair and a neat moustache hurries through the double doors of the Boston hospital operating dome cradling the two-necked glass ether globe in both hands.",
+      "old_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. On the morning of 16 October 1846, William Morton hurries through the double doors of the Massachusetts General Hospital operating dome cradling the two-necked glass ether globe in both hands. Camera: push-in.",
+      "new_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. On the morning of 16 October 1846, the 27-year-old Boston dentist with dark parted hair and a neat moustache hurries through the double doors of the Boston hospital operating dome cradling the two-necked glass ether globe in both hands. Camera: push-in."
+    },
+    {
+      "row_id": "P3:06b",
+      "source_kind": "mint_quality",
+      "old_visual": "Twenty-year-old Boston printer Edward Abbott sits in the red velvet operating chair with a white cravat loosened at his neck; Morton gently places the glass mouthpiece of the ether globe to Abbott's lips.",
+      "new_visual": "A slender 20-year-old Boston printer sits in the red velvet operating chair with a white cravat loosened at his neck; the 27-year-old Boston dentist gently places the glass mouthpiece of the ether globe to the young patient's lips.",
+      "old_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. Twenty-year-old Boston printer Edward Abbott sits in the red velvet operating chair with a white cravat loosened at his neck; Morton gently places the glass mouthpiece of the ether globe to Abbott's lips. Camera: push-in.",
+      "new_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. A slender 20-year-old Boston printer sits in the red velvet operating chair with a white cravat loosened at his neck; the 27-year-old Boston dentist gently places the glass mouthpiece of the ether globe to the young patient's lips. Camera: push-in."
+    },
+    {
+      "row_id": "P3:07a",
+      "source_kind": "mint_quality",
+      "old_visual": "[EXPLORER ACTS] In the front row of the Boston Ether Dome gallery, the Explorer watches Edward Abbott's hand relax onto the red plush armrest as he falls into deep sleep; the Explorer slowly lowers his open brass pocket watch in quiet wonder.",
+      "new_visual": "[EXPLORER ACTS] In the front row of the Boston operating dome gallery, the Explorer watches the young patient's hand relax onto the red plush armrest as he falls into deep sleep; the Explorer slowly lowers his open brass pocket watch in quiet wonder.",
+      "old_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. [EXPLORER ACTS] In the front row of the Boston Ether Dome gallery, the Explorer watches Edward Abbott's hand relax onto the red plush armrest as he falls into deep sleep; the Explorer slowly lowers his open brass pocket watch in quiet wonder. Camera: push-in.",
+      "new_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. [EXPLORER ACTS] In the front row of the Boston operating dome gallery, the Explorer watches the young patient's hand relax onto the red plush armrest as he falls into deep sleep; the Explorer slowly lowers his open brass pocket watch in quiet wonder. Camera: push-in."
+    },
+    {
+      "row_id": "P3:08a",
+      "source_kind": "mint_quality",
+      "old_visual": "White-haired senior surgeon John Collins Warren in a dark frock coat leans over the operating chair in complete silence; Edward Abbott neither moves nor cries out while the gallery watches in stunned hush.",
+      "new_visual": "A distinguished 68-year-old white-haired senior Boston surgeon, clean-shaven in a dark frock coat, leans over the operating chair in complete silence; the young patient neither moves nor cries out while the gallery watches in stunned hush.",
+      "old_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. White-haired senior surgeon John Collins Warren in a dark frock coat leans over the operating chair in complete silence; Edward Abbott neither moves nor cries out while the gallery watches in stunned hush. Camera: push-in.",
+      "new_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. A distinguished 68-year-old white-haired senior Boston surgeon, clean-shaven in a dark frock coat, leans over the operating chair in complete silence; the young patient neither moves nor cries out while the gallery watches in stunned hush. Camera: push-in."
+    },
+    {
+      "row_id": "P3:08b",
+      "source_kind": "mint_quality",
+      "old_visual": "John Collins Warren straightens up beside the waking, calm patient, turns toward the steep tiers of medical students and doctors under the glass dome, and speaks quietly to the astonished room.",
+      "new_visual": "The 68-year-old white-haired senior surgeon straightens up beside the waking, calm patient, turns toward the steep tiers of medical students and doctors under the glass dome, and speaks quietly to the astonished room.",
+      "old_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. John Collins Warren straightens up beside the waking, calm patient, turns toward the steep tiers of medical students and doctors under the glass dome, and speaks quietly to the astonished room. Camera: pull-back.",
+      "new_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. The 68-year-old white-haired senior surgeon straightens up beside the waking, calm patient, turns toward the steep tiers of medical students and doctors under the glass dome, and speaks quietly to the astonished room. Camera: pull-back."
+    },
+    {
+      "row_id": "P3:10a",
+      "source_kind": "mint_quality",
+      "old_visual": "In brisk daylight, a leather mail pouch stamped 'BOSTON TO LIVERPOOL' sits beside folded November 1846 medical journals on a ship's cabin table while grey Atlantic waves roll past the porthole. No flames.",
+      "new_visual": "In brisk daylight, a leather mail pouch sits beside folded November 1846 medical journals on a wooden ship's cabin table while grey Atlantic waves roll past the porthole. No flames.",
+      "old_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. In brisk daylight, a leather mail pouch stamped 'BOSTON TO LIVERPOOL' sits beside folded November 1846 medical journals on a ship's cabin table while grey Atlantic waves roll past the porthole. No flames. Camera: pan-right.",
+      "new_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. In brisk daylight, a leather mail pouch sits beside folded November 1846 medical journals on a wooden ship's cabin table while grey Atlantic waves roll past the porthole. No flames. Camera: pan-right."
+    },
+    {
+      "row_id": "P4:02a",
+      "source_kind": "mint_quality",
+      "old_visual": "In his private Boston workroom, William Morton drops orange pigment and aromatic oil from a glass pipette into a decanter of clear ether, swirling the tinted liquid to hide its tell-tale smell.",
+      "new_visual": "In his private Boston workroom, the 27-year-old Boston dentist with dark parted hair and a neat moustache drops orange pigment and aromatic oil from a glass pipette into a decanter of clear ether, swirling the tinted liquid to hide its tell-tale smell.",
+      "old_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. In his private Boston workroom, William Morton drops orange pigment and aromatic oil from a glass pipette into a decanter of clear ether, swirling the tinted liquid to hide its tell-tale smell. Camera: push-in.",
+      "new_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. In his private Boston workroom, the 27-year-old Boston dentist with dark parted hair and a neat moustache drops orange pigment and aromatic oil from a glass pipette into a decanter of clear ether, swirling the tinted liquid to hide its tell-tale smell. Camera: push-in."
+    },
+    {
+      "row_id": "P4:03b",
+      "source_kind": "mint_quality",
+      "old_visual": "Two Boston hospital surgeons in dark frock coats unstopper Morton's tinted bottle in a bright ward corridor, waft the vapour toward their noses, and exchange a knowing smile as they recognise plain ether.",
+      "new_visual": "Two Boston hospital surgeons in dark frock coats unstopper the orange-tinted glass bottle in a bright ward corridor, waft the vapour toward their noses, and exchange a knowing smile as they recognise plain ether.",
+      "old_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. Two Boston hospital surgeons in dark frock coats unstopper Morton's tinted bottle in a bright ward corridor, waft the vapour toward their noses, and exchange a knowing smile as they recognise plain ether. Camera: push-in.",
+      "new_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. Two Boston hospital surgeons in dark frock coats unstopper the orange-tinted glass bottle in a bright ward corridor, waft the vapour toward their noses, and exchange a knowing smile as they recognise plain ether. Camera: push-in."
+    },
+    {
+      "row_id": "P4:04a",
+      "source_kind": "mint_quality",
+      "old_visual": "In a book-lined Boston study on 21 November 1846, physician and poet Oliver Wendell Holmes dips a steel nib pen into an inkwell and writes a letter on cream stationery by window light.",
+      "new_visual": "In a book-lined Boston study on 21 November 1846, a clean-shaven 37-year-old Boston physician and man of letters with dark sideburns dips a steel nib pen into an inkwell and writes a letter on cream stationery by window light.",
+      "old_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. In a book-lined Boston study on 21 November 1846, physician and poet Oliver Wendell Holmes dips a steel nib pen into an inkwell and writes a letter on cream stationery by window light. Camera: push-in.",
+      "new_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. In a book-lined Boston study on 21 November 1846, a clean-shaven 37-year-old Boston physician and man of letters with dark sideburns dips a steel nib pen into an inkwell and writes a letter on cream stationery by window light. Camera: push-in."
+    },
+    {
+      "row_id": "P4:04b",
+      "source_kind": "mint_quality",
+      "old_visual": "In crisp window daylight, a close push onto Oliver Wendell Holmes's steel nib pen resting beside the freshly written cream letter page and brass inkstand. No candles or flames.",
+      "new_visual": "In crisp window daylight, a close push onto the Boston physician's steel nib pen resting beside the freshly written cream letter page and brass inkstand. No candles or flames.",
+      "old_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. In crisp window daylight, a close push onto Oliver Wendell Holmes's steel nib pen resting beside the freshly written cream letter page and brass inkstand. No candles or flames. Camera: push-in.",
+      "new_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. In crisp window daylight, a close push onto the Boston physician's steel nib pen resting beside the freshly written cream letter page and brass inkstand. No candles or flames. Camera: push-in."
+    },
+    {
+      "row_id": "P4:05a",
+      "source_kind": "mint_quality",
+      "old_visual": "In daylight on a marble table, printed pamphlets and congressional petitions pile up beside Morton's two-necked glass globe as a gloved hand slams down a printed claim. No flames or candles.",
+      "new_visual": "In daylight on a marble table, printed pamphlets and congressional petitions pile up beside the two-necked glass ether globe as a gloved hand slams down a printed claim. No flames or candles.",
+      "old_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. In daylight on a marble table, printed pamphlets and congressional petitions pile up beside Morton's two-necked glass globe as a gloved hand slams down a printed claim. No flames or candles. Camera: pan-right.",
+      "new_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. In daylight on a marble table, printed pamphlets and congressional petitions pile up beside the two-necked glass ether globe as a gloved hand slams down a printed claim. No flames or candles. Camera: pan-right."
+    },
+    {
+      "row_id": "P4:05b",
+      "source_kind": "mint_quality",
+      "old_visual": "In a Boston chemical laboratory lined with mineral specimens and glass retorts, chemist Charles Jackson in spectacles points insistently to his own laboratory notebook and a bottle of pure sulphuric ether.",
+      "new_visual": "In a Boston chemical laboratory lined with mineral specimens and glass retorts, a 41-year-old chemist wearing wire-rimmed spectacles points insistently to his own laboratory notebook and a bottle of pure sulphuric ether.",
+      "old_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. In a Boston chemical laboratory lined with mineral specimens and glass retorts, chemist Charles Jackson in spectacles points insistently to his own laboratory notebook and a bottle of pure sulphuric ether. Camera: push-in.",
+      "new_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. In a Boston chemical laboratory lined with mineral specimens and glass retorts, a 41-year-old chemist wearing wire-rimmed spectacles points insistently to his own laboratory notebook and a bottle of pure sulphuric ether. Camera: push-in."
+    },
+    {
+      "row_id": "P4:07a",
+      "source_kind": "mint_quality",
+      "old_visual": "In crisp daylight, a slow pan across stacks of 1850s newspaper broadsheets and printed US Senate ether controversy testimony piled on a dark mahogany table. No candles or flames.",
+      "new_visual": "In crisp daylight, a slow pan across stacks of 1850s newspaper broadsheets and printed Senate ether controversy testimony piled on a dark mahogany table. No candles or flames.",
+      "old_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. In crisp daylight, a slow pan across stacks of 1850s newspaper broadsheets and printed US Senate ether controversy testimony piled on a dark mahogany table. No candles or flames. Camera: pan-right.",
+      "new_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. In crisp daylight, a slow pan across stacks of 1850s newspaper broadsheets and printed Senate ether controversy testimony piled on a dark mahogany table. No candles or flames. Camera: pan-right."
+    },
+    {
+      "row_id": "P4:08a",
+      "source_kind": "mint_quality",
+      "old_visual": "In calm morning daylight, a tree-lined gravel path in the Boston Public Garden leads toward a tall white-granite Victorian monument rising above the autumn trees. No candles or flames.",
+      "new_visual": "In calm morning daylight, a tree-lined gravel path in a Victorian Boston public park leads toward a tall white-granite monument rising above the autumn trees. No candles or flames.",
+      "old_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. In calm morning daylight, a tree-lined gravel path in the Boston Public Garden leads toward a tall white-granite Victorian monument rising above the autumn trees. No candles or flames. Camera: push-in.",
+      "new_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. In calm morning daylight, a tree-lined gravel path in a Victorian Boston public park leads toward a tall white-granite monument rising above the autumn trees. No candles or flames. Camera: push-in."
+    },
+    {
+      "row_id": "P4:09a",
+      "source_kind": "mint_quality",
+      "old_visual": "Close daylight shot of the carved grey granite base of the Boston Ether Monument surrounded by autumn leaves, its chiseled relief honouring the relief of pain while naming none of the four rivals.",
+      "new_visual": "Close daylight shot of the carved grey granite base of the Boston stone monument surrounded by autumn leaves, its chiseled relief honouring the relief of pain while naming none of the four rivals.",
+      "old_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. Close daylight shot of the carved grey granite base of the Boston Ether Monument surrounded by autumn leaves, its chiseled relief honouring the relief of pain while naming none of the four rivals. Camera: push-in.",
+      "new_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. Close daylight shot of the carved grey granite base of the Boston stone monument surrounded by autumn leaves, its chiseled relief honouring the relief of pain while naming none of the four rivals. Camera: push-in."
+    },
+    {
+      "row_id": "P4:09b",
+      "source_kind": "mint_quality",
+      "old_visual": "Across the Atlantic in December 1846 London, pale winter daylight filters into the wooden operating theatre of University College Hospital where a glass ether inhaler stands ready beside Robert Liston's surgical table.",
+      "new_visual": "Across the Atlantic in December 1846 London, pale winter daylight filters into the wooden operating theatre of a London hospital where a glass ether inhaler stands ready beside the tall Scottish surgeon's operating table.",
+      "old_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. Across the Atlantic in December 1846 London, pale winter daylight filters into the wooden operating theatre of University College Hospital where a glass ether inhaler stands ready beside Robert Liston's surgical table. Camera: push-in.",
+      "new_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. Across the Atlantic in December 1846 London, pale winter daylight filters into the wooden operating theatre of a London hospital where a glass ether inhaler stands ready beside the tall Scottish surgeon's operating table. Camera: push-in."
+    },
+    {
+      "row_id": "P5:02a",
+      "source_kind": "mint_quality",
+      "old_visual": "In the packed wooden operating theatre of University College Hospital, London on 21 December 1846, Robert Liston stands beside a tall glass and brass tube ether inhaler held to butler Frederick Churchill's face.",
+      "new_visual": "In the packed wooden operating theatre of a London hospital on 21 December 1846, the tall 52-year-old Scottish surgeon in a dark frock coat stands beside a tall glass-and-brass tube ether inhaler held to a 36-year-old patient's face.",
+      "old_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. In the packed wooden operating theatre of University College Hospital, London on 21 December 1846, Robert Liston stands beside a tall glass and brass tube ether inhaler held to butler Frederick Churchill's face. Camera: push-in.",
+      "new_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. In the packed wooden operating theatre of a London hospital on 21 December 1846, the tall 52-year-old Scottish surgeon in a dark frock coat stands beside a tall glass-and-brass tube ether inhaler held to a 36-year-old patient's face. Camera: push-in."
+    },
+    {
+      "row_id": "P5:02b",
+      "source_kind": "mint_quality",
+      "old_visual": "The patient lies completely relaxed on the London operating table; as the ether mask is lifted, he opens his eyes calmly and looks up at Liston in quiet surprise.",
+      "new_visual": "The patient lies completely relaxed on the London operating table; as the ether mask is lifted, he opens his eyes calmly and looks up at the tall Scottish surgeon in quiet surprise.",
+      "old_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. The patient lies completely relaxed on the London operating table; as the ether mask is lifted, he opens his eyes calmly and looks up at Liston in quiet surprise. Camera: push-in.",
+      "new_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. The patient lies completely relaxed on the London operating table; as the ether mask is lifted, he opens his eyes calmly and looks up at the tall Scottish surgeon in quiet surprise. Camera: push-in."
+    },
+    {
+      "row_id": "P5:03b",
+      "source_kind": "mint_quality",
+      "old_visual": "Robert Liston gestures warmly toward the glass ether apparatus and addresses the packed wooden tiers of gentlemen and students in the London amphitheatre.",
+      "new_visual": "The tall 52-year-old Scottish surgeon gestures warmly toward the glass ether apparatus and addresses the packed wooden tiers of gentlemen and students in the London amphitheatre.",
+      "old_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. Robert Liston gestures warmly toward the glass ether apparatus and addresses the packed wooden tiers of gentlemen and students in the London amphitheatre. Camera: push-in.",
+      "new_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. The tall 52-year-old Scottish surgeon gestures warmly toward the glass ether apparatus and addresses the packed wooden tiers of gentlemen and students in the London amphitheatre. Camera: push-in."
+    },
+    {
+      "row_id": "P5:04a",
+      "source_kind": "free_archive",
+      "old_visual": "Close daylight shot of a closed brass pocket watch resting untouched on white linen beside the glass ether inhaler tube: the race against the clock is over. No candles or flames.",
+      "new_visual": "Public-domain Wellcome Collection illustration of the 21 December 1846 London ether operation at University College Hospital, framed on warm period rag paper with a gentle push-in.",
+      "old_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. Close daylight shot of a closed brass pocket watch resting untouched on white linen beside the glass ether inhaler tube: the race against the clock is over. No candles or flames. Camera: push-in.",
+      "new_prompt": "Public-domain Wellcome Collection illustration of the 21 December 1846 London ether operation at University College Hospital, framed on warm period rag paper with a gentle push-in."
+    },
+    {
+      "row_id": "P5:04b",
+      "source_kind": "mint_quality",
+      "old_visual": "In an elegant Victorian dining room at 52 Queen Street, Edinburgh in November 1847, obstetrician James Young Simpson holds up a small cut-glass bottle of clear, sweet-smelling liquid toward the chandelier light.",
+      "new_visual": "In an elegant Victorian townhouse dining room in Edinburgh in November 1847, a clean-shaven 36-year-old Scottish obstetrician with long wavy brown hair holds up a small cut-glass bottle of clear, sweet-smelling liquid toward the chandelier light.",
+      "old_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. In an elegant Victorian dining room at 52 Queen Street, Edinburgh in November 1847, obstetrician James Young Simpson holds up a small cut-glass bottle of clear, sweet-smelling liquid toward the chandelier light. Camera: push-in.",
+      "new_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. In an elegant Victorian townhouse dining room in Edinburgh in November 1847, a clean-shaven 36-year-old Scottish obstetrician with long wavy brown hair holds up a small cut-glass bottle of clear, sweet-smelling liquid toward the chandelier light. Camera: push-in."
+    },
+    {
+      "row_id": "P5:05a",
+      "source_kind": "mint_quality",
+      "old_visual": "Seated around the mahogany dinner table in Edinburgh, Simpson and his two assistants George Keith and Matthews Duncan lean over small glass tumblers, inhaling the sweet chloroform vapour.",
+      "new_visual": "Seated around the mahogany dinner table in Edinburgh, the 36-year-old Scottish obstetrician and his two young medical assistants in dark frock coats lean over small glass tumblers, inhaling the sweet chloroform vapour.",
+      "old_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. Seated around the mahogany dinner table in Edinburgh, Simpson and his two assistants George Keith and Matthews Duncan lean over small glass tumblers, inhaling the sweet chloroform vapour. Camera: orbit-slow.",
+      "new_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. Seated around the mahogany dinner table in Edinburgh, the 36-year-old Scottish obstetrician and his two young medical assistants in dark frock coats lean over small glass tumblers, inhaling the sweet chloroform vapour. Camera: orbit-slow."
+    },
+    {
+      "row_id": "P5:05b",
+      "source_kind": "mint_quality",
+      "old_visual": "Wide warm shot of the Edinburgh dining room: moments after inhaling from the tumblers, Simpson and his two assistants have slipped peacefully to the carpet beside their carved dining chairs.",
+      "new_visual": "Wide warm shot of the Edinburgh dining room: moments after inhaling from the tumblers, the Scottish obstetrician and his two medical assistants have slipped peacefully to the carpet beside their carved dining chairs.",
+      "old_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. Wide warm shot of the Edinburgh dining room: moments after inhaling from the tumblers, Simpson and his two assistants have slipped peacefully to the carpet beside their carved dining chairs. Camera: pull-back.",
+      "new_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. Wide warm shot of the Edinburgh dining room: moments after inhaling from the tumblers, the Scottish obstetrician and his two medical assistants have slipped peacefully to the carpet beside their carved dining chairs. Camera: pull-back."
+    },
+    {
+      "row_id": "P5:06b",
+      "source_kind": "mint_quality",
+      "old_visual": "In a calm royal chamber at Buckingham Palace on 7 April 1853, London physician John Snow carefully measures drops of chloroform from a graduated glass vial onto a folded white handkerchief.",
+      "new_visual": "In a calm Victorian royal bedchamber in London on 7 April 1853, a 40-year-old London physician with dark side whiskers in a black frock coat carefully measures drops of chloroform from a graduated glass vial onto a folded white handkerchief.",
+      "old_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. In a calm royal chamber at Buckingham Palace on 7 April 1853, London physician John Snow carefully measures drops of chloroform from a graduated glass vial onto a folded white handkerchief. Camera: push-in.",
+      "new_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. In a calm Victorian royal bedchamber in London on 7 April 1853, a 40-year-old London physician with dark side whiskers in a black frock coat carefully measures drops of chloroform from a graduated glass vial onto a folded white handkerchief. Camera: push-in."
+    },
+    {
+      "row_id": "P5:07b",
+      "source_kind": "mint_quality",
+      "old_visual": "In bright morning daylight, a neat row of brass Snow inhalers and glass bottles sits ready on a clean Victorian hospital dispensary shelf. No candles or flames.",
+      "new_visual": "In bright morning daylight, a neat row of brass water-bath chloroform inhalers and graduated glass bottles sits ready on a clean Victorian hospital dispensary shelf. No candles or flames.",
+      "old_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. In bright morning daylight, a neat row of brass Snow inhalers and glass bottles sits ready on a clean Victorian hospital dispensary shelf. No candles or flames. Camera: pull-back.",
+      "new_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. In bright morning daylight, a neat row of brass water-bath chloroform inhalers and graduated glass bottles sits ready on a clean Victorian hospital dispensary shelf. No candles or flames. Camera: pull-back."
+    },
+    {
+      "row_id": "P5:14a",
+      "source_kind": "free_archive",
+      "old_visual": "In cool daylight, a slow push toward a row of stained dark wool surgical coats hanging on wooden pegs outside an 1860s hospital ward door. No candles or flames.",
+      "new_visual": "Public-domain 19th-century surgical engraving from Wellcome Collection framed on warm period rag paper, bridging from painless 1846 anaesthesia to the 1860s post-operative infection mystery.",
+      "old_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. In cool daylight, a slow push toward a row of stained dark wool surgical coats hanging on wooden pegs outside an 1860s hospital ward door. No candles or flames. Camera: push-in.",
+      "new_prompt": "Public-domain 19th-century surgical engraving from Wellcome Collection framed on warm period rag paper, bridging from painless 1846 anaesthesia to the 1860s post-operative infection mystery."
+    },
+    {
+      "row_id": "P5:15a",
+      "source_kind": "mint_quality",
+      "old_visual": "On a sunlit Glasgow laboratory bench stand a brass compound microscope and Joseph Lister's brass steam-driven carbolic acid spray emitting a fine mist across the surgical tray.",
+      "new_visual": "On a sunlit 1860s Glasgow laboratory bench stand a brass compound microscope and a Victorian brass steam-driven antiseptic spray apparatus emitting a fine mist across the surgical tray.",
+      "old_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. On a sunlit Glasgow laboratory bench stand a brass compound microscope and Joseph Lister's brass steam-driven carbolic acid spray emitting a fine mist across the surgical tray. Camera: push-in.",
+      "new_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. On a sunlit 1860s Glasgow laboratory bench stand a brass compound microscope and a Victorian brass steam-driven antiseptic spray apparatus emitting a fine mist across the surgical tray. Camera: push-in."
+    },
+    {
+      "row_id": "P5:16a",
+      "source_kind": "code_graphic",
+      "old_visual": "In warm daylight across an oak museum table sit the three objects that ended surgical pain: Davy's 1800 nitrous-oxide jar, a green oiled-silk gas bag, and Morton's two-necked 1846 glass ether globe. No flames.",
+      "new_visual": "House cream-on-walnut inked closing triptych drawing the three milestones in sequence as they are spoken: '1800 · A GAS (Nitrous Oxide)' → '1844 · A BAG (Laughing-Gas Bag)' → '1846 · A GLOBE (Two-Necked Ether Globe)'.",
+      "old_prompt": "Stylised 3D animated historical scene, Pixar-meets-Arcane painterly lighting, rich period wood, brass and glass textures, warm tungsten and cool window daylight contrast, gentle background softness, no text, no letters, no numbers, no watermark, 16:9. In warm daylight across an oak museum table sit the three objects that ended surgical pain: Davy's 1800 nitrous-oxide jar, a green oiled-silk gas bag, and Morton's two-necked 1846 glass ether globe. No flames. Camera: pan-right.",
+      "new_prompt": "House cream-on-walnut inked closing triptych drawing the three milestones in sequence as they are spoken: '1800 · A GAS (Nitrous Oxide)' → '1844 · A BAG (Laughing-Gas Bag)' → '1846 · A GLOBE (Two-Necked Ether Globe)'."
+    }
+  ]
+}
