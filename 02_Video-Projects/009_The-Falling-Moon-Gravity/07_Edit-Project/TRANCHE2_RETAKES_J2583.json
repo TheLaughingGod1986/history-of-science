@@ -1,0 +1,75 @@
+{
+  "job": "J2583",
+  "film": "HOS:009",
+  "date": "2026-11-11",
+  "by": "claude (acting Chief, queue side)",
+  "rulings": [
+    "history-of-science#180 comment 6792271903",
+    "history-of-science#180 comment 6792282370",
+    "history-of-science#180 comment 6792304982",
+    "history-of-science#180 comment 6792364829",
+    "history-of-science#180 comment 6792980991",
+    "history-of-science#180 comment 6792995872"
+  ],
+  "decision": "Four of the twenty tranche-2 shots are made again, one take each, after the picture review (J2034) and the half-second sheets (J2582, PR #511). Nothing is generated before the Chief's PASS on this change.",
+  "max_credits_per_take": 100,
+  "takes_per_row": 1,
+  "max_total_credits": 400,
+  "cash_gbp": 0,
+  "inside": "TRANCHE2_SCOPE_J2026.json and every guard in it: three takes a row, the 3,000 floor, the 6,000 cap (2,000 used), subscription credits only, the studio Ultra account, the shared Flow writer lock, one output a take.",
+  "before_each_create": "Read the live balance and the exact price. If the balance is below the floor plus that shot's price, stop and post it on the desk.",
+  "rows": [
+    {
+      "order": 1,
+      "part": 3,
+      "id": "01_really_falling_c1",
+      "take": 2,
+      "start_frame": "P3:01_really_falling last frame (as take 1)",
+      "board": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/parts/part-03_plates_v05.json",
+      "board_sha256": "05f932f3c893b73a7e6c7e3075f7ab7810235f12d2101e10b185083163b67b7c",
+      "why": "take 1: the Moon fades at about 3.5 s and a ball rides the curve"
+    },
+    {
+      "order": 2,
+      "part": 2,
+      "id": "08_the_apple_c1",
+      "take": 2,
+      "start_frame": "P2:08_the_apple last frame (as take 1)",
+      "board": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/parts/part-02_plates_v05.json",
+      "board_sha256": "0aabf081a6adf7a6921a938bb39fa4e69a5bc64bb562e04a2da0bfc1bb34ad49",
+      "why": "take 1: the apple in the grass rises back to the branch at 1.5 to 2.5 s"
+    },
+    {
+      "order": 3,
+      "part": 4,
+      "id": "05_minute_second_c1",
+      "take": 2,
+      "start_frame": "P4:05_minute_second last frame (as take 1)",
+      "board": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/parts/part-04_plates_v05.json",
+      "board_sha256": "df9787adf7ec6662bb7a4647c6c153676a408822461fbc3be47d8641c74a4334",
+      "why": "take 1: the apple on the table goes up beside the ruler at 1.0, 3.0 and 5.0 s"
+    },
+    {
+      "order": 4,
+      "part": 4,
+      "id": "05_minute_second_c2",
+      "take": 2,
+      "start_frame": "P4:05_minute_second_c1 TAKE 2 last frame, never take 1's",
+      "board": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/parts/part-04_plates_v05.json",
+      "board_sha256": "df9787adf7ec6662bb7a4647c6c153676a408822461fbc3be47d8641c74a4334",
+      "only_after": "05_minute_second_c1 take 2 is KEEP on its half-second sheet (J2584)",
+      "why": "take 1: the apple climbs to the top of the ruler by 3 to 4 s, and a second bright arc crosses the Earth at 4.0 to 6.75 s"
+    }
+  ],
+  "kept_not_remade": {
+    "11_explorer_apple_c1": "one continuous camera move from 3.0 to 5.0 s on the quarter-second sheet (J2582)",
+    "the other fifteen": "KEEP on their half-second sheets (J2582, PR #511)"
+  },
+  "no_second_take": "A take that fails its sheet comes back to the Chief. No second take inside the 400.",
+  "lock_order": "J2270's batches 2 and 3 run now. Once the Chief's PASS on this change is in, these take the Flow lock at the next batch boundary: 01_really_falling_c1, 08_the_apple_c1, 05_minute_second_c1, then 05_minute_second_c2 after c1's sheet.",
+  "review": "Each take gets a half-second sheet of the whole clip before any KEEP (J2584, then J2587 for c2).",
+  "edit_locks_from_the_same_ruling": [
+    "P02:10_how_high 0.00-2.58 s, hard out 2.58 (the ring forms after 3 s)",
+    "P05:11 callback: 0.30-7.00 s of P01:03_table_three (6.70 s), inside the J1237 lock; the board's 1.20-7.90 s is not used"
+  ]
+}

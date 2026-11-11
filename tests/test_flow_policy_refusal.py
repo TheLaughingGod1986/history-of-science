@@ -380,7 +380,13 @@ class NoNameWordingTests(unittest.TestCase):
 
     def test_the_record_and_the_scope_pin_the_board_as_it_is(self):
         digest = self.runner.sha256_file(self.EDIT / "parts/part-04_plates_v05.json")
-        self.assertEqual(self.record["board_sha256_new"], digest)
+        # The board changed once more after this record (J2583, 11 Nov 2026: two rows of this part are made again).
+        # This record pins the board as it left it, the later record starts from that hash, and the later record and
+        # the scope pin the board as it is now. tests/test_hos009_retake_wording.py checks the later change itself.
+        later = json.loads((ROOT / "jobs/reviews/J2583/PROMPT_CHANGE_2026-11-11.json").read_text())
+        later = later["boards"]["part-04_plates_v05.json"]
+        self.assertEqual(self.record["board_sha256_new"], later["board_sha256_old"])
+        self.assertEqual(later["board_sha256_new"], digest)
         self.assertNotEqual(self.record["board_sha256_old"], digest)
         scope = json.loads((self.EDIT / "TRANCHE2_SCOPE_J2026.json").read_text())
         pinned = {r["id"]: r["board_sha256"] for r in scope["rows"] if r["board"].endswith("part-04_plates_v05.json")}
