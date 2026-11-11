@@ -21,7 +21,8 @@ Guards (J2033_PREFLIGHT.md / J2026):
 - writer lock, one live process, detached log/.done
 - fresh required Flow account and an exact Veo 3.1 Quality x1 price of 100
 - pending submits count at full cost; unknown pending charges stop the run
-- reserve the unused part of the 6000 cap plus other reservations
+- the twenty-row path reserves J2033 for the unused part of the 6000 cap
+- `--retakes-j2583` reserves a new identity J2583 at the approved 400 and never reopens J2033
 - balance after that reservation stays at or above 3000
 - a batch is at most 5 rows and 1500 credits; at most 3 takes a row
 """
@@ -901,7 +902,8 @@ def runner_state_dir() -> Path:
 def detached_command(script: Path, log_path: Path, done_path: Path, *,
                      repo: Path, media: Path, archive: Path, other: int,
                      ledger: Path, lock: Path, pid: Path,
-                     session: str = "hos009-tranche2") -> list[str]:
+                     session: str = "hos009-tranche2",
+                     retakes_j2583: bool = False) -> list[str]:
     """Print-only launch recipe; never arms generation or overwrites logs."""
     paths = [script, repo, media, archive, ledger, lock, pid, log_path, done_path]
     if not all(path.is_absolute() for path in paths):
@@ -920,6 +922,8 @@ def detached_command(script: Path, log_path: Path, done_path: Path, *,
             "--other-reservations", str(other), "--ledger", str(ledger),
             "--lock", str(lock), "--pid", str(pid), "--log", str(log_path),
             "--done", str(done_path)]
+    if retakes_j2583:
+        args.append("--retakes-j2583")
     return ["tmux", "new", "-d", "-s", session, shlex.join(args)]
 
 
@@ -1265,10 +1269,25 @@ def next_still_evidence_path(archive_dir: Path, still_filename: str) -> Path:
         attempt += 1
 
 
+def _call_accepting(fn, *args, required: tuple[str, ...] = (), **kwargs):
+    """Pass only parameters the callee accepts. Required names must be real ones."""
+    params = inspect.signature(fn).parameters
+    var_kw = any(item.kind == inspect.Parameter.VAR_KEYWORD for item in params.values())
+    if not var_kw:
+        missing = [name for name in required if name not in params]
+        if missing:
+            raise GuardError(
+                "J2583 retake path must reserve before it writes a local SUBMITTING row"
+            )
+        kwargs = {key: value for key, value in kwargs.items() if key in params}
+    return fn(*args, **kwargs)
+
+
 def execute_shared_batch(batch: list[Row], *, media: Path, ledger_path: Path,
                          archive_dir: Path, accounting_state: Path | None = None,
                          spend_ledger: Path | None = None, recorder: str = "codex",
-                         reservation: str = "J2033", other: int = 0, submitter=None,
+                         reservation: str = "J2033", reservation_cap: int = MAX_TOTAL_CREDITS,
+                         other: int = 0, submitter=None,
                          still_maker=None,
                          in_scope_keys: set[tuple[int, str]] | None = None,
                          test_archive: bool = False,
@@ -1279,9 +1298,16 @@ def execute_shared_batch(batch: list[Row], *, media: Path, ledger_path: Path,
     Each actual configured Create obtains its own UI evidence and durable shared
     charge through live_video_submit. The shared lock covers preparation, Create,
     download, archive and receipts. This remains behind cmd_submit's interlock.
+    J2583 retakes reserve identity J2583 at 400 credits. The local SUBMITTING row
+    is written only after that reserve returns. J2033 is not reopened.
     """
     if type(other) is not int or other < 0:
         raise GuardError("invalid other reservations")
+    if retakes_j2583:
+        if reservation != "J2583" or reservation_cap != 400:
+            raise GuardError("J2583 retakes reserve identity J2583 at 400 credits")
+    elif reservation != "J2033" or reservation_cap != MAX_TOTAL_CREDITS:
+        raise GuardError("tranche submit reserves J2033 at the 6000 cap")
     assert_batch_limits(batch)
     if not test_archive:
         accounting_state, spend_ledger = production_batch_paths(
@@ -1306,10 +1332,12 @@ def execute_shared_batch(batch: list[Row], *, media: Path, ledger_path: Path,
                     continue
                 spath = still_path(media, srow.part, srow.plate_id)
                 if not spath.is_file():
-                    made = Path(still_maker(
-                        srow, spath, accounting=accounting, reservation=reservation,
+                    made = Path(_call_accepting(
+                        still_maker, srow, spath,
+                        required=("reservation_cap",) if retakes_j2583 else (),
+                        accounting=accounting, reservation=reservation,
                         evidence_path=next_still_evidence_path(archive_dir, spath.name),
-                        other=other,
+                        other=other, reservation_cap=reservation_cap,
                     ))
                     if not made.is_file():
                         raise GuardError(f"zero-price still for {srow.plate_id} was not written")
@@ -1342,28 +1370,45 @@ def execute_shared_batch(batch: list[Row], *, media: Path, ledger_path: Path,
                                       takes_recorded(entries, row.part, row.plate_id))
             dest.parent.mkdir(parents=True, exist_ok=True)
             charge = f'HOS:009:P{row.part:02d}:{row.plate_id}:t{take}'
-            # Persist local intent before entering the browser; failures cannot
-            # silently skip a take or erase an unknown submission.
+            # The twenty-row path persists local intent before the browser so a
+            # crash cannot skip a take. J2583 writes that row only after reserve.
             intent = submitting_record(row.plate_id, row.part, take, dest)
             intent['shared_charge'] = charge
             intent['inventory'] = inventory_id
             intent['input'] = {'file': str(frame.resolve()), 'sha256': sha256_file(frame)}
-            append_ledger(ledger_path, intent)
             submit_kwargs = dict(
                 accounting=accounting,
                 reservation=reservation,
+                reservation_cap=reservation_cap,
                 charge=charge,
                 evidence_path=archive_dir / (dest.name + '.create.json'),
             )
+            wrote_local = False
+            if retakes_j2583:
+                def after_reserve(intent=intent):
+                    nonlocal wrote_local
+                    if wrote_local:
+                        raise GuardError("local SUBMITTING row already written")
+                    append_ledger(ledger_path, intent)
+                    wrote_local = True
+                submit_kwargs['after_reserve'] = after_reserve
+                required = ("after_reserve", "reservation_cap")
+            else:
+                append_ledger(ledger_path, intent)
+                wrote_local = True
+                required = ()
             if accepts_other:
                 submit_kwargs['other'] = other
             try:
-                evidence = submitter(row, dest, frame, **submit_kwargs)
+                evidence = _call_accepting(
+                    submitter, row, dest, frame, required=required, **submit_kwargs)
             finally:
                 # A known click may have charged even when download raised.
                 # Ambiguous PENDING intents remain absent from confirmed spend.
                 if spend_ledger is not None:
                     accounting.export_ai_spend(spend_ledger, by=recorder)
+            if retakes_j2583 and not wrote_local:
+                raise GuardError("retake submitter returned without reserving before local intent")
             shared = accounting.snapshot()['charges'].get(charge)
             if not shared or shared['status'] != 'CHARGED' or shared['amount'] != MAX_CREDITS_PER_TAKE:
                 raise GuardError('submitter returned without exact shared charge; no advancement')
@@ -1402,9 +1447,18 @@ def open_flow_page(browser, flow_home: str, goto):
     return page
 
 
+def commit_reservation(accounting: SharedFlowAccounting, *, reservation: str, cap: int,
+                       live: int, floor: int, after_reserve=None):
+    """Reserve first. A local SUBMITTING row is written only after reserve returns."""
+    accounting.reserve(reservation, "HOS:009", cap, live=live, floor=floor)
+    if after_reserve is not None:
+        after_reserve()
+
+
 def live_video_submit(row: Row, dest: Path, frame: Path, *,
                       accounting: SharedFlowAccounting, reservation: str,
-                      charge: str, evidence_path: Path, other: int = 0) -> dict:
+                      charge: str, evidence_path: Path, other: int = 0,
+                      reservation_cap: int = MAX_TOTAL_CREDITS, after_reserve=None) -> dict:
     """Real Flow call. Unreachable unless submit was armed. Tests never call this."""
     if os.environ.get(SUBMIT_ENV) != "1":
         raise GuardError("live submit is not armed")
@@ -1440,7 +1494,10 @@ def live_video_submit(row: Row, dest: Path, frame: Path, *,
             # and carry the value to the submit guard.
             live_balance = read_live_balance(configured_page)
             ui = read_live_evidence(configured_page, balance=live_balance, open_overlay=True)
-            accounting.reserve(reservation, 'HOS:009', MAX_TOTAL_CREDITS, live=ui['balances'][0], floor=floor)
+            commit_reservation(
+                accounting, reservation=reservation, cap=reservation_cap,
+                live=ui['balances'][0], floor=floor, after_reserve=after_reserve,
+            )
             evidence.update(guarded_create(
                 configured_page, accounting, reservation=reservation, charge=charge,
                 evidence_path=evidence_path, floor=floor, balance=live_balance))
@@ -1513,6 +1570,15 @@ J2583_KEYS = ((3, "01_really_falling_c1"), (2, "08_the_apple_c1"),
               (4, "05_minute_second_c1"))
 
 
+def retake_credit_cap(repo: Path) -> int:
+    """The approved J2583 ceiling from the retake scope. It is 400, not the 6000 tranche cap."""
+    scope = json.loads((repo / EDIT_REL / "TRANCHE2_RETAKES_J2583.json").read_text())
+    cap = scope.get("max_total_credits")
+    if scope.get("job") != "J2583" or type(cap) is not int or cap != 400:
+        raise GuardError("J2583 retake cap is not the approved 400")
+    return cap
+
+
 def retake_batch(repo: Path, rows: list[Row], entries: list[dict], media: Path) -> list[Row]:
     """Only J2583's first three second takes; no automatic retry or c2."""
     scope = json.loads((repo / EDIT_REL / "TRANCHE2_RETAKES_J2583.json").read_text())
@@ -1569,6 +1635,12 @@ def cmd_submit(repo: Path, *, other: int, media: Path, ledger_path: Path, lock_p
                  else next_batch(rows, entries))
         if not batch:
             return []
+        if retakes_j2583:
+            reservation = "J2583"
+            reservation_cap = retake_credit_cap(repo)
+        else:
+            reservation = "J2033"
+            reservation_cap = MAX_TOTAL_CREDITS
         return execute_shared_batch(
             batch,
             media=media,
@@ -1577,7 +1649,8 @@ def cmd_submit(repo: Path, *, other: int, media: Path, ledger_path: Path, lock_p
             accounting_state=accounting_state,
             spend_ledger=spend_ledger,
             recorder=recorder,
-            reservation="J2033",
+            reservation=reservation,
+            reservation_cap=reservation_cap,
             other=other,
             submitter=submitter,
             still_maker=still_maker or live_still_maker,
@@ -2000,7 +2073,7 @@ def guarded_still_create(page, accounting: SharedFlowAccounting, *, reservation:
 
 def live_still_maker(row: Row, dest: Path, *, accounting: SharedFlowAccounting | None = None,
                      reservation: str = "J2033", evidence_path: Path | None = None,
-                     other: int = 0) -> Path:
+                     other: int = 0, reservation_cap: int = MAX_TOTAL_CREDITS) -> Path:
     """Zero-credit stills only, guarded under SharedFlowAccounting with verified 0 on screen."""
     if os.environ.get(SUBMIT_ENV) != "1":
         raise GuardError(
@@ -2041,7 +2114,10 @@ def live_still_maker(row: Row, dest: Path, *, accounting: SharedFlowAccounting |
         def create_guard(configured_page):
             live_balance = read_live_balance(configured_page)
             ui = read_live_still_evidence(configured_page, balance=live_balance, open_overlay=True)
-            accounting.reserve(reservation, "HOS:009", MAX_TOTAL_CREDITS, live=ui["balances"][0], floor=floor)
+            commit_reservation(
+                accounting, reservation=reservation, cap=reservation_cap,
+                live=ui["balances"][0], floor=floor,
+            )
             evidence.update(guarded_still_create(
                 configured_page, accounting, reservation=reservation,
                 plate_id=row.plate_id, evidence_path=evidence_path, floor=floor,
@@ -2100,6 +2176,7 @@ def main(argv: list[str] | None = None) -> int:
         launch.add_argument("--pid", default=str(state / "runner.pid"))
         launch.add_argument("--log", required=True)
         launch.add_argument("--done", required=True)
+        launch.add_argument("--retakes-j2583", action="store_true")
     args = parser.parse_args(argv)
     if args.cmd == "reconcile-policy-refusal":
         evidence = json.loads(Path(args.evidence).read_text())
@@ -2121,7 +2198,8 @@ def main(argv: list[str] | None = None) -> int:
             Path(__file__).resolve(), Path(args.log), Path(args.done),
             repo=Path(args.repo), media=Path(args.media), archive=Path(args.archive),
             other=args.other_reservations, ledger=Path(args.ledger),
-            lock=Path(args.lock), pid=Path(args.pid))
+            lock=Path(args.lock), pid=Path(args.pid),
+            retakes_j2583=args.retakes_j2583)
         load_scope(Path(args.repo))
         if args.cmd == "detach-command":
             sys.stdout.write(json.dumps(command) + "\n")
