@@ -11,3 +11,5 @@ SHA-256: `8d9445b044fa25db117ebe81e1e16d0a3dcd05c40ff6a86fd6b3ab99cb2f96a0`. PNG
 No visual judgment, KEEP or stage approval is claimed. Next: the separate start-picture review requested by the brief; only after acceptance, the separately scoped motion take. No blocker to that review.
 
 Thread read to #6794097839.
+
+Validation: `check_all.sh 02_Video-Projects/008_Lightning-Franklin` → `ALL CHECKS PASS`. Existing local dependencies were linked into the isolated worktree; npm cache was routed to scratch. This checks repository records, not the new picture’s visual acceptance.
