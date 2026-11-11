@@ -1,0 +1,18 @@
+{
+  "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2498/hos_013_timing_rough_J2498_v01.mp4",
+  "sha256": "565a0d6613de1c8e40ed9bf76ee7708c9e30b6b840687c9c277251db3fc634f2",
+  "duration_s": 515,
+  "width": 960,
+  "height": 540,
+  "fps": 30,
+  "existing_renders": 22,
+  "slates": 72,
+  "vo_sha256": "837178125a72fb250d255f1039c5cb7f8630bbb313cf23801a1155f257d796e0",
+  "audio": "Locked VO only; no score or SFX; not a delivery mix.",
+  "credits_spent": 0,
+  "gbp_spent": 0,
+  "timings_changed": false,
+  "clip_check_exit": 1,
+  "approved": false,
+  "limitations": "Diagnostic only. Original plan timing faults preserved; overlays audited, not newly composited. No direct listening or motion review claimed."
+}

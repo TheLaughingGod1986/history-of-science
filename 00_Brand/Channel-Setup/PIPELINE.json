@@ -816,8 +816,18 @@
           "waiting": "after J2240 013 shot list v01 + price review"
         },
         "edit": {
-          "status": "todo",
-          "due": "2026-12-10"
+          "status": "blocked",
+          "due": "2026-12-10",
+          "owner": "Grok",
+          "underway": false,
+          "since": "2026-11-11",
+          "steps": [
+            0,
+            1
+          ],
+          "steps_unit": "approved master",
+          "waiting": "Chief ruling on sentence-safe picture cuts and overlay revision from J2498",
+          "note": "J2498: 515 s diagnostic rough on studio-live, 22 existing renders + 72 slates. clip_check FAIL (9 errors); direct audit 14 word cuts, 23 sentence cuts, 5 graphics over 8 s. Not a passed edit or Ben watch. See timing_rough_J2498/TIMING_REPORT_v01.md."
         },
         "thumbnails": {
           "status": "todo",
