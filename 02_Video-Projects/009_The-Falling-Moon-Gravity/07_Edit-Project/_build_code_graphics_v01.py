@@ -34,13 +34,22 @@ MINUTE_SECOND_SPEC = {
 }
 
 # J2632: one circular segment, fixed initial tangent, no labels.
-FALLING_MOON_DURATION = 5.26
+# Strokes are the J2631 phone weight (desk 6801180887): about 5 px for the
+# arc and 4 px for the tangent dashes, measured on the 1080 frame. The
+# contact sheet must also carry a 390 px-wide copy of one frame at 1:1.
+FALLING_MOON_DURATION = 5.26  # unchanged motion segment
+FALLING_MOON_HEAD_FRAMES = 32
+FALLING_MOON_HEAD_S = FALLING_MOON_HEAD_FRAMES / FPS
 FALLING_MOON_EARTH = (560.0, 880.0)
 FALLING_MOON_RADIUS = 720.0
 FALLING_MOON_ANGLE = math.radians(70)
+FALLING_MOON_ARC_PX = 5
+FALLING_MOON_DASH_PX = 4
+FALLING_MOON_DASH_ON = 36
+FALLING_MOON_DASH_GAP = 28
 FALLING_MOON_SPEC = {
     "id": "01_really_falling_c1", "file": "code_graphic_009_p3_01_really_falling_c1.mp4",
-    "dur": FALLING_MOON_DURATION, "label": "", "kind": "falling_moon",
+    "dur": FALLING_MOON_DURATION + FALLING_MOON_HEAD_S, "label": "", "kind": "falling_moon",
     "layout": "full_frame_period_paper", "plate": None,
 }
 
@@ -54,17 +63,29 @@ def falling_moon_position(t):
 
 def draw_falling_moon(d, t, dur):
     cx, cy = FALLING_MOON_EARTH
-    earth(d, cx, cy, 150)
+    earth(d, cx, cy, 150, continents=True)
     x0, y0 = falling_moon_position(0)
     # Fixed tangent originates at the initial Moon centre, never follows it.
-    for x in range(int(x0), 1600, 58):
-        d.line((x, y0, min(x + 29, 1600), y0), fill=ink(0.7), width=4)
+    step = FALLING_MOON_DASH_ON + FALLING_MOON_DASH_GAP
+    x = int(x0)
+    # Exactly 32 distinct lead-in frames. Start beyond the Moon rim so
+    # every frame visibly changes, including before the first paper shift.
+    end_x = min(1600, x0 + 64 + (1600 - x0 - 64) * t / FALLING_MOON_HEAD_S)
+    while x < end_x:
+        d.line((x, y0, min(x + FALLING_MOON_DASH_ON, end_x), y0), fill=ink(0.85), width=FALLING_MOON_DASH_PX)
+        x += step
     # Only the traversed arc inks on; no spare object or full-orbit preview.
-    points = [falling_moon_position(t * i / 120) for i in range(121)]
-    if t > 0:
-        d.line(points, fill=ink(0.8), width=5)
-    mx, my = falling_moon_position(t)
-    moon(d, mx, my, 57)
+    motion_t = max(0.0, t - FALLING_MOON_HEAD_S)
+    points = [falling_moon_position(motion_t * i / 120) for i in range(121)]
+    if motion_t > 0:
+        d.line(points, fill=ink(0.9), width=FALLING_MOON_ARC_PX)
+    mx, my = falling_moon_position(motion_t)
+    # Scoped to this graphic: two off-centre open rings, 4 px ink.
+    # 30 px outer diameter leaves 22 px wash inside each ring.
+    r = 57
+    d.ellipse((mx-r, my-r, mx+r, my+r), fill=wash(moon=True), outline=ink(), width=5)
+    for dx, dy in ((-19, -13), (18, 18)):
+        d.ellipse((mx+dx-15, my+dy-15, mx+dx+15, my+dy+15), outline=ink(), width=4)
 
 
 SPECS = [FALLING_MOON_SPEC, MINUTE_SECOND_SPEC,
@@ -128,16 +149,47 @@ def arrow(draw, x0, y0, x1, y1, p, fill, width=6, head=18):
             )
 
 
-def earth(draw, cx, cy, r, a=1.0):
+def earth(draw, cx, cy, r, a=1.0, continents=False):
     if a <= 0:
         return
     w = max(3, int(r / 14))
     draw.ellipse((cx - r, cy - r, cx + r, cy + r), fill=wash(a), outline=ink(a), width=w)
     if r < 16:
         return
-    draw.ellipse((cx - r * 0.84, cy - r * 0.84, cx + r * 0.84, cy + r * 0.84), outline=ink(0.45 * a), width=max(2, w - 2))
-    draw.arc((cx - r * 0.35, cy - r * 0.72, cx + r * 0.55, cy + r * 0.15), 210, 30, fill=ink(a), width=max(2, w - 1))
-    draw.arc((cx - r * 0.62, cy - r * 0.05, cx + r * 0.15, cy + r * 0.72), 20, 200, fill=ink(a), width=max(2, w - 1))
+    if not continents:
+        draw.ellipse((cx - r * 0.84, cy - r * 0.84, cx + r * 0.84, cy + r * 0.84), outline=ink(0.45 * a), width=max(2, w - 2))
+        draw.arc((cx - r * 0.35, cy - r * 0.72, cx + r * 0.55, cy + r * 0.15), 210, 30, fill=ink(a), width=max(2, w - 1))
+        draw.arc((cx - r * 0.62, cy - r * 0.05, cx + r * 0.15, cy + r * 0.72), 20, 200, fill=ink(a), width=max(2, w - 1))
+        return
+    # Simplified coastlines, same ink as the arc. Unit circle, y up.
+    # Two Chaikin passes round the corners so they read as land, not a symbol.
+    cw = max(4, min(w, FALLING_MOON_ARC_PX))
+    coasts = (
+        # North America, wide, with a gulf and a Mexican taper.
+        ((-0.68, 0.18), (-0.55, 0.42), (-0.36, 0.58), (-0.18, 0.40),
+         (-0.26, 0.22), (-0.16, 0.08), (-0.30, -0.02), (-0.46, 0.08), (-0.62, 0.16)),
+        # South America, the long triangle south-east of the isthmus.
+        ((-0.28, -0.08), (-0.10, -0.14), (-0.02, -0.36), (-0.14, -0.64),
+         (-0.30, -0.42), (-0.34, -0.16)),
+        # Europe, a small cap north of Africa.
+        ((0.08, 0.34), (0.14, 0.55), (0.36, 0.50), (0.34, 0.32), (0.16, 0.30)),
+        # Africa, the broad north and the taper to the cape, east of the Atlantic gap.
+        ((0.08, 0.20), (0.28, 0.26), (0.42, 0.08), (0.34, -0.12),
+         (0.22, -0.40), (0.08, -0.52), (-0.02, -0.20), (0.02, 0.02)),
+    )
+    for pts in coasts:
+        ring = list(pts)
+        for _ in range(2):
+            nxt = []
+            m = len(ring)
+            for i in range(m):
+                x0, y0 = ring[i]
+                x1, y1 = ring[(i + 1) % m]
+                nxt.append((0.75 * x0 + 0.25 * x1, 0.75 * y0 + 0.25 * y1))
+                nxt.append((0.25 * x0 + 0.75 * x1, 0.25 * y0 + 0.75 * y1))
+            ring = nxt
+        xy = [(cx + x * r, cy - y * r) for x, y in ring]
+        draw.line(xy + [xy[0]], fill=ink(a), width=cw, joint="curve")
 
 
 def moon(draw, cx, cy, r, a=1.0):

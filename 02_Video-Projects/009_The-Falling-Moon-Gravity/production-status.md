@@ -161,3 +161,27 @@ Three retained takes are untouched: `009 A v02`, `010 A v02` (`J1004` Option A1 
 Falling-Moon continuation rebuilt as a £0 parchment code graphic for 3:03.94–3:09.20, 158 frames at 30 fps, silent. Mini/studio-live SHA-256 matches MANIFEST.json. Row route changed in part-03_plates_v05.json; no splice or KEEP. Gemini timing advisory clear; Grok sheet decision and join review pending. Evidence: 07_Edit-Project/J2632_review/REVIEW.md. Approved-row count unchanged.
 
 Tool outputs: `J2632 geometry, stream, silence and full decode checks passed; review remains pending.` and `ALL CHECKS PASS` (check_all.sh). These are tool results, not final film PASS.
+
+
+## J2632 revised falling-Moon evidence — 11 Nov 2026
+
+Codex built 179 unique frames at 30 fps, including 21 animated lead-in frames and two open crater rings. Candidate and sheets on PR #543; no KEEP or splice. Parent frames 99–104 and excluded 112/125 are on the boundary sheet. The 24 fps parent loses 0.875 s, while 21 new frames at 30 fps add 0.700 s: 0.175 s remains for Chief timing reconciliation. Original motion mapping and film end 189.20 are preserved in the candidate evidence.
+
+Repository validation output (not film approval):
+
+```text
+-- durable desk handoffs: PASS
+-- no media: PASS
+-- status board in sync: PASS
+-- ElevenLabs guard tests: PASS
+-- vo_check word tests: PASS
+-- atempo check tests: PASS
+-- voice speed (atempo <= 1.06): PASS
+-- contract tests: PASS
+-- package-lint: PASS
+ALL CHECKS PASS
+```
+
+## J2632 r4 timing revision — 11 Nov 2026
+
+32-frame head, 190 unique frames at 30 fps; motion pinned to183.94, nominal end189.20. Artwork unchanged. SHA-256 `23c832b09e70f78d8eeece657dac11d6148e2a5f5c701f2ad88b868845b5f3b3`, NAS verified. Evidence: `07_Edit-Project/code_graphics_v01/J2632_r4/REVIEW.md`. Tool output: `J2632 geometry, stream, silence, 190 unique decoded frames and full decode checks passed; r4 timing residual under 10 ms; review pending.` Repo output: `ALL CHECKS PASS`. Gemini advisory: timing contradictions resolved within Chief tolerance; 0.200 s fade and tail snap required at future assembly. Claude sheet read and Chief KEEP pending; splice_authorized=false, PR543 unmerged.
