@@ -1,0 +1,41 @@
+{
+  "preflight": {
+    "live": 11690,
+    "pending": false,
+    "shared_liability": 6000
+  },
+  "take": {
+    "part": "02",
+    "id": "02_salon_spark",
+    "take": 4,
+    "reference_sha256": "cdeb4f6bd15a13afe4164ea2e02d0b755fb9ffa860223063b75695ce4009e592",
+    "file": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part02/j2241/02_salon_spark_j2241_t4.mp4",
+    "minimum_frames": 160,
+    "status": "GENERATED_PENDING_REVIEW",
+    "full_prompt_readback": "The lady's knuckle moves the last small distance towards the end of the glass tube and stops just short of it. The lecturer holds the tube perfectly still. Her wig stays smooth and completely still. The room is calm and softly lit. The air around the tube stays clear for the whole shot. Slow, small movement only.",
+    "credits": 100,
+    "charge": "HOS:008:P02:02_salon_spark:J2241:t4",
+    "generation": {
+      "seconds": 145.7,
+      "bytes": 1075284,
+      "model": "Veo 3.1 - Quality",
+      "engine": "flow-ui-veo",
+      "orbit_ref": null,
+      "start_frame": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part02/refs/v03_flow_stills/02_salon_spark_t4_start_try3.png",
+      "orbit_attached": true,
+      "identity_lock": false,
+      "scenery_only": false,
+      "media_id": "https://flow.google.com/asb/ANqvLOYH5U374tWfKLF0krNjmtvpWg1UNWakurTAJUkYoHfDcXGUp4QXneCpQrcu1PnBhHn4nv5znmjUpmQP1Cdu6pSdOS6_sbzknq_XICPpz80gckbDfzjCId-k7y0qIvuMDqSj4ylP-kfLfio1qoePgPIfaTyy7tYWJBJD3eJI0Q=mm,22,15",
+      "url": "https://flow.google.com/project/6fc402f7-b734-4891-8597-3f674e9b9b67"
+    },
+    "sha256": "82eb0d10c57a9ddfabd10aed92d158be726ad57f987d0c35e7ecdd7422993ad5",
+    "frames": 192,
+    "width": 1280,
+    "height": 720,
+    "frame_rate": "24/1",
+    "sheet": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part02/j2241/02_salon_spark_j2241_t4.jpg",
+    "decode_ok": true
+  },
+  "nas_file": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part02/j2241/02_salon_spark_j2241_t4.mp4",
+  "nas_sha256_verified": true
+}
