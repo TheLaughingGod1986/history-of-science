@@ -1,0 +1,25 @@
+{
+  "host": "flow.google.com",
+  "models": [
+    "Veo 3.1 - Quality"
+  ],
+  "outputs": [
+    "x1"
+  ],
+  "aspects": [
+    "16:9"
+  ],
+  "durations": [
+    "8s"
+  ],
+  "prices": [
+    "Generating will use 100 credits"
+  ],
+  "balances": [],
+  "ultra": true,
+  "create_count": 0,
+  "balance": 13490,
+  "account_verified": true,
+  "submissions": 0,
+  "preflight": "passed under Chief amended bar: create_count 0 permitted before prompt; guarded_create remains strict"
+}
