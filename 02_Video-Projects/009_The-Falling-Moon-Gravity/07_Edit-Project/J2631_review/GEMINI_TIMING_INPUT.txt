@@ -1,0 +1,11 @@
+You are the Gemini timing reviewer for J2631, HOS 009. Do not use tools, edit files, claim jobs, change spoken lines or make a Chief PASS. Review only this supplied text, explicitly say no audio/motion review. Return concise findings and timing conflicts.
+Graphic film interval 319.63 to 333.14 s, internal row cut 326.39 s. Final Chief brief requires labels in order 1 SECOND, 1 MINUTE, 5 m, TWO STOREYS HIGH, each fading in/out over .4 s, no simultaneous labels, every label off before 326.39 and 333.14. Inked Moon stays and moves down continuously, left dot drops once 320.08 to321.08. Equal 300px brackets ink on322.83 to323.23. Current label LOCAL windows: 1 SECOND .05–1.50; 1 MINUTE1.60–3.10; 5m3.20–4.70; TWO STOREYS HIGH4.80–6.40. All labels off thereafter.
+Scribe SRT relative to part04; part start262.06s:
+49.240–53.080 beautiful part. In one second, an apple
+53.220–56.420 falls about five meters. If the pull on
+56.460–60.820 the moon is 3,600 times weaker, then in
+60.880–63.460 one minute, the moon should fall about the
+63.560–66.620 same distance, five meters, along its
+66.680–67.140 curve.
+68.020–70.340 Newton checked it against the real moon.
+Do not invent exact word timestamps from grouped subtitles. Does the candidate match narration? Identify required Chief clarification if label-before-cut wording prevents honest timing. The approved graphic begins after the spoken one-second sentence, which the KEEP parent carries. No permission to change cut, VO or locked duration. Give a concrete review recommendation, not a rewrite of narration.

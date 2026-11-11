@@ -1,0 +1,77 @@
+{
+  "id": "05_minute_second",
+  "file": "code_graphic_009_p4_05_minute_second.mp4",
+  "duration_s": 13.533333333333333,
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "label": "",
+  "label_words": 0,
+  "layout": "full_frame_period_paper",
+  "named_plate": null,
+  "background": "moving period paper",
+  "min_sample_mean_luma": 90.14,
+  "min_sample_p95": 119.0,
+  "near_black": "PASS",
+  "still": "code_graphic_009_p4_05_minute_second.jpg",
+  "sha256": "c33a45a5048e0f4615933ffd9bc11b2ffcace03f9468d446fff6d395fa3b988e",
+  "bytes": 2537230,
+  "nominal_edit_duration_s": 13.51,
+  "film_start_s": 319.63,
+  "internal_cut_s": 326.39,
+  "film_end_s": 333.14,
+  "labels": [
+    {
+      "text": "1 SECOND",
+      "start_s": 0.05,
+      "end_s": 1.5
+    },
+    {
+      "text": "1 MINUTE",
+      "start_s": 1.6,
+      "end_s": 3.1
+    },
+    {
+      "text": "5 m",
+      "start_s": 3.2,
+      "end_s": 4.7
+    },
+    {
+      "text": "TWO STOREYS HIGH",
+      "start_s": 4.8,
+      "end_s": 6.4
+    }
+  ],
+  "review_status": "HOLD: Gemini flags narration mismatch; Chief must clarify label timing before revised render or splice",
+  "source_path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/code_graphics_v01/code_graphic_009_p4_05_minute_second.mp4",
+  "no_splice": true,
+  "geometry_checks": {
+    "all_406_frames_monotone": true,
+    "left_landed_once": true,
+    "bracket_y_px": [
+      330,
+      630
+    ],
+    "one_label_at_a_time": true,
+    "all_labels_off_at_s": 6.4,
+    "illustrative_time_scales": true
+  },
+  "sheet_frames": [
+    0,
+    24,
+    43,
+    65,
+    90,
+    112,
+    135,
+    166,
+    191,
+    202,
+    203,
+    240,
+    300,
+    360,
+    405
+  ],
+  "shared_source_path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/code_graphics_v01/code_graphic_009_p4_05_minute_second.mp4"
+}
