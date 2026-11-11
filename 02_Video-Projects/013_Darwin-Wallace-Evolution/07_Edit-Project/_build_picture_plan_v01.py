@@ -198,7 +198,7 @@ ROWS_SPEC = [
         },
         "who_alfred_russel_wallace", None,
         "Split scene: on the left, bearded Darwin (aged 49) reads handwritten pages in his Kent study; on the right, Alfred Russel Wallace (aged 35, bearded, round glasses) writes by oil lamp in a rain-lashed bamboo hut",
-        "Premium Animistry-class 3D cartoon. Split composition: on the left, a 49-year-old bearded English naturalist in his Kent study reads a foreign manuscript; on the right, a 35-year-old bearded field naturalist wearing round wire-rimmed spectacles writes by oil lamp in a rain-lashed bamboo hut. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit."
+        "Premium Animistry-class 3D cartoon. Split composition: on the left, a 49-year-old English naturalist, clean-shaven with long greying side whiskers, in his Kent study reads a foreign manuscript; on the right, a 35-year-old bearded field naturalist wearing round wire-rimmed spectacles writes by oil lamp in a rain-lashed bamboo hut. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit."
     ),
     (
         1, "10_cg_globe_arc", 62.08, 67.68, "G", "CG", "OTHER SIDE OF WORLD",
@@ -629,7 +629,7 @@ ROWS_SPEC = [
         None,
         None, None,
         "Midpoint twist (~65% runtime): Down House study fireplace burning low; Darwin holds Wallace's opened packet near the grate — then pulls it back to his desk",
-        "Premium Animistry-class 3D cartoon. Down House study with a low hearth glow: a 49-year-old bearded English naturalist holds the opened foreign packet near the fireplace grate, pauses, and pulls it firmly back to his desk. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit."
+        "Premium Animistry-class 3D cartoon. Down House study with a low hearth glow: a 49-year-old English naturalist, clean-shaven with long greying side whiskers, holds the opened foreign packet near the fireplace grate, pauses, and pulls it firmly back to his desk. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit."
     ),
     (
         4, "09a_darwin_reads_wallace", 337.30, 344.20, "A", "Q", "18 JUNE 1858",
@@ -643,7 +643,7 @@ ROWS_SPEC = [
         },
         "who_charles_lyell", None,
         "18 June 1858: Darwin (aged 49, full beard) lowers Wallace's pages in shock at his Down House study window",
-        "Premium Animistry-class 3D cartoon. Down House study, 18 June 1858: a 49-year-old bearded English naturalist stands by the window lowering the foreign manuscript pages in shock. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit."
+        "Premium Animistry-class 3D cartoon. Down House study, 18 June 1858: a 49-year-old English naturalist, clean-shaven with long greying side whiskers, stands by the window lowering the foreign manuscript pages in shock. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit."
     ),
     (
         4, "09b_smashed_letter_pen", 344.20, 349.50, "A", "F", "ORIGINALITY SMASHED",
@@ -742,7 +742,7 @@ ROWS_SPEC = [
         None,
         None, None,
         "Down House, 1858–1859: Darwin writes page after page at his desk as daylight and candlelight cycle past the study window, stacking a finished green-bound manuscript",
-        "Premium Animistry-class 3D cartoon. Down House study, 1858–1859: a bearded English naturalist writes page after page at his mahogany desk as light shifts across the window, stacking a thick manuscript. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit."
+        "Premium Animistry-class 3D cartoon. Down House study, 1858–1859: an English naturalist of about fifty, clean-shaven with long greying side whiskers, writes page after page at his mahogany desk as light shifts across the window, stacking a thick manuscript. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit."
     ),
     (
         5, "05b_arch_origin_1859_title", 411.56, 414.44, "A/G", "ARCH", None,

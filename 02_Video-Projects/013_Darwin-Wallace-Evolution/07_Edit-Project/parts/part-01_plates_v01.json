@@ -504,7 +504,7 @@
       "source_kind": "new_mint_quality",
       "source_detail": "New plate, needs minting \u00b7 Flow Veo 3.1 Quality \u00b7 100 credits \u00b7 WHO portrait cut-out overlay built at `07_Edit-Project/code_graphics_v01/who_overlays/who_alfred_russel_wallace_overlay.png` from `07_Edit-Project/archive_pulls_v01/raw/who_alfred_russel_wallace.png` (https://commons.wikimedia.org/wiki/File%3AAlfred_Russel_Wallace_1862_-_Project_Gutenberg_eText_15997.png, **Public domain**)",
       "shot_description": "Split scene: on the left, bearded Darwin (aged 49) reads handwritten pages in his Kent study; on the right, Alfred Russel Wallace (aged 35, bearded, round glasses) writes by oil lamp in a rain-lashed bamboo hut",
-      "prompt": "Premium Animistry-class 3D cartoon. Split composition: on the left, a 49-year-old bearded English naturalist in his Kent study reads a foreign manuscript; on the right, a 35-year-old bearded field naturalist wearing round wire-rimmed spectacles writes by oil lamp in a rain-lashed bamboo hut. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "prompt": "Premium Animistry-class 3D cartoon. Split composition: on the left, a 49-year-old English naturalist, clean-shaven with long greying side whiskers, in his Kent study reads a foreign manuscript; on the right, a 35-year-old bearded field naturalist wearing round wire-rimmed spectacles writes by oil lamp in a rain-lashed bamboo hut. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
       "vo_land": [
         " Then  in  June  1858  a  letter  arrived  from  a  collector  on  the  other  side  of  the  world."
       ],
