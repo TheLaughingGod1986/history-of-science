@@ -1,0 +1,82 @@
+{
+  "job": "J2626",
+  "film": "HOS:009",
+  "date": "2026-11-11",
+  "by": "claude (elected Chief, queue side)",
+  "ruling": [
+    "history-of-science#180 comment 6798928858",
+    "history-of-science#180 comment 6798955014",
+    "history-of-science#180 comment 6799165375",
+    "history-of-science#180 comment 6799192687",
+    "history-of-science#180 comment 6799192880"
+  ],
+  "why": "The half-second sheets of the three second takes (J2584) passed one and failed two: the falling Moon's trail looped back over the Moon, and in the minute-and-second shot an apple rolled, a third apple appeared and an apple flew up onto the Moon. The Chief ruled one third take each, with the wording below, word for word.",
+  "follows": "jobs/reviews/J2583/PROMPT_CHANGE_2026-11-11.json: this change starts from the boards as that one left them.",
+  "boards": {
+    "part-03_plates_v05.json": {
+      "board_sha256_old": "05f932f3c893b73a7e6c7e3075f7ab7810235f12d2101e10b185083163b67b7c",
+      "board_sha256_new": "36f8f8bb0ebd18006569aa2b10b1df5c01b08b53de90dcd6f706c616ca779899",
+      "scope_rows_repinned": [
+        "01_really_falling_c1",
+        "05_shot_orbit_c1",
+        "05_shot_orbit_c2",
+        "07_ball_to_moon"
+      ]
+    },
+    "part-04_plates_v05.json": {
+      "board_sha256_old": "df9787adf7ec6662bb7a4647c6c153676a408822461fbc3be47d8641c74a4334",
+      "board_sha256_new": "7eac7c34c8a44edeccb607f9eeda0e1a0855e393f4ab9e131e9e2d370c39a52d",
+      "scope_rows_repinned": [
+        "05_minute_second_c1",
+        "05_minute_second_c2",
+        "08_halley_visit_c1",
+        "08_halley_visit_c2"
+      ]
+    }
+  },
+  "take_2_was_made_from": {
+    "part-03_plates_v05.json": "05f932f3c893b73a7e6c7e3075f7ab7810235f12d2101e10b185083163b67b7c",
+    "part-04_plates_v05.json": "df9787adf7ec6662bb7a4647c6c153676a408822461fbc3be47d8641c74a4334"
+  },
+  "rows": [
+    {
+      "id": "01_really_falling_c1",
+      "part": 3,
+      "field": "prompt",
+      "old": "Premium Animistry-class 3D cartoon. Same shot continues from the last frame of 01_really_falling. The camera drifts slowly. The same plain pale Moon stays in the sky above the orchard for the entire shot and glides gently sideways and downward along one smooth curve. A single thin curved line draws itself beneath the Moon, following its path. The Moon never fades, never changes size or colour, and never leaves the frame. No ball, no apple, no second object, no second line, no marks or face on the Moon. Nothing plummets straight at the Earth. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "new": "Premium Animistry-class 3D cartoon. Same shot continues from the last frame of 01_really_falling. The camera drifts slowly. The same plain pale Moon stays in the sky above the orchard for the entire shot and glides gently sideways and downward along one smooth curve. The Moon never fades, never changes size or colour, and never leaves the frame. No ball, no apple, no second object, no second line, no marks or face on the Moon. The single golden curve stays exactly as it is in the first frame: its upper-right end keeps pointing up and to the right and never bends back, loops, wraps around or crosses the Moon. The Moon glides smoothly forward along that path at the same size, brightness and colour. No second line or object appears. Nothing plummets straight at the Earth. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "motion_added": "The single golden curve stays exactly as it is in the first frame: its upper-right end keeps pointing up and to the right and never bends back, loops, wraps around or crosses the Moon. The Moon glides smoothly forward along that path at the same size, brightness and colour. No second line or object appears.",
+      "dropped": [
+        "A single thin curved line draws itself beneath the Moon, following its path."
+      ],
+      "note": "The Chief's line is added after the row's motion wording; the closing lines stay after it (desk 6798928858 point 1). The sentence that told the model to draw a line is taken out (desk 6799192880 point 1): the curve is already in the start frame."
+    },
+    {
+      "id": "05_minute_second_c1",
+      "part": 4,
+      "field": "prompt",
+      "old": "Premium Animistry-class 3D cartoon. Same shot continues from the last frame of 05_minute_second, camera keeps moving: Split picture: On the left, the apple that already fell lies still on the table at the foot of the ruler for the entire shot and never moves. A second green apple with a red flush drops once from beside the top of the ruler straight down and lands on the table beside it. Exactly two apples on the left at the end. Nothing moves upward at any moment. On the right, the Moon keeps moving forward along its curved path and never reverses. Both drop the same distance. No digits. The Moon, ball or path slides sideways and down along a smooth curve. Nothing plummets straight at the Earth. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "new": "Premium Animistry-class 3D cartoon. Same shot continues from the last frame of 05_minute_second, camera keeps moving: Split picture: On the left, the apple that already fell lies still on the table at the foot of the ruler for the entire shot and never moves or rolls. A second green apple with a red flush drops once from beside the top of the ruler straight down and lands on the table beside it. Exactly two apples on the left at the end, and no other apple appears. Nothing moves upward at any moment. On the right there is no apple at all: only the Moon, which keeps moving forward along its single curved path and never reverses. No second bright arc appears over the Earth. Both drop the same distance. No digits. Nothing plummets straight at the Earth. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "motion_old": "On the left, the apple that already fell lies still on the table at the foot of the ruler for the entire shot and never moves. A second green apple with a red flush drops once from beside the top of the ruler straight down and lands on the table beside it. Exactly two apples on the left at the end. Nothing moves upward at any moment. On the right, the Moon keeps moving forward along its curved path and never reverses.",
+      "motion_new": "On the left, the apple that already fell lies still on the table at the foot of the ruler for the entire shot and never moves or rolls. A second green apple with a red flush drops once from beside the top of the ruler straight down and lands on the table beside it. Exactly two apples on the left at the end, and no other apple appears. Nothing moves upward at any moment. On the right there is no apple at all: only the Moon, which keeps moving forward along its single curved path and never reverses. No second bright arc appears over the Earth.",
+      "dropped": [
+        "The Moon, ball or path slides sideways and down along a smooth curve."
+      ],
+      "note": "The Chief's line replaces the row's motion line; 'Split picture:', 'Both drop the same distance.' and 'No digits.' stay (desk 6798928858 point 3)."
+    },
+    {
+      "id": "05_minute_second_c2",
+      "part": 4,
+      "field": "prompt",
+      "old": "Premium Animistry-class 3D cartoon. Same shot continues from the last frame of 05_minute_second_c1, camera keeps moving: Split picture: On the left, both apples lie still on the table beside the ruler for the entire shot and never move. No new apple appears. Nothing moves upward at any moment. On the right, the Moon keeps moving forward along its curved path and never slides back or upward. There is only the one curved path; no second bright arc appears over the Earth. No digits. The Moon, ball or path slides sideways and down along a smooth curve. Nothing plummets straight at the Earth. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "new": "Premium Animistry-class 3D cartoon. Same shot continues from the last frame of 05_minute_second_c1, camera keeps moving: Split picture: On the left, both apples lie still on the table beside the ruler for the entire shot and never move. No new apple appears. Nothing moves upward at any moment. On the right, the Moon keeps moving forward along its curved path and never slides back or upward. There is only the one curved path; no second bright arc appears over the Earth. No digits. Nothing plummets straight at the Earth. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "dropped": [
+        "The Moon, ball or path slides sideways and down along a smooth curve."
+      ],
+      "note": "Not remade here. Only the house line that names a ball is taken out, as from c1 (desk 6799192880 point 2); its motion wording is as ruled in 6792980991."
+    }
+  ],
+  "unchanged": "Model, length, aspect, start-frame rule, price, side labels, narration lines and every other row of the two boards. 08_the_apple_c1 is not touched.",
+  "pins_moved": "TRANCHE2_SCOPE_J2026.json (four rows of each board) and the new TRANCHE2_RETAKES_J2626.json pin the boards as they are.",
+  "pins_left": "TRANCHE2_RETAKES_J2583.json is left as it is (desk 6799192687): it pins the boards its second takes were made from, the hashes in board_sha256_old above. So --retakes-j2583 now refuses twice over: the boards have moved on, and its rows are on take 2."
+}

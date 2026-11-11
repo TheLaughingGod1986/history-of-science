@@ -1,0 +1,54 @@
+{
+  "job": "J2626",
+  "film": "HOS:009",
+  "date": "2026-11-11",
+  "by": "claude (elected Chief, queue side)",
+  "takes_made_by_job": "J2628",
+  "rulings": [
+    "history-of-science#180 comment 6798928858",
+    "history-of-science#180 comment 6798955014",
+    "history-of-science#180 comment 6799165375",
+    "history-of-science#180 comment 6799192687",
+    "history-of-science#180 comment 6799192880"
+  ],
+  "decision": "Two of the three second takes (J2583) failed their half-second sheets (J2584, PR #527). Each is made once more, a third take, from the same start frame, with the Chief's motion line. The apple row is kept on a trim and is not remade. Nothing is generated before the Chief's PASS on this change.",
+  "max_credits_per_take": 100,
+  "takes_per_row": 1,
+  "reservation_cap": 200,
+  "max_total_credits": 600,
+  "spent_before_by_j2583": 300,
+  "held_back_for_c2": 100,
+  "cash_gbp": 0,
+  "inside": "TRANCHE2_SCOPE_J2026.json and every guard in it: three takes a row, the 3,000 floor, subscription credits only, the studio Ultra account, the shared Flow writer lock, one output a take. 600 is the film's retake ceiling in all: the 300 J2583 spent, the 200 reserved here, and 100 held back for c2.",
+  "before_each_create": "Read the live balance and the exact price. If the balance is below the floor plus that shot's price, stop and post it on the desk.",
+  "rows": [
+    {
+      "order": 1,
+      "part": 3,
+      "id": "01_really_falling_c1",
+      "take": 3,
+      "start_frame": "P3:01_really_falling last frame (as takes 1 and 2)",
+      "board": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/parts/part-03_plates_v05.json",
+      "board_sha256": "36f8f8bb0ebd18006569aa2b10b1df5c01b08b53de90dcd6f706c616ca779899",
+      "why": "take 2: the golden line curls back from 1.5 s, loops over the Moon and crosses its disc from 5.0 s to the 5.26 s use end"
+    },
+    {
+      "order": 2,
+      "part": 4,
+      "id": "05_minute_second_c1",
+      "take": 3,
+      "start_frame": "P4:05_minute_second last frame (as takes 1 and 2)",
+      "board": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/parts/part-04_plates_v05.json",
+      "board_sha256": "7eac7c34c8a44edeccb607f9eeda0e1a0855e393f4ab9e131e9e2d370c39a52d",
+      "why": "take 2: the left apple rolls to the divider from 3.5 s, a third apple appears by 5.5 s, and an apple flies up the orbit curve onto the Moon"
+    }
+  ],
+  "not_in_this_job": {
+    "08_the_apple_c1": "kept: take 2, 0.00-4.50 s, last frame f107, no freeze (desk 6799165375). Never remade here.",
+    "05_minute_second_c2": "made only after 05_minute_second_c1 take 3 is KEEP on its sheet (J2629), from that take's last frame, under its own 100 (J2586). Never made here. Its wording loses only the house line that names a ball (desk 6799192880)."
+  },
+  "no_fourth_take": "A take that fails its sheet comes back to the Chief. 01_really_falling_c1 is then parked (its parent stays KEEP); for 05_minute_second_c1 the Chief is brought an edit-side option, and c2 is not made.",
+  "cut_off": "If this change is not merged by Thu 12 Nov about 15:00 London, the third takes are skipped. The credits lapse Thu 12 Nov 19:13 London.",
+  "lock_order": "At the next batch boundary once the Chief's PASS on this change is in: 01_really_falling_c1, then 05_minute_second_c1. Until then J2270's batches run. No batch is cut mid-way.",
+  "review": "Each take gets a half-second sheet of the whole clip before any KEEP (J2629)."
+}
