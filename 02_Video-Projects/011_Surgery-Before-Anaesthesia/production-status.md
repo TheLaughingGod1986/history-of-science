@@ -11,6 +11,7 @@
 | Neighbour gate | **PASS** (12 Oct 2026 `J0180` & 5 Nov 2026 `J2231`): 6 education ≥1M; TED-Ed/TED yes (TED-Ed *How does anesthesia work?* 19.73M, TED-Ed *What did people do before anesthesia?* 2.66M, TED-Ed *How aspirin was discovered* 3.08M, SciShow *What Does Anesthesia Do to Your Brain?* 1.38M). Evidence `11_Upload-Package/evidence_2026-11-05_neighbours.json` |
 | Public search | **PASS** (`11_Upload-Package/evidence_2026-11-05_public_search.json`): `"What Surgery Was Like Before Anesthesia"`, `"who invented anesthesia"`, and `"surgery before anesthesia"` all autocomplete (`yes`). |
 | Script review | `01_Script/surgery_script_master_v02.md` (**91.1/100 PASS**, 1,259 words / ~1,210 spoken, 8/8 structure gates) |
+| Shorts scripts and package | `10_Shorts/SHORTS_SCRIPTS_v02.md` (two search-titled Shorts, 61 and 60 words) and the upload package scaffold under `11_Upload-Package/` (manifest, checklist, long description, tags, Shorts search evidence), written 5 Nov (`J2239`) and carried onto main 10 Nov (`J2502`). |
 | FACT_NOTES | `01_Script/SOURCES_v01.md` / `01_Script/FACT_NOTES_v01.md` (`J0198` Gemini facts PASS: 35 OK, 1 PARTIAL hedged, 0 FLAG) + `01_Script/CLAUDE_QUOTE_CHECK_v01.md` (`J0224` Claude primary-source quote check PASS) |
 | VO | **Recorded, review open** (`J2245`): `hos_011_vo_v01`, 5 chapters, 532.72 s, Ben Orbit Narrator `eleven_v3`. Full `vo_check` PASS. Chapter 5 FAIL on two pauses (1.52 s, 1.55 s). See `02_Voiceover/VO_STATUS.md`. Not a lock. |
 | Picture | **not started, no mint** |

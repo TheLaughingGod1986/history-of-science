@@ -29,6 +29,16 @@ class StillInventoryTests(unittest.TestCase):
             inventory = RUNNER.verify_still_inventory(rows, media)
             self.assertEqual(inventory[0]['sha256'], RUNNER.sha256_file(path))
             self.assertEqual(inventory[0]['path'], str(path.resolve()))
+            # Real Flow Nano Banana 2 / 2.1 16:9 stills are 1376x768 (1.791667, diff 0.0139 < 0.02).
+            subprocess.run(['ffmpeg', '-v', 'error', '-y', '-f', 'lavfi', '-i',
+                            'color=s=1376x768', '-frames:v', '1', str(path)], check=True)
+            inventory_flow = RUNNER.verify_still_inventory(rows, media)
+            self.assertEqual((inventory_flow[0]['width'], inventory_flow[0]['height']), (1376, 768))
+            # Non-16:9 HD stills (e.g. 4:3 1440x1080) still fail closed.
+            subprocess.run(['ffmpeg', '-v', 'error', '-y', '-f', 'lavfi', '-i',
+                            'color=s=1440x1080', '-frames:v', '1', str(path)], check=True)
+            with self.assertRaises(RUNNER.GuardError):
+                RUNNER.verify_still_inventory(rows, media)
 
 class InventoryBatchTests(unittest.TestCase):
     def make_still(self, media, row):

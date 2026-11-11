@@ -376,7 +376,7 @@ Ben, 2 Oct 2026: *"Claude and Grok have more authority and fewer checks with me.
   - Put the Explorer at frame 0 of a Short.
   - Burn subscribe or like graphics into a film. Subscribe lives in the Studio end screen.
 - **Titles:** hashtags, series suffixes, hedged claims, or a title that copies a live video.
-- **Studio:** a `/go/` link or pinned comment on a Short; `/go/` on a long that doesn't name the product in the film. Pressing **Continue** on "Run a new test? Your current test will be deleted" when a Test & Compare is already set: Cancel and leave it (004, 9 Oct).
+- **Studio:** a `/go/` link or pinned comment on a Short; `/go/` on a long that doesn't name the product in the film. Pressing **Continue** on "Run a new test? Your current test will be deleted" when a Test & Compare is already set: Cancel and leave it (004, 9 Oct). One exception, by Ben's word (10 Nov 2026: asked "OK to replace the unstarted test so it airs as 'How Was the First Vaccine Made? (And Why It's Named After a Cow)'?", "Ok on both"), for one scheduled long whose title test had not started, so no result is lost: 007 `ETynHpIYLeY`. There "Edit title" may be confirmed (YouTube then deletes the unstarted test), the search-led title is set, and a new test is armed with that title as side A, in the job that names this exception. Every other set or finished test stays as the rule says.
 - **Picture:**
   - The Orbit robot in any HOS film.
   - Omni, Seedance, Kling or ElevenLabs Image & Video. Picture is Flow Veo 3.1.

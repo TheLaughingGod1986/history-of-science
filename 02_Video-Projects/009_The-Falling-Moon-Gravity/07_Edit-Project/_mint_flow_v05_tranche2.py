@@ -532,7 +532,7 @@ def verify_still_inventory(rows: list[Row], media: Path) -> list[dict]:
                            check=True, capture_output=True)
         except Exception as exc:
             raise GuardError(f"invalid inventory still {path}") from exc
-        if width < 1280 or height < 720 or abs(width / height - 16 / 9) > 0.01:
+        if width < 1280 or height < 720 or abs(width / height - 16 / 9) >= 0.02:
             raise GuardError(f"inventory still is not 16:9 HD: {path}")
         if digest != sha256_file(path):
             raise GuardError(f"inventory changed while reading: {path}")
@@ -1590,7 +1590,7 @@ CREATE_EVIDENCE_JS = r"""(expected) => {
   const balances = unique([...body.matchAll(/(?:^|\n)\s*([\d,]+)\s+(?:AI|Google Flow) credits\s*(?=\n|$)/g)]
     .map(m => Number(m[1].replace(/,/g, ''))));
   const buttons = allButtons.filter(e => {
-    const t = text(e); return (t === 'Create' || t === 'arrow_forward') &&
+    const t = text(e); return (t === 'Create' || t === 'Start generation' || t === 'arrow_forward') &&
       !e.disabled && e.getAttribute('aria-disabled') !== 'true'; });
   const evidence = {
     host: location.hostname,

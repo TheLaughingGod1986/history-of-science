@@ -8,8 +8,10 @@
   "youtube": {
     "handle": "@HistoryOfScienceYT",
     "id": "UCXp7HkBIl1LgaznXuZHJyRg",
-    "studio_port": "9222"
+    "studio_port": "9222",
+    "reach_port": "9460"
   },
+  "sound_kit": "ink",
   "repo": {
     "url": "https://github.com/TheLaughingGod1986/history-of-science.git",
     "env": "HOS_REPO",
@@ -23,6 +25,9 @@
   "wip": {
     "limit": 4,
     "line": "next_hos"
+  },
+  "shorts": {
+    "planned_per_long": 4
   },
   "stages": "from pipeline",
   "pipeline": {

@@ -74,3 +74,8 @@ Local media is intact at `02_Video-Projects/008_Lightning-Franklin/07_Edit-Proje
 Second probe, 16 Oct ~01:50 London (Cursor covering, no mkdir): `listdir` of `.../History Of Science/02_Video-Projects` did not return within 8 seconds. Local `shasum -a 256 -c SHA256SUMS.txt` is OK (11 mp4, 5 alpha mov, contact sheet, manifest, checks). PR #338 is MERGEABLE. No copy was started.
 
 Parked for Chief: review the eleven graphics (holds in "Composite and review holds" above). The mint gate is unchanged. No files were deleted.
+
+
+---
+
+See also: CODE_GRAPHICS_v01_REVIEW_SOURCE_CORRECTION.md (J1218, 30 Oct 2026).

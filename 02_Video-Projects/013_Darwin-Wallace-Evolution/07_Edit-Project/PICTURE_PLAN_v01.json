@@ -4,6 +4,11 @@
   "air_date": "2026-12-17",
   "version": "v01",
   "written": "2026-11-10",
+  "style_refs": [
+    "04_Generated-Clips/_style_refs/04_sunny_window_v01.jpg",
+    "04_Generated-Clips/_style_refs/10_mint_jar_v01.jpg"
+  ],
+  "explorer_ref": "01_Character/05_Generation-References/hos-explorer-reference-v01.jpg",
   "task": "J2476: HOS 013 picture plan v01 on locked VO hos_013_vo_v03a.wav, free picture built and QA'd, paid mint rows priced and parked for Chief behind HOS 009 and 010.",
   "script": "01_Script/darwin_script_master_v02.md (92.6 PASS, J0307)",
   "facts_pass": "01_Script/FACT_NOTES_v02.md + 01_Script/GEMINI_QUOTE_PASS_J0304.md (30 OK, 0 PARTIAL, 0 FLAG)",

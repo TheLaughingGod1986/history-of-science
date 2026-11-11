@@ -37,4 +37,25 @@ Run in this file: `grep -o "DATA:" … | wc -l`, and the same for each marker.
 
 ## Score
 
-`npm run review:script`: **PASS 91.1 / 100** (1,246 words, about 8.3 min, structure gates 8/8). The scorer counts the claims table; the spoken lines alone are about 1,210 words.
+`npm run review:script`: **PASS 91.1 / 100** (1,246 words on v01; **1,259 words on locked `surgery_script_master_v02.md`**, about 8.4 min, structure gates 8/8). The scorer counts the claims table; the spoken lines alone are about 1,210 words.
+
+## Nov 2026 `HOS-2026-11-E2` (`J2204`) First-30s Proof-First + Early DATA/SCALE Verification (`J2239`, 5 Nov 2026)
+
+Checked `surgery_script_master_v02.md` against Chief h47 experiment `HOS-2026-11-E2` (`J2204`) with **zero spoken word changes** (preserving `J0224` Claude primary-source quote check lock at `91.1/100 PASS`):
+
+1. **Locked first-minute milestones preserved:**
+   - **Answer image (`<=0:05`):** `0:00` steep wooden operating theatre in London, surgeon in dark frock coat checking brass pocket watch (`WHEN: London, 1840s · LABEL: THE FASTEST KNIFE`).
+   - **Title question (`<=0:08`):** *"Before eighteen forty-six, the best surgeon in the world was simply the fastest one. Why?"* (`~0:06`).
+   - **Promise (`<=0:15`):** *"Because the patient was awake for every second of it, and in Europe and America, nobody knew how to stop the pain."* (`~0:14.5`).
+   - **Stakes (`<=0:25`) & First real fact (`<0:45`):** *"In London, one surgeon was famous for his speed. His students timed him with their pocket watches, and he could take off a leg in just a few minutes."* (`~0:14.5–0:26.0`, followed by Boston Ether Dome on 16 October 1846 at `~0:26.0–0:39.0`).
+2. **Rule 1 — Sub-4.5s visual cuts across `0:00–0:30` (`>=7` distinct moving plates; zero holds `>4.5s`):**
+   - **Cut 1 (`0:00.0–0:03.5`, `3.5 s`):** Steep wooden London operating theatre lit by tall windows; surgeon in dark frock coat checks brass pocket watch and looks up (`ANSWER IMAGE by 0:03 · WHEN: London, 1840s · LABEL: THE FASTEST KNIFE`).
+   - **Cut 2 (`0:03.5–0:07.5`, `4.0 s`):** Immediate physical apparatus — macro close-up on the surgeon's open brass pocket watch ticking beside the instrument tray (`title question by 0:06`).
+   - **Cut 3 (`0:07.5–0:11.5`, `4.0 s`):** Immediate physical apparatus — close on the wooden operating chair in window light, leather straps hanging from the armrests (`no exterior hospital shot`).
+   - **Cut 4 (`0:11.5–0:15.5`, `4.0 s`):** Immediate physical proof apparatus — two-necked glass ether inhaler globe glinting on a mahogany table beside its glass stopper (`promise by 0:15`).
+   - **Cut 5 (`0:15.5–0:19.5`, `4.0 s`):** Robert Liston striding to the wooden table in his dark frock coat (`WHO: Robert Liston (1794–1847) — London surgeon`).
+   - **Cut 6 (`0:19.5–0:23.5`, `4.0 s`):** Close on a row of medical students leaning over the gallery rail clicking open pocket watches one after another (`stakes by 0:23`).
+   - **Cut 7 (`0:23.5–0:27.5`, `4.0 s`):** First animated `DATA` + `SCALE` graphic (`0:25–0:40` window): animated brass stopwatch dial on period paper sweeping round once and stopping short of three minutes (`DATA: a brass stopwatch dial that sweeps round once and stops short of three minutes · SCALE: about as long as boiling an egg`).
+   - **Cut 8 (`0:27.5–0:31.5`, `4.0 s`):** Boston Ether Dome under the skylight; dentist William Morton holding the glass ether globe to young Edward Abbott's mouth as his eyes close (`FIRST CONCRETE ANSWER by 0:30 · WHEN: Boston, 16 October 1846 · LABEL: ETHER`).
+3. **Rule 2 — Immediate physical proof/apparatus at `0:05–0:15` (not exterior establishing):** PASS — Cuts 2–4 (`0:03.5–0:15.5`) show the open brass pocket watch, the strapped wooden operating chair, and the two-necked glass ether inhaler globe inside the theatre; zero exterior building shots.
+4. **Rule 3 — First animated `DATA` + `SCALE` graphic between `0:25–0:40`:** PASS — Cut 7 (`0:23.5–0:27.5` / `0:25–0:31` on the VO clock) animates the brass stopwatch dial (`DATA`) + `"about as long as boiling an egg"` (`SCALE`, verified in `FACT_NOTES_v01.md` rows 16 & 37).

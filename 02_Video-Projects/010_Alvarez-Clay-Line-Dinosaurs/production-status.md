@@ -105,3 +105,26 @@ In `J2279`, `gemini` (`audio_input` verified) directly auditioned `009 Short B v
 
 `check_all.sh 009`: ALL CHECKS PASS. `check_all.sh 010`: ALL CHECKS PASS.
 - **Elected Chief PASS (`J2281` / `J0862`, `gemini`, 7 Nov 2026):** Condition for `J0862` verified satisfied (`J2279` complete at `fc1a23f3`; direct `audio_input` audition and `vo_check_py312.sh` PASS verified across all four `009` + `010` Shorts VO takes; Option A1 retained for `010 Short A` `hos_010_short_A_v02.mp3` `68d88b5b5883f2376bcec29c26d77efea7634d5c7705693f41202ca587b927fb` and `010 Short C` `hos_010_short_C_v02.mp3` `20432ecd645b28e9fdc051578a284cb2845bd09f3040170b192089b256055b87`). `009` and `010` `shorts_vo` marked `done` in `PIPELINE.json`; HOS PR #423 approved and merged; `J0862` and `J2281` closed `done` (`J2172` remains gated on `J2271` 12-plate production/review chain).
+
+## 10 Nov 2026 — J2268: Tested twelve-plate Flow adapter without generation (£0, 0 Flow credits, Gemini covering)
+
+- **Authority & Scope:** Queue job `J2268` (`ref: J2267`, `after: J2200`). Code + offline regression tests only; **£0 and 0 Flow credits spent**, **0 Flow submissions**, **0 Create clicks**, **0 NAS writes**, and `generation_authorized=false` retained in `10_Shorts/TWELVE_PLATE_SCOPE_J2267.json` (`sha256: 5bcfc162af2c87fd6ae9984377d6b54efe76f50e99a493fd8df9f3ae4ecf827f`). `J2033` and `J2200` states/holds preserved. Parked for elected-Chief system PASS before `J2269` preflight; `PIPELINE.json` not advanced (parked review job).
+- **Deliverables:**
+  1. `07_Edit-Project/_mint_flow_twelve_plates_j2268.py`: dedicated HOS 010 twelve-plate Flow adapter built on the `J2200` shared Flow accounting foundation (`SharedFlowAccounting` in `~/_desk/state/flow/shared`, matching `009`/`013`), consuming **only** `10_Shorts/TWELVE_PLATE_SCOPE_J2267.json` (10 shared long + 2 Shorts-only `Veo 3.1 - Quality` parents across `3` batches `5 + 5 + 2`), never importing or invoking `_mint_flow_tranche1_j0453.py`. Enforces exact 12-row allowlist, SHA-256 verification across scope + `PICTURE_PLAN_v04.json` + `SHORTS_PICTURE_PLAN_v03.json` + `J2267_BUDGET_RECONCILIATION.json` + all 5 part boards + `VO_TAKES_KEEP.json` + accepted Short A/C VOs + `J1004` Option A1 recipe + Explorer reference (`P5:10_explorer_robin` only, never frame 0), studio Ultra account digest check (no email addresses in tracked files), `Veo 3.1 - Quality` `8s` `16:9` `x1` `100`-credit live DOM check (`Nano Banana 2.1` `16:9` `x1` `0` credits for missing start stills, accepting `1376x768`), `3600` total cap, `<= 5` rows / `<= 1500` credits per batch, `3` takes/row max, `3000`-credit headroom floor, anti-double-counting reservation ledger, duplicate-process flock, `cdp_tabs.reuse_page`, `file_state="GENERATED"` / `status="PENDING_REVIEW"` / `keep=False` (never auto-KEEP), and double submit interlock (`HOS010_TWELVE_PLATES_SUBMIT=1` + explicit `J2269` Chief authorization after `J2033` `DONE`).
+  2. `tests/test_hos010_twelve_plate_runner.py`: `15` offline regression tests covering wrong account, wrong model / `x2`, stale price, low balance (`< 3000` floor), reservation double-counting, scope/VO/Option A1 drift, exhausted row/batch/scope caps, duplicate process lock, missing/corrupt Explorer & house style references, guarded `5 + 5 + 2` batch advancement, and 10 Nov live DOM capture (`Ran 15 tests — OK`; full repo suite `Ran 139 tests — OK`, 0 submissions, 0 credits).
+- **Repository check output (`bash 00_Brand/Channel-Setup/tools/check_all.sh 010`):**
+```text
+-- durable desk handoffs: PASS
+-- no media: PASS
+-- status board in sync: PASS
+-- ElevenLabs guard tests: PASS
+-- vo_check word tests: PASS
+-- atempo check tests: PASS
+-- voice speed (atempo <= 1.06): PASS
+-- contract tests: PASS
+-- package-lint: PASS
+-- review:script clay_script_master_v01.md: PASS
+-- gate:episode: PASS
+ALL CHECKS PASS
+```
+

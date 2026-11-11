@@ -1,0 +1,24 @@
+{
+  "sha256": "0da87a8272ad5849abccf5d86acbf352cedf30d3189ef9ac8127efd24fc2934d",
+  "duration_s": 540.021321,
+  "container_note": "540.021321 s container; 21 ms over exact 540.0 from mux padding \u2014 not extra spoken content (Chief 29 Oct).",
+  "targets": [
+    "/Volumes/data/mac-mini-archive/tmp-render-scratch/j1218-hos008-rough-v03/full_join_v03/hos_008_rough_v03.mp4",
+    "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/rough_v03/hos_008_rough_v03.mp4",
+    "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_precheck/rough_v03/hos_008_rough_v03.mp4",
+    "/private/tmp/j1218-v03-wt/02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_desk/008/rough_v03/hos_008_rough_v03.mp4",
+    "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/008_Lightning-Franklin_rough_v03/hos_008_rough_v03.mp4"
+  ],
+  "uat_sha_verified": true,
+  "nas_film_folder_bytes": 990399088,
+  "nas_initial_rsync_error": "CalledProcessError(20) during assembler deliver; later same-volume cp completed to film-folder rough_v03 (size match).",
+  "gates": {
+    "picture_qa": "PASS 0 FAIL / 6 WARN",
+    "polish_gate": "PASS 0 FAIL / 6 WARN",
+    "music_gate": "SKIPPED_NO_BED NOT PASS",
+    "episode_gate": "PASS script 92.1"
+  },
+  "pr": "https://github.com/TheLaughingGod1986/history-of-science/pull/379",
+  "worker": "cursor",
+  "job": "J1218"
+}
