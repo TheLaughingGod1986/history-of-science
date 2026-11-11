@@ -11,7 +11,7 @@ LOG="$EDIT/logs/drive_part02_remint_v03.log"
 mkdir -p "$EDIT/logs" "$RAW" "$REJECT"
 
 export ORBIT_FLOW_PROFILE="${ORBIT_FLOW_PROFILE:-$HOME/.playwright-hos-flow-profile}"
-export ORBIT_FLOW_ACCOUNT="${ORBIT_FLOW_ACCOUNT:-benoats@googlemail.com}"
+export ORBIT_FLOW_ACCOUNT="${STUDIO_FLOW_ACCOUNT:?missing required setting STUDIO_FLOW_ACCOUNT}"
 export ORBIT_FLOW_HOME="${ORBIT_FLOW_HOME:-https://flow.google.com/u/1/}"
 export ORBIT_FLOW_FORCE_NEW_PROJECT=0
 export ORBIT_FLOW_REUSE_PROJECT=1

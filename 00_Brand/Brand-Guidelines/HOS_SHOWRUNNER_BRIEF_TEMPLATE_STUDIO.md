@@ -10,7 +10,7 @@ Source of truth: `00_Brand/Channel-Setup/STUDIO_PLAYBOOK.md` ยง5 (picture) and ย
 4. **After two FAILs with the same framing,** change the framing or start frame, not just the prompt.
 5. **Plate UAT on continuous playback** (start, middle, end, crop-reject), never stills. **Assemble the rough cut last,** when every plate has passed.
 6. **Flow only; no paint-patching** of Explorer, desks or light sources.
-7. **Auth:** Mac Mini CDP on `benoats@googlemail.com` (Ultra). Stop and report on a passkey or sign-out.
+7. **Auth:** Mac Mini CDP on `the studio Ultra account` (Ultra). Stop and report on a passkey or sign-out.
 8. **Model tier:** Veo 3.1 **Quality** for fragile light (lamps, flasks, glows, emissive); **Fast** only for low-risk garnish. No Seedance, Omni or Kling.
 
 ## Prompt language

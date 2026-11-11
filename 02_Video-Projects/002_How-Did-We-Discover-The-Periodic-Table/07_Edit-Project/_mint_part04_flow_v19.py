@@ -10,10 +10,31 @@ Remint ONLY via Flow Ultra real gallery mp4 harvest:
 NO PAINT FALLBACK. NO temporal-median. NO brightness-motion paint.
 If harvest empty / MAD-high doubles → reject + retry. STOP to CoS only after real retries.
 
-Flow: benoats@googlemail.com (credits confirmed 8000+). Scores → CoS. No PASS. No Ben ping.
+Flow: the studio Ultra account (credits confirmed 8000+). Scores → CoS. No PASS. No Ben ping.
 """
 from __future__ import annotations
 import faulthandler
+
+def _require_studio_flow_account() -> str:
+    import os as _os
+    val = _os.environ.get("STUDIO_FLOW_ACCOUNT", "").strip()
+    if not val:
+        raise SystemExit("STOP: missing required setting STUDIO_FLOW_ACCOUNT (set STUDIO_FLOW_ACCOUNT outside the repo)")
+    return val
+
+
+def _studio_flow_account_variants(addr: str) -> tuple[str, ...]:
+    low = addr.strip().lower()
+    local, sep, dom = low.partition("@")
+    if sep and dom in ("gmail.com", "googlemail.com"):
+        return (f"{local}@googlemail.com", f"{local}@gmail.com")
+    return (low,)
+
+
+def _forbidden_studio_flow_account() -> str:
+    import os as _os
+    return _os.environ.get("STUDIO_FLOW_FORBIDDEN_ACCOUNT", "").strip() or "__unset_forbidden_account__"
+
 faulthandler.enable()
 
 import hashlib
@@ -48,9 +69,9 @@ MODEL = os.environ.get("ORBIT_FLOW_VEO_MODEL", "Veo 3.1 - Fast")
 PROFILE = Path(os.environ.get("ORBIT_FLOW_PROFILE", str(Path.home() / ".playwright-hos-flow-profile")))
 CDP_URL = os.environ.get("ORBIT_FLOW_CDP", "http://127.0.0.1:9222")
 REQUIRE_CDP = os.environ.get("HOS_FLOW_REQUIRE_CDP", "1") == "1"
-REQUIRED_FLOW_EMAIL = "benoats@googlemail.com"
-ALLOWED_FLOW_EMAILS = {REQUIRED_FLOW_EMAIL, "benoats@gmail.com"}
-FORBIDDEN_FLOW_EMAIL = "benoats86@gmail.com"
+REQUIRED_FLOW_EMAIL = _require_studio_flow_account()
+ALLOWED_FLOW_EMAILS = set(_studio_flow_account_variants(REQUIRED_FLOW_EMAIL))
+FORBIDDEN_FLOW_EMAIL = _forbidden_studio_flow_account()
 MAX_CREATES = int(os.environ.get("HOS_V19_MAX_CREATES", "3"))
 HARVEST_WAIT_S = int(os.environ.get("HOS_FLOW_HARVEST_WAIT_S", "480"))
 PARENT_V18_SHA = "05fb0a2b34dba1a8347ab74b2abc987fd406bef356b82b55f1a0e8ddb88cc6b5"
@@ -250,7 +271,7 @@ def run_edit_download(tmp: Path, project_url: str) -> bool:
 
 
 def assert_auth(page) -> dict:
-    """Confirm live ULTRA session = benoats@googlemail.com, ~8k+ credits, no passkey.
+    """Confirm live ULTRA session = the studio Ultra account, ~8k+ credits, no passkey.
 
     STOP_TO_COS on passkey / forbidden 86 / low credits. Never open a fresh Playwright profile.
     """
@@ -283,7 +304,7 @@ def assert_auth(page) -> dict:
         )
     if FORBIDDEN_FLOW_EMAIL.lower() in low or "benoats86" in low:
         # only fatal if required email absent
-        if REQUIRED_FLOW_EMAIL.lower() not in low and "benoats@googlemail.com" not in low:
+        if REQUIRED_FLOW_EMAIL.lower() not in low and "the studio Ultra account" not in low:
             raise SystemExit(
                 f"STOP_TO_COS BLOCKED_AUTH: forbidden {FORBIDDEN_FLOW_EMAIL} on {page.url}"
             )
@@ -296,7 +317,7 @@ def assert_auth(page) -> dict:
             credits = int(m.group(1).replace(",", ""))
             break
     ultra = "ultra" in low
-    has_req = REQUIRED_FLOW_EMAIL.lower() in low or "benoats@googlemail.com" in low
+    has_req = REQUIRED_FLOW_EMAIL.lower() in low or "the studio Ultra account" in low
     if credits is not None and credits < 1000:
         raise SystemExit(
             f"STOP_TO_COS BLOCKED_AUTH: credits={credits} too low on {page.url}"

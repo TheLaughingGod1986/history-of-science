@@ -8,14 +8,35 @@ import re
 import sys
 from pathlib import Path
 
+def _require_studio_flow_account() -> str:
+    import os as _os
+    val = _os.environ.get("STUDIO_FLOW_ACCOUNT", "").strip()
+    if not val:
+        raise SystemExit("STOP: missing required setting STUDIO_FLOW_ACCOUNT (set STUDIO_FLOW_ACCOUNT outside the repo)")
+    return val
+
+
+def _studio_flow_account_variants(addr: str) -> tuple[str, ...]:
+    low = addr.strip().lower()
+    local, sep, dom = low.partition("@")
+    if sep and dom in ("gmail.com", "googlemail.com"):
+        return (f"{local}@googlemail.com", f"{local}@gmail.com")
+    return (low,)
+
+
+def _forbidden_studio_flow_account() -> str:
+    import os as _os
+    return _os.environ.get("STUDIO_FLOW_FORBIDDEN_ACCOUNT", "").strip() or "__unset_forbidden_account__"
+
+
 REPO = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(REPO / "04_Audio" / "tools"))
 import orbit_flow_veo_ui as flow  # noqa: E402
 
 flow.FLOW_HOME = os.environ.get("ORBIT_FLOW_HOME", "https://flow.google.com/u/1/")
-REQUIRED = "benoats@googlemail.com"
-ALLOWED = {REQUIRED, "benoats@gmail.com"}
-FORBIDDEN = "benoats86@gmail.com"
+REQUIRED = _require_studio_flow_account()
+ALLOWED = set(_studio_flow_account_variants(REQUIRED))
+FORBIDDEN = _forbidden_studio_flow_account()
 OUT = Path(__file__).resolve().parent / "logs" / "flow_auth_probe_part03_v06.json"
 PROFILE = Path(
     os.environ.get(
@@ -41,7 +62,7 @@ def main() -> None:
             page.goto(flow.FLOW_HOME, wait_until="domcontentloaded", timeout=120_000)
             page.wait_for_timeout(4000)
             if "accounts.google.com" in (page.url or ""):
-                for needle in (REQUIRED, "benoats@gmail.com"):
+                for needle in _studio_flow_account_variants(REQUIRED):
                     loc = page.get_by_text(needle, exact=False)
                     if loc.count():
                         loc.first.click(timeout=8000)

@@ -6,7 +6,7 @@ Ben UAT 27 Sep 16:00 UK on rough v03:
   Image 2 → 09_uncuttable_blur (Fast — no character / no Explorer)
   Image 3 → 01_coin_halves + 15_knife_coin_return (Fast — successive halvings spine)
 
-Flow Ultra CDP :9222 as benoats@googlemail.com only.
+Flow Ultra CDP :9222 as the studio Ultra account only.
 scenery_only (new framing — do NOT reuse bad start frames).
 Max 2 tries/plate; try 2 changes framing. Strip Veo audio. No Gemini.
 """
@@ -25,6 +25,27 @@ from pathlib import Path
 
 from playwright.sync_api import sync_playwright
 
+def _require_studio_flow_account() -> str:
+    import os as _os
+    val = _os.environ.get("STUDIO_FLOW_ACCOUNT", "").strip()
+    if not val:
+        raise SystemExit("STOP: missing required setting STUDIO_FLOW_ACCOUNT (set STUDIO_FLOW_ACCOUNT outside the repo)")
+    return val
+
+
+def _studio_flow_account_variants(addr: str) -> tuple[str, ...]:
+    low = addr.strip().lower()
+    local, sep, dom = low.partition("@")
+    if sep and dom in ("gmail.com", "googlemail.com"):
+        return (f"{local}@googlemail.com", f"{local}@gmail.com")
+    return (low,)
+
+
+def _forbidden_studio_flow_account() -> str:
+    import os as _os
+    return _os.environ.get("STUDIO_FLOW_FORBIDDEN_ACCOUNT", "").strip() or "__unset_forbidden_account__"
+
+
 REPO = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(REPO / "04_Audio" / "tools"))
 import orbit_flow_veo_ui as flow  # noqa: E402
@@ -32,8 +53,8 @@ import orbit_gemini_veo as veo  # noqa: E402
 
 flow.FLOW_HOME = os.environ.get("ORBIT_FLOW_HOME", "https://flow.google.com/")
 CDP = os.environ.get("ORBIT_FLOW_CDP", "http://127.0.0.1:9222")
-REQUIRED = "benoats@googlemail.com"
-FORBIDDEN = "benoats86@gmail.com"
+REQUIRED = _require_studio_flow_account()
+FORBIDDEN = _forbidden_studio_flow_account()
 
 PROJ = Path(__file__).resolve().parents[1]
 PLATES_JSON = PROJ / "07_Edit-Project/parts/part-01_plates_v02.json"
@@ -219,7 +240,7 @@ def assert_gate(page) -> dict:
         page.keyboard.press("Escape")
     except Exception:
         pass
-    if active not in {REQUIRED.lower(), "benoats@gmail.com"}:
+    if active not in set(_studio_flow_account_variants(REQUIRED)):
         raise SystemExit(f"STOP wrong account: {active} shot={shot}")
     if credits is None or credits < 500:
         raise SystemExit(f"STOP low/zero credits={credits} shot={shot}")

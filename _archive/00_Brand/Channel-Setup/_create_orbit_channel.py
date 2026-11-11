@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Create a brand-new History of Science YouTube Brand Account channel and brand it.
 
-Uses the existing Google login (benoats86@gmail.com) via the Playwright
+Uses the existing Google login (the studio Ultra account) via the Playwright
 YouTube profile. Does NOT modify OpptiAI (UCXRVwrCxXpN_o9gvuHPKAPQ).
 """
 from __future__ import annotations

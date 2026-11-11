@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Part 04 Flow remint v18 — Ben OVERRIDE FAIL (06 / 10 / 11 / 11b).
 
-Careful Flow Ultra on benoats@googlemail.com. Prefer Veo I2V from clean v18 starts.
+Careful Flow Ultra on the studio Ultra account. Prefer Veo I2V from clean v18 starts.
 If harvest empty/MAD ghosty or credits block — report blocker; do not ship ghost paint.
 
 MAX 1 create per plate this run (careful credit use).
@@ -19,6 +19,27 @@ from pathlib import Path
 
 from PIL import Image, ImageChops, ImageFilter, ImageStat
 from playwright.sync_api import sync_playwright
+
+def _require_studio_flow_account() -> str:
+    import os as _os
+    val = _os.environ.get("STUDIO_FLOW_ACCOUNT", "").strip()
+    if not val:
+        raise SystemExit("STOP: missing required setting STUDIO_FLOW_ACCOUNT (set STUDIO_FLOW_ACCOUNT outside the repo)")
+    return val
+
+
+def _studio_flow_account_variants(addr: str) -> tuple[str, ...]:
+    low = addr.strip().lower()
+    local, sep, dom = low.partition("@")
+    if sep and dom in ("gmail.com", "googlemail.com"):
+        return (f"{local}@googlemail.com", f"{local}@gmail.com")
+    return (low,)
+
+
+def _forbidden_studio_flow_account() -> str:
+    import os as _os
+    return _os.environ.get("STUDIO_FLOW_FORBIDDEN_ACCOUNT", "").strip() or "__unset_forbidden_account__"
+
 
 REPO = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(REPO / "04_Audio" / "tools"))
@@ -38,9 +59,9 @@ EDIT_DL = Path(__file__).resolve().parent / "_harvest_part04_v11_edit_download.p
 
 MODEL = os.environ.get("ORBIT_FLOW_VEO_MODEL", "Veo 3.1 - Fast")
 PROFILE = Path(os.environ.get("ORBIT_FLOW_PROFILE", str(Path.home() / ".playwright-hos-flow-profile")))
-REQUIRED_FLOW_EMAIL = "benoats@googlemail.com"
-ALLOWED_FLOW_EMAILS = {REQUIRED_FLOW_EMAIL, "benoats@gmail.com"}
-FORBIDDEN_FLOW_EMAIL = "benoats86@gmail.com"
+REQUIRED_FLOW_EMAIL = _require_studio_flow_account()
+ALLOWED_FLOW_EMAILS = set(_studio_flow_account_variants(REQUIRED_FLOW_EMAIL))
+FORBIDDEN_FLOW_EMAIL = _forbidden_studio_flow_account()
 MAX_CREATES = int(os.environ.get("HOS_V18_MAX_CREATES", "1"))
 HARVEST_WAIT_S = int(os.environ.get("HOS_FLOW_HARVEST_WAIT_S", "360"))
 PARENT_V17_SHA = "e4cc41d8cf050f6726e6b3d5cbbbff10285656c588f3a758b4a29e1ec1f998fd"

@@ -12,7 +12,7 @@
   "explorer_lock": "At most one plate in this part. Exactly one Explorer, on model (01_Character/CHARACTER_BIBLE.md): round gold glasses, teal long coat, finished hair. Attach 01_Character/05_Generation-References/hos-explorer-reference-v01.jpg.",
   "forbidden": "HARD REJECT: Orbit robot; photoreal; Ken Burns or still push; gore; lava drip / molten bead; underside lamp bulb or shade cup; unfinished flat cards; unfinished Explorer hair; DNA helix; readable text or logos in the plate; twin Explorer.",
   "motion_lock": "Real Veo camera and object motion on every plate. No freeze-pad, no loop. If Create fails, stop and log it in production-status.md.",
-  "quality_note": "Flow Veo 3.1. Quality for fragile light (lamps, flasks, glows); Fast only for low-risk garnish. Mac Mini CDP benoats@googlemail.com (Ultra). One plate per FAIL cycle; after 2 same-framing FAILs change the framing.",
+  "quality_note": "Flow Veo 3.1. Quality for fragile light (lamps, flasks, glows); Fast only for low-risk garnish. Mac Mini CDP the studio Ultra account (Ultra). One plate per FAIL cycle; after 2 same-framing FAILs change the framing.",
   "always_fails": [
     "lava drip / molten bead",
     "underside lamp bulb / shade cup",

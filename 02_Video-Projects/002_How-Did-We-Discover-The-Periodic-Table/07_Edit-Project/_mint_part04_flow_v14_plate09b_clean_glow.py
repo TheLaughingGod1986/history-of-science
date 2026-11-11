@@ -9,7 +9,7 @@ Fail still matches 09b (not plate 10). Remint 09b only; KEEP all other v13 plate
 
 Empty Chairs glow = soft rectangular backrest panel ONLY — ZERO chair-top flame /
 fire wisp / white seat fire / lamp smoke.
-Flow: benoats@googlemail.com on /u/1/. Scores → CoS. No PASS. No Ben ping.
+Flow: the studio Ultra account on /u/1/. Scores → CoS. No PASS. No Ben ping.
 """
 from __future__ import annotations
 
@@ -24,6 +24,27 @@ from pathlib import Path
 
 from PIL import Image
 from playwright.sync_api import sync_playwright
+
+def _require_studio_flow_account() -> str:
+    import os as _os
+    val = _os.environ.get("STUDIO_FLOW_ACCOUNT", "").strip()
+    if not val:
+        raise SystemExit("STOP: missing required setting STUDIO_FLOW_ACCOUNT (set STUDIO_FLOW_ACCOUNT outside the repo)")
+    return val
+
+
+def _studio_flow_account_variants(addr: str) -> tuple[str, ...]:
+    low = addr.strip().lower()
+    local, sep, dom = low.partition("@")
+    if sep and dom in ("gmail.com", "googlemail.com"):
+        return (f"{local}@googlemail.com", f"{local}@gmail.com")
+    return (low,)
+
+
+def _forbidden_studio_flow_account() -> str:
+    import os as _os
+    return _os.environ.get("STUDIO_FLOW_FORBIDDEN_ACCOUNT", "").strip() or "__unset_forbidden_account__"
+
 
 REPO = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(REPO / "04_Audio" / "tools"))
@@ -52,9 +73,9 @@ PROFILE = Path(
         str(Path.home() / ".playwright-hos-flow-profile"),
     )
 )
-REQUIRED_FLOW_EMAIL = "benoats@googlemail.com"
-ALLOWED_FLOW_EMAILS = {REQUIRED_FLOW_EMAIL, "benoats@gmail.com"}
-FORBIDDEN_FLOW_EMAIL = "benoats86@gmail.com"
+REQUIRED_FLOW_EMAIL = _require_studio_flow_account()
+ALLOWED_FLOW_EMAILS = set(_studio_flow_account_variants(REQUIRED_FLOW_EMAIL))
+FORBIDDEN_FLOW_EMAIL = _forbidden_studio_flow_account()
 MAX_CREATES = int(os.environ.get("HOS_V14_MAX_CREATES", "4"))
 
 PARENT_V13 = PROJ / "09_Final-Export/hos_002_part04_rough_v13.mp4"
@@ -219,7 +240,7 @@ def pick_google_account(page) -> None:
     url = page.url or ""
     if "accounts.google.com" not in url:
         return
-    for needle in (REQUIRED_FLOW_EMAIL, "benoats@gmail.com"):
+    for needle in _studio_flow_account_variants(REQUIRED_FLOW_EMAIL):
         loc = page.get_by_text(needle, exact=False)
         if loc.count():
             print(f"  account chooser → {needle}", flush=True)

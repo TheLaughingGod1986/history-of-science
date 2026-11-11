@@ -55,7 +55,7 @@ Side labels: CARDBOARD · X-RAY (“X” for unknown lands **with** the spoken w
 4. Always-fails: lava drip/molten bead; unfinished flat cards; mid-crown unfinished Explorer hair  
 5. After 2 same-DNA FAILs → new framing  
 6. One plate per FAIL cycle; assemble last  
-7. Auth Mini CDP `benoats@googlemail.com` ULTRA  
+7. Auth Mini CDP `the studio Ultra account` ULTRA  
 8. Veo 3.1 **Quality** for fragile CLEAN LIGHT (tube glow / fluorescent cardboard / beam)
 
 HARD REJECT: Orbit robot · Germs death-ward reuse as “same film” · Periodic desk cards · photoreal · Ken Burns ship · gore.

@@ -44,8 +44,11 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 PARENTS = ((2, "10_how_high"), (3, "07_ball_to_moon"))
-REQUIRED_ACCOUNT = "benoats@googlemail.com"
-FORBIDDEN_ACCOUNT = "benoats86@gmail.com"
+ACCOUNT_ENV = "STUDIO_FLOW_ACCOUNT"
+FORBIDDEN_ACCOUNT_ENV = "STUDIO_FLOW_FORBIDDEN_ACCOUNT"
+REQUIRED_ACCOUNT: str | None = None
+FORBIDDEN_ACCOUNT: str | None = None
+FORBIDDEN_ACCOUNT_SHA256 = "93b0f97ef00986fa90ead10a83be910d43707ddc8023daa2018ed1d95cbbb9d4"
 MAX_CREDITS_PER_TAKE = 100
 MAX_TAKES_PER_ROW = 3
 MAX_TOTAL_CREDITS = 6000
@@ -285,7 +288,28 @@ def accept_price(price: PriceEvidence) -> int:
     return MAX_CREDITS_PER_TAKE
 
 
+def forbidden_account() -> str:
+    raw = FORBIDDEN_ACCOUNT if FORBIDDEN_ACCOUNT is not None else os.environ.get(FORBIDDEN_ACCOUNT_ENV)
+    return (raw or "").strip().lower()
+
+
+def required_account() -> str:
+    raw = REQUIRED_ACCOUNT if REQUIRED_ACCOUNT is not None else os.environ.get(ACCOUNT_ENV)
+    account = (raw or "").strip().lower()
+    if not account:
+        raise GuardError(
+            f"missing required setting {ACCOUNT_ENV} (set {ACCOUNT_ENV} outside the repo)"
+        )
+    forbidden = forbidden_account()
+    digest = hashlib.sha256(account.encode("utf-8")).hexdigest()
+    if (forbidden and account == forbidden) or digest == FORBIDDEN_ACCOUNT_SHA256:
+        raise GuardError("Flow account is not the required HOS Ultra account")
+    return account
+
+
 def accept_account(account: str | None, read_at: str | None, *, now: datetime, max_age_s: int = 900) -> None:
+    expected = required_account()
+    forbidden = forbidden_account()
     if not read_at:
         raise GuardError("balance read is missing")
     stamp = datetime.fromisoformat(read_at)
@@ -294,7 +318,9 @@ def accept_account(account: str | None, read_at: str | None, *, now: datetime, m
     age = (now - stamp).total_seconds()
     if age < 0 or age > max_age_s:
         raise GuardError(f"balance read is not fresh ({int(age)}s)")
-    if account != REQUIRED_ACCOUNT or account == FORBIDDEN_ACCOUNT:
+    candidate = (account or "").strip().lower()
+    digest = hashlib.sha256(candidate.encode("utf-8")).hexdigest() if candidate else ""
+    if candidate != expected or (forbidden and candidate == forbidden) or digest == FORBIDDEN_ACCOUNT_SHA256:
         raise GuardError("Flow account is not the required HOS Ultra account")
 
 
@@ -1405,6 +1431,7 @@ def live_video_submit(row: Row, dest: Path, frame: Path, *,
     """Real Flow call. Unreachable unless submit was armed. Tests never call this."""
     if os.environ.get(SUBMIT_ENV) != "1":
         raise GuardError("live submit is not armed")
+    required_account()
     if type(other) is not int or other < 0:
         raise GuardError("invalid other reservations")
     accounting._assert_held()
@@ -1517,6 +1544,7 @@ def cmd_submit(repo: Path, *, other: int, media: Path, ledger_path: Path, lock_p
             "refusing submit: generation is not armed "
             f"({SUBMIT_ENV} is not 1). Plan only. J2033 stays blocked until Chief passes this runner."
         )
+    required_account()
     refuse_duplicate(pid_path, done_path)
     with WriterLock(lock_path):
         claim_pid(pid_path)
@@ -1588,6 +1616,7 @@ def read_live_balance(page, *, open_overlay: bool = True) -> int:
     Account details and Settings trigger overlays are mutually exclusive on Flow;
     when Account details is opened here, it is closed before returning.
     """
+    expected_account = required_account()
     evidence = page.evaluate(BALANCE_EVIDENCE_JS, None)
     opened = False
     if open_overlay and isinstance(evidence, dict) and not evidence.get("balances"):
@@ -1610,7 +1639,7 @@ def read_live_balance(page, *, open_overlay: bool = True) -> int:
                 pass
             evidence = page.evaluate(BALANCE_EVIDENCE_JS, None)
     try:
-        required = dict(host=FLOW_HOST, accounts=[REQUIRED_ACCOUNT], ultra=True)
+        required = dict(host=FLOW_HOST, accounts=[expected_account], ultra=True)
         if not isinstance(evidence, dict) or any(evidence.get(k) != v for k, v in required.items()):
             raise GuardError('live Flow selected controls/account/entitlement/price are missing or changed')
         balances = evidence.get('balances')
@@ -1739,6 +1768,7 @@ def _resolve_evidence_balances(raw: dict, balance: int | None) -> list[int]:
 
 def _read_and_validate_live_evidence(page, *, balance: int | None = None,
                                      open_overlay: bool = False) -> tuple[dict, dict]:
+    expected_account = required_account()
     raw = page.evaluate(CREATE_EVIDENCE_JS, None)
     if (
         open_overlay
@@ -1749,7 +1779,7 @@ def _read_and_validate_live_evidence(page, *, balance: int | None = None,
     ):
         raw = page.evaluate(CREATE_EVIDENCE_JS, None)
     required = dict(host=FLOW_HOST, models=[REQUIRED_MODEL], outputs=[REQUIRED_OUTPUTS],
-                    aspects=['16:9'], durations=['8s'], accounts=[REQUIRED_ACCOUNT],
+                    aspects=['16:9'], durations=['8s'], accounts=[expected_account],
                     prices=[f'Generating will use {MAX_CREDITS_PER_TAKE} credits'],
                     ultra=True, create_count=1)
     if not isinstance(raw, dict) or any(raw.get(k) != v for k, v in required.items()):
@@ -1902,6 +1932,7 @@ STILL_EVIDENCE_JS = r"""(expected) => {
 
 def _read_and_validate_live_still_evidence(page, *, balance: int | None = None,
                                            open_overlay: bool = False) -> tuple[dict, dict]:
+    expected_account = required_account()
     raw = page.evaluate(STILL_EVIDENCE_JS, None)
     if (
         open_overlay
@@ -1912,7 +1943,7 @@ def _read_and_validate_live_still_evidence(page, *, balance: int | None = None,
     ):
         raw = page.evaluate(STILL_EVIDENCE_JS, None)
     required = dict(host=FLOW_HOST, models=[REQUIRED_STILL_MODEL], outputs=[REQUIRED_OUTPUTS],
-                    aspects=['16:9'], accounts=[REQUIRED_ACCOUNT],
+                    aspects=['16:9'], accounts=[expected_account],
                     prices=['Generating will use 0 credits'],
                     ultra=True, create_count=1)
     if not isinstance(raw, dict) or any(raw.get(k) != v for k, v in required.items()):
@@ -1962,6 +1993,7 @@ def live_still_maker(row: Row, dest: Path, *, accounting: SharedFlowAccounting |
             f"no start still for {row.plate_id}. A Nano Banana still needs a verified on-screen price of 0 "
             "and a separate still call; stopping rather than guessing."
         )
+    required_account()
     if type(other) is not int or other < 0:
         raise GuardError("invalid other reservations")
     if accounting is None or evidence_path is None:

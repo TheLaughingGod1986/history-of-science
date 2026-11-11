@@ -68,14 +68,14 @@
   },
   "plate06_sha256": "f294b87b2387c2a10d7aa343db349e10e0fd5576c82a767d08f8fa211e4920c3",
   "plate10_sha256": "6ee17990e49aede89b166b84ee306b04cd2b6e134cee902c1a1bf8a08330fe1a",
-  "flow_account": "benoats@googlemail.com",
+  "flow_account": "the studio Ultra account",
   "p03_untouched_sha256": "30060612a00d628998008c9946b8e25319b56f3b9e5613b537c5d2be989bbe4e",
   "hos_uat": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/hos_002_part04_rough_v17.mp4",
   "watch": "WATCH_part04_v17.txt",
   "doc": "PART04_V17_PUBLISH_SHARP.md",
   "status": "LANDED_FOR_UAT \u2014 do not declare PASS; scores \u2192 CoS; no Ben ping",
   "flow_attempts": {
-    "account": "benoats@googlemail.com",
+    "account": "the studio Ultra account",
     "projects": [
       "https://flow.google.com/u/1/project/8b761966-5ef1-4610-a44b-e8b405cfcd44",
       "https://flow.google.com/u/1/project/7aed7e87-4c6d-44c5-96d1-50f1af669ead"

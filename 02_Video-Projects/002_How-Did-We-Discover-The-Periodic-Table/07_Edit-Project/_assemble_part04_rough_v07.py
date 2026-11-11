@@ -310,7 +310,7 @@ def main() -> None:
                 "parent_v06_sha256": v06_sha,
                 "reminted_plates": reminted,
                 "method": "Veo 3.1 Fast T2V — real window night sky, no hard fill",
-                "flow_account": "benoats@googlemail.com",
+                "flow_account": "the studio Ultra account",
                 "p03_untouched_sha256": p03_sha,
                 "plate02b_picture_s": [plate02b_start, plate02b_end],
                 "columns_picture_s": [columns_start, columns_end],

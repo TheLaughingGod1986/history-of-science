@@ -72,8 +72,10 @@ from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
 
-# SHA-256 digests of lowercase account strings (no email address stored in repo or receipts).
-REQUIRED_ACCOUNT_SHA256 = "81a01c9d841483f444008cd69e98b26019e032ed75b5e33e17409a76c6525ce9"
+# Account verification reads STUDIO_FLOW_ACCOUNT outside the repo (no email address stored in repo or receipts).
+ACCOUNT_ENV = "STUDIO_FLOW_ACCOUNT"
+FORBIDDEN_ACCOUNT_ENV = "STUDIO_FLOW_FORBIDDEN_ACCOUNT"
+REQUIRED_ACCOUNT_SHA256: str | None = None
 FORBIDDEN_ACCOUNT_SHA256 = "93b0f97ef00986fa90ead10a83be910d43707ddc8023daa2018ed1d95cbbb9d4"
 
 FILM_ID = "HOS:010"
@@ -275,13 +277,38 @@ def account_sha256(account: str | None) -> str:
     return sha256_bytes(account.strip().lower().encode("utf-8"))
 
 
+def forbidden_account_sha256() -> str:
+    raw = os.environ.get(FORBIDDEN_ACCOUNT_ENV, "").strip().lower()
+    if raw:
+        return account_sha256(raw)
+    return (FORBIDDEN_ACCOUNT_SHA256 or "").strip().lower()
+
+
+def required_account_sha256() -> str:
+    if isinstance(REQUIRED_ACCOUNT_SHA256, str) and REQUIRED_ACCOUNT_SHA256.strip():
+        digest = REQUIRED_ACCOUNT_SHA256.strip().lower()
+    else:
+        raw = os.environ.get(ACCOUNT_ENV, "").strip().lower()
+        if not raw:
+            raise GuardError(
+                f"missing required setting {ACCOUNT_ENV} (set {ACCOUNT_ENV} outside the repo)"
+            )
+        digest = account_sha256(raw)
+    forbidden = forbidden_account_sha256()
+    if digest == FORBIDDEN_ACCOUNT_SHA256 or (forbidden and digest == forbidden):
+        raise GuardError("Flow account is not the studio Ultra account")
+    return digest
+
+
 def verify_account_list(accounts: object) -> str:
+    expected = required_account_sha256()
+    forbidden = forbidden_account_sha256()
     if not isinstance(accounts, list) or len(accounts) != 1 or not isinstance(accounts[0], str):
         raise GuardError("live Flow account is missing or ambiguous")
     digest = account_sha256(accounts[0])
-    if digest == FORBIDDEN_ACCOUNT_SHA256 or digest != REQUIRED_ACCOUNT_SHA256:
+    if digest == FORBIDDEN_ACCOUNT_SHA256 or (forbidden and digest == forbidden) or digest != expected:
         raise GuardError("Flow account is not the studio Ultra account")
-    return REQUIRED_ACCOUNT_SHA256
+    return expected
 
 
 def expected_model_for(row_or_quality: Row | str) -> str:
@@ -913,6 +940,8 @@ def accept_account(
     now: datetime,
     max_age_s: int = 900,
 ) -> str:
+    expected = required_account_sha256()
+    forbidden = forbidden_account_sha256()
     if not read_at:
         raise GuardError("balance read timestamp is missing")
     stamp = datetime.fromisoformat(read_at)
@@ -925,9 +954,9 @@ def accept_account(
         raise GuardError("Flow account is missing")
     candidate = account_or_sha256.strip().lower()
     digest = candidate if re.fullmatch(r"[0-9a-f]{64}", candidate) else account_sha256(candidate)
-    if digest == FORBIDDEN_ACCOUNT_SHA256 or digest != REQUIRED_ACCOUNT_SHA256:
+    if digest == FORBIDDEN_ACCOUNT_SHA256 or (forbidden and digest == forbidden) or digest != expected:
         raise GuardError("Flow account is not the studio Ultra account")
-    return REQUIRED_ACCOUNT_SHA256
+    return expected
 
 
 def _probe_image_16x9_or_valid(path: Path, *, require_16x9: bool = False) -> tuple[int, int, str]:

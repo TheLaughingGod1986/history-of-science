@@ -414,7 +414,7 @@ def main() -> None:
                 },
                 "plate06_sha256": plate06_sha,
                 "plate10_sha256": plate10_sha,
-                "flow_account": "benoats@googlemail.com",
+                "flow_account": "the studio Ultra account",
                 "p03_untouched_sha256": p03_sha,
                 "hos_uat": str(ICLOUD / OUT.name),
                 "watch": "WATCH_part04_v17.txt",
@@ -443,7 +443,7 @@ def main() -> None:
         "- Spot ~121 / ~125 PUBLISH THE GAPS: one solid lamp, one solid flask set, one solid "
         "grid — NO ghost doubles, NO left-half pixel mush.\n"
         "- Spot ~102–105 CLEAN LIGHT KEEP: soft panel, no lamp lava.\n"
-        "- Part 01–03 LOCKED. Flow account benoats@googlemail.com.\n"
+        "- Part 01–03 LOCKED. Flow account the studio Ultra account.\n"
         "- Do NOT declare PASS here. Scores → CoS. No Ben ping.\n\n"
         "Reject with stills from THIS file only.\n"
         f"keep_p03_sha={p03_sha}\n"

@@ -8,7 +8,7 @@ Remint ONLY: 11_publish_gaps, 11b_wait_and_hunt
 KEEP: 10_family_before_weight, Explorer 06, 09/09b CLEAN LIGHT, written cards ~40
 
 Do NOT restore ghosty v01 DNA. Fresh I2V from painted sharp v17 starts.
-Flow: benoats@googlemail.com on /u/1/. Scores → CoS. No PASS. No Ben ping.
+Flow: the studio Ultra account on /u/1/. Scores → CoS. No PASS. No Ben ping.
 """
 from __future__ import annotations
 
@@ -24,6 +24,27 @@ from pathlib import Path
 
 from PIL import Image, ImageFilter
 from playwright.sync_api import sync_playwright
+
+def _require_studio_flow_account() -> str:
+    import os as _os
+    val = _os.environ.get("STUDIO_FLOW_ACCOUNT", "").strip()
+    if not val:
+        raise SystemExit("STOP: missing required setting STUDIO_FLOW_ACCOUNT (set STUDIO_FLOW_ACCOUNT outside the repo)")
+    return val
+
+
+def _studio_flow_account_variants(addr: str) -> tuple[str, ...]:
+    low = addr.strip().lower()
+    local, sep, dom = low.partition("@")
+    if sep and dom in ("gmail.com", "googlemail.com"):
+        return (f"{local}@googlemail.com", f"{local}@gmail.com")
+    return (low,)
+
+
+def _forbidden_studio_flow_account() -> str:
+    import os as _os
+    return _os.environ.get("STUDIO_FLOW_FORBIDDEN_ACCOUNT", "").strip() or "__unset_forbidden_account__"
+
 
 REPO = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(REPO / "04_Audio" / "tools"))
@@ -44,9 +65,9 @@ STARTS = PROJ / "04_Generated-Clips/part04/refs/v17_start_frames"
 
 MODEL = os.environ.get("ORBIT_FLOW_VEO_MODEL", "Veo 3.1 - Fast")
 PROFILE = Path(os.environ.get("ORBIT_FLOW_PROFILE", str(Path.home() / ".playwright-hos-flow-profile")))
-REQUIRED_FLOW_EMAIL = "benoats@googlemail.com"
-ALLOWED_FLOW_EMAILS = {REQUIRED_FLOW_EMAIL, "benoats@gmail.com"}
-FORBIDDEN_FLOW_EMAIL = "benoats86@gmail.com"
+REQUIRED_FLOW_EMAIL = _require_studio_flow_account()
+ALLOWED_FLOW_EMAILS = set(_studio_flow_account_variants(REQUIRED_FLOW_EMAIL))
+FORBIDDEN_FLOW_EMAIL = _forbidden_studio_flow_account()
 MAX_CREATES = int(os.environ.get("HOS_V17_MAX_CREATES", "3"))
 HARVEST_WAIT_S = int(os.environ.get("HOS_FLOW_HARVEST_WAIT_S", "420"))
 
@@ -231,7 +252,7 @@ def pick_google_account(page) -> None:
     url = page.url or ""
     if "accounts.google.com" not in url:
         return
-    for needle in (REQUIRED_FLOW_EMAIL, "benoats@gmail.com"):
+    for needle in _studio_flow_account_variants(REQUIRED_FLOW_EMAIL):
         loc = page.get_by_text(needle, exact=False)
         if loc.count():
             print(f"  account chooser → {needle}", flush=True)

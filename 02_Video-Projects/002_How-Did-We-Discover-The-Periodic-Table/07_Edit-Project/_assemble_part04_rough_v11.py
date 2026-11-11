@@ -376,7 +376,7 @@ def main() -> None:
                     "Veo 3.1 Fast I2V — Ben FAIL remint: glasses + clean lamp + written cards "
                     "(06/05b/07/07b/09/09b)"
                 ),
-                "flow_account": "benoats@googlemail.com",
+                "flow_account": "the studio Ultra account",
                 "p03_untouched_sha256": p03_sha,
                 "plate02b_picture_s": [plate02b_start, plate02b_end],
                 "columns_picture_s": [columns_start, columns_end],

@@ -35,7 +35,7 @@
 
 ### Engine notes
 
-1. Flow Ultra (`benoats@googlemail.com`) create started (project attempt `626aa89d-…`) but gallery harvest / force-download returned no usable mp4.
+1. Flow Ultra (`the studio Ultra account`) create started (project attempt `626aa89d-…`) but gallery harvest / force-download returned no usable mp4.
 2. Gemini API Veo (`veo-3.1-generate-preview` + lite) returned `429 RESOURCE_EXHAUSTED` (prepaid credits depleted).
 3. Therefore late remint used: clean pre-deghost `v01` for 11/11b + sharp painted continuous motion for 10 (explicitly **not** temporal-median).
 
@@ -93,4 +93,4 @@ Plate 10 is a sharp painted continuous-motion fallback (style may read more grap
 
 Merge only after UAT PASS + Ben KEEP. Scores → CoS. No Ben ping.
 
-Flow account for any follow-up I2V: `benoats@googlemail.com`.
+Flow account for any follow-up I2V: `the studio Ultra account`.

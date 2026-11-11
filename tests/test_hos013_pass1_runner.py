@@ -27,6 +27,8 @@ CAPTURE_PATH = ROOT / "jobs/reviews/J2033/LIVE_DOM_CAPTURE_2026-11-10.json"
 
 TEST_STUDIO_ACCOUNT = "studio-ultra@example.com"
 TEST_FORBIDDEN_ACCOUNT = "wrong-channel@example.com"
+os.environ.setdefault("STUDIO_FLOW_ACCOUNT", TEST_STUDIO_ACCOUNT)
+os.environ.setdefault("STUDIO_FLOW_FORBIDDEN_ACCOUNT", TEST_FORBIDDEN_ACCOUNT)
 
 
 def _load_module(name: str, path: Path):
@@ -268,23 +270,28 @@ class PriceAccountStyleAndCapGuardTests(unittest.TestCase):
         cls.f_row = next(r for r in cls.rows if r.quality == "Fast")
 
     def test_account_digests_match_studio_ultra_without_storing_emails(self):
-        self.assertEqual(RUNNER.account_sha256(TRANCHE2.REQUIRED_ACCOUNT), RUNNER.REQUIRED_ACCOUNT_SHA256)
-        self.assertEqual(RUNNER.account_sha256(TRANCHE2.FORBIDDEN_ACCOUNT), RUNNER.FORBIDDEN_ACCOUNT_SHA256)
-        now = datetime.now(timezone.utc)
-        self.assertEqual(
-            RUNNER.accept_account(TRANCHE2.REQUIRED_ACCOUNT, now.isoformat(), now=now),
-            RUNNER.REQUIRED_ACCOUNT_SHA256,
-        )
-        self.assertEqual(
-            RUNNER.accept_account(RUNNER.REQUIRED_ACCOUNT_SHA256, now.isoformat(), now=now),
-            RUNNER.REQUIRED_ACCOUNT_SHA256,
-        )
-        for bad in (TRANCHE2.FORBIDDEN_ACCOUNT, RUNNER.FORBIDDEN_ACCOUNT_SHA256, TEST_FORBIDDEN_ACCOUNT, "", None):
-            with self.assertRaises(RUNNER.GuardError):
-                RUNNER.accept_account(bad, now.isoformat(), now=now)
-        stale = (now - timedelta(hours=1)).isoformat()
-        with self.assertRaisesRegex(RUNNER.GuardError, "not fresh"):
-            RUNNER.accept_account(RUNNER.REQUIRED_ACCOUNT_SHA256, stale, now=now)
+        expected_sha = RUNNER.account_sha256(TEST_STUDIO_ACCOUNT)
+        with patch.dict(os.environ, {RUNNER.ACCOUNT_ENV: TEST_STUDIO_ACCOUNT, RUNNER.FORBIDDEN_ACCOUNT_ENV: TEST_FORBIDDEN_ACCOUNT}):
+            self.assertEqual(RUNNER.required_account_sha256(), expected_sha)
+            self.assertEqual(RUNNER.forbidden_account_sha256(), RUNNER.account_sha256(TEST_FORBIDDEN_ACCOUNT))
+            now = datetime.now(timezone.utc)
+            self.assertEqual(
+                RUNNER.accept_account(TEST_STUDIO_ACCOUNT, now.isoformat(), now=now),
+                expected_sha,
+            )
+            self.assertEqual(
+                RUNNER.accept_account(expected_sha, now.isoformat(), now=now),
+                expected_sha,
+            )
+            for bad in (TEST_FORBIDDEN_ACCOUNT, RUNNER.FORBIDDEN_ACCOUNT_SHA256, "", None):
+                with self.assertRaises(RUNNER.GuardError):
+                    RUNNER.accept_account(bad, now.isoformat(), now=now)
+            stale = (now - timedelta(hours=1)).isoformat()
+            with self.assertRaisesRegex(RUNNER.GuardError, "not fresh"):
+                RUNNER.accept_account(expected_sha, stale, now=now)
+        with patch.dict(os.environ, {RUNNER.ACCOUNT_ENV: ""}, clear=False):
+            with self.assertRaisesRegex(RUNNER.GuardError, RUNNER.ACCOUNT_ENV):
+                RUNNER.accept_account(TEST_STUDIO_ACCOUNT, datetime.now(timezone.utc).isoformat(), now=datetime.now(timezone.utc))
 
     def test_price_guards_for_quality_100_fast_10_and_pre_batch_pair(self):
         now = datetime.now(timezone.utc)
@@ -594,7 +601,7 @@ class BatchExecutionArchiveAndReceiptTests(unittest.TestCase):
             def fake_submitter(row, dest, frame, *, accounting, reservation, charge, evidence_path, other=0, floor=0):
                 self.assertTrue(frame.is_file())
                 page = LiveDomAndTrustedClickTests.MockPage(
-                    LiveDomAndTrustedClickTests.video_evidence(quality=row.quality, account=TRANCHE2.REQUIRED_ACCOUNT, balance=14890)
+                    LiveDomAndTrustedClickTests.video_evidence(quality=row.quality, account=TEST_STUDIO_ACCOUNT, balance=14890)
                 )
                 accounting.reserve(reservation, RUNNER.FILM_ID, RUNNER.MAX_TOTAL_CREDITS, live=14890, floor=floor + other)
                 ev = RUNNER.guarded_create(
@@ -640,7 +647,7 @@ class BatchExecutionArchiveAndReceiptTests(unittest.TestCase):
                 self.assertTrue(RUNNER.verified_output(entry))
                 # No personal email leaked into persisted create_evidence.
                 self.assertNotIn("accounts", entry["create_evidence"]["ui"])
-                self.assertEqual(entry["create_evidence"]["ui"]["account_sha256"], RUNNER.REQUIRED_ACCOUNT_SHA256)
+                self.assertEqual(entry["create_evidence"]["ui"]["account_sha256"], RUNNER.account_sha256(TEST_STUDIO_ACCOUNT))
 
             # Archive holds 5 mp4s, 5 sha256 sidecars, 5 per-take receipts, and 1 batch receipt.
             archived_mp4s = sorted(archive.glob("*.mp4"))
@@ -1352,7 +1359,7 @@ class PolicyRefusalTests(unittest.TestCase):
             def fake_submitter(row, dest, frame, *, accounting, reservation, charge, evidence_path, other=0, floor=0):
                 charges.append(charge)
                 page = LiveDomAndTrustedClickTests.MockPage(
-                    LiveDomAndTrustedClickTests.video_evidence(quality=row.quality, account=TRANCHE2.REQUIRED_ACCOUNT, balance=14890))
+                    LiveDomAndTrustedClickTests.video_evidence(quality=row.quality, account=TEST_STUDIO_ACCOUNT, balance=14890))
                 accounting.reserve(reservation, RUNNER.FILM_ID, RUNNER.MAX_TOTAL_CREDITS, live=14890, floor=floor + other)
                 ev = RUNNER.guarded_create(page, accounting, row=row, reservation=reservation, charge=charge,
                                            evidence_path=evidence_path, floor=floor + other)

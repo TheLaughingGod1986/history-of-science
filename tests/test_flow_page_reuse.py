@@ -61,4 +61,27 @@ class FlowPageTests(unittest.TestCase):
         self.assertIsNot(chosen, studio)
         self.assertEqual((ctx.created, studio.visits), (1, []))
 
+    def test_require_studio_flow_account_refuses_when_unset_and_accepts_made_up_address(self):
+        import subprocess, sys
+        made_up = 'studio-ultra@example.com'
+        vertex_src = SOURCE.parent / '_mint_vertex_v01.py'
+        for script in (SOURCE, vertex_src):
+            nodes = [
+                n for n in ast.parse(script.read_text()).body
+                if isinstance(n, ast.FunctionDef) and n.name in ('_require_studio_flow_account', '_studio_flow_account_variants')
+            ]
+            env = {}
+            exec(compile(ast.Module(body=nodes, type_ignores=[]), str(script), 'exec'), env)
+            with patch.dict(os.environ, {'STUDIO_FLOW_ACCOUNT': ''}, clear=False):
+                with self.assertRaisesRegex(SystemExit, 'STUDIO_FLOW_ACCOUNT'):
+                    env['_require_studio_flow_account']()
+            with patch.dict(os.environ, {'STUDIO_FLOW_ACCOUNT': made_up}, clear=False):
+                self.assertEqual(env['_require_studio_flow_account'](), made_up)
+        # Running _mint_flow_cdp_v01.py with STUDIO_FLOW_ACCOUNT unset refuses before touching CDP.
+        clean_env = dict(os.environ)
+        clean_env.pop('STUDIO_FLOW_ACCOUNT', None)
+        res = subprocess.run([sys.executable, str(SOURCE), '--list'], env=clean_env, capture_output=True, text=True)
+        self.assertNotEqual(res.returncode, 0)
+        self.assertIn('STUDIO_FLOW_ACCOUNT', res.stderr + res.stdout)
+
 if __name__ == '__main__': unittest.main()

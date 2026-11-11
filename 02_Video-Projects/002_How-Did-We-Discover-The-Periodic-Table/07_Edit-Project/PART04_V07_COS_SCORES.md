@@ -3,7 +3,7 @@
 **Cut:** `09_Final-Export/hos_002_part04_rough_v07.mp4`  
 **Parent:** `hos_002_part04_rough_v06.mp4` sha256 `5aea09bdc505beb4d887acdfcfc5c43b307ee0bb7c606bb287b4beeb56e5bbf2` · 76818977 B · 127.760s  
 **v07:** sha256 `a74fa8ecd7f74785b3c4887e574d009676844189a0dc67620e659ae96e09efe2` · 86648042 B · 127.760s  
-**Flow:** `benoats@googlemail.com` · Veo 3.1 Fast · `/u/1/`  
+**Flow:** `the studio Ultra account` · Veo 3.1 Fast · `/u/1/`  
 **P03 frozen:** `30060612a00d628998008c9946b8e25319b56f3b9e5613b537c5d2be989bbe4e`  
 **Scores → CoS only.** Do not declare PASS. Do not ping Ben.
 
@@ -51,4 +51,4 @@
 
 ## Agent report line
 
-`path=09_Final-Export/hos_002_part04_rough_v07.mp4 · bytes=86648042 · duration=127.760s · sha256=a74fa8ecd7f74785b3c4887e574d009676844189a0dc67620e659ae96e09efe2 · plates=05,06,09,09b reminted · method=Veo Fast no hard fill (indoor wall) · Flow=benoats@googlemail.com · P03=30060612… · confirm zero blue boxes on reminted cut ranges`
+`path=09_Final-Export/hos_002_part04_rough_v07.mp4 · bytes=86648042 · duration=127.760s · sha256=a74fa8ecd7f74785b3c4887e574d009676844189a0dc67620e659ae96e09efe2 · plates=05,06,09,09b reminted · method=Veo Fast no hard fill (indoor wall) · Flow=the studio Ultra account · P03=30060612… · confirm zero blue boxes on reminted cut ranges`

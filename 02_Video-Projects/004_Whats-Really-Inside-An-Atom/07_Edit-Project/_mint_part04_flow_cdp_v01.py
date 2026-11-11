@@ -2,7 +2,7 @@
 """HOS 004 Part 04 — Flow Veo 3.1 mint via Mini CDP + Gemini API fallback.
 
 Part 03 rough v01 PASS (Ben: fine) → mint Part 04.
-Account: benoats@googlemail.com on :9222 (primary).
+Account: the studio Ultra account on :9222 (primary).
 Quality only when plate.quality == Quality (glow). Fast otherwise.
 Max 2 tries/plate; try2 uses prompt_try2 (framing change). Strip Veo audio.
 One plate at a time until first KEEP, then continue the board.
@@ -28,6 +28,27 @@ from pathlib import Path
 
 from playwright.sync_api import sync_playwright
 
+def _require_studio_flow_account() -> str:
+    import os as _os
+    val = _os.environ.get("STUDIO_FLOW_ACCOUNT", "").strip()
+    if not val:
+        raise SystemExit("STOP: missing required setting STUDIO_FLOW_ACCOUNT (set STUDIO_FLOW_ACCOUNT outside the repo)")
+    return val
+
+
+def _studio_flow_account_variants(addr: str) -> tuple[str, ...]:
+    low = addr.strip().lower()
+    local, sep, dom = low.partition("@")
+    if sep and dom in ("gmail.com", "googlemail.com"):
+        return (f"{local}@googlemail.com", f"{local}@gmail.com")
+    return (low,)
+
+
+def _forbidden_studio_flow_account() -> str:
+    import os as _os
+    return _os.environ.get("STUDIO_FLOW_FORBIDDEN_ACCOUNT", "").strip() or "__unset_forbidden_account__"
+
+
 REPO = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(REPO / "04_Audio" / "tools"))
 import orbit_flow_veo_ui as flow  # noqa: E402
@@ -35,8 +56,8 @@ import orbit_gemini_veo as veo  # noqa: E402
 
 flow.FLOW_HOME = os.environ.get("ORBIT_FLOW_HOME", "https://flow.google.com/")
 CDP = os.environ.get("ORBIT_FLOW_CDP", "http://127.0.0.1:9222")
-REQUIRED = "benoats@googlemail.com"
-FORBIDDEN = "benoats86@gmail.com"
+REQUIRED = _require_studio_flow_account()
+FORBIDDEN = _forbidden_studio_flow_account()
 
 PROJ = Path(__file__).resolve().parents[1]
 PLATES_JSON = PROJ / "07_Edit-Project/parts/part-04_plates_v02.json"
@@ -305,7 +326,7 @@ def assert_gate(page) -> dict:
             page.keyboard.press("Escape")
         except Exception:
             pass
-    if active not in {REQUIRED.lower(), "benoats@gmail.com"}:
+    if active not in set(_studio_flow_account_variants(REQUIRED)):
         raise SystemExit(f"STOP wrong account: {active} shot={shot}")
     if FORBIDDEN.lower() in low and (active or "").find("86") >= 0:
         raise SystemExit(f"STOP forbidden account: {active}")

@@ -20,6 +20,27 @@ import time
 from datetime import datetime, timezone
 from pathlib import Path
 
+def _require_studio_flow_account() -> str:
+    import os as _os
+    val = _os.environ.get("STUDIO_FLOW_ACCOUNT", "").strip()
+    if not val:
+        raise SystemExit("STOP: missing required setting STUDIO_FLOW_ACCOUNT (set STUDIO_FLOW_ACCOUNT outside the repo)")
+    return val
+
+
+def _studio_flow_account_variants(addr: str) -> tuple[str, ...]:
+    low = addr.strip().lower()
+    local, sep, dom = low.partition("@")
+    if sep and dom in ("gmail.com", "googlemail.com"):
+        return (f"{local}@googlemail.com", f"{local}@gmail.com")
+    return (low,)
+
+
+def _forbidden_studio_flow_account() -> str:
+    import os as _os
+    return _os.environ.get("STUDIO_FLOW_FORBIDDEN_ACCOUNT", "").strip() or "__unset_forbidden_account__"
+
+
 REPO = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(REPO / "04_Audio" / "tools"))
 import orbit_flow_veo_ui as flow  # noqa: E402
@@ -31,7 +52,7 @@ assert spec and spec.loader
 spec.loader.exec_module(v02)
 
 CDP = os.environ.get("ORBIT_FLOW_CDP", "http://127.0.0.1:9222")
-REQUIRED = "benoats@googlemail.com"
+REQUIRED = _require_studio_flow_account()
 PINNED = os.environ.get(
     "HOS_FLOW_PROJECT_URL",
     "https://flow.google.com/project/30a34afb-8d9c-4eac-83ba-012d97f6b1b5",
@@ -625,7 +646,7 @@ def main() -> int:
             log["credits_before_batch"] = credits0
             log["account"] = active
             print(f"GATE account={active} credits={credits0} url={page.url}", flush=True)
-            if active and active not in {REQUIRED.lower(), "benoats@gmail.com"}:
+            if active and active not in set(_studio_flow_account_variants(REQUIRED)):
                 raise SystemExit(f"STOP wrong account: {active}")
             if credits0 is not None and credits0 < 30:
                 raise SystemExit(f"STOP low credits={credits0}")

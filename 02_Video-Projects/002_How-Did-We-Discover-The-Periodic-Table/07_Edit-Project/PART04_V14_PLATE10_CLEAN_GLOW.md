@@ -21,7 +21,7 @@ UAT named plate **`10_family_before_weight`**. Timeline + pixel match put the fa
 |---|---|
 | Reminted plate | **`09b_risk_hold` only** |
 | Keep from v13 | 04, 05, 06 Explorer, 09, **10**, 05b, 07, 08, 08b, 02b, 07b (+ all non-09b) |
-| Flow account | `benoats@googlemail.com` |
+| Flow account | `the studio Ultra account` |
 | Method | Flow Veo I2V tries rejected (flame reintroduced) → **clean-chair-lock composite**: ok_abet DNA start locks chair / lamp / shelves (soft rectangular backrest glow); desk card motion from try2 |
 | Plate file | `04_Generated-Clips/part04/raw/v14_fast/09b_risk_hold_v14.mp4` |
 | Plate sha256 | `7243f56619512b5819682463544abb7af39000a180a5ee38793bc6ea7b1eca50` |

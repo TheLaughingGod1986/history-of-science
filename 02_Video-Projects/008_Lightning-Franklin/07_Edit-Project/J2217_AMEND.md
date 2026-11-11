@@ -58,7 +58,7 @@ The 27 side labels match `cuts_rough_v12.json`. That match does **not** prove ev
 
 ## Spend preflight
 
-`ai_spend.py check` is not a command. The CLI is `record`, `spend`, `report`, and `doc`. A future take has to read the live Flow balance with `read_account()` in `_mint_flow_cdp_v01.py` (CDP `ORBIT_FLOW_CDP`, account `benoats@googlemail.com`, the route `_mint_flow_v03.py` already uses) and the Quality price shown on the Flow confirm dialog. Log the reading with `record` and any later take with `spend`. Subtract spends logged since the reading. Caps stay 3 takes and 300 subscription credits per plate, 900 in total, GBP0, no top-up and no overage. `authorized` is false. This FIX does not open Flow.
+`ai_spend.py check` is not a command. The CLI is `record`, `spend`, `report`, and `doc`. A future take has to read the live Flow balance with `read_account()` in `_mint_flow_cdp_v01.py` (CDP `ORBIT_FLOW_CDP`, account `the studio Ultra account`, the route `_mint_flow_v03.py` already uses) and the Quality price shown on the Flow confirm dialog. Log the reading with `record` and any later take with `spend`. Subtract spends logged since the reading. Caps stay 3 takes and 300 subscription credits per plate, 900 in total, GBP0, no top-up and no overage. `authorized` is false. This FIX does not open Flow.
 
 ## Checks
 

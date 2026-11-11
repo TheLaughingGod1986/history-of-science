@@ -8,7 +8,7 @@ DNA (CoS next plate after 09b CLEAN LIGHT lamp-loop park):
 
 Start = crop-only lock (paint banned) from v10 back card-desk DNA with lamp ejected.
 Plate-library 4b8ed25. Continuous plate UAT before any assemble.
-Auth: Mini CDP benoats@googlemail.com ULTRA. STOP on passkey.
+Auth: Mini CDP the studio Ultra account ULTRA. STOP on passkey.
 """
 from __future__ import annotations
 
@@ -20,6 +20,27 @@ import time
 from pathlib import Path
 
 from playwright.sync_api import sync_playwright
+
+def _require_studio_flow_account() -> str:
+    import os as _os
+    val = _os.environ.get("STUDIO_FLOW_ACCOUNT", "").strip()
+    if not val:
+        raise SystemExit("STOP: missing required setting STUDIO_FLOW_ACCOUNT (set STUDIO_FLOW_ACCOUNT outside the repo)")
+    return val
+
+
+def _studio_flow_account_variants(addr: str) -> tuple[str, ...]:
+    low = addr.strip().lower()
+    local, sep, dom = low.partition("@")
+    if sep and dom in ("gmail.com", "googlemail.com"):
+        return (f"{local}@googlemail.com", f"{local}@gmail.com")
+    return (low,)
+
+
+def _forbidden_studio_flow_account() -> str:
+    import os as _os
+    return _os.environ.get("STUDIO_FLOW_FORBIDDEN_ACCOUNT", "").strip() or "__unset_forbidden_account__"
+
 
 REPO = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(REPO / "04_Audio" / "tools"))
@@ -34,7 +55,7 @@ LOCK = REF / "06_explorer_leaves_gap_start_v20_try1_ots_nolamp_windowbounce.jpg"
 BANNED_ORE = REF / "06_explorer_leaves_gap_start_v20_pre_try1_nolamp.jpg"
 OUT = PROJ / "07_Edit-Project/_qa_part04_v20_flow/submit_06_explorer_leaves_gap_try1.json"
 MODEL = os.environ.get("ORBIT_FLOW_VEO_MODEL") or "Veo 3.1 - Fast"
-REQUIRED_EMAIL = "benoats@googlemail.com"
+REQUIRED_EMAIL = _require_studio_flow_account()
 
 PROMPT = (
     "IMAGE-TO-VIDEO of the attached start frame. Animate THIS exact beat only. "

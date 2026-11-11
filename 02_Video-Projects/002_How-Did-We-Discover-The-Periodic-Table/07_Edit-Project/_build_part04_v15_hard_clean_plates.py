@@ -339,7 +339,7 @@ def main() -> None:
     summary = {
         "results": results,
         "status": "HARD_CLEAN_V15_PLATES — do not PASS",
-        "flow_account": "benoats@googlemail.com",
+        "flow_account": "the studio Ultra account",
     }
     (QA / "hard_clean_build_summary.json").write_text(json.dumps(summary, indent=2) + "\n")
     print("HARD CLEAN PLATE BUILD OK", flush=True)

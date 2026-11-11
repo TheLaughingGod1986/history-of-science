@@ -19,7 +19,7 @@
 4. Always-fails in every prompt: lava drip/molten bead; unfinished flat cards; mid-crown unfinished Explorer hair.
 5. After 2 same-DNA FAILs → new framing/start, not harder prompt only.
 6. One plate per FAIL cycle until that plate KEEP; then next plate; assemble last.
-7. Auth: Mini CDP `benoats@googlemail.com` ULTRA only.
+7. Auth: Mini CDP `the studio Ultra account` ULTRA only.
 
 ---
 

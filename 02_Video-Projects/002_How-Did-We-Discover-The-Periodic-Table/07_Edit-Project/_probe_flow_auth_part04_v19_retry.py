@@ -13,11 +13,32 @@ from pathlib import Path
 
 from playwright.sync_api import sync_playwright
 
+def _require_studio_flow_account() -> str:
+    import os as _os
+    val = _os.environ.get("STUDIO_FLOW_ACCOUNT", "").strip()
+    if not val:
+        raise SystemExit("STOP: missing required setting STUDIO_FLOW_ACCOUNT (set STUDIO_FLOW_ACCOUNT outside the repo)")
+    return val
+
+
+def _studio_flow_account_variants(addr: str) -> tuple[str, ...]:
+    low = addr.strip().lower()
+    local, sep, dom = low.partition("@")
+    if sep and dom in ("gmail.com", "googlemail.com"):
+        return (f"{local}@googlemail.com", f"{local}@gmail.com")
+    return (low,)
+
+
+def _forbidden_studio_flow_account() -> str:
+    import os as _os
+    return _os.environ.get("STUDIO_FLOW_FORBIDDEN_ACCOUNT", "").strip() or "__unset_forbidden_account__"
+
+
 PROJ = Path(__file__).resolve().parents[1]
 QA = Path(__file__).resolve().parent / "_qa_part04_v19_auth"
 PROFILE = Path.home() / ".playwright-hos-flow-profile"
-REQUIRED = "benoats@googlemail.com"
-FORBIDDEN = "benoats86@gmail.com"
+REQUIRED = _require_studio_flow_account()
+FORBIDDEN = _forbidden_studio_flow_account()
 URLS = [
     "https://labs.google/fx/tools/flow",
     "https://flow.google.com/",

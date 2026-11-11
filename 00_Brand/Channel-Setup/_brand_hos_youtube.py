@@ -6,7 +6,7 @@ applies Explorer avatar/banner/About copy, writes CHANNEL_META.json.
 
   python3 00_Brand/Channel-Setup/_brand_hos_youtube.py
 
-First run opens Chromium for Google sign-in as benoats86@gmail.com.
+First run opens Chromium for Google sign-in as the studio Ultra account.
 """
 from __future__ import annotations
 

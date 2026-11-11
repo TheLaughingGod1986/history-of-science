@@ -1,7 +1,7 @@
 # HOS 003 Part 04 Batch A — MINT STOP (resume)
 
 **Status:** **STOP** (21 Sep 2026 evening resume)  
-**Reason:** Flow Create for first plate `01_chapter_bertha` returned **Failed** (not charged) because **credit quota / daily Quality limit** is still reached on `benoats@googlemail.com` ULTRA.
+**Reason:** Flow Create for first plate `01_chapter_bertha` returned **Failed** (not charged) because **credit quota / daily Quality limit** is still reached on `the studio Ultra account` ULTRA.
 
 ## Resume attempt
 

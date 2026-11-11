@@ -2,7 +2,7 @@
 """Mint ONE Flow IMAGE still (Nano Banana) for HOS 002 thumb C via Mini CDP :9222.
 
 Same image route as `_mint_flow_image_still_v01.py` (Image mode / Nano Banana),
-but connects to the shared benoats@googlemail.com CDP Chrome.
+but connects to the shared the studio Ultra account CDP Chrome.
 
 HARD: open a NEW tab only. Never navigate/close other Flow tabs (004 mint).
 Record credits before/after. Max 2 tries (caller changes framing on FAIL).
@@ -18,12 +18,33 @@ import time
 from datetime import datetime, timezone
 from pathlib import Path
 
+def _require_studio_flow_account() -> str:
+    import os as _os
+    val = _os.environ.get("STUDIO_FLOW_ACCOUNT", "").strip()
+    if not val:
+        raise SystemExit("STOP: missing required setting STUDIO_FLOW_ACCOUNT (set STUDIO_FLOW_ACCOUNT outside the repo)")
+    return val
+
+
+def _studio_flow_account_variants(addr: str) -> tuple[str, ...]:
+    low = addr.strip().lower()
+    local, sep, dom = low.partition("@")
+    if sep and dom in ("gmail.com", "googlemail.com"):
+        return (f"{local}@googlemail.com", f"{local}@gmail.com")
+    return (low,)
+
+
+def _forbidden_studio_flow_account() -> str:
+    import os as _os
+    return _os.environ.get("STUDIO_FLOW_FORBIDDEN_ACCOUNT", "").strip() or "__unset_forbidden_account__"
+
+
 REPO = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(REPO / "04_Audio" / "tools"))
 import orbit_flow_veo_ui as flow  # noqa: E402
 
 CDP = os.environ.get("ORBIT_FLOW_CDP", "http://127.0.0.1:9222")
-REQUIRED = "benoats@googlemail.com"
+REQUIRED = _require_studio_flow_account()
 CREDIT_RE = re.compile(r"([\d,]{1,7})\s*(?:Google\s+Flow\s+)?credits", re.I)
 
 # Compose-ready framing: slot ~1/4 frame width, a little right of centre,
@@ -418,7 +439,7 @@ def main() -> int:
                 f"  GATE account={active} credits_before={credits_before} url={page.url}",
                 flush=True,
             )
-            if active and active not in {REQUIRED.lower(), "benoats@gmail.com"}:
+            if active and active not in set(_studio_flow_account_variants(REQUIRED)):
                 raise SystemExit(f"STOP wrong account: {active}")
             if credits_before is not None and credits_before < 50:
                 raise SystemExit(f"STOP low credits={credits_before}")

@@ -453,7 +453,7 @@ def main() -> None:
                 "plate10_sha256": plate10_sha,
                 "plate11_sha256": plate11_sha,
                 "plate11b_sha256": plate11b_sha,
-                "flow_account": "benoats@googlemail.com",
+                "flow_account": "the studio Ultra account",
                 "no_paint_fallback": True,
                 "p03_untouched_sha256": p03_sha,
                 "hos_uat": str(ICLOUD / OUT.name),
@@ -484,7 +484,7 @@ def main() -> None:
         "- Spot ~50 + ~53 Explorer: finished crown KEEP, no blot, clean cards, clean lamp.\n"
         "- Spot ~118–126 PUBLISH continuous: one solid lamp / flasks / grid / magnifier — "
         "NO horizontal ghost jitter.\n"
-        "- Part 01–03 LOCKED. Flow account benoats@googlemail.com.\n"
+        "- Part 01–03 LOCKED. Flow account the studio Ultra account.\n"
         "- Do NOT declare PASS here. Scores → CoS. No Ben ping.\n\n"
         "Reject with stills from THIS file only.\n"
         f"keep_p03_sha={p03_sha}\n"

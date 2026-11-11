@@ -11,13 +11,34 @@ from pathlib import Path
 
 from playwright.sync_api import sync_playwright
 
+def _require_studio_flow_account() -> str:
+    import os as _os
+    val = _os.environ.get("STUDIO_FLOW_ACCOUNT", "").strip()
+    if not val:
+        raise SystemExit("STOP: missing required setting STUDIO_FLOW_ACCOUNT (set STUDIO_FLOW_ACCOUNT outside the repo)")
+    return val
+
+
+def _studio_flow_account_variants(addr: str) -> tuple[str, ...]:
+    low = addr.strip().lower()
+    local, sep, dom = low.partition("@")
+    if sep and dom in ("gmail.com", "googlemail.com"):
+        return (f"{local}@googlemail.com", f"{local}@gmail.com")
+    return (low,)
+
+
+def _forbidden_studio_flow_account() -> str:
+    import os as _os
+    return _os.environ.get("STUDIO_FLOW_FORBIDDEN_ACCOUNT", "").strip() or "__unset_forbidden_account__"
+
+
 PROFILE = "/Users/ben/code/youtube/.playwright-tiktok-mobile-profile"
 SETUP = Path("/Users/ben/code/Orbit-YouTube/00_Brand/Channel-Setup/TikTok")
 AVATAR = SETUP / "avatar_800x800.png"
 BIO = (SETUP / "bio.txt").read_text().strip()
 WEBSITE = "https://www.youtube.com/@HistoryOfScience"
 DISPLAY = "History of Science"
-EMAIL = "benoats86@gmail.com"
+EMAIL = _require_studio_flow_account()
 AUDIT = SETUP / "audit"
 RESULT = SETUP / "CREATE_RESULT.json"
 META = SETUP / "TIKTOK_META.json"
@@ -195,7 +216,7 @@ def apply_brand(page) -> dict:
 def wait_for_code_or_progress(page, seconds: int = 240) -> str:
     """Wait while user enters email/SMS code. Returns state tag."""
     print(f"Waiting up to {seconds}s for verification / next step...")
-    print("If TikTok emailed a code to benoats86@gmail.com, enter it in the browser.")
+    print("If TikTok emailed a code to the studio Ultra account, enter it in the browser.")
     deadline = time.time() + seconds
     while time.time() < deadline:
         page.wait_for_timeout(5000)
@@ -320,7 +341,7 @@ def main() -> None:
             result["steps"].append("awaiting_code")
             result["status"] = "awaiting_email_code"
             result["notes"] = (
-                "Enter the 6-digit code from benoats86@gmail.com in the open TikTok window."
+                "Enter the 6-digit code from the studio Ultra account in the open TikTok window."
             )
             save(result)
             state = wait_for_code_or_progress(page, 300)

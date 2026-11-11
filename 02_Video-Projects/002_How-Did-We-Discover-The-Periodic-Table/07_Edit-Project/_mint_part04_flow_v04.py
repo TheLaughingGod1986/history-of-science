@@ -6,7 +6,7 @@ Showrunner PART04_V04_SCRUB_HOUSE_SILHOUETTES.md (parent v03 sha 79dd7650…):
   - REMINT B: 09_risk_bet + 09b_risk_hold (~91–97 model-town through window)
   - KEEP: 05/06 night-sky ~38–44 · Explorer teal · Empty Chairs · glowing chair
   - Prefer real Veo Fast I2V. Create dies → STOP (no Ken Burns, no silhouette fills).
-  - Auth: benoats@googlemail.com on /u/1/. P01–P03 FROZEN.
+  - Auth: the studio Ultra account on /u/1/. P01–P03 FROZEN.
 """
 from __future__ import annotations
 
@@ -18,6 +18,27 @@ import subprocess
 import sys
 import time
 from pathlib import Path
+
+def _require_studio_flow_account() -> str:
+    import os as _os
+    val = _os.environ.get("STUDIO_FLOW_ACCOUNT", "").strip()
+    if not val:
+        raise SystemExit("STOP: missing required setting STUDIO_FLOW_ACCOUNT (set STUDIO_FLOW_ACCOUNT outside the repo)")
+    return val
+
+
+def _studio_flow_account_variants(addr: str) -> tuple[str, ...]:
+    low = addr.strip().lower()
+    local, sep, dom = low.partition("@")
+    if sep and dom in ("gmail.com", "googlemail.com"):
+        return (f"{local}@googlemail.com", f"{local}@gmail.com")
+    return (low,)
+
+
+def _forbidden_studio_flow_account() -> str:
+    import os as _os
+    return _os.environ.get("STUDIO_FLOW_FORBIDDEN_ACCOUNT", "").strip() or "__unset_forbidden_account__"
+
 
 REPO = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(REPO / "04_Audio" / "tools"))
@@ -121,9 +142,9 @@ T2V_09B = (
     + STYLE + " " + REJECT
 )
 
-REQUIRED_FLOW_EMAIL = "benoats@googlemail.com"
-ALLOWED_FLOW_EMAILS = {REQUIRED_FLOW_EMAIL, "benoats@gmail.com"}
-FORBIDDEN_FLOW_EMAIL = "benoats86@gmail.com"
+REQUIRED_FLOW_EMAIL = _require_studio_flow_account()
+ALLOWED_FLOW_EMAILS = set(_studio_flow_account_variants(REQUIRED_FLOW_EMAIL))
+FORBIDDEN_FLOW_EMAIL = _forbidden_studio_flow_account()
 
 CREATE_DIE_MARKERS = (
     "out of google flow credits",
@@ -159,7 +180,7 @@ def pick_google_account(page) -> None:
     url = page.url or ""
     if "accounts.google.com" not in url:
         return
-    for needle in (REQUIRED_FLOW_EMAIL, "benoats@gmail.com"):
+    for needle in _studio_flow_account_variants(REQUIRED_FLOW_EMAIL):
         loc = page.get_by_text(needle, exact=False)
         if loc.count():
             print(f"  account chooser → {needle}", flush=True)
@@ -332,7 +353,7 @@ def open_flow(p, *, profile: Path):
             time.sleep(2)
     raise SystemExit(
         f"BLOCKED_AUTH: Flow not logged in after retries ({last_err}). "
-        "Do not Ken-Burns. Ben must sign Mini as benoats@googlemail.com on /u/1/."
+        "Do not Ken-Burns. Ben must sign Mini as the studio Ultra account on /u/1/."
     )
 
 

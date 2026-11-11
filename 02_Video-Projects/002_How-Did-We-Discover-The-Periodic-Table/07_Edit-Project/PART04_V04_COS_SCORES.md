@@ -24,7 +24,7 @@
 
 ## Remint / scrub trail
 
-1. Flow account **`benoats@googlemail.com`** (Ultra `/u/1/`). I2V Create for `02b_cards_sixty_three` **succeeded** (project `d3a62a9e-25a3-41ba-abfb-f5856f0347b3`).
+1. Flow account **`the studio Ultra account`** (Ultra `/u/1/`). I2V Create for `02b_cards_sixty_three` **succeeded** (project `d3a62a9e-25a3-41ba-abfb-f5856f0347b3`).
 2. Gallery Download / play-network harvest **failed** again (JPEG “1K Original” / play timeouts) — no Ken Burns substitute.
 3. **`02b`:** window hard-fill from v01 bed → then **fixed flat rectangular leather** over book-top zone. **Not** adaptive house-contour dilation (v03 mistake).
 4. **`09` / `09b`:** deep hard night-sky + moon/clouds window fill with lower-chair protect so glowing vacant chair stays.
@@ -59,7 +59,7 @@
 | explorer_picture | 45.30–53.20 s |
 | plate09_picture | 90.60–98.50 s |
 | plate09b_picture | 98.15–106.05 s |
-| Flow | `benoats@googlemail.com` (Create OK on 02b; download failed → fixed-rect leather + hard sky fills) |
+| Flow | `the studio Ultra account` (Create OK on 02b; download failed → fixed-rect leather + hard sky fills) |
 | P03 untouched | `30060612a00d628998008c9946b8e25319b56f3b9e5613b537c5d2be989bbe4e` |
 | HOS UAT | `~/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/hos_002_part04_rough_v04.mp4` |
 | watch | `WATCH_part04_v04.txt` |

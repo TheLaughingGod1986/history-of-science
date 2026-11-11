@@ -8,7 +8,7 @@ ZEROLAMP — window/moon/off-world bounce ONLY. No practical lamp/shade/bulb/sha
 Model: Veo 3.1 - Quality REQUIRED (Ben LOCK / main 3bc0414). Fast banned. Seedance banned.
 Paint banned. No assemble. Max 2 Quality starts this NEW DNA then STOP_TO_COS.
 
-Auth: Mini CDP benoats@googlemail.com ULTRA. STOP on passkey.
+Auth: Mini CDP the studio Ultra account ULTRA. STOP on passkey.
 Plate-library 4b8ed25. Main lock 3bc0414.
 """
 from __future__ import annotations
@@ -21,6 +21,27 @@ import time
 from pathlib import Path
 
 from playwright.sync_api import sync_playwright
+
+def _require_studio_flow_account() -> str:
+    import os as _os
+    val = _os.environ.get("STUDIO_FLOW_ACCOUNT", "").strip()
+    if not val:
+        raise SystemExit("STOP: missing required setting STUDIO_FLOW_ACCOUNT (set STUDIO_FLOW_ACCOUNT outside the repo)")
+    return val
+
+
+def _studio_flow_account_variants(addr: str) -> tuple[str, ...]:
+    low = addr.strip().lower()
+    local, sep, dom = low.partition("@")
+    if sep and dom in ("gmail.com", "googlemail.com"):
+        return (f"{local}@googlemail.com", f"{local}@gmail.com")
+    return (low,)
+
+
+def _forbidden_studio_flow_account() -> str:
+    import os as _os
+    return _os.environ.get("STUDIO_FLOW_FORBIDDEN_ACCOUNT", "").strip() or "__unset_forbidden_account__"
+
 
 REPO = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(REPO / "04_Audio" / "tools"))
@@ -44,7 +65,7 @@ BANNED = [
 QA_DIR = PROJ / "07_Edit-Project/_qa_part04_v20_plates_try14_09b"
 START_COUNTER = QA_DIR / "start_counter.json"
 MODEL = os.environ.get("ORBIT_FLOW_VEO_MODEL") or "Veo 3.1 - Quality"
-REQUIRED_EMAIL = "benoats@googlemail.com"
+REQUIRED_EMAIL = _require_studio_flow_account()
 MAX_STARTS = 2
 OUT_A = PROJ / "07_Edit-Project/_qa_part04_v20_flow/submit_09b_risk_hold_try14.json"
 OUT_B = PROJ / "07_Edit-Project/_qa_part04_v20_flow/submit_09b_risk_hold_try14B.json"

@@ -8,7 +8,7 @@ if v02 still clips, then STOP).
 Pinned project (do not New project, do not remint KEEP plates):
   https://flow.google.com/u/1/project/95929b6f-ae75-40be-af91-05699c481557
 
-Account: benoats@googlemail.com. Do not switch. Do not use benoats86.
+Account: the studio Ultra account. Do not switch. Do not use benoats86.
 Veo 3.1 Quality · 8s · 16:9 · scenery-only (no Explorer, no helix, no Orbit).
 
 If Flow session expired / signed out / unusual activity: STOP. No charge-loop.
@@ -27,6 +27,27 @@ import time
 from datetime import datetime, timezone
 from pathlib import Path
 
+def _require_studio_flow_account() -> str:
+    import os as _os
+    val = _os.environ.get("STUDIO_FLOW_ACCOUNT", "").strip()
+    if not val:
+        raise SystemExit("STOP: missing required setting STUDIO_FLOW_ACCOUNT (set STUDIO_FLOW_ACCOUNT outside the repo)")
+    return val
+
+
+def _studio_flow_account_variants(addr: str) -> tuple[str, ...]:
+    low = addr.strip().lower()
+    local, sep, dom = low.partition("@")
+    if sep and dom in ("gmail.com", "googlemail.com"):
+        return (f"{local}@googlemail.com", f"{local}@gmail.com")
+    return (low,)
+
+
+def _forbidden_studio_flow_account() -> str:
+    import os as _os
+    return _os.environ.get("STUDIO_FLOW_FORBIDDEN_ACCOUNT", "").strip() or "__unset_forbidden_account__"
+
+
 REPO = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(REPO / "04_Audio" / "tools"))
 
@@ -36,8 +57,8 @@ import orbit_gemini_veo as veo  # noqa: E402
 PROJECT_URL = (
     "https://flow.google.com/u/1/project/95929b6f-ae75-40be-af91-05699c481557"
 )
-ACCOUNT = "benoats@googlemail.com"
-FORBIDDEN_ACCOUNT = "benoats86@gmail.com"
+ACCOUNT = _require_studio_flow_account()
+FORBIDDEN_ACCOUNT = _forbidden_studio_flow_account()
 MODEL = "Veo 3.1 - Quality"
 CLIP_DIR = (
     REPO
@@ -376,7 +397,7 @@ def main() -> None:
     ap.add_argument(
         "--cdp",
         default=os.environ.get("HOS_003_FLOW_CDP", ""),
-        help="Attach live Chrome Default (benoats@googlemail.com) via CDP",
+        help="Attach live Chrome Default (the studio Ultra account) via CDP",
     )
     args = ap.parse_args()
 

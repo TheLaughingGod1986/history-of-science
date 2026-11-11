@@ -4,7 +4,7 @@
 Ben go-ahead 27 Sep 13:11. One plate at a time until first KEEP, then batch.
 Quality for glow (atom / tube / targets); Fast for low-risk garnish.
 No Explorer. Strip Veo audio. No Omni / Seedance / Ken Burns.
-Account: benoats@googlemail.com Ultra via ORBIT_FLOW_PROFILE (HOS).
+Account: the studio Ultra account Ultra via ORBIT_FLOW_PROFILE (HOS).
 """
 from __future__ import annotations
 
@@ -18,6 +18,27 @@ import sys
 import time
 from datetime import datetime, timezone
 from pathlib import Path
+
+def _require_studio_flow_account() -> str:
+    import os as _os
+    val = _os.environ.get("STUDIO_FLOW_ACCOUNT", "").strip()
+    if not val:
+        raise SystemExit("STOP: missing required setting STUDIO_FLOW_ACCOUNT (set STUDIO_FLOW_ACCOUNT outside the repo)")
+    return val
+
+
+def _studio_flow_account_variants(addr: str) -> tuple[str, ...]:
+    low = addr.strip().lower()
+    local, sep, dom = low.partition("@")
+    if sep and dom in ("gmail.com", "googlemail.com"):
+        return (f"{local}@googlemail.com", f"{local}@gmail.com")
+    return (low,)
+
+
+def _forbidden_studio_flow_account() -> str:
+    import os as _os
+    return _os.environ.get("STUDIO_FLOW_FORBIDDEN_ACCOUNT", "").strip() or "__unset_forbidden_account__"
+
 
 REPO = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(REPO / "04_Audio" / "tools"))
@@ -37,7 +58,7 @@ PROFILE = Path(
         str(Path.home() / ".playwright-hos-flow-profile"),
     )
 )
-ACCOUNT = "benoats@googlemail.com"
+ACCOUNT = _require_studio_flow_account()
 
 # Glow / emissive → Quality. Everything else Fast (low-risk garnish).
 QUALITY_IDS = {

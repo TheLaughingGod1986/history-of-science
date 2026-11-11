@@ -13,6 +13,27 @@ from __future__ import annotations
 import faulthandler
 import signal
 
+def _require_studio_flow_account() -> str:
+    import os as _os
+    val = _os.environ.get("STUDIO_FLOW_ACCOUNT", "").strip()
+    if not val:
+        raise SystemExit("STOP: missing required setting STUDIO_FLOW_ACCOUNT (set STUDIO_FLOW_ACCOUNT outside the repo)")
+    return val
+
+
+def _studio_flow_account_variants(addr: str) -> tuple[str, ...]:
+    low = addr.strip().lower()
+    local, sep, dom = low.partition("@")
+    if sep and dom in ("gmail.com", "googlemail.com"):
+        return (f"{local}@googlemail.com", f"{local}@gmail.com")
+    return (low,)
+
+
+def _forbidden_studio_flow_account() -> str:
+    import os as _os
+    return _os.environ.get("STUDIO_FLOW_FORBIDDEN_ACCOUNT", "").strip() or "__unset_forbidden_account__"
+
+
 faulthandler.enable()
 signal.signal(signal.SIGPIPE, signal.SIG_IGN)
 signal.signal(signal.SIGHUP, signal.SIG_IGN)
@@ -209,7 +230,7 @@ def main() -> None:
 
     profile = flow.profile_path(PROFILE)
     print(f"Flow Part 02 mint profile={profile} plates={len(plates)}", flush=True)
-    os.environ.setdefault("ORBIT_FLOW_ACCOUNT", "benoats@googlemail.com")
+    os.environ.setdefault("ORBIT_FLOW_ACCOUNT", _require_studio_flow_account())
     os.environ.setdefault("ORBIT_FLOW_FORCE_NEW_PROJECT", "0")
     os.environ.setdefault("ORBIT_FLOW_HOME", "https://flow.google.com/u/1/")
     if os.environ.get("HOS_FLOW_PROJECT_URL"):

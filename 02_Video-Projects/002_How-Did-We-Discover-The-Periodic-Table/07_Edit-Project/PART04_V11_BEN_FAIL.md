@@ -2,7 +2,7 @@
 
 **Scope:** remint blank-card / fire-lamp / no-glasses plates → assemble `hos_002_part04_rough_v11.mp4`.  
 **Parent FAIL:** `hos_002_part04_rough_v10.mp4` sha `eab7f8ec4d01ae21352e882dd50f8b45bab13d6305c2ac21f6fb73682e47ec8f` (Ben override 8 Sep).  
-**Flow:** `benoats@googlemail.com` on `/u/1/` · Veo 3.1 Fast I2V.  
+**Flow:** `the studio Ultra account` on `/u/1/` · Veo 3.1 Fast I2V.  
 **Do not declare PASS.** Scores → CoS UAT. Do not ping Ben.
 
 ## Ben blockers cleared (agent visual QA — not PASS)

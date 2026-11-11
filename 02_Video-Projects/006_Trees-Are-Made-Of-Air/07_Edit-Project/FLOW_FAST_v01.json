@@ -2,7 +2,7 @@
   "film": "006_Trees-Are-Made-Of-Air",
   "task": "Claude desk PR #180 comment 5951520953",
   "model": "Veo 3.1 - Fast",
-  "account": "benoats@googlemail.com",
+  "account": "the studio Ultra account",
   "takes": [
     {
       "part": "01",
@@ -25,7 +25,7 @@
         "hits": [
           62
         ],
-        "account_seen": "benoats@googlemail.com",
+        "account_seen": "the studio Ultra account",
         "screenshot": "flow_credits_flowfast_09_vilvoorde_t1_before.png",
         "at": "2026-10-02T12:24:55+00:00"
       },
@@ -42,7 +42,7 @@
         "hits": [
           52
         ],
-        "account_seen": "benoats@googlemail.com",
+        "account_seen": "the studio Ultra account",
         "screenshot": "flow_credits_flowfast_09_vilvoorde_t1_after_reread.png",
         "at": "2026-10-02T12:26:53+00:00"
       },

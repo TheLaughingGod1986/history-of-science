@@ -16,6 +16,27 @@ from pathlib import Path
 
 from playwright.sync_api import sync_playwright
 
+def _require_studio_flow_account() -> str:
+    import os as _os
+    val = _os.environ.get("STUDIO_FLOW_ACCOUNT", "").strip()
+    if not val:
+        raise SystemExit("STOP: missing required setting STUDIO_FLOW_ACCOUNT (set STUDIO_FLOW_ACCOUNT outside the repo)")
+    return val
+
+
+def _studio_flow_account_variants(addr: str) -> tuple[str, ...]:
+    low = addr.strip().lower()
+    local, sep, dom = low.partition("@")
+    if sep and dom in ("gmail.com", "googlemail.com"):
+        return (f"{local}@googlemail.com", f"{local}@gmail.com")
+    return (low,)
+
+
+def _forbidden_studio_flow_account() -> str:
+    import os as _os
+    return _os.environ.get("STUDIO_FLOW_FORBIDDEN_ACCOUNT", "").strip() or "__unset_forbidden_account__"
+
+
 REPO = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(REPO / "04_Audio" / "tools"))
 import orbit_flow_veo_ui as flow
@@ -32,7 +53,7 @@ TRY10B = REF / "09b_risk_hold_start_v20_try10B_nocup_opaque_glow.jpg"
 FORBIDDEN_FLAT = "2a651abc673e719af8f6647f264da28a45d41950473489193c72f9a0c4481182"
 OUT = PROJ / "07_Edit-Project/_qa_part04_v20_flow/submit_09b_risk_hold_try10D.json"
 MODEL = os.environ.get("ORBIT_FLOW_VEO_MODEL") or "Veo 3.1 - Fast"
-REQUIRED_EMAIL = "benoats@googlemail.com"
+REQUIRED_EMAIL = _require_studio_flow_account()
 
 _mint = (Path(__file__).resolve().parent / "_mint_part04_flow_v20.py").read_text()
 _m = re.search(r"(STYLE = [\s\S]*?PROMPTS = \{[\s\S]*?\n\})\n\n\ndef ", _mint)

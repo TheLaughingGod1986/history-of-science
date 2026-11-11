@@ -9,9 +9,9 @@
     "@OpptiAI"
   ],
   "hos002": "untouched (bc-7f53df3e)",
-  "note": "All Google accounts on Mac mini show Signed out (benoats@googlemail.com, michelle..., benoats86...). computerUse unavailable (model usage). TYPE PASS files verified on disk. Zero new Shorts uploaded. Zero old ids privated.",
+  "note": "All Google accounts on Mac mini show Signed out (the studio Ultra account, michelle..., benoats86...). computerUse unavailable (model usage). TYPE PASS files verified on disk. Zero new Shorts uploaded. Zero old ids privated.",
   "nowLondon": "2026-09-05T12:54:31.670495+01:00",
-  "resume": "Sign into Google as benoats@googlemail.com on Mac mini Chrome, open HOS Studio, launch CDP Chrome on hos profile, then run _remint_germs_shorts_type_classic_v01.py",
+  "resume": "Sign into Google as the studio Ultra account on Mac mini Chrome, open HOS Studio, launch CDP Chrome on hos profile, then run _remint_germs_shorts_type_classic_v01.py",
   "jobs": [
     {
       "slot": "s01",

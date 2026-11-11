@@ -24,7 +24,7 @@
 
 ## Remint / method trail
 
-1. Flow account **`benoats@googlemail.com`** (Ultra `/u/1/`).
+1. Flow account **`the studio Ultra account`** (Ultra `/u/1/`).
 2. **T2V Veo 3.1 Fast** for `02b_cards_sixty_three` (Create OK → gallery network mp4 harvest OK).
 3. Project: `https://flow.google.com/u/1/project/d18a4055-ceb3-4eee-b70f-3805eb6f6da0`
 4. **No hard fills / brown panels / flat sky rectangles** used in v05 heal path.
@@ -60,7 +60,7 @@
 | explorer_picture | 45.30–53.20 s |
 | plate09_picture | 90.60–98.50 s |
 | plate09b_picture | 98.15–106.05 s |
-| Flow | `benoats@googlemail.com` |
+| Flow | `the studio Ultra account` |
 | P03 untouched | `30060612a00d628998008c9946b8e25319b56f3b9e5613b537c5d2be989bbe4e` |
 | HOS UAT | `~/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/hos_002_part04_rough_v05.mp4` |
 | watch | `WATCH_part04_v05.txt` |

@@ -29,6 +29,27 @@ import time
 from datetime import datetime, timezone
 from pathlib import Path
 
+def _require_studio_flow_account() -> str:
+    import os as _os
+    val = _os.environ.get("STUDIO_FLOW_ACCOUNT", "").strip()
+    if not val:
+        raise SystemExit("STOP: missing required setting STUDIO_FLOW_ACCOUNT (set STUDIO_FLOW_ACCOUNT outside the repo)")
+    return val
+
+
+def _studio_flow_account_variants(addr: str) -> tuple[str, ...]:
+    low = addr.strip().lower()
+    local, sep, dom = low.partition("@")
+    if sep and dom in ("gmail.com", "googlemail.com"):
+        return (f"{local}@googlemail.com", f"{local}@gmail.com")
+    return (low,)
+
+
+def _forbidden_studio_flow_account() -> str:
+    import os as _os
+    return _os.environ.get("STUDIO_FLOW_FORBIDDEN_ACCOUNT", "").strip() or "__unset_forbidden_account__"
+
+
 REPO = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(REPO / "04_Audio" / "tools"))
 
@@ -41,8 +62,8 @@ MEDIA = Path(
     )
 )
 CDP = os.environ.get("ORBIT_FLOW_CDP", "http://127.0.0.1:9222")
-REQUIRED = "benoats@googlemail.com"
-FORBIDDEN = "benoats86@gmail.com"
+REQUIRED = _require_studio_flow_account()
+FORBIDDEN = _forbidden_studio_flow_account()
 COST = {"Fast": 10, "Quality": 100}
 FLOOR = 0
 
@@ -73,7 +94,7 @@ EXPLORER = (
     "teal long coat, tan vest, brown bow tie, satchel. Acts then leaves."
 )
 CREDIT_RE = re.compile(r"([\d,]{1,7})\s*(?:Google\s+Flow\s+)?credits", re.I)
-EMAIL_RE = re.compile(r"[A-Za-z0-9._%+-]+@(?:gmail|googlemail)\.com", re.I)
+EMAIL_RE = re.compile(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}", re.I)
 UNPAID_RE = re.compile(
     r"unpaid|payment (failed|error)|add a payment|update (your )?payment|"
     r"purchase failed|insufficient credits|not enough credits|"
@@ -138,6 +159,7 @@ def body_text(page) -> str:
 
 
 def read_account(page) -> tuple[int | None, str | None]:
+    req = _require_studio_flow_account().lower()
     def scan() -> tuple[int | None, set[str]]:
         text = body_text(page)
         try:
@@ -150,7 +172,7 @@ def read_account(page) -> tuple[int | None, str | None]:
         return (max(hits) if hits else None), {e.lower() for e in EMAIL_RE.findall(text)}
 
     credits, emails = scan()
-    if credits is None or REQUIRED not in emails:
+    if credits is None or req not in emails:
         for sel in ('[aria-label*="Account details" i]', '[aria-label*="Google Account" i]',
                     'button:has-text("ULTRA")', "text=ULTRA"):
             try:
@@ -168,7 +190,7 @@ def read_account(page) -> tuple[int | None, str | None]:
             page.keyboard.press("Escape")
         except Exception:
             pass
-    account = REQUIRED if REQUIRED in emails else (sorted(emails)[0] if emails else None)
+    account = req if req in emails else (sorted(emails)[0] if emails else None)
     return credits, account
 
 

@@ -15,6 +15,11 @@ SCRIPT = ROOT / "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/
 TRANCHE1 = ROOT / "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/_mint_flow_v04_tranche1.py"
 EDIT = ROOT / "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project"
 
+TEST_STUDIO_ACCOUNT = "studio-ultra@example.com"
+TEST_FORBIDDEN_ACCOUNT = "wrong-channel@example.com"
+os.environ.setdefault("STUDIO_FLOW_ACCOUNT", TEST_STUDIO_ACCOUNT)
+os.environ.setdefault("STUDIO_FLOW_FORBIDDEN_ACCOUNT", TEST_FORBIDDEN_ACCOUNT)
+
 
 def load_runner():
     spec = importlib.util.spec_from_file_location("hos009_tranche2_runner", SCRIPT)
@@ -121,13 +126,19 @@ class GuardTests(unittest.TestCase):
             RUNNER.accept_price(price(line="Generating will use 100 credits, maybe"))
 
     def test_account_must_be_fresh_hos_ultra(self):
+        from unittest.mock import patch
         now = datetime.now(timezone.utc)
-        RUNNER.accept_account(RUNNER.REQUIRED_ACCOUNT, now.isoformat(), now=now)
+        RUNNER.accept_account(TEST_STUDIO_ACCOUNT, now.isoformat(), now=now)
         with self.assertRaises(RUNNER.GuardError):
-            RUNNER.accept_account(RUNNER.FORBIDDEN_ACCOUNT, now.isoformat(), now=now)
+            RUNNER.accept_account(TEST_FORBIDDEN_ACCOUNT, now.isoformat(), now=now)
         stale = (now - timedelta(hours=2)).isoformat()
         with self.assertRaises(RUNNER.GuardError):
-            RUNNER.accept_account(RUNNER.REQUIRED_ACCOUNT, stale, now=now)
+            RUNNER.accept_account(TEST_STUDIO_ACCOUNT, stale, now=now)
+        with patch.dict(os.environ, {RUNNER.ACCOUNT_ENV: ""}, clear=False):
+            with self.assertRaisesRegex(RUNNER.GuardError, RUNNER.ACCOUNT_ENV):
+                RUNNER.accept_account(TEST_STUDIO_ACCOUNT, now.isoformat(), now=now)
+            with self.assertRaisesRegex(RUNNER.GuardError, RUNNER.ACCOUNT_ENV):
+                RUNNER.required_account()
 
     def test_headroom_reserves_remaining_cap(self):
         self.assertEqual(RUNNER.headroom(15430, 0, 0, 0), 9430)
@@ -188,7 +199,7 @@ class ExecuteAndProcessTests(unittest.TestCase):
             (root / "archive").mkdir()
             written = RUNNER.execute_batch(
                 parents, media=media, ledger_path=root / "ledger.jsonl", lock_path=root / "writer.lock",
-                live=15430, other=0, price=price(), account=RUNNER.REQUIRED_ACCOUNT,
+                live=15430, other=0, price=price(), account=TEST_STUDIO_ACCOUNT,
                 read_at=now.isoformat(), now=now, submitter=submitter,
                 archive_dir=root / "archive", receipt_path=root / "receipt.json", test_archive=True,
             )
@@ -221,7 +232,7 @@ class ExecuteAndProcessTests(unittest.TestCase):
             with self.assertRaises(RUNNER.GuardError):
                 RUNNER.execute_batch(
                     rows[:1], media=root / "media", ledger_path=ledger, lock_path=root / "writer.lock",
-                    live=15430, other=0, price=price(), account=RUNNER.REQUIRED_ACCOUNT,
+                    live=15430, other=0, price=price(), account=TEST_STUDIO_ACCOUNT,
                     read_at=now.isoformat(), now=now, submitter=lambda *args: calls.append(args),
                 )
             self.assertEqual(calls, [])
@@ -235,7 +246,7 @@ class ExecuteAndProcessTests(unittest.TestCase):
                 RUNNER.execute_batch(
                     rows[:2], media=root / "media", ledger_path=root / "ledger.jsonl",
                     lock_path=root / "writer.lock", live=8999, other=0, price=price(),
-                    account=RUNNER.REQUIRED_ACCOUNT, read_at=now.isoformat(), now=now,
+                    account=TEST_STUDIO_ACCOUNT, read_at=now.isoformat(), now=now,
                     submitter=lambda *args: (_ for _ in ()).throw(AssertionError("submitted")),
                 )
 
@@ -971,7 +982,7 @@ class FlowPageTests(unittest.TestCase):
 class LiveCreateAdapterTests(unittest.TestCase):
     def evidence(self):
         return dict(host=RUNNER.FLOW_HOST, models=[RUNNER.REQUIRED_MODEL], outputs=['x1'],
-                    aspects=['16:9'], durations=['8s'], accounts=[RUNNER.REQUIRED_ACCOUNT],
+                    aspects=['16:9'], durations=['8s'], accounts=[TEST_STUDIO_ACCOUNT],
                     prices=['Generating will use 100 credits'], balances=[10000],
                     ultra=True, create_count=1)
 
@@ -1001,7 +1012,7 @@ class LiveCreateAdapterTests(unittest.TestCase):
 
     def test_rejects_each_drift_without_create_or_intent(self):
         for field, value in dict(host='example.com', models=['Veo 3.1 - Fast'], outputs=['x2'],
-                                 aspects=['9:16'], durations=['4s'], accounts=[RUNNER.FORBIDDEN_ACCOUNT],
+                                 aspects=['9:16'], durations=['4s'], accounts=[TEST_FORBIDDEN_ACCOUNT],
                                  prices=['Generating will use 200 credits'], balances=[],
                                  ultra=False, create_count=2).items():
             with self.subTest(field=field), tempfile.TemporaryDirectory() as tmp:
@@ -1109,7 +1120,7 @@ process.stdout.write(JSON.stringify({evidence,outcome,domClicks}));
 """
         for drift, menu, obstructed in [(False,False,False),(True,False,False),(False,True,False),(False,False,True)]:
             result = subprocess.run(['node','-e',harness], input=json.dumps(dict(
-                js=RUNNER.CREATE_EVIDENCE_JS, account=RUNNER.REQUIRED_ACCOUNT,
+                js=RUNNER.CREATE_EVIDENCE_JS, account=TEST_STUDIO_ACCOUNT,
                 drift=drift, menuOnly=menu, obstructed=obstructed)), text=True, capture_output=True, check=True)
             data=json.loads(result.stdout)
             self.assertEqual(data['evidence'], self.evidence())
@@ -1124,13 +1135,13 @@ process.stdout.write(JSON.stringify({evidence,outcome,domClicks}));
 
     def still_evidence(self):
         return dict(host=RUNNER.FLOW_HOST, models=[RUNNER.REQUIRED_STILL_MODEL], outputs=['x1'],
-                    aspects=['16:9'], accounts=[RUNNER.REQUIRED_ACCOUNT],
+                    aspects=['16:9'], accounts=[TEST_STUDIO_ACCOUNT],
                     prices=['Generating will use 0 credits'], balances=[10000],
                     ultra=True, create_count=1)
 
     def test_still_guard_rejects_nonzero_price_drift_and_low_headroom(self):
         for field, value in dict(host='example.com', models=['Veo 3.1 - Fast'], outputs=['x2'],
-                                 aspects=['9:16'], accounts=[RUNNER.FORBIDDEN_ACCOUNT],
+                                 aspects=['9:16'], accounts=[TEST_FORBIDDEN_ACCOUNT],
                                  prices=['Generating will use 10 credits'], balances=[8900],
                                  ultra=False, create_count=2).items():
             with self.subTest(field=field), tempfile.TemporaryDirectory() as tmp:
@@ -1174,7 +1185,7 @@ process.stdout.write(JSON.stringify({evidence,outcome,domClicks}));
             result = subprocess.run(
                 ['node', '-e', harness],
                 input=json.dumps(dict(js=RUNNER.STILL_EVIDENCE_JS, model=RUNNER.REQUIRED_STILL_MODEL,
-                                      account=RUNNER.REQUIRED_ACCOUNT, drift=drift, obstructed=obstructed)),
+                                      account=TEST_STUDIO_ACCOUNT, drift=drift, obstructed=obstructed)),
                 text=True, capture_output=True, check=True,
             )
             data = json.loads(result.stdout)
@@ -1249,7 +1260,7 @@ process.stdout.write(JSON.stringify({ result, clicks }));
     @classmethod
     def setUpClass(cls):
         raw = cls.CAPTURE_PATH.read_text().replace(
-            "<REQUIRED_HOS_ULTRA_ACCOUNT>", RUNNER.REQUIRED_ACCOUNT
+            "<REQUIRED_HOS_ULTRA_ACCOUNT>", TEST_STUDIO_ACCOUNT
         )
         cls.capture = json.loads(raw)
 
@@ -1263,7 +1274,7 @@ process.stdout.write(JSON.stringify({ result, clicks }));
         if not has_account:
             full_controls.append({
                 "role": None,
-                "ariaLabel": f"Account details: Benjamin Oats ({RUNNER.REQUIRED_ACCOUNT})",
+                "ariaLabel": f"Account details: Benjamin Oats ({TEST_STUDIO_ACCOUNT})",
                 "disabled": False,
                 "text": "",
             })
@@ -1287,7 +1298,7 @@ process.stdout.write(JSON.stringify({ result, clicks }));
     def legacy_fixture() -> dict:
         account_ctrl = {
             "role": "button",
-            "ariaLabel": f"Google Account: Benjamin Oats ({RUNNER.REQUIRED_ACCOUNT})",
+            "ariaLabel": f"Google Account: Benjamin Oats ({TEST_STUDIO_ACCOUNT})",
             "disabled": False,
             "text": "",
         }
@@ -1324,7 +1335,7 @@ process.stdout.write(JSON.stringify({ result, clicks }));
         account_controls = [
             {
                 "role": None,
-                "ariaLabel": f"Account details: Benjamin Oats ({RUNNER.REQUIRED_ACCOUNT})",
+                "ariaLabel": f"Account details: Benjamin Oats ({TEST_STUDIO_ACCOUNT})",
                 "disabled": False,
                 "text": "",
             }
@@ -1337,7 +1348,7 @@ process.stdout.write(JSON.stringify({ result, clicks }));
         )
         self.assertEqual(clicks, 0)
         self.assertEqual(ev_10nov["balances"], [14890])
-        self.assertEqual(ev_10nov["accounts"], [RUNNER.REQUIRED_ACCOUNT])
+        self.assertEqual(ev_10nov["accounts"], [TEST_STUDIO_ACCOUNT])
         self.assertTrue(ev_10nov["ultra"])
 
         class BalancePage:

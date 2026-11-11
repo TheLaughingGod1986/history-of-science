@@ -129,7 +129,7 @@ iCloud: `HOS UAT/004_Whats-Really-Inside-An-Atom/09_Final-Export/hos_004_part04_
 | Image 2 — helmeted blue-suit little man + fake wall tiles | `09_uncuttable_blur` | 36.091 |
 | Image 3 — coin/knife + ATOM on table (open) | `01_coin_halves` (+ spine `15_knife_coin_return` @ 63.853) | 0.000 |
 
-**Remints (Flow Ultra CDP `benoats@googlemail.com`, scenery_only, strip Veo audio):**
+**Remints (Flow Ultra CDP `the studio Ultra account`, scenery_only, strip Veo audio):**
 
 | Plate | Tries | Model | Change |
 |---|---|---|---|
@@ -152,7 +152,7 @@ Problem: tube glow had an S-shaped wiggle. Real X-ray/cathode beams run straight
 | Plate | `12_1913_targets` @ 52.748 s |
 | Tries | **1 KEEP** (Quality) |
 | Credits | before **2602** → after **2502** (spent **100**) |
-| Account | `benoats@googlemail.com` Flow Ultra CDP |
+| Account | `the studio Ultra account` Flow Ultra CDP |
 | Keep | brass+glass apparatus, targets on bench, no person in beam, no ATOMOS; prompt locks **straight beam, no curls, no wiggle, no squiggle** |
 | v05 sha256 | `71d7c70798c77ce2ecb02c37ad043fd98117a2209a84899236337fee8b952add` |
 | Log | `PART01_MINT_LOG_v01.json` · `ben_fix_12_straight_2026_09_27` |
