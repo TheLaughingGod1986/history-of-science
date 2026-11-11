@@ -1209,5 +1209,236 @@ process.stdout.write(JSON.stringify({ ev, out, domClicks }));
 
 
 
+class PolicyRefusalTests(unittest.TestCase):
+    """A take Flow refuses under its content policy costs nothing, and pass 1 goes on without the row.
+
+    Chief ruling, desk 6785808071 item 4: 013 gets the same handling as 009 before its first submit.
+    Pass 1 allows one take per row, so a refused row is set aside for the picture review.
+    """
+
+    EVIDENCE = {"desk": "HOS #180 6785808071", "balance_before": 13490, "balance_live": 13490, "outputs": 0}
+
+    @classmethod
+    def setUpClass(cls):
+        cls.rows = RUNNER.load_scope(ROOT)
+        cls.batch1 = RUNNER.batch_rows(cls.rows)[0]
+        cls.first = cls.batch1[0]
+        cls.key = f"{RUNNER.FILM_ID}:P{cls.first.part:02d}:{cls.first.plate_id}:t1"
+
+    def refused_state(self, root: Path) -> tuple[Path, Path]:
+        """A pass ledger and a shared ledger in which the first row's take was clicked and then refused."""
+        ledger, state = root / "ledger.jsonl", root / "shared"
+        waiting = RUNNER.submitting_record(self.first, 1, root / "media" / "t1.mp4")
+        waiting["shared_charge"] = self.key
+        RUNNER.append_ledger(ledger, waiting)
+        with RUNNER.SharedFlowAccounting(state) as account:
+            account.reserve(RUNNER.DEFAULT_RESERVATION, RUNNER.FILM_ID, RUNNER.MAX_TOTAL_CREDITS, live=14890)
+            account.intent(self.key, RUNNER.DEFAULT_RESERVATION, self.first.try1_credits, live=14890)
+            account.resolve(self.key, submitted=True, evidence={"ui": {"balances": [14890]}})
+        return ledger, state
+
+    def reconcile(self, root: Path, ledger: Path, state: Path, **over):
+        args = dict(accounting_state=state, ledger_path=ledger, lock_path=root / "writer.lock", key=self.key,
+                    plate_id=self.first.plate_id, part=self.first.part, take=1,
+                    reason="Flow policy: prominent people", evidence=self.EVIDENCE)
+        args.update(over)
+        return RUNNER.reconcile_policy_refusal(**args)
+
+    def test_a_refused_take_costs_nothing_and_uses_the_rows_one_take(self):
+        waiting = RUNNER.submitting_record(self.first, 1, Path("x.mp4"))
+        closed = RUNNER.policy_refusal_record(self.first.row_id, self.first.plate_id, self.first.part, 1,
+                                              reason="Flow policy: prominent people", evidence=self.EVIDENCE)
+        spent, pending, unknown, takes = RUNNER.ledger_totals([waiting, closed])
+        self.assertEqual((spent, pending, unknown), (0, 0, False))
+        self.assertEqual(takes[self.first.row_id], RUNNER.MAX_TAKES_PER_ROW)
+        for bad in ({"credits_used": 100}, {"credits_used": None}, {"credits_used": False}, {"reason": " "}):
+            with self.subTest(bad=bad), self.assertRaises(RUNNER.GuardError):
+                RUNNER.ledger_totals([{**closed, **bad}])
+        with self.assertRaises(RUNNER.GuardError):
+            RUNNER.policy_refusal_record(self.first.row_id, self.first.plate_id, self.first.part, 1,
+                                         reason="", evidence=self.EVIDENCE)
+
+    def test_reconcile_closes_both_ledgers_once(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            ledger, state = self.refused_state(root)
+            before = ((state / "account.jsonl").read_bytes(), ledger.read_bytes())
+            self.assertEqual(self.reconcile(root, ledger, state),
+                             {"shared_appended": True, "pass_appended": True, "refused_rows": [self.first.row_id]})
+            once = ((state / "account.jsonl").read_bytes(), ledger.read_bytes())
+            self.assertEqual(self.reconcile(root, ledger, state),
+                             {"shared_appended": False, "pass_appended": False, "refused_rows": [self.first.row_id]})
+            self.assertEqual(((state / "account.jsonl").read_bytes(), ledger.read_bytes()), once)
+            # History is added to, never written over.
+            self.assertTrue(once[0].startswith(before[0]))
+            self.assertTrue(once[1].startswith(before[1]))
+            entries = RUNNER.read_ledger(ledger)
+            self.assertEqual([e["status"] for e in entries], ["SUBMITTING", "FAILED_POLICY"])
+            self.assertEqual(entries[-1]["shared_charge"], self.key)
+            self.assertEqual(RUNNER.ledger_totals(entries)[:3], (0, 0, False))
+            snap = RUNNER.SharedFlowAccounting.peek_readonly(state)
+            self.assertEqual((snap["charges"][self.key]["status"], snap["charges"][self.key]["amount"]),
+                             ("POLICY_REFUSED", 0))
+            self.assertFalse(snap["pending"])
+
+    def test_reconcile_refuses_the_wrong_take_or_key(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            ledger, state = self.refused_state(root)
+            before = ((state / "account.jsonl").read_bytes(), ledger.read_bytes())
+            second = self.batch1[1]
+            for over in ({"key": self.key.replace(":t1", ":t2")},                       # not this take's charge
+                         {"plate_id": second.plate_id, "part": second.part},            # another row
+                         {"take": 2},
+                         {"evidence": {}}):
+                with self.subTest(over=over), self.assertRaises(RUNNER.GuardError):
+                    self.reconcile(root, ledger, state, **over)
+            self.assertEqual(((state / "account.jsonl").read_bytes(), ledger.read_bytes()), before)
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            ledger, state = self.refused_state(root)
+            delivered = RUNNER.submitting_record(self.first, 1, root / "x.mp4")
+            delivered.update(status="PENDING_REVIEW", file_state="GENERATED", credits_used=self.first.try1_credits)
+            RUNNER.append_ledger(ledger, delivered)
+            with self.assertRaises(RUNNER.GuardError):
+                self.reconcile(root, ledger, state)                                      # a delivered take
+            snap = RUNNER.SharedFlowAccounting.peek_readonly(state)
+            self.assertEqual(snap["charges"][self.key]["status"], "CHARGED")
+
+    def test_a_refused_take_number_is_never_used_again(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            media = Path(tmp)
+            entries = [RUNNER.submitting_record(self.first, 1, media / "x.mp4")]
+            self.assertEqual(RUNNER.takes_recorded(entries, self.first.row_id), {1})
+            self.assertEqual(RUNNER.takes_recorded(entries, self.batch1[1].row_id), set())
+            # Going by files alone the row would be numbered take 1 again; the ledger says it is used.
+            self.assertEqual(RUNNER.next_version(media, self.first.part, self.first.plate_id)[0], 1)
+            with self.assertRaises(RUNNER.GuardError):
+                RUNNER.next_version(media, self.first.part, self.first.plate_id, {1})
+
+    def test_next_batch_sets_a_refused_row_aside_and_goes_on(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            ledger, state = self.refused_state(root)
+            ordered = RUNNER.order_rows(self.rows)
+            # Until it is reconciled the row is still first in line (and the batch guard stops on it).
+            self.assertEqual(RUNNER.next_batch(self.rows, RUNNER.read_ledger(ledger))[0].row_id, self.first.row_id)
+            self.reconcile(root, ledger, state)
+            entries = RUNNER.read_ledger(ledger)
+            self.assertEqual(RUNNER.refused_rows(entries), [self.first.row_id])
+            batch = RUNNER.next_batch(self.rows, entries)
+            self.assertNotIn(self.first.row_id, [r.row_id for r in batch])
+            self.assertEqual(batch[0].row_id, ordered[1].row_id)
+            RUNNER.assert_batch_limits(batch)
+
+    def test_the_batch_after_a_refusal_runs_and_leaves_the_refused_row_alone(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            media, archive = root / "media", root / "archive"
+            archive.mkdir()
+            populate_media_style_refs(media)
+            sample_mp4 = make_silent_mp4(root / "fixture.mp4")
+            ledger, state = self.refused_state(root)
+            self.reconcile(root, ledger, state)
+            charges = []
+
+            def fake_still_maker(row, dest, *, repo, media, accounting, reservation, evidence_path, other=0, floor=0):
+                make_png(dest, width=1280, height=720, color=f"0x{row.index:02x}4466")
+                RUNNER.immutable_bytes(
+                    evidence_path,
+                    (json.dumps({"row_id": row.row_id, "credits": 0, "ui": {"balances": [14890]}}) + "\n").encode())
+                return dest
+
+            def fake_submitter(row, dest, frame, *, accounting, reservation, charge, evidence_path, other=0, floor=0):
+                charges.append(charge)
+                page = LiveDomAndTrustedClickTests.MockPage(
+                    LiveDomAndTrustedClickTests.video_evidence(quality=row.quality, account=TRANCHE2.REQUIRED_ACCOUNT, balance=14890))
+                accounting.reserve(reservation, RUNNER.FILM_ID, RUNNER.MAX_TOTAL_CREDITS, live=14890, floor=floor + other)
+                ev = RUNNER.guarded_create(page, accounting, row=row, reservation=reservation, charge=charge,
+                                           evidence_path=evidence_path, floor=floor + other)
+                shutil.copy2(sample_mp4, dest)
+                return ev
+
+            with patch.dict(os.environ, {RUNNER.SUBMIT_ENV: "1"}):
+                written = RUNNER.cmd_submit(
+                    ROOT, other=0, media=media, ledger_path=ledger, lock_path=root / "writer.lock",
+                    pid_path=root / "runner.pid", done_path=root / "runner.done", archive_dir=archive,
+                    accounting_state=state, spend_ledger=root / "ai_spend.jsonl",
+                    batch_price_reader=make_batch_prices, submitter=fake_submitter,
+                    still_maker=fake_still_maker, test_archive=True)
+
+            expected = [r.row_id for r in RUNNER.next_batch(self.rows, RUNNER.read_ledger(ledger)[:2])]
+            self.assertEqual([e["row_id"] for e in written], expected)
+            self.assertNotIn(self.first.row_id, expected)
+            self.assertNotIn(self.key, charges)
+            self.assertTrue(all(c.endswith(":t1") for c in charges))
+            latest = {(e["row_id"], e["take"]): e["status"] for e in RUNNER.read_ledger(ledger)}
+            self.assertEqual(latest[(self.first.row_id, 1)], "FAILED_POLICY")        # the refusal still stands
+            self.assertEqual(RUNNER.refused_rows(RUNNER.read_ledger(ledger)), [self.first.row_id])
+            # The refused take is not in the spend report: it was never exported, so nothing is taken back.
+            spends = [json.loads(l) for l in (root / "ai_spend.jsonl").read_text().splitlines()]
+            self.assertEqual(sum(r["amount"] for r in spends if r["kind"] == "spend"),
+                             sum(e["credits_used"] for e in written))
+            self.assertFalse(any(self.key in json.dumps(r) for r in spends))
+
+    def test_the_command_closes_a_refused_take(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            ledger, state = self.refused_state(root)
+            evidence = root / "evidence.json"
+            evidence.write_text(json.dumps(self.EVIDENCE))
+            code = RUNNER.main(["reconcile-policy-refusal", "--key", self.key, "--plate", self.first.plate_id,
+                                "--part", str(self.first.part), "--reason", "Flow policy: prominent people",
+                                "--evidence", str(evidence), "--accounting-state", str(state),
+                                "--ledger", str(ledger), "--lock", str(root / "writer.lock")])
+            self.assertEqual(code, 0)
+            self.assertEqual(RUNNER.read_ledger(ledger)[-1]["status"], "FAILED_POLICY")
+
+
+class NoNameWordingTests(unittest.TestCase):
+    """Chief ruling, desk 6785808071 item 4: no prompt sent to Flow names a real person."""
+
+    RECORD = ROOT / "jobs/reviews/J2529/PROMPT_CHANGE_2026-11-11.json"
+    NAMES = ("Darwin", "Wallace", "Lawson", "Gould", "Lyell", "Hooker", "Murray", "Jenkin", "Mendel", "Charles",
+             "Emma", "Alfred", "Russel", "Nicholas", "Joseph", "Fleeming", "Gregor", "FitzRoy", "Malthus", "Huxley",
+             "Owen", "Henslow")
+
+    @classmethod
+    def setUpClass(cls):
+        cls.rows = RUNNER.load_scope(ROOT)
+        cls.record = json.loads(cls.RECORD.read_text())
+
+    def test_no_prompt_of_the_71_names_a_real_person(self):
+        import re
+        self.assertEqual(len(self.rows), RUNNER.EXPECTED_ROW_COUNT)
+        for row in self.rows:
+            with self.subTest(row=row.row_id):
+                for name in self.NAMES:
+                    self.assertIsNone(re.search(rf"\b{name}\b", row.prompt), name)
+
+    def test_the_record_matches_the_boards_and_only_those_rows_changed(self):
+        prompts = {row.row_id: row.prompt for row in self.rows}
+        self.assertEqual(len(self.record["rows"]), self.record["rows_changed"])
+        self.assertEqual(self.record["rows_total"], RUNNER.EXPECTED_ROW_COUNT)
+        for change in self.record["rows"]:
+            with self.subTest(row=change["row_id"]):
+                self.assertEqual(prompts[change["row_id"]], change["new"])
+                self.assertNotEqual(change["old"], change["new"])
+                # The fixed opening and closing of the prompt are untouched.
+                self.assertEqual(change["old"][:36], change["new"][:36])
+                self.assertEqual(change["old"][-80:], change["new"][-80:])
+        for part, meta in self.record["boards"].items():
+            self.assertEqual(RUNNER.sha256_file(ROOT / meta["path"]), meta["sha256_new"], part)
+
+    def test_the_builder_holds_the_same_wording(self):
+        # The boards are written by the builder. If it kept the old wording, the next rebuild would
+        # bring the names back (and the scope would refuse the boards).
+        source = (EDIT / "_build_picture_plan_v01.py").read_text()
+        for change in self.record["rows"]:
+            with self.subTest(row=change["row_id"]):
+                self.assertIn(json.dumps(change["new"], ensure_ascii=False), source)
+                self.assertNotIn(json.dumps(change["old"], ensure_ascii=False), source)
+
+
 if __name__ == "__main__":
     unittest.main()
