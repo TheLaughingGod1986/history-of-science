@@ -488,7 +488,8 @@
         "duration_s": 6.76,
         "source_in_s": 0,
         "shared_source_duration_s": 13.51,
-        "review_status": "Gemini timing advisory clear; pending Grok sheet decision before splice or KEEP",
+        "review_status": "KEEP by Grok (6802108222); file approved for later splice, splice not authorized",
+        "keep_ref": "https://github.com/TheLaughingGod1986/history-of-science/pull/180#issuecomment-6802108222",
         "splice_authorized": false,
         "labels": "1 SECOND, 1 MINUTE, 5 m, TWO STOREYS HIGH; sequential; candidate timing in J2631_review/MANIFEST.json",
         "approval_ref": "https://github.com/TheLaughingGod1986/history-of-science/pull/180#issuecomment-6801512032"
@@ -557,7 +558,8 @@
         "duration_s": 6.75,
         "source_in_s": 6.76,
         "shared_source_duration_s": 13.51,
-        "review_status": "Gemini timing advisory clear; pending Grok sheet decision before splice or KEEP",
+        "review_status": "KEEP by Grok (6802108222); file approved for later splice, splice not authorized",
+        "keep_ref": "https://github.com/TheLaughingGod1986/history-of-science/pull/180#issuecomment-6802108222",
         "splice_authorized": false,
         "labels": "1 SECOND, 1 MINUTE, 5 m, TWO STOREYS HIGH; sequential; candidate timing in J2631_review/MANIFEST.json",
         "approval_ref": "https://github.com/TheLaughingGod1986/history-of-science/pull/180#issuecomment-6801512032"
