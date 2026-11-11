@@ -698,8 +698,17 @@
           "waiting": "Chief price pass on J2475 v02 (6,600 Flow credits try-1 / 17,094 expected)"
         },
         "edit": {
-          "status": "todo",
-          "due": "2026-12-03"
+          "status": "blocked",
+          "due": "2026-12-03",
+          "owner": "Chief",
+          "underway": false,
+          "waiting": "J2563: resolve sentence-cut/8-second conflict, restore locked WAV, and correct 13 archive URLs (all HTTP 404).",
+          "note": "J2563 preflight only: 35 sentence-boundary flags / 18 word overlaps; no built pictures or timing rough yet. See 07_Edit-Project/J2563_HANDOFF.md.",
+          "steps": [
+            1,
+            3
+          ],
+          "steps_unit": "assembly steps"
         },
         "thumbnails": {
           "status": "todo",

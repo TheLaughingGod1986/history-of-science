@@ -1,0 +1,743 @@
+{
+  "job": "J2563",
+  "plan": "PICTURE_PLAN_v02.json",
+  "method": "Text/timestamp audit only; punctuation is a conservative sentence-boundary proxy. No listening or motion review.",
+  "source_checks": [
+    {
+      "row_id": "P1:09b",
+      "url": "https://commons.wikimedia.org/wiki/File:Ambroise_Par%C3%A9,_Oeuvres,_1585_Wellcome_L0002460.jpg",
+      "checked_utc": "2026-11-11T22:14:27.203536+00:00",
+      "http_status": 404,
+      "error": "HTTP Error 404: Not Found",
+      "licence_verified": false
+    },
+    {
+      "row_id": "P2:04a_arch_davy_1800",
+      "url": "https://commons.wikimedia.org/wiki/File:Researches,_chemical_and_philosophical_-_chiefly_concerning_nitrous_oxide,_or_dephlogisticated_nitrous_air,_and_its_respiration_(IA_b21968393).pdf",
+      "checked_utc": "2026-11-11T22:14:27.203789+00:00",
+      "http_status": 404,
+      "error": "HTTP Error 404: Not Found",
+      "licence_verified": false
+    },
+    {
+      "row_id": "P2:05a_arch_laughing_gas_broadside",
+      "url": "https://commons.wikimedia.org/wiki/File:Gillray_-_Scientific_Researches!_New_Discoveries_in_Pneumaticks!_(1802).jpg",
+      "checked_utc": "2026-11-11T22:14:27.203876+00:00",
+      "http_status": 404,
+      "error": "HTTP Error 404: Not Found",
+      "licence_verified": false
+    },
+    {
+      "row_id": "P2:09b_arch_long_1849",
+      "url": "https://commons.wikimedia.org/wiki/File:An_account_of_the_first_use_of_sulphuric_ether_by_inhalation_as_an_anaesthetic_in_surgical_operations_(IA_101505514.nlm.nih.gov).pdf",
+      "checked_utc": "2026-11-11T22:14:27.203948+00:00",
+      "http_status": 404,
+      "error": "HTTP Error 404: Not Found",
+      "licence_verified": false
+    },
+    {
+      "row_id": "P3:05b",
+      "url": "https://commons.wikimedia.org/wiki/File:Morton%27s_ether_inhaler_Wellcome_M0011571.jpg",
+      "checked_utc": "2026-11-11T22:14:27.338090+00:00",
+      "http_status": 404,
+      "error": "HTTP Error 404: Not Found",
+      "licence_verified": false
+    },
+    {
+      "row_id": "P3:09a_arch_ether_dome_1847",
+      "url": "https://commons.wikimedia.org/wiki/File:Southworth_%26_Hawes_-_Early_Operation_under_Ether,_Massachusetts_General_Hospital.jpg",
+      "checked_utc": "2026-11-11T22:14:27.358136+00:00",
+      "http_status": 404,
+      "error": "HTTP Error 404: Not Found",
+      "licence_verified": false
+    },
+    {
+      "row_id": "P4:03a_arch_letheon_patent",
+      "url": "https://commons.wikimedia.org/wiki/File:US_Patent_4848_Letheon_1846.png",
+      "checked_utc": "2026-11-11T22:14:27.358219+00:00",
+      "http_status": 404,
+      "error": "HTTP Error 404: Not Found",
+      "licence_verified": false
+    },
+    {
+      "row_id": "P4:08b_arch_ether_monument",
+      "url": "https://commons.wikimedia.org/wiki/File:Ether_Monument,_Boston_Public_Garden_-_DSC09052.JPG",
+      "checked_utc": "2026-11-11T22:14:27.358300+00:00",
+      "http_status": 404,
+      "error": "HTTP Error 404: Not Found",
+      "licence_verified": false
+    },
+    {
+      "row_id": "P5:03a_arch_squire_inhaler_1846",
+      "url": "https://commons.wikimedia.org/wiki/File:Squire%27s_ether_inhaler,_1846_Wellcome_M0011572.jpg",
+      "checked_utc": "2026-11-11T22:14:27.413955+00:00",
+      "http_status": 404,
+      "error": "HTTP Error 404: Not Found",
+      "licence_verified": false
+    },
+    {
+      "row_id": "P5:04a",
+      "url": "https://commons.wikimedia.org/wiki/File:First_ether_operation_in_England_by_Robert_Liston_Wellcome_L0011346.jpg",
+      "checked_utc": "2026-11-11T22:14:27.414057+00:00",
+      "http_status": 404,
+      "error": "HTTP Error 404: Not Found",
+      "licence_verified": false
+    },
+    {
+      "row_id": "P5:06a_arch_simpson_1847",
+      "url": "https://commons.wikimedia.org/wiki/File:Account_of_a_new_anaesthetic_agent,_as_a_substitute_for_sulphuric_ether_in_surgery_and_midwifery_(IA_b21459371).pdf",
+      "checked_utc": "2026-11-11T22:14:27.414333+00:00",
+      "http_status": 404,
+      "error": "HTTP Error 404: Not Found",
+      "licence_verified": false
+    },
+    {
+      "row_id": "P5:07a_arch_snow_chloroform_1858",
+      "url": "https://commons.wikimedia.org/wiki/File:On_chloroform_and_other_anaesthetics_-_their_action_and_administration_(IA_b2144219x).pdf",
+      "checked_utc": "2026-11-11T22:14:27.415094+00:00",
+      "http_status": 404,
+      "error": "HTTP Error 404: Not Found",
+      "licence_verified": false
+    },
+    {
+      "row_id": "P5:14a",
+      "url": "https://commons.wikimedia.org/wiki/File:Lister%27s_carbolic_spray_in_use_Wellcome_L0002011.jpg",
+      "checked_utc": "2026-11-11T22:14:27.466608+00:00",
+      "http_status": 404,
+      "error": "HTTP Error 404: Not Found",
+      "licence_verified": false
+    }
+  ],
+  "boundary_flags": [
+    {
+      "next_row": "P1:01b",
+      "cut_s": 3.16,
+      "words_crossed": [],
+      "sentence_crossed": [
+        {
+          "start": 0.06,
+          "end": 5.06,
+          "text": "Before 1846, the best surgeon in the world was simply the fastest one."
+        }
+      ]
+    },
+    {
+      "next_row": "P1:02a",
+      "cut_s": 6.9,
+      "words_crossed": [],
+      "sentence_crossed": [
+        {
+          "start": 6.68,
+          "end": 13.08,
+          "text": "Because the patient was awake for every second of it, and in Europe and America, nobody knew how to stop the pain."
+        }
+      ]
+    },
+    {
+      "next_row": "P1:02b",
+      "cut_s": 10.5,
+      "words_crossed": [
+        {
+          "text": "America,",
+          "start": 10.4,
+          "end": 10.88,
+          "type": "word",
+          "logprob": -0.000313002696714193
+        }
+      ],
+      "sentence_crossed": [
+        {
+          "start": 6.68,
+          "end": 13.08,
+          "text": "Because the patient was awake for every second of it, and in Europe and America, nobody knew how to stop the pain."
+        }
+      ]
+    },
+    {
+      "next_row": "P1:03b",
+      "cut_s": 18.5,
+      "words_crossed": [
+        {
+          "text": "him",
+          "start": 18.46,
+          "end": 18.6,
+          "type": "word",
+          "logprob": 0.0
+        }
+      ],
+      "sentence_crossed": [
+        {
+          "start": 17.38,
+          "end": 22.46,
+          "text": "His students timed him with their pocket watches, and he could take off a leg in just a few minutes."
+        }
+      ]
+    },
+    {
+      "next_row": "P1:04b_cg_stopwatch_scale",
+      "cut_s": 26.5,
+      "words_crossed": [
+        {
+          "text": "1846,",
+          "start": 25.28,
+          "end": 26.54,
+          "type": "word",
+          "logprob": -0.00021286975684091657
+        }
+      ],
+      "sentence_crossed": [
+        {
+          "start": 23.2,
+          "end": 28.2,
+          "text": "Then in one week in the autumn of 1846, all of that changed."
+        }
+      ]
+    },
+    {
+      "next_row": "P1:05a",
+      "cut_s": 30.7,
+      "words_crossed": [],
+      "sentence_crossed": [
+        {
+          "start": 29.32,
+          "end": 35.36,
+          "text": "In Boston, a dentist held a glass globe to a young man's face, and the young man felt nothing at all."
+        }
+      ]
+    },
+    {
+      "next_row": "P1:07b",
+      "cut_s": 53.6,
+      "words_crossed": [],
+      "sentence_crossed": [
+        {
+          "start": 48.28,
+          "end": 58.82,
+          "text": "By the end of this film, you'll know how a party trick, a country doctor, and a room full of doubters turned surgery from a race into something you could sleep through."
+        }
+      ]
+    },
+    {
+      "next_row": "P1:08b",
+      "cut_s": 66.4,
+      "words_crossed": [],
+      "sentence_crossed": [
+        {
+          "start": 64.18,
+          "end": 71.34,
+          "text": "There's no injection, no mask, no sleep, just a strong drink perhaps and a few people to hold you still."
+        }
+      ]
+    },
+    {
+      "next_row": "P1:09c",
+      "cut_s": 82.6,
+      "words_crossed": [],
+      "sentence_crossed": [
+        {
+          "start": 78.66,
+          "end": 86.78,
+          "text": "Surgeons had wished for something better for centuries, and the strange thing is the answer had already been written down nearly fifty years earlier."
+        }
+      ]
+    },
+    {
+      "next_row": "P2:02a",
+      "cut_s": 88.9,
+      "words_crossed": [],
+      "sentence_crossed": [
+        {
+          "start": 87.6,
+          "end": 94.96,
+          "text": "In 1800 in Bristol, a young chemist called Humphry Davy was breathing a gas called nitrous oxide."
+        }
+      ]
+    },
+    {
+      "next_row": "P2:04a_arch_davy_1800",
+      "cut_s": 108.5,
+      "words_crossed": [],
+      "sentence_crossed": [
+        {
+          "start": 104.7,
+          "end": 112.64,
+          "text": "When he had a sore tooth, the gas seemed to take the pain away, so he wrote that it might be useful during surgical operations."
+        }
+      ]
+    },
+    {
+      "next_row": "P2:05b",
+      "cut_s": 127.6,
+      "words_crossed": [],
+      "sentence_crossed": [
+        {
+          "start": 122.12,
+          "end": 130.94,
+          "text": "Traveling showmen let audiences breathe them on stage, and young people held ether frolics where guests staggered around laughing."
+        }
+      ]
+    },
+    {
+      "next_row": "P2:10a",
+      "cut_s": 170.5,
+      "words_crossed": [],
+      "sentence_crossed": [
+        {
+          "start": 169.78,
+          "end": 175.62,
+          "text": "So if a country doctor had already done it quietly, who would be the one to show everyone?"
+        }
+      ]
+    },
+    {
+      "next_row": "P3:02a",
+      "cut_s": 177.8,
+      "words_crossed": [
+        {
+          "text": "Connecticut,",
+          "start": 177.2,
+          "end": 177.88,
+          "type": "word",
+          "logprob": -0.0001472680631119753
+        }
+      ],
+      "sentence_crossed": [
+        {
+          "start": 176.52,
+          "end": 183.76,
+          "text": "In Hartford, Connecticut, a dentist called Horace Wells saw a laughing gas show in December 1844."
+        }
+      ]
+    },
+    {
+      "next_row": "P3:04b",
+      "cut_s": 202.5,
+      "words_crossed": [
+        {
+          "text": "wasn't",
+          "start": 202.46,
+          "end": 202.72,
+          "type": "word",
+          "logprob": -3.6557443081619567e-06
+        }
+      ],
+      "sentence_crossed": [
+        {
+          "start": 201.88,
+          "end": 205.16,
+          "text": "The gas wasn't enough, and the patient said it hurt."
+        }
+      ]
+    },
+    {
+      "next_row": "P3:05b",
+      "cut_s": 216.2,
+      "words_crossed": [],
+      "sentence_crossed": [
+        {
+          "start": 210.9,
+          "end": 218.56,
+          "text": "But Wells' old business partner was in that room, a young dentist called William Morton, and he didn't give up on the idea."
+        }
+      ]
+    },
+    {
+      "next_row": "P3:06a",
+      "cut_s": 223.8,
+      "words_crossed": [
+        {
+          "text": "sixteenth",
+          "start": 223.76,
+          "end": 224.22,
+          "type": "word",
+          "logprob": -0.02011834643781185
+        }
+      ],
+      "sentence_crossed": [
+        {
+          "start": 223.5,
+          "end": 231.6,
+          "text": "On the sixteenth of October, 1846, Morton walked into the same Boston hospital carrying a glass globe."
+        }
+      ]
+    },
+    {
+      "next_row": "P3:06b",
+      "cut_s": 231.2,
+      "words_crossed": [
+        {
+          "text": "globe.",
+          "start": 231.04,
+          "end": 231.6,
+          "type": "word",
+          "logprob": -1.966948805905607e-06
+        }
+      ],
+      "sentence_crossed": [
+        {
+          "start": 223.5,
+          "end": 231.6,
+          "text": "On the sixteenth of October, 1846, Morton walked into the same Boston hospital carrying a glass globe."
+        }
+      ]
+    },
+    {
+      "next_row": "P3:07a",
+      "cut_s": 238.2,
+      "words_crossed": [
+        {
+          "text": "his",
+          "start": 238.1,
+          "end": 238.26,
+          "type": "word",
+          "logprob": 0.0
+        }
+      ],
+      "sentence_crossed": [
+        {
+          "start": 236.58,
+          "end": 243.16,
+          "text": "Morton held the globe to his mouth, and Abbott breathed the ether in and slowly fell asleep."
+        }
+      ]
+    },
+    {
+      "next_row": "P3:10a",
+      "cut_s": 264.8,
+      "words_crossed": [],
+      "sentence_crossed": [
+        {
+          "start": 261.72,
+          "end": 267.3,
+          "text": "It's called the Ether Dome, and within weeks the news was crossing the Atlantic."
+        }
+      ]
+    },
+    {
+      "next_row": "P4:02a",
+      "cut_s": 274.0,
+      "words_crossed": [
+        {
+          "text": "his",
+          "start": 273.98,
+          "end": 274.1,
+          "type": "word",
+          "logprob": -1.1920928244535389e-07
+        }
+      ],
+      "sentence_crossed": [
+        {
+          "start": 272.7,
+          "end": 275.16,
+          "text": "Morton didn't want to give his discovery away."
+        }
+      ]
+    },
+    {
+      "next_row": "P4:03a_arch_letheon_patent",
+      "cut_s": 285.8,
+      "words_crossed": [
+        {
+          "text": "stories",
+          "start": 285.32,
+          "end": 285.84,
+          "type": "word",
+          "logprob": -2.992108420585282e-05
+        }
+      ],
+      "sentence_crossed": [
+        {
+          "start": 281.36,
+          "end": 289.64,
+          "text": "He called it Letheon after a river in the old Greek stories that made people forget, and he took out a patent on it."
+        }
+      ]
+    },
+    {
+      "next_row": "P4:04c_cg_anesthesia_etymology",
+      "cut_s": 309.2,
+      "words_crossed": [],
+      "sentence_crossed": [
+        {
+          "start": 305.9,
+          "end": 314.16,
+          "text": "He suggested a new word for this sleep without pain, anesthesia, from the Greek for without feeling."
+        }
+      ]
+    },
+    {
+      "next_row": "P4:05b",
+      "cut_s": 320.0,
+      "words_crossed": [],
+      "sentence_crossed": [
+        {
+          "start": 319.84,
+          "end": 325.14,
+          "text": "His old teacher, a chemist called Charles Jackson, said the idea had been his."
+        }
+      ]
+    },
+    {
+      "next_row": "P4:06a_cg_master_timeline",
+      "cut_s": 326.5,
+      "words_crossed": [
+        {
+          "text": "Wells",
+          "start": 326.32,
+          "end": 326.8,
+          "type": "word",
+          "logprob": -0.00011359999916749075
+        }
+      ],
+      "sentence_crossed": [
+        {
+          "start": 325.92,
+          "end": 328.82,
+          "text": "Horace Wells said he'd done it two years earlier."
+        }
+      ]
+    },
+    {
+      "next_row": "P4:07b",
+      "cut_s": 338.2,
+      "words_crossed": [
+        {
+          "text": "in",
+          "start": 338.14,
+          "end": 338.28,
+          "type": "word",
+          "logprob": -1.1920928244535389e-07
+        }
+      ],
+      "sentence_crossed": [
+        {
+          "start": 334.78,
+          "end": 342.44,
+          "text": "The fight dragged on for years in newspapers and in courtrooms, and none of the four men ended it rich or happy."
+        }
+      ]
+    },
+    {
+      "next_row": "P5:02a",
+      "cut_s": 368.4,
+      "words_crossed": [
+        {
+          "text": "December",
+          "start": 368.16,
+          "end": 368.74,
+          "type": "word",
+          "logprob": -5.4834770708112046e-05
+        }
+      ],
+      "sentence_crossed": [
+        {
+          "start": 367.06,
+          "end": 373.96,
+          "text": "On the 21st of December 1846 in London, Robert Liston tried ether for himself."
+        }
+      ]
+    },
+    {
+      "next_row": "P5:03a_arch_squire_inhaler_1846",
+      "cut_s": 381.2,
+      "words_crossed": [],
+      "sentence_crossed": [
+        {
+          "start": 378.56,
+          "end": 382.62,
+          "text": "When he woke, he is said to have asked when it would begin."
+        }
+      ]
+    },
+    {
+      "next_row": "P5:05b",
+      "cut_s": 416.2,
+      "words_crossed": [
+        {
+          "text": "moments",
+          "start": 415.98,
+          "end": 416.38,
+          "type": "word",
+          "logprob": -2.622600959512056e-06
+        }
+      ],
+      "sentence_crossed": [
+        {
+          "start": 409.94,
+          "end": 419.56,
+          "text": "One evening, he and two friends sniffed a liquid called chloroform at his dinner table, and moments later, all three were out cold on the floor."
+        }
+      ]
+    },
+    {
+      "next_row": "P5:07a_arch_snow_chloroform_1858",
+      "cut_s": 433.8,
+      "words_crossed": [
+        {
+          "text": "Victoria",
+          "start": 433.76,
+          "end": 434.42,
+          "type": "word",
+          "logprob": -4.529942543740617e-06
+        }
+      ],
+      "sentence_crossed": [
+        {
+          "start": 427.08,
+          "end": 437.52,
+          "text": "Then in 1853, a London doctor called John Snow gave chloroform to Queen Victoria for the birth of her son, Prince Leopold."
+        }
+      ]
+    },
+    {
+      "next_row": "P5:09b_cg_safety_stadium",
+      "cut_s": 458.5,
+      "words_crossed": [],
+      "sentence_crossed": [
+        {
+          "start": 452.72,
+          "end": 461.22,
+          "text": "Today, for a healthy adult, deaths caused by an anesthetic are very rare, about one in every hundred thousand."
+        }
+      ]
+    },
+    {
+      "next_row": "P5:10a",
+      "cut_s": 466.5,
+      "words_crossed": [
+        {
+          "text": "going",
+          "start": 466.26,
+          "end": 466.52,
+          "type": "word",
+          "logprob": 0.0
+        }
+      ],
+      "sentence_crossed": [
+        {
+          "start": 462.24,
+          "end": 468.1,
+          "text": "Imagine a stadium full of 90,000 people all going to sleep for an operation."
+        }
+      ]
+    },
+    {
+      "next_row": "P5:12a_cg_anesthetist_monitor",
+      "cut_s": 485.8,
+      "words_crossed": [
+        {
+          "text": "adjusting",
+          "start": 485.36,
+          "end": 485.92,
+          "type": "word",
+          "logprob": -2.3245540432981215e-05
+        }
+      ],
+      "sentence_crossed": [
+        {
+          "start": 481.62,
+          "end": 490.22,
+          "text": "They watch every heartbeat and every breath, and they keep adjusting the medicine so you stay just asleep enough and no more."
+        }
+      ]
+    },
+    {
+      "next_row": "P5:13b",
+      "cut_s": 498.0,
+      "words_crossed": [],
+      "sentence_crossed": [
+        {
+          "start": 497.6,
+          "end": 506.38,
+          "text": "Once the patient slept, surgeons could slow down, take care, and try operations that nobody would ever have dared before."
+        }
+      ]
+    },
+    {
+      "next_row": "P5:14a",
+      "cut_s": 504.2,
+      "words_crossed": [
+        {
+          "text": "that",
+          "start": 504.12,
+          "end": 504.24,
+          "type": "word",
+          "logprob": 0.0
+        }
+      ],
+      "sentence_crossed": [
+        {
+          "start": 497.6,
+          "end": 506.38,
+          "text": "Once the patient slept, surgeons could slow down, take care, and try operations that nobody would ever have dared before."
+        }
+      ]
+    }
+  ],
+  "over_8s_rows": [],
+  "sentences_over_8s": [
+    {
+      "start": 48.28,
+      "end": 58.82,
+      "text": "By the end of this film, you'll know how a party trick, a country doctor, and a room full of doubters turned surgery from a race into something you could sleep through."
+    },
+    {
+      "start": 78.66,
+      "end": 86.78,
+      "text": "Surgeons had wished for something better for centuries, and the strange thing is the answer had already been written down nearly fifty years earlier."
+    },
+    {
+      "start": 122.12,
+      "end": 130.94,
+      "text": "Traveling showmen let audiences breathe them on stage, and young people held ether frolics where guests staggered around laughing."
+    },
+    {
+      "start": 223.5,
+      "end": 231.6,
+      "text": "On the sixteenth of October, 1846, Morton walked into the same Boston hospital carrying a glass globe."
+    },
+    {
+      "start": 281.36,
+      "end": 289.64,
+      "text": "He called it Letheon after a river in the old Greek stories that made people forget, and he took out a patent on it."
+    },
+    {
+      "start": 305.9,
+      "end": 314.16,
+      "text": "He suggested a new word for this sleep without pain, anesthesia, from the Greek for without feeling."
+    },
+    {
+      "start": 409.94,
+      "end": 419.56,
+      "text": "One evening, he and two friends sniffed a liquid called chloroform at his dinner table, and moments later, all three were out cold on the floor."
+    },
+    {
+      "start": 427.08,
+      "end": 437.52,
+      "text": "Then in 1853, a London doctor called John Snow gave chloroform to Queen Victoria for the birth of her son, Prince Leopold."
+    },
+    {
+      "start": 452.72,
+      "end": 461.22,
+      "text": "Today, for a healthy adult, deaths caused by an anesthetic are very rare, about one in every hundred thousand."
+    },
+    {
+      "start": 481.62,
+      "end": 490.22,
+      "text": "They watch every heartbeat and every breath, and they keep adjusting the medicine so you stay just asleep enough and no more."
+    },
+    {
+      "start": 497.6,
+      "end": 506.38,
+      "text": "Once the patient slept, surgeons could slow down, take care, and try operations that nobody would ever have dared before."
+    }
+  ],
+  "reuse_dependencies": [
+    {
+      "row_id": "P5:16b_reuse_pocket_watch_to_globe",
+      "requires": "P1:07b",
+      "source_kind": "mint_quality"
+    }
+  ],
+  "generation_authorized": false
+}

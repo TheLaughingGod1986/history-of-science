@@ -15,7 +15,7 @@
 | **008** Why Did Franklin Fly a Kite in a Storm? | Thu 19 Nov (8 d) | 75% | Picture (blocked) | **gemini** · ⛔ blocked: J1881 scopes two exact-match assets after J2163 repair; no native fallback selected and no generation authorized | 112/112 board rows rendered (11 code graphics + 101/101 Flow plates KEEP) | Sun 15 Nov (in 4 d) | ⛔ blocked |
 | **009** Why Doesn't the Moon Fall to Earth? | Thu 26 Nov (15 d) | 67% | Picture (in progress) | **Grok (J2632 sheet review; Codex built candidate)** · ⏸ waiting: Grok sheet decision on J2632 before KEEP or splice; J2035 waits for both diagrams. Other picture review requirements remain. | 70/90 board rows recorded: 57 accepted Flow +12 code graphics +1 reuse; 20 Quality remain | Sun 22 Nov (in 11 d) | 🟢 on track |
 | **010** What Killed the Dinosaurs Was Hidden in a Line of Clay | Thu 3 Dec (22 d) | 40% | Picture (blocked) | **codex** · ⛔ blocked: Tested HOS010 runner and live guarded spend preflight after HOS009 J2033; then independent plate review before J2172 assembly | not estimated | Sun 29 Nov (in 18 d) | ⛔ blocked |
-| **011** Anesthesia: The Day Surgery Stopped Hurting | Thu 10 Dec (29 d) | 28% | Audit + upload package (to do) | **Claude** · queued | starts later; due tomorrow | Sun 6 Dec (in 25 d) | 🟢 on track |
+| **011** Anesthesia: The Day Surgery Stopped Hurting | Thu 10 Dec (29 d) | 31% | Audit + upload package (to do) | **Claude** · queued | starts later; due tomorrow | Sun 6 Dec (in 25 d) | ⛔ blocked |
 | **012** Genetics: The Monk Who Counted 28,000 Pea Plants | Thu 24 Dec (43 d) | 0% | Topic (to do) | **Claude** · queued | — | Sun 20 Dec (in 39 d) | 🟢 on track |
 | **013** Evolution: The Letter That Forced Darwin to Publish | Thu 17 Dec (36 d) | 28% | Audit + upload package (to do) | **Claude** · queued | starts later; due tomorrow | Sun 13 Dec (in 32 d) | 🟢 on track |
 | **014** Extinction: The 12-Year-Old Who Dug Up a Sea Dragon | Thu 31 Dec (50 d) | 0% | Topic (to do) | **Claude** · queued | — | Sun 27 Dec (in 46 d) | 🟢 on track |
@@ -45,6 +45,7 @@
 
 **Chief**
 - ▶️ Underway: nothing right now
+- ⏸ Waiting: 011 Edit + master: J2563: resolve sentence-cut/8-second conflict, restore locked WAV, and correct 13 archive URLs (all HTTP 404).
 
 **codex**
 - ▶️ Underway: nothing right now
@@ -73,6 +74,7 @@
 - **008** · ⛔ **Edit + master** — blocked (0%, with claude since Thu 5 Nov 00:00, ⛔ blocked: J1881 reviews J2163 repaired input; separately scoped PTS/GOP splicer, master-word alignment and exact-match assets required. J1755 separate delivery hold., due Thu 12 Nov (tomorrow)): J2163 code/evidence delivered: master hash/full decoded PTS and four source hashes verified; 11 tests pass. Output frame delta/sync/unchanged-frame/audio identity UNMEASURED. Six v03 notes unresolved; h22/h35/J1297 preserved. No render or new approval.
 - **009** · 🔄 **Picture** — in progress (78%, 70/90 board rows recorded: 57 accepted Flow +12 code graphics +1 reuse; 20 Quality remain, with Grok (J2632 sheet review; Codex built candidate) since Wed 11 Nov, ⏸ waiting: Grok sheet decision on J2632 before KEEP or splice; J2035 waits for both diagrams. Other picture review requirements remain., due Sun 15 Nov (in 4 d)): J1237 tranche1 PASS; all57 original Flow hashes reverified local/NAS. 70/90 recorded rows unchanged. J2033 owns remaining20 Quality rows under J2026 cap6000/max3 takes each/floor3000; J2034 independent picture review. Generated is not approved. J2632: falling-Moon continuation now a £0 code-graphic candidate; 158 frames at 30 fps, Mini/NAS hashes matched, Gemini timing advisory clear. J2631 five-metre graphic already KEEP. No new approved-row count.
 - **010** · ⛔ **Picture** — blocked (0%, with codex since Fri 6 Nov, ⛔ blocked: Tested HOS010 runner and live guarded spend preflight after HOS009 J2033; then independent plate review before J2172 assembly, due Sun 22 Nov (in 11 d)): J2267: readiness integrated and budget reconciled; 12 Quality Shorts parents scoped, not generated or authorized. 75 total board rows / historical 12911 expected credits. Existing VO and Option A1 retained.
+- **011** · ⛔ **Edit + master** — blocked (33%, 1/3 assembly steps, with Chief, ⛔ blocked: J2563: resolve sentence-cut/8-second conflict, restore locked WAV, and correct 13 archive URLs (all HTTP 404)., due Thu 3 Dec (in 22 d)): J2563 preflight only: 35 sentence-boundary flags / 18 word overlaps; no built pictures or timing rough yet. See 07_Edit-Project/J2563_HANDOFF.md.
 
 ## Next steps (in order)
 
@@ -251,9 +253,9 @@ Long VO v01 locked (5 parts); Chief KEEP all five, no pickups (desk 6101773293).
 
 ### 011 · Anesthesia: The Day Surgery Stopped Hurting
 
-`██████░░░░░░░░░░░░░░` **28%**
+`██████░░░░░░░░░░░░░░` **31%**
 
-Airs **Thu 10 Dec** · ready for Ben's OK by **Sun 6 Dec** · 🟢 on track
+Airs **Thu 10 Dec** · ready for Ben's OK by **Sun 6 Dec** · ⛔ blocked
 
 Locked for Thu 10 Dec (J2231). Script v02, facts and quote check done. Long VO hos_011_vo_v01 (532.72 s, five chapters, sha256 d873f1d0…) locked after J2286 KEEP listening review (recorded in VO_STATUS.md, J2475). Picture plan v02 (93 rows across 535.30 s: 66 mint = 66 Q + 0 F = 6,600 Flow credits try-1 / 17,094 expected + 27 free £0 rows; 0 real-person names in Flow prompts) built on words.srt per Chief ruling #6786715647 and parked for Chief's price pass (J2475).
 
@@ -265,7 +267,7 @@ Locked for Thu 10 Dec (J2231). Script v02, facts and quote check done. Long VO h
 - ⬜ **Shorts scripts** — to do (with Claude, due Thu 12 Nov (tomorrow)): two search-titled Shorts (Test B, J2239)
 - ⬜ **Shorts voiceover** — to do (with Cursor, due Mon 16 Nov (in 5 d))
 - ⬜ **Picture** — to do (with Cursor, due Sun 29 Nov (in 18 d)): Shot list & picture plan v02 built on words.srt per Chief ruling #6786715647 (J2475): 93 rows (535.30 s), 66 mint (66 Q + 0 F = 6,600 try-1 / 17,094 expected Flow credits; 0 real-person names in Flow prompts) + 27 free £0 rows (13 CG + 13 ARCH + 1 REUSE). HOS-2026-11-E2 PASS. generation_authorized: false; parked for Chief price pass.
-- ⬜ **Edit + master** — to do (with Grok, due Thu 3 Dec (in 22 d))
+- ⛔ **Edit + master** — blocked (33%, 1/3 assembly steps, with Chief, ⛔ blocked: J2563: resolve sentence-cut/8-second conflict, restore locked WAV, and correct 13 archive URLs (all HTTP 404)., due Thu 3 Dec (in 22 d)): J2563 preflight only: 35 sentence-boundary flags / 18 word overlaps; no built pictures or timing rough yet. See 07_Edit-Project/J2563_HANDOFF.md.
 - ⬜ **Thumbnails** — to do (with Grok, due Thu 3 Dec (in 22 d))
 - ⬜ **Ben's final OK** — to do (with Ben, due Sun 6 Dec (in 25 d))
 - ⬜ **Scheduled** — to do (with Grok, due Mon 7 Dec (in 26 d))
