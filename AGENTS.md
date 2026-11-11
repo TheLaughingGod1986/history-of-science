@@ -390,6 +390,7 @@ Ben, 2 Oct 2026: *"Claude and Grok have more authority and fewer checks with me.
 - **TikTok:** a direct upload or retry (browser/CDP or API) while `TIKTOK_UPLOAD_BLOCK.json` is paused. HOS TikTok goes through Buffer only (Ben, 5 Oct 2026).
 - **Social:** post HOS via the Orbit Buffer org or the Buffer connector; revive archived Meta/Threads/TikTok `live_shorts_to_*` / launchd auto-post.
 - **Secrets:** commit or print them.
+- **Network details:** write a private-network address, a device's network name or a list of devices into a tracked file, the desk or a job. Say "the NAS", "the Mini", "the MacBook". This repo is public, and the address is on the machines (`mount`, `tailscale status`) for whoever needs it. `tests/test_no_private_network.py` fails on any address.
 
 ## Git
 

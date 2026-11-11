@@ -35,4 +35,4 @@ Per acting-Chief reopen instruction on `J2033` (`2026-11-09T21:54Z`):
    - For HOS 009, the two style reference JPEGs exist locally at `/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/_style_refs/{04_sunny_window_v01.jpg,10_mint_jar_v01.jpg}`.
 
 2. **Mac mini `/Volumes/data` NFS vnode hang**:
-   - `require_archive` requires a writable directory under `/Volumes/...`. Currently `/Volumes/data` (`192.168.1.119:/volume1/data`) and `/Volumes/MiniWork` (disk image backed by `/Volumes/data`) block in `libsystem_kernel.dylib:__open` / `mkdir` on any uncached directory read or file create (including `nas_offload.py` PID `73678`).
+   - `require_archive` requires a writable directory under `/Volumes/...`. Currently `/Volumes/data` (`<NAS>:/volume1/data`) and `/Volumes/MiniWork` (disk image backed by `/Volumes/data`) block in `libsystem_kernel.dylib:__open` / `mkdir` on any uncached directory read or file create (including `nas_offload.py` PID `73678`).
