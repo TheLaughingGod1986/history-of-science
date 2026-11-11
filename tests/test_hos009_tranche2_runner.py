@@ -169,10 +169,11 @@ class RetakeScopeTests(unittest.TestCase):
 
 
 class J2583ReservationTests(unittest.TestCase):
-    """Retakes reserve a new 400-credit identity and leave the closed J2033 record alone."""
+    """Retakes reserve J2583 at 300 and leave the closed J2033 record alone."""
 
     def test_cap_is_the_approved_400_and_a_different_ceiling_is_refused(self):
         self.assertEqual(RUNNER.retake_credit_cap(ROOT), 400)
+        self.assertEqual(RUNNER.J2583_RESERVE_CAP, 300)
         with tempfile.TemporaryDirectory() as tmp:
             repo = Path(tmp)
             dest = repo / RUNNER.EDIT_REL
@@ -182,8 +183,15 @@ class J2583ReservationTests(unittest.TestCase):
             (dest / "TRANCHE2_RETAKES_J2583.json").write_text(json.dumps(scope))
             with self.assertRaisesRegex(RUNNER.GuardError, "approved 400"):
                 RUNNER.retake_credit_cap(repo)
+            scope["max_total_credits"] = 200
+            (dest / "TRANCHE2_RETAKES_J2583.json").write_text(json.dumps(scope))
+            with self.assertRaisesRegex(RUNNER.GuardError, "exceeds the approved ceiling"):
+                RUNNER.retake_credit_cap(repo)
+        with tempfile.TemporaryDirectory() as tmp:
+            with self.assertRaisesRegex(RUNNER.GuardError, "missing or invalid"):
+                RUNNER.retake_credit_cap(Path(tmp))
 
-    def test_closed_j2033_collides_and_j2583_stops_at_400(self):
+    def test_closed_j2033_collides_and_j2583_stops_at_300(self):
         with tempfile.TemporaryDirectory() as tmp:
             state = Path(tmp)
             with RUNNER.SharedFlowAccounting(state) as account:
@@ -204,24 +212,24 @@ class J2583ReservationTests(unittest.TestCase):
                 self.assertEqual(calls, [])
                 self.assertEqual((state / "account.jsonl").read_bytes(), closed)
                 RUNNER.commit_reservation(
-                    account, reservation="J2583", cap=400, live=11690,
+                    account, reservation="J2583", cap=300, live=11690,
                     floor=RUNNER.HEADROOM_FLOOR, after_reserve=after,
                 )
                 self.assertEqual(calls, ["local"])
                 snap = account.snapshot()
                 self.assertEqual(snap["reservations"]["J2583"],
-                                 dict(cap=400, film="HOS:009", active=True))
+                                 dict(cap=300, film="HOS:009", active=True))
                 self.assertFalse(snap["reservations"]["J2033"]["active"])
                 self.assertEqual(snap["reservations"]["J2033"]["cap"], 6000)
-                for index in range(4):
+                for index in range(3):
                     account.intent(f"take-{index}", "J2583", 100, live=11690)
                     account.resolve(f"take-{index}", submitted=True, evidence={"n": index})
                 with self.assertRaisesRegex(RUNNER.GuardError, "charge exceeds reservation cap"):
-                    account.intent("take-4", "J2583", 100, live=11690)
+                    account.intent("take-3", "J2583", 100, live=11690)
             suffix = (state / "account.jsonl").read_bytes().split(closed, 1)[1]
             self.assertNotIn(b'"id": "J2033"', suffix)
             with RUNNER.SharedFlowAccounting(Path(tmp) / "over") as account:
-                account.reserve("J2583", "HOS:009", 400, live=20000)
+                account.reserve("J2583", "HOS:009", 300, live=20000)
                 with self.assertRaisesRegex(RUNNER.GuardError, "charge exceeds reservation cap"):
                     account.intent("too-big", "J2583", 500, live=20000)
 
@@ -246,7 +254,7 @@ class J2583ReservationTests(unittest.TestCase):
                  patch.object(RUNNER, "execute_shared_batch", return_value=[]) as retake:
                 RUNNER.cmd_submit(ROOT, retakes_j2583=True, **common)
             self.assertEqual(retake.call_args.kwargs["reservation"], "J2583")
-            self.assertEqual(retake.call_args.kwargs["reservation_cap"], 400)
+            self.assertEqual(retake.call_args.kwargs["reservation_cap"], 300)
             self.assertTrue(retake.call_args.kwargs["retakes_j2583"])
 
     def _retake_rows(self):
@@ -280,7 +288,7 @@ class J2583ReservationTests(unittest.TestCase):
 
             def fake_submitter(row, dest, frame, *, accounting, reservation, reservation_cap,
                                charge, evidence_path, after_reserve, other=0):
-                self.assertEqual((reservation, reservation_cap), ("J2583", 400))
+                self.assertEqual((reservation, reservation_cap), ("J2583", 300))
                 self.assertNotIn("SUBMITTING", ledger.read_text())
                 accounting.reserve("J2033", "HOS:009", 6000, live=20000)
                 after_reserve()
@@ -296,7 +304,7 @@ class J2583ReservationTests(unittest.TestCase):
                 with self.assertRaisesRegex(RUNNER.GuardError, "reservation identity collision"):
                     RUNNER.execute_shared_batch(
                         selected, media=root / "media", ledger_path=ledger, archive_dir=archive,
-                        accounting_state=shared, reservation="J2583", reservation_cap=400,
+                        accounting_state=shared, reservation="J2583", reservation_cap=300,
                         submitter=fake_submitter, still_maker=None, test_archive=True,
                         inventory_rows=selected, retakes_j2583=True,
                         in_scope_keys={row.key for row in selected},
@@ -304,7 +312,7 @@ class J2583ReservationTests(unittest.TestCase):
             self.assertNotIn("SUBMITTING", ledger.read_text())
             self.assertEqual((shared / "account.jsonl").read_bytes(), closed)
 
-    def test_retake_batch_reserves_400_before_local_intent_and_refuses_a_fifth_charge(self):
+    def test_retake_batch_reserves_300_before_local_intent_and_releases_after_three(self):
         from unittest.mock import patch
         selected = self._retake_rows()
         with tempfile.TemporaryDirectory() as tmp:
@@ -348,23 +356,63 @@ class J2583ReservationTests(unittest.TestCase):
                               side_effect=lambda path, **kw: {"ok": True, "sha256": RUNNER.sha256_file(path)}):
                 written = RUNNER.execute_shared_batch(
                     selected, media=media, ledger_path=ledger, archive_dir=archive,
-                    accounting_state=shared, reservation="J2583", reservation_cap=400,
+                    accounting_state=shared, reservation="J2583", reservation_cap=300,
                     submitter=fake_submitter, still_maker=None, test_archive=True,
                     inventory_rows=selected, retakes_j2583=True,
                     in_scope_keys={row.key for row in selected},
                 )
             self.assertEqual([item[0] for item in seen], ["J2583", "J2583", "J2583"])
-            self.assertEqual({item[1] for item in seen}, {400})
+            self.assertEqual({item[1] for item in seen}, {300})
             self.assertEqual([item["take"] for item in written], [2, 2, 2])
             self.assertTrue((shared / "account.jsonl").read_bytes().startswith(closed))
             suffix = (shared / "account.jsonl").read_bytes().split(closed, 1)[1]
             self.assertNotIn(b'"id": "J2033"', suffix)
             with RUNNER.SharedFlowAccounting(shared) as account:
-                self.assertFalse(account.snapshot()["reservations"]["J2033"]["active"])
-                account.intent("c2-slot", "J2583", 100, live=20000)
-                account.resolve("c2-slot", submitted=True, evidence={"slot": "c2"})
-                with self.assertRaisesRegex(RUNNER.GuardError, "charge exceeds reservation cap"):
-                    account.intent("fifth", "J2583", 100, live=20000)
+                snap = account.snapshot()
+                self.assertFalse(snap["reservations"]["J2033"]["active"])
+                self.assertFalse(snap["reservations"]["J2583"]["active"])
+                self.assertEqual(snap["liability"], 300)
+                with self.assertRaisesRegex(RUNNER.GuardError, "inactive reservation"):
+                    account.intent("after-release", "J2583", 100, live=20000)
+
+    def test_repeat_reserve_of_j2583_is_a_noop(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            state = Path(tmp)
+            with RUNNER.SharedFlowAccounting(state) as account:
+                account.reserve("J2583", "HOS:009", 300, live=20000)
+                before = (state / "account.jsonl").read_bytes()
+                account.reserve("J2583", "HOS:009", 300, live=20000)
+                self.assertEqual((state / "account.jsonl").read_bytes(), before)
+                self.assertEqual(account.snapshot()["reservations"]["J2583"],
+                                 dict(cap=300, film="HOS:009", active=True))
+
+    def test_mismatched_preexisting_j2583_is_refused(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            with RUNNER.SharedFlowAccounting(Path(tmp)) as account:
+                account.reserve("J2583", "HOS:009", 400, live=20000)
+                with self.assertRaisesRegex(RUNNER.GuardError, "reservation identity collision"):
+                    account.reserve("J2583", "HOS:009", 300, live=20000)
+
+    def test_third_resolved_row_releases_even_when_not_charged(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            with RUNNER.SharedFlowAccounting(Path(tmp)) as account:
+                account.reserve("J2583", "HOS:009", 300, live=20000)
+                account.intent("kept", "J2583", 100, live=20000)
+                account.resolve("kept", submitted=True, evidence={"n": 1})
+                resolved = RUNNER.note_retake_resolution(
+                    account, "J2583", {"status": "CHARGED", "amount": 100}, 0)
+                resolved = RUNNER.note_retake_resolution(
+                    account, "J2583", {"status": "POLICY_REFUSED", "amount": 0}, resolved)
+                resolved = RUNNER.note_retake_resolution(
+                    account, "J2583", {"status": "NOT_SUBMITTED", "amount": 0}, resolved)
+                self.assertEqual(resolved, 3)
+                snap = account.snapshot()
+                self.assertFalse(snap["reservations"]["J2583"]["active"])
+                self.assertEqual(snap["charges"]["kept"]["amount"], 100)
+                self.assertFalse(snap["charges"]["kept"]["posted"])
+                self.assertEqual(snap["liability"], 100)
+                with self.assertRaisesRegex(RUNNER.GuardError, "inactive reservation"):
+                    account.intent("another", "J2583", 100, live=20000)
 
     def test_live_paths_reserve_the_passed_cap_before_create(self):
         import inspect

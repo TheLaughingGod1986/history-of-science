@@ -22,7 +22,7 @@ Guards (J2033_PREFLIGHT.md / J2026):
 - fresh required Flow account and an exact Veo 3.1 Quality x1 price of 100
 - pending submits count at full cost; unknown pending charges stop the run
 - the twenty-row path reserves J2033 for the unused part of the 6000 cap
-- `--retakes-j2583` reserves a new identity J2583 at the approved 400 and never reopens J2033
+- `--retakes-j2583` reserves a new identity J2583 at 300 and releases it after the third resolved row. The file ceiling stays 400. It never reopens J2033
 - balance after that reservation stays at or above 3000
 - a batch is at most 5 rows and 1500 credits; at most 3 takes a row
 """
@@ -50,6 +50,11 @@ FORBIDDEN_ACCOUNT = "benoats86@gmail.com"
 MAX_CREDITS_PER_TAKE = 100
 MAX_TAKES_PER_ROW = 3
 MAX_TOTAL_CREDITS = 6000
+# Chief 6796365164: three retake rows reserve 300. max_total_credits in the
+# retake file stays 400, the ceiling shared with c2's later reservation.
+J2583_RESERVE_CAP = 300
+J2583_CEILING = 400
+RESOLVED_CHARGE_STATUSES = frozenset({"CHARGED", "NOT_SUBMITTED", "POLICY_REFUSED"})
 MAX_BATCH_ROWS = 5
 MAX_BATCH_CREDITS = 1500
 HEADROOM_FLOOR = 3000
@@ -1298,14 +1303,15 @@ def execute_shared_batch(batch: list[Row], *, media: Path, ledger_path: Path,
     Each actual configured Create obtains its own UI evidence and durable shared
     charge through live_video_submit. The shared lock covers preparation, Create,
     download, archive and receipts. This remains behind cmd_submit's interlock.
-    J2583 retakes reserve identity J2583 at 400 credits. The local SUBMITTING row
-    is written only after that reserve returns. J2033 is not reopened.
+    J2583 retakes reserve identity J2583 at 300 credits. The local SUBMITTING row
+    is written only after that reserve returns. After the third resolved row the
+    reservation is released. Unposted charges stay liabilities. J2033 is not reopened.
     """
     if type(other) is not int or other < 0:
         raise GuardError("invalid other reservations")
     if retakes_j2583:
-        if reservation != "J2583" or reservation_cap != 400:
-            raise GuardError("J2583 retakes reserve identity J2583 at 400 credits")
+        if reservation != "J2583" or reservation_cap != J2583_RESERVE_CAP:
+            raise GuardError("J2583 retakes reserve identity J2583 at 300 credits")
     elif reservation != "J2033" or reservation_cap != MAX_TOTAL_CREDITS:
         raise GuardError("tranche submit reserves J2033 at the 6000 cap")
     assert_batch_limits(batch)
@@ -1356,6 +1362,7 @@ def execute_shared_batch(batch: list[Row], *, media: Path, ledger_path: Path,
         _, _, _, takes = ledger_totals(entries)
         if retakes_j2583:
             validate_retakes(batch, entries, media)
+        resolved_rows = 0
         for row in batch:
             if takes.get(row.plate_id, 0) >= MAX_TAKES_PER_ROW:
                 raise GuardError(f'{row.plate_id}: take cap reached')
@@ -1410,6 +1417,9 @@ def execute_shared_batch(batch: list[Row], *, media: Path, ledger_path: Path,
             if retakes_j2583 and not wrote_local:
                 raise GuardError("retake submitter returned without reserving before local intent")
             shared = accounting.snapshot()['charges'].get(charge)
+            if retakes_j2583:
+                resolved_rows = note_retake_resolution(
+                    accounting, reservation, shared, resolved_rows)
             if not shared or shared['status'] != 'CHARGED' or shared['amount'] != MAX_CREDITS_PER_TAKE:
                 raise GuardError('submitter returned without exact shared charge; no advancement')
             if not isinstance(evidence, dict) or evidence.get('charge') != charge:
@@ -1571,12 +1581,39 @@ J2583_KEYS = ((3, "01_really_falling_c1"), (2, "08_the_apple_c1"),
 
 
 def retake_credit_cap(repo: Path) -> int:
-    """The approved J2583 ceiling from the retake scope. It is 400, not the 6000 tranche cap."""
-    scope = json.loads((repo / EDIT_REL / "TRANCHE2_RETAKES_J2583.json").read_text())
+    """Read max_total_credits as the overall ceiling. The reservation itself is 300.
+
+    Refuse a missing or invalid file, a ceiling other than the approved 400, or
+    a ceiling that 300 would exceed. c2's later reservation shares this ceiling.
+    """
+    path = repo / EDIT_REL / "TRANCHE2_RETAKES_J2583.json"
+    try:
+        scope = json.loads(path.read_text())
+    except (OSError, json.JSONDecodeError, UnicodeError) as exc:
+        raise GuardError("J2583 retake cap file is missing or invalid") from exc
+    if not isinstance(scope, dict):
+        raise GuardError("J2583 retake cap file is missing or invalid")
     cap = scope.get("max_total_credits")
-    if scope.get("job") != "J2583" or type(cap) is not int or cap != 400:
+    if scope.get("job") != "J2583" or type(cap) is not int or cap <= 0:
+        raise GuardError("J2583 retake cap file is missing or invalid")
+    if J2583_RESERVE_CAP > cap:
+        raise GuardError("J2583 reservation of 300 exceeds the approved ceiling")
+    if cap != J2583_CEILING:
         raise GuardError("J2583 retake cap is not the approved 400")
     return cap
+
+
+def note_retake_resolution(accounting: SharedFlowAccounting, reservation: str,
+                           charge: dict | None, resolved: int) -> int:
+    """Release J2583 once the third row has resolved. Unposted charges stay liabilities."""
+    if reservation != "J2583" or not charge or charge.get("status") not in RESOLVED_CHARGE_STATUSES:
+        return resolved
+    resolved += 1
+    if resolved == len(J2583_KEYS):
+        record = accounting.snapshot()["reservations"].get(reservation) or {}
+        if record.get("active"):
+            accounting.release(reservation)
+    return resolved
 
 
 def retake_batch(repo: Path, rows: list[Row], entries: list[dict], media: Path) -> list[Row]:
@@ -1636,8 +1673,11 @@ def cmd_submit(repo: Path, *, other: int, media: Path, ledger_path: Path, lock_p
         if not batch:
             return []
         if retakes_j2583:
+            ceiling = retake_credit_cap(repo)
+            if J2583_RESERVE_CAP > ceiling:
+                raise GuardError("J2583 reservation of 300 exceeds the approved ceiling")
             reservation = "J2583"
-            reservation_cap = retake_credit_cap(repo)
+            reservation_cap = J2583_RESERVE_CAP
         else:
             reservation = "J2033"
             reservation_cap = MAX_TOTAL_CREDITS
