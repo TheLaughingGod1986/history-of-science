@@ -37,7 +37,9 @@ MINUTE_SECOND_SPEC = {
 # Strokes are the J2631 phone weight (desk 6801180887): about 5 px for the
 # arc and 4 px for the tangent dashes, measured on the 1080 frame. The
 # contact sheet must also carry a 390 px-wide copy of one frame at 1:1.
-FALLING_MOON_DURATION = 5.26
+FALLING_MOON_DURATION = 5.26  # unchanged motion segment
+FALLING_MOON_HEAD_FRAMES = 21
+FALLING_MOON_HEAD_S = FALLING_MOON_HEAD_FRAMES / FPS
 FALLING_MOON_EARTH = (560.0, 880.0)
 FALLING_MOON_RADIUS = 720.0
 FALLING_MOON_ANGLE = math.radians(70)
@@ -47,7 +49,7 @@ FALLING_MOON_DASH_ON = 36
 FALLING_MOON_DASH_GAP = 28
 FALLING_MOON_SPEC = {
     "id": "01_really_falling_c1", "file": "code_graphic_009_p3_01_really_falling_c1.mp4",
-    "dur": FALLING_MOON_DURATION, "label": "", "kind": "falling_moon",
+    "dur": FALLING_MOON_DURATION + FALLING_MOON_HEAD_S, "label": "", "kind": "falling_moon",
     "layout": "full_frame_period_paper", "plate": None,
 }
 
@@ -66,15 +68,24 @@ def draw_falling_moon(d, t, dur):
     # Fixed tangent originates at the initial Moon centre, never follows it.
     step = FALLING_MOON_DASH_ON + FALLING_MOON_DASH_GAP
     x = int(x0)
-    while x < 1600:
-        d.line((x, y0, min(x + FALLING_MOON_DASH_ON, 1600), y0), fill=ink(0.85), width=FALLING_MOON_DASH_PX)
+    # Exactly 21 distinct lead-in frames. Start beyond the Moon rim so
+    # every frame visibly changes, including before the first paper shift.
+    end_x = min(1600, x0 + 64 + (1600 - x0 - 64) * t / FALLING_MOON_HEAD_S)
+    while x < end_x:
+        d.line((x, y0, min(x + FALLING_MOON_DASH_ON, end_x), y0), fill=ink(0.85), width=FALLING_MOON_DASH_PX)
         x += step
     # Only the traversed arc inks on; no spare object or full-orbit preview.
-    points = [falling_moon_position(t * i / 120) for i in range(121)]
-    if t > 0:
+    motion_t = max(0.0, t - FALLING_MOON_HEAD_S)
+    points = [falling_moon_position(motion_t * i / 120) for i in range(121)]
+    if motion_t > 0:
         d.line(points, fill=ink(0.9), width=FALLING_MOON_ARC_PX)
-    mx, my = falling_moon_position(t)
-    moon(d, mx, my, 57)
+    mx, my = falling_moon_position(motion_t)
+    # Scoped to this graphic: two off-centre open rings, 4 px ink.
+    # 30 px outer diameter leaves 22 px wash inside each ring.
+    r = 57
+    d.ellipse((mx-r, my-r, mx+r, my+r), fill=wash(moon=True), outline=ink(), width=5)
+    for dx, dy in ((-19, -13), (18, 18)):
+        d.ellipse((mx+dx-15, my+dy-15, mx+dx+15, my+dy+15), outline=ink(), width=4)
 
 
 SPECS = [FALLING_MOON_SPEC, MINUTE_SECOND_SPEC,

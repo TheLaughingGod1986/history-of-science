@@ -161,3 +161,23 @@ Three retained takes are untouched: `009 A v02`, `010 A v02` (`J1004` Option A1 
 Falling-Moon continuation rebuilt as a £0 parchment code graphic for 3:03.94–3:09.20, 158 frames at 30 fps, silent. Mini/studio-live SHA-256 matches MANIFEST.json. Row route changed in part-03_plates_v05.json; no splice or KEEP. Gemini timing advisory clear; Grok sheet decision and join review pending. Evidence: 07_Edit-Project/J2632_review/REVIEW.md. Approved-row count unchanged.
 
 Tool outputs: `J2632 geometry, stream, silence and full decode checks passed; review remains pending.` and `ALL CHECKS PASS` (check_all.sh). These are tool results, not final film PASS.
+
+
+## J2632 revised falling-Moon evidence — 11 Nov 2026
+
+Codex built 179 unique frames at 30 fps, including 21 animated lead-in frames and two open crater rings. Candidate and sheets on PR #543; no KEEP or splice. Parent frames 99–104 and excluded 112/125 are on the boundary sheet. The 24 fps parent loses 0.875 s, while 21 new frames at 30 fps add 0.700 s: 0.175 s remains for Chief timing reconciliation. Original motion mapping and film end 189.20 are preserved in the candidate evidence.
+
+Repository validation output (not film approval):
+
+```text
+-- durable desk handoffs: PASS
+-- no media: PASS
+-- status board in sync: PASS
+-- ElevenLabs guard tests: PASS
+-- vo_check word tests: PASS
+-- atempo check tests: PASS
+-- voice speed (atempo <= 1.06): PASS
+-- contract tests: PASS
+-- package-lint: PASS
+ALL CHECKS PASS
+```

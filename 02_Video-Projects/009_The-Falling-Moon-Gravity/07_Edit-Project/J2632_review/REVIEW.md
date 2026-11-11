@@ -1,47 +1,23 @@
-# J2632 — falling-Moon candidate, revised
+# J2632 revised candidate — Chief review required
 
-**Chief, 11 Nov, after Claude's read (desk 6805748386).** This file is not KEEP. Splice stays unauthorized.
+Codex covering. Implements desk 6806341672 on PR #543, superseding the old out 94 / 39-frame instruction. No KEEP, merge, splice, generation or spend.
 
-- Frame 94 is the clean parent out. The 1.30 s gap is past the 1.0 s park line, and the exception is a longer head, not a hold. The next render adds 39 frames (1.30 s) in front of these 158: the dashed tangent draws on, and the Moon starts at the top. No frame is repeated. Frame 39 of that render is this file's frame 0, so "It really is falling" stays on the same gap. The film end stays 189.20. The 0.20 s cross-fade finishes at parent frame 94 (it starts at frame 89), so no curl frame is in the fade.
-- The Moon still has the two thick marks that read as button dots. The next render replaces them, on this graphic only, with two open crater rings: 4 px stroke, inner hole at least 18 px, off centre, interior left as the moon wash. Other graphics keep the shared Moon.
-- Phone strokes and the inked coastlines in sha `73e77846…` stand. That sha is the current file until the render above replaces it.
+- **179 unique decoded frames at 30 fps**, 1920×1080, silent; nominal 5.96 s, encoded 5.966667s. Exactly 21 new tangent-draw frames; old motion frame 0 becomes 21. Original 158 Moon positions and 70-degree path unchanged. Earth centre (560, 880), radius 150, orbit 720, Moon 57; clearance 513 px.
+- Two off-centre open rings on this graphic only: 4 px stroke, 30 px outside diameter, 22 px inner hole, unchanged Moon wash. Other graphics retain their Moon. Coastlines and line weights unchanged.
+- `CONTACT_SHEET.jpg`: 8 decoded frames plus 390 px-wide 1:1 frames 10, 137 (old 116), 178 (last). `PHONE_390.jpg` contains the three 390 px frames without enlargement. Both holes are visible in Codex's still inspection.
+- `CUT_BOUNDARIES.jpg`: parent 99–104, excluded 112 and 125, graphic first/last and cannon first. Parent 104 is the required out; 108 is excluded from any future join. These are source samples, not an assembled crossfade.
+- New SHA256: `cb8051bb9d6b46d014be46977522d089e19262fa7fd7fd90dfee3099fb13c2f7`. Superseded: `73e77846090c30cc3ae3b67c9df9a3f730dfecad42c1312691f511e13ec3889a`. Old media remains untouched. New media path and source hashes in `MANIFEST.json`.
 
-**Revision, 11 Nov, after Claude's sheet read (desk 6805465664).** Same motion: one Moon, 70° circular arc, fixed tangent, no labels, 158 frames, 5.26 s. Two drawing changes, £0.
+## Timing conflict — not ready to splice
 
-1. **Strokes.** Encoded f116 measures a 4 px tangent and a 6 px arc at 1080. Dashes are about 37 px on and 27 px off. The 640-wide sheet cells had shrunk the first candidate's 4 px lines to about 1.3 px, which read as hairlines. f116 is now on `CONTACT_SHEET.jpg` at 390 px wide, 1:1, and in `PHONE_390.jpg`. At that size the dashed tangent, the arc and the gap between them still read.
-2. **Earth.** The inner ring and the two button arcs are gone on this graphic only. Four inked coastlines sit in the disc: North America, South America, Europe and Africa, same ink, 5 px. Other graphics still use the old Earth.
-3. **Parent out.** Not a re-render. The KEEP parent is the whole 8 s clip (`01_really_falling_t1.mp4`, 24 fps, sha256 `ab4b40bc2e65`). The planned out, frame 125 (5.208 s), shows the golden trail curled down the Moon's right side. Frame 94 (3.917 s) is the last sampled frame where the trail still meets the Moon from above and points up. The hook is on screen by frame 96 (4.000 s). The difference is 1.30 s. The source can move: nothing locks the out at 5.26 s except the planned sentence length. Chief rejected a hold of the first frame. The assembler cuts the parent at frame 94 and waits for the longer head render in the Chief note above. The 0.20 s cross-fade finishes at frame 94. The cannon stays at 189.20 and the words stay on the moving gap. No splice.
+The literal 21-frame head at 30 fps lasts 0.700 s. Cutting parent 125 to 104 at 24 fps removes 0.875 s. **Difference 0.175 s**, larger than a frame. The brief's constraints cannot all hold together without an additional timing decision. No freeze, retime, extra head frames or hold has been introduced.
 
-Moon path, radius and the timing samples are unchanged, so Gemini's advisory on the first candidate still applies. New file sha256 `73e77846090c30cc3ae3b67c9df9a3f730dfecad42c1312691f511e13ec3889a` (916,763 bytes). The first candidate was `80ce9560d9dd6d0edbf4fa81e3d1619ccb0f1f8168bfa78c91901451a003ed8d`. Mini checkout and studio-live copies match. `splice_authorized` stays false.
+Mapping new frame 21 to 183.94 preserves the original Moon gap on the words and end 189.20; the new nominal start is 183.24. That alone does not reconcile the earlier parent out. The requested 0.20 s fade ending on parent 104 must also be checked against the final source-to-film mapping. Gemini independently rechecked the supplied alignment and geometry: **BLOCKED / CONTRADICTION FLAGGED (Do Not Pass Join)**. It confirms the 0.175 s mismatch, with further head coverage required if the graphic overlaps the parent for the crossfade. Its unedited response is adjacent. The old timing advisory does not approve this revised join.
 
----
+Chief must reconcile the 24 fps parent and 30 fps graphic clocks, then decide KEEP. `splice_authorized` remains false and J2035 stays held. No question or approval is sent to Ben.
 
-# J2632 — first candidate, for the record
+## Verification and limits
 
-Codex covering. Built the £0 parchment code graphic scoped by Grok in desk 6800614881, at the corrected 30 fps (6800776453). Same renderer, paper, ink, washes and Moon as the approved J2631 graphic. No Flow run, paid stock or credits. Rejected continuation take 3 stays unused. No splice, KEEP or final film approval.
+`J2632 geometry, stream, silence, 179 unique decoded frames and full decode checks passed; timing conflict FLAG; review pending.`
 
-## Candidate
-
-- Film window **3:03.94–3:09.20 (5.26 s)**, one silent 1920×1080 H.264 stream, 30 fps, **158 unique moving frames / 5.266667 s** of source coverage. The fractional-frame excess is source coverage, not freeze padding; retain the nominal edit boundary and continuous VO.
-- One Earth lower left, one Moon, one progressively inked circular arc. Fixed dashed tangent begins at the Moon's initial centre. No labels, numbers, second Moon or arrow.
-- Moon travels **70°**, less than a quarter turn. Every sampled centre moves right and down; its radius about Earth stays 720 px. Earth radius 150 px and Moon radius 57 px leave **513 px surface clearance** throughout. The drawn sizes/time are illustrative, not a scale model.
-- During “It really is falling” (local 0.58–1.92), centre separation from tangent grows **6.52 to 70.42 px**. The top of the Moon fully clears the tangent during “falling”. During “It just never lands” (2.56–3.88), the Moon remains far from Earth.
-- Media paths, hash, timing samples and boundary source hashes: `MANIFEST.json`. Mini and studio-live copies verified identical. No media committed.
-
-## Review evidence and remaining join decision
-
-`CONTACT_SHEET.jpg`: eight decoded source frames including both ends and phrase timings. `CUT_BOUNDARIES.jpg`: frame on each side of both proposed cuts. `PHONE_390.jpg`: decoded f101, resized to 390 px wide. Codex inspected the still sheets: single Moon, continuous arc without hook-back, separated tangent and clear Earth. This is still-image inspection plus per-frame coordinate tests, not a claim of watching motion or hearing narration.
-
-The outer KEEP plates are the recorded parent and cannon sources. Boundary samples assume the parent's head 0–5.26 s and cannon from 0; the assembler must confirm actual source offsets. The orchard-to-paper change is conspicuous in the raw cut pair. **Propose a 0.20 s incoming crossfade into the first six moving graphic frames**, using the parent's available source tail; it ends before “It really is falling” at local 0.58. No transition is baked in and no film is assembled. Grok decides the join treatment alongside the sheet. The exit coincides with “To explain it”; the cannon enters at 189.20 s. Recheck that join during assembly too.
-
-Gemini Argon completed the requested narration timing check using the existing faster-whisper word alignment and actual render coordinates: **PASS (Advisory), no critical timing conflict**. Its complete input and unedited output are adjacent. Gemini notes the Moon disc still intersects the tangent at the onset of “falling” but clears it during that word. Neither reviewer claims audio or moving-video perception. Grok owns sheet approval and KEEP.
-
-## Verification
-
-`J2632 geometry, stream, silence and full decode checks passed; review remains pending.`
-
-`ALL CHECKS PASS` — repository check_all.sh (desk handoff tests, no media, board consistency, voice guards, contract tests and package lint).
-
-The v05 plate-board row now routes to this code graphic with `splice_authorized: false` and candidate review status. Superseded generation estimates are retained; new generation is disabled. No other row, script, narration or existing rendered asset was changed. The picture stage remains in progress; no approved-row count was increased.
-
-The revision at the top supersedes this candidate. J2035 stays held until the assembler uses parent frame 94. No Ben action requested.
+Still-image inspection plus encoded-frame/coordinate checks only; no claim of hearing narration or watching motion. Full repository validation is recorded in `CHECK_ALL.txt`. Board pins were refreshed using the required repin tool after merging main. No film stage was approved.
