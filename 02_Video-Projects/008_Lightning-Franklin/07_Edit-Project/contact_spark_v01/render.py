@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""HOS 008 salon tapered contact streak; J2613. No video-take input or placement."""
+"""HOS 008 salon tapered contact streak. J2613 geometry, size revision 6796829044. No video-take input or placement."""
 import argparse
 import hashlib
 import json
@@ -11,6 +11,13 @@ import numpy as np
 from PIL import Image
 
 WARM = (255, 246, 224)
+# Desk 6796829044. The 2px core was a hairline at phone width.
+# Peak frame: about 3.8px FWHM through the middle at 1080p, plus one soft bloom.
+# FWHM = 2*sqrt(2*ln2)*sigma. Ends stay tapered. The half-strength frame has no bloom.
+CORE_SIGMA_END = 0.50
+CORE_SIGMA_MID = 1.61
+BLOOM_PEAK = 80.0
+BLOOM_SIGMA = 10.5
 
 
 def spark(size, rod, knuckle, phase, frames=4):
@@ -34,7 +41,8 @@ def spark(size, rod, knuckle, phase, frames=4):
     # Work only in the local support, so a 1080p canvas stays inexpensive.
     rod, knuckle = np.array(rod, dtype=float), np.array(knuckle, dtype=float)
     axis = (rod - knuckle) / gap
-    pad = 7 * scale + 2
+    # Bloom radius is about 25px at 1080p, so the support is wider than the streak.
+    pad = 36 * scale + 2
     x0 = max(0, int(min(rod[0], knuckle[0]) - pad))
     x1 = min(w, int(max(rod[0], knuckle[0]) + pad) + 1)
     y0 = max(0, int(min(rod[1], knuckle[1]) - pad))
@@ -47,14 +55,17 @@ def spark(size, rod, knuckle, phase, frames=4):
     if phase < 2:
         start, end = (0., gap) if phase == 0 else (.1*gap, .9*gap)
         t = np.clip((along-start)/(end-start), 0, 1)
-        # ~2px full-width at half maximum in the middle at 1080p,
+        # About 3.8px full-width at half maximum in the middle at 1080p,
         # tapering to rounded fine ends. No rectangle or hard clipping.
-        sigma = scale * (.35 + .50 * np.sin(np.pi*t))
+        sigma = scale * (CORE_SIGMA_END + (CORE_SIGMA_MID - CORE_SIGMA_END) * np.sin(np.pi*t))
         beyond = np.maximum(start-along, 0) + np.maximum(along-end, 0)
         core = np.exp(-.5*((across/sigma)**2 + (beyond/(.35*scale))**2))
         alpha = core * (245 if phase == 0 else 122.5)
         if phase == 0:
-            bloom = 18*np.exp(-.5*((across/(2*scale))**2 + (beyond/(1.1*scale))**2))
+            mid = (rod + knuckle) / 2
+            bloom_sigma = BLOOM_SIGMA * scale
+            radius2 = (xx-mid[0])**2 + (yy-mid[1])**2
+            bloom = BLOOM_PEAK * np.exp(-.5 * radius2 / bloom_sigma**2)
             alpha = np.maximum(alpha, bloom)
     else:
         # Optional generic +2/+3 tail stays at the knuckle, never mid-gap.

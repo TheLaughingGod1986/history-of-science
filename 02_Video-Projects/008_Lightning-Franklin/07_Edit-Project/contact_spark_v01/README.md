@@ -1,3 +1,11 @@
+# HOS 008 contact spark — size revision (desk 6796829044)
+
+Chief's call on Claude's review: one revision for size, not a pass of the hairline. Geometry and the two-frame timing stay. On the peak frame only, the core is about 3.8 px FWHM at 1080p (was about 2 px) and a soft warm bloom, peak alpha 80, is centred on the gap. It falls through a few counts near 25 px and is gone by about 34 px. The next frame stays the shorter half-strength streak, with no bloom.
+
+Phone check: the 1080 frames scaled to 390 px wide. f029 is unchanged. f030 puts a small warm flash on the gap. f031 is the weaker tail. Sheets are in `review_J2613_size/`. No spend, no take edited, nothing past f060.
+
+---
+
 # HOS 008 contact spark — J2613 revision for review
 
 Supersedes the point-shaped J2591 design below. Requested by owner-authored desk rulings 6793746982 (shape) and 6795970738 (take/timing). Existing PR #515 stays unmerged pending Grok’s review.
