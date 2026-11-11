@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-10",
-  "updated_by": "cursor",
+  "updated": "2026-11-11",
+  "updated_by": "codex",
   "board_url": "https://claude.ai/artifact/Hhk519dkbHMzeaZfp3efhc",
   "stages": [
     {
@@ -615,13 +615,19 @@
           "underway": false
         },
         "picture": {
-          "status": "blocked",
+          "status": "doing",
           "due": "2026-11-22",
           "owner": "codex",
-          "note": "J2267: readiness integrated and budget reconciled; 12 Quality Shorts parents scoped, not generated or authorized. 75 total board rows / historical 12911 expected credits. Existing VO and Option A1 retained.",
-          "underway": false,
-          "waiting": "Tested HOS010 runner and live guarded spend preflight after HOS009 J2033; then independent plate review before J2172 assembly",
-          "since": "2026-11-06"
+          "note": "J2270 batch 1 running detached (J2270-batch1): 5 scoped Quality first takes; authorization/live guards verified, stable balance 12590, full-cap headroom 6590. GENERATED/PENDING_REVIEW only; J2271 review remains.",
+          "underway": true,
+          "since": "2026-11-11",
+          "steps": [
+            0,
+            12
+          ],
+          "steps_unit": "scoped plates generated",
+          "left": "First five-row batch running; next worker checks exit file and receipts before continuing",
+          "eta": "2026-11-12T19:13"
         },
         "edit": {
           "status": "todo",
