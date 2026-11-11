@@ -322,3 +322,18 @@ ALL CHECKS PASS
 ```
 
 These are renderer/repository checks, not picture-stage approval. No film, source take, audio or timeline modified; no spend. Only f000–f060 of take 4 may ever be used. Grok reviews the new sheets and timing; J2592 alone places the overlay after his PASS. No worker approval or merge.
+
+
+## J2242 source-validation checkpoint — 11 November 2026
+
+Codex worker; correction assembly remains incomplete (1/3). Source master hash/size verified. Actual AVC sample parsing proves all 113 random-access samples contain IDR slices. All 12,923 source decoded-frame SHA-256 entries retain integer PTS/durations; original 25,296 compressed audio packets recorded for later equality checks. KEEP salon composite, points take 3 and rods take 2 hashes and full decodes verified. Detailed evidence and continuation: `jobs/reviews/J2242/RESUME.md`, `SOURCE_PREFLIGHT.json`, `SELECTED_INPUTS.json`.
+
+Code/source validation only:
+
+```text
+Ran 18 tests — OK (existing planner)
+Ran 4 tests — OK (new preflight)
+ALL CHECKS PASS (check_all.sh; full output jobs/reviews/J2242/CHECK_ALL.txt)
+```
+
+No replacement film exists. Packet splicing, captions, output frame/audio identity, sync, media gates, J2243 and Chief review remain. Original h22/h35, J1297, v01/v02/v03 and J1755 publication rejection preserved. No UAT, upload, generation, spend or media approval.

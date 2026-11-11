@@ -401,7 +401,7 @@
       "title": "Why Did Franklin Fly a Kite in a Storm?",
       "air": "2026-11-19",
       "ready_by": "2026-11-15",
-      "summary": "Historical h35 master/J1297 preserved. Six v03 change notes unresolved. J2163 repairs J1880 with measured PTS planner; J1881 reviews code/evidence and scopes production. Two exact-match assets missing; J1755 delivery/publication rejection separate.",
+      "summary": "Franklin correction assembly J2242: approved repair inputs and original packet/frame baseline verified. Packet splicer and captions still need implementation, then J2243/Chief review. Original v03 notes and J1755 publication hold remain.",
       "stages": {
         "topic": {
           "status": "done"
@@ -460,21 +460,28 @@
           ]
         },
         "edit": {
-          "status": "blocked",
+          "status": "doing",
           "due": "2026-11-12",
-          "owner": "claude",
+          "owner": "codex",
           "since": "2026-11-05T00:00:40.142053+00:00",
           "underway": false,
-          "waiting": "J1881 reviews J2163 repaired input; separately scoped PTS/GOP splicer, master-word alignment and exact-match assets required. J1755 separate delivery hold.",
-          "note": "J2163 code/evidence delivered: master hash/full decoded PTS and four source hashes verified; 11 tests pass. Output frame delta/sync/unchanged-frame/audio identity UNMEASURED. Six v03 notes unresolved; h22/h35/J1297 preserved. No render or new approval.",
+          "waiting": "J2242 continuation: implement packet splice and caption render, then output preservation and all gates. No replacement master exists.",
+          "note": "J2242 source checkpoint: 12,923 decoded hashes retain integer PTS/durations; all 113 random-access samples are actual IDR; 25,296 audio packet hashes recorded. Salon composite, points take 3 and rods take 2 hashes/full decodes verified. 22 tests and check_all pass. No output/media approval.",
           "jobs": [
             "J1297",
             "J1755",
             "J1868",
             "J1880",
             "J1881",
-            "J2163"
-          ]
+            "J2163",
+            "J2242",
+            "J2243"
+          ],
+          "steps": [
+            1,
+            3
+          ],
+          "steps_unit": "assembly steps completed"
         },
         "thumbnails": {
           "status": "todo",
