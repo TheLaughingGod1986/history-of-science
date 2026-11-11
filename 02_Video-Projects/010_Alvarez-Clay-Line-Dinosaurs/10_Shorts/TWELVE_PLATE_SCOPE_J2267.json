@@ -81,8 +81,8 @@
     {
       "identity": "P2:01_walter_hammer",
       "source_board": "07_Edit-Project/parts/part-02_plates_v03.json",
-      "source_board_sha256": "e8288df2e05426a6d779f0e865b228883bc8dd1566e91c4959950902dd359809",
-      "prompt": "Premium Animistry-class 3D cartoon. Gubbio in the nineteen-seventies. Walter Alvarez, clean-shaven, fair hair, dark-rimmed glasses, a short-sleeved field shirt, taps the sunlit cliff with a geologist's hammer. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "source_board_sha256": "68696f838534ea63a62930958990a4ba6331dbb66113c55509a57440cf9e485f",
+      "prompt": "Premium Animistry-class 3D cartoon. Gubbio in the nineteen-seventies. A geologist in his thirties, clean-shaven, fair hair, dark-rimmed glasses, a short-sleeved field shirt, taps the sunlit cliff with a rock hammer. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
       "reference": "set A continuity; no still reference",
       "quality": "Quality",
       "model": "Veo 3.1 Quality",
@@ -118,7 +118,7 @@
     {
       "identity": "P2:03_tiny_shells",
       "source_board": "07_Edit-Project/parts/part-02_plates_v03.json",
-      "source_board_sha256": "e8288df2e05426a6d779f0e865b228883bc8dd1566e91c4959950902dd359809",
+      "source_board_sha256": "68696f838534ea63a62930958990a4ba6331dbb66113c55509a57440cf9e485f",
       "prompt": "Premium Animistry-class 3D cartoon. A hand lens over the pale limestone below the clay. The rock is crowded with tiny round fossil shells, each the size of a grain of sand. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
       "reference": "set A continuity; no still reference",
       "quality": "Quality",
@@ -155,7 +155,7 @@
     {
       "identity": "P2:05_almost_none",
       "source_board": "07_Edit-Project/parts/part-02_plates_v03.json",
-      "source_board_sha256": "e8288df2e05426a6d779f0e865b228883bc8dd1566e91c4959950902dd359809",
+      "source_board_sha256": "68696f838534ea63a62930958990a4ba6331dbb66113c55509a57440cf9e485f",
       "prompt": "Premium Animistry-class 3D cartoon. The hand lens moves above the clay line. The rock is almost empty, only a few very small shells. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
       "reference": "set A continuity; no still reference",
       "quality": "Quality",
@@ -192,8 +192,8 @@
     {
       "identity": "P3:08_asaro_michel",
       "source_board": "07_Edit-Project/parts/part-03_plates_v03.json",
-      "source_board_sha256": "ee896f9b8608441f52cc784f3e198c9488ec941e98775b14d1d89c709dd889bf",
-      "prompt": "Premium Animistry-class 3D cartoon. A late-nineteen-seventies Berkeley lab. Frank Asaro and Helen Michel, kind likenesses in lab coats, press powdered samples into small pills and set them by a detector rack. Tape reels turn. No reactor. No readable screens. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "source_board_sha256": "80d0244add132376ecf7b037b14b6d563d818333ac135515bba46e2f6df02cfb",
+      "prompt": "Premium Animistry-class 3D cartoon. A late-nineteen-seventies Berkeley lab. Two nuclear chemists in lab coats, a man of about fifty and a woman in her mid-forties, press powdered samples into small pills and set them by a detector rack. Tape reels turn. No reactor. No readable screens. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
       "reference": "set D continuity; no still reference",
       "quality": "Quality",
       "model": "Veo 3.1 Quality",
