@@ -1,0 +1,771 @@
+{
+  "job": "J2558",
+  "film": "HOS:013",
+  "plan_version": "PICTURE_PLAN_v02",
+  "date": "2026-11-11",
+  "by": "gemini",
+  "ruling": [
+    "history-of-science#180 comment 6774289583, item 3",
+    "history-of-science#180 comment 6787044973",
+    "history-of-science#180 comment 6788217207 (011 PR #495 pattern)"
+  ],
+  "base_wording_commits": [
+    "f859ac84 (PR #496: 34 prompts reworded to name no real person)",
+    "d7f4849c (PR #498: 4 prompts reworded for 1837/1838 clean-shaven London Darwin)"
+  ],
+  "summary": {
+    "fast_rows_in_v01": 23,
+    "fast_rows_in_v02": 0,
+    "fast_swapped_to_free": 5,
+    "fast_swapped_to_archive": 3,
+    "fast_swapped_to_code_graphic": 2,
+    "fast_upgraded_to_quality": 18,
+    "quality_rows_in_v01": 48,
+    "quality_rows_in_v02": 66,
+    "free_rows_in_v01": 23,
+    "free_rows_in_v02": 28,
+    "v01_flow_credits_try1": 5030,
+    "v01_flow_credits_expected": 12892,
+    "v02_flow_credits_try1": 6600,
+    "v02_flow_credits_expected": 17094,
+    "v02_vertex_try1_gbp": 70.08,
+    "v02_vertex_expected_gbp": 186.39,
+    "all_66_quality_prompts_word_for_word_from_496_498": true,
+    "back_to_back_graphics_count": 0,
+    "generation_authorized": false
+  },
+  "rows": [
+    {
+      "duration_s": 4.0,
+      "new": {
+        "flow_credits_expected": 259,
+        "flow_credits_try1": 100,
+        "flow_model": "Veo 3.1 - Quality",
+        "prompt": "Premium Animistry-class 3D cartoon. On a wooden study table in grey window light, a naturalist's hands set down three small dark finch skins with blank unlettered paper tags tied to their legs. Daylight, window light or matte painted ink only. No candle, flame, glow, spark, fireball or lightning. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+        "quality": "Quality",
+        "route": "flow-first",
+        "shot_description": "On the wooden study table in grey window light, hands lay down three dark Gal\u00e1pagos finch skins with blank parchment tags tied to their legs (HOS-2026-11-E2 physical proof 0:05\u20130:15)",
+        "source_kind": "new_mint_quality"
+      },
+      "next_row": "P1:03b_malay_packet",
+      "old": {
+        "flow_credits_expected": 20,
+        "flow_credits_try1": 10,
+        "flow_model": "Veo 3.1 - Fast",
+        "prompt": "Premium Animistry-class 3D cartoon. On a wooden study table in grey window light, a naturalist's hands set down three small dark finch skins with blank unlettered paper tags tied to their legs. Daylight, window light or matte painted ink only. No candle, flame, glow, spark, fireball or lightning. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+        "quality": "Fast",
+        "route": "flow-first",
+        "shot_description": "On the wooden study table in grey window light, hands lay down three dark Gal\u00e1pagos finch skins with blank parchment tags tied to their legs (HOS-2026-11-E2 physical proof 0:05\u20130:15)",
+        "source_kind": "new_mint_fast"
+      },
+      "part": 1,
+      "prev_row": "P1:02_drawer_lock",
+      "prompt_word_for_word_unchanged": true,
+      "reason": "In 0:00\u20130:30 HOS-2026-11-E2 open (physical proof 0:05\u20130:15) and reused in Short A; upgraded to Veo 3.1 - Quality.",
+      "row_id": "P1:03a_unlabelled_birds",
+      "t_in_s": 7.9,
+      "t_out_s": 11.9
+    },
+    {
+      "duration_s": 2.98,
+      "new": {
+        "flow_credits_expected": 259,
+        "flow_credits_try1": 100,
+        "flow_model": "Veo 3.1 - Quality",
+        "prompt": "Premium Animistry-class 3D cartoon. Slow push-in on a red wax seal and a brass magnifying glass resting beside a twine-tied paper packet on a wooden desk in grey window light. Daylight, window light or matte painted ink only. No candle, flame, glow, spark, fireball or lightning. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+        "quality": "Quality",
+        "route": "flow-first",
+        "shot_description": "Close push-in on the red wax seal and brass magnifying glass beside the twine-tied packet in grey window light (HOS-2026-11-E2 cut < 4.5 s)",
+        "source_kind": "new_mint_quality"
+      },
+      "next_row": "P1:04b_drawer_unlock",
+      "old": {
+        "flow_credits_expected": 20,
+        "flow_credits_try1": 10,
+        "flow_model": "Veo 3.1 - Fast",
+        "prompt": "Premium Animistry-class 3D cartoon. Slow push-in on a red wax seal and a brass magnifying glass resting beside a twine-tied paper packet on a wooden desk in grey window light. Daylight, window light or matte painted ink only. No candle, flame, glow, spark, fireball or lightning. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+        "quality": "Fast",
+        "route": "flow-first",
+        "shot_description": "Close push-in on the red wax seal and brass magnifying glass beside the twine-tied packet in grey window light (HOS-2026-11-E2 cut < 4.5 s)",
+        "source_kind": "new_mint_fast"
+      },
+      "part": 1,
+      "prev_row": "P1:03b_malay_packet",
+      "prompt_word_for_word_unchanged": true,
+      "reason": "In 0:00\u20130:30 HOS-2026-11-E2 open (>=7 moving plates, cut <= 4.5 s); upgraded to Veo 3.1 - Quality.",
+      "row_id": "P1:04a_packet_seal",
+      "t_in_s": 16.02,
+      "t_out_s": 19.0
+    },
+    {
+      "duration_s": 2.64,
+      "new": {
+        "flow_credits_expected": 259,
+        "flow_credits_try1": 100,
+        "flow_model": "Veo 3.1 - Quality",
+        "prompt": "Premium Animistry-class 3D cartoon. Close on a hand turning a brass key in a mahogany desk drawer and sliding the closed red-leather notebook out into grey window light. Daylight, window light or matte painted ink only. No candle, flame, glow, spark, fireball or lightning. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+        "quality": "Quality",
+        "route": "flow-first",
+        "shot_description": "Close on a hand turning the brass key in the mahogany desk drawer and sliding the locked red-leather notebook back into the open in grey window light (HOS-2026-11-E2 cut < 4.5 s)",
+        "source_kind": "new_mint_quality"
+      },
+      "next_row": "P1:05a_museum_cases",
+      "old": {
+        "flow_credits_expected": 20,
+        "flow_credits_try1": 10,
+        "flow_model": "Veo 3.1 - Fast",
+        "prompt": "Premium Animistry-class 3D cartoon. Close on a hand turning a brass key in a mahogany desk drawer and sliding the closed red-leather notebook out into grey window light. Daylight, window light or matte painted ink only. No candle, flame, glow, spark, fireball or lightning. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+        "quality": "Fast",
+        "route": "flow-first",
+        "shot_description": "Close on a hand turning the brass key in the mahogany desk drawer and sliding the locked red-leather notebook back into the open in grey window light (HOS-2026-11-E2 cut < 4.5 s)",
+        "source_kind": "new_mint_fast"
+      },
+      "part": 1,
+      "prev_row": "P1:04a_packet_seal",
+      "prompt_word_for_word_unchanged": true,
+      "reason": "In 0:00\u20130:30 HOS-2026-11-E2 open (>=7 moving plates, cut <= 4.5 s); upgraded to Veo 3.1 - Quality.",
+      "row_id": "P1:04b_drawer_unlock",
+      "t_in_s": 19.0,
+      "t_out_s": 21.64
+    },
+    {
+      "duration_s": 3.58,
+      "new": {
+        "flow_credits_expected": 259,
+        "flow_credits_try1": 100,
+        "flow_model": "Veo 3.1 - Quality",
+        "prompt": "Premium Animistry-class 3D cartoon. Close tracking shot along a locked glass museum case of preserved bird and reptile specimens in grey window light, brass lock bolts fixed shut. Daylight, window light or matte painted ink only. No candle, flame, glow, spark, fireball or lightning. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+        "quality": "Quality",
+        "route": "flow-first",
+        "shot_description": "Close tracking shot along a locked glass museum case of preserved birds and skeletons in grey window light, brass lock bolts fixed shut (HOS-2026-11-E2 cut < 4.5 s)",
+        "source_kind": "new_mint_quality"
+      },
+      "next_row": "P1:06_padlock_shut",
+      "old": {
+        "flow_credits_expected": 20,
+        "flow_credits_try1": 10,
+        "flow_model": "Veo 3.1 - Fast",
+        "prompt": "Premium Animistry-class 3D cartoon. Close tracking shot along a locked glass museum case of preserved bird and reptile specimens in grey window light, brass lock bolts fixed shut. Daylight, window light or matte painted ink only. No candle, flame, glow, spark, fireball or lightning. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+        "quality": "Fast",
+        "route": "flow-first",
+        "shot_description": "Close tracking shot along a locked glass museum case of preserved birds and skeletons in grey window light, brass lock bolts fixed shut (HOS-2026-11-E2 cut < 4.5 s)",
+        "source_kind": "new_mint_fast"
+      },
+      "part": 1,
+      "prev_row": "P1:05a_museum_cases",
+      "prompt_word_for_word_unchanged": true,
+      "reason": "In 0:00\u20130:30 HOS-2026-11-E2 open (>=7 moving plates, cut <= 4.5 s); upgraded to Veo 3.1 - Quality.",
+      "row_id": "P1:05b_museum_plaques",
+      "t_in_s": 25.64,
+      "t_out_s": 29.22
+    },
+    {
+      "duration_s": 4.22,
+      "new": {
+        "flow_credits_expected": 259,
+        "flow_credits_try1": 100,
+        "flow_model": "Veo 3.1 - Quality",
+        "prompt": "Premium Animistry-class 3D cartoon. Close-up in grey window light: a heavy iron padlock clicks shut on a wooden specimen chest. Daylight, window light or matte painted ink only. No candle, flame, glow, spark, fireball or lightning. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+        "quality": "Quality",
+        "route": "flow-first",
+        "shot_description": "Close-up in grey window light: a heavy iron padlock clicks shut on a wooden specimen box (9th moving plate overlapping 0:00\u20130:30, cut 4.22 s <= 4.5 s)",
+        "source_kind": "new_mint_quality"
+      },
+      "next_row": "P1:07_darwin_1837_desk",
+      "old": {
+        "flow_credits_expected": 20,
+        "flow_credits_try1": 10,
+        "flow_model": "Veo 3.1 - Fast",
+        "prompt": "Premium Animistry-class 3D cartoon. Close-up in grey window light: a heavy iron padlock clicks shut on a wooden specimen chest. Daylight, window light or matte painted ink only. No candle, flame, glow, spark, fireball or lightning. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+        "quality": "Fast",
+        "route": "flow-first",
+        "shot_description": "Close-up in grey window light: a heavy iron padlock clicks shut on a wooden specimen box (9th moving plate overlapping 0:00\u20130:30, cut 4.22 s <= 4.5 s)",
+        "source_kind": "new_mint_fast"
+      },
+      "part": 1,
+      "prev_row": "P1:05b_museum_plaques",
+      "prompt_word_for_word_unchanged": true,
+      "reason": "Overlaps 0:00\u20130:30 HOS-2026-11-E2 open (0:29.22\u20130:33.44); upgraded to Veo 3.1 - Quality.",
+      "row_id": "P1:06_padlock_shut",
+      "t_in_s": 29.22,
+      "t_out_s": 33.44
+    },
+    {
+      "duration_s": 5.22,
+      "new": {
+        "flow_credits_expected": 259,
+        "flow_credits_try1": 100,
+        "flow_model": "Veo 3.1 - Quality",
+        "prompt": "Premium Animistry-class 3D cartoon. Close-up on a wooden cabin table in daylight: three small dark bird skins lie in a row with blank unlettered parchment tags fluttering gently. Daylight, window light or matte painted ink only. No candle, flame, glow, spark, fireball or lightning. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+        "quality": "Quality",
+        "route": "flow-first",
+        "shot_description": "Close-up on the Beagle cabin table in daylight: three dark bird skins (blackbird-like, wren-like, finch-like) with blank parchment tags fluttering in the sea breeze",
+        "source_kind": "new_mint_quality"
+      },
+      "next_row": "P2:05_tortoise_overboard",
+      "old": {
+        "flow_credits_expected": 20,
+        "flow_credits_try1": 10,
+        "flow_model": "Veo 3.1 - Fast",
+        "prompt": "Premium Animistry-class 3D cartoon. Close-up on a wooden cabin table in daylight: three small dark bird skins lie in a row with blank unlettered parchment tags fluttering gently. Daylight, window light or matte painted ink only. No candle, flame, glow, spark, fireball or lightning. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+        "quality": "Fast",
+        "route": "flow-first",
+        "shot_description": "Close-up on the Beagle cabin table in daylight: three dark bird skins (blackbird-like, wren-like, finch-like) with blank parchment tags fluttering in the sea breeze",
+        "source_kind": "new_mint_fast"
+      },
+      "part": 2,
+      "prev_row": "P2:03_unlabelled_bagging",
+      "prompt_word_for_word_unchanged": true,
+      "reason": "Reused in Short A (0:08.56\u20130:12.02) and carries FACT: FORGOT TO LABEL; upgraded to Veo 3.1 - Quality.",
+      "row_id": "P2:04_blank_tags_row",
+      "t_in_s": 92.18,
+      "t_out_s": 97.4
+    },
+    {
+      "duration_s": 4.3,
+      "new": {
+        "flow_credits_expected": 259,
+        "flow_credits_try1": 100,
+        "flow_model": "Veo 3.1 - Quality",
+        "prompt": "Premium Animistry-class 3D cartoon. Close tracking shot in grey window light across a neat row of Gal\u00e1pagos finch skins arranged from heavy stout beak to slender probing beak on a mahogany table. Daylight, window light or matte painted ink only. No candle, flame, glow, spark, fireball or lightning. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+        "quality": "Quality",
+        "route": "flow-first",
+        "shot_description": "Close dolly in grey window light across the row of Gal\u00e1pagos finch skins laid out by beak depth on Gould's mahogany table",
+        "source_kind": "new_mint_quality"
+      },
+      "next_row": "P2:09_cg_finch_toolbox",
+      "old": {
+        "flow_credits_expected": 20,
+        "flow_credits_try1": 10,
+        "flow_model": "Veo 3.1 - Fast",
+        "prompt": "Premium Animistry-class 3D cartoon. Close tracking shot in grey window light across a neat row of Gal\u00e1pagos finch skins arranged from heavy stout beak to slender probing beak on a mahogany table. Daylight, window light or matte painted ink only. No candle, flame, glow, spark, fireball or lightning. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+        "quality": "Fast",
+        "route": "flow-first",
+        "shot_description": "Close dolly in grey window light across the row of Gal\u00e1pagos finch skins laid out by beak depth on Gould's mahogany table",
+        "source_kind": "new_mint_fast"
+      },
+      "part": 2,
+      "prev_row": "P2:08a_gould_sorting",
+      "prompt_word_for_word_unchanged": true,
+      "reason": "Immediately precedes full-frame code graphic P2:09_cg_finch_toolbox; upgraded to Veo 3.1 - Quality so no back-to-back graphics occur.",
+      "row_id": "P2:08b_gould_skins_closeup",
+      "t_in_s": 127.1,
+      "t_out_s": 131.4
+    },
+    {
+      "duration_s": 3.3,
+      "new": {
+        "archive_source": {
+          "commons_page": "https://commons.wikimedia.org/wiki/File%3ADarwin%27s_finches_by_Gould.jpg",
+          "description": "John Gould, Darwin's finches lithograph, Journal of Researches (1845)",
+          "id": "gould_finches_1845",
+          "licence": "Public domain",
+          "local_raw": "07_Edit-Project/archive_pulls_v01/raw/gould_finches_1845.jpg",
+          "sha256": "031197cb402d34912f6337cccd335a0ec353ae6d9fe86070c5d5b5a2dfac2acc"
+        },
+        "flow_credits_expected": 0,
+        "flow_credits_try1": 0,
+        "flow_model": null,
+        "prompt": null,
+        "quality": "archive",
+        "route": "archive",
+        "shot_description": "Public-domain 1845 John Gould lithograph of Darwin's Gal\u00e1pagos finch heads (Geospiza magnirostris, fortis, parvula, Certhidea olivacea) from Journal of Researches (2nd ed., 1845, p. 379) composited beside the neatly tagged HMS Beagle specimen tray labels (Chatham Island, James Island, Charles Island)",
+        "source_kind": "free_archive"
+      },
+      "next_row": "P2:11_island_split_vision",
+      "old": {
+        "flow_credits_expected": 20,
+        "flow_credits_try1": 10,
+        "flow_model": "Veo 3.1 - Fast",
+        "prompt": "Premium Animistry-class 3D cartoon. Close on two neatly tagged bird specimens resting beside brass dividers on a wooden chart table in daylight. Daylight, window light or matte painted ink only. No candle, flame, glow, spark, fireball or lightning. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+        "quality": "Fast",
+        "route": "flow-first",
+        "shot_description": "Close on two neatly tagged shipmates' bird skins beside a brass dividers and island chart on the cabin table in daylight",
+        "source_kind": "new_mint_fast"
+      },
+      "part": 2,
+      "prev_row": "P2:10a_explorer_shipmates",
+      "reason": "Swapped to \u00a30 free_archive composite (John Gould, Darwin's finches lithograph, Journal of Researches, 2nd ed., 1845, p. 379, Wikimedia Commons File:Darwin's_finches_by_Gould.jpg, Public domain) between moving 3D Quality plates P2:10a_explorer_shipmates and P2:11_island_split_vision.",
+      "row_id": "P2:10b_shipmate_tagged_tray",
+      "t_in_s": 149.9,
+      "t_out_s": 153.2
+    },
+    {
+      "duration_s": 5.2,
+      "new": {
+        "flow_credits_expected": 259,
+        "flow_credits_try1": 100,
+        "flow_model": "Veo 3.1 - Quality",
+        "prompt": "Premium Animistry-class 3D cartoon. Sun-baked Gal\u00e1pagos earth in daylight: cracked dry soil scattered with large, thick-shelled woody seeds under a pale dry sky. Daylight, window light or matte painted ink only. No candle, flame, glow, spark, fireball or lightning. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+        "quality": "Quality",
+        "route": "flow-first",
+        "shot_description": "Sun-baked Gal\u00e1pagos island in a drought year in daylight: cracked dry earth with only large, thick-shelled woody seeds left on the ground",
+        "source_kind": "new_mint_quality"
+      },
+      "next_row": "P3:04b_finch_cracks_seed",
+      "old": {
+        "flow_credits_expected": 20,
+        "flow_credits_try1": 10,
+        "flow_model": "Veo 3.1 - Fast",
+        "prompt": "Premium Animistry-class 3D cartoon. Sun-baked Gal\u00e1pagos earth in daylight: cracked dry soil scattered with large, thick-shelled woody seeds under a pale dry sky. Daylight, window light or matte painted ink only. No candle, flame, glow, spark, fireball or lightning. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+        "quality": "Fast",
+        "route": "flow-first",
+        "shot_description": "Sun-baked Gal\u00e1pagos island in a drought year in daylight: cracked dry earth with only large, thick-shelled woody seeds left on the ground",
+        "source_kind": "new_mint_fast"
+      },
+      "part": 3,
+      "prev_row": "P3:03_cg_malthus_curve",
+      "prompt_word_for_word_unchanged": true,
+      "reason": "Immediately follows full-frame code graphic P3:03_cg_malthus_curve; upgraded to Veo 3.1 - Quality so no back-to-back graphics occur.",
+      "row_id": "P3:04a_drought_island_seeds",
+      "t_in_s": 192.1,
+      "t_out_s": 197.3
+    },
+    {
+      "duration_s": 5.44,
+      "new": {
+        "flow_credits_expected": 259,
+        "flow_credits_try1": 100,
+        "flow_model": "Veo 3.1 - Quality",
+        "prompt": "Premium Animistry-class 3D cartoon. Close in grey window light on a man's hand writing a letter with a steel pen on cream paper, pausing in hesitation. Daylight, window light or matte painted ink only. No candle, flame, glow, spark, fireball or lightning. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+        "quality": "Quality",
+        "route": "flow-first",
+        "shot_description": "Close in grey window light on Darwin's hand writing a letter to Joseph Hooker with a steel pen, pausing in hesitation",
+        "source_kind": "new_mint_quality"
+      },
+      "next_row": "P3:08_emma_study",
+      "old": {
+        "flow_credits_expected": 20,
+        "flow_credits_try1": 10,
+        "flow_model": "Veo 3.1 - Fast",
+        "prompt": "Premium Animistry-class 3D cartoon. Close in grey window light on a man's hand writing a letter with a steel pen on cream paper, pausing in hesitation. Daylight, window light or matte painted ink only. No candle, flame, glow, spark, fireball or lightning. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+        "quality": "Fast",
+        "route": "flow-first",
+        "shot_description": "Close in grey window light on Darwin's hand writing a letter to Joseph Hooker with a steel pen, pausing in hesitation",
+        "source_kind": "new_mint_fast"
+      },
+      "part": 3,
+      "prev_row": "P3:07a_darwin_afraid_window",
+      "prompt_word_for_word_unchanged": true,
+      "reason": "Close-up action of hand writing the January 1844 'confessing a murder' letter (reworded in #496 PROMPT_CHANGE_2026-11-11.json); upgraded to Veo 3.1 - Quality.",
+      "row_id": "P3:07b_confessing_murder_letter",
+      "t_in_s": 223.9,
+      "t_out_s": 229.34
+    },
+    {
+      "duration_s": 6.44,
+      "new": {
+        "flow_credits_expected": 0,
+        "flow_credits_try1": 0,
+        "flow_model": null,
+        "prompt": null,
+        "quality": "code_graphic",
+        "route": "code-graphic",
+        "shot_description": "Code graphic / case-file timeline: 230-page fair-copy manuscript stack sealed with red tape on period paper as timeline step 4/7 ('July 1844 \u00b7 230-page essay') drops in",
+        "source_kind": "code_graphic"
+      },
+      "next_row": "P3:09b_emma_letter_cupboard",
+      "old": {
+        "flow_credits_expected": 20,
+        "flow_credits_try1": 10,
+        "flow_model": "Veo 3.1 - Fast",
+        "prompt": "Premium Animistry-class 3D cartoon. Close in grey window light on hands tying a thick 230-page handwritten manuscript stack with red ribbon on a mahogany desk. Daylight, window light or matte painted ink only. No candle, flame, glow, spark, fireball or lightning. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+        "quality": "Fast",
+        "route": "flow-first",
+        "shot_description": "July 1844 (before Vestiges, J0307 fix #1): in grey window light, Darwin's hands tie a thick 230-page fair-copy manuscript with red tape",
+        "source_kind": "new_mint_fast"
+      },
+      "part": 3,
+      "prev_row": "P3:08_emma_study",
+      "reason": "Swapped to \u00a30 code-graphic case-file & timeline beat (July 1844 230-page fair-copy essay stack + timeline step 4/7) between moving 3D Quality plates P3:08_emma_study and P3:09b_emma_letter_cupboard.",
+      "row_id": "P3:09a_essay_1844_sealed",
+      "t_in_s": 234.2,
+      "t_out_s": 240.64
+    },
+    {
+      "duration_s": 5.62,
+      "new": {
+        "flow_credits_expected": 259,
+        "flow_credits_try1": 100,
+        "flow_model": "Veo 3.1 - Quality",
+        "prompt": "Premium Animistry-class 3D cartoon. In a sunlit study at Down House, a visiting gentleman geologist gestures urgently toward a locked wooden manuscript cupboard. Daylight, window light or matte painted ink only. No candle, flame, glow, spark, fireball or lightning. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+        "quality": "Quality",
+        "route": "flow-first",
+        "shot_description": "At Down House in grey window light, a visiting geologist gestures urgently toward Darwin's locked manuscript cupboard",
+        "source_kind": "new_mint_quality"
+      },
+      "next_row": "P3:13b_brass_globe_turn",
+      "old": {
+        "flow_credits_expected": 20,
+        "flow_credits_try1": 10,
+        "flow_model": "Veo 3.1 - Fast",
+        "prompt": "Premium Animistry-class 3D cartoon. In a sunlit study at Down House, a visiting gentleman geologist gestures urgently toward a locked wooden manuscript cupboard. Daylight, window light or matte painted ink only. No candle, flame, glow, spark, fireball or lightning. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+        "quality": "Fast",
+        "route": "flow-first",
+        "shot_description": "At Down House in grey window light, a visiting geologist gestures urgently toward Darwin's locked manuscript cupboard",
+        "source_kind": "new_mint_fast"
+      },
+      "part": 3,
+      "prev_row": "P3:12_cg_barnacle_counter",
+      "prompt_word_for_word_unchanged": true,
+      "reason": "Immediately follows full-frame code graphic P3:12_cg_barnacle_counter and carries WHO: Charles Lyell; upgraded to Veo 3.1 - Quality so no back-to-back graphics occur.",
+      "row_id": "P3:13a_lyell_warning",
+      "t_in_s": 267.48,
+      "t_out_s": 273.1
+    },
+    {
+      "duration_s": 3.16,
+      "new": {
+        "flow_credits_expected": 259,
+        "flow_credits_try1": 100,
+        "flow_model": "Veo 3.1 - Quality",
+        "prompt": "Premium Animistry-class 3D cartoon. Close on a period brass-mounted desktop globe in grey window light spinning smoothly toward the islands of Southeast Asia. Daylight, window light or matte painted ink only. No candle, flame, glow, spark, fireball or lightning. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+        "quality": "Quality",
+        "route": "flow-first",
+        "shot_description": "Close on a brass desktop globe in grey window light spinning toward the islands of the Malay Archipelago",
+        "source_kind": "new_mint_quality"
+      },
+      "next_row": "P4:01_card_p04",
+      "old": {
+        "flow_credits_expected": 20,
+        "flow_credits_try1": 10,
+        "flow_model": "Veo 3.1 - Fast",
+        "prompt": "Premium Animistry-class 3D cartoon. Close on a period brass-mounted desktop globe in grey window light spinning smoothly toward the islands of Southeast Asia. Daylight, window light or matte painted ink only. No candle, flame, glow, spark, fireball or lightning. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+        "quality": "Fast",
+        "route": "flow-first",
+        "shot_description": "Close on a brass desktop globe in grey window light spinning toward the islands of the Malay Archipelago",
+        "source_kind": "new_mint_fast"
+      },
+      "part": 3,
+      "prev_row": "P3:13a_lyell_warning",
+      "prompt_word_for_word_unchanged": true,
+      "reason": "Immediately precedes full-frame chapter card P4:01_card_p04; upgraded to Veo 3.1 - Quality so no back-to-back graphics occur.",
+      "row_id": "P3:13b_brass_globe_turn",
+      "t_in_s": 273.1,
+      "t_out_s": 276.26
+    },
+    {
+      "duration_s": 4.68,
+      "new": {
+        "archive_source": {
+          "commons_page": "https://commons.wikimedia.org/wiki/File%3ACharles_Darwin_seated.jpg",
+          "description": "Charles Darwin (1809\u20131882), photograph by Maull & Fox (c. 1854)",
+          "id": "who_charles_darwin",
+          "licence": "Public domain",
+          "local_raw": "07_Edit-Project/archive_pulls_v01/raw/who_charles_darwin.jpg",
+          "sha256": "5406784a366fd851df92a23c6826a81b43e625fb72d4ae047b4610c6067b9f61"
+        },
+        "flow_credits_expected": 0,
+        "flow_credits_try1": 0,
+        "flow_model": null,
+        "prompt": null,
+        "quality": "archive",
+        "route": "archive",
+        "shot_description": "Public-domain Maull & Fox seated photograph of Charles Darwin (c. 1854) composited on the period dispatch desk beside the Ternate \u2192 Down House packet route stamp",
+        "source_kind": "free_archive"
+      },
+      "next_row": "P4:08_midpoint_twist_packet",
+      "old": {
+        "flow_credits_expected": 20,
+        "flow_credits_try1": 10,
+        "flow_model": "Veo 3.1 - Fast",
+        "prompt": "Premium Animistry-class 3D cartoon. In daylight on a wooden jetty, hands tie a twine-wrapped paper packet sealed with red wax and drop it into a canvas mailbag. Daylight, window light or matte painted ink only. No candle, flame, glow, spark, fireball or lightning. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+        "quality": "Fast",
+        "route": "flow-first",
+        "shot_description": "In daylight on a tropical jetty, hands tie the twine-wrapped paper packet and place it into a canvas mail steamer bag",
+        "source_kind": "new_mint_fast"
+      },
+      "part": 4,
+      "prev_row": "P4:07a_wallace_writes_hut",
+      "reason": "Swapped to \u00a30 free_archive composite (Maull & Fox seated photograph of Charles Darwin, c. 1854, Wikimedia Commons File:Charles_Darwin_seated.jpg, Public domain) between moving 3D Quality plates P4:07a_wallace_writes_hut and P4:08_midpoint_twist_packet.",
+      "row_id": "P4:07b_packet_to_mailbag",
+      "t_in_s": 326.0,
+      "t_out_s": 330.68
+    },
+    {
+      "duration_s": 5.3,
+      "new": {
+        "flow_credits_expected": 259,
+        "flow_credits_try1": 100,
+        "flow_model": "Veo 3.1 - Quality",
+        "prompt": "Premium Animistry-class 3D cartoon. Close in grey window light on a man's hand writing urgently with a steel pen across letter paper on a mahogany desk. Daylight, window light or matte painted ink only. No candle, flame, glow, spark, fireball or lightning. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+        "quality": "Quality",
+        "route": "flow-first",
+        "shot_description": "Close in grey window light on Darwin's hand writing urgently to Charles Lyell (\"All my originality... will be smashed\", DCP-LETT-2285)",
+        "source_kind": "new_mint_quality"
+      },
+      "next_row": "P4:10_fairness_25_june",
+      "old": {
+        "flow_credits_expected": 20,
+        "flow_credits_try1": 10,
+        "flow_model": "Veo 3.1 - Fast",
+        "prompt": "Premium Animistry-class 3D cartoon. Close in grey window light on a man's hand writing urgently with a steel pen across letter paper on a mahogany desk. Daylight, window light or matte painted ink only. No candle, flame, glow, spark, fireball or lightning. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+        "quality": "Fast",
+        "route": "flow-first",
+        "shot_description": "Close in grey window light on Darwin's hand writing urgently to Charles Lyell (\"All my originality... will be smashed\", DCP-LETT-2285)",
+        "source_kind": "new_mint_fast"
+      },
+      "part": 4,
+      "prev_row": "P4:09a_darwin_reads_wallace",
+      "prompt_word_for_word_unchanged": true,
+      "reason": "Close-up action of hand writing urgently on 18 June 1858 (reworded in #496 PROMPT_CHANGE_2026-11-11.json); upgraded to Veo 3.1 - Quality.",
+      "row_id": "P4:09b_smashed_letter_pen",
+      "t_in_s": 344.2,
+      "t_out_s": 349.5
+    },
+    {
+      "duration_s": 6.08,
+      "new": {
+        "flow_credits_expected": 259,
+        "flow_credits_try1": 100,
+        "flow_model": "Veo 3.1 - Quality",
+        "prompt": "Premium Animistry-class 3D cartoon. In grey window light at Down House, hands place the thick 1844 manuscript beside the thin foreign paper packet and fold a second letter. Daylight, window light or matte painted ink only. No candle, flame, glow, spark, fireball or lightning. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+        "quality": "Quality",
+        "route": "flow-first",
+        "shot_description": "25 June 1858 (J0307 fix #2 \u2014 before 28 June death): in grey window light, Darwin places his own 1844 sketch beside Wallace's paper and seals a second letter to Lyell offering to give up priority",
+        "source_kind": "new_mint_quality"
+      },
+      "next_row": "P4:11_down_house_grief",
+      "old": {
+        "flow_credits_expected": 20,
+        "flow_credits_try1": 10,
+        "flow_model": "Veo 3.1 - Fast",
+        "prompt": "Premium Animistry-class 3D cartoon. In grey window light at Down House, hands place the thick 1844 manuscript beside the thin foreign paper packet and fold a second letter. Daylight, window light or matte painted ink only. No candle, flame, glow, spark, fireball or lightning. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+        "quality": "Fast",
+        "route": "flow-first",
+        "shot_description": "25 June 1858 (J0307 fix #2 \u2014 before 28 June death): in grey window light, Darwin places his own 1844 sketch beside Wallace's paper and seals a second letter to Lyell offering to give up priority",
+        "source_kind": "new_mint_fast"
+      },
+      "part": 4,
+      "prev_row": "P4:09b_smashed_letter_pen",
+      "prompt_word_for_word_unchanged": true,
+      "reason": "Hands placing the 1844 manuscript beside the foreign packet and folding the 25 June 1858 letter (reworded in #496 PROMPT_CHANGE_2026-11-11.json); upgraded to Veo 3.1 - Quality.",
+      "row_id": "P4:10_fairness_25_june",
+      "t_in_s": 349.5,
+      "t_out_s": 355.58
+    },
+    {
+      "duration_s": 5.36,
+      "new": {
+        "flow_credits_expected": 259,
+        "flow_credits_try1": 100,
+        "flow_model": "Veo 3.1 - Quality",
+        "prompt": "Premium Animistry-class 3D cartoon. In London daylight, two Victorian gentlemen tie two manuscript bundles together with ribbon and carry them up stone steps. Daylight, window light or matte painted ink only. No candle, flame, glow, spark, fireball or lightning. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+        "quality": "Quality",
+        "route": "flow-first",
+        "shot_description": "In London in daylight, two naturalists tie Wallace's essay and Darwin's 1844/1857 extracts into one bundle with ribbon and carry it up stone steps",
+        "source_kind": "new_mint_quality"
+      },
+      "next_row": "P5:01_card_p05",
+      "old": {
+        "flow_credits_expected": 20,
+        "flow_credits_try1": 10,
+        "flow_model": "Veo 3.1 - Fast",
+        "prompt": "Premium Animistry-class 3D cartoon. In London daylight, two Victorian gentlemen tie two manuscript bundles together with ribbon and carry them up stone steps. Daylight, window light or matte painted ink only. No candle, flame, glow, spark, fireball or lightning. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+        "quality": "Fast",
+        "route": "flow-first",
+        "shot_description": "In London in daylight, two naturalists tie Wallace's essay and Darwin's 1844/1857 extracts into one bundle with ribbon and carry it up stone steps",
+        "source_kind": "new_mint_fast"
+      },
+      "part": 4,
+      "prev_row": "P4:11_down_house_grief",
+      "prompt_word_for_word_unchanged": true,
+      "reason": "Immediately precedes full-frame chapter card P5:01_card_p05 and carries WHO: Joseph Hooker; upgraded to Veo 3.1 - Quality so no back-to-back graphics occur.",
+      "row_id": "P4:12_lyell_hooker_bundle",
+      "t_in_s": 360.98,
+      "t_out_s": 366.34
+    },
+    {
+      "duration_s": 5.78,
+      "new": {
+        "archive_source": {
+          "commons_page": "https://commons.wikimedia.org/wiki/File%3AJoseph_Dalton_Hooker_by_William_Kilburn_c1852.jpg",
+          "description": "Sir Joseph Dalton Hooker (1817\u20131911), daguerreotype by William Edward Kilburn (c. 1852)",
+          "id": "who_joseph_hooker",
+          "licence": "Public domain",
+          "local_raw": "07_Edit-Project/archive_pulls_v01/raw/who_joseph_hooker.jpg",
+          "sha256": "05f012a4529fdbe3e29e623e671129cb50daab727a6d41fae7b57fb2956a97fa"
+        },
+        "flow_credits_expected": 0,
+        "flow_credits_try1": 0,
+        "flow_model": null,
+        "prompt": null,
+        "quality": "archive",
+        "route": "archive",
+        "shot_description": "Public-domain William Edward Kilburn daguerreotype of Sir Joseph Dalton Hooker (c. 1852) composited on the Linnean Society 1 July 1858 joint papers dossier (Darwin's 1844 extract + Wallace's Ternate essay)",
+        "source_kind": "free_archive"
+      },
+      "next_row": "P5:03a_two_empty_chairs",
+      "old": {
+        "flow_credits_expected": 20,
+        "flow_credits_try1": 10,
+        "flow_model": "Veo 3.1 - Fast",
+        "prompt": "Premium Animistry-class 3D cartoon. Close in grey window light on a wooden lectern as hands turn two bundled handwritten manuscripts side by side. Daylight, window light or matte painted ink only. No candle, flame, glow, spark, fireball or lightning. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+        "quality": "Fast",
+        "route": "flow-first",
+        "shot_description": "Close in grey window light on the wooden lectern as the secretary's hands turn Wallace's paper beside Darwin's older 1844/1857 extracts",
+        "source_kind": "new_mint_fast"
+      },
+      "part": 5,
+      "prev_row": "P5:02a_linnean_reading",
+      "reason": "Swapped to \u00a30 free_archive composite (William Edward Kilburn daguerreotype of Joseph Dalton Hooker, c. 1852, Wikimedia Commons File:Joseph_Dalton_Hooker_by_William_Kilburn_c1852.jpg, Public domain) between moving 3D Quality plates P5:02a_linnean_reading and P5:03a_two_empty_chairs.",
+      "row_id": "P5:02b_joint_papers_lectern",
+      "t_in_s": 376.56,
+      "t_out_s": 382.34
+    },
+    {
+      "duration_s": 3.94,
+      "new": {
+        "flow_credits_expected": 259,
+        "flow_credits_try1": 100,
+        "flow_model": "Veo 3.1 - Quality",
+        "prompt": "Premium Animistry-class 3D cartoon. The wood-panelled Linnean Society meeting room standing quiet and empty in grey window light after the session. Daylight, window light or matte painted ink only. No candle, flame, glow, spark, fireball or lightning. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+        "quality": "Quality",
+        "route": "flow-first",
+        "shot_description": "The quiet Linnean Society hall after the meeting as benches stand empty in grey window light (\"And the reaction? Almost nothing.\")",
+        "source_kind": "new_mint_quality"
+      },
+      "next_row": "P5:04b_bell_report_1859",
+      "old": {
+        "flow_credits_expected": 20,
+        "flow_credits_try1": 10,
+        "flow_model": "Veo 3.1 - Fast",
+        "prompt": "Premium Animistry-class 3D cartoon. The wood-panelled Linnean Society meeting room standing quiet and empty in grey window light after the session. Daylight, window light or matte painted ink only. No candle, flame, glow, spark, fireball or lightning. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+        "quality": "Fast",
+        "route": "flow-first",
+        "shot_description": "The quiet Linnean Society hall after the meeting as benches stand empty in grey window light (\"And the reaction? Almost nothing.\")",
+        "source_kind": "new_mint_fast"
+      },
+      "part": 5,
+      "prev_row": "P5:03b_wallace_jungle_clearing",
+      "prompt_word_for_word_unchanged": true,
+      "reason": "Immediately precedes newly converted free code graphic P5:04b_bell_report_1859 and carries WHO: Thomas Bell; upgraded to Veo 3.1 - Quality so no back-to-back graphics occur.",
+      "row_id": "P5:04a_empty_linnean_hall",
+      "t_in_s": 394.06,
+      "t_out_s": 398.0
+    },
+    {
+      "duration_s": 6.66,
+      "new": {
+        "flow_credits_expected": 0,
+        "flow_credits_try1": 0,
+        "flow_model": null,
+        "prompt": null,
+        "quality": "code_graphic",
+        "route": "code-graphic",
+        "shot_description": "Code graphic / inked period presidential report page: Linnean Society annual report (May 1859) with animated gold ink underline beneath the presidential summary ('NO STRIKING DISCOVERY')",
+        "source_kind": "code_graphic"
+      },
+      "next_row": "P5:05a_darwin_writes_origin",
+      "old": {
+        "flow_credits_expected": 20,
+        "flow_credits_try1": 10,
+        "flow_model": "Veo 3.1 - Fast",
+        "prompt": "Premium Animistry-class 3D cartoon. May 1859: in grey window light, a printed report lies open on a wooden lectern as a steel pen underlines a single unlettered line. Daylight, window light or matte painted ink only. No candle, flame, glow, spark, fireball or lightning. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+        "quality": "Fast",
+        "route": "flow-first",
+        "shot_description": "May 1859: in grey window light, the Linnean Society's annual report opens on a wooden lectern as a pen underlines a single sentence",
+        "source_kind": "new_mint_fast"
+      },
+      "part": 5,
+      "prev_row": "P5:04a_empty_linnean_hall",
+      "reason": "Swapped to \u00a30 code-graphic period presidential report page (May 1859 Linnean Society annual report, FACT: NO STRIKING DISCOVERY) between moving 3D Quality plates P5:04a_empty_linnean_hall and P5:05a_darwin_writes_origin.",
+      "row_id": "P5:04b_bell_report_1859",
+      "t_in_s": 398.0,
+      "t_out_s": 404.66
+    },
+    {
+      "duration_s": 3.42,
+      "new": {
+        "flow_credits_expected": 259,
+        "flow_credits_try1": 100,
+        "flow_model": "Veo 3.1 - Quality",
+        "prompt": "Premium Animistry-class 3D cartoon. Close in daylight on a bamboo veranda table as hands unwrap twine from a green cloth-bound octavo book. Daylight, window light or matte painted ink only. No candle, flame, glow, spark, fireball or lightning. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+        "quality": "Quality",
+        "route": "flow-first",
+        "shot_description": "In daylight on a bamboo veranda in the Malay Archipelago, Wallace's hands unwrap a green cloth copy of On the Origin of Species",
+        "source_kind": "new_mint_quality"
+      },
+      "next_row": "P5:08b_wallace_reads_origin",
+      "old": {
+        "flow_credits_expected": 20,
+        "flow_credits_try1": 10,
+        "flow_model": "Veo 3.1 - Fast",
+        "prompt": "Premium Animistry-class 3D cartoon. Close in daylight on a bamboo veranda table as hands unwrap twine from a green cloth-bound octavo book. Daylight, window light or matte painted ink only. No candle, flame, glow, spark, fireball or lightning. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+        "quality": "Fast",
+        "route": "flow-first",
+        "shot_description": "In daylight on a bamboo veranda in the Malay Archipelago, Wallace's hands unwrap a green cloth copy of On the Origin of Species",
+        "source_kind": "new_mint_fast"
+      },
+      "part": 5,
+      "prev_row": "P5:07_cg_timeline_origin",
+      "prompt_word_for_word_unchanged": true,
+      "reason": "Immediately follows full-frame code graphic P5:07_cg_timeline_origin; upgraded to Veo 3.1 - Quality so no back-to-back graphics occur.",
+      "row_id": "P5:08a_wallace_opens_origin",
+      "t_in_s": 424.58,
+      "t_out_s": 428.0
+    },
+    {
+      "duration_s": 5.28,
+      "new": {
+        "flow_credits_expected": 259,
+        "flow_credits_try1": 100,
+        "flow_model": "Veo 3.1 - Quality",
+        "prompt": "Premium Animistry-class 3D cartoon. Close in grey window light on a wooden table as hands pour crimson paint and white paint into a glass bowl and stir them into a uniform dull grey. Daylight, window light or matte painted ink only. No candle, flame, glow, spark, fireball or lightning. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+        "quality": "Quality",
+        "route": "flow-first",
+        "shot_description": "Close in grey window light as hands pour crimson paint and white paint together into a glass bowl, stirring them to a dull mid-grey",
+        "source_kind": "new_mint_quality"
+      },
+      "next_row": "P6:03_cg_blending_beaks",
+      "old": {
+        "flow_credits_expected": 20,
+        "flow_credits_try1": 10,
+        "flow_model": "Veo 3.1 - Fast",
+        "prompt": "Premium Animistry-class 3D cartoon. Close in grey window light on a wooden table as hands pour crimson paint and white paint into a glass bowl and stir them into a uniform dull grey. Daylight, window light or matte painted ink only. No candle, flame, glow, spark, fireball or lightning. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+        "quality": "Fast",
+        "route": "flow-first",
+        "shot_description": "Close in grey window light as hands pour crimson paint and white paint together into a glass bowl, stirring them to a dull mid-grey",
+        "source_kind": "new_mint_fast"
+      },
+      "part": 6,
+      "prev_row": "P6:02a_jenkin_study",
+      "prompt_word_for_word_unchanged": true,
+      "reason": "Immediately precedes full-frame code graphic P6:03_cg_blending_beaks; upgraded to Veo 3.1 - Quality so no back-to-back graphics occur.",
+      "row_id": "P6:02b_paint_pots_mix",
+      "t_in_s": 453.5,
+      "t_out_s": 458.78
+    },
+    {
+      "duration_s": 4.96,
+      "new": {
+        "flow_credits_expected": 259,
+        "flow_credits_try1": 100,
+        "flow_model": "Veo 3.1 - Quality",
+        "prompt": "Premium Animistry-class 3D cartoon. Close in grey window light on a mahogany desk as a green cloth-bound book opens beside a folded handwritten letter. Daylight, window light or matte painted ink only. No candle, flame, glow, spark, fireball or lightning. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+        "quality": "Quality",
+        "route": "flow-first",
+        "shot_description": "In grey window light at Down House, a green-cloth copy of On the Origin of Species opens on the desk beside a folded letter from Wallace",
+        "source_kind": "new_mint_quality"
+      },
+      "next_row": "P6:06b_spencer_coined",
+      "old": {
+        "flow_credits_expected": 20,
+        "flow_credits_try1": 10,
+        "flow_model": "Veo 3.1 - Fast",
+        "prompt": "Premium Animistry-class 3D cartoon. Close in grey window light on a mahogany desk as a green cloth-bound book opens beside a folded handwritten letter. Daylight, window light or matte painted ink only. No candle, flame, glow, spark, fireball or lightning. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+        "quality": "Fast",
+        "route": "flow-first",
+        "shot_description": "In grey window light at Down House, a green-cloth copy of On the Origin of Species opens on the desk beside a folded letter from Wallace",
+        "source_kind": "new_mint_fast"
+      },
+      "part": 6,
+      "prev_row": "P6:05_beads_not_paint",
+      "prompt_word_for_word_unchanged": true,
+      "reason": "Reused in Short B opening (0:02.68\u20130:05.82); upgraded to Veo 3.1 - Quality.",
+      "row_id": "P6:06a_origin_fifth_edition",
+      "t_in_s": 485.64,
+      "t_out_s": 490.6
+    }
+  ]
+}
