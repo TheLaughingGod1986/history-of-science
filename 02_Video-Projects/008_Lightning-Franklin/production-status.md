@@ -306,3 +306,19 @@ ALL CHECKS PASS
 ```
 
 These are overlay/still-preview checks, not approval of motion or the final audio mix. Claude reviews the graphic; J2592 owns measured placement and its composite handoff.
+
+
+### 11 Nov 2026 — J2613 tapered salon spark revision (review only)
+
+Reworked PR #515 under desk rulings 6793746982 and 6795970738: warm tapered Gaussian streak, one bloom frame, shorter half-strength second frame, optional round knuckle tail. New take-4 review evidence in `07_Edit-Project/contact_spark_v01/review_J2613/`: full 1080 delivery stills, 4× crops, original-source hash, exact measured endpoints and timing proposal. Native source is 720p, enlarged 1.5× for delivery. Only f029–f031 extracted. Proposed flick is f030–f031; f029 unchanged. Optional four-phase design is separate from this two-frame placement proposal.
+
+```text
+Ran 4 tests ... OK
+source_hash_matches: true
+only_frames_29_30_31_extracted: true
+review_f029_unchanged: true
+Durable NAS copy: all artifact hashes match
+ALL CHECKS PASS
+```
+
+These are renderer/repository checks, not picture-stage approval. No film, source take, audio or timeline modified; no spend. Only f000–f060 of take 4 may ever be used. Grok reviews the new sheets and timing; J2592 alone places the overlay after his PASS. No worker approval or merge.

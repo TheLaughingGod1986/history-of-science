@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""HOS 008 salon contact point; J2591. No video-take input or placement."""
+"""HOS 008 salon tapered contact streak; J2613. No video-take input or placement."""
 import argparse
 import hashlib
 import json
@@ -16,8 +16,8 @@ WARM = (255, 246, 224)
 def spark(size, rod, knuckle, phase, frames=4):
     """Straight-alpha RGBA; phase 0 is the supplied contact frame (zero-based)."""
     w, h = size
-    if frames not in (3, 4) or w < 16 or h < 16:
-        raise ValueError('Use 3 or 4 frames and a valid canvas')
+    if frames not in (2, 3, 4) or w < 16 or h < 16:
+        raise ValueError('Use 2, 3 or 4 frames and a valid canvas')
     for p in (rod, knuckle):
         if len(p) != 2 or not all(math.isfinite(v) for v in p):
             raise ValueError('Points must be finite x,y pairs')
@@ -30,19 +30,39 @@ def spark(size, rod, knuckle, phase, frames=4):
     out = np.zeros((h, w, 4), dtype=np.uint8)
     if phase not in range(frames):
         return Image.fromarray(out)
-    # Circular point only: its entire support fits inside the gap's diameter.
-    cx, cy = (np.array(rod) + np.array(knuckle)) / 2
-    yy, xx = np.ogrid[:h, :w]
-    distance = np.sqrt((xx - cx)**2 + (yy - cy)**2)
-    radius = min(2.8 * scale, gap / 2)
-    envelope = (1.0, .58, .23, .08)[:frames]
-    alpha = np.clip((radius - distance) / max(.65 * scale, .2), 0, 1) * 255 * envelope[phase]
-    if phase == 0:
-        bloom_radius = min(6 * scale, gap / 2)
-        bloom = np.clip(1 - distance / bloom_radius, 0, 1)**2 * 24
-        alpha = np.maximum(alpha, bloom)
-    out[:, :, :3] = WARM
-    out[:, :, 3] = np.rint(alpha).astype(np.uint8)
+    # Integrate a continuous Gaussian profile over each pixel at 8x sampling.
+    # Work only in the local support, so a 1080p canvas stays inexpensive.
+    rod, knuckle = np.array(rod, dtype=float), np.array(knuckle, dtype=float)
+    axis = (rod - knuckle) / gap
+    pad = 7 * scale + 2
+    x0 = max(0, int(min(rod[0], knuckle[0]) - pad))
+    x1 = min(w, int(max(rod[0], knuckle[0]) + pad) + 1)
+    y0 = max(0, int(min(rod[1], knuckle[1]) - pad))
+    y1 = min(h, int(max(rod[1], knuckle[1]) + pad) + 1)
+    ss = 8
+    yy, xx = np.meshgrid(y0 + (np.arange((y1-y0)*ss)+.5)/ss - .5,
+                         x0 + (np.arange((x1-x0)*ss)+.5)/ss - .5, indexing='ij')
+    along = (xx-knuckle[0])*axis[0] + (yy-knuckle[1])*axis[1]
+    across = -(xx-knuckle[0])*axis[1] + (yy-knuckle[1])*axis[0]
+    if phase < 2:
+        start, end = (0., gap) if phase == 0 else (.1*gap, .9*gap)
+        t = np.clip((along-start)/(end-start), 0, 1)
+        # ~2px full-width at half maximum in the middle at 1080p,
+        # tapering to rounded fine ends. No rectangle or hard clipping.
+        sigma = scale * (.35 + .50 * np.sin(np.pi*t))
+        beyond = np.maximum(start-along, 0) + np.maximum(along-end, 0)
+        core = np.exp(-.5*((across/sigma)**2 + (beyond/(.35*scale))**2))
+        alpha = core * (245 if phase == 0 else 122.5)
+        if phase == 0:
+            bloom = 18*np.exp(-.5*((across/(2*scale))**2 + (beyond/(1.1*scale))**2))
+            alpha = np.maximum(alpha, bloom)
+    else:
+        # Optional generic +2/+3 tail stays at the knuckle, never mid-gap.
+        radius2 = (xx-knuckle[0])**2 + (yy-knuckle[1])**2
+        alpha = (55 if phase == 2 else 18)*np.exp(-radius2/(2*(.65*scale)**2))
+    alpha = alpha.reshape(y1-y0, ss, x1-x0, ss).mean(axis=(1, 3))
+    out[y0:y1, x0:x1, :3] = WARM
+    out[y0:y1, x0:x1, 3] = np.rint(alpha).astype(np.uint8)
     out[out[:, :, 3] == 0] = 0
     return Image.fromarray(out)
 
@@ -57,7 +77,7 @@ def main():
     p.add_argument('--contact-frame', type=int, required=True, help='Zero-based destination frame; metadata only')
     p.add_argument('--rod', type=float, nargs=2, required=True, metavar=('X', 'Y'))
     p.add_argument('--knuckle', type=float, nargs=2, required=True, metavar=('X', 'Y'))
-    p.add_argument('--frames', type=int, choices=(3, 4), default=4)
+    p.add_argument('--frames', type=int, choices=(2, 3, 4), default=4)
     p.add_argument('--fps', type=int, choices=(24, 25, 30), default=24)
     p.add_argument('--sfx', type=Path, required=True, help='Existing film pen-tap/crackle; no generation')
     p.add_argument('--demo', action='store_true', help='Coordinates are illustrative, not measured contact')

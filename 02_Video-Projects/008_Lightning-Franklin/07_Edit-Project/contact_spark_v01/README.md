@@ -1,3 +1,34 @@
+# HOS 008 contact spark — J2613 revision for review
+
+Supersedes the point-shaped J2591 design below. Requested by owner-authored desk rulings 6793746982 (shape) and 6795970738 (take/timing). Existing PR #515 stays unmerged pending Grok’s review.
+
+The renderer now draws a warm RGB 255/246/224 tapered streak spanning the measured endpoints, with a Gaussian cross-section (~2 px FWHM at 1080p), rounded ends and 8× pixel integration. Phase +0 has one faint bloom; +1 is shorter at half strength; optional +2/+3 are fading round points at the knuckle. Endpoint-distance and coordinate guards remain. Two-frame output is also supported for the later placement ruling.
+
+## Take 4 review (not placement in the film)
+
+`review_J2613/` contains full 1920×1080 PNGs for f029–f031, a full-size sheet, a 4× before/after crop, and a separately labelled four-phase design swatch. The take is native 1280×720; the 1080 delivery previews are a 1.5× Lanczos resize, not native captured 1080 detail. The artifact directory also contains native-720 previews and canonical 1080 RGBA overlays.
+
+Gemini’s upper knuckle/rim pair is used: knuckle (622,227), rim (630,222) at 720p; exactly (933,340.5) and (945,333) at 1080p. Source hash is checked by the reproducible `review_take4.py` before extraction. Only f029, f030 and f031 are extracted. No source take or edit is modified.
+
+**Timing proposed for Grok:** the later ruling requests 2–3 frames around f030, superseding the earlier four-frame duration. f029 is unchanged; f030 is the bright streak; f031 is the shorter half-strength streak. The optional +2/+3 tail is demonstrated on the separate design swatch only and is not placed on f032/f033. J2592 must use only the duration Grok approves. Cue the existing pen-tap at f030 once; no new audio or audio mix is made here.
+
+**Source restriction:** only f000–f060 may ever be used from take 4. Nothing later may appear in any cut, thumbnail or Short. Placement belongs to J2592 after Grok’s PASS, followed by the existing review jobs. This delivery neither approves a stage nor changes the film.
+
+Reproduce with the `owb-cg` Python environment:
+
+```sh
+python review_take4.py --take /path/to/02_salon_spark_j2241_t4.mp4 --out NEW_REVIEW_DIRECTORY
+python -m unittest discover -s . -p test_render.py
+```
+
+Four tests cover duration/blank frames, warm colour, input guards, gap-spanning tapered profile, half-strength shortened second frame, knuckle-only tail, rotational symmetry and local support. The source hash and unchanged f029 checks pass. Stills inspected at full delivery size and 4×; no moving-video or audio perception claimed. See `review_J2613/REPO_CHECKS.txt` for this revision’s repository checks. The original picture/polish checks below apply only to the original still demo, not this revision or the finished film.
+
+Durable artifacts: `/Volumes/data/studio-live/History Of Science/02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/contact_spark_J2613_v02/`. Hashes are in the review manifest. £0 spent.
+
+---
+
+## Historical J2591 delivery (superseded design; retained evidence)
+
 # HOS 008 salon contact spark — J2591
 
 Built under the desk ruling 6793185344, confirmed by 6793202900. Worker delivery for review, not a picture-stage approval. No generation credit or money spent; no video take changed.
