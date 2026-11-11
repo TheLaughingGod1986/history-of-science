@@ -1,0 +1,11 @@
+{
+  "decoded_frames": 4,
+  "lossless_rgba_roundtrip": true,
+  "source_hash_matches_brief": true,
+  "nonempty_alpha_frames": [
+    45,
+    9,
+    9,
+    9
+  ]
+}
