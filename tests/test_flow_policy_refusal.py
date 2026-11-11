@@ -198,5 +198,124 @@ class TrancheLedgerTests(unittest.TestCase):
                 self.assertEqual(account.snapshot()["charges"]["k"]["status"], "CHARGED")
 
 
+class RefusedTakeAlreadyInTheReportTests(unittest.TestCase):
+    """The Halley take reached the spend report as 100 credits before it was reversed."""
+
+    def spends(self, target: Path) -> list[dict]:
+        return [r for r in (json.loads(l) for l in target.read_text().splitlines()) if r["kind"] == "spend"]
+
+    def test_one_more_receipt_takes_it_back(self):
+        for film in RUNNERS:
+            with self.subTest(film=film), tempfile.TemporaryDirectory() as tmp:
+                runner, root = load(film), Path(tmp)
+                target = root / "spend.jsonl"
+                charged_take(runner, root / "state", key="refused")
+                with runner.SharedFlowAccounting(root / "state") as account:
+                    self.assertEqual(account.export_ai_spend(target, by="codex"), 2)  # balance read + spend
+                    first = target.read_bytes()
+                    account.reverse_policy_refusal("refused", evidence=EVIDENCE)
+                    self.assertEqual(account.export_ai_spend(target, by="codex"), 1)
+                    again = target.read_bytes()
+                    self.assertEqual(account.export_ai_spend(target, by="gemini"), 0)
+                self.assertEqual(target.read_bytes(), again)
+                self.assertTrue(again.startswith(first))      # the first receipt is not written over
+                spends = self.spends(target)
+                self.assertEqual([(r["id"], r["amount"]) for r in spends],
+                                 [("flow:spend:refused", 100), ("flow:reversal:refused", -100)])
+                self.assertEqual(sum(r["amount"] for r in spends), 0)
+                self.assertEqual(spends[1]["film"], "HOS:009")
+
+    def test_every_runner_writes_the_same_receipt(self):
+        # Each runner replays the shared ledger into the one report at the start of a batch.
+        # A receipt that differed between them would stop the next one as an identity collision.
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            target = root / "spend.jsonl"
+            charged_take(load("009"), root / "state", key="refused")
+            with load("009").SharedFlowAccounting(root / "state") as account:
+                account.export_ai_spend(target, by="codex")
+                account.reverse_policy_refusal("refused", evidence=EVIDENCE)
+            for film in ("013", "010", "009"):
+                with self.subTest(film=film):
+                    with load(film).SharedFlowAccounting(root / "state") as account:
+                        account.export_ai_spend(target, by=film)
+            self.assertEqual([r["amount"] for r in self.spends(target)], [100, -100])
+
+
+class RetryAfterRefusalTests(unittest.TestCase):
+    """The refused take left no file. Its retry must still be take 2."""
+
+    def setUp(self):
+        self.runner = load("009")
+
+    def test_a_take_in_the_ledger_is_not_numbered_again(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            media = Path(tmp)
+            entries = [
+                self.runner.submitting_record("08_halley_visit_c1", 4, 1, media / "x.mp4"),
+                self.runner.policy_refusal_record("08_halley_visit_c1", 4, 1,
+                                                  reason="Flow policy: prominent people", evidence=EVIDENCE),
+                self.runner.submitting_record("08_halley_visit_c1", 5, 1, media / "y.mp4"),  # another part
+            ]
+            used = self.runner.takes_recorded(entries, 4, "08_halley_visit_c1")
+            self.assertEqual(used, {1})
+            take, dest = self.runner.next_version(media, 4, "08_halley_visit_c1", used)
+            self.assertEqual((take, dest.name), (2, "08_halley_visit_c1_t2.mp4"))
+            # Going by files alone, the retry would be t1 again.
+            self.assertEqual(self.runner.next_version(media, 4, "08_halley_visit_c1")[0], 1)
+            with self.assertRaises(self.runner.GuardError):
+                self.runner.next_version(media, 4, "08_halley_visit_c1", {1, 2, 3})
+
+    def test_the_batch_after_a_refusal_submits_take_two(self):
+        import os
+        import subprocess
+        from unittest.mock import patch
+        runner = self.runner
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            ledger, state, archive = root / "ledger.jsonl", root / "shared", root / "archive"
+            archive.mkdir()
+            refused = "HOS:009:P02:10_how_high:t1"
+            waiting = runner.submitting_record("10_how_high", 2, 1, root / "media" / "10_how_high_t1.mp4")
+            waiting["shared_charge"] = refused
+            runner.append_ledger(ledger, waiting)
+            with runner.SharedFlowAccounting(state) as account:
+                account.reserve("J2033", "HOS:009", runner.MAX_TOTAL_CREDITS, live=20000)
+                account.intent(refused, "J2033", 100, live=20000)
+                account.resolve(refused, submitted=True, evidence={"ui": {"balances": [20000]}})
+            runner.reconcile_policy_refusal(
+                accounting_state=state, ledger_path=ledger, lock_path=root / "writer.lock", key=refused,
+                plate_id="10_how_high", part=2, take=1, reason="Flow policy: prominent people", evidence=EVIDENCE)
+            charges = []
+
+            def fake_still_maker(row, dest, *, accounting, reservation, evidence_path, other=0):
+                dest.parent.mkdir(parents=True, exist_ok=True)
+                subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "lavfi", "-i", "color=s=1280x720",
+                                "-frames:v", "1", str(dest)], check=True)
+                runner.immutable_bytes(evidence_path, b'{"credits":0,"ui":{"balances":[20000]}}\n')
+                return dest
+
+            def fake_submitter(row, dest, frame, *, accounting, reservation, charge, evidence_path, other=0):
+                charges.append(charge)
+                accounting.intent(charge, reservation, 100, live=20000)  # t1 again would stop here
+                accounting.resolve(charge, submitted=True, evidence={"ui": {"balances": [20000]}})
+                dest.write_bytes(b"fake video fixture")
+                return {"charge": charge}
+
+            with patch.dict(os.environ, {runner.SUBMIT_ENV: "1"}), patch.object(runner, "strip_audio"), \
+                 patch.object(runner, "technical_report",
+                              side_effect=lambda p, **kw: {"ok": True, "sha256": runner.sha256_file(p)}):
+                written = runner.cmd_submit(
+                    ROOT, other=0, media=root / "media", ledger_path=ledger, lock_path=root / "writer.lock",
+                    pid_path=root / "runner.pid", done_path=root / "runner.done", archive_dir=archive,
+                    accounting_state=state, spend_ledger=root / "spend.jsonl", submitter=fake_submitter,
+                    still_maker=fake_still_maker, test_archive=True)
+            self.assertEqual(charges, ["HOS:009:P02:10_how_high:t2", "HOS:009:P03:07_ball_to_moon:t1"])
+            self.assertEqual([(e["plate_id"], e["take"]) for e in written], [("10_how_high", 2), ("07_ball_to_moon", 1)])
+            latest = {(e["plate_id"], e["take"]): e["status"] for e in runner.read_ledger(ledger)}
+            self.assertEqual(latest[("10_how_high", 1)], "FAILED_POLICY")   # the refusal still stands
+            self.assertEqual(latest[("10_how_high", 2)], "PENDING_REVIEW")
+
+
 if __name__ == "__main__":
     unittest.main()

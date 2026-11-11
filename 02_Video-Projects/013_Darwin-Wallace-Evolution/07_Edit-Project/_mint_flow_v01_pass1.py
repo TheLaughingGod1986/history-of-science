@@ -1107,6 +1107,16 @@ class SharedFlowAccounting:
                     if row["id"] in indexed:
                         raise GuardError("duplicate ai_spend receipt identity")
                     indexed[row["id"]] = row
+            # A refused take that reached the report before it was reversed is taken back
+            # by one more receipt, for exactly the amount written, so the report nets to
+            # zero. A refused take that never reached the report writes nothing.
+            for event in events:
+                spent = indexed.get("flow:spend:" + event["id"]) if event["kind"] == "policy_refused" else None
+                if spent is not None:
+                    rows.append(dict(at=event["at"], pool="flow", by=by, source="shared-flow",
+                                     charge=event["id"], id="flow:reversal:" + event["id"], kind="spend",
+                                     amount=-spent["amount"], film=spent["film"],
+                                     what=event["id"] + " refused by Flow policy, not charged"))
             missing = []
             for row in rows:
                 previous = indexed.get(row["id"])
