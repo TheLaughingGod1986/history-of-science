@@ -1,12 +1,15 @@
 """Exercise the actual mint caller with the shared tab policy; no CDP or spend."""
 import ast
 import os
+import sys
 from pathlib import Path
 from types import SimpleNamespace
 import unittest
 from unittest.mock import patch
 
 SOURCE = Path(__file__).resolve().parents[1] / '02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/_mint_flow_cdp_v01.py'
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from tests.hos009_then import HAS_STUDIO, NEEDS_STUDIO  # noqa: E402
 
 class Page:
     def __init__(self, url, closed=False):
@@ -25,6 +28,7 @@ class Context:
         self.pages.append(page)
         return page
 
+@unittest.skipUnless(HAS_STUDIO, NEEDS_STUDIO)
 class FlowPageTests(unittest.TestCase):
     def choose(self, pages):
         node = next(n for n in ast.parse(SOURCE.read_text()).body if isinstance(n, ast.FunctionDef) and n.name == 'flow_page')

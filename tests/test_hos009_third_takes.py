@@ -24,6 +24,8 @@ RECORD = ROOT / "jobs/reviews/J2626/PROMPT_CHANGE_2026-11-11.json"
 EARLIER = ROOT / "jobs/reviews/J2583/PROMPT_CHANGE_2026-11-11.json"
 SCOPE_FILE = EDIT / "TRANCHE2_RETAKES_J2626.json"
 OLD_SCOPE_FILE = EDIT / "TRANCHE2_RETAKES_J2583.json"
+sys.path.insert(0, str(ROOT))
+from tests.hos009_then import THEN, THEN_EDIT  # noqa: E402  the boards and scope as they were when the takes were made
 CLOSING = "No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit."
 
 # The Chief's wording, word for word from the desk (6798928858 points 1 and 3).
@@ -59,7 +61,7 @@ RUNNER = load_runner()
 
 
 def prompts(part: int) -> dict:
-    board = EDIT / f"parts/part-0{part}_plates_v05.json"
+    board = THEN_EDIT / f"parts/part-0{part}_plates_v05.json"
     return {p["id"]: p["prompt"] for p in json.loads(board.read_text())["plates"]}
 
 
@@ -78,7 +80,7 @@ def takes(*numbers, keys=(MOON, RULER), **last):
 def boards_as_take_two_was_made_from():
     """Each board J2583's file pins reads as the hash pinned there: the boards as they were before this change."""
     scope = json.loads(OLD_SCOPE_FILE.read_text())
-    pins = {(ROOT / row["board"]).resolve(): row["board_sha256"] for row in scope["rows"]}
+    pins = {(THEN / row["board"]).resolve(): row["board_sha256"] for row in scope["rows"]}
     real = RUNNER.sha256_file
     return patch.object(RUNNER, "sha256_file", side_effect=lambda path: pins.get(Path(path).resolve()) or real(path))
 
@@ -157,7 +159,7 @@ class TheWording(unittest.TestCase):
                 self.assertEqual(entry["board_sha256_old"], earlier["boards"][name]["board_sha256_new"])
                 # the hashes the Chief named as the ones take 2 was made from (desk 6799192687 point 1)
                 self.assertEqual(entry["board_sha256_old"], self.record["take_2_was_made_from"][name])
-                self.assertEqual(entry["board_sha256_new"], RUNNER.sha256_file(EDIT / "parts" / name))
+                self.assertEqual(entry["board_sha256_new"], RUNNER.sha256_file(THEN_EDIT / "parts" / name))
                 self.assertNotEqual(entry["board_sha256_old"], entry["board_sha256_new"])
         self.assertEqual(sorted(self.record["boards"]), ["part-03_plates_v05.json", "part-04_plates_v05.json"])
 
@@ -165,10 +167,10 @@ class TheWording(unittest.TestCase):
 class ThePins(unittest.TestCase):
     def setUp(self):
         self.record = json.loads(RECORD.read_text())
-        self.tranche = json.loads((EDIT / "TRANCHE2_SCOPE_J2026.json").read_text())
+        self.tranche = json.loads((THEN_EDIT / "TRANCHE2_SCOPE_J2026.json").read_text())
 
     def test_the_tranche_still_loads_with_the_edited_boards(self):
-        rows = {r.plate_id: r for r in RUNNER.load_scope(ROOT)}
+        rows = {r.plate_id: r for r in RUNNER.load_scope(THEN)}
         self.assertEqual(len(rows), 20)
         self.assertIn(MOON_LINE, rows["01_really_falling_c1"].prompt)
         self.assertIn(RULER_LINE, rows["05_minute_second_c1"].prompt)
@@ -177,7 +179,7 @@ class ThePins(unittest.TestCase):
         old = json.loads(OLD_SCOPE_FILE.read_text())
         new = json.loads(SCOPE_FILE.read_text())
         for name, entry in self.record["boards"].items():
-            digest = RUNNER.sha256_file(EDIT / "parts" / name)
+            digest = RUNNER.sha256_file(THEN_EDIT / "parts" / name)
             with self.subTest(board=name):
                 pinned = {r["id"]: r["board_sha256"] for r in self.tranche["rows"] if r["board"].endswith(name)}
                 self.assertEqual(sorted(pinned), entry["scope_rows_repinned"])
@@ -190,7 +192,7 @@ class ThePins(unittest.TestCase):
     def test_boards_this_change_left_alone_keep_their_pins(self):
         for part in (1, 2, 5):
             name = f"part-0{part}_plates_v05.json"
-            digest = RUNNER.sha256_file(EDIT / "parts" / name)
+            digest = RUNNER.sha256_file(THEN_EDIT / "parts" / name)
             self.assertEqual({r["board_sha256"] for r in self.tranche["rows"] if r["board"].endswith(name)}, {digest})
             self.assertNotIn(name, self.record["boards"])
 
@@ -231,10 +233,10 @@ class TheScope(unittest.TestCase):
 
 class TheRunnerPath(unittest.TestCase):
     def setUp(self):
-        self.rows = RUNNER.load_scope(ROOT)
+        self.rows = RUNNER.load_scope(THEN)
 
     def batch(self, entries, media):
-        return RUNNER.retake_batch(ROOT, self.rows, entries, Path(media), "J2626")
+        return RUNNER.retake_batch(THEN, self.rows, entries, Path(media), "J2626")
 
     def test_only_the_two_rows_in_order(self):
         with tempfile.TemporaryDirectory() as tmp, patch.object(RUNNER, "verified_output", return_value=True):
@@ -312,7 +314,7 @@ class TheOldPathIsAsItWas(unittest.TestCase):
     """Chief 6798955014 point 3: `--retakes-j2583` is not loosened, so the new takes cannot be reached through it."""
 
     def setUp(self):
-        self.rows = RUNNER.load_scope(ROOT)
+        self.rows = RUNNER.load_scope(THEN)
 
     def test_the_old_flag_still_refuses_a_row_on_take_two(self):
         # Today's real state: all three J2583 rows hold takes 1 and 2. With the boards as they were, the take-1-only
@@ -321,16 +323,16 @@ class TheOldPathIsAsItWas(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp, patch.object(RUNNER, "verified_output", return_value=True), \
                 boards_as_take_two_was_made_from():
             with self.assertRaisesRegex(RUNNER.GuardError, "J2583 requires verified take 1 only"):
-                RUNNER.retake_batch(ROOT, self.rows, today, Path(tmp))
+                RUNNER.retake_batch(THEN, self.rows, today, Path(tmp))
             with self.assertRaisesRegex(RUNNER.GuardError, "J2583 requires verified take 1 only"):
-                RUNNER.retake_batch(ROOT, self.rows, today, Path(tmp), "J2583")
+                RUNNER.retake_batch(THEN, self.rows, today, Path(tmp), "J2583")
 
     def test_the_old_flag_refuses_on_the_boards_as_they_are_now(self):
         # And on the real boards it refuses a step earlier: its file pins the boards as they were, even for a row on take 1.
         with tempfile.TemporaryDirectory() as tmp, patch.object(RUNNER, "verified_output", return_value=True):
             for entries in (takes(1, 2, keys=RUNNER.J2583_KEYS), takes(1, keys=RUNNER.J2583_KEYS)):
                 with self.assertRaisesRegex(RUNNER.GuardError, "J2583 retake board hash mismatch"):
-                    RUNNER.retake_batch(ROOT, self.rows, entries, Path(tmp))
+                    RUNNER.retake_batch(THEN, self.rows, entries, Path(tmp))
 
     def test_the_old_scope_file_is_byte_for_byte_what_it_was(self):
         self.assertEqual(RUNNER.sha256_file(OLD_SCOPE_FILE), "414b67533ade151402d51c159d43075996c3f930109f47776be136560eb4bf7a")
@@ -339,10 +341,10 @@ class TheOldPathIsAsItWas(unittest.TestCase):
         old = RUNNER.RETAKES["J2583"]
         self.assertEqual((old.keys, old.take, old.reserve, old.ceiling), (RUNNER.J2583_KEYS, 2, 300, 400))
         self.assertEqual(old.file_keys, (*RUNNER.J2583_KEYS, C2))
-        self.assertEqual(RUNNER.retake_credit_cap(ROOT), 400)
+        self.assertEqual(RUNNER.retake_credit_cap(THEN), 400)
         with tempfile.TemporaryDirectory() as tmp, patch.object(RUNNER, "verified_output", return_value=True), \
                 boards_as_take_two_was_made_from():
-            batch = RUNNER.retake_batch(ROOT, self.rows, takes(1, keys=RUNNER.J2583_KEYS), Path(tmp))
+            batch = RUNNER.retake_batch(THEN, self.rows, takes(1, keys=RUNNER.J2583_KEYS), Path(tmp))
             self.assertEqual(tuple(r.key for r in batch), RUNNER.J2583_KEYS)
             with self.assertRaisesRegex(RUNNER.GuardError, "J2583 permits only its three ordered rows, never c2"):
                 RUNNER.validate_retakes(batch[:2], takes(1, keys=RUNNER.J2583_KEYS), Path(tmp))
@@ -356,7 +358,7 @@ class TheOldPathIsAsItWas(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp, patch.dict(os.environ, {RUNNER.SUBMIT_ENV: "1"}):
             root = Path(tmp)
             with self.assertRaisesRegex(RUNNER.GuardError, "never both"):
-                RUNNER.cmd_submit(ROOT, other=0, media=root, ledger_path=root / "l.jsonl", lock_path=root / "w.lock",
+                RUNNER.cmd_submit(THEN, other=0, media=root, ledger_path=root / "l.jsonl", lock_path=root / "w.lock",
                                   pid_path=root / "r.pid", done_path=root / "r.done", archive_dir=root,
                                   test_archive=True, retakes_j2583=True, retakes_j2626=True)
             self.assertFalse((root / "l.jsonl").exists())
@@ -366,7 +368,7 @@ class TheReservation(unittest.TestCase):
     """Its own identity at 200, written before any local intent, released after the second row."""
 
     def rows(self):
-        by_key = {row.key: row for row in RUNNER.load_scope(ROOT)}
+        by_key = {row.key: row for row in RUNNER.load_scope(THEN)}
         return [by_key[MOON], by_key[RULER]]
 
     FRAME = b"frame-bytes"
@@ -381,7 +383,7 @@ class TheReservation(unittest.TestCase):
                     "input": {"file": f"/then/{plate}.png", "sha256": hashlib.sha256(frame).hexdigest()}})
 
     def test_the_ceiling_is_the_approved_600(self):
-        self.assertEqual(RUNNER.retake_credit_cap(ROOT, "J2626"), 600)
+        self.assertEqual(RUNNER.retake_credit_cap(THEN, "J2626"), 600)
         with tempfile.TemporaryDirectory() as tmp:
             repo = Path(tmp)
             dest = repo / RUNNER.EDIT_REL
@@ -409,13 +411,13 @@ class TheReservation(unittest.TestCase):
                           test_archive=True)
             with patch.object(RUNNER, "retake_batch", return_value=[row]) as chosen, \
                     patch.object(RUNNER, "execute_shared_batch", return_value=[]) as run:
-                RUNNER.cmd_submit(ROOT, retakes_j2626=True, **common)
+                RUNNER.cmd_submit(THEN, retakes_j2626=True, **common)
             self.assertEqual(chosen.call_args.args[-1], "J2626")
             self.assertEqual((run.call_args.kwargs["reservation"], run.call_args.kwargs["reservation_cap"]), ("J2626", 200))
             self.assertTrue(run.call_args.kwargs["retakes_j2626"])
             self.assertFalse(run.call_args.kwargs["retakes_j2583"])
             with patch.object(RUNNER, "execute_shared_batch", return_value=[]) as run:
-                RUNNER.cmd_submit(ROOT, **common)
+                RUNNER.cmd_submit(THEN, **common)
             self.assertEqual((run.call_args.kwargs["reservation"], run.call_args.kwargs["reservation_cap"]), ("J2033", 6000))
             self.assertNotIn("retakes_j2626", run.call_args.kwargs)
 
@@ -501,7 +503,7 @@ class TheReservation(unittest.TestCase):
             # run again: both rows now hold take 3, so the same flag refuses
             with patch.object(RUNNER, "verified_output", return_value=True):
                 with self.assertRaisesRegex(RUNNER.GuardError, "takes 1 and 2 only"):
-                    RUNNER.retake_batch(ROOT, RUNNER.load_scope(ROOT), RUNNER.read_ledger(ledger), media, "J2626")
+                    RUNNER.retake_batch(THEN, RUNNER.load_scope(THEN), RUNNER.read_ledger(ledger), media, "J2626")
 
     def test_a_third_take_starts_from_the_frame_its_second_take_started_from(self):
         selected = self.rows()
@@ -563,7 +565,7 @@ class TheCommandLine(unittest.TestCase):
     def test_the_flag_reaches_the_detached_submit_and_the_default_omits_it(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
-            common = dict(repo=ROOT, media=root, archive=root, other=0, ledger=root / "ledger.jsonl",
+            common = dict(repo=THEN, media=root, archive=root, other=0, ledger=root / "ledger.jsonl",
                           lock=root / "writer.lock", pid=root / "runner.pid")
             plain = RUNNER.detached_command(SCRIPT, root / "run.log", root / "run.done", **common)
             self.assertNotIn("--retakes-j2626", plain[-1])
