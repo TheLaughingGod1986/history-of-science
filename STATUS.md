@@ -255,16 +255,16 @@ Long VO v01 locked (5 parts); Chief KEEP all five, no pickups (desk 6101773293).
 
 Airs **Thu 10 Dec** · ready for Ben's OK by **Sun 6 Dec** · 🟢 on track
 
-Locked for Thu 10 Dec (J2231). Script v02, facts and quote check done. Long voice-over hos_011_vo_v01 (532.72 s, five chapters) accepted on 10 Nov after a listening review (J2286 KEEP). Next: shot list on the voice timings with a picture source and mint cost per row (J2475).
+Locked for Thu 10 Dec (J2231). Script v02, facts and quote check done. Long VO hos_011_vo_v01 (532.72 s, five chapters, sha256 d873f1d0…) locked after J2286 KEEP listening review (recorded in VO_STATUS.md, J2475). Shot list v01 (93 rows across 535.30 s: 71 mint = 48 Q + 23 F = 5,030 Flow credits try-1 / 12,892 expected + 22 free £0 rows) built on words.srt and parked for Chief's price pass (J2475).
 
 - ✅ **Topic** — done: J0180 / J2231: 6 education >=1M (TED-Ed 19.73M & 2.66M)
 - ✅ **Script** — done: v02, 91.1 (J0183 / J0224)
 - ✅ **Fact check** — done: J0198 Gemini facts (35 OK, 1 hedged) + J0224 Claude quote check PASS
-- ⬜ **Audit + upload package** — to do (with Claude, due Thu 12 Nov (in 2 d)): PRE_BUILD_VIDIQ_AUDIT.md + neighbour/search evidence saved; manifest + description queued (J2239)
-- ✅ **Voiceover (long)** — done: Accepted hos_011_vo_v01 (532.72 s, five chapters, Ben Orbit Narrator eleven_v3; sha256 d873f1d0…). J2286 listening review of all five chapters: KEEP, no pickups, no re-recording; the two 1.5 s pauses in Across the Ocean sit inside a held beat and stay. Full-file vo_check PASS, 0 word fails. Acting Chief closed J2245 on 10 Nov.
+- ⬜ **Audit + upload package** — to do (with Claude, due Thu 12 Nov (in 2 d)): PRE_BUILD_VIDIQ_AUDIT.md + neighbour/search evidence saved; manifest + description chapter times updated to locked VO (J2239 / J2475)
+- ✅ **Voiceover (long)** — done: Locked hos_011_vo_v01 (532.72 s, five chapters, Ben Orbit Narrator eleven_v3; WAV sha256 d873f1d0…, MP3 sha256 9fdd84d5…). J2286 listening review of all five chapters: KEEP, no pickups, no re-recording; the two 1.5 s pauses in Across the Ocean sit inside a held beat and stay. Full-file vo_check PASS, 0 word fails. Acting Chief closed J2245 on 10 Nov; lock recorded in VO_STATUS.md (J2475).
 - ⬜ **Shorts scripts** — to do (with Claude, due Thu 12 Nov (in 2 d)): two search-titled Shorts (Test B, J2239)
 - ⬜ **Shorts voiceover** — to do (with Cursor, due Mon 16 Nov (in 6 d))
-- ⬜ **Picture** — to do (with Cursor, due Sun 29 Nov (in 19 d))
+- ⬜ **Picture** — to do (with Cursor, due Sun 29 Nov (in 19 d)): Shot list v01 & picture plan v01 built on words.srt (J2475): 93 rows (535.30 s), 71 mint (48 Q + 23 F = 5,030 try-1 / 12,892 expected Flow credits) + 22 free £0 rows (12 CG + 9 ARCH + 1 REUSE). HOS-2026-11-E2 PASS. generation_authorized: false; parked for Chief price pass.
 - ⬜ **Edit + master** — to do (with Grok, due Thu 3 Dec (in 23 d))
 - ⬜ **Thumbnails** — to do (with Grok, due Thu 3 Dec (in 23 d))
 - ⬜ **Ben's final OK** — to do (with Ben, due Sun 6 Dec (in 26 d))
