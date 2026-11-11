@@ -25,25 +25,17 @@ from pathlib import Path
 
 from playwright.sync_api import sync_playwright
 
-def _require_studio_flow_account() -> str:
-    import os as _os
-    val = _os.environ.get("STUDIO_FLOW_ACCOUNT", "").strip()
-    if not val:
-        raise SystemExit("STOP: missing required setting STUDIO_FLOW_ACCOUNT (set STUDIO_FLOW_ACCOUNT outside the repo)")
-    return val
+def _account_sha256(addr: str | None) -> str:
+    import hashlib as _hashlib
+    s = (addr or "").strip().lower()
+    if not s:
+        return ""
+    return s if len(s) == 64 and all(c in "0123456789abcdef" for c in s) else _hashlib.sha256(s.encode()).hexdigest()
 
 
-def _studio_flow_account_variants(addr: str) -> tuple[str, ...]:
-    low = addr.strip().lower()
-    local, sep, dom = low.partition("@")
-    if sep and dom in ("gmail.com", "googlemail.com"):
-        return (f"{local}@googlemail.com", f"{local}@gmail.com")
-    return (low,)
-
-
-def _forbidden_studio_flow_account() -> str:
-    import os as _os
-    return _os.environ.get("STUDIO_FLOW_FORBIDDEN_ACCOUNT", "").strip() or "__unset_forbidden_account__"
+def _blob_account_sha256s(text: str) -> set[str]:
+    import re as _re
+    return {_account_sha256(e) for e in _re.findall(r"[A-Za-z0-9._%+-]+@(?:gmail|googlemail)\.com", text or "", _re.I)}
 
 
 REPO = Path(__file__).resolve().parents[3]
@@ -53,8 +45,8 @@ import orbit_gemini_veo as veo  # noqa: E402
 
 flow.FLOW_HOME = os.environ.get("ORBIT_FLOW_HOME", "https://flow.google.com/")
 CDP = os.environ.get("ORBIT_FLOW_CDP", "http://127.0.0.1:9222")
-REQUIRED = _require_studio_flow_account()
-FORBIDDEN = _forbidden_studio_flow_account()
+REQUIRED = "81a01c9d841483f444008cd69e98b26019e032ed75b5e33e17409a76c6525ce9"
+FORBIDDEN = "93b0f97ef00986fa90ead10a83be910d43707ddc8023daa2018ed1d95cbbb9d4"
 
 PROJ = Path(__file__).resolve().parents[1]
 PLATES_JSON = PROJ / "07_Edit-Project/parts/part-01_plates_v02.json"
@@ -191,10 +183,10 @@ def read_credits(page) -> tuple[int | None, str | None]:
     text = page_text(page)
     emails = set(re.findall(r"[A-Za-z0-9._%+-]+@(?:gmail|googlemail)\.com", text, flags=re.I))
     active = None
-    if REQUIRED.lower() in {e.lower() for e in emails}:
-        active = REQUIRED.lower()
+    if REQUIRED in {_account_sha256(e) for e in emails}:
+        active = REQUIRED
     elif emails:
-        active = sorted(emails)[0].lower()
+        active = _account_sha256(sorted(emails)[0])
     hits = [int(m.group(1).replace(",", "")) for m in CREDIT_RE.finditer(text)]
     credits = None
     if hits:
@@ -204,10 +196,10 @@ def read_credits(page) -> tuple[int | None, str | None]:
         open_account_menu(page)
         text = page_text(page)
         emails = set(re.findall(r"[A-Za-z0-9._%+-]+@(?:gmail|googlemail)\.com", text, flags=re.I))
-        if REQUIRED.lower() in {e.lower() for e in emails}:
-            active = REQUIRED.lower()
+        if REQUIRED in {_account_sha256(e) for e in emails}:
+            active = REQUIRED
         elif emails and active is None:
-            active = sorted(emails)[0].lower()
+            active = _account_sha256(sorted(emails)[0])
         hits = [int(m.group(1).replace(",", "")) for m in CREDIT_RE.finditer(text)]
         if hits:
             near = [c for c in hits if 500 <= c <= 20000]
@@ -240,7 +232,7 @@ def assert_gate(page) -> dict:
         page.keyboard.press("Escape")
     except Exception:
         pass
-    if active not in set(_studio_flow_account_variants(REQUIRED)):
+    if _account_sha256(active) not in {REQUIRED, "1060171615b311ab416fccd36a51024de12b5fe8b815e6ccd3d3dde67ffad99f"}:
         raise SystemExit(f"STOP wrong account: {active} shot={shot}")
     if credits is None or credits < 500:
         raise SystemExit(f"STOP low/zero credits={credits} shot={shot}")

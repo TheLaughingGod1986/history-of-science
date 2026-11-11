@@ -18,25 +18,17 @@ import time
 from datetime import datetime, timezone
 from pathlib import Path
 
-def _require_studio_flow_account() -> str:
-    import os as _os
-    val = _os.environ.get("STUDIO_FLOW_ACCOUNT", "").strip()
-    if not val:
-        raise SystemExit("STOP: missing required setting STUDIO_FLOW_ACCOUNT (set STUDIO_FLOW_ACCOUNT outside the repo)")
-    return val
+def _account_sha256(addr: str | None) -> str:
+    import hashlib as _hashlib
+    s = (addr or "").strip().lower()
+    if not s:
+        return ""
+    return s if len(s) == 64 and all(c in "0123456789abcdef" for c in s) else _hashlib.sha256(s.encode()).hexdigest()
 
 
-def _studio_flow_account_variants(addr: str) -> tuple[str, ...]:
-    low = addr.strip().lower()
-    local, sep, dom = low.partition("@")
-    if sep and dom in ("gmail.com", "googlemail.com"):
-        return (f"{local}@googlemail.com", f"{local}@gmail.com")
-    return (low,)
-
-
-def _forbidden_studio_flow_account() -> str:
-    import os as _os
-    return _os.environ.get("STUDIO_FLOW_FORBIDDEN_ACCOUNT", "").strip() or "__unset_forbidden_account__"
+def _blob_account_sha256s(text: str) -> set[str]:
+    import re as _re
+    return {_account_sha256(e) for e in _re.findall(r"[A-Za-z0-9._%+-]+@(?:gmail|googlemail)\.com", text or "", _re.I)}
 
 
 REPO = Path(__file__).resolve().parents[3]
@@ -44,7 +36,7 @@ sys.path.insert(0, str(REPO / "04_Audio" / "tools"))
 import orbit_flow_veo_ui as flow  # noqa: E402
 
 CDP = os.environ.get("ORBIT_FLOW_CDP", "http://127.0.0.1:9222")
-REQUIRED = _require_studio_flow_account()
+REQUIRED = "81a01c9d841483f444008cd69e98b26019e032ed75b5e33e17409a76c6525ce9"
 CREDIT_RE = re.compile(r"([\d,]{1,7})\s*(?:Google\s+Flow\s+)?credits", re.I)
 
 # Compose-ready framing: slot ~1/4 frame width, a little right of centre,
@@ -115,10 +107,10 @@ def read_credits(page) -> tuple[int | None, str | None]:
     def parse(text: str) -> tuple[int | None, str | None]:
         emails = set(re.findall(r"[A-Za-z0-9._%+-]+@(?:gmail|googlemail)\.com", text, flags=re.I))
         active = None
-        if REQUIRED.lower() in {e.lower() for e in emails}:
-            active = REQUIRED.lower()
+        if REQUIRED in {_account_sha256(e) for e in emails}:
+            active = REQUIRED
         elif emails:
-            active = sorted(emails)[0].lower()
+            active = _account_sha256(sorted(emails)[0])
         hits = [int(m.group(1).replace(",", "")) for m in CREDIT_RE.finditer(text)]
         credits = None
         if hits:
@@ -439,7 +431,7 @@ def main() -> int:
                 f"  GATE account={active} credits_before={credits_before} url={page.url}",
                 flush=True,
             )
-            if active and active not in set(_studio_flow_account_variants(REQUIRED)):
+            if active and _account_sha256(active) not in {REQUIRED, "1060171615b311ab416fccd36a51024de12b5fe8b815e6ccd3d3dde67ffad99f"}:
                 raise SystemExit(f"STOP wrong account: {active}")
             if credits_before is not None and credits_before < 50:
                 raise SystemExit(f"STOP low credits={credits_before}")

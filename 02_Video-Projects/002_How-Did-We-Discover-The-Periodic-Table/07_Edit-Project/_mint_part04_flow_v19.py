@@ -15,25 +15,17 @@ Flow: the studio Ultra account (credits confirmed 8000+). Scores → CoS. No PAS
 from __future__ import annotations
 import faulthandler
 
-def _require_studio_flow_account() -> str:
-    import os as _os
-    val = _os.environ.get("STUDIO_FLOW_ACCOUNT", "").strip()
-    if not val:
-        raise SystemExit("STOP: missing required setting STUDIO_FLOW_ACCOUNT (set STUDIO_FLOW_ACCOUNT outside the repo)")
-    return val
+def _account_sha256(addr: str | None) -> str:
+    import hashlib as _hashlib
+    s = (addr or "").strip().lower()
+    if not s:
+        return ""
+    return s if len(s) == 64 and all(c in "0123456789abcdef" for c in s) else _hashlib.sha256(s.encode()).hexdigest()
 
 
-def _studio_flow_account_variants(addr: str) -> tuple[str, ...]:
-    low = addr.strip().lower()
-    local, sep, dom = low.partition("@")
-    if sep and dom in ("gmail.com", "googlemail.com"):
-        return (f"{local}@googlemail.com", f"{local}@gmail.com")
-    return (low,)
-
-
-def _forbidden_studio_flow_account() -> str:
-    import os as _os
-    return _os.environ.get("STUDIO_FLOW_FORBIDDEN_ACCOUNT", "").strip() or "__unset_forbidden_account__"
+def _blob_account_sha256s(text: str) -> set[str]:
+    import re as _re
+    return {_account_sha256(e) for e in _re.findall(r"[A-Za-z0-9._%+-]+@(?:gmail|googlemail)\.com", text or "", _re.I)}
 
 faulthandler.enable()
 
@@ -69,9 +61,9 @@ MODEL = os.environ.get("ORBIT_FLOW_VEO_MODEL", "Veo 3.1 - Fast")
 PROFILE = Path(os.environ.get("ORBIT_FLOW_PROFILE", str(Path.home() / ".playwright-hos-flow-profile")))
 CDP_URL = os.environ.get("ORBIT_FLOW_CDP", "http://127.0.0.1:9222")
 REQUIRE_CDP = os.environ.get("HOS_FLOW_REQUIRE_CDP", "1") == "1"
-REQUIRED_FLOW_EMAIL = _require_studio_flow_account()
-ALLOWED_FLOW_EMAILS = set(_studio_flow_account_variants(REQUIRED_FLOW_EMAIL))
-FORBIDDEN_FLOW_EMAIL = _forbidden_studio_flow_account()
+REQUIRED_FLOW_EMAIL = "81a01c9d841483f444008cd69e98b26019e032ed75b5e33e17409a76c6525ce9"
+ALLOWED_FLOW_EMAILS = {REQUIRED_FLOW_EMAIL, "1060171615b311ab416fccd36a51024de12b5fe8b815e6ccd3d3dde67ffad99f"}
+FORBIDDEN_FLOW_EMAIL = "93b0f97ef00986fa90ead10a83be910d43707ddc8023daa2018ed1d95cbbb9d4"
 MAX_CREATES = int(os.environ.get("HOS_V19_MAX_CREATES", "3"))
 HARVEST_WAIT_S = int(os.environ.get("HOS_FLOW_HARVEST_WAIT_S", "480"))
 PARENT_V18_SHA = "05fb0a2b34dba1a8347ab74b2abc987fd406bef356b82b55f1a0e8ddb88cc6b5"
@@ -302,9 +294,9 @@ def assert_auth(page) -> dict:
             "STOP_TO_COS BLOCKED_AUTH: passkey wall on attached Chrome. "
             f"profile/CDP={CDP_URL} url={page.url}"
         )
-    if FORBIDDEN_FLOW_EMAIL.lower() in low or "benoats86" in low:
+    if FORBIDDEN_FLOW_EMAIL in _blob_account_sha256s(low):
         # only fatal if required email absent
-        if REQUIRED_FLOW_EMAIL.lower() not in low and "the studio Ultra account" not in low:
+        if REQUIRED_FLOW_EMAIL not in _blob_account_sha256s(low):
             raise SystemExit(
                 f"STOP_TO_COS BLOCKED_AUTH: forbidden {FORBIDDEN_FLOW_EMAIL} on {page.url}"
             )
@@ -317,7 +309,7 @@ def assert_auth(page) -> dict:
             credits = int(m.group(1).replace(",", ""))
             break
     ultra = "ultra" in low
-    has_req = REQUIRED_FLOW_EMAIL.lower() in low or "the studio Ultra account" in low
+    has_req = REQUIRED_FLOW_EMAIL in _blob_account_sha256s(low)
     if credits is not None and credits < 1000:
         raise SystemExit(
             f"STOP_TO_COS BLOCKED_AUTH: credits={credits} too low on {page.url}"

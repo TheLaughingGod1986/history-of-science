@@ -13,27 +13,6 @@ import signal
 import sys
 from pathlib import Path
 
-def _require_studio_flow_account() -> str:
-    import os as _os
-    val = _os.environ.get("STUDIO_FLOW_ACCOUNT", "").strip()
-    if not val:
-        raise SystemExit("STOP: missing required setting STUDIO_FLOW_ACCOUNT (set STUDIO_FLOW_ACCOUNT outside the repo)")
-    return val
-
-
-def _studio_flow_account_variants(addr: str) -> tuple[str, ...]:
-    low = addr.strip().lower()
-    local, sep, dom = low.partition("@")
-    if sep and dom in ("gmail.com", "googlemail.com"):
-        return (f"{local}@googlemail.com", f"{local}@gmail.com")
-    return (low,)
-
-
-def _forbidden_studio_flow_account() -> str:
-    import os as _os
-    return _os.environ.get("STUDIO_FLOW_FORBIDDEN_ACCOUNT", "").strip() or "__unset_forbidden_account__"
-
-
 signal.signal(signal.SIGPIPE, signal.SIG_IGN)
 signal.signal(signal.SIGHUP, signal.SIG_IGN)
 
@@ -122,7 +101,7 @@ def main() -> None:
     )
     os.environ["HOS_FLOW_PROJECT_URL"] = pinned
     os.environ["ORBIT_FLOW_PROJECT_URL"] = pinned
-    os.environ.setdefault("ORBIT_FLOW_ACCOUNT", _require_studio_flow_account())
+    os.environ.setdefault("ORBIT_FLOW_ACCOUNT", "81a01c9d841483f444008cd69e98b26019e032ed75b5e33e17409a76c6525ce9")
     os.environ.setdefault("ORBIT_FLOW_FORCE_NEW_PROJECT", "0")
     headed = os.environ.get("ORBIT_FLOW_HEADED", "1") not in {"0", "false", "False"}
     profile = flow.profile_path(PROFILE)

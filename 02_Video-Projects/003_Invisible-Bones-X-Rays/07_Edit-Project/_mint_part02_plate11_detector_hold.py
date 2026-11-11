@@ -22,25 +22,17 @@ import time
 from datetime import datetime, timezone
 from pathlib import Path
 
-def _require_studio_flow_account() -> str:
-    import os as _os
-    val = _os.environ.get("STUDIO_FLOW_ACCOUNT", "").strip()
-    if not val:
-        raise SystemExit("STOP: missing required setting STUDIO_FLOW_ACCOUNT (set STUDIO_FLOW_ACCOUNT outside the repo)")
-    return val
+def _account_sha256(addr: str | None) -> str:
+    import hashlib as _hashlib
+    s = (addr or "").strip().lower()
+    if not s:
+        return ""
+    return s if len(s) == 64 and all(c in "0123456789abcdef" for c in s) else _hashlib.sha256(s.encode()).hexdigest()
 
 
-def _studio_flow_account_variants(addr: str) -> tuple[str, ...]:
-    low = addr.strip().lower()
-    local, sep, dom = low.partition("@")
-    if sep and dom in ("gmail.com", "googlemail.com"):
-        return (f"{local}@googlemail.com", f"{local}@gmail.com")
-    return (low,)
-
-
-def _forbidden_studio_flow_account() -> str:
-    import os as _os
-    return _os.environ.get("STUDIO_FLOW_FORBIDDEN_ACCOUNT", "").strip() or "__unset_forbidden_account__"
+def _blob_account_sha256s(text: str) -> set[str]:
+    import re as _re
+    return {_account_sha256(e) for e in _re.findall(r"[A-Za-z0-9._%+-]+@(?:gmail|googlemail)\.com", text or "", _re.I)}
 
 
 REPO = Path(__file__).resolve().parents[3]
@@ -52,7 +44,7 @@ import orbit_gemini_veo as veo  # noqa: E402
 PROJECT_URL = (
     "https://flow.google.com/u/1/project/95929b6f-ae75-40be-af91-05699c481557"
 )
-ACCOUNT = _require_studio_flow_account()
+ACCOUNT = "81a01c9d841483f444008cd69e98b26019e032ed75b5e33e17409a76c6525ce9"
 MODEL = "Veo 3.1 - Quality"
 CLIP_DIR = (
     REPO
@@ -91,7 +83,7 @@ UNUSUAL_RE = re.compile(
 FOREIGN_ACCOUNT_RE = re.compile(
     r"[A-Za-z0-9._%+\-]+@(?:gmail|googlemail)\.com"
 )
-# HOS default env profile is the studio Ultra account. This mint stays on
+# HOS default env profile is the forbidden account. This mint stays on
 # the studio Ultra account — the account already in Batch B. Do not switch.
 PROFILE = Path(
     os.environ.get(
@@ -189,7 +181,7 @@ def assert_account_slot(page) -> str:
         raise SystemExit(f"STOP: not Flow /u/1/ slot ({url}). Do not switch accounts.")
     text = page_text(page, 20000)
     emails = sorted(set(FOREIGN_ACCOUNT_RE.findall(text)))
-    foreign = [e for e in emails if e.lower() != ACCOUNT.lower()]
+    foreign = [e for e in emails if _account_sha256(e) != ACCOUNT]
     if foreign:
         raise SystemExit(
             f"STOP: foreign Google account visible {foreign}. "

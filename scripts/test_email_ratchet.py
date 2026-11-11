@@ -3,10 +3,10 @@
 
 On 10 Nov 2026 a search found Google account addresses in 374 tracked files here: run evidence that recorded which
 account a browser was signed in to, plate boards copied from a template that named it, old hand-over notes, and
-account-checking runners. J2503 moved runner account checks to the external `STUDIO_FLOW_ACCOUNT` setting and
-replaced addresses in records with "the studio Ultra account". This test keeps the repo at zero.
+account-checking runners. J2503 / J2572 moved runner account checks to SHA-256 fingerprints and replaced addresses
+in 001–007, brand and archive records with "the studio Ultra account" (holding 008 and 009 files back for a second PR).
 
-`email_ratchet.json` lists any allowlisted files (empty after J2503). The rules:
+`email_ratchet.json` lists the remaining allowlisted files. The rules:
   - a file not on the list must contain none. Write "the studio Ultra account", the channel name or "Ben's account";
   - a listed file that no longer contains one must come off the list (`--lower` does it), so a clean-up stays clean;
   - the list never grows by hand. If a new file truly must carry an address, that is Ben's call, not a worker's.

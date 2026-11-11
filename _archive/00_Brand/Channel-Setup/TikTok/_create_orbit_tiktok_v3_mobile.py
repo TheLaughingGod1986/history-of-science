@@ -9,27 +9,6 @@ from pathlib import Path
 
 from playwright.sync_api import sync_playwright
 
-def _require_studio_flow_account() -> str:
-    import os as _os
-    val = _os.environ.get("STUDIO_FLOW_ACCOUNT", "").strip()
-    if not val:
-        raise SystemExit("STOP: missing required setting STUDIO_FLOW_ACCOUNT (set STUDIO_FLOW_ACCOUNT outside the repo)")
-    return val
-
-
-def _studio_flow_account_variants(addr: str) -> tuple[str, ...]:
-    low = addr.strip().lower()
-    local, sep, dom = low.partition("@")
-    if sep and dom in ("gmail.com", "googlemail.com"):
-        return (f"{local}@googlemail.com", f"{local}@gmail.com")
-    return (low,)
-
-
-def _forbidden_studio_flow_account() -> str:
-    import os as _os
-    return _os.environ.get("STUDIO_FLOW_FORBIDDEN_ACCOUNT", "").strip() or "__unset_forbidden_account__"
-
-
 # Fresh profile — mobile UA; don't reuse desktop youtube profile cookies that may force app wall
 PROFILE = "/Users/ben/code/youtube/.playwright-tiktok-mobile-profile"
 SETUP = Path("/Users/ben/code/Orbit-YouTube/00_Brand/Channel-Setup/TikTok")
@@ -297,7 +276,7 @@ def main() -> None:
                 pop.wait_for_load_state("domcontentloaded")
                 page.wait_for_timeout(1500)
                 shot(pop, "m_00_google")
-                acc = pop.get_by_text(re.compile(re.escape(_require_studio_flow_account()), re.I))
+                acc = pop.get_by_text(re.compile(r"the studio Ultra account", re.I))
                 if acc.count():
                     acc.first.click()
                     pop.wait_for_timeout(4000)
@@ -323,7 +302,7 @@ def main() -> None:
                 if click_re(page, r"email|Email", role=None) or True:
                     email_inp = page.locator('input[type="email"], input[name*="email" i]')
                     if email_inp.count():
-                        email_inp.first.fill(_require_studio_flow_account())
+                        email_inp.first.fill("the studio Ultra account")
                         result["steps"].append("email_filled")
                         shot(page, "m_05_email")
                         print(

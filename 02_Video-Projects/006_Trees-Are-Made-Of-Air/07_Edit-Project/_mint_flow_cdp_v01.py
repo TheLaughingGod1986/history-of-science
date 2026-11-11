@@ -29,25 +29,17 @@ import time
 from datetime import datetime, timezone
 from pathlib import Path
 
-def _require_studio_flow_account() -> str:
-    import os as _os
-    val = _os.environ.get("STUDIO_FLOW_ACCOUNT", "").strip()
-    if not val:
-        raise SystemExit("STOP: missing required setting STUDIO_FLOW_ACCOUNT (set STUDIO_FLOW_ACCOUNT outside the repo)")
-    return val
+def _account_sha256(addr: str | None) -> str:
+    import hashlib as _hashlib
+    s = (addr or "").strip().lower()
+    if not s:
+        return ""
+    return s if len(s) == 64 and all(c in "0123456789abcdef" for c in s) else _hashlib.sha256(s.encode()).hexdigest()
 
 
-def _studio_flow_account_variants(addr: str) -> tuple[str, ...]:
-    low = addr.strip().lower()
-    local, sep, dom = low.partition("@")
-    if sep and dom in ("gmail.com", "googlemail.com"):
-        return (f"{local}@googlemail.com", f"{local}@gmail.com")
-    return (low,)
-
-
-def _forbidden_studio_flow_account() -> str:
-    import os as _os
-    return _os.environ.get("STUDIO_FLOW_FORBIDDEN_ACCOUNT", "").strip() or "__unset_forbidden_account__"
+def _blob_account_sha256s(text: str) -> set[str]:
+    import re as _re
+    return {_account_sha256(e) for e in _re.findall(r"[A-Za-z0-9._%+-]+@(?:gmail|googlemail)\.com", text or "", _re.I)}
 
 
 REPO = Path(__file__).resolve().parents[3]
@@ -62,8 +54,8 @@ MEDIA = Path(
     )
 )
 CDP = os.environ.get("ORBIT_FLOW_CDP", "http://127.0.0.1:9222")
-REQUIRED = _require_studio_flow_account()
-FORBIDDEN = _forbidden_studio_flow_account()
+REQUIRED = "81a01c9d841483f444008cd69e98b26019e032ed75b5e33e17409a76c6525ce9"
+FORBIDDEN = "93b0f97ef00986fa90ead10a83be910d43707ddc8023daa2018ed1d95cbbb9d4"
 COST = {"Fast": 10, "Quality": 100}
 FLOOR = 0
 
@@ -94,7 +86,7 @@ EXPLORER = (
     "teal long coat, tan vest, brown bow tie, satchel. Acts then leaves."
 )
 CREDIT_RE = re.compile(r"([\d,]{1,7})\s*(?:Google\s+Flow\s+)?credits", re.I)
-EMAIL_RE = re.compile(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}", re.I)
+EMAIL_RE = re.compile(r"[A-Za-z0-9._%+-]+@(?:gmail|googlemail)\.com", re.I)
 UNPAID_RE = re.compile(
     r"unpaid|payment (failed|error)|add a payment|update (your )?payment|"
     r"purchase failed|insufficient credits|not enough credits|"
@@ -159,7 +151,6 @@ def body_text(page) -> str:
 
 
 def read_account(page) -> tuple[int | None, str | None]:
-    req = _require_studio_flow_account().lower()
     def scan() -> tuple[int | None, set[str]]:
         text = body_text(page)
         try:
@@ -169,10 +160,10 @@ def read_account(page) -> tuple[int | None, str | None]:
         except Exception:
             pass
         hits = [int(m.group(1).replace(",", "")) for m in CREDIT_RE.finditer(text)]
-        return (max(hits) if hits else None), {e.lower() for e in EMAIL_RE.findall(text)}
+        return (max(hits) if hits else None), {_account_sha256(e) for e in EMAIL_RE.findall(text)}
 
     credits, emails = scan()
-    if credits is None or req not in emails:
+    if credits is None or REQUIRED not in emails:
         for sel in ('[aria-label*="Account details" i]', '[aria-label*="Google Account" i]',
                     'button:has-text("ULTRA")', "text=ULTRA"):
             try:
@@ -190,7 +181,7 @@ def read_account(page) -> tuple[int | None, str | None]:
             page.keyboard.press("Escape")
         except Exception:
             pass
-    account = req if req in emails else (sorted(emails)[0] if emails else None)
+    account = REQUIRED if REQUIRED in emails else (sorted(emails)[0] if emails else None)
     return credits, account
 
 
@@ -373,7 +364,7 @@ def mint(part: str, only: set[str], max_n: int | None, stills: bool = False, tak
         page = flow_page(browser, flow)
         credits, account = read_account(page)
         print(f"GATE account={account} credits={credits}", flush=True)
-        if account != REQUIRED or FORBIDDEN in (account or ""):
+        if _account_sha256(account) != REQUIRED or _account_sha256(account) == FORBIDDEN:
             raise SystemExit(f"STOP wrong Flow account: {account}")
         if credits is None:
             raise SystemExit("STOP Flow credits unreadable")
@@ -492,7 +483,7 @@ def harvest_spent(part: str, wait_s: int = 120) -> int:
         browser = pw.chromium.connect_over_cdp(CDP)
         page = flow_page(browser, flow)
         before, account = read_account(page)
-        if account != REQUIRED:
+        if _account_sha256(account) != REQUIRED:
             raise SystemExit(f"STOP wrong Flow account: {account}")
         for k, e in todo.items():
             dest = Path(e.get("file") or raw / f"{e['plate']}_t{e['take']}.mp4")

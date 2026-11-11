@@ -24,27 +24,6 @@ import time
 from datetime import datetime, timezone
 from pathlib import Path
 
-def _require_studio_flow_account() -> str:
-    import os as _os
-    val = _os.environ.get("STUDIO_FLOW_ACCOUNT", "").strip()
-    if not val:
-        raise SystemExit("STOP: missing required setting STUDIO_FLOW_ACCOUNT (set STUDIO_FLOW_ACCOUNT outside the repo)")
-    return val
-
-
-def _studio_flow_account_variants(addr: str) -> tuple[str, ...]:
-    low = addr.strip().lower()
-    local, sep, dom = low.partition("@")
-    if sep and dom in ("gmail.com", "googlemail.com"):
-        return (f"{local}@googlemail.com", f"{local}@gmail.com")
-    return (low,)
-
-
-def _forbidden_studio_flow_account() -> str:
-    import os as _os
-    return _os.environ.get("STUDIO_FLOW_FORBIDDEN_ACCOUNT", "").strip() or "__unset_forbidden_account__"
-
-
 HERE = Path(__file__).resolve().parent
 MEDIA = Path("/Users/benjaminoats/YouTube/History Of Science")
 FILM = MEDIA / "02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table"
@@ -58,7 +37,7 @@ PLATE = "lavoisier_list"
 
 PROJECT = "gen-lang-client-0538779324"
 LOCATION = "us-central1"
-ACCOUNT = "the studio Ultra account"
+ACCOUNT = "81a01c9d841483f444008cd69e98b26019e032ed75b5e33e17409a76c6525ce9"
 MODEL = "veo-3.1-generate-001"
 IMAGE_MODEL = "gemini-2.5-flash-image"
 CLIP_S, RESOLUTION, MAX_TAKES = 8, "1080p", 2
@@ -124,7 +103,6 @@ def guard(log: dict, usd: float) -> None:
 
 
 def client():
-    _require_studio_flow_account()
     import google.auth
     from google import genai
     creds, _ = google.auth.default(scopes=["https://www.googleapis.com/auth/cloud-platform"])

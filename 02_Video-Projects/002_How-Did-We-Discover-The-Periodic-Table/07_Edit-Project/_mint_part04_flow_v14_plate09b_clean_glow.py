@@ -25,25 +25,17 @@ from pathlib import Path
 from PIL import Image
 from playwright.sync_api import sync_playwright
 
-def _require_studio_flow_account() -> str:
-    import os as _os
-    val = _os.environ.get("STUDIO_FLOW_ACCOUNT", "").strip()
-    if not val:
-        raise SystemExit("STOP: missing required setting STUDIO_FLOW_ACCOUNT (set STUDIO_FLOW_ACCOUNT outside the repo)")
-    return val
+def _account_sha256(addr: str | None) -> str:
+    import hashlib as _hashlib
+    s = (addr or "").strip().lower()
+    if not s:
+        return ""
+    return s if len(s) == 64 and all(c in "0123456789abcdef" for c in s) else _hashlib.sha256(s.encode()).hexdigest()
 
 
-def _studio_flow_account_variants(addr: str) -> tuple[str, ...]:
-    low = addr.strip().lower()
-    local, sep, dom = low.partition("@")
-    if sep and dom in ("gmail.com", "googlemail.com"):
-        return (f"{local}@googlemail.com", f"{local}@gmail.com")
-    return (low,)
-
-
-def _forbidden_studio_flow_account() -> str:
-    import os as _os
-    return _os.environ.get("STUDIO_FLOW_FORBIDDEN_ACCOUNT", "").strip() or "__unset_forbidden_account__"
+def _blob_account_sha256s(text: str) -> set[str]:
+    import re as _re
+    return {_account_sha256(e) for e in _re.findall(r"[A-Za-z0-9._%+-]+@(?:gmail|googlemail)\.com", text or "", _re.I)}
 
 
 REPO = Path(__file__).resolve().parents[3]
@@ -73,9 +65,9 @@ PROFILE = Path(
         str(Path.home() / ".playwright-hos-flow-profile"),
     )
 )
-REQUIRED_FLOW_EMAIL = _require_studio_flow_account()
-ALLOWED_FLOW_EMAILS = set(_studio_flow_account_variants(REQUIRED_FLOW_EMAIL))
-FORBIDDEN_FLOW_EMAIL = _forbidden_studio_flow_account()
+REQUIRED_FLOW_EMAIL = "81a01c9d841483f444008cd69e98b26019e032ed75b5e33e17409a76c6525ce9"
+ALLOWED_FLOW_EMAILS = {REQUIRED_FLOW_EMAIL, "1060171615b311ab416fccd36a51024de12b5fe8b815e6ccd3d3dde67ffad99f"}
+FORBIDDEN_FLOW_EMAIL = "93b0f97ef00986fa90ead10a83be910d43707ddc8023daa2018ed1d95cbbb9d4"
 MAX_CREATES = int(os.environ.get("HOS_V14_MAX_CREATES", "4"))
 
 PARENT_V13 = PROJ / "09_Final-Export/hos_002_part04_rough_v13.mp4"
@@ -240,7 +232,7 @@ def pick_google_account(page) -> None:
     url = page.url or ""
     if "accounts.google.com" not in url:
         return
-    for needle in _studio_flow_account_variants(REQUIRED_FLOW_EMAIL):
+    for needle in [e for e in re.findall(r"[A-Za-z0-9._%+-]+@(?:gmail|googlemail)\.com", page.inner_text("body"), flags=re.I) if _account_sha256(e) in ALLOWED_FLOW_EMAILS]:
         loc = page.get_by_text(needle, exact=False)
         if loc.count():
             print(f"  account chooser → {needle}", flush=True)
@@ -261,10 +253,10 @@ def require_flow_account(page) -> str:
     except Exception:
         labels = []
     blob = " | ".join(labels[:120]).lower()
-    if "benoats86" in blob:
+    if FORBIDDEN_FLOW_EMAIL in _blob_account_sha256s(blob):
         raise SystemExit(f"BLOCKED_AUTH: forbidden account {FORBIDDEN_FLOW_EMAIL}")
     for email in ALLOWED_FLOW_EMAILS:
-        if email.lower() in blob:
+        if email in _blob_account_sha256s(blob):
             return email
     return REQUIRED_FLOW_EMAIL
 

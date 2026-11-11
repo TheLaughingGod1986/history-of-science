@@ -9,27 +9,6 @@ from pathlib import Path
 
 from playwright.sync_api import sync_playwright
 
-def _require_studio_flow_account() -> str:
-    import os as _os
-    val = _os.environ.get("STUDIO_FLOW_ACCOUNT", "").strip()
-    if not val:
-        raise SystemExit("STOP: missing required setting STUDIO_FLOW_ACCOUNT (set STUDIO_FLOW_ACCOUNT outside the repo)")
-    return val
-
-
-def _studio_flow_account_variants(addr: str) -> tuple[str, ...]:
-    low = addr.strip().lower()
-    local, sep, dom = low.partition("@")
-    if sep and dom in ("gmail.com", "googlemail.com"):
-        return (f"{local}@googlemail.com", f"{local}@gmail.com")
-    return (low,)
-
-
-def _forbidden_studio_flow_account() -> str:
-    import os as _os
-    return _os.environ.get("STUDIO_FLOW_FORBIDDEN_ACCOUNT", "").strip() or "__unset_forbidden_account__"
-
-
 PROFILE = "/Users/ben/code/youtube/.playwright-youtube-profile"
 OUT = Path("/Users/ben/code/Orbit-YouTube/00_Brand/Channel-Setup/TikTok")
 AUDIT = OUT / "audit"
@@ -82,7 +61,7 @@ def main() -> None:
                         pop.wait_for_load_state("domcontentloaded")
                         page.wait_for_timeout(2000)
                         shot(pop, "01_login_pop")
-                        acc = pop.get_by_text(re.compile(re.escape(_require_studio_flow_account()), re.I))
+                        acc = pop.get_by_text(re.compile(r"the studio Ultra account", re.I))
                         if acc.count():
                             acc.first.click()
                             pop.wait_for_timeout(3000)

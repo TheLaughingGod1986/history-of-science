@@ -30,27 +30,6 @@ import time
 from datetime import datetime, timezone
 from pathlib import Path
 
-def _require_studio_flow_account() -> str:
-    import os as _os
-    val = _os.environ.get("STUDIO_FLOW_ACCOUNT", "").strip()
-    if not val:
-        raise SystemExit("STOP: missing required setting STUDIO_FLOW_ACCOUNT (set STUDIO_FLOW_ACCOUNT outside the repo)")
-    return val
-
-
-def _studio_flow_account_variants(addr: str) -> tuple[str, ...]:
-    low = addr.strip().lower()
-    local, sep, dom = low.partition("@")
-    if sep and dom in ("gmail.com", "googlemail.com"):
-        return (f"{local}@googlemail.com", f"{local}@gmail.com")
-    return (low,)
-
-
-def _forbidden_studio_flow_account() -> str:
-    import os as _os
-    return _os.environ.get("STUDIO_FLOW_FORBIDDEN_ACCOUNT", "").strip() or "__unset_forbidden_account__"
-
-
 PROJ = Path(__file__).resolve().parents[1]
 REPO = PROJ.parents[1]
 EDIT = PROJ / "07_Edit-Project"
@@ -71,7 +50,7 @@ def set_part(n: str) -> None:
 
 PROJECT = "gen-lang-client-0538779324"
 LOCATION = "us-central1"
-ACCOUNT = "the studio Ultra account"
+ACCOUNT = "81a01c9d841483f444008cd69e98b26019e032ed75b5e33e17409a76c6525ce9"
 MODELS = {"Quality": "veo-3.1-generate-001", "Fast": "veo-3.1-fast-generate-001"}
 IMAGE_MODEL = "gemini-2.5-flash-image"
 CLIP_CHOICES = (4, 6, 8)
@@ -258,7 +237,6 @@ def update_log(fn) -> dict:
 
 
 def client():
-    _require_studio_flow_account()
     import google.auth
     from google import genai
     creds, _ = google.auth.default(scopes=["https://www.googleapis.com/auth/cloud-platform"])

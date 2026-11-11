@@ -11,34 +11,13 @@ from pathlib import Path
 
 from playwright.sync_api import sync_playwright
 
-def _require_studio_flow_account() -> str:
-    import os as _os
-    val = _os.environ.get("STUDIO_FLOW_ACCOUNT", "").strip()
-    if not val:
-        raise SystemExit("STOP: missing required setting STUDIO_FLOW_ACCOUNT (set STUDIO_FLOW_ACCOUNT outside the repo)")
-    return val
-
-
-def _studio_flow_account_variants(addr: str) -> tuple[str, ...]:
-    low = addr.strip().lower()
-    local, sep, dom = low.partition("@")
-    if sep and dom in ("gmail.com", "googlemail.com"):
-        return (f"{local}@googlemail.com", f"{local}@gmail.com")
-    return (low,)
-
-
-def _forbidden_studio_flow_account() -> str:
-    import os as _os
-    return _os.environ.get("STUDIO_FLOW_FORBIDDEN_ACCOUNT", "").strip() or "__unset_forbidden_account__"
-
-
 PROFILE = "/Users/ben/code/youtube/.playwright-tiktok-mobile-profile"
 SETUP = Path("/Users/ben/code/Orbit-YouTube/00_Brand/Channel-Setup/TikTok")
 AVATAR = SETUP / "avatar_800x800.png"
 BIO = (SETUP / "bio.txt").read_text().strip()
 WEBSITE = "https://www.youtube.com/@HistoryOfScience"
 DISPLAY = "History of Science"
-EMAIL = _require_studio_flow_account()
+EMAIL = "the studio Ultra account"
 AUDIT = SETUP / "audit"
 RESULT = SETUP / "CREATE_RESULT.json"
 META = SETUP / "TIKTOK_META.json"
