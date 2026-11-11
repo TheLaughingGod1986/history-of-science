@@ -139,7 +139,7 @@
         "renderer": "_build_code_graphics_v01.py",
         "duration_s": 5.26,
         "source_in_s": 0,
-        "review_status": "Grok PASS on the revised sheet, 11 Nov. Phone strokes, continent outlines, f116 at 390. Splice not authorized. Parent out is frame 94.",
+        "review_status": "Not KEEP (Chief, 11 Nov, desk 6805748386). Phone strokes and coastlines are in sha 73e77846. Open crater rings and a 1.30 s drawn head are still owed. No freeze. Parent out is frame 94. Splice not authorized.",
         "splice_authorized": false,
         "labels": [],
         "approval_ref": "https://github.com/TheLaughingGod1986/history-of-science/pull/180#issuecomment-6800614881",

@@ -94,7 +94,8 @@ rec['parent_out'] = {
     'earlier_out_frame': 94,
     'earlier_out_s': earlier,
     'delta_s': (5.26 - 1/24) - earlier,
-    'instruction': 'Cut the parent at frame 94. Hold the graphic first frame for the 1.30s difference, crossfade 0.20s, so the cannon stays at 189.20 and the word timings stay on the moving gap.',
+    'instruction': 'Do not splice this 158-frame file and do not hold frame 0. Parent out frame 94 is accepted. The 1.30s gap waits for a longer head render (39 frames of the tangent drawing on, then these 158 frames). Cross-fade 0.20s finishes at frame 94. Cannon stays at 189.20.',
+    'hold_rejected': True,
 }
 rec['boundary_note']='Parent KEEP is the whole 8s clip. Planned use is the first 5.26s, and that out shows the curled trail. Earlier out is frame 94. Not an assembled join.'
 (a.review/'MANIFEST.json').write_text(json.dumps(rec,indent=2)+'\n')
