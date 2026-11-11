@@ -1,16 +1,17 @@
 #!/usr/bin/env python3
-"""Render STATUS.md (repo root) from 00_Brand/Channel-Setup/PIPELINE.json.
+"""Check every film's status file, and build the status page from them.
 
 One table Ben can read on his phone: every film, how far through it is (%),
 what is being worked on now, what is next, and when it should be ready.
 
-  python3 00_Brand/Channel-Setup/tools/status_board.py           # write STATUS.md
-  python3 00_Brand/Channel-Setup/tools/status_board.py --check   # CI: fail if STATUS.md is stale
+  python3 00_Brand/Channel-Setup/tools/status_board.py --check   # CI and before a commit: are the status files right?
+  python3 00_Brand/Channel-Setup/tools/status_board.py           # build STATUS.md and the Kanban page here, to read
 
-Rules for agents (AGENTS.md -> "Status board"): whoever finishes or starts a
-stage edits PIPELINE.json and re-runs this in the same PR. Never edit STATUS.md
-by hand. Dates are counted from PIPELINE.json "updated", never from today's
-clock, so the file only changes when the data does.
+Each film keeps its own `02_Video-Projects/<NNN_Name>/status.json` (J2622, the studio's standard for every channel:
+one status file per film). What is the channel's and no film's, the stages with their weights and owners, the
+next-steps lines and the credit lines, is in `00_Brand/Channel-Setup/BOARD.json`. The two pages are built from those
+on demand and are not kept in the repo, so a pull request that moves one film changes one small file and cannot
+clash with another film's. Rules for agents: AGENTS.md -> "Status board".
 """
 from __future__ import annotations
 
@@ -19,9 +20,12 @@ import datetime as dt
 import json
 import sys
 from pathlib import Path
+from zoneinfo import ZoneInfo
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import film_status  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[3]
-DATA = ROOT / "00_Brand/Channel-Setup/PIPELINE.json"
 OUT = ROOT / "STATUS.md"
 KANBAN_TEMPLATE = ROOT / "00_Brand/Channel-Setup/kanban/template.html"
 KANBAN_OUT = ROOT / "00_Brand/Channel-Setup/kanban/index.html"
@@ -273,17 +277,11 @@ def render(data: dict) -> str:
     lines.append("# HOS status board")
     lines.append("")
     lines.append(
-        f"**As of {fmt_date(today)} {today.year}**, updated by {data['updated_by']}. "
-        "Generated from `00_Brand/Channel-Setup/PIPELINE.json` by "
-        "`00_Brand/Channel-Setup/tools/status_board.py`. Don't edit this file by hand."
+        f"**Built {fmt_date(today)} {today.year}** from each film's `status.json` and "
+        "`00_Brand/Channel-Setup/BOARD.json` by `00_Brand/Channel-Setup/tools/status_board.py`. "
+        "This page is not kept in the repo: run the tool to build it. The studio's board shows the same films live."
     )
     lines.append("")
-    if data.get("board_url"):
-        lines.append(
-            f"**Kanban board (live):** {data['board_url']} — reads this same file from `main` "
-            "every 5 minutes. The first time you open it, allow GitHub when it asks."
-        )
-        lines.append("")
     lines.append("## At a glance")
     lines.append("")
     lines.append("| Film | Airs | Done | Now | With · underway? | Time left on it | Ready for Ben's OK | Health |")
@@ -379,37 +377,47 @@ def render(data: dict) -> str:
 
 
 def render_kanban(data: dict) -> str:
-    """The Kanban page with PIPELINE.json built in as its offline snapshot.
-
-    Live, the page reads PIPELINE.json from main through the viewer's GitHub
-    connector; the snapshot is what it shows until then (or if GitHub is off).
-    """
+    """The Kanban page with the whole board built in as its snapshot."""
     snapshot = json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
     return KANBAN_TEMPLATE.read_text().replace("/*SNAPSHOT*/null", snapshot, 1)
 
 
-def main() -> int:
+def load(today: dt.date | None = None) -> dict:
+    """Every film's status file and the channel's own part, as the one document the pages are drawn from. `updated`
+    is the day the page is built (London): nothing built is kept in the repo, so dates count from today."""
+    data = film_status.read()
+    data["updated"] = (today or dt.datetime.now(ZoneInfo("Europe/London")).date()).isoformat()
+    return data
+
+
+def kept_pages(root: Path = ROOT) -> list[str]:
+    """The built pages, if someone has committed one again: they are made on demand and must stay out of the repo."""
+    import subprocess
+    r = subprocess.run(["git", "-C", str(root), "ls-files", "--", str(OUT.relative_to(ROOT)), str(KANBAN_OUT.relative_to(ROOT))],
+                       capture_output=True, text=True)
+    return r.stdout.split() if r.returncode == 0 else []
+
+
+def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
-    ap.add_argument("--check", action="store_true", help="fail if STATUS.md doesn't match PIPELINE.json")
-    args = ap.parse_args()
-    data = json.loads(DATA.read_text())
-    errors = validate(data)
+    ap.add_argument("--check", action="store_true", help="check the status files and write nothing")
+    args = ap.parse_args(argv)
+    try:
+        data = load()
+    except (OSError, ValueError, KeyError) as e:
+        print(f"status files: {e}", file=sys.stderr)
+        return 1
+    errors = validate(data) + [f"{p} is committed: it is built on demand, remove it from the repo" for p in kept_pages()]
     if errors:
         for e in errors:
-            print(f"PIPELINE.json: {e}", file=sys.stderr)
+            print(f"status files: {e}", file=sys.stderr)
         return 1
-    outputs = {OUT: render(data), KANBAN_OUT: render_kanban(data)}
     if args.check:
-        stale = [p for p, text in outputs.items() if (p.read_text() if p.exists() else "") != text]
-        for p in stale:
-            print(f"{p.relative_to(ROOT)} is stale: run python3 00_Brand/Channel-Setup/tools/status_board.py", file=sys.stderr)
-        if stale:
-            return 1
-        print("STATUS.md and kanban/index.html match PIPELINE.json")
+        print(f"{len(data['films'])} status files and BOARD.json are in order")
         return 0
-    for p, text in outputs.items():
+    for p, text in {OUT: render(data), KANBAN_OUT: render_kanban(data)}.items():
         p.write_text(text)
-        print(f"wrote {p.relative_to(ROOT)}")
+        print(f"built {p.relative_to(ROOT)} (not kept in the repo)")
     return 0
 
 
