@@ -225,6 +225,25 @@ class RefusedTakeAlreadyInTheReportTests(unittest.TestCase):
                 self.assertEqual(sum(r["amount"] for r in spends), 0)
                 self.assertEqual(spends[1]["film"], "HOS:009")
 
+    def test_a_correction_entered_by_hand_is_not_made_twice(self):
+        # The Chief's ruling lets the Mini correct the receipt with the ai_spend tool. If that
+        # line names the charge, the export must not take the 100 back a second time.
+        for film in RUNNERS:
+            with self.subTest(film=film), tempfile.TemporaryDirectory() as tmp:
+                runner, root = load(film), Path(tmp)
+                target = root / "spend.jsonl"
+                charged_take(runner, root / "state", key="HOS:009:P04:08_halley_visit_c1:t1")
+                with runner.SharedFlowAccounting(root / "state") as account:
+                    account.export_ai_spend(target, by="codex")
+                    account.reverse_policy_refusal("HOS:009:P04:08_halley_visit_c1:t1", evidence=EVIDENCE)
+                with target.open("a") as handle:   # what `ai_spend.py spend --amount -100 ...` appends
+                    handle.write(json.dumps({"at": "2026-11-11T03:30:00Z", "kind": "spend", "pool": "flow",
+                                             "amount": -100.0, "film": "HOS:009", "by": "gemini",
+                                             "what": "HOS:009:P04:08_halley_visit_c1:t1 refused by Flow policy"}) + "\n")
+                with runner.SharedFlowAccounting(root / "state") as account:
+                    self.assertEqual(account.export_ai_spend(target, by="codex"), 0)
+                self.assertEqual(sum(r["amount"] for r in self.spends(target)), 0)
+
     def test_every_runner_writes_the_same_receipt(self):
         # Each runner replays the shared ledger into the one report at the start of a batch.
         # A receipt that differed between them would stop the next one as an identity collision.
