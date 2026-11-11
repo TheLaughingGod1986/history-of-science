@@ -1272,7 +1272,8 @@ def execute_shared_batch(batch: list[Row], *, media: Path, ledger_path: Path,
                          still_maker=None,
                          in_scope_keys: set[tuple[int, str]] | None = None,
                          test_archive: bool = False,
-                         inventory_rows: list[Row] | None = None) -> list[dict]:
+                         inventory_rows: list[Row] | None = None,
+                         retakes_j2583: bool = False) -> list[dict]:
     """Production accounting integration; no caller-supplied balance/price.
 
     Each actual configured Create obtains its own UI evidence and durable shared
@@ -1325,6 +1326,8 @@ def execute_shared_batch(batch: list[Row], *, media: Path, ledger_path: Path,
         if any(e.get('status') == 'SUBMITTING' for e in latest_entries(entries)):
             raise GuardError('unresolved local output; reconcile before batch')
         _, _, _, takes = ledger_totals(entries)
+        if retakes_j2583:
+            validate_retakes(batch, entries, media)
         for row in batch:
             if takes.get(row.plate_id, 0) >= MAX_TAKES_PER_ROW:
                 raise GuardError(f'{row.plate_id}: take cap reached')
@@ -1506,11 +1509,51 @@ def next_batch(rows: list[Row], ledger: list[dict]) -> list[Row]:
     return batch_rows(ordered, parents_already_done=True)[0]
 
 
+J2583_KEYS = ((3, "01_really_falling_c1"), (2, "08_the_apple_c1"),
+              (4, "05_minute_second_c1"))
+
+
+def retake_batch(repo: Path, rows: list[Row], entries: list[dict], media: Path) -> list[Row]:
+    """Only J2583's first three second takes; no automatic retry or c2."""
+    scope = json.loads((repo / EDIT_REL / "TRANCHE2_RETAKES_J2583.json").read_text())
+    raw = scope.get("rows", [])
+    expected = (*J2583_KEYS, (4, "05_minute_second_c2"))
+    if (scope.get("job") != "J2583" or scope.get("max_total_credits") != 400
+            or scope.get("max_credits_per_take") != 100 or scope.get("takes_per_row") != 1
+            or tuple((r["part"], r["id"]) for r in raw) != expected
+            or any(r.get("take") != 2 for r in raw)):
+        raise GuardError("J2583 retake scope differs from the approved four second takes")
+    by_key = {r.key: r for r in rows}
+    for r in raw:
+        if sha256_file(repo / r["board"]) != r["board_sha256"]:
+            raise GuardError("J2583 retake board hash mismatch")
+        if (r["part"], r["id"]) not in by_key:
+            raise GuardError("J2583 retake outside original tranche scope")
+    selected = [by_key[key] for key in J2583_KEYS]
+    validate_retakes(selected, entries, media)
+    return selected
+
+
+def validate_retakes(batch: list[Row], entries: list[dict], media: Path) -> None:
+    if tuple(r.key for r in batch) != J2583_KEYS:
+        raise GuardError("J2583 permits only its three ordered rows, never c2")
+    for row in batch:
+        records = [e for e in latest_entries(entries)
+                   if (e.get("part"), e.get("plate_id")) == row.key]
+        if (len(records) != 1 or records[0].get("take") != 1
+                or not verified_output(records[0])):
+            raise GuardError("J2583 requires verified take 1 only; retry or recovery needs Chief")
+        take, _ = next_version(media, row.part, row.plate_id,
+                               takes_recorded(entries, row.part, row.plate_id))
+        if take != 2:
+            raise GuardError("J2583 must write take 2 without overwriting any output")
+
+
 def cmd_submit(repo: Path, *, other: int, media: Path, ledger_path: Path, lock_path: Path,
                pid_path: Path, done_path: Path, archive_dir: Path | None,
                accounting_state: Path | None = None, spend_ledger: Path | None = None,
                recorder: str = "codex", submitter=None, still_maker=None,
-               test_archive: bool = False) -> list[dict]:
+               test_archive: bool = False, retakes_j2583: bool = False) -> list[dict]:
     """Run one guarded tranche-2 batch when explicitly armed."""
     if not submit_armed():
         raise SystemExit(
@@ -1522,7 +1565,8 @@ def cmd_submit(repo: Path, *, other: int, media: Path, ledger_path: Path, lock_p
         claim_pid(pid_path)
         rows = load_scope(repo)
         entries = read_ledger(ledger_path)
-        batch = next_batch(rows, entries)
+        batch = (retake_batch(repo, rows, entries, media) if retakes_j2583
+                 else next_batch(rows, entries))
         if not batch:
             return []
         return execute_shared_batch(
@@ -1540,6 +1584,7 @@ def cmd_submit(repo: Path, *, other: int, media: Path, ledger_path: Path, lock_p
             in_scope_keys={r.key for r in rows},
             test_archive=test_archive,
             inventory_rows=rows,
+            retakes_j2583=retakes_j2583,
         )
 
 
@@ -2022,6 +2067,8 @@ def main(argv: list[str] | None = None) -> int:
     plan.add_argument("--repo")
     submit = sub.add_parser("submit", help="refused unless HOS009_TRANCHE2_SUBMIT=1")
     submit.add_argument("--repo")
+    submit.add_argument("--retakes-j2583", action="store_true",
+                        help="only the first three approved second takes; Chief runner review required")
     submit.add_argument("--media", required=False)
     submit.add_argument("--other-reservations", type=int, required=False)
     submit.add_argument("--ledger", required=False)
@@ -2107,6 +2154,7 @@ def main(argv: list[str] | None = None) -> int:
         pid_path=Path(args.pid) if args.pid else runner_state_dir() / "runner.pid",
         done_path=Path(args.done) if args.done else runner_state_dir() / "runner.done",
         archive_dir=Path(args.archive) if args.archive else None,
+        retakes_j2583=args.retakes_j2583,
     )
     return 0
 

@@ -108,6 +108,66 @@ class ScopeAndOrderTests(unittest.TestCase):
         self.assertTrue(TRANCHE1.exists())
 
 
+class RetakeScopeTests(unittest.TestCase):
+    def setUp(self):
+        self.rows = RUNNER.load_scope(ROOT)
+        self.entries = [{"part": part, "plate_id": plate, "take": 1}
+                        for part, plate in RUNNER.J2583_KEYS]
+
+    def test_only_three_ordered_second_takes(self):
+        from unittest.mock import patch
+        with tempfile.TemporaryDirectory() as tmp, patch.object(RUNNER, "verified_output", return_value=True):
+            batch = RUNNER.retake_batch(ROOT, self.rows, self.entries, Path(tmp))
+            self.assertEqual(tuple(r.key for r in batch), RUNNER.J2583_KEYS)
+            self.assertNotIn("05_minute_second_c2", [r.plate_id for r in batch])
+
+    def test_changed_retake_cap_or_board_hash_is_refused(self):
+        from unittest.mock import patch
+        import copy
+        original = json.loads((EDIT / "TRANCHE2_RETAKES_J2583.json").read_text())
+        for field, value in (("max_total_credits", 500), ("takes_per_row", 2),
+                             ("max_credits_per_take", 200)):
+            changed = copy.deepcopy(original)
+            changed[field] = value
+            with patch.object(RUNNER.json, "loads", return_value=changed):
+                with self.assertRaises(RUNNER.GuardError):
+                    RUNNER.retake_batch(ROOT, self.rows, self.entries, Path("/unused"))
+        changed = copy.deepcopy(original)
+        changed["rows"][0]["board_sha256"] = "0" * 64
+        with patch.object(RUNNER.json, "loads", return_value=changed):
+            with self.assertRaises(RUNNER.GuardError):
+                RUNNER.retake_batch(ROOT, self.rows, self.entries, Path("/unused"))
+
+    def test_any_second_take_intent_blocks_repeat_even_if_failed(self):
+        from unittest.mock import patch
+        with tempfile.TemporaryDirectory() as tmp, patch.object(RUNNER, "verified_output", return_value=True):
+            for status in ("SUBMITTING", "FAILED", "FAILED_POLICY", "PENDING_REVIEW"):
+                entries = self.entries + [dict(self.entries[0], take=2, status=status)]
+                with self.assertRaises(RUNNER.GuardError):
+                    RUNNER.retake_batch(ROOT, self.rows, entries, Path(tmp))
+
+    def test_unverified_first_take_and_existing_file_refused(self):
+        from unittest.mock import patch
+        with tempfile.TemporaryDirectory() as tmp:
+            media = Path(tmp)
+            with patch.object(RUNNER, "verified_output", return_value=False):
+                with self.assertRaises(RUNNER.GuardError):
+                    RUNNER.retake_batch(ROOT, self.rows, self.entries, media)
+            dest = RUNNER.versioned_output(media, *RUNNER.J2583_KEYS[0], 2)
+            dest.parent.mkdir(parents=True)
+            dest.write_bytes(b"preserve")
+            with patch.object(RUNNER, "verified_output", return_value=True):
+                with self.assertRaises(RUNNER.GuardError):
+                    RUNNER.retake_batch(ROOT, self.rows, self.entries, media)
+            self.assertEqual(dest.read_bytes(), b"preserve")
+
+    def test_c2_and_unrelated_rows_rejected_under_shared_lock_guard(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            for batch in (self.rows[:3], self.rows, []):
+                with self.assertRaises(RUNNER.GuardError):
+                    RUNNER.validate_retakes(batch, self.entries, Path(tmp))
+
+
 class GuardTests(unittest.TestCase):
     def test_price_must_be_quality_x1_100(self):
         self.assertEqual(RUNNER.accept_price(price()), 100)
