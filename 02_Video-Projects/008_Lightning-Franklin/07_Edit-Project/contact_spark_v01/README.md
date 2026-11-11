@@ -1,8 +1,13 @@
-# HOS 008 contact spark — size revision (desk 6796829044)
+# HOS 008 contact spark — bloom revision (desk 6797257524)
 
-Chief's call on Claude's review: one revision for size, not a pass of the hairline. Geometry and the two-frame timing stay. On the peak frame only, the core is about 3.8 px FWHM at 1080p (was about 2 px) and a soft warm bloom, peak alpha 80, is centred on the gap. It falls through a few counts near 25 px and is gone by about 34 px. The next frame stays the shorter half-strength streak, with no bloom.
+Second size pass. The first pass (peak alpha 80, radius about 25 px) changed pixels under a zoom and did not read at 390 px. Geometry stays the measured pair, (933, 340.5) to (945, 333) at 1080. The core stays about 3.8 px FWHM. The bloom carries the phone read.
 
-Phone check: the 1080 frames scaled to 390 px wide. f029 is unchanged. f030 puts a small warm flash on the gap. f031 is the weaker tail. Sheets are in `review_J2613_size/`. No spend, no take edited, nothing past f060.
+- f030: warm white, peak alpha 190, Gaussian radius 60 px at 1080, centred on the gap.
+- f031: the same bloom at half strength, on the shorter half-strength streak.
+- f029: a pre-glow at 25% of f030's bloom, no streak, so the flash is three frames.
+- The streak's lower end stops at the skin edge. It does not continue onto the finger.
+
+The glance test is `review_phone390_pair_bare.png`: the untouched f029 source beside f030, each exactly 390 px wide, with no enlargement. The 4× crop is separate, so a flare can be judged without using the zoom as the proof. Sheets are in `review_J2613_bloom/`. No spend, no take edited, nothing past f060. The first-pass sheets stay in `review_J2613_size/` as the failed comparison.
 
 ---
 
