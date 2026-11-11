@@ -1,0 +1,134 @@
+{
+  "id": "01_really_falling_c1",
+  "file": "code_graphic_009_p3_01_really_falling_c1.mp4",
+  "duration_s": 5.26,
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "label": "",
+  "label_words": 0,
+  "layout": "full_frame_period_paper",
+  "named_plate": null,
+  "background": "moving period paper",
+  "min_sample_mean_luma": 92.11,
+  "min_sample_p95": 122.0,
+  "near_black": "PASS",
+  "still": "code_graphic_009_p3_01_really_falling_c1.jpg",
+  "sha256": "80ce9560d9dd6d0edbf4fa81e3d1619ccb0f1f8168bfa78c91901451a003ed8d",
+  "bytes": 924323,
+  "source_path": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/code_graphics_v01/code_graphic_009_p3_01_really_falling_c1.mp4",
+  "nominal_edit_duration_s": 5.26,
+  "encoded_duration_s": 5.266016,
+  "frame_count": 158,
+  "film_start_s": 183.94,
+  "film_end_s": 189.2,
+  "angular_travel_degrees": 70,
+  "earth_center_px": [
+    560.0,
+    880.0
+  ],
+  "orbit_radius_px": 720,
+  "earth_radius_px": 150,
+  "moon_radius_px": 57,
+  "min_surface_clearance_px": 513,
+  "review_status": "pending Grok sheet decision and Gemini timing review",
+  "no_splice": true,
+  "geometry_checks": "158 frames: increasing x and y, constant radius, inside frame, less than quarter turn; no freeze padding",
+  "timing_samples": [
+    {
+      "local_s": 0,
+      "moon_center_px": [
+        560.0,
+        160.0
+      ],
+      "gap_below_tangent_px": 0.0
+    },
+    {
+      "local_s": 0.58,
+      "moon_center_px": [
+        656.7020636233149,
+        166.52350361697802
+      ],
+      "gap_below_tangent_px": 6.523503616978019
+    },
+    {
+      "local_s": 1.4,
+      "moon_center_px": [
+        790.0220073606176,
+        197.73181509776373
+      ],
+      "gap_below_tangent_px": 37.73181509776373
+    },
+    {
+      "local_s": 1.92,
+      "moon_center_px": [
+        870.5500705010418,
+        230.4165536962953
+      ],
+      "gap_below_tangent_px": 70.4165536962953
+    },
+    {
+      "local_s": 2.56,
+      "moon_center_px": [
+        963.3316216434657,
+        283.57431059481337
+      ],
+      "gap_below_tangent_px": 123.57431059481337
+    },
+    {
+      "local_s": 3.38,
+      "moon_center_px": [
+        1068.9479235205965,
+        370.7142146652108
+      ],
+      "gap_below_tangent_px": 210.71421466521082
+    },
+    {
+      "local_s": 3.88,
+      "moon_center_px": [
+        1124.5322307610554,
+        433.11818068761585
+      ],
+      "gap_below_tangent_px": 273.11818068761585
+    },
+    {
+      "local_s": 5.233333333333333,
+      "moon_center_px": [
+        1235.0404634196414,
+        629.5596423373503
+      ],
+      "gap_below_tangent_px": 469.5596423373503
+    }
+  ],
+  "boundaries": [
+    {
+      "source": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part03/raw/v01/01_really_falling_t1.mp4",
+      "source_time_s": 5.218333333333333,
+      "label": "Parent last proposed frame",
+      "sha256": "ab4b40bc2e65af13f8303ef41776f67b39c2106bfcf4881a51afc76d84289cec"
+    },
+    {
+      "source": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/code_graphics_v01/code_graphic_009_p3_01_really_falling_c1.mp4",
+      "source_time_s": 0,
+      "label": "Candidate first frame",
+      "sha256": "80ce9560d9dd6d0edbf4fa81e3d1619ccb0f1f8168bfa78c91901451a003ed8d"
+    },
+    {
+      "source": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/code_graphics_v01/code_graphic_009_p3_01_really_falling_c1.mp4",
+      "source_time_s": 5.233333333333333,
+      "label": "Candidate final frame",
+      "sha256": "80ce9560d9dd6d0edbf4fa81e3d1619ccb0f1f8168bfa78c91901451a003ed8d"
+    },
+    {
+      "source": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part03/raw/v01/02_cannon_world_t1.mp4",
+      "source_time_s": 0,
+      "label": "Next KEEP first frame",
+      "sha256": "8beb12f036d956a070893b0430624a80b2c75119384595e50a90b65d2c4a2180"
+    }
+  ],
+  "boundary_note": "Proposed source-head windows, not an assembled join. Recheck actual source offsets at splice. A short incoming crossfade may be used only after Grok review.",
+  "verified_media_locations": [
+    "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/code_graphics_v01/code_graphic_009_p3_01_really_falling_c1.mp4",
+    "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/code_graphics_v01/code_graphic_009_p3_01_really_falling_c1.mp4"
+  ]
+}

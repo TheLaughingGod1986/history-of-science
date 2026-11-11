@@ -1,0 +1,192 @@
+You are Gemini checking J2632 narration timing, advisory only. Review supplied text only; do not call tools, change files, claim jobs or rewrite narration. Do not claim listening or motion perception. Grok must approve the sheet before KEEP or splice. Candidate spans film 183.94 to 189.20; local zero is 183.94. One Moon moves continuously clockwise through 70 degrees on a circular arc about Earth (centre 560,880; radius 720), starting directly above Earth at (560,160). Earth radius150, Moon radius57. Tangent is fixed horizontal at y160 starting at the initial Moon centre. No labels. Moon x increases and y increases throughout, one trailing curve. Check the visible separation grows during 'It really is falling', and that Moon remains clear on 'It just never lands'. Timings below are existing faster-whisper alignment from VO_RETIME_v01.json, not fresh listening. Source is 158 frames at30fps (5.266667s), nominal edit5.26; no freeze-pad. Flag only concrete timing conflicts; state limits and advisory verdict.
+
+Narration sentences:
+[
+  {
+    "i": 2,
+    "text": "The Moon isn't held up at all.",
+    "start_s": 3.74,
+    "end_s": 5.42,
+    "film_s": 182.42,
+    "film": "3:02.42"
+  },
+  {
+    "i": 3,
+    "text": "It really is falling.",
+    "start_s": 5.84,
+    "end_s": 7.18,
+    "film_s": 184.52,
+    "film": "3:04.52"
+  },
+  {
+    "i": 4,
+    "text": "It just never lands.",
+    "start_s": 7.82,
+    "end_s": 9.14,
+    "film_s": 186.5,
+    "film": "3:06.50"
+  },
+  {
+    "i": 5,
+    "text": "To explain it, he imagined a cannon, on top of a mountain so tall it poked above the air.",
+    "start_s": 10.52,
+    "end_s": 16.26,
+    "film_s": 189.2,
+    "film": "3:09.20"
+  }
+]
+Word onsets:
+[
+  {
+    "word": "The",
+    "film_s": 182.42,
+    "local_s": -1.52
+  },
+  {
+    "word": "moon",
+    "film_s": 182.52,
+    "local_s": -1.42
+  },
+  {
+    "word": "isn't",
+    "film_s": 182.76,
+    "local_s": -1.18
+  },
+  {
+    "word": "held",
+    "film_s": 183.12,
+    "local_s": -0.82
+  },
+  {
+    "word": "up",
+    "film_s": 183.34,
+    "local_s": -0.6
+  },
+  {
+    "word": "at",
+    "film_s": 183.56,
+    "local_s": -0.38
+  },
+  {
+    "word": "all,",
+    "film_s": 183.7,
+    "local_s": -0.24
+  },
+  {
+    "word": "it",
+    "film_s": 184.52,
+    "local_s": 0.58
+  },
+  {
+    "word": "really",
+    "film_s": 184.76,
+    "local_s": 0.82
+  },
+  {
+    "word": "is",
+    "film_s": 185.08,
+    "local_s": 1.14
+  },
+  {
+    "word": "falling,",
+    "film_s": 185.34,
+    "local_s": 1.4
+  },
+  {
+    "word": "it",
+    "film_s": 186.5,
+    "local_s": 2.56
+  },
+  {
+    "word": "just",
+    "film_s": 186.72,
+    "local_s": 2.78
+  },
+  {
+    "word": "never",
+    "film_s": 186.94,
+    "local_s": 3.0
+  },
+  {
+    "word": "lands.",
+    "film_s": 187.32,
+    "local_s": 3.38
+  },
+  {
+    "word": "To",
+    "film_s": 189.2,
+    "local_s": 5.26
+  },
+  {
+    "word": "explain",
+    "film_s": 189.4,
+    "local_s": 5.46
+  }
+]
+Render timing samples:
+[
+  {
+    "local_s": 0,
+    "moon_center_px": [
+      560.0,
+      160.0
+    ],
+    "gap_below_tangent_px": 0.0
+  },
+  {
+    "local_s": 0.58,
+    "moon_center_px": [
+      656.7020636233149,
+      166.52350361697802
+    ],
+    "gap_below_tangent_px": 6.523503616978019
+  },
+  {
+    "local_s": 1.4,
+    "moon_center_px": [
+      790.0220073606176,
+      197.73181509776373
+    ],
+    "gap_below_tangent_px": 37.73181509776373
+  },
+  {
+    "local_s": 1.92,
+    "moon_center_px": [
+      870.5500705010418,
+      230.4165536962953
+    ],
+    "gap_below_tangent_px": 70.4165536962953
+  },
+  {
+    "local_s": 2.56,
+    "moon_center_px": [
+      963.3316216434657,
+      283.57431059481337
+    ],
+    "gap_below_tangent_px": 123.57431059481337
+  },
+  {
+    "local_s": 3.38,
+    "moon_center_px": [
+      1068.9479235205965,
+      370.7142146652108
+    ],
+    "gap_below_tangent_px": 210.71421466521082
+  },
+  {
+    "local_s": 3.88,
+    "moon_center_px": [
+      1124.5322307610554,
+      433.11818068761585
+    ],
+    "gap_below_tangent_px": 273.11818068761585
+  },
+  {
+    "local_s": 5.233333333333333,
+    "moon_center_px": [
+      1235.0404634196414,
+      629.5596423373503
+    ],
+    "gap_below_tangent_px": 469.5596423373503
+  }
+]

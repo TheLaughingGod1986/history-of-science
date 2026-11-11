@@ -33,7 +33,41 @@ MINUTE_SECOND_SPEC = {
     "layout": "full_frame_period_paper", "plate": None,
 }
 
-SPECS = [MINUTE_SECOND_SPEC,
+# J2632: one circular segment, fixed initial tangent, no labels.
+FALLING_MOON_DURATION = 5.26
+FALLING_MOON_EARTH = (560.0, 880.0)
+FALLING_MOON_RADIUS = 720.0
+FALLING_MOON_ANGLE = math.radians(70)
+FALLING_MOON_SPEC = {
+    "id": "01_really_falling_c1", "file": "code_graphic_009_p3_01_really_falling_c1.mp4",
+    "dur": FALLING_MOON_DURATION, "label": "", "kind": "falling_moon",
+    "layout": "full_frame_period_paper", "plate": None,
+}
+
+
+def falling_moon_position(t):
+    """Circular motion about Earth, with a horizontal initial tangent."""
+    angle = FALLING_MOON_ANGLE * max(0.0, min(1.0, t / FALLING_MOON_DURATION))
+    cx, cy = FALLING_MOON_EARTH
+    return cx + FALLING_MOON_RADIUS * math.sin(angle), cy - FALLING_MOON_RADIUS * math.cos(angle)
+
+
+def draw_falling_moon(d, t, dur):
+    cx, cy = FALLING_MOON_EARTH
+    earth(d, cx, cy, 150)
+    x0, y0 = falling_moon_position(0)
+    # Fixed tangent originates at the initial Moon centre, never follows it.
+    for x in range(int(x0), 1600, 58):
+        d.line((x, y0, min(x + 29, 1600), y0), fill=ink(0.7), width=4)
+    # Only the traversed arc inks on; no spare object or full-orbit preview.
+    points = [falling_moon_position(t * i / 120) for i in range(121)]
+    if t > 0:
+        d.line(points, fill=ink(0.8), width=5)
+    mx, my = falling_moon_position(t)
+    moon(d, mx, my, 57)
+
+
+SPECS = [FALLING_MOON_SPEC, MINUTE_SECOND_SPEC,
     {"id": "09_pull_heights", "file": "code_graphic_009_p2_09_pull_heights.mp4", "dur": 4.14, "label": "TREE, TOWER, MOUNTAIN", "kind": "pull_heights", "layout": "full_frame_period_paper", "plate": None},
     {"id": "09_pull_heights_c1", "file": "code_graphic_009_p2_09_pull_heights_c1.mp4", "dur": 4.14, "label": "PULL AT THE TOP", "kind": "pull_heights_c1", "layout": "moving_plate_overlay", "plate": "08_the_apple_c1"},
     {"id": "06_orbit_teach", "file": "code_graphic_009_p3_06_orbit_teach.mp4", "dur": 4.40, "label": "FALLING SIDEWAYS", "kind": "orbit_teach", "layout": "full_frame_period_paper", "plate": None},
@@ -521,6 +555,7 @@ def draw_station_curve(d, t, dur):
 
 
 DRAW = {
+    "falling_moon": draw_falling_moon,
     "minute_second": draw_minute_second,
     "pull_heights": draw_pull_heights,
     "pull_heights_c1": draw_pull_heights_c1,
