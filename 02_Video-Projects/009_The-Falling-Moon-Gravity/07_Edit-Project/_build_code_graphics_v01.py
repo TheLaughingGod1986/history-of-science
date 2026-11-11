@@ -18,11 +18,14 @@ MOON_WASH = (232, 212, 176, 255)
 
 # J2631: approved diagram replacement; local times, seconds, non-overlapping.
 MINUTE_SECOND_LABELS = [
-    ("1 SECOND", 0.05, 1.50),
-    ("1 MINUTE", 1.60, 3.10),
-    ("5 m", 3.20, 4.70),
-    ("TWO STOREYS HIGH", 4.80, 6.40),
+    ("1 SECOND", 0.40, 2.80),
+    ("1 MINUTE", 3.10, 5.85),
+    ("5 m", 6.85, 8.85),
+    ("TWO STOREYS HIGH", 9.00, 10.40),
 ]
+MINUTE_SECOND_SCALE = 1.3  # 1.4 crowds the final Moon against the bracket cap.
+MINUTE_SECOND_TOP = 300.0
+MINUTE_SECOND_DROP = 300.0 * MINUTE_SECOND_SCALE
 MINUTE_SECOND_DURATION = 13.51
 MINUTE_SECOND_SPEC = {
     "id": "05_minute_second", "file": "code_graphic_009_p4_05_minute_second.mp4",
@@ -180,16 +183,16 @@ def minute_second_positions(t):
     """One accelerated drop; Moon follows a monotone arc to the same depth.
 
     Diagram uses different illustrative time scales, not a real-time ratio.
-    Both centre displacements finish at 300 px. No camera motion moves ink up.
+    Both centre displacements finish at 390 px (1.3x). No camera motion moves ink up.
     """
     fall = max(0.0, min(1.0, (t - 0.45) / 1.0))
     u = max(0.0, min(1.0, t / MINUTE_SECOND_DURATION))
     # A circular arc with an initially horizontal tangent; y never decreases.
     angle = u * 1.0
-    radius = 300.0 / (1.0 - math.cos(1.0))
-    return (480.0, 330.0 + 300.0 * fall * fall), (
-        1110.0 + radius * math.sin(angle),
-        330.0 + radius * (1.0 - math.cos(angle)),
+    radius = MINUTE_SECOND_DROP / (1.0 - math.cos(1.0))
+    return (480.0, MINUTE_SECOND_TOP + MINUTE_SECOND_DROP * fall * fall), (
+        1030.0 + radius * math.sin(angle),
+        MINUTE_SECOND_TOP + radius * (1.0 - math.cos(angle)),
     )
 
 
@@ -199,28 +202,33 @@ def minute_second_label_alpha(t, start, end):
 
 
 def draw_minute_second(d, t, dur):
-    # Central ink divider, blank ruler, and a baseline touched once by the dot.
-    d.line((960, 190, 960, 820), fill=ink(0.55), width=3)
-    d.line((330, 330, 330, 630), fill=ink(), width=5)
-    for yy in range(330, 631, 30):
-        d.line((330, yy, 365 if (yy - 330) % 60 == 0 else 352, yy),
-               fill=ink(), width=4)
-    d.line((405, 646, 560, 646), fill=ink(), width=5)
-    # Tangent is straight, dashed, horizontal: the only curved line is the arc.
-    for xx in range(1110, 1690, 36):
-        d.line((xx, 330, min(xx + 20, 1690), 330), fill=ink(0.7), width=4)
+    # Same uniform 1.3x geometry on both sides; labels stay at y=980.
+    top, drop = MINUTE_SECOND_TOP, MINUTE_SECOND_DROP
+    bottom = top + drop
+    d.line((960, 190, 960, 840), fill=ink(0.55), width=5)
+    ruler_x = 285
+    d.line((ruler_x, top, ruler_x, bottom), fill=ink(), width=5)
+    for i in range(11):
+        yy = top + i * drop / 10
+        d.line((ruler_x, yy, ruler_x + (46 if i % 2 == 0 else 29), yy),
+               fill=ink(), width=5)
+    dot_r = 16 * MINUTE_SECOND_SCALE
+    d.line((382, bottom + dot_r, 584, bottom + dot_r), fill=ink(), width=5)
+    # Wider gaps keep the horizontal tangent visibly dashed at phone size.
+    for xx in range(1030, 1785, 58):
+        d.line((xx, top, min(xx + 29, 1785), top), fill=ink(0.7), width=4)
     pts = [minute_second_positions(dur * i / 100)[1] for i in range(101)]
-    d.line(pts, fill=ink(0.55), width=4)
+    d.line(pts, fill=ink(0.55), width=5)
     (dx, dy), (mx, my) = minute_second_positions(t)
-    d.ellipse((dx - 16, dy - 16, dx + 16, dy + 16), fill=ink())
-    moon(d, mx, my, 38)
-    # Identical vertical extents, aligned to the same page coordinates.
-    p = prog(t, 3.20, 3.60)
+    d.ellipse((dx - dot_r, dy - dot_r, dx + dot_r, dy + dot_r), fill=ink())
+    moon(d, mx, my, 57)  # 1.5x the first candidate's radius, including its ink outline.
+    # Identical aligned brackets; entirely absent on f202 and f203.
+    p = prog(t, 6.85, 7.25)
     if p > 0:
-        for x in (650, 1780):
-            d.line((x, 330, x, 330 + 300 * p), fill=ink(), width=5)
-            d.line((x - 15, 330, x + 15, 330), fill=ink(p), width=5)
-            d.line((x - 15, 630, x + 15, 630), fill=ink(p), width=5)
+        for x in (701, 1860):
+            d.line((x, top, x, top + drop * p), fill=ink(), width=5)
+            d.line((x - 20, top, x + 20, top), fill=ink(p), width=5)
+            d.line((x - 20, bottom, x + 20, bottom), fill=ink(p), width=5)
 
 
 def draw_pull_heights(d, t, dur):

@@ -488,10 +488,10 @@
         "duration_s": 6.76,
         "source_in_s": 0,
         "shared_source_duration_s": 13.51,
-        "review_status": "HOLD: Gemini flags narration mismatch; Chief must clarify label timing before revised render or splice",
+        "review_status": "Gemini timing advisory clear; pending Grok sheet decision before splice or KEEP",
         "splice_authorized": false,
         "labels": "1 SECOND, 1 MINUTE, 5 m, TWO STOREYS HIGH; sequential; candidate timing in J2631_review/MANIFEST.json",
-        "approval_ref": "https://github.com/TheLaughingGod1986/history-of-science/pull/180#issuecomment-6800647241"
+        "approval_ref": "https://github.com/TheLaughingGod1986/history-of-science/pull/180#issuecomment-6801512032"
       },
       "j2631_route_note": "Old Flow prompt, pricing and hold check below retained as history only; no mint authorised.",
       "superseded_generation_estimate": {
@@ -557,10 +557,10 @@
         "duration_s": 6.75,
         "source_in_s": 6.76,
         "shared_source_duration_s": 13.51,
-        "review_status": "HOLD: Gemini flags narration mismatch; Chief must clarify label timing before revised render or splice",
+        "review_status": "Gemini timing advisory clear; pending Grok sheet decision before splice or KEEP",
         "splice_authorized": false,
         "labels": "1 SECOND, 1 MINUTE, 5 m, TWO STOREYS HIGH; sequential; candidate timing in J2631_review/MANIFEST.json",
-        "approval_ref": "https://github.com/TheLaughingGod1986/history-of-science/pull/180#issuecomment-6800647241"
+        "approval_ref": "https://github.com/TheLaughingGod1986/history-of-science/pull/180#issuecomment-6801512032"
       },
       "j2631_route_note": "Old Flow prompt, pricing and hold check below retained as history only; no mint authorised.",
       "superseded_generation_estimate": {

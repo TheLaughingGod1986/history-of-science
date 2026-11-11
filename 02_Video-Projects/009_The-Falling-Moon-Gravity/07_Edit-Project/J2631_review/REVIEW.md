@@ -1,23 +1,26 @@
-# J2631 — five-metre comparison, candidate for Chief review
+# J2631 — revised five-metre comparison for Grok
 
-Codex covering. Built the no-spend parchment diagram with the existing renderer and palette. One dot falls once and stays down; an inked Moon moves continuously sideways and down along one arc under a dashed tangent. Brackets span the same 300 pixels at y=330–630. Four sequential labels, 0.4-second fades. No credits spent, no film splice, no KEEP/PASS decision, no change to the parent or next shot.
+Codex covering. Revision 2 implements Chief ruling [6801512032](https://github.com/TheLaughingGod1986/history-of-science/pull/180#issuecomment-6801512032). This replaces the first candidate on the Mini and mounted studio-live only. No film splice, no KEEP, no merge and no credit spent.
 
-## Blocking timing finding
+- Locked label windows (local seconds): **1 SECOND 0.40–2.80; 1 MINUTE 3.10–5.85; 5 m 6.85–8.85; TWO STOREYS HIGH 9.00–10.40**. Fades remain 0.4 seconds inside each window. No text crosses the internal cut or exit.
+- Brackets draw 6.85–7.25, then stay. Both span **390 px at y=300–690**. They are absent on f202/f203.
+- Both diagrams use **1.3× uniform scale**, reduced from the requested approximate 1.4× to leave the final Moon clear of the right bracket cap. The Moon radius is **57 px (1.5×)**; main strokes are 5 px, tangent strokes 4 px with 29 px dashes and gaps. No Earth limb, per final ruling. Centre divider and separate label baseline retained.
+- One left dot drops from 0.45 to 1.45 seconds and stays landed. Moon moves continuously down and right along one circular arc. Per-frame coordinate checks cover all 406 frames. These are code checks, not perceived motion.
+- Source: **1920×1080 H.264, 30 fps, 406 frames, 13.533333 s**, silent. Nominal edit remains **319.63–333.14 (13.51 s)** with row split **326.39 (local 6.76)**; padded source coverage does not move the cut or VO.
+- New and superseded SHA-256 values, both verified media locations, scales and label windows are in `MANIFEST.json`. Superseded media retained in the fresh render folder as `superseded_candidate_v01.mp4`; git retains revision 1 records.
 
-Gemini (`agy --model gemini-4-argon-high`) reviewed the supplied subtitle timestamps, not audio or motion. Its complete unedited findings and input are adjacent. The literal all-labels-before-326.39 interpretation forces the current labels early: `1 MINUTE` is gone before its subtitle cue begins, and `5 m` is gone before its cue begins. Candidate must not be spliced.
+## Review evidence
 
-Chief decision requested: interpret “off before each cut” as no label crossing either boundary, allowing `5 m` and `TWO STOREYS HIGH` after the internal cut, as Gemini recommends. Suggested local windows: `1 SECOND` 0.40–2.80; `1 MINUTE` 3.35–5.85; `5 m` 6.85–8.85; `TWO STOREYS HIGH` 9.00–10.40; brackets 6.85–7.25. These are recommendations only, not applied. The grouped SRT cannot establish exact word timings; a capable narration reviewer must verify the revised timing. Existing cut, VO and 13.51-second edit interval stay locked.
+`CONTACT_SHEET.jpg` includes all four labels at full opacity, brackets fully inked, f202/f203, first and final frames. `CUT_BOUNDARIES.jpg` includes both outer KEEP sources and the internal pair. Parent head 0–6.75 and following KEEP from 0 are confirmed by Chief; the assembler still checks them at splice. `PHONE_390.jpg` is decoded f240 at native 390 px display width. Codex inspected all three still images: brackets align, text stays separate, divider and ruler are visible, and the enlarged Moon remains clear of the right bracket. Grok owns the phone-legibility decision.
 
-## Files and checks
+Gemini Argon reviewed the actual render manifest and exact Scribe word times, text only: **TIMING PASS (Advisory — Grok decides KEEP)**, with no blocking timing conflict. Complete unedited input/output are adjacent. Its cautions: the scale label has 0.60 s at full opacity and clears 0.05 s before Newton.
 
-- Film interval 319.63–333.14; internal board split 326.39. Proposed source windows 0–6.76 and 6.76–13.51; both rows remain unapproved.
-- 1920×1080 H.264, 30 fps, 406 frames / 13.533333 seconds of source coverage for the nominal 13.51-second edit. Final frame starts at 13.5; frame quantisation is recorded, not a changed film duration. Silent graphic; existing VO supplies sound in assembly.
-- `MANIFEST.json`: media paths and SHA-256; verified identical Mini and studio-live copies. MP4 stays out of git.
-- `CONTACT_SHEET.jpg`: 15 decoded frames, including f202/f203 around the internal cut.
-- `CUT_BOUNDARIES.jpg`: both sides of all three proposed boundaries, including neighbouring KEEP sources. Parent trim 0–6.75 and next source start 0 are explicit assumptions for Chief/assembler confirmation; no actual assembled cut exists yet.
-- Per-frame coordinate checks across all 406 frames: one landing, no decreasing y, increasing Moon x, no overlapping labels, all text off after 6.40. Final intended centre drops both equal 300 pixels. Still sheets visually inspected; these are not moving-video or listening QA.
-- Required repository `check_all.sh`: all checks passed (contract, packages, board consistency, voice guards, no media). Geometry assertions live in `_build_j2631_review.py`; output is guarded against overwrite.
+**Scope clarification to Gemini's wording:** `no_splice: true` means this worker has not inserted the candidate into the film; it does not remove the locked row boundary. The planned assembly uses consecutive windows of this same continuous source, 0–6.76 and 6.76–13.51. The existing narration is untouched and continuous across the picture-row cut. The word “distance” crosses that marker; it is not an audio cut. No moving-video or listening review is claimed by either reviewer.
 
-Reproduce with the graphics Python environment, `_build_j2631_review.py --out <new-empty-output-dir> --review <review-dir>`. The renderer also supports `--only 05_minute_second`; use a fresh output directory, as its general manifest writer belongs to the existing builder.
+## Verification
 
-Chief owns the sheet decision, timing clarification and eventual KEEP. J2035 remains held; J2586/J2587/J2630 are not closed by this worker. J2632 is separate.
+- Per-frame geometry assertions: one landing; nondecreasing y and increasing Moon x; no label overlap; clear cut frames; equal bracket endpoints; final Moon clear of bracket and divider.
+- ffprobe: one H.264 video stream, 1920×1080, 30/1, 406 frames, 13.533333 s. Full ffmpeg decode completed without errors.
+- Required repository check output: **ALL CHECKS PASS** (`check_all.sh`, including contract, package lint, board consistency, voice guards and no media).
+
+Pending: Grok reviews these sheets and decides KEEP/merge on existing draft PR #533 before any splice. J2035 still waits for this graphic and separate J2632. J2586/J2587/J2630 are left for Chief to close once KEEP. Nothing for Ben.
