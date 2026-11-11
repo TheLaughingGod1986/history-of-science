@@ -16,7 +16,24 @@ CREAM = (255, 244, 218, 255)
 WASH = (216, 178, 124, 255)
 MOON_WASH = (232, 212, 176, 255)
 
-SPECS = [
+# J2631: approved diagram replacement; local times, seconds, non-overlapping.
+MINUTE_SECOND_LABELS = [
+    ("1 SECOND", 0.40, 2.80),
+    ("1 MINUTE", 3.10, 5.85),
+    ("5 m", 6.85, 8.85),
+    ("TWO STOREYS HIGH", 9.00, 10.40),
+]
+MINUTE_SECOND_SCALE = 1.3  # 1.4 crowds the final Moon against the bracket cap.
+MINUTE_SECOND_TOP = 300.0
+MINUTE_SECOND_DROP = 300.0 * MINUTE_SECOND_SCALE
+MINUTE_SECOND_DURATION = 13.51
+MINUTE_SECOND_SPEC = {
+    "id": "05_minute_second", "file": "code_graphic_009_p4_05_minute_second.mp4",
+    "dur": MINUTE_SECOND_DURATION, "label": "", "kind": "minute_second",
+    "layout": "full_frame_period_paper", "plate": None,
+}
+
+SPECS = [MINUTE_SECOND_SPEC,
     {"id": "09_pull_heights", "file": "code_graphic_009_p2_09_pull_heights.mp4", "dur": 4.14, "label": "TREE, TOWER, MOUNTAIN", "kind": "pull_heights", "layout": "full_frame_period_paper", "plate": None},
     {"id": "09_pull_heights_c1", "file": "code_graphic_009_p2_09_pull_heights_c1.mp4", "dur": 4.14, "label": "PULL AT THE TOP", "kind": "pull_heights_c1", "layout": "moving_plate_overlay", "plate": "08_the_apple_c1"},
     {"id": "06_orbit_teach", "file": "code_graphic_009_p3_06_orbit_teach.mp4", "dur": 4.40, "label": "FALLING SIDEWAYS", "kind": "orbit_teach", "layout": "full_frame_period_paper", "plate": None},
@@ -160,6 +177,58 @@ def _feathered_hills(d, gy, p):
     d.line(pts, fill=ink(0.85 * p), width=5)
     pts2 = [(x, y + 14 + 6 * math.sin(x * 0.013)) for x, y in pts]
     d.line(pts2, fill=ink(0.45 * p), width=3)
+
+
+def minute_second_positions(t):
+    """One accelerated drop; Moon follows a monotone arc to the same depth.
+
+    Diagram uses different illustrative time scales, not a real-time ratio.
+    Both centre displacements finish at 390 px (1.3x). No camera motion moves ink up.
+    """
+    fall = max(0.0, min(1.0, (t - 0.45) / 1.0))
+    u = max(0.0, min(1.0, t / MINUTE_SECOND_DURATION))
+    # A circular arc with an initially horizontal tangent; y never decreases.
+    angle = u * 1.0
+    radius = MINUTE_SECOND_DROP / (1.0 - math.cos(1.0))
+    return (480.0, MINUTE_SECOND_TOP + MINUTE_SECOND_DROP * fall * fall), (
+        1030.0 + radius * math.sin(angle),
+        MINUTE_SECOND_TOP + radius * (1.0 - math.cos(angle)),
+    )
+
+
+def minute_second_label_alpha(t, start, end):
+    return max(0.0, min(ease((t - start) / 0.4),
+                        1.0 - ease((t - (end - 0.4)) / 0.4)))
+
+
+def draw_minute_second(d, t, dur):
+    # Same uniform 1.3x geometry on both sides; labels stay at y=980.
+    top, drop = MINUTE_SECOND_TOP, MINUTE_SECOND_DROP
+    bottom = top + drop
+    d.line((960, 190, 960, 840), fill=ink(0.55), width=5)
+    ruler_x = 285
+    d.line((ruler_x, top, ruler_x, bottom), fill=ink(), width=5)
+    for i in range(11):
+        yy = top + i * drop / 10
+        d.line((ruler_x, yy, ruler_x + (46 if i % 2 == 0 else 29), yy),
+               fill=ink(), width=5)
+    dot_r = 16 * MINUTE_SECOND_SCALE
+    d.line((382, bottom + dot_r, 584, bottom + dot_r), fill=ink(), width=5)
+    # Wider gaps keep the horizontal tangent visibly dashed at phone size.
+    for xx in range(1030, 1785, 58):
+        d.line((xx, top, min(xx + 29, 1785), top), fill=ink(0.7), width=4)
+    pts = [minute_second_positions(dur * i / 100)[1] for i in range(101)]
+    d.line(pts, fill=ink(0.55), width=5)
+    (dx, dy), (mx, my) = minute_second_positions(t)
+    d.ellipse((dx - dot_r, dy - dot_r, dx + dot_r, dy + dot_r), fill=ink())
+    moon(d, mx, my, 57)  # 1.5x the first candidate's radius, including its ink outline.
+    # Identical aligned brackets; entirely absent on f202 and f203.
+    p = prog(t, 6.85, 7.25)
+    if p > 0:
+        for x in (701, 1860):
+            d.line((x, top, x, top + drop * p), fill=ink(), width=5)
+            d.line((x - 20, top, x + 20, top), fill=ink(p), width=5)
+            d.line((x - 20, bottom, x + 20, bottom), fill=ink(p), width=5)
 
 
 def draw_pull_heights(d, t, dur):
@@ -452,6 +521,7 @@ def draw_station_curve(d, t, dur):
 
 
 DRAW = {
+    "minute_second": draw_minute_second,
     "pull_heights": draw_pull_heights,
     "pull_heights_c1": draw_pull_heights_c1,
     "orbit_teach": draw_orbit_teach,
@@ -512,19 +582,27 @@ def paint(paper, spec, k):
     else:
         DRAW[kind](d, t, spec["dur"])
     frame = Image.alpha_composite(frame, ov)
+    label = spec["label"]
     a = label_alpha(t, spec["dur"])
+    if kind == "minute_second":
+        label, a = "", 0.0
+        for text, start, end in MINUTE_SECOND_LABELS:
+            alpha = minute_second_label_alpha(t, start, end)
+            if alpha > 0:
+                label, a = text, alpha
+                break
     if a > 0.01:
         lab = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-        font = fit_font(spec["label"])
+        font = fit_font(label)
         fill = (CREAM[0], CREAM[1], CREAM[2], int(255 * a))
         stroke = (48, 26, 12, int(255 * a))
-        ImageDraw.Draw(lab).text((W / 2, 980), spec["label"], font=font, fill=fill, anchor="mm", stroke_width=2, stroke_fill=stroke)
+        ImageDraw.Draw(lab).text((W / 2, 980), label, font=font, fill=fill, anchor="mm", stroke_width=2, stroke_fill=stroke)
         frame = Image.alpha_composite(frame, lab)
     return frame.convert("RGB")
 
 
 def render_one(paper, spec, out, stills_only=False):
-    n = int(round(spec["dur"] * FPS))
+    n = math.ceil(spec["dur"] * FPS) if spec["kind"] == "minute_second" else int(round(spec["dur"] * FPS))
     show = min(3.6, spec["dur"] - 0.9)
     hero_t = max(1.2, 0.45 + show - 0.4)
     still_k = min(n - 1, int(hero_t * FPS))
