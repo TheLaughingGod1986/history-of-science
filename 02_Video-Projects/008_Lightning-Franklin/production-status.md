@@ -292,3 +292,33 @@ J2163 supersedes J1880 planning claims with a read-only actual-PTS planner and c
 ## 5 November 2026 — J2217 eight-item amend (Cursor worker)
 
 The read-only planner now has eight defect rows plus a film-wide unbordered caption panel. `six_rows` is kept as historical evidence. 0:51 is master frame 1220 on `07_hot_night` closed GOP frames 1129–1231 (`103` frames, not the 1:49 salon source). 3:13 is frame 4621 on `01_points_desk` closed GOP frames 4511–4670 (`160` frames: clean `4511–4606`, paper unroll `4607–4670`). 2:18 is frame 3305, outside keep 3168–3259 and inside replace 3260–3343. All 27 `caption_treatment.labels` use exact closed-GOP `master_frames` (`[0, 141]`..`[12297, 12461]`). Execution still returns `REFUSED_UNTIL_J1881_REREVIEW`. 14 tests pass. No note resolved. No render, spend, upload, or YouTube change. J1881 re-reviews before any production scope. See `07_Edit-Project/J2217_AMEND.md`.
+
+### J2591 — salon contact spark build, 11 Nov 2026
+
+Codex delivered the parameterised warm-white four-frame RGBA point flick for review. Code, tests and manifest: `07_Edit-Project/contact_spark_v01/`. Media: film's studio-live `07_Edit-Project/contact_spark_J2591_v01/`. Preview is an explicitly illustrative overlay on the original start still, which has no contact; J2592 must measure the KEEP third take. Existing film pen-tap paired in the still demo. No take changed, no spend, no picture-stage approval.
+
+```text
+Ran 3 tests ... OK
+4 decoded RGBA frames; lossless_rgba_roundtrip: true
+picture QA PASS: 0 of 1 cuts fail, 0 to look at
+polish gate PASS: 0 of 1 rows failed, 0 to look at
+ALL CHECKS PASS
+```
+
+These are overlay/still-preview checks, not approval of motion or the final audio mix. Claude reviews the graphic; J2592 owns measured placement and its composite handoff.
+
+
+### 11 Nov 2026 — J2613 tapered salon spark revision (review only)
+
+Reworked PR #515 under desk rulings 6793746982 and 6795970738: warm tapered Gaussian streak, one bloom frame, shorter half-strength second frame, optional round knuckle tail. New take-4 review evidence in `07_Edit-Project/contact_spark_v01/review_J2613/`: full 1080 delivery stills, 4× crops, original-source hash, exact measured endpoints and timing proposal. Native source is 720p, enlarged 1.5× for delivery. Only f029–f031 extracted. Proposed flick is f030–f031; f029 unchanged. Optional four-phase design is separate from this two-frame placement proposal.
+
+```text
+Ran 4 tests ... OK
+source_hash_matches: true
+only_frames_29_30_31_extracted: true
+review_f029_unchanged: true
+Durable NAS copy: all artifact hashes match
+ALL CHECKS PASS
+```
+
+These are renderer/repository checks, not picture-stage approval. No film, source take, audio or timeline modified; no spend. Only f000–f060 of take 4 may ever be used. Grok reviews the new sheets and timing; J2592 alone places the overlay after his PASS. No worker approval or merge.

@@ -1,0 +1,74 @@
+{
+  "job": "J2591",
+  "row": "P2:02_salon_spark",
+  "kind": "own_code_graphic",
+  "preview_only": true,
+  "illustrative_coordinates": true,
+  "size": [
+    1376,
+    768
+  ],
+  "fps": 24,
+  "contact_frame_zero_based": 12,
+  "rod": [
+    643.0,
+    190.0
+  ],
+  "knuckle": [
+    633.0,
+    190.0
+  ],
+  "frames": 4,
+  "rgba": "straight alpha; PNG canonical; qtrle argb MOV convenience",
+  "colour_rgb": [
+    255,
+    246,
+    224
+  ],
+  "bloom_frames": [
+    0
+  ],
+  "source_still": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part02/refs/v03_flow_stills/02_salon_spark_t1.png",
+  "source_sha256": "aefd6338aded1037c11306a99fc580d1a62a66d9367409f01e0edd993cc8cc58",
+  "sfx": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/008_Lightning-Franklin/06_Sound-Effects/kit_v01/sfx_hos_tick_ink_v01.wav",
+  "sfx_sha256": "98db8f2fa3b13009ea96249ab973c52cde133461c90945b34f0f0936d2127e9d",
+  "sfx_cue_frame_zero_based": 12,
+  "demo_contact_frame": 12,
+  "placement_job": "J2592",
+  "video_take_modified": false,
+  "files": {
+    "review_sheet.jpg": "04fbddab5fe78936e6b2e0ee7cab1e0645daf22a973c7b93995886c4b2b8a118",
+    "._review_sheet.jpg": "ed495ce473697c3f7e9dc4559ac0e31d857730418767a52acb1c721b8bd15733",
+    "spark_02.png": "a7894832bb481980855d25957d72b7d55984748df728dba77a46d45a1104ac60",
+    "._spark_02.png": "ed495ce473697c3f7e9dc4559ac0e31d857730418767a52acb1c721b8bd15733",
+    "spark_03.png": "800ce29f50b07cab29b0f458aadd9a33da2b1f4e74205360459d54c1dbee78a7",
+    "._spark_03.png": "ed495ce473697c3f7e9dc4559ac0e31d857730418767a52acb1c721b8bd15733",
+    "spark_01.png": "594d00e21bd01f83836e9c19101369d0ecbf97ae8ed6c242162566a6814a6318",
+    "._spark_01.png": "ed495ce473697c3f7e9dc4559ac0e31d857730418767a52acb1c721b8bd15733",
+    "spark_00.png": "3c74ca58079211a0649d23a64cb490568fdb07e640f488ca6641e0b70cc811fa",
+    "._spark_00.png": "ed495ce473697c3f7e9dc4559ac0e31d857730418767a52acb1c721b8bd15733",
+    "cuts.json": "69eefb4871982daffdb1b388a660b1a38ac8b74f9ce678fe7aa2988a5b8b067f",
+    "._cuts.json": "ed495ce473697c3f7e9dc4559ac0e31d857730418767a52acb1c721b8bd15733",
+    "polish_gate.json": "3593979b6c49dfe8c0be45b6aa8a9dfd0b64451594f5186dba7e9846c7abff65",
+    "._polish_gate.json": "ed495ce473697c3f7e9dc4559ac0e31d857730418767a52acb1c721b8bd15733",
+    "pool.json": "f86e5c55c9511aa1c778775d7de43792401e61ee0896b6dc0d388a3c68bbfe79",
+    "._pool.json": "ed495ce473697c3f7e9dc4559ac0e31d857730418767a52acb1c721b8bd15733",
+    "._MANIFEST.json": "ed495ce473697c3f7e9dc4559ac0e31d857730418767a52acb1c721b8bd15733",
+    "spark_rgba.mov": "3c3b5ccb733e34b1a05236eddc0263b746524dbe73405e77f96982e0cf13a273",
+    "._spark_rgba.mov": "ed495ce473697c3f7e9dc4559ac0e31d857730418767a52acb1c721b8bd15733",
+    "preview_01.png": "6763a52948486d1920febab737973a3739c722069f7925369bcb77d83d165931",
+    "._preview_01.png": "ed495ce473697c3f7e9dc4559ac0e31d857730418767a52acb1c721b8bd15733",
+    "preview_00.png": "8d4f87005679d3d99c03a62ef843361c4a9edefbc8f71ff5e10224e3cfc1c988",
+    "._preview_00.png": "ed495ce473697c3f7e9dc4559ac0e31d857730418767a52acb1c721b8bd15733",
+    "TECHNICAL_CHECKS.json": "43ca57e16132a49497ab7df258b1cdf4161631f69bf503b7d62af59ef7788c26",
+    "._TECHNICAL_CHECKS.json": "ed495ce473697c3f7e9dc4559ac0e31d857730418767a52acb1c721b8bd15733",
+    "preview_02.png": "ca16d4cd581ca2b874d32e291d6b39c216d94c57b9304e78d268ff0d227f6677",
+    "._preview_02.png": "ed495ce473697c3f7e9dc4559ac0e31d857730418767a52acb1c721b8bd15733",
+    "still_demo_with_existing_tick.mp4": "bd960d1e01ee6a67b9d495846b730e3d9a49330734d00e1ad0e86dddccfe55eb",
+    "._still_demo_with_existing_tick.mp4": "ed495ce473697c3f7e9dc4559ac0e31d857730418767a52acb1c721b8bd15733",
+    "preview_03.png": "057d60506dcb7d37f6ef02bc2657f74b158177e8730bffd019cdf7d0a1f1648d",
+    "._preview_03.png": "ed495ce473697c3f7e9dc4559ac0e31d857730418767a52acb1c721b8bd15733",
+    "._picture_qa": "ed495ce473697c3f7e9dc4559ac0e31d857730418767a52acb1c721b8bd15733"
+  },
+  "artifact_directory": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/contact_spark_J2591_v01"
+}

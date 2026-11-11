@@ -1,0 +1,5 @@
+# Picture QA: PASS
+
+/Volumes/MiniWork/scratch/j2591-preview-v01/still_demo_with_existing_tick.mp4 · 1 cuts · 0 fail · 0 for Claude to look at full size
+
+Claude's own look still covers every cut on the per-row sheet: would a viewer trust this as a real, sharp, finished picture of what the sentence says?
