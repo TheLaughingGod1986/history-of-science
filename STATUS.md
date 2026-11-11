@@ -17,7 +17,7 @@
 | **010** What Killed the Dinosaurs Was Hidden in a Line of Clay | Thu 3 Dec (22 d) | 40% | Picture (blocked) | **codex** · ⛔ blocked: Tested HOS010 runner and live guarded spend preflight after HOS009 J2033; then independent plate review before J2172 assembly | not estimated | Sun 29 Nov (in 18 d) | ⛔ blocked |
 | **011** Anesthesia: The Day Surgery Stopped Hurting | Thu 10 Dec (29 d) | 28% | Audit + upload package (to do) | **Claude** · queued | starts later; due tomorrow | Sun 6 Dec (in 25 d) | 🟢 on track |
 | **012** Genetics: The Monk Who Counted 28,000 Pea Plants | Thu 24 Dec (43 d) | 0% | Topic (to do) | **Claude** · queued | — | Sun 20 Dec (in 39 d) | 🟢 on track |
-| **013** Evolution: The Letter That Forced Darwin to Publish | Thu 17 Dec (36 d) | 28% | Audit + upload package (to do) | **Claude** · queued | starts later; due tomorrow | Sun 13 Dec (in 32 d) | 🟢 on track |
+| **013** Evolution: The Letter That Forced Darwin to Publish | Thu 17 Dec (36 d) | 28% | Audit + upload package (to do) | **Claude** · queued | starts later; due tomorrow | Sun 13 Dec (in 32 d) | ⛔ blocked |
 | **014** Extinction: The 12-Year-Old Who Dug Up a Sea Dragon | Thu 31 Dec (50 d) | 0% | Topic (to do) | **Claude** · queued | — | Sun 27 Dec (in 46 d) | 🟢 on track |
 | **015** Cells: The Slice of Cork That Changed Biology | Thu 7 Jan (57 d) | 0% | Topic (to do) | **Claude** · queued | — | Sun 3 Jan (in 53 d) | 🟢 on track |
 | **018** Infrared: The Thermometer Experiment That Found Invisible Light | Thu 14 Jan (64 d) | 0% | Topic (to do) | **Claude** · queued | — | Sun 10 Jan (in 60 d) | 🟢 on track |
@@ -32,6 +32,7 @@
 
 **Grok**
 - ▶️ Underway: nothing right now
+- ⏸ Waiting: 013 Edit + master: Chief ruling on sentence-safe picture cuts and overlay revision from J2498
 - ⏭ Next up: 008 Thumbnails, due Thu 12 Nov; 009 Thumbnails, due Thu 19 Nov; 010 Edit + master, due Thu 26 Nov
 
 **Ben**
@@ -73,6 +74,7 @@
 - **008** · ⛔ **Edit + master** — blocked (0%, with claude since Thu 5 Nov 00:00, ⛔ blocked: J1881 reviews J2163 repaired input; separately scoped PTS/GOP splicer, master-word alignment and exact-match assets required. J1755 separate delivery hold., due Thu 12 Nov (tomorrow)): J2163 code/evidence delivered: master hash/full decoded PTS and four source hashes verified; 11 tests pass. Output frame delta/sync/unchanged-frame/audio identity UNMEASURED. Six v03 notes unresolved; h22/h35/J1297 preserved. No render or new approval.
 - **009** · 🔄 **Picture** — in progress (78%, 70/90 board rows recorded: 57 accepted Flow +12 code graphics +1 reuse; 20 Quality remain, with Grok (J2632 sheet review; Codex built candidate) since Wed 11 Nov, ⏸ waiting: Grok sheet decision on J2632 before KEEP or splice; J2035 waits for both diagrams. Other picture review requirements remain., due Sun 15 Nov (in 4 d)): J1237 tranche1 PASS; all57 original Flow hashes reverified local/NAS. 70/90 recorded rows unchanged. J2033 owns remaining20 Quality rows under J2026 cap6000/max3 takes each/floor3000; J2034 independent picture review. Generated is not approved. J2632: falling-Moon continuation now a £0 code-graphic candidate; 158 frames at 30 fps, Mini/NAS hashes matched, Gemini timing advisory clear. J2631 five-metre graphic already KEEP. No new approved-row count.
 - **010** · ⛔ **Picture** — blocked (0%, with codex since Fri 6 Nov, ⛔ blocked: Tested HOS010 runner and live guarded spend preflight after HOS009 J2033; then independent plate review before J2172 assembly, due Sun 22 Nov (in 11 d)): J2267: readiness integrated and budget reconciled; 12 Quality Shorts parents scoped, not generated or authorized. 75 total board rows / historical 12911 expected credits. Existing VO and Option A1 retained.
+- **013** · ⛔ **Edit + master** — blocked (0%, 0/1 approved master, with Grok since Wed 11 Nov, ⛔ blocked: Chief ruling on sentence-safe picture cuts and overlay revision from J2498, due Thu 10 Dec (in 29 d)): J2498: 515 s diagnostic rough on studio-live, 22 existing renders + 72 slates. clip_check FAIL (9 errors); direct audit 14 word cuts, 23 sentence cuts, 5 graphics over 8 s. Not a passed edit or Ben watch. See timing_rough_J2498/TIMING_REPORT_v01.md.
 
 ## Next steps (in order)
 
@@ -295,7 +297,7 @@ Planned for Thu 24 Dec (J2328 / jobs/WIP.json next_hos #2). Topic prep and draft
 
 `██████░░░░░░░░░░░░░░` **28%**
 
-Airs **Thu 17 Dec** · ready for Ben's OK by **Sun 13 Dec** · 🟢 on track
+Airs **Thu 17 Dec** · ready for Ben's OK by **Sun 13 Dec** · ⛔ blocked
 
 Slotted Thu 17 Dec (J2231; active in jobs/WIP.json #541). Script v02 (92.6 PASS, J0307) and FACT_NOTES_v02 (30 OK, J0304) locked; long VO hos_013_vo_v03a locked (512.48 s, -19.5 LUFS, vo_check 0 fails, J1310). Shorts scripts v02 + upload package + shot list v01 queued (J2240). Next four proposed to mid-Jan (jobs/WIP.json next_hos): 012 Mendel (24 Dec), 014 Anning (31 Dec), 015 Hooke (7 Jan), 018 Herschel (14 Jan).
 
@@ -307,7 +309,7 @@ Slotted Thu 17 Dec (J2231; active in jobs/WIP.json #541). Script v02 (92.6 PASS,
 - ⬜ **Shorts scripts** — to do (with Claude, due Thu 12 Nov (tomorrow)): two search-titled Shorts (Test B, J2240)
 - ⬜ **Shorts voiceover** — to do (with Cursor, due Mon 16 Nov (in 5 d))
 - ⬜ **Picture** — to do (with Cursor, due Sun 6 Dec (in 25 d))
-- ⬜ **Edit + master** — to do (with Grok, due Thu 10 Dec (in 29 d))
+- ⛔ **Edit + master** — blocked (0%, 0/1 approved master, with Grok since Wed 11 Nov, ⛔ blocked: Chief ruling on sentence-safe picture cuts and overlay revision from J2498, due Thu 10 Dec (in 29 d)): J2498: 515 s diagnostic rough on studio-live, 22 existing renders + 72 slates. clip_check FAIL (9 errors); direct audit 14 word cuts, 23 sentence cuts, 5 graphics over 8 s. Not a passed edit or Ben watch. See timing_rough_J2498/TIMING_REPORT_v01.md.
 - ⬜ **Thumbnails** — to do (with Grok, due Thu 10 Dec (in 29 d))
 - ⬜ **Ben's final OK** — to do (with Ben, due Sun 13 Dec (in 32 d))
 - ⬜ **Scheduled** — to do (with Grok, due Mon 14 Dec (in 33 d))
