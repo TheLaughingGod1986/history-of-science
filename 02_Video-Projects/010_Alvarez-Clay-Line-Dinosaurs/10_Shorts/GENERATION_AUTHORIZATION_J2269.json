@@ -1,0 +1,256 @@
+{
+  "job": "J2269",
+  "film": "HOS:010",
+  "generation_authorized": true,
+  "j2033_done": true,
+  "j2033_completion_reference": "history-of-science #501 / 2792e349",
+  "scope_sha256": "6fa991211a24a8808c20606b83784a925df0024869d86ca51839435ffea2a413",
+  "authorized_cap_credits": 3600,
+  "minimum_headroom_floor": 3000,
+  "recorded_by": "codex",
+  "authority": "Delegated worker records existing Chief rulings 6782185014, 6784299215, 6787409534, 6788387002; J2269 brief updated 2026-11-11 06:52Z. No new worker ruling.",
+  "j2033_batch1_receipts": [
+    {
+      "part": 2,
+      "plate_id": "10_how_high",
+      "take": 1,
+      "receipt_path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/10_how_high_t1.mp4.receipt.json",
+      "receipt_sha256": "2396526b1dcd2b9d91cf9f89d7c4a89944dba8fcb76f5c06dde2c5d0d4e5a939",
+      "output_sha256": "540cb3667bbd315aa7db42d1cf989fb1c46f6e3557670ee4f5281e1b4d2d8f05"
+    },
+    {
+      "part": 3,
+      "plate_id": "07_ball_to_moon",
+      "take": 1,
+      "receipt_path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/07_ball_to_moon_t1.mp4.receipt.json",
+      "receipt_sha256": "ced58066e06cd4c17cb9a20cebe3b2b79df30f8dc99767d4947b5f529af3dd87",
+      "output_sha256": "fba484bb8b37055948991f701cf788e8b02015f6e230c866c83f0106e838b95d"
+    },
+    {
+      "part": 1,
+      "plate_id": "05_heavens_map_c1",
+      "take": 1,
+      "receipt_path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/05_heavens_map_c1_t1.mp4.receipt.json",
+      "receipt_sha256": "3b5cc57653745b1f42ec9c2736439229e588b53030c2e06db718954f36dcea42",
+      "output_sha256": "bf781ede9d6524375ed13b4ac02549c76bc4bf9b1750dddaba33e05d9236ac5e"
+    },
+    {
+      "part": 1,
+      "plate_id": "07_night_field_c1",
+      "take": 1,
+      "receipt_path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/07_night_field_c1_t1.mp4.receipt.json",
+      "receipt_sha256": "34e930aaceb14fb87184b5da77dc1db57a7b736d66234b8497112bee188d45d9",
+      "output_sha256": "3161b6e6993ef2e930c779187ccc3eea507c5041526e1f73ae1d8b07c51df093"
+    },
+    {
+      "part": 2,
+      "plate_id": "01_cambridge_closes_c1",
+      "take": 1,
+      "receipt_path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/01_cambridge_closes_c1_t1.mp4.receipt.json",
+      "receipt_sha256": "1a9fd58d2d924eb9d0e859e7140258db6dc77b7d3e26645c121e30e638eda61f",
+      "output_sha256": "666c40de800f4f68b09a1668692dbe483ff4e6edfa1cbf2e20bd9a799be26329"
+    }
+  ],
+  "live_guard_evidence": {
+    "read_at": "2026-11-11T07:01:57+00:00",
+    "shared_ledger_sha256": "3b8e74cad2eab2b3e199ab4d778905685323b8b3ca19894d939f52e1621fc278",
+    "shared_ledger": {
+      "reservations": {
+        "J2033": {
+          "cap": 6000,
+          "film": "HOS:009",
+          "active": false
+        },
+        "J2241": {
+          "cap": 900,
+          "film": "HOS:008",
+          "active": true
+        }
+      },
+      "charges": {
+        "HOS:009:P02:10_how_high:t1": {
+          "reservation": "J2033",
+          "amount": 100,
+          "status": "CHARGED",
+          "posted": false
+        },
+        "HOS:009:P03:07_ball_to_moon:t1": {
+          "reservation": "J2033",
+          "amount": 100,
+          "status": "CHARGED",
+          "posted": false
+        },
+        "HOS:009:P01:05_heavens_map_c1:t1": {
+          "reservation": "J2033",
+          "amount": 100,
+          "status": "CHARGED",
+          "posted": false
+        },
+        "HOS:009:P01:07_night_field_c1:t1": {
+          "reservation": "J2033",
+          "amount": 100,
+          "status": "CHARGED",
+          "posted": false
+        },
+        "HOS:009:P02:01_cambridge_closes_c1:t1": {
+          "reservation": "J2033",
+          "amount": 100,
+          "status": "CHARGED",
+          "posted": false
+        },
+        "HOS:009:P02:03_christmas_birth_c1:t1": {
+          "reservation": "J2033",
+          "amount": 100,
+          "status": "CHARGED",
+          "posted": false
+        },
+        "HOS:009:P02:05_working_alone_c1:t1": {
+          "reservation": "J2033",
+          "amount": 100,
+          "status": "CHARGED",
+          "posted": false
+        },
+        "HOS:009:P02:08_the_apple_c1:t1": {
+          "reservation": "J2033",
+          "amount": 100,
+          "status": "CHARGED",
+          "posted": false
+        },
+        "HOS:009:P02:11_explorer_apple_c1:t1": {
+          "reservation": "J2033",
+          "amount": 100,
+          "status": "CHARGED",
+          "posted": false
+        },
+        "HOS:009:P03:01_really_falling_c1:t1": {
+          "reservation": "J2033",
+          "amount": 100,
+          "status": "CHARGED",
+          "posted": false
+        },
+        "HOS:009:P03:05_shot_orbit_c1:t1": {
+          "reservation": "J2033",
+          "amount": 100,
+          "status": "CHARGED",
+          "posted": false
+        },
+        "HOS:009:P03:05_shot_orbit_c2:t1": {
+          "reservation": "J2033",
+          "amount": 100,
+          "status": "CHARGED",
+          "posted": false
+        },
+        "HOS:009:P04:05_minute_second_c1:t1": {
+          "reservation": "J2033",
+          "amount": 100,
+          "status": "CHARGED",
+          "posted": false
+        },
+        "HOS:009:P04:05_minute_second_c2:t1": {
+          "reservation": "J2033",
+          "amount": 100,
+          "status": "CHARGED",
+          "posted": false
+        },
+        "HOS:009:P04:08_halley_visit_c1:t1": {
+          "reservation": "J2033",
+          "amount": 0,
+          "status": "POLICY_REFUSED",
+          "posted": false
+        },
+        "HOS:009:P04:08_halley_visit_c1:t2": {
+          "reservation": "J2033",
+          "amount": 100,
+          "status": "CHARGED",
+          "posted": false
+        },
+        "HOS:009:P04:08_halley_visit_c2:t1": {
+          "reservation": "J2033",
+          "amount": 100,
+          "status": "CHARGED",
+          "posted": false
+        },
+        "HOS:009:P05:04_comet_1758_c1:t1": {
+          "reservation": "J2033",
+          "amount": 100,
+          "status": "CHARGED",
+          "posted": false
+        },
+        "HOS:009:P05:05_iss_orbit_c1:t1": {
+          "reservation": "J2033",
+          "amount": 100,
+          "status": "CHARGED",
+          "posted": false
+        },
+        "HOS:009:P05:05_iss_orbit_c2:t1": {
+          "reservation": "J2033",
+          "amount": 100,
+          "status": "CHARGED",
+          "posted": false
+        },
+        "HOS:009:P05:06_iss_apple_c1:t1": {
+          "reservation": "J2033",
+          "amount": 100,
+          "status": "CHARGED",
+          "posted": false
+        },
+        "HOS:008:P02:02_salon_spark:J2241:t1": {
+          "reservation": "J2241",
+          "amount": 100,
+          "status": "CHARGED",
+          "posted": false
+        },
+        "HOS:008:P03:01_points_desk:J2241:t1": {
+          "reservation": "J2241",
+          "amount": 100,
+          "status": "CHARGED",
+          "posted": false
+        },
+        "HOS:008:P05:13_rods_spread:J2241:t1": {
+          "reservation": "J2241",
+          "amount": 100,
+          "status": "CHARGED",
+          "posted": false
+        }
+      },
+      "unposted": 2300,
+      "remaining_reservations": 600,
+      "liability": 2900,
+      "pending": false
+    },
+    "balance_before": 12690,
+    "balance_after": 12690,
+    "account_verified": true,
+    "ultra_verified": true,
+    "prices": {
+      "Quality": {
+        "quality": "Quality",
+        "model": "Veo 3.1 - Quality",
+        "outputs": "x1",
+        "aspect": "16:9",
+        "duration": "8s",
+        "credits": 100,
+        "generate_line": "Generating will use 100 credits",
+        "read_at": "2026-11-11T07:02:05+00:00"
+      }
+    },
+    "projected_headroom": 6190,
+    "guards_ok": true
+  },
+  "limits": {
+    "max_takes_per_row": 3,
+    "max_rows_per_batch": 5,
+    "max_credits_per_batch": 1500,
+    "model": "Veo 3.1 - Quality",
+    "duration": "8s",
+    "aspect": "16:9",
+    "outputs": "x1",
+    "credits_per_take": 100,
+    "generated_status": "PENDING_REVIEW",
+    "auto_keep": false,
+    "subscription_only": true,
+    "reset_window_london": "2026-11-12 19:13",
+    "if_window_insufficient": "Wait for the new allowance. Do not hurry a guard.",
+    "before_first_submit": "Re-read live account/balance/price and shared ledger under writer lock. Stop for PENDING charges or unexplained balance movement; retain at least 3000 after all reservations."
+  }
+}
