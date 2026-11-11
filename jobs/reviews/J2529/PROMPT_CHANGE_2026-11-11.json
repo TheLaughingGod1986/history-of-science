@@ -1,0 +1,242 @@
+{
+  "job": "J2529",
+  "film": "HOS:013",
+  "date": "2026-11-11",
+  "by": "claude (acting Chief, queue side)",
+  "ruling": [
+    "history-of-science#180 comment 6785808071, item 4"
+  ],
+  "why": "Flow refused a 009 plate on 11 Nov under its policy on generating prominent people. Before 013's first submit, every prompt that named a real person now describes the person and names nobody. Nothing else in a prompt changed. Identity on screen comes from the side labels, the portrait overlays added in the edit and the narration.",
+  "rows_changed": 34,
+  "rows_total": 71,
+  "rows": [
+    {
+      "row_id": "P1:02_drawer_lock",
+      "old": "Premium Animistry-class 3D cartoon. Close on Charles Darwin's hands closing the red-leather notebook, sliding it into a mahogany desk drawer, and turning a brass key in the lock under warm study light. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "new": "Premium Animistry-class 3D cartoon. Close on a Victorian naturalist's hands closing the red-leather notebook, sliding it into a mahogany desk drawer, and turning a brass key in the lock under warm study light. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit."
+    },
+    {
+      "row_id": "P1:03b_malay_packet",
+      "old": "Premium Animistry-class 3D cartoon. On Darwin's mahogany desk beside a glass specimen jar of barnacles and a brass dissecting microscope, a sealed foreign paper packet tied with twine lands in warm study light. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "new": "Premium Animistry-class 3D cartoon. On a Victorian naturalist's mahogany desk beside a glass specimen jar of barnacles and a brass dissecting microscope, a sealed foreign paper packet tied with twine lands in warm study light. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit."
+    },
+    {
+      "row_id": "P1:07_darwin_1837_desk",
+      "old": "Premium Animistry-class 3D cartoon. Summer 1837: 28-year-old Charles Darwin, clean-shaven with dark sideburns and a dark frock coat, dips a steel pen in an inkwell at his study desk by warm lamplight. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "new": "Premium Animistry-class 3D cartoon. Summer 1837: a 28-year-old English naturalist, clean-shaven with dark sideburns and a dark frock coat, dips a steel pen in an inkwell at his study desk by warm lamplight. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit."
+    },
+    {
+      "row_id": "P1:09_wallace_hut_split",
+      "old": "Premium Animistry-class 3D cartoon. Split composition: on the left, 49-year-old bearded Charles Darwin in his Kent study reads a foreign manuscript; on the right, 35-year-old bearded Alfred Russel Wallace wearing round wire-rimmed spectacles writes by oil lamp in a rain-lashed bamboo hut. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "new": "Premium Animistry-class 3D cartoon. Split composition: on the left, a 49-year-old bearded English naturalist in his Kent study reads a foreign manuscript; on the right, a 35-year-old bearded field naturalist wearing round wire-rimmed spectacles writes by oil lamp in a rain-lashed bamboo hut. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit."
+    },
+    {
+      "row_id": "P2:02_galapagos_beach_myth",
+      "old": "Premium Animistry-class 3D cartoon. Sunlit Galápagos black volcanic lava beach with white surf and prickly-pear cactus: 26-year-old Charles Darwin in a wide-brimmed hat walks past dark finches on the rocks without looking down. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "new": "Premium Animistry-class 3D cartoon. Sunlit Galápagos black volcanic lava beach with white surf and prickly-pear cactus: a 26-year-old English naturalist in a wide-brimmed hat walks past dark finches on the rocks without looking down. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit."
+    },
+    {
+      "row_id": "P2:03_unlabelled_bagging",
+      "old": "Premium Animistry-class 3D cartoon. Galápagos shore, September 1835: 26-year-old Darwin places small dark bird skins into a canvas collecting bag on black lava rock, tying blank paper tags with no writing on them. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "new": "Premium Animistry-class 3D cartoon. Galápagos shore, September 1835: a 26-year-old English naturalist places small dark bird skins into a canvas collecting bag on black lava rock, tying blank paper tags with no writing on them. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit."
+    },
+    {
+      "row_id": "P2:06a_lawson_jetty",
+      "old": "Premium Animistry-class 3D cartoon. On a stone jetty in the Galápagos Islands, vice-governor Nicholas Lawson gestures toward two giant tortoise shells while 26-year-old Darwin listens intently. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "new": "Premium Animistry-class 3D cartoon. On a stone jetty in the Galápagos Islands, the islands' vice-governor gestures toward two giant tortoise shells while a 26-year-old English naturalist listens intently. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit."
+    },
+    {
+      "row_id": "P2:07_darwin_notebook_wait",
+      "old": "Premium Animistry-class 3D cartoon. Young 26-year-old Darwin leans on the wooden stern rail of HMS Beagle at dusk as volcanic islands recede across the ocean horizon. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "new": "Premium Animistry-class 3D cartoon. A young 26-year-old English naturalist leans on the wooden stern rail of HMS Beagle at dusk as volcanic islands recede across the ocean horizon. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit."
+    },
+    {
+      "row_id": "P2:08a_gould_sorting",
+      "old": "Premium Animistry-class 3D cartoon. London, 1837: ornithologist John Gould stands at a long mahogany museum table examining Darwin's Galápagos bird skins and looking up in surprise. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "new": "Premium Animistry-class 3D cartoon. London, 1837: a museum ornithologist stands at a long mahogany museum table examining a collection of Galápagos bird skins and looking up in surprise. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit."
+    },
+    {
+      "row_id": "P2:12b_tree_question",
+      "old": "Premium Animistry-class 3D cartoon. In a warm candlelit London study, young Charles Darwin gazes at his open red-leather notebook, tapping his steel pen thoughtfully beside the sketched branches. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "new": "Premium Animistry-class 3D cartoon. In a warm candlelit London study, a young English naturalist gazes at his open red-leather notebook, tapping his steel pen thoughtfully beside the sketched branches. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit."
+    },
+    {
+      "row_id": "P3:02a_malthus_lamplight",
+      "old": "Premium Animistry-class 3D cartoon. London study, 28 September 1838: young Charles Darwin reads an open octavo book by warm oil lamp light. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "new": "Premium Animistry-class 3D cartoon. London study, 28 September 1838: a young English naturalist reads an open octavo book by warm oil lamp light. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit."
+    },
+    {
+      "row_id": "P3:02b_notebook_d_open",
+      "old": "Premium Animistry-class 3D cartoon. By warm oil lamp light, Darwin's eyes widen with realization as he pulls a leather notebook toward him across the desk. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "new": "Premium Animistry-class 3D cartoon. By warm oil lamp light, a young English naturalist's eyes widen with realization as he pulls a leather notebook toward him across the desk. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit."
+    },
+    {
+      "row_id": "P3:07a_darwin_afraid_window",
+      "old": "Premium Animistry-class 3D cartoon. Down House study at night, January 1844: Charles Darwin pauses beside the darkened window with a troubled, hesitant expression. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "new": "Premium Animistry-class 3D cartoon. Down House study at night, January 1844: an English naturalist in his mid-thirties pauses beside the darkened window with a troubled, hesitant expression. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit."
+    },
+    {
+      "row_id": "P3:07b_confessing_murder_letter",
+      "old": "Premium Animistry-class 3D cartoon. Close in grey window light on Darwin's hand writing a letter with a steel pen on cream paper, pausing in hesitation. Daylight, window light or matte painted ink only. No candle, flame, glow, spark, fireball or lightning. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "new": "Premium Animistry-class 3D cartoon. Close in grey window light on a man's hand writing a letter with a steel pen on cream paper, pausing in hesitation. Daylight, window light or matte painted ink only. No candle, flame, glow, spark, fireball or lightning. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit."
+    },
+    {
+      "row_id": "P3:08_emma_study",
+      "old": "Premium Animistry-class 3D cartoon. Through a half-open Victorian parlour doorway, Emma Darwin sits peacefully by warm lamplight while Charles watches quietly from the study. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "new": "Premium Animistry-class 3D cartoon. Through a half-open Victorian parlour doorway, a Victorian wife sits peacefully by warm lamplight while her husband watches quietly from the study. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit."
+    },
+    {
+      "row_id": "P3:09b_emma_letter_cupboard",
+      "old": "Premium Animistry-class 3D cartoon. In his Down House study, Darwin places a wax-sealed letter beside the thick bound manuscript inside a wooden cupboard and turns the key. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "new": "Premium Animistry-class 3D cartoon. In his Down House study, an English naturalist places a wax-sealed letter beside the thick bound manuscript inside a wooden cupboard and turns the key. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit."
+    },
+    {
+      "row_id": "P3:11_barnacles_microscope",
+      "old": "Premium Animistry-class 3D cartoon. Down House study table crowded with glass specimen jars of marine barnacles as Darwin bends closely over a brass dissecting microscope. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "new": "Premium Animistry-class 3D cartoon. Down House study table crowded with glass specimen jars of marine barnacles as an English naturalist bends closely over a brass dissecting microscope. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit."
+    },
+    {
+      "row_id": "P4:02_wallace_collector",
+      "old": "Premium Animistry-class 3D cartoon. Alfred Russel Wallace, a bearded naturalist in his late twenties wearing round wire-rimmed spectacles and a simple cotton field shirt, packs wooden crates of pinned beetles on a river dock. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "new": "Premium Animistry-class 3D cartoon. A bearded naturalist in his late twenties wearing round wire-rimmed spectacles and a simple cotton field shirt packs wooden crates of pinned beetles on a river dock. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit."
+    },
+    {
+      "row_id": "P4:04_open_boat_ten_days",
+      "old": "Premium Animistry-class 3D cartoon. Dawn on the open Atlantic: bearded Wallace in round spectacles sits huddled with sailors in a small wooden open boat tossing on the ocean swell. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "new": "Premium Animistry-class 3D cartoon. Dawn on the open Atlantic: a bearded naturalist in round spectacles sits huddled with sailors in a small wooden open boat tossing on the ocean swell. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit."
+    },
+    {
+      "row_id": "P4:06a_wallace_fever",
+      "old": "Premium Animistry-class 3D cartoon. Night, February 1858, in a rain-lashed bamboo hut: 35-year-old bearded Alfred Russel Wallace lies shivering under a blanket with fever by warm oil lamp light. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "new": "Premium Animistry-class 3D cartoon. Night, February 1858, in a rain-lashed bamboo hut: a 35-year-old bearded field naturalist lies shivering under a blanket with fever by warm oil lamp light. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit."
+    },
+    {
+      "row_id": "P4:07a_wallace_writes_hut",
+      "old": "Premium Animistry-class 3D cartoon. Inside the bamboo hut by oil lamp light, 35-year-old bearded Wallace in round wire-rimmed spectacles sits up at a wooden table and writes rapidly on thin paper sheets. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "new": "Premium Animistry-class 3D cartoon. Inside the bamboo hut by oil lamp light, a 35-year-old bearded field naturalist in round wire-rimmed spectacles sits up at a wooden table and writes rapidly on thin paper sheets. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit."
+    },
+    {
+      "row_id": "P4:08_midpoint_twist_packet",
+      "old": "Premium Animistry-class 3D cartoon. Down House study with a low hearth glow: 49-year-old bearded Darwin holds the opened foreign packet near the fireplace grate, pauses, and pulls it firmly back to his desk. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "new": "Premium Animistry-class 3D cartoon. Down House study with a low hearth glow: a 49-year-old bearded English naturalist holds the opened foreign packet near the fireplace grate, pauses, and pulls it firmly back to his desk. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit."
+    },
+    {
+      "row_id": "P4:09a_darwin_reads_wallace",
+      "old": "Premium Animistry-class 3D cartoon. Down House study, 18 June 1858: 49-year-old bearded Charles Darwin stands by the window lowering Wallace's manuscript pages in shock. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "new": "Premium Animistry-class 3D cartoon. Down House study, 18 June 1858: a 49-year-old bearded English naturalist stands by the window lowering the foreign manuscript pages in shock. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit."
+    },
+    {
+      "row_id": "P4:09b_smashed_letter_pen",
+      "old": "Premium Animistry-class 3D cartoon. Close in grey window light on Darwin's hand writing urgently with a steel pen across letter paper on a mahogany desk. Daylight, window light or matte painted ink only. No candle, flame, glow, spark, fireball or lightning. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "new": "Premium Animistry-class 3D cartoon. Close in grey window light on a man's hand writing urgently with a steel pen across letter paper on a mahogany desk. Daylight, window light or matte painted ink only. No candle, flame, glow, spark, fireball or lightning. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit."
+    },
+    {
+      "row_id": "P4:10_fairness_25_june",
+      "old": "Premium Animistry-class 3D cartoon. In grey window light at Down House, hands place the thick 1844 manuscript beside Wallace's thin paper packet and fold a second letter to Lyell. Daylight, window light or matte painted ink only. No candle, flame, glow, spark, fireball or lightning. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "new": "Premium Animistry-class 3D cartoon. In grey window light at Down House, hands place the thick 1844 manuscript beside the thin foreign paper packet and fold a second letter. Daylight, window light or matte painted ink only. No candle, flame, glow, spark, fireball or lightning. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit."
+    },
+    {
+      "row_id": "P5:02a_linnean_reading",
+      "old": "Premium Animistry-class 3D cartoon. London, 1 July 1858: inside the wood-panelled meeting room of the Linnean Society, the secretary reads aloud at a lectern while Charles Lyell and Joseph Hooker listen from the front bench. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "new": "Premium Animistry-class 3D cartoon. London, 1 July 1858: inside the wood-panelled meeting room of the Linnean Society, the secretary reads aloud at a lectern while two senior Victorian men of science listen from the front bench. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit."
+    },
+    {
+      "row_id": "P5:03b_wallace_jungle_clearing",
+      "old": "Premium Animistry-class 3D cartoon. In a sunlit tropical clearing in the Malay Archipelago, 35-year-old bearded Wallace in round wire-rimmed spectacles examines a specimen net, unaware of London. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "new": "Premium Animistry-class 3D cartoon. In a sunlit tropical clearing in the Malay Archipelago, a 35-year-old bearded field naturalist in round wire-rimmed spectacles examines a specimen net, unaware of London. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit."
+    },
+    {
+      "row_id": "P5:05a_darwin_writes_origin",
+      "old": "Premium Animistry-class 3D cartoon. Down House study, 1858–1859: bearded Darwin writes page after page at his mahogany desk as light shifts across the window, stacking a thick manuscript. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "new": "Premium Animistry-class 3D cartoon. Down House study, 1858–1859: a bearded English naturalist writes page after page at his mahogany desk as light shifts across the window, stacking a thick manuscript. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit."
+    },
+    {
+      "row_id": "P5:06_murray_bookshop",
+      "old": "Premium Animistry-class 3D cartoon. Albemarle Street, London, November 1859: John Murray's bow-windowed bookshop stacked with green cloth-bound books as clerks carry stacks out into the morning street. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "new": "Premium Animistry-class 3D cartoon. Albemarle Street, London, November 1859: a publisher's bow-windowed bookshop stacked with green cloth-bound books as clerks carry stacks out into the morning street. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit."
+    },
+    {
+      "row_id": "P5:08b_wallace_reads_origin",
+      "old": "Premium Animistry-class 3D cartoon. Malay Archipelago, 1860: 37-year-old bearded Wallace sits on a sunlit bamboo veranda reading a green cloth-bound book, smiling warmly and nodding in admiration. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "new": "Premium Animistry-class 3D cartoon. Malay Archipelago, 1860: a 37-year-old bearded field naturalist sits on a sunlit bamboo veranda reading a green cloth-bound book, smiling warmly and nodding in admiration. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit."
+    },
+    {
+      "row_id": "P5:10_darwin_worried_shelf",
+      "old": "Premium Animistry-class 3D cartoon. At Down House, older bearded Darwin furrows his brow over a study notebook while the camera pans up to an uncut paper-bound journal resting on a high bookshelf. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "new": "Premium Animistry-class 3D cartoon. At Down House, an older bearded English naturalist furrows his brow over a study notebook while the camera pans up to an uncut paper-bound journal resting on a high bookshelf. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit."
+    },
+    {
+      "row_id": "P6:02a_jenkin_study",
+      "old": "Premium Animistry-class 3D cartoon. Edinburgh, June 1867: Scottish engineer Fleeming Jenkin stands at a wooden study table beside a pot of crimson paint and a pot of white paint. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "new": "Premium Animistry-class 3D cartoon. Edinburgh, June 1867: a Scottish engineer stands at a wooden study table beside a pot of crimson paint and a pot of white paint. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit."
+    },
+    {
+      "row_id": "P6:04a_mendel_pea_garden",
+      "old": "Premium Animistry-class 3D cartoon. Brno, 1866: in a sunlit walled monastery garden, friar Gregor Mendel in his black-and-white Augustinian habit and spectacles gently examines purple and white pea blossoms on a trellis. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "new": "Premium Animistry-class 3D cartoon. Brno, 1866: in a sunlit walled monastery garden, a friar in his black-and-white Augustinian habit and spectacles gently examines purple and white pea blossoms on a trellis. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit."
+    },
+    {
+      "row_id": "P6:08b_darwin_mendel_synthesis",
+      "old": "Premium Animistry-class 3D cartoon. Warm golden sunlight in the Down House study: Darwin's open red-leather notebook and a porcelain dish of bright green and yellow garden peas sit side by side on the mahogany desk. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "new": "Premium Animistry-class 3D cartoon. Warm golden sunlight in the Down House study: an open red-leather notebook and a porcelain dish of bright green and yellow garden peas sit side by side on the mahogany desk. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit."
+    }
+  ],
+  "boards": {
+    "1": {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/parts/part-01_plates_v01.json",
+      "sha256_old": "4a0729dc5c1beae65798c2587319c874f3956b2b8b1ccbbbff1a9ba8159ee1ce",
+      "sha256_new": "3b046ed7891f396a903d239a39751b56991cfad823fbdf9c6937df062bf0b20c"
+    },
+    "2": {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/parts/part-02_plates_v01.json",
+      "sha256_old": "bf1ae4c768602e2e6868f91f99307001474bb3766fe50d7c01a7199b83cd6b88",
+      "sha256_new": "b7307c77d7122a7e5b4b9877a834b6bc6dc6d42647aae3d57b776860d7401a87"
+    },
+    "3": {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/parts/part-03_plates_v01.json",
+      "sha256_old": "21e849babbf41d8077dbd0f2e617bdfc6fd66aade6b0abff801c2671c5ade4e7",
+      "sha256_new": "97d5a73481549082bc9152981d2ec893ac9ff98a36463c80c2d9bb8a2801a94d"
+    },
+    "4": {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/parts/part-04_plates_v01.json",
+      "sha256_old": "e8d7bbd926dc6153235a4dce6c424ef9ffc606a77cb9b7fd66684739ec236763",
+      "sha256_new": "0f85689945dc9dd8a1f29e3d96514b64dbb25bb186d6ff5eab3dad8919f370f0"
+    },
+    "5": {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/parts/part-05_plates_v01.json",
+      "sha256_old": "e00d86321b49abb12852e952d5bbda49710b0c6a29cd770e061ef917875dc817",
+      "sha256_new": "02ffb89ef5f52af50bbec460cbd1a1d86dc3c355da2f6901b3b2f9e459c2effa"
+    },
+    "6": {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/parts/part-06_plates_v01.json",
+      "sha256_old": "714d7dc64794e594a9dc0349508f2efcec8ed493e5a3afb04014f53be9a3103e",
+      "sha256_new": "9e92eeb5d6fd91198a79a48e144124b2253078fa7e6239b9f78859b835d68703"
+    }
+  },
+  "unchanged": "Model, length, aspect, price, order, side labels, shot descriptions, narration lines, style references and the picture plan file.",
+  "names_checked": [
+    "Darwin",
+    "Wallace",
+    "Lawson",
+    "Gould",
+    "Lyell",
+    "Hooker",
+    "Murray",
+    "Jenkin",
+    "Mendel",
+    "Charles",
+    "Emma",
+    "Alfred",
+    "Russel",
+    "Nicholas",
+    "Joseph",
+    "Fleeming",
+    "Gregor",
+    "FitzRoy",
+    "Malthus",
+    "Huxley",
+    "Owen",
+    "Henslow"
+  ],
+  "kept_on_purpose": "Place, ship and institution names stay: Down House, Kent, London, Galápagos, Malay Archipelago, HMS Beagle, the Linnean Society, Albemarle Street, Edinburgh, Brno."
+}
