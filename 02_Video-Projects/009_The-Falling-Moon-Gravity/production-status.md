@@ -29,7 +29,7 @@
 
 - **Authority:** Acting Chief (Claude) price pass J0863 PASS and queue job `J1192`. £0 cash spend, no ElevenLabs, no upload.
 - **Live Flow gate & spend:**
-  - Start live Flow read: `18,550` credits (`benoats@googlemail.com`, after J1191 008 completion), logged via `ai_spend.py`.
+  - Start live Flow read: `18,550` credits (`[email redacted]`, after J1191 008 completion), logged via `ai_spend.py`.
   - Minted all **57/57 tranche-1 Flow rows** across Parts 01–05 (`26 Quality + 31 Fast`):
     - **Part 01 (`12/12` KEEP):** `01_moon_falling`, `02_apple_and_moon`, `03_table_three`, `03_table_three_c1`, `03_table_three_c2`, `04_things_fall`, `05_heavens_map`, `06_perfect_circles` (take 2, non-emissive matte brass armillary sphere), `07_night_field`, `08_three_questions`, `09_no_answer`, `10_farmhouse_dawn`.
     - **Part 02 (`10/10` KEEP):** `01_cambridge_closes`, `02_road_north`, `03_christmas_birth`, `04_sundial_pegs`, `05_working_alone`, `06_prism_spectrum`, `07_fluxions_desk`, `08_the_apple`, `11_explorer_apple`, `12_how_far_moon`.
@@ -154,3 +154,10 @@ Three retained takes are untouched: `009 A v02`, `010 A v02` (`J1004` Option A1 
   2. **Short B (`hos_009_short_B_v04`, *How Did Newton Discover Gravity?*, `24.48 s` VO / `25.48 s` total, hook `2.820 s <= 2.850 s`):** VO `.mp3` (`0c9c4c6f…`) & `.wav` (`a6666fd2…`) Chief `PASS` (`J0862`/`J2195`/`J2279`/`J2281`, directly auditioned via `audio_input`, preserving both `"In one minute"` and `"in one second"` intervals and all `J1004`/`J1894` restrictions). **`9/9` rows verified on local disk + NAS** (`7` Tranche 1 KEEP Flow plates + `2` `code_graphics_v01` animations), with `S05` (`11.44–14.50 s`) mapped to Tranche 1 KEEP moving 3D plate `P4:02_spray_paint` (`8a7b7d90…`) for `J0383` moving-plate alternation between `S04` (`P4:03_sixty_earths`) and `S06` (`P4:04_dots_square`, moving-plate overlay over `02_spray_paint_c2` `0a6279c0…`), and `S07` mapped to `P4:06_pretty_nearly_c1` (`eb3f5d50…`) so all 8 body cuts use distinct clips.
 - **Hold / dependency per `J2171` brief (*"If J2034 incomplete do useful inventory only then attach dependency, not claim a ready master"*):** `J2033` (`0/20` Tranche 2 rows minted, blocked on `J2275`/`J2200`) and `J2034` (complete 009 picture acceptance & moving-plate code-graphic composite review) are incomplete, and HOS 009 `05_Music/` score bed is not yet generated (`J2035`). `J2171` attached to `J2034` dependency; no master claimed ready.
 
+
+
+### 11 Nov 2026 — J2632 candidate (Codex; not approved)
+
+Falling-Moon continuation rebuilt as a £0 parchment code graphic for 3:03.94–3:09.20, 158 frames at 30 fps, silent. Mini/studio-live SHA-256 matches MANIFEST.json. Row route changed in part-03_plates_v05.json; no splice or KEEP. Gemini timing advisory clear; Grok sheet decision and join review pending. Evidence: 07_Edit-Project/J2632_review/REVIEW.md. Approved-row count unchanged.
+
+Tool outputs: `J2632 geometry, stream, silence and full decode checks passed; review remains pending.` and `ALL CHECKS PASS` (check_all.sh). These are tool results, not final film PASS.
