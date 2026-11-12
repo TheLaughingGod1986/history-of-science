@@ -63,7 +63,7 @@
 - ▶️ Underway: nothing right now
 - ⏸ Waiting: 009 Picture: Grok ruling on the0.175s timing mismatch and revised J2632 sheets on PR543; no splice. Other picture review requirements remain.
 
-**Cursor (J2035; Codex/Gemini fallback)**
+**Mini audio worker (J2664); assembly J2035 held**
 - ▶️ Underway: nothing right now
 - ⏭ Next up: 009 Edit + master, due Thu 19 Nov
 
@@ -224,7 +224,7 @@ J1237 tranche1 Chief PASS retained: 57 Flow +12 code graphics +1 reuse =70/90 re
 - ✅ **Shorts scripts** — done: v02 (test B): two search-titled Shorts, 9 Oct
 - ✅ **Shorts voiceover** — done: J0862/J2279/J2281 PASS (PR #423): Short A v02 (c2fd407d, 25.32 s, hook 2.800 s) + Short B v04 (0c9c4c6f MP3 / a6666fd2 WAV, 25.48 s w/ tail, hook 2.820 s) directly auditioned and vo_check_py312 PASS. J2171 assembles Shorts A/B.
 - 🔄 **Picture** — in progress (78%, 70/90 board rows recorded: 57 accepted Flow +12 code graphics +1 reuse; 20 Quality remain, with Grok (J2632 revised sheet and timing ruling) since Wed 11 Nov, ⏸ waiting: Grok ruling on the0.175s timing mismatch and revised J2632 sheets on PR543; no splice. Other picture review requirements remain., due Sun 15 Nov (in 3 d)): J1237 tranche1 PASS; all57 original Flow hashes reverified local/NAS. 70/90 recorded rows unchanged. J2033 owns remaining20 Quality rows under J2026 cap6000/max3 takes each/floor3000; J2034 independent picture review. Generated is not approved. J2632: revised candidate has179 unique30fps frames,21 drawn head frames and two open rings. Parent out104 evidence supplied.0.175s parent/head frame-rate mismatch flagged; not KEEP. J2631 already KEEP. Approved count unchanged.
-- ⬜ **Edit + master** — to do (with Cursor (J2035; Codex/Gemini fallback), due Thu 19 Nov (in 7 d))
+- ⬜ **Edit + master** — to do (with Mini audio worker (J2664); assembly J2035 held, due Thu 19 Nov (in 7 d)): J2663 approved two Music v2 cues: wonder 180s + teach 360s, one take each, aggregate cap30000 subscription credits and £0 cash; duration-based cost/overage preflight required. No music generated or audio PASS claimed.
 - ⬜ **Thumbnails** — to do (with Grok, due Thu 19 Nov (in 7 d))
 - ⬜ **Ben's final OK** — to do (with Ben, due Sun 22 Nov (in 10 d))
 - ⬜ **Scheduled** — to do (with Grok, due Mon 23 Nov (in 11 d))

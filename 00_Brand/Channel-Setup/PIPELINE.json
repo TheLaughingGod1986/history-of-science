@@ -553,9 +553,10 @@
         "edit": {
           "status": "todo",
           "due": "2026-11-19",
-          "owner": "Cursor (J2035; Codex/Gemini fallback)",
-          "waiting": "J2034 full picture approval, then J2035 versioned no-new-spend edit; J2036 gates/package and J1275 chapters; J2037 Chief watch handoff",
-          "underway": false
+          "owner": "Mini audio worker (J2664); assembly J2035 held",
+          "waiting": "J2664 own score production and capable audio review under SCORE_SCOPE_J2663.json; J2035 remains held until files, provenance and gate evidence exist.",
+          "underway": false,
+          "note": "J2663 approved two Music v2 cues: wonder 180s + teach 360s, one take each, aggregate cap30000 subscription credits and £0 cash; duration-based cost/overage preflight required. No music generated or audio PASS claimed."
         },
         "thumbnails": {
           "status": "todo",
