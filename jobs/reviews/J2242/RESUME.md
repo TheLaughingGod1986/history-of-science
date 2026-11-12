@@ -111,3 +111,86 @@ explicitly testing encoded-window SPS/PPS compatibility, decoder reset and
 DTS ordering at both joins. Do not call source IDR proof output-join validation.
 Then implement the remaining source reconstructions and caption renderer, and
 run every mandatory final gate. These cannot fit the current unattended run.
+
+## Salon-only packet mux checkpoint — fourth run, 12 November 2026
+
+`_j2242_salon_splice.py` implements a bounded single-GOP packet replacement
+experiment, using PyAV 19.0.2 in `/Volumes/MiniWork/scratch/J2242-av-env`.
+It verifies the source/evidence hashes, checks both source IDR boundaries,
+requires replacement SPS/PPS/IDR and a no-B-frame native 24fps patch, checks
+the encoded patch against all 160 verified lossless intermediate frame hashes,
+and restores the original source codec via the next original IDR's in-band
+SPS/PPS. It copies the remaining original video packets and every audio packet,
+retaining integer PTS/DTS/duration; the replacement uses the original 1024-tick
+reorder delay with exact original frame PTS/durations. The old source is checked
+again after muxing. Nothing is written over a master.
+
+Lossless patch encoding (already completed):
+
+```sh
+ffmpeg -nostdin -v error -xerror \
+  -i /Volumes/MiniWork/scratch/J2242-salon-patch-v03/salon_patch.nut \
+  -map 0:v:0 -an -c:v libx264 -preset fast -qp 0 -pix_fmt yuv420p \
+  -x264-params 'bframes=0:repeat-headers=1:keyint=160:min-keyint=160:scenecut=0' \
+  -fps_mode passthrough -enc_time_base 1/12288 -video_track_timescale 12288 \
+  -n /Volumes/MiniWork/scratch/J2242-salon-encoded-v01.mp4
+```
+
+The final guarded script was run to `J2242-salon-mux-v02`. Its candidate is
+byte-identical to the earlier v01 candidate (SHA-256
+`0bfffbacbed21c9e9771723bfc0237b9827deb253e0b136e42d2746c60be092c`).
+Both are **salon-only experiments**, never `hos_008_master_v04.mp4`.
+The candidate contains 160 replacement video packets, 12,763 copied video
+packets and 25,296 copied original audio packets. `SALON_ENCODE_PIXEL_CHECK.json`
+records that every replacement encoded frame equals the intermediate.
+`SPLICE_TESTS.txt`: 19 tests OK (source, salon, preservation verifier and splice
+boundary guards). `CHECK_ALL_SPLICE.txt`: ALL CHECKS PASS. These are repository
+checks and bounded preservation evidence, not final film gates.
+
+Even with successful ffmpeg decoding, profile/parameter changes inside one
+AVC sample description need delivery-player compatibility review before using
+this approach for a finished master. It is not a phone-motion review, VO-sync
+measurement, loudness measurement, visual approval or full assembly. All other
+correction windows, source reconstructions, captions, letter animation, phone
+sheets, media gates and J2243/Chief review remain outstanding. No UAT, R2,
+YouTube, generation, spend or protected call was made.
+
+### First full preservation result: REJECTED
+
+The v01/v02 candidate above **fails** the mandatory unchanged-decoded-frame
+comparison. `SALON_SPLICE_FAILURE.json` records all 266 mismatches (first f8292,
+last f12845), despite exact copied video packet and audio packet equality.
+Do not use that candidate as a master or as an approved splice. A direct seek
+to f8292 decodes to the source hash, unlike continuous decoding, indicating a
+state-dependent problem; the cause is not proven.
+
+A second experiment encodes the same lossless intermediate with
+`...:scenecut=0:sps-id=1`, avoiding the original source's SPS identifier 0
+(all 113 source IDR samples were inspected). Its candidate is
+`/Volumes/MiniWork/scratch/J2242-salon-mux-sps1-v01/salon_only_experiment.mp4`,
+SHA-256 `74461c2640c5ea15f7e07e343a5ffe72eec15126e641ab90baf85c855cd931c1`.
+The patch also passes all 160 intermediate pixel hashes before mux.
+`SALON_MUX_SPS1.json` is only a mux record; the independent full verifier must
+still determine preservation. Do not infer acceptance from successful muxing.
+
+### Distinct-SPS result: also REJECTED
+
+The distinct-SPS candidate also fails at f8292; all unchanged mismatching frame
+indices are recorded in `SALON_SPS1_FAILURE.json`. Thus changing SPS ID is not
+a demonstrated fix. Both edited candidates stay rejected. Do not relax the
+preservation verifier or mark either candidate as v04.
+
+A **new identity-remux control** isolates mux effects from the replacement:
+`_j2242_remux_control.py` copies all original packets without replacing anything,
+then the same independent verifier uses an empty modification/envelope contract.
+This is distinct from the earlier self-check, which decoded v03 itself.
+It runs detached in tmux `J2242-remux-control`, from
+`/Users/benjaminoats/_desk/state/J2242/run-remux-control.sh`.
+Log: `/Users/benjaminoats/_desk/logs/J2242-remux-control.log`.
+Exit-code marker: `/Users/benjaminoats/_desk/logs/J2242-remux-control.done`.
+Missing marker means still running: do not start a second copy.
+Candidate: `/Volumes/MiniWork/scratch/J2242-identity-remux-v01/identity_remux.mp4`.
+Verification: `/Volumes/MiniWork/scratch/J2242-identity-remux-verify-v01/`.
+Read its exit marker and log first. If it fails with the same unchanged frames,
+investigate mux/demux/decoder state before altering the replacement encoder.
+All final-film assembly, original gates and review work remain outstanding.

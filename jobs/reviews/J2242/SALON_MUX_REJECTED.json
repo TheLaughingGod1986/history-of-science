@@ -1,0 +1,15 @@
+{
+  "status": "UNVERIFIED_SALON_ONLY_EXPERIMENT",
+  "candidate": "/Volumes/MiniWork/scratch/J2242-salon-mux-v02/salon_only_experiment.mp4",
+  "candidate_sha256": "0bfffbacbed21c9e9771723bfc0237b9827deb253e0b136e42d2746c60be092c",
+  "encoded_patch_sha256": "bb2a983473059f6cb8966ab3a5864743b08ccd068fb941f7a58e7c86df12252c",
+  "source_sha256": "cf1561c218bace7bc14ed3d625b0790a457027a90f392262f45ca7172723099b",
+  "replaced_packets": 160,
+  "copied_video_packets": 12763,
+  "copied_audio_packets": 25296,
+  "pyav_version": "19.0.2",
+  "output_preservation": "OUTSTANDING",
+  "vo_sync": "UNMEASURED",
+  "finished_master": false,
+  "approval": false
+}
