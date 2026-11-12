@@ -106,9 +106,9 @@ def parse(body: str) -> dict | None:
     return dict(re.findall(r"(\w+)=(\S+)", m.group(1)))
 
 
-def compose(frm: str, to: str, film: str, stage: str, status: str, body: str, images: list[str], reply_to: str = "") -> str:
+def compose(frm: str, to: str, film: str, stage: str, status: str, body: str, images: list[str], reply_to: str = "", supersedes: str = "") -> str:
     title = f"### {frm.title()} → {to.title()} · {film or '—'} · {stage or '—'} · {status}"
-    parts = [header(**{"from": frm, "to": to, "film": film, "stage": stage, "status": status, "reply_to": str(reply_to) if reply_to else ""}), title, "", body.strip()]
+    parts = [header(**{"from": frm, "to": to, "film": film, "stage": stage, "status": status, "reply_to": str(reply_to) if reply_to else "", "supersedes": str(supersedes) if supersedes else ""}), title, "", body.strip()]
     if images:
         parts += ["", *[f"![{Path(u.split('?')[0]).name}]({u})" for u in images]]
     return "\n".join(parts) + "\n"
@@ -335,14 +335,44 @@ def cmd_init(ns) -> None:
     print(f"Desk open: {url}")
 
 
+def refuse_stale_reply(message: dict, snapshot: list[dict], trusted: str) -> None:
+    """A Chief-chain reply must explicitly supersede the newest intervening post."""
+    if message.get("from") not in CHIEF_DESK_IDS or not message.get("reply_to"):
+        return
+    reply_to = int(message["reply_to"])
+    newer = []
+    for comment in snapshot:
+        if comment.get("user", {}).get("login", "").lower() != trusted.lower():
+            continue
+        other = parse(comment.get("body", "")) or {}
+        if (other.get("from") in CHIEF_DESK_IDS
+                and other.get("film", "") == message.get("film", "")
+                and other.get("stage", "") == message.get("stage", "")
+                and int(comment["id"]) > reply_to):
+            newer.append(int(comment["id"]))
+    if newer and message.get("supersedes") != str(max(newer)):
+        raise ValueError(f"Stale desk reply to {reply_to}: newest Chief-chain post on this film/stage "
+                         f"is {max(newer)}. Read it, then use --supersedes {max(newer)} to override explicitly.")
+
+
 def cmd_post(ns) -> None:
     r = repo()
     pr = desk_pr(r)
     body = Path(ns.body_file).read_text() if ns.body_file else (ns.body or "")
     if not body.strip():
         sys.exit("Empty message: pass --body or --body-file")
+    reply_to = getattr(ns, "reply_to", "")
+    supersedes = getattr(ns, "supersedes", "")
+    message = parse(header(**{"from": ns.frm, "film": ns.film, "stage": ns.stage,
+                              "reply_to": reply_to, "supersedes": supersedes}))
+    if ns.frm in CHIEF_DESK_IDS and reply_to:
+        trusted = os.environ.get("HOS_DESK_TRUSTED") or r.split("/")[0]
+        try:
+            refuse_stale_reply(message, comments(r, pr), trusted)
+        except ValueError as error:
+            sys.exit(str(error))
     urls = push_images(r, ns.film, ns.stage, ns.image) if ns.image else []
-    text = compose(ns.frm, ns.to, ns.film, ns.stage, ns.status, body, urls, getattr(ns, "reply_to", ""))
+    text = compose(ns.frm, ns.to, ns.film, ns.stage, ns.status, body, urls, reply_to, supersedes)
     f = HOME / "outbox.md"
     HOME.mkdir(parents=True, exist_ok=True)
     f.write_text(text)
@@ -699,6 +729,7 @@ def main() -> None:
     p.add_argument("--body-file")
     p.add_argument("--image", action="append", default=[])
     p.add_argument("--reply-to", type=int, help="original desk message id this outcome resolves")
+    p.add_argument("--supersedes", type=int, help="newest Chief-chain post explicitly superseded by this reply")
     p.set_defaults(fn=cmd_post)
     p = sub.add_parser("inbox")
     p.add_argument("--watch", type=int, default=0, help="poll every N seconds")
