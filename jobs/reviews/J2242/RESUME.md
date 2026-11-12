@@ -542,3 +542,36 @@ full preservation/audio/loudness/sync checks and mandatory film gates. Then
 J2614/J2243 and Chief review before UAT/R2/Studio. Continue this existing PR542
 worktree. All processes finished; no detached work, generation, spend or
 publication. The full remaining assembly exceeds this unattended run.
+
+## Table-body composite — thirteenth run, 12 November 2026
+
+Cursor worker. The six still-ambiguous caption rows were not rendered.
+Full-resolution upper-band comparison was finished for `02_tower_tilt`,
+`04_franklin_watches` and `02_sentry_box`. Even the low-resolution best frame
+differs from the master by thousands of MSE, and the adjacent-frame margin is
+smaller than that error (several comparisons flip the winner). That measurement
+does not identify a unique source frame. `02_knuckle_spark`, `14_royal_society`
+and `07_giant_spark` were not finished in the same pass. All six stay rejected.
+
+`_j2242_table_body.py` reconstructs only master f427..f544 from table source
+f000..f117. Master f423..f426 stay out: they map to table source f052 at
+low-resolution MSE about 3380, and the body does not guess a plate for them.
+`TABLE_BODY.json` records `/Volumes/MiniWork/scratch/J2242-table-body-v01/table_body.nut`,
+SHA-256 `3a58cf6160bfb05346d7d0f09365322472b9561ef1d6edbfb8330760997e7f65`.
+All 118 presentation timestamps match. Durations match in this intermediate.
+The picture above the caption band matches the clean source. The first body
+frame and each card midpoint carry a caption. There is no clear tail inside
+this body because `A JAR` ends on f544.
+
+Three 168×94 stills in that scratch folder's `stills/` read A KITE, A KEY and
+A JAR. This is a partial intermediate sheet, not the required 32-card sheet,
+and not a motion or audio review.
+
+57 J2242 unit tests OK (`TABLE_BODY_TESTS.txt`). No v04 master. Original
+masters and audio are unchanged. No spend, generation, UAT, R2 or YouTube
+action. No detached process.
+
+Remaining: six ambiguous caption rows, the four table lead-in frames, SAFE PATH
+DOWN on its plate, the foil check at f3353, bottom-text reviews, generalized
+packet mux, preservation and loudness/sync checks, and the mandatory film gates.
+Then J2243 and Chief review. Continue this PR #542 worktree.
