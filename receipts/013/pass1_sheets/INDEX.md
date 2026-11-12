@@ -1,6 +1,6 @@
 # 013 pass-1 contact sheets (review only)
 
-Rows 1–25, batches 01–05. One JPEG per take. Spacing is 0.5 s (start frame, then every 0.5 s, then the clip end).
+Rows 1–40, batches 01–08. One JPEG per take. Spacing is 0.5 s (start frame, then every 0.5 s, then the clip end).
 These are the archive sheets recompressed so each file stays under 600 KB (long edge ≤ 2400 px). `source_sheet_sha256` is the archive original. `committed_sha256` is the file in this folder.
 This branch is for sheet review. It is not merged.
 
@@ -31,5 +31,20 @@ This branch is for sheet review. It is not merged.
 | 23 | 05 | `P2:12b_tree_question` | `P2:12b_tree_question_take1_0.5s.jpg` | 75 | 561750 | 2400×1942 | `0568f6da96cda6b793dce5d0cfcad7d23766825369c995f47adec4cae5478367` |
 | 24 | 05 | `P3:02a_malthus_lamplight` | `P3:02a_malthus_lamplight_take1_0.5s.jpg` | 75 | 583490 | 2400×1942 | `adcf660493e9db3dadb47e961d9a7ebae8a894cb9713d6c3f06b40c21580a6f5` |
 | 25 | 05 | `P3:02b_notebook_d_open` | `P3:02b_notebook_d_open_take1_0.5s.jpg` | 80 | 560095 | 2400×1942 | `8edfcaafd4fdb94d09d9fc370d91df81119289dace71bcbb5d818e5065f1e22a` |
+| 26 | 06 | `P3:04a_drought_island_seeds` | `P3:04a_drought_island_seeds_take1_0.5s.jpg` | 65 | 559617 | 2400×1942 | `d029b3066dd302e57af68f27f62c92458eb8f55523cc1ad13e2f4da01f4cff2f` |
+| 27 | 06 | `P3:04b_finch_cracks_seed` | `P3:04b_finch_cracks_seed_take1_0.5s.jpg` | 65 | 582736 | 2400×1942 | `ce8c4d1e915a68faf7c12ff6984ef5fa0b6c498a98d58859ddd1983a6fb80a51` |
+| 28 | 06 | `P3:05a_chicks_deep_beaks` | `P3:05a_chicks_deep_beaks_take1_0.5s.jpg` | 70 | 580326 | 2400×1942 | `8b051ce8dd6fb10e44cf22a33e58e82f87c9dacfa37e15fe037017bb2df4b39e` |
+| 29 | 06 | `P3:05b_finches_next_generation` | `P3:05b_finches_next_generation_take1_0.5s.jpg` | 60 | 577756 | 2400×1942 | `2c635dc3a8aae0b7bb8ce57c9517c9889c478d475e8f0ed6c92ebfac1da091c5` |
+| 30 | 06 | `P3:07a_darwin_afraid_window` | `P3:07a_darwin_afraid_window_take1_0.5s.jpg` | 80 | 514565 | 2400×1942 | `815affb389b3b07606b4d6b5cc185acb2a097de840e04e49ff3593f5c17b06bd` |
+| 31 | 07 | `P3:07b_confessing_murder_letter` | `P3:07b_confessing_murder_letter_take1_0.5s.jpg` | 80 | 531013 | 2400×1942 | `e17fdd3bf5d72e437ef797a8ffefe1bb3c2ebff1b79ca00d021580602eefc932` |
+| 32 | 07 | `P3:08_emma_study` | `P3:08_emma_study_take1_0.5s.jpg` | 80 | 541444 | 2400×1942 | `8dd18222d5f6a7ea651ac7fcbf5c35c3832eb3b070e21b7b41b39cb6de0b768f` |
+| 33 | 07 | `P3:09b_emma_letter_cupboard` | `P3:09b_emma_letter_cupboard_take1_0.5s.jpg` | 80 | 587522 | 2400×1942 | `10940a719563649fab7bb912238ec8183081d72625e6b6b2dc030d9f96490655` |
+| 34 | 07 | `P3:10b_vestiges_torn_apart` | `P3:10b_vestiges_torn_apart_take1_0.5s.jpg` | 75 | 597204 | 2400×1942 | `a4ade93784c9d20ac8d8207d39b8e38f63a2528f6baa147eaa810f454b02c1d9` |
+| 35 | 07 | `P3:11_barnacles_microscope` | `P3:11_barnacles_microscope_take1_0.5s.jpg` | 65 | 568156 | 2400×1942 | `4ac4a83bc0f9d2c0ea1d7bd703664dd92b7e4853a098862fcd323eaf49b3da8b` |
+| 36 | 08 | `P3:13a_lyell_warning` | `P3:13a_lyell_warning_take1_0.5s.jpg` | 70 | 584949 | 2400×1942 | `cabf9962a1d42227f11758916bac635b43740b03036ea1bb46dc93207aa90860` |
+| 37 | 08 | `P3:13b_brass_globe_turn` | `P3:13b_brass_globe_turn_take1_0.5s.jpg` | 80 | 542463 | 2400×1942 | `4de3e44a58fca27c4d4d50f8f66ead2fb0b1764493d1cc4561f3a7ce8ceb15a8` |
+| 38 | 08 | `P4:02_wallace_collector` | `P4:02_wallace_collector_take1_0.5s.jpg` | 65 | 592896 | 2400×1942 | `ec16d0915bd243b3c7a6ab0a87376b8da944d3d16f8379fd8d72300e87d45f79` |
+| 39 | 08 | `P4:03a_helen_burning` | `P4:03a_helen_burning_take1_0.5s.jpg` | 80 | 582379 | 2400×1942 | `7439b9027077dc4c90d4b366f22c0b23dc891cef73300cc87d34f3202acec278` |
+| 40 | 08 | `P4:03b_crates_sinking` | `P4:03b_crates_sinking_take1_0.5s.jpg` | 80 | 543081 | 2400×1942 | `bc9d832f113456de6a0cd43732e87361c6d698ed2ab5d1ee669bbab20ff7bd09` |
 
 Clip and start-still hashes, duration and film window are in `INDEX.json`.
