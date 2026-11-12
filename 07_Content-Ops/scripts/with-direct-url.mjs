@@ -2,14 +2,14 @@
 /**
  * Ensure DIRECT_URL is set before Prisma CLI runs.
  *
- * Prisma schema keeps `directUrl = env("DIRECT_URL")` for Neon/pooler setups.
+ * prisma.config.ts selects DIRECT_URL for CLI migrations in pooler setups.
  * On Vercel, DATABASE_URL may be set alone — or (surprisingly) absent on Preview
  * while Prisma still reports only "DIRECT_URL not found" (Validation Error Count: 1)
  * even when DATABASE_URL is also missing.
  *
  * Rules:
  * - If DIRECT_URL is missing and DATABASE_URL (or alias) is present → default DIRECT_URL.
- * - Write DIRECT_URL into `.env` so Prisma dotenv sees it.
+ * - Pass resolved URLs to the child environment; never write credentials to disk.
  * - If `migrate deploy` is requested and no real DATABASE_URL exists → skip migrate
  *   (exit 0) so the Next build can still go Ready. Never skip migrate when a real
  *   DATABASE_URL is present. Never run `migrate dev` here.
@@ -56,22 +56,6 @@ function readFromEnvFiles(key) {
     if (value) return value;
   }
   return undefined;
-}
-
-function ensureDirectUrlInDotEnv(directUrl) {
-  const envPath = path.join(root, ".env");
-  const existing = readFileSafe(envPath);
-  if (parseEnvValue(existing, "DIRECT_URL")) return;
-
-  const prefix =
-    existing.length === 0 || existing.endsWith("\n") ? "" : "\n";
-  fs.appendFileSync(
-    envPath,
-    `${prefix}DIRECT_URL=${JSON.stringify(directUrl)}\n`,
-  );
-  console.log(
-    "[with-direct-url] Wrote DIRECT_URL to .env for Prisma dotenv loading",
-  );
 }
 
 function resolveDatabaseUrl() {
@@ -146,7 +130,6 @@ if (!directUrl && databaseUrl) {
 if (databaseUrl) process.env.DATABASE_URL = databaseUrl;
 if (directUrl) {
   process.env.DIRECT_URL = directUrl;
-  ensureDirectUrlInDotEnv(directUrl);
 }
 
 const env = {

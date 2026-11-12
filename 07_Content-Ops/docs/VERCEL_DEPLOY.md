@@ -88,7 +88,7 @@ npm run dev
 
 ## Notes
 
-- Prisma provider is `postgresql` with `url = env("DATABASE_URL")` and `directUrl = env("DIRECT_URL")` (kept for Neon/pooler). Build/postinstall wrap Prisma with `scripts/with-direct-url.mjs` so a missing `DIRECT_URL` does not fail the deploy when `DATABASE_URL` is set.
+- Prisma 7 keeps only the `postgresql` provider in the schema. `prisma.config.ts` selects `DIRECT_URL`, falling back to `DATABASE_URL`, for CLI migrations; the generated client uses `PrismaPg` with `DATABASE_URL` at runtime. Build/postinstall resolve URL aliases through `scripts/with-direct-url.mjs`, passing them to the child without writing credentials to disk. Client output in `src/generated/prisma` is generated during postinstall and build and is not tracked. The client uses CommonJS output to preserve the existing tsx CLI scripts and their `__dirname` usage.
 - Docs-only merges outside `07_Content-Ops` are skipped by `ignoreCommand` so they cannot redline production.
 - The Prisma client is cached on `globalThis` for Vercel serverless.
 - Affiliate Amazon `tag=` is stamped only from `AMAZON_ASSOCIATE_TAG` at redirect time — never hard-coded in source or seed.
