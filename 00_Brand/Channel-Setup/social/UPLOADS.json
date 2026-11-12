@@ -359,6 +359,17 @@
       "readBack": "YouTube Data API videos.list (read only), 30 Oct 2026 ~01:24Z: channel History of Science, public, no publishAt (already aired), title The Tied Arm That Proved Your Blood Circulates.",
       "note": "Registered late so the Studio Kanban can read the long's schedule (it had no UPLOADS row, so the HOS 005 card sat in In progress). Uploaded and scheduled in early Oct; nothing on YouTube was changed. After-air jobs: J0241 (Related on BW_CFAX-mxc + HOS Buffer) once public."
     },
+    "GHZDsiH7L7A": {
+      "kind": "long",
+      "film": "004",
+      "title": "What's Inside an Atom? Mostly Empty Space",
+      "packageDir": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/11_Upload-Package",
+      "publishAt": "2026-10-15T17:00:24Z",
+      "privacyStatus": "public",
+      "registeredAt": "2026-11-12T06:59:17Z",
+      "readBack": "Public watch page read-only check, 12 Nov 2026 ~06:58Z: title What's Inside an Atom? Mostly Empty Space; date text Oct 15, 2026. Repo Data API snapshot (02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/11_Upload-Package/s05_dalton/LIVE_AFTER.json) and WEEKLY_THUMB_2026-10-28/inventory.json: id GHZDsiH7L7A, privacyStatus/privacy public, publishedAt/publish_at 2026-10-15T17:00:24Z, channel History of Science. PIPELINE.json film 004 names long GHZDsiH7L7A aired Thu 15 Oct 18:00. Nothing on YouTube was changed.",
+      "note": "Registered late so the Studio board can read the long back (HOS:004 was scheduled in PIPELINE but the card sat in upcoming with no YouTube read-back, while orphan YT card HOS:YT:GHZDsiH7L7A showed Done). Title no longer matches PIPELINE's What's Really Inside an Atom?, so title-only matching failed. Uploaded/scheduled earlier; public since 15 Oct 2026. Nothing on YouTube was changed."
+    },
     "JyRjM-9Yc8g": {
       "kind": "short",
       "standalone": false,
