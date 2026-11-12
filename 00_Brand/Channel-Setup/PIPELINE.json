@@ -701,10 +701,10 @@
         "edit": {
           "status": "doing",
           "due": "2026-12-03",
-          "note": "J2563: five preliminary own-code rows delivered and mechanically verified on NAS (v03 graphics checkpoint); 21 free rows, full cues and rough remain. No film-stage approval.",
+          "note": "J2563: 13 preliminary code-graphic inputs delivered in two versioned batches (5 + 8), hashes/durations/cues mechanically verified on NAS. Four retimed teaching simplifications and short chapter headings need Chief review. All 13 archives and the internal rough remain unfinished; no film-stage approval.",
           "owner": "codex",
           "underway": false,
-          "waiting": "Next assembly worker: remaining 8 code rows + 13 archives, full cues, slates and rough. Five rendered rows need capable motion/layout review.",
+          "waiting": "Continue 13 archive composites, full overlay schedule and rough; Chief editorial/motion review of 13 preliminary graphics.",
           "since": "2026-11-12",
           "steps": [
             1,

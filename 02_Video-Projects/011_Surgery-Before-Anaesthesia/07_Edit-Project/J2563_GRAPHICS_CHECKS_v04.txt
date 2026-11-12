@@ -1,0 +1,4 @@
+PASS: eight additional preliminary graphic files match SHA-256, decode completely, are 1920x1080 at 30 fps, and match v03 durations within half a frame; source/raw word indices agree, cues do not overlap or reveal before their final anchor word, and chapter headings clear at the next spoken word.
+Partial checkpoint only. Editorial simplifications and brief chapter readability need Chief review. Thirteen archive rows, full cues and rough remain; no film-stage approval, audio assessment or moving-video review.
+
+Required check_all.sh for film 011: exit 0; ALL CHECKS PASS. Full local log: /Users/benjaminoats/_desk/J2563/check_all_v04.log. These repository checks do not approve rendered picture or sound.

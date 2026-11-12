@@ -242,3 +242,13 @@ Partial checkpoint only: 21 free rows, full overlays and timing rough remain unf
 Remaining: 8 code rows and all 13 archive/composite rows (21 free rows total); complete word-accurate overlay/credit schedule; 67 dependency slates; 535.30 s timing rough; verification of full coverage and applicable gates. Prior source acquisition 429 remains recorded: no new network requests or bypass attempted. The four still-unreconciled teaching graphics and chapter timing remain in scope; the 008–010 experiment is not approved for 011. P5:16b remains a dependency slate; no actual P1:07b source exists in this build, so its unused-tail claim remains unverified. Preserve the 11.13 s disjoint-use requirement / hypothetical 3.13 s overlap finding.
 
 Request review of these assets by a reviewer with demonstrated moving-video input; any audio assessment needs demonstrated audio input. Chief decides on the proposed visual simplifications. Next worker should continue this same branch/PR and manifest, not restart completed source work. This job is released at a clean partial checkpoint because the remaining assembly exceeds one worker run. Nothing needed from Ben.
+
+
+## J2563 v04 partial assembly checkpoint (12 Nov 2026)
+
+Eight additional preliminary graphics delivered to studio-live; see `07_Edit-Project/J2563_CHECKPOINT_v04.md` for editorial holds. No stage approval or UAT.
+
+```text
+PASS: eight additional preliminary graphic files match SHA-256, decode completely, are 1920x1080 at 30 fps, and match v03 durations within half a frame; source/raw word indices agree, cues do not overlap or reveal before their final anchor word, and chapter headings clear at the next spoken word.
+Partial checkpoint only. Editorial simplifications and brief chapter readability need Chief review. Thirteen archive rows, full cues and rough remain; no film-stage approval, audio assessment or moving-video review.
+```

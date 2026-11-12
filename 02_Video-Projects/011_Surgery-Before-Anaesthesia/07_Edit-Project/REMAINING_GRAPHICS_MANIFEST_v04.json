@@ -1,0 +1,246 @@
+{
+  "job": "J2563",
+  "scope": "eight remaining preliminary code graphics; no archives or rough",
+  "plan_sha256": "df11c9e00116c7a44390535e0fb569f682735d3f8ed7206ed45926f768ee7238",
+  "stt_sha256": "f7abac2d4bf6c58558eee80e6d201395640d0514988dcbeca795dd21dcf0d577",
+  "film_stage_approved": false,
+  "motion_review": false,
+  "audio_review": false,
+  "fps": 30,
+  "rows": [
+    {
+      "row_id": "P1:04b_cg_stopwatch_scale",
+      "path": "/Users/benjaminoats/_desk/J2563/free_graphics_v04/P1_04b_cg_stopwatch_scale.mp4",
+      "sha256": "2323e00e4a0f1547d4cb030f0f20d3200209479ad416fe62138703098836fb2d",
+      "frames": 70,
+      "plan_in_s": 26.78,
+      "plan_out_s": 29.1,
+      "plan_duration_s": 2.32,
+      "cues": [
+        {
+          "phrase": "changed",
+          "word_indices": [
+            77
+          ],
+          "raw_stt_indices": [
+            154
+          ],
+          "in_s": 27.62,
+          "evidence_end_s": 28.2,
+          "text": "changed",
+          "out_s": 29.1,
+          "kind": "spoken_label"
+        }
+      ],
+      "status": "preliminary_requires_Chief_editorial_and_motion_review"
+    },
+    {
+      "row_id": "P1:07a_cg_three_chapters_map",
+      "path": "/Users/benjaminoats/_desk/J2563/free_graphics_v04/P1_07a_cg_three_chapters_map.mp4",
+      "sha256": "f06001ded49c696c12cfc7cde4f50af4697a693dfeeb49d69f9f2fe1748bbea4",
+      "frames": 165,
+      "plan_in_s": 47.4,
+      "plan_out_s": 52.89,
+      "plan_duration_s": 5.49,
+      "cues": [
+        {
+          "phrase": "party trick",
+          "word_indices": [
+            146,
+            147
+          ],
+          "raw_stt_indices": [
+            292,
+            294
+          ],
+          "in_s": 50.94,
+          "evidence_end_s": 51.28,
+          "text": "party trick",
+          "out_s": 51.66,
+          "kind": "spoken_label"
+        },
+        {
+          "phrase": "country doctor",
+          "word_indices": [
+            149,
+            150
+          ],
+          "raw_stt_indices": [
+            298,
+            300
+          ],
+          "in_s": 52.2,
+          "evidence_end_s": 52.7,
+          "text": "country doctor",
+          "out_s": 52.89,
+          "kind": "spoken_label"
+        }
+      ],
+      "status": "preliminary_requires_Chief_editorial_and_motion_review"
+    },
+    {
+      "row_id": "P2:01_card_p02",
+      "path": "/Users/benjaminoats/_desk/J2563/free_graphics_v04/P2_01_card_p02.mp4",
+      "sha256": "089a7941da2372e83abcb19522be248ec770f0b239ffb019adfe9c9243fd8f9a",
+      "frames": 89,
+      "plan_in_s": 86.8,
+      "plan_out_s": 89.77,
+      "plan_duration_s": 2.97,
+      "cues": [
+        {
+          "text": "A Gas That Made People Laugh",
+          "in_s": 86.8,
+          "out_s": 87.6,
+          "word_indices": [],
+          "raw_stt_indices": [],
+          "reason": "Editorial chapter heading in measured interchapter breath",
+          "kind": "chapter_heading"
+        }
+      ],
+      "status": "preliminary_requires_Chief_editorial_and_motion_review"
+    },
+    {
+      "row_id": "P2:07b_cg_timeline_42yr",
+      "path": "/Users/benjaminoats/_desk/J2563/free_graphics_v04/P2_07b_cg_timeline_42yr.mp4",
+      "sha256": "e82d6b0491971a81d2e5c457e2515f9955d2b485020216a3adae5c61f656290a",
+      "frames": 222,
+      "plan_in_s": 147.5,
+      "plan_out_s": 154.9,
+      "plan_duration_s": 7.4,
+      "cues": [
+        {
+          "phrase": "March 1842",
+          "word_indices": [
+            368,
+            369
+          ],
+          "raw_stt_indices": [
+            736,
+            738
+          ],
+          "in_s": 149.1,
+          "evidence_end_s": 150.1,
+          "text": "March 1842",
+          "out_s": 152.5,
+          "kind": "spoken_label",
+          "reconciliation": "Wait until preceding Long WHO clears at 149.10 s."
+        }
+      ],
+      "status": "preliminary_requires_Chief_editorial_and_motion_review"
+    },
+    {
+      "row_id": "P3:01_card_p03",
+      "path": "/Users/benjaminoats/_desk/J2563/free_graphics_v04/P3_01_card_p03.mp4",
+      "sha256": "cd2ded1f3467b060c080a3b1a8729d68d7f7688f1fe8b3eb4e987fa73f13935a",
+      "frames": 73,
+      "plan_in_s": 175.66,
+      "plan_out_s": 178.08,
+      "plan_duration_s": 2.42,
+      "cues": [
+        {
+          "text": "This Is No Humbug",
+          "in_s": 175.66,
+          "out_s": 176.52,
+          "word_indices": [],
+          "raw_stt_indices": [],
+          "reason": "Editorial chapter heading in measured interchapter breath",
+          "kind": "chapter_heading"
+        }
+      ],
+      "status": "preliminary_requires_Chief_editorial_and_motion_review"
+    },
+    {
+      "row_id": "P4:01_card_p04",
+      "path": "/Users/benjaminoats/_desk/J2563/free_graphics_v04/P4_01_card_p04.mp4",
+      "sha256": "6b70c343968b8ed7a4b49e0e7d21ebb180714db1f0251369b1a50e5e2bfdfc80",
+      "frames": 107,
+      "plan_in_s": 271.88,
+      "plan_out_s": 275.46,
+      "plan_duration_s": 3.58,
+      "cues": [
+        {
+          "text": "The Fight Over Who Was First",
+          "in_s": 271.88,
+          "out_s": 272.7,
+          "word_indices": [],
+          "raw_stt_indices": [],
+          "reason": "Editorial chapter heading in measured interchapter breath",
+          "kind": "chapter_heading"
+        }
+      ],
+      "status": "preliminary_requires_Chief_editorial_and_motion_review"
+    },
+    {
+      "row_id": "P4:06a_cg_master_timeline",
+      "path": "/Users/benjaminoats/_desk/J2563/free_graphics_v04/P4_06a_cg_master_timeline.mp4",
+      "sha256": "ac7030cddbf82dcd98f141a7ebdf06d2ac7df49af6a8ed595d39f783a1343181",
+      "frames": 209,
+      "plan_in_s": 326.94,
+      "plan_out_s": 333.9,
+      "plan_duration_s": 6.96,
+      "cues": [
+        {
+          "phrase": "two years earlier",
+          "word_indices": [
+            781,
+            782,
+            783
+          ],
+          "raw_stt_indices": [
+            1562,
+            1564,
+            1566
+          ],
+          "in_s": 328.42,
+          "evidence_end_s": 328.82,
+          "text": "two years earlier",
+          "out_s": 329.44,
+          "kind": "spoken_label"
+        },
+        {
+          "phrase": "Crawford Long",
+          "word_indices": [
+            787,
+            788
+          ],
+          "raw_stt_indices": [
+            1574,
+            1576
+          ],
+          "in_s": 331.3,
+          "evidence_end_s": 331.68,
+          "text": "Crawford Long",
+          "out_s": 333.9,
+          "kind": "spoken_label"
+        }
+      ],
+      "status": "preliminary_requires_Chief_editorial_and_motion_review"
+    },
+    {
+      "row_id": "P5:01_card_p05",
+      "path": "/Users/benjaminoats/_desk/J2563/free_graphics_v04/P5_01_card_p05.mp4",
+      "sha256": "0268a2e2996c566d702afb34b00a08e5c347eb9325a5d68827f5e8c8c7124382",
+      "frames": 143,
+      "plan_in_s": 366.26,
+      "plan_out_s": 371.03,
+      "plan_duration_s": 4.77,
+      "cues": [
+        {
+          "text": "Across the Ocean",
+          "in_s": 366.26,
+          "out_s": 367.06,
+          "word_indices": [],
+          "raw_stt_indices": [],
+          "reason": "Editorial chapter heading in measured interchapter breath",
+          "kind": "chapter_heading"
+        }
+      ],
+      "status": "preliminary_requires_Chief_editorial_and_motion_review"
+    }
+  ],
+  "editorial_holds": [
+    "Four teaching graphics simplify inherited visual prose to fit actual words. Chief review required; these are not final DATA/SCALE compliance.",
+    "Chapter headings occupy only the actual 0.8–0.86 s breaths. Readability needs editorial review; no breathing time added.",
+    "No E2 opening approval claimed. Full overlay schedule still unfinished."
+  ]
+}
