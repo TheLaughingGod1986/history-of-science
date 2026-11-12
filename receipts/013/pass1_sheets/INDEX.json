@@ -1,0 +1,1603 @@
+{
+  "film": "013",
+  "pass": "v01_pass1",
+  "spacing_s": 0.5,
+  "note": "Recompressed contact sheets for review. Each file is the archive 0.5s sheet (start frame, 0.5s steps, clip end), long edge at most 2400 px, JPEG quality at most 80, under 600 KB. source_sheet_sha256 is the archive original. committed_sha256 is this file. No clips, no runner, no ledger.",
+  "rows": [
+    {
+      "n": 1,
+      "batch": 1,
+      "row_id": "P1:01_study_beaks",
+      "take": 1,
+      "file": "P1:01_study_beaks_take1_0.5s.jpg",
+      "source_sheet_sha256": "7433d35b21b9d7a72aef520c598293e52681a1df1a2ad1462f76ba5e89a8e314",
+      "committed_sha256": "6439585cae93049fb6feba2d139bc2d4ddb2042dd6e0df09cbb621a09cce1cce",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 80,
+      "bytes": 569739,
+      "duration_s": 7.916667,
+      "frames": 190,
+      "fps": 24.0,
+      "use_s": 3.8,
+      "film_window_s": [
+        0.0,
+        3.8
+      ],
+      "clip_sha256": "37a68217244b397eef0cdcbdfb0dfbb07fe7750f200134c5c400790e724c35c3",
+      "start_frame_sha256": "f369b1b6e225f65c97e99913b66912082948f7983de99f076779cfb0598ee5a3"
+    },
+    {
+      "n": 2,
+      "batch": 1,
+      "row_id": "P1:02_drawer_lock",
+      "take": 1,
+      "file": "P1:02_drawer_lock_take1_0.5s.jpg",
+      "source_sheet_sha256": "cfcdf75b205d46cc7aa6e11457735cffe3c6264c46a215a8de21b5de4d2f8bf2",
+      "committed_sha256": "9f8802778b4e69fe401aa592ee706edb7f42b4e5f6f8b48f939e4a55979a105b",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 80,
+      "bytes": 561218,
+      "duration_s": 7.916667,
+      "frames": 190,
+      "fps": 24.0,
+      "use_s": 4.1,
+      "film_window_s": [
+        3.8,
+        7.9
+      ],
+      "clip_sha256": "60dc3d6c432cc801205c785a4a7654d32327bdedfd3c6d84cf0d93bc0a90c12d",
+      "start_frame_sha256": "93491c6f5b43c420949fef2af687878b12b74ce087e0506ce8ec8f134e2ffb27"
+    },
+    {
+      "n": 3,
+      "batch": 1,
+      "row_id": "P1:03a_unlabelled_birds",
+      "take": 1,
+      "file": "P1:03a_unlabelled_birds_take1_0.5s.jpg",
+      "source_sheet_sha256": "187d7db3db4d183afabfda55157ba3bd76ea0a519c4dab29d2f2dcad36bef641",
+      "committed_sha256": "2a4db622d180ed77e68f8ce06f11344816f0b851a9bf7350d0aa255de4b6d153",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 80,
+      "bytes": 573387,
+      "duration_s": 7.916667,
+      "frames": 190,
+      "fps": 24.0,
+      "use_s": 4.0,
+      "film_window_s": [
+        7.9,
+        11.9
+      ],
+      "clip_sha256": "ab1982700cf5c959348716060fa63037fe76d7e93b29db5483c46a0a7b1112e9",
+      "start_frame_sha256": "a83ae6e4c50469e3812d943ad1eeb8adc4788a580fb44e354cd3fcab66734c7a"
+    },
+    {
+      "n": 4,
+      "batch": 1,
+      "row_id": "P1:03b_malay_packet",
+      "take": 1,
+      "file": "P1:03b_malay_packet_take1_0.5s.jpg",
+      "source_sheet_sha256": "f714778260adc3bc3a2e4692eea073229278b7dd633a86511b045a3d4d6cd8ea",
+      "committed_sha256": "2e459081d20eeeb0b674369e5c9b36bcf3ea984055a2c379f852dccf09efc7d8",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 75,
+      "bytes": 609147,
+      "duration_s": 7.916667,
+      "frames": 190,
+      "fps": 24.0,
+      "use_s": 4.12,
+      "film_window_s": [
+        11.9,
+        16.02
+      ],
+      "clip_sha256": "3545dfee7de7653831c33da0c0e57d92cac57da78cdc62151d1c4a841398756b",
+      "start_frame_sha256": "f25aeed5b4da439bb3e0b1e779fa34d2954a11ac5d4acb0c1ffc8dccebff63a7"
+    },
+    {
+      "n": 5,
+      "batch": 1,
+      "row_id": "P1:04a_packet_seal",
+      "take": 1,
+      "file": "P1:04a_packet_seal_take1_0.5s.jpg",
+      "source_sheet_sha256": "6b861b83b64c3f0b909a59ed5d8ffd95cdbdab4a695f99926adb866302b4a5bd",
+      "committed_sha256": "010ca29d74607564c3542d463f15da6efddf41c2d051ac6e1f0017e73517456c",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 80,
+      "bytes": 563374,
+      "duration_s": 7.916667,
+      "frames": 190,
+      "fps": 24.0,
+      "use_s": 2.98,
+      "film_window_s": [
+        16.02,
+        19.0
+      ],
+      "clip_sha256": "594d1e30140c7d3f9a6d60a565af38ba327521659bc8d7de2ec6a050e510d07f",
+      "start_frame_sha256": "032a963b978edeacef6e1239dae433ea3ebc694969be7acf167d0cdfd6bbc224"
+    },
+    {
+      "n": 6,
+      "batch": 2,
+      "row_id": "P1:04b_drawer_unlock",
+      "take": 1,
+      "file": "P1:04b_drawer_unlock_take1_0.5s.jpg",
+      "source_sheet_sha256": "64d7aac34b91f64ff0e2971e8cc6bc2000bf465b0fe0edf6e994cbbc7921794a",
+      "committed_sha256": "631d043657b524a4f3ca7ef4f6dc2742bf41fccc87c4b9b6e2ccca1ffc31167b",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 80,
+      "bytes": 475927,
+      "duration_s": 7.916667,
+      "frames": 190,
+      "fps": 24.0,
+      "use_s": 2.64,
+      "film_window_s": [
+        19.0,
+        21.64
+      ],
+      "clip_sha256": "90963509575e23d5cc0f5ca6ea8541b75e5c21fb8ca7fbb06d4ee6772f4064b6",
+      "start_frame_sha256": "340f21fd05d6361e6c8fbacd5830c1eaf8e723d26d11daa7e9890d1c411d42aa"
+    },
+    {
+      "n": 7,
+      "batch": 2,
+      "row_id": "P1:05a_museum_cases",
+      "take": 1,
+      "file": "P1:05a_museum_cases_take1_0.5s.jpg",
+      "source_sheet_sha256": "50e3e6e85c21a6a2db2ce99e62d026039326337e53d22dba98d98e1ae2cbd46a",
+      "committed_sha256": "701813cb4a72ef209f010eef2250a17cb262d50902b1d372a39c7d5c487c2f09",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 75,
+      "bytes": 597957,
+      "duration_s": 7.916667,
+      "frames": 190,
+      "fps": 24.0,
+      "use_s": 4.0,
+      "film_window_s": [
+        21.64,
+        25.64
+      ],
+      "clip_sha256": "36dc0c611c7ffa4dc1b36f093fca8f8d42ef88bc5101b238d1364ef2bca690e9",
+      "start_frame_sha256": "2844329f95c01d27451fc7a7a80a011757e2ea1a726751778f3ef9793a5992dc"
+    },
+    {
+      "n": 8,
+      "batch": 2,
+      "row_id": "P1:05b_museum_plaques",
+      "take": 1,
+      "file": "P1:05b_museum_plaques_take1_0.5s.jpg",
+      "source_sheet_sha256": "eba80f457b8fe9bb1b3f3da78dca1dceb04cfdffc47291847915344f277a744d",
+      "committed_sha256": "7783f1d221325d969b99674cdd48e82e5beba5c805c09935aec5a05441b26272",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 80,
+      "bytes": 538617,
+      "duration_s": 7.916667,
+      "frames": 190,
+      "fps": 24.0,
+      "use_s": 3.58,
+      "film_window_s": [
+        25.64,
+        29.22
+      ],
+      "clip_sha256": "e1b4148a8fdb466ea7ed74b214d9b417a4d352ca5358e3541919660276bd73e2",
+      "start_frame_sha256": "9ff6b8f946b973c90d34c6e3d44263bc0b46cc9442b8c51c7062670ce6aefe7c"
+    },
+    {
+      "n": 9,
+      "batch": 2,
+      "row_id": "P1:06_padlock_shut",
+      "take": 1,
+      "file": "P1:06_padlock_shut_take1_0.5s.jpg",
+      "source_sheet_sha256": "4967e6d869cbdb1efc1cb9481986cab55401705174ea57b53e58b92779902292",
+      "committed_sha256": "3259f925083d64ba9e859e169aee52d60a1eb3f58bd51daa2e7728698fec5042",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 80,
+      "bytes": 465388,
+      "duration_s": 7.916667,
+      "frames": 190,
+      "fps": 24.0,
+      "use_s": 4.22,
+      "film_window_s": [
+        29.22,
+        33.44
+      ],
+      "clip_sha256": "c4d2efca6ce54ea72f2610869d00d5a08c794adc601ab9a8e735564ce5fa93ad",
+      "start_frame_sha256": "82cf3af45e6f4bcc3032a7f49d2aa50c01d5d528b4700d5b2537eac92595d390"
+    },
+    {
+      "n": 10,
+      "batch": 2,
+      "row_id": "P1:07_darwin_1837_desk",
+      "take": 1,
+      "file": "P1:07_darwin_1837_desk_take1_0.5s.jpg",
+      "source_sheet_sha256": "59f59941661973ba184a8e079a0a2e97bc0bcdfdb5a968ab04eee34128092c34",
+      "committed_sha256": "2ba1bfda2fc62d604f9be16ac565034fed7417c34b2bbd0198822189746a6320",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 75,
+      "bytes": 547646,
+      "duration_s": 7.916667,
+      "frames": 190,
+      "fps": 24.0,
+      "use_s": 5.96,
+      "film_window_s": [
+        33.44,
+        39.4
+      ],
+      "clip_sha256": "944902b89eaa7e78bd45a79307bfe337729d55e8cff9cf45cc25b5f24bdbb863",
+      "start_frame_sha256": "87e61f0eea8705a30bb520f9fe98e44f95e706555de617859151e18b309dde63"
+    },
+    {
+      "n": 11,
+      "batch": 3,
+      "row_id": "P1:09_wallace_hut_split",
+      "take": 1,
+      "file": "P1:09_wallace_hut_split_take1_0.5s.jpg",
+      "source_sheet_sha256": "5ef47179c1723133770090bdf76d0ec7b06949123838b93c6729b3ab3778f414",
+      "committed_sha256": "e468d3c8b617162c2b09d18e113d04537a9a9a106f861a54cd3a94fee14b4049",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 75,
+      "bytes": 580460,
+      "duration_s": 7.916667,
+      "frames": 190,
+      "fps": 24.0,
+      "use_s": 7.78,
+      "film_window_s": [
+        54.3,
+        62.08
+      ],
+      "clip_sha256": "64ae099145dfa1c34279a8f1933dcce5cd870e7fc002bc9e1b144343d54882f0",
+      "start_frame_sha256": "c3035db5455ae55ff211a5d2f7758d49188e1c354cce911898b0d69dad377af5"
+    },
+    {
+      "n": 12,
+      "batch": 3,
+      "row_id": "P1:11_beagle_cabin_explorer",
+      "take": 1,
+      "file": "P1:11_beagle_cabin_explorer_take1_0.5s.jpg",
+      "source_sheet_sha256": "e317cabeb06f8b6229ff278804c464ffef2d30cbd6d165222e14900f1d324c9f",
+      "committed_sha256": "fb6beeb1084bac15620e5c79ce41443d1e01a4366d68a4e967911c7b5443d8fa",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 75,
+      "bytes": 611889,
+      "duration_s": 7.916667,
+      "frames": 190,
+      "fps": 24.0,
+      "use_s": 7.82,
+      "film_window_s": [
+        67.68,
+        75.5
+      ],
+      "clip_sha256": "923bed9d7cd90e2529405d0ed87b4a769f1037efaa531d45d95f4da3f69b9f10",
+      "start_frame_sha256": "9aaa712167f9ecd77ce71eaedd2aec07be45c13750d69cca96040f8a5d7eb8de"
+    },
+    {
+      "n": 13,
+      "batch": 3,
+      "row_id": "P2:02_galapagos_beach_myth",
+      "take": 1,
+      "file": "P2:02_galapagos_beach_myth_take1_0.5s.jpg",
+      "source_sheet_sha256": "589e53755ae051e606fb328df8004657a0f22f7fbe6ebc669e15efe66e7c63e6",
+      "committed_sha256": "1952336dddc91bfcea6f32a6898723ffff91b65c8d7de99e517768134028f588",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 50,
+      "bytes": 613061,
+      "duration_s": 7.916667,
+      "frames": 190,
+      "fps": 24.0,
+      "use_s": 7.22,
+      "film_window_s": [
+        77.0,
+        84.22
+      ],
+      "clip_sha256": "d3b2c39de4cc1a47140d353d33185993cada504d5a353a5d38669672b1a2aab7",
+      "start_frame_sha256": "0f751ebbf6edc54cc8f8fee6fb90641d194b392d26bbb93e28be749251dc340f"
+    },
+    {
+      "n": 14,
+      "batch": 3,
+      "row_id": "P2:03_unlabelled_bagging",
+      "take": 1,
+      "file": "P2:03_unlabelled_bagging_take1_0.5s.jpg",
+      "source_sheet_sha256": "026f621f6c2ba6db24e5d7e2760228f3c750bc39321bf13194948ddc2d8ac5ab",
+      "committed_sha256": "b940030b1049fc55cebf76c8abd50352c22d3abea9756f17c24a57db225a55e2",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 55,
+      "bytes": 612050,
+      "duration_s": 7.916667,
+      "frames": 190,
+      "fps": 24.0,
+      "use_s": 7.96,
+      "film_window_s": [
+        84.22,
+        92.18
+      ],
+      "clip_sha256": "8813d267291dff799d545a15cb32c684d8b0545e4be06511d077a951e9fe52ca",
+      "start_frame_sha256": "703c03faae35428a273a1643bd5a19f1639b6ffa64021a0c4c0f714e4ed858bf"
+    },
+    {
+      "n": 15,
+      "batch": 3,
+      "row_id": "P2:04_blank_tags_row",
+      "take": 1,
+      "file": "P2:04_blank_tags_row_take1_0.5s.jpg",
+      "source_sheet_sha256": "5855af33696939da05ba23c662004c883f511fd5e0a4c19977b199b25e44fb94",
+      "committed_sha256": "aead02c8165ce7fe83954e4682896ab8bed1a0161f35e64a9811502b56379308",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 80,
+      "bytes": 523282,
+      "duration_s": 7.916667,
+      "frames": 190,
+      "fps": 24.0,
+      "use_s": 5.22,
+      "film_window_s": [
+        92.18,
+        97.4
+      ],
+      "clip_sha256": "fb29ad16a297f8bb32eb06eb17099f64b6927a6d38c20a8dc734686b90005fd6",
+      "start_frame_sha256": "db1949f444947d14e9a7bd4e95c76f6940dcb041ce3e608e6ca546955304defe"
+    },
+    {
+      "n": 16,
+      "batch": 4,
+      "row_id": "P2:05_tortoise_overboard",
+      "take": 1,
+      "file": "P2:05_tortoise_overboard_take1_0.5s.jpg",
+      "source_sheet_sha256": "839c023d553dc8bcb45bcca613f8aff41902b98d80e912af7e62964fd4efef29",
+      "committed_sha256": "790b76bc3676080ec7562da9883366868823bc7d23d70d5ae2e2338c8c922271",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 60,
+      "bytes": 604624,
+      "duration_s": 7.916667,
+      "frames": 190,
+      "fps": 24.0,
+      "use_s": 7.16,
+      "film_window_s": [
+        97.4,
+        104.56
+      ],
+      "clip_sha256": "15dec197839c6d4314a7b0bdd8abfc5dee3316891c5fc95b1f3a164202be0b6a",
+      "start_frame_sha256": "023bc315d49c12987fad300647530bc75858221014b7bada3b4a00e66360f978"
+    },
+    {
+      "n": 17,
+      "batch": 4,
+      "row_id": "P2:06a_lawson_jetty",
+      "take": 1,
+      "file": "P2:06a_lawson_jetty_take1_0.5s.jpg",
+      "source_sheet_sha256": "27e89c744c12d4a1737a1596e8316c4ee01439d6d42e8f92a7e8b24bea12dcbf",
+      "committed_sha256": "2e92f016028c85f378a2627c66dd01af6b806e904f9a954897529d1d011778f4",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 65,
+      "bytes": 614099,
+      "duration_s": 8.0,
+      "frames": 192,
+      "fps": 24.0,
+      "use_s": 5.44,
+      "film_window_s": [
+        104.56,
+        110.0
+      ],
+      "clip_sha256": "3ad6f3b95a57e1804a58d8b5f3f5d47731283c98776ad905bb5e7e1b513989d9",
+      "start_frame_sha256": "fd4f0f379dad19c0e4844ac85084a2565e78fc5a8e35b27e3b4bfa583566c8e3"
+    },
+    {
+      "n": 18,
+      "batch": 4,
+      "row_id": "P2:07_darwin_notebook_wait",
+      "take": 1,
+      "file": "P2:07_darwin_notebook_wait_take1_0.5s.jpg",
+      "source_sheet_sha256": "9915ab0f8787bc2febe26eb4ddeeb518c1f1a77bc9ae0fadb4f092a8d2849f81",
+      "committed_sha256": "d8b4c0b86677f568c47ea3b0ba7887f318a6d1a0882ea0090bed77f8556cf064",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 75,
+      "bytes": 581745,
+      "duration_s": 7.916667,
+      "frames": 190,
+      "fps": 24.0,
+      "use_s": 6.02,
+      "film_window_s": [
+        114.86,
+        120.88
+      ],
+      "clip_sha256": "a897c9984f49800a59bb991d6461f3883df6a62a7f1bf11249f5c441a8a89ecd",
+      "start_frame_sha256": "353e387d2c21616a40758ad1b1fcec4bb466376468c138c12bf0f61f11559448"
+    },
+    {
+      "n": 19,
+      "batch": 4,
+      "row_id": "P2:08a_gould_sorting",
+      "take": 1,
+      "file": "P2:08a_gould_sorting_take1_0.5s.jpg",
+      "source_sheet_sha256": "5c01df6668d24a1f02fdbda183ba740b93ef2850b5924e52dce077537b0c668a",
+      "committed_sha256": "e811146d04e563bfa411e4696c217748275805d5a9f132be70c92275604da3b1",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 75,
+      "bytes": 612364,
+      "duration_s": 8.0,
+      "frames": 192,
+      "fps": 24.0,
+      "use_s": 6.22,
+      "film_window_s": [
+        120.88,
+        127.1
+      ],
+      "clip_sha256": "fa5f78e0cd1a9cbe4da35aa388868ec416ee320d27eaed5c06ea68d130117cd5",
+      "start_frame_sha256": "2ccbd9d13161af8a2e780634bd17fd7c40e4998f8445c66373ead6dcad4b2eda"
+    },
+    {
+      "n": 20,
+      "batch": 4,
+      "row_id": "P2:08b_gould_skins_closeup",
+      "take": 1,
+      "file": "P2:08b_gould_skins_closeup_take1_0.5s.jpg",
+      "source_sheet_sha256": "d9e0b66054818d4711d31b290032f7253d6677d80fce3b92f6a6e19e88c24249",
+      "committed_sha256": "f06b8fc02ba2e0e1c47e5da9734521d25369274963792dd2e4564c02eb83ec46",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 80,
+      "bytes": 551558,
+      "duration_s": 7.916667,
+      "frames": 190,
+      "fps": 24.0,
+      "use_s": 4.3,
+      "film_window_s": [
+        127.1,
+        131.4
+      ],
+      "clip_sha256": "47fc7ca5445b772b4e1f2201fd5fb5956e1de86bc3d02e4a4f4802473e011318",
+      "start_frame_sha256": "8f52b44f487808c61e9f3b1a3c95636da4a37d82376cc93d04e13aea3f3e18fa"
+    },
+    {
+      "n": 21,
+      "batch": 5,
+      "row_id": "P2:10a_explorer_shipmates",
+      "take": 1,
+      "file": "P2:10a_explorer_shipmates_take1_0.5s.jpg",
+      "source_sheet_sha256": "181bb413f79954c4e45fc7e43b0c61e6e0edb2a1205050f9a8e5d25528499a4a",
+      "committed_sha256": "7e4b4c4f2b30ed025373475057894271f151b02053e33410d193599a9d3793ff",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 65,
+      "bytes": 574855,
+      "duration_s": 7.916667,
+      "frames": 190,
+      "fps": 24.0,
+      "use_s": 6.18,
+      "film_window_s": [
+        143.72,
+        149.9
+      ],
+      "clip_sha256": "4c72bdc24dd89a9cfedbc91caa2224b63a3d8231691aea6d597e1adfb4001fce",
+      "start_frame_sha256": "422123ef6d8082dc2fc96919ccbb406ae7648f6bb3f4e3d07603ac6e3febb9f5"
+    },
+    {
+      "n": 22,
+      "batch": 5,
+      "row_id": "P2:11_island_split_vision",
+      "take": 1,
+      "file": "P2:11_island_split_vision_take1_0.5s.jpg",
+      "source_sheet_sha256": "e1c37362e6903883a0de0a9d5417f734df43e47de5f2a9fad139ee9645c51038",
+      "committed_sha256": "e6465dcc65d6cec4184364b0f0337bf2b26ac1760148779839778fe06235134f",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 70,
+      "bytes": 585229,
+      "duration_s": 7.916667,
+      "frames": 190,
+      "fps": 24.0,
+      "use_s": 8.0,
+      "film_window_s": [
+        153.2,
+        161.2
+      ],
+      "clip_sha256": "4d0ae5f4484b699038efe4f864fc3314a1b55a0d28b7ad12d28da7e463c7444f",
+      "start_frame_sha256": "6d6ed4e85753cf4ccdaf1be596600d9b30ce6b9784306fd5cd92125ed52dcd4d"
+    },
+    {
+      "n": 23,
+      "batch": 5,
+      "row_id": "P2:12b_tree_question",
+      "take": 1,
+      "file": "P2:12b_tree_question_take1_0.5s.jpg",
+      "source_sheet_sha256": "0568f6da96cda6b793dce5d0cfcad7d23766825369c995f47adec4cae5478367",
+      "committed_sha256": "c2304bee900eca665414f4b47cc4ebb57d2cd43cae50c17003635116149df93f",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 75,
+      "bytes": 561750,
+      "duration_s": 7.916667,
+      "frames": 190,
+      "fps": 24.0,
+      "use_s": 4.48,
+      "film_window_s": [
+        166.6,
+        171.08
+      ],
+      "clip_sha256": "7958d7a6ccde9113b76eb7228f616915f41544a3474c37b80de6893a08809269",
+      "start_frame_sha256": "6ba0c1ce058dde5cd5895d38590ba07826750a85b6b40859461d67d6979bf092"
+    },
+    {
+      "n": 24,
+      "batch": 5,
+      "row_id": "P3:02a_malthus_lamplight",
+      "take": 1,
+      "file": "P3:02a_malthus_lamplight_take1_0.5s.jpg",
+      "source_sheet_sha256": "adcf660493e9db3dadb47e961d9a7ebae8a894cb9713d6c3f06b40c21580a6f5",
+      "committed_sha256": "458fe2bd24f3786205854d3af7777937fa720bc3de163ca7aaf1c3474f204b1e",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 75,
+      "bytes": 583490,
+      "duration_s": 7.916667,
+      "frames": 190,
+      "fps": 24.0,
+      "use_s": 6.22,
+      "film_window_s": [
+        172.58,
+        178.8
+      ],
+      "clip_sha256": "20f4cb58fab0fdca4e01fee5a530ad924263713bacf1bcaaa523df3d1657a486",
+      "start_frame_sha256": "5564f50e5b760b9e5177fea02e0272b4913c1544b347dd032ec0b1358d2defd9"
+    },
+    {
+      "n": 25,
+      "batch": 5,
+      "row_id": "P3:02b_notebook_d_open",
+      "take": 1,
+      "file": "P3:02b_notebook_d_open_take1_0.5s.jpg",
+      "source_sheet_sha256": "8edfcaafd4fdb94d09d9fc370d91df81119289dace71bcbb5d818e5065f1e22a",
+      "committed_sha256": "6d4fb4863864cc55ee6fe0bcdb00d5bd26954c7a792edbf98b451123d30df969",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 80,
+      "bytes": 560095,
+      "duration_s": 7.916667,
+      "frames": 190,
+      "fps": 24.0,
+      "use_s": 3.9,
+      "film_window_s": [
+        178.8,
+        182.7
+      ],
+      "clip_sha256": "5ede492e92cdbbf2e5b434ac6994033b60cbce42db14e5563905162b7d17a3d7",
+      "start_frame_sha256": "7e30c700ae4957a5f5342fe1aeee5c4d837d78bae84570536314078847d76a8d"
+    },
+    {
+      "n": 26,
+      "batch": 6,
+      "row_id": "P3:04a_drought_island_seeds",
+      "take": 1,
+      "file": "P3:04a_drought_island_seeds_take1_0.5s.jpg",
+      "source_sheet_sha256": "d029b3066dd302e57af68f27f62c92458eb8f55523cc1ad13e2f4da01f4cff2f",
+      "committed_sha256": "5b894873639138bc996774779fc2e2ba1cbdf92a033f822a8537dbfc3809b62f",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 65,
+      "bytes": 559617,
+      "duration_s": 7.916667,
+      "frames": 190,
+      "fps": 24.0,
+      "use_s": 5.2,
+      "film_window_s": [
+        192.1,
+        197.3
+      ],
+      "clip_sha256": "a943ffaaa083d456c32097713f2a58106a69d149df94e89fe9db92f2fb96e56b",
+      "start_frame_sha256": "9f6c7b85ac1b64f3dc6db89683727baa7eb3dd86d1407e0f0faaaf64583db790"
+    },
+    {
+      "n": 27,
+      "batch": 6,
+      "row_id": "P3:04b_finch_cracks_seed",
+      "take": 1,
+      "file": "P3:04b_finch_cracks_seed_take1_0.5s.jpg",
+      "source_sheet_sha256": "ce8c4d1e915a68faf7c12ff6984ef5fa0b6c498a98d58859ddd1983a6fb80a51",
+      "committed_sha256": "684733bad8cc6d0206f8c25bc29d75179c04b67c6d2c5e8ea49eab5bb1ab28f0",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 65,
+      "bytes": 582736,
+      "duration_s": 7.916667,
+      "frames": 190,
+      "fps": 24.0,
+      "use_s": 4.66,
+      "film_window_s": [
+        197.3,
+        201.96
+      ],
+      "clip_sha256": "575014b1213eeac34e99e88eb33b06243208fc25934a8b5d54f4d87494599336",
+      "start_frame_sha256": "d405dc98d72bc8cf5f2ec633bb2c4fbc112045dd6505bf6d325a731483d85459"
+    },
+    {
+      "n": 28,
+      "batch": 6,
+      "row_id": "P3:05a_chicks_deep_beaks",
+      "take": 1,
+      "file": "P3:05a_chicks_deep_beaks_take1_0.5s.jpg",
+      "source_sheet_sha256": "8b051ce8dd6fb10e44cf22a33e58e82f87c9dacfa37e15fe037017bb2df4b39e",
+      "committed_sha256": "119c27339085f6b696235ff60a2db398c2a8ddcbe1a75a1685590c443777d6eb",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 70,
+      "bytes": 580326,
+      "duration_s": 7.916667,
+      "frames": 190,
+      "fps": 24.0,
+      "use_s": 4.54,
+      "film_window_s": [
+        201.96,
+        206.5
+      ],
+      "clip_sha256": "4425168f215dbb043e98fc8cacf793efd9464a98fdcad3938ec6f436de78424c",
+      "start_frame_sha256": "e654718106e025c1855f5dfe39f9b6d49f12576c6e63485fa699a6869511b400"
+    },
+    {
+      "n": 29,
+      "batch": 6,
+      "row_id": "P3:05b_finches_next_generation",
+      "take": 1,
+      "file": "P3:05b_finches_next_generation_take1_0.5s.jpg",
+      "source_sheet_sha256": "2c635dc3a8aae0b7bb8ce57c9517c9889c478d475e8f0ed6c92ebfac1da091c5",
+      "committed_sha256": "5518fb5e5c734ce7073193b5ed73af4316c02ecdbcf16ebc9fed566bd899f8f6",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 60,
+      "bytes": 577756,
+      "duration_s": 7.916667,
+      "frames": 190,
+      "fps": 24.0,
+      "use_s": 5.26,
+      "film_window_s": [
+        206.5,
+        211.76
+      ],
+      "clip_sha256": "0a62a9536568604611f05d2537c0e9f3aeba242f04c04abc5fb1835a7895dff4",
+      "start_frame_sha256": "c6e5ff090e1957005f761ab063d8aff53c326b9fc7efcf74a28c5b817a7cdf13"
+    },
+    {
+      "n": 30,
+      "batch": 6,
+      "row_id": "P3:07a_darwin_afraid_window",
+      "take": 1,
+      "file": "P3:07a_darwin_afraid_window_take1_0.5s.jpg",
+      "source_sheet_sha256": "815affb389b3b07606b4d6b5cc185acb2a097de840e04e49ff3593f5c17b06bd",
+      "committed_sha256": "04999371e93c5fa0f06e464b81ce173d2fd633fb2112192d5ac264b276b775d6",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 80,
+      "bytes": 514565,
+      "duration_s": 7.916667,
+      "frames": 190,
+      "fps": 24.0,
+      "use_s": 4.58,
+      "film_window_s": [
+        219.32,
+        223.9
+      ],
+      "clip_sha256": "95a93ef7c184718db5ec595478cd8cd002e3d1915848d82bdcff6b4fff60d779",
+      "start_frame_sha256": "3665b4590720e6c0dbeebb3099dd9d1597b775d8428a58a7d326aecb5ad71062"
+    },
+    {
+      "n": 31,
+      "batch": 7,
+      "row_id": "P3:07b_confessing_murder_letter",
+      "take": 1,
+      "file": "P3:07b_confessing_murder_letter_take1_0.5s.jpg",
+      "source_sheet_sha256": "e17fdd3bf5d72e437ef797a8ffefe1bb3c2ebff1b79ca00d021580602eefc932",
+      "committed_sha256": "8deb108481cacd3986f1d58f1d4f10b0113c8995a4448a26ddfa9bd1480be9c4",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 80,
+      "bytes": 531013,
+      "duration_s": 7.916667,
+      "frames": 190,
+      "fps": 24.0,
+      "use_s": 5.44,
+      "film_window_s": [
+        223.9,
+        229.34
+      ],
+      "clip_sha256": "8b7e15d52cab8480be9a6d3ceb37e845cb4d6be84ee5cc832522f7dc79c5bdb3",
+      "start_frame_sha256": "7c80d3d7456fc5e32062a47b5aed3a5371bfa8b788ec2fcb5432a331630fa98f"
+    },
+    {
+      "n": 32,
+      "batch": 7,
+      "row_id": "P3:08_emma_study",
+      "take": 1,
+      "file": "P3:08_emma_study_take1_0.5s.jpg",
+      "source_sheet_sha256": "8dd18222d5f6a7ea651ac7fcbf5c35c3832eb3b070e21b7b41b39cb6de0b768f",
+      "committed_sha256": "6398b09c9b931d651fe6a1d5fce06dbc2c0f18518fd985fbebebee6935bc5972",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 80,
+      "bytes": 541444,
+      "duration_s": 8.0,
+      "frames": 192,
+      "fps": 24.0,
+      "use_s": 4.86,
+      "film_window_s": [
+        229.34,
+        234.2
+      ],
+      "clip_sha256": "cd6bf7c794a47c81efea3f1a72d56113720400ad1e10a514f4fd178d28f4c16c",
+      "start_frame_sha256": "852a4ac006c014377431a91196a3ea6c0f19da4ce94e8aca6f72d4af1ecfcb3f"
+    },
+    {
+      "n": 33,
+      "batch": 7,
+      "row_id": "P3:09b_emma_letter_cupboard",
+      "take": 1,
+      "file": "P3:09b_emma_letter_cupboard_take1_0.5s.jpg",
+      "source_sheet_sha256": "10940a719563649fab7bb912238ec8183081d72625e6b6b2dc030d9f96490655",
+      "committed_sha256": "553ca5878030358428092ff49693f256934d22f9e69a86eaa4fdd8b20f010a4f",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 80,
+      "bytes": 587522,
+      "duration_s": 7.916667,
+      "frames": 190,
+      "fps": 24.0,
+      "use_s": 5.36,
+      "film_window_s": [
+        240.64,
+        246.0
+      ],
+      "clip_sha256": "6187e461f0e9b151ca26fa4dfaea7fc368811b04c917bde035c82e16511e33e1",
+      "start_frame_sha256": "ad28026bdd31ac0a570269fbf890b8c6c55deb2b95c28d9021612a7364e4bb4c"
+    },
+    {
+      "n": 34,
+      "batch": 7,
+      "row_id": "P3:10b_vestiges_torn_apart",
+      "take": 1,
+      "file": "P3:10b_vestiges_torn_apart_take1_0.5s.jpg",
+      "source_sheet_sha256": "a4ade93784c9d20ac8d8207d39b8e38f63a2528f6baa147eaa810f454b02c1d9",
+      "committed_sha256": "ff53f8fbd015f0a22c3e44022e3fc17f0c1a2fe88594ddb469685bcdfa23b599",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 75,
+      "bytes": 597204,
+      "duration_s": 7.916667,
+      "frames": 190,
+      "fps": 24.0,
+      "use_s": 4.56,
+      "film_window_s": [
+        250.2,
+        254.76
+      ],
+      "clip_sha256": "cf820f0e63a0dc92b824cf96cc59bfeedb17ec22c418ae556d99dec5156ae383",
+      "start_frame_sha256": "4b296eaaba07fe52b632460d8df3fe38b633d2f103010188c550c3720d5cf9fd"
+    },
+    {
+      "n": 35,
+      "batch": 7,
+      "row_id": "P3:11_barnacles_microscope",
+      "take": 1,
+      "file": "P3:11_barnacles_microscope_take1_0.5s.jpg",
+      "source_sheet_sha256": "4ac4a83bc0f9d2c0ea1d7bd703664dd92b7e4853a098862fcd323eaf49b3da8b",
+      "committed_sha256": "c672a2d534130435f24b421653ed9457437b88fb3ee412aa83cf731a0783ade9",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 65,
+      "bytes": 568156,
+      "duration_s": 7.916667,
+      "frames": 190,
+      "fps": 24.0,
+      "use_s": 6.74,
+      "film_window_s": [
+        254.76,
+        261.5
+      ],
+      "clip_sha256": "a9311278fb722a3c5effc619b66ba9e7ecd86bfa72c13bf16c90afad425a79f3",
+      "start_frame_sha256": "0a5444723b567efc2ab82811a4addbbe3f28df8f5d486894500265461f1e563e"
+    },
+    {
+      "n": 36,
+      "batch": 8,
+      "row_id": "P3:13a_lyell_warning",
+      "take": 1,
+      "file": "P3:13a_lyell_warning_take1_0.5s.jpg",
+      "source_sheet_sha256": "cabf9962a1d42227f11758916bac635b43740b03036ea1bb46dc93207aa90860",
+      "committed_sha256": "05e8aef4ddfa3168215be06b0b92d51ed65c9b25b6c4dc560b469f8c9a5c19cf",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 70,
+      "bytes": 584949,
+      "duration_s": 7.916667,
+      "frames": 190,
+      "fps": 24.0,
+      "use_s": 5.62,
+      "film_window_s": [
+        267.48,
+        273.1
+      ],
+      "clip_sha256": "2c8b14f9967d62f26f8b56368617ac0fa25cc32c5a29aa8b231c4b60127e9aa4",
+      "start_frame_sha256": "88313fae5ca6e0712a5f3926dd2dc67f900953d78180fe077391518c55683f70"
+    },
+    {
+      "n": 37,
+      "batch": 8,
+      "row_id": "P3:13b_brass_globe_turn",
+      "take": 1,
+      "file": "P3:13b_brass_globe_turn_take1_0.5s.jpg",
+      "source_sheet_sha256": "4de3e44a58fca27c4d4d50f8f66ead2fb0b1764493d1cc4561f3a7ce8ceb15a8",
+      "committed_sha256": "e8fc9ed15d7c4b23f4a8a85861338210a947f8c4bd9d67062da02eec96feeafc",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 80,
+      "bytes": 542463,
+      "duration_s": 7.916667,
+      "frames": 190,
+      "fps": 24.0,
+      "use_s": 3.16,
+      "film_window_s": [
+        273.1,
+        276.26
+      ],
+      "clip_sha256": "780f0ddcea03ef5157e3388536e920fb36aaece0bf4abe2dc1aa3940c441a548",
+      "start_frame_sha256": "1823c16b5345f26f49e682ce8aa7c0b25de2b91a6488d857d53e78882cfd6d48"
+    },
+    {
+      "n": 38,
+      "batch": 8,
+      "row_id": "P4:02_wallace_collector",
+      "take": 1,
+      "file": "P4:02_wallace_collector_take1_0.5s.jpg",
+      "source_sheet_sha256": "ec16d0915bd243b3c7a6ab0a87376b8da944d3d16f8379fd8d72300e87d45f79",
+      "committed_sha256": "978bb3a1493ff7fd28bbca77affb97794ea626f158d269b831f793e62bc728d9",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 65,
+      "bytes": 592896,
+      "duration_s": 7.916667,
+      "frames": 190,
+      "fps": 24.0,
+      "use_s": 5.94,
+      "film_window_s": [
+        277.76,
+        283.7
+      ],
+      "clip_sha256": "6a41beae9fc9cc9f894ecfc2758ce82b41b0ac700546a04ebafd48cb4186aa14",
+      "start_frame_sha256": "5bc3ed66c406332163f8a9c233eed3f8c4bbb6bfc211e6adb504c5cb46f7c84b"
+    },
+    {
+      "n": 39,
+      "batch": 8,
+      "row_id": "P4:03a_helen_burning",
+      "take": 1,
+      "file": "P4:03a_helen_burning_take1_0.5s.jpg",
+      "source_sheet_sha256": "7439b9027077dc4c90d4b366f22c0b23dc891cef73300cc87d34f3202acec278",
+      "committed_sha256": "f6578a382b02a2434493fa73911296af183b6b1f8a3ce40e618aa334f2564f45",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 80,
+      "bytes": 582379,
+      "duration_s": 7.916667,
+      "frames": 190,
+      "fps": 24.0,
+      "use_s": 6.2,
+      "film_window_s": [
+        283.7,
+        289.9
+      ],
+      "clip_sha256": "e14296654ffc8da956cd6db5d767eaab056a82f343ce44e564427432eb149928",
+      "start_frame_sha256": "152fed7a8a4eddd5c3c4243a49798ece10e4604cfaebc138f4b093ecdfb344cd"
+    },
+    {
+      "n": 40,
+      "batch": 8,
+      "row_id": "P4:03b_crates_sinking",
+      "take": 1,
+      "file": "P4:03b_crates_sinking_take1_0.5s.jpg",
+      "source_sheet_sha256": "bc9d832f113456de6a0cd43732e87361c6d698ed2ab5d1ee669bbab20ff7bd09",
+      "committed_sha256": "ce478e16a5ce20d83434ce56dbfe831ea61c2db15f5365f7d24a1dd11dca008b",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 80,
+      "bytes": 543081,
+      "duration_s": 7.916667,
+      "frames": 190,
+      "fps": 24.0,
+      "use_s": 2.98,
+      "film_window_s": [
+        289.9,
+        292.88
+      ],
+      "clip_sha256": "ab90ba926e16f9e3d4319c1836a6d5701b90e9a55a90ac5e46ebfccfa20e61ed",
+      "start_frame_sha256": "2bc59ccc1d127b8c58204777534eb98acb9b0a5f32de828dbdbfb3400817f11c"
+    },
+    {
+      "n": 41,
+      "batch": 9,
+      "row_id": "P4:04_open_boat_ten_days",
+      "take": 1,
+      "file": "P4:04_open_boat_ten_days_take1_0.5s.jpg",
+      "source_sheet_sha256": "296e7da5fb8d2766bb5ad24b4832e8671973b0eb26162a3fbe521415bcb3b103",
+      "committed_sha256": "a7467f5b376e073d41c7a1c3213445ad60ac9f6c07a00de89fcdeaf8e9b1da1a",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 70,
+      "bytes": 580590,
+      "duration_s": 7.916667,
+      "frames": 190,
+      "fps": 24.0,
+      "use_s": 5.24,
+      "film_window_s": [
+        292.88,
+        298.12
+      ],
+      "clip_sha256": "66781e8f6ed37db653f445c58d7b4aac60fa915f9a00c6f00377e1ccb6569390",
+      "start_frame_sha256": "1d4ac60d2078d4614f785090e66c7bae0aa253da90cb3a702b6e51925a2c6004"
+    },
+    {
+      "n": 42,
+      "batch": 9,
+      "row_id": "P4:06a_wallace_fever",
+      "take": 1,
+      "file": "P4:06a_wallace_fever_take1_0.5s.jpg",
+      "source_sheet_sha256": "1b7173e4ace6cf2797464d158dfbedce01412dc8d0ed46c38a7354fee51a6daa",
+      "committed_sha256": "86d391b607e309470d796bd9f09bdbeb852ae514de69d915b0d5bc2b1cca559d",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 70,
+      "bytes": 578806,
+      "duration_s": 7.916667,
+      "frames": 190,
+      "fps": 24.0,
+      "use_s": 6.68,
+      "film_window_s": [
+        308.62,
+        315.3
+      ],
+      "clip_sha256": "9009bd468846095522ca1b7814c8bb22a036d192745b3a3f230c6394cc77211c",
+      "start_frame_sha256": "7a9cef5b0cf3052866bb7fe0879ae74101082172b5db0fc15aa9a63e17d2d59b"
+    },
+    {
+      "n": 43,
+      "batch": 9,
+      "row_id": "P4:07a_wallace_writes_hut",
+      "take": 1,
+      "file": "P4:07a_wallace_writes_hut_take1_0.5s.jpg",
+      "source_sheet_sha256": "f9e05430b0c934ba724fd1ca171bfb92d46fd234492beb21eb73f99f6a50b6f2",
+      "committed_sha256": "51cf835299b27ac800a6727a9f725c6abfb280f11d5c289e3c19a9f194f31561",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 75,
+      "bytes": 586350,
+      "duration_s": 7.916667,
+      "frames": 190,
+      "fps": 24.0,
+      "use_s": 4.64,
+      "film_window_s": [
+        321.36,
+        326.0
+      ],
+      "clip_sha256": "cf336394e0f48cc9f1ccabd747cd98acdf42eedf7cd34e8929dfa073f1d01a59",
+      "start_frame_sha256": "c015c7bb4420201415866769f6ba054ed0dd73d93a4fce1600e1cc24c70b95dc"
+    },
+    {
+      "n": 44,
+      "batch": 9,
+      "row_id": "P4:08_midpoint_twist_packet",
+      "take": 1,
+      "file": "P4:08_midpoint_twist_packet_take1_0.5s.jpg",
+      "source_sheet_sha256": "800d0ed382023612534812eeafd2bd8f39873b02cc3f863478728d5a92718c5a",
+      "committed_sha256": "d962838ccc0f2fe0ece76db311aec2956658b42329885f43c75e9c8e4f881d9f",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 70,
+      "bytes": 571295,
+      "duration_s": 7.916667,
+      "frames": 190,
+      "fps": 24.0,
+      "use_s": 6.62,
+      "film_window_s": [
+        330.68,
+        337.3
+      ],
+      "clip_sha256": "bad6741aececb51d2d77db09c7a633925375537c9cc2428a9fcb6bc4dcda57df",
+      "start_frame_sha256": "4739310cda94d99f196c4c621caec76ab40102fcecce3e163a24bf6039036f7b"
+    },
+    {
+      "n": 45,
+      "batch": 9,
+      "row_id": "P4:09a_darwin_reads_wallace",
+      "take": 1,
+      "file": "P4:09a_darwin_reads_wallace_take1_0.5s.jpg",
+      "source_sheet_sha256": "86971ea385e1a8137469d1b56788ec175916f531cbb28340f0ec20df07d1ab0c",
+      "committed_sha256": "083dc53d9b407a2adee172b831fd15e0b9fddcfc396a6f13b75e350524a66edb",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 75,
+      "bytes": 532467,
+      "duration_s": 7.916667,
+      "frames": 190,
+      "fps": 24.0,
+      "use_s": 6.9,
+      "film_window_s": [
+        337.3,
+        344.2
+      ],
+      "clip_sha256": "d167fdaa96d52e661a861052daea49d84a59ce17bfb03ded0a6591c861598fc2",
+      "start_frame_sha256": "ed4dcee94c18822da008d8226161701358b35fc8171d44521c64ea5e97f38a50"
+    },
+    {
+      "n": 46,
+      "batch": 10,
+      "row_id": "P4:09b_smashed_letter_pen",
+      "take": 1,
+      "file": "P4:09b_smashed_letter_pen_take1_0.5s.jpg",
+      "source_sheet_sha256": "2794962ba9b0d9d524d1830ed7c521aceafabdc8602c0e8fd17d3108b62b154a",
+      "committed_sha256": "20dac4d8cfa4fca54f6f90f127cfc3bd772bbf7bf974085c7e7a0a9dd219d6ce",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 80,
+      "bytes": 525847,
+      "duration_s": 7.916667,
+      "frames": 190,
+      "fps": 24.0,
+      "use_s": 5.3,
+      "film_window_s": [
+        344.2,
+        349.5
+      ],
+      "clip_sha256": "dacb60bd68a5c892d5f9fd5e0e2e36f9e2a4866d7bbe933bfbcf8ae92ed8b89a",
+      "start_frame_sha256": "4fcc6595578042967e61b469d4b5ffe611a096c56c318c6acdde359da7b76a2e"
+    },
+    {
+      "n": 47,
+      "batch": 10,
+      "row_id": "P4:10_fairness_25_june",
+      "take": 1,
+      "file": "P4:10_fairness_25_june_take1_0.5s.jpg",
+      "source_sheet_sha256": "d7d42f5e5bd5ff75726c7d8560472cd37747ba0a72fcddbee69383b755afafc0",
+      "committed_sha256": "9e7d8d06758206fe136335e0b06520971dc4428c43bf273e848e1021ee3498da",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 80,
+      "bytes": 555011,
+      "duration_s": 7.916667,
+      "frames": 190,
+      "fps": 24.0,
+      "use_s": 6.08,
+      "film_window_s": [
+        349.5,
+        355.58
+      ],
+      "clip_sha256": "a3008b0a20514a8a273fb7492c55409ec5d9a0eb145f2d5400e828d7b1d6f841",
+      "start_frame_sha256": "b088c6ee972abfb385ffbbe21d36df6c2fe5dacbe146817c56c83faf4d17f39f"
+    },
+    {
+      "n": 48,
+      "batch": 10,
+      "row_id": "P4:11_down_house_grief",
+      "take": 1,
+      "file": "P4:11_down_house_grief_take1_0.5s.jpg",
+      "source_sheet_sha256": "3c4e284649863daf31548ea965855d1007fbc805a5dd09754b67f58da486a6d3",
+      "committed_sha256": "b4545c1ffecd4a2960bb8b000bedd0e10c786511cf6a5a60f6541302a4f5c78a",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 75,
+      "bytes": 536293,
+      "duration_s": 7.916667,
+      "frames": 190,
+      "fps": 24.0,
+      "use_s": 5.4,
+      "film_window_s": [
+        355.58,
+        360.98
+      ],
+      "clip_sha256": "797eaadce55c54113c0c56ada50473b85e49c9fbe810ef8d3e7ebf8dbea058dc",
+      "start_frame_sha256": "56f808e833a6a1295402c92f092a917de26e0d8aedcf02a7774825eae4b4046c"
+    },
+    {
+      "n": 49,
+      "batch": 10,
+      "row_id": "P4:12_lyell_hooker_bundle",
+      "take": 1,
+      "file": "P4:12_lyell_hooker_bundle_take1_0.5s.jpg",
+      "source_sheet_sha256": "80fefc8d6f78a40dded9055bec3504b7c1170f2b726afb308df1627483db8d24",
+      "committed_sha256": "d5f869029af79c95d5018b9adf9291de6b303617d728e2922e9d1c245e565199",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 65,
+      "bytes": 569407,
+      "duration_s": 7.916667,
+      "frames": 190,
+      "fps": 24.0,
+      "use_s": 5.36,
+      "film_window_s": [
+        360.98,
+        366.34
+      ],
+      "clip_sha256": "820c1433ca609245b150409f709c287d6c25a58770ad962b6ea22768ff3a492a",
+      "start_frame_sha256": "696d7eb39e0f083c174125456ed882bcab881ce7a0082be26f8c88f53a6661b1"
+    },
+    {
+      "n": 50,
+      "batch": 10,
+      "row_id": "P5:02a_linnean_reading",
+      "take": 1,
+      "file": "P5:02a_linnean_reading_take1_0.5s.jpg",
+      "source_sheet_sha256": "840c96180b6d274814670bbc18632e1ab5fb65f837a3001c1669b80e4eadb58a",
+      "committed_sha256": "0dc2a186e64521545da430f128652a7ce098da61a61892d3630b0702c17f9975",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 75,
+      "bytes": 584448,
+      "duration_s": 8.0,
+      "frames": 192,
+      "fps": 24.0,
+      "use_s": 8.0,
+      "film_window_s": [
+        368.56,
+        376.56
+      ],
+      "clip_sha256": "dc7de232f76b5bde854dd1cb512cf2a868349fa81f9126e6d0ccfda39b9911ea",
+      "start_frame_sha256": "91d742b73943ef1cfe144f418b4a5b737600201025e6e103eaac2441bf0a6b6f"
+    },
+    {
+      "n": 51,
+      "batch": 11,
+      "row_id": "P5:03a_two_empty_chairs",
+      "take": 1,
+      "file": "P5:03a_two_empty_chairs_take1_0.5s.jpg",
+      "source_sheet_sha256": "a2b108e611ba12f7e4111b9c7d85e22dcdec997af6c2d0ba22fb0502b2d3ffc5",
+      "committed_sha256": "922e657cc6b32769169929fe4b161d40126f79afd7d910fc58e90c3c40df9309",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 70,
+      "bytes": 550839,
+      "duration_s": 7.916667,
+      "frames": 190,
+      "fps": 24.0,
+      "use_s": 5.86,
+      "film_window_s": [
+        382.34,
+        388.2
+      ],
+      "clip_sha256": "c9bb651faf9d6d17266df305bbeca5308f73ff9f45134506eb0305dc66b15a4e",
+      "start_frame_sha256": "567ba05fd4fad03414087b7da1be55fe29eb8646e7e0141f2c3aefe316ef5852"
+    },
+    {
+      "n": 52,
+      "batch": 11,
+      "row_id": "P5:03b_wallace_jungle_clearing",
+      "take": 1,
+      "file": "P5:03b_wallace_jungle_clearing_take1_0.5s.jpg",
+      "source_sheet_sha256": "ec5f26b435944f1edccb0cbbd98b491d910dbb18c3d3527566a956f2d88092c5",
+      "committed_sha256": "c3a4662cf7f5e2718b94cd64ad514aecebf532832fbb77028c1243a2743d391c",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 80,
+      "bytes": 606498,
+      "duration_s": 7.916667,
+      "frames": 190,
+      "fps": 24.0,
+      "use_s": 5.86,
+      "film_window_s": [
+        388.2,
+        394.06
+      ],
+      "clip_sha256": "470715a0d13e5aeae43c97251b61d04d715d1d74a2d091efe47ab5e7794893f8",
+      "start_frame_sha256": "5c8d6d0a1c772a48ca6f618e57fae88a228c5863d260166c8e4bc4f9834e9e89"
+    },
+    {
+      "n": 53,
+      "batch": 11,
+      "row_id": "P5:04a_empty_linnean_hall",
+      "take": 1,
+      "file": "P5:04a_empty_linnean_hall_take1_0.5s.jpg",
+      "source_sheet_sha256": "454ec6a5e7a28aa2ddd39c9f0d3de71bc0d7100de5137a45868d850452536910",
+      "committed_sha256": "2b2edf9a5e37fdc0fc67d2eb52d03e079359157e6738876acb17af394fc1abf1",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 75,
+      "bytes": 557677,
+      "duration_s": 7.916667,
+      "frames": 190,
+      "fps": 24.0,
+      "use_s": 3.94,
+      "film_window_s": [
+        394.06,
+        398.0
+      ],
+      "clip_sha256": "c9d642728dcddba3f0ee4896ec85e3dc450124c947abc11a95547780c897a439",
+      "start_frame_sha256": "eb773a5f25d2de7106a7d461b6c58e1e0a2b50f434abb9334e735b9ee3ddba6f"
+    },
+    {
+      "n": 54,
+      "batch": 11,
+      "row_id": "P5:05a_darwin_writes_origin",
+      "take": 1,
+      "file": "P5:05a_darwin_writes_origin_take1_0.5s.jpg",
+      "source_sheet_sha256": "2d15c0b9cfc46576b0e5aa985e19905ea2f230302ba9c61cb68412ae4646a6c2",
+      "committed_sha256": "809d3e80f9796f383e78a0f967d7b09da0ecd8289165500c6bbabca9f416d975",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 75,
+      "bytes": 593256,
+      "duration_s": 7.916667,
+      "frames": 190,
+      "fps": 24.0,
+      "use_s": 6.9,
+      "film_window_s": [
+        404.66,
+        411.56
+      ],
+      "clip_sha256": "5b7a829f49a556d76247358d894cde276fb17031137a14cac197582bd1187905",
+      "start_frame_sha256": "07deb98f62cf8790a5f4116eaabe2a621e74abfffa775c49fdb4b71c6233da81"
+    },
+    {
+      "n": 55,
+      "batch": 11,
+      "row_id": "P5:06_murray_bookshop",
+      "take": 1,
+      "file": "P5:06_murray_bookshop_take1_0.5s.jpg",
+      "source_sheet_sha256": "d23f02873440c62d8cdbf22f55e7a4b26b8562f8356665544938abfc18fd9ec3",
+      "committed_sha256": "39dbc24db9f7343f40e3a3848cf7242a46fcec757003a87dca30c9729293d513",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 60,
+      "bytes": 591232,
+      "duration_s": 7.916667,
+      "frames": 190,
+      "fps": 24.0,
+      "use_s": 4.56,
+      "film_window_s": [
+        414.44,
+        419.0
+      ],
+      "clip_sha256": "87e35853e7c047bf5ed9e970498bcd0d67cfd16a02a4143535faadd3f7411ef5",
+      "start_frame_sha256": "a43d7a8732e1d8f55ae531e0ed997aa2b484a5c95ae4adc39c9e6697768b666f"
+    }
+  ]
+}
