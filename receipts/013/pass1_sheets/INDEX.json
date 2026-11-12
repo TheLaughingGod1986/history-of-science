@@ -583,6 +583,151 @@
       ],
       "clip_sha256": "47fc7ca5445b772b4e1f2201fd5fb5956e1de86bc3d02e4a4f4802473e011318",
       "start_frame_sha256": "8f52b44f487808c61e9f3b1a3c95636da4a37d82376cc93d04e13aea3f3e18fa"
+    },
+    {
+      "n": 21,
+      "batch": 5,
+      "row_id": "P2:10a_explorer_shipmates",
+      "take": 1,
+      "file": "P2:10a_explorer_shipmates_take1_0.5s.jpg",
+      "source_sheet_sha256": "181bb413f79954c4e45fc7e43b0c61e6e0edb2a1205050f9a8e5d25528499a4a",
+      "committed_sha256": "7e4b4c4f2b30ed025373475057894271f151b02053e33410d193599a9d3793ff",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 65,
+      "bytes": 574855,
+      "duration_s": 7.916667,
+      "frames": 190,
+      "fps": 24.0,
+      "use_s": 6.18,
+      "film_window_s": [
+        143.72,
+        149.9
+      ],
+      "clip_sha256": "4c72bdc24dd89a9cfedbc91caa2224b63a3d8231691aea6d597e1adfb4001fce",
+      "start_frame_sha256": "422123ef6d8082dc2fc96919ccbb406ae7648f6bb3f4e3d07603ac6e3febb9f5"
+    },
+    {
+      "n": 22,
+      "batch": 5,
+      "row_id": "P2:11_island_split_vision",
+      "take": 1,
+      "file": "P2:11_island_split_vision_take1_0.5s.jpg",
+      "source_sheet_sha256": "e1c37362e6903883a0de0a9d5417f734df43e47de5f2a9fad139ee9645c51038",
+      "committed_sha256": "e6465dcc65d6cec4184364b0f0337bf2b26ac1760148779839778fe06235134f",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 70,
+      "bytes": 585229,
+      "duration_s": 7.916667,
+      "frames": 190,
+      "fps": 24.0,
+      "use_s": 8.0,
+      "film_window_s": [
+        153.2,
+        161.2
+      ],
+      "clip_sha256": "4d0ae5f4484b699038efe4f864fc3314a1b55a0d28b7ad12d28da7e463c7444f",
+      "start_frame_sha256": "6d6ed4e85753cf4ccdaf1be596600d9b30ce6b9784306fd5cd92125ed52dcd4d"
+    },
+    {
+      "n": 23,
+      "batch": 5,
+      "row_id": "P2:12b_tree_question",
+      "take": 1,
+      "file": "P2:12b_tree_question_take1_0.5s.jpg",
+      "source_sheet_sha256": "0568f6da96cda6b793dce5d0cfcad7d23766825369c995f47adec4cae5478367",
+      "committed_sha256": "c2304bee900eca665414f4b47cc4ebb57d2cd43cae50c17003635116149df93f",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 75,
+      "bytes": 561750,
+      "duration_s": 7.916667,
+      "frames": 190,
+      "fps": 24.0,
+      "use_s": 4.48,
+      "film_window_s": [
+        166.6,
+        171.08
+      ],
+      "clip_sha256": "7958d7a6ccde9113b76eb7228f616915f41544a3474c37b80de6893a08809269",
+      "start_frame_sha256": "6ba0c1ce058dde5cd5895d38590ba07826750a85b6b40859461d67d6979bf092"
+    },
+    {
+      "n": 24,
+      "batch": 5,
+      "row_id": "P3:02a_malthus_lamplight",
+      "take": 1,
+      "file": "P3:02a_malthus_lamplight_take1_0.5s.jpg",
+      "source_sheet_sha256": "adcf660493e9db3dadb47e961d9a7ebae8a894cb9713d6c3f06b40c21580a6f5",
+      "committed_sha256": "458fe2bd24f3786205854d3af7777937fa720bc3de163ca7aaf1c3474f204b1e",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 75,
+      "bytes": 583490,
+      "duration_s": 7.916667,
+      "frames": 190,
+      "fps": 24.0,
+      "use_s": 6.22,
+      "film_window_s": [
+        172.58,
+        178.8
+      ],
+      "clip_sha256": "20f4cb58fab0fdca4e01fee5a530ad924263713bacf1bcaaa523df3d1657a486",
+      "start_frame_sha256": "5564f50e5b760b9e5177fea02e0272b4913c1544b347dd032ec0b1358d2defd9"
+    },
+    {
+      "n": 25,
+      "batch": 5,
+      "row_id": "P3:02b_notebook_d_open",
+      "take": 1,
+      "file": "P3:02b_notebook_d_open_take1_0.5s.jpg",
+      "source_sheet_sha256": "8edfcaafd4fdb94d09d9fc370d91df81119289dace71bcbb5d818e5065f1e22a",
+      "committed_sha256": "6d4fb4863864cc55ee6fe0bcdb00d5bd26954c7a792edbf98b451123d30df969",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 80,
+      "bytes": 560095,
+      "duration_s": 7.916667,
+      "frames": 190,
+      "fps": 24.0,
+      "use_s": 3.9,
+      "film_window_s": [
+        178.8,
+        182.7
+      ],
+      "clip_sha256": "5ede492e92cdbbf2e5b434ac6994033b60cbce42db14e5563905162b7d17a3d7",
+      "start_frame_sha256": "7e30c700ae4957a5f5342fe1aeee5c4d837d78bae84570536314078847d76a8d"
     }
   ]
 }
