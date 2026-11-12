@@ -288,3 +288,31 @@ mux with exact unchanged boundary hashes, phone sheets, all original media
 and package gates, then J2243/Chief review. No v04 exists. Original masters,
 audio, publication rejection and source evidence are untouched. No spend,
 generation, UAT, R2 or YouTube action. No process from this run remains running.
+
+## Points intermediate checkpoint — seventh run, 12 November 2026
+
+`_j2242_points_patch.py` renders approved points take 3 f000..f159 as a
+lossless FFV1/NUT intermediate. `POINTS_PATCH.json` records its path and hash.
+All 160 decoded frame hashes equal independently scaled source frames; their
+PTS rescale exactly to master frames f4511..f4670. The source hash is pinned
+before and after rendering. The source clock evidence hash is also pinned.
+
+The original f4513 has duration 1024 ticks while its next PTS advances only
+512. The NUT intermediate does not preserve that overlapping duration. Its
+`original_clock.json` sidecar preserves every original frame index, integer PTS
+and duration, with a recorded SHA-256; the final packet mux must use that
+schedule and pass the independent output verifier. This is explicitly not a
+final-duration preservation result. The renderer rejects a normalized f4513
+duration, shifted PTS, changed indices and wrong clocks.
+
+All 27 J2242 tests pass (`POINTS_TESTS.txt`). Repository validation is in
+`CHECK_ALL_POINTS.txt`. No final-film gate, motion/audio perception or approval
+is claimed. No master v04, UAT, R2, YouTube, spend or generation. No process
+remains running.
+
+Next: remaining defect windows, baked-caption source reconstruction and the
+32 cards/SAFE PATH DOWN/letter animation, general packet mux preserving
+unchanged boundary pixels and all original durations, then all media/package
+gates and the phone sheet. Keep original masters/audio, J1755 hold and
+J2243/Chief review. This remaining work exceeds a single unattended run;
+released at this verified intermediate checkpoint.

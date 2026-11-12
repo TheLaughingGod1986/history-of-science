@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11",
+  "updated": "2026-11-12",
   "updated_by": "codex",
   "board_url": "https://claude.ai/artifact/Hhk519dkbHMzeaZfp3efhc",
   "stages": [
@@ -401,7 +401,7 @@
       "title": "Why Did Franklin Fly a Kite in a Storm?",
       "air": "2026-11-19",
       "ready_by": "2026-11-15",
-      "summary": "Franklin correction assembly J2242: approved repair inputs and original packet/frame baseline verified. Packet splicer and captions still need implementation, then J2243/Chief review. Original v03 notes and J1755 publication hold remain.",
+      "summary": "Franklin corrections: salon, rods and points intermediates verified; full packet assembly and captions outstanding. Original masters/audio and J1755 publication hold retained.",
       "stages": {
         "topic": {
           "status": "done"
@@ -465,8 +465,8 @@
           "owner": "codex",
           "since": "2026-11-05T00:00:40.142053+00:00",
           "underway": false,
-          "waiting": "J2242 continuation: implement packet splice and caption render, then output preservation and all gates. No replacement master exists.",
-          "note": "J2242 source checkpoint: 12,923 decoded hashes retain integer PTS/durations; all 113 random-access samples are actual IDR; 25,296 audio packet hashes recorded. Salon composite, points take 3 and rods take 2 hashes/full decodes verified. 22 tests and check_all pass. No output/media approval.",
+          "waiting": "J2242 continuation: remaining windows/caption reconstruction and final packet mux with exact durations, then all gates and J2243/Chief review.",
+          "note": "J2242: salon, rods and points intermediates verified; salon-only preservation experiment passes. Points original overlapping duration retained in sidecar for final mux. Full assembly, captions and media gates outstanding; no v04 or approval.",
           "jobs": [
             "J1297",
             "J1755",
