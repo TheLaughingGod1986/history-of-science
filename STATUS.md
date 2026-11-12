@@ -49,6 +49,7 @@
 **codex**
 - ▶️ Underway: nothing right now
 - ⏸ Waiting: 010 Picture: Tested HOS010 runner and live guarded spend preflight after HOS009 J2033; then independent plate review before J2172 assembly
+- ⏭ Next up: 011 Edit + master, due Thu 3 Dec
 
 **gemini**
 - ▶️ Underway: nothing right now
@@ -255,7 +256,7 @@ Long VO v01 locked (5 parts); Chief KEEP all five, no pickups (desk 6101773293).
 
 Airs **Thu 10 Dec** · ready for Ben's OK by **Sun 6 Dec** · 🟢 on track
 
-Locked for Thu 10 Dec (J2231). Script v02, facts and quote check done. Long VO hos_011_vo_v01 (532.72 s, five chapters, sha256 d873f1d0…) locked after J2286 KEEP listening review (recorded in VO_STATUS.md, J2475). Picture plan v02 (93 rows across 535.30 s: 66 mint = 66 Q + 0 F = 6,600 Flow credits try-1 / 17,094 expected + 27 free £0 rows; 0 real-person names in Flow prompts) built on words.srt per Chief ruling #6786715647 and parked for Chief's price pass (J2475). J2655: v03 mechanical timing draft submitted for Chief review; 37 boundaries moved, no tracked word crossing, all rows <=8 s. v02 unchanged; no generation approval.
+Locked for Thu 10 Dec. Script v02, facts, quote check and long VO locked (J2286 KEEP; 532.720 s). J2659 accepts mechanical picture-plan v03 timing for internal assembly: 93 rows, 535.30 s, every row <=8 s. J2563 resumes 26 free rows plus 67 labelled slates using the corrected archive sources. No generation or picture/edit approval.
 
 - ✅ **Topic** — done: J0180 / J2231: 6 education >=1M (TED-Ed 19.73M & 2.66M)
 - ✅ **Script** — done: v02, 91.1 (J0183 / J0224)
@@ -264,8 +265,8 @@ Locked for Thu 10 Dec (J2231). Script v02, facts and quote check done. Long VO h
 - ✅ **Voiceover (long)** — done: Locked hos_011_vo_v01 (532.72 s, five chapters, Ben Orbit Narrator eleven_v3; WAV sha256 d873f1d0…, MP3 sha256 9fdd84d5…). J2286 listening review of all five chapters: KEEP, no pickups, no re-recording; the two 1.5 s pauses in Across the Ocean sit inside a held beat and stay. Full-file vo_check PASS, 0 word fails. Acting Chief closed J2245 on 10 Nov; lock recorded in VO_STATUS.md (J2475).
 - ⬜ **Shorts scripts** — to do (with Claude, due Thu 12 Nov (today)): two search-titled Shorts (Test B, J2239)
 - ⬜ **Shorts voiceover** — to do (with Cursor, due Mon 16 Nov (in 4 d))
-- ⬜ **Picture** — to do (with Cursor, due Sun 29 Nov (in 17 d)): J2655: PICTURE_PLAN_v03 retimes 93 rows across 535.30 s, with 37 moved boundaries, 18 word crossings removed and all eleven long sentences split at clause joins. Draft for Chief review, not a picture PASS. Costs and row sources remain v02 (66 Quality mint rows, 27 free rows); generation_authorized false. J2654 archive-source brief is separate.
-- ⬜ **Edit + master** — to do (with Grok, due Thu 3 Dec (in 21 d)): J2655 mechanical v03 retime complete for review; free-row assembly, rough render, overlay cues and capable motion review remain outstanding.
+- ⬜ **Picture** — to do (with Cursor, due Sun 29 Nov (in 17 d)): J2659 accepts v03 mechanical timing only: 93 rows, 37 boundaries moved, 18 word crossings removed, eleven long sentences split. 66 Quality generation rows remain unauthorized; reuse stays a slate. J2654 archive brief plus Grok ruling 6810336587 override inherited source fields; see J2659_CHIEF_DECISION.md.
+- ⬜ **Edit + master** — to do (with codex, due Thu 3 Dec (in 21 d)): J2659 accepts v03 timing. J2563 resumes 26 free rows and internal rough with 67 slates; use J2659_CHIEF_DECISION.md source overrides, reuse check and overlay cue schedule.
 - ⬜ **Thumbnails** — to do (with Grok, due Thu 3 Dec (in 21 d))
 - ⬜ **Ben's final OK** — to do (with Ben, due Sun 6 Dec (in 24 d))
 - ⬜ **Scheduled** — to do (with Grok, due Mon 7 Dec (in 25 d))

@@ -190,3 +190,21 @@ ALL CHECKS PASS
 ```
 
 Initial run could not write npm’s protected cache; rerun used the existing ignored node_modules symlink and a task-local cache. No dependency changes.
+
+
+## J2659 — 12 Nov 2026: timing accepted for internal assembly
+
+
+Codex covering, 12 Nov 2026. HOS Chief election checked: Codex; Grok and Claude down. Decision: KEEP the mechanical retime at PR #554, source commit 0b1d1c82. This approves timing data for an internal rough, not the picture/edit stage or UAT. No listening or motion review performed. GBP 0 / 0 credits. Generation remains unauthorized at plan and row level.
+
+Reviewed all 92 audit boundaries against tracked Scribe words and all eleven long-sentence splits. The 37 moves remove 18 word crossings. Each long sentence has one split at the nearest suitable clause/list join; named people and tight noun phrases remain together. v02, narration, row identities and budgets are unchanged. All six applicable PR checks passed at 0b1d1c82.
+
+The 139.52 s and / not cut is accepted for this mechanical rough: the tracked gap is 139.48–139.54. The next sentence ends at 147.50, so starting this row before 139.50 would exceed eight seconds. It keeps “not feel a thing” together. This is a constrained word boundary, not a claim of audible silence. The 125.76 / 133.30 / 139.52 / 147.50 propagation is accepted. So are the 202.74 / 210.70 / 218.70 / 226.68 propagation and the Snow archive interval 429.63–437.60 (7.97 s). The rendered review must still assess picture fit and the tight cuts.
+
+```text
+PASS: mechanical retime validation — 93 contiguous rows, 92 word-safe boundaries; 18 word crossings removed; all 11 long sentences split; maximum 8.00 s; v02 source, VO lock, row identities, budgets and generation locks preserved.
+This is a data validation result, not film-stage approval or listening/motion QA.
+```
+
+
+Full source overrides and assembly requirements: `07_Edit-Project/J2659_CHIEF_DECISION.md`. J2563 resumes the 26 free rows and labelled-slate rough; picture and edit remain incomplete.
