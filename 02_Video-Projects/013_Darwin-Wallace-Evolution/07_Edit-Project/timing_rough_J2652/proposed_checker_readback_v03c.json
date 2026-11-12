@@ -1,0 +1,13 @@
+{
+  "file": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/cuts_v03c.csv",
+  "rows": 106,
+  "passed": true,
+  "errors": [],
+  "warnings": [
+    "row P5:02a_linnean_reading_beat1: may clip mid-sentence before next row ('On the 1st of July 1858' \u2192 \"Darwin's friends Charles Lyle and Joseph\")"
+  ],
+  "checker_commit": "231a20e7fd",
+  "checker_pr": "https://github.com/TheLaughingGod1986/orbit-with-ben/pull/871",
+  "status": "PROPOSED CHECKER ONLY; not production gate acceptance",
+  "exit_code": 0
+}
