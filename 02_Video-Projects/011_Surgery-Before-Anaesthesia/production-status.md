@@ -159,3 +159,34 @@ Script score: **91.1/100** · PASS
 
 - No Vertex/Veo/Flow minting on this film.
 - Do not merge or close desk PR #180 from this work.
+
+
+## J2655 — 12 Nov 2026: mechanical picture-plan v03 (review draft)
+
+Delivered `07_Edit-Project/PICTURE_PLAN_v03.json`, its row-by-row Markdown, complete `RETIME_AUDIT_v03.json`, rationale `J2655_RETIME_NOTES.md`, and reproducible `validate_retime_v03.py`. Locked WAV hash and 532.720 s duration verified. 37 boundaries moved; accepted P4:08a “mid-1840s” correction applied. v02 untouched. No script, narration, source identities, budget or generation permissions changed. £0 / 0 credits.
+
+```text
+PASS: mechanical retime validation — 93 contiguous rows, 92 word-safe boundaries; 18 word crossings removed; all 11 long sentences split; maximum 8.00 s; v02 source, VO lock, row identities, budgets and generation locks preserved.
+This is a data validation result, not film-stage approval or listening/motion QA.
+```
+
+Next: Chief review of the v03 timing draft. Existing free-row assembly, archive brief integration, reuse-interval check, overlay cue schedule, rendered rough and capable motion review remain outstanding; no edit/picture stage is marked done or sent for Ben’s watch.
+
+Repository validation (no new film approval):
+
+```text
+-- durable desk handoffs: PASS
+-- no media: PASS
+-- status board in sync: PASS
+-- ElevenLabs guard tests: PASS
+-- vo_check word tests: PASS
+-- atempo check tests: PASS
+-- voice speed (atempo <= 1.06): PASS
+-- contract tests: PASS
+-- package-lint: PASS
+-- review:script surgery_script_master_v02.md: PASS
+-- gate:episode: PASS
+ALL CHECKS PASS
+```
+
+Initial run could not write npm’s protected cache; rerun used the existing ignored node_modules symlink and a task-local cache. No dependency changes.

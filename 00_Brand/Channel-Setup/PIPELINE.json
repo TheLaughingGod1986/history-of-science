@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11",
+  "updated": "2026-11-12",
   "updated_by": "codex",
   "board_url": "https://claude.ai/artifact/Hhk519dkbHMzeaZfp3efhc",
   "stages": [
@@ -646,7 +646,7 @@
       "title": "Anesthesia: The Day Surgery Stopped Hurting",
       "air": "2026-12-10",
       "ready_by": "2026-12-06",
-      "summary": "Locked for Thu 10 Dec (J2231). Script v02, facts and quote check done. Long VO hos_011_vo_v01 (532.72 s, five chapters, sha256 d873f1d0…) locked after J2286 KEEP listening review (recorded in VO_STATUS.md, J2475). Picture plan v02 (93 rows across 535.30 s: 66 mint = 66 Q + 0 F = 6,600 Flow credits try-1 / 17,094 expected + 27 free £0 rows; 0 real-person names in Flow prompts) built on words.srt per Chief ruling #6786715647 and parked for Chief's price pass (J2475).",
+      "summary": "Locked for Thu 10 Dec (J2231). Script v02, facts and quote check done. Long VO hos_011_vo_v01 (532.72 s, five chapters, sha256 d873f1d0…) locked after J2286 KEEP listening review (recorded in VO_STATUS.md, J2475). Picture plan v02 (93 rows across 535.30 s: 66 mint = 66 Q + 0 F = 6,600 Flow credits try-1 / 17,094 expected + 27 free £0 rows; 0 real-person names in Flow prompts) built on words.srt per Chief ruling #6786715647 and parked for Chief's price pass (J2475). J2655: v03 mechanical timing draft submitted for Chief review; 37 boundaries moved, no tracked word crossing, all rows <=8 s. v02 unchanged; no generation approval.",
       "stages": {
         "topic": {
           "status": "done",
@@ -694,12 +694,13 @@
           "status": "todo",
           "due": "2026-11-29",
           "owner": "Cursor",
-          "note": "Shot list & picture plan v02 built on words.srt per Chief ruling #6786715647 (J2475): 93 rows (535.30 s), 66 mint (66 Q + 0 F = 6,600 try-1 / 17,094 expected Flow credits; 0 real-person names in Flow prompts) + 27 free £0 rows (13 CG + 13 ARCH + 1 REUSE). HOS-2026-11-E2 PASS. generation_authorized: false; parked for Chief price pass.",
-          "waiting": "Chief price pass on J2475 v02 (6,600 Flow credits try-1 / 17,094 expected)"
+          "note": "J2655: PICTURE_PLAN_v03 retimes 93 rows across 535.30 s, with 37 moved boundaries, 18 word crossings removed and all eleven long sentences split at clause joins. Draft for Chief review, not a picture PASS. Costs and row sources remain v02 (66 Quality mint rows, 27 free rows); generation_authorized false. J2654 archive-source brief is separate.",
+          "waiting": "Chief review of v03 timing draft and existing picture spend decision; no minting authorised"
         },
         "edit": {
           "status": "todo",
-          "due": "2026-12-03"
+          "due": "2026-12-03",
+          "note": "J2655 mechanical v03 retime complete for review; free-row assembly, rough render, overlay cues and capable motion review remain outstanding."
         },
         "thumbnails": {
           "status": "todo",
