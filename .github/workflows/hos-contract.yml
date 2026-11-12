@@ -1,5 +1,5 @@
 # HOS release contract: upload packages and the contract code must pass before a PR can merge.
-# Rules: 07_Content-Ops/src/lib/hos-contract/rules.ts · STUDIO_PLAYBOOK.md §9 · AGENTS.md "Definition of done".
+# Rules: 07_Content-Ops/src/lib/hos-contract/rules.ts · STUDIO_PLAYBOOK.md §9 · studio/RULES.md "Definition of done".
 name: HOS release contract
 
 on:

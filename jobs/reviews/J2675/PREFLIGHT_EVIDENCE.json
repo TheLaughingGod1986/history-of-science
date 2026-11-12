@@ -1,0 +1,149 @@
+{
+  "job": "J2675",
+  "parent_job": "J2529",
+  "film": "HOS:013",
+  "stage": "picture",
+  "checked_at": "2026-11-12T07:53:12+00:00",
+  "agent": "gemini",
+  "spend": {
+    "flow_credits": 0,
+    "cash_gbp": 0.0,
+    "submissions": 0,
+    "create_clicks": 0,
+    "submit_armed": false,
+    "second_reservation_created": false,
+    "receipts_or_keep_modified": false
+  },
+  "canonical_hos_main": {
+    "checkout_path": "/Users/benjaminoats/YouTube/History Of Science",
+    "branch": "main",
+    "head_sha": "e2b7f5fe610880041603aea577176f20e859609c",
+    "pr_564_merge_sha": "e2b7f5fe610880041603aea577176f20e859609c",
+    "merge_present": true,
+    "tracked_dirty_files": []
+  },
+  "runner_tests": {
+    "command": "python3 -m unittest -v tests/test_hos013_pass1_runner.py",
+    "tests_run": 44,
+    "status": "OK",
+    "duration_s": 4.028
+  },
+  "nas_and_references": {
+    "studio_live_ls_rc": 0,
+    "studio_live_entries": [
+      "History Of Science",
+      "orbit-with-ben"
+    ],
+    "volumes_data_mounted": true,
+    "archive_dir": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/04_Generated-Clips/archive_v01_pass1",
+    "archive_dir_exists": true,
+    "explorer_reference": {
+      "rel": "01_Character/05_Generation-References/hos-explorer-reference-v01.jpg",
+      "sha256": "24659dc1d761e9371de9411ca8b56cd5ad3e2587674a8cbdf66a3b84e451476d",
+      "matches_required": true
+    },
+    "house_style_refs": [
+      {
+        "rel": "04_Generated-Clips/_style_refs/04_sunny_window_v01.jpg",
+        "sha256": "cdb8b421fa121454bb62d9b6dfc1c782c7c95b1634d80c856bb95555cfdc4b45"
+      },
+      {
+        "rel": "04_Generated-Clips/_style_refs/10_mint_jar_v01.jpg",
+        "sha256": "311fe7b886f391eaabe32aabc0be1b1989e483dd814237c7095e3a118d423720"
+      }
+    ]
+  },
+  "runner_process_and_guards": {
+    "pid_file": "/Users/benjaminoats/_desk/state/flow/hos013-pass1/runner.pid",
+    "last_pid": 72539,
+    "last_pid_alive": false,
+    "active_runner_processes": 0,
+    "hos013_tmux_session_active": false,
+    "unarmed_submit_refused": true,
+    "unarmed_submit_exit_code": 1,
+    "detach_command_verified": true,
+    "detach_command_floor": 3000,
+    "detach_command_other_reservations": 0
+  },
+  "live_flow_readonly_check": {
+    "read_at": "2026-11-12T07:52:20+00:00",
+    "host": "flow.google.com",
+    "ultra": true,
+    "account_sha256": "81a01c9d841483f444008cd69e98b26019e032ed75b5e33e17409a76c6525ce9",
+    "account_verified": true,
+    "live_balance_before": 8940,
+    "live_balance_after": 8940,
+    "balance_delta": 0,
+    "ai_spend_recorded_at": "2026-11-12T07:53:06Z",
+    "quality_price_evidence": {
+      "quality": "Quality",
+      "model": "Veo 3.1 - Quality",
+      "outputs": "x1",
+      "aspect": "16:9",
+      "duration": "8s",
+      "credits": 100,
+      "generate_line": "Generating will use 100 credits",
+      "create_count": 0
+    }
+  },
+  "accounting_and_remaining_scope": {
+    "reservation_id": "HOS013_PASS1",
+    "reservation_active": true,
+    "reservation_film": "HOS:013",
+    "original_total_cap_credits": 6600,
+    "original_total_rows": 66,
+    "completed_batches": 3,
+    "total_batches": 14,
+    "completed_rows": 15,
+    "completed_credits_spent_and_posted": 1500,
+    "hos013_all_charges_posted": true,
+    "remaining_rows": 51,
+    "remaining_batches": 11,
+    "remaining_reservation_credits": 5100,
+    "within_original_6600_cap": true,
+    "has_pending_charge": false,
+    "submitting_takes": 0,
+    "policy_refused_rows": [],
+    "unknown_local_charges": false,
+    "other_active_reservations": {},
+    "historical_unposted_charges_credits": 800,
+    "historical_unposted_note": "Exact historical HOS:008 / HOS:009 charges documented in PR #549 and cleared by Chief ruling 6807600765; 0 unposted charges on HOS013_PASS1.",
+    "total_shared_liability": 5900,
+    "floor": 3000,
+    "headroom_under_existing_HOS013_PASS1_reservation": 3040,
+    "headroom_excluding_already_deducted_historical_unposted": 3840,
+    "dry_run_new_6600_reservation_field": {
+      "dry_run_file": "jobs/reviews/J2675/DRY_RUN_2026-11-12T0753Z.json",
+      "projected_headroom_after_013_cap": -3560,
+      "would_allow_reserve_at_recorded_balance": false,
+      "exact_formula_note": "build_dry_run_report() computes balance_left (8940) - total_liability (5900, which already includes 5100 remaining on active HOS013_PASS1) - MAX_TOTAL_CREDITS (6600) = -3560 (testing whether a second 6600 reservation could be added). SharedFlowAccounting.reserve('HOS013_PASS1', 'HOS:013', 6600, live=8940, floor=3000) matches the existing active reservation and checks live (8940) - liability (5900) = 3040 >= 3000."
+    },
+    "next_batch": {
+      "batch_number": 4,
+      "of_batches": 14,
+      "first_row": "P2:05_tortoise_overboard",
+      "rows": [
+        "P2:05_tortoise_overboard",
+        "P2:06a_lawson_jetty",
+        "P2:07_darwin_notebook_wait",
+        "P2:08a_gould_sorting",
+        "P2:08b_gould_skins_closeup"
+      ],
+      "row_count": 5,
+      "credits": 500
+    }
+  },
+  "deadlines_and_rulings_in_force": {
+    "go_nogo_checkpoint_london": "2026-11-12T13:00:00Z",
+    "create_cutoff_london": "2026-11-12T18:45:00Z",
+    "reset_london": "2026-11-12T19:13:00Z",
+    "authorising_rulings": [
+      "6805739027",
+      "6805898066",
+      "6807600765",
+      "6815870258",
+      "6817606389"
+    ],
+    "j2529_step_preserved": "3/14"
+  }
+}

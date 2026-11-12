@@ -3,7 +3,7 @@
   "files": {
     ".github/workflows/core-check.yml": "e0f3af45e634a8e2738004ccf5c6295fadb36ca1651f0543de13130622a1bb43",
     "00_Brand/Channel-Setup/audits/start_studio_chrome_cdp.sh": "e64bf0312377b7aeed3849909559938432cd5f78bb3f098155b7d628df832763",
-    "00_Brand/Channel-Setup/tools/gate_shorts_open.py": "8ce0e9cb37263d81ea2208e0e88ded0feb3161dbcc9d33d0de801c6195b2ac65",
+    "00_Brand/Channel-Setup/tools/gate_shorts_open.py": "f37031aeec42eb4a4648c4cd458df326b89bc04f99941b0e905677cabb93e0db",
     "00_Brand/Channel-Setup/tools/test_weekly_public_audit.py": "8301f7e6907af2242788c6ce39c97390e683b6d5fcfcaa22091534892d7c956a",
     "00_Brand/Channel-Setup/tools/weekly_public_audit.py": "bc1770dc66683f8e1b211b73475e532e9d90977a93fccb566e02b9ba62c4de64",
     "04_Audio/tools/.env.example": "48ae34be89c28a437a5215656119064888b1972ef05ccde9bbc38eec14b10568",
@@ -50,13 +50,13 @@
     "07_Content-Ops/src/lib/publishing/types.ts": "09fd51f6fda3cc28f9443dff1de46ee6b77cdfbd9d287bbee257ed6fe27b2868",
     "07_Content-Ops/src/lib/publishing/youtube-package.ts": "a03049f3b2756019f5577c39afd08f9595868e2995fcba4ad14b5561933dce51",
     "07_Content-Ops/src/lib/validation/schemas.ts": "53bc53b9c72eca1bc2b2a587bc7ec25098cfd5c198708028e82a3708f78f8969",
-    "07_Content-Ops/src/lib/youtube/upload.ts": "ed56f4a8365e2c806538446754d53a8bf939446bd35aa9c67f8ab7a7de9d6ca1",
+    "07_Content-Ops/src/lib/youtube/upload.ts": "bdd1ed530c97d6434cec5d546498915a82781c2dc83bb31df1435b430faee631",
     "07_Content-Ops/tests/ffprobe-cfr.test.ts": "2835ae1385f7feab13d0a2f30332259c992e153257eb59f8fc3df0b00525deaa",
     "07_Content-Ops/tests/shorts-gate.test.ts": "6185d1240cf025cbf50829369eb2a43b1bbae8de4337a5fd942af3e3dd7b2729",
-    "07_Content-Ops/tests/youtube-upload.test.ts": "4fa8712381a0c08b601f0dd6cdd6f6c91e19cf42f15716e35832c2e4004958e0",
+    "07_Content-Ops/tests/youtube-upload.test.ts": "05ee6e9432db2138834ef36b7a11671dc70c4780fdd4ff29a3f6dcb725522da3",
     "07_Content-Ops/vitest.config.ts": "2be64aa53278b7a6b49a2408bfe06edafea74b1cd562e2973ccfef3f127b8422",
     "docs/ANALYTICS_IMPORT.md": "f158c24141ab5db0776acfe4c30d8408d565ad6e98181242642d09412d52b338",
-    "scripts/core_sync.py": "a4b24c762b9fc1c2e6ac48364112ce450936fef0c07a53df50b1c243257b450f"
+    "scripts/core_sync.py": "6c46c1d3c789f2a6dc50c129a08b0ccf06ab2e9619d71c0fbff9c9875f7bc006"
   },
   "note": "Shared tooling for both channels. Edit in orbit-with-ben, run scripts/core_sync.py lock, then push to history-of-science. Channel rules are never core."
 }

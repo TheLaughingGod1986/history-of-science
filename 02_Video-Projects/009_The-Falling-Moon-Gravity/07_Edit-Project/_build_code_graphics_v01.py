@@ -16,7 +16,79 @@ CREAM = (255, 244, 218, 255)
 WASH = (216, 178, 124, 255)
 MOON_WASH = (232, 212, 176, 255)
 
-SPECS = [
+# J2631: approved diagram replacement; local times, seconds, non-overlapping.
+MINUTE_SECOND_LABELS = [
+    ("1 SECOND", 0.40, 2.80),
+    ("1 MINUTE", 3.10, 5.85),
+    ("5 m", 6.85, 8.85),
+    ("TWO STOREYS HIGH", 9.00, 10.40),
+]
+MINUTE_SECOND_SCALE = 1.3  # 1.4 crowds the final Moon against the bracket cap.
+MINUTE_SECOND_TOP = 300.0
+MINUTE_SECOND_DROP = 300.0 * MINUTE_SECOND_SCALE
+MINUTE_SECOND_DURATION = 13.51
+MINUTE_SECOND_SPEC = {
+    "id": "05_minute_second", "file": "code_graphic_009_p4_05_minute_second.mp4",
+    "dur": MINUTE_SECOND_DURATION, "label": "", "kind": "minute_second",
+    "layout": "full_frame_period_paper", "plate": None,
+}
+
+# J2632: one circular segment, fixed initial tangent, no labels.
+# Strokes are the J2631 phone weight (desk 6801180887): about 5 px for the
+# arc and 4 px for the tangent dashes, measured on the 1080 frame. The
+# contact sheet must also carry a 390 px-wide copy of one frame at 1:1.
+FALLING_MOON_DURATION = 5.26  # unchanged motion segment
+FALLING_MOON_HEAD_FRAMES = 32
+FALLING_MOON_HEAD_S = FALLING_MOON_HEAD_FRAMES / FPS
+FALLING_MOON_EARTH = (560.0, 880.0)
+FALLING_MOON_RADIUS = 720.0
+FALLING_MOON_ANGLE = math.radians(70)
+FALLING_MOON_ARC_PX = 5
+FALLING_MOON_DASH_PX = 4
+FALLING_MOON_DASH_ON = 36
+FALLING_MOON_DASH_GAP = 28
+FALLING_MOON_SPEC = {
+    "id": "01_really_falling_c1", "file": "code_graphic_009_p3_01_really_falling_c1.mp4",
+    "dur": FALLING_MOON_DURATION + FALLING_MOON_HEAD_S, "label": "", "kind": "falling_moon",
+    "layout": "full_frame_period_paper", "plate": None,
+}
+
+
+def falling_moon_position(t):
+    """Circular motion about Earth, with a horizontal initial tangent."""
+    angle = FALLING_MOON_ANGLE * max(0.0, min(1.0, t / FALLING_MOON_DURATION))
+    cx, cy = FALLING_MOON_EARTH
+    return cx + FALLING_MOON_RADIUS * math.sin(angle), cy - FALLING_MOON_RADIUS * math.cos(angle)
+
+
+def draw_falling_moon(d, t, dur):
+    cx, cy = FALLING_MOON_EARTH
+    earth(d, cx, cy, 150, continents=True)
+    x0, y0 = falling_moon_position(0)
+    # Fixed tangent originates at the initial Moon centre, never follows it.
+    step = FALLING_MOON_DASH_ON + FALLING_MOON_DASH_GAP
+    x = int(x0)
+    # Exactly 32 distinct lead-in frames. Start beyond the Moon rim so
+    # every frame visibly changes, including before the first paper shift.
+    end_x = min(1600, x0 + 64 + (1600 - x0 - 64) * t / FALLING_MOON_HEAD_S)
+    while x < end_x:
+        d.line((x, y0, min(x + FALLING_MOON_DASH_ON, end_x), y0), fill=ink(0.85), width=FALLING_MOON_DASH_PX)
+        x += step
+    # Only the traversed arc inks on; no spare object or full-orbit preview.
+    motion_t = max(0.0, t - FALLING_MOON_HEAD_S)
+    points = [falling_moon_position(motion_t * i / 120) for i in range(121)]
+    if motion_t > 0:
+        d.line(points, fill=ink(0.9), width=FALLING_MOON_ARC_PX)
+    mx, my = falling_moon_position(motion_t)
+    # Scoped to this graphic: two off-centre open rings, 4 px ink.
+    # 30 px outer diameter leaves 22 px wash inside each ring.
+    r = 57
+    d.ellipse((mx-r, my-r, mx+r, my+r), fill=wash(moon=True), outline=ink(), width=5)
+    for dx, dy in ((-19, -13), (18, 18)):
+        d.ellipse((mx+dx-15, my+dy-15, mx+dx+15, my+dy+15), outline=ink(), width=4)
+
+
+SPECS = [FALLING_MOON_SPEC, MINUTE_SECOND_SPEC,
     {"id": "09_pull_heights", "file": "code_graphic_009_p2_09_pull_heights.mp4", "dur": 4.14, "label": "TREE, TOWER, MOUNTAIN", "kind": "pull_heights", "layout": "full_frame_period_paper", "plate": None},
     {"id": "09_pull_heights_c1", "file": "code_graphic_009_p2_09_pull_heights_c1.mp4", "dur": 4.14, "label": "PULL AT THE TOP", "kind": "pull_heights_c1", "layout": "moving_plate_overlay", "plate": "08_the_apple_c1"},
     {"id": "06_orbit_teach", "file": "code_graphic_009_p3_06_orbit_teach.mp4", "dur": 4.40, "label": "FALLING SIDEWAYS", "kind": "orbit_teach", "layout": "full_frame_period_paper", "plate": None},
@@ -77,16 +149,47 @@ def arrow(draw, x0, y0, x1, y1, p, fill, width=6, head=18):
             )
 
 
-def earth(draw, cx, cy, r, a=1.0):
+def earth(draw, cx, cy, r, a=1.0, continents=False):
     if a <= 0:
         return
     w = max(3, int(r / 14))
     draw.ellipse((cx - r, cy - r, cx + r, cy + r), fill=wash(a), outline=ink(a), width=w)
     if r < 16:
         return
-    draw.ellipse((cx - r * 0.84, cy - r * 0.84, cx + r * 0.84, cy + r * 0.84), outline=ink(0.45 * a), width=max(2, w - 2))
-    draw.arc((cx - r * 0.35, cy - r * 0.72, cx + r * 0.55, cy + r * 0.15), 210, 30, fill=ink(a), width=max(2, w - 1))
-    draw.arc((cx - r * 0.62, cy - r * 0.05, cx + r * 0.15, cy + r * 0.72), 20, 200, fill=ink(a), width=max(2, w - 1))
+    if not continents:
+        draw.ellipse((cx - r * 0.84, cy - r * 0.84, cx + r * 0.84, cy + r * 0.84), outline=ink(0.45 * a), width=max(2, w - 2))
+        draw.arc((cx - r * 0.35, cy - r * 0.72, cx + r * 0.55, cy + r * 0.15), 210, 30, fill=ink(a), width=max(2, w - 1))
+        draw.arc((cx - r * 0.62, cy - r * 0.05, cx + r * 0.15, cy + r * 0.72), 20, 200, fill=ink(a), width=max(2, w - 1))
+        return
+    # Simplified coastlines, same ink as the arc. Unit circle, y up.
+    # Two Chaikin passes round the corners so they read as land, not a symbol.
+    cw = max(4, min(w, FALLING_MOON_ARC_PX))
+    coasts = (
+        # North America, wide, with a gulf and a Mexican taper.
+        ((-0.68, 0.18), (-0.55, 0.42), (-0.36, 0.58), (-0.18, 0.40),
+         (-0.26, 0.22), (-0.16, 0.08), (-0.30, -0.02), (-0.46, 0.08), (-0.62, 0.16)),
+        # South America, the long triangle south-east of the isthmus.
+        ((-0.28, -0.08), (-0.10, -0.14), (-0.02, -0.36), (-0.14, -0.64),
+         (-0.30, -0.42), (-0.34, -0.16)),
+        # Europe, a small cap north of Africa.
+        ((0.08, 0.34), (0.14, 0.55), (0.36, 0.50), (0.34, 0.32), (0.16, 0.30)),
+        # Africa, the broad north and the taper to the cape, east of the Atlantic gap.
+        ((0.08, 0.20), (0.28, 0.26), (0.42, 0.08), (0.34, -0.12),
+         (0.22, -0.40), (0.08, -0.52), (-0.02, -0.20), (0.02, 0.02)),
+    )
+    for pts in coasts:
+        ring = list(pts)
+        for _ in range(2):
+            nxt = []
+            m = len(ring)
+            for i in range(m):
+                x0, y0 = ring[i]
+                x1, y1 = ring[(i + 1) % m]
+                nxt.append((0.75 * x0 + 0.25 * x1, 0.75 * y0 + 0.25 * y1))
+                nxt.append((0.25 * x0 + 0.75 * x1, 0.25 * y0 + 0.75 * y1))
+            ring = nxt
+        xy = [(cx + x * r, cy - y * r) for x, y in ring]
+        draw.line(xy + [xy[0]], fill=ink(a), width=cw, joint="curve")
 
 
 def moon(draw, cx, cy, r, a=1.0):
@@ -160,6 +263,58 @@ def _feathered_hills(d, gy, p):
     d.line(pts, fill=ink(0.85 * p), width=5)
     pts2 = [(x, y + 14 + 6 * math.sin(x * 0.013)) for x, y in pts]
     d.line(pts2, fill=ink(0.45 * p), width=3)
+
+
+def minute_second_positions(t):
+    """One accelerated drop; Moon follows a monotone arc to the same depth.
+
+    Diagram uses different illustrative time scales, not a real-time ratio.
+    Both centre displacements finish at 390 px (1.3x). No camera motion moves ink up.
+    """
+    fall = max(0.0, min(1.0, (t - 0.45) / 1.0))
+    u = max(0.0, min(1.0, t / MINUTE_SECOND_DURATION))
+    # A circular arc with an initially horizontal tangent; y never decreases.
+    angle = u * 1.0
+    radius = MINUTE_SECOND_DROP / (1.0 - math.cos(1.0))
+    return (480.0, MINUTE_SECOND_TOP + MINUTE_SECOND_DROP * fall * fall), (
+        1030.0 + radius * math.sin(angle),
+        MINUTE_SECOND_TOP + radius * (1.0 - math.cos(angle)),
+    )
+
+
+def minute_second_label_alpha(t, start, end):
+    return max(0.0, min(ease((t - start) / 0.4),
+                        1.0 - ease((t - (end - 0.4)) / 0.4)))
+
+
+def draw_minute_second(d, t, dur):
+    # Same uniform 1.3x geometry on both sides; labels stay at y=980.
+    top, drop = MINUTE_SECOND_TOP, MINUTE_SECOND_DROP
+    bottom = top + drop
+    d.line((960, 190, 960, 840), fill=ink(0.55), width=5)
+    ruler_x = 285
+    d.line((ruler_x, top, ruler_x, bottom), fill=ink(), width=5)
+    for i in range(11):
+        yy = top + i * drop / 10
+        d.line((ruler_x, yy, ruler_x + (46 if i % 2 == 0 else 29), yy),
+               fill=ink(), width=5)
+    dot_r = 16 * MINUTE_SECOND_SCALE
+    d.line((382, bottom + dot_r, 584, bottom + dot_r), fill=ink(), width=5)
+    # Wider gaps keep the horizontal tangent visibly dashed at phone size.
+    for xx in range(1030, 1785, 58):
+        d.line((xx, top, min(xx + 29, 1785), top), fill=ink(0.7), width=4)
+    pts = [minute_second_positions(dur * i / 100)[1] for i in range(101)]
+    d.line(pts, fill=ink(0.55), width=5)
+    (dx, dy), (mx, my) = minute_second_positions(t)
+    d.ellipse((dx - dot_r, dy - dot_r, dx + dot_r, dy + dot_r), fill=ink())
+    moon(d, mx, my, 57)  # 1.5x the first candidate's radius, including its ink outline.
+    # Identical aligned brackets; entirely absent on f202 and f203.
+    p = prog(t, 6.85, 7.25)
+    if p > 0:
+        for x in (701, 1860):
+            d.line((x, top, x, top + drop * p), fill=ink(), width=5)
+            d.line((x - 20, top, x + 20, top), fill=ink(p), width=5)
+            d.line((x - 20, bottom, x + 20, bottom), fill=ink(p), width=5)
 
 
 def draw_pull_heights(d, t, dur):
@@ -452,6 +607,8 @@ def draw_station_curve(d, t, dur):
 
 
 DRAW = {
+    "falling_moon": draw_falling_moon,
+    "minute_second": draw_minute_second,
     "pull_heights": draw_pull_heights,
     "pull_heights_c1": draw_pull_heights_c1,
     "orbit_teach": draw_orbit_teach,
@@ -512,19 +669,27 @@ def paint(paper, spec, k):
     else:
         DRAW[kind](d, t, spec["dur"])
     frame = Image.alpha_composite(frame, ov)
+    label = spec["label"]
     a = label_alpha(t, spec["dur"])
+    if kind == "minute_second":
+        label, a = "", 0.0
+        for text, start, end in MINUTE_SECOND_LABELS:
+            alpha = minute_second_label_alpha(t, start, end)
+            if alpha > 0:
+                label, a = text, alpha
+                break
     if a > 0.01:
         lab = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-        font = fit_font(spec["label"])
+        font = fit_font(label)
         fill = (CREAM[0], CREAM[1], CREAM[2], int(255 * a))
         stroke = (48, 26, 12, int(255 * a))
-        ImageDraw.Draw(lab).text((W / 2, 980), spec["label"], font=font, fill=fill, anchor="mm", stroke_width=2, stroke_fill=stroke)
+        ImageDraw.Draw(lab).text((W / 2, 980), label, font=font, fill=fill, anchor="mm", stroke_width=2, stroke_fill=stroke)
         frame = Image.alpha_composite(frame, lab)
     return frame.convert("RGB")
 
 
 def render_one(paper, spec, out, stills_only=False):
-    n = int(round(spec["dur"] * FPS))
+    n = math.ceil(spec["dur"] * FPS) if spec["kind"] == "minute_second" else int(round(spec["dur"] * FPS))
     show = min(3.6, spec["dur"] - 0.9)
     hero_t = max(1.2, 0.45 + show - 0.4)
     still_k = min(n - 1, int(hero_t * FPS))

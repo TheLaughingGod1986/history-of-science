@@ -256,6 +256,41 @@ class ScopeOrderAndBatchTests(unittest.TestCase):
         with self.assertRaisesRegex(RUNNER.GuardError, "Part 01"):
             RUNNER.order_rows(non_p1)
 
+    def test_resume_after_first_15_verified_rows_starts_at_tortoise(self):
+        # Batches 1–3 completed: 12 Part 01 rows AND the first 3 Part 02 rows.
+        self.assertEqual([r.part for r in self.rows[:15]], [1] * 12 + [2] * 3)
+        ledger = [{"row_id": r.row_id} for r in self.rows[:15]]
+        with patch.object(RUNNER, "verified_output", return_value=True):
+            batch = RUNNER.next_batch(self.rows, ledger)
+        self.assertEqual(batch[0].row_id, "P2:05_tortoise_overboard")
+        self.assertEqual(batch, self.rows[15:20])
+        self.assertEqual(RUNNER.assert_batch_limits(batch), 500)
+
+    def test_resume_after_only_part1_starts_at_first_part2_row(self):
+        ledger = [{"row_id": r.row_id} for r in self.rows if r.part == 1]
+        self.assertEqual(len(ledger), 12)
+        with patch.object(RUNNER, "verified_output", return_value=True):
+            batch = RUNNER.next_batch(self.rows, ledger)
+        self.assertTrue(batch[0].row_id.startswith("P2:02"))
+        self.assertEqual(batch, self.rows[12:17])
+
+    def test_full_plan_without_part1_still_refused_when_resuming(self):
+        remainder = [r for r in self.rows if r.part != 1]
+        with self.assertRaisesRegex(RUNNER.GuardError, "Part 01"):
+            RUNNER.next_batch(remainder, [])
+        with self.assertRaisesRegex(RUNNER.GuardError, "Part 01"):
+            RUNNER.batch_rows(remainder)
+
+    def test_remainder_order_and_duplicates_are_refused(self):
+        remainder = self.rows[15:]
+        for bad in ([remainder[1], remainder[0], *remainder[2:]],
+                    [*remainder[:5], remainder[6], remainder[5], *remainder[7:]]):
+            with self.subTest(ids=[r.row_id for r in bad[:7]]):
+                with self.assertRaisesRegex(RUNNER.GuardError, "out-of-order"):
+                    RUNNER.batch_rows(bad, require_part1_first=False)
+        with self.assertRaisesRegex(RUNNER.GuardError, "duplicate"):
+            RUNNER.batch_rows([remainder[0], remainder[0]], require_part1_first=False)
+
     def test_batches_respect_5_rows_and_1000_credits(self):
         batches = RUNNER.batch_rows(self.rows)
         self.assertEqual(len(batches), 14)
@@ -530,6 +565,74 @@ class SharedAccountingLockAndDuplicateProcessTests(unittest.TestCase):
                 self.assertEqual(account.snapshot()["liability"], 12600)
                 account.reconcile_posted("HOS:013:P01:01_study_beaks:t1", evidence={"before": 14890, "after": 14790, "delta": 100})
                 self.assertEqual(account.snapshot()["liability"], 12500)
+
+    def test_dry_run_existing_reservation_does_not_double_count_cap(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            state = root / "accounting"
+            with RUNNER.SharedFlowAccounting(state) as account:
+                account.reserve("historical", "HOS:009", 800, live=20000)
+                account.intent("historical-charge", "historical", 800, live=20000)
+                account.resolve("historical-charge", submitted=True, evidence={"fixture": True})
+                account.reserve(RUNNER.DEFAULT_RESERVATION, RUNNER.FILM_ID, 6600, live=20000)
+                for row in range(15):
+                    charge = f"completed-{row}"
+                    account.intent(charge, RUNNER.DEFAULT_RESERVATION, 100, live=20000)
+                    account.resolve(charge, submitted=True, evidence={"fixture": True})
+                    account.reconcile_posted(charge, evidence={"fixture": True})
+            before = (state / "account.jsonl").read_bytes()
+            with patch.object(RUNNER, "verify_style_references", return_value={}), \
+                 patch.object(RUNNER, "verify_nas_archive_mounted", return_value=root), \
+                 patch.object(RUNNER, "latest_recorded_flow_balance", return_value={"left": 8940}):
+                report = RUNNER.build_dry_run_report(
+                    ROOT, media=root, archive_dir=root, floor=3000, accounting_state=state)
+                accounting = report["shared_accounting_readonly"]
+                self.assertEqual(accounting["remaining_reservations"], 5100)
+                self.assertEqual(accounting["unposted_charges"], 800)
+                self.assertEqual(accounting["total_liability"], 5900)
+                self.assertEqual(accounting["unreserved_013_cap"], 0)
+                self.assertEqual(accounting["projected_headroom_after_013_cap"], 3040)
+                self.assertTrue(accounting["would_allow_reserve_at_recorded_balance"])
+                for other, floor, allowed in [(40, 3000, True), (41, 3000, False), (0, 3041, False)]:
+                    with self.subTest(other=other, floor=floor):
+                        checked = RUNNER.build_dry_run_report(
+                            ROOT, media=root, archive_dir=root, other=other, floor=floor,
+                            accounting_state=state)["shared_accounting_readonly"]
+                        self.assertEqual(checked["would_allow_reserve_at_recorded_balance"], allowed)
+            self.assertEqual((state / "account.jsonl").read_bytes(), before)
+
+    def test_dry_run_new_reservation_keeps_full_cap_and_pending_guard(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            empty = RUNNER.SharedFlowAccounting.peek_readonly(root / "absent")
+            with patch.object(RUNNER, "verify_style_references", return_value={}), \
+                 patch.object(RUNNER, "verify_nas_archive_mounted", return_value=root), \
+                 patch.object(RUNNER.SharedFlowAccounting, "peek_readonly", return_value=empty), \
+                 patch.object(RUNNER, "latest_recorded_flow_balance") as balance:
+                for left, pending, allowed in [(9600, False, True), (9599, False, False),
+                                                (9600, True, False), (None, False, False)]:
+                    with self.subTest(left=left, pending=pending):
+                        balance.return_value = {"left": left} if left is not None else None
+                        empty["pending"] = pending
+                        checked = RUNNER.build_dry_run_report(
+                            ROOT, media=root, archive_dir=root, floor=3000)["shared_accounting_readonly"]
+                        self.assertEqual(checked["unreserved_013_cap"], 6600)
+                        self.assertEqual(checked["projected_headroom_after_013_cap"],
+                                         left - 6600 if left is not None else None)
+                        self.assertEqual(checked["would_allow_reserve_at_recorded_balance"], allowed)
+                balance.return_value = {"left": 20000}
+                for reservation, pending in [
+                    (dict(cap=6600, film=RUNNER.FILM_ID, active=True), True),
+                    (dict(cap=6600, film=RUNNER.FILM_ID, active=False), False),
+                    (dict(cap=6500, film=RUNNER.FILM_ID, active=True), False),
+                    (dict(cap=6600, film="HOS:009", active=True), False),
+                ]:
+                    with self.subTest(reservation=reservation, pending=pending):
+                        empty["reservations"] = {RUNNER.DEFAULT_RESERVATION: reservation}
+                        empty["pending"] = pending
+                        checked = RUNNER.build_dry_run_report(
+                            ROOT, media=root, archive_dir=root, floor=3000)["shared_accounting_readonly"]
+                        self.assertFalse(checked["would_allow_reserve_at_recorded_balance"])
 
     def test_writer_lock_and_two_process_accounting_competition(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -1304,6 +1407,170 @@ process.stdout.write(JSON.stringify({ ev, out, domClicks }));
                                     evidence_path=root / "create.json", other=6000,
                                 )
 
+
+
+class DetachedFloorTests(unittest.TestCase):
+    def test_floor_survives_printed_command_and_launch_worker(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            cli = ["detach-command", "--repo", str(ROOT), "--media", str(root),
+                   "--archive", str(root), "--other-reservations", "0",
+                   "--ledger", str(root / "ledger.jsonl"),
+                   "--lock", str(root / "writer.lock"),
+                   "--pid", str(root / "runner.pid"),
+                   "--log", str(root / "run.log"), "--done", str(root / "run.done")]
+            for explicit in ([], ["--floor", "3000"], ["--floor", "3500"]):
+                expected = explicit[-1] if explicit else "3000"
+                with self.subTest(floor=expected):
+                    from io import StringIO
+                    output = StringIO()
+                    with patch("sys.stdout", output), patch.object(RUNNER, "runner_state_dir", return_value=root):
+                        self.assertEqual(RUNNER.main(cli + explicit), 0)
+                    launch = shlex.split(json.loads(output.getvalue())[-1])
+                    self.assertEqual(launch[launch.index("--floor") + 1], expected)
+                    with patch.object(RUNNER, "runner_state_dir", return_value=root), patch.object(RUNNER, "launch_once", return_value=0) as owner:
+                        self.assertEqual(RUNNER.main(launch[2:]), 0)
+                    child = owner.call_args.args[0]
+                    self.assertEqual(child[2], "submit")
+                    self.assertEqual(child[child.index("--floor") + 1], expected)
+                    self.assertNotIn("--log", child)
+            self.assertEqual(list(root.iterdir()), [])
+
+    def test_detached_floor_rejects_insufficient_reservation_and_accepts_boundary(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            command = RUNNER.detached_command(
+                SCRIPT, root / "run.log", root / "run.done", repo=ROOT,
+                media=root, archive=root, other=0, floor=3000,
+                ledger=root / "ledger.jsonl", lock=root / "writer.lock", pid=root / "runner.pid")
+            args = shlex.split(command[-1])
+            floor = int(args[args.index("--floor") + 1])
+            with RUNNER.SharedFlowAccounting(root / "accounting") as account:
+                before = account.snapshot()
+                with self.assertRaisesRegex(RUNNER.GuardError, "insufficient shared Flow headroom"):
+                    account.reserve("test", RUNNER.FILM_ID, 6600, live=9599, floor=floor)
+                self.assertEqual(account.snapshot(), before)
+                account.reserve("test", RUNNER.FILM_ID, 6600, live=9600, floor=floor)
+                self.assertEqual(account.snapshot()["liability"], 6600)
+                with self.assertRaisesRegex(RUNNER.GuardError, "insufficient shared Flow headroom"):
+                    account.reserve("test", RUNNER.FILM_ID, 6600, live=9599, floor=floor)
+
+    def test_armed_submit_without_floor_refuses_reservation_under_3000(self):
+        """Direct armed `submit` (no --floor) keeps the 3,000 headroom, same as detach."""
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            seen = {}
+
+            def fake_execute(batch, **kwargs):
+                seen["floor"] = kwargs["floor"]
+                with RUNNER.SharedFlowAccounting(root / "accounting") as account:
+                    before = account.snapshot()
+                    try:
+                        account.reserve(
+                            "direct-submit",
+                            RUNNER.FILM_ID,
+                            RUNNER.MAX_TOTAL_CREDITS,
+                            live=9599,
+                            floor=kwargs["floor"],
+                        )
+                    except RUNNER.GuardError:
+                        seen["unchanged"] = account.snapshot() == before
+                        raise
+                return []
+
+            argv = [
+                "submit",
+                "--repo", str(ROOT),
+                "--media", str(root),
+                "--other-reservations", "0",
+                "--ledger", str(root / "ledger.jsonl"),
+                "--lock", str(root / "writer.lock"),
+                "--pid", str(root / "runner.pid"),
+                "--done", str(root / "runner.done"),
+            ]
+            self.assertNotIn("--floor", argv)
+            with patch.dict(os.environ, {RUNNER.SUBMIT_ENV: "1"}), \
+                 patch.object(RUNNER, "execute_shared_batch", side_effect=fake_execute):
+                with self.assertRaisesRegex(RUNNER.GuardError, "insufficient shared Flow headroom"):
+                    RUNNER.main(argv)
+            self.assertEqual(seen["floor"], RUNNER.DETACHED_HEADROOM_FLOOR)
+            self.assertTrue(seen["unchanged"])
+
+    def test_armed_submit_refuses_floor_below_3000_and_holds_9599_9600_boundary(self):
+        """An explicit floor under 3,000 never reserves. Floor 3,000 refuses 9,599 and accepts 9,600."""
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            base = [
+                "submit",
+                "--repo", str(ROOT),
+                "--media", str(root),
+                "--other-reservations", "0",
+                "--ledger", str(root / "ledger.jsonl"),
+                "--lock", str(root / "writer.lock"),
+                "--pid", str(root / "runner.pid"),
+                "--done", str(root / "runner.done"),
+            ]
+            with patch.object(RUNNER, "execute_shared_batch") as execute:
+                with patch.dict(os.environ, {RUNNER.SUBMIT_ENV: "0"}, clear=False):
+                    with self.assertRaises(SystemExit) as unarmed:
+                        RUNNER.main(base + ["--floor", "0"])
+                self.assertIn("not armed", str(unarmed.exception))
+                with patch.dict(os.environ, {RUNNER.SUBMIT_ENV: "1"}):
+                    for low in ("0", "2999"):
+                        with self.subTest(floor=low):
+                            with self.assertRaisesRegex(RUNNER.GuardError, "armed submit floor below 3000"):
+                                RUNNER.main(base + ["--floor", low])
+                execute.assert_not_called()
+            self.assertEqual(list(root.iterdir()), [])
+
+            seen = []
+
+            def fake_execute(batch, **kwargs):
+                floor = kwargs["floor"]
+                seen.append(floor)
+                with RUNNER.SharedFlowAccounting(root / f"accounting-{len(seen)}") as account:
+                    before = account.snapshot()
+                    with self.assertRaisesRegex(RUNNER.GuardError, "insufficient shared Flow headroom"):
+                        account.reserve(
+                            "direct-submit", RUNNER.FILM_ID, RUNNER.MAX_TOTAL_CREDITS,
+                            live=9599, floor=floor)
+                    self.assertEqual(account.snapshot(), before)
+                    account.reserve(
+                        "direct-submit", RUNNER.FILM_ID, RUNNER.MAX_TOTAL_CREDITS,
+                        live=9600, floor=floor)
+                    self.assertEqual(account.snapshot()["liability"], RUNNER.MAX_TOTAL_CREDITS)
+                return []
+
+            with patch.dict(os.environ, {RUNNER.SUBMIT_ENV: "1"}), \
+                 patch.object(RUNNER, "execute_shared_batch", side_effect=fake_execute):
+                self.assertEqual(RUNNER.main(base), 0)
+                self.assertEqual(RUNNER.main(base + ["--floor", "3000"]), 0)
+            self.assertEqual(seen, [RUNNER.DETACHED_HEADROOM_FLOOR, RUNNER.DETACHED_HEADROOM_FLOOR])
+
+    def test_dry_run_floor_stays_at_zero(self):
+        captured = {}
+
+        def fake_dry_run(repo, *, media, archive_dir, other, floor, out):
+            captured["floor"] = floor
+            return {}
+
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            with patch.object(RUNNER, "cmd_dry_run", side_effect=fake_dry_run):
+                self.assertEqual(RUNNER.main([
+                    "dry-run", "--repo", str(ROOT), "--media", str(root), "--archive", str(root),
+                ]), 0)
+        self.assertEqual(captured["floor"], 0)
+        self.assertIs(captured["floor"], RUNNER.HEADROOM_FLOOR)
+
+    def test_negative_detached_floor_is_refused(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            with self.assertRaisesRegex(RUNNER.GuardError, "invalid detached floor"):
+                RUNNER.detached_command(
+                    SCRIPT, root / "run.log", root / "run.done", repo=ROOT,
+                    media=root, archive=root, other=0, floor=-1,
+                    ledger=root / "ledger.jsonl", lock=root / "writer.lock", pid=root / "runner.pid")
 
 
 class PolicyRefusalTests(unittest.TestCase):

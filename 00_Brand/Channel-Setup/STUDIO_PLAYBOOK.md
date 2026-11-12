@@ -181,9 +181,9 @@ python3 00_Brand/Channel-Setup/tools/vo_check.py <take.mp3> --script <film>/01_S
 - **Silent picture.** Strip Veo audio. No readable text or logos in generated plates, except the Explorer's locked book title. Text is added in the edit.
 - **Never:** reuse a cutscene inside one film, loop scenery to pad, slow-mo stretch, freeze-pad, or Ken-Burns a card.
 
-### Teach on screen (Ben, 11 Oct 2026; generated from AGENTS.md, edit AGENTS.md then run `python3 scripts/sync_rules.py`)
+### Teach on screen (Ben, 11 Oct 2026; generated from studio/RULES.md, edit studio/RULES.md then run `python3 scripts/sync_rules.py`)
 
-<!-- SYNC: AGENTS.md#Teach on screen (Ben, 11 Oct 2026) -->
+<!-- SYNC: studio/RULES.md#Teach on screen (Ben, 11 Oct 2026) -->
 Ben, 11 Oct 2026 21:45, for every future video on both channels: *"add more graphs and charts when needed, more overlays, more animations, and more interesting facts to explain about dates, explain about the people we're mentioning, and make it more educational and more useful."* This applies to every script signed off and every picture part started after 11 Oct 2026. It builds on the teach labels (Ben, 20 Sep; `STUDIO_PLAYBOOK.md` §5 *The look*) and changes no locked rule. The premium 3D cartoon house style, white Didot italic, one label at a time, and "no flat poster or UI cards" all stand.
 
 **Script.** Mark these inside the scene's `[VISUAL MUST: … · LABEL: …]`, the same way LABEL is marked, so `review:script` doesn't count them and `gate:episode` doesn't change. Chief counts them at script review (`grep -o "DATA:" <script> | wc -l`, and the same for each marker).
@@ -238,9 +238,9 @@ Any FAIL goes back to the plate board or the edit before Ben's watch.
 **Read (not a ship gate).** A long is scored once it has at least 100 Studio views. Under that, 0:30 retention and average percentage viewed are recorded and left unscored. **Pass:** 0:30 retention at least 60%, and days 0–13 average percentage viewed at least 22% (views-weighted across the longs that have crossed 100 views). **Stop and revert** this experiment for any 008–010 edit that is not yet locked if a cut built to it hits a UAT hard fail, or if a scored long's 0:30 retention is under 40%. An uploaded file stays as it aired. Readouts 3 Dec 2026 and 3 Jan 2027. The log is orbit-with-ben `05_Analytics/tests/HOS_LONG_TESTS.md` and `05_Analytics/LEARNINGS.md` → *HOS-2026-11-E2*.
 <!-- /SYNC -->
 
-### Polish pass (Astrum ref, 11 Oct 2026; generated from AGENTS.md, edit AGENTS.md then run `python3 scripts/sync_rules.py`)
+### Polish pass (Astrum ref, 11 Oct 2026; generated from studio/RULES.md, edit studio/RULES.md then run `python3 scripts/sync_rules.py`)
 
-<!-- SYNC: AGENTS.md#Polish pass (Astrum ref, 11 Oct 2026) -->
+<!-- SYNC: studio/RULES.md#Polish pass (Astrum ref, 11 Oct 2026) -->
 Ben, 11 Oct 2026 22:17, sent Astrum's *What Is It Like on the Surface of a Black Hole Planet?* (`PxJSOWyYWkc`, 27 min, 1.1M views) as a style reference for both channels: *"let me know what you think we can incorporate into our workflow."* Chief adopted five of its techniques the same night. They apply to every picture part and edit started after 11 Oct 2026, in the HOS house style. **Where an Astrum technique meets a HOS lock, the HOS lock wins**: the premium 3D cartoon look, white Didot italic, one label at a time, no flat poster or UI cards, the UAT hard fails and the first-minute timings all stand.
 
 **Not adopted:** Astrum's long shot holds (6–8 s, some 15 s). The picture still changes every 4–6 s, except the HOS-2026-11-E2 window on 008–010 (cuts under 4.5 s from 0:00 to 0:30). No card holds still for more than 4 s, and length still comes from narration, not holds.
@@ -455,7 +455,7 @@ HOS social posting is **Buffer via HOS Showrunner only**.
 Since 2 Oct 2026 (Ben: *"more authority and fewer checks with me"*), Claude and Grok decide every stage on the desk: topic, script, Short scripts, voice, picture, titles, descriptions, tags and the schedule. Claude reviews each stage in Ben's place, and every check still has to PASS.
 
 <!-- SYNC: AGENTS.md#Ben's check-in (2 Oct 2026: one final OK, not one per stage) -->
-**Chief owns the studio (Ben's handover to Chief, 9 Oct 2026; Ben, 10 Oct 2026: *"I should not need to give permission all the time"*).** Wherever this section says Claude decides, PASSes, OKs or makes an exception, Chief (Grok Bot) now holds that call in place of Claude. A Chief OK is a plain "[Chief]" post on the desk #180 or orbit-with-ben #99, or an orbit-with-ben job added `--by chief`; a brief saying "Ben approved (relayed by Chief)" counts as Ben's word. Workers act on either and never ask Ben to re-post an OK. Ben is asked only for real money (past £0), what truly can't be undone, and his per-film watch below; deleting a video stays on the Never list.
+**Chief owns the studio (Ben's handover to Chief, 9 Oct 2026; Ben, 10 Oct 2026: *"I should not need to give permission all the time"*).** Wherever this section says Claude decides, PASSes, OKs or makes an exception, Chief (Grok Bot) now holds that call in place of Claude. A Chief OK is a plain "[Chief]" post on the desk #180 or orbit-with-ben #99, or an orbit-with-ben job added `--by chief`; a brief saying "Ben approved (relayed by Chief)" counts as Ben's word. Workers act on either and never ask Ben to re-post an OK. Ben is asked only for real money (past £0), what truly can't be undone, and his per-film watch below; deleting a video stays on the Never list. **Ben, 11 Nov 2026, restated it:** *"All I'll do is UAT films. All the other decisions, use your team of agents to come up with the best course."* So the desk decides every rules, packaging, spend-order and process question itself, without passing it to Ben with a recommendation. Ben hears about a film when it is ready for his watch, and about real money or something irreversible.
 
 Ben, 2 Oct 2026: *"Claude and Grok have more authority and fewer checks with me. Check in only once the film, Shorts and thumbnails are ready to approve."*
 

@@ -1,81 +1,24 @@
-# J2230 — 6 Nov 2026, Codex worker continuation
+# J2230 — Current Handoff (Updated 12 Nov 2026, Gemini audio & slot check)
 
-**Incomplete, retain step 3/4. No final cut, KEEP, new Ben-watch card, scheduling, upload or spend.**
+**Status: Parked for Chief (`step 3 of 4`). £0 / 0 credits spent. No VO regeneration, no text rewrite, no upload/schedule, no `jobs.py awaits`.**
 
-This note supersedes the timing assumptions in the older `HANDOFF.md` and
-`VACCINE_ASSEMBLY_INPUTS_v01.json`. Older inputs and all Harvey/Willow files are untouched.
+Full details, SHA-256 hashes, and exact timestamps: [`GEMINI_AUDIO_AND_SLOTS_2026-11-12.md`](./GEMINI_AUDIO_AND_SLOTS_2026-11-12.md).
 
-## Material timing correction
+## 1. 18 Nov – 6 Dec 2026 Slot Check
+- **Filled on YouTube (2 Shorts — Willow `006` pair from `J2169`/`J2263`):**
+  - `Wed 18 Nov 11:30Z` (`ChbsigHD5_o`, *How Do Plants Clean the Air?*, `J2272`, off-pattern Wed left in place)
+  - `Sat 21 Nov 11:30Z` (`Bks_JLId1ew`, *How Do Plants Make Oxygen?*, `J2273`, on-pattern Sat)
+- **Still EMPTY on YouTube:**
+  - **10 of 11** locked 7 Nov HOS pattern slots (`Sat · Fri · Sun · Tue 11:30 London`): **Fri 20 Nov, Sun 22 Nov, Tue 24 Nov, Fri 27 Nov, Sat 28 Nov, Sun 29 Nov, Tue 1 Dec, Fri 4 Dec, Sat 5 Dec, Sun 6 Dec** (with `Fri 20 Nov`, `Sun 22 Nov`, `Sat 28 Nov`, `Sun 29 Nov` unreserved even around conditional `008`/`009`/`010` holds).
+  - **9 of 11** pre-7-Nov `Mon/Wed/Fri/Sat` dates from the 5 Nov brief: `20, 23, 25, 27, 28, 30 Nov` and `2, 4, 5 Dec`.
 
-The old eradication MP4 does **not** contain its stated narration. Its original
-intervals used Part 05's planned start **409.59 s** from `VO_RETIME_v01.json`.
-The actual v04 cut list and master builder place Part 05 at frame 9647 / 24 =
-**401.958333 s**. The original audio word check records large insertions and
-replacements, including the body-learning section at the opening; see
-`eradication_original_mix_check_v01.json`. Do not assemble from that old MP4.
+## 2. Direct Audio Listening Verdicts
+1. **Vaccine `007` Eradication (`eradication_vo_from_master_v02.wav` `388ae394…` & `eradication_vo_input_v02.wav` `19ee3ced…` & raw Part 05 `18b72532…`) — FAIL CONFIRMED BY EAR:**
+   - **`0:00–0:03`:** Raw Part 05 (`41.38–42.65 s`) genuinely speaks **"A disease that have killed hundreds of millions..."** (audible `/v/` in `"have killed"` vs `/d/` in `"had been wiped out"` at `0:04.20`), not canonical `"had killed"`.
+   - **`0:06–0:09`:** Raw Part 05 (`48.30–49.35 s`) says plural **"by humans."**, but the `49.10 s` trim chops off the final `/z/` and butt-splices into `"Health workers"` with zero pause, sounding like **"ended by human— Health workers travelled..."**. (`eradication_vo_from_master_v02.wav` also slightly clips `"gone"` at `0:22.46`; `eradication_vo_input_v02.wav` preserves it.)
+2. **Vaccine `007` Variolation (`variolation_vo_input_v01.wav` `cdf6e027…`) — PASS BY EAR:** All 64 words clean (`"onto"` at `~0:16.70` is normal speech for `"on to"`). Needs Chief confirmation on opening (`"Doctors took a little matter from a smallpox sore..."`) before vertical assembly.
+3. **Harvey `005` Heart-Pump `v02` (`hos_005_s07_heart_pulse_v02.mp4` `51a4b10d…`) — PASS BY EAR:** `vo_check` `"it circulates"` insert at `~0:24.22` is a false positive; voice stops cleanly after *"in about a minute."* and the ~48 BPM bed fits cleanly.
+4. **Harvey `005` Cuff `v02` (`hos_005_s06_blood_pressure_cuff_v02.mp4` `8ac9a291…`) — PASS BY EAR:** Speech clean throughout; `music_gate` 150 BPM warning is double-time detection on a calm, unhurried plucked bed.
 
-`prepare_corrected_eradication_input.py` verifies the existing v04 master hash
-and the exact final VO stem used by the v04 builder, maps through the actual
-master offset, and creates new 16:9 reference video and separate VO inputs:
-
-- `/Users/benjaminoats/_desk/renders/J2230/eradication_corrected_inputs_v02/eradication_assembly_input_v02.mp4`
-- `/Users/benjaminoats/_desk/renders/J2230/eradication_corrected_inputs_v02/eradication_vo_from_master_v02.wav`
-- Both fully decode, 22.46 s. Full source/output hashes and intervals are in
-  `ERADICATION_CORRECTED_INPUT_v02.json`. These are assembly inputs, not Shorts.
-
-The original raw trim also ended at Part 05 40.30 s, inside “gone” (start 40.24,
-sentence end 40.60). New inputs preserve it through 40.72 s. The deletion flag
-disappears in both v02 checks. There is no next sentence before 41.38 s.
-
-## Actual VO checks and capability hold
-
-`prepare_vaccine_stems.py` also prepares hash-verified separate raw VO inputs
-and word-start maps in `_desk/renders/J2230/vaccine_stems_v01` and `_v02`.
-These preserve the earlier proposed sentence order and have no new words.
-
-- Variolation raw stem: `vo_check.py` **PASS**, exit 0, 24.50 s, mean −22.8 dB,
-  peak −4.5 dB. Warning: “on to” / “onto” at about 0:16.70; listen. Exact output
-  is in `variolation_stem_vo_check_v01.json`. This is a VO-input check only.
-- Eradication corrected final-master VO stem: `vo_check.py` **FAIL**, exit 1,
-  22.46 s, mean −25.6 dB, peak −11.5 dB. The remaining real failure flag is
-  “had killed” / ASR “have killed” at about 0:00.98. There is also a warning at
-  about 0:07.12, “humans” / “human health workers”. Exact output is in
-  `eradication_corrected_vo_check_v02.json`. The same first failure occurs on
-  the independent hash-verified raw Part 05 extract.
-
-This session exposed command output and still-image viewing but demonstrated
-neither audio_input nor moving_video_input. ASR is evidence of a flag, not a
-listener. Do **not** rewrite the canonical text, claim this is a transcription
-error, regenerate narration, or waive the failed check. A capable listener
-must adjudicate those exact spans; if the spoken take is wrong, Chief owns
-the recovery decision under this job's existing-VO/£0 scope.
-
-## Next work
-
-1. Listen to the corrected eradication WAV at 0:00–0:03 and 0:06–0:09, and the
-   variolation WAV at 0:15–0:19. Also retain Harvey heart-pump's existing
-   extra-“it circulates” listening flag and cuff music-pace flag.
-2. Resolve both Vaccine openings before final assembly. The existing recipes
-   still open “Doctors took…” and “A disease…”. No new opening is approved here.
-   The job calls for anomaly-first openings; the earlier eradication opening
-   FIX remains. Do not silently mint a new spoken line in this £0 lift job.
-3. Build distinct final vertical edits with original moving picture, captions,
-   exact long title, full bed/SFX and four-second loop; run all current gates
-   and independent review. Existing masters contain teach labels: do not
-   unknowingly inherit extra or mistimed overlays in a Short.
-4. Hash-verify durable final copies; only reviewed finished cuts get unique
-   Play links and `jobs.py awaits`. Keep the current conditional calendar:
-   Harvey 20/23 Nov, Vaccine 25/28 Nov; Willow pair remains J2263 18/21 Nov.
-
-The current HOS registry contains Vaccine s04/s05 originals and replacements,
-not a registered eradication Short. An older scripted Short C covers the same
-subject; the latest snapshot lists only the experiment and name-origin Shorts
-for the Vaccine long. Preserve duplicate-topic review before publication.
-The long `ETynHpIYLeY` remains private for 12 Nov 18:00Z in that snapshot;
-recheck actual Public state before any scheduling. No YouTube/Buffer changes.
-
-Operationally: both pulls succeeded after the initial sandbox-only OWB pull
-was retried with authorized filesystem access. Required under-20GB offload
-was attempted; it deferred to 01:00–06:00 because ~16 GiB remained. No files
-were moved or deleted on the NAS. All extraction/check processes completed;
-no render is running. One isolated HOS worktree, branch `codex/J2230-vaccine`.
+## 3. Blocked on Chief Decision
+- Choose **Option A (£0 locked Part 05 re-selection)** — `[35.16, 40.72]` (*"On the eighth of May, nineteen eighty, the world's health leaders declared that smallpox was gone."*) + `0.45 s` breath + `[25.36, 34.50]` (*"Health workers travelled..."*) + `0.45 s` breath + `[70.06, 75.70]` (*"And because no one alive today needs a vaccine against smallpox..."*, 61 words total, clean VO, names `smallpox` in sentence 1) — **or Option B (1-sentence ElevenLabs pickup)** for Eradication; confirm Variolation opening (`"Doctors took a little matter from a smallpox sore..."`) and target pattern dates (`Fri 20 Nov`, `Sun 22 Nov`, `Sat 28 Nov`, `Sun 29 Nov`).

@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-10",
-  "updated_by": "cursor",
+  "updated": "2026-11-12",
+  "updated_by": "codex",
   "board_url": "https://claude.ai/artifact/Hhk519dkbHMzeaZfp3efhc",
   "stages": [
     {
@@ -539,11 +539,11 @@
         "picture": {
           "status": "doing",
           "due": "2026-11-15",
-          "owner": "Cursor (J2033; Codex/Gemini fallback)",
-          "note": "J1237 tranche1 PASS; all57 original Flow hashes reverified local/NAS. 70/90 recorded rows unchanged. J2033 owns remaining20 Quality rows under J2026 cap6000/max3 takes each/floor3000; J2034 independent picture review. Generated is not approved.",
-          "since": "2026-10-15",
+          "owner": "Grok (J2632 revised sheet and timing ruling)",
+          "note": "J1237 tranche1 PASS; all57 original Flow hashes reverified local/NAS. 70/90 recorded rows unchanged. J2033 owns remaining20 Quality rows under J2026 cap6000/max3 takes each/floor3000; J2034 independent picture review. Generated is not approved. J2632: revised candidate has179 unique30fps frames,21 drawn head frames and two open rings. Parent out104 evidence supplied.0.175s parent/head frame-rate mismatch flagged; not KEEP. J2631 already KEEP. Approved count unchanged.",
+          "since": "2026-11-11",
           "underway": false,
-          "waiting": "J2033 ready after J2026 handoff completes; worker not yet claimed. Fresh Flow credit/price/writer-lock gate before generation.",
+          "waiting": "Grok ruling on the0.175s timing mismatch and revised J2632 sheets on PR543; no splice. Other picture review requirements remain.",
           "steps": [
             70,
             90
@@ -553,9 +553,10 @@
         "edit": {
           "status": "todo",
           "due": "2026-11-19",
-          "owner": "Cursor (J2035; Codex/Gemini fallback)",
-          "waiting": "J2034 full picture approval, then J2035 versioned no-new-spend edit; J2036 gates/package and J1275 chapters; J2037 Chief watch handoff",
-          "underway": false
+          "owner": "Mini audio worker (J2664); assembly J2035 held",
+          "waiting": "J2664 own score production and capable audio review under SCORE_SCOPE_J2663.json; J2035 remains held until files, provenance and gate evidence exist.",
+          "underway": false,
+          "note": "J2663 approved two Music v2 cues: wonder 180s + teach 360s, one take each, aggregate cap30000 subscription credits and £0 cash; duration-based cost/overage preflight required. No music generated or audio PASS claimed."
         },
         "thumbnails": {
           "status": "todo",
@@ -646,7 +647,7 @@
       "title": "Anesthesia: The Day Surgery Stopped Hurting",
       "air": "2026-12-10",
       "ready_by": "2026-12-06",
-      "summary": "Locked for Thu 10 Dec (J2231). Script v02, facts and quote check done. Long VO hos_011_vo_v01 (532.72 s, five chapters, sha256 d873f1d0…) locked after J2286 KEEP listening review (recorded in VO_STATUS.md, J2475). Picture plan v02 (93 rows across 535.30 s: 66 mint = 66 Q + 0 F = 6,600 Flow credits try-1 / 17,094 expected + 27 free £0 rows; 0 real-person names in Flow prompts) built on words.srt per Chief ruling #6786715647 and parked for Chief's price pass (J2475).",
+      "summary": "Locked for Thu 10 Dec. Script v02, facts, quote check and long VO locked (J2286 KEEP; 532.720 s). J2659 accepts mechanical picture-plan v03 timing for internal assembly: 93 rows, 535.30 s, every row <=8 s. J2563 resumes 26 free rows plus 67 labelled slates using the corrected archive sources. No generation or picture/edit approval.",
       "stages": {
         "topic": {
           "status": "done",
@@ -694,12 +695,16 @@
           "status": "todo",
           "due": "2026-11-29",
           "owner": "Cursor",
-          "note": "Shot list & picture plan v02 built on words.srt per Chief ruling #6786715647 (J2475): 93 rows (535.30 s), 66 mint (66 Q + 0 F = 6,600 try-1 / 17,094 expected Flow credits; 0 real-person names in Flow prompts) + 27 free £0 rows (13 CG + 13 ARCH + 1 REUSE). HOS-2026-11-E2 PASS. generation_authorized: false; parked for Chief price pass.",
-          "waiting": "Chief price pass on J2475 v02 (6,600 Flow credits try-1 / 17,094 expected)"
+          "note": "J2659 accepts v03 mechanical timing only: 93 rows, 37 boundaries moved, 18 word crossings removed, eleven long sentences split. 66 Quality generation rows remain unauthorized; reuse stays a slate. J2654 archive brief plus Grok ruling 6810336587 override inherited source fields; see J2659_CHIEF_DECISION.md.",
+          "waiting": "Separate generation decision; generation_authorized false. J2659 accepts mechanical timing only."
         },
         "edit": {
           "status": "todo",
-          "due": "2026-12-03"
+          "due": "2026-12-03",
+          "note": "J2659 accepts v03 timing. J2563 resumes 26 free rows and internal rough with 67 slates; use J2659_CHIEF_DECISION.md source overrides, reuse check and overlay cue schedule.",
+          "owner": "codex",
+          "underway": false,
+          "waiting": "J2563 assembly worker to resume after timing decision merges"
         },
         "thumbnails": {
           "status": "todo",

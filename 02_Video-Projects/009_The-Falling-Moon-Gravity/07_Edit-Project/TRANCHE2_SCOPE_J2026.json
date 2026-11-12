@@ -42,7 +42,7 @@
       "id": "01_cambridge_closes_c1",
       "use_s": 4.19,
       "board": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/parts/part-02_plates_v05.json",
-      "board_sha256": "af9e4ce60b116be4cb092a528d0dc8ba394599537b24ce0e645a30fbef7e9a4d",
+      "board_sha256": "0aabf081a6adf7a6921a938bb39fa4e69a5bc64bb562e04a2da0bfc1bb34ad49",
       "quality": "Quality",
       "max_takes": 3
     },
@@ -51,7 +51,7 @@
       "id": "03_christmas_birth_c1",
       "use_s": 5.02,
       "board": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/parts/part-02_plates_v05.json",
-      "board_sha256": "af9e4ce60b116be4cb092a528d0dc8ba394599537b24ce0e645a30fbef7e9a4d",
+      "board_sha256": "0aabf081a6adf7a6921a938bb39fa4e69a5bc64bb562e04a2da0bfc1bb34ad49",
       "quality": "Quality",
       "max_takes": 3
     },
@@ -60,7 +60,7 @@
       "id": "05_working_alone_c1",
       "use_s": 5.16,
       "board": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/parts/part-02_plates_v05.json",
-      "board_sha256": "af9e4ce60b116be4cb092a528d0dc8ba394599537b24ce0e645a30fbef7e9a4d",
+      "board_sha256": "0aabf081a6adf7a6921a938bb39fa4e69a5bc64bb562e04a2da0bfc1bb34ad49",
       "quality": "Quality",
       "max_takes": 3
     },
@@ -69,7 +69,7 @@
       "id": "08_the_apple_c1",
       "use_s": 4.99,
       "board": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/parts/part-02_plates_v05.json",
-      "board_sha256": "af9e4ce60b116be4cb092a528d0dc8ba394599537b24ce0e645a30fbef7e9a4d",
+      "board_sha256": "0aabf081a6adf7a6921a938bb39fa4e69a5bc64bb562e04a2da0bfc1bb34ad49",
       "quality": "Quality",
       "max_takes": 3
     },
@@ -78,7 +78,7 @@
       "id": "10_how_high",
       "use_s": 2.58,
       "board": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/parts/part-02_plates_v05.json",
-      "board_sha256": "af9e4ce60b116be4cb092a528d0dc8ba394599537b24ce0e645a30fbef7e9a4d",
+      "board_sha256": "0aabf081a6adf7a6921a938bb39fa4e69a5bc64bb562e04a2da0bfc1bb34ad49",
       "quality": "Quality",
       "max_takes": 3
     },
@@ -87,7 +87,7 @@
       "id": "11_explorer_apple_c1",
       "use_s": 4.94,
       "board": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/parts/part-02_plates_v05.json",
-      "board_sha256": "af9e4ce60b116be4cb092a528d0dc8ba394599537b24ce0e645a30fbef7e9a4d",
+      "board_sha256": "0aabf081a6adf7a6921a938bb39fa4e69a5bc64bb562e04a2da0bfc1bb34ad49",
       "quality": "Quality",
       "max_takes": 3
     },
@@ -96,16 +96,22 @@
       "id": "01_really_falling_c1",
       "use_s": 5.26,
       "board": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/parts/part-03_plates_v05.json",
-      "board_sha256": "a17d78c16ad146e569b4a8bb84f08f750441df0cc0d9d977774e1defa2dc9d27",
+      "board_sha256": "b33a5cc8181c289eee3c9b49aa71f5b13ccc1da6be4cea09ea628235c508b644",
       "quality": "Quality",
-      "max_takes": 3
+      "max_takes": 3,
+      "replaced_by": {
+        "route": "code-graphic",
+        "job": "J2632",
+        "ruling": "history-of-science#180 comment 6800614881",
+        "file": "code_graphic_009_p3_01_really_falling_c1.mp4"
+      }
     },
     {
       "part": 3,
       "id": "05_shot_orbit_c1",
       "use_s": 6.42,
       "board": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/parts/part-03_plates_v05.json",
-      "board_sha256": "a17d78c16ad146e569b4a8bb84f08f750441df0cc0d9d977774e1defa2dc9d27",
+      "board_sha256": "b33a5cc8181c289eee3c9b49aa71f5b13ccc1da6be4cea09ea628235c508b644",
       "quality": "Quality",
       "max_takes": 3
     },
@@ -114,7 +120,7 @@
       "id": "05_shot_orbit_c2",
       "use_s": 6.42,
       "board": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/parts/part-03_plates_v05.json",
-      "board_sha256": "a17d78c16ad146e569b4a8bb84f08f750441df0cc0d9d977774e1defa2dc9d27",
+      "board_sha256": "b33a5cc8181c289eee3c9b49aa71f5b13ccc1da6be4cea09ea628235c508b644",
       "quality": "Quality",
       "max_takes": 3
     },
@@ -123,7 +129,7 @@
       "id": "07_ball_to_moon",
       "use_s": 2.84,
       "board": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/parts/part-03_plates_v05.json",
-      "board_sha256": "a17d78c16ad146e569b4a8bb84f08f750441df0cc0d9d977774e1defa2dc9d27",
+      "board_sha256": "b33a5cc8181c289eee3c9b49aa71f5b13ccc1da6be4cea09ea628235c508b644",
       "quality": "Quality",
       "max_takes": 3
     },
@@ -132,25 +138,37 @@
       "id": "05_minute_second_c1",
       "use_s": 6.76,
       "board": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/parts/part-04_plates_v05.json",
-      "board_sha256": "1ff0b2d63ef9bd0a86df0db2cf85c53ad83a08a9edb61cef4f4ed4be5f2fb6c8",
+      "board_sha256": "6d8beb10a07787a9f7d7f5441d93e0b09967b5df3be1b2026cfac16f6e42fa4b",
       "quality": "Quality",
-      "max_takes": 3
+      "max_takes": 3,
+      "replaced_by": {
+        "route": "code-graphic",
+        "job": "J2631",
+        "ruling": "history-of-science#180 comment 6801512032",
+        "file": "code_graphic_009_p4_05_minute_second.mp4"
+      }
     },
     {
       "part": 4,
       "id": "05_minute_second_c2",
       "use_s": 6.75,
       "board": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/parts/part-04_plates_v05.json",
-      "board_sha256": "1ff0b2d63ef9bd0a86df0db2cf85c53ad83a08a9edb61cef4f4ed4be5f2fb6c8",
+      "board_sha256": "6d8beb10a07787a9f7d7f5441d93e0b09967b5df3be1b2026cfac16f6e42fa4b",
       "quality": "Quality",
-      "max_takes": 3
+      "max_takes": 3,
+      "replaced_by": {
+        "route": "code-graphic",
+        "job": "J2631",
+        "ruling": "history-of-science#180 comment 6801512032",
+        "file": "code_graphic_009_p4_05_minute_second.mp4"
+      }
     },
     {
       "part": 4,
       "id": "08_halley_visit_c1",
       "use_s": 5.88,
       "board": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/parts/part-04_plates_v05.json",
-      "board_sha256": "1ff0b2d63ef9bd0a86df0db2cf85c53ad83a08a9edb61cef4f4ed4be5f2fb6c8",
+      "board_sha256": "6d8beb10a07787a9f7d7f5441d93e0b09967b5df3be1b2026cfac16f6e42fa4b",
       "quality": "Quality",
       "max_takes": 3
     },
@@ -159,7 +177,7 @@
       "id": "08_halley_visit_c2",
       "use_s": 5.88,
       "board": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/parts/part-04_plates_v05.json",
-      "board_sha256": "1ff0b2d63ef9bd0a86df0db2cf85c53ad83a08a9edb61cef4f4ed4be5f2fb6c8",
+      "board_sha256": "6d8beb10a07787a9f7d7f5441d93e0b09967b5df3be1b2026cfac16f6e42fa4b",
       "quality": "Quality",
       "max_takes": 3
     },

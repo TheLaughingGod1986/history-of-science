@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""HOS sessionStart — point new agent sessions at AGENTS.md and the docs in force."""
+"""HOS sessionStart — point new agent sessions at AGENTS.md, studio/RULES.md and the docs in force."""
 from __future__ import annotations
 
 import json
@@ -8,7 +8,7 @@ import sys
 CONTEXT = """
 # History of Science — session start (auto-injected)
 
-Read `AGENTS.md` at the repo root first. Channel: `@HistoryOfScienceYT` only (not Orbit With Ben).
+Read `AGENTS.md` at the repo root first, then `studio/RULES.md` (this channel's own rules). Channel: `@HistoryOfScienceYT` only (not Orbit With Ben).
 Docs in force, highest first:
 1. `00_Brand/Channel-Setup/HOS_STRATEGY.md`
 2. `THUMBNAIL_AND_TITLE_RULES.md`

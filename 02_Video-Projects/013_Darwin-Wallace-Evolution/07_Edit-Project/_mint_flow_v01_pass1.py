@@ -60,6 +60,10 @@ MAX_TAKES_PER_ROW = 1
 MAX_BATCH_ROWS = 5
 MAX_BATCH_CREDITS = 1000
 HEADROOM_FLOOR = 0
+# Chief's HOS 013 floor (J2643 / J2643b). Detached launch and a direct armed
+# `submit` both default here. An armed `submit` below this floor is refused.
+# `dry-run` stays on HEADROOM_FLOOR: it never reserves.
+DETACHED_HEADROOM_FLOOR = 3000
 
 MODEL_BY_QUALITY = {
     "Quality": "Veo 3.1 - Quality",
@@ -391,13 +395,16 @@ def load_scope(repo: Path) -> list[Row]:
     return rows
 
 
-def order_rows(rows: list[Row]) -> list[Row]:
-    """Order strictly Part 01 first (first 30s + Shorts openings), then Parts 02..06 by timeline."""
+def order_rows(rows: list[Row], *, require_part1_first: bool = True) -> list[Row]:
+    """Order a full Part-01-first plan, or validate an already ordered remainder."""
     if not rows:
         raise GuardError("cannot order empty row list")
     ordered = sorted(rows, key=lambda row: (row.part, row.t_s, row.index))
-    if ordered[0].part != 1:
+    if require_part1_first and ordered[0].part != 1:
         raise GuardError("first pass must start with Part 01")
+    # A filtered, validated plan must retain its timeline order, never be re-sorted.
+    if not require_part1_first and rows != ordered:
+        raise GuardError("out-of-order remainder")
     seen_keys: set[tuple[int, str]] = set()
     prev_key = (0, -1.0)
     for row in ordered:
@@ -438,11 +445,11 @@ def assert_batch_limits(batch: list[Row]) -> int:
     return credits
 
 
-def batch_rows(rows: list[Row]) -> list[list[Row]]:
-    """Pack ordered rows into batches of at most 5 rows and at most 1,000 credits."""
+def batch_rows(rows: list[Row], *, require_part1_first: bool = True) -> list[list[Row]]:
+    """Pack rows within both caps; only validated remainders may omit Part 01."""
     if not rows:
         return []
-    ordered = order_rows(rows)
+    ordered = order_rows(rows, require_part1_first=require_part1_first)
     batches: list[list[Row]] = []
     idx = 0
     while idx < len(ordered):
@@ -1211,13 +1218,15 @@ def runner_state_dir() -> Path:
 def detached_command(script: Path, log_path: Path, done_path: Path, *,
                      repo: Path, media: Path, archive: Path, other: int,
                      ledger: Path, lock: Path, pid: Path,
-                     session: str = "hos013-pass1") -> list[str]:
+                     session: str = "hos013-pass1", floor: int = DETACHED_HEADROOM_FLOOR) -> list[str]:
     """Print-only detached tmux command; never arms generation or overwrites logs."""
     paths = [script, repo, media, archive, ledger, lock, pid, log_path, done_path]
     if not all(path.is_absolute() for path in paths):
         raise GuardError("detached inputs and state paths must be absolute")
     if not script.is_file() or not repo.is_dir() or not media.is_dir() or not archive.is_dir():
         raise GuardError("detached script/repo/media/archive must already exist")
+    if type(floor) is not int or floor < 0:
+        raise GuardError("invalid detached floor")
     if other < 0 or not re.fullmatch(r"[A-Za-z0-9_-]+", session):
         raise GuardError("invalid reservation or tmux session")
     resolved = [path.resolve() for path in (ledger, lock, pid, log_path, done_path)]
@@ -1237,6 +1246,8 @@ def detached_command(script: Path, log_path: Path, done_path: Path, *,
         str(archive),
         "--other-reservations",
         str(other),
+        "--floor",
+        str(floor),
         "--ledger",
         str(ledger),
         "--lock",
@@ -1627,7 +1638,7 @@ def next_batch(rows: list[Row], ledger: list[dict]) -> list[Row]:
     remaining = [row for row in order_rows(rows) if row.row_id not in done and row.row_id not in refused]
     if not remaining:
         return []
-    return batch_rows(remaining)[0]
+    return batch_rows(remaining, require_part1_first=False)[0]
 
 
 def execute_shared_batch(
@@ -2544,8 +2555,13 @@ def build_dry_run_report(repo: Path, *, media: Path, archive_dir: Path,
     recorded = latest_recorded_flow_balance(spend_ledger)
     balance_left = recorded["left"] if recorded else None
     liability = shared["liability"]
+    existing = shared["reservations"].get(DEFAULT_RESERVATION)
+    reservation_matches = existing == dict(cap=MAX_TOTAL_CREDITS, film=FILM_ID, active=True)
+    # Liability already includes this active reservation's remaining credits.
+    # Posted charges have left the balance; do not reserve the full cap again.
+    unreserved_cap = 0 if reservation_matches else MAX_TOTAL_CREDITS
     projected_after_013 = (
-        balance_left - liability - other - MAX_TOTAL_CREDITS if balance_left is not None else None
+        balance_left - liability - other - unreserved_cap if balance_left is not None else None
     )
     active_reservations = {
         key: {"film": val["film"], "cap": val["cap"]}
@@ -2589,9 +2605,11 @@ def build_dry_run_report(repo: Path, *, media: Path, archive_dir: Path,
             "other_reservations_arg": other,
             "floor": floor,
             "latest_recorded_flow_balance": recorded,
+            "unreserved_013_cap": unreserved_cap,
             "projected_headroom_after_013_cap": projected_after_013,
             "would_allow_reserve_at_recorded_balance": (
-                bool(not shared["pending"] and projected_after_013 is not None and projected_after_013 >= floor)
+                bool((existing is None or reservation_matches) and not shared["pending"]
+                     and projected_after_013 is not None and projected_after_013 >= floor)
             ),
         },
         "per_part": plan["per_part"],
@@ -2708,7 +2726,7 @@ def main(argv: list[str] | None = None) -> int:
     submit_p.add_argument("--media", required=False)
     submit_p.add_argument("--archive", required=False)
     submit_p.add_argument("--other-reservations", type=int, required=False)
-    submit_p.add_argument("--floor", type=int, default=HEADROOM_FLOOR)
+    submit_p.add_argument("--floor", type=int, default=DETACHED_HEADROOM_FLOOR)
     submit_p.add_argument("--reservation", default=DEFAULT_RESERVATION)
     submit_p.add_argument("--recorder", default="gemini")
     submit_p.add_argument("--ledger", required=False)
@@ -2726,6 +2744,7 @@ def main(argv: list[str] | None = None) -> int:
         launch.add_argument("--media", required=True)
         launch.add_argument("--archive", required=True)
         launch.add_argument("--other-reservations", type=int, required=True)
+        launch.add_argument("--floor", type=int, default=DETACHED_HEADROOM_FLOOR)
         launch.add_argument("--ledger", default=str(state / "ledger.jsonl"))
         launch.add_argument("--lock", default=str(state / "writer.lock"))
         launch.add_argument("--pid", default=str(state / "runner.pid"))
@@ -2779,6 +2798,7 @@ def main(argv: list[str] | None = None) -> int:
             media=Path(args.media),
             archive=Path(args.archive),
             other=args.other_reservations,
+            floor=args.floor,
             ledger=Path(args.ledger),
             lock=Path(args.lock),
             pid=Path(args.pid),
@@ -2805,6 +2825,8 @@ def main(argv: list[str] | None = None) -> int:
             "refusing submit: generation is not armed "
             f"({SUBMIT_ENV} is not 1). Dry-run / plan only until Chief reviews the guards and queues the mint."
         )
+    if type(args.floor) is not int or args.floor < DETACHED_HEADROOM_FLOOR:
+        raise GuardError(f"armed submit floor below {DETACHED_HEADROOM_FLOOR}")
     if args.other_reservations is None or not args.media:
         raise GuardError("armed submit needs --other-reservations and --media")
     repo = Path(args.repo) if args.repo else repo_root_from()

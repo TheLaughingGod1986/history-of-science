@@ -1,11 +1,11 @@
 ---
-description: History of Science studio — read AGENTS.md first; docs in force, the final check-in and the never-list
+description: History of Science studio — read AGENTS.md first, then studio/RULES.md; docs in force, the final check-in and the never-list
 alwaysApply: true
 ---
 
 # History of Science — studio core (25 Sep 2026)
 
-Read `AGENTS.md` at the repo root before any channel work. Everything in `_archive/` (including the old `cursor-rules/` and the Orbit leftovers) is superseded history. Never follow it unless Ben asks.
+Read `AGENTS.md` at the repo root before any channel work, then `studio/RULES.md` (this channel's own rules). Everything in `_archive/` (including the old `cursor-rules/` and the Orbit leftovers) is superseded history. Never follow it unless Ben asks.
 
 Channel: `@HistoryOfScienceYT` only. Orbit With Ben is a different channel and repo.
 
@@ -22,9 +22,9 @@ The Explorer: `01_Character/CHARACTER_BIBLE.md`.
 
 **Ben, 7 Nov 2026:** **1 long + 4 Shorts a week** (was 3 Shorts). One long (7–9 min) on Thursday at 18:00 UK as a **normal publish, never a Premiere**. Four Shorts (22–27 s) at 11:30 UK on Sat, Fri, Sun and Tue. Saturday is the go-public-day Short for the new long (Thursday 11:30 would publish before the Thu 18:00 long); Friday, Sunday and Tuesday stay. Never more than one Short a day; never a Short before that film's long is public; fill gaps only with ready approved cuts. Never a second long on a subject that already has one.
 
-## Teach on screen (generated from AGENTS.md; edit AGENTS.md, then run `python3 scripts/sync_rules.py`)
+## Teach on screen (generated from studio/RULES.md; edit studio/RULES.md, then run `python3 scripts/sync_rules.py`)
 
-<!-- SYNC: AGENTS.md#Teach on screen (Ben, 11 Oct 2026) -->
+<!-- SYNC: studio/RULES.md#Teach on screen (Ben, 11 Oct 2026) -->
 Ben, 11 Oct 2026 21:45, for every future video on both channels: *"add more graphs and charts when needed, more overlays, more animations, and more interesting facts to explain about dates, explain about the people we're mentioning, and make it more educational and more useful."* This applies to every script signed off and every picture part started after 11 Oct 2026. It builds on the teach labels (Ben, 20 Sep; `STUDIO_PLAYBOOK.md` §5 *The look*) and changes no locked rule. The premium 3D cartoon house style, white Didot italic, one label at a time, and "no flat poster or UI cards" all stand.
 
 **Script.** Mark these inside the scene's `[VISUAL MUST: … · LABEL: …]`, the same way LABEL is marked, so `review:script` doesn't count them and `gate:episode` doesn't change. Chief counts them at script review (`grep -o "DATA:" <script> | wc -l`, and the same for each marker).
@@ -79,9 +79,9 @@ Any FAIL goes back to the plate board or the edit before Ben's watch.
 **Read (not a ship gate).** A long is scored once it has at least 100 Studio views. Under that, 0:30 retention and average percentage viewed are recorded and left unscored. **Pass:** 0:30 retention at least 60%, and days 0–13 average percentage viewed at least 22% (views-weighted across the longs that have crossed 100 views). **Stop and revert** this experiment for any 008–010 edit that is not yet locked if a cut built to it hits a UAT hard fail, or if a scored long's 0:30 retention is under 40%. An uploaded file stays as it aired. Readouts 3 Dec 2026 and 3 Jan 2027. The log is orbit-with-ben `05_Analytics/tests/HOS_LONG_TESTS.md` and `05_Analytics/LEARNINGS.md` → *HOS-2026-11-E2*.
 <!-- /SYNC -->
 
-## Polish pass (Astrum ref, 11 Oct 2026; generated from AGENTS.md, edit AGENTS.md then run `python3 scripts/sync_rules.py`)
+## Polish pass (Astrum ref, 11 Oct 2026; generated from studio/RULES.md, edit studio/RULES.md then run `python3 scripts/sync_rules.py`)
 
-<!-- SYNC: AGENTS.md#Polish pass (Astrum ref, 11 Oct 2026) -->
+<!-- SYNC: studio/RULES.md#Polish pass (Astrum ref, 11 Oct 2026) -->
 Ben, 11 Oct 2026 22:17, sent Astrum's *What Is It Like on the Surface of a Black Hole Planet?* (`PxJSOWyYWkc`, 27 min, 1.1M views) as a style reference for both channels: *"let me know what you think we can incorporate into our workflow."* Chief adopted five of its techniques the same night. They apply to every picture part and edit started after 11 Oct 2026, in the HOS house style. **Where an Astrum technique meets a HOS lock, the HOS lock wins**: the premium 3D cartoon look, white Didot italic, one label at a time, no flat poster or UI cards, the UAT hard fails and the first-minute timings all stand.
 
 **Not adopted:** Astrum's long shot holds (6–8 s, some 15 s). The picture still changes every 4–6 s, except the HOS-2026-11-E2 window on 008–010 (cuts under 4.5 s from 0:00 to 0:30). No card holds still for more than 4 s, and length still comes from narration, not holds.
@@ -150,6 +150,8 @@ A Short is scored on 1 and 3 only. Any FAIL goes back to the edit before Ben's w
 <!-- SYNC: AGENTS.md#Who does what (11 Oct 2026) -->
 **Chief succession (Ben, 26 Oct 2026): Grok Bot (`chief`) → Claude (`claude`) → Codex/GPT (`codex`) → Gemini (`gemini`).** The first available agent is the elected Chief for both channels; a higher-priority agent takes the role back automatically when it returns. Cursor remains a specialist worker, outside this Chief chain. The elected Claude, Codex or Gemini holds the ordinary Chief authority to review, PASS, merge and give final OKs under the existing channel rules. An ordinary worker or model fallback has no such authority. Before a protected call, re-read `chief_relay.py status`; use your own agent id, never impersonate `chief`. Required Ben approvals, money, irreversible actions and existing gates remain unchanged. Evidence: Ben's direct request on 26 Oct 2026 to use Grok, then Claude, then Codex, then Gemini as Chief.
 
+**This chain still holds for History of Science (11 Nov 2026).** orbit-with-ben's chain (Ben, 9 Nov, orbit-with-ben #668) puts Claude first, and the relay applied it to HOS jobs too, so two agents each acted as Chief on desk #180 on 11 Nov. Ben, 11 Nov 2026, asked which one should be Chief: *"I'll leave the decision up to you."* Claude's call: **History of Science keeps Grok first.** Reasons: Grok held the HOS desk and made every HOS ruling through 11 Nov. Grok is one agent, while several Claude sessions work this desk. And the 12 Nov Flow deadline was too close to change the role. So for desk #180 and HOS queue jobs, `chief_relay.py` uses this chain (Grok → Claude → Codex → Gemini); orbit-with-ben keeps its own 9 Nov chain. A Claude session on this desk reviews and recommends. It gives a Chief ruling only when the relay has elected Claude because Grok is down. Ben can reverse this with one line.
+
 Ben, 11 Oct 2026 21:48: *"Make sure all the tasks are correctly dedicated to the correct LLM that can do the job."* Each kind of job goes to the model that does it best, then down a full fallback chain. Ben, 11 Oct 2026 23:40: *"if Claude Code is out of usage you can use a Claude model in Cursor."* 23:47: *"Remember we also have Gemini and Codex."* So a Claude job goes **1) Claude Code → 2) Cursor CLI on the Mini running Claude** (`cursor-claude-opus-5-5` = `agent --model claude-opus-5-5`, the same Opus tier) **→ 3) Gemini** (`agy`) for reasoning, scripts, listings and review notes **→ 4) Codex `gpt-6-astra`** as the last resort; code and graphics go to Codex first. The code copy (`CHAINS`) is orbit-with-ben `scripts/routing.py`; HOS queue jobs go through orbit-with-ben `scripts/jobs.py add --repo hos --kind <kind>`, and the relay wakes the right worker. Model ids are the ones configured on the Mac mini on 11 Oct 2026. Never write a model name that isn't installed.
 
 | Job type | `--kind` | Primary | Fallbacks, in order |
@@ -177,7 +179,7 @@ Ben, 11 Oct 2026 21:48: *"Make sure all the tasks are correctly dedicated to the
 ## Who decides (AGENTS.md → "Ben's check-in")
 
 <!-- SYNC: AGENTS.md#Ben's check-in (2 Oct 2026: one final OK, not one per stage) -->
-**Chief owns the studio (Ben's handover to Chief, 9 Oct 2026; Ben, 10 Oct 2026: *"I should not need to give permission all the time"*).** Wherever this section says Claude decides, PASSes, OKs or makes an exception, Chief (Grok Bot) now holds that call in place of Claude. A Chief OK is a plain "[Chief]" post on the desk #180 or orbit-with-ben #99, or an orbit-with-ben job added `--by chief`; a brief saying "Ben approved (relayed by Chief)" counts as Ben's word. Workers act on either and never ask Ben to re-post an OK. Ben is asked only for real money (past £0), what truly can't be undone, and his per-film watch below; deleting a video stays on the Never list.
+**Chief owns the studio (Ben's handover to Chief, 9 Oct 2026; Ben, 10 Oct 2026: *"I should not need to give permission all the time"*).** Wherever this section says Claude decides, PASSes, OKs or makes an exception, Chief (Grok Bot) now holds that call in place of Claude. A Chief OK is a plain "[Chief]" post on the desk #180 or orbit-with-ben #99, or an orbit-with-ben job added `--by chief`; a brief saying "Ben approved (relayed by Chief)" counts as Ben's word. Workers act on either and never ask Ben to re-post an OK. Ben is asked only for real money (past £0), what truly can't be undone, and his per-film watch below; deleting a video stays on the Never list. **Ben, 11 Nov 2026, restated it:** *"All I'll do is UAT films. All the other decisions, use your team of agents to come up with the best course."* So the desk decides every rules, packaging, spend-order and process question itself, without passing it to Ben with a recommendation. Ben hears about a film when it is ready for his watch, and about real money or something irreversible.
 
 Ben, 2 Oct 2026: *"Claude and Grok have more authority and fewer checks with me. Check in only once the film, Shorts and thumbnails are ready to approve."*
 

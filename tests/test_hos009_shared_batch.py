@@ -3,13 +3,13 @@ from pathlib import Path
 from unittest.mock import patch
 import tempfile
 import unittest
-from tests.test_hos009_tranche2_runner import RUNNER, ROOT
+from tests.test_hos009_tranche2_runner import RUNNER, THEN
 from tests import test_hos009_tranche2_runner as fixtures
 
 
 class SharedBatchTests(unittest.TestCase):
     def setup_batch(self, root, *, valid=True, drift=False, missing=False, disconnect=False):
-        rows=RUNNER.order_rows(RUNNER.load_scope(ROOT))[:2]
+        rows=RUNNER.order_rows(RUNNER.load_scope(THEN))[:2]
         calls=[]
         frame=root/'frame.png'
         frame.write_bytes(b'fake start still')
@@ -100,6 +100,7 @@ class SharedBatchTests(unittest.TestCase):
             root=Path(tmp);(root/'archive').mkdir()
             rows,calls,submit,technical=self.setup_batch(root)
             def failed_download(*args,**kwargs):
+                kwargs.pop('reservation_cap',None)  # the fixture submitter takes no cap (red on main since #522)
                 submit(*args,**kwargs)
                 raise RuntimeError('download failed after charge')
             with self.assertRaisesRegex(RuntimeError,'download failed'):
@@ -128,9 +129,9 @@ class SharedBatchTests(unittest.TestCase):
 class ProductionPathTests(unittest.TestCase):
     def test_defaults_are_canonical_and_independent_of_environment(self):
         import os
-        rows = RUNNER.load_scope(ROOT)
+        rows = RUNNER.load_scope(THEN)
         with patch.dict(os.environ, {'OWB_REPO': '/wrong/owb', 'HOS_REPO': '/wrong/hos'}), \
-             patch.object(RUNNER, 'repo_root_from', return_value=ROOT):
+             patch.object(RUNNER, 'repo_root_from', return_value=THEN):
             state, report = RUNNER.production_batch_paths(
                 accounting_state=None, spend_ledger=None, inventory_rows=rows)
         self.assertEqual(state, Path.home() / '_desk/state/flow/shared')
@@ -138,17 +139,17 @@ class ProductionPathTests(unittest.TestCase):
 
     def test_missing_subset_duplicate_and_modified_inventory_refused(self):
         from dataclasses import replace
-        rows = RUNNER.load_scope(ROOT)
+        rows = RUNNER.load_scope(THEN)
         for inventory in (None, rows[:2], rows + [rows[0]],
                           [replace(rows[0], prompt='changed')] + rows[1:]):
             with self.subTest(inventory=inventory), \
-                 patch.object(RUNNER, 'repo_root_from', return_value=ROOT):
+                 patch.object(RUNNER, 'repo_root_from', return_value=THEN):
                 with self.assertRaises(RUNNER.GuardError):
                     RUNNER.production_batch_paths(accounting_state=None,
                         spend_ledger=None, inventory_rows=inventory)
 
     def test_wrong_account_or_report_stops_before_archive_and_browser(self):
-        rows = RUNNER.order_rows(RUNNER.load_scope(ROOT))[:2]
+        rows = RUNNER.order_rows(RUNNER.load_scope(THEN))[:2]
         for overrides in ({'accounting_state': Path('/tmp/worktree/account')},
                           {'spend_ledger': Path('/tmp/worktree/report')}):
             with patch.object(RUNNER, 'require_archive') as archive, \

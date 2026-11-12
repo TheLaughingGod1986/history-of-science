@@ -228,7 +228,7 @@ class BoundaryTests(unittest.TestCase):
         import sys
         from types import ModuleType
         from unittest.mock import MagicMock, patch
-        from tests.test_hos009_tranche2_runner import RUNNER, ROOT, LiveCreateAdapterTests
+        from tests.test_hos009_tranche2_runner import RUNNER, THEN, LiveCreateAdapterTests
         for live, drift in [(10000,False),(8900,False),(10000,True)]:
             with self.subTest(live=live,drift=drift), tempfile.TemporaryDirectory() as tmp:
                 root=Path(tmp); env,page,frame,events=self.prepared(root,None)
@@ -250,7 +250,7 @@ class BoundaryTests(unittest.TestCase):
                      patch.dict(os.environ,{RUNNER.SUBMIT_ENV:'1'}), \
                      patch.dict(sys.modules,{'orbit_flow_veo_ui':fake_flow,'playwright.sync_api':fake_api}), \
                      patch.object(RUNNER,'open_flow_page',return_value=page):
-                    row=RUNNER.order_rows(RUNNER.load_scope(ROOT))[0]
+                    row=RUNNER.order_rows(RUNNER.load_scope(THEN))[0]
                     def submit():
                         return RUNNER.live_video_submit(row,root/'out.mp4',frame,accounting=account,
                             reservation='J2033',charge='fake-take',evidence_path=root/'create.json')

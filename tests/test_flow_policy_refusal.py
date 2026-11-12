@@ -19,6 +19,8 @@ RUNNERS = {
     "013": ROOT / "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/_mint_flow_v01_pass1.py",
 }
 EVIDENCE = {"desk": "HOS #180 6784299215", "balance_before": 14890, "balance_live": 13490, "outputs": 14}
+sys.path.insert(0, str(ROOT))
+from tests.hos009_then import THEN, THEN_EDIT  # noqa: E402  the boards and scope as they were when the takes were made
 
 
 def load(film: str):
@@ -325,7 +327,7 @@ class RetryAfterRefusalTests(unittest.TestCase):
                  patch.object(runner, "technical_report",
                               side_effect=lambda p, **kw: {"ok": True, "sha256": runner.sha256_file(p)}):
                 written = runner.cmd_submit(
-                    ROOT, other=0, media=root / "media", ledger_path=ledger, lock_path=root / "writer.lock",
+                    THEN, other=0, media=root / "media", ledger_path=ledger, lock_path=root / "writer.lock",
                     pid_path=root / "runner.pid", done_path=root / "runner.done", archive_dir=archive,
                     accounting_state=state, spend_ledger=root / "spend.jsonl", submitter=fake_submitter,
                     still_maker=fake_still_maker, test_archive=True)
@@ -340,7 +342,7 @@ class NoNameWordingTests(unittest.TestCase):
     """Chief rulings 6784284999, 6784299215 and 6785808071: the Halley plates describe the two men
     and name neither. The board changed, so the scope file's pinned hash changed with it."""
 
-    EDIT = ROOT / "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project"
+    EDIT = THEN_EDIT        # the film's edit folder as it was when the takes were made (tests/hos009_then.py)
     RECORD = ROOT / "jobs/reviews/J2033/PROMPT_CHANGE_2026-11-11.json"
     HALLEY_ROWS = ("08_halley_visit", "08_halley_visit_c1", "08_halley_visit_c2")
     YOUNG = "young astronomer of about twenty-eight, long dark natural hair, no wig, travelling coat"
@@ -352,7 +354,7 @@ class NoNameWordingTests(unittest.TestCase):
         self.record = json.loads(self.RECORD.read_text())
 
     def test_the_tranche_still_loads_with_the_edited_board(self):
-        rows = self.runner.load_scope(ROOT)
+        rows = self.runner.load_scope(THEN)
         self.assertEqual(len(rows), 20)
         halley = [r for r in rows if r.plate_id.startswith("08_halley_visit")]
         self.assertEqual([r.plate_id for r in halley], ["08_halley_visit_c1", "08_halley_visit_c2"])
@@ -380,7 +382,18 @@ class NoNameWordingTests(unittest.TestCase):
 
     def test_the_record_and_the_scope_pin_the_board_as_it_is(self):
         digest = self.runner.sha256_file(self.EDIT / "parts/part-04_plates_v05.json")
-        self.assertEqual(self.record["board_sha256_new"], digest)
+        # The board changed once more after this record (J2583, 11 Nov 2026: two rows of this part are made again).
+        # This record pins the board as it left it, the later record starts from that hash, and the later record and
+        # the scope pin the board as it is now. tests/test_hos009_retake_wording.py checks the later change itself.
+        later = json.loads((ROOT / "jobs/reviews/J2583/PROMPT_CHANGE_2026-11-11.json").read_text())
+        later = later["boards"]["part-04_plates_v05.json"]
+        self.assertEqual(self.record["board_sha256_new"], later["board_sha256_old"])
+        # And once more after that (J2626, 11 Nov 2026: one row of this part gets a third take). The chain is this
+        # record, then J2583's, then J2626's, which pins the board as it is now.
+        latest = json.loads((ROOT / "jobs/reviews/J2626/PROMPT_CHANGE_2026-11-11.json").read_text())
+        latest = latest["boards"]["part-04_plates_v05.json"]
+        self.assertEqual(later["board_sha256_new"], latest["board_sha256_old"])
+        self.assertEqual(latest["board_sha256_new"], digest)
         self.assertNotEqual(self.record["board_sha256_old"], digest)
         scope = json.loads((self.EDIT / "TRANCHE2_SCOPE_J2026.json").read_text())
         pinned = {r["id"]: r["board_sha256"] for r in scope["rows"] if r["board"].endswith("part-04_plates_v05.json")}
@@ -390,7 +403,7 @@ class NoNameWordingTests(unittest.TestCase):
     def test_no_row_still_to_be_made_names_a_real_person(self):
         still_to_make = {"08_halley_visit_c1", "08_halley_visit_c2", "04_comet_1758_c1",
                          "05_iss_orbit_c1", "05_iss_orbit_c2", "06_iss_apple_c1"}
-        rows = [r for r in self.runner.load_scope(ROOT) if r.plate_id in still_to_make]
+        rows = [r for r in self.runner.load_scope(THEN) if r.plate_id in still_to_make]
         self.assertEqual(len(rows), 6)
         for row in rows:
             with self.subTest(row=row.plate_id):
