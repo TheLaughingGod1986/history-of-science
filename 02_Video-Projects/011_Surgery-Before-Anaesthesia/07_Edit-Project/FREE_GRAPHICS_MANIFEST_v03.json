@@ -1,0 +1,215 @@
+{
+  "job": "J2563",
+  "scope": "five free graphics only; remaining 21 free rows and all 67 slates unbuilt",
+  "film_stage_approved": false,
+  "audio_review": false,
+  "motion_review": false,
+  "plan_sha256": "df11c9e00116c7a44390535e0fb569f682735d3f8ed7206ed45926f768ee7238",
+  "stt_sha256": "f7abac2d4bf6c58558eee80e6d201395640d0514988dcbeca795dd21dcf0d577",
+  "fps": 30,
+  "frame_size": [
+    1920,
+    1080
+  ],
+  "rows": [
+    {
+      "row_id": "P4:04c_cg_anesthesia_etymology",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_free_graphics_v03/P4_04c_cg_anesthesia_etymology.mp4",
+      "sha256": "9a5131e408fbbe56884dc9f860395bb893f1e2eeaa84b0cdb01d4cffd1d07d66",
+      "plan_in_s": 309.2,
+      "plan_out_s": 314.5,
+      "plan_duration_s": 5.3,
+      "frames": 159,
+      "actual_duration_s": 5.3,
+      "quantization_error_s": 0.0,
+      "cues": [
+        {
+          "phrase": "anesthesia",
+          "word_indices": [
+            745
+          ],
+          "raw_stt_indices": [
+            1490
+          ],
+          "in_s": 310.0,
+          "evidence_end_s": 310.96,
+          "text": "ANAESTHESIA",
+          "out_s": 313.1
+        },
+        {
+          "phrase": "without feeling",
+          "word_indices": [
+            750,
+            751
+          ],
+          "raw_stt_indices": [
+            1500,
+            1502
+          ],
+          "in_s": 313.68,
+          "evidence_end_s": 314.16,
+          "text": "Without feeling",
+          "out_s": 314.5
+        }
+      ],
+      "status": "rendered_requires_motion_and_layout_review"
+    },
+    {
+      "row_id": "P5:09b_cg_safety_stadium",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_free_graphics_v03/P5_09b_cg_safety_stadium.mp4",
+      "sha256": "cbc5c24f54a042005d9257eb4bd803cc7c6952c905c54887e624e16c7572f82f",
+      "plan_in_s": 458.5,
+      "plan_out_s": 465.74,
+      "plan_duration_s": 7.24,
+      "frames": 217,
+      "actual_duration_s": 7.233333,
+      "quantization_error_s": -0.006666666666666821,
+      "cues": [
+        {
+          "phrase": "one in every hundred thousand",
+          "word_indices": [
+            1066,
+            1067,
+            1068,
+            1069,
+            1070
+          ],
+          "raw_stt_indices": [
+            2132,
+            2134,
+            2136,
+            2138,
+            2140
+          ],
+          "in_s": 460.58,
+          "evidence_end_s": 461.22,
+          "text": "1 in 100,000",
+          "out_s": 462.2
+        },
+        {
+          "phrase": "90,000",
+          "word_indices": [
+            1076
+          ],
+          "raw_stt_indices": [
+            2152
+          ],
+          "in_s": 464.16,
+          "evidence_end_s": 464.9,
+          "text": "90,000 people",
+          "out_s": 465.74
+        }
+      ],
+      "status": "rendered_requires_motion_and_layout_review"
+    },
+    {
+      "row_id": "P5:12a_cg_anesthetist_monitor",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_free_graphics_v03/P5_12a_cg_anesthetist_monitor.mp4",
+      "sha256": "c3eef98df3c53233c5199b50691ee945e8e50c293ed166b8ac2b9309e8842cb7",
+      "plan_in_s": 486.81,
+      "plan_out_s": 491.2,
+      "plan_duration_s": 4.39,
+      "frames": 132,
+      "actual_duration_s": 4.4,
+      "quantization_error_s": 0.010000000000000675,
+      "cues": [
+        {
+          "phrase": "just asleep enough",
+          "word_indices": [
+            1128,
+            1129,
+            1130
+          ],
+          "raw_stt_indices": [
+            2256,
+            2258,
+            2260
+          ],
+          "in_s": 488.52,
+          "evidence_end_s": 489.04,
+          "text": "Just asleep enough",
+          "out_s": 491.2
+        }
+      ],
+      "status": "rendered_requires_motion_and_layout_review"
+    },
+    {
+      "row_id": "P5:16a",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_free_graphics_v03/P5_16a.mp4",
+      "sha256": "9da2e51cada90dac04d11d46f2f26aab34f1d756d28a65ed104cb7200779d385",
+      "plan_in_s": 524.2,
+      "plan_out_s": 528.2,
+      "plan_duration_s": 4.0,
+      "frames": 120,
+      "actual_duration_s": 4.0,
+      "quantization_error_s": 0.0,
+      "cues": [
+        {
+          "phrase": "gas",
+          "word_indices": [
+            1204
+          ],
+          "raw_stt_indices": [
+            2408
+          ],
+          "in_s": 524.84,
+          "evidence_end_s": 525.3,
+          "text": "A gas",
+          "out_s": 525.74
+        },
+        {
+          "phrase": "bag",
+          "word_indices": [
+            1206
+          ],
+          "raw_stt_indices": [
+            2412
+          ],
+          "in_s": 525.94,
+          "evidence_end_s": 526.44,
+          "text": "A bag",
+          "out_s": 526.76
+        },
+        {
+          "phrase": "globe",
+          "word_indices": [
+            1209
+          ],
+          "raw_stt_indices": [
+            2418
+          ],
+          "in_s": 527.04,
+          "evidence_end_s": 527.54,
+          "text": "A globe",
+          "out_s": 528.2
+        }
+      ],
+      "status": "rendered_requires_motion_and_layout_review"
+    },
+    {
+      "row_id": "P5:17_cream_end_card",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_free_graphics_v03/P5_17_cream_end_card.mp4",
+      "sha256": "f1af1c944b8b21b14932856bef4869d1c59efea2bb652901fda036f879ac839d",
+      "plan_in_s": 532.72,
+      "plan_out_s": 535.3,
+      "plan_duration_s": 2.58,
+      "frames": 77,
+      "actual_duration_s": 2.566016,
+      "quantization_error_s": -0.013333333333333197,
+      "cues": [
+        {
+          "text": "History of Science",
+          "in_s": 532.72,
+          "out_s": 535.3,
+          "word_indices": [],
+          "raw_stt_indices": [],
+          "reason": "Approved post-VO end card; no spoken anchor"
+        }
+      ],
+      "status": "rendered_requires_motion_and_layout_review"
+    }
+  ],
+  "source": "Own code; approved v03 row identities; unsupported inherited labels omitted, not spoken-line changes.",
+  "delivery_version": "v03",
+  "note": "v02 local exploratory renders retained; v03 delays full phrase reveals to their final anchor word. These five rows are preliminary review assets, not completed picture."
+}

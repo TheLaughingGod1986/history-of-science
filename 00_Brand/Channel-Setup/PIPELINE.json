@@ -701,10 +701,10 @@
         "edit": {
           "status": "doing",
           "due": "2026-12-03",
-          "note": "J2563 checkpoint: 23 corrected source records, 12 live metadata records, four verified cached files; 28 word-anchored overlay candidates, 19 held. No rows rendered or rough built. NAS checkpoint verified; see J2563_CHECKPOINT_v01.md.",
+          "note": "J2563: five preliminary own-code rows delivered and mechanically verified on NAS (v03 graphics checkpoint); 21 free rows, full cues and rough remain. No film-stage approval.",
           "owner": "codex",
           "underway": false,
-          "waiting": "Resume free graphic work and cue reconciliation; Wikimedia acquisition is rate-limited (HTTP 429), no retry in this run. No generation or stage approval.",
+          "waiting": "Next assembly worker: remaining 8 code rows + 13 archives, full cues, slates and rough. Five rendered rows need capable motion/layout review.",
           "since": "2026-11-12",
           "steps": [
             1,
