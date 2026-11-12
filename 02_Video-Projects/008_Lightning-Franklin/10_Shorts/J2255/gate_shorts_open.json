@@ -1,0 +1,1182 @@
+[
+  {
+    "file": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/008_Lightning-Franklin/10_Shorts/hos_008_short_C_v03.mp4",
+    "air_date": "2026-12-02",
+    "fails": [],
+    "warns": [],
+    "stayed_fails": [],
+    "duration_s": 22.71,
+    "audio": {
+      "stream": true,
+      "mean_db": -17.1,
+      "open_mean_db": -15.7
+    },
+    "vo_src": "mix",
+    "vo_onset_s": 0.1,
+    "last_word_end_s": 21.58,
+    "tail_gap_s": 1.13,
+    "level": {
+      "lufs": -14.1,
+      "true_peak_dbtp": -1.9
+    },
+    "motion_0_1s": 44.49,
+    "frame0_diff_0_1_5s": 7.81,
+    "frame0_luma_0s": 106.94,
+    "frame0_luma_0_5s": 136.77,
+    "frame0_kick_0_0_5s": 7.81,
+    "frame0_hook_edge_0s": 0.0054,
+    "frame0_full_bleed": [
+      {
+        "kind": null,
+        "why": null,
+        "detail_top": 5.01,
+        "detail_centre": 10.02,
+        "detail_bottom": 8.49,
+        "std_top": 41.74,
+        "std_bottom": 31.82,
+        "seam_rows": null,
+        "edge": null,
+        "sharp_top": null,
+        "sharp_middle": 0.387,
+        "sharp_bottom": null,
+        "t": 0.0
+      },
+      {
+        "kind": null,
+        "why": null,
+        "detail_top": 4.86,
+        "detail_centre": 11.66,
+        "detail_bottom": 9.34,
+        "std_top": 40.12,
+        "std_bottom": 34.68,
+        "seam_rows": null,
+        "edge": null,
+        "sharp_top": null,
+        "sharp_middle": 0.426,
+        "sharp_bottom": null,
+        "t": 0.25
+      },
+      {
+        "kind": null,
+        "why": null,
+        "detail_top": 4.3,
+        "detail_centre": 12.93,
+        "detail_bottom": 10.49,
+        "std_top": 39.23,
+        "std_bottom": 41.73,
+        "seam_rows": null,
+        "edge": null,
+        "sharp_top": 0.086,
+        "sharp_middle": 0.479,
+        "sharp_bottom": 0.777,
+        "outside_std": [
+          39.71,
+          34.39
+        ],
+        "outside_mean": [
+          171.0,
+          74.6
+        ],
+        "outside_smooth_std": [
+          39.11,
+          30.7
+        ],
+        "t": 0.5
+      }
+    ],
+    "end_card_window_s": null,
+    "clip_full_bleed": [
+      {
+        "kind": null,
+        "why": null,
+        "detail_top": 5.01,
+        "detail_centre": 10.02,
+        "detail_bottom": 8.49,
+        "std_top": 41.74,
+        "std_bottom": 31.82,
+        "seam_rows": null,
+        "edge": null,
+        "sharp_top": null,
+        "sharp_middle": 0.387,
+        "sharp_bottom": null,
+        "t": 0.0,
+        "on_second": true
+      },
+      {
+        "kind": null,
+        "why": null,
+        "detail_top": 4.3,
+        "detail_centre": 12.93,
+        "detail_bottom": 10.49,
+        "std_top": 39.23,
+        "std_bottom": 41.73,
+        "seam_rows": null,
+        "edge": null,
+        "sharp_top": 0.086,
+        "sharp_middle": 0.479,
+        "sharp_bottom": 0.777,
+        "outside_std": [
+          39.71,
+          34.39
+        ],
+        "outside_mean": [
+          171.0,
+          74.6
+        ],
+        "outside_smooth_std": [
+          39.11,
+          30.7
+        ],
+        "t": 0.5,
+        "on_second": false
+      },
+      {
+        "kind": null,
+        "why": null,
+        "detail_top": 1.83,
+        "detail_centre": 9.3,
+        "detail_bottom": 8.78,
+        "std_top": 10.51,
+        "std_bottom": 28.88,
+        "seam_rows": null,
+        "edge": null,
+        "sharp_top": 0.047,
+        "sharp_middle": 0.358,
+        "sharp_bottom": 0.535,
+        "outside_std": [
+          10.82,
+          26.44
+        ],
+        "outside_mean": [
+          47.8,
+          55.3
+        ],
+        "outside_smooth_std": [
+          10.4,
+          22.1
+        ],
+        "t": 1.0,
+        "on_second": true
+      },
+      {
+        "kind": null,
+        "why": null,
+        "detail_top": 3.23,
+        "detail_centre": 6.72,
+        "detail_bottom": 11.16,
+        "std_top": 10.08,
+        "std_bottom": 61.76,
+        "seam_rows": null,
+        "edge": null,
+        "sharp_top": null,
+        "sharp_middle": 0.221,
+        "sharp_bottom": null,
+        "t": 1.5,
+        "on_second": false
+      },
+      {
+        "kind": null,
+        "why": null,
+        "detail_top": 2.12,
+        "detail_centre": 6.56,
+        "detail_bottom": 11.74,
+        "std_top": 8.07,
+        "std_bottom": 58.78,
+        "seam_rows": null,
+        "edge": null,
+        "sharp_top": null,
+        "sharp_middle": 0.207,
+        "sharp_bottom": null,
+        "t": 2.0,
+        "on_second": true
+      },
+      {
+        "kind": null,
+        "why": null,
+        "detail_top": 2.74,
+        "detail_centre": 8.43,
+        "detail_bottom": 12.3,
+        "std_top": 19.12,
+        "std_bottom": 42.71,
+        "seam_rows": null,
+        "edge": null,
+        "sharp_top": null,
+        "sharp_middle": 0.285,
+        "sharp_bottom": null,
+        "t": 2.5,
+        "on_second": false
+      },
+      {
+        "kind": null,
+        "why": null,
+        "detail_top": 1.88,
+        "detail_centre": 4.86,
+        "detail_bottom": 3.17,
+        "std_top": 23.05,
+        "std_bottom": 16.15,
+        "seam_rows": null,
+        "edge": null,
+        "sharp_top": 0.013,
+        "sharp_middle": 0.359,
+        "sharp_bottom": 0.529,
+        "outside_std": [
+          21.76,
+          17.51
+        ],
+        "outside_mean": [
+          126.1,
+          70.3
+        ],
+        "outside_smooth_std": [
+          21.38,
+          15.41
+        ],
+        "t": 3.0,
+        "on_second": true
+      },
+      {
+        "kind": null,
+        "why": null,
+        "detail_top": 1.6,
+        "detail_centre": 4.95,
+        "detail_bottom": 3.05,
+        "std_top": 19.5,
+        "std_bottom": 16.49,
+        "seam_rows": null,
+        "edge": null,
+        "sharp_top": 0.009,
+        "sharp_middle": 0.347,
+        "sharp_bottom": 0.503,
+        "outside_std": [
+          18.37,
+          17.76
+        ],
+        "outside_mean": [
+          119.3,
+          71.2
+        ],
+        "outside_smooth_std": [
+          18.05,
+          15.77
+        ],
+        "t": 3.5,
+        "on_second": false
+      },
+      {
+        "kind": null,
+        "why": null,
+        "detail_top": 1.63,
+        "detail_centre": 6.42,
+        "detail_bottom": 3.02,
+        "std_top": 19.95,
+        "std_bottom": 16.07,
+        "seam_rows": null,
+        "edge": null,
+        "sharp_top": 0.013,
+        "sharp_middle": 0.435,
+        "sharp_bottom": 0.469,
+        "outside_std": [
+          18.92,
+          17.35
+        ],
+        "outside_mean": [
+          122.3,
+          72.5
+        ],
+        "outside_smooth_std": [
+          18.55,
+          15.2
+        ],
+        "t": 4.0,
+        "on_second": true
+      },
+      {
+        "kind": null,
+        "why": null,
+        "detail_top": 1.64,
+        "detail_centre": 6.29,
+        "detail_bottom": 2.74,
+        "std_top": 18.87,
+        "std_bottom": 16.24,
+        "seam_rows": null,
+        "edge": null,
+        "sharp_top": 0.015,
+        "sharp_middle": 0.43,
+        "sharp_bottom": 0.455,
+        "outside_std": [
+          17.95,
+          17.52
+        ],
+        "outside_mean": [
+          127.4,
+          72.7
+        ],
+        "outside_smooth_std": [
+          17.61,
+          15.43
+        ],
+        "t": 4.5,
+        "on_second": false
+      },
+      {
+        "kind": null,
+        "why": null,
+        "detail_top": 0.94,
+        "detail_centre": 5.0,
+        "detail_bottom": 2.13,
+        "std_top": 14.0,
+        "std_bottom": 17.47,
+        "seam_rows": null,
+        "edge": null,
+        "sharp_top": 0.001,
+        "sharp_middle": 0.384,
+        "sharp_bottom": 0.407,
+        "outside_std": [
+          13.23,
+          18.01
+        ],
+        "outside_mean": [
+          95.4,
+          67.9
+        ],
+        "outside_smooth_std": [
+          13.08,
+          16.6
+        ],
+        "t": 5.0,
+        "on_second": true
+      },
+      {
+        "kind": null,
+        "why": null,
+        "detail_top": 0.88,
+        "detail_centre": 4.84,
+        "detail_bottom": 2.96,
+        "std_top": 12.35,
+        "std_bottom": 18.73,
+        "seam_rows": null,
+        "edge": null,
+        "sharp_top": 0.004,
+        "sharp_middle": 0.388,
+        "sharp_bottom": 0.448,
+        "outside_std": [
+          11.76,
+          19.62
+        ],
+        "outside_mean": [
+          95.3,
+          68.0
+        ],
+        "outside_smooth_std": [
+          11.61,
+          17.41
+        ],
+        "t": 5.5,
+        "on_second": false
+      },
+      {
+        "kind": null,
+        "why": null,
+        "detail_top": 3.79,
+        "detail_centre": 5.12,
+        "detail_bottom": 7.0,
+        "std_top": 33.77,
+        "std_bottom": 30.17,
+        "seam_rows": null,
+        "edge": null,
+        "sharp_top": 0.127,
+        "sharp_middle": 0.193,
+        "sharp_bottom": 0.454,
+        "outside_std": [
+          24.99,
+          30.56
+        ],
+        "outside_mean": [
+          66.7,
+          35.2
+        ],
+        "outside_smooth_std": [
+          24.41,
+          26.98
+        ],
+        "t": 6.0,
+        "on_second": true
+      },
+      {
+        "kind": null,
+        "why": null,
+        "detail_top": 2.42,
+        "detail_centre": 4.84,
+        "detail_bottom": 5.03,
+        "std_top": 29.87,
+        "std_bottom": 24.4,
+        "seam_rows": null,
+        "edge": null,
+        "sharp_top": 0.07,
+        "sharp_middle": 0.148,
+        "sharp_bottom": 0.399,
+        "outside_std": [
+          20.45,
+          25.61
+        ],
+        "outside_mean": [
+          57.1,
+          39.7
+        ],
+        "outside_smooth_std": [
+          20.01,
+          22.84
+        ],
+        "t": 6.5,
+        "on_second": false
+      },
+      {
+        "kind": null,
+        "why": null,
+        "detail_top": 2.42,
+        "detail_centre": 3.19,
+        "detail_bottom": 5.3,
+        "std_top": 34.39,
+        "std_bottom": 24.24,
+        "seam_rows": null,
+        "edge": null,
+        "sharp_top": 0.008,
+        "sharp_middle": 0.111,
+        "sharp_bottom": 0.436,
+        "outside_std": [
+          20.02,
+          25.36
+        ],
+        "outside_mean": [
+          81.1,
+          41.4
+        ],
+        "outside_smooth_std": [
+          19.78,
+          22.35
+        ],
+        "t": 7.0,
+        "on_second": true
+      },
+      {
+        "kind": null,
+        "why": null,
+        "detail_top": 2.64,
+        "detail_centre": 3.49,
+        "detail_bottom": 6.27,
+        "std_top": 39.6,
+        "std_bottom": 26.7,
+        "seam_rows": null,
+        "edge": null,
+        "sharp_top": 0.05,
+        "sharp_middle": 0.144,
+        "sharp_bottom": 0.465,
+        "outside_std": [
+          35.87,
+          27.05
+        ],
+        "outside_mean": [
+          130.9,
+          45.4
+        ],
+        "outside_smooth_std": [
+          35.48,
+          24.1
+        ],
+        "t": 7.5,
+        "on_second": false
+      },
+      {
+        "kind": null,
+        "why": null,
+        "detail_top": 2.38,
+        "detail_centre": 3.31,
+        "detail_bottom": 5.52,
+        "std_top": 28.69,
+        "std_bottom": 22.38,
+        "seam_rows": null,
+        "edge": null,
+        "sharp_top": 0.013,
+        "sharp_middle": 0.119,
+        "sharp_bottom": 0.427,
+        "outside_std": [
+          19.43,
+          23.5
+        ],
+        "outside_mean": [
+          69.9,
+          45.4
+        ],
+        "outside_smooth_std": [
+          18.86,
+          19.88
+        ],
+        "t": 8.0,
+        "on_second": true
+      },
+      {
+        "kind": null,
+        "why": null,
+        "detail_top": 2.59,
+        "detail_centre": 3.01,
+        "detail_bottom": 6.76,
+        "std_top": 33.42,
+        "std_bottom": 24.03,
+        "seam_rows": null,
+        "edge": null,
+        "sharp_top": 0.011,
+        "sharp_middle": 0.121,
+        "sharp_bottom": 0.507,
+        "outside_std": [
+          21.69,
+          24.13
+        ],
+        "outside_mean": [
+          90.9,
+          45.1
+        ],
+        "outside_smooth_std": [
+          21.44,
+          20.68
+        ],
+        "t": 8.5,
+        "on_second": false
+      },
+      {
+        "kind": null,
+        "why": null,
+        "detail_top": 3.6,
+        "detail_centre": 10.0,
+        "detail_bottom": 6.58,
+        "std_top": 24.91,
+        "std_bottom": 15.2,
+        "seam_rows": null,
+        "edge": null,
+        "sharp_top": 0.163,
+        "sharp_middle": 0.729,
+        "sharp_bottom": 0.622,
+        "outside_std": [
+          26.14,
+          16.42
+        ],
+        "outside_mean": [
+          97.7,
+          66.5
+        ],
+        "outside_smooth_std": [
+          23.26,
+          13.34
+        ],
+        "t": 9.0,
+        "on_second": true
+      },
+      {
+        "kind": null,
+        "why": null,
+        "detail_top": 5.66,
+        "detail_centre": 9.89,
+        "detail_bottom": 6.26,
+        "std_top": 23.48,
+        "std_bottom": 16.19,
+        "seam_rows": null,
+        "edge": null,
+        "sharp_top": 0.237,
+        "sharp_middle": 0.725,
+        "sharp_bottom": 0.606,
+        "outside_std": [
+          25.08,
+          17.35
+        ],
+        "outside_mean": [
+          83.8,
+          65.6
+        ],
+        "outside_smooth_std": [
+          21.95,
+          14.48
+        ],
+        "t": 9.5,
+        "on_second": false
+      },
+      {
+        "kind": null,
+        "why": null,
+        "detail_top": 5.57,
+        "detail_centre": 10.03,
+        "detail_bottom": 6.41,
+        "std_top": 23.39,
+        "std_bottom": 17.36,
+        "seam_rows": null,
+        "edge": null,
+        "sharp_top": 0.213,
+        "sharp_middle": 0.706,
+        "sharp_bottom": 0.592,
+        "outside_std": [
+          25.27,
+          18.12
+        ],
+        "outside_mean": [
+          83.0,
+          64.5
+        ],
+        "outside_smooth_std": [
+          22.32,
+          15.36
+        ],
+        "t": 10.0,
+        "on_second": true
+      },
+      {
+        "kind": null,
+        "why": null,
+        "detail_top": 5.62,
+        "detail_centre": 9.63,
+        "detail_bottom": 8.32,
+        "std_top": 22.79,
+        "std_bottom": 22.52,
+        "seam_rows": null,
+        "edge": null,
+        "sharp_top": 0.226,
+        "sharp_middle": 0.684,
+        "sharp_bottom": 0.697,
+        "outside_std": [
+          25.01,
+          22.56
+        ],
+        "outside_mean": [
+          82.3,
+          67.2
+        ],
+        "outside_smooth_std": [
+          22.03,
+          19.38
+        ],
+        "t": 10.5,
+        "on_second": false
+      },
+      {
+        "kind": null,
+        "why": null,
+        "detail_top": 5.53,
+        "detail_centre": 9.5,
+        "detail_bottom": 6.1,
+        "std_top": 21.74,
+        "std_bottom": 18.76,
+        "seam_rows": null,
+        "edge": null,
+        "sharp_top": 0.227,
+        "sharp_middle": 0.672,
+        "sharp_bottom": 0.526,
+        "outside_std": [
+          24.24,
+          18.75
+        ],
+        "outside_mean": [
+          81.5,
+          60.1
+        ],
+        "outside_smooth_std": [
+          21.06,
+          15.68
+        ],
+        "t": 11.0,
+        "on_second": true
+      },
+      {
+        "kind": null,
+        "why": null,
+        "detail_top": 5.45,
+        "detail_centre": 9.06,
+        "detail_bottom": 6.12,
+        "std_top": 20.93,
+        "std_bottom": 18.32,
+        "seam_rows": null,
+        "edge": null,
+        "sharp_top": 0.229,
+        "sharp_middle": 0.643,
+        "sharp_bottom": 0.473,
+        "outside_std": [
+          23.07,
+          18.75
+        ],
+        "outside_mean": [
+          80.6,
+          60.2
+        ],
+        "outside_smooth_std": [
+          20.16,
+          15.35
+        ],
+        "t": 11.5,
+        "on_second": false
+      },
+      {
+        "kind": null,
+        "why": null,
+        "detail_top": 4.31,
+        "detail_centre": 6.56,
+        "detail_bottom": 8.72,
+        "std_top": 22.14,
+        "std_bottom": 34.39,
+        "seam_rows": null,
+        "edge": null,
+        "sharp_top": 0.161,
+        "sharp_middle": 0.236,
+        "sharp_bottom": 0.495,
+        "outside_std": [
+          23.3,
+          25.55
+        ],
+        "outside_mean": [
+          125.9,
+          80.7
+        ],
+        "outside_smooth_std": [
+          21.89,
+          21.02
+        ],
+        "t": 12.0,
+        "on_second": true
+      },
+      {
+        "kind": null,
+        "why": null,
+        "detail_top": 4.09,
+        "detail_centre": 6.32,
+        "detail_bottom": 8.63,
+        "std_top": 21.4,
+        "std_bottom": 33.87,
+        "seam_rows": null,
+        "edge": null,
+        "sharp_top": 0.156,
+        "sharp_middle": 0.233,
+        "sharp_bottom": 0.519,
+        "outside_std": [
+          23.09,
+          26.7
+        ],
+        "outside_mean": [
+          124.7,
+          83.6
+        ],
+        "outside_smooth_std": [
+          21.75,
+          22.05
+        ],
+        "t": 12.5,
+        "on_second": false
+      },
+      {
+        "kind": null,
+        "why": null,
+        "detail_top": 3.91,
+        "detail_centre": 5.94,
+        "detail_bottom": 8.53,
+        "std_top": 19.89,
+        "std_bottom": 33.11,
+        "seam_rows": null,
+        "edge": null,
+        "sharp_top": 0.147,
+        "sharp_middle": 0.232,
+        "sharp_bottom": 0.384,
+        "outside_std": [
+          21.18,
+          24.43
+        ],
+        "outside_mean": [
+          123.0,
+          81.1
+        ],
+        "outside_smooth_std": [
+          19.78,
+          20.7
+        ],
+        "t": 13.0,
+        "on_second": true
+      },
+      {
+        "kind": null,
+        "why": null,
+        "detail_top": 4.36,
+        "detail_centre": 6.12,
+        "detail_bottom": 10.89,
+        "std_top": 20.23,
+        "std_bottom": 37.05,
+        "seam_rows": null,
+        "edge": null,
+        "sharp_top": 0.164,
+        "sharp_middle": 0.23,
+        "sharp_bottom": 0.501,
+        "outside_std": [
+          19.5,
+          34.5
+        ],
+        "outside_mean": [
+          120.9,
+          112.5
+        ],
+        "outside_smooth_std": [
+          17.79,
+          28.78
+        ],
+        "t": 13.5,
+        "on_second": false
+      },
+      {
+        "kind": null,
+        "why": null,
+        "detail_top": 4.85,
+        "detail_centre": 6.09,
+        "detail_bottom": 8.65,
+        "std_top": 14.81,
+        "std_bottom": 33.96,
+        "seam_rows": null,
+        "edge": null,
+        "sharp_top": 0.141,
+        "sharp_middle": 0.228,
+        "sharp_bottom": 0.458,
+        "outside_std": [
+          14.93,
+          26.81
+        ],
+        "outside_mean": [
+          105.4,
+          84.4
+        ],
+        "outside_smooth_std": [
+          12.19,
+          22.03
+        ],
+        "t": 14.0,
+        "on_second": true
+      },
+      {
+        "kind": null,
+        "why": null,
+        "detail_top": 13.71,
+        "detail_centre": 10.11,
+        "detail_bottom": 11.43,
+        "std_top": 27.86,
+        "std_bottom": 25.79,
+        "seam_rows": null,
+        "edge": null,
+        "sharp_top": null,
+        "sharp_middle": 0.781,
+        "sharp_bottom": null,
+        "t": 14.5,
+        "on_second": false
+      },
+      {
+        "kind": null,
+        "why": null,
+        "detail_top": 13.46,
+        "detail_centre": 10.22,
+        "detail_bottom": 11.42,
+        "std_top": 27.66,
+        "std_bottom": 25.81,
+        "seam_rows": null,
+        "edge": null,
+        "sharp_top": null,
+        "sharp_middle": 0.787,
+        "sharp_bottom": null,
+        "t": 15.0,
+        "on_second": true
+      },
+      {
+        "kind": null,
+        "why": null,
+        "detail_top": 13.63,
+        "detail_centre": 10.2,
+        "detail_bottom": 11.4,
+        "std_top": 27.86,
+        "std_bottom": 25.85,
+        "seam_rows": null,
+        "edge": null,
+        "sharp_top": null,
+        "sharp_middle": 0.783,
+        "sharp_bottom": null,
+        "t": 15.5,
+        "on_second": false
+      },
+      {
+        "kind": null,
+        "why": null,
+        "detail_top": 13.73,
+        "detail_centre": 10.11,
+        "detail_bottom": 11.33,
+        "std_top": 27.9,
+        "std_bottom": 25.81,
+        "seam_rows": null,
+        "edge": null,
+        "sharp_top": null,
+        "sharp_middle": 0.785,
+        "sharp_bottom": null,
+        "t": 16.0,
+        "on_second": true
+      },
+      {
+        "kind": null,
+        "why": null,
+        "detail_top": 13.72,
+        "detail_centre": 10.19,
+        "detail_bottom": 11.32,
+        "std_top": 28.0,
+        "std_bottom": 25.74,
+        "seam_rows": null,
+        "edge": null,
+        "sharp_top": null,
+        "sharp_middle": 0.781,
+        "sharp_bottom": null,
+        "t": 16.5,
+        "on_second": false
+      },
+      {
+        "kind": null,
+        "why": null,
+        "detail_top": 13.67,
+        "detail_centre": 12.65,
+        "detail_bottom": 11.1,
+        "std_top": 27.84,
+        "std_bottom": 25.74,
+        "seam_rows": null,
+        "edge": null,
+        "sharp_top": null,
+        "sharp_middle": 0.827,
+        "sharp_bottom": null,
+        "t": 17.0,
+        "on_second": true
+      },
+      {
+        "kind": null,
+        "why": null,
+        "detail_top": 16.06,
+        "detail_centre": 12.62,
+        "detail_bottom": 7.31,
+        "std_top": 43.95,
+        "std_bottom": 26.31,
+        "seam_rows": null,
+        "edge": null,
+        "sharp_top": null,
+        "sharp_middle": 0.782,
+        "sharp_bottom": null,
+        "t": 17.5,
+        "on_second": false
+      },
+      {
+        "kind": null,
+        "why": null,
+        "detail_top": 14.03,
+        "detail_centre": 15.58,
+        "detail_bottom": 11.75,
+        "std_top": 51.38,
+        "std_bottom": 31.26,
+        "seam_rows": null,
+        "edge": null,
+        "sharp_top": null,
+        "sharp_middle": 0.793,
+        "sharp_bottom": null,
+        "t": 18.0,
+        "on_second": true
+      },
+      {
+        "kind": null,
+        "why": null,
+        "detail_top": 11.98,
+        "detail_centre": 15.89,
+        "detail_bottom": 11.84,
+        "std_top": 52.57,
+        "std_bottom": 31.39,
+        "seam_rows": null,
+        "edge": null,
+        "sharp_top": null,
+        "sharp_middle": 0.772,
+        "sharp_bottom": null,
+        "t": 18.5,
+        "on_second": false
+      },
+      {
+        "kind": null,
+        "why": null,
+        "detail_top": 14.88,
+        "detail_centre": 17.08,
+        "detail_bottom": 8.1,
+        "std_top": 48.69,
+        "std_bottom": 25.45,
+        "seam_rows": null,
+        "edge": null,
+        "sharp_top": null,
+        "sharp_middle": 0.899,
+        "sharp_bottom": null,
+        "t": 19.0,
+        "on_second": true
+      },
+      {
+        "kind": null,
+        "why": null,
+        "detail_top": 15.9,
+        "detail_centre": 16.63,
+        "detail_bottom": 7.56,
+        "std_top": 36.72,
+        "std_bottom": 26.02,
+        "seam_rows": null,
+        "edge": null,
+        "sharp_top": null,
+        "sharp_middle": 0.9,
+        "sharp_bottom": null,
+        "t": 19.5,
+        "on_second": false
+      },
+      {
+        "kind": null,
+        "why": null,
+        "detail_top": 2.35,
+        "detail_centre": 7.32,
+        "detail_bottom": 2.98,
+        "std_top": 24.44,
+        "std_bottom": 14.5,
+        "seam_rows": null,
+        "edge": null,
+        "sharp_top": 0.068,
+        "sharp_middle": 0.37,
+        "sharp_bottom": 0.361,
+        "outside_std": [
+          24.17,
+          15.94
+        ],
+        "outside_mean": [
+          73.1,
+          54.5
+        ],
+        "outside_smooth_std": [
+          23.44,
+          14.15
+        ],
+        "t": 20.0,
+        "on_second": true
+      },
+      {
+        "kind": null,
+        "why": null,
+        "detail_top": 2.24,
+        "detail_centre": 7.5,
+        "detail_bottom": 2.89,
+        "std_top": 24.86,
+        "std_bottom": 13.91,
+        "seam_rows": null,
+        "edge": null,
+        "sharp_top": 0.06,
+        "sharp_middle": 0.387,
+        "sharp_bottom": 0.345,
+        "outside_std": [
+          24.74,
+          15.3
+        ],
+        "outside_mean": [
+          71.8,
+          54.9
+        ],
+        "outside_smooth_std": [
+          24.01,
+          13.49
+        ],
+        "t": 20.5,
+        "on_second": false
+      },
+      {
+        "kind": null,
+        "why": null,
+        "detail_top": 2.2,
+        "detail_centre": 7.84,
+        "detail_bottom": 2.86,
+        "std_top": 25.2,
+        "std_bottom": 13.42,
+        "seam_rows": null,
+        "edge": null,
+        "sharp_top": 0.063,
+        "sharp_middle": 0.395,
+        "sharp_bottom": 0.303,
+        "outside_std": [
+          25.18,
+          13.3
+        ],
+        "outside_mean": [
+          71.4,
+          53.6
+        ],
+        "outside_smooth_std": [
+          24.43,
+          11.98
+        ],
+        "t": 21.0,
+        "on_second": true
+      },
+      {
+        "kind": null,
+        "why": null,
+        "detail_top": 2.2,
+        "detail_centre": 7.37,
+        "detail_bottom": 2.9,
+        "std_top": 25.34,
+        "std_bottom": 13.2,
+        "seam_rows": null,
+        "edge": null,
+        "sharp_top": 0.06,
+        "sharp_middle": 0.368,
+        "sharp_bottom": 0.319,
+        "outside_std": [
+          25.47,
+          13.35
+        ],
+        "outside_mean": [
+          70.4,
+          52.0
+        ],
+        "outside_smooth_std": [
+          24.74,
+          11.98
+        ],
+        "t": 21.5,
+        "on_second": false
+      },
+      {
+        "kind": null,
+        "why": null,
+        "detail_top": 4.64,
+        "detail_centre": 8.45,
+        "detail_bottom": 9.37,
+        "std_top": 39.95,
+        "std_bottom": 37.48,
+        "seam_rows": null,
+        "edge": null,
+        "sharp_top": null,
+        "sharp_middle": 0.371,
+        "sharp_bottom": null,
+        "t": 22.0,
+        "on_second": true
+      },
+      {
+        "kind": null,
+        "why": null,
+        "detail_top": 5.59,
+        "detail_centre": 8.94,
+        "detail_bottom": 9.34,
+        "std_top": 39.55,
+        "std_bottom": 31.44,
+        "seam_rows": null,
+        "edge": null,
+        "sharp_top": null,
+        "sharp_middle": 0.36,
+        "sharp_bottom": null,
+        "t": 22.5,
+        "on_second": false
+      }
+    ],
+    "padded_stretches_s": [],
+    "okd_before_full_bleed_rule": null,
+    "first_cut_s": 2.83,
+    "dhash": "01130303470b850f",
+    "near_opens": [],
+    "contact_sheet": "/Volumes/MiniWork/scratch/hos_shorts_gate/hos_008_short_C_v03_open_sheet.jpg",
+    "verdict": "PASS"
+  }
+]
