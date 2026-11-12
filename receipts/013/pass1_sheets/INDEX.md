@@ -1,6 +1,6 @@
 # 013 pass-1 contact sheets (review only)
 
-Rows 1–40, batches 01–08. One JPEG per take. Spacing is 0.5 s (start frame, then every 0.5 s, then the clip end).
+Rows 1–45, batches 01–09. One JPEG per take. Spacing is 0.5 s (start frame, then every 0.5 s, then the clip end).
 These are the archive sheets recompressed so each file stays under 600 KB (long edge ≤ 2400 px). `source_sheet_sha256` is the archive original. `committed_sha256` is the file in this folder.
 This branch is for sheet review. It is not merged.
 
@@ -46,5 +46,10 @@ This branch is for sheet review. It is not merged.
 | 38 | 08 | `P4:02_wallace_collector` | `P4:02_wallace_collector_take1_0.5s.jpg` | 65 | 592896 | 2400×1942 | `ec16d0915bd243b3c7a6ab0a87376b8da944d3d16f8379fd8d72300e87d45f79` |
 | 39 | 08 | `P4:03a_helen_burning` | `P4:03a_helen_burning_take1_0.5s.jpg` | 80 | 582379 | 2400×1942 | `7439b9027077dc4c90d4b366f22c0b23dc891cef73300cc87d34f3202acec278` |
 | 40 | 08 | `P4:03b_crates_sinking` | `P4:03b_crates_sinking_take1_0.5s.jpg` | 80 | 543081 | 2400×1942 | `bc9d832f113456de6a0cd43732e87361c6d698ed2ab5d1ee669bbab20ff7bd09` |
+| 41 | 09 | `P4:04_open_boat_ten_days` | `P4:04_open_boat_ten_days_take1_0.5s.jpg` | 70 | 580590 | 2400×1942 | `296e7da5fb8d2766bb5ad24b4832e8671973b0eb26162a3fbe521415bcb3b103` |
+| 42 | 09 | `P4:06a_wallace_fever` | `P4:06a_wallace_fever_take1_0.5s.jpg` | 70 | 578806 | 2400×1942 | `1b7173e4ace6cf2797464d158dfbedce01412dc8d0ed46c38a7354fee51a6daa` |
+| 43 | 09 | `P4:07a_wallace_writes_hut` | `P4:07a_wallace_writes_hut_take1_0.5s.jpg` | 75 | 586350 | 2400×1942 | `f9e05430b0c934ba724fd1ca171bfb92d46fd234492beb21eb73f99f6a50b6f2` |
+| 44 | 09 | `P4:08_midpoint_twist_packet` | `P4:08_midpoint_twist_packet_take1_0.5s.jpg` | 70 | 571295 | 2400×1942 | `800d0ed382023612534812eeafd2bd8f39873b02cc3f863478728d5a92718c5a` |
+| 45 | 09 | `P4:09a_darwin_reads_wallace` | `P4:09a_darwin_reads_wallace_take1_0.5s.jpg` | 75 | 532467 | 2400×1942 | `86971ea385e1a8137469d1b56788ec175916f531cbb28340f0ec20df07d1ab0c` |
 
 Clip and start-still hashes, duration and film window are in `INDEX.json`.
