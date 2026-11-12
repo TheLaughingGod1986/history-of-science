@@ -10,11 +10,12 @@ def main():
  for local,remote,name in deliveries:
   # Verify all output bytes before replacing only the manifest's local paths.
   for src in sorted(local.iterdir()):
-   if src.is_file():
+   if src.is_file() and src.name != name:
     dest=remote/src.name;assert sha(src)==sha(dest),str(dest);copies.append({'name':str(dest.relative_to(NAS)),'sha256':sha(dest)})
   d=json.loads((local/name).read_text())
   for r in d['rows']:r['path']=str(remote/Path(r['path']).name);assert sha(Path(r['path']))==r['sha256']
   save(remote/name,d);save(HERE/name,d)
+  copies.append({'name':str((remote/name).relative_to(NAS)),'sha256':sha(remote/name)})
  plan=json.loads((HERE/'PICTURE_PLAN_v03.json').read_text());indexed={}
  for name,kind in [('FREE_GRAPHICS_MANIFEST_v03.json','preliminary_free'),('REMAINING_GRAPHICS_MANIFEST_v04.json','preliminary_free'),('ARCHIVE_COMPOSITES_v06.json','preliminary_free'),('ARCHIVE_COMPOSITES_v07.json','preliminary_free'),('DEPENDENCY_SLATES_v07.json','dependency_slate')]:
   for r in json.loads((HERE/name).read_text())['rows']:

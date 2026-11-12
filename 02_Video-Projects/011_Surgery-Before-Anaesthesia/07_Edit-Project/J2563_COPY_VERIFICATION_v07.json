@@ -3,10 +3,6 @@
   "copy_file_count": 140,
   "files": [
     {
-      "name": "J2563_archive_composites_v07/ARCHIVE_COMPOSITES_v07.json",
-      "sha256": "804d4e20eae8063be2e351f1e4078fc00b19bb33c35ee59ea310d0f776a0dff4"
-    },
-    {
       "name": "J2563_archive_composites_v07/P2_05a_arch_laughing_gas_broadside.mp4",
       "sha256": "e7b075d32c24794a81c2230cfbc00a69674ac543db64af6db54b6f1dbe7d6daf"
     },
@@ -23,8 +19,8 @@
       "sha256": "b6ae12ae47de21f225e4a0715ff4f89b772f52bb7f9ed5cb0f3ac16dc3651fb2"
     },
     {
-      "name": "J2563_dependency_slates_v07/DEPENDENCY_SLATES_v07.json",
-      "sha256": "766d6ac95b610ffd6befed39028b9aeb4a66c43e31dbd18a3c97625cf54ffb94"
+      "name": "J2563_archive_composites_v07/ARCHIVE_COMPOSITES_v07.json",
+      "sha256": "23a4e7e59a6e37d7e0b7190439e34d8a8d4d6d0d7e4314d0b43efaa54cf8336a"
     },
     {
       "name": "J2563_dependency_slates_v07/P1_01a.mp4",
@@ -561,6 +557,10 @@
     {
       "name": "J2563_dependency_slates_v07/P5_16b_reuse_pocket_watch_to_globe.png",
       "sha256": "39385d82561c5496848d93cb5a41aa4e512a9db7e3b523e9cf9f4f7bcdb799a0"
+    },
+    {
+      "name": "J2563_dependency_slates_v07/DEPENDENCY_SLATES_v07.json",
+      "sha256": "39ce95e6291e29b1f09b403f0c4ddf42a8d191af635c439fc1c32d24b8d78668"
     }
   ],
   "index_sha256": "ab9b280e18eaf00502632cca56f5e8cc499a3d0f1e3883e876606f91dd047e30",
