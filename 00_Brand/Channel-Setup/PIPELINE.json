@@ -826,8 +826,8 @@
             3
           ],
           "steps_unit": "timing revision steps",
-          "waiting": "J2652 continuation: valid clause cuts, source duration, readable chapter transitions and overlay collisions",
-          "note": "J2652 v03 diagnostic rough built and preserved on NAS; clip_check passes but editorial FIX. Not an approved edit or UAT. See timing_rough_J2652/REVIEW_v03.md."
+          "waiting": "J2652: resolve clip_check chapter-narration discrepancy and review brief beats, then new free art and rough",
+          "note": "J2652 v03c: zero unsupported/in-word cuts and planned source overruns; cue/title schedule disjoint. clip_check fails on five chapter breath calculations. FIX, no render or UAT approval; REVIEW_v03c.md."
         },
         "thumbnails": {
           "status": "todo",

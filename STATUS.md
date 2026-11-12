@@ -48,7 +48,7 @@
 
 **codex**
 - ▶️ Underway: nothing right now
-- ⏸ Waiting: 010 Picture: Tested HOS010 runner and live guarded spend preflight after HOS009 J2033; then independent plate review before J2172 assembly; 013 Edit + master: J2652 continuation: valid clause cuts, source duration, readable chapter transitions and overlay collisions
+- ⏸ Waiting: 010 Picture: Tested HOS010 runner and live guarded spend preflight after HOS009 J2033; then independent plate review before J2172 assembly; 013 Edit + master: J2652: resolve clip_check chapter-narration discrepancy and review brief beats, then new free art and rough
 
 **gemini**
 - ▶️ Underway: nothing right now
@@ -73,7 +73,7 @@
 - **008** · ⛔ **Edit + master** — blocked (0%, with claude since Thu 5 Nov 00:00, ⛔ blocked: J1881 reviews J2163 repaired input; separately scoped PTS/GOP splicer, master-word alignment and exact-match assets required. J1755 separate delivery hold., due Thu 12 Nov (today)): J2163 code/evidence delivered: master hash/full decoded PTS and four source hashes verified; 11 tests pass. Output frame delta/sync/unchanged-frame/audio identity UNMEASURED. Six v03 notes unresolved; h22/h35/J1297 preserved. No render or new approval.
 - **009** · 🔄 **Picture** — in progress (78%, 70/90 board rows recorded: 57 accepted Flow +12 code graphics +1 reuse; 20 Quality remain, with Grok (J2632 sheet review; Codex built candidate) since Wed 11 Nov, ⏸ waiting: Grok sheet decision on J2632 before KEEP or splice; J2035 waits for both diagrams. Other picture review requirements remain., due Sun 15 Nov (in 3 d)): J1237 tranche1 PASS; all57 original Flow hashes reverified local/NAS. 70/90 recorded rows unchanged. J2033 owns remaining20 Quality rows under J2026 cap6000/max3 takes each/floor3000; J2034 independent picture review. Generated is not approved. J2632: falling-Moon continuation now a £0 code-graphic candidate; 158 frames at 30 fps, Mini/NAS hashes matched, Gemini timing advisory clear. J2631 five-metre graphic already KEEP. No new approved-row count.
 - **010** · ⛔ **Picture** — blocked (0%, with codex since Fri 6 Nov, ⛔ blocked: Tested HOS010 runner and live guarded spend preflight after HOS009 J2033; then independent plate review before J2172 assembly, due Sun 22 Nov (in 10 d)): J2267: readiness integrated and budget reconciled; 12 Quality Shorts parents scoped, not generated or authorized. 75 total board rows / historical 12911 expected credits. Existing VO and Option A1 retained.
-- **013** · 🔄 **Edit + master** — in progress (67%, 2/3 timing revision steps, with codex since Thu 12 Nov, ⏸ waiting: J2652 continuation: valid clause cuts, source duration, readable chapter transitions and overlay collisions, due Thu 10 Dec (in 28 d)): J2652 v03 diagnostic rough built and preserved on NAS; clip_check passes but editorial FIX. Not an approved edit or UAT. See timing_rough_J2652/REVIEW_v03.md.
+- **013** · 🔄 **Edit + master** — in progress (67%, 2/3 timing revision steps, with codex since Thu 12 Nov, ⏸ waiting: J2652: resolve clip_check chapter-narration discrepancy and review brief beats, then new free art and rough, due Thu 10 Dec (in 28 d)): J2652 v03c: zero unsupported/in-word cuts and planned source overruns; cue/title schedule disjoint. clip_check fails on five chapter breath calculations. FIX, no render or UAT approval; REVIEW_v03c.md.
 
 ## Next steps (in order)
 
@@ -308,7 +308,7 @@ Slotted Thu 17 Dec (J2231; active in jobs/WIP.json #541). Script v02 (92.6 PASS,
 - ⬜ **Shorts scripts** — to do (with Claude, due Thu 12 Nov (today)): two search-titled Shorts (Test B, J2240)
 - ⬜ **Shorts voiceover** — to do (with Cursor, due Mon 16 Nov (in 4 d))
 - ⬜ **Picture** — to do (with Cursor, due Sun 6 Dec (in 24 d))
-- 🔄 **Edit + master** — in progress (67%, 2/3 timing revision steps, with codex since Thu 12 Nov, ⏸ waiting: J2652 continuation: valid clause cuts, source duration, readable chapter transitions and overlay collisions, due Thu 10 Dec (in 28 d)): J2652 v03 diagnostic rough built and preserved on NAS; clip_check passes but editorial FIX. Not an approved edit or UAT. See timing_rough_J2652/REVIEW_v03.md.
+- 🔄 **Edit + master** — in progress (67%, 2/3 timing revision steps, with codex since Thu 12 Nov, ⏸ waiting: J2652: resolve clip_check chapter-narration discrepancy and review brief beats, then new free art and rough, due Thu 10 Dec (in 28 d)): J2652 v03c: zero unsupported/in-word cuts and planned source overruns; cue/title schedule disjoint. clip_check fails on five chapter breath calculations. FIX, no render or UAT approval; REVIEW_v03c.md.
 - ⬜ **Thumbnails** — to do (with Grok, due Thu 10 Dec (in 28 d))
 - ⬜ **Ben's final OK** — to do (with Ben, due Sun 13 Dec (in 31 d))
 - ⬜ **Scheduled** — to do (with Grok, due Mon 14 Dec (in 32 d))

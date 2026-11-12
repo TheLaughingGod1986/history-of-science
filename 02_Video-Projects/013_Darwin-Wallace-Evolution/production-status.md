@@ -222,3 +222,26 @@ The repository-wide ALL CHECKS PASS does not waive the timing FIX. J2652
 continues at 2 of 3; the next run must revise shot allocation and chapter
 presentation, carry the repaired cues forward, then render and inspect a new
 version. Nothing is waiting on Ben.
+
+
+## J2652 v03c timing checkpoint — 12 November 2026, Codex
+
+Candidate plan: 106 beats, zero unsupported or in-word cuts, zero cumulative
+planned Quality-source overruns, all beats at most 7 s. All 43 cue anchors and
+display times preserved; five chapter titles have separate 2.5 s visibility
+windows and no cue overlap. Callback trimmed to 3.56 s of unused footage.
+v02/v03/v03b and the locked WAV remain unchanged. No spend or new render.
+
+```text
+Ran 8 tests in 0.017s — OK
+LOCKED WAV HASH PASS
+ALL CHECKS PASS (repository check_all.sh only)
+clip_check exit 1; passed=false (5 errors, 1 warning)
+```
+
+**Overall FIX, not an edit PASS or UAT.** The five errors arise because the
+checker measures pre-card breath after consuming the current card's narration.
+No checker was changed or bypassed. See
+`07_Edit-Project/timing_rough_J2652/REVIEW_v03c.md` for exact evidence, seven
+checks and remaining work: checker discrepancy, sentence/cadence and semantic
+review, free art/new compositions, new-version rough and phone sheets.
