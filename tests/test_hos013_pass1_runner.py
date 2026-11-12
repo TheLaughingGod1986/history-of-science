@@ -256,6 +256,41 @@ class ScopeOrderAndBatchTests(unittest.TestCase):
         with self.assertRaisesRegex(RUNNER.GuardError, "Part 01"):
             RUNNER.order_rows(non_p1)
 
+    def test_resume_after_first_15_verified_rows_starts_at_tortoise(self):
+        # Batches 1–3 completed: 12 Part 01 rows AND the first 3 Part 02 rows.
+        self.assertEqual([r.part for r in self.rows[:15]], [1] * 12 + [2] * 3)
+        ledger = [{"row_id": r.row_id} for r in self.rows[:15]]
+        with patch.object(RUNNER, "verified_output", return_value=True):
+            batch = RUNNER.next_batch(self.rows, ledger)
+        self.assertEqual(batch[0].row_id, "P2:05_tortoise_overboard")
+        self.assertEqual(batch, self.rows[15:20])
+        self.assertEqual(RUNNER.assert_batch_limits(batch), 500)
+
+    def test_resume_after_only_part1_starts_at_first_part2_row(self):
+        ledger = [{"row_id": r.row_id} for r in self.rows if r.part == 1]
+        self.assertEqual(len(ledger), 12)
+        with patch.object(RUNNER, "verified_output", return_value=True):
+            batch = RUNNER.next_batch(self.rows, ledger)
+        self.assertTrue(batch[0].row_id.startswith("P2:02"))
+        self.assertEqual(batch, self.rows[12:17])
+
+    def test_full_plan_without_part1_still_refused_when_resuming(self):
+        remainder = [r for r in self.rows if r.part != 1]
+        with self.assertRaisesRegex(RUNNER.GuardError, "Part 01"):
+            RUNNER.next_batch(remainder, [])
+        with self.assertRaisesRegex(RUNNER.GuardError, "Part 01"):
+            RUNNER.batch_rows(remainder)
+
+    def test_remainder_order_and_duplicates_are_refused(self):
+        remainder = self.rows[15:]
+        for bad in ([remainder[1], remainder[0], *remainder[2:]],
+                    [*remainder[:5], remainder[6], remainder[5], *remainder[7:]]):
+            with self.subTest(ids=[r.row_id for r in bad[:7]]):
+                with self.assertRaisesRegex(RUNNER.GuardError, "out-of-order"):
+                    RUNNER.batch_rows(bad, require_part1_first=False)
+        with self.assertRaisesRegex(RUNNER.GuardError, "duplicate"):
+            RUNNER.batch_rows([remainder[0], remainder[0]], require_part1_first=False)
+
     def test_batches_respect_5_rows_and_1000_credits(self):
         batches = RUNNER.batch_rows(self.rows)
         self.assertEqual(len(batches), 14)
