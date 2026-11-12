@@ -2555,8 +2555,13 @@ def build_dry_run_report(repo: Path, *, media: Path, archive_dir: Path,
     recorded = latest_recorded_flow_balance(spend_ledger)
     balance_left = recorded["left"] if recorded else None
     liability = shared["liability"]
+    existing = shared["reservations"].get(DEFAULT_RESERVATION)
+    reservation_matches = existing == dict(cap=MAX_TOTAL_CREDITS, film=FILM_ID, active=True)
+    # Liability already includes this active reservation's remaining credits.
+    # Posted charges have left the balance; do not reserve the full cap again.
+    unreserved_cap = 0 if reservation_matches else MAX_TOTAL_CREDITS
     projected_after_013 = (
-        balance_left - liability - other - MAX_TOTAL_CREDITS if balance_left is not None else None
+        balance_left - liability - other - unreserved_cap if balance_left is not None else None
     )
     active_reservations = {
         key: {"film": val["film"], "cap": val["cap"]}
@@ -2600,9 +2605,11 @@ def build_dry_run_report(repo: Path, *, media: Path, archive_dir: Path,
             "other_reservations_arg": other,
             "floor": floor,
             "latest_recorded_flow_balance": recorded,
+            "unreserved_013_cap": unreserved_cap,
             "projected_headroom_after_013_cap": projected_after_013,
             "would_allow_reserve_at_recorded_balance": (
-                bool(not shared["pending"] and projected_after_013 is not None and projected_after_013 >= floor)
+                bool((existing is None or reservation_matches) and not shared["pending"]
+                     and projected_after_013 is not None and projected_after_013 >= floor)
             ),
         },
         "per_part": plan["per_part"],
