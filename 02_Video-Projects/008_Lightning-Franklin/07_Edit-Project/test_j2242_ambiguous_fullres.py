@@ -2,7 +2,11 @@ import unittest
 
 import numpy as np
 
-from _j2242_ambiguous_fullres import judge_row, rank_upper_band
+import json
+from pathlib import Path
+
+from _j2242_ambiguous_fullres import accepted_fullres_indices, judge_row, rank_upper_band
+from _j2242_fullres_caption import prepare_fullres_row
 
 
 def plate(value, pixels=8):
@@ -47,6 +51,66 @@ class FullResCaptionMap(unittest.TestCase):
     def test_count_mismatch_is_rejected(self):
         with self.assertRaises(ValueError):
             judge_row([0], [])
+
+    def _measured(self, best, low, mse=4.0, margin=1.0, local=0, master=100):
+        return {
+            'local_index': local,
+            'master_frame': master,
+            'lowres_index': low,
+            'fullres_best': best,
+            'fullres_second': best + 1,
+            'best_mse': mse,
+            'margin': margin,
+            'winner_matches_lowres': low == best,
+        }
+
+    def test_unique_fullres_schedule_may_disagree_with_lowres(self):
+        frames = [self._measured(0, 1, local=0, master=100), self._measured(1, 1, local=1, master=101)]
+        row = {'row': 'example', 'timeline_frames': [100, 101], 'frames': frames}
+        self.assertEqual(accepted_fullres_indices(row), [0, 1])
+
+    def test_weak_margin_rejects_the_whole_row(self):
+        frames = [self._measured(0, 0, margin=0.07, local=0, master=10)]
+        row = {'row': 'example', 'timeline_frames': [10, 10], 'frames': frames}
+        with self.assertRaises(ValueError):
+            accepted_fullres_indices(row)
+
+    def test_high_error_and_backward_schedule_are_rejected(self):
+        high = {'row': 'example', 'timeline_frames': [10, 10],
+                'frames': [self._measured(0, 0, mse=9.1, local=0, master=10)]}
+        with self.assertRaises(ValueError):
+            accepted_fullres_indices(high)
+        backward = {
+            'row': 'example',
+            'timeline_frames': [10, 11],
+            'frames': [
+                self._measured(2, 2, local=0, master=10),
+                self._measured(1, 1, local=1, master=11),
+            ],
+        }
+        with self.assertRaises(ValueError):
+            accepted_fullres_indices(backward)
+
+    def test_recorded_giant_spark_is_unique_and_the_other_two_are_not(self):
+        path = Path(__file__).resolve().parents[3] / 'jobs/reviews/J2242/AMBIGUOUS_FULLRES.json'
+        data = json.loads(path.read_text())
+        by_name = {row['row']: row for row in data['rows']}
+        giant = by_name['07_giant_spark']
+        self.assertEqual(accepted_fullres_indices(giant), list(range(151)))
+        mapped = {
+            'row': giant['row'],
+            'timeline_frames': giant['timeline_frames'],
+            'source_sha256': giant['source_sha256'],
+            'source_frame_indices': [frame['lowres_index'] for frame in giant['frames']],
+        }
+        prepared = prepare_fullres_row(mapped, giant)
+        self.assertEqual(prepared['source_frame_indices'], list(range(151)))
+        self.assertNotEqual(prepared['source_frame_indices'], mapped['source_frame_indices'])
+        for name in ('02_knuckle_spark', '14_royal_society'):
+            with self.assertRaises(ValueError):
+                accepted_fullres_indices(by_name[name])
+        with self.assertRaises(ValueError):
+            prepare_fullres_row(mapped, by_name['12_steeple_fire'])
 
 
 if __name__ == '__main__':

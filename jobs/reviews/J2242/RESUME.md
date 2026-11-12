@@ -615,3 +615,40 @@ frame, the four table lead-in frames, SAFE PATH DOWN, the foil check at f3353,
 bottom-text reviews, generalized packet mux, preservation and loudness/sync
 checks, and the mandatory film gates. Then J2243 and Chief review. Continue
 this PR #542 worktree.
+
+## Giant spark full-resolution composite — fifteenth run, 12 November 2026
+
+Cursor worker. `_j2242_fullres_caption.py` composites a row only when every
+full-resolution upper-band winner has per-pixel MSE at or below 9 and a
+runner-up margin of at least 0.1. The schedule may disagree with the coarser
+low-resolution index. A single weak frame rejects the whole row. The control
+row cannot use this path.
+
+`07_giant_spark` passes. Its schedule is source frames 0 through 150, one
+contiguous run, on master frames 10626 through 10776. Maximum MSE is 7.350
+and the smallest runner-up margin is 0.753. Low resolution disagreed on local
+frames 9, 54 and 92, each by one source frame, with margins 0.753, 1.400 and
+3.981. Those three low-resolution indices were not used.
+
+`02_knuckle_spark` and `14_royal_society` still fail the margin rule, so they
+stay unrendered. The other three ambiguous rows were already rejected for a
+large plate error and were not remeasured.
+
+The intermediate is
+`/Volumes/MiniWork/scratch/J2242-giant-spark-fullres-v01/caption_composite.nut`,
+SHA-256 `0124237ed4dda1be59d7385b193de8840957df95ff18aa53ea95afd0279782d6`,
+recorded in `GIANT_SPARK_FULLRES.json`. All 151 presentation timestamps and
+durations match the master. The picture above the caption band matches the
+selected clean source, the 55-frame clear tail matches, and the caption is
+present at its midpoint. The card reads HOTTER THAN THE SUN on the midpoint
+still, including the 168×94 still in that scratch folder. That still is one
+card, not the finished phone sheet, and it is not a motion or audio review.
+
+66 J2242 unit tests pass. No v04 master. Original masters and audio are
+unchanged. No spend, generation, UAT, R2 or YouTube action. No detached
+process.
+
+Remaining: five ambiguous caption rows, the four table lead-in frames, SAFE
+PATH DOWN, the foil check at f3353, bottom-text reviews, generalized packet
+mux, preservation and loudness/sync checks, and the mandatory film gates.
+Then J2243 and Chief review. Continue this PR #542 worktree.

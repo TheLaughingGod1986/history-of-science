@@ -54,7 +54,7 @@ def row_clock(timeline,row):
     return frames
 
 
-def render(row,timeline,cards,out):
+def render(row,timeline,cards,out,mapping_evidence=None):
     frames=row_clock(timeline,row);count=len(frames)
     source=Path(row['source_path']);recipe.require_hash(source,row['source_sha256'])
     selected=[c for c in cards if c['row']==row['row']]
@@ -112,7 +112,7 @@ def render(row,timeline,cards,out):
                 original_clock_path=str(clock),original_clock_sha256=recipe.sha256_file(clock),
                 clear_tail_frames=count-last_caption-1,clear_tail_pixel_hashes_match=True,
                 above_caption_band_pixel_hashes_match=True,caption_midpoints_present=True,
-                source_mapping_evidence='Low-resolution candidate matching; final in-context review outstanding',
+                source_mapping_evidence=mapping_evidence or 'Low-resolution candidate matching; final in-context review outstanding',
                 final_mux_duration_verification='OUTSTANDING',final_film_approval=False)
     recipe.write_new(out/'RESULT.json',result)
     print(row['row'],count,'frames verified',flush=True)

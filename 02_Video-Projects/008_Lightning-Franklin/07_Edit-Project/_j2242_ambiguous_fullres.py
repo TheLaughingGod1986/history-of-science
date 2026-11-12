@@ -45,6 +45,34 @@ def rank_upper_band(master, source):
     return ranked
 
 
+def accepted_fullres_indices(row, max_mse=MAX_MSE, min_margin=MIN_MARGIN):
+    """Return a full-resolution schedule when every frame is uniquely identified.
+
+    Disagreement with the coarser low-resolution index is allowed. A frame whose
+    best per-pixel MSE is above the threshold, or whose runner-up margin is
+    below it, rejects the whole row. Nothing here renders or approves a film.
+    """
+    frames = row.get('frames') or []
+    if not frames:
+        raise ValueError('No full-resolution frames')
+    lo, hi = row['timeline_frames']
+    if hi - lo + 1 != len(frames):
+        raise ValueError('Full-resolution count differs from its timeline window')
+    indices = []
+    for i, frame in enumerate(frames):
+        if frame.get('local_index') != i or frame.get('master_frame') != lo + i:
+            raise ValueError('Full-resolution frames are out of order')
+        best = frame.get('fullres_best')
+        if type(best) is not int or best < 0:
+            raise ValueError('Invalid full-resolution index')
+        if frame['best_mse'] > max_mse or frame['margin'] < min_margin:
+            raise ValueError(f'{row.get("row", "row")} local {i} is not a unique full-resolution match')
+        indices.append(best)
+    if any(b < a for a, b in zip(indices, indices[1:])):
+        raise ValueError('Backward full-resolution schedule')
+    return indices
+
+
 def judge_row(lowres_indices, ranked, max_mse=MAX_MSE, min_margin=MIN_MARGIN):
     """Accept a schedule only when full resolution confirms every low-res index."""
     if len(lowres_indices) != len(ranked) or not lowres_indices:
