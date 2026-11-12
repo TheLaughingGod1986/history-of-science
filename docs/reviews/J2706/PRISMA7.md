@@ -51,4 +51,6 @@ No claim of audio or moving-video perception is involved in this tooling task.
 
 This PR is for review only; no deployment or live migration is authorized by it. A later explicit elected-Chief decision is required before any deployment. Before release, review the hosted driver's TLS trust and pool capacity for that environment; the local test does not establish hosted connectivity.
 
-Rollback before deployment: close the PR or revert this single upgrade commit. After a separately authorized deployment: revert the upgrade commit, reinstall from the prior lockfile and regenerate Prisma 6 before redeploying under a new Chief decision. There is no application-schema or data rollback because this change introduces no schema/data migration. Regenerate the client whenever switching Prisma versions.
+Rollback before deployment: close the PR or revert the upgrade PR. After a separately authorized deployment: revert the upgrade PR, reinstall from the prior lockfile and regenerate Prisma 6 before redeploying under a new Chief decision. There is no application-schema or data rollback because this change introduces no schema/data migration. Regenerate the client whenever switching Prisma versions.
+
+CI caught an app-level ignore file change governed by studio-core. The entry was moved into the channel root .gitignore; the shared file is restored exactly. `core_sync.py check`: PASS after correction.
