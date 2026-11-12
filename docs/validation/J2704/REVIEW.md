@@ -4,7 +4,7 @@ Codex covering. Source tested: `2f8835325b5c634f9b421456e6b6f12bf90fec33` (merge
 
 ## Results
 
-- Full `npm run build`: exit 0, Next 16.4.6 compiled and generated routes. Prisma generation and the initial PostgreSQL migration both completed. See build.log.
+- Full `npm run build`: exit 0, Next 16.4.6 compiled and generated routes. Prisma generation and the initial PostgreSQL migration both completed. See build.txt.
 - `npm run typecheck`: exit 0. `npm run lint`: exit 0.
 - `npm test`: 19 files / 199 tests PASS, exit 0.
 - `bash 00_Brand/Channel-Setup/tools/check_all.sh`: exit 0, `ALL CHECKS PASS`.
