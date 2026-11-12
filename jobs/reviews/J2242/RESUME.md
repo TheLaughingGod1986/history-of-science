@@ -434,3 +434,72 @@ row, independent foil check, bottom-text reviews, generalized mux, exact
 output preservation/audio/sync checks and all mandatory gates) exceeds a
 single unattended run. Resume this existing PR #542 worktree; J2614/J2243
 and Chief review remain required.
+
+## Clean caption composites checkpoint — eleventh run, 12 November 2026
+
+`_j2242_opening_caption.py` reconstructs f0..141 directly from the clean KEEP
+kite plate and composites the existing opening layer at original timestamps.
+`OPENING_COMPOSITE.json` pins the 142-frame FFV1 intermediate. All presentation
+timestamps and durations match; f96..141 (46 frames) and the zero-alpha first
+frame match clean-source pixel hashes exactly. Every frame above y720 also
+matches. An initial failed attempt v01 is retained without a success record:
+FFmpeg reset the layer start time, shifting the overlay three frames early.
+The corrected v02 uses `-copyts` and passes all boundary/pixel checks.
+
+`_j2242_caption_source_map.py` compared 3,491 master frames across all 27
+caption rows to their hash-pinned clean sources. `CAPTION_SOURCE_MAP.json`
+records every candidate source index, upper-band MSE, runner-up margin,
+ambiguity and poor-match flags. These are low-resolution mapping candidates,
+not full-frame identity or visual approval. It correctly flags table-window
+f423..426 as poor matches to the table source; the actual table begins f427.
+Do not reconstruct those four frames from a guessed table source frame.
+Some other rows contain actual pause-removal jumps/duplicate frames or very
+similar candidates; they require separate handling, not a CFR assumption.
+The mapper uses NumPy from `~/_desk/venvs/owb-cg/bin/python`.
+
+`_j2242_caption_composites.py` reconstructs only the 17 unambiguous, contiguous
+mapped rows. It validates source hashes, native source timestamps, approved
+caption windows, original master clock and all layer hashes. Each caption is
+over the clean source plate, with no old baked text underneath. Both overlay
+EOF behavior and input timestamps are explicit. Every output presentation
+timestamp matches; every clear-tail frame and every frame above the caption
+band matches the independent clean-source decode exactly. Caption midpoints
+are present. Original clocks are recorded in hashed sidecars; intermediate
+normalized durations are declared individually, and final mux must restore
+them and pass the independent verifier.
+
+`CAPTION_COMPOSITES.json` pins the batch under
+`/Volumes/MiniWork/scratch/J2242-caption-composites-v01/`. Together with the
+opening, this is **18 rows / 20 cards / 2,277 frames**. The detached batch
+finished exit **0**; log and marker are
+`~/_desk/logs/J2242-caption-composites.log` and `.done`. No process remains.
+The 20-card phone still sheet is
+`/Volumes/MiniWork/scratch/J2242-caption-composites-v01/PHONE_INTERMEDIATES.jpg`.
+It was inspected as stills at 168x94 per card; this is a partial intermediate
+sheet, not the required complete final-film sheet (32+SAFE PATH+letter).
+
+Validation:
+
+```
+Ran 54 tests in 0.317s
+OK
+ALL CHECKS PASS
+```
+
+Full outputs: `COMPOSITE_TESTS.txt`, `CHECK_ALL_COMPOSITES.txt`. These are code,
+clock and intermediate checks, not final-film media gates. NumPy tests run in
+the existing `owb-cg` environment. No new packages, generation or credits.
+
+Next: reconstruct the **nine remaining caption rows** (the generic batch's
+skipped list also includes the separately completed opening), including the
+four preceding-shot table boundary frames, source-map ambiguities and pause
+jumps; composite the remaining 12 cards and SAFE PATH DOWN; finish the distinct
+f3353 foil check and ten code-graphic bottom-text checks. Then generalized
+packet mux preserving unchanged boundary pixels, original durations/audio,
+full independent output preservation, loudness/sync and every mandatory
+film/package gate, complete phone sheet and J2614/J2243/Chief review.
+
+No v04 master, final film PASS, UAT, R2, Studio, publication or spend. Original
+masters/audio and J1755 remain untouched. This remaining assembly exceeds a
+single unattended run; release at the verified checkpoint rather than claiming
+completion. Continue this existing PR #542 branch/worktree.
