@@ -1,0 +1,2820 @@
+{
+  "job": "J2242",
+  "status": "TRANSPARENT_CAPTION_LAYERS_ONLY",
+  "count": 33,
+  "caption_count": 32,
+  "safe_path_count": 1,
+  "input_hashes": {
+    "/Volumes/MiniWork/scratch/J2242-hos/02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/J2163_CORRECTION_MANIFEST.json": "b757e91a9fe056c19de029cd693b587424546b50384a0a2b73ef8759e92d9998",
+    "/Volumes/MiniWork/scratch/J2242-hos/02_Video-Projects/008_Lightning-Franklin/01_Script/FACT_NOTES_v01.md": "bab1bb388caed2c95fbf89fa3b9d3ecec27e95b3c46f82af32395edc0fbbaf0d",
+    "/System/Library/Fonts/Supplemental/Didot.ttc": "c227867f4e386af05fce563afeacde2a9360365e93e326fd40fb066d6f02fe8c"
+  },
+  "timeline_sha256": "f4017f76060ccf1056c38d9827adf02659d6f617e453c85ee6a73ae8b26d59c7",
+  "cards": [
+    {
+      "row": "01_kite_open",
+      "source_label": "PHILADELPHIA \u00b7 1752",
+      "label": "PHILADELPHIA 1752",
+      "words": [
+        "PHILADELPHIA",
+        "1752"
+      ],
+      "word_count": 2,
+      "sequence": 1,
+      "sequence_of": 1,
+      "pts_in": 1536,
+      "pts_end": 50688,
+      "hold_ticks": 49152,
+      "static_hold_s": "4",
+      "frame_in": 0,
+      "frame_last": 95,
+      "background": "unbordered umber",
+      "border": false,
+      "gold_rule": false,
+      "pill_chrome": false,
+      "over": "moving plate",
+      "one_at_a_time": true,
+      "rendered": true,
+      "new_claims": false,
+      "splice": false,
+      "window_remainder_ticks": 23552,
+      "layer_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/01_01_kite_open_1.nut",
+      "layer_sha256": "295d4a65903e3ef7bb39c1bd177eafe47f798cd6940e893996fe168923262dec",
+      "png_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/01_01_kite_open_1.png",
+      "png_sha256": "fff4d8295a480dd2328533c29f0637a535e2667a28a0dffc84b8eff2989cf031",
+      "frame_count": 96,
+      "original_pts_match": true,
+      "original_clock_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/01_01_kite_open_1_clock.json",
+      "original_clock_sha256": "ee6cc63ef99a37bbb39d9a25d719fb78b043483e74f31d159319fa6ac86f9de6",
+      "original_durations_preserved_in_intermediate": true,
+      "overlay_position": [
+        0,
+        720
+      ],
+      "layer_size": [
+        1920,
+        300
+      ],
+      "fade_in_s": "3/8",
+      "fade_out_s": "3/8",
+      "style": {
+        "font": "Didot Italic",
+        "font_size": 128,
+        "lines": [
+          "PHILADELPHIA 1752"
+        ],
+        "panel_rgba": [
+          48,
+          30,
+          20,
+          232
+        ],
+        "text_rgba": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "panel_bounds": [
+          267,
+          74,
+          1653,
+          226
+        ],
+        "border": false,
+        "gold_rule": false,
+        "pill_chrome": false
+      },
+      "alpha_verification": {
+        "decoded_frames": 96,
+        "first_alpha": 0,
+        "peak_alpha": 232,
+        "last_alpha": 26,
+        "maximum_alpha_error": 0,
+        "passed": true
+      },
+      "composited_over_clean_plate": false
+    },
+    {
+      "row": "02_tower_tilt",
+      "source_label": "THE ANSWER IS ON THE ROOF",
+      "label": "THE ANSWER IS",
+      "words": [
+        "THE",
+        "ANSWER",
+        "IS"
+      ],
+      "word_count": 3,
+      "sequence": 1,
+      "sequence_of": 2,
+      "pts_in": 140800,
+      "pts_end": 179200,
+      "hold_ticks": 38400,
+      "static_hold_s": "25/8",
+      "frame_in": 272,
+      "frame_last": 346,
+      "background": "unbordered umber",
+      "border": false,
+      "gold_rule": false,
+      "pill_chrome": false,
+      "over": "moving plate",
+      "one_at_a_time": true,
+      "rendered": true,
+      "new_claims": false,
+      "splice": false,
+      "window_remainder_ticks": 0,
+      "layer_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/02_02_tower_tilt_1.nut",
+      "layer_sha256": "56bad69f5aebc47b2cef798a13ec1000e5198c414da22645b186087c23d2e25a",
+      "png_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/02_02_tower_tilt_1.png",
+      "png_sha256": "f76089798ab68b335b51f9e956c6c42c1a11fa9c85f9a8302abeda669c61e599",
+      "frame_count": 75,
+      "original_pts_match": true,
+      "original_clock_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/02_02_tower_tilt_1_clock.json",
+      "original_clock_sha256": "c0803d2ece239b77f743826f14f5918205f90d14f445eb5acb83e3ea0ced6f8b",
+      "original_durations_preserved_in_intermediate": true,
+      "overlay_position": [
+        0,
+        720
+      ],
+      "layer_size": [
+        1920,
+        300
+      ],
+      "fade_in_s": "3/8",
+      "fade_out_s": "3/8",
+      "style": {
+        "font": "Didot Italic",
+        "font_size": 128,
+        "lines": [
+          "THE ANSWER IS"
+        ],
+        "panel_rgba": [
+          48,
+          30,
+          20,
+          232
+        ],
+        "text_rgba": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "panel_bounds": [
+          402,
+          74,
+          1518,
+          226
+        ],
+        "border": false,
+        "gold_rule": false,
+        "pill_chrome": false
+      },
+      "alpha_verification": {
+        "decoded_frames": 75,
+        "first_alpha": 0,
+        "peak_alpha": 232,
+        "last_alpha": 26,
+        "maximum_alpha_error": 0,
+        "passed": true
+      },
+      "composited_over_clean_plate": false
+    },
+    {
+      "row": "02_tower_tilt",
+      "source_label": "THE ANSWER IS ON THE ROOF",
+      "label": "ON THE ROOF",
+      "words": [
+        "ON",
+        "THE",
+        "ROOF"
+      ],
+      "word_count": 3,
+      "sequence": 2,
+      "sequence_of": 2,
+      "pts_in": 179200,
+      "pts_end": 218112,
+      "hold_ticks": 38912,
+      "static_hold_s": "19/6",
+      "frame_in": 347,
+      "frame_last": 422,
+      "background": "unbordered umber",
+      "border": false,
+      "gold_rule": false,
+      "pill_chrome": false,
+      "over": "moving plate",
+      "one_at_a_time": true,
+      "rendered": true,
+      "new_claims": false,
+      "splice": false,
+      "window_remainder_ticks": 0,
+      "layer_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/03_02_tower_tilt_2.nut",
+      "layer_sha256": "6f2edcb9f33c33f0f982c302561b87bfb51f4ec470533fc3ae9ba671087d901a",
+      "png_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/03_02_tower_tilt_2.png",
+      "png_sha256": "785d09ac4582c42292e7b32bdfdc8870a65ff42e4652a5f702c76701698702f1",
+      "frame_count": 76,
+      "original_pts_match": true,
+      "original_clock_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/03_02_tower_tilt_2_clock.json",
+      "original_clock_sha256": "899ef21e2fea63c82cd30af9ef3b054729907085e598b7fd75db48e76b7ab970",
+      "original_durations_preserved_in_intermediate": true,
+      "overlay_position": [
+        0,
+        720
+      ],
+      "layer_size": [
+        1920,
+        300
+      ],
+      "fade_in_s": "3/8",
+      "fade_out_s": "3/8",
+      "style": {
+        "font": "Didot Italic",
+        "font_size": 128,
+        "lines": [
+          "ON THE ROOF"
+        ],
+        "panel_rgba": [
+          48,
+          30,
+          20,
+          232
+        ],
+        "text_rgba": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "panel_bounds": [
+          466,
+          74,
+          1454,
+          226
+        ],
+        "border": false,
+        "gold_rule": false,
+        "pill_chrome": false
+      },
+      "alpha_verification": {
+        "decoded_frames": 76,
+        "first_alpha": 0,
+        "peak_alpha": 232,
+        "last_alpha": 26,
+        "maximum_alpha_error": 0,
+        "passed": true
+      },
+      "composited_over_clean_plate": false
+    },
+    {
+      "row": "03_table_three",
+      "source_label": "A KITE \u00b7 A KEY \u00b7 A JAR",
+      "label": "A KITE",
+      "words": [
+        "A",
+        "KITE"
+      ],
+      "word_count": 2,
+      "sequence": 1,
+      "sequence_of": 3,
+      "pts_in": 218112,
+      "pts_end": 238592,
+      "hold_ticks": 20480,
+      "static_hold_s": "5/3",
+      "frame_in": 423,
+      "frame_last": 462,
+      "background": "unbordered umber",
+      "border": false,
+      "gold_rule": false,
+      "pill_chrome": false,
+      "over": "moving plate",
+      "one_at_a_time": true,
+      "rendered": true,
+      "new_claims": false,
+      "splice": false,
+      "window_remainder_ticks": 0,
+      "layer_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/04_03_table_three_1.nut",
+      "layer_sha256": "16992540ff134c95dbf0909e5d6792ede8db28e8bb986cda488c26e7f9c9557a",
+      "png_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/04_03_table_three_1.png",
+      "png_sha256": "fa716665c3008750018c382df6f77aeb45248eb3e1b69eb7e44e7b3a6c317934",
+      "frame_count": 40,
+      "original_pts_match": true,
+      "original_clock_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/04_03_table_three_1_clock.json",
+      "original_clock_sha256": "406f356d055350301b8966a346cc574ebbd5b3784e8ae79e9472376a1c0e0dca",
+      "original_durations_preserved_in_intermediate": true,
+      "overlay_position": [
+        0,
+        720
+      ],
+      "layer_size": [
+        1920,
+        300
+      ],
+      "fade_in_s": "3/8",
+      "fade_out_s": "3/8",
+      "style": {
+        "font": "Didot Italic",
+        "font_size": 128,
+        "lines": [
+          "A KITE"
+        ],
+        "panel_rgba": [
+          48,
+          30,
+          20,
+          232
+        ],
+        "text_rgba": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "panel_bounds": [
+          685,
+          74,
+          1235,
+          226
+        ],
+        "border": false,
+        "gold_rule": false,
+        "pill_chrome": false
+      },
+      "alpha_verification": {
+        "decoded_frames": 40,
+        "first_alpha": 0,
+        "peak_alpha": 232,
+        "last_alpha": 26,
+        "maximum_alpha_error": 0,
+        "passed": true
+      },
+      "composited_over_clean_plate": false
+    },
+    {
+      "row": "03_table_three",
+      "source_label": "A KITE \u00b7 A KEY \u00b7 A JAR",
+      "label": "A KEY",
+      "words": [
+        "A",
+        "KEY"
+      ],
+      "word_count": 2,
+      "sequence": 2,
+      "sequence_of": 3,
+      "pts_in": 238592,
+      "pts_end": 259584,
+      "hold_ticks": 20992,
+      "static_hold_s": "41/24",
+      "frame_in": 463,
+      "frame_last": 503,
+      "background": "unbordered umber",
+      "border": false,
+      "gold_rule": false,
+      "pill_chrome": false,
+      "over": "moving plate",
+      "one_at_a_time": true,
+      "rendered": true,
+      "new_claims": false,
+      "splice": false,
+      "window_remainder_ticks": 0,
+      "layer_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/05_03_table_three_2.nut",
+      "layer_sha256": "56929b475ecab87475d1975f2fff563fa6a8e9b1efc790c95913c9055a90a2a3",
+      "png_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/05_03_table_three_2.png",
+      "png_sha256": "01fd42decc5b91bd55073ab2baead43cfaa59941661f2d1cf620a9bc880aa811",
+      "frame_count": 41,
+      "original_pts_match": true,
+      "original_clock_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/05_03_table_three_2_clock.json",
+      "original_clock_sha256": "98ad3640a2ecaff873636b011e2d85b90f547a11c300ec9524a8adec1ff4652c",
+      "original_durations_preserved_in_intermediate": true,
+      "overlay_position": [
+        0,
+        720
+      ],
+      "layer_size": [
+        1920,
+        300
+      ],
+      "fade_in_s": "3/8",
+      "fade_out_s": "3/8",
+      "style": {
+        "font": "Didot Italic",
+        "font_size": 128,
+        "lines": [
+          "A KEY"
+        ],
+        "panel_rgba": [
+          48,
+          30,
+          20,
+          232
+        ],
+        "text_rgba": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "panel_bounds": [
+          706,
+          74,
+          1214,
+          226
+        ],
+        "border": false,
+        "gold_rule": false,
+        "pill_chrome": false
+      },
+      "alpha_verification": {
+        "decoded_frames": 41,
+        "first_alpha": 0,
+        "peak_alpha": 232,
+        "last_alpha": 26,
+        "maximum_alpha_error": 0,
+        "passed": true
+      },
+      "composited_over_clean_plate": false
+    },
+    {
+      "row": "03_table_three",
+      "source_label": "A KITE \u00b7 A KEY \u00b7 A JAR",
+      "label": "A JAR",
+      "words": [
+        "A",
+        "JAR"
+      ],
+      "word_count": 2,
+      "sequence": 3,
+      "sequence_of": 3,
+      "pts_in": 259584,
+      "pts_end": 280576,
+      "hold_ticks": 20992,
+      "static_hold_s": "41/24",
+      "frame_in": 504,
+      "frame_last": 544,
+      "background": "unbordered umber",
+      "border": false,
+      "gold_rule": false,
+      "pill_chrome": false,
+      "over": "moving plate",
+      "one_at_a_time": true,
+      "rendered": true,
+      "new_claims": false,
+      "splice": false,
+      "window_remainder_ticks": 0,
+      "layer_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/06_03_table_three_3.nut",
+      "layer_sha256": "ef4419f816d21f4573619faa9e8d30b84f0b927d36ff2fa8684854c5e992b52d",
+      "png_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/06_03_table_three_3.png",
+      "png_sha256": "e95db05eea3b39cd3bdb0764fbe013816aa4c8b150898417cfa3757e9158cd80",
+      "frame_count": 41,
+      "original_pts_match": true,
+      "original_clock_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/06_03_table_three_3_clock.json",
+      "original_clock_sha256": "ab8e4e42388837184c7c2ddaddc3cac0d4560831e84e2f19393c8f7a3c4d38cb",
+      "original_durations_preserved_in_intermediate": true,
+      "overlay_position": [
+        0,
+        720
+      ],
+      "layer_size": [
+        1920,
+        300
+      ],
+      "fade_in_s": "3/8",
+      "fade_out_s": "3/8",
+      "style": {
+        "font": "Didot Italic",
+        "font_size": 128,
+        "lines": [
+          "A JAR"
+        ],
+        "panel_rgba": [
+          48,
+          30,
+          20,
+          232
+        ],
+        "text_rgba": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "panel_bounds": [
+          728,
+          74,
+          1192,
+          226
+        ],
+        "border": false,
+        "gold_rule": false,
+        "pill_chrome": false
+      },
+      "alpha_verification": {
+        "decoded_frames": 41,
+        "first_alpha": 0,
+        "peak_alpha": 232,
+        "last_alpha": 26,
+        "maximum_alpha_error": 0,
+        "passed": true
+      },
+      "composited_over_clean_plate": false
+    },
+    {
+      "row": "12_steeple_fire",
+      "source_label": "LIGHTNING",
+      "label": "LIGHTNING",
+      "words": [
+        "LIGHTNING"
+      ],
+      "word_count": 1,
+      "sequence": 1,
+      "sequence_of": 1,
+      "pts_in": 829440,
+      "pts_end": 869376,
+      "hold_ticks": 39936,
+      "static_hold_s": "13/4",
+      "frame_in": 1615,
+      "frame_last": 1692,
+      "background": "unbordered umber",
+      "border": false,
+      "gold_rule": false,
+      "pill_chrome": false,
+      "over": "moving plate",
+      "one_at_a_time": true,
+      "rendered": true,
+      "new_claims": false,
+      "splice": false,
+      "window_remainder_ticks": 0,
+      "layer_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/07_12_steeple_fire_1.nut",
+      "layer_sha256": "dff022d03f62f7b94f11b86c78eeffacf9aadd20b3484db967e7b06d6fff50b9",
+      "png_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/07_12_steeple_fire_1.png",
+      "png_sha256": "87d2795ef2600307ef79c614fcfa8092557839cd9f9eb70b2dda4d51c5fcf911",
+      "frame_count": 78,
+      "original_pts_match": true,
+      "original_clock_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/07_12_steeple_fire_1_clock.json",
+      "original_clock_sha256": "d58f600d0983eb477409d06db7015b8334ed91beedf12acab31e4a562a31cd81",
+      "original_durations_preserved_in_intermediate": true,
+      "overlay_position": [
+        0,
+        720
+      ],
+      "layer_size": [
+        1920,
+        300
+      ],
+      "fade_in_s": "3/8",
+      "fade_out_s": "3/8",
+      "style": {
+        "font": "Didot Italic",
+        "font_size": 128,
+        "lines": [
+          "LIGHTNING"
+        ],
+        "panel_rgba": [
+          48,
+          30,
+          20,
+          232
+        ],
+        "text_rgba": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "panel_bounds": [
+          538,
+          74,
+          1382,
+          226
+        ],
+        "border": false,
+        "gold_rule": false,
+        "pill_chrome": false
+      },
+      "alpha_verification": {
+        "decoded_frames": 78,
+        "first_alpha": 0,
+        "peak_alpha": 232,
+        "last_alpha": 26,
+        "maximum_alpha_error": 0,
+        "passed": true
+      },
+      "composited_over_clean_plate": false
+    },
+    {
+      "row": "13_ring_the_bells",
+      "source_label": "RING THE BELLS",
+      "label": "RING THE BELLS",
+      "words": [
+        "RING",
+        "THE",
+        "BELLS"
+      ],
+      "word_count": 3,
+      "sequence": 1,
+      "sequence_of": 1,
+      "pts_in": 869376,
+      "pts_end": 918528,
+      "hold_ticks": 49152,
+      "static_hold_s": "4",
+      "frame_in": 1693,
+      "frame_last": 1788,
+      "background": "unbordered umber",
+      "border": false,
+      "gold_rule": false,
+      "pill_chrome": false,
+      "over": "moving plate",
+      "one_at_a_time": true,
+      "rendered": true,
+      "new_claims": false,
+      "splice": false,
+      "window_remainder_ticks": 6656,
+      "layer_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/08_13_ring_the_bells_1.nut",
+      "layer_sha256": "81368aae7af24e6fb661ddcfa0bf8f02d64b48daf40ca98fbfd4c06878ae6dd8",
+      "png_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/08_13_ring_the_bells_1.png",
+      "png_sha256": "bf4cc34a0457c3be0752075f176bd2355653ad7de951a63bb232cc4d9e1023e8",
+      "frame_count": 96,
+      "original_pts_match": true,
+      "original_clock_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/08_13_ring_the_bells_1_clock.json",
+      "original_clock_sha256": "c86c2f347b86daa6402a9ec8cf0da55e6cd1513614e558f13b83755ebab3ac27",
+      "original_durations_preserved_in_intermediate": true,
+      "overlay_position": [
+        0,
+        720
+      ],
+      "layer_size": [
+        1920,
+        300
+      ],
+      "fade_in_s": "3/8",
+      "fade_out_s": "3/8",
+      "style": {
+        "font": "Didot Italic",
+        "font_size": 128,
+        "lines": [
+          "RING THE BELLS"
+        ],
+        "panel_rgba": [
+          48,
+          30,
+          20,
+          232
+        ],
+        "text_rgba": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "panel_bounds": [
+          380,
+          74,
+          1540,
+          226
+        ],
+        "border": false,
+        "gold_rule": false,
+        "pill_chrome": false
+      },
+      "alpha_verification": {
+        "decoded_frames": 96,
+        "first_alpha": 0,
+        "peak_alpha": 232,
+        "last_alpha": 26,
+        "maximum_alpha_error": 0,
+        "passed": true
+      },
+      "composited_over_clean_plate": false
+    },
+    {
+      "row": "01_salon_tube",
+      "source_label": "ELECTRICITY \u00b7 A PARTY TRICK",
+      "label": "ELECTRICITY A PARTY TRICK",
+      "words": [
+        "ELECTRICITY",
+        "A",
+        "PARTY",
+        "TRICK"
+      ],
+      "word_count": 4,
+      "sequence": 1,
+      "sequence_of": 1,
+      "pts_in": 1235456,
+      "pts_end": 1284608,
+      "hold_ticks": 49152,
+      "static_hold_s": "4",
+      "frame_in": 2407,
+      "frame_last": 2502,
+      "background": "unbordered umber",
+      "border": false,
+      "gold_rule": false,
+      "pill_chrome": false,
+      "over": "moving plate",
+      "one_at_a_time": true,
+      "rendered": true,
+      "new_claims": false,
+      "splice": false,
+      "window_remainder_ticks": 1536,
+      "layer_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/09_01_salon_tube_1.nut",
+      "layer_sha256": "16dac1ebdc7a5b0d4c9e5abe4774f6ab41e8d91cc2719d18d8f57c6b5217a73b",
+      "png_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/09_01_salon_tube_1.png",
+      "png_sha256": "e2ea5399aff22b7fce056ee910318a53fd94744d469cd78914ba207f9dcfcc54",
+      "frame_count": 96,
+      "original_pts_match": true,
+      "original_clock_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/09_01_salon_tube_1_clock.json",
+      "original_clock_sha256": "625c6230b9fcb501867386de2cb0f5db7c0a9b90d941e9467538e6218d277981",
+      "original_durations_preserved_in_intermediate": true,
+      "overlay_position": [
+        0,
+        720
+      ],
+      "layer_size": [
+        1920,
+        300
+      ],
+      "fade_in_s": "3/8",
+      "fade_out_s": "3/8",
+      "style": {
+        "font": "Didot Italic",
+        "font_size": 128,
+        "lines": [
+          "ELECTRICITY",
+          "A PARTY TRICK"
+        ],
+        "panel_rgba": [
+          48,
+          30,
+          20,
+          232
+        ],
+        "text_rgba": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "panel_bounds": [
+          428,
+          8,
+          1492,
+          292
+        ],
+        "border": false,
+        "gold_rule": false,
+        "pill_chrome": false
+      },
+      "alpha_verification": {
+        "decoded_frames": 96,
+        "first_alpha": 0,
+        "peak_alpha": 232,
+        "last_alpha": 26,
+        "maximum_alpha_error": 0,
+        "passed": true
+      },
+      "composited_over_clean_plate": false
+    },
+    {
+      "row": "04_franklin_watches",
+      "source_label": "BENJAMIN FRANKLIN \u00b7 PHILADELPHIA",
+      "label": "BENJAMIN FRANKLIN PHILADELPHIA",
+      "words": [
+        "BENJAMIN",
+        "FRANKLIN",
+        "PHILADELPHIA"
+      ],
+      "word_count": 3,
+      "sequence": 1,
+      "sequence_of": 1,
+      "pts_in": 1395200,
+      "pts_end": 1444352,
+      "hold_ticks": 49152,
+      "static_hold_s": "4",
+      "frame_in": 2718,
+      "frame_last": 2813,
+      "background": "unbordered umber",
+      "border": false,
+      "gold_rule": false,
+      "pill_chrome": false,
+      "over": "moving plate",
+      "one_at_a_time": true,
+      "rendered": true,
+      "new_claims": false,
+      "splice": false,
+      "window_remainder_ticks": 37888,
+      "layer_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/10_04_franklin_watches_1.nut",
+      "layer_sha256": "fdd90784770c39c5ae403e916d552bdd75adf5ae2aaec394aae04881ab9762d0",
+      "png_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/10_04_franklin_watches_1.png",
+      "png_sha256": "2c89553b877c88cd6b9e179061c83ff83231b73fc7fc08de72625a9fdc2c7d43",
+      "frame_count": 96,
+      "original_pts_match": true,
+      "original_clock_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/10_04_franklin_watches_1_clock.json",
+      "original_clock_sha256": "b6de681b295e3fd6f9944cc8694c84919932e1c44d1ffbc9b85fc7856cff776f",
+      "original_durations_preserved_in_intermediate": true,
+      "overlay_position": [
+        0,
+        720
+      ],
+      "layer_size": [
+        1920,
+        300
+      ],
+      "fade_in_s": "3/8",
+      "fade_out_s": "3/8",
+      "style": {
+        "font": "Didot Italic",
+        "font_size": 128,
+        "lines": [
+          "BENJAMIN FRANKLIN",
+          "PHILADELPHIA"
+        ],
+        "panel_rgba": [
+          48,
+          30,
+          20,
+          232
+        ],
+        "text_rgba": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "panel_bounds": [
+          224,
+          8,
+          1696,
+          292
+        ],
+        "border": false,
+        "gold_rule": false,
+        "pill_chrome": false
+      },
+      "alpha_verification": {
+        "decoded_frames": 96,
+        "first_alpha": 0,
+        "peak_alpha": 232,
+        "last_alpha": 26,
+        "maximum_alpha_error": 0,
+        "passed": true
+      },
+      "composited_over_clean_plate": false
+    },
+    {
+      "row": "06_leyden_jar",
+      "source_label": "THE LEYDEN JAR",
+      "label": "THE LEYDEN JAR",
+      "words": [
+        "THE",
+        "LEYDEN",
+        "JAR"
+      ],
+      "word_count": 3,
+      "sequence": 1,
+      "sequence_of": 1,
+      "pts_in": 1564672,
+      "pts_end": 1613824,
+      "hold_ticks": 49152,
+      "static_hold_s": "4",
+      "frame_in": 3049,
+      "frame_last": 3144,
+      "background": "unbordered umber",
+      "border": false,
+      "gold_rule": false,
+      "pill_chrome": false,
+      "over": "moving plate",
+      "one_at_a_time": true,
+      "rendered": true,
+      "new_claims": false,
+      "splice": false,
+      "window_remainder_ticks": 11776,
+      "layer_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/11_06_leyden_jar_1.nut",
+      "layer_sha256": "b9ae6ddcf07145e61de3870d5207c115fb9c52b7f02cb0d0ede612e4d3e6b156",
+      "png_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/11_06_leyden_jar_1.png",
+      "png_sha256": "ec216de65053d7e1fbf1aebae31fa48ecaab55ab275f46a728c2df590690e417",
+      "frame_count": 96,
+      "original_pts_match": true,
+      "original_clock_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/11_06_leyden_jar_1_clock.json",
+      "original_clock_sha256": "d0825773223327187d21cc6291859115bf6d947f3dbf7b3a9d78cbe25b008f3f",
+      "original_durations_preserved_in_intermediate": true,
+      "overlay_position": [
+        0,
+        720
+      ],
+      "layer_size": [
+        1920,
+        300
+      ],
+      "fade_in_s": "3/8",
+      "fade_out_s": "3/8",
+      "style": {
+        "font": "Didot Italic",
+        "font_size": 128,
+        "lines": [
+          "THE LEYDEN JAR"
+        ],
+        "panel_rgba": [
+          48,
+          30,
+          20,
+          232
+        ],
+        "text_rgba": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "panel_bounds": [
+          361,
+          74,
+          1559,
+          226
+        ],
+        "border": false,
+        "gold_rule": false,
+        "pill_chrome": false
+      },
+      "alpha_verification": {
+        "decoded_frames": 96,
+        "first_alpha": 0,
+        "peak_alpha": 232,
+        "last_alpha": 26,
+        "maximum_alpha_error": 0,
+        "passed": true
+      },
+      "composited_over_clean_plate": false
+    },
+    {
+      "row": "12_notebook_list",
+      "source_label": "7 NOVEMBER 1749",
+      "label": "7 NOVEMBER 1749",
+      "words": [
+        "7",
+        "NOVEMBER",
+        "1749"
+      ],
+      "word_count": 3,
+      "sequence": 1,
+      "sequence_of": 1,
+      "pts_in": 1887232,
+      "pts_end": 1936384,
+      "hold_ticks": 49152,
+      "static_hold_s": "4",
+      "frame_in": 3678,
+      "frame_last": 3773,
+      "background": "unbordered umber",
+      "border": false,
+      "gold_rule": false,
+      "pill_chrome": false,
+      "over": "moving plate",
+      "one_at_a_time": true,
+      "rendered": true,
+      "new_claims": false,
+      "splice": false,
+      "window_remainder_ticks": 19968,
+      "layer_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/12_12_notebook_list_1.nut",
+      "layer_sha256": "35b7d050f18a3ca6d1a0fed6aea98807a6c8841d7b36cf55376356c3928e6f27",
+      "png_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/12_12_notebook_list_1.png",
+      "png_sha256": "672f8433d7c0c450b336b678472b3475d0b5c5a0224b11a80f40a01e91962d6e",
+      "frame_count": 96,
+      "original_pts_match": true,
+      "original_clock_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/12_12_notebook_list_1_clock.json",
+      "original_clock_sha256": "253e92d655f670ee67c7eb4228813519299e291c31b07174c6515d798a445fe9",
+      "original_durations_preserved_in_intermediate": true,
+      "overlay_position": [
+        0,
+        720
+      ],
+      "layer_size": [
+        1920,
+        300
+      ],
+      "fade_in_s": "3/8",
+      "fade_out_s": "3/8",
+      "style": {
+        "font": "Didot Italic",
+        "font_size": 128,
+        "lines": [
+          "7 NOVEMBER 1749"
+        ],
+        "panel_rgba": [
+          48,
+          30,
+          20,
+          232
+        ],
+        "text_rgba": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "panel_bounds": [
+          363,
+          74,
+          1557,
+          226
+        ],
+        "border": false,
+        "gold_rule": false,
+        "pill_chrome": false
+      },
+      "alpha_verification": {
+        "decoded_frames": 96,
+        "first_alpha": 0,
+        "peak_alpha": 232,
+        "last_alpha": 26,
+        "maximum_alpha_error": 0,
+        "passed": true
+      },
+      "composited_over_clean_plate": false
+    },
+    {
+      "row": "17_page_bottom",
+      "source_label": "LET THE EXPERIMENT BE MADE",
+      "label": "LET THE EXPERIMENT",
+      "words": [
+        "LET",
+        "THE",
+        "EXPERIMENT"
+      ],
+      "word_count": 3,
+      "sequence": 1,
+      "sequence_of": 2,
+      "pts_in": 2161664,
+      "pts_end": 2188800,
+      "hold_ticks": 27136,
+      "static_hold_s": "53/24",
+      "frame_in": 4212,
+      "frame_last": 4264,
+      "background": "unbordered umber",
+      "border": false,
+      "gold_rule": false,
+      "pill_chrome": false,
+      "over": "moving plate",
+      "one_at_a_time": true,
+      "rendered": true,
+      "new_claims": false,
+      "splice": false,
+      "window_remainder_ticks": 0,
+      "layer_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/13_17_page_bottom_1.nut",
+      "layer_sha256": "4f0d56e6cd94f477e52745e98b6fa496be2380afb88154a8167b62bd668d29be",
+      "png_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/13_17_page_bottom_1.png",
+      "png_sha256": "269871747f482c76f2801922a522a25381e9ad514a4cb3fff92840d8e59fea21",
+      "frame_count": 53,
+      "original_pts_match": true,
+      "original_clock_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/13_17_page_bottom_1_clock.json",
+      "original_clock_sha256": "a93efe33cb08cea782e82e6d9da7f9c85861bca03b3f45866661d7bbacce9d42",
+      "original_durations_preserved_in_intermediate": true,
+      "overlay_position": [
+        0,
+        720
+      ],
+      "layer_size": [
+        1920,
+        300
+      ],
+      "fade_in_s": "3/8",
+      "fade_out_s": "3/8",
+      "style": {
+        "font": "Didot Italic",
+        "font_size": 128,
+        "lines": [
+          "LET THE EXPERIMENT"
+        ],
+        "panel_rgba": [
+          48,
+          30,
+          20,
+          232
+        ],
+        "text_rgba": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "panel_bounds": [
+          183,
+          74,
+          1737,
+          226
+        ],
+        "border": false,
+        "gold_rule": false,
+        "pill_chrome": false
+      },
+      "alpha_verification": {
+        "decoded_frames": 53,
+        "first_alpha": 0,
+        "peak_alpha": 232,
+        "last_alpha": 26,
+        "maximum_alpha_error": 0,
+        "passed": true
+      },
+      "composited_over_clean_plate": false
+    },
+    {
+      "row": "17_page_bottom",
+      "source_label": "LET THE EXPERIMENT BE MADE",
+      "label": "BE MADE",
+      "words": [
+        "BE",
+        "MADE"
+      ],
+      "word_count": 2,
+      "sequence": 2,
+      "sequence_of": 2,
+      "pts_in": 2188800,
+      "pts_end": 2215936,
+      "hold_ticks": 27136,
+      "static_hold_s": "53/24",
+      "frame_in": 4265,
+      "frame_last": 4317,
+      "background": "unbordered umber",
+      "border": false,
+      "gold_rule": false,
+      "pill_chrome": false,
+      "over": "moving plate",
+      "one_at_a_time": true,
+      "rendered": true,
+      "new_claims": false,
+      "splice": false,
+      "window_remainder_ticks": 0,
+      "layer_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/14_17_page_bottom_2.nut",
+      "layer_sha256": "951072d8b61c93aec304ad26f8c37980fa8c911011a53ff5398e6779fb620e5a",
+      "png_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/14_17_page_bottom_2.png",
+      "png_sha256": "0cc9243fda191562960994393fd874fbdab7e765118c0af2ef2f82c60ee7739f",
+      "frame_count": 53,
+      "original_pts_match": true,
+      "original_clock_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/14_17_page_bottom_2_clock.json",
+      "original_clock_sha256": "f7432f0ccbf776072241741eddeed30ddf0695a8b023256822f838f1e9e8e599",
+      "original_durations_preserved_in_intermediate": true,
+      "overlay_position": [
+        0,
+        720
+      ],
+      "layer_size": [
+        1920,
+        300
+      ],
+      "fade_in_s": "3/8",
+      "fade_out_s": "3/8",
+      "style": {
+        "font": "Didot Italic",
+        "font_size": 128,
+        "lines": [
+          "BE MADE"
+        ],
+        "panel_rgba": [
+          48,
+          30,
+          20,
+          232
+        ],
+        "text_rgba": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "panel_bounds": [
+          608,
+          74,
+          1312,
+          226
+        ],
+        "border": false,
+        "gold_rule": false,
+        "pill_chrome": false
+      },
+      "alpha_verification": {
+        "decoded_frames": 53,
+        "first_alpha": 0,
+        "peak_alpha": 232,
+        "last_alpha": 26,
+        "maximum_alpha_error": 0,
+        "passed": true
+      },
+      "composited_over_clean_plate": false
+    },
+    {
+      "row": "02_sentry_box",
+      "source_label": "THE SENTRY-BOX",
+      "label": "THE SENTRY-BOX",
+      "words": [
+        "THE",
+        "SENTRY-BOX"
+      ],
+      "word_count": 2,
+      "sequence": 1,
+      "sequence_of": 1,
+      "pts_in": 2397184,
+      "pts_end": 2446336,
+      "hold_ticks": 49152,
+      "static_hold_s": "4",
+      "frame_in": 4671,
+      "frame_last": 4766,
+      "background": "unbordered umber",
+      "border": false,
+      "gold_rule": false,
+      "pill_chrome": false,
+      "over": "moving plate",
+      "one_at_a_time": true,
+      "rendered": true,
+      "new_claims": false,
+      "splice": false,
+      "window_remainder_ticks": 27648,
+      "layer_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/15_02_sentry_box_1.nut",
+      "layer_sha256": "a3abfa745ce121a42bf1848d0601bb85127442fac2e0bae11af167002d5a489d",
+      "png_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/15_02_sentry_box_1.png",
+      "png_sha256": "98524f91738af0b2799b9797b86c5454866105218391066fa49ff4926d571e3b",
+      "frame_count": 96,
+      "original_pts_match": true,
+      "original_clock_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/15_02_sentry_box_1_clock.json",
+      "original_clock_sha256": "4aa748d25a57f61c8f7176010087725cde267f524b6dcbe214bd6f9fa7a73688",
+      "original_durations_preserved_in_intermediate": true,
+      "overlay_position": [
+        0,
+        720
+      ],
+      "layer_size": [
+        1920,
+        300
+      ],
+      "fade_in_s": "3/8",
+      "fade_out_s": "3/8",
+      "style": {
+        "font": "Didot Italic",
+        "font_size": 128,
+        "lines": [
+          "THE SENTRY-BOX"
+        ],
+        "panel_rgba": [
+          48,
+          30,
+          20,
+          232
+        ],
+        "text_rgba": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "panel_bounds": [
+          357,
+          74,
+          1563,
+          226
+        ],
+        "border": false,
+        "gold_rule": false,
+        "pill_chrome": false
+      },
+      "alpha_verification": {
+        "decoded_frames": 96,
+        "first_alpha": 0,
+        "peak_alpha": 232,
+        "last_alpha": 26,
+        "maximum_alpha_error": 0,
+        "passed": true
+      },
+      "composited_over_clean_plate": false
+    },
+    {
+      "row": "05_marly_garden",
+      "source_label": "MARLY, FRANCE \u00b7 MAY 1752",
+      "label": "MARLY, FRANCE MAY 1752",
+      "words": [
+        "MARLY,",
+        "FRANCE",
+        "MAY",
+        "1752"
+      ],
+      "word_count": 4,
+      "sequence": 1,
+      "sequence_of": 1,
+      "pts_in": 2606592,
+      "pts_end": 2655744,
+      "hold_ticks": 49152,
+      "static_hold_s": "4",
+      "frame_in": 5078,
+      "frame_last": 5173,
+      "background": "unbordered umber",
+      "border": false,
+      "gold_rule": false,
+      "pill_chrome": false,
+      "over": "moving plate",
+      "one_at_a_time": true,
+      "rendered": true,
+      "new_claims": false,
+      "splice": false,
+      "window_remainder_ticks": 13824,
+      "layer_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/16_05_marly_garden_1.nut",
+      "layer_sha256": "5925854380d2559ef26daab85cd990058ee0ad0af3b75785dd983247703ffcf9",
+      "png_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/16_05_marly_garden_1.png",
+      "png_sha256": "0027b89d7810ac4c1073d0654d17ec59e965add3a89306a5705962ef62763c84",
+      "frame_count": 96,
+      "original_pts_match": true,
+      "original_clock_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/16_05_marly_garden_1_clock.json",
+      "original_clock_sha256": "312ced74c30f937dfad0f0e73b7a1e3def82ceac735ad8ae3ca2a56c671b66c9",
+      "original_durations_preserved_in_intermediate": true,
+      "overlay_position": [
+        0,
+        720
+      ],
+      "layer_size": [
+        1920,
+        300
+      ],
+      "fade_in_s": "3/8",
+      "fade_out_s": "3/8",
+      "style": {
+        "font": "Didot Italic",
+        "font_size": 128,
+        "lines": [
+          "MARLY, FRANCE MAY 1752"
+        ],
+        "panel_rgba": [
+          48,
+          30,
+          20,
+          232
+        ],
+        "text_rgba": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "panel_bounds": [
+          114,
+          74,
+          1806,
+          226
+        ],
+        "border": false,
+        "gold_rule": false,
+        "pill_chrome": false
+      },
+      "alpha_verification": {
+        "decoded_frames": 96,
+        "first_alpha": 0,
+        "peak_alpha": 232,
+        "last_alpha": 26,
+        "maximum_alpha_error": 0,
+        "passed": true
+      },
+      "composited_over_clean_plate": false
+    },
+    {
+      "row": "11_kite_build",
+      "source_label": "SILK \u00b7 CEDAR \u00b7 WIRE",
+      "label": "SILK CEDAR WIRE",
+      "words": [
+        "SILK",
+        "CEDAR",
+        "WIRE"
+      ],
+      "word_count": 3,
+      "sequence": 1,
+      "sequence_of": 1,
+      "pts_in": 3001856,
+      "pts_end": 3051008,
+      "hold_ticks": 49152,
+      "static_hold_s": "4",
+      "frame_in": 5848,
+      "frame_last": 5943,
+      "background": "unbordered umber",
+      "border": false,
+      "gold_rule": false,
+      "pill_chrome": false,
+      "over": "moving plate",
+      "one_at_a_time": true,
+      "rendered": true,
+      "new_claims": false,
+      "splice": false,
+      "window_remainder_ticks": 39936,
+      "layer_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/17_11_kite_build_1.nut",
+      "layer_sha256": "0dc612cf63c91be56b81ddbd209a00493373f860aa4ecb6d030d8c6003f2f9a1",
+      "png_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/17_11_kite_build_1.png",
+      "png_sha256": "75c42af9572e400a2f24462547172e890ee99e985d673602f9478fc076b88dfa",
+      "frame_count": 96,
+      "original_pts_match": true,
+      "original_clock_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/17_11_kite_build_1_clock.json",
+      "original_clock_sha256": "00ebd80b91448c01863c13c647c4c843e028c0989d8a74e4e0a042adc4996911",
+      "original_durations_preserved_in_intermediate": true,
+      "overlay_position": [
+        0,
+        720
+      ],
+      "layer_size": [
+        1920,
+        300
+      ],
+      "fade_in_s": "3/8",
+      "fade_out_s": "3/8",
+      "style": {
+        "font": "Didot Italic",
+        "font_size": 128,
+        "lines": [
+          "SILK CEDAR WIRE"
+        ],
+        "panel_rgba": [
+          48,
+          30,
+          20,
+          232
+        ],
+        "text_rgba": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "panel_bounds": [
+          336,
+          74,
+          1584,
+          226
+        ],
+        "border": false,
+        "gold_rule": false,
+        "pill_chrome": false
+      },
+      "alpha_verification": {
+        "decoded_frames": 96,
+        "first_alpha": 0,
+        "peak_alpha": 232,
+        "last_alpha": 26,
+        "maximum_alpha_error": 0,
+        "passed": true
+      },
+      "composited_over_clean_plate": false
+    },
+    {
+      "row": "16_keep_silk_dry",
+      "source_label": "KEEP THE SILK DRY",
+      "label": "KEEP THE SILK DRY",
+      "words": [
+        "KEEP",
+        "THE",
+        "SILK",
+        "DRY"
+      ],
+      "word_count": 4,
+      "sequence": 1,
+      "sequence_of": 1,
+      "pts_in": 3328512,
+      "pts_end": 3377664,
+      "hold_ticks": 49152,
+      "static_hold_s": "4",
+      "frame_in": 6483,
+      "frame_last": 6578,
+      "background": "unbordered umber",
+      "border": false,
+      "gold_rule": false,
+      "pill_chrome": false,
+      "over": "moving plate",
+      "one_at_a_time": true,
+      "rendered": true,
+      "new_claims": false,
+      "splice": false,
+      "window_remainder_ticks": 25088,
+      "layer_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/18_16_keep_silk_dry_1.nut",
+      "layer_sha256": "464db0c28bc6ddfd8830b751742c39d4f4e0891802ffe0c4425438c648d85845",
+      "png_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/18_16_keep_silk_dry_1.png",
+      "png_sha256": "70367290b828c5a8c6908f95fbc959a9139d2698c2db69882570b13902ff523f",
+      "frame_count": 96,
+      "original_pts_match": true,
+      "original_clock_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/18_16_keep_silk_dry_1_clock.json",
+      "original_clock_sha256": "73f3504f06c05b3bf2261671e92f0cc1409ac54e633fb9128198beca09e8a7d0",
+      "original_durations_preserved_in_intermediate": true,
+      "overlay_position": [
+        0,
+        720
+      ],
+      "layer_size": [
+        1920,
+        300
+      ],
+      "fade_in_s": "3/8",
+      "fade_out_s": "3/8",
+      "style": {
+        "font": "Didot Italic",
+        "font_size": 128,
+        "lines": [
+          "KEEP THE SILK DRY"
+        ],
+        "panel_rgba": [
+          48,
+          30,
+          20,
+          232
+        ],
+        "text_rgba": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "panel_bounds": [
+          266,
+          74,
+          1654,
+          226
+        ],
+        "border": false,
+        "gold_rule": false,
+        "pill_chrome": false
+      },
+      "alpha_verification": {
+        "decoded_frames": 96,
+        "first_alpha": 0,
+        "peak_alpha": 232,
+        "last_alpha": 26,
+        "maximum_alpha_error": 0,
+        "passed": true
+      },
+      "composited_over_clean_plate": false
+    },
+    {
+      "row": "18_william_runs",
+      "source_label": "JUNE 1752",
+      "label": "JUNE 1752",
+      "words": [
+        "JUNE",
+        "1752"
+      ],
+      "word_count": 2,
+      "sequence": 1,
+      "sequence_of": 1,
+      "pts_in": 3476992,
+      "pts_end": 3526144,
+      "hold_ticks": 49152,
+      "static_hold_s": "4",
+      "frame_in": 6773,
+      "frame_last": 6868,
+      "background": "unbordered umber",
+      "border": false,
+      "gold_rule": false,
+      "pill_chrome": false,
+      "over": "moving plate",
+      "one_at_a_time": true,
+      "rendered": true,
+      "new_claims": false,
+      "splice": false,
+      "window_remainder_ticks": 18432,
+      "layer_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/19_18_william_runs_1.nut",
+      "layer_sha256": "528b3389d872c44d762697e26dd16703048cfe48d43ff56058dd519ba37db9f0",
+      "png_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/19_18_william_runs_1.png",
+      "png_sha256": "6c25200624fa48f8966b9b37eb7284f8297eea30bd4efa15d740887f2650b42c",
+      "frame_count": 96,
+      "original_pts_match": true,
+      "original_clock_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/19_18_william_runs_1_clock.json",
+      "original_clock_sha256": "bf678b479b5847ad6b1050bd22d81c7c3c0dffd05de6989c3ba2b25473cec708",
+      "original_durations_preserved_in_intermediate": true,
+      "overlay_position": [
+        0,
+        720
+      ],
+      "layer_size": [
+        1920,
+        300
+      ],
+      "fade_in_s": "3/8",
+      "fade_out_s": "3/8",
+      "style": {
+        "font": "Didot Italic",
+        "font_size": 128,
+        "lines": [
+          "JUNE 1752"
+        ],
+        "panel_rgba": [
+          48,
+          30,
+          20,
+          232
+        ],
+        "text_rgba": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "panel_bounds": [
+          603,
+          74,
+          1317,
+          226
+        ],
+        "border": false,
+        "gold_rule": false,
+        "pill_chrome": false
+      },
+      "alpha_verification": {
+        "decoded_frames": 96,
+        "first_alpha": 0,
+        "peak_alpha": 232,
+        "last_alpha": 26,
+        "maximum_alpha_error": 0,
+        "passed": true
+      },
+      "composited_over_clean_plate": false
+    },
+    {
+      "row": "25_fibres_rise",
+      "source_label": "THE THREADS STAND UP",
+      "label": "THE THREADS STAND UP",
+      "words": [
+        "THE",
+        "THREADS",
+        "STAND",
+        "UP"
+      ],
+      "word_count": 4,
+      "sequence": 1,
+      "sequence_of": 1,
+      "pts_in": 3877376,
+      "pts_end": 3922944,
+      "hold_ticks": 45568,
+      "static_hold_s": "89/24",
+      "frame_in": 7552,
+      "frame_last": 7640,
+      "background": "unbordered umber",
+      "border": false,
+      "gold_rule": false,
+      "pill_chrome": false,
+      "over": "moving plate",
+      "one_at_a_time": true,
+      "rendered": true,
+      "new_claims": false,
+      "splice": false,
+      "window_remainder_ticks": 0,
+      "layer_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/20_25_fibres_rise_1.nut",
+      "layer_sha256": "fb6dd03e5d40619b925ef15e601016fcf9b423d1ab9176b8cc225d370ca37911",
+      "png_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/20_25_fibres_rise_1.png",
+      "png_sha256": "03f42e4b2b467f7c7f5f0aa7bab20045d3232402eb570c3d9a01896eda1e96bb",
+      "frame_count": 89,
+      "original_pts_match": true,
+      "original_clock_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/20_25_fibres_rise_1_clock.json",
+      "original_clock_sha256": "e665703a0fc130d1decb79b6c2a9a8eb57dd12f607e21f1c3155f6cbc479ad84",
+      "original_durations_preserved_in_intermediate": true,
+      "overlay_position": [
+        0,
+        720
+      ],
+      "layer_size": [
+        1920,
+        300
+      ],
+      "fade_in_s": "3/8",
+      "fade_out_s": "3/8",
+      "style": {
+        "font": "Didot Italic",
+        "font_size": 128,
+        "lines": [
+          "THE THREADS STAND UP"
+        ],
+        "panel_rgba": [
+          48,
+          30,
+          20,
+          232
+        ],
+        "text_rgba": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "panel_bounds": [
+          110,
+          74,
+          1810,
+          226
+        ],
+        "border": false,
+        "gold_rule": false,
+        "pill_chrome": false
+      },
+      "alpha_verification": {
+        "decoded_frames": 89,
+        "first_alpha": 0,
+        "peak_alpha": 232,
+        "last_alpha": 26,
+        "maximum_alpha_error": 0,
+        "passed": true
+      },
+      "composited_over_clean_plate": false
+    },
+    {
+      "row": "02_knuckle_spark",
+      "source_label": "A SPARK",
+      "label": "A SPARK",
+      "words": [
+        "A",
+        "SPARK"
+      ],
+      "word_count": 2,
+      "sequence": 1,
+      "sequence_of": 1,
+      "pts_in": 3977728,
+      "pts_end": 4023296,
+      "hold_ticks": 45568,
+      "static_hold_s": "89/24",
+      "frame_in": 7748,
+      "frame_last": 7836,
+      "background": "unbordered umber",
+      "border": false,
+      "gold_rule": false,
+      "pill_chrome": false,
+      "over": "moving plate",
+      "one_at_a_time": true,
+      "rendered": true,
+      "new_claims": false,
+      "splice": false,
+      "window_remainder_ticks": 0,
+      "layer_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/21_02_knuckle_spark_1.nut",
+      "layer_sha256": "d9d4699c4ffd916b510eaa61096abda345eea63bb72e2e98d560f159dd6616b5",
+      "png_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/21_02_knuckle_spark_1.png",
+      "png_sha256": "15a03a7bb4b60de7ac774bf2b252679d4fe36db84a92f75ae34095d0eaec4280",
+      "frame_count": 89,
+      "original_pts_match": true,
+      "original_clock_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/21_02_knuckle_spark_1_clock.json",
+      "original_clock_sha256": "2740e7bbb6d7f7dafe5fe97ee5126cc5b12fd43a2aed5d723ddacce81c38b049",
+      "original_durations_preserved_in_intermediate": true,
+      "overlay_position": [
+        0,
+        720
+      ],
+      "layer_size": [
+        1920,
+        300
+      ],
+      "fade_in_s": "3/8",
+      "fade_out_s": "3/8",
+      "style": {
+        "font": "Didot Italic",
+        "font_size": 128,
+        "lines": [
+          "A SPARK"
+        ],
+        "panel_rgba": [
+          48,
+          30,
+          20,
+          232
+        ],
+        "text_rgba": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "panel_bounds": [
+          635,
+          74,
+          1285,
+          226
+        ],
+        "border": false,
+        "gold_rule": false,
+        "pill_chrome": false
+      },
+      "alpha_verification": {
+        "decoded_frames": 89,
+        "first_alpha": 0,
+        "peak_alpha": 232,
+        "last_alpha": 26,
+        "maximum_alpha_error": 0,
+        "passed": true
+      },
+      "composited_over_clean_plate": false
+    },
+    {
+      "row": "04_fill_the_jar",
+      "source_label": "LIGHTNING IN A JAR",
+      "label": "LIGHTNING IN A JAR",
+      "words": [
+        "LIGHTNING",
+        "IN",
+        "A",
+        "JAR"
+      ],
+      "word_count": 4,
+      "sequence": 1,
+      "sequence_of": 1,
+      "pts_in": 4079104,
+      "pts_end": 4128256,
+      "hold_ticks": 49152,
+      "static_hold_s": "4",
+      "frame_in": 7946,
+      "frame_last": 8041,
+      "background": "unbordered umber",
+      "border": false,
+      "gold_rule": false,
+      "pill_chrome": false,
+      "over": "moving plate",
+      "one_at_a_time": true,
+      "rendered": true,
+      "new_claims": false,
+      "splice": false,
+      "window_remainder_ticks": 31744,
+      "layer_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/22_04_fill_the_jar_1.nut",
+      "layer_sha256": "cfb2deea5345567ace07978f855ea5e1a4825189acce0d5f210a66fa8ff26efc",
+      "png_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/22_04_fill_the_jar_1.png",
+      "png_sha256": "2c89e5d60120da593341acdd8c343eb142dfc66f81a92b25484b81517372095a",
+      "frame_count": 96,
+      "original_pts_match": true,
+      "original_clock_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/22_04_fill_the_jar_1_clock.json",
+      "original_clock_sha256": "c507e81ab05f07c9c7c4dc8f809928bae0f279557be039f8dd56e1937213f2d1",
+      "original_durations_preserved_in_intermediate": true,
+      "overlay_position": [
+        0,
+        720
+      ],
+      "layer_size": [
+        1920,
+        300
+      ],
+      "fade_in_s": "3/8",
+      "fade_out_s": "3/8",
+      "style": {
+        "font": "Didot Italic",
+        "font_size": 128,
+        "lines": [
+          "LIGHTNING IN A JAR"
+        ],
+        "panel_rgba": [
+          48,
+          30,
+          20,
+          232
+        ],
+        "text_rgba": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "panel_bounds": [
+          264,
+          74,
+          1656,
+          226
+        ],
+        "border": false,
+        "gold_rule": false,
+        "pill_chrome": false
+      },
+      "alpha_verification": {
+        "decoded_frames": 96,
+        "first_alpha": 0,
+        "peak_alpha": 232,
+        "last_alpha": 26,
+        "maximum_alpha_error": 0,
+        "passed": true
+      },
+      "composited_over_clean_plate": false
+    },
+    {
+      "row": "10_richmann_rod",
+      "source_label": "ST PETERSBURG \u00b7 1753",
+      "label": "ST PETERSBURG 1753",
+      "words": [
+        "ST",
+        "PETERSBURG",
+        "1753"
+      ],
+      "word_count": 3,
+      "sequence": 1,
+      "sequence_of": 1,
+      "pts_in": 4542976,
+      "pts_end": 4592128,
+      "hold_ticks": 49152,
+      "static_hold_s": "4",
+      "frame_in": 8849,
+      "frame_last": 8944,
+      "background": "unbordered umber",
+      "border": false,
+      "gold_rule": false,
+      "pill_chrome": false,
+      "over": "moving plate",
+      "one_at_a_time": true,
+      "rendered": true,
+      "new_claims": false,
+      "splice": false,
+      "window_remainder_ticks": 30208,
+      "layer_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/23_10_richmann_rod_1.nut",
+      "layer_sha256": "4a6cdc7f7d63c5ad20ad0eeb0510c41f8ea28fc4926752a9e77047f399f77bfc",
+      "png_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/23_10_richmann_rod_1.png",
+      "png_sha256": "23c01f9f0ea914928ded6529d145cbc9946ea56a2f8ec94504598635baf3cb7f",
+      "frame_count": 96,
+      "original_pts_match": true,
+      "original_clock_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/23_10_richmann_rod_1_clock.json",
+      "original_clock_sha256": "d36da9ca3f4fdc5a37a8e85d9350ca2733f08f2d773e005795a019529624f245",
+      "original_durations_preserved_in_intermediate": true,
+      "overlay_position": [
+        0,
+        720
+      ],
+      "layer_size": [
+        1920,
+        300
+      ],
+      "fade_in_s": "3/8",
+      "fade_out_s": "3/8",
+      "style": {
+        "font": "Didot Italic",
+        "font_size": 128,
+        "lines": [
+          "ST PETERSBURG 1753"
+        ],
+        "panel_rgba": [
+          48,
+          30,
+          20,
+          232
+        ],
+        "text_rgba": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "panel_bounds": [
+          244,
+          74,
+          1676,
+          226
+        ],
+        "border": false,
+        "gold_rule": false,
+        "pill_chrome": false
+      },
+      "alpha_verification": {
+        "decoded_frames": 96,
+        "first_alpha": 0,
+        "peak_alpha": 232,
+        "last_alpha": 26,
+        "maximum_alpha_error": 0,
+        "passed": true
+      },
+      "composited_over_clean_plate": false
+    },
+    {
+      "row": "13_gazette_page",
+      "source_label": "PENNSYLVANIA GAZETTE \u00b7 19 OCTOBER 1752",
+      "label": "PENNSYLVANIA GAZETTE",
+      "words": [
+        "PENNSYLVANIA",
+        "GAZETTE"
+      ],
+      "word_count": 2,
+      "sequence": 1,
+      "sequence_of": 2,
+      "pts_in": 4703232,
+      "pts_end": 4739584,
+      "hold_ticks": 36352,
+      "static_hold_s": "71/24",
+      "frame_in": 9161,
+      "frame_last": 9231,
+      "background": "unbordered umber",
+      "border": false,
+      "gold_rule": false,
+      "pill_chrome": false,
+      "over": "moving plate",
+      "one_at_a_time": true,
+      "rendered": true,
+      "new_claims": false,
+      "splice": false,
+      "window_remainder_ticks": 0,
+      "layer_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/24_13_gazette_page_1.nut",
+      "layer_sha256": "6bd679d6a1ed9e5392f1cc1614c576e8e82dbac0b998af3f1a11e778eae5d23c",
+      "png_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/24_13_gazette_page_1.png",
+      "png_sha256": "2afc671e1d9faeff300ec4ccfab6e6e029a24555a2bf894f115f681d207d8928",
+      "frame_count": 71,
+      "original_pts_match": true,
+      "original_clock_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/24_13_gazette_page_1_clock.json",
+      "original_clock_sha256": "bac05e711468ce3c6dce1da7a726e2106f7c1e311f52030a543a0ae93167b2ed",
+      "original_durations_preserved_in_intermediate": false,
+      "overlay_position": [
+        0,
+        720
+      ],
+      "layer_size": [
+        1920,
+        300
+      ],
+      "fade_in_s": "3/8",
+      "fade_out_s": "3/8",
+      "style": {
+        "font": "Didot Italic",
+        "font_size": 128,
+        "lines": [
+          "PENNSYLVANIA",
+          "GAZETTE"
+        ],
+        "panel_rgba": [
+          48,
+          30,
+          20,
+          232
+        ],
+        "text_rgba": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "panel_bounds": [
+          416,
+          8,
+          1504,
+          292
+        ],
+        "border": false,
+        "gold_rule": false,
+        "pill_chrome": false
+      },
+      "alpha_verification": {
+        "decoded_frames": 71,
+        "first_alpha": 0,
+        "peak_alpha": 232,
+        "last_alpha": 26,
+        "maximum_alpha_error": 0,
+        "passed": true
+      },
+      "composited_over_clean_plate": false
+    },
+    {
+      "row": "13_gazette_page",
+      "source_label": "PENNSYLVANIA GAZETTE \u00b7 19 OCTOBER 1752",
+      "label": "19 OCTOBER 1752",
+      "words": [
+        "19",
+        "OCTOBER",
+        "1752"
+      ],
+      "word_count": 3,
+      "sequence": 2,
+      "sequence_of": 2,
+      "pts_in": 4739584,
+      "pts_end": 4775936,
+      "hold_ticks": 36352,
+      "static_hold_s": "71/24",
+      "frame_in": 9232,
+      "frame_last": 9302,
+      "background": "unbordered umber",
+      "border": false,
+      "gold_rule": false,
+      "pill_chrome": false,
+      "over": "moving plate",
+      "one_at_a_time": true,
+      "rendered": true,
+      "new_claims": false,
+      "splice": false,
+      "window_remainder_ticks": 0,
+      "layer_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/25_13_gazette_page_2.nut",
+      "layer_sha256": "b9893eed9da92d4c733de1895a0e7a3d86dc84755feb1e1a9a911aa18436bd0e",
+      "png_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/25_13_gazette_page_2.png",
+      "png_sha256": "416ee1764d45d21713c8d27bc10ed917cf41f6ed3eb776b0d59a46d967275eb2",
+      "frame_count": 71,
+      "original_pts_match": true,
+      "original_clock_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/25_13_gazette_page_2_clock.json",
+      "original_clock_sha256": "98b74ee9d3130ad860f5aa5fc05c1f55e3c942395e89b66f272e354170700096",
+      "original_durations_preserved_in_intermediate": true,
+      "overlay_position": [
+        0,
+        720
+      ],
+      "layer_size": [
+        1920,
+        300
+      ],
+      "fade_in_s": "3/8",
+      "fade_out_s": "3/8",
+      "style": {
+        "font": "Didot Italic",
+        "font_size": 128,
+        "lines": [
+          "19 OCTOBER 1752"
+        ],
+        "panel_rgba": [
+          48,
+          30,
+          20,
+          232
+        ],
+        "text_rgba": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "panel_bounds": [
+          385,
+          74,
+          1535,
+          226
+        ],
+        "border": false,
+        "gold_rule": false,
+        "pill_chrome": false
+      },
+      "alpha_verification": {
+        "decoded_frames": 71,
+        "first_alpha": 0,
+        "peak_alpha": 232,
+        "last_alpha": 26,
+        "maximum_alpha_error": 0,
+        "passed": true
+      },
+      "composited_over_clean_plate": false
+    },
+    {
+      "row": "14_royal_society",
+      "source_label": "THE ROYAL SOCIETY",
+      "label": "THE ROYAL SOCIETY",
+      "words": [
+        "THE",
+        "ROYAL",
+        "SOCIETY"
+      ],
+      "word_count": 3,
+      "sequence": 1,
+      "sequence_of": 1,
+      "pts_in": 4775936,
+      "pts_end": 4825088,
+      "hold_ticks": 49152,
+      "static_hold_s": "4",
+      "frame_in": 9303,
+      "frame_last": 9398,
+      "background": "unbordered umber",
+      "border": false,
+      "gold_rule": false,
+      "pill_chrome": false,
+      "over": "moving plate",
+      "one_at_a_time": true,
+      "rendered": true,
+      "new_claims": false,
+      "splice": false,
+      "window_remainder_ticks": 15872,
+      "layer_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/26_14_royal_society_1.nut",
+      "layer_sha256": "777046fc49dba96d47fa6e79e13eb3aadc2481dcc9e05b7b80a5404d449b6438",
+      "png_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/26_14_royal_society_1.png",
+      "png_sha256": "58d6cad0a89027db47cfc16ee65fa9b81129fa2a2f87cc67723ad4a8517fcd6d",
+      "frame_count": 96,
+      "original_pts_match": true,
+      "original_clock_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/26_14_royal_society_1_clock.json",
+      "original_clock_sha256": "3ddd6435b28c7773f1937d401dda0483c8e286d081a7afca8044e067b4a0e0c3",
+      "original_durations_preserved_in_intermediate": true,
+      "overlay_position": [
+        0,
+        720
+      ],
+      "layer_size": [
+        1920,
+        300
+      ],
+      "fade_in_s": "3/8",
+      "fade_out_s": "3/8",
+      "style": {
+        "font": "Didot Italic",
+        "font_size": 128,
+        "lines": [
+          "THE ROYAL SOCIETY"
+        ],
+        "panel_rgba": [
+          48,
+          30,
+          20,
+          232
+        ],
+        "text_rgba": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "panel_bounds": [
+          239,
+          74,
+          1681,
+          226
+        ],
+        "border": false,
+        "gold_rule": false,
+        "pill_chrome": false
+      },
+      "alpha_verification": {
+        "decoded_frames": 96,
+        "first_alpha": 0,
+        "peak_alpha": 232,
+        "last_alpha": 26,
+        "maximum_alpha_error": 0,
+        "passed": true
+      },
+      "composited_over_clean_plate": false
+    },
+    {
+      "row": "15_copley_medal",
+      "source_label": "THE COPLEY MEDAL \u00b7 1753",
+      "label": "THE COPLEY MEDAL 1753",
+      "words": [
+        "THE",
+        "COPLEY",
+        "MEDAL",
+        "1753"
+      ],
+      "word_count": 4,
+      "sequence": 1,
+      "sequence_of": 1,
+      "pts_in": 4840960,
+      "pts_end": 4870144,
+      "hold_ticks": 29184,
+      "static_hold_s": "19/8",
+      "frame_in": 9430,
+      "frame_last": 9486,
+      "background": "unbordered umber",
+      "border": false,
+      "gold_rule": false,
+      "pill_chrome": false,
+      "over": "moving plate",
+      "one_at_a_time": true,
+      "rendered": true,
+      "new_claims": false,
+      "splice": false,
+      "window_remainder_ticks": 0,
+      "layer_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/27_15_copley_medal_1.nut",
+      "layer_sha256": "cdd31a7fdad31a0762c92bf1d75fe21a72b3df3878dbdff61ebd63971881fe93",
+      "png_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/27_15_copley_medal_1.png",
+      "png_sha256": "f967d78d0c961534ee7f6608b930fa3523d0d5b6e4f6ec9bf111ceec2f5fb2ff",
+      "frame_count": 57,
+      "original_pts_match": true,
+      "original_clock_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/27_15_copley_medal_1_clock.json",
+      "original_clock_sha256": "60f4a14d94c6948c3ddf2d1359cb29d6a694245b646f84bceb839044b129ea0c",
+      "original_durations_preserved_in_intermediate": true,
+      "overlay_position": [
+        0,
+        720
+      ],
+      "layer_size": [
+        1920,
+        300
+      ],
+      "fade_in_s": "3/8",
+      "fade_out_s": "3/8",
+      "style": {
+        "font": "Didot Italic",
+        "font_size": 128,
+        "lines": [
+          "THE COPLEY MEDAL 1753"
+        ],
+        "panel_rgba": [
+          48,
+          30,
+          20,
+          232
+        ],
+        "text_rgba": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "panel_bounds": [
+          114,
+          74,
+          1806,
+          226
+        ],
+        "border": false,
+        "gold_rule": false,
+        "pill_chrome": false
+      },
+      "alpha_verification": {
+        "decoded_frames": 57,
+        "first_alpha": 0,
+        "peak_alpha": 232,
+        "last_alpha": 26,
+        "maximum_alpha_error": 0,
+        "passed": true
+      },
+      "composited_over_clean_plate": false
+    },
+    {
+      "row": "01_house_rod",
+      "source_label": "SEPTEMBER 1752",
+      "label": "SEPTEMBER 1752",
+      "words": [
+        "SEPTEMBER",
+        "1752"
+      ],
+      "word_count": 2,
+      "sequence": 1,
+      "sequence_of": 1,
+      "pts_in": 5036544,
+      "pts_end": 5085696,
+      "hold_ticks": 49152,
+      "static_hold_s": "4",
+      "frame_in": 9810,
+      "frame_last": 9905,
+      "background": "unbordered umber",
+      "border": false,
+      "gold_rule": false,
+      "pill_chrome": false,
+      "over": "moving plate",
+      "one_at_a_time": true,
+      "rendered": true,
+      "new_claims": false,
+      "splice": false,
+      "window_remainder_ticks": 24576,
+      "layer_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/28_01_house_rod_1.nut",
+      "layer_sha256": "1bd14492a8427ce1b003e26d2aed95f1a22629c1fe667040ad3ae5275941f5da",
+      "png_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/28_01_house_rod_1.png",
+      "png_sha256": "a057d035f430966b1ed0ab5b5dcc45f5b0174718d55c3a5d2a64b7ac8dad37a2",
+      "frame_count": 96,
+      "original_pts_match": true,
+      "original_clock_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/28_01_house_rod_1_clock.json",
+      "original_clock_sha256": "24479b2a9d54a33162c1a6604c9de50d441921056b511c31f3250e5aed33e973",
+      "original_durations_preserved_in_intermediate": false,
+      "overlay_position": [
+        0,
+        720
+      ],
+      "layer_size": [
+        1920,
+        300
+      ],
+      "fade_in_s": "3/8",
+      "fade_out_s": "3/8",
+      "style": {
+        "font": "Didot Italic",
+        "font_size": 128,
+        "lines": [
+          "SEPTEMBER 1752"
+        ],
+        "panel_rgba": [
+          48,
+          30,
+          20,
+          232
+        ],
+        "text_rgba": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "panel_bounds": [
+          378,
+          74,
+          1542,
+          226
+        ],
+        "border": false,
+        "gold_rule": false,
+        "pill_chrome": false
+      },
+      "alpha_verification": {
+        "decoded_frames": 96,
+        "first_alpha": 0,
+        "peak_alpha": 232,
+        "last_alpha": 26,
+        "maximum_alpha_error": 0,
+        "passed": true
+      },
+      "composited_over_clean_plate": false
+    },
+    {
+      "row": "03_bells_ring",
+      "source_label": "THE BELLS THAT RING",
+      "label": "THE BELLS THAT RING",
+      "words": [
+        "THE",
+        "BELLS",
+        "THAT",
+        "RING"
+      ],
+      "word_count": 4,
+      "sequence": 1,
+      "sequence_of": 1,
+      "pts_in": 5172736,
+      "pts_end": 5221888,
+      "hold_ticks": 49152,
+      "static_hold_s": "4",
+      "frame_in": 10076,
+      "frame_last": 10171,
+      "background": "unbordered umber",
+      "border": false,
+      "gold_rule": false,
+      "pill_chrome": false,
+      "over": "moving plate",
+      "one_at_a_time": true,
+      "rendered": true,
+      "new_claims": false,
+      "splice": false,
+      "window_remainder_ticks": 10240,
+      "layer_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/29_03_bells_ring_1.nut",
+      "layer_sha256": "73eb549fb5f6745cda109c5f64e8774dfe90593027b74ed601592d09070cbff6",
+      "png_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/29_03_bells_ring_1.png",
+      "png_sha256": "05aa556b1bb5ffa44089c8e4b2c154039413e2d01a291502fc49111649fc39d9",
+      "frame_count": 96,
+      "original_pts_match": true,
+      "original_clock_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/29_03_bells_ring_1_clock.json",
+      "original_clock_sha256": "c8b44caa7eae78cda879ae8846948efc15f1ed5603e1351af019eeefc00b96a9",
+      "original_durations_preserved_in_intermediate": true,
+      "overlay_position": [
+        0,
+        720
+      ],
+      "layer_size": [
+        1920,
+        300
+      ],
+      "fade_in_s": "3/8",
+      "fade_out_s": "3/8",
+      "style": {
+        "font": "Didot Italic",
+        "font_size": 128,
+        "lines": [
+          "THE BELLS THAT RING"
+        ],
+        "panel_rgba": [
+          48,
+          30,
+          20,
+          232
+        ],
+        "text_rgba": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "panel_bounds": [
+          191,
+          74,
+          1729,
+          226
+        ],
+        "border": false,
+        "gold_rule": false,
+        "pill_chrome": false
+      },
+      "alpha_verification": {
+        "decoded_frames": 96,
+        "first_alpha": 0,
+        "peak_alpha": 232,
+        "last_alpha": 26,
+        "maximum_alpha_error": 0,
+        "passed": true
+      },
+      "composited_over_clean_plate": false
+    },
+    {
+      "row": "05_almanac_page",
+      "source_label": "POOR RICHARD \u00b7 1753",
+      "label": "POOR RICHARD 1753",
+      "words": [
+        "POOR",
+        "RICHARD",
+        "1753"
+      ],
+      "word_count": 3,
+      "sequence": 1,
+      "sequence_of": 1,
+      "pts_in": 5273600,
+      "pts_end": 5322752,
+      "hold_ticks": 49152,
+      "static_hold_s": "4",
+      "frame_in": 10273,
+      "frame_last": 10368,
+      "background": "unbordered umber",
+      "border": false,
+      "gold_rule": false,
+      "pill_chrome": false,
+      "over": "moving plate",
+      "one_at_a_time": true,
+      "rendered": true,
+      "new_claims": false,
+      "splice": false,
+      "window_remainder_ticks": 24064,
+      "layer_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/30_05_almanac_page_1.nut",
+      "layer_sha256": "2fb73648a74363adbd26c99052238cfda0d46e1b25d3fb0ea01c8dcd5f46d571",
+      "png_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/30_05_almanac_page_1.png",
+      "png_sha256": "268268fcb93a5ccf9553c191a55097526faa96bc379362fe6212c54abe905169",
+      "frame_count": 96,
+      "original_pts_match": true,
+      "original_clock_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/30_05_almanac_page_1_clock.json",
+      "original_clock_sha256": "1ff2789cdf076192b6847fb21fba0d47322afa6d2df1a4bf1913ce38673cf696",
+      "original_durations_preserved_in_intermediate": true,
+      "overlay_position": [
+        0,
+        720
+      ],
+      "layer_size": [
+        1920,
+        300
+      ],
+      "fade_in_s": "3/8",
+      "fade_out_s": "3/8",
+      "style": {
+        "font": "Didot Italic",
+        "font_size": 128,
+        "lines": [
+          "POOR RICHARD 1753"
+        ],
+        "panel_rgba": [
+          48,
+          30,
+          20,
+          232
+        ],
+        "text_rgba": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "panel_bounds": [
+          273,
+          74,
+          1647,
+          226
+        ],
+        "border": false,
+        "gold_rule": false,
+        "pill_chrome": false
+      },
+      "alpha_verification": {
+        "decoded_frames": 96,
+        "first_alpha": 0,
+        "peak_alpha": 232,
+        "last_alpha": 26,
+        "maximum_alpha_error": 0,
+        "passed": true
+      },
+      "composited_over_clean_plate": false
+    },
+    {
+      "row": "07_giant_spark",
+      "source_label": "HOTTER THAN THE SUN",
+      "label": "HOTTER THAN THE SUN",
+      "words": [
+        "HOTTER",
+        "THAN",
+        "THE",
+        "SUN"
+      ],
+      "word_count": 4,
+      "sequence": 1,
+      "sequence_of": 1,
+      "pts_in": 5454336,
+      "pts_end": 5503488,
+      "hold_ticks": 49152,
+      "static_hold_s": "4",
+      "frame_in": 10626,
+      "frame_last": 10721,
+      "background": "unbordered umber",
+      "border": false,
+      "gold_rule": false,
+      "pill_chrome": false,
+      "over": "moving plate",
+      "one_at_a_time": true,
+      "rendered": true,
+      "new_claims": false,
+      "splice": false,
+      "window_remainder_ticks": 28160,
+      "layer_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/31_07_giant_spark_1.nut",
+      "layer_sha256": "dca36f5e721086b3e188c13abf3cf5161b862556630e1a6af0a0414cd9909b0e",
+      "png_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/31_07_giant_spark_1.png",
+      "png_sha256": "395fb2edd906ce57edb0f5847801e3200bce214ba4a88df3d0a5ca5ad74269fb",
+      "frame_count": 96,
+      "original_pts_match": true,
+      "original_clock_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/31_07_giant_spark_1_clock.json",
+      "original_clock_sha256": "a16e51219c6fe7f4a94f86d9dace1970c9dffb7414d97e39c9b95aec9da8f9f7",
+      "original_durations_preserved_in_intermediate": true,
+      "overlay_position": [
+        0,
+        720
+      ],
+      "layer_size": [
+        1920,
+        300
+      ],
+      "fade_in_s": "3/8",
+      "fade_out_s": "3/8",
+      "style": {
+        "font": "Didot Italic",
+        "font_size": 128,
+        "lines": [
+          "HOTTER THAN THE SUN"
+        ],
+        "panel_rgba": [
+          48,
+          30,
+          20,
+          232
+        ],
+        "text_rgba": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "panel_bounds": [
+          137,
+          74,
+          1783,
+          226
+        ],
+        "border": false,
+        "gold_rule": false,
+        "pill_chrome": false
+      },
+      "alpha_verification": {
+        "decoded_frames": 96,
+        "first_alpha": 0,
+        "peak_alpha": 232,
+        "last_alpha": 26,
+        "maximum_alpha_error": 0,
+        "passed": true
+      },
+      "composited_over_clean_plate": false
+    },
+    {
+      "row": "11_safe_path",
+      "source": "rough_v12 disposition, not side_label",
+      "label": "SAFE PATH DOWN",
+      "words": [
+        "SAFE",
+        "PATH",
+        "DOWN"
+      ],
+      "word_count": 3,
+      "pts_in": 5665280,
+      "pts_end": 5706240,
+      "hold_ticks": 40960,
+      "static_hold_s": "10/3",
+      "frame_in": 11038,
+      "disposition_hold_end_s": "464.375",
+      "disposition_hold_end_frame": 11118,
+      "background": "unbordered umber",
+      "border": false,
+      "rendered": true,
+      "new_claims": false,
+      "in_side_label_inventory": false,
+      "note_resolved": false,
+      "layer_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/32_11_safe_path_1.nut",
+      "layer_sha256": "83162509c99d781a8e6a91fd7f861cd48b49a274253e627b3fa858a3b6138fb7",
+      "png_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/32_11_safe_path_1.png",
+      "png_sha256": "cf569f5cd277f86f183daea88056cfd7c18270a44ca567d0a9eed8c9446953e8",
+      "frame_count": 80,
+      "original_pts_match": true,
+      "original_clock_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/32_11_safe_path_1_clock.json",
+      "original_clock_sha256": "413fcb47b9b916073472a74774641369e6adbac26d72a3784ce6d9f9fc7c9ed2",
+      "original_durations_preserved_in_intermediate": true,
+      "overlay_position": [
+        0,
+        720
+      ],
+      "layer_size": [
+        1920,
+        300
+      ],
+      "fade_in_s": "3/8",
+      "fade_out_s": "3/8",
+      "style": {
+        "font": "Didot Italic",
+        "font_size": 128,
+        "lines": [
+          "SAFE PATH DOWN"
+        ],
+        "panel_rgba": [
+          48,
+          30,
+          20,
+          232
+        ],
+        "text_rgba": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "panel_bounds": [
+          319,
+          74,
+          1601,
+          226
+        ],
+        "border": false,
+        "gold_rule": false,
+        "pill_chrome": false
+      },
+      "alpha_verification": {
+        "decoded_frames": 80,
+        "first_alpha": 0,
+        "peak_alpha": 232,
+        "last_alpha": 26,
+        "maximum_alpha_error": 0,
+        "passed": true
+      },
+      "composited_over_clean_plate": false
+    },
+    {
+      "row": "19_skyline_strike",
+      "source_label": "20+ STRIKES A YEAR",
+      "label": "20+ STRIKES A YEAR",
+      "words": [
+        "20+",
+        "STRIKES",
+        "A",
+        "YEAR"
+      ],
+      "word_count": 4,
+      "sequence": 1,
+      "sequence_of": 1,
+      "pts_in": 6309888,
+      "pts_end": 6359040,
+      "hold_ticks": 49152,
+      "static_hold_s": "4",
+      "frame_in": 12297,
+      "frame_last": 12392,
+      "background": "unbordered umber",
+      "border": false,
+      "gold_rule": false,
+      "pill_chrome": false,
+      "over": "moving plate",
+      "one_at_a_time": true,
+      "rendered": true,
+      "new_claims": false,
+      "splice": false,
+      "window_remainder_ticks": 35328,
+      "layer_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/33_19_skyline_strike_1.nut",
+      "layer_sha256": "5c72ff84d8b9845bb8582a8a4b0ccd17b2ad72a2bb1dcfac75cbb82bf6917350",
+      "png_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/33_19_skyline_strike_1.png",
+      "png_sha256": "9e056628d48e55cf32149935a14933f7a93e58cda59276e2efb32b4288babe16",
+      "frame_count": 96,
+      "original_pts_match": true,
+      "original_clock_path": "/Volumes/MiniWork/scratch/J2242-caption-layers-v03/33_19_skyline_strike_1_clock.json",
+      "original_clock_sha256": "98992e581a8790a3e17fd8b3bc87e9a00203b5376700427cc339c5b897305dc6",
+      "original_durations_preserved_in_intermediate": true,
+      "overlay_position": [
+        0,
+        720
+      ],
+      "layer_size": [
+        1920,
+        300
+      ],
+      "fade_in_s": "3/8",
+      "fade_out_s": "3/8",
+      "style": {
+        "font": "Didot Italic",
+        "font_size": 128,
+        "lines": [
+          "20+ STRIKES A YEAR"
+        ],
+        "panel_rgba": [
+          48,
+          30,
+          20,
+          232
+        ],
+        "text_rgba": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "panel_bounds": [
+          277,
+          74,
+          1643,
+          226
+        ],
+        "border": false,
+        "gold_rule": false,
+        "pill_chrome": false
+      },
+      "alpha_verification": {
+        "decoded_frames": 96,
+        "first_alpha": 0,
+        "peak_alpha": 232,
+        "last_alpha": 26,
+        "maximum_alpha_error": 0,
+        "passed": true
+      },
+      "composited_over_clean_plate": false
+    }
+  ],
+  "baked_label_removal": "OUTSTANDING: reconstruct moving source plates; do not overlay on baked text",
+  "code_graphic_readability": "OUTSTANDING: ten rows require separate review",
+  "phone_readability": "OUTSTANDING: final composite contact sheet required",
+  "master_created": false,
+  "final_film_approval": false
+}

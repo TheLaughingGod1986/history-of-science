@@ -350,3 +350,56 @@ unchanged boundary pixels and exact source durations, independent full-output
 preservation, every mandatory film/package gate and phone sheet, J2243 and
 Chief review. No v04, approval, UAT, R2, Studio, generation or spend. No process
 from this checkpoint remains running; no detached render was started.
+
+
+## Caption layers and letter crossing checkpoint — ninth run, 12 November 2026
+
+`_j2242_caption_layers.py` renders all 32 planned caption cards and SAFE PATH
+DOWN as 33 transparent FFV1/BGRA layers (2,738 frames) in
+`/Volumes/MiniWork/scratch/J2242-caption-layers-v03/`. `CAPTION_LAYERS.json`
+records each PNG/video hash, exact original PTS schedule and hashed duration
+sidecar. It regenerates the plan from tracked labels and FACT_NOTES, verifies
+the pinned source clock, and checks inputs again after rendering.
+
+House design: white Didot Italic, 128 px, one or two balanced lines (still at
+most four words per card), plain unbordered translucent umber panel, no gold
+rule/pill/border. Layers are 1920x300 at x=0,y=720 in a 1920x1080 composite.
+Both fades are 3/8 second on original PTS. Decoding a panel pixel across all
+2,738 frames verifies fades/plateau with at most two alpha levels of error.
+Every rendered presentation timestamp matches. The Gazette and house-rod
+cards have original overlapping durations that NUT normalizes: the final mux
+must restore their hashed original clocks; do not infer final preservation.
+
+`LAYER_DESIGN_168_SHEET.jpg` in that scratch directory is a layer-only design
+preview on a neutral background, visually inspected as stills. The earlier
+v01/v02 layers used smaller lettering and are superseded. This is NOT the
+required final phone composite sheet. Existing baked labels must be removed
+by clean source reconstruction, including the clear remainder windows. Never
+just paste these layers over old text. When compositing, retain absolute PTS,
+restrict each layer to its original window, and use repeatlast=0/eof_action=pass
+so the last label cannot leak past its planned end.
+
+`_j2242_letter_patch.py` renders source f000..f100 of the pinned moving
+07_slow_news plate into master f4977..f5077. Output:
+`/Volumes/MiniWork/scratch/J2242-letter-patch-v02/letter_patch.nut` (hash and
+clock in `LETTER_PATCH.json`). One cream ink folded letter crosses the clear
+upper-left sky, with no banner, map, city/date/distance text or brown boxes.
+Half-second stills were visually inspected from the byte-identical v01 render:
+letter stays off the ship, source picture continues beneath it. This is not
+motion/audio perception or a film PASS. The ship/right region, lower sea and
+upper sky each match all 101 independently scaled source frame hashes exactly.
+The original long f5068 duration (1536 ticks) is normalized in the intermediate;
+the original schedule is preserved in its hashed sidecar for final mux restoration.
+
+Validation: 42 J2242 tests OK; check_all.sh ALL CHECKS PASS (full outputs
+CAPTION_LETTER_TESTS.txt and CHECK_ALL_CAPTION_LETTER.txt). These are code,
+clock, alpha and intermediate checks, not the mandatory final-film gates.
+
+Remaining: caption source reconstruction/composites, table-three correction,
+the independent 2:20 foil check and ten code-graphic bottom-text reviews,
+final generalized packet mux with exact original durations and unchanged
+boundary pixels, original audio packet/timestamp identity, measured loudness
+and sync, every mandatory media/package gate and final phone sheet. Then
+J2614/J2243 and Chief review before UAT/R2/Studio. No v04 master, spend,
+generation, publication or final approval. All work from this run has ended;
+no detached process remains. Resume this clean existing PR #542 branch.

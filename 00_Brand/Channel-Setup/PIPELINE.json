@@ -465,8 +465,8 @@
           "owner": "codex",
           "since": "2026-11-05T00:00:40.142053+00:00",
           "underway": false,
-          "waiting": "J2242 continuation: remaining windows/caption reconstruction and final packet mux with exact durations, then all gates and J2243/Chief review.",
-          "note": "J2242: salon, rods and points intermediates verified; salon-only preservation experiment passes. Points original overlapping duration retained in sidecar for final mux. Full assembly, captions and media gates outstanding; no v04 or approval.",
+          "waiting": "J2242 continuation: reconstruct clean caption plates, composite verified layers, finish defect rows and packet mux, then full preservation and film gates.",
+          "note": "J2242: 33 animated caption layers (2738 frames) and 101-frame moving-plate letter crossing rendered with original PTS checks. Clean caption plate reconstruction and final duration restoration/mux remain; no v04 or approval.",
           "jobs": [
             "J1297",
             "J1755",
