@@ -208,3 +208,17 @@ This is a data validation result, not film-stage approval or listening/motion QA
 
 
 Full source overrides and assembly requirements: `07_Edit-Project/J2659_CHIEF_DECISION.md`. J2563 resumes the 26 free rows and labelled-slate rough; picture and edit remain incomplete.
+
+
+## J2563 partial assembly checkpoint — 12 November 2026
+
+Input milestone 1/4 only; edit remains unfinished. Corrected source manifest (23 sources), twelve live metadata records, four verified downloaded originals; 28 anchored overlay candidates and 19 explicit holds. Wikimedia HTTP 429 prevents further acquisition this run. No row renders or timing rough yet. See `07_Edit-Project/J2563_CHECKPOINT_v01.md` for the NAS checkpoint and resume procedure. No generation, picture/edit approval or UAT.
+
+```text
+PASS: mechanical retime validation — 93 contiguous rows, 92 word-safe boundaries; 18 word crossings removed; all 11 long sentences split; maximum 8.00 s; v02 source, VO lock, row identities, budgets and generation locks preserved.
+This is a data validation result, not film-stage approval or listening/motion QA.
+PASS: locked NAS WAV hash and 532.720 s duration verified; no audio listening performed.
+PASS: 16 checkpoint files SHA-256 matched local and NAS copies.
+```
+
+Three focused source/cue tests and repository `check_all.sh` passed. These do not substitute for unfinished render verification or media QA. Nothing needed from Ben.

@@ -699,12 +699,18 @@
           "waiting": "Separate generation decision; generation_authorized false. J2659 accepts mechanical timing only."
         },
         "edit": {
-          "status": "todo",
+          "status": "doing",
           "due": "2026-12-03",
-          "note": "J2659 accepts v03 timing. J2563 resumes 26 free rows and internal rough with 67 slates; use J2659_CHIEF_DECISION.md source overrides, reuse check and overlay cue schedule.",
+          "note": "J2563 checkpoint: 23 corrected source records, 12 live metadata records, four verified cached files; 28 word-anchored overlay candidates, 19 held. No rows rendered or rough built. NAS checkpoint verified; see J2563_CHECKPOINT_v01.md.",
           "owner": "codex",
           "underway": false,
-          "waiting": "J2563 assembly worker to resume after timing decision merges"
+          "waiting": "Resume free graphic work and cue reconciliation; Wikimedia acquisition is rate-limited (HTTP 429), no retry in this run. No generation or stage approval.",
+          "since": "2026-11-12",
+          "steps": [
+            1,
+            4
+          ],
+          "steps_unit": "assembly milestones"
         },
         "thumbnails": {
           "status": "todo",

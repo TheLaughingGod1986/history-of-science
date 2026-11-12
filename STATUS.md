@@ -15,7 +15,7 @@
 | **008** Why Did Franklin Fly a Kite in a Storm? | Thu 19 Nov (7 d) | 75% | Picture (blocked) | **gemini** · ⛔ blocked: J1881 scopes two exact-match assets after J2163 repair; no native fallback selected and no generation authorized | 112/112 board rows rendered (11 code graphics + 101/101 Flow plates KEEP) | Sun 15 Nov (in 3 d) | ⛔ blocked |
 | **009** Why Doesn't the Moon Fall to Earth? | Thu 26 Nov (14 d) | 67% | Picture (in progress) | **Grok (J2632 revised sheet and timing ruling)** · ⏸ waiting: Grok ruling on the0.175s timing mismatch and revised J2632 sheets on PR543; no splice. Other picture review requirements remain. | 70/90 board rows recorded: 57 accepted Flow +12 code graphics +1 reuse; 20 Quality remain | Sun 22 Nov (in 10 d) | 🟢 on track |
 | **010** What Killed the Dinosaurs Was Hidden in a Line of Clay | Thu 3 Dec (21 d) | 40% | Picture (blocked) | **codex** · ⛔ blocked: Tested HOS010 runner and live guarded spend preflight after HOS009 J2033; then independent plate review before J2172 assembly | not estimated | Sun 29 Nov (in 17 d) | ⛔ blocked |
-| **011** Anesthesia: The Day Surgery Stopped Hurting | Thu 10 Dec (28 d) | 28% | Audit + upload package (to do) | **Claude** · queued | starts later; due today | Sun 6 Dec (in 24 d) | 🟢 on track |
+| **011** Anesthesia: The Day Surgery Stopped Hurting | Thu 10 Dec (28 d) | 30% | Audit + upload package (to do) | **Claude** · queued | starts later; due today | Sun 6 Dec (in 24 d) | 🟢 on track |
 | **012** Genetics: The Monk Who Counted 28,000 Pea Plants | Thu 24 Dec (42 d) | 0% | Topic (to do) | **Claude** · queued | — | Sun 20 Dec (in 38 d) | 🟢 on track |
 | **013** Evolution: The Letter That Forced Darwin to Publish | Thu 17 Dec (35 d) | 28% | Audit + upload package (to do) | **Claude** · queued | starts later; due today | Sun 13 Dec (in 31 d) | 🟢 on track |
 | **014** Extinction: The 12-Year-Old Who Dug Up a Sea Dragon | Thu 31 Dec (49 d) | 0% | Topic (to do) | **Claude** · queued | — | Sun 27 Dec (in 45 d) | 🟢 on track |
@@ -48,8 +48,7 @@
 
 **codex**
 - ▶️ Underway: nothing right now
-- ⏸ Waiting: 010 Picture: Tested HOS010 runner and live guarded spend preflight after HOS009 J2033; then independent plate review before J2172 assembly
-- ⏭ Next up: 011 Edit + master, due Thu 3 Dec
+- ⏸ Waiting: 010 Picture: Tested HOS010 runner and live guarded spend preflight after HOS009 J2033; then independent plate review before J2172 assembly; 011 Edit + master: Resume free graphic work and cue reconciliation; Wikimedia acquisition is rate-limited (HTTP 429), no retry in this run. No generation or stage approval.
 
 **gemini**
 - ▶️ Underway: nothing right now
@@ -74,6 +73,7 @@
 - **008** · ⛔ **Edit + master** — blocked (0%, with claude since Thu 5 Nov 00:00, ⛔ blocked: J1881 reviews J2163 repaired input; separately scoped PTS/GOP splicer, master-word alignment and exact-match assets required. J1755 separate delivery hold., due Thu 12 Nov (today)): J2163 code/evidence delivered: master hash/full decoded PTS and four source hashes verified; 11 tests pass. Output frame delta/sync/unchanged-frame/audio identity UNMEASURED. Six v03 notes unresolved; h22/h35/J1297 preserved. No render or new approval.
 - **009** · 🔄 **Picture** — in progress (78%, 70/90 board rows recorded: 57 accepted Flow +12 code graphics +1 reuse; 20 Quality remain, with Grok (J2632 revised sheet and timing ruling) since Wed 11 Nov, ⏸ waiting: Grok ruling on the0.175s timing mismatch and revised J2632 sheets on PR543; no splice. Other picture review requirements remain., due Sun 15 Nov (in 3 d)): J1237 tranche1 PASS; all57 original Flow hashes reverified local/NAS. 70/90 recorded rows unchanged. J2033 owns remaining20 Quality rows under J2026 cap6000/max3 takes each/floor3000; J2034 independent picture review. Generated is not approved. J2632: revised candidate has179 unique30fps frames,21 drawn head frames and two open rings. Parent out104 evidence supplied.0.175s parent/head frame-rate mismatch flagged; not KEEP. J2631 already KEEP. Approved count unchanged.
 - **010** · ⛔ **Picture** — blocked (0%, with codex since Fri 6 Nov, ⛔ blocked: Tested HOS010 runner and live guarded spend preflight after HOS009 J2033; then independent plate review before J2172 assembly, due Sun 22 Nov (in 10 d)): J2267: readiness integrated and budget reconciled; 12 Quality Shorts parents scoped, not generated or authorized. 75 total board rows / historical 12911 expected credits. Existing VO and Option A1 retained.
+- **011** · 🔄 **Edit + master** — in progress (25%, 1/4 assembly milestones, with codex since Thu 12 Nov, ⏸ waiting: Resume free graphic work and cue reconciliation; Wikimedia acquisition is rate-limited (HTTP 429), no retry in this run. No generation or stage approval., due Thu 3 Dec (in 21 d)): J2563 checkpoint: 23 corrected source records, 12 live metadata records, four verified cached files; 28 word-anchored overlay candidates, 19 held. No rows rendered or rough built. NAS checkpoint verified; see J2563_CHECKPOINT_v01.md.
 
 ## Next steps (in order)
 
@@ -252,7 +252,7 @@ Long VO v01 locked (5 parts); Chief KEEP all five, no pickups (desk 6101773293).
 
 ### 011 · Anesthesia: The Day Surgery Stopped Hurting
 
-`██████░░░░░░░░░░░░░░` **28%**
+`██████░░░░░░░░░░░░░░` **30%**
 
 Airs **Thu 10 Dec** · ready for Ben's OK by **Sun 6 Dec** · 🟢 on track
 
@@ -266,7 +266,7 @@ Locked for Thu 10 Dec. Script v02, facts, quote check and long VO locked (J2286 
 - ⬜ **Shorts scripts** — to do (with Claude, due Thu 12 Nov (today)): two search-titled Shorts (Test B, J2239)
 - ⬜ **Shorts voiceover** — to do (with Cursor, due Mon 16 Nov (in 4 d))
 - ⬜ **Picture** — to do (with Cursor, due Sun 29 Nov (in 17 d)): J2659 accepts v03 mechanical timing only: 93 rows, 37 boundaries moved, 18 word crossings removed, eleven long sentences split. 66 Quality generation rows remain unauthorized; reuse stays a slate. J2654 archive brief plus Grok ruling 6810336587 override inherited source fields; see J2659_CHIEF_DECISION.md.
-- ⬜ **Edit + master** — to do (with codex, due Thu 3 Dec (in 21 d)): J2659 accepts v03 timing. J2563 resumes 26 free rows and internal rough with 67 slates; use J2659_CHIEF_DECISION.md source overrides, reuse check and overlay cue schedule.
+- 🔄 **Edit + master** — in progress (25%, 1/4 assembly milestones, with codex since Thu 12 Nov, ⏸ waiting: Resume free graphic work and cue reconciliation; Wikimedia acquisition is rate-limited (HTTP 429), no retry in this run. No generation or stage approval., due Thu 3 Dec (in 21 d)): J2563 checkpoint: 23 corrected source records, 12 live metadata records, four verified cached files; 28 word-anchored overlay candidates, 19 held. No rows rendered or rough built. NAS checkpoint verified; see J2563_CHECKPOINT_v01.md.
 - ⬜ **Thumbnails** — to do (with Grok, due Thu 3 Dec (in 21 d))
 - ⬜ **Ben's final OK** — to do (with Ben, due Sun 6 Dec (in 24 d))
 - ⬜ **Scheduled** — to do (with Grok, due Mon 7 Dec (in 25 d))
