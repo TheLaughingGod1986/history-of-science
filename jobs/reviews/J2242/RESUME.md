@@ -575,3 +575,43 @@ Remaining: six ambiguous caption rows, the four table lead-in frames, SAFE PATH
 DOWN on its plate, the foil check at f3353, bottom-text reviews, generalized
 packet mux, preservation and loudness/sync checks, and the mandatory film gates.
 Then J2243 and Chief review. Continue this PR #542 worktree.
+
+## Full-resolution ambiguous rows — fourteenth run, 12 November 2026
+
+Cursor worker. `_j2242_ambiguous_fullres.py` compares the upper 1920×720 band,
+after the same lanczos scale the composites use, against every frame of the
+clean source. A row is unique only when every winner matches the low-resolution
+index, per-pixel MSE stays at or below 9, and the runner-up margin is at least
+0.1. Nothing is rendered from this measurement.
+
+`12_steeple_fire` is the control. It was already an eligible low-resolution row.
+Full resolution agrees on all 78 frames: maximum MSE 8.693, minimum margin
+15.228, no winner changes. That shows a real plate match can clear the rule.
+It was not reconstructed again.
+
+The three rows left unmeasured last run stay rejected:
+
+- `02_knuckle_spark`, 89 frames. Maximum MSE 6.869. Minimum margin 0.075.
+  Winners differ from the low-resolution index at local frames 2, 3, 7, 20,
+  21, 22, 23, 26, 27 and 29.
+- `14_royal_society`, 127 frames. Maximum MSE 7.206. Minimum margin 0.031.
+  Winners differ at local frames 31 and 33.
+- `07_giant_spark`, 151 frames. Maximum MSE 7.350. Minimum margin 0.753.
+  Winners differ at local frames 9, 54 and 92.
+
+`AMBIGUOUS_FULLRES.json` holds every frame. Raw decodes stay in
+`/Volumes/MiniWork/scratch/J2242-ambiguous-fullres-v01/` and are not in git.
+62 J2242 unit tests OK (`AMBIGUOUS_FULLRES_TESTS.txt`).
+`CHECK_ALL_AMBIGUOUS_FULLRES.txt` ends ALL CHECKS PASS. These are code and
+mapping checks. No composite, v04 master, motion review or approval.
+
+The six ambiguous caption rows, including the three measured and rejected on
+the previous run, stay unrendered. Frames 423–426 stay out. No original master
+or audio changed. No spend, generation, UAT, R2 or YouTube action. No detached
+process.
+
+Remaining: those six caption rows by a method other than guessing a source
+frame, the four table lead-in frames, SAFE PATH DOWN, the foil check at f3353,
+bottom-text reviews, generalized packet mux, preservation and loudness/sync
+checks, and the mandatory film gates. Then J2243 and Chief review. Continue
+this PR #542 worktree.
