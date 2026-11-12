@@ -1,0 +1,307 @@
+{
+  "word_crossings": [],
+  "max_row_s": 7.0,
+  "proposed_clause_cuts": [
+    {
+      "row": "03b_malay_packet",
+      "time": 14.36,
+      "evidence": {
+        "kind": "clause",
+        "previous_word_index": 38,
+        "next_word_index": 39,
+        "previous_word": "and",
+        "next_word": "one",
+        "gap_s": 0.0,
+        "after_word_s": 0.0,
+        "clause_reason": "list item: eight years of barnacles / and one letter"
+      }
+    },
+    {
+      "row": "04a_packet_seal",
+      "time": 16.48,
+      "evidence": {
+        "kind": "clause",
+        "previous_word_index": 47,
+        "next_word_index": 48,
+        "previous_word": "world",
+        "next_word": "forced",
+        "gap_s": 0.0,
+        "after_word_s": 0.0,
+        "clause_reason": "relative clause ends: other side of the world / forced"
+      }
+    },
+    {
+      "row": "05a_museum_cases",
+      "time": 24.44,
+      "evidence": {
+        "kind": "clause",
+        "previous_word_index": 61,
+        "next_word_index": 62,
+        "previous_word": "naturalists",
+        "next_word": "believed",
+        "gap_s": 0.0,
+        "after_word_s": 0.0,
+        "clause_reason": "subject ends: most naturalists / believed"
+      }
+    },
+    {
+      "row": "07_darwin_1837_desk",
+      "time": 39.36,
+      "evidence": {
+        "kind": "clause",
+        "previous_word_index": 98,
+        "next_word_index": 99,
+        "previous_word": "tree",
+        "next_word": "in",
+        "gap_s": 0.0,
+        "after_word_s": 0.0,
+        "clause_reason": "object ends: drew a little tree / in a private notebook"
+      }
+    },
+    {
+      "row": "09_wallace_hut_split_beat1",
+      "time": 57.22,
+      "evidence": {
+        "kind": "clause",
+        "previous_word_index": 137,
+        "next_word_index": 138,
+        "previous_word": "1858",
+        "next_word": "a",
+        "gap_s": 0.0,
+        "after_word_s": 0.0,
+        "clause_reason": "temporal clause: then in June 1858 / a letter arrived"
+      }
+    },
+    {
+      "row": "11_beagle_cabin_explorer_beat1",
+      "time": 71.22,
+      "evidence": {
+        "kind": "clause",
+        "previous_word_index": 173,
+        "next_word_index": 174,
+        "previous_word": "properly",
+        "next_word": "stumble",
+        "gap_s": 0.0,
+        "after_word_s": 0.0,
+        "clause_reason": "relative clause ends: who did not label his birds properly / stumble onto"
+      }
+    },
+    {
+      "row": "03_unlabelled_bagging_beat1",
+      "time": 88.64,
+      "evidence": {
+        "kind": "clause",
+        "previous_word_index": 211,
+        "next_word_index": 212,
+        "previous_word": "there",
+        "next_word": "and",
+        "gap_s": 0.0,
+        "after_word_s": 0.0,
+        "clause_reason": "coordinated predicate: collected birds there / and thought"
+      }
+    },
+    {
+      "row": "11_island_split_vision_beat1",
+      "time": 157.5,
+      "evidence": {
+        "kind": "clause",
+        "previous_word_index": 377,
+        "next_word_index": 378,
+        "previous_word": "finch",
+        "next_word": "long",
+        "gap_s": 0.0,
+        "after_word_s": 0.0,
+        "clause_reason": "relative clause: one kind of finch / long ago and changed"
+      }
+    },
+    {
+      "row": "02a_malthus_lamplight",
+      "time": 177.26,
+      "evidence": {
+        "kind": "clause",
+        "previous_word_index": 423,
+        "next_word_index": 424,
+        "previous_word": "populations",
+        "next_word": "by",
+        "gap_s": 0.0,
+        "after_word_s": 0.0,
+        "clause_reason": "attribution: human populations / by Thomas Malthus"
+      }
+    },
+    {
+      "row": "11_barnacles_microscope",
+      "time": 260.98,
+      "evidence": {
+        "kind": "clause",
+        "previous_word_index": 611,
+        "next_word_index": 612,
+        "previous_word": "goes",
+        "next_word": "that",
+        "gap_s": 0.0,
+        "after_word_s": 0.0,
+        "clause_reason": "parenthetical clause ends: the story goes / that one of his children"
+      }
+    },
+    {
+      "row": "06a_wallace_fever",
+      "time": 314.92,
+      "evidence": {
+        "kind": "clause",
+        "previous_word_index": 741,
+        "next_word_index": 742,
+        "previous_word": "Malthus",
+        "next_word": "and",
+        "gap_s": 0.0,
+        "after_word_s": 0.0,
+        "clause_reason": "coordinated clause: thought about Malthus / and like Darwin"
+      }
+    },
+    {
+      "row": "02a_linnean_reading_beat1",
+      "time": 371.82,
+      "evidence": {
+        "kind": "clause",
+        "previous_word_index": 872,
+        "next_word_index": 873,
+        "previous_word": "Hooker",
+        "next_word": "had",
+        "gap_s": 0.0,
+        "after_word_s": 0.0,
+        "clause_reason": "subject ends: Charles Lyell and Joseph Hooker / had both works read"
+      }
+    },
+    {
+      "row": "06_murray_bookshop",
+      "time": 418.2,
+      "evidence": {
+        "kind": "clause",
+        "previous_word_index": 986,
+        "next_word_index": 987,
+        "previous_word": "1859",
+        "next_word": "and",
+        "gap_s": 0.0,
+        "after_word_s": 0.0,
+        "clause_reason": "coordinated clause: came out on 24 November 1859 / and booksellers"
+      }
+    },
+    {
+      "row": "04a_mendel_pea_garden",
+      "time": 476.56,
+      "evidence": {
+        "kind": "clause",
+        "previous_word_index": 1128,
+        "next_word_index": 1129,
+        "previous_word": "Mendel",
+        "next_word": "had",
+        "gap_s": 0.0,
+        "after_word_s": 0.0,
+        "clause_reason": "subject ends: a friar called Gregor Mendel / had published"
+      }
+    },
+    {
+      "row": "08a_reuse_study_beaks_callback",
+      "time": 508.48,
+      "evidence": {
+        "kind": "clause",
+        "previous_word_index": 1200,
+        "next_word_index": 1201,
+        "previous_word": "and",
+        "next_word": "you",
+        "gap_s": 0.0,
+        "after_word_s": 0.0,
+        "clause_reason": "imperative clause ends: together with Mendel beads and / you have"
+      }
+    }
+  ],
+  "source_overruns": [
+    {
+      "source": "P2:02_galapagos_beach_myth",
+      "needed_s": 8.7,
+      "planned_source_s": 8
+    },
+    {
+      "source": "P2:03_unlabelled_bagging",
+      "needed_s": 8.06,
+      "planned_source_s": 8
+    },
+    {
+      "source": "P2:11_island_split_vision",
+      "needed_s": 8.16,
+      "planned_source_s": 8
+    },
+    {
+      "source": "P5:02a_linnean_reading",
+      "needed_s": 10.36,
+      "planned_source_s": 8
+    }
+  ],
+  "short_chapter_cards": [
+    {
+      "row": "01_card_p02",
+      "duration_s": 0.32
+    },
+    {
+      "row": "01_card_p03",
+      "duration_s": 0.28
+    },
+    {
+      "row": "01_card_p04",
+      "duration_s": 0.56
+    },
+    {
+      "row": "01_card_p05",
+      "duration_s": 0.32
+    },
+    {
+      "row": "01_card_p06",
+      "duration_s": 0.28
+    }
+  ],
+  "cue_overlaps": [
+    {
+      "first": "Thomas Malthus",
+      "second": "THE MISSING PIECE",
+      "first_onset_s": 177.64,
+      "second_onset_s": 179.54
+    },
+    {
+      "first": "CONFESSING A MURDER",
+      "second": "Emma Darwin",
+      "first_onset_s": 228.26,
+      "second_onset_s": 231.6
+    },
+    {
+      "first": "Emma Darwin",
+      "second": "JULY 1844",
+      "first_onset_s": 231.6,
+      "second_onset_s": 234.36
+    },
+    {
+      "first": "JULY 1844",
+      "second": "230 PAGES \u00b7 IF I DIE",
+      "first_onset_s": 234.36,
+      "second_onset_s": 237.76
+    },
+    {
+      "first": "EIGHT YEARS ON BARNACLES",
+      "second": "EIGHT YEARS AT MICROSCOPE",
+      "first_onset_s": 256.14,
+      "second_onset_s": 256.14
+    },
+    {
+      "first": "Charles Lyell",
+      "second": "ORIGINALITY SMASHED",
+      "first_onset_s": 342.88,
+      "second_onset_s": 345.4
+    },
+    {
+      "first": "24 NOVEMBER 1859",
+      "second": "1,250 COPIES PRE-SOLD",
+      "first_onset_s": 416.74,
+      "second_onset_s": 419.98
+    }
+  ],
+  "v02_unchanged": true,
+  "onsets_match_word_records": true,
+  "approved": false
+}

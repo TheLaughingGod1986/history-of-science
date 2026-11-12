@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11",
+  "updated": "2026-11-12",
   "updated_by": "codex",
   "board_url": "https://claude.ai/artifact/Hhk519dkbHMzeaZfp3efhc",
   "stages": [
@@ -816,18 +816,18 @@
           "waiting": "after J2240 013 shot list v01 + price review"
         },
         "edit": {
-          "status": "blocked",
+          "status": "doing",
           "due": "2026-12-10",
-          "owner": "Grok",
+          "owner": "codex",
           "underway": false,
-          "since": "2026-11-11",
+          "since": "2026-11-12",
           "steps": [
-            0,
-            1
+            2,
+            3
           ],
-          "steps_unit": "approved master",
-          "waiting": "Chief ruling on sentence-safe picture cuts and overlay revision from J2498",
-          "note": "J2498: 515 s diagnostic rough on studio-live, 22 existing renders + 72 slates. clip_check FAIL (9 errors); direct audit 14 word cuts, 23 sentence cuts, 5 graphics over 8 s. Not a passed edit or Ben watch. See timing_rough_J2498/TIMING_REPORT_v01.md."
+          "steps_unit": "timing revision steps",
+          "waiting": "J2652 continuation: valid clause cuts, source duration, readable chapter transitions and overlay collisions",
+          "note": "J2652 v03 diagnostic rough built and preserved on NAS; clip_check passes but editorial FIX. Not an approved edit or UAT. See timing_rough_J2652/REVIEW_v03.md."
         },
         "thumbnails": {
           "status": "todo",

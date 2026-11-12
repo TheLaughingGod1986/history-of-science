@@ -1,0 +1,818 @@
+[
+  {
+    "source_row_v02": "P1:01_study_beaks",
+    "overlay": {
+      "hold_s": 3.0,
+      "kind": "LABEL",
+      "label": "LOCKED AWAY",
+      "sfx": "tick_ink"
+    },
+    "status": "ANCHORED",
+    "word_index": 13,
+    "word": "lock",
+    "onset_s": 4.72,
+    "word_end_s": 4.98,
+    "host_row": "P1:02_drawer_lock",
+    "offset_in_host_s": 0.9,
+    "transcript": "02_Voiceover/stt/hos_013_vo_v03a/words_fw_small_en.json"
+  },
+  {
+    "source_row_v02": "P1:03b_malay_packet",
+    "overlay": {
+      "hold_s": 3.2,
+      "kind": "LABEL",
+      "label": "ONE LETTER",
+      "note": "Promise by 0:15 + physical proof (0:05-0:15 part 3)",
+      "sfx": "tick_ink"
+    },
+    "status": "ANCHORED",
+    "word_index": 39,
+    "word": "one",
+    "onset_s": 14.36,
+    "word_end_s": 14.64,
+    "host_row": "P1:04a_packet_seal",
+    "offset_in_host_s": 0.0,
+    "transcript": "02_Voiceover/stt/hos_013_vo_v03a/words_fw_small_en.json"
+  },
+  {
+    "source_row_v02": "P1:05a_museum_cases",
+    "overlay": {
+      "hold_s": 3.4,
+      "kind": "WHEN",
+      "label": "LONDON · 1830S",
+      "note": "Stakes by 0:25",
+      "sfx": "tick_ink"
+    },
+    "status": "ANCHORED",
+    "word_index": 59,
+    "word": "1830s",
+    "onset_s": 22.2,
+    "word_end_s": 23.48,
+    "host_row": "P1:05a_museum_cases",
+    "offset_in_host_s": 0.72,
+    "transcript": "02_Voiceover/stt/hos_013_vo_v03a/words_fw_small_en.json"
+  },
+  {
+    "source_row_v02": "P1:06_padlock_shut",
+    "overlay": {
+      "hold_s": 3.4,
+      "kind": "LABEL",
+      "label": "FIXED FOREVER?",
+      "sfx": "tick_ink"
+    },
+    "status": "ANCHORED",
+    "word_index": 74,
+    "word": "never",
+    "onset_s": 28.3,
+    "word_end_s": 28.58,
+    "host_row": "P1:05b_museum_plaques",
+    "offset_in_host_s": 3.86,
+    "transcript": "02_Voiceover/stt/hos_013_vo_v03a/words_fw_small_en.json"
+  },
+  {
+    "source_row_v02": "P1:07_darwin_1837_desk",
+    "overlay": {
+      "hold_s": 3.8,
+      "kind": "WHO",
+      "line_1": "Charles Darwin",
+      "line_2": "(1809–1882) — naturalist",
+      "sfx": "tick_ink",
+      "timeline_step": "2/7 · July 1837 (Notebook B)",
+      "when_stamp": "JULY 1837"
+    },
+    "status": "ANCHORED",
+    "word_index": 2,
+    "word": "Charles",
+    "onset_s": 0.5,
+    "word_end_s": 0.86,
+    "host_row": "P1:01_study_beaks",
+    "offset_in_host_s": 0.5,
+    "transcript": "02_Voiceover/stt/hos_013_vo_v03a/words_fw_small_en.json"
+  },
+  {
+    "source_row_v02": "P1:08_cg_i_think_tree",
+    "overlay": {
+      "detail": "\"I think\" tree (Notebook B p. 36) + 20-year secrecy bar (1838 → 1858)",
+      "hold_s": 3.6,
+      "kind": "DATA",
+      "label": "TWENTY YEARS IN A DRAWER",
+      "note": "HOS-2026-11-E2 Early DATA+SCALE graphic on screen at 0:39.40 (inside 0:25-0:40)",
+      "scale": "20 years in a drawer — longer than a child takes to grow up",
+      "sfx": "tick_ink"
+    },
+    "status": "ANCHORED",
+    "word_index": 132,
+    "word": "20",
+    "onset_s": 53.46,
+    "word_end_s": 53.86,
+    "host_row": "P1:08_cg_i_think_tree_beat3",
+    "offset_in_host_s": 3.56,
+    "transcript": "02_Voiceover/stt/hos_013_vo_v03a/words_fw_small_en.json"
+  },
+  {
+    "source_row_v02": "P1:09_wallace_hut_split",
+    "overlay": {
+      "hold_s": 3.8,
+      "kind": "WHO",
+      "line_1": "Alfred Russel Wallace",
+      "line_2": "(1823–1913) — naturalist",
+      "sfx": "tick_ink",
+      "timeline_step": "5/7 · June 1858 (Wallace letter)",
+      "when_stamp": "JUNE 1858"
+    },
+    "status": "ANCHORED",
+    "word_index": 647,
+    "word": "Alfred",
+    "onset_s": 276.16,
+    "word_end_s": 276.62,
+    "host_row": "P4:02_wallace_collector",
+    "offset_in_host_s": 0.0,
+    "transcript": "02_Voiceover/stt/hos_013_vo_v03a/words_fw_small_en.json"
+  },
+  {
+    "source_row_v02": "P1:10_cg_globe_arc",
+    "overlay": {
+      "detail": "Inked globe arc from Malay Archipelago to Kent + 230-page 1844 essay vs short 1858 paper",
+      "hold_s": 3.6,
+      "kind": "DATA",
+      "label": "OTHER SIDE OF WORLD",
+      "scale": "the other side of the world",
+      "sfx": "tick_ink"
+    },
+    "status": "ANCHORED",
+    "word_index": 145,
+    "word": "the",
+    "onset_s": 59.84,
+    "word_end_s": 59.92,
+    "host_row": "P1:09_wallace_hut_split_beat2",
+    "offset_in_host_s": 2.62,
+    "transcript": "02_Voiceover/stt/hos_013_vo_v03a/words_fw_small_en.json"
+  },
+  {
+    "source_row_v02": "P2:03_unlabelled_bagging",
+    "overlay": {
+      "hold_s": 3.6,
+      "kind": "WHEN",
+      "label": "GALÁPAGOS · SEPTEMBER 1835",
+      "sfx": "tick_ink",
+      "side_label": "NO LABELS",
+      "timeline_step": "1/7 · Sept 1835 (Galápagos)"
+    },
+    "status": "ANCHORED",
+    "word_index": 205,
+    "word": "1835",
+    "onset_s": 84.32,
+    "word_end_s": 85.46,
+    "host_row": "P2:03_unlabelled_bagging_beat1",
+    "offset_in_host_s": 0.1,
+    "transcript": "02_Voiceover/stt/hos_013_vo_v03a/words_fw_small_en.json"
+  },
+  {
+    "source_row_v02": "P2:04_blank_tags_row",
+    "overlay": {
+      "hold_s": 3.5,
+      "kind": "FACT",
+      "label": "FORGOT TO LABEL FINCHES",
+      "sfx": "tick_ink"
+    },
+    "status": "ANCHORED",
+    "word_index": 228,
+    "word": "didn't",
+    "onset_s": 94.18,
+    "word_end_s": 94.42,
+    "host_row": "P2:04_blank_tags_row",
+    "offset_in_host_s": 1.9,
+    "transcript": "02_Voiceover/stt/hos_013_vo_v03a/words_fw_small_en.json"
+  },
+  {
+    "source_row_v02": "P2:06a_lawson_jetty",
+    "overlay": {
+      "hold_s": 3.6,
+      "kind": "WHO",
+      "line_1": "Nicholas Lawson",
+      "line_2": "Galápagos vice-governor",
+      "sfx": "tick_ink"
+    },
+    "status": "ANCHORED",
+    "word_index": 259,
+    "word": "Nicholas",
+    "onset_s": 106.6,
+    "word_end_s": 107.24,
+    "host_row": "P2:06a_lawson_jetty",
+    "offset_in_host_s": 2.04,
+    "transcript": "02_Voiceover/stt/hos_013_vo_v03a/words_fw_small_en.json"
+  },
+  {
+    "source_row_v02": "P2:06b_cg_tortoise_shells",
+    "overlay": {
+      "hold_s": 3.5,
+      "kind": "EXPLAINER",
+      "label": "ONE SHELL PER ISLAND",
+      "sfx": "tick_ink"
+    },
+    "status": "ANCHORED",
+    "word_index": 268,
+    "word": "island",
+    "onset_s": 111.3,
+    "word_end_s": 111.66,
+    "host_row": "P2:06b_cg_tortoise_shells",
+    "offset_in_host_s": 1.34,
+    "transcript": "02_Voiceover/stt/hos_013_vo_v03a/words_fw_small_en.json"
+  },
+  {
+    "source_row_v02": "P2:08a_gould_sorting",
+    "overlay": {
+      "hold_s": 3.8,
+      "kind": "WHO",
+      "line_1": "John Gould",
+      "line_2": "(1804–1881) — bird expert",
+      "sfx": "tick_ink",
+      "when_stamp": "LONDON · 1837"
+    },
+    "status": "ANCHORED",
+    "word_index": 296,
+    "word": "John",
+    "onset_s": 123.2,
+    "word_end_s": 123.6,
+    "host_row": "P2:08a_gould_sorting",
+    "offset_in_host_s": 2.32,
+    "transcript": "02_Voiceover/stt/hos_013_vo_v03a/words_fw_small_en.json"
+  },
+  {
+    "source_row_v02": "P2:09_cg_finch_toolbox",
+    "overlay": {
+      "detail": "Inked chart of 4 Galápagos finch beak profiles (with Gould 1845 lithograph inset) grouped by tool shape",
+      "hold_s": 3.6,
+      "kind": "DATA",
+      "label": "WHOLE TOOLBOX OF BEAKS",
+      "scale": "one family of birds, a whole toolbox of beaks",
+      "sfx": "tick_ink"
+    },
+    "status": "ANCHORED",
+    "word_index": 327,
+    "word": "beak,",
+    "onset_s": 134.92,
+    "word_end_s": 135.6,
+    "host_row": "P2:09_cg_finch_toolbox_beat1",
+    "offset_in_host_s": 3.52,
+    "transcript": "02_Voiceover/stt/hos_013_vo_v03a/words_fw_small_en.json"
+  },
+  {
+    "source_row_v02": "P3:02a_malthus_lamplight",
+    "overlay": {
+      "hold_s": 3.8,
+      "kind": "WHO",
+      "line_1": "Thomas Malthus",
+      "line_2": "(1766–1834) — economist",
+      "sfx": "tick_ink",
+      "timeline_step": "3/7 · Sept 1838 (Malthus read)",
+      "when_stamp": "28 SEPTEMBER 1838"
+    },
+    "status": "ANCHORED",
+    "word_index": 425,
+    "word": "Thomas",
+    "onset_s": 177.64,
+    "word_end_s": 178.02,
+    "host_row": "P3:02b_notebook_d_open",
+    "offset_in_host_s": 0.38,
+    "transcript": "02_Voiceover/stt/hos_013_vo_v03a/words_fw_small_en.json"
+  },
+  {
+    "source_row_v02": "P3:02b_notebook_d_open",
+    "overlay": {
+      "hold_s": 3.2,
+      "kind": "LABEL",
+      "label": "THE MISSING PIECE",
+      "sfx": "tick_ink"
+    },
+    "status": "ANCHORED",
+    "word_index": 429,
+    "word": "missing",
+    "onset_s": 179.54,
+    "word_end_s": 179.82,
+    "host_row": "P3:02b_notebook_d_open",
+    "offset_in_host_s": 2.28,
+    "transcript": "02_Voiceover/stt/hos_013_vo_v03a/words_fw_small_en.json"
+  },
+  {
+    "source_row_v02": "P3:03_cg_malthus_curve",
+    "overlay": {
+      "detail": "Inked exponential curve (offspring born) vs flat horizontal line (food supply)",
+      "hold_s": 3.6,
+      "kind": "DATA",
+      "label": "MOST NEVER SURVIVE",
+      "scale": "far more born than can ever live",
+      "sfx": "tick_ink"
+    },
+    "status": "ANCHORED",
+    "word_index": 444,
+    "word": "survive.",
+    "onset_s": 185.84,
+    "word_end_s": 186.32,
+    "host_row": "P3:03_cg_malthus_curve_beat1",
+    "offset_in_host_s": 3.24,
+    "transcript": "02_Voiceover/stt/hos_013_vo_v03a/words_fw_small_en.json"
+  },
+  {
+    "source_row_v02": "P3:06_nature_keeps_fit",
+    "overlay": {
+      "hold_s": 3.6,
+      "kind": "EXPLAINER",
+      "label": "NATURAL SELECTION",
+      "sfx": "tick_ink"
+    },
+    "status": "ANCHORED",
+    "word_index": 520,
+    "word": "selection.",
+    "onset_s": 218.74,
+    "word_end_s": 219.32,
+    "host_row": "P3:06_nature_keeps_fit_beat2",
+    "offset_in_host_s": 2.52,
+    "transcript": "02_Voiceover/stt/hos_013_vo_v03a/words_fw_small_en.json"
+  },
+  {
+    "source_row_v02": "P3:07b_confessing_murder_letter",
+    "overlay": {
+      "hold_s": 3.6,
+      "kind": "LABEL",
+      "label": "CONFESSING A MURDER",
+      "sfx": "tick_ink"
+    },
+    "status": "ANCHORED",
+    "word_index": 542,
+    "word": "confessing",
+    "onset_s": 228.26,
+    "word_end_s": 228.9,
+    "host_row": "P3:07b_confessing_murder_letter",
+    "offset_in_host_s": 4.24,
+    "transcript": "02_Voiceover/stt/hos_013_vo_v03a/words_fw_small_en.json"
+  },
+  {
+    "source_row_v02": "P3:08_emma_study",
+    "overlay": {
+      "hold_s": 3.6,
+      "kind": "WHO",
+      "line_1": "Emma Darwin",
+      "line_2": "(1808–1896) — Darwin's wife",
+      "sfx": "tick_ink"
+    },
+    "status": "ANCHORED",
+    "word_index": 548,
+    "word": "Emma,",
+    "onset_s": 231.6,
+    "word_end_s": 231.6,
+    "host_row": "P3:08_emma_study",
+    "offset_in_host_s": 1.56,
+    "transcript": "02_Voiceover/stt/hos_013_vo_v03a/words_fw_small_en.json"
+  },
+  {
+    "source_row_v02": "P3:09a_essay_1844_sealed",
+    "overlay": {
+      "hold_s": 3.5,
+      "kind": "WHEN",
+      "label": "JULY 1844",
+      "sfx": "tick_ink",
+      "timeline_step": "4/7 · July 1844 (230-page essay)"
+    },
+    "status": "ANCHORED",
+    "word_index": 553,
+    "word": "1844",
+    "onset_s": 234.36,
+    "word_end_s": 235.38,
+    "host_row": "P3:08_emma_study",
+    "offset_in_host_s": 4.32,
+    "transcript": "02_Voiceover/stt/hos_013_vo_v03a/words_fw_small_en.json"
+  },
+  {
+    "source_row_v02": "P3:09b_emma_letter_cupboard",
+    "overlay": {
+      "hold_s": 3.5,
+      "kind": "LABEL",
+      "label": "230 PAGES · IF I DIE",
+      "sfx": "tick_ink"
+    },
+    "status": "ANCHORED",
+    "word_index": 560,
+    "word": "230",
+    "onset_s": 237.76,
+    "word_end_s": 238.48,
+    "host_row": "P3:09a_essay_1844_sealed",
+    "offset_in_host_s": 0.72,
+    "transcript": "02_Voiceover/stt/hos_013_vo_v03a/words_fw_small_en.json"
+  },
+  {
+    "source_row_v02": "P3:10a_arch_vestiges_1844",
+    "overlay": {
+      "credit": "Chambers, Vestiges 1st ed. (Oct 1844, PD)",
+      "kind": "ARCHIVE",
+      "label": "OCTOBER 1844"
+    },
+    "status": "ANCHORED",
+    "word_index": 580,
+    "word": "A",
+    "onset_s": 247.04,
+    "word_end_s": 247.06,
+    "host_row": "P3:10a_arch_vestiges_1844",
+    "offset_in_host_s": 0.26,
+    "transcript": "02_Voiceover/stt/hos_013_vo_v03a/words_fw_small_en.json"
+  },
+  {
+    "source_row_v02": "P3:11_barnacles_microscope",
+    "overlay": {
+      "hold_s": 3.6,
+      "kind": "FACT",
+      "label": "EIGHT YEARS ON BARNACLES",
+      "sfx": "tick_ink",
+      "when_stamp": "1846–1854"
+    },
+    "status": "ANCHORED",
+    "word_index": 602,
+    "word": "eight",
+    "onset_s": 256.14,
+    "word_end_s": 256.42,
+    "host_row": "P3:10b_vestiges_torn_apart",
+    "offset_in_host_s": 2.36,
+    "transcript": "02_Voiceover/stt/hos_013_vo_v03a/words_fw_small_en.json"
+  },
+  {
+    "source_row_v02": "P3:12_cg_barnacle_counter",
+    "overlay": {
+      "detail": "Eight-year barnacle counter ticking from 1846 to 1854 beside four monograph volumes",
+      "hold_s": 3.6,
+      "kind": "DATA",
+      "label": "EIGHT YEARS AT MICROSCOPE",
+      "scale": "eight years at one microscope",
+      "sfx": "tick_ink"
+    },
+    "status": "ANCHORED",
+    "word_index": 602,
+    "word": "eight",
+    "onset_s": 256.14,
+    "word_end_s": 256.42,
+    "host_row": "P3:10b_vestiges_torn_apart",
+    "offset_in_host_s": 2.36,
+    "transcript": "02_Voiceover/stt/hos_013_vo_v03a/words_fw_small_en.json"
+  },
+  {
+    "source_row_v02": "P4:03a_helen_burning",
+    "overlay": {
+      "hold_s": 3.5,
+      "kind": "WHEN",
+      "label": "AUGUST 1852",
+      "sfx": "rumble_low"
+    },
+    "status": "ANCHORED",
+    "word_index": 667,
+    "word": "1852",
+    "onset_s": 283.88,
+    "word_end_s": 284.78,
+    "host_row": "P4:03a_helen_burning",
+    "offset_in_host_s": 0.72,
+    "transcript": "02_Voiceover/stt/hos_013_vo_v03a/words_fw_small_en.json"
+  },
+  {
+    "source_row_v02": "P4:03b_crates_sinking",
+    "overlay": {
+      "hold_s": 2.6,
+      "kind": "FACT",
+      "label": "HIS COLLECTION SANK",
+      "sfx": "tick_ink"
+    },
+    "status": "ANCHORED",
+    "word_index": 685,
+    "word": "collection",
+    "onset_s": 291.32,
+    "word_end_s": 291.8,
+    "host_row": "P4:03b_crates_sinking",
+    "offset_in_host_s": 1.66,
+    "transcript": "02_Voiceover/stt/hos_013_vo_v03a/words_fw_small_en.json"
+  },
+  {
+    "source_row_v02": "P4:05_cg_wallace_counter",
+    "overlay": {
+      "detail": "Painted map of the Malay Archipelago with Wallace's specimen counter climbing 0 → 125,660",
+      "hold_s": 3.6,
+      "kind": "DATA",
+      "label": "125,660 SPECIMENS",
+      "scale": "a whole museum, collected by one man",
+      "sfx": "tick_ink",
+      "when_stamp": "MALAY ARCHIPELAGO · 1854–1862"
+    },
+    "status": "ANCHORED",
+    "word_index": 723,
+    "word": "125",
+    "onset_s": 304.72,
+    "word_end_s": 305.58,
+    "host_row": "P4:05_cg_wallace_counter_beat2",
+    "offset_in_host_s": 2.06,
+    "transcript": "02_Voiceover/stt/hos_013_vo_v03a/words_fw_small_en.json"
+  },
+  {
+    "source_row_v02": "P4:06a_wallace_fever",
+    "overlay": {
+      "hold_s": 3.5,
+      "kind": "WHEN",
+      "label": "FEBRUARY 1858",
+      "sfx": "tick_ink"
+    },
+    "status": "ANCHORED",
+    "word_index": 727,
+    "word": "February",
+    "onset_s": 308.92,
+    "word_end_s": 309.18,
+    "host_row": "P4:06a_wallace_fever",
+    "offset_in_host_s": 0.3,
+    "transcript": "02_Voiceover/stt/hos_013_vo_v03a/words_fw_small_en.json"
+  },
+  {
+    "source_row_v02": "P4:06b_arch_malthus_1798",
+    "overlay": {
+      "credit": "Malthus, Principle of Population (1798, PD)",
+      "hold_s": 3.5,
+      "kind": "ARCHIVE",
+      "label": "THE SAME IDEA",
+      "sfx": "tick_ink"
+    },
+    "status": "ANCHORED",
+    "word_index": 741,
+    "word": "Malthus",
+    "onset_s": 314.32,
+    "word_end_s": 314.92,
+    "host_row": "P4:06a_wallace_fever",
+    "offset_in_host_s": 5.7,
+    "transcript": "02_Voiceover/stt/hos_013_vo_v03a/words_fw_small_en.json"
+  },
+  {
+    "source_row_v02": "P4:09a_darwin_reads_wallace",
+    "overlay": {
+      "hold_s": 3.8,
+      "kind": "WHO",
+      "line_1": "Charles Lyell",
+      "line_2": "(1797–1875) — geologist",
+      "sfx": "tick_ink",
+      "when_stamp": "18 JUNE 1858"
+    },
+    "status": "ANCHORED",
+    "word_index": 808,
+    "word": "Charles",
+    "onset_s": 342.88,
+    "word_end_s": 343.4,
+    "host_row": "P4:09a_darwin_reads_wallace",
+    "offset_in_host_s": 5.58,
+    "transcript": "02_Voiceover/stt/hos_013_vo_v03a/words_fw_small_en.json"
+  },
+  {
+    "source_row_v02": "P4:09b_smashed_letter_pen",
+    "overlay": {
+      "hold_s": 3.6,
+      "kind": "LABEL",
+      "label": "ORIGINALITY SMASHED",
+      "sfx": "tick_ink"
+    },
+    "status": "ANCHORED",
+    "word_index": 812,
+    "word": "originality",
+    "onset_s": 345.4,
+    "word_end_s": 346.2,
+    "host_row": "P4:09b_smashed_letter_pen",
+    "offset_in_host_s": 1.3,
+    "transcript": "02_Voiceover/stt/hos_013_vo_v03a/words_fw_small_en.json"
+  },
+  {
+    "source_row_v02": "P5:02a_linnean_reading",
+    "overlay": {
+      "hold_s": 3.8,
+      "kind": "WHO",
+      "line_1": "Joseph Hooker",
+      "line_2": "(1817–1911) — botanist",
+      "sfx": "tick_ink",
+      "when_stamp": "LONDON · 1 JULY 1858"
+    },
+    "status": "ANCHORED",
+    "word_index": 871,
+    "word": "Joseph",
+    "onset_s": 370.88,
+    "word_end_s": 371.28,
+    "host_row": "P5:02a_linnean_reading_beat1",
+    "offset_in_host_s": 4.6,
+    "transcript": "02_Voiceover/stt/hos_013_vo_v03a/words_fw_small_en.json"
+  },
+  {
+    "source_row_v02": "P5:03a_two_empty_chairs",
+    "overlay": {
+      "hold_s": 3.6,
+      "kind": "LABEL",
+      "label": "TWO EMPTY CHAIRS",
+      "sfx": "tick_ink"
+    },
+    "status": "ANCHORED",
+    "word_index": 900,
+    "word": "Neither",
+    "onset_s": 383.2,
+    "word_end_s": 383.42,
+    "host_row": "P5:03a_two_empty_chairs",
+    "offset_in_host_s": 0.84,
+    "transcript": "02_Voiceover/stt/hos_013_vo_v03a/words_fw_small_en.json"
+  },
+  {
+    "source_row_v02": "P5:04b_bell_report_1859",
+    "overlay": {
+      "hold_s": 3.6,
+      "kind": "FACT",
+      "label": "NO STRIKING DISCOVERY",
+      "sfx": "tick_ink",
+      "when_stamp": "MAY 1859"
+    },
+    "status": "ANCHORED",
+    "word_index": 953,
+    "word": "striking",
+    "onset_s": 403.52,
+    "word_end_s": 404.0,
+    "host_row": "P5:04b_bell_report_1859",
+    "offset_in_host_s": 5.34,
+    "transcript": "02_Voiceover/stt/hos_013_vo_v03a/words_fw_small_en.json"
+  },
+  {
+    "source_row_v02": "P5:06_murray_bookshop",
+    "overlay": {
+      "hold_s": 3.5,
+      "kind": "WHEN",
+      "label": "24 NOVEMBER 1859",
+      "sfx": "tick_ink",
+      "timeline_step": "6/7 · 24 Nov 1859 (Origin published)"
+    },
+    "status": "ANCHORED",
+    "word_index": 986,
+    "word": "1859",
+    "onset_s": 416.74,
+    "word_end_s": 418.2,
+    "host_row": "P5:06_murray_bookshop",
+    "offset_in_host_s": 2.5,
+    "transcript": "02_Voiceover/stt/hos_013_vo_v03a/words_fw_small_en.json"
+  },
+  {
+    "source_row_v02": "P5:07_cg_timeline_origin",
+    "overlay": {
+      "detail": "Master timeline (1835 · 1837 · 1838 · 1844 · 1858 · 1859 · 1889) + ~1,250 copies ordered before publication day",
+      "hold_s": 3.6,
+      "kind": "DATA",
+      "label": "1,250 COPIES PRE-SOLD",
+      "scale": "every copy ordered before the book even went on sale",
+      "sfx": "tick_ink"
+    },
+    "status": "ANCHORED",
+    "word_index": 990,
+    "word": "ordered",
+    "onset_s": 419.98,
+    "word_end_s": 420.38,
+    "host_row": "P5:07_cg_timeline_origin",
+    "offset_in_host_s": 1.78,
+    "transcript": "02_Voiceover/stt/hos_013_vo_v03a/words_fw_small_en.json"
+  },
+  {
+    "source_row_v02": "P5:09_arch_darwinism_1889",
+    "overlay": {
+      "credit": "Wallace, Darwinism 1st ed. (Macmillan, 1889, PD)",
+      "hold_s": 3.6,
+      "kind": "ARCHIVE",
+      "label": "DARWINISM · 1889",
+      "sfx": "tick_ink",
+      "timeline_step": "7/7 · 1889 (Wallace's Darwinism)",
+      "when_stamp": "1889"
+    },
+    "status": "ANCHORED",
+    "word_index": 1040,
+    "word": "Darwinism.",
+    "onset_s": 438.86,
+    "word_end_s": 440.12,
+    "host_row": "P5:09_arch_darwinism_1889",
+    "offset_in_host_s": 4.62,
+    "transcript": "02_Voiceover/stt/hos_013_vo_v03a/words_fw_small_en.json"
+  },
+  {
+    "source_row_v02": "P6:02a_jenkin_study",
+    "overlay": {
+      "hold_s": 3.4,
+      "kind": "WHO",
+      "line_1": "Fleeming Jenkin",
+      "line_2": "(1833–1885) — engineer",
+      "sfx": "tick_ink",
+      "when_stamp": "JUNE 1867"
+    },
+    "status": "ANCHORED",
+    "word_index": 1066,
+    "word": "Fleming",
+    "onset_s": 450.2,
+    "word_end_s": 450.72,
+    "host_row": "P6:02a_jenkin_study",
+    "offset_in_host_s": 2.1,
+    "transcript": "02_Voiceover/stt/hos_013_vo_v03a/words_fw_small_en.json"
+  },
+  {
+    "source_row_v02": "P6:02b_paint_pots_mix",
+    "overlay": {
+      "hold_s": 3.5,
+      "kind": "LABEL",
+      "label": "BLENDED AWAY?",
+      "sfx": "tick_ink"
+    },
+    "status": "ANCHORED",
+    "word_index": 1075,
+    "word": "blended",
+    "onset_s": 455.62,
+    "word_end_s": 456.1,
+    "host_row": "P6:02b_paint_pots_mix",
+    "offset_in_host_s": 2.12,
+    "transcript": "02_Voiceover/stt/hos_013_vo_v03a/words_fw_small_en.json"
+  },
+  {
+    "source_row_v02": "P6:03_cg_blending_beaks",
+    "overlay": {
+      "hold_s": 3.6,
+      "kind": "EXPLAINER",
+      "label": "WASHED AWAY BY BLENDING",
+      "sfx": "tick_ink"
+    },
+    "status": "ANCHORED",
+    "word_index": 1107,
+    "word": "wash",
+    "onset_s": 466.64,
+    "word_end_s": 466.92,
+    "host_row": "P6:03_cg_blending_beaks_beat2",
+    "offset_in_host_s": 1.62,
+    "transcript": "02_Voiceover/stt/hos_013_vo_v03a/words_fw_small_en.json"
+  },
+  {
+    "source_row_v02": "P6:04a_mendel_pea_garden",
+    "overlay": {
+      "hold_s": 3.8,
+      "kind": "WHO",
+      "line_1": "Gregor Mendel",
+      "line_2": "(1822–1884) — friar",
+      "sfx": "tick_ink",
+      "when_stamp": "BRNO · 1866"
+    },
+    "status": "ANCHORED",
+    "word_index": 1127,
+    "word": "Gregor",
+    "onset_s": 475.5,
+    "word_end_s": 476.02,
+    "host_row": "P6:04a_mendel_pea_garden",
+    "offset_in_host_s": 4.44,
+    "transcript": "02_Voiceover/stt/hos_013_vo_v03a/words_fw_small_en.json"
+  },
+  {
+    "source_row_v02": "P6:05_beads_not_paint",
+    "overlay": {
+      "hold_s": 3.5,
+      "kind": "LABEL",
+      "label": "WHOLE LIKE BEADS",
+      "sfx": "tick_ink"
+    },
+    "status": "ANCHORED",
+    "word_index": 1144,
+    "word": "whole",
+    "onset_s": 482.88,
+    "word_end_s": 483.22,
+    "host_row": "P6:05_beads_not_paint",
+    "offset_in_host_s": 2.96,
+    "transcript": "02_Voiceover/stt/hos_013_vo_v03a/words_fw_small_en.json"
+  },
+  {
+    "source_row_v02": "P6:06b_spencer_coined",
+    "overlay": {
+      "hold_s": 3.8,
+      "kind": "WHO",
+      "line_1": "Herbert Spencer",
+      "line_2": "(1820–1903) — philosopher",
+      "sfx": "tick_ink",
+      "when_stamp": "1864"
+    },
+    "status": "ANCHORED",
+    "word_index": 1160,
+    "word": "Herbert",
+    "onset_s": 491.74,
+    "word_end_s": 492.12,
+    "host_row": "P6:06b_spencer_coined",
+    "offset_in_host_s": 1.08,
+    "transcript": "02_Voiceover/stt/hos_013_vo_v03a/words_fw_small_en.json"
+  },
+  {
+    "source_row_v02": "P6:07_key_in_lock",
+    "overlay": {
+      "hold_s": 3.5,
+      "kind": "LABEL",
+      "label": "FIT MEANS FITS",
+      "note": "Short B frame 0",
+      "sfx": "tick_ink"
+    },
+    "status": "ANCHORED",
+    "word_index": 1183,
+    "word": "fits",
+    "onset_s": 501.1,
+    "word_end_s": 501.36,
+    "host_row": "P6:07_key_in_lock_beat2",
+    "offset_in_host_s": 1.12,
+    "transcript": "02_Voiceover/stt/hos_013_vo_v03a/words_fw_small_en.json"
+  }
+]

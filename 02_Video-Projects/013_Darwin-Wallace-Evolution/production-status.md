@@ -193,3 +193,7 @@ Internal working cut: `07_Edit-Project/timing_rough_J2498/hos_013_timing_rough_J
 Parked for Chief: resolve sentence-boundary cuts versus picture cadence, scope corrected v03 edit/overlay timings and five missing v02 free renders. Callback source unminted and its requested 4.40 s exceeds its 4.20 s source tail. Existing v01/v02 plans and generation authorization untouched. `TIMING_REPORT_v01.md` names every issue; `COST_OPTIONS_v01.md` offers three free alternatives saving 300 first-take / 777 expected credits if adopted. No Ben-watch submission, upload or schedule action.
 
 Repository verification for the J2498 evidence PR: `check_all.sh` → **ALL CHECKS PASS** (summary pasted in `timing_rough_J2498/VALIDATION_v01.md`). This does not override the failed media timing check.
+
+## J2652 checkpoint — 12 Nov 2026
+
+110-beat v03 scope and 515-second diagnostic rough delivered to NAS; 45 word onset records. `clip_check`: passed=true, errors=[], warnings=[]. Repository check_all.sh: ALL CHECKS PASS. **Overall FIX, not stage PASS**: unsupported phrase cuts, four source-length overruns, short chapter titles and seven cue overlaps remain. £0. v02 and J1310 audio untouched. See `07_Edit-Project/timing_rough_J2652/REVIEW_v03.md`; J2652 is released for continuation, not finished.
