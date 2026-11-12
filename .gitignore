@@ -133,3 +133,6 @@ node_modules/
 *_bearer
 *.cookies.json
 storage_state*.json
+
+# HOS Prisma 7 generated client
+07_Content-Ops/src/generated/prisma/

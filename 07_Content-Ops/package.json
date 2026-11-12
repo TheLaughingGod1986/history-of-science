@@ -36,16 +36,15 @@
     "lint:package": "tsx scripts/package-lint.ts",
     "channel:audit": "tsx --env-file=.env scripts/channel-audit.ts"
   },
-  "prisma": {
-    "seed": "tsx prisma/seed.ts"
-  },
   "dependencies": {
-    "@prisma/client": "^6.19.0",
+    "@prisma/adapter-pg": "7.10.1",
+    "@prisma/client": "7.10.1",
     "date-fns": "^4.4.0",
     "date-fns-tz": "^3.2.0",
+    "dotenv": "17.4.2",
     "next": "^16.4.6",
     "papaparse": "^5.5.4",
-    "prisma": "^6.19.0",
+    "prisma": "7.10.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "uuid": "^14.0.1",
