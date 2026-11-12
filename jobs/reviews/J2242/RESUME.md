@@ -194,3 +194,68 @@ Verification: `/Volumes/MiniWork/scratch/J2242-identity-remux-verify-v01/`.
 Read its exit marker and log first. If it fails with the same unchanged frames,
 investigate mux/demux/decoder state before altering the replacement encoder.
 All final-film assembly, original gates and review work remain outstanding.
+
+
+## Profile-compatibility checkpoint — fifth run, 12 November 2026
+
+The detached identity-remux control finished successfully (exit 0): all 12,923
+unchanged decoded frames, 12,923 video packets and 25,296 audio packets match.
+`IDENTITY_REMUX_CONTROL.json` records the result. No control remains running.
+The original rejected salon mux also decodes with all 12,763 unchanged frames
+matching under `ffmpeg -threads 1`; default decoding still fails on 266 frames.
+`SINGLE_THREAD_DIAGNOSTIC.json` records this diagnostic only. Do not accept the
+old mux by changing the verifier to a single thread.
+
+A compatible High-profile patch resolves this observed default-decoder failure
+in the bounded salon experiment. The old QP0 patch is High 4:4:4 Predictive;
+the source is High. Exact decoder internals are not established. QP0 forces
+x264 to disable B frames even when two are requested; that diagnostic is not a
+new solution. No source or verifier acceptance criteria have been changed.
+
+Encode used for the successful experiment:
+
+```sh
+ffmpeg -nostdin -v error -xerror \
+  -i /Volumes/MiniWork/scratch/J2242-salon-patch-v03/salon_patch.nut \
+  -map 0:v:0 -an -c:v libx264 -preset fast -qp 1 -profile:v high \
+  -pix_fmt yuv420p \
+  -x264-params 'bframes=0:repeat-headers=1:keyint=160:min-keyint=160:scenecut=0' \
+  -fps_mode passthrough -enc_time_base 1/12288 -video_track_timescale 12288 \
+  -n /Volumes/MiniWork/scratch/J2242-salon-high-b0-qp1-v01.mp4
+```
+
+`_j2242_salon_splice.py --patch-encoding high` now permits this near-lossless
+patch only for the existing fully modified 160-frame salon GOP. It checks
+H264 High profile, the verified intermediate, all 160 frame comparisons, and
+minimum per-frame PSNR >=60 dB (measured minimum 62.70 dB). The default remains
+exact lossless comparison. This option does **not** permit lossy changes to
+unchanged boundary frames in another envelope; those still need exact hashes.
+All packet, source-clock and independent unchanged-frame checks stay intact.
+
+Guarded run:
+
+```sh
+/Volumes/MiniWork/scratch/J2242-av-env/bin/python \
+  02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_j2242_salon_splice.py \
+  --patch-encoding high \
+  --encoded-patch /Volumes/MiniWork/scratch/J2242-salon-high-b0-qp1-v01.mp4 \
+  --evidence jobs/reviews/J2242/SOURCE_PREFLIGHT.json \
+  --out-dir /Volumes/MiniWork/scratch/J2242-high-profile-guarded-mux-v01
+```
+
+Its candidate SHA-256 is
+`32868b561a38b31ce4a3796f080179c1c4592a6a78eddf296e821ce2f9d3cbdb`,
+byte-identical to the independently verified diagnostic mux. Evidence:
+`HIGH_PROFILE_MUX.json` and `HIGH_PROFILE_PRESERVATION.json`. Default full
+verification confirms 12,763 unchanged decoded frames and copied video
+packets, all 25,296 audio packets, and all original frame PTS/durations.
+This is preservation evidence only; sync/loudness remain UNMEASURED and visual
+review OUTSTANDING. The changed frames are near-lossless, not bitwise-identical
+to the intermediate. The original master is unchanged.
+
+Next: generalize safely to the remaining source reconstructions and 32 cards,
+SAFE PATH DOWN and letter animation. Envelopes containing unchanged frames
+still need lossless preservation; do not extrapolate the salon-only high-profile
+option to those frames. Complete every original media/package gate and phone
+sheet before J2243/Chief review. No v04 master, final media PASS, UAT, R2,
+YouTube action, spend or generation. No detached work from this run.

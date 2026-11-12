@@ -1,12 +1,15 @@
 """Bounded salon-only packet mux experiment; never a finished v04 master.
 
 Requires PyAV. Copies original packets except the approved 160-frame salon GOP.
-The pre-encoded replacement must be lossless H264 with no B frames and in-band
+The pre-encoded replacement must be H264 with no B frames and in-band
 SPS/PPS. Existing source IDRs must carry their own SPS/PPS to restore the source
 codec after the patch. Independent preservation verification is mandatory.
 """
 import argparse
 import json
+import math
+import subprocess
+import tempfile
 from fractions import Fraction
 from pathlib import Path
 
@@ -15,6 +18,32 @@ from _j2242_source_preflight import nal_types
 from _j2242_salon_patch import pixel_hashes
 
 FIRST, LAST = 2506, 2665
+
+
+def validate_quality_stats(text):
+    """High-profile encoding is allowed only inside this fully modified GOP."""
+    rows = [dict(item.split(':', 1) for item in line.split())
+            for line in text.splitlines() if line.strip()]
+    if len(rows) != 160:
+        raise ValueError('Quality comparison must cover all 160 patch frames')
+    values = [float(row['psnr_avg']) for row in rows]
+    if any(math.isnan(v) or v < 60 for v in values):
+        raise ValueError('High-profile patch is below 60 dB on a frame')
+    return {'compared_frames': 160, 'minimum_frame_psnr_db': min(values),
+            'lossless': False, 'modified_frames_only': [[FIRST, LAST]]}
+
+
+def high_profile_quality(reference, patch):
+    with tempfile.TemporaryDirectory(prefix='j2242-quality-') as tmp:
+        stats = Path(tmp) / 'psnr.txt'
+        subprocess.run(['ffmpeg', '-nostdin', '-v', 'error', '-xerror',
+                        '-i', str(reference), '-i', str(patch),
+                        '-filter_complex',
+                        '[0:v]settb=1/12288,setpts=PTS-STARTPTS[a];'
+                        '[1:v]settb=1/12288,setpts=PTS-STARTPTS[b];'
+                        f'[a][b]psnr=stats_file={stats}',
+                        '-an', '-f', 'null', '-'], check=True)
+        return validate_quality_stats(stats.read_text())
 
 
 def validate_clock(timeline):
@@ -40,6 +69,8 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument('--source', type=Path, default=recipe.DEFAULT_MASTER)
     ap.add_argument('--encoded-patch', type=Path, required=True)
+    ap.add_argument('--patch-encoding', choices=['lossless', 'high'], default='lossless',
+                    help='High permits near-lossless encoding only on the 160 fully modified frames')
     ap.add_argument('--evidence', type=Path, required=True)
     ap.add_argument('--out-dir', type=Path, required=True)
     a = ap.parse_args()
@@ -54,10 +85,19 @@ def main():
     intermediate = json.loads(Path('jobs/reviews/J2242/SALON_PATCH.json').read_text())
     recipe.require_hash(intermediate['path'], intermediate['sha256'])
     expected = pixel_hashes(intermediate['path'])
-    if len(expected) != 160 or pixel_hashes(a.encoded_patch) != expected:
-        raise ValueError('Encoded patch differs from verified salon intermediate')
+    actual = pixel_hashes(a.encoded_patch)
+    if len(expected) != 160 or len(actual) != 160:
+        raise ValueError('Patch must contain 160 decoded frames')
+    quality = {'lossless': True, 'compared_frames': 160}
+    if a.patch_encoding == 'lossless':
+        if actual != expected:
+            raise ValueError('Encoded patch differs from verified salon intermediate')
+    else:
+        quality = high_profile_quality(intermediate['path'], a.encoded_patch)
     patch = av.open(str(a.encoded_patch))
     ps = patch.streams.video[0]
+    if a.patch_encoding == 'high' and ps.codec_context.profile != 'High':
+        raise ValueError('Compatible patch must use H264 High profile')
     if ps.codec_context.name != 'h264' or (ps.width, ps.height) != (1920, 1080):
         raise ValueError('Patch must be 1080p H264')
     if len(ps.codec_context.extradata) < 5 or ps.codec_context.extradata[4] & 3 != 3:
@@ -124,7 +164,7 @@ def main():
         raise ValueError('Encoded patch changed during mux')
     result = {'status': 'UNVERIFIED_SALON_ONLY_EXPERIMENT',
               'candidate': str(candidate), 'candidate_sha256': recipe.sha256_file(candidate),
-              'encoded_patch_sha256': patch_sha, 'source_sha256': recipe.MASTER_SHA,
+              'encoded_patch_sha256': patch_sha, 'patch_quality': quality, 'source_sha256': recipe.MASTER_SHA,
               'replaced_packets': n, 'copied_video_packets': copied,
               'copied_audio_packets': audios, 'pyav_version': av.__version__,
               'output_preservation': 'OUTSTANDING', 'vo_sync': 'UNMEASURED',

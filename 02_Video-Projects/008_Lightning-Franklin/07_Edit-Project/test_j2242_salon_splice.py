@@ -8,6 +8,15 @@ def nal(t):
 
 
 class BoundaryTests(unittest.TestCase):
+    def test_high_profile_quality_requires_every_frame(self):
+        good = '\n'.join(f'n:{i} psnr_avg:62.70' for i in range(160))
+        self.assertEqual(splice.validate_quality_stats(good)['compared_frames'], 160)
+        for bad in (good.replace('62.70', '59.99', 1),
+                    good.replace('62.70', 'nan', 1),
+                    '\n'.join(good.splitlines()[:-1])):
+            with self.assertRaises(ValueError):
+                splice.validate_quality_stats(bad)
+
     def test_requires_parameter_restore_with_idr(self):
         splice.check_headers(nal(7) + nal(8) + nal(5), 4)
         for types in ([5], [7, 5], [8, 5], [7, 8, 1]):
