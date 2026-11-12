@@ -259,3 +259,32 @@ still need lossless preservation; do not extrapolate the salon-only high-profile
 option to those frames. Complete every original media/package gate and phone
 sheet before J2243/Chief review. No v04 master, final media PASS, UAT, R2,
 YouTube action, spend or generation. No detached work from this run.
+
+## Rods intermediate checkpoint — sixth run, 12 November 2026
+
+`_j2242_rods_patch.py` renders the approved rods take 2 f000..f134 into
+`/Volumes/MiniWork/scratch/J2242-rods-patch-v01/rods_patch.nut`, replacing
+master f11358..f11492 only in a future splice. `RODS_PATCH.json` records its
+SHA-256. All 135 decoded YUV420P frame hashes independently match the selected
+scaled source frames. Every PTS and duration maps exactly back to the original
+1/12288 clock (NUT uses 1/49152, ratio 1/4). The renderer pins both the approved
+retake hash and the clock evidence hash before and after work, refuses an
+existing output directory, and emits success only after pixel/clock checks.
+This is a lossless intermediate without audio, not a new master or media PASS.
+
+`test_j2242_rods.py` rejects shifted PTS, changed durations/frame indices,
+rescaled clocks and truncated windows. All 23 J2242 tests pass. Full repository
+check output is `CHECK_ALL_RODS.txt`.
+
+Important for the next window: the points interval f4511..f4670 has at least
+one original duration of 1024 ticks while consecutive PTS increments are 512.
+Do not reuse the uniform-duration rods/salon clock validator or normalize this
+away. Implement and verify the exact source schedule in the packet mux; the
+intermediate alone must not be called proof of final master durations.
+
+Next work remains the points and other defect windows, source reconstruction
+for all 32 captions, SAFE PATH DOWN and letter animation, generalized packet
+mux with exact unchanged boundary hashes, phone sheets, all original media
+and package gates, then J2243/Chief review. No v04 exists. Original masters,
+audio, publication rejection and source evidence are untouched. No spend,
+generation, UAT, R2 or YouTube action. No process from this run remains running.
