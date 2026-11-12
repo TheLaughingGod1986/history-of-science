@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06",
+  "updated": "2026-11-11",
   "updated_by": "codex",
   "board_url": "https://claude.ai/artifact/Hhk519dkbHMzeaZfp3efhc",
   "stages": [
@@ -401,7 +401,7 @@
       "title": "Why Did Franklin Fly a Kite in a Storm?",
       "air": "2026-11-19",
       "ready_by": "2026-11-15",
-      "summary": "J1881 reviewed Franklin six-note recipe: FIX. J2163 repairs PTS preservation, verification and teaching labels before Chief can scope production. All six notes unresolved; J1755 browser delivery hold separate. No new media approved.",
+      "summary": "Historical h35 master/J1297 preserved. Six v03 change notes unresolved. J2163 repairs J1880 with measured PTS planner; J1881 reviews code/evidence and scopes production. Two exact-match assets missing; J1755 delivery/publication rejection separate.",
       "stages": {
         "topic": {
           "status": "done"
@@ -443,11 +443,11 @@
         "picture": {
           "status": "blocked",
           "due": "2026-11-08",
-          "owner": "codex",
+          "owner": "gemini",
           "since": "2026-10-16",
           "underway": false,
-          "note": "J1881_SCOPE_REVIEW.md: recipe FIX, future sync unmeasured; h22/h35 and v03 cf1561c2 preserved. No new media approval; all six Ben notes unresolved.",
-          "waiting": "J2163 recipe repair, then J1881 Chief production scope; J1755 separate delivery hold",
+          "note": "Historical h22 picture lock preserved. Six v03 change notes remain unresolved. J2163 conditional manifest supersedes J1880 recipe; missing glass-tube/hair and church/house/ship-mast assets, exhausted three-candidate searches. No new picture approval.",
+          "waiting": "J1881 scopes two exact-match assets after J2163 repair; no native fallback selected and no generation authorized",
           "steps": [
             112,
             112
@@ -462,11 +462,11 @@
         "edit": {
           "status": "blocked",
           "due": "2026-11-12",
-          "owner": "codex",
-          "since": "2026-11-03T18:54",
+          "owner": "claude",
+          "since": "2026-11-05T00:00:40.142053+00:00",
           "underway": false,
-          "waiting": "J2163 recipe repair, then J1881 Chief production scope; J1755 separate delivery hold",
-          "note": "J1881_SCOPE_REVIEW.md: recipe FIX, future sync unmeasured; h22/h35 and v03 cf1561c2 preserved. No new media approval; all six Ben notes unresolved.",
+          "waiting": "J1881 reviews J2163 repaired input; separately scoped PTS/GOP splicer, master-word alignment and exact-match assets required. J1755 separate delivery hold.",
+          "note": "J2163 code/evidence delivered: master hash/full decoded PTS and four source hashes verified; 11 tests pass. Output frame delta/sync/unchanged-frame/audio identity UNMEASURED. Six v03 notes unresolved; h22/h35/J1297 preserved. No render or new approval.",
           "jobs": [
             "J1297",
             "J1755",
@@ -530,19 +530,20 @@
           "note": "v02 (test B): two search-titled Shorts, 9 Oct"
         },
         "shorts_vo": {
-          "status": "todo",
+          "status": "done",
           "due": "2026-10-08",
-          "owner": "Cursor",
-          "waiting": "after 010 long VO"
+          "owner": "gemini",
+          "note": "J0862/J2279/J2281 PASS (PR #423): Short A v02 (c2fd407d, 25.32 s, hook 2.800 s) + Short B v04 (0c9c4c6f MP3 / a6666fd2 WAV, 25.48 s w/ tail, hook 2.820 s) directly auditioned and vo_check_py312 PASS. J2171 assembles Shorts A/B.",
+          "underway": false
         },
         "picture": {
           "status": "doing",
           "due": "2026-11-15",
-          "owner": "Cursor (J2033; Codex/Gemini fallback)",
-          "note": "J1237 tranche1 PASS; all57 original Flow hashes reverified local/NAS. 70/90 recorded rows unchanged. J2033 owns remaining20 Quality rows under J2026 cap6000/max3 takes each/floor3000; J2034 independent picture review. Generated is not approved.",
-          "since": "2026-10-15",
+          "owner": "Grok (J2632 revised sheet and timing ruling)",
+          "note": "J1237 tranche1 PASS; all57 original Flow hashes reverified local/NAS. 70/90 recorded rows unchanged. J2033 owns remaining20 Quality rows under J2026 cap6000/max3 takes each/floor3000; J2034 independent picture review. Generated is not approved. J2632: revised candidate has179 unique30fps frames,21 drawn head frames and two open rings. Parent out104 evidence supplied.0.175s parent/head frame-rate mismatch flagged; not KEEP. J2631 already KEEP. Approved count unchanged.",
+          "since": "2026-11-11",
           "underway": false,
-          "waiting": "J2033 ready after J2026 handoff completes; worker not yet claimed. Fresh Flow credit/price/writer-lock gate before generation.",
+          "waiting": "Grok ruling on the0.175s timing mismatch and revised J2632 sheets on PR543; no splice. Other picture review requirements remain.",
           "steps": [
             70,
             90
@@ -607,10 +608,11 @@
           "note": "v02 (test B): two search-titled Shorts, 9 Oct"
         },
         "shorts_vo": {
-          "status": "todo",
+          "status": "done",
           "due": "2026-10-08",
-          "owner": "Cursor",
-          "waiting": "after 010 long VO"
+          "owner": "gemini",
+          "note": "J0862/J2279/J2281 PASS (PR #423): Short A v02 (68d88b5b, 23.289 s, Option A1 hook 2.849 s) + Short C v02 (20432ecd, 23.560 s, hook 1.780 s) vo_check_py312 PASS. J2172 waits on J2271 12-plate production/review chain.",
+          "underway": false
         },
         "picture": {
           "status": "blocked",
@@ -644,7 +646,7 @@
       "title": "Anesthesia: The Day Surgery Stopped Hurting",
       "air": "2026-12-10",
       "ready_by": "2026-12-06",
-      "summary": "Locked for Thu 10 Dec (J2231; first in jobs/WIP.json next_hos). Neighbour gate PASS (6 education >=1M incl. TED-Ed 19.73M & 2.66M). Script v02 (91.1 PASS), Gemini facts (J0198) and Claude primary-source quote check (J0224) done; Shorts scripts v02 + upload package scaffold + long VO queued (J2239).",
+      "summary": "Locked for Thu 10 Dec (J2231). Script v02, facts and quote check done. Long VO hos_011_vo_v01 (532.72 s, five chapters, sha256 d873f1d0…) locked after J2286 KEEP listening review (recorded in VO_STATUS.md, J2475). Picture plan v02 (93 rows across 535.30 s: 66 mint = 66 Q + 0 F = 6,600 Flow credits try-1 / 17,094 expected + 27 free £0 rows; 0 real-person names in Flow prompts) built on words.srt per Chief ruling #6786715647 and parked for Chief's price pass (J2475).",
       "stages": {
         "topic": {
           "status": "done",
@@ -662,13 +664,19 @@
           "status": "todo",
           "due": "2026-11-12",
           "owner": "Claude",
-          "note": "PRE_BUILD_VIDIQ_AUDIT.md + neighbour/search evidence saved; manifest + description queued (J2239)"
+          "note": "PRE_BUILD_VIDIQ_AUDIT.md + neighbour/search evidence saved; manifest + description chapter times updated to locked VO (J2239 / J2475)"
         },
         "vo": {
-          "status": "todo",
+          "status": "done",
           "due": "2026-11-15",
           "owner": "Cursor",
-          "waiting": "after J2239 package scaffold + Shorts scripts v02"
+          "note": "Locked hos_011_vo_v01 (532.72 s, five chapters, Ben Orbit Narrator eleven_v3; WAV sha256 d873f1d0…, MP3 sha256 9fdd84d5…). J2286 listening review of all five chapters: KEEP, no pickups, no re-recording; the two 1.5 s pauses in Across the Ocean sit inside a held beat and stay. Full-file vo_check PASS, 0 word fails. Acting Chief closed J2245 on 10 Nov; lock recorded in VO_STATUS.md (J2475).",
+          "steps": [
+            5,
+            5
+          ],
+          "steps_unit": "chapters accepted",
+          "underway": false
         },
         "shorts_scripts": {
           "status": "todo",
@@ -685,7 +693,9 @@
         "picture": {
           "status": "todo",
           "due": "2026-11-29",
-          "owner": "Cursor"
+          "owner": "Cursor",
+          "note": "Shot list & picture plan v02 built on words.srt per Chief ruling #6786715647 (J2475): 93 rows (535.30 s), 66 mint (66 Q + 0 F = 6,600 try-1 / 17,094 expected Flow credits; 0 real-person names in Flow prompts) + 27 free £0 rows (13 CG + 13 ARCH + 1 REUSE). HOS-2026-11-E2 PASS. generation_authorized: false; parked for Chief price pass.",
+          "waiting": "Chief price pass on J2475 v02 (6,600 Flow credits try-1 / 17,094 expected)"
         },
         "edit": {
           "status": "todo",
@@ -702,6 +712,51 @@
         "scheduled": {
           "status": "todo",
           "due": "2026-12-07"
+        }
+      }
+    },
+    {
+      "id": "012",
+      "title": "Genetics: The Monk Who Counted 28,000 Pea Plants",
+      "air": "2026-12-24",
+      "ready_by": "2026-12-20",
+      "summary": "Planned for Thu 24 Dec (J2328 / jobs/WIP.json next_hos #2). Topic prep and draft script master v01 live under ideas/012_Mendel-Pea-Plants; not entered into active WIP. Go/no-go package prepared on HOS PR #453 (not yet on main).",
+      "stages": {
+        "topic": {
+          "status": "todo"
+        },
+        "script": {
+          "status": "todo"
+        },
+        "facts": {
+          "status": "todo"
+        },
+        "package": {
+          "status": "todo"
+        },
+        "vo": {
+          "status": "todo"
+        },
+        "shorts_scripts": {
+          "status": "todo"
+        },
+        "shorts_vo": {
+          "status": "todo"
+        },
+        "picture": {
+          "status": "todo"
+        },
+        "edit": {
+          "status": "todo"
+        },
+        "thumbnails": {
+          "status": "todo"
+        },
+        "ben_ok": {
+          "status": "todo"
+        },
+        "scheduled": {
+          "status": "todo"
         }
       }
     },
@@ -775,6 +830,233 @@
         "scheduled": {
           "status": "todo",
           "due": "2026-12-14"
+        }
+      }
+    },
+    {
+      "id": "014",
+      "title": "Extinction: The 12-Year-Old Who Dug Up a Sea Dragon",
+      "air": "2026-12-31",
+      "ready_by": "2026-12-27",
+      "summary": "Planned for Thu 31 Dec (J2328 / jobs/WIP.json next_hos #3). Topic prep and draft script master v01 live under ideas/014_Anning-Fossils-Extinction; not entered into active WIP. Go/no-go package prepared on HOS PR #453 (not yet on main).",
+      "stages": {
+        "topic": {
+          "status": "todo"
+        },
+        "script": {
+          "status": "todo"
+        },
+        "facts": {
+          "status": "todo"
+        },
+        "package": {
+          "status": "todo"
+        },
+        "vo": {
+          "status": "todo"
+        },
+        "shorts_scripts": {
+          "status": "todo"
+        },
+        "shorts_vo": {
+          "status": "todo"
+        },
+        "picture": {
+          "status": "todo"
+        },
+        "edit": {
+          "status": "todo"
+        },
+        "thumbnails": {
+          "status": "todo"
+        },
+        "ben_ok": {
+          "status": "todo"
+        },
+        "scheduled": {
+          "status": "todo"
+        }
+      }
+    },
+    {
+      "id": "015",
+      "title": "Cells: The Slice of Cork That Changed Biology",
+      "air": "2027-01-07",
+      "ready_by": "2027-01-03",
+      "summary": "On the next_hos waiting line after 014 (jobs/WIP.json). Draft script master v01 under ideas/015_Hooke-Cell-Theory; topic prepared, not entered into active WIP. Title from hooke_script_master_v01.md.",
+      "stages": {
+        "topic": {
+          "status": "todo"
+        },
+        "script": {
+          "status": "todo"
+        },
+        "facts": {
+          "status": "todo"
+        },
+        "package": {
+          "status": "todo"
+        },
+        "vo": {
+          "status": "todo"
+        },
+        "shorts_scripts": {
+          "status": "todo"
+        },
+        "shorts_vo": {
+          "status": "todo"
+        },
+        "picture": {
+          "status": "todo"
+        },
+        "edit": {
+          "status": "todo"
+        },
+        "thumbnails": {
+          "status": "todo"
+        },
+        "ben_ok": {
+          "status": "todo"
+        },
+        "scheduled": {
+          "status": "todo"
+        }
+      }
+    },
+    {
+      "id": "018",
+      "title": "Infrared: The Thermometer Experiment That Found Invisible Light",
+      "air": "2027-01-14",
+      "ready_by": "2027-01-10",
+      "summary": "On the next_hos waiting line after 015 (jobs/WIP.json). Draft script master v01 under ideas/018_Herschel-Ritter-Invisible-Light; topic prepared, not entered into active WIP. Title from herschel_script_master_v01.md.",
+      "stages": {
+        "topic": {
+          "status": "todo"
+        },
+        "script": {
+          "status": "todo"
+        },
+        "facts": {
+          "status": "todo"
+        },
+        "package": {
+          "status": "todo"
+        },
+        "vo": {
+          "status": "todo"
+        },
+        "shorts_scripts": {
+          "status": "todo"
+        },
+        "shorts_vo": {
+          "status": "todo"
+        },
+        "picture": {
+          "status": "todo"
+        },
+        "edit": {
+          "status": "todo"
+        },
+        "thumbnails": {
+          "status": "todo"
+        },
+        "ben_ok": {
+          "status": "todo"
+        },
+        "scheduled": {
+          "status": "todo"
+        }
+      }
+    },
+    {
+      "id": "100",
+      "title": "How Do Migrating Birds See Earth's Magnetic Field?",
+      "air": "2027-01-21",
+      "ready_by": "2027-01-17",
+      "summary": "On the next_hos waiting line after 097 (jobs/WIP.json; added in J2411, Rule-E GO 94/100 in J2473). Topic brief + §2 package in 02_Video-Projects/100_Gilbert-Wiltschko-Mouritsen-Bird-Magnetic-Compass/; neighbour gate PASS (13 education >=1M incl. TED-Ed 9.21M, Royal Institution 1.59M & TED 1.11M Jim Al-Khalili), Rule 26 search-led phrase ('how do birds navigate') verified, and public search evidence saved. Waits in next_hos under Rule G for an active HOS WIP slot.",
+      "stages": {
+        "topic": {
+          "status": "done",
+          "note": "J2411 + J2473 Rule-E GO (94/100); pre-cleared in next_hos under Rule G"
+        },
+        "script": {
+          "status": "todo"
+        },
+        "facts": {
+          "status": "todo"
+        },
+        "package": {
+          "status": "todo"
+        },
+        "vo": {
+          "status": "todo"
+        },
+        "shorts_scripts": {
+          "status": "todo"
+        },
+        "shorts_vo": {
+          "status": "todo"
+        },
+        "picture": {
+          "status": "todo"
+        },
+        "edit": {
+          "status": "todo"
+        },
+        "thumbnails": {
+          "status": "todo"
+        },
+        "ben_ok": {
+          "status": "todo"
+        },
+        "scheduled": {
+          "status": "todo"
+        }
+      }
+    },
+    {
+      "id": "101",
+      "title": "How Do Deep Sea Vents Feed Life Without Sunlight?",
+      "air": "2027-01-28",
+      "ready_by": "2027-01-24",
+      "summary": "On the next_hos waiting line after 100 (jobs/WIP.json; added in J2411, Rule-E GO 95/100 in J2473). Topic brief + §2 package in 02_Video-Projects/101_Corliss-Ballard-Cavanaugh-Deep-Sea-Hydrothermal-Vents/; neighbour gate PASS (3 education >=1M: Kurzgesagt 25.80M, TED 1.55M, TED-Ed 1.16M), Rule 26 search-led phrases ('deep sea hydrothermal vents', 'deep sea vents') verified, and public search evidence saved (all 3 core queries autocomplete yes). Waits in next_hos under Rule G for an active HOS WIP slot.",
+      "stages": {
+        "topic": {
+          "status": "done",
+          "note": "J2411 + J2473 Rule-E GO (95/100); pre-cleared in next_hos under Rule G"
+        },
+        "script": {
+          "status": "todo"
+        },
+        "facts": {
+          "status": "todo"
+        },
+        "package": {
+          "status": "todo"
+        },
+        "vo": {
+          "status": "todo"
+        },
+        "shorts_scripts": {
+          "status": "todo"
+        },
+        "shorts_vo": {
+          "status": "todo"
+        },
+        "picture": {
+          "status": "todo"
+        },
+        "edit": {
+          "status": "todo"
+        },
+        "thumbnails": {
+          "status": "todo"
+        },
+        "ben_ok": {
+          "status": "todo"
+        },
+        "scheduled": {
+          "status": "todo"
         }
       }
     }

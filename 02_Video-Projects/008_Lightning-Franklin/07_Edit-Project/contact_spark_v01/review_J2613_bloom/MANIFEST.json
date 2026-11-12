@@ -1,0 +1,92 @@
+{
+  "job": "J2613",
+  "preview_only": true,
+  "source": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part02/j2241/02_salon_spark_j2241_t4.mp4",
+  "source_sha256": "82eb0d10c57a9ddfabd10aed92d158be726ad57f987d0c35e7ecdd7422993ad5",
+  "source_size": [
+    1280,
+    720
+  ],
+  "delivery_size": [
+    1920,
+    1080
+  ],
+  "fps": 24,
+  "extracted_frames": [
+    29,
+    30,
+    31
+  ],
+  "allowed_source_frames_inclusive": [
+    0,
+    60
+  ],
+  "placement_job": "J2592",
+  "video_take_modified": false,
+  "rod_720": [
+    630,
+    222
+  ],
+  "knuckle_720": [
+    622,
+    227
+  ],
+  "rod_1080": [
+    945.0,
+    333.0
+  ],
+  "knuckle_1080": [
+    933.0,
+    340.5
+  ],
+  "proposed_overlay_frames": [
+    29,
+    30,
+    31
+  ],
+  "timing_note": "Desk 6797257524: the flash runs f029-f031. f029 is a 25% pre-glow with no streak. f030 is the peak. f031 is the half-strength streak plus half bloom. Nothing past f060.",
+  "size_revision": "Desk 6797257524: core stays about 3.8px FWHM. f030 bloom is warm white, peak alpha 190, radius 60px at 1080, centred on the gap. f031 bloom is half. f029 bloom is 25%, no core. The streak lower end stops at the skin edge (along < 0). Phone PASS is the untouched f029 source beside f030 at 390px, 1:1.",
+  "bloom": {
+    "peak_alpha": 190.0,
+    "radius_px_at_1080": 60.0,
+    "f029": 0.25,
+    "f030": 1.0,
+    "f031": 0.5
+  },
+  "phone_gap_max_delta": 150,
+  "phone_gap_mean_delta": 16.37,
+  "checks": {
+    "source_hash_matches": true,
+    "only_frames_29_30_31_extracted": true,
+    "f029_source_saved": true,
+    "f029_preglow_changes_frame": true,
+    "phone_pair_bare_is_390_times_two": true,
+    "phone_gap_max_delta": 150
+  },
+  "files": {
+    "design_four_phases_4x.png": "0d20fbf1d2427b7cac0bf6fcace2a8405a061b79884c5ac4ea487d4cf78b2cf4",
+    "overlay_f029.png": "8e50e94ff8f7a3d5f93cacbf4b1678c3d7c538e0bb2e99e730958135ec806edb",
+    "overlay_f030.png": "56e1b5d976695a91e9c953bec08443915605b417db71f4ab4c67047e2a030614",
+    "overlay_f031.png": "41d6156f9f2aaab1da9e5d26f8c6787c264fb67ee7049a7a526c5fe54507c54e",
+    "review_crop_4x.png": "0eefdf08f9db8f8ee93984fd9988fe94d3be13338f6bf62e324c5562fdc42a1e",
+    "review_f029_1080.png": "4d282892a3be350e904932f3defae178e96909b75fb6c20944d67cc2008897b7",
+    "review_f029_720.png": "4f0ad431065fc67802f9c35ae77670d6609422cafcab85bf11b5ed4e36268852",
+    "review_f029_phone390.png": "23dbbeefc47862803e9d431cfd4e0726da2f2ba1d1fb811b9f62fc6f12f92d77",
+    "review_f029_source_1080.png": "96ee8cf6db8087d4fa97801ac62f2fcab45ee514c717df646baa0b918b2aab2e",
+    "review_f029_source_phone390.png": "621bf0f859c27cb78e710d9c55990b4de1254887cb8df68e67e15fb9691f6264",
+    "review_f030_1080.png": "804cf3bbc67a8baef025f13ab5ca7338577ffdc1615694b257d4e2b63181135d",
+    "review_f030_720.png": "6b496de3ff8f98265c13d54b76664bcad6f6a7544338bc3e77a7f31e0bedd7d2",
+    "review_f030_phone390.png": "cb2ad1e500e7b2a64cf0d5da9740445c05778e88875539f34bbc6572bb8474fa",
+    "review_f031_1080.png": "af146dc60af9fe2d0ab2be1301136c943c847ab63441e5f351246311f184ad45",
+    "review_f031_720.png": "54c92934056f56e86efa6723f7468e64fa6cf2abafed2d23c391ee5e7b1b25e5",
+    "review_f031_phone390.png": "57df54e3a36aa372cf5e2ddc2a0a6b18ab7cb053b5633d1826b718a7731bd12c",
+    "review_phone390_gap_nearest.png": "d843d24a573d289d0a7e7006c66aa84366c9bd2e46e4b7c0a19350ff29150541",
+    "review_phone390_pair_1to1.png": "4ac9066e0948873b54fbecd361d0c87fc0fa875e98670b0470f335b4a445ea17",
+    "review_phone390_pair_bare.png": "89c78487189103b7ac17835baecc4c683420c9e28c76f3d28eda8a5134e49e9f",
+    "review_phone390_sheet.jpg": "60271ad93827e2c186b8a9460615b673c4f7c22cf4575ea2a5577e51d9c11377",
+    "review_sheet_1080.jpg": "ff7f0a9fd2ddce647a35d1330feb5d7fbd5ff2807a77dbad8c86350cc019bda7",
+    "source_01.png": "5d9c8104dfa8c1f76e9d55e542a4cc29a035ed067423271ed60c6aecd9712837",
+    "source_02.png": "af5f578a85a86f9c4af36f399f831283aca613d92763971a68d5a1492dcbb128",
+    "source_03.png": "a1aaf7df1aefd01414f18b476dcd23d7ccf66feb0556790451c3bb2e0d785bbf"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "job": "J2592",
+  "source": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part02/j2241/02_salon_spark_j2241_t4.mp4",
+  "source_sha256": "82eb0d10c57a9ddfabd10aed92d158be726ad57f987d0c35e7ecdd7422993ad5",
+  "renderer_revision": "84a974b1",
+  "renderer_sha256": "9ce50ddbd5f70b6a3a97b520ef91ea7bc25fc0b8fdc8d693f354f6ec461dabf4",
+  "approval_comments": [
+    6797825254,
+    6797878286
+  ],
+  "source_frames_inclusive": [
+    0,
+    60
+  ],
+  "fps": 24,
+  "frame_count": 61,
+  "duration_s": 2.5416666666666665,
+  "contact_frame": 30,
+  "contact_time_s": 1.25,
+  "rod_1080": [
+    945.0,
+    333.0
+  ],
+  "knuckle_1080": [
+    933.0,
+    340.5
+  ],
+  "rod_720": [
+    630,
+    222
+  ],
+  "knuckle_720": [
+    622,
+    227
+  ],
+  "overlay_frames": [
+    29,
+    30,
+    31
+  ],
+  "overlay_png_sha256": {
+    "29": "8e50e94ff8f7a3d5f93cacbf4b1678c3d7c538e0bb2e99e730958135ec806edb",
+    "30": "56e1b5d976695a91e9c953bec08443915605b417db71f4ab4c67047e2a030614",
+    "31": "41d6156f9f2aaab1da9e5d26f8c6787c264fb67ee7049a7a526c5fe54507c54e"
+  },
+  "files": {
+    "02_salon_spark_j2241_t4_J2592_v01.mp4": "1dd1c555e26658cfe019f68502be7949866a1913b6ad012bc0659ee202d6e704",
+    "spark_J2592_f029_f031.mov": "4cac55f7f632661037718b5d4a47908bcf2cca96ad99acb2dff0c9391e21d3d4",
+    "phone390_two_loops.mp4": "5ddedcff518a43ee248bab88c76e7c9be48ea1f5c22bb15221b4de0a71e16bd5",
+    "J2592_review_sheet.jpg": "25929f996b729134badcf1a6c1eb88dbd68bab3ba33382054544f11e7e1aa4dd"
+  },
+  "checks": {
+    "source_unchanged": true,
+    "full_decode": true,
+    "no_frame_after_f060": true,
+    "only_three_preencode_frames_changed": true
+  },
+  "handoff": "J2593: judge actual moving phone390_two_loops.mp4 at normal speed, at least two loops; no worker motion or audio approval. No audio added, final SFX/mix remains assembly work."
+}

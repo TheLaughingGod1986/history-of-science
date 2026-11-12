@@ -1,0 +1,28 @@
+{
+  "file": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/10_Shorts/vo_v02/hos_010_short_A_v02.mp3",
+  "part": null,
+  "fails": [],
+  "warns": [
+    "replace at ~0:05.58: script 'italy about a centimetre thick below it' / heard 'italy about a centimeter thick below it' — sounds alike (likely the transcriber); listen"
+  ],
+  "duration_s": 22.72,
+  "duration": "0:22.72",
+  "mean_db": -22.6,
+  "peak_db": -4.3,
+  "pauses_over_1s": [],
+  "asr": "faster-whisper small.en",
+  "script_words": 58,
+  "heard_words": 58,
+  "wpm": 158,
+  "word_diffs": [
+    {
+      "at": "0:05.58",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "italy about a centimetre thick below it",
+      "heard": "italy about a centimeter thick below it"
+    }
+  ],
+  "first_minute": {},
+  "verdict": "PASS"
+}

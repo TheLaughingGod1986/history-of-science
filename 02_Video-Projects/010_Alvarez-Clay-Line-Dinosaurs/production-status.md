@@ -80,3 +80,59 @@ PASS  02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/11_Upload-Package/PACKAG
    warn  [title.length] T&C title: "How a 1-Centimetre Line of Clay Solved What Killed the Dinosaurs" is 64 chars (aim ≤ 60)
    warn  [captions] no captionsFile (captions from the script)
 ```
+
+
+# J0862 single-take result — 5 Nov 2026
+
+Worker: codex. No final approval. J1894 scope executed once; three accepted v02 takes remain unchanged.
+
+009 B v03: exact review text is 316 characters, 57 whitespace words (review claimed 311). House client, Ben Orbit Narrator, eleven_v3, unchanged settings. Live balance 97,352 / 121,114 before and after (counter lag); 316 submitted characters conservatively logged. No further take authorized or made.
+
+vo_check_py312.sh: PASS, 23.68 s, mean -24.2 dB, peak -4.3 dB, 147 wpm; homophone warning an apple's / and apples requires Ben's final listen. No audio perception claimed.
+
+Hook FAIL: Scribe ends fall at 3.680 s. The scoped 0.150 s trim plus maximum 1.06 speed yields 3.330 s, over 2.850 s. Total with 1 s tail would be 24.680 s. J1894's predicted token timings are not measurements of this new take. No larger gap surgery, second take, script rewrite or timing waiver performed. Chief must scope the next repair.
+
+Media preserved in the HOS checkout, 009/10_Shorts/vo_v02/hos_009_short_B_v03.{mp3,wav}; TAKE and VO_CHECK records accompany this report. All old v02 files preserved. 010 A retains J1004 Option A1. Downstream J2171 remains blocked on this hook; no film stage approved. Nothing uploaded or published.
+
+
+## J0862 v04 & J2279 audio-capable splice repair — 6 November 2026
+
+Codex covering (`cb18632d` pickup) + Gemini covering (`J2279` direct `audio_input` audition and zero-spend splice/tail-fade repair). `J2195` scoped one opening-only pickup for `009 Short B`; recorded once with Ben Orbit Narrator, `eleven_v3`, `speed=1.04` (`81` actual chars logged; `93,478 / 121,114` ElevenLabs credits remaining; `0` additional chars generated in `J2279`).
+
+Three retained takes are untouched and PASS `vo_check_py312.sh`: `009 A v02`, `010 A v02` (`J1004` Option A1 retained: `hook_end_s = 2.849 s <= 2.850 s`, `23.289 s` total), and `010 C v02` (`hook_end_s = 1.780 s <= 2.850 s`, `23.560 s` total).
+
+In `J2279`, `gemini` (`audio_input` verified) directly auditioned `009 Short B v04` (`hos_009_short_B_v04.{wav,mp3}`), confirmed zero spoken repeat at `19.74 s` or `24.14 s` (Whisper `Seg 8 [24.14->24.32]` was a `no_speech_prob=0.986/0.988` post-word breath hallucination shifted to `0:19.74` by 9 dropped cardinal numbers in `norm()`), and repaired the `cb18632d` splice (`open_v04[0.100:0.900]+[0.960:6.640]` `6.480 s` + `v03[5.680:23.680]` `18.000 s` with `afade=t=out:st=23.480:d=0.060`), restoring the full `5.940–6.020 s` `"Isaac"` onset while keeping identical `+0.800 s` word offsets, `hook_end_s = 2.820 s`, `24.480 s` VO (`25.480 s` with `1.000 s` loop tail), and 8 cuts. Both `hos_009_short_B_v04.mp3` (`0c9c4c6ffdb1337dc11acaf57af909f8d8be91d77210bca2e13af80715b87498`) and `hos_009_short_B_v04.wav` (`a6666fd27c9a90e781369ea07e4888d87a2d5edb1624a0090ae98fa39504686b`) now PASS unmodified `vo_check_py312.sh` with `0` fails and `0` warnings.
+
+`check_all.sh 009`: ALL CHECKS PASS. `check_all.sh 010`: ALL CHECKS PASS.
+- **Elected Chief PASS (`J2281` / `J0862`, `gemini`, 7 Nov 2026):** Condition for `J0862` verified satisfied (`J2279` complete at `fc1a23f3`; direct `audio_input` audition and `vo_check_py312.sh` PASS verified across all four `009` + `010` Shorts VO takes; Option A1 retained for `010 Short A` `hos_010_short_A_v02.mp3` `68d88b5b5883f2376bcec29c26d77efea7634d5c7705693f41202ca587b927fb` and `010 Short C` `hos_010_short_C_v02.mp3` `20432ecd645b28e9fdc051578a284cb2845bd09f3040170b192089b256055b87`). `009` and `010` `shorts_vo` marked `done` in `PIPELINE.json`; HOS PR #423 approved and merged; `J0862` and `J2281` closed `done` (`J2172` remains gated on `J2271` 12-plate production/review chain).
+
+## 10 Nov 2026 — J2268: Tested twelve-plate Flow adapter without generation (£0, 0 Flow credits, Gemini covering)
+
+- **Authority & Scope:** Queue job `J2268` (`ref: J2267`, `after: J2200`). Code + offline regression tests only; **£0 and 0 Flow credits spent**, **0 Flow submissions**, **0 Create clicks**, **0 NAS writes**, and `generation_authorized=false` retained in `10_Shorts/TWELVE_PLATE_SCOPE_J2267.json` (`sha256: 5bcfc162af2c87fd6ae9984377d6b54efe76f50e99a493fd8df9f3ae4ecf827f`). `J2033` and `J2200` states/holds preserved. Parked for elected-Chief system PASS before `J2269` preflight; `PIPELINE.json` not advanced (parked review job).
+- **Deliverables:**
+  1. `07_Edit-Project/_mint_flow_twelve_plates_j2268.py`: dedicated HOS 010 twelve-plate Flow adapter built on the `J2200` shared Flow accounting foundation (`SharedFlowAccounting` in `~/_desk/state/flow/shared`, matching `009`/`013`), consuming **only** `10_Shorts/TWELVE_PLATE_SCOPE_J2267.json` (10 shared long + 2 Shorts-only `Veo 3.1 - Quality` parents across `3` batches `5 + 5 + 2`), never importing or invoking `_mint_flow_tranche1_j0453.py`. Enforces exact 12-row allowlist, SHA-256 verification across scope + `PICTURE_PLAN_v04.json` + `SHORTS_PICTURE_PLAN_v03.json` + `J2267_BUDGET_RECONCILIATION.json` + all 5 part boards + `VO_TAKES_KEEP.json` + accepted Short A/C VOs + `J1004` Option A1 recipe + Explorer reference (`P5:10_explorer_robin` only, never frame 0), studio Ultra account digest check (no email addresses in tracked files), `Veo 3.1 - Quality` `8s` `16:9` `x1` `100`-credit live DOM check (`Nano Banana 2.1` `16:9` `x1` `0` credits for missing start stills, accepting `1376x768`), `3600` total cap, `<= 5` rows / `<= 1500` credits per batch, `3` takes/row max, `3000`-credit headroom floor, anti-double-counting reservation ledger, duplicate-process flock, `cdp_tabs.reuse_page`, `file_state="GENERATED"` / `status="PENDING_REVIEW"` / `keep=False` (never auto-KEEP), and double submit interlock (`HOS010_TWELVE_PLATES_SUBMIT=1` + explicit `J2269` Chief authorization after `J2033` `DONE`).
+  2. `tests/test_hos010_twelve_plate_runner.py`: `15` offline regression tests covering wrong account, wrong model / `x2`, stale price, low balance (`< 3000` floor), reservation double-counting, scope/VO/Option A1 drift, exhausted row/batch/scope caps, duplicate process lock, missing/corrupt Explorer & house style references, guarded `5 + 5 + 2` batch advancement, and 10 Nov live DOM capture (`Ran 15 tests — OK`; full repo suite `Ran 139 tests — OK`, 0 submissions, 0 credits).
+- **Repository check output (`bash 00_Brand/Channel-Setup/tools/check_all.sh 010`):**
+```text
+-- durable desk handoffs: PASS
+-- no media: PASS
+-- status board in sync: PASS
+-- ElevenLabs guard tests: PASS
+-- vo_check word tests: PASS
+-- atempo check tests: PASS
+-- voice speed (atempo <= 1.06): PASS
+-- contract tests: PASS
+-- package-lint: PASS
+-- review:script clay_script_master_v01.md: PASS
+-- gate:episode: PASS
+ALL CHECKS PASS
+```
+
+
+## 11 Nov 2026 — prompts name nobody; the twelve-plate runner closes a refused take (£0, 0 Flow credits, Claude as acting Chief, queue side)
+
+- **Why:** Flow refuses a prompt that names a prominent person (HOS 009, `08_halley_visit_c1`, take 1, 0 credits). Chief ruling for 010: desk #180 comment 6786709657, item 2. Nothing was submitted for 010 before or by this change.
+- **Prompts:** five rows on the part 2 and part 3 boards now describe the person and name nobody: `P2:01_walter_hammer`, `P2:09_wrap_sample`, `P3:01_luis_sample`, `P3:01_luis_sample_c1`, `P3:08_asaro_michel`. Side labels, the name captions added in the edit and the narration are unchanged, so the names still reach the screen. Old and new wording, word for word: `jobs/reviews/J2270/PROMPT_CHANGE_2026-11-11.json`.
+- **Pins:** `10_Shorts/TWELVE_PLATE_SCOPE_J2267.json` is now `sha256: 6fa991211a24a8808c20606b83784a925df0024869d86ca51839435ffea2a413` (the hash in the 10 Nov entry above is the file as it stood then). `generation_authorized=false` is retained. The J2269 authorization must pin this new hash.
+- **Runner:** `_mint_flow_twelve_plates_j2268.py` gains `reconcile-policy-refusal` (closes a refused take as `FAILED_POLICY`, 0 credits, both ledgers append-only, safe to run twice), never reuses a take number the ledger holds, and sets a row aside while its prompt is one Flow has refused. A refused take still uses one of the row's three takes.
+- **Tests:** `tests/test_hos010_twelve_plate_runner.py`, 21 tests, all offline.

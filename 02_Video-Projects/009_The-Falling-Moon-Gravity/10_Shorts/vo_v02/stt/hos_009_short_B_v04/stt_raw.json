@@ -1,0 +1,401 @@
+{
+  "language_code": "eng",
+  "language_probability": 1.0,
+  "text": "In one minute, the moon falls five meters. An apple falls that far in one second Isaac Newton worked out why. The moon is 60 times further from the Earth's center than we are, so the pull on it is 60 times 60 weaker, 3,600 times. And the numbers matched. One pull for apples and moons",
+  "words": [
+    {
+      "text": "In",
+      "start": 0.06,
+      "end": 0.16,
+      "type": "word",
+      "logprob": -1.5497195136049413e-06
+    },
+    {
+      "text": "one",
+      "start": 0.22,
+      "end": 0.38,
+      "type": "word",
+      "logprob": -0.00023100091493688524
+    },
+    {
+      "text": "minute,",
+      "start": 0.46,
+      "end": 0.74,
+      "type": "word",
+      "logprob": -0.0020264105059400856
+    },
+    {
+      "text": "the",
+      "start": 0.92,
+      "end": 1.04,
+      "type": "word",
+      "logprob": -1.4066597032069694e-05
+    },
+    {
+      "text": "moon",
+      "start": 1.1,
+      "end": 1.34,
+      "type": "word",
+      "logprob": -0.023245563730597496
+    },
+    {
+      "text": "falls",
+      "start": 1.46,
+      "end": 1.8,
+      "type": "word",
+      "logprob": -1.4662635294371285e-05
+    },
+    {
+      "text": "five",
+      "start": 1.86,
+      "end": 2.16,
+      "type": "word",
+      "logprob": -5.483612312673358e-06
+    },
+    {
+      "text": "meters.",
+      "start": 2.26,
+      "end": 2.82,
+      "type": "word",
+      "logprob": -0.00037777955835086426
+    },
+    {
+      "text": "An",
+      "start": 3.68,
+      "end": 3.8,
+      "type": "word",
+      "logprob": -2.622600959512056e-06
+    },
+    {
+      "text": "apple",
+      "start": 3.899,
+      "end": 4.26,
+      "type": "word",
+      "logprob": -8.546940807718784e-05
+    },
+    {
+      "text": "falls",
+      "start": 4.4,
+      "end": 4.68,
+      "type": "word",
+      "logprob": -2.622600959512056e-06
+    },
+    {
+      "text": "that",
+      "start": 4.74,
+      "end": 4.94,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": "far",
+      "start": 4.98,
+      "end": 5.24,
+      "type": "word",
+      "logprob": -7.152555099310121e-07
+    },
+    {
+      "text": "in",
+      "start": 5.44,
+      "end": 5.56,
+      "type": "word",
+      "logprob": -5.960462772236497e-07
+    },
+    {
+      "text": "one",
+      "start": 5.64,
+      "end": 5.82,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": "second",
+      "start": 5.96,
+      "end": 6.42,
+      "type": "word",
+      "logprob": -1.4305104514278355e-06
+    },
+    {
+      "text": "Isaac",
+      "start": 6.82,
+      "end": 7.04,
+      "type": "word",
+      "logprob": -9.059865078597795e-06
+    },
+    {
+      "text": "Newton",
+      "start": 7.12,
+      "end": 7.46,
+      "type": "word",
+      "logprob": -4.768370445162873e-07
+    },
+    {
+      "text": "worked",
+      "start": 7.54,
+      "end": 7.78,
+      "type": "word",
+      "logprob": -1.7881377516459906e-06
+    },
+    {
+      "text": "out",
+      "start": 7.86,
+      "end": 8.02,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": "why.",
+      "start": 8.08,
+      "end": 8.42,
+      "type": "word",
+      "logprob": -1.7791488801321975e-05
+    },
+    {
+      "text": "The",
+      "start": 9.52,
+      "end": 9.62,
+      "type": "word",
+      "logprob": -4.0531076592742465e-06
+    },
+    {
+      "text": "moon",
+      "start": 9.68,
+      "end": 10.0,
+      "type": "word",
+      "logprob": -0.00010930894495686516
+    },
+    {
+      "text": "is",
+      "start": 10.04,
+      "end": 10.2,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": "60",
+      "start": 10.46,
+      "end": 10.6,
+      "type": "word",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": "times",
+      "start": 10.64,
+      "end": 10.94,
+      "type": "word",
+      "logprob": -8.344646857949556e-07
+    },
+    {
+      "text": "further",
+      "start": 11.04,
+      "end": 11.44,
+      "type": "word",
+      "logprob": -0.00014208737411536276
+    },
+    {
+      "text": "from",
+      "start": 11.46,
+      "end": 11.6,
+      "type": "word",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": "the",
+      "start": 11.64,
+      "end": 11.7,
+      "type": "word",
+      "logprob": -2.0265558760002023e-06
+    },
+    {
+      "text": "Earth's",
+      "start": 11.78,
+      "end": 12.02,
+      "type": "word",
+      "logprob": -0.014695854061366325
+    },
+    {
+      "text": "center",
+      "start": 12.06,
+      "end": 12.44,
+      "type": "word",
+      "logprob": -8.642300235806033e-05
+    },
+    {
+      "text": "than",
+      "start": 12.48,
+      "end": 12.62,
+      "type": "word",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": "we",
+      "start": 12.68,
+      "end": 12.78,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": "are,",
+      "start": 12.86,
+      "end": 13.0,
+      "type": "word",
+      "logprob": -0.040056128054857254
+    },
+    {
+      "text": "so",
+      "start": 13.5,
+      "end": 13.6,
+      "type": "word",
+      "logprob": -1.4305104514278355e-06
+    },
+    {
+      "text": "the",
+      "start": 13.64,
+      "end": 13.72,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": "pull",
+      "start": 13.78,
+      "end": 13.92,
+      "type": "word",
+      "logprob": -9.536738616588991e-07
+    },
+    {
+      "text": "on",
+      "start": 13.96,
+      "end": 14.06,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": "it",
+      "start": 14.12,
+      "end": 14.32,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": "is",
+      "start": 14.38,
+      "end": 14.5,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": "60",
+      "start": 14.76,
+      "end": 14.92,
+      "type": "word",
+      "logprob": -5.9604641222676946e-08
+    },
+    {
+      "text": "times",
+      "start": 14.96,
+      "end": 15.16,
+      "type": "word",
+      "logprob": -1.1920922133867862e-06
+    },
+    {
+      "text": "60",
+      "start": 15.5,
+      "end": 15.66,
+      "type": "word",
+      "logprob": -5.9604641222676946e-08
+    },
+    {
+      "text": "weaker,",
+      "start": 15.78,
+      "end": 16.2,
+      "type": "word",
+      "logprob": -0.0005188549902024013
+    },
+    {
+      "text": "3,600",
+      "start": 16.96,
+      "end": 18.34,
+      "type": "word",
+      "logprob": -3.8862014321239254e-06
+    },
+    {
+      "text": "times.",
+      "start": 18.4,
+      "end": 18.96,
+      "type": "word",
+      "logprob": -0.09599264462732056
+    },
+    {
+      "text": "And",
+      "start": 19.64,
+      "end": 19.72,
+      "type": "word",
+      "logprob": -1.6569954823353328e-05
+    },
+    {
+      "text": "the",
+      "start": 19.76,
+      "end": 19.84,
+      "type": "word",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": "numbers",
+      "start": 19.88,
+      "end": 20.22,
+      "type": "word",
+      "logprob": -2.0265558760002023e-06
+    },
+    {
+      "text": "matched.",
+      "start": 20.34,
+      "end": 20.82,
+      "type": "word",
+      "logprob": -6.522582293655432e-05
+    },
+    {
+      "text": "One",
+      "start": 21.44,
+      "end": 21.6,
+      "type": "word",
+      "logprob": -1.4424220353248529e-05
+    },
+    {
+      "text": "pull",
+      "start": 21.7,
+      "end": 22.04,
+      "type": "word",
+      "logprob": -0.0017177602276206017
+    },
+    {
+      "text": "for",
+      "start": 22.46,
+      "end": 22.6,
+      "type": "word",
+      "logprob": -3.576278118089249e-07
+    },
+    {
+      "text": "apples",
+      "start": 22.68,
+      "end": 23.22,
+      "type": "word",
+      "logprob": -1.7404405298293568e-05
+    },
+    {
+      "text": "and",
+      "start": 23.62,
+      "end": 23.84,
+      "type": "word",
+      "logprob": -1.2636104656849056e-05
+    },
+    {
+      "text": "moons",
+      "start": 23.96,
+      "end": 24.38,
+      "type": "word",
+      "logprob": -3.4570634852570947e-06
+    }
+  ],
+  "transcription_id": "AwR8vAhk8WjVoLVsfiXf",
+  "audio_duration_secs": 6.64
+}

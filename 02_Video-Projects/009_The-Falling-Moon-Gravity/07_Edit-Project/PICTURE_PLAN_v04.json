@@ -3,6 +3,10 @@
   "written": "2026-10-15",
   "task": "J0335 plate boards v04. No mint. No spend.",
   "from": "part-0N_plates_v03.json via _build_plate_boards_v04.py",
+  "style_refs": [
+    "04_Generated-Clips/_style_refs/04_sunny_window_v01.jpg",
+    "04_Generated-Clips/_style_refs/10_mint_jar_v01.jpg"
+  ],
   "ruling": "Chief FIX on J0333, 15 Oct ~23:10 London, desk #180. Fast-parent continuations match the parent model. The closer stays in tranche 1. Two short Quality parents between \u00a30 code graphics wait in tranche 2.",
   "readings": {
     "flow_credits_left": 23740,

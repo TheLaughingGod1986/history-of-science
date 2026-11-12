@@ -1,18 +1,18 @@
 {
   "part": "05",
-  "title": "Part 05 — The Rod on Every Roof",
+  "title": "Part 05 \u2014 The Rod on Every Roof",
   "film": "008_Lightning-Franklin",
   "working_title": "Why Did Franklin Fly a Kite in a Storm?",
   "mint": false,
-  "house": "J0240 v03 boards by gemini, 15 Oct 2026, resolving J0184 acting-Chief price PASS conditions (a) non-emissive Fast prompts + hero swap P5:07/P3:25, (b) 11 per-row £0 code graphics, (c) measured reuse windows -> priced Fast mints. No mint, no spend; parked for Chief.",
+  "house": "J0240 v03 boards by gemini, 15 Oct 2026, resolving J0184 acting-Chief price PASS conditions (a) non-emissive Fast prompts + hero swap P5:07/P3:25, (b) 11 per-row \u00a30 code graphics, (c) measured reuse windows -> priced Fast mints. No mint, no spend; parked for Chief.",
   "clip_use_s": 7.9,
   "xfade_s": 0.35,
-  "set_language": "Sets A-K as SHOT_LIST_v01.md §Sets; say 'same <place> 1752 set' for continuity; never 'same DNA' in a prompt.",
+  "set_language": "Sets A-K as SHOT_LIST_v01.md \u00a7Sets; say 'same <place> 1752 set' for continuity; never 'same DNA' in a prompt.",
   "continuity_lock": "Every scenery plate matches plate 02's set. Prefer start-frame I2V from the last KEEP plate. Camera moves only; no furniture reset.",
   "explorer_lock": "At most one plate in this part. Exactly one Explorer, on model (01_Character/CHARACTER_BIBLE.md): round gold glasses, teal long coat, finished hair. Attach 01_Character/05_Generation-References/hos-explorer-reference-v01.jpg.",
   "forbidden": "HARD REJECT: Orbit robot; photoreal; Ken Burns or still push; gore; lava drip / molten bead; underside lamp bulb or shade cup; unfinished flat cards; unfinished Explorer hair; DNA helix; readable text or logos in the plate; twin Explorer.",
   "motion_lock": "Real Veo camera and object motion on every plate. No freeze-pad, no loop. If Create fails, stop and log it in production-status.md.",
-  "quality_note": "J0240 v03: 15 Quality hero/cover plates; all 86 Fast prompts non-emissive (no candle flame, spark, bolt or flicker in shot); 11 flat-card/diagram rows converted to £0 code graphics; all 15 v02 reuse rows measured against 8 s source clips and converted to priced Fast mints.",
+  "quality_note": "J0240 v03: 15 Quality hero/cover plates; all 86 Fast prompts non-emissive (no candle flame, spark, bolt or flicker in shot); 11 flat-card/diagram rows converted to \u00a30 code graphics; all 15 v02 reuse rows measured against 8 s source clips and converted to priced Fast mints.",
   "always_fails": [
     "lava drip / molten bead",
     "underside lamp bulb / shade cup",
@@ -182,7 +182,7 @@
       "t": "7:33.31",
       "set": "D",
       "explorer": false,
-      "side_label": "POOR RICHARD · 1753",
+      "side_label": "POOR RICHARD \u00b7 1753",
       "quality": "Fast",
       "engine_reason": "Fast: non-emissive daylight/storm framing.",
       "prompt": "Premium Animistry-class 3D cartoon. An almanac page turned by a hand in window light; no legible words, no drawing. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
@@ -322,7 +322,7 @@
       "explorer": false,
       "side_label": null,
       "quality": "code_graphic",
-      "engine_reason": "J0240 (b): flat-card/diagram row turned into £0 code graphic (own renderer, HOS explainer look).",
+      "engine_reason": "J0240 (b): flat-card/diagram row turned into \u00a30 code graphic (own renderer, HOS explainer look).",
       "use_s": 3.16,
       "vo_land": [
         "It's looking for the easiest path to the ground."
@@ -341,7 +341,7 @@
       "v02_quality": "Fast",
       "code_graphic_spec": {
         "file": "code_graphic_008_p5_08_looking_path.mp4",
-        "renderer": "python-pillow-ffmpeg (house explainer renderer, £0)",
+        "renderer": "python-pillow-ffmpeg (house explainer renderer, \u00a30)",
         "style": "HOS inked stepped-leader diagram composited over moving storm-rooftop plate (alternates with P5:09 full-frame card)",
         "layout_mode": "moving_plate_overlay",
         "background_plate": "P1:16_question_sky (moving storm-clouds-over-roofs plate, graded)",
@@ -365,7 +365,7 @@
       "explorer": false,
       "side_label": null,
       "quality": "code_graphic",
-      "engine_reason": "J0240 (b): flat-card/diagram row turned into £0 code graphic (own renderer, HOS explainer look).",
+      "engine_reason": "J0240 (b): flat-card/diagram row turned into \u00a30 code graphic (own renderer, HOS explainer look).",
       "use_s": 6.86,
       "vo_land": [
         "A wooden roof or a stone steeple is a terrible path, so it bursts into flame or cracks apart."
@@ -384,7 +384,7 @@
       "v02_quality": "Fast",
       "code_graphic_spec": {
         "file": "code_graphic_008_p5_09_wood_vs_metal.mp4",
-        "renderer": "python-pillow-ffmpeg (house explainer renderer, £0)",
+        "renderer": "python-pillow-ffmpeg (house explainer renderer, \u00a30)",
         "style": "HOS cream-on-brown period-paper inked cross-section diagram, Didot italic",
         "layout_mode": "full_frame_period_paper",
         "background_plate": null,
@@ -392,7 +392,7 @@
         "elements": [
           "Inked cross-section of timber roof rafters and stone steeple masonry with jagged fracture lines where current is blocked"
         ],
-        "animation": "Timber roof and stone steeple outlines ink in over 0.0–1.2 s; blocked current path marks resistance points at 1.8 s and radial crack lines draw outward across the masonry through 6.8 s.",
+        "animation": "Timber roof and stone steeple outlines ink in over 0.0\u20131.2 s; blocked current path marks resistance points at 1.8 s and radial crack lines draw outward across the masonry through 6.8 s.",
         "tick_ink_s": [
           0.5,
           1.8
@@ -408,7 +408,7 @@
       "explorer": false,
       "side_label": null,
       "quality": "code_graphic",
-      "engine_reason": "J0240 (b): flat-card/diagram row turned into £0 code graphic (own renderer, HOS explainer look).",
+      "engine_reason": "J0240 (b): flat-card/diagram row turned into \u00a30 code graphic (own renderer, HOS explainer look).",
       "use_s": 2.98,
       "vo_land": [
         "But a metal rod is an easy path."
@@ -427,7 +427,7 @@
       "v02_quality": "Fast",
       "code_graphic_spec": {
         "file": "code_graphic_008_p5_10_metal_easy.mp4",
-        "renderer": "python-pillow-ffmpeg (house explainer renderer, £0)",
+        "renderer": "python-pillow-ffmpeg (house explainer renderer, \u00a30)",
         "style": "HOS inked conductor diagram composited over moving Set H brick-wall rod plate (alternates between P5:09 and P5:11 full-frame cards)",
         "layout_mode": "moving_plate_overlay",
         "background_plate": "P5:06_rod_fitting (moving exterior wall rod plate, graded)",
@@ -435,7 +435,7 @@
         "elements": [
           "Smooth gold-and-white inked current line running unimpeded down the iron rod on the moving brick wall plate"
         ],
-        "animation": "Inked callout bracket marks the iron rod at 0.25 s; a smooth continuous current trace glides straight down the rod from top to bottom over 0.4–2.8 s.",
+        "animation": "Inked callout bracket marks the iron rod at 0.25 s; a smooth continuous current trace glides straight down the rod from top to bottom over 0.4\u20132.8 s.",
         "tick_ink_s": [
           0.25
         ],
@@ -448,9 +448,9 @@
       "t": "8:07.31",
       "set": "J",
       "explorer": false,
-      "side_label": "A SAFE PATH TO THE GROUND",
+      "side_label": null,
       "quality": "code_graphic",
-      "engine_reason": "J0240 (b): flat-card/diagram row turned into £0 code graphic (own renderer, HOS explainer look).",
+      "engine_reason": "J0240 (b): flat-card/diagram row turned into \u00a30 code graphic (own renderer, HOS explainer look).",
       "use_s": 6.98,
       "vo_land": [
         "So the lightning takes the rod, round the outside of the building, and goes harmlessly into the earth."
@@ -469,7 +469,7 @@
       "v02_quality": "Fast",
       "code_graphic_spec": {
         "file": "code_graphic_008_p5_11_safe_path.mp4",
-        "renderer": "python-pillow-ffmpeg (house explainer renderer, £0)",
+        "renderer": "python-pillow-ffmpeg (house explainer renderer, \u00a30)",
         "style": "HOS cream-on-brown period-paper architectural cutaway diagram, Didot italic",
         "layout_mode": "full_frame_period_paper",
         "background_plate": null,
@@ -478,7 +478,7 @@
           "Cutaway elevation of church steeple fitted with pointed iron rod, exterior down-conductor wire, and deep earth stake",
           "Animated current line travelling from rod tip down the outside wall into the ground while interior timber spire stays untouched"
         ],
-        "animation": "Steeple cutaway and exterior iron rod ink in over 0.0–1.3 s; current line traces from rod tip down the outer wall into the earth stake (1.5–6.5 s); label A SAFE PATH TO THE GROUND inks in at 0.6 s and fades out at 4.4 s.",
+        "animation": "Steeple cutaway and exterior iron rod ink in over 0.0\u20131.3 s; current line traces from rod tip down the outer wall into the earth stake (1.5\u20136.5 s); label A SAFE PATH TO THE GROUND inks in at 0.6 s and fades out at 4.4 s.",
         "tick_ink_s": [
           0.6,
           1.5,
@@ -858,7 +858,7 @@
       "id": "22_newton_handoff",
       "t_s": 554.47,
       "t": "9:14.47",
-      "set": "—",
+      "set": "\u2014",
       "explorer": false,
       "side_label": null,
       "quality": "Fast",
@@ -888,7 +888,7 @@
       "id": "22_newton_handoff_c1",
       "t_s": 559.93,
       "t": "9:19.93",
-      "set": "—",
+      "set": "\u2014",
       "explorer": false,
       "side_label": null,
       "added": true,

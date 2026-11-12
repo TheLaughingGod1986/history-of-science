@@ -18,6 +18,7 @@ from __future__ import annotations
 import hashlib
 import importlib.util
 import io
+import json
 import re
 import time
 from pathlib import Path
@@ -29,11 +30,69 @@ v02 = importlib.util.module_from_spec(_spec)
 assert _spec and _spec.loader
 _spec.loader.exec_module(v02)
 
-MEDIA_CLIPS = Path.home() / "YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips"
-STYLE_REFS = [
-    MEDIA_CLIPS / "part04/refs/v01_vertex_stills/04_sunny_window_v01.jpg",
-    MEDIA_CLIPS / "part03/refs/v01_vertex_stills/10_mint_jar_v01.jpg",
-]
+def infer_media_root(dest: Path, media_root: Path | None = None) -> Path:
+    if media_root is not None:
+        return Path(media_root)
+    for candidate in (dest, *dest.parents):
+        if candidate.name == "04_Generated-Clips":
+            return candidate.parent
+    raise RuntimeError(f"cannot infer film media root from {dest}; pass media_root")
+
+
+def infer_clips_root(dest: Path, media_root: Path | None = None) -> Path:
+    root = infer_media_root(dest, media_root)
+    return root if root.name == "04_Generated-Clips" else root / "04_Generated-Clips"
+
+
+def style_refs_from_plan(plan_path: Path, media_root: Path) -> list[Path]:
+    """Load relative style_refs from the film's plan JSON and resolve under media_root."""
+    plan_file = Path(plan_path)
+    if not plan_file.is_file():
+        raise RuntimeError(f"film plan not found: {plan_file}")
+    payload = json.loads(plan_file.read_text())
+    raw_refs = payload.get("style_refs") if isinstance(payload, dict) else None
+    if not isinstance(raw_refs, list) or not raw_refs or not all(isinstance(r, str) and r.strip() for r in raw_refs):
+        raise RuntimeError(f"film plan {plan_file} is missing non-empty style_refs")
+    base = Path(media_root)
+    if base.name == "04_Generated-Clips":
+        base = base.parent
+    resolved: list[Path] = []
+    for raw in raw_refs:
+        rel = Path(raw.strip())
+        if rel.is_absolute():
+            raise RuntimeError(f"plan style_ref must be relative to film media root: {raw!r}")
+        candidate = (base / rel).resolve()
+        if base.resolve() not in candidate.parents:
+            raise RuntimeError(f"plan style_ref escapes film media root: {raw!r}")
+        resolved.append(candidate)
+    return resolved
+
+
+def resolve_style_refs(
+    dest: Path,
+    *,
+    style_refs=None,
+    plan_path: Path | None = None,
+    media_root: Path | None = None,
+) -> list[Path]:
+    if style_refs is not None:
+        base = Path(media_root) if media_root is not None else None
+        if base is not None and base.name == "04_Generated-Clips":
+            base = base.parent
+        refs = [
+            (base / Path(p)).resolve() if base is not None and not Path(p).is_absolute() else Path(p)
+            for p in style_refs
+        ]
+    elif plan_path is not None:
+        refs = style_refs_from_plan(Path(plan_path), infer_media_root(dest, media_root))
+    else:
+        raise RuntimeError("style_refs not configured; pass plan_path or style_refs from the film's plan")
+    if not refs:
+        raise RuntimeError("style_refs list is empty")
+    missing = [str(ref) for ref in refs if not ref.is_file() or ref.stat().st_size == 0]
+    if missing:
+        raise RuntimeError("missing style reference image(s): " + ", ".join(missing))
+    return refs
 
 STYLE_LOCK = (
     "STYLE LOCK from the attached stills: the same premium Animistry-class 3D cartoon "
@@ -117,9 +176,10 @@ def assert_unique_still(dest: Path, refs_root: Path) -> str:
     return digest
 
 
-def _fetch_new_landscape(page, dest: Path, before: set[str]) -> bool:
+def _fetch_new_landscape(page, dest: Path, before: set[str], *, clips_root: Path | None = None) -> bool:
     from PIL import Image
 
+    refs_root = clips_root or infer_clips_root(dest)
     urls = page.evaluate(
         """(beforeList) => {
           const before = new Set(beforeList || []);
@@ -146,7 +206,7 @@ def _fetch_new_landscape(page, dest: Path, before: set[str]) -> bool:
             candidate = dest.with_suffix(".candidate.png")
             im.save(candidate, format="PNG")
             try:
-                assert_unique_still(candidate, MEDIA_CLIPS)
+                assert_unique_still(candidate, refs_root)
             except RuntimeError:
                 candidate.unlink()
                 raise
@@ -266,8 +326,24 @@ def attach_completed_style_ref(page, ref: Path, timeout_s: float = 120) -> bool:
     return False
 
 
-def make_still(page, prompt: str, dest: Path, timeout_s: float = 300) -> Path:
+def make_still(
+    page,
+    prompt: str,
+    dest: Path,
+    timeout_s: float = 300,
+    *,
+    create_guard=None,
+    style_refs=None,
+    plan_path: Path | None = None,
+    media_root: Path | None = None,
+) -> Path:
     """Arm Flow Image 16:9 with the style refs and prompt, Create once, save the new still."""
+    if create_guard is None:
+        raise RuntimeError(
+            "Flow still generation requires an explicit create_guard owning the shared Flow accounting lock (~/_desk/state/flow/shared)"
+        )
+    refs = resolve_style_refs(dest, style_refs=style_refs, plan_path=plan_path, media_root=media_root)
+    clips_root = infer_clips_root(dest, media_root)
     import orbit_flow_veo_ui as flow
 
     if "/project/" not in (page.url or ""):
@@ -281,10 +357,10 @@ def make_still(page, prompt: str, dest: Path, timeout_s: float = 300) -> Path:
         page.wait_for_timeout(500)
     select_image_16x9(page)
     v02.clear_prompt_attachments(page)
-    attached = sum(1 for ref in STYLE_REFS if ref.exists() and attach_completed_style_ref(page, ref))
+    attached = sum(1 for ref in refs if ref.exists() and attach_completed_style_ref(page, ref))
     chips = v02.ingredient_chip_count(page)
     print(f"  style refs attached={attached} chips={chips}", flush=True)
-    if attached != len(STYLE_REFS) or chips < len(STYLE_REFS):
+    if attached != len(refs) or chips < len(refs):
         raise RuntimeError("style refs not attached; refusing Create before upload/selection completes")
     make_still.refs_attached = chips
     box = flow.editor_box(page)
@@ -299,14 +375,12 @@ def make_still(page, prompt: str, dest: Path, timeout_s: float = 300) -> Path:
     before = all_img_srcs(page)
     dest.parent.mkdir(parents=True, exist_ok=True)
     page.screenshot(path=str(dest.with_suffix(".armed.png")))
-    v02.submit_create(page)
-    page.wait_for_timeout(900)
-    flow.confirm_generation_spend(page, timeout_s=12.0)
+    v02.submit_create(page, create_guard=create_guard)
     t0 = time.time()
     while time.time() - t0 < timeout_s:
         page.wait_for_timeout(4000)
         new = all_img_srcs(page) - before
         print(f"  still poll new={len(new)} elapsed={int(time.time() - t0)}s", flush=True)
-        if new and time.time() - t0 > 15 and _fetch_new_landscape(page, dest, before):
+        if new and time.time() - t0 > 15 and _fetch_new_landscape(page, dest, before, clips_root=clips_root):
             return dest
     raise RuntimeError(f"timed out waiting for a new 16:9 still -> {dest}")

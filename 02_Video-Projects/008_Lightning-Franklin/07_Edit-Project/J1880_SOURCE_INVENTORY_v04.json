@@ -1,0 +1,536 @@
+{
+  "schema": "hos.uat_source_inventory.v1",
+  "job_id": "J1880",
+  "parent_intake_job": "J1868",
+  "dependent_chief_scope_job": "J1881",
+  "film": "HOS:008",
+  "project_dir": "02_Video-Projects/008_Lightning-Franklin",
+  "reviewed_version": "v03",
+  "target_new_version": "v04 (rough_v13 -> master_v04)",
+  "prepared_at": "2026-11-04T22:05:00Z",
+  "prepared_by": "gemini",
+  "spend_gbp": 0.0,
+  "flow_credits_spent": 0,
+  "media_rendered_or_modified": false,
+  "capabilities_demonstrated": {
+    "agent": "gemini",
+    "available": [
+      "audio_input",
+      "moving_video_input"
+    ],
+    "evidence": "Direct native perception via read_file on extracted moving video + audio segments (01_00m20s.mp4..06_07m58s.mp4) and candidate clips (01_salon_tube_t1.mp4, 03_audience_shock_t1.mp4, 11_jar_crack_t1.mp4, 21_roofs_golden_t1.mp4, 01_house_rod_t1.mp4) in session 5077e261 at 2026-11-04T22:03:30Z",
+    "uncertainty_note": "All 6 timestamps and candidate clips were inspected in moving video with synchronized audio as well as frame-by-frame packet/PTS diffs against hos_008_master_v03.mp4 (cf1561c2...). Ben's final watch on phone/desktop remains the sole authority to clear UAT after J1881."
+  },
+  "locked_master_v03": {
+    "local_path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_precheck/master_v03/hos_008_master_v03.mp4",
+    "nas_path": "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_desk/008/master_v03/hos_008_master_v03.mp4",
+    "sha256": "cf1561c218bace7bc14ed3d625b0790a457027a90f392262f45ca7172723099b",
+    "bytes": 393139693,
+    "video_packets": 12923,
+    "fps": 24,
+    "video_start_pts_s": 0.125,
+    "video_end_pts_s": 539.583333,
+    "video_duration_s": 539.5,
+    "format_duration_s": 539.626479,
+    "video_stream_md5": "1ab08ec6b7bb7dbb7b44d272710474dd",
+    "locked_picture_source": "hos_008_rough_v12.mp4 (sha256: 02db759e1c4a0fa3fbcf5b19037d8c52527c93750df4d80aa9a6c8e0c9bf7745)",
+    "locked_audio_source": "audio_master_v03.m4a / stem_vo_v03_unshifted.wav + stem_bed_v03.wav + stem_sfx_v03.wav (h35 VO sync lag 0.000 ms, integrated -15.32 LUFS, LRA 3.80 LU, true peak -1.00 dBTP)"
+  },
+  "checks_api_reconciliation": {
+    "checked_at": "2026-11-04T21:29:00Z",
+    "id": "HOS-008",
+    "version": "v03",
+    "status": "change",
+    "reviewedAt": "2026-11-03T16:08:33.439Z",
+    "superseded": false,
+    "j1755_separation": "J1755 / PR #401 browser-first watch delivery and automatic-publication rejection remain separate and untouched."
+  },
+  "missing_footage_search_budget": {
+    "max_minutes_per_input": 20,
+    "max_candidates_per_input": 3,
+    "actual_cumulative_minutes": 9.5,
+    "inputs_searched": [
+      {
+        "note_index": 3,
+        "timestamp": "1:49",
+        "row": "P2:02_salon_spark",
+        "active_minutes": 3.5,
+        "candidates_inspected": 3,
+        "candidates": [
+          {
+            "rank": 1,
+            "file": "02_salon_spark_t1.mp4",
+            "path": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part02/raw/v01/02_salon_spark_t1.mp4",
+            "sha256": "4b61312e9416b68853409b7d67683643934b44cc2d56e48623b8b0c4e8c58a92",
+            "duration_s": 8.0,
+            "safe_window_s": [0.0, 1.125],
+            "verdict": "INSUFFICIENT_SAFE_DURATION",
+            "finding": "Only 0.0-1.125 s (27 frames) is free of floating cotton puffs and white hair extruding out of the open tip of the glass tube (which occurs across 1.5-7.0 s). 1.125 s is too short to cover the 6.6667 s (160-frame) cut."
+          },
+          {
+            "rank": 2,
+            "file": "01_salon_tube_t1.mp4",
+            "path": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part02/raw/v01/01_salon_tube_t1.mp4",
+            "sha256": "d3a0b24c996cec6dbab232856207764792820d0c5cb7f161b9e96bfdaef11a47",
+            "duration_s": 8.0,
+            "safe_window_s": [4.125, 7.875],
+            "verdict": "USABLE_PARTIAL_NATIVE_WINDOW",
+            "finding": "Cut [22] (P2:01_salon_tube) uses 0.0-4.125 s (99 frames). Unused window 4.125-7.875 s (90 frames = 3.75 s) shows clean, physically coherent motion of the lecturer briskly rubbing the clear glass tube with black silk and raising it before the salon guests ('Traveling lecturers rubbed glass tubes with silk'). Requires a 1.12x closer crop reframe (upscale 1.68 <= 2.35) to avoid a jump cut from Cut [22], and only covers the first half of Cut [23]."
+          },
+          {
+            "rank": 3,
+            "file": "03_audience_shock_t1.mp4",
+            "path": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part02/raw/v01/03_audience_shock_t1.mp4",
+            "sha256": "3717c583f074b39c88a7de1cd569fa2160f0e3ff011a3f91d40962a9f9db0916",
+            "duration_s": 8.0,
+            "safe_window_s": [0.0, 5.875],
+            "verdict": "USABLE_PARTIAL_NATIVE_WINDOW_WITH_CAVEAT",
+            "finding": "Cut [24] (P2:03_audience_shock) currently uses only 0.0-2.542 s (trimmed to 2.167 s / 52 frames). In 0.0-3.333 s, a bright spark jumps to the first guest's finger while linked guests jolt and their powdered curls bounce, and 3.333-5.500 s covers Cut [24] ('Audiences paid to feel the shock'). Caveat for Chief J1881: 03_audience_shock_t1.mp4 shows an electrostatic globe machine on the table rather than a close-up of hair lifting toward a rubbed glass tube."
+          }
+        ]
+      },
+      {
+        "note_index": 4,
+        "timestamp": "2:20",
+        "row": "P2:07_foil_jar",
+        "active_minutes": 3.0,
+        "candidates_inspected": 3,
+        "candidates": [
+          {
+            "rank": 1,
+            "file": "07_foil_jar_t1.mp4",
+            "path": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part02/raw/v01/07_foil_jar_t1.mp4",
+            "sha256": "8e28cc24ed747a60f6a305f3f1014a65ead7bde964a682bcb4939c527b59ec11",
+            "duration_s": 8.0,
+            "safe_window_s": [0.0, 3.8333],
+            "verdict": "SAFE_FIRST_HALF_92_FRAMES",
+            "finding": "Frames 0..91 (0.000-3.8333 s, film 132.29-136.08 s) show clean, physically coherent motion of hands pressing thin silver foil smooth around the outside of the glass jar ('It was a glass jar lined with metal foil, and it could store'). Frames 92..175 (3.8333-7.3333 s) contain the AI defect where foil peels off in his left hand, teleports onto the jar rim like a cap, and the jar levitates above his palm."
+          },
+          {
+            "rank": 2,
+            "file": "08_jar_spark_t1.mp4",
+            "path": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part02/raw/v01/08_jar_spark_t1.mp4",
+            "sha256": "6a24bb5487447e000f2041833f9ef8ef575f678a82ffc10c8ddbb513fa585b4c",
+            "duration_s": 8.0,
+            "safe_window_s": [0.0, 6.2],
+            "verdict": "APPROVED_QUALITY_HERO_PLATE_AVAILABLE",
+            "finding": "8.0 s Veo 3.1 Quality hero plate; Cut [29] (P2:08_jar_spark) currently uses only 0.0-3.167 s (trimmed to 64 frames = 2.667 s). Window 0.0-6.167 s (148 frames) shows the foil-lined Leyden jar with cork stopper and brass ring wire discharging a bright blue spark to a fingertip, matching 'electricity, then let it all go at once in a bright spark with a loud crack'."
+          },
+          {
+            "rank": 3,
+            "file": "11_jar_crack_t1.mp4",
+            "path": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part02/raw/v01/11_jar_crack_t1.mp4",
+            "sha256": "7629a5dfdc5b649535c9816ece5bf0acf250a13133bf294bf43cfb1f21588270",
+            "duration_s": 8.0,
+            "safe_window_s": [4.0, 7.5],
+            "verdict": "APPROVED_UNUSED_WINDOW_AVAILABLE",
+            "finding": "Cut [32] (150.25-153.17 s) uses only 0.0-3.25 s (78 frames). Unused window 4.000-7.500 s (84 frames = 3.500 s) shows foil-lined Leyden jars linked by a brass rod on the workshop bench (>11.0 s before Cut [32], passing picture_qa.py's 10 s repeat rule) and can seamlessly fill the 84-frame second half of Cut [28] (frames 3260..3343, 'electricity, then let it all go at once in a') at £0."
+          }
+        ]
+      },
+      {
+        "note_index": 6,
+        "timestamp": "7:58",
+        "row": "P5:13_rods_spread",
+        "active_minutes": 3.0,
+        "candidates_inspected": 3,
+        "candidates": [
+          {
+            "rank": 1,
+            "file": "13_rods_spread_t1.mp4",
+            "path": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/13_rods_spread_t1.mp4",
+            "sha256": "d9fa5f1329ad0e190ffd43c5b3d8cd47ab3c39b58402dc76eeb43c74290d9607",
+            "duration_s": 8.0,
+            "safe_window_s": [0.0, 1.5],
+            "verdict": "INSUFFICIENT_SAFE_DURATION",
+            "finding": "Only frames 0..35 (0.0-1.50 s) show vertical lightning rods on the church steeple, town house, and harbour ship mast before both roof rods sprout lightning kinks, detach from the roofs, tilt 60 degrees sideways, and fall/float across the sky across 1.75-5.625 s (frames 42..134). 1.50 s cannot cover the 5.625 s (135-frame) cut alone."
+          },
+          {
+            "rank": 2,
+            "file": "21_roofs_golden_t1.mp4",
+            "path": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/21_roofs_golden_t1.mp4",
+            "sha256": "0bc8289232467793e26d2ba047e63855c2a495bfffc19b6828607f4df3e27413",
+            "duration_s": 8.0,
+            "safe_window_s": [0.0, 7.8],
+            "verdict": "USABLE_NATIVE_PLATE_MISSING_SHIP_MAST",
+            "finding": "Used once in Cut [109] (522.55-528.50 s, 43.5 s later, well outside the 10 s repeat window). Shows a church steeple and row of town houses with straight, firmly anchored vertical lightning rods on every roof in warm daylight. Caveat for Chief J1881: shows church and houses clearly, but no ship's mast ('on churches, houses, and ships' masts')."
+          },
+          {
+            "rank": 3,
+            "file": "01_house_rod_t1.mp4",
+            "path": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/01_house_rod_t1.mp4",
+            "sha256": "3822f6f706eb9263e2ec0fd6f3f8cb4b46bdb848778622505d25af1ad52001a3",
+            "duration_s": 8.0,
+            "safe_window_s": [0.0, 7.8],
+            "verdict": "USABLE_NATIVE_PLATE_MISSING_CHURCH_AND_SHIP",
+            "finding": "Used once in Cut [87] (408.96-414.96 s, 58.5 s earlier). Shows a straight vertical iron rod anchored to a brick house chimney. Can be combined with 21_roofs_golden_t1.mp4 (church + houses) and/or the safe 0.0-1.50 s opening of 13_rods_spread_t1.mp4 (harbour ship mast), or replaced via scoped Flow retake."
+          }
+        ]
+      }
+    ]
+  },
+  "six_uat_items": [
+    {
+      "index": 1,
+      "verbatim_timestamp": "00:20",
+      "timestamp_seconds": 20,
+      "verbatim_note": "text on screen in readable needs maybe background colour",
+      "cut_index_v12": 3,
+      "part": 1,
+      "row": "03_table_three",
+      "source_clip": "03_table_three_t1.mp4",
+      "source_path": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part01/raw/v01/03_table_three_t1.mp4",
+      "source_sha256": "482a254d7f7b195241eea96511a736d212c971988decb33c38b183347639a9bb",
+      "start_frame_png": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part01/refs/v03_flow_stills/03_table_three_t1.png",
+      "start_frame_sha256": "e1997bc5e7b8c6a118b26690899b9c206091bff2bc845ffee06388da7db1e919",
+      "master_v03_interval": {
+        "display_frame_in": 427,
+        "display_frame_out_inclusive": 544,
+        "frames": 118,
+        "pts_in_s": 17.9167,
+        "pts_out_s": 22.7917,
+        "timeline_in_s": 17.7643,
+        "timeline_out_s": 22.681,
+        "pretrim_in_s": 19.0833,
+        "pretrim_out_s": 24.0,
+        "source_offset_s": 0.0,
+        "upscale": 1.5
+      },
+      "adjacent_cuts": {
+        "prev": {
+          "cut_index": 2,
+          "row": "P1:02_tower_tilt",
+          "display_frames": [273, 426],
+          "timeline_s": [11.3373, 17.7643],
+          "side_label": "THE ANSWER IS ON THE ROOF"
+        },
+        "next": {
+          "cut_index": 4,
+          "row": "P1:03_table_three_c1",
+          "display_frames": [545, 662],
+          "timeline_s": [22.681, 27.5977],
+          "side_label": null
+        }
+      },
+      "spoken_vo": {
+        "line": "By the end of this film, you'll know how a kite, a key, and a glass jar proved what lightning really is, and how one simple idea stopped it burning our towns down.",
+        "words_in_cut": "By(17.88) the(18.04) end(18.12) of(18.30) this(18.42) film,(18.66-19.06) you'll(19.50) know(19.74) how(20.06) a(20.20) kite,(20.36-20.82) a(21.14) key,(21.32-21.70) and(22.06) a(22.18) glass(22.30-22.66)"
+      },
+      "reproduced_defect": "draw_side_label() in _assemble_rough_v02.py rendered 'A KITE · A KEY · A JAR' in warm gold (242, 208, 122) at (W/2, 940) directly over the sunlit warm-tan wooden tabletop and brass ring of 03_table_three_t1.mp4 with no backing pill or scrim, resulting in low luminance/hue contrast against the wood grain.",
+      "proposed_correction": {
+        "method": "re_render_cut_with_backed_house_label",
+        "cost_gbp": 0.0,
+        "flow_credits": 0,
+        "changed_display_frames": [427, 544],
+        "frame_count_delta": 0,
+        "details": "Re-render the 118 frames of Cut [3] from 03_table_three_t1.mp4 (offset 0.0 s) with HOS house Didot italic 58 px in warm cream-white (252, 248, 240, 255) + 5 px dark umber stroke (28, 16, 8) over a soft rounded dark-umber translucent backing pill rgba(36, 22, 12, 200) with subtle warm gold border rgba(211, 167, 88, 165), radius 18 px, padding 28x14 px, centered at y=940 (clear of the kite, key, and jar), fading in/out over 0.35 s."
+      }
+    },
+    {
+      "index": 2,
+      "verbatim_timestamp": "0:30",
+      "timestamp_seconds": 30,
+      "verbatim_note": "flash the next scene",
+      "cut_index_v12": 5,
+      "part": 1,
+      "row": "03b_town_safe -> 04_storm_mystery",
+      "source_clip": "03b_town_safe_t1.mp4 -> 04_storm_mystery_t1.mp4",
+      "source_path": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part01/raw/v01/03b_town_safe_t1.mp4",
+      "source_sha256": "f89bec2a38ae7707881637aad9ee3e0e7408febd85ebb1b6f31e88e6c735e9a0",
+      "next_source_path": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part01/raw/v01/04_storm_mystery_t1.mp4",
+      "next_source_sha256": "e1b2de5d8cd4bbc8ace98d6d5c17af3c75651f8949d54e062fe91fbe6ee31271",
+      "master_v03_interval": {
+        "cut_5_display_frames": [663, 747],
+        "cut_5_clean_frames": [663, 743],
+        "cut_5_flash_frames": [744, 747],
+        "cut_6_display_frames": [748, 839],
+        "combined_frames": 177,
+        "flash_pts_in_s": 31.1667,
+        "flash_pts_out_s": 31.2917,
+        "cut_6_pts_in_s": 31.3333,
+        "cut_6_pts_out_s": 35.125,
+        "timeline_in_s": 27.5977,
+        "timeline_boundary_s": 31.1267,
+        "timeline_out_s": 34.96,
+        "upscale": 1.5
+      },
+      "spoken_vo": {
+        "line": "...simple idea stopped it burning our towns down. [pause 30.70-31.24s] For thousands of years, lightning was a mystery.",
+        "words_in_cut": "simple(27.36-27.64) idea(27.74-28.20) stopped(28.68-28.90) it(28.94-29.10) burning(29.14-29.50) our(29.56-29.72) towns(29.80-30.26) down.(30.30-30.70) | For(31.24-31.32) thousands(31.46-32.00) of(32.06-32.16) years,(32.24-32.70) lightning(33.14-33.54) was(33.58-33.72) a(33.76-33.84) mystery.(33.90-34.48)"
+      },
+      "reproduced_defect": "PAUSE_TRIM_v03.json removed pre-trim 32.269-32.990 s inside the tail of P1:03b_town_safe (which ended at pre-trim 33.167 s), leaving a 4-frame (0.1667 s) post-trim residual fragment at display frames 744..747 (pts 31.1667-31.2917 s) showing a sudden jump-cut lightning flash and rain splash from the end of 03b_town_safe_t1.mp4 right before cutting to P1:04_storm_mystery at frame 748 (pts 31.3333 s).",
+      "proposed_correction": {
+        "method": "advance_cut_6_by_4_frames_over_residual_flash",
+        "cost_gbp": 0.0,
+        "flow_credits": 0,
+        "changed_display_frames": [744, 839],
+        "frame_count_delta": 0,
+        "details": "End P1:03b_town_safe cleanly at display frame 743 (pts 31.1250 s, 81 continuous frames 0..80 of 03b_town_safe_t1.mp4, 0.42 s after 'down.' finishes at 30.70 s) and start P1:04_storm_mystery 4 frames earlier at display frame 744 (pts 31.1667 s, 0.07 s before 'For' at 31.24 s), running 96 continuous frames (0.000-4.000 s, frames 0..95 of the 8.0 s 04_storm_mystery_t1.mp4 clip) through frame 839. Preserves exact 177-frame combined duration and 0.000 ms VO sync."
+      }
+    },
+    {
+      "index": 3,
+      "verbatim_timestamp": "1:49",
+      "timestamp_seconds": 109,
+      "verbatim_note": "strange behaviour as hair flies out the tube",
+      "cut_index_v12": 23,
+      "part": 2,
+      "row": "02_salon_spark",
+      "source_clip": "02_salon_spark_t1.mp4",
+      "source_path": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part02/raw/v01/02_salon_spark_t1.mp4",
+      "source_sha256": "4b61312e9416b68853409b7d67683643934b44cc2d56e48623b8b0c4e8c58a92",
+      "start_frame_png": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part02/refs/v03_flow_stills/02_salon_spark_t1.png",
+      "start_frame_sha256": "aefd6338aded1037c11306a99fc580d1a62a66d9367409f01e0edd993cc8cc58",
+      "master_v03_interval": {
+        "display_frame_in": 2506,
+        "display_frame_out_inclusive": 2665,
+        "frames": 160,
+        "pts_in_s": 104.6667,
+        "pts_out_s": 111.2917,
+        "timeline_in_s": 104.376,
+        "timeline_out_s": 111.0427,
+        "pretrim_in_s": 111.4167,
+        "pretrim_out_s": 118.0833,
+        "source_offset_s": 0.0,
+        "upscale": 1.5
+      },
+      "adjacent_cuts": {
+        "prev": {
+          "cut_index": 22,
+          "row": "P2:01_salon_tube",
+          "display_frames": [2407, 2505],
+          "frames": 99,
+          "source": "01_salon_tube_t1.mp4",
+          "source_offset_s": 0.0
+        },
+        "next": {
+          "cut_index": 24,
+          "row": "P2:03_audience_shock",
+          "display_frames": [2666, 2717],
+          "frames": 52,
+          "source": "03_audience_shock_t1.mp4",
+          "source_offset_s": 0.0
+        }
+      },
+      "spoken_vo": {
+        "line": "Traveling lecturers rubbed glass tubes with silk and made sparks fly from people's fingers and hair.",
+        "words_in_cut": "Traveling(104.25-104.63) lecturers(104.69-105.19) rubbed(105.31-105.59) glass(105.63-105.91) tubes(106.05-106.53) with(106.57-106.69) silk(106.77-107.13) and(107.53-107.63) made(107.67-107.89) sparks(108.01-108.43) fly(108.53-108.77) from(108.79-108.91) people's(108.97-109.29) fingers(109.33-109.69) and(109.71-109.79) hair.(109.89-110.19)"
+      },
+      "reproduced_defect": "In 02_salon_spark_t1.mp4, across t=1.5-6.5 s (film 105.9-110.9 s, peaking at 1:49 / 108-110 s), cotton-like puffs float in mid-air and white powdered hair literally streams/extrudes out of the open tip of the glass tube onto the seated woman's head before detaching into floating blobs.",
+      "proposed_correction": {
+        "option_a_zero_spend_native_cut": {
+          "method": "split_cut_23_across_unused_01_salon_tube_and_03_audience_shock",
+          "cost_gbp": 0.0,
+          "flow_credits": 0,
+          "changed_display_frames": [2506, 2717],
+          "frame_count_delta": 0,
+          "details": "Frames 2506..2585 (80 frames = 3.3333 s, 'Traveling lecturers rubbed glass tubes with silk'): use unused tail 4.125-7.458 s of 01_salon_tube_t1.mp4 with a 1.12x closer crop reframe (crop=iw*0.89:ih*0.89:iw*0.08:ih*0.06, upscale=1.68 <= 2.35) showing the lecturer's hands rubbing and raising the glass tube. Frames 2586..2665 (80 frames = 3.3333 s, 'and made sparks fly from people's fingers and hair'): use 0.000-3.333 s of 03_audience_shock_t1.mp4 (where a bright spark jumps to the first guest's finger and the guests' powdered curls bounce), then advance Cut [24] (frames 2666..2717, 52 frames = 2.1667 s, 'Audiences paid to feel the shock') to use 3.333-5.500 s of 03_audience_shock_t1.mp4 with a 1.12x crop on the laughing guests. Caveat: shows spark from table globe machine rather than close-up hair attraction to tube.",
+          "recommend_chief_choice": "Option B preferred for exact visual match to 'sparks fly from people's fingers and hair'; Option A ready at £0 if Chief declines retake."
+        },
+        "option_b_scoped_flow_retake_for_chief_j1881": {
+          "plate_id": "02_salon_spark",
+          "part": 2,
+          "start_frame": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part02/refs/v03_flow_stills/02_salon_spark_t1.png",
+          "start_frame_sha256": "aefd6338aded1037c11306a99fc580d1a62a66d9367409f01e0edd993cc8cc58",
+          "route": "Flow Veo 3.1 (orbit_flow_veo_ui.py on CDP 9222, AI Ultra subscription credit, £0 cash)",
+          "model_options": {
+            "fast": "Veo 3.1 - Fast (10 credits/take, max 3 takes = 30 credits cap)",
+            "quality": "Veo 3.1 - Quality (100 credits/take, max 3 takes = 300 credits cap; recommended because static spark + hair physics is a fragile hero interaction)"
+          },
+          "bounded_takes_max": 3,
+          "live_flow_balance_credits": 15430,
+          "flow_floor_credits": 0,
+          "revised_prompt": "Premium Animistry-class 3D cartoon. Same 1740s panelled salon in warm off-screen window light: close on a sealed solid clear glass rod held six inches from a seated guest's hand and powdered curls; a tiny blue static spark snaps between the side of the glass rod and her fingertip while a few outer hair curls tilt gently upward, and she laughs warmly. The glass rod remains completely clear, solid and empty with nothing coming out of its tip, no floating puffs, no lightning bolts. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+          "acceptance_criteria": "Continuous 6.67 s motion (0 freeze events >=0.8 s); glass rod remains clear/solid with zero hair, smoke, or puffs extruding from or detaching near the tube; small spark to fingertip and gentle curl lift match 'made sparks fly from people's fingers and hair'."
+        }
+      }
+    },
+    {
+      "index": 4,
+      "verbatim_timestamp": "2:20",
+      "timestamp_seconds": 140,
+      "verbatim_note": "strange behaviour with the silver foil",
+      "cut_index_v12": 28,
+      "part": 2,
+      "row": "07_foil_jar",
+      "source_clip": "07_foil_jar_t1.mp4",
+      "source_path": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part02/raw/v01/07_foil_jar_t1.mp4",
+      "source_sha256": "8e28cc24ed747a60f6a305f3f1014a65ead7bde964a682bcb4939c527b59ec11",
+      "start_frame_png": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part02/refs/v03_flow_stills/07_foil_jar_t1.png",
+      "start_frame_sha256": "6acccb7d84b3e06b417c590c9d4a70f940c9a0bce02f16ce51191c47e6c63da5",
+      "master_v03_interval": {
+        "display_frame_in": 3168,
+        "display_frame_out_inclusive": 3343,
+        "frames": 176,
+        "pts_in_s": 132.2917,
+        "pts_out_s": 139.5833,
+        "timeline_in_s": 131.906,
+        "timeline_out_s": 139.2393,
+        "pretrim_in_s": 140.2083,
+        "pretrim_out_s": 147.5417,
+        "source_offset_s": 0.0,
+        "upscale": 1.5
+      },
+      "adjacent_cuts": {
+        "prev": {
+          "cut_index": 27,
+          "row": "P2:06_leyden_jar",
+          "display_frames": [3049, 3167],
+          "frames": 119,
+          "source": "06_leyden_jar_t1.mp4"
+        },
+        "next": {
+          "cut_index": 29,
+          "row": "P2:08_jar_spark",
+          "display_frames": [3344, 3407],
+          "frames": 64,
+          "source": "08_jar_spark_t1.mp4"
+        }
+      },
+      "spoken_vo": {
+        "line": "It was a glass jar lined with metal foil, and it could store electricity, then let it all go at once in a [Cut 29: bright spark with a loud crack.]",
+        "words_in_cut": "It(132.09) was(132.17) a(132.29) glass(132.39) jar(132.83) lined(133.27) with(133.57) metal(133.75) foil,(134.13-134.49) and(134.95) it(135.05) could(135.13) store(135.47) electricity,(135.79-136.53) then(136.99) let(137.13) it(137.31) all(137.57) go(137.83) at(138.01) once(138.21-138.63) in(138.99) a(139.09-139.21)"
+      },
+      "reproduced_defect": "In 07_foil_jar_t1.mp4, frames 0..91 (0.000-3.833 s, display frames 3168..3259, film 132.29-136.08 s) show clean hands pressing silver foil smooth around the glass jar. Across frames 92..175 (3.833-7.333 s, display frames 3260..3343, film 136.12-139.58 s), the silver foil peels off in his left hand while the jar turns into a solid metal cylinder, the peeled foil teleports onto the top rim of the jar like a foil lid at t=5.0 s, and at t=6.5-7.3 s (right at 2:19-2:20) the entire jar levitates in mid-air above his open palm.",
+      "proposed_correction": {
+        "method": "trim_07_foil_jar_to_safe_92_frames_and_fill_84_frames_with_approved_leyden_jar_plate",
+        "cost_gbp": 0.0,
+        "flow_credits": 0,
+        "changed_display_frames": [3260, 3343],
+        "frame_count_delta": 0,
+        "details": "Keep display frames 3168..3259 (92 frames = 3.8333 s, pts 132.2917-136.0833 s) from 07_foil_jar_t1.mp4 (offset 0.000-3.8333 s, completely free of foil peeling or jar levitation, covering 'It was a glass jar lined with metal foil, and it could store'). Replace the defective 84-frame tail (display frames 3260..3343, 3.5000 s, pts 136.1250-139.5833 s, 'electricity, then let it all go at once in a') with the unused 4.000-7.500 s window (84 frames) of approved KEEP plate 11_jar_crack_t1.mp4 (sha256: 7629a5df..., showing the foil-lined Leyden jars linked by a brass rod on the bench as charge sweeps across the glass, >11.0 s before Cut [32] at 150.25 s so it passes picture_qa.py's 10 s repeat rule and ≤2 appearances rule). Cut [29] (3344..3407, 08_jar_spark_t1.mp4) then fires the bright blue spark to the fingertip on 'bright spark with a loud crack'."
+      }
+    },
+    {
+      "index": 5,
+      "verbatim_timestamp": "3:31",
+      "timestamp_seconds": 211,
+      "verbatim_note": "the diagram/ map is not easy to understand",
+      "cut_index_v12": 44,
+      "part": 3,
+      "row": "04_letter_crosses",
+      "source_clip": "overlay_04_letter_crosses.mp4 (composited over 07_slow_news_t1.mp4)",
+      "source_path": "/Volumes/data/mac-mini-archive/tmp-render-scratch/j1236-hos008-rough-v03/special_assets_v03/overlay_04_letter_crosses.mp4",
+      "source_sha256": "3d827e7f7433a5d1c50ff0278fc6b8e5ae49d1a4c25c8bb025eedde7cec6e32a",
+      "plate_source_path": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part03/raw/v01/07_slow_news_t1.mp4",
+      "plate_source_sha256": "775e6d72eeb9bcec1ba61a72ee2fab14669620a23626bb5c1b0b5c80d7b5d749",
+      "master_v03_interval": {
+        "display_frame_in": 4977,
+        "display_frame_out_inclusive": 5077,
+        "v06_overlay_frames": [4977, 5068],
+        "orphaned_v04_map_flash_frames": [5069, 5077],
+        "frames": 101,
+        "pts_in_s": 207.8333,
+        "pts_out_s": 212.0833,
+        "timeline_in_s": 207.827,
+        "timeline_out_s": 211.577,
+        "pretrim_in_s": 220.3333,
+        "pretrim_out_s": 224.0833,
+        "source_offset_s": 0.0,
+        "upscale": 1.5
+      },
+      "adjacent_cuts": {
+        "prev": {
+          "cut_index": 43,
+          "row": "P3:03_book_pages",
+          "display_frames": [4858, 4976],
+          "source": "03_book_pages_t1.mp4"
+        },
+        "next": {
+          "cut_index": 45,
+          "row": "P3:05_king_hears",
+          "display_frames": [5078, 5176],
+          "source": "05_king_hears_t1.mp4"
+        }
+      },
+      "spoken_vo": {
+        "line": "He published the idea, and it crossed the ocean.",
+        "words_in_cut": "He(207.97-208.05) published(208.13-208.49) the(208.53-208.61) idea,(208.67-209.09) and(209.43-209.51) it(209.55-209.65) crossed(209.71-210.05) the(210.09-210.19) ocean.(210.25-210.71)"
+      },
+      "reproduced_defect": "Two compounding defects in master_v03 frames 4977..5077: (1) Across frames 4977..5068 (92 frames), _build_rough_v06.py rendered two abstract brown rounded rectangles (WEST_BOX and EAST_BOX) inside a top-left inset card (60,60,540,420) that read as two blank brown blocks rather than an ocean crossing; (2) Across frames 5069..5077 (9 frames = 0.375 s, pts 211.7500-212.0833 s, right at 3:31), _build_rough_v06.py's splice left 9 frames of the superseded rough_v04 full-screen vector shoreline diagram flashing over the ship's sails before Cut [45] starts at frame 5078.",
+      "proposed_correction": {
+        "method": "replace_all_101_frames_with_clean_sky_route_overlay_v04",
+        "cost_gbp": 0.0,
+        "flow_credits": 0,
+        "changed_display_frames": [4977, 5077],
+        "frame_count_delta": 0,
+        "details": "Render a 101-frame (4.2083 s) overlay_04_letter_crosses_v04.mp4 directly over 0.000-4.2083 s of the moving packet-ship plate 07_slow_news_t1.mp4 and splice across the entire 101-frame slot (display frames 4977..5077, eliminating the 9-frame v04 vector flash at 5069..5077). Visual design: no fake continent boxes or shoreline polygons; instead, a single clean HOS house cream-on-umber translucent sky route banner in the upper sky band (x=180..1740, y=64..216, 100% above the packet ship's highest mast top at y=248 so ship occlusion is 0.0%) showing 'PHILADELPHIA' on the left (fading in 0.20-0.55 s), an animated golden-cream arched dotted trajectory + small inked letter seal travelling left-to-right across the sky ('crossed the ocean', 0.55-2.85 s), and 'PARIS · 1752' on the right (fading in 0.45-0.80 s), holding cleanly and fading out over 3.65-4.10 s."
+      }
+    },
+    {
+      "index": 6,
+      "verbatim_timestamp": "7:58",
+      "timestamp_seconds": 478,
+      "verbatim_note": "the rods fall down for some reason",
+      "cut_index_v12": 100,
+      "part": 5,
+      "row": "13_rods_spread",
+      "source_clip": "13_rods_spread_t1.mp4",
+      "source_path": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/13_rods_spread_t1.mp4",
+      "source_sha256": "d9fa5f1329ad0e190ffd43c5b3d8cd47ab3c39b58402dc76eeb43c74290d9607",
+      "start_frame_png": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/refs/v03_flow_stills/13_rods_spread_t1.png",
+      "start_frame_sha256": "84a92bf6ce1abd1a5780c37ac2e8ae50ea6099f5cff5c7f728a70060b394819c",
+      "master_v03_interval": {
+        "display_frame_in": 11358,
+        "display_frame_out_inclusive": 11492,
+        "frames": 135,
+        "pts_in_s": 474.375,
+        "pts_out_s": 479.9583,
+        "timeline_in_s": 473.4623,
+        "timeline_out_s": 479.0873,
+        "pretrim_in_s": 498.9583,
+        "pretrim_out_s": 504.5833,
+        "source_offset_s": 0.0,
+        "upscale": 1.5
+      },
+      "adjacent_cuts": {
+        "prev": {
+          "cut_index": 99,
+          "row": "P5:12_no_patent",
+          "display_frames": [11246, 11357],
+          "frames": 112,
+          "source": "12_no_patent_t1.mp4"
+        },
+        "next": {
+          "cut_index": 101,
+          "row": "P5:14_safe_towers",
+          "display_frames": [11493, 11611],
+          "frames": 119,
+          "source": "14_safe_towers_t1.mp4"
+        }
+      },
+      "spoken_vo": {
+        "line": "Within a few years, rods were going up on churches, houses, and ships' masts,",
+        "words_in_cut": "Within(473.44-473.62) a(473.68-473.74) few(473.78-474.00) years,(474.06-474.46) rods(474.84-475.10) were(475.12-475.22) going(475.26-475.48) up(475.56-475.68) on(475.74-475.88) churches,(475.94-476.60) houses,(476.76-477.32) and(477.36-477.46) ships'(477.58-477.84) masts,(477.96-478.52)"
+      },
+      "reproduced_defect": "In 13_rods_spread_t1.mp4, after t=1.50 s (display frame 11394, film 475.88 s through 479.96 s, peaking at 7:58 / 478 s), the lightning rods atop the church steeple and the brick town house sprout jagged lightning-bolt kinks, detach from the roofs, tilt 60 degrees sideways, and fall/float across the sky.",
+      "proposed_correction": {
+        "option_a_zero_spend_native_cut": {
+          "method": "replace_cut_100_with_approved_21_roofs_golden_reframed",
+          "cost_gbp": 0.0,
+          "flow_credits": 0,
+          "changed_display_frames": [11358, 11492],
+          "frame_count_delta": 0,
+          "details": "Replace the 135 frames of Cut [100] (display frames 11358..11492, 5.6250 s, 'Within a few years, rods were going up on churches, houses, and ships' masts,') using 135 continuous frames (1.500-7.125 s) of approved KEEP plate 21_roofs_golden_t1.mp4 with a 1.08x closer reframe (crop=iw*0.92:ih*0.92:iw*0.04:ih*0.04, upscale 1.62 <= 2.35). Shows a church steeple and row of town houses in calm golden daylight with straight, firmly anchored vertical lightning rods on every roof, preserving the 4-6 s shot-length rule and sitting 43.5 s before Cut [109] (passing picture_qa.py's 10 s repeat rule and <=5 stretches rule). Caveat: shows church steeple and houses clearly, but no ship's mast.",
+          "recommend_chief_choice": "Option B preferred so all three named nouns ('churches, houses, and ships' masts') appear in the harbour shot with rigid vertical rods; Option A ready at £0 if Chief declines retake."
+        },
+        "option_b_scoped_flow_retake_for_chief_j1881": {
+          "plate_id": "13_rods_spread",
+          "part": 5,
+          "start_frame": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/refs/v03_flow_stills/13_rods_spread_t1.png",
+          "start_frame_sha256": "84a92bf6ce1abd1a5780c37ac2e8ae50ea6099f5cff5c7f728a70060b394819c",
+          "route": "Flow Veo 3.1 (orbit_flow_veo_ui.py on CDP 9222, AI Ultra subscription credit, £0 cash)",
+          "model_options": {
+            "fast": "Veo 3.1 - Fast (10 credits/take, max 3 takes = 30 credits cap)",
+            "quality": "Veo 3.1 - Quality (100 credits/take, max 3 takes = 300 credits cap)"
+          },
+          "bounded_takes_max": 3,
+          "live_flow_balance_credits": 15430,
+          "flow_floor_credits": 0,
+          "revised_prompt": "Premium Animistry-class 3D cartoon. Harbour town in clear calm daylight: a church steeple on the left, a brick town house in the centre, and a tall wooden sailing ship's mast on the right each have a thin, rigid, straight vertical iron lightning rod firmly fixed to their peak; townspeople walk calmly along the harbour cobbles below and gentle ripples move on the water; slow camera push in. The iron rods remain completely straight, rigid, vertical and motionless on the roofs and mast for the entire shot; no lightning, no sparks, no moving or falling rods. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+          "acceptance_criteria": "Continuous 5.625 s motion (0 freeze events >=0.8 s); all three lightning rods (church steeple, house roof, ship's mast) remain completely rigid, straight, vertical, and attached to their structures across all frames; zero lightning kinks or falling rods."
+        }
+      }
+    }
+  ]
+}

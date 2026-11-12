@@ -1,0 +1,54 @@
+{
+  "job": "J2241",
+  "status": "GENERATED_PENDING_REVIEW",
+  "gross_credits": 400,
+  "cash_gbp": 0,
+  "failed_rods_t1": "Flow explicitly Failed and refund promised; no refund inferred in ledger",
+  "takes": [
+    {
+      "part": "02",
+      "id": "02_salon_spark",
+      "take": 1,
+      "file": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part02/j2241/02_salon_spark_j2241_t1.mp4",
+      "sha256": "f13c09a4ce2decdb393a60433e0657463c3a6614f52765713c1e4b4e431af42d",
+      "frames": 190,
+      "width": 1280,
+      "height": 720,
+      "frame_rate": "24/1",
+      "sheet": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part02/j2241/02_salon_spark_j2241_t1.jpg",
+      "decode_ok": true,
+      "charge": "HOS:008:P02:02_salon_spark:J2241:t1",
+      "credits": 100
+    },
+    {
+      "part": "03",
+      "id": "01_points_desk",
+      "take": 1,
+      "file": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part03/j2241/01_points_desk_j2241_t1.mp4",
+      "sha256": "fe115ec2f92bf74dcfb14c71b5a96c85333e6470fd88622a3c9604f37fa3e99c",
+      "frames": 190,
+      "width": 1280,
+      "height": 720,
+      "frame_rate": "24/1",
+      "sheet": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part03/j2241/01_points_desk_j2241_t1.jpg",
+      "decode_ok": true,
+      "charge": "HOS:008:P03:01_points_desk:J2241:t1",
+      "credits": 100
+    },
+    {
+      "part": "05",
+      "id": "13_rods_spread",
+      "take": 2,
+      "file": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/j2241/13_rods_spread_j2241_t2.mp4",
+      "sha256": "f82abba9a06f3a9ef70aa46d7638f1cad9fe3374cbba530e7ffef773813e1a3a",
+      "frames": 190,
+      "width": 1280,
+      "height": 720,
+      "frame_rate": "24/1",
+      "sheet": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/j2241/13_rods_spread_j2241_t2.jpg",
+      "decode_ok": true,
+      "charge": "HOS:008:P05:13_rods_spread:J2241:t2",
+      "credits": 100
+    }
+  ]
+}

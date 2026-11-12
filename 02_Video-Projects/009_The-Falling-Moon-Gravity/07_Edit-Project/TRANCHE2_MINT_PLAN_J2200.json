@@ -1,0 +1,229 @@
+{
+  "job": "J2200",
+  "film": "HOS:009",
+  "submissions": 0,
+  "keep": false,
+  "review": "PENDING_REVIEW",
+  "file_state_when_written": "GENERATED",
+  "row_count": 20,
+  "style_refs": [
+    "04_Generated-Clips/_style_refs/04_sunny_window_v01.jpg",
+    "04_Generated-Clips/_style_refs/10_mint_jar_v01.jpg"
+  ],
+  "caps": {
+    "per_take": 100,
+    "takes_per_row": 3,
+    "total": 6000,
+    "batch_rows": 5,
+    "batch_credits": 1500,
+    "floor": 3000
+  },
+  "order": [
+    {
+      "kind": "existing_still_or_zero_price",
+      "plate_id": "10_how_high",
+      "part": 2,
+      "id": "10_how_high"
+    },
+    {
+      "kind": "existing_still_or_zero_price",
+      "plate_id": "07_ball_to_moon",
+      "part": 3,
+      "id": "07_ball_to_moon"
+    },
+    {
+      "kind": "parent_last_frame",
+      "plate_id": "05_heavens_map_c1",
+      "part": 1,
+      "parent_part": 1,
+      "parent_id": "05_heavens_map",
+      "reference": "P1:05_heavens_map last frame",
+      "id": "05_heavens_map_c1"
+    },
+    {
+      "kind": "parent_last_frame",
+      "plate_id": "07_night_field_c1",
+      "part": 1,
+      "parent_part": 1,
+      "parent_id": "07_night_field",
+      "reference": "P1:07_night_field last frame",
+      "id": "07_night_field_c1"
+    },
+    {
+      "kind": "parent_last_frame",
+      "plate_id": "01_cambridge_closes_c1",
+      "part": 2,
+      "parent_part": 2,
+      "parent_id": "01_cambridge_closes",
+      "reference": "P2:01_cambridge_closes last frame",
+      "id": "01_cambridge_closes_c1"
+    },
+    {
+      "kind": "parent_last_frame",
+      "plate_id": "03_christmas_birth_c1",
+      "part": 2,
+      "parent_part": 2,
+      "parent_id": "03_christmas_birth",
+      "reference": "P2:03_christmas_birth last frame",
+      "id": "03_christmas_birth_c1"
+    },
+    {
+      "kind": "parent_last_frame",
+      "plate_id": "05_working_alone_c1",
+      "part": 2,
+      "parent_part": 2,
+      "parent_id": "05_working_alone",
+      "reference": "P2:05_working_alone last frame",
+      "id": "05_working_alone_c1"
+    },
+    {
+      "kind": "parent_last_frame",
+      "plate_id": "08_the_apple_c1",
+      "part": 2,
+      "parent_part": 2,
+      "parent_id": "08_the_apple",
+      "reference": "P2:08_the_apple last frame",
+      "id": "08_the_apple_c1"
+    },
+    {
+      "kind": "parent_last_frame",
+      "plate_id": "11_explorer_apple_c1",
+      "part": 2,
+      "parent_part": 2,
+      "parent_id": "11_explorer_apple",
+      "reference": "P2:11_explorer_apple last frame",
+      "id": "11_explorer_apple_c1"
+    },
+    {
+      "kind": "parent_last_frame",
+      "plate_id": "01_really_falling_c1",
+      "part": 3,
+      "parent_part": 3,
+      "parent_id": "01_really_falling",
+      "reference": "P3:01_really_falling last frame",
+      "id": "01_really_falling_c1"
+    },
+    {
+      "kind": "parent_last_frame",
+      "plate_id": "05_shot_orbit_c1",
+      "part": 3,
+      "parent_part": 3,
+      "parent_id": "05_shot_orbit",
+      "reference": "P3:05_shot_orbit last frame",
+      "id": "05_shot_orbit_c1"
+    },
+    {
+      "kind": "parent_last_frame",
+      "plate_id": "05_shot_orbit_c2",
+      "part": 3,
+      "parent_part": 3,
+      "parent_id": "05_shot_orbit_c1",
+      "reference": "P3:05_shot_orbit_c1 last frame",
+      "id": "05_shot_orbit_c2"
+    },
+    {
+      "kind": "parent_last_frame",
+      "plate_id": "05_minute_second_c1",
+      "part": 4,
+      "parent_part": 4,
+      "parent_id": "05_minute_second",
+      "reference": "P4:05_minute_second last frame",
+      "id": "05_minute_second_c1"
+    },
+    {
+      "kind": "parent_last_frame",
+      "plate_id": "05_minute_second_c2",
+      "part": 4,
+      "parent_part": 4,
+      "parent_id": "05_minute_second_c1",
+      "reference": "P4:05_minute_second_c1 last frame",
+      "id": "05_minute_second_c2"
+    },
+    {
+      "kind": "parent_last_frame",
+      "plate_id": "08_halley_visit_c1",
+      "part": 4,
+      "parent_part": 4,
+      "parent_id": "08_halley_visit",
+      "reference": "P4:08_halley_visit last frame",
+      "id": "08_halley_visit_c1"
+    },
+    {
+      "kind": "parent_last_frame",
+      "plate_id": "08_halley_visit_c2",
+      "part": 4,
+      "parent_part": 4,
+      "parent_id": "08_halley_visit_c1",
+      "reference": "P4:08_halley_visit_c1 last frame",
+      "id": "08_halley_visit_c2"
+    },
+    {
+      "kind": "parent_last_frame",
+      "plate_id": "04_comet_1758_c1",
+      "part": 5,
+      "parent_part": 5,
+      "parent_id": "04_comet_1758",
+      "reference": "P5:04_comet_1758 last frame",
+      "id": "04_comet_1758_c1"
+    },
+    {
+      "kind": "parent_last_frame",
+      "plate_id": "05_iss_orbit_c1",
+      "part": 5,
+      "parent_part": 5,
+      "parent_id": "05_iss_orbit",
+      "reference": "P5:05_iss_orbit last frame",
+      "id": "05_iss_orbit_c1"
+    },
+    {
+      "kind": "parent_last_frame",
+      "plate_id": "05_iss_orbit_c2",
+      "part": 5,
+      "parent_part": 5,
+      "parent_id": "05_iss_orbit_c1",
+      "reference": "P5:05_iss_orbit_c1 last frame",
+      "id": "05_iss_orbit_c2"
+    },
+    {
+      "kind": "parent_last_frame",
+      "plate_id": "06_iss_apple_c1",
+      "part": 5,
+      "parent_part": 5,
+      "parent_id": "06_iss_apple",
+      "reference": "P5:06_iss_apple last frame",
+      "id": "06_iss_apple_c1"
+    }
+  ],
+  "batches": [
+    [
+      "10_how_high",
+      "07_ball_to_moon"
+    ],
+    [
+      "05_heavens_map_c1",
+      "07_night_field_c1",
+      "01_cambridge_closes_c1",
+      "03_christmas_birth_c1",
+      "05_working_alone_c1"
+    ],
+    [
+      "08_the_apple_c1",
+      "11_explorer_apple_c1",
+      "01_really_falling_c1",
+      "05_shot_orbit_c1",
+      "05_shot_orbit_c2"
+    ],
+    [
+      "05_minute_second_c1",
+      "05_minute_second_c2",
+      "08_halley_visit_c1",
+      "08_halley_visit_c2",
+      "04_comet_1758_c1"
+    ],
+    [
+      "05_iss_orbit_c1",
+      "05_iss_orbit_c2",
+      "06_iss_apple_c1"
+    ]
+  ]
+}

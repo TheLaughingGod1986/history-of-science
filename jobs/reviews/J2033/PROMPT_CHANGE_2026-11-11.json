@@ -1,0 +1,54 @@
+{
+  "job": "J2033",
+  "film": "HOS:009",
+  "date": "2026-11-11",
+  "by": "claude (acting Chief, queue side)",
+  "ruling": [
+    "history-of-science#180 comment 6784284999",
+    "history-of-science#180 comment 6784299215",
+    "history-of-science#180 comment 6785808071"
+  ],
+  "why": "Flow refused 08_halley_visit_c1 take 1 under its policy on generating prominent people. The Chief ruled: take the names out of the prompt and describe the two men, word for word as below; everything else in the prompt stays. Identity on screen comes from the side label and the narration, not from the prompt.",
+  "board": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/parts/part-04_plates_v05.json",
+  "board_sha256_old": "e720634e12376fb566b84308351b36d76774f63a3d22cea9cdf6afe0060208a8",
+  "board_sha256_new": "1ff0b2d63ef9bd0a86df0db2cf85c53ad83a08a9edb61cef4f4ed4be5f2fb6c8",
+  "scope_rows_repinned": [
+    "05_minute_second_c1",
+    "05_minute_second_c2",
+    "08_halley_visit_c1",
+    "08_halley_visit_c2"
+  ],
+  "wording_old": "Edmond Halley at about twenty-eight, long dark natural hair, no wig, and a travelling coat sits across from Isaac Newton at about forty-one, his own dark hair, no wig, a plain dark coat.",
+  "wording_new": "A young astronomer of about twenty-eight, long dark natural hair, no wig, travelling coat, sits across from an older scholar of about forty-one, his own dark hair, no wig, plain dark coat.",
+  "rows": [
+    {
+      "id": "08_halley_visit",
+      "field": "prompt",
+      "old": "Premium Animistry-class 3D cartoon. A panelled room at Trinity, books piled on every surface. Edmond Halley at about twenty-eight, long dark natural hair, no wig, and a travelling coat sits across from Isaac Newton at about forty-one, his own dark hair, no wig, a plain dark coat. Window light. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "new": "Premium Animistry-class 3D cartoon. A panelled room at Trinity, books piled on every surface. A young astronomer of about twenty-eight, long dark natural hair, no wig, travelling coat, sits across from an older scholar of about forty-one, his own dark hair, no wig, plain dark coat. Window light. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "note": "parent row, made in tranche 1 with the old wording; not made again. Changed so the board holds one wording for the shot."
+    },
+    {
+      "id": "08_halley_visit_c1",
+      "field": "prompt",
+      "old": "Premium Animistry-class 3D cartoon. Same shot continues from the last frame of 08_halley_visit, camera keeps moving: A panelled room at Trinity, books piled on every surface. Edmond Halley at about twenty-eight, long dark natural hair, no wig, and a travelling coat sits across from Isaac Newton at about forty-one, his own dark hair, no wig, a plain dark coat. Window light. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "new": "Premium Animistry-class 3D cartoon. Same shot continues from the last frame of 08_halley_visit, camera keeps moving: A panelled room at Trinity, books piled on every surface. A young astronomer of about twenty-eight, long dark natural hair, no wig, travelling coat, sits across from an older scholar of about forty-one, his own dark hair, no wig, plain dark coat. Window light. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "note": "take 1 refused by Flow at 0 credits; take 2 is the one retry."
+    },
+    {
+      "id": "08_halley_visit_c2",
+      "field": "prompt",
+      "old": "Premium Animistry-class 3D cartoon. Same shot continues from the last frame of 08_halley_visit_c1, camera keeps moving: A panelled room at Trinity, books piled on every surface. Edmond Halley at about twenty-eight, long dark natural hair, no wig, and a travelling coat sits across from Isaac Newton at about forty-one, his own dark hair, no wig, a plain dark coat. Window light. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "new": "Premium Animistry-class 3D cartoon. Same shot continues from the last frame of 08_halley_visit_c1, camera keeps moving: A panelled room at Trinity, books piled on every surface. A young astronomer of about twenty-eight, long dark natural hair, no wig, travelling coat, sits across from an older scholar of about forty-one, his own dark hair, no wig, plain dark coat. Window light. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "note": "not yet submitted; one attempt."
+    }
+  ],
+  "unchanged": "Model, length, aspect, start frame, price, side label, narration lines and every other row of the board.",
+  "other_unsubmitted_rows_checked": {
+    "04_comet_1758_c1": "names no person",
+    "05_iss_orbit_c1": "names no person",
+    "05_iss_orbit_c2": "names no person",
+    "06_iss_apple_c1": "names no person"
+  },
+  "if_refused_again": "No retry and no Vertex fallback. Swap the row to a free reuse or a code graphic and note the swap for J2034."
+}

@@ -1,0 +1,19 @@
+{
+  "id": "s06_ingenhousz_oxygen",
+  "sha256": "3daf38e7f3f5becb5e63c838fba6dfdf1d662ef3f6782cd55961d8b992cd11ae",
+  "command": [
+    "python3",
+    "/private/tmp/J2230-codex-hos/00_Brand/Channel-Setup/tools/gate_shorts_open.py",
+    "check",
+    "/Volumes/data/mac-mini-archive/2026-11-05/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/hos_006_s06_ingenhousz_oxygen_v01.mp4",
+    "--air-date",
+    "2026-11-28",
+    "--meta",
+    "/private/tmp/J2230-codex-hos/02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/SHORT_s06_ingenhousz_oxygen_v01.json",
+    "--sheet-dir",
+    "/Users/benjaminoats/_desk/renders/J2230/preflight/s06_ingenhousz_oxygen"
+  ],
+  "exit": 1,
+  "stdout": "FAIL  hos_006_s06_ingenhousz_oxygen_v01.mp4  dur=25.33s  audio=-24.8dB  motion=15.38  f0diff=2.77  cut1=3.07s  vo_onset=0.00s  tail_gap=0.58s  vo_src=mix  dhash=9296173351587f6c\n   FAIL  integrated loudness -21.4 LUFS outside -14.5..-13.5 (target -14.0)\n   FAIL  first cut at 3.07s > 3.0s (scene-change detect)\n   sheet /Users/benjaminoats/_desk/renders/J2230/preflight/s06_ingenhousz_oxygen/hos_006_s06_ingenhousz_oxygen_v01_open_sheet.jpg\n",
+  "stderr": ""
+}

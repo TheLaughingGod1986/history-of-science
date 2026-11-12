@@ -1,4 +1,4 @@
-# Voice speed cap: no build may speed the VO above atempo 1.06 (AGENTS.md Never list).
+# Voice speed cap: no build may speed the VO above atempo 1.06 (the Never list, studio/RULES.md).
 # Rules: 00_Brand/Channel-Setup/tools/atempo_check.py. Runs on direct pushes to main too,
 # because Short builds often land there without a PR.
 name: Voice speed

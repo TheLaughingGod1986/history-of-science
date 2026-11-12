@@ -21,7 +21,7 @@
     {
       "part": 2,
       "path": "07_Edit-Project/parts/part-02_plates_v03.json",
-      "sha256": "e8288df2e05426a6d779f0e865b228883bc8dd1566e91c4959950902dd359809",
+      "sha256": "68696f838534ea63a62930958990a4ba6331dbb66113c55509a57440cf9e485f",
       "rows": 13,
       "counts": {
         "Quality": 11,
@@ -35,7 +35,7 @@
     {
       "part": 3,
       "path": "07_Edit-Project/parts/part-03_plates_v03.json",
-      "sha256": "ee896f9b8608441f52cc784f3e198c9488ec941e98775b14d1d89c709dd889bf",
+      "sha256": "80d0244add132376ecf7b037b14b6d563d818333ac135515bba46e2f6df02cfb",
       "rows": 12,
       "counts": {
         "Quality": 8,

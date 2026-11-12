@@ -1,0 +1,222 @@
+{
+  "job": "J2628",
+  "scope_job": "J2626",
+  "verified_at": "2026-11-11T15:40:01+00:00",
+  "worker": "gemini",
+  "film": "HOS:009",
+  "runner_commit": "9820e29d",
+  "flag": "--retakes-j2626",
+  "generated": 2,
+  "keep": 0,
+  "c2_excluded": true,
+  "perceptual_review": "Not performed in J2628; full-clip half-second sheets prepared in review_J2629_sheets/ for J2629",
+  "credits_reserved_cap": 200,
+  "credits_spent": 200,
+  "live_balance_before_batch": 10840,
+  "live_balance_before_second_take": 10740,
+  "live_balance_after_batch": 10640,
+  "pending_charges": false,
+  "reservation": {
+    "cap": 200,
+    "film": "HOS:009",
+    "active": false
+  },
+  "charge_summary": {
+    "HOS:009:P03:01_really_falling_c1:t3": {
+      "reservation": "J2626",
+      "amount": 100,
+      "status": "CHARGED",
+      "posted": false
+    },
+    "HOS:009:P04:05_minute_second_c1:t3": {
+      "reservation": "J2626",
+      "amount": 100,
+      "status": "CHARGED",
+      "posted": false
+    }
+  },
+  "spend_receipts": [
+    {
+      "at": "2026-11-11T15:31:18+00:00",
+      "by": "codex",
+      "charge": "HOS:009:P03:01_really_falling_c1:t3",
+      "id": "flow:read:HOS:009:P03:01_really_falling_c1:t3",
+      "kind": "record",
+      "left": 10840,
+      "note": "Configured UI before Create",
+      "pool": "flow",
+      "source": "shared-flow"
+    },
+    {
+      "amount": 100,
+      "at": "2026-11-11T15:31:18+00:00",
+      "by": "codex",
+      "charge": "HOS:009:P03:01_really_falling_c1:t3",
+      "film": "HOS:009",
+      "id": "flow:spend:HOS:009:P03:01_really_falling_c1:t3",
+      "kind": "spend",
+      "pool": "flow",
+      "source": "shared-flow",
+      "what": "HOS:009:P03:01_really_falling_c1:t3"
+    },
+    {
+      "at": "2026-11-11T15:33:26+00:00",
+      "by": "codex",
+      "charge": "HOS:009:P04:05_minute_second_c1:t3",
+      "id": "flow:read:HOS:009:P04:05_minute_second_c1:t3",
+      "kind": "record",
+      "left": 10740,
+      "note": "Configured UI before Create",
+      "pool": "flow",
+      "source": "shared-flow"
+    },
+    {
+      "amount": 100,
+      "at": "2026-11-11T15:33:26+00:00",
+      "by": "codex",
+      "charge": "HOS:009:P04:05_minute_second_c1:t3",
+      "film": "HOS:009",
+      "id": "flow:spend:HOS:009:P04:05_minute_second_c1:t3",
+      "kind": "spend",
+      "pool": "flow",
+      "source": "shared-flow",
+      "what": "HOS:009:P04:05_minute_second_c1:t3"
+    }
+  ],
+  "detached_run": {
+    "tmux_session": "hos009-tranche2",
+    "log": "/Users/benjaminoats/_desk/logs/J2628-retakes-gemini.log",
+    "done": "/Users/benjaminoats/_desk/logs/J2628-retakes-gemini.done",
+    "note": "Take 1 completed and archived; Take 2 was created, charged (100 credits) and downloaded (724,204 bytes raw; 595,548 bytes silent, 1280x720, 7.917 s, decode_ok=true), then reconciled via strip_audio/technical_report/archive_verified/write_receipt/append_ledger/note_retake_resolution after orbit_flow_veo_ui.already_done flagged the low-motion diagram size (<750 KB)."
+  },
+  "outputs": [
+    {
+      "part": 3,
+      "plate_id": "01_really_falling_c1",
+      "take": 3,
+      "use_s": 5.26,
+      "file": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part03/raw/v05_tranche2/01_really_falling_c1_t3.mp4",
+      "sha256": "cef66d0f83a641ce7ff3c5c16f08d3daf6d67cc2e2f29d496fa74d70cd51b124",
+      "input": {
+        "file": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part03/refs/v05_flow_stills/01_really_falling_c1_from_01_really_falling.png",
+        "sha256": "977108833c437f925fe07778ab2efeaeb92b11c2f62e9446016a2617fb82a058"
+      },
+      "archive": {
+        "dest": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/01_really_falling_c1_t3.mp4",
+        "sha256": "cef66d0f83a641ce7ff3c5c16f08d3daf6d67cc2e2f29d496fa74d70cd51b124",
+        "verified": true
+      },
+      "archive_receipt": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/01_really_falling_c1_t3.mp4.receipt.json",
+      "archive_create_evidence": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/01_really_falling_c1_t3.mp4.create.json",
+      "status": "PENDING_REVIEW",
+      "file_state": "GENERATED",
+      "generated": true,
+      "review": "PENDING_REVIEW",
+      "keep": false,
+      "shared_charge": "HOS:009:P03:01_really_falling_c1:t3",
+      "ui_balance_before_create": 10840,
+      "credits_used": 100,
+      "technical_rechecked": {
+        "ok": true,
+        "review": "PENDING_REVIEW",
+        "keep": false,
+        "sha256": "cef66d0f83a641ce7ff3c5c16f08d3daf6d67cc2e2f29d496fa74d70cd51b124",
+        "bytes": 4276963,
+        "duration_s": 7.916667,
+        "audio_streams": 0,
+        "width": 1280,
+        "height": 720,
+        "decode_ok": true
+      },
+      "j2629_sheet": {
+        "sheet_file": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/review_J2629_sheets/P03_01_really_falling_c1_t3_sheet.jpg",
+        "sheet_sha256": "193edd250fae602c87d3e7bf1c691becd58e26668fcd21a23ac6f3b13935e072",
+        "tile_count": 19,
+        "sampled_timestamps_s": [
+          0.0,
+          0.5,
+          1.0,
+          1.5,
+          2.0,
+          2.5,
+          3.0,
+          3.5,
+          4.0,
+          4.5,
+          5.0,
+          5.26,
+          5.5,
+          6.0,
+          6.5,
+          7.0,
+          7.5,
+          7.88
+        ]
+      }
+    },
+    {
+      "part": 4,
+      "plate_id": "05_minute_second_c1",
+      "take": 3,
+      "use_s": 6.76,
+      "file": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part04/raw/v05_tranche2/05_minute_second_c1_t3.mp4",
+      "sha256": "ae8f6dc6bd72bb6316b9ea67fedc69947261783ef17040a7f0cc22c240a8c05c",
+      "input": {
+        "file": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part04/refs/v05_flow_stills/05_minute_second_c1_from_05_minute_second.png",
+        "sha256": "973543d2e8129dfe3ba30a188b90237dd53a936fd5f3c5bc18d31a6137f9c342"
+      },
+      "archive": {
+        "dest": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/05_minute_second_c1_t3.mp4",
+        "sha256": "ae8f6dc6bd72bb6316b9ea67fedc69947261783ef17040a7f0cc22c240a8c05c",
+        "verified": true
+      },
+      "archive_receipt": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/05_minute_second_c1_t3.mp4.receipt.json",
+      "archive_create_evidence": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/05_minute_second_c1_t3.mp4.create.json",
+      "status": "PENDING_REVIEW",
+      "file_state": "GENERATED",
+      "generated": true,
+      "review": "PENDING_REVIEW",
+      "keep": false,
+      "shared_charge": "HOS:009:P04:05_minute_second_c1:t3",
+      "ui_balance_before_create": 10740,
+      "credits_used": 100,
+      "technical_rechecked": {
+        "ok": true,
+        "review": "PENDING_REVIEW",
+        "keep": false,
+        "sha256": "ae8f6dc6bd72bb6316b9ea67fedc69947261783ef17040a7f0cc22c240a8c05c",
+        "bytes": 595548,
+        "duration_s": 7.916667,
+        "audio_streams": 0,
+        "width": 1280,
+        "height": 720,
+        "decode_ok": true
+      },
+      "j2629_sheet": {
+        "sheet_file": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/review_J2629_sheets/P04_05_minute_second_c1_t3_sheet.jpg",
+        "sheet_sha256": "c9ee75abd3aede6ba88c3e624855a30d19dec1f75c4d7a024c2a3b45892a4d06",
+        "tile_count": 19,
+        "sampled_timestamps_s": [
+          0.0,
+          0.5,
+          1.0,
+          1.5,
+          2.0,
+          2.5,
+          3.0,
+          3.5,
+          4.0,
+          4.5,
+          5.0,
+          5.5,
+          6.0,
+          6.5,
+          6.76,
+          7.0,
+          7.5,
+          7.88
+        ]
+      }
+    }
+  ]
+}

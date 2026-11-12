@@ -1,0 +1,318 @@
+{
+  "audit_date": "2026-11-07",
+  "job_id": "J2373",
+  "agent": "macbook-2",
+  "sources": {
+    "snapshot_latest": "05_Analytics/hos/snapshots/2026-11-07.json",
+    "snapshot_latest_takenAt": "2026-11-07T06:40:30.714Z",
+    "snapshot_prior_7d": "05_Analytics/hos/snapshots/2026-10-31.json",
+    "snapshot_prior_audit": "05_Analytics/hos/snapshots/2026-10-26.json",
+    "channel_daily_updatedAt": null,
+    "channel_daily_through": "2026-11-05",
+    "studio_ctr_readAt": "2026-11-04T14:56:50.680878+00:00"
+  },
+  "channel_headline": {
+    "live_2026_11_07": "hos",
+    "live_2026_10_31": "hos",
+    "live_2026_10_26": "hos",
+    "settled_windows": null
+  },
+  "competitors_30d_sample": {
+    "pulled_at": "2026-11-07T16:21:22Z",
+    "method": "signed-out YouTube channel /videos and /shorts ytInitialData",
+    "channels": {
+      "Veritasium": [
+        {
+          "id": "KfODG5REyss",
+          "title": "I finally saw quantum physics with my own eyes...",
+          "published": "3 days ago",
+          "views": "9.1M",
+          "format": "Long"
+        },
+        {
+          "id": "eyZEqSPeMwg",
+          "title": "No device could prove Einstein wrong... until now",
+          "published": "2 weeks ago",
+          "views": "7.7M",
+          "format": "Long"
+        },
+        {
+          "id": "NiCgcUTL9_Q",
+          "title": "Fiber Optics are so much cooler than I thought",
+          "published": "3 weeks ago",
+          "views": "15M",
+          "format": "Long"
+        },
+        {
+          "id": "ONAuUyml0yI",
+          "title": "We're trying something new...",
+          "published": "1 month ago",
+          "views": "1.4M",
+          "format": "Long"
+        },
+        {
+          "id": "JsBZOcqZerk",
+          "title": "The Insane Real Engineering of the Nazi Enigma Machine",
+          "published": "1 month ago",
+          "views": "21M",
+          "format": "Long"
+        },
+        {
+          "id": "rL0qEmTRI-I",
+          "title": "Why do deserts get cold at night?",
+          "published": "recent Short",
+          "views": "909K",
+          "format": "Short"
+        },
+        {
+          "id": "zEmabFZvdqA",
+          "title": "What happens if I lower this weight into the water?",
+          "published": "recent Short",
+          "views": "3.2M",
+          "format": "Short"
+        },
+        {
+          "id": "Kap7mRzr13w",
+          "title": "Why doesn't your heart get tired like other muscles do?",
+          "published": "recent Short",
+          "views": "1.4M",
+          "format": "Short"
+        }
+      ],
+      "SciShow": [
+        {
+          "id": "N9zYE5Ui97g",
+          "title": "4 Supervolcanoes You\u2019ve Never Heard Of",
+          "published": "22 hours ago",
+          "views": "139K",
+          "format": "Long"
+        },
+        {
+          "id": "1EX702Au9oQ",
+          "title": "The Terrifying Man O\u2019 War Is Spreading",
+          "published": "1 day ago",
+          "views": "225K",
+          "format": "Long"
+        },
+        {
+          "id": "i7esSCr2UJk",
+          "title": "Why Is There No Vitamin F?",
+          "published": "2 days ago",
+          "views": "554K",
+          "format": "Long"
+        },
+        {
+          "id": "M6nefnNpOZA",
+          "title": "What Was the First Alcohol?",
+          "published": "3 days ago",
+          "views": "179K",
+          "format": "Long"
+        },
+        {
+          "id": "3bc9r8zk36s",
+          "title": "5 Maps That Changed History",
+          "published": "7 days ago",
+          "views": "168K",
+          "format": "Long"
+        },
+        {
+          "id": "1nVwqDL3XCI",
+          "title": "AI Psychosis Is Killing People. It\u2019s Time to Talk About It",
+          "published": "9 days ago",
+          "views": "920K",
+          "format": "Long"
+        },
+        {
+          "id": "dfA_VA20A2Y",
+          "title": "How To Hold Something That's 10,000,000 Degrees",
+          "published": "10 days ago",
+          "views": "248K",
+          "format": "Long"
+        },
+        {
+          "id": "cqDZt0BOlBI",
+          "title": "The Plane Crash That Gave Us Cataract Surgery",
+          "published": "2 weeks ago",
+          "views": "186K",
+          "format": "Long"
+        },
+        {
+          "id": "ua29hkUXwg4",
+          "title": "Why Can't Every Shot Be a Pill?",
+          "published": "2 weeks ago",
+          "views": "162K",
+          "format": "Long"
+        }
+      ],
+      "TED-Ed": [
+        {
+          "id": "bw5tzcoEG88",
+          "title": "How to effectively use visuals in your presentation",
+          "published": "2 days ago",
+          "views": "111K",
+          "format": "Long"
+        },
+        {
+          "id": "8EtdC9Bjubk",
+          "title": "Can you solve the Billy Bonka riddle? - Edwin F. Meyer",
+          "published": "4 days ago",
+          "views": "631K",
+          "format": "Long"
+        },
+        {
+          "id": "8RPK5KwYhgA",
+          "title": "What if you didn\u2019t brush your teeth for a year? - Justin Merritt",
+          "published": "9 days ago",
+          "views": "1.2M",
+          "format": "Long"
+        },
+        {
+          "id": "nXvKDYRvTno",
+          "title": "Scary stories to watch in the dark (if you dare\u2026)",
+          "published": "11 days ago",
+          "views": "434K",
+          "format": "Long"
+        },
+        {
+          "id": "a_4eFB8pPwI",
+          "title": "5 sneaky ways stores get you to spend more",
+          "published": "2 weeks ago",
+          "views": "490K",
+          "format": "Long"
+        },
+        {
+          "id": "NPJ9KZqrl50",
+          "title": "Why does this animal never age? - Raymond Adkins",
+          "published": "2 weeks ago",
+          "views": "427K",
+          "format": "Long"
+        },
+        {
+          "id": "av3zdxYvCp8",
+          "title": "3 things to never do with a credit card",
+          "published": "3 weeks ago",
+          "views": "1.1M",
+          "format": "Long"
+        },
+        {
+          "id": "h6CmKF-mN2U",
+          "title": "Which is better: Buying or renting a home? - Ella Feldman",
+          "published": "4 weeks ago",
+          "views": "773K",
+          "format": "Long"
+        }
+      ],
+      "Kings and Generals": [
+        {
+          "id": "U8qHNk0xPss",
+          "title": "Not only Janissaries - The Ottoman Empire\u2019s Elite Army",
+          "published": "2 days ago",
+          "views": "205K",
+          "format": "Long"
+        },
+        {
+          "id": "HARdgJjiR7s",
+          "title": "From India to Europe: The Romani Odyssey",
+          "published": "4 days ago",
+          "views": "167K",
+          "format": "Long"
+        },
+        {
+          "id": "ytmwsMU1DMA",
+          "title": "Yugoslavia 1991: How the Wars Began",
+          "published": "6 days ago",
+          "views": "291K",
+          "format": "Long"
+        },
+        {
+          "id": "QE8KlIHvmk0",
+          "title": "Medieval Horror Stories",
+          "published": "9 days ago",
+          "views": "97K",
+          "format": "Long"
+        },
+        {
+          "id": "H2xV6FnbSkQ",
+          "title": "Why Spain Collapsed Into Civil War - Kings and Generals Modern",
+          "published": "11 days ago",
+          "views": "439K",
+          "format": "Long"
+        },
+        {
+          "id": "hSMwc_RRqiQ",
+          "title": "How the Ottomans Became a Superpower and Tripled in Size",
+          "published": "13 days ago",
+          "views": "363K",
+          "format": "Long"
+        }
+      ],
+      "Big Think": [
+        {
+          "id": "e41IyOlfj7I",
+          "title": "The mysteries that connect biology and cosmology | Paul Davies: Full Interview",
+          "published": "1 day ago",
+          "views": "126K",
+          "format": "Long"
+        },
+        {
+          "id": "KLeOL1CFZVM",
+          "title": "The absurd power of shared belief | Lisa Feldman Barrett",
+          "published": "5 days ago",
+          "views": "71K",
+          "format": "Long"
+        },
+        {
+          "id": "XfxQL1LP2BM",
+          "title": "1 in 6 people are narcissists. Learn to spot them early | Ramani Durvasula: Full Interview",
+          "published": "8 days ago",
+          "views": "287K",
+          "format": "Long"
+        },
+        {
+          "id": "YBr-dz44Bwo",
+          "title": "The science of how your past contributes to your present | Lisa Feldman Barrett",
+          "published": "12 days ago",
+          "views": "148K",
+          "format": "Long"
+        },
+        {
+          "id": "9WJ-GGD212s",
+          "title": "Finding and protecting selfhood in the age of social contagion | Luke Burgis: Full Interview",
+          "published": "2 weeks ago",
+          "views": "183K",
+          "format": "Long"
+        },
+        {
+          "id": "8RUjEGFFLTc",
+          "title": "The famous tree-falling thought experiment has a new answer | Lisa Feldman Barrett",
+          "published": "2 weeks ago",
+          "views": "188K",
+          "format": "Long"
+        },
+        {
+          "id": "HdJxqW0-uZA",
+          "title": "The shock of doing nothing | Andrew Holecek",
+          "published": "3 weeks ago",
+          "views": "692K",
+          "format": "Long"
+        }
+      ],
+      "Real Engineering": [
+        {
+          "id": "y1KipwEoRBA",
+          "title": "The Rise and Fall of the Concorde",
+          "published": "8 days ago",
+          "views": "556K",
+          "format": "Long"
+        },
+        {
+          "id": "6B96xetwrqI",
+          "title": "The Plane That's 38% Nose",
+          "published": "1 month ago",
+          "views": "2.5M",
+          "format": "Long"
+        }
+      ]
+    }
+  }
+}

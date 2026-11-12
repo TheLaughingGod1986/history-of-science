@@ -1,0 +1,4445 @@
+{
+  "collected": "2026-10-28T18:31:17.908519+00:00",
+  "cutoff": "2026-07-30T18:31:17.908519+00:00",
+  "method": "Public yt-dlp tabs and watch metadata; views / max(age days,1); tabs separate Shorts from longs; approximate date only screens to 150d, exact watch date filters to 90d; groups <20 overlap, never independent fast/slow samples.",
+  "groups": [
+    {
+      "channel": "veritasium",
+      "tab": "videos",
+      "count_90d": 6,
+      "fast_ids": [
+        "eyZEqSPeMwg",
+        "NiCgcUTL9_Q",
+        "JsBZOcqZerk",
+        "wt4p2oalmRY",
+        "ONAuUyml0yI",
+        "J1WoNuemKOg"
+      ],
+      "slow_ids": [
+        "J1WoNuemKOg",
+        "ONAuUyml0yI",
+        "wt4p2oalmRY",
+        "JsBZOcqZerk",
+        "NiCgcUTL9_Q",
+        "eyZEqSPeMwg"
+      ],
+      "overlap_ids": [
+        "J1WoNuemKOg",
+        "JsBZOcqZerk",
+        "NiCgcUTL9_Q",
+        "ONAuUyml0yI",
+        "eyZEqSPeMwg",
+        "wt4p2oalmRY"
+      ],
+      "all_90d": [
+        {
+          "id": "eyZEqSPeMwg",
+          "title": "No device could prove Einstein wrong... until now",
+          "published": "2026-10-23T18:46:44+00:00",
+          "timestamp_precision": "seconds",
+          "views": 6360292,
+          "duration": 2067,
+          "channel": "Veritasium",
+          "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+          "url": "https://www.youtube.com/watch?v=eyZEqSPeMwg",
+          "age_days": 4.989281348599537,
+          "views_per_day": 1274791.2085144883,
+          "under_one_day": false
+        },
+        {
+          "id": "NiCgcUTL9_Q",
+          "title": "The Insane Engineering of Fiber Optics",
+          "published": "2026-10-12T17:11:45+00:00",
+          "timestamp_precision": "seconds",
+          "views": 13734586,
+          "duration": 2072,
+          "channel": "Veritasium",
+          "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+          "url": "https://www.youtube.com/watch?v=NiCgcUTL9_Q",
+          "age_days": 16.055241996747686,
+          "views_per_day": 855458.0493263333,
+          "under_one_day": false
+        },
+        {
+          "id": "JsBZOcqZerk",
+          "title": "The Insane Real Engineering of the Nazi Enigma Machine",
+          "published": "2026-09-21T17:49:57+00:00",
+          "timestamp_precision": "seconds",
+          "views": 21069303,
+          "duration": 2861,
+          "channel": "Veritasium",
+          "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+          "url": "https://www.youtube.com/watch?v=JsBZOcqZerk",
+          "age_days": 37.0287142189699,
+          "views_per_day": 568999.0442391905,
+          "under_one_day": false
+        },
+        {
+          "id": "wt4p2oalmRY",
+          "title": "Is spider web really stronger than steel?",
+          "published": "2026-08-02T13:21:11+00:00",
+          "timestamp_precision": "seconds",
+          "views": 9864561,
+          "duration": 1617,
+          "channel": "Veritasium",
+          "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+          "url": "https://www.youtube.com/watch?v=wt4p2oalmRY",
+          "age_days": 87.21535773748842,
+          "views_per_day": 113105.77925612112,
+          "under_one_day": false
+        },
+        {
+          "id": "ONAuUyml0yI",
+          "title": "We're trying something new...",
+          "published": "2026-09-30T19:19:10+00:00",
+          "timestamp_precision": "seconds",
+          "views": 1420630,
+          "duration": 307,
+          "channel": "Veritasium",
+          "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+          "url": "https://www.youtube.com/watch?v=ONAuUyml0yI",
+          "age_days": 27.966758200451387,
+          "views_per_day": 50797.092384381926,
+          "under_one_day": false
+        },
+        {
+          "id": "J1WoNuemKOg",
+          "title": "We sent a camera to space to film the solar eclipse",
+          "published": "2026-08-17T14:30:16+00:00",
+          "timestamp_precision": "seconds",
+          "views": 2787047,
+          "duration": 1365,
+          "channel": "Veritasium",
+          "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+          "url": "https://www.youtube.com/watch?v=J1WoNuemKOg",
+          "age_days": 72.16738320045138,
+          "views_per_day": 38619.20546930082,
+          "under_one_day": false
+        }
+      ],
+      "tab_error": null,
+      "listing_capped": true
+    },
+    {
+      "channel": "veritasium",
+      "tab": "shorts",
+      "count_90d": 14,
+      "fast_ids": [
+        "Kap7mRzr13w",
+        "j9p3Sn8ROL4",
+        "wxLc-gFORPQ",
+        "oR94cicO7xM",
+        "b3KpFdb1pW8",
+        "6U6Z6pb6ewI",
+        "IHkp5Kq72ro",
+        "F5_G0AHfYhI",
+        "VKlulHwMxgU",
+        "O3a99HNskNk"
+      ],
+      "slow_ids": [
+        "nHAFnH3xRl4",
+        "hPoJWjJ9Ao8",
+        "_1G8nrmBKeY",
+        "5U-V0y-fkSw",
+        "O3a99HNskNk",
+        "VKlulHwMxgU",
+        "F5_G0AHfYhI",
+        "IHkp5Kq72ro",
+        "6U6Z6pb6ewI",
+        "b3KpFdb1pW8"
+      ],
+      "overlap_ids": [
+        "6U6Z6pb6ewI",
+        "F5_G0AHfYhI",
+        "IHkp5Kq72ro",
+        "O3a99HNskNk",
+        "VKlulHwMxgU",
+        "b3KpFdb1pW8"
+      ],
+      "all_90d": [
+        {
+          "id": "Kap7mRzr13w",
+          "title": "Why doesn't your heart get tired like other muscles do?",
+          "published": "2026-10-27T14:00:11+00:00",
+          "timestamp_precision": "seconds",
+          "views": 769467,
+          "duration": 73,
+          "channel": "Veritasium",
+          "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+          "url": "https://www.youtube.com/watch?v=Kap7mRzr13w",
+          "age_days": 1.1882744041550926,
+          "views_per_day": 647549.9239143502,
+          "under_one_day": false
+        },
+        {
+          "id": "j9p3Sn8ROL4",
+          "title": "What is edge dislocation?",
+          "published": "2026-10-09T13:00:03+00:00",
+          "timestamp_precision": "seconds",
+          "views": 4081901,
+          "duration": 70,
+          "channel": "Veritasium",
+          "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+          "url": "https://www.youtube.com/watch?v=j9p3Sn8ROL4",
+          "age_days": 19.230033663414353,
+          "views_per_day": 212266.97110603214,
+          "under_one_day": false
+        },
+        {
+          "id": "wxLc-gFORPQ",
+          "title": "Is there something faster than light?",
+          "published": "2026-10-22T13:00:17+00:00",
+          "timestamp_precision": "seconds",
+          "views": 1221695,
+          "duration": 58,
+          "channel": "Veritasium",
+          "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+          "url": "https://www.youtube.com/watch?v=wxLc-gFORPQ",
+          "age_days": 6.2298716263773155,
+          "views_per_day": 196102.75672894056,
+          "under_one_day": false
+        },
+        {
+          "id": "oR94cicO7xM",
+          "title": "The Most Dangerous Escalator In Europe",
+          "published": "2026-09-06T13:00:26+00:00",
+          "timestamp_precision": "seconds",
+          "views": 7602655,
+          "duration": 77,
+          "channel": "Veritasium",
+          "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+          "url": "https://www.youtube.com/watch?v=oR94cicO7xM",
+          "age_days": 52.229767459710644,
+          "views_per_day": 145561.72408511274,
+          "under_one_day": false
+        },
+        {
+          "id": "b3KpFdb1pW8",
+          "title": "We Took $10,000 From @mkbhd's Locked iPhone",
+          "published": "2026-08-26T15:00:02+00:00",
+          "timestamp_precision": "seconds",
+          "views": 6132437,
+          "duration": 49,
+          "channel": "Veritasium",
+          "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+          "url": "https://www.youtube.com/watch?v=b3KpFdb1pW8",
+          "age_days": 63.14671190415509,
+          "views_per_day": 97114.11433912654,
+          "under_one_day": false
+        },
+        {
+          "id": "6U6Z6pb6ewI",
+          "title": "When you lose weight where does it go?",
+          "published": "2026-10-15T13:00:26+00:00",
+          "timestamp_precision": "seconds",
+          "views": 1275893,
+          "duration": 69,
+          "channel": "Veritasium",
+          "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+          "url": "https://www.youtube.com/watch?v=6U6Z6pb6ewI",
+          "age_days": 13.229767459710649,
+          "views_per_day": 96441.0753163688,
+          "under_one_day": false
+        },
+        {
+          "id": "IHkp5Kq72ro",
+          "title": "How Dangerous Are Non-Stick Pans?",
+          "published": "2026-10-01T18:26:42+00:00",
+          "timestamp_precision": "seconds",
+          "views": 1663987,
+          "duration": 101,
+          "channel": "Veritasium",
+          "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+          "url": "https://www.youtube.com/watch?v=IHkp5Kq72ro",
+          "age_days": 27.00319338563657,
+          "views_per_day": 61621.8599125058,
+          "under_one_day": false
+        },
+        {
+          "id": "F5_G0AHfYhI",
+          "title": "A Physics Professor Bet Me $10,000 I'm Wrong...",
+          "published": "2026-09-02T13:00:04+00:00",
+          "timestamp_precision": "seconds",
+          "views": 3069949,
+          "duration": 91,
+          "channel": "Veritasium",
+          "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+          "url": "https://www.youtube.com/watch?v=F5_G0AHfYhI",
+          "age_days": 56.230022089340274,
+          "views_per_day": 54596.26167534409,
+          "under_one_day": false
+        },
+        {
+          "id": "VKlulHwMxgU",
+          "title": "What happens to these balloons when you open the valve?",
+          "published": "2026-09-24T13:00:24+00:00",
+          "timestamp_precision": "seconds",
+          "views": 1571263,
+          "duration": 93,
+          "channel": "Veritasium",
+          "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+          "url": "https://www.youtube.com/watch?v=VKlulHwMxgU",
+          "age_days": 34.229790607858796,
+          "views_per_day": 45903.37749945963,
+          "under_one_day": false
+        },
+        {
+          "id": "O3a99HNskNk",
+          "title": "The Scariest Chart In Engineering",
+          "published": "2026-09-10T13:00:12+00:00",
+          "timestamp_precision": "seconds",
+          "views": 1585136,
+          "duration": 71,
+          "channel": "Veritasium",
+          "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+          "url": "https://www.youtube.com/watch?v=O3a99HNskNk",
+          "age_days": 48.22992949674768,
+          "views_per_day": 32866.23091802138,
+          "under_one_day": false
+        },
+        {
+          "id": "5U-V0y-fkSw",
+          "title": "It's impossible to choose a number at random",
+          "published": "2026-08-24T13:08:34+00:00",
+          "timestamp_precision": "seconds",
+          "views": 1971845,
+          "duration": 100,
+          "channel": "Veritasium",
+          "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+          "url": "https://www.youtube.com/watch?v=5U-V0y-fkSw",
+          "age_days": 65.2241193115625,
+          "views_per_day": 30231.837866309746,
+          "under_one_day": false
+        },
+        {
+          "id": "_1G8nrmBKeY",
+          "title": "How do submarines know where they are?",
+          "published": "2026-08-06T13:00:34+00:00",
+          "timestamp_precision": "seconds",
+          "views": 2456313,
+          "duration": 91,
+          "channel": "Veritasium",
+          "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+          "url": "https://www.youtube.com/watch?v=_1G8nrmBKeY",
+          "age_days": 83.22967486711805,
+          "views_per_day": 29512.46660426914,
+          "under_one_day": false
+        },
+        {
+          "id": "hPoJWjJ9Ao8",
+          "title": "Heating A Ball Just By Squeezing It",
+          "published": "2026-09-18T13:00:00+00:00",
+          "timestamp_precision": "seconds",
+          "views": 954798,
+          "duration": 66,
+          "channel": "Veritasium",
+          "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+          "url": "https://www.youtube.com/watch?v=hPoJWjJ9Ao8",
+          "age_days": 40.23006838563657,
+          "views_per_day": 23733.442132076852,
+          "under_one_day": false
+        },
+        {
+          "id": "nHAFnH3xRl4",
+          "title": "Could identical twins commit the perfect crime?",
+          "published": "2026-08-18T11:33:08+00:00",
+          "timestamp_precision": "seconds",
+          "views": 944471,
+          "duration": 68,
+          "channel": "Veritasium",
+          "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+          "url": "https://www.youtube.com/watch?v=nHAFnH3xRl4",
+          "age_days": 71.29039245971065,
+          "views_per_day": 13248.222760644252,
+          "under_one_day": false
+        }
+      ],
+      "tab_error": null,
+      "listing_capped": false
+    },
+    {
+      "channel": "scishow",
+      "tab": "videos",
+      "count_90d": 55,
+      "fast_ids": [
+        "dfA_VA20A2Y",
+        "p7Tb0GNawdM",
+        "9yYQHUTv9t4",
+        "SfRqo_trkNo",
+        "kBTa41cK4wM",
+        "16-xQ-Dt2mk",
+        "09Zd9k-szWw",
+        "gLkYRU2fOos",
+        "nZMyQBVBVqs",
+        "cqDZt0BOlBI"
+      ],
+      "slow_ids": [
+        "JwbvGz1z5-M",
+        "h2wnaBny4Ig",
+        "zHgKaAhSs1A",
+        "hy-IbuXXUYk",
+        "sh-8TyRgV5Y",
+        "JGN6po7Zcsg",
+        "YXh8FUD2f9o",
+        "8Kt6p_GQt_w",
+        "A8XPsYH5Jb4",
+        "0DD6u8nK4wE"
+      ],
+      "overlap_ids": [],
+      "all_90d": [
+        {
+          "id": "dfA_VA20A2Y",
+          "title": "How To Hold Something That's 10,000,000 Degrees",
+          "published": "2026-10-27T17:00:29+00:00",
+          "timestamp_precision": "seconds",
+          "views": 158126,
+          "duration": 902,
+          "channel": "SciShow",
+          "channel_id": "UCZYTClx2T1of7BRZ86-8fow",
+          "url": "https://www.youtube.com/watch?v=dfA_VA20A2Y",
+          "age_days": 1.0630660708217594,
+          "views_per_day": 148745.22321812718,
+          "under_one_day": false
+        },
+        {
+          "id": "p7Tb0GNawdM",
+          "title": "Why Weed Doesn't Work on Everyone",
+          "published": "2026-10-21T17:00:11+00:00",
+          "timestamp_precision": "seconds",
+          "views": 571633,
+          "duration": 533,
+          "channel": "SciShow",
+          "channel_id": "UCZYTClx2T1of7BRZ86-8fow",
+          "url": "https://www.youtube.com/watch?v=p7Tb0GNawdM",
+          "age_days": 7.063274404155093,
+          "views_per_day": 80930.31182021288,
+          "under_one_day": false
+        },
+        {
+          "id": "9yYQHUTv9t4",
+          "title": "The Science That Finally Explains the Dyatlov Pass Incident",
+          "published": "2026-10-09T17:00:04+00:00",
+          "timestamp_precision": "seconds",
+          "views": 1520639,
+          "duration": 2697,
+          "channel": "SciShow",
+          "channel_id": "UCZYTClx2T1of7BRZ86-8fow",
+          "url": "https://www.youtube.com/watch?v=9yYQHUTv9t4",
+          "age_days": 19.063355422673613,
+          "views_per_day": 79767.64668571301,
+          "under_one_day": false
+        },
+        {
+          "id": "SfRqo_trkNo",
+          "title": "How Many Times Can You Clone Your Clone?",
+          "published": "2026-10-26T17:00:31+00:00",
+          "timestamp_precision": "seconds",
+          "views": 148680,
+          "duration": 634,
+          "channel": "SciShow",
+          "channel_id": "UCZYTClx2T1of7BRZ86-8fow",
+          "url": "https://www.youtube.com/watch?v=SfRqo_trkNo",
+          "age_days": 2.063042922673611,
+          "views_per_day": 72068.30181085975,
+          "under_one_day": false
+        },
+        {
+          "id": "kBTa41cK4wM",
+          "title": "Scientists Can't Agree On The First Ancient City",
+          "published": "2026-09-17T17:00:37+00:00",
+          "timestamp_precision": "seconds",
+          "views": 2562102,
+          "duration": 1517,
+          "channel": "SciShow",
+          "channel_id": "UCZYTClx2T1of7BRZ86-8fow",
+          "url": "https://www.youtube.com/watch?v=kBTa41cK4wM",
+          "age_days": 41.06297347822917,
+          "views_per_day": 62394.45863213923,
+          "under_one_day": false
+        },
+        {
+          "id": "16-xQ-Dt2mk",
+          "title": "How the Color Mauve Saved Millions of Lives",
+          "published": "2026-10-19T17:00:10+00:00",
+          "timestamp_precision": "seconds",
+          "views": 478284,
+          "duration": 670,
+          "channel": "SciShow",
+          "channel_id": "UCZYTClx2T1of7BRZ86-8fow",
+          "url": "https://www.youtube.com/watch?v=16-xQ-Dt2mk",
+          "age_days": 9.063285978229167,
+          "views_per_day": 52771.58870953442,
+          "under_one_day": false
+        },
+        {
+          "id": "09Zd9k-szWw",
+          "title": "Why Doesn't Gold Tarnish?",
+          "published": "2026-10-15T17:00:17+00:00",
+          "timestamp_precision": "seconds",
+          "views": 617394,
+          "duration": 518,
+          "channel": "SciShow",
+          "channel_id": "UCZYTClx2T1of7BRZ86-8fow",
+          "url": "https://www.youtube.com/watch?v=09Zd9k-szWw",
+          "age_days": 13.06320495971065,
+          "views_per_day": 47262.061791433094,
+          "under_one_day": false
+        },
+        {
+          "id": "gLkYRU2fOos",
+          "title": "The Bizarre Case of the Tully Monster",
+          "published": "2026-10-13T17:00:06+00:00",
+          "timestamp_precision": "seconds",
+          "views": 552239,
+          "duration": 762,
+          "channel": "SciShow",
+          "channel_id": "UCZYTClx2T1of7BRZ86-8fow",
+          "url": "https://www.youtube.com/watch?v=gLkYRU2fOos",
+          "age_days": 15.063332274525463,
+          "views_per_day": 36661.14442246791,
+          "under_one_day": false
+        },
+        {
+          "id": "nZMyQBVBVqs",
+          "title": "Why Don\u2019t We Use Mothballs Anymore?",
+          "published": "2026-09-07T17:00:22+00:00",
+          "timestamp_precision": "seconds",
+          "views": 1699774,
+          "duration": 681,
+          "channel": "SciShow",
+          "channel_id": "UCZYTClx2T1of7BRZ86-8fow",
+          "url": "https://www.youtube.com/watch?v=nZMyQBVBVqs",
+          "age_days": 51.063147089340276,
+          "views_per_day": 33287.68587306358,
+          "under_one_day": false
+        },
+        {
+          "id": "cqDZt0BOlBI",
+          "title": "The Plane Crash That Gave Us Cataract Surgery",
+          "published": "2026-10-23T17:00:38+00:00",
+          "timestamp_precision": "seconds",
+          "views": 165479,
+          "duration": 502,
+          "channel": "SciShow",
+          "channel_id": "UCZYTClx2T1of7BRZ86-8fow",
+          "url": "https://www.youtube.com/watch?v=cqDZt0BOlBI",
+          "age_days": 5.062961904155093,
+          "views_per_day": 32684.227756917153,
+          "under_one_day": false
+        },
+        {
+          "id": "OWhZvY6GEK8",
+          "title": "5 Unexplored Mysteries of the Deep Sea",
+          "published": "2026-10-16T17:00:04+00:00",
+          "timestamp_precision": "seconds",
+          "views": 383165,
+          "duration": 956,
+          "channel": "SciShow",
+          "channel_id": "UCZYTClx2T1of7BRZ86-8fow",
+          "url": "https://www.youtube.com/watch?v=OWhZvY6GEK8",
+          "age_days": 12.063355422673611,
+          "views_per_day": 31762.72161224931,
+          "under_one_day": false
+        },
+        {
+          "id": "JpR3oeTlzos",
+          "title": "Ancient Octopuses Were MUCH Bigger Than We Thought",
+          "published": "2026-10-01T17:00:38+00:00",
+          "timestamp_precision": "seconds",
+          "views": 752556,
+          "duration": 722,
+          "channel": "SciShow",
+          "channel_id": "UCZYTClx2T1of7BRZ86-8fow",
+          "url": "https://www.youtube.com/watch?v=JpR3oeTlzos",
+          "age_days": 27.06296190415509,
+          "views_per_day": 27807.599281453997,
+          "under_one_day": false
+        },
+        {
+          "id": "ua29hkUXwg4",
+          "title": "Why Can't Every Shot Be a Pill?",
+          "published": "2026-10-22T17:00:20+00:00",
+          "timestamp_precision": "seconds",
+          "views": 153719,
+          "duration": 520,
+          "channel": "SciShow",
+          "channel_id": "UCZYTClx2T1of7BRZ86-8fow",
+          "url": "https://www.youtube.com/watch?v=ua29hkUXwg4",
+          "age_days": 6.063170237488426,
+          "views_per_day": 25352.908458607904,
+          "under_one_day": false
+        },
+        {
+          "id": "rk0O1xcuXQ4",
+          "title": "How the Black Market Saved Thousands of Cats",
+          "published": "2026-10-20T17:00:01+00:00",
+          "timestamp_precision": "seconds",
+          "views": 198297,
+          "duration": 839,
+          "channel": "SciShow",
+          "channel_id": "UCZYTClx2T1of7BRZ86-8fow",
+          "url": "https://www.youtube.com/watch?v=rk0O1xcuXQ4",
+          "age_days": 8.063390144895834,
+          "views_per_day": 24592.261621561618,
+          "under_one_day": false
+        },
+        {
+          "id": "yndh85o_jvc",
+          "title": "Scientists Are Getting Close to Creating a Universal Vaccine",
+          "published": "2026-10-14T17:00:26+00:00",
+          "timestamp_precision": "seconds",
+          "views": 329829,
+          "duration": 547,
+          "channel": "SciShow",
+          "channel_id": "UCZYTClx2T1of7BRZ86-8fow",
+          "url": "https://www.youtube.com/watch?v=yndh85o_jvc",
+          "age_days": 14.063100793043983,
+          "views_per_day": 23453.504661158582,
+          "under_one_day": false
+        },
+        {
+          "id": "rhHj8-dpXx8",
+          "title": "5 of Science's Weirdest Paradoxes",
+          "published": "2026-10-07T17:00:07+00:00",
+          "timestamp_precision": "seconds",
+          "views": 442310,
+          "duration": 771,
+          "channel": "SciShow",
+          "channel_id": "UCZYTClx2T1of7BRZ86-8fow",
+          "url": "https://www.youtube.com/watch?v=rhHj8-dpXx8",
+          "age_days": 21.06332070045139,
+          "views_per_day": 20999.06307700672,
+          "under_one_day": false
+        },
+        {
+          "id": "wxfARKaQyDE",
+          "title": "The Cure for Ulcers Is ... Cabbage",
+          "published": "2026-10-12T17:00:32+00:00",
+          "timestamp_precision": "seconds",
+          "views": 335225,
+          "duration": 508,
+          "channel": "SciShow",
+          "channel_id": "UCZYTClx2T1of7BRZ86-8fow",
+          "url": "https://www.youtube.com/watch?v=wxfARKaQyDE",
+          "age_days": 16.063031348599537,
+          "views_per_day": 20869.348551027186,
+          "under_one_day": false
+        },
+        {
+          "id": "q7AM3ViYckA",
+          "title": "A Planetarium Accidentally Discovered Something in the Oort Cloud",
+          "published": "2026-09-30T17:00:20+00:00",
+          "timestamp_precision": "seconds",
+          "views": 551469,
+          "duration": 690,
+          "channel": "SciShow",
+          "channel_id": "UCZYTClx2T1of7BRZ86-8fow",
+          "url": "https://www.youtube.com/watch?v=q7AM3ViYckA",
+          "age_days": 28.063170237488425,
+          "views_per_day": 19650.987231061852,
+          "under_one_day": false
+        },
+        {
+          "id": "7gFgl9ijlDg",
+          "title": "Those Ancient Giant Fungi Weren\u2019t Fungi After All",
+          "published": "2026-08-27T17:00:04+00:00",
+          "timestamp_precision": "seconds",
+          "views": 1012128,
+          "duration": 842,
+          "channel": "SciShow",
+          "channel_id": "UCZYTClx2T1of7BRZ86-8fow",
+          "url": "https://www.youtube.com/watch?v=7gFgl9ijlDg",
+          "age_days": 62.06335542267361,
+          "views_per_day": 16307.980661165464,
+          "under_one_day": false
+        },
+        {
+          "id": "Fbxn6OBOkg4",
+          "title": "Hank Green Asks a Volcanologist Anything",
+          "published": "2026-09-25T17:00:34+00:00",
+          "timestamp_precision": "seconds",
+          "views": 509683,
+          "duration": 2054,
+          "channel": "SciShow",
+          "channel_id": "UCZYTClx2T1of7BRZ86-8fow",
+          "url": "https://www.youtube.com/watch?v=Fbxn6OBOkg4",
+          "age_days": 33.063008200451385,
+          "views_per_day": 15415.505960919843,
+          "under_one_day": false
+        },
+        {
+          "id": "pzTyAqobXRI",
+          "title": "You're Washing Your Dishes Wrong",
+          "published": "2026-09-21T17:00:39+00:00",
+          "timestamp_precision": "seconds",
+          "views": 565138,
+          "duration": 520,
+          "channel": "SciShow",
+          "channel_id": "UCZYTClx2T1of7BRZ86-8fow",
+          "url": "https://www.youtube.com/watch?v=pzTyAqobXRI",
+          "age_days": 37.062950330081016,
+          "views_per_day": 15248.057560634155,
+          "under_one_day": false
+        },
+        {
+          "id": "NSlTyM3tEHc",
+          "title": "What Does Ketamine Actually Do?",
+          "published": "2026-09-22T17:00:35+00:00",
+          "timestamp_precision": "seconds",
+          "views": 503392,
+          "duration": 559,
+          "channel": "SciShow",
+          "channel_id": "UCZYTClx2T1of7BRZ86-8fow",
+          "url": "https://www.youtube.com/watch?v=NSlTyM3tEHc",
+          "age_days": 36.06299662637731,
+          "views_per_day": 13958.684720942114,
+          "under_one_day": false
+        },
+        {
+          "id": "_6ronpDQY2o",
+          "title": "This Green Beach Shouldn't Exist",
+          "published": "2026-10-02T17:00:21+00:00",
+          "timestamp_precision": "seconds",
+          "views": 351250,
+          "duration": 530,
+          "channel": "SciShow",
+          "channel_id": "UCZYTClx2T1of7BRZ86-8fow",
+          "url": "https://www.youtube.com/watch?v=_6ronpDQY2o",
+          "age_days": 26.06315866341435,
+          "views_per_day": 13476.877631607267,
+          "under_one_day": false
+        },
+        {
+          "id": "1nVwqDL3XCI",
+          "title": "AI Psychosis Is Killing People. It\u2019s Time to Talk About It",
+          "published": "2026-10-28T17:00:36+00:00",
+          "timestamp_precision": "seconds",
+          "views": 10778,
+          "duration": 1025,
+          "channel": "SciShow",
+          "channel_id": "UCZYTClx2T1of7BRZ86-8fow",
+          "url": "https://www.youtube.com/watch?v=1nVwqDL3XCI",
+          "age_days": 0.06298505230324074,
+          "views_per_day": 10778.0,
+          "under_one_day": true
+        },
+        {
+          "id": "rd_kVzsqRAc",
+          "title": "What the Power Pose Controversy Reveals About Science",
+          "published": "2026-10-06T17:00:08+00:00",
+          "timestamp_precision": "seconds",
+          "views": 215608,
+          "duration": 720,
+          "channel": "SciShow",
+          "channel_id": "UCZYTClx2T1of7BRZ86-8fow",
+          "url": "https://www.youtube.com/watch?v=rd_kVzsqRAc",
+          "age_days": 22.063309126377316,
+          "views_per_day": 9772.242176593287,
+          "under_one_day": false
+        },
+        {
+          "id": "YHuet6imDWI",
+          "title": "The Con Man Who Invented Anesthesia",
+          "published": "2026-09-29T17:00:16+00:00",
+          "timestamp_precision": "seconds",
+          "views": 277877,
+          "duration": 646,
+          "channel": "SciShow",
+          "channel_id": "UCZYTClx2T1of7BRZ86-8fow",
+          "url": "https://www.youtube.com/watch?v=YHuet6imDWI",
+          "age_days": 29.06321653378472,
+          "views_per_day": 9561.12341099548,
+          "under_one_day": false
+        },
+        {
+          "id": "Nmtr13laur0",
+          "title": "How to Make a Whole City Invisible",
+          "published": "2026-10-05T17:00:25+00:00",
+          "timestamp_precision": "seconds",
+          "views": 208105,
+          "duration": 797,
+          "channel": "SciShow",
+          "channel_id": "UCZYTClx2T1of7BRZ86-8fow",
+          "url": "https://www.youtube.com/watch?v=Nmtr13laur0",
+          "age_days": 23.063112367118055,
+          "views_per_day": 9023.28344446273,
+          "under_one_day": false
+        },
+        {
+          "id": "Ixn3GSVnPcM",
+          "title": "Why the Perfect Red Is Impossible to Make",
+          "published": "2026-09-09T17:00:29+00:00",
+          "timestamp_precision": "seconds",
+          "views": 415983,
+          "duration": 776,
+          "channel": "SciShow",
+          "channel_id": "UCZYTClx2T1of7BRZ86-8fow",
+          "url": "https://www.youtube.com/watch?v=Ixn3GSVnPcM",
+          "age_days": 49.063066070821755,
+          "views_per_day": 8478.53657167563,
+          "under_one_day": false
+        },
+        {
+          "id": "qpc6pWnqNxk",
+          "title": "Why Do Things Keep Evolving Into Anteaters?",
+          "published": "2026-09-24T17:00:14+00:00",
+          "timestamp_precision": "seconds",
+          "views": 260276,
+          "duration": 692,
+          "channel": "SciShow",
+          "channel_id": "UCZYTClx2T1of7BRZ86-8fow",
+          "url": "https://www.youtube.com/watch?v=qpc6pWnqNxk",
+          "age_days": 34.06323968193287,
+          "views_per_day": 7640.964348380823,
+          "under_one_day": false
+        },
+        {
+          "id": "l0OVj6BfqgI",
+          "title": "These Rocks Are Older Than the Sun",
+          "published": "2026-09-01T17:00:11+00:00",
+          "timestamp_precision": "seconds",
+          "views": 384712,
+          "duration": 767,
+          "channel": "SciShow",
+          "channel_id": "UCZYTClx2T1of7BRZ86-8fow",
+          "url": "https://www.youtube.com/watch?v=l0OVj6BfqgI",
+          "age_days": 57.06327440415509,
+          "views_per_day": 6741.84935962923,
+          "under_one_day": false
+        },
+        {
+          "id": "ayERZsp3IsQ",
+          "title": "The Best Knife, According to Science",
+          "published": "2026-09-23T17:00:32+00:00",
+          "timestamp_precision": "seconds",
+          "views": 218223,
+          "duration": 566,
+          "channel": "SciShow",
+          "channel_id": "UCZYTClx2T1of7BRZ86-8fow",
+          "url": "https://www.youtube.com/watch?v=ayERZsp3IsQ",
+          "age_days": 35.06303134859954,
+          "views_per_day": 6223.7345604950415,
+          "under_one_day": false
+        },
+        {
+          "id": "Yp8ZC-GMLT0",
+          "title": "The Fungus You Should Actually Be Worried About",
+          "published": "2026-08-18T17:00:20+00:00",
+          "timestamp_precision": "seconds",
+          "views": 440608,
+          "duration": 1063,
+          "channel": "SciShow",
+          "channel_id": "UCZYTClx2T1of7BRZ86-8fow",
+          "url": "https://www.youtube.com/watch?v=Yp8ZC-GMLT0",
+          "age_days": 71.06317023748842,
+          "views_per_day": 6200.229999977726,
+          "under_one_day": false
+        },
+        {
+          "id": "PtcQaVbjyIM",
+          "title": "Why Only 1% of All Possible Flights Are Direct",
+          "published": "2026-09-15T17:00:33+00:00",
+          "timestamp_precision": "seconds",
+          "views": 249094,
+          "duration": 669,
+          "channel": "SciShow",
+          "channel_id": "UCZYTClx2T1of7BRZ86-8fow",
+          "url": "https://www.youtube.com/watch?v=PtcQaVbjyIM",
+          "age_days": 43.06301977452546,
+          "views_per_day": 5784.4062331029345,
+          "under_one_day": false
+        },
+        {
+          "id": "lkMtbeU2NyQ",
+          "title": "LSD May Lead to a New Kind of Medicine",
+          "published": "2026-08-20T17:00:07+00:00",
+          "timestamp_precision": "seconds",
+          "views": 393895,
+          "duration": 1480,
+          "channel": "SciShow",
+          "channel_id": "UCZYTClx2T1of7BRZ86-8fow",
+          "url": "https://www.youtube.com/watch?v=lkMtbeU2NyQ",
+          "age_days": 69.06332070045138,
+          "views_per_day": 5703.389237659775,
+          "under_one_day": false
+        },
+        {
+          "id": "a--SDorutyw",
+          "title": "When A Shipwreck Comes Back To Life",
+          "published": "2026-09-28T17:00:25+00:00",
+          "timestamp_precision": "seconds",
+          "views": 155337,
+          "duration": 701,
+          "channel": "SciShow",
+          "channel_id": "UCZYTClx2T1of7BRZ86-8fow",
+          "url": "https://www.youtube.com/watch?v=a--SDorutyw",
+          "age_days": 30.063112367118052,
+          "views_per_day": 5167.029883768854,
+          "under_one_day": false
+        },
+        {
+          "id": "gB6OvhT_KYs",
+          "title": "What Is a Good Gut Microbiome, Anyway?",
+          "published": "2026-09-14T17:00:13+00:00",
+          "timestamp_precision": "seconds",
+          "views": 226986,
+          "duration": 717,
+          "channel": "SciShow",
+          "channel_id": "UCZYTClx2T1of7BRZ86-8fow",
+          "url": "https://www.youtube.com/watch?v=gB6OvhT_KYs",
+          "age_days": 44.06325125600694,
+          "views_per_day": 5151.3674894576925,
+          "under_one_day": false
+        },
+        {
+          "id": "iL7f2bkcv1Q",
+          "title": "Why Everything Weighs Less in Antarctica",
+          "published": "2026-09-16T17:00:05+00:00",
+          "timestamp_precision": "seconds",
+          "views": 193378,
+          "duration": 676,
+          "channel": null,
+          "channel_id": "UCZYTClx2T1of7BRZ86-8fow",
+          "url": "https://www.youtube.com/watch?v=iL7f2bkcv1Q",
+          "age_days": 42.06334384859954,
+          "views_per_day": 4597.30450094586,
+          "under_one_day": false
+        },
+        {
+          "id": "LLNaEJZx_uU",
+          "title": "The Stinky Fish Sauce Ancient Romans Couldn\u2019t Live Without",
+          "published": "2026-09-08T17:00:14+00:00",
+          "timestamp_precision": "seconds",
+          "views": 183308,
+          "duration": 834,
+          "channel": "SciShow",
+          "channel_id": "UCZYTClx2T1of7BRZ86-8fow",
+          "url": "https://www.youtube.com/watch?v=LLNaEJZx_uU",
+          "age_days": 50.06323968193287,
+          "views_per_day": 3661.528921512311,
+          "under_one_day": false
+        },
+        {
+          "id": "mlft34vjImg",
+          "title": "What\u2019s Ruining Our Ruins?",
+          "published": "2026-09-02T17:00:21+00:00",
+          "timestamp_precision": "seconds",
+          "views": 196447,
+          "duration": 690,
+          "channel": "SciShow",
+          "channel_id": "UCZYTClx2T1of7BRZ86-8fow",
+          "url": "https://www.youtube.com/watch?v=mlft34vjImg",
+          "age_days": 56.06315866341435,
+          "views_per_day": 3504.0301810214846,
+          "under_one_day": false
+        },
+        {
+          "id": "AzTJx-XBXGg",
+          "title": "4 Things We Can Learn From Explosions",
+          "published": "2026-09-03T17:00:25+00:00",
+          "timestamp_precision": "seconds",
+          "views": 188477,
+          "duration": 672,
+          "channel": "SciShow",
+          "channel_id": "UCZYTClx2T1of7BRZ86-8fow",
+          "url": "https://www.youtube.com/watch?v=AzTJx-XBXGg",
+          "age_days": 55.06311236711805,
+          "views_per_day": 3422.926745284244,
+          "under_one_day": false
+        },
+        {
+          "id": "_k5XP8X-3_o",
+          "title": "How To Survive Being Eaten",
+          "published": "2026-09-10T17:00:33+00:00",
+          "timestamp_precision": "seconds",
+          "views": 156060,
+          "duration": 589,
+          "channel": "SciShow",
+          "channel_id": "UCZYTClx2T1of7BRZ86-8fow",
+          "url": "https://www.youtube.com/watch?v=_k5XP8X-3_o",
+          "age_days": 48.06301977452546,
+          "views_per_day": 3246.9869919142184,
+          "under_one_day": false
+        },
+        {
+          "id": "PNG9nRO7XZ8",
+          "title": "Scientists Finally Figured Out Why This River Flows Uphill",
+          "published": "2026-08-06T17:00:11+00:00",
+          "timestamp_precision": "seconds",
+          "views": 247783,
+          "duration": 703,
+          "channel": "SciShow",
+          "channel_id": "UCZYTClx2T1of7BRZ86-8fow",
+          "url": "https://www.youtube.com/watch?v=PNG9nRO7XZ8",
+          "age_days": 83.0632744041551,
+          "views_per_day": 2983.0632343528837,
+          "under_one_day": false
+        },
+        {
+          "id": "xGxeJE8SFc0",
+          "title": "Can Baldness Be Reversed?",
+          "published": "2026-08-10T16:03:30+00:00",
+          "timestamp_precision": "seconds",
+          "views": 231072,
+          "duration": 528,
+          "channel": "SciShow",
+          "channel_id": "UCZYTClx2T1of7BRZ86-8fow",
+          "url": "https://www.youtube.com/watch?v=xGxeJE8SFc0",
+          "age_days": 79.10263783008102,
+          "views_per_day": 2921.166807311302,
+          "under_one_day": false
+        },
+        {
+          "id": "5okDacdZ2sc",
+          "title": "Cameroon\u2019s Deadly Lake Bomb Has Been Defused",
+          "published": "2026-08-13T17:00:10+00:00",
+          "timestamp_precision": "seconds",
+          "views": 217699,
+          "duration": 838,
+          "channel": "SciShow",
+          "channel_id": "UCZYTClx2T1of7BRZ86-8fow",
+          "url": "https://www.youtube.com/watch?v=5okDacdZ2sc",
+          "age_days": 76.06328597822916,
+          "views_per_day": 2862.0772452863766,
+          "under_one_day": false
+        },
+        {
+          "id": "uSfJXecof4M",
+          "title": "Why You Should Get Your DNA Sequenced After You Die",
+          "published": "2026-08-31T17:00:24+00:00",
+          "timestamp_precision": "seconds",
+          "views": 149110,
+          "duration": 545,
+          "channel": "SciShow",
+          "channel_id": "UCZYTClx2T1of7BRZ86-8fow",
+          "url": "https://www.youtube.com/watch?v=uSfJXecof4M",
+          "age_days": 58.063123941192124,
+          "views_per_day": 2568.0671289926213,
+          "under_one_day": false
+        },
+        {
+          "id": "0DD6u8nK4wE",
+          "title": "Is the Secret to Treating Schizophrenia in... Engineering?",
+          "published": "2026-08-19T17:00:36+00:00",
+          "timestamp_precision": "seconds",
+          "views": 153900,
+          "duration": 1328,
+          "channel": "SciShow",
+          "channel_id": "UCZYTClx2T1of7BRZ86-8fow",
+          "url": "https://www.youtube.com/watch?v=0DD6u8nK4wE",
+          "age_days": 70.06298505230323,
+          "views_per_day": 2196.5949621631307,
+          "under_one_day": false
+        },
+        {
+          "id": "A8XPsYH5Jb4",
+          "title": "Why It's So Hard to Make Artificial Cork",
+          "published": "2026-08-05T17:00:00+00:00",
+          "timestamp_precision": "seconds",
+          "views": 184524,
+          "duration": 517,
+          "channel": "SciShow",
+          "channel_id": "UCZYTClx2T1of7BRZ86-8fow",
+          "url": "https://www.youtube.com/watch?v=A8XPsYH5Jb4",
+          "age_days": 84.0634017189699,
+          "views_per_day": 2195.057495018786,
+          "under_one_day": false
+        },
+        {
+          "id": "8Kt6p_GQt_w",
+          "title": "6 Ways Animals Pee Weird",
+          "published": "2026-08-25T17:00:21+00:00",
+          "timestamp_precision": "seconds",
+          "views": 110860,
+          "duration": 722,
+          "channel": "SciShow",
+          "channel_id": "UCZYTClx2T1of7BRZ86-8fow",
+          "url": "https://www.youtube.com/watch?v=8Kt6p_GQt_w",
+          "age_days": 64.06315866341436,
+          "views_per_day": 1730.4797689176496,
+          "under_one_day": false
+        },
+        {
+          "id": "YXh8FUD2f9o",
+          "title": "What's Really Living in the Subway",
+          "published": "2026-08-26T17:00:08+00:00",
+          "timestamp_precision": "seconds",
+          "views": 99434,
+          "duration": 644,
+          "channel": "SciShow",
+          "channel_id": "UCZYTClx2T1of7BRZ86-8fow",
+          "url": "https://www.youtube.com/watch?v=YXh8FUD2f9o",
+          "age_days": 63.06330912637731,
+          "views_per_day": 1576.7329906639807,
+          "under_one_day": false
+        },
+        {
+          "id": "JGN6po7Zcsg",
+          "title": "Why People Thought \"Aliens\" Made These Rocks",
+          "published": "2026-08-03T17:00:06+00:00",
+          "timestamp_precision": "seconds",
+          "views": 110613,
+          "duration": 709,
+          "channel": "SciShow",
+          "channel_id": "UCZYTClx2T1of7BRZ86-8fow",
+          "url": "https://www.youtube.com/watch?v=JGN6po7Zcsg",
+          "age_days": 86.06333227452546,
+          "views_per_day": 1285.2511874298084,
+          "under_one_day": false
+        },
+        {
+          "id": "sh-8TyRgV5Y",
+          "title": "The World\u2019s Best Diet Doesn\u2019t Make You Lose Weight",
+          "published": "2026-08-11T17:00:17+00:00",
+          "timestamp_precision": "seconds",
+          "views": 96678,
+          "duration": 731,
+          "channel": "SciShow",
+          "channel_id": "UCZYTClx2T1of7BRZ86-8fow",
+          "url": "https://www.youtube.com/watch?v=sh-8TyRgV5Y",
+          "age_days": 78.06320495971065,
+          "views_per_day": 1238.4579911867143,
+          "under_one_day": false
+        },
+        {
+          "id": "hy-IbuXXUYk",
+          "title": "Do Penguins Control the Weather?",
+          "published": "2026-08-24T17:00:29+00:00",
+          "timestamp_precision": "seconds",
+          "views": 76358,
+          "duration": 427,
+          "channel": "SciShow",
+          "channel_id": "UCZYTClx2T1of7BRZ86-8fow",
+          "url": "https://www.youtube.com/watch?v=hy-IbuXXUYk",
+          "age_days": 65.06306607082176,
+          "views_per_day": 1173.5997795874482,
+          "under_one_day": false
+        },
+        {
+          "id": "zHgKaAhSs1A",
+          "title": "That Time We Put Spiders in VR",
+          "published": "2026-08-12T17:00:19+00:00",
+          "timestamp_precision": "seconds",
+          "views": 66958,
+          "duration": 671,
+          "channel": "SciShow",
+          "channel_id": "UCZYTClx2T1of7BRZ86-8fow",
+          "url": "https://www.youtube.com/watch?v=zHgKaAhSs1A",
+          "age_days": 77.0631818115625,
+          "views_per_day": 868.8714691761361,
+          "under_one_day": false
+        },
+        {
+          "id": "h2wnaBny4Ig",
+          "title": "Where Is Love Stored in the Body?",
+          "published": "2026-08-04T17:00:33+00:00",
+          "timestamp_precision": "seconds",
+          "views": 41777,
+          "duration": 481,
+          "channel": "SciShow",
+          "channel_id": "UCZYTClx2T1of7BRZ86-8fow",
+          "url": "https://www.youtube.com/watch?v=h2wnaBny4Ig",
+          "age_days": 85.06301977452546,
+          "views_per_day": 491.12998939771137,
+          "under_one_day": false
+        },
+        {
+          "id": "JwbvGz1z5-M",
+          "title": "Field Trips Season 2 Trailer",
+          "published": "2026-08-17T17:00:14+00:00",
+          "timestamp_precision": "seconds",
+          "views": 11548,
+          "duration": 34,
+          "channel": "SciShow",
+          "channel_id": "UCZYTClx2T1of7BRZ86-8fow",
+          "url": "https://www.youtube.com/watch?v=JwbvGz1z5-M",
+          "age_days": 72.06323968193287,
+          "views_per_day": 160.24813831531395,
+          "under_one_day": false
+        }
+      ],
+      "tab_error": null,
+      "listing_capped": true
+    },
+    {
+      "channel": "scishow",
+      "tab": "shorts",
+      "count_90d": 0,
+      "fast_ids": [],
+      "slow_ids": [],
+      "overlap_ids": [],
+      "all_90d": [],
+      "tab_error": null,
+      "listing_capped": true
+    },
+    {
+      "channel": "bigthink",
+      "tab": "videos",
+      "count_90d": 17,
+      "fast_ids": [
+        "HdJxqW0-uZA",
+        "OOMx2BHHWtE",
+        "YBr-dz44Bwo",
+        "9WJ-GGD212s",
+        "2EtZHm-gs5o",
+        "8RUjEGFFLTc",
+        "fzol1qf9qTo",
+        "S8l1jGHt_PI",
+        "9zJL0l99ejQ",
+        "yzNzjg1c0V4"
+      ],
+      "slow_ids": [
+        "arte3arYBrU",
+        "WP3wl1rsXjg",
+        "gVars5PNOMg",
+        "yahyL3ABjjo",
+        "hqa06hmCayo",
+        "ZAbHQ1qAa0I",
+        "8vYZ5oQb4M8",
+        "yzNzjg1c0V4",
+        "9zJL0l99ejQ",
+        "S8l1jGHt_PI"
+      ],
+      "overlap_ids": [
+        "9zJL0l99ejQ",
+        "S8l1jGHt_PI",
+        "yzNzjg1c0V4"
+      ],
+      "all_90d": [
+        {
+          "id": "HdJxqW0-uZA",
+          "title": "The shock of doing nothing | Andrew Holecek",
+          "published": "2026-10-15T14:00:29+00:00",
+          "timestamp_precision": "seconds",
+          "views": 634636,
+          "duration": 327,
+          "channel": "Big Think",
+          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
+          "url": "https://www.youtube.com/watch?v=HdJxqW0-uZA",
+          "age_days": 13.18806607082176,
+          "views_per_day": 48121.991245108715,
+          "under_one_day": false
+        },
+        {
+          "id": "OOMx2BHHWtE",
+          "title": "One of the world's greatest mathematicians explains 6 essential concepts of math | Terence Tao",
+          "published": "2026-08-28T13:00:34+00:00",
+          "timestamp_precision": "seconds",
+          "views": 2890182,
+          "duration": 5076,
+          "channel": "Big Think",
+          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
+          "url": "https://www.youtube.com/watch?v=OOMx2BHHWtE",
+          "age_days": 61.22967486711806,
+          "views_per_day": 47202.308460274115,
+          "under_one_day": false
+        },
+        {
+          "id": "YBr-dz44Bwo",
+          "title": "You have more power over reality than you think | Lisa Feldman Barrett",
+          "published": "2026-10-26T13:07:55+00:00",
+          "timestamp_precision": "seconds",
+          "views": 102170,
+          "duration": 382,
+          "channel": "Big Think",
+          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
+          "url": "https://www.youtube.com/watch?v=YBr-dz44Bwo",
+          "age_days": 2.224570700451389,
+          "views_per_day": 45927.96263084317,
+          "under_one_day": false
+        },
+        {
+          "id": "9WJ-GGD212s",
+          "title": "Finding and protecting selfhood in the age of social contagion | Luke Burgis: Full Interview",
+          "published": "2026-10-23T13:00:05+00:00",
+          "timestamp_precision": "seconds",
+          "views": 143409,
+          "duration": 4674,
+          "channel": "Big Think",
+          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
+          "url": "https://www.youtube.com/watch?v=9WJ-GGD212s",
+          "age_days": 5.230010515266204,
+          "views_per_day": 27420.403760450296,
+          "under_one_day": false
+        },
+        {
+          "id": "2EtZHm-gs5o",
+          "title": "I finally outgrew the character that made my career | Jaleel White",
+          "published": "2026-08-06T13:00:39+00:00",
+          "timestamp_precision": "seconds",
+          "views": 2097701,
+          "duration": 573,
+          "channel": "Big Think",
+          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
+          "url": "https://www.youtube.com/watch?v=2EtZHm-gs5o",
+          "age_days": 83.22961699674768,
+          "views_per_day": 25203.780525410453,
+          "under_one_day": false
+        },
+        {
+          "id": "8RUjEGFFLTc",
+          "title": "The famous tree-falling thought experiment has a new answer | Lisa Feldman Barrett",
+          "published": "2026-10-19T13:00:25+00:00",
+          "timestamp_precision": "seconds",
+          "views": 176867,
+          "duration": 444,
+          "channel": "Big Think",
+          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
+          "url": "https://www.youtube.com/watch?v=8RUjEGFFLTc",
+          "age_days": 9.229779033784723,
+          "views_per_day": 19162.64726951699,
+          "under_one_day": false
+        },
+        {
+          "id": "fzol1qf9qTo",
+          "title": "The political philosophy that changed the world | Jonathan Rauch: Full Interview",
+          "published": "2026-10-02T13:00:09+00:00",
+          "timestamp_precision": "seconds",
+          "views": 325214,
+          "duration": 5417,
+          "channel": "Big Think",
+          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
+          "url": "https://www.youtube.com/watch?v=fzol1qf9qTo",
+          "age_days": 26.229964218969904,
+          "views_per_day": 12398.568190375203,
+          "under_one_day": false
+        },
+        {
+          "id": "S8l1jGHt_PI",
+          "title": "The next stage of the God debate | Jack Symes",
+          "published": "2026-10-16T13:00:35+00:00",
+          "timestamp_precision": "seconds",
+          "views": 135049,
+          "duration": 3958,
+          "channel": "Big Think",
+          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
+          "url": "https://www.youtube.com/watch?v=S8l1jGHt_PI",
+          "age_days": 12.229663293043982,
+          "views_per_day": 11042.74065147922,
+          "under_one_day": false
+        },
+        {
+          "id": "9zJL0l99ejQ",
+          "title": "The theory that connects the origin of life to the rise of intelligence | Blaise Aguera y Arcas",
+          "published": "2026-10-09T13:00:09+00:00",
+          "timestamp_precision": "seconds",
+          "views": 173981,
+          "duration": 5097,
+          "channel": "Big Think",
+          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
+          "url": "https://www.youtube.com/watch?v=9zJL0l99ejQ",
+          "age_days": 19.229964218969908,
+          "views_per_day": 9047.39072932709,
+          "under_one_day": false
+        },
+        {
+          "id": "yzNzjg1c0V4",
+          "title": "How tiny actions grow into sustained happiness | Tal Ben-Shahar: Full Interview",
+          "published": "2026-09-25T13:00:31+00:00",
+          "timestamp_precision": "seconds",
+          "views": 296005,
+          "duration": 4952,
+          "channel": "Big Think",
+          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
+          "url": "https://www.youtube.com/watch?v=yzNzjg1c0V4",
+          "age_days": 33.229709589340274,
+          "views_per_day": 8907.841917912974,
+          "under_one_day": false
+        },
+        {
+          "id": "8vYZ5oQb4M8",
+          "title": "Arguing is a constructive skill: The blueprint to build yours | Bo Seo: Full Interview",
+          "published": "2026-09-18T13:00:09+00:00",
+          "timestamp_precision": "seconds",
+          "views": 347290,
+          "duration": 4284,
+          "channel": "Big Think",
+          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
+          "url": "https://www.youtube.com/watch?v=8vYZ5oQb4M8",
+          "age_days": 40.229964218969904,
+          "views_per_day": 8632.620156202875,
+          "under_one_day": false
+        },
+        {
+          "id": "ZAbHQ1qAa0I",
+          "title": "This hidden wisdom will change how you treat your body forever | Giulia Enders: Full Interview",
+          "published": "2026-07-31T13:00:09+00:00",
+          "timestamp_precision": "seconds",
+          "views": 678656,
+          "duration": 4113,
+          "channel": "Big Think",
+          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
+          "url": "https://www.youtube.com/watch?v=ZAbHQ1qAa0I",
+          "age_days": 89.22996421896991,
+          "views_per_day": 7605.696202394314,
+          "under_one_day": false
+        },
+        {
+          "id": "hqa06hmCayo",
+          "title": "The 5:1 ratio that separates happy couples from divorced ones | John & Julie Gottman: Full Interview",
+          "published": "2026-08-21T13:00:16+00:00",
+          "timestamp_precision": "seconds",
+          "views": 429158,
+          "duration": 3736,
+          "channel": "Big Think",
+          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
+          "url": "https://www.youtube.com/watch?v=hqa06hmCayo",
+          "age_days": 68.22988320045138,
+          "views_per_day": 6289.8832574457765,
+          "under_one_day": false
+        },
+        {
+          "id": "yahyL3ABjjo",
+          "title": "The hidden cost of talking about it too much | Lisa Damour: Full Interview",
+          "published": "2026-08-14T13:00:26+00:00",
+          "timestamp_precision": "seconds",
+          "views": 461497,
+          "duration": 3979,
+          "channel": "Big Think",
+          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
+          "url": "https://www.youtube.com/watch?v=yahyL3ABjjo",
+          "age_days": 75.22976745971064,
+          "views_per_day": 6134.4998872574615,
+          "under_one_day": false
+        },
+        {
+          "id": "gVars5PNOMg",
+          "title": "The 28-day cycle, and other myths of menstruation | Jen Gunter: Full Interview",
+          "published": "2026-09-11T13:00:04+00:00",
+          "timestamp_precision": "seconds",
+          "views": 288013,
+          "duration": 4489,
+          "channel": "Big Think",
+          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
+          "url": "https://www.youtube.com/watch?v=gVars5PNOMg",
+          "age_days": 47.230022089340274,
+          "views_per_day": 6098.0915794448465,
+          "under_one_day": false
+        },
+        {
+          "id": "WP3wl1rsXjg",
+          "title": "The hidden cost of never being bored | Arthur Brooks: Full Interview",
+          "published": "2026-08-07T13:00:23+00:00",
+          "timestamp_precision": "seconds",
+          "views": 350184,
+          "duration": 6838,
+          "channel": "Big Think",
+          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
+          "url": "https://www.youtube.com/watch?v=WP3wl1rsXjg",
+          "age_days": 82.22980218193287,
+          "views_per_day": 4258.601999615909,
+          "under_one_day": false
+        },
+        {
+          "id": "arte3arYBrU",
+          "title": "The rule of 20%: How to find the sweet spot for improved performance | Daniel Coyle: Full Interview",
+          "published": "2026-09-04T13:00:34+00:00",
+          "timestamp_precision": "seconds",
+          "views": 230520,
+          "duration": 5117,
+          "channel": "Big Think",
+          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
+          "url": "https://www.youtube.com/watch?v=arte3arYBrU",
+          "age_days": 54.22967486711806,
+          "views_per_day": 4250.809184544362,
+          "under_one_day": false
+        }
+      ],
+      "tab_error": null,
+      "listing_capped": true
+    },
+    {
+      "channel": "bigthink",
+      "tab": "shorts",
+      "count_90d": 42,
+      "fast_ids": [
+        "6xmDG2Io7vc",
+        "-nMXrAkhCm8",
+        "fGdFGBYn308",
+        "KtY6mDA1Ps4",
+        "btdZ8iMz_XU",
+        "MgpM7QxPOr8",
+        "yf5ggZt3i04",
+        "9UtyrAipobI",
+        "nLDBRNj93Ak",
+        "vEDkowLG4Tc"
+      ],
+      "slow_ids": [
+        "sAXRbO504As",
+        "bUpse56EYBA",
+        "1QxP2mbnuEM",
+        "Ci-TgUAPv38",
+        "NiEF0pu04JU",
+        "Jh1VVxHQQBg",
+        "ifkx7ordSB4",
+        "egyVmgGFYXA",
+        "sOi-RHOUKNc",
+        "NWmWoxXicmQ"
+      ],
+      "overlap_ids": [],
+      "all_90d": [
+        {
+          "id": "6xmDG2Io7vc",
+          "title": "How to debate a stupid person | Jonny Thomson",
+          "published": "2026-08-26T16:05:40+00:00",
+          "timestamp_precision": "seconds",
+          "views": 1304793,
+          "duration": 106,
+          "channel": "Big Think",
+          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
+          "url": "https://www.youtube.com/watch?v=6xmDG2Io7vc",
+          "age_days": 63.101133200451386,
+          "views_per_day": 20677.806147396834,
+          "under_one_day": false
+        },
+        {
+          "id": "-nMXrAkhCm8",
+          "title": "The 3 elements of stupidity | Jonny Thomson",
+          "published": "2026-10-12T16:06:06+00:00",
+          "timestamp_precision": "seconds",
+          "views": 303042,
+          "duration": 156,
+          "channel": "Big Think",
+          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
+          "url": "https://www.youtube.com/watch?v=-nMXrAkhCm8",
+          "age_days": 16.100832274525462,
+          "views_per_day": 18821.511511517903,
+          "under_one_day": false
+        },
+        {
+          "id": "fGdFGBYn308",
+          "title": "Did life arise more than once? | Paul Davies",
+          "published": "2026-10-26T16:07:18+00:00",
+          "timestamp_precision": "seconds",
+          "views": 21412,
+          "duration": 46,
+          "channel": "Big Think",
+          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
+          "url": "https://www.youtube.com/watch?v=fGdFGBYn308",
+          "age_days": 2.0999989411921294,
+          "views_per_day": 10196.195617053414,
+          "under_one_day": false
+        },
+        {
+          "id": "KtY6mDA1Ps4",
+          "title": "The hidden cost of ignoring your feelings | Lisa Damour",
+          "published": "2026-10-14T16:06:28+00:00",
+          "timestamp_precision": "seconds",
+          "views": 56862,
+          "duration": 65,
+          "channel": "Big Think",
+          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
+          "url": "https://www.youtube.com/watch?v=KtY6mDA1Ps4",
+          "age_days": 14.100577644895834,
+          "views_per_day": 4032.600750975834,
+          "under_one_day": false
+        },
+        {
+          "id": "btdZ8iMz_XU",
+          "title": "The 3 biggest origin mysteries | Paul Davies",
+          "published": "2026-10-19T16:06:25+00:00",
+          "timestamp_precision": "seconds",
+          "views": 35094,
+          "duration": 87,
+          "channel": "Big Think",
+          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
+          "url": "https://www.youtube.com/watch?v=btdZ8iMz_XU",
+          "age_days": 9.100612367118057,
+          "views_per_day": 3856.2240192539284,
+          "under_one_day": false
+        },
+        {
+          "id": "MgpM7QxPOr8",
+          "title": "Did T. Rex have feathers? | Steve Brusatte",
+          "published": "2026-10-23T16:07:27+00:00",
+          "timestamp_precision": "seconds",
+          "views": 18855,
+          "duration": 60,
+          "channel": "Big Think",
+          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
+          "url": "https://www.youtube.com/watch?v=MgpM7QxPOr8",
+          "age_days": 5.099894774525463,
+          "views_per_day": 3697.1351044697635,
+          "under_one_day": false
+        },
+        {
+          "id": "yf5ggZt3i04",
+          "title": "Why naming emotions is so powerful | Lisa Damour",
+          "published": "2026-10-21T16:08:15+00:00",
+          "timestamp_precision": "seconds",
+          "views": 21869,
+          "duration": 33,
+          "channel": "Big Think",
+          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
+          "url": "https://www.youtube.com/watch?v=yf5ggZt3i04",
+          "age_days": 7.099339218969908,
+          "views_per_day": 3080.427533532216,
+          "under_one_day": false
+        },
+        {
+          "id": "9UtyrAipobI",
+          "title": "The hidden trap of overthinking | Lisa Damour",
+          "published": "2026-10-28T16:06:24+00:00",
+          "timestamp_precision": "seconds",
+          "views": 2821,
+          "duration": 80,
+          "channel": "Big Think",
+          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
+          "url": "https://www.youtube.com/watch?v=9UtyrAipobI",
+          "age_days": 0.10062394119212964,
+          "views_per_day": 2821.0,
+          "under_one_day": true
+        },
+        {
+          "id": "nLDBRNj93Ak",
+          "title": "Why are T. Rex arms so pathetic? | Steve Brusatte",
+          "published": "2026-10-16T16:06:06+00:00",
+          "timestamp_precision": "seconds",
+          "views": 32831,
+          "duration": 87,
+          "channel": "Big Think",
+          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
+          "url": "https://www.youtube.com/watch?v=nLDBRNj93Ak",
+          "age_days": 12.100832274525464,
+          "views_per_day": 2713.1191685976387,
+          "under_one_day": false
+        },
+        {
+          "id": "vEDkowLG4Tc",
+          "title": "3 rules for being smart about stress | Lisa Damour",
+          "published": "2026-10-07T16:07:33+00:00",
+          "timestamp_precision": "seconds",
+          "views": 50909,
+          "duration": 44,
+          "channel": "Big Think",
+          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
+          "url": "https://www.youtube.com/watch?v=vEDkowLG4Tc",
+          "age_days": 21.099825330081018,
+          "views_per_day": 2412.768788536911,
+          "under_one_day": false
+        },
+        {
+          "id": "s-XRVz4nDHY",
+          "title": "How to be free of distress | Jonny Thomson",
+          "published": "2026-10-05T16:04:40+00:00",
+          "timestamp_precision": "seconds",
+          "views": 53564,
+          "duration": 50,
+          "channel": "Big Think",
+          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
+          "url": "https://www.youtube.com/watch?v=s-XRVz4nDHY",
+          "age_days": 23.101827644895835,
+          "views_per_day": 2318.6044335256106,
+          "under_one_day": false
+        },
+        {
+          "id": "pg3QL4y2_0c",
+          "title": "The #1 requirement for loving a woman | John Gottman",
+          "published": "2026-09-16T16:05:20+00:00",
+          "timestamp_precision": "seconds",
+          "views": 93499,
+          "duration": 38,
+          "channel": "Big Think",
+          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
+          "url": "https://www.youtube.com/watch?v=pg3QL4y2_0c",
+          "age_days": 42.10136468193287,
+          "views_per_day": 2220.806871852389,
+          "under_one_day": false
+        },
+        {
+          "id": "a7zQWaWlXME",
+          "title": "3 tips for working with AI | Adam Frank",
+          "published": "2026-10-02T16:04:42+00:00",
+          "timestamp_precision": "seconds",
+          "views": 53026,
+          "duration": 78,
+          "channel": "Big Think",
+          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
+          "url": "https://www.youtube.com/watch?v=a7zQWaWlXME",
+          "age_days": 26.101804496747683,
+          "views_per_day": 2031.5070556369812,
+          "under_one_day": false
+        },
+        {
+          "id": "LlsyihdHMQE",
+          "title": "The ultimate relationship saver | John Gottman",
+          "published": "2026-08-24T16:04:57+00:00",
+          "timestamp_precision": "seconds",
+          "views": 123222,
+          "duration": 43,
+          "channel": "Big Think",
+          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
+          "url": "https://www.youtube.com/watch?v=LlsyihdHMQE",
+          "age_days": 65.10163088563657,
+          "views_per_day": 1892.7636423803722,
+          "under_one_day": false
+        },
+        {
+          "id": "cKJm_LTBVxw",
+          "title": "How to analyze your beliefs | Jonny Thomson",
+          "published": "2026-09-21T16:05:09+00:00",
+          "timestamp_precision": "seconds",
+          "views": 69809,
+          "duration": 47,
+          "channel": "Big Think",
+          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
+          "url": "https://www.youtube.com/watch?v=cKJm_LTBVxw",
+          "age_days": 37.10149199674768,
+          "views_per_day": 1881.5685365461707,
+          "under_one_day": false
+        },
+        {
+          "id": "misZqGOStII",
+          "title": "The richest thing you will ever own | Giulia Enders",
+          "published": "2026-08-12T16:06:47+00:00",
+          "timestamp_precision": "seconds",
+          "views": 126183,
+          "duration": 118,
+          "channel": "Big Think",
+          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
+          "url": "https://www.youtube.com/watch?v=misZqGOStII",
+          "age_days": 77.10035773748842,
+          "views_per_day": 1636.6071922730675,
+          "under_one_day": false
+        },
+        {
+          "id": "xBNqQNMOhyw",
+          "title": "Why you should question everything (according to philosophy) @philosophyminis",
+          "published": "2026-08-31T19:31:09+00:00",
+          "timestamp_precision": "seconds",
+          "views": 92861,
+          "duration": 111,
+          "channel": "Big Think",
+          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
+          "url": "https://www.youtube.com/watch?v=xBNqQNMOhyw",
+          "age_days": 57.95843644119213,
+          "views_per_day": 1602.1998815344505,
+          "under_one_day": false
+        },
+        {
+          "id": "Q8ebAhEm71s",
+          "title": "Why compatibility is overrated | Julie Gottman",
+          "published": "2026-09-30T16:06:41+00:00",
+          "timestamp_precision": "seconds",
+          "views": 42447,
+          "duration": 46,
+          "channel": "Big Think",
+          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
+          "url": "https://www.youtube.com/watch?v=Q8ebAhEm71s",
+          "age_days": 28.10042718193287,
+          "views_per_day": 1510.546431382767,
+          "under_one_day": false
+        },
+        {
+          "id": "BtvUin3jbGo",
+          "title": "How to predict if a couple will break up | John Gottman",
+          "published": "2026-09-23T16:05:28+00:00",
+          "timestamp_precision": "seconds",
+          "views": 51686,
+          "duration": 48,
+          "channel": "Big Think",
+          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
+          "url": "https://www.youtube.com/watch?v=BtvUin3jbGo",
+          "age_days": 35.10127208934028,
+          "views_per_day": 1472.4822470378858,
+          "under_one_day": false
+        },
+        {
+          "id": "KbDf3AysIWc",
+          "title": "Why softness beats stress | Giulia Enders",
+          "published": "2026-08-19T16:05:48+00:00",
+          "timestamp_precision": "seconds",
+          "views": 97229,
+          "duration": 91,
+          "channel": "Big Think",
+          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
+          "url": "https://www.youtube.com/watch?v=KbDf3AysIWc",
+          "age_days": 70.10104060785879,
+          "views_per_day": 1386.9836903548046,
+          "under_one_day": false
+        },
+        {
+          "id": "sfe0mExhnEg",
+          "title": "The key to better conversations | Charles Duhigg",
+          "published": "2026-08-07T16:07:01+00:00",
+          "timestamp_precision": "seconds",
+          "views": 112155,
+          "duration": 139,
+          "channel": "Big Think",
+          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
+          "url": "https://www.youtube.com/watch?v=sfe0mExhnEg",
+          "age_days": 82.10019570045138,
+          "views_per_day": 1366.0746974246663,
+          "under_one_day": false
+        },
+        {
+          "id": "1WHg1S4UV60",
+          "title": "How smart were T. Rex? | Steve Brusatte",
+          "published": "2026-10-09T16:05:47+00:00",
+          "timestamp_precision": "seconds",
+          "views": 22130,
+          "duration": 63,
+          "channel": "Big Think",
+          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
+          "url": "https://www.youtube.com/watch?v=1WHg1S4UV60",
+          "age_days": 19.10105218193287,
+          "views_per_day": 1158.5749198115966,
+          "under_one_day": false
+        },
+        {
+          "id": "pNSeoen-kFw",
+          "title": "How did the universe begin? | Big Think Explainers",
+          "published": "2026-09-26T00:41:56+00:00",
+          "timestamp_precision": "seconds",
+          "views": 36905,
+          "duration": 59,
+          "channel": "Big Think",
+          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
+          "url": "https://www.youtube.com/watch?v=pNSeoen-kFw",
+          "age_days": 32.74261468193287,
+          "views_per_day": 1127.1244022049316,
+          "under_one_day": false
+        },
+        {
+          "id": "VNVf2dNW4lE",
+          "title": "Why relationships fizzle out | John Gottman",
+          "published": "2026-08-03T16:05:11+00:00",
+          "timestamp_precision": "seconds",
+          "views": 93107,
+          "duration": 36,
+          "channel": "Big Think",
+          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
+          "url": "https://www.youtube.com/watch?v=VNVf2dNW4lE",
+          "age_days": 86.10146884859954,
+          "views_per_day": 1081.363665975536,
+          "under_one_day": false
+        },
+        {
+          "id": "RRxfA2W57BM",
+          "title": "The importance of philosophy | Jonny Thomson",
+          "published": "2026-09-28T16:04:36+00:00",
+          "timestamp_precision": "seconds",
+          "views": 32484,
+          "duration": 48,
+          "channel": "Big Think",
+          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
+          "url": "https://www.youtube.com/watch?v=RRxfA2W57BM",
+          "age_days": 30.101873941192128,
+          "views_per_day": 1079.13547387321,
+          "under_one_day": false
+        },
+        {
+          "id": "nZfe9U_j4vc",
+          "title": "How to express your needs (without conflict) | John Gottman",
+          "published": "2026-09-09T16:04:16+00:00",
+          "timestamp_precision": "seconds",
+          "views": 51404,
+          "duration": 31,
+          "channel": "Big Think",
+          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
+          "url": "https://www.youtube.com/watch?v=nZfe9U_j4vc",
+          "age_days": 49.10210542267361,
+          "views_per_day": 1046.8797530678482,
+          "under_one_day": false
+        },
+        {
+          "id": "4RphHwripWg",
+          "title": "What quietly destroys love | John Gottman",
+          "published": "2026-08-10T16:04:27+00:00",
+          "timestamp_precision": "seconds",
+          "views": 72860,
+          "duration": 41,
+          "channel": "Big Think",
+          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
+          "url": "https://www.youtube.com/watch?v=4RphHwripWg",
+          "age_days": 79.1019781078588,
+          "views_per_day": 921.0894814874591,
+          "under_one_day": false
+        },
+        {
+          "id": "bQS_YXPCKC0",
+          "title": "The story behind the \"Donnie Darko\" mask | Richard Kelly",
+          "published": "2026-09-29T23:25:07+00:00",
+          "timestamp_precision": "seconds",
+          "views": 20934,
+          "duration": 67,
+          "channel": "Big Think",
+          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
+          "url": "https://www.youtube.com/watch?v=bQS_YXPCKC0",
+          "age_days": 28.795959589340274,
+          "views_per_day": 726.9769890825022,
+          "under_one_day": false
+        },
+        {
+          "id": "CBI8eWEXlMI",
+          "title": "Why stress is actually good for you | Lisa Damour",
+          "published": "2026-09-14T16:06:16+00:00",
+          "timestamp_precision": "seconds",
+          "views": 31602,
+          "duration": 60,
+          "channel": "Big Think",
+          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
+          "url": "https://www.youtube.com/watch?v=CBI8eWEXlMI",
+          "age_days": 44.10071653378472,
+          "views_per_day": 716.5869963992606,
+          "under_one_day": false
+        },
+        {
+          "id": "DVgSwPSJZWQ",
+          "title": "Why AI feels alive | Adam Frank",
+          "published": "2026-09-25T16:05:24+00:00",
+          "timestamp_precision": "seconds",
+          "views": 22403,
+          "duration": 71,
+          "channel": "Big Think",
+          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
+          "url": "https://www.youtube.com/watch?v=DVgSwPSJZWQ",
+          "age_days": 33.101318385636574,
+          "views_per_day": 676.8008373262008,
+          "under_one_day": false
+        },
+        {
+          "id": "-p9YBmFniTI",
+          "title": "The problem with UFO videos | Adam Frank",
+          "published": "2026-09-18T16:05:24+00:00",
+          "timestamp_precision": "seconds",
+          "views": 26591,
+          "duration": 44,
+          "channel": "Big Think",
+          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
+          "url": "https://www.youtube.com/watch?v=-p9YBmFniTI",
+          "age_days": 40.101318385636574,
+          "views_per_day": 663.0954060982773,
+          "under_one_day": false
+        },
+        {
+          "id": "OXon5Zj3Bfk",
+          "title": "What people misunderstand about love | Julie Gottman",
+          "published": "2026-09-02T16:02:45+00:00",
+          "timestamp_precision": "seconds",
+          "views": 33642,
+          "duration": 51,
+          "channel": "Big Think",
+          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
+          "url": "https://www.youtube.com/watch?v=OXon5Zj3Bfk",
+          "age_days": 56.10315866341435,
+          "views_per_day": 599.6453818550937,
+          "under_one_day": false
+        },
+        {
+          "id": "NWmWoxXicmQ",
+          "title": "Why we are finding more potential alien planets | Adam Frank",
+          "published": "2026-09-11T16:05:11+00:00",
+          "timestamp_precision": "seconds",
+          "views": 27270,
+          "duration": 67,
+          "channel": "Big Think",
+          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
+          "url": "https://www.youtube.com/watch?v=NWmWoxXicmQ",
+          "age_days": 47.10146884859954,
+          "views_per_day": 578.9628363322435,
+          "under_one_day": false
+        },
+        {
+          "id": "sOi-RHOUKNc",
+          "title": "The big mistake we make about strength | Giulia Enders",
+          "published": "2026-08-05T16:04:44+00:00",
+          "timestamp_precision": "seconds",
+          "views": 43698,
+          "duration": 85,
+          "channel": "Big Think",
+          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
+          "url": "https://www.youtube.com/watch?v=sOi-RHOUKNc",
+          "age_days": 84.10178134859953,
+          "views_per_day": 519.5847138941447,
+          "under_one_day": false
+        },
+        {
+          "id": "egyVmgGFYXA",
+          "title": "How to be a supercommunicator | Charles Duhigg",
+          "published": "2026-07-31T16:04:46+00:00",
+          "timestamp_precision": "seconds",
+          "views": 45856,
+          "duration": 77,
+          "channel": "Big Think",
+          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
+          "url": "https://www.youtube.com/watch?v=egyVmgGFYXA",
+          "age_days": 89.10175820045139,
+          "views_per_day": 514.6475325081486,
+          "under_one_day": false
+        },
+        {
+          "id": "ifkx7ordSB4",
+          "title": "Telling a story with one line | Richard Kelly",
+          "published": "2026-10-01T18:03:38+00:00",
+          "timestamp_precision": "seconds",
+          "views": 13422,
+          "duration": 50,
+          "channel": "Big Think",
+          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
+          "url": "https://www.youtube.com/watch?v=ifkx7ordSB4",
+          "age_days": 27.01921190415509,
+          "views_per_day": 496.7576422144248,
+          "under_one_day": false
+        },
+        {
+          "id": "Jh1VVxHQQBg",
+          "title": "Why do we measure temperature? | Adam Frank",
+          "published": "2026-09-04T16:04:58+00:00",
+          "timestamp_precision": "seconds",
+          "views": 23453,
+          "duration": 103,
+          "channel": "Big Think",
+          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
+          "url": "https://www.youtube.com/watch?v=Jh1VVxHQQBg",
+          "age_days": 54.101619311562494,
+          "views_per_day": 433.4990393714088,
+          "under_one_day": false
+        },
+        {
+          "id": "NiEF0pu04JU",
+          "title": "AI and filmmaking | Richard Kelly",
+          "published": "2026-09-30T18:01:26+00:00",
+          "timestamp_precision": "seconds",
+          "views": 11126,
+          "duration": 41,
+          "channel": "Big Think",
+          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
+          "url": "https://www.youtube.com/watch?v=NiEF0pu04JU",
+          "age_days": 28.020739681932866,
+          "views_per_day": 397.0630371036847,
+          "under_one_day": false
+        },
+        {
+          "id": "Ci-TgUAPv38",
+          "title": "What does being vulnerable actually mean? | Julie Gottman",
+          "published": "2026-08-17T16:04:15+00:00",
+          "timestamp_precision": "seconds",
+          "views": 19981,
+          "duration": 87,
+          "channel": "Big Think",
+          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
+          "url": "https://www.youtube.com/watch?v=Ci-TgUAPv38",
+          "age_days": 72.10211699674768,
+          "views_per_day": 277.12085070818773,
+          "under_one_day": false
+        },
+        {
+          "id": "1QxP2mbnuEM",
+          "title": "The most important election of our lives | Dan Carlin and Kmele Foster",
+          "published": "2026-08-28T16:07:17+00:00",
+          "timestamp_precision": "seconds",
+          "views": 11091,
+          "duration": 82,
+          "channel": "Big Think",
+          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
+          "url": "https://www.youtube.com/watch?v=1QxP2mbnuEM",
+          "age_days": 61.1000105152662,
+          "views_per_day": 181.52206368653322,
+          "under_one_day": false
+        },
+        {
+          "id": "bUpse56EYBA",
+          "title": "How to recognize political hypocrisy | Dan Carlin and Kmele Foster",
+          "published": "2026-08-21T16:07:12+00:00",
+          "timestamp_precision": "seconds",
+          "views": 12320,
+          "duration": 58,
+          "channel": "Big Think",
+          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
+          "url": "https://www.youtube.com/watch?v=bUpse56EYBA",
+          "age_days": 68.10006838563658,
+          "views_per_day": 180.91024417529792,
+          "under_one_day": false
+        },
+        {
+          "id": "sAXRbO504As",
+          "title": "Why we can't have conversations today | Dan Carlin and Kmele Foster",
+          "published": "2026-08-14T16:05:22+00:00",
+          "timestamp_precision": "seconds",
+          "views": 12571,
+          "duration": 68,
+          "channel": "Big Think",
+          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
+          "url": "https://www.youtube.com/watch?v=sAXRbO504As",
+          "age_days": 75.10134153378472,
+          "views_per_day": 167.38715638448178,
+          "under_one_day": false
+        }
+      ],
+      "tab_error": null,
+      "listing_capped": true
+    },
+    {
+      "channel": "realengineering",
+      "tab": "videos",
+      "count_90d": 5,
+      "fast_ids": [
+        "6B96xetwrqI",
+        "rCM6dvK2Hjg",
+        "iGZsPFJuxc0",
+        "OX1yHmeLPy8",
+        "UiPJbxryrkU"
+      ],
+      "slow_ids": [
+        "UiPJbxryrkU",
+        "OX1yHmeLPy8",
+        "iGZsPFJuxc0",
+        "rCM6dvK2Hjg",
+        "6B96xetwrqI"
+      ],
+      "overlap_ids": [
+        "6B96xetwrqI",
+        "OX1yHmeLPy8",
+        "UiPJbxryrkU",
+        "iGZsPFJuxc0",
+        "rCM6dvK2Hjg"
+      ],
+      "all_90d": [
+        {
+          "id": "6B96xetwrqI",
+          "title": "The Plane That's 38% Nose",
+          "published": "2026-09-26T15:08:06+00:00",
+          "timestamp_precision": "seconds",
+          "views": 2519753,
+          "duration": 1216,
+          "channel": "Real Engineering",
+          "channel_id": "UCR1IuLEqb6UEA_zQ81kwXfg",
+          "url": "https://www.youtube.com/watch?v=6B96xetwrqI",
+          "age_days": 32.14111005230324,
+          "views_per_day": 78396.57671746884,
+          "under_one_day": false
+        },
+        {
+          "id": "rCM6dvK2Hjg",
+          "title": "NASA\u2019s Next Monster Telescope",
+          "published": "2026-08-29T14:30:26+00:00",
+          "timestamp_precision": "seconds",
+          "views": 730743,
+          "duration": 1310,
+          "channel": "Real Engineering",
+          "channel_id": "UCR1IuLEqb6UEA_zQ81kwXfg",
+          "url": "https://www.youtube.com/watch?v=rCM6dvK2Hjg",
+          "age_days": 60.167267459710644,
+          "views_per_day": 12145.19174382187,
+          "under_one_day": false
+        },
+        {
+          "id": "iGZsPFJuxc0",
+          "title": "How We Could Reach Proxima Centauri B in 20 Years",
+          "published": "2026-08-22T15:00:00+00:00",
+          "timestamp_precision": "seconds",
+          "views": 639877,
+          "duration": 1074,
+          "channel": "Real Engineering",
+          "channel_id": "UCR1IuLEqb6UEA_zQ81kwXfg",
+          "url": "https://www.youtube.com/watch?v=iGZsPFJuxc0",
+          "age_days": 67.14673505230324,
+          "views_per_day": 9529.532590103965,
+          "under_one_day": false
+        },
+        {
+          "id": "OX1yHmeLPy8",
+          "title": "The Kurzgesagt Situation is Insane",
+          "published": "2026-08-01T02:02:04+00:00",
+          "timestamp_precision": "seconds",
+          "views": 659987,
+          "duration": 695,
+          "channel": "Real Engineering",
+          "channel_id": "UCR1IuLEqb6UEA_zQ81kwXfg",
+          "url": "https://www.youtube.com/watch?v=OX1yHmeLPy8",
+          "age_days": 88.68696653378473,
+          "views_per_day": 7441.758646109315,
+          "under_one_day": false
+        },
+        {
+          "id": "UiPJbxryrkU",
+          "title": "Sagrada Familia - Full Documentary",
+          "published": "2026-08-02T15:00:16+00:00",
+          "timestamp_precision": "seconds",
+          "views": 452907,
+          "duration": 1459,
+          "channel": "Real Engineering",
+          "channel_id": "UCR1IuLEqb6UEA_zQ81kwXfg",
+          "url": "https://www.youtube.com/watch?v=UiPJbxryrkU",
+          "age_days": 87.14654986711805,
+          "views_per_day": 5197.073213920657,
+          "under_one_day": false
+        }
+      ],
+      "tab_error": null,
+      "listing_capped": true
+    },
+    {
+      "channel": "realengineering",
+      "tab": "shorts",
+      "count_90d": 0,
+      "fast_ids": [],
+      "slow_ids": [],
+      "overlap_ids": [],
+      "all_90d": [],
+      "tab_error": null,
+      "listing_capped": false
+    },
+    {
+      "channel": "kingsandgenerals",
+      "tab": "videos",
+      "count_90d": 37,
+      "fast_ids": [
+        "H2xV6FnbSkQ",
+        "hSMwc_RRqiQ",
+        "efyxLW1Yeqo",
+        "kd-ZNqGaajg",
+        "VKZRmSTqI0U",
+        "-DZIkSvLGJY",
+        "YcE50-LemSM",
+        "pn68y5rEDxk",
+        "5ij0tDYhIhg",
+        "TY_5d4Uy97g"
+      ],
+      "slow_ids": [
+        "eoOrlxiOFEU",
+        "JsNTrOwilOk",
+        "Rk7QV9Gto-c",
+        "osorjUU4ITs",
+        "EI-qoH7eH28",
+        "MN5cQCmA82s",
+        "JKmJhDPtG2E",
+        "IONLRDKLsvA",
+        "jHoms3UV1qU",
+        "0RDCTHMXjgg"
+      ],
+      "overlap_ids": [],
+      "all_90d": [
+        {
+          "id": "H2xV6FnbSkQ",
+          "title": "Why Spain Collapsed Into Civil War - Kings and Generals Modern",
+          "published": "2026-10-27T12:59:54+00:00",
+          "timestamp_precision": "seconds",
+          "views": 232837,
+          "duration": 1193,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=H2xV6FnbSkQ",
+          "age_days": 1.2301378300810186,
+          "views_per_day": 189277.16415701565,
+          "under_one_day": false
+        },
+        {
+          "id": "hSMwc_RRqiQ",
+          "title": "How the Ottomans Became a Superpower and Tripled in Size",
+          "published": "2026-10-25T12:59:54+00:00",
+          "timestamp_precision": "seconds",
+          "views": 242785,
+          "duration": 9266,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=hSMwc_RRqiQ",
+          "age_days": 3.230137830081018,
+          "views_per_day": 75162.42735496846,
+          "under_one_day": false
+        },
+        {
+          "id": "efyxLW1Yeqo",
+          "title": "Largest Land Battle Before WWI Caused the First Russian Revolution",
+          "published": "2026-10-18T12:59:54+00:00",
+          "timestamp_precision": "seconds",
+          "views": 591555,
+          "duration": 965,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=efyxLW1Yeqo",
+          "age_days": 10.23013783008102,
+          "views_per_day": 57824.73411654074,
+          "under_one_day": false
+        },
+        {
+          "id": "kd-ZNqGaajg",
+          "title": "The Biggest Rebellion Against the British Empire in History",
+          "published": "2026-10-20T12:59:46+00:00",
+          "timestamp_precision": "seconds",
+          "views": 416568,
+          "duration": 1360,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=kd-ZNqGaajg",
+          "age_days": 8.230230422673612,
+          "views_per_day": 50614.37877272417,
+          "under_one_day": false
+        },
+        {
+          "id": "VKZRmSTqI0U",
+          "title": "The Forgotten Viking War That United England",
+          "published": "2026-10-22T12:59:51+00:00",
+          "timestamp_precision": "seconds",
+          "views": 190094,
+          "duration": 1158,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=VKZRmSTqI0U",
+          "age_days": 6.230172552303241,
+          "views_per_day": 30511.83549157461,
+          "under_one_day": false
+        },
+        {
+          "id": "-DZIkSvLGJY",
+          "title": "Operation Vivaldi: Ukraine\u2019s Secret Counteroffensive",
+          "published": "2026-10-06T12:59:59+00:00",
+          "timestamp_precision": "seconds",
+          "views": 654190,
+          "duration": 996,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=-DZIkSvLGJY",
+          "age_days": 22.23007995971065,
+          "views_per_day": 29428.144261542955,
+          "under_one_day": false
+        },
+        {
+          "id": "YcE50-LemSM",
+          "title": "Saddam Expected a Quick Victory Against Iran",
+          "published": "2026-10-15T12:59:48+00:00",
+          "timestamp_precision": "seconds",
+          "views": 362448,
+          "duration": 1070,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=YcE50-LemSM",
+          "age_days": 13.230207274525464,
+          "views_per_day": 27395.489161979145,
+          "under_one_day": false
+        },
+        {
+          "id": "pn68y5rEDxk",
+          "title": "How William the Conqueror\u2019s Sons Tore England Apart",
+          "published": "2026-10-11T12:59:52+00:00",
+          "timestamp_precision": "seconds",
+          "views": 427263,
+          "duration": 1157,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=pn68y5rEDxk",
+          "age_days": 17.23016097822917,
+          "views_per_day": 24797.388749870635,
+          "under_one_day": false
+        },
+        {
+          "id": "5ij0tDYhIhg",
+          "title": "War of the Spanish Succession: All Battles and Events - FULL DOCUMENTARY",
+          "published": "2026-09-13T12:59:54+00:00",
+          "timestamp_precision": "seconds",
+          "views": 983188,
+          "duration": 17412,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=5ij0tDYhIhg",
+          "age_days": 45.23013783008101,
+          "views_per_day": 21737.45310468887,
+          "under_one_day": false
+        },
+        {
+          "id": "TY_5d4Uy97g",
+          "title": "Why Yugoslavia Collapsed: The Road to War",
+          "published": "2026-10-08T12:59:53+00:00",
+          "timestamp_precision": "seconds",
+          "views": 429448,
+          "duration": 1444,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=TY_5d4Uy97g",
+          "age_days": 20.230149404155092,
+          "views_per_day": 21228.118063813963,
+          "under_one_day": false
+        },
+        {
+          "id": "AJb-Gzc1Hvg",
+          "title": "How Did Brahmanism Defeat Buddhism - Ancient India DOCUMENTARY",
+          "published": "2026-10-13T12:59:57+00:00",
+          "timestamp_precision": "seconds",
+          "views": 304026,
+          "duration": 1302,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=AJb-Gzc1Hvg",
+          "age_days": 15.230103107858797,
+          "views_per_day": 19962.17608291314,
+          "under_one_day": false
+        },
+        {
+          "id": "iBRNkJfW7Qw",
+          "title": "Why the British Empire Fell Apart - Won Two Wars, Then Lost Its Empire",
+          "published": "2026-09-29T12:59:56+00:00",
+          "timestamp_precision": "seconds",
+          "views": 582055,
+          "duration": 1204,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=iBRNkJfW7Qw",
+          "age_days": 29.230114681932868,
+          "views_per_day": 19912.85379252269,
+          "under_one_day": false
+        },
+        {
+          "id": "8bHCPc-hZWQ",
+          "title": "Sudan\u2019s Three Civil Wars Explained",
+          "published": "2026-09-01T12:59:53+00:00",
+          "timestamp_precision": "seconds",
+          "views": 848160,
+          "duration": 3356,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=8bHCPc-hZWQ",
+          "age_days": 57.23014940415509,
+          "views_per_day": 14820.16050683979,
+          "under_one_day": false
+        },
+        {
+          "id": "3Z5P_TZ0d4o",
+          "title": "Skanderbeg\u2019s 25-Year War Against the Ottomans - All Battles EXPLAINED",
+          "published": "2026-09-27T12:59:54+00:00",
+          "timestamp_precision": "seconds",
+          "views": 436893,
+          "duration": 3677,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=3Z5P_TZ0d4o",
+          "age_days": 31.230137830081016,
+          "views_per_day": 13989.467557814702,
+          "under_one_day": false
+        },
+        {
+          "id": "f7KjbemUhkw",
+          "title": "The Greatest Peasant Uprising in English History",
+          "published": "2026-09-10T12:59:52+00:00",
+          "timestamp_precision": "seconds",
+          "views": 606409,
+          "duration": 1203,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=f7KjbemUhkw",
+          "age_days": 48.230160978229165,
+          "views_per_day": 12573.231929989406,
+          "under_one_day": false
+        },
+        {
+          "id": "ZaGZYXgMtgA",
+          "title": "What Did the Ancient Greeks and Romans Know About Britain?",
+          "published": "2026-09-24T12:59:51+00:00",
+          "timestamp_precision": "seconds",
+          "views": 416075,
+          "duration": 1104,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=ZaGZYXgMtgA",
+          "age_days": 34.23017255230324,
+          "views_per_day": 12155.211878182708,
+          "under_one_day": false
+        },
+        {
+          "id": "Oh5OS8mfSuo",
+          "title": "Operation Cartwheel: Breaking Japan's Pacific Defenses",
+          "published": "2026-10-04T12:59:49+00:00",
+          "timestamp_precision": "seconds",
+          "views": 247356,
+          "duration": 17120,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=Oh5OS8mfSuo",
+          "age_days": 24.23019570045139,
+          "views_per_day": 10208.584489286315,
+          "under_one_day": false
+        },
+        {
+          "id": "meSctH_a7HM",
+          "title": "Carthage vs Greece: The War Before Rome - Sicilian Wars DOCUMENTARY",
+          "published": "2026-10-01T12:59:47+00:00",
+          "timestamp_precision": "seconds",
+          "views": 267337,
+          "duration": 1172,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=meSctH_a7HM",
+          "age_days": 27.230218848599534,
+          "views_per_day": 9817.658884285805,
+          "under_one_day": false
+        },
+        {
+          "id": "N4zI_oNsdgg",
+          "title": "Ukraine Hits Putin Where It Hurts - CIA in Moscow",
+          "published": "2026-09-08T12:59:57+00:00",
+          "timestamp_precision": "seconds",
+          "views": 485033,
+          "duration": 1327,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=N4zI_oNsdgg",
+          "age_days": 50.230103107858795,
+          "views_per_day": 9656.221468598056,
+          "under_one_day": false
+        },
+        {
+          "id": "AKAJOrbYVS8",
+          "title": "Alexander the Great - All Battles and Conquests EXPLAINED in 6 Hours",
+          "published": "2026-09-06T12:59:52+00:00",
+          "timestamp_precision": "seconds",
+          "views": 498275,
+          "duration": 20459,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=AKAJOrbYVS8",
+          "age_days": 52.230160978229165,
+          "views_per_day": 9539.985913650418,
+          "under_one_day": false
+        },
+        {
+          "id": "lkPZPu7t38c",
+          "title": "How a Company Hooked China on Opium - Tea Led to the Opium War",
+          "published": "2026-09-17T12:59:58+00:00",
+          "timestamp_precision": "seconds",
+          "views": 333620,
+          "duration": 1409,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=lkPZPu7t38c",
+          "age_days": 41.23009153378472,
+          "views_per_day": 8091.662850824026,
+          "under_one_day": false
+        },
+        {
+          "id": "MSaVL1JAoIc",
+          "title": "The Battle That Changed the Middle East - Ottomans Broke the Mamluks",
+          "published": "2026-08-30T13:00:00+00:00",
+          "timestamp_precision": "seconds",
+          "views": 419164,
+          "duration": 1178,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=MSaVL1JAoIc",
+          "age_days": 59.23006838563657,
+          "views_per_day": 7076.878542008373,
+          "under_one_day": false
+        },
+        {
+          "id": "t5hhOOMUjZQ",
+          "title": "Why the Pope Stayed Silent - Vatican Wouldn\u2019t Condemn Hitler",
+          "published": "2026-08-27T12:51:38+00:00",
+          "timestamp_precision": "seconds",
+          "views": 406249,
+          "duration": 1255,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=t5hhOOMUjZQ",
+          "age_days": 62.235878570821754,
+          "views_per_day": 6527.569134220643,
+          "under_one_day": false
+        },
+        {
+          "id": "weBFFygUxxc",
+          "title": "Who Was Really Roman? When Did Romans Stop Being Roman?",
+          "published": "2026-09-03T12:59:53+00:00",
+          "timestamp_precision": "seconds",
+          "views": 335093,
+          "duration": 1400,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=weBFFygUxxc",
+          "age_days": 55.23014940415509,
+          "views_per_day": 6067.211543244353,
+          "under_one_day": false
+        },
+        {
+          "id": "kN2yEEMeIFA",
+          "title": "World War I: Fate of Armenians, Georgians, Azerbaijanis, Kurds and Assyrians",
+          "published": "2026-09-20T12:59:46+00:00",
+          "timestamp_precision": "seconds",
+          "views": 209257,
+          "duration": 1348,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=kN2yEEMeIFA",
+          "age_days": 38.23023042267361,
+          "views_per_day": 5473.600281412213,
+          "under_one_day": false
+        },
+        {
+          "id": "4baAU3bs-AI",
+          "title": "Ancient Law That Created the Greek Mediterranean World - Zeus' Law",
+          "published": "2026-09-15T12:59:48+00:00",
+          "timestamp_precision": "seconds",
+          "views": 223326,
+          "duration": 1295,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=4baAU3bs-AI",
+          "age_days": 43.23020727452546,
+          "views_per_day": 5165.971066985856,
+          "under_one_day": false
+        },
+        {
+          "id": "e_CItReyz_0",
+          "title": "Why the Pope Crowned Charlemagne Emperor - How Papacy Survived",
+          "published": "2026-09-22T13:22:33+00:00",
+          "timestamp_precision": "seconds",
+          "views": 175929,
+          "duration": 1213,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=e_CItReyz_0",
+          "age_days": 36.214408663414346,
+          "views_per_day": 4857.9835069275205,
+          "under_one_day": false
+        },
+        {
+          "id": "0RDCTHMXjgg",
+          "title": "Were the Sea Peoples Actually Greek? Did Greeks Destroy the Bronze Age?",
+          "published": "2026-08-25T13:18:48+00:00",
+          "timestamp_precision": "seconds",
+          "views": 311441,
+          "duration": 1283,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=0RDCTHMXjgg",
+          "age_days": 64.21701283008102,
+          "views_per_day": 4849.820729345923,
+          "under_one_day": false
+        },
+        {
+          "id": "jHoms3UV1qU",
+          "title": "Judea - Rome's Most Rebellious Province - The Empire Couldn\u2019t Control Judea",
+          "published": "2026-08-11T12:59:57+00:00",
+          "timestamp_precision": "seconds",
+          "views": 262765,
+          "duration": 1154,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=jHoms3UV1qU",
+          "age_days": 78.2301031078588,
+          "views_per_day": 3358.873241387858,
+          "under_one_day": false
+        },
+        {
+          "id": "IONLRDKLsvA",
+          "title": "Rome\u2019s Richest Conquest Turned Into its Biggest Trap",
+          "published": "2026-08-09T12:53:48+00:00",
+          "timestamp_precision": "seconds",
+          "views": 265838,
+          "duration": 1131,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=IONLRDKLsvA",
+          "age_days": 80.23437394119213,
+          "views_per_day": 3313.268203411748,
+          "under_one_day": false
+        },
+        {
+          "id": "JKmJhDPtG2E",
+          "title": "Nader Shah: The Napoleon of Iran - How One General Rebuilt the Empire",
+          "published": "2026-08-16T13:18:55+00:00",
+          "timestamp_precision": "seconds",
+          "views": 239739,
+          "duration": 6411,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=JKmJhDPtG2E",
+          "age_days": 73.2169318115625,
+          "views_per_day": 3274.3655609198872,
+          "under_one_day": false
+        },
+        {
+          "id": "MN5cQCmA82s",
+          "title": "Putin\u2019s War Has Finally Reached Russia - Ukraine Is Cutting Crimea Off",
+          "published": "2026-08-13T14:18:50+00:00",
+          "timestamp_precision": "seconds",
+          "views": 238856,
+          "duration": 1435,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=MN5cQCmA82s",
+          "age_days": 76.1753230152662,
+          "views_per_day": 3135.6086268532285,
+          "under_one_day": false
+        },
+        {
+          "id": "EI-qoH7eH28",
+          "title": "The Forgotten Battle That Created England - Brunanburh 937",
+          "published": "2026-08-18T13:43:56+00:00",
+          "timestamp_precision": "seconds",
+          "views": 173927,
+          "duration": 1176,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=EI-qoH7eH28",
+          "age_days": 71.19955912637731,
+          "views_per_day": 2442.8100698107446,
+          "under_one_day": false
+        },
+        {
+          "id": "osorjUU4ITs",
+          "title": "The Holy Roman Empire\u2019s Hidden War Machine - Late Middle Ages DOCUMENTARY",
+          "published": "2026-08-06T12:59:59+00:00",
+          "timestamp_precision": "seconds",
+          "views": 172805,
+          "duration": 1060,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=osorjUU4ITs",
+          "age_days": 83.23007995971065,
+          "views_per_day": 2076.232536165411,
+          "under_one_day": false
+        },
+        {
+          "id": "Rk7QV9Gto-c",
+          "title": "Fall of Jerusalem - How Britain Broke the Ottoman Front",
+          "published": "2026-08-23T12:57:54+00:00",
+          "timestamp_precision": "seconds",
+          "views": 93179,
+          "duration": 1309,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=Rk7QV9Gto-c",
+          "age_days": 66.2315267189699,
+          "views_per_day": 1406.8677654883631,
+          "under_one_day": false
+        },
+        {
+          "id": "JsNTrOwilOk",
+          "title": "Elite Guard of the Ottoman Sultans - the Janissaries",
+          "published": "2026-08-04T12:59:48+00:00",
+          "timestamp_precision": "seconds",
+          "views": 119133,
+          "duration": 1303,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=JsNTrOwilOk",
+          "age_days": 85.23020727452545,
+          "views_per_day": 1397.779071641514,
+          "under_one_day": false
+        },
+        {
+          "id": "eoOrlxiOFEU",
+          "title": "How the Allies Broke Japan\u2019s Front - Pacific War DOCUMENTARY",
+          "published": "2026-08-02T12:59:58+00:00",
+          "timestamp_precision": "seconds",
+          "views": 112585,
+          "duration": 16195,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=eoOrlxiOFEU",
+          "age_days": 87.23009153378472,
+          "views_per_day": 1290.666993699017,
+          "under_one_day": false
+        }
+      ],
+      "tab_error": null,
+      "listing_capped": true
+    },
+    {
+      "channel": "kingsandgenerals",
+      "tab": "shorts",
+      "count_90d": 40,
+      "fast_ids": [
+        "lSZx1OiSjwg",
+        "Rmi2RMUCTtI",
+        "CypSEQLEBnU",
+        "bR0yDuo9e_Y",
+        "G09CcgxADr4",
+        "P6cE_h-FXPU",
+        "f6ATxxu1pac",
+        "wirKMAMC2YA",
+        "fokdxbLKSvM",
+        "qlw39TP8OrE"
+      ],
+      "slow_ids": [
+        "HNVSu5es49o",
+        "oetbFj6dJNk",
+        "guqNXj2oH6M",
+        "sV2ddX7sHXw",
+        "4N9fQRo_DiQ",
+        "WQgxsXiP5WI",
+        "ezelSZqFCHE",
+        "jUkgXd5jeSQ",
+        "m3kUyQfbqzw",
+        "4e3Q0c-nwOk"
+      ],
+      "overlap_ids": [],
+      "all_90d": [
+        {
+          "id": "lSZx1OiSjwg",
+          "title": "Why Rome didn't care about Britain #romanempire #history",
+          "published": "2026-10-26T13:00:20+00:00",
+          "timestamp_precision": "seconds",
+          "views": 146444,
+          "duration": 130,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=lSZx1OiSjwg",
+          "age_days": 2.2298369041550923,
+          "views_per_day": 65674.75842162057,
+          "under_one_day": false
+        },
+        {
+          "id": "Rmi2RMUCTtI",
+          "title": "The Devshirme: How the Ottomans Took 1 in 40 Sons",
+          "published": "2026-10-21T13:00:34+00:00",
+          "timestamp_precision": "seconds",
+          "views": 137796,
+          "duration": 171,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=Rmi2RMUCTtI",
+          "age_days": 7.229674867118056,
+          "views_per_day": 19059.778279480113,
+          "under_one_day": false
+        },
+        {
+          "id": "CypSEQLEBnU",
+          "title": "Why Did Rome Station 30,000 Troops on One Island",
+          "published": "2026-08-21T13:00:25+00:00",
+          "timestamp_precision": "seconds",
+          "views": 1132251,
+          "duration": 103,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=CypSEQLEBnU",
+          "age_days": 68.22977903378472,
+          "views_per_day": 16594.67487707022,
+          "under_one_day": false
+        },
+        {
+          "id": "bR0yDuo9e_Y",
+          "title": "How Anglo-Saxons Became the Byzantine Emperor\u2019s Bodyguards",
+          "published": "2026-10-14T13:00:28+00:00",
+          "timestamp_precision": "seconds",
+          "views": 212259,
+          "duration": 118,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=bR0yDuo9e_Y",
+          "age_days": 14.2297443115625,
+          "views_per_day": 14916.571608916904,
+          "under_one_day": false
+        },
+        {
+          "id": "G09CcgxADr4",
+          "title": "How the Hundred Years' War Bankrupted England",
+          "published": "2026-10-12T13:00:23+00:00",
+          "timestamp_precision": "seconds",
+          "views": 184613,
+          "duration": 82,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=G09CcgxADr4",
+          "age_days": 16.22980218193287,
+          "views_per_day": 11374.938396076846,
+          "under_one_day": false
+        },
+        {
+          "id": "P6cE_h-FXPU",
+          "title": "\"If a Man Isn\u2019t Afraid of Dying, He is a Gurkha\"",
+          "published": "2026-10-19T13:00:14+00:00",
+          "timestamp_precision": "seconds",
+          "views": 94916,
+          "duration": 157,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=P6cE_h-FXPU",
+          "age_days": 9.229906348599538,
+          "views_per_day": 10283.5279595661,
+          "under_one_day": false
+        },
+        {
+          "id": "f6ATxxu1pac",
+          "title": "Why England Banned Peasants from Wearing Pointy Shoes",
+          "published": "2026-09-16T13:00:14+00:00",
+          "timestamp_precision": "seconds",
+          "views": 422706,
+          "duration": 125,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=f6ATxxu1pac",
+          "age_days": 42.229906348599535,
+          "views_per_day": 10009.636216349747,
+          "under_one_day": false
+        },
+        {
+          "id": "wirKMAMC2YA",
+          "title": "Why Rome\u2019s Greatest Threat Was Its Own Settler Legions",
+          "published": "2026-09-14T13:00:37+00:00",
+          "timestamp_precision": "seconds",
+          "views": 435581,
+          "duration": 74,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=wirKMAMC2YA",
+          "age_days": 44.22964014489583,
+          "views_per_day": 9848.169656661037,
+          "under_one_day": false
+        },
+        {
+          "id": "fokdxbLKSvM",
+          "title": "The Room Only the High Priest Could Enter Was Empty #Jerusalem #HistoryShorts",
+          "published": "2026-10-28T13:01:01+00:00",
+          "timestamp_precision": "seconds",
+          "views": 9066,
+          "duration": 75,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=fokdxbLKSvM",
+          "age_days": 0.22936236711805555,
+          "views_per_day": 9066.0,
+          "under_one_day": true
+        },
+        {
+          "id": "qlw39TP8OrE",
+          "title": "The British Insult That Sparked Pontiac's Rebellion",
+          "published": "2026-10-23T13:00:36+00:00",
+          "timestamp_precision": "seconds",
+          "views": 43983,
+          "duration": 75,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=qlw39TP8OrE",
+          "age_days": 5.229651718969907,
+          "views_per_day": 8410.311501329461,
+          "under_one_day": false
+        },
+        {
+          "id": "h4dBRGZOUuU",
+          "title": "The 3,000 vs 60,000 \"Battle\" That Conquered India",
+          "published": "2026-09-23T13:00:34+00:00",
+          "timestamp_precision": "seconds",
+          "views": 245010,
+          "duration": 152,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=h4dBRGZOUuU",
+          "age_days": 35.22967486711806,
+          "views_per_day": 6954.6483447306055,
+          "under_one_day": false
+        },
+        {
+          "id": "LF3w7ljfrS0",
+          "title": "How the East India Company Crushed the Entire Mughal Alliance",
+          "published": "2026-10-16T13:00:20+00:00",
+          "timestamp_precision": "seconds",
+          "views": 58677,
+          "duration": 114,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=LF3w7ljfrS0",
+          "age_days": 12.229836904155093,
+          "views_per_day": 4797.856296845992,
+          "under_one_day": false
+        },
+        {
+          "id": "t9GnYFhvEVg",
+          "title": "Why His Enemy Ran Away From An Empty City #shorts #tactics",
+          "published": "2026-10-13T23:04:55+00:00",
+          "timestamp_precision": "seconds",
+          "views": 65699,
+          "duration": 116,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=t9GnYFhvEVg",
+          "age_days": 14.809987367118056,
+          "views_per_day": 4436.128024380933,
+          "under_one_day": false
+        },
+        {
+          "id": "dfQOGqQglCo",
+          "title": "\"You Have Not Conquered Us\": The Warning That Shook Britain",
+          "published": "2026-10-02T13:00:34+00:00",
+          "timestamp_precision": "seconds",
+          "views": 115025,
+          "duration": 104,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=dfQOGqQglCo",
+          "age_days": 26.229674867118053,
+          "views_per_day": 4385.300259447638,
+          "under_one_day": false
+        },
+        {
+          "id": "yjpe9h3ojBE",
+          "title": "The Mutiny That Dethroned Mehmet the Conqueror",
+          "published": "2026-09-30T13:00:36+00:00",
+          "timestamp_precision": "seconds",
+          "views": 123299,
+          "duration": 133,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=yjpe9h3ojBE",
+          "age_days": 28.229651718969905,
+          "views_per_day": 4367.712404937143,
+          "under_one_day": false
+        },
+        {
+          "id": "yzIUbsJDy50",
+          "title": "How 60,000 French Controlled Half of North America",
+          "published": "2026-09-11T13:00:12+00:00",
+          "timestamp_precision": "seconds",
+          "views": 203174,
+          "duration": 94,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=yzIUbsJDy50",
+          "age_days": 47.22992949674768,
+          "views_per_day": 4301.806125160336,
+          "under_one_day": false
+        },
+        {
+          "id": "wkmuef5Ma7Y",
+          "title": "The Hungarian Commander Who Decoded Ottoman Tactics",
+          "published": "2026-08-17T13:00:39+00:00",
+          "timestamp_precision": "seconds",
+          "views": 305587,
+          "duration": 111,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=wkmuef5Ma7Y",
+          "age_days": 72.22961699674768,
+          "views_per_day": 4230.771430142843,
+          "under_one_day": false
+        },
+        {
+          "id": "7p73VjD6U-Y",
+          "title": "How Mehmet II Transformed the Ottoman Army Forever",
+          "published": "2026-09-09T13:00:13+00:00",
+          "timestamp_precision": "seconds",
+          "views": 199099,
+          "duration": 47,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=7p73VjD6U-Y",
+          "age_days": 49.22991792267361,
+          "views_per_day": 4044.2683717801174,
+          "under_one_day": false
+        },
+        {
+          "id": "g4PX7hgsf6E",
+          "title": "Why Did Rome Abandon Hadrian\u2019s Wall for the Antonine Wall?",
+          "published": "2026-08-05T13:00:17+00:00",
+          "timestamp_precision": "seconds",
+          "views": 265069,
+          "duration": 107,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=g4PX7hgsf6E",
+          "age_days": 84.22987162637732,
+          "views_per_day": 3146.9714352145747,
+          "under_one_day": false
+        },
+        {
+          "id": "kvGePorewUM",
+          "title": "The Scandalous Origin of the First Gallic Sack of Rome",
+          "published": "2026-09-21T13:00:08+00:00",
+          "timestamp_precision": "seconds",
+          "views": 105313,
+          "duration": 113,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=kvGePorewUM",
+          "age_days": 37.22997579304398,
+          "views_per_day": 2828.715242400899,
+          "under_one_day": false
+        },
+        {
+          "id": "DTWvjUlhbxU",
+          "title": "Why Britain Was Never Truly \"Roman\"",
+          "published": "2026-10-05T13:00:39+00:00",
+          "timestamp_precision": "seconds",
+          "views": 64981,
+          "duration": 120,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=DTWvjUlhbxU",
+          "age_days": 23.229616996747687,
+          "views_per_day": 2797.334110549382,
+          "under_one_day": false
+        },
+        {
+          "id": "TwLMSOSBcYM",
+          "title": "The 1,000-Year Secret Behind the Viking Longship",
+          "published": "2026-10-07T13:00:04+00:00",
+          "timestamp_precision": "seconds",
+          "views": 54842,
+          "duration": 154,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=TwLMSOSBcYM",
+          "age_days": 21.230022089340277,
+          "views_per_day": 2583.228588703942,
+          "under_one_day": false
+        },
+        {
+          "id": "jUOLQwyt42k",
+          "title": "How Robert Clive Retook Calcutta in 1756",
+          "published": "2026-09-04T13:00:09+00:00",
+          "timestamp_precision": "seconds",
+          "views": 136549,
+          "duration": 157,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=jUOLQwyt42k",
+          "age_days": 54.229964218969904,
+          "views_per_day": 2517.9621998023467,
+          "under_one_day": false
+        },
+        {
+          "id": "Qa32DYFwlUo",
+          "title": "How a Private French Army Fought Britain for India",
+          "published": "2026-08-12T13:00:14+00:00",
+          "timestamp_precision": "seconds",
+          "views": 182947,
+          "duration": 90,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=Qa32DYFwlUo",
+          "age_days": 77.22990634859954,
+          "views_per_day": 2368.8621241390056,
+          "under_one_day": false
+        },
+        {
+          "id": "6TvDUYm4YnQ",
+          "title": "Why English Has Two Words for Every Meat",
+          "published": "2026-09-18T13:00:39+00:00",
+          "timestamp_precision": "seconds",
+          "views": 86874,
+          "duration": 57,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=6TvDUYm4YnQ",
+          "age_days": 40.22961699674768,
+          "views_per_day": 2159.4538174952854,
+          "under_one_day": false
+        },
+        {
+          "id": "430TRqgPrFs",
+          "title": "When Celtic Warriors Conquered Northern Italy",
+          "published": "2026-09-02T13:00:14+00:00",
+          "timestamp_precision": "seconds",
+          "views": 114511,
+          "duration": 118,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=430TRqgPrFs",
+          "age_days": 56.229906348599535,
+          "views_per_day": 2036.4785829463153,
+          "under_one_day": false
+        },
+        {
+          "id": "QOLrTZmV5Fo",
+          "title": "The Extinction of Africa\u2019s 1,000-Year Christian Empire",
+          "published": "2026-09-28T13:00:36+00:00",
+          "timestamp_precision": "seconds",
+          "views": 56736,
+          "duration": 119,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=QOLrTZmV5Fo",
+          "age_days": 30.229651718969905,
+          "views_per_day": 1876.8327378511167,
+          "under_one_day": false
+        },
+        {
+          "id": "O3ydWj-yYa4",
+          "title": "The Shallow Water Secret That Won Viking Wars #history #military #shorts",
+          "published": "2026-08-03T13:00:07+00:00",
+          "timestamp_precision": "seconds",
+          "views": 152599,
+          "duration": 158,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=O3ydWj-yYa4",
+          "age_days": 86.22998736711806,
+          "views_per_day": 1769.6743865950089,
+          "under_one_day": false
+        },
+        {
+          "id": "A2amW6KR2l0",
+          "title": "The Bizarre Insult Hurled at William the Conqueror",
+          "published": "2026-08-31T13:00:39+00:00",
+          "timestamp_precision": "seconds",
+          "views": 90326,
+          "duration": 78,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=A2amW6KR2l0",
+          "age_days": 58.22961699674768,
+          "views_per_day": 1551.2037457681545,
+          "under_one_day": false
+        },
+        {
+          "id": "gehcm3Hx2lI",
+          "title": "One Gurkha vs. 40 Armed Bandits: The 2010 Train Fight",
+          "published": "2026-09-25T13:00:06+00:00",
+          "timestamp_precision": "seconds",
+          "views": 43397,
+          "duration": 59,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=gehcm3Hx2lI",
+          "age_days": 33.22999894119213,
+          "views_per_day": 1305.9585128726799,
+          "under_one_day": false
+        },
+        {
+          "id": "4e3Q0c-nwOk",
+          "title": "Imagine Facing a Screaming Mob of Gallic Warriors...",
+          "published": "2026-08-10T13:00:25+00:00",
+          "timestamp_precision": "seconds",
+          "views": 101092,
+          "duration": 95,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=4e3Q0c-nwOk",
+          "age_days": 79.22977903378472,
+          "views_per_day": 1275.9343927602388,
+          "under_one_day": false
+        },
+        {
+          "id": "m3kUyQfbqzw",
+          "title": "1066: The Brutal Forced March That Doomed King Harold",
+          "published": "2026-08-07T13:00:33+00:00",
+          "timestamp_precision": "seconds",
+          "views": 87410,
+          "duration": 177,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=m3kUyQfbqzw",
+          "age_days": 82.22968644119213,
+          "views_per_day": 1062.998094520434,
+          "under_one_day": false
+        },
+        {
+          "id": "jUkgXd5jeSQ",
+          "title": "The Secret Double Life of Gods at Hadrian\u2019s Wall",
+          "published": "2026-10-09T13:00:02+00:00",
+          "timestamp_precision": "seconds",
+          "views": 20369,
+          "duration": 64,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=jUkgXd5jeSQ",
+          "age_days": 19.230045237488426,
+          "views_per_day": 1059.2278774410377,
+          "under_one_day": false
+        },
+        {
+          "id": "ezelSZqFCHE",
+          "title": "The Lacrosse Match That Destroyed a British Fort",
+          "published": "2026-08-19T13:00:29+00:00",
+          "timestamp_precision": "seconds",
+          "views": 65579,
+          "duration": 76,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=ezelSZqFCHE",
+          "age_days": 70.22973273748842,
+          "views_per_day": 933.7782936627086,
+          "under_one_day": false
+        },
+        {
+          "id": "WQgxsXiP5WI",
+          "title": "The African Kingdom Where Women Held Real Power",
+          "published": "2026-09-07T13:00:23+00:00",
+          "timestamp_precision": "seconds",
+          "views": 43042,
+          "duration": 61,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=WQgxsXiP5WI",
+          "age_days": 51.22980218193287,
+          "views_per_day": 840.1750185789231,
+          "under_one_day": false
+        },
+        {
+          "id": "4N9fQRo_DiQ",
+          "title": "Disease, Plagues, and 28-Year Lifespans in Roman Britain",
+          "published": "2026-08-28T13:00:22+00:00",
+          "timestamp_precision": "seconds",
+          "views": 46179,
+          "duration": 134,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=4N9fQRo_DiQ",
+          "age_days": 61.22981375600694,
+          "views_per_day": 754.1914170116125,
+          "under_one_day": false
+        },
+        {
+          "id": "sV2ddX7sHXw",
+          "title": "Slow News Meant Fast Revolutions in Roman Britain #AncientRome #RomanBritain #History",
+          "published": "2026-07-31T13:00:10+00:00",
+          "timestamp_precision": "seconds",
+          "views": 51941,
+          "duration": 173,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=sV2ddX7sHXw",
+          "age_days": 89.22995264489583,
+          "views_per_day": 582.1027408442892,
+          "under_one_day": false
+        },
+        {
+          "id": "guqNXj2oH6M",
+          "title": "The Christian Kingdom Hidden in the African Desert",
+          "published": "2026-08-14T13:00:34+00:00",
+          "timestamp_precision": "seconds",
+          "views": 39737,
+          "duration": 127,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=guqNXj2oH6M",
+          "age_days": 75.22967486711805,
+          "views_per_day": 528.2091152220112,
+          "under_one_day": false
+        },
+        {
+          "id": "oetbFj6dJNk",
+          "title": "Did Vikings Really Burn Their Ships at Funerals?",
+          "published": "2026-08-24T13:00:39+00:00",
+          "timestamp_precision": "seconds",
+          "views": 25376,
+          "duration": 112,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=oetbFj6dJNk",
+          "age_days": 65.22961699674768,
+          "views_per_day": 389.0257396615595,
+          "under_one_day": false
+        },
+        {
+          "id": "HNVSu5es49o",
+          "title": "Why the Vikings Buried Their Longships",
+          "published": "2026-08-26T13:00:20+00:00",
+          "timestamp_precision": "seconds",
+          "views": 22195,
+          "duration": 112,
+          "channel": "Kings and Generals",
+          "channel_id": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+          "url": "https://www.youtube.com/watch?v=HNVSu5es49o",
+          "age_days": 63.22983690415509,
+          "views_per_day": 351.02099082816824,
+          "under_one_day": false
+        }
+      ],
+      "tab_error": null,
+      "listing_capped": true
+    }
+  ],
+  "errors": [
+    {
+      "id": "m_wTdBYwDjA",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "EdaBNyVa9rw",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "ZPYAyp40Oo8",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "tb7bN4cXy4g",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "oG4qm9gY92Y",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "K9UGyUeS9H8",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "UGoFaYK30VA",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "i2LxtGz_Zik",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "ttJrM5xwjS8",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "ftbTCzxWbXo",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "hGdEORrGLwY",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "Vg9sEO9j7ek",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "kS0sMdjrxwY",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "crS6dlSHp4c",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "-fOhUgbBjUE",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "aT3w1DZZhpY",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "M7U8QJzJhXI",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "fKPIfrFCzl4",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "5znl394uHAQ",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "ZK4QXdT8c90",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "Vd6b9tgOpis",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "QiYgZZgw9gM",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "W8BVdamH5z0",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "-lsjsQFOjGI",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "WFrOQFFFMJY",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "EGvKIPkISXc",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "TAJBg6Qo3OI",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "I4l6ggpdDkI",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "r4-JYvfOHmE",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "qpn8kG72cAU",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "4ccoHiCRVqU",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "oZO40HHerEU",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "YCzkPLp8pbA",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "hVsLov96moY",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "FNuKGQD9JfM",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "VrD6AIqsOD4",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "1mKal_YYnEk",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "zIW9uHtX3Xs",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "YztCtCsoluY",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "7AKu7090M7c",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "dmBUEGsgjM4",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "h7V2HQiJXZs",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "DdmkvAXgp9k",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "ShFpl45YQTs",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "fi0y1hQ1cmA",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "Y3nHqbYjZ7s",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "35mPwOxcx50",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "f1iWRUV9-fU",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "FpZmXOJGr0o",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "T893rzRtYp0",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "S32EXwaO8wg",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "eL3srQjPYts",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "ZbcGvvOj60k",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "4miH3AzKL1Y",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "oGRZHdFOjEA",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "0KI5eHTDGzI",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "LOlkmAkMaC8",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "T1AUZ84DdlE",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "8rpQn-_rggQ",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "vUx2dVt7oLw",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "2Hu4V5RB8RI",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "1sr5laqfqbM",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "pDnG8lFHiv8",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "UXeu-6QI7gs",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "ijgsBRXta6g",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "N5ti54PJzw8",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "C85zZrl4xwQ",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "GHKRIvMBCus",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "3ZTdAN5SskA",
+      "error": "Excluded nonpublic availability: needs_auth"
+    },
+    {
+      "id": "u9Gn4GQi_CE",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "x_qGT0sasrE",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "rOFbBy3Degc",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "UQ_h6urscP8",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "xqa8W2ytiuc",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "HE_M8sgsnMo",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "aB0C4OemqHo",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "L51_khsWhME",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "zYz_67QMPas",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "JYxHUXs_o2w",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "Ej10MCnZpss",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "I_Iaejk_3PI",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "C9sRUgBvN1k",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "JfTZTIH03eQ",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "kOMdfNIGtWg",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "v0UGdFXvLvY",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "ax4AAMo0AXU",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "ZazJAiGtLLo",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "Ad7XLzDisYM",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "rP27mHekgXI",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "5SiUq2-Sg-w",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "dFvMlKjhx-k",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "OWMYo2WDJe4",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "mi3sqm0V9RY",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "cH5XDlF-PWc",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "dxI4XLpQUck",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "iSiq2T2bkOA",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "SCHDsGE5HRw",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "6yu-Ok3-oxM",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "KX91OHFtPPA",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "MXSkssWu9kc",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "VqhDBNGkX0A",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "wjJDNENd-kU",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "IzzX3_gWiPE",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "jmTuYDcONXo",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "_l0vUATnBYU",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "_N_2sxDzm4E",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "FKsXLCV67fE",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "qNCxQsyfu4k",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "dyGgXKopNTQ",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "leKisGRf_dc",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "cTf5EfN-ybs",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "G0Cj9vAOzZo",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "lMFnIkNX6j0",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "W2lgjc2U6H0",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "sRM6iI6gcgU",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "-WPrFS9FqSM",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "mlgvWBMypW8",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "Iu4F-p2gAmU",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "U3OWSt8z3rM",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "aXj7y7xprog",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "_vbhtgi2E0Y",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "JiSKpR-UZ2A",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "z67LZX-Tml0",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "dJh265VDFzQ",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    },
+    {
+      "id": "WKQbLBQuOsE",
+      "error": "Excluded nonpublic availability: subscriber_only"
+    }
+  ],
+  "assets": [
+    {
+      "id": "eyZEqSPeMwg",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/eyZEqSPeMwg.jpg",
+      "sha256": "69ed907fc2e796d1026bc2403c8c467ace2e0e7ec09a545ead89328f6942a5a0"
+    },
+    {
+      "id": "NiCgcUTL9_Q",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/NiCgcUTL9_Q.jpg",
+      "sha256": "1ab92d95e43e68e6e811d88e9bc9aa0c014ab910cdea2f9f8b27f6ccb130bc95"
+    },
+    {
+      "id": "JsBZOcqZerk",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/JsBZOcqZerk.jpg",
+      "sha256": "74f4c45ae48245656da8d11feb5f5141bb62d31cb6d83945e12dc571066d876a"
+    },
+    {
+      "id": "wt4p2oalmRY",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/wt4p2oalmRY.jpg",
+      "sha256": "cc3bd8194b53947610089b6f7220045e2b52307ff35c0b1babf666f7507588f8"
+    },
+    {
+      "id": "ONAuUyml0yI",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/ONAuUyml0yI.jpg",
+      "sha256": "baa079da686831554c1218332f7265fe1f7a26d42db1398549f25ed8b1be0706"
+    },
+    {
+      "id": "J1WoNuemKOg",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/J1WoNuemKOg.jpg",
+      "sha256": "eb5a2aeee9e239b9c1dd0d19d8d7c16c1539b01e5b18fd99ec7b1e446c699142"
+    },
+    {
+      "id": "Kap7mRzr13w",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/Kap7mRzr13w.jpg",
+      "sha256": "a894129ad5c3e79cfaaa31b76e974941614108788b48e7050e3c60e50bd5a351"
+    },
+    {
+      "id": "j9p3Sn8ROL4",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/j9p3Sn8ROL4.jpg",
+      "sha256": "2a9656d67ae3f248610c1e0a5a7251c867bddc7370132d36b29f33e9be2dc062"
+    },
+    {
+      "id": "wxLc-gFORPQ",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/wxLc-gFORPQ.jpg",
+      "sha256": "72a4a899a71e19b649b1a105c2cf65ec474b7155f7926f0c7f3ac39a5add9d2a"
+    },
+    {
+      "id": "oR94cicO7xM",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/oR94cicO7xM.jpg",
+      "sha256": "5cddd446f59c7457b548b734165f8ffdae9c10cfc66f9c34e6ac9378b7937d53"
+    },
+    {
+      "id": "b3KpFdb1pW8",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/b3KpFdb1pW8.jpg",
+      "sha256": "a6748daac7da8b97866b0fbea4b5e8e636e0db7e24e0f8dd545d9b2929678aac"
+    },
+    {
+      "id": "6U6Z6pb6ewI",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/6U6Z6pb6ewI.jpg",
+      "sha256": "e30702c81a5e599d5367eabefd98607831e6ea7ef66aae462c3381777e021bb7"
+    },
+    {
+      "id": "IHkp5Kq72ro",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/IHkp5Kq72ro.jpg",
+      "sha256": "b8c29ff1f0fe555350870fa26c48963115745d0a755c929f28173bf08394c16d"
+    },
+    {
+      "id": "F5_G0AHfYhI",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/F5_G0AHfYhI.jpg",
+      "sha256": "d1ef1c892522e1348cb3cbc945567a6221ee80de8cbba144a18e2b840f764d76"
+    },
+    {
+      "id": "VKlulHwMxgU",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/VKlulHwMxgU.jpg",
+      "sha256": "c7c6155f8dacf233881d0f58d005560601c978b16f02421407bab1d4c4b550db"
+    },
+    {
+      "id": "O3a99HNskNk",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/O3a99HNskNk.jpg",
+      "sha256": "dc8182243d73c9857634968afe91405a4f04bc82050cfc99e3eebc66f1fe2fc5"
+    },
+    {
+      "id": "nHAFnH3xRl4",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/nHAFnH3xRl4.jpg",
+      "sha256": "db4988de4589629d9e5831e69ada2a88a6e4f840a25652a5d3adc85eef6f4371"
+    },
+    {
+      "id": "hPoJWjJ9Ao8",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/hPoJWjJ9Ao8.jpg",
+      "sha256": "0212ed6f018b15d241c3b6822ece99a827a426cd122cdc23f78e9f4deaf505a2"
+    },
+    {
+      "id": "_1G8nrmBKeY",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/_1G8nrmBKeY.jpg",
+      "sha256": "dc6c623d7a49a1e03289b4c3983afe95519dfb3039647e189e43606df0c24fa1"
+    },
+    {
+      "id": "5U-V0y-fkSw",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/5U-V0y-fkSw.jpg",
+      "sha256": "cdb02f6dd9595e0a0b792bc895a068685140121f52c1f7783c47873538c4f46f"
+    },
+    {
+      "id": "dfA_VA20A2Y",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/dfA_VA20A2Y.jpg",
+      "sha256": "ff57918c4b1ea1e3819bedeb3853a8ce20fd553c5ca60e51db874b5d78619168"
+    },
+    {
+      "id": "p7Tb0GNawdM",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/p7Tb0GNawdM.jpg",
+      "sha256": "75897df6b55741670c7edd2a029caf2c66b9b3d8550e7679d6f6bf4daafa8ffe"
+    },
+    {
+      "id": "9yYQHUTv9t4",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/9yYQHUTv9t4.jpg",
+      "sha256": "16de7a53a287d032c55f05aa2acca247c7217821ea59dc0abc98f10bcb347c44"
+    },
+    {
+      "id": "SfRqo_trkNo",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/SfRqo_trkNo.jpg",
+      "sha256": "4bbddcf06cad6aea4f5861c3a2aecf55d7c51a2c7dabf3d51409403c4e126ab4"
+    },
+    {
+      "id": "kBTa41cK4wM",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/kBTa41cK4wM.jpg",
+      "sha256": "590e6acb7161b77b810b591f23fb07b069c259585ca56fef0d6c22c00137c0d9"
+    },
+    {
+      "id": "16-xQ-Dt2mk",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/16-xQ-Dt2mk.jpg",
+      "sha256": "83df81d1893f3af0f7846ab863e997774b2eda7e918618355bd69a43c504d3f2"
+    },
+    {
+      "id": "09Zd9k-szWw",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/09Zd9k-szWw.jpg",
+      "sha256": "5d4f852aabb0a4757debf3f0544f550153803b8ee064e1ea1ea0dd80145ae559"
+    },
+    {
+      "id": "gLkYRU2fOos",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/gLkYRU2fOos.jpg",
+      "sha256": "855f6d912d963943863b5e0be9de4707092a4b2f866b5a49215d4a3609ff51c2"
+    },
+    {
+      "id": "nZMyQBVBVqs",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/nZMyQBVBVqs.jpg",
+      "sha256": "3237f202bf3d69ef28cca1a3476854de17fbd932f61784cfad92c20a27cfb439"
+    },
+    {
+      "id": "cqDZt0BOlBI",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/cqDZt0BOlBI.jpg",
+      "sha256": "0c52ae00b1c2871b1ec64cc005f907587813cc6d706f5ebfff930dc263160add"
+    },
+    {
+      "id": "JwbvGz1z5-M",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/JwbvGz1z5-M.jpg",
+      "sha256": "83cf4f00517830e7f8c61df00ea2b97471b30b36156e8aaabee9b3f842cb93c9"
+    },
+    {
+      "id": "h2wnaBny4Ig",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/h2wnaBny4Ig.jpg",
+      "sha256": "928918cdbab25a8b35855c3bd8bdf277c0bc786280380b96cd89f81c8f09eba3"
+    },
+    {
+      "id": "zHgKaAhSs1A",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/zHgKaAhSs1A.jpg",
+      "sha256": "be482f600f3f3807d308695fe53993eeb1dcffa89e938dc379c27e2698ca3b6f"
+    },
+    {
+      "id": "hy-IbuXXUYk",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/hy-IbuXXUYk.jpg",
+      "sha256": "01d6e83593eb386bd5aa0f7d3ec2865882e178d008643edaea2f07608f9f062b"
+    },
+    {
+      "id": "sh-8TyRgV5Y",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/sh-8TyRgV5Y.jpg",
+      "sha256": "23651370c00407b4417ecde7950f39bd3daca0c86c5d845705b0b8a8ef195d15"
+    },
+    {
+      "id": "JGN6po7Zcsg",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/JGN6po7Zcsg.jpg",
+      "sha256": "2dcc8d000a9e865a5019664a1554d44c5ead657ae6c6da65d0d8923ca94dd6de"
+    },
+    {
+      "id": "YXh8FUD2f9o",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/YXh8FUD2f9o.jpg",
+      "sha256": "b79ace9680c1f5d56ac0737e4897732c4f0bf796651146227c363616faced85c"
+    },
+    {
+      "id": "8Kt6p_GQt_w",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/8Kt6p_GQt_w.jpg",
+      "sha256": "f2dcecf7fbf2025b3f81f4b907b894b305fd0995d30a4449c43b4891e40edcb1"
+    },
+    {
+      "id": "A8XPsYH5Jb4",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/A8XPsYH5Jb4.jpg",
+      "sha256": "ae51d809b76272892bcba182e447d280e86dd649c254132cae060c708e9a677c"
+    },
+    {
+      "id": "0DD6u8nK4wE",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/0DD6u8nK4wE.jpg",
+      "sha256": "2c84337fc0e2ec365a6cbd12411ff2d8b42bc3fb5b0eecdfc45ea01742e00838"
+    },
+    {
+      "id": "HdJxqW0-uZA",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/HdJxqW0-uZA.jpg",
+      "sha256": "63349b104dc042f868793ab3fe8df4d4b630ec0d11a2c7b25b7ba57dcc5c55a6"
+    },
+    {
+      "id": "OOMx2BHHWtE",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/OOMx2BHHWtE.jpg",
+      "sha256": "148d85543fe36d5cb15e055f19f86e016f2f95669f8ca64ddffcf76a44de7e5e"
+    },
+    {
+      "id": "YBr-dz44Bwo",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/YBr-dz44Bwo.jpg",
+      "sha256": "371c9771a0245c8800919feb3e920775b9c548ac3bd723f49a747d810a19f65f"
+    },
+    {
+      "id": "9WJ-GGD212s",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/9WJ-GGD212s.jpg",
+      "sha256": "a1b42e2a618a7e10ac571fa878c3b91ec2e837004cebc0b98889a4878b2ef3c6"
+    },
+    {
+      "id": "2EtZHm-gs5o",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/2EtZHm-gs5o.jpg",
+      "sha256": "dd52c424d378c7c24df54c03fca0c8d185341135c44e708f9dc05db4ec6a835e"
+    },
+    {
+      "id": "8RUjEGFFLTc",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/8RUjEGFFLTc.jpg",
+      "sha256": "386ac6f3be60fe00c807156d58557d03c1f2f23bccb633b113948fe55b603166"
+    },
+    {
+      "id": "fzol1qf9qTo",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/fzol1qf9qTo.jpg",
+      "sha256": "7d8a5fab7b2720f0f7e38e0d0132472248fba43fb39287ea0f81a9f21569a4a0"
+    },
+    {
+      "id": "S8l1jGHt_PI",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/S8l1jGHt_PI.jpg",
+      "sha256": "1d24b4074b56f0d6df629b6b3eedc84731aedc040555d56ea9edc3ee93811b5a"
+    },
+    {
+      "id": "9zJL0l99ejQ",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/9zJL0l99ejQ.jpg",
+      "sha256": "6870c473f8e342126de4ebfe3718e5c7058cf1c57fed8fec8d8103a3490dad3e"
+    },
+    {
+      "id": "yzNzjg1c0V4",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/yzNzjg1c0V4.jpg",
+      "sha256": "a134b324577650102e0aefda2df38a2889d9839493ed18f8e129212e5f7ef1ca"
+    },
+    {
+      "id": "arte3arYBrU",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/arte3arYBrU.jpg",
+      "sha256": "cce1c7bc7deaadfe8e12905f7b42e0e9c1f3c7624cbb26981c44a9a93e6b528d"
+    },
+    {
+      "id": "WP3wl1rsXjg",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/WP3wl1rsXjg.jpg",
+      "sha256": "ced7dfd3045a87963eadb345954b3375b6881f7bf01ac9f05b24dcd92edf338f"
+    },
+    {
+      "id": "gVars5PNOMg",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/gVars5PNOMg.jpg",
+      "sha256": "15673111ca530ec4aea060755c89c09d505aebf2a8a5013ca5997f0e38a4b18e"
+    },
+    {
+      "id": "yahyL3ABjjo",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/yahyL3ABjjo.jpg",
+      "sha256": "08be27576df2c34aa37ea9dffb90926888dec320472e3e5e23ede809f186735b"
+    },
+    {
+      "id": "hqa06hmCayo",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/hqa06hmCayo.jpg",
+      "sha256": "5cc5a845301402ab9f3cd91a7519f6c31e0da0596cec1768e2cbe69c1682928e"
+    },
+    {
+      "id": "ZAbHQ1qAa0I",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/ZAbHQ1qAa0I.jpg",
+      "sha256": "1172deb6eae9780ed9ce60c2fbf069b5d5e1fc7b1006dc3c7f57d9d01eb0888f"
+    },
+    {
+      "id": "8vYZ5oQb4M8",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/8vYZ5oQb4M8.jpg",
+      "sha256": "a035d69369d9c9a0785502d203b6f7f84ffc3962e30b46428dd0ea3d9e46dbcb"
+    },
+    {
+      "id": "6xmDG2Io7vc",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/6xmDG2Io7vc.jpg",
+      "sha256": "3c862683a13ffe90d9ab0e2a04021aae8f5c02ac3e17fe3e87fbf96e3f347477"
+    },
+    {
+      "id": "-nMXrAkhCm8",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/-nMXrAkhCm8.jpg",
+      "sha256": "212761071d7bcb19af446abb0945a56b8a32957f84877eb9fd299575a1606a39"
+    },
+    {
+      "id": "fGdFGBYn308",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/fGdFGBYn308.jpg",
+      "sha256": "43fb7db43efc6ec55090ccd54c82482646e0af1df93cba65f87cac8c48af16f4"
+    },
+    {
+      "id": "KtY6mDA1Ps4",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/KtY6mDA1Ps4.jpg",
+      "sha256": "bb14fb682ef98c01cce2121fbf340f5c0ae1c60902c7baf5c0a3c1738c73ec77"
+    },
+    {
+      "id": "btdZ8iMz_XU",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/btdZ8iMz_XU.jpg",
+      "sha256": "f5cab6f24e3b183e551a75f3488de5f47fff64b9d8307efb15f55f3c6ffc17db"
+    },
+    {
+      "id": "MgpM7QxPOr8",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/MgpM7QxPOr8.jpg",
+      "sha256": "08ffba4bc7ba5454ed2de74b25179be0274c66f6facc2f86c551dc3ae5440fb1"
+    },
+    {
+      "id": "yf5ggZt3i04",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/yf5ggZt3i04.jpg",
+      "sha256": "0cfb444db0ea6ffa346197660f73404da739c0705a4be17e937999fa79ac0d8c"
+    },
+    {
+      "id": "9UtyrAipobI",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/9UtyrAipobI.jpg",
+      "sha256": "08abb7982800a5c2ddd395eea2f06a651184bc6ed5c71da6a2a1070f3a775aff"
+    },
+    {
+      "id": "nLDBRNj93Ak",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/nLDBRNj93Ak.jpg",
+      "sha256": "50068988374c909a48e21caecc3774ff322f4b047cf5ac053f27a82aa8613e19"
+    },
+    {
+      "id": "vEDkowLG4Tc",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/vEDkowLG4Tc.jpg",
+      "sha256": "8709124c85b275fcf79fdca1f072f319a35e4e45a1a60825d4ee576b9ed541ec"
+    },
+    {
+      "id": "sAXRbO504As",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/sAXRbO504As.jpg",
+      "sha256": "2e5dc600849edff4145d94f19f12391c4c262de8f8dde1f0b3b1d7b4055f5be6"
+    },
+    {
+      "id": "bUpse56EYBA",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/bUpse56EYBA.jpg",
+      "sha256": "a2b7e484ed041dbe20771885832d3c78996aacc62baa54017b2ab536e31dd315"
+    },
+    {
+      "id": "1QxP2mbnuEM",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/1QxP2mbnuEM.jpg",
+      "sha256": "cdc7f2081dd5c87026c4f6d2018c34b7b4bf226a4f67725012f11e7b270dd470"
+    },
+    {
+      "id": "Ci-TgUAPv38",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/Ci-TgUAPv38.jpg",
+      "sha256": "7518c32319a83054c95cdd13908b1e60da109cf08ee15fd20f78e03fb60b1b39"
+    },
+    {
+      "id": "NiEF0pu04JU",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/NiEF0pu04JU.jpg",
+      "sha256": "eeb882d1ca7b5158dbe6464f91835abde527178e4d89e6506610ee54b106286a"
+    },
+    {
+      "id": "Jh1VVxHQQBg",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/Jh1VVxHQQBg.jpg",
+      "sha256": "ce4f61219fad688cc503d5039a05b42c901fb3e7030083633e42c8180be32b7e"
+    },
+    {
+      "id": "ifkx7ordSB4",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/ifkx7ordSB4.jpg",
+      "sha256": "59534c1782f3f0df9848163c01794538d47190e529d07eb597e12e3c74dd33d0"
+    },
+    {
+      "id": "egyVmgGFYXA",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/egyVmgGFYXA.jpg",
+      "sha256": "164027fe0d9239b62846b60ce167e5f81109e6d0d10fa8fc86c2aa91f4d6b73a"
+    },
+    {
+      "id": "sOi-RHOUKNc",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/sOi-RHOUKNc.jpg",
+      "sha256": "bccafe61a1e96597f602b351f85c1fe5058e83618558c4b1aa8e81db1252f22e"
+    },
+    {
+      "id": "NWmWoxXicmQ",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/NWmWoxXicmQ.jpg",
+      "sha256": "86f445ee9992356b1585a6e776b528357146f5efa6a942c8e28763049e8e1761"
+    },
+    {
+      "id": "6B96xetwrqI",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/6B96xetwrqI.jpg",
+      "sha256": "24ac8f316a9c80d3e5230b93c260029134ae630eefe6b75592dc805979f22c47"
+    },
+    {
+      "id": "rCM6dvK2Hjg",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/rCM6dvK2Hjg.jpg",
+      "sha256": "aecdd97643e1df5bc435791bc818c9f1e18dbb45b5ed5a012c99bc980253e08f"
+    },
+    {
+      "id": "iGZsPFJuxc0",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/iGZsPFJuxc0.jpg",
+      "sha256": "d482182e8933c470293d51ab24c2c90553d93fc21e2dfb35ebdab31176f032ee"
+    },
+    {
+      "id": "OX1yHmeLPy8",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/OX1yHmeLPy8.jpg",
+      "sha256": "84ff5e5c7a6d436bffab4357fd969abba51c476e88e23b52a288bcf2eac7d413"
+    },
+    {
+      "id": "UiPJbxryrkU",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/UiPJbxryrkU.jpg",
+      "sha256": "1b53e51587aac43451f294b4fb4b72f80245babfe2f6c73536e1730a69d00c94"
+    },
+    {
+      "id": "H2xV6FnbSkQ",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/H2xV6FnbSkQ.jpg",
+      "sha256": "1382863df750f0e39a3d9b0f0a1de7753bf2444c2fe5fa3c443fe466d736ab89"
+    },
+    {
+      "id": "hSMwc_RRqiQ",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/hSMwc_RRqiQ.jpg",
+      "sha256": "18f0e62b41165bc21fc700cd85fe1e69214fea98cf7c31b1a0db4d9f3d844085"
+    },
+    {
+      "id": "efyxLW1Yeqo",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/efyxLW1Yeqo.jpg",
+      "sha256": "8b152b06d9700c5c27424db637fe340511afcbcfaa6ff78b28963118b81815f9"
+    },
+    {
+      "id": "kd-ZNqGaajg",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/kd-ZNqGaajg.jpg",
+      "sha256": "b8efbdd69a9f5a5c9002cb6e10fb501bcfa5eeb710c74b1cba4e056575f161ea"
+    },
+    {
+      "id": "VKZRmSTqI0U",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/VKZRmSTqI0U.jpg",
+      "sha256": "eebc6e4d305d7813b18e06d161cd9cc9c0a1ec1da1677107234769e89cafe01a"
+    },
+    {
+      "id": "-DZIkSvLGJY",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/-DZIkSvLGJY.jpg",
+      "sha256": "85050028f081df5093a288346b922e03bc3e2446cebf826e0c2983787c8d020a"
+    },
+    {
+      "id": "YcE50-LemSM",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/YcE50-LemSM.jpg",
+      "sha256": "039e20b22e12eb21dfb116789eb7f633d46ea7d7ed7744704fc46286a012cc36"
+    },
+    {
+      "id": "pn68y5rEDxk",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/pn68y5rEDxk.jpg",
+      "sha256": "426be7e161b20da7e702aa0f93c73ea3a8fa5d84a8abb116980ee99f9e22f9b0"
+    },
+    {
+      "id": "5ij0tDYhIhg",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/5ij0tDYhIhg.jpg",
+      "sha256": "b8d4264b1c731b6932cb647b7db4c2378fc26e33ad8d16ee079bd16e5c7684bd"
+    },
+    {
+      "id": "TY_5d4Uy97g",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/TY_5d4Uy97g.jpg",
+      "sha256": "d8923e939de0a09356554c482f5832f8f35d09bbfdb5c83ded846dfb96ec1387"
+    },
+    {
+      "id": "eoOrlxiOFEU",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/eoOrlxiOFEU.jpg",
+      "sha256": "1379f51376008ff2ece5a972d27c6330d51c706f2a0fc25939c9cf8b73018abe"
+    },
+    {
+      "id": "JsNTrOwilOk",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/JsNTrOwilOk.jpg",
+      "sha256": "c34d194d27b981e5b7ec21496ca0542672f4c3b9e994c80957ce0cffe7b72934"
+    },
+    {
+      "id": "Rk7QV9Gto-c",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/Rk7QV9Gto-c.jpg",
+      "sha256": "756723779b73cdbe8366268dd87b7e7e40c7bc4e99d64af6d1d6254121bea738"
+    },
+    {
+      "id": "osorjUU4ITs",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/osorjUU4ITs.jpg",
+      "sha256": "31347fab28920f22a63c1379472dd35b3af3bca5ac2965059f97c2f06bb63ed9"
+    },
+    {
+      "id": "EI-qoH7eH28",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/EI-qoH7eH28.jpg",
+      "sha256": "bbf0382f24cc35abe8778a7392662cf7a46ec032e5535e4110438e5976a9a9b0"
+    },
+    {
+      "id": "MN5cQCmA82s",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/MN5cQCmA82s.jpg",
+      "sha256": "b487c778f7d547cf8eb8638a1b079cf12f42465b8ce18061b8eb9c72f1fe1771"
+    },
+    {
+      "id": "JKmJhDPtG2E",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/JKmJhDPtG2E.jpg",
+      "sha256": "95e9b39d5670c1758da44e315269b02a44d741a9c474d36c4701b29dcd68d280"
+    },
+    {
+      "id": "IONLRDKLsvA",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/IONLRDKLsvA.jpg",
+      "sha256": "e3b7d77b229f92e0a22e4e5958bef5207877fd388f0aacd4f6d2970d041b2aeb"
+    },
+    {
+      "id": "jHoms3UV1qU",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/jHoms3UV1qU.jpg",
+      "sha256": "76a8e6a87ee40f3af29eefc64bcc91c540f8ff0231bf1717d7c6d96f273e8acf"
+    },
+    {
+      "id": "0RDCTHMXjgg",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/0RDCTHMXjgg.jpg",
+      "sha256": "9e5d3719e8b35d5d8bf645d11b50d6f89f1ea7d60c3878696fe52c89460946c8"
+    },
+    {
+      "id": "lSZx1OiSjwg",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/lSZx1OiSjwg.jpg",
+      "sha256": "79ccdb6fd65ee980236da4ff89eb1c53df3f3d09a2fbfab9da3afd92c50360ca"
+    },
+    {
+      "id": "Rmi2RMUCTtI",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/Rmi2RMUCTtI.jpg",
+      "sha256": "bd4abe9f2227cb246db2fb5e0935973ef731852d92ed93120fde19e13d02197b"
+    },
+    {
+      "id": "CypSEQLEBnU",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/CypSEQLEBnU.jpg",
+      "sha256": "40e06e79b09fb7c832721f92b96d3a96ef7d7eb5bd62d3c45fcbe1a85ef4c2f0"
+    },
+    {
+      "id": "bR0yDuo9e_Y",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/bR0yDuo9e_Y.jpg",
+      "sha256": "2fe888f92ac6f6e48693f3a8369ec71f18ba16ab773c6e46e473c4374be1780d"
+    },
+    {
+      "id": "G09CcgxADr4",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/G09CcgxADr4.jpg",
+      "sha256": "b86e122d85a9ccd0e22325238bb55603fd4dce258b9f76daff2a22aecc69ab43"
+    },
+    {
+      "id": "P6cE_h-FXPU",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/P6cE_h-FXPU.jpg",
+      "sha256": "aaba126898e9f20f95caf962d6f774a9cb7a2f21de69e79a89a78420a0f589d8"
+    },
+    {
+      "id": "f6ATxxu1pac",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/f6ATxxu1pac.jpg",
+      "sha256": "b226ff1ebee1e9cf36069f97bc4b0d2be2df7dcbd7ae6dec2b46058538dc919b"
+    },
+    {
+      "id": "wirKMAMC2YA",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/wirKMAMC2YA.jpg",
+      "sha256": "4783c5f5204e3b539a43bbb7a34e1f1d5a6725ecafe72c39f3482359dce2efac"
+    },
+    {
+      "id": "fokdxbLKSvM",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/fokdxbLKSvM.jpg",
+      "sha256": "736d7a92f9a6d7d6122c3d042d6ad21cab68588b2dfdf8b1ae678f32c96cb7b0"
+    },
+    {
+      "id": "qlw39TP8OrE",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/qlw39TP8OrE.jpg",
+      "sha256": "5f443a273df0fcdf1a4b026d3e304cdc3db6ef226c18220982414bb9371e6e36"
+    },
+    {
+      "id": "HNVSu5es49o",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/HNVSu5es49o.jpg",
+      "sha256": "f7df30dc5e733bbd93567f8e48de7ca43be705758996b0e5f8c77d776aa1973a"
+    },
+    {
+      "id": "oetbFj6dJNk",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/oetbFj6dJNk.jpg",
+      "sha256": "f7df30dc5e733bbd93567f8e48de7ca43be705758996b0e5f8c77d776aa1973a"
+    },
+    {
+      "id": "guqNXj2oH6M",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/guqNXj2oH6M.jpg",
+      "sha256": "814801c72947947542ad318c849c5d1ba6dce8b985c8c0e4fdcfe9f19f84eafe"
+    },
+    {
+      "id": "sV2ddX7sHXw",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/sV2ddX7sHXw.jpg",
+      "sha256": "9fc544dee73157910f858a95aa742d79dd91c42c9a49a2785fb63616e71c60b7"
+    },
+    {
+      "id": "4N9fQRo_DiQ",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/4N9fQRo_DiQ.jpg",
+      "sha256": "276fc723d813294fb08368836f42b79a57e9feb425e56fd260a707b8c6e3ff9c"
+    },
+    {
+      "id": "WQgxsXiP5WI",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/WQgxsXiP5WI.jpg",
+      "sha256": "e5cc27a0b433b42aa79840e0ffb28c88faf8765f7c37dc33555df9ec94783c7b"
+    },
+    {
+      "id": "ezelSZqFCHE",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/ezelSZqFCHE.jpg",
+      "sha256": "3761865a9b4cd71a65dceac1c291bf1436a6199b8ca640cc46d3dc0f3917141b"
+    },
+    {
+      "id": "jUkgXd5jeSQ",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/jUkgXd5jeSQ.jpg",
+      "sha256": "904438eb298d5d55c9502c6b282031e7fc89aef47a0a04f72b37ed9b0e45958d"
+    },
+    {
+      "id": "m3kUyQfbqzw",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/m3kUyQfbqzw.jpg",
+      "sha256": "b17e92c4433f0525e061c5974f992763284af823c1380efca8b148781ddd9e44"
+    },
+    {
+      "id": "4e3Q0c-nwOk",
+      "path": "/Users/benjaminoats/_desk/j1107/competitors/thumbs/4e3Q0c-nwOk.jpg",
+      "sha256": "cf7a0c4af05d0581943f9812560d5570a6b859051ef3e0e525fe62a3b62a50ca"
+    }
+  ]
+}

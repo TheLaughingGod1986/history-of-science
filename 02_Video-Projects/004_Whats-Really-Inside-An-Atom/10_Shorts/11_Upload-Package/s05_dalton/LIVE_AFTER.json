@@ -1,0 +1,3243 @@
+[
+  {
+    "kind": "youtube#video",
+    "etag": "abfM1kARL8umc3C9FZn4EnNnjkk",
+    "id": "-sa2t7dAtCk",
+    "snippet": {
+      "publishedAt": "2026-10-16T06:14:24Z",
+      "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+      "title": "What Is Dalton's Atomic Theory?",
+      "description": "What's Really Inside an Atom?\nhttps://www.youtube.com/watch?v=GHZDsiH7L7A\n\nDalton's atomic theory: every element has its own kind of atom, and each kind has its own weight.",
+      "thumbnails": {
+        "default": {
+          "url": "https://i9.ytimg.com/vi/-sa2t7dAtCk/default.jpg?sqp=COSBx9YG&rs=AOn4CLAI3FATcent-bIKzJPBpoXQutHX2g",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i9.ytimg.com/vi/-sa2t7dAtCk/mqdefault.jpg?sqp=COSBx9YG&rs=AOn4CLCyzoN_r30cKspympGMpmSKWm511A",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i9.ytimg.com/vi/-sa2t7dAtCk/hqdefault.jpg?sqp=COSBx9YG&rs=AOn4CLB5P8IxsH2yZRCMkpe2Y7jtARnBug",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i9.ytimg.com/vi/-sa2t7dAtCk/sddefault.jpg?sqp=COSBx9YG&rs=AOn4CLAUqoE7XdB_fad76LCq0GDmRZX9cg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i9.ytimg.com/vi/-sa2t7dAtCk/maxresdefault.jpg?sqp=COSBx9YG&rs=AOn4CLBLbvbmyBViLuFOsAfC5EJWDmbJow",
+          "width": 1280,
+          "height": 720
+        },
+        "qhd": {
+          "url": "https://i9.ytimg.com/vi/-sa2t7dAtCk/qhddefault.jpg?sqp=COSBx9YG&rs=AOn4CLAtql3kbZHqBtJnF1ZTJiI-LtCy9g",
+          "width": 2560,
+          "height": 1440
+        }
+      },
+      "channelTitle": "History of Science",
+      "tags": [
+        "atomic theory",
+        "dalton atomic theory",
+        "history of science",
+        "history of the atom",
+        "john dalton",
+        "what is dalton's atomic theory"
+      ],
+      "categoryId": "27",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en-GB",
+      "localized": {
+        "title": "What Is Dalton's Atomic Theory?",
+        "description": "What's Really Inside an Atom?\nhttps://www.youtube.com/watch?v=GHZDsiH7L7A\n\nDalton's atomic theory: every element has its own kind of atom, and each kind has its own weight."
+      },
+      "defaultAudioLanguage": "en-GB"
+    },
+    "contentDetails": {
+      "duration": "PT25S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular",
+      "hasCustomThumbnail": true
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "private",
+      "publishAt": "2026-11-16T11:30:00Z",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "diM5n8Hv_-lDEvgKzGK0dg4yIY0",
+    "id": "GHZDsiH7L7A",
+    "snippet": {
+      "publishedAt": "2026-10-15T17:00:24Z",
+      "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+      "title": "What's Really Inside an Atom?",
+      "description": "What's really inside an atom, and why is the periodic table in this order? Four discoveries, one century — from a knife and a gold coin to the number that fixed the table.\n\nCut gold in half, then again. How small can you go before it stops being gold? Dalton weighed atoms. Thomson found a piece inside them. Rutherford found their tiny centre. Moseley counted what was inside every element — and tellurium 52 finally sat before iodine 53 for a reason that wasn't weight.\n\nA 3D cartoon film about the moment chemistry got a ruler that worked.\n\nHistory of Science · Discovery. Wonder. Proof. · @HistoryOfScienceYT\n\n#HistoryOfScience #Atom #PeriodicTable #AtomicNumber #Moseley #Rutherford #Thomson #Dalton\n\n0:00 How small can you cut gold?\n1:09 The table that broke its own rule\n2:41 The crumb inside the atom\n4:05 The shell that bounced back\n5:55 Counting with X-rays\n\nSources: J. Dalton, A New System of Chemical Philosophy (1808); D. Mendeleev, Zeitschrift für Chemie 12 (1869); J. J. Thomson, \"Cathode Rays\", Philosophical Magazine 44 (1897); H. Geiger & E. Marsden, \"On a Diffuse Reflection of the α-Particles\", Proc. R. Soc. A 82 (1909); E. Rutherford, \"The Scattering of α and β Particles by Matter and the Structure of the Atom\", Philosophical Magazine 21 (1911); H. G. J. Moseley, \"The High-Frequency Spectra of the Elements\", Philosophical Magazine 26 (1913).",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/GHZDsiH7L7A/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/GHZDsiH7L7A/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/GHZDsiH7L7A/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/GHZDsiH7L7A/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/GHZDsiH7L7A/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "History of Science",
+      "tags": [
+        "atom",
+        "history of chemistry",
+        "history of science",
+        "moseley",
+        "periodic table",
+        "rutherford"
+      ],
+      "categoryId": "27",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en-GB",
+      "localized": {
+        "title": "What's Really Inside an Atom?",
+        "description": "What's really inside an atom, and why is the periodic table in this order? Four discoveries, one century — from a knife and a gold coin to the number that fixed the table.\n\nCut gold in half, then again. How small can you go before it stops being gold? Dalton weighed atoms. Thomson found a piece inside them. Rutherford found their tiny centre. Moseley counted what was inside every element — and tellurium 52 finally sat before iodine 53 for a reason that wasn't weight.\n\nA 3D cartoon film about the moment chemistry got a ruler that worked.\n\nHistory of Science · Discovery. Wonder. Proof. · @HistoryOfScienceYT\n\n#HistoryOfScience #Atom #PeriodicTable #AtomicNumber #Moseley #Rutherford #Thomson #Dalton\n\n0:00 How small can you cut gold?\n1:09 The table that broke its own rule\n2:41 The crumb inside the atom\n4:05 The shell that bounced back\n5:55 Counting with X-rays\n\nSources: J. Dalton, A New System of Chemical Philosophy (1808); D. Mendeleev, Zeitschrift für Chemie 12 (1869); J. J. Thomson, \"Cathode Rays\", Philosophical Magazine 44 (1897); H. Geiger & E. Marsden, \"On a Diffuse Reflection of the α-Particles\", Proc. R. Soc. A 82 (1909); E. Rutherford, \"The Scattering of α and β Particles by Matter and the Structure of the Atom\", Philosophical Magazine 21 (1911); H. G. J. Moseley, \"The High-Frequency Spectra of the Elements\", Philosophical Magazine 26 (1913)."
+      },
+      "defaultAudioLanguage": "en-GB"
+    },
+    "contentDetails": {
+      "duration": "PT8M45S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular",
+      "hasCustomThumbnail": false
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "public",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": false,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "UMy7O6YVvbxl13pv_o_F3W2e9Ck",
+    "id": "PlihWC5uA2E",
+    "snippet": {
+      "publishedAt": "2026-10-15T11:35:47Z",
+      "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+      "title": "Why Do Veins Have Valves?",
+      "description": "The Tied Arm That Proved Your Blood Circulates\nhttps://www.youtube.com/watch?v=wwcjcFfC-5M\n\nEach valve stops blood pushed towards the hand and lets it slide through towards the heart.",
+      "thumbnails": {
+        "default": {
+          "url": "https://i9.ytimg.com/vi/PlihWC5uA2E/default.jpg?sqp=COSBx9YG&rs=AOn4CLCoaXRhGiTy9O3RXI1K6j0lXVsuzg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i9.ytimg.com/vi/PlihWC5uA2E/mqdefault.jpg?sqp=COSBx9YG&rs=AOn4CLDu3EvyKgl7umzfl5tB2yFlO89SsA",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i9.ytimg.com/vi/PlihWC5uA2E/hqdefault.jpg?sqp=COSBx9YG&rs=AOn4CLAxkq_69edxxR9zvLNVWnAUXpKNcw",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i9.ytimg.com/vi/PlihWC5uA2E/sddefault.jpg?sqp=COSBx9YG&rs=AOn4CLDFspF0E59D_qQTS-vZLoqgr8Gq1w",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i9.ytimg.com/vi/PlihWC5uA2E/maxresdefault.jpg?sqp=COSBx9YG&rs=AOn4CLC5huoy258DTFaNmjT0_YOV2Zlb5Q",
+          "width": 1280,
+          "height": 720
+        },
+        "qhd": {
+          "url": "https://i9.ytimg.com/vi/PlihWC5uA2E/qhddefault.jpg?sqp=COSBx9YG&rs=AOn4CLBXYcfGywfYZdLGSq1YOyPUXW3eDQ",
+          "width": 2560,
+          "height": 1440
+        }
+      },
+      "channelTitle": "History of Science",
+      "tags": [
+        "blood circulation",
+        "fabricius",
+        "history of medicine",
+        "vein valves",
+        "why do veins have valves",
+        "william harvey"
+      ],
+      "categoryId": "27",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en-GB",
+      "localized": {
+        "title": "Why Do Veins Have Valves?",
+        "description": "The Tied Arm That Proved Your Blood Circulates\nhttps://www.youtube.com/watch?v=wwcjcFfC-5M\n\nEach valve stops blood pushed towards the hand and lets it slide through towards the heart."
+      },
+      "defaultAudioLanguage": "en-GB"
+    },
+    "contentDetails": {
+      "duration": "PT24S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular",
+      "hasCustomThumbnail": true
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "private",
+      "publishAt": "2026-11-05T11:30:00Z",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "LEvlyfOwiDKnBMibP5RYqMU7PoQ",
+    "id": "LCZRHUyTiq0",
+    "snippet": {
+      "publishedAt": "2026-10-15T11:34:39Z",
+      "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+      "title": "What Are Cathode Rays?",
+      "description": "What's Really Inside an Atom?\nhttps://www.youtube.com/watch?v=GHZDsiH7L7A\n\nScientists called them cathode rays. J. J. Thomson showed the beam was tiny charged particles.",
+      "thumbnails": {
+        "default": {
+          "url": "https://i9.ytimg.com/vi/LCZRHUyTiq0/default.jpg?sqp=COSBx9YG&rs=AOn4CLBZxE65j8zrOuNe7HTBvnuPYd-nBQ",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i9.ytimg.com/vi/LCZRHUyTiq0/mqdefault.jpg?sqp=COSBx9YG&rs=AOn4CLABShvhv6fH9SbqzDRISRR05zUWqA",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i9.ytimg.com/vi/LCZRHUyTiq0/hqdefault.jpg?sqp=COSBx9YG&rs=AOn4CLCJ0WaQT5V_B8PzHXmsMScCOXX8Nw",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i9.ytimg.com/vi/LCZRHUyTiq0/sddefault.jpg?sqp=COSBx9YG&rs=AOn4CLBzy3ShI1LIJ9up95FSsmqrsjXW_Q",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i9.ytimg.com/vi/LCZRHUyTiq0/maxresdefault.jpg?sqp=COSBx9YG&rs=AOn4CLCaFfc1PvkffAlPpyZCMKSpVqwaIA",
+          "width": 1280,
+          "height": 720
+        },
+        "qhd": {
+          "url": "https://i9.ytimg.com/vi/LCZRHUyTiq0/qhddefault.jpg?sqp=COSBx9YG&rs=AOn4CLB1_TFE5bp2V9R_9mmH97r-wZuDsw",
+          "width": 2560,
+          "height": 1440
+        }
+      },
+      "channelTitle": "History of Science",
+      "tags": [
+        "cathode rays",
+        "electron discovery",
+        "history of science",
+        "history of the atom",
+        "jj thomson",
+        "what are cathode rays"
+      ],
+      "categoryId": "27",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en-GB",
+      "localized": {
+        "title": "What Are Cathode Rays?",
+        "description": "What's Really Inside an Atom?\nhttps://www.youtube.com/watch?v=GHZDsiH7L7A\n\nScientists called them cathode rays. J. J. Thomson showed the beam was tiny charged particles."
+      },
+      "defaultAudioLanguage": "en-GB"
+    },
+    "contentDetails": {
+      "duration": "PT26S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular",
+      "hasCustomThumbnail": true
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "private",
+      "publishAt": "2026-10-23T10:30:00Z",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "ddt5WDHwNOvBmlC8v0SZBM12oP0",
+    "id": "vEg_tLIm0Co",
+    "snippet": {
+      "publishedAt": "2026-10-15T11:34:33Z",
+      "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+      "title": "Are Marie Curie's Notebooks Still Radioactive?",
+      "description": "Yes. Marie Curie's notebooks are still radioactive, and her papers are kept in lead-lined boxes in Paris.\n\nIn 1898, Marie and Pierre Curie discovered polonium, then radium. This Short tells the story behind the notebooks.\n\nSources:\nAIP, The discovery of radium: https://history.aip.org/history/exhibits/curie/resbr2.htm\nScienceAlert, Marie Curie personal effects: https://www.sciencealert.com/these-personal-effects-of-marie-curie-will-be-radioactive-for-another-1-500-years\n\nPictures: AI-generated 3D scenes. Historical claims follow the sources listed above.",
+      "thumbnails": {
+        "default": {
+          "url": "https://i9.ytimg.com/vi/vEg_tLIm0Co/default.jpg?sqp=COSBx9YG&rs=AOn4CLBQqbjrX25xlVJn4akAmqlI9Zl2Bw",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i9.ytimg.com/vi/vEg_tLIm0Co/mqdefault.jpg?sqp=COSBx9YG&rs=AOn4CLDAamGAjUjU9QXRDUJwktrXxmufhw",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i9.ytimg.com/vi/vEg_tLIm0Co/hqdefault.jpg?sqp=COSBx9YG&rs=AOn4CLChSyE8UX14H-niiIPXnNXPuhDuQQ",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i9.ytimg.com/vi/vEg_tLIm0Co/sddefault.jpg?sqp=COSBx9YG&rs=AOn4CLAWAEpqsdkiQx0Ch85EFUSiPIY6OQ",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i9.ytimg.com/vi/vEg_tLIm0Co/maxresdefault.jpg?sqp=COSBx9YG&rs=AOn4CLB2ubPZ-9Atp4g1mg5j-mEjiy4bXQ",
+          "width": 1280,
+          "height": 720
+        },
+        "qhd": {
+          "url": "https://i9.ytimg.com/vi/vEg_tLIm0Co/qhddefault.jpg?sqp=COSBx9YG&rs=AOn4CLBZnfl9SwIk6DHI9OFfIst-_t7P6A",
+          "width": 2560,
+          "height": 1440
+        }
+      },
+      "channelTitle": "History of Science",
+      "tags": [
+        "Curie notebooks",
+        "Marie Curie",
+        "Pierre Curie",
+        "polonium",
+        "radioactive notebooks",
+        "radium"
+      ],
+      "categoryId": "27",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en-GB",
+      "localized": {
+        "title": "Are Marie Curie's Notebooks Still Radioactive?",
+        "description": "Yes. Marie Curie's notebooks are still radioactive, and her papers are kept in lead-lined boxes in Paris.\n\nIn 1898, Marie and Pierre Curie discovered polonium, then radium. This Short tells the story behind the notebooks.\n\nSources:\nAIP, The discovery of radium: https://history.aip.org/history/exhibits/curie/resbr2.htm\nScienceAlert, Marie Curie personal effects: https://www.sciencealert.com/these-personal-effects-of-marie-curie-will-be-radioactive-for-another-1-500-years\n\nPictures: AI-generated 3D scenes. Historical claims follow the sources listed above."
+      },
+      "defaultAudioLanguage": "en-GB"
+    },
+    "contentDetails": {
+      "duration": "PT23S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular",
+      "hasCustomThumbnail": true
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "private",
+      "publishAt": "2026-10-28T11:30:00Z",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "gPCxloUNQXr1wTwDxZVtgPOqoVU",
+    "id": "OnJ8MFu0Mi0",
+    "snippet": {
+      "publishedAt": "2026-10-15T11:34:26Z",
+      "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+      "title": "How Did John Snow Stop Cholera?",
+      "description": "John Snow traced cholera deaths to the Broad Street water pump and had its handle removed.\n\nIn Soho, London, in 1854, many still blamed bad air. Snow tracked where the dead had lived: the deaths clustered around one pump.\n\nSources:\nUCLA, Broad Street pump outbreak: https://epi-snow.ph.ucla.edu/Stream2_BSPoutbreak_a.html\nUCLA, Removal of the pump handle: https://epi-snow.ph.ucla.edu/Stream2_BSPoutbreak_e.html\n\nPictures: AI-generated 3D scenes. Historical claims follow the sources listed above.",
+      "thumbnails": {
+        "default": {
+          "url": "https://i9.ytimg.com/vi/OnJ8MFu0Mi0/default.jpg?sqp=COSBx9YG&rs=AOn4CLBxj4XFsirYOcd7fbufQzdN_BC69g",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i9.ytimg.com/vi/OnJ8MFu0Mi0/mqdefault.jpg?sqp=COSBx9YG&rs=AOn4CLBsGJ4vWr2L5quZF-RPRfJGqiALrQ",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i9.ytimg.com/vi/OnJ8MFu0Mi0/hqdefault.jpg?sqp=COSBx9YG&rs=AOn4CLC1dVNv8GbBZgEJbUbty82i7XqmpA",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i9.ytimg.com/vi/OnJ8MFu0Mi0/sddefault.jpg?sqp=COSBx9YG&rs=AOn4CLBlt5PNfASTwgYuxIovCMhPB3Sq2Q",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i9.ytimg.com/vi/OnJ8MFu0Mi0/maxresdefault.jpg?sqp=COSBx9YG&rs=AOn4CLBSRiG6hZANy1McppXk980pwzFtuA",
+          "width": 1280,
+          "height": 720
+        },
+        "qhd": {
+          "url": "https://i9.ytimg.com/vi/OnJ8MFu0Mi0/qhddefault.jpg?sqp=COSBx9YG&rs=AOn4CLDRlYNEH45EqT45VDIAuyejSWYj2g",
+          "width": 2560,
+          "height": 1440
+        }
+      },
+      "channelTitle": "History of Science",
+      "tags": [
+        "1854 cholera outbreak",
+        "Broad Street pump",
+        "John Snow",
+        "Soho cholera",
+        "cholera",
+        "history of epidemiology"
+      ],
+      "categoryId": "27",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en-GB",
+      "localized": {
+        "title": "How Did John Snow Stop Cholera?",
+        "description": "John Snow traced cholera deaths to the Broad Street water pump and had its handle removed.\n\nIn Soho, London, in 1854, many still blamed bad air. Snow tracked where the dead had lived: the deaths clustered around one pump.\n\nSources:\nUCLA, Broad Street pump outbreak: https://epi-snow.ph.ucla.edu/Stream2_BSPoutbreak_a.html\nUCLA, Removal of the pump handle: https://epi-snow.ph.ucla.edu/Stream2_BSPoutbreak_e.html\n\nPictures: AI-generated 3D scenes. Historical claims follow the sources listed above."
+      },
+      "defaultAudioLanguage": "en-GB"
+    },
+    "contentDetails": {
+      "duration": "PT23S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular",
+      "hasCustomThumbnail": true
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "private",
+      "publishAt": "2026-10-26T11:30:00Z",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "HLXcTsXQ7j1_S1s7KqAYYrHNjgA",
+    "id": "oKqmnJNGiHg",
+    "snippet": {
+      "publishedAt": "2026-10-15T11:34:19Z",
+      "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+      "title": "How Was Phosphorus Discovered?",
+      "description": "Hennig Brand discovered phosphorus while trying to find gold in urine in Hamburg in 1669.\n\nHe boiled it down to a black sludge. Instead of gold, he found a white substance that glowed in the dark.\n\nSources:\nHennig Brand biography: https://www.famousscientists.org/hennig-brand/\nLos Alamos National Laboratory, Phosphorus: https://periodic.lanl.gov/15.shtml\n\nPictures: AI-generated 3D scenes. Historical claims follow the sources listed above.",
+      "thumbnails": {
+        "default": {
+          "url": "https://i9.ytimg.com/vi/oKqmnJNGiHg/default.jpg?sqp=COSBx9YG&rs=AOn4CLBRKb8X7UTjBRaSPUKEN33DfiADhg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i9.ytimg.com/vi/oKqmnJNGiHg/mqdefault.jpg?sqp=COSBx9YG&rs=AOn4CLAdhMdMt1xegMBmR7NXsCcbnYdKPA",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i9.ytimg.com/vi/oKqmnJNGiHg/hqdefault.jpg?sqp=COSBx9YG&rs=AOn4CLAO4C9SU0MjmdMIiQd1T7PGMYrz5Q",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i9.ytimg.com/vi/oKqmnJNGiHg/sddefault.jpg?sqp=COSBx9YG&rs=AOn4CLBu8GLw7jE9S0P-iLAK59TxWJx-5Q",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i9.ytimg.com/vi/oKqmnJNGiHg/maxresdefault.jpg?sqp=COSBx9YG&rs=AOn4CLC6k5AkKJi-m2SMVGpb4ZCrf92Caw",
+          "width": 1280,
+          "height": 720
+        },
+        "qhd": {
+          "url": "https://i9.ytimg.com/vi/oKqmnJNGiHg/qhddefault.jpg?sqp=COSBx9YG&rs=AOn4CLDsS0sIs26l-fwN4MxweMDwgpMDPg",
+          "width": 2560,
+          "height": 1440
+        }
+      },
+      "channelTitle": "History of Science",
+      "tags": [
+        "Hennig Brand",
+        "alchemy",
+        "history of chemistry",
+        "phosphorus",
+        "phosphorus discovery",
+        "white phosphorus"
+      ],
+      "categoryId": "27",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en-GB",
+      "localized": {
+        "title": "How Was Phosphorus Discovered?",
+        "description": "Hennig Brand discovered phosphorus while trying to find gold in urine in Hamburg in 1669.\n\nHe boiled it down to a black sludge. Instead of gold, he found a white substance that glowed in the dark.\n\nSources:\nHennig Brand biography: https://www.famousscientists.org/hennig-brand/\nLos Alamos National Laboratory, Phosphorus: https://periodic.lanl.gov/15.shtml\n\nPictures: AI-generated 3D scenes. Historical claims follow the sources listed above."
+      },
+      "defaultAudioLanguage": "en-GB"
+    },
+    "contentDetails": {
+      "duration": "PT23S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular",
+      "hasCustomThumbnail": true
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "private",
+      "publishAt": "2026-10-21T10:30:00Z",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "pLcJuYlswDThFQCXz3r8haxM-S4",
+    "id": "c2q7w0pgcn8",
+    "snippet": {
+      "publishedAt": "2026-10-15T11:34:13Z",
+      "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+      "title": "Who Discovered Infrared Light?",
+      "description": "William Herschel discovered infrared light in 1800, with a prism and thermometers.\n\nJust beyond the red end of the visible spectrum, his thermometer grew warmer still. The light was invisible, but its warmth gave it away.\n\nSources:\nCaltech IPAC, Herschel experiment: https://coolcosmos.ipac.caltech.edu/page/herschel_experiment\nNASA, Infrared Waves: https://science.nasa.gov/ems/07_infraredwaves/\n\nPictures: AI-generated 3D scenes. Historical claims follow the sources listed above.",
+      "thumbnails": {
+        "default": {
+          "url": "https://i9.ytimg.com/vi/c2q7w0pgcn8/default.jpg?sqp=COSBx9YG&rs=AOn4CLAqUrZth_TA6VyJtE7FuBjF8dD33w",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i9.ytimg.com/vi/c2q7w0pgcn8/mqdefault.jpg?sqp=COSBx9YG&rs=AOn4CLDgPA4OoLoolTjq_Onmo4_F9kya_A",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i9.ytimg.com/vi/c2q7w0pgcn8/hqdefault.jpg?sqp=COSBx9YG&rs=AOn4CLCU54hrIEWu85H6JNAXJp49oawX4Q",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i9.ytimg.com/vi/c2q7w0pgcn8/sddefault.jpg?sqp=COSBx9YG&rs=AOn4CLBSDueiGFYdNYe1KdzWErOAMmsgZw",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i9.ytimg.com/vi/c2q7w0pgcn8/maxresdefault.jpg?sqp=COSBx9YG&rs=AOn4CLBQlosw_bcGJY6CEEGdXxc8u4qdmQ",
+          "width": 1280,
+          "height": 720
+        },
+        "qhd": {
+          "url": "https://i9.ytimg.com/vi/c2q7w0pgcn8/qhddefault.jpg?sqp=COSBx9YG&rs=AOn4CLDKtYHDk8oLKgIGrvzux7Aad9AzMw",
+          "width": 2560,
+          "height": 1440
+        }
+      },
+      "channelTitle": "History of Science",
+      "tags": [
+        "Herschel experiment",
+        "William Herschel",
+        "infrared discovery",
+        "infrared light",
+        "light spectrum",
+        "prism experiment"
+      ],
+      "categoryId": "27",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en-GB",
+      "localized": {
+        "title": "Who Discovered Infrared Light?",
+        "description": "William Herschel discovered infrared light in 1800, with a prism and thermometers.\n\nJust beyond the red end of the visible spectrum, his thermometer grew warmer still. The light was invisible, but its warmth gave it away.\n\nSources:\nCaltech IPAC, Herschel experiment: https://coolcosmos.ipac.caltech.edu/page/herschel_experiment\nNASA, Infrared Waves: https://science.nasa.gov/ems/07_infraredwaves/\n\nPictures: AI-generated 3D scenes. Historical claims follow the sources listed above."
+      },
+      "defaultAudioLanguage": "en-GB"
+    },
+    "contentDetails": {
+      "duration": "PT23S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular",
+      "hasCustomThumbnail": true
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "private",
+      "publishAt": "2026-10-19T10:30:00Z",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "JetiQcmv28JpfH7jsqqHh3zbSSU",
+    "id": "5n7xFQRBUvI",
+    "snippet": {
+      "publishedAt": "2026-10-14T20:48:00Z",
+      "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+      "title": "Is the Heart a Pump?",
+      "description": "Galen taught that the heart's job was to heat the blood, not to pump it.\n\nFull film:\nThe Tied Arm That Proved Your Blood Circulates\nhttps://youtu.be/wwcjcFfC-5M\n\n#HistoryOfScience #Harvey #Galen #BloodCirculation #Shorts",
+      "thumbnails": {
+        "default": {
+          "url": "https://i9.ytimg.com/vi/5n7xFQRBUvI/default.jpg?sqp=COSBx9YG&rs=AOn4CLC-0p83seoB37i1Weo6O3N224TRSw",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i9.ytimg.com/vi/5n7xFQRBUvI/mqdefault.jpg?sqp=COSBx9YG&rs=AOn4CLD3eKoRerm14fgJA2c-HMDK1rZJKw",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i9.ytimg.com/vi/5n7xFQRBUvI/hqdefault.jpg?sqp=COSBx9YG&rs=AOn4CLAKZ9wE3Bblit71XzJEiHECN7ulzQ",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i9.ytimg.com/vi/5n7xFQRBUvI/sddefault.jpg?sqp=COSBx9YG&rs=AOn4CLBsNNp67TRfKvBX5BFWK_U-_4MAgQ",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i9.ytimg.com/vi/5n7xFQRBUvI/maxresdefault.jpg?sqp=COSBx9YG&rs=AOn4CLDEaKe9xzH3Z0wb0M9FSj5B5_u5fQ",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "History of Science",
+      "tags": [
+        "blood circulation",
+        "galen",
+        "history of medicine",
+        "history of science",
+        "is the heart a pump",
+        "what did galen believe about the heart",
+        "william harvey"
+      ],
+      "categoryId": "27",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en-GB",
+      "localized": {
+        "title": "Is the Heart a Pump?",
+        "description": "Galen taught that the heart's job was to heat the blood, not to pump it.\n\nFull film:\nThe Tied Arm That Proved Your Blood Circulates\nhttps://youtu.be/wwcjcFfC-5M\n\n#HistoryOfScience #Harvey #Galen #BloodCirculation #Shorts"
+      },
+      "defaultAudioLanguage": "en-GB"
+    },
+    "contentDetails": {
+      "duration": "PT25S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular",
+      "hasCustomThumbnail": true
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "private",
+      "publishAt": "2026-10-31T11:30:00Z",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "PMEnaSqVR9S3IxMXnluzx6I9mdU",
+    "id": "qOZgess30h0",
+    "snippet": {
+      "publishedAt": "2026-10-13T10:30:06Z",
+      "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+      "title": "Invisible life is still everywhere",
+      "description": "What else is still invisible? You meet that victory every time soap meets your hands.\n\nWatch the full film — How Did We Discover Germs?:\nhttps://www.youtube.com/watch?v=_C92tIJCk8A\n\n#Germs #InvisibleLife #HistoryOfScience #Science #Shorts",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/qOZgess30h0/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/qOZgess30h0/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/qOZgess30h0/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/qOZgess30h0/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/qOZgess30h0/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        },
+        "qhd": {
+          "url": "https://i.ytimg.com/vi/qOZgess30h0/qhddefault.jpg",
+          "width": 2560,
+          "height": 1440
+        }
+      },
+      "channelTitle": "History of Science",
+      "tags": [
+        "germ theory",
+        "history of medicine",
+        "history of science",
+        "invisible life",
+        "microbes"
+      ],
+      "categoryId": "27",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en-GB",
+      "localized": {
+        "title": "Invisible life is still everywhere",
+        "description": "What else is still invisible? You meet that victory every time soap meets your hands.\n\nWatch the full film — How Did We Discover Germs?:\nhttps://www.youtube.com/watch?v=_C92tIJCk8A\n\n#Germs #InvisibleLife #HistoryOfScience #Science #Shorts"
+      },
+      "defaultAudioLanguage": "en-GB"
+    },
+    "contentDetails": {
+      "duration": "PT24S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular",
+      "hasCustomThumbnail": true
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "public",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": false,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "7sAkCPgtpsFL_UhUffRdXzwfRXg",
+    "id": "mTY67qet7cM",
+    "snippet": {
+      "publishedAt": "2026-10-03T21:50:56Z",
+      "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+      "title": "One Tight Band Proved Your Blood Goes Round",
+      "description": "One tight band on an arm proved blood goes round — Harvey's De Motu Cordis experiment.\n\nFull film:\nThe Tied Arm That Proved Your Blood Circulates\nhttps://youtu.be/wwcjcFfC-5M\n\n#HistoryOfScience #Harvey #BloodCirculation #Shorts",
+      "thumbnails": {
+        "default": {
+          "url": "https://i9.ytimg.com/vi/mTY67qet7cM/default.jpg?sqp=COSBx9YG&rs=AOn4CLDKqtMt9ai4xRCI6PeQVxe-YtNMVQ",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i9.ytimg.com/vi/mTY67qet7cM/mqdefault.jpg?sqp=COSBx9YG&rs=AOn4CLAbEJn8S8ZrOrV37GoKKZLBquanuw",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i9.ytimg.com/vi/mTY67qet7cM/hqdefault.jpg?sqp=COSBx9YG&rs=AOn4CLAsGkraXszzOyAihnxv3oJS6uBIYA",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i9.ytimg.com/vi/mTY67qet7cM/sddefault.jpg?sqp=COSBx9YG&rs=AOn4CLCU9KDqc6hUmdfeq3ipRLXzbQZE4A",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i9.ytimg.com/vi/mTY67qet7cM/maxresdefault.jpg?sqp=COSBx9YG&rs=AOn4CLAdp4axX3y-r91S4n4-YDsN5rPBaA",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "History of Science",
+      "tags": [
+        "blood circulation",
+        "de motu cordis",
+        "history of medicine",
+        "history of science",
+        "tied arm experiment",
+        "william harvey"
+      ],
+      "categoryId": "27",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en-GB",
+      "localized": {
+        "title": "One Tight Band Proved Your Blood Goes Round",
+        "description": "One tight band on an arm proved blood goes round — Harvey's De Motu Cordis experiment.\n\nFull film:\nThe Tied Arm That Proved Your Blood Circulates\nhttps://youtu.be/wwcjcFfC-5M\n\n#HistoryOfScience #Harvey #BloodCirculation #Shorts"
+      },
+      "defaultAudioLanguage": "en-GB"
+    },
+    "contentDetails": {
+      "duration": "PT27S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular",
+      "hasCustomThumbnail": true
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "private",
+      "publishAt": "2026-11-08T11:30:00Z",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "xknLEey9gfCE2Q0srCVyKem06e4",
+    "id": "KIWJRl0dzjw",
+    "snippet": {
+      "publishedAt": "2026-10-03T21:49:32Z",
+      "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+      "title": "One Tight Band Proved Your Blood Goes Round (duplicate)",
+      "description": "One tight band on an arm proved blood goes round — Harvey's De Motu Cordis experiment.\n\nWatch the long: The Tied Arm That Proved Your Blood Circulates\n#HistoryOfScience #Harvey #BloodCirculation",
+      "thumbnails": {
+        "default": {
+          "url": "https://i9.ytimg.com/vi/KIWJRl0dzjw/default.jpg?sqp=COSBx9YG&rs=AOn4CLD1R6jmQXByu6illbOJH5XVW4JyGQ",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i9.ytimg.com/vi/KIWJRl0dzjw/mqdefault.jpg?sqp=COSBx9YG&rs=AOn4CLACG8u6tSvd70poXO6aUU07ZvdLMA",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i9.ytimg.com/vi/KIWJRl0dzjw/hqdefault.jpg?sqp=COSBx9YG&rs=AOn4CLCB2QzBnBLv0oOGsP0yY9XKw_K4kw",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i9.ytimg.com/vi/KIWJRl0dzjw/sddefault.jpg?sqp=COSBx9YG&rs=AOn4CLDHtypVFLCrW1ehgVlFW_Vwe4xMKQ",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i9.ytimg.com/vi/KIWJRl0dzjw/maxresdefault.jpg?sqp=COSBx9YG&rs=AOn4CLCtGIm6lAGAQxUauciPzfNRtx4tOQ",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "History of Science",
+      "tags": [
+        "history of science",
+        "william harvey",
+        "blood circulation",
+        "de motu cordis",
+        "rutherford gold foil",
+        "atom",
+        "four elements",
+        "periodic table",
+        "malpighi",
+        "capillaries",
+        "education"
+      ],
+      "categoryId": "27",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en-GB",
+      "localized": {
+        "title": "One Tight Band Proved Your Blood Goes Round (duplicate)",
+        "description": "One tight band on an arm proved blood goes round — Harvey's De Motu Cordis experiment.\n\nWatch the long: The Tied Arm That Proved Your Blood Circulates\n#HistoryOfScience #Harvey #BloodCirculation"
+      },
+      "defaultAudioLanguage": "en-GB"
+    },
+    "contentDetails": {
+      "duration": "PT27S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular",
+      "hasCustomThumbnail": false
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "private",
+      "license": "youtube",
+      "embeddable": false,
+      "publicStatsViewable": false,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "glttNdWt6f4iHpUW7SqYQ3vNpdA",
+    "id": "wwcjcFfC-5M",
+    "snippet": {
+      "publishedAt": "2026-10-03T21:19:01Z",
+      "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+      "title": "The Tied Arm That Proved Your Blood Circulates",
+      "description": "Your heart pumps more blood in half an hour than your whole body holds. So where does it all go?\nFor 1,400 years doctors taught that blood was made from food and used up, until William Harvey proved it circulates, with a sum and a band tied round an arm.\n\nThis film is how he did it: Galen's liver, Fabricius's little doors in the veins, Harvey's sum at the Royal College of Physicians, the tied arm in De Motu Cordis (1628), and the capillaries Malpighi found in 1661.\n\nChapters\n0:00 The used-up blood\n0:57 The liver that made blood\n2:37 The sum that broke the old idea\n4:16 The tied arm\n6:25 The vessels he never saw\n\nSources\nWilliam Harvey, De Motu Cordis (Frankfurt, 1628), ch. 9, 11, 13 and dedication\nHieronymus Fabricius, De Venarum Ostiolis (1603)\nAndreas Vesalius, De humani corporis fabrica, 2nd ed. (1555)\nMarcello Malpighi, De pulmonibus (1661)\nJohn Aubrey, Brief Lives (1680s)\nGeoffrey Keynes, The Life of William Harvey (1966)\nVivian Nutton, Ancient Medicine (2004)",
+      "thumbnails": {
+        "default": {
+          "url": "https://i9.ytimg.com/vi/wwcjcFfC-5M/default.jpg?sqp=COSBx9YG&rs=AOn4CLCeoxkW2kL9YRVEU6wsN-wD0QfAag",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i9.ytimg.com/vi/wwcjcFfC-5M/mqdefault.jpg?sqp=COSBx9YG&rs=AOn4CLALYHeqbFM4uqZpNPOgnJNdD_VCjg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i9.ytimg.com/vi/wwcjcFfC-5M/hqdefault.jpg?sqp=COSBx9YG&rs=AOn4CLDDNaKYl6XA-MxmJSuy3tgphUn7AQ",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i9.ytimg.com/vi/wwcjcFfC-5M/sddefault.jpg?sqp=COSBx9YG&rs=AOn4CLCbGfIpibNNQonpzCoWh2HpP_f2yw",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i9.ytimg.com/vi/wwcjcFfC-5M/maxresdefault.jpg?sqp=COSBx9YG&rs=AOn4CLCUWPSYAq4IKOYlx6oT4X9qS8gI7w",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "History of Science",
+      "tags": [
+        "blood circulation",
+        "capillaries",
+        "circulatory system",
+        "heart",
+        "history of medicine",
+        "history of science",
+        "william harvey"
+      ],
+      "categoryId": "27",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en-GB",
+      "localized": {
+        "title": "The Tied Arm That Proved Your Blood Circulates",
+        "description": "Your heart pumps more blood in half an hour than your whole body holds. So where does it all go?\nFor 1,400 years doctors taught that blood was made from food and used up, until William Harvey proved it circulates, with a sum and a band tied round an arm.\n\nThis film is how he did it: Galen's liver, Fabricius's little doors in the veins, Harvey's sum at the Royal College of Physicians, the tied arm in De Motu Cordis (1628), and the capillaries Malpighi found in 1661.\n\nChapters\n0:00 The used-up blood\n0:57 The liver that made blood\n2:37 The sum that broke the old idea\n4:16 The tied arm\n6:25 The vessels he never saw\n\nSources\nWilliam Harvey, De Motu Cordis (Frankfurt, 1628), ch. 9, 11, 13 and dedication\nHieronymus Fabricius, De Venarum Ostiolis (1603)\nAndreas Vesalius, De humani corporis fabrica, 2nd ed. (1555)\nMarcello Malpighi, De pulmonibus (1661)\nJohn Aubrey, Brief Lives (1680s)\nGeoffrey Keynes, The Life of William Harvey (1966)\nVivian Nutton, Ancient Medicine (2004)"
+      },
+      "defaultAudioLanguage": "en-GB"
+    },
+    "contentDetails": {
+      "duration": "PT8M49S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "true",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular",
+      "hasCustomThumbnail": true
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "private",
+      "publishAt": "2026-10-29T18:00:00Z",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "9h8YcCf2q6rwVuSv-E424khFEzw",
+    "id": "K0TQHg4XCHY",
+    "snippet": {
+      "publishedAt": "2026-10-02T12:54:21Z",
+      "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+      "title": "The Four Elements Were Wrong (duplicate)",
+      "description": "For centuries people taught earth, air, fire and water. Chemistry proved the four elements were wrong.\n\nWatch the long: How Did We Discover the Periodic Table?\n#HistoryOfScience #PeriodicTable #Chemistry",
+      "thumbnails": {
+        "default": {
+          "url": "https://i9.ytimg.com/vi/K0TQHg4XCHY/default.jpg?sqp=COSBx9YG&rs=AOn4CLB4v0CEKcCa6bubfbPKA9_adjVX0Q",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i9.ytimg.com/vi/K0TQHg4XCHY/mqdefault.jpg?sqp=COSBx9YG&rs=AOn4CLAELja1Lj7txg3wwz0T8k2UQq5e1Q",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i9.ytimg.com/vi/K0TQHg4XCHY/hqdefault.jpg?sqp=COSBx9YG&rs=AOn4CLCAEfvw4QK7joa0AmxLcPu8txF5wQ",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i9.ytimg.com/vi/K0TQHg4XCHY/sddefault.jpg?sqp=COSBx9YG&rs=AOn4CLBvKtanebXgpJe7P7ZGAwSnNG2MxQ",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i9.ytimg.com/vi/K0TQHg4XCHY/maxresdefault.jpg?sqp=COSBx9YG&rs=AOn4CLCvH4R8_9Dg3osktUaZg3ddEx3R8Q",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "History of Science",
+      "tags": [
+        "history of science",
+        "william harvey",
+        "blood circulation",
+        "de motu cordis",
+        "rutherford gold foil",
+        "atom",
+        "four elements",
+        "periodic table",
+        "malpighi",
+        "capillaries",
+        "education"
+      ],
+      "categoryId": "27",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en-GB",
+      "localized": {
+        "title": "The Four Elements Were Wrong (duplicate)",
+        "description": "For centuries people taught earth, air, fire and water. Chemistry proved the four elements were wrong.\n\nWatch the long: How Did We Discover the Periodic Table?\n#HistoryOfScience #PeriodicTable #Chemistry"
+      },
+      "defaultAudioLanguage": "en-GB"
+    },
+    "contentDetails": {
+      "duration": "PT26S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular",
+      "hasCustomThumbnail": true
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "private",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "hGErcrPWlbpDSamWdy0zNpt-Rmk",
+    "id": "JI2ewIT1KSM",
+    "snippet": {
+      "publishedAt": "2026-10-02T12:53:40Z",
+      "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+      "title": "The Four Elements Were Wrong (duplicate)",
+      "description": "The four elements were wrong. From How Did We Discover the Periodic Table?\n\n#HistoryOfScience #PeriodicTable #Lavoisier #Shorts",
+      "thumbnails": {
+        "default": {
+          "url": "https://i9.ytimg.com/vi/JI2ewIT1KSM/default.jpg?sqp=COSBx9YG&rs=AOn4CLCw7BzAkDpPWLurG3M-oJ5RROdazQ",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i9.ytimg.com/vi/JI2ewIT1KSM/mqdefault.jpg?sqp=COSBx9YG&rs=AOn4CLBSyxE_3l504SCI2ph3HcdIomaYeQ",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i9.ytimg.com/vi/JI2ewIT1KSM/hqdefault.jpg?sqp=COSBx9YG&rs=AOn4CLAACEbi-6uSPi-Gg_hzD_cjzew_4g",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i9.ytimg.com/vi/JI2ewIT1KSM/sddefault.jpg?sqp=COSBx9YG&rs=AOn4CLAMxQrcgAU95V11QUZXNO4Ye6Daqg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i9.ytimg.com/vi/JI2ewIT1KSM/maxresdefault.jpg?sqp=COSBx9YG&rs=AOn4CLDsUxLLmrvFcFvM7yVg3tWMZNbo5A",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "History of Science",
+      "categoryId": "27",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en-GB",
+      "localized": {
+        "title": "The Four Elements Were Wrong (duplicate)",
+        "description": "The four elements were wrong. From How Did We Discover the Periodic Table?\n\n#HistoryOfScience #PeriodicTable #Lavoisier #Shorts"
+      },
+      "defaultAudioLanguage": "en-GB"
+    },
+    "contentDetails": {
+      "duration": "PT26S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular",
+      "hasCustomThumbnail": false
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "private",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "RF5nLDTRWTMOj67cYB1oI7pdaJY",
+    "id": "x_3L_IdYgEc",
+    "snippet": {
+      "publishedAt": "2026-10-02T12:50:17Z",
+      "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+      "title": "The Blood Vessels Finer Than a Hair",
+      "description": "Harvey never saw how blood crosses from arteries to veins. Malpighi found vessels finer than a hair.\n\nFull film:\nThe Tied Arm That Proved Your Blood Circulates\nhttps://youtu.be/wwcjcFfC-5M\n\n#HistoryOfScience #Harvey #Capillaries #Shorts",
+      "thumbnails": {
+        "default": {
+          "url": "https://i9.ytimg.com/vi/x_3L_IdYgEc/default.jpg?sqp=COSBx9YG&rs=AOn4CLAQ0Bay0MI1OJ-JRfHhoh8DLvb_PQ",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i9.ytimg.com/vi/x_3L_IdYgEc/mqdefault.jpg?sqp=COSBx9YG&rs=AOn4CLBLAfHX9Nsghka1QOl3OP_4LsVBwQ",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i9.ytimg.com/vi/x_3L_IdYgEc/hqdefault.jpg?sqp=COSBx9YG&rs=AOn4CLDSU61djpJUQ-NDC91bEbjSbNWOIQ",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i9.ytimg.com/vi/x_3L_IdYgEc/sddefault.jpg?sqp=COSBx9YG&rs=AOn4CLD0swix17Ab2WSBjOOEf8_PpJA_Gg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i9.ytimg.com/vi/x_3L_IdYgEc/maxresdefault.jpg?sqp=COSBx9YG&rs=AOn4CLA8LrBlJvEikpTTtxReSZN8-LEkJA",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "History of Science",
+      "tags": [
+        "blood circulation",
+        "capillaries",
+        "history of medicine",
+        "history of science",
+        "marcello malpighi",
+        "william harvey"
+      ],
+      "categoryId": "27",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en-GB",
+      "localized": {
+        "title": "The Blood Vessels Finer Than a Hair",
+        "description": "Harvey never saw how blood crosses from arteries to veins. Malpighi found vessels finer than a hair.\n\nFull film:\nThe Tied Arm That Proved Your Blood Circulates\nhttps://youtu.be/wwcjcFfC-5M\n\n#HistoryOfScience #Harvey #Capillaries #Shorts"
+      },
+      "defaultAudioLanguage": "en-GB"
+    },
+    "contentDetails": {
+      "duration": "PT25S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular",
+      "hasCustomThumbnail": true
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "private",
+      "publishAt": "2026-11-15T11:30:00Z",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "inzSmgvXd7Hpd5rBXAS4gJPvuJk",
+    "id": "6btaax7wp2E",
+    "snippet": {
+      "publishedAt": "2026-10-02T12:48:01Z",
+      "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+      "title": "The Blood Vessels Finer Than a Hair (duplicate)",
+      "description": "The blood vessels finer than a hair. From the film on how Harvey proved blood circulates.\n\n#HistoryOfScience #Harvey #Capillaries #ShortsThe blood vessels finer than a hair. From the film on how Harvey proved blood circulates.\n\n#HistoryOfScience #Harvey #Capillaries #Shorts",
+      "thumbnails": {
+        "default": {
+          "url": "https://i9.ytimg.com/vi/6btaax7wp2E/default.jpg?sqp=COSBx9YG&rs=AOn4CLAfJTz7Y3XauVgUscrRO4Y7R2tRJA",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i9.ytimg.com/vi/6btaax7wp2E/mqdefault.jpg?sqp=COSBx9YG&rs=AOn4CLC_kcrVIjdvtjuh4SyFSN2gkx-ZBg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i9.ytimg.com/vi/6btaax7wp2E/hqdefault.jpg?sqp=COSBx9YG&rs=AOn4CLDCd9o4bsDJVuXg81bx-nCt8_kbrQ",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i9.ytimg.com/vi/6btaax7wp2E/sddefault.jpg?sqp=COSBx9YG&rs=AOn4CLAchwJnBIg_Umj3OfsgNsUYJn3E4Q",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i9.ytimg.com/vi/6btaax7wp2E/maxresdefault.jpg?sqp=COSBx9YG&rs=AOn4CLDCnOaMNqWOew7RRTa_jJ4KVpz9BQ",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "History of Science",
+      "tags": [
+        "what's really inside an atom",
+        "how small can you cut gold",
+        "every eighth element",
+        "periodic table",
+        "history of science",
+        "atom",
+        "newlands octaves",
+        "davy medal",
+        "x-ray wedding ring",
+        "bertha röntgen",
+        "dalton",
+        "mendeleev",
+        "atomic number"
+      ],
+      "categoryId": "27",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en-GB",
+      "localized": {
+        "title": "The Blood Vessels Finer Than a Hair (duplicate)",
+        "description": "The blood vessels finer than a hair. From the film on how Harvey proved blood circulates.\n\n#HistoryOfScience #Harvey #Capillaries #ShortsThe blood vessels finer than a hair. From the film on how Harvey proved blood circulates.\n\n#HistoryOfScience #Harvey #Capillaries #Shorts"
+      },
+      "defaultAudioLanguage": "en-GB"
+    },
+    "contentDetails": {
+      "duration": "PT25S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular",
+      "hasCustomThumbnail": true
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "private",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "oL7kdD1_BocFAZI_JokVZX-u0iE",
+    "id": "Pp5LmjsduI4",
+    "snippet": {
+      "publishedAt": "2026-10-02T12:47:24Z",
+      "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+      "title": "The Four Elements Were Wrong",
+      "description": "The four elements were wrong.\n\nFull film:\nHow Did We Discover the Periodic Table?\nhttps://youtu.be/AL_-qlWko_g\n\n#HistoryOfScience #PeriodicTable #Lavoisier #Shorts",
+      "thumbnails": {
+        "default": {
+          "url": "https://i9.ytimg.com/vi/Pp5LmjsduI4/default.jpg?sqp=COSBx9YG&rs=AOn4CLC1s7UarrUIcINRL4do1SldoI4qYQ",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i9.ytimg.com/vi/Pp5LmjsduI4/mqdefault.jpg?sqp=COSBx9YG&rs=AOn4CLD2d2vi82rqJCFgxQZYY26CBQfDow",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i9.ytimg.com/vi/Pp5LmjsduI4/hqdefault.jpg?sqp=COSBx9YG&rs=AOn4CLDKjqxXxwoXcZDhm8Li9ttaCBU3Xw",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i9.ytimg.com/vi/Pp5LmjsduI4/sddefault.jpg?sqp=COSBx9YG&rs=AOn4CLCj_eeowQ2_M0mCO2LJqLKubi6Mqg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i9.ytimg.com/vi/Pp5LmjsduI4/maxresdefault.jpg?sqp=COSBx9YG&rs=AOn4CLC-b_AX_zEdzl5ADURHfOhdXeTUHA",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "History of Science",
+      "tags": [
+        "antoine lavoisier",
+        "four elements",
+        "history of chemistry",
+        "history of science",
+        "how did we discover the periodic table",
+        "periodic table"
+      ],
+      "categoryId": "27",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en-GB",
+      "localized": {
+        "title": "The Four Elements Were Wrong",
+        "description": "The four elements were wrong.\n\nFull film:\nHow Did We Discover the Periodic Table?\nhttps://youtu.be/AL_-qlWko_g\n\n#HistoryOfScience #PeriodicTable #Lavoisier #Shorts"
+      },
+      "defaultAudioLanguage": "en-GB"
+    },
+    "contentDetails": {
+      "duration": "PT26S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular",
+      "hasCustomThumbnail": true
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "private",
+      "publishAt": "2026-11-03T11:30:00Z",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "mlIIFpRswXcbeSbbbbm10lR8fm0",
+    "id": "DdggTdAzk84",
+    "snippet": {
+      "publishedAt": "2026-10-02T12:46:52Z",
+      "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+      "title": "Why Gold Foil Bounced Rutherford's Particles Back (duplicate)",
+      "description": "Why gold foil bounced Rutherford's particles back. From What's Really Inside an Atom?\n\n#HistoryOfScience #Atom #Rutherford #Nucleus #Shorts",
+      "thumbnails": {
+        "default": {
+          "url": "https://i9.ytimg.com/vi/DdggTdAzk84/default.jpg?sqp=COSBx9YG&rs=AOn4CLAtTHajFKf4-ltYUjh8ffursWwo1Q",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i9.ytimg.com/vi/DdggTdAzk84/mqdefault.jpg?sqp=COSBx9YG&rs=AOn4CLBHK3GdvyEjHTzf4JiGr23iU0P8Pw",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i9.ytimg.com/vi/DdggTdAzk84/hqdefault.jpg?sqp=COSBx9YG&rs=AOn4CLDVMyExppqBHALJMabwfwsQ2xrPfA",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i9.ytimg.com/vi/DdggTdAzk84/sddefault.jpg?sqp=COSBx9YG&rs=AOn4CLAD27Dup-HsSCyJwbNf9kNC9Nk8hg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i9.ytimg.com/vi/DdggTdAzk84/maxresdefault.jpg?sqp=COSBx9YG&rs=AOn4CLDtThsC2bHRre6S1QobGM3wVaSecA",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "History of Science",
+      "tags": [
+        "what's really inside an atom",
+        "how small can you cut gold",
+        "every eighth element",
+        "periodic table",
+        "history of science",
+        "atom",
+        "newlands octaves",
+        "davy medal",
+        "x-ray wedding ring",
+        "bertha röntgen",
+        "dalton",
+        "mendeleev",
+        "atomic number"
+      ],
+      "categoryId": "27",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en-GB",
+      "localized": {
+        "title": "Why Gold Foil Bounced Rutherford's Particles Back (duplicate)",
+        "description": "Why gold foil bounced Rutherford's particles back. From What's Really Inside an Atom?\n\n#HistoryOfScience #Atom #Rutherford #Nucleus #Shorts"
+      },
+      "defaultAudioLanguage": "en-GB"
+    },
+    "contentDetails": {
+      "duration": "PT27S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular",
+      "hasCustomThumbnail": true
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "private",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "BL3qjPbKGOoGNMu5u5HJGPBHtWQ",
+    "id": "VZsUxmzGyyE",
+    "snippet": {
+      "publishedAt": "2026-10-02T12:39:02Z",
+      "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+      "title": "hos 005 s01 the sum v02 (duplicate)",
+      "description": "",
+      "thumbnails": {
+        "default": {
+          "url": "https://i9.ytimg.com/vi/VZsUxmzGyyE/default.jpg?sqp=COSBx9YG&rs=AOn4CLDn0ZX8U-OLrHF8PVFOwmqFrHcC5g",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i9.ytimg.com/vi/VZsUxmzGyyE/mqdefault.jpg?sqp=COSBx9YG&rs=AOn4CLCxr8BsOeTzqUmCRLWVtK6mXsAreg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i9.ytimg.com/vi/VZsUxmzGyyE/hqdefault.jpg?sqp=COSBx9YG&rs=AOn4CLCXVlfnMfev4zvLvuW-mH-lcot21A",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i9.ytimg.com/vi/VZsUxmzGyyE/sddefault.jpg?sqp=COSBx9YG&rs=AOn4CLBuC7aDgnhmVElhy6NVgGR3WNHt3Q",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i9.ytimg.com/vi/VZsUxmzGyyE/maxresdefault.jpg?sqp=COSBx9YG&rs=AOn4CLBCgvYNaOIq8JFLCojY6XrlGVlh1w",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "History of Science",
+      "categoryId": "27",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en-GB",
+      "localized": {
+        "title": "hos 005 s01 the sum v02 (duplicate)",
+        "description": ""
+      },
+      "defaultAudioLanguage": "en-GB"
+    },
+    "contentDetails": {
+      "duration": "PT25S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular",
+      "hasCustomThumbnail": false
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "private",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "nDoFqw77Ji9glWK5BjcfIpNiyQo",
+    "id": "JyRjM-9Yc8g",
+    "snippet": {
+      "publishedAt": "2026-10-02T12:35:40Z",
+      "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+      "title": "Why Gold Foil Bounced Rutherford's Particles Back",
+      "description": "Tiny particles bounced back off gold foil — Rutherford's clue that the atom has a tiny hard centre.\n\nFull film:\nWhat's Really Inside an Atom?\nhttps://youtu.be/GHZDsiH7L7A\n\n#HistoryOfScience #Atom #Rutherford #Nucleus #Shorts",
+      "thumbnails": {
+        "default": {
+          "url": "https://i9.ytimg.com/vi/JyRjM-9Yc8g/default.jpg?sqp=COSBx9YG&rs=AOn4CLDERXJZNh-IplZOgz6IOHxBXrmrlw",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i9.ytimg.com/vi/JyRjM-9Yc8g/mqdefault.jpg?sqp=COSBx9YG&rs=AOn4CLBbF4azn-vARlanQ1j0hEfjn5nq8A",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i9.ytimg.com/vi/JyRjM-9Yc8g/hqdefault.jpg?sqp=COSBx9YG&rs=AOn4CLBg9aECf7P1spgvdtNn-B-5hdNI9g",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i9.ytimg.com/vi/JyRjM-9Yc8g/sddefault.jpg?sqp=COSBx9YG&rs=AOn4CLDNUs9VwXSpxDeSCqS2xNfzwf-o4Q",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i9.ytimg.com/vi/JyRjM-9Yc8g/maxresdefault.jpg?sqp=COSBx9YG&rs=AOn4CLDbVduvi6BPSAB9Y2zzI0mWhxzSJw",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "History of Science",
+      "tags": [
+        "atomic nucleus",
+        "ernest rutherford",
+        "gold foil experiment",
+        "history of physics",
+        "history of science",
+        "what's really inside an atom"
+      ],
+      "categoryId": "27",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en-GB",
+      "localized": {
+        "title": "Why Gold Foil Bounced Rutherford's Particles Back",
+        "description": "Tiny particles bounced back off gold foil — Rutherford's clue that the atom has a tiny hard centre.\n\nFull film:\nWhat's Really Inside an Atom?\nhttps://youtu.be/GHZDsiH7L7A\n\n#HistoryOfScience #Atom #Rutherford #Nucleus #Shorts"
+      },
+      "defaultAudioLanguage": "en-GB"
+    },
+    "contentDetails": {
+      "duration": "PT27S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular",
+      "hasCustomThumbnail": true
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "private",
+      "publishAt": "2026-11-01T11:30:00Z",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "t27A29L7kMI4oDyL6mQPk953srk",
+    "id": "1lszTrYRp-8",
+    "snippet": {
+      "publishedAt": "2026-10-02T12:35:03Z",
+      "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+      "title": "Your Heart Pumps More Blood Than You Have",
+      "description": "Your heart moves more blood in half an hour than your body holds — Harvey's proof that blood must go round.\n\nFull film:\nThe Tied Arm That Proved Your Blood Circulates\nhttps://youtu.be/wwcjcFfC-5M\n\n#HistoryOfScience #Harvey #BloodCirculation #Shorts",
+      "thumbnails": {
+        "default": {
+          "url": "https://i9.ytimg.com/vi/1lszTrYRp-8/default.jpg?sqp=COSBx9YG&rs=AOn4CLC6xNH54lIVI0ZZp5NoxuLP40HC6A",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i9.ytimg.com/vi/1lszTrYRp-8/mqdefault.jpg?sqp=COSBx9YG&rs=AOn4CLB2kF-dXWfNyBvx41AlWuw7YAfMrQ",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i9.ytimg.com/vi/1lszTrYRp-8/hqdefault.jpg?sqp=COSBx9YG&rs=AOn4CLBHUyKSkul0HVZ4sqCa25TAE3pMFw",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i9.ytimg.com/vi/1lszTrYRp-8/sddefault.jpg?sqp=COSBx9YG&rs=AOn4CLDUqacqcEUK100NlcOb-HnqT2Tk_A",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i9.ytimg.com/vi/1lszTrYRp-8/maxresdefault.jpg?sqp=COSBx9YG&rs=AOn4CLDxd9uqws1Cip1CNrBxl_OSrvLzbg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "History of Science",
+      "tags": [
+        "blood circulation",
+        "de motu cordis",
+        "heart pump",
+        "history of medicine",
+        "history of science",
+        "william harvey"
+      ],
+      "categoryId": "27",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en-GB",
+      "localized": {
+        "title": "Your Heart Pumps More Blood Than You Have",
+        "description": "Your heart moves more blood in half an hour than your body holds — Harvey's proof that blood must go round.\n\nFull film:\nThe Tied Arm That Proved Your Blood Circulates\nhttps://youtu.be/wwcjcFfC-5M\n\n#HistoryOfScience #Harvey #BloodCirculation #Shorts"
+      },
+      "defaultAudioLanguage": "en-GB"
+    },
+    "contentDetails": {
+      "duration": "PT25S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular",
+      "hasCustomThumbnail": true
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "private",
+      "publishAt": "2026-10-30T11:30:00Z",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "vSG2OWW-l95o6jnr-zb8RQdtIUA",
+    "id": "clV6E10NLPw",
+    "snippet": {
+      "publishedAt": "2026-09-30T13:48:45Z",
+      "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+      "title": "The spray that stopped surgery killing patients",
+      "description": "The spray that stopped surgery killing patients\n\nBefore Lister, nearly half his amputation patients died. He sprayed carbolic acid over the operation, because germs, not bad air, got into the wound.\n\nWatch the full film — How Did We Discover Germs?:\nhttps://www.youtube.com/watch?v=_C92tIJCk8A\n\n@HistoryOfScienceYT\n\n#Germs #Antiseptic #Lister #HistoryOfScience #Science #Shorts",
+      "thumbnails": {
+        "default": {
+          "url": "https://i9.ytimg.com/vi/clV6E10NLPw/default.jpg?sqp=COSBx9YG&rs=AOn4CLD95_lPARrctyY9ei8BQ3P87_Nphg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i9.ytimg.com/vi/clV6E10NLPw/mqdefault.jpg?sqp=COSBx9YG&rs=AOn4CLCUDCtuiuG5RfSTPwzT0-r5swOpmQ",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i9.ytimg.com/vi/clV6E10NLPw/hqdefault.jpg?sqp=COSBx9YG&rs=AOn4CLBXXn1RSj3n0rkjMRJszY_Ea7AI5w",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i9.ytimg.com/vi/clV6E10NLPw/sddefault.jpg?sqp=COSBx9YG&rs=AOn4CLBEbqs9hVNXQ_10dmDNPplvcDA90A",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i9.ytimg.com/vi/clV6E10NLPw/maxresdefault.jpg?sqp=COSBx9YG&rs=AOn4CLD_mv5lf3T89FTaqRQc7f8dS_6Ebg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "History of Science",
+      "tags": [
+        "antiseptic surgery",
+        "carbolic spray",
+        "germ theory",
+        "history of medicine",
+        "history of science",
+        "joseph lister"
+      ],
+      "categoryId": "27",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en-GB",
+      "localized": {
+        "title": "The spray that stopped surgery killing patients",
+        "description": "The spray that stopped surgery killing patients\n\nBefore Lister, nearly half his amputation patients died. He sprayed carbolic acid over the operation, because germs, not bad air, got into the wound.\n\nWatch the full film — How Did We Discover Germs?:\nhttps://www.youtube.com/watch?v=_C92tIJCk8A\n\n@HistoryOfScienceYT\n\n#Germs #Antiseptic #Lister #HistoryOfScience #Science #Shorts"
+      },
+      "defaultAudioLanguage": "en-GB"
+    },
+    "contentDetails": {
+      "duration": "PT25S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular",
+      "hasCustomThumbnail": true
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "private",
+      "publishAt": "2026-10-20T10:30:00Z",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": false,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "eFdmF5_fj0y2DVm1FP2UR4kZ7pA",
+    "id": "CUu8k38iAMc",
+    "snippet": {
+      "publishedAt": "2026-09-30T08:45:55Z",
+      "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+      "title": "The first X-ray showed a wedding ring",
+      "description": "The first X-ray showed a wedding ring\n\nBertha's hand. Soft tissue fades. Bone holds. And her wedding ring sits clear on the plate.\n\nFull film:\nHow Did We Discover X-rays?\nhttps://youtu.be/frP_YrNShsU\n\n@HistoryOfScienceYT",
+      "thumbnails": {
+        "default": {
+          "url": "https://i9.ytimg.com/vi/CUu8k38iAMc/default.jpg?sqp=COSBx9YG&rs=AOn4CLB_AuONh1KglO7NeSJ8NTeJNwvEpw",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i9.ytimg.com/vi/CUu8k38iAMc/mqdefault.jpg?sqp=COSBx9YG&rs=AOn4CLCbfXC__dPsfeDpQlQU7lbQPB8Skg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i9.ytimg.com/vi/CUu8k38iAMc/hqdefault.jpg?sqp=COSBx9YG&rs=AOn4CLBJ8-vdnA7XGzAZOqx8vUDeAMg2EA",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i9.ytimg.com/vi/CUu8k38iAMc/sddefault.jpg?sqp=COSBx9YG&rs=AOn4CLBUHrL8_-XFuj3iDnfSkdlGnTxvVw",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i9.ytimg.com/vi/CUu8k38iAMc/maxresdefault.jpg?sqp=COSBx9YG&rs=AOn4CLAnlNus3tQfV9FX8ze4LuKv1XhkvQ",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "History of Science",
+      "tags": [
+        "bertha",
+        "history of physics",
+        "history of science",
+        "wedding ring",
+        "x-rays"
+      ],
+      "categoryId": "27",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en-GB",
+      "localized": {
+        "title": "The first X-ray showed a wedding ring",
+        "description": "The first X-ray showed a wedding ring\n\nBertha's hand. Soft tissue fades. Bone holds. And her wedding ring sits clear on the plate.\n\nFull film:\nHow Did We Discover X-rays?\nhttps://youtu.be/frP_YrNShsU\n\n@HistoryOfScienceYT"
+      },
+      "defaultAudioLanguage": "en-GB"
+    },
+    "contentDetails": {
+      "duration": "PT28S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular",
+      "hasCustomThumbnail": true
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "private",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": false,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "_P3xCfc6bNF8u9SULvDZneqbfNM",
+    "id": "TbMMJSRKC3U",
+    "snippet": {
+      "publishedAt": "2026-09-30T08:45:18Z",
+      "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+      "title": "He said every eighth element repeats",
+      "description": "He said every eighth element repeats\n\nNewlands lined the elements up and heard a pattern: every eighth repeats. Twenty-two years later, the Royal Society gave him the Davy Medal for it.\n\nFull film:\nHow Did We Discover the Periodic Table?\nhttps://youtu.be/AL_-qlWko_g\n\n@HistoryOfScienceYT",
+      "thumbnails": {
+        "default": {
+          "url": "https://i9.ytimg.com/vi/TbMMJSRKC3U/default.jpg?sqp=COSBx9YG&rs=AOn4CLAjCEP7BtR40u_sbt-_tl_LvrXUzg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i9.ytimg.com/vi/TbMMJSRKC3U/mqdefault.jpg?sqp=COSBx9YG&rs=AOn4CLBZTacjwrGn0pT15VkyMUpfSXU2iA",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i9.ytimg.com/vi/TbMMJSRKC3U/hqdefault.jpg?sqp=COSBx9YG&rs=AOn4CLB7zkPPPiQeqRABGNIinQyAPS5OfA",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i9.ytimg.com/vi/TbMMJSRKC3U/sddefault.jpg?sqp=COSBx9YG&rs=AOn4CLBfsQWM7eK5KBefxhSt9iPjAyGv4w",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i9.ytimg.com/vi/TbMMJSRKC3U/maxresdefault.jpg?sqp=COSBx9YG&rs=AOn4CLCwmN36rBdVkaviWhnL0k4XCbgGSw",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "History of Science",
+      "tags": [
+        "davy medal",
+        "history of chemistry",
+        "history of science",
+        "john newlands",
+        "law of octaves",
+        "periodic table"
+      ],
+      "categoryId": "27",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en-GB",
+      "localized": {
+        "title": "He said every eighth element repeats",
+        "description": "He said every eighth element repeats\n\nNewlands lined the elements up and heard a pattern: every eighth repeats. Twenty-two years later, the Royal Society gave him the Davy Medal for it.\n\nFull film:\nHow Did We Discover the Periodic Table?\nhttps://youtu.be/AL_-qlWko_g\n\n@HistoryOfScienceYT"
+      },
+      "defaultAudioLanguage": "en-GB"
+    },
+    "contentDetails": {
+      "duration": "PT27S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular",
+      "hasCustomThumbnail": true
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "private",
+      "publishAt": "2026-10-18T10:30:00Z",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": false,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "CLj9q2udhTwE5EHpdAJ8G4P0C2M",
+    "id": "29bpGAI0wb8",
+    "snippet": {
+      "publishedAt": "2026-09-30T08:25:14Z",
+      "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+      "title": "What happens if you keep cutting gold in half?",
+      "description": "What happens if you keep cutting gold in half?\n\nKeep cutting a gold coin and the pieces still behave like gold — until they don't. That is the atom.\n\nFull film:\nWhat's Really Inside an Atom?\nhttps://youtu.be/GHZDsiH7L7A\n\n@HistoryOfScienceYT\n\n#HistoryOfScience #Atom #Dalton #Gold #Shorts",
+      "thumbnails": {
+        "default": {
+          "url": "https://i9.ytimg.com/vi/29bpGAI0wb8/default.jpg?sqp=COSBx9YG&rs=AOn4CLCvTXco-TRn3fUHzsq4dkxDeE9lOQ",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i9.ytimg.com/vi/29bpGAI0wb8/mqdefault.jpg?sqp=COSBx9YG&rs=AOn4CLB9-mcdnJA-zszNPM-fjleOnexIHw",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i9.ytimg.com/vi/29bpGAI0wb8/hqdefault.jpg?sqp=COSBx9YG&rs=AOn4CLD34V1ntv7rUU4YIzHfc9pupTQcUw",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i9.ytimg.com/vi/29bpGAI0wb8/sddefault.jpg?sqp=COSBx9YG&rs=AOn4CLB4dLxanM1eTuadwhec-rSB9slEjA",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i9.ytimg.com/vi/29bpGAI0wb8/maxresdefault.jpg?sqp=COSBx9YG&rs=AOn4CLDMMqsn5v7SBOG16MA7J49sUI9btQ",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "History of Science",
+      "tags": [
+        "how small can you cut gold",
+        "what's really inside an atom",
+        "atom",
+        "gold",
+        "periodic table",
+        "history of science",
+        "GHZDsiH7L7A"
+      ],
+      "categoryId": "27",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en-GB",
+      "localized": {
+        "title": "What happens if you keep cutting gold in half?",
+        "description": "What happens if you keep cutting gold in half?\n\nKeep cutting a gold coin and the pieces still behave like gold — until they don't. That is the atom.\n\nFull film:\nWhat's Really Inside an Atom?\nhttps://youtu.be/GHZDsiH7L7A\n\n@HistoryOfScienceYT\n\n#HistoryOfScience #Atom #Dalton #Gold #Shorts"
+      },
+      "defaultAudioLanguage": "en-GB"
+    },
+    "contentDetails": {
+      "duration": "PT25S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular",
+      "hasCustomThumbnail": true
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "private",
+      "publishAt": "2026-10-16T10:30:00Z",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": false,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "Pb55qgGMjYzOcbGTvSM3HmJE-0U",
+    "id": "zI_eD3vFWmE",
+    "snippet": {
+      "publishedAt": "2026-09-27T10:30:25Z",
+      "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+      "title": "The first X-ray showed a wedding ring",
+      "description": "The first X-ray showed a wedding ring\n\nThe first X-ray proof was Bertha Röntgen’s hand — bones, and a denser wedding-ring shadow.\n\nFull film:\nHow Did We Discover X-rays?\nhttps://youtu.be/frP_YrNShsU\n\n@HistoryOfScienceYT",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/zI_eD3vFWmE/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/zI_eD3vFWmE/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/zI_eD3vFWmE/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/zI_eD3vFWmE/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/zI_eD3vFWmE/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "History of Science",
+      "tags": [
+        "bertha",
+        "history of physics",
+        "history of science",
+        "wedding ring",
+        "x-rays"
+      ],
+      "categoryId": "27",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en-GB",
+      "localized": {
+        "title": "The first X-ray showed a wedding ring",
+        "description": "The first X-ray showed a wedding ring\n\nThe first X-ray proof was Bertha Röntgen’s hand — bones, and a denser wedding-ring shadow.\n\nFull film:\nHow Did We Discover X-rays?\nhttps://youtu.be/frP_YrNShsU\n\n@HistoryOfScienceYT"
+      },
+      "defaultAudioLanguage": "en-GB"
+    },
+    "contentDetails": {
+      "duration": "PT25S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular",
+      "hasCustomThumbnail": true
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "public",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": false,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "SHqQB-CbhL2i9gu53iQwMb8E-xI",
+    "id": "xvanpsLeADE",
+    "snippet": {
+      "publishedAt": "2026-09-26T10:30:07Z",
+      "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+      "title": "How did Röntgen see bones without cutting",
+      "description": "How did Röntgen see bones without cutting\n\nSoft tissue fades. Bone holds. Röntgen saw a living skeleton without a knife.\n\nFull film:\nHow Did We Discover X-rays?\nhttps://youtu.be/frP_YrNShsU\n\n@HistoryOfScienceYT",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/xvanpsLeADE/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/xvanpsLeADE/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/xvanpsLeADE/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/xvanpsLeADE/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/xvanpsLeADE/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "History of Science",
+      "tags": [
+        "bones",
+        "history of physics",
+        "history of science",
+        "röntgen",
+        "x-rays"
+      ],
+      "categoryId": "27",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en-GB",
+      "localized": {
+        "title": "How did Röntgen see bones without cutting",
+        "description": "How did Röntgen see bones without cutting\n\nSoft tissue fades. Bone holds. Röntgen saw a living skeleton without a knife.\n\nFull film:\nHow Did We Discover X-rays?\nhttps://youtu.be/frP_YrNShsU\n\n@HistoryOfScienceYT"
+      },
+      "defaultAudioLanguage": "en-GB"
+    },
+    "contentDetails": {
+      "duration": "PT25S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular",
+      "hasCustomThumbnail": true
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "public",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": false,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "YZ4OUxjvrl9fqKxYMRt0FN_kdvQ",
+    "id": "oowAOWTBoq0",
+    "snippet": {
+      "publishedAt": "2026-09-25T10:30:17Z",
+      "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+      "title": "How X-rays Were Discovered by Accident",
+      "description": "How X-rays Were Discovered by Accident\n\nA covered cathode tube. A cardboard screen that should have stayed dark — and glowed anyway. That accident is how X-rays began.\n\nFull film:\nHow Did We Discover X-rays?\nhttps://youtu.be/frP_YrNShsU\n\n@HistoryOfScienceYT",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/oowAOWTBoq0/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/oowAOWTBoq0/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/oowAOWTBoq0/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/oowAOWTBoq0/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/oowAOWTBoq0/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "History of Science",
+      "tags": [
+        "accident",
+        "history of physics",
+        "history of science",
+        "röntgen",
+        "x-rays"
+      ],
+      "categoryId": "27",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en-GB",
+      "localized": {
+        "title": "How X-rays Were Discovered by Accident",
+        "description": "How X-rays Were Discovered by Accident\n\nA covered cathode tube. A cardboard screen that should have stayed dark — and glowed anyway. That accident is how X-rays began.\n\nFull film:\nHow Did We Discover X-rays?\nhttps://youtu.be/frP_YrNShsU\n\n@HistoryOfScienceYT"
+      },
+      "defaultAudioLanguage": "en-GB"
+    },
+    "contentDetails": {
+      "duration": "PT25S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular",
+      "hasCustomThumbnail": true
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "public",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": false,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "qw2xE4qdRAiiG-y7jHCzniPGYI0",
+    "id": "frP_YrNShsU",
+    "snippet": {
+      "publishedAt": "2026-09-24T17:00:06Z",
+      "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+      "title": "How Did We Discover X-rays?",
+      "description": "X-rays let us see through skin. This is how Röntgen found them: a tube wrapped in black cardboard, a screen across a dark room that glowed when it shouldn't have, and a wedding ring on the first plate.\n\nIn a Würzburg lab in 1895, Wilhelm Röntgen chased a glow that had no business being there, and named the unknown ray X.\n\nThis is the story of how we discovered X-rays: the cardboard that should have stayed dark, the living bones seen without a knife, and Bertha Röntgen’s hand — bones and wedding ring — that turned a haunted glow into proof the world could not argue with.\n\nChapters\n0:00 A Dark Lab, 1895\n1:27 The Cardboard\n2:32 Bones Without a Knife\n3:59 Bertha’s Ring\n5:25 A New Kind of Seeing\n\nHistory of Science\nDISCOVERY. WONDER. PROOF.\n\n@HistoryOfScienceYT",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/frP_YrNShsU/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/frP_YrNShsU/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/frP_YrNShsU/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/frP_YrNShsU/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/frP_YrNShsU/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "History of Science",
+      "tags": [
+        "x-rays",
+        "röntgen",
+        "roentgen",
+        "wilhelm röntgen",
+        "history of physics",
+        "history of science"
+      ],
+      "categoryId": "27",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en-GB",
+      "localized": {
+        "title": "How Did We Discover X-rays?",
+        "description": "X-rays let us see through skin. This is how Röntgen found them: a tube wrapped in black cardboard, a screen across a dark room that glowed when it shouldn't have, and a wedding ring on the first plate.\n\nIn a Würzburg lab in 1895, Wilhelm Röntgen chased a glow that had no business being there, and named the unknown ray X.\n\nThis is the story of how we discovered X-rays: the cardboard that should have stayed dark, the living bones seen without a knife, and Bertha Röntgen’s hand — bones and wedding ring — that turned a haunted glow into proof the world could not argue with.\n\nChapters\n0:00 A Dark Lab, 1895\n1:27 The Cardboard\n2:32 Bones Without a Knife\n3:59 Bertha’s Ring\n5:25 A New Kind of Seeing\n\nHistory of Science\nDISCOVERY. WONDER. PROOF.\n\n@HistoryOfScienceYT"
+      },
+      "defaultAudioLanguage": "en-GB"
+    },
+    "contentDetails": {
+      "duration": "PT7M6S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular",
+      "hasCustomThumbnail": false
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "public",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": false,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "yMm0mvx8EoH21g56XmpnBJD2pKk",
+    "id": "LanTHJckYx8",
+    "snippet": {
+      "publishedAt": "2026-09-22T10:30:31Z",
+      "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+      "title": "What other table has empty chairs?",
+      "description": "What other table has empty chairs?\n\nWatch the full film — How Did We Discover the Periodic Table?:\nhttps://www.youtube.com/watch?v=AL_-qlWko_g\n\nHistory of Science · Discovery. Wonder. Proof. · @HistoryOfScienceYT\n\n#PeriodicTable #HistoryOfScience #Mendeleev #Science #Shorts",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/LanTHJckYx8/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/LanTHJckYx8/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/LanTHJckYx8/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/LanTHJckYx8/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/LanTHJckYx8/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "History of Science",
+      "tags": [
+        "elements",
+        "empty chairs",
+        "history of chemistry",
+        "history of science",
+        "periodic table"
+      ],
+      "categoryId": "27",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en-GB",
+      "localized": {
+        "title": "What other table has empty chairs?",
+        "description": "What other table has empty chairs?\n\nWatch the full film — How Did We Discover the Periodic Table?:\nhttps://www.youtube.com/watch?v=AL_-qlWko_g\n\nHistory of Science · Discovery. Wonder. Proof. · @HistoryOfScienceYT\n\n#PeriodicTable #HistoryOfScience #Mendeleev #Science #Shorts"
+      },
+      "defaultAudioLanguage": "en-GB"
+    },
+    "contentDetails": {
+      "duration": "PT26S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular",
+      "hasCustomThumbnail": true
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "public",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": false,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "DTvpN5gbblFLkcqg15fZ8Op36mc",
+    "id": "nba0-f7PPeU",
+    "snippet": {
+      "publishedAt": "2026-09-21T10:30:10Z",
+      "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+      "title": "Why tellurium sat before iodine",
+      "description": "Why tellurium sat before iodine\n\nWatch the full film — How Did We Discover the Periodic Table?:\nhttps://www.youtube.com/watch?v=AL_-qlWko_g\n\nHistory of Science · Discovery. Wonder. Proof. · @HistoryOfScienceYT\n\n#PeriodicTable #HistoryOfScience #Mendeleev #Science #Shorts",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/nba0-f7PPeU/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/nba0-f7PPeU/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/nba0-f7PPeU/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/nba0-f7PPeU/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/nba0-f7PPeU/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "History of Science",
+      "tags": [
+        "atomic weight",
+        "history of chemistry",
+        "history of science",
+        "iodine",
+        "periodic table",
+        "tellurium"
+      ],
+      "categoryId": "27",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en-GB",
+      "localized": {
+        "title": "Why tellurium sat before iodine",
+        "description": "Why tellurium sat before iodine\n\nWatch the full film — How Did We Discover the Periodic Table?:\nhttps://www.youtube.com/watch?v=AL_-qlWko_g\n\nHistory of Science · Discovery. Wonder. Proof. · @HistoryOfScienceYT\n\n#PeriodicTable #HistoryOfScience #Mendeleev #Science #Shorts"
+      },
+      "defaultAudioLanguage": "en-GB"
+    },
+    "contentDetails": {
+      "duration": "PT25S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular",
+      "hasCustomThumbnail": true
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "public",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": false,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "gdI9FdusLVW_bHUOSQbwBUHWRbQ",
+    "id": "CnHwX1L9XHg",
+    "snippet": {
+      "publishedAt": "2026-09-20T10:30:32Z",
+      "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+      "title": "Gallium sat where the table said",
+      "description": "Gallium sat where the table said\n\nWatch the full film — How Did We Discover the Periodic Table?:\nhttps://www.youtube.com/watch?v=AL_-qlWko_g\n\nHistory of Science · Discovery. Wonder. Proof. · @HistoryOfScienceYT\n\n#PeriodicTable #HistoryOfScience #Mendeleev #Science #Shorts",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/CnHwX1L9XHg/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/CnHwX1L9XHg/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/CnHwX1L9XHg/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/CnHwX1L9XHg/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/CnHwX1L9XHg/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "History of Science",
+      "tags": [
+        "gallium",
+        "history of chemistry",
+        "history of science",
+        "mendeleev",
+        "periodic table"
+      ],
+      "categoryId": "27",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en-GB",
+      "localized": {
+        "title": "Gallium sat where the table said",
+        "description": "Gallium sat where the table said\n\nWatch the full film — How Did We Discover the Periodic Table?:\nhttps://www.youtube.com/watch?v=AL_-qlWko_g\n\nHistory of Science · Discovery. Wonder. Proof. · @HistoryOfScienceYT\n\n#PeriodicTable #HistoryOfScience #Mendeleev #Science #Shorts"
+      },
+      "defaultAudioLanguage": "en-GB"
+    },
+    "contentDetails": {
+      "duration": "PT26S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular",
+      "hasCustomThumbnail": true
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "public",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": false,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "0BhomDw2-4g63z4J1vuA_TToKtQ",
+    "id": "nFQRWmpulTQ",
+    "snippet": {
+      "publishedAt": "2026-09-19T10:30:36Z",
+      "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+      "title": "He predicted a metal before it was found",
+      "description": "He predicted a metal before it was found\n\nWatch the full film — How Did We Discover the Periodic Table?:\nhttps://www.youtube.com/watch?v=AL_-qlWko_g\n\nHistory of Science · Discovery. Wonder. Proof. · @HistoryOfScienceYT\n\n#PeriodicTable #HistoryOfScience #Mendeleev #Science #Shorts",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/nFQRWmpulTQ/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/nFQRWmpulTQ/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/nFQRWmpulTQ/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/nFQRWmpulTQ/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/nFQRWmpulTQ/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "History of Science",
+      "tags": [
+        "history of chemistry",
+        "history of science",
+        "mendeleev",
+        "periodic table",
+        "predicted elements"
+      ],
+      "categoryId": "27",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en-GB",
+      "localized": {
+        "title": "He predicted a metal before it was found",
+        "description": "He predicted a metal before it was found\n\nWatch the full film — How Did We Discover the Periodic Table?:\nhttps://www.youtube.com/watch?v=AL_-qlWko_g\n\nHistory of Science · Discovery. Wonder. Proof. · @HistoryOfScienceYT\n\n#PeriodicTable #HistoryOfScience #Mendeleev #Science #Shorts"
+      },
+      "defaultAudioLanguage": "en-GB"
+    },
+    "contentDetails": {
+      "duration": "PT25S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular",
+      "hasCustomThumbnail": true
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "public",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": false,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "W-8jJ_2qIMpSf6H-N1OArOAZR_4",
+    "id": "uU12JA5rMWg",
+    "snippet": {
+      "publishedAt": "2026-09-18T10:30:38Z",
+      "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+      "title": "The periodic table's empty chairs",
+      "description": "The periodic table's empty chairs\n\nWatch the full film — How Did We Discover the Periodic Table?:\nhttps://www.youtube.com/watch?v=AL_-qlWko_g\n\nHistory of Science · Discovery. Wonder. Proof. · @HistoryOfScienceYT\n\n#PeriodicTable #HistoryOfScience #Mendeleev #Science #Shorts",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/uU12JA5rMWg/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/uU12JA5rMWg/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/uU12JA5rMWg/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/uU12JA5rMWg/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/uU12JA5rMWg/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "History of Science",
+      "tags": [
+        "elements",
+        "empty chairs",
+        "history of chemistry",
+        "history of science",
+        "mendeleev",
+        "periodic table"
+      ],
+      "categoryId": "27",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en-GB",
+      "localized": {
+        "title": "The periodic table's empty chairs",
+        "description": "The periodic table's empty chairs\n\nWatch the full film — How Did We Discover the Periodic Table?:\nhttps://www.youtube.com/watch?v=AL_-qlWko_g\n\nHistory of Science · Discovery. Wonder. Proof. · @HistoryOfScienceYT\n\n#PeriodicTable #HistoryOfScience #Mendeleev #Science #Shorts"
+      },
+      "defaultAudioLanguage": "en-GB"
+    },
+    "contentDetails": {
+      "duration": "PT25S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular",
+      "hasCustomThumbnail": true
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "public",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": false,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "IbnH7NdmTw8-DTYHhw6JW9dG47c",
+    "id": "AL_-qlWko_g",
+    "snippet": {
+      "publishedAt": "2026-09-17T18:00:06Z",
+      "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+      "title": "How Did We Discover the Periodic Table?",
+      "description": "Why did Mendeleev leave gaps in the periodic table? Because he trusted his pattern more than the list of known elements. In 1869 he left spaces for metals nobody had found, and predicted what they'd weigh. Then gallium, scandium and germanium turned up and fitted.\n\n0:00 A zoo of names\n1:25 First patterns\n2:49 A ruler for atoms\n4:21 Empty chairs\n6:31 The guests arrive\n\nHistory of Science · Discovery. Wonder. Proof.\n\n#PeriodicTable #Mendeleev #HistoryOfScience",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/AL_-qlWko_g/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/AL_-qlWko_g/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/AL_-qlWko_g/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/AL_-qlWko_g/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/AL_-qlWko_g/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "History of Science",
+      "tags": [
+        "elements",
+        "history of chemistry",
+        "history of science",
+        "mendeleev",
+        "periodic table"
+      ],
+      "categoryId": "27",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en-GB",
+      "localized": {
+        "title": "How Did We Discover the Periodic Table?",
+        "description": "Why did Mendeleev leave gaps in the periodic table? Because he trusted his pattern more than the list of known elements. In 1869 he left spaces for metals nobody had found, and predicted what they'd weigh. Then gallium, scandium and germanium turned up and fitted.\n\n0:00 A zoo of names\n1:25 First patterns\n2:49 A ruler for atoms\n4:21 Empty chairs\n6:31 The guests arrive\n\nHistory of Science · Discovery. Wonder. Proof.\n\n#PeriodicTable #Mendeleev #HistoryOfScience"
+      },
+      "defaultAudioLanguage": "en-GB"
+    },
+    "contentDetails": {
+      "duration": "PT9M1S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular",
+      "hasCustomThumbnail": false
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "public",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": false,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "BZEk8LLqYMfej8Xyo5xO3Bzx770",
+    "id": "kzDiVk4603s",
+    "snippet": {
+      "publishedAt": "2026-09-11T08:47:17Z",
+      "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+      "title": "He predicted a metal before it was found",
+      "description": "He predicted a metal before it was found\n\nWatch the full film — How Did We Discover the Periodic Table?:\nhttps://www.youtube.com/watch?v=AL_-qlWko_g\n\nHistory of Science · Discovery. Wonder. Proof. · @HistoryOfScienceYT\n\n#PeriodicTable #HistoryOfScience #Mendeleev #Science #Shorts",
+      "thumbnails": {
+        "default": {
+          "url": "https://i9.ytimg.com/vi/kzDiVk4603s/default.jpg?sqp=COSBx9YG&rs=AOn4CLBE9o43xC3zMMgc-5A1PUbGL9iziw",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i9.ytimg.com/vi/kzDiVk4603s/mqdefault.jpg?sqp=COSBx9YG&rs=AOn4CLBIviQj6UBfJSma76UNHHR-_RZPiw",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i9.ytimg.com/vi/kzDiVk4603s/hqdefault.jpg?sqp=COSBx9YG&rs=AOn4CLAgEH6U8ZnXY_CMZlRqz56ve-U2QA",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i9.ytimg.com/vi/kzDiVk4603s/sddefault.jpg?sqp=COSBx9YG&rs=AOn4CLDVwWBGgI4h7wAcik0aLySWpjrHtg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i9.ytimg.com/vi/kzDiVk4603s/maxresdefault.jpg?sqp=COSBx9YG&rs=AOn4CLDit5V1NtMKcDyHNIaL_4hghEtojA",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "History of Science",
+      "tags": [
+        "history of chemistry",
+        "history of science",
+        "mendeleev",
+        "periodic table",
+        "predicted elements"
+      ],
+      "categoryId": "27",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en-GB",
+      "localized": {
+        "title": "He predicted a metal before it was found",
+        "description": "He predicted a metal before it was found\n\nWatch the full film — How Did We Discover the Periodic Table?:\nhttps://www.youtube.com/watch?v=AL_-qlWko_g\n\nHistory of Science · Discovery. Wonder. Proof. · @HistoryOfScienceYT\n\n#PeriodicTable #HistoryOfScience #Mendeleev #Science #Shorts"
+      },
+      "defaultAudioLanguage": "en-GB"
+    },
+    "contentDetails": {
+      "duration": "PT25S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular",
+      "hasCustomThumbnail": false
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "private",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": false,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "q7nBc1VOFuPkArlcY-wYdp2HOBY",
+    "id": "sILtQxgYQk8",
+    "snippet": {
+      "publishedAt": "2026-09-06T03:48:23Z",
+      "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+      "title": "A flask that proved germs come from outside",
+      "description": "A flask that proved germs come from outside\n\nWatch the full film — How Did We Discover Germs?:\nhttps://www.youtube.com/watch?v=_C92tIJCk8A\n\n#Germs #GermTheory #HistoryOfScience #Science #Shorts",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/sILtQxgYQk8/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/sILtQxgYQk8/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/sILtQxgYQk8/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/sILtQxgYQk8/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/sILtQxgYQk8/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "History of Science",
+      "tags": [
+        "germ theory",
+        "history of science",
+        "pasteur",
+        "spontaneous generation",
+        "swan neck flask"
+      ],
+      "categoryId": "27",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en-GB",
+      "localized": {
+        "title": "A flask that proved germs come from outside",
+        "description": "A flask that proved germs come from outside\n\nWatch the full film — How Did We Discover Germs?:\nhttps://www.youtube.com/watch?v=_C92tIJCk8A\n\n#Germs #GermTheory #HistoryOfScience #Science #Shorts"
+      },
+      "defaultAudioLanguage": "en-GB"
+    },
+    "contentDetails": {
+      "duration": "PT25S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular",
+      "hasCustomThumbnail": true
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "public",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": false,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "qjh55rtDP-4ahWs8zFPV-jw3l8I",
+    "id": "93fPUG-hW0A",
+    "snippet": {
+      "publishedAt": "2026-09-06T00:27:30Z",
+      "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+      "title": "Invisible life is still everywhere",
+      "description": "What else is still invisible? You meet that victory every time soap meets your hands.\n\nWatch the full film — How Did We Discover Germs?:\nhttps://www.youtube.com/watch?v=_C92tIJCk8A\n\n#Germs #InvisibleLife #HistoryOfScience #Science #Shorts",
+      "thumbnails": {
+        "default": {
+          "url": "https://i9.ytimg.com/vi/93fPUG-hW0A/default.jpg?sqp=COSBx9YG&rs=AOn4CLCfqo2r1cYAQkW6bTb_ScBpClg7xw",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i9.ytimg.com/vi/93fPUG-hW0A/mqdefault.jpg?sqp=COSBx9YG&rs=AOn4CLAAj47HakdmO36g_LbqKKRPrqbdtw",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i9.ytimg.com/vi/93fPUG-hW0A/hqdefault.jpg?sqp=COSBx9YG&rs=AOn4CLAjBTRouHzNW4CjY0mQcqy15KeDZQ",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i9.ytimg.com/vi/93fPUG-hW0A/sddefault.jpg?sqp=COSBx9YG&rs=AOn4CLAAHSW151yI39z5mKpxa1fVehJceg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i9.ytimg.com/vi/93fPUG-hW0A/maxresdefault.jpg?sqp=COSBx9YG&rs=AOn4CLD7bXZQ-wrPYIpVIB0doXTyuSJcng",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "History of Science",
+      "tags": [
+        "germ theory",
+        "history of medicine",
+        "history of science",
+        "invisible life",
+        "microbes"
+      ],
+      "categoryId": "27",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en-GB",
+      "localized": {
+        "title": "Invisible life is still everywhere",
+        "description": "What else is still invisible? You meet that victory every time soap meets your hands.\n\nWatch the full film — How Did We Discover Germs?:\nhttps://www.youtube.com/watch?v=_C92tIJCk8A\n\n#Germs #InvisibleLife #HistoryOfScience #Science #Shorts"
+      },
+      "defaultAudioLanguage": "en-GB"
+    },
+    "contentDetails": {
+      "duration": "PT24S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular",
+      "hasCustomThumbnail": true
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "private",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": false,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "qPNPqQ3KBHXZYIov8jjQsnmjemY",
+    "id": "8_Edn_HCi1s",
+    "snippet": {
+      "publishedAt": "2026-09-06T00:15:21Z",
+      "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+      "title": "Germs hitch a ride on you",
+      "description": "You are the vector — germs hitch a ride on hands, cloth, and breath.\n\nWatch the full film — How Did We Discover Germs?:\nhttps://www.youtube.com/watch?v=_C92tIJCk8A\n\n#Germs #Handwashing #GermTheory #HistoryOfScience #Shorts",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/8_Edn_HCi1s/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/8_Edn_HCi1s/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/8_Edn_HCi1s/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/8_Edn_HCi1s/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/8_Edn_HCi1s/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "History of Science",
+      "tags": [
+        "contagion",
+        "germs",
+        "history of medicine",
+        "history of science",
+        "wards"
+      ],
+      "categoryId": "27",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en-GB",
+      "localized": {
+        "title": "Germs hitch a ride on you",
+        "description": "You are the vector — germs hitch a ride on hands, cloth, and breath.\n\nWatch the full film — How Did We Discover Germs?:\nhttps://www.youtube.com/watch?v=_C92tIJCk8A\n\n#Germs #Handwashing #GermTheory #HistoryOfScience #Shorts"
+      },
+      "defaultAudioLanguage": "en-GB"
+    },
+    "contentDetails": {
+      "duration": "PT25S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular",
+      "hasCustomThumbnail": true
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "public",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": false,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "b8PQJYI1flb7ARwZvOgPA5qZT2A",
+    "id": "iqToagXnjX0",
+    "snippet": {
+      "publishedAt": "2026-09-06T00:14:42Z",
+      "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+      "title": "Microbes in a drop of pond water",
+      "description": "A drop of pond water is not empty — under a microscope it is full of microbes.\n\nWatch the full film — How Did We Discover Germs?:\nhttps://www.youtube.com/watch?v=_C92tIJCk8A\n\n#Microbes #PondWater #GermTheory #HistoryOfScience #Shorts",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/iqToagXnjX0/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/iqToagXnjX0/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/iqToagXnjX0/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/iqToagXnjX0/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/iqToagXnjX0/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "History of Science",
+      "tags": [
+        "history of medicine",
+        "history of science",
+        "microbes",
+        "microscope",
+        "pond water"
+      ],
+      "categoryId": "27",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en-GB",
+      "localized": {
+        "title": "Microbes in a drop of pond water",
+        "description": "A drop of pond water is not empty — under a microscope it is full of microbes.\n\nWatch the full film — How Did We Discover Germs?:\nhttps://www.youtube.com/watch?v=_C92tIJCk8A\n\n#Microbes #PondWater #GermTheory #HistoryOfScience #Shorts"
+      },
+      "defaultAudioLanguage": "en-GB"
+    },
+    "contentDetails": {
+      "duration": "PT25S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular",
+      "hasCustomThumbnail": true
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "public",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": false,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "gYY710TE6UaAo4b5Iow-M7e6Luw",
+    "id": "H1y0DXFVmw8",
+    "snippet": {
+      "publishedAt": "2026-09-06T00:14:03Z",
+      "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+      "title": "Germs don't cast a shadow",
+      "description": "Germs don't cast a shadow — doctors once blamed bad air, not living microbes.\n\nWatch the full film — How Did We Discover Germs?:\nhttps://www.youtube.com/watch?v=_C92tIJCk8A\n\n#Germs #GermTheory #HistoryOfScience #Science #Shorts",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/H1y0DXFVmw8/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/H1y0DXFVmw8/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/H1y0DXFVmw8/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/H1y0DXFVmw8/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/H1y0DXFVmw8/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "History of Science",
+      "tags": [
+        "germs",
+        "history of medicine",
+        "history of science",
+        "microbes",
+        "shadow"
+      ],
+      "categoryId": "27",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en-GB",
+      "localized": {
+        "title": "Germs don't cast a shadow",
+        "description": "Germs don't cast a shadow — doctors once blamed bad air, not living microbes.\n\nWatch the full film — How Did We Discover Germs?:\nhttps://www.youtube.com/watch?v=_C92tIJCk8A\n\n#Germs #GermTheory #HistoryOfScience #Science #Shorts"
+      },
+      "defaultAudioLanguage": "en-GB"
+    },
+    "contentDetails": {
+      "duration": "PT25S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular",
+      "hasCustomThumbnail": true
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "public",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": false,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false
+    }
+  },
+  {
+    "kind": "youtube#video",
+    "etag": "q7BnSEFtlIPqYIqCpjAToIyVvAw",
+    "id": "_C92tIJCk8A",
+    "snippet": {
+      "publishedAt": "2026-09-03T17:00:06Z",
+      "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+      "title": "How Did We Discover Germs?",
+      "description": "Disease was once blamed on bad air. Germ theory, and Pasteur's swan-neck flask, proved the air carried living things that get into wounds.\n\nThis film is how we found that out: a death ward, a drop of pond water, Semmelweis’s hands, Pasteur’s swan-neck flask, and Lister’s spray.\n\nSo how do you fight an enemy that does not cast a shadow?\n\n0:00 A death ward\n1:20 A drop of pond water\n2:37 Living seeds\n3:48 A swan-neck flask\n5:10 Clean hands, clean cuts\n\nHistory of Science · Discovery. Wonder. Proof. · @HistoryOfScienceYT\n\n#HistoryOfScience #GermTheory #Science",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/_C92tIJCk8A/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/_C92tIJCk8A/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/_C92tIJCk8A/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/_C92tIJCk8A/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/_C92tIJCk8A/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        },
+        "fhd": {
+          "url": "https://i.ytimg.com/vi/_C92tIJCk8A/fhddefault.jpg",
+          "width": 1920,
+          "height": 1080
+        }
+      },
+      "channelTitle": "History of Science",
+      "tags": [
+        "germs",
+        "germ theory",
+        "louis pasteur",
+        "joseph lister",
+        "microbes",
+        "history of medicine",
+        "history of science"
+      ],
+      "categoryId": "27",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en-GB",
+      "localized": {
+        "title": "How Did We Discover Germs?",
+        "description": "Disease was once blamed on bad air. Germ theory, and Pasteur's swan-neck flask, proved the air carried living things that get into wounds.\n\nThis film is how we found that out: a death ward, a drop of pond water, Semmelweis’s hands, Pasteur’s swan-neck flask, and Lister’s spray.\n\nSo how do you fight an enemy that does not cast a shadow?\n\n0:00 A death ward\n1:20 A drop of pond water\n2:37 Living seeds\n3:48 A swan-neck flask\n5:10 Clean hands, clean cuts\n\nHistory of Science · Discovery. Wonder. Proof. · @HistoryOfScienceYT\n\n#HistoryOfScience #GermTheory #Science"
+      },
+      "defaultAudioLanguage": "en-GB"
+    },
+    "contentDetails": {
+      "duration": "PT6M5S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "true",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular",
+      "hasCustomThumbnail": false
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "public",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": false,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false
+    }
+  }
+]

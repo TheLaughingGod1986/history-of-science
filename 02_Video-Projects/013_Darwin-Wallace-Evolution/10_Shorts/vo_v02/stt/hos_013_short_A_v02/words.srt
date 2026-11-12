@@ -1,0 +1,39 @@
+1
+00:00:00,120 --> 00:00:02,700
+How did Charles Darwin discover evolution?
+
+2
+00:00:03,460 --> 00:00:07,400
+Not on a Galapagos beach. In 1835, he
+
+3
+00:00:07,420 --> 00:00:09,440
+thought the birds there were blackbirds
+
+4
+00:00:09,480 --> 00:00:12,120
+and wrens, and mostly forgot to label
+
+5
+00:00:12,220 --> 00:00:13,800
+which island each came from.
+
+6
+00:00:14,760 --> 00:00:17,360
+Only back in London did John Gould show
+
+7
+00:00:17,420 --> 00:00:19,840
+him they were all finches with different
+
+8
+00:00:19,880 --> 00:00:20,380
+beaks.
+
+9
+00:00:21,280 --> 00:00:24,200
+Months later, Darwin drew a branching tree
+
+10
+00:00:24,300 --> 00:00:26,120
+and wrote, "I think..."

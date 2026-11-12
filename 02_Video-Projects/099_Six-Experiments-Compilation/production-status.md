@@ -75,3 +75,18 @@ What did not save, so it is not a pass:
 - Cards. The editor was empty and nothing was saved. The two cards not written are 00:17:57 *How Did We Discover Germs?* (`_C92tIJCk8A`) and 00:24:14 *How Did We Discover the Periodic Table?* (`AL_-qlWko_g`).
 
 Schedule left in place: 10 Dec 2026, 18:00, Premiere off. Screenshots and the SHA manifest are in `J2199_READBACK_2026-11-06.json` and on the desk at `/Users/benjaminoats/_desk/jobs/J2199/evidence`. This note is evidence for Chief. It is not a film approval.
+
+## J2470 search-led title (rule 26) — 10 November 2026
+
+Claude Code worker, not acting Chief. Acting Chief (Claude) approved the title in J2470 from `orbit-with-ben` `05_Analytics/tests/RULE_26_TITLE_PASS_2026-11.md` section 7 (J2462).
+
+| Field | Before | After |
+|---|---|---|
+| Title | How Did Experiments Explain Blood, Germs and Atoms? | Experiments That Changed the World (Blood, Germs and Atoms) |
+| Description line 1 | How did experiments explain blood, germs and atoms? Six discovery stories follow the evidence across almost three hundred years, from a tied arm and a willow tree to a swan-neck flask, the periodic table, X-rays and gold foil. | Six experiments that changed the world: how did we prove how blood circulates, what trees are made of, and what hides in germs, X-rays and atoms? |
+
+Changed at `2026-11-10T01:44:22.051Z` on `uAomPaOBrM8` through the Data API (snippet only; status not sent). No Test and Compare was set: Studio showed a plain title field.
+
+Read-back, API and History of Science Studio (CDP 9460, channel `UCXp7HkBIl1LgaznXuZHJyRg`, after a reload): new title, new line 1, Visibility Scheduled, still private for `2026-12-10T18:00:00Z` (Thu 10 Dec 2026 18:00 London). The rest of the description and the tags are byte-identical; thumbnail, end screen, playlist and schedule were not touched. The live description is in `description_live_J2470.txt`; the full read-back is in `J2470_RETITLE_READBACK_2026-11-10.json`.
+
+Rule 26 test-log row (read out 7 Dec from impressions before and after): HOS 099 `uAomPaOBrM8` | old: How Did Experiments Explain Blood, Germs and Atoms? | new: Experiments That Changed the World (Blood, Germs and Atoms) | changed 2026-11-10T01:44:22.051Z.

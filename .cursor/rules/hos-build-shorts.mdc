@@ -21,7 +21,7 @@ Full rules: `HOS_STRATEGY.md` → *Short hook* and *The first two seconds*; `STU
   6. **never the Explorer at frame 0.**
 - **On screen:** the promoted film's exact live title at 9–14 s. The last 4 s loop to the opening picture. Captions throughout.
 - **Teach on screen (Ben, 11 Oct 2026):** at most one overlay (fact card, date stamp or one-number scale), only where it helps. Never in the first 2 s or over the 9–14 s title; inside the 16:9 centre band; no added words or seconds. AGENTS.md → *Teach on screen*.
-- **Polish pass (Astrum ref, 11 Oct 2026):** house SFX kit only (`sfx_kit.py make --house hos`), `sfx_kit.py level` PASS; one bed (R8); no credit lines, no extra overlay. AGENTS.md → *Polish pass*.
+- **Polish pass (Astrum ref, 11 Oct 2026):** house SFX kit only (`sfx_kit.py make --house hos`), `sfx_kit.py level` PASS; one bed (R8); no credit lines, no extra overlay. `studio/RULES.md` → *Polish pass*.
 - **Ending (R7):** the last card also shows that long's exact live title, and the Related video points at that long's id. Never a generic "watch the full film".
 - **Music bed (R8):** a music bed for the full length, under the VO and through the loop hold. A VO-only Short fails the ship gate.
 - **Schedule:** one Short a day at most, never before its long is public; each Short in a week promotes a different film. **Topic fatigue (R2):** at most 6 in a row on one topic; stop after 2 not-fed in a row, then a 2-week break.
@@ -65,3 +65,19 @@ The swipe happens before line 2, so these rules are about **0–1.5 s**. The ful
 6. **Measure:** the daily `REPORT.md` and the weekly audit (4d) grade average viewed LOOP (≥100%), PASS (≥70%), WATCH (50–69.9%) or MISS (<50%), next to the stayed-to-watch grade.
 
 Full evidence and the Orbit copy: OWB repo `.cursor/rules/orbit-build-shorts.mdc` → *70% average viewed*.
+
+## Anomaly-first open — HOS-2026-11-E1 (Chief h47, 5 Nov 2026)
+
+**Applies to the six new Test B Shorts on films 008, 009 and 010 only.** It does not change 007 or anything already voiced, and it does not change Orbit. `gate_shorts_open.py check` turns these on by itself for a HOS path under `008_`, `009_` or `010_`. `--experiment off` skips them. `--experiment hos-2026-11-e1` forces them.
+
+These sit on top of the 60% and 70% rules above. Where a number here is tighter, this experiment wins for those six Shorts.
+
+1. **Open on the contradiction.** From 0.0–2.0 s the picture is the subject, already moving, and spoken words 1–4 are the physical contradiction or question. Word 4 ends by 2.0 s. Ban an "In \<year\>," opening and a bare biographer-name opening before 0:03 ("Benjamin Franklin flew…"). A name inside the claim is fine ("Franklin's kite was never hit"). "In one minute" / "in one second" is the J1004 scale line, not a year dateline.
+2. **Cuts.** Shot 1 cuts to shot 2 between 1.8 and 2.5 s. Shot 2 cuts to shot 3 before 4.5 s. No still or single plate is held over 3.5 s in the first 8 s. No VO pause over 0.25 s from 0–5 s.
+3. **Length and ending.** Duration 22–25 s. The payoff starts at or after 70% of the runtime (`payoff_start_s` in the Short's meta). The loop tail is under 1.2 s.
+
+**J1004 still locks the words** (HOS PR #366): atempo at most 1.06, and zero words changed. 010 Short A's sentence 1 may keep running to 2.85 s (Option A1). The picture still cuts at 1.8–2.5 s while that sentence finishes. 009 Short B keeps both "one minute" and "one second". Assembly does not rewrite a locked line. A line that is a year dateline or a bare name open fails this gate and goes back to the script lane.
+
+**Read (not a ship gate).** Mature means at least 48 h and at least 100 Studio views. Pass: stayed-to-watch mean at least 50%, and at least two of the six at least 60%, with average percentage viewed at least 75%. Stop if the first three mature Shorts are under 65% average viewed and under 40% stayed. Readout 3 Dec 2026. The full row is OWB `05_Analytics/LEARNINGS.md` #23 and `05_Analytics/tests/SHORTS_TESTS.md` → *HOS-2026-11-E1*.
+
+**Sidecar the gate reads:** word timestamps (`start`/`end` on words 1–4), `payoff_start_s`, and the VO stem or those word gaps for the 0–5 s pause check. The spoken open is taken from the words, `--spoken`, or meta `spoken`.

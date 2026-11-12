@@ -1,0 +1,45 @@
+{
+  "job": "J2470",
+  "videoId": "ETynHpIYLeY",
+  "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+  "changedAt": "2026-11-10T05:02:49.550Z",
+  "authorisation": "Acting Chief (Claude), 10 Nov 2026 04:00Z, job J2470 option (c): description line 1 only; J0959 title test left exactly as set",
+  "before": {
+    "title": "Why Vaccines Are Named After a Cow",
+    "descriptionLine1": "Every vaccine is named after a cow. How did the Edward Jenner cowpox vaccine conquer the deadly smallpox virus?",
+    "privacy": "private",
+    "publishAt": "2026-11-12T18:00:00Z",
+    "descriptionSha256": "5becb434a72330498561a29ef08f8fc74c6b8dc2325e2c87b6031e9ce4f0e2d0"
+  },
+  "afterApi": {
+    "readAt": "2026-11-10T05:04Z (the read inside the write call at 05:02:49Z still returned the old line 1; a second read about a minute later returned the new one)",
+    "title": "Why Vaccines Are Named After a Cow",
+    "descriptionLine1": "How was the first vaccine made? Every vaccine is named after a cow — here is how the Edward Jenner cowpox vaccine conquered the smallpox virus.",
+    "restOfDescriptionUnchanged": true,
+    "tagsUnchanged": true,
+    "privacy": "private",
+    "publishAt": "2026-11-12T18:00:00Z",
+    "descriptionSha256": "4721ecd5976559544575443ecbdb3c612d53ce3a758927ae33d994075ba0886a"
+  },
+  "afterStudio": {
+    "cdp": 9460,
+    "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+    "url": "https://studio.youtube.com/video/ETynHpIYLeY/edit",
+    "titleBlock": "A/B testing titles\nIneligible\nWhy Vaccines Are Named After a Cow\nHow Was the First Vaccine Made?\nA/B testing\nEdit title",
+    "descriptionLine1": "How was the first vaccine made? Every vaccine is named after a cow — here is how the Edward Jenner cowpox vaccine conquered the smallpox virus.",
+    "visibility": "Scheduled",
+    "dialogs": "none shown; no test warning on the description save"
+  },
+  "notChanged": [
+    "title test arms A and B (J0959)",
+    "thumbnail",
+    "end screen",
+    "playlist",
+    "schedule",
+    "privacy",
+    "tags",
+    "rest of description"
+  ],
+  "notApplied": "Approved title 'How Was the First Vaccine Made? (And Why It's Named After a Cow)': Studio deletes the whole test if an arm is edited; that call is with Ben (Chief, 10 Nov 04:00Z).",
+  "gbp": 0
+}

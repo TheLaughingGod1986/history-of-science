@@ -1,0 +1,41 @@
+{
+  "note": "Chief 6801512032 confirms parent source 0\u20136.75 and next source from 0. Candidate only; assembler rechecks at splice.",
+  "frames": [
+    {
+      "source": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part04/raw/v01/05_minute_second_t1.mp4",
+      "source_time_s": 6.733333,
+      "label": "Before entry: parent source 6.733s",
+      "sha256": "7f56f05930cefc854aabde17cd204510771dfbaaa5faa2f6b410facebbd3cd66"
+    },
+    {
+      "source": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/code_graphics_v01/code_graphic_009_p4_05_minute_second.mp4",
+      "source_time_s": 0,
+      "label": "After entry: graphic f000",
+      "sha256": "e35f9a9879c8e590ec66853b85307999f39bfe30c67b9bed193ca224cab42da3"
+    },
+    {
+      "source": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/code_graphics_v01/code_graphic_009_p4_05_minute_second.mp4",
+      "source_time_s": 6.733333333333333,
+      "label": "Before 326.39: graphic f202",
+      "sha256": "e35f9a9879c8e590ec66853b85307999f39bfe30c67b9bed193ca224cab42da3"
+    },
+    {
+      "source": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/code_graphics_v01/code_graphic_009_p4_05_minute_second.mp4",
+      "source_time_s": 6.766666666666667,
+      "label": "After 326.39: graphic f203",
+      "sha256": "e35f9a9879c8e590ec66853b85307999f39bfe30c67b9bed193ca224cab42da3"
+    },
+    {
+      "source": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/code_graphics_v01/code_graphic_009_p4_05_minute_second.mp4",
+      "source_time_s": 13.5,
+      "label": "Before exit: graphic f405",
+      "sha256": "e35f9a9879c8e590ec66853b85307999f39bfe30c67b9bed193ca224cab42da3"
+    },
+    {
+      "source": "/Users/benjaminoats/YouTube/hos-009-gravity/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part04/raw/v01/06_pretty_nearly_t1.mp4",
+      "source_time_s": 0,
+      "label": "After exit: next KEEP source 0.000s",
+      "sha256": "af487165258059d44e1f3ad9682d80d50c2239882f5495c82d7907a3e98d47ad"
+    }
+  ]
+}

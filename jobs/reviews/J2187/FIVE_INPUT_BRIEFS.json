@@ -1,0 +1,120 @@
+{
+  "briefs": [
+    {
+      "input": "Short_B S02",
+      "required_usable_s": 3.38,
+      "reference": {
+        "path": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part03/refs/v01_vertex_stills/11_candle_tall_v01.jpg",
+        "sha256": "cd463298c822fd1d4ae77e104a7113d66ddbb802063717c2f316ffa563c5f41d",
+        "use": "read-only style/apparatus reference; not an approved start-frame for a contradictory action",
+        "visually_inspected_still": true
+      },
+      "reference_approval_basis": "Part03 11_candle_tall KEEP desk6102934743; Part04 05_bubbles_macro KEEP6137551906; Part04 04_sunny_window KEEP6131279209; these approve existing long look, not new output",
+      "reference_caveat": "Reference has multiple candles/open dome: style only, not literal start frame",
+      "prompt": "Premium HOS Animistry-class 3D cartoon, warm Georgian oak-and-glass natural-history room, finished tactile materials. One continuous real camera/object movement, modest camera drift, centred subject readable on a phone. No text, labels, digits, logos, subtitles, dialogue, narration, Explorer, robot, animal or modern apparatus. Silent picture. No still push, freeze, repeated frames or slow padding. Keep complete subject within portrait-safe centre throughout. One single lit wax candle already enclosed in a sealed transparent Priestley bell jar. No mint yet. Hold the visible flame burning inside the jar for the entire usable interval; the dying phase belongs to the next shot. No second candle, smoking dead stub or flame leaving frame.",
+      "route": "Flow Veo3.1 Quality, prospective only; native1080 route NOT VERIFIED",
+      "duration_setting_s": 8,
+      "outputs": 1,
+      "credits_per_take": 100,
+      "quality_reason": "Fragile candle light",
+      "existing_start_frame_ready": false,
+      "start_frame_issue": "Read-only style reference differs from required exact action; do not paint-patch, extract or mint a new frame under this job",
+      "source": null,
+      "source_sha256": null
+    },
+    {
+      "input": "Short_B S06",
+      "required_usable_s": 3.16,
+      "reference": {
+        "path": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part03/refs/v01_vertex_stills/11_candle_tall_v01.jpg",
+        "sha256": "cd463298c822fd1d4ae77e104a7113d66ddbb802063717c2f316ffa563c5f41d",
+        "use": "read-only style/apparatus reference; not an approved start-frame for a contradictory action",
+        "visually_inspected_still": true
+      },
+      "reference_approval_basis": "Part03 11_candle_tall KEEP desk6102934743; Part04 05_bubbles_macro KEEP6137551906; Part04 04_sunny_window KEEP6131279209; these approve existing long look, not new output",
+      "reference_caveat": "Reference has multiple candles/open dome: style only, not literal start frame",
+      "prompt": "Premium HOS Animistry-class 3D cartoon, warm Georgian oak-and-glass natural-history room, finished tactile materials. One continuous real camera/object movement, modest camera drift, centred subject readable on a phone. No text, labels, digits, logos, subtitles, dialogue, narration, Explorer, robot, animal or modern apparatus. Silent picture. No still push, freeze, repeated frames or slow padding. Keep complete subject within portrait-safe centre throughout. A new distinct close view of one candle burning bright and steady inside the sealed mint-restored Priestley bell jar, green mint sprig beside it. Match the jar and wooden tray from the reference, but flame must be inside sealed jar. No underwater leaves, gas-collection tube or second candle.",
+      "route": "Flow Veo3.1 Quality, prospective only; native1080 route NOT VERIFIED",
+      "duration_setting_s": 8,
+      "outputs": 1,
+      "credits_per_take": 100,
+      "quality_reason": "Fragile candle light",
+      "existing_start_frame_ready": false,
+      "start_frame_issue": "Read-only style reference differs from required exact action; do not paint-patch, extract or mint a new frame under this job",
+      "source": null,
+      "source_sha256": null
+    },
+    {
+      "input": "Short_C S01",
+      "required_usable_s": 3.56,
+      "reference": {
+        "path": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/refs/v02_flow_stills/05_bubbles_macro_t1.png",
+        "sha256": "fe17e1fa256ca830c0f916603b164218eb820e5af8d6bb5a82cba7b41d894952",
+        "use": "read-only style/apparatus reference; not an approved start-frame for a contradictory action",
+        "visually_inspected_still": true
+      },
+      "reference_approval_basis": "Part03 11_candle_tall KEEP desk6102934743; Part04 05_bubbles_macro KEEP6137551906; Part04 04_sunny_window KEEP6131279209; these approve existing long look, not new output",
+      "reference_caveat": "Macro has exaggerated glints: do not transfer glow/particles",
+      "prompt": "Premium HOS Animistry-class 3D cartoon, warm Georgian oak-and-glass natural-history room, finished tactile materials. One continuous real camera/object movement, modest camera drift, centred subject readable on a phone. No text, labels, digits, logos, subtitles, dialogue, narration, Explorer, robot, animal or modern apparatus. Silent picture. No still push, freeze, repeated frames or slow padding. Keep complete subject within portrait-safe centre throughout. Underwater macro of a fresh green leaf with small silver bubbles visibly detaching and rising in sunlight from the very first frame. Tiny moving water ripples, stable leaf identity. No magical glow, golden particles or visible chemistry. Reserve source 0-1s for terminal preroll, opening uses contiguous 1-3.56s with identical crop.",
+      "route": "Flow Veo3.1 Quality, prospective only; native1080 route NOT VERIFIED",
+      "duration_setting_s": 8,
+      "outputs": 1,
+      "credits_per_take": 100,
+      "quality_reason": "Bubbles/sunlit leaf are hero teaching imagery, not low-risk motion garnish; price Quality conservatively",
+      "existing_start_frame_ready": false,
+      "start_frame_issue": "Read-only style reference differs from required exact action; do not paint-patch, extract or mint a new frame under this job",
+      "source": null,
+      "source_sha256": null
+    },
+    {
+      "input": "Short_C S07",
+      "required_usable_s": 2.8,
+      "reference": {
+        "path": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/refs/v01_vertex_stills/04_sunny_window_v01.jpg",
+        "sha256": "cdb8b421fa121454bb62d9b6dfc1c782c7c95b1634d80c856bb95555cfdc4b45",
+        "use": "read-only style/apparatus reference; not an approved start-frame for a contradictory action",
+        "visually_inspected_still": true
+      },
+      "reference_approval_basis": "Part03 11_candle_tall KEEP desk6102934743; Part04 05_bubbles_macro KEEP6137551906; Part04 04_sunny_window KEEP6131279209; these approve existing long look, not new output",
+      "reference_caveat": "Use jar/material continuity; no named-person likeness needed",
+      "prompt": "Premium HOS Animistry-class 3D cartoon, warm Georgian oak-and-glass natural-history room, finished tactile materials. One continuous real camera/object movement, modest camera drift, centred subject readable on a phone. No text, labels, digits, logos, subtitles, dialogue, narration, Explorer, robot, animal or modern apparatus. Silent picture. No still push, freeze, repeated frames or slow padding. Keep complete subject within portrait-safe centre throughout. Close on one clear water jar with submerged fresh green leaf. Hands slide the jar from the edge of shade back into ordinary sunlight; small silver bubbles visibly resume and rise. Complete return and visible resumption within the first 2.8 seconds. Keep jar, water and leaf fully visible throughout. No dry potted vine, shutter-only view or continued stopped bubbles.",
+      "route": "Flow Veo3.1 Quality, prospective only; native1080 route NOT VERIFIED",
+      "duration_setting_s": 8,
+      "outputs": 1,
+      "credits_per_take": 100,
+      "quality_reason": "Bubbles/sunlit leaf are hero teaching imagery, not low-risk motion garnish; price Quality conservatively",
+      "existing_start_frame_ready": false,
+      "start_frame_issue": "Read-only style reference differs from required exact action; do not paint-patch, extract or mint a new frame under this job",
+      "source": null,
+      "source_sha256": null
+    },
+    {
+      "input": "Short_C S08",
+      "required_usable_s": 2.88,
+      "reference": {
+        "path": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/04_Generated-Clips/part04/refs/v02_flow_stills/05_bubbles_macro_t1.png",
+        "sha256": "fe17e1fa256ca830c0f916603b164218eb820e5af8d6bb5a82cba7b41d894952",
+        "use": "read-only style/apparatus reference; not an approved start-frame for a contradictory action",
+        "visually_inspected_still": true
+      },
+      "reference_approval_basis": "Part03 11_candle_tall KEEP desk6102934743; Part04 05_bubbles_macro KEEP6137551906; Part04 04_sunny_window KEEP6131279209; these approve existing long look, not new output",
+      "reference_caveat": "Macro has exaggerated glints: do not transfer glow/particles",
+      "prompt": "Premium HOS Animistry-class 3D cartoon, warm Georgian oak-and-glass natural-history room, finished tactile materials. One continuous real camera/object movement, modest camera drift, centred subject readable on a phone. No text, labels, digits, logos, subtitles, dialogue, narration, Explorer, robot, animal or modern apparatus. Silent picture. No still push, freeze, repeated frames or slow padding. Keep complete subject within portrait-safe centre throughout. A distinct close view of a green leaf underwater in ordinary sunlight, gently moving water and small bubbles rising from the leaf as a closing illustration. Different camera position and composition from opening macro and return-to-sun shot. No magic glow, cell cutaway, golden specks or fabricated visible chemistry.",
+      "route": "Flow Veo3.1 Quality, prospective only; native1080 route NOT VERIFIED",
+      "duration_setting_s": 8,
+      "outputs": 1,
+      "credits_per_take": 100,
+      "quality_reason": "Bubbles/sunlit leaf are hero teaching imagery, not low-risk motion garnish; price Quality conservatively",
+      "existing_start_frame_ready": false,
+      "start_frame_issue": "Read-only style reference differs from required exact action; do not paint-patch, extract or mint a new frame under this job",
+      "source": null,
+      "source_sha256": null
+    }
+  ],
+  "minimum_for_this_Quality_scope": 500,
+  "two_takes_each_upper_estimate": 1000,
+  "existing_ceiling": 200,
+  "authorized_spend": 0,
+  "fast_counterfactual_lower_bound": 230,
+  "scope_decision": "Later Chief must separately choose viable route and full cap; no piecemeal generation."
+}

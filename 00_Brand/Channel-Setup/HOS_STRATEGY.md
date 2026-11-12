@@ -27,21 +27,24 @@ Inspiration: [Animistry](https://www.youtube.com/@ytAnimistry) for the look and 
 
 ## The week
 
-One long and three Shorts (two from 007 on: test B, search-titled; see AGENTS.md). Never more than one Short a day.
+**Ben, 7 Nov 2026:** one long and **four** Shorts a week (was three; two from 007 on stay test B, search-titled; see AGENTS.md). Never more than one Short a day.
 
 | Day (UK) | Type | Job |
 |---|---|---|
 | Thu 18:00 | Long, 7–9 min | The new film, **normal publish, not a Premiere** |
+| Sat 11:30 | Short | Go-public-day Short that promotes the new long (see note) |
 | Fri 11:30 | Short | Promotes the new long (now public, so Related can point at it) |
 | Sun 11:30 | Short | Promotes a different film already out |
 | Tue 11:30 | Short | Promotes a third film |
 
+- **Note (Ben, 7 Nov 2026):** Thursday 11:30 was preferred for the go-public-day Short (same idea as Orbit's Short on the long's day), but it would publish before the Thu 18:00 long and break "never a Short before its long is public". Saturday 11:30 takes that slot — the next free day that is not already a Short day.
 - A Short never goes out before the long it promotes is public.
-- Each Short points at the film it is about, through Studio Related. The week is spread across films, not five Shorts on one film in five days.
+- Fill calendar gaps only with ready approved cuts, not placeholders to hit the number.
+- Each Short points at the film it is about, through Studio Related. The week is spread across films, not a burst of Shorts on one film in consecutive days.
 - Films that already won stay in the rotation.
 - **Topic fatigue (5 Oct 2026, R2):** at most 6 Shorts in a row on one topic. Stop a topic after **2 not-fed Shorts in a row** (see *Measure*), then give it a 2-week break.
 - No Premieres until subscribers are in the hundreds. All three HOS longs premiered; Germs has 4 views after three weeks. Orbit saw 0 views in a Premiere's first hour.
-- A finished film beats a rushed one. If a film isn't ready by Thursday, the week runs on three back-catalogue Shorts.
+- A finished film beats a rushed one. If a film isn't ready by Thursday, fill the week only with ready approved back-catalogue Shorts — never placeholders.
 
 ## Short hook (22–27 s)
 
@@ -64,10 +67,15 @@ Your two best Shorts already do this: *Microbes in a drop of pond water* (110 vi
 
 Then one hard fact. The promoted film's exact live title is on screen at 9–14 s. The last 4 s return to the opening picture so the Short loops. Captions all the way through.
 
+### Anomaly-first open (experiment HOS-2026-11-E1, Chief h47, 5 Nov 2026)
+
+The six new Test B Shorts on films 008, 009 and 010 only. Assemblers follow `.cursor/rules/hos-build-shorts.mdc` → *Anomaly-first open*. In short: words 1–4 are the physical contradiction by 2.0 s over subject motion already running; no "In \<year\>," and no bare biographer-name opening; cuts at 1.8–2.5 s and again before 4.5 s; no plate held over 3.5 s in the first 8 s; no VO pause over 0.25 s in 0–5 s; 22–25 s; payoff start at or after 70% of the runtime; loop tail under 1.2 s. J1004 (PR #366) still locks the words, including 009 Short B's "one minute" / "one second" and 010 Short A's sentence ending by 2.85 s. `gate_shorts_open.py` checks this on those films. Readout 3 Dec 2026, in the OWB repo `05_Analytics/tests/SHORTS_TESTS.md`.
+
 ## Long hook
 
 - **The first 3 s of picture are the story itself.** No logo, no title card, no bumper.
 - **Sentence one is the promise.** Name the payoff within 30 s: the belief, the moment it broke, and what it made possible.
+- **008–010 opening (experiment HOS-2026-11-E2, Chief h47, 5 Nov 2026):** assemblers follow `studio/RULES.md` → *Teach on screen* → *Proof-first first 30 seconds*. In short: the first-minute milestones stay; 0:00–0:30 cuts under 4.5 s with at least 7 moving plates; 0:05–0:15 is the apparatus or the physical proof; the first animated DATA+SCALE graphic is between 0:25 and 0:40. No remint and no VO rewrite. Readouts 3 Dec 2026 and 3 Jan 2027, in the Orbit repo `05_Analytics/tests/HOS_LONG_TESTS.md`.
 - **5 acts, cause and effect.** This happened, but, therefore. Each act teaches one idea a newcomer can say out loud afterwards.
 - **The out is the cream end card** (`STUDIO_PLAYBOOK.md` §7). The last spoken line hands off to the next film. No "thanks for watching".
 

@@ -1,0 +1,41 @@
+{
+  "file": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/10_Shorts/vo_v02/hos_009_short_A_v02.mp3",
+  "part": null,
+  "fails": [],
+  "warns": [
+    "replace at ~0:05.76: script 'sideways about a kilometre and drops a' / heard 'sideways about a kilometer and drops a' — sounds alike (likely the transcriber); listen",
+    "replace at ~0:22.94: script 'falling and missing for ever' / heard 'falling and missing forever' — sounds alike (likely the transcriber); listen"
+  ],
+  "duration_s": 24.32,
+  "duration": "0:24.32",
+  "mean_db": -23.2,
+  "peak_db": -4.1,
+  "pauses_over_1s": [
+    [
+      13.74,
+      1.34
+    ]
+  ],
+  "asr": "faster-whisper small.en",
+  "script_words": 57,
+  "heard_words": 56,
+  "wpm": 146,
+  "word_diffs": [
+    {
+      "at": "0:05.76",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "sideways about a kilometre and drops a",
+      "heard": "sideways about a kilometer and drops a"
+    },
+    {
+      "at": "0:22.94",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "falling and missing for ever",
+      "heard": "falling and missing forever"
+    }
+  ],
+  "first_minute": {},
+  "verdict": "PASS"
+}

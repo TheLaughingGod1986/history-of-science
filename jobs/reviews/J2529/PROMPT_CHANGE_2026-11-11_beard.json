@@ -1,0 +1,73 @@
+{
+  "job": "J2529",
+  "film": "HOS:013",
+  "date": "2026-11-11",
+  "by": "claude (acting Chief, queue side)",
+  "ruling": [
+    "history-of-science#180 comment 6786709657, item 1"
+  ],
+  "follows": "jobs/reviews/J2529/PROMPT_CHANGE_2026-11-11.json",
+  "why": "With the name out of the prompt, the description alone carries the likeness. The rows set in 1858 and 1859 showed the naturalist bearded. Portraits from those years show him clean-shaven with long side whiskers; the beard came in 1862. The Chief ruled: clean-shaven with long side whiskers, greying, about 49 to 50.",
+  "rows_changed": 4,
+  "rows_total": 71,
+  "rows": [
+    {
+      "row_id": "P1:09_wallace_hut_split",
+      "old": "Premium Animistry-class 3D cartoon. Split composition: on the left, a 49-year-old bearded English naturalist in his Kent study reads a foreign manuscript; on the right, a 35-year-old bearded field naturalist wearing round wire-rimmed spectacles writes by oil lamp in a rain-lashed bamboo hut. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "new": "Premium Animistry-class 3D cartoon. Split composition: on the left, a 49-year-old English naturalist, clean-shaven with long greying side whiskers, in his Kent study reads a foreign manuscript; on the right, a 35-year-old bearded field naturalist wearing round wire-rimmed spectacles writes by oil lamp in a rain-lashed bamboo hut. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit."
+    },
+    {
+      "row_id": "P4:08_midpoint_twist_packet",
+      "old": "Premium Animistry-class 3D cartoon. Down House study with a low hearth glow: a 49-year-old bearded English naturalist holds the opened foreign packet near the fireplace grate, pauses, and pulls it firmly back to his desk. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "new": "Premium Animistry-class 3D cartoon. Down House study with a low hearth glow: a 49-year-old English naturalist, clean-shaven with long greying side whiskers, holds the opened foreign packet near the fireplace grate, pauses, and pulls it firmly back to his desk. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit."
+    },
+    {
+      "row_id": "P4:09a_darwin_reads_wallace",
+      "old": "Premium Animistry-class 3D cartoon. Down House study, 18 June 1858: a 49-year-old bearded English naturalist stands by the window lowering the foreign manuscript pages in shock. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "new": "Premium Animistry-class 3D cartoon. Down House study, 18 June 1858: a 49-year-old English naturalist, clean-shaven with long greying side whiskers, stands by the window lowering the foreign manuscript pages in shock. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit."
+    },
+    {
+      "row_id": "P5:05a_darwin_writes_origin",
+      "old": "Premium Animistry-class 3D cartoon. Down House study, 1858–1859: a bearded English naturalist writes page after page at his mahogany desk as light shifts across the window, stacking a thick manuscript. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "new": "Premium Animistry-class 3D cartoon. Down House study, 1858–1859: an English naturalist of about fifty, clean-shaven with long greying side whiskers, writes page after page at his mahogany desk as light shifts across the window, stacking a thick manuscript. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit."
+    }
+  ],
+  "boards": {
+    "1": {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/parts/part-01_plates_v01.json",
+      "sha256_old": "3b046ed7891f396a903d239a39751b56991cfad823fbdf9c6937df062bf0b20c",
+      "sha256_new": "27ece5b9d5d137b78023e34fafe9e8f6ca95b56836e55c2c1c7762e72f665a12"
+    },
+    "2": {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/parts/part-02_plates_v01.json",
+      "sha256_old": "b7307c77d7122a7e5b4b9877a834b6bc6dc6d42647aae3d57b776860d7401a87",
+      "sha256_new": "b7307c77d7122a7e5b4b9877a834b6bc6dc6d42647aae3d57b776860d7401a87"
+    },
+    "3": {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/parts/part-03_plates_v01.json",
+      "sha256_old": "97d5a73481549082bc9152981d2ec893ac9ff98a36463c80c2d9bb8a2801a94d",
+      "sha256_new": "97d5a73481549082bc9152981d2ec893ac9ff98a36463c80c2d9bb8a2801a94d"
+    },
+    "4": {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/parts/part-04_plates_v01.json",
+      "sha256_old": "0f85689945dc9dd8a1f29e3d96514b64dbb25bb186d6ff5eab3dad8919f370f0",
+      "sha256_new": "2d42379e246e27ed9f9eca8b9ed3729cf6804be967f7c408dbd110f4e6cb820c"
+    },
+    "5": {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/parts/part-05_plates_v01.json",
+      "sha256_old": "02ffb89ef5f52af50bbec460cbd1a1d86dc3c355da2f6901b3b2f9e459c2effa",
+      "sha256_new": "47811359cc00e72ac7d395b56553af7c587d3f8aad73dcc01dad1f70fffad82a"
+    },
+    "6": {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/parts/part-06_plates_v01.json",
+      "sha256_old": "9e92eeb5d6fd91198a79a48e144124b2253078fa7e6239b9f78859b835d68703",
+      "sha256_new": "9e92eeb5d6fd91198a79a48e144124b2253078fa7e6239b9f78859b835d68703"
+    }
+  },
+  "left_as_it_is": {
+    "P1:09_wallace_hut_split, right half": "the field naturalist of 35 in the hut is the other man; photographs from his years in the islands show him bearded",
+    "P5:10_darwin_worried_shelf": "this row is set after 1866: the uncut journal on the shelf is the 1866 paper, and the narration says the problem worried him for the rest of his life. He was bearded from 1862, so the older bearded naturalist is right for it",
+    "P4:02, P4:04, P4:06a, P4:07a, P5:03b, P5:08b": "the field naturalist, bearded, as above"
+  },
+  "unchanged": "Everything else in each prompt, and every other row."
+}

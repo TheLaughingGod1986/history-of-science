@@ -1,0 +1,16 @@
+test_actual_start_and_gap_survive (__main__.PlannerTests.test_actual_start_and_gap_survive) ... ok
+test_decoder_failure_and_stderr_rejected (__main__.PlannerTests.test_decoder_failure_and_stderr_rejected) ... ok
+test_execution_is_unconditionally_refused (__main__.PlannerTests.test_execution_is_unconditionally_refused) ... ok
+test_explicit_missing_retake_has_no_fallback (__main__.PlannerTests.test_explicit_missing_retake_has_no_fallback) ... ok
+test_hash_size_missing_and_overwrite_refused (__main__.PlannerTests.test_hash_size_missing_and_overwrite_refused) ... ok
+test_manifest_safe_windows_and_missing_assets (__main__.PlannerTests.test_manifest_safe_windows_and_missing_assets) ... ok
+test_missing_timestamp_rejected (__main__.PlannerTests.test_missing_timestamp_rejected) ... ok
+test_nonmonotonic_rejected (__main__.PlannerTests.test_nonmonotonic_rejected) ... ok
+test_overlapping_or_unavailable_patch_refused (__main__.PlannerTests.test_overlapping_or_unavailable_patch_refused) ... ok
+test_short_decode_rejected (__main__.PlannerTests.test_short_decode_rejected) ... ok
+test_short_explicit_retake_refused (__main__.PlannerTests.test_short_explicit_retake_refused) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.035s
+
+OK

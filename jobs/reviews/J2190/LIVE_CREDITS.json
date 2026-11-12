@@ -1,0 +1,41 @@
+{
+  "at": "2026-11-05T06:38:14.428252+00:00",
+  "read_only": true,
+  "credit_rows": [
+    {
+      "name": "Developer Program monthly",
+      "status": "Available",
+      "remaining_gbp": "69.48",
+      "original_gbp": "75.39",
+      "scope": "All of Google Cloud Platform and Google Maps APIs",
+      "starts": "12 October 2026",
+      "expires": "12 October 2027"
+    },
+    {
+      "name": "Free Trial",
+      "status": "Used",
+      "remaining_gbp": "0.00"
+    },
+    {
+      "name": "Developer Program monthly (August)",
+      "status": "Used",
+      "remaining_gbp": "0.00"
+    },
+    {
+      "name": "Developer Program monthly (September)",
+      "status": "Used",
+      "remaining_gbp": "0.00"
+    },
+    {
+      "name": "Free Trial",
+      "status": "Expired",
+      "remaining_gbp": "225.63"
+    },
+    {
+      "name": "Developer Program monthly (August earlier)",
+      "status": "Expired",
+      "remaining_gbp": "9.62"
+    }
+  ],
+  "source": "Cloud Billing Credits, reused console tab"
+}

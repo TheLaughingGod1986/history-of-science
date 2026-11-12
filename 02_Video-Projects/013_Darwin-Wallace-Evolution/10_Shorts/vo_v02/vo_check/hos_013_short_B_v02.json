@@ -1,0 +1,31 @@
+{
+  "file": "02_Video-Projects/013_Darwin-Wallace-Evolution/10_Shorts/vo_v02/hos_013_short_B_v02.wav",
+  "part": null,
+  "fails": [],
+  "warns": [
+    "pace 143 wpm (< 145); expect a long film — see STUDIO_PLAYBOOK.md §4 speed",
+    "replace at ~0:11.42: script 'in and alfred russel wallace persuaded darwin' / heard 'in and alfred russell wallace persuaded darwin' — sounds alike (likely the transcriber); listen"
+  ],
+  "duration_s": 26.0,
+  "duration": "0:26.00",
+  "mean_db": -24.0,
+  "peak_db": -4.0,
+  "pauses_over_1s": [],
+  "asr": "faster-whisper small.en",
+  "script_words": 58,
+  "heard_words": 58,
+  "wpm": 143,
+  "word_diffs": [
+    {
+      "at": "0:11.42",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "in and alfred russel wallace persuaded darwin",
+      "heard": "in and alfred russell wallace persuaded darwin"
+    }
+  ],
+  "first_minute": {
+    "title_question": 0.0
+  },
+  "verdict": "PASS"
+}

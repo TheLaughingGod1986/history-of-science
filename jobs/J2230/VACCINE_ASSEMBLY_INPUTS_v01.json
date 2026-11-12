@@ -1,0 +1,73 @@
+{
+  "job": "J2230",
+  "source": "/Volumes/data/mac-mini-archive/hos-007-vaccine/master_v04_J0925/hos_007_master_v04.mp4",
+  "source_sha256": "c7f62adbb241bf3fbfaa3a17929f05768eedcf89044cb2cc5ebd2971c163e810",
+  "timing_source": "Locked master SRT; VO_RETIME_v01 locked word start for health; no obsolete character alignment",
+  "spend": 0,
+  "approval": "NONE",
+  "plans": [
+    {
+      "id": "variolation",
+      "title_draft": "What Was Variolation?",
+      "air_draft": "2026-11-25T11:30:00Z",
+      "intervals": [
+        [
+          67.66,
+          92.16
+        ]
+      ],
+      "text": "Doctors took a little matter from a smallpox sore and scratched it into a healthy person's arm. It usually gave a milder illness, and lifelong protection. It was called variolation. But some people died from it, and they could pass full smallpox on to others. So people faced a terrible choice. Risk the treatment, or wait for the monster to come.",
+      "word_count": 61,
+      "duration_s": 24.5,
+      "file": "/Users/benjaminoats/_desk/renders/J2230/vaccine_inputs_v01/variolation_assembly_input_v01.mp4",
+      "sha256": "52ec5638c6ffed3d38ac2b37477cd72fba80f93a116fcf0190bc3d4acb80efe8",
+      "decode": "PASS",
+      "status": "ASSEMBLY_INPUT_ONLY: not a finished Short; all Short gates and review pending",
+      "recommended_title": "What Is Variolation?",
+      "title_evidence": "Exact signed-out GB YouTube autocomplete hit on 2026-11-06; What Was Variolation? returned no suggestions."
+    },
+    {
+      "id": "eradication",
+      "title_draft": "How Was Smallpox Eradicated?",
+      "air_draft": "2026-11-28T11:30:00Z",
+      "intervals": [
+        [
+          450.93,
+          458.69
+        ],
+        [
+          434.95,
+          444.09
+        ],
+        [
+          444.75,
+          449.89
+        ]
+      ],
+      "text": "A disease that had killed hundreds of millions of people over the centuries had been wiped out, the first ever ended by humans. Health workers travelled to every country where smallpox still lived, vaccinating everyone around each new case, until there was nowhere left for it to go. On the eighth of May, nineteen eighty, the world's health leaders declared that smallpox was gone.",
+      "word_count": 64,
+      "duration_s": 22.04,
+      "file": "/Users/benjaminoats/_desk/renders/J2230/vaccine_inputs_v01/eradication_assembly_input_v01.mp4",
+      "sha256": "3f355fa39a9b4d63238a6a2e42fea62da3316775ded34f11c32d9e5209dd9d80",
+      "decode": "PASS",
+      "status": "ASSEMBLY_INPUT_ONLY: not a finished Short; all Short gates and review pending",
+      "opening_review": "FIX: first sentence says A disease rather than smallpox. This assembly input fails LEARNINGS rule 8 as a finished opening. Reorder locked words without new narration before final assembly."
+    }
+  ],
+  "remaining": [
+    "Check exact splice boundaries with current word ends; ASR may mis-tokenize dates",
+    "Signed-out autocomplete and duplicate/retirement check",
+    "Native-motion vertical picture edit, distinct frame 0, 4-second terminal loop",
+    "Hook, word captions, exact live long title at 9-14 seconds and ending",
+    "Separate stems and current loudness/music/SFX/picture/polish/open gates",
+    "Independent review and durable verified final copies before awaits"
+  ],
+  "long_status_check": {
+    "snapshot": "OWB 05_Analytics/hos/snapshots/2026-11-06.json",
+    "id": "ETynHpIYLeY",
+    "privacy": "private",
+    "publishAt": "2026-11-12T18:00:00Z",
+    "title": "Why Vaccines Are Named After a Cow",
+    "note": "Brief says already public, but latest snapshot says scheduled. Recheck actual public state before Short scheduling."
+  }
+}

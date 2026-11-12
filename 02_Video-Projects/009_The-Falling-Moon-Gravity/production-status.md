@@ -29,7 +29,7 @@
 
 - **Authority:** Acting Chief (Claude) price pass J0863 PASS and queue job `J1192`. £0 cash spend, no ElevenLabs, no upload.
 - **Live Flow gate & spend:**
-  - Start live Flow read: `18,550` credits (`benoats@googlemail.com`, after J1191 008 completion), logged via `ai_spend.py`.
+  - Start live Flow read: `18,550` credits (`[email redacted]`, after J1191 008 completion), logged via `ai_spend.py`.
   - Minted all **57/57 tranche-1 Flow rows** across Parts 01–05 (`26 Quality + 31 Fast`):
     - **Part 01 (`12/12` KEEP):** `01_moon_falling`, `02_apple_and_moon`, `03_table_three`, `03_table_three_c1`, `03_table_three_c2`, `04_things_fall`, `05_heavens_map`, `06_perfect_circles` (take 2, non-emissive matte brass armillary sphere), `07_night_field`, `08_three_questions`, `09_no_answer`, `10_farmhouse_dawn`.
     - **Part 02 (`10/10` KEEP):** `01_cambridge_closes`, `02_road_north`, `03_christmas_birth`, `04_sundial_pegs`, `05_working_alone`, `06_prism_spectrum`, `07_fluxions_desk`, `08_the_apple`, `11_explorer_apple`, `12_how_far_moon`.
@@ -111,3 +111,77 @@ Authority rechecked: Codex elected; Grok/Claude unavailable. HOS has2/4 November
 **Chain:** J2033 video worker (Cursor, Codex/Gemini fallback) after J2026 -> J2034 elected-Chief picture review -> J2035 no-new-spend versioned assembly -> J2036 technical QA/package plus J1275 actual chapter retiming -> J2037 elected-Chief Ben-watch handoff. All have HOS:009 links in the existing queue. Queued is not claimed: no generation worker pickup observed at this checkpoint. Final-watch card only after real finished-cut gates and durable verified media. Ben's actual finished-film watch/listen applies under4Nov standing order; no worker perception invented.
 
 All57 tranche1 files exist locally and on NAS and match ledger sha256 (`TRANCHE1_INVENTORY_J2026.json`); accepted70/90 and existing completion percentage unchanged. Source facts signature remains historically UNSIGNED despite existing PIPELINE done: no new sign-off inferred. New graphics must composite named newly generated plates where boarded. J2034 must resolve callback P05:11_table_three_again1.20–7.90 against J1237 P01 source0–7 lock before edit; do not silently extend. Other locks: P04:07 0–3.760/hardout<=7.042; P04:10_c1 1.083–6.423/in>=1.083. Long narration stays locked; J0862 Shorts work does not block long picture. No YouTube/Buffer changes.
+
+
+# J0862 single-take result — 5 Nov 2026
+
+Worker: codex. No final approval. J1894 scope executed once; three accepted v02 takes remain unchanged.
+
+009 B v03: exact review text is 316 characters, 57 whitespace words (review claimed 311). House client, Ben Orbit Narrator, eleven_v3, unchanged settings. Live balance 97,352 / 121,114 before and after (counter lag); 316 submitted characters conservatively logged. No further take authorized or made.
+
+vo_check_py312.sh: PASS, 23.68 s, mean -24.2 dB, peak -4.3 dB, 147 wpm; homophone warning an apple's / and apples requires Ben's final listen. No audio perception claimed.
+
+Hook FAIL: Scribe ends fall at 3.680 s. The scoped 0.150 s trim plus maximum 1.06 speed yields 3.330 s, over 2.850 s. Total with 1 s tail would be 24.680 s. J1894's predicted token timings are not measurements of this new take. No larger gap surgery, second take, script rewrite or timing waiver performed. Chief must scope the next repair.
+
+Media preserved in the HOS checkout, 009/10_Shorts/vo_v02/hos_009_short_B_v03.{mp3,wav}; TAKE and VO_CHECK records accompany this report. All old v02 files preserved. 010 A retains J1004 Option A1. Downstream J2171 remains blocked on this hook; no film stage approved. Nothing uploaded or published.
+
+
+## J0862 v04 & J2279 audio-capable splice repair — 6 November 2026
+
+Codex covering (`cb18632d` pickup) + Gemini covering (`J2279` direct `audio_input` audition and zero-spend splice/tail-fade repair). `J2195` scoped one opening-only pickup; recorded once with Ben Orbit Narrator, `eleven_v3`, `speed=1.04`. Actual text is 81 characters (brief says 82). Live ElevenLabs balance before: `93,478` remaining / `121,114`; immediate after counter unchanged; guarded spend ledger records 81 characters. No top-up or overage; `0` additional characters generated in `J2279`.
+
+Three retained takes are untouched: `009 A v02`, `010 A v02` (`J1004` Option A1 retained), `010 C v02`. All three rerun word gates PASS; `A` spelling/homophone warnings remain documented. Old `009 B v02/v03` preserved, and `cb18632d`'s initial `v04` composite is backed up at `/Users/benjaminoats/_desk/media/HOS/009_The-Falling-Moon-Gravity/vo_v02_cb18632d_backup/`.
+
+- **Direct `audio_input` audition & splice repair (`J2279`, `gemini`):**
+  1. Confirmed **zero spoken repeat** in `hos_009_short_B_v04.{wav,mp3}` or `v03.{wav,mp3}`: `faster-whisper small.en` (`word_timestamps=True`) hallucinated a `0.18 s` duplicate `Seg 8 [24.14->24.32]` (`no_speech_prob=0.986` WAV / `0.988` MP3, `avg_logprob=-0.987` / `-0.966`, 4 zero-duration words with `prob=0.000`) over the `-41.3 dBFS` post-word breath tail (`23.480–23.640 s` in `v03`), which `vo_check.py` mis-indexed to `0:19.74` after `norm()` stripped 9 cardinal numbers.
+  2. Caught and repaired an `80 ms` onset clip on `"Isaac"` in `cb18632d`: in `v03.wav`, `"Isaac"` begins at `5.940 s` (`-45.5 dBFS`), whereas Scribe's `6.020 s` marks the `-13.7 dBFS` vowel peak. Keeping full `open_v04.wav` `[0.100:0.900]+[0.960:6.640]` (`6.480 s`, `hook_end_s = 2.820 s <= 2.850 s`, `atempo = 1.00`) + `v03.wav[5.680:23.680]` (`18.000 s`, starting in `-66.0 dBFS` room tone `260 ms` before `"Isaac"` and fading the post-`"moons"` breath tail with `afade=t=out:st=23.480:d=0.060`) maintains the **exact same `+0.800 s` word-timing offset (`6.480 - 5.680 = +0.800 s`), `24.480 s` VO duration (`25.480 s` with `1.000 s` loop tail), and 8 word-boundary cuts (`S01..S08`)**, restores 100% of the `"Isaac"` onset, and passes the unmodified `vo_check_py312.sh` on both encodings with `0` fails and `0` warnings:
+     ```text
+     PASS  hos_009_short_B_v04.mp3  0:24.48  mean -24.4 dB  peak -4.2 dB  145 wpm
+     PASS  hos_009_short_B_v04.wav  0:24.48  mean -24.1 dB  peak -4.0 dB  145 wpm
+     ```
+- **Media & SHA-256 (`02_Video-Projects/009_The-Falling-Moon-Gravity/10_Shorts/vo_v02/`):**
+  - `hos_009_short_B_v04.wav`: `a6666fd27c9a90e781369ea07e4888d87a2d5edb1624a0090ae98fa39504686b`
+  - `hos_009_short_B_v04.mp3`: `0c9c4c6ffdb1337dc11acaf57af909f8d8be91d77210bca2e13af80715b87498`
+- **Repository gates:** `check_all.sh 009` ALL CHECKS PASS; `check_all.sh 010` ALL CHECKS PASS.
+- **Elected Chief PASS (`J2281` / `J0862`, `gemini`, 7 Nov 2026):** Condition for `J0862` verified satisfied (`J2279` complete at `fc1a23f3`; direct `audio_input` audition confirmed clean delivery with 0 spoken repeats and intact `"Isaac Newton"` onset; `vo_check_py312.sh` PASS on `hos_009_short_A_v02.mp3`, `hos_009_short_B_v04.mp3`/`.wav`, `hos_010_short_A_v02.mp3`, and `hos_010_short_C_v02.mp3`; SHA-256 verified on Mini and `studio-live` NAS). `009` and `010` `shorts_vo` marked `done` in `PIPELINE.json`; HOS PR #423 approved and merged; `J0862` and `J2281` closed `done` (unblocking `J2171` for `009` Shorts A/B assembly).
+
+## 7 Nov 2026 — J2171: HOS 009 Shorts A & B GBP0 media inventory, SHA-256 reconciliation & assembly plan v03 (Gemini covering)
+
+- **Authority:** Acting-Chief Codex `J2023` / queue job `J2171`. `£0` / `0` credits. No generation, no credit spend, no upload, no scheduling, no privacy/retitle or Buffer writes.
+- **Duplicate & channel check (`05_Analytics/hos/snapshots/2026-11-07.json`, `64` HOS videos):** `0` public, scheduled, or private HOS videos overlap gravity, Newton, the Moon, or orbits. Promoted 009 long (*Why Doesn't the Moon Fall to Earth?*) is not yet uploaded or scheduled on YouTube (planned target `Thu 26 Nov 2026 18:00 UTC`; conditional Shorts targets `Fri 27 Nov` & `Mon 30 Nov 2026 11:30 UK`, watch-ready `Tue 24 Nov 2026 18:00 UTC`, only after long is public).
+- **VO & media inventory (`10_Shorts/SHORTS_PICTURE_PLAN_v03.json`, `10_Shorts/J2171/INPUT_INVENTORY.json`, `10_Shorts/J2171/READINESS_REPORT.md`; `SHORTS_PICTURE_PLAN_v02.json` preserved untouched):**
+  1. **Short A (`hos_009_short_A_v02`, *What Would Happen If the Moon Stopped Moving?*, `24.32 s` VO / `25.32 s` total, hook `2.800 s <= 2.850 s`):** VO `.mp3` (`c2fd407d…`) & `.wav` (`48847b15…`) Chief `PASS` (`J0862`/`J2281`, directly auditioned via `audio_input`). **`8/9` rows verified on local disk + NAS** (`6` Tranche 1 KEEP Flow plates from `J1192`/`J1237` + `2` `code_graphics_v01` animations `P3:08_km_a_second` & `P3:06_orbit_teach`). **Row `S03` (`5.74–8.98 s`, `P3:07_ball_to_moon`)** is an unminted Tranche 2 Quality parent row owned by `J2033` -> `J2034`.
+  2. **Short B (`hos_009_short_B_v04`, *How Did Newton Discover Gravity?*, `24.48 s` VO / `25.48 s` total, hook `2.820 s <= 2.850 s`):** VO `.mp3` (`0c9c4c6f…`) & `.wav` (`a6666fd2…`) Chief `PASS` (`J0862`/`J2195`/`J2279`/`J2281`, directly auditioned via `audio_input`, preserving both `"In one minute"` and `"in one second"` intervals and all `J1004`/`J1894` restrictions). **`9/9` rows verified on local disk + NAS** (`7` Tranche 1 KEEP Flow plates + `2` `code_graphics_v01` animations), with `S05` (`11.44–14.50 s`) mapped to Tranche 1 KEEP moving 3D plate `P4:02_spray_paint` (`8a7b7d90…`) for `J0383` moving-plate alternation between `S04` (`P4:03_sixty_earths`) and `S06` (`P4:04_dots_square`, moving-plate overlay over `02_spray_paint_c2` `0a6279c0…`), and `S07` mapped to `P4:06_pretty_nearly_c1` (`eb3f5d50…`) so all 8 body cuts use distinct clips.
+- **Hold / dependency per `J2171` brief (*"If J2034 incomplete do useful inventory only then attach dependency, not claim a ready master"*):** `J2033` (`0/20` Tranche 2 rows minted, blocked on `J2275`/`J2200`) and `J2034` (complete 009 picture acceptance & moving-plate code-graphic composite review) are incomplete, and HOS 009 `05_Music/` score bed is not yet generated (`J2035`). `J2171` attached to `J2034` dependency; no master claimed ready.
+
+
+
+### 11 Nov 2026 — J2632 candidate (Codex; not approved)
+
+Falling-Moon continuation rebuilt as a £0 parchment code graphic for 3:03.94–3:09.20, 158 frames at 30 fps, silent. Mini/studio-live SHA-256 matches MANIFEST.json. Row route changed in part-03_plates_v05.json; no splice or KEEP. Gemini timing advisory clear; Grok sheet decision and join review pending. Evidence: 07_Edit-Project/J2632_review/REVIEW.md. Approved-row count unchanged.
+
+Tool outputs: `J2632 geometry, stream, silence and full decode checks passed; review remains pending.` and `ALL CHECKS PASS` (check_all.sh). These are tool results, not final film PASS.
+
+
+## J2632 revised falling-Moon evidence — 11 Nov 2026
+
+Codex built 179 unique frames at 30 fps, including 21 animated lead-in frames and two open crater rings. Candidate and sheets on PR #543; no KEEP or splice. Parent frames 99–104 and excluded 112/125 are on the boundary sheet. The 24 fps parent loses 0.875 s, while 21 new frames at 30 fps add 0.700 s: 0.175 s remains for Chief timing reconciliation. Original motion mapping and film end 189.20 are preserved in the candidate evidence.
+
+Repository validation output (not film approval):
+
+```text
+-- durable desk handoffs: PASS
+-- no media: PASS
+-- status board in sync: PASS
+-- ElevenLabs guard tests: PASS
+-- vo_check word tests: PASS
+-- atempo check tests: PASS
+-- voice speed (atempo <= 1.06): PASS
+-- contract tests: PASS
+-- package-lint: PASS
+ALL CHECKS PASS
+```
+
+## J2632 r4 timing revision — 11 Nov 2026
+
+32-frame head, 190 unique frames at 30 fps; motion pinned to183.94, nominal end189.20. Artwork unchanged. SHA-256 `23c832b09e70f78d8eeece657dac11d6148e2a5f5c701f2ad88b868845b5f3b3`, NAS verified. Evidence: `07_Edit-Project/code_graphics_v01/J2632_r4/REVIEW.md`. Tool output: `J2632 geometry, stream, silence, 190 unique decoded frames and full decode checks passed; r4 timing residual under 10 ms; review pending.` Repo output: `ALL CHECKS PASS`. Gemini advisory: timing contradictions resolved within Chief tolerance; 0.200 s fade and tail snap required at future assembly. Claude sheet read and Chief KEEP pending; splice_authorized=false, PR543 unmerged.

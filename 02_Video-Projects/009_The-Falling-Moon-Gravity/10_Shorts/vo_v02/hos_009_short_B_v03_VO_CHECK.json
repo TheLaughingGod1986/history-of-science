@@ -1,0 +1,33 @@
+{
+  "file": "02_Video-Projects/009_The-Falling-Moon-Gravity/10_Shorts/vo_v02/hos_009_short_B_v03.mp3",
+  "part": null,
+  "fails": [],
+  "warns": [
+    "replace at ~0:01.16: script 'the moon drops an apple's second fall about' / heard 'the moon drops and apples second fall about' \u2014 sounds alike (likely the transcriber); listen"
+  ],
+  "duration_s": 23.68,
+  "duration": "0:23.68",
+  "mean_db": -24.2,
+  "peak_db": -4.3,
+  "pauses_over_1s": [
+    [
+      7.65,
+      1.05
+    ]
+  ],
+  "asr": "faster-whisper small.en",
+  "script_words": 47,
+  "heard_words": 47,
+  "wpm": 147,
+  "word_diffs": [
+    {
+      "at": "0:01.16",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "the moon drops an apple's second fall about",
+      "heard": "the moon drops and apples second fall about"
+    }
+  ],
+  "first_minute": {},
+  "verdict": "PASS"
+}

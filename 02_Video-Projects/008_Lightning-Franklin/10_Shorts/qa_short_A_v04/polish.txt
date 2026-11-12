@@ -1,0 +1,9 @@
+s01     1.3s 01_kite_open_t1.mp4          ok
+ s02     4.2s 19_kite_climb_t1.mp4         ok
+ s03     7.5s 13_key_ribbon_t1.mp4         ok
+ s04    10.6s 25_fibres_rise_t1.mp4        ok
+ s05    13.9s 02_knuckle_spark_t1.mp4      ok
+ s06    17.6s 09_charge_string_c1_t1.mp4   ok
+ s07    20.9s 10_richmann_rod_t1.mp4       ok
+ s08    22.7s loop_01_kite_open_t1.mp4     WARN low detail: edge density 0.0278 < film p5 0.0297
+polish gate PASS: 0 of 8 rows failed, 1 to look at -> /private/tmp/j0912-short-a-v04/02_Video-Projects/008_Lightning-Franklin/10_Shorts/qa_short_A_v04/polish_gate.json

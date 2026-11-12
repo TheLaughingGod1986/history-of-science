@@ -1,0 +1,9 @@
+{
+  "canonical_rows": 17,
+  "canonical_sha256": "55c31dd7ef05f286032e7c505b749e2d66894aa428da9f881643804b72b98a96",
+  "briefs_unchanged": true,
+  "global_ledger_sha256": "167eb0f2e620ea6f5ceebc11bac0da405054e34af9d4569ced962048ad7e04a6",
+  "unknown_vertex_rows": 13,
+  "last_spend_at": "2026-10-22T17:58:44Z",
+  "decision": "NO SPEND"
+}

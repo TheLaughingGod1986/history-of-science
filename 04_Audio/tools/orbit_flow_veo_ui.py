@@ -813,12 +813,14 @@ def _set_video_aspect_and_outputs(
     def _mouse_click_match(kind: str) -> str | None:
         box = page.evaluate(
             """(kind) => {
-              for (const b of document.querySelectorAll('button')) {
+              for (const b of document.querySelectorAll('button,[role=radio]')) {
+                const aria = (b.getAttribute('aria-label') || '').trim();
+                if (/Settings trigger/i.test(aria)) continue;
                 const t = (b.innerText || '').trim().replace(/\\n/g, ' ');
                 let ok = false;
                 if (kind === 'frames') ok = /crop_free|\\bFrames\\b/i.test(t) && t.length < 40;
                 else if (kind === 'ingredients') ok = /Ingredients|chrome_extension/i.test(t) && t.length < 50;
-                else if (kind === '16:9') ok = /crop_16_9/.test(t) || /\\b16:9\\b/.test(t);
+                else if (kind === '16:9') ok = (/crop_16_9/.test(t) || /\\b16:9\\b/.test(t)) && t.length < 30;
                 else if (kind === '8s') ok = t === '8s';
                 else if (kind === 'x1') ok = t === 'x1';
                 if (!ok) continue;
@@ -1021,13 +1023,19 @@ def upload_orbit_ref(page, ref: Path) -> bool:
 
 def _prompt_attachment_count(page) -> int:
     """Count image chips near the agent prompt editor (not the whole page)."""
+    if "/edit/" in (getattr(page, "url", "") or ""):
+        return 0
     return page.evaluate(
         """() => {
+          if (typeof location !== 'undefined' && String(location.pathname || '').includes('/edit/')) return 0;
           const ed = document.querySelector('[data-slate-editor="true"]');
           if (!ed) return 0;
           const er = ed.getBoundingClientRect();
           // Attachment chips sit just above the slate editor in the composer.
           return [...document.querySelectorAll('img')].filter(i => {
+            if (typeof i.closest === 'function' && i.closest(
+              'flow-image-tile,flow-tile-container,flow-grid-tile-container,.cdk-overlay-pane,[role="dialog"]'
+            )) return false;
             const r = i.getBoundingClientRect();
             if (r.width < 24 || r.height < 24 || r.width > 200) return false;
             // Exclude avatar / header chrome
@@ -1035,7 +1043,7 @@ def _prompt_attachment_count(page) -> int:
             const nearY = r.y >= er.y - 280 && r.bottom <= er.bottom + 100;
             const nearX = r.x >= er.x - 60 && r.x <= er.right + 60;
             const src = i.currentSrc || i.src || '';
-            const isMedia = /media\\.getMediaUrlRedirect|blob:|data:image|flow-content\\.google|googleusercontent/i.test(src);
+            const isMedia = /media\\.getMediaUrlRedirect|\\/asb\\/|blob:|data:image|flow-content\\.google|googleusercontent/i.test(src);
             return nearY && nearX && isMedia;
           }).length;
         }"""
@@ -1044,21 +1052,27 @@ def _prompt_attachment_count(page) -> int:
 
 def _start_frame_present(page) -> bool:
     """True if Ingredients chip OR Frames Start preview is wired near the prompt."""
+    if "/edit/" in (getattr(page, "url", "") or ""):
+        return False
     if _prompt_attachment_count(page) >= 1:
         return True
     return bool(
         page.evaluate(
             """() => {
+              if (typeof location !== 'undefined' && String(location.pathname || '').includes('/edit/')) return false;
               const h = window.innerHeight || 800;
               // Frames Start thumb often sits mid/lower composer; gallery tiles are higher.
               const imgs = [...document.querySelectorAll('img')].filter(i => {
+                if (typeof i.closest === 'function' && i.closest(
+                  'flow-image-tile,flow-tile-container,flow-grid-tile-container,.cdk-overlay-pane,[role="dialog"]'
+                )) return false;
                 const r = i.getBoundingClientRect();
                 const src = i.currentSrc || i.src || '';
                 if (r.width < 28 || r.height < 28 || r.width > 420) return false;
                 if (r.y < 80) return false;
                 // Prefer lower-half (Start slot / chip); allow mid for taller windows.
                 if (r.y < h * 0.35) return false;
-                return /flow-content\\.google|googleusercontent|blob:|media\\.getMediaUrlRedirect/i.test(src);
+                return /flow-content\\.google|\\/asb\\/|googleusercontent|blob:|media\\.getMediaUrlRedirect/i.test(src);
               });
               return imgs.length > 0;
             }"""
@@ -1321,23 +1335,33 @@ def attach_image_to_prompt(page, ref: Path) -> bool:
         )
         return True
 
-    # Prefer selecting the just-uploaded asset by filename stem when possible
+    # Prefer selecting the just-uploaded asset by filename stem inside an open picker overlay only
+    # (never click a background flow-image-tile on the project canvas, which navigates to /edit/).
+    project_url = getattr(page, "_orbit_flow_project_url", None) or (
+        page.url if "/edit/" not in (getattr(page, "url", "") or "") else None
+    )
     stem = ref.stem.lower()[:24]
     page.evaluate(
         """(stem) => {
+          const inOverlay = el => typeof el.closest === 'function' &&
+            !!el.closest('.cdk-overlay-pane,[role="dialog"],[role="listbox"],[role="menu"]') &&
+            !el.closest('flow-image-tile,flow-tile-container,flow-grid-tile-container');
           for (const el of document.querySelectorAll('div,button,li,[role="option"],img')) {
+            if (!inOverlay(el)) continue;
+            if (el.classList && el.classList.contains('asset-item-active')) return true;
             const t = ((el.innerText || el.getAttribute('alt') || el.getAttribute('aria-label') || '') + '').trim().toLowerCase();
             if (stem && t.includes(stem) && t.length < 200) {
               try { el.click(); } catch (e) {}
               return true;
             }
           }
-          // Fallback: click the newest/largest media thumbnail in the picker.
+          // Fallback: click the newest media thumbnail inside an open picker overlay only.
           const imgs = [...document.querySelectorAll('img')].filter(i => {
+            if (!inOverlay(i)) return false;
             const r = i.getBoundingClientRect();
             const src = i.currentSrc || i.src || '';
-            return r.width > 48 && r.height > 48 && r.y > 80 &&
-              (/flow-content\\.google|googleusercontent|blob:/i.test(src) || r.width > 120);
+            return r.width > 36 && r.height > 36 && r.y > 80 &&
+              (/flow-content\\.google|\\/asb\\/|googleusercontent|blob:/i.test(src) || r.width > 120);
           });
           if (imgs.length) {
             try { imgs[imgs.length - 1].click(); return true; } catch (e) {}
@@ -1347,6 +1371,9 @@ def attach_image_to_prompt(page, ref: Path) -> bool:
         stem,
     )
     page.wait_for_timeout(500)
+    if project_url and "/edit/" in (getattr(page, "url", "") or ""):
+        page.goto(project_url, wait_until="domcontentloaded", timeout=60_000)
+        page.wait_for_timeout(1200)
 
     # Sep 2026 HOS: Ingredients "Add to Prompt" often never enables.
     # Prefer Frames Start slot FIRST (proven on Mini), then Animate, then chip.
@@ -1362,7 +1389,7 @@ def attach_image_to_prompt(page, ref: Path) -> bool:
         print(f"  frames settings warn: {e}", flush=True)
     start_btn = page.get_by_role("button", name=re.compile(r"^Start$", re.I))
     if start_btn.count() == 0:
-        start_btn = page.locator('button:has-text("Start")')
+        start_btn = page.locator('button:text-is("Start")')
     if start_btn.count():
         try:
             start_btn.last.click(force=True, timeout=4000)
@@ -1370,19 +1397,38 @@ def attach_image_to_prompt(page, ref: Path) -> bool:
         except Exception:
             pass
     clicked = page.evaluate(
-        """() => {
+        """(stem) => {
+          const inOverlay = el => typeof el.closest === 'function' &&
+            !!el.closest('.cdk-overlay-pane,[role="dialog"],[role="listbox"],[role="menu"]') &&
+            !el.closest('flow-image-tile,flow-tile-container,flow-grid-tile-container');
+          const opts = [...document.querySelectorAll('button[role="option"],[role="option"]')].filter(inOverlay);
+          if (opts.some(o => o.classList && o.classList.contains('asset-item-active'))) return 'already-active';
+          for (const o of opts) {
+            const t = ((o.innerText || o.getAttribute('aria-label') || '') + '').trim().toLowerCase();
+            if (stem && t.includes(stem)) {
+              try { o.click(); return true; } catch (e) {}
+            }
+          }
+          if (opts.length) {
+            try { opts[0].click(); return true; } catch (e) {}
+          }
           const imgs = [...document.querySelectorAll('img')].filter(i => {
+            if (!inOverlay(i)) return false;
             const r = i.getBoundingClientRect();
             const src = i.currentSrc || i.src || '';
-            return r.width > 80 && r.height > 60 &&
-              /flow-content\\.google|googleusercontent|blob:/i.test(src);
+            return r.width > 36 && r.height > 36 &&
+              /flow-content\\.google|\\/asb\\/|googleusercontent|blob:/i.test(src);
           });
           if (!imgs.length) return false;
           try { imgs[imgs.length - 1].click(); return true; } catch (e) { return false; }
-        }"""
+        }""",
+        stem,
     )
     print(f"  frames tile click={clicked}", flush=True)
     page.wait_for_timeout(800)
+    if project_url and "/edit/" in (getattr(page, "url", "") or ""):
+        page.goto(project_url, wait_until="domcontentloaded", timeout=60_000)
+        page.wait_for_timeout(1200)
     for pattern in (
         r"Add to Prompt",
         r"Use as start",
@@ -1899,14 +1945,19 @@ def _dismiss_asset_search_modal(page) -> None:
         page.wait_for_timeout(350)
 
 
-def submit_create(page) -> None:
+def submit_create(page, *, create_guard=None) -> None:
     """Click the prompt-bar send (arrow_forward). Never click add_2 (asset picker)."""
+    if create_guard is None:
+        raise RuntimeError(
+            "Flow Create requires an explicit create_guard owning the shared Flow accounting lock (~/_desk/state/flow/shared)"
+        )
     _dismiss_asset_search_modal(page)
     # Hard gate: Agent chip ON → chat, not Veo. Always force Create mode first.
-    try:
-        _ensure_create_prompt_mode(page)
-    except Exception as e:
-        print(f"  submit_create create-mode warn: {e}", flush=True)
+    _ensure_create_prompt_mode(page)
+    # The guard owns the exact click after settings and prompt preparation.
+    # No later coordinate/selector fallback may bypass its decision.
+    create_guard(page)
+    return
 
     deadline = time.time() + 45
     while time.time() < deadline:
@@ -2493,6 +2544,164 @@ def download_media(page, name_or_url: str, dest: Path) -> int:
     return len(data)
 
 
+def wait_and_download_passive(page, dest: Path, *, before_ids: set[str],
+                              timeout_s: int) -> str:
+    """Guarded takes only: observe/download, never confirm, retry or resubmit.
+
+    Unknown gallery layouts time out for explicit recovery instead of invoking
+    the legacy UI automation, which can cause another charge.
+    """
+    def _write_exclusive(payload: bytes) -> None:
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        with dest.open("xb") as stream:
+            stream.write(payload)
+            stream.flush()
+            os.fsync(stream.fileno())
+
+    def _allowed_video_url(url: str) -> bool:
+        low = (url or "").lower()
+        return low.startswith("https://") and any(
+            host in low
+            for host in (
+                "flow.google.com/asb/",
+                "labs.google/asb/",
+                "flow-content.google",
+                "storage.googleapis.com/ai-sandbox-videofx",
+                "googlevideo.com",
+                "googleusercontent.com",
+                "labs.google/fx/api/trpc/media.getmediaurlredirect",
+                "flow.google.com/fx/api/trpc/media.getmediaurlredirect",
+            )
+        )
+
+    def _asb_mp4_url(src: str) -> str | None:
+        if not _allowed_video_url(src) or "/asb/" not in src.lower():
+            return None
+        base = src.split("?", 1)[0]
+        idx = base.rfind("/asb/")
+        tail = base[idx + 5 :]
+        if "=" in tail:
+            token = tail.split("=", 1)[0]
+            base = base[: idx + 5] + token
+        return base + "=mm,22,15"
+
+    def _try_fetch_video(url: str) -> bool:
+        if not _allowed_video_url(url):
+            return False
+        response = page.request.get(url, timeout=60_000)
+        data = response.body()
+        content_type = (response.headers.get("content-type") or "").lower()
+        if not response.ok or ("video" not in content_type and b"ftyp" not in data[:64]):
+            return False
+        if len(data) < 200_000:
+            return False
+        _write_exclusive(data)
+        return True
+
+    captured: list[tuple[str, bytes]] = []
+    listener_attached = False
+    before_srcs: set[str] | None = None
+    before_thumb_srcs: set[str] | None = None
+
+    def _on_response(resp) -> None:
+        try:
+            url = resp.url or ""
+            if not _allowed_video_url(url) or getattr(resp, "status", 0) != 200:
+                return
+            ct = ((resp.headers or {}).get("content-type") or "").lower()
+            body = resp.body()
+            if body and len(body) >= 200_000 and ("video" in ct or b"ftyp" in body[:64]):
+                captured.append((url, body))
+        except Exception:
+            pass
+
+    deadline = time.monotonic() + timeout_s
+    try:
+        while time.monotonic() < deadline:
+            for media_id in sorted(collect_media_ids(page) - before_ids):
+                response = page.request.get(absolute_media_url(media_id), timeout=60_000)
+                data = response.body()
+                content_type = (response.headers.get("content-type") or "").lower()
+                if not response.ok or ("video" not in content_type and b"ftyp" not in data[:32]):
+                    continue
+                if len(data) < 200_000:
+                    continue
+                # Never replace a previous output or a file from another writer.
+                _write_exclusive(data)
+                return media_id
+
+            if not listener_attached and callable(getattr(page, "on", None)):
+                try:
+                    page.on("response", _on_response)
+                    listener_attached = True
+                except Exception:
+                    pass
+
+            if captured:
+                url, data = captured[-1]
+                _write_exclusive(data)
+                return url
+
+            state = page.evaluate(
+                """() => ({
+                  videos: [...document.querySelectorAll('video')]
+                    .map(v => v.currentSrc || v.src).filter(Boolean),
+                  thumbs: [...document.querySelectorAll('img[alt*="Generated video" i]')]
+                    .map(i => { const r = i.getBoundingClientRect();
+                      return {src: i.currentSrc || i.src || '',
+                              x: r.left + r.width / 2, y: r.top + r.height / 2,
+                              w: r.width, h: r.height}; })
+                    .filter(b => b.w > 80 && b.h > 45)
+                })"""
+            )
+            if isinstance(state, dict):
+                videos = [u for u in (state.get("videos") or []) if isinstance(u, str)]
+                raw_thumbs = [t for t in (state.get("thumbs") or []) if isinstance(t, dict)]
+                if before_srcs is None:
+                    before_srcs = set(videos)
+                if before_thumb_srcs is None:
+                    before_thumb_srcs = {
+                        str(t.get("src") or "") for t in raw_thumbs if t.get("src")
+                    }
+                for src in videos:
+                    if src in before_srcs:
+                        continue
+                    if _try_fetch_video(src):
+                        return src
+                new_thumbs = [
+                    t for t in raw_thumbs
+                    if not t.get("src") or str(t.get("src")) not in before_thumb_srcs
+                ]
+                mouse = getattr(page, "mouse", None)
+                if new_thumbs and callable(getattr(mouse, "move", None)):
+                    top = new_thumbs[0]
+                    mouse.move(float(top["x"]), float(top["y"]))
+                    page.wait_for_timeout(1500)
+                    mounted = page.evaluate(
+                        """() => [...document.querySelectorAll('video')]
+                          .map(v => v.currentSrc || v.src).filter(Boolean)"""
+                    )
+                    if isinstance(mounted, list):
+                        for src in mounted:
+                            if not isinstance(src, str) or src in (before_srcs or set()):
+                                continue
+                            if _try_fetch_video(src):
+                                return src
+                if new_thumbs:
+                    asb_url = _asb_mp4_url(str(new_thumbs[0].get("src") or ""))
+                    if asb_url and _try_fetch_video(asb_url):
+                        return asb_url
+
+            page.wait_for_timeout(4000)
+    finally:
+        if listener_attached and callable(getattr(page, "remove_listener", None)):
+            try:
+                page.remove_listener("response", _on_response)
+            except Exception:
+                pass
+    raise TimeoutError("Guarded Flow output unavailable; no automatic retry or confirmation")
+
+
 def wait_and_download(
     page,
     dest: Path,
@@ -2826,6 +3035,7 @@ def _generate_clip_once(
     timeout_s: int = 900,
     reuse_project: bool = False,
     scenery_only: bool = False,
+    create_guard=None,
 ) -> dict:
     """One attempt: generate a silent Veo clip via Google Flow Ultra UI.
 
@@ -2834,6 +3044,8 @@ def _generate_clip_once(
       - scenery_only: no attachment chip
       - start_frame: I2V from an arbitrary still (History of Science / custom)
     """
+    if create_guard is not None and dest.exists():
+        raise FileExistsError(f"Guarded output already exists: {dest}")
     t0 = time.time()
     ref = None
     if start_frame is not None:
@@ -2896,6 +3108,8 @@ def _generate_clip_once(
         # Frames Start attach is trusted. Do NOT right-click Animate afterward —
         # it often wipes the Start slot / closes the page (Sep 2026).
         if not attached and not _start_frame_present(page):
+            if create_guard is not None:
+                raise RuntimeError("Guarded start frame missing; no Animate fallback")
             if try_context_animate(page):
                 configure_veo_settings(
                     page,
@@ -2920,12 +3134,14 @@ def _generate_clip_once(
                 flush=True,
             )
         print("  submitting Create…", flush=True)
-        submit_create(page)
+        submit_create(page, create_guard=create_guard)
         print("  submitted Create (start-frame I2V)", flush=True)
-        _record_flow_spend(dest, model)
+        if create_guard is None:
+            _record_flow_spend(dest, model)
         settle_after_nav(page, wait_ms=1200)
         try:
-            confirm_generation_spend(page)
+            if create_guard is None:
+                confirm_generation_spend(page)
         except Exception as e:
             if not is_transient_ui_error(e):
                 raise
@@ -2943,12 +3159,14 @@ def _generate_clip_once(
         except Exception:
             pass
         print("  submitting Create…", flush=True)
-        submit_create(page)
+        submit_create(page, create_guard=create_guard)
         print("  submitted Create (scenery-only, no Orbit ref)", flush=True)
-        _record_flow_spend(dest, model)
+        if create_guard is None:
+            _record_flow_spend(dest, model)
         settle_after_nav(page, wait_ms=1200)
         try:
-            confirm_generation_spend(page)
+            if create_guard is None:
+                confirm_generation_spend(page)
         except Exception as e:
             if not is_transient_ui_error(e):
                 raise
@@ -2969,20 +3187,25 @@ def _generate_clip_once(
         if _prompt_attachment_count(page) < 1:
             raise RuntimeError("Orbit prompt chip missing after attach — aborting")
         print("  submitting Create…", flush=True)
-        submit_create(page)
+        submit_create(page, create_guard=create_guard)
         print("  submitted Create (identity-locked, Orbit ref attached)", flush=True)
-        _record_flow_spend(dest, model)
+        if create_guard is None:
+            _record_flow_spend(dest, model)
         settle_after_nav(page, wait_ms=1200)
         try:
-            confirm_generation_spend(page)
+            if create_guard is None:
+                confirm_generation_spend(page)
         except Exception as e:
             if not is_transient_ui_error(e):
                 raise
             print(f"  confirm spend race after Create (ok): {e}", flush=True)
             settle_after_nav(page, wait_ms=1500)
-    media_id = wait_and_download(
-        page, dest, before_ids=before, timeout_s=timeout_s, min_elapsed_s=25
-    )
+    if create_guard is not None:
+        media_id = wait_and_download_passive(page, dest, before_ids=before, timeout_s=timeout_s)
+    else:
+        media_id = wait_and_download(
+            page, dest, before_ids=before, timeout_s=timeout_s, min_elapsed_s=25
+        )
     proj_url = getattr(page, "_orbit_flow_project_url", None) or ""
     if "flow.google.com" not in proj_url or "/project/" not in proj_url:
         # Fall back carefully — never harvest a non-Flow URL from a polluted profile.
@@ -3045,9 +3268,16 @@ def generate_clip(
     timeout_s: int = 900,
     reuse_project: bool = False,
     scenery_only: bool = False,
+    create_guard=None,
     attempts: int = 3,
 ) -> dict:
     """Generate one silent Veo clip via Google Flow Ultra UI (with soft retries)."""
+    if create_guard is None:
+        raise ValueError(
+            "Flow generation requires an explicit create_guard owning the shared Flow accounting lock (~/_desk/state/flow/shared)"
+        )
+    if attempts != 1:
+        raise ValueError("Guarded Flow calls require attempts=1; no automatic retries")
     last: BaseException | None = None
     use_reuse = reuse_project
     for attempt in range(1, attempts + 1):
@@ -3062,6 +3292,7 @@ def generate_clip(
                 timeout_s=timeout_s,
                 reuse_project=use_reuse,
                 scenery_only=scenery_only,
+                create_guard=create_guard,
             )
         except Exception as e:
             last = e

@@ -1,0 +1,19 @@
+{
+  "id": "s05_charcoal_gas",
+  "sha256": "06fbeceda494be07be4b4b5b5084b5a27c6bff4d1ce8973c11b3d05972d48c4c",
+  "command": [
+    "python3",
+    "/private/tmp/J2230-codex-hos/00_Brand/Channel-Setup/tools/gate_shorts_open.py",
+    "check",
+    "/Volumes/data/mac-mini-archive/2026-11-05/YouTube/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/hos_006_s05_charcoal_gas_v01.mp4",
+    "--air-date",
+    "2026-11-25",
+    "--meta",
+    "/private/tmp/J2230-codex-hos/02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/SHORT_s05_charcoal_gas_v01.json",
+    "--sheet-dir",
+    "/Users/benjaminoats/_desk/renders/J2230/preflight/s05_charcoal_gas"
+  ],
+  "exit": 1,
+  "stdout": "FAIL  hos_006_s05_charcoal_gas_v01.mp4  dur=26.13s  audio=-23.8dB  motion=10.72  f0diff=4.03  cut1=3.97s  vo_onset=0.59s  tail_gap=0.58s  vo_src=mix  dhash=98c06b227e7bfdf0\n   FAIL  integrated loudness -20.5 LUFS outside -14.5..-13.5 (target -14.0)\n   FAIL  first cut at 3.97s > 3.0s (scene-change detect)\n   warn  first VO word starts at 0.59s > 0.15s \u2014 trim leading silence\n   sheet /Users/benjaminoats/_desk/renders/J2230/preflight/s05_charcoal_gas/hos_006_s05_charcoal_gas_v01_open_sheet.jpg\n",
+  "stderr": ""
+}

@@ -1,0 +1,226 @@
+{
+ "version": "v02",
+ "job": "J0175",
+ "generated": "2026-10-23T10:10:58",
+ "mp4": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/hos_compilation_full_v02.mp4",
+ "sha256": "8282ffa8eb09e3a7cf1420562d70e14a428a0ae0489b3fdeccf5e4aeffe98490",
+ "duration_s": 2958.188,
+ "duration_hms": "49:18",
+ "in_45_60": true,
+ "loudness": {
+  "input_i": "-14.32",
+  "input_tp": "-1.16",
+  "input_lra": "4.10",
+  "input_thresh": "-24.94",
+  "output_i": "-13.97",
+  "output_tp": "-1.00",
+  "output_lra": "3.90",
+  "output_thresh": "-24.57",
+  "normalization_type": "dynamic",
+  "target_offset": "-0.03"
+ },
+ "probe": {
+  "programs": [],
+  "stream_groups": [],
+  "streams": [
+   {
+    "codec_type": "video",
+    "width": 1920,
+    "height": 1080,
+    "r_frame_rate": "30/1"
+   },
+   {
+    "codec_type": "audio",
+    "sample_rate": "48000",
+    "channels": 2,
+    "r_frame_rate": "0/0"
+   }
+  ],
+  "format": {
+   "duration": "2958.188021"
+  }
+ },
+ "chapters": [
+  "0:00 Six discoveries, one question",
+  "0:53 The Hidden Circle",
+  "9:23 Built From Air",
+  "17:57 The Invisible Enemy",
+  "24:14 The Empty Chairs",
+  "33:22 A Light Through Skin",
+  "40:27 Inside the Atom"
+ ],
+ "timeline": [
+  {
+   "start": 0.0,
+   "start_hms": "0:00",
+   "duration": 52.533,
+   "kind": "segment",
+   "name": "intro",
+   "label": "Six discoveries, one question",
+   "mp4": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/segments/intro/hos_comp_intro_v01.mp4"
+  },
+  {
+   "start": 52.533,
+   "start_hms": "0:53",
+   "duration": 3.0,
+   "kind": "segment",
+   "name": "card_01",
+   "label": "The Hidden Circle",
+   "mp4": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/segments/card_01/hos_comp_card_01_v01.mp4"
+  },
+  {
+   "start": 55.533,
+   "start_hms": "0:56",
+   "duration": 489.2,
+   "kind": "film",
+   "name": "005",
+   "label": "The Hidden Circle",
+   "mp4": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_005_norm.mp4"
+  },
+  {
+   "start": 544.733,
+   "start_hms": "9:05",
+   "duration": 18.0,
+   "kind": "segment",
+   "name": "bridge1",
+   "label": "bridge1",
+   "mp4": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/segments/bridge1/hos_comp_bridge1_v01.mp4"
+  },
+  {
+   "start": 562.733,
+   "start_hms": "9:23",
+   "duration": 3.0,
+   "kind": "segment",
+   "name": "card_02",
+   "label": "Built From Air",
+   "mp4": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/segments/card_02/hos_comp_card_02_v01.mp4"
+  },
+  {
+   "start": 565.733,
+   "start_hms": "9:26",
+   "duration": 493.567,
+   "kind": "film",
+   "name": "006",
+   "label": "Built From Air",
+   "mp4": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_006_norm.mp4"
+  },
+  {
+   "start": 1059.3,
+   "start_hms": "17:39",
+   "duration": 17.9,
+   "kind": "segment",
+   "name": "bridge2",
+   "label": "bridge2",
+   "mp4": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/segments/bridge2/hos_comp_bridge2_v01.mp4"
+  },
+  {
+   "start": 1077.2,
+   "start_hms": "17:57",
+   "duration": 3.0,
+   "kind": "segment",
+   "name": "card_03",
+   "label": "The Invisible Enemy",
+   "mp4": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/segments/card_03/hos_comp_card_03_v01.mp4"
+  },
+  {
+   "start": 1080.2,
+   "start_hms": "18:00",
+   "duration": 359.367,
+   "kind": "film",
+   "name": "001",
+   "label": "The Invisible Enemy",
+   "mp4": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_001_norm.mp4"
+  },
+  {
+   "start": 1439.567,
+   "start_hms": "24:00",
+   "duration": 14.7,
+   "kind": "segment",
+   "name": "bridge3",
+   "label": "bridge3",
+   "mp4": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/segments/bridge3/hos_comp_bridge3_v01.mp4"
+  },
+  {
+   "start": 1454.267,
+   "start_hms": "24:14",
+   "duration": 3.0,
+   "kind": "segment",
+   "name": "card_04",
+   "label": "The Empty Chairs",
+   "mp4": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/segments/card_04/hos_comp_card_04_v01.mp4"
+  },
+  {
+   "start": 1457.267,
+   "start_hms": "24:17",
+   "duration": 530.167,
+   "kind": "film",
+   "name": "002",
+   "label": "The Empty Chairs",
+   "mp4": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_002_norm.mp4"
+  },
+  {
+   "start": 1987.433,
+   "start_hms": "33:07",
+   "duration": 14.3,
+   "kind": "segment",
+   "name": "bridge4",
+   "label": "bridge4",
+   "mp4": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/segments/bridge4/hos_comp_bridge4_v01.mp4"
+  },
+  {
+   "start": 2001.733,
+   "start_hms": "33:22",
+   "duration": 3.0,
+   "kind": "segment",
+   "name": "card_05",
+   "label": "A Light Through Skin",
+   "mp4": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/segments/card_05/hos_comp_card_05_v01.mp4"
+  },
+  {
+   "start": 2004.733,
+   "start_hms": "33:25",
+   "duration": 406.2,
+   "kind": "film",
+   "name": "003",
+   "label": "A Light Through Skin",
+   "mp4": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_003_norm.mp4"
+  },
+  {
+   "start": 2410.933,
+   "start_hms": "40:11",
+   "duration": 15.733,
+   "kind": "segment",
+   "name": "bridge5",
+   "label": "bridge5",
+   "mp4": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/segments/bridge5/hos_comp_bridge5_v01.mp4"
+  },
+  {
+   "start": 2426.667,
+   "start_hms": "40:27",
+   "duration": 3.0,
+   "kind": "segment",
+   "name": "card_06",
+   "label": "Inside the Atom",
+   "mp4": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/segments/card_06/hos_comp_card_06_v01.mp4"
+  },
+  {
+   "start": 2429.667,
+   "start_hms": "40:30",
+   "duration": 491.4,
+   "kind": "film",
+   "name": "004",
+   "label": "Inside the Atom",
+   "mp4": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/film_004_norm.mp4"
+  },
+  {
+   "start": 2921.067,
+   "start_hms": "48:41",
+   "duration": 37.1,
+   "kind": "segment",
+   "name": "closing",
+   "label": "closing",
+   "mp4": "/Volumes/data/mac-mini-archive/mini-tmp-scratch/2026-10-23/hos_comp_j0175_prep0540/segments/closing/hos_comp_closing_v01.mp4"
+  }
+ ],
+ "new_cuts_count": 51
+}

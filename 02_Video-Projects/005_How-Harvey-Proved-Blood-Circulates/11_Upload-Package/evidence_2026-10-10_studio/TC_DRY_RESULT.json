@@ -1,0 +1,34 @@
+{
+ "vid": "wwcjcFfC-5M",
+ "commit": false,
+ "steps": [
+  {
+   "shot": "/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/J0101_2026-10-10_005_wwcj/tc_dry_01_mode.png"
+  },
+  {
+   "shot": "/Users/benjaminoats/.local/share/cursor-mac-mini-hos-worker/artifacts/J0101_2026-10-10_005_wwcj/tc_dry_02_filled.png"
+  }
+ ],
+ "av_start": {
+  "at": "2026-10-10T12:34:46+01:00",
+  "url": "https://studio.youtube.com/video/wwcjcFfC-5M/edit",
+  "visibility": "Visibility Scheduled",
+  "not_kids": true,
+  "kids_yes": false,
+  "ai": {
+   "radios": [],
+   "yes": false,
+   "no": false
+  }
+ },
+ "uploaded_slots": [
+  "Uploaded thumbnail"
+ ],
+ "upload_slots_left": [
+  "Upload thumbnail 3"
+ ],
+ "set_enabled": true,
+ "body_title_ok": true,
+ "ready": true,
+ "at": "2026-10-10T12:35:01+01:00"
+}

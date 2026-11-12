@@ -1,0 +1,161 @@
+{
+  "period": "2026-09-30 to 2026-10-27",
+  "source": "Studio Advanced mode table; Reach funnel for long engaged views from impressions",
+  "medianCtrPct": {
+    "long": 2.3,
+    "short": 1.6
+  },
+  "medianDefinition": "Unweighted per-video median among videos with observed impressions and numeric CTR; missing rows excluded, not zero. No inference of statistical significance.",
+  "metrics": {
+    "29bpGAI0wb8": {
+      "impressions": 1121,
+      "ctrPct": 0.9,
+      "views": 1224,
+      "engagedViewsFromImpressions": null
+    },
+    "OnJ8MFu0Mi0": {
+      "impressions": 129,
+      "ctrPct": 1.6,
+      "views": 213,
+      "engagedViewsFromImpressions": null
+    },
+    "oKqmnJNGiHg": {
+      "impressions": 306,
+      "ctrPct": 3.9,
+      "views": 171,
+      "engagedViewsFromImpressions": null
+    },
+    "qOZgess30h0": {
+      "impressions": 217,
+      "ctrPct": 0.9,
+      "views": 168,
+      "engagedViewsFromImpressions": null
+    },
+    "clV6E10NLPw": {
+      "impressions": 245,
+      "ctrPct": 3.3,
+      "views": 150,
+      "engagedViewsFromImpressions": null
+    },
+    "c2q7w0pgcn8": {
+      "impressions": 229,
+      "ctrPct": 6.1,
+      "views": 134,
+      "engagedViewsFromImpressions": null
+    },
+    "TbMMJSRKC3U": {
+      "impressions": 436,
+      "ctrPct": 1.6,
+      "views": 57,
+      "engagedViewsFromImpressions": null
+    },
+    "LCZRHUyTiq0": {
+      "impressions": 239,
+      "ctrPct": 2.1,
+      "views": 49,
+      "engagedViewsFromImpressions": null
+    },
+    "-3L6HzJ_d_4": {
+      "impressions": 266,
+      "ctrPct": 4.9,
+      "views": 43,
+      "engagedViewsFromImpressions": null
+    },
+    "AL_-qlWko_g": {
+      "impressions": 422,
+      "ctrPct": 3.6,
+      "views": 31,
+      "engagedViewsFromImpressions": 15
+    },
+    "GHZDsiH7L7A": {
+      "impressions": 789,
+      "ctrPct": 1.0,
+      "views": 20,
+      "engagedViewsFromImpressions": 8
+    },
+    "nba0-f7PPeU": {
+      "impressions": 49,
+      "ctrPct": 6.1,
+      "views": 7,
+      "engagedViewsFromImpressions": null
+    },
+    "8_Edn_HCi1s": {
+      "impressions": 42,
+      "ctrPct": 4.8,
+      "views": 4,
+      "engagedViewsFromImpressions": null
+    },
+    "zI_eD3vFWmE": {
+      "impressions": 22,
+      "ctrPct": 4.6,
+      "views": 2,
+      "engagedViewsFromImpressions": null
+    },
+    "xvanpsLeADE": {
+      "impressions": 88,
+      "ctrPct": 0.0,
+      "views": 2,
+      "engagedViewsFromImpressions": null
+    },
+    "frP_YrNShsU": {
+      "impressions": 18,
+      "ctrPct": 0.0,
+      "views": 2,
+      "engagedViewsFromImpressions": 0
+    },
+    "uU12JA5rMWg": {
+      "impressions": 27,
+      "ctrPct": 0.0,
+      "views": 2,
+      "engagedViewsFromImpressions": null
+    },
+    "H1y0DXFVmw8": {
+      "impressions": 7,
+      "ctrPct": 0.0,
+      "views": 1,
+      "engagedViewsFromImpressions": null
+    },
+    "nFQRWmpulTQ": {
+      "impressions": 10,
+      "ctrPct": 10.0,
+      "views": 1,
+      "engagedViewsFromImpressions": null
+    },
+    "oowAOWTBoq0": {
+      "impressions": 39,
+      "ctrPct": 0.0,
+      "views": 1,
+      "engagedViewsFromImpressions": null
+    },
+    "_C92tIJCk8A": {
+      "impressions": 14,
+      "ctrPct": 7.1,
+      "views": 1,
+      "engagedViewsFromImpressions": 1
+    },
+    "iqToagXnjX0": {
+      "impressions": 22,
+      "ctrPct": 0.0,
+      "views": null,
+      "engagedViewsFromImpressions": null
+    },
+    "CnHwX1L9XHg": {
+      "impressions": 11,
+      "ctrPct": 0.0,
+      "views": null,
+      "engagedViewsFromImpressions": null
+    },
+    "LanTHJckYx8": {
+      "impressions": 19,
+      "ctrPct": 0.0,
+      "views": null,
+      "engagedViewsFromImpressions": null
+    },
+    "sILtQxgYQk8": {
+      "impressions": 17,
+      "ctrPct": 0.0,
+      "views": null,
+      "engagedViewsFromImpressions": null
+    }
+  }
+}

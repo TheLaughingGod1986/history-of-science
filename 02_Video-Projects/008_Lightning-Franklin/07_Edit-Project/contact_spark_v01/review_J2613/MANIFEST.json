@@ -1,0 +1,69 @@
+{
+  "job": "J2613",
+  "preview_only": true,
+  "source": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part02/j2241/02_salon_spark_j2241_t4.mp4",
+  "source_sha256": "82eb0d10c57a9ddfabd10aed92d158be726ad57f987d0c35e7ecdd7422993ad5",
+  "source_size": [
+    1280,
+    720
+  ],
+  "delivery_size": [
+    1920,
+    1080
+  ],
+  "fps": 24,
+  "extracted_frames": [
+    29,
+    30,
+    31
+  ],
+  "allowed_source_frames_inclusive": [
+    0,
+    60
+  ],
+  "placement_job": "J2592",
+  "video_take_modified": false,
+  "rod_720": [
+    630,
+    222
+  ],
+  "knuckle_720": [
+    622,
+    227
+  ],
+  "rod_1080": [
+    945.0,
+    333.0
+  ],
+  "knuckle_1080": [
+    933.0,
+    340.5
+  ],
+  "proposed_overlay_frames": [
+    30,
+    31
+  ],
+  "timing_note": "Later placement ruling limits take flick to 2\u20133 frames around f030; use 2 frames, peak f030 and half-strength f031. Generic optional +2/+3 tails shown separately, not placed on take.",
+  "checks": {
+    "source_hash_matches": true,
+    "only_frames_29_30_31_extracted": true,
+    "review_f029_unchanged": true
+  },
+  "files": {
+    "design_four_phases_4x.png": "be523076ffcf38d91bddcf934abf4b46ccaa9632e7831a8e5e9428d6415c7068",
+    "overlay_f029.png": "f9708f9f8361d467ddfc7575e35f49343096b3b5a76cd81faf9b1dfc99462381",
+    "overlay_f030.png": "ea6a02896827fec9bde93badd8dac36780b7b3b2384b74d8258aef7031971e21",
+    "overlay_f031.png": "02c5407236bc07fb562cf261e1d9cab43069060d27178509906043f381e6a988",
+    "review_crop_4x.png": "028fced9571a6c784b78514f694ee1c1d46d9f255facf81038d9ef8bcf7c9b0f",
+    "review_f029_1080.png": "96ee8cf6db8087d4fa97801ac62f2fcab45ee514c717df646baa0b918b2aab2e",
+    "review_f029_720.png": "3cdd1db20e3c2cb84401511f603b8135313d96404cf7daa54bf93f9900214a43",
+    "review_f030_1080.png": "28a6af9d76affa158f5c2398efc34b35e12ba686136f4eb488fdfe79b6cd6fb5",
+    "review_f030_720.png": "af30cc78d3c7f92ed57569a0ac624e57c208e14af066fe3c06a79b2cd7577858",
+    "review_f031_1080.png": "1a37aab412edd07addb6aec59cb178cfc9c66301f5aeb897a8b08cbdf4588f65",
+    "review_f031_720.png": "47497dd239375f9a46af319cff84ef65ea0d2516151643317b8b4f4f99caa0f3",
+    "review_sheet_1080.jpg": "a79057c6774635763be7e8502d0004ebac20fc121469b0a39a6b3f6620c52948",
+    "source_01.png": "5d9c8104dfa8c1f76e9d55e542a4cc29a035ed067423271ed60c6aecd9712837",
+    "source_02.png": "af5f578a85a86f9c4af36f399f831283aca613d92763971a68d5a1492dcbb128",
+    "source_03.png": "a1aaf7df1aefd01414f18b476dcd23d7ccf66feb0556790451c3bb2e0d785bbf"
+  }
+}
