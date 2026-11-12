@@ -127,6 +127,9 @@ node_modules/
 !02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/review_J1192_motion/*.png
 !02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/review_J2584_sheets/*.jpg
 
+# HOS 013 pass-1 contact sheets (review branch only; draft PR, never merge)
+!receipts/013/pass1_sheets/*.jpg
+
 # Login tokens and cookies never belong in a public repo (security pass, 9 Nov 2026)
 .elevenlabs_bearer
 *.bearer
