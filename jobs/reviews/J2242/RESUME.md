@@ -316,3 +316,37 @@ unchanged boundary pixels and all original durations, then all media/package
 gates and the phone sheet. Keep original masters/audio, J1755 hold and
 J2243/Chief review. This remaining work exceeds a single unattended run;
 released at this verified intermediate checkpoint.
+
+## Storm and jar intermediate checkpoint — eighth run, 12 November 2026
+
+`_j2242_archive_patches.py` renders the two existing, hash-pinned archive
+replacements without generation: storm source f000..f095 for master
+f744..f839, and jar-crack source f000..f083 for master f3260..f3343.
+`STORM_PATCH.json` and `JAR_PATCH.json` record output paths and hashes.
+All 180 independently scaled source pixel hashes match the decoded lossless
+FFV1 intermediates. Every original presentation timestamp matches after
+rescaling the NUT clock by 1/4. No master or audio is written.
+
+Storm f745 has an original duration of 1024 ticks despite the next PTS
+advancing 512 ticks. As with the points replacement, its NUT intermediate
+normalizes that overlapping duration. The hashed `original_clock.json`
+sidecar preserves the original schedule for final packet assembly; final mux
+must restore it and pass the unchanged independent verifier. Jar's 84 PTS
+and durations all match. Jar f3168..f3259 is NOT part of the new intermediate
+and must remain pixel-identical inside its future boundary envelope.
+The 2:18 jar flip is inside this replacement; the separate f3353 / 2:20
+foil check is outside it and remains unresolved. Storm speech alignment and
+both replacements' in-context visual checks remain outstanding. Captions are
+not yet rendered onto these clean source intermediates.
+
+32 J2242 tests pass, including rejection of absolute PTS/index/duration
+changes, normalization of the storm overlap, truncated/rescaled clocks and
+shifted/short native sources. See `ARCHIVE_PATCH_TESTS.txt` and full repository
+checks in `CHECK_ALL_ARCHIVE_PATCHES.txt`.
+
+Resume the same clean branch/worktree. Next: caption source reconstruction,
+all 32 cards, SAFE PATH DOWN and letter crossing, generalized mux preserving
+unchanged boundary pixels and exact source durations, independent full-output
+preservation, every mandatory film/package gate and phone sheet, J2243 and
+Chief review. No v04, approval, UAT, R2, Studio, generation or spend. No process
+from this checkpoint remains running; no detached render was started.
