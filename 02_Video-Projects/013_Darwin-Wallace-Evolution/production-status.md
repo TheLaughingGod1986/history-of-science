@@ -197,3 +197,28 @@ Repository verification for the J2498 evidence PR: `check_all.sh` → **ALL CHEC
 ## J2652 checkpoint — 12 Nov 2026
 
 110-beat v03 scope and 515-second diagnostic rough delivered to NAS; 45 word onset records. `clip_check`: passed=true, errors=[], warnings=[]. Repository check_all.sh: ALL CHECKS PASS. **Overall FIX, not stage PASS**: unsupported phrase cuts, four source-length overruns, short chapter titles and seven cue overlaps remain. £0. v02 and J1310 audio untouched. See `07_Edit-Project/timing_rough_J2652/REVIEW_v03.md`; J2652 is released for continuation, not finished.
+
+### J2652 continuation — 12 November 2026, Codex
+
+Cue-scope revision only; edit remains **FIX**, not approved. Evidence:
+`07_Edit-Project/timing_rough_J2652/REVIEW_v03b.md` on PR #551.
+43 cue intervals now avoid all seven earlier collisions; every named person
+keeps the original word onset and a 3–4 s hold. Measured pauses at −45 dB
+supply additional cut candidates without changing the WAV or transcript.
+Nine inherited cuts, four source overruns and five brief chapter cards still
+need correction before a new rough. No spend or generation; v02/v03 preserved.
+
+Validation output (technical checks, not a film-stage PASS):
+
+```text
+CUE SCHEDULE PASS: 43 cues, zero collisions; names remain at their word onset for 3–4 s.
+TIMING FIX: 9 unsupported existing cuts; 0 spans exceed 7 s without a verified boundary.
+Ran 4 tests ... OK
+ALL CHECKS PASS
+Independent inherited cuts, 7 s cap, unchanged VO hash, and no-render guard: PASS
+```
+
+The repository-wide ALL CHECKS PASS does not waive the timing FIX. J2652
+continues at 2 of 3; the next run must revise shot allocation and chapter
+presentation, carry the repaired cues forward, then render and inspect a new
+version. Nothing is waiting on Ben.

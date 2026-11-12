@@ -1,0 +1,1957 @@
+[
+  {
+    "start_s": 3.82,
+    "end_s": 4.26,
+    "word_index": 10,
+    "gap_s": 0.44,
+    "script": {
+      "token": "time,",
+      "context": "out how life changes over time, and then lock it"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 6.82,
+    "end_s": 7.9,
+    "word_index": 20,
+    "gap_s": 1.08,
+    "script": {
+      "token": "years?",
+      "context": "in a drawer for twenty years? By the end of"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 9.08,
+    "end_s": 9.08,
+    "word_index": 26,
+    "gap_s": 0.0,
+    "script": {
+      "token": "film,",
+      "context": "By the end of this film, you'll know how a"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 11.84,
+    "end_s": 12.38,
+    "word_index": 33,
+    "gap_s": 0.54,
+    "script": {
+      "token": "birds,",
+      "context": "know how a few unlabelled birds, eight years of barnacles,"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 13.58,
+    "end_s": 13.58,
+    "word_index": 37,
+    "gap_s": 0.0,
+    "script": {
+      "token": "barnacles,",
+      "context": "unlabelled birds, eight years of barnacles, and one letter from"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 20.22,
+    "end_s": 21.64,
+    "word_index": 56,
+    "gap_s": 1.42,
+    "script": {
+      "token": "open.",
+      "context": "secret in biology into the open. In the eighteen-thirties, most"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 23.48,
+    "end_s": 23.48,
+    "word_index": 59,
+    "gap_s": 0.0,
+    "script": {
+      "token": "1830s,",
+      "context": "In the eighteen-thirties, most naturalists"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 27.68,
+    "end_s": 27.68,
+    "word_index": 72,
+    "gap_s": 0.0,
+    "script": {
+      "token": "once,",
+      "context": "and plant had been made once, and never changed. Saying"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 29.22,
+    "end_s": 30.22,
+    "word_index": 75,
+    "gap_s": 1.0,
+    "script": {
+      "token": "changed.",
+      "context": "been made once, and never changed. Saying anything else could"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 32.26,
+    "end_s": 33.44,
+    "word_index": 82,
+    "gap_s": 1.18,
+    "script": {
+      "token": "scientist.",
+      "context": "anything else could ruin a scientist. But in the summer"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 35.42,
+    "end_s": 35.42,
+    "word_index": 88,
+    "gap_s": 0.0,
+    "script": {
+      "token": "1837,",
+      "context": "But in the summer of eighteen thirty-seven, a twenty-eight-year-old"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 40.6,
+    "end_s": 41.5,
+    "word_index": 102,
+    "gap_s": 0.9,
+    "script": {
+      "token": "notebook.",
+      "context": "little tree in a private notebook. One kind of animal"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 43.22,
+    "end_s": 43.22,
+    "word_index": 109,
+    "gap_s": 0.0,
+    "script": {
+      "token": "bottom,",
+      "context": "kind of animal at the bottom, branching into many at"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 45.44,
+    "end_s": 46.42,
+    "word_index": 115,
+    "gap_s": 0.98,
+    "script": {
+      "token": "top.",
+      "context": "branching into many at the top. Above it he wrote"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 48.3,
+    "end_s": 49.06,
+    "word_index": 121,
+    "gap_s": 0.76,
+    "script": {
+      "token": "words:",
+      "context": "Above it he wrote two words: \"I think.\" He kept"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 49.9,
+    "end_s": 51.28,
+    "word_index": 123,
+    "gap_s": 1.38,
+    "script": {
+      "token": "think.\"",
+      "context": "he wrote two words: \"I think.\" He kept the idea"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 54.3,
+    "end_s": 55.0,
+    "word_index": 133,
+    "gap_s": 0.7,
+    "script": {
+      "token": "years.",
+      "context": "mostly to himself for twenty years. Then, in June eighteen"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 55.24,
+    "end_s": 55.24,
+    "word_index": 134,
+    "gap_s": 0.0,
+    "script": {
+      "token": "Then,",
+      "context": "to himself for twenty years. Then, in June eighteen fifty-eight,"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 57.22,
+    "end_s": 57.22,
+    "word_index": 137,
+    "gap_s": 0.0,
+    "script": {
+      "token": "1858,",
+      "context": "Then, in June eighteen fifty-eight, a letter arrived"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 61.08,
+    "end_s": 62.08,
+    "word_index": 150,
+    "gap_s": 1.0,
+    "script": {
+      "token": "world.",
+      "context": "the other side of the world. Inside was Darwin's own"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 64.48,
+    "end_s": 64.8,
+    "word_index": 155,
+    "gap_s": 0.32,
+    "script": {
+      "token": "theory,",
+      "context": "world. Inside was Darwin's own theory, worked out by somebody"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 66.46,
+    "end_s": 67.68,
+    "word_index": 160,
+    "gap_s": 1.22,
+    "script": {
+      "token": "else.",
+      "context": "theory, worked out by somebody else. So how did a"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 74.6,
+    "end_s": 75.52,
+    "word_index": 181,
+    "gap_s": 0.92,
+    "script": {
+      "token": "changes?",
+      "context": "the secret of how life changes? When people picture Darwin"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 78.14,
+    "end_s": 78.14,
+    "word_index": 189,
+    "gap_s": 0.0,
+    "script": {
+      "token": "Islands,",
+      "context": "picture Darwin on the Galápagos Islands, they imagine a flash"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 81.22,
+    "end_s": 81.98,
+    "word_index": 198,
+    "gap_s": 0.76,
+    "script": {
+      "token": "beach.",
+      "context": "flash of genius on the beach. It didn't happen like"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 83.54,
+    "end_s": 84.22,
+    "word_index": 203,
+    "gap_s": 0.68,
+    "script": {
+      "token": "that.",
+      "context": "beach. It didn't happen like that. In eighteen thirty-five, Darwin"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 90.82,
+    "end_s": 91.24,
+    "word_index": 219,
+    "gap_s": 0.42,
+    "script": {
+      "token": "blackbirds,",
+      "context": "they were a mix of blackbirds, wrens and finches. For"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 92.18,
+    "end_s": 92.96,
+    "word_index": 222,
+    "gap_s": 0.78,
+    "script": {
+      "token": "finches.",
+      "context": "mix of blackbirds, wrens and finches. For most of them,"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 93.84,
+    "end_s": 93.84,
+    "word_index": 226,
+    "gap_s": 0.0,
+    "script": {
+      "token": "them,",
+      "context": "and finches. For most of them, he didn't write down"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 96.34,
+    "end_s": 97.4,
+    "word_index": 235,
+    "gap_s": 1.06,
+    "script": {
+      "token": "from.",
+      "context": "down which island they came from. Even the giant tortoises"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 99.66,
+    "end_s": 100.22,
+    "word_index": 243,
+    "gap_s": 0.56,
+    "script": {
+      "token": "him.",
+      "context": "giant tortoises should have told him. The ship's crew ate"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 103.38,
+    "end_s": 104.56,
+    "word_index": 253,
+    "gap_s": 1.18,
+    "script": {
+      "token": "overboard.",
+      "context": "them and threw the shells overboard. Then the islands' vice-governor,"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 107.86,
+    "end_s": 107.86,
+    "word_index": 260,
+    "gap_s": 0.0,
+    "script": {
+      "token": "Lawson,",
+      "context": "Then the islands' vice-governor, Nicholas Lawson, mentioned something odd: he"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 109.52,
+    "end_s": 110.34,
+    "word_index": 263,
+    "gap_s": 0.82,
+    "script": {
+      "token": "odd:",
+      "context": "vice-governor, Nicholas Lawson, mentioned something odd: he could tell which"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 114.86,
+    "end_s": 116.38,
+    "word_index": 279,
+    "gap_s": 1.52,
+    "script": {
+      "token": "shell.",
+      "context": "by the shape of its shell. Darwin only understood how"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 119.98,
+    "end_s": 120.88,
+    "word_index": 288,
+    "gap_s": 0.9,
+    "script": {
+      "token": "later.",
+      "context": "how important that was much later. Back in London, a"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 121.6,
+    "end_s": 121.6,
+    "word_index": 291,
+    "gap_s": 0.0,
+    "script": {
+      "token": "London,",
+      "context": "was much later. Back in London, a bird expert called"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 123.98,
+    "end_s": 124.38,
+    "word_index": 297,
+    "gap_s": 0.4,
+    "script": null,
+    "measured_pause": null
+  },
+  {
+    "start_s": 126.68,
+    "end_s": 127.52,
+    "word_index": 306,
+    "gap_s": 0.84,
+    "script": {
+      "token": "surprise.",
+      "context": "skins and gave him a surprise. They weren't a mix"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 129.0,
+    "end_s": 129.52,
+    "word_index": 312,
+    "gap_s": 0.52,
+    "script": {
+      "token": "all.",
+      "context": "They weren't a mix at all. They were all finches:"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 130.84,
+    "end_s": 131.4,
+    "word_index": 316,
+    "gap_s": 0.56,
+    "script": {
+      "token": "finches:",
+      "context": "at all. They were all finches: a group of close"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 132.96,
+    "end_s": 132.96,
+    "word_index": 321,
+    "gap_s": 0.0,
+    "script": {
+      "token": "cousins,",
+      "context": "finches: a group of close cousins, each with a differently"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 135.6,
+    "end_s": 135.6,
+    "word_index": 327,
+    "gap_s": 0.0,
+    "script": {
+      "token": "beak.",
+      "context": "each with a differently shaped beak. Heavy ones for cracking"
+    },
+    "measured_pause": {
+      "start_s": 135.544979,
+      "end_s": 136.071583,
+      "duration_s": 0.526604
+    }
+  },
+  {
+    "start_s": 138.36,
+    "end_s": 139.02,
+    "word_index": 333,
+    "gap_s": 0.66,
+    "script": {
+      "token": "seeds.",
+      "context": "Heavy ones for cracking hard seeds. Thin ones for picking"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 142.34,
+    "end_s": 143.72,
+    "word_index": 342,
+    "gap_s": 1.38,
+    "script": {
+      "token": "flowers.",
+      "context": "picking at insects and cactus flowers. Darwin had to borrow"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 149.64,
+    "end_s": 150.18,
+    "word_index": 360,
+    "gap_s": 0.54,
+    "script": {
+      "token": "island.",
+      "context": "which beak came from which island. And slowly, a question"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 151.04,
+    "end_s": 151.04,
+    "word_index": 362,
+    "gap_s": 0.0,
+    "script": {
+      "token": "slowly,",
+      "context": "came from which island. And slowly, a question formed. What"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 152.58,
+    "end_s": 153.5,
+    "word_index": 365,
+    "gap_s": 0.92,
+    "script": {
+      "token": "formed.",
+      "context": "island. And slowly, a question formed. What if these birds"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 157.5,
+    "end_s": 157.5,
+    "word_index": 377,
+    "gap_s": 0.0,
+    "script": {
+      "token": "finch,",
+      "context": "come from one kind of finch, long ago, and changed"
+    },
+    "measured_pause": {
+      "start_s": 157.452896,
+      "end_s": 157.781896,
+      "duration_s": 0.329
+    }
+  },
+  {
+    "start_s": 158.36,
+    "end_s": 158.36,
+    "word_index": 379,
+    "gap_s": 0.0,
+    "script": {
+      "token": "ago,",
+      "context": "one kind of finch, long ago, and changed to fit"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 160.8,
+    "end_s": 161.78,
+    "word_index": 385,
+    "gap_s": 0.98,
+    "script": {
+      "token": "island?",
+      "context": "and changed to fit each island? That's the tree in"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 163.36,
+    "end_s": 164.12,
+    "word_index": 391,
+    "gap_s": 0.76,
+    "script": {
+      "token": "notebook.",
+      "context": "That's the tree in the notebook. He could see that"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 167.92,
+    "end_s": 168.66,
+    "word_index": 403,
+    "gap_s": 0.74,
+    "script": {
+      "token": "many.",
+      "context": "of animal could split into many. But what was doing"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 170.16,
+    "end_s": 171.02,
+    "word_index": 409,
+    "gap_s": 0.86,
+    "script": {
+      "token": "shaping?",
+      "context": "But what was doing the shaping? On the twenty-eighth of"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 173.8,
+    "end_s": 173.8,
+    "word_index": 415,
+    "gap_s": 0.0,
+    "script": {
+      "token": "1838,",
+      "context": "eighteen thirty-eight, Darwin started reading"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 178.54,
+    "end_s": 179.08,
+    "word_index": 426,
+    "gap_s": 0.54,
+    "script": {
+      "token": "Malthus.",
+      "context": "about human populations by Thomas Malthus. And the missing piece"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 181.44,
+    "end_s": 182.7,
+    "word_index": 433,
+    "gap_s": 1.26,
+    "script": {
+      "token": "place.",
+      "context": "the missing piece fell into place. Every living thing has"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 186.32,
+    "end_s": 186.82,
+    "word_index": 444,
+    "gap_s": 0.5,
+    "script": {
+      "token": "survive.",
+      "context": "more young than can ever survive. There isn't enough food"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 188.98,
+    "end_s": 188.98,
+    "word_index": 452,
+    "gap_s": 0.0,
+    "script": {
+      "token": "them.",
+      "context": "enough food for all of them. So most die young."
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 190.8,
+    "end_s": 192.1,
+    "word_index": 456,
+    "gap_s": 1.3,
+    "script": {
+      "token": "young.",
+      "context": "of them. So most die young. Now picture a dry"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 194.26,
+    "end_s": 194.96,
+    "word_index": 464,
+    "gap_s": 0.7,
+    "script": {
+      "token": "island.",
+      "context": "a dry year on one island. Only hard, thick seeds"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 195.66,
+    "end_s": 195.66,
+    "word_index": 466,
+    "gap_s": 0.0,
+    "script": {
+      "token": "hard,",
+      "context": "year on one island. Only hard, thick seeds are left."
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 197.08,
+    "end_s": 197.64,
+    "word_index": 470,
+    "gap_s": 0.56,
+    "script": {
+      "token": "left.",
+      "context": "Only hard, thick seeds are left. The finches whose beaks"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 201.96,
+    "end_s": 202.44,
+    "word_index": 483,
+    "gap_s": 0.48,
+    "script": {
+      "token": "them.",
+      "context": "a little deeper can crack them. They live, and they"
+    },
+    "measured_pause": {
+      "start_s": 201.956896,
+      "end_s": 202.546437,
+      "duration_s": 0.589542
+    }
+  },
+  {
+    "start_s": 203.06,
+    "end_s": 203.06,
+    "word_index": 485,
+    "gap_s": 0.0,
+    "script": {
+      "token": "live,",
+      "context": "deeper can crack them. They live, and they raise chicks"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 206.16,
+    "end_s": 207.0,
+    "word_index": 494,
+    "gap_s": 0.84,
+    "script": {
+      "token": "theirs.",
+      "context": "chicks with deep beaks like theirs. Repeat that over thousands"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 209.34,
+    "end_s": 209.34,
+    "word_index": 500,
+    "gap_s": 0.0,
+    "script": {
+      "token": "generations,",
+      "context": "Repeat that over thousands of generations, and the whole species"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 211.76,
+    "end_s": 212.58,
+    "word_index": 505,
+    "gap_s": 0.82,
+    "script": {
+      "token": "changes.",
+      "context": "generations, and the whole species changes. Nobody steers it. Nature"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 213.72,
+    "end_s": 214.26,
+    "word_index": 508,
+    "gap_s": 0.54,
+    "script": {
+      "token": "it.",
+      "context": "whole species changes. Nobody steers it. Nature just keeps the"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 216.22,
+    "end_s": 217.14,
+    "word_index": 515,
+    "gap_s": 0.92,
+    "script": {
+      "token": "fit.",
+      "context": "just keeps the ones that fit. Darwin called it natural"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 219.32,
+    "end_s": 219.8,
+    "word_index": 520,
+    "gap_s": 0.48,
+    "script": {
+      "token": "selection.",
+      "context": "fit. Darwin called it natural selection. So why didn't he"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 221.58,
+    "end_s": 222.64,
+    "word_index": 527,
+    "gap_s": 1.06,
+    "script": {
+      "token": "world?",
+      "context": "why didn't he tell the world? He was afraid. Telling"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 223.52,
+    "end_s": 224.42,
+    "word_index": 530,
+    "gap_s": 0.9,
+    "script": {
+      "token": "afraid.",
+      "context": "tell the world? He was afraid. Telling a friend that"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 226.82,
+    "end_s": 227.06,
+    "word_index": 538,
+    "gap_s": 0.24,
+    "script": {
+      "token": "was,",
+      "context": "friend that species could change was, he wrote, \"like confessing"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 227.54,
+    "end_s": 228.08,
+    "word_index": 540,
+    "gap_s": 0.54,
+    "script": {
+      "token": "wrote,",
+      "context": "species could change was, he wrote, \"like confessing a murder.\""
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 229.34,
+    "end_s": 230.42,
+    "word_index": 544,
+    "gap_s": 1.08,
+    "script": {
+      "token": "murder.\"",
+      "context": "he wrote, \"like confessing a murder.\" And his wife, Emma,"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 231.12,
+    "end_s": 231.6,
+    "word_index": 547,
+    "gap_s": 0.48,
+    "script": {
+      "token": "wife,",
+      "context": "confessing a murder.\" And his wife, Emma, was deeply religious."
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 231.6,
+    "end_s": 231.86,
+    "word_index": 548,
+    "gap_s": 0.26,
+    "script": {
+      "token": "Emma,",
+      "context": "a murder.\" And his wife, Emma, was deeply religious. In"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 233.06,
+    "end_s": 234.2,
+    "word_index": 551,
+    "gap_s": 1.14,
+    "script": {
+      "token": "religious.",
+      "context": "his wife, Emma, was deeply religious. In eighteen forty-four he"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 237.04,
+    "end_s": 237.54,
+    "word_index": 558,
+    "gap_s": 0.5,
+    "script": {
+      "token": "out,",
+      "context": "forty-four he wrote it all out, about two hundred and"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 239.42,
+    "end_s": 239.42,
+    "word_index": 561,
+    "gap_s": 0.0,
+    "script": {
+      "token": "pages,",
+      "context": "about two hundred and thirty pages, sealed it, and left"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 240.64,
+    "end_s": 240.64,
+    "word_index": 563,
+    "gap_s": 0.0,
+    "script": {
+      "token": "it,",
+      "context": "hundred and thirty pages, sealed it, and left Emma a"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 242.12,
+    "end_s": 242.83,
+    "word_index": 568,
+    "gap_s": 0.71,
+    "script": {
+      "token": "letter.",
+      "context": "it, and left Emma a letter. If he died, she"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 243.72,
+    "end_s": 243.72,
+    "word_index": 571,
+    "gap_s": 0.0,
+    "script": {
+      "token": "died,",
+      "context": "Emma a letter. If he died, she was to pay"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 246.0,
+    "end_s": 247.04,
+    "word_index": 579,
+    "gap_s": 1.04,
+    "script": {
+      "token": "published.",
+      "context": "to pay to have it published. A few months later,"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 247.98,
+    "end_s": 247.98,
+    "word_index": 583,
+    "gap_s": 0.0,
+    "script": {
+      "token": "later,",
+      "context": "it published. A few months later, an unsigned book claiming"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 253.78,
+    "end_s": 254.76,
+    "word_index": 597,
+    "gap_s": 0.98,
+    "script": {
+      "token": "scientists.",
+      "context": "time was torn apart by scientists. Then he spent about"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 257.98,
+    "end_s": 258.98,
+    "word_index": 605,
+    "gap_s": 1.0,
+    "script": {
+      "token": "barnacles.",
+      "context": "spent about eight years studying barnacles. So many barnacles, the"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 260.0,
+    "end_s": 260.0,
+    "word_index": 608,
+    "gap_s": 0.0,
+    "script": {
+      "token": "barnacles,",
+      "context": "years studying barnacles. So many barnacles, the story goes, that"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 260.98,
+    "end_s": 260.98,
+    "word_index": 611,
+    "gap_s": 0.0,
+    "script": {
+      "token": "goes,",
+      "context": "So many barnacles, the story goes, that one of his"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 266.02,
+    "end_s": 267.48,
+    "word_index": 625,
+    "gap_s": 1.46,
+    "script": {
+      "token": "barnacles.",
+      "context": "where their father did *his* barnacles. Darwin's friends kept warning"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 270.66,
+    "end_s": 270.66,
+    "word_index": 636,
+    "gap_s": 0.0,
+    "script": {
+      "token": "long,",
+      "context": "that if he waited too long, someone else would get"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 272.72,
+    "end_s": 273.68,
+    "word_index": 642,
+    "gap_s": 0.96,
+    "script": {
+      "token": "first.",
+      "context": "someone else would get there first. Who was that someone?"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 274.8,
+    "end_s": 276.16,
+    "word_index": 646,
+    "gap_s": 1.36,
+    "script": {
+      "token": "someone?",
+      "context": "there first. Who was that someone? Alfred Russel Wallace was"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 279.08,
+    "end_s": 279.7,
+    "word_index": 654,
+    "gap_s": 0.62,
+    "script": {
+      "token": "Darwin.",
+      "context": "Wallace was not rich like Darwin. He made his living"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 282.8,
+    "end_s": 283.7,
+    "word_index": 665,
+    "gap_s": 0.9,
+    "script": {
+      "token": "museums.",
+      "context": "animals and selling them to museums. In eighteen fifty-two, coming"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 287.3,
+    "end_s": 287.3,
+    "word_index": 675,
+    "gap_s": 0.0,
+    "script": {
+      "token": "Amazon,",
+      "context": "from four years in the Amazon, his ship caught fire"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 289.62,
+    "end_s": 290.5,
+    "word_index": 681,
+    "gap_s": 0.88,
+    "script": {
+      "token": "sank.",
+      "context": "his ship caught fire and sank. Almost his whole collection"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 292.88,
+    "end_s": 293.5,
+    "word_index": 689,
+    "gap_s": 0.62,
+    "script": {
+      "token": "it.",
+      "context": "whole collection went down with it. He spent ten days"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 296.22,
+    "end_s": 296.84,
+    "word_index": 699,
+    "gap_s": 0.62,
+    "script": {
+      "token": "sea.",
+      "context": "in an open boat at sea. He went out again"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 298.12,
+    "end_s": 298.44,
+    "word_index": 704,
+    "gap_s": 0.32,
+    "script": {
+      "token": "anyway,",
+      "context": "sea. He went out again anyway, this time to the"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 301.76,
+    "end_s": 302.66,
+    "word_index": 715,
+    "gap_s": 0.9,
+    "script": {
+      "token": "Malaysia.",
+      "context": "what is now Indonesia and Malaysia. Over eight years he"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 307.32,
+    "end_s": 308.62,
+    "word_index": 725,
+    "gap_s": 1.3,
+    "script": {
+      "token": "specimens.",
+      "context": "a hundred and twenty-five thousand specimens. In February eighteen fifty-eight,"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 311.96,
+    "end_s": 311.96,
+    "word_index": 733,
+    "gap_s": 0.0,
+    "script": {
+      "token": "fever,",
+      "context": "fifty-eight, lying ill with a fever, Wallace thought about the"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 314.92,
+    "end_s": 314.92,
+    "word_index": 741,
+    "gap_s": 0.0,
+    "script": {
+      "token": "Malthus.",
+      "context": "about the same book by Malthus. And, like Darwin twenty"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 315.78,
+    "end_s": 315.78,
+    "word_index": 742,
+    "gap_s": 0.0,
+    "script": {
+      "token": "And,",
+      "context": "the same book by Malthus. And, like Darwin twenty years"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 317.88,
+    "end_s": 317.88,
+    "word_index": 747,
+    "gap_s": 0.0,
+    "script": {
+      "token": "before,",
+      "context": "And, like Darwin twenty years before, he saw it: the"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 319.08,
+    "end_s": 319.58,
+    "word_index": 750,
+    "gap_s": 0.5,
+    "script": {
+      "token": "it:",
+      "context": "twenty years before, he saw it: the ones that fit"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 321.36,
+    "end_s": 322.54,
+    "word_index": 755,
+    "gap_s": 1.18,
+    "script": {
+      "token": "survive.",
+      "context": "it: the ones that fit survive. Within days he had"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 324.22,
+    "end_s": 324.22,
+    "word_index": 762,
+    "gap_s": 0.0,
+    "script": {
+      "token": "up,",
+      "context": "days he had written it up, and he posted it"
+    },
+    "measured_pause": {
+      "start_s": 324.127292,
+      "end_s": 324.633708,
+      "duration_s": 0.506417
+    }
+  },
+  {
+    "start_s": 328.24,
+    "end_s": 328.76,
+    "word_index": 776,
+    "gap_s": 0.52,
+    "script": {
+      "token": "interested.",
+      "context": "naturalist he knew would be interested. Charles Darwin. So Darwin"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 329.7,
+    "end_s": 330.68,
+    "word_index": 778,
+    "gap_s": 0.98,
+    "script": {
+      "token": "Darwin.",
+      "context": "knew would be interested. Charles Darwin. So Darwin could simply"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 332.84,
+    "end_s": 332.84,
+    "word_index": 785,
+    "gap_s": 0.0,
+    "script": {
+      "token": "letter,",
+      "context": "Darwin could simply hide the letter, and keep the credit?"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 333.94,
+    "end_s": 334.42,
+    "word_index": 789,
+    "gap_s": 0.48,
+    "script": {
+      "token": "credit?",
+      "context": "the letter, and keep the credit? Case closed? Wrong. On"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 335.0,
+    "end_s": 335.72,
+    "word_index": 791,
+    "gap_s": 0.72,
+    "script": {
+      "token": "closed?",
+      "context": "and keep the credit? Case closed? Wrong. On the eighteenth"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 336.14,
+    "end_s": 337.3,
+    "word_index": 792,
+    "gap_s": 1.16,
+    "script": {
+      "token": "Wrong.",
+      "context": "keep the credit? Case closed? Wrong. On the eighteenth of"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 343.9,
+    "end_s": 344.98,
+    "word_index": 809,
+    "gap_s": 1.08,
+    "script": null,
+    "measured_pause": null
+  },
+  {
+    "start_s": 346.2,
+    "end_s": 346.2,
+    "word_index": 812,
+    "gap_s": 0.0,
+    "script": {
+      "token": "originality,",
+      "context": "friend Charles Lyell: \"All my originality, whatever it may amount"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 347.76,
+    "end_s": 347.76,
+    "word_index": 817,
+    "gap_s": 0.0,
+    "script": {
+      "token": "to,",
+      "context": "originality, whatever it may amount to, will be smashed.\" Darwin"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 348.74,
+    "end_s": 350.0,
+    "word_index": 820,
+    "gap_s": 1.26,
+    "script": {
+      "token": "smashed.\"",
+      "context": "may amount to, will be smashed.\" Darwin said he would"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 354.9,
+    "end_s": 355.58,
+    "word_index": 836,
+    "gap_s": 0.68,
+    "script": {
+      "token": "Wallace.",
+      "context": "to have acted unfairly to Wallace. Three days later, his"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 356.98,
+    "end_s": 356.98,
+    "word_index": 839,
+    "gap_s": 0.0,
+    "script": {
+      "token": "later,",
+      "context": "unfairly to Wallace. Three days later, his baby son died"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 359.54,
+    "end_s": 360.98,
+    "word_index": 846,
+    "gap_s": 1.44,
+    "script": {
+      "token": "fever.",
+      "context": "baby son died of scarlet fever. His friends found a"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 362.52,
+    "end_s": 363.16,
+    "word_index": 852,
+    "gap_s": 0.64,
+    "script": {
+      "token": "out.",
+      "context": "His friends found a way out. What happened when the"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 365.44,
+    "end_s": 366.28,
+    "word_index": 859,
+    "gap_s": 0.84,
+    "script": {
+      "token": "heard?",
+      "context": "happened when the world finally heard? On the first of"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 368.52,
+    "end_s": 368.52,
+    "word_index": 865,
+    "gap_s": 0.0,
+    "script": {
+      "token": "1858,",
+      "context": "eighteen fifty-eight, Darwin's friends"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 371.82,
+    "end_s": 371.82,
+    "word_index": 872,
+    "gap_s": 0.0,
+    "script": null,
+    "measured_pause": {
+      "start_s": 371.79475,
+      "end_s": 372.186042,
+      "duration_s": 0.391292
+    }
+  },
+  {
+    "start_s": 376.56,
+    "end_s": 377.46,
+    "word_index": 885,
+    "gap_s": 0.9,
+    "script": {
+      "token": "London.",
+      "context": "at the Linnean Society in London. Wallace's paper, and older"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 378.12,
+    "end_s": 378.12,
+    "word_index": 887,
+    "gap_s": 0.0,
+    "script": {
+      "token": "paper,",
+      "context": "Linnean Society in London. Wallace's paper, and older writing from"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 382.34,
+    "end_s": 383.2,
+    "word_index": 899,
+    "gap_s": 0.86,
+    "script": {
+      "token": "first.",
+      "context": "show he had the idea first. Neither man was in"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 384.46,
+    "end_s": 385.18,
+    "word_index": 905,
+    "gap_s": 0.72,
+    "script": {
+      "token": "room.",
+      "context": "Neither man was in the room. Darwin was at home,"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 386.38,
+    "end_s": 386.38,
+    "word_index": 909,
+    "gap_s": 0.0,
+    "script": {
+      "token": "home,",
+      "context": "the room. Darwin was at home, grieving for his son."
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 387.82,
+    "end_s": 388.72,
+    "word_index": 913,
+    "gap_s": 0.9,
+    "script": {
+      "token": "son.",
+      "context": "at home, grieving for his son. Wallace hadn't even been"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 390.38,
+    "end_s": 391.18,
+    "word_index": 918,
+    "gap_s": 0.8,
+    "script": {
+      "token": "asked.",
+      "context": "son. Wallace hadn't even been asked. He was still in"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 392.32,
+    "end_s": 392.32,
+    "word_index": 924,
+    "gap_s": 0.0,
+    "script": {
+      "token": "islands,",
+      "context": "He was still in the islands, and didn't know for"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 394.06,
+    "end_s": 395.02,
+    "word_index": 929,
+    "gap_s": 0.96,
+    "script": {
+      "token": "months.",
+      "context": "islands, and didn't know for months. And the reaction? Almost"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 395.82,
+    "end_s": 396.66,
+    "word_index": 932,
+    "gap_s": 0.84,
+    "script": {
+      "token": "reaction?",
+      "context": "know for months. And the reaction? Almost nothing. The next"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 397.46,
+    "end_s": 398.2,
+    "word_index": 934,
+    "gap_s": 0.74,
+    "script": {
+      "token": "nothing.",
+      "context": "months. And the reaction? Almost nothing. The next year, the"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 398.98,
+    "end_s": 398.98,
+    "word_index": 937,
+    "gap_s": 0.0,
+    "script": {
+      "token": "year,",
+      "context": "reaction? Almost nothing. The next year, the society's president looked"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 404.66,
+    "end_s": 405.3,
+    "word_index": 954,
+    "gap_s": 0.64,
+    "script": {
+      "token": "discovery.",
+      "context": "been marked by any striking discovery. That pushed Darwin to"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 406.98,
+    "end_s": 407.82,
+    "word_index": 959,
+    "gap_s": 0.84,
+    "script": {
+      "token": "write.",
+      "context": "discovery. That pushed Darwin to write. In a little over"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 411.56,
+    "end_s": 411.56,
+    "word_index": 972,
+    "gap_s": 0.0,
+    "script": {
+      "token": "everyone:",
+      "context": "finished a shorter book for everyone: *On the Origin of"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 413.64,
+    "end_s": 414.44,
+    "word_index": 977,
+    "gap_s": 0.8,
+    "script": {
+      "token": "Species*.",
+      "context": "everyone: *On the Origin of Species*. It came out on"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 418.2,
+    "end_s": 418.2,
+    "word_index": 986,
+    "gap_s": 0.0,
+    "script": {
+      "token": "1859,",
+      "context": "eighteen fifty-nine, and booksellers had ordered every copy"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 423.4,
+    "end_s": 424.58,
+    "word_index": 998,
+    "gap_s": 1.18,
+    "script": {
+      "token": "sale.",
+      "context": "before it even went on sale. And Wallace? There was"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 425.12,
+    "end_s": 426.02,
+    "word_index": 1000,
+    "gap_s": 0.9,
+    "script": {
+      "token": "Wallace?",
+      "context": "even went on sale. And Wallace? There was no bitter"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 427.46,
+    "end_s": 428.22,
+    "word_index": 1005,
+    "gap_s": 0.76,
+    "script": {
+      "token": "fight.",
+      "context": "Wallace? There was no bitter fight. When he read the"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 429.68,
+    "end_s": 429.68,
+    "word_index": 1013,
+    "gap_s": 0.0,
+    "script": {
+      "token": "islands,",
+      "context": "read the book in the islands, he praised it, and"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 430.8,
+    "end_s": 430.8,
+    "word_index": 1016,
+    "gap_s": 0.0,
+    "script": {
+      "token": "it,",
+      "context": "in the islands, he praised it, and said Darwin had"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 434.24,
+    "end_s": 435.08,
+    "word_index": 1028,
+    "gap_s": 0.84,
+    "script": {
+      "token": "could.",
+      "context": "work far better than he could. Years later he even"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 440.12,
+    "end_s": 441.08,
+    "word_index": 1040,
+    "gap_s": 0.96,
+    "script": {
+      "token": "*Darwinism*.",
+      "context": "own book about the theory *Darwinism*. But one problem worried"
+    },
+    "measured_pause": {
+      "start_s": 440.073042,
+      "end_s": 441.2615,
+      "duration_s": 1.188458
+    }
+  },
+  {
+    "start_s": 444.04,
+    "end_s": 444.52,
+    "word_index": 1051,
+    "gap_s": 0.48,
+    "script": {
+      "token": "life.",
+      "context": "for the rest of his life. And the answer was"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 447.16,
+    "end_s": 448.1,
+    "word_index": 1058,
+    "gap_s": 0.94,
+    "script": {
+      "token": "print.",
+      "context": "the answer was already in print. The problem came from"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 453.0,
+    "end_s": 453.88,
+    "word_index": 1069,
+    "gap_s": 0.88,
+    "script": null,
+    "measured_pause": null
+  },
+  {
+    "start_s": 455.22,
+    "end_s": 455.36,
+    "word_index": 1073,
+    "gap_s": 0.14,
+    "script": null,
+    "measured_pause": null
+  },
+  {
+    "start_s": 456.88,
+    "end_s": 456.88,
+    "word_index": 1078,
+    "gap_s": 0.0,
+    "script": {
+      "token": "children,",
+      "context": "parents' traits blended in their children, like mixing paint. If"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 458.14,
+    "end_s": 458.78,
+    "word_index": 1081,
+    "gap_s": 0.64,
+    "script": {
+      "token": "paint.",
+      "context": "in their children, like mixing paint. If that was true,"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 459.64,
+    "end_s": 459.64,
+    "word_index": 1085,
+    "gap_s": 0.0,
+    "script": {
+      "token": "true,",
+      "context": "mixing paint. If that was true, one bird with a"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 463.66,
+    "end_s": 464.0,
+    "word_index": 1099,
+    "gap_s": 0.34,
+    "script": {
+      "token": "beak,",
+      "context": "have children with a half-better beak, then a quarter-better. The"
+    },
+    "measured_pause": {
+      "start_s": 463.626979,
+      "end_s": 464.031333,
+      "duration_s": 0.404354
+    }
+  },
+  {
+    "start_s": 465.02,
+    "end_s": 465.66,
+    "word_index": 1103,
+    "gap_s": 0.64,
+    "script": null,
+    "measured_pause": null
+  },
+  {
+    "start_s": 468.92,
+    "end_s": 469.74,
+    "word_index": 1113,
+    "gap_s": 0.82,
+    "script": {
+      "token": "it.",
+      "context": "away before nature could keep it. Darwin never solved it."
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 471.06,
+    "end_s": 471.8,
+    "word_index": 1117,
+    "gap_s": 0.74,
+    "script": {
+      "token": "it.",
+      "context": "keep it. Darwin never solved it. But a year earlier,"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 472.72,
+    "end_s": 472.72,
+    "word_index": 1121,
+    "gap_s": 0.0,
+    "script": {
+      "token": "earlier,",
+      "context": "solved it. But a year earlier, in eighteen sixty-six, a"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 474.08,
+    "end_s": 474.08,
+    "word_index": 1123,
+    "gap_s": 0.0,
+    "script": {
+      "token": "1866,",
+      "context": "in eighteen sixty-six, a friar"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 478.9,
+    "end_s": 479.92,
+    "word_index": 1135,
+    "gap_s": 1.02,
+    "script": {
+      "token": "plants.",
+      "context": "published his work on pea plants. Traits don't blend like"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 481.7,
+    "end_s": 482.08,
+    "word_index": 1140,
+    "gap_s": 0.38,
+    "script": {
+      "token": "paint.",
+      "context": "plants. Traits don't blend like paint. They're passed on whole,"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 483.22,
+    "end_s": 483.22,
+    "word_index": 1144,
+    "gap_s": 0.0,
+    "script": {
+      "token": "whole,",
+      "context": "like paint. They're passed on whole, like beads. And one"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 484.22,
+    "end_s": 485.64,
+    "word_index": 1146,
+    "gap_s": 1.42,
+    "script": {
+      "token": "beads.",
+      "context": "They're passed on whole, like beads. And one more thing."
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 486.82,
+    "end_s": 487.78,
+    "word_index": 1150,
+    "gap_s": 0.96,
+    "script": {
+      "token": "thing.",
+      "context": "like beads. And one more thing. \"Survival of the fittest\""
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 490.28,
+    "end_s": 490.94,
+    "word_index": 1157,
+    "gap_s": 0.66,
+    "script": {
+      "token": "phrase.",
+      "context": "of the fittest\" wasn't Darwin's phrase. The writer Herbert Spencer"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 493.54,
+    "end_s": 493.54,
+    "word_index": 1163,
+    "gap_s": 0.0,
+    "script": {
+      "token": "it,",
+      "context": "The writer Herbert Spencer coined it, and Darwin only added"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 496.54,
+    "end_s": 497.8,
+    "word_index": 1172,
+    "gap_s": 1.26,
+    "script": {
+      "token": "later.",
+      "context": "added it to his book later. Fittest never meant the"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 499.48,
+    "end_s": 499.98,
+    "word_index": 1177,
+    "gap_s": 0.5,
+    "script": {
+      "token": "strongest.",
+      "context": "later. Fittest never meant the strongest. It means the one"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 502.36,
+    "end_s": 502.36,
+    "word_index": 1186,
+    "gap_s": 0.0,
+    "script": {
+      "token": "best,",
+      "context": "one that fits its world best, like a key in"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 504.08,
+    "end_s": 505.08,
+    "word_index": 1192,
+    "gap_s": 1.0,
+    "script": {
+      "token": "lock.",
+      "context": "like a key in a lock. Put Darwin's selection together"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 507.78,
+    "end_s": 507.78,
+    "word_index": 1199,
+    "gap_s": 0.0,
+    "script": {
+      "token": "beads,",
+      "context": "Darwin's selection together with Mendel's beads, and you have the"
+    },
+    "measured_pause": null
+  },
+  {
+    "start_s": 512.24,
+    "end_s": 515.0,
+    "word_index": 1212,
+    "gap_s": 2.76,
+    "script": {
+      "context": "End of locked narration; trailing silence."
+    }
+  }
+]
