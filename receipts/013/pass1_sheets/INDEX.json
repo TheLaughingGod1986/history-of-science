@@ -1308,6 +1308,151 @@
       ],
       "clip_sha256": "d167fdaa96d52e661a861052daea49d84a59ce17bfb03ded0a6591c861598fc2",
       "start_frame_sha256": "ed4dcee94c18822da008d8226161701358b35fc8171d44521c64ea5e97f38a50"
+    },
+    {
+      "n": 46,
+      "batch": 10,
+      "row_id": "P4:09b_smashed_letter_pen",
+      "take": 1,
+      "file": "P4:09b_smashed_letter_pen_take1_0.5s.jpg",
+      "source_sheet_sha256": "2794962ba9b0d9d524d1830ed7c521aceafabdc8602c0e8fd17d3108b62b154a",
+      "committed_sha256": "20dac4d8cfa4fca54f6f90f127cfc3bd772bbf7bf974085c7e7a0a9dd219d6ce",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 80,
+      "bytes": 525847,
+      "duration_s": 7.916667,
+      "frames": 190,
+      "fps": 24.0,
+      "use_s": 5.3,
+      "film_window_s": [
+        344.2,
+        349.5
+      ],
+      "clip_sha256": "dacb60bd68a5c892d5f9fd5e0e2e36f9e2a4866d7bbe933bfbcf8ae92ed8b89a",
+      "start_frame_sha256": "4fcc6595578042967e61b469d4b5ffe611a096c56c318c6acdde359da7b76a2e"
+    },
+    {
+      "n": 47,
+      "batch": 10,
+      "row_id": "P4:10_fairness_25_june",
+      "take": 1,
+      "file": "P4:10_fairness_25_june_take1_0.5s.jpg",
+      "source_sheet_sha256": "d7d42f5e5bd5ff75726c7d8560472cd37747ba0a72fcddbee69383b755afafc0",
+      "committed_sha256": "9e7d8d06758206fe136335e0b06520971dc4428c43bf273e848e1021ee3498da",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 80,
+      "bytes": 555011,
+      "duration_s": 7.916667,
+      "frames": 190,
+      "fps": 24.0,
+      "use_s": 6.08,
+      "film_window_s": [
+        349.5,
+        355.58
+      ],
+      "clip_sha256": "a3008b0a20514a8a273fb7492c55409ec5d9a0eb145f2d5400e828d7b1d6f841",
+      "start_frame_sha256": "b088c6ee972abfb385ffbbe21d36df6c2fe5dacbe146817c56c83faf4d17f39f"
+    },
+    {
+      "n": 48,
+      "batch": 10,
+      "row_id": "P4:11_down_house_grief",
+      "take": 1,
+      "file": "P4:11_down_house_grief_take1_0.5s.jpg",
+      "source_sheet_sha256": "3c4e284649863daf31548ea965855d1007fbc805a5dd09754b67f58da486a6d3",
+      "committed_sha256": "b4545c1ffecd4a2960bb8b000bedd0e10c786511cf6a5a60f6541302a4f5c78a",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 75,
+      "bytes": 536293,
+      "duration_s": 7.916667,
+      "frames": 190,
+      "fps": 24.0,
+      "use_s": 5.4,
+      "film_window_s": [
+        355.58,
+        360.98
+      ],
+      "clip_sha256": "797eaadce55c54113c0c56ada50473b85e49c9fbe810ef8d3e7ebf8dbea058dc",
+      "start_frame_sha256": "56f808e833a6a1295402c92f092a917de26e0d8aedcf02a7774825eae4b4046c"
+    },
+    {
+      "n": 49,
+      "batch": 10,
+      "row_id": "P4:12_lyell_hooker_bundle",
+      "take": 1,
+      "file": "P4:12_lyell_hooker_bundle_take1_0.5s.jpg",
+      "source_sheet_sha256": "80fefc8d6f78a40dded9055bec3504b7c1170f2b726afb308df1627483db8d24",
+      "committed_sha256": "d5f869029af79c95d5018b9adf9291de6b303617d728e2922e9d1c245e565199",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 65,
+      "bytes": 569407,
+      "duration_s": 7.916667,
+      "frames": 190,
+      "fps": 24.0,
+      "use_s": 5.36,
+      "film_window_s": [
+        360.98,
+        366.34
+      ],
+      "clip_sha256": "820c1433ca609245b150409f709c287d6c25a58770ad962b6ea22768ff3a492a",
+      "start_frame_sha256": "696d7eb39e0f083c174125456ed882bcab881ce7a0082be26f8c88f53a6661b1"
+    },
+    {
+      "n": 50,
+      "batch": 10,
+      "row_id": "P5:02a_linnean_reading",
+      "take": 1,
+      "file": "P5:02a_linnean_reading_take1_0.5s.jpg",
+      "source_sheet_sha256": "840c96180b6d274814670bbc18632e1ab5fb65f837a3001c1669b80e4eadb58a",
+      "committed_sha256": "0dc2a186e64521545da430f128652a7ce098da61a61892d3630b0702c17f9975",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 75,
+      "bytes": 584448,
+      "duration_s": 8.0,
+      "frames": 192,
+      "fps": 24.0,
+      "use_s": 8.0,
+      "film_window_s": [
+        368.56,
+        376.56
+      ],
+      "clip_sha256": "dc7de232f76b5bde854dd1cb512cf2a868349fa81f9126e6d0ccfda39b9911ea",
+      "start_frame_sha256": "91d742b73943ef1cfe144f418b4a5b737600201025e6e103eaac2441bf0a6b6f"
     }
   ]
 }
