@@ -24,14 +24,7 @@ const CARDS: {
   { platform: "threads", label: "Threads", oauthReady: hasThreadsOAuth },
 ];
 
-export default async function ConnectionsPage({
-  searchParams,
-}: {
-  searchParams: Promise<{ connected?: string; error?: string }>;
-}) {
-  const sp = await searchParams;
-  const headerList = await headers();
-  const publicBase = getPublicBaseUrl({ headers: headerList });
+async function getConnections() {
   const connections = await prisma.platformConnection.findMany({
     where: { disconnectedAt: null },
     orderBy: { updatedAt: "desc" },
@@ -41,6 +34,19 @@ export default async function ConnectionsPage({
   });
   const workerOnline =
     heartbeat && Date.now() - heartbeat.lastHeartbeatAt.getTime() < 30_000;
+
+  return { connections, heartbeat, workerOnline };
+}
+
+export default async function ConnectionsPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ connected?: string; error?: string }>;
+}) {
+  const sp = await searchParams;
+  const headerList = await headers();
+  const publicBase = getPublicBaseUrl({ headers: headerList });
+  const { connections, heartbeat, workerOnline } = await getConnections();
 
   return (
     <div className="space-y-6">
