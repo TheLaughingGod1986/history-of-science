@@ -1,6 +1,6 @@
 # 013 pass-1 contact sheets (review only)
 
-Rows 1–15, batches 01–03. One JPEG per take. Spacing is 0.5 s (start frame, then every 0.5 s, then the clip end).
+Rows 1–20, batches 01–04. One JPEG per take. Spacing is 0.5 s (start frame, then every 0.5 s, then the clip end).
 These are the archive sheets recompressed so each file stays under 600 KB (long edge ≤ 2400 px). `source_sheet_sha256` is the archive original. `committed_sha256` is the file in this folder.
 This branch is for sheet review. It is not merged.
 
@@ -21,5 +21,10 @@ This branch is for sheet review. It is not merged.
 | 13 | 03 | `P2:02_galapagos_beach_myth` | `P2:02_galapagos_beach_myth_take1_0.5s.jpg` | 50 | 613061 | 2400×1942 | `589e53755ae051e606fb328df8004657a0f22f7fbe6ebc669e15efe66e7c63e6` |
 | 14 | 03 | `P2:03_unlabelled_bagging` | `P2:03_unlabelled_bagging_take1_0.5s.jpg` | 55 | 612050 | 2400×1942 | `026f621f6c2ba6db24e5d7e2760228f3c750bc39321bf13194948ddc2d8ac5ab` |
 | 15 | 03 | `P2:04_blank_tags_row` | `P2:04_blank_tags_row_take1_0.5s.jpg` | 80 | 523282 | 2400×1942 | `5855af33696939da05ba23c662004c883f511fd5e0a4c19977b199b25e44fb94` |
+| 16 | 04 | `P2:05_tortoise_overboard` | `P2:05_tortoise_overboard_take1_0.5s.jpg` | 60 | 604624 | 2400×1942 | `839c023d553dc8bcb45bcca613f8aff41902b98d80e912af7e62964fd4efef29` |
+| 17 | 04 | `P2:06a_lawson_jetty` | `P2:06a_lawson_jetty_take1_0.5s.jpg` | 65 | 614099 | 2400×1942 | `27e89c744c12d4a1737a1596e8316c4ee01439d6d42e8f92a7e8b24bea12dcbf` |
+| 18 | 04 | `P2:07_darwin_notebook_wait` | `P2:07_darwin_notebook_wait_take1_0.5s.jpg` | 75 | 581745 | 2400×1942 | `9915ab0f8787bc2febe26eb4ddeeb518c1f1a77bc9ae0fadb4f092a8d2849f81` |
+| 19 | 04 | `P2:08a_gould_sorting` | `P2:08a_gould_sorting_take1_0.5s.jpg` | 75 | 612364 | 2400×1942 | `5c01df6668d24a1f02fdbda183ba740b93ef2850b5924e52dce077537b0c668a` |
+| 20 | 04 | `P2:08b_gould_skins_closeup` | `P2:08b_gould_skins_closeup_take1_0.5s.jpg` | 80 | 551558 | 2400×1942 | `d9e0b66054818d4711d31b290032f7253d6677d80fce3b92f6a6e19e88c24249` |
 
 Clip and start-still hashes, duration and film window are in `INDEX.json`.
