@@ -1,0 +1,234 @@
+{
+  "job": "J2563",
+  "film_stage_approved": false,
+  "motion_review": false,
+  "audio_review": false,
+  "spend_gbp": 0,
+  "credits_used": 0,
+  "plan_sha256": "df11c9e00116c7a44390535e0fb569f682735d3f8ed7206ed45926f768ee7238",
+  "stt_sha256": "f7abac2d4bf6c58558eee80e6d201395640d0514988dcbeca795dd21dcf0d577",
+  "rows": [
+    {
+      "row_id": "P1:09b",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_archive_composites_v06/P1_09b.mp4",
+      "sha256": "9ac0c354e9af646c317a1981fa18ab4816e602271ac24a965a89fd56fc2e90f0",
+      "source": {
+        "asset_id": "archive_P1_09b",
+        "row_id": "P1:09b",
+        "page_url": "https://commons.wikimedia.org/wiki/File:Hand_coloured_illustration_of_surgical_instruments_Wellcome_L0041135.jpg",
+        "file_name": "archive_P1_09b.jpg",
+        "sha256": "96f8c9fd9f5546a4252a31fbb039244ca9ba7c8a0cc7b1499d1e79dfc14984fb",
+        "bytes": 2803234,
+        "licence": "CC BY 4.0",
+        "credit": "Paré instruments, Wellcome / CC BY 4.0",
+        "depicts": null,
+        "status": "identity and layout inspected in stills; composite unbuilt"
+      },
+      "page_extract": null,
+      "source_crop_xyxy": null,
+      "plan_in_s": 78.2,
+      "plan_out_s": 81.68,
+      "frames": 104,
+      "duration_s": 3.466667,
+      "quantization_error_s": -0.013333333333333197,
+      "cues": [],
+      "credit_cues": [
+        {
+          "kind": "archive_credit",
+          "text": "Paré instruments, Wellcome / CC BY 4.0",
+          "in_s": 78.2,
+          "out_s": 81.68,
+          "word_indices": [],
+          "reason": "Source attribution, deferred while another label is visible"
+        }
+      ],
+      "review_status": "preliminary_requires_capable_motion_and_editorial_review",
+      "recipe": "Source fit on warm mount, lateral 10px sine drift; original pages with source-coordinate ink underlines; no narration change"
+    },
+    {
+      "row_id": "P2:04a_arch_davy_1800",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_archive_composites_v06/P2_04a_arch_davy_1800.mp4",
+      "sha256": "1d169282fd537ea80fde5fe1eab1974ac84688731aef864fe6eff29b8796fabe",
+      "source": {
+        "asset_id": "archive_P2_04a_arch_davy_1800",
+        "row_id": "P2:04a_arch_davy_1800",
+        "page_url": "https://commons.wikimedia.org/wiki/File:Researches,_chemical_and_philosophical_-_chiefly_concerning_nitrous_oxide,_or_diphlogisticated_nitrous_air,_and_its_respiration_(IA_researcheschemic00davy).pdf",
+        "file_name": "archive_P2_04a_arch_davy_1800.pdf",
+        "sha256": "faddf93e720d4fa3d8a5137183d39819de53905471e2e43fa60d3c86331e0d92",
+        "bytes": 39957125,
+        "licence": "Public domain",
+        "credit": "Davy, Researches (1800), p. 556",
+        "depicts": null,
+        "status": "identity and layout inspected in stills; composite unbuilt"
+      },
+      "page_extract": {
+        "asset_id": "archive_P2_04a_arch_davy_1800",
+        "pdf_page_1based": 584,
+        "printed_page": "556",
+        "description": "Davy 1800: physical pain and surgical operations",
+        "file_name": "archive_P2_04a_arch_davy_1800_pdf_page_584.png",
+        "sha256": "7e483520ab93a5d06cb48f599745f7b8aaa7b668ba68af405e5511a163bcc3d4",
+        "width": 1050,
+        "height": 1872,
+        "extracted_text_file": "archive_P2_04a_arch_davy_1800_pdf_page_584.txt",
+        "text_sha256": "5903b0cb6f6a6bf6f7e3d4886891779e3fd348296ae34a0b16e1bed939b5d1c7",
+        "source_pdf_sha256": "faddf93e720d4fa3d8a5137183d39819de53905471e2e43fa60d3c86331e0d92",
+        "verification": "Printed page and relevant passage visually inspected; OCR is discovery evidence only, not an exact-quote authority."
+      },
+      "source_crop_xyxy": [
+        120,
+        720,
+        1020,
+        1030
+      ],
+      "plan_in_s": 108.5,
+      "plan_out_s": 113.5,
+      "frames": 150,
+      "duration_s": 5.0,
+      "quantization_error_s": 0.0,
+      "cues": [
+        {
+          "phrase": "surgical operations",
+          "word_indices": [
+            292,
+            293
+          ],
+          "raw_stt_indices": [
+            584,
+            586
+          ],
+          "in_s": 111.74,
+          "evidence_end_s": 112.64,
+          "kind": "source_highlight",
+          "out_s": 113.5
+        }
+      ],
+      "credit_cues": [
+        {
+          "kind": "archive_credit",
+          "text": "Davy, Researches (1800), p. 556",
+          "in_s": 108.5,
+          "out_s": 113.5,
+          "word_indices": [],
+          "reason": "Source attribution, deferred while another label is visible"
+        }
+      ],
+      "review_status": "preliminary_requires_capable_motion_and_editorial_review",
+      "recipe": "Source fit on warm mount, lateral 10px sine drift; original pages with source-coordinate ink underlines; no narration change"
+    },
+    {
+      "row_id": "P2:09b_arch_long_1849",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_archive_composites_v06/P2_09b_arch_long_1849.mp4",
+      "sha256": "ca1dd1d6bc9a2b30ba7e2844965b30bbcaf7ae35f3f152cc9ede04abe1b413a6",
+      "source": {
+        "asset_id": "archive_P2_09b_arch_long_1849",
+        "row_id": "P2:09b_arch_long_1849",
+        "page_url": "https://commons.wikimedia.org/wiki/File:The_Southern_medical_and_surgical_journal_(serial)_(IA_southernmedicals05medi).pdf",
+        "file_name": "archive_P2_09b_arch_long_1849.pdf",
+        "sha256": "9f9d40fd27bf294db368df5715c30c3026ce947336e44dc4dfd9db0a8fdc3a79",
+        "bytes": 43826390,
+        "licence": "Public domain",
+        "credit": "Long, Southern Med. & Surg. J. (Dec 1849)",
+        "depicts": null,
+        "status": "identity and layout inspected in stills; composite unbuilt"
+      },
+      "page_extract": {
+        "asset_id": "archive_P2_09b_arch_long_1849",
+        "pdf_page_1based": 711,
+        "printed_page": null,
+        "description": "December 1849 heading and Long article start; March 1842 in first page",
+        "file_name": "archive_P2_09b_arch_long_1849_pdf_page_711.png",
+        "sha256": "01100ca0648165562015b60115f86f89d8f51cfe24765e40a80610c7fdea278b",
+        "width": 975,
+        "height": 1752,
+        "extracted_text_file": "archive_P2_09b_arch_long_1849_pdf_page_711.txt",
+        "text_sha256": "487a6eef66e9f58aaf6c2ad768b79ca591ac233b7d46afbb88884a9a7dbabae6",
+        "source_pdf_sha256": "9f9d40fd27bf294db368df5715c30c3026ce947336e44dc4dfd9db0a8fdc3a79",
+        "verification": "Printed page and relevant passage visually inspected; OCR is discovery evidence only, not an exact-quote authority."
+      },
+      "source_crop_xyxy": null,
+      "plan_in_s": 166.14,
+      "plan_out_s": 173.13,
+      "frames": 210,
+      "duration_s": 7.0,
+      "quantization_error_s": 0.009999999999999787,
+      "cues": [
+        {
+          "phrase": "seven years",
+          "word_indices": [
+            411,
+            412
+          ],
+          "raw_stt_indices": [
+            822,
+            824
+          ],
+          "in_s": 168.68,
+          "evidence_end_s": 169.14,
+          "kind": "when",
+          "text": "7 years later",
+          "out_s": 170.68
+        }
+      ],
+      "credit_cues": [
+        {
+          "kind": "archive_credit",
+          "text": "Long, Southern Med. & Surg. J. (Dec 1849)",
+          "in_s": 166.14,
+          "out_s": 168.68,
+          "word_indices": [],
+          "reason": "Source attribution, deferred while another label is visible"
+        },
+        {
+          "kind": "archive_credit",
+          "text": "Long, Southern Med. & Surg. J. (Dec 1849)",
+          "in_s": 170.68,
+          "out_s": 173.13,
+          "word_indices": [],
+          "reason": "Source attribution, deferred while another label is visible"
+        }
+      ],
+      "review_status": "preliminary_requires_capable_motion_and_editorial_review",
+      "recipe": "Source fit on warm mount, lateral 10px sine drift; original pages with source-coordinate ink underlines; no narration change"
+    },
+    {
+      "row_id": "P3:09a_arch_ether_dome_1847",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_archive_composites_v06/P3_09a_arch_ether_dome_1847.mp4",
+      "sha256": "f475f51ee05afa8f84f95c06b24d0811773ef328a8cdf30a7a1cc19c1d75d683",
+      "source": {
+        "asset_id": "archive_P3_09a_arch_ether_dome_1847",
+        "row_id": "P3:09a_arch_ether_dome_1847",
+        "page_url": "https://commons.wikimedia.org/wiki/File:Southworth_%26_Hawes_(American,_active_1844_-_1862)_-_Use_of_Ether_for_Anesthesia_-_Google_Art_Project.jpg",
+        "file_name": "archive_P3_09a_arch_ether_dome_1847.jpg",
+        "sha256": "84b291512c99697ac58f45965a9c25e32b15fc31d7c8f3af2f9eb743511a6401",
+        "bytes": 5782636,
+        "licence": "Public domain",
+        "credit": "Southworth & Hawes (1847), Getty / Commons",
+        "depicts": null,
+        "status": "identity and layout inspected in stills; composite unbuilt"
+      },
+      "page_extract": null,
+      "source_crop_xyxy": null,
+      "plan_in_s": 258.5,
+      "plan_out_s": 263.97,
+      "frames": 164,
+      "duration_s": 5.466667,
+      "quantization_error_s": -0.0033333333333329662,
+      "cues": [],
+      "credit_cues": [
+        {
+          "kind": "archive_credit",
+          "text": "Southworth & Hawes (1847), Getty / Commons",
+          "in_s": 258.5,
+          "out_s": 263.97,
+          "word_indices": [],
+          "reason": "Source attribution, deferred while another label is visible"
+        }
+      ],
+      "review_status": "preliminary_requires_capable_motion_and_editorial_review",
+      "recipe": "Source fit on warm mount, lateral 10px sine drift; original pages with source-coordinate ink underlines; no narration change"
+    }
+  ],
+  "scope": "Four cached archive review rows only; eight other archive rows plus Morton composite, full cues and rough remain unfinished",
+  "delivery_directory": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_archive_composites_v06"
+}

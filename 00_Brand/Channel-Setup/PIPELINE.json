@@ -701,10 +701,10 @@
         "edit": {
           "status": "doing",
           "due": "2026-12-03",
-          "note": "J2563 v05: recovered Morton replica and Ether Dome originals; identified Davy printed p556 and Long Dec1849 article pages, delivered with hashes to NAS. Existing 13 preliminary graphics retained. All archive composites, full cues and rough remain unfinished; no stage approval.",
+          "note": "J2563 v06: four preliminary archive composites delivered with hashes and word-timed highlights, alongside 13 earlier graphics. Nine archives, full cues, 67 slates and rough remain unfinished; no stage approval.",
           "owner": "codex",
           "underway": false,
-          "waiting": "Continue archive composites and full cues/rough; source downloads stopped at HTTP 429. Preliminary graphics still need editorial and motion review.",
+          "waiting": "Continue nine archive composites and full cue reconciliation, then slates/rough. Source hold retained; preliminary rows require editorial and capable motion review.",
           "since": "2026-11-12",
           "steps": [
             1,
