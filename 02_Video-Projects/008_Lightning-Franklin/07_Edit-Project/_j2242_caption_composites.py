@@ -1,4 +1,4 @@
-"""Render caption-row intermediates from unambiguous contiguous clean-source maps.
+"""Render caption-row intermediates from unambiguous monotonic clean-source maps.
 
 Skipped rows stay outstanding. No master assembly, audio or film approval.
 """
@@ -14,7 +14,34 @@ from _j2242_salon_patch import pixel_hashes
 
 def eligible(row):
     indices=row['source_frame_indices']
-    return bool(indices) and not any(row[k] for k in ('poor_match_local_frames','ambiguous_local_frames','nonmonotonic_steps')) and indices==list(range(indices[0],indices[0]+len(indices)))
+    return bool(indices) and not any(row[k] for k in ('poor_match_local_frames','ambiguous_local_frames','nonmonotonic_steps')) and all(isinstance(i,int) and not isinstance(i,bool) and i>=0 for i in indices) and all(b>=a for a,b in zip(indices,indices[1:]))
+
+
+def source_runs(indices):
+    """Partition the measured schedule without guessing over repeats or jumps."""
+    if not indices or any(type(i) is not int or i<0 for i in indices):
+        raise ValueError('Invalid source schedule')
+    if any(b<a for a,b in zip(indices,indices[1:])):
+        raise ValueError('Backward source schedule')
+    runs=[]; first=previous=indices[0]
+    for index in indices[1:]:
+        if index!=previous+1:
+            runs.append((first,previous+1));first=index
+        previous=index
+    runs.append((first,previous+1))
+    return runs
+
+
+def source_graph(indices):
+    runs=source_runs(indices)
+    if len(runs)==1:
+        first,end=runs[0]
+        return f'[0:v]trim=start_frame={first}:end_frame={end},setpts=PTS-STARTPTS[ordered]'
+    graph=['[0:v]split='+str(len(runs))+''.join(f'[s{i}]' for i in range(len(runs)))]
+    for i,(first,end) in enumerate(runs):
+        graph.append(f'[s{i}]trim=start_frame={first}:end_frame={end},setpts=PTS-STARTPTS[r{i}]')
+    graph.append(''.join(f'[r{i}]' for i in range(len(runs)))+f'concat=n={len(runs)}:v=1:a=0[ordered]')
+    return ';'.join(graph)
 
 
 def row_clock(timeline,row):
@@ -32,16 +59,18 @@ def render(row,timeline,cards,out):
     source=Path(row['source_path']);recipe.require_hash(source,row['source_sha256'])
     selected=[c for c in cards if c['row']==row['row']]
     if not selected:raise ValueError('Missing row caption layers')
-    first=row['source_frame_indices'][0]
+    indices=row['source_frame_indices'];first=indices[0]
     # Independent native source timing validation before using candidate mapping.
     native=recipe.probe_video(source);tb=Fraction(native['time_base'])
-    fs=native['frames'][first:first+count]
-    if len(fs)!=count or any(f['pts']*tb!=Fraction(first+i,24) or f['duration']*tb!=Fraction(1,24) for i,f in enumerate(fs)):
+    source_runs(indices)
+    if max(indices)>=len(native['frames']):raise ValueError('Source map exceeds decoded source')
+    fs=[native['frames'][i] for i in indices]
+    if any(f['pts']*tb!=Fraction(i,24) or f['duration']*tb!=Fraction(1,24) for i,f in zip(indices,fs)):
         raise ValueError('Selected source is not native 24fps')
     out.mkdir(exist_ok=False)
     inputs=['-i',str(source)]
-    base=f'trim=start_frame={first}:end_frame={first+count},scale=1920:1080:flags=lanczos,setsar=1,format=yuv420p'
-    graph=[f"[0:v]{base},settb=1/12288,setpts='{clock_expression(frames)}'[base]"]
+    base='scale=1920:1080:flags=lanczos,setsar=1,format=yuv420p'
+    graph=[source_graph(indices),f"[ordered]{base},settb=1/12288,setpts='{clock_expression(frames)}'[base]"]
     previous='base'
     for i,c in enumerate(selected,1):
         if c['frame_in']<frames[0]['index'] or c['frame_last']>frames[-1]['index']:
@@ -61,12 +90,14 @@ def render(row,timeline,cards,out):
     if [f['pts']*ratio for f in actual['frames']]!=[f['pts'] for f in frames]:
         raise ValueError('Composite changed original PTS')
     duration_match=[f['duration']*ratio for f in actual['frames']]==[f['duration'] for f in frames]
-    expected=pixel_hashes(source,base);measured=pixel_hashes(video)
+    all_source=pixel_hashes(source,base)
+    expected=[all_source[i] for i in indices];measured=pixel_hashes(video)
     if len(expected)!=count:raise ValueError('Source pixel count differs')
     last_caption=max(c['frame_last'] for c in selected)-frames[0]['index']
     if measured[last_caption+1:]!=expected[last_caption+1:]:
         raise ValueError('Caption leaks into clear remainder')
-    if pixel_hashes(video,'crop=1920:720:0:0')!=pixel_hashes(source,base+',crop=1920:720:0:0'):
+    upper_source=pixel_hashes(source,base+',crop=1920:720:0:0')
+    if pixel_hashes(video,'crop=1920:720:0:0')!=[upper_source[i] for i in indices]:
         raise ValueError('Picture above caption band differs')
     for c in selected:
         peak=(c['frame_in']+c['frame_last'])//2-frames[0]['index']
@@ -75,7 +106,7 @@ def render(row,timeline,cards,out):
     recipe.require_hash(source,row['source_sha256'])
     clock=out/'original_clock.json';recipe.write_new(clock,dict(time_base='1/12288',frames=frames))
     result=dict(row=row['row'],path=str(video),sha256=recipe.sha256_file(video),
-                timeline_frames=row['timeline_frames'],source_frames=[first,first+count-1],
+                timeline_frames=row['timeline_frames'],source_frame_indices=indices,source_runs=source_runs(indices),
                 source_sha256=row['source_sha256'],frame_count=count,caption_count=len(selected),
                 original_pts_match=True,original_durations_preserved_in_intermediate=duration_match,
                 original_clock_path=str(clock),original_clock_sha256=recipe.sha256_file(clock),
@@ -90,6 +121,7 @@ def render(row,timeline,cards,out):
 
 def main():
     ap=argparse.ArgumentParser(description=__doc__)
+    ap.add_argument('--rows',nargs='+',help='Render only these named rows; rejects missing or ineligible names')
     ap.add_argument('--mapping',type=Path,required=True)
     ap.add_argument('--timeline',type=Path,required=True)
     ap.add_argument('--out-dir',type=Path,required=True)
@@ -114,8 +146,11 @@ def main():
             raise ValueError('Mapped window differs from approved caption inventory')
         if not any(c['row']==row['row'] and c['source_path']==row['source_path'] and c['source_sha256']==row['source_sha256'] for c in cuts):
             raise ValueError('Mapping source is absent from historical inventory')
+    chosen=[r for r in mapping['rows'] if eligible(r) and (not a.rows or r['row'] in a.rows)]
+    if a.rows and (len(set(a.rows))!=len(a.rows) or {r['row'] for r in chosen}!=set(a.rows)):
+        raise ValueError('Requested rows absent or unsafe')
     a.out_dir.mkdir(exist_ok=False)
-    results=[render(r,timeline,batch['cards'],a.out_dir/r['row']) for r in mapping['rows'] if eligible(r)]
+    results=[render(r,timeline,batch['cards'],a.out_dir/r['row']) for r in chosen]
     recipe.require_hash(a.mapping,mapping_sha);recipe.require_hash(a.timeline,clock_sha)
     recipe.write_new(a.out_dir/'RESULT.json',dict(job='J2242',status='CAPTION_COMPOSITE_INTERMEDIATES_ONLY',
         mapping_sha256=mapping_sha,rows=results,

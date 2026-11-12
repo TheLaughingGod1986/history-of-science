@@ -503,3 +503,42 @@ No v04 master, final film PASS, UAT, R2, Studio, publication or spend. Original
 masters/audio and J1755 remain untouched. This remaining assembly exceeds a
 single unattended run; release at the verified checkpoint rather than claiming
 completion. Continue this existing PR #542 branch/worktree.
+
+
+## Measured repeat-frame caption composites — twelfth run, 12 November 2026
+
+The caption compositor now reconstructs unambiguous monotonic schedules that
+contain measured repeats or forward jumps, using explicit source trim runs
+and concat before applying the original absolute master clock. It never fills
+ambiguous mappings with a guessed CFR schedule. Requested row names are
+validated before rendering; poor matches, ambiguous matches and backwards
+maps remain rejected. Independent source pixel hashes are indexed by the
+measured schedule, separately from the concat graph, to catch missing,
+duplicated or shifted frames.
+
+`REPEAT_CAPTION_COMPOSITES.json` records two newly verified intermediates in
+`/Volumes/MiniWork/scratch/J2242-caption-composites-v02/`: `01_salon_tube`
+(f2407..2505, 99 frames) and `10_richmann_rod` (f8849..9003, 155 frames).
+Both use the measured source sequence f000, f000, f002 onward. All 254 output
+presentation timestamps match the master. Every upper-band frame and each
+clear-tail frame matches its independently selected/scaled source pixel hash;
+caption presence is checked at its midpoint. Original duration sidecars are
+hashed for final mux restoration. This is **20 rows / 22 caption cards** in
+combination with the earlier verified opening and 17-row batch.
+
+`PHONE_INTERMEDIATES.jpg` in this new scratch folder was inspected as two
+168x94 stills. ELECTRICITY A PARTY TRICK and ST PETERSBURG 1753 read clearly.
+This partial intermediate sheet is not the complete final-master phone sheet,
+a motion review, audio review or approval.
+
+Validation: 55 J2242 unit tests OK (`REPEAT_COMPOSITE_TESTS.txt`), and
+`CHECK_ALL_REPEAT_COMPOSITES.txt` ends ALL CHECKS PASS. The tests verify exact
+repeat/jump reconstruction and rejection of backwards/invalid schedules.
+No final-film gate is claimed. No v04 exists and no original master changed.
+
+Remaining: seven ambiguous/boundary caption rows, SAFE PATH DOWN, the table
+correction, independent f3353 foil/bottom-text checks, general packet mux,
+full preservation/audio/loudness/sync checks and mandatory film gates. Then
+J2614/J2243 and Chief review before UAT/R2/Studio. Continue this existing PR542
+worktree. All processes finished; no detached work, generation, spend or
+publication. The full remaining assembly exceeds this unattended run.
