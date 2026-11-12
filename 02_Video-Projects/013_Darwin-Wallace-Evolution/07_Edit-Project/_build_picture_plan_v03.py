@@ -241,7 +241,7 @@ def main():
     dump(OUT/'cut_audit_v03.json',cut_audit)
     dump(OUT/'overlay_audit_v03.json',cues)
     with (OUT/'cuts_v03.csv').open('w',newline='') as f:
-        out=csv.DictWriter(f,fieldnames=['row','source','vo_in','vo_out','vo_text']);out.writeheader()
+        out=csv.DictWriter(f,fieldnames=['row','source','vo_in','vo_out','vo_text'],lineterminator='\n');out.writeheader()
         for r in rows:
             card='card_p' in r['id'] or 'cream_end_card' in r['id']
             out.writerow(dict(row=f'P{r["part"]}:{r["id"]}',source='CARD' if card else r['source_kind'],
