@@ -1,0 +1,34 @@
+{
+  "job": "J2242",
+  "status": "REJECTED_WRONG_SOURCE_INTERVAL",
+  "kind": "jar",
+  "path": "/Volumes/MiniWork/scratch/J2242-jar-patch-v01/jar_patch.nut",
+  "sha256": "07c19aa986aab49803eef6619974757b23159b7dcd00671e143fdc7f0f325fc0",
+  "source_sha256": "7629a5dfdc5b649535c9816ece5bf0acf250a13133bf294bf43cfb1f21588270",
+  "source_frames": [
+    0,
+    83
+  ],
+  "timeline_frames": [
+    3260,
+    3343
+  ],
+  "frame_count": 84,
+  "original_pts_match": true,
+  "source_frame_pixel_hashes_match": true,
+  "original_durations_preserved_in_intermediate": true,
+  "original_clock_path": "/Volumes/MiniWork/scratch/J2242-jar-patch-v01/original_clock.json",
+  "original_clock_sha256": "0c6b4488dfc833ad6c7fa17df6824b8daa0148d291533a19783c0283e0aa3a74",
+  "intermediate_time_base": "1/49152",
+  "rescale_to_master_ticks": "1/4",
+  "final_mux_duration_verification": "OUTSTANDING",
+  "boundary_unchanged_frame_verification": "OUTSTANDING",
+  "audio": "Absent; original master untouched",
+  "visual_review": "OUTSTANDING",
+  "speech_alignment": "OUTSTANDING",
+  "captions_rendered": false,
+  "master_created": false,
+  "final_film_approval": false,
+  "reason": "Selected source frames 0..83; approved jar interval is 4.0..7.5 seconds, frames 96..179.",
+  "superseded_by": "JAR_PATCH.json pointing to J2242-jar-patch-v02"
+}

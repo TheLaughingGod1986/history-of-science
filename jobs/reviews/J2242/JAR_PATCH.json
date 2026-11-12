@@ -2,12 +2,12 @@
   "job": "J2242",
   "status": "SOURCE_INTERMEDIATE_ONLY",
   "kind": "jar",
-  "path": "/Volumes/MiniWork/scratch/J2242-jar-patch-v01/jar_patch.nut",
-  "sha256": "07c19aa986aab49803eef6619974757b23159b7dcd00671e143fdc7f0f325fc0",
+  "path": "/Volumes/MiniWork/scratch/J2242-jar-patch-v02/jar_patch.nut",
+  "sha256": "28aa4ec861a21181182632c50cccf5779ed978e6a7dd5217280c8ba0d7251c11",
   "source_sha256": "7629a5dfdc5b649535c9816ece5bf0acf250a13133bf294bf43cfb1f21588270",
   "source_frames": [
-    0,
-    83
+    96,
+    179
   ],
   "timeline_frames": [
     3260,
@@ -17,7 +17,7 @@
   "original_pts_match": true,
   "source_frame_pixel_hashes_match": true,
   "original_durations_preserved_in_intermediate": true,
-  "original_clock_path": "/Volumes/MiniWork/scratch/J2242-jar-patch-v01/original_clock.json",
+  "original_clock_path": "/Volumes/MiniWork/scratch/J2242-jar-patch-v02/original_clock.json",
   "original_clock_sha256": "0c6b4488dfc833ad6c7fa17df6824b8daa0148d291533a19783c0283e0aa3a74",
   "intermediate_time_base": "1/49152",
   "rescale_to_master_ticks": "1/4",

@@ -8,10 +8,10 @@ import _build_rough_v13_recipe as recipe
 from _j2242_salon_patch import pixel_hashes
 
 SPECS = {
-    'storm': dict(first=744, last=839, first_pts=382976, overlap=745,
+    'storm': dict(first=744, last=839, first_pts=382976, overlap=745, source_first=0,
                   sha256='e1b2de5d8cd4bbc8ace98d6d5c17af3c75651f8949d54e062fe91fbe6ee31271',
                   filename='04_storm_mystery_t1.mp4'),
-    'jar': dict(first=3260, last=3343, first_pts=1672704, overlap=None,
+    'jar': dict(first=3260, last=3343, first_pts=1672704, overlap=None, source_first=96,
                 sha256='7629a5dfdc5b649535c9816ece5bf0acf250a13133bf294bf43cfb1f21588270',
                 filename='11_jar_crack_t1.mp4'),
 }
@@ -29,11 +29,11 @@ def patch_clock(timeline, kind):
             raise ValueError('Original index, PTS or duration changed')
     return frames
 
-def validate_native_source(clock, count):
-    frames = clock['frames'][:count]
+def validate_native_source(clock, count, source_first=0):
+    frames = clock['frames'][source_first:source_first + count]
     tb = Fraction(clock['time_base'])
     if len(frames) != count or any(
-            f['pts'] * tb != Fraction(i, 24) or
+            f['pts'] * tb != Fraction(source_first + i, 24) or
             f['duration'] * tb != Fraction(1, 24) for i, f in enumerate(frames)):
         raise ValueError('Source does not supply the selected native 24fps frames')
 
@@ -53,9 +53,9 @@ def main():
     recipe.require_hash(args.timeline, clock_hash)
     frames = patch_clock(json.loads(args.timeline.read_text()), args.kind)
     count = len(frames)
-    validate_native_source(recipe.probe_video(args.source), count)
+    validate_native_source(recipe.probe_video(args.source), count, spec['source_first'])
     args.out_dir.mkdir(parents=True, exist_ok=False)
-    filters = (f'trim=start_frame=0:end_frame={count},scale=1920:1080:flags=lanczos,'
+    filters = (f"trim=start_frame={spec['source_first']}:end_frame={spec['source_first'] + count},scale=1920:1080:flags=lanczos,"
                'setsar=1,format=yuv420p')
     graph = filters + f",settb=1/12288,setpts={spec['first_pts']}+N*512"
     output = args.out_dir / f'{args.kind}_patch.nut'
@@ -78,7 +78,7 @@ def main():
     recipe.require_hash(args.timeline, clock_hash)
     result = dict(job='J2242', status='SOURCE_INTERMEDIATE_ONLY', kind=args.kind,
                   path=str(output), sha256=recipe.sha256_file(output),
-                  source_sha256=spec['sha256'], source_frames=[0, count - 1],
+                  source_sha256=spec['sha256'], source_frames=[spec['source_first'], spec['source_first'] + count - 1],
                   timeline_frames=[spec['first'], spec['last']], frame_count=count,
                   original_pts_match=True, source_frame_pixel_hashes_match=True,
                   original_durations_preserved_in_intermediate=duration_match,

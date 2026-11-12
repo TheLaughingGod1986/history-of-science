@@ -403,3 +403,34 @@ and sync, every mandatory media/package gate and final phone sheet. Then
 J2614/J2243 and Chief review before UAT/R2/Studio. No v04 master, spend,
 generation, publication or final approval. All work from this run has ended;
 no detached process remains. Resume this clean existing PR #542 branch.
+
+## Jar source-interval correction — tenth run, 12 November 2026
+
+The previous archive renderer incorrectly trimmed the jar plate from source
+f000..f083. The approved J1880/J2163 recipe requires 4.000–7.500 seconds,
+so that intermediate is rejected. Its evidence remains in
+`JAR_PATCH_V01_REJECTED.json`; do not mux the v01 jar intermediate.
+
+The renderer now selects native source f096..f179 (84 frames) and validates
+the actual selected timestamps before rendering. `JAR_PATCH.json` points to
+`/Volumes/MiniWork/scratch/J2242-jar-patch-v02/jar_patch.nut`. All 84 decoded
+YUV420P frame hashes match the independently trimmed/scaled approved source
+interval. Every original master PTS and duration matches after timebase
+rescaling. The corrected output hash is
+`28aa4ec861a21181182632c50cccf5779ed978e6a7dd5217280c8ba0d7251c11`.
+
+43 J2242 unit tests pass, including an approved-interval regression rejecting
+a truncated tail and shifted selected source timestamp. Full repository
+checks: `CHECK_ALL_JAR_INTERVAL.txt`, ALL CHECKS PASS. These are intermediate
+and code checks; no final-film gate or perceptual review is claimed.
+
+The prior storm intermediate is unaffected. Jar keep frames f3168..f3259
+remain outside the replacement, and the distinct f3353 foil check is still
+outside its end. No original master, source or audio changed. No v04 master,
+UAT, R2, Studio, spend, generation or approval. All processes have finished.
+
+Remaining assembly (caption clean-plate reconstruction and composites, table
+row, independent foil check, bottom-text reviews, generalized mux, exact
+output preservation/audio/sync checks and all mandatory gates) exceeds a
+single unattended run. Resume this existing PR #542 worktree; J2614/J2243
+and Chief review remain required.

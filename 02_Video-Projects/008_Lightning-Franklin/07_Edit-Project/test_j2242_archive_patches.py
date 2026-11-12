@@ -40,4 +40,14 @@ class ArchiveWindows(unittest.TestCase):
             if len(bad['frames'])==96: bad['frames'][0]['pts']=1
             with self.assertRaises(ValueError): validate_native_source(bad,96)
 
+    def test_approved_jar_tail_is_four_to_seven_and_half_seconds(self):
+        self.assertEqual(SPECS['jar']['source_first'], 96)
+        t = dict(time_base='1/24', frames=[dict(pts=i, duration=1) for i in range(180)])
+        validate_native_source(t, 84, 96)
+        for bad in [dict(t, frames=t['frames'][:-1]), copy.deepcopy(t)]:
+            if len(bad['frames']) == 180:
+                bad['frames'][96]['pts'] = 0
+            with self.assertRaises(ValueError):
+                validate_native_source(bad, 84, 96)
+
 if __name__ == '__main__': unittest.main()
