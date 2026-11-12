@@ -252,3 +252,14 @@ Eight additional preliminary graphics delivered to studio-live; see `07_Edit-Pro
 PASS: eight additional preliminary graphic files match SHA-256, decode completely, are 1920x1080 at 30 fps, and match v03 durations within half a frame; source/raw word indices agree, cues do not overlap or reveal before their final anchor word, and chapter headings clear at the next spoken word.
 Partial checkpoint only. Editorial simplifications and brief chapter readability need Chief review. Thirteen archive rows, full cues and rough remain; no film-stage approval, audio assessment or moving-video review.
 ```
+
+## J2563 v07 partial assembly checkpoint (12 Nov 2026)
+
+Two additional preliminary archive composites and all 67 dependency slates delivered to studio-live; 19 preliminary free rows now exist. See `07_Edit-Project/J2563_CHECKPOINT_v07.md`. No film-stage PASS, moving-video/audio review or UAT. Seven archive composites, full cue reconciliation and the joined rough remain unfinished. No generation, spend, narration or publishing changes.
+
+```text
+PASS: 67 labelled dependency slates; full decode, hashes, 1080p/30fps and cumulative-frame timing checked. Internal artifacts only.
+PASS: output-byte copy checks, 86 NAS row hashes and exact 19 preliminary / 67 slate / seven missing classification.
+```
+
+Required check_all.sh: ALL CHECKS PASS. Three source/cue preparation tests and unchanged v03 mechanical timing validation passed. P5:16b remains a slate; no actual reuse source interval verified. The four-milestone assembly plan remains 1/4, released for continuation. Capable motion and audio reviewers are required for their respective assessments.

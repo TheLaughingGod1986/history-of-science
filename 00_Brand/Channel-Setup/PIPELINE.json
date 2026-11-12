@@ -701,10 +701,10 @@
         "edit": {
           "status": "doing",
           "due": "2026-12-03",
-          "note": "J2563 v06: four preliminary archive composites delivered with hashes and word-timed highlights, alongside 13 earlier graphics. Nine archives, full cues, 67 slates and rough remain unfinished; no stage approval.",
+          "note": "J2563 v07: 19 preliminary free rows (two new cached composites) plus all 67 dependency slates built. Copy hashes and timing verified; seven archive rows and rough unfinished; no stage approval.",
           "owner": "codex",
           "underway": false,
-          "waiting": "Continue nine archive composites and full cue reconciliation, then slates/rough. Source hold retained; preliminary rows require editorial and capable motion review.",
+          "waiting": "Seven archive composites, full cue reconciliation and joined rough remain. Preliminary graphics need editorial and capable motion review; prior source network hold preserved.",
           "since": "2026-11-12",
           "steps": [
             1,
