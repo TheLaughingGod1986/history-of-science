@@ -701,10 +701,10 @@
         "edit": {
           "status": "doing",
           "due": "2026-12-03",
-          "note": "J2563: 13 preliminary code-graphic inputs delivered in two versioned batches (5 + 8), hashes/durations/cues mechanically verified on NAS. Four retimed teaching simplifications and short chapter headings need Chief review. All 13 archives and the internal rough remain unfinished; no film-stage approval.",
+          "note": "J2563 v05: recovered Morton replica and Ether Dome originals; identified Davy printed p556 and Long Dec1849 article pages, delivered with hashes to NAS. Existing 13 preliminary graphics retained. All archive composites, full cues and rough remain unfinished; no stage approval.",
           "owner": "codex",
           "underway": false,
-          "waiting": "Continue 13 archive composites, full overlay schedule and rough; Chief editorial/motion review of 13 preliminary graphics.",
+          "waiting": "Continue archive composites and full cues/rough; source downloads stopped at HTTP 429. Preliminary graphics still need editorial and motion review.",
           "since": "2026-11-12",
           "steps": [
             1,
