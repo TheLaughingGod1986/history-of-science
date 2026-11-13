@@ -1,0 +1,75 @@
+{
+  "film": "013",
+  "title": "Evolution: The Letter That Forced Darwin to Publish",
+  "air": "2026-12-17",
+  "ready_by": "2026-12-13",
+  "summary": "Slotted Thu 17 Dec (J2231; active in jobs/WIP.json #541). Script v02 (92.6 PASS, J0307) and FACT_NOTES_v02 (30 OK, J0304) locked; long VO hos_013_vo_v03a locked (512.48 s, -19.5 LUFS, vo_check 0 fails, J1310). Shorts scripts v02 + upload package + shot list v01 queued (J2240). Next four proposed to mid-Jan (jobs/WIP.json next_hos): 012 Mendel (24 Dec), 014 Anning (31 Dec), 015 Hooke (7 Jan), 018 Herschel (14 Jan).",
+  "stages": {
+    "topic": {
+      "state": "done",
+      "note": "J0295 / J2231: 13 education >=1M (Primer 15.7M, Kurzgesagt 11.4M, TED-Ed 3.29M)"
+    },
+    "script": {
+      "state": "done",
+      "note": "v02, 92.6 (J0299 / J0307)"
+    },
+    "facts": {
+      "state": "done",
+      "note": "FACT_NOTES_v02 30 OK, 0 PARTIAL, 0 FLAG (J0304 / J0307)"
+    },
+    "package": {
+      "state": "todo",
+      "due": "2026-11-12",
+      "owner": "Claude",
+      "note": "PRE_BUILD_VIDIQ_AUDIT.md + neighbour/search evidence saved; manifest + description queued (J2240)"
+    },
+    "vo": {
+      "state": "done",
+      "due": "2026-10-31",
+      "owner": "Cursor",
+      "note": "locked hos_013_vo_v03a (512.48 s, 8:32.48, -19.5 LUFS, vo_check 0 fails, J1310 / Chief h39 on J1301)",
+      "steps": [
+        6,
+        6
+      ],
+      "steps_unit": "chapters passed",
+      "underway": false
+    },
+    "shorts_scripts": {
+      "state": "todo",
+      "due": "2026-11-12",
+      "owner": "Claude",
+      "note": "two search-titled Shorts (Test B, J2240)"
+    },
+    "shorts_vo": {
+      "state": "todo",
+      "due": "2026-11-16",
+      "owner": "Cursor",
+      "waiting": "after J2240 013 Shorts scripts v02"
+    },
+    "picture": {
+      "state": "todo",
+      "due": "2026-12-06",
+      "owner": "Cursor",
+      "waiting": "after J2240 013 shot list v01 + price review"
+    },
+    "edit": {
+      "state": "todo",
+      "due": "2026-12-10"
+    },
+    "thumbnails": {
+      "state": "todo",
+      "due": "2026-12-10"
+    },
+    "ben_ok": {
+      "state": "todo",
+      "due": "2026-12-13"
+    },
+    "scheduled": {
+      "state": "todo",
+      "due": "2026-12-14"
+    }
+  },
+  "claims": [],
+  "next": ""
+}

@@ -1,0 +1,48 @@
+{
+  "film": "100",
+  "title": "How Do Migrating Birds See Earth's Magnetic Field?",
+  "air": "2027-01-21",
+  "ready_by": "2027-01-17",
+  "summary": "On the next_hos waiting line after 097 (jobs/WIP.json; added in J2411, Rule-E GO 94/100 in J2473). Topic brief + §2 package in 02_Video-Projects/100_Gilbert-Wiltschko-Mouritsen-Bird-Magnetic-Compass/; neighbour gate PASS (13 education >=1M incl. TED-Ed 9.21M, Royal Institution 1.59M & TED 1.11M Jim Al-Khalili), Rule 26 search-led phrase ('how do birds navigate') verified, and public search evidence saved. Waits in next_hos under Rule G for an active HOS WIP slot.",
+  "stages": {
+    "topic": {
+      "state": "done",
+      "note": "J2411 + J2473 Rule-E GO (94/100); pre-cleared in next_hos under Rule G"
+    },
+    "script": {
+      "state": "todo"
+    },
+    "facts": {
+      "state": "todo"
+    },
+    "package": {
+      "state": "todo"
+    },
+    "vo": {
+      "state": "todo"
+    },
+    "shorts_scripts": {
+      "state": "todo"
+    },
+    "shorts_vo": {
+      "state": "todo"
+    },
+    "picture": {
+      "state": "todo"
+    },
+    "edit": {
+      "state": "todo"
+    },
+    "thumbnails": {
+      "state": "todo"
+    },
+    "ben_ok": {
+      "state": "todo"
+    },
+    "scheduled": {
+      "state": "todo"
+    }
+  },
+  "claims": [],
+  "next": ""
+}
