@@ -1,0 +1,51 @@
+{
+  "film": "005",
+  "title": "The Tied Arm That Proved Your Blood Circulates",
+  "air": "2026-10-29",
+  "ready_by": "2026-10-02",
+  "summary": "Finished and scheduled. Long `wwcjcFfC-5M` airs Thu 29 Oct 18:00; Shorts A (30 Oct), B `mTY67qet7cM` (8 Nov) and C `x_3L_IdYgEc` (15 Nov) are scheduled. s04 5n7xFQRBUvI scheduled 31 Oct 11:30 UK; cover/settings saved. J0188 3/4: Related after 29 Oct long airs; HOS Buffer credential unavailable.",
+  "stages": {
+    "topic": {
+      "state": "done"
+    },
+    "script": {
+      "state": "done"
+    },
+    "facts": {
+      "state": "done"
+    },
+    "package": {
+      "state": "done"
+    },
+    "vo": {
+      "state": "done"
+    },
+    "shorts_scripts": {
+      "state": "done"
+    },
+    "shorts_vo": {
+      "state": "done"
+    },
+    "picture": {
+      "state": "done"
+    },
+    "edit": {
+      "state": "done",
+      "note": "master v02"
+    },
+    "thumbnails": {
+      "state": "done",
+      "note": "A/B/C made; Test & Compare to re-check on wwcjcFfC-5M (J0101)"
+    },
+    "ben_ok": {
+      "state": "done",
+      "note": "2 Oct"
+    },
+    "scheduled": {
+      "state": "done",
+      "note": "Thu 29 Oct 18:00; post-air jobs at 18:05"
+    }
+  },
+  "claims": [],
+  "next": ""
+}

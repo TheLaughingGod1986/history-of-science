@@ -1,0 +1,48 @@
+{
+  "film": "101",
+  "title": "How Do Deep Sea Vents Feed Life Without Sunlight?",
+  "air": "2027-01-28",
+  "ready_by": "2027-01-24",
+  "summary": "On the next_hos waiting line after 100 (jobs/WIP.json; added in J2411, Rule-E GO 95/100 in J2473). Topic brief + §2 package in 02_Video-Projects/101_Corliss-Ballard-Cavanaugh-Deep-Sea-Hydrothermal-Vents/; neighbour gate PASS (3 education >=1M: Kurzgesagt 25.80M, TED 1.55M, TED-Ed 1.16M), Rule 26 search-led phrases ('deep sea hydrothermal vents', 'deep sea vents') verified, and public search evidence saved (all 3 core queries autocomplete yes). Waits in next_hos under Rule G for an active HOS WIP slot.",
+  "stages": {
+    "topic": {
+      "state": "done",
+      "note": "J2411 + J2473 Rule-E GO (95/100); pre-cleared in next_hos under Rule G"
+    },
+    "script": {
+      "state": "todo"
+    },
+    "facts": {
+      "state": "todo"
+    },
+    "package": {
+      "state": "todo"
+    },
+    "vo": {
+      "state": "todo"
+    },
+    "shorts_scripts": {
+      "state": "todo"
+    },
+    "shorts_vo": {
+      "state": "todo"
+    },
+    "picture": {
+      "state": "todo"
+    },
+    "edit": {
+      "state": "todo"
+    },
+    "thumbnails": {
+      "state": "todo"
+    },
+    "ben_ok": {
+      "state": "todo"
+    },
+    "scheduled": {
+      "state": "todo"
+    }
+  },
+  "claims": [],
+  "next": ""
+}

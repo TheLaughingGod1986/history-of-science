@@ -1,0 +1,105 @@
+{
+  "film": "008",
+  "title": "Why Did Franklin Fly a Kite in a Storm?",
+  "air": "2026-11-19",
+  "ready_by": "2026-11-15",
+  "summary": "Franklin corrections: salon, rods and points intermediates verified; full packet assembly and captions outstanding. Original masters/audio and J1755 publication hold retained.",
+  "stages": {
+    "topic": {
+      "state": "done"
+    },
+    "script": {
+      "state": "done",
+      "note": "v01, 92.1"
+    },
+    "facts": {
+      "state": "done"
+    },
+    "package": {
+      "state": "done"
+    },
+    "vo": {
+      "state": "done",
+      "owner": "Cursor",
+      "due": "2026-10-07",
+      "note": "long VO locked 7 Oct: 5 parts, 555 s (9:14.8), 7,497 chars; Part 01 pause trimmed, Part 05 one sentence re-recorded; Claude PASS each part (VO_TAKES_KEEP.json)",
+      "steps": [
+        5,
+        5
+      ],
+      "steps_unit": "parts passed",
+      "since": "2026-10-07",
+      "underway": false
+    },
+    "shorts_scripts": {
+      "state": "done",
+      "note": "v02 (test B): two search-titled Shorts, 9 Oct"
+    },
+    "shorts_vo": {
+      "state": "done",
+      "due": "2026-10-08",
+      "owner": "codex",
+      "note": "Earlier locked takes retained. J2254 h94 Short C opening pickup PASS: independent vo_check + Scribe 7/7 words; 2.88 s file, last word 2.68 s. J2255 assembles/gates; Short C held for Ben watch and Long Public.",
+      "underway": false
+    },
+    "picture": {
+      "state": "blocked",
+      "due": "2026-11-08",
+      "owner": "gemini",
+      "since": "2026-10-16",
+      "underway": false,
+      "note": "Historical h22 picture lock preserved. Six v03 change notes remain unresolved. J2163 conditional manifest supersedes J1880 recipe; missing glass-tube/hair and church/house/ship-mast assets, exhausted three-candidate searches. No new picture approval.",
+      "waiting": "J1881 scopes two exact-match assets after J2163 repair; no native fallback selected and no generation authorized",
+      "steps": [
+        112,
+        112
+      ],
+      "steps_unit": "board rows rendered (11 code graphics + 101/101 Flow plates KEEP)",
+      "jobs": [
+        "J1880",
+        "J1881",
+        "J2163"
+      ]
+    },
+    "edit": {
+      "state": "doing",
+      "due": "2026-11-12",
+      "owner": "codex",
+      "since": "2026-11-05T00:00:40.142053+00:00",
+      "underway": false,
+      "waiting": "J2242 continuation: reconstruct clean caption plates, composite verified layers, finish defect rows and packet mux, then full preservation and film gates.",
+      "note": "J2242: 33 animated caption layers (2738 frames) and 101-frame moving-plate letter crossing rendered with original PTS checks. Clean caption plate reconstruction and final duration restoration/mux remain; no v04 or approval.",
+      "jobs": [
+        "J1297",
+        "J1755",
+        "J1868",
+        "J1880",
+        "J1881",
+        "J2163",
+        "J2242",
+        "J2243"
+      ],
+      "steps": [
+        1,
+        3
+      ],
+      "steps_unit": "assembly steps completed"
+    },
+    "thumbnails": {
+      "state": "todo",
+      "due": "2026-11-12"
+    },
+    "ben_ok": {
+      "state": "todo",
+      "due": "2026-11-15",
+      "waiting": "Six v03 notes unresolved; corrected cut must pass gates and Chief review before renewed watch",
+      "note": "Change request 2026-11-03T16:08:33.439Z; no Ben OK."
+    },
+    "scheduled": {
+      "state": "todo",
+      "due": "2026-11-16"
+    }
+  },
+  "claims": [],
+  "next": ""
+}

@@ -1,0 +1,47 @@
+{
+  "film": "014",
+  "title": "Extinction: The 12-Year-Old Who Dug Up a Sea Dragon",
+  "air": "2026-12-31",
+  "ready_by": "2026-12-27",
+  "summary": "Planned for Thu 31 Dec (J2328 / jobs/WIP.json next_hos #3). Topic prep and draft script master v01 live under ideas/014_Anning-Fossils-Extinction; not entered into active WIP. Go/no-go package prepared on HOS PR #453 (not yet on main).",
+  "stages": {
+    "topic": {
+      "state": "todo"
+    },
+    "script": {
+      "state": "todo"
+    },
+    "facts": {
+      "state": "todo"
+    },
+    "package": {
+      "state": "todo"
+    },
+    "vo": {
+      "state": "todo"
+    },
+    "shorts_scripts": {
+      "state": "todo"
+    },
+    "shorts_vo": {
+      "state": "todo"
+    },
+    "picture": {
+      "state": "todo"
+    },
+    "edit": {
+      "state": "todo"
+    },
+    "thumbnails": {
+      "state": "todo"
+    },
+    "ben_ok": {
+      "state": "todo"
+    },
+    "scheduled": {
+      "state": "todo"
+    }
+  },
+  "claims": [],
+  "next": ""
+}

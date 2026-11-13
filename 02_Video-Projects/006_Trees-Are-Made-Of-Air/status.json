@@ -1,0 +1,93 @@
+{
+  "film": "006",
+  "title": "The Willow Tree That Was Made of Air",
+  "air": "2026-11-05",
+  "ready_by": "2026-11-01",
+  "summary": "Private `VbPubYd6Fbs`, publishAt Thu 5 Nov 2026 18:00 London. End screen saved: Subscribe + 004 Atom `GHZDsiH7L7A` (8:31-8:51). Title A/B set, Ineligible until public (Willow Tree vs Where Does a Tree's Weight Come From?, covers WOOD / FROM / SKY? and DO PLANTS / EAT / SOIL?). Pinned comment not posted: the Studio account cannot create comments. Cards not added. Buffer deferred.",
+  "stages": {
+    "topic": {
+      "state": "done"
+    },
+    "script": {
+      "state": "done",
+      "note": "v02, 93.7"
+    },
+    "facts": {
+      "state": "done"
+    },
+    "package": {
+      "state": "done"
+    },
+    "vo": {
+      "state": "done",
+      "note": "v02, all five parts PASS"
+    },
+    "shorts_scripts": {
+      "state": "done"
+    },
+    "shorts_vo": {
+      "state": "done",
+      "note": "A v02 · B v03b · C v01 locked"
+    },
+    "picture": {
+      "state": "done",
+      "note": "All 5 parts KEEP + roughs assembled on main (Part 01 12/12 KEEP + rough v01 PASS; Part 02 UAT applied + rough v02; Part 03 rough v02 with P3:06 KEEP; Part 04 rough v01 KEEP; Part 05 rough v01 KEEP PASS; Chief 15 Oct sweep #180)."
+    },
+    "edit": {
+      "state": "done",
+      "due": "2026-10-27",
+      "owner": "Chief",
+      "note": "master v06 uploaded Private as VbPubYd6Fbs (J0945). sha256 36c54e68, picture_qa and polish_gate 0/96 fail, music_gate and sfx level PASS",
+      "jobs": [
+        "J0835",
+        "J0857",
+        "J0882",
+        "J0886",
+        "J0924"
+      ],
+      "since": "2026-10-25T00:02",
+      "underway": false,
+      "steps": [
+        6,
+        6
+      ],
+      "steps_unit": "v06 steps",
+      "left": "",
+      "eta": "",
+      "waiting": ""
+    },
+    "thumbnails": {
+      "state": "done",
+      "due": "2026-10-29",
+      "owner": "Chief",
+      "since": "2026-10-25T20:22",
+      "underway": false,
+      "steps": [
+        2,
+        2
+      ],
+      "steps_unit": "thumb steps",
+      "left": "",
+      "eta": "",
+      "waiting": "",
+      "jobs": [
+        "J0858",
+        "J0869",
+        "J0958"
+      ],
+      "note": "J0958. Test set on VbPubYd6Fbs from the Title and thumbnail dialog (A WOOD / FROM / SKY? + the live title, B DO PLANTS / EAT / SOIL? + Where Does a Tree's Weight Come From?). Studio lists both titles, status Ineligible while scheduled."
+    },
+    "ben_ok": {
+      "state": "done",
+      "due": "2026-11-01",
+      "note": "Ben OK'd master v06 on the Kanban 25 Oct 2026 14:10 London (HOS #180 6398691247). Chief Final OK 14:15."
+    },
+    "scheduled": {
+      "state": "done",
+      "due": "2026-11-02",
+      "note": "Private VbPubYd6Fbs, publishAt Thu 5 Nov 2026 18:00 London. End screen, pinned comment and Test & Compare are the Studio finish job."
+    }
+  },
+  "claims": [],
+  "next": ""
+}

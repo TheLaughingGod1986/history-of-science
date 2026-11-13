@@ -1,0 +1,47 @@
+{
+  "film": "012",
+  "title": "Genetics: The Monk Who Counted 28,000 Pea Plants",
+  "air": "2026-12-24",
+  "ready_by": "2026-12-20",
+  "summary": "Planned for Thu 24 Dec (J2328 / jobs/WIP.json next_hos #2). Topic prep and draft script master v01 live under ideas/012_Mendel-Pea-Plants; not entered into active WIP. Go/no-go package prepared on HOS PR #453 (not yet on main).",
+  "stages": {
+    "topic": {
+      "state": "todo"
+    },
+    "script": {
+      "state": "todo"
+    },
+    "facts": {
+      "state": "todo"
+    },
+    "package": {
+      "state": "todo"
+    },
+    "vo": {
+      "state": "todo"
+    },
+    "shorts_scripts": {
+      "state": "todo"
+    },
+    "shorts_vo": {
+      "state": "todo"
+    },
+    "picture": {
+      "state": "todo"
+    },
+    "edit": {
+      "state": "todo"
+    },
+    "thumbnails": {
+      "state": "todo"
+    },
+    "ben_ok": {
+      "state": "todo"
+    },
+    "scheduled": {
+      "state": "todo"
+    }
+  },
+  "claims": [],
+  "next": ""
+}

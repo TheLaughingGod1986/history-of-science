@@ -1,0 +1,80 @@
+{
+  "film": "011",
+  "title": "Anesthesia: The Day Surgery Stopped Hurting",
+  "air": "2026-12-10",
+  "ready_by": "2026-12-06",
+  "summary": "Locked for Thu 10 Dec. Script v02, facts, quote check and long VO locked (J2286 KEEP; 532.720 s). J2659 accepts mechanical picture-plan v03 timing for internal assembly: 93 rows, 535.30 s, every row <=8 s. J2563 resumes 26 free rows plus 67 labelled slates using the corrected archive sources. No generation or picture/edit approval.",
+  "stages": {
+    "topic": {
+      "state": "done",
+      "note": "J0180 / J2231: 6 education >=1M (TED-Ed 19.73M & 2.66M)"
+    },
+    "script": {
+      "state": "done",
+      "note": "v02, 91.1 (J0183 / J0224)"
+    },
+    "facts": {
+      "state": "done",
+      "note": "J0198 Gemini facts (35 OK, 1 hedged) + J0224 Claude quote check PASS"
+    },
+    "package": {
+      "state": "todo",
+      "due": "2026-11-12",
+      "owner": "Claude",
+      "note": "PRE_BUILD_VIDIQ_AUDIT.md + neighbour/search evidence saved; manifest + description chapter times updated to locked VO (J2239 / J2475)"
+    },
+    "vo": {
+      "state": "done",
+      "due": "2026-11-15",
+      "owner": "Cursor",
+      "note": "Locked hos_011_vo_v01 (532.72 s, five chapters, Ben Orbit Narrator eleven_v3; WAV sha256 d873f1d0…, MP3 sha256 9fdd84d5…). J2286 listening review of all five chapters: KEEP, no pickups, no re-recording; the two 1.5 s pauses in Across the Ocean sit inside a held beat and stay. Full-file vo_check PASS, 0 word fails. Acting Chief closed J2245 on 10 Nov; lock recorded in VO_STATUS.md (J2475).",
+      "steps": [
+        5,
+        5
+      ],
+      "steps_unit": "chapters accepted",
+      "underway": false
+    },
+    "shorts_scripts": {
+      "state": "todo",
+      "due": "2026-11-12",
+      "owner": "Claude",
+      "note": "two search-titled Shorts (Test B, J2239)"
+    },
+    "shorts_vo": {
+      "state": "todo",
+      "due": "2026-11-16",
+      "owner": "Cursor",
+      "waiting": "after 011 long VO"
+    },
+    "picture": {
+      "state": "todo",
+      "due": "2026-11-29",
+      "owner": "Cursor",
+      "note": "J2659 accepts v03 mechanical timing only: 93 rows, 37 boundaries moved, 18 word crossings removed, eleven long sentences split. 66 Quality generation rows remain unauthorized; reuse stays a slate. J2654 archive brief plus Grok ruling 6810336587 override inherited source fields; see J2659_CHIEF_DECISION.md.",
+      "waiting": "Separate generation decision; generation_authorized false. J2659 accepts mechanical timing only."
+    },
+    "edit": {
+      "state": "todo",
+      "due": "2026-12-03",
+      "note": "J2659 accepts v03 timing. J2563 resumes 26 free rows and internal rough with 67 slates; use J2659_CHIEF_DECISION.md source overrides, reuse check and overlay cue schedule.",
+      "owner": "codex",
+      "underway": false,
+      "waiting": "J2563 assembly worker to resume after timing decision merges"
+    },
+    "thumbnails": {
+      "state": "todo",
+      "due": "2026-12-03"
+    },
+    "ben_ok": {
+      "state": "todo",
+      "due": "2026-12-06"
+    },
+    "scheduled": {
+      "state": "todo",
+      "due": "2026-12-07"
+    }
+  },
+  "claims": [],
+  "next": ""
+}
