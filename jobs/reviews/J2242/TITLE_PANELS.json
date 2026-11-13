@@ -1,0 +1,98 @@
+{
+  "job": "J2242",
+  "status": "TITLE_PANELS_ON_STILLS",
+  "note_resolved": false,
+  "frame_2869": "out",
+  "letter_row": "04_letter_crosses stays the cream-letter replacement, which has no banner",
+  "rows": [
+    {
+      "row": "15_likeness_fire",
+      "label": "CRACK \u00b7 FIRE \u00b7 SHOCK",
+      "words": [
+        "CRACK",
+        "FIRE",
+        "SHOCK"
+      ],
+      "box": [
+        576,
+        92,
+        1350,
+        203
+      ],
+      "alignment_mae": 16.488,
+      "glyph_pixels": 23902,
+      "panel_pixels": 62898,
+      "still": "/Volumes/MiniWork/scratch/J2242-title-panels-v01/15_likeness_fire.jpg",
+      "phone_still": "/Volumes/MiniWork/scratch/J2242-title-panels-v01/15_likeness_fire_168.jpg"
+    },
+    {
+      "row": "06_same_thing",
+      "label": "ELECTRICITY",
+      "words": [
+        "ELECTRICITY"
+      ],
+      "box": [
+        698,
+        91,
+        1224,
+        205
+      ],
+      "alignment_mae": 6.343,
+      "glyph_pixels": 21470,
+      "panel_pixels": 39135,
+      "still": "/Volumes/MiniWork/scratch/J2242-title-panels-v01/06_same_thing.jpg",
+      "phone_still": "/Volumes/MiniWork/scratch/J2242-title-panels-v01/06_same_thing_168.jpg"
+    },
+    {
+      "row": "08_looking_path",
+      "label": "EASIEST PATH DOWN",
+      "words": [
+        "EASIEST",
+        "PATH",
+        "DOWN"
+      ],
+      "box": [
+        566,
+        93,
+        1354,
+        204
+      ],
+      "alignment_mae": 8.453,
+      "glyph_pixels": 25991,
+      "panel_pixels": 62377,
+      "still": "/Volumes/MiniWork/scratch/J2242-title-panels-v01/08_looking_path.jpg",
+      "phone_still": "/Volumes/MiniWork/scratch/J2242-title-panels-v01/08_looking_path_168.jpg"
+    },
+    {
+      "row": "10_metal_easy",
+      "label": "METAL CONDUCTS",
+      "words": [
+        "METAL",
+        "CONDUCTS"
+      ],
+      "box": [
+        582,
+        87,
+        1331,
+        209
+      ],
+      "alignment_mae": 20.279,
+      "glyph_pixels": 35385,
+      "panel_pixels": 56865,
+      "still": "/Volumes/MiniWork/scratch/J2242-title-panels-v01/10_metal_easy.jpg",
+      "phone_still": "/Volumes/MiniWork/scratch/J2242-title-panels-v01/10_metal_easy_168.jpg"
+    }
+  ],
+  "umber": [
+    48,
+    30,
+    20
+  ],
+  "border": false,
+  "gold_rule": false,
+  "pill_chrome": false,
+  "master_created": false,
+  "final_film_approval": false,
+  "still_check": "one still per title, including 168x94; not a motion review or an audio review",
+  "packet_mux": "OUTSTANDING"
+}

@@ -1027,3 +1027,20 @@ Every title that was read is four words or fewer. The five picture rows are the 
 116 J2242 unit tests OK. check_all result is in `CHECK_ALL_BOTTOM_TEXT.txt`. No v04 master. Original masters and audio are unchanged. No spend, generation, UAT, R2 or YouTube action. No detached process.
 
 Remaining: a background behind the five picture titles, the generalized packet mux, preservation and loudness/sync checks, and the mandatory film gates. Then J2243 and Chief review. Continue this PR #542 worktree. Frame 2869 stays out.
+
+## Umber panels behind the picture titles — twenty-seventh run, 13 November 2026
+
+Cursor worker. Frame 2869 stays out. `_j2242_title_panel.py` paints the caption umber, RGB 48,30,20, behind a title and nowhere else. Changed pixels are that colour only, so the panel has no border, gold rule or pill. The words themselves are the alpha glyphs and are left as they were.
+
+The letter row is not painted. Its replacement is the cream letter on the moving ship plate, which has no banner and no boxes. The other four titles get the panel:
+
+- `15_likeness_fire`, CRACK · FIRE · SHOCK, alignment MAE 16.488.
+- `06_same_thing`, ELECTRICITY, alignment MAE 6.343. The midpoint of this row has no title; the still is the later frame where the word is on screen.
+- `08_looking_path`, EASIEST PATH DOWN, alignment MAE 8.453.
+- `10_metal_easy`, METAL CONDUCTS, alignment MAE 20.279, taken from master frame 11017 because the old composite file is not on disk. The rod graphic still crosses the panel, because those pixels are part of the graphic.
+
+Stills, including the 168×94 phone stills, are in `/Volumes/MiniWork/scratch/J2242-title-panels-v01/`. The four titles read on those stills. This is a still check, not a motion review, an audio review, or a film approval. The panels are not yet on every frame of those rows, and they are not in a master.
+
+122 J2242 unit tests OK, 6 of them new. No v04 master. Original masters and audio are unchanged. No spend, generation, UAT, R2 or YouTube action. No detached process.
+
+Remaining: the same panel on every frame of those four rows, the generalized packet mux, preservation and loudness/sync checks, and the mandatory film gates. Then J2243 and Chief review. Continue this PR #542 worktree. Frame 2869 stays out.
