@@ -263,3 +263,7 @@ PASS: output-byte copy checks, 86 NAS row hashes and exact 19 preliminary / 67 s
 ```
 
 Required check_all.sh: ALL CHECKS PASS. Three source/cue preparation tests and unchanged v03 mechanical timing validation passed. P5:16b remains a slate; no actual reuse source interval verified. The four-milestone assembly plan remains 1/4, released for continuation. Capable motion and audio reviewers are required for their respective assessments.
+
+## J2563 v09 cue schedule (13 Nov 2026)
+
+Word-timed overlay schedule written. See `07_Edit-Project/J2563_CHECKPOINT_v09.md` and `OVERLAY_CUE_SCHEDULE_v02.json`. 38 cards follow the locked words and do not stack. 12 planned lines stay off screen because they are not spoken or because a name card is already up. Five archive pictures remain undownloaded until 05:30 UTC. The rough is not built. No film-stage pass, no listening review, and no watch copy.
