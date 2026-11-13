@@ -1,0 +1,135 @@
+{
+  "job": "J2664",
+  "film": "HOS:009",
+  "created_at": "2026-11-13T15:52:49+00:00",
+  "scope_sha256": "ea992517b31cba57643feb8fdc6979dbdf774254bf560435fc8a398ac4f49990",
+  "posts": [
+    {
+      "cue": "wonder",
+      "http": 200,
+      "started": "2026-11-13T15:49:04+00:00",
+      "finished": "2026-11-13T15:49:18+00:00",
+      "song_id": "gQjCsNMR40fbAMsGOlPK",
+      "bytes": 2880618,
+      "sha256": "95dfe11d7c21c9347e9b962ef2f9ecd35116f2fce60df6f123578c11a1debaf0",
+      "duration_s": 180.035875,
+      "path": "/Volumes/MiniWork/scratch/j2664/hos_009_wonder_v01.mp3",
+      "error": ""
+    },
+    {
+      "cue": "teach",
+      "http": 200,
+      "started": "2026-11-13T15:52:14+00:00",
+      "finished": "2026-11-13T15:52:40+00:00",
+      "song_id": "Xl2Chc450JfbDUaU4iFE",
+      "bytes": 5760775,
+      "sha256": "4c1f0a17364ad5ba96fdd2d42730b2f857d19017fab52b221701bd4e15d07bb1",
+      "duration_s": 360.045688,
+      "path": "/Volumes/MiniWork/scratch/j2664/hos_009_teach_v01.mp3",
+      "error": ""
+    }
+  ],
+  "c1": 2475,
+  "c2": 4950,
+  "spent": 7425,
+  "subscription_before": {
+    "tier": "creator",
+    "status": "active",
+    "billing_period": "monthly_period",
+    "character_count": 33698,
+    "character_limit": 121114,
+    "max_character_limit_extension": 0,
+    "max_credit_limit_extension": 0,
+    "can_extend_character_limit": false,
+    "allowed_to_extend_character_limit": false,
+    "current_overage_amount": "0",
+    "current_overage_currency": "usd",
+    "next_character_count_reset_unix": 1796035831
+  },
+  "subscription_before_teach": {
+    "tier": "creator",
+    "status": "active",
+    "billing_period": "monthly_period",
+    "character_count": 36173,
+    "character_limit": 121114,
+    "max_character_limit_extension": 0,
+    "max_credit_limit_extension": 0,
+    "can_extend_character_limit": false,
+    "allowed_to_extend_character_limit": false,
+    "current_overage_amount": "0",
+    "current_overage_currency": "usd",
+    "next_character_count_reset_unix": 1796035831
+  },
+  "subscription_after_teach": {
+    "tier": "creator",
+    "status": "active",
+    "billing_period": "monthly_period",
+    "character_count": 41123,
+    "character_limit": 121114,
+    "max_character_limit_extension": 0,
+    "max_credit_limit_extension": 0,
+    "can_extend_character_limit": false,
+    "allowed_to_extend_character_limit": false,
+    "current_overage_amount": "0",
+    "current_overage_currency": "usd",
+    "next_character_count_reset_unix": 1796035831
+  },
+  "joined_duration_s": 535.325714,
+  "film_end_s": 518.4,
+  "stems": [
+    {
+      "file": "hos_009_stem_part01_the_falling_moon_v01.wav",
+      "start_s": 0.0,
+      "end_s": 84.44,
+      "duration_s": 84.44,
+      "sha256": "e45414d3417f7eefb0ab918c38e36be74f6af79235b014548ca9cedf9f2b6b1f"
+    },
+    {
+      "file": "hos_009_stem_part02_an_apple_in_a_plague_year_v01.wav",
+      "start_s": 84.44,
+      "end_s": 176.78,
+      "duration_s": 92.34,
+      "sha256": "cf72496c2008b88ff1e0d812ecc4a997a01fd5e44236c0c2a957d65ce4669c6f"
+    },
+    {
+      "file": "hos_009_stem_part03_the_cannon_on_the_mountain_v01.wav",
+      "start_s": 176.78,
+      "end_s": 260.16,
+      "duration_s": 83.38,
+      "sha256": "57ce4dcaf5f3903086727ee47b942ab999d0644ef2b90a52478dcaf07803c7fc"
+    },
+    {
+      "file": "hos_009_stem_part04_the_moon_test_v01.wav",
+      "start_s": 260.16,
+      "end_s": 393.86,
+      "duration_s": 133.7,
+      "sha256": "89f7677faf3136c4eb5c9d93aafd94f531787d157b05f7e7a9f3a1f93642109f"
+    },
+    {
+      "file": "hos_009_stem_part05_falling_around_the_world_v01.wav",
+      "start_s": 393.86,
+      "end_s": 535.28,
+      "duration_s": 141.42,
+      "sha256": "354c48208e16986a8b50bfe88b603e0f9e833c7bfc006164a8b0787c21b78c9e"
+    }
+  ],
+  "music_gate": {
+    "verdict": "FAIL",
+    "library_state": "unresolved",
+    "seconds": 535.3,
+    "bpm": null,
+    "comparison_count": 77,
+    "excluded": {
+      "same_film": 8,
+      "appledouble": 47
+    },
+    "fail": [
+      "reused: sounds like moon-leaving-part02_score_bed_v01.mp3 (0.821), hos_002_part01_curious_workshop_v01_norm.wav (0.804), hos_002_part01_curious_workshop_v02_norm.wav (0.811)"
+    ],
+    "unreadable_warn_count": 15,
+    "note": "Second comparison excluded this film and AppleDouble files. Own/brief/gap did not fail. Reused failed on three earlier beds. Unreadable files keep the library unresolved."
+  },
+  "needs_audio_review": true,
+  "meter_note": "Wonder meter was 0 at 8 seconds and posted before the teach request.",
+  "acceptance": "Not accepted. No listening was done. J2035 stays held."
+}

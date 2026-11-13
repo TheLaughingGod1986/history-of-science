@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-11-13T15:52:49+00:00",
+  "job": "J2664",
+  "cue": "wonder",
+  "prompt": "Original instrumental underscore exclusively for HOS 009 The Falling Moon. Quiet period chamber palette, warm low bowed strings. This cue is only the opening wonder: Moon question and apple/plague-year story: warm viol drone, sparse plucks, curious rather than ominous. Leave generous space for British narration.\nPace: 60-72 BPM; wonder is spacious and sustained, with no harpsichord and no drum beat.\nNOT any earlier HOS or Orbit bed, jupiter-music.mp3, generic cosmic shimmer/piano space-documentary music, a borrowed melody, heroic trailer brass, horror, plague melodrama, loud risers, vocals, lyrics, pop drums, comedy stings or EDM. Do not imitate a named composer or recording.",
+  "length_ms": 180000,
+  "model_id": "music_v2",
+  "force_instrumental": true,
+  "song_id": "gQjCsNMR40fbAMsGOlPK",
+  "sha256": "95dfe11d7c21c9347e9b962ef2f9ecd35116f2fce60df6f123578c11a1debaf0",
+  "duration_s": 180.035875,
+  "status": "generated",
+  "audio_file": "hos_009_wonder_v01.mp3"
+}

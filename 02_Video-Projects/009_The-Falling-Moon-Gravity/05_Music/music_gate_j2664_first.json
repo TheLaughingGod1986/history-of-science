@@ -1,0 +1,148 @@
+{
+  "verdict": "FAIL",
+  "bed": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/05_Music/hos_009_score_joined_v01.wav",
+  "seconds": 535.3,
+  "bpm": null,
+  "brief_pace": "Pace: 60-72 BPM",
+  "fail": [
+    "reused: sounds like hos_009_score_joined_v01.wav (1.0), moon-leaving-part02_score_bed_v01.mp3 (0.821), hos_002_part01_curious_workshop_v01_norm.wav (0.804), hos_002_part01_curious_workshop_v02_norm.wav (0.811)"
+  ],
+  "warn": [
+    "reused: couldn't read ._hos_008_short_A_v03_bed.wav to compare (CalledProcessError); download it or pass --others",
+    "reused: couldn't read ._hos_008_short_A_v04_bed.wav to compare (CalledProcessError); download it or pass --others",
+    "reused: couldn't read ._lightning008_score_bed_v01.mp3 to compare (CalledProcessError); download it or pass --others",
+    "reused: couldn't read ._lightning008_score_bed_v01_take.mp3 to compare (CalledProcessError); download it or pass --others",
+    "reused: couldn't read ._lightning008_score_bed_v02.mp3 to compare (CalledProcessError); download it or pass --others",
+    "reused: couldn't read ._hos_009_wonder_v01.mp3 to compare (CalledProcessError); download it or pass --others",
+    "reused: couldn't read ._hos_009_teach_v01.mp3 to compare (CalledProcessError); download it or pass --others",
+    "reused: couldn't read ._hos_009_score_joined_v01.wav to compare (CalledProcessError); download it or pass --others",
+    "reused: couldn't read ._hos_009_stem_part01_the_falling_moon_v01.wav to compare (CalledProcessError); download it or pass --others",
+    "reused: couldn't read ._hos_009_stem_part02_an_apple_in_a_plague_year_v01.wav to compare (CalledProcessError); download it or pass --others",
+    "reused: couldn't read ._hos_009_stem_part03_the_cannon_on_the_mountain_v01.wav to compare (CalledProcessError); download it or pass --others",
+    "reused: couldn't read ._hos_009_stem_part04_the_moon_test_v01.wav to compare (CalledProcessError); download it or pass --others",
+    "reused: couldn't read ._hos_009_stem_part05_falling_around_the_world_v01.wav to compare (CalledProcessError); download it or pass --others",
+    "reused: couldn't read ._trees006_score_bed_v01.mp3 to compare (CalledProcessError); download it or pass --others",
+    "reused: couldn't read ._owb-standalone-shorts_score_bed_v01.mp3 to compare (CalledProcessError); download it or pass --others",
+    "reused: couldn't read ._magnetic_field_flip_score_bed_v01.wav to compare (CalledProcessError); download it or pass --others",
+    "reused: couldn't read ._magnetic_field_flip_score_bed_v01.mp3 to compare (CalledProcessError); download it or pass --others",
+    "reused: couldn't read ._titan_score_bed_v01.mp3 to compare (CalledProcessError); download it or pass --others",
+    "reused: couldn't read ._uranus_score_bed_v01.wav to compare (CalledProcessError); download it or pass --others",
+    "reused: couldn't read ._uranus_score_bed_v01.mp3 to compare (CalledProcessError); download it or pass --others",
+    "reused: couldn't read ._pluto_score_bed_v01.mp3 to compare (CalledProcessError); download it or pass --others",
+    "reused: couldn't read ._nearest-star_score_bed_v01_full.wav to compare (CalledProcessError); download it or pass --others",
+    "reused: couldn't read ._nearest-star_score_bed_v01.mp3 to compare (CalledProcessError); download it or pass --others",
+    "reused: couldn't read ._nearest-star_score_bed_v01_full.mp3 to compare (CalledProcessError); download it or pass --others",
+    "reused: couldn't read ._earth-spin_score_take2_straight_v01j.wav to compare (CalledProcessError); download it or pass --others",
+    "reused: couldn't read ._gliese_score_bed_v03.mp3 to compare (CalledProcessError); download it or pass --others",
+    "reused: couldn't read ._betelgeuse_score_bed_v01.mp3 to compare (CalledProcessError); download it or pass --others",
+    "reused: couldn't read ._venus_score_bed_v01_full.mp3 to compare (CalledProcessError); download it or pass --others",
+    "reused: couldn't read ._venus_score_bed_v01.mp3 to compare (CalledProcessError); download it or pass --others",
+    "reused: couldn't read ._moon-leaving-part01_score_bed_v01.mp3 to compare (CalledProcessError); download it or pass --others",
+    "reused: couldn't read ._moon-leaving-part02_score_bed_v01.mp3 to compare (CalledProcessError); download it or pass --others",
+    "reused: couldn't read ._moon-leaving-part03_score_bed_v01.mp3 to compare (CalledProcessError); download it or pass --others",
+    "reused: couldn't read .__test_ward.wav to compare (CalledProcessError); download it or pass --others",
+    "reused: couldn't read ._hos_001_part01_ominous_ward_v12.wav to compare (CalledProcessError); download it or pass --others",
+    "reused: couldn't read ._hos_001_part01_ominous_ward_v12_norm.wav to compare (CalledProcessError); download it or pass --others",
+    "reused: couldn't read ._hos_001_part01_ominous_ward_v14_norm.wav to compare (CalledProcessError); download it or pass --others",
+    "reused: couldn't read ._hos_001_part02_ominous_ward_v08_norm.wav to compare (CalledProcessError); download it or pass --others",
+    "reused: couldn't read ._hos_001_part02_ominous_ward_v09_norm.wav to compare (CalledProcessError); download it or pass --others",
+    "reused: couldn't read ._hos_001_part03_dry_ward_v01.wav to compare (CalledProcessError); download it or pass --others",
+    "reused: couldn't read ._hos_001_part04_lab_bed_v01.wav to compare (CalledProcessError); download it or pass --others",
+    "reused: couldn't read ._hos_001_part04_lab_bed_v06.wav to compare (CalledProcessError); download it or pass --others",
+    "reused: couldn't read ._hos_001_part05_theatre_bed_v01.wav to compare (CalledProcessError); download it or pass --others",
+    "reused: couldn't read ._hos_002_part01_curious_workshop_v01.wav to compare (CalledProcessError); download it or pass --others",
+    "reused: couldn't read ._hos_002_part01_curious_workshop_v01_norm.wav to compare (CalledProcessError); download it or pass --others",
+    "reused: couldn't read ._hos_002_part01_curious_workshop_v02.wav to compare (CalledProcessError); download it or pass --others",
+    "reused: couldn't read ._hos_002_part01_curious_workshop_v02_loop150_norm.wav to compare (CalledProcessError); download it or pass --others",
+    "reused: couldn't read ._hos_002_part01_curious_workshop_v02_norm.wav to compare (CalledProcessError); download it or pass --others",
+    "reused: couldn't read part01_zoo_of_stuff_v02.mp3 to compare (OSError); download it or pass --others",
+    "reused: couldn't read part01_zoo_of_stuff_v02.wav to compare (OSError); download it or pass --others",
+    "reused: couldn't read saturn_long_vo_v02_LISTEN.wav to compare (OSError); download it or pass --others",
+    "reused: couldn't read jupiter-vo.mp3 to compare (OSError); download it or pass --others",
+    "reused: couldn't read jupiter-music.mp3 to compare (OSError); download it or pass --others",
+    "reused: couldn't read friday_black_dwarf_short_vo_v01_LISTEN.wav to compare (OSError); download it or pass --others",
+    "reused: couldn't read saturn_long_vo_v02_LISTEN.m4a to compare (OSError); download it or pass --others",
+    "reused: couldn't read monday_saturn_short_vo_v02_how_long.wav to compare (OSError); download it or pass --others",
+    "reused: couldn't read saturn_long_vo_v03_tightened.m4a to compare (OSError); download it or pass --others",
+    "reused: couldn't read monday_saturn_short_vo_v01_LISTEN.wav to compare (OSError); download it or pass --others",
+    "reused: couldn't read saturn_long_vo_v03b_tightened_LOCK.m4a to compare (OSError); download it or pass --others",
+    "reused: couldn't read saturn_long_vo_v03b_tightened_LOCK.wav to compare (OSError); download it or pass --others",
+    "reused: couldn't read saturn_long_vo_v01_LISTEN.wav to compare (OSError); download it or pass --others",
+    "reused: couldn't read monday_saturn_short_vo_v02_how_long.mp3 to compare (OSError); download it or pass --others",
+    "reused: couldn't read saturn_long_vo_v03_tightened.wav to compare (OSError); download it or pass --others"
+  ],
+  "waived": [],
+  "matches": [
+    {
+      "file": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/05_Music/hos_009_score_joined_v01.wav",
+      "similarity": 1.0
+    },
+    {
+      "file": "/Volumes/data/mac-mini-archive/YouTube/orbit-with-ben/02_Video-Projects/013_Why-The-Moon-Is-Slowly-Leaving-Us/05_Music/moon-leaving-part02_score_bed_v01.mp3",
+      "similarity": 0.821
+    },
+    {
+      "file": "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/05_Music/hos_002_part01_curious_workshop_v01_norm.wav",
+      "similarity": 0.804
+    },
+    {
+      "file": "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/05_Music/hos_002_part01_curious_workshop_v02_norm.wav",
+      "similarity": 0.811
+    }
+  ],
+  "waiver": null,
+  "rules": {
+    "similarity_fail": 0.8,
+    "compared_seconds": 300
+  },
+  "comparison_roots": [
+    {
+      "root": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects",
+      "state": "listed",
+      "files": 16
+    },
+    {
+      "root": "/Users/benjaminoats/YouTube/orbit-with-ben/02_Video-Projects",
+      "state": "listed",
+      "files": 7
+    },
+    {
+      "root": "/Volumes/data/studio-live/History Of Science/02_Video-Projects",
+      "state": "listed",
+      "files": 28
+    },
+    {
+      "root": "/Volumes/data/studio-live/orbit-with-ben/02_Video-Projects",
+      "state": "listed",
+      "files": 30
+    },
+    {
+      "root": "/Volumes/data/mac-mini-archive/YouTube",
+      "state": "listed",
+      "files": 36
+    },
+    {
+      "root": "/Volumes/data/mac-mini-archive/orbit-with-ben",
+      "state": "listed",
+      "files": 0
+    },
+    {
+      "root": "/Volumes/data/mac-mini-archive/youtube-staging",
+      "state": "listed",
+      "files": 0
+    },
+    {
+      "root": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT",
+      "state": "listed",
+      "files": 2
+    },
+    {
+      "root": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/OWB UAT",
+      "state": "listed",
+      "files": 13
+    }
+  ],
+  "comparison_count": 132,
+  "unresolved": [],
+  "library_state": "unresolved"
+}

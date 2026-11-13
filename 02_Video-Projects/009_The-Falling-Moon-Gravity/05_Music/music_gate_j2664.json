@@ -1,0 +1,100 @@
+{
+  "verdict": "FAIL",
+  "bed": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/05_Music/hos_009_score_joined_v01.wav",
+  "seconds": 535.3,
+  "bpm": null,
+  "brief_pace": "Pace: 60-72 BPM",
+  "fail": [
+    "reused: sounds like moon-leaving-part02_score_bed_v01.mp3 (0.821), hos_002_part01_curious_workshop_v01_norm.wav (0.804), hos_002_part01_curious_workshop_v02_norm.wav (0.811)"
+  ],
+  "warn": [
+    "reused: couldn't read part01_zoo_of_stuff_v02.mp3 to compare (OSError); download it or pass --others",
+    "reused: couldn't read part01_zoo_of_stuff_v02.wav to compare (OSError); download it or pass --others",
+    "reused: couldn't read saturn_long_vo_v02_LISTEN.wav to compare (OSError); download it or pass --others",
+    "reused: couldn't read jupiter-vo.mp3 to compare (OSError); download it or pass --others",
+    "reused: couldn't read jupiter-music.mp3 to compare (OSError); download it or pass --others",
+    "reused: couldn't read friday_black_dwarf_short_vo_v01_LISTEN.wav to compare (OSError); download it or pass --others",
+    "reused: couldn't read saturn_long_vo_v02_LISTEN.m4a to compare (OSError); download it or pass --others",
+    "reused: couldn't read monday_saturn_short_vo_v02_how_long.wav to compare (OSError); download it or pass --others",
+    "reused: couldn't read saturn_long_vo_v03_tightened.m4a to compare (OSError); download it or pass --others",
+    "reused: couldn't read monday_saturn_short_vo_v01_LISTEN.wav to compare (OSError); download it or pass --others",
+    "reused: couldn't read saturn_long_vo_v03b_tightened_LOCK.m4a to compare (OSError); download it or pass --others",
+    "reused: couldn't read saturn_long_vo_v03b_tightened_LOCK.wav to compare (OSError); download it or pass --others",
+    "reused: couldn't read saturn_long_vo_v01_LISTEN.wav to compare (OSError); download it or pass --others",
+    "reused: couldn't read monday_saturn_short_vo_v02_how_long.mp3 to compare (OSError); download it or pass --others",
+    "reused: couldn't read saturn_long_vo_v03_tightened.wav to compare (OSError); download it or pass --others"
+  ],
+  "waived": [],
+  "matches": [
+    {
+      "file": "/Volumes/data/mac-mini-archive/YouTube/orbit-with-ben/02_Video-Projects/013_Why-The-Moon-Is-Slowly-Leaving-Us/05_Music/moon-leaving-part02_score_bed_v01.mp3",
+      "similarity": 0.821
+    },
+    {
+      "file": "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/05_Music/hos_002_part01_curious_workshop_v01_norm.wav",
+      "similarity": 0.804
+    },
+    {
+      "file": "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/05_Music/hos_002_part01_curious_workshop_v02_norm.wav",
+      "similarity": 0.811
+    }
+  ],
+  "waiver": null,
+  "rules": {
+    "similarity_fail": 0.8,
+    "compared_seconds": 300
+  },
+  "comparison_roots": [
+    {
+      "root": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects",
+      "state": "listed",
+      "files": 16
+    },
+    {
+      "root": "/Users/benjaminoats/YouTube/orbit-with-ben/02_Video-Projects",
+      "state": "listed",
+      "files": 7
+    },
+    {
+      "root": "/Volumes/data/studio-live/History Of Science/02_Video-Projects",
+      "state": "listed",
+      "files": 28
+    },
+    {
+      "root": "/Volumes/data/studio-live/orbit-with-ben/02_Video-Projects",
+      "state": "listed",
+      "files": 30
+    },
+    {
+      "root": "/Volumes/data/mac-mini-archive/YouTube",
+      "state": "listed",
+      "files": 36
+    },
+    {
+      "root": "/Volumes/data/mac-mini-archive/orbit-with-ben",
+      "state": "listed",
+      "files": 0
+    },
+    {
+      "root": "/Volumes/data/mac-mini-archive/youtube-staging",
+      "state": "listed",
+      "files": 0
+    },
+    {
+      "root": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT",
+      "state": "listed",
+      "files": 2
+    },
+    {
+      "root": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/OWB UAT",
+      "state": "listed",
+      "files": 13
+    }
+  ],
+  "comparison_count": 77,
+  "excluded": {
+    "same_film": 8,
+    "appledouble": 47
+  },
+  "library_state": "unresolved"
+}

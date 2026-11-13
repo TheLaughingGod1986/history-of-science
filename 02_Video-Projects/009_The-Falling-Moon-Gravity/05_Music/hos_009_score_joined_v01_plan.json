@@ -1,0 +1,113 @@
+{
+  "created_at": "2026-11-13T15:52:49+00:00",
+  "job": "J2664",
+  "prompt": "Original joined instrumental bed for HOS 009 The Falling Moon. Wonder cue then teach cue, one quiet period chamber palette. Leave generous space for British narration.\nPace: 60-72 BPM overall; the teach section sits at 68-72 BPM.\nNOT any earlier HOS or Orbit bed, jupiter-music.mp3, generic cosmic shimmer/piano space-documentary music, a borrowed melody, heroic trailer brass, horror, plague melodrama, loud risers, vocals, lyrics, pop drums, comedy stings or EDM. Do not imitate a named composer or recording.\nCrossfade: 3 second equal-power from 175.28 to 178.28, centred on the cannon card at 176.78. No loop and no silence fill.",
+  "model_id": "music_v2",
+  "force_instrumental": true,
+  "status": "joined",
+  "audio_file": "hos_009_score_joined_v01.wav",
+  "sha256": "d7f5bf3d7553d7c611a913e93602b8ec83419821059294ddeaee32269a4f9572",
+  "duration_s": 535.325714,
+  "film_end_s": 518.4,
+  "crossfade": {
+    "start_s": 175.28,
+    "end_s": 178.28,
+    "duration_s": 3,
+    "curve": "equal_power",
+    "ffmpeg": "acrossfade=d=3:c1=qsin:c2=qsin",
+    "chapter_card_s": 176.78
+  },
+  "source_windows": {
+    "wonder": "0-178.28 from hos_009_wonder_v01.mp3",
+    "teach": "film 175.28 onward from hos_009_teach_v01.mp3"
+  },
+  "stems": [
+    {
+      "file": "hos_009_stem_part01_the_falling_moon_v01.wav",
+      "start_s": 0.0,
+      "end_s": 84.44,
+      "duration_s": 84.44,
+      "sha256": "e45414d3417f7eefb0ab918c38e36be74f6af79235b014548ca9cedf9f2b6b1f"
+    },
+    {
+      "file": "hos_009_stem_part02_an_apple_in_a_plague_year_v01.wav",
+      "start_s": 84.44,
+      "end_s": 176.78,
+      "duration_s": 92.34,
+      "sha256": "cf72496c2008b88ff1e0d812ecc4a997a01fd5e44236c0c2a957d65ce4669c6f"
+    },
+    {
+      "file": "hos_009_stem_part03_the_cannon_on_the_mountain_v01.wav",
+      "start_s": 176.78,
+      "end_s": 260.16,
+      "duration_s": 83.38,
+      "sha256": "57ce4dcaf5f3903086727ee47b942ab999d0644ef2b90a52478dcaf07803c7fc"
+    },
+    {
+      "file": "hos_009_stem_part04_the_moon_test_v01.wav",
+      "start_s": 260.16,
+      "end_s": 393.86,
+      "duration_s": 133.7,
+      "sha256": "89f7677faf3136c4eb5c9d93aafd94f531787d157b05f7e7a9f3a1f93642109f"
+    },
+    {
+      "file": "hos_009_stem_part05_falling_around_the_world_v01.wav",
+      "start_s": 393.86,
+      "end_s": 535.28,
+      "duration_s": 141.42,
+      "sha256": "354c48208e16986a8b50bfe88b603e0f9e833c7bfc006164a8b0787c21b78c9e"
+    }
+  ],
+  "song_ids": {
+    "wonder": "gQjCsNMR40fbAMsGOlPK",
+    "teach": "Xl2Chc450JfbDUaU4iFE"
+  },
+  "meter": {
+    "c1": 2475,
+    "c2": 4950,
+    "spent": 7425,
+    "note": "Wonder character_count was unchanged at 8s and had posted by the later read.",
+    "before": {
+      "tier": "creator",
+      "status": "active",
+      "billing_period": "monthly_period",
+      "character_count": 33698,
+      "character_limit": 121114,
+      "max_character_limit_extension": 0,
+      "max_credit_limit_extension": 0,
+      "can_extend_character_limit": false,
+      "allowed_to_extend_character_limit": false,
+      "current_overage_amount": "0",
+      "current_overage_currency": "usd",
+      "next_character_count_reset_unix": 1796035831
+    },
+    "before_teach": {
+      "tier": "creator",
+      "status": "active",
+      "billing_period": "monthly_period",
+      "character_count": 36173,
+      "character_limit": 121114,
+      "max_character_limit_extension": 0,
+      "max_credit_limit_extension": 0,
+      "can_extend_character_limit": false,
+      "allowed_to_extend_character_limit": false,
+      "current_overage_amount": "0",
+      "current_overage_currency": "usd",
+      "next_character_count_reset_unix": 1796035831
+    },
+    "after_teach": {
+      "tier": "creator",
+      "status": "active",
+      "billing_period": "monthly_period",
+      "character_count": 41123,
+      "character_limit": 121114,
+      "max_character_limit_extension": 0,
+      "max_credit_limit_extension": 0,
+      "can_extend_character_limit": false,
+      "allowed_to_extend_character_limit": false,
+      "current_overage_amount": "0",
+      "current_overage_currency": "usd",
+      "next_character_count_reset_unix": 1796035831
+    }
+  }
+}
