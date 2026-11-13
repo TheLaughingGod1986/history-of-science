@@ -1,0 +1,9 @@
+{
+  "file": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/cuts_v03f.csv",
+  "rows": 104,
+  "passed": true,
+  "errors": [],
+  "warnings": [
+    "row P5:02a_linnean_reading_beat1: may clip mid-sentence before next row ('On the 1st of July 1858' \u2192 \"Darwin's friends Charles Lyle and Joseph\")"
+  ]
+}

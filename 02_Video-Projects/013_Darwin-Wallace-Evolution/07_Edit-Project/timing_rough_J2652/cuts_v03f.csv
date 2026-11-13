@@ -1,0 +1,105 @@
+row,source,vo_in,vo_out,vo_text
+P1:01_study_beaks,new_mint_quality,0.0,3.82,Why did Charles Darwin work out how life changes over time
+P1:02_drawer_lock,new_mint_quality,3.82,7.9,and then lock it in a drawer for 20 years?
+P1:03a_unlabelled_birds,new_mint_quality,7.9,13.58,"By the end of this film you'll know how a few unlabeled birds, eight years of barnacles"
+P1:03b_malay_packet,new_mint_quality,13.58,20.22,and one letter from the other side of the world forced the biggest secret in biology into the open.
+P1:05a_museum_cases,new_mint_quality,20.22,23.48,In the 1830s
+P1:05b_museum_plaques,new_mint_quality,23.48,29.26,most naturalists believed every kind of animal and plant had been made once and never changed.
+P1:06_padlock_shut,new_mint_quality,29.26,32.7,Saying anything else could ruin a scientist.
+P1:07_darwin_1837_desk_wide,new_mint_quality,32.7,35.42,But in the summer of 1837
+P1:07_darwin_1837_desk_detail,new_mint_quality,35.42,40.6,"a 28-year-old Charles Darwin drew a little tree in a private notebook,"
+P1:08_cg_i_think_tree_beat1,code_graphic,40.6,45.44,one kind of animal at the bottom branching into many at the top.
+P1:08_cg_i_think_tree_beat2,code_graphic,45.44,49.92,"Above it he wrote two words, I think."
+P1:08_cg_i_think_tree_beat3,code_graphic,49.92,54.5,He kept the idea mostly to himself for 20 years.
+P1:09_wallace_hut_split_beat1,new_mint_quality,54.5,61.08,Then in June 1858 a letter arrived from a collector on the other side of the world.
+P1:10_cg_globe_arc,code_graphic,61.08,67.3,"Inside was Darwin's own theory, worked out by somebody else."
+P1:11_beagle_cabin_explorer_beat1,new_mint_quality,67.3,71.22,So how did a young man who didn't even label his birds properly
+P1:11_beagle_cabin_explorer_beat2,new_mint_quality,71.22,75.12,stumble onto the secret of how life changes?
+P2:01_card_p02,CARD,75.12,81.22,When people picture Darwin on the Galapagos Islands they imagine a flash of genius on the beach.
+P2:02_galapagos_beach_myth,new_mint_quality,81.22,84.22,It didn't happen like that.
+P2:03_unlabelled_bagging_beat1,new_mint_quality,84.22,90.82,"In 1835 Darwin collected small dark birds there and thought they were a mix of blackbirds,"
+P2:04_blank_tags_row,new_mint_quality,90.82,96.94,wrens and finches. For most of them he didn't write down which island they came from.
+P2:05_tortoise_overboard_beat1,new_mint_quality,96.94,100.22,Even the giant tortoises should have told him.
+P2:05_tortoise_overboard_beat2,new_mint_quality,100.22,104.56,The ship's crew ate them and threw the shells overboard.
+P2:06a_lawson_jetty,new_mint_quality,104.56,109.94,Then the island's vice governor Nicholas Lawson mentioned something odd.
+P2:06b_cg_tortoise_shells,code_graphic,109.94,115.02,He could tell which island a tortoise came from just by the shape of its shell.
+P2:07_darwin_notebook_wait,new_mint_quality,115.02,120.88,Darwin only understood how important that was much later.
+P2:08a_gould_sorting,new_mint_quality,120.88,126.82,Back in London a bird expert called John Gould looked at the skins and gave him a surprise.
+P2:08b_gould_skins_closeup,new_mint_quality,126.82,131.4,They weren't a mix at all. They were all finches.
+P2:09_cg_finch_toolbox_beat1,code_graphic,131.4,138.36,"A group of close cousins each with a differently shaped beak, heavy ones for cracking hard seeds,"
+P2:09_cg_finch_toolbox_beat2,code_graphic,138.36,143.72,thin ones for picking at insects and cactus flowers.
+P2:10a_explorer_shipmates,new_mint_quality,143.72,149.64,Darwin had to borrow labeled birds from his shipmates to work out which beak came from which island
+P2:10b_shipmate_tagged_tray,free_archive,149.64,153.48,and slowly a question formed.
+P2:11_island_split_vision_beat1,new_mint_quality,153.48,157.5,What if these birds had all come from one kind of finch
+P2:11_island_split_vision_beat2,new_mint_quality,157.5,161.48,long ago and changed to fit each island?
+P2:12a_arch_notebook_tree_zoom,free_archive,161.48,167.92,That's the tree in the notebook. He could see that one kind of animal could split into many.
+P2:12b_tree_question,new_mint_quality,167.92,170.92,But what was doing the shaping?
+P3:01_card_p03,CARD,170.92,173.8,On the 28th of September 1838
+P3:02a_malthus_lamplight,new_mint_quality,173.8,178.54,Darwin started reading a book about human populations by Thomas Malthus
+P3:02b_notebook_d_open,new_mint_quality,178.54,182.62,and the missing piece fell into place.
+P3:03_cg_malthus_curve_beat1,code_graphic,182.62,186.82,Every living thing has far more young than can ever survive.
+P3:03_cg_malthus_curve_beat2,code_graphic,186.82,192.08,There isn't enough food for all of them so most die young.
+P3:04a_drought_island_seeds,new_mint_quality,192.08,197.22,Now picture a dry year on one island. Only hard thick seeds are left.
+P3:04b_finch_cracks_seed,new_mint_quality,197.22,201.96,The finches whose beaks happen to be a little deeper can crack them.
+P3:05a_chicks_deep_beaks,new_mint_quality,201.96,206.6,They live and they raise chicks with deep beaks like theirs.
+P3:05b_finches_next_generation,new_mint_quality,206.6,211.76,Repeat that over thousands of generations and the whole species changes.
+P3:06_nature_keeps_fit_beat1,code_graphic,211.76,216.22,Nobody steers it. Nature just keeps the ones that fit.
+P3:06_nature_keeps_fit_beat2,code_graphic,216.22,219.56,Darwin called it natural selection.
+P3:07a_darwin_afraid_window,new_mint_quality,219.56,224.14,So why didn't he tell the world? He was afraid.
+P3:07b_confessing_murder_letter,new_mint_quality,224.14,229.9,"Telling a friend that species could change was, he wrote, like confessing a murder."
+P3:08_emma_study,new_mint_quality,229.9,234.2,"And his wife, Emma, was deeply religious."
+P3:09a_essay_1844_sealed,code_graphic,234.2,240.64,In 1844 he wrote it all out. About 230 pages sealed it
+P3:09b_emma_letter_cupboard,new_mint_quality,240.64,246.86,and left Emma a letter. If he died she was to pay to have it published.
+P3:10a_arch_vestiges_1844,free_archive,246.86,253.78,A few months later an unsigned book claiming life had changed over time was torn apart by scientists.
+P3:10b_vestiges_torn_apart,new_mint_quality,253.78,257.98,Then he spent about eight years studying barnacles.
+P3:11_barnacles_microscope,new_mint_quality,257.98,260.98,So many barnacles the story goes
+P3:12_cg_barnacle_counter,code_graphic,260.98,267.38,that one of his children asked a friend where their father did his barnacles.
+P3:13b_brass_globe_turn,new_mint_quality,267.38,273.52,Darwin's friends kept warning him that if he waited too long someone else would get there first.
+P4:01_card_p04,CARD,273.52,276.16,Who was that someone?
+P4:02_wallace_collector,new_mint_quality,276.16,283.12,Alfred Russell Wallace was not rich like Darwin. He made his living collecting animals and selling them to museums.
+P4:03a_helen_burning,new_mint_quality,283.12,289.62,In 1852 coming home from four years in the Amazon his ship caught fire and sank.
+P4:03b_crates_sinking,new_mint_quality,289.62,293.06,Almost his whole collection went down with it.
+P4:04_open_boat_ten_days,new_mint_quality,293.06,296.84,He spent 10 days in an open boat at sea.
+P4:05_cg_wallace_counter_beat1,code_graphic,296.84,302.66,He went out again anyway. This times the islands of what is now Indonesia and Malaysia.
+P4:05_cg_wallace_counter_beat2,code_graphic,302.66,308.62,"Over eight years he collected more than 125,000 specimens."
+P4:06a_wallace_fever,new_mint_quality,308.62,314.92,In February 1858 lying ill with a fever Wallace thought about the same book by Malthus
+P4:06b_arch_malthus_1798,free_archive,314.92,321.42,and like Darwin 20 years before he saw it. The ones that fit survive.
+P4:07a_wallace_writes_hut,new_mint_quality,321.42,328.24,Within days he had written it up and he posted it to the one famous naturalist he knew would be interested.
+P4:07b_packet_to_mailbag,code_graphic,328.24,333.94,Charles Darwin. So Darwin could simply hide the letter and keep the credit.
+P4:08_midpoint_twist_packet,new_mint_quality,333.94,337.3,Case closed? Wrong.
+P4:09a_darwin_reads_wallace,new_mint_quality,337.3,343.98,On the 18th of June 1858 Darwin read Wallace's paper and wrote to his friend Charles Lyle.
+P4:09b_smashed_letter_pen,new_mint_quality,343.98,349.56,All my originality whatever it may amount to will be smashed.
+P4:10_fairness_25_june,new_mint_quality,349.56,355.42,Darwin said he would rather lose the credit than seem to have acted unfairly to Wallace.
+P4:11_down_house_grief,new_mint_quality,355.42,360.16,Three days later his baby son died of scarlet fever.
+P4:12_lyell_hooker_bundle,new_mint_quality,360.16,363.16,His friends found a way out.
+P5:01_card_p05,CARD,363.16,366.02,What happened when the world finally heard?
+P5:02a_linnean_reading_beat1,new_mint_quality,366.02,368.52,On the 1st of July 1858
+P5:02a_linnean_reading_beat2,new_mint_quality,368.52,371.82,Darwin's friends Charles Lyle and Joseph Hooker
+P5:02b_joint_papers_lectern_wide,free_archive,371.82,376.72,had both men's work read out together at the Linnaean Society in London.
+P5:02b_joint_papers_lectern_detail,free_archive,376.72,382.38,Wallace's paper and older writing from Darwin to show he had the idea first.
+P5:03a_two_empty_chairs,new_mint_quality,382.38,388.2,Neither man was in the room. Darwin was at home grieving for his son.
+P5:03b_wallace_jungle_clearing,new_mint_quality,388.2,394.06,Wallace hadn't even been asked. He was still in the islands and didn't know for months.
+P5:04a_empty_linnean_hall,new_mint_quality,394.06,398.2,And the reaction? Almost nothing.
+P5:04b_bell_report_1859,code_graphic,398.2,404.66,The next year the Society's President looked back and said the year had not been marked by any striking discovery.
+P5:05a_darwin_writes_origin,new_mint_quality,404.66,407.82,That pushed Darwin to write.
+P5:05b_arch_origin_1859_title,free_archive,407.82,414.04,In a little over a year he finished a shorter book for everyone on the origin of species.
+P5:06_murray_bookshop,new_mint_quality,414.04,418.2,It came out on the 24th of November 1859
+P5:07_cg_timeline_origin,code_graphic,418.2,424.18,and booksellers had ordered every copy before it even went on sale.
+P5:08a_wallace_opens_origin,new_mint_quality,424.18,428.22,And Wallace? There was no bitter fight.
+P5:08b_wallace_reads_origin,new_mint_quality,428.22,434.28,When he read the book in the islands he praised it and said Darwin had done the work far better than he could.
+P5:09_arch_darwinism_1889,free_archive,434.28,440.66,Years later he even titled his own book about the theory Darwinism.
+P5:10_darwin_worried_shelf_beat1,new_mint_quality,440.66,447.66,But one problem worried Darwin for the rest of his life and the answer was already in print.
+P6:01_card_p06,CARD,447.66,453.0,The problem came from an engineer called Fleming Jenkin in 1867.
+P6:02b_paint_pots_mix,new_mint_quality,453.0,458.14,Everyone then thought parents' traits blended in their children like mixing paint.
+P6:03_cg_blending_beaks_beat1,code_graphic,458.14,465.08,"If that was true one bird with a better beak would have children with a half better beak, then a quarter better."
+P6:03_cg_blending_beaks_beat2,code_graphic,465.08,471.06,The advantage would wash away before nature could keep it. Darwin never solved it.
+P6:04a_mendel_pea_garden,new_mint_quality,471.06,474.08,But a year earlier in 1866
+P6:04b_arch_mendel_1866_paper,free_archive,474.08,479.9,a friar called Gregor Mendel had published his work on pea plants.
+P6:05_beads_not_paint,new_mint_quality,479.9,485.56,Traits don't blend like paint. They're passed on whole like beads.
+P6:06a_origin_fifth_edition,new_mint_quality,485.56,490.72,And one more thing. Survival of the fittest wasn't Darwin's phrase.
+P6:06b_spencer_coined,new_mint_quality,490.72,496.54,The writer Herbert Spencer coined it and Darwin only added it to his book later.
+P6:07_key_in_lock_beat1,new_mint_quality,496.54,499.98,Fittest never meant the strongest.
+P6:07_key_in_lock_beat2,new_mint_quality,499.98,504.22,It means the one that fits its world best like a key in a lock.
+P6:08a_reuse_study_beaks_callback,existing_plate_reuse,504.22,507.78,Put Darwin's selection together with Mendel's beads
+P6:08b_darwin_mendel_synthesis,new_mint_quality,507.78,512.74,and you have the core of how biologists explain the living world today.
+P6:09_cream_end_card,CARD,512.74,515.0,

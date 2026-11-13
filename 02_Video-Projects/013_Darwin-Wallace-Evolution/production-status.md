@@ -245,3 +245,22 @@ No checker was changed or bypassed. See
 `07_Edit-Project/timing_rough_J2652/REVIEW_v03c.md` for exact evidence, seven
 checks and remaining work: checker discrepancy, sentence/cadence and semantic
 review, free art/new compositions, new-version rough and phone sheets.
+
+
+## J2652 v03f diagnostic checkpoint — 13 November 2026, Codex
+
+104 beats; three sentence-preference conflicts resolved; no in-word or unsupported
+cuts; 7-second ceiling; 43 cue intervals preserved. Locked WAV unchanged.
+
+```text
+Ran 6 tests — OK
+clip_check: passed=true, errors=[], warnings=1
+ALL CHECKS PASS (repository checks only)
+Full diagnostic decode: exit 0
+NAS COPY HASH VERIFIED
+```
+
+Overall FIX, no edit PASS or UAT. New NAS diagnostic contains 57 raw footage beats
+and 47 explicit slates. See `07_Edit-Project/timing_rough_J2652/REVIEW_v03f.md`
+for all seven requested checks, six phone sheets, the opening interpretation for
+Chief and remaining free-art/source work. J2652 remains 2/3. No spend.

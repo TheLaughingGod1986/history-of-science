@@ -1,0 +1,16 @@
+{
+  "approved": false,
+  "remaining_choices": [
+    {
+      "row": "01_study_beaks",
+      "start_s": 0.0,
+      "cut_s": 3.82,
+      "sentence_windows": [
+        [
+          6.82,
+          7.9
+        ]
+      ]
+    }
+  ]
+}
