@@ -7,4 +7,4 @@ parent_fail_v03_sha=b9180ca94ee1b155f008695c418fbcaa5dabcdc09d34dc55abe3c6d17cc4
 remint=09_empty_chair_claim_v04
 skip_under_empty_chair=10_city_plan_lots
 empty_chair_label=70.0-76.4
-flow_account=benoats@googlemail.com
+flow_account=the studio Ultra account

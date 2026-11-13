@@ -19,7 +19,7 @@ This brief does **not** pass/fail cuts as Ben PASS.
 - **Teaching density** — Animistry side label or short teach card whenever name/place/idea needs explaining (`HOS_HOUSE_TEACHING_DENSITY_LOCK.md`).
 - **No DNA helix** — never open Create with `Same DNA soft background`; prefer `Same Würzburg lab` (`HOS_HOUSE_NO_DNA_HELIX_LOCK.md`).
 - **Veo 3.1 Quality / CLEAN LIGHT** for proof-plate / bone+ring / beam beats.
-- **Flow Mini only** — `benoats@googlemail.com`; no cloud Flow.
+- **Flow Mini only** — `the studio Ultra account`; no cloud Flow.
 - **No Explorer** this part.
 - **Assemble CLOSED** until all Batch A lands + plate-first UAT PASS.
 - Bed: ominous lab (death-ward cousin under VO). Picture with VO. No Orbit / Germs ward / Periodic desk / lava / Ken Burns ship.
@@ -32,7 +32,7 @@ This brief does **not** pass/fail cuts as Ben PASS.
 4. Always-fails: lava drip/molten bead; unfinished flat cards; mid-crown unfinished Explorer hair; **no DNA helix / double helix / Periodic DNA desk prop; never `Same DNA soft background`; prefer `Same Würzburg lab`**.
 5. After 2 same-set FAILs → new framing/start, not harder prompt only.
 6. One plate per FAIL cycle until that plate KEEP; then parallel; assemble last.
-7. Auth: Mini CDP `benoats@googlemail.com` ULTRA only.
+7. Auth: Mini CDP `the studio Ultra account` ULTRA only.
 
 ---
 

@@ -8,7 +8,7 @@ DNA: same board-top edge-off / zerolamp moon-window as 11 KEEP.
 Model: Veo 3.1 - Quality REQUIRED (CLEAN LIGHT class per locked Showrunner brief).
 Seedance banned. Paint banned. No assemble. No 09b. No remint 06/11.
 
-Auth: Mini CDP benoats@googlemail.com ULTRA. STOP on passkey.
+Auth: Mini CDP the studio Ultra account ULTRA. STOP on passkey.
 Plate-library 4b8ed25. Main lock 3bc0414.
 Max 2 starts this DNA then STOP_TO_COS.
 """
@@ -22,6 +22,19 @@ import time
 from pathlib import Path
 
 from playwright.sync_api import sync_playwright
+
+def _account_sha256(addr: str | None) -> str:
+    import hashlib as _hashlib
+    s = (addr or "").strip().lower()
+    if not s:
+        return ""
+    return s if len(s) == 64 and all(c in "0123456789abcdef" for c in s) else _hashlib.sha256(s.encode()).hexdigest()
+
+
+def _blob_account_sha256s(text: str) -> set[str]:
+    import re as _re
+    return {_account_sha256(e) for e in _re.findall(r"[A-Za-z0-9._%+-]+@(?:gmail|googlemail)\.com", text or "", _re.I)}
+
 
 REPO = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(REPO / "04_Audio" / "tools"))
@@ -37,7 +50,7 @@ QA_DIR = PROJ / "07_Edit-Project/_qa_part04_v20_plates_try1_11b"
 START_COUNTER = QA_DIR / "start_counter.json"
 # CLEAN LIGHT class — Quality REQUIRED (locked brief). Seedance banned.
 MODEL = os.environ.get("ORBIT_FLOW_VEO_MODEL") or "Veo 3.1 - Quality"
-REQUIRED_EMAIL = "benoats@googlemail.com"
+REQUIRED_EMAIL = "81a01c9d841483f444008cd69e98b26019e032ed75b5e33e17409a76c6525ce9"
 MAX_STARTS = 2
 OUT = PROJ / "07_Edit-Project/_qa_part04_v20_flow/submit_11b_wait_and_hunt_try1.json"
 PARENT_11_SHA = "97d0c419fdf7720f366140a9fb2b024a29580a2db51a434e7afb425a19f8cc72"
@@ -135,7 +148,7 @@ def assert_auth(page) -> dict:
         )
     ):
         raise SystemExit("STOP_TO_COS BLOCKED_AUTH: passkey wall")
-    if REQUIRED_EMAIL.lower() not in blob and "googlemail.com" not in blob:
+    if REQUIRED_EMAIL not in _blob_account_sha256s(blob):
         print("WARN: email not visible in DOM yet; continuing if ULTRA present", flush=True)
     if "ultra" not in blob:
         for sel in (
@@ -155,7 +168,7 @@ def assert_auth(page) -> dict:
         raise SystemExit("STOP_TO_COS BLOCKED_AUTH: ULTRA badge missing")
     return {
         "ultra": True,
-        "email_hint": REQUIRED_EMAIL.lower() in blob or "googlemail.com" in blob,
+        "email_hint": REQUIRED_EMAIL in _blob_account_sha256s(blob),
     }
 
 

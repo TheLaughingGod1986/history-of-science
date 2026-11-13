@@ -455,7 +455,7 @@ def main() -> None:
                     "Flow Veo try2 rejected (flame) → clean-chair-lock composite: "
                     "ok_abet DNA start locks chair/lamp/shelves; desk cards from try2 motion"
                 ),
-                "flow_account": "benoats@googlemail.com",
+                "flow_account": "the studio Ultra account",
                 "p03_untouched_sha256": p03_sha,
                 "plate02b_picture_s": [plate02b_start, plate02b_end],
                 "columns_picture_s": [columns_start, columns_end],
@@ -488,7 +488,7 @@ def main() -> None:
         "- KEEP from v13: 04,05,06 Explorer,09,10,05b,07,08,08b,02b,07b (+ all non-09b).\n"
         "- Spot ~102–110s: soft panel glow ONLY — NO flame / fire wisp / lamp smoke.\n"
         "- Cards readable (H/C/O/N/Li). Indoor wood/bookcase. No blue fills/roofs.\n"
-        "- Part 01–03 LOCKED. Flow account benoats@googlemail.com.\n"
+        "- Part 01–03 LOCKED. Flow account the studio Ultra account.\n"
         "- Do NOT declare PASS here. Scores → CoS. No Ben ping.\n\n"
         "Reject with stills from THIS file only.\n"
         f"keep_p03_sha={p03_sha}\n"

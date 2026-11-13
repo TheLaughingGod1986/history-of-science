@@ -8,7 +8,7 @@ Remint plates: 06_explorer_leaves_gap, 10_family_before_weight,
                11_publish_gaps, 11b_wait_and_hunt
 (09b uses lamplock composite unless --also-09b)
 
-Flow: benoats@googlemail.com on /u/1/. Scores → CoS. No PASS. No Ben ping.
+Flow: the studio Ultra account on /u/1/. Scores → CoS. No PASS. No Ben ping.
 """
 from __future__ import annotations
 
@@ -23,6 +23,19 @@ from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFilter
 from playwright.sync_api import sync_playwright
+
+def _account_sha256(addr: str | None) -> str:
+    import hashlib as _hashlib
+    s = (addr or "").strip().lower()
+    if not s:
+        return ""
+    return s if len(s) == 64 and all(c in "0123456789abcdef" for c in s) else _hashlib.sha256(s.encode()).hexdigest()
+
+
+def _blob_account_sha256s(text: str) -> set[str]:
+    import re as _re
+    return {_account_sha256(e) for e in _re.findall(r"[A-Za-z0-9._%+-]+@(?:gmail|googlemail)\.com", text or "", _re.I)}
+
 
 REPO = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(REPO / "04_Audio" / "tools"))
@@ -41,9 +54,9 @@ STARTS = PROJ / "04_Generated-Clips/part04/refs/v15_start_frames"
 
 MODEL = os.environ.get("ORBIT_FLOW_VEO_MODEL", "Veo 3.1 - Fast")
 PROFILE = Path(os.environ.get("ORBIT_FLOW_PROFILE", str(Path.home() / ".playwright-hos-flow-profile")))
-REQUIRED_FLOW_EMAIL = "benoats@googlemail.com"
-ALLOWED_FLOW_EMAILS = {REQUIRED_FLOW_EMAIL, "benoats@gmail.com"}
-FORBIDDEN_FLOW_EMAIL = "benoats86@gmail.com"
+REQUIRED_FLOW_EMAIL = "81a01c9d841483f444008cd69e98b26019e032ed75b5e33e17409a76c6525ce9"
+ALLOWED_FLOW_EMAILS = {REQUIRED_FLOW_EMAIL, "1060171615b311ab416fccd36a51024de12b5fe8b815e6ccd3d3dde67ffad99f"}
+FORBIDDEN_FLOW_EMAIL = "93b0f97ef00986fa90ead10a83be910d43707ddc8023daa2018ed1d95cbbb9d4"
 MAX_CREATES = int(os.environ.get("HOS_V15_MAX_CREATES", "3"))
 
 PARENT_V14 = PROJ / "09_Final-Export/hos_002_part04_rough_v14.mp4"
@@ -254,7 +267,7 @@ def pick_google_account(page) -> None:
     url = page.url or ""
     if "accounts.google.com" not in url:
         return
-    for needle in (REQUIRED_FLOW_EMAIL, "benoats@gmail.com"):
+    for needle in [e for e in re.findall(r"[A-Za-z0-9._%+-]+@(?:gmail|googlemail)\.com", page.inner_text("body"), flags=re.I) if _account_sha256(e) in ALLOWED_FLOW_EMAILS]:
         loc = page.get_by_text(needle, exact=False)
         if loc.count():
             print(f"  account chooser → {needle}", flush=True)
@@ -273,10 +286,10 @@ def require_flow_account(page) -> str:
     except Exception:
         labels = []
     blob = " | ".join(labels[:120]).lower()
-    if "benoats86" in blob:
+    if FORBIDDEN_FLOW_EMAIL in _blob_account_sha256s(blob):
         raise SystemExit(f"BLOCKED_AUTH: forbidden account {FORBIDDEN_FLOW_EMAIL}")
     for email in ALLOWED_FLOW_EMAILS:
-        if email.lower() in blob:
+        if email in _blob_account_sha256s(blob):
             return email
     return REQUIRED_FLOW_EMAIL
 

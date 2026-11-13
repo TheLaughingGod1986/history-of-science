@@ -452,7 +452,7 @@ def main() -> None:
                 "plate10_sha256": plate10_sha,
                 "plate11_sha256": plate11_sha,
                 "plate11b_sha256": plate11b_sha,
-                "flow_account": "benoats@googlemail.com",
+                "flow_account": "the studio Ultra account",
                 "no_paint_fallback": True,
                 "p03_untouched_sha256": p03_sha,
                 "hos_uat": str(ICLOUD / OUT.name),
@@ -484,7 +484,7 @@ def main() -> None:
         "- Spot ~48 Explorer: finished 3D crown, no scalp holes, clean cards, clean lamp.\n"
         "- Spot A PREDICTION: SOLID lamps — no lava/fire drip from the bulb.\n"
         "- Spot ~1:44 / FAMILY FIRST / PUBLISH: finished 3D cartoon, not flat unfinished 2D.\n"
-        "- Part 01–03 LOCKED. Flow account benoats@googlemail.com.\n"
+        "- Part 01–03 LOCKED. Flow account the studio Ultra account.\n"
         "- Do NOT declare PASS here. Scores → CoS. No Ben ping.\n\n"
         "Reject with stills from THIS file only.\n"
         f"keep_p03_sha={p03_sha}\n"

@@ -3,7 +3,7 @@
 **Gate:** Ben AMEND FAIL on v08 — ~68–69s desk still has model-town board with glowing yellow house-blocks / house icons.  
 **Parent:** `hos_002_part03_rough_v08.mp4` (sha256 `487dc2b8…` · 87224424 B · 89.68s)  
 **Export:** `hos_002_part03_rough_v09.mp4`  
-**Flow:** `benoats@googlemail.com`. Create dies → STOP (no Ken Burns).  
+**Flow:** `the studio Ultra account`. Create dies → STOP (no Ken Burns).  
 **Scores → CoS only.** CoS owns Ben ping after UAT. No P04 until Ben KEEP.
 
 Ben FAIL stills (CoS): glowing yellow house-blocks on desk city-plan board ≈68–69s.

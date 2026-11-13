@@ -3,7 +3,7 @@
 
 Claude's approval, desk PR #180 comment 5950150517: one Vertex Quality mint of an 8 s plate, at most
 2 takes, inside the £0-floor rule, logged. Same Vertex pattern as 005 (`_mint_vertex_v02.py`):
-project gen-lang-client-0538779324 ("History of Science"), us-central1, ADC as benoats@googlemail.com.
+project gen-lang-client-0538779324 ("History of Science"), us-central1, ADC as the studio Ultra account.
 Never an Orbit project. Tokens are never printed. Media stays out of git (written to the main checkout).
 
   still                  start frame (Vertex gemini-2.5-flash-image, 002 Part 01 look refs)
@@ -37,7 +37,7 @@ PLATE = "lavoisier_list"
 
 PROJECT = "gen-lang-client-0538779324"
 LOCATION = "us-central1"
-ACCOUNT = "benoats@googlemail.com"
+ACCOUNT = "81a01c9d841483f444008cd69e98b26019e032ed75b5e33e17409a76c6525ce9"
 MODEL = "veo-3.1-generate-001"
 IMAGE_MODEL = "gemini-2.5-flash-image"
 CLIP_S, RESOLUTION, MAX_TAKES = 8, "1080p", 2

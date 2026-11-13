@@ -10,7 +10,7 @@
 **Bridge in:** P04 ended on publish gaps → wait / hunt.  
 **Bridge out:** last glowing vacancy → **3–4s cream-on-brown house end card** (Discovery. Wonder. Proof.). Subscribe = Studio only.  
 **Export target:** `hos_002_part05_rough_v01.mp4`  
-**Flow:** Mini CDP `benoats@googlemail.com` ULTRA. Create dies → STOP.  
+**Flow:** Mini CDP `the studio Ultra account` ULTRA. Create dies → STOP.  
 **Scores → CoS only.** Do not declare PASS until Ben says so.
 
 ---
@@ -92,7 +92,7 @@ Hold on the last glowing vacancy. Soft return. The next element is already late 
 4. Always-fails in every prompt: lava drip/molten bead; unfinished flat cards; mid-crown unfinished Explorer hair; fire/flame/sparks.  
 5. After 2 same-DNA FAILs → new framing/start, not harder prompt only. Then unused unique inventory before shipping a fire plate.  
 6. One plate per FAIL cycle until that plate KEEP; then parallel remaining plates; assemble last. **Greenfield: mint plate 01 first, KEEP, then continue.** Max **2** Flow starts per cycle.  
-7. Auth: Mini CDP `benoats@googlemail.com` ULTRA only.  
+7. Auth: Mini CDP `the studio Ultra account` ULTRA only.  
 8. **Veo 3.1 Quality** for fragile CLEAN LIGHT (lamp / flask / emissive empty seats / gallium sheen). **Fast** only for low-risk garnish. Seedance is not a substitute.
 
 Full lock: `00_Brand/Brand-Guidelines/HOS_STUDIO_PLATE_LIBRARY_LOCK.md`

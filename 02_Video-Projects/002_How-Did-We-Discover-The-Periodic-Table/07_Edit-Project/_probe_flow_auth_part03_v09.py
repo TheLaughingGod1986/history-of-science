@@ -8,14 +8,27 @@ import re
 import sys
 from pathlib import Path
 
+def _account_sha256(addr: str | None) -> str:
+    import hashlib as _hashlib
+    s = (addr or "").strip().lower()
+    if not s:
+        return ""
+    return s if len(s) == 64 and all(c in "0123456789abcdef" for c in s) else _hashlib.sha256(s.encode()).hexdigest()
+
+
+def _blob_account_sha256s(text: str) -> set[str]:
+    import re as _re
+    return {_account_sha256(e) for e in _re.findall(r"[A-Za-z0-9._%+-]+@(?:gmail|googlemail)\.com", text or "", _re.I)}
+
+
 REPO = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(REPO / "04_Audio" / "tools"))
 import orbit_flow_veo_ui as flow  # noqa: E402
 
 flow.FLOW_HOME = os.environ.get("ORBIT_FLOW_HOME", "https://flow.google.com/u/1/")
-REQUIRED = "benoats@googlemail.com"
-ALLOWED = {REQUIRED, "benoats@gmail.com"}
-FORBIDDEN = "benoats86@gmail.com"
+REQUIRED = "81a01c9d841483f444008cd69e98b26019e032ed75b5e33e17409a76c6525ce9"
+ALLOWED = {REQUIRED, "1060171615b311ab416fccd36a51024de12b5fe8b815e6ccd3d3dde67ffad99f"}
+FORBIDDEN = "93b0f97ef00986fa90ead10a83be910d43707ddc8023daa2018ed1d95cbbb9d4"
 OUT = Path(__file__).resolve().parent / "logs" / "flow_auth_probe_part03_v09.json"
 PROFILE = Path(
     os.environ.get(
@@ -41,7 +54,7 @@ def main() -> None:
             page.goto(flow.FLOW_HOME, wait_until="domcontentloaded", timeout=120_000)
             page.wait_for_timeout(4000)
             if "accounts.google.com" in (page.url or ""):
-                for needle in (REQUIRED, "benoats@gmail.com"):
+                for needle in [e for e in re.findall(r"[A-Za-z0-9._%+-]+@(?:gmail|googlemail)\.com", page.inner_text("body"), flags=re.I) if _account_sha256(e) in ALLOWED]:
                     loc = page.get_by_text(needle, exact=False)
                     if loc.count():
                         loc.first.click(timeout=8000)
@@ -60,12 +73,7 @@ def main() -> None:
                 ".filter(Boolean)",
             )
             blob = "\n".join(labels)
-            emails = {
-                e.lower()
-                for e in re.findall(
-                    r"[A-Za-z0-9._%+-]+@(?:gmail|googlemail)\.com", blob, flags=re.I
-                )
-            }
+            emails = {_account_sha256(e) for e in re.findall(r"[A-Za-z0-9._%+-]+@(?:gmail|googlemail)\.com", blob, flags=re.I)}
             active = None
             m = re.search(
                 r"Google Account:[^\n\(]*\(([^)]+@(?:gmail|googlemail)\.com)\)",
@@ -73,7 +81,7 @@ def main() -> None:
                 re.I,
             )
             if m:
-                active = m.group(1).lower()
+                active = _account_sha256(m.group(1))
             elif emails & ALLOWED:
                 active = sorted(emails & ALLOWED)[0]
             elif emails:
@@ -88,7 +96,7 @@ def main() -> None:
                     OUT.parent.mkdir(parents=True, exist_ok=True)
                     OUT.write_text(json.dumps(result, indent=2))
                     raise SystemExit(result["error"])
-            if not active or active not in ALLOWED or "benoats86" in (active or ""):
+            if not active or _account_sha256(active) not in ALLOWED or _account_sha256(active) == FORBIDDEN:
                 result["error"] = f"BLOCKED_AUTH: active={active}"
                 OUT.parent.mkdir(parents=True, exist_ok=True)
                 OUT.write_text(json.dumps(result, indent=2))

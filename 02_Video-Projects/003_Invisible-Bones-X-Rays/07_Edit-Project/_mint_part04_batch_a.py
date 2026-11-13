@@ -2,7 +2,7 @@
 """HOS 003 Part 04 Batch A — mint all 11 plates → v01.
 
 Ben mint-green. Assemble CLOSED. No remint of P01–P03.
-Flow: benoats@googlemail.com ULTRA via Mini CDP.
+Flow: the studio Ultra account ULTRA via Mini CDP.
 Veo 3.1 Quality / CLEAN LIGHT.
 HARD: no DNA helix; never open Create with \"Same DNA soft background\";
 prefer \"Same Würzburg lab\".
@@ -27,7 +27,7 @@ sys.path.insert(0, str(REPO / "04_Audio" / "tools"))
 import orbit_flow_veo_ui as flow  # noqa: E402
 import orbit_gemini_veo as veo  # noqa: E402
 
-ACCOUNT = "benoats@googlemail.com"
+ACCOUNT = "81a01c9d841483f444008cd69e98b26019e032ed75b5e33e17409a76c6525ce9"
 MODEL = "Veo 3.1 - Quality"
 DEFAULT_PROJECT = (
     "https://flow.google.com/u/1/project/2ed989c7-688d-46cc-91f3-1ffc65526fc1"
@@ -602,7 +602,7 @@ def main() -> None:
         if not args.cdp:
             raise SystemExit(
                 "STOP: require --cdp http://127.0.0.1:PORT attached to "
-                "benoats@googlemail.com ULTRA Flow session"
+                "the studio Ultra account ULTRA Flow session"
             )
         print(f"cdp attach {args.cdp}", flush=True)
         browser = p.chromium.connect_over_cdp(args.cdp)

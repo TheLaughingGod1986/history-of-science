@@ -4,7 +4,7 @@
 Ben go-ahead 27 Sep 13:11. One plate at a time until first KEEP, then batch.
 Quality for glow (atom / tube / targets); Fast for low-risk garnish.
 No Explorer. Strip Veo audio. No Omni / Seedance / Ken Burns.
-Account: benoats@googlemail.com Ultra via ORBIT_FLOW_PROFILE (HOS).
+Account: the studio Ultra account Ultra via ORBIT_FLOW_PROFILE (HOS).
 """
 from __future__ import annotations
 
@@ -37,7 +37,7 @@ PROFILE = Path(
         str(Path.home() / ".playwright-hos-flow-profile"),
     )
 )
-ACCOUNT = "benoats@googlemail.com"
+ACCOUNT = "81a01c9d841483f444008cd69e98b26019e032ed75b5e33e17409a76c6525ce9"
 
 # Glow / emissive → Quality. Everything else Fast (low-risk garnish).
 QUALITY_IDS = {

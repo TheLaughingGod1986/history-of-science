@@ -1,5 +1,5 @@
   dismissed banner via 'Agree'
-GATE PASS account=benoats@googlemail.com credits=142
+GATE PASS account=the studio Ultra account credits=142
 BUFFER WAIVED this run (FLOW_CREDIT_BUFFER=0). Gemini probe → Flow reserve. credits=142
 SERIAL (await first KEEP) → 01_manchester_1913
 Both GOOGLE_API_KEY and GEMINI_API_KEY are set. Using GOOGLE_API_KEY.
@@ -263,7 +263,7 @@ STOP out of credits at 08_ladder_pattern: Flow=12
 
 ===== RESUME 2026-09-28T16:08:10Z Flow-out→Gemini backoff =====
   dismissed banner via 'Agree'
-GATE PASS account=benoats@googlemail.com credits=12
+GATE PASS account=the studio Ultra account credits=12
 BUFFER WAIVED this run (FLOW_CREDIT_BUFFER=0). Gemini probe → Flow reserve. credits=12
 SKIP 01_manchester_1913 already KEEP 01_manchester_1913_v01.mp4
 SKIP 02_train_in_tube already KEEP 02_train_in_tube_v01.mp4
@@ -317,7 +317,7 @@ Gemini client ready (key from .env)
 
 ===== SHORT RETRY RESUME 2026-09-28T18:26:42Z =====
   dismissed banner via 'Agree'
-GATE PASS account=benoats@googlemail.com credits=12
+GATE PASS account=the studio Ultra account credits=12
 BUFFER WAIVED this run (FLOW_CREDIT_BUFFER=0). Gemini probe → Flow reserve. credits=12
 SKIP 01_manchester_1913 already KEEP 01_manchester_1913_v01.mp4
 SKIP 02_train_in_tube already KEEP 02_train_in_tube_v01.mp4
@@ -349,7 +349,7 @@ STOP Gemini 429 at 08_ladder_pattern: 429 RESOURCE_EXHAUSTED. {'error': {'code':
 
 ===== GEMINI RESUME FROM 08 2026-09-29T07:40:49Z =====
   dismissed banner via 'Agree'
-GATE PASS account=benoats@googlemail.com credits=12
+GATE PASS account=the studio Ultra account credits=12
 BUFFER WAIVED this run (FLOW_CREDIT_BUFFER=0). Gemini probe → Flow reserve. credits=12
 SKIP 01_manchester_1913 already KEEP 01_manchester_1913_v01.mp4
 SKIP 02_train_in_tube already KEEP 02_train_in_tube_v01.mp4

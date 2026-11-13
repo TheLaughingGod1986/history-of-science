@@ -61,7 +61,7 @@ def main() -> None:
                         pop.wait_for_load_state("domcontentloaded")
                         page.wait_for_timeout(2000)
                         shot(pop, "01_login_pop")
-                        acc = pop.get_by_text(re.compile(r"benoats86@gmail\.com", re.I))
+                        acc = pop.get_by_text(re.compile(r"the studio Ultra account", re.I))
                         if acc.count():
                             acc.first.click()
                             pop.wait_for_timeout(3000)

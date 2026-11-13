@@ -38,7 +38,7 @@ Gate stills at ~40, ~42, ~98, ~102, ~105:
 3. Prefer indoor wood / bookcase; no blue fills/roofs
 
 ## Flow
-Account: `benoats@googlemail.com`
+Account: `the studio Ultra account`
 
 ## Scores
 → CoS only. No PASS. No Ben ping. Merge after later UAT PASS + Ben KEEP.

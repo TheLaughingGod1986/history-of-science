@@ -179,7 +179,7 @@ def auth_probe(page) -> dict:
         "url": page.url,
         "snip": t[:800],
         "channelId": CHANNEL,
-        "account_hint": "benoats86@gmail.com expected for HOS Studio",
+        "account_hint": "the studio Ultra account expected for HOS Studio",
     }
     dump("00_AUTH.json", info)
     if signed_out or not ok or orbitish:
@@ -189,7 +189,7 @@ def auth_probe(page) -> dict:
                 "status": "BLOCKED_AUTH",
                 "reason": (
                     "Studio signed out or wrong channel — Ben must sign in as "
-                    "benoats86@gmail.com. Never paste passwords."
+                    "the studio Ultra account. Never paste passwords."
                 ),
                 "channelId": CHANNEL,
                 "probe": info,

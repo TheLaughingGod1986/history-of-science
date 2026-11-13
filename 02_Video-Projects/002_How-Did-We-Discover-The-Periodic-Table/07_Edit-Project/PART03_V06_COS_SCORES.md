@@ -7,7 +7,7 @@
 **sha256:** `a1285f9a60c4090eb45aa681556f508c6ddc4217cd6f3ba448b27a53f89922de`  
 **Parent KEEP:** v05 sha `3642d005…` · Explorer on-model PASS  
 **Engine:** Flow Veo 3.1 Fast · **Frames Start I2V** from Ben FAIL marked desk still  
-**Auth:** `benoats@googlemail.com` /u/1/ ULTRA  
+**Auth:** `the studio Ultra account` /u/1/ ULTRA  
 **Plate:** remint `03_method_pamphlet` only · optional `04` skipped (v02 keep)
 
 Do **not** declare PASS. Scores for CoS Picture→UAT only. No P04. Do not ping Ben.

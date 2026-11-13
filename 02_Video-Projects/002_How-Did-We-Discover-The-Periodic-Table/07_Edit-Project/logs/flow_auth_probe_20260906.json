@@ -1,12 +1,12 @@
 {
-  "want_email": "benoats@googlemail.com",
-  "forbidden_email": "benoats86@gmail.com",
+  "want_email": "the studio Ultra account",
+  "forbidden_email": "the studio Ultra account",
   "profile": "/Users/benjaminoats/.playwright-hos-flow-profile",
   "url": "https://flow.google.com/",
   "emails_seen": [
-    "benoats86@gmail.com"
+    "the studio Ultra account"
   ],
-  "active_email": "benoats86@gmail.com",
+  "active_email": "the studio Ultra account",
   "credits_text": null,
   "page_text_hits": null,
   "account_button_labels": [
@@ -14,10 +14,10 @@
     "Google Flow",
     "Link to Google Labs Discord server",
     "Account details",
-    "Google Account: Benjamin Oats  \n(benoats86@gmail.com)"
+    "Google Account: Benjamin Oats  \n(the studio Ultra account)"
   ],
   "verdict": "BLOCKED_AUTH",
-  "reason": "Mini Flow is signed in as benoats86@gmail.com; need exactly benoats@googlemail.com",
+  "reason": "Mini Flow is signed in as the studio Ultra account; need exactly the studio Ultra account",
   "probed_at": "2026-09-06T22:45:00+01:00",
   "minted": false
 }

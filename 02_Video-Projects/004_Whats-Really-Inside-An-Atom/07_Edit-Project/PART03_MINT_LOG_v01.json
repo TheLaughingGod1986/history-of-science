@@ -1727,11 +1727,11 @@
   },
   "updated_at": "2026-09-27T22:34:38.935184+00:00",
   "flow_ultra": {
-    "account": "benoats@googlemail.com",
+    "account": "the studio Ultra account",
     "profile": "~/.hos-chrome-flow-benoats-googlemail-cdp",
     "cdp": "http://127.0.0.1:9222",
     "credits_before": 1172,
-    "account_confirmed": "benoats@googlemail.com",
+    "account_confirmed": "the studio Ultra account",
     "gate_shot": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/07_Edit-Project/_qa_part03_mint_v01/gate_auth_ok.png",
     "credits_after": 1162
   },

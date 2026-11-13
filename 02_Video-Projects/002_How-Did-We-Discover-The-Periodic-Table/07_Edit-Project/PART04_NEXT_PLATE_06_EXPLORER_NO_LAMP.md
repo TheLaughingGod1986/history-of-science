@@ -25,7 +25,7 @@ EMPTY SEATS · Explorer pins a card, leaves a glowing vacant seat, steps back (~
 - Soft glowing empty seat / gap only — not chair fire / lava.
 - Light: **daytime window OR soft off-world bounce only**. **No practical table lamp in frame.** No shade, no bulb, no shade-cup (open or closed). If light reads as a lamp fixture → FAIL.
 - Sparse readable marks on a few cards OK; no unfinished flat cards.
-- Continuous real Veo motion. Auth: Mini CDP `benoats@googlemail.com` ULTRA.
+- Continuous real Veo motion. Auth: Mini CDP `the studio Ultra account` ULTRA.
 
 ## Always-fails (prompt)
 

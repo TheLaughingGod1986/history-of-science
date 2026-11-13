@@ -2,7 +2,7 @@
 """HOS 006 plates on Vertex AI Veo 3.1 (005's minter, per part; Claude desk task 5951520953, 2 Oct 2026).
 
 Project gen-lang-client-0538779324 ("History of Science"), us-central1, ADC as
-benoats@googlemail.com. Never an Orbit project. Tokens are never printed.
+the studio Ultra account. Never an Orbit project. Tokens are never printed.
 Each plate is minted at its board `clip_s` (4, 6 or 8 s). Flow and reuse rows are refused.
 
   --part N still   <plate> [--seed <jpg>] [--extra "…"]   start frame (Vertex gemini-2.5-flash-image)
@@ -50,7 +50,7 @@ def set_part(n: str) -> None:
 
 PROJECT = "gen-lang-client-0538779324"
 LOCATION = "us-central1"
-ACCOUNT = "benoats@googlemail.com"
+ACCOUNT = "81a01c9d841483f444008cd69e98b26019e032ed75b5e33e17409a76c6525ce9"
 MODELS = {"Quality": "veo-3.1-generate-001", "Fast": "veo-3.1-fast-generate-001"}
 IMAGE_MODEL = "gemini-2.5-flash-image"
 CLIP_CHOICES = (4, 6, 8)
@@ -241,7 +241,7 @@ def client():
     from google import genai
     creds, _ = google.auth.default(scopes=["https://www.googleapis.com/auth/cloud-platform"])
     if not creds:
-        raise SystemExit("STOP: no ADC (gcloud auth application-default login as benoats@googlemail.com)")
+        raise SystemExit("STOP: no ADC (gcloud auth application-default login as the studio Ultra account)")
     return genai.Client(vertexai=True, project=PROJECT, location=LOCATION)
 
 

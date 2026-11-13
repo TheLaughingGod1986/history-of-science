@@ -73,14 +73,14 @@
     ]
   },
   "plate06_sha256": "f294b87b2387c2a10d7aa343db349e10e0fd5576c82a767d08f8fa211e4920c3",
-  "flow_account": "benoats@googlemail.com",
+  "flow_account": "the studio Ultra account",
   "p03_untouched_sha256": "30060612a00d628998008c9946b8e25319b56f3b9e5613b537c5d2be989bbe4e",
   "hos_uat": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/hos_002_part04_rough_v16.mp4",
   "watch": "WATCH_part04_v16.txt",
   "doc": "PART04_V16_LATE_SHARP.md",
   "status": "LANDED_FOR_UAT \u2014 do not declare PASS; scores \u2192 CoS; no Ben ping",
   "veo_attempt": {
-    "flow_account": "benoats@googlemail.com",
+    "flow_account": "the studio Ultra account",
     "flow_project_attempt": "626aa89d-edf1-45cd-be1a-c50c82a3d111",
     "flow_result": "create started; gallery harvest/force-dl returned no usable mp4",
     "gemini_models": [

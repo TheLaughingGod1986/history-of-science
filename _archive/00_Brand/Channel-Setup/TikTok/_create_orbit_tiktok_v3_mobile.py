@@ -276,7 +276,7 @@ def main() -> None:
                 pop.wait_for_load_state("domcontentloaded")
                 page.wait_for_timeout(1500)
                 shot(pop, "m_00_google")
-                acc = pop.get_by_text(re.compile(r"benoats86@gmail\.com", re.I))
+                acc = pop.get_by_text(re.compile(r"the studio Ultra account", re.I))
                 if acc.count():
                     acc.first.click()
                     pop.wait_for_timeout(4000)
@@ -302,7 +302,7 @@ def main() -> None:
                 if click_re(page, r"email|Email", role=None) or True:
                     email_inp = page.locator('input[type="email"], input[name*="email" i]')
                     if email_inp.count():
-                        email_inp.first.fill("benoats86@gmail.com")
+                        email_inp.first.fill("the studio Ultra account")
                         result["steps"].append("email_filled")
                         shot(page, "m_05_email")
                         print(
@@ -353,7 +353,7 @@ def main() -> None:
             result["status"] = "incomplete"
             result["notes"] = (
                 "Could not finish on mobile web. Use phone: install TikTok → "
-                "sign up with Google (benoats86@gmail.com) → username HistoryOfScience → "
+                "sign up with Google (the studio Ultra account) → username HistoryOfScience → "
                 "upload avatar from Channel-Setup/TikTok/avatar_800x800.png → paste bio.txt"
             )
         else:

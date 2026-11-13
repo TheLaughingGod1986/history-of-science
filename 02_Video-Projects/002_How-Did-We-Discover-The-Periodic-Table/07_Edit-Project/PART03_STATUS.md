@@ -15,7 +15,7 @@
 
 `…/09_Final-Export/hos_002_part03_rough_v09.mp4`
 
-- Account: `benoats@googlemail.com` via `https://flow.google.com/u/1/` (ULTRA)
+- Account: `the studio Ultra account` via `https://flow.google.com/u/1/` (ULTRA)
 - bytes **88499232** · duration **89.680 s** · sha256 **30060612a00d628998008c9946b8e25319b56f3b9e5613b537c5d2be989bbe4e**
 - Engine: Flow Veo 3.1 Fast · T2V scenery papers-only (I2V early handoff left stills-only; no Ken Burns)
 - Remint: `10_city_plan_lots` only
@@ -24,7 +24,7 @@
 
 ## Auth
 
-Mini Playwright profile on **`https://flow.google.com/u/1/`** → `benoats@googlemail.com` (Ultra · credits OK). Refuse `benoats86@gmail.com`.
+Mini Playwright profile on **`https://flow.google.com/u/1/`** → `the studio Ultra account` (Ultra · credits OK). Refuse `the studio Ultra account`.
 
 ## Remint scope (Showrunner v09)
 

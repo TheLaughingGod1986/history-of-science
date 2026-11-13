@@ -96,8 +96,8 @@ def main() -> None:
                     page.wait_for_timeout(2000)
                     shot(pop, "02_pop")
                     # Google account
-                    if pop.get_by_text(re.compile(r"benoats86@gmail\.com", re.I)).count():
-                        pop.get_by_text(re.compile(r"benoats86@gmail\.com", re.I)).first.click()
+                    if pop.get_by_text(re.compile(r"the studio Ultra account", re.I)).count():
+                        pop.get_by_text(re.compile(r"the studio Ultra account", re.I)).first.click()
                         pop.wait_for_timeout(3000)
                     for lab in (r"^Continue$", r"^Allow$", r"^Confirm$", r"^Approve$"):
                         b = pop.get_by_role("button", name=re.compile(lab, re.I))

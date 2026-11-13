@@ -12,7 +12,7 @@
 **Brief:** `PRODUCTION_BRIEF_PART04_v01.md`  
 **VO lock:** `PART04_VO_LOCK.md` · `02_Voiceover/part04_berthas_ring_v02.txt` sha `45bea4466e68ce5cd7a1fa3e70745694e8fcaa979037de74c52a914cd47bb375` · ~232 words · **masters not yet**  
 **Quality:** Veo 3.1 **Quality** / CLEAN LIGHT  
-**Flow:** Mini only (`benoats@googlemail.com`); no cloud Flow  
+**Flow:** Mini only (`the studio Ultra account`); no cloud Flow  
 **Assembly:** **CLOSED** until all Batch A lands + plate-first UAT PASS  
 **Parents:** P01 + P02 + P03 **KEEP/LOCK** — do not remint  
 **Explorer:** **NONE** this part

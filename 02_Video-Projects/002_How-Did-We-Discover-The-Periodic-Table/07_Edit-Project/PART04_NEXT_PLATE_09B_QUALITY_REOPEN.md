@@ -18,7 +18,7 @@ PARKED → **reopen:** `09b_risk_hold` CLEAN LIGHT
 4. Always-fails: lava/molten bead; unfinished flat cards; mid-crown unfinished Explorer hair.  
 5. After 2 same-DNA FAILs → **new framing/start** (not harder prompt).  
 6. One plate per FAIL cycle; assemble last.  
-7. Auth: Mini CDP `benoats@googlemail.com` ULTRA only.  
+7. Auth: Mini CDP `the studio Ultra account` ULTRA only.  
 8. **Veo 3.1 Quality** for this CLEAN LIGHT remint. Fast banned here. **Seedance not a substitute.**
 
 ---

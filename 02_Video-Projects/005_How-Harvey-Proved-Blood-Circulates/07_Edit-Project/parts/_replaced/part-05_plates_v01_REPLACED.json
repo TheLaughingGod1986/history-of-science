@@ -40,7 +40,7 @@
     "a face in the first two seconds of the film"
   ],
   "motion_lock": "Real Veo camera and object motion on every plate. No freeze-pad, no loop, no Ken Burns.",
-  "quality_note": "Flow Veo 3.1 on the Mac Mini CDP worker, benoats@googlemail.com only. Quality for anything with light (candles, glowing loop, stove heart) and every hero plate; Fast only for low-risk garnish. One plate at a time until the first KEEP; after 2 same-framing FAILs change the framing.",
+  "quality_note": "Flow Veo 3.1 on the Mac Mini CDP worker, the studio Ultra account only. Quality for anything with light (candles, glowing loop, stove heart) and every hero plate; Fast only for low-risk garnish. One plate at a time until the first KEEP; after 2 same-framing FAILs change the framing.",
   "labels": "White Didot italic side label, 1-4 words, one at a time, on the plate's first beat; added in the edit.",
   "plates": [
     {

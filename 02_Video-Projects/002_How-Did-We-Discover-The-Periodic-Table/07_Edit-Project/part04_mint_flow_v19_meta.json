@@ -1,7 +1,7 @@
 {
   "engine": "flow-veo-ui",
-  "account": "benoats@googlemail.com",
-  "forbidden_account": "benoats86@gmail.com",
+  "account": "the studio Ultra account",
+  "forbidden_account": "the studio Ultra account",
   "cdp": "http://127.0.0.1:9222",
   "chrome_profile": "Chrome-OrbitStudio",
   "ultra": true,
@@ -131,7 +131,7 @@
     "plate10_sha256": "d40a2cb1a9002731f67f22da9da82a6d2eff523ab52f0cdc05d1daa2f1916905",
     "plate11_sha256": "d77c7c8540beab760f8fd534d7b11c4584c628ecb0d738d9da53bbc3b5917619",
     "plate11b_sha256": "570f6a0b51a0c57cafed17beeea8f30204c3523bdfa0f4d9815d245348f12791",
-    "flow_account": "benoats@googlemail.com",
+    "flow_account": "the studio Ultra account",
     "no_paint_fallback": true,
     "p03_untouched_sha256": "30060612a00d628998008c9946b8e25319b56f3b9e5613b537c5d2be989bbe4e",
     "hos_uat": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/hos_002_part04_rough_v19.mp4",

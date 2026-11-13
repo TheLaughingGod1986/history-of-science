@@ -2,7 +2,7 @@
 
 **Watch only:** `HOS UAT/hos_002_part02_rough_v01.mp4` (~84s)
 
-**Account:** `benoats@googlemail.com` on Flow (0 Flow credits · AI credits used)
+**Account:** `the studio Ultra account` on Flow (0 Flow credits · AI credits used)
 
 **Plates:** 01–11 mint complete (Veo Fast / scenery-only; Explorer only on plate 05). Harvest = gallery Download.
 

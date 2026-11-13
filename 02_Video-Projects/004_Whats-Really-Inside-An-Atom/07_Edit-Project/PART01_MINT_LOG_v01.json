@@ -1,12 +1,12 @@
 {
   "status": "FLOW_CDP_12_STRAIGHT_DONE",
   "stopped_at": "2026-09-27T13:43:04.449177+00:00",
-  "stop_reason": "Ben 27 Sep 14:35 UK Flow remint gate FAIL. Mini CDP Chrome (~/.hos-chrome-flow-benoats-googlemail-cdp :9222) is SIGNED OUT \u2014 Flow lands on /about pricing marketing page; AccountChooser shows blank Sign in. Credits not readable (not ~3492). No plates minted. Diagnostic: ~/.playwright-hos-flow-profile is logged in as benoats86@gmail.com (FORBIDDEN for HOS Veo) \u2014 not used for mint.",
+  "stop_reason": "Ben 27 Sep 14:35 UK Flow remint gate FAIL. Mini CDP Chrome (~/.hos-chrome-flow-benoats-googlemail-cdp :9222) is SIGNED OUT \u2014 Flow lands on /about pricing marketing page; AccountChooser shows blank Sign in. Credits not readable (not ~3492). No plates minted. Diagnostic: ~/.playwright-hos-flow-profile is logged in as the studio Ultra account (FORBIDDEN for HOS Veo) \u2014 not used for mint.",
   "film": "004_Whats-Really-Inside-An-Atom",
   "part": "01",
   "vo_status": "KEEP (v04)",
   "flow_ultra": {
-    "account": "benoats@googlemail.com",
+    "account": "the studio Ultra account",
     "profile": "~/.hos-chrome-flow-benoats-googlemail-cdp",
     "cdp": "http://127.0.0.1:9222"
   },
@@ -1290,7 +1290,7 @@
     "at": "2026-09-27T15:35:23.156599+00:00",
     "reason": "S-wiggle in tube glow; remint straight beam only",
     "credits_before": 2602,
-    "account": "benoats@googlemail.com",
+    "account": "the studio Ultra account",
     "credits_after": 2502,
     "credits_spent": 100,
     "kept": true,

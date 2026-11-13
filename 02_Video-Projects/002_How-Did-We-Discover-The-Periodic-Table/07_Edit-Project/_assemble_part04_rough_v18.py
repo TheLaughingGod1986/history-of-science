@@ -421,7 +421,7 @@ def main() -> None:
                 },
                 "plate06_sha256": plate06_sha,
                 "plate10_sha256": plate10_sha,
-                "flow_account": "benoats@googlemail.com",
+                "flow_account": "the studio Ultra account",
                 "p03_untouched_sha256": p03_sha,
                 "hos_uat": str(ICLOUD / OUT.name),
                 "watch": "WATCH_part04_v18.txt",
@@ -454,7 +454,7 @@ def main() -> None:
         "grid — NO horizontal ghost doubles.\n"
         "- Spot ~102–105 CLEAN LIGHT KEEP: soft panel, no lamp lava.\n"
         "- Credit note: Gemini prepaid 429; Flow create stalled (Agent settings / harvest).\n"
-        "- Part 01–03 LOCKED. Flow account benoats@googlemail.com.\n"
+        "- Part 01–03 LOCKED. Flow account the studio Ultra account.\n"
         "- Do NOT declare PASS here. Scores → CoS. No Ben ping.\n\n"
         "Reject with stills from THIS file only.\n"
         f"keep_p03_sha={p03_sha}\n"

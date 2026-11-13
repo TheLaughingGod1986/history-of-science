@@ -3,7 +3,7 @@
 **Gate:** Ben OVERRIDE 7 Sep 2026 — blank papers under `ATOMIC WEIGHTS` get sparse readable marks.  
 **Parent:** `hos_002_part03_rough_v05.mp4` (sha256 `3642d005…`) — UAT PASS / Explorer on-model.  
 **Export:** `hos_002_part03_rough_v06.mp4`  
-**Account:** Flow `benoats@googlemail.com`. If Create dies → STOP (no Ken Burns).  
+**Account:** Flow `the studio Ultra account`. If Create dies → STOP (no Ken Burns).  
 **Scores → CoS only.** CoS owns Ben ping after UAT. No P04 until Ben KEEP.
 
 ---

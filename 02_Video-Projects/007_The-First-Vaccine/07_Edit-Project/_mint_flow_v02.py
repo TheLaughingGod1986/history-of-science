@@ -24,6 +24,19 @@ import time
 from datetime import datetime, timezone
 from pathlib import Path
 
+def _account_sha256(addr: str | None) -> str:
+    import hashlib as _hashlib
+    s = (addr or "").strip().lower()
+    if not s:
+        return ""
+    return s if len(s) == 64 and all(c in "0123456789abcdef" for c in s) else _hashlib.sha256(s.encode()).hexdigest()
+
+
+def _blob_account_sha256s(text: str) -> set[str]:
+    import re as _re
+    return {_account_sha256(e) for e in _re.findall(r"[A-Za-z0-9._%+-]+@(?:gmail|googlemail)\.com", text or "", _re.I)}
+
+
 WT = Path(__file__).resolve().parents[3]
 MINT006 = WT / "02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/_mint_flow_cdp_v01.py"
 STILL006 = WT / "02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project/_flow_still_v01.py"
@@ -34,8 +47,8 @@ MEDIA = Path(os.environ.get(
 ))
 OWB = Path(os.environ.get("OWB_REPO", str(Path.home() / "YouTube/orbit-with-ben")))
 CDP = os.environ.get("ORBIT_FLOW_CDP", "http://127.0.0.1:9222")
-REQUIRED = "benoats@googlemail.com"
-FORBIDDEN = "benoats86@gmail.com"
+REQUIRED = "81a01c9d841483f444008cd69e98b26019e032ed75b5e33e17409a76c6525ce9"
+FORBIDDEN = "93b0f97ef00986fa90ead10a83be910d43707ddc8023daa2018ed1d95cbbb9d4"
 TRY1 = {"Fast": 10, "Quality": 100}
 CAP = 7550
 BUFFER = 3000
@@ -423,7 +436,7 @@ def main() -> int:
             f"spent={spent(log)} disk_free_gib={free_disk_gib():.2f}",
             flush=True,
         )
-        if account != REQUIRED or (account and FORBIDDEN in account):
+        if _account_sha256(account) != REQUIRED or _account_sha256(account) == FORBIDDEN:
             raise SystemExit(f"STOP wrong Flow account: {account}")
         if credits is None:
             raise SystemExit("STOP Flow credits unreadable")

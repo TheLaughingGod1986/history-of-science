@@ -143,7 +143,7 @@ def google_login(page, context) -> bool:
     shot(popup, "takeover_01_google")
 
     try:
-        acc = popup.get_by_text(re.compile(r"benoats86@gmail\.com", re.I))
+        acc = popup.get_by_text(re.compile(r"the studio Ultra account", re.I))
         if acc.count():
             acc.first.click()
             popup.wait_for_timeout(3500)

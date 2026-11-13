@@ -89,7 +89,7 @@ def load_log() -> dict:
         "film": "004_Whats-Really-Inside-An-Atom",
         "part": "01",
         "engine": "gemini-api-veo (Flow Ultra insufficient credits)",
-        "flow_block": "Not enough credits on benoats@googlemail.com Ultra",
+        "flow_block": "Not enough credits on the studio Ultra account Ultra",
         "started_at": datetime.now(timezone.utc).isoformat(),
         "plates": {},
     }
@@ -208,7 +208,7 @@ def main() -> None:
     plates = json.loads(PLATES_JSON.read_text())["plates"]
     log = load_log()
     log["engine"] = "gemini-api-veo (Flow Ultra insufficient credits)"
-    log["flow_block"] = "Not enough credits on benoats@googlemail.com Ultra (Fast+Lite+Quality)"
+    log["flow_block"] = "Not enough credits on the studio Ultra account Ultra (Fast+Lite+Quality)"
     RAW.mkdir(parents=True, exist_ok=True)
     QA.mkdir(parents=True, exist_ok=True)
 

@@ -4,7 +4,7 @@
 
 **Status:** STOPPED. No further Flow / Veo spend on Part 01 until Ben KEEP on VO.
 **VO:** v04 = **PENDING BEN LISTEN** (not KEEP). Hold: 7:39 “each kind a weight” · 6:06 “a living hand” · 3:38 “But atoms”.
-**Flow Ultra (`benoats@googlemail.com`):** Insufficient credits — 0 Flow clips. Fallback was Gemini API Veo.
+**Flow Ultra (`the studio Ultra account`):** Insufficient credits — 0 Flow clips. Fallback was Gemini API Veo.
 **Mid-flight at stop:** none (batch already finished).
 
 | Plate | Status | Tries | Model | KEEP file | sha256 | duration_s | notes |

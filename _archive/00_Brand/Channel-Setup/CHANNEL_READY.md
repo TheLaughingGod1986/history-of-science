@@ -20,7 +20,7 @@ This repo was cloned from Orbit with Ben as a production template. **Do not publ
 | VO | ElevenLabs Ben Orbit Narrator (same voice) |
 | CG | Omni / Gemini Veo silent picture |
 | Upload | YouTube Data API via Content Ops |
-| Managing Google account | `benoats86@gmail.com` (Ben Oates) |
+| Managing Google account | `the studio Ultra account` (Ben Oates) |
 
 ## Live links (fill after create)
 
@@ -58,7 +58,7 @@ Historical Orbit create/brand JSON (`CREATE_RESULT.json`, `BRAND_RESULT.json`, `
 
 ## Email note
 
-No new Gmail is required. Create a **Brand Account** linked to `benoats86@gmail.com`, separate from OpptiAI and Orbit with Ben.
+No new Gmail is required. Create a **Brand Account** linked to `the studio Ultra account`, separate from OpptiAI and Orbit with Ben.
 
 ## Ready for publishing means
 

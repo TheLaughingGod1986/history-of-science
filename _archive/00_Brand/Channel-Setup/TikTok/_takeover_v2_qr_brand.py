@@ -164,7 +164,7 @@ def google_login(page, context) -> bool:
     page.wait_for_timeout(2000)
     shot(pop, "g_01")
     try:
-        acc = pop.get_by_text(re.compile(r"benoats86@gmail\.com", re.I))
+        acc = pop.get_by_text(re.compile(r"the studio Ultra account", re.I))
         if acc.count():
             acc.first.click()
             pop.wait_for_timeout(4000)

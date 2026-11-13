@@ -4,7 +4,7 @@
 **Parent:** `hos_002_part04_rough_v06.mp4`  
   sha256 `5aea09bdc505beb4d887acdfcfc5c43b307ee0bb7c606bb287b4beeb56e5bbf2` · 76818977 B · 127.760s  
 **Export:** `hos_002_part04_rough_v07.mp4`  
-**Flow:** `benoats@googlemail.com`. Create dies → STOP (no Ken Burns).  
+**Flow:** `the studio Ultra account`. Create dies → STOP (no Ken Burns).  
 **Scores → CoS only.** CoS owns Ben ping after UAT. **P01–P03 FROZEN** (P03 `30060612…`).
 
 ---

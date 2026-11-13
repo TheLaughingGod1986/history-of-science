@@ -60,7 +60,7 @@ def main() -> None:
                 changed.append(p["id"])
         assert not any(CANDLE_RE.search(p["prompt"]) for p in b["plates"] if p["quality"] == "Fast")
         b["light_fix"] = NOTE
-        b["quality_note"] = (b["quality_note"].replace("Flow Veo 3.1 on the Mac Mini CDP worker, benoats@googlemail.com only.",
+        b["quality_note"] = (b["quality_note"].replace("Flow Veo 3.1 on the Mac Mini CDP worker, the studio Ultra account only.",
                                                        "Vertex AI Veo 3.1 for 005 (Ben's OK, 1 Oct 2026), project gen-lang-client-0538779324.")
                              + " Fast plates are lit by daylight from a window out of frame (2 Oct light fix).")
         f.write_text(json.dumps(b, indent=2, ensure_ascii=False) + "\n")
