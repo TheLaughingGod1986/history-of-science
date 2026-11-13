@@ -1,27 +1,8 @@
-# Episode template
+# HOS 102 — How Did We Find the Hole in the Ozone Layer? (Proposal Only)
 
-Copy this folder to start a new long:
-
-```bash
-cp -R 02_Video-Projects/_template_NNN_Episode-Slug 02_Video-Projects/004_<Slug>
-```
-
-Full steps: `00_Brand/Channel-Setup/STUDIO_PLAYBOOK.md`. Stop for Ben's OK at every sign-off in `AGENTS.md`.
-
-## Order
-
-1. **Topic** (`STUDIO_PLAYBOOK.md` §2): fill `11_Upload-Package/PRE_BUILD_VIDIQ_AUDIT.md` and `TOPIC_OPPORTUNITY_SCORE.md` (template in `00_Brand/Channel-Setup/templates/`). Ben picks.
-2. **Script:** write `01_Script/<slug>_script_master_v01.md` from `episode_script_draft_v01.md` in the file format in `STUDIO_PLAYBOOK.md` §3 (spoken prose + markers only). Alongside it: `01_Script/FACT_NOTES_v01.md`, a main title + one Test & Compare title, and `11_Upload-Package/LAUNCH_PLAN.md`. Then split the script into five part scripts.
-3. **Gates** (both before any VO or picture spend):
-   ```bash
-   cd 07_Content-Ops
-   npm run review:script -- --file ../02_Video-Projects/<NNN_Slug>/01_Script/<master>.md   # ≥90
-   npm run gate:episode -- --project ../02_Video-Projects/<NNN_Slug>                     # PASS
-   ```
-4. **VO** per part: Ben Orbit Narrator → `02_Voiceover/`.
-5. **Plate boards** per part: `07_Edit-Project/parts/part-NN_plates_v01.json` (copy the example).
-6. **Picture:** Flow Veo 3.1, one plate at a time until the first KEEP, plate UAT on continuous playback, assemble last (`STUDIO_PLAYBOOK.md` §5).
-7. **Assemble** parts → `09_Final-Export/<slug>_full_v0N.mp4` with the cream end card (§7).
-8. **Thumbnails** (`08_Thumbnail/`), **Shorts** (`10_Shorts/`), checklist, then the YouTube package upload (§9). Normal publish, Thursday 18:00, no Premiere.
-
-Keep `production-status.md` current on `main`.
+- **Slug:** `02_Video-Projects/102_Molina-Rowland-Farman-Ozone-Hole` (`HOS:102`)
+- **Status:** **PROPOSAL ONLY — NOT APPROVED FOR PRODUCTION.** Waiting in `jobs/WIP.json` `next_hos` (Rule G) on OWB PR `#881` and HOS PR `#572`. Rule-E topic review not yet passed.
+- **Topic brief & analytics learnings:** [`TOPIC.md`](TOPIC.md)
+- **Pre-build audit & neighbour/search evidence:** [`11_Upload-Package/PRE_BUILD_VIDIQ_AUDIT.md`](11_Upload-Package/PRE_BUILD_VIDIQ_AUDIT.md), [`11_Upload-Package/evidence_2026-11-13_neighbours.json`](11_Upload-Package/evidence_2026-11-13_neighbours.json), [`11_Upload-Package/evidence_2026-11-13_public_search.json`](11_Upload-Package/evidence_2026-11-13_public_search.json)
+- **Production status:** [`production-status.md`](production-status.md)
+- **Facts notice:** All historical and scientific claims are **unverified** and must be sourced with exact quotes in `SOURCES.md` and verified through the `facts` lane before any script lock.
