@@ -699,12 +699,18 @@
           "waiting": "Separate generation decision; generation_authorized false. J2659 accepts mechanical timing only."
         },
         "edit": {
-          "status": "todo",
+          "status": "doing",
           "due": "2026-12-03",
-          "note": "J2659 accepts v03 timing. J2563 resumes 26 free rows and internal rough with 67 slates; use J2659_CHIEF_DECISION.md source overrides, reuse check and overlay cue schedule.",
+          "note": "J2563 v07: 19 preliminary free rows (two new cached composites) plus all 67 dependency slates built. Copy hashes and timing verified; seven archive rows and rough unfinished; no stage approval.",
           "owner": "codex",
           "underway": false,
-          "waiting": "J2563 assembly worker to resume after timing decision merges"
+          "waiting": "Seven archive composites, full cue reconciliation and joined rough remain. Preliminary graphics need editorial and capable motion review; prior source network hold preserved.",
+          "since": "2026-11-12",
+          "steps": [
+            1,
+            4
+          ],
+          "steps_unit": "assembly milestones"
         },
         "thumbnails": {
           "status": "todo",

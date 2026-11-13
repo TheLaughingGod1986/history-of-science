@@ -1,0 +1,1620 @@
+{
+  "job": "J2563",
+  "status": "cue_schedule_not_a_film_pass",
+  "generation_authorized": false,
+  "spend_gbp": 0,
+  "credits_used": 0,
+  "stt_sha256": "f7abac2d4bf6c58558eee80e6d201395640d0514988dcbeca795dd21dcf0d577",
+  "word_index_basis": "zero-based filtered type=word list; raw_stt_indices also recorded",
+  "reveal_rule": "in_s is the start of the last anchor word",
+  "downloads": "not attempted; Wikimedia hold until 2026-11-13T05:30:00Z",
+  "scheduled": [
+    {
+      "row_id": "P1:01a",
+      "kind": "when",
+      "planned_text": "London, before 1846",
+      "text": "Before 1846",
+      "anchor_text": "Before 1846,",
+      "word_indices": [
+        0,
+        1
+      ],
+      "raw_stt_indices": [
+        0,
+        2
+      ],
+      "in_s": 0.38,
+      "evidence_end_s": 1.6,
+      "row_window_s": [
+        0.0,
+        3.16
+      ],
+      "status": "scheduled",
+      "note": "Spoken phrase. The card starts on its last word.",
+      "actual_row_id": "P1:01a",
+      "out_s": 2.38
+    },
+    {
+      "row_id": "P1:01b",
+      "kind": "label",
+      "planned_text": "SPEED",
+      "text": "FASTEST",
+      "anchor_text": "fastest",
+      "word_indices": [
+        11
+      ],
+      "raw_stt_indices": [
+        22
+      ],
+      "in_s": 4.24,
+      "evidence_end_s": 4.7,
+      "row_window_s": [
+        3.16,
+        6.34
+      ],
+      "status": "scheduled",
+      "note": "Spoken phrase. The card starts on its last word.",
+      "actual_row_id": "P1:01b",
+      "out_s": 6.24
+    },
+    {
+      "row_id": "P1:02a",
+      "kind": "when",
+      "planned_text": "Europe & America",
+      "text": "Europe & America",
+      "anchor_text": "Europe and America,",
+      "word_indices": [
+        26,
+        27,
+        28
+      ],
+      "raw_stt_indices": [
+        52,
+        54,
+        56
+      ],
+      "in_s": 10.4,
+      "evidence_end_s": 10.88,
+      "row_window_s": [
+        6.34,
+        10.98
+      ],
+      "status": "scheduled",
+      "note": "Spoken phrase. The card starts on its last word.",
+      "actual_row_id": "P1:02a",
+      "out_s": 12.4
+    },
+    {
+      "row_id": "P1:04a",
+      "kind": "when",
+      "planned_text": "Autumn 1846",
+      "text": "Autumn 1846",
+      "anchor_text": "autumn of 1846,",
+      "word_indices": [
+        71,
+        72,
+        73
+      ],
+      "raw_stt_indices": [
+        142,
+        144,
+        146
+      ],
+      "in_s": 25.28,
+      "evidence_end_s": 26.54,
+      "row_window_s": [
+        22.8,
+        26.78
+      ],
+      "status": "scheduled",
+      "note": "Spoken phrase. The card starts on its last word.",
+      "actual_row_id": "P1:04a",
+      "out_s": 27.28
+    },
+    {
+      "row_id": "P1:05a",
+      "kind": "label",
+      "planned_text": "ETHER",
+      "text": "GLASS GLOBE",
+      "anchor_text": "glass globe",
+      "word_indices": [
+        84,
+        85
+      ],
+      "raw_stt_indices": [
+        168,
+        170
+      ],
+      "in_s": 31.42,
+      "evidence_end_s": 31.8,
+      "row_window_s": [
+        29.1,
+        35.8
+      ],
+      "status": "scheduled",
+      "note": "Spoken phrase. The card starts on its last word.",
+      "actual_row_id": "P1:05a",
+      "out_s": 33.42
+    },
+    {
+      "row_id": "P1:08a",
+      "kind": "when",
+      "planned_text": "1840",
+      "text": "1840",
+      "anchor_text": "1840",
+      "word_indices": [
+        171
+      ],
+      "raw_stt_indices": [
+        342
+      ],
+      "in_s": 61.04,
+      "evidence_end_s": 61.96,
+      "row_window_s": [
+        59.5,
+        66.4
+      ],
+      "status": "scheduled",
+      "note": "Spoken phrase. The card starts on its last word.",
+      "actual_row_id": "P1:08a",
+      "out_s": 63.04
+    },
+    {
+      "row_id": "P1:09c",
+      "kind": "when",
+      "planned_text": "Nearly 50 years earlier",
+      "text": "Nearly fifty years earlier",
+      "anchor_text": "nearly fifty years earlier.",
+      "word_indices": [
+        230,
+        231,
+        232,
+        233
+      ],
+      "raw_stt_indices": [
+        460,
+        462,
+        464,
+        466
+      ],
+      "in_s": 86.38,
+      "evidence_end_s": 86.78,
+      "row_window_s": [
+        81.68,
+        86.8
+      ],
+      "status": "scheduled",
+      "note": "Spoken phrase. The card starts on its last word.",
+      "actual_row_id": "P1:09c",
+      "out_s": 88.38
+    },
+    {
+      "row_id": "P2:02a",
+      "kind": "when",
+      "planned_text": "Bristol, 1800",
+      "text": "Bristol, 1800",
+      "anchor_text": "1800 in Bristol,",
+      "word_indices": [
+        235,
+        236,
+        237
+      ],
+      "raw_stt_indices": [
+        470,
+        472,
+        474
+      ],
+      "in_s": 88.94,
+      "evidence_end_s": 89.44,
+      "row_window_s": [
+        89.77,
+        95.2
+      ],
+      "status": "scheduled",
+      "note": "Spoken phrase. The card starts on its last word.",
+      "actual_row_id": "P2:01_card_p02",
+      "reconciliation": "The card follows the spoken words. The picture plan is unchanged.",
+      "out_s": 90.94
+    },
+    {
+      "row_id": "P2:02a",
+      "kind": "who",
+      "planned_text": "Humphry Davy (1778–1829) — Bristol chemist",
+      "text": "Humphry Davy (1778–1829) — Bristol chemist",
+      "anchor_text": "Humphry Davy",
+      "word_indices": [
+        242,
+        243
+      ],
+      "raw_stt_indices": [
+        484,
+        486
+      ],
+      "in_s": 91.58,
+      "evidence_end_s": 92.06,
+      "row_window_s": [
+        89.77,
+        95.2
+      ],
+      "status": "scheduled",
+      "note": "Spoken phrase. The card starts on its last word.",
+      "actual_row_id": "P2:02a",
+      "out_s": 94.78
+    },
+    {
+      "row_id": "P2:06a",
+      "kind": "when",
+      "planned_text": "The next morning",
+      "text": "The next morning",
+      "anchor_text": "next morning.",
+      "word_indices": [
+        352,
+        353
+      ],
+      "raw_stt_indices": [
+        704,
+        706
+      ],
+      "in_s": 141.24,
+      "evidence_end_s": 141.7,
+      "row_window_s": [
+        133.3,
+        139.52
+      ],
+      "status": "scheduled",
+      "note": "Spoken phrase. The card starts on its last word.",
+      "actual_row_id": "P2:07a",
+      "reconciliation": "The card follows the spoken words. The picture plan is unchanged.",
+      "out_s": 143.24
+    },
+    {
+      "row_id": "P2:07a",
+      "kind": "who",
+      "planned_text": "Crawford Long (1815–1878) — Georgia physician",
+      "text": "Crawford Long (1815–1878) — Georgia physician",
+      "anchor_text": "Crawford Long",
+      "word_indices": [
+        364,
+        365
+      ],
+      "raw_stt_indices": [
+        728,
+        730
+      ],
+      "in_s": 146.4,
+      "evidence_end_s": 146.7,
+      "row_window_s": [
+        139.52,
+        147.5
+      ],
+      "status": "scheduled",
+      "note": "Spoken phrase. The card starts on its last word.",
+      "actual_row_id": "P2:07a",
+      "out_s": 149.6
+    },
+    {
+      "row_id": "P2:09b_arch_long_1849",
+      "kind": "when",
+      "planned_text": "Published 1849 (7 years later)",
+      "text": "Seven years later",
+      "anchor_text": "another seven years.",
+      "word_indices": [
+        410,
+        411,
+        412
+      ],
+      "raw_stt_indices": [
+        820,
+        822,
+        824
+      ],
+      "in_s": 168.68,
+      "evidence_end_s": 169.14,
+      "row_window_s": [
+        166.14,
+        173.13
+      ],
+      "status": "scheduled",
+      "note": "Spoken phrase. The card starts on its last word.",
+      "actual_row_id": "P2:09b_arch_long_1849",
+      "out_s": 170.68
+    },
+    {
+      "row_id": "P3:02a",
+      "kind": "when",
+      "planned_text": "Hartford, December 1844",
+      "text": "Hartford",
+      "anchor_text": "Hartford,",
+      "word_indices": [
+        432
+      ],
+      "raw_stt_indices": [
+        864
+      ],
+      "in_s": 176.66,
+      "evidence_end_s": 177.1,
+      "row_window_s": [
+        178.08,
+        184.6
+      ],
+      "status": "scheduled",
+      "note": "Hartford is spoken. December 1844 is spoken during the Wells name card, so that date stays off this card.",
+      "part": "place",
+      "actual_row_id": "P3:01_card_p03",
+      "reconciliation": "The card follows the spoken words. The picture plan is unchanged.",
+      "out_s": 178.66
+    },
+    {
+      "row_id": "P3:02a",
+      "kind": "who",
+      "planned_text": "Horace Wells (1815–1848) — Connecticut dentist",
+      "text": "Horace Wells (1815–1848) — Connecticut dentist",
+      "anchor_text": "Horace Wells",
+      "word_indices": [
+        437,
+        438
+      ],
+      "raw_stt_indices": [
+        874,
+        876
+      ],
+      "in_s": 179.64,
+      "evidence_end_s": 180.18,
+      "row_window_s": [
+        178.08,
+        184.6
+      ],
+      "status": "scheduled",
+      "note": "Spoken phrase. The card starts on its last word.",
+      "actual_row_id": "P3:02a",
+      "out_s": 182.84
+    },
+    {
+      "row_id": "P3:03a",
+      "kind": "when",
+      "planned_text": "11 December 1844 (the next day)",
+      "text": "The next day",
+      "anchor_text": "The next day,",
+      "word_indices": [
+        447,
+        448,
+        449
+      ],
+      "raw_stt_indices": [
+        894,
+        896,
+        898
+      ],
+      "in_s": 185.0,
+      "evidence_end_s": 185.22,
+      "row_window_s": [
+        184.6,
+        190.5
+      ],
+      "status": "scheduled",
+      "note": "Spoken phrase. The card starts on its last word.",
+      "actual_row_id": "P3:03a",
+      "out_s": 187.0
+    },
+    {
+      "row_id": "P3:05a",
+      "kind": "who",
+      "planned_text": "William T. G. Morton (1819–1868) — Boston dentist",
+      "text": "William T. G. Morton (1819–1868) — Boston dentist",
+      "anchor_text": "William Morton,",
+      "word_indices": [
+        526,
+        527
+      ],
+      "raw_stt_indices": [
+        1052,
+        1054
+      ],
+      "in_s": 215.62,
+      "evidence_end_s": 216.18,
+      "row_window_s": [
+        210.7,
+        218.7
+      ],
+      "status": "scheduled",
+      "note": "Spoken phrase. The card starts on its last word.",
+      "actual_row_id": "P3:05a",
+      "out_s": 218.82
+    },
+    {
+      "row_id": "P3:05b",
+      "kind": "label",
+      "planned_text": "ETHER",
+      "text": "ETHER",
+      "anchor_text": "ether.",
+      "word_indices": [
+        542
+      ],
+      "raw_stt_indices": [
+        1084
+      ],
+      "in_s": 222.44,
+      "evidence_end_s": 222.88,
+      "row_window_s": [
+        218.7,
+        226.68
+      ],
+      "status": "scheduled",
+      "note": "Spoken phrase. The card starts on its last word.",
+      "actual_row_id": "P3:05b",
+      "out_s": 224.44
+    },
+    {
+      "row_id": "P3:06a",
+      "kind": "when",
+      "planned_text": "Boston, 16 October 1846",
+      "text": "16 October 1846",
+      "anchor_text": "sixteenth of October, 1846,",
+      "word_indices": [
+        545,
+        546,
+        547,
+        548
+      ],
+      "raw_stt_indices": [
+        1090,
+        1092,
+        1094,
+        1096
+      ],
+      "in_s": 225.14,
+      "evidence_end_s": 226.42,
+      "row_window_s": [
+        226.68,
+        231.89
+      ],
+      "status": "scheduled",
+      "note": "The date is spoken here. The opening Boston line is earlier and does not say this date. Boston in this sentence comes after the year, so it is not on the card.",
+      "actual_row_id": "P3:05b",
+      "reconciliation": "The card follows the spoken words. The picture plan is unchanged.",
+      "out_s": 227.14
+    },
+    {
+      "row_id": "P3:08a",
+      "kind": "who",
+      "planned_text": "John Collins Warren (1778–1856) — Boston surgeon",
+      "text": "John Collins Warren (1778–1856) — Boston surgeon",
+      "anchor_text": "John Collins Warren,",
+      "word_indices": [
+        591,
+        592,
+        593
+      ],
+      "raw_stt_indices": [
+        1182,
+        1184,
+        1186
+      ],
+      "in_s": 245.58,
+      "evidence_end_s": 245.94,
+      "row_window_s": [
+        244.08,
+        250.86
+      ],
+      "status": "scheduled",
+      "note": "Spoken phrase. The card starts on its last word.",
+      "actual_row_id": "P3:08a",
+      "out_s": 248.78
+    },
+    {
+      "row_id": "P4:02b",
+      "kind": "fact",
+      "planned_text": "Patent No. 4,848",
+      "text": "Patent",
+      "anchor_text": "patent",
+      "word_indices": [
+        696
+      ],
+      "raw_stt_indices": [
+        1392
+      ],
+      "in_s": 288.8,
+      "evidence_end_s": 289.2,
+      "row_window_s": [
+        281.36,
+        285.86
+      ],
+      "status": "scheduled",
+      "note": "The word patent is spoken. Patent number 4,848 is not spoken.",
+      "actual_row_id": "P4:03a_arch_letheon_patent",
+      "reconciliation": "The card follows the spoken words. The picture plan is unchanged.",
+      "out_s": 290.8
+    },
+    {
+      "row_id": "P4:04a",
+      "kind": "when",
+      "planned_text": "Boston, 21 November 1846",
+      "text": "A month after",
+      "anchor_text": "A month after",
+      "word_indices": [
+        718,
+        719,
+        720
+      ],
+      "raw_stt_indices": [
+        1436,
+        1438,
+        1440
+      ],
+      "in_s": 298.6,
+      "evidence_end_s": 298.8,
+      "row_window_s": [
+        297.5,
+        304.8
+      ],
+      "status": "scheduled",
+      "note": "The narration says a month after the operation. 21 November 1846 is not spoken.",
+      "actual_row_id": "P4:04a",
+      "out_s": 300.6
+    },
+    {
+      "row_id": "P4:04a",
+      "kind": "who",
+      "planned_text": "Oliver Wendell Holmes (1809–1894) — physician and poet",
+      "text": "Oliver Wendell Holmes (1809–1894) — physician and poet",
+      "anchor_text": "Oliver Wendell Holmes",
+      "word_indices": [
+        728,
+        729,
+        730
+      ],
+      "raw_stt_indices": [
+        1456,
+        1458,
+        1460
+      ],
+      "in_s": 302.56,
+      "evidence_end_s": 303.1,
+      "row_window_s": [
+        297.5,
+        304.8
+      ],
+      "status": "scheduled",
+      "note": "Spoken phrase. The card starts on its last word.",
+      "actual_row_id": "P4:04a",
+      "out_s": 305.76
+    },
+    {
+      "row_id": "P4:04c_cg_anesthesia_etymology",
+      "kind": "label",
+      "planned_text": "ANAESTHESIA",
+      "text": "ANAESTHESIA",
+      "anchor_text": "anesthesia,",
+      "word_indices": [
+        745
+      ],
+      "raw_stt_indices": [
+        1490
+      ],
+      "in_s": 310.0,
+      "evidence_end_s": 310.96,
+      "row_window_s": [
+        309.2,
+        314.5
+      ],
+      "status": "scheduled",
+      "note": "Spoken phrase. The card starts on its last word.",
+      "actual_row_id": "P4:04c_cg_anesthesia_etymology",
+      "out_s": 312.0
+    },
+    {
+      "row_id": "P4:05b",
+      "kind": "who",
+      "planned_text": "Charles T. Jackson (1805–1880) — Boston chemist",
+      "text": "Charles T. Jackson (1805–1880) — Boston chemist",
+      "anchor_text": "Charles Jackson,",
+      "word_indices": [
+        767,
+        768
+      ],
+      "raw_stt_indices": [
+        1534,
+        1536
+      ],
+      "in_s": 322.66,
+      "evidence_end_s": 323.18,
+      "row_window_s": [
+        319.5,
+        326.94
+      ],
+      "status": "scheduled",
+      "note": "Spoken phrase. The card starts on its last word.",
+      "actual_row_id": "P4:05b",
+      "out_s": 325.86
+    },
+    {
+      "row_id": "P4:06a_cg_master_timeline",
+      "kind": "data",
+      "planned_text": "master timeline of the four claimants (1800 Davy, 1842 Long, 1844 Wells, 1846 Morton & Jackson)",
+      "text": "Two years earlier",
+      "anchor_text": "two years earlier.",
+      "word_indices": [
+        781,
+        782,
+        783
+      ],
+      "raw_stt_indices": [
+        1562,
+        1564,
+        1566
+      ],
+      "in_s": 328.42,
+      "evidence_end_s": 328.82,
+      "row_window_s": [
+        326.94,
+        333.9
+      ],
+      "status": "scheduled",
+      "note": "The timeline may repeat only dates already spoken before this line: 1800, March 1842, December 1844 and 16 October 1846. It must not add an unspoken span such as four years or 42 years.",
+      "recap_spoken_at_s": [
+        87.72,
+        149.0,
+        182.6,
+        225.14
+      ],
+      "actual_row_id": "P4:06a_cg_master_timeline",
+      "out_s": 330.42
+    },
+    {
+      "row_id": "P4:08a",
+      "kind": "when",
+      "planned_text": "Boston Public Garden, 1868",
+      "text": "Public garden",
+      "anchor_text": "public garden,",
+      "word_indices": [
+        834,
+        835
+      ],
+      "raw_stt_indices": [
+        1668,
+        1670
+      ],
+      "in_s": 350.72,
+      "evidence_end_s": 351.14,
+      "row_window_s": [
+        342.44,
+        349.5
+      ],
+      "status": "scheduled",
+      "note": "Public garden is spoken in the next row. 1868 is not spoken.",
+      "actual_row_id": "P4:08b_arch_ether_monument",
+      "reconciliation": "The card follows the spoken words. The picture plan is unchanged.",
+      "out_s": 352.72
+    },
+    {
+      "row_id": "P4:09a",
+      "kind": "fact",
+      "planned_text": "No claimant named",
+      "text": "No claimant named",
+      "anchor_text": "doesn't name a single one of them.",
+      "word_indices": [
+        849,
+        850,
+        851,
+        852,
+        853,
+        854,
+        855
+      ],
+      "raw_stt_indices": [
+        1698,
+        1700,
+        1702,
+        1704,
+        1706,
+        1708,
+        1710
+      ],
+      "in_s": 359.02,
+      "evidence_end_s": 359.22,
+      "row_window_s": [
+        354.8,
+        360.2
+      ],
+      "status": "scheduled",
+      "note": "Spoken phrase. The card starts on its last word.",
+      "actual_row_id": "P4:09a",
+      "out_s": 361.02
+    },
+    {
+      "row_id": "P5:02a",
+      "kind": "when",
+      "planned_text": "London, 21 December 1846",
+      "text": "London, 21 December 1846",
+      "anchor_text": "21st of December 1846 in London,",
+      "word_indices": [
+        874,
+        875,
+        876,
+        877,
+        878,
+        879
+      ],
+      "raw_stt_indices": [
+        1748,
+        1750,
+        1752,
+        1754,
+        1756,
+        1758
+      ],
+      "in_s": 370.46,
+      "evidence_end_s": 370.96,
+      "row_window_s": [
+        371.03,
+        374.8
+      ],
+      "status": "scheduled",
+      "note": "Spoken phrase. The card starts on its last word. It ends when the name card starts.",
+      "actual_row_id": "P5:01_card_p05",
+      "reconciliation": "The card follows the spoken words. The picture plan is unchanged.",
+      "out_s": 371.8
+    },
+    {
+      "row_id": "P1:03a",
+      "kind": "who",
+      "planned_text": "Robert Liston (1794–1847) — London surgeon",
+      "text": "Robert Liston (1794–1847) — London surgeon",
+      "anchor_text": "Robert Liston",
+      "word_indices": [
+        880,
+        881
+      ],
+      "raw_stt_indices": [
+        1760,
+        1762
+      ],
+      "in_s": 371.8,
+      "evidence_end_s": 372.18,
+      "row_window_s": [
+        14.28,
+        18.62
+      ],
+      "status": "scheduled",
+      "note": "Spoken phrase. The card starts on its last word.",
+      "actual_row_id": "P5:02a",
+      "reconciliation": "The card follows the spoken words. The picture plan is unchanged.",
+      "out_s": 375.0
+    },
+    {
+      "row_id": "P5:04b",
+      "kind": "when",
+      "planned_text": "Edinburgh, 4 November 1847",
+      "text": "Next year, Edinburgh",
+      "anchor_text": "next year in Edinburgh,",
+      "word_indices": [
+        940,
+        941,
+        942,
+        943
+      ],
+      "raw_stt_indices": [
+        1880,
+        1882,
+        1884,
+        1886
+      ],
+      "in_s": 403.04,
+      "evidence_end_s": 403.6,
+      "row_window_s": [
+        401.96,
+        409.5
+      ],
+      "status": "scheduled",
+      "note": "4 November 1847 is not spoken.",
+      "actual_row_id": "P5:04b",
+      "out_s": 405.04
+    },
+    {
+      "row_id": "P5:04b",
+      "kind": "who",
+      "planned_text": "James Young Simpson (1811–1870) — Edinburgh obstetrician",
+      "text": "James Young Simpson (1811–1870) — Edinburgh obstetrician",
+      "anchor_text": "James Young Simpson",
+      "word_indices": [
+        947,
+        948,
+        949
+      ],
+      "raw_stt_indices": [
+        1894,
+        1896,
+        1898
+      ],
+      "in_s": 405.78,
+      "evidence_end_s": 406.32,
+      "row_window_s": [
+        401.96,
+        409.5
+      ],
+      "status": "scheduled",
+      "note": "Spoken phrase. The card starts on its last word.",
+      "actual_row_id": "P5:04b",
+      "out_s": 408.98
+    },
+    {
+      "row_id": "P5:05a",
+      "kind": "label",
+      "planned_text": "CHLOROFORM",
+      "text": "CHLOROFORM",
+      "anchor_text": "chloroform",
+      "word_indices": [
+        966
+      ],
+      "raw_stt_indices": [
+        1932
+      ],
+      "in_s": 413.24,
+      "evidence_end_s": 414.02,
+      "row_window_s": [
+        409.5,
+        415.48
+      ],
+      "status": "scheduled",
+      "note": "Spoken phrase. The card starts on its last word.",
+      "actual_row_id": "P5:05a",
+      "out_s": 415.24
+    },
+    {
+      "row_id": "P5:06b",
+      "kind": "when",
+      "planned_text": "London, 7 April 1853",
+      "text": "1853",
+      "anchor_text": "1853,",
+      "word_indices": [
+        996
+      ],
+      "raw_stt_indices": [
+        1992
+      ],
+      "in_s": 427.9,
+      "evidence_end_s": 429.16,
+      "row_window_s": [
+        426.8,
+        429.63
+      ],
+      "status": "scheduled",
+      "note": "7 April is not spoken. London is the next sentence, so it is not on this card.",
+      "actual_row_id": "P5:06b",
+      "out_s": 429.9
+    },
+    {
+      "row_id": "P5:06b",
+      "kind": "who",
+      "planned_text": "John Snow (1813–1858) — London physician",
+      "text": "John Snow (1813–1858) — London physician",
+      "anchor_text": "John Snow",
+      "word_indices": [
+        1001,
+        1002
+      ],
+      "raw_stt_indices": [
+        2002,
+        2004
+      ],
+      "in_s": 431.54,
+      "evidence_end_s": 431.959,
+      "row_window_s": [
+        426.8,
+        429.63
+      ],
+      "status": "scheduled",
+      "note": "Spoken phrase. The card starts on its last word.",
+      "actual_row_id": "P5:07a_arch_snow_chloroform_1858",
+      "reconciliation": "The card follows the spoken words. The picture plan is unchanged.",
+      "out_s": 434.74
+    },
+    {
+      "row_id": "P5:09a",
+      "kind": "when",
+      "planned_text": "Today",
+      "text": "Today",
+      "anchor_text": "Today,",
+      "word_indices": [
+        1052
+      ],
+      "raw_stt_indices": [
+        2104
+      ],
+      "in_s": 452.72,
+      "evidence_end_s": 453.22,
+      "row_window_s": [
+        451.8,
+        458.5
+      ],
+      "status": "scheduled",
+      "note": "Spoken phrase. The card starts on its last word.",
+      "actual_row_id": "P5:09a",
+      "out_s": 454.72
+    },
+    {
+      "row_id": "P5:09b_cg_safety_stadium",
+      "kind": "data",
+      "planned_text": "a counter that ticks to 1 in 100,000 beside a stadium diagram of 90,000 seats with a single lit dot",
+      "text": "1 in 100,000",
+      "anchor_text": "one in every hundred thousand.",
+      "word_indices": [
+        1066,
+        1067,
+        1068,
+        1069,
+        1070
+      ],
+      "raw_stt_indices": [
+        2132,
+        2134,
+        2136,
+        2138,
+        2140
+      ],
+      "in_s": 460.58,
+      "evidence_end_s": 461.22,
+      "row_window_s": [
+        458.5,
+        465.74
+      ],
+      "status": "scheduled",
+      "note": "The digits are the spoken rate. Wembley is not spoken.",
+      "part": "rate",
+      "actual_row_id": "P5:09b_cg_safety_stadium",
+      "out_s": 462.58
+    },
+    {
+      "row_id": "P5:09b_cg_safety_stadium",
+      "kind": "data",
+      "planned_text": "a counter that ticks to 1 in 100,000 beside a stadium diagram of 90,000 seats with a single lit dot",
+      "text": "90,000 people",
+      "anchor_text": "stadium full of 90,000 people",
+      "word_indices": [
+        1073,
+        1074,
+        1075,
+        1076,
+        1077
+      ],
+      "raw_stt_indices": [
+        2146,
+        2148,
+        2150,
+        2152,
+        2154
+      ],
+      "in_s": 464.94,
+      "evidence_end_s": 465.42,
+      "row_window_s": [
+        458.5,
+        465.74
+      ],
+      "status": "scheduled",
+      "note": "Spoken scale is a stadium of 90,000 people. Wembley is not spoken.",
+      "part": "stadium",
+      "actual_row_id": "P5:09b_cg_safety_stadium",
+      "out_s": 466.94
+    },
+    {
+      "row_id": "P5:11a",
+      "kind": "label",
+      "planned_text": "ANAESTHETIST",
+      "text": "ANAESTHETIST",
+      "anchor_text": "anesthetist,",
+      "word_indices": [
+        1105
+      ],
+      "raw_stt_indices": [
+        2210
+      ],
+      "in_s": 477.48,
+      "evidence_end_s": 478.4,
+      "row_window_s": [
+        473.6,
+        481.2
+      ],
+      "status": "scheduled",
+      "note": "Spoken phrase. The card starts on its last word.",
+      "actual_row_id": "P5:11a",
+      "out_s": 479.48
+    }
+  ],
+  "held": [
+    {
+      "row_id": "P1:03b",
+      "kind": "fact",
+      "planned_text": "Under 3 minutes",
+      "status": "held",
+      "reason": "The narration says a few minutes. It does not say under 3 minutes, so that number stays off the card."
+    },
+    {
+      "row_id": "P1:04b_cg_stopwatch_scale",
+      "kind": "data",
+      "planned_text": "a brass stopwatch dial that sweeps round once and stops short of three minutes",
+      "status": "held",
+      "reason": "The stopwatch line is not spoken. Three minutes and the egg comparison are not in the narration."
+    },
+    {
+      "row_id": "P1:05a",
+      "kind": "when",
+      "planned_text": "Boston, 16 October 1846",
+      "status": "held",
+      "reason": "Boston is spoken here, but 16 October 1846 is not. That date is scheduled when it is spoken later. Showing it on this line would be early."
+    },
+    {
+      "row_id": "P2:05a_arch_laughing_gas_broadside",
+      "kind": "when",
+      "planned_text": "Early 1800s",
+      "status": "held",
+      "reason": "Early 1800s is not spoken in this row."
+    },
+    {
+      "row_id": "P2:07b_cg_timeline_42yr",
+      "kind": "when",
+      "planned_text": "Jefferson, Georgia, 30 March 1842",
+      "status": "held",
+      "reason": "Jefferson and 30 March are not spoken. March 1842 is spoken while the Crawford Long name card is still up, so the date is held instead of covering the name."
+    },
+    {
+      "row_id": "P2:07b_cg_timeline_42yr",
+      "kind": "data",
+      "planned_text": "a timeline bar stretching from 1800 (Bristol) to 1842 (Jefferson, Georgia), spanning 42 years",
+      "status": "held",
+      "reason": "The 42-year span and the working-lifetime comparison are not spoken."
+    },
+    {
+      "row_id": "P2:08a",
+      "kind": "fact",
+      "planned_text": "$2.00 ether operation",
+      "status": "held",
+      "reason": "The two-dollar price is not spoken."
+    },
+    {
+      "row_id": "P3:02a",
+      "kind": "when",
+      "part": "remainder",
+      "planned_text": "Hartford, December 1844",
+      "status": "held",
+      "reason": "December 1844 is spoken while the Horace Wells name card is up, so it is not a second card."
+    },
+    {
+      "row_id": "P3:04a",
+      "kind": "when",
+      "planned_text": "Boston, January 1845",
+      "status": "held",
+      "reason": "January 1845 is not spoken. Boston alone is not this date."
+    },
+    {
+      "row_id": "P4:02b",
+      "kind": "when",
+      "planned_text": "12 November 1846",
+      "status": "held",
+      "reason": "12 November 1846 is not spoken. The patent word is scheduled on its own."
+    },
+    {
+      "row_id": "P4:02b",
+      "kind": "fact",
+      "part": "remainder",
+      "planned_text": "Patent No. 4,848",
+      "status": "held",
+      "reason": "Patent number 4,848 is not spoken."
+    },
+    {
+      "row_id": "P2:02b",
+      "kind": "label",
+      "planned_text": "NITROUS OXIDE",
+      "text": "NITROUS OXIDE",
+      "anchor_text": "nitrous oxide.",
+      "word_indices": [
+        249,
+        250
+      ],
+      "raw_stt_indices": [
+        498,
+        500
+      ],
+      "in_s": 94.38,
+      "evidence_end_s": 94.96,
+      "row_window_s": [
+        95.2,
+        101.8
+      ],
+      "status": "held",
+      "note": "Spoken phrase. The card starts on its last word.",
+      "actual_row_id": "P2:02a",
+      "reconciliation": "The card follows the spoken words. The picture plan is unchanged.",
+      "out_s": 96.38,
+      "reason": "One card at a time. This overlaps P2:02a/who (Humphry Davy (1778–1829) — Bristol chemist), which is already using the frame."
+    }
+  ],
+  "credits": [
+    {
+      "row_id": "P1:09b",
+      "kind": "archive_credit",
+      "text": "Paré instruments, Wellcome / CC BY 4.0",
+      "in_s": 78.2,
+      "out_s": 81.68,
+      "source_asset": "archive_P1_09b",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Hand_coloured_illustration_of_surgical_instruments_Wellcome_L0041135.jpg",
+      "status": "scheduled_corner_credit",
+      "name_cards_on_row": [],
+      "word_indices": [
+        210,
+        211,
+        212,
+        213,
+        214,
+        215,
+        216,
+        217
+      ]
+    },
+    {
+      "row_id": "P2:04a_arch_davy_1800",
+      "kind": "archive_credit",
+      "text": "Davy, Researches (1800), p. 556",
+      "in_s": 108.5,
+      "out_s": 113.5,
+      "source_asset": "archive_P2_04a_arch_davy_1800",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Researches,_chemical_and_philosophical_-_chiefly_concerning_nitrous_oxide,_or_diphlogisticated_nitrous_air,_and_its_respiration_(IA_researcheschemic00davy).pdf",
+      "status": "scheduled_corner_credit",
+      "name_cards_on_row": [],
+      "word_indices": [
+        283,
+        284,
+        285,
+        286,
+        287,
+        288,
+        289,
+        290,
+        291,
+        292,
+        293
+      ]
+    },
+    {
+      "row_id": "P2:05a_arch_laughing_gas_broadside",
+      "kind": "archive_credit",
+      "text": "Gillray (1802), Library of Congress / Commons",
+      "in_s": 121.2,
+      "out_s": 125.76,
+      "source_asset": "archive_P2_05a_arch_laughing_gas_broadside",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Scientific_researches!_-_New_discoveries_in_pneumaticks!_-_or_-_An_experimental_lecture_on_the_powers_of_air_-_-Js._Gillray_inv._%26_fect._LCCN94509819.jpg",
+      "status": "scheduled_corner_credit",
+      "name_cards_on_row": [],
+      "word_indices": [
+        309,
+        310,
+        311,
+        312,
+        313,
+        314,
+        315,
+        316
+      ]
+    },
+    {
+      "row_id": "P2:09b_arch_long_1849",
+      "kind": "archive_credit",
+      "text": "Long, Southern Med. & Surg. J. (Dec 1849)",
+      "in_s": 166.14,
+      "out_s": 173.13,
+      "source_asset": "archive_P2_09b_arch_long_1849",
+      "page_url": "https://commons.wikimedia.org/wiki/File:The_Southern_medical_and_surgical_journal_(serial)_(IA_southernmedicals05medi).pdf",
+      "status": "scheduled_corner_credit",
+      "name_cards_on_row": [],
+      "word_indices": [
+        403,
+        404,
+        405,
+        406,
+        407,
+        408,
+        409,
+        410,
+        411,
+        412,
+        413,
+        414,
+        415,
+        416,
+        417,
+        418,
+        419,
+        420,
+        421,
+        422
+      ]
+    },
+    {
+      "row_id": "P3:05b",
+      "kind": "archive_credit",
+      "text": "Morton inhaler replica, Wellcome / CC BY 4.0",
+      "in_s": 218.7,
+      "out_s": 226.68,
+      "source_asset": "archive_P3_05b",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Anaesthetics;_Morton%27s_Ether_Inhaler_Wellcome_L0018234.jpg",
+      "status": "held_layout_conflict",
+      "name_cards_on_row": [
+        "P3:05a/who"
+      ],
+      "word_indices": [
+        536,
+        537,
+        538,
+        539,
+        540,
+        541,
+        542,
+        543,
+        544,
+        545,
+        546,
+        547,
+        548
+      ]
+    },
+    {
+      "row_id": "P3:09a_arch_ether_dome_1847",
+      "kind": "archive_credit",
+      "text": "Southworth & Hawes (1847), Getty / Commons",
+      "in_s": 258.5,
+      "out_s": 263.97,
+      "source_asset": "archive_P3_09a_arch_ether_dome_1847",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Southworth_%26_Hawes_(American,_active_1844_-_1862)_-_Use_of_Ether_for_Anesthesia_-_Google_Art_Project.jpg",
+      "status": "scheduled_corner_credit",
+      "name_cards_on_row": [],
+      "word_indices": [
+        623,
+        624,
+        625,
+        626,
+        627,
+        628,
+        629,
+        630,
+        631,
+        632,
+        633,
+        634,
+        635
+      ]
+    },
+    {
+      "row_id": "P4:03a_arch_letheon_patent",
+      "kind": "archive_credit",
+      "text": "US Patent No. 4,848 (12 Nov 1846), NLM / USPTO",
+      "in_s": 285.86,
+      "out_s": 290.58,
+      "source_asset": "archive_P4_03a_arch_letheon_patent",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Copy_of_letters_patent_granted_to_W.T.G._Morton,_M.D._-_for_the_discovery_of_etherization,_together_with_the_specification_on_which_the_patent_issued_(IA_0313207.nlm.nih.gov).pdf",
+      "status": "scheduled_corner_credit",
+      "name_cards_on_row": [],
+      "word_indices": [
+        687,
+        688,
+        689,
+        690,
+        691,
+        692,
+        693,
+        694,
+        695,
+        696,
+        697,
+        698
+      ]
+    },
+    {
+      "row_id": "P4:08b_arch_ether_monument",
+      "kind": "archive_credit",
+      "text": "Ether Monument (1868), Boston Public Garden / CC0",
+      "in_s": 349.5,
+      "out_s": 354.8,
+      "source_asset": "archive_P4_08b_arch_ether_monument",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Ether_Monument_-_Boston_Public_Garden_-_Boston,_MA_-_DSC04197.jpg",
+      "status": "scheduled_corner_credit",
+      "name_cards_on_row": [],
+      "word_indices": [
+        831,
+        832,
+        833,
+        834,
+        835,
+        836,
+        837,
+        838,
+        839,
+        840,
+        841,
+        842
+      ]
+    },
+    {
+      "row_id": "P5:03a_arch_squire_inhaler_1846",
+      "kind": "archive_credit",
+      "text": "Squire Ether Inhaler (1846), Wellcome / CC BY 4.0",
+      "in_s": 379.84,
+      "out_s": 387.8,
+      "source_asset": "archive_P5_03a_arch_squire_inhaler_1846",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Copy_of_the_Squire-type_ether_inhaler_first_used_in_1846_Wellcome_L0057829.jpg",
+      "status": "scheduled_corner_credit",
+      "name_cards_on_row": [],
+      "word_indices": [
+        896,
+        897,
+        898,
+        899,
+        900,
+        901,
+        902,
+        903,
+        904,
+        905,
+        906,
+        907,
+        908,
+        909,
+        910,
+        911,
+        912
+      ]
+    },
+    {
+      "row_id": "P5:04a",
+      "kind": "archive_credit",
+      "text": "E. Board, Liston Operating (1846), Wellcome / CC BY 4.0",
+      "in_s": 395.2,
+      "out_s": 401.96,
+      "source_asset": "archive_P5_04a",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Robert_Liston_operating._Wellcome_M0005603.jpg",
+      "status": "scheduled_corner_credit",
+      "name_cards_on_row": [],
+      "word_indices": [
+        928,
+        929,
+        930,
+        931,
+        932,
+        933,
+        934,
+        935,
+        936,
+        937,
+        938
+      ]
+    },
+    {
+      "row_id": "P5:06a_arch_simpson_1847",
+      "kind": "archive_credit",
+      "text": "Simpson, Account of a New Anaesthetic Agent (1847)",
+      "in_s": 420.5,
+      "out_s": 426.8,
+      "source_asset": "archive_P5_06a_arch_simpson_1847",
+      "page_url": "https://commons.wikimedia.org/wiki/File:An_account_of_a_new_anaesthetic_agent_as_a_substitute_for_sulphuric_ether_in_surgery_and_midwifery_(IA_66950610R.nlm.nih.gov).pdf",
+      "status": "scheduled_corner_credit",
+      "name_cards_on_row": [],
+      "word_indices": [
+        982,
+        983,
+        984,
+        985,
+        986,
+        987,
+        988,
+        989,
+        990,
+        991,
+        992,
+        993
+      ]
+    },
+    {
+      "row_id": "P5:07a_arch_snow_chloroform_1858",
+      "kind": "archive_credit",
+      "text": "Snow, On Chloroform (1858), Countway / Commons",
+      "in_s": 429.63,
+      "out_s": 437.6,
+      "source_asset": "archive_P5_07a_arch_snow_chloroform_1858",
+      "page_url": "https://commons.wikimedia.org/wiki/File:On_chloroform_and_other_anaesthetics_-_their_action_and_administration_(IA_onchloroformothe1858snow).pdf",
+      "status": "held_layout_conflict",
+      "name_cards_on_row": [
+        "P5:06b/who"
+      ],
+      "word_indices": [
+        997,
+        998,
+        999,
+        1000,
+        1001,
+        1002,
+        1003,
+        1004,
+        1005,
+        1006,
+        1007,
+        1008,
+        1009,
+        1010,
+        1011,
+        1012,
+        1013,
+        1014,
+        1015
+      ]
+    },
+    {
+      "row_id": "P5:14a",
+      "kind": "archive_credit",
+      "text": "Cheyne, Antiseptic Surgery (1882), Wellcome / CC BY 4.0",
+      "in_s": 502.55,
+      "out_s": 510.34,
+      "source_asset": "archive_P5_14a",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Use_of_the_Lister_carbolic_spray,_Antiseptic_surgery,_1882._Wellcome_M0003436.jpg",
+      "status": "scheduled_corner_credit",
+      "name_cards_on_row": [],
+      "word_indices": [
+        1156,
+        1157,
+        1158,
+        1159,
+        1160,
+        1161,
+        1162,
+        1163,
+        1164,
+        1165,
+        1166,
+        1167,
+        1168,
+        1169,
+        1170,
+        1171
+      ]
+    },
+    {
+      "row_id": "P1:03a",
+      "kind": "portrait_credit",
+      "text": "Portrait: C. Turner (1840), Wellcome / CC BY 4.0",
+      "in_s": 371.8,
+      "out_s": 375.0,
+      "source_asset": "portrait_P1_03a",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Portrait_of_Robert_Liston,_by_C._Turner,_1840._Wellcome_L0012831.jpg",
+      "status": "scheduled_with_name_card",
+      "name_cards_on_row": [
+        "P1:03a/who"
+      ],
+      "word_indices": [
+        880,
+        881
+      ]
+    },
+    {
+      "row_id": "P2:02a",
+      "kind": "portrait_credit",
+      "text": "H. Davy, engr. W. Walker (1830), Wellcome / CC BY 4.0",
+      "in_s": 91.58,
+      "out_s": 94.78,
+      "source_asset": "portrait_P2_02a",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Sir_Humphry_Davy._Stipple_engraving_by_W._Walker,_1830,_afte_Wellcome_V0006497.jpg",
+      "status": "scheduled_with_name_card",
+      "name_cards_on_row": [
+        "P2:02a/who"
+      ],
+      "word_indices": [
+        242,
+        243
+      ]
+    },
+    {
+      "row_id": "P2:07a",
+      "kind": "portrait_credit",
+      "text": "C. W. Long, Wellcome / CC BY 4.0",
+      "in_s": 146.4,
+      "out_s": 149.6,
+      "source_asset": "portrait_P2_07a",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Portrait_of_Crawford_Williamson_Long._Wellcome_M0003193.jpg",
+      "status": "scheduled_with_name_card",
+      "name_cards_on_row": [
+        "P2:07a/who"
+      ],
+      "word_indices": [
+        364,
+        365
+      ]
+    },
+    {
+      "row_id": "P3:02a",
+      "kind": "portrait_credit",
+      "status": "held",
+      "reason": "The source manifest has no approved credit line for this portrait.",
+      "source_asset": "portrait_P3_02a"
+    },
+    {
+      "row_id": "P3:05a",
+      "kind": "portrait_credit",
+      "status": "held",
+      "reason": "The source manifest has no approved credit line for this portrait.",
+      "source_asset": "portrait_P3_05a"
+    },
+    {
+      "row_id": "P3:08a",
+      "kind": "portrait_credit",
+      "status": "held",
+      "reason": "The source manifest has no approved credit line for this portrait.",
+      "source_asset": "portrait_P3_08a"
+    },
+    {
+      "row_id": "P4:04a",
+      "kind": "portrait_credit",
+      "status": "held",
+      "reason": "The source manifest has no approved credit line for this portrait.",
+      "source_asset": "portrait_P4_04a"
+    },
+    {
+      "row_id": "P4:05b",
+      "kind": "portrait_credit",
+      "status": "held",
+      "reason": "The source manifest has no approved credit line for this portrait.",
+      "source_asset": "portrait_P4_05b"
+    },
+    {
+      "row_id": "P5:04b",
+      "kind": "portrait_credit",
+      "status": "held",
+      "reason": "The source manifest has no approved credit line for this portrait.",
+      "source_asset": "portrait_P5_04b"
+    },
+    {
+      "row_id": "P5:06b",
+      "kind": "portrait_credit",
+      "status": "held",
+      "reason": "The source manifest has no approved credit line for this portrait.",
+      "source_asset": "portrait_P5_06b"
+    }
+  ],
+  "scales": [
+    {
+      "row_id": "P1:04b_cg_stopwatch_scale",
+      "planned_text": "about as long as boiling an egg",
+      "status": "held",
+      "reason": "Boiling an egg is not spoken."
+    },
+    {
+      "row_id": "P2:07b_cg_timeline_42yr",
+      "planned_text": "longer than a whole working lifetime before anyone used it for an operation",
+      "status": "held",
+      "reason": "A working lifetime is not spoken."
+    },
+    {
+      "row_id": "P4:06a_cg_master_timeline",
+      "planned_text": "four years from Long's quiet Georgia towel (1842) to Boston's public Ether Dome (1846)",
+      "status": "held",
+      "reason": "Four years from the Georgia towel to the Ether Dome is not spoken."
+    },
+    {
+      "row_id": "P5:09b_cg_safety_stadium",
+      "planned_text": "more seats than Wembley Stadium, and on average not even one person dies from the anaesthetic",
+      "status": "held",
+      "reason": "Wembley is not spoken. The spoken comparison is a stadium full of 90,000 people, and that is a scheduled card."
+    }
+  ],
+  "checks": {
+    "scheduled_overlaps": 0,
+    "no_card_before_its_last_word": true,
+    "max_card_s": 4,
+    "unresolved_holds": 12,
+    "layout_review_required": true,
+    "film_stage_pass": false,
+    "moving_video_review": false,
+    "audio_review": false
+  },
+  "render_notes": [
+    "Do not draw a held line.",
+    "The 008-010 opening experiment is not approved for 011.",
+    "P5:16b stays a slate. No unused tail was measured.",
+    "This schedule does not approve the picture, the edit, or a watch copy."
+  ]
+}

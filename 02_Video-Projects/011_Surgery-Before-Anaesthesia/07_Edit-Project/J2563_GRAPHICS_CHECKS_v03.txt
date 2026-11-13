@@ -1,0 +1,4 @@
+PASS: five delivered graphic files match SHA-256, 1920x1080, 30 fps, planned durations within half a frame; cue word indices and raw indices agree, no label overlap or premature full-phrase reveal.
+Partial checkpoint only: 21 free rows, full overlays and timing rough remain unfinished; no moving-video or audio review, no film-stage approval.
+
+Repository check_all.sh: ALL CHECKS PASS (12 Nov 2026). Three existing source/overlay tests passed. Mechanical retime validation passed; no film-stage approval.

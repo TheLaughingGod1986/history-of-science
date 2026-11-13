@@ -208,3 +208,62 @@ This is a data validation result, not film-stage approval or listening/motion QA
 
 
 Full source overrides and assembly requirements: `07_Edit-Project/J2659_CHIEF_DECISION.md`. J2563 resumes the 26 free rows and labelled-slate rough; picture and edit remain incomplete.
+
+
+## J2563 partial assembly checkpoint — 12 November 2026
+
+Input milestone 1/4 only; edit remains unfinished. Corrected source manifest (23 sources), twelve live metadata records, four verified downloaded originals; 28 anchored overlay candidates and 19 explicit holds. Wikimedia HTTP 429 prevents further acquisition this run. No row renders or timing rough yet. See `07_Edit-Project/J2563_CHECKPOINT_v01.md` for the NAS checkpoint and resume procedure. No generation, picture/edit approval or UAT.
+
+```text
+PASS: mechanical retime validation — 93 contiguous rows, 92 word-safe boundaries; 18 word crossings removed; all 11 long sentences split; maximum 8.00 s; v02 source, VO lock, row identities, budgets and generation locks preserved.
+This is a data validation result, not film-stage approval or listening/motion QA.
+PASS: locked NAS WAV hash and 532.720 s duration verified; no audio listening performed.
+PASS: 16 checkpoint files SHA-256 matched local and NAS copies.
+```
+
+Three focused source/cue tests and repository `check_all.sh` passed. These do not substitute for unfinished render verification or media QA. Nothing needed from Ben.
+
+
+# J2563 free graphics checkpoint, 12 November 2026
+
+Codex covering as worker. Continued existing PR #560. Five preliminary own-code rows delivered to studio-live, with source-word timing and hashes in FREE_GRAPHICS_MANIFEST_v03.json. No generation, credits, narration change, upload, approval, PASS of a film stage or UAT copy.
+
+Rendered P4:04c (word origin), P5:09b (ratio then stadium bowl), P5:12a (symbolic medicine balance), P5:16a (gas, bag, globe) and P5:17 (end card). White Didot italic on walnut, animated ink linework. Full phrase labels reveal at the final anchored word rather than at the start of the phrase. Unspoken Greek spellings/date, Wembley name, premature death claim and closing dates are omitted from these preliminary graphics. This is an assembly interpretation for review, not a change to the locked plan or spoken lines. The short “Without feeling” display, symbolic balance replacing diagnostic traces, and object drawings need editorial/motion review before acceptance.
+
+Files: `/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_free_graphics_v03/`. Local recovery: `/Users/benjaminoats/_desk/J2563/free_graphics_v03/`. Earlier local v02 exploratory files preserved. Five delivered rows are video-only picture inputs; locked narration will be muxed only in the eventual rough. Frames rounded independently here to nearest 30 fps frame; the final rough must quantize absolute boundaries cumulatively to prevent concat drift.
+
+NAS WAV rechecked: SHA-256 d873f1d0c9158087fd61ce0b9f53de985055d778cd58b8df70c67c0701300ae2, 532.720 s. Five delivered file hashes rechecked from NAS. Representative stills inspected for layout only. No demonstrated moving-video or audio input in this session.
+
+```
+PASS: five delivered graphic files match SHA-256, 1920x1080, 30 fps, planned durations within half a frame; cue word indices and raw indices agree, no label overlap or premature full-phrase reveal.
+Partial checkpoint only: 21 free rows, full overlays and timing rough remain unfinished; no moving-video or audio review, no film-stage approval.
+```
+
+Remaining: 8 code rows and all 13 archive/composite rows (21 free rows total); complete word-accurate overlay/credit schedule; 67 dependency slates; 535.30 s timing rough; verification of full coverage and applicable gates. Prior source acquisition 429 remains recorded: no new network requests or bypass attempted. The four still-unreconciled teaching graphics and chapter timing remain in scope; the 008–010 experiment is not approved for 011. P5:16b remains a dependency slate; no actual P1:07b source exists in this build, so its unused-tail claim remains unverified. Preserve the 11.13 s disjoint-use requirement / hypothetical 3.13 s overlap finding.
+
+Request review of these assets by a reviewer with demonstrated moving-video input; any audio assessment needs demonstrated audio input. Chief decides on the proposed visual simplifications. Next worker should continue this same branch/PR and manifest, not restart completed source work. This job is released at a clean partial checkpoint because the remaining assembly exceeds one worker run. Nothing needed from Ben.
+
+
+## J2563 v04 partial assembly checkpoint (12 Nov 2026)
+
+Eight additional preliminary graphics delivered to studio-live; see `07_Edit-Project/J2563_CHECKPOINT_v04.md` for editorial holds. No stage approval or UAT.
+
+```text
+PASS: eight additional preliminary graphic files match SHA-256, decode completely, are 1920x1080 at 30 fps, and match v03 durations within half a frame; source/raw word indices agree, cues do not overlap or reveal before their final anchor word, and chapter headings clear at the next spoken word.
+Partial checkpoint only. Editorial simplifications and brief chapter readability need Chief review. Thirteen archive rows, full cues and rough remain; no film-stage approval, audio assessment or moving-video review.
+```
+
+## J2563 v07 partial assembly checkpoint (12 Nov 2026)
+
+Two additional preliminary archive composites and all 67 dependency slates delivered to studio-live; 19 preliminary free rows now exist. See `07_Edit-Project/J2563_CHECKPOINT_v07.md`. No film-stage PASS, moving-video/audio review or UAT. Seven archive composites, full cue reconciliation and the joined rough remain unfinished. No generation, spend, narration or publishing changes.
+
+```text
+PASS: 67 labelled dependency slates; full decode, hashes, 1080p/30fps and cumulative-frame timing checked. Internal artifacts only.
+PASS: output-byte copy checks, 86 NAS row hashes and exact 19 preliminary / 67 slate / seven missing classification.
+```
+
+Required check_all.sh: ALL CHECKS PASS. Three source/cue preparation tests and unchanged v03 mechanical timing validation passed. P5:16b remains a slate; no actual reuse source interval verified. The four-milestone assembly plan remains 1/4, released for continuation. Capable motion and audio reviewers are required for their respective assessments.
+
+## J2563 v09 cue schedule (13 Nov 2026)
+
+Word-timed overlay schedule written. See `07_Edit-Project/J2563_CHECKPOINT_v09.md` and `OVERLAY_CUE_SCHEDULE_v02.json`. 38 cards follow the locked words and do not stack. 12 planned lines stay off screen because they are not spoken or because a name card is already up. Five archive pictures remain undownloaded until 05:30 UTC. The rough is not built. No film-stage pass, no listening review, and no watch copy.

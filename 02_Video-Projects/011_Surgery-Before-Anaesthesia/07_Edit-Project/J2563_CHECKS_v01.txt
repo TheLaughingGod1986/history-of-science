@@ -1,0 +1,11 @@
+PASS: mechanical retime validation — 93 contiguous rows, 92 word-safe boundaries; 18 word crossings removed; all 11 long sentences split; maximum 8.00 s; v02 source, VO lock, row identities, budgets and generation locks preserved.
+This is a data validation result, not film-stage approval or listening/motion QA.
+.archive_P1_09b
+..
+----------------------------------------------------------------------
+Ran 3 tests in 0.026s
+
+OK
+PASS: locked NAS WAV SHA-256 d873f1d0c9158087fd61ce0b9f53de985055d778cd58b8df70c67c0701300ae2 and 532.720 s duration verified; no listening performed.
+PASS: 16 checkpoint files SHA-256 matched local and NAS copies.
+Repository check_all.sh: ALL CHECKS PASS after board update.

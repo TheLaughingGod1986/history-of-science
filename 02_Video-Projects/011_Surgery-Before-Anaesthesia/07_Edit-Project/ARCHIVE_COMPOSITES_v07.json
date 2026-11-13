@@ -1,0 +1,109 @@
+{
+  "job": "J2563",
+  "film_stage_approved": false,
+  "motion_review": false,
+  "audio_review": false,
+  "spend_gbp": 0,
+  "credits_used": 0,
+  "plan_sha256": "df11c9e00116c7a44390535e0fb569f682735d3f8ed7206ed45926f768ee7238",
+  "rows": [
+    {
+      "row_id": "P2:05a_arch_laughing_gas_broadside",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_archive_composites_v07/P2_05a_arch_laughing_gas_broadside.mp4",
+      "sha256": "e7b075d32c24794a81c2230cfbc00a69674ac543db64af6db54b6f1dbe7d6daf",
+      "source": {
+        "asset_id": "archive_P2_05a_arch_laughing_gas_broadside",
+        "row_id": "P2:05a_arch_laughing_gas_broadside",
+        "page_url": "https://commons.wikimedia.org/wiki/File:Scientific_researches!_-_New_discoveries_in_pneumaticks!_-_or_-_An_experimental_lecture_on_the_powers_of_air_-_-Js._Gillray_inv._%26_fect._LCCN94509819.jpg",
+        "file_name": "archive_P2_05a_arch_laughing_gas_broadside.jpg",
+        "sha256": "991b50bd4e3ff51a869297c5001e0268343b2e2cb61785ea29cf65e26e78b3aa",
+        "bytes": 265657,
+        "licence": "Public domain",
+        "credit": "Gillray (1802), Library of Congress / Commons",
+        "depicts": null,
+        "status": "identity and layout inspected in stills; composite unbuilt"
+      },
+      "source_crop_xyxy": [
+        105,
+        98,
+        923,
+        678
+      ],
+      "frames": 137,
+      "duration_s": 4.566667,
+      "plan_in_s": 121.2,
+      "plan_out_s": 125.76,
+      "cues": [],
+      "credit_cues": [
+        {
+          "kind": "archive_credit",
+          "text": "Gillray (1802), Library of Congress / Commons; broadside: own drawing",
+          "in_s": 121.2,
+          "out_s": 125.76,
+          "word_indices": [],
+          "reason": "Source credit deferred while spoken label appears"
+        }
+      ],
+      "review_status": "preliminary: static layout inspected; capable motion and editorial review required",
+      "reconciliation": "Gillray 1802 source plus own-drawn fragment of approved broadside; no 1844 date shown. Reconstruction wording/readability requires editorial review."
+    },
+    {
+      "row_id": "P3:05b",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_archive_composites_v07/P3_05b.mp4",
+      "sha256": "8e7d00fd31de74424e0d60ae77664cba68e6d8cc3e72437fe681c2ecda4cfb37",
+      "source": {
+        "asset_id": "archive_P3_05b",
+        "row_id": "P3:05b",
+        "page_url": "https://commons.wikimedia.org/wiki/File:Anaesthetics;_Morton%27s_Ether_Inhaler_Wellcome_L0018234.jpg",
+        "file_name": "archive_P3_05b.jpg",
+        "sha256": "e269a97b59dbcd8e8bccc95753d3681c442ee7c511913a4eee0ac3fc93b7cfaf",
+        "bytes": 5120477,
+        "licence": "CC BY 4.0",
+        "credit": "Morton inhaler replica, Wellcome / CC BY 4.0",
+        "depicts": "Morton ether inhaler replica, circa 1945; own-drawn airflow required",
+        "status": "identity and layout inspected in stills; composite unbuilt"
+      },
+      "source_crop_xyxy": null,
+      "frames": 239,
+      "duration_s": 7.966016,
+      "plan_in_s": 218.7,
+      "plan_out_s": 226.68,
+      "cues": [
+        {
+          "phrase": "ether",
+          "word_indices": [
+            542
+          ],
+          "raw_stt_indices": [
+            1084
+          ],
+          "in_s": 222.44,
+          "evidence_end_s": 222.88,
+          "text": "ETHER",
+          "kind": "label",
+          "out_s": 223.94
+        }
+      ],
+      "credit_cues": [
+        {
+          "kind": "archive_credit",
+          "text": "Morton inhaler replica, Wellcome / CC BY 4.0",
+          "in_s": 218.7,
+          "out_s": 222.44,
+          "word_indices": [],
+          "reason": "Source credit deferred while spoken label appears"
+        },
+        {
+          "kind": "archive_credit",
+          "text": "Morton inhaler replica, Wellcome / CC BY 4.0",
+          "in_s": 223.94,
+          "out_s": 226.68,
+          "word_indices": [],
+          "reason": "Source credit deferred while spoken label appears"
+        }
+      ],
+      "review_status": "preliminary: static layout inspected; capable motion and editorial review required",
+      "reconciliation": "Replica circa 1945, not an 1846 engraving; separate schematic airflow, no new claims or date labels"
+    }
+  ]
+}

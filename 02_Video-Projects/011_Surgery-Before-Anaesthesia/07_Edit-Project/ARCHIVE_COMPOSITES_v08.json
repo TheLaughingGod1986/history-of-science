@@ -1,0 +1,112 @@
+{
+  "job": "J2563",
+  "film_stage_approved": false,
+  "motion_review": false,
+  "audio_review": false,
+  "spend_gbp": 0,
+  "credits_used": 0,
+  "plan_sha256": "df11c9e00116c7a44390535e0fb569f682735d3f8ed7206ed45926f768ee7238",
+  "network": "No requests in this render. Sources were saved before the later HTTP 429.",
+  "rows": [
+    {
+      "row_id": "P4:03a_arch_letheon_patent",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_archive_composites_v08/P4_03a_arch_letheon_patent.mp4",
+      "sha256": "30e9e09adc10dfb014b525916a768c416082a72f0638fbaf2622990575f7855d",
+      "source_sha256": "44884b176655fb146af984dccb1e26510ba3ab2af3443fc327ae432f29e1dc77",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Copy_of_letters_patent_granted_to_W.T.G._Morton,_M.D._-_for_the_discovery_of_etherization,_together_with_the_specification_on_which_the_patent_issued_(IA_0313207.nlm.nih.gov).pdf",
+      "licence": "Public domain. 1854 certified copy of Letters Patent No. 4,848, granted 12 November 1846.",
+      "frames": 142,
+      "duration_s": 4.733333,
+      "plan_in_s": 285.86,
+      "plan_out_s": 290.58,
+      "cues": [
+        {
+          "phrase": "patent",
+          "word_indices": [
+            696
+          ],
+          "raw_stt_indices": [
+            1392
+          ],
+          "in_s": 288.8,
+          "evidence_end_s": 289.2,
+          "text": "PATENT",
+          "kind": "label",
+          "out_s": 290.3
+        }
+      ],
+      "credit_cues": [
+        {
+          "kind": "archive_credit",
+          "text": "US Patent No. 4,848 (12 Nov 1846), NLM / USPTO",
+          "in_s": 285.86,
+          "out_s": 288.8,
+          "word_indices": [],
+          "reason": "Credit stays off while the spoken label is on screen"
+        },
+        {
+          "kind": "archive_credit",
+          "text": "US Patent No. 4,848 (12 Nov 1846), NLM / USPTO",
+          "in_s": 290.3,
+          "out_s": 290.58,
+          "word_indices": [],
+          "reason": "Credit stays off while the spoken label is on screen"
+        }
+      ],
+      "luma_mean_min": 91.65104166666667,
+      "luma_p95_min": 162,
+      "review_status": "preliminary: still layout inspected; capable motion review required",
+      "reconciliation": "Page 3 shows No. 4848 and the written date twelfth of November, eighteen hundred and forty-six. Page 4 shows the words sulphuric ether. The scan is the 1854 certified copy, not a new drawing."
+    },
+    {
+      "row_id": "P4:08b_arch_ether_monument",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_archive_composites_v08/P4_08b_arch_ether_monument.mp4",
+      "sha256": "5961c8170228c21a1149ce16714209f44718cd05a9bbfa5ed5feb617c6c5c5ad",
+      "source_sha256": "a97f61e85f4104044202a05b355d0754d07a3abc64e27a34e470e3b918c490fd",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ether_Monument_-_Boston_Public_Garden_-_Boston,_MA_-_DSC04197.jpg",
+      "licence": "CC0. Photograph DSC04197 by Daderot.",
+      "frames": 159,
+      "duration_s": 5.3,
+      "plan_in_s": 349.5,
+      "plan_out_s": 354.8,
+      "cues": [
+        {
+          "phrase": "monument",
+          "word_indices": [
+            840
+          ],
+          "raw_stt_indices": [
+            1680
+          ],
+          "in_s": 352.86,
+          "evidence_end_s": 353.38,
+          "text": "MONUMENT",
+          "kind": "label",
+          "out_s": 354.36
+        }
+      ],
+      "credit_cues": [
+        {
+          "kind": "archive_credit",
+          "text": "Ether Monument (1868), Boston Public Garden / CC0",
+          "in_s": 349.5,
+          "out_s": 352.86,
+          "word_indices": [],
+          "reason": "Credit stays off while the spoken label is on screen"
+        },
+        {
+          "kind": "archive_credit",
+          "text": "Ether Monument (1868), Boston Public Garden / CC0",
+          "in_s": 354.36,
+          "out_s": 354.8,
+          "word_indices": [],
+          "reason": "Credit stays off while the spoken label is on screen"
+        }
+      ],
+      "luma_mean_min": 99.46527777777777,
+      "luma_p95_min": 167,
+      "review_status": "preliminary: still layout inspected; capable motion review required",
+      "reconciliation": "DSC04197 shows the Good Samaritan group and the column capital. The inscription base is not in this file, so the downward move stays inside the photograph."
+    }
+  ]
+}
