@@ -899,3 +899,34 @@ Remaining: SAFE PATH DOWN on its plate, the foil check at f3353,
 bottom-text reviews, generalized packet mux, preservation and loudness/sync
 checks, and the mandatory film gates. Then J2243 and Chief review. Continue
 this PR #542 worktree. Frame 2869 stays out.
+
+## SAFE PATH on the v12 card — twenty-third run, 13 November 2026
+
+Cursor worker. Frame 2869 stays out. Master frames 11038–11117 are the v12
+card `body.mp4`, not either code-graphic file. The upper 1920×720 band
+matches that card at per-pixel MSE 0. The schedule is monotonic: body frames
+0–44, a second copy of 44, then 46–48 with 48 held twice more, then 51–79.
+Body frames 45, 49 and 50 stay unused. Weak runner-up pairs are the same
+picture, and the exact frame is the one that was used.
+
+`_j2242_safe_path.py` composites the existing SAFE PATH DOWN layer onto those
+frames. Original presentation timestamps and durations match. The picture
+above the caption matches the card. The first fade frame stays clear.
+
+- `/Volumes/MiniWork/scratch/J2242-safe-path-v01/safe_path.nut`
+  SHA-256 `e0899746864f60d476c70f08ce464f6277df6deb9bca0bda1c75ba838fca3bb0`
+
+Stills, not a motion review or an audio review: local frame 24 is the brown
+lead-in, and local frame 70 is the steeple diagram. Both show the plate's own
+upper title and the new bottom card, and both titles read SAFE PATH DOWN.
+The bottom card is readable at 168×94. One label at a time is not met, so
+this intermediate is not a finished card and not a film approval.
+
+101 J2242 unit tests OK. check_all ALL CHECKS PASS. No v04 master. Original
+masters and audio are unchanged. No spend, generation, UAT, R2 or YouTube
+action. No detached process.
+
+Remaining: the duplicate SAFE PATH title, the foil check at f3353,
+bottom-text reviews, generalized packet mux, preservation and loudness/sync
+checks, and the mandatory film gates. Then J2243 and Chief review. Continue
+this PR #542 worktree. Frame 2869 stays out.
