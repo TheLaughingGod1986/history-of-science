@@ -2,11 +2,20 @@
 
 P5:16b stays the dependency slate. This is not a finished film.
 """
-import argparse, json, subprocess
+import argparse, importlib.util, json, subprocess
 from pathlib import Path
-import join_timing_rough_v10 as v10
 
 HERE = Path(__file__).resolve().parent
+
+
+def _load(name):
+    spec = importlib.util.spec_from_file_location(name, HERE / f"{name}.py")
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
+
+v10 = _load("join_timing_rough_v10")
 FIVE = (
     "P5:03a_arch_squire_inhaler_1846",
     "P5:04a",
