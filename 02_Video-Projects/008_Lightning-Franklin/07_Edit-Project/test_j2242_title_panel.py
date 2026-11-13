@@ -4,10 +4,16 @@ import numpy as np
 
 from _j2242_title_panel import (
     LABELS,
+    METAL_CHECK_FRAME,
+    METAL_FRAME_STOP,
     PAINT_ROWS,
     UMBER,
+    alpha_frame_for_picture,
     label_words,
+    metal_frames,
+    paint_matched,
     panel_behind,
+    summarize_frames,
     title_box,
 )
 
@@ -73,6 +79,58 @@ class TitlePanel(unittest.TestCase):
     def test_five_words_are_refused(self):
         with self.assertRaises(ValueError):
             label_words('ONE TWO THREE FOUR FIVE')
+
+    def test_the_metal_window_stops_before_the_safe_path(self):
+        frames = metal_frames()
+        self.assertEqual(len(frames), 42)
+        self.assertEqual(frames[21], METAL_CHECK_FRAME)
+        self.assertNotIn(METAL_FRAME_STOP, frames)
+        self.assertNotIn(2869, frames)
+
+    def test_alpha_frames_match_the_checked_timestamps(self):
+        self.assertEqual(alpha_frame_for_picture(53, 114, 159), 66)
+        self.assertEqual(alpha_frame_for_picture(134, 160, 219), 168)
+        self.assertEqual(alpha_frame_for_picture(48, 76, 95), 60)
+        with self.assertRaises(ValueError):
+            alpha_frame_for_picture(113, 114, 100)
+
+    def test_a_frame_without_a_title_is_kept_and_an_aligned_title_is_painted(self):
+        alpha = alpha_frame()
+        blank = np.zeros((1080, 1920, 4), np.uint8)
+        picture = np.full((1080, 1920, 3), 180, np.uint8)
+        picture[alpha[:, :, 3] > 0] = alpha[:, :, :3][alpha[:, :, 3] > 0]
+        kept, kept_status = paint_matched(picture, blank)
+        self.assertIs(kept, picture)
+        self.assertEqual(kept_status['status'], 'kept')
+        painted, painted_status = paint_matched(picture, alpha)
+        self.assertEqual(painted_status['status'], 'painted')
+        changed = np.any(painted != picture, axis=2)
+        self.assertTrue(np.all(painted[changed] == UMBER))
+        title_only = np.zeros((1080, 1920, 4), np.uint8)
+        title_only[120:176, 600:1300, :3] = (210, 170, 90)
+        title_only[120:176, 600:1300, 3] = 255
+        mismatched = np.zeros((1080, 1920, 3), np.uint8)
+        untouched, status = paint_matched(mismatched, title_only)
+        self.assertEqual(status['status'], 'kept')
+        self.assertEqual(status['why'], 'unaligned')
+        self.assertTrue(np.array_equal(untouched, mismatched))
+
+    def test_a_row_needs_one_stable_title_box(self):
+        with self.assertRaises(ValueError):
+            summarize_frames([{'status': 'kept', 'why': 'no title'}])
+        summary = summarize_frames([
+            {'status': 'kept', 'why': 'no title'},
+            {'status': 'painted', 'box': [1, 2, 3, 4], 'alignment_mae': 4.0},
+            {'status': 'painted', 'box': [1, 2, 3, 4], 'alignment_mae': 6.0},
+        ])
+        self.assertEqual(summary['painted'], 2)
+        self.assertEqual(summary['kept'], 1)
+        self.assertEqual(summary['box'], [1, 2, 3, 4])
+        with self.assertRaises(ValueError):
+            summarize_frames([
+                {'status': 'painted', 'box': [1, 2, 3, 4], 'alignment_mae': 4.0},
+                {'status': 'painted', 'box': [2, 2, 3, 4], 'alignment_mae': 4.0},
+            ])
 
 
 if __name__ == '__main__':

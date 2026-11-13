@@ -1044,3 +1044,20 @@ Stills, including the 168×94 phone stills, are in `/Volumes/MiniWork/scratch/J2
 122 J2242 unit tests OK, 6 of them new. No v04 master. Original masters and audio are unchanged. No spend, generation, UAT, R2 or YouTube action. No detached process.
 
 Remaining: the same panel on every frame of those four rows, the generalized packet mux, preservation and loudness/sync checks, and the mandatory film gates. Then J2243 and Chief review. Continue this PR #542 worktree. Frame 2869 stays out.
+
+## Umber panel on every aligned frame — twenty-eighth run, 13 November 2026
+
+Cursor worker. Frame 2869 stays out. The letter row stays the cream letter, with no banner. `_j2242_title_panel.py --every-frame` paints the same unbordered umber, RGB 48,30,20, on every frame where the title is actually aligned. Changed pixels are that colour only. Frames with no title, and metal frames whose title does not match the aligned mask, are copied unchanged. The title box does not move inside a row.
+
+The four lossless intermediates are FFV1 in RGB. Each file decodes back to the same bytes that were painted. They are not a master and they have no audio.
+
+- `15_likeness_fire`: 95 of 114 frames painted, 19 kept because the title is not on screen yet. Check frame 53, MAE 16.488. SHA-256 `27e334e11f00` prefix, 84,545,944 bytes.
+- `06_same_thing`: 53 of 160 frames painted, 107 kept with no title. The word arrives late. Check frame 134, MAE 6.364. SHA-256 `d561ae545199` prefix, 135,059,338 bytes.
+- `08_looking_path`: 59 of 76 frames painted, 17 kept with no title. Check frame 48, MAE 8.453. SHA-256 `04617128a022` prefix, 75,607,282 bytes.
+- `10_metal_easy`: master frames 10996 through 11037, which is the 42-frame row. Frame 11038 is the safe-path frame and is not in the row. 31 frames painted, 11 kept because the fade does not match the solid title at 1.5 s. Master frame 11017, MAE 20.279. SHA-256 `7da3cc334b60` prefix, 66,328,943 bytes.
+
+Full hashes are in `TITLE_ROWS.json`. The files and the 168×94 stills are in `/Volumes/MiniWork/scratch/J2242-title-rows-v01/`. The rod graphic still crosses the metal panel, because those pixels are part of the graphic.
+
+126 J2242 unit tests OK, 4 of them new. check_all result is in `CHECK_ALL_TITLE_ROWS.txt`. Every painted frame was checked as it was written: changed pixels are umber only, and the words stay. Each lossless file decodes back to those same frames. This is not a motion review, an audio review, or a film approval. No v04 master. Original masters and audio are unchanged. No spend, generation, UAT, R2 or YouTube action. No detached process.
+
+Remaining: the generalized packet mux, preservation and loudness/sync checks, and the mandatory film gates. Then J2243 and Chief review. Continue this PR #542 worktree. Frame 2869 stays out.

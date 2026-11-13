@@ -1,0 +1,144 @@
+{
+  "job": "J2242",
+  "status": "TITLE_PANELS_ON_EVERY_ALIGNED_FRAME",
+  "note_resolved": false,
+  "frame_2869": "out",
+  "letter_row": "04_letter_crosses stays the cream-letter replacement, which has no banner",
+  "rows": [
+    {
+      "frames": 114,
+      "painted": 95,
+      "kept": 19,
+      "box": [
+        576,
+        92,
+        1350,
+        203
+      ],
+      "mae_min": 8.305,
+      "mae_max": 24.186,
+      "kept_reasons": {
+        "no title": 19
+      },
+      "check_frame": 53,
+      "check_alpha_frame": 66,
+      "check_mae": 16.488,
+      "row": "15_likeness_fire",
+      "label": "CRACK \u00b7 FIRE \u00b7 SHOCK",
+      "words": [
+        "CRACK",
+        "FIRE",
+        "SHOCK"
+      ],
+      "intermediate": "/Volumes/MiniWork/scratch/J2242-title-rows-v01/15_likeness_fire.nut",
+      "sha256": "27e334e11f00818496cae23831cbc2a1b6769511ad52b2d555ea9f5b074a2fb1",
+      "bytes": 84545944,
+      "phone_still": "/Volumes/MiniWork/scratch/J2242-title-rows-v01/15_likeness_fire_168.jpg"
+    },
+    {
+      "frames": 160,
+      "painted": 53,
+      "kept": 107,
+      "box": [
+        698,
+        91,
+        1224,
+        205
+      ],
+      "mae_min": 5.297,
+      "mae_max": 9.134,
+      "kept_reasons": {
+        "no title": 107
+      },
+      "check_frame": 134,
+      "check_alpha_frame": 168,
+      "check_mae": 6.364,
+      "row": "06_same_thing",
+      "label": "ELECTRICITY",
+      "words": [
+        "ELECTRICITY"
+      ],
+      "intermediate": "/Volumes/MiniWork/scratch/J2242-title-rows-v01/06_same_thing.nut",
+      "sha256": "d561ae545199c324f078b172fd6d8d98092d71e2720f14fe27e447f0ffc3ab62",
+      "bytes": 135059338,
+      "phone_still": "/Volumes/MiniWork/scratch/J2242-title-rows-v01/06_same_thing_168.jpg"
+    },
+    {
+      "frames": 76,
+      "painted": 59,
+      "kept": 17,
+      "box": [
+        566,
+        93,
+        1354,
+        204
+      ],
+      "mae_min": 7.769,
+      "mae_max": 19.531,
+      "kept_reasons": {
+        "no title": 17
+      },
+      "check_frame": 48,
+      "check_alpha_frame": 60,
+      "check_mae": 8.453,
+      "row": "08_looking_path",
+      "label": "EASIEST PATH DOWN",
+      "words": [
+        "EASIEST",
+        "PATH",
+        "DOWN"
+      ],
+      "intermediate": "/Volumes/MiniWork/scratch/J2242-title-rows-v01/08_looking_path.nut",
+      "sha256": "04617128a0225c32eabef0bf1dffa56dba85574052999776e61cae05f9fcdc23",
+      "bytes": 75607282,
+      "phone_still": "/Volumes/MiniWork/scratch/J2242-title-rows-v01/08_looking_path_168.jpg"
+    },
+    {
+      "frames": 42,
+      "painted": 31,
+      "kept": 11,
+      "box": [
+        582,
+        87,
+        1331,
+        209
+      ],
+      "mae_min": 14.742,
+      "mae_max": 25.406,
+      "kept_reasons": {
+        "unaligned": 11
+      },
+      "check_frame": 11017,
+      "check_mae": 20.279,
+      "master_frames": [
+        10996,
+        11037
+      ],
+      "safe_path_frame_11038": "out",
+      "row": "10_metal_easy",
+      "label": "METAL CONDUCTS",
+      "words": [
+        "METAL",
+        "CONDUCTS"
+      ],
+      "intermediate": "/Volumes/MiniWork/scratch/J2242-title-rows-v01/10_metal_easy.nut",
+      "sha256": "7da3cc334b60b589adab3241a189c8682904915f4c7a53b9cca20f89b0257968",
+      "bytes": 66328943,
+      "phone_still": "/Volumes/MiniWork/scratch/J2242-title-rows-v01/10_metal_easy_168.jpg",
+      "alpha_seek": "1.5"
+    }
+  ],
+  "umber": [
+    48,
+    30,
+    20
+  ],
+  "border": false,
+  "gold_rule": false,
+  "pill_chrome": false,
+  "master_created": false,
+  "final_film_approval": false,
+  "motion_review": false,
+  "audio_review": false,
+  "packet_mux": "OUTSTANDING"
+}
