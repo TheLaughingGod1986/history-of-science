@@ -1079,3 +1079,17 @@ Three picture titles still have no master frame numbers, so they are not in this
 131 J2242 unit tests OK, 5 of them new. `check_all.sh` result is in `CHECK_ALL_PACKET_PLAN.txt`. This is not a motion review, an audio review, or a film approval. No v04 master. Original masters and audio are unchanged. No spend, generation, UAT, R2 or YouTube action. No detached process. H.264 packets, unchanged-frame hashes, loudness and sync are still outstanding.
 
 Remaining: stitch the three partial groups from master pixels, encode each closed group, mux copied packets around them, then preservation, loudness and sync, and the film gates. Place the three unplaced title rows before that mux if they belong on the master. Then J2243 and Chief review. Continue this PR #542 worktree. Frame 2869 stays out.
+
+## Master pixels in the three partial groups — thirtieth run, 13 November 2026
+
+Cursor worker. No master was muxed. `_j2242_stitch_groups.py --render` fills the three groups that the packet plan left short. A timestamp join dropped frame 2870, so v01 and v02 are not used. v03 joins the decoded YUV frames instead. Each kept master frame matches the source framehash. Each replacement frame is unchanged. The pictures have no audio.
+
+- Frames 2718–2887, 170 frames. Frame 2869 is the master picture between the Franklin pieces. SHA-256 `075e16561325345e522b98e020a7dd1910b3e34e6439b23f57adfcd20c0fabe4`.
+- Frames 3168–3343, 176 frames. Frames 3168–3259 are the master picture, then the jar patch. Frame 3353 stays a copied packet, past this group. SHA-256 `2ce4d932995c30f73baea94bdaaa070f06566cb3b82a6ec3615d69d6df27a404`.
+- Frames 11038–11245, 208 frames. The one-title safe path covers 11038–11117. The earlier safe path, which still has two titles, is not in the file. Frames 11118–11245 are the master picture. SHA-256 `9d3daceffd24872e868cde040a08b19bf1c46f212ce2f470444d5aea8877278e`.
+
+The files and clocks are in `/Volumes/MiniWork/scratch/J2242-stitch-v03/`. `STITCH_GROUPS.json` records them. The original clock is in each sidecar. The nut timestamps are not the master clock.
+
+136 J2242 unit tests OK, 5 of them new. `check_all.sh` result is in `CHECK_ALL_STITCH.txt`. This is a pixel check, not a motion review, an audio review, or a film approval. No v04 master. Original masters and audio are unchanged. No spend, generation, UAT, R2 or YouTube action. No detached process.
+
+Remaining: give `15_likeness_fire`, `06_same_thing` and `08_looking_path` master frame numbers if they belong on the master, encode each closed group, mux copied packets and the original audio, then preservation, loudness and sync, and the film gates. Then J2243 and Chief review. Continue this PR #542 worktree. Frame 2869 stays the master picture inside its group.
