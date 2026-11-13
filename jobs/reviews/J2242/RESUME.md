@@ -963,3 +963,35 @@ Remaining: the foil check at f3353, bottom-text reviews, generalized packet
 mux, preservation and loudness/sync checks, and the mandatory film gates.
 Then J2243 and Chief review. Continue this PR #542 worktree. Frame 2869
 stays out.
+
+## Foil check at frame 3353 — twenty-fifth run, 13 November 2026
+
+Cursor worker. Frame 2869 stays out. The 138s jar flip stays inside the
+replacement, and the 140s foil frame stays outside it. `_j2242_foil_check.py`
+reads the original clock and compares the upper band of three master frames
+with the pinned foil-jar and jar-spark plates. The note stays open. This
+envelope is not a splice.
+
+- Master frame 3343, the last frame of replacement 3260–3343, ends at
+  139.625s. It matches foil-jar source 175, MSE 5.667, unique by 118.7.
+  The jar-spark plate is 5943 worse. The still shows that foil-jar tail:
+  a glass jar in a hand, foil at the rim.
+- Master frame 3344 is the next keyframe. It matches jar-spark source 0,
+  MSE 2.129, unique by 10.4.
+- Master frame 3353 is 140s, inside keyframe envelope 3344–3404. It matches
+  jar-spark source 9, MSE 4.541, unique by 199.0. The foil-jar plate is
+  5652 worse. The still shows the spark plate: a foil-lined jar on the
+  bench and a spark at a fingertip. The same still of spark source 9 matches
+  it. Source 9 is 0.375s, inside the plate's existing head.
+
+Replacing 3260–3343 does not cover frame 3353. No new intermediate was
+rendered for this envelope. These are stills and pixel checks, not a motion
+review, an audio review, or a film approval.
+
+109 J2242 unit tests OK. check_all result is in `CHECK_ALL_FOIL.txt`. No v04
+master. Original masters and audio are unchanged. No spend, generation, UAT,
+R2 or YouTube action. No detached process.
+
+Remaining: bottom-text reviews, generalized packet mux, preservation and
+loudness/sync checks, and the mandatory film gates. Then J2243 and Chief
+review. Continue this PR #542 worktree. Frame 2869 stays out.

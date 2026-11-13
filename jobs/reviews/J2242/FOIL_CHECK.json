@@ -1,0 +1,105 @@
+{
+  "job": "J2242",
+  "status": "FOIL_CHECK_DISTINCT",
+  "clock": {
+    "jar_flip_frame": 3305,
+    "foil_frame": 3353,
+    "replacement": [
+      3260,
+      3343
+    ],
+    "replacement_end_s": "139.625",
+    "spark_envelope": [
+      3344,
+      3404
+    ],
+    "jar_flip_inside_replacement": true,
+    "foil_inside_replacement": false,
+    "distinct": true,
+    "note_resolved": false,
+    "splice": false,
+    "frame_2869": "out"
+  },
+  "frames": {
+    "3343": {
+      "plate": "07_foil_jar",
+      "source_frame": 175,
+      "source_frame_unique": true,
+      "best_mse": 5.666586399078369,
+      "plate_margin": 5942.949136257172,
+      "scores": [
+        {
+          "plate": "07_foil_jar",
+          "best": 175,
+          "second": 176,
+          "best_mse": 5.666586399078369,
+          "frame_margin": 118.73088836669922
+        },
+        {
+          "plate": "08_jar_spark",
+          "best": 122,
+          "second": 95,
+          "best_mse": 5948.61572265625,
+          "frame_margin": 4.48095703125
+        }
+      ]
+    },
+    "3344": {
+      "plate": "08_jar_spark",
+      "source_frame": 0,
+      "source_frame_unique": true,
+      "best_mse": 2.129183292388916,
+      "plate_margin": 7879.495328426361,
+      "scores": [
+        {
+          "plate": "08_jar_spark",
+          "best": 0,
+          "second": 1,
+          "best_mse": 2.129183292388916,
+          "frame_margin": 10.441202163696289
+        },
+        {
+          "plate": "07_foil_jar",
+          "best": 172,
+          "second": 173,
+          "best_mse": 7881.62451171875,
+          "frame_margin": 73.0556640625
+        }
+      ]
+    },
+    "3353": {
+      "plate": "08_jar_spark",
+      "source_frame": 9,
+      "source_frame_unique": true,
+      "best_mse": 4.541193008422852,
+      "plate_margin": 5652.329900741577,
+      "scores": [
+        {
+          "plate": "08_jar_spark",
+          "best": 9,
+          "second": 8,
+          "best_mse": 4.541193008422852,
+          "frame_margin": 198.9714813232422
+        },
+        {
+          "plate": "07_foil_jar",
+          "best": 124,
+          "second": 125,
+          "best_mse": 5656.87109375,
+          "frame_margin": 22.18994140625
+        }
+      ]
+    }
+  },
+  "stills": {
+    "master_3343": "/Volumes/MiniWork/scratch/J2242-foil-check-v01/stills/master_1.png",
+    "master_3353": "/Volumes/MiniWork/scratch/J2242-foil-check-v01/stills/master_2.png",
+    "spark_source_9": "/Volumes/MiniWork/scratch/J2242-foil-check-v01/stills/spark_f009.png"
+  },
+  "still_check": "stills and pixel match only; not a motion review or an audio review",
+  "note_resolved": false,
+  "splice": false,
+  "frame_2869": "out",
+  "master_created": false,
+  "final_film_approval": false
+}
