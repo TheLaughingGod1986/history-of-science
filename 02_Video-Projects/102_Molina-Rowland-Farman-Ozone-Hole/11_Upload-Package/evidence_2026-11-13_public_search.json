@@ -1,0 +1,590 @@
+{
+ "pulled": "2026-11-13",
+ "source": "YouTube GB search results and autocomplete; public, no login. Not vidIQ.",
+ "queries": {
+  "hole in the ozone layer": {
+   "suggest": [
+    "hole in the ozone layer",
+    "hole in the ozone layer australia",
+    "hole in the ozone layer 1985",
+    "is there a hole in the ozone layer",
+    "hole in ozone layer in antarctica",
+    "what happened to the hole in the ozone layer",
+    "whatever happened to the hole in the ozone layer"
+   ],
+   "search": [
+    {
+     "id": "5wVJeq4mLL0",
+     "title": "Whatever happened to the hole in the ozone layer? - Stephanie Honchell Smith",
+     "channel": "TED-Ed",
+     "views": "670,049 views",
+     "age": "3 yr ago",
+     "length": "5:13"
+    },
+    {
+     "id": "955p-n3hlLo",
+     "title": "What Happened to the Hole in the Ozone Layer? | NOVA | PBS",
+     "channel": "NOVA PBS Official",
+     "views": "154,697 views",
+     "age": "2 yr ago",
+     "length": "3:14"
+    },
+    {
+     "id": "EmaQVbdd6Ko",
+     "title": "Why Nobody Talks About the Ozone Hole Anymore",
+     "channel": "Astrum Earth",
+     "views": "1,673,345 views",
+     "age": "3 mo ago",
+     "length": "28:20"
+    },
+    {
+     "id": "Q15t5NQ1Aik",
+     "title": "Ozone 101: What Is the Ozone Hole?",
+     "channel": "NASA Goddard",
+     "views": "124,199 views",
+     "age": "4 yr ago",
+     "length": "7:06"
+    },
+    {
+     "id": "_1HqOuelp0M",
+     "title": "What's going on with the ozone layer hole? A scientist explains | The World | ABC NEWS",
+     "channel": "ABC News (Australia)",
+     "views": "122,410 views",
+     "age": "1 mo ago",
+     "length": "6:46"
+    },
+    {
+     "id": "6BUT16jfoKk",
+     "title": "The Ozone Hole: Closing the Gap",
+     "channel": "NASA Earth",
+     "views": "285,619 views",
+     "age": "7 yr ago",
+     "length": "1:56"
+    },
+    {
+     "id": "WLqRBc4oxDk",
+     "title": "What Is The Hole In The Ozone - Part 2 | Environmental Chemistry | Chemistry | FuseSchool",
+     "channel": "FuseSchool - Global Education",
+     "views": "58,333 views",
+     "age": "10 yr ago",
+     "length": "4:22"
+    },
+    {
+     "id": "yuhEB9YvuQM",
+     "title": "The Discovery of the Ozone Hole | AMS OpenMind",
+     "channel": "OpenMind",
+     "views": "6,661 views",
+     "age": "4 yr ago",
+     "length": "2:47"
+    }
+   ]
+  },
+  "ozone layer": {
+   "suggest": [
+    "ozone layer",
+    "ozone layer depletion",
+    "ozone layer drawing",
+    "ozone layer celebrity mein",
+    "ozone layer song",
+    "ozone layer depletion in hindi",
+    "ozone layer project",
+    "ozone layer hole",
+    "ozone layer diagram",
+    "ozone layer of the earth"
+   ],
+   "search": [
+    {
+     "id": "ckULkfv3Hb0",
+     "title": "What Is The Ozone Layer? | Ozone Layer Depletion | Dr Binocs Show |Kids Learning Video|Peekaboo Kidz",
+     "channel": "Peekaboo Kidz",
+     "views": "4,284,034 views",
+     "age": "6 yr ago",
+     "length": "6:49"
+    },
+    {
+     "id": "5wVJeq4mLL0",
+     "title": "Whatever happened to the hole in the ozone layer? - Stephanie Honchell Smith",
+     "channel": "TED-Ed",
+     "views": "670,049 views",
+     "age": "3 yr ago",
+     "length": "5:13"
+    },
+    {
+     "id": "EmaQVbdd6Ko",
+     "title": "Why Nobody Talks About the Ozone Hole Anymore",
+     "channel": "Astrum Earth",
+     "views": "1,673,345 views",
+     "age": "3 mo ago",
+     "length": "28:20"
+    },
+    {
+     "id": "CaLOiGEDPJQ",
+     "title": "Why you don’t hear about the ozone layer anymore",
+     "channel": "Vox",
+     "views": "10,161,545 views",
+     "age": "4 yr ago",
+     "length": "8:35"
+    },
+    {
+     "id": "955p-n3hlLo",
+     "title": "What Happened to the Hole in the Ozone Layer? | NOVA | PBS",
+     "channel": "NOVA PBS Official",
+     "views": "154,697 views",
+     "age": "2 yr ago",
+     "length": "3:14"
+    },
+    {
+     "id": "qX8P61dBSfM",
+     "title": "What is the Ozone Layer?",
+     "channel": "One World Network",
+     "views": "73,528 views",
+     "age": "3 yr ago",
+     "length": "1:18"
+    },
+    {
+     "id": "Q15t5NQ1Aik",
+     "title": "Ozone 101: What Is the Ozone Hole?",
+     "channel": "NASA Goddard",
+     "views": "124,199 views",
+     "age": "4 yr ago",
+     "length": "7:06"
+    },
+    {
+     "id": "GhH77DcEv9M",
+     "title": "A Level Chemistry Revision \"Chlorofluorocarbons and the Ozone Layer\"",
+     "channel": "Freesciencelessons",
+     "views": "71,974 views",
+     "age": "4 yr ago",
+     "length": "5:21"
+    }
+   ]
+  },
+  "ozone hole": {
+   "suggest": [
+    "ozone hole",
+    "ozone hole in antarctica",
+    "ozone hole by dhruv rathee",
+    "ozone hole how we saved the planet",
+    "ozone hole in hindi",
+    "ozone hole over antarctica",
+    "ozone hole in australia",
+    "ozone hole time lapse",
+    "ozone hole explained",
+    "ozone hole formation"
+   ],
+   "search": [
+    {
+     "id": "6BUT16jfoKk",
+     "title": "The Ozone Hole: Closing the Gap",
+     "channel": "NASA Earth",
+     "views": "285,619 views",
+     "age": "7 yr ago",
+     "length": "1:56"
+    },
+    {
+     "id": "5wVJeq4mLL0",
+     "title": "Whatever happened to the hole in the ozone layer? - Stephanie Honchell Smith",
+     "channel": "TED-Ed",
+     "views": "670,049 views",
+     "age": "3 yr ago",
+     "length": "5:13"
+    },
+    {
+     "id": "EmaQVbdd6Ko",
+     "title": "Why Nobody Talks About the Ozone Hole Anymore",
+     "channel": "Astrum Earth",
+     "views": "1,673,345 views",
+     "age": "3 mo ago",
+     "length": "28:20"
+    },
+    {
+     "id": "955p-n3hlLo",
+     "title": "What Happened to the Hole in the Ozone Layer? | NOVA | PBS",
+     "channel": "NOVA PBS Official",
+     "views": "154,697 views",
+     "age": "2 yr ago",
+     "length": "3:14"
+    },
+    {
+     "id": "Q15t5NQ1Aik",
+     "title": "Ozone 101: What Is the Ozone Hole?",
+     "channel": "NASA Goddard",
+     "views": "124,199 views",
+     "age": "4 yr ago",
+     "length": "7:06"
+    },
+    {
+     "id": "CaLOiGEDPJQ",
+     "title": "Why you don’t hear about the ozone layer anymore",
+     "channel": "Vox",
+     "views": "10,161,545 views",
+     "age": "4 yr ago",
+     "length": "8:35"
+    },
+    {
+     "id": "yWgHx0HE8m8",
+     "title": "Something’s Happening to the Ozone Hole",
+     "channel": "Cleo Abram",
+     "views": "8,528,291 views",
+     "age": "2 mo ago",
+     "length": "16:09"
+    },
+    {
+     "id": "ckULkfv3Hb0",
+     "title": "What Is The Ozone Layer? | Ozone Layer Depletion | Dr Binocs Show |Kids Learning Video|Peekaboo Kidz",
+     "channel": "Peekaboo Kidz",
+     "views": "4,284,034 views",
+     "age": "6 yr ago",
+     "length": "6:49"
+    }
+   ]
+  },
+  "how did we find the hole in the ozone layer": {
+   "suggest": [],
+   "search": [
+    {
+     "id": "ckULkfv3Hb0",
+     "title": "What Is The Ozone Layer? | Ozone Layer Depletion | Dr Binocs Show |Kids Learning Video|Peekaboo Kidz",
+     "channel": "Peekaboo Kidz",
+     "views": "4,284,034 views",
+     "age": "6 yr ago",
+     "length": "6:49"
+    },
+    {
+     "id": "5wVJeq4mLL0",
+     "title": "Whatever happened to the hole in the ozone layer? - Stephanie Honchell Smith",
+     "channel": "TED-Ed",
+     "views": "670,049 views",
+     "age": "3 yr ago",
+     "length": "5:13"
+    },
+    {
+     "id": "955p-n3hlLo",
+     "title": "What Happened to the Hole in the Ozone Layer? | NOVA | PBS",
+     "channel": "NOVA PBS Official",
+     "views": "154,697 views",
+     "age": "2 yr ago",
+     "length": "3:14"
+    },
+    {
+     "id": "Q15t5NQ1Aik",
+     "title": "Ozone 101: What Is the Ozone Hole?",
+     "channel": "NASA Goddard",
+     "views": "124,204 views",
+     "age": "4 yr ago",
+     "length": "7:06"
+    },
+    {
+     "id": "CaLOiGEDPJQ",
+     "title": "Why you don’t hear about the ozone layer anymore",
+     "channel": "Vox",
+     "views": "10,161,546 views",
+     "age": "4 yr ago",
+     "length": "8:35"
+    },
+    {
+     "id": "jCtB8gUzxJU",
+     "title": "The Ozone Layer: Depletion, Discovery and Recovery",
+     "channel": "Half Life",
+     "views": "180 views",
+     "age": "1 mo ago",
+     "length": "4:08"
+    },
+    {
+     "id": "EmaQVbdd6Ko",
+     "title": "Why Nobody Talks About the Ozone Hole Anymore",
+     "channel": "Astrum Earth",
+     "views": "1,673,349 views",
+     "age": "3 mo ago",
+     "length": "28:20"
+    },
+    {
+     "id": "7QGD-KiqKdE",
+     "title": "Discovery of the ozone hole | Natural History Museum",
+     "channel": "Natural History Museum",
+     "views": "59,486 views",
+     "age": "14 yr ago",
+     "length": "2:38"
+    }
+   ]
+  },
+  "How Did We Find the Hole in the Ozone Layer?": {
+   "suggest": [],
+   "search": [
+    {
+     "id": "955p-n3hlLo",
+     "title": "What Happened to the Hole in the Ozone Layer? | NOVA | PBS",
+     "channel": "NOVA PBS Official",
+     "views": "154,697 views",
+     "age": "2 yr ago",
+     "length": "3:14"
+    },
+    {
+     "id": "yuhEB9YvuQM",
+     "title": "The Discovery of the Ozone Hole | AMS OpenMind",
+     "channel": "OpenMind",
+     "views": "6,661 views",
+     "age": "4 yr ago",
+     "length": "2:47"
+    },
+    {
+     "id": "5wVJeq4mLL0",
+     "title": "Whatever happened to the hole in the ozone layer? - Stephanie Honchell Smith",
+     "channel": "TED-Ed",
+     "views": "670,049 views",
+     "age": "3 yr ago",
+     "length": "5:13"
+    },
+    {
+     "id": "ckULkfv3Hb0",
+     "title": "What Is The Ozone Layer? | Ozone Layer Depletion | Dr Binocs Show |Kids Learning Video|Peekaboo Kidz",
+     "channel": "Peekaboo Kidz",
+     "views": "4,284,034 views",
+     "age": "6 yr ago",
+     "length": "6:49"
+    },
+    {
+     "id": "Q15t5NQ1Aik",
+     "title": "Ozone 101: What Is the Ozone Hole?",
+     "channel": "NASA Goddard",
+     "views": "124,205 views",
+     "age": "4 yr ago",
+     "length": "7:06"
+    },
+    {
+     "id": "HiQTs2omG4M",
+     "title": "How did we discover the hole in the ozone layer?",
+     "channel": "NERCscience",
+     "views": "462 views",
+     "age": "8 yr ago",
+     "length": "1:58"
+    },
+    {
+     "id": "GS0dilngPws",
+     "title": "How the ozone layer was discovered - Series 2 Episode 3",
+     "channel": "Science Museum",
+     "views": "3,234 views",
+     "age": "7 yr ago",
+     "length": "2:35"
+    },
+    {
+     "id": "Th18q0CFlZY",
+     "title": "What Happens If The Ozone Layer Of The Earth Disappears?",
+     "channel": "What Happens If ?",
+     "views": "21,043 views",
+     "age": "5 yr ago",
+     "length": "2:11"
+    }
+   ]
+  },
+  "The Ozone Hole (Found by an Instrument From the 1950s)": {
+   "suggest": [],
+   "search": [
+    {
+     "id": "yuhEB9YvuQM",
+     "title": "The Discovery of the Ozone Hole | AMS OpenMind",
+     "channel": "OpenMind",
+     "views": "6,661 views",
+     "age": "4 yr ago",
+     "length": "2:47"
+    },
+    {
+     "id": "955p-n3hlLo",
+     "title": "What Happened to the Hole in the Ozone Layer? | NOVA | PBS",
+     "channel": "NOVA PBS Official",
+     "views": "154,697 views",
+     "age": "2 yr ago",
+     "length": "3:14"
+    },
+    {
+     "id": "7QGD-KiqKdE",
+     "title": "Discovery of the ozone hole | Natural History Museum",
+     "channel": "Natural History Museum",
+     "views": "59,486 views",
+     "age": "14 yr ago",
+     "length": "2:38"
+    },
+    {
+     "id": "6BUT16jfoKk",
+     "title": "The Ozone Hole: Closing the Gap",
+     "channel": "NASA Earth",
+     "views": "285,622 views",
+     "age": "7 yr ago",
+     "length": "1:56"
+    },
+    {
+     "id": "CM9R7tAiEo0",
+     "title": "The Antarctic ozone hole was discovered in 1985",
+     "channel": "Daniel Izzo",
+     "views": "10,640 views",
+     "age": "19 yr ago",
+     "length": "0:54"
+    },
+    {
+     "id": "GS0dilngPws",
+     "title": "How the ozone layer was discovered - Series 2 Episode 3",
+     "channel": "Science Museum",
+     "views": "3,234 views",
+     "age": "7 yr ago",
+     "length": "2:35"
+    },
+    {
+     "id": "AU0eNa4GrgU",
+     "title": "The Antarctic Ozone Hole -- From Discovery to Recovery, a Scientific Journey",
+     "channel": "UN Environment Programme",
+     "views": "169,338 views",
+     "age": "15 yr ago",
+     "length": "16:37"
+    },
+    {
+     "id": "FNiJTXoiEF0",
+     "title": "The hole in the sky: how scientists found the ozone hole",
+     "channel": "Corkboard Files",
+     "views": "3 views",
+     "age": "2 wk ago",
+     "length": "13:55"
+    }
+   ]
+  },
+  "Is the Hole in the Ozone Layer Still There?": {
+   "suggest": [
+    "is there still a hole in the ozone layer"
+   ],
+   "search": [
+    {
+     "id": "955p-n3hlLo",
+     "title": "What Happened to the Hole in the Ozone Layer? | NOVA | PBS",
+     "channel": "NOVA PBS Official",
+     "views": "154,697 views",
+     "age": "2 yr ago",
+     "length": "3:14"
+    },
+    {
+     "id": "5wVJeq4mLL0",
+     "title": "Whatever happened to the hole in the ozone layer? - Stephanie Honchell Smith",
+     "channel": "TED-Ed",
+     "views": "670,049 views",
+     "age": "3 yr ago",
+     "length": "5:13"
+    },
+    {
+     "id": "BntIinjPNRw",
+     "title": "NASA, NOAA 2026 Ozone Hole Update",
+     "channel": "NASA Goddard",
+     "views": "238,984 views",
+     "age": "8 days ago",
+     "length": "0:47"
+    },
+    {
+     "id": "CaLOiGEDPJQ",
+     "title": "Why you don’t hear about the ozone layer anymore",
+     "channel": "Vox",
+     "views": "10,161,545 views",
+     "age": "4 yr ago",
+     "length": "8:35"
+    },
+    {
+     "id": "mYJHtauiP9Q",
+     "title": "Why You Don’t Hear About the Hole in the Ozone Layer Anymore",
+     "channel": "JRE Clips",
+     "views": "2,460,969 views",
+     "age": "6 yr ago",
+     "length": "11:53"
+    },
+    {
+     "id": "EmaQVbdd6Ko",
+     "title": "Why Nobody Talks About the Ozone Hole Anymore",
+     "channel": "Astrum Earth",
+     "views": "1,673,345 views",
+     "age": "3 mo ago",
+     "length": "28:20"
+    },
+    {
+     "id": "0ZfBgjUnXIs",
+     "title": "What Ever Happened To The Hole In The Ozone Layer?",
+     "channel": "Seeker",
+     "views": "2,494,747 views",
+     "age": "10 yr ago",
+     "length": "4:30"
+    },
+    {
+     "id": "yWgHx0HE8m8",
+     "title": "Something’s Happening to the Ozone Hole",
+     "channel": "Cleo Abram",
+     "views": "8,528,291 views",
+     "age": "2 mo ago",
+     "length": "16:09"
+    }
+   ]
+  },
+  "Why Did a Satellite Miss the Ozone Hole?": {
+   "suggest": [],
+   "search": [
+    {
+     "id": "QEWaopshJ-U",
+     "title": "What happens when 50K satellites die? | About That",
+     "channel": "CBC News",
+     "views": "116,207 views",
+     "age": "2 yr ago",
+     "length": "12:01"
+    },
+    {
+     "id": "Bbqo7QJpfa0",
+     "title": "The Ozone Hole: The Data NASA’s Computers Discarded",
+     "channel": "Singularity Rewound",
+     "views": "2 views",
+     "age": "17 hr ago",
+     "length": "8:05"
+    },
+    {
+     "id": "5wVJeq4mLL0",
+     "title": "Whatever happened to the hole in the ozone layer? - Stephanie Honchell Smith",
+     "channel": "TED-Ed",
+     "views": "670,049 views",
+     "age": "3 yr ago",
+     "length": "5:13"
+    },
+    {
+     "id": "BntIinjPNRw",
+     "title": "NASA, NOAA 2026 Ozone Hole Update",
+     "channel": "NASA Goddard",
+     "views": "238,984 views",
+     "age": "8 days ago",
+     "length": "0:47"
+    },
+    {
+     "id": "yuhEB9YvuQM",
+     "title": "The Discovery of the Ozone Hole | AMS OpenMind",
+     "channel": "OpenMind",
+     "views": "6,661 views",
+     "age": "4 yr ago",
+     "length": "2:47"
+    },
+    {
+     "id": "Q15t5NQ1Aik",
+     "title": "Ozone 101: What Is the Ozone Hole?",
+     "channel": "NASA Goddard",
+     "views": "124,205 views",
+     "age": "4 yr ago",
+     "length": "7:06"
+    },
+    {
+     "id": "EJK1Il6aMS0",
+     "title": "Whatever Happened to the Ozone Hole? What Satellites Found",
+     "channel": "Science Moved On",
+     "views": "178 views",
+     "age": "3 wk ago",
+     "length": "4:22"
+    },
+    {
+     "id": "yWgHx0HE8m8",
+     "title": "Something’s Happening to the Ozone Hole",
+     "channel": "Cleo Abram",
+     "views": "8,528,291 views",
+     "age": "2 mo ago",
+     "length": "16:09"
+    }
+   ]
+  }
+ }
+}
