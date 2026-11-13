@@ -802,3 +802,37 @@ Remaining: the Franklin tail, the four table lead-in frames, SAFE PATH DOWN,
 the foil check at f3353, bottom-text reviews, generalized packet mux,
 preservation and loudness/sync checks, and the mandatory film gates. Then
 J2243 and Chief review. Continue this PR #542 worktree.
+
+## Franklin forward hold — twentieth run, 13 November 2026
+
+Cursor worker. `outside_hold` refuses the whole Franklin row: looking forward
+for a blocked near-tie, then holding an earlier picture, makes the schedule
+backward. `_j2242_franklin_tail.py` does not look forward. A near-tie repeats
+the nearest earlier unique source frame only when that frame is neither
+candidate. A backward hold is refused. Unique frames keep their winner. The
+rendered prefix, source frames 0–146, is unchanged and was not rendered again.
+
+Two clean-plate spans, with no caption on them (the card already ended at
+frame 2813):
+
+- Master frames 2865–2867, 3 frames. Local 147 repeats source 146. Sources
+  147 and 148 stay unused. SHA-256
+  `b34d2e629ce68d1f5189120a0e87290ef48807a0dcabc27c919bfc85a7fcb0c6`.
+- Master frames 2870–2887, 18 frames. Locals 152–157 repeat source 148.
+  Their own winners and runners stay unused. SHA-256
+  `0bc4fc2b3c0bf3476f09c5637cce4789422e8d921f732fbd8f8c5b3809cb2671`.
+
+Original presentation timestamps and durations match. Every decoded frame
+matches the selected clean source, so the old caption is not on these
+frames. Master frames 2868 and 2869 stay out: the nearest earlier unique
+picture is itself one of the two candidates. These are pixel checks, not a
+motion review, an audio review, or a film approval.
+
+90 J2242 unit tests OK. check_all ALL CHECKS PASS. No v04 master. Original
+masters and audio are unchanged. No spend, generation, UAT, R2 or YouTube
+action. No detached process.
+
+Remaining: master frames 2868–2869, the four table lead-in frames, SAFE PATH
+DOWN, the foil check at f3353, bottom-text reviews, generalized packet mux,
+preservation and loudness/sync checks, and the mandatory film gates. Then
+J2243 and Chief review. Continue this PR #542 worktree.
