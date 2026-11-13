@@ -4,7 +4,7 @@
   "long_title": "Why Vaccines Are Named After a Cow",
   "channel": "@HistoryOfScienceYT",
   "affiliate": null,
-  "note": "Repointed to live scheduled v04 cLKDiYP55J8 (J1219 swap from -I_GHK-GcFs) and v05 xgx2lYHhYZM (J1222 swap from 4WUs0beKn0A) per J1258 (Chief h09). Registered in HOS and OWB social/hos/UPLOADS.json with long=ETynHpIYLeY; Buffer held until each Short goes public. Set Studio Related -> ETynHpIYLeY once that long is public on Thu 12 Nov 2026 18:00Z, before Fri 13 Nov 11:30Z (J0875).",
+  "note": "Repointed to live scheduled v04 cLKDiYP55J8 (J1219 swap from -I_GHK-GcFs) and v05 xgx2lYHhYZM (J1222 swap from 4WUs0beKn0A) per J1258 (Chief h09). Registered in HOS and OWB social/hos/UPLOADS.json with long=ETynHpIYLeY. Studio Related -> ETynHpIYLeY set and read back on both cLKDiYP55J8 and xgx2lYHhYZM on 13 Nov 2026 (J0875).",
   "shorts": [
     {
       "id": "s04_smallpox_test",
@@ -37,9 +37,9 @@
         "superseded_by": "cLKDiYP55J8",
         "job": "J1219"
       },
-      "related": null,
-      "visibility": "private",
-      "published_now": false,
+      "related": "ETynHpIYLeY",
+      "visibility": "public",
+      "published_now": true,
       "go": null
     },
     {
@@ -73,7 +73,7 @@
         "superseded_by": "xgx2lYHhYZM",
         "job": "J1222"
       },
-      "related": null,
+      "related": "ETynHpIYLeY",
       "visibility": "private",
       "published_now": false,
       "go": null
