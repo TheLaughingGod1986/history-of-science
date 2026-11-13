@@ -930,3 +930,36 @@ Remaining: the duplicate SAFE PATH title, the foil check at f3353,
 bottom-text reviews, generalized packet mux, preservation and loudness/sync
 checks, and the mandatory film gates. Then J2243 and Chief review. Continue
 this PR #542 worktree. Frame 2869 stays out.
+
+## One SAFE PATH title — twenty-fourth run, 13 November 2026
+
+Cursor worker. Frame 2869 stays out. The v12 card draws SAFE PATH DOWN in
+x 640–1280, y 115–182. Body frame 0 is that field before the title fades in.
+On every later frame in this window the corners of the box are still that
+field (maximum luma MSE 0.770) and the centre is the title (held-frame centre
+MSE at least 2808.98). The steeple stays outside the box. `_j2242_safe_path_title.py`
+copies body frame 0 into a chroma-aligned box, y 114–182, and composites the
+existing bottom card. The row above the ink is included so a 4:2:0 sample does
+not change it.
+
+- `/Volumes/MiniWork/scratch/J2242-safe-path-v02/safe_path.nut`
+  SHA-256 `7ef30a0f50982fe4e58e4f9f6a112937c5e688cf20958f2b0229cbd8d42264cf`
+
+Original presentation timestamps and durations match. The picture above the
+caption matches the cleared field. The first fade frame stays clear. On local
+frame 70 the cleared box matches body frame 0 at MSE 0, and the picture
+outside the box matches the titled body at MSE 0.
+
+Stills, not a motion review or an audio review: local frame 24 is the brown
+lead-in, and local frame 70 is the steeple. Each shows one SAFE PATH DOWN,
+the bottom card. The upper title is gone. The card is readable at 168×94.
+This is one label on these stills. It is not a film approval.
+
+104 J2242 unit tests OK. check_all ALL CHECKS PASS. No v04 master. Original
+masters and audio are unchanged. No spend, generation, UAT, R2 or YouTube
+action. No detached process.
+
+Remaining: the foil check at f3353, bottom-text reviews, generalized packet
+mux, preservation and loudness/sync checks, and the mandatory film gates.
+Then J2243 and Chief review. Continue this PR #542 worktree. Frame 2869
+stays out.
