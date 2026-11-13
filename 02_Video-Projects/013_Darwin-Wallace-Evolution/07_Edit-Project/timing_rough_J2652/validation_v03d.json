@@ -1,0 +1,33 @@
+{
+  "ffprobe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_type": "video",
+        "width": 960,
+        "height": 540,
+        "r_frame_rate": "50/1"
+      },
+      {
+        "codec_type": "audio",
+        "r_frame_rate": "0/0"
+      },
+      {
+        "codec_type": "subtitle",
+        "r_frame_rate": "0/0"
+      }
+    ],
+    "format": {
+      "duration": "515.000000"
+    }
+  },
+  "full_decode_exit": 0,
+  "timing_checker_passed": true,
+  "independent_tests": 5,
+  "repository_checks": "ALL CHECKS PASS",
+  "still_sheets_inspected": 6,
+  "audio_perceived": false,
+  "motion_perceived": false,
+  "film_approved": false
+}
