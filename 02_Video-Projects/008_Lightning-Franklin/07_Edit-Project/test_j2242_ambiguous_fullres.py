@@ -5,7 +5,9 @@ import numpy as np
 import json
 from pathlib import Path
 
-from _j2242_ambiguous_fullres import accepted_fullres_indices, judge_row, rank_upper_band
+from _j2242_ambiguous_fullres import (
+    accepted_fullres_indices, judge_row, rank_upper_band, resolve_near_tie, same_picture,
+)
 from _j2242_fullres_caption import prepare_fullres_row
 
 
@@ -111,6 +113,25 @@ class FullResCaptionMap(unittest.TestCase):
                 accepted_fullres_indices(by_name[name])
         with self.assertRaises(ValueError):
             prepare_fullres_row(mapped, by_name['12_steeple_fire'])
+
+    def test_near_tie_resolves_only_when_the_source_frames_match(self):
+        self.assertTrue(same_picture(0.05))
+        self.assertFalse(same_picture(0.1))
+        self.assertFalse(resolve_near_tie(0.04, 1.39))
+        with self.assertRaises(ValueError):
+            resolve_near_tie(0.2, 0.01)
+        with self.assertRaises(ValueError):
+            same_picture(-0.1)
+
+    def test_measured_near_ties_are_different_pictures(self):
+        path = Path(__file__).resolve().parents[3] / 'jobs/reviews/J2242/NEAR_TIE_SOURCE_PAIRS.json'
+        data = json.loads(path.read_text())
+        self.assertEqual(data['status'], 'NEAR_TIE_SOURCE_PAIRS_DIFFER')
+        self.assertGreaterEqual(len(data['pairs']), 16)
+        for pair in data['pairs']:
+            self.assertLess(pair['margin'], 0.1)
+            self.assertFalse(resolve_near_tie(pair['margin'], pair['source_pair_mse']))
+            self.assertGreaterEqual(pair['source_pair_mse'], 0.1)
 
 
 if __name__ == '__main__':

@@ -700,3 +700,30 @@ card, the four table lead-in frames, SAFE PATH DOWN, the foil check at
 f3353, bottom-text reviews, generalized packet mux, preservation and
 loudness/sync checks, and the mandatory film gates. Then J2243 and Chief
 review. Continue this PR #542 worktree.
+
+## Near-tie source pairs differ — seventeenth run, 13 November 2026
+
+Cursor worker. The sixteen full-resolution near-ties were compared as source
+pictures, not as another guess at the master. Each pair is the winning source
+frame and its runner-up, in the same upper 1920×720 band. `same_picture`
+accepts a pair only when that difference is below 0.1 per-pixel MSE, the
+margin that already makes a winner unique. Every measured pair fails.
+
+The smallest difference is 0.197, on Franklin master frame 2872 (source
+frames 154 and 156). The knuckle near-tie at master frame 7777 differs by
+4.054. Tower frames 274, 275 and 278 differ by 1.28 to 1.40. Sentry frame
+4673 differs by 0.800. Royal Society frames 9304 and 9332 differ by 0.825
+and 0.575. `NEAR_TIE_SOURCE_PAIRS.json` lists all sixteen. None is
+reconstructed.
+
+`resolve_near_tie` refuses a unique frame and refuses these pairs. The
+uniqueness rule is unchanged. The sentry, knuckle, royal-society and tower
+opening cards stay out, as do Franklin frames 2865–2887 and table frames
+423–426. No v04 master. Original masters and audio are unchanged. No spend,
+generation, UAT, R2 or YouTube action. No detached process.
+
+Remaining: those caption cards by a method other than picking between
+different source frames, the four table lead-in frames, SAFE PATH DOWN, the
+foil check at f3353, bottom-text reviews, generalized packet mux,
+preservation and loudness/sync checks, and the mandatory film gates. Then
+J2243 and Chief review. Continue this PR #542 worktree.

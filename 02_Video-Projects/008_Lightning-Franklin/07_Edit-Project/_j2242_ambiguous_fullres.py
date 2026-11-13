@@ -45,6 +45,30 @@ def rank_upper_band(master, source):
     return ranked
 
 
+def same_picture(pair_mse, min_margin=MIN_MARGIN):
+    """True only when two source frames differ by less than the uniqueness margin.
+
+    A near-tie may use either index only in that case, because the plate does
+    not change. A larger pair difference means the candidates are different
+    pictures, and the frame stays unreconstructed.
+    """
+    if type(pair_mse) is not float and type(pair_mse) is not int:
+        raise ValueError('Source-pair MSE must be a number')
+    if pair_mse < 0:
+        raise ValueError('Source-pair MSE cannot be negative')
+    return float(pair_mse) < min_margin
+
+
+def resolve_near_tie(margin, pair_mse, min_margin=MIN_MARGIN):
+    """Return False when a weak runner-up is a different source picture.
+
+    A frame that already clears the margin does not need this exception.
+    """
+    if margin >= min_margin:
+        raise ValueError('Unique frame does not need a near-tie exception')
+    return same_picture(pair_mse, min_margin)
+
+
 def accepted_fullres_indices(row, max_mse=MAX_MSE, min_margin=MIN_MARGIN):
     """Return a full-resolution schedule when every frame is uniquely identified.
 
