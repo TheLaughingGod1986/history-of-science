@@ -652,3 +652,51 @@ Remaining: five ambiguous caption rows, the four table lead-in frames, SAFE
 PATH DOWN, the foil check at f3353, bottom-text reviews, generalized packet
 mux, preservation and loudness/sync checks, and the mandatory film gates.
 Then J2243 and Chief review. Continue this PR #542 worktree.
+
+## Unique full-resolution spans — sixteenth run, 13 November 2026
+
+Cursor worker. The earlier note that `02_tower_tilt`, `04_franklin_watches`
+and `02_sentry_box` differ from their named plates by thousands of MSE was
+wrong. Full-resolution upper-band search against those same plates gives a
+best per-pixel MSE of 5.374, 7.424 and 8.323. `THREE_ROW_FULLRES.json` records
+every frame. The plates are the right sources. What still fails the existing
+rule is a runner-up margin under 0.1 on a few frames. That rule is unchanged.
+
+`_j2242_unique_spans.py` reconstructs only a contiguous span in which every
+frame is unique, and only when a later or earlier near-tie is still present
+so a finished row cannot be shortened by silence. Two spans passed:
+
+- `04_franklin_watches` master frames 2718–2864, source frames 0–146, 147
+  frames. The whole BENJAMIN FRANKLIN / PHILADELPHIA card sits inside it,
+  with a clear tail through 2864. Frames 2865–2887 stay out: nine of them
+  are near-ties, the closest margin 0.004.
+- `02_tower_tilt` master frames 347–422, source frames 75–150, 76 frames.
+  This is the complete ON THE ROOF card. Frames 272–346 stay out because
+  THE ANSWER IS contains three near-ties.
+
+`02_sentry_box` has one near-tie on local frame 2, inside THE SENTRY-BOX.
+`02_knuckle_spark` has one on local frame 29, inside A SPARK.
+`14_royal_society` has two, on local frames 1 and 29, inside THE ROYAL
+SOCIETY. Neighbours do not force a single index on those frames, because a
+repeat of the previous source frame stays monotonic. All three cards stay
+unrendered.
+
+Intermediates, hashes and clocks:
+
+- `/Volumes/MiniWork/scratch/J2242-unique-spans-v01/04_franklin_watches/caption_composite.nut`
+  SHA-256 `17163f3e57e07c6a0006ee2087ed8322166d7f33648c603fa93e784765af9c0c`
+- `/Volumes/MiniWork/scratch/J2242-unique-spans-v01/02_tower_tilt/caption_composite.nut`
+  SHA-256 `2fb23d65d70a60a67796ec9c1a1c719a4a9dd021807581ecd81dda40041b69a2`
+
+Both keep original presentation timestamps and durations. The picture above
+the caption matches the clean source. Midpoint stills, including 168×94,
+read BENJAMIN FRANKLIN / PHILADELPHIA and ON THE ROOF. Those are stills, not
+a motion review, an audio review, or a film approval. No v04 master. Original
+masters and audio are unchanged. No spend, generation, UAT, R2 or YouTube
+action. No detached process.
+
+Remaining: the sentry, knuckle and royal-society cards, the tower opening
+card, the four table lead-in frames, SAFE PATH DOWN, the foil check at
+f3353, bottom-text reviews, generalized packet mux, preservation and
+loudness/sync checks, and the mandatory film gates. Then J2243 and Chief
+review. Continue this PR #542 worktree.
