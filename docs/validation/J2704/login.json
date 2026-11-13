@@ -1,0 +1,6 @@
+{
+  "check": "actual operator password multipart form login",
+  "status": 303,
+  "location": "/",
+  "session_cookie_issued": true
+}
