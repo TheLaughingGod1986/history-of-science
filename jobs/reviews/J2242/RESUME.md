@@ -727,3 +727,40 @@ different source frames, the four table lead-in frames, SAFE PATH DOWN, the
 foil check at f3353, bottom-text reviews, generalized packet mux,
 preservation and loudness/sync checks, and the mandatory film gates. Then
 J2243 and Chief review. Continue this PR #542 worktree.
+
+## Centre-window confirmation — eighteenth run, 13 November 2026
+
+Cursor worker. The sixteen near-ties were scored again on a window fixed
+before the scores: the central half of the upper band, x=480, y=180,
+960×360. A frame is confirmed only when that window's error on the existing
+full-band winner is at most 9 and at least 0.1 under the recorded runner-up.
+The runner-up is never adopted. Full-band alignment was checked against the
+recorded error before any window score was kept.
+
+Five frames confirm. Only Royal Society has every weak frame confirmed
+(master 9304, window margin 0.318; master 9332, window margin 0.238). That
+row is now a 127-frame intermediate:
+
+- `/Volumes/MiniWork/scratch/J2242-royal-subject-v01/caption_composite.nut`
+  SHA-256 `4774997f245ae2fa25c42d67b879fad305af82ebd3dda3fc11610a66f941a056`
+
+Original presentation timestamps and durations match. The picture above the
+caption matches the clean source, and the 31-frame clear tail matches it
+too. A midpoint still reads THE ROYAL SOCIETY. That is a still, not a motion
+review, an audio review, or a film approval.
+
+Franklin frames 2865, 2868 and 2871 also confirm, but 2869 does not, and the
+window prefers the other source picture there. Those frames stay out. Tower
+274, 275 and 278, sentry 4673, and knuckle 7777 stay out; on the knuckle
+frame the window prefers the runner-up by 1.019 and the winner was not
+switched. The uniqueness rule on the full band is unchanged.
+
+80 unit tests OK. check_all ALL CHECKS PASS. No v04 master. Original masters
+and audio are unchanged. No spend, generation, UAT, R2 or YouTube action.
+No detached process.
+
+Remaining: the sentry, knuckle and tower-opening cards, the Franklin tail,
+the four table lead-in frames, SAFE PATH DOWN, the foil check at f3353,
+bottom-text reviews, generalized packet mux, preservation and loudness/sync
+checks, and the mandatory film gates. Then J2243 and Chief review. Continue
+this PR #542 worktree.
