@@ -995,3 +995,35 @@ R2 or YouTube action. No detached process.
 Remaining: bottom-text reviews, generalized packet mux, preservation and
 loudness/sync checks, and the mandatory film gates. Then J2243 and Chief
 review. Continue this PR #542 worktree. Frame 2869 stays out.
+
+## Ten code-graphic titles — twenty-sixth run, 13 November 2026
+
+Cursor worker. Frame 2869 stays out. `_j2242_bottom_text.py` reads the ten
+code-graphic rows from `reconcile_bottom_text()`. None of them has a side
+label, so the 32 caption cards do not cover them. Safe path stays its own
+title row. One midpoint frame of master v03 was decoded for each row.
+A frame is a flat field when its luma mean is 70–95 and its standard
+deviation is at most 26. A bottom panel would be a flat fill in rows
+760–999 on a picture. None of these midpoints has one.
+
+Flat fields, where the brown diagram is the background:
+
+- `14_likeness_pairs`, frame 3955. The still reads SAME COLOUR · CROOKED LINES at the top.
+- `03_rod_cloud`, frame 4898. The still reads DRAWING CHARGE FROM CLOUD at the bottom.
+- `15_wet_dry`, frame 6410. The still reads WET TWINE · DRY SILK.
+- `08_teach_charge`, frame 8506. The still reads NO BOLT, JUST CHARGE.
+- `09_wood_vs_metal`, frame 10913. The still reads WOOD AND STONE RESIST.
+
+Pictures with no bottom panel:
+
+- `15_likeness_fire`, frame 4073. The still reads CRACK · FIRE · SHOCK over the picture. A gold line frames the diagram.
+- `04_letter_crosses`, frame 5021. The still reads PHILADELPHIA TO PARIS over the ship, and the two boxes read PHILADELPHIA and PARIS. That is three labels at once. This is the current master, not the separate letter intermediate.
+- `06_same_thing`, frame 8268. The midpoint has line diagrams and no title. A later still in the same row reads ELECTRICITY over the picture, still with no panel.
+- `08_looking_path`, frame 10793. The still reads EASIEST PATH DOWN over cloud. An earlier frame of the row has no title.
+- `10_metal_easy`, frame 11017. The still reads METAL CONDUCTS over the brick.
+
+Every title that was read is four words or fewer. The five picture rows are the ones that still match the note about text over a moving picture with no background. The note stays open. These are stills and pixel checks, not a motion review, an audio review, or a film approval.
+
+116 J2242 unit tests OK. check_all result is in `CHECK_ALL_BOTTOM_TEXT.txt`. No v04 master. Original masters and audio are unchanged. No spend, generation, UAT, R2 or YouTube action. No detached process.
+
+Remaining: a background behind the five picture titles, the generalized packet mux, preservation and loudness/sync checks, and the mandatory film gates. Then J2243 and Chief review. Continue this PR #542 worktree. Frame 2869 stays out.
