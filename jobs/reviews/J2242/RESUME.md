@@ -1061,3 +1061,21 @@ Full hashes are in `TITLE_ROWS.json`. The files and the 168×94 stills are in `/
 126 J2242 unit tests OK, 4 of them new. check_all result is in `CHECK_ALL_TITLE_ROWS.txt`. Every painted frame was checked as it was written: changed pixels are umber only, and the words stay. Each lossless file decodes back to those same frames. This is not a motion review, an audio review, or a film approval. No v04 master. Original masters and audio are unchanged. No spend, generation, UAT, R2 or YouTube action. No detached process.
 
 Remaining: the generalized packet mux, preservation and loudness/sync checks, and the mandatory film gates. Then J2243 and Chief review. Continue this PR #542 worktree. Frame 2869 stays out.
+
+## Closed-IDR packet plan — twenty-ninth run, 13 November 2026
+
+Cursor worker. Frame 2869 stays out. No master was muxed. `_j2242_packet_mux.py --plan` reads the 113 IDR samples proved in `SOURCE_PREFLIGHT.json` and the placed intermediates. A changed frame expands to its whole IDR group. Frames outside those groups stay copied source packets. Replacement timestamps copy the original PTS and duration, including a 1024-tick step, and never use `setpts=N/24`.
+
+41 placed changes become 35 groups. 4,569 frames would be re-encoded. 8,354 frames stay copied packets. 32 groups already have pixels for every frame. Three groups still need source pixels stitched in before an encode:
+
+- Frames 2718–2887. The Franklin pieces stop around frame 2869. That one frame stays the master picture.
+- Frames 3168–3343. The jar patch is 3260–3343. Frames 3168–3259 stay the master picture. Frame 3353 stays a copied packet, past this group.
+- Frames 11038–11245. The safe-path intermediate is 11038–11117. Frames 11118–11245 stay the master picture. Frame 11118 is not in the intermediate.
+
+The seven job groups are closed IDR groups: 423–544, 744–839, 2506–2665, 3168–3343, 4511–4670, 4977–5077 and 11358–11492. The 0:51 night street, frames 1129–1231, is a copied packet run. The rejected jar patch is not in the plan.
+
+Three picture titles still have no master frame numbers, so they are not in this plan: `15_likeness_fire`, `06_same_thing` and `08_looking_path`. Metal is in it, frames 10996–11037. The letter row stays the cream-letter intermediate.
+
+131 J2242 unit tests OK, 5 of them new. `check_all.sh` result is in `CHECK_ALL_PACKET_PLAN.txt`. This is not a motion review, an audio review, or a film approval. No v04 master. Original masters and audio are unchanged. No spend, generation, UAT, R2 or YouTube action. No detached process. H.264 packets, unchanged-frame hashes, loudness and sync are still outstanding.
+
+Remaining: stitch the three partial groups from master pixels, encode each closed group, mux copied packets around them, then preservation, loudness and sync, and the film gates. Place the three unplaced title rows before that mux if they belong on the master. Then J2243 and Chief review. Continue this PR #542 worktree. Frame 2869 stays out.

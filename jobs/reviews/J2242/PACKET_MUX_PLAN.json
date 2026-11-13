@@ -1,0 +1,723 @@
+{
+  "job": "J2242",
+  "status": "PACKET_PLAN_ONLY",
+  "idr_samples": 113,
+  "idr_proof": "actual IDR NALs in SOURCE_PREFLIGHT",
+  "changes": 41,
+  "envelopes": [
+    {
+      "first": 0,
+      "last": 141,
+      "frames": 142,
+      "changed_frames": 142,
+      "changed": [
+        {
+          "name": "OPENING_COMPOSITE_INTERMEDIATE_ONLY",
+          "first": 0,
+          "last": 141,
+          "frames": 142,
+          "source": "OPENING_COMPOSITE.json"
+        }
+      ],
+      "stitch_source_frames": [],
+      "pixels_complete": true,
+      "h264_packets": "OUTSTANDING"
+    },
+    {
+      "first": 272,
+      "last": 422,
+      "frames": 151,
+      "changed_frames": 151,
+      "changed": [
+        {
+          "name": "02_tower_tilt",
+          "first": 347,
+          "last": 422,
+          "frames": 76,
+          "source": "UNIQUE_SPANS.json"
+        },
+        {
+          "name": "02_tower_tilt",
+          "first": 272,
+          "last": 346,
+          "frames": 75,
+          "source": "OUTSIDE_HOLD.json"
+        }
+      ],
+      "stitch_source_frames": [],
+      "pixels_complete": true,
+      "h264_packets": "OUTSTANDING"
+    },
+    {
+      "first": 423,
+      "last": 544,
+      "frames": 122,
+      "changed_frames": 122,
+      "changed": [
+        {
+          "name": "TABLE_BODY_INTERMEDIATE_ONLY",
+          "first": 427,
+          "last": 544,
+          "frames": 118,
+          "source": "TABLE_BODY.json"
+        },
+        {
+          "name": "TABLE_LEADIN_INTERMEDIATE_ONLY",
+          "first": 423,
+          "last": 426,
+          "frames": 4,
+          "source": "TABLE_LEADIN.json"
+        }
+      ],
+      "stitch_source_frames": [],
+      "pixels_complete": true,
+      "h264_packets": "OUTSTANDING"
+    },
+    {
+      "first": 744,
+      "last": 839,
+      "frames": 96,
+      "changed_frames": 96,
+      "changed": [
+        {
+          "name": "SOURCE_INTERMEDIATE_ONLY",
+          "first": 744,
+          "last": 839,
+          "frames": 96,
+          "source": "STORM_PATCH.json"
+        }
+      ],
+      "stitch_source_frames": [],
+      "pixels_complete": true,
+      "h264_packets": "OUTSTANDING"
+    },
+    {
+      "first": 1615,
+      "last": 1692,
+      "frames": 78,
+      "changed_frames": 78,
+      "changed": [
+        {
+          "name": "12_steeple_fire",
+          "first": 1615,
+          "last": 1692,
+          "frames": 78,
+          "source": "CAPTION_COMPOSITES.json"
+        }
+      ],
+      "stitch_source_frames": [],
+      "pixels_complete": true,
+      "h264_packets": "OUTSTANDING"
+    },
+    {
+      "first": 1693,
+      "last": 1801,
+      "frames": 109,
+      "changed_frames": 109,
+      "changed": [
+        {
+          "name": "13_ring_the_bells",
+          "first": 1693,
+          "last": 1801,
+          "frames": 109,
+          "source": "CAPTION_COMPOSITES.json"
+        }
+      ],
+      "stitch_source_frames": [],
+      "pixels_complete": true,
+      "h264_packets": "OUTSTANDING"
+    },
+    {
+      "first": 2407,
+      "last": 2505,
+      "frames": 99,
+      "changed_frames": 99,
+      "changed": [
+        {
+          "name": "01_salon_tube",
+          "first": 2407,
+          "last": 2505,
+          "frames": 99,
+          "source": "REPEAT_CAPTION_COMPOSITES.json"
+        }
+      ],
+      "stitch_source_frames": [],
+      "pixels_complete": true,
+      "h264_packets": "OUTSTANDING"
+    },
+    {
+      "first": 2506,
+      "last": 2665,
+      "frames": 160,
+      "changed_frames": 160,
+      "changed": [
+        {
+          "name": "02_salon_spark",
+          "first": 2506,
+          "last": 2665,
+          "frames": 160,
+          "source": "SALON_PATCH.json"
+        }
+      ],
+      "stitch_source_frames": [],
+      "pixels_complete": true,
+      "h264_packets": "OUTSTANDING"
+    },
+    {
+      "first": 2718,
+      "last": 2887,
+      "frames": 170,
+      "changed_frames": 169,
+      "changed": [
+        {
+          "name": "04_franklin_watches",
+          "first": 2868,
+          "last": 2868,
+          "frames": 1,
+          "source": "FRANKLIN_BRIDGE.json"
+        },
+        {
+          "name": "04_franklin_watches",
+          "first": 2865,
+          "last": 2867,
+          "frames": 3,
+          "source": "FRANKLIN_TAIL.json"
+        },
+        {
+          "name": "04_franklin_watches",
+          "first": 2870,
+          "last": 2887,
+          "frames": 18,
+          "source": "FRANKLIN_TAIL.json"
+        },
+        {
+          "name": "04_franklin_watches",
+          "first": 2718,
+          "last": 2864,
+          "frames": 147,
+          "source": "UNIQUE_SPANS.json"
+        }
+      ],
+      "stitch_source_frames": [
+        [
+          2869,
+          2869
+        ]
+      ],
+      "pixels_complete": false,
+      "h264_packets": "OUTSTANDING"
+    },
+    {
+      "first": 3049,
+      "last": 3167,
+      "frames": 119,
+      "changed_frames": 119,
+      "changed": [
+        {
+          "name": "06_leyden_jar",
+          "first": 3049,
+          "last": 3167,
+          "frames": 119,
+          "source": "CAPTION_COMPOSITES.json"
+        }
+      ],
+      "stitch_source_frames": [],
+      "pixels_complete": true,
+      "h264_packets": "OUTSTANDING"
+    },
+    {
+      "first": 3168,
+      "last": 3343,
+      "frames": 176,
+      "changed_frames": 84,
+      "changed": [
+        {
+          "name": "SOURCE_INTERMEDIATE_ONLY",
+          "first": 3260,
+          "last": 3343,
+          "frames": 84,
+          "source": "JAR_PATCH.json"
+        }
+      ],
+      "stitch_source_frames": [
+        [
+          3168,
+          3259
+        ]
+      ],
+      "pixels_complete": false,
+      "h264_packets": "OUTSTANDING"
+    },
+    {
+      "first": 3678,
+      "last": 3812,
+      "frames": 135,
+      "changed_frames": 135,
+      "changed": [
+        {
+          "name": "12_notebook_list",
+          "first": 3678,
+          "last": 3812,
+          "frames": 135,
+          "source": "CAPTION_COMPOSITES.json"
+        }
+      ],
+      "stitch_source_frames": [],
+      "pixels_complete": true,
+      "h264_packets": "OUTSTANDING"
+    },
+    {
+      "first": 4212,
+      "last": 4317,
+      "frames": 106,
+      "changed_frames": 106,
+      "changed": [
+        {
+          "name": "17_page_bottom",
+          "first": 4212,
+          "last": 4317,
+          "frames": 106,
+          "source": "CAPTION_COMPOSITES.json"
+        }
+      ],
+      "stitch_source_frames": [],
+      "pixels_complete": true,
+      "h264_packets": "OUTSTANDING"
+    },
+    {
+      "first": 4511,
+      "last": 4670,
+      "frames": 160,
+      "changed_frames": 160,
+      "changed": [
+        {
+          "name": "POINTS_INTERMEDIATE_ONLY",
+          "first": 4511,
+          "last": 4670,
+          "frames": 160,
+          "source": "POINTS_PATCH.json"
+        }
+      ],
+      "stitch_source_frames": [],
+      "pixels_complete": true,
+      "h264_packets": "OUTSTANDING"
+    },
+    {
+      "first": 4671,
+      "last": 4820,
+      "frames": 150,
+      "changed_frames": 150,
+      "changed": [
+        {
+          "name": "02_sentry_box",
+          "first": 4671,
+          "last": 4820,
+          "frames": 150,
+          "source": "OUTSIDE_HOLD.json"
+        }
+      ],
+      "stitch_source_frames": [],
+      "pixels_complete": true,
+      "h264_packets": "OUTSTANDING"
+    },
+    {
+      "first": 4977,
+      "last": 5077,
+      "frames": 101,
+      "changed_frames": 101,
+      "changed": [
+        {
+          "name": "LETTER_INTERMEDIATE_ONLY",
+          "first": 4977,
+          "last": 5077,
+          "frames": 101,
+          "source": "LETTER_PATCH.json"
+        }
+      ],
+      "stitch_source_frames": [],
+      "pixels_complete": true,
+      "h264_packets": "OUTSTANDING"
+    },
+    {
+      "first": 5078,
+      "last": 5200,
+      "frames": 123,
+      "changed_frames": 123,
+      "changed": [
+        {
+          "name": "05_marly_garden",
+          "first": 5078,
+          "last": 5200,
+          "frames": 123,
+          "source": "CAPTION_COMPOSITES.json"
+        }
+      ],
+      "stitch_source_frames": [],
+      "pixels_complete": true,
+      "h264_packets": "OUTSTANDING"
+    },
+    {
+      "first": 5848,
+      "last": 6021,
+      "frames": 174,
+      "changed_frames": 174,
+      "changed": [
+        {
+          "name": "11_kite_build",
+          "first": 5848,
+          "last": 6021,
+          "frames": 174,
+          "source": "CAPTION_COMPOSITES.json"
+        }
+      ],
+      "stitch_source_frames": [],
+      "pixels_complete": true,
+      "h264_packets": "OUTSTANDING"
+    },
+    {
+      "first": 6483,
+      "last": 6627,
+      "frames": 145,
+      "changed_frames": 145,
+      "changed": [
+        {
+          "name": "16_keep_silk_dry",
+          "first": 6483,
+          "last": 6627,
+          "frames": 145,
+          "source": "CAPTION_COMPOSITES.json"
+        }
+      ],
+      "stitch_source_frames": [],
+      "pixels_complete": true,
+      "h264_packets": "OUTSTANDING"
+    },
+    {
+      "first": 6773,
+      "last": 6904,
+      "frames": 132,
+      "changed_frames": 132,
+      "changed": [
+        {
+          "name": "18_william_runs",
+          "first": 6773,
+          "last": 6904,
+          "frames": 132,
+          "source": "CAPTION_COMPOSITES.json"
+        }
+      ],
+      "stitch_source_frames": [],
+      "pixels_complete": true,
+      "h264_packets": "OUTSTANDING"
+    },
+    {
+      "first": 7552,
+      "last": 7640,
+      "frames": 89,
+      "changed_frames": 89,
+      "changed": [
+        {
+          "name": "25_fibres_rise",
+          "first": 7552,
+          "last": 7640,
+          "frames": 89,
+          "source": "CAPTION_COMPOSITES.json"
+        }
+      ],
+      "stitch_source_frames": [],
+      "pixels_complete": true,
+      "h264_packets": "OUTSTANDING"
+    },
+    {
+      "first": 7748,
+      "last": 7836,
+      "frames": 89,
+      "changed_frames": 89,
+      "changed": [
+        {
+          "name": "02_knuckle_spark",
+          "first": 7748,
+          "last": 7836,
+          "frames": 89,
+          "source": "OUTSIDE_HOLD.json"
+        }
+      ],
+      "stitch_source_frames": [],
+      "pixels_complete": true,
+      "h264_packets": "OUTSTANDING"
+    },
+    {
+      "first": 7946,
+      "last": 8103,
+      "frames": 158,
+      "changed_frames": 158,
+      "changed": [
+        {
+          "name": "04_fill_the_jar",
+          "first": 7946,
+          "last": 8103,
+          "frames": 158,
+          "source": "CAPTION_COMPOSITES.json"
+        }
+      ],
+      "stitch_source_frames": [],
+      "pixels_complete": true,
+      "h264_packets": "OUTSTANDING"
+    },
+    {
+      "first": 8849,
+      "last": 9003,
+      "frames": 155,
+      "changed_frames": 155,
+      "changed": [
+        {
+          "name": "10_richmann_rod",
+          "first": 8849,
+          "last": 9003,
+          "frames": 155,
+          "source": "REPEAT_CAPTION_COMPOSITES.json"
+        }
+      ],
+      "stitch_source_frames": [],
+      "pixels_complete": true,
+      "h264_packets": "OUTSTANDING"
+    },
+    {
+      "first": 9161,
+      "last": 9302,
+      "frames": 142,
+      "changed_frames": 142,
+      "changed": [
+        {
+          "name": "13_gazette_page",
+          "first": 9161,
+          "last": 9302,
+          "frames": 142,
+          "source": "CAPTION_COMPOSITES.json"
+        }
+      ],
+      "stitch_source_frames": [],
+      "pixels_complete": true,
+      "h264_packets": "OUTSTANDING"
+    },
+    {
+      "first": 9303,
+      "last": 9429,
+      "frames": 127,
+      "changed_frames": 127,
+      "changed": [
+        {
+          "name": "14_royal_society",
+          "first": 9303,
+          "last": 9429,
+          "frames": 127,
+          "source": "ROYAL_SUBJECT.json"
+        }
+      ],
+      "stitch_source_frames": [],
+      "pixels_complete": true,
+      "h264_packets": "OUTSTANDING"
+    },
+    {
+      "first": 9430,
+      "last": 9486,
+      "frames": 57,
+      "changed_frames": 57,
+      "changed": [
+        {
+          "name": "15_copley_medal",
+          "first": 9430,
+          "last": 9486,
+          "frames": 57,
+          "source": "CAPTION_COMPOSITES.json"
+        }
+      ],
+      "stitch_source_frames": [],
+      "pixels_complete": true,
+      "h264_packets": "OUTSTANDING"
+    },
+    {
+      "first": 9810,
+      "last": 9953,
+      "frames": 144,
+      "changed_frames": 144,
+      "changed": [
+        {
+          "name": "01_house_rod",
+          "first": 9810,
+          "last": 9953,
+          "frames": 144,
+          "source": "CAPTION_COMPOSITES.json"
+        }
+      ],
+      "stitch_source_frames": [],
+      "pixels_complete": true,
+      "h264_packets": "OUTSTANDING"
+    },
+    {
+      "first": 10076,
+      "last": 10191,
+      "frames": 116,
+      "changed_frames": 116,
+      "changed": [
+        {
+          "name": "03_bells_ring",
+          "first": 10076,
+          "last": 10191,
+          "frames": 116,
+          "source": "CAPTION_COMPOSITES.json"
+        }
+      ],
+      "stitch_source_frames": [],
+      "pixels_complete": true,
+      "h264_packets": "OUTSTANDING"
+    },
+    {
+      "first": 10273,
+      "last": 10415,
+      "frames": 143,
+      "changed_frames": 143,
+      "changed": [
+        {
+          "name": "05_almanac_page",
+          "first": 10273,
+          "last": 10415,
+          "frames": 143,
+          "source": "CAPTION_COMPOSITES.json"
+        }
+      ],
+      "stitch_source_frames": [],
+      "pixels_complete": true,
+      "h264_packets": "OUTSTANDING"
+    },
+    {
+      "first": 10626,
+      "last": 10776,
+      "frames": 151,
+      "changed_frames": 151,
+      "changed": [
+        {
+          "name": "07_giant_spark",
+          "first": 10626,
+          "last": 10776,
+          "frames": 151,
+          "source": "GIANT_SPARK_FULLRES.json"
+        }
+      ],
+      "stitch_source_frames": [],
+      "pixels_complete": true,
+      "h264_packets": "OUTSTANDING"
+    },
+    {
+      "first": 10996,
+      "last": 11037,
+      "frames": 42,
+      "changed_frames": 42,
+      "changed": [
+        {
+          "name": "10_metal_easy",
+          "first": 10996,
+          "last": 11037,
+          "frames": 42,
+          "source": "TITLE_ROWS.json"
+        }
+      ],
+      "stitch_source_frames": [],
+      "pixels_complete": true,
+      "h264_packets": "OUTSTANDING"
+    },
+    {
+      "first": 11038,
+      "last": 11245,
+      "frames": 208,
+      "changed_frames": 80,
+      "changed": [
+        {
+          "name": "SAFE_PATH_INTERMEDIATE_ONLY",
+          "first": 11038,
+          "last": 11117,
+          "frames": 80,
+          "source": "SAFE_PATH.json"
+        },
+        {
+          "name": "SAFE_PATH_ONE_TITLE",
+          "first": 11038,
+          "last": 11117,
+          "frames": 80,
+          "source": "SAFE_PATH_TITLE.json"
+        }
+      ],
+      "stitch_source_frames": [
+        [
+          11118,
+          11245
+        ]
+      ],
+      "pixels_complete": false,
+      "h264_packets": "OUTSTANDING"
+    },
+    {
+      "first": 11358,
+      "last": 11492,
+      "frames": 135,
+      "changed_frames": 135,
+      "changed": [
+        {
+          "name": "RODS_INTERMEDIATE_ONLY",
+          "first": 11358,
+          "last": 11492,
+          "frames": 135,
+          "source": "RODS_PATCH.json"
+        }
+      ],
+      "stitch_source_frames": [],
+      "pixels_complete": true,
+      "h264_packets": "OUTSTANDING"
+    },
+    {
+      "first": 12297,
+      "last": 12461,
+      "frames": 165,
+      "changed_frames": 165,
+      "changed": [
+        {
+          "name": "19_skyline_strike",
+          "first": 12297,
+          "last": 12461,
+          "frames": 165,
+          "source": "CAPTION_COMPOSITES.json"
+        }
+      ],
+      "stitch_source_frames": [],
+      "pixels_complete": true,
+      "h264_packets": "OUTSTANDING"
+    }
+  ],
+  "frame_count": 12923,
+  "copied_frames": 8354,
+  "replaced_frames": 4569,
+  "job_envelopes_are_closed_idr_groups": true,
+  "night_street_frames": [
+    1129,
+    1231
+  ],
+  "night_street": "packet_copy",
+  "frame_2869": "keep_inside_reencode",
+  "foil_frame_3353": "packet_copy",
+  "safe_path_intermediate_last": 11117,
+  "safe_path_frame_11118": "not_in_intermediate",
+  "unplaced_title_rows": [
+    "15_likeness_fire",
+    "06_same_thing",
+    "08_looking_path"
+  ],
+  "decode_delay_ticks": 1024,
+  "timestamp_policy": "copy original PTS and duration; never setpts=N/24",
+  "h264_packets": "OUTSTANDING",
+  "output_preservation": "OUTSTANDING",
+  "vo_sync": "UNMEASURED",
+  "output_film_created": false,
+  "finished_master": false,
+  "approval": false,
+  "spend_gbp": 0
+}
