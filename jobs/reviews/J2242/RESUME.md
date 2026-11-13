@@ -867,3 +867,35 @@ Remaining: master frame 2869, the four table lead-in frames, SAFE PATH DOWN,
 the foil check at f3353, bottom-text reviews, generalized packet mux,
 preservation and loudness/sync checks, and the mandatory film gates. Then
 J2243 and Chief review. Continue this PR #542 worktree.
+
+## Table lead-in — twenty-second run, 13 November 2026
+
+Cursor worker. Frame 2869 stays out. Master frames 423–426 are not the table
+plate: full-resolution upper-band MSE against table source 52 is about 3554
+to 3559. They are the tower plate, a forward jump from source 150 on master
+frame 422 to source frames 170–173. Each match is unique (MSE 2.94 to 3.54,
+runner-up margin 16.1 to 17.7). Sources 151–169 are not used. The guessed
+continuation 151–154 was measured and refused before this render.
+
+`_j2242_table_leadin.py` composites the existing A KITE layer onto those four
+tower frames. The first frame of the fade stays clear. The next three carry
+the card. Original presentation timestamps and durations match, and the
+picture above the caption matches the clean tower source.
+
+- `/Volumes/MiniWork/scratch/J2242-table-leadin-v01/table_leadin.nut`
+  SHA-256 `bf087a9865c270d3fa6e29b304b9c31276878f107cbf6f5bd3305bf6184859d3`
+
+A full-size still of local frame 2 reads A KITE over the tower, not over the
+table. The same frame at 168×94 is still inside the fade, so the card is not
+readable there yet. The readable hold of A KITE remains on the table body
+already rendered. This is a still check, not a motion review, an audio
+review, or a film approval.
+
+98 J2242 unit tests OK. check_all ALL CHECKS PASS. No v04 master. Original masters and audio are
+unchanged. No spend, generation, UAT, R2 or YouTube action. No detached
+process.
+
+Remaining: SAFE PATH DOWN on its plate, the foil check at f3353,
+bottom-text reviews, generalized packet mux, preservation and loudness/sync
+checks, and the mandatory film gates. Then J2243 and Chief review. Continue
+this PR #542 worktree. Frame 2869 stays out.
