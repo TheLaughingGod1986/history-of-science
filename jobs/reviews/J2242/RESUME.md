@@ -836,3 +836,34 @@ Remaining: master frames 2868–2869, the four table lead-in frames, SAFE PATH
 DOWN, the foil check at f3353, bottom-text reviews, generalized packet mux,
 preservation and loudness/sync checks, and the mandatory film gates. Then
 J2243 and Chief review. Continue this PR #542 worktree.
+
+## Confirmed-neighbour bridge — twenty-first run, 13 November 2026
+
+Cursor worker. The forward hold still refuses frames 2868 and 2869, because
+the nearest earlier unique source is one of the two candidates. A separate
+rule fills a refused frame only when three things are already true: the
+accepted source on both sides is the same, that source is the full-band
+winner, and the pre-declared centre window confirms that winner. The
+runner-up is not used. A newly filled frame does not become a flank for
+another refused frame.
+
+The centre window was scored again from the raw upper band. It still matches
+the recorded scores.
+
+- Master frame 2868, one clean frame, source 148. The runner, source 150, is
+  unused. There is no caption on this frame. SHA-256
+  `bb674f3108d3affd0b37e91d230da30f1e662eadcd5fbbd0b827dd72a4ee90f4`.
+  Original presentation timestamp and duration match, and the decoded frame
+  matches the selected source.
+- Master frame 2869 stays out. Its full-band winner is source 150, which is
+  not the accepted neighbour. The centre window prefers source 148, and this
+  rule does not switch to that runner-up.
+
+94 J2242 unit tests OK. check_all ALL CHECKS PASS. No v04 master. Original masters and audio are
+unchanged. No spend, generation, UAT, R2 or YouTube action. No detached
+process. These are pixel checks, not a motion review or an audio review.
+
+Remaining: master frame 2869, the four table lead-in frames, SAFE PATH DOWN,
+the foil check at f3353, bottom-text reviews, generalized packet mux,
+preservation and loudness/sync checks, and the mandatory film gates. Then
+J2243 and Chief review. Continue this PR #542 worktree.

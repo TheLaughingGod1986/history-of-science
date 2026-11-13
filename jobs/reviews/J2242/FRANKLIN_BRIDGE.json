@@ -1,0 +1,52 @@
+{
+  "job": "J2242",
+  "status": "FRANKLIN_CONFIRMED_NEIGHBOUR_BRIDGE",
+  "rule": "Fill a refused frame only when both neighbouring accepted sources are the full-band winner and the centre window confirms that winner. Never adopt the runner-up.",
+  "evidence_sha256": "c20bebb783e21806597c4245b18397962ee0ebe8258759ad8b4796b563ae907a",
+  "mapping_sha256": "c077ac97651c1f17b47b4d846aa5d8a2747a203cd93c791665f31c1718a28f2b",
+  "window_sha256": "11a813bc6561ee4d40987a2e7828bbec0601f8523b64973f344080a80cfd6d27",
+  "remeasured_master_frames": [
+    2868,
+    2869
+  ],
+  "rows": [
+    {
+      "row": "04_franklin_watches",
+      "path": "/Volumes/MiniWork/scratch/J2242-franklin-bridge-v01/2868-2868/clean_plate.nut",
+      "sha256": "bb674f3108d3affd0b37e91d230da30f1e662eadcd5fbbd0b827dd72a4ee90f4",
+      "timeline_frames": [
+        2868,
+        2868
+      ],
+      "source_frame_indices": [
+        148
+      ],
+      "source_runs": [
+        [
+          148,
+          149
+        ]
+      ],
+      "holds": [],
+      "source_sha256": "526cbec6dbc13d4daedf5c83561141f41c394a12d7988752b2f39bb4eb3f0552",
+      "frame_count": 1,
+      "caption_count": 0,
+      "original_pts_match": true,
+      "original_durations_preserved_in_intermediate": true,
+      "original_clock_path": "/Volumes/MiniWork/scratch/J2242-franklin-bridge-v01/2868-2868/original_clock.json",
+      "original_clock_sha256": "3ee940adc1b554261b59a8111bdb210bb56237d4e5497650a64831aaf1fcc10d",
+      "full_frame_pixel_hashes_match": true,
+      "final_film_approval": false
+    }
+  ],
+  "filled_master_frames": [
+    2868
+  ],
+  "refused_master_frames": [
+    2869
+  ],
+  "refusal_reason": "Frame 2869 keeps full-band winner 150. The centre window prefers source 148, and this rule does not switch to the runner-up. Source 150 is not the accepted neighbour on both sides.",
+  "caption_on_these_frames": false,
+  "master_created": false,
+  "final_film_approval": false
+}
