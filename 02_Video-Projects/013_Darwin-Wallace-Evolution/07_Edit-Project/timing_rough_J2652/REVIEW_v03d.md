@@ -97,4 +97,3 @@ J2652 remains at 2/3, with this concrete checkpoint. No Ben action or credit pur
 ![Diagnostic sheet 5: raw takes and explicit placeholders](phone_contact_v03d_05.jpg)
 
 ![Diagnostic sheet 6: raw takes and explicit placeholders](phone_contact_v03d_06.jpg)
-
