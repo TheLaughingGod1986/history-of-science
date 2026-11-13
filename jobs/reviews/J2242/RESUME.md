@@ -764,3 +764,41 @@ the four table lead-in frames, SAFE PATH DOWN, the foil check at f3353,
 bottom-text reviews, generalized packet mux, preservation and loudness/sync
 checks, and the mandatory film gates. Then J2243 and Chief review. Continue
 this PR #542 worktree.
+
+## Outside-hold captions — nineteenth run, 13 November 2026
+
+Cursor worker. The sentry, knuckle and tower-opening near-ties stay different
+pictures, so neither candidate is used. `_j2242_outside_hold.py` repeats the
+nearest unique source frame that is outside that pair. The previous unique
+frame is used when it qualifies. The next unique frame is used only when the
+previous one is itself a candidate. A near-tie with no such neighbour is
+refused, and so is a backward schedule.
+
+The three rendered rows:
+
+- `02_sentry_box`, master frames 4671–4820, 150 frames. Local 2 repeats
+  source 0. Sources 1 and 2 stay unused. SHA-256
+  `c18af4d10a2f1d126e003b0728e2d60f98470bb3a654e79eebedcfa8b2b2aceb`.
+  The 54-frame clear tail matches the clean source.
+- `02_knuckle_spark`, master frames 7748–7836, 89 frames. Local 29 repeats
+  source 30. Sources 28 and 29 stay unused. SHA-256
+  `fe3486e568db7dcfafd8451559d94ecc3d4522c51feec79cb9f3a509488d61cf`.
+- `02_tower_tilt` opening card only, master frames 272–346, 75 frames.
+  Locals 2 and 3 repeat source 0. Local 6 repeats source 4. SHA-256
+  `db3aec3fed6498b6bb5590966e1dd81da9a77e2d12ddd14aa8c661fff3528a49`.
+  Frame 346 is source 74, so it meets the already rendered ON THE ROOF span.
+
+Original presentation timestamps and durations match. The picture above the
+caption matches the selected clean source, including the repeated frames.
+Midpoint stills, including the 168×94 stills, read THE SENTRY-BOX, A SPARK
+and THE ANSWER IS. Those are stills, not a motion review, an audio review,
+or a film approval.
+
+86 J2242 unit tests OK. check_all ALL CHECKS PASS. No v04 master. Original
+masters and audio are unchanged. No spend, generation, UAT, R2 or YouTube
+action. No detached process.
+
+Remaining: the Franklin tail, the four table lead-in frames, SAFE PATH DOWN,
+the foil check at f3353, bottom-text reviews, generalized packet mux,
+preservation and loudness/sync checks, and the mandatory film gates. Then
+J2243 and Chief review. Continue this PR #542 worktree.
