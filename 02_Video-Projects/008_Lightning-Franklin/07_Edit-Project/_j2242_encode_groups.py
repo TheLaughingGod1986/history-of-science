@@ -124,16 +124,20 @@ def source_is_yuv420p(path):
     return stream
 
 
-def encode_group(envelope, files, out_dir, evidence_path):
-    piece = single_nut(envelope, files)
-    frames = envelope['frames']
+def encode_piece(piece, first, last, out_dir, evidence_path, preparation='single-nut'):
+    """Encode one yuv420p nut that already covers this closed group."""
+    frames = last - first + 1
+    if piece['first'] != first or piece['last'] != last:
+        raise ValueError('Nut does not cover the closed group')
     if piece['last'] - piece['first'] + 1 != frames:
         raise ValueError('Nut frame count does not match the group')
+    if preparation not in ('single-nut', 'existing-yuv420p', 'joined-yuv420p', 'yuv420p-view'):
+        raise ValueError('Unknown nut preparation')
     recipe.require_hash(piece['path'], piece['sha256'])
     source_is_yuv420p(piece['path'])
     out_dir = Path(out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
-    output = out_dir / f"group_{envelope['first']}_{envelope['last']}_high.mp4"
+    output = out_dir / f'group_{first}_{last}_high.mp4'
     if output.exists():
         raise ValueError(f'Encode already exists: {output}')
     partial = output.with_suffix('.partial.mp4')
@@ -153,11 +157,12 @@ def encode_group(envelope, files, out_dir, evidence_path):
         'status': 'HIGH_PROFILE_GROUP_ONLY',
         'row': piece.get('name'),
         'source': piece['source'],
-        'first': envelope['first'],
-        'last': envelope['last'],
+        'first': first,
+        'last': last,
         'frames': frames,
         'nut': piece['path'],
         'nut_sha256': piece['sha256'],
+        'preparation': preparation,
         'encoded': str(output),
         'encoded_sha256': recipe.sha256_file(output),
         'encoded_bytes': output.stat().st_size,
@@ -176,6 +181,12 @@ def encode_group(envelope, files, out_dir, evidence_path):
     }
     recipe.write_new(evidence_path, report)
     return report
+
+
+def encode_group(envelope, files, out_dir, evidence_path):
+    piece = single_nut(envelope, files)
+    return encode_piece(
+        piece, envelope['first'], envelope['last'], out_dir, evidence_path, 'single-nut')
 
 
 def selectable(report):

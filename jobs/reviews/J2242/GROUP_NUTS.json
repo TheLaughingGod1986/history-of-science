@@ -1,0 +1,156 @@
+{
+  "job": "J2242",
+  "status": "GROUP_NUTS_ONLY",
+  "groups": [
+    {
+      "first": 272,
+      "last": 422,
+      "frames": 151,
+      "path": "/Volumes/MiniWork/scratch/J2242-group-nuts-v01/group_272_422.nut",
+      "sha256": "4f31dbe1f0bd393bd912a0263049b69cfc85fd7555e1da508c5da5011b14dcd9",
+      "preparation": "joined-yuv420p",
+      "source": "joined",
+      "name": "joined",
+      "pieces": [
+        {
+          "source": "OUTSIDE_HOLD.json",
+          "name": "02_tower_tilt",
+          "first": 272,
+          "last": 346
+        },
+        {
+          "source": "UNIQUE_SPANS.json",
+          "name": "02_tower_tilt",
+          "first": 347,
+          "last": 422
+        }
+      ],
+      "yuv_view_matches_source": true,
+      "kept_master_frames": false
+    },
+    {
+      "first": 423,
+      "last": 544,
+      "frames": 122,
+      "path": "/Volumes/MiniWork/scratch/J2242-group-nuts-v01/group_423_544.nut",
+      "sha256": "856c197098fcc4bf60e086e994fc9c647d6988c0c09eb7001406a955bd524068",
+      "preparation": "joined-yuv420p",
+      "source": "joined",
+      "name": "joined",
+      "pieces": [
+        {
+          "source": "TABLE_LEADIN.json",
+          "name": "TABLE_LEADIN_INTERMEDIATE_ONLY",
+          "first": 423,
+          "last": 426
+        },
+        {
+          "source": "TABLE_BODY.json",
+          "name": "TABLE_BODY_INTERMEDIATE_ONLY",
+          "first": 427,
+          "last": 544
+        }
+      ],
+      "yuv_view_matches_source": true,
+      "kept_master_frames": false
+    },
+    {
+      "first": 2506,
+      "last": 2665,
+      "frames": 160,
+      "path": "/Volumes/MiniWork/scratch/J2242-salon-patch-v03/salon_patch.nut",
+      "sha256": "91bd138624b5fd1dfae2d677b8f70a3b16b089f160dfc446007c3c52fb3cb3b5",
+      "preparation": "existing-yuv420p",
+      "source": "SALON_PATCH.json",
+      "name": "02_salon_spark",
+      "yuv_view_matches_source": true,
+      "kept_master_frames": false
+    },
+    {
+      "first": 8189,
+      "last": 8268,
+      "frames": 80,
+      "path": "/Volumes/MiniWork/scratch/J2242-group-nuts-v01/group_8189_8268.nut",
+      "sha256": "1a37eebf4889e82b2843fbdba00749c3ea783fef06ede1c8efd4eeeab22cb520",
+      "preparation": "yuv420p-view",
+      "source": "TITLE_PLACE.json",
+      "name": "06_same_thing",
+      "pieces": [
+        {
+          "source": "TITLE_PLACE.json",
+          "name": "06_same_thing",
+          "first": 8189,
+          "last": 8268
+        }
+      ],
+      "yuv_view_matches_source": true,
+      "kept_master_frames": false
+    },
+    {
+      "first": 8269,
+      "last": 8348,
+      "frames": 80,
+      "path": "/Volumes/MiniWork/scratch/J2242-group-nuts-v01/group_8269_8348.nut",
+      "sha256": "0b15e8ffbee3decb7c6d4e873d82ee78a2af805feed41f933f2605b7c5ef1579",
+      "preparation": "yuv420p-view",
+      "source": "TITLE_PLACE.json",
+      "name": "06_same_thing",
+      "pieces": [
+        {
+          "source": "TITLE_PLACE.json",
+          "name": "06_same_thing",
+          "first": 8269,
+          "last": 8348
+        }
+      ],
+      "yuv_view_matches_source": true,
+      "kept_master_frames": false
+    },
+    {
+      "first": 10777,
+      "last": 10852,
+      "frames": 76,
+      "path": "/Volumes/MiniWork/scratch/J2242-group-nuts-v01/group_10777_10852.nut",
+      "sha256": "98c4f06d8a336b7779c19e12a76c48237beef234124195741189568f5aa0efc6",
+      "preparation": "yuv420p-view",
+      "source": "TITLE_PLACE.json",
+      "name": "08_looking_path",
+      "pieces": [
+        {
+          "source": "TITLE_PLACE.json",
+          "name": "08_looking_path",
+          "first": 10777,
+          "last": 10852
+        }
+      ],
+      "yuv_view_matches_source": true,
+      "kept_master_frames": false
+    },
+    {
+      "first": 10996,
+      "last": 11037,
+      "frames": 42,
+      "path": "/Volumes/MiniWork/scratch/J2242-group-nuts-v01/group_10996_11037.nut",
+      "sha256": "e82bfaa83bd31f61ca8ff1cb2aad7c31b447e5ee998f29a683396f2d7fe5ced2",
+      "preparation": "yuv420p-view",
+      "source": "TITLE_ROWS.json",
+      "name": "10_metal_easy",
+      "pieces": [
+        {
+          "source": "TITLE_ROWS.json",
+          "name": "10_metal_easy",
+          "first": 10996,
+          "last": 11037
+        }
+      ],
+      "yuv_view_matches_source": true,
+      "kept_master_frames": false
+    }
+  ],
+  "kept_master_frames": false,
+  "audio": false,
+  "output_film_created": false,
+  "finished_master": false,
+  "approval": false,
+  "spend_gbp": 0
+}

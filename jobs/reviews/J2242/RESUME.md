@@ -1136,3 +1136,24 @@ Four groups stay refused because they still contain master frames: 2718–2887 (
 143 J2242 unit tests OK, 3 of them new. check_all result is in CHECK_ALL_ENCODE.txt. This is a frame measurement, not a motion review, an audio review, or a film approval. No v04 master. Original masters and audio are unchanged. No spend, generation, UAT, R2 or YouTube action. The encode process has ended. No detached encode is still running.
 
 Remaining: encode the skipped and refused groups without giving up exact master pixels or the High profile, then mux copied packets and the original audio. Then preservation, loudness and sync, and the film gates. Then J2243 and Chief review. Continue this PR #542 worktree. Frame 2869 stays the master picture inside its group.
+
+## Seven skipped groups encoded — thirty-fourth run, 14 November 2026
+
+Cursor worker. No master was muxed. The seven fully changed groups that the single-nut pass skipped now have H264 High, qp 1, silent encodes, with no B frames. A group that still holds a master frame was not encoded. x264 still will not make a lossless High-profile encode, so those four groups stay pictures only.
+
+`_j2242_group_nuts.py` builds one yuv420p nut per skipped group, then the existing High-profile recipe encodes it. The yuv view of each prepared nut matches the source frames. The nut clock is not the master clock.
+
+- Frames 272–422, 151 frames, two nuts joined. Lowest frame 63.43 dB.
+- Frames 423–544, 122 frames, two nuts joined. Lowest frame 62.91 dB.
+- Frames 2506–2665, the 160-frame salon nut, used as it was. Lowest frame 62.70 dB. Nothing after source f060 is in that nut.
+- Frames 8189–8268 and 8269–8348, the electricity title split across two IDR groups. The bgr0 nut was converted to yuv420p. Lowest frames 64.49 dB and 64.37 dB.
+- Frames 10777–10852, the path title, 76 frames, bgr0 converted to yuv420p. Lowest frame 63.67 dB.
+- Frames 10996–11037, the metal title, 42 frames, bgr0 converted to yuv420p. Lowest frame 63.62 dB.
+
+The nuts are in `/Volumes/MiniWork/scratch/J2242-group-nuts-v01/`. The encodes joined the earlier files in `/Volumes/MiniWork/scratch/J2242-encode-v01/`. `GROUP_NUTS.json` and the seven `ENCODE_` records are the evidence. These files are not `hos_008_master_v04.mp4`.
+
+Still refused, because each one still contains master frames that have to match the source hashes: 2718–2887 (frame 2869), 3168–3343 (the jar keep), 4016–4138 (the fire tail) and 11038–11245 (the safe-path tail).
+
+145 J2242 unit tests OK, 2 of them new. check_all result is in `CHECK_ALL_GROUP_NUTS.txt`. This is a frame measurement, not a motion review, an audio review, or a film approval. No v04 master. Original masters and audio are unchanged. No spend, generation, UAT, R2 or YouTube action. The encode process has ended. No detached encode is still running.
+
+Remaining: encode the four groups that still hold master frames without giving up those pixels or the High profile, then mux copied packets and the original audio. Then preservation, loudness and sync, and the film gates. Then J2243 and Chief review. Continue this PR #542 worktree. Frame 2869 stays the master picture inside its group.
