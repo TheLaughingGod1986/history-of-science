@@ -6,9 +6,9 @@
       "first": 2718,
       "last": 2887,
       "frames": 170,
-      "path": "/Volumes/MiniWork/scratch/J2242-stitch-v03/group_2718-2887.nut",
+      "path": "/Volumes/MiniWork/scratch/J2242-stitch-v04/group_2718-2887.nut",
       "sha256": "075e16561325345e522b98e020a7dd1910b3e34e6439b23f57adfcd20c0fabe4",
-      "clock": "/Volumes/MiniWork/scratch/J2242-stitch-v03/group_2718-2887_clock.json",
+      "clock": "/Volumes/MiniWork/scratch/J2242-stitch-v04/group_2718-2887_clock.json",
       "clock_sha256": "9658ee249727fb3c84981a320c321c8ee5d208db2ce711d1f4509f8dd4432f15",
       "pieces": [
         {
@@ -48,9 +48,9 @@
       "first": 3168,
       "last": 3343,
       "frames": 176,
-      "path": "/Volumes/MiniWork/scratch/J2242-stitch-v03/group_3168-3343.nut",
+      "path": "/Volumes/MiniWork/scratch/J2242-stitch-v04/group_3168-3343.nut",
       "sha256": "2ce4d932995c30f73baea94bdaaa070f06566cb3b82a6ec3615d69d6df27a404",
-      "clock": "/Volumes/MiniWork/scratch/J2242-stitch-v03/group_3168-3343_clock.json",
+      "clock": "/Volumes/MiniWork/scratch/J2242-stitch-v04/group_3168-3343_clock.json",
       "clock_sha256": "fc2e2e6f08bc0604ec5e94482378b24210b38d844ab82b4cefa6b8ad1b970d80",
       "pieces": [
         {
@@ -69,12 +69,36 @@
       "replacement_pixels_kept": true
     },
     {
+      "first": 4016,
+      "last": 4138,
+      "frames": 123,
+      "path": "/Volumes/MiniWork/scratch/J2242-stitch-v04/group_4016-4138.nut",
+      "sha256": "c9f8733fcd5c317014aa0c25c22159407e40c7ce67aa5d21e416af281aac5000",
+      "clock": "/Volumes/MiniWork/scratch/J2242-stitch-v04/group_4016-4138_clock.json",
+      "clock_sha256": "1f13d167f22f12bd5f3e428795d8651ffdd07f1e379354d5aad9f1f8612876d3",
+      "pieces": [
+        {
+          "kind": "intermediate",
+          "first": 4016,
+          "last": 4129,
+          "source": "TITLE_PLACE.json"
+        },
+        {
+          "kind": "master",
+          "first": 4130,
+          "last": 4138
+        }
+      ],
+      "master_pixels_match": true,
+      "replacement_pixels_kept": true
+    },
+    {
       "first": 11038,
       "last": 11245,
       "frames": 208,
-      "path": "/Volumes/MiniWork/scratch/J2242-stitch-v03/group_11038-11245.nut",
+      "path": "/Volumes/MiniWork/scratch/J2242-stitch-v04/group_11038-11245.nut",
       "sha256": "9d3daceffd24872e868cde040a08b19bf1c46f212ce2f470444d5aea8877278e",
-      "clock": "/Volumes/MiniWork/scratch/J2242-stitch-v03/group_11038-11245_clock.json",
+      "clock": "/Volumes/MiniWork/scratch/J2242-stitch-v04/group_11038-11245_clock.json",
       "clock_sha256": "7a921ab64fe3b1b8fc39976c9c4e45e676cf160f75d1d33ccdc52a4bc26a129f",
       "pieces": [
         {

@@ -1107,3 +1107,18 @@ None of the three ranges overlaps an existing splice. The closed-IDR plan is now
 140 J2242 unit tests OK, 4 of them new. `check_all.sh` result is in `CHECK_ALL_TITLE_PLACE.txt`. This is a pixel check, not a motion review, an audio review, or a film approval. No v04 master. Original masters and audio are unchanged. No spend, generation, UAT, R2 or YouTube action. No detached process.
 
 Remaining: stitch master frames 4130–4138 onto the fire title, encode each closed group, mux copied packets and the original audio, then preservation, loudness and sync, and the film gates. Then J2243 and Chief review. Continue this PR #542 worktree. Frame 2869 stays the master picture inside its group.
+
+## Fire title tail — thirty-second run, 14 November 2026
+
+Cursor worker. No master was muxed. `_j2242_stitch_groups.py --render` filled the four incomplete groups, including the nine master frames after the fire title. The three groups from the thirtieth run came back with the same picture hashes. Each kept master frame matches the source framehash. Each replacement frame is unchanged. The pictures have no audio.
+
+- Frames 2718–2887, 170 frames. Frame 2869 is the master picture. SHA-256 `075e16561325345e522b98e020a7dd1910b3e34e6439b23f57adfcd20c0fabe4`.
+- Frames 3168–3343, 176 frames. Frames 3168–3259 are the master picture, then the jar patch. Frame 3353 stays a copied packet. SHA-256 `2ce4d932995c30f73baea94bdaaa070f06566cb3b82a6ec3615d69d6df27a404`.
+- Frames 4016–4138, 123 frames. The fire title covers 4016–4129. Frames 4130–4138 are the master picture. SHA-256 `c9f8733fcd5c317014aa0c25c22159407e40c7ce67aa5d21e416af281aac5000`.
+- Frames 11038–11245, 208 frames. The one-title safe path covers 11038–11117. Frames 11118–11245 are the master picture. SHA-256 `9d3daceffd24872e868cde040a08b19bf1c46f212ce2f470444d5aea8877278e`.
+
+The files and clocks are in `/Volumes/MiniWork/scratch/J2242-stitch-v04/`. `STITCH_GROUPS.json` records them. The original clock is in each sidecar. The nut timestamps are not the master clock.
+
+140 J2242 unit tests OK. `check_all.sh` result is in `CHECK_ALL_FIRE_TAIL.txt`. This is a pixel check, not a motion review, an audio review, or a film approval. No v04 master. Original masters and audio are unchanged. No spend, generation, UAT, R2 or YouTube action. No detached encode is running.
+
+Remaining: encode each closed group, mux copied packets and the original audio, then preservation, loudness and sync, and the film gates. The packet planner still only writes the plan. Then J2243 and Chief review. Continue this PR #542 worktree. Frame 2869 stays the master picture inside its group.
