@@ -45,3 +45,9 @@ Full Chief review record in OWB: `jobs/reviews/J2230/REVIEW.md` (`4993d6b9e5`).
 - [ ] Build `hos_005_s06_blood_pressure_cuff_v03.mp4` and `hos_005_s07_heart_pulse_v03.mp4` (`£0`) and verify `gate_shorts_open.py check`, `polish_gate`, `picture_qa`, `music_gate`, and stem `vo_check.py` all PASS.
 - [ ] Build `007` `What Is Variolation?` (`v01`) and `How Was Smallpox Eradicated?` (`v01`, Option A 61w recipe) (`£0`) with full-bleed `9:16` cover plates, top-band `0.0 s` hook text (`hook_edge >= 0.005`), live parent long title `How Was the First Vaccine Made? (And Why It's Named After a Cow)` at `9–14 s`, `<1.0 s` loop tail, and separate VO/music/SFX stems; verify all gates PASS.
 - [ ] Copy all four verified masters to NAS / HOS UAT, commit manifests and gate outputs via HOS PR, and place on Ben's watch with `jobs.py awaits` (after independent QA if required).
+
+## 3. Variolation v04 (14 Nov 2026, cursor)
+
+What Is Variolation? v04 opens on the locked lancet push at 63.50–65.30 s (full-height cover crop so the point stays in frame), then cuts to the child at 1.80 s. Open gate PASS: 22.93 s, frame diff 6.52, hook edge 0.0412, no padded frames, sha256 47681e384a1afd7f65e3b2ace46f1b5987578081fdcb6ca07e06ebbd237ebc5d. File: `/Users/benjaminoats/_desk/renders/J2230/vaccine_v04/hos_007_variolation_v04.mp4`. The checker counts 60 words because the locked take says "onto" as one word. Voice, music, picture and polish checks are still to run. No awaits.
+
+Eradication v02 is unchanged (21.23 s, open gate PASS, duration warning). The approved intervals, with breaths at the written 0.30–0.40 s and a tail under 1.0 s, top out near 21.4 s. Reaching 22.0 s needs a Chief look. Harvey v04 and the scheduled Willow pair are unchanged. £0.
