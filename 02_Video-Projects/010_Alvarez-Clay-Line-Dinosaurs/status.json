@@ -45,9 +45,9 @@
       "state": "blocked",
       "due": "2026-11-22",
       "owner": "codex",
-      "note": "J2267: readiness integrated and budget reconciled; 12 Quality Shorts parents scoped, not generated or authorized. 75 total board rows / historical 12911 expected credits. Existing VO and Option A1 retained.",
+      "note": "J2270 (PR 538): all 12 scoped Shorts plates generated and archived: Flow Veo 3.1 Quality, 8 s, 16:9, 1,200 credits in 3 batches, every clip decoded and checked, 0 KEEP. Existing VO and Option A1 retained. Not reviewed yet.",
       "underway": false,
-      "waiting": "Tested HOS010 runner and live guarded spend preflight after HOS009 J2033; then independent plate review before J2172 assembly",
+      "waiting": "J2271: an independent review of the 12 plates by a reviewer that can watch moving video (the first reviewer could only read stills); then J2172 assembles the two locked Shorts",
       "since": "2026-11-06"
     },
     "edit": {
