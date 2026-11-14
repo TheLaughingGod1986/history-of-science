@@ -1122,3 +1122,17 @@ The files and clocks are in `/Volumes/MiniWork/scratch/J2242-stitch-v04/`. `STIT
 140 J2242 unit tests OK. `check_all.sh` result is in `CHECK_ALL_FIRE_TAIL.txt`. This is a pixel check, not a motion review, an audio review, or a film approval. No v04 master. Original masters and audio are unchanged. No spend, generation, UAT, R2 or YouTube action. No detached encode is running.
 
 Remaining: encode each closed group, mux copied packets and the original audio, then preservation, loudness and sync, and the film gates. The packet planner still only writes the plan. Then J2243 and Chief review. Continue this PR #542 worktree. Frame 2869 stays the master picture inside its group.
+
+## First High-profile group encode — thirty-third run, 14 November 2026
+
+Cursor worker. No master was muxed. x264 rejects lossless High profile. A group that still holds master frames is refused, because those frames have to match the source hashes and this encode is not lossless. `_j2242_encode_groups.py` encodes one fully changed yuv420p nut with the salon recipe: H264 High, qp 1, no B frames, one IDR for the group, no audio.
+
+The Copley group, frames 9430–9486, is 57 frames. The nut hash is `6d3a1e1155ec8d787b4d6c6133c2cb701c7bdee53896c58dd44337889bf0d158`. The encode is `/Volumes/MiniWork/scratch/J2242-encode-v01/group_9430_9486_high.mp4`, 28,770,528 bytes, SHA-256 `f072d61f5eed6d5300ff9d79ac7bace45c25de13dc8e670da9a8967e8031d7a7`. ffprobe reads H264 High, yuv420p, 1920×1080, 57 packets and no audio. The lowest frame PSNR against the nut is 63.32 dB. The file's own timestamps are not the master clock. Evidence is `ENCODE_9430_9486.json`.
+
+The same command then encoded every other fully changed yuv420p group that is already one nut. It finished with exit 0. 28 groups, 3,540 frames, are H264 High, silent, and at least 62.59 dB against their nuts. The files are in `/Volumes/MiniWork/scratch/J2242-encode-v01/`. Each `ENCODE_<first>_<last>.json` records the nut hash, the encode hash and the lowest frame PSNR. None of them is a master, and none carries the master clock.
+
+Four groups stay refused because they still contain master frames: 2718–2887 (frame 2869), 3168–3343 (the jar keep), 4016–4138 (the fire tail) and 11038–11245 (the safe-path tail). These were also skipped: 272–422 and 423–544 because each is two nuts, salon 2506–2665 because its nut is not in the placed-file list, electricity 8189–8348 because the title nut is split across two IDR groups, the path title 10777–10852 because that nut is not yuv420p, and the metal title 10996–11037 because its nut is not in the placed-file list.
+
+143 J2242 unit tests OK, 3 of them new. check_all result is in CHECK_ALL_ENCODE.txt. This is a frame measurement, not a motion review, an audio review, or a film approval. No v04 master. Original masters and audio are unchanged. No spend, generation, UAT, R2 or YouTube action. The encode process has ended. No detached encode is still running.
+
+Remaining: encode the skipped and refused groups without giving up exact master pixels or the High profile, then mux copied packets and the original audio. Then preservation, loudness and sync, and the film gates. Then J2243 and Chief review. Continue this PR #542 worktree. Frame 2869 stays the master picture inside its group.
