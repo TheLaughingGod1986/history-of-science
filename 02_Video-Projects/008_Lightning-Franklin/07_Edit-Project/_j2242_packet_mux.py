@@ -11,6 +11,7 @@ from pathlib import Path
 
 import _build_rough_v13_recipe as recipe
 from _j2242_salon_splice import FIRST as SALON_FIRST, LAST as SALON_LAST
+from _j2242_title_place import PLACED_TITLES, read_placement
 
 REVIEW = Path(__file__).resolve().parents[3] / 'jobs' / 'reviews' / 'J2242'
 FRAME_COUNT = recipe.EXPECTED_FRAMES
@@ -26,7 +27,6 @@ JOB_ENVELOPES = (
     (4977, 5077),
     (11358, 11492),
 )
-UNPLACED_TITLES = ('15_likeness_fire', '06_same_thing', '08_looking_path')
 SPAN_FILES = (
     'CAPTION_COMPOSITES.json',
     'REPEAT_CAPTION_COMPOSITES.json',
@@ -222,8 +222,9 @@ def load_changes(review_dir=REVIEW):
     changes.append({'name': '10_metal_easy', 'first': first, 'last': last,
                     'source': 'TITLE_ROWS.json'})
     unplaced = [row['row'] for row in titles['rows'] if 'master_frames' not in row]
-    if tuple(unplaced) != UNPLACED_TITLES:
-        raise ValueError('Unplaced title rows changed')
+    if tuple(unplaced) != PLACED_TITLES:
+        raise ValueError('Paint record no longer matches the three picture titles')
+    changes.extend(read_placement(review_dir / 'TITLE_PLACE.json'))
     seen = set()
     unique = []
     for change in changes:
@@ -281,7 +282,8 @@ def build_report(review_dir=REVIEW):
         'foil_frame_3353': 'packet_copy' if not _covers(envelopes, 3353) else 'inside_reencode',
         'safe_path_intermediate_last': safe_end,
         'safe_path_frame_11118': 'not_in_intermediate' if safe_end != 11118 else 'included',
-        'unplaced_title_rows': list(UNPLACED_TITLES),
+        'placed_title_rows': list(PLACED_TITLES),
+        'unplaced_title_rows': [],
         'decode_delay_ticks': DECODE_DELAY,
         'timestamp_policy': 'copy original PTS and duration; never setpts=N/24',
         'h264_packets': 'OUTSTANDING',

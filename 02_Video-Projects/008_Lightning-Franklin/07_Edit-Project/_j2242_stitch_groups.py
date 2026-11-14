@@ -1,10 +1,11 @@
-"""Stitch master pixels into the three incomplete Franklin picture groups.
+"""Stitch master pixels into the incomplete Franklin picture groups.
 
-A changed frame forces its whole IDR group to be re-encoded. Thirty-two groups
-already have a picture for every frame. These three do not:
+A changed frame forces its whole IDR group to be re-encoded. Groups that
+already have a picture for every frame are left alone. These do not:
 
 - 2718–2887, where frame 2869 stays the master picture
 - 3168–3343, where 3168–3259 stay the master picture ahead of the jar patch
+- 4016–4138, where the fire title covers 4016–4129 and 4130–4138 stay the master picture
 - 11038–11245, where the one-title safe path covers 11038–11117 and
   11118–11245 stay the master picture
 
@@ -127,11 +128,40 @@ def _files(data, source):
     return found
 
 
+def title_files(review_dir):
+    """The three picture-title nuts, keyed by the proved master frames."""
+    review_dir = Path(review_dir)
+    painted = {
+        row['row']: row
+        for row in json.loads((review_dir / 'TITLE_ROWS.json').read_text())['rows']
+    }
+    found = []
+    for row in json.loads((review_dir / 'TITLE_PLACE.json').read_text())['rows']:
+        source = painted[row['row']]
+        first, last = row['master_frames']
+        if last - first + 1 != source['frames']:
+            raise ValueError(f'{row["row"]} nut is not the placed frame count')
+        path = source.get('intermediate')
+        digest = source.get('sha256')
+        if not path or not str(path).endswith('.nut') or not isinstance(digest, str) or len(digest) != 64:
+            raise ValueError(f'{row["row"]} nut is missing a hash')
+        found.append({
+            'source': 'TITLE_PLACE.json',
+            'name': row['row'],
+            'first': first,
+            'last': last,
+            'path': str(path),
+            'sha256': digest,
+        })
+    return found
+
+
 def placed_files(review_dir):
     review_dir = Path(review_dir)
     found = []
     for name in mux.SPAN_FILES:
         found.extend(_files(json.loads((review_dir / name).read_text()), name))
+    found.extend(title_files(review_dir))
     return found
 
 
@@ -326,13 +356,18 @@ def render(groups, out_dir, master=recipe.DEFAULT_MASTER):
 def build_report(review_dir=mux.REVIEW):
     report = mux.build_report(review_dir)
     groups = partial_groups(report, review_dir)
-    expected = [(2718, 2887), (3168, 3343), (11038, 11245)]
+    expected = [(2718, 2887), (3168, 3343), (4016, 4138), (11038, 11245)]
     if [(g['first'], g['last']) for g in groups] != expected:
         raise ValueError('The incomplete groups changed')
     master = next(piece for piece in groups[0]['pieces'] if piece['first'] <= 2869 <= piece['last'])
     if (master['kind'], master['first'], master['last']) != ('master', 2869, 2869):
         raise ValueError('Frame 2869 is not the master stitch')
-    if groups[2]['pieces'][0].get('source') != 'SAFE_PATH_TITLE.json':
+    fire = groups[2]['pieces']
+    if [(p['kind'], p['first'], p['last']) for p in fire] != [
+        ('intermediate', 4016, 4129), ('master', 4130, 4138),
+    ]:
+        raise ValueError('The fire title does not leave frames 4130-4138 as the master')
+    if groups[3]['pieces'][0].get('source') != 'SAFE_PATH_TITLE.json':
         raise ValueError('Safe path is not the one-title intermediate')
     return {
         'job': 'J2242',

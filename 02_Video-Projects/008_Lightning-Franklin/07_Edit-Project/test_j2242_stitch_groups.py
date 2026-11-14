@@ -42,9 +42,13 @@ class StitchGroups(unittest.TestCase):
     def test_the_three_real_groups_use_master_pixels_for_the_gaps(self):
         groups = stitch.partial_groups(mux.build_report(), mux.REVIEW)
         self.assertEqual([(g['first'], g['last']) for g in groups], [
-            (2718, 2887), (3168, 3343), (11038, 11245),
+            (2718, 2887), (3168, 3343), (4016, 4138), (11038, 11245),
         ])
-        frank, jar, safe = groups
+        frank, jar, fire, safe = groups
+        self.assertEqual([(p['kind'], p['first'], p['last']) for p in fire['pieces']], [
+            ('intermediate', 4016, 4129),
+            ('master', 4130, 4138),
+        ])
         self.assertEqual([(p['kind'], p['first'], p['last']) for p in frank['pieces']], [
             ('intermediate', 2718, 2864),
             ('intermediate', 2865, 2867),

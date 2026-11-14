@@ -1,0 +1,150 @@
+{
+  "job": "J2242",
+  "status": "TITLE_ROWS_PLACED",
+  "rows": [
+    {
+      "row": "15_likeness_fire",
+      "status": "PLACED",
+      "master_frames": [
+        4016,
+        4129
+      ],
+      "frames": 114,
+      "clock_frames": [
+        4016,
+        4129
+      ],
+      "clock_matches_pixels": true,
+      "clock_frames_before_picture": null,
+      "frames_past_the_cut": null,
+      "mean_mae": 0.2098,
+      "worst_frame_mae": 3.2955,
+      "margin": 1.7652,
+      "scale": "96x54 gray",
+      "full_resolution_spots": [
+        {
+          "master_frame": 4016,
+          "overlay_frame": 0,
+          "mae": 0.56,
+          "match": true
+        },
+        {
+          "master_frame": 4069,
+          "overlay_frame": 53,
+          "mae": 0.949,
+          "match": true
+        },
+        {
+          "master_frame": 4129,
+          "overlay_frame": 113,
+          "mae": 5.384,
+          "match": true
+        }
+      ]
+    },
+    {
+      "row": "06_same_thing",
+      "status": "PLACED",
+      "master_frames": [
+        8189,
+        8348
+      ],
+      "frames": 160,
+      "clock_frames": [
+        8188,
+        8348
+      ],
+      "clock_matches_pixels": false,
+      "clock_frames_before_picture": [
+        8188,
+        8188
+      ],
+      "frames_past_the_cut": null,
+      "mean_mae": 0.2039,
+      "worst_frame_mae": 0.3451,
+      "margin": 2.5839,
+      "scale": "96x54 gray",
+      "full_resolution_spots": [
+        {
+          "master_frame": 8188,
+          "overlay_frame": 0,
+          "mae": 39.773,
+          "match": false
+        },
+        {
+          "master_frame": 8189,
+          "overlay_frame": 0,
+          "mae": 0.554,
+          "match": true
+        },
+        {
+          "master_frame": 8348,
+          "overlay_frame": 159,
+          "mae": 1.119,
+          "match": true
+        }
+      ]
+    },
+    {
+      "row": "08_looking_path",
+      "status": "PLACED",
+      "master_frames": [
+        10777,
+        10852
+      ],
+      "frames": 76,
+      "clock_frames": [
+        10755,
+        10830
+      ],
+      "clock_matches_pixels": false,
+      "clock_frames_before_picture": [
+        10755,
+        10776
+      ],
+      "frames_past_the_cut": [
+        10831,
+        10852
+      ],
+      "mean_mae": 0.4175,
+      "worst_frame_mae": 0.7384,
+      "margin": 0.9256,
+      "scale": "96x54 gray",
+      "full_resolution_spots": [
+        {
+          "master_frame": 10755,
+          "overlay_frame": 0,
+          "mae": 54.88,
+          "match": false
+        },
+        {
+          "master_frame": 10777,
+          "overlay_frame": 0,
+          "mae": 1.387,
+          "match": true
+        },
+        {
+          "master_frame": 10825,
+          "overlay_frame": 48,
+          "mae": 2.258,
+          "match": true
+        },
+        {
+          "master_frame": 10852,
+          "overlay_frame": 75,
+          "mae": 2.316,
+          "match": true
+        }
+      ]
+    }
+  ],
+  "match_mean_max": 0.5,
+  "frame_mae_max": 3.5,
+  "margin_min": 0.9,
+  "frame_2869": "out",
+  "master_created": false,
+  "final_film_approval": false,
+  "motion_review": false,
+  "audio_review": false,
+  "postcard_match": "96x54 gray mean absolute error; not a motion review"
+}

@@ -59,7 +59,17 @@ class PacketPlan(unittest.TestCase):
         self.assertIn([3168, 3259], jar['stitch_source_frames'])
         self.assertTrue(report['job_envelopes_are_closed_idr_groups'])
         self.assertEqual(report['night_street'], 'packet_copy')
-        self.assertEqual(report['unplaced_title_rows'], list(mux.UNPLACED_TITLES))
+        self.assertEqual(report['unplaced_title_rows'], [])
+        self.assertEqual(report['placed_title_rows'], list(mux.PLACED_TITLES))
+        for name, first, last in (
+            ('15_likeness_fire', 4016, 4129),
+            ('06_same_thing', 8189, 8348),
+            ('08_looking_path', 10777, 10852),
+        ):
+            parts = [part for env in report['envelopes'] for part in env['changed']
+                     if part['name'] == name]
+            self.assertEqual(min(part['first'] for part in parts), first)
+            self.assertEqual(max(part['last'] for part in parts), last)
 
 
 if __name__ == '__main__':

@@ -1093,3 +1093,17 @@ The files and clocks are in `/Volumes/MiniWork/scratch/J2242-stitch-v03/`. `STIT
 136 J2242 unit tests OK, 5 of them new. `check_all.sh` result is in `CHECK_ALL_STITCH.txt`. This is a pixel check, not a motion review, an audio review, or a film approval. No v04 master. Original masters and audio are unchanged. No spend, generation, UAT, R2 or YouTube action. No detached process.
 
 Remaining: give `15_likeness_fire`, `06_same_thing` and `08_looking_path` master frame numbers if they belong on the master, encode each closed group, mux copied packets and the original audio, then preservation, loudness and sync, and the film gates. Then J2243 and Chief review. Continue this PR #542 worktree. Frame 2869 stays the master picture inside its group.
+
+## Picture-title placement — thirty-first run, 14 November 2026
+
+Cursor worker. No master was muxed. The three picture titles now have master frame numbers, chosen by a unique full-frame match rather than the cut clock. `_j2242_title_place.py` slides each overlay across a 96×54 gray copy of all 12,923 master frames. A match has to stay under mean absolute error 0.5, with the next-best alignment at least 0.9 worse. Frame 2869 stays the master picture.
+
+- `15_likeness_fire`, frames 4016–4129, 114 frames. The clock window is the same span. Mean error 0.2098, margin 1.7652. The last frame's full-resolution error is 5.384 because the diagram on the plate moves; the plate is the same picture. Stills of master frame 4129 and overlay frame 113 show that. This is a still check.
+- `06_same_thing`, frames 8189–8348, 160 frames. Clock frame 8188 is the previous picture, full-resolution error 39.773 against overlay frame 0, so it stays the master. Mean error 0.2039, margin 2.5839.
+- `08_looking_path`, frames 10777–10852, 76 frames. The cut clock is 10755–10830, which does not match the picture (full-resolution error 54.880 at frame 10755). The match runs 22 frames past that cut, through 10831–10852. Mean error 0.4175, margin 0.9256.
+
+None of the three ranges overlaps an existing splice. The closed-IDR plan is now 44 changes, 4,928 frames to rebuild and 7,995 copied. 39 groups, 35 already complete. Four still need master pixels inside the group: 2869 inside 2718–2887, 3168–3259 ahead of the jar, 4130–4138 after the fire title, and 11118–11245 after the one-title safe path. Electricity and the path title fill their own groups. Night street 1129–1231 stays copied. Frame 3353 stays copied.
+
+140 J2242 unit tests OK, 4 of them new. `check_all.sh` result is in `CHECK_ALL_TITLE_PLACE.txt`. This is a pixel check, not a motion review, an audio review, or a film approval. No v04 master. Original masters and audio are unchanged. No spend, generation, UAT, R2 or YouTube action. No detached process.
+
+Remaining: stitch master frames 4130–4138 onto the fire title, encode each closed group, mux copied packets and the original audio, then preservation, loudness and sync, and the film gates. Then J2243 and Chief review. Continue this PR #542 worktree. Frame 2869 stays the master picture inside its group.
