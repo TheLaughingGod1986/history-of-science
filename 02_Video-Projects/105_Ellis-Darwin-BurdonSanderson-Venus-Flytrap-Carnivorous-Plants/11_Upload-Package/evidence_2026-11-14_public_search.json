@@ -1,0 +1,577 @@
+{
+ "pulled": "2026-11-14",
+ "source": "YouTube GB search results and autocomplete; public, no login. Not vidIQ.",
+ "queries": {
+  "how do venus flytraps work": {
+   "suggest": [
+    "how do venus flytraps work",
+    "how does venus fly traps work",
+    "how venus fly trap works",
+    "how to make venus fly trap working model"
+   ],
+   "search": [
+    {
+     "id": "YPzp-p-na88",
+     "title": "What's Inside A Venus Flytrap?",
+     "channel": "Insider Science",
+     "views": "7,610,046 views",
+     "age": "7 yr ago",
+     "length": "3:57"
+    },
+    {
+     "id": "Rj4FiwB1FWE",
+     "title": "Deadliest Plants | How Does A Venus Flytrap Work? | Carnivorous Plants | The Dr. Binocs Show",
+     "channel": "Peekaboo Kidz",
+     "views": "2,333,002 views",
+     "age": "1 yr ago",
+     "length": "5:42"
+    },
+    {
+     "id": "O7eQKSf0LmY",
+     "title": "Hungry Venus flytraps snap shut on a host of unfortunate flies | Life - BBC",
+     "channel": "BBC",
+     "views": "13,770,762 views",
+     "age": "16 yr ago",
+     "length": "2:51"
+    },
+    {
+     "id": "JPCr4U1VL30",
+     "title": "How Does A Venus Flytrap Work? | COLOSSAL QUESTIONS",
+     "channel": "Colossal Cranium",
+     "views": "1,352,980 views",
+     "age": "5 yr ago",
+     "length": "2:54"
+    },
+    {
+     "id": "_IEwRtNXTvw",
+     "title": "Venus fly traps can COUNT! 😲 The Green Planet 🌱 BBC",
+     "channel": "BBC",
+     "views": "801,816 views",
+     "age": "4 yr ago",
+     "length": "1:45"
+    },
+    {
+     "id": "CAUOhG_c4Go",
+     "title": "The Insane Biology of: The Venus Flytrap",
+     "channel": "Real Science",
+     "views": "1,271,863 views",
+     "age": "4 yr ago",
+     "length": "16:11"
+    },
+    {
+     "id": "xZt4wGKZNuw",
+     "title": "No Bullsh!t Venus Flytrap Care Guide",
+     "channel": "Flytrap Films",
+     "views": "307,415 views",
+     "age": "2 yr ago",
+     "length": "8:22"
+    },
+    {
+     "id": "5MnZWamBUCE",
+     "title": "Carnivorous Plants for Kids | Learn about sundews, Venus flytraps, and more",
+     "channel": "Learn Bright",
+     "views": "1,966,853 views",
+     "age": "1 yr ago",
+     "length": "6:38"
+    }
+   ]
+  },
+  "carnivorous plants": {
+   "suggest": [
+    "carnivorous plants",
+    "carnivorous plants for kids",
+    "carnivorous plants feeding",
+    "carnivorous plants terrarium",
+    "carnivorous plants documentary",
+    "carnivorous plants care",
+    "carnivorous plants time lapse",
+    "carnivorous plants names",
+    "carnivorous plants for beginners",
+    "carnivorous plants hub"
+   ],
+   "search": [
+    {
+     "id": "I1hfJmLGRYY",
+     "title": "The Secret World of Murderous Plants | Narrated by David Attenborough | 4K Nature Documentary",
+     "channel": "Terra Mater",
+     "views": "1,283,419 views",
+     "age": "2 mo ago",
+     "length": "53:03"
+    },
+    {
+     "id": "O7eQKSf0LmY",
+     "title": "Hungry Venus flytraps snap shut on a host of unfortunate flies | Life - BBC",
+     "channel": "BBC",
+     "views": "13,770,753 views",
+     "age": "16 yr ago",
+     "length": "2:51"
+    },
+    {
+     "id": "5MnZWamBUCE",
+     "title": "Carnivorous Plants for Kids | Learn about sundews, Venus flytraps, and more",
+     "channel": "Learn Bright",
+     "views": "1,966,853 views",
+     "age": "1 yr ago",
+     "length": "6:38"
+    },
+    {
+     "id": "Hzk1bM2vVFU",
+     "title": "True Facts : Carnivorous Plants",
+     "channel": "Ze Frank",
+     "views": "15,868,859 views",
+     "age": "8 yr ago",
+     "length": "4:58"
+    },
+    {
+     "id": "LcSxcE1ERmM",
+     "title": "Carnivorous Plants | tour and care, unique houseplants for your collection",
+     "channel": "benjiplant",
+     "views": "952,419 views",
+     "age": "4 yr ago",
+     "length": "16:10"
+    },
+    {
+     "id": "4yvUjwt2-jI",
+     "title": "Carnivorous Plants | The Dr. Binocs Show | Educational Videos For Kids",
+     "channel": "Peekaboo Kidz",
+     "views": "14,409,773 views",
+     "age": "10 yr ago",
+     "length": "4:08"
+    },
+    {
+     "id": "Jlp6ecxmYQY",
+     "title": "The Most Epic Carnivorous Plant Nursery",
+     "channel": "Crime Pays But Botany Doesn't",
+     "views": "155,962 views",
+     "age": "2 yr ago",
+     "length": "1:17:42"
+    },
+    {
+     "id": "trWzDlRvv1M",
+     "title": "Carnivorous Plants | The Private Life of Plants | David Attenborough | Wildlife | BBC Studios",
+     "channel": "BBC Studios",
+     "views": "1,628,711 views",
+     "age": "19 yr ago",
+     "length": "4:15"
+    }
+   ]
+  },
+  "why do some plants eat insects": {
+   "suggest": [
+    "why do some plants eat insects",
+    "why do insectivorous plants eat insects"
+   ],
+   "search": [
+    {
+     "id": "5MnZWamBUCE",
+     "title": "Carnivorous Plants for Kids | Learn about sundews, Venus flytraps, and more",
+     "channel": "Learn Bright",
+     "views": "1,966,853 views",
+     "age": "1 yr ago",
+     "length": "6:38"
+    },
+    {
+     "id": "Rj4FiwB1FWE",
+     "title": "Deadliest Plants | How Does A Venus Flytrap Work? | Carnivorous Plants | The Dr. Binocs Show",
+     "channel": "Peekaboo Kidz",
+     "views": "2,333,002 views",
+     "age": "1 yr ago",
+     "length": "5:42"
+    },
+    {
+     "id": "4yvUjwt2-jI",
+     "title": "Carnivorous Plants | The Dr. Binocs Show | Educational Videos For Kids",
+     "channel": "Peekaboo Kidz",
+     "views": "14,409,773 views",
+     "age": "10 yr ago",
+     "length": "4:08"
+    },
+    {
+     "id": "Hzk1bM2vVFU",
+     "title": "True Facts : Carnivorous Plants",
+     "channel": "Ze Frank",
+     "views": "15,868,859 views",
+     "age": "8 yr ago",
+     "length": "4:58"
+    },
+    {
+     "id": "O7eQKSf0LmY",
+     "title": "Hungry Venus flytraps snap shut on a host of unfortunate flies | Life - BBC",
+     "channel": "BBC",
+     "views": "13,770,762 views",
+     "age": "16 yr ago",
+     "length": "2:51"
+    },
+    {
+     "id": "ee7muQ_qKU0",
+     "title": "The wild world of carnivorous plants - Kenny Coogan",
+     "channel": "TED-Ed",
+     "views": "2,362,071 views",
+     "age": "7 yr ago",
+     "length": "5:11"
+    },
+    {
+     "id": "2WWAzpGrtQQ",
+     "title": "कार्नीवोरस प्लांट्स | मांस खाने वाले पौधे | Carnivorous Plants In Hindi | Dr.Binocs Show",
+     "channel": "Binocs Ki Duniya",
+     "views": "1,315,130 views",
+     "age": "4 yr ago",
+     "length": "3:52"
+    },
+    {
+     "id": "QxM2Hu70tVk",
+     "title": "What It's Like To Be Eaten By A Carnivorous Plant",
+     "channel": "Dumb Doggo",
+     "views": "16,449,549 views",
+     "age": "2 yr ago",
+     "length": "8:49"
+    }
+   ]
+  },
+  "How Do Venus Flytraps Work? (The Plant That Counts to Five)": {
+   "suggest": [],
+   "search": [
+    {
+     "id": "O7eQKSf0LmY",
+     "title": "Hungry Venus flytraps snap shut on a host of unfortunate flies | Life - BBC",
+     "channel": "BBC",
+     "views": "13,770,753 views",
+     "age": "16 yr ago",
+     "length": "2:51"
+    },
+    {
+     "id": "_IEwRtNXTvw",
+     "title": "Venus fly traps can COUNT! 😲 The Green Planet 🌱 BBC",
+     "channel": "BBC",
+     "views": "801,804 views",
+     "age": "4 yr ago",
+     "length": "1:45"
+    },
+    {
+     "id": "Rj4FiwB1FWE",
+     "title": "Deadliest Plants | How Does A Venus Flytrap Work? | Carnivorous Plants | The Dr. Binocs Show",
+     "channel": "Peekaboo Kidz",
+     "views": "2,333,002 views",
+     "age": "1 yr ago",
+     "length": "5:42"
+    },
+    {
+     "id": "JPCr4U1VL30",
+     "title": "How Does A Venus Flytrap Work? | COLOSSAL QUESTIONS",
+     "channel": "Colossal Cranium",
+     "views": "1,352,996 views",
+     "age": "5 yr ago",
+     "length": "2:54"
+    },
+    {
+     "id": "HYVNH287Bfo",
+     "title": "No Brain, Yet It Can Count to Five: How the Venus Flytrap Works",
+     "channel": "THE WILD PARADOX",
+     "views": "404 views",
+     "age": "2 wk ago",
+     "length": "13:48"
+    },
+    {
+     "id": "ejEj1LlR7n4",
+     "title": "The Venus Flytrap Explained: 5 Facts About Nature’s Most Famous Carnivorous Plant for kids",
+     "channel": "Curious Mind Discovery",
+     "views": "17,278 views",
+     "age": "10 mo ago",
+     "length": "3:42"
+    },
+    {
+     "id": "bTfbMPkRtUA",
+     "title": "Total Venus Flytrap Care Under 10 Minutes - Wal-Mart ,Lowes Beginner Fly Trap Tips (Updated 2024)",
+     "channel": "Carnivorous Plants Hub",
+     "views": "299,747 views",
+     "age": "3 yr ago",
+     "length": "10:00"
+    },
+    {
+     "id": "5MnZWamBUCE",
+     "title": "Carnivorous Plants for Kids | Learn about sundews, Venus flytraps, and more",
+     "channel": "Learn Bright",
+     "views": "1,966,853 views",
+     "age": "1 yr ago",
+     "length": "6:38"
+    }
+   ]
+  },
+  "Carnivorous Plants: Why Darwin Fed Roast Beef to a Leaf": {
+   "suggest": [],
+   "search": [
+    {
+     "id": "O7eQKSf0LmY",
+     "title": "Hungry Venus flytraps snap shut on a host of unfortunate flies | Life - BBC",
+     "channel": "BBC",
+     "views": "13,770,753 views",
+     "age": "16 yr ago",
+     "length": "2:51"
+    },
+    {
+     "id": "Hzk1bM2vVFU",
+     "title": "True Facts : Carnivorous Plants",
+     "channel": "Ze Frank",
+     "views": "15,868,859 views",
+     "age": "8 yr ago",
+     "length": "4:58"
+    },
+    {
+     "id": "4yvUjwt2-jI",
+     "title": "Carnivorous Plants | The Dr. Binocs Show | Educational Videos For Kids",
+     "channel": "Peekaboo Kidz",
+     "views": "14,409,773 views",
+     "age": "10 yr ago",
+     "length": "4:08"
+    },
+    {
+     "id": "X89XO16LJhU",
+     "title": "Darwin’s 150-year-old theory is confirmed by new carnivorous plant study",
+     "channel": "ABC10",
+     "views": "832 views",
+     "age": "3 mo ago",
+     "length": "0:42"
+    },
+    {
+     "id": "PxQj0xjObVE",
+     "title": "Darwin's Darlings: Meat-Eating Plants",
+     "channel": "SciShow",
+     "views": "1,202,692 views",
+     "age": "12 yr ago",
+     "length": "3:41"
+    },
+    {
+     "id": "I1hfJmLGRYY",
+     "title": "The Secret World of Murderous Plants | Narrated by David Attenborough | 4K Nature Documentary",
+     "channel": "Terra Mater",
+     "views": "1,283,419 views",
+     "age": "2 mo ago",
+     "length": "53:03"
+    },
+    {
+     "id": "5MnZWamBUCE",
+     "title": "Carnivorous Plants for Kids | Learn about sundews, Venus flytraps, and more",
+     "channel": "Learn Bright",
+     "views": "1,966,853 views",
+     "age": "1 yr ago",
+     "length": "6:38"
+    },
+    {
+     "id": "heZUA5rQvBM",
+     "title": "The Carnivorous Plants That Gave Up Meat for Poop",
+     "channel": "SciShow",
+     "views": "132,489 views",
+     "age": "5 yr ago",
+     "length": "5:21"
+    }
+   ]
+  },
+  "The Plant That Counts to Five Before It Eats": {
+   "suggest": [],
+   "search": [
+    {
+     "id": "1nOhGI2vzZo",
+     "title": "Venus Flytrap Counts to Five Before It Eats",
+     "channel": "Redbeard",
+     "views": "3,840 views",
+     "age": "1 mo ago",
+     "length": "0:42"
+    },
+    {
+     "id": "6qKEYTxUX7Q",
+     "title": "This Plant Counts to 5 Before It Eats",
+     "channel": "Biology Did What",
+     "views": "947 views",
+     "age": "11 hr ago",
+     "length": "0:37"
+    },
+    {
+     "id": "8OnyBi6onxI",
+     "title": "This Plant Counts To Five Before It Eats",
+     "channel": "Odd Knowledge",
+     "views": "50 views",
+     "age": "3 days ago",
+     "length": "0:40"
+    },
+    {
+     "id": "l_emcvGikwk",
+     "title": "This Plant Counts to 5 Before It Eats You 🪰",
+     "channel": "CurioFrame",
+     "views": "15,123 views",
+     "age": "7 days ago",
+     "length": "0:52"
+    },
+    {
+     "id": "zdrzidLXUPQ",
+     "title": "The Plant That Counts to Two Before It Snaps Shut #biology",
+     "channel": "SCIENz",
+     "views": "2,593 views",
+     "age": "10 hr ago",
+     "length": "1:58"
+    },
+    {
+     "id": "m81IbTdo3tk",
+     "title": "This Plant Counts to Five Before It Eats?!",
+     "channel": "FactBlastHunter ",
+     "views": "5 views",
+     "age": "3 days ago",
+     "length": "0:46"
+    },
+    {
+     "id": "ay4_XzfjXm8",
+     "title": "The Plant That Counts to Five Before It Eats",
+     "channel": "The Know-It-Owl",
+     "views": "997 views",
+     "age": "2 mo ago",
+     "length": "0:31"
+    },
+    {
+     "id": "1h8_Of9xIls",
+     "title": "The Plant That Counts to 5 Before Eating",
+     "channel": "That's The Trick",
+     "views": "1,399 views",
+     "age": "3 wk ago",
+     "length": "0:52"
+    }
+   ]
+  },
+  "How Does a Venus Flytrap Count to Five?": {
+   "suggest": [],
+   "search": [
+    {
+     "id": "DXSRrkmHKsQ",
+     "title": "How a Venus Flytrap Counts to 5",
+     "channel": "Now Wait, Why?",
+     "views": "1,447 views",
+     "age": "1 day ago",
+     "length": "0:26"
+    },
+    {
+     "id": "0FsQfLy6k20",
+     "title": "Why Does the Venus Flytrap Count to Five?",
+     "channel": "Rude Plants",
+     "views": "1,468 views",
+     "age": "7 days ago",
+     "length": "1:22"
+    },
+    {
+     "id": "_IEwRtNXTvw",
+     "title": "Venus fly traps can COUNT! 😲 The Green Planet 🌱 BBC",
+     "channel": "BBC",
+     "views": "801,804 views",
+     "age": "4 yr ago",
+     "length": "1:45"
+    },
+    {
+     "id": "x7nd0M1g8DY",
+     "title": "How Do Venus Flytraps Count to Five?",
+     "channel": "edushorts",
+     "views": "131 views",
+     "age": "3 mo ago",
+     "length": "0:34"
+    },
+    {
+     "id": "4CsKFbNKkxk",
+     "title": "How Does a Plant With No Brain Count to Five?",
+     "channel": "Brightnaut",
+     "views": "2 views",
+     "age": "1 day ago",
+     "length": "3:36"
+    },
+    {
+     "id": "BL4G1n7g6VI",
+     "title": "How does a Venus flytrap count to five? 🪴",
+     "channel": "BearlyBelievable",
+     "views": "1,004 views",
+     "age": "3 mo ago",
+     "length": "0:21"
+    },
+    {
+     "id": "HYVNH287Bfo",
+     "title": "No Brain, Yet It Can Count to Five: How the Venus Flytrap Works",
+     "channel": "THE WILD PARADOX",
+     "views": "404 views",
+     "age": "2 wk ago",
+     "length": "13:48"
+    },
+    {
+     "id": "o5BwnPOo6iU",
+     "title": "Venus Flytraps Can Actually Count to Five",
+     "channel": "Random Things You May Not Know",
+     "views": "59 views",
+     "age": "3 wk ago",
+     "length": "2:14"
+    }
+   ]
+  },
+  "Why Do Venus Flytraps Eat Insects? (Darwin's Bog Test)": {
+   "suggest": [],
+   "search": [
+    {
+     "id": "O7eQKSf0LmY",
+     "title": "Hungry Venus flytraps snap shut on a host of unfortunate flies | Life - BBC",
+     "channel": "BBC",
+     "views": "13,770,762 views",
+     "age": "16 yr ago",
+     "length": "2:51"
+    },
+    {
+     "id": "Rj4FiwB1FWE",
+     "title": "Deadliest Plants | How Does A Venus Flytrap Work? | Carnivorous Plants | The Dr. Binocs Show",
+     "channel": "Peekaboo Kidz",
+     "views": "2,333,002 views",
+     "age": "1 yr ago",
+     "length": "5:42"
+    },
+    {
+     "id": "sPNd0AvGduY",
+     "title": "What Do Venus Fly Trap Eat - Best and Worst Options",
+     "channel": "Venus Flytrap World",
+     "views": "46,664 views",
+     "age": "3 yr ago",
+     "length": "2:33"
+    },
+    {
+     "id": "UdXzWRkEVBA",
+     "title": "What do Venus Flytraps Eat and How?",
+     "channel": "California_Carnivores",
+     "views": "13,984 views",
+     "age": "5 yr ago",
+     "length": "5:06"
+    },
+    {
+     "id": "MX6pOfBX2Kc",
+     "title": "What Is the Weirdest Thing a Venus Flytrap Eats?",
+     "channel": "Crazy Creatures",
+     "views": "414,378 views",
+     "age": "5 yr ago",
+     "length": "4:29"
+    },
+    {
+     "id": "_IEwRtNXTvw",
+     "title": "Venus fly traps can COUNT! 😲 The Green Planet 🌱 BBC",
+     "channel": "BBC",
+     "views": "801,804 views",
+     "age": "4 yr ago",
+     "length": "1:45"
+    },
+    {
+     "id": "4h9vQloY1d4",
+     "title": "The Secret Behind the Venus Flytrap’s Deadly Trap! | Why Do Venus Flytraps Eat Insects?",
+     "channel": "QuickSci",
+     "views": "553 views",
+     "age": "3 wk ago",
+     "length": "2:50"
+    },
+    {
+     "id": "5MnZWamBUCE",
+     "title": "Carnivorous Plants for Kids | Learn about sundews, Venus flytraps, and more",
+     "channel": "Learn Bright",
+     "views": "1,966,853 views",
+     "age": "1 yr ago",
+     "length": "6:38"
+    }
+   ]
+  }
+ }
+}
