@@ -1251,6 +1251,21 @@ The candidate is `/Volumes/MiniWork/scratch/J2242-assemble-v02/franklin_assembly
 
 This is a packet and timestamp check, not a decoded-pixel check, a motion review, an audio review, or a film approval. Picture preservation, loudness, sync and the film gates are still outstanding. No spend, generation, UAT, R2 or YouTube action.
 
-The preservation verifier is running in tmux `J2242-verify`. Log: `/Users/benjaminoats/_desk/logs/J2242-verify.log`. Exit marker: `/Users/benjaminoats/_desk/logs/J2242-verify.done`. A missing marker means it is still running: do not start a second copy. Output: `/Volumes/MiniWork/scratch/J2242-assemble-v02-verify`.
+The preservation verifier finished. Exit marker `/Users/benjaminoats/_desk/logs/J2242-verify.done` is `0`. Do not start another copy. Output: `/Volumes/MiniWork/scratch/J2242-assemble-v02-verify`.
 
-Remaining: read that verifier, then loudness, sync and the film gates. Then J2243 and Chief review. Continue this PR #542 worktree.
+Remaining after that read: loudness, sync and the film gates. Then J2243 and Chief review. Continue this PR #542 worktree.
+
+## Loudness and sync — forty-first run, 14 November 2026
+
+Cursor worker. The verifier exit was 0. It checked 8,225 unchanged decoded frames, 7,995 copied video packets outside the encoded envelopes, and all 25,296 audio packets. `identity_selfcheck` is false because the candidate is not the source master. No v04 master was named.
+
+Loudness and lag were measured. This session did not hear the mix.
+
+- Both decodes are 25,902,071 mono float samples at 48 kHz, the same count as `MEASURE_v03.json`. The sample bytes match. SHA-256 `2d1365f2ae2b7e223e9e65a6d96bc261c31d799b3ed69e23f882b79cc58475ef`.
+- The v03 `lag_ms` correlation, a 2 s window searched ±40 ms, is 0.000 ms at 5, 100, 300 and 500 s, and at the patch times 17.750, 31.167, 47.208, 104.667, 132.292, 140.000, 188.417, 207.833 and 474.375 s. None sat on the search edge.
+- `ebur128=peak=true` on the audio of both files: I −14.1 LUFS, true peak −1.2 dBFS, LRA 4.1 LU. That is the same summary `MEASURE_v03.json` recorded for the master. The contract's −14.129 is the finer historical figure; this ffmpeg summary prints one decimal and was not used to re-derive it.
+- Container clocks match: video starts at 0.125 s for 539.500 s and 12,923 frames; audio starts at 0.000 s for 539.626479 s and 25,296 AAC frames.
+
+`AUDIO_MEASURE.json` records the rows. Scratch logs stay in `/Volumes/MiniWork/scratch/J2242-audio-v01`. No code change, so the unit suite was not re-run. No spend, generation, UAT, R2 or YouTube action. No detached process.
+
+Remaining: the film gates on this candidate (`picture_qa`, `polish_gate`, `gate:episode`, package lint, `music_gate`, `sfx_kit.py level`, and the 168×94 sheet). Do not name it `hos_008_master_v04.mp4` until those pass. Then J2243 and Chief review. Continue this PR #542 worktree.
