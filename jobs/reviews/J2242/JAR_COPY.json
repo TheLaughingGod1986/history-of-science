@@ -1,0 +1,19 @@
+{
+  "job": "J2242",
+  "status": "JAR_KEEP_PACKET_COPY",
+  "clip": "/Volumes/MiniWork/scratch/J2242-jar-copy-v01/jar_keep_3168_3258.mp4",
+  "clip_sha256": "56e9c55ed721ac29131ca2adfcbf10ef3beec2c7ffa4f733d4d1ac0cc5157edf",
+  "clip_bytes": 1901081,
+  "frames": 91,
+  "first": 3168,
+  "last": 3258,
+  "blocked_frame": 3259,
+  "blocked_reason": "Frame 3259 references kept frame 3258 and replaced frame 3260",
+  "idr_in_band_sps_pps": true,
+  "decoded_hashes_match_master": true,
+  "audio": false,
+  "finished_master": false,
+  "approval": false,
+  "spend_gbp": 0,
+  "source_master_sha256": "cf1561c218bace7bc14ed3d625b0790a457027a90f392262f45ca7172723099b"
+}

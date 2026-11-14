@@ -1194,3 +1194,15 @@ Four runs look at a picture this job replaces, so those original packets cannot 
 153 J2242 unit tests OK, 5 of them new. check_all result is in `CHECK_ALL_REF_CHECK.txt`. This is a packet reference check, not a film approval. No v04 master. Original masters and audio are unchanged. No spend, generation, UAT, R2 or YouTube action. No detached process.
 
 Remaining: copy frames 3168–3258 as original packets. The four blocked runs still need exact pixels while the pictures they reference stay the new High encodes. Then mux the copied packets and the original audio, and run preservation, loudness, sync and the film gates. Then J2243 and Chief review. Continue this PR #542 worktree. Frame 2869 stays the master picture inside its group.
+
+## Jar keep packet copy — thirty-seventh run, 14 November 2026
+
+Cursor worker. No master was muxed. `_j2242_jar_copy.py` copies frames 3168–3258, 91 frames, as the original master packets. The reference check still says this is the only exact run. Frame 3259 stays out: it is a B frame that uses kept frame 3258 and replaced frame 3260. Those 91 packets are a decode-order prefix. The first packet is the IDR and it carries the SPS and the PPS. Each copied packet matches the master packet hash, and each decoded frame matches the master frame hash at the same PTS. The clip is silent.
+
+The clip is `/Volumes/MiniWork/scratch/J2242-jar-copy-v01/jar_keep_3168_3258.mp4`, 1,901,081 bytes, SHA-256 `56e9c55ed721ac29131ca2adfcbf10ef3beec2c7ffa4f733d4d1ac0cc5157edf`. It is not `hos_008_master_v04.mp4`.
+
+157 J2242 unit tests OK, 4 of them new. check_all result is in `CHECK_ALL_JAR_COPY.txt`. This is a packet and pixel check, not a motion review, an audio review, or a film approval. No v04 master. Original masters and audio are unchanged. No spend, generation, UAT, R2 or YouTube action. No detached process.
+
+Still blocked, because each one looks at a replaced picture: frame 2869, frame 3259, frames 4130–4138, and frames 11118–11245. Their original packets cannot sit beside the new High encodes.
+
+Remaining: keep those four blocked runs exact, then mux the copied packets and the original audio. Then preservation, loudness, sync and the film gates. Then J2243 and Chief review. Continue this PR #542 worktree. Frame 2869 stays the master picture inside its group.
