@@ -1206,3 +1206,20 @@ The clip is `/Volumes/MiniWork/scratch/J2242-jar-copy-v01/jar_keep_3168_3258.mp4
 Still blocked, because each one looks at a replaced picture: frame 2869, frame 3259, frames 4130–4138, and frames 11118–11245. Their original packets cannot sit beside the new High encodes.
 
 Remaining: keep those four blocked runs exact, then mux the copied packets and the original audio. Then preservation, loudness, sync and the film gates. Then J2243 and Chief review. Continue this PR #542 worktree. Frame 2869 stays the master picture inside its group.
+
+## Exact pictures for the blocked runs — thirty-eighth run, 14 November 2026
+
+Cursor worker. No master was muxed. The four blocked runs cannot keep their original packets, because each one looks at a picture this job replaces. x264 still will not make a lossless High encode, and the 4:4:4 patch is still rejected. `_j2242_exact_pcm.py` writes High-profile I_PCM pictures instead. Deblocking is off, so the filter cannot change a sample. Each picture is its own IDR and does not need the replaced reference.
+
+139 decoded frames match the master frame hashes at the original timestamps:
+
+- Frame 2869. SHA-256 `07ac014e3e2bb58ecf7f0cd83c0cd4a65f3abf4b68660aa3af5c8dd118410456`.
+- Frame 3259. The jar keep 3168–3258 stays the original packet copy. SHA-256 `c1c3e8150f548841f0c6919df36b963c955a8719b3b84a17852dfa348794da23`.
+- Frames 4130–4138, 9 frames. SHA-256 `914f9a153a41feb9907d14d165a17586c7a12a9c37a8ad27e11aa2cdd2f9e0ea`.
+- Frames 11118–11245, 128 frames. SHA-256 `c932f4e6582f7f4a0cf6f7d6f71d426ce99d8dcd0fbe5f0bf19d2f468ffec8b3`.
+
+The files are in `/Volumes/MiniWork/scratch/J2242-exact-pcm-v01/`. `EXACT_PCM.json` records them. They are silent elementary streams, not `hos_008_master_v04.mp4`. Their own timestamps are not the master clock. The original presentation timestamps and durations stay in the stitch clocks.
+
+160 J2242 unit tests OK, 3 of them new. check_all result is in `CHECK_ALL_EXACT_PCM.txt`. This is a pixel check, not a motion review, an audio review, or a film approval. No v04 master. Original masters and audio are unchanged. No spend, generation, UAT, R2 or YouTube action. No detached process.
+
+Remaining: mux these exact pictures with the copied packets, the High encodes and the original audio, on the original clock. Then preservation, loudness, sync and the film gates. Then J2243 and Chief review. Continue this PR #542 worktree.

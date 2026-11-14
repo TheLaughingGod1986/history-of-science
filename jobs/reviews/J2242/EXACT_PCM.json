@@ -1,0 +1,52 @@
+{
+  "job": "J2242",
+  "status": "EXACT_PCM_CLIPS",
+  "method": "H264 High I_PCM, deblocking off. x264 has no lossless High profile, and a 4:4:4 lossless patch broke later copied packets.",
+  "why": "Frame 2869, frame 3259, frames 4130-4138 and frames 11118-11245 reference a picture this job replaces, so their original packets cannot be copied.",
+  "runs": [
+    {
+      "first": 2869,
+      "last": 2869,
+      "frames": 1,
+      "path": "/Volumes/MiniWork/scratch/J2242-exact-pcm-v01/exact_2869_2869.h264",
+      "sha256": "07ac014e3e2bb58ecf7f0cd83c0cd4a65f3abf4b68660aa3af5c8dd118410456",
+      "bytes": 3160967
+    },
+    {
+      "first": 3259,
+      "last": 3259,
+      "frames": 1,
+      "path": "/Volumes/MiniWork/scratch/J2242-exact-pcm-v01/exact_3259_3259.h264",
+      "sha256": "c1c3e8150f548841f0c6919df36b963c955a8719b3b84a17852dfa348794da23",
+      "bytes": 3160967
+    },
+    {
+      "first": 4130,
+      "last": 4138,
+      "frames": 9,
+      "path": "/Volumes/MiniWork/scratch/J2242-exact-pcm-v01/exact_4130_4138.h264",
+      "sha256": "914f9a153a41feb9907d14d165a17586c7a12a9c37a8ad27e11aa2cdd2f9e0ea",
+      "bytes": 28448703
+    },
+    {
+      "first": 11118,
+      "last": 11245,
+      "frames": 128,
+      "path": "/Volumes/MiniWork/scratch/J2242-exact-pcm-v01/exact_11118_11245.h264",
+      "sha256": "c932f4e6582f7f4a0cf6f7d6f71d426ce99d8dcd0fbe5f0bf19d2f468ffec8b3",
+      "bytes": 404603889
+    }
+  ],
+  "frames": 139,
+  "decoded_hashes_match_master": true,
+  "source_framehash": "/Users/benjaminoats/_desk/state/J2242/source-preflight-v01/source_decoded.framehash",
+  "clock": "Original PTS and duration stay in the stitch clocks. These elementary streams do not carry that clock.",
+  "profile": "High",
+  "pix_fmt": "yuv420p",
+  "deblocking": "off",
+  "audio": false,
+  "jar_keep_3168_3258": "unchanged packet copy",
+  "finished_master": false,
+  "approval": false,
+  "spend_gbp": 0
+}
