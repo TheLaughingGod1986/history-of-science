@@ -1,0 +1,46 @@
+{
+  "film": "107",
+  "title": "Why Do Leaves Change Colour in Autumn? (The Yellow Was Always There)",
+  "summary": "Proposed in J2835 (14 Nov 2026). Topic brief in TOPIC.md; neighbour gate PASS; waits in jobs/WIP.json next_hos for its rule-E topic review. No production started.",
+  "stages": {
+    "topic": {
+      "state": "todo",
+      "note": "J2835 proposal; rule-E topic review queued"
+    },
+    "script": {
+      "state": "todo"
+    },
+    "facts": {
+      "state": "todo"
+    },
+    "package": {
+      "state": "todo"
+    },
+    "vo": {
+      "state": "todo"
+    },
+    "shorts_scripts": {
+      "state": "todo"
+    },
+    "shorts_vo": {
+      "state": "todo"
+    },
+    "picture": {
+      "state": "todo"
+    },
+    "edit": {
+      "state": "todo"
+    },
+    "thumbnails": {
+      "state": "todo"
+    },
+    "ben_ok": {
+      "state": "todo"
+    },
+    "scheduled": {
+      "state": "todo"
+    }
+  },
+  "claims": [],
+  "next": "Rule-E topic review of the J2835 proposal"
+}

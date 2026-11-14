@@ -1,0 +1,91 @@
+{
+ "pulled": "2026-11-14",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "eels",
+  "where do eels come from",
+  "eel migration sargasso sea"
+ ],
+ "autocomplete": {
+  "eels": [
+   "eels",
+   "eels mighty boosh",
+   "eels novocaine for the soul",
+   "eels i need some sleep",
+   "eels my beloved monster",
+   "eels vs cowboys",
+   "eels and escalators",
+   "eels vs bulldogs",
+   "eels vs sharks",
+   "eels vs rabbitohs"
+  ],
+  "where do eels come from": [
+   "where do eels come from",
+   "where does eels come from",
+   "where did eels come from",
+   "where do electric eels come from",
+   "eels where do they come from"
+  ],
+  "eel migration sargasso sea": [
+   "eel migration sargasso sea"
+  ]
+ },
+ "sharedTitleWords": [
+  "how eels",
+  "the eel"
+ ],
+ "neighbours": [
+  {
+   "id": "RFi6ISTjkR4",
+   "title": "No one can figure out how eels have sex - Lucy Cooke",
+   "channel": "TED-Ed",
+   "views": "2,751,342 views",
+   "age": "6 yr ago",
+   "length": "6:02",
+   "tier": 1,
+   "viewCount": 2751342,
+   "foundBy": "ted-ed eels",
+   "onTopic": true
+  },
+  {
+   "id": "BR1enXROmgA",
+   "title": "Eli the eel: A mysterious migration - James Prosek",
+   "channel": "TED-Ed",
+   "views": "1,157,611 views",
+   "age": "12 yr ago",
+   "length": "4:39",
+   "tier": 1,
+   "viewCount": 1157611,
+   "foundBy": "ted-ed eels",
+   "onTopic": true
+  },
+  {
+   "id": "k61Bk63EvTM",
+   "title": "Why Nobody Knows How Eels Reproduce",
+   "channel": "Thoughty2",
+   "views": "3,317,475 views",
+   "age": "5 yr ago",
+   "length": "16:08",
+   "tier": 2,
+   "viewCount": 3317475,
+   "foundBy": "eels ted",
+   "onTopic": true
+  },
+  {
+   "id": "pPXs0BAnD4Q",
+   "title": "Searching for the Eel Song | Performance Where Water Meets | TEDxHobart",
+   "channel": "TEDx Talks",
+   "views": "743 views",
+   "age": "3 yr ago",
+   "length": "16:50",
+   "tier": 1,
+   "viewCount": 743,
+   "foundBy": "eels ted",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 3,
+ "gate": "PASS",
+ "hasTed": true,
+ "failedQueries": []
+}
