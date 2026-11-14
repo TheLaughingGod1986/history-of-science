@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "/Users/benjaminoats/YouTube/orbit-with-ben/scripts/music_gate.py", line 245, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/Users/benjaminoats/YouTube/orbit-with-ben/scripts/music_gate.py", line 231, in main
+    res = judge(a.film_dir, a.bed, a.video, others)
+  File "/Users/benjaminoats/YouTube/orbit-with-ben/scripts/music_gate.py", line 177, in judge
+    x = decode(bed)
+  File "/Users/benjaminoats/YouTube/orbit-with-ben/scripts/music_gate.py", line 49, in decode
+    return np.frombuffer(sp.run(cmd, capture_output=True, check=True).stdout, np.float32)
+                         ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/subprocess.py", line 578, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['ffmpeg', '-v', 'error', '-i', '/Volumes/MiniWork/scratch/J2230/wt/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/05_Music/hos005-part05-temp_score_bed_v01.mp3', '-t', '300', '-ac', '1', '-ar', '8000', '-f', 'f32le', '-']' returned non-zero exit status 254.
