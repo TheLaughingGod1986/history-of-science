@@ -1,0 +1,278 @@
+{
+  "count": 34,
+  "items": [
+    {
+      "label": "PHILADELPHIA 1752",
+      "row": "01_kite_open",
+      "frame": 48,
+      "pts": 26112,
+      "t": 2.125,
+      "file": "01.jpg"
+    },
+    {
+      "label": "THE ANSWER IS",
+      "row": "02_tower_tilt",
+      "frame": 309,
+      "pts": 159744,
+      "t": 13.0,
+      "file": "02.jpg"
+    },
+    {
+      "label": "ON THE ROOF",
+      "row": "02_tower_tilt",
+      "frame": 385,
+      "pts": 198656,
+      "t": 16.167,
+      "file": "03.jpg"
+    },
+    {
+      "label": "A KITE",
+      "row": "03_table_three",
+      "frame": 443,
+      "pts": 228352,
+      "t": 18.583,
+      "file": "04.jpg"
+    },
+    {
+      "label": "A KEY",
+      "row": "03_table_three",
+      "frame": 483,
+      "pts": 248832,
+      "t": 20.25,
+      "file": "05.jpg"
+    },
+    {
+      "label": "A JAR",
+      "row": "03_table_three",
+      "frame": 524,
+      "pts": 269824,
+      "t": 21.958,
+      "file": "06.jpg"
+    },
+    {
+      "label": "LIGHTNING",
+      "row": "12_steeple_fire",
+      "frame": 1654,
+      "pts": 849408,
+      "t": 69.125,
+      "file": "07.jpg"
+    },
+    {
+      "label": "RING THE BELLS",
+      "row": "13_ring_the_bells",
+      "frame": 1741,
+      "pts": 893952,
+      "t": 72.75,
+      "file": "08.jpg"
+    },
+    {
+      "label": "ELECTRICITY A PARTY TRICK",
+      "row": "01_salon_tube",
+      "frame": 2455,
+      "pts": 1260032,
+      "t": 102.542,
+      "file": "09.jpg"
+    },
+    {
+      "label": "BENJAMIN FRANKLIN PHILADELPHIA",
+      "row": "04_franklin_watches",
+      "frame": 2766,
+      "pts": 1419776,
+      "t": 115.542,
+      "file": "10.jpg"
+    },
+    {
+      "label": "THE LEYDEN JAR",
+      "row": "06_leyden_jar",
+      "frame": 3097,
+      "pts": 1589248,
+      "t": 129.333,
+      "file": "11.jpg"
+    },
+    {
+      "label": "7 NOVEMBER 1749",
+      "row": "12_notebook_list",
+      "frame": 3726,
+      "pts": 1911808,
+      "t": 155.583,
+      "file": "12.jpg"
+    },
+    {
+      "label": "LET THE EXPERIMENT",
+      "row": "17_page_bottom",
+      "frame": 4238,
+      "pts": 2174976,
+      "t": 177.0,
+      "file": "13.jpg"
+    },
+    {
+      "label": "BE MADE",
+      "row": "17_page_bottom",
+      "frame": 4291,
+      "pts": 2202112,
+      "t": 179.208,
+      "file": "14.jpg"
+    },
+    {
+      "label": "THE SENTRY-BOX",
+      "row": "02_sentry_box",
+      "frame": 4719,
+      "pts": 2421760,
+      "t": 197.083,
+      "file": "15.jpg"
+    },
+    {
+      "label": "MARLY, FRANCE MAY 1752",
+      "row": "05_marly_garden",
+      "frame": 5126,
+      "pts": 2631168,
+      "t": 214.125,
+      "file": "16.jpg"
+    },
+    {
+      "label": "SILK CEDAR WIRE",
+      "row": "11_kite_build",
+      "frame": 5896,
+      "pts": 3026432,
+      "t": 246.292,
+      "file": "17.jpg"
+    },
+    {
+      "label": "KEEP THE SILK DRY",
+      "row": "16_keep_silk_dry",
+      "frame": 6531,
+      "pts": 3353088,
+      "t": 272.875,
+      "file": "18.jpg"
+    },
+    {
+      "label": "JUNE 1752",
+      "row": "18_william_runs",
+      "frame": 6821,
+      "pts": 3501568,
+      "t": 284.958,
+      "file": "19.jpg"
+    },
+    {
+      "label": "THE THREADS STAND UP",
+      "row": "25_fibres_rise",
+      "frame": 7596,
+      "pts": 3899904,
+      "t": 317.375,
+      "file": "20.jpg"
+    },
+    {
+      "label": "A SPARK",
+      "row": "02_knuckle_spark",
+      "frame": 7792,
+      "pts": 4000256,
+      "t": 325.542,
+      "file": "21.jpg"
+    },
+    {
+      "label": "LIGHTNING IN A JAR",
+      "row": "04_fill_the_jar",
+      "frame": 7994,
+      "pts": 4103680,
+      "t": 333.958,
+      "file": "22.jpg"
+    },
+    {
+      "label": "ST PETERSBURG 1753",
+      "row": "10_richmann_rod",
+      "frame": 8897,
+      "pts": 4567552,
+      "t": 371.708,
+      "file": "23.jpg"
+    },
+    {
+      "label": "PENNSYLVANIA GAZETTE",
+      "row": "13_gazette_page",
+      "frame": 9196,
+      "pts": 4721152,
+      "t": 384.208,
+      "file": "24.jpg"
+    },
+    {
+      "label": "19 OCTOBER 1752",
+      "row": "13_gazette_page",
+      "frame": 9267,
+      "pts": 4757504,
+      "t": 387.167,
+      "file": "25.jpg"
+    },
+    {
+      "label": "THE ROYAL SOCIETY",
+      "row": "14_royal_society",
+      "frame": 9351,
+      "pts": 4800512,
+      "t": 390.667,
+      "file": "26.jpg"
+    },
+    {
+      "label": "THE COPLEY MEDAL 1753",
+      "row": "15_copley_medal",
+      "frame": 9458,
+      "pts": 4855296,
+      "t": 395.125,
+      "file": "27.jpg"
+    },
+    {
+      "label": "SEPTEMBER 1752",
+      "row": "01_house_rod",
+      "frame": 9858,
+      "pts": 5061120,
+      "t": 411.875,
+      "file": "28.jpg"
+    },
+    {
+      "label": "THE BELLS THAT RING",
+      "row": "03_bells_ring",
+      "frame": 10124,
+      "pts": 5197312,
+      "t": 422.958,
+      "file": "29.jpg"
+    },
+    {
+      "label": "POOR RICHARD 1753",
+      "row": "05_almanac_page",
+      "frame": 10321,
+      "pts": 5298176,
+      "t": 431.167,
+      "file": "30.jpg"
+    },
+    {
+      "label": "HOTTER THAN THE SUN",
+      "row": "07_giant_spark",
+      "frame": 10674,
+      "pts": 5478912,
+      "t": 445.875,
+      "file": "31.jpg"
+    },
+    {
+      "label": "SAFE PATH DOWN",
+      "row": "11_safe_path",
+      "frame": 11078,
+      "pts": 5685760,
+      "t": 462.708,
+      "file": "32.jpg"
+    },
+    {
+      "label": "20+ STRIKES A YEAR",
+      "row": "19_skyline_strike",
+      "frame": 12345,
+      "pts": 6334464,
+      "t": 515.5,
+      "file": "33.jpg"
+    },
+    {
+      "label": "LETTER CROSSING",
+      "row": "04_letter_crosses",
+      "frame": 5027,
+      "pts": 2579456,
+      "t": 209.917,
+      "file": "34.jpg"
+    }
+  ],
+  "sheet": "/Volumes/MiniWork/scratch/J2242-gates-v01/phone_sheet/PHONE_168x94.jpg"
+}

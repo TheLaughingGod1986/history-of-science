@@ -1269,3 +1269,28 @@ Loudness and lag were measured. This session did not hear the mix.
 `AUDIO_MEASURE.json` records the rows. Scratch logs stay in `/Volumes/MiniWork/scratch/J2242-audio-v01`. No code change, so the unit suite was not re-run. No spend, generation, UAT, R2 or YouTube action. No detached process.
 
 Remaining: the film gates on this candidate (`picture_qa`, `polish_gate`, `gate:episode`, package lint, `music_gate`, `sfx_kit.py level`, and the 168×94 sheet). Do not name it `hos_008_master_v04.mp4` until those pass. Then J2243 and Chief review. Continue this PR #542 worktree.
+
+## Film gates and the v04 file — forty-second run, 14 November 2026
+
+Cursor worker. The assembly candidate kept the hash recorded in the fortieth run. Both copies are SHA-256 `735ac816e00b84b1e9e17d8e59a18223171953cf3441c67e1375a3ce8f6460c0`, 2,847,983,180 bytes.
+
+- Scratch candidate: `/Volumes/MiniWork/scratch/J2242-assemble-v02/franklin_assembly.mp4`
+- Working film copy: `/Volumes/data/studio-live/History Of Science/02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_precheck/master_v04/hos_008_master_v04.mp4`
+
+`master_v03` is still 393,139,693 bytes in its own folder. v01 and v02 were left in place. No UAT copy, no R2 upload, no YouTube change.
+
+Tool results, unmodified gates, on the candidate before the copy:
+
+- `polish_gate.py` exit 0. PASS, 0 of 112 rows failed, 6 low-detail warnings.
+- `picture_qa.py` exit 0. PASS, 0 of 112 cuts fail, 8 to look at. Six are the same low-detail warnings. `10_metal_easy` and `11_safe_path` still have no title in the pool.
+- `music_gate.py` exit 0 on the second run. PASS, 539.6 s, about 66.7 BPM, brief Pace 64–72. The first run exited 1 because the bed path was outside the worktree film folder. The rerun used the bed that sits in the film's own `05_Music`.
+- `gate:episode` exit 0. PASS, script 92.1/90.
+- `lint:package --film 008` exit 0. PASS, with the existing captions warning.
+- `check_all.sh` exit 0. ALL CHECKS PASS.
+- `sfx_kit.py level` exit 0. PASS: VO −20.5 LUFS, SFX −35.7 LUFS, 20 hits. The v03 stems had been purged from temporary storage, so this run rebuilt the ducked bed and the chapter-3 whoosh move from the pinned v02 stems and the saved unshifted VO, then measured those files. The duck landed on the same speech mean, 20.25, recorded for v03.
+
+The 168×94 sheet is `jobs/reviews/J2242/phone_sheet/PHONE_168x94.jpg`. It holds the 32 caption cards, SAFE PATH DOWN, and the letter crossing, 34 stills. The stills were looked at as stills. The letter sits in the sky above the ship. This was not a motion review and not an audio review.
+
+J2243 still has the moving-picture and audio review, and the Chief review. This run did not give a film PASS.
+
+No spend, generation, or publication. The gate process has ended. No detached process from this run remains.
