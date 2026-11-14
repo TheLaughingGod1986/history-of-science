@@ -1,0 +1,66 @@
+{
+  "job": "J2805",
+  "film": "HOS:009",
+  "status": "approved_scope_only_no_generation_in_decision_job",
+  "approved_by": "codex (elected HOS acting Chief)",
+  "date": "2026-11-14",
+  "authority": "https://github.com/TheLaughingGod1986/history-of-science/pull/180#issuecomment-6867889512",
+  "tool": "04_Audio/tools/generate_music_bed.py via el_client/el_guard on Mini",
+  "model_id": "music_v2",
+  "force_instrumental": true,
+  "max_requests": 1,
+  "takes_per_cue": 1,
+  "max_generated_seconds": 180,
+  "credit_cap": 3000,
+  "cash_cap_gbp": 0,
+  "automatic_retries": false,
+  "cue": {
+    "id": "wonder_v02",
+    "length_ms": 180000,
+    "film_start_s": 0,
+    "film_end_s": 178.28
+  },
+  "prompt": "Original instrumental opening underscore exclusively for HOS 009 The Falling Moon, Newton connecting an apple with the Moon. Intimate period chamber music led by soft gut-string lute and lightly articulated viol answers. Wonder comes from space between short, gently changing phrases and warm harmony, not a continuous bass drone. Keep a quiet audible musical bed beneath the sparse phrases, with subtle variation in register and voicing. Begin softly but clearly, already in the musical scene; no long fade-up, dramatic swell or opening sting. At about 84 seconds soften into an intimate orchard mood. End with a quiet sustained harmonic handoff suitable for a three-second crossfade into the existing D-minor harpsichord teach cue. Leave ample space for British narration; no foreground tune.\nPace: 60-66 BPM, spacious phrasing; no driving ostinato.\nNOT any earlier HOS or Orbit bed, the previous HOS009 wonder cue, jupiter-music.mp3, sustained bass-drone opening, cosmic shimmer, piano space-documentary music, solo woodwind workshop waltz, borrowed melody, named-composer imitation, heroic brass, horror, vocals, lyrics, pop drums, EDM or comedy stings.",
+  "retain_teach": {
+    "file": "hos_009_teach_v01.mp3",
+    "sha256": "4c1f0a17364ad5ba96fdd2d42730b2f857d19017fab52b221701bd4e15d07bb1",
+    "source_start_s": 0,
+    "film_start_s": 175.28,
+    "new_generation": false
+  },
+  "crossfade": {
+    "start_s": 175.28,
+    "end_s": 178.28,
+    "duration_s": 3,
+    "chapter_card_s": 176.78,
+    "curve": "equal_power"
+  },
+  "timing": {
+    "locked_vo_end_s": 518.4,
+    "source": "07_Edit-Project/VO_RETIME_v01.json",
+    "expected_available_score_end_s": 535.28,
+    "final_endpoint": "actual master including final card/tail; never change picture or narration timing to fit music"
+  },
+  "pre_spend": [
+    "Verify fresh active subscription balance and duration-based worst-case tariff for 180 seconds. Historical J2664 charge 2475 is context, not a current quote.",
+    "Verify extension limits zero, can_extend_character_limit and allowed_to_extend_character_limit false, current_overage_amount zero. Unknown, missing or contradictory billing evidence means no POST.",
+    "Under one recorder lock check TTS_PAUSE, pending/unposted charges and concurrent spend. Worst-case charge must be <= min(3000, live remaining minus pending). Use existing duration guard established for J2664/J2666; a prompt-character estimate alone is insufficient.",
+    "Record sanitized preflight evidence and ledger; no top-up, overage, new service or website generation. Read fresh meter after request; ambiguous response consumes the one-request allowance until reconciled, never retry."
+  ],
+  "acceptance": [
+    "Preserve every v01 cue, score, stem, plan and prior result byte-for-byte. Write v02 outputs and own-score provenance including source windows, hashes, song ID, request time, meter delta and join recipe; verify Mini/NAS copies.",
+    "Run unchanged production music_gate on complete joined v02 with full current earlier-bed inventory from both channels, local/UAT/studio-live/archive. Include all 77 prior comparisons, resolve every unreadable file with hash-verified mapping, record any new files and legitimate same-film/AppleDouble exclusions. No suppressed comparison or threshold change.",
+    "Require own/brief/reused/gap PASS and bed length >= required endpoint; run length against final master in J2035. No loop, silent padding, timing alteration, gate-evasion filtering or favourable excerpt selection.",
+    "Demonstrated audio_input reviewer auditions new cue, complete joined bed, 168-186 second transition, all-part locked-VO reference mix and final tail. Judge period fit, wonder/teach contrast, intelligibility, seams, tempo and musical distinctness. Prior J2783 review is not acceptance of v02.",
+    "Final elected-Chief score acceptance requires complete gate and capable review. J2035 then assembles and runs composite picture_qa/polish_gate, music_gate against actual cut, per-part SFX/bed-level and all existing gates. Only then can dependent J2171 Shorts proceed."
+  ],
+  "failure": "After the single candidate, any failed or unresolved gate stays failed/held. No second take. Production records exact evidence and hands to the queued Chief disposition; that successor has a 20-minute no-spend decision budget to choose a genuinely new bounded route or record the precise unsatisfied constraint. Never repeat an unchanged verification or deploy PR908.",
+  "assembly_deadline": "2026-11-15T18:00:00Z",
+  "successors": {
+    "production": "J2806",
+    "audio_review": "J2807",
+    "chief_disposition": "J2808",
+    "long_assembly": "J2035",
+    "shorts": "J2171"
+  }
+}

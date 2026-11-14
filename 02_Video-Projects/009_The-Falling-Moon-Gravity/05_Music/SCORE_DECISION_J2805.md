@@ -1,0 +1,33 @@
+# HOS 009 revised opening score — J2805, 14 November 2026
+
+Codex, elected HOS acting Chief, implements the fallback in owner-authored desk ruling 6867889512. Relay status confirmed Codex before the decision. This approves a separately queued production scope; J2805 generates nothing, spends nothing and grants no score or film PASS. This session has no demonstrated audio input: musical observations below are attributed to J2783, not a new audition.
+
+J2803 (OWB PR913, e3b04e94a3accc4614ed8b2435e9b77ddccfadc5) failed the required validation: the prototype missed a known 0.37-second reuse trim at 0.693 and combined transformation at 0.633. J2795's general defect diagnosis remains accepted, but PR908 remains draft/unmerged and undeployed. The production reuse FAIL remains. Neither the old ear PASS nor the prototype is a substitute.
+
+## Bounded choice
+
+Replace only the opening wonder cue: **one 180-second instrumental Music v2 request, one take, at most 3,000 subscription credits, £0 cash, no retries**. Retain the existing 360-second teach cue at its recorded SHA-256. All three production matches are against candidate seconds 0–21, so replacing both cues would spend more without evidence it is necessary. J2783 describes the teach cue as fitting the explanation and modern-orbit return; that is prior testimony, and the revised join still needs a new audition.
+
+The revised creative direction is intimate, lightly articulated lute/viol conversation and changing harmony at 60–66 BPM, replacing the sustained bass-drone opening. Wonder remains spacious; the teach cue remains the more regular harpsichord explanation. This is a new composition brief, not a proposal to filter, crop, normalize or otherwise disguise the old candidate to defeat a metric. A new composition is not guaranteed to pass this detector. One attempt bounds that uncertainty; failure returns an exact result to the named Chief successor, not another automatic take.
+
+The full prompt, limits, guards and acceptance checks are in SCORE_SCOPE_J2805.json. The old 30,000-credit allowance is not renewed or pooled with this one. J2664's historical 2,475-credit charge for 180 seconds supports a 3,000 ceiling but proves neither today's tariff nor remaining balance. Fresh duration-based price, balance less pending spend, and overage-off evidence are mandatory before the production request. Unknown evidence means no POST. Preserve the recorder lock, pause file and ledger. No service change or top-up.
+
+## Timing and acceptance
+
+Keep Parts 1–2, locked narration, all diagram KEEP windows and every later row unchanged. New wonder occupies 0–178.28 seconds; unchanged teach begins at 175.28. Crossfade 175.28–178.28, centred on the cannon chapter card at 176.78, for three seconds. Retain full source tail to about 535.28 seconds; cover the actual final master endpoint, including its final card, without loops or silence. The locked narration ends at 518.40 seconds. No timing extension to use spare music.
+
+Write new cue, continuous joined bed and five part stems as v02 beside v01. Preserve all previous bytes, hashes, generator plans, gate outputs and ear review. Commit only the new provenance/plan/reports, with request identity, actual credits and source windows; copy media to studio-live and verify hashes.
+
+Run the unchanged production gate over the complete current library. The prior 77 readable comparisons are the minimum historical inventory, not a fixed cap: include newly added earlier beds and both channels' local/UAT/working/archive roots. Every unreadable entry is unresolved until a verified copy is read. Same-film and AppleDouble exclusions must be explicit; retain comparison scores. Own, brief, reused and gap must pass; endpoint coverage must pass in the reference mix and again against the actual assembled master. No waiver.
+
+A separately queued reviewer with demonstrated audio_input hears the entire new cue and joined bed, the 168–186-second chapter transition, the complete five-part locked-VO reference mix and ending. Review period fit, non-distracting melody, wonder/teach contrast, musical distinctness, seams, coverage and narration clarity. J2783 covers v01 only. Chief accepts the score only after this review and complete gate evidence agree. J2035 then runs its own assembly, composite and final-cut gates. J2171 remains held until the long and its own required inputs/gates are ready. Assembly deadline remains **15 November 18:00 UTC**.
+
+If the one request cannot be made safely, or the candidate fails, the production successor records the exact guard/gate failure and stops spending. The queued Chief successor gets a 20-minute, no-spend disposition, preserving the failed state and choosing a genuinely new bounded route if justified. PR908 is not deployed; no generic verification loop or implied acceptance. No YouTube, Buffer, narration or picture change is authorized.
+
+## Recorded handoff and validation
+
+Queue chain: **J2806** production (Mini audio/assembly routing), **J2807** demonstrated-audio review, **J2808** elected-Chief acceptance or bounded failure disposition, then held **J2035** and **J2171**. Production starts only after this decision job is complete and the HOS decision PR is merged. Deadlines: production 14 Nov 16:00Z, review 18:00Z, Chief disposition 20:00Z; these are deadlines, not delayed start times.
+
+Repository validation: `bash 00_Brand/Channel-Setup/tools/check_all.sh` returned **ALL CHECKS PASS**. This checks the records/tooling, not the new music (none exists yet).
+
+The required low-disk scratch offload ran detached as `j2805-offload` and exited 0: no `/private/tmp` folders were old enough to move; approximately 2.6 GB remained free. Log and completion marker: `~/_desk/logs/j2805-offload.log` and `.done`. Production uses the mounted MiniWork scratch as required and must check headroom before audio work; no NAS deletion or disk-space recovery is claimed.
