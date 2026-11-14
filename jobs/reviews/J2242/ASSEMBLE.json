@@ -1,0 +1,28 @@
+{
+  "job": "J2242",
+  "status": "UNVERIFIED_ASSEMBLY",
+  "candidate": "/Volumes/MiniWork/scratch/J2242-assemble-v02/franklin_assembly.mp4",
+  "candidate_sha256": "735ac816e00b84b1e9e17d8e59a18223171953cf3441c67e1375a3ce8f6460c0",
+  "candidate_bytes": 2847983180,
+  "frames": 12923,
+  "packet_copy_frames": 8086,
+  "high_encode_frames": 4698,
+  "exact_pcm_frames": 139,
+  "copied_audio_packets": 25296,
+  "duration_ticks": {
+    "512": 12899,
+    "1024": 23,
+    "1536": 1
+  },
+  "ticks_1024": 23,
+  "timestamp_policy": "copy original PTS and duration; decode time advances by that duration",
+  "audio": "COPIED_UNMEASURED",
+  "output_preservation": "OUTSTANDING",
+  "loudness": "UNMEASURED",
+  "vo_sync": "UNMEASURED",
+  "output_film_created": true,
+  "finished_master": false,
+  "approval": false,
+  "spend_gbp": 0,
+  "source_master_sha256": "cf1561c218bace7bc14ed3d625b0790a457027a90f392262f45ca7172723099b"
+}

@@ -1237,3 +1237,20 @@ Cursor worker. No master was muxed. `_j2242_mux_map.py --plan` puts all 12,923 f
 `MUX_MAP.json` records the order. 163 J2242 unit tests OK, 3 of them new. check_all result is in `CHECK_ALL_MUX_MAP.txt`. This is an assembly order, not a motion review, an audio review, or a film approval. No v04 master. Original masters and audio are unchanged. No spend, generation, UAT, R2 or YouTube action. No detached process.
 
 Remaining: mux these 73 runs with the original audio on this clock, then preservation, loudness, sync and the film gates. Then J2243 and Chief review. Continue this PR #542 worktree.
+
+## Clock-correct assembly candidate — fortieth run, 14 November 2026
+
+Cursor worker. No v04 master was named. A first mux, since deleted, put decode times one tick apart, and the container then stored those one-tick gaps as the frame durations. `_j2242_assemble.py` now advances each decode time by the source duration. Copied packets keep their original decode times. Rebuilt pictures between them stay in display order, so each High encode remains one closed run.
+
+The candidate is `/Volumes/MiniWork/scratch/J2242-assemble-v02/franklin_assembly.mp4`, 2,847,983,180 bytes, SHA-256 `735ac816e00b84b1e9e17d8e59a18223171953cf3441c67e1375a3ce8f6460c0`. It is not `hos_008_master_v04.mp4`.
+
+- 12,923 video packets. Sorted by presentation time, every PTS and duration matches the source clock, including 12,899 steps of 512, 23 steps of 1024 and 1 step of 1536. Each decode time plus its duration is the next decode time.
+- 8,086 frames are original packets, 4,698 are the High encodes, and 139 are the exact pictures. The salon row is the 160-frame High encode, frames 2506–2665. Nothing after source f060 is in that run.
+- 25,296 audio packets match the master bytes and timestamps. Loudness and speech sync were not measured.
+- The source master hash is unchanged.
+
+This is a packet and timestamp check, not a decoded-pixel check, a motion review, an audio review, or a film approval. Picture preservation, loudness, sync and the film gates are still outstanding. No spend, generation, UAT, R2 or YouTube action.
+
+The preservation verifier is running in tmux `J2242-verify`. Log: `/Users/benjaminoats/_desk/logs/J2242-verify.log`. Exit marker: `/Users/benjaminoats/_desk/logs/J2242-verify.done`. A missing marker means it is still running: do not start a second copy. Output: `/Volumes/MiniWork/scratch/J2242-assemble-v02-verify`.
+
+Remaining: read that verifier, then loudness, sync and the film gates. Then J2243 and Chief review. Continue this PR #542 worktree.
