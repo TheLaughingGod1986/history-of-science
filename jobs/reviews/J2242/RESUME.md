@@ -1157,3 +1157,21 @@ Still refused, because each one still contains master frames that have to match 
 145 J2242 unit tests OK, 2 of them new. check_all result is in `CHECK_ALL_GROUP_NUTS.txt`. This is a frame measurement, not a motion review, an audio review, or a film approval. No v04 master. Original masters and audio are unchanged. No spend, generation, UAT, R2 or YouTube action. The encode process has ended. No detached encode is still running.
 
 Remaining: encode the four groups that still hold master frames without giving up those pixels or the High profile, then mux copied packets and the original audio. Then preservation, loudness and sync, and the film gates. Then J2243 and Chief review. Continue this PR #542 worktree. Frame 2869 stays the master picture inside its group.
+
+## Changed runs inside the mixed groups — thirty-fifth run, 14 November 2026
+
+Cursor worker. No master was muxed. The v03 master is H264 High and reports `has_b_frames` 2, so a kept frame inside these IDR groups can look forward into a frame this job replaces. x264 still will not make a lossless High encode, and a 4:4:4 lossless patch already broke later copied packets. `_j2242_mixed_split.py` therefore encodes only the changed runs, with the existing High qp 1 recipe, and leaves every master run unencoded.
+
+- Frames 2718–2868, 151 frames. Frame 2869 is not in this file. Lowest frame 62.43 dB.
+- Frames 2870–2887, 18 frames, after that one master frame. Lowest frame 62.66 dB.
+- Frames 3260–3343, 84 frames. The jar keep 3168–3259 is not in this file. Lowest frame 63.09 dB.
+- Frames 4016–4129, 114 frames. The fire tail 4130–4138 is not in this file. Lowest frame 64.28 dB.
+- Frames 11038–11117, 80 frames. The safe-path tail 11118–11245 is not in this file. Lowest frame 68.45 dB.
+
+447 frames. Each nut slice matches the stitched pictures for that run. The encodes are H264 High, silent, with no B-frames, in `/Volumes/MiniWork/scratch/J2242-encode-v01/`. These files are not `hos_008_master_v04.mp4`, and their clocks are not the master clock.
+
+Still unencoded, because a High qp 1 picture would not keep the source hash: frame 2869, frames 3168–3259, frames 4130–4138, and frames 11118–11245. B-frames block treating any of those as a packet copy until a reference check says a frame does not look into a replaced frame.
+
+148 J2242 unit tests OK, 3 of them new. check_all result is in `CHECK_ALL_MIXED_SPLIT.txt`. This is a frame measurement, not a motion review, an audio review, or a film approval. No v04 master. Original masters and audio are unchanged. No spend, generation, UAT, R2 or YouTube action. The encode process has ended. No detached encode is still running.
+
+Remaining: a way to keep those four master runs exact while the changed pictures around them are High, then mux copied packets and the original audio. Then preservation, loudness and sync, and the film gates. Then J2243 and Chief review. Continue this PR #542 worktree. Frame 2869 stays the master picture inside its group.
