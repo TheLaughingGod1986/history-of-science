@@ -1175,3 +1175,22 @@ Still unencoded, because a High qp 1 picture would not keep the source hash: fra
 148 J2242 unit tests OK, 3 of them new. check_all result is in `CHECK_ALL_MIXED_SPLIT.txt`. This is a frame measurement, not a motion review, an audio review, or a film approval. No v04 master. Original masters and audio are unchanged. No spend, generation, UAT, R2 or YouTube action. The encode process has ended. No detached encode is still running.
 
 Remaining: a way to keep those four master runs exact while the changed pictures around them are High, then mux copied packets and the original audio. Then preservation, loudness and sync, and the film gates. Then J2243 and Chief review. Continue this PR #542 worktree. Frame 2869 stays the master picture inside its group.
+
+## Reference check — thirty-sixth run, 14 November 2026
+
+Cursor worker. No master was muxed. `_j2242_ref_check.py` reads the v03 slice headers and builds each picture's reference list inside the four mixed groups. The opening GOP matches the x264 pattern: the first P uses the IDR, and the B between them uses both. Inside every checked group, display order follows POC, a one-reference P uses the previous reference picture, and a one-reference B uses the nearest past and future reference pictures. Reference-list reordering and the short marking command that drops one older picture are both applied. Nothing here is a motion review or an audio review.
+
+One kept run does not look at a replaced picture, so its original packets can stay:
+
+- Frames 3168–3258, 91 frames, the jar keep up to but not including the last frame. These packets reference only pictures inside that run.
+
+Four runs look at a picture this job replaces, so those original packets cannot sit beside the new High encode and still decode to the source hash:
+
+- Frame 2869 is a P. It references frame 2866, which is inside the changed Franklin run 2718–2868.
+- Frame 3259 is a B. It references kept frame 3258 and replaced frame 3260. Keeping 3259 exact would also keep the original picture at 3260.
+- Frames 4130–4138, the fire tail. Frame 4130 references replaced frame 4129.
+- Frames 11118–11245, the safe-path tail. Frame 11118 references replaced frame 11117.
+
+153 J2242 unit tests OK, 5 of them new. check_all result is in `CHECK_ALL_REF_CHECK.txt`. This is a packet reference check, not a film approval. No v04 master. Original masters and audio are unchanged. No spend, generation, UAT, R2 or YouTube action. No detached process.
+
+Remaining: copy frames 3168–3258 as original packets. The four blocked runs still need exact pixels while the pictures they reference stay the new High encodes. Then mux the copied packets and the original audio, and run preservation, loudness, sync and the film gates. Then J2243 and Chief review. Continue this PR #542 worktree. Frame 2869 stays the master picture inside its group.
