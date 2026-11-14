@@ -24,7 +24,7 @@ RETIME = FILM / "07_Edit-Project/VO_RETIME_v01.json"
 VO_DIR = Path("/Volumes/data/mac-mini-archive/2026-11-05/YouTube/History Of Science/02_Video-Projects/007_The-First-Vaccine/02_Voiceover")
 MASTER = Path("/Volumes/data/mac-mini-archive/hos-007-vaccine/master_v04_J0925/hos_007_master_v04.mp4")
 BED = Path("/Volumes/data/mac-mini-archive/hos-007-vaccine/master_v04_J0925/vaccine_score_bed_v01.mp3")
-OUT = Path("/Users/benjaminoats/_desk/renders/J2230/vaccine_v04")
+OUT = Path("/Users/benjaminoats/_desk/renders/J2230/vaccine_v05")
 PART5_OFFSET = 409.59
 
 W, H, FPS = 1080, 1920, 30
@@ -60,8 +60,9 @@ PLANS = {
         "pieces": [
             (67.66, 73.35, 0.30),
             (74.10, 77.45, 0.30),
-            (78.28, 79.70, 0.25),
-            (80.00, 80.35, 0.28),
+            # variolation runs 79.12-80.06 and but runs 80.06-80.96. The v04
+            # windows ended at 79.70 and 80.35, so both words were cut off.
+            (78.28, 80.96, 0.0),
             (80.96, 85.20, 0.30),
             (86.26, 92.16, 0.55),
         ],
@@ -328,8 +329,8 @@ def build_one(sid: str) -> dict:
     ff("-f", "lavfi", "-i", f"anullsrc=r=48000:cl=stereo:d={total:.3f}",
        "-c:a", "pcm_s16le", str(work / "silence.wav"))
     tick = work / "tick.wav"
-    ff("-f", "lavfi", "-i", "sine=frequency=880:duration=0.04:sample_rate=48000",
-       "-af", "aformat=channel_layouts=stereo,volume=-28dB,afade=t=out:st=0.02:d=0.02",
+    ff("-f", "lavfi", "-i", "sine=frequency=880:duration=0.05:sample_rate=48000",
+       "-af", "aformat=channel_layouts=stereo,volume=-12dB,afade=t=out:st=0.03:d=0.02",
        "-c:a", "pcm_s16le", str(tick))
     ff("-i", str(work / "silence.wav"), "-i", str(tick), "-filter_complex",
        f"[1:a]adelay={int(card_at * 1000)}|{int(card_at * 1000)}[t];"
@@ -401,7 +402,7 @@ def build_one(sid: str) -> dict:
         nxt = f"[v{i + 4}]"
         fc.append(f"{last}[{src_i}:v]overlay=0:0:enable='between(t,{a:.3f},{b:.3f})'{nxt}")
         last = nxt
-    ver = "v04" if sid == "variolation" else "v03"
+    ver = "v05"
     mp4 = OUT / f"hos_007_{sid}_{ver}.mp4"
     ff(*inputs, "-filter_complex", ";".join(fc), "-map", last, "-map", "1:a",
        "-c:v", "libx264", "-pix_fmt", "yuv420p", "-profile:v", "high", "-preset", "medium",
