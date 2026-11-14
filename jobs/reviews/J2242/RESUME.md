@@ -1223,3 +1223,17 @@ The files are in `/Volumes/MiniWork/scratch/J2242-exact-pcm-v01/`. `EXACT_PCM.js
 160 J2242 unit tests OK, 3 of them new. check_all result is in `CHECK_ALL_EXACT_PCM.txt`. This is a pixel check, not a motion review, an audio review, or a film approval. No v04 master. Original masters and audio are unchanged. No spend, generation, UAT, R2 or YouTube action. No detached process.
 
 Remaining: mux these exact pictures with the copied packets, the High encodes and the original audio, on the original clock. Then preservation, loudness, sync and the film gates. Then J2243 and Chief review. Continue this PR #542 worktree.
+
+## Assembly order — thirty-ninth run, 14 November 2026
+
+Cursor worker. No master was muxed. `_j2242_mux_map.py --plan` puts all 12,923 frames into 73 ordered runs. Each frame is one original packet, one existing High qp 1 encode, or one existing High I_PCM picture. The source clock is copied, including its gaps. It is not rebuilt as frame-index/24.
+
+- 8,086 frames stay original packets. The jar keep, frames 3168–3258, is its own packet-copy run. Night street 1129–1231 and frame 3353 stay original packets.
+- 4,698 frames use the High encodes already on disk. The salon row is one run, frames 2506–2665, 160 frames. Nothing after source f060 is in that run.
+- 139 frames use the exact pictures: frame 2869, frame 3259, frames 4130–4138 and frames 11118–11245. Frame 3259 is not in the jar packet copy.
+- The clock is 1/12288, start 1536, end 6630912. Durations are 12,899 steps of 512, 23 steps of 1024 and 1 step of 1536. There are 40 gaps, left as they are.
+- 45 clip files are present at the sizes in their records. Audio is still outstanding.
+
+`MUX_MAP.json` records the order. 163 J2242 unit tests OK, 3 of them new. check_all result is in `CHECK_ALL_MUX_MAP.txt`. This is an assembly order, not a motion review, an audio review, or a film approval. No v04 master. Original masters and audio are unchanged. No spend, generation, UAT, R2 or YouTube action. No detached process.
+
+Remaining: mux these 73 runs with the original audio on this clock, then preservation, loudness, sync and the film gates. Then J2243 and Chief review. Continue this PR #542 worktree.
