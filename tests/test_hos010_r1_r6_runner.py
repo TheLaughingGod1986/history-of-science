@@ -305,6 +305,10 @@ class R1R6CreatePathTests(unittest.TestCase):
             self.assertIn("v02_r1_r6_plates", str(output))
             self.assertNotIn("v01_twelve_plates", str(output))
             self.assertTrue(str(output).endswith("_t2.mp4"))
+            still = ADAPT.r1_r6_still_path(root / "media", sample)
+            self.assertIn("v02_r1_r6_plates_stills", str(still))
+            self.assertNotIn("v01_twelve_plates_stills", str(still))
+            self.assertTrue(str(still).endswith("_t2.png"))
 
             second = self._run(root, harness, ledger=root / "ledger.jsonl", state=root / "shared")
             self.assertEqual(second[0]["charge_id"], ADAPT.EXPECTED_NAMED_CHARGES[5])
@@ -450,6 +454,54 @@ class R1R6CreatePathTests(unittest.TestCase):
             self.assertEqual(result["charge"], charge)
             self.assertFalse(result["keep"])
             self.assertTrue(snap["charges"][charge]["posted"])
+
+            with ADAPT.SharedFlowAccounting(state) as accounting:
+                v01_frame = root / "v01_twelve_plates_stills" / "P02_05_almost_none_t1.png"
+                with patch.dict(os.environ, {ADAPT.SUBMIT_ENV: "1"}):
+                    with self.assertRaisesRegex(ADAPT.GuardError, "refusing to reuse v01 t1 start still"):
+                        ADAPT.live_named_charge_submit(
+                            row,
+                            dest,
+                            v01_frame,
+                            accounting=accounting,
+                            reservation=ADAPT.DEFAULT_RESERVATION,
+                            charge=charge,
+                            evidence_path=root / "R1.v01.create.json",
+                            floor=3000,
+                            page=fake_page,
+                        )
+
+                missing_frame = root / "v02_r1_r6_plates_stills" / "P02_05_almost_none_t2.png"
+                minted_calls = []
+
+                def fake_ensure(r, f, **kw):
+                    minted_calls.append((r.row_id, f, kw["still_evidence_path"].name))
+                    f.parent.mkdir(parents=True, exist_ok=True)
+                    f.write_bytes(b"png2")
+                    return f
+
+                balances2 = iter([24950, 24850])
+                charge2 = ADAPT.EXPECTED_NAMED_CHARGES[1]
+                row2 = ADAPT.to_base_row(ADAPT.load_r1_r6_scope(ROOT)[1][1])
+                with patch.dict(os.environ, {ADAPT.SUBMIT_ENV: "1"}), patch.dict(
+                    sys.modules, {"orbit_flow_veo_ui": FakeFlow}
+                ), patch.object(ADAPT, "ensure_r1_r6_start_still", side_effect=fake_ensure), patch.object(
+                    ADAPT.base, "read_live_balance", side_effect=lambda _p: next(balances2)
+                ), patch.object(ADAPT.base, "read_live_evidence", side_effect=fake_evidence), patch.object(
+                    ADAPT.base, "guarded_create", side_effect=fake_guarded_create
+                ):
+                    ADAPT.live_named_charge_submit(
+                        row2,
+                        root / "out" / "P04_06_dust_veil_t2.mp4",
+                        missing_frame,
+                        accounting=accounting,
+                        reservation=ADAPT.DEFAULT_RESERVATION,
+                        charge=charge2,
+                        evidence_path=root / "R2.create.json",
+                        floor=3000,
+                        page=fake_page,
+                    )
+                self.assertEqual(minted_calls, [(row2.row_id, missing_frame, "R2.still.create.json")])
 
 
 if __name__ == "__main__":

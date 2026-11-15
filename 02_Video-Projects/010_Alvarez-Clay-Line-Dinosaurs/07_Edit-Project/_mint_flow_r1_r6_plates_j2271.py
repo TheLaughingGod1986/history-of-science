@@ -91,6 +91,7 @@ MAX_BATCH_CREDITS = 500
 GO_COMMENT = "6898337122"
 MIN_DISK_FREE_BYTES = 10 * 1024**3
 OUTPUT_DIR_NAME = "v02_r1_r6_plates"
+STILL_OUTPUT_DIR_NAME = "v02_r1_r6_plates_stills"
 
 # A buy / top-up / card dialog. Ordinary "N credits" and "Generating will use 100 credits" do not match.
 CASH_PROMPT_RE = re.compile(
@@ -547,6 +548,18 @@ def r1_r6_output(media: Path, row: base.Row) -> Path:
     )
 
 
+def r1_r6_still_path(media: Path, row: base.Row) -> Path:
+    """Take 2 0-credit start still under v02, leaving v01_twelve_plates_stills t1 untouched."""
+    return (
+        media
+        / "04_Generated-Clips"
+        / f"part{row.part:02d}"
+        / "refs"
+        / STILL_OUTPUT_DIR_NAME
+        / f"P{row.part:02d}_{row.plate_id}_t2.png"
+    )
+
+
 def r1_r6_state_dir() -> Path:
     return Path.home() / "_desk/state/flow/hos010-r1-r6"
 
@@ -588,6 +601,87 @@ def _page_text(page) -> str:
         raise GuardError("live Flow page text could not be read; stopping before Create") from exc
 
 
+def ensure_r1_r6_start_still(
+    row: base.Row,
+    frame: Path,
+    *,
+    repo: Path,
+    media: Path,
+    archive_dir: Path,
+    accounting: SharedFlowAccounting,
+    reservation: str,
+    still_evidence_path: Path,
+    floor: int,
+    page,
+) -> Path:
+    """Ensure the v02 0-credit Nano Banana 2.1 start still exists without touching v01 t1 stills."""
+    if os.environ.get(SUBMIT_ENV) != "1":
+        raise GuardError(f"live still generation is not armed for {row.row_id}")
+    accounting._assert_held()
+    if "v01_twelve_plates_stills" in str(frame):
+        raise GuardError(f"refusing to reuse v01 t1 start still for replacement row {row.row_id}: {frame}")
+    if frame.is_file():
+        pin = frame.with_suffix(".sha256")
+        if pin.is_file() and pin.read_text().strip() != sha256_file(frame):
+            raise GuardError(f"v02 start still sha256 mismatch for {row.row_id}: {frame}")
+        return frame
+
+    verified_refs = verify_style_references(repo, media, [row])
+    style_paths = [Path(item["path"]) for item in verified_refs["house"]]
+    if row.explorer and verified_refs["explorer"] is not None:
+        style_paths.append(Path(verified_refs["explorer"]["path"]))
+
+    sys.path.insert(0, str(repo / "04_Audio/tools"))
+    sys.path.insert(0, str(repo / "02_Video-Projects/006_Trees-Are-Made-Of-Air/07_Edit-Project"))
+    import _flow_still_v01 as still_tool
+    import orbit_flow_veo_ui as flow
+
+    page.goto(flow.FLOW_HOME, wait_until="domcontentloaded", timeout=120_000)
+    flow.settle_after_nav(page, wait_ms=1500)
+    flow.dismiss_banners(page)
+    flow.ensure_project(page)
+    refuse_flow_banners(_page_text(page))
+
+    still_evidence: dict = {}
+
+    def still_guard(configured_page):
+        refuse_flow_banners(_page_text(configured_page))
+        live_balance = base.read_live_balance(configured_page)
+        base.read_live_still_evidence(configured_page, balance=live_balance, open_overlay=True)
+        refuse_flow_banners(_page_text(configured_page))
+        still_evidence.update(
+            base.guarded_still_create(
+                configured_page,
+                accounting,
+                reservation=reservation,
+                row=row,
+                evidence_path=still_evidence_path,
+                floor=floor,
+                balance=live_balance,
+            )
+        )
+
+    still_tool.make_still(
+        page,
+        base.still_prompt_for_row(still_tool, row),
+        frame,
+        timeout_s=300,
+        create_guard=still_guard,
+        style_refs=style_paths,
+        media_root=media,
+    )
+    after_balance = base.read_live_balance(page)
+    if after_balance < still_evidence["ui"]["balances"][0]:
+        raise GuardError(f"zero-price still reduced Flow balance on {row.row_id}")
+    if not frame.is_file():
+        raise GuardError(f"zero-price still for {row.row_id} was not written")
+    base.immutable_bytes(frame.with_suffix(".sha256"), (sha256_file(frame) + "\n").encode())
+    archive_still = archive_dir / frame.name
+    if not archive_still.exists():
+        base.archive_verified(frame, archive_still)
+    return frame
+
+
 def live_named_charge_submit(
     row: base.Row,
     dest: Path,
@@ -599,6 +693,7 @@ def live_named_charge_submit(
     evidence_path: Path,
     floor: int,
     page,
+    media: Path | None = None,
 ):
     """Call the existing guarded Create. This function does not click Create itself."""
     if os.environ.get(SUBMIT_ENV) != "1":
@@ -608,11 +703,30 @@ def live_named_charge_submit(
         raise GuardError("refusing a reservation other than HOS010_R1_R6_PLATES_J2271")
     if charge not in EXPECTED_NAMED_CHARGES:
         raise GuardError(f"refusing an unguarded charge id {charge!r}")
+    if "v01_twelve_plates_stills" in str(frame):
+        raise GuardError(f"refusing to reuse v01 t1 start still for replacement row {row.row_id}: {frame}")
     refuse_flow_banners(_page_text(page))
-    if not frame.is_file():
-        raise GuardError(f"missing start still for {row.row_id}; not minting a still")
-    dest.parent.mkdir(parents=True, exist_ok=True)
     repo = repo_root_from()
+    resolved_media = media if media is not None else DEFAULT_NAS_MEDIA
+    if not frame.is_file():
+        still_ev_path = evidence_path.with_name(
+            re.sub(r"\.create\.json$", ".still.create.json", evidence_path.name)
+        )
+        if still_ev_path == evidence_path:
+            still_ev_path = evidence_path.with_suffix(".still.json")
+        ensure_r1_r6_start_still(
+            row,
+            frame,
+            repo=repo,
+            media=resolved_media,
+            archive_dir=evidence_path.parent,
+            accounting=accounting,
+            reservation=reservation,
+            still_evidence_path=still_ev_path,
+            floor=floor,
+            page=page,
+        )
+    dest.parent.mkdir(parents=True, exist_ok=True)
     sys.path.insert(0, str(repo / "04_Audio/tools"))
     import orbit_flow_veo_ui as flow
 
@@ -726,6 +840,7 @@ def live_batch_session(media: Path, archive_dir: Path):
                 evidence_path=evidence_path,
                 floor=floor,
                 page=page,
+                media=media,
             )
 
         yield BatchHarness(
@@ -837,9 +952,7 @@ def execute_r1_r6_batch(
             dest = r1_r6_output(media, row)
             if dest.exists():
                 raise GuardError(f"{row.row_id} t2 file already exists; refusing a second take")
-            frame = base.still_path(media, row.part, row.plate_id)
-            if not test_archive and not frame.is_file():
-                raise GuardError(f"missing start still for {row.row_id}; not minting a still")
+            frame = r1_r6_still_path(media, row)
             evidence_path = archive_dir / f"{repair_of[row.row_id]}.create.json"
             evidence = harness.submit(
                 row,
