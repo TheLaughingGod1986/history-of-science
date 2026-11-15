@@ -428,6 +428,8 @@ def build_r1_r6_dry_run_report(
 
 def refuse_flow_banners(text: str) -> None:
     """Stop before Create on a cash prompt or an unusual-activity banner. Do not click either one."""
+    if not (text or "").strip():
+        raise GuardError("Flow page text is empty; stopping before Create")
     if text and CASH_PROMPT_RE.search(text):
         raise GuardError("cash prompt on Flow; stopping before Create (£0, nothing for Ben)")
     if not text or not UNUSUAL_RE.search(text):

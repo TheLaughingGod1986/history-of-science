@@ -66,7 +66,7 @@ def _price():
 
 
 class _Harness:
-    def __init__(self, *, text="", balance=25050, disk=11 * 1024**3, submit=None):
+    def __init__(self, *, text="25050 AI credits\nGenerating will use 100 credits\nULTRA", balance=25050, disk=11 * 1024**3, submit=None):
         self.text = text
         self.balance = balance
         self.disk = disk
@@ -139,6 +139,12 @@ class R1R6CreatePathTests(unittest.TestCase):
                     ADAPT.refuse_flow_banners(text)
         with self.assertRaisesRegex(ADAPT.GuardError, "unusual-activity"):
             ADAPT.refuse_flow_banners("unusual activity on this account")
+
+    def test_empty_page_text_stops_before_create(self):
+        for text in ("", "   ", "\n\t"):
+            with self.subTest(text=repr(text)):
+                with self.assertRaisesRegex(ADAPT.GuardError, "page text is empty"):
+                    ADAPT.refuse_flow_banners(text)
 
     def test_submit_refuses_without_the_signed_file_even_if_the_scope_flag_is_flipped(self):
         with patch.dict(os.environ, {}, clear=False):
