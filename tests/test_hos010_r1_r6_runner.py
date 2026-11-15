@@ -117,6 +117,8 @@ class R1R6CreatePathTests(unittest.TestCase):
         self.assertNotIn("execute_shared_batch", text)
         self.assertNotIn("load_scope", text)
         live = inspect.getsource(ADAPT.live_named_charge_submit)
+        self.assertIn("read_live_evidence", live)
+        self.assertIn("open_overlay=True", live)
         self.assertIn("guarded_create", live)
         self.assertIn("generate_clip", live)
         self.assertNotIn("mouse.click", live)
@@ -372,6 +374,82 @@ class R1R6CreatePathTests(unittest.TestCase):
             self.assertEqual(report["create_clicks"], 0)
             self.assertEqual(report["credits_spent"], 0)
             self.assertFalse((state / "account.jsonl").exists())
+
+    def test_live_named_charge_submit_opens_settings_overlay_before_guarded_create_and_reconciles(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            state = root / "shared"
+            frame = root / "start.png"
+            frame.write_bytes(b"png")
+            dest = root / "out" / "P02_05_almost_none_t2.mp4"
+            row = ADAPT.to_base_row(ADAPT.load_r1_r6_scope(ROOT)[1][0])
+            charge = ADAPT.EXPECTED_NAMED_CHARGES[0]
+            order = []
+            balances = iter([25050, 24950])
+
+            class FakePage:
+                class _Loc:
+                    def inner_text(self, timeout=8000):
+                        return "25050 AI credits\nGenerating will use 100 credits\nULTRA"
+
+                def locator(self, _sel):
+                    return self._Loc()
+
+            fake_page = FakePage()
+
+            def fake_balance(_page):
+                order.append("read_live_balance")
+                return next(balances)
+
+            def fake_evidence(_page, *, quality, balance, open_overlay=False):
+                order.append(("read_live_evidence", quality, balance, open_overlay))
+                return {"balances": [balance]}
+
+            def fake_guarded_create(_page, acc, *, row, reservation, charge, evidence_path, floor, balance):
+                order.append(("guarded_create", charge, balance))
+                acc.intent(charge, reservation, 100, live=balance, floor=floor)
+                acc.resolve(charge, submitted=True, evidence={"ui": {"balances": [balance]}})
+                return {"charge": charge, "ui": {"balances": [balance]}}
+
+            class FakeFlow:
+                @staticmethod
+                def generate_clip(page, _prompt, _dest, *, create_guard, **_kwargs):
+                    order.append("generate_clip")
+                    create_guard(page)
+
+            with patch.dict(os.environ, {ADAPT.SUBMIT_ENV: "1"}), patch.dict(
+                sys.modules, {"orbit_flow_veo_ui": FakeFlow}
+            ), patch.object(ADAPT.base, "read_live_balance", side_effect=fake_balance), patch.object(
+                ADAPT.base, "read_live_evidence", side_effect=fake_evidence
+            ), patch.object(ADAPT.base, "guarded_create", side_effect=fake_guarded_create):
+                with ADAPT.SharedFlowAccounting(state) as accounting:
+                    accounting.reserve(ADAPT.DEFAULT_RESERVATION, "HOS:010", 600, live=25050, floor=3000)
+                    result = ADAPT.live_named_charge_submit(
+                        row,
+                        dest,
+                        frame,
+                        accounting=accounting,
+                        reservation=ADAPT.DEFAULT_RESERVATION,
+                        charge=charge,
+                        evidence_path=root / "R1.create.json",
+                        floor=3000,
+                        page=fake_page,
+                    )
+                    snap = accounting.snapshot()
+
+            self.assertEqual(
+                order,
+                [
+                    "generate_clip",
+                    "read_live_balance",
+                    ("read_live_evidence", "Quality", 25050, True),
+                    ("guarded_create", charge, 25050),
+                    "read_live_balance",
+                ],
+            )
+            self.assertEqual(result["charge"], charge)
+            self.assertFalse(result["keep"])
+            self.assertTrue(snap["charges"][charge]["posted"])
 
 
 if __name__ == "__main__":

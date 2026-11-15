@@ -629,6 +629,13 @@ def live_named_charge_submit(
             raise GuardError("unresolved shared Create; no submission")
         if type(live_balance) is not int or live_balance - snap["liability"] < floor:
             raise GuardError("live headroom fell under the floor before Create")
+        base.read_live_evidence(
+            configured_page,
+            quality=row.quality,
+            balance=live_balance,
+            open_overlay=True,
+        )
+        refuse_flow_banners(_page_text(configured_page))
         evidence.update(
             base.guarded_create(
                 configured_page,
@@ -655,6 +662,24 @@ def live_named_charge_submit(
     )
     if evidence.get("charge") != charge:
         raise GuardError("guarded Create did not return the named charge")
+    before_balance = evidence["ui"]["balances"][0]
+    after_balance = base.read_live_balance(page)
+    delta = before_balance - after_balance
+    expected_cost = base.expected_credits_for(row)
+    if delta > expected_cost:
+        raise GuardError(
+            f"Flow balance dropped by {delta} credits (> expected {expected_cost}) on {row.row_id}"
+        )
+    if delta == expected_cost:
+        accounting.reconcile_posted(
+            charge,
+            evidence=dict(
+                before=before_balance,
+                after=after_balance,
+                delta=delta,
+                reconciled_at=now_iso(),
+            ),
+        )
     evidence["keep"] = False
     evidence["create_clicks"] = 1
     return evidence
