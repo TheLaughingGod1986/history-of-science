@@ -8,6 +8,7 @@ import importlib.util
 import inspect
 import json
 import os
+import subprocess
 import sys
 import tempfile
 import unittest
@@ -127,8 +128,15 @@ class R1R6CreatePathTests(unittest.TestCase):
     def test_ordinary_credit_text_is_not_a_cash_prompt(self):
         ADAPT.refuse_flow_banners("25050 AI credits\nGenerating will use 100 credits\nULTRA")
         ADAPT.refuse_flow_banners("This site is protected by recaptcha")
-        with self.assertRaisesRegex(ADAPT.GuardError, "cash prompt"):
-            ADAPT.refuse_flow_banners("Buy credits to keep going")
+        for text in (
+            "Buy credits to keep going",
+            "Top up your balance",
+            "Get extra credits",
+            "Move to a paid tier",
+        ):
+            with self.subTest(text=text):
+                with self.assertRaisesRegex(ADAPT.GuardError, "cash prompt"):
+                    ADAPT.refuse_flow_banners(text)
         with self.assertRaisesRegex(ADAPT.GuardError, "unusual-activity"):
             ADAPT.refuse_flow_banners("unusual activity on this account")
 
@@ -185,6 +193,19 @@ class R1R6CreatePathTests(unittest.TestCase):
             self.assertEqual(auth_ok["scope_sha256"], SCOPE_SHA)
             with self.assertRaisesRegex(ADAPT.GuardError, "inside the repo"):
                 ADAPT.write_authorization_template(ROOT, ROOT / "10_Shorts" / "not-allowed.json")
+
+            env = os.environ.copy()
+            env[ADAPT.SUBMIT_ENV] = "1"
+            proc = subprocess.run(
+                [sys.executable, str(SCRIPT), "submit", "--repo", str(ROOT), "--media", tmp, "--archive", tmp],
+                env=env,
+                capture_output=True,
+                text=True,
+            )
+            self.assertEqual(proc.returncode, 2)
+            self.assertIn("signed Chief authorization file", proc.stderr)
+            self.assertNotIn("Traceback", proc.stderr)
+            self.assertNotIn("Traceback", proc.stdout)
 
     def _run(self, root: Path, harness: _Harness, *, ledger=None, state=None):
         media = root / "media"
@@ -316,6 +337,35 @@ class R1R6CreatePathTests(unittest.TestCase):
                             ledger_path=root / "ledger.jsonl",
                         )
             self.assertEqual(reached["n"], 1)
+
+    def test_an_existing_t2_file_is_a_second_take_and_dry_run_spends_nothing(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            media = root / "media"
+            row = ADAPT.to_base_row(ADAPT.load_r1_r6_scope(ROOT)[1][0])
+            dest = ADAPT.r1_r6_output(media, row)
+            dest.parent.mkdir(parents=True)
+            dest.write_bytes(b"already there")
+            harness = _Harness()
+            with self.assertRaisesRegex(ADAPT.GuardError, "second take"):
+                self._run(root, harness)
+            self.assertEqual(harness.calls, [])
+
+            state = root / "dry-shared"
+            state.mkdir()
+            with patch.object(ADAPT, "verify_nas_volume_mounted", side_effect=lambda path: Path(path)), patch.object(
+                ADAPT, "verify_style_references", return_value={"house": [], "explorer": None, "staged": False}
+            ):
+                report = ADAPT.build_r1_r6_dry_run_report(
+                    ROOT,
+                    media=media,
+                    accounting_state=state,
+                    spend_ledger=root / "spend.jsonl",
+                )
+            self.assertEqual(report["submissions"], 0)
+            self.assertEqual(report["create_clicks"], 0)
+            self.assertEqual(report["credits_spent"], 0)
+            self.assertFalse((state / "account.jsonl").exists())
 
 
 if __name__ == "__main__":
