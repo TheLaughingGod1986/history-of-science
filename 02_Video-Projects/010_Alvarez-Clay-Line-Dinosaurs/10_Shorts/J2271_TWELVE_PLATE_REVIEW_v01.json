@@ -1,9 +1,9 @@
 {
   "job": "J2271",
   "film": "HOS:010",
-  "reviewed_at": "2026-11-15T03:35:00Z",
+  "reviewed_at": "2026-11-15T10:37:00Z",
   "reviewer": "gemini",
-  "acting_chief_ruling_applied": "J2829 (2026-11-14) + HOS desk 6853110063 (Chief Grok output-scale & crop-first ruling)",
+  "acting_chief_ruling_applied": "J2829 (2026-11-14) + HOS desk 6853110063, 6889210972, 6889216573, 6889357737, 6889364319, 6889440776 + J2887 12d motion flap check PASS",
   "demonstrated_capabilities": {
     "agent": "gemini",
     "available": [
@@ -12,7 +12,12 @@
     ],
     "probe_evidence": "relay probe of gemini, fresh clips, file tools only: audio PASS (match 0.91); video PASS (truth left_to_right red>green>yellow; answer left_to_right red>green>yellow)",
     "session_id": "62fe76d3-d338-4f25-b021-d544619bf441",
-    "direct_perception_performed": "Opened and inspected all 12 compact 640x360 .mp4 proxy clips, all 12 4fps (0.25s step, 32-frame) timestamped contact strips, Explorer reference hos-explorer-reference-v01.jpg, and 14 portrait 936x1664 (2.311111x) crop test sheets via read_file."
+    "direct_perception_performed": "Opened and inspected all 12 compact 640x360 .mp4 proxy clips, all 12 4fps (0.25s step, 32-frame) timestamped contact strips, Explorer reference hos-explorer-reference-v01.jpg, and 14 portrait 936x1664 (2.311111x) crop test sheets via read_file.",
+    "j2887_probe": {
+      "session_id": "6600240e-5227-4621-9de5-7f4a12df043c",
+      "probe_evidence": "relay probe of gemini, fresh clips, file tools only: audio PASS (match 0.87); video PASS (truth right_to_left green>blue>red; answer right_to_left green>blue>red)",
+      "direct_perception_performed": "Opened 12_P5_13a_gull_seaside_640x360.mp4, 12d_P5_13a_gull_track_x605-520_t4.30-7.02_540x960.mp4, 12d_P5_13a_gull_track_x605-520_t4.30-7.02_sheet.jpg, and 24fps frame-by-frame strip 12d_P5_13a_gull_24fps_f108-f126_sheet.jpg (f108..f126, t=4.500..5.250s) via read_file."
+    }
   },
   "output_master_scale_ruling": {
     "ruling_ref": "hos-desk 6853110063 (Chief Grok)",
@@ -26,10 +31,17 @@
   "counts": {
     "total_plates": 12,
     "independent_keep_batch1_codex": 4,
-    "crop_rescued_batch2_3_gemini_awaiting_non_producer_keep": 4,
+    "crop_rescued_batch2_3_gemini_awaiting_non_producer_keep": 0,
     "short_mapping_or_timing_fix_requiring_retake": 4,
-    "scoped_replacement_takes": 4,
-    "scoped_replacement_credits": 400
+    "scoped_replacement_takes": 6,
+    "scoped_replacement_credits": 600,
+    "claude_keep_6889210972": 1,
+    "claude_keep_6889357737": 2,
+    "crop_resheet_awaiting_claude": 0,
+    "fix_hold_pending_gemini_motion": 0,
+    "content_fix_R6_robin": 1,
+    "scoped_replacement_authorized": false,
+    "spend_this_turn_gbp": 0
   },
   "preserved_locks": {
     "short_a_vo_mp3_sha256": "68d88b5b5883f2376bcec29c26d77efea7634d5c7705693f41202ca587b927fb",
@@ -440,7 +452,7 @@
         "claude",
         "grok"
       ],
-      "verdict": "CROP_RESCUED_AWAITING_NON_PRODUCER_KEEP",
+      "verdict": "FIX_CONTENT",
       "keep": false,
       "working_mp4": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/04_Generated-Clips/part05/raw/v01_twelve_plates/P05_09_robin_t1.mp4",
       "archive_mp4": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/04_Generated-Clips/archive_v01_twelve_plates/P05_09_robin_t1.mp4",
@@ -466,6 +478,53 @@
       "approved_crop_936x1664": "crop=405:720:425:0,scale=936:1664:flags=lanczos",
       "source_window_s": {
         "Short_C:S01": [
+          2.97,
+          4.85
+        ],
+        "Short_C:loop_tail": [
+          4.85,
+          5.85
+        ],
+        "status": "FIX content. Chief 6889364319. Not a KEEP. R6 scoped, not authorized."
+      },
+      "motion_and_crop_notes": "Claude desk 6889210972 FIX, trim only, on 08b. The bird is clipped at the right edge at 2.15 s and still mid-landing at 2.56 s. The first clean perch is 2.97 s, so the window starts there, not at 2.55 s. Proposed window x=425, t=2.97\u20135.85 s (2.880 s = S01 1.880 s to 4.85 s, then loop tail 1.000 s to 5.85 s). Sheet 08c. Claude 6889357737: not a KEEP, hold as FIX. The perch and the frame hold, and the plumage shifts across most of the 2.88 s. Grok sampled the same crop every 0.16 s. Belly median stays near RGB 91,83,61 from 2.97 to 3.45 s, rises to 238,230,216 at 4.41 s, and is back near 104,93,72 at 5.37 s. That pale stretch is about 1.6 s. The clean perch before it is 0.48 s. After the colour returns the bird is still on the post at 6.00 s, lifts off by 6.40 s, and is mostly out of frame at 6.80 s, so the recovered perch is under a second. Neither side of the wash is 2.880 s. Chief 6889364319 ruled the colour pulse on the stills and skipped the motion check. Scoped as R6 with the content FIXes. Not authorized. \u00a30.",
+      "strip_4fps": {
+        "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/04_Generated-Clips/archive_v01_twelve_plates/review_J2271_motion_and_crop_936x1664/strips_4fps/08_P5_09_robin_4fps.jpg",
+        "sha256": "02fdbabca7459a0fff5ebb838616847e47598462006d0e79bb388b666882baa8",
+        "bytes": 570953
+      },
+      "proxy_640x360": {
+        "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/04_Generated-Clips/archive_v01_twelve_plates/review_J2271_motion_and_crop_936x1664/proxies_640x360/08_P5_09_robin_640x360.mp4",
+        "sha256": "c56f4e56410ae6a35baabdc99db524bcb203960a473428d96a930bb3f207cf12",
+        "bytes": 309678
+      },
+      "crop_sheet_936x1664": {
+        "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/04_Generated-Clips/archive_v01_twelve_plates/review_J2271_motion_and_crop_936x1664/crop_tests_936x1664/08c_P5_09_robin_clean_x425_t2.97-5.85_sheet.jpg",
+        "sha256": "13631d19816fd244f4e00eb913d4fb105cbd185475f918c8711bcb52ec26af2e",
+        "bytes": 373461,
+        "supersedes_sheet": "08b_P5_09_robin_clean_x425_t2.15-5.03_sheet.jpg",
+        "review_branch_path": "02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/07_Edit-Project/review_J2271_crop_sheets/08c_P5_09_robin_clean_x425_t2.97-5.85_sheet.jpg"
+      },
+      "non_producer_call": {
+        "by": "grok",
+        "desk_comment": "6889364319",
+        "recorded_by": "grok",
+        "recorded_at": "2026-11-15T05:05:00Z",
+        "picture_lock": "held",
+        "spend_gbp": 0,
+        "call": "FIX_CONTENT",
+        "sheet_read": "08c",
+        "previous": {
+          "desk_comment": "6889357737",
+          "call": "FIX_HOLD",
+          "sheet_read": "08c"
+        },
+        "motion_check": "skipped; Chief 6889364319 ruled the colour pulse on the stills",
+        "repair_id": "R6",
+        "authorized": false
+      },
+      "rejected_source_window_s": {
+        "Short_C:S01": [
           2.15,
           4.03
         ],
@@ -484,22 +543,7 @@
           ]
         }
       },
-      "motion_and_crop_notes": "Detached-skeleton opening (t=0.00..1.75s) retired per Chief Grok ruling 6853110063. From t=2.150s to t=5.030s (2.880s total = 1.880s S01 + 1.000s loop_tail), the skeleton overlay is 100% gone: the European robin hops on the mossy garden fence post (t=2.15-2.97s), perches brightly in warm morning light, and turns its head alertly. Static crop x=425..830 -> 936x1664 (2.311111x) keeps the robin centered above the caption safe line across all 2.880s. Because gemini produced Batch 2, keep=false is preserved under no-self-KEEP until non-producer (claude/grok) signs off on 08b_P5_09_robin_clean_x425_t2.15-5.03_sheet.jpg.",
-      "strip_4fps": {
-        "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/04_Generated-Clips/archive_v01_twelve_plates/review_J2271_motion_and_crop_936x1664/strips_4fps/08_P5_09_robin_4fps.jpg",
-        "sha256": "02fdbabca7459a0fff5ebb838616847e47598462006d0e79bb388b666882baa8",
-        "bytes": 570953
-      },
-      "proxy_640x360": {
-        "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/04_Generated-Clips/archive_v01_twelve_plates/review_J2271_motion_and_crop_936x1664/proxies_640x360/08_P5_09_robin_640x360.mp4",
-        "sha256": "c56f4e56410ae6a35baabdc99db524bcb203960a473428d96a930bb3f207cf12",
-        "bytes": 309678
-      },
-      "crop_sheet_936x1664": {
-        "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/04_Generated-Clips/archive_v01_twelve_plates/review_J2271_motion_and_crop_936x1664/crop_tests_936x1664/08b_P5_09_robin_clean_x425_t2.15-5.03_sheet.jpg",
-        "sha256": "034931b253a3142d5a0bdcc0935873621478473b8673d763414891c8f5edb7d5",
-        "bytes": 317071
-      }
+      "crop_state": "FIX_content_R6"
     },
     {
       "order": 9,
@@ -510,7 +554,7 @@
         "claude",
         "grok"
       ],
-      "verdict": "CROP_RESCUED_AWAITING_NON_PRODUCER_KEEP",
+      "verdict": "FIX",
       "keep": false,
       "working_mp4": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/04_Generated-Clips/part05/raw/v01_twelve_plates/P05_10_explorer_robin_t1.mp4",
       "archive_mp4": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/04_Generated-Clips/archive_v01_twelve_plates/P05_10_explorer_robin_t1.mp4",
@@ -532,7 +576,7 @@
       "short_uses": [
         "Short_C:S07 (15.780-19.380s, 3.600s)"
       ],
-      "approved_crop_936x1664": "crop=405:720:x='390+65*(t-0.00)/3.60':y=0,scale=936:1664:flags=lanczos",
+      "approved_crop_936x1664": null,
       "source_window_s": {
         "Short_C:S07_tracked_3.60s": [
           0.0,
@@ -543,7 +587,7 @@
           3.75
         ]
       },
-      "motion_and_crop_notes": "Crop-rescued at \u00a30 per Chief Grok ruling 6853110063. Explorer matches 01_Character/05_Generation-References/hos-explorer-reference-v01.jpg (round gold glasses, teal coat, brown waistcoat, satchel, messy brown hair). Smooth natural motion as the Explorer crouches offering crumbs on a sunlit garden path while the robin hops toward his hand (t=0.00..3.25s) and lifts into flight (t=3.30..3.75s) as the Explorer looks up smiling. Tracked portrait crop x=390->455 across t=0.000..3.600s (09d_P5_10_explorer_robin_track_x390-455_t0.00-3.60_sheet.jpg) keeps both the robin and the Explorer inside the 936x1664 frame. Because gemini produced Batch 2, keep=false is preserved under no-self-KEEP until non-producer (claude/grok) signs off.",
+      "motion_and_crop_notes": "Claude desk 6889210972 FIX on 09d, agreeing a crop does not fix it. At 3.09 s the boy is still crouched and the robin is on the path. By 3.60 s he has sat back and is looking up, the x=455 crop cuts off his right side, and the robin is gone from the portrait crop. Through the crouch the robin sits on the caption line. The clean crouch is shorter than the 3.600 s Short C S07 slot, so a trim cannot fill it. Scoped as R5 with the mapping and content FIXes. Not authorized. Picture lock held. \u00a30.",
       "strip_4fps": {
         "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/04_Generated-Clips/archive_v01_twelve_plates/review_J2271_motion_and_crop_936x1664/strips_4fps/09_P5_10_explorer_robin_4fps.jpg",
         "sha256": "d55105932f7114b31c14893328c8312f3dd7b0c625952e749df76ff953d1d7d5",
@@ -558,7 +602,20 @@
         "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/04_Generated-Clips/archive_v01_twelve_plates/review_J2271_motion_and_crop_936x1664/crop_tests_936x1664/09d_P5_10_explorer_robin_track_x390-455_t0.00-3.60_sheet.jpg",
         "sha256": "1518500c97232f3b41453686384d1379e97e7f09326daade8c19d3fbcf06c865",
         "bytes": 319827
-      }
+      },
+      "non_producer_call": {
+        "by": "claude",
+        "desk_comment": "6889210972",
+        "recorded_by": "grok",
+        "recorded_at": "2026-11-15T04:50:00Z",
+        "picture_lock": "held",
+        "spend_gbp": 0,
+        "call": "FIX_CONTENT",
+        "sheet_read": "09d",
+        "repair_id": "R5"
+      },
+      "rejected_crop_936x1664": "crop=405:720:x='390+65*(t-0.00)/3.60':y=0,scale=936:1664:flags=lanczos",
+      "crop_state": "rejected_scoped_as_R5"
     },
     {
       "order": 10,
@@ -624,8 +681,8 @@
         "claude",
         "grok"
       ],
-      "verdict": "CROP_RESCUED_AWAITING_NON_PRODUCER_KEEP",
-      "keep": false,
+      "verdict": "KEEP",
+      "keep": true,
       "working_mp4": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/04_Generated-Clips/part05/raw/v01_twelve_plates/P05_09a_pigeon_pavement_t1.mp4",
       "archive_mp4": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/04_Generated-Clips/archive_v01_twelve_plates/P05_09a_pigeon_pavement_t1.mp4",
       "mp4_sha256": "0a9797df0ac726b20aab4c358e498f7fdf62aa96f85f0a7238193c2db5e3b59a",
@@ -653,7 +710,7 @@
           3.74
         ]
       },
-      "motion_and_crop_notes": "Crop-rescued at \u00a30 per Chief Grok ruling 6853110063. Linear tracked portrait crop x=360->530 across t=1.100..3.740s (exact 2.640s Short_C:S05 duration) keeps the strutting pigeon centered in the foreground from 0.00s of the cut ('the pigeon on the pavement') and brings the European robin perched on the wooden garden fence cleanly into the upper-right frame by 0.75s of the cut ('the robin'), with both birds unclipped and above the caption safe line through 2.640s (11c_P5_09a_pigeon_track_x360-530_t1.10-3.74_sheet.jpg). Because gemini produced Batch 3, keep=false is preserved under no-self-KEEP until non-producer (claude/grok) signs off.",
+      "motion_and_crop_notes": "Crop-rescued at \u00a30 per Chief Grok ruling 6853110063. Linear tracked portrait crop x=360->530 across t=1.100..3.740s (exact 2.640s Short_C:S05 duration) keeps the strutting pigeon centered in the foreground from 0.00s of the cut ('the pigeon on the pavement') and brings the European robin perched on the wooden garden fence cleanly into the upper-right frame by 0.75s of the cut ('the robin'), with both birds unclipped and above the caption safe line through 2.640s (11c_P5_09a_pigeon_track_x360-530_t1.10-3.74_sheet.jpg). Because gemini produced Batch 3, keep=false is preserved under no-self-KEEP until non-producer (claude/grok) signs off. Claude desk 6889210972 KEEP on 11c: the pigeon stays in frame from 1.10 to 3.74 s, the tracked crop moves only one way, the robin is on the fence from 1.85 s, there is no extra animal or skeleton, and the caption line crosses the feet and belly only. Recorded by Grok. Flow spend ledger left unchanged.",
       "strip_4fps": {
         "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/04_Generated-Clips/archive_v01_twelve_plates/review_J2271_motion_and_crop_936x1664/strips_4fps/11_P5_09a_pigeon_pavement_4fps.jpg",
         "sha256": "269b982af45b9489bd5dea0ec142b0fc5481b2ffc446617f2e5528f4c5e2db3b",
@@ -668,7 +725,19 @@
         "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/04_Generated-Clips/archive_v01_twelve_plates/review_J2271_motion_and_crop_936x1664/crop_tests_936x1664/11c_P5_09a_pigeon_track_x360-530_t1.10-3.74_sheet.jpg",
         "sha256": "9bcc976d993d608bc1fed5c42a63e5f30ed2d496df14b18808eec2807e712416",
         "bytes": 295596
-      }
+      },
+      "keep_by": "claude",
+      "non_producer_call": {
+        "by": "claude",
+        "desk_comment": "6889210972",
+        "recorded_by": "grok",
+        "recorded_at": "2026-11-15T04:50:00Z",
+        "picture_lock": "held",
+        "spend_gbp": 0,
+        "call": "KEEP",
+        "sheet": "11c"
+      },
+      "crop_state": "KEEP"
     },
     {
       "order": 12,
@@ -677,10 +746,11 @@
       "independent_reviewers": [
         "codex",
         "claude",
-        "grok"
+        "grok",
+        "gemini"
       ],
-      "verdict": "CROP_RESCUED_AWAITING_NON_PRODUCER_KEEP",
-      "keep": false,
+      "verdict": "KEEP",
+      "keep": true,
       "working_mp4": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/04_Generated-Clips/part05/raw/v01_twelve_plates/P05_13a_gull_seaside_t1.mp4",
       "archive_mp4": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/04_Generated-Clips/archive_v01_twelve_plates/P05_13a_gull_seaside_t1.mp4",
       "mp4_sha256": "893b17b8d5f3f0b9b5e245688d17145dfa3933f09e027f124acd8593de74b74a",
@@ -701,14 +771,19 @@
       "short_uses": [
         "Short_C:S06 (13.060-15.780s, 2.720s)"
       ],
-      "approved_crop_936x1664": "crop=405:720:605:0,scale=936:1664:flags=lanczos",
+      "approved_crop_936x1664": "crop=405:720:x='605-85*(t-4.30)/2.72':y=0,scale=936:1664:flags=lanczos",
       "source_window_s": {
         "Short_C:S06": [
           4.3,
           7.02
-        ]
+        ],
+        "x_track": [
+          605,
+          520
+        ],
+        "status": "KEEP confirmed: Claude 6889357737 & Chief Grok 6889364319/6889440776 on 12d stills + Gemini J2887 motion flap check PASS (4.69-5.08s / f108-f126 is continuous natural wingbeat, zero morphing)."
       },
-      "motion_and_crop_notes": "Crop-rescued at \u00a30 per Chief Grok ruling 6853110063. Right-shifted static portrait crop x=605..1010 -> 936x1664 (2.311111x) across t=4.300..7.020s (exact 2.720s Short_C:S06 duration) keeps the white-and-grey gull soaring over sunlit white chalk cliffs and moving sea waves fully inside the portrait frame above the caption safe line across both wing extremes (12c_P5_13a_gull_x605_t4.30-7.02_sheet.jpg). Because gemini produced Batch 3, keep=false is preserved under no-self-KEEP until non-producer (claude/grok) signs off.",
+      "motion_and_crop_notes": "Claude desk 6889210972 FIX, crop only, on 12c. One-way tracked crop x=605->520 across t=4.30-7.02s (2.720s, sheet 12d) approved KEEP on stills by Claude 6889357737 and Chief Grok 6889364319/6889440776. In J2887, Gemini inspected the moving tracked crop clip (12d_P5_13a_gull_track_x605-520_t4.30-7.02_540x960.mp4) and every 24fps frame across t=4.500-5.250s (f108-f126, 12d_P5_13a_gull_24fps_f108-f126_sheet.jpg): f108-f110 downstroke below body, f111-f113 (4.625-4.708s, covering 4.69s) smooth mid-upstroke pass-through with natural flap blur, f114-f118 (4.750-4.917s) full crisp upstroke above back, f119-f122 (4.958-5.083s, covering 5.08s) smooth mid-downstroke pass-through across torso line, f123-f126 glide extension. Zero morphing, zero extra wing, zero anatomy break. KEEP stands at \u00a30.",
       "strip_4fps": {
         "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/04_Generated-Clips/archive_v01_twelve_plates/review_J2271_motion_and_crop_936x1664/strips_4fps/12_P5_13a_gull_seaside_4fps.jpg",
         "sha256": "e616bf206d171d98a1b0296d78409e28961fcad3ec3ade9b20740e233a99f5b6",
@@ -720,9 +795,56 @@
         "bytes": 517587
       },
       "crop_sheet_936x1664": {
-        "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/04_Generated-Clips/archive_v01_twelve_plates/review_J2271_motion_and_crop_936x1664/crop_tests_936x1664/12c_P5_13a_gull_x605_t4.30-7.02_sheet.jpg",
-        "sha256": "7fc3455c8a70cbf811d079a908d96537f50685c468a044844400bf0b801b1a14",
-        "bytes": 202936
+        "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/04_Generated-Clips/archive_v01_twelve_plates/review_J2271_motion_and_crop_936x1664/crop_tests_936x1664/12d_P5_13a_gull_track_x605-520_t4.30-7.02_sheet.jpg",
+        "sha256": "0bb15dd51e1db62fda5a67d1bf79486ac50c93ffe964b9735422ad79d5a4b6d4",
+        "bytes": 234757,
+        "supersedes_sheet": "12c_P5_13a_gull_x605_t4.30-7.02_sheet.jpg",
+        "sample_x": [
+          605,
+          593,
+          581,
+          569,
+          556,
+          544,
+          532,
+          520
+        ],
+        "review_branch_path": "02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/07_Edit-Project/review_J2271_crop_sheets/12d_P5_13a_gull_track_x605-520_t4.30-7.02_sheet.jpg"
+      },
+      "keep_by": "claude",
+      "non_producer_call": {
+        "by": "claude",
+        "desk_comment": "6889357737",
+        "recorded_by": "grok",
+        "recorded_at": "2026-11-15T05:05:00Z",
+        "picture_lock": "held",
+        "spend_gbp": 0,
+        "call": "KEEP",
+        "sheet_read": "12d",
+        "previous": {
+          "desk_comment": "6889210972",
+          "call": "FIX_CROP",
+          "sheet_read": "12c",
+          "resheet": "12d"
+        },
+        "motion_check": "PASS by gemini in J2887 (f108..f126 24fps + tracked crop mp4: continuous natural upstroke at 4.69s and downstroke at 5.08s; zero morphing; KEEP stands)"
+      },
+      "rejected_crop_936x1664": "crop=405:720:605:0,scale=936:1664:flags=lanczos",
+      "crop_state": "KEEP",
+      "flap_motion_check_j2887": {
+        "by": "gemini",
+        "verdict": "PASS_NATURAL_FLAP",
+        "window_checked_s": [
+          4.5,
+          5.25
+        ],
+        "frames_checked": "f108..f126 (19 frames at 24fps)",
+        "strip_24fps_path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/04_Generated-Clips/archive_v01_twelve_plates/review_J2271_motion_and_crop_936x1664/crop_tests_936x1664/12d_P5_13a_gull_24fps_f108-f126_sheet.jpg",
+        "strip_24fps_sha256": "6ccd74d145eb324e0740f3474e46033d9de8c5960a2c602152d92e093c100dc4",
+        "strip_24fps_bytes": 513044,
+        "tracked_crop_proxy_path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/04_Generated-Clips/archive_v01_twelve_plates/review_J2271_motion_and_crop_936x1664/proxies_640x360/12d_P5_13a_gull_track_x605-520_t4.30-7.02_540x960.mp4",
+        "tracked_crop_proxy_sha256": "91746b5de04d112ce4bcbdd7be1a27f2c14714e637323d264fa0871a8059217d",
+        "tracked_crop_proxy_bytes": 535867
       }
     }
   ],
@@ -783,6 +905,56 @@
       "aspect": "16:9",
       "clip_s": 8,
       "credits": 100
+    },
+    {
+      "repair_id": "R5",
+      "replaces_row_id": "P5:10_explorer_robin",
+      "short_targets": [
+        "Short_C:S07 (15.780-19.380s, 3.600s)"
+      ],
+      "spoken_line": "Warm-blooded. Feathered. Quick to take to the sky.",
+      "defect": "Tracked crop x=390->455 over t=0.00-3.60 does not hold both the Explorer and the robin. From about 3.09 s he straightens out of the crouch, the pose jumps, and by 3.60 s the portrait crop cuts him off at the right edge and the robin is gone. The robin also sits on the caption line during the crouch. The usable crouch is shorter than 3.600 s.",
+      "proposed_prompt": "Premium Animistry-class 3D cartoon. Frame 0: the Explorer, a young boy with messy brown hair, round gold glasses, a teal coat, tan waistcoat, brown bow tie and a satchel, is already crouched on a sunlit garden path, and one European robin is already on the path in front of his open hand. Both stay inside the centre 9:16 band and clear of the lower fifth. He keeps that crouch. The robin hops once and then lifts past his hand, still fully in frame. No pose jump, no second bird, no text. Silent. Continuous motion through the final frame.",
+      "model": "Veo 3.1 Quality",
+      "aspect": "16:9",
+      "clip_s": 8,
+      "credits": 100,
+      "authorized": false,
+      "start_still": "Flow Nano Banana 2, 0 credits, only after a later spend ruling"
+    },
+    {
+      "repair_id": "R6",
+      "replaces_row_id": "P5:09_robin",
+      "short_targets": [
+        "Short_C:S01 (0.000-1.880s, 1.880s)",
+        "Short_C:loop_tail (22.560-23.560s, 1.000s)"
+      ],
+      "spoken_line": "Not all the dinosaurs died.",
+      "defect": "On 08c the perched bird stays in frame, then the belly and breast wash pale from about 3.6 s to 5.2 s and return, with a glow behind the bird near 5.44 s. Chief 6889364319 ruled that colour pulse on the stills. A 2.880 s window cannot sit outside it: the clean perch before the wash is 0.48 s, and after the colour returns the bird lifts off by 6.40 s. The opening of the same clip also carries the skeletal wing. Not authorized.",
+      "proposed_prompt": "Premium Animistry-class 3D cartoon. Frame 0: one European robin is already perched on a mossy garden fence post, fully inside the centre 9:16 band and clear of the lower fifth. Grey-brown back, orange-red breast, pale grey belly, and those colours stay the same for the whole shot. It flicks its head once. It stays perched. No second bird, no skeleton, no glow behind the body, no text. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "model": "Veo 3.1 Quality",
+      "aspect": "16:9",
+      "clip_s": 8,
+      "credits": 100,
+      "authorized": false,
+      "start_still": "Flow Nano Banana 2, 0 credits, only after a later spend ruling"
     }
-  ]
+  ],
+  "claude_framing_calls": {
+    "desk_comment": "6889357737",
+    "recorded_by": "grok",
+    "recorded_at": "2026-11-15T05:05:00Z",
+    "picture_lock": "held",
+    "flow_spend_ledger": "unchanged",
+    "ben": "nothing",
+    "calls": {
+      "P5:09a_pigeon_pavement": "KEEP on 11c",
+      "P5:13a_gull_seaside": "KEEP on 12d stills (Claude 6889357737, Grok 6889364319/6889440776) + Gemini J2887 motion flap check PASS (4.69-5.08s / f108-f126 is natural continuous wingbeat)",
+      "P5:09_robin": "FIX content on 08c. Chief 6889364319. R6 scoped, not authorized. Motion check skipped.",
+      "P5:10_explorer_robin": "FIX content, R5, not authorized"
+    },
+    "previous_desk_comment": "6889210972",
+    "tally": "6 KEEP total (Batch 1 codex: P1:01, P2:01, P2:03, P3:08; Batch 3 gemini with non-producer KEEP: 11c P5:09a_pigeon_pavement, 12d P5:13a_gull_seaside with J2887 flap check PASS) and 6 FIX needing regeneration (R1 P2:05_almost_none, R2 P4:06_dust_veil, R3 P5:08_all_at_once, R4 P5:12_clay_callback, R5 09d P5:10_explorer_robin, R6 08c P5:09_robin). R1-R6 scoped, 600 Flow credits, not authorized.",
+    "chief_ruling": "6889364319"
+  }
 }
