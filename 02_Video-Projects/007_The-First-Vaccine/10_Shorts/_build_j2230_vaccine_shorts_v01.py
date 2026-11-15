@@ -83,10 +83,10 @@ PLANS = {
         # Include the cut at 443.75 s so the graveyard open is already moving.
         "pic_lead": {0: 1.20},
         "pieces": [
-            (35.16, 36.45, 0.20),
-            (37.42, 40.72, 0.35),
-            (25.36, 34.50, 0.35),
-            (70.06, 75.70, 0.95),
+            (35.16, 36.45, 0.45),
+            (37.42, 40.72, 0.55),
+            (25.36, 34.50, 0.55),
+            (70.06, 75.70, 1.15),
         ],
         "expect": (
             "On the eighth of May, nineteen eighty, the world's health leaders declared that smallpox was gone. "
@@ -402,7 +402,7 @@ def build_one(sid: str) -> dict:
         nxt = f"[v{i + 4}]"
         fc.append(f"{last}[{src_i}:v]overlay=0:0:enable='between(t,{a:.3f},{b:.3f})'{nxt}")
         last = nxt
-    ver = "v05"
+    ver = "v06" if sid == "eradication" else "v05"
     mp4 = OUT / f"hos_007_{sid}_{ver}.mp4"
     ff(*inputs, "-filter_complex", ";".join(fc), "-map", last, "-map", "1:a",
        "-c:v", "libx264", "-pix_fmt", "yuv420p", "-profile:v", "high", "-preset", "medium",
