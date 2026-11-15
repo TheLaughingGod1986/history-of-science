@@ -45,9 +45,9 @@
       "state": "blocked",
       "due": "2026-11-22",
       "owner": "gemini",
-      "note": "J2271 independent moving-video + 4fps strip + 936x1664 (2.311x) crop review complete: 4 Batch-1 codex plates KEEP (P1:01_clay_line, P2:01_walter_hammer x=620, P2:03_tiny_shells, P3:08_asaro_michel x=180); 4 Batch-2/3 gemini plates rescued at 936x1664 for zero spend awaiting non-producer KEEP (P5:09_robin, P5:09a_pigeon_pavement, P5:13a_gull_seaside, P5:10_explorer_robin); 4 Short mapping/timing FIXes (R1-R4, 400 Flow credits) scoped.",
+      "note": "Chief 6889364319/6889440776 + J2887: 6/12 Shorts plates final KEEP (Batch 1 P1:01, P2:01 x=620, P2:03, P3:08 x=180; Batch 3 11c pigeon x=360->530, 12d gull x=605->520 with 4.69-5.08s flap motion PASS). 6/12 FIX scoped as R1-R6 (600 Flow credits, not authorized: R1 P2:05, R2 P4:06, R3 P5:08, R4 P5:12, R5 09d explorer, R6 08c robin). Picture lock held. \u00a30.",
       "underway": false,
-      "waiting": "Chief/Claude non-producer KEEP sign-off on 4 crop-rescued Batch-2/3 plates and 400-credit Flow spend approval for 4 Short replacement plates (R1-R4) before J2172 assembly",
+      "waiting": "Chief/Claude 600-credit Flow spend authorization and generation/stills-review of R1-R6 (6 Short replacement plates) on HOS desk #180 before J2172 assembly.",
       "since": "2026-11-15"
     },
     "edit": {
