@@ -1,0 +1,202 @@
+{
+  "id": "s06_blood_pressure_cuff",
+  "job": "J2230",
+  "test": "B (search-titled)",
+  "air_date_draft": "2026-11-20",
+  "file": "10_Shorts/hos_005_s06_blood_pressure_cuff_v03.mp4",
+  "sha256": "de20949cd60c09637a42138367c563b71f6f39798e5d7d4fcd9b88174f215449",
+  "duration_s": 23.1,
+  "vo_source": "02_Voiceover/part05_the_vessels_he_never_saw_v01_raw.mp3",
+  "vo_take_indices": [
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245,
+    246,
+    247,
+    248,
+    249,
+    250,
+    251
+  ],
+  "dropped": [
+    "Your blood leaves your heart, runs out through your arteries, crosses through the capillaries, and comes home through your veins. And the next time a nurse wraps a cuff round your arm, think of Harvey."
+  ],
+  "route": "cuff-first lift from Part 05 indices 193-251: A blood pressure cuff is his band. \u2026 long before anyone saw the last link.",
+  "vo_s": 22.542,
+  "words": 59,
+  "max_pause_s": 0.8,
+  "atempo": 1.0,
+  "bed": "hos005-part05-temp_score_bed_v01.mp3",
+  "bed_gain_db": -22.6,
+  "hook": "THE CUFF",
+  "hook_layer": {
+    "font_size": 200,
+    "cap_px": 142,
+    "cap_pct": 7.4,
+    "lines": 2,
+    "stroke": 10,
+    "block_pct": [
+      11.0,
+      27.1
+    ],
+    "widest_pct": 53.1
+  },
+  "who_card": {
+    "name": "WILLIAM HARVEY",
+    "line2": "London, 1628",
+    "line1_px": 69,
+    "line1_pct_of_band": 11.3,
+    "band": [
+      656,
+      1264
+    ],
+    "in_s": 14.6,
+    "out_s": 18.2,
+    "fade_s": 0.35
+  },
+  "title_on_screen": "The Tied Arm That Proved Your Blood Circulates",
+  "youtube_title_draft": "How Does a Blood Pressure Cuff Work?",
+  "plan": [
+    {
+      "t0": 0.0,
+      "t1": 2.637,
+      "plate": "04_Generated-Clips/part05/raw/v01/14_cuff_release_t2.mp4",
+      "in_s": 2.0,
+      "crop_x": 700,
+      "lands_on": 0
+    },
+    {
+      "t0": 2.637,
+      "t1": 6.098,
+      "plate": "04_Generated-Clips/part04/raw/v01/02_linen_tie_t2.mp4",
+      "in_s": 3.2,
+      "crop_x": 656,
+      "lands_on": "It"
+    },
+    {
+      "t0": 6.098,
+      "t1": 10.53,
+      "plate": "04_Generated-Clips/part04/raw/v01/08_knots_valve_t1.mp4",
+      "in_s": 2.0,
+      "crop_x": 656,
+      "lands_on": "lets"
+    },
+    {
+      "t0": 10.53,
+      "t1": 14.599,
+      "plate": "04_Generated-Clips/part05/raw/v01/08_your_blood_t2.mp4",
+      "in_s": 3.0,
+      "crop_x": 656,
+      "lands_on": "A"
+    },
+    {
+      "t0": 14.599,
+      "t1": 20.092,
+      "plate": "04_Generated-Clips/part04/raw/v01/14_steering_home_t1.mp4",
+      "in_s": 1.2,
+      "crop_x": 656,
+      "lands_on": "Harvey"
+    },
+    {
+      "t0": 20.092,
+      "t1": 23.092,
+      "plate": "04_Generated-Clips/part05/raw/v01/14_cuff_release_t2.mp4",
+      "in_s": 2.0,
+      "crop_x": 700,
+      "lands_on": "loop"
+    }
+  ],
+  "captions": 18,
+  "caption_check": {
+    "ok": true,
+    "changes": 18,
+    "ratio": 1.0
+  },
+  "gate": {
+    "exit": 0,
+    "output": "PASS  hos_005_s06_blood_pressure_cuff_v03.mp4  dur=23.1s  audio=-17.5dB  motion=23.81  f0diff=4.33  cut1=2.67s  vo_onset=0.06s  tail_gap=0.64s  vo_src=mix  dhash=e9ebee9f65e4f8c9\n   full-bleed 0.00s  fills the frame  sharp above/middle/below=0.026/0.166/0.19  detail top/centre/bottom=12.99/3.65/3.32  spread top/bottom=41.6/45.43\n   full-bleed 0.25s  fills the frame  sharp above/middle/below=0.027/0.149/0.238  detail top/centre/bottom=12.94/3.37/3.99  spread top/bottom=41.43/47.44\n   full-bleed 0.50s  fills the frame  sharp above/middle/below=0.027/0.092/0.22  detail top/centre/bottom=13.09/2.31/4.36  spread top/bottom=40.76/45.61\n   full-bleed whole Short  2/24 frames padded at one a second, 3/47 at two a second  padded stretches: 15-16s (blur-pad), 23-24s (blur-pad, no edge)  no end card named in meta\n   warn  the picture does not fill 9:16 on 3/47 sampled frames: 15-16s (blur-pad), 23-24s (blur-pad, no edge)\n   sheet /var/folders/1z/ymtxygjd7cnfrxjv7sqgmww40000gn/T/hos_shorts_gate/hos_005_s06_blood_pressure_cuff_v03_open_sheet.jpg"
+  },
+  "vo_check": {
+    "exit": 1,
+    "output": "FAIL  hos_005_s06_blood_pressure_cuff_v03.mp4  0:23.10  mean -17.5 dB  peak -2.4 dB  153 wpm\n   FAIL  speech mean -17.5 dB outside -28.0 to -19.0 dB"
+  },
+  "freezedetect_starts": [],
+  "qa": {
+    "polish_gate": {
+      "exit": 0,
+      "output": "polish gate PASS: 0 of 6 rows failed, 1 to look at -> 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s06_blood_pressure_cuff_v03/polish_gate_s06_blood_pressure_cuff_v03.json"
+    },
+    "picture_qa": {
+      "exit": 0,
+      "output": "picture QA PASS: 0 of 6 cuts fail, 1 to look at -> 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s06_blood_pressure_cuff_v03/picture_qa_s06_blood_pressure_cuff_v03/PICTURE_QA.md, 02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/qa_s06_blood_pressure_cuff_v03/picture_qa_s06_blood_pressure_cuff_v03/picture_qa_review.jpg"
+    },
+    "music_gate": {
+      "exit": 1,
+      "output": "subprocess.CalledProcessError: Command '['ffmpeg', '-v', 'error', '-i', '/Volumes/MiniWork/scratch/J2230/wt/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/05_Music/hos005-part05-temp_score_bed_v01.mp3', '-t', '300', '-ac', '1', '-ar', '8000', '-f', 'f32le', '-']' returned non-zero exit status 254."
+    }
+  },
+  "stills": [
+    "10_Shorts/_work_s06_blood_pressure_cuff_v03/hos_005_s06_blood_pressure_cuff_v03_t000.0.jpg",
+    "10_Shorts/_work_s06_blood_pressure_cuff_v03/hos_005_s06_blood_pressure_cuff_v03_t003.8.jpg",
+    "10_Shorts/_work_s06_blood_pressure_cuff_v03/hos_005_s06_blood_pressure_cuff_v03_t011.5.jpg",
+    "10_Shorts/_work_s06_blood_pressure_cuff_v03/hos_005_s06_blood_pressure_cuff_v03_t022.1.jpg"
+  ],
+  "autocomplete_check": {
+    "date": "2026-11-06",
+    "source": "carried from s06 v01 title draft; fresh signed-out check still owed before KEEP",
+    "note": "Title draft 'How Does a Blood Pressure Cuff Work?' is the v01 search title. Sentence 1 answers it: a blood pressure cuff is Harvey's band, and it squeezes until the blood stops. Not a KEEP."
+  },
+  "air_date_draft_note": "2026-11-20 is the conditional J2230 Friday slot. 18 and 21 Nov are the Willow pair. No upload, no awaits until the open gate PASSes and a reviewer says KEEP.",
+  "who_card_note": "card WILLIAM HARVEY \u00b7 London, 1628 on screen 14.6\u201318.2 s, as 'Harvey proved' is spoken, after the 9\u201314 s title and clear of the last 3 s cuff loop. No end card.",
+  "overlap_note": "Does not reuse s07's Part 03 heart-pump words. Drops the v01 opening 'Your blood leaves your heart\u2026' so sentence 1 names the cuff. v01 file is left untouched."
+}
