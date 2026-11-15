@@ -1,9 +1,9 @@
 {
   "job": "J2271",
   "film": "HOS:010",
-  "reviewed_at": "2026-11-15T10:37:00Z",
+  "reviewed_at": "2026-11-15T17:15:00Z",
   "reviewer": "gemini",
-  "acting_chief_ruling_applied": "J2829 (2026-11-14) + HOS desk 6853110063, 6889210972, 6889216573, 6889357737, 6889364319, 6889440776 + J2887 12d motion flap check PASS",
+  "acting_chief_ruling_applied": "J2829 (2026-11-14) + HOS desk 6853110063, 6889210972, 6889216573, 6889357737, 6889364319, 6889440776, 6893153190, 6893169788, 6893259531 + J2887 12d motion flap check PASS + J2904 Check 4 guarded R1-R6 dry-run PASS",
   "demonstrated_capabilities": {
     "agent": "gemini",
     "available": [
@@ -955,6 +955,57 @@
     },
     "previous_desk_comment": "6889210972",
     "tally": "6 KEEP total (Batch 1 codex: P1:01, P2:01, P2:03, P3:08; Batch 3 gemini with non-producer KEEP: 11c P5:09a_pigeon_pavement, 12d P5:13a_gull_seaside with J2887 flap check PASS) and 6 FIX needing regeneration (R1 P2:05_almost_none, R2 P4:06_dust_veil, R3 P5:08_all_at_once, R4 P5:12_clay_callback, R5 09d P5:10_explorer_robin, R6 08c P5:09_robin). R1-R6 scoped, 600 Flow credits, not authorized.",
-    "chief_ruling": "6889364319"
+    "chief_ruling": "6889364319",
+    "r1_r6_precheck_and_guard_j2904": {
+      "claude_check_comment": "6893153190",
+      "chief_ruling_comments": [
+        "6893169788",
+        "6893259531"
+      ],
+      "checked_at": "2026-11-15T17:15:00Z",
+      "check_1_credits": {
+        "status": "PASS",
+        "live_flow_credits": 25050,
+        "reset_label": "12 Dec 19:13",
+        "account_ledger_remaining_reserved": 1000,
+        "account_ledger_unposted_charges": 900,
+        "account_ledger_liability": 1900,
+        "new_reservation_id": "HOS010_R1_R6_PLATES_J2271",
+        "released_j2270_reused": false,
+        "new_reservation_credits": 600,
+        "projected_headroom_after_600": 22550,
+        "live_balance_floor": 3000
+      },
+      "check_2_flow_page": {
+        "status": "PASS",
+        "unusual_activity_banner": false
+      },
+      "check_3_mini_disk": {
+        "status": "PASS",
+        "free_disk": "20Gi",
+        "min_free_gb": 10
+      },
+      "check_4_guarded_dry_run": {
+        "status": "PASS_DISARMED",
+        "scope_path": "02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/10_Shorts/R1_R6_REPLACEMENT_SCOPE_J2271.json",
+        "adapter_path": "02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/07_Edit-Project/_mint_flow_r1_r6_plates_j2271.py",
+        "command": "python3 02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/07_Edit-Project/_mint_flow_r1_r6_plates_j2271.py dry-run",
+        "rows": 6,
+        "credits_per_row": 100,
+        "max_total_credits": 600,
+        "named_charges": [
+          "HOS:010:R1:P02:05_almost_none:t2",
+          "HOS:010:R2:P04:06_dust_veil:t2",
+          "HOS:010:R3:P05:08_all_at_once:t2",
+          "HOS:010:R4:P05:12_clay_callback:t2",
+          "HOS:010:R5:P05:10_explorer_robin:t2",
+          "HOS:010:R6:P05:09_robin:t2"
+        ],
+        "generation_authorized": false,
+        "submit_armed": false,
+        "credits_spent": 0,
+        "spend_gbp": 0
+      }
+    }
   }
 }
