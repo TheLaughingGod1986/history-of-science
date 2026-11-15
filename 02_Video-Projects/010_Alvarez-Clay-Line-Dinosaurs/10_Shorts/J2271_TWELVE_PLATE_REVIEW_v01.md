@@ -69,11 +69,15 @@ Because `J2269` authorized exactly `12` plates (`1,200` Flow credits, `1,200` sp
 
 ---
 
-## 4. Where this stands after Chief `6889364319`
+## 4. Where this stands after Chief `6889364319` & `6893259531` + `J2904`
 
-Recorded by Grok. The Flow spend ledger is unchanged. The picture lock stays held. Nothing for Ben. £0. PR #594 stays unmerged.
+Recorded by Grok (`6889364319`, `6893169788`, `6893259531`) and Gemini (`J2887`, `J2904`). The Flow spend ledger is unchanged. The picture lock stays held. Nothing for Ben. £0. PR #594 stays unmerged.
 
-1. **KEEP:** `P5:09a_pigeon_pavement` on `11c`, and `P5:13a_gull_seaside` on `12d` (Claude `6889357737` & Chief `6889364319`/`6889440776` on stills + Gemini `J2887` 24 fps & motion check PASS on the `4.69–5.08 s` wingbeat; 6/12 plates now final KEEP).
+1. **KEEP:** `P5:09a_pigeon_pavement` on `11c`, and `P5:13a_gull_seaside` on `12d` (Claude `6889357737`/`6893153190` & Chief `6889364319`/`6889440776`/`6893169788` on stills + Gemini `J2887` 24 fps & motion check PASS on the `4.69–5.08 s` wingbeat; 6/12 plates now final KEEP).
 2. **FIX, regeneration:** `P5:09_robin` on `08c`, scoped as `R6`. The 08c motion check is skipped.
 3. **FIX, regeneration:** `P5:10_explorer_robin` on `09d`, scoped as `R5`.
-4. **Scoped, not authorized:** `R1–R6` (`600` Flow credits).
+4. **Scoped, not authorized (`R1–R6` = `600` Flow credits):**
+   - **Check 1 (Credits — PASS in `6893259531`):** Live Google Flow balance `25,050` credits (resets `12 Dec 19:13`), `account.jsonl` liability `1,900` (`1,000` `HOS013_PASS1` + `900` unposted charges), projected headroom after a new `600`-credit reservation `HOS010_R1_R6_PLATES_J2271` is `22,550 >= 3,000` floor (`HOS010_TWELVE_PLATES_J2270` stays released and is not reused).
+   - **Check 2 (Flow page — PASS in `6893259531`):** No unusual-activity banner on `flow.google.com`.
+   - **Check 3 (Mini disk — PASS in `6893259531`):** `20Gi` free on `/` (`>= 10 GB`).
+   - **Check 4 (Guarded `R1–R6` dry-run — PASS disarmed in `J2904`):** `10_Shorts/R1_R6_REPLACEMENT_SCOPE_J2271.json` + `07_Edit-Project/_mint_flow_r1_r6_plates_j2271.py dry-run` lists all 6 rows (`R1–R6`) at `100` credits each (`600` total cap), one named charge per row (`HOS:010:R1:P02:05_almost_none:t2` .. `HOS:010:R6:P05:09_robin:t2`), new reservation id `HOS010_R1_R6_PLATES_J2271`, `3,000` live-balance floor, `generation_authorized: false`, `submit_armed: false`, `0` credits spent (`£0`).
