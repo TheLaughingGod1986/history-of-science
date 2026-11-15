@@ -3,7 +3,7 @@
   "title": "Why Did Franklin Fly a Kite in a Storm?",
   "air": "2026-11-19",
   "ready_by": "2026-11-15",
-  "summary": "Franklin corrections: salon, rods and points intermediates verified; full packet assembly and captions outstanding. Original masters/audio and J1755 publication hold retained.",
+  "summary": "Franklin master v05 (d1ffb78d...841b) assembled (J2854) and J2243 5-part J2829 multimodal QA PASS; all 8 Ben notes verified in context and kept tracked pending Chief UAT staging and Ben's final watch.",
   "stages": {
     "topic": {
       "state": "done"
@@ -64,11 +64,11 @@
     "edit": {
       "state": "doing",
       "due": "2026-11-12",
-      "owner": "codex",
-      "since": "2026-11-05T00:00:40.142053+00:00",
+      "owner": "gemini",
+      "since": "2026-11-15T04:46:00+00:00",
       "underway": false,
-      "waiting": "J2242 continuation: reconstruct clean caption plates, composite verified layers, finish defect rows and packet mux, then full preservation and film gates.",
-      "note": "J2242: 33 animated caption layers (2738 frames) and 101-frame moving-plate letter crossing rendered with original PTS checks. Clean caption plate reconstruction and final duration restoration/mux remain; no v04 or approval.",
+      "waiting": "Parked for Chief UAT staging authorization and Ben's final finished-film watch (all 8 Ben notes kept tracked until Ben's final watch).",
+      "note": "J2854 master v05 (d1ffb78d...841b) + J2243 5-part J2829 multimodal QA PASS: all 8 Ben notes verified in context and kept tracked (note_resolved: false), all 32 side_label cards + SAFE PATH DOWN + 10 code-graphic rows + all film/audio/sync gates PASS.",
       "jobs": [
         "J1297",
         "J1755",
@@ -77,13 +77,15 @@
         "J1881",
         "J2163",
         "J2242",
-        "J2243"
+        "J2243",
+        "J2854",
+        "J2855"
       ],
       "steps": [
-        1,
+        3,
         3
       ],
-      "steps_unit": "assembly steps completed"
+      "steps_unit": "assembly & J2243 review steps completed"
     },
     "thumbnails": {
       "state": "todo",
@@ -92,7 +94,7 @@
     "ben_ok": {
       "state": "todo",
       "due": "2026-11-15",
-      "waiting": "Six v03 notes unresolved; corrected cut must pass gates and Chief review before renewed watch",
+      "waiting": "Master v05 (d1ffb78d...841b) passed J2243 multimodal QA; ready for Chief UAT staging and Ben's final watch (all 8 notes kept tracked until Ben's watch).",
       "note": "Change request 2026-11-03T16:08:33.439Z; no Ben OK."
     },
     "scheduled": {
