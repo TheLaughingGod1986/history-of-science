@@ -1,0 +1,11 @@
+{
+  "prompt": "Gentle G-major morning celesta and warm pastoral woodwind fifths for living garden birds, light and clear under British narration. Pace: 70-82 BPM. NOT the Short A A-minor harp bed, NOT the 008 Franklin bed, NOT the 007 vaccine score, NOT the 006 Trees bed, NOT any Orbit With Ben synth pad, NOT drums or trailer stings.",
+  "film": "010",
+  "short": "hos_010_short_C_v01",
+  "job": "J2172",
+  "source": "own synthesis in _build_j2172_shorts_v01.py, 0 credits",
+  "pace_bpm": "70-82",
+  "bed_file": "hos_010_short_C_v01_bed.wav",
+  "bed_sha256": "23468be2042bfdd77b37fb90c3752dec6329b3bae1a3c8a2cabe21029954f0e9",
+  "nas_path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/05_Music/hos_010_short_C_v01_bed.wav"
+}

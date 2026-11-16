@@ -1,0 +1,90 @@
+[
+  {
+    "row": "s01",
+    "timeline_in": 0.0,
+    "timeline_out": 2.849,
+    "source": "P01_01_clay_line_t1.mp4",
+    "upscale": 2.3111,
+    "video": true,
+    "framing": {
+      "offset": 1.0
+    }
+  },
+  {
+    "row": "s02",
+    "timeline_in": 2.849,
+    "timeline_out": 6.189,
+    "source": "P02_01_walter_hammer_t1.mp4",
+    "upscale": 2.3111,
+    "video": true,
+    "framing": {
+      "offset": 0.0
+    }
+  },
+  {
+    "row": "s03",
+    "timeline_in": 6.189,
+    "timeline_out": 9.549,
+    "source": "P02_03_tiny_shells_t1.mp4",
+    "upscale": 2.3111,
+    "video": true,
+    "framing": {
+      "offset": 0.0
+    }
+  },
+  {
+    "row": "s04",
+    "timeline_in": 9.549,
+    "timeline_out": 13.269,
+    "source": "P02_05_almost_none_t2.mp4",
+    "upscale": 2.3111,
+    "video": true,
+    "framing": {
+      "offset": 0.0
+    }
+  },
+  {
+    "row": "s05",
+    "timeline_in": 13.269,
+    "timeline_out": 16.389,
+    "source": "P03_08_asaro_michel_t1.mp4",
+    "upscale": 2.3111,
+    "video": true,
+    "framing": {
+      "offset": 0.0
+    }
+  },
+  {
+    "row": "s06",
+    "timeline_in": 16.389,
+    "timeline_out": 19.289,
+    "source": "code_graphic_010_short_A_s06_iridium_spike_9x16.mp4",
+    "upscale": 1.0,
+    "video": true,
+    "framing": {
+      "offset": 0.0
+    }
+  },
+  {
+    "row": "s07",
+    "timeline_in": 19.289,
+    "timeline_out": 22.289,
+    "source": "P04_06_dust_veil_t2.mp4",
+    "upscale": 2.3111,
+    "video": true,
+    "framing": {
+      "offset": 2.0
+    }
+  },
+  {
+    "row": "s08",
+    "timeline_in": 22.289,
+    "timeline_out": 23.289,
+    "source": "loop_P01_01_clay_line_t1.mp4",
+    "upscale": 2.3111,
+    "video": true,
+    "framing": {
+      "offset": 0.0
+    }
+  }
+]

@@ -1,0 +1,501 @@
+{
+  "film": "HOS:010",
+  "job": "J2172",
+  "short_id": "short_A",
+  "stem": "hos_010_short_A_v01",
+  "youtube_title": "What Killed the Dinosaurs?",
+  "promoted_long_title": "What Killed the Dinosaurs Was Hidden in a Line of Clay",
+  "conditional_target_air_date": "2026-12-04",
+  "long_must_be_public_first": true,
+  "resolution": "936x1664",
+  "fps": 30,
+  "duration_s": 23.3,
+  "hook_caption": {
+    "text": "THE LINE",
+    "start_s": 0.0,
+    "end_s": 2.0
+  },
+  "vo_onset_s": 0.038,
+  "hook_sentence_end_s": 2.849,
+  "first_cut_s": 2.849,
+  "second_cut_s": 6.189,
+  "last_word_end_s": 22.169,
+  "loop_tail_s": 1.0,
+  "payoff_word": "packed",
+  "payoff_start_s": 17.069,
+  "payoff_frac": 0.7329,
+  "meta_promise": false,
+  "end_card": null,
+  "full_film_banner": false,
+  "spoken": "This thin line of clay marks the end of the dinosaurs. It's in a cliff in Italy about a centimeter thick. Below it, the rock is full of tiny fossil shells. Above it, almost all of them are gone. In 1980, scientists found the clay was packed with a rare metal from space. Something huge had hit the Earth",
+  "captions": [
+    {
+      "word": "This",
+      "start": 0.038,
+      "end": 0.283
+    },
+    {
+      "word": "thin",
+      "start": 0.302,
+      "end": 0.509
+    },
+    {
+      "word": "line",
+      "start": 0.547,
+      "end": 0.755
+    },
+    {
+      "word": "of",
+      "start": 0.792,
+      "end": 0.887
+    },
+    {
+      "word": "clay",
+      "start": 0.925,
+      "end": 1.208
+    },
+    {
+      "word": "marks",
+      "start": 1.245,
+      "end": 1.491
+    },
+    {
+      "word": "the",
+      "start": 1.528,
+      "end": 1.66
+    },
+    {
+      "word": "end",
+      "start": 1.698,
+      "end": 1.887
+    },
+    {
+      "word": "of",
+      "start": 1.925,
+      "end": 2.0
+    },
+    {
+      "word": "the",
+      "start": 2.019,
+      "end": 2.057
+    },
+    {
+      "word": "dinosaurs.",
+      "start": 2.094,
+      "end": 2.849
+    },
+    {
+      "word": "It's",
+      "start": 3.369,
+      "end": 3.469
+    },
+    {
+      "word": "in",
+      "start": 3.489,
+      "end": 3.549
+    },
+    {
+      "word": "a",
+      "start": 3.609,
+      "end": 3.649
+    },
+    {
+      "word": "cliff",
+      "start": 3.709,
+      "end": 4.009
+    },
+    {
+      "word": "in",
+      "start": 4.049,
+      "end": 4.129
+    },
+    {
+      "word": "Italy",
+      "start": 4.169,
+      "end": 4.749
+    },
+    {
+      "word": "about",
+      "start": 4.809,
+      "end": 5.009
+    },
+    {
+      "word": "a",
+      "start": 5.069,
+      "end": 5.129
+    },
+    {
+      "word": "centimeter",
+      "start": 5.169,
+      "end": 5.689
+    },
+    {
+      "word": "thick.",
+      "start": 5.769,
+      "end": 6.189
+    },
+    {
+      "word": "Below",
+      "start": 6.849,
+      "end": 7.149
+    },
+    {
+      "word": "it,",
+      "start": 7.209,
+      "end": 7.389
+    },
+    {
+      "word": "the",
+      "start": 7.669,
+      "end": 7.749
+    },
+    {
+      "word": "rock",
+      "start": 7.789,
+      "end": 7.929
+    },
+    {
+      "word": "is",
+      "start": 7.989,
+      "end": 8.189
+    },
+    {
+      "word": "full",
+      "start": 8.229,
+      "end": 8.469
+    },
+    {
+      "word": "of",
+      "start": 8.509,
+      "end": 8.629
+    },
+    {
+      "word": "tiny",
+      "start": 8.709,
+      "end": 9.149
+    },
+    {
+      "word": "fossil",
+      "start": 9.269,
+      "end": 9.549
+    },
+    {
+      "word": "shells.",
+      "start": 9.649,
+      "end": 10.129
+    },
+    {
+      "word": "Above",
+      "start": 10.789,
+      "end": 11.089
+    },
+    {
+      "word": "it,",
+      "start": 11.149,
+      "end": 11.349
+    },
+    {
+      "word": "almost",
+      "start": 11.829,
+      "end": 12.209
+    },
+    {
+      "word": "all",
+      "start": 12.309,
+      "end": 12.429
+    },
+    {
+      "word": "of",
+      "start": 12.469,
+      "end": 12.549
+    },
+    {
+      "word": "them",
+      "start": 12.589,
+      "end": 12.689
+    },
+    {
+      "word": "are",
+      "start": 12.709,
+      "end": 12.809
+    },
+    {
+      "word": "gone.",
+      "start": 12.869,
+      "end": 13.269
+    },
+    {
+      "word": "In",
+      "start": 14.429,
+      "end": 14.509
+    },
+    {
+      "word": "1980,",
+      "start": 14.549,
+      "end": 15.389
+    },
+    {
+      "word": "scientists",
+      "start": 15.589,
+      "end": 16.109
+    },
+    {
+      "word": "found",
+      "start": 16.149,
+      "end": 16.389
+    },
+    {
+      "word": "the",
+      "start": 16.429,
+      "end": 16.509
+    },
+    {
+      "word": "clay",
+      "start": 16.549,
+      "end": 16.809
+    },
+    {
+      "word": "was",
+      "start": 16.849,
+      "end": 17.009
+    },
+    {
+      "word": "packed",
+      "start": 17.069,
+      "end": 17.369
+    },
+    {
+      "word": "with",
+      "start": 17.409,
+      "end": 17.509
+    },
+    {
+      "word": "a",
+      "start": 17.569,
+      "end": 17.689
+    },
+    {
+      "word": "rare",
+      "start": 17.749,
+      "end": 17.969
+    },
+    {
+      "word": "metal",
+      "start": 18.109,
+      "end": 18.469
+    },
+    {
+      "word": "from",
+      "start": 18.509,
+      "end": 18.649
+    },
+    {
+      "word": "space.",
+      "start": 18.849,
+      "end": 19.289
+    },
+    {
+      "word": "Something",
+      "start": 19.929,
+      "end": 20.249
+    },
+    {
+      "word": "huge",
+      "start": 20.449,
+      "end": 20.969
+    },
+    {
+      "word": "had",
+      "start": 21.209,
+      "end": 21.349
+    },
+    {
+      "word": "hit",
+      "start": 21.389,
+      "end": 21.549
+    },
+    {
+      "word": "the",
+      "start": 21.609,
+      "end": 21.689
+    },
+    {
+      "word": "Earth",
+      "start": 21.769,
+      "end": 22.169
+    }
+  ],
+  "audio": {
+    "vo_source_mp3_sha256": "68d88b5b5883f2376bcec29c26d77efea7634d5c7705693f41202ca587b927fb",
+    "vo_source_wav_sha256": "2488aa8b49beb3a642597e08f30ca53e723fbee00cd21ad8bdc581a9293ff228",
+    "level": {
+      "lufs": -14.4,
+      "true_peak_dbtp": -1.8,
+      "loudnorm_I": -12.0
+    },
+    "sfx_level": {
+      "exit": 0,
+      "output": "SFX level PASS: VO -18.9 LUFS, SFX -49.6 LUFS, 1 hits",
+      "bed_db": -16.5,
+      "sfx_db": -15.0
+    },
+    "stems": {
+      "vo": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/10_Shorts/J2172/short_A/stems/stem_vo.wav",
+      "bed": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/10_Shorts/J2172/short_A/stems/stem_bed.wav",
+      "sfx": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/10_Shorts/J2172/short_A/stems/stem_sfx.wav"
+    },
+    "stem_hashes": {
+      "vo": {
+        "nas_path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/10_Shorts/J2172/short_A/stems/stem_vo.wav",
+        "sha256": "7ba27e73471052dd1c83659f85997eb95ba668765ac0179657411237ef8eb45f",
+        "bytes": 4471566
+      },
+      "bed": {
+        "nas_path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/10_Shorts/J2172/short_A/stems/stem_bed.wav",
+        "sha256": "3703f087eaaa7998bd6758d621d24004ff9de081e81f97815d2fd0eac0728e0f",
+        "bytes": 4471566
+      },
+      "sfx": {
+        "nas_path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/10_Shorts/J2172/short_A/stems/stem_sfx.wav",
+        "sha256": "488c8b468957484429dad6ee9b9c6d4c3a7bd0227f667f660111ec50d60330ce",
+        "bytes": 4471566
+      }
+    }
+  },
+  "cuts": [
+    {
+      "id": "S01",
+      "row_id": "P1:01_clay_line",
+      "t0": 0.0,
+      "t1": 2.849,
+      "hold_s": 2.849,
+      "plate": "P01_01_clay_line_t1.mp4",
+      "source_sha256": "927e826b3fe8f83c66a879b2e9a932b683d711d91c075fc235a6a4012dd0338b",
+      "producer": "codex",
+      "in_s": 1.0,
+      "x0": 437.0,
+      "x1": 437.0,
+      "lands_on": "plate",
+      "upscale": 2.3111
+    },
+    {
+      "id": "S02",
+      "row_id": "P2:01_walter_hammer",
+      "t0": 2.849,
+      "t1": 6.189,
+      "hold_s": 3.34,
+      "plate": "P02_01_walter_hammer_t1.mp4",
+      "source_sha256": "db506d28c3abd7ee5c441e22e0bdb55494b715e4811163885b7cfd2d5ade60f6",
+      "producer": "codex",
+      "in_s": 0.0,
+      "x0": 620.0,
+      "x1": 620.0,
+      "lands_on": "plate",
+      "upscale": 2.3111
+    },
+    {
+      "id": "S03",
+      "row_id": "P2:03_tiny_shells",
+      "t0": 6.189,
+      "t1": 9.549,
+      "hold_s": 3.36,
+      "plate": "P02_03_tiny_shells_t1.mp4",
+      "source_sha256": "1c32a8521956d95ccc6922e6220a84b568ae02ddcb43662c7ee41c810beca205",
+      "producer": "codex",
+      "in_s": 0.0,
+      "x0": 437.0,
+      "x1": 437.0,
+      "lands_on": "plate",
+      "upscale": 2.3111
+    },
+    {
+      "id": "S04",
+      "row_id": "P2:05_almost_none",
+      "t0": 9.549,
+      "t1": 13.269,
+      "hold_s": 3.72,
+      "plate": "P02_05_almost_none_t2.mp4",
+      "source_sha256": "eda112847953e75d97f970add475552c5fb527f3b7c04abae8f0cda035eca330",
+      "producer": "gemini",
+      "in_s": 0.0,
+      "x0": 380.0,
+      "x1": 460.0,
+      "lands_on": "plate",
+      "upscale": 2.3111
+    },
+    {
+      "id": "S05",
+      "row_id": "P3:08_asaro_michel",
+      "t0": 13.269,
+      "t1": 16.389,
+      "hold_s": 3.12,
+      "plate": "P03_08_asaro_michel_t1.mp4",
+      "source_sha256": "2c512d8bc8bf29b4bfbac37aa9eae1bdebdd4bb14fbfe64256cc2ac1ab0d5d18",
+      "producer": "codex",
+      "in_s": 0.0,
+      "x0": 180.0,
+      "x1": 180.0,
+      "lands_on": "plate",
+      "upscale": 2.3111
+    },
+    {
+      "id": "S06",
+      "row_id": "P4:01_iridium_spike",
+      "t0": 16.389,
+      "t1": 19.289,
+      "hold_s": 2.9,
+      "plate": "code_graphic_010_short_A_s06_iridium_spike_9x16.mp4",
+      "source_sha256": "3352a3d42164aa4e967cebdfdbc9fc7ebd60c299d7eb589d1c51a46d984338e6",
+      "producer": "gemini",
+      "in_s": 0.0,
+      "x0": null,
+      "x1": null,
+      "lands_on": "code_graphic",
+      "upscale": 1.0
+    },
+    {
+      "id": "S07",
+      "row_id": "P4:06_dust_veil",
+      "t0": 19.289,
+      "t1": 22.289,
+      "hold_s": 3.0,
+      "plate": "P04_06_dust_veil_t2.mp4",
+      "source_sha256": "1898afb6b8d89d57a818dd340b6e327733b67717b81e9581ca43ae539562e082",
+      "producer": "gemini",
+      "in_s": 2.0,
+      "x0": 540.0,
+      "x1": 540.0,
+      "lands_on": "plate",
+      "upscale": 2.3111
+    },
+    {
+      "id": "loop_tail",
+      "row_id": "P1:01_clay_line",
+      "t0": 22.289,
+      "t1": 23.289,
+      "hold_s": 1.0,
+      "plate": "P01_01_clay_line_t1.mp4",
+      "source_sha256": "927e826b3fe8f83c66a879b2e9a932b683d711d91c075fc235a6a4012dd0338b",
+      "producer": "codex",
+      "in_s": 0.0,
+      "x0": 437.0,
+      "x1": 437.0,
+      "lands_on": "loop",
+      "upscale": 2.3111
+    }
+  ],
+  "when_card": null,
+  "nas_master_mp4": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/10_Shorts/J2172/short_A/hos_010_short_A_v01.mp4",
+  "master_sha256": "ea29e26487d6631416449c9adf712f51b1b9508db06b7b6c29edc4236970fe59",
+  "master_bytes": 12952218,
+  "hook_metrics": {
+    "font_size": 210,
+    "cap_px": 150,
+    "cap_pct": 9.01,
+    "block_pct": [
+      14.5,
+      34.1
+    ],
+    "widest_pct": 58.2
+  }
+}

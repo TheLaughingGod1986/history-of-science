@@ -1,0 +1,202 @@
+{
+  "rule": {
+    "low_detail": "FAIL: luma std < 13.44 and edge density < 0.0259 (absolute floor); WARN: luma std < 18.0 or edge density < film p5",
+    "split_panel": "full-height/width seam or gutter",
+    "split_panel_gutter": "gutter counts only with edge density >= 0.01 in the 10% band on both sides",
+    "near_black": "mean < 28.0 or p95 < 50.0",
+    "noise": "grain std > 6 over structure std < 12, and the 8x-downscaled frame under the low-detail floor (std < 13.44 and edge density < 0.0259)",
+    "jitter": "centre-patch phase correlation: reversal against trend or > 0.35 px off trend"
+  },
+  "low_detail_floor": {
+    "std": 13.44,
+    "edge": 0.0259,
+    "calibration": {
+      "video": "025_MarsRobot_full_rough_v02d.mp4",
+      "factor": 1.2,
+      "frames": [
+        {
+          "source": "PIA22223.jpg",
+          "t": 201.0,
+          "std": 12.1,
+          "edge": 0.0223
+        },
+        {
+          "source": "PIA22223.jpg",
+          "t": 216.3,
+          "std": 11.2,
+          "edge": 0.0216
+        },
+        {
+          "source": "PIA22929.jpg",
+          "t": 297.4,
+          "std": 26.54,
+          "edge": 0.5735
+        }
+      ]
+    }
+  },
+  "video": "/Volumes/MiniWork/scratch/J2172-build/short_A/hos_010_short_A_v01.mp4",
+  "edge_floor": 0.0514,
+  "verdict": "PASS",
+  "failed": [],
+  "warn": [
+    {
+      "row": "s04",
+      "cut": 3,
+      "t": 11.41,
+      "source": "P02_05_almost_none_t2.mp4",
+      "why": [
+        "low detail: edge density 0.0467 < film p5 0.0514"
+      ]
+    }
+  ],
+  "reviewed_ok": [],
+  "rows": [
+    {
+      "cut": 0,
+      "row": "s01",
+      "source": "P01_01_clay_line_t1.mp4",
+      "t": 1.42,
+      "std": 60.57,
+      "mean": 152.05,
+      "p95": 225.0,
+      "edge": 0.1138,
+      "hf": 15.65,
+      "lf": 50.66,
+      "std8": 54.17,
+      "edge8": 0.4381,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 1,
+      "row": "s02",
+      "source": "P02_01_walter_hammer_t1.mp4",
+      "t": 4.52,
+      "std": 58.79,
+      "mean": 121.49,
+      "p95": 221.0,
+      "edge": 0.1664,
+      "hf": 13.07,
+      "lf": 50.88,
+      "std8": 53.81,
+      "edge8": 0.5064,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 2,
+      "row": "s03",
+      "source": "P02_03_tiny_shells_t1.mp4",
+      "t": 7.87,
+      "std": 54.68,
+      "mean": 130.06,
+      "p95": 219.0,
+      "edge": 0.1089,
+      "hf": 9.84,
+      "lf": 49.09,
+      "std8": 51.18,
+      "edge8": 0.425,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 3,
+      "row": "s04",
+      "source": "P02_05_almost_none_t2.mp4",
+      "t": 11.41,
+      "std": 59.91,
+      "mean": 122.18,
+      "p95": 215.0,
+      "edge": 0.0467,
+      "hf": 10.88,
+      "lf": 55.5,
+      "std8": 57.27,
+      "edge8": 0.259,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0467 < film p5 0.0514"
+      ]
+    },
+    {
+      "cut": 4,
+      "row": "s05",
+      "source": "P03_08_asaro_michel_t1.mp4",
+      "t": 14.83,
+      "std": 67.55,
+      "mean": 134.57,
+      "p95": 246.0,
+      "edge": 0.0935,
+      "hf": 10.35,
+      "lf": 62.07,
+      "std8": 64.45,
+      "edge8": 0.4077,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 5,
+      "row": "s06",
+      "source": "code_graphic_010_short_A_s06_iridium_spike_9x16.mp4",
+      "t": 17.84,
+      "std": 34.44,
+      "mean": 194.76,
+      "p95": 222.0,
+      "edge": 0.0951,
+      "hf": 14.58,
+      "lf": 24.35,
+      "std8": 27.77,
+      "edge8": 0.1825,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 6,
+      "row": "s07",
+      "source": "P04_06_dust_veil_t2.mp4",
+      "t": 20.79,
+      "std": 54.14,
+      "mean": 143.88,
+      "p95": 231.0,
+      "edge": 0.0602,
+      "hf": 9.08,
+      "lf": 49.96,
+      "std8": 51.4,
+      "edge8": 0.3252,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 7,
+      "row": "s08",
+      "source": "loop_P01_01_clay_line_t1.mp4",
+      "t": 22.79,
+      "std": 56.91,
+      "mean": 149.8,
+      "p95": 224.0,
+      "edge": 0.1055,
+      "hf": 9.29,
+      "lf": 50.97,
+      "std8": 53.39,
+      "edge8": 0.4079,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    }
+  ]
+}
