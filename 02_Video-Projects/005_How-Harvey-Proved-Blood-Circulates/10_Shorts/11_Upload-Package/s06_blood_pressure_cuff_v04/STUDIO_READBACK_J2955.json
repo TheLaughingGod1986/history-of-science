@@ -1,0 +1,15 @@
+{
+  "job": "J2955",
+  "videoId": "Sq_lV89VMUs",
+  "readAt": "2026-11-16T23:50Z",
+  "by": "claudecode",
+  "how": "HOS Studio edit page, saved, then reloaded and read back",
+  "title": "How Does a Blood Pressure Cuff Work?",
+  "relatedVideo": {"set": "The Tied Arm That Proved Your Blood Circulates", "videoId": "wwcjcFfC-5M", "before": "None"},
+  "audience": "Not Made for Kids",
+  "alteredContent": "Yes",
+  "visibility": "Scheduled",
+  "publishAt": "2026-11-20T11:30:00Z (from the API read-back in API_READBACK_J2955.json)",
+  "socialRegister": "orbit-with-ben main 3f8fe0c0b5 (social/hos/UPLOADS.json)",
+  "checks": {"channelAudit": "67 videos, 0 errors", "checkAll": "ALL CHECKS PASS", "openGateLibrary": "scheduled, 2026-11-20"}
+}
