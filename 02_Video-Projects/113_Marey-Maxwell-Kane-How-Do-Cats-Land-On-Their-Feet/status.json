@@ -1,0 +1,45 @@
+{
+  "film": "113",
+  "title": "How Do Cats Land on Their Feet? (The 1894 Camera Twist)",
+  "summary": "Rule-E topic go/no-go review GO (J2937, 95.5/100 · 9.55/10 Opportunity Score; pre-cleared in jobs/WIP.json next_hos under Rule G from J2935). Public_search.py and neighbours.py PASS evidence verified (6 strictly on-topic education neighbours >=1M incl. TED-Ed 13.42M, SmarterEveryDay 11.25M, TED-Ed 10.54M, TED-Ed 4.61M, TED-Ed 2.60M & minutephysics 1.87M; 0 collisions across all candidate titles); awaits an open active HOS WIP slot (4/4 full) before SOURCES.md and facts lane.",
+  "stages": {
+    "topic": {
+      "state": "todo"
+    },
+    "script": {
+      "state": "todo"
+    },
+    "facts": {
+      "state": "todo"
+    },
+    "package": {
+      "state": "todo"
+    },
+    "vo": {
+      "state": "todo"
+    },
+    "shorts_scripts": {
+      "state": "todo"
+    },
+    "shorts_vo": {
+      "state": "todo"
+    },
+    "picture": {
+      "state": "todo"
+    },
+    "edit": {
+      "state": "todo"
+    },
+    "thumbnails": {
+      "state": "todo"
+    },
+    "ben_ok": {
+      "state": "todo"
+    },
+    "scheduled": {
+      "state": "todo"
+    }
+  },
+  "claims": [],
+  "next": ""
+}
