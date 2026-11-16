@@ -1,0 +1,45 @@
+{
+  "film": "112",
+  "title": "Why Do We Yawn? (The Brain-Cooling Experiment)",
+  "summary": "Rule-E topic go/no-go review GO (J2936, 95.5/100 Opportunity Score; pre-cleared in jobs/WIP.json next_hos under Rule G while 4/4 active HOS slots are full). Verified 16 strictly on-topic education neighbours >=1M in neighbours.py (TED 17.76M, TED-Ed 15.05M, TED-Ed 7.50M, TED-Ed 7.30M, Vsauce 4.83M, TED 4.61M, Be Smart 3.39M, TED-Ed 2.45M Why is yawning contagious?, gate=PASS) + public_search.py (3 autocomplete=yes phrases, AsapSCIENCE 4.65M & Smart Nonsense 1.16M & Peekaboo Kidz 1.05M, 0 title collisions). All claims remain UNVERIFIED pending an open HOS WIP slot, SOURCES.md quotes, and facts lane.",
+  "stages": {
+    "topic": {
+      "state": "todo"
+    },
+    "script": {
+      "state": "todo"
+    },
+    "facts": {
+      "state": "todo"
+    },
+    "package": {
+      "state": "todo"
+    },
+    "vo": {
+      "state": "todo"
+    },
+    "shorts_scripts": {
+      "state": "todo"
+    },
+    "shorts_vo": {
+      "state": "todo"
+    },
+    "picture": {
+      "state": "todo"
+    },
+    "edit": {
+      "state": "todo"
+    },
+    "thumbnails": {
+      "state": "todo"
+    },
+    "ben_ok": {
+      "state": "todo"
+    },
+    "scheduled": {
+      "state": "todo"
+    }
+  },
+  "claims": [],
+  "next": ""
+}
