@@ -1,0 +1,45 @@
+{
+  "film": "110",
+  "title": "Why Do Onions Make You Cry? (The 2002 Enzyme Twist)",
+  "summary": "Backlog proposal (J2922 / jobs/WIP.json next_hos; Rule G). Data-backed topic brief, public_search.py and neighbours.py PASS evidence (10 education neighbours >=1M incl. TED-Ed 14.04M, Amoeba Sisters 7.27M, TED-Ed 5.23M & TED-Ed 4.45M) prepared; awaits Rule-E topic go/no-go review and an open active HOS WIP slot before SOURCES.md and facts lane.",
+  "stages": {
+    "topic": {
+      "state": "todo"
+    },
+    "script": {
+      "state": "todo"
+    },
+    "facts": {
+      "state": "todo"
+    },
+    "package": {
+      "state": "todo"
+    },
+    "vo": {
+      "state": "todo"
+    },
+    "shorts_scripts": {
+      "state": "todo"
+    },
+    "shorts_vo": {
+      "state": "todo"
+    },
+    "picture": {
+      "state": "todo"
+    },
+    "edit": {
+      "state": "todo"
+    },
+    "thumbnails": {
+      "state": "todo"
+    },
+    "ben_ok": {
+      "state": "todo"
+    },
+    "scheduled": {
+      "state": "todo"
+    }
+  },
+  "claims": [],
+  "next": ""
+}
