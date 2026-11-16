@@ -1,0 +1,45 @@
+{
+  "film": "115",
+  "title": "Why Do Zebras Have Stripes? (The Horsefly Coat Experiment)",
+  "summary": "Rule-E topic go/no-go review GO (J2946, 95.5/100 Opportunity Score; pre-cleared in jobs/WIP.json next_hos under Rule G while 4/4 active HOS slots are full). Verified 12 strictly on-topic education neighbours >=1M in neighbours.py (Kurzgesagt 11.47M, Amoeba Sisters 4.67M, CrashCourse 3.77M, TED-Ed 3.30M, TED-Ed 2.53M, Khan Academy 2.52M, TEDx Talks 2.16M, minutephysics 2.12M, TED-Ed 1.93M, SciShow Kids 1.16M Camouflage + TED-Ed 665k The surprising reason zebras have stripes & SciShow 540k We Were Totally Wrong About Zebra Stripes, gate=PASS) + public_search.py (3 autocomplete=yes phrases, 0 title collisions across 4 long & 2 Short titles). All claims remain UNVERIFIED pending an open HOS WIP slot, SOURCES.md quotes, and facts lane.",
+  "stages": {
+    "topic": {
+      "state": "todo"
+    },
+    "script": {
+      "state": "todo"
+    },
+    "facts": {
+      "state": "todo"
+    },
+    "package": {
+      "state": "todo"
+    },
+    "vo": {
+      "state": "todo"
+    },
+    "shorts_scripts": {
+      "state": "todo"
+    },
+    "shorts_vo": {
+      "state": "todo"
+    },
+    "picture": {
+      "state": "todo"
+    },
+    "edit": {
+      "state": "todo"
+    },
+    "thumbnails": {
+      "state": "todo"
+    },
+    "ben_ok": {
+      "state": "todo"
+    },
+    "scheduled": {
+      "state": "todo"
+    }
+  },
+  "claims": [],
+  "next": ""
+}
