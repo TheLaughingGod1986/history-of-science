@@ -1,0 +1,45 @@
+{
+  "film": "114",
+  "title": "How Do Chameleons Change Colour? (The Nanocrystal Twist)",
+  "summary": "Rule-E topic go/no-go review GO (J2945, 95.5/100 · 9.55/10 Opportunity Score; pre-cleared in jobs/WIP.json next_hos under Rule G from J2944). Public_search.py and neighbours.py PASS evidence verified (9 strictly on-topic education neighbours >=1M incl. TED-Ed 8.46M, TED-Ed 3.54M, Veritasium 3.48M, Tom Scott 3.31M, TED-Ed 1.91M, TED-Ed 1.67M, TED-Ed 1.33M & SciShow Kids 1.16M; 0 collisions across all candidate titles); awaits an open active HOS WIP slot (4/4 full) before SOURCES.md and facts lane.",
+  "stages": {
+    "topic": {
+      "state": "todo"
+    },
+    "script": {
+      "state": "todo"
+    },
+    "facts": {
+      "state": "todo"
+    },
+    "package": {
+      "state": "todo"
+    },
+    "vo": {
+      "state": "todo"
+    },
+    "shorts_scripts": {
+      "state": "todo"
+    },
+    "shorts_vo": {
+      "state": "todo"
+    },
+    "picture": {
+      "state": "todo"
+    },
+    "edit": {
+      "state": "todo"
+    },
+    "thumbnails": {
+      "state": "todo"
+    },
+    "ben_ok": {
+      "state": "todo"
+    },
+    "scheduled": {
+      "state": "todo"
+    }
+  },
+  "claims": [],
+  "next": ""
+}
