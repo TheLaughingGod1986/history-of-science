@@ -1,0 +1,45 @@
+{
+  "film": "113",
+  "title": "How Do Cats Land on Their Feet? (The 1894 Camera Twist)",
+  "summary": "Backlog proposal (J2935 / jobs/WIP.json next_hos; Rule G). Data-backed topic brief, public_search.py and neighbours.py PASS evidence (6 education neighbours >=1M incl. TED-Ed 13.42M, SmarterEveryDay 11.25M, TED-Ed 10.54M, TED-Ed 4.61M, TED-Ed 2.60M & minutephysics 1.87M) prepared; awaits Rule-E topic go/no-go review and an open active HOS WIP slot before SOURCES.md and facts lane.",
+  "stages": {
+    "topic": {
+      "state": "todo"
+    },
+    "script": {
+      "state": "todo"
+    },
+    "facts": {
+      "state": "todo"
+    },
+    "package": {
+      "state": "todo"
+    },
+    "vo": {
+      "state": "todo"
+    },
+    "shorts_scripts": {
+      "state": "todo"
+    },
+    "shorts_vo": {
+      "state": "todo"
+    },
+    "picture": {
+      "state": "todo"
+    },
+    "edit": {
+      "state": "todo"
+    },
+    "thumbnails": {
+      "state": "todo"
+    },
+    "ben_ok": {
+      "state": "todo"
+    },
+    "scheduled": {
+      "state": "todo"
+    }
+  },
+  "claims": [],
+  "next": ""
+}
