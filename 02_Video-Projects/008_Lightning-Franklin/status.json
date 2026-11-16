@@ -3,7 +3,7 @@
   "title": "Why Did Franklin Fly a Kite in a Storm?",
   "air": "2026-11-19",
   "ready_by": "2026-11-15",
-  "summary": "Franklin master v05 (d1ffb78d...841b) assembled (J2854) and J2243 5-part J2829 multimodal QA PASS; all 8 Ben notes verified in context and kept tracked pending Chief UAT staging and Ben's final watch.",
+  "summary": "Franklin master v05 (d1ffb78d...841b) passed J2243 5-part J2829 multimodal QA and Chief review (HOS PR #595 0cf1743f, J2877). Staged in HOS UAT/008_Lightning-Franklin/hos_008_master_v05_PHONE.mp4 (sha256 9e9c8784..., watch id hos-008-v05-42f37ffc34923d7af3ba, Play 302) for Ben's final watch; all 8 Ben notes remain tracked until Ben's final watch.",
   "stages": {
     "topic": {
       "state": "done"
@@ -43,13 +43,12 @@
       "underway": false
     },
     "picture": {
-      "state": "blocked",
+      "state": "done",
       "due": "2026-11-08",
       "owner": "gemini",
-      "since": "2026-10-16",
+      "since": "2026-11-16",
       "underway": false,
-      "note": "Historical h22 picture lock preserved. Six v03 change notes remain unresolved. J2163 conditional manifest supersedes J1880 recipe; missing glass-tube/hair and church/house/ship-mast assets, exhausted three-candidate searches. No new picture approval.",
-      "waiting": "J1881 scopes two exact-match assets after J2163 repair; no native fallback selected and no generation authorized",
+      "note": "All 112 board rows (11 code graphics + 101 Flow plates, including J2241/J2590/J2592 salon/points/rods replacements) KEEP and verified in master v05 (d1ffb78d...841b).",
       "steps": [
         112,
         112
@@ -58,17 +57,20 @@
       "jobs": [
         "J1880",
         "J1881",
-        "J2163"
+        "J2163",
+        "J2241",
+        "J2590",
+        "J2592"
       ]
     },
     "edit": {
-      "state": "doing",
+      "state": "done",
       "due": "2026-11-12",
       "owner": "gemini",
-      "since": "2026-11-15T04:46:00+00:00",
+      "since": "2026-11-16T09:15",
       "underway": false,
-      "waiting": "Parked for Chief UAT staging authorization and Ben's final finished-film watch (all 8 Ben notes kept tracked until Ben's final watch).",
-      "note": "J2854 master v05 (d1ffb78d...841b) + J2243 5-part J2829 multimodal QA PASS: all 8 Ben notes verified in context and kept tracked (note_resolved: false), all 32 side_label cards + SAFE PATH DOWN + 10 code-graphic rows + all film/audio/sync gates PASS.",
+      "waiting": "",
+      "note": "Master v05 (d1ffb78d...841b) + J2243 5-part J2829 multimodal QA & Chief review PASS (HOS PR #595 0cf1743f, J2877): all 8 Ben notes verified in context and kept tracked (note_resolved: false), all 32 side_label cards + SAFE PATH DOWN + 10 code-graphic rows + all film/audio/sync gates PASS; staged in HOS UAT (hos_008_master_v05_PHONE.mp4, sha256 9e9c8784...) for Ben's final watch.",
       "jobs": [
         "J1297",
         "J1755",
@@ -79,7 +81,8 @@
         "J2242",
         "J2243",
         "J2854",
-        "J2855"
+        "J2855",
+        "J2877"
       ],
       "steps": [
         3,
@@ -92,10 +95,13 @@
       "due": "2026-11-12"
     },
     "ben_ok": {
-      "state": "todo",
-      "due": "2026-11-15",
-      "waiting": "Master v05 (d1ffb78d...841b) passed J2243 multimodal QA; ready for Chief UAT staging and Ben's final watch (all 8 notes kept tracked until Ben's watch).",
-      "note": "Change request 2026-11-03T16:08:33.439Z; no Ben OK."
+      "state": "doing",
+      "owner": "Ben",
+      "due": "2026-11-18",
+      "since": "2026-11-16T09:15",
+      "underway": false,
+      "waiting": "Ben's final watch of hos_008_master_v05.mp4 (HOS UAT/008_Lightning-Franklin/hos_008_master_v05_PHONE.mp4, Play 302; all 8 v03 notes tracked until Ben's watch)",
+      "note": "Master v05 (d1ffb78d...841b) staged on Ready for OK card HOS:008 (J2243); v03 change notes (2026-11-05) kept tracked with fixed summary under the player."
     },
     "scheduled": {
       "state": "todo",
