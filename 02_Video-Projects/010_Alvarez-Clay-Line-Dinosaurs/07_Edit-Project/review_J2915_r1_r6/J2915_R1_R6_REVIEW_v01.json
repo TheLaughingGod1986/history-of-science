@@ -17,8 +17,8 @@
   "all_charges_reconciled_posted": true,
   "v01_t1_clips_untouched": true,
   "producer": "gemini",
-  "keep": false,
-  "review_status": "PENDING_NON_PRODUCER_REVIEW",
+  "keep": true,
+  "review_status": "KEEP_LOCKED_12_OF_12",
   "sheets_and_strips": [
     {
       "file": "00_R1_R6_start_stills_v02_sheet.jpg",
@@ -99,6 +99,21 @@
       "file": "R6c_P05_09_robin_t2_x515-535_t3.25-6.13_sheet.jpg",
       "bytes": 277769,
       "sha256": "ca6357158f605f0840fa517f2db440503fe3eebd274f8575cf467d3cba217855"
+    },
+    {
+      "file": "11c_P5_09a_pigeon_track_x360-530_t1.10-3.74_sheet.jpg",
+      "bytes": 295596,
+      "sha256": "9bcc976d993d608bc1fed5c42a63e5f30ed2d496df14b18808eec2807e712416"
+    },
+    {
+      "file": "12d_P5_13a_gull_track_x605-520_t4.30-7.02_sheet.jpg",
+      "bytes": 100174,
+      "sha256": "3d3af21dbd1f6291dc312c8a03cf868697ac41a70d1d353dd01bb93dafc5c5a5"
+    },
+    {
+      "file": "R4b_P05_12_clay_callback_t2_x437_t1.05-4.23_sheet.jpg",
+      "bytes": 96065,
+      "sha256": "02263f21b2c776e4fdb1e076eeee91bc4553794899b777a86f432792a9dbc5d4"
     }
   ],
   "plates": [
@@ -146,8 +161,9 @@
         "min_luma": 116.62
       },
       "producer": "gemini",
-      "keep": false,
-      "review_status": "PENDING_NON_PRODUCER_REVIEW"
+      "keep": true,
+      "review_status": "KEEP",
+      "non_producer_reviewer": "claude"
     },
     {
       "repair_id": "R2",
@@ -199,8 +215,9 @@
         "min_luma": 93.85
       },
       "producer": "gemini",
-      "keep": false,
-      "review_status": "PENDING_NON_PRODUCER_REVIEW"
+      "keep": true,
+      "review_status": "KEEP",
+      "non_producer_reviewer": "claude"
     },
     {
       "repair_id": "R3",
@@ -246,8 +263,9 @@
         "min_luma": 81.99
       },
       "producer": "gemini",
-      "keep": false,
-      "review_status": "PENDING_NON_PRODUCER_REVIEW"
+      "keep": true,
+      "review_status": "KEEP",
+      "non_producer_reviewer": "claude"
     },
     {
       "repair_id": "R4",
@@ -261,15 +279,16 @@
         "Short_C:S08 (3.180s)"
       ],
       "recommended_crop": {
-        "sheet": "R4_P05_12_clay_callback_t2_x437_t1.50-4.68_sheet.jpg",
+        "sheet": "R4b_P05_12_clay_callback_t2_x437_t1.05-4.23_sheet.jpg",
+        "alt_sheet": "R4_P05_12_clay_callback_t2_x437_t1.50-4.68_sheet.jpg",
         "x_expr": "437",
         "t_window_s": [
-          1.5,
-          4.68
+          1.05,
+          4.23
         ],
         "duration_s": 3.18
       },
-      "motion_note": "Smooth continuous upward camera tilt past sunlit green treetops into a warm golden-hour morning sky while a graceful flock of swifts and songbirds wheels and soars overhead across sunbeams (0.00-7.75s). Center crop x=437 over t=1.50-4.68s keeps the soaring flock filling the sky well above the 81% caption line with natural wingbeats and zero morphing, matching 'Look up. They never really left'. v01 t1 P05_12_clay_callback_t1.mp4 remains untouched for Long Part 05.",
+      "motion_note": "Smooth continuous upward camera tilt past sunlit green treetops into a warm golden-hour morning sky while a graceful flock of swifts and songbirds wheels and soars overhead across sunbeams (0.00-7.75s). Center crop x=437 over t=1.50-4.68s keeps the soaring flock filling the sky well above the 81% caption line with natural wingbeats and zero morphing, matching 'Look up. They never really left'. v01 t1 P05_12_clay_callback_t1.mp4 remains untouched for Long Part 05. R4b (t=1.05-4.23s, x=437, -0.45s trim) verified in motion and agreed by Claude (6907453362) to stop at 4.23s before the 4.38-4.68s upper-left two-bird wingtip crossing.",
       "mp4_sha256": "37cf7962a646ff073af3e7f5db74d7c565f2dd613b5cdaea33c7cd63ce2034dc",
       "mp4_bytes": 3258875,
       "still_sha256": "51b04e761a110176ff95ccaa797f964233fc1d12fd900098048a3c383d980f92",
@@ -293,8 +312,9 @@
         "min_luma": 142.83
       },
       "producer": "gemini",
-      "keep": false,
-      "review_status": "PENDING_NON_PRODUCER_REVIEW"
+      "keep": true,
+      "review_status": "KEEP",
+      "non_producer_reviewer": "claude"
     },
     {
       "repair_id": "R5",
@@ -341,8 +361,9 @@
         "min_luma": 70.63
       },
       "producer": "gemini",
-      "keep": false,
-      "review_status": "PENDING_NON_PRODUCER_REVIEW"
+      "keep": true,
+      "review_status": "KEEP",
+      "non_producer_reviewer": "claude"
     },
     {
       "repair_id": "R6",
@@ -398,8 +419,319 @@
         "min_luma": 100.13
       },
       "producer": "gemini",
-      "keep": false,
-      "review_status": "PENDING_NON_PRODUCER_REVIEW"
+      "keep": true,
+      "review_status": "KEEP",
+      "non_producer_reviewer": "claude"
+    }
+  ],
+  "non_producer_reviewer": "claude",
+  "non_producer_desk_comments": [
+    "6889210972",
+    "6889357737",
+    "6905894181",
+    "6907453362"
+  ],
+  "chief_confirm": {
+    "acting_chief": "gemini",
+    "job": "J2928",
+    "recheck_of": "J2271",
+    "confirmed_at": "2026-11-16T06:26:00Z",
+    "Prior_Chief_Grok_confirmations": [
+      "6889216573",
+      "6889364319",
+      "6889440776"
+    ]
+  },
+  "locked_twelve_short_plates": [
+    {
+      "order": 1,
+      "row_id": "P1:01_clay_line",
+      "source_set": "v01_twelve_plates",
+      "take": 1,
+      "file": "P01_01_clay_line_t1.mp4",
+      "mp4_sha256": "927e826b3fe8f83c66a879b2e9a932b683d711d91c075fc235a6a4012dd0338b",
+      "producer": "codex",
+      "reviewers": [
+        "gemini",
+        "codex",
+        "claude",
+        "grok"
+      ],
+      "crop_936x1664": "crop=405:720:437:0,scale=936:1664:flags=lanczos",
+      "t_window_s": {
+        "Short_A:S01": [
+          1.0,
+          3.849
+        ],
+        "Short_A:loop_tail": [
+          0.0,
+          1.0
+        ]
+      },
+      "verdict": "KEEP"
+    },
+    {
+      "order": 2,
+      "row_id": "P2:01_walter_hammer",
+      "source_set": "v01_twelve_plates",
+      "take": 1,
+      "file": "P02_01_walter_hammer_t1.mp4",
+      "mp4_sha256": "db506d28c3abd7ee5c441e22e0bdb55494b715e4811163885b7cfd2d5ade60f6",
+      "producer": "codex",
+      "reviewers": [
+        "gemini",
+        "codex",
+        "claude",
+        "grok"
+      ],
+      "crop_936x1664": "crop=405:720:620:0,scale=936:1664:flags=lanczos",
+      "t_window_s": {
+        "Short_A:S02": [
+          0.0,
+          3.34
+        ]
+      },
+      "verdict": "KEEP"
+    },
+    {
+      "order": 3,
+      "row_id": "P2:03_tiny_shells",
+      "source_set": "v01_twelve_plates",
+      "take": 1,
+      "file": "P02_03_tiny_shells_t1.mp4",
+      "mp4_sha256": "1c32a8521956d95ccc6922e6220a84b568ae02ddcb43662c7ee41c810beca205",
+      "producer": "codex",
+      "reviewers": [
+        "gemini",
+        "codex",
+        "claude",
+        "grok"
+      ],
+      "crop_936x1664": "crop=405:720:437:0,scale=936:1664:flags=lanczos",
+      "t_window_s": {
+        "Short_A:S03": [
+          0.0,
+          3.36
+        ]
+      },
+      "verdict": "KEEP"
+    },
+    {
+      "order": 4,
+      "row_id": "P3:08_asaro_michel",
+      "source_set": "v01_twelve_plates",
+      "take": 1,
+      "file": "P03_08_asaro_michel_t1.mp4",
+      "mp4_sha256": "2c512d8bc8bf29b4bfbac37aa9eae1bdebdd4bb14fbfe64256cc2ac1ab0d5d18",
+      "producer": "codex",
+      "reviewers": [
+        "gemini",
+        "codex",
+        "claude",
+        "grok"
+      ],
+      "crop_936x1664": "crop=405:720:180:0,scale=936:1664:flags=lanczos",
+      "t_window_s": {
+        "Short_A:S05": [
+          0.0,
+          3.12
+        ],
+        "Short_A:S06_backup_x690": [
+          3.12,
+          6.84
+        ]
+      },
+      "verdict": "KEEP"
+    },
+    {
+      "order": 5,
+      "row_id": "P5:09a_pigeon_pavement",
+      "source_set": "v01_twelve_plates",
+      "take": 1,
+      "file": "P05_09a_pigeon_pavement_t1.mp4",
+      "mp4_sha256": "0a9797df0ac726b20aab4c358e498f7fdf62aa96f85f0a7238193c2db5e3b59a",
+      "producer": "gemini",
+      "reviewers": [
+        "claude",
+        "grok"
+      ],
+      "sheet": "11c_P5_09a_pigeon_track_x360-530_t1.10-3.74_sheet.jpg",
+      "crop_936x1664": "crop=405:720:360+(530-360)*((t-1.10)/2.64):0,scale=936:1664:flags=lanczos",
+      "t_window_s": {
+        "Short_C:S05": [
+          1.1,
+          3.74
+        ]
+      },
+      "verdict": "KEEP"
+    },
+    {
+      "order": 6,
+      "row_id": "P5:13a_gull_seaside",
+      "source_set": "v01_twelve_plates",
+      "take": 1,
+      "file": "P05_13a_gull_seaside_t1.mp4",
+      "mp4_sha256": "893b17b8d5f3f0b9b5e245688d17145dfa3933f09e027f124acd8593de74b74a",
+      "producer": "gemini",
+      "reviewers": [
+        "claude",
+        "grok"
+      ],
+      "sheet": "12d_P5_13a_gull_track_x605-520_t4.30-7.02_sheet.jpg",
+      "crop_936x1664": "crop=405:720:605+(520-605)*((t-4.30)/2.72):0,scale=936:1664:flags=lanczos",
+      "t_window_s": {
+        "Short_C:S06": [
+          4.3,
+          7.02
+        ]
+      },
+      "verdict": "KEEP"
+    },
+    {
+      "order": 7,
+      "repair_id": "R1",
+      "row_id": "P2:05_almost_none",
+      "source_set": "v02_r1_r6_plates",
+      "take": 2,
+      "file": "P02_05_almost_none_t2.mp4",
+      "mp4_sha256": "eda112847953e75d97f970add475552c5fb527f3b7c04abae8f0cda035eca330",
+      "producer": "gemini",
+      "reviewers": [
+        "claude",
+        "gemini"
+      ],
+      "sheet": "R1_P02_05_almost_none_t2_x380-460_t0.00-3.72_sheet.jpg",
+      "crop_936x1664": "crop=405:720:380+(460-380)*(t/3.72):0,scale=936:1664:flags=lanczos",
+      "t_window_s": {
+        "Short_A:S04": [
+          0.0,
+          3.72
+        ]
+      },
+      "verdict": "KEEP"
+    },
+    {
+      "order": 8,
+      "repair_id": "R2",
+      "row_id": "P4:06_dust_veil",
+      "source_set": "v02_r1_r6_plates",
+      "take": 2,
+      "file": "P04_06_dust_veil_t2.mp4",
+      "mp4_sha256": "1898afb6b8d89d57a818dd340b6e327733b67717b81e9581ca43ae539562e082",
+      "producer": "gemini",
+      "reviewers": [
+        "claude",
+        "gemini"
+      ],
+      "sheet": "R2b_P04_06_dust_veil_t2_x540_t1.75-5.07_sheet.jpg",
+      "crop_936x1664": "crop=405:720:540:0,scale=936:1664:flags=lanczos",
+      "t_window_s": {
+        "Short_C:S02": [
+          1.75,
+          5.07
+        ],
+        "Short_A:S07": [
+          2.0,
+          5.0
+        ]
+      },
+      "verdict": "KEEP"
+    },
+    {
+      "order": 9,
+      "repair_id": "R3",
+      "row_id": "P5:08_all_at_once",
+      "source_set": "v02_r1_r6_plates",
+      "take": 2,
+      "file": "P05_08_all_at_once_t2.mp4",
+      "mp4_sha256": "ab9d8eb7690fbb0542db508b5f1cf41a39f5c45210e40d7c574c2224ee27b7aa",
+      "producer": "gemini",
+      "reviewers": [
+        "claude",
+        "gemini"
+      ],
+      "sheet": "R3_P05_08_all_at_once_t2_x380_t1.25-3.75_sheet.jpg",
+      "crop_936x1664": "crop=405:720:380:0,scale=936:1664:flags=lanczos",
+      "t_window_s": {
+        "Short_C:S04": [
+          1.25,
+          3.75
+        ]
+      },
+      "verdict": "KEEP"
+    },
+    {
+      "order": 10,
+      "repair_id": "R4",
+      "row_id": "P5:12_clay_callback",
+      "source_set": "v02_r1_r6_plates",
+      "take": 2,
+      "file": "P05_12_clay_callback_t2.mp4",
+      "mp4_sha256": "37cf7962a646ff073af3e7f5db74d7c565f2dd613b5cdaea33c7cd63ce2034dc",
+      "producer": "gemini",
+      "reviewers": [
+        "claude",
+        "gemini"
+      ],
+      "sheet": "R4b_P05_12_clay_callback_t2_x437_t1.05-4.23_sheet.jpg",
+      "crop_936x1664": "crop=405:720:437:0,scale=936:1664:flags=lanczos",
+      "t_window_s": {
+        "Short_C:S08": [
+          1.05,
+          4.23
+        ]
+      },
+      "verdict": "KEEP"
+    },
+    {
+      "order": 11,
+      "repair_id": "R5",
+      "row_id": "P5:10_explorer_robin",
+      "source_set": "v02_r1_r6_plates",
+      "take": 2,
+      "file": "P05_10_explorer_robin_t2.mp4",
+      "mp4_sha256": "fc1485661a50a4d072257f3e3b422221a2674a1ec23e9018361dfd283f666969",
+      "producer": "gemini",
+      "reviewers": [
+        "claude",
+        "gemini"
+      ],
+      "sheet": "R5c_P05_10_explorer_robin_t2_x375-410_t2.05-5.65_sheet.jpg",
+      "crop_936x1664": "crop=405:720:375+(410-375)*((t-2.05)/3.60):0,scale=936:1664:flags=lanczos",
+      "t_window_s": {
+        "Short_C:S07": [
+          2.05,
+          5.65
+        ]
+      },
+      "verdict": "KEEP"
+    },
+    {
+      "order": 12,
+      "repair_id": "R6",
+      "row_id": "P5:09_robin",
+      "source_set": "v02_r1_r6_plates",
+      "take": 2,
+      "file": "P05_09_robin_t2.mp4",
+      "mp4_sha256": "172a0a9561a1c25191caf84188b3e492493b31ffd46e1fbfdffb216d911da824",
+      "producer": "gemini",
+      "reviewers": [
+        "claude",
+        "gemini"
+      ],
+      "sheet": "R6c_P05_09_robin_t2_x515-535_t3.25-6.13_sheet.jpg",
+      "crop_936x1664": "crop=405:720:515+(535-515)*((t-3.25)/2.88):0,scale=936:1664:flags=lanczos",
+      "t_window_s": {
+        "Short_C:loop_tail": [
+          3.25,
+          4.25
+        ],
+        "Short_C:S01": [
+          4.25,
+          6.13
+        ]
+      },
+      "verdict": "KEEP"
     }
   ]
 }
