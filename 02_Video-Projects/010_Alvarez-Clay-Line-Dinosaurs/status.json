@@ -45,10 +45,10 @@
       "state": "blocked",
       "due": "2026-11-22",
       "owner": "claude",
-      "note": "Chief go 6898337122 stands (600 Flow credits, \u00a30, signed file, not a second go). R1-R6 submit now calls guarded_create under the shared writer lock, with a live balance read before each batch and a stop on any cash prompt. Nothing has been run. Picture lock held.",
+      "note": "J2915 minted all 6 R1-R6 Short replacement plates under Chief go 6898337122 (600 Flow credits, balance 25,050 -> 24,450, \u00a30 cash, keep=false; v01 t1 plates untouched). 4 fps strips, 936x1664 portrait crop sheets and motion note posted on review branch for Claude non-producer KEEP/FIX calls and Chief confirmation. Picture lock held.",
       "underway": false,
-      "waiting": "Claude's review of the R1-R6 Create-path PR before the Mini relay runs the existing go. Checks 1-3 are re-read on the Mini immediately before Batch 1.",
-      "since": "2026-11-15"
+      "waiting": "Claude non-producer KEEP/FIX calls on R1-R6 review branch/desk #180 and Chief confirmation before J2271 closes and J2172 releases.",
+      "since": "2026-11-16"
     },
     "edit": {
       "state": "todo",
