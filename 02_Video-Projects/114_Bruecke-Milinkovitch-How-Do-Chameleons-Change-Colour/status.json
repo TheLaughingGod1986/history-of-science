@@ -1,0 +1,45 @@
+{
+  "film": "114",
+  "title": "How Do Chameleons Change Colour? (The Nanocrystal Twist)",
+  "summary": "Backlog proposal (J2944 / jobs/WIP.json next_hos; Rule G). Data-backed topic brief, public_search.py and neighbours.py PASS evidence (10 education neighbours >=1M incl. TED-Ed 8.46M, TED-Ed 5.01M, TED-Ed 3.54M, TED-Ed 1.67M & TED-Ed 1.33M What is the rarest color in nature?) prepared; awaits Rule-E topic go/no-go review and an open active HOS WIP slot before SOURCES.md and facts lane.",
+  "stages": {
+    "topic": {
+      "state": "todo"
+    },
+    "script": {
+      "state": "todo"
+    },
+    "facts": {
+      "state": "todo"
+    },
+    "package": {
+      "state": "todo"
+    },
+    "vo": {
+      "state": "todo"
+    },
+    "shorts_scripts": {
+      "state": "todo"
+    },
+    "shorts_vo": {
+      "state": "todo"
+    },
+    "picture": {
+      "state": "todo"
+    },
+    "edit": {
+      "state": "todo"
+    },
+    "thumbnails": {
+      "state": "todo"
+    },
+    "ben_ok": {
+      "state": "todo"
+    },
+    "scheduled": {
+      "state": "todo"
+    }
+  },
+  "claims": [],
+  "next": ""
+}
