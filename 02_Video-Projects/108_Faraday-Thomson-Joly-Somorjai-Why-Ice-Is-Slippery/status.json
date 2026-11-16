@@ -1,0 +1,45 @@
+{
+  "film": "108",
+  "title": "Why Is Ice Slippery? (The 150-Year Textbook Myth)",
+  "summary": "Rule-E topic go/no-go review GO (94/100 Opportunity Score, J2917; J2891 / jobs/WIP.json next_hos; Rule G). Data-backed topic brief, public_search.py and neighbours.py PASS evidence (7 on-topic >=1M in neighbours.py + 4 >=1M in public_search.py incl. SmarterEveryDay 5.99M, TED-Ed 3.74M, Veritasium 3.05M, TED-Ed 2.05M & Be Smart 1.16M) pre-cleared; awaits an open active HOS WIP slot before SOURCES.md and facts lane (all claims UNVERIFIED until sourced).",
+  "stages": {
+    "topic": {
+      "state": "todo"
+    },
+    "script": {
+      "state": "todo"
+    },
+    "facts": {
+      "state": "todo"
+    },
+    "package": {
+      "state": "todo"
+    },
+    "vo": {
+      "state": "todo"
+    },
+    "shorts_scripts": {
+      "state": "todo"
+    },
+    "shorts_vo": {
+      "state": "todo"
+    },
+    "picture": {
+      "state": "todo"
+    },
+    "edit": {
+      "state": "todo"
+    },
+    "thumbnails": {
+      "state": "todo"
+    },
+    "ben_ok": {
+      "state": "todo"
+    },
+    "scheduled": {
+      "state": "todo"
+    }
+  },
+  "claims": [],
+  "next": ""
+}
