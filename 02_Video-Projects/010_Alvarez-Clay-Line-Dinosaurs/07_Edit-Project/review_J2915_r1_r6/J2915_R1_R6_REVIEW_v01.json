@@ -1,0 +1,737 @@
+{
+  "job": "J2915",
+  "ref": "J2271",
+  "film": "HOS:010",
+  "governed_by_desk_go": "6898337122",
+  "wiring_ruling": "6898400383",
+  "preflight_desk_comment": "6903139061",
+  "scope_file": "02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/10_Shorts/R1_R6_REPLACEMENT_SCOPE_J2271.json",
+  "scope_sha256": "e3c802d2bffbbc80bd45f3ecc65b6c0a149de9886a0b38f6cbf8a1485f6c9874",
+  "reservation_id": "HOS010_R1_R6_PLATES_J2271",
+  "released_j2270_reused": false,
+  "credits_authorized": 600,
+  "credits_spent": 600,
+  "cash_spent_gbp": 0,
+  "live_balance_before": 25050,
+  "live_balance_after": 24450,
+  "all_charges_reconciled_posted": true,
+  "v01_t1_clips_untouched": true,
+  "producer": "gemini",
+  "keep": true,
+  "review_status": "KEEP_LOCKED_12_OF_12",
+  "sheets_and_strips": [
+    {
+      "file": "00_R1_R6_start_stills_v02_sheet.jpg",
+      "bytes": 507787,
+      "sha256": "6f1d93f0a71b573bfb07cdc148e16f4f709f1f362e06f324ab440f6b48b692db"
+    },
+    {
+      "file": "R1_P02_05_almost_none_t2_4fps.jpg",
+      "bytes": 554810,
+      "sha256": "4e4e90ba70aaa127a3b7dab0bd145b4cea3fbc8317fd75a7bdcb685c67e829ee"
+    },
+    {
+      "file": "R2_P04_06_dust_veil_t2_4fps.jpg",
+      "bytes": 613766,
+      "sha256": "cde1544af5932e4362766d71ebfeda7ff831c0219162be550cf585661af044ca"
+    },
+    {
+      "file": "R3_P05_08_all_at_once_t2_4fps.jpg",
+      "bytes": 853064,
+      "sha256": "5bd8b2164d2a51e45b31f4f7fed9fd2cbafb98acb1d1280c6611978964cb8c6a"
+    },
+    {
+      "file": "R4_P05_12_clay_callback_t2_4fps.jpg",
+      "bytes": 539580,
+      "sha256": "52de294c9a4168d0cfa2e0bbd79ef48288b0e9b7933c199521217e9e5daaa359"
+    },
+    {
+      "file": "R5_P05_10_explorer_robin_t2_4fps.jpg",
+      "bytes": 954473,
+      "sha256": "ac5f1c24b16e66ebad279f2378e9dbd614016ea729b0099214736a17e7f28ebf"
+    },
+    {
+      "file": "R6_P05_09_robin_t2_4fps.jpg",
+      "bytes": 675013,
+      "sha256": "0ca002e2000ef2c12ff7c90976e6f96e7acad10d435052ea37efbf7ab18550af"
+    },
+    {
+      "file": "R1_P02_05_almost_none_t2_x380-460_t0.00-3.72_sheet.jpg",
+      "bytes": 218517,
+      "sha256": "1884fd6c369fd3a2d0bce441d68ef9ee50035f207599f3188ef260cbf9883aad"
+    },
+    {
+      "file": "R2a_P04_06_dust_veil_t2_x520_t0.00-3.32_sheet.jpg",
+      "bytes": 257778,
+      "sha256": "42cf99514b5fc67c3853daa22f626784fadffd04307388ca8520a873aeef7d3e"
+    },
+    {
+      "file": "R2b_P04_06_dust_veil_t2_x540_t1.75-5.07_sheet.jpg",
+      "bytes": 261700,
+      "sha256": "cf58ee7d84d91955787a6cbdbda332a6dee2a8491610a40593b48ff647800496"
+    },
+    {
+      "file": "R3_P05_08_all_at_once_t2_x380_t1.25-3.75_sheet.jpg",
+      "bytes": 323181,
+      "sha256": "d5ed11a3ae050b8aa4fd6126c3b21957652c2c0ca8e04f82467ce58aeae8133d"
+    },
+    {
+      "file": "R4_P05_12_clay_callback_t2_x437_t1.50-4.68_sheet.jpg",
+      "bytes": 187890,
+      "sha256": "3253e3b0288e0a18d82cf3f06c72f0932612dece4ae57c4321a902dcd06eda4b"
+    },
+    {
+      "file": "R5a_P05_10_explorer_robin_t2_x390_t0.00-3.60_sheet.jpg",
+      "bytes": 350395,
+      "sha256": "c5a05bfb87ca80a6848427cd62732b45e1116d24f48c85224a65c8416283acb3"
+    },
+    {
+      "file": "R5c_P05_10_explorer_robin_t2_x375-410_t2.05-5.65_sheet.jpg",
+      "bytes": 351610,
+      "sha256": "4ab35e6eb58f310c204c022ded2a34acb8982c83ed7b3ad49478142ac2e862ce"
+    },
+    {
+      "file": "R6b_P05_09_robin_t2_x540_t0.00-2.88_sheet.jpg",
+      "bytes": 292173,
+      "sha256": "8b86a937ae10fb0843b341286fdd681017fddb71e9804b6118b5dd995473e42a"
+    },
+    {
+      "file": "R6c_P05_09_robin_t2_x515-535_t3.25-6.13_sheet.jpg",
+      "bytes": 277769,
+      "sha256": "ca6357158f605f0840fa517f2db440503fe3eebd274f8575cf467d3cba217855"
+    },
+    {
+      "file": "11c_P5_09a_pigeon_track_x360-530_t1.10-3.74_sheet.jpg",
+      "bytes": 295596,
+      "sha256": "9bcc976d993d608bc1fed5c42a63e5f30ed2d496df14b18808eec2807e712416"
+    },
+    {
+      "file": "12d_P5_13a_gull_track_x605-520_t4.30-7.02_sheet.jpg",
+      "bytes": 100174,
+      "sha256": "3d3af21dbd1f6291dc312c8a03cf868697ac41a70d1d353dd01bb93dafc5c5a5"
+    },
+    {
+      "file": "R4b_P05_12_clay_callback_t2_x437_t1.05-4.23_sheet.jpg",
+      "bytes": 96065,
+      "sha256": "02263f21b2c776e4fdb1e076eeee91bc4553794899b777a86f432792a9dbc5d4"
+    }
+  ],
+  "plates": [
+    {
+      "repair_id": "R1",
+      "row_id": "P2:05_almost_none",
+      "part": 2,
+      "stem": "P02_05_almost_none_t2",
+      "charge_id": "HOS:010:R1:P02:05_almost_none:t2",
+      "balance_before": 25050,
+      "balance_after": 24950,
+      "short_targets": [
+        "Short_A:S04 (3.720s, or 3.140s Option A1-7B)"
+      ],
+      "recommended_crop": {
+        "sheet": "R1_P02_05_almost_none_t2_x380-460_t0.00-3.72_sheet.jpg",
+        "x_expr": "380+(460-380)*(t/3.72)",
+        "t_window_s": [
+          0.0,
+          3.72
+        ],
+        "duration_s": 3.72
+      },
+      "motion_note": "Continuous right-to-left/across-rock glide of a brass magnifying glass held by a five-fingered hand in period cuff/coat over the pale barren upper Paleogene limestone immediately above the dark Gubbio clay seam (0.00-5.75s). Through the lens, the pale upper limestone stays smooth and empty, contrasting with the dark clay band below. After 6.50s the lens passes off the right edge of the rock block onto the wooden desk, outside the 0.00-3.72s Short_A:S04 trim. No readable words or numbers; lens and rock sit cleanly above the 81% caption line.",
+      "mp4_sha256": "eda112847953e75d97f970add475552c5fb527f3b7c04abae8f0cda035eca330",
+      "mp4_bytes": 1229658,
+      "still_sha256": "83158998408bea5391a81d326f591247c35d633dd76e2e51a4b87713814c9628",
+      "still_bytes": 1216151,
+      "technical": {
+        "codec": "h264",
+        "resolution": "1280x720",
+        "fps": "24/1",
+        "frames": 190,
+        "duration_s": 7.916667,
+        "audio_streams": 0
+      },
+      "motion_metrics_24fps": {
+        "mean_adj_frame_mad": 1.39,
+        "min_adj_frame_mad": 0.851,
+        "max_adj_frame_mad": 2.402,
+        "mean_0p25s_mad": 5.727,
+        "min_0p25s_mad": 4.103,
+        "near_zero_adj_pairs_lt_0p15": 0,
+        "mean_luma": 120.35,
+        "min_luma": 116.62
+      },
+      "producer": "gemini",
+      "keep": true,
+      "review_status": "KEEP",
+      "non_producer_reviewer": "claude"
+    },
+    {
+      "repair_id": "R2",
+      "row_id": "P4:06_dust_veil",
+      "part": 4,
+      "stem": "P04_06_dust_veil_t2",
+      "charge_id": "HOS:010:R2:P04:06_dust_veil:t2",
+      "balance_before": 24950,
+      "balance_after": 24850,
+      "short_targets": [
+        "Short_A:S07 (3.000s)",
+        "Short_C:S02 (3.320s)"
+      ],
+      "recommended_crop": {
+        "sheet": "R2b_P04_06_dust_veil_t2_x540_t1.75-5.07_sheet.jpg",
+        "alt_sheet": "R2a_P04_06_dust_veil_t2_x520_t0.00-3.32_sheet.jpg",
+        "x_expr": "540",
+        "t_window_s": [
+          1.75,
+          5.07
+        ],
+        "short_a_s07_t_window_s": [
+          2.0,
+          5.0
+        ],
+        "duration_s": 3.32
+      },
+      "motion_note": "Candid note on frame 0: the 0-credit start still (0.00-1.90s, R2a) already includes an initial fire/smoke column rising on the right coastal horizon while the main glowing asteroid streaks down from upper-left (0.00-2.25s) and strikes the sea at 2.25-2.50s in a blinding golden-white flash (2.50-3.25s), driving a single massive incandescent impact plume and ejecta curtain upward (3.25-7.75s) as coastal waves surge toward watching dinosaurs. R2b (x=540, t=1.75-5.07s for Short_C:S02 3.320s; t=2.00-5.00s for Short_A:S07 3.000s) catches the final fiery streak into the sea, the blinding impact flash, and the single towering impact plume dead-center without the two-plume look of 0.00-1.40s. v01 t1 P04_06_dust_veil_t1.mp4 remains untouched for Long Part 04.",
+      "mp4_sha256": "1898afb6b8d89d57a818dd340b6e327733b67717b81e9581ca43ae539562e082",
+      "mp4_bytes": 2805603,
+      "still_sha256": "150465fbf133cd5f585bb6b2ebc36a642005416e1b8a4471a1576bfc48232141",
+      "still_bytes": 1409337,
+      "technical": {
+        "codec": "h264",
+        "resolution": "1280x720",
+        "fps": "24/1",
+        "frames": 190,
+        "duration_s": 7.916667,
+        "audio_streams": 0
+      },
+      "motion_metrics_24fps": {
+        "mean_adj_frame_mad": 4.77,
+        "min_adj_frame_mad": 1.192,
+        "max_adj_frame_mad": 8.436,
+        "mean_0p25s_mad": 14.799,
+        "min_0p25s_mad": 5.717,
+        "near_zero_adj_pairs_lt_0p15": 0,
+        "mean_luma": 106.45,
+        "min_luma": 93.85
+      },
+      "producer": "gemini",
+      "keep": true,
+      "review_status": "KEEP",
+      "non_producer_reviewer": "claude"
+    },
+    {
+      "repair_id": "R3",
+      "row_id": "P5:08_all_at_once",
+      "part": 5,
+      "stem": "P05_08_all_at_once_t2",
+      "charge_id": "HOS:010:R3:P05:08_all_at_once:t2",
+      "balance_before": 24850,
+      "balance_after": 24750,
+      "short_targets": [
+        "Short_C:S04 (2.500s)"
+      ],
+      "recommended_crop": {
+        "sheet": "R3_P05_08_all_at_once_t2_x380_t1.25-3.75_sheet.jpg",
+        "x_expr": "380",
+        "t_window_s": [
+          1.25,
+          3.75
+        ],
+        "duration_s": 2.5
+      },
+      "motion_note": "Sunlit British morning garden lane and mossy dry-stone wall alive with sparrows, finches, a robin, and a blackbird hopping along the stones and fluttering upward across golden sunbeams (0.00-7.75s) with a smooth gentle camera push-in. Static crop x=380 over t=1.25-3.75s frames multiple birds perching and taking wing in the upper/middle band well above the 81% caption line. Zero text, zero Explorer, zero morphing. v01 t1 P05_08_all_at_once_t1.mp4 remains untouched for Long Part 05.",
+      "mp4_sha256": "ab9d8eb7690fbb0542db508b5f1cf41a39f5c45210e40d7c574c2224ee27b7aa",
+      "mp4_bytes": 4030139,
+      "still_sha256": "ad90a03ad2e895a0c92c7690fbc46abbb640810581244ca70a289c149c09ea0d",
+      "still_bytes": 1683775,
+      "technical": {
+        "codec": "h264",
+        "resolution": "1280x720",
+        "fps": "24/1",
+        "frames": 190,
+        "duration_s": 7.916667,
+        "audio_streams": 0
+      },
+      "motion_metrics_24fps": {
+        "mean_adj_frame_mad": 6.75,
+        "min_adj_frame_mad": 4.96,
+        "max_adj_frame_mad": 8.722,
+        "mean_0p25s_mad": 19.521,
+        "min_0p25s_mad": 15.778,
+        "near_zero_adj_pairs_lt_0p15": 0,
+        "mean_luma": 92.32,
+        "min_luma": 81.99
+      },
+      "producer": "gemini",
+      "keep": true,
+      "review_status": "KEEP",
+      "non_producer_reviewer": "claude"
+    },
+    {
+      "repair_id": "R4",
+      "row_id": "P5:12_clay_callback",
+      "part": 5,
+      "stem": "P05_12_clay_callback_t2",
+      "charge_id": "HOS:010:R4:P05:12_clay_callback:t2",
+      "balance_before": 24750,
+      "balance_after": 24650,
+      "short_targets": [
+        "Short_C:S08 (3.180s)"
+      ],
+      "recommended_crop": {
+        "sheet": "R4b_P05_12_clay_callback_t2_x437_t1.05-4.23_sheet.jpg",
+        "alt_sheet": "R4_P05_12_clay_callback_t2_x437_t1.50-4.68_sheet.jpg",
+        "x_expr": "437",
+        "t_window_s": [
+          1.05,
+          4.23
+        ],
+        "duration_s": 3.18
+      },
+      "motion_note": "Smooth continuous upward camera tilt past sunlit green treetops into a warm golden-hour morning sky while a graceful flock of swifts and songbirds wheels and soars overhead across sunbeams (0.00-7.75s). Center crop x=437 over t=1.50-4.68s keeps the soaring flock filling the sky well above the 81% caption line with natural wingbeats and zero morphing, matching 'Look up. They never really left'. v01 t1 P05_12_clay_callback_t1.mp4 remains untouched for Long Part 05. R4b (t=1.05-4.23s, x=437, -0.45s trim) verified in motion and agreed by Claude (6907453362) to stop at 4.23s before the 4.38-4.68s upper-left two-bird wingtip crossing.",
+      "mp4_sha256": "37cf7962a646ff073af3e7f5db74d7c565f2dd613b5cdaea33c7cd63ce2034dc",
+      "mp4_bytes": 3258875,
+      "still_sha256": "51b04e761a110176ff95ccaa797f964233fc1d12fd900098048a3c383d980f92",
+      "still_bytes": 1491285,
+      "technical": {
+        "codec": "h264",
+        "resolution": "1280x720",
+        "fps": "24/1",
+        "frames": 190,
+        "duration_s": 7.916667,
+        "audio_streams": 0
+      },
+      "motion_metrics_24fps": {
+        "mean_adj_frame_mad": 6.654,
+        "min_adj_frame_mad": 2.769,
+        "max_adj_frame_mad": 11.148,
+        "mean_0p25s_mad": 13.998,
+        "min_0p25s_mad": 4.558,
+        "near_zero_adj_pairs_lt_0p15": 0,
+        "mean_luma": 186.61,
+        "min_luma": 142.83
+      },
+      "producer": "gemini",
+      "keep": true,
+      "review_status": "KEEP",
+      "non_producer_reviewer": "claude"
+    },
+    {
+      "repair_id": "R5",
+      "row_id": "P5:10_explorer_robin",
+      "part": 5,
+      "stem": "P05_10_explorer_robin_t2",
+      "charge_id": "HOS:010:R5:P05:10_explorer_robin:t2",
+      "balance_before": 24650,
+      "balance_after": 24550,
+      "short_targets": [
+        "Short_C:S07 (3.600s)"
+      ],
+      "recommended_crop": {
+        "sheet": "R5c_P05_10_explorer_robin_t2_x375-410_t2.05-5.65_sheet.jpg",
+        "alt_sheet": "R5a_P05_10_explorer_robin_t2_x390_t0.00-3.60_sheet.jpg",
+        "x_expr": "375+(410-375)*((t-2.05)/3.60)",
+        "t_window_s": [
+          2.05,
+          5.65
+        ],
+        "duration_s": 3.6
+      },
+      "motion_note": "On-model Explorer (messy brown hair, round gold glasses, teal coat, tan waistcoat, brown bow tie, leather satchel with brass compass \u2014 verified against hos-explorer-reference-v01.jpg) remains crouched/kneeling on the sunlit garden path for the entire 8.0s shot with zero pose jump and one single European robin throughout. From 0.00-1.75s the robin stands on the path before his open hand (R5a); at 2.05-2.50s it hops cleanly onto his open palm and perches (2.56-4.62s); at 4.75-5.65s it lifts off his palm and hovers beside his smiling face. R5c (tracked x=375->410, t=2.05-5.65s) holds both the full robin (tail tip to beak) and the crouching Explorer comfortably inside 936x1664 and 100% above the 81% caption line across all 8 tiles.",
+      "mp4_sha256": "fc1485661a50a4d072257f3e3b422221a2674a1ec23e9018361dfd283f666969",
+      "mp4_bytes": 1684623,
+      "still_sha256": "f42b4d2c35189e084f126c170b37fb6402abcd95d712111351fdb62e02ebd365",
+      "still_bytes": 1699888,
+      "technical": {
+        "codec": "h264",
+        "resolution": "1280x720",
+        "fps": "24/1",
+        "frames": 190,
+        "duration_s": 7.916667,
+        "audio_streams": 0
+      },
+      "motion_metrics_24fps": {
+        "mean_adj_frame_mad": 1.013,
+        "min_adj_frame_mad": 0.305,
+        "max_adj_frame_mad": 4.016,
+        "mean_0p25s_mad": 3.54,
+        "min_0p25s_mad": 1.856,
+        "near_zero_adj_pairs_lt_0p15": 0,
+        "mean_luma": 71.48,
+        "min_luma": 70.63
+      },
+      "producer": "gemini",
+      "keep": true,
+      "review_status": "KEEP",
+      "non_producer_reviewer": "claude"
+    },
+    {
+      "repair_id": "R6",
+      "row_id": "P5:09_robin",
+      "part": 5,
+      "stem": "P05_09_robin_t2",
+      "charge_id": "HOS:010:R6:P05:09_robin:t2",
+      "balance_before": 24550,
+      "balance_after": 24450,
+      "short_targets": [
+        "Short_C:S01 (1.880s)",
+        "Short_C:loop_tail (1.000s)"
+      ],
+      "recommended_crop": {
+        "sheet": "R6c_P05_09_robin_t2_x515-535_t3.25-6.13_sheet.jpg",
+        "alt_sheet": "R6b_P05_09_robin_t2_x540_t0.00-2.88_sheet.jpg",
+        "x_expr": "515+(535-515)*((t-3.25)/2.88)",
+        "t_window_s": [
+          3.25,
+          6.13
+        ],
+        "loop_tail_window_s": [
+          3.25,
+          4.25
+        ],
+        "s01_window_s": [
+          4.25,
+          6.13
+        ],
+        "duration_s": 2.88
+      },
+      "motion_note": "Single European robin perched on a mossy wooden garden fence post for the entire 8.0s shot (never flies off). Colours stay completely steady from 0.00s to 7.92s (grey-brown back, rich orange-red breast, pale grey-white belly \u2014 zero pale colour wash/pulse). Smooth camera push-in; faces left 0.00-2.50s, quick natural head-dip turn to face right at 2.75-3.00s, steady right-facing perch with tiny beak movement at 4.00s (3.25-5.80s), then turns toward camera (6.00-7.75s). R6c (tracked x=515->535, t=3.25-6.13s: loop_tail = 3.25-4.25s [1.000s] -> S01 = 4.25-6.13s [1.880s]) avoids the 2.75s head dip, gives a frame-exact seamless loop from Short C end into frame 0 of S01, and keeps the full robin and mossy post top dead-center above the 81% caption line.",
+      "mp4_sha256": "172a0a9561a1c25191caf84188b3e492493b31ffd46e1fbfdffb216d911da824",
+      "mp4_bytes": 1850088,
+      "still_sha256": "25ee5e044833c32aa3f3dbabf7819b55613e64ecba6fd56b0429973926fce045",
+      "still_bytes": 1467637,
+      "technical": {
+        "codec": "h264",
+        "resolution": "1280x720",
+        "fps": "24/1",
+        "frames": 190,
+        "duration_s": 7.916667,
+        "audio_streams": 0
+      },
+      "motion_metrics_24fps": {
+        "mean_adj_frame_mad": 1.628,
+        "min_adj_frame_mad": 0.54,
+        "max_adj_frame_mad": 4.842,
+        "mean_0p25s_mad": 6.426,
+        "min_0p25s_mad": 3.305,
+        "near_zero_adj_pairs_lt_0p15": 0,
+        "mean_luma": 103.82,
+        "min_luma": 100.13
+      },
+      "producer": "gemini",
+      "keep": true,
+      "review_status": "KEEP",
+      "non_producer_reviewer": "claude"
+    }
+  ],
+  "non_producer_reviewer": "claude",
+  "non_producer_desk_comments": [
+    "6889210972",
+    "6889357737",
+    "6905894181",
+    "6907453362"
+  ],
+  "chief_confirm": {
+    "acting_chief": "gemini",
+    "job": "J2928",
+    "recheck_of": "J2271",
+    "confirmed_at": "2026-11-16T06:26:00Z",
+    "Prior_Chief_Grok_confirmations": [
+      "6889216573",
+      "6889364319",
+      "6889440776"
+    ]
+  },
+  "locked_twelve_short_plates": [
+    {
+      "order": 1,
+      "row_id": "P1:01_clay_line",
+      "source_set": "v01_twelve_plates",
+      "take": 1,
+      "file": "P01_01_clay_line_t1.mp4",
+      "mp4_sha256": "927e826b3fe8f83c66a879b2e9a932b683d711d91c075fc235a6a4012dd0338b",
+      "producer": "codex",
+      "reviewers": [
+        "gemini",
+        "codex",
+        "claude",
+        "grok"
+      ],
+      "crop_936x1664": "crop=405:720:437:0,scale=936:1664:flags=lanczos",
+      "t_window_s": {
+        "Short_A:S01": [
+          1.0,
+          3.849
+        ],
+        "Short_A:loop_tail": [
+          0.0,
+          1.0
+        ]
+      },
+      "verdict": "KEEP"
+    },
+    {
+      "order": 2,
+      "row_id": "P2:01_walter_hammer",
+      "source_set": "v01_twelve_plates",
+      "take": 1,
+      "file": "P02_01_walter_hammer_t1.mp4",
+      "mp4_sha256": "db506d28c3abd7ee5c441e22e0bdb55494b715e4811163885b7cfd2d5ade60f6",
+      "producer": "codex",
+      "reviewers": [
+        "gemini",
+        "codex",
+        "claude",
+        "grok"
+      ],
+      "crop_936x1664": "crop=405:720:620:0,scale=936:1664:flags=lanczos",
+      "t_window_s": {
+        "Short_A:S02": [
+          0.0,
+          3.34
+        ]
+      },
+      "verdict": "KEEP"
+    },
+    {
+      "order": 3,
+      "row_id": "P2:03_tiny_shells",
+      "source_set": "v01_twelve_plates",
+      "take": 1,
+      "file": "P02_03_tiny_shells_t1.mp4",
+      "mp4_sha256": "1c32a8521956d95ccc6922e6220a84b568ae02ddcb43662c7ee41c810beca205",
+      "producer": "codex",
+      "reviewers": [
+        "gemini",
+        "codex",
+        "claude",
+        "grok"
+      ],
+      "crop_936x1664": "crop=405:720:437:0,scale=936:1664:flags=lanczos",
+      "t_window_s": {
+        "Short_A:S03": [
+          0.0,
+          3.36
+        ]
+      },
+      "verdict": "KEEP"
+    },
+    {
+      "order": 4,
+      "row_id": "P3:08_asaro_michel",
+      "source_set": "v01_twelve_plates",
+      "take": 1,
+      "file": "P03_08_asaro_michel_t1.mp4",
+      "mp4_sha256": "2c512d8bc8bf29b4bfbac37aa9eae1bdebdd4bb14fbfe64256cc2ac1ab0d5d18",
+      "producer": "codex",
+      "reviewers": [
+        "gemini",
+        "codex",
+        "claude",
+        "grok"
+      ],
+      "crop_936x1664": "crop=405:720:180:0,scale=936:1664:flags=lanczos",
+      "t_window_s": {
+        "Short_A:S05": [
+          0.0,
+          3.12
+        ],
+        "Short_A:S06_backup_x690": [
+          3.12,
+          6.84
+        ]
+      },
+      "verdict": "KEEP"
+    },
+    {
+      "order": 5,
+      "row_id": "P5:09a_pigeon_pavement",
+      "source_set": "v01_twelve_plates",
+      "take": 1,
+      "file": "P05_09a_pigeon_pavement_t1.mp4",
+      "mp4_sha256": "0a9797df0ac726b20aab4c358e498f7fdf62aa96f85f0a7238193c2db5e3b59a",
+      "producer": "gemini",
+      "reviewers": [
+        "claude",
+        "grok"
+      ],
+      "sheet": "11c_P5_09a_pigeon_track_x360-530_t1.10-3.74_sheet.jpg",
+      "crop_936x1664": "crop=405:720:360+(530-360)*((t-1.10)/2.64):0,scale=936:1664:flags=lanczos",
+      "t_window_s": {
+        "Short_C:S05": [
+          1.1,
+          3.74
+        ]
+      },
+      "verdict": "KEEP"
+    },
+    {
+      "order": 6,
+      "row_id": "P5:13a_gull_seaside",
+      "source_set": "v01_twelve_plates",
+      "take": 1,
+      "file": "P05_13a_gull_seaside_t1.mp4",
+      "mp4_sha256": "893b17b8d5f3f0b9b5e245688d17145dfa3933f09e027f124acd8593de74b74a",
+      "producer": "gemini",
+      "reviewers": [
+        "claude",
+        "grok"
+      ],
+      "sheet": "12d_P5_13a_gull_track_x605-520_t4.30-7.02_sheet.jpg",
+      "crop_936x1664": "crop=405:720:605+(520-605)*((t-4.30)/2.72):0,scale=936:1664:flags=lanczos",
+      "t_window_s": {
+        "Short_C:S06": [
+          4.3,
+          7.02
+        ]
+      },
+      "verdict": "KEEP"
+    },
+    {
+      "order": 7,
+      "repair_id": "R1",
+      "row_id": "P2:05_almost_none",
+      "source_set": "v02_r1_r6_plates",
+      "take": 2,
+      "file": "P02_05_almost_none_t2.mp4",
+      "mp4_sha256": "eda112847953e75d97f970add475552c5fb527f3b7c04abae8f0cda035eca330",
+      "producer": "gemini",
+      "reviewers": [
+        "claude",
+        "gemini"
+      ],
+      "sheet": "R1_P02_05_almost_none_t2_x380-460_t0.00-3.72_sheet.jpg",
+      "crop_936x1664": "crop=405:720:380+(460-380)*(t/3.72):0,scale=936:1664:flags=lanczos",
+      "t_window_s": {
+        "Short_A:S04": [
+          0.0,
+          3.72
+        ]
+      },
+      "verdict": "KEEP"
+    },
+    {
+      "order": 8,
+      "repair_id": "R2",
+      "row_id": "P4:06_dust_veil",
+      "source_set": "v02_r1_r6_plates",
+      "take": 2,
+      "file": "P04_06_dust_veil_t2.mp4",
+      "mp4_sha256": "1898afb6b8d89d57a818dd340b6e327733b67717b81e9581ca43ae539562e082",
+      "producer": "gemini",
+      "reviewers": [
+        "claude",
+        "gemini"
+      ],
+      "sheet": "R2b_P04_06_dust_veil_t2_x540_t1.75-5.07_sheet.jpg",
+      "crop_936x1664": "crop=405:720:540:0,scale=936:1664:flags=lanczos",
+      "t_window_s": {
+        "Short_C:S02": [
+          1.75,
+          5.07
+        ],
+        "Short_A:S07": [
+          2.0,
+          5.0
+        ]
+      },
+      "verdict": "KEEP"
+    },
+    {
+      "order": 9,
+      "repair_id": "R3",
+      "row_id": "P5:08_all_at_once",
+      "source_set": "v02_r1_r6_plates",
+      "take": 2,
+      "file": "P05_08_all_at_once_t2.mp4",
+      "mp4_sha256": "ab9d8eb7690fbb0542db508b5f1cf41a39f5c45210e40d7c574c2224ee27b7aa",
+      "producer": "gemini",
+      "reviewers": [
+        "claude",
+        "gemini"
+      ],
+      "sheet": "R3_P05_08_all_at_once_t2_x380_t1.25-3.75_sheet.jpg",
+      "crop_936x1664": "crop=405:720:380:0,scale=936:1664:flags=lanczos",
+      "t_window_s": {
+        "Short_C:S04": [
+          1.25,
+          3.75
+        ]
+      },
+      "verdict": "KEEP"
+    },
+    {
+      "order": 10,
+      "repair_id": "R4",
+      "row_id": "P5:12_clay_callback",
+      "source_set": "v02_r1_r6_plates",
+      "take": 2,
+      "file": "P05_12_clay_callback_t2.mp4",
+      "mp4_sha256": "37cf7962a646ff073af3e7f5db74d7c565f2dd613b5cdaea33c7cd63ce2034dc",
+      "producer": "gemini",
+      "reviewers": [
+        "claude",
+        "gemini"
+      ],
+      "sheet": "R4b_P05_12_clay_callback_t2_x437_t1.05-4.23_sheet.jpg",
+      "crop_936x1664": "crop=405:720:437:0,scale=936:1664:flags=lanczos",
+      "t_window_s": {
+        "Short_C:S08": [
+          1.05,
+          4.23
+        ]
+      },
+      "verdict": "KEEP"
+    },
+    {
+      "order": 11,
+      "repair_id": "R5",
+      "row_id": "P5:10_explorer_robin",
+      "source_set": "v02_r1_r6_plates",
+      "take": 2,
+      "file": "P05_10_explorer_robin_t2.mp4",
+      "mp4_sha256": "fc1485661a50a4d072257f3e3b422221a2674a1ec23e9018361dfd283f666969",
+      "producer": "gemini",
+      "reviewers": [
+        "claude",
+        "gemini"
+      ],
+      "sheet": "R5c_P05_10_explorer_robin_t2_x375-410_t2.05-5.65_sheet.jpg",
+      "crop_936x1664": "crop=405:720:375+(410-375)*((t-2.05)/3.60):0,scale=936:1664:flags=lanczos",
+      "t_window_s": {
+        "Short_C:S07": [
+          2.05,
+          5.65
+        ]
+      },
+      "verdict": "KEEP"
+    },
+    {
+      "order": 12,
+      "repair_id": "R6",
+      "row_id": "P5:09_robin",
+      "source_set": "v02_r1_r6_plates",
+      "take": 2,
+      "file": "P05_09_robin_t2.mp4",
+      "mp4_sha256": "172a0a9561a1c25191caf84188b3e492493b31ffd46e1fbfdffb216d911da824",
+      "producer": "gemini",
+      "reviewers": [
+        "claude",
+        "gemini"
+      ],
+      "sheet": "R6c_P05_09_robin_t2_x515-535_t3.25-6.13_sheet.jpg",
+      "crop_936x1664": "crop=405:720:515+(535-515)*((t-3.25)/2.88):0,scale=936:1664:flags=lanczos",
+      "t_window_s": {
+        "Short_C:loop_tail": [
+          3.25,
+          4.25
+        ],
+        "Short_C:S01": [
+          4.25,
+          6.13
+        ]
+      },
+      "verdict": "KEEP"
+    }
+  ]
+}

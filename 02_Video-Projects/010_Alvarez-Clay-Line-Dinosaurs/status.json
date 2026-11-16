@@ -38,21 +38,40 @@
       "state": "done",
       "due": "2026-10-08",
       "owner": "gemini",
-      "note": "J0862/J2279/J2281 PASS (PR #423): Short A v02 (68d88b5b, 23.289 s, Option A1 hook 2.849 s) + Short C v02 (20432ecd, 23.560 s, hook 1.780 s) vo_check_py312 PASS. J2172 waits on J2271 12-plate production/review chain.",
+      "note": "J0862/J2279/J2281 PASS (PR #423): Short A v02 (68d88b5b, 23.289 s, Option A1 hook 2.849 s) + Short C v02 (20432ecd, 23.560 s, hook 1.780 s) vo_check_py312 PASS. J2271 12/12 Shorts plates locked KEEP; J2172 released for \u00a30 assembly.",
       "underway": false
     },
     "picture": {
-      "state": "blocked",
+      "state": "doing",
       "due": "2026-11-22",
-      "owner": "claude",
-      "note": "Chief go 6898337122 stands (600 Flow credits, \u00a30, signed file, not a second go). R1-R6 submit now calls guarded_create under the shared writer lock, with a live balance read before each batch and a stop on any cash prompt. Nothing has been run. Picture lock held.",
+      "owner": "Cursor",
+      "note": "J2271/J2928 DONE: all 12/12 HOS 010 Shorts plates locked KEEP (Claude non-producer 6905894181/6907453362 + Chief confirm, 12d gull tracked x=605->520 t=4.30-7.02s, R4b t=1.05-4.23s x=437, 36/36 NAS SHA-256 verified, keep=true recorded in Flow ledgers). J2172 released for \u00a30 Short A & Short C assembly; Long Parts 01-05 remaining plates next.",
+      "steps": [
+        12,
+        65
+      ],
+      "steps_unit": "plates",
+      "left": "about 3 hours",
+      "eta": "2026-11-22",
       "underway": false,
-      "waiting": "Claude's review of the R1-R6 Create-path PR before the Mini relay runs the existing go. Checks 1-3 are re-read on the Mini immediately before Batch 1.",
-      "since": "2026-11-15"
+      "waiting": "J2172 \u00a30 Short A & Short C assembly released; remaining Long Parts 01-05 plate generation",
+      "since": "2026-11-16"
     },
     "edit": {
-      "state": "todo",
-      "due": "2026-11-26"
+      "state": "doing",
+      "due": "2026-11-26",
+      "owner": "Cursor",
+      "note": "J2172 released at 1/3 for \u00a30 Short A & Short C 936x1664 (2.311x) assembly from locked 12/12 KEEP plates + code graphics.",
+      "steps": [
+        1,
+        3
+      ],
+      "steps_unit": "steps",
+      "left": "about 1 hour",
+      "eta": "2026-11-16",
+      "underway": false,
+      "waiting": "J2172 worker claim to assemble Short A & Short C at 936x1664 and run gates",
+      "since": "2026-11-16"
     },
     "thumbnails": {
       "state": "todo",
