@@ -45,6 +45,28 @@
       "durationSeconds": 24.53,
       "cover": "frame 0 of hos_007_s05_vacca_jesty_v05 (NOT THE FIRST)",
       "note": "J1222 swap from 4WUs0beKn0A (v02, sha 89a9a1668d74, Private unscheduled) to v05 xgx2lYHhYZM (sha e5ea76f012fb, Ben OK 6507831644). Private + publishAt Tue 17 Nov 11:30 London (2026-11-17T11:30:00Z). Registered for HOS Buffer mirror with long ETynHpIYLeY; held until public. Studio Related -> ETynHpIYLeY set & read back on 13 Nov 2026 (J0875)."
+    },
+    {
+      "id": "sY0PSQFxjp8",
+      "title": "What Is Variolation?",
+      "airDate": "2026-11-28T11:30:00Z",
+      "promotes": "007",
+      "promotesVideoId": "ETynHpIYLeY",
+      "relatedVideoId": "ETynHpIYLeY",
+      "tags": [
+        "what is variolation",
+        "variolation",
+        "variolation smallpox",
+        "smallpox",
+        "before vaccines",
+        "first vaccine",
+        "history of medicine"
+      ],
+      "madeForKids": false,
+      "alteredContent": true,
+      "durationSeconds": 23.33,
+      "cover": "frame 0 of hos_007_variolation_v05 (SMALLPOX SORE)",
+      "note": "J2957. s06 variolation v05 (sha c7ae95379e11), Ben OK'd J2230.3 on the board 16 Nov 2026. Private + publishAt Sat 28 Nov 2026 11:30 London."
     }
   ]
 }

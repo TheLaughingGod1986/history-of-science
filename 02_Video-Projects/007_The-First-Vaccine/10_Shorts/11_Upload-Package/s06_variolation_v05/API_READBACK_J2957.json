@@ -1,0 +1,46 @@
+{
+  "job": "J2957",
+  "at": "2026-11-16T23:06:45.227Z",
+  "videoId": "sY0PSQFxjp8",
+  "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+  "title": "What Is Variolation?",
+  "privacy": "private",
+  "publishAt": "2026-11-28T11:30:00Z",
+  "uploadStatus": "uploaded",
+  "madeForKids": false,
+  "containsSyntheticMedia": null,
+  "language": "en-GB",
+  "audioLanguage": "en-GB",
+  "categoryId": "27",
+  "tags": [
+    "before vaccines",
+    "first vaccine",
+    "history of medicine",
+    "smallpox",
+    "variolation",
+    "variolation smallpox",
+    "what is variolation"
+  ],
+  "duration": "PT24S",
+  "hasCustomThumbnail": true,
+  "description": "Variolation was the risky way to fight smallpox before vaccines: doctors took a little matter from a smallpox sore and scratched it into a healthy person's arm. It usually gave a milder illness and lifelong protection, but some people died from it, and they could pass full smallpox on to others.\n\nFull film:\nHow Was the First Vaccine Made? (And Why It's Named After a Cow)\nhttps://www.youtube.com/watch?v=ETynHpIYLeY\n\nPictures: AI-generated 3D scenes. Facts: every claim is checked against the sources for the full film.",
+  "captionUpload": {
+    "ok": true,
+    "status": 200,
+    "id": "AUieDaaNrVE4Pct-cLuypshZYdExcfoyceEvrqp2bbVdVcoa5jEpOGxfD1Mlx7ZP5E2W6_Ghywb873CBJzQ",
+    "language": "en-GB",
+    "trackStatus": "serving",
+    "error": null
+  },
+  "captions": [
+    {
+      "id": "AUieDaaNrVE4Pct-cLuypshZYdExcfoyceEvrqp2bbVdVcoa5jEpOGxfD1Mlx7ZP5E2W6_Ghywb873CBJzQ",
+      "language": "en-GB",
+      "trackKind": "standard",
+      "status": "serving",
+      "isDraft": false,
+      "name": "English (United Kingdom)"
+    }
+  ],
+  "captionError": null
+}
