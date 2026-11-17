@@ -67,6 +67,28 @@
       "durationSeconds": 23.33,
       "cover": "frame 0 of hos_007_variolation_v05 (SMALLPOX SORE)",
       "note": "J2957. s06 variolation v05 (sha c7ae95379e11), Ben OK'd J2230.3 on the board 16 Nov 2026. Private + publishAt Sat 28 Nov 2026 11:30 London. Studio Related -> ETynHpIYLeY set & read back on 17 Nov 2026. Accidental second upload wkyGOKepjeQ unscheduled to Private (no publishAt, never deleted)."
+    },
+    {
+      "id": "jkUZpyO71lU",
+      "title": "How Was Smallpox Eradicated?",
+      "airDate": "2026-11-29T11:30:00Z",
+      "promotes": "007",
+      "promotesVideoId": "ETynHpIYLeY",
+      "relatedVideoId": "ETynHpIYLeY",
+      "tags": [
+        "how was smallpox eradicated",
+        "smallpox eradication",
+        "smallpox",
+        "smallpox vaccine",
+        "8 may 1980",
+        "first vaccine",
+        "history of medicine"
+      ],
+      "madeForKids": false,
+      "alteredContent": true,
+      "durationSeconds": 22.1,
+      "cover": "frame 0 of hos_007_eradication_v06 (SMALLPOX GONE)",
+      "note": "J2958. s07 eradication v06 (sha 33696b704872), Ben OK'd J2230.4 on the board 16 Nov 2026. Private + publishAt Sun 29 Nov 2026 11:30 London. Studio Related -> ETynHpIYLeY set & read back on 16 Nov 2026."
     }
   ]
 }
