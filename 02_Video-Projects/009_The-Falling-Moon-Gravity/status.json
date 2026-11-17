@@ -59,10 +59,10 @@
     "edit": {
       "state": "blocked",
       "due": "2026-11-19",
-      "owner": "Mini audio worker (J2806), then audio review J2807 and Chief J2808",
-      "waiting": "J2806 revised opening cue, complete unchanged music gate, J2807 capable audio review and J2808 score acceptance before J2035 assembly; J2171 held.",
+      "owner": "Chief (J2808 score disposition)",
+      "waiting": "J2808 elected-Chief score disposition after J2806 production (#636) and J2807 ear review; J2035 assembly and J2171 Shorts remain held.",
       "underway": false,
-      "note": "J2803 validation failed; PR908 stays undeployed. J2805 (PR #633) scopes one 180s wonder replacement, cap3000 subscription credits and GBP0, retaining teach v01. Merging #633 releases up to 3,000 subscription credits for J2806 at GBP0 cash. Deadlines refreshed 17 Nov: J2806 16:00Z, J2807 18:00Z, J2808 20:00Z, J2035 assembly 18 Nov 18:00Z (air 26 Nov); J2171 held.",
+      "note": "J2806 (#636) generated wonder_v02 (1 request, 2475 credits, GBP0) and passed complete 89-comparison music_gate (max 0.6615, 0 fails). J2807 demonstrated-audio ear review verified all local/NAS hashes, crossfade (175.28-178.28s in D), tempo (~55-70 BPM; 171.4 BPM is harpsichord subdivision), and VO clarity, but flagged six 0.61-2.29s inter-phrase silent dropouts (< -45 dB at 18.95-21.00s, 66.48-67.83s, 73.04-75.33s, 81.70-82.84s, 88.91-90.39s, 97.31-97.92s) and no lute in wonder_v02. Handed to J2808 Chief disposition (due 17 Nov 20:00Z); J2035 and J2171 held.",
       "since": "2026-11-17"
     },
     "thumbnails": {
