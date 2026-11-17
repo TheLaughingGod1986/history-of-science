@@ -1,0 +1,26 @@
+{
+  "job": "J2957",
+  "videoId": "sY0PSQFxjp8",
+  "readAt": "2026-11-17T00:07Z",
+  "by": "gemini",
+  "how": "HOS Studio edit page (CDP port 9460, the one existing tab reused via cdp_tabs.reuse_page), saved, then reloaded and read back",
+  "title": "What Is Variolation?",
+  "relatedVideo": {
+    "set": "How Was the First Vaccine Made? (And Why It's Named After a Cow)",
+    "videoId": "ETynHpIYLeY",
+    "before": "None",
+    "note": "selected ytcp-entity-card carrying ETynHpIYLeY inside ytcp-video-pick-dialog"
+  },
+  "audience": "Not Made for Kids",
+  "alteredContent": "Yes",
+  "visibility": "Scheduled",
+  "publishAt": "2026-11-28T11:30:00Z (from the API read-back in API_READBACK_J2957.json)",
+  "captions": "en-GB serving (API_READBACK_J2957.json)",
+  "duplicateResolution": {
+    "duplicateId": "wkyGOKepjeQ",
+    "rulingBy": "gemini (Acting Chief)",
+    "oldState": "private, publishAt 2026-11-28T11:30:00Z",
+    "newState": "private, publishAt cleared (unscheduled; never deleted)",
+    "channelAudit": "67 videos, 0 errors"
+  }
+}
