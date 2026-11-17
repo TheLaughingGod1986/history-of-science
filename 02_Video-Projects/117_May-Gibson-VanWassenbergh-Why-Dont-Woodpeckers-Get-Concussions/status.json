@@ -1,0 +1,45 @@
+{
+  "film": "117",
+  "title": "Why Don't Woodpeckers Get Concussions? (The Shock-Pad Myth)",
+  "summary": "Backlog proposal (J2963 / jobs/WIP.json next_hos; Rule G). Data-backed topic brief, public_search.py and neighbours.py PASS evidence (4 education neighbours >=1M incl. TED-Ed 2.56M What happens when you have a concussion?, TED-Ed 2.11M, Be Smart 1.91M Why Don't Woodpeckers Get Concussions? & TED 1.37M) prepared; awaits Rule-E topic go/no-go review and an open active HOS WIP slot before SOURCES.md and facts lane.",
+  "stages": {
+    "topic": {
+      "state": "todo"
+    },
+    "script": {
+      "state": "todo"
+    },
+    "facts": {
+      "state": "todo"
+    },
+    "package": {
+      "state": "todo"
+    },
+    "vo": {
+      "state": "todo"
+    },
+    "shorts_scripts": {
+      "state": "todo"
+    },
+    "shorts_vo": {
+      "state": "todo"
+    },
+    "picture": {
+      "state": "todo"
+    },
+    "edit": {
+      "state": "todo"
+    },
+    "thumbnails": {
+      "state": "todo"
+    },
+    "ben_ok": {
+      "state": "todo"
+    },
+    "scheduled": {
+      "state": "todo"
+    }
+  },
+  "claims": [],
+  "next": ""
+}
