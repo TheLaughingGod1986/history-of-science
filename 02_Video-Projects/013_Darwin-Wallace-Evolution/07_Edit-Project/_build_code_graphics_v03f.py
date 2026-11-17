@@ -543,7 +543,7 @@ def render_row_frame(
 
     # 11. NEW v02 code_graphic: P3:09a_essay_1844_sealed
     if rid == "09a_essay_1844_sealed":
-        cue_active = draw_anchored_cues(im, d, abs_t, row["t_s"], row["t_end_s"], cues, portrait_cache)
+        cue_active = draw_anchored_cues(im, d, abs_t, row["t_s"], row["t_end_s"], cues, portrait_cache, show_portrait=False)
         # Left: 230-page fair-copy manuscript stack bound with crimson ribbon + wax seal
         st_p = prog(t, 0.10, dur * 0.55)
         n_sheets = max(2, int(24 * st_p))
@@ -658,7 +658,7 @@ def render_row_frame(
 
     # 15. NEW v02 free_archive: P5:02b_joint_papers_lectern (_wide and _detail)
     if rid.startswith("02b_joint_papers_lectern_"):
-        cue_active = draw_anchored_cues(im, d, abs_t, row["t_s"], row["t_end_s"], cues, portrait_cache)
+        cue_active = draw_anchored_cues(im, d, abs_t, row["t_s"], row["t_end_s"], cues, portrait_cache, show_portrait=False)
         hooker = portrait_cache["who_joseph_hooker"]
         if rid.endswith("_wide"):
             # Wide Linnean lectern dossier: Darwin 1844 extract + Wallace 1858 essay + Hooker portrait medallion
