@@ -1,0 +1,781 @@
+{
+  "verdict": "PASS",
+  "library_state": "complete",
+  "bed": "02_Video-Projects/009_The-Falling-Moon-Gravity/05_Music/hos_009_score_joined_v02.wav",
+  "reference_endpoint_video_arg": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/audio_review_j2806/hos_009_reference_endpoint_526s_v02.wav",
+  "seconds": 535.3,
+  "reference_endpoint_seconds": 526.0,
+  "locked_vo_end_seconds": 518.4,
+  "bpm": 171.4,
+  "brief_pace": "Pace: 60-72 BPM",
+  "fail": [],
+  "warn": [
+    "pace: measured about 171.4 BPM against the brief's 60-72; Claude listens"
+  ],
+  "waived": [],
+  "waiver": null,
+  "matches": [],
+  "rules": {
+    "similarity_fail": 0.8,
+    "compared_seconds": 300
+  },
+  "comparison_count": 89,
+  "minimum_required_comparisons": 77,
+  "unreadable_warn_count": 0,
+  "comparison_roots": [
+    {
+      "root": "mini-local/History Of Science/02_Video-Projects",
+      "state": "listed",
+      "files": 17
+    },
+    {
+      "root": "mini-local/orbit-with-ben/02_Video-Projects",
+      "state": "listed",
+      "files": 7
+    },
+    {
+      "root": "studio-live/History Of Science/02_Video-Projects",
+      "state": "listed",
+      "files": 13
+    },
+    {
+      "root": "studio-live/orbit-with-ben/02_Video-Projects",
+      "state": "listed",
+      "files": 19
+    },
+    {
+      "root": "mac-mini-archive/YouTube",
+      "state": "listed",
+      "files": 18
+    },
+    {
+      "root": "mac-mini-archive/orbit-with-ben",
+      "state": "listed",
+      "files": 0
+    },
+    {
+      "root": "mac-mini-archive/youtube-staging",
+      "state": "listed",
+      "files": 0
+    },
+    {
+      "root": "icloud-uat/HOS UAT",
+      "state": "listed",
+      "files": 2
+    },
+    {
+      "root": "icloud-uat/OWB UAT",
+      "state": "listed",
+      "files": 13
+    }
+  ],
+  "excluded": {
+    "same_film_count": 30,
+    "appledouble_count": 65,
+    "same_film_examples": [
+      "mini-local/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/05_Music/hos_009_score_joined_v01.wav",
+      "mini-local/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/05_Music/hos_009_score_joined_v02.wav",
+      "mini-local/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/05_Music/hos_009_stem_part01_the_falling_moon_v01.wav",
+      "mini-local/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/05_Music/hos_009_stem_part01_the_falling_moon_v02.wav",
+      "mini-local/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/05_Music/hos_009_stem_part02_an_apple_in_a_plague_year_v01.wav",
+      "mini-local/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/05_Music/hos_009_stem_part02_an_apple_in_a_plague_year_v02.wav",
+      "mini-local/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/05_Music/hos_009_stem_part03_the_cannon_on_the_mountain_v01.wav",
+      "mini-local/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/05_Music/hos_009_stem_part03_the_cannon_on_the_mountain_v02.wav",
+      "mini-local/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/05_Music/hos_009_stem_part04_the_moon_test_v01.wav",
+      "mini-local/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/05_Music/hos_009_stem_part04_the_moon_test_v02.wav",
+      "mini-local/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/05_Music/hos_009_stem_part05_falling_around_the_world_v01.wav",
+      "mini-local/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/05_Music/hos_009_stem_part05_falling_around_the_world_v02.wav",
+      "mini-local/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/05_Music/hos_009_teach_v01.mp3",
+      "mini-local/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/05_Music/hos_009_wonder_v01.mp3",
+      "mini-local/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/05_Music/hos_009_wonder_v02.mp3",
+      "studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/05_Music/hos_009_score_joined_v01.wav",
+      "studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/05_Music/hos_009_score_joined_v02.wav",
+      "studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/05_Music/hos_009_stem_part01_the_falling_moon_v01.wav",
+      "studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/05_Music/hos_009_stem_part01_the_falling_moon_v02.wav",
+      "studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/05_Music/hos_009_stem_part02_an_apple_in_a_plague_year_v01.wav"
+    ]
+  },
+  "uat_hash_verified_mappings": [
+    {
+      "logical_path": "icloud-uat/HOS UAT/part01_zoo_of_stuff_v02.mp3",
+      "materialized_path": "scratch/j2664/uat_materialized/HOS UAT__part01_zoo_of_stuff_v02.mp3",
+      "bytes": 1371786,
+      "sha256": "93f64d6d043c35b1eeeb79b264f37ba8b6cbcb2f255d3b5995cced1476101e6c"
+    },
+    {
+      "logical_path": "icloud-uat/HOS UAT/part01_zoo_of_stuff_v02.wav",
+      "materialized_path": "scratch/j2664/uat_materialized/HOS UAT__part01_zoo_of_stuff_v02.wav",
+      "bytes": 16450638,
+      "sha256": "5887a6648c44a571972d70f7e5910ebce9264fe1f0b59d4eaccea2c963e43937"
+    },
+    {
+      "logical_path": "icloud-uat/OWB UAT/friday_black_dwarf_short_vo_v01_LISTEN.wav",
+      "materialized_path": "scratch/j2664/uat_materialized/OWB UAT__friday_black_dwarf_short_vo_v01_LISTEN.wav",
+      "bytes": 5145678,
+      "sha256": "c5c47cdd0fd731bd60ca5674785c4401d33ec5e6f3dfe3e1a941b9f2b1bd4a51"
+    },
+    {
+      "logical_path": "icloud-uat/OWB UAT/jupiter-music.mp3",
+      "materialized_path": "scratch/j2664/uat_materialized/OWB UAT__jupiter-music.mp3",
+      "bytes": 2560462,
+      "sha256": "38ab6e3e876860e72c49c547df6cbe1d05a82e021e6d517e4e64478db6f8de2b"
+    },
+    {
+      "logical_path": "icloud-uat/OWB UAT/jupiter-vo.mp3",
+      "materialized_path": "scratch/j2664/uat_materialized/OWB UAT__jupiter-vo.mp3",
+      "bytes": 9258674,
+      "sha256": "85948a85fa7208c381e1bf2a517ccbef140dd3d9413383354dc12addd763d272"
+    },
+    {
+      "logical_path": "icloud-uat/OWB UAT/monday_saturn_short_vo_v01_LISTEN.wav",
+      "materialized_path": "scratch/j2664/uat_materialized/OWB UAT__monday_saturn_short_vo_v01_LISTEN.wav",
+      "bytes": 4485198,
+      "sha256": "8cf03befdc54869bd0a8afc1369647bbff32bbe87f34a6f0d26b9aa4342f325c"
+    },
+    {
+      "logical_path": "icloud-uat/OWB UAT/monday_saturn_short_vo_v02_how_long.mp3",
+      "materialized_path": "scratch/j2664/uat_materialized/OWB UAT__monday_saturn_short_vo_v02_how_long.mp3",
+      "bytes": 561780,
+      "sha256": "bd20832435ea3e9aed5f59dd3ad016f4bdade6f0dba436c7abefc00dc740cb08"
+    },
+    {
+      "logical_path": "icloud-uat/OWB UAT/monday_saturn_short_vo_v02_how_long.wav",
+      "materialized_path": "scratch/j2664/uat_materialized/OWB UAT__monday_saturn_short_vo_v02_how_long.wav",
+      "bytes": 2059018,
+      "sha256": "8feb143ec959527e78f3c50561bee13df50cf8e8dbb67c2ff415f01e7f44bcca"
+    },
+    {
+      "logical_path": "icloud-uat/OWB UAT/saturn_long_vo_v01_LISTEN.wav",
+      "materialized_path": "scratch/j2664/uat_materialized/OWB UAT__saturn_long_vo_v01_LISTEN.wav",
+      "bytes": 112373838,
+      "sha256": "6c0ccb126a03130aade8edfcdaec1c954ba844973437d2742fe35ac44b597d00"
+    },
+    {
+      "logical_path": "icloud-uat/OWB UAT/saturn_long_vo_v02_LISTEN.m4a",
+      "materialized_path": "scratch/j2664/uat_materialized/OWB UAT__saturn_long_vo_v02_LISTEN.m4a",
+      "bytes": 6858029,
+      "sha256": "37a445b6e075c751953b8ab5b8ae5461c667bc406f2fd48fa63d3e52c7d60351"
+    },
+    {
+      "logical_path": "icloud-uat/OWB UAT/saturn_long_vo_v02_LISTEN.wav",
+      "materialized_path": "scratch/j2664/uat_materialized/OWB UAT__saturn_long_vo_v02_LISTEN.wav",
+      "bytes": 108176718,
+      "sha256": "42a332257386f46d5dd5592639b6e19c3d933ef4b8308356318e44503fe1bce3"
+    },
+    {
+      "logical_path": "icloud-uat/OWB UAT/saturn_long_vo_v03_tightened.m4a",
+      "materialized_path": "scratch/j2664/uat_materialized/OWB UAT__saturn_long_vo_v03_tightened.m4a",
+      "bytes": 12640350,
+      "sha256": "b4ed2610c578e07c0413df60572dd2088e426d6a1a8daec9ecafc99a467c0cab"
+    },
+    {
+      "logical_path": "icloud-uat/OWB UAT/saturn_long_vo_v03_tightened.wav",
+      "materialized_path": "scratch/j2664/uat_materialized/OWB UAT__saturn_long_vo_v03_tightened.wav",
+      "bytes": 100467918,
+      "sha256": "e11a38c6665512cf75f68f570447102720ce4c9909b2745a196d8f85797f3375"
+    },
+    {
+      "logical_path": "icloud-uat/OWB UAT/saturn_long_vo_v03b_tightened_LOCK.m4a",
+      "materialized_path": "scratch/j2664/uat_materialized/OWB UAT__saturn_long_vo_v03b_tightened_LOCK.m4a",
+      "bytes": 12641043,
+      "sha256": "f2e57b8f60619d751ed819dbaf038697c0e6e7977be62336a42b6f5569dd60cb"
+    },
+    {
+      "logical_path": "icloud-uat/OWB UAT/saturn_long_vo_v03b_tightened_LOCK.wav",
+      "materialized_path": "scratch/j2664/uat_materialized/OWB UAT__saturn_long_vo_v03b_tightened_LOCK.wav",
+      "bytes": 100535084,
+      "sha256": "a0498dbdbba264655973dd9d88c4a04717500f239ba68dabbe233e76618a2c5f"
+    }
+  ],
+  "top_20_joined_v02_similarities": [
+    {
+      "file": "mac-mini-archive/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/05_Music/hos_002_part01_curious_workshop_v02_norm.wav",
+      "sha256_12": "8bc0d04982cb",
+      "similarity": 0.6615
+    },
+    {
+      "file": "mac-mini-archive/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/05_Music/hos_002_part01_curious_workshop_v01_norm.wav",
+      "sha256_12": "46eb493fb885",
+      "similarity": 0.6359
+    },
+    {
+      "file": "mac-mini-archive/YouTube/orbit-with-ben/02_Video-Projects/013_Why-The-Moon-Is-Slowly-Leaving-Us/05_Music/moon-leaving-part02_score_bed_v01.mp3",
+      "sha256_12": "5093a4c23253",
+      "similarity": 0.5822
+    },
+    {
+      "file": "studio-live/orbit-with-ben/02_Video-Projects/026_How-Far-Is-The-Nearest-Star/05_Music/nearest-star_score_bed_v01.mp3",
+      "sha256_12": "767a574c164e",
+      "similarity": 0.561
+    },
+    {
+      "file": "studio-live/orbit-with-ben/02_Video-Projects/027_What-If-Earth-Stopped-Spinning/05_Music/earth-spin_score_bed_v02_fit.wav",
+      "sha256_12": "4d72982bad46",
+      "similarity": 0.4333
+    },
+    {
+      "file": "studio-live/orbit-with-ben/02_Video-Projects/027_What-If-Earth-Stopped-Spinning/05_Music/earth-spin_score_bed_v02.mp3",
+      "sha256_12": "8181f7370425",
+      "similarity": 0.4224
+    },
+    {
+      "file": "studio-live/orbit-with-ben/02_Video-Projects/023_What-Happened-To-Venus/05_Music/venus_score_bed_v01_full.mp3",
+      "sha256_12": "e2f7204e8cd1",
+      "similarity": 0.385
+    },
+    {
+      "file": "studio-live/orbit-with-ben/02_Video-Projects/J01_Journey-To-Every-World/05_Music/j01_journey_laid_score_v02.wav",
+      "sha256_12": "0fd2c87674d9",
+      "similarity": 0.3796
+    },
+    {
+      "file": "mac-mini-archive/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/05_Music/hos_001_part01_ominous_ward_v12_norm.wav",
+      "sha256_12": "d0ec69156ecf",
+      "similarity": 0.3628
+    },
+    {
+      "file": "mini-local/History Of Science/02_Video-Projects/008_Lightning-Franklin/05_Music/lightning008_score_bed_v01_take.mp3",
+      "sha256_12": "42917e83640e",
+      "similarity": 0.3531
+    },
+    {
+      "file": "studio-live/History Of Science/02_Video-Projects/008_Lightning-Franklin/05_Music/lightning008_score_bed_v01_take.mp3",
+      "sha256_12": "42917e83640e",
+      "similarity": 0.3531
+    },
+    {
+      "file": "studio-live/orbit-with-ben/02_Video-Projects/027_What-If-Earth-Stopped-Spinning/05_Music/earth-spin_score_take2_straight_v01j.wav",
+      "sha256_12": "f63005243f5e",
+      "similarity": 0.3429
+    },
+    {
+      "file": "mini-local/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/05_Music/hos004-part03-temp_score_bed_v01.mp3",
+      "sha256_12": "529a989a0e84",
+      "similarity": 0.3376
+    },
+    {
+      "file": "mac-mini-archive/YouTube/orbit-with-ben/02_Video-Projects/013_Why-The-Moon-Is-Slowly-Leaving-Us/05_Music/moon-leaving-part03_score_bed_v01.mp3",
+      "sha256_12": "38ab6e3e8768",
+      "similarity": 0.3059
+    },
+    {
+      "file": "icloud-uat/OWB UAT/jupiter-music.mp3",
+      "sha256_12": "38ab6e3e8768",
+      "similarity": 0.3059
+    },
+    {
+      "file": "studio-live/orbit-with-ben/02_Video-Projects/023_What-Happened-To-Venus/05_Music/venus_score_bed_v01.mp3",
+      "sha256_12": "9d8467e3b694",
+      "similarity": 0.2996
+    },
+    {
+      "file": "mac-mini-archive/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/05_Music/hos_002_part01_curious_workshop_v02.wav",
+      "sha256_12": "f94518c01019",
+      "similarity": 0.287
+    },
+    {
+      "file": "studio-live/orbit-with-ben/02_Video-Projects/J01_Journey-To-Every-World/05_Music/j01_journey_linking_bed_v01.wav",
+      "sha256_12": "9b9bf9e6bf4d",
+      "similarity": 0.2867
+    },
+    {
+      "file": "studio-live/orbit-with-ben/02_Video-Projects/026_How-Far-Is-The-Nearest-Star/05_Music/nearest-star_score_bed_v01_full.wav",
+      "sha256_12": "0e98ed6485a2",
+      "similarity": 0.2828
+    },
+    {
+      "file": "mini-local/History Of Science/02_Video-Projects/008_Lightning-Franklin/05_Music/hos_008_short_A_v03_bed.wav",
+      "sha256_12": "0a64b7379ec7",
+      "similarity": 0.2718
+    }
+  ],
+  "top_10_wonder_v02_only_similarities": [
+    {
+      "file": "mini-local/History Of Science/02_Video-Projects/008_Lightning-Franklin/05_Music/lightning008_score_bed_v01_take.mp3",
+      "similarity": 0.4822
+    },
+    {
+      "file": "studio-live/History Of Science/02_Video-Projects/008_Lightning-Franklin/05_Music/lightning008_score_bed_v01_take.mp3",
+      "similarity": 0.4822
+    },
+    {
+      "file": "studio-live/orbit-with-ben/02_Video-Projects/J01_Journey-To-Every-World/05_Music/j01_journey_laid_score_v02.wav",
+      "similarity": 0.4382
+    },
+    {
+      "file": "studio-live/orbit-with-ben/02_Video-Projects/027_What-If-Earth-Stopped-Spinning/05_Music/earth-spin_score_bed_v02.mp3",
+      "similarity": 0.4329
+    },
+    {
+      "file": "studio-live/orbit-with-ben/02_Video-Projects/027_What-If-Earth-Stopped-Spinning/05_Music/earth-spin_score_bed_v02_fit.wav",
+      "similarity": 0.4269
+    },
+    {
+      "file": "studio-live/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/05_Music/hos005-part05-temp_score_bed_v01.mp3",
+      "similarity": 0.4181
+    },
+    {
+      "file": "studio-live/orbit-with-ben/02_Video-Projects/027_What-If-Earth-Stopped-Spinning/05_Music/earth-spin_score_take2_straight_v01j.wav",
+      "similarity": 0.4158
+    },
+    {
+      "file": "studio-live/orbit-with-ben/02_Video-Projects/026_How-Far-Is-The-Nearest-Star/05_Music/nearest-star_score_bed_v01_full.mp3",
+      "similarity": 0.3833
+    },
+    {
+      "file": "studio-live/orbit-with-ben/02_Video-Projects/J01_Journey-To-Every-World/05_Music/j01_journey_linking_bed_v01.wav",
+      "similarity": 0.3815
+    },
+    {
+      "file": "mini-local/orbit-with-ben/02_Video-Projects/024_What-Happens-If-You-Travel-Near-Light-Speed/05_Music/light-speed_score_bed_v01_full.mp3",
+      "similarity": 0.3702
+    }
+  ],
+  "all_comparison_scores": [
+    {
+      "file": "mac-mini-archive/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/05_Music/hos_002_part01_curious_workshop_v02_norm.wav",
+      "sha256_12": "8bc0d04982cb",
+      "similarity": 0.6615
+    },
+    {
+      "file": "mac-mini-archive/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/05_Music/hos_002_part01_curious_workshop_v01_norm.wav",
+      "sha256_12": "46eb493fb885",
+      "similarity": 0.6359
+    },
+    {
+      "file": "mac-mini-archive/YouTube/orbit-with-ben/02_Video-Projects/013_Why-The-Moon-Is-Slowly-Leaving-Us/05_Music/moon-leaving-part02_score_bed_v01.mp3",
+      "sha256_12": "5093a4c23253",
+      "similarity": 0.5822
+    },
+    {
+      "file": "studio-live/orbit-with-ben/02_Video-Projects/026_How-Far-Is-The-Nearest-Star/05_Music/nearest-star_score_bed_v01.mp3",
+      "sha256_12": "767a574c164e",
+      "similarity": 0.561
+    },
+    {
+      "file": "studio-live/orbit-with-ben/02_Video-Projects/027_What-If-Earth-Stopped-Spinning/05_Music/earth-spin_score_bed_v02_fit.wav",
+      "sha256_12": "4d72982bad46",
+      "similarity": 0.4333
+    },
+    {
+      "file": "studio-live/orbit-with-ben/02_Video-Projects/027_What-If-Earth-Stopped-Spinning/05_Music/earth-spin_score_bed_v02.mp3",
+      "sha256_12": "8181f7370425",
+      "similarity": 0.4224
+    },
+    {
+      "file": "studio-live/orbit-with-ben/02_Video-Projects/023_What-Happened-To-Venus/05_Music/venus_score_bed_v01_full.mp3",
+      "sha256_12": "e2f7204e8cd1",
+      "similarity": 0.385
+    },
+    {
+      "file": "studio-live/orbit-with-ben/02_Video-Projects/J01_Journey-To-Every-World/05_Music/j01_journey_laid_score_v02.wav",
+      "sha256_12": "0fd2c87674d9",
+      "similarity": 0.3796
+    },
+    {
+      "file": "mac-mini-archive/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/05_Music/hos_001_part01_ominous_ward_v12_norm.wav",
+      "sha256_12": "d0ec69156ecf",
+      "similarity": 0.3628
+    },
+    {
+      "file": "mini-local/History Of Science/02_Video-Projects/008_Lightning-Franklin/05_Music/lightning008_score_bed_v01_take.mp3",
+      "sha256_12": "42917e83640e",
+      "similarity": 0.3531
+    },
+    {
+      "file": "studio-live/History Of Science/02_Video-Projects/008_Lightning-Franklin/05_Music/lightning008_score_bed_v01_take.mp3",
+      "sha256_12": "42917e83640e",
+      "similarity": 0.3531
+    },
+    {
+      "file": "studio-live/orbit-with-ben/02_Video-Projects/027_What-If-Earth-Stopped-Spinning/05_Music/earth-spin_score_take2_straight_v01j.wav",
+      "sha256_12": "f63005243f5e",
+      "similarity": 0.3429
+    },
+    {
+      "file": "mini-local/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/05_Music/hos004-part03-temp_score_bed_v01.mp3",
+      "sha256_12": "529a989a0e84",
+      "similarity": 0.3376
+    },
+    {
+      "file": "mac-mini-archive/YouTube/orbit-with-ben/02_Video-Projects/013_Why-The-Moon-Is-Slowly-Leaving-Us/05_Music/moon-leaving-part03_score_bed_v01.mp3",
+      "sha256_12": "38ab6e3e8768",
+      "similarity": 0.3059
+    },
+    {
+      "file": "icloud-uat/OWB UAT/jupiter-music.mp3",
+      "sha256_12": "38ab6e3e8768",
+      "similarity": 0.3059
+    },
+    {
+      "file": "studio-live/orbit-with-ben/02_Video-Projects/023_What-Happened-To-Venus/05_Music/venus_score_bed_v01.mp3",
+      "sha256_12": "9d8467e3b694",
+      "similarity": 0.2996
+    },
+    {
+      "file": "mac-mini-archive/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/05_Music/hos_002_part01_curious_workshop_v02.wav",
+      "sha256_12": "f94518c01019",
+      "similarity": 0.287
+    },
+    {
+      "file": "studio-live/orbit-with-ben/02_Video-Projects/J01_Journey-To-Every-World/05_Music/j01_journey_linking_bed_v01.wav",
+      "sha256_12": "9b9bf9e6bf4d",
+      "similarity": 0.2867
+    },
+    {
+      "file": "studio-live/orbit-with-ben/02_Video-Projects/026_How-Far-Is-The-Nearest-Star/05_Music/nearest-star_score_bed_v01_full.wav",
+      "sha256_12": "0e98ed6485a2",
+      "similarity": 0.2828
+    },
+    {
+      "file": "mini-local/History Of Science/02_Video-Projects/008_Lightning-Franklin/05_Music/hos_008_short_A_v03_bed.wav",
+      "sha256_12": "0a64b7379ec7",
+      "similarity": 0.2718
+    },
+    {
+      "file": "mini-local/History Of Science/02_Video-Projects/008_Lightning-Franklin/05_Music/hos_008_short_A_v04_bed.wav",
+      "sha256_12": "0a64b7379ec7",
+      "similarity": 0.2718
+    },
+    {
+      "file": "studio-live/History Of Science/02_Video-Projects/008_Lightning-Franklin/05_Music/hos_008_short_A_v03_bed.wav",
+      "sha256_12": "0a64b7379ec7",
+      "similarity": 0.2718
+    },
+    {
+      "file": "studio-live/History Of Science/02_Video-Projects/008_Lightning-Franklin/05_Music/hos_008_short_A_v04_bed.wav",
+      "sha256_12": "0a64b7379ec7",
+      "similarity": 0.2718
+    },
+    {
+      "file": "studio-live/orbit-with-ben/02_Video-Projects/026_How-Far-Is-The-Nearest-Star/05_Music/nearest-star_score_bed_v01_full.mp3",
+      "sha256_12": "4db6d824cff9",
+      "similarity": 0.2666
+    },
+    {
+      "file": "mini-local/orbit-with-ben/02_Video-Projects/027_What-If-Earth-Stopped-Spinning/05_Music/earth-spin_score_take2_straight_v01j.wav",
+      "sha256_12": "b263932e09ac",
+      "similarity": 0.2636
+    },
+    {
+      "file": "icloud-uat/OWB UAT/saturn_long_vo_v02_LISTEN.m4a",
+      "sha256_12": "37a445b6e075",
+      "similarity": 0.2493
+    },
+    {
+      "file": "icloud-uat/OWB UAT/saturn_long_vo_v02_LISTEN.wav",
+      "sha256_12": "42a332257386",
+      "similarity": 0.2468
+    },
+    {
+      "file": "studio-live/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/05_Music/hos005-part05-temp_score_bed_v01.mp3",
+      "sha256_12": "73c3ff63468e",
+      "similarity": 0.2431
+    },
+    {
+      "file": "mac-mini-archive/YouTube/orbit-with-ben/02_Video-Projects/013_Why-The-Moon-Is-Slowly-Leaving-Us/05_Music/moon-leaving-part01_score_bed_v01.mp3",
+      "sha256_12": "b52817c1ee16",
+      "similarity": 0.2399
+    },
+    {
+      "file": "icloud-uat/OWB UAT/monday_saturn_short_vo_v01_LISTEN.wav",
+      "sha256_12": "8cf03befdc54",
+      "similarity": 0.2254
+    },
+    {
+      "file": "mac-mini-archive/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/05_Music/hos_001_part02_ominous_ward_v09_norm.wav",
+      "sha256_12": "d2129d9cdf01",
+      "similarity": 0.22
+    },
+    {
+      "file": "mac-mini-archive/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/05_Music/hos_001_part01_ominous_ward_v14_norm.wav",
+      "sha256_12": "6a8c47bb2421",
+      "similarity": 0.2191
+    },
+    {
+      "file": "mac-mini-archive/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/05_Music/hos_001_part02_ominous_ward_v08_norm.wav",
+      "sha256_12": "6a8c47bb2421",
+      "similarity": 0.2191
+    },
+    {
+      "file": "icloud-uat/HOS UAT/part01_zoo_of_stuff_v02.mp3",
+      "sha256_12": "93f64d6d043c",
+      "similarity": 0.2175
+    },
+    {
+      "file": "icloud-uat/HOS UAT/part01_zoo_of_stuff_v02.wav",
+      "sha256_12": "5887a6648c44",
+      "similarity": 0.2175
+    },
+    {
+      "file": "mac-mini-archive/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/05_Music/hos_001_part04_lab_bed_v06.wav",
+      "sha256_12": "2ec79247ec82",
+      "similarity": 0.2085
+    },
+    {
+      "file": "mac-mini-archive/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/05_Music/hos_001_part05_theatre_bed_v01.wav",
+      "sha256_12": "2ec79247ec82",
+      "similarity": 0.2085
+    },
+    {
+      "file": "icloud-uat/OWB UAT/monday_saturn_short_vo_v02_how_long.wav",
+      "sha256_12": "8feb143ec959",
+      "similarity": 0.2046
+    },
+    {
+      "file": "icloud-uat/OWB UAT/monday_saturn_short_vo_v02_how_long.mp3",
+      "sha256_12": "bd20832435ea",
+      "similarity": 0.2035
+    },
+    {
+      "file": "mini-local/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/05_Music/hos_004_s06_moseley_atomic_number_v01_bed.wav",
+      "sha256_12": "d8e8d3f1deec",
+      "similarity": 0.2026
+    },
+    {
+      "file": "mac-mini-archive/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/05_Music/_test_ward.wav",
+      "sha256_12": "4ec55cb7b60f",
+      "similarity": 0.2007
+    },
+    {
+      "file": "mac-mini-archive/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/05_Music/hos_001_part01_ominous_ward_v12.wav",
+      "sha256_12": "4ec55cb7b60f",
+      "similarity": 0.2007
+    },
+    {
+      "file": "mac-mini-archive/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/05_Music/hos_001_part03_dry_ward_v01.wav",
+      "sha256_12": "2a9337e538bb",
+      "similarity": 0.1933
+    },
+    {
+      "file": "mac-mini-archive/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/05_Music/hos_002_part01_curious_workshop_v02_loop150_norm.wav",
+      "sha256_12": "8e7871584f1d",
+      "similarity": 0.1855
+    },
+    {
+      "file": "mini-local/orbit-with-ben/02_Video-Projects/024_What-Happens-If-You-Travel-Near-Light-Speed/05_Music/light-speed_score_bed_v01_full.mp3",
+      "sha256_12": "7859c2294b05",
+      "similarity": 0.1835
+    },
+    {
+      "file": "studio-live/orbit-with-ben/02_Video-Projects/032_What-Would-Happen-If-You-Landed-On-Titan/05_Music/titan_score_bed_v01.mp3",
+      "sha256_12": "02c7d95865f8",
+      "similarity": 0.174
+    },
+    {
+      "file": "mac-mini-archive/YouTube/History Of Science/02_Video-Projects/001_How-Did-We-Discover-Germs/05_Music/hos_001_part04_lab_bed_v01.wav",
+      "sha256_12": "3a99d24c81c0",
+      "similarity": 0.1738
+    },
+    {
+      "file": "icloud-uat/OWB UAT/saturn_long_vo_v01_LISTEN.wav",
+      "sha256_12": "6c0ccb126a03",
+      "similarity": 0.1655
+    },
+    {
+      "file": "icloud-uat/OWB UAT/jupiter-vo.mp3",
+      "sha256_12": "85948a85fa72",
+      "similarity": 0.164
+    },
+    {
+      "file": "mini-local/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/05_Music/hos_004_s05_dalton_v03_bed.wav",
+      "sha256_12": "28b745aadbb2",
+      "similarity": 0.1622
+    },
+    {
+      "file": "mini-local/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/05_Music/hos_004_s05_dalton_v04_bed.wav",
+      "sha256_12": "54b9952c9f60",
+      "similarity": 0.1621
+    },
+    {
+      "file": "mac-mini-archive/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/05_Music/hos_002_part01_curious_workshop_v01.wav",
+      "sha256_12": "a6b994511143",
+      "similarity": 0.1525
+    },
+    {
+      "file": "studio-live/orbit-with-ben/02_Video-Projects/031_What-Happens-When-Earths-Magnetic-Field-Flips/05_Music/magnetic_field_flip_score_bed_v01.wav",
+      "sha256_12": "302886e03195",
+      "similarity": 0.1518
+    },
+    {
+      "file": "icloud-uat/OWB UAT/friday_black_dwarf_short_vo_v01_LISTEN.wav",
+      "sha256_12": "c5c47cdd0fd7",
+      "similarity": 0.1498
+    },
+    {
+      "file": "studio-live/orbit-with-ben/02_Video-Projects/031_What-Happens-When-Earths-Magnetic-Field-Flips/05_Music/magnetic_field_flip_score_bed_v01.mp3",
+      "sha256_12": "9fe2f87876f9",
+      "similarity": 0.1461
+    },
+    {
+      "file": "mini-local/orbit-with-ben/02_Video-Projects/030_Apophis-Closer-Than-Our-Satellites/05_Music/owb-standalone-shorts_score_bed_v01.mp3",
+      "sha256_12": "13adc03164e7",
+      "similarity": 0.1443
+    },
+    {
+      "file": "studio-live/orbit-with-ben/02_Video-Projects/030_Apophis-Closer-Than-Our-Satellites/05_Music/owb-standalone-shorts_score_bed_v01.mp3",
+      "sha256_12": "13adc03164e7",
+      "similarity": 0.1443
+    },
+    {
+      "file": "mini-local/orbit-with-ben/02_Video-Projects/020_What-Would-You-See-If-You-Fell-Into-Jupiter/05_Music/jupiter_no_crust_short_bed_v01.mp3",
+      "sha256_12": "5c5327f5466a",
+      "similarity": 0.1383
+    },
+    {
+      "file": "mini-local/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/05_Music/trees006_score_bed_v01.mp3",
+      "sha256_12": "4ca1cf2df83b",
+      "similarity": 0.1323
+    },
+    {
+      "file": "studio-live/History Of Science/02_Video-Projects/006_Trees-Are-Made-Of-Air/05_Music/trees006_score_bed_v01.mp3",
+      "sha256_12": "4ca1cf2df83b",
+      "similarity": 0.1323
+    },
+    {
+      "file": "icloud-uat/OWB UAT/saturn_long_vo_v03_tightened.m4a",
+      "sha256_12": "b4ed2610c578",
+      "similarity": 0.1294
+    },
+    {
+      "file": "icloud-uat/OWB UAT/saturn_long_vo_v03b_tightened_LOCK.m4a",
+      "sha256_12": "f2e57b8f6061",
+      "similarity": 0.1294
+    },
+    {
+      "file": "icloud-uat/OWB UAT/saturn_long_vo_v03_tightened.wav",
+      "sha256_12": "e11a38c66655",
+      "similarity": 0.1291
+    },
+    {
+      "file": "icloud-uat/OWB UAT/saturn_long_vo_v03b_tightened_LOCK.wav",
+      "sha256_12": "a0498dbdbba2",
+      "similarity": 0.1291
+    },
+    {
+      "file": "mini-local/History Of Science/02_Video-Projects/007_The-First-Vaccine/05_Music/vaccine_score_bed_v01.mp3",
+      "sha256_12": "9f00cadd51c0",
+      "similarity": 0.1209
+    },
+    {
+      "file": "studio-live/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/05_Music/hos_010_short_A_v01_bed.wav",
+      "sha256_12": "c4fc370c9a3d",
+      "similarity": 0.1158
+    },
+    {
+      "file": "studio-live/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/05_Music/hos_010_short_C_v01_bed.wav",
+      "sha256_12": "23468be2042b",
+      "similarity": 0.114
+    },
+    {
+      "file": "mini-local/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/05_Music/hos003_s07_synth_pad_v01.wav",
+      "sha256_12": "259ab9ea8aae",
+      "similarity": 0.1082
+    },
+    {
+      "file": "mini-local/orbit-with-ben/02_Video-Projects/028_A-Star-Is-Coming-Toward-Us/05_Music/gliese_score_bed_v03.mp3",
+      "sha256_12": "380adcbf914a",
+      "similarity": 0.1069
+    },
+    {
+      "file": "studio-live/orbit-with-ben/02_Video-Projects/028_A-Star-Is-Coming-Toward-Us/05_Music/gliese_score_bed_v03.mp3",
+      "sha256_12": "380adcbf914a",
+      "similarity": 0.1069
+    },
+    {
+      "file": "mini-local/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/05_Music/hos003_s06_synth_pad_v01.wav",
+      "sha256_12": "2c76505e8d38",
+      "similarity": 0.1065
+    },
+    {
+      "file": "mini-local/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/05_Music/hos_004_s07_outer_electrons_v01_bed.wav",
+      "sha256_12": "3838ab85fd8e",
+      "similarity": 0.0971
+    },
+    {
+      "file": "mini-local/History Of Science/02_Video-Projects/008_Lightning-Franklin/05_Music/lightning008_score_bed_v02.mp3",
+      "sha256_12": "40937135976e",
+      "similarity": 0.0896
+    },
+    {
+      "file": "studio-live/History Of Science/02_Video-Projects/008_Lightning-Franklin/05_Music/lightning008_score_bed_v02.mp3",
+      "sha256_12": "40937135976e",
+      "similarity": 0.0896
+    },
+    {
+      "file": "mini-local/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/05_Music/hos_004_backcat_gold_foil_v02_bed.wav",
+      "sha256_12": "c85b139cbec2",
+      "similarity": 0.0887
+    },
+    {
+      "file": "studio-live/History Of Science/02_Video-Projects/008_Lightning-Franklin/05_Music/hos_008_short_C_v04_bed.wav",
+      "sha256_12": "cf4143abdb82",
+      "similarity": 0.0866
+    },
+    {
+      "file": "studio-live/History Of Science/02_Video-Projects/008_Lightning-Franklin/05_Music/hos_008_short_C_v05_bed.wav",
+      "sha256_12": "cf4143abdb82",
+      "similarity": 0.0866
+    },
+    {
+      "file": "studio-live/History Of Science/02_Video-Projects/008_Lightning-Franklin/05_Music/hos_008_short_C_v06_bed.wav",
+      "sha256_12": "cf4143abdb82",
+      "similarity": 0.0866
+    },
+    {
+      "file": "studio-live/History Of Science/02_Video-Projects/008_Lightning-Franklin/05_Music/hos_008_short_C_v07_bed.wav",
+      "sha256_12": "cf4143abdb82",
+      "similarity": 0.0866
+    },
+    {
+      "file": "studio-live/orbit-with-ben/02_Video-Projects/033_Why-This-Planet-Has-21-Year-Winters/05_Music/uranus_score_bed_v01.wav",
+      "sha256_12": "0cd785972bdb",
+      "similarity": 0.0851
+    },
+    {
+      "file": "studio-live/orbit-with-ben/02_Video-Projects/033_Why-This-Planet-Has-21-Year-Winters/05_Music/uranus_score_bed_v01.mp3",
+      "sha256_12": "47f68d66c4ef",
+      "similarity": 0.0846
+    },
+    {
+      "file": "mini-local/orbit-with-ben/02_Video-Projects/029_Is-Betelgeuse-About-To-Explode/05_Music/betelgeuse_score_bed_v01.mp3",
+      "sha256_12": "c57755de833b",
+      "similarity": 0.0833
+    },
+    {
+      "file": "studio-live/orbit-with-ben/02_Video-Projects/029_Is-Betelgeuse-About-To-Explode/05_Music/betelgeuse_score_bed_v01.mp3",
+      "sha256_12": "c57755de833b",
+      "similarity": 0.0833
+    },
+    {
+      "file": "mini-local/History Of Science/02_Video-Projects/008_Lightning-Franklin/05_Music/lightning008_score_bed_v01.mp3",
+      "sha256_12": "3dffce5ebe85",
+      "similarity": 0.0831
+    },
+    {
+      "file": "studio-live/History Of Science/02_Video-Projects/008_Lightning-Franklin/05_Music/lightning008_score_bed_v01.mp3",
+      "sha256_12": "3dffce5ebe85",
+      "similarity": 0.0831
+    },
+    {
+      "file": "mini-local/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/05_Music/hos003_s05_synth_pad_v01.wav",
+      "sha256_12": "5cda03044860",
+      "similarity": 0.0811
+    },
+    {
+      "file": "mini-local/History Of Science/02_Video-Projects/003_Invisible-Bones-X-Rays/05_Music/hos003_s04_synth_pad_v01.wav",
+      "sha256_12": "b5e157d2e545",
+      "similarity": 0.077
+    },
+    {
+      "file": "mini-local/orbit-with-ben/02_Video-Projects/034_Why-Plutos-Frozen-Heart-Has-Zero-Craters/05_Music/pluto_score_bed_v01.mp3",
+      "sha256_12": "8230d846d2cd",
+      "similarity": 0.068
+    },
+    {
+      "file": "studio-live/orbit-with-ben/02_Video-Projects/034_Why-Plutos-Frozen-Heart-Has-Zero-Craters/05_Music/pluto_score_bed_v01.mp3",
+      "sha256_12": "8230d846d2cd",
+      "similarity": 0.068
+    }
+  ]
+}

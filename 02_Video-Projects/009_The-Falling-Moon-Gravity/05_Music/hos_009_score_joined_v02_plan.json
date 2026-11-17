@@ -1,0 +1,132 @@
+{
+  "created_at": "2026-11-17T16:22:55+00:00",
+  "job": "J2806",
+  "scope_job": "J2805",
+  "prompt": "Original joined instrumental bed v02 for HOS 009 The Falling Moon. Opening wonder_v02 cue (0-178.28s, intimate gut-string lute and lightly articulated viol conversation, changing harmony) crossfaded into retained teach_v01 cue (175.28-535.28s, D-minor harpsichord explanation). Leave generous space for British narration.\nPace: 60-72 BPM overall; wonder_v02 sits at 60-66 BPM spacious phrasing, teach_v01 sits at 68-72 BPM.\nNOT any earlier HOS or Orbit bed, the previous HOS009 wonder_v01 cue, jupiter-music.mp3, sustained bass-drone opening, cosmic shimmer, piano space-documentary music, solo woodwind workshop waltz, borrowed melody, named-composer imitation, heroic brass, horror, vocals, lyrics, pop drums, EDM or comedy stings.\nCrossfade: 3 second equal-power (acrossfade=d=3:c1=qsin:c2=qsin) from 175.28 to 178.28, centred on the cannon card at 176.78. No loop and no silence fill.",
+  "model_id": "music_v2",
+  "force_instrumental": true,
+  "status": "joined",
+  "audio_file": "hos_009_score_joined_v02.wav",
+  "bytes": 94431534,
+  "sha256": "6fc8628a96b8267eaf5be6c19d7e30d9e473eb86c886ee3106c3219b375b1f68",
+  "duration_s": 535.325714,
+  "film_end_s": 518.4,
+  "reference_master_endpoint_s": 526.0,
+  "crossfade": {
+    "start_s": 175.28,
+    "end_s": 178.28,
+    "duration_s": 3,
+    "curve": "equal_power",
+    "ffmpeg": "acrossfade=d=3:c1=qsin:c2=qsin",
+    "chapter_card_s": 176.78
+  },
+  "source_windows": {
+    "wonder_v02": {
+      "file": "hos_009_wonder_v02.mp3",
+      "sha256": "b38ae8922e8d633b9f085a8bb9634c96d889a9293fcab277f7a3a23f4839d148",
+      "song_id": "RSFcaVQewwmuA3OjSPz3",
+      "source_range_s": [
+        0.0,
+        178.28
+      ],
+      "film_range_s": [
+        0.0,
+        178.28
+      ]
+    },
+    "teach_v01": {
+      "file": "hos_009_teach_v01.mp3",
+      "sha256": "4c1f0a17364ad5ba96fdd2d42730b2f857d19017fab52b221701bd4e15d07bb1",
+      "song_id": "Xl2Chc450JfbDUaU4iFE",
+      "source_range_s": [
+        0.0,
+        360.045688
+      ],
+      "film_range_s": [
+        175.28,
+        535.325714
+      ],
+      "retained_unchanged": true
+    }
+  },
+  "stems": [
+    {
+      "file": "hos_009_stem_part01_the_falling_moon_v02.wav",
+      "start_s": 0.0,
+      "end_s": 84.44,
+      "duration_s": 84.44,
+      "bytes": 14895294,
+      "sha256": "9b524a443791db1a5d0f9ad2fc1bd0443b4b0fada23b1208c7da769ff91d3ebc"
+    },
+    {
+      "file": "hos_009_stem_part02_an_apple_in_a_plague_year_v02.wav",
+      "start_s": 84.44,
+      "end_s": 176.78,
+      "duration_s": 92.34,
+      "bytes": 16288854,
+      "sha256": "b9da64472d54dc5e1c2d516aec325a2599e91d4e86ec52acf68f74aa93cd44a4"
+    },
+    {
+      "file": "hos_009_stem_part03_the_cannon_on_the_mountain_v02.wav",
+      "start_s": 176.78,
+      "end_s": 260.16,
+      "duration_s": 83.38,
+      "bytes": 14708310,
+      "sha256": "e00218c91adadba0a4b3937ad8cecc3d511ccd2c8e2c51155140d4f91701765d"
+    },
+    {
+      "file": "hos_009_stem_part04_the_moon_test_v02.wav",
+      "start_s": 260.16,
+      "end_s": 393.86,
+      "duration_s": 133.7,
+      "bytes": 23584758,
+      "sha256": "89f7677faf3136c4eb5c9d93aafd94f531787d157b05f7e7a9f3a1f93642109f"
+    },
+    {
+      "file": "hos_009_stem_part05_falling_around_the_world_v02.wav",
+      "start_s": 393.86,
+      "end_s": 535.28,
+      "duration_s": 141.42,
+      "bytes": 24946566,
+      "sha256": "354c48208e16986a8b50bfe88b603e0f9e833c7bfc006164a8b0787c21b78c9e"
+    }
+  ],
+  "song_ids": {
+    "wonder_v02": "RSFcaVQewwmuA3OjSPz3",
+    "teach_v01": "Xl2Chc450JfbDUaU4iFE"
+  },
+  "meter": {
+    "wonder_v02_credits": 2475,
+    "teach_v01_new_credits": 0,
+    "total_j2806_credits": 2475,
+    "cash_gbp": 0,
+    "before": {
+      "tier": "creator",
+      "status": "active",
+      "billing_period": "monthly_period",
+      "character_count": 41250,
+      "character_limit": 121114,
+      "max_character_limit_extension": 0,
+      "max_credit_limit_extension": 0,
+      "can_extend_character_limit": false,
+      "allowed_to_extend_character_limit": false,
+      "current_overage_amount": "0",
+      "current_overage_currency": "usd",
+      "next_character_count_reset_unix": 1796035831
+    },
+    "after": {
+      "tier": "creator",
+      "status": "active",
+      "billing_period": "monthly_period",
+      "character_count": 43725,
+      "character_limit": 121114,
+      "max_character_limit_extension": 0,
+      "max_credit_limit_extension": 0,
+      "can_extend_character_limit": false,
+      "allowed_to_extend_character_limit": false,
+      "current_overage_amount": "0",
+      "current_overage_currency": "usd",
+      "next_character_count_reset_unix": 1796035831
+    }
+  }
+}
