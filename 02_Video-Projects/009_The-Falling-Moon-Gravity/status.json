@@ -57,12 +57,13 @@
       "steps_unit": "board rows recorded: 57 accepted Flow +12 code graphics +1 reuse; 20 Quality remain"
     },
     "edit": {
-      "state": "todo",
+      "state": "blocked",
       "due": "2026-11-19",
-      "owner": "Mini audio worker (J2664); assembly J2035 held",
-      "waiting": "J2664 own score production and capable audio review under SCORE_SCOPE_J2663.json; J2035 remains held until files, provenance and gate evidence exist.",
+      "owner": "Mini audio worker (J2806), then audio review J2807 and Chief J2808",
+      "waiting": "J2806 revised opening cue, complete unchanged music gate, J2807 capable audio review and J2808 score acceptance before J2035 assembly; J2171 held.",
       "underway": false,
-      "note": "J2663 approved two Music v2 cues: wonder 180s + teach 360s, one take each, aggregate cap30000 subscription credits and £0 cash; duration-based cost/overage preflight required. No music generated or audio PASS claimed."
+      "note": "J2803 validation failed; PR908 stays undeployed. J2805 (PR #633) scopes one 180s wonder replacement, cap3000 subscription credits and GBP0, retaining teach v01. Merging #633 releases up to 3,000 subscription credits for J2806 at GBP0 cash. Deadlines refreshed 17 Nov: J2806 16:00Z, J2807 18:00Z, J2808 20:00Z, J2035 assembly 18 Nov 18:00Z (air 26 Nov); J2171 held.",
+      "since": "2026-11-17"
     },
     "thumbnails": {
       "state": "todo",
