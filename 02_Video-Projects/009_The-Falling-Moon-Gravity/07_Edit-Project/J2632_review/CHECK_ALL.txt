@@ -1,0 +1,10 @@
+-- durable desk handoffs: PASS
+-- no media: PASS
+-- status board in sync: PASS
+-- ElevenLabs guard tests: PASS
+-- vo_check word tests: PASS
+-- atempo check tests: PASS
+-- voice speed (atempo <= 1.06): PASS
+-- contract tests: PASS
+-- package-lint: PASS
+ALL CHECKS PASS

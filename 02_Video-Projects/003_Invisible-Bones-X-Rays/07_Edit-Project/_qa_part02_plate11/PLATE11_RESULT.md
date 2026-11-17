@@ -1,7 +1,7 @@
 # HOS 003 Part 02 — `11_detector_hold` result
 
 **Host:** Benjamins-Mac-mini.local · worker `history-of-science`  
-**Wanted account:** `benoats@googlemail.com` · Batch B `95929b6f-ae75-40be-af91-05699c481557`
+**Wanted account:** `the studio Ultra account` · Batch B `95929b6f-ae75-40be-af91-05699c481557`
 
 ## File
 
@@ -23,6 +23,6 @@ Flow Ultra session on the Mini is expired. Quoted dialog:
 
 > You're not signed in. Your session ended because there was no activity. Try signing in again.
 
-Account chooser showed `benoats86@gmail.com` (Signed out). Did **not** click Try again, did **not** switch accounts, no charge-loop.
+Account chooser showed `the studio Ultra account` (Signed out). Did **not** click Try again, did **not** switch accounts, no charge-loop.
 
 KEEP 02/04/05/06/07/08/09/10 fingerprints unchanged.

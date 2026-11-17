@@ -1,34 +1,68 @@
-**Advisory Timing Review — J2632 (`183.94s`–`189.20s`, local `0.00s`–`5.26s`)**
+### J2632 Revised Render Timing Advisory (`01_really_falling_c1`)
 
-### 1. Alignment & Motion Verification
-
-* **Cut Boundaries & Source Duration (`0.00s` to `5.26s`):**
-  * **In-point (`183.94s` / `local_s = 0.00s`):** Preceding sentence 2 (*"The Moon isn't held up at all."*) has its final word onset (`"all,"`) at `183.70s` (`local_s = -0.24s`) and sentence end at `184.10s` (`local_s = +0.16s`, ~5 frames into the clip), leaving a `0.42s` pause before sentence 3 begins at `local_s = 0.58s`.
-  * **Out-point (`189.20s` / `local_s = 5.26s`):** Sentence 5 (*"To explain it..."*) begins cleanly at `189.20s` (`local_s = 5.26s`), matching the nominal `5.26s` edit duration. The 158-frame source at 30 fps (`5.2667s`, last sampled frame at `5.2333s`) covers the full `5.26s` span without requiring a freeze-pad.
-
-* **Check 1 — Visible separation grows during *"It really is falling."* (`local_s = 0.58s` to `1.92s`):**
-  * `"it"` onset (`0.58s`): Moon centre at `(656.70, 166.52)`, vertical drop below the `y = 160` tangent is **`6.52 px`**.
-  * `"falling,"` onset (`1.40s`): Moon centre at `(790.02, 197.73)`, vertical drop below the tangent is **`37.73 px`**.
-  * Phrase end (`1.92s`): Moon centre at `(870.55, 230.42)`, vertical drop below the tangent is **`70.42 px`**.
-  * **Note on disc vs. centre separation:** Because the Moon radius is `57 px`, the Moon's top edge (`y - 57`) still overlaps the `y = 160` tangent line at `"it"` (`0.58s`) and at `"falling,"` onset (`1.40s`, overlapping by `19.27 px`), achieving full top-edge clearance (`gap > 57 px`) mid-word during `"falling,"` and reaching `13.42 px` of full-disc clearance by phrase end (`1.92s`). Centre-to-tangent vertical deflection grows continuously throughout (`6.52 px → 37.73 px → 70.42 px`).
-
-* **Check 2 — Moon remains clear on *"It just never lands."* (`local_s = 2.56s` to `3.88s`, holding to `5.26s`):**
-  * `"it"` onset (`2.56s`): Moon centre at `(963.33, 283.57)`, tangent drop **`123.57 px`** (top edge clear of tangent by `66.57 px`).
-  * `"lands."` onset (`3.38s`): Moon centre at `(1068.95, 370.71)`, tangent drop **`210.71 px`** (top edge clear by `153.71 px`).
-  * Phrase end (`3.88s`): Moon centre at `(1124.53, 433.12)`, tangent drop **`273.12 px`** (top edge clear by `216.12 px`).
-  * Clip end (`5.233s`): Moon centre at `(1235.04, 629.56)`, tangent drop **`469.56 px`** (top edge clear by `412.56 px`).
-  * **Earth & frame clearance:** On the circular arc of radius `720 px` around Earth `(560, 880)`, surface-to-surface clearance between the Moon (`r = 57 px`) and Earth (`r = 150 px`) remains a constant **`513 px`** (`720 - 150 - 57`), and the Moon stays well within standard `1920×1080` bounds (max `x + 57 ≈ 1292 px`, max `y + 57 ≈ 687 px`) with no labels to collide with.
+**Verdict:** **BLOCKED / CONTRADICTION FLAGGED (Do Not Pass Join)** — Phrase-to-motion alignment at `183.94s–189.20s` and internal geometry checks pass, but the **21-frame (`30 fps`) graphic head cannot cover the 21-frame (`24 fps`) parent trim**, leaving an unresolved **`0.175s` clock mismatch** (or **`0.375s–0.425s`** if crossfaded over parent frames `99–104`) under the no-hold, no-retime, no-extra-frames, no-splice constraint. Chief owns `KEEP` and must reconcile the clocks.
 
 ---
 
-### 2. Concrete Timing Conflicts
+### 1. Timing & Clock-Mismatch Calculations
 
-* **None critical.**
-* **Minor geometric note (non-blocking):** Sentence 2's final word (`"all,"`) trails `0.16s` into the start of the clip (`local_s = 0.00s` to `0.16s`), and the Moon's upper limb (`r = 57 px`) does not fully detach below the `y = 160` horizontal tangent line until the middle of the word `"falling,"` (between `1.40s` and `1.92s`), although the centreline drop (`gap_below_tangent_px`) is already visibly increasing across the entire sentence (`6.52 px → 70.42 px`).
+* **Revised Graphic (`30 fps`):**
+  * Total decoded frames: $179\text{ unique frames}$ ($\text{frames } 0\text{–}178$), encoded duration $= \frac{179}{30} = 5.966667\text{ s}$ (nominal edit duration $= 5.96\text{ s}$; last frame $178$ at $5.933333\text{ s}$).
+  * Tangent-draw head (`frames 0–20`): $21\text{ frames at } 30\text{ fps} = \frac{21}{30} = \mathbf{0.700\text{ s}}$.
+  * Orbital motion (`frames 21–178`, old `f0` $\rightarrow$ new `f21`): $158\text{ frames at } 30\text{ fps} = \frac{158}{30} = \mathbf{5.266667\text{ s}}$ (nominal $5.26\text{ s}$).
+  * Locked timeline placement: Motion `[f21..f178]` spans $\mathbf{183.94\text{ s} \rightarrow 189.20\text{ s}}$; graphic start (`f0`) lands at $183.94 - 0.700 = \mathbf{183.240\text{ s}}$.
+
+* **Parent Cut (`01_really_falling_t1.mp4` at `24 fps`):**
+  * Planned out: $\text{frame } 125$ ($\frac{125}{24} = 5.208333\text{ s}$), aligned to film $\mathbf{183.940\text{ s}}$.
+  * Chief required earlier out: $\text{frame } 104$ ($\frac{104}{24} = 4.333333\text{ s}$), excluding $\text{frames } 108, 112, 125$.
+  * Parent cut delta: $125 - 104 = 21\text{ frames at } 24\text{ fps} = \frac{21}{24} = \mathbf{0.875\text{ s}}$ earlier, placing parent `f104` at $183.940 - 0.875 = \mathbf{183.065\text{ s}}$.
+
+* **Explicit Contradictions:**
+  1. **Butt-Join Clock Mismatch (`0.175s` shortfall):**
+     $$\Delta t_{\text{parent}} - \Delta t_{\text{head}} = 0.875\text{ s} - 0.700\text{ s} = \mathbf{0.175\text{ s}} \quad (4.2\text{ frames at } 24\text{ fps} \text{ or } 5.25\text{ frames at } 30\text{ fps})$$
+     * Holding motion at `183.94s` and end at `189.20s` leaves an uncovered **$0.175\text{ s}$ gap** (`183.065s` to `183.240s`).
+     * Pulling the graphic back to `183.065s` shifts motion start $0.175\text{ s}$ early to `183.765s` (breaking narration lock) and ends the graphic at `189.025s` (leaving a $0.175\text{ s}$ gap before `189.20s`).
+  2. **Crossfade Overlap Contradiction (`f99–f104` / `0.20s` fade):**
+     * Parent frames `99–104` span $5\text{ intervals} = \frac{5}{24} = 0.208333\text{ s}$ ($f_{99}$ at $4.125\text{ s}$ to $f_{104}$ at $4.333333\text{ s}$) or $6\text{ inclusive frames} = \frac{6}{24} = 0.250\text{ s}$.
+     * If executed as an overlapping **dissolve/crossfade** where the graphic begins fading in over parent `f99`, the overlap consumes an additional $0.200\text{–}0.250\text{ s}$ of graphic head frames, expanding the total shortfall between parent `f99` and motion start `183.94s` to:
+       * **$0.875 + 0.200 - 0.700 = \mathbf{0.375\text{ s}}$** ($11.25\text{ graphic frames at } 30\text{ fps}$), or
+       * **$\frac{26}{24} - 0.700 = \mathbf{0.3833\text{ s}}$** ($11.5\text{ frames at } 30\text{ fps}$) / **$\frac{27}{24} - 0.700 = \mathbf{0.425\text{ s}}$** ($12.75\text{ frames at } 30\text{ fps}$).
+     * Even if `f99–f104` is a non-overlapping parent fade-out ending on `f104`, the **$0.175\text{ s}$** butt-join gap remains.
 
 ---
 
-### 3. Limits & Advisory Verdict
+### 2. Narration-to-Motion Alignment Check (at `film_motion_start_s = 183.94s`)
 
-* **Limits:** This review is strictly a numerical check of the supplied `VO_RETIME_v01.json` faster-whisper timestamps and coordinate samples; no audio listening, frame viewing, or motion perception was performed, and no tools or files were accessed.
-* **Advisory Verdict:** **PASS (Advisory)** — Narration onsets and sentence windows align cleanly with the `183.94s–189.20s` (`5.26s` / 158-frame) candidate window, separation from the `y = 160` tangent grows continuously across *"It really is falling."*, and the Moon remains completely clear of both the tangent line and Earth across *"It just never lands."* through the `189.20s` cut. **Grok must approve the sheet before KEEP or splice.**
+Mapping `f21` (`render_local_s = 0.70s`, `motion_local_s = 0.00s`) to `183.94s` preserves the exact `film_s` coordinates of the original 158-frame motion curve:
+
+| Film Time (`film_s`) | Render / Motion Local (`s`) | Narration Event (`VO_RETIME_v01.json`) | Moon Center `(x, y)` px | Gap Below `y=160` Tangent (`px`) | Fit Assessment |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **`183.24`** | `0.00` / `-0.70` | Mid-Sentence 2 (*"...held [183.12] **up** [183.34] at [183.56] all, [183.70]"*) | `(560.00, 160.00)` | `0.00` | Tangent draws in over 21 frames (`0.70s`) during sentence tail & pause |
+| **`183.94`** | `0.70` / `0.00` | Pre-Sentence 3 pause (`0.58s` before *"It"*) | `(560.00, 160.00)` | `0.00` | Clockwise orbital motion begins (`f21`) |
+| **`184.52`** | `1.28` / `0.58` | **"It"** onset (*"It really is falling."*) | `(656.70, 166.52)` | **`6.52`** | Exceeds `5px` arc / `4px` tangent strokes at phrase onset |
+| **`185.34`** | `2.10` / `1.40` | **"falling,"** onset | `(790.02, 197.73)` | **`37.73`** | Clear downward deflection during key verb |
+| **`185.86`** | `2.62` / `1.92` | End of *"It really is falling."* | `(870.55, 230.42)` | **`70.42`** | Gap grows $+63.90\text{ px}$ across phrase ($>1.23\times$ Moon radius $57\text{ px}$) |
+| **`186.50`** | `3.26` / `2.56` | **"It"** onset (*"It just never lands."*) | `(963.33, 283.57)` | **`123.57`** | Large separation established at sentence start |
+| **`187.32`** | `4.08` / `3.38` | **"lands."** onset | `(1068.95, 370.71)` | **`210.71`** | Constant surface clearance to Earth $= 513\text{ px}$ |
+| **`187.82`** | `4.58` / `3.88` | End of *"It just never lands."* | `(1124.53, 433.12)` | **`273.12`** | Well clear of Earth and frame boundaries |
+| **`189.173`** | `5.933` / `5.233` | Last frame `f178` (cut to Cannon `f0` at **"To"** `189.20s`) | `(1235.04, 629.56)` | **`469.56`** | $513\text{ px}$ from Earth; $627.96\text{ px}$ from right edge; $393.44\text{ px}$ from bottom |
+
+* **Confirmation:** When mapped to `183.94s`, the original motion gap still fits both phrases cleanly.
+
+---
+
+### 3. Limitations
+
+* **Text-only review:** Evaluated strictly from the supplied manifest, boundary metadata, and historical `faster-whisper` timestamps (`VO_RETIME_v01.json`); no files, audio, or video frames were accessed, listened to, or watched.
+* **No assembled join:** Boundary entries are isolated source samples only; no rendered transition between parent `f99–f104`, graphic `f0–f178`, and `02_cannon_world_t1.mp4` exists yet.
+
+---
+
+### 4. Needed Chief Decision
+
+To reconcile the `24 fps` parent cut at `f104` (`183.065s`) with the `30 fps` graphic while preserving motion lock at `183.94s–189.20s` and no holds/retimes, Chief must authorize **one** of the following:
+1. **Re-render the `30 fps` graphic with a longer drawn tangent lead-in:**
+   * **Butt join after parent fade-out on `f99–f104`:** Requires **$26\text{–}27\text{ head frames}$** at $30\text{ fps}$ ($0.8667\text{–}0.9000\text{ s}$ vs $0.875\text{ s}$ exact; total $184\text{–}185\text{ frames}$) so graphic `f0` starts at `183.065s` and motion `f_motion` still starts at `183.94s`.
+   * **Overlapping crossfade across parent `f99–f104` (`0.20s` / `5–6 parent frames`):** Requires **$32\text{–}34\text{ head frames}$** at $30\text{ fps}$ ($1.0667\text{–}1.1333\text{ s}$; total $190\text{–}192\text{ frames}$) to cover both the $0.875\text{ s}$ earlier cut and the $0.200\text{–}0.250\text{ s}$ crossfade overlap before `183.94s`.
+2. **Or adjust the parent out-point to match the existing 21-frame (`0.700s`) head:**
+   * A $0.700\text{ s}$ trim at $24\text{ fps}$ is $16.8\text{ frames}$ (parent `f108` $= 0.7083\text{ s}$), **not** `f104` — which conflicts with Chief's exclusion of `f108`.

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Part 04 Flow remint v18 — Ben OVERRIDE FAIL (06 / 10 / 11 / 11b).
 
-Careful Flow Ultra on benoats@googlemail.com. Prefer Veo I2V from clean v18 starts.
+Careful Flow Ultra on the studio Ultra account. Prefer Veo I2V from clean v18 starts.
 If harvest empty/MAD ghosty or credits block — report blocker; do not ship ghost paint.
 
 MAX 1 create per plate this run (careful credit use).
@@ -19,6 +19,19 @@ from pathlib import Path
 
 from PIL import Image, ImageChops, ImageFilter, ImageStat
 from playwright.sync_api import sync_playwright
+
+def _account_sha256(addr: str | None) -> str:
+    import hashlib as _hashlib
+    s = (addr or "").strip().lower()
+    if not s:
+        return ""
+    return s if len(s) == 64 and all(c in "0123456789abcdef" for c in s) else _hashlib.sha256(s.encode()).hexdigest()
+
+
+def _blob_account_sha256s(text: str) -> set[str]:
+    import re as _re
+    return {_account_sha256(e) for e in _re.findall(r"[A-Za-z0-9._%+-]+@(?:gmail|googlemail)\.com", text or "", _re.I)}
+
 
 REPO = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(REPO / "04_Audio" / "tools"))
@@ -38,9 +51,9 @@ EDIT_DL = Path(__file__).resolve().parent / "_harvest_part04_v11_edit_download.p
 
 MODEL = os.environ.get("ORBIT_FLOW_VEO_MODEL", "Veo 3.1 - Fast")
 PROFILE = Path(os.environ.get("ORBIT_FLOW_PROFILE", str(Path.home() / ".playwright-hos-flow-profile")))
-REQUIRED_FLOW_EMAIL = "benoats@googlemail.com"
-ALLOWED_FLOW_EMAILS = {REQUIRED_FLOW_EMAIL, "benoats@gmail.com"}
-FORBIDDEN_FLOW_EMAIL = "benoats86@gmail.com"
+REQUIRED_FLOW_EMAIL = "81a01c9d841483f444008cd69e98b26019e032ed75b5e33e17409a76c6525ce9"
+ALLOWED_FLOW_EMAILS = {REQUIRED_FLOW_EMAIL, "1060171615b311ab416fccd36a51024de12b5fe8b815e6ccd3d3dde67ffad99f"}
+FORBIDDEN_FLOW_EMAIL = "93b0f97ef00986fa90ead10a83be910d43707ddc8023daa2018ed1d95cbbb9d4"
 MAX_CREATES = int(os.environ.get("HOS_V18_MAX_CREATES", "1"))
 HARVEST_WAIT_S = int(os.environ.get("HOS_FLOW_HARVEST_WAIT_S", "360"))
 PARENT_V17_SHA = "e4cc41d8cf050f6726e6b3d5cbbbff10285656c588f3a758b4a29e1ec1f998fd"
@@ -229,9 +242,9 @@ def run_edit_download(tmp: Path, project_url: str) -> bool:
 
 def assert_auth(page) -> None:
     html = page.content()
-    if FORBIDDEN_FLOW_EMAIL in html:
+    if FORBIDDEN_FLOW_EMAIL in _blob_account_sha256s(html):
         raise SystemExit(f"STOP: wrong Flow account {FORBIDDEN_FLOW_EMAIL}")
-    ok = any(e in html for e in ALLOWED_FLOW_EMAILS)
+    ok = any(e in _blob_account_sha256s(html) for e in ALLOWED_FLOW_EMAILS)
     # soft: also check account menu text
     if not ok:
         print("  WARN: email not found in HTML; continuing if /u/1/ session looks live", flush=True)

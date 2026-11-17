@@ -54,7 +54,7 @@ STOP if any sha mismatches. All lava-desk remints + prior KEEP hold are filled. 
 
 - **UNLOCKED** — plate `10` KEEP confirmed; assemble now.  
 - Create dies → STOP (no Ken Burns).  
-- Flow: `benoats@googlemail.com` ULTRA.
+- Flow: `the studio Ultra account` ULTRA.
 
 ---
 

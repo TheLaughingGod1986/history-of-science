@@ -2,7 +2,7 @@
 
 **Scope:** remint `06_explorer_leaves_gap` only → assemble `hos_002_part04_rough_v10.mp4`.  
 **Parent KEEP:** `hos_002_part04_rough_v09.mp4` sha `2981b26ae720edc3a8f5456a99fb5a3ac727bc79b850dabe5ad9cc57cf61eb61`.  
-**Flow:** `benoats@googlemail.com` on `/u/1/`.  
+**Flow:** `the studio Ultra account` on `/u/1/`.  
 **Do not declare PASS.** Scores → CoS UAT.
 
 ## Why (UAT FAIL v09)

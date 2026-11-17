@@ -8,7 +8,7 @@
 
 ## Remint attempt
 - Gemini API first: **429 RESOURCE_EXHAUSTED** (quota not reset).
-- Flow CDP (`benoats@googlemail.com`): **3 credits** — would breach ~150 buffer for even one Fast plate.
+- Flow CDP (`the studio Ultra account`): **3 credits** — would breach ~150 buffer for even one Fast plate.
 - **No remint shipped.** Cannot improve without violating the credit gate.
 
 ## Passed cut

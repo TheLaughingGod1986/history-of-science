@@ -25,7 +25,7 @@
 
 ## Remint / method trail
 
-1. Flow account **`benoats@googlemail.com`** (Ultra `/u/1/`). Credits ULTRA.
+1. Flow account **`the studio Ultra account`** (Ultra `/u/1/`). Credits ULTRA.
 2. Prompt lock: **DESK-ONLY** tight crop — cream cards, leather books, lamp, vessels. **NO WINDOW / panes / night sky / outdoor / roofs / chimneys / town.** Soft dark wood interior BG only.
 3. **No hard fills / brown panels / flat sky rectangles** used.
 4. Still-check full plate + visual review of stills.
@@ -49,7 +49,7 @@
 | reminted | `02b_cards_sixty_three` only |
 | method | Veo 3.1 Fast T2V desk-only — **no hard fill** |
 | tries | **1 accepted** (Create 1). Creates 2–3 crash-resubmits rejected |
-| Flow | `benoats@googlemail.com` |
+| Flow | `the studio Ultra account` |
 | P03 untouched | `30060612a00d628998008c9946b8e25319b56f3b9e5613b537c5d2be989bbe4e` |
 | window ~18–21 | **none readable** on accepted plate / assembled spot stills (desk + wood interior) |
 | KEEP confirm | late window · night-sky ~40 · Explorer teal ~49 · Empty Chairs · brown scrub cleared |

@@ -395,13 +395,16 @@ def load_scope(repo: Path) -> list[Row]:
     return rows
 
 
-def order_rows(rows: list[Row]) -> list[Row]:
-    """Order strictly Part 01 first (first 30s + Shorts openings), then Parts 02..06 by timeline."""
+def order_rows(rows: list[Row], *, require_part1_first: bool = True) -> list[Row]:
+    """Order a full Part-01-first plan, or validate an already ordered remainder."""
     if not rows:
         raise GuardError("cannot order empty row list")
     ordered = sorted(rows, key=lambda row: (row.part, row.t_s, row.index))
-    if ordered[0].part != 1:
+    if require_part1_first and ordered[0].part != 1:
         raise GuardError("first pass must start with Part 01")
+    # A filtered, validated plan must retain its timeline order, never be re-sorted.
+    if not require_part1_first and rows != ordered:
+        raise GuardError("out-of-order remainder")
     seen_keys: set[tuple[int, str]] = set()
     prev_key = (0, -1.0)
     for row in ordered:
@@ -442,11 +445,11 @@ def assert_batch_limits(batch: list[Row]) -> int:
     return credits
 
 
-def batch_rows(rows: list[Row]) -> list[list[Row]]:
-    """Pack ordered rows into batches of at most 5 rows and at most 1,000 credits."""
+def batch_rows(rows: list[Row], *, require_part1_first: bool = True) -> list[list[Row]]:
+    """Pack rows within both caps; only validated remainders may omit Part 01."""
     if not rows:
         return []
-    ordered = order_rows(rows)
+    ordered = order_rows(rows, require_part1_first=require_part1_first)
     batches: list[list[Row]] = []
     idx = 0
     while idx < len(ordered):
@@ -1635,7 +1638,7 @@ def next_batch(rows: list[Row], ledger: list[dict]) -> list[Row]:
     remaining = [row for row in order_rows(rows) if row.row_id not in done and row.row_id not in refused]
     if not remaining:
         return []
-    return batch_rows(remaining)[0]
+    return batch_rows(remaining, require_part1_first=False)[0]
 
 
 def execute_shared_batch(
@@ -2552,8 +2555,13 @@ def build_dry_run_report(repo: Path, *, media: Path, archive_dir: Path,
     recorded = latest_recorded_flow_balance(spend_ledger)
     balance_left = recorded["left"] if recorded else None
     liability = shared["liability"]
+    existing = shared["reservations"].get(DEFAULT_RESERVATION)
+    reservation_matches = existing == dict(cap=MAX_TOTAL_CREDITS, film=FILM_ID, active=True)
+    # Liability already includes this active reservation's remaining credits.
+    # Posted charges have left the balance; do not reserve the full cap again.
+    unreserved_cap = 0 if reservation_matches else MAX_TOTAL_CREDITS
     projected_after_013 = (
-        balance_left - liability - other - MAX_TOTAL_CREDITS if balance_left is not None else None
+        balance_left - liability - other - unreserved_cap if balance_left is not None else None
     )
     active_reservations = {
         key: {"film": val["film"], "cap": val["cap"]}
@@ -2597,9 +2605,11 @@ def build_dry_run_report(repo: Path, *, media: Path, archive_dir: Path,
             "other_reservations_arg": other,
             "floor": floor,
             "latest_recorded_flow_balance": recorded,
+            "unreserved_013_cap": unreserved_cap,
             "projected_headroom_after_013_cap": projected_after_013,
             "would_allow_reserve_at_recorded_balance": (
-                bool(not shared["pending"] and projected_after_013 is not None and projected_after_013 >= floor)
+                bool((existing is None or reservation_matches) and not shared["pending"]
+                     and projected_after_013 is not None and projected_after_013 >= floor)
             ),
         },
         "per_part": plan["per_part"],

@@ -9,7 +9,7 @@
 **Bridge in:** P03 ended on fix the weights → pattern can risk being wrong in public.  
 **Bridge out:** publish map with holes → wait/hunt → Part 05 The Guests Arrive.  
 **Export target:** `hos_002_part04_rough_v01.mp4`  
-**Flow:** `benoats@googlemail.com`. Create dies → STOP.  
+**Flow:** `the studio Ultra account`. Create dies → STOP.  
 **Scores → CoS only.** CoS owns Ben ping after UAT.
 
 ---
@@ -131,7 +131,7 @@ Standing HOS studio. Mandatory on this part and every later brief:
 4. Always-fails in every prompt: lava drip/molten bead; unfinished flat cards; mid-crown unfinished Explorer hair.
 5. After 2 same-DNA FAILs → new framing/start, not harder prompt only.
 6. One plate per FAIL cycle until that plate KEEP; then parallel remaining plates; assemble last.
-7. Auth: Mini CDP `benoats@googlemail.com` ULTRA only.
+7. Auth: Mini CDP `the studio Ultra account` ULTRA only.
 8. **Model tier:** **Veo 3.1 Quality** for fragile CLEAN LIGHT remints (lamp / flask / emissive invent). **Fast** only for low-risk motion garnish. **Seedance is not a substitute.**
 
 P04 live path: park `09b_risk_hold` CLEAN LIGHT this cycle (try13 STOP); next mint `06_explorer_leaves_gap` only — see `07_Edit-Project/PART04_NEXT_PLATE_06_EXPLORER_NO_LAMP.md`.

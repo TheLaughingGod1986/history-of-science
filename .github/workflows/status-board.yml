@@ -1,11 +1,13 @@
-# The status board (STATUS.md) must match PIPELINE.json. Rules: AGENTS.md "Status board".
+# Every film's status file must be in order, and no built page may be kept in the repo. Rules: AGENTS.md "Status board".
 name: Status board
 
 on:
   pull_request:
     paths:
-      - "00_Brand/Channel-Setup/PIPELINE.json"
+      - "02_Video-Projects/*/status.json"
+      - "00_Brand/Channel-Setup/BOARD.json"
       - "00_Brand/Channel-Setup/tools/status_board.py"
+      - "00_Brand/Channel-Setup/tools/film_status.py"
       - "STATUS.md"
       - "00_Brand/Channel-Setup/kanban/**"
       - ".github/workflows/status-board.yml"
@@ -18,5 +20,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: STATUS.md matches PIPELINE.json
+      - name: The films' status files are in order
         run: python3 00_Brand/Channel-Setup/tools/status_board.py --check
+      - name: The converter and the status tool still do what they promise
+        run: python3 -m unittest tests.test_film_status tests.test_status_board -v

@@ -1,0 +1,90 @@
+[
+  {
+    "row": "s01_0",
+    "timeline_in": 0.0,
+    "timeline_out": 1.508,
+    "source": "03_stove_to_muscle_t1.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.5
+    },
+    "video": true
+  },
+  {
+    "row": "s02_It's",
+    "timeline_in": 1.508,
+    "timeline_out": 4.431,
+    "source": "02_slow_hearts_t2.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 1.0
+    },
+    "video": true
+  },
+  {
+    "row": "s03_Each",
+    "timeline_in": 4.431,
+    "timeline_out": 8.22,
+    "source": "04_squeeze_pulse_t1.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 1.8
+    },
+    "video": true
+  },
+  {
+    "row": "s04_and",
+    "timeline_in": 8.22,
+    "timeline_out": 11.787,
+    "source": "01_pulse_wrist_t1.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.8
+    },
+    "video": true
+  },
+  {
+    "row": "s05_The",
+    "timeline_in": 11.787,
+    "timeline_out": 14.672,
+    "source": "08_your_blood_t2.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 1.2
+    },
+    "video": true
+  },
+  {
+    "row": "s06_and",
+    "timeline_in": 14.672,
+    "timeline_out": 18.319,
+    "source": "12_glowing_loop_t2.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 1.2
+    },
+    "video": true
+  },
+  {
+    "row": "s07_It",
+    "timeline_in": 18.319,
+    "timeline_out": 22.1,
+    "source": "13_one_minute_t3.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 1.0
+    },
+    "video": true
+  },
+  {
+    "row": "s08_loop",
+    "timeline_in": 22.1,
+    "timeline_out": 25.1,
+    "source": "loop_end_03_stove_to_muscle_t1.mp4",
+    "upscale": 1.0,
+    "framing": {
+      "offset": 0.5
+    },
+    "video": true
+  }
+]

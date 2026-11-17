@@ -17,7 +17,7 @@
 4. Always-fails: lava drip/molten bead; unfinished flat cards; mid-crown unfinished Explorer hair.
 5. After 2 same-DNA FAILs → new framing/start, not harder prompt only.
 6. One plate per FAIL cycle until KEEP; assemble last.
-7. Auth: Mini CDP `benoats@googlemail.com` ULTRA only.
+7. Auth: Mini CDP `the studio Ultra account` ULTRA only.
 8. **Model tier:** **Veo 3.1 Quality** for this plate (CLEAN LIGHT / lamp·flask·emissive invent class — same desk family as 11). Fast only if CoS explicitly overrides for low-risk garnish. **Seedance not a substitute.**
 
 ---

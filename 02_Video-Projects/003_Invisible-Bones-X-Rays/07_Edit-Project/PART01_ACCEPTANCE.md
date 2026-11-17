@@ -51,7 +51,7 @@ Scores → CoS. Do **not** declare Ben PASS. Do **not** ping Ben.
 1. Plate library / KEEP DNA. One plate per FAIL cycle. Assemble last.  
 2. Plate-first UAT before rough assemble.  
 3. Flow-only for late desks / Explorer / CLEAN LIGHT.  
-4. Auth Mini CDP `benoats@googlemail.com` ULTRA.  
+4. Auth Mini CDP `the studio Ultra account` ULTRA.  
 5. Veo 3.1 **Quality** for fragile CLEAN LIGHT (tube glow).  
 6. After **2 same-DNA FAILs → new framing**, not a harder prompt.  
 7. If Create dies: **STOP**. No Ken Burns fallback.  

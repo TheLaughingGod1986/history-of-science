@@ -278,3 +278,49 @@ class CommandRegressions(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+class StaleChiefReplies(unittest.TestCase):
+    def message(self, sender='codex', reply_to='10', supersedes=''):
+        return desk.parse(desk.compose(sender, 'claude', '031', 'edit', 'review',
+                                       'Outcome', [], reply_to, supersedes))
+
+    def post(self, cid, sender='grok', film='031', stage='edit', user='owner'):
+        return {'id': cid, 'user': {'login': user},
+                'body': desk.compose(sender, 'claude', film, stage, 'done', 'Decision', [])}
+
+    def test_each_chief_sender_refuses_newer_chief_post(self):
+        for sender in desk.CHIEF_DESK_IDS:
+            with self.subTest(sender=sender), self.assertRaisesRegex(ValueError, '--supersedes 20'):
+                desk.refuse_stale_reply(self.message(sender), [self.post(20)], 'owner')
+
+    def test_override_must_name_newest_even_when_snapshot_is_unsorted(self):
+        snapshot = [self.post(30, 'gemini'), self.post(20, 'claude')]
+        for supersedes in ('', '20', '31'):
+            with self.subTest(supersedes=supersedes), self.assertRaises(ValueError):
+                desk.refuse_stale_reply(self.message(supersedes=supersedes), snapshot, 'owner')
+        message = self.message(supersedes='30')
+        self.assertEqual(message['supersedes'], '30')
+        desk.refuse_stale_reply(message, snapshot, 'owner')
+
+    def test_cursor_no_reply_and_unrelated_posts_are_unchanged(self):
+        desk.refuse_stale_reply(self.message('cursor'), [self.post(20)], 'owner')
+        desk.refuse_stale_reply(self.message(reply_to=''), [self.post(20)], 'owner')
+        snapshot = [self.post(10), self.post(9), self.post(20, 'cursor'),
+                    self.post(21, film='032'), self.post(22, stage='vo'),
+                    self.post(23, user='intruder')]
+        desk.refuse_stale_reply(self.message(), snapshot, 'owner')
+
+    def test_cmd_post_refuses_before_images_or_comment_side_effects(self):
+        import types
+        from unittest.mock import patch
+        ns = types.SimpleNamespace(frm='codex', to='claude', film='031', stage='edit',
+                                   status='review', body='Outcome', body_file=None,
+                                   image=['unused.jpg'], reply_to=10, supersedes=None)
+        with patch.object(desk, 'repo', return_value='owner/repo'), \
+                patch.object(desk, 'desk_pr', return_value=180), \
+                patch.object(desk, 'comments', return_value=[self.post(20)]), \
+                patch.object(desk, 'push_images') as images, patch.object(desk, 'sh') as shell:
+            with self.assertRaisesRegex(SystemExit, 'Stale desk reply'):
+                desk.cmd_post(ns)
+            images.assert_not_called()
+            shell.assert_not_called()

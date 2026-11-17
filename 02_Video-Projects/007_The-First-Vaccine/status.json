@@ -1,0 +1,90 @@
+{
+  "film": "007",
+  "title": "Why Vaccines Are Named After a Cow",
+  "air": "2026-11-12",
+  "ready_by": "2026-11-08",
+  "summary": "Private `ETynHpIYLeY`, publishAt Thu 12 Nov 2026 18:00 London. End screen saved: Subscribe + 001 Germs `_C92tIJCk8A` (8:31:02-8:51:02). Title A/B set, Ineligible until public (Why Vaccines Are Named After a Cow vs How Was the First Vaccine Made?, covers THE / MILKMAID'S / SECRET and IMMUNE). Pinned comment not posted: the Studio account cannot create comments (J0960, reopen Thu 12 Nov 18:05). Cards not added. Buffer deferred.",
+  "stages": {
+    "topic": {
+      "state": "done"
+    },
+    "script": {
+      "state": "done",
+      "note": "v01, 92.3"
+    },
+    "facts": {
+      "state": "done"
+    },
+    "package": {
+      "state": "done"
+    },
+    "vo": {
+      "state": "done",
+      "note": "about 8.4 min; Part 01 v03 with the shut-up-house pickup"
+    },
+    "shorts_scripts": {
+      "state": "done",
+      "note": "v02 (test B): two search-titled Shorts, 9 Oct"
+    },
+    "shorts_vo": {
+      "state": "done",
+      "owner": "Cursor",
+      "note": "B v02 25.5 s + C v02 24.8 s locked 12 Oct; Chief KEEP both (desk 6096257381, VO_LOCK_CHIEF_PASS_20261012.json)"
+    },
+    "picture": {
+      "state": "done",
+      "due": "2026-11-01",
+      "note": "BOARD_V02 all 73/73 Flow rows minted on Flow and KEEP (Chief J0352, 21 Oct, HOS PR #351 merged; 2,890 cr vs 7,550 cap; live Flow 20,900 >= 3,000 buffer). Face lock P2:08_jenner_window KEEP applied to all later readable Jenner faces. 3 £0 code graphics on main (`7808f751`); 2 archive + 18 reuse (£0).",
+      "steps": [
+        73,
+        73
+      ],
+      "steps_unit": "Flow plates",
+      "owner": "Grok"
+    },
+    "edit": {
+      "state": "done",
+      "due": "2026-11-05",
+      "note": "master v04 uploaded Private as ETynHpIYLeY (J0946). sha256 c7f62adb, 531.083 s, PCM matches v03. Ben OK 25 Oct 14:25, Chief Final OK 14:30.",
+      "jobs": [
+        "J0856",
+        "J0867"
+      ],
+      "steps": [
+        5,
+        5
+      ],
+      "steps_unit": "parts joined",
+      "owner": "Grok",
+      "since": "2026-10-22",
+      "waiting": "Ben watch (HOS UAT/007_The-First-Vaccine/hos_007_master_v02.mp4) + HOS PR #355 merge",
+      "underway": false
+    },
+    "thumbnails": {
+      "state": "done",
+      "due": "2026-11-05",
+      "owner": "Chief",
+      "note": "J0959. Test set on ETynHpIYLeY from the Title and thumbnail dialog (A THE / MILKMAID'S / SECRET + Why Vaccines Are Named After a Cow, B IMMUNE + How Was the First Vaccine Made?). Studio lists both titles, status Ineligible while scheduled.",
+      "jobs": [
+        "J0946",
+        "J0959"
+      ],
+      "left": "",
+      "eta": "",
+      "waiting": "",
+      "underway": false
+    },
+    "ben_ok": {
+      "state": "done",
+      "due": "2026-11-08",
+      "note": "Ben OK'd master v04 on the Kanban 25 Oct 2026 14:25 London (HOS #180 6398845411). Chief Final OK 14:30."
+    },
+    "scheduled": {
+      "state": "done",
+      "due": "2026-11-09",
+      "note": "Private ETynHpIYLeY, publishAt Thu 12 Nov 2026 18:00 London. End screen and Test & Compare saved (J0959). Pinned comment waits on J0960 until the video is public."
+    }
+  },
+  "claims": [],
+  "next": ""
+}

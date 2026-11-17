@@ -13,7 +13,7 @@
 | Reminted | `06_explorer_leaves_gap` only → `raw/v09_fast/06_explorer_leaves_gap_v09.mp4` |
 | Plate 06 sha256 | `1550c8a0d3d6e79f49c96c944ded53af31c8161145097633000b4b49ae304c74` |
 | Parent v08 sha | `8cafb379af976897d6cee46484439b1ecbda56f8a42760327a96d1744d614a83` (KEEP) |
-| Flow account | `benoats@googlemail.com` |
+| Flow account | `the studio Ultra account` |
 | Flow project (land) | `3925c89a-578e-44c0-97e9-4678e0edffbe` / edit `8dc4fc22-…` |
 | iCloud | `HOS UAT/hos_002_part04_rough_v09.mp4` |
 

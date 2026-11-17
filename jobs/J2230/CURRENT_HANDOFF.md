@@ -1,81 +1,49 @@
-# J2230 — 6 Nov 2026, Codex worker continuation
+# J2230 — Current Handoff (Updated 15 Nov 2026, Elected Acting-Chief Ruling on v04/v05)
 
-**Incomplete, retain step 3/4. No final cut, KEEP, new Ben-watch card, scheduling, upload or spend.**
+**Status: Reopened for `cursor` (`cursor-grok-4-7`, `kind: assembly`) by elected Acting Chief `gemini` (`2026-11-15T10:22Z`). £0 / 0 credits spent. Three of four cuts (`s06_v04`, `s07_v04`, `variolation_v05`) are APPROVED / KEEP as-is; only `eradication_v06` (`22.07 s`) remains to render (`_build_j2230_vaccine_shorts_v01.py eradication` already updated on `main`), check, copy to NAS / HOS UAT, and arm on `jobs.py awaits`.**
 
-This note supersedes the timing assumptions in the older `HANDOFF.md` and
-`VACCINE_ASSEMBLY_INPUTS_v01.json`. Older inputs and all Harvey/Willow files are untouched.
+Full audio/slot evidence: [`GEMINI_AUDIO_AND_SLOTS_2026-11-12.md`](./GEMINI_AUDIO_AND_SLOTS_2026-11-12.md).  
+Harvey `v04` & Vaccine `v05` evidence: [`HARVEY_V04_2026-11-14.md`](./HARVEY_V04_2026-11-14.md), [`VACCINE_V05_CHECKS.md`](./VACCINE_V05_CHECKS.md).  
+Full Chief review record in OWB: `jobs/reviews/J2230/REVIEW.md`.
 
-## Material timing correction
+---
 
-The old eradication MP4 does **not** contain its stated narration. Its original
-intervals used Part 05's planned start **409.59 s** from `VO_RETIME_v01.json`.
-The actual v04 cut list and master builder place Part 05 at frame 9647 / 24 =
-**401.958333 s**. The original audio word check records large insertions and
-replacements, including the body-learning section at the opening; see
-`eradication_original_mix_check_v01.json`. Do not assemble from that old MP4.
+## 1. Elected Acting-Chief Ruling (`2026-11-15`)
 
-`prepare_corrected_eradication_input.py` verifies the existing v04 master hash
-and the exact final VO stem used by the v04 builder, maps through the actual
-master offset, and creates new 16:9 reference video and separate VO inputs:
+1. **Willow `006` Pair (`ChbsigHD5_o` on Wed 18 Nov 11:30Z & `Bks_JLId1ew` on Sat 21 Nov 11:30Z):**
+   - **Counts as the two Willow Shorts for `J2230`.** Do not rebuild or duplicate Willow Shorts.
+2. **Harvey `005` Cuff (`hos_005_s06_blood_pressure_cuff_v04.mp4`) & Heart-Pump (`hos_005_s07_heart_pulse_v04.mp4`) — APPROVED / KEEP (`£0`):**
+   - **Cuff (`s06_v04`):** `/Users/benjaminoats/_desk/renders/J2230/s06_v04/hos_005_s06_blood_pressure_cuff_v04.mp4` (`sha256: 7fe460307b4723e6801a6274e3390ab41e20a324052f4f6880bd2ef6a13aef35`, `23.10 s`, `59 words`).
+     - HOS `00_Brand/Channel-Setup/tools/gate_shorts_open.py check ... --air-date 2026-11-20`: **PASS** (`dur=23.1s`, `0/24` padded at 1/s, `0/47` at 2/s, `f0diff=4.01`, `cut1=2.67s`, `vo_onset=0.06s`, `tail_gap=0.64s`, `0` warnings).
+     - `polish_gate.py`, `picture_qa.py`, `music_gate.py`, and stem `vo_check.py` / 12 Nov ear check: **PASS**.
+     - Frame-0 contact sheet (`hos_005_s06_blood_pressure_cuff_v04_open_sheet.jpg`) inspected by eye: Explorer is NOT at frame 0 (`THE CUFF` top band over the cuff on arm).
+   - **Heart-Pump (`s07_v04`):** `/Users/benjaminoats/_desk/renders/J2230/s07_v04/hos_005_s07_heart_pulse_v04.mp4` (`sha256: e94cbf4c5a548da3332aa7a29c439854e4d889eb346fe697b5c65079511c29df`, `25.10 s`, `64 words`).
+     - HOS `00_Brand/Channel-Setup/tools/gate_shorts_open.py check ... --air-date 2026-11-22`: **PASS** (`dur=25.1s`, `0/26` padded at 1/s, `0/51` at 2/s, `f0diff=3.62`, `cut1=1.53s`, `vo_onset=0.09s`, `tail_gap=0.58s`, `0` warnings).
+     - `polish_gate.py`, `picture_qa.py`, `music_gate.py`, and stem `vo_check.py` / 12 Nov ear check: **PASS** (tail ASR hallucination cleared by direct listening on 12 Nov).
+     - Frame-0 contact sheet (`hos_005_s07_heart_pulse_v04_open_sheet.jpg`) inspected by eye: Explorer is NOT at frame 0 (`YOUR PULSE` top band over the beating heart).
+3. **Vaccine `007` Variolation (`What Is Variolation?`, `hos_007_variolation_v05.mp4`) — APPROVED / KEEP (`£0`):**
+   - **File:** `/Users/benjaminoats/_desk/renders/J2230/vaccine_v05/hos_007_variolation_v05.mp4` (`sha256: c7ae95379e11a355916f2087ffb04efe81bf458069195b729ee280786b1ebbc2`, `23.33 s`, `61 words`).
+   - **Why Cursor saw a visor FAIL:** Cursor ran `orbit-with-ben`'s `00_Brand/Channel-Setup/tools/gate_shorts_open.py` (which enables `ROBOT_FRAME0_CHECK = True` for the orange Orbit robot visor) instead of `History Of Science`'s `00_Brand/Channel-Setup/tools/gate_shorts_open.py` (where `channel_profile.ROBOT_FRAME0_CHECK = False` because the Orbit heuristic misfires on HOS's warm lamp/velvet colours, and the Explorer-at-frame-0 rule is checked by eye on the contact sheet).
+   - **HOS Gate & Visual Verification:** Running HOS's own `python3 00_Brand/Channel-Setup/tools/gate_shorts_open.py check /Users/benjaminoats/_desk/renders/J2230/vaccine_v05/hos_007_variolation_v05.mp4 --air-date 2026-11-28` in the HOS checkout prints **PASS** (`dur=23.33s`, `audio=-16.9dB`, `motion=25.86`, `f0diff=6.52`, `cut1=1.8s`, `vo_onset=0.00s`, `tail_gap=0.14s`, `0/24` padded at 1/s, `0/47` at 2/s, `0` warnings). Visual inspection of `hos_007_variolation_v05_open_sheet.jpg` and `v05/variolation/picture_qa/picture_qa_review.jpg` confirms the Explorer is NOT at frame 0 (frame 0 is the silver lancet in the red velvet case with top-band hook `SMALLPOX SORE`, cutting at `1.80s` to the mother and child; `0:23` hold frame is the clean sunlit window). `vo_check.py`, `sfx_kit.py level`, `polish_gate.py`, `picture_qa.py`, and `music_gate.py` all PASS.
+4. **Vaccine `007` Eradication (`How Was Smallpox Eradicated?`) — Pause Widening Approved (`v06`, `22.07 s`, `£0`):**
+   - `v05` (`19.37 s` speech + `1.85 s` breaths = `21.23 s`) fell `0.77 s` under `22.0 s` only because Cursor kept the earlier handoff breath caps (`0.20 + 0.35 + 0.35 + 0.95 s`).
+   - Keep the exact `v05` 61-word speech slices (`[35.16, 36.45]`, `[37.42, 40.72]`, `[25.36, 34.50]`, `[70.06, 75.70]`) and widen the four pauses to:
+     - `(35.16, 36.45, 0.45)` (raw Part 05 has a `0.97 s` natural breath after `"1980,"`; `0.45 s` keeps half of it)
+     - `(37.42, 40.72, 0.55)`
+     - `(25.36, 34.50, 0.55)`
+     - `(70.06, 75.70, 1.15)`
+   - Total duration: `19.37 s` speech + `2.70 s` pauses = **`22.07 s`** (`within_22_27: true`; all internal pauses `<= 0.55 s < 1.0 s` in `vo_check.py`; tail gap `~1.31 s < 1.50 s` in `gate_shorts_open.py`).
+   - `02_Video-Projects/007_The-First-Vaccine/10_Shorts/_build_j2230_vaccine_shorts_v01.py` is already updated on `main` to build `hos_007_eradication_v06.mp4` (`22.07 s`) when run as `python3 02_Video-Projects/007_The-First-Vaccine/10_Shorts/_build_j2230_vaccine_shorts_v01.py eradication`.
 
-- `/Users/benjaminoats/_desk/renders/J2230/eradication_corrected_inputs_v02/eradication_assembly_input_v02.mp4`
-- `/Users/benjaminoats/_desk/renders/J2230/eradication_corrected_inputs_v02/eradication_vo_from_master_v02.wav`
-- Both fully decode, 22.46 s. Full source/output hashes and intervals are in
-  `ERADICATION_CORRECTED_INPUT_v02.json`. These are assembly inputs, not Shorts.
+---
 
-The original raw trim also ended at Part 05 40.30 s, inside “gone” (start 40.24,
-sentence end 40.60). New inputs preserve it through 40.72 s. The deletion flag
-disappears in both v02 checks. There is no next sentence before 41.38 s.
+## 2. Concrete Final Steps for `cursor` (Step 4 of 4)
 
-## Actual VO checks and capability hold
-
-`prepare_vaccine_stems.py` also prepares hash-verified separate raw VO inputs
-and word-start maps in `_desk/renders/J2230/vaccine_stems_v01` and `_v02`.
-These preserve the earlier proposed sentence order and have no new words.
-
-- Variolation raw stem: `vo_check.py` **PASS**, exit 0, 24.50 s, mean −22.8 dB,
-  peak −4.5 dB. Warning: “on to” / “onto” at about 0:16.70; listen. Exact output
-  is in `variolation_stem_vo_check_v01.json`. This is a VO-input check only.
-- Eradication corrected final-master VO stem: `vo_check.py` **FAIL**, exit 1,
-  22.46 s, mean −25.6 dB, peak −11.5 dB. The remaining real failure flag is
-  “had killed” / ASR “have killed” at about 0:00.98. There is also a warning at
-  about 0:07.12, “humans” / “human health workers”. Exact output is in
-  `eradication_corrected_vo_check_v02.json`. The same first failure occurs on
-  the independent hash-verified raw Part 05 extract.
-
-This session exposed command output and still-image viewing but demonstrated
-neither audio_input nor moving_video_input. ASR is evidence of a flag, not a
-listener. Do **not** rewrite the canonical text, claim this is a transcription
-error, regenerate narration, or waive the failed check. A capable listener
-must adjudicate those exact spans; if the spoken take is wrong, Chief owns
-the recovery decision under this job's existing-VO/£0 scope.
-
-## Next work
-
-1. Listen to the corrected eradication WAV at 0:00–0:03 and 0:06–0:09, and the
-   variolation WAV at 0:15–0:19. Also retain Harvey heart-pump's existing
-   extra-“it circulates” listening flag and cuff music-pace flag.
-2. Resolve both Vaccine openings before final assembly. The existing recipes
-   still open “Doctors took…” and “A disease…”. No new opening is approved here.
-   The job calls for anomaly-first openings; the earlier eradication opening
-   FIX remains. Do not silently mint a new spoken line in this £0 lift job.
-3. Build distinct final vertical edits with original moving picture, captions,
-   exact long title, full bed/SFX and four-second loop; run all current gates
-   and independent review. Existing masters contain teach labels: do not
-   unknowingly inherit extra or mistimed overlays in a Short.
-4. Hash-verify durable final copies; only reviewed finished cuts get unique
-   Play links and `jobs.py awaits`. Keep the current conditional calendar:
-   Harvey 20/23 Nov, Vaccine 25/28 Nov; Willow pair remains J2263 18/21 Nov.
-
-The current HOS registry contains Vaccine s04/s05 originals and replacements,
-not a registered eradication Short. An older scripted Short C covers the same
-subject; the latest snapshot lists only the experiment and name-origin Shorts
-for the Vaccine long. Preserve duplicate-topic review before publication.
-The long `ETynHpIYLeY` remains private for 12 Nov 18:00Z in that snapshot;
-recheck actual Public state before any scheduling. No YouTube/Buffer changes.
-
-Operationally: both pulls succeeded after the initial sandbox-only OWB pull
-was retried with authorized filesystem access. Required under-20GB offload
-was attempted; it deferred to 01:00–06:00 because ~16 GiB remained. No files
-were moved or deleted on the NAS. All extraction/check processes completed;
-no render is running. One isolated HOS worktree, branch `codex/J2230-vaccine`.
+1. Run `python3 02_Video-Projects/007_The-First-Vaccine/10_Shorts/_build_j2230_vaccine_shorts_v01.py eradication` to render `/Users/benjaminoats/_desk/renders/J2230/vaccine_v05/hos_007_eradication_v06.mp4` (`~22.07 s`, `£0`).
+2. Run HOS `python3 00_Brand/Channel-Setup/tools/gate_shorts_open.py check /Users/benjaminoats/_desk/renders/J2230/vaccine_v05/hos_007_eradication_v06.mp4 --air-date 2026-11-29` (in the HOS checkout, NOT OWB!), plus `vo_check_py312.sh`, `sfx_kit.py level`, `polish_gate.py`, and `picture_qa.py` on `eradication_v06`, and confirm all PASS with `0` warnings.
+3. Copy all four approved masters to the NAS / HOS UAT watch folder (verifying SHA-256 on both sides):
+   - `hos_005_s06_blood_pressure_cuff_v04.mp4` (`7fe460307b4723e6801a6274e3390ab41e20a324052f4f6880bd2ef6a13aef35`, Fri 20 Nov 11:30Z)
+   - `hos_005_s07_heart_pulse_v04.mp4` (`e94cbf4c5a548da3332aa7a29c439854e4d889eb346fe697b5c65079511c29df`, Sun 22 Nov 11:30Z)
+   - `hos_007_variolation_v05.mp4` (`c7ae95379e11a355916f2087ffb04efe81bf458069195b729ee280786b1ebbc2`, Sat 28 Nov 11:30Z)
+   - `hos_007_eradication_v06.mp4` (Sun 29 Nov 11:30Z)
+4. Place all four cuts on Ben's watch board using `python3 scripts/jobs.py awaits J2230 ... --agent cursor --git` (using `--add` for cuts 2–4), commit the `v06` check output in HOS, and mark `J2230` held on Ben's UAT watch.

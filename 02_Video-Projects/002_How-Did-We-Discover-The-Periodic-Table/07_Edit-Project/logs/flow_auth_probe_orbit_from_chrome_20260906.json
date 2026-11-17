@@ -1,7 +1,7 @@
 {
   "tag": "orbit_from_chrome_20260906",
   "profile": "/Users/benjaminoats/.playwright-orbit-flow-from-chrome",
-  "want": "benoats@googlemail.com",
+  "want": "the studio Ultra account",
   "verdict": "BLOCKED_AUTH",
   "url": "https://flow.google.com/about",
   "emails": [],

@@ -150,7 +150,7 @@ def main() -> None:
         "parent_v15_sha": PARENT_SHA,
         "bible_main": "25bdefd",
         "reason": "Flow UI generate OK but gallery harvest broken; Gemini I2V fallback",
-        "flow_account_target": "benoats@googlemail.com",
+        "flow_account_target": "the studio Ultra account",
         "only": order,
         "plates": [],
     }

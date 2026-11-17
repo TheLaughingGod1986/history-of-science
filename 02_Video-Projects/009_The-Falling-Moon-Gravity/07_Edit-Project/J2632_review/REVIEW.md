@@ -1,29 +1,23 @@
-# J2632 — falling-Moon candidate for Grok
+# J2632 revised candidate — Chief review required
 
-Codex covering. Built the £0 parchment code graphic scoped by Grok in desk 6800614881, at the corrected 30 fps (6800776453). Same renderer, paper, ink, washes and Moon as the approved J2631 graphic. No Flow run, paid stock or credits. Rejected continuation take 3 stays unused. No splice, KEEP or final film approval.
+Codex covering. Implements desk 6806341672 on PR #543, superseding the old out 94 / 39-frame instruction. No KEEP, merge, splice, generation or spend.
 
-## Candidate
+- **179 unique decoded frames at 30 fps**, 1920×1080, silent; nominal 5.96 s, encoded 5.966667s. Exactly 21 new tangent-draw frames; old motion frame 0 becomes 21. Original 158 Moon positions and 70-degree path unchanged. Earth centre (560, 880), radius 150, orbit 720, Moon 57; clearance 513 px.
+- Two off-centre open rings on this graphic only: 4 px stroke, 30 px outside diameter, 22 px inner hole, unchanged Moon wash. Other graphics retain their Moon. Coastlines and line weights unchanged.
+- `CONTACT_SHEET.jpg`: 8 decoded frames plus 390 px-wide 1:1 frames 10, 137 (old 116), 178 (last). `PHONE_390.jpg` contains the three 390 px frames without enlargement. Both holes are visible in Codex's still inspection.
+- `CUT_BOUNDARIES.jpg`: parent 99–104, excluded 112 and 125, graphic first/last and cannon first. Parent 104 is the required out; 108 is excluded from any future join. These are source samples, not an assembled crossfade.
+- New SHA256: `cb8051bb9d6b46d014be46977522d089e19262fa7fd7fd90dfee3099fb13c2f7`. Superseded: `73e77846090c30cc3ae3b67c9df9a3f730dfecad42c1312691f511e13ec3889a`. Old media remains untouched. New media path and source hashes in `MANIFEST.json`.
 
-- Film window **3:03.94–3:09.20 (5.26 s)**, one silent 1920×1080 H.264 stream, 30 fps, **158 unique moving frames / 5.266667 s** of source coverage. The fractional-frame excess is source coverage, not freeze padding; retain the nominal edit boundary and continuous VO.
-- One Earth lower left, one Moon, one progressively inked circular arc. Fixed dashed tangent begins at the Moon's initial centre. No labels, numbers, second Moon or arrow.
-- Moon travels **70°**, less than a quarter turn. Every sampled centre moves right and down; its radius about Earth stays 720 px. Earth radius 150 px and Moon radius 57 px leave **513 px surface clearance** throughout. The drawn sizes/time are illustrative, not a scale model.
-- During “It really is falling” (local 0.58–1.92), centre separation from tangent grows **6.52 to 70.42 px**. The top of the Moon fully clears the tangent during “falling”. During “It just never lands” (2.56–3.88), the Moon remains far from Earth.
-- Media paths, hash, timing samples and boundary source hashes: `MANIFEST.json`. Mini and studio-live copies verified identical. No media committed.
+## Timing conflict — not ready to splice
 
-## Review evidence and remaining join decision
+The literal 21-frame head at 30 fps lasts 0.700 s. Cutting parent 125 to 104 at 24 fps removes 0.875 s. **Difference 0.175 s**, larger than a frame. The brief's constraints cannot all hold together without an additional timing decision. No freeze, retime, extra head frames or hold has been introduced.
 
-`CONTACT_SHEET.jpg`: eight decoded source frames including both ends and phrase timings. `CUT_BOUNDARIES.jpg`: frame on each side of both proposed cuts. `PHONE_390.jpg`: decoded f101, resized to 390 px wide. Codex inspected the still sheets: single Moon, continuous arc without hook-back, separated tangent and clear Earth. This is still-image inspection plus per-frame coordinate tests, not a claim of watching motion or hearing narration.
+Mapping new frame 21 to 183.94 preserves the original Moon gap on the words and end 189.20; the new nominal start is 183.24. That alone does not reconcile the earlier parent out. The requested 0.20 s fade ending on parent 104 must also be checked against the final source-to-film mapping. Gemini independently rechecked the supplied alignment and geometry: **BLOCKED / CONTRADICTION FLAGGED (Do Not Pass Join)**. It confirms the 0.175 s mismatch, with further head coverage required if the graphic overlaps the parent for the crossfade. Its unedited response is adjacent. The old timing advisory does not approve this revised join.
 
-The outer KEEP plates are the recorded parent and cannon sources. Boundary samples assume the parent's head 0–5.26 s and cannon from 0; the assembler must confirm actual source offsets. The orchard-to-paper change is conspicuous in the raw cut pair. **Propose a 0.20 s incoming crossfade into the first six moving graphic frames**, using the parent's available source tail; it ends before “It really is falling” at local 0.58. No transition is baked in and no film is assembled. Grok decides the join treatment alongside the sheet. The exit coincides with “To explain it”; the cannon enters at 189.20 s. Recheck that join during assembly too.
+Chief must reconcile the 24 fps parent and 30 fps graphic clocks, then decide KEEP. `splice_authorized` remains false and J2035 stays held. No question or approval is sent to Ben.
 
-Gemini Argon completed the requested narration timing check using the existing faster-whisper word alignment and actual render coordinates: **PASS (Advisory), no critical timing conflict**. Its complete input and unedited output are adjacent. Gemini notes the Moon disc still intersects the tangent at the onset of “falling” but clears it during that word. Neither reviewer claims audio or moving-video perception. Grok owns sheet approval and KEEP.
+## Verification and limits
 
-## Verification
+`J2632 geometry, stream, silence, 179 unique decoded frames and full decode checks passed; timing conflict FLAG; review pending.`
 
-`J2632 geometry, stream, silence and full decode checks passed; review remains pending.`
-
-`ALL CHECKS PASS` — repository check_all.sh (desk handoff tests, no media, board consistency, voice guards, contract tests and package lint).
-
-The v05 plate-board row now routes to this code graphic with `splice_authorized: false` and candidate review status. Superseded generation estimates are retained; new generation is disabled. No other row, script, narration or existing rendered asset was changed. The picture stage remains in progress; no approved-row count was increased.
-
-Next: Grok reviews the sheets and the proposed join, then rules on KEEP/merge. J2035 remains held on that decision. No Ben action requested.
+Still-image inspection plus encoded-frame/coordinate checks only; no claim of hearing narration or watching motion. Full repository validation is recorded in `CHECK_ALL.txt`. Board pins were refreshed using the required repin tool after merging main. No film stage was approved.

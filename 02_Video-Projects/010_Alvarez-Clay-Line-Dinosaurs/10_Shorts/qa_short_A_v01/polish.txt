@@ -1,0 +1,9 @@
+s01     1.4s P01_01_clay_line_t1.mp4      ok
+ s02     4.5s P02_01_walter_hammer_t1.mp4  ok
+ s03     7.9s P02_03_tiny_shells_t1.mp4    ok
+ s04    11.4s P02_05_almost_none_t2.mp4    WARN low detail: edge density 0.0467 < film p5 0.0514
+ s05    14.8s P03_08_asaro_michel_t1.mp4   ok
+ s06    17.8s code_graphic_010_short_A_s06 ok
+ s07    20.8s P04_06_dust_veil_t2.mp4      ok
+ s08    22.8s loop_P01_01_clay_line_t1.mp4 ok
+polish gate PASS: 0 of 8 rows failed, 1 to look at -> /Volumes/MiniWork/scratch/J2172-hos-wt/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/10_Shorts/qa_short_A_v01/polish_gate.json

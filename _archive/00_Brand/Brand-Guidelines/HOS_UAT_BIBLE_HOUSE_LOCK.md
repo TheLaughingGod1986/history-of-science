@@ -104,7 +104,7 @@ Canonical character / style: `.cursor/rules/hos-explorer-character.mdc` · `01_C
 | Lock | Relationship |
 |---|---|
 | `HOS_HOUSE_VO_AND_TEACH_LOCK.md` | VO/teach = clearer scripts + picture-with-beat + teach why. This bible’s **VO visual explainer** is the standing UAT score for the picture-with-beat half. Do not weaken VO/teach. |
-| `HOS_STUDIO_PLATE_LIBRARY_LOCK.md` | Studio **process**: KEEP DNA plate library · continuous-playback plate UAT before assemble · Flow-only on Empty Chairs / late desks / Explorer · hard lava / flat-card / mid-crown fails in prompt · stop same-DNA after 2 FAILs · Mini CDP `benoats@googlemail.com` ULTRA · **Veo 3.1 Quality** for fragile CLEAN LIGHT (not Fast; Seedance not substitute — Ben LOCK 10 Sep 2026). This bible stays the ALWAYS picture bar; plate-library does not replace it. |
+| `HOS_STUDIO_PLATE_LIBRARY_LOCK.md` | Studio **process**: KEEP DNA plate library · continuous-playback plate UAT before assemble · Flow-only on Empty Chairs / late desks / Explorer · hard lava / flat-card / mid-crown fails in prompt · stop same-DNA after 2 FAILs · Mini CDP `the studio Ultra account` ULTRA · **Veo 3.1 Quality** for fragile CLEAN LIGHT (not Fast; Seedance not substitute — Ben LOCK 10 Sep 2026). This bible stays the ALWAYS picture bar; plate-library does not replace it. |
 | Explorer / Part 01 style / microbe locks | **Consistency** + **Explorer round glasses** + **Explorer face/hair** + **finished 3D cartoon quality** score those house rules on every cut. Do not weaken them. |
 | Film-specific lessons (e.g. `PART03_LESSONS.md`) | Extra locks for that minute still apply; these nine ALWAYS checks still run on top. |
 

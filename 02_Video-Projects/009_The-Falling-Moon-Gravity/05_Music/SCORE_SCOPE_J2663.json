@@ -1,0 +1,42 @@
+{
+  "status": "approved_scope_only_no_audio_generated",
+  "approved_by": "codex (elected HOS acting Chief)",
+  "job": "J2663",
+  "film": "HOS:009",
+  "tool": "04_Audio/tools/generate_music_bed.py via el_client/el_guard",
+  "model_id": "music_v2",
+  "force_instrumental": true,
+  "prompt": "Original instrumental underscore exclusively for HOS 009 The Falling Moon, the story of Newton discovering that an apple and the Moon obey one pull. Period-coloured chamber sound, warm low bowed strings, soft viol drone, sparse plucked strings; leave generous space for British narration. Wonder in the moonlit fields and the solitary Woolsthorpe garden, then quiet intellectual delight as a cannon trajectory becomes an orbit and a careful sum becomes proof.\nPace: 60-72 BPM; wonder is spacious and sustained, teach has a gentle 68-72 BPM harpsichord arpeggio with no drum beat.\nNOT any earlier HOS or Orbit bed, jupiter-music.mp3, generic cosmic shimmer/piano space-documentary music, a borrowed melody, heroic trailer brass, horror, plague melodrama, loud risers, vocals, lyrics, pop drums, comedy stings or EDM. Do not imitate a named composer or recording.",
+  "runtime_s": 518.4,
+  "timing_source": "07_Edit-Project/VO_RETIME_v01.json",
+  "max_requests": 2,
+  "max_generated_seconds": 540,
+  "credit_cap": 30000,
+  "cash_cap_gbp": 0,
+  "takes_per_cue": 1,
+  "cues": [
+    {
+      "id": "wonder",
+      "length_ms": 180000,
+      "film_start_s": 0,
+      "film_end_s": 178.28,
+      "direction": "Moon question and apple/plague-year story: warm viol drone, sparse plucks, curious rather than ominous."
+    },
+    {
+      "id": "teach",
+      "length_ms": 360000,
+      "film_start_s": 175.28,
+      "film_end_s": 518.4,
+      "direction": "Cannon and Moon test: light harpsichord arpeggio, soft low strings. At part 5 thin the pulse to a warm sense of discovery; no silent break."
+    }
+  ],
+  "crossfade": {
+    "start_s": 175.28,
+    "end_s": 178.28,
+    "duration_s": 3,
+    "chapter_card_s": 176.78,
+    "curve": "equal_power"
+  },
+  "pre_spend": "Verify live subscription balance, music-duration tariff, pending charges and overage disabled. Worst-case aggregate charge must be <= min(30000, live remaining minus pending). Current guard counts prompt characters, not music duration: not sufficient proof. Unknown price or billing mode means no POST; scope/guard correction goes to Chief, no purchase. Hold one recorder lock across preflight and the two requests; no automatic retries. Read balance after each request.",
+  "acceptance": "Own 05_Music files plus generator plans and joined-bed plan; no loops, pad silence or borrowed bed; full actual master runtime including end card; music_gate PASS including earlier beds on NAS and both channels; ear review by demonstrated audio_input reviewer before approved handoff. Keep VO/music/SFX separate; bed parity and SFX level rules apply. No gate waivers."
+}

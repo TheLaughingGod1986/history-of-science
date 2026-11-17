@@ -38,11 +38,10 @@ function formatThursdayDate(date: Date): string {
 }
 
 /** Prefer next upcoming Thursday; else the latest dated film. Skip private cuts (e.g. last-star v09). */
-function pickThisThursdayFilm(videos: FilmRow[]): FilmRow | null {
+function pickThisThursdayFilm(videos: FilmRow[], now: number): FilmRow | null {
   if (!videos.length) return null;
   const eligible = videos.filter((v) => !excludeFromNextThursdayHero(v));
   if (!eligible.length) return null;
-  const now = Date.now();
   const dated = eligible.filter((v) => v.publicationDate);
   const upcoming = dated
     .filter((v) => v.publicationDate!.getTime() >= now)
@@ -72,7 +71,7 @@ function publicThumbSrc(thumbnailPath: string | null): string | null {
   return null;
 }
 
-export default async function VideosPage() {
+async function getVideos() {
   const [videos, canWrite] = await Promise.all([
     prisma.longFormVideo.findMany({
       orderBy: { publicationDate: "desc" },
@@ -81,10 +80,16 @@ export default async function VideosPage() {
     isOperatorAuthenticated(),
   ]);
 
-  const thisFilm = pickThisThursdayFilm(videos);
-  const catalogue = thisFilm ? videos.filter((v) => v.id !== thisFilm.id) : videos;
+  const now = Date.now();
+  const thisFilm = pickThisThursdayFilm(videos, now);
   const thisIsUpcoming =
-    thisFilm?.publicationDate != null && thisFilm.publicationDate.getTime() >= Date.now();
+    thisFilm?.publicationDate != null && thisFilm.publicationDate.getTime() >= now;
+  return { videos, canWrite, thisFilm, thisIsUpcoming };
+}
+
+export default async function VideosPage() {
+  const { videos, canWrite, thisFilm, thisIsUpcoming } = await getVideos();
+  const catalogue = thisFilm ? videos.filter((v) => v.id !== thisFilm.id) : videos;
   const thisNamed = thisFilm ? namedInFilmBookLine(thisFilm) : null;
   const presentYt = new Set(
     videos.map((v) => v.youtubeVideoId?.trim()).filter((id): id is string => Boolean(id)),

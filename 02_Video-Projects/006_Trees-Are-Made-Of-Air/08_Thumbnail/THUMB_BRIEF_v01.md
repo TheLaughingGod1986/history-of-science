@@ -44,7 +44,7 @@
 
 ### Live Balance Reading (`2026-10-23T01:57Z`)
 
-- **Flow (`benoats@googlemail.com`, CDP `:9222`):** **20,830 credits** (`ai_spend_daily.py --dry-run --pools flow`, `0` credits spent in Step 1).
+- **Flow (`the studio Ultra account`, CDP `:9222`):** **20,830 credits** (`ai_spend_daily.py --dry-run --pools flow`, `0` credits spent in Step 1).
 - **Flow unit rates:**
   - **Flow Image (`Nano Banana 2`, 16:9 landscape still via `_flow_still_v01.py`):** **0 Flow credits / still** on Google AI Ultra (primary route per `AGENTS.md` §Who does what row `image`, verified at `0 cr` in `J0140` and `J0279`).
   - **Flow Fast / Paid Still Reserve (`Veo 3.1 Fast` 16:9 hero plate or paid still tier, if used to pull a hero still):** **10 Flow credits / take**.

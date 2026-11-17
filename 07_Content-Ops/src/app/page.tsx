@@ -85,6 +85,10 @@ async function getOverview() {
     getHomeMonetisationCard(),
   ]);
 
+  // Snapshot time alongside the fetched data, before rendering the page.
+  const checkedAt = Date.now();
+  const workerOnline = heartbeat && checkedAt - heartbeat.lastHeartbeatAt.getTime() < 30_000;
+
   type NextAction = { label: string; href?: string };
   const nextActions: NextAction[] = [];
 
@@ -133,7 +137,7 @@ async function getOverview() {
         href: "/affiliate",
       });
     }
-    if (!heartbeat || Date.now() - heartbeat.lastHeartbeatAt.getTime() > 30_000) {
+    if (!heartbeat || checkedAt - heartbeat.lastHeartbeatAt.getTime() > 30_000) {
       nextActions.push({
         label: "Start the publishing worker (`npm run worker`) for scheduled API posts.",
       });
@@ -147,6 +151,7 @@ async function getOverview() {
   }
 
   return {
+    workerOnline,
     filmCount,
     longInProduction,
     longScheduled,
@@ -183,8 +188,7 @@ function StatCard({ label, value, hint }: { label: string; value: string | numbe
 
 export default async function HomePage() {
   const data = await getOverview();
-  const workerOnline =
-    data.heartbeat && Date.now() - data.heartbeat.lastHeartbeatAt.getTime() < 30_000;
+  const { workerOnline } = data;
 
   return (
     <div className="space-y-8">

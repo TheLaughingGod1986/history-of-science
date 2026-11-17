@@ -1,12 +1,12 @@
 {
-  "want_email": "benoats@googlemail.com",
-  "forbidden_email": "benoats86@gmail.com",
+  "want_email": "the studio Ultra account",
+  "forbidden_email": "the studio Ultra account",
   "profile": "/Users/benjaminoats/.playwright-hos-flow-profile",
   "url": "https://flow.google.com/",
   "emails_seen": [
-    "benoats86@gmail.com"
+    "the studio Ultra account"
   ],
-  "active_email": "benoats86@gmail.com",
+  "active_email": "the studio Ultra account",
   "credits_text": "0 Google Flow credits",
   "page_text_hits": [
     "0 Google Flow credits",
@@ -14,16 +14,16 @@
   ],
   "account_button_labels": [
     "Account details",
-    "Google Account: Benjamin Oats  \n(benoats86@gmail.com)",
-    "Google AccountBenjamin Oatsbenoats86@gmail.com",
-    "Google AccountBenjamin Oatsbenoats86@gmail.com",
+    "Google Account: Benjamin Oats  \n(the studio Ultra account)",
+    "Google AccountBenjamin Oatsthe studio Ultra account",
+    "Google AccountBenjamin Oatsthe studio Ultra account",
     "Google Account",
-    "benoats86@gmail.com",
+    "the studio Ultra account",
     "Account settings",
     "Close account panel",
-    "Benjamin Oats\nbenoats86@gmail.com\nSwitch account",
-    "Benjamin Oats\nbenoats86@gmail.com",
-    "benoats86@gmail.com",
+    "Benjamin Oats\nthe studio Ultra account\nSwitch account",
+    "Benjamin Oats\nthe studio Ultra account",
+    "the studio Ultra account",
     "Switch account",
     "movie_filter_auto\n0 Google Flow credits\nCredits refresh daily\nUpgrade",
     "Credits display",
@@ -36,5 +36,5 @@
   ],
   "verdict": "BLOCKED_AUTH",
   "probed_at": "2026-09-06T23:03:26+0100",
-  "reason": "Still on benoats86@gmail.com; need benoats@googlemail.com"
+  "reason": "Still on the studio Ultra account; need the studio Ultra account"
 }

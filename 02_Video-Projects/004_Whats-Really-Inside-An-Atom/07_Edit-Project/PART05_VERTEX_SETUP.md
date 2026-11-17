@@ -1,6 +1,6 @@
 # Part 05 — Vertex AI Veo setup (Ben Free Trial test)
 
-**Status (29 Sep 2026 morning):** ADC authorized as `benoats@googlemail.com`. Vertex ONE Fast test **KEEP**.
+**Status (29 Sep 2026 morning):** ADC authorized as `the studio Ultra account`. Vertex ONE Fast test **KEEP**.
 
 ## Project
 - **Project id:** `gen-lang-client-0538779324`

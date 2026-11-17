@@ -1,0 +1,512 @@
+{
+  "film": "HOS:010",
+  "job": "J2172",
+  "short_id": "short_C",
+  "stem": "hos_010_short_C_v01",
+  "youtube_title": "Are Birds Really Dinosaurs?",
+  "promoted_long_title": "What Killed the Dinosaurs Was Hidden in a Line of Clay",
+  "conditional_target_air_date": "2026-12-07",
+  "long_must_be_public_first": true,
+  "resolution": "936x1664",
+  "fps": 30,
+  "duration_s": 23.6,
+  "hook_caption": {
+    "text": "STILL HERE",
+    "start_s": 0.0,
+    "end_s": 1.88
+  },
+  "vo_onset_s": 0.1,
+  "hook_sentence_end_s": 1.88,
+  "first_cut_s": 1.88,
+  "second_cut_s": 5.2,
+  "last_word_end_s": 22.5,
+  "loop_tail_s": 1.0,
+  "payoff_word": "Every",
+  "payoff_start_s": 16.56,
+  "payoff_frac": 0.7029,
+  "meta_promise": false,
+  "end_card": null,
+  "full_film_banner": false,
+  "spoken": "Not all the dinosaurs died. When the asteroid struck sixty-six million years ago, a few small feathered ones survived. Their descendants are all around you now: the pigeon on the pavement, the robin in the garden, the gull at the seaside. Every bird you have ever seen is a living dinosaur. Look up. They never really left",
+  "captions": [
+    {
+      "word": "Not",
+      "start": 0.1,
+      "end": 0.28
+    },
+    {
+      "word": "all",
+      "start": 0.36,
+      "end": 0.56
+    },
+    {
+      "word": "the",
+      "start": 0.6,
+      "end": 0.7
+    },
+    {
+      "word": "dinosaurs",
+      "start": 0.72,
+      "end": 1.28
+    },
+    {
+      "word": "died.",
+      "start": 1.36,
+      "end": 1.78
+    },
+    {
+      "word": "When",
+      "start": 2.32,
+      "end": 2.42
+    },
+    {
+      "word": "the",
+      "start": 2.46,
+      "end": 2.52
+    },
+    {
+      "word": "asteroid",
+      "start": 2.58,
+      "end": 2.98
+    },
+    {
+      "word": "struck",
+      "start": 3.08,
+      "end": 3.44
+    },
+    {
+      "word": "sixty-six",
+      "start": 3.58,
+      "end": 4.2
+    },
+    {
+      "word": "million",
+      "start": 4.26,
+      "end": 4.56
+    },
+    {
+      "word": "years",
+      "start": 4.62,
+      "end": 4.84
+    },
+    {
+      "word": "ago,",
+      "start": 4.88,
+      "end": 5.2
+    },
+    {
+      "word": "a",
+      "start": 5.64,
+      "end": 5.72
+    },
+    {
+      "word": "few",
+      "start": 5.76,
+      "end": 6.0
+    },
+    {
+      "word": "small",
+      "start": 6.14,
+      "end": 6.42
+    },
+    {
+      "word": "feathered",
+      "start": 6.56,
+      "end": 6.88
+    },
+    {
+      "word": "ones",
+      "start": 6.96,
+      "end": 7.24
+    },
+    {
+      "word": "survived.",
+      "start": 7.28,
+      "end": 7.92
+    },
+    {
+      "word": "Their",
+      "start": 8.5,
+      "end": 8.64
+    },
+    {
+      "word": "descendants",
+      "start": 8.68,
+      "end": 9.24
+    },
+    {
+      "word": "are",
+      "start": 9.26,
+      "end": 9.36
+    },
+    {
+      "word": "all",
+      "start": 9.4,
+      "end": 9.5
+    },
+    {
+      "word": "around",
+      "start": 9.56,
+      "end": 9.88
+    },
+    {
+      "word": "you",
+      "start": 9.92,
+      "end": 10.02
+    },
+    {
+      "word": "now:",
+      "start": 10.08,
+      "end": 10.4
+    },
+    {
+      "word": "the",
+      "start": 10.9,
+      "end": 10.98
+    },
+    {
+      "word": "pigeon",
+      "start": 11.04,
+      "end": 11.38
+    },
+    {
+      "word": "on",
+      "start": 11.44,
+      "end": 11.52
+    },
+    {
+      "word": "the",
+      "start": 11.56,
+      "end": 11.62
+    },
+    {
+      "word": "pavement,",
+      "start": 11.68,
+      "end": 12.16
+    },
+    {
+      "word": "the",
+      "start": 12.6,
+      "end": 12.7
+    },
+    {
+      "word": "robin",
+      "start": 12.74,
+      "end": 13.06
+    },
+    {
+      "word": "in",
+      "start": 13.1,
+      "end": 13.16
+    },
+    {
+      "word": "the",
+      "start": 13.2,
+      "end": 13.28
+    },
+    {
+      "word": "garden,",
+      "start": 13.32,
+      "end": 13.8
+    },
+    {
+      "word": "the",
+      "start": 14.22,
+      "end": 14.34
+    },
+    {
+      "word": "gull",
+      "start": 14.38,
+      "end": 14.7
+    },
+    {
+      "word": "at",
+      "start": 14.88,
+      "end": 14.98
+    },
+    {
+      "word": "the",
+      "start": 15.02,
+      "end": 15.1
+    },
+    {
+      "word": "seaside.",
+      "start": 15.14,
+      "end": 15.78
+    },
+    {
+      "word": "Every",
+      "start": 16.56,
+      "end": 16.84
+    },
+    {
+      "word": "bird",
+      "start": 16.94,
+      "end": 17.28
+    },
+    {
+      "word": "you",
+      "start": 17.34,
+      "end": 17.4
+    },
+    {
+      "word": "have",
+      "start": 17.42,
+      "end": 17.52
+    },
+    {
+      "word": "ever",
+      "start": 17.56,
+      "end": 17.76
+    },
+    {
+      "word": "seen",
+      "start": 17.82,
+      "end": 18.1
+    },
+    {
+      "word": "is",
+      "start": 18.14,
+      "end": 18.22
+    },
+    {
+      "word": "a",
+      "start": 18.28,
+      "end": 18.32
+    },
+    {
+      "word": "living",
+      "start": 18.38,
+      "end": 18.64
+    },
+    {
+      "word": "dinosaur.",
+      "start": 18.72,
+      "end": 19.38
+    },
+    {
+      "word": "Look",
+      "start": 19.98,
+      "end": 20.14
+    },
+    {
+      "word": "up.",
+      "start": 20.26,
+      "end": 20.5
+    },
+    {
+      "word": "They",
+      "start": 21.18,
+      "end": 21.32
+    },
+    {
+      "word": "never",
+      "start": 21.38,
+      "end": 21.6
+    },
+    {
+      "word": "really",
+      "start": 21.72,
+      "end": 22.02
+    },
+    {
+      "word": "left",
+      "start": 22.08,
+      "end": 22.5
+    }
+  ],
+  "audio": {
+    "vo_source_mp3_sha256": "20432ecd645b28e9fdc051578a284cb2845bd09f3040170b192089b256055b87",
+    "vo_source_wav_sha256": "ca814ab01ad72fde015b4e157638b5e346d592e5df54cefe97e38969340fcb0c",
+    "level": {
+      "lufs": -14.1,
+      "true_peak_dbtp": -1.8,
+      "loudnorm_I": -12.0
+    },
+    "sfx_level": {
+      "exit": 0,
+      "output": "SFX level PASS: VO -20.0 LUFS, SFX -49.6 LUFS, 1 hits",
+      "bed_db": -16.5,
+      "sfx_db": -15.0
+    },
+    "stems": {
+      "vo": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/10_Shorts/J2172/short_C/stems/stem_vo.wav",
+      "bed": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/10_Shorts/J2172/short_C/stems/stem_bed.wav",
+      "sfx": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/10_Shorts/J2172/short_C/stems/stem_sfx.wav"
+    },
+    "stem_hashes": {
+      "vo": {
+        "nas_path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/10_Shorts/J2172/short_C/stems/stem_vo.wav",
+        "sha256": "b27d659f696dead3425c38bf4ea94e7fb270754f4c332c6ca15ec576e089f3f3",
+        "bytes": 4523598
+      },
+      "bed": {
+        "nas_path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/10_Shorts/J2172/short_C/stems/stem_bed.wav",
+        "sha256": "1a3e904cfb0c5686ea9dbf9b764a1441a727b71b4709fab05121b503a653a8b8",
+        "bytes": 4523598
+      },
+      "sfx": {
+        "nas_path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/10_Shorts/J2172/short_C/stems/stem_sfx.wav",
+        "sha256": "40588dcdbaa21f4b24439f0821e73eece9a038150119b67fa9474da9bd245524",
+        "bytes": 4523598
+      }
+    }
+  },
+  "cuts": [
+    {
+      "id": "S01",
+      "row_id": "P5:09_robin",
+      "t0": 0.0,
+      "t1": 1.88,
+      "hold_s": 1.88,
+      "plate": "P05_09_robin_t2.mp4",
+      "source_sha256": "172a0a9561a1c25191caf84188b3e492493b31ffd46e1fbfdffb216d911da824",
+      "producer": "gemini",
+      "in_s": 4.25,
+      "x0": 521.944,
+      "x1": 535.0,
+      "lands_on": "plate",
+      "upscale": 2.3111
+    },
+    {
+      "id": "S02",
+      "row_id": "P4:06_dust_veil",
+      "t0": 1.88,
+      "t1": 5.2,
+      "hold_s": 3.32,
+      "plate": "P04_06_dust_veil_t2.mp4",
+      "source_sha256": "1898afb6b8d89d57a818dd340b6e327733b67717b81e9581ca43ae539562e082",
+      "producer": "gemini",
+      "in_s": 1.75,
+      "x0": 540.0,
+      "x1": 540.0,
+      "lands_on": "plate",
+      "upscale": 2.3111
+    },
+    {
+      "id": "S03",
+      "row_id": "P5:11_why_survive",
+      "t0": 5.2,
+      "t1": 7.92,
+      "hold_s": 2.72,
+      "plate": "code_graphic_010_short_C_s03_why_survive_9x16.mp4",
+      "source_sha256": "03716128fb6792563e34c1dfdaa50e47cea1e092afdf9ba121e8537f8d48867d",
+      "producer": "gemini",
+      "in_s": 0.0,
+      "x0": null,
+      "x1": null,
+      "lands_on": "code_graphic",
+      "upscale": 1.0
+    },
+    {
+      "id": "S04",
+      "row_id": "P5:08_all_at_once",
+      "t0": 7.92,
+      "t1": 10.42,
+      "hold_s": 2.5,
+      "plate": "P05_08_all_at_once_t2.mp4",
+      "source_sha256": "ab9d8eb7690fbb0542db508b5f1cf41a39f5c45210e40d7c574c2224ee27b7aa",
+      "producer": "gemini",
+      "in_s": 1.25,
+      "x0": 380.0,
+      "x1": 380.0,
+      "lands_on": "plate",
+      "upscale": 2.3111
+    },
+    {
+      "id": "S05",
+      "row_id": "P5:09a_pigeon_pavement",
+      "t0": 10.42,
+      "t1": 13.06,
+      "hold_s": 2.64,
+      "plate": "P05_09a_pigeon_pavement_t1.mp4",
+      "source_sha256": "0a9797df0ac726b20aab4c358e498f7fdf62aa96f85f0a7238193c2db5e3b59a",
+      "producer": "gemini",
+      "in_s": 1.1,
+      "x0": 360.0,
+      "x1": 530.0,
+      "lands_on": "plate",
+      "upscale": 2.3111
+    },
+    {
+      "id": "S06",
+      "row_id": "P5:13a_gull_seaside",
+      "t0": 13.06,
+      "t1": 15.78,
+      "hold_s": 2.72,
+      "plate": "P05_13a_gull_seaside_t1.mp4",
+      "source_sha256": "893b17b8d5f3f0b9b5e245688d17145dfa3933f09e027f124acd8593de74b74a",
+      "producer": "gemini",
+      "in_s": 4.3,
+      "x0": 605.0,
+      "x1": 520.0,
+      "lands_on": "plate",
+      "upscale": 2.3111
+    },
+    {
+      "id": "S07",
+      "row_id": "P5:10_explorer_robin",
+      "t0": 15.78,
+      "t1": 19.38,
+      "hold_s": 3.6,
+      "plate": "P05_10_explorer_robin_t2.mp4",
+      "source_sha256": "fc1485661a50a4d072257f3e3b422221a2674a1ec23e9018361dfd283f666969",
+      "producer": "gemini",
+      "in_s": 2.05,
+      "x0": 375.0,
+      "x1": 410.0,
+      "lands_on": "plate",
+      "upscale": 2.3111
+    },
+    {
+      "id": "S08",
+      "row_id": "P5:12_clay_callback",
+      "t0": 19.38,
+      "t1": 22.56,
+      "hold_s": 3.18,
+      "plate": "P05_12_clay_callback_t2.mp4",
+      "source_sha256": "37cf7962a646ff073af3e7f5db74d7c565f2dd613b5cdaea33c7cd63ce2034dc",
+      "producer": "gemini",
+      "in_s": 1.05,
+      "x0": 437.0,
+      "x1": 437.0,
+      "lands_on": "plate",
+      "upscale": 2.3111
+    },
+    {
+      "id": "loop_tail",
+      "row_id": "P5:09_robin",
+      "t0": 22.56,
+      "t1": 23.56,
+      "hold_s": 1.0,
+      "plate": "P05_09_robin_t2.mp4",
+      "source_sha256": "172a0a9561a1c25191caf84188b3e492493b31ffd46e1fbfdffb216d911da824",
+      "producer": "gemini",
+      "in_s": 3.25,
+      "x0": 515.0,
+      "x1": 521.944,
+      "lands_on": "loop",
+      "upscale": 2.3111
+    }
+  ],
+  "when_card": {
+    "text": "66 MILLION YEARS AGO",
+    "size_px": 60,
+    "pct_of_band": 11.4,
+    "in_s": 2.2,
+    "out_s": 5.15
+  },
+  "nas_master_mp4": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/10_Shorts/J2172/short_C/hos_010_short_C_v01.mp4",
+  "master_sha256": "698db62789e1e6884ae15797dc51083c39bbc0ee3c0cc1ecf83f92e2e87a0359",
+  "master_bytes": 13612892,
+  "hook_metrics": {
+    "font_size": 190,
+    "cap_px": 135,
+    "cap_pct": 8.11,
+    "block_pct": [
+      5.5,
+      23.1
+    ],
+    "widest_pct": 65.0
+  }
+}

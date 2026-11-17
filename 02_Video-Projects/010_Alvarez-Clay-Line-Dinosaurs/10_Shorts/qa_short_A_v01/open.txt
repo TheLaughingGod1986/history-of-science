@@ -1,0 +1,6 @@
+PASS  hos_010_short_A_v01.mp4  dur=23.3s  audio=-17.5dB  motion=24.29  f0diff=4.2  cut1=2.83s  vo_onset=0.00s  tail_gap=1.13s  vo_src=/Volumes/MiniWork/scratch/J2172-build/short_A/hos_010_short_A_v01_vo.wav  dhash=e3ed111e732f0f0e
+   full-bleed 0.00s  fills the frame  sharp above/middle/below=None/0.752/None  detail top/centre/bottom=19.28/12.44/14.52  spread top/bottom=53.3/56.04
+   full-bleed 0.25s  fills the frame  sharp above/middle/below=None/0.744/None  detail top/centre/bottom=19.28/12.22/14.24  spread top/bottom=53.29/56.54
+   full-bleed 0.50s  fills the frame  sharp above/middle/below=None/0.741/None  detail top/centre/bottom=19.35/12.16/13.64  spread top/bottom=53.33/57.17
+   full-bleed whole Short  0/24 frames padded at one a second, 0/47 at two a second  padded stretches: none  no end card named in meta
+   sheet /Volumes/MiniWork/scratch/J2172-hos-wt/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/10_Shorts/qa_short_A_v01/sheets/hos_010_short_A_v01_open_sheet.jpg

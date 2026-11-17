@@ -157,11 +157,11 @@ def google_signup(page, context) -> bool:
 
 
 def pick_google_account(popup, main_page) -> bool:
-    """Select benoats86@gmail.com if shown."""
+    """Select the studio Ultra account if shown."""
     try:
         popup.wait_for_timeout(2000)
         # Account chooser
-        acc = popup.get_by_text(re.compile(r"benoats86@gmail\.com", re.I))
+        acc = popup.get_by_text(re.compile(r"the studio Ultra account", re.I))
         if acc.count():
             acc.first.click()
             popup.wait_for_timeout(3000)

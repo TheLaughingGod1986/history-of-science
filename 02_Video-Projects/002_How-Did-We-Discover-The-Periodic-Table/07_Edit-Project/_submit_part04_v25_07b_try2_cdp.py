@@ -24,7 +24,7 @@ PROJ = Path(__file__).resolve().parents[1]
 QA_DIR = PROJ / "07_Edit-Project/_qa_part04_v25_kill_moondesk"
 START_COUNTER = QA_DIR / "start_counter.json"
 MODEL = os.environ.get("ORBIT_FLOW_VEO_MODEL") or "Veo 3.1 - Fast"
-REQUIRED_EMAIL = "benoats@googlemail.com"
+REQUIRED_EMAIL = "81a01c9d841483f444008cd69e98b26019e032ed75b5e33e17409a76c6525ce9"
 MAX_STARTS = 3
 PLATE_LIBRARY = "4b8ed25"
 

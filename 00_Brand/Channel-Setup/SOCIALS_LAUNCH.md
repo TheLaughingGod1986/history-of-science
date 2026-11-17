@@ -2,7 +2,7 @@
 
 Prepared: **26 Aug 2026**  
 Canonical identity: `SOCIAL_IDENTITY.json` · vision: `CHANNEL_VISION.md`  
-Google login: `benoats86@gmail.com`  
+Google login: `the studio Ultra account`  
 **Never** create, brand, or OAuth against Orbit With Ben (`UC_esArsDKd3GJvOkeO0DUog` / `@orbitwithben`).
 
 Paste-ready copy lives next to this file (`channel_description.txt`, `instagram_bio.txt`, …).
@@ -37,7 +37,7 @@ Paste-ready copy lives next to this file (`channel_description.txt`, `instagram_
 
 ---
 
-## Create order (Ben, logged in as `benoats86@gmail.com`)
+## Create order (Ben, logged in as `the studio Ultra account`)
 
 Do these in this order. Fill IDs into `CHANNEL_META.json` / `SOCIAL_IDENTITY.json` as you go.
 

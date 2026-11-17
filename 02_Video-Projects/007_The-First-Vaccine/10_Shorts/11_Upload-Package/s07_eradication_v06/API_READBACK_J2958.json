@@ -1,0 +1,46 @@
+{
+  "job": "J2958",
+  "at": "2026-11-16T23:18:22.741Z",
+  "videoId": "jkUZpyO71lU",
+  "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+  "title": "How Was Smallpox Eradicated?",
+  "privacy": "private",
+  "publishAt": "2026-11-29T11:30:00Z",
+  "uploadStatus": "processed",
+  "madeForKids": false,
+  "containsSyntheticMedia": null,
+  "language": "en-GB",
+  "audioLanguage": "en-GB",
+  "categoryId": "27",
+  "tags": [
+    "8 may 1980",
+    "first vaccine",
+    "history of medicine",
+    "how was smallpox eradicated",
+    "smallpox",
+    "smallpox eradication",
+    "smallpox vaccine"
+  ],
+  "duration": "PT23S",
+  "hasCustomThumbnail": true,
+  "description": "Smallpox was eradicated by vaccination: health workers travelled to every country where it still lived and vaccinated everyone around each new case, until there was nowhere left for it to go. On the 8th of May 1980, the world's health leaders declared that smallpox was gone.\n\nFull film:\nHow Was the First Vaccine Made? (And Why It's Named After a Cow)\nhttps://www.youtube.com/watch?v=ETynHpIYLeY\n\nPictures: AI-generated 3D scenes. Facts: every claim is checked against the sources for the full film.",
+  "captionUpload": {
+    "ok": true,
+    "status": 200,
+    "id": "AUieDaZK_Mo-fGa9voY4liIZJqHs1ZKkCPGnxGvDaU0GYvHlGRSTOCW8UoIXS0ot7h8Q50krkimK4Xl71FE",
+    "language": "en-GB",
+    "trackStatus": "serving",
+    "error": null
+  },
+  "captions": [
+    {
+      "id": "AUieDaZK_Mo-fGa9voY4liIZJqHs1ZKkCPGnxGvDaU0GYvHlGRSTOCW8UoIXS0ot7h8Q50krkimK4Xl71FE",
+      "language": "en-GB",
+      "trackKind": "standard",
+      "status": "serving",
+      "isDraft": false,
+      "name": "English (United Kingdom)"
+    }
+  ],
+  "captionError": null
+}

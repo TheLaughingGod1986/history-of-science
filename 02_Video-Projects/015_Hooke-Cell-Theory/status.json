@@ -1,0 +1,47 @@
+{
+  "film": "015",
+  "title": "Cells: The Slice of Cork That Changed Biology",
+  "air": "2027-01-07",
+  "ready_by": "2027-01-03",
+  "summary": "On the next_hos waiting line after 014 (jobs/WIP.json). Draft script master v01 under ideas/015_Hooke-Cell-Theory; topic prepared, not entered into active WIP. Title from hooke_script_master_v01.md.",
+  "stages": {
+    "topic": {
+      "state": "todo"
+    },
+    "script": {
+      "state": "todo"
+    },
+    "facts": {
+      "state": "todo"
+    },
+    "package": {
+      "state": "todo"
+    },
+    "vo": {
+      "state": "todo"
+    },
+    "shorts_scripts": {
+      "state": "todo"
+    },
+    "shorts_vo": {
+      "state": "todo"
+    },
+    "picture": {
+      "state": "todo"
+    },
+    "edit": {
+      "state": "todo"
+    },
+    "thumbnails": {
+      "state": "todo"
+    },
+    "ben_ok": {
+      "state": "todo"
+    },
+    "scheduled": {
+      "state": "todo"
+    }
+  },
+  "claims": [],
+  "next": ""
+}

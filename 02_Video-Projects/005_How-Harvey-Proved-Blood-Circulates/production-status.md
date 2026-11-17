@@ -287,7 +287,7 @@ The film's VO ends at 8:21.33; with the 3–4 s end card it runs about 8:25. Fir
 
 ### Part 01 mint: STOPPED before any spend
 
-- Flow gate on the Mini (`benoats@googlemail.com`, CDP :9222): `GATE PASS account=benoats@googlemail.com credits=62`. The page shows "You're running low on Google Flow credits. Your credits will reset monthly, or top up to get more now."
+- Flow gate on the Mini (`the studio Ultra account`, CDP :9222): `GATE PASS account=the studio Ultra account credits=62`. The page shows "You're running low on Google Flow credits. Your credits will reset monthly, or top up to get more now."
 - 62 credits won't buy one Quality plate (about 100). Part 01's light plates must be Quality, and the playbook says to wait for the reset rather than drop to Fast or Ken Burns. Nothing was minted.
 - Start-frame stills (`07_Edit-Project/_gen_part01_stills_v01.py`, Gemini Flash Image) also failed: `HTTP 402 … Your prepayment credits are depleted`. No stills were made.
 - The mint is ready to run as soon as credits exist: board `mint: true`, one plate at a time from `01_pulse_wrist` until the first KEEP.
@@ -339,7 +339,7 @@ Ben, 1 Oct, in chat with Claude: "Orbit used Vertex I believe and we have credit
 
 ### Setup and credit check
 
-- **Project** `gen-lang-client-0538779324` ("History of Science"), `us-central1`, ADC as `benoats@googlemail.com` (checked by token info; gcloud CLI itself has no login). Never an Orbit project. Vertex AI API enabled; Cloud Billing API is off in the project, so the credit was read in the console.
+- **Project** `gen-lang-client-0538779324` ("History of Science"), `us-central1`, ADC as `the studio Ultra account` (checked by token info; gcloud CLI itself has no login). Never an Orbit project. Vertex AI API enabled; Cloud Billing API is off in the project, so the credit was read in the console.
 - **Credit before the mint** (Cloud Billing → Credits, billing account `0124D1-E6EFD6-40F6DA`, 1 Oct 23:05 UK): **Free Trial £209.53 remaining of £225.63** (93%, ends 11 Nov 2026). The Google Developer Program monthly credits are used (0%). Part 01 try 1 estimated $9.60, so clearly enough. Screenshot: `07_Edit-Project/_evidence/vertex_credits_2026-10-01.png` (local, gitignored).
 - **Credit after** (2 Oct ~00:45 UK): still shows £209.53; Cloud usage posts with a delay of hours. Expected after posting ≈ £190 (the $25.58 below).
 - **Models:** Quality → `veo-3.1-generate-001`, Fast → `veo-3.1-fast-generate-001`, image-to-video from the start frame, 8 s, 1080p, `generate_audio=False` (video-only SKU, $0.20/s Quality, $0.10/s Fast at list), audio stream removed again on download. No Quality plate was dropped to Fast.

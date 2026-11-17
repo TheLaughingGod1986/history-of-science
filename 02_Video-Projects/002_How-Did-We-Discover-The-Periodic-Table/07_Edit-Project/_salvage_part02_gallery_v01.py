@@ -25,7 +25,7 @@ DEFAULT_PROJECT = os.environ.get(
 
 def main() -> None:
     RAW.mkdir(parents=True, exist_ok=True)
-    os.environ.setdefault("ORBIT_FLOW_ACCOUNT", "benoats@googlemail.com")
+    os.environ.setdefault("ORBIT_FLOW_ACCOUNT", "81a01c9d841483f444008cd69e98b26019e032ed75b5e33e17409a76c6525ce9")
     os.environ.setdefault("ORBIT_FLOW_HOME", "https://flow.google.com/u/1/")
     profile = flow.profile_path(
         Path(

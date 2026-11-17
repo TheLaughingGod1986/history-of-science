@@ -1,0 +1,31 @@
+{
+  "HOS-008": {
+    "film": "HOS:008",
+    "version": "v03",
+    "verdict": "change",
+    "fixes": [
+      {
+        "t": "0:51",
+        "text": "still have hair flying out the tube, this needs rebuilt"
+      },
+      {
+        "t": "",
+        "text": "Also the bottom text needs a background colour it\u2019s hard to read over a moving video"
+      },
+      {
+        "t": "2:18",
+        "text": "the jar flips upside down like magic"
+      },
+      {
+        "t": "3:13",
+        "text": "strange behaviour as paper seems to roll out the globe"
+      },
+      {
+        "t": "7:59",
+        "text": "the rods on the church\u2019s seem to fall right"
+      }
+    ],
+    "note": "0:51 still have hair flying out the tube, this needs rebuilt\nAlso the bottom text needs a background colour it\u2019s hard to read over a moving video \n2:18 the jar flips upside down like magic \n3:13 strange behaviour as paper seems to roll out the globe \n7:59 the rods on the church\u2019s seem to fall right",
+    "at": "2026-11-05T12:47:51.431Z"
+  }
+}

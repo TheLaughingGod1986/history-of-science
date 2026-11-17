@@ -1,0 +1,101 @@
+[
+  {
+    "row": "s01",
+    "timeline_in": 0.0,
+    "timeline_out": 1.88,
+    "source": "P05_09_robin_t2.mp4",
+    "upscale": 2.3111,
+    "video": true,
+    "framing": {
+      "offset": 4.25
+    }
+  },
+  {
+    "row": "s02",
+    "timeline_in": 1.88,
+    "timeline_out": 5.2,
+    "source": "P04_06_dust_veil_t2.mp4",
+    "upscale": 2.3111,
+    "video": true,
+    "framing": {
+      "offset": 1.75
+    }
+  },
+  {
+    "row": "s03",
+    "timeline_in": 5.2,
+    "timeline_out": 7.92,
+    "source": "code_graphic_010_short_C_s03_why_survive_9x16.mp4",
+    "upscale": 1.0,
+    "video": true,
+    "framing": {
+      "offset": 0.0
+    }
+  },
+  {
+    "row": "s04",
+    "timeline_in": 7.92,
+    "timeline_out": 10.42,
+    "source": "P05_08_all_at_once_t2.mp4",
+    "upscale": 2.3111,
+    "video": true,
+    "framing": {
+      "offset": 1.25
+    }
+  },
+  {
+    "row": "s05",
+    "timeline_in": 10.42,
+    "timeline_out": 13.06,
+    "source": "P05_09a_pigeon_pavement_t1.mp4",
+    "upscale": 2.3111,
+    "video": true,
+    "framing": {
+      "offset": 1.1
+    }
+  },
+  {
+    "row": "s06",
+    "timeline_in": 13.06,
+    "timeline_out": 15.78,
+    "source": "P05_13a_gull_seaside_t1.mp4",
+    "upscale": 2.3111,
+    "video": true,
+    "framing": {
+      "offset": 4.3
+    }
+  },
+  {
+    "row": "s07",
+    "timeline_in": 15.78,
+    "timeline_out": 19.38,
+    "source": "P05_10_explorer_robin_t2.mp4",
+    "upscale": 2.3111,
+    "video": true,
+    "framing": {
+      "offset": 2.05
+    }
+  },
+  {
+    "row": "s08",
+    "timeline_in": 19.38,
+    "timeline_out": 22.56,
+    "source": "P05_12_clay_callback_t2.mp4",
+    "upscale": 2.3111,
+    "video": true,
+    "framing": {
+      "offset": 1.05
+    }
+  },
+  {
+    "row": "s09",
+    "timeline_in": 22.56,
+    "timeline_out": 23.56,
+    "source": "loop_P05_09_robin_t2.mp4",
+    "upscale": 2.3111,
+    "video": true,
+    "framing": {
+      "offset": 3.25
+    }
+  }
+]

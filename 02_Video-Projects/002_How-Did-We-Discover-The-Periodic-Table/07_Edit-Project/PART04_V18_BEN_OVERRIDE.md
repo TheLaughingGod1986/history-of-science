@@ -42,7 +42,7 @@ Exact plate sha256 also in `part04_rough_v18_land_meta.json` / `part04_build_v18
 ### Engine notes (credit blockers → CoS)
 
 1. **Gemini API Veo** (`veo-3.1-generate-preview` / lite / fast): `429 RESOURCE_EXHAUSTED` — prepaid credits depleted (`ai.studio` billing). Stopped; did not retry burn.
-2. **Flow Ultra** (`benoats@googlemail.com`): create reached project then stalled (Agent settings / harvest empty). No accepted gallery mp4 this run.
+2. **Flow Ultra** (`the studio Ultra account`): create reached project then stalled (Agent settings / harvest empty). No accepted gallery mp4 this run.
 3. Therefore remint used **opaque per-frame painted continuous motion** from fresh procedural single-exposure v18 starts (harden pass after first land):
    - ONE soft Empty Chairs glow via heavy mask-blur (no nested concentric rects)
    - No crop-settle · no grain blend · no sharpen on publish/family/explorer
@@ -95,4 +95,4 @@ Plates are sharp painted continuous-motion fallback (more graphic than Flow Veo)
 
 Merge only after UAT PASS + Ben KEEP. Scores → CoS. No Ben ping.
 
-Flow account for follow-up I2V: `benoats@googlemail.com`.
+Flow account for follow-up I2V: `the studio Ultra account`.

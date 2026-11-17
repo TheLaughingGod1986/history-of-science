@@ -59,4 +59,4 @@ Composite remint landed for UAT. Stills can still show residual crown texture / 
 
 **Do not PASS from this agent.** Scores → CoS. Remint again only on CoS UAT FAIL with stills. No Ben ping.
 
-Flow account target for any follow-up I2V: `benoats@googlemail.com`.
+Flow account target for any follow-up I2V: `the studio Ultra account`.

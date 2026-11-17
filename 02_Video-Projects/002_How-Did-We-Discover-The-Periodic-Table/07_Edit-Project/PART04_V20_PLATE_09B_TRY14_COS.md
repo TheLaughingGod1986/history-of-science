@@ -19,7 +19,7 @@ NOT try8–13 moon-desk crop tree. NOT try13 bookshelf invent tree.
 - mp4 sha256: `47a6bdebed079d46e48950d3b544388a807c79258d1114b39ab596ebf6f44c38`
 - start sha256: `0c9af08a1aa3cc337aa72ac8f9bbc6e139d3a7d883d231f0b98ec4ef259c4a56`
 - Flow: https://flow.google.com/project/fdfefb06-556c-42bd-9c61-169a740e8ac0
-- Auth: Mini CDP benoats@googlemail.com ULTRA
+- Auth: Mini CDP the studio Ultra account ULTRA
 - Starts used: **1 / 2**
 
 ## Board

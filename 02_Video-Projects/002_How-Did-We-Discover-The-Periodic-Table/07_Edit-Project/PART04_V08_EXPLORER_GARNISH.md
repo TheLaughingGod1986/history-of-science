@@ -8,7 +8,7 @@
 - KEEP 02b / 05 / 09 / 09b and all other plates; P01–P03 untouched
 
 ## Flow
-- Account: `benoats@googlemail.com` on `/u/1/` (ULTRA)
+- Account: `the studio Ultra account` on `/u/1/` (ULTRA)
 - Model: Veo 3.1 Fast T2V (I2V media-library attach flaked on Mini; garnish locked in prompt + visual QA)
 - Flow project: `https://flow.google.com/u/1/project/3c1c247d-6d70-4c9e-8af3-4ee78a04ae1f`
 - Raw clip: `04_Generated-Clips/part04/raw/v08_fast/06_explorer_leaves_gap_v08.mp4`

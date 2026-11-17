@@ -1,7 +1,7 @@
 # PART04 plate-first — 09b_risk_hold try5 → CoS
 
 **Mode:** ONE PLATE ONLY · STOP · no rough_v21 · no 06/11/11b  
-**Auth:** live Mini Chrome CDP · `benoats@googlemail.com` · ULTRA · no passkey · paint banned
+**Auth:** live Mini Chrome CDP · `the studio Ultra account` · ULTRA · no passkey · paint banned
 
 ## Parent (not a candidate)
 - `hos_002_part04_rough_v20.mp4`

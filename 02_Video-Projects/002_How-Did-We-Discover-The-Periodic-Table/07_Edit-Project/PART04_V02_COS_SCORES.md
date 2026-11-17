@@ -23,7 +23,7 @@
 
 ## Remint / scrub trail
 
-1. Flow account **`benoats@googlemail.com`** (Ultra). I2V Create for `05_columns_families` succeeded.
+1. Flow account **`the studio Ultra account`** (Ultra). I2V Create for `05_columns_families` succeeded.
 2. First Veo Fast take **regenerated** glowing yellow-window houses → archived `raw/v02_fast/_rejected/05_columns_families_v02_houses_regen.mp4`.
 3. Post-scrub **hard opaque night-sky + moon/stars** over window glass (deeper box after first leak under y1=0.50).
 4. `06_explorer_leaves_gap`: scrubbed from v01 KEEP Explorer plate (teal trenchcoat preserved).
@@ -55,7 +55,7 @@
 | reminted | `05_columns_families`, `06_explorer_leaves_gap` |
 | columns_picture | 37.75–45.65 s |
 | explorer_picture | 45.30–53.20 s |
-| Flow | `benoats@googlemail.com` |
+| Flow | `the studio Ultra account` |
 | P03 untouched | `30060612a00d628998008c9946b8e25319b56f3b9e5613b537c5d2be989bbe4e` |
 | HOS UAT | `~/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/hos_002_part04_rough_v02.mp4` |
 | watch | `WATCH_part04_v02.txt` |

@@ -1,28 +1,28 @@
 {
-  "want": "benoats@googlemail.com",
-  "forbidden": "benoats86@gmail.com",
+  "want": "the studio Ultra account",
+  "forbidden": "the studio Ultra account",
   "profile": "/Users/benjaminoats/.playwright-hos-flow-profile",
   "probes": [
     {
       "requested_url": "https://flow.google.com/u/1/",
       "final_url": "https://flow.google.com/u/1/",
       "emails": [
-        "benoats@googlemail.com"
+        "the studio Ultra account"
       ],
-      "active_email": "benoats@googlemail.com",
+      "active_email": "the studio Ultra account",
       "credits_text": "10,050 Google Flow credits",
       "account_labels": [
         "Account details",
-        "Google Account: Benjamin Oats  \n(benoats@googlemail.com), Google membership",
-        "Google AccountBenjamin Oatsbenoats@googlemail.comGoogle membership",
-        "Google AccountBenjamin Oatsbenoats@googlemail.comGoogle membership",
+        "Google Account: Benjamin Oats  \n(the studio Ultra account), Google membership",
+        "Google AccountBenjamin Oatsthe studio Ultra accountGoogle membership",
+        "Google AccountBenjamin Oatsthe studio Ultra accountGoogle membership",
         "Google Account",
-        "benoats@googlemail.com",
+        "the studio Ultra account",
         "Account settings",
         "Close account panel",
-        "Benjamin Oats\nbenoats@googlemail.com\nSwitch account",
-        "Benjamin Oats\nbenoats@googlemail.com",
-        "benoats@googlemail.com",
+        "Benjamin Oats\nthe studio Ultra account\nSwitch account",
+        "Benjamin Oats\nthe studio Ultra account",
+        "the studio Ultra account",
         "Switch account",
         "movie_filter_auto\n10,050 Google Flow credits\nUpgrade",
         "Credits display",
@@ -38,8 +38,8 @@
   ],
   "verdict": "OK",
   "probed_at": "2026-09-06T23:10:32+0100",
-  "active_email": "benoats@googlemail.com",
+  "active_email": "the studio Ultra account",
   "credits_text": "10,050 Google Flow credits",
   "mint_url": "https://flow.google.com/u/1/",
-  "reason": "benoats@googlemail.com via https://flow.google.com/u/1/"
+  "reason": "the studio Ultra account via https://flow.google.com/u/1/"
 }

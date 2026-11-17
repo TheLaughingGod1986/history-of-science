@@ -1,0 +1,68 @@
+{
+  "short_id": "short_C",
+  "stem": "hos_010_short_C_v01",
+  "youtube_title": "Are Birds Really Dinosaurs?",
+  "nas_master_mp4": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/10_Shorts/J2172/short_C/hos_010_short_C_v01.mp4",
+  "scratch_mp4": "/Volumes/MiniWork/scratch/J2172-build/short_C/hos_010_short_C_v01.mp4",
+  "master_sha256": "698db62789e1e6884ae15797dc51083c39bbc0ee3c0cc1ecf83f92e2e87a0359",
+  "master_bytes": 13612892,
+  "duration_s": 23.6,
+  "resolution": "936x1664",
+  "fps": 30,
+  "words_count": 57,
+  "vo_onset_s": 0.1,
+  "hook_sentence_end_s": 1.88,
+  "first_cut_s": 1.88,
+  "second_cut_s": 5.2,
+  "max_body_hold_s": 3.6,
+  "last_word_end_s": 22.5,
+  "tail_gap_s": 1.06,
+  "loop_tail_s": 1.0,
+  "payoff_word": "Every",
+  "payoff_start_s": 16.56,
+  "payoff_frac": 0.7029,
+  "level": {
+    "lufs": -14.1,
+    "true_peak_dbtp": -1.8,
+    "loudnorm_I": -12.0
+  },
+  "bed_nas_path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/05_Music/hos_010_short_C_v01_bed.wav",
+  "bed_sha256": "23468be2042bfdd77b37fb90c3752dec6329b3bae1a3c8a2cabe21029954f0e9",
+  "stem_hashes": {
+    "vo": {
+      "nas_path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/10_Shorts/J2172/short_C/stems/stem_vo.wav",
+      "sha256": "b27d659f696dead3425c38bf4ea94e7fb270754f4c332c6ca15ec576e089f3f3",
+      "bytes": 4523598
+    },
+    "bed": {
+      "nas_path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/10_Shorts/J2172/short_C/stems/stem_bed.wav",
+      "sha256": "1a3e904cfb0c5686ea9dbf9b764a1441a727b71b4709fab05121b503a653a8b8",
+      "bytes": 4523598
+    },
+    "sfx": {
+      "nas_path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/10_Shorts/J2172/short_C/stems/stem_sfx.wav",
+      "sha256": "40588dcdbaa21f4b24439f0821e73eece9a038150119b67fa9474da9bd245524",
+      "bytes": 4523598
+    }
+  },
+  "gates": {
+    "polish": {
+      "exit": 0
+    },
+    "picture": {
+      "exit": 0
+    },
+    "music": {
+      "exit": 0
+    },
+    "open": {
+      "exit": 0
+    },
+    "vo_check": {
+      "exit": 0
+    },
+    "sfx": {
+      "exit": 0
+    }
+  }
+}

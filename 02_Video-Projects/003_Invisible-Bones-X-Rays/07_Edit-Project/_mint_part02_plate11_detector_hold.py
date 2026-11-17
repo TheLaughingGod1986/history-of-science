@@ -4,7 +4,7 @@
 Pinned project (do not New project, do not remint KEEP plates):
   https://flow.google.com/u/1/project/95929b6f-ae75-40be-af91-05699c481557
 
-Account: benoats@googlemail.com. Do not switch accounts.
+Account: the studio Ultra account. Do not switch accounts.
 Veo 3.1 Quality · 8s · 16:9 · scenery-only (no Explorer, no helix, no Orbit).
 
 Unusual-activity: STOP, quote dialog, no charge-loop (no retry / resubmit).
@@ -22,6 +22,19 @@ import time
 from datetime import datetime, timezone
 from pathlib import Path
 
+def _account_sha256(addr: str | None) -> str:
+    import hashlib as _hashlib
+    s = (addr or "").strip().lower()
+    if not s:
+        return ""
+    return s if len(s) == 64 and all(c in "0123456789abcdef" for c in s) else _hashlib.sha256(s.encode()).hexdigest()
+
+
+def _blob_account_sha256s(text: str) -> set[str]:
+    import re as _re
+    return {_account_sha256(e) for e in _re.findall(r"[A-Za-z0-9._%+-]+@(?:gmail|googlemail)\.com", text or "", _re.I)}
+
+
 REPO = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(REPO / "04_Audio" / "tools"))
 
@@ -31,7 +44,7 @@ import orbit_gemini_veo as veo  # noqa: E402
 PROJECT_URL = (
     "https://flow.google.com/u/1/project/95929b6f-ae75-40be-af91-05699c481557"
 )
-ACCOUNT = "benoats@googlemail.com"
+ACCOUNT = "81a01c9d841483f444008cd69e98b26019e032ed75b5e33e17409a76c6525ce9"
 MODEL = "Veo 3.1 - Quality"
 CLIP_DIR = (
     REPO
@@ -70,8 +83,8 @@ UNUSUAL_RE = re.compile(
 FOREIGN_ACCOUNT_RE = re.compile(
     r"[A-Za-z0-9._%+\-]+@(?:gmail|googlemail)\.com"
 )
-# HOS default env profile is benoats86@gmail.com. This mint stays on
-# benoats@googlemail.com — the account already in Batch B. Do not switch.
+# HOS default env profile is the forbidden account. This mint stays on
+# the studio Ultra account — the account already in Batch B. Do not switch.
 PROFILE = Path(
     os.environ.get(
         "HOS_003_FLOW_PROFILE",
@@ -168,7 +181,7 @@ def assert_account_slot(page) -> str:
         raise SystemExit(f"STOP: not Flow /u/1/ slot ({url}). Do not switch accounts.")
     text = page_text(page, 20000)
     emails = sorted(set(FOREIGN_ACCOUNT_RE.findall(text)))
-    foreign = [e for e in emails if e.lower() != ACCOUNT.lower()]
+    foreign = [e for e in emails if _account_sha256(e) != ACCOUNT]
     if foreign:
         raise SystemExit(
             f"STOP: foreign Google account visible {foreign}. "
@@ -309,7 +322,7 @@ def main() -> None:
     ap.add_argument(
         "--cdp",
         default=os.environ.get("HOS_003_FLOW_CDP", ""),
-        help="Attach live Chrome Default (benoats@googlemail.com) via CDP",
+        help="Attach live Chrome Default (the studio Ultra account) via CDP",
     )
     args = ap.parse_args()
 

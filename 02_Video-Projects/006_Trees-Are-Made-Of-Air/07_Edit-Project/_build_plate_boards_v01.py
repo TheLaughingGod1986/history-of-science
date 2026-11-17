@@ -459,7 +459,7 @@ def main() -> None:
             "forbidden": FORBIDDEN,
             "always_fails": ALWAYS_FAILS,
             "motion_lock": "Real Veo camera and object motion on every plate. No freeze-pad, no loop, no Ken Burns. A reuse row cuts a different window of a KEEP clip; never a still.",
-            "quality_note": "Flow Veo 3.1 Fast on the Mini's CDP worker (benoats@googlemail.com) for the held establishing shots; Vertex AI Veo 3.1 (gen-lang-client-0538779324) for the rest: veo-3.1-generate-001 for Quality, veo-3.1-fast-generate-001 for Fast, 4/6/8 s clips. Quality only for a named person's face, the Explorer, or a flame/furnace/glow/sunbeam hero. A Fast take with a flame, lamp or glow in frame fails: reframe or remint on Quality. One plate at a time until the first KEEP; after 2 same-framing FAILs change the framing.",
+            "quality_note": "Flow Veo 3.1 Fast on the Mini's CDP worker (the studio Ultra account) for the held establishing shots; Vertex AI Veo 3.1 (gen-lang-client-0538779324) for the rest: veo-3.1-generate-001 for Quality, veo-3.1-fast-generate-001 for Fast, 4/6/8 s clips. Quality only for a named person's face, the Explorer, or a flame/furnace/glow/sunbeam hero. A Fast take with a flame, lamp or glow in frame fails: reframe or remint on Quality. One plate at a time until the first KEEP; after 2 same-framing FAILs change the framing.",
             "labels": "White Didot italic side label, 1-4 words, one at a time, on the plate's first beat (or at the stated offset); added in the edit. Never two at once.",
             "counts": {"rows": len(rows), "mints": nq + nf, "Quality": nq, "Fast": nf, "reuse": nr},
             "plates": rows,

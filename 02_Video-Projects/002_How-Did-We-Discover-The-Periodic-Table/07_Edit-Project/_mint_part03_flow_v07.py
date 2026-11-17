@@ -6,7 +6,7 @@ Showrunner PART03_V07_EMPTY_CHAIR_SYNC_AND_SWIRL_MARKS.md (parent v06 sha a1285f
   - Props: KEEP desk marks (H 1 / O 16 / C 12) + 2–3 mid-air sheets H 1 · C 12 · O 16
   - MOST flying sheets blank. No equations/tables. Skip 04 by default.
   - Prefer I2V. Veo Fast. Create dies → STOP (no Ken Burns).
-  - Auth: benoats@googlemail.com on /u/1/.
+  - Auth: the studio Ultra account on /u/1/.
   - Do not remint empty chair / P01 / P02. No P04.
 """
 from __future__ import annotations
@@ -19,6 +19,19 @@ import subprocess
 import sys
 import time
 from pathlib import Path
+
+def _account_sha256(addr: str | None) -> str:
+    import hashlib as _hashlib
+    s = (addr or "").strip().lower()
+    if not s:
+        return ""
+    return s if len(s) == 64 and all(c in "0123456789abcdef" for c in s) else _hashlib.sha256(s.encode()).hexdigest()
+
+
+def _blob_account_sha256s(text: str) -> set[str]:
+    import re as _re
+    return {_account_sha256(e) for e in _re.findall(r"[A-Za-z0-9._%+-]+@(?:gmail|googlemail)\.com", text or "", _re.I)}
+
 
 REPO = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(REPO / "04_Audio" / "tools"))
@@ -69,9 +82,9 @@ V07_PROMPT_03 = (
     "microphone; blackboard/chandelier/fresco; Orbit; vessel fire; Ken Burns only."
 )
 
-REQUIRED_FLOW_EMAIL = "benoats@googlemail.com"
-ALLOWED_FLOW_EMAILS = {REQUIRED_FLOW_EMAIL, "benoats@gmail.com"}
-FORBIDDEN_FLOW_EMAIL = "benoats86@gmail.com"
+REQUIRED_FLOW_EMAIL = "81a01c9d841483f444008cd69e98b26019e032ed75b5e33e17409a76c6525ce9"
+ALLOWED_FLOW_EMAILS = {REQUIRED_FLOW_EMAIL, "1060171615b311ab416fccd36a51024de12b5fe8b815e6ccd3d3dde67ffad99f"}
+FORBIDDEN_FLOW_EMAIL = "93b0f97ef00986fa90ead10a83be910d43707ddc8023daa2018ed1d95cbbb9d4"
 
 CREATE_DIE_MARKERS = (
     "out of google flow credits",
@@ -104,7 +117,7 @@ def pick_google_account(page) -> None:
     url = page.url or ""
     if "accounts.google.com" not in url:
         return
-    for needle in (REQUIRED_FLOW_EMAIL, "benoats@gmail.com"):
+    for needle in [e for e in re.findall(r"[A-Za-z0-9._%+-]+@(?:gmail|googlemail)\.com", page.inner_text("body"), flags=re.I) if _account_sha256(e) in ALLOWED_FLOW_EMAILS]:
         loc = page.get_by_text(needle, exact=False)
         if loc.count():
             print(f"  account chooser → {needle}", flush=True)
@@ -129,10 +142,7 @@ def require_flow_account(page) -> str:
             f"BLOCKED_AUTH: could not read Flow account chrome ({exc})."
         ) from exc
     blob = "\n".join(labels)
-    emails = {
-        e.lower()
-        for e in re.findall(r"[A-Za-z0-9._%+-]+@(?:gmail|googlemail)\.com", blob, flags=re.I)
-    }
+    emails = {_account_sha256(e) for e in re.findall(r"[A-Za-z0-9._%+-]+@(?:gmail|googlemail)\.com", blob, flags=re.I)}
     active = None
     m = re.search(
         r"Google Account:[^\n\(]*\(([^)]+@(?:gmail|googlemail)\.com)\)",
@@ -140,7 +150,7 @@ def require_flow_account(page) -> str:
         re.I,
     )
     if m:
-        active = m.group(1).lower()
+        active = _account_sha256(m.group(1))
     elif FORBIDDEN_FLOW_EMAIL in emails:
         active = FORBIDDEN_FLOW_EMAIL
     elif emails & ALLOWED_FLOW_EMAILS:
@@ -152,7 +162,7 @@ def require_flow_account(page) -> str:
     print(f"  page.url={page.url}", flush=True)
     if not active:
         raise SystemExit("BLOCKED_AUTH: signed-in Google email not visible on Flow.")
-    if active == FORBIDDEN_FLOW_EMAIL or "benoats86" in active:
+    if _account_sha256(active) == FORBIDDEN_FLOW_EMAIL:
         raise SystemExit(
             f"BLOCKED_AUTH: Mini Flow is signed in as {active}. "
             f"Need exactly {REQUIRED_FLOW_EMAIL} on /u/1/. No mint."
@@ -277,7 +287,7 @@ def open_flow(p, *, profile: Path):
             time.sleep(2)
     raise SystemExit(
         f"BLOCKED_AUTH: Flow not logged in after retries ({last_err}). "
-        "Do not Ken-Burns. Ben must sign Mini as benoats@googlemail.com on /u/1/."
+        "Do not Ken-Burns. Ben must sign Mini as the studio Ultra account on /u/1/."
     )
 
 

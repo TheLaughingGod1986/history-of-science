@@ -25,7 +25,7 @@ Spot-check: `03_what_is_element` + `04_sort_atomic_weight` already clean — not
 
 ## Remint / scrub trail
 
-1. Flow account **`benoats@googlemail.com`** (Ultra `/u/1/`). I2V Create for `02b_cards_sixty_three` **succeeded** (project `53324bc4-3bc7-49b1-9166-9271875992bc`).
+1. Flow account **`the studio Ultra account`** (Ultra `/u/1/`). I2V Create for `02b_cards_sixty_three` **succeeded** (project `53324bc4-3bc7-49b1-9166-9271875992bc`).
 2. Gallery Download / play-network harvest **failed** (play response timeouts; Download media closed context) — no Ken Burns substitute.
 3. Applied **adaptive hard leather/wood fill** over detected glowing yellow house-glow tokens on the existing Veo Fast `02b` plate (continuous card motion preserved) — same class of post-scrub as v02 window fill.
 4. Pass-2 mop → residual house-glow ≈0 on plate frames. Whole-cut scan ~19–21 + ~40–45 CLEAN.
@@ -58,7 +58,7 @@ Spot-check: `03_what_is_element` + `04_sort_atomic_weight` already clean — not
 | plate02b_picture | 15.10–23.00 s |
 | columns_picture | 37.75–45.65 s |
 | explorer_picture | 45.30–53.20 s |
-| Flow | `benoats@googlemail.com` (Create OK; download failed → adaptive rect leather scrub) |
+| Flow | `the studio Ultra account` (Create OK; download failed → adaptive rect leather scrub) |
 | P03 untouched | `30060612a00d628998008c9946b8e25319b56f3b9e5613b537c5d2be989bbe4e` |
 | HOS UAT | `~/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/hos_002_part04_rough_v03.mp4` |
 | watch | `WATCH_part04_v03.txt` |

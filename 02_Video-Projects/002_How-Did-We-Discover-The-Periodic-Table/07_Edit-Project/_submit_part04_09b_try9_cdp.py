@@ -12,6 +12,19 @@ from pathlib import Path
 
 from playwright.sync_api import sync_playwright
 
+def _account_sha256(addr: str | None) -> str:
+    import hashlib as _hashlib
+    s = (addr or "").strip().lower()
+    if not s:
+        return ""
+    return s if len(s) == 64 and all(c in "0123456789abcdef" for c in s) else _hashlib.sha256(s.encode()).hexdigest()
+
+
+def _blob_account_sha256s(text: str) -> set[str]:
+    import re as _re
+    return {_account_sha256(e) for e in _re.findall(r"[A-Za-z0-9._%+-]+@(?:gmail|googlemail)\.com", text or "", _re.I)}
+
+
 REPO = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(REPO / "04_Audio" / "tools"))
 import orbit_flow_veo_ui as flow
@@ -25,7 +38,7 @@ KEEP_TRY8 = PROJ / "04_Generated-Clips/part04/refs/v20_start_frames/09b_risk_hol
 FORBIDDEN_FLAT = "2a651abc673e719af8f6647f264da28a45d41950473489193c72f9a0c4481182"
 OUT = PROJ / "07_Edit-Project/_qa_part04_v20_flow/submit_09b_risk_hold_try9.json"
 MODEL = os.environ.get("ORBIT_FLOW_VEO_MODEL") or "Veo 3.1 - Fast"
-REQUIRED_EMAIL = "benoats@googlemail.com"
+REQUIRED_EMAIL = "81a01c9d841483f444008cd69e98b26019e032ed75b5e33e17409a76c6525ce9"
 
 _mint = (Path(__file__).resolve().parent / "_mint_part04_flow_v20.py").read_text()
 _m = re.search(r"(STYLE = [\s\S]*?PROMPTS = \{[\s\S]*?\n\})\n\n\ndef ", _mint)
@@ -60,12 +73,12 @@ def assert_auth(page) -> dict:
         )
     ):
         raise SystemExit("STOP_TO_COS BLOCKED_AUTH: passkey wall")
-    if REQUIRED_EMAIL.lower() not in blob and "benoats@googlemail.com" not in blob:
+    if REQUIRED_EMAIL not in _blob_account_sha256s(blob):
         # soft: Flow home sometimes hides email until account chip opens
         print("WARN: email not visible in DOM yet; continuing if ULTRA present", flush=True)
     if "ultra" not in blob:
         raise SystemExit("STOP_TO_COS BLOCKED_AUTH: ULTRA badge missing")
-    return {"ultra": True, "email_hint": REQUIRED_EMAIL in blob}
+    return {"ultra": True, "email_hint": REQUIRED_EMAIL in _blob_account_sha256s(blob)}
 
 
 def main() -> None:

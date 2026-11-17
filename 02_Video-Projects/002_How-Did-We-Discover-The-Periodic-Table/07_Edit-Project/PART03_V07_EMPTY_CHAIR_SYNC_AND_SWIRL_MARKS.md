@@ -3,7 +3,7 @@
 **Parent:** `hos_002_part03_rough_v06.mp4`  
 **Export:** `hos_002_part03_rough_v07.mp4`  
 **VO:** `02_Voiceover/part03_ruler_for_atoms_v01.wav` (unchanged)  
-**Account:** Flow `benoats@googlemail.com`. Create dies → STOP (no Ken Burns).  
+**Account:** Flow `the studio Ultra account`. Create dies → STOP (no Ken Burns).  
 **Scores → CoS only.** CoS owns Ben ping after UAT. No P04 until Ben KEEP.
 
 ---

@@ -253,7 +253,7 @@ The audio says the script's words. The check is unchanged: per AGENTS.md, a fix 
 
 ### Flow credits (before boards)
 
-The Flow page on the Mini's CDP Chrome (`benoats@googlemail.com`, ULTRA tier) reads **"62 Google Flow credits"** with the banner "You're running low on Google Flow credits. Your credits will reset monthly". So the monthly credits **have not reset** as of 2 Oct, about 12:30 UK. Vertex Free Trial remaining: still to read before boarding.
+The Flow page on the Mini's CDP Chrome (`the studio Ultra account`, ULTRA tier) reads **"62 Google Flow credits"** with the banner "You're running low on Google Flow credits. Your credits will reset monthly". So the monthly credits **have not reset** as of 2 Oct, about 12:30 UK. Vertex Free Trial remaining: still to read before boarding.
 
 ## 2 Oct 2026 — VO accepted on the fixed vo_check, boards v01 and priced plan (Grok, desk task 5951184558)
 
@@ -656,7 +656,7 @@ frame=12188 fps=493 q=-0.0 Lsize=N/A time=00:08:28.00 bitrate=N/A speed=20.6x el
   - **Price lock:** **Option 1 (`0` Flow credits, `£0.00` cash)** — Flow Image `Nano Banana 2` 16:9 stills on AI Ultra + `£0` deterministic cover-builder lettering.
 - **Step 2.1 — Flow Image (`Nano Banana 2.1 crop_16_9 x1`) mint output (`08_Thumbnail/_mint_hos_006_thumbs_flow_v01.py`, logged in `08_Thumbnail/FLOW_MINT_LOG_J0869_v01.json`):**
   ```text
-  GATE account=benoats@googlemail.com credits_start=20830 url=https://flow.google.com/project/9b867f83-cb93-4f3f-8f7b-31c2e3e9f415
+  GATE account=the studio Ultra account credits_start=20830 url=https://flow.google.com/project/9b867f83-cb93-4f3f-8f7b-31c2e3e9f415
 
   === Concept A (hos_006_thumb_A_wood_from_sky_plate01) credits_before=20830 ===
     pill before='Video · 720p · 8s crop_16_9 x1'

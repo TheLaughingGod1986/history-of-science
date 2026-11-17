@@ -1,13 +1,13 @@
 {
-  "want_email": "benoats@googlemail.com",
-  "forbidden_email": "benoats86@gmail.com",
+  "want_email": "the studio Ultra account",
+  "forbidden_email": "the studio Ultra account",
   "profile": "/Users/benjaminoats/.playwright-hos-flow-profile",
   "url": "https://flow.google.com/",
   "emails_seen": [
-    "Oatsbenoats86@gmail.com",
-    "benoats86@gmail.com"
+    "Oatsthe studio Ultra account",
+    "the studio Ultra account"
   ],
-  "active_email": "benoats86@gmail.com",
+  "active_email": "the studio Ultra account",
   "credits_text": "0 Google Flow credits",
   "page_text_hits": [
     "0 Google Flow credits",
@@ -15,16 +15,16 @@
   ],
   "account_button_labels": [
     "Account details",
-    "Google Account: Benjamin Oats  \n(benoats86@gmail.com)",
-    "Google AccountBenjamin Oatsbenoats86@gmail.com",
-    "Google AccountBenjamin Oatsbenoats86@gmail.com",
+    "Google Account: Benjamin Oats  \n(the studio Ultra account)",
+    "Google AccountBenjamin Oatsthe studio Ultra account",
+    "Google AccountBenjamin Oatsthe studio Ultra account",
     "Google Account",
-    "benoats86@gmail.com",
+    "the studio Ultra account",
     "Account settings",
     "Close account panel",
-    "Benjamin Oats\nbenoats86@gmail.com\nSwitch account",
-    "Benjamin Oats\nbenoats86@gmail.com",
-    "benoats86@gmail.com",
+    "Benjamin Oats\nthe studio Ultra account\nSwitch account",
+    "Benjamin Oats\nthe studio Ultra account",
+    "the studio Ultra account",
     "Switch account",
     "movie_filter_auto\n0 Google Flow credits\nCredits refresh daily\nUpgrade",
     "Credits display",
@@ -35,6 +35,6 @@
   ],
   "verdict": "BLOCKED_AUTH",
   "probed_at": "2026-09-06T22:52:40+0100",
-  "reason": "Mini Flow still signed in as benoats86@gmail.com with 0 Google Flow credits; need benoats@googlemail.com",
+  "reason": "Mini Flow still signed in as the studio Ultra account with 0 Google Flow credits; need the studio Ultra account",
   "minted": false
 }
