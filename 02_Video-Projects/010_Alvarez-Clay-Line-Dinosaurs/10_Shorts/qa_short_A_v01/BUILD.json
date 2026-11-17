@@ -1,0 +1,68 @@
+{
+  "short_id": "short_A",
+  "stem": "hos_010_short_A_v01",
+  "youtube_title": "What Killed the Dinosaurs?",
+  "nas_master_mp4": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/10_Shorts/J2172/short_A/hos_010_short_A_v01.mp4",
+  "scratch_mp4": "/Volumes/MiniWork/scratch/J2172-build/short_A/hos_010_short_A_v01.mp4",
+  "master_sha256": "ea29e26487d6631416449c9adf712f51b1b9508db06b7b6c29edc4236970fe59",
+  "master_bytes": 12952218,
+  "duration_s": 23.3,
+  "resolution": "936x1664",
+  "fps": 30,
+  "words_count": 59,
+  "vo_onset_s": 0.038,
+  "hook_sentence_end_s": 2.849,
+  "first_cut_s": 2.849,
+  "second_cut_s": 6.189,
+  "max_body_hold_s": 3.72,
+  "last_word_end_s": 22.169,
+  "tail_gap_s": 1.12,
+  "loop_tail_s": 1.0,
+  "payoff_word": "packed",
+  "payoff_start_s": 17.069,
+  "payoff_frac": 0.7329,
+  "level": {
+    "lufs": -14.4,
+    "true_peak_dbtp": -1.8,
+    "loudnorm_I": -12.0
+  },
+  "bed_nas_path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/05_Music/hos_010_short_A_v01_bed.wav",
+  "bed_sha256": "c4fc370c9a3d19e7a6458e70c51ac0a05b2f6aac0c714a8b54d5d897e0bf6eb4",
+  "stem_hashes": {
+    "vo": {
+      "nas_path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/10_Shorts/J2172/short_A/stems/stem_vo.wav",
+      "sha256": "7ba27e73471052dd1c83659f85997eb95ba668765ac0179657411237ef8eb45f",
+      "bytes": 4471566
+    },
+    "bed": {
+      "nas_path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/10_Shorts/J2172/short_A/stems/stem_bed.wav",
+      "sha256": "3703f087eaaa7998bd6758d621d24004ff9de081e81f97815d2fd0eac0728e0f",
+      "bytes": 4471566
+    },
+    "sfx": {
+      "nas_path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/10_Shorts/J2172/short_A/stems/stem_sfx.wav",
+      "sha256": "488c8b468957484429dad6ee9b9c6d4c3a7bd0227f667f660111ec50d60330ce",
+      "bytes": 4471566
+    }
+  },
+  "gates": {
+    "polish": {
+      "exit": 0
+    },
+    "picture": {
+      "exit": 0
+    },
+    "music": {
+      "exit": 0
+    },
+    "open": {
+      "exit": 0
+    },
+    "vo_check": {
+      "exit": 0
+    },
+    "sfx": {
+      "exit": 0
+    }
+  }
+}

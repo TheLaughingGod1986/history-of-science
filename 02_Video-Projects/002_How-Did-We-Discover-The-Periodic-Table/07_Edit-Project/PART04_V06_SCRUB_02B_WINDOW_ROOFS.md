@@ -4,7 +4,7 @@
 **Parent:** `hos_002_part04_rough_v05.mp4`  
   sha256 `a7c9741c32f9689c019d5c8695b36a8e8d2bbbebfb19b93ee53b6d584b8a43fc` · 76043650 B · 127.760s  
 **Export:** `hos_002_part04_rough_v06.mp4`  
-**Flow:** `benoats@googlemail.com`. Create dies → STOP (no Ken Burns).  
+**Flow:** `the studio Ultra account`. Create dies → STOP (no Ken Burns).  
 **Scores → CoS only.** No P05 until PASS. **P01–P03 FROZEN** (P03 `30060612…`).
 
 ---

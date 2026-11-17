@@ -1,0 +1,1861 @@
+{
+  "job": "J2655",
+  "boundaries": [
+    {
+      "next_row": "P1:01b",
+      "old_s": 3.16,
+      "new_s": 3.16,
+      "delta_s": 0.0,
+      "left_word": {
+        "text": "world",
+        "start": 2.66,
+        "end": 3.08
+      },
+      "right_word": {
+        "text": "was",
+        "start": 3.16,
+        "end": 3.28
+      },
+      "old_crossed_words": [],
+      "changed": false
+    },
+    {
+      "next_row": "P1:02a",
+      "old_s": 6.9,
+      "new_s": 6.34,
+      "delta_s": -0.56,
+      "left_word": {
+        "text": "Why?",
+        "start": 5.72,
+        "end": 6.0
+      },
+      "right_word": {
+        "text": "Because",
+        "start": 6.68,
+        "end": 6.9
+      },
+      "old_crossed_words": [],
+      "changed": true
+    },
+    {
+      "next_row": "P1:02b",
+      "old_s": 10.5,
+      "new_s": 10.98,
+      "delta_s": 0.48,
+      "left_word": {
+        "text": "America,",
+        "start": 10.4,
+        "end": 10.88
+      },
+      "right_word": {
+        "text": "nobody",
+        "start": 11.08,
+        "end": 11.44
+      },
+      "old_crossed_words": [
+        "America,"
+      ],
+      "changed": true
+    },
+    {
+      "next_row": "P1:03a",
+      "old_s": 14.28,
+      "new_s": 14.28,
+      "delta_s": 0.0,
+      "left_word": {
+        "text": "pain.",
+        "start": 12.66,
+        "end": 13.08
+      },
+      "right_word": {
+        "text": "In",
+        "start": 14.28,
+        "end": 14.36
+      },
+      "old_crossed_words": [],
+      "changed": false
+    },
+    {
+      "next_row": "P1:03b",
+      "old_s": 18.5,
+      "new_s": 18.62,
+      "delta_s": 0.12,
+      "left_word": {
+        "text": "him",
+        "start": 18.46,
+        "end": 18.6
+      },
+      "right_word": {
+        "text": "with",
+        "start": 18.64,
+        "end": 18.74
+      },
+      "old_crossed_words": [
+        "him"
+      ],
+      "changed": true
+    },
+    {
+      "next_row": "P1:04a",
+      "old_s": 22.8,
+      "new_s": 22.8,
+      "delta_s": 0.0,
+      "left_word": {
+        "text": "minutes.",
+        "start": 21.94,
+        "end": 22.46
+      },
+      "right_word": {
+        "text": "Then",
+        "start": 23.2,
+        "end": 23.5
+      },
+      "old_crossed_words": [],
+      "changed": false
+    },
+    {
+      "next_row": "P1:04b_cg_stopwatch_scale",
+      "old_s": 26.5,
+      "new_s": 26.78,
+      "delta_s": 0.28,
+      "left_word": {
+        "text": "1846,",
+        "start": 25.28,
+        "end": 26.54
+      },
+      "right_word": {
+        "text": "all",
+        "start": 27.02,
+        "end": 27.14
+      },
+      "old_crossed_words": [
+        "1846,"
+      ],
+      "changed": true
+    },
+    {
+      "next_row": "P1:05a",
+      "old_s": 30.7,
+      "new_s": 29.1,
+      "delta_s": -1.6,
+      "left_word": {
+        "text": "changed.",
+        "start": 27.62,
+        "end": 28.2
+      },
+      "right_word": {
+        "text": "In",
+        "start": 29.32,
+        "end": 29.4
+      },
+      "old_crossed_words": [],
+      "changed": true
+    },
+    {
+      "next_row": "P1:05b",
+      "old_s": 35.8,
+      "new_s": 35.8,
+      "delta_s": 0.0,
+      "left_word": {
+        "text": "all.",
+        "start": 35.12,
+        "end": 35.36
+      },
+      "right_word": {
+        "text": "So",
+        "start": 36.32,
+        "end": 36.4
+      },
+      "old_crossed_words": [],
+      "changed": false
+    },
+    {
+      "next_row": "P1:06a",
+      "old_s": 40.5,
+      "new_s": 40.5,
+      "delta_s": 0.0,
+      "left_word": {
+        "text": "again?",
+        "start": 39.66,
+        "end": 40.06
+      },
+      "right_word": {
+        "text": "Who",
+        "start": 40.96,
+        "end": 41.08
+      },
+      "old_crossed_words": [],
+      "changed": false
+    },
+    {
+      "next_row": "P1:07a_cg_three_chapters_map",
+      "old_s": 47.4,
+      "new_s": 47.4,
+      "delta_s": 0.0,
+      "left_word": {
+        "text": "it?",
+        "start": 47.06,
+        "end": 47.16
+      },
+      "right_word": {
+        "text": "By",
+        "start": 48.28,
+        "end": 48.38
+      },
+      "old_crossed_words": [],
+      "changed": false
+    },
+    {
+      "next_row": "P1:07b",
+      "old_s": 53.6,
+      "new_s": 52.89,
+      "delta_s": -0.71,
+      "left_word": {
+        "text": "doctor,",
+        "start": 52.2,
+        "end": 52.7
+      },
+      "right_word": {
+        "text": "and",
+        "start": 53.08,
+        "end": 53.14
+      },
+      "old_crossed_words": [],
+      "changed": true
+    },
+    {
+      "next_row": "P1:08a",
+      "old_s": 59.5,
+      "new_s": 59.5,
+      "delta_s": 0.0,
+      "left_word": {
+        "text": "through.",
+        "start": 58.52,
+        "end": 58.82
+      },
+      "right_word": {
+        "text": "Picture",
+        "start": 60.14,
+        "end": 60.4
+      },
+      "old_crossed_words": [],
+      "changed": false
+    },
+    {
+      "next_row": "P1:08b",
+      "old_s": 66.4,
+      "new_s": 66.4,
+      "delta_s": 0.0,
+      "left_word": {
+        "text": "mask,",
+        "start": 65.8,
+        "end": 66.32
+      },
+      "right_word": {
+        "text": "no",
+        "start": 66.66,
+        "end": 66.76
+      },
+      "old_crossed_words": [],
+      "changed": false
+    },
+    {
+      "next_row": "P1:09a",
+      "old_s": 72.0,
+      "new_s": 72.0,
+      "delta_s": 0.0,
+      "left_word": {
+        "text": "still.",
+        "start": 71.0,
+        "end": 71.34
+      },
+      "right_word": {
+        "text": "What",
+        "start": 72.5,
+        "end": 72.62
+      },
+      "old_crossed_words": [],
+      "changed": false
+    },
+    {
+      "next_row": "P1:09b",
+      "old_s": 78.2,
+      "new_s": 78.2,
+      "delta_s": 0.0,
+      "left_word": {
+        "text": "Speed.",
+        "start": 77.12,
+        "end": 77.58
+      },
+      "right_word": {
+        "text": "Surgeons",
+        "start": 78.66,
+        "end": 79.14
+      },
+      "old_crossed_words": [],
+      "changed": false
+    },
+    {
+      "next_row": "P1:09c",
+      "old_s": 82.6,
+      "new_s": 81.68,
+      "delta_s": -0.92,
+      "left_word": {
+        "text": "centuries,",
+        "start": 80.68,
+        "end": 81.36
+      },
+      "right_word": {
+        "text": "and",
+        "start": 82.0,
+        "end": 82.06
+      },
+      "old_crossed_words": [],
+      "changed": true
+    },
+    {
+      "next_row": "P2:01_card_p02",
+      "old_s": 86.8,
+      "new_s": 86.8,
+      "delta_s": 0.0,
+      "left_word": {
+        "text": "earlier.",
+        "start": 86.38,
+        "end": 86.78
+      },
+      "right_word": {
+        "text": "In",
+        "start": 87.6,
+        "end": 87.7
+      },
+      "old_crossed_words": [],
+      "changed": false
+    },
+    {
+      "next_row": "P2:02a",
+      "old_s": 88.9,
+      "new_s": 89.77,
+      "delta_s": 0.87,
+      "left_word": {
+        "text": "Bristol,",
+        "start": 88.94,
+        "end": 89.44
+      },
+      "right_word": {
+        "text": "a",
+        "start": 90.1,
+        "end": 90.14
+      },
+      "old_crossed_words": [],
+      "changed": true
+    },
+    {
+      "next_row": "P2:02b",
+      "old_s": 95.2,
+      "new_s": 95.2,
+      "delta_s": 0.0,
+      "left_word": {
+        "text": "oxide.",
+        "start": 94.38,
+        "end": 94.96
+      },
+      "right_word": {
+        "text": "It",
+        "start": 95.9,
+        "end": 95.98
+      },
+      "old_crossed_words": [],
+      "changed": false
+    },
+    {
+      "next_row": "P2:03a",
+      "old_s": 101.8,
+      "new_s": 101.8,
+      "delta_s": 0.0,
+      "left_word": {
+        "text": "gas.",
+        "start": 100.88,
+        "end": 101.3
+      },
+      "right_word": {
+        "text": "Davy",
+        "start": 102.16,
+        "end": 102.42
+      },
+      "old_crossed_words": [],
+      "changed": false
+    },
+    {
+      "next_row": "P2:04a_arch_davy_1800",
+      "old_s": 108.5,
+      "new_s": 108.5,
+      "delta_s": 0.0,
+      "left_word": {
+        "text": "away,",
+        "start": 107.96,
+        "end": 108.26
+      },
+      "right_word": {
+        "text": "so",
+        "start": 109.18,
+        "end": 109.3
+      },
+      "old_crossed_words": [],
+      "changed": false
+    },
+    {
+      "next_row": "P2:04b",
+      "old_s": 113.5,
+      "new_s": 113.5,
+      "delta_s": 0.0,
+      "left_word": {
+        "text": "operations.",
+        "start": 111.74,
+        "end": 112.64
+      },
+      "right_word": {
+        "text": "Nobody",
+        "start": 113.62,
+        "end": 113.94
+      },
+      "old_crossed_words": [],
+      "changed": false
+    },
+    {
+      "next_row": "P2:05a_arch_laughing_gas_broadside",
+      "old_s": 121.2,
+      "new_s": 121.2,
+      "delta_s": 0.0,
+      "left_word": {
+        "text": "tricks.",
+        "start": 120.48,
+        "end": 120.98
+      },
+      "right_word": {
+        "text": "Traveling",
+        "start": 122.12,
+        "end": 122.48
+      },
+      "old_crossed_words": [],
+      "changed": false
+    },
+    {
+      "next_row": "P2:05b",
+      "old_s": 127.6,
+      "new_s": 125.76,
+      "delta_s": -1.84,
+      "left_word": {
+        "text": "stage,",
+        "start": 124.76,
+        "end": 125.24
+      },
+      "right_word": {
+        "text": "and",
+        "start": 125.76,
+        "end": 125.9
+      },
+      "old_crossed_words": [],
+      "changed": true
+    },
+    {
+      "next_row": "P2:06a",
+      "old_s": 134.9,
+      "new_s": 133.3,
+      "delta_s": -1.6,
+      "left_word": {
+        "text": "parties,",
+        "start": 132.18,
+        "end": 132.82
+      },
+      "right_word": {
+        "text": "something",
+        "start": 133.32,
+        "end": 133.7
+      },
+      "old_crossed_words": [],
+      "changed": true
+    },
+    {
+      "next_row": "P2:07a",
+      "old_s": 141.9,
+      "new_s": 139.52,
+      "delta_s": -2.38,
+      "left_word": {
+        "text": "and",
+        "start": 139.4,
+        "end": 139.48
+      },
+      "right_word": {
+        "text": "not",
+        "start": 139.54,
+        "end": 139.76
+      },
+      "old_crossed_words": [],
+      "changed": true
+    },
+    {
+      "next_row": "P2:07b_cg_timeline_42yr",
+      "old_s": 148.3,
+      "new_s": 147.5,
+      "delta_s": -0.8,
+      "left_word": {
+        "text": "noticed.",
+        "start": 146.82,
+        "end": 147.5
+      },
+      "right_word": {
+        "text": "In",
+        "start": 148.3,
+        "end": 148.4
+      },
+      "old_crossed_words": [],
+      "changed": true
+    },
+    {
+      "next_row": "P2:08a",
+      "old_s": 154.9,
+      "new_s": 154.9,
+      "delta_s": 0.0,
+      "left_word": {
+        "text": "neck.",
+        "start": 154.48,
+        "end": 154.84
+      },
+      "right_word": {
+        "text": "Long",
+        "start": 155.9,
+        "end": 156.1
+      },
+      "old_crossed_words": [],
+      "changed": false
+    },
+    {
+      "next_row": "P2:09a",
+      "old_s": 162.5,
+      "new_s": 162.5,
+      "delta_s": 0.0,
+      "left_word": {
+        "text": "worked.",
+        "start": 161.92,
+        "end": 162.42
+      },
+      "right_word": {
+        "text": "But",
+        "start": 163.32,
+        "end": 163.44
+      },
+      "old_crossed_words": [],
+      "changed": false
+    },
+    {
+      "next_row": "P2:09b_arch_long_1849",
+      "old_s": 166.14,
+      "new_s": 166.14,
+      "delta_s": 0.0,
+      "left_word": {
+        "text": "world.",
+        "start": 164.96,
+        "end": 165.44
+      },
+      "right_word": {
+        "text": "He",
+        "start": 166.14,
+        "end": 166.22
+      },
+      "old_crossed_words": [],
+      "changed": false
+    },
+    {
+      "next_row": "P2:10a",
+      "old_s": 170.5,
+      "new_s": 173.13,
+      "delta_s": 2.63,
+      "left_word": {
+        "text": "quietly,",
+        "start": 172.16,
+        "end": 172.74
+      },
+      "right_word": {
+        "text": "who",
+        "start": 173.52,
+        "end": 173.68
+      },
+      "old_crossed_words": [],
+      "changed": true
+    },
+    {
+      "next_row": "P3:01_card_p03",
+      "old_s": 175.66,
+      "new_s": 175.66,
+      "delta_s": 0.0,
+      "left_word": {
+        "text": "everyone?",
+        "start": 175.04,
+        "end": 175.62
+      },
+      "right_word": {
+        "text": "In",
+        "start": 176.52,
+        "end": 176.6
+      },
+      "old_crossed_words": [],
+      "changed": false
+    },
+    {
+      "next_row": "P3:02a",
+      "old_s": 177.8,
+      "new_s": 178.08,
+      "delta_s": 0.28,
+      "left_word": {
+        "text": "Connecticut,",
+        "start": 177.2,
+        "end": 177.88
+      },
+      "right_word": {
+        "text": "a",
+        "start": 178.28,
+        "end": 178.34
+      },
+      "old_crossed_words": [
+        "Connecticut,"
+      ],
+      "changed": true
+    },
+    {
+      "next_row": "P3:03a",
+      "old_s": 184.6,
+      "new_s": 184.6,
+      "delta_s": 0.0,
+      "left_word": {
+        "text": "1844.",
+        "start": 182.6,
+        "end": 183.76
+      },
+      "right_word": {
+        "text": "The",
+        "start": 184.6,
+        "end": 184.66
+      },
+      "old_crossed_words": [],
+      "changed": false
+    },
+    {
+      "next_row": "P3:03b",
+      "old_s": 190.5,
+      "new_s": 190.5,
+      "delta_s": 0.0,
+      "left_word": {
+        "text": "teeth.",
+        "start": 189.44,
+        "end": 189.9
+      },
+      "right_word": {
+        "text": "He",
+        "start": 190.5,
+        "end": 190.64
+      },
+      "old_crossed_words": [],
+      "changed": false
+    },
+    {
+      "next_row": "P3:04a",
+      "old_s": 195.08,
+      "new_s": 195.08,
+      "delta_s": 0.0,
+      "left_word": {
+        "text": "thrilled.",
+        "start": 193.68,
+        "end": 194.22
+      },
+      "right_word": {
+        "text": "A",
+        "start": 195.08,
+        "end": 195.14
+      },
+      "old_crossed_words": [],
+      "changed": false
+    },
+    {
+      "next_row": "P3:04b",
+      "old_s": 202.5,
+      "new_s": 202.74,
+      "delta_s": 0.24,
+      "left_word": {
+        "text": "wasn't",
+        "start": 202.46,
+        "end": 202.72
+      },
+      "right_word": {
+        "text": "enough,",
+        "start": 202.76,
+        "end": 203.24
+      },
+      "old_crossed_words": [
+        "wasn't"
+      ],
+      "changed": true
+    },
+    {
+      "next_row": "P3:05a",
+      "old_s": 209.92,
+      "new_s": 210.7,
+      "delta_s": 0.78,
+      "left_word": {
+        "text": "fake.",
+        "start": 209.5,
+        "end": 209.92
+      },
+      "right_word": {
+        "text": "But",
+        "start": 210.9,
+        "end": 211.06
+      },
+      "old_crossed_words": [],
+      "changed": true
+    },
+    {
+      "next_row": "P3:05b",
+      "old_s": 216.2,
+      "new_s": 218.7,
+      "delta_s": 2.5,
+      "left_word": {
+        "text": "idea.",
+        "start": 218.12,
+        "end": 218.56
+      },
+      "right_word": {
+        "text": "He",
+        "start": 219.52,
+        "end": 219.68
+      },
+      "old_crossed_words": [],
+      "changed": true
+    },
+    {
+      "next_row": "P3:06a",
+      "old_s": 223.8,
+      "new_s": 226.68,
+      "delta_s": 2.88,
+      "left_word": {
+        "text": "1846,",
+        "start": 225.14,
+        "end": 226.42
+      },
+      "right_word": {
+        "text": "Morton",
+        "start": 226.94,
+        "end": 227.34
+      },
+      "old_crossed_words": [
+        "sixteenth"
+      ],
+      "changed": true
+    },
+    {
+      "next_row": "P3:06b",
+      "old_s": 231.2,
+      "new_s": 231.89,
+      "delta_s": 0.69,
+      "left_word": {
+        "text": "globe.",
+        "start": 231.04,
+        "end": 231.6
+      },
+      "right_word": {
+        "text": "A",
+        "start": 232.18,
+        "end": 232.24
+      },
+      "old_crossed_words": [
+        "globe."
+      ],
+      "changed": true
+    },
+    {
+      "next_row": "P3:07a",
+      "old_s": 238.2,
+      "new_s": 238.97,
+      "delta_s": 0.77,
+      "left_word": {
+        "text": "mouth,",
+        "start": 238.34,
+        "end": 238.76
+      },
+      "right_word": {
+        "text": "and",
+        "start": 239.18,
+        "end": 239.28
+      },
+      "old_crossed_words": [
+        "his"
+      ],
+      "changed": true
+    },
+    {
+      "next_row": "P3:08a",
+      "old_s": 244.08,
+      "new_s": 244.08,
+      "delta_s": 0.0,
+      "left_word": {
+        "text": "asleep.",
+        "start": 242.62,
+        "end": 243.16
+      },
+      "right_word": {
+        "text": "The",
+        "start": 244.08,
+        "end": 244.18
+      },
+      "old_crossed_words": [],
+      "changed": false
+    },
+    {
+      "next_row": "P3:08b",
+      "old_s": 250.86,
+      "new_s": 250.86,
+      "delta_s": 0.0,
+      "left_word": {
+        "text": "move.",
+        "start": 249.68,
+        "end": 250.18
+      },
+      "right_word": {
+        "text": "When",
+        "start": 250.86,
+        "end": 250.94
+      },
+      "old_crossed_words": [],
+      "changed": false
+    },
+    {
+      "next_row": "P3:09a_arch_ether_dome_1847",
+      "old_s": 258.5,
+      "new_s": 258.5,
+      "delta_s": 0.0,
+      "left_word": {
+        "text": "humbug.\"",
+        "start": 257.68,
+        "end": 258.22
+      },
+      "right_word": {
+        "text": "The",
+        "start": 259.3,
+        "end": 259.36
+      },
+      "old_crossed_words": [],
+      "changed": false
+    },
+    {
+      "next_row": "P3:10a",
+      "old_s": 264.8,
+      "new_s": 263.97,
+      "delta_s": -0.83,
+      "left_word": {
+        "text": "Dome,",
+        "start": 263.2,
+        "end": 263.62
+      },
+      "right_word": {
+        "text": "and",
+        "start": 264.32,
+        "end": 264.4
+      },
+      "old_crossed_words": [],
+      "changed": true
+    },
+    {
+      "next_row": "P4:01_card_p04",
+      "old_s": 271.88,
+      "new_s": 271.88,
+      "delta_s": 0.0,
+      "left_word": {
+        "text": "Wrong.",
+        "start": 271.32,
+        "end": 271.78
+      },
+      "right_word": {
+        "text": "Morton",
+        "start": 272.7,
+        "end": 273.1
+      },
+      "old_crossed_words": [],
+      "changed": false
+    },
+    {
+      "next_row": "P4:02a",
+      "old_s": 274.0,
+      "new_s": 275.46,
+      "delta_s": 1.46,
+      "left_word": {
+        "text": "away.",
+        "start": 274.68,
+        "end": 275.16
+      },
+      "right_word": {
+        "text": "He",
+        "start": 275.76,
+        "end": 275.9
+      },
+      "old_crossed_words": [
+        "his"
+      ],
+      "changed": true
+    },
+    {
+      "next_row": "P4:02b",
+      "old_s": 281.36,
+      "new_s": 281.36,
+      "delta_s": 0.0,
+      "left_word": {
+        "text": "was.",
+        "start": 280.08,
+        "end": 280.56
+      },
+      "right_word": {
+        "text": "He",
+        "start": 281.36,
+        "end": 281.48
+      },
+      "old_crossed_words": [],
+      "changed": false
+    },
+    {
+      "next_row": "P4:03a_arch_letheon_patent",
+      "old_s": 285.8,
+      "new_s": 285.86,
+      "delta_s": 0.06,
+      "left_word": {
+        "text": "stories",
+        "start": 285.32,
+        "end": 285.84
+      },
+      "right_word": {
+        "text": "that",
+        "start": 285.88,
+        "end": 286.0
+      },
+      "old_crossed_words": [
+        "stories"
+      ],
+      "changed": true
+    },
+    {
+      "next_row": "P4:03b",
+      "old_s": 290.58,
+      "new_s": 290.58,
+      "delta_s": 0.0,
+      "left_word": {
+        "text": "it.",
+        "start": 289.44,
+        "end": 289.64
+      },
+      "right_word": {
+        "text": "But",
+        "start": 290.58,
+        "end": 290.72
+      },
+      "old_crossed_words": [],
+      "changed": false
+    },
+    {
+      "next_row": "P4:04a",
+      "old_s": 297.5,
+      "new_s": 297.5,
+      "delta_s": 0.0,
+      "left_word": {
+        "text": "hospital.",
+        "start": 296.22,
+        "end": 296.8
+      },
+      "right_word": {
+        "text": "A",
+        "start": 298.1,
+        "end": 298.16
+      },
+      "old_crossed_words": [],
+      "changed": false
+    },
+    {
+      "next_row": "P4:04b",
+      "old_s": 304.8,
+      "new_s": 304.8,
+      "delta_s": 0.0,
+      "left_word": {
+        "text": "letter.",
+        "start": 304.28,
+        "end": 304.7
+      },
+      "right_word": {
+        "text": "He",
+        "start": 305.9,
+        "end": 306.0
+      },
+      "old_crossed_words": [],
+      "changed": false
+    },
+    {
+      "next_row": "P4:04c_cg_anesthesia_etymology",
+      "old_s": 309.2,
+      "new_s": 309.2,
+      "delta_s": 0.0,
+      "left_word": {
+        "text": "pain,",
+        "start": 308.66,
+        "end": 309.0
+      },
+      "right_word": {
+        "text": "anesthesia,",
+        "start": 310.0,
+        "end": 310.96
+      },
+      "old_crossed_words": [],
+      "changed": false
+    },
+    {
+      "next_row": "P4:05a",
+      "old_s": 314.5,
+      "new_s": 314.5,
+      "delta_s": 0.0,
+      "left_word": {
+        "text": "feeling.",
+        "start": 313.68,
+        "end": 314.16
+      },
+      "right_word": {
+        "text": "Then",
+        "start": 315.04,
+        "end": 315.36
+      },
+      "old_crossed_words": [],
+      "changed": false
+    },
+    {
+      "next_row": "P4:05b",
+      "old_s": 320.0,
+      "new_s": 319.5,
+      "delta_s": -0.5,
+      "left_word": {
+        "text": "first.",
+        "start": 318.64,
+        "end": 319.16
+      },
+      "right_word": {
+        "text": "His",
+        "start": 319.84,
+        "end": 319.96
+      },
+      "old_crossed_words": [],
+      "changed": true
+    },
+    {
+      "next_row": "P4:06a_cg_master_timeline",
+      "old_s": 326.5,
+      "new_s": 326.94,
+      "delta_s": 0.44,
+      "left_word": {
+        "text": "Wells",
+        "start": 326.32,
+        "end": 326.8
+      },
+      "right_word": {
+        "text": "said",
+        "start": 327.08,
+        "end": 327.26
+      },
+      "old_crossed_words": [
+        "Wells"
+      ],
+      "changed": true
+    },
+    {
+      "next_row": "P4:07a",
+      "old_s": 333.9,
+      "new_s": 333.9,
+      "delta_s": 0.0,
+      "left_word": {
+        "text": "them.",
+        "start": 333.68,
+        "end": 333.88
+      },
+      "right_word": {
+        "text": "The",
+        "start": 334.78,
+        "end": 334.9
+      },
+      "old_crossed_words": [],
+      "changed": false
+    },
+    {
+      "next_row": "P4:07b",
+      "old_s": 338.2,
+      "new_s": 339.25,
+      "delta_s": 1.05,
+      "left_word": {
+        "text": "courtrooms,",
+        "start": 338.36,
+        "end": 339.06
+      },
+      "right_word": {
+        "text": "and",
+        "start": 339.44,
+        "end": 339.54
+      },
+      "old_crossed_words": [
+        "in"
+      ],
+      "changed": true
+    },
+    {
+      "next_row": "P4:08a",
+      "old_s": 342.44,
+      "new_s": 342.44,
+      "delta_s": 0.0,
+      "left_word": {
+        "text": "happy.",
+        "start": 342.0,
+        "end": 342.44
+      },
+      "right_word": {
+        "text": "So",
+        "start": 343.36,
+        "end": 343.52
+      },
+      "old_crossed_words": [],
+      "changed": false
+    },
+    {
+      "next_row": "P4:08b_arch_ether_monument",
+      "old_s": 349.5,
+      "new_s": 349.5,
+      "delta_s": 0.0,
+      "left_word": {
+        "text": "answer.",
+        "start": 348.22,
+        "end": 348.72
+      },
+      "right_word": {
+        "text": "In",
+        "start": 349.68,
+        "end": 349.74
+      },
+      "old_crossed_words": [],
+      "changed": false
+    },
+    {
+      "next_row": "P4:09a",
+      "old_s": 354.8,
+      "new_s": 354.8,
+      "delta_s": 0.0,
+      "left_word": {
+        "text": "ether.",
+        "start": 353.66,
+        "end": 354.04
+      },
+      "right_word": {
+        "text": "It",
+        "start": 354.86,
+        "end": 354.96
+      },
+      "old_crossed_words": [],
+      "changed": false
+    },
+    {
+      "next_row": "P4:09b",
+      "old_s": 360.2,
+      "new_s": 360.2,
+      "delta_s": 0.0,
+      "left_word": {
+        "text": "them.",
+        "start": 359.02,
+        "end": 359.22
+      },
+      "right_word": {
+        "text": "Meanwhile,",
+        "start": 360.34,
+        "end": 360.92
+      },
+      "old_crossed_words": [],
+      "changed": false
+    },
+    {
+      "next_row": "P5:01_card_p05",
+      "old_s": 366.26,
+      "new_s": 366.26,
+      "delta_s": 0.0,
+      "left_word": {
+        "text": "himself.",
+        "start": 365.58,
+        "end": 366.22
+      },
+      "right_word": {
+        "text": "On",
+        "start": 367.06,
+        "end": 367.14
+      },
+      "old_crossed_words": [],
+      "changed": false
+    },
+    {
+      "next_row": "P5:02a",
+      "old_s": 368.4,
+      "new_s": 371.03,
+      "delta_s": 2.63,
+      "left_word": {
+        "text": "London,",
+        "start": 370.46,
+        "end": 370.96
+      },
+      "right_word": {
+        "text": "Robert",
+        "start": 371.48,
+        "end": 371.72
+      },
+      "old_crossed_words": [
+        "December"
+      ],
+      "changed": true
+    },
+    {
+      "next_row": "P5:02b",
+      "old_s": 374.8,
+      "new_s": 374.8,
+      "delta_s": 0.0,
+      "left_word": {
+        "text": "himself.",
+        "start": 373.34,
+        "end": 373.96
+      },
+      "right_word": {
+        "text": "His",
+        "start": 375.08,
+        "end": 375.26
+      },
+      "old_crossed_words": [],
+      "changed": false
+    },
+    {
+      "next_row": "P5:03a_arch_squire_inhaler_1846",
+      "old_s": 381.2,
+      "new_s": 379.84,
+      "delta_s": -1.36,
+      "left_word": {
+        "text": "woke,",
+        "start": 378.9,
+        "end": 379.32
+      },
+      "right_word": {
+        "text": "he",
+        "start": 379.84,
+        "end": 379.9
+      },
+      "old_crossed_words": [],
+      "changed": true
+    },
+    {
+      "next_row": "P5:03b",
+      "old_s": 388.4,
+      "new_s": 387.8,
+      "delta_s": -0.6,
+      "left_word": {
+        "text": "delighted.",
+        "start": 387.0,
+        "end": 387.7
+      },
+      "right_word": {
+        "text": "He",
+        "start": 388.48,
+        "end": 388.54
+      },
+      "old_crossed_words": [],
+      "changed": true
+    },
+    {
+      "next_row": "P5:04a",
+      "old_s": 395.2,
+      "new_s": 395.2,
+      "delta_s": 0.0,
+      "left_word": {
+        "text": "hollow.\"",
+        "start": 394.36,
+        "end": 394.78
+      },
+      "right_word": {
+        "text": "The",
+        "start": 396.36,
+        "end": 396.48
+      },
+      "old_crossed_words": [],
+      "changed": false
+    },
+    {
+      "next_row": "P5:04b",
+      "old_s": 401.96,
+      "new_s": 401.96,
+      "delta_s": 0.0,
+      "left_word": {
+        "text": "fast.",
+        "start": 399.88,
+        "end": 400.44
+      },
+      "right_word": {
+        "text": "The",
+        "start": 401.96,
+        "end": 402.06
+      },
+      "old_crossed_words": [],
+      "changed": false
+    },
+    {
+      "next_row": "P5:05a",
+      "old_s": 409.5,
+      "new_s": 409.5,
+      "delta_s": 0.0,
+      "left_word": {
+        "text": "better.",
+        "start": 408.2,
+        "end": 408.64
+      },
+      "right_word": {
+        "text": "One",
+        "start": 409.94,
+        "end": 410.06
+      },
+      "old_crossed_words": [],
+      "changed": false
+    },
+    {
+      "next_row": "P5:05b",
+      "old_s": 416.2,
+      "new_s": 415.48,
+      "delta_s": -0.72,
+      "left_word": {
+        "text": "table,",
+        "start": 414.74,
+        "end": 415.16
+      },
+      "right_word": {
+        "text": "and",
+        "start": 415.8,
+        "end": 415.9
+      },
+      "old_crossed_words": [
+        "moments"
+      ],
+      "changed": true
+    },
+    {
+      "next_row": "P5:06a_arch_simpson_1847",
+      "old_s": 420.5,
+      "new_s": 420.5,
+      "delta_s": 0.0,
+      "left_word": {
+        "text": "floor.",
+        "start": 419.22,
+        "end": 419.56
+      },
+      "right_word": {
+        "text": "When",
+        "start": 420.9,
+        "end": 421.02
+      },
+      "old_crossed_words": [],
+      "changed": false
+    },
+    {
+      "next_row": "P5:06b",
+      "old_s": 426.8,
+      "new_s": 426.8,
+      "delta_s": 0.0,
+      "left_word": {
+        "text": "it.",
+        "start": 426.26,
+        "end": 426.5
+      },
+      "right_word": {
+        "text": "Then",
+        "start": 427.08,
+        "end": 427.44
+      },
+      "old_crossed_words": [],
+      "changed": false
+    },
+    {
+      "next_row": "P5:07a_arch_snow_chloroform_1858",
+      "old_s": 433.8,
+      "new_s": 429.63,
+      "delta_s": -4.17,
+      "left_word": {
+        "text": "1853,",
+        "start": 427.9,
+        "end": 429.16
+      },
+      "right_word": {
+        "text": "a",
+        "start": 429.64,
+        "end": 429.66
+      },
+      "old_crossed_words": [
+        "Victoria"
+      ],
+      "changed": true
+    },
+    {
+      "next_row": "P5:07b",
+      "old_s": 438.72,
+      "new_s": 437.6,
+      "delta_s": -1.12,
+      "left_word": {
+        "text": "Leopold.",
+        "start": 436.9,
+        "end": 437.52
+      },
+      "right_word": {
+        "text": "If",
+        "start": 438.72,
+        "end": 438.78
+      },
+      "old_crossed_words": [],
+      "changed": true
+    },
+    {
+      "next_row": "P5:08a",
+      "old_s": 444.14,
+      "new_s": 444.14,
+      "delta_s": 0.0,
+      "left_word": {
+        "text": "them.",
+        "start": 442.62,
+        "end": 442.94
+      },
+      "right_word": {
+        "text": "But",
+        "start": 444.14,
+        "end": 444.3
+      },
+      "old_crossed_words": [],
+      "changed": false
+    },
+    {
+      "next_row": "P5:09a",
+      "old_s": 451.8,
+      "new_s": 451.8,
+      "delta_s": 0.0,
+      "left_word": {
+        "text": "wrong?",
+        "start": 451.0,
+        "end": 451.36
+      },
+      "right_word": {
+        "text": "Today,",
+        "start": 452.72,
+        "end": 453.22
+      },
+      "old_crossed_words": [],
+      "changed": false
+    },
+    {
+      "next_row": "P5:09b_cg_safety_stadium",
+      "old_s": 458.5,
+      "new_s": 458.5,
+      "delta_s": 0.0,
+      "left_word": {
+        "text": "rare,",
+        "start": 457.62,
+        "end": 457.96
+      },
+      "right_word": {
+        "text": "about",
+        "start": 458.88,
+        "end": 459.26
+      },
+      "old_crossed_words": [],
+      "changed": false
+    },
+    {
+      "next_row": "P5:10a",
+      "old_s": 466.5,
+      "new_s": 465.74,
+      "delta_s": -0.76,
+      "left_word": {
+        "text": "people",
+        "start": 464.94,
+        "end": 465.42
+      },
+      "right_word": {
+        "text": "all",
+        "start": 466.06,
+        "end": 466.22
+      },
+      "old_crossed_words": [
+        "going"
+      ],
+      "changed": true
+    },
+    {
+      "next_row": "P5:11a",
+      "old_s": 474.0,
+      "new_s": 473.6,
+      "delta_s": -0.4,
+      "left_word": {
+        "text": "anesthetic.",
+        "start": 472.5,
+        "end": 473.3
+      },
+      "right_word": {
+        "text": "That's",
+        "start": 474.64,
+        "end": 474.9
+      },
+      "old_crossed_words": [],
+      "changed": true
+    },
+    {
+      "next_row": "P5:11b",
+      "old_s": 481.2,
+      "new_s": 481.2,
+      "delta_s": 0.0,
+      "left_word": {
+        "text": "time.",
+        "start": 480.34,
+        "end": 480.76
+      },
+      "right_word": {
+        "text": "They",
+        "start": 481.62,
+        "end": 481.76
+      },
+      "old_crossed_words": [],
+      "changed": false
+    },
+    {
+      "next_row": "P5:12a_cg_anesthetist_monitor",
+      "old_s": 485.8,
+      "new_s": 486.81,
+      "delta_s": 1.01,
+      "left_word": {
+        "text": "medicine",
+        "start": 486.08,
+        "end": 486.6
+      },
+      "right_word": {
+        "text": "so",
+        "start": 487.02,
+        "end": 487.16
+      },
+      "old_crossed_words": [
+        "adjusting"
+      ],
+      "changed": true
+    },
+    {
+      "next_row": "P5:13a",
+      "old_s": 491.2,
+      "new_s": 491.2,
+      "delta_s": 0.0,
+      "left_word": {
+        "text": "more.",
+        "start": 489.92,
+        "end": 490.22
+      },
+      "right_word": {
+        "text": "Why",
+        "start": 491.56,
+        "end": 491.76
+      },
+      "old_crossed_words": [],
+      "changed": false
+    },
+    {
+      "next_row": "P5:13b",
+      "old_s": 498.0,
+      "new_s": 497.05,
+      "delta_s": -0.95,
+      "left_word": {
+        "text": "be.",
+        "start": 496.18,
+        "end": 496.499
+      },
+      "right_word": {
+        "text": "Once",
+        "start": 497.6,
+        "end": 497.839
+      },
+      "old_crossed_words": [],
+      "changed": true
+    },
+    {
+      "next_row": "P5:14a",
+      "old_s": 504.2,
+      "new_s": 502.55,
+      "delta_s": -1.65,
+      "left_word": {
+        "text": "care,",
+        "start": 501.92,
+        "end": 502.32
+      },
+      "right_word": {
+        "text": "and",
+        "start": 502.78,
+        "end": 502.88
+      },
+      "old_crossed_words": [
+        "that"
+      ],
+      "changed": true
+    },
+    {
+      "next_row": "P5:14b",
+      "old_s": 510.34,
+      "new_s": 510.34,
+      "delta_s": 0.0,
+      "left_word": {
+        "text": "problem.",
+        "start": 508.9,
+        "end": 509.44
+      },
+      "right_word": {
+        "text": "Many",
+        "start": 510.34,
+        "end": 510.54
+      },
+      "old_crossed_words": [],
+      "changed": false
+    },
+    {
+      "next_row": "P5:15a",
+      "old_s": 516.5,
+      "new_s": 516.5,
+      "delta_s": 0.0,
+      "left_word": {
+        "text": "later.",
+        "start": 515.76,
+        "end": 516.2
+      },
+      "right_word": {
+        "text": "The",
+        "start": 517.36,
+        "end": 517.42
+      },
+      "old_crossed_words": [],
+      "changed": false
+    },
+    {
+      "next_row": "P5:16a",
+      "old_s": 524.2,
+      "new_s": 524.2,
+      "delta_s": 0.0,
+      "left_word": {
+        "text": "Lister.",
+        "start": 523.16,
+        "end": 523.6
+      },
+      "right_word": {
+        "text": "A",
+        "start": 524.66,
+        "end": 524.78
+      },
+      "old_crossed_words": [],
+      "changed": false
+    },
+    {
+      "next_row": "P5:16b_reuse_pocket_watch_to_globe",
+      "old_s": 528.2,
+      "new_s": 528.2,
+      "delta_s": 0.0,
+      "left_word": {
+        "text": "globe.",
+        "start": 527.04,
+        "end": 527.54
+      },
+      "right_word": {
+        "text": "Together,",
+        "start": 528.44,
+        "end": 529.0
+      },
+      "old_crossed_words": [],
+      "changed": false
+    },
+    {
+      "next_row": "P5:17_cream_end_card",
+      "old_s": 532.72,
+      "new_s": 532.72,
+      "delta_s": 0.0,
+      "left_word": {
+        "text": "sleep.",
+        "start": 532.3,
+        "end": 532.68
+      },
+      "right_word": null,
+      "old_crossed_words": [],
+      "changed": false
+    }
+  ],
+  "long_sentences": [
+    {
+      "start_s": 48.28,
+      "end_s": 58.82,
+      "midpoint_s": 53.55,
+      "text": "By the end of this film, you'll know how a party trick, a country doctor, and a room full of doubters turned surgery from a race into something you could sleep through.",
+      "cuts": [
+        {
+          "row": "P1:07b",
+          "s": 52.89,
+          "left": "doctor,",
+          "right": "and"
+        }
+      ]
+    },
+    {
+      "start_s": 78.66,
+      "end_s": 86.78,
+      "midpoint_s": 82.72,
+      "text": "Surgeons had wished for something better for centuries, and the strange thing is the answer had already been written down nearly fifty years earlier.",
+      "cuts": [
+        {
+          "row": "P1:09c",
+          "s": 81.68,
+          "left": "centuries,",
+          "right": "and"
+        }
+      ]
+    },
+    {
+      "start_s": 122.12,
+      "end_s": 130.94,
+      "midpoint_s": 126.53,
+      "text": "Traveling showmen let audiences breathe them on stage, and young people held ether frolics where guests staggered around laughing.",
+      "cuts": [
+        {
+          "row": "P2:05b",
+          "s": 125.76,
+          "left": "stage,",
+          "right": "and"
+        }
+      ]
+    },
+    {
+      "start_s": 223.5,
+      "end_s": 231.6,
+      "midpoint_s": 227.55,
+      "text": "On the sixteenth of October, 1846, Morton walked into the same Boston hospital carrying a glass globe.",
+      "cuts": [
+        {
+          "row": "P3:06a",
+          "s": 226.68,
+          "left": "1846,",
+          "right": "Morton"
+        }
+      ]
+    },
+    {
+      "start_s": 281.36,
+      "end_s": 289.64,
+      "midpoint_s": 285.5,
+      "text": "He called it Letheon after a river in the old Greek stories that made people forget, and he took out a patent on it.",
+      "cuts": [
+        {
+          "row": "P4:03a_arch_letheon_patent",
+          "s": 285.86,
+          "left": "stories",
+          "right": "that"
+        }
+      ]
+    },
+    {
+      "start_s": 305.9,
+      "end_s": 314.16,
+      "midpoint_s": 310.03,
+      "text": "He suggested a new word for this sleep without pain, anesthesia, from the Greek for without feeling.",
+      "cuts": [
+        {
+          "row": "P4:04c_cg_anesthesia_etymology",
+          "s": 309.2,
+          "left": "pain,",
+          "right": "anesthesia,"
+        }
+      ]
+    },
+    {
+      "start_s": 409.94,
+      "end_s": 419.56,
+      "midpoint_s": 414.75,
+      "text": "One evening, he and two friends sniffed a liquid called chloroform at his dinner table, and moments later, all three were out cold on the floor.",
+      "cuts": [
+        {
+          "row": "P5:05b",
+          "s": 415.48,
+          "left": "table,",
+          "right": "and"
+        }
+      ]
+    },
+    {
+      "start_s": 427.08,
+      "end_s": 437.52,
+      "midpoint_s": 432.3,
+      "text": "Then in 1853, a London doctor called John Snow gave chloroform to Queen Victoria for the birth of her son, Prince Leopold.",
+      "cuts": [
+        {
+          "row": "P5:07a_arch_snow_chloroform_1858",
+          "s": 429.63,
+          "left": "1853,",
+          "right": "a"
+        }
+      ]
+    },
+    {
+      "start_s": 452.72,
+      "end_s": 461.22,
+      "midpoint_s": 456.97,
+      "text": "Today, for a healthy adult, deaths caused by an anesthetic are very rare, about one in every hundred thousand.",
+      "cuts": [
+        {
+          "row": "P5:09b_cg_safety_stadium",
+          "s": 458.5,
+          "left": "rare,",
+          "right": "about"
+        }
+      ]
+    },
+    {
+      "start_s": 481.62,
+      "end_s": 490.22,
+      "midpoint_s": 485.92,
+      "text": "They watch every heartbeat and every breath, and they keep adjusting the medicine so you stay just asleep enough and no more.",
+      "cuts": [
+        {
+          "row": "P5:12a_cg_anesthetist_monitor",
+          "s": 486.81,
+          "left": "medicine",
+          "right": "so"
+        }
+      ]
+    },
+    {
+      "start_s": 497.6,
+      "end_s": 506.38,
+      "midpoint_s": 501.99,
+      "text": "Once the patient slept, surgeons could slow down, take care, and try operations that nobody would ever have dared before.",
+      "cuts": [
+        {
+          "row": "P5:14a",
+          "s": 502.55,
+          "left": "care,",
+          "right": "and"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source_plan": "PICTURE_PLAN_v02.json",
+    "source_plan_sha256": "4f0d69d282e81ad96f169345ac20f89e53eb8c402d54fb7b79eb07997e715c64",
+    "word_timings_sha256": "f7abac2d4bf6c58558eee80e6d201395640d0514988dcbeca795dd21dcf0d577",
+    "wav_verified_path": "/Users/benjaminoats/_desk/media/HOS/011_Surgery-Before-Anaesthesia/02_Voiceover/hos_011_vo_v01.wav",
+    "wav_verified_sha256": "d873f1d0c9158087fd61ce0b9f53de985055d778cd58b8df70c67c0701300ae2",
+    "wav_duration_s": 532.72,
+    "method": "Tracked Scribe word intervals, punctuation and clause joins; no listening or motion review. See RETIME_AUDIT_v03.json and J2655_RETIME_NOTES.md.",
+    "changed_boundaries": 37,
+    "script_or_audio_changed": false,
+    "generation_permission_changed": false
+  }
+}

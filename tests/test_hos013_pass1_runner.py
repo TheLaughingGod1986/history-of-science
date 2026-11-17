@@ -256,6 +256,41 @@ class ScopeOrderAndBatchTests(unittest.TestCase):
         with self.assertRaisesRegex(RUNNER.GuardError, "Part 01"):
             RUNNER.order_rows(non_p1)
 
+    def test_resume_after_first_15_verified_rows_starts_at_tortoise(self):
+        # Batches 1–3 completed: 12 Part 01 rows AND the first 3 Part 02 rows.
+        self.assertEqual([r.part for r in self.rows[:15]], [1] * 12 + [2] * 3)
+        ledger = [{"row_id": r.row_id} for r in self.rows[:15]]
+        with patch.object(RUNNER, "verified_output", return_value=True):
+            batch = RUNNER.next_batch(self.rows, ledger)
+        self.assertEqual(batch[0].row_id, "P2:05_tortoise_overboard")
+        self.assertEqual(batch, self.rows[15:20])
+        self.assertEqual(RUNNER.assert_batch_limits(batch), 500)
+
+    def test_resume_after_only_part1_starts_at_first_part2_row(self):
+        ledger = [{"row_id": r.row_id} for r in self.rows if r.part == 1]
+        self.assertEqual(len(ledger), 12)
+        with patch.object(RUNNER, "verified_output", return_value=True):
+            batch = RUNNER.next_batch(self.rows, ledger)
+        self.assertTrue(batch[0].row_id.startswith("P2:02"))
+        self.assertEqual(batch, self.rows[12:17])
+
+    def test_full_plan_without_part1_still_refused_when_resuming(self):
+        remainder = [r for r in self.rows if r.part != 1]
+        with self.assertRaisesRegex(RUNNER.GuardError, "Part 01"):
+            RUNNER.next_batch(remainder, [])
+        with self.assertRaisesRegex(RUNNER.GuardError, "Part 01"):
+            RUNNER.batch_rows(remainder)
+
+    def test_remainder_order_and_duplicates_are_refused(self):
+        remainder = self.rows[15:]
+        for bad in ([remainder[1], remainder[0], *remainder[2:]],
+                    [*remainder[:5], remainder[6], remainder[5], *remainder[7:]]):
+            with self.subTest(ids=[r.row_id for r in bad[:7]]):
+                with self.assertRaisesRegex(RUNNER.GuardError, "out-of-order"):
+                    RUNNER.batch_rows(bad, require_part1_first=False)
+        with self.assertRaisesRegex(RUNNER.GuardError, "duplicate"):
+            RUNNER.batch_rows([remainder[0], remainder[0]], require_part1_first=False)
+
     def test_batches_respect_5_rows_and_1000_credits(self):
         batches = RUNNER.batch_rows(self.rows)
         self.assertEqual(len(batches), 14)
@@ -530,6 +565,74 @@ class SharedAccountingLockAndDuplicateProcessTests(unittest.TestCase):
                 self.assertEqual(account.snapshot()["liability"], 12600)
                 account.reconcile_posted("HOS:013:P01:01_study_beaks:t1", evidence={"before": 14890, "after": 14790, "delta": 100})
                 self.assertEqual(account.snapshot()["liability"], 12500)
+
+    def test_dry_run_existing_reservation_does_not_double_count_cap(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            state = root / "accounting"
+            with RUNNER.SharedFlowAccounting(state) as account:
+                account.reserve("historical", "HOS:009", 800, live=20000)
+                account.intent("historical-charge", "historical", 800, live=20000)
+                account.resolve("historical-charge", submitted=True, evidence={"fixture": True})
+                account.reserve(RUNNER.DEFAULT_RESERVATION, RUNNER.FILM_ID, 6600, live=20000)
+                for row in range(15):
+                    charge = f"completed-{row}"
+                    account.intent(charge, RUNNER.DEFAULT_RESERVATION, 100, live=20000)
+                    account.resolve(charge, submitted=True, evidence={"fixture": True})
+                    account.reconcile_posted(charge, evidence={"fixture": True})
+            before = (state / "account.jsonl").read_bytes()
+            with patch.object(RUNNER, "verify_style_references", return_value={}), \
+                 patch.object(RUNNER, "verify_nas_archive_mounted", return_value=root), \
+                 patch.object(RUNNER, "latest_recorded_flow_balance", return_value={"left": 8940}):
+                report = RUNNER.build_dry_run_report(
+                    ROOT, media=root, archive_dir=root, floor=3000, accounting_state=state)
+                accounting = report["shared_accounting_readonly"]
+                self.assertEqual(accounting["remaining_reservations"], 5100)
+                self.assertEqual(accounting["unposted_charges"], 800)
+                self.assertEqual(accounting["total_liability"], 5900)
+                self.assertEqual(accounting["unreserved_013_cap"], 0)
+                self.assertEqual(accounting["projected_headroom_after_013_cap"], 3040)
+                self.assertTrue(accounting["would_allow_reserve_at_recorded_balance"])
+                for other, floor, allowed in [(40, 3000, True), (41, 3000, False), (0, 3041, False)]:
+                    with self.subTest(other=other, floor=floor):
+                        checked = RUNNER.build_dry_run_report(
+                            ROOT, media=root, archive_dir=root, other=other, floor=floor,
+                            accounting_state=state)["shared_accounting_readonly"]
+                        self.assertEqual(checked["would_allow_reserve_at_recorded_balance"], allowed)
+            self.assertEqual((state / "account.jsonl").read_bytes(), before)
+
+    def test_dry_run_new_reservation_keeps_full_cap_and_pending_guard(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            empty = RUNNER.SharedFlowAccounting.peek_readonly(root / "absent")
+            with patch.object(RUNNER, "verify_style_references", return_value={}), \
+                 patch.object(RUNNER, "verify_nas_archive_mounted", return_value=root), \
+                 patch.object(RUNNER.SharedFlowAccounting, "peek_readonly", return_value=empty), \
+                 patch.object(RUNNER, "latest_recorded_flow_balance") as balance:
+                for left, pending, allowed in [(9600, False, True), (9599, False, False),
+                                                (9600, True, False), (None, False, False)]:
+                    with self.subTest(left=left, pending=pending):
+                        balance.return_value = {"left": left} if left is not None else None
+                        empty["pending"] = pending
+                        checked = RUNNER.build_dry_run_report(
+                            ROOT, media=root, archive_dir=root, floor=3000)["shared_accounting_readonly"]
+                        self.assertEqual(checked["unreserved_013_cap"], 6600)
+                        self.assertEqual(checked["projected_headroom_after_013_cap"],
+                                         left - 6600 if left is not None else None)
+                        self.assertEqual(checked["would_allow_reserve_at_recorded_balance"], allowed)
+                balance.return_value = {"left": 20000}
+                for reservation, pending in [
+                    (dict(cap=6600, film=RUNNER.FILM_ID, active=True), True),
+                    (dict(cap=6600, film=RUNNER.FILM_ID, active=False), False),
+                    (dict(cap=6500, film=RUNNER.FILM_ID, active=True), False),
+                    (dict(cap=6600, film="HOS:009", active=True), False),
+                ]:
+                    with self.subTest(reservation=reservation, pending=pending):
+                        empty["reservations"] = {RUNNER.DEFAULT_RESERVATION: reservation}
+                        empty["pending"] = pending
+                        checked = RUNNER.build_dry_run_report(
+                            ROOT, media=root, archive_dir=root, floor=3000)["shared_accounting_readonly"]
+                        self.assertFalse(checked["would_allow_reserve_at_recorded_balance"])
 
     def test_writer_lock_and_two_process_accounting_competition(self):
         with tempfile.TemporaryDirectory() as tmp:

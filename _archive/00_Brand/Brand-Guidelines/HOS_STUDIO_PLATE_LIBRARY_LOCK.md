@@ -11,7 +11,7 @@
 4. **Always-fails in prompt:** lava drip / molten bead; unfinished flat cards; mid-crown unfinished Explorer hair.
 5. After **2 same-DNA FAILs** → new framing/start, not harder prompt only.
 6. **One plate per FAIL cycle** until that plate KEEP; then parallel remaining plates; **assemble last**.
-7. **Auth:** Mini CDP `benoats@googlemail.com` ULTRA only (not prepaid-dry / wrong account).
+7. **Auth:** Mini CDP `the studio Ultra account` ULTRA only (not prepaid-dry / wrong account).
 8. **Model tier:** **Veo 3.1 Quality** required for fragile CLEAN LIGHT remints (lamp / flask / emissive invent risk). **Fast** only for low-risk motion garnish. **Seedance is not a substitute.**
 
 ## Showrunner duty
@@ -70,7 +70,7 @@ Bake these into every Flow prompt for Empty Chairs / late desks / Explorer. UAT 
 
 ### 6 — One mint path
 
-- Mini CDP **`benoats@googlemail.com` ULTRA** only.
+- Mini CDP **`the studio Ultra account` ULTRA** only.
 - **STOP on passkey** → `STOP_TO_COS` (do not improvise auth).
 - Never **`benoats86`** for HOS Veo.
 - Ping Ben only after **full UAT PASS / ready to watch**.

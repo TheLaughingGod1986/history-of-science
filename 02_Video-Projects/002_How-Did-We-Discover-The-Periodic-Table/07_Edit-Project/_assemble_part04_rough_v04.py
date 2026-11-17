@@ -305,7 +305,7 @@ def main() -> None:
                 "sha256": digest,
                 "parent_v03_sha256": v03_sha,
                 "reminted_plates": reminted,
-                "flow_account": "benoats@googlemail.com",
+                "flow_account": "the studio Ultra account",
                 "p03_untouched_sha256": p03_sha,
                 "plate02b_picture_s": [plate02b_start, plate02b_end],
                 "columns_picture_s": [columns_start, columns_end],

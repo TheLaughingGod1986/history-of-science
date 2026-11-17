@@ -7,7 +7,7 @@
 **Dated:** 21 Sep 2026 · Europe/London (BST)  
 **Board:** `parts/part-03_plates_v01.json` (prompt baked forever)  
 **Quality:** Veo 3.1 **Quality** / CLEAN LIGHT  
-**Flow:** Mini only (`benoats@googlemail.com`); no cloud Flow  
+**Flow:** Mini only (`the studio Ultra account`); no cloud Flow  
 **P01 / P02 / other P03 KEEP plates:** untouched this cycle  
 **Soft notes (not blocking):** VO overhang; SOFT TISSUE typo on labels — do not block 07 remint / v02 rebuild.
 

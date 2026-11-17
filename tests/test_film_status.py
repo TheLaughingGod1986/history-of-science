@@ -1,0 +1,242 @@
+"""One status file per film (J2622): PIPELINE.json can become one file per film and come back with nothing lost.
+
+The converter is 00_Brand/Channel-Setup/tools/film_status.py. These hold the promise it makes: `join(split(x)) == x`
+for the real file and for awkward made-up ones, a film's file is in the shape Orbit With Ben's films use, and a film
+is never filed under a guessed folder when two carry its number.
+"""
+import copy
+import importlib.util
+import json
+import sys
+import tempfile
+import unittest
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+
+
+def load():
+    name = "hos_film_status"
+    if name in sys.modules:
+        return sys.modules[name]
+    spec = importlib.util.spec_from_file_location(name, ROOT / "00_Brand/Channel-Setup/tools/film_status.py")
+    module = importlib.util.module_from_spec(spec)
+    sys.modules[name] = module
+    spec.loader.exec_module(module)
+    return module
+
+
+fs = load()
+
+
+def whole_document() -> dict:
+    """Every film and the channel's own part: from PIPELINE.json while the channel still keeps it, and from the
+    per-film files once the switch is made. The promises below hold either way."""
+    return json.loads(fs.PIPELINE.read_text()) if fs.PIPELINE.exists() else fs.read()
+
+MADE_UP = {
+    "updated": "2026-11-11", "updated_by": "Claude", "board_url": "https://example.invalid/board",
+    "stages": [{"key": "script", "label": "Script", "weight": 60, "owner": "Grok"},
+               {"key": "edit", "label": "Edit", "weight": 40, "owner": "Cursor"}],
+    "next_steps": ["020: write the script"], "credits": [{"pool": "voice", "left": "1 of 2", "rule": "ask first"}],
+    "films": [
+        {"id": "020", "title": "How Penicillin Was Found", "air": "2027-01-21", "ready_by": "2027-01-17", "summary": "Planned.",
+         "stages": {"script": {"status": "doing", "owner": "Grok", "since": "2026-11-10T09:00", "underway": True,
+                               "steps": [2, 5], "steps_unit": "parts", "note": "part 3 next", "jobs": ["J1"]},
+                    "edit": {"status": "todo", "due": "2027-01-10", "waiting": "the script", "left": "2 days", "eta": "2027-01-12"}}},
+        {"id": "021", "title": "A film with nothing yet", "air": "", "ready_by": "", "summary": "",
+         "stages": {"script": {"status": "todo"}, "edit": {"status": "todo"}}},
+    ],
+}
+
+
+class RoundTrip(unittest.TestCase):
+    def test_the_real_file_comes_back_unchanged(self):
+        data = whole_document()
+        board, statuses = fs.split(data)
+        self.assertEqual(fs.join(board, statuses), data)
+        self.assertEqual(len(statuses), len(data["films"]))
+        self.assertNotIn("films", board)
+
+    def test_a_made_up_file_with_every_field_comes_back_unchanged(self):
+        before = copy.deepcopy(MADE_UP)
+        board, statuses = fs.split(MADE_UP)
+        self.assertEqual(fs.join(board, statuses), before)
+        self.assertEqual(MADE_UP, before)                               # and the input is not changed on the way
+
+    def test_an_order_that_is_not_by_number_is_kept(self):
+        data = dict(MADE_UP, films=list(reversed(MADE_UP["films"])))
+        board, statuses = fs.split(data)
+        self.assertEqual(board["film_order"], ["021", "020"])
+        self.assertEqual(fs.join(board, statuses), data)
+        self.assertNotIn("film_order", fs.split(MADE_UP)[0])            # by number: nothing extra is stored
+
+    def test_a_field_nobody_has_used_yet_survives(self):
+        data = copy.deepcopy(MADE_UP)
+        data["films"][0]["series"] = "medicine"
+        data["films"][0]["stages"]["edit"]["reviewer"] = "Claude"
+        data["a_new_top_level_thing"] = {"x": 1}
+        self.assertEqual(fs.join(*fs.split(data)), data)
+
+    def test_through_files_on_disk(self):
+        with tempfile.TemporaryDirectory() as t:
+            films, ideas, board_file = Path(t) / "02_Video-Projects", Path(t) / "ideas", Path(t) / "BOARD.json"
+            channel = Path(t) / "channel.json"
+            films.mkdir(), ideas.mkdir()
+            channel.write_text(json.dumps({"slug": "x", "stages": "from pipeline", "pipeline": {"kind": "pipeline_json", "path": "P.json"}}))
+            written = fs.write(MADE_UP, films, ideas, board_file, channel)
+            self.assertEqual(len(written), len(MADE_UP["films"]) + 2)
+            self.assertEqual(fs.read(films, board_file, channel), MADE_UP)
+            # the stage list is in the channel's settings, once, with the kind of job each stage is
+            settings = json.loads(channel.read_text())
+            self.assertEqual([s["key"] for s in settings["stages"]], ["script", "edit"])
+            self.assertEqual(settings["stages"][0], {"key": "script", "label": "Script", "weight": 60, "owner": "Grok", "kind": "script"})
+            self.assertEqual(settings["pipeline"], {"kind": "film_status", "path": "02_Video-Projects/*/status.json"})
+            self.assertEqual(settings["slug"], "x")                              # the rest of the settings is untouched
+            self.assertNotIn("stages", json.loads(board_file.read_text()))        # ... and not kept twice
+
+    def test_a_stage_with_no_kind_is_nobodys_to_route_and_still_comes_back(self):
+        stages = [{"key": "script", "label": "Script", "weight": 60, "owner": "Grok"}, {"key": "ben_ok", "label": "OK", "weight": 40, "owner": "Ben"}]
+        out = fs.stages_out(stages)
+        self.assertEqual((out[0]["kind"], "kind" in out[1]), ("script", False))
+        self.assertEqual(fs.stages_back(out), stages)
+
+    def test_every_kind_names_a_real_stage(self):
+        kept = json.loads(fs.CHANNEL.read_text())["stages"]                    # a list once the switch is made
+        stages = kept if isinstance(kept, list) else whole_document()["stages"]
+        self.assertEqual(sorted(set(fs.KINDS) - {s["key"] for s in stages}), [])
+
+    def test_a_status_file_written_the_old_way_is_named(self):
+        # Agents wrote `"status": "done"` in PIPELINE.json for a month. A film's own file says `state`.
+        cases = {
+            "stage 'script' must be written with `state`": {"film": "020", "stages": {"script": {"status": "done"}}},
+            "stage 'edit' must be written with `state`": {"film": "020", "stages": {"script": {"state": "done"}, "edit": {}}},
+            "stage 'vo' must be written with `state`": {"film": "020", "stages": {"vo": {"state": "done", "status": "done"}}},
+            "needs `film` (its number) and `stages`": {"title": "no number"},
+            "its folder carries another number": {"film": "021", "stages": {}},
+        }
+        for says, doc in cases.items():
+            with tempfile.TemporaryDirectory() as t:
+                films, board_file, channel = Path(t) / "02_Video-Projects", Path(t) / "BOARD.json", Path(t) / "channel.json"
+                (films / "020_X").mkdir(parents=True)
+                (films / "020_X" / "status.json").write_text(json.dumps(doc))
+                board_file.write_text("{}")
+                channel.write_text(json.dumps({"stages": [{"key": "script"}]}))
+                with self.assertRaises(ValueError) as stop:
+                    fs.read(films, board_file, channel)
+                self.assertIn(says, str(stop.exception))
+                self.assertIn("020_X/status.json", str(stop.exception))
+
+    def test_a_stage_list_that_is_not_in_the_settings_is_an_error_not_a_guess(self):
+        with tempfile.TemporaryDirectory() as t:
+            films, board_file, channel = Path(t) / "02_Video-Projects", Path(t) / "BOARD.json", Path(t) / "channel.json"
+            films.mkdir()
+            board_file.write_text("{}")
+            channel.write_text(json.dumps({"stages": "from pipeline"}))
+            with self.assertRaisesRegex(ValueError, "`stages` must list each stage"):
+                fs.read(films, board_file, channel)
+
+
+class OneFilmsFile(unittest.TestCase):
+    def test_it_is_in_the_shape_orbits_films_use(self):
+        doc = fs.to_status(MADE_UP["films"][0])
+        self.assertEqual(list(doc)[0], "film")
+        self.assertEqual((doc["film"], doc["title"], doc["air"]), ("020", "How Penicillin Was Found", "2027-01-21"))
+        self.assertEqual((doc["claims"], doc["next"]), ([], ""))
+        self.assertEqual(doc["stages"]["script"]["state"], "doing")
+        self.assertNotIn("status", doc["stages"]["script"])
+        self.assertNotIn("id", doc)
+
+    def test_what_this_channel_records_beyond_that_keeps_its_name(self):
+        doc = fs.to_status(MADE_UP["films"][0])
+        self.assertEqual((doc["ready_by"], doc["summary"]), ("2027-01-17", "Planned."))
+        self.assertEqual(doc["stages"]["script"]["steps"], [2, 5])
+        self.assertEqual(doc["stages"]["edit"]["waiting"], "the script")
+
+    def test_a_claim_or_a_next_line_written_later_is_not_lost_on_the_way_back(self):
+        doc = fs.to_status(MADE_UP["films"][0])
+        doc["claims"] = [{"by": "Cursor", "stage": "edit"}]
+        doc["next"] = "cut the opening"
+        film = fs.from_status(doc)
+        self.assertEqual((film["claims"], film["next"]), ([{"by": "Cursor", "stage": "edit"}], "cut the opening"))
+        self.assertEqual(fs.to_status(film), doc)
+
+    def test_a_stage_that_already_has_a_state_is_refused(self):
+        film = copy.deepcopy(MADE_UP["films"][1])
+        film["stages"]["script"]["state"] = "done"
+        with self.assertRaisesRegex(ValueError, "already has a `state`"):
+            fs.to_status(film)
+
+    def test_two_films_with_one_number_are_refused(self):
+        data = dict(MADE_UP, films=[MADE_UP["films"][0], dict(MADE_UP["films"][1], id="020")])
+        with self.assertRaisesRegex(ValueError, "two films share a number: 020"):
+            fs.split(data)
+
+
+class WhereAFilmsFileGoes(unittest.TestCase):
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(self.tmp.cleanup)
+        self.films, self.ideas = Path(self.tmp.name) / "02_Video-Projects", Path(self.tmp.name) / "ideas"
+        self.films.mkdir(), self.ideas.mkdir()
+
+    def test_the_folder_that_already_carries_its_number(self):
+        (self.films / "020_Penicillin-Fleming-Florey").mkdir()
+        (self.ideas / "020_Some-Other-Name").mkdir()
+        self.assertEqual(fs.folder_for(MADE_UP["films"][0], self.films, self.ideas), self.films / "020_Penicillin-Fleming-Florey")
+
+    def test_else_the_name_its_idea_folder_has(self):
+        (self.ideas / "020_Penicillin-Fleming-Florey").mkdir()
+        self.assertEqual(fs.folder_for(MADE_UP["films"][0], self.films, self.ideas), self.films / "020_Penicillin-Fleming-Florey")
+
+    def test_else_a_name_made_from_its_title(self):
+        self.assertEqual(fs.folder_for(MADE_UP["films"][0], self.films, self.ideas), self.films / "020_How-Penicillin-Was-Found")
+        self.assertEqual(fs.slug("DNA: the X-ray photo that showed it!"), "DNA-The-X-Ray-Photo-That")
+        self.assertEqual(fs.slug(""), "Untitled")
+
+    def test_two_folders_with_its_number_is_an_error_not_a_guess(self):
+        (self.films / "020_One").mkdir(), (self.films / "020_Two").mkdir()
+        with self.assertRaisesRegex(ValueError, "more than one film folder carries this number: 020_One, 020_Two"):
+            fs.folder_for(MADE_UP["films"][0], self.films, self.ideas)
+
+    def test_every_real_film_has_one_place(self):
+        data = whole_document()
+        where = fs.paths(data)
+        self.assertEqual(sorted(where), sorted(f["id"] for f in data["films"]))
+        self.assertEqual(len({p.parent for p in where.values()}), len(where))        # no two films in one folder
+        for fid, path in where.items():
+            self.assertTrue(path.parent.name.startswith(fid + "_"), path)
+            self.assertEqual(path.name, "status.json")
+
+
+class OnceTheSwitchIsMade(unittest.TestCase):
+    """With PIPELINE.json gone, the command reads the per-film files and says so. It no longer has anything to split."""
+
+    def run_it(self, argv, read):
+        import contextlib, io
+        from unittest import mock
+        out, err = io.StringIO(), io.StringIO()
+        with tempfile.TemporaryDirectory() as t, mock.patch.object(fs, "PIPELINE", Path(t) / "PIPELINE.json"), \
+                mock.patch.object(fs, "read", read), contextlib.redirect_stdout(out), contextlib.redirect_stderr(err):
+            return fs.main(argv), out.getvalue(), err.getvalue()
+
+    def test_check_reads_the_files_back(self):
+        code, out, err = self.run_it(["check"], lambda: copy.deepcopy(MADE_UP))
+        self.assertEqual((code, err), (0, ""))
+        self.assertIn("the films are kept in 2 status files", out)
+
+    def test_split_writes_nothing(self):
+        code, out, _ = self.run_it(["split", "--write"], lambda: copy.deepcopy(MADE_UP))
+        self.assertEqual(code, 0)
+        self.assertNotIn("write ", out)
+
+    def test_files_that_cannot_be_read_are_an_error(self):
+        def broken():
+            raise ValueError("020_X/status.json: needs `film` (its number) and `stages`")
+        code, out, err = self.run_it(["check"], broken)
+        self.assertEqual((code, out), (1, ""))
+        self.assertIn("020_X/status.json", err)
+
+
+if __name__ == "__main__":
+    unittest.main()

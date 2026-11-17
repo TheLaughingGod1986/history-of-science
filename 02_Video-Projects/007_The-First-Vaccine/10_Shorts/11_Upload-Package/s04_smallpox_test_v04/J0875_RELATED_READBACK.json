@@ -1,0 +1,37 @@
+{
+  "job": "J0875",
+  "channel": "UCXp7HkBIl1LgaznXuZHJyRg",
+  "shortId": "cLKDiYP55J8",
+  "shortTitle": "What Was the Edward Jenner Experiment?",
+  "targetLongId": "ETynHpIYLeY",
+  "targetLongTitle": "How Was the First Vaccine Made? (And Why It's Named After a Cow)",
+  "started": "2026-11-13T16:07:33.314Z",
+  "ended": "2026-11-13T16:08:20.693Z",
+  "action": "set_saved",
+  "picker": {
+    "open": true,
+    "via": "shorts-content-links-picker",
+    "dialog": true
+  },
+  "picked": "How Was the First Vaccine Made? (And Why It's Named After a Cow)",
+  "saved": "clicked",
+  "before": {
+    "url": "https://studio.youtube.com/video/cLKDiYP55J8/edit",
+    "relatedChunk": "Related video\nNone\nSubtitles",
+    "visibilityChunk": "Visibility\nPublic\nRelated video\nNone\nSubtitles",
+    "notKids": true,
+    "kids": false,
+    "alteredYes": true,
+    "saveDisabled": false
+  },
+  "after": {
+    "url": "https://studio.youtube.com/video/cLKDiYP55J8/edit",
+    "relatedChunk": "Related video\nHow Was the First Vaccine Made? (And Why It's Named After a Cow)\nSubtitles",
+    "visibilityChunk": "Visibility\nPublic\nRelated video\nHow Was the First Vaccine Made? (And Why It's Named After a Cow)\nSubtitles",
+    "notKids": true,
+    "kids": false,
+    "alteredYes": true,
+    "saveDisabled": true
+  },
+  "ok": true
+}

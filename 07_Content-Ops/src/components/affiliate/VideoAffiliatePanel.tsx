@@ -30,6 +30,22 @@ type SocialSnippet = {
   notes: string[];
 };
 
+type SocialSnippetResponse = {
+  snippets?: SocialSnippet[];
+  placementApproved: boolean;
+  videoSlug: string;
+};
+
+async function fetchSnippets(videoId: string): Promise<SocialSnippetResponse | null> {
+  try {
+    const res = await fetch(`/api/affiliate/social-snippets?videoId=${videoId}`);
+    const data = await res.json();
+    return res.ok ? data : null;
+  } catch {
+    return null; // Snippets are non-blocking.
+  }
+}
+
 export function VideoAffiliatePanel({
   videoId,
   placements: initial,
@@ -49,25 +65,26 @@ export function VideoAffiliatePanel({
     videoSlug: string;
   } | null>(null);
 
+  const applySnippets = useCallback((data: SocialSnippetResponse) => {
+    setSnippets(data.snippets || []);
+    setSnippetsMeta({
+      placementApproved: Boolean(data.placementApproved),
+      videoSlug: data.videoSlug,
+    });
+  }, []);
+
   const loadSnippets = useCallback(async () => {
-    try {
-      const res = await fetch(`/api/affiliate/social-snippets?videoId=${videoId}`);
-      const data = await res.json();
-      if (res.ok) {
-        setSnippets(data.snippets || []);
-        setSnippetsMeta({
-          placementApproved: Boolean(data.placementApproved),
-          videoSlug: data.videoSlug,
-        });
-      }
-    } catch {
-      /* non-blocking */
-    }
-  }, [videoId]);
+    const data = await fetchSnippets(videoId);
+    if (data) applySnippets(data);
+  }, [videoId, applySnippets]);
 
   useEffect(() => {
-    void loadSnippets();
-  }, [loadSnippets]);
+    let active = true;
+    void fetchSnippets(videoId).then((data) => {
+      if (active && data) applySnippets(data);
+    });
+    return () => { active = false; };
+  }, [videoId, applySnippets]);
 
   async function call(body: Record<string, unknown>) {
     setBusy(true);

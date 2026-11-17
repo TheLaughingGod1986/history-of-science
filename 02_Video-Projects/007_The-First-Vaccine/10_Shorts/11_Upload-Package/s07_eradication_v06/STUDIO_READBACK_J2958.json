@@ -1,0 +1,15 @@
+{
+  "job": "J2958",
+  "videoId": "jkUZpyO71lU",
+  "readAt": "2026-11-16T23:46Z",
+  "by": "claudecode",
+  "how": "HOS Studio edit page (CDP port 9460, the one existing tab reused), saved, then reloaded and read back",
+  "title": "How Was Smallpox Eradicated?",
+  "relatedVideo": {"set": "How Was the First Vaccine Made? (And Why It's Named After a Cow)", "videoId": "ETynHpIYLeY", "before": "None", "note": "the picker card chosen was the only one with this title and carried ETynHpIYLeY in its markup"},
+  "audience": "Not Made for Kids",
+  "alteredContent": "Yes",
+  "visibility": "Scheduled",
+  "publishAt": "2026-11-29T11:30:00Z (from the API read-back in API_READBACK_J2958.json)",
+  "captions": "en-GB serving (API_READBACK_J2958.json)",
+  "uploads": "one upload only, by the 23:18Z run; this run did not upload"
+}

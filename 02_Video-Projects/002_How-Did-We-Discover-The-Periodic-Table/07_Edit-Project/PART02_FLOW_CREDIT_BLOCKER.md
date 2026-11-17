@@ -1,8 +1,8 @@
 # Part 02 Flow credit / harvest notes (4 Sep 2026)
 
 ## Account
-- Use `benoats@googlemail.com` on `https://flow.google.com/u/1/` (AI credits fallback).
-- `benoats86@gmail.com` is Flow-credit-only and hits usage limits — do not mint there.
+- Use `the studio Ultra account` on `https://flow.google.com/u/1/` (AI credits fallback).
+- `the studio Ultra account` is Flow-credit-only and hits usage limits — do not mint there.
 
 ## Harvest (Agent UI)
 - Agent UI does **not** emit `getMediaUrlRedirect` ids after 100%.

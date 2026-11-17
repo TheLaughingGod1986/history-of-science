@@ -8,18 +8,14 @@ import { createPortal } from "react-dom";
 export type NavItem = { href: string; label: string };
 
 export function MobileNav({ items }: { items: NavItem[] }) {
-  const [open, setOpen] = useState(false);
-  const [mounted, setMounted] = useState(false);
   const pathname = usePathname();
+  // A route change creates a closed drawer and cleans up the previous body lock.
+  return <MobileNavDrawer key={pathname} items={items} pathname={pathname} />;
+}
+
+function MobileNavDrawer({ items, pathname }: { items: NavItem[]; pathname: string }) {
+  const [open, setOpen] = useState(false);
   const panelId = useId();
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  useEffect(() => {
-    setOpen(false);
-  }, [pathname]);
 
   useEffect(() => {
     if (!open) return;
@@ -36,7 +32,7 @@ export function MobileNav({ items }: { items: NavItem[] }) {
   }, [open]);
 
   const drawer =
-    open && mounted
+    open
       ? createPortal(
           <div
             className="fixed inset-0 z-[200] md:hidden"

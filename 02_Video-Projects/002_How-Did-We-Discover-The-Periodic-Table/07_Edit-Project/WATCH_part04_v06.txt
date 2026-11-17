@@ -25,4 +25,4 @@ bytes=76818977
 duration=127.760
 method=Veo 3.1 Fast T2V desk-only
 tries=1 accepted (Creates 2–3 crash-resubmits rejected)
-flow=benoats@googlemail.com
+flow=the studio Ultra account

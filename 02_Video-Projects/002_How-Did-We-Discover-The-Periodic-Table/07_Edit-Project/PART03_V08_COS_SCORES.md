@@ -3,7 +3,7 @@
 **Cut:** `hos_002_part03_rough_v08.mp4`  
 **Parent:** `hos_002_part03_rough_v07.mp4` sha `f39d794e…` (91490005 B · 89.680 s)  
 **Sheet:** `PART03_V08_SCRUB_MODEL_TOWN_BLOCKS.md`  
-**Landed:** 7 Sep 2026 Europe/London · Mini · Flow `benoats@googlemail.com` /u/1/ ULTRA  
+**Landed:** 7 Sep 2026 Europe/London · Mini · Flow `the studio Ultra account` /u/1/ ULTRA  
 **VO:** `part03_ruler_for_atoms_v01` unchanged  
 **Scores → CoS Picture→UAT only.** Do not ping Ben. No P04.
 

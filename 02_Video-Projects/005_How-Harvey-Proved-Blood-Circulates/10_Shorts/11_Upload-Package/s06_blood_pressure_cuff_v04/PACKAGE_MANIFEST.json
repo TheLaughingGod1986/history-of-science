@@ -1,0 +1,33 @@
+{
+  "format": "shorts",
+  "channel": "@HistoryOfScienceYT",
+  "title": "How Does a Blood Pressure Cuff Work?",
+  "description": "A blood pressure cuff squeezes your arm until the blood stops getting in, then lets go and listens for the moment it starts to flow again. It is William Harvey's tied band, the one he used to prove that your blood goes round.\n\nFull film:\nThe Tied Arm That Proved Your Blood Circulates\nhttps://www.youtube.com/watch?v=wwcjcFfC-5M\n\nPictures: AI-generated 3D scenes. Facts: every claim is checked against the sources for the full film.\n",
+  "tags": [
+    "how does a blood pressure cuff work",
+    "blood pressure cuff",
+    "blood pressure",
+    "william harvey",
+    "blood circulation",
+    "how blood circulates",
+    "history of medicine"
+  ],
+  "relatedVideoId": "wwcjcFfC-5M",
+  "privacy": "private",
+  "madeForKids": false,
+  "alteredContent": true,
+  "language": "en-GB",
+  "categoryId": "27",
+  "video": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/J2230/hos_005_s06_blood_pressure_cuff_v04.mp4",
+  "videoSha256": "7fe460307b4723e6801a6274e3390ab41e20a324052f4f6880bd2ef6a13aef35",
+  "thumbnail": "cover.jpg",
+  "captionsFile": "Captions/hos_005_s06_blood_pressure_cuff_v04.en-GB.srt",
+  "schedule": "2026-11-20T11:30:00Z",
+  "social": {
+    "hook": "A blood pressure cuff is Harvey's tied band.",
+    "question": "How does a blood pressure cuff work?",
+    "alt": "A blood pressure cuff wrapped round an arm; hook caption THE CUFF."
+  },
+  "note": "J2955. Ben OK'd J2230.1 (v04) on the board, 15 Nov 2026; queued by the acting Chief. New Private id, scheduled Fri 20 Nov 2026 11:30 London. Never Replace, never delete.",
+  "youtubeId": "Sq_lV89VMUs"
+}

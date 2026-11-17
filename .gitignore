@@ -127,9 +127,16 @@ node_modules/
 !02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/review_J1192_motion/*.png
 !02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/review_J2584_sheets/*.jpg
 
+# HOS 010 J2915 (ref J2271) R1-R6 Short replacement contact strips & 936x1664 crop sheets (stills only)
+!02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/07_Edit-Project/review_J2915_r1_r6/*.jpg
+
 # Login tokens and cookies never belong in a public repo (security pass, 9 Nov 2026)
 .elevenlabs_bearer
 *.bearer
 *_bearer
 *.cookies.json
 storage_state*.json
+
+# Built on demand from each film's status.json (J2622): python3 00_Brand/Channel-Setup/tools/status_board.py
+/STATUS.md
+/00_Brand/Channel-Setup/kanban/index.html

@@ -11,7 +11,7 @@
       "passkey": false,
       "sign_in_wall": true,
       "credits": null,
-      "snip": "Loading\nSign in with Google\nChoose an account\nto continue to AI Test Kitchen\nBenjamin Oats\nbenoats@googlemail.com\nBenjamin Oats\nbenoats86@gmail.com\nUse another account\nBefore using this app, you can review AI Test Kitchen\u2019s Privacy Policy and Terms of Service.\nEnglish (United States)\nHelp\nPrivacy\nTerms"
+      "snip": "Loading\nSign in with Google\nChoose an account\nto continue to AI Test Kitchen\nBenjamin Oats\nthe studio Ultra account\nBenjamin Oats\nthe studio Ultra account\nUse another account\nBefore using this app, you can review AI Test Kitchen\u2019s Privacy Policy and Terms of Service.\nEnglish (United States)\nHelp\nPrivacy\nTerms"
     },
     {
       "label": "0_after_googlemail",
@@ -23,7 +23,7 @@
       "passkey": true,
       "sign_in_wall": true,
       "credits": null,
-      "snip": "Loading\nSign in with Google\nWelcome\nbenoats@googlemail.com\nVerifying it\u2019s you...\nComplete sign-in using your passkey\nTry another way\nEnglish (United States)\nHelp\nPrivacy\nTerms\nWelcome"
+      "snip": "Loading\nSign in with Google\nWelcome\nthe studio Ultra account\nVerifying it\u2019s you...\nComplete sign-in using your passkey\nTry another way\nEnglish (United States)\nHelp\nPrivacy\nTerms\nWelcome"
     },
     {
       "label": "1",

@@ -1,0 +1,54 @@
+{
+  "job": "J2956",
+  "at": "2026-11-16T21:53:57.975Z",
+  "videoId": "fgsR8yAHr5s",
+  "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+  "title": "How Does the Heart Pump Blood?",
+  "privacy": "private",
+  "publishAt": "2026-11-22T11:30:00Z",
+  "uploadStatus": "processed",
+  "madeForKids": false,
+  "containsSyntheticMedia": null,
+  "language": "en-GB",
+  "audioLanguage": "en-GB",
+  "categoryId": "27",
+  "tags": [
+    "blood circulation",
+    "heart",
+    "history of medicine",
+    "how blood circulates",
+    "how does the heart pump blood",
+    "what causes a pulse",
+    "william harvey"
+  ],
+  "duration": "PT26S",
+  "hasCustomThumbnail": true,
+  "description": "The heart is a muscle, and it squeezes. Each squeeze pushes blood out into the arteries, and that push is the pulse you feel in your wrist. The blood comes back through the veins, round and round: your heart pumps all of it round your body in about a minute.\n\nFull film:\nThe Tied Arm That Proved Your Blood Circulates\nhttps://www.youtube.com/watch?v=wwcjcFfC-5M\n\nPictures: AI-generated 3D scenes. Facts: every claim is checked against the sources for the full film.",
+  "captionUpload": {
+    "ok": true,
+    "status": 200,
+    "id": "AUieDab7KjXP4O66tqbCVP1bmztY6Bbg32hdfBJjqWnJ-JEYHN9pF4cyTgpAPrLPbgdRmH2a02hsn8tvtqM",
+    "language": "en-GB",
+    "trackStatus": "serving",
+    "error": null
+  },
+  "captions": [
+    {
+      "id": "AUieDaatY5N6RxaKX8C0r92DZsg0s0-dYXWITbzQn-BjhvXp4Z0",
+      "language": "en",
+      "trackKind": "asr",
+      "status": "serving",
+      "isDraft": false,
+      "name": ""
+    },
+    {
+      "id": "AUieDab7KjXP4O66tqbCVP1bmztY6Bbg32hdfBJjqWnJ-JEYHN9pF4cyTgpAPrLPbgdRmH2a02hsn8tvtqM",
+      "language": "en-GB",
+      "trackKind": "standard",
+      "status": "serving",
+      "isDraft": false,
+      "name": "English (United Kingdom)"
+    }
+  ],
+  "captionError": null
+}

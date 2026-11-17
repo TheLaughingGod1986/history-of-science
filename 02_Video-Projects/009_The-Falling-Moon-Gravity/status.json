@@ -1,0 +1,82 @@
+{
+  "film": "009",
+  "title": "Why Doesn't the Moon Fall to Earth?",
+  "air": "2026-11-26",
+  "ready_by": "2026-11-22",
+  "summary": "J1237 tranche1 Chief PASS retained: 57 Flow +12 code graphics +1 reuse =70/90 recorded rows; 20 Quality rows remain. J2026 authorizes bounded tranche2 now (live15430;100/take;cap6000;floor3000), replacing renewal-only wait. J2033 generation -> J2034 picture review -> J2035 edit -> J2036 package QA -> J2037 Ben finished-film watch. Long VO locked; Shorts J0862 separate. No new milestone completion.",
+  "stages": {
+    "topic": {
+      "state": "done"
+    },
+    "script": {
+      "state": "done",
+      "note": "v01, 91.3"
+    },
+    "facts": {
+      "state": "done",
+      "note": "Existing done retained, not newly verified by J2026. production-status FACT_NOTES hard-checks7/7 but historical Claude signature marked UNSIGNED; final QA reconciles source evidence without inventing a new sign-off."
+    },
+    "package": {
+      "state": "done"
+    },
+    "vo": {
+      "state": "done",
+      "due": "2026-10-14",
+      "owner": "Cursor",
+      "note": "long VO locked 11 Oct: 5 parts v01, 508 s speech; Chief KEEP all five, no pickups (VO_TAKES_KEEP.json, desk 6101629662)",
+      "steps": [
+        5,
+        5
+      ],
+      "steps_unit": "parts passed",
+      "underway": false
+    },
+    "shorts_scripts": {
+      "state": "done",
+      "note": "v02 (test B): two search-titled Shorts, 9 Oct"
+    },
+    "shorts_vo": {
+      "state": "done",
+      "due": "2026-10-08",
+      "owner": "gemini",
+      "note": "J0862/J2279/J2281 PASS (PR #423): Short A v02 (c2fd407d, 25.32 s, hook 2.800 s) + Short B v04 (0c9c4c6f MP3 / a6666fd2 WAV, 25.48 s w/ tail, hook 2.820 s) directly auditioned and vo_check_py312 PASS. J2171 assembles Shorts A/B.",
+      "underway": false
+    },
+    "picture": {
+      "state": "doing",
+      "due": "2026-11-15",
+      "owner": "Grok (J2632 revised sheet and timing ruling)",
+      "note": "J1237 tranche1 PASS; all57 original Flow hashes reverified local/NAS. 70/90 recorded rows unchanged. J2033 owns remaining20 Quality rows under J2026 cap6000/max3 takes each/floor3000; J2034 independent picture review. Generated is not approved. J2632: revised candidate has179 unique30fps frames,21 drawn head frames and two open rings. Parent out104 evidence supplied.0.175s parent/head frame-rate mismatch flagged; not KEEP. J2631 already KEEP. Approved count unchanged.",
+      "since": "2026-11-11",
+      "underway": false,
+      "waiting": "Grok ruling on the0.175s timing mismatch and revised J2632 sheets on PR543; no splice. Other picture review requirements remain.",
+      "steps": [
+        70,
+        90
+      ],
+      "steps_unit": "board rows recorded: 57 accepted Flow +12 code graphics +1 reuse; 20 Quality remain"
+    },
+    "edit": {
+      "state": "todo",
+      "due": "2026-11-19",
+      "owner": "Mini audio worker (J2664); assembly J2035 held",
+      "waiting": "J2664 own score production and capable audio review under SCORE_SCOPE_J2663.json; J2035 remains held until files, provenance and gate evidence exist.",
+      "underway": false,
+      "note": "J2663 approved two Music v2 cues: wonder 180s + teach 360s, one take each, aggregate cap30000 subscription credits and £0 cash; duration-based cost/overage preflight required. No music generated or audio PASS claimed."
+    },
+    "thumbnails": {
+      "state": "todo",
+      "due": "2026-11-19"
+    },
+    "ben_ok": {
+      "state": "todo",
+      "due": "2026-11-22"
+    },
+    "scheduled": {
+      "state": "todo",
+      "due": "2026-11-23"
+    }
+  },
+  "claims": [],
+  "next": ""
+}

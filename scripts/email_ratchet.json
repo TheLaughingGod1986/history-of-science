@@ -1,0 +1,20 @@
+{
+  "_note": "Files that already contained a personal email address on 10 Nov 2026. Paths only. This list may only get shorter: scripts/test_email_ratchet.py refuses any file that is not on it.",
+  "files": [
+    "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/FLOW_MINT_LOG_v03.json",
+    "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/J2217_AMEND.md",
+    "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_build_rough_v13_recipe.py",
+    "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_mint_flow_v03.py",
+    "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/parts/part-01_plates_v01.json",
+    "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/parts/part-02_plates_v01.json",
+    "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/parts/part-03_plates_v01.json",
+    "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/parts/part-04_plates_v01.json",
+    "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/parts/part-05_plates_v01.json",
+    "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/FLOW_MINT_LOG_v04_tranche1.json",
+    "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/PICTURE_PLAN_v02.json",
+    "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/PRICE_REVIEW_v02.md",
+    "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/_build_plate_boards_v02.py",
+    "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/_mint_flow_v04_tranche1.py",
+    "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/_mint_flow_v05_tranche2.py"
+  ]
+}

@@ -2317,11 +2317,11 @@
   },
   "board": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/07_Edit-Project/parts/part-05_plates_v02.json",
   "flow_ultra": {
-    "account": "benoats@googlemail.com",
+    "account": "the studio Ultra account",
     "profile": "~/.hos-chrome-flow-benoats-googlemail-cdp",
     "cdp": "http://127.0.0.1:9222",
     "credits_before": 12,
-    "account_confirmed": "benoats@googlemail.com",
+    "account_confirmed": "the studio Ultra account",
     "gate_shot": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/004_Whats-Really-Inside-An-Atom/07_Edit-Project/_qa_part05_mint_v01/gate_auth_ok.png"
   },
   "updated_at": "2026-09-29T10:16:07.215698+00:00",
@@ -2478,7 +2478,7 @@
     },
     "location": "us-central1",
     "doc": "07_Edit-Project/PART05_VERTEX_SETUP.md",
-    "account": "benoats@googlemail.com",
+    "account": "the studio Ultra account",
     "project": "gen-lang-client-0538779324",
     "project_name": "History of Science",
     "billing_account": "billingAccounts/0124D1-E6EFD6-40F6DA",

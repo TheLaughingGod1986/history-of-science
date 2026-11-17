@@ -1,0 +1,28 @@
+1
+00:00:00,000 --> 00:00:01,290
+On the 8th of May 1980,
+
+2
+00:00:01,740 --> 00:00:05,040
+the world's health leaders declared that smallpox was gone.
+
+3
+00:00:05,590 --> 00:00:09,305
+Health workers travelled to every country where smallpox still
+
+4
+00:00:09,305 --> 00:00:12,902
+lived, vaccinating everyone around each new case until there
+
+5
+00:00:12,902 --> 00:00:14,730
+was nowhere left for it to go.
+
+6
+00:00:15,280 --> 00:00:18,292
+And because no one alive today needs a vaccine against
+
+7
+00:00:18,292 --> 00:00:20,920
+smallpox, most of us have never seen it at all.
+

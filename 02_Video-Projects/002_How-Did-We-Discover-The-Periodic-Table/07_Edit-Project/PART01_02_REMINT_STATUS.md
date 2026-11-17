@@ -15,7 +15,7 @@
 ## Engine blockers (report to CoS — do not ping Ben)
 
 1. **Gemini API prepaid dry** — `429 RESOURCE_EXHAUSTED` / prepayment depleted.
-2. **Flow Veo 3.1 Fast daily quota reached** (account `benoats86@gmail.com`) — UI: *"your account has reached its daily quota for the Veo 3.1 - Fast model"*. Create fails; not charged. Agent also suggests Omni Flash (forbidden for HOS CG).
+2. **Flow Veo 3.1 Fast daily quota reached** (account `the studio Ultra account`) — UI: *"your account has reached its daily quota for the Veo 3.1 - Fast model"*. Create fails; not charged. Agent also suggests Omni Flash (forbidden for HOS CG).
 3. Flow Agent Create path still flaky (navigation / Failed to render) when quota allows.
 
 ## Resume when

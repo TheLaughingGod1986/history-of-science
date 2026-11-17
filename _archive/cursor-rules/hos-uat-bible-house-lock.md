@@ -35,7 +35,7 @@ alwaysApply: true
 - **No lamp lava drip** extends **lamp = clean warm glow** — light stays light, not molten leak under the bulb. Ben `v19` evening stills prove this cannot be soft-passed.
 - **Late-shot horizontal ghosts** and **garbled cards** / **face blot** clarify finish bars that soft-passed on P04 Empty Chairs `v17` stills — do not weaken prior ALWAYS.
 - **Finished 3D cartoon quality** clarifies the house finish bar that soft-passed on P04 Empty Chairs `v19` evening stills — do not weaken prior ALWAYS.
-- **Plate-library studio lock** (`HOS_STUDIO_PLATE_LIBRARY_LOCK.md`) is the standing mint **process** (KEEP DNA · continuous plate UAT before assemble · Flow-only · hard lava/flat/crown fails · stop same-DNA after 2 FAILs · Mini CDP `benoats@googlemail.com` ULTRA · **Veo 3.1 Quality** for fragile CLEAN LIGHT — not Fast; Seedance not substitute). It does not replace these ALWAYS checks.
+- **Plate-library studio lock** (`HOS_STUDIO_PLATE_LIBRARY_LOCK.md`) is the standing mint **process** (KEEP DNA · continuous plate UAT before assemble · Flow-only · hard lava/flat/crown fails · stop same-DNA after 2 FAILs · Mini CDP `the studio Ultra account` ULTRA · **Veo 3.1 Quality** for fragile CLEAN LIGHT — not Fast; Seedance not substitute). It does not replace these ALWAYS checks.
 
 ## Do not
 

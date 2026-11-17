@@ -5,7 +5,7 @@
 ## Auth (first 2 minutes)
 
 - Attached live Mini Chrome CDP `http://127.0.0.1:9222` (`Chrome-OrbitStudio`)
-- Account: `benoats@googlemail.com` · ULTRA · **8590** credits
+- Account: `the studio Ultra account` · ULTRA · **8590** credits
 - No passkey wall · did **not** open a fresh Playwright profile · did **not** use `benoats86`
 
 Evidence: `07_Edit-Project/_qa_part04_v19_auth/auth_gate_pre_mint.json`

@@ -1,0 +1,56 @@
+{
+  "film": "004",
+  "title": "What's Really Inside an Atom?",
+  "air": "2026-10-15",
+  "ready_by": "2026-09-29",
+  "summary": "Finished and scheduled: long `GHZDsiH7L7A` airs Thu 15 Oct 18:00 (Premiere off). Test & Compare A/B/C armed 9 Oct but C (v07) has no OK; v07b (52/53 about 2x) is J0106, due Tue 13 Oct. The Chief OKs it and swaps it in by Wed 14 Oct 18:00, or pair 2 comes out, leaving A and B (desk #180). No other Studio changes on 004 until then; pin and Related at 18:05 on air day.",
+  "stages": {
+    "topic": {
+      "state": "done"
+    },
+    "script": {
+      "state": "done"
+    },
+    "facts": {
+      "state": "done"
+    },
+    "package": {
+      "state": "done"
+    },
+    "vo": {
+      "state": "done"
+    },
+    "shorts_scripts": {
+      "state": "done"
+    },
+    "shorts_vo": {
+      "state": "done"
+    },
+    "picture": {
+      "state": "done"
+    },
+    "edit": {
+      "state": "done",
+      "note": "master v02"
+    },
+    "thumbnails": {
+      "state": "doing",
+      "owner": "Cursor",
+      "due": "2026-10-13",
+      "since": "2026-10-09",
+      "note": "A + B live in the armed test; C v07 armed but not OK'd. v07b re-letter (no spend) is J0106; Chief's OK by Wed 14 Oct 18:00, else pair 2 comes out",
+      "waiting": "J0106: C v07b file (don't touch the armed test), then the Chief's OK",
+      "underway": false
+    },
+    "ben_ok": {
+      "state": "done",
+      "note": "long OK'd before upload (29 Sep); thumb C is the Chief's call now"
+    },
+    "scheduled": {
+      "state": "done",
+      "note": "Thu 15 Oct 18:00; pin + Related at 18:05"
+    }
+  },
+  "claims": [],
+  "next": ""
+}

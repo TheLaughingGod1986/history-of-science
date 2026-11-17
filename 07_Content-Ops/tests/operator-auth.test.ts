@@ -4,7 +4,7 @@ import {
   requireOperator,
   safeOperatorNextPath,
 } from "../src/lib/security/operator-auth";
-import { middleware } from "../src/middleware";
+import { proxy as middleware } from "../src/proxy";
 import { NextRequest } from "next/server";
 
 const ORIGINAL = {

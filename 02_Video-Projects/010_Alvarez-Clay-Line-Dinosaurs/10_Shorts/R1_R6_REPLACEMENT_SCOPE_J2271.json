@@ -1,0 +1,181 @@
+{
+  "job": "J2271",
+  "film": "HOS:010",
+  "generation_authorized": false,
+  "status": "SCOPED_NOT_AUTHORIZED",
+  "reservation_id": "HOS010_R1_R6_PLATES_J2271",
+  "released_prior_reservations_forbidden": [
+    "HOS010_TWELVE_PLATES_J2270"
+  ],
+  "desk_rulings": [
+    "6889364319",
+    "6889440776",
+    "6893147101",
+    "6893169788",
+    "6893259531"
+  ],
+  "budget": {
+    "row_count": 6,
+    "credits_per_row": 100,
+    "max_takes_per_row": 1,
+    "total_cap_credits": 600,
+    "minimum_balance_after_cap_and_other_reservations": 3000,
+    "max_rows_per_batch": 5,
+    "max_credits_per_batch": 500
+  },
+  "guards": [
+    "No generation until explicit Chief go on HOS desk #180 after Check 4 dry-run review (generation_authorized=true or signed Chief authorization file) AND HOS010_R1_R6_PLATES_SUBMIT=1.",
+    "Acquire shared Flow writer lock (~/_desk/state/flow/shared/writer.lock). Reserve under new id HOS010_R1_R6_PLATES_J2271 (cap 600); never reuse released HOS010_TWELVE_PLATES_J2270 and never hand-edit account.jsonl.",
+    "Read live studio Ultra account digest, live balance, and Veo 3.1 - Quality x1 8s 16:9 100-credit price before each batch. Preserve >= 3,000 credits after all active reservations, unposted charges, and the 600-credit cap.",
+    "Write new outputs to v02_r1_r6_plates / archive_v02_r1_r6_plates as t2 so v01_twelve_plates t1 clips (including Long Part 04/05 candidates P4:06_dust_veil, P5:08_all_at_once, P5:12_clay_callback) remain untouched.",
+    "Every generated take is recorded as GENERATED / PENDING_REVIEW / keep=false. Stills go to a review branch for Claude/Chief KEEP sign-off before J2172 assembly."
+  ],
+  "rows": [
+    {
+      "repair_id": "R1",
+      "row_id": "P2:05_almost_none",
+      "part": 2,
+      "plate_id": "05_almost_none",
+      "take": 2,
+      "charge_id": "HOS:010:R1:P02:05_almost_none:t2",
+      "quality": "Quality",
+      "model": "Veo 3.1 - Quality",
+      "aspect": "16:9",
+      "duration": "8s",
+      "clip_s": 8,
+      "outputs": "x1",
+      "max_takes": 1,
+      "credits": 100,
+      "explorer": false,
+      "reference": "set A continuity; 0-credit Nano Banana 2.1 start still if not already staged",
+      "short_targets": [
+        "Short_A:S04 (9.549-13.269s, 3.720s; or 9.989-13.129s, 3.140s under Option A1-7B)"
+      ],
+      "spoken_line": "shells. Above it, almost all of them are gone.",
+      "prompt": "Premium Animistry-class 3D cartoon. Frame 0: a brass hand lens is already positioned over the pale limestone layer directly above the thin dark Gubbio clay band on a sunlit wooden study table. Through the lens, the pale upper limestone is almost completely bare and empty, with only one or two tiny pinpoint specks, contrasting with the dark clay line visible along the lower edge of the rock block. The hand glides the magnifying glass slowly across the nearly empty upper limestone layer for the entire shot. Keep the lens and upper limestone centered in the middle third of the 16:9 frame. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "generation_authorized": false
+    },
+    {
+      "repair_id": "R2",
+      "row_id": "P4:06_dust_veil",
+      "part": 4,
+      "plate_id": "06_dust_veil",
+      "take": 2,
+      "charge_id": "HOS:010:R2:P04:06_dust_veil:t2",
+      "quality": "Quality",
+      "model": "Veo 3.1 - Quality",
+      "aspect": "16:9",
+      "duration": "8s",
+      "clip_s": 8,
+      "outputs": "x1",
+      "max_takes": 1,
+      "credits": 100,
+      "explorer": false,
+      "reference": "set G continuity; 0-credit Nano Banana 2.1 start still",
+      "short_targets": [
+        "Short_A:S07 (19.289-22.289s, 3.000s)",
+        "Short_C:S02 (1.880-5.200s, 3.320s)"
+      ],
+      "spoken_line": "Short_A:S07: 'Something huge had hit the Earth' | Short_C:S02: 'When the asteroid struck sixty-six million years ago,'",
+      "prompt": "Premium Animistry-class 3D cartoon. Frame 0: a massive glowing asteroid streaks down through the clouds above a prehistoric Cretaceous coastline and strikes the horizon in a blinding golden-white flash, sending a towering incandescent plume of rock and dust surging upward into the sky. Keep the descending asteroid and rising impact plume centered in the middle third of the 16:9 frame. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "generation_authorized": false
+    },
+    {
+      "repair_id": "R3",
+      "row_id": "P5:08_all_at_once",
+      "part": 5,
+      "plate_id": "08_all_at_once",
+      "take": 2,
+      "charge_id": "HOS:010:R3:P05:08_all_at_once:t2",
+      "quality": "Quality",
+      "model": "Veo 3.1 - Quality",
+      "aspect": "16:9",
+      "duration": "8s",
+      "clip_s": 8,
+      "outputs": "x1",
+      "max_takes": 1,
+      "credits": 100,
+      "explorer": false,
+      "reference": "set I continuity; 0-credit Nano Banana 2.1 start still",
+      "short_targets": [
+        "Short_C:S04 (7.920-10.420s, 2.500s)"
+      ],
+      "spoken_line": "Their descendants are all around you now:",
+      "prompt": "Premium Animistry-class 3D cartoon. Frame 0: a sunlit British morning garden and stone lane alive with everyday birds in the middle third of the frame—sparrows and finches hopping on a mossy stone wall while a blackbird and starlings flutter between leafy branches in warm golden daylight. Gentle camera push-in keeping the birds centered in the middle 9:16 band. No readable words or numbers anywhere. Silent. Continuous natural bird and camera motion through the final frame. No Explorer. No Orbit.",
+      "generation_authorized": false
+    },
+    {
+      "repair_id": "R4",
+      "row_id": "P5:12_clay_callback",
+      "part": 5,
+      "plate_id": "12_clay_callback",
+      "take": 2,
+      "charge_id": "HOS:010:R4:P05:12_clay_callback:t2",
+      "quality": "Quality",
+      "model": "Veo 3.1 - Quality",
+      "aspect": "16:9",
+      "duration": "8s",
+      "clip_s": 8,
+      "outputs": "x1",
+      "max_takes": 1,
+      "credits": 100,
+      "explorer": false,
+      "reference": "set I continuity; 0-credit Nano Banana 2.1 start still",
+      "short_targets": [
+        "Short_C:S08 (19.380-22.560s, 3.180s)"
+      ],
+      "spoken_line": "Look up. They never really left",
+      "prompt": "Premium Animistry-class 3D cartoon. Frame 0: looking up past sunlit green garden treetops into a luminous morning sky as a graceful flock of birds—swifts, robins, and gulls—wheels and soars overhead across warm golden sunbeams in the middle third of the 16:9 frame. Smooth upward camera tilt tracking the soaring birds through the sky. No readable words or numbers anywhere. Silent. Continuous natural flight and camera motion through the final frame. No Explorer. No Orbit.",
+      "generation_authorized": false
+    },
+    {
+      "repair_id": "R5",
+      "row_id": "P5:10_explorer_robin",
+      "part": 5,
+      "plate_id": "10_explorer_robin",
+      "take": 2,
+      "charge_id": "HOS:010:R5:P05:10_explorer_robin:t2",
+      "quality": "Quality",
+      "model": "Veo 3.1 - Quality",
+      "aspect": "16:9",
+      "duration": "8s",
+      "clip_s": 8,
+      "outputs": "x1",
+      "max_takes": 1,
+      "credits": 100,
+      "explorer": true,
+      "reference": "01_Character/05_Generation-References/hos-explorer-reference-v01.jpg",
+      "short_targets": [
+        "Short_C:S07 (15.780-19.380s, 3.600s)"
+      ],
+      "spoken_line": "Every bird you have ever seen is a living dinosaur.",
+      "prompt": "Premium Animistry-class 3D cartoon. Frame 0: the Explorer, a young boy with messy brown hair, round gold glasses, a teal coat, tan waistcoat, brown bow tie and a satchel, is already crouched on a sunlit garden path, and one European robin is already on the path in front of his open hand. Both stay inside the centre 9:16 band and clear of the lower fifth. He keeps that crouch. The robin hops once and then lifts past his hand, still fully in frame. No pose jump, no second bird, no text. Silent. Continuous motion through the final frame.",
+      "generation_authorized": false
+    },
+    {
+      "repair_id": "R6",
+      "row_id": "P5:09_robin",
+      "part": 5,
+      "plate_id": "09_robin",
+      "take": 2,
+      "charge_id": "HOS:010:R6:P05:09_robin:t2",
+      "quality": "Quality",
+      "model": "Veo 3.1 - Quality",
+      "aspect": "16:9",
+      "duration": "8s",
+      "clip_s": 8,
+      "outputs": "x1",
+      "max_takes": 1,
+      "credits": 100,
+      "explorer": false,
+      "reference": "set I continuity; 0-credit Nano Banana 2.1 start still",
+      "short_targets": [
+        "Short_C:S01 (0.000-1.880s, 1.880s)",
+        "Short_C:loop_tail (22.560-23.560s, 1.000s)"
+      ],
+      "spoken_line": "Not all the dinosaurs died.",
+      "prompt": "Premium Animistry-class 3D cartoon. Frame 0: one European robin is already perched on a mossy garden fence post, fully inside the centre 9:16 band and clear of the lower fifth. Grey-brown back, orange-red breast, pale grey belly, and those colours stay the same for the whole shot. It flicks its head once. It stays perched. No second bird, no skeleton, no glow behind the body, no text. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "generation_authorized": false
+    }
+  ]
+}

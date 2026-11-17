@@ -337,7 +337,7 @@
       "thumbB": "02_Video-Projects/007_The-First-Vaccine/08_Thumbnail/Selected/hos_007_thumb_B_immune_v01.jpg",
       "thumbBSha256": "c102e7bd426970a68a799e73b784a2b163f93249985c4f9f02d613870558c71a",
       "publishAt": "2026-11-12T18:00:00Z",
-      "privacyStatus": "private",
+      "privacyStatus": "public",
       "registeredAt": "2026-10-25T20:52:00Z",
       "captions": "en-GB standard, serving, AUieDabxiVBFwlEZ2iDzZOdUbkxMZwhliMRGEEhiTiLQ7Z8Mo2TNvVVgO268hvBnaPRBNUOJxrcaKPVjLYk",
       "buffer": "deferred: long films are never cross-posted through Buffer",
@@ -358,6 +358,17 @@
       "registeredAt": "2026-10-25T22:58:00Z",
       "readBack": "YouTube Data API videos.list (read only), 30 Oct 2026 ~01:24Z: channel History of Science, public, no publishAt (already aired), title The Tied Arm That Proved Your Blood Circulates.",
       "note": "Registered late so the Studio Kanban can read the long's schedule (it had no UPLOADS row, so the HOS 005 card sat in In progress). Uploaded and scheduled in early Oct; nothing on YouTube was changed. After-air jobs: J0241 (Related on BW_CFAX-mxc + HOS Buffer) once public."
+    },
+    "GHZDsiH7L7A": {
+      "kind": "long",
+      "film": "004",
+      "title": "What's Inside an Atom? Mostly Empty Space",
+      "packageDir": "02_Video-Projects/004_Whats-Really-Inside-An-Atom/11_Upload-Package",
+      "publishAt": "2026-10-15T17:00:24Z",
+      "privacyStatus": "public",
+      "registeredAt": "2026-11-12T06:59:17Z",
+      "readBack": "Public watch page read-only check, 12 Nov 2026 ~06:58Z: title What's Inside an Atom? Mostly Empty Space; date text Oct 15, 2026. Repo Data API snapshot (02_Video-Projects/004_Whats-Really-Inside-An-Atom/10_Shorts/11_Upload-Package/s05_dalton/LIVE_AFTER.json) and WEEKLY_THUMB_2026-10-28/inventory.json: id GHZDsiH7L7A, privacyStatus/privacy public, publishedAt/publish_at 2026-10-15T17:00:24Z, channel History of Science. PIPELINE.json film 004 names long GHZDsiH7L7A aired Thu 15 Oct 18:00. Nothing on YouTube was changed.",
+      "note": "Registered late so the Studio board can read the long back (HOS:004 was scheduled in PIPELINE but the card sat in upcoming with no YouTube read-back, while orphan YT card HOS:YT:GHZDsiH7L7A showed Done). Title no longer matches PIPELINE's What's Really Inside an Atom?, so title-only matching failed. Uploaded/scheduled earlier; public since 15 Oct 2026. Nothing on YouTube was changed."
     },
     "JyRjM-9Yc8g": {
       "kind": "short",
@@ -501,11 +512,11 @@
       "long": "ETynHpIYLeY",
       "promotes": "007",
       "publishAt": "2026-11-13T11:30:00Z",
-      "privacyStatus": "private",
+      "privacyStatus": "public",
       "replaces": "-I_GHK-GcFs",
       "registeredAt": "2026-10-29T20:27:02Z",
       "buffer": "registered in OWB social/hos/UPLOADS.json (long ETynHpIYLeY, J1219 swap from -I_GHK-GcFs); held until public (2026-11-13T11:30:00Z), then the full film",
-      "related": "unset while 007 long ETynHpIYLeY is Private (publishAt 2026-11-12T18:00:00Z); Studio picker lists public videos only. J0875 sets ETynHpIYLeY on cLKDiYP55J8 (not -I_GHK-GcFs) once the long is public on Thu 12 Nov 18:00Z (before Fri 13 Nov 11:30Z).",
+      "related": "ETynHpIYLeY (set & read back in Studio on cLKDiYP55J8, J0875, 2026-11-13)",
       "captions": "en-GB standard, from the v04 spoken line (J1219)",
       "social": {
         "hook": "On 1 July 1796, Edward Jenner tested whether cowpox protected a boy from smallpox \u2014 and no disease followed.",
@@ -612,7 +623,7 @@
       "replaces": "4WUs0beKn0A",
       "registeredAt": "2026-10-30T00:58:30Z",
       "buffer": "registered in OWB social/hos/UPLOADS.json (long ETynHpIYLeY, J1222 swap from 4WUs0beKn0A); held until public (2026-11-17T11:30:00Z), then the full film",
-      "related": "unset while 007 long ETynHpIYLeY is Private (publishAt 2026-11-12T18:00:00Z); Studio picker lists public videos only. J0875 sets ETynHpIYLeY once the long is public on Thu 12 Nov 18:00Z (before Fri 13 Nov 11:30Z).",
+      "related": "ETynHpIYLeY (set & read back in Studio on xgx2lYHhYZM, J0875, 2026-11-13)",
       "captions": "en-GB standard, from the v05 spoken line (J1222)",
       "social": {
         "hook": "Twenty-two years before Edward Jenner's 1798 book, Benjamin Jesty tried cowpox \u2014 and from vacca, Latin for cow, came vaccination.",

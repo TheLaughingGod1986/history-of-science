@@ -4,7 +4,7 @@
   "parent_v15_sha": "cd7a57b2979478a34ac7cc5fe5639aa156ae603b437674ccd724ab3fe994748c",
   "bible_main": "25bdefd",
   "reason": "Flow UI generate OK but gallery harvest broken; Gemini I2V fallback",
-  "flow_account_target": "benoats@googlemail.com",
+  "flow_account_target": "the studio Ultra account",
   "only": [
     "10_family_before_weight",
     "11_publish_gaps",

@@ -14,7 +14,7 @@
 | sha256 | `175c40a948a24899507266d3f4bccf39f9f51a2906441cae4557bcbd312fe6c2` |
 | bytes | 89364193 |
 | duration | 127.760 s |
-| Flow account | `benoats@googlemail.com` on `/u/1/` |
+| Flow account | `the studio Ultra account` on `/u/1/` |
 | HOS UAT | iCloud `HOS UAT/hos_002_part04_rough_v12.mp4` |
 | Meta | `07_Edit-Project/part04_rough_v12_land_meta.json` |
 

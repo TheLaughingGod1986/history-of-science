@@ -2,8 +2,8 @@
   "status": "STOP_TO_COS_BLOCKED_AUTH",
   "when": "2026-09-09T17:35:16+01:00",
   "ben_claim": "try now \u2014 Mini Flow should be signed in",
-  "required_account": "benoats@googlemail.com",
-  "forbidden_account": "benoats86@gmail.com",
+  "required_account": "the studio Ultra account",
+  "forbidden_account": "the studio Ultra account",
   "result": "Passkey wall still present for googlemail. Live Flow u/1 session is FORBIDDEN benoats86 (~50 credits). Did NOT mint. Did NOT paint / temporal-median / brightness-motion.",
   "evidence": [
     "07_Edit-Project/_qa_part04_v19_auth/cdp_retry_0_after_googlemail.png",
@@ -12,12 +12,12 @@
     "07_Edit-Project/_qa_part04_v19_auth/hos_profile_probe.json"
   ],
   "passkey_ui": {
-    "account": "benoats@googlemail.com",
+    "account": "the studio Ultra account",
     "text": "Verifying it's you... / Complete sign-in using your passkey"
   },
   "wrong_session": {
     "url": "https://flow.google.com/u/1/",
-    "account": "benoats86@gmail.com",
+    "account": "the studio Ultra account",
     "credits": 50,
     "note": "Must not mint on this account"
   },
@@ -28,7 +28,7 @@
     "iCloud HOS UAT copy",
     "Flow job ids for 06/11/11b"
   ],
-  "instruction": "STOP_TO_COS BLOCKED_AUTH \u2014 CoS must clear googlemail passkey on Mini until Flow shows benoats@googlemail.com + ~8k\u201310k credits without passkey wall.",
+  "instruction": "STOP_TO_COS BLOCKED_AUTH \u2014 CoS must clear googlemail passkey on Mini until Flow shows the studio Ultra account + ~8k\u201310k credits without passkey wall.",
   "plates_blocked": [
     "11_publish_gaps",
     "11b_wait_and_hunt",

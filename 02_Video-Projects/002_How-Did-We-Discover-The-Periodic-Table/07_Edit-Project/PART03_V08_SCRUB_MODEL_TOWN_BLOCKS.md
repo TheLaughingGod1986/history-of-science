@@ -3,7 +3,7 @@
 **Gate:** Ben AMEND FAIL on v07 (withdrew KEEP) — scrub model-town / blue-yellow blocks after EMPTY CHAIR.  
 **Parent:** `hos_002_part03_rough_v07.mp4` (sha256 `f39d794e…` · 91490005 B · 89.68s)  
 **Export:** `hos_002_part03_rough_v08.mp4`  
-**Flow:** `benoats@googlemail.com`. Create dies → STOP (no Ken Burns).  
+**Flow:** `the studio Ultra account`. Create dies → STOP (no Ken Burns).  
 **Scores → CoS only.** CoS owns Ben ping after UAT. No P04 until Ben KEEP.
 
 ---
