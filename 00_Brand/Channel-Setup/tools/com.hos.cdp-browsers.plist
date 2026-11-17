@@ -30,6 +30,8 @@
   <integer>300</integer>
   <key>RunAtLoad</key>
   <true/>
+  <key>AbandonProcessGroup</key>
+  <true/>
   <key>StandardOutPath</key>
   <string>/Users/benjaminoats/Library/Logs/cdp-browsers.log</string>
   <key>StandardErrorPath</key>
