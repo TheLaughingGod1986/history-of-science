@@ -62,8 +62,8 @@
       "owner": "Mini audio worker (J2806), then audio review J2807 and Chief J2808",
       "waiting": "J2806 revised opening cue, complete unchanged music gate, J2807 capable audio review and J2808 score acceptance before J2035 assembly; J2171 held.",
       "underway": false,
-      "note": "J2803 validation failed; PR908 stays undeployed. J2805 scopes one 180s wonder replacement, cap3000 subscription credits and GBP0, retaining teach v01. No generation, spend or score PASS in this decision. J2035 deadline 15 Nov 18:00Z; J2171 held.",
-      "since": "2026-11-14"
+      "note": "J2803 validation failed; PR908 stays undeployed. J2805 (PR #633) scopes one 180s wonder replacement, cap3000 subscription credits and GBP0, retaining teach v01. Merging #633 releases up to 3,000 subscription credits for J2806 at GBP0 cash. Deadlines refreshed 17 Nov: J2806 16:00Z, J2807 18:00Z, J2808 20:00Z, J2035 assembly 18 Nov 18:00Z (air 26 Nov); J2171 held.",
+      "since": "2026-11-17"
     },
     "thumbnails": {
       "state": "todo",
