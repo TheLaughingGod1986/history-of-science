@@ -394,3 +394,64 @@ SFX level PASS: VO -20.7 LUFS, SFX -50.6 LUFS, 1 hits
 Published board verification: `board_check.py --no-post` PASS (site HTTP 200, 6 expected cards, no problems). J2699 card `HOS:ASK:J2699` is in ready, readyFor Ben, Play HTTP 302; streamed destination HTTP 200 and matching hash. See `10_Shorts/J2699/BOARD_CHECK.json`.
 
 Repository verification: `check_all.sh 02_Video-Projects/008_Lightning-Franklin` — ALL CHECKS PASS (existing node_modules reused, task-local npm cache). No product code or media changed.
+
+
+## Short C v07 — J2662 (J2485 Fix List, 17 Nov 2026)
+
+- **Master (`studio-live` NAS, not in git):** `/Volumes/data/studio-live/History Of Science/02_Video-Projects/008_Lightning-Franklin/10_Shorts/hos_008_short_C_v07.mp4`
+- **SHA-256:** `a3404a314a444a0fd987ca648c28425be8afb768f83748ee64e553951c8f06a8`
+- **Format:** `22.083 s` (`530` frames at `24 fps`, `936×1664`), `-14.0 LUFS`, `-2.5 dBTP`, `£0` spend, zero uploads/schedule changes.
+- **Fixes verified:** sentence-1 surprise word `"Franklin's"` at `0.980–1.489 s <= 1.50 s` (`atempo=1.06`, `vo_onset <= 0.15 s`, `cut1 = 2.042 s`); body captions clamped with `>= 40 ms` inter-chunk clearance and balanced `4–7` word grouping (0 overlaps, 0 orphans); `S06` offset `4.00 s`; `S07` offset `3.10 s`; `S01`/`loop_tail` crop `[600,0,405,720]` and `S02` crop `[180,0,405,720]`.
+
+### open.txt
+```text
+PASS  hos_008_short_C_v07.mp4  dur=22.08s  audio=-17.2dB  motion=43.08  f0diff=7.71  cut1=2.04s  vo_onset=0.00s  tail_gap=1.30s  vo_src=/Volumes/data/studio-live/History Of Science/02_Video-Projects/008_Lightning-Franklin/10_Shorts/J2662_v07/vo.wav  dhash=1f9fb63b795bab7f
+   full-bleed 0.00s  fills the frame  sharp above/middle/below=None/0.417/None  detail top/centre/bottom=5.76/8.54/8.77  spread top/bottom=35.38/32.55
+   full-bleed 0.25s  fills the frame  sharp above/middle/below=None/0.421/None  detail top/centre/bottom=5.02/8.57/9.39  spread top/bottom=37.49/35.06
+   full-bleed 0.50s  fills the frame  sharp above/middle/below=0.078/0.424/0.735  detail top/centre/bottom=3.55/8.61/10.32  spread top/bottom=38.69/41.09
+   full-bleed whole Short  0/23 frames padded at one a second, 0/45 at two a second  padded stretches: none  no end card named in meta
+   sheet /private/tmp/j2662-sheets/hos_008_short_C_v07_open_sheet.jpg
+```
+
+### polish.txt
+```text
+ S01     1.0s /Volumes/data/studio-live/Hi ok
+ S02     3.5s /Volumes/data/studio-live/Hi ok
+ S03     6.4s /Volumes/data/studio-live/Hi ok
+ S04     9.3s /Volumes/data/studio-live/Hi ok
+ S05    12.2s /Volumes/data/studio-live/Hi ok
+ S06    14.9s /Volumes/data/studio-live/Hi ok
+ S07    17.7s /Volumes/data/studio-live/Hi ok
+ S08    20.1s /Volumes/data/studio-live/Hi WARN low detail: edge density 0.027 < film p5 0.0304
+loop_tail    21.6s /Volumes/data/studio-live/Hi ok
+polish gate PASS: 0 of 9 rows failed, 1 to look at -> 02_Video-Projects/008_Lightning-Franklin/10_Shorts/J2662/polish_gate.json
+```
+
+### picture.txt
+```text
+WARN   0:01 row S01 /Volumes/data/studio-live/History Of Science/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/19_skyline_strike_t1.mp4: sharpness: upscaled 2.31x, may look soft
+WARN   0:03 row S02 /Volumes/data/studio-live/History Of Science/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/01_house_rod_t1.mp4: sharpness: upscaled 2.31x, may look soft
+WARN   0:06 row S03 /Volumes/data/studio-live/History Of Science/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/07_giant_spark_t1.mp4: sharpness: upscaled 2.31x, may look soft
+WARN   0:09 row S04 /Volumes/data/studio-live/History Of Science/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part01/raw/v01/12_steeple_fire_t1.mp4: sharpness: upscaled 2.31x, may look soft
+WARN   0:12 row S05 /Volumes/data/studio-live/History Of Science/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/18_rod_closeup_t1.mp4: sharpness: upscaled 2.31x, may look soft
+WARN   0:15 row S06 /Volumes/data/studio-live/History Of Science/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/06_rod_fitting_t1.mp4: sharpness: upscaled 2.31x, may look soft
+WARN   0:18 row S07 /Volumes/data/studio-live/History Of Science/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/06_rod_fitting_c1_t1.mp4: sharpness: upscaled 2.31x, may look soft
+WARN   0:20 row S08 /Volumes/data/studio-live/History Of Science/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/14_safe_towers_t1.mp4: sharpness: upscaled 2.31x, may look soft; low detail: edge density 0.027 < film p5 0.0304
+WARN   0:22 row loop_tail /Volumes/data/studio-live/History Of Science/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/19_skyline_strike_t1.mp4: sharpness: upscaled 2.31x, may look soft; terminal loop: prescribed return classified; human moving/phone and audio review; samples do not establish seamless motion
+picture QA PASS: 0 of 9 cuts fail, 9 to look at -> 02_Video-Projects/008_Lightning-Franklin/10_Shorts/J2662/picture_qa/PICTURE_QA.md, 02_Video-Projects/008_Lightning-Franklin/10_Shorts/J2662/picture_qa/picture_qa_review.jpg
+```
+
+### music.txt
+```text
+music gate PASS: hos_008_short_C_v07_bed.wav, 23.1 s, about 66.7 BPM, brief Pace: 64-72 BPM
+```
+
+### sfx.txt
+```text
+SFX level PASS: VO -20.0 LUFS, SFX -40.8 LUFS, 5 hits
+```
+
+### atempo.txt
+```text
+atempo check PASS: no new build above 1.06 (23 known file(s) listed above).
+```

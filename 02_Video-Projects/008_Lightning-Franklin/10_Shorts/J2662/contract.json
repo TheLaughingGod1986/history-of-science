@@ -6,15 +6,15 @@
   "last_vo_word": 20.78,
   "prescription": {
     "path": "02_Video-Projects/008_Lightning-Franklin/10_Shorts/J2662/RECIPE.md",
-    "sha256": "ffbc1254f9a3eff339c9b17bc11e72c18ce03760601c985052dee7329778aed3"
+    "sha256": "86939bff69491969af19c3745a23ae83106e7b41aa72d3495b3e4d93fd556c5c"
   },
   "words": {
     "path": "02_Video-Projects/008_Lightning-Franklin/10_Shorts/J2662/words.json",
-    "sha256": "635c49c5eef470a694fb541063367fc6417268eefd100a9083cb747700fec9db"
+    "sha256": "f9245934a92928799e966a8d20c3f97dc398e84cdb4715b3a04eefabd6bea5a0"
   },
   "vo": {
-    "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/008_Lightning-Franklin/10_Shorts/J2662_v06/vo.wav",
-    "sha256": "1ce5d06b578c0cb14f6c3381c8856dcd40157fa1c776997acbdf0f900b56927a"
+    "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/008_Lightning-Franklin/10_Shorts/J2662_v07/vo.wav",
+    "sha256": "50d65ab8eaf1bd11d3fe93a39691da5ed4e00231019d975d41c21e12d65c9a57"
   },
   "source": {
     "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/19_skyline_strike_t1.mp4",

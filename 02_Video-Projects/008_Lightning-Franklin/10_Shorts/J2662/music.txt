@@ -8,4 +8,4 @@ WARN reused: couldn't read saturn_long_vo_v03b_tightened_LOCK.m4a to compare (OS
 WARN reused: couldn't read saturn_long_vo_v03b_tightened_LOCK.wav to compare (OSError); download it or pass --others
 WARN reused: couldn't read monday_saturn_short_vo_v02_how_long.mp3 to compare (OSError); download it or pass --others
 WARN reused: couldn't read saturn_long_vo_v03_tightened.wav to compare (OSError); download it or pass --others
-music gate PASS: hos_008_short_C_v05_bed.wav, 23.1 s, about 66.7 BPM, brief Pace: 64-72 BPM
+music gate PASS: hos_008_short_C_v07_bed.wav, 23.1 s, about 66.7 BPM, brief Pace: 64-72 BPM

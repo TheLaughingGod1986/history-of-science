@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""HOS 008 Short C v06 (J2662 — J2485 Fix List + SFX speech headroom + 2-pass loudnorm). £0. No upload.
+"""HOS 008 Short C v07 (J2662 — J2485 Fix List + SFX speech headroom + calibrated -14.0 LUFS AAC mix). £0. No upload.
 
-Leaves hos_008_short_C_v03.mp4, v04, and v05 untouched on NAS, writing new version
-hos_008_short_C_v06.mp4 and stems under 10_Shorts/J2662_v06/.
+Leaves hos_008_short_C_v03.mp4..v06.mp4 untouched on NAS, writing new version
+hos_008_short_C_v07.mp4 and stems under 10_Shorts/J2662_v07/.
 """
 from __future__ import annotations
 
@@ -32,15 +32,10 @@ SHARED = Path(
 )
 PLATE = SHARED / "04_Generated-Clips"
 VO = SHARED / "10_Shorts/vo_v02"
-WORK = Path(
-    os.environ.get(
-        "J2662_WORK",
-        "/Users/ben/.gemini/antigravity-cli/brain/bb728e9e-2e5d-405d-b6a3-63e0de5cc1ff/scratch/j2662_v06_work",
-    )
-)
+WORK = Path(os.environ.get("J2662_WORK", "/private/tmp/j2662-short-c-v07"))
 PACK = Path(__file__).resolve().parent
 FILM_GIT = REPO / "02_Video-Projects/008_Lightning-Franklin"
-MASTER = SHARED / "10_Shorts/hos_008_short_C_v06.mp4"
+MASTER = SHARED / "10_Shorts/hos_008_short_C_v07.mp4"
 
 W, H, FPS = 936, 1664, 24
 UPSCALE = 2.3111
@@ -85,6 +80,8 @@ def sha256(path: Path) -> str:
 
 def copy_verified(src: Path, dst: Path) -> str:
     dst.parent.mkdir(parents=True, exist_ok=True)
+    if dst.exists():
+        raise SystemExit(f"Refusing to overwrite existing file {dst}")
     h_src = sha256(src)
     shutil.copy2(src, dst)
     h_dst = sha256(dst)
@@ -100,6 +97,25 @@ def probe_dur(path: Path) -> float:
             text=True,
         )
     )
+
+
+def probe_ebur128(path: Path) -> tuple[float, float]:
+    r = subprocess.run(
+        ["ffmpeg", "-nostats", "-i", str(path), "-filter_complex", "ebur128=peak=true", "-f", "null", "-"],
+        capture_output=True,
+        text=True,
+        check=True,
+    )
+    integrated = None
+    peak = None
+    for ln in r.stderr.splitlines():
+        if "I:" in ln and "LUFS" in ln:
+            integrated = float(ln.split("I:")[1].split("LUFS")[0].strip())
+        if "Peak:" in ln and "dBFS" in ln:
+            peak = float(ln.split("Peak:")[1].split("dBFS")[0].strip())
+    if integrated is None or peak is None:
+        raise SystemExit(f"Could not read ebur128 stats for {path}")
+    return integrated, peak
 
 
 def words_of(path: Path) -> list[dict]:
@@ -195,9 +211,9 @@ def build_s01_vo() -> tuple[Path, list[dict]]:
     if sr != SR or sw != 2:
         raise SystemExit(f"unexpected s01 format sr={sr} sw={sw}")
     mono = samples.mean(axis=1)
-    trim0 = int(round(0.062 * SR))
-    cut_a = zero_crossing_near(mono, int(round(0.245 * SR)))
-    cut_b = zero_crossing_near(mono, int(round(0.780 * SR)))
+    trim0 = int(round(0.065 * SR))
+    cut_a = zero_crossing_near(mono, int(round(0.225 * SR)))
+    cut_b = zero_crossing_near(mono, int(round(0.845 * SR)))
     xf = int(round(0.015 * SR))
     left = samples[trim0:cut_a + xf].astype(np.float32)
     right = samples[cut_b - xf:].astype(np.float32)
@@ -216,7 +232,7 @@ def build_s01_vo() -> tuple[Path, list[dict]]:
         wf.setframerate(SR)
         wf.writeframes(np.clip(np.round(spliced), -32768, 32767).astype(np.int16).tobytes())
 
-    s01_out = WORK / "s01_v06.wav"
+    s01_out = WORK / "s01_v07.wav"
     run(["ffmpeg", "-y", "-v", "error", "-i", str(raw_splice), "-af", f"atempo={ATEMPO}", "-ar", str(SR), "-ac", "2", "-c:a", "pcm_s16le", str(s01_out)])
 
     removed_s = (cut_b - cut_a) / SR
@@ -277,7 +293,7 @@ def build_vo() -> tuple[Path, list[dict]]:
 
 
 def build_bed() -> tuple[Path, Path]:
-    bed_full = WORK / "hos_008_short_C_v06_bed.wav"
+    bed_full = WORK / "hos_008_short_C_v07_bed.wav"
     src = SHARED / "05_Music/lightning008_score_bed_v02.mp3"
     run(["ffmpeg", "-y", "-v", "error", "-ss", "96", "-t", f"{TOTAL + 1:.3f}", "-i", str(src), "-ac", "2", "-ar", str(SR), str(bed_full)])
     bed_stem = WORK / "bed.wav"
@@ -289,8 +305,8 @@ def build_bed() -> tuple[Path, Path]:
         ]
     )
     plan = {
-        "created_at": "2026-11-17T10:32:00+00:00",
-        "project": "hos_008_short_C_v06",
+        "created_at": "2026-11-17T11:24:00+00:00",
+        "project": "hos_008_short_C_v07",
         "generate": False,
         "audio_file": bed_full.name,
         "source_take": "lightning008_score_bed_v02.mp3",
@@ -304,7 +320,7 @@ def build_bed() -> tuple[Path, Path]:
         ),
     }
     (FILM_GIT / "05_Music").mkdir(parents=True, exist_ok=True)
-    (FILM_GIT / "05_Music/hos_008_short_C_v06_bed_plan.json").write_text(json.dumps(plan, indent=2) + "\n")
+    (FILM_GIT / "05_Music/hos_008_short_C_v07_bed_plan.json").write_text(json.dumps(plan, indent=2) + "\n")
     return bed_full, bed_stem
 
 
@@ -351,25 +367,35 @@ def mix(vo: Path, bed_stem: Path, sfx_stem: Path) -> Path:
             "-map", "[o]", "-t", f"{TOTAL:.6f}", "-c:a", "pcm_s16le", str(raw),
         ]
     )
+    pre_lim = "alimiter=limit=0.50:attack=3:release=40:level=false"
     p1 = subprocess.run(
-        ["ffmpeg", "-hide_banner", "-i", str(raw), "-af", "alimiter=limit=0.72:level=false,loudnorm=I=-14.0:TP=-2.0:LRA=11.0:print_format=json", "-f", "null", "-"],
+        ["ffmpeg", "-hide_banner", "-i", str(raw), "-af", f"{pre_lim},loudnorm=I=-14.0:TP=-2.2:LRA=11.0:print_format=json", "-f", "null", "-"],
         capture_output=True, text=True, check=True,
     )
     m = re.search(r"\{\s*\"input_i\".*?\}", p1.stderr, re.S)
     if not m:
         raise SystemExit("loudnorm pass 1 JSON missing")
     stats = json.loads(m.group(0))
-    audio = WORK / "mix.wav"
+    audio_base = WORK / "mix_base.wav"
     run(
         [
             "ffmpeg", "-y", "-v", "error", "-i", str(raw),
             "-af",
             (
-                f"alimiter=limit=0.72:level=false,loudnorm=I=-14.0:TP=-2.0:LRA=11.0:"
+                f"{pre_lim},loudnorm=I=-14.0:TP=-2.2:LRA=11.0:"
                 f"measured_I={stats['input_i']}:measured_TP={stats['input_tp']}:"
                 f"measured_LRA={stats['input_lra']}:measured_thresh={stats['input_thresh']}:"
-                f"offset={stats['target_offset']}:linear=true,alimiter=limit=0.78:level=false"
+                f"offset={stats['target_offset']}:linear=true,alimiter=limit=0.74:attack=2:release=30:level=false"
             ),
+            "-ar", str(SR), "-ac", "2", "-t", f"{TOTAL:.6f}", "-c:a", "pcm_s16le", str(audio_base),
+        ]
+    )
+    # Apply 4x-oversampled true-peak ceiling so muxed AAC lands dead-on -14.0 LUFS with TP <= -2.0 dBTP.
+    audio = WORK / "mix.wav"
+    run(
+        [
+            "ffmpeg", "-y", "-v", "error", "-i", str(audio_base),
+            "-af", "volume=1.90dB,aresample=192000,alimiter=limit=0.66:attack=2:release=30:level=false,aresample=48000",
             "-ar", str(SR), "-ac", "2", "-t", f"{TOTAL:.6f}", "-c:a", "pcm_s16le", str(audio),
         ]
     )
@@ -520,8 +546,8 @@ def render_data() -> Path:
     img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     band_h = int(W * 9 / 16)
     y0 = (H - band_h) // 2
-    soft_panel(img, (70, y0 + 36, W - 70, y0 + 36 + 150))
-    draw_lines(img, [[("20+", False), ("STRIKES", False)], [("A", False), ("YEAR", False)]], 58, y0 + 58, index=2)
+    soft_panel(img, (70, y0 + 36, W - 70, y0 + 36 + 174))
+    draw_lines(img, [[("20+", False), ("STRIKES", False)], [("A", False), ("YEAR", False)]], 56, y0 + 54, index=2)
     png = WORK / "data.png"
     img.save(png)
     return png
@@ -571,8 +597,8 @@ def mux(video: Path, audio: Path, dest: Path) -> None:
 
 def main() -> None:
     local_only = "--local-only" in sys.argv
-    if not local_only and MASTER.exists() and "--force" not in sys.argv:
-        raise SystemExit(f"Refusing to overwrite existing NAS master {MASTER}; pass --force or bump version.")
+    if not local_only and MASTER.exists():
+        raise SystemExit(f"Refusing to overwrite existing NAS master {MASTER}; bump version.")
     if WORK.exists():
         shutil.rmtree(WORK)
     WORK.mkdir(parents=True)
@@ -605,35 +631,41 @@ def main() -> None:
     else:
         raise SystemExit("hook caption pushes opening frames past loop match")
 
-    local_master = WORK / "hos_008_short_C_v06.mp4"
+    local_master = WORK / "hos_008_short_C_v07.mp4"
     mux(video, audio, local_master)
 
-    words_json = {"words": spoken}
+    lufs, tp = probe_ebur128(local_master)
+    print(f"muxed ebur128: I={lufs:.2f} LUFS, TP={tp:.2f} dBTP", flush=True)
+    if not (-14.4 <= lufs <= -13.6) or tp > -1.7:
+        raise SystemExit(f"Muxed loudness/TP out of range: I={lufs:.2f} LUFS, TP={tp:.2f} dBTP")
+
+    words_json = {"vo_sha256": sha256(vo), "words": spoken}
     local_meta = {
         "spoken": " ".join(w["text"] for w in spoken),
         "words": spoken,
-        "vo": str(vo if local_only else SHARED / "10_Shorts/J2662_v06/vo.wav"),
+        "vo": str(vo if local_only else SHARED / "10_Shorts/J2662_v07/vo.wav"),
         "last_word_end_s": spoken[-1]["end"],
         "hook_caption": {"text": "FRANKLIN'S ROD", "start_s": 0.0, "end_s": round(rows[0]["timeline_out"] - 0.02, 3)},
     }
-    (WORK / "hos_008_short_C_v06_words.json").write_text(json.dumps(words_json, indent=2) + "\n")
-    (WORK / "hos_008_short_C_v06_meta.json").write_text(json.dumps(local_meta, indent=2) + "\n")
+    (WORK / "hos_008_short_C_v07_words.json").write_text(json.dumps(words_json, indent=2) + "\n")
+    (WORK / "hos_008_short_C_v07_meta.json").write_text(json.dumps(local_meta, indent=2) + "\n")
     (PACK / "cuts.json").write_text(json.dumps(rows, indent=2) + "\n")
     (PACK / "spoken.json").write_text(json.dumps(spoken, indent=2) + "\n")
+    (PACK / "words.json").write_text(json.dumps(words_json, indent=2) + "\n")
 
     if local_only:
         print("local_master", local_master, probe_dur(local_master), sha256(local_master), flush=True)
         return
 
-    nas_stems = SHARED / "10_Shorts/J2662_v06"
+    nas_stems = SHARED / "10_Shorts/J2662_v07"
     copy_verified(vo, nas_stems / "vo.wav")
     copy_verified(bed_stem, nas_stems / "bed.wav")
     copy_verified(sfx_stem, nas_stems / "sfx.wav")
-    copy_verified(bed_full, SHARED / "05_Music/hos_008_short_C_v06_bed.wav")
-    copy_verified(FILM_GIT / "05_Music/hos_008_short_C_v06_bed_plan.json", SHARED / "05_Music/hos_008_short_C_v06_bed_plan.json")
+    copy_verified(bed_full, SHARED / "05_Music/hos_008_short_C_v07_bed.wav")
+    copy_verified(FILM_GIT / "05_Music/hos_008_short_C_v07_bed_plan.json", SHARED / "05_Music/hos_008_short_C_v07_bed_plan.json")
     master_sha = copy_verified(local_master, MASTER)
-    (SHARED / "10_Shorts/hos_008_short_C_v06_words.json").write_text(json.dumps(words_json, indent=2) + "\n")
-    (SHARED / "10_Shorts/hos_008_short_C_v06_meta.json").write_text(json.dumps(local_meta, indent=2) + "\n")
+    (SHARED / "10_Shorts/hos_008_short_C_v07_words.json").write_text(json.dumps(words_json, indent=2) + "\n")
+    (SHARED / "10_Shorts/hos_008_short_C_v07_meta.json").write_text(json.dumps(local_meta, indent=2) + "\n")
     print("master", MASTER, probe_dur(MASTER), master_sha, flush=True)
 
 

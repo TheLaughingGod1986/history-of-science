@@ -1,35 +1,35 @@
 {
-  "vo_sha256": "1ce5d06b578c0cb14f6c3381c8856dcd40157fa1c776997acbdf0f900b56927a",
+  "vo_sha256": "50d65ab8eaf1bd11d3fe93a39691da5ed4e00231019d975d41c21e12d65c9a57",
   "words": [
     {
       "text": "That",
-      "start": 0.036,
-      "end": 0.149
+      "start": 0.033,
+      "end": 0.146
     },
     {
       "text": "lightning",
-      "start": 0.267,
-      "end": 0.569
+      "start": 0.187,
+      "end": 0.489
     },
     {
       "text": "rod",
-      "start": 0.645,
-      "end": 0.833
+      "start": 0.565,
+      "end": 0.753
     },
     {
       "text": "was",
-      "start": 0.871,
-      "end": 1.041
+      "start": 0.791,
+      "end": 0.961
     },
     {
       "text": "Franklin's",
-      "start": 1.06,
-      "end": 1.569
+      "start": 0.98,
+      "end": 1.489
     },
     {
       "text": "idea",
-      "start": 1.645,
-      "end": 1.966
+      "start": 1.565,
+      "end": 1.886
     },
     {
       "text": "Lightning",
