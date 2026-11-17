@@ -1,0 +1,45 @@
+{
+  "film": "119",
+  "title": "Why Do Mosquitoes Bite Some People More? (The Stocking Test)",
+  "summary": "Backlog proposal (J2970 / jobs/WIP.json next_hos; Rule G). Data-backed topic brief, public_search.py and neighbours.py PASS evidence (5 education neighbours >=1M incl. TED-Ed 12.51M The loathsome, lethal mosquito, Veritasium 10.41M Why Mosquitoes Bite Some People More Than Others, MinuteEarth 3.09M Why Are Some People Mosquito Magnets?, TED-Ed 2.20M Maria Elena De Obaldia & TED-Ed 1.32M) prepared; awaits Rule-E topic go/no-go review and an open active HOS WIP slot before SOURCES.md and facts lane.",
+  "stages": {
+    "topic": {
+      "state": "todo"
+    },
+    "script": {
+      "state": "todo"
+    },
+    "facts": {
+      "state": "todo"
+    },
+    "package": {
+      "state": "todo"
+    },
+    "vo": {
+      "state": "todo"
+    },
+    "shorts_scripts": {
+      "state": "todo"
+    },
+    "shorts_vo": {
+      "state": "todo"
+    },
+    "picture": {
+      "state": "todo"
+    },
+    "edit": {
+      "state": "todo"
+    },
+    "thumbnails": {
+      "state": "todo"
+    },
+    "ben_ok": {
+      "state": "todo"
+    },
+    "scheduled": {
+      "state": "todo"
+    }
+  },
+  "claims": [],
+  "next": ""
+}
