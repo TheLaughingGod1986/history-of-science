@@ -60,17 +60,17 @@
     "edit": {
       "state": "doing",
       "due": "2026-11-26",
-      "owner": "Cursor",
-      "note": "J2172 released at 1/3 for \u00a30 Short A & Short C 936x1664 (2.311x) assembly from locked 12/12 KEEP plates + code graphics.",
+      "owner": "Claude",
+      "note": "J2172 DONE (£0, gemini): assembled Short A v01 (23.3 s, ea29e264) & Short C v01 (23.6 s, 698db627) at 936x1664 from locked 12/12 KEEP plates + £0 9:16 code graphics; all 6 ship gates exit 0 on both cuts; NAS + HOS UAT copies verified. Queued non-producer review; Long Parts 01-05 edit still pending picture.",
       "steps": [
-        1,
+        2,
         3
       ],
       "steps_unit": "steps",
-      "left": "about 1 hour",
-      "eta": "2026-11-16",
+      "left": "about 2 hours",
+      "eta": "2026-11-26",
       "underway": false,
-      "waiting": "J2172 worker claim to assemble Short A & Short C at 936x1664 and run gates",
+      "waiting": "Non-producer review of Short A v01 & Short C v01 (from J2172) and Long Parts 01-05 picture",
       "since": "2026-11-16"
     },
     "thumbnails": {

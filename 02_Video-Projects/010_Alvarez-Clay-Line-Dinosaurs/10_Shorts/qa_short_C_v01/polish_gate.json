@@ -1,0 +1,220 @@
+{
+  "rule": {
+    "low_detail": "FAIL: luma std < 13.44 and edge density < 0.0259 (absolute floor); WARN: luma std < 18.0 or edge density < film p5",
+    "split_panel": "full-height/width seam or gutter",
+    "split_panel_gutter": "gutter counts only with edge density >= 0.01 in the 10% band on both sides",
+    "near_black": "mean < 28.0 or p95 < 50.0",
+    "noise": "grain std > 6 over structure std < 12, and the 8x-downscaled frame under the low-detail floor (std < 13.44 and edge density < 0.0259)",
+    "jitter": "centre-patch phase correlation: reversal against trend or > 0.35 px off trend"
+  },
+  "low_detail_floor": {
+    "std": 13.44,
+    "edge": 0.0259,
+    "calibration": {
+      "video": "025_MarsRobot_full_rough_v02d.mp4",
+      "factor": 1.2,
+      "frames": [
+        {
+          "source": "PIA22223.jpg",
+          "t": 201.0,
+          "std": 12.1,
+          "edge": 0.0223
+        },
+        {
+          "source": "PIA22223.jpg",
+          "t": 216.3,
+          "std": 11.2,
+          "edge": 0.0216
+        },
+        {
+          "source": "PIA22929.jpg",
+          "t": 297.4,
+          "std": 26.54,
+          "edge": 0.5735
+        }
+      ]
+    }
+  },
+  "video": "/Volumes/MiniWork/scratch/J2172-build/short_C/hos_010_short_C_v01.mp4",
+  "edge_floor": 0.0269,
+  "verdict": "PASS",
+  "failed": [],
+  "warn": [
+    {
+      "row": "s06",
+      "cut": 5,
+      "t": 14.42,
+      "source": "P05_13a_gull_seaside_t1.mp4",
+      "why": [
+        "low detail: edge density 0.0141 < film p5 0.0269"
+      ]
+    }
+  ],
+  "reviewed_ok": [],
+  "rows": [
+    {
+      "cut": 0,
+      "row": "s01",
+      "source": "P05_09_robin_t2.mp4",
+      "t": 0.94,
+      "std": 67.95,
+      "mean": 126.49,
+      "p95": 240.0,
+      "edge": 0.0998,
+      "hf": 17.75,
+      "lf": 59.48,
+      "std8": 62.12,
+      "edge8": 0.3526,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 1,
+      "row": "s02",
+      "source": "P04_06_dust_veil_t2.mp4",
+      "t": 3.54,
+      "std": 54.62,
+      "mean": 145.79,
+      "p95": 234.0,
+      "edge": 0.0639,
+      "hf": 11.78,
+      "lf": 49.34,
+      "std8": 50.82,
+      "edge8": 0.3242,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 2,
+      "row": "s03",
+      "source": "code_graphic_010_short_C_s03_why_survive_9x16.mp4",
+      "t": 6.56,
+      "std": 24.68,
+      "mean": 197.32,
+      "p95": 219.0,
+      "edge": 0.0796,
+      "hf": 13.23,
+      "lf": 13.47,
+      "std8": 16.83,
+      "edge8": 0.1473,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 3,
+      "row": "s04",
+      "source": "P05_08_all_at_once_t2.mp4",
+      "t": 9.17,
+      "std": 44.62,
+      "mean": 89.89,
+      "p95": 174.0,
+      "edge": 0.0933,
+      "hf": 12.84,
+      "lf": 37.25,
+      "std8": 39.12,
+      "edge8": 0.3467,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 4,
+      "row": "s05",
+      "source": "P05_09a_pigeon_pavement_t1.mp4",
+      "t": 11.74,
+      "std": 46.18,
+      "mean": 102.39,
+      "p95": 196.0,
+      "edge": 0.0899,
+      "hf": 12.63,
+      "lf": 37.17,
+      "std8": 40.6,
+      "edge8": 0.4272,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 5,
+      "row": "s06",
+      "source": "P05_13a_gull_seaside_t1.mp4",
+      "t": 14.42,
+      "std": 43.43,
+      "mean": 179.67,
+      "p95": 232.0,
+      "edge": 0.0141,
+      "hf": 5.78,
+      "lf": 41.28,
+      "std8": 41.59,
+      "edge8": 0.1562,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0141 < film p5 0.0269"
+      ]
+    },
+    {
+      "cut": 6,
+      "row": "s07",
+      "source": "P05_10_explorer_robin_t2.mp4",
+      "t": 17.58,
+      "std": 55.55,
+      "mean": 80.13,
+      "p95": 191.0,
+      "edge": 0.1157,
+      "hf": 13.17,
+      "lf": 48.65,
+      "std8": 51.24,
+      "edge8": 0.4239,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 7,
+      "row": "s08",
+      "source": "P05_12_clay_callback_t2.mp4",
+      "t": 20.97,
+      "std": 50.54,
+      "mean": 200.14,
+      "p95": 238.0,
+      "edge": 0.0461,
+      "hf": 6.26,
+      "lf": 47.57,
+      "std8": 48.12,
+      "edge8": 0.1697,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 8,
+      "row": "s09",
+      "source": "loop_P05_09_robin_t2.mp4",
+      "t": 23.06,
+      "std": 68.58,
+      "mean": 135.01,
+      "p95": 239.0,
+      "edge": 0.0695,
+      "hf": 9.26,
+      "lf": 65.74,
+      "std8": 66.84,
+      "edge8": 0.2586,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    }
+  ]
+}

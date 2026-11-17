@@ -1,0 +1,9 @@
+WARN   0:01 row s01 P05_09_robin_t2.mp4: sharpness: upscaled 2.31x, may look soft
+WARN   0:04 row s02 P04_06_dust_veil_t2.mp4: sharpness: upscaled 2.31x, may look soft
+WARN   0:09 row s04 P05_08_all_at_once_t2.mp4: sharpness: upscaled 2.31x, may look soft
+WARN   0:12 row s05 P05_09a_pigeon_pavement_t1.mp4: sharpness: upscaled 2.31x, may look soft
+WARN   0:14 row s06 P05_13a_gull_seaside_t1.mp4: sharpness: upscaled 2.31x, may look soft; low detail: edge density 0.0141 < film p5 0.0269
+WARN   0:18 row s07 P05_10_explorer_robin_t2.mp4: sharpness: upscaled 2.31x, may look soft
+WARN   0:21 row s08 P05_12_clay_callback_t2.mp4: sharpness: upscaled 2.31x, may look soft
+WARN   0:23 row s09 loop_P05_09_robin_t2.mp4: sharpness: upscaled 2.31x, may look soft
+picture QA PASS: 0 of 9 cuts fail, 8 to look at -> /Volumes/MiniWork/scratch/J2172-hos-wt/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/10_Shorts/qa_short_C_v01/picture_qa/PICTURE_QA.md, /Volumes/MiniWork/scratch/J2172-hos-wt/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/10_Shorts/qa_short_C_v01/picture_qa/picture_qa_review.jpg
