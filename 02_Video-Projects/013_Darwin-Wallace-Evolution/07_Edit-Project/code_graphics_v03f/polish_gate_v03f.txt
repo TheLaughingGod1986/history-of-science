@@ -1,0 +1,36 @@
+P1:08_cg_i_think_tree_beat1     2.4s code_graphic_013_v03f_p1_08_ ok
+P1:08_cg_i_think_tree_beat2     7.1s code_graphic_013_v03f_p1_08_ ok
+P1:08_cg_i_think_tree_beat3    11.6s code_graphic_013_v03f_p1_08_ ok
+P1:10_cg_globe_arc    17.0s code_graphic_013_v03f_p1_10_ ok
+P2:01_card_p02    23.2s code_graphic_013_v03f_p2_01_ ok
+P2:06b_cg_tortoise_shells    28.8s code_graphic_013_v03f_p2_06b ok
+P2:09_cg_finch_toolbox_beat1    34.8s code_graphic_013_v03f_p2_09_ ok
+P2:09_cg_finch_toolbox_beat2    40.9s code_graphic_013_v03f_p2_09_ ok
+P2:10b_shipmate_tagged_tray    45.5s code_graphic_013_v03f_p2_10b ok
+P2:12a_arch_notebook_tree_zoom    50.7s code_graphic_013_v03f_p2_12a ok
+P3:01_card_p03    55.3s code_graphic_013_v03f_p3_01_ ok
+P3:03_cg_malthus_curve_beat1    58.9s code_graphic_013_v03f_p3_03_ WARN low detail: edge density 0.0455 < film p5 0.0466
+P3:03_cg_malthus_curve_beat2    63.6s code_graphic_013_v03f_p3_03_ ok
+P3:06_nature_keeps_fit_beat1    68.5s code_graphic_013_v03f_p3_06_ ok
+P3:06_nature_keeps_fit_beat2    72.4s code_graphic_013_v03f_p3_06_ ok
+P3:09a_essay_1844_sealed    77.3s code_graphic_013_v03f_p3_09a ok
+P3:10a_arch_vestiges_1844    83.9s code_graphic_013_v03f_p3_10a ok
+P3:12_cg_barnacle_counter    90.6s code_graphic_013_v03f_p3_12_ ok
+P4:01_card_p04    95.1s code_graphic_013_v03f_p4_01_ ok
+P4:05_cg_wallace_counter_beat1    99.3s code_graphic_013_v03f_p4_05_ ok
+P4:05_cg_wallace_counter_beat2   105.2s code_graphic_013_v03f_p4_05_ ok
+P4:06b_arch_malthus_1798   111.5s code_graphic_013_v03f_p4_06b ok
+P4:07b_packet_to_mailbag   117.6s code_graphic_013_v03f_p4_07b ok
+P5:01_card_p05   121.8s code_graphic_013_v03f_p5_01_ ok
+P5:02b_joint_papers_lectern_wide   125.7s code_graphic_013_v03f_p5_02b ok
+P5:02b_joint_papers_lectern_detail   131.0s code_graphic_013_v03f_p5_02b ok
+P5:04b_bell_report_1859   137.1s code_graphic_013_v03f_p5_04b ok
+P5:05b_arch_origin_1859_title   143.4s code_graphic_013_v03f_p5_05b ok
+P5:07_cg_timeline_origin   149.5s code_graphic_013_v03f_p5_07_ ok
+P5:09_arch_darwinism_1889   155.7s code_graphic_013_v03f_p5_09_ ok
+P6:01_card_p06   161.6s code_graphic_013_v03f_p6_01_ ok
+P6:03_cg_blending_beaks_beat1   167.7s code_graphic_013_v03f_p6_03_ WARN low detail: edge density 0.0449 < film p5 0.0466
+P6:03_cg_blending_beaks_beat2   174.2s code_graphic_013_v03f_p6_03_ ok
+P6:04b_arch_mendel_1866_paper   180.1s code_graphic_013_v03f_p6_04b ok
+P6:09_cream_end_card   184.1s code_graphic_013_v03f_p6_09_ ok
+polish gate PASS: 0 of 35 rows failed, 2 to look at -> /Volumes/MiniWork/scratch/J2498-wt/02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v03f/polish_gate_v03f.json
