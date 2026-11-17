@@ -1,0 +1,65 @@
+{
+  "job": "J2808",
+  "scope_job": "J2805",
+  "production_job": "J2806",
+  "review_job": "J2807",
+  "film": "HOS:009",
+  "decided_at": "2026-11-17T22:42:00Z",
+  "decided_by": "gemini (elected HOS acting Chief: Grok -> Claude -> Codex -> Gemini)",
+  "relay_status_rechecked": {
+    "chief_grok": "down (retry after 2026-11-18T02:12:31Z)",
+    "claude": "down (out of usage until 2026-11-18T07:50:00Z)",
+    "codex": "down (usage limit until 2026-11-17T23:22:00Z)",
+    "gemini": "UP (elected HOS Chief)"
+  },
+  "spend": {
+    "cash_gbp": 0,
+    "subscription_credits": 0,
+    "requests": 0,
+    "extra_takes_authorized": 0
+  },
+  "verdict": "NOT_ACCEPTED_HOLD",
+  "score_accepted": false,
+  "finished_film_pass": false,
+  "evidence_evaluated": {
+    "scope_file": "05_Music/SCORE_SCOPE_J2805.json",
+    "scope_sha256": "1298c09d6b6000e474bd5e359a767272edd63f452c5d4171872e1ec29d3269b1",
+    "production_provenance": "05_Music/J2806_PROVENANCE.json",
+    "production_pr": "https://github.com/TheLaughingGod1986/history-of-science/pull/636",
+    "music_gate_file": "05_Music/music_gate_j2806.json",
+    "music_gate_verdict": "PASS",
+    "music_gate_comparisons": 89,
+    "music_gate_unreadable": 0,
+    "music_gate_max_similarity_joined_v02": 0.6615,
+    "music_gate_max_similarity_wonder_v02": 0.4822,
+    "ear_review_file": "05_Music/EAR_REVIEW_J2807.md",
+    "ear_review_pr": "https://github.com/TheLaughingGod1986/history-of-science/pull/637",
+    "ear_review_verdict": "FAIL_BY_EAR"
+  },
+  "exact_blocker": {
+    "candidate_v02": "hos_009_score_joined_v02.wav (sha256 6fc8628a96b8267eaf5be6c19d7e30d9e473eb86c886ee3106c3219b375b1f68) passed preflight guards (2,475 <= 3,000 subscription credits, GBP0 cash, 0 overage), passed unchanged complete-library music_gate.py (89 beds across all 9 roots including 15 hash-verified iCloud UAT tracks, 0 unreadable, 0 fails, max joined similarity 0.6615 < 0.80, max wonder_v02 similarity 0.4822 < 0.80), and passed J2807 ear review on the 175.28-178.28s crossfade, tempo (~55-60 BPM / ~70 BPM), VO clarity (0.00-518.40s), and 526.00s/535.33s tail coverage, but FAILED J2807 ear review on wonder_v02 (0.00-178.28s) continuous bed coverage: six 0.61-2.29s < -45 dB inter-phrase silent dropouts in 18.95-97.92s (18.95-21.00s, 66.48-67.83s, 73.04-75.33s, 81.70-82.84s, 88.91-90.39s, 97.31-97.92s) plus missing gut-string lute (FLAG), caused by music_v2 interpreting SCORE_SCOPE_J2805.json's prompt phrase 'Wonder comes from space between short, gently changing phrases' as full rests between bowed-string chord swells.",
+    "candidate_v01": "hos_009_score_joined_v01.wav (sha256 d7f5bf3d7553d7c611a913e93602b8ec83419821059294ddeaee32269a4f9572) passed J2783 ear review (0 dropouts, continuous opening viol drone + sparse lute plucks) but FAILED unchanged production music_gate.py (0.821 vs OWB 013 moon-leaving-part02, 0.804/0.811 vs HOS 002 curious_workshop on 0-21s). Prototype PR908 failed J2803 validation (0.693 on 0.37s trim, 0.633 on combined transform) and remains undeployed.",
+    "why_no_compliant_route_presently_available": "J2808 authorizes no extra take ('No extra take is authorized by this job'), forbids waivers ('No waiver'), and forbids repeating unchanged verification or deploying PR908. SCORE_SCOPE_J2805.json forbids all post-hoc audio workarounds ('No loop, silent padding, timing alteration, gate-evasion filtering or favourable excerpt selection'), barring looping wonder_v02's continuous 97.92-178.28s half, splicing wonder_v02 (0-18.95s) into wonder_v01 (21-178.28s), or filtering wonder_v01. Therefore, no compliant route is presently available without a new Chief/owner desk authorization outside J2808."
+  },
+  "held_jobs": {
+    "J2035": {
+      "status": "blocked",
+      "prior_deadline_retained": "2026-11-15T18:00:00Z",
+      "refreshed_deadline": "2026-11-18T18:00:00Z"
+    },
+    "J2171": {
+      "status": "blocked"
+    }
+  },
+  "preserved_locks_verified": {
+    "hos_009_wonder_v01.mp3": "95dfe11d7c21c9347e9b962ef2f9ecd35116f2fce60df6f123578c11a1debaf0",
+    "hos_009_teach_v01.mp3": "4c1f0a17364ad5ba96fdd2d42730b2f857d19017fab52b221701bd4e15d07bb1",
+    "hos_009_score_joined_v01.wav": "d7f5bf3d7553d7c611a913e93602b8ec83419821059294ddeaee32269a4f9572",
+    "hos_009_wonder_v02.mp3": "b38ae8922e8d633b9f085a8bb9634c96d889a9293fcab277f7a3a23f4839d148",
+    "hos_009_score_joined_v02.wav": "6fc8628a96b8267eaf5be6c19d7e30d9e473eb86c886ee3106c3219b375b1f68",
+    "VO_TAKES_KEEP.json": "530743c507af8d5f9049179d4e9d380b5c1b8aca4f180ada133d0b673f5925e0",
+    "VO_RETIME_v01.json": "75a2e7afa1d822b04371511c81a52082e1b80713b0e59711702cfd05fe45a972",
+    "J2631_code_graphic_009_p4_05_minute_second.mp4": "e35f9a9879c8e590ec66853b85307999f39bfe30c67b9bed193ca224cab42da3",
+    "J2632_r4_code_graphic_009_p3_01_really_falling_c1.mp4": "23c832b09e70f78d8eeece657dac11d6148e2a5f5c701f2ad88b868845b5f3b3"
+  }
+}

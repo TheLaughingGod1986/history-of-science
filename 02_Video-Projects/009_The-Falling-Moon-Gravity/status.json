@@ -59,10 +59,10 @@
     "edit": {
       "state": "blocked",
       "due": "2026-11-19",
-      "owner": "Chief (J2808 score disposition)",
-      "waiting": "J2808 elected-Chief score disposition after J2806 production (#636) and J2807 ear review; J2035 assembly and J2171 Shorts remain held.",
+      "owner": "Chief (desk #180 score route decision after J2808 hold)",
+      "waiting": "Chief/owner desk #180 route beyond J2808: v01 failed unchanged music_gate (0.821 on 0-21s) while v02 passed 89-bed music_gate (0.6615) but failed J2807 ear review on six 0.61-2.29s < -45 dB inter-phrase silent dropouts in 18.95-97.92s of wonder_v02; no extra take, loop, splice, filter, waiver or PR908 deploy is permitted in J2808. J2035 and J2171 remain held.",
       "underway": false,
-      "note": "J2806 (#636) generated wonder_v02 (1 request, 2475 credits, GBP0) and passed complete 89-comparison music_gate (max 0.6615, 0 fails). J2807 demonstrated-audio ear review verified all local/NAS hashes, crossfade (175.28-178.28s in D), tempo (~55-70 BPM; 171.4 BPM is harpsichord subdivision), and VO clarity, but flagged six 0.61-2.29s inter-phrase silent dropouts (< -45 dB at 18.95-21.00s, 66.48-67.83s, 73.04-75.33s, 81.70-82.84s, 88.91-90.39s, 97.31-97.92s) and no lute in wonder_v02. Handed to J2808 Chief disposition (due 17 Nov 20:00Z); J2035 and J2171 held.",
+      "note": "J2808 disposition (SCORE_DISPOSITION_J2808.md): v02 NOT ACCEPTED (HOLD). J2806 (#636) passed preflight guards (2,475 <= 3,000 credits, GBP0) and complete 89-bed music_gate (max 0.6615, 0 fails, 0 unreadable), and J2807 (#637) passed 175.28-178.28s crossfade, tempo (~55-70 BPM), VO clarity, and 526s/535.3s coverage, but failed wonder_v02 on six 0.61-2.29s < -45 dB silent dropouts in 18.95-97.92s (plus no lute), caused by 'space between short, gently changing phrases' in the J2805 prompt. With no extra take, edit/loop/splice, waiver or PR908 allowed in J2808, no compliant route is presently available; J2035 (deadline 15 Nov 18:00Z / refreshed 18 Nov 18:00Z) and J2171 stay held.",
       "since": "2026-11-17"
     },
     "thumbnails": {
