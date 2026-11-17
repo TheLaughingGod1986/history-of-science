@@ -1,0 +1,243 @@
+{
+  "job": "J2806",
+  "scope_job": "J2805",
+  "film": "HOS:009",
+  "created_at": "2026-11-17T16:22:55+00:00",
+  "scope_sha256": "1298c09d6b6000e474bd5e359a767272edd63f452c5d4171872e1ec29d3269b1",
+  "request_count": 1,
+  "retries": 0,
+  "cash_spent_gbp": 0,
+  "preflight_tariff_and_guards": {
+    "published_pricing_url": "https://elevenlabs.io/pricing",
+    "published_credits_per_min": 900,
+    "published_180s_credits": 2700,
+    "account_measured_credits_per_s": 13.75,
+    "account_measured_180s_credits": 2475,
+    "worst_case_180s_credits_with_10pct_margin": 2970,
+    "pending_charges": 0,
+    "credit_cap": 3000,
+    "budget_ceiling": 3000
+  },
+  "posts": [
+    {
+      "cue": "wonder_v02",
+      "http": 200,
+      "started_at": "2026-11-17T16:18:41+00:00",
+      "finished_at": "2026-11-17T16:19:02+00:00",
+      "song_id": "RSFcaVQewwmuA3OjSPz3",
+      "audio_file": "hos_009_wonder_v02.mp3",
+      "bytes": 2880618,
+      "sha256": "b38ae8922e8d633b9f085a8bb9634c96d889a9293fcab277f7a3a23f4839d148",
+      "duration_s": 180.035875,
+      "credits_spent": 2475,
+      "derived_credits_per_s": 13.75,
+      "meter_wait_s": 16
+    }
+  ],
+  "retained_teach_v01": {
+    "audio_file": "hos_009_teach_v01.mp3",
+    "song_id": "Xl2Chc450JfbDUaU4iFE",
+    "bytes": 5760775,
+    "sha256": "4c1f0a17364ad5ba96fdd2d42730b2f857d19017fab52b221701bd4e15d07bb1",
+    "duration_s": 360.045688,
+    "new_credits_spent": 0
+  },
+  "credits_spent": 2475,
+  "credit_cap": 3000,
+  "subscription_before": {
+    "tier": "creator",
+    "status": "active",
+    "billing_period": "monthly_period",
+    "character_count": 41250,
+    "character_limit": 121114,
+    "max_character_limit_extension": 0,
+    "max_credit_limit_extension": 0,
+    "can_extend_character_limit": false,
+    "allowed_to_extend_character_limit": false,
+    "current_overage_amount": "0",
+    "current_overage_currency": "usd",
+    "next_character_count_reset_unix": 1796035831
+  },
+  "subscription_after": {
+    "tier": "creator",
+    "status": "active",
+    "billing_period": "monthly_period",
+    "character_count": 43725,
+    "character_limit": 121114,
+    "max_character_limit_extension": 0,
+    "max_credit_limit_extension": 0,
+    "can_extend_character_limit": false,
+    "allowed_to_extend_character_limit": false,
+    "current_overage_amount": "0",
+    "current_overage_currency": "usd",
+    "next_character_count_reset_unix": 1796035831
+  },
+  "joined_score_v02": {
+    "audio_file": "hos_009_score_joined_v02.wav",
+    "bytes": 94431534,
+    "sha256": "6fc8628a96b8267eaf5be6c19d7e30d9e473eb86c886ee3106c3219b375b1f68",
+    "duration_s": 535.325714,
+    "crossfade": {
+      "start_s": 175.28,
+      "end_s": 178.28,
+      "duration_s": 3,
+      "curve": "equal_power",
+      "ffmpeg": "acrossfade=d=3:c1=qsin:c2=qsin",
+      "chapter_card_s": 176.78
+    },
+    "source_windows": {
+      "wonder_v02": {
+        "file": "hos_009_wonder_v02.mp3",
+        "sha256": "b38ae8922e8d633b9f085a8bb9634c96d889a9293fcab277f7a3a23f4839d148",
+        "song_id": "RSFcaVQewwmuA3OjSPz3",
+        "source_range_s": [
+          0.0,
+          178.28
+        ],
+        "film_range_s": [
+          0.0,
+          178.28
+        ]
+      },
+      "teach_v01": {
+        "file": "hos_009_teach_v01.mp3",
+        "sha256": "4c1f0a17364ad5ba96fdd2d42730b2f857d19017fab52b221701bd4e15d07bb1",
+        "song_id": "Xl2Chc450JfbDUaU4iFE",
+        "source_range_s": [
+          0.0,
+          360.045688
+        ],
+        "film_range_s": [
+          175.28,
+          535.325714
+        ],
+        "retained_unchanged": true
+      }
+    }
+  },
+  "stems_v02": [
+    {
+      "file": "hos_009_stem_part01_the_falling_moon_v02.wav",
+      "start_s": 0.0,
+      "end_s": 84.44,
+      "duration_s": 84.44,
+      "bytes": 14895294,
+      "sha256": "9b524a443791db1a5d0f9ad2fc1bd0443b4b0fada23b1208c7da769ff91d3ebc"
+    },
+    {
+      "file": "hos_009_stem_part02_an_apple_in_a_plague_year_v02.wav",
+      "start_s": 84.44,
+      "end_s": 176.78,
+      "duration_s": 92.34,
+      "bytes": 16288854,
+      "sha256": "b9da64472d54dc5e1c2d516aec325a2599e91d4e86ec52acf68f74aa93cd44a4"
+    },
+    {
+      "file": "hos_009_stem_part03_the_cannon_on_the_mountain_v02.wav",
+      "start_s": 176.78,
+      "end_s": 260.16,
+      "duration_s": 83.38,
+      "bytes": 14708310,
+      "sha256": "e00218c91adadba0a4b3937ad8cecc3d511ccd2c8e2c51155140d4f91701765d"
+    },
+    {
+      "file": "hos_009_stem_part04_the_moon_test_v02.wav",
+      "start_s": 260.16,
+      "end_s": 393.86,
+      "duration_s": 133.7,
+      "bytes": 23584758,
+      "sha256": "89f7677faf3136c4eb5c9d93aafd94f531787d157b05f7e7a9f3a1f93642109f"
+    },
+    {
+      "file": "hos_009_stem_part05_falling_around_the_world_v02.wav",
+      "start_s": 393.86,
+      "end_s": 535.28,
+      "duration_s": 141.42,
+      "bytes": 24946566,
+      "sha256": "354c48208e16986a8b50bfe88b603e0f9e833c7bfc006164a8b0787c21b78c9e"
+    }
+  ],
+  "audition_artifacts": {
+    "reference_mix_full": {
+      "file": "07_Edit-Project/audio_review_j2806/hos_009_reference_mix_v02.wav",
+      "duration_s": 535.326,
+      "bytes": 94431534,
+      "sha256": "5f8e8345ff576bd37e9b174c6fb44b043f2a2d19339e4945a409430fb42f10cb",
+      "bed_gain_db": -16.0
+    },
+    "reference_endpoint_526s": {
+      "file": "07_Edit-Project/audio_review_j2806/hos_009_reference_endpoint_526s_v02.wav",
+      "duration_s": 526.0,
+      "bytes": 92786478,
+      "sha256": "3d1796928a6ae024c4459de7459bca1d92846b8b57cc5298eeb137a99d1636bc"
+    },
+    "transition_168_186_bed": {
+      "file": "07_Edit-Project/audio_review_j2806/hos_009_transition_168_186_bed_v02.wav",
+      "duration_s": 18.0,
+      "bytes": 3175278,
+      "sha256": "8ed21e574b78be7e4ee13e9f55e27f1e8e4eec783c3bf428b9edc310cdb9e108"
+    },
+    "transition_168_186_mix": {
+      "file": "07_Edit-Project/audio_review_j2806/hos_009_transition_168_186_mix_v02.wav",
+      "duration_s": 18.0,
+      "bytes": 3175278,
+      "sha256": "09a2aa607ec9b09e3cdb238711470a1ad597e9ad9d8b9ed9885029d76db29f2b"
+    }
+  },
+  "preserved_locks_verified": {
+    "hos_009_wonder_v01.mp3": "95dfe11d7c21c9347e9b962ef2f9ecd35116f2fce60df6f123578c11a1debaf0",
+    "hos_009_teach_v01.mp3": "4c1f0a17364ad5ba96fdd2d42730b2f857d19017fab52b221701bd4e15d07bb1",
+    "hos_009_score_joined_v01.wav": "d7f5bf3d7553d7c611a913e93602b8ec83419821059294ddeaee32269a4f9572",
+    "hos_009_stem_part01_the_falling_moon_v01.wav": "e45414d3417f7eefb0ab918c38e36be74f6af79235b014548ca9cedf9f2b6b1f",
+    "hos_009_stem_part02_an_apple_in_a_plague_year_v01.wav": "cf72496c2008b88ff1e0d812ecc4a997a01fd5e44236c0c2a957d65ce4669c6f",
+    "hos_009_stem_part03_the_cannon_on_the_mountain_v01.wav": "57ce4dcaf5f3903086727ee47b942ab999d0644ef2b90a52478dcaf07803c7fc",
+    "hos_009_stem_part04_the_moon_test_v01.wav": "89f7677faf3136c4eb5c9d93aafd94f531787d157b05f7e7a9f3a1f93642109f",
+    "hos_009_stem_part05_falling_around_the_world_v01.wav": "354c48208e16986a8b50bfe88b603e0f9e833c7bfc006164a8b0787c21b78c9e",
+    "VO_TAKES_KEEP.json": "530743c507af8d5f9049179d4e9d380b5c1b8aca4f180ada133d0b673f5925e0",
+    "VO_RETIME_v01.json": "75a2e7afa1d822b04371511c81a52082e1b80713b0e59711702cfd05fe45a972",
+    "J2631_code_graphic_009_p4_05_minute_second.mp4": "e35f9a9879c8e590ec66853b85307999f39bfe30c67b9bed193ca224cab42da3",
+    "J2632_r4_code_graphic_009_p3_01_really_falling_c1.mp4": "23c832b09e70f78d8eeece657dac11d6148e2a5f5c701f2ad88b868845b5f3b3"
+  },
+  "nas_mirror_verified": true,
+  "music_gate_summary": {
+    "verdict": "PASS",
+    "library_state": "complete",
+    "comparison_count": 89,
+    "unreadable_warn_count": 0,
+    "fail": [],
+    "warn": [
+      "pace: measured about 171.4 BPM against the brief's 60-72; Claude listens"
+    ],
+    "top_5_similarities": [
+      {
+        "file": "mac-mini-archive/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/05_Music/hos_002_part01_curious_workshop_v02_norm.wav",
+        "sha256_12": "8bc0d04982cb",
+        "similarity": 0.6615
+      },
+      {
+        "file": "mac-mini-archive/YouTube/History Of Science/02_Video-Projects/002_How-Did-We-Discover-The-Periodic-Table/05_Music/hos_002_part01_curious_workshop_v01_norm.wav",
+        "sha256_12": "46eb493fb885",
+        "similarity": 0.6359
+      },
+      {
+        "file": "mac-mini-archive/YouTube/orbit-with-ben/02_Video-Projects/013_Why-The-Moon-Is-Slowly-Leaving-Us/05_Music/moon-leaving-part02_score_bed_v01.mp3",
+        "sha256_12": "5093a4c23253",
+        "similarity": 0.5822
+      },
+      {
+        "file": "studio-live/orbit-with-ben/02_Video-Projects/026_How-Far-Is-The-Nearest-Star/05_Music/nearest-star_score_bed_v01.mp3",
+        "sha256_12": "767a574c164e",
+        "similarity": 0.561
+      },
+      {
+        "file": "studio-live/orbit-with-ben/02_Video-Projects/027_What-If-Earth-Stopped-Spinning/05_Music/earth-spin_score_bed_v02_fit.wav",
+        "sha256_12": "4d72982bad46",
+        "similarity": 0.4333
+      }
+    ]
+  },
+  "needs_audio_review": true,
+  "next_review_job": "J2807",
+  "next_chief_disposition_job": "J2808",
+  "acceptance": "Not accepted in J2806 (production-only job). Handing off to queued audio_input review J2807 and elected-Chief disposition J2808; J2035 and J2171 remain held."
+}

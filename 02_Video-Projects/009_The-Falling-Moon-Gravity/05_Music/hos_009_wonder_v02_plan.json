@@ -1,0 +1,17 @@
+{
+  "created_at": "2026-11-17T16:22:55+00:00",
+  "job": "J2806",
+  "scope_job": "J2805",
+  "cue": "wonder_v02",
+  "prompt": "Original instrumental opening underscore exclusively for HOS 009 The Falling Moon, Newton connecting an apple with the Moon. Intimate period chamber music led by soft gut-string lute and lightly articulated viol answers. Wonder comes from space between short, gently changing phrases and warm harmony, not a continuous bass drone. Keep a quiet audible musical bed beneath the sparse phrases, with subtle variation in register and voicing. Begin softly but clearly, already in the musical scene; no long fade-up, dramatic swell or opening sting. At about 84 seconds soften into an intimate orchard mood. End with a quiet sustained harmonic handoff suitable for a three-second crossfade into the existing D-minor harpsichord teach cue. Leave ample space for British narration; no foreground tune.\nPace: 60-66 BPM, spacious phrasing; no driving ostinato.\nNOT any earlier HOS or Orbit bed, the previous HOS009 wonder cue, jupiter-music.mp3, sustained bass-drone opening, cosmic shimmer, piano space-documentary music, solo woodwind workshop waltz, borrowed melody, named-composer imitation, heroic brass, horror, vocals, lyrics, pop drums, EDM or comedy stings.",
+  "length_ms": 180000,
+  "model_id": "music_v2",
+  "force_instrumental": true,
+  "song_id": "RSFcaVQewwmuA3OjSPz3",
+  "bytes": 2880618,
+  "sha256": "b38ae8922e8d633b9f085a8bb9634c96d889a9293fcab277f7a3a23f4839d148",
+  "duration_s": 180.035875,
+  "credits_spent": 2475,
+  "status": "generated",
+  "audio_file": "hos_009_wonder_v02.mp3"
+}
