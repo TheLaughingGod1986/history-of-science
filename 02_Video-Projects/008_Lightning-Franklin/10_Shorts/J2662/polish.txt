@@ -1,0 +1,10 @@
+ S01     1.0s /Volumes/data/studio-live/Hi ok
+ S02     3.5s /Volumes/data/studio-live/Hi ok
+ S03     6.4s /Volumes/data/studio-live/Hi ok
+ S04     9.3s /Volumes/data/studio-live/Hi ok
+ S05    12.2s /Volumes/data/studio-live/Hi ok
+ S06    14.9s /Volumes/data/studio-live/Hi ok
+ S07    17.7s /Volumes/data/studio-live/Hi ok
+ S08    20.1s /Volumes/data/studio-live/Hi WARN low detail: edge density 0.0267 < film p5 0.0301
+loop_tail    21.6s /Volumes/data/studio-live/Hi ok
+polish gate PASS: 0 of 9 rows failed, 1 to look at -> /Users/ben/_desk/worker/slot2/history-of-science/02_Video-Projects/008_Lightning-Franklin/10_Shorts/J2662/polish_gate.json

@@ -1,0 +1,192 @@
+[
+  {
+    "row": "S01",
+    "timeline_in": 0.0,
+    "timeline_out": 2.0416666666666665,
+    "source": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/19_skyline_strike_t1.mp4",
+    "upscale": 2.3111,
+    "video": true,
+    "framing": {
+      "offset": 1.0,
+      "crop": [
+        600,
+        0,
+        405,
+        720
+      ],
+      "output": [
+        936,
+        1664
+      ]
+    }
+  },
+  {
+    "row": "S02",
+    "timeline_in": 2.0416666666666665,
+    "timeline_out": 4.916666666666666,
+    "source": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/01_house_rod_t1.mp4",
+    "upscale": 2.3111,
+    "video": true,
+    "framing": {
+      "offset": 0.8,
+      "crop": [
+        180,
+        0,
+        405,
+        720
+      ],
+      "output": [
+        936,
+        1664
+      ]
+    }
+  },
+  {
+    "row": "S03",
+    "timeline_in": 4.916666666666666,
+    "timeline_out": 7.833333333333332,
+    "source": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/07_giant_spark_t1.mp4",
+    "upscale": 2.3111,
+    "video": true,
+    "framing": {
+      "offset": 0.6,
+      "crop": [
+        438,
+        0,
+        405,
+        720
+      ],
+      "output": [
+        936,
+        1664
+      ]
+    }
+  },
+  {
+    "row": "S04",
+    "timeline_in": 7.833333333333332,
+    "timeline_out": 10.749999999999998,
+    "source": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part01/raw/v01/12_steeple_fire_t1.mp4",
+    "upscale": 2.3111,
+    "video": true,
+    "framing": {
+      "offset": 0.8,
+      "crop": [
+        438,
+        0,
+        405,
+        720
+      ],
+      "output": [
+        936,
+        1664
+      ]
+    }
+  },
+  {
+    "row": "S05",
+    "timeline_in": 10.749999999999998,
+    "timeline_out": 13.541666666666664,
+    "source": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/18_rod_closeup_t1.mp4",
+    "upscale": 2.3111,
+    "video": true,
+    "framing": {
+      "offset": 0.0,
+      "crop": [
+        438,
+        0,
+        405,
+        720
+      ],
+      "output": [
+        936,
+        1664
+      ]
+    }
+  },
+  {
+    "row": "S06",
+    "timeline_in": 13.541666666666664,
+    "timeline_out": 16.333333333333332,
+    "source": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/06_rod_fitting_t1.mp4",
+    "upscale": 2.3111,
+    "video": true,
+    "framing": {
+      "offset": 4.0,
+      "crop": [
+        438,
+        0,
+        405,
+        720
+      ],
+      "output": [
+        936,
+        1664
+      ]
+    }
+  },
+  {
+    "row": "S07",
+    "timeline_in": 16.333333333333332,
+    "timeline_out": 19.041666666666664,
+    "source": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/06_rod_fitting_c1_t1.mp4",
+    "upscale": 2.3111,
+    "video": true,
+    "framing": {
+      "offset": 3.1,
+      "crop": [
+        438,
+        0,
+        405,
+        720
+      ],
+      "output": [
+        936,
+        1664
+      ]
+    }
+  },
+  {
+    "row": "S08",
+    "timeline_in": 19.041666666666664,
+    "timeline_out": 21.083333333333332,
+    "source": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/14_safe_towers_t1.mp4",
+    "upscale": 2.3111,
+    "video": true,
+    "framing": {
+      "offset": 4.2,
+      "crop": [
+        438,
+        0,
+        405,
+        720
+      ],
+      "output": [
+        936,
+        1664
+      ]
+    }
+  },
+  {
+    "row": "loop_tail",
+    "timeline_in": 21.083333333333332,
+    "timeline_out": 22.083333333333332,
+    "source": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/19_skyline_strike_t1.mp4",
+    "upscale": 2.3111,
+    "video": true,
+    "framing": {
+      "offset": 1.0,
+      "crop": [
+        600,
+        0,
+        405,
+        720
+      ],
+      "output": [
+        936,
+        1664
+      ]
+    },
+    "role": "prescribed_terminal_loop"
+  }
+]
