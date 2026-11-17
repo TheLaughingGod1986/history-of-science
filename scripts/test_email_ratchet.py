@@ -30,8 +30,9 @@ HERE = pathlib.Path(__file__).resolve().parent
 ROOT = HERE.parent
 LIST = HERE / "email_ratchet.json"
 DOMAINS = "gmail|googlemail|outlook|hotmail|live|icloud|yahoo|protonmail|proton"
-# One pattern for git grep (extended regex) and for Python.
-PATTERN = rf"[A-Za-z0-9._%+-]+@({DOMAINS})\.(com|me|co\.uk)"
+# One pattern for git grep (extended regex) and for Python. The optional backslash catches an address written as a
+# search pattern (its dot as backslash-dot).
+PATTERN = rf"[A-Za-z0-9._%+-]+@({DOMAINS})\\?\.(com|me|co\.uk)"
 ADDRESS = re.compile(PATTERN)
 
 
@@ -56,6 +57,17 @@ class WhatCounts(unittest.TestCase):
     def test_personal_mail_domains_count(self):
         for domain in ("gmail.com", "googlemail.com", "outlook.com", "icloud.com", "proton.me", "yahoo.co.uk"):
             self.assertTrue(ADDRESS.search("signed in as someone" + "@" + domain), domain)
+
+    def test_an_address_written_as_a_search_pattern_counts(self):
+        escaped = "someone" + "@" + "gmail" + "\\" + ".com"   # as in re.compile(r"...")
+        self.assertTrue(ADDRESS.search("popup.get_by_text(re.compile(r\"" + escaped + "\", re.I))"))
+        with tempfile.TemporaryDirectory() as d:
+            root = pathlib.Path(d)
+            git = ["git", "-C", d, "-c", "user.name=t", "-c", "user.email=t@example.com"]
+            subprocess.run(git + ["init", "-q"], check=True)
+            (root / "old_script.py").write_text("acc = re.compile(r\"" + escaped + "\")\n")
+            subprocess.run(git + ["add", "old_script.py"], check=True)
+            self.assertEqual(files_with_an_address(root), ["old_script.py"])
 
     def test_organisation_addresses_and_links_do_not(self):
         for text in ("Co-Authored-By: Claude <noreply" + "@" + "anthropic.com>", "press" + "@" + "nasa.gov",

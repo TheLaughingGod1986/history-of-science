@@ -38,8 +38,17 @@ MEDIA = Path(os.environ.get(
 ))
 OWB = Path(os.environ.get("OWB_REPO", str(Path.home() / "YouTube/orbit-with-ben")))
 CDP = os.environ.get("ORBIT_FLOW_CDP", "http://127.0.0.1:9222")
-REQUIRED = "benoats@googlemail.com"
-FORBIDDEN = "benoats86@gmail.com"
+REQUIRED = "81a01c9d841483f444008cd69e98b26019e032ed75b5e33e17409a76c6525ce9"
+FORBIDDEN = "93b0f97ef00986fa90ead10a83be910d43707ddc8023daa2018ed1d95cbbb9d4"
+
+
+def _account_sha256(addr: str | None) -> str:
+    import hashlib as _hashlib
+    s = (addr or "").strip().lower()
+    if not s:
+        return ""
+    return s if len(s) == 64 and all(c in "0123456789abcdef" for c in s) else _hashlib.sha256(s.encode()).hexdigest()
+
 TRY1 = {"Fast": 10, "Quality": 100}
 EXPECTED_TOTAL = 5605
 CAP = 6500
@@ -699,7 +708,7 @@ def main() -> int:
             f"spent={spent(log)} disk_free_gib={free_disk_gib():.2f}",
             flush=True,
         )
-        if account != REQUIRED or (account and FORBIDDEN in account):
+        if _account_sha256(account) != REQUIRED or _account_sha256(account) == FORBIDDEN:
             raise SystemExit(f"STOP wrong Flow account: {account}")
         if credits is None:
             raise SystemExit("STOP Flow credits unreadable")

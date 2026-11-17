@@ -272,7 +272,10 @@ def sha256_file(path: Path) -> str:
 def account_sha256(account: str | None) -> str:
     if not isinstance(account, str) or not account.strip():
         return ""
-    return sha256_bytes(account.strip().lower().encode("utf-8"))
+    candidate = account.strip().lower()
+    if re.fullmatch(r"[0-9a-f]{64}", candidate):
+        return candidate
+    return sha256_bytes(candidate.encode("utf-8"))
 
 
 def verify_account_list(accounts: object) -> str:

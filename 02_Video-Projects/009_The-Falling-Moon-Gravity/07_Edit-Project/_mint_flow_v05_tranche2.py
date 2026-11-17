@@ -50,8 +50,22 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 PARENTS = ((2, "10_how_high"), (3, "07_ball_to_moon"))
-REQUIRED_ACCOUNT = "benoats@googlemail.com"
-FORBIDDEN_ACCOUNT = "benoats86@gmail.com"
+REQUIRED_ACCOUNT = "81a01c9d841483f444008cd69e98b26019e032ed75b5e33e17409a76c6525ce9"
+FORBIDDEN_ACCOUNT = "93b0f97ef00986fa90ead10a83be910d43707ddc8023daa2018ed1d95cbbb9d4"
+
+
+def _account_sha256(addr: str | None) -> str:
+    s = (addr or "").strip().lower()
+    if not s:
+        return ""
+    return s if len(s) == 64 and all(c in "0123456789abcdef" for c in s) else hashlib.sha256(s.encode("utf-8")).hexdigest()
+
+
+def _normalized_accounts(accounts: object) -> object:
+    if not isinstance(accounts, list):
+        return accounts
+    return [_account_sha256(a) if isinstance(a, str) else a for a in accounts]
+
 MAX_CREDITS_PER_TAKE = 100
 MAX_TAKES_PER_ROW = 3
 MAX_TOTAL_CREDITS = 6000
@@ -337,7 +351,7 @@ def accept_account(account: str | None, read_at: str | None, *, now: datetime, m
     age = (now - stamp).total_seconds()
     if age < 0 or age > max_age_s:
         raise GuardError(f"balance read is not fresh ({int(age)}s)")
-    if account != REQUIRED_ACCOUNT or account == FORBIDDEN_ACCOUNT:
+    if _account_sha256(account) != REQUIRED_ACCOUNT or _account_sha256(account) == FORBIDDEN_ACCOUNT:
         raise GuardError("Flow account is not the required HOS Ultra account")
 
 
@@ -1828,7 +1842,7 @@ BALANCE_EVIDENCE_JS = r"""(expected) => {
   const body = document.body.innerText;
   const accounts = unique([...document.querySelectorAll('[aria-label]')].filter(visible)
     .map(e => e.getAttribute('aria-label')).filter(t => /Google Account|Account details/i.test(t))
-    .flatMap(t => t.match(/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/ig) || [])
+    .flatMap(t => t.match(/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}|\b[0-9a-f]{64}\b/ig) || [])
     .map(t => t.toLowerCase()));
   const balances = unique([...body.matchAll(/(?:^|\n)\s*([\d,]+)\s+(?:AI|Google Flow) credits\s*(?=\n|$)/g)]
     .map(m => Number(m[1].replace(/,/g, ''))));
@@ -1888,7 +1902,10 @@ def read_live_balance(page, *, open_overlay: bool = True) -> int:
             evidence = page.evaluate(BALANCE_EVIDENCE_JS, None)
     try:
         required = dict(host=FLOW_HOST, accounts=[REQUIRED_ACCOUNT], ultra=True)
-        if not isinstance(evidence, dict) or any(evidence.get(k) != v for k, v in required.items()):
+        if not isinstance(evidence, dict) or any(
+            (_normalized_accounts(evidence.get(k)) if k == 'accounts' else evidence.get(k)) != v
+            for k, v in required.items()
+        ):
             raise GuardError('live Flow selected controls/account/entitlement/price are missing or changed')
         balances = evidence.get('balances')
         if not isinstance(balances, list) or len(balances) != 1 or type(balances[0]) is not int or balances[0] < 0:
@@ -1959,7 +1976,7 @@ CREATE_EVIDENCE_JS = r"""(expected) => {
   const body = document.body.innerText;
   const accounts = unique([...document.querySelectorAll('[aria-label]')].filter(visible)
     .map(e => e.getAttribute('aria-label')).filter(t => /Google Account|Account details/i.test(t))
-    .flatMap(t => t.match(/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/ig) || [])
+    .flatMap(t => t.match(/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}|\b[0-9a-f]{64}\b/ig) || [])
     .map(t => t.toLowerCase()));
   const prices = unique(body.split('\n').map(t => t.trim())
     .filter(t => /^Generating will use \d+ credits$/.test(t)));
@@ -2029,13 +2046,16 @@ def _read_and_validate_live_evidence(page, *, balance: int | None = None,
                     aspects=['16:9'], durations=['8s'], accounts=[REQUIRED_ACCOUNT],
                     prices=[f'Generating will use {MAX_CREDITS_PER_TAKE} credits'],
                     ultra=True, create_count=1)
-    if not isinstance(raw, dict) or any(raw.get(k) != v for k, v in required.items()):
+    if not isinstance(raw, dict) or any(
+        (_normalized_accounts(raw.get(k)) if k == 'accounts' else raw.get(k)) != v
+        for k, v in required.items()
+    ):
         raise GuardError('live Flow selected controls/account/entitlement/price are missing or changed')
     # Reject extra fields so the atomic comparison has one exact schema.
     if set(raw) != set(required) | {'balances'}:
         raise GuardError('unknown live Flow evidence schema')
     balances = _resolve_evidence_balances(raw, balance)
-    return raw, dict(raw, balances=balances)
+    return raw, dict(raw, accounts=_normalized_accounts(raw.get('accounts')), balances=balances)
 
 
 def read_live_evidence(page, *, balance: int | None = None, open_overlay: bool = False) -> dict:
@@ -2138,7 +2158,7 @@ STILL_EVIDENCE_JS = r"""(expected) => {
   const body = document.body.innerText;
   const accounts = unique([...document.querySelectorAll('[aria-label]')].filter(visible)
     .map(e => e.getAttribute('aria-label')).filter(t => /Google Account|Account details/i.test(t))
-    .flatMap(t => t.match(/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/ig) || [])
+    .flatMap(t => t.match(/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}|\b[0-9a-f]{64}\b/ig) || [])
     .map(t => t.toLowerCase()));
   const prices = unique(body.split('\n').map(t => t.trim())
     .filter(t => /^Generating will use \d+ credits$/.test(t)));
@@ -2192,12 +2212,15 @@ def _read_and_validate_live_still_evidence(page, *, balance: int | None = None,
                     aspects=['16:9'], accounts=[REQUIRED_ACCOUNT],
                     prices=['Generating will use 0 credits'],
                     ultra=True, create_count=1)
-    if not isinstance(raw, dict) or any(raw.get(k) != v for k, v in required.items()):
+    if not isinstance(raw, dict) or any(
+        (_normalized_accounts(raw.get(k)) if k == 'accounts' else raw.get(k)) != v
+        for k, v in required.items()
+    ):
         raise GuardError('live Flow still selected controls/account/entitlement/zero-price are missing or changed')
     if set(raw) != set(required) | {'balances'}:
         raise GuardError('unknown live Flow still evidence schema')
     balances = _resolve_evidence_balances(raw, balance)
-    return raw, dict(raw, balances=balances)
+    return raw, dict(raw, accounts=_normalized_accounts(raw.get('accounts')), balances=balances)
 
 
 def read_live_still_evidence(page, *, balance: int | None = None, open_overlay: bool = False) -> dict:
