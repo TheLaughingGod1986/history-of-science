@@ -1,0 +1,45 @@
+{
+  "film": "110",
+  "title": "Why Do Onions Make You Cry? (The 2002 Enzyme Twist)",
+  "summary": "Rule-E topic go/no-go review GO (95/100 Opportunity Score, J2924; J2922 / jobs/WIP.json next_hos; Rule G). Data-backed topic brief, public_search.py and neighbours.py PASS evidence (9 strictly on-topic >=1M in neighbours.py + 6 >=1M in public_search.py incl. TED-Ed 14.04M, Amoeba Sisters 7.27M, TED-Ed 6.91M Why do we cry?, TED-Ed 4.45M & Colossal Cranium 3.49M) pre-cleared; awaits an open active HOS WIP slot before SOURCES.md and facts lane (all claims UNVERIFIED until sourced).",
+  "stages": {
+    "topic": {
+      "state": "todo"
+    },
+    "script": {
+      "state": "todo"
+    },
+    "facts": {
+      "state": "todo"
+    },
+    "package": {
+      "state": "todo"
+    },
+    "vo": {
+      "state": "todo"
+    },
+    "shorts_scripts": {
+      "state": "todo"
+    },
+    "shorts_vo": {
+      "state": "todo"
+    },
+    "picture": {
+      "state": "todo"
+    },
+    "edit": {
+      "state": "todo"
+    },
+    "thumbnails": {
+      "state": "todo"
+    },
+    "ben_ok": {
+      "state": "todo"
+    },
+    "scheduled": {
+      "state": "todo"
+    }
+  },
+  "claims": [],
+  "next": ""
+}

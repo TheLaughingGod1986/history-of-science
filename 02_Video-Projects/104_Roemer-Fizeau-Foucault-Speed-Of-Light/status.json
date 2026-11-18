@@ -1,0 +1,45 @@
+{
+  "film": "104",
+  "title": "How Did We Measure the Speed of Light? (A 720-Tooth Wheel)",
+  "summary": "Rule-E topic go/no-go review GO (96/100 Opportunity Score, J2810; J2809 / jobs/WIP.json next_hos; Rule G). Data-backed topic brief, public_search.py and neighbours.py PASS evidence (11 education neighbours >=1M incl. Veritasium 24.35M & TED-Ed 3.70M) pre-cleared; awaits an open active HOS WIP slot before SOURCES.md and facts lane (all claims UNVERIFIED until sourced).",
+  "stages": {
+    "topic": {
+      "state": "todo"
+    },
+    "script": {
+      "state": "todo"
+    },
+    "facts": {
+      "state": "todo"
+    },
+    "package": {
+      "state": "todo"
+    },
+    "vo": {
+      "state": "todo"
+    },
+    "shorts_scripts": {
+      "state": "todo"
+    },
+    "shorts_vo": {
+      "state": "todo"
+    },
+    "picture": {
+      "state": "todo"
+    },
+    "edit": {
+      "state": "todo"
+    },
+    "thumbnails": {
+      "state": "todo"
+    },
+    "ben_ok": {
+      "state": "todo"
+    },
+    "scheduled": {
+      "state": "todo"
+    }
+  },
+  "claims": [],
+  "next": ""
+}

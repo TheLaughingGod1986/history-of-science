@@ -1,0 +1,45 @@
+{
+  "film": "107",
+  "title": "Why Do Leaves Change Colour? (A Chalk Tube Showed Why)",
+  "summary": "Rule-E topic go/no-go review GO (90/100 Opportunity Score, J2837; J2835 / jobs/WIP.json next_hos behind HOS:106; Rule G). Data-backed topic brief, public_search.py and neighbours.py PASS evidence (5 on-subject >=1M education videos: SciShow Kids 1.92M & 1.85M, MinuteEarth 1.56M, Cognito 1.53M, Khan Academy 1.33M) pre-cleared with late-Aug/Sep seasonal release recommendation; awaits an open active HOS WIP slot before SOURCES.md and facts lane (all claims UNVERIFIED until sourced).",
+  "stages": {
+    "topic": {
+      "state": "todo"
+    },
+    "script": {
+      "state": "todo"
+    },
+    "facts": {
+      "state": "todo"
+    },
+    "package": {
+      "state": "todo"
+    },
+    "vo": {
+      "state": "todo"
+    },
+    "shorts_scripts": {
+      "state": "todo"
+    },
+    "shorts_vo": {
+      "state": "todo"
+    },
+    "picture": {
+      "state": "todo"
+    },
+    "edit": {
+      "state": "todo"
+    },
+    "thumbnails": {
+      "state": "todo"
+    },
+    "ben_ok": {
+      "state": "todo"
+    },
+    "scheduled": {
+      "state": "todo"
+    }
+  },
+  "claims": [],
+  "next": ""
+}

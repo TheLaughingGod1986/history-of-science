@@ -1,0 +1,46 @@
+{
+  "film": "105",
+  "title": "How Do Venus Flytraps Work? (The Plant That Counts to Five)",
+  "summary": "Pre-cleared backlog proposal in jobs/WIP.json next_hos (Rule G; J2809 + J2811 Rule-E GO 95/100). Data-backed topic brief, TOPIC_OPPORTUNITY_SCORE.md (95/100), TOPIC_GO_NO_GO_SHEET.md (GO), public_search.py (0 collisions on disambiguated titles) and neighbours.py PASS evidence (6 education neighbours >=1M incl. TED-Ed 4.45M, TED 3.30M & TED-Ed 2.36M) verified; all claims remain UNVERIFIED pending SOURCES.md and facts lane when an active HOS WIP slot opens.",
+  "stages": {
+    "topic": {
+      "state": "todo",
+      "note": "J2809 + J2811 Rule-E GO (95/100); pre-cleared in next_hos under Rule G; all claims UNVERIFIED pending SOURCES.md + facts lane"
+    },
+    "script": {
+      "state": "todo"
+    },
+    "facts": {
+      "state": "todo"
+    },
+    "package": {
+      "state": "todo"
+    },
+    "vo": {
+      "state": "todo"
+    },
+    "shorts_scripts": {
+      "state": "todo"
+    },
+    "shorts_vo": {
+      "state": "todo"
+    },
+    "picture": {
+      "state": "todo"
+    },
+    "edit": {
+      "state": "todo"
+    },
+    "thumbnails": {
+      "state": "todo"
+    },
+    "ben_ok": {
+      "state": "todo"
+    },
+    "scheduled": {
+      "state": "todo"
+    }
+  },
+  "claims": [],
+  "next": ""
+}
