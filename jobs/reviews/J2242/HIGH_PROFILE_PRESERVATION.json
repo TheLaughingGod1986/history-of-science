@@ -1,0 +1,19 @@
+{
+  "status": "PRESERVATION_CHECKS_ONLY",
+  "frames": 12923,
+  "unchanged_decoded_frames_verified": 12763,
+  "copied_video_packets_verified": 12763,
+  "audio_packets_verified": 25296,
+  "sync": "UNMEASURED",
+  "loudness": "UNMEASURED",
+  "visual_review": "OUTSTANDING",
+  "final_film_approval": false,
+  "identity_selfcheck": false,
+  "candidate": "/Volumes/MiniWork/scratch/J2242-high-profile-mux-v01/salon_only_experiment.mp4",
+  "candidate_sha256": "32868b561a38b31ce4a3796f080179c1c4592a6a78eddf296e821ce2f9d3cbdb",
+  "source_master_sha256": "cf1561c218bace7bc14ed3d625b0790a457027a90f392262f45ca7172723099b",
+  "contract_sha256": "f80a65d685edc8d303fe0b3bd64dc55392694a1208dae81a240addb66c964e81",
+  "candidate_framehash_sha256": "c54e4aba1f294a4d852bc5f0a8de21293f0ebf29afb73bf231cb5a87e66e2e52",
+  "identical_guarded_candidate": "/Volumes/MiniWork/scratch/J2242-high-profile-guarded-mux-v01/salon_only_experiment.mp4",
+  "note": "Guarded script output is byte-identical to independently verified diagnostic output. Salon-only; no finished master."
+}

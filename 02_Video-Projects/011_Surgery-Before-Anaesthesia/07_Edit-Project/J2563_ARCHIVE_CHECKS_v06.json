@@ -1,0 +1,43 @@
+{
+  "checks": [
+    {
+      "row_id": "P1:09b",
+      "sha256_match": true,
+      "full_decode": true,
+      "plan_duration_s": 3.48,
+      "duration_error_s": -0.013333333333333197,
+      "cue_anchors_checked_by_renderer": true,
+      "credit_overlap_checked_by_renderer": true
+    },
+    {
+      "row_id": "P2:04a_arch_davy_1800",
+      "sha256_match": true,
+      "full_decode": true,
+      "plan_duration_s": 5.0,
+      "duration_error_s": 0.0,
+      "cue_anchors_checked_by_renderer": true,
+      "credit_overlap_checked_by_renderer": true
+    },
+    {
+      "row_id": "P2:09b_arch_long_1849",
+      "sha256_match": true,
+      "full_decode": true,
+      "plan_duration_s": 6.99,
+      "duration_error_s": 0.009999999999999787,
+      "cue_anchors_checked_by_renderer": true,
+      "credit_overlap_checked_by_renderer": true
+    },
+    {
+      "row_id": "P3:09a_arch_ether_dome_1847",
+      "sha256_match": true,
+      "full_decode": true,
+      "plan_duration_s": 5.47,
+      "duration_error_s": -0.0033333333333329662,
+      "cue_anchors_checked_by_renderer": true,
+      "credit_overlap_checked_by_renderer": true
+    }
+  ],
+  "motion_review": false,
+  "audio_review": false,
+  "film_stage_approved": false
+}

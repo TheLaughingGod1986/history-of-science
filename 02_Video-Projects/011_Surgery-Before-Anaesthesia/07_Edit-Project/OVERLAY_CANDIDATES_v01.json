@@ -1,0 +1,1401 @@
+{
+  "job": "J2563",
+  "status": "partial_candidates_not_render_ready",
+  "stt_sha256": "f7abac2d4bf6c58558eee80e6d201395640d0514988dcbeca795dd21dcf0d577",
+  "word_index_basis": "zero-based filtered type=word list; raw_stt_indices also recorded",
+  "candidates": [
+    {
+      "row_id": "P1:01a",
+      "kind": "when",
+      "planned_text": "London, before 1846",
+      "row_window_s": [
+        0.0,
+        3.16
+      ],
+      "anchor_text": "Before 1846,",
+      "word_indices": [
+        0,
+        1
+      ],
+      "raw_stt_indices": [
+        0,
+        2
+      ],
+      "evidence_window_s": [
+        0.06,
+        1.6
+      ],
+      "in_s": 0.06,
+      "out_s": 2.06,
+      "text": "Before 1846",
+      "status": "candidate_requires_layout_review",
+      "actual_row_id": "P1:01a"
+    },
+    {
+      "row_id": "P1:01b",
+      "kind": "label",
+      "planned_text": "SPEED",
+      "row_window_s": [
+        3.16,
+        6.34
+      ],
+      "anchor_text": "fastest",
+      "word_indices": [
+        11
+      ],
+      "raw_stt_indices": [
+        22
+      ],
+      "evidence_window_s": [
+        4.24,
+        4.7
+      ],
+      "in_s": 4.24,
+      "out_s": 6.24,
+      "text": "FASTEST",
+      "status": "candidate_requires_layout_review",
+      "actual_row_id": "P1:01b"
+    },
+    {
+      "row_id": "P1:02a",
+      "kind": "when",
+      "planned_text": "Europe & America",
+      "row_window_s": [
+        6.34,
+        10.98
+      ],
+      "anchor_text": "Europe and America,",
+      "word_indices": [
+        26,
+        27,
+        28
+      ],
+      "raw_stt_indices": [
+        52,
+        54,
+        56
+      ],
+      "evidence_window_s": [
+        10.02,
+        10.88
+      ],
+      "in_s": 10.02,
+      "out_s": 12.02,
+      "text": "Europe & America",
+      "status": "candidate_requires_layout_review",
+      "actual_row_id": "P1:02a"
+    },
+    {
+      "row_id": "P1:04a",
+      "kind": "when",
+      "planned_text": "Autumn 1846",
+      "row_window_s": [
+        22.8,
+        26.78
+      ],
+      "anchor_text": "autumn of 1846,",
+      "word_indices": [
+        71,
+        72,
+        73
+      ],
+      "raw_stt_indices": [
+        142,
+        144,
+        146
+      ],
+      "evidence_window_s": [
+        24.94,
+        26.54
+      ],
+      "in_s": 24.94,
+      "out_s": 26.94,
+      "text": "Autumn 1846",
+      "status": "candidate_requires_layout_review",
+      "actual_row_id": "P1:04a"
+    },
+    {
+      "row_id": "P1:05a",
+      "kind": "label",
+      "planned_text": "ETHER",
+      "row_window_s": [
+        29.1,
+        35.8
+      ],
+      "anchor_text": "glass globe",
+      "word_indices": [
+        84,
+        85
+      ],
+      "raw_stt_indices": [
+        168,
+        170
+      ],
+      "evidence_window_s": [
+        31.0,
+        31.8
+      ],
+      "in_s": 31.0,
+      "out_s": 33.0,
+      "text": "GLASS GLOBE",
+      "status": "candidate_requires_layout_review",
+      "actual_row_id": "P1:05a"
+    },
+    {
+      "row_id": "P1:08a",
+      "kind": "when",
+      "planned_text": "1840",
+      "row_window_s": [
+        59.5,
+        66.4
+      ],
+      "anchor_text": "1840",
+      "word_indices": [
+        171
+      ],
+      "raw_stt_indices": [
+        342
+      ],
+      "evidence_window_s": [
+        61.04,
+        61.96
+      ],
+      "in_s": 61.04,
+      "out_s": 63.04,
+      "text": "1840",
+      "status": "candidate_requires_layout_review",
+      "actual_row_id": "P1:08a"
+    },
+    {
+      "row_id": "P1:09c",
+      "kind": "when",
+      "planned_text": "Nearly 50 years earlier",
+      "row_window_s": [
+        81.68,
+        86.8
+      ],
+      "anchor_text": "nearly fifty years earlier.",
+      "word_indices": [
+        230,
+        231,
+        232,
+        233
+      ],
+      "raw_stt_indices": [
+        460,
+        462,
+        464,
+        466
+      ],
+      "evidence_window_s": [
+        85.4,
+        86.78
+      ],
+      "in_s": 85.4,
+      "out_s": 87.4,
+      "text": "Nearly fifty years earlier",
+      "status": "candidate_requires_layout_review",
+      "actual_row_id": "P1:09c"
+    },
+    {
+      "row_id": "P2:02a",
+      "kind": "when",
+      "planned_text": "Bristol, 1800",
+      "row_window_s": [
+        89.77,
+        95.2
+      ],
+      "anchor_text": "1800 in Bristol,",
+      "word_indices": [
+        235,
+        236,
+        237
+      ],
+      "raw_stt_indices": [
+        470,
+        472,
+        474
+      ],
+      "evidence_window_s": [
+        87.72,
+        89.44
+      ],
+      "in_s": 87.72,
+      "out_s": 89.72,
+      "text": "Bristol, 1800",
+      "status": "candidate_requires_layout_review",
+      "actual_row_id": "P2:01_card_p02",
+      "reconciliation": "Moved to actual spoken evidence; immutable plan unchanged."
+    },
+    {
+      "row_id": "P2:02a",
+      "kind": "who",
+      "planned_text": "Humphry Davy (1778–1829) — Bristol chemist",
+      "row_window_s": [
+        89.77,
+        95.2
+      ],
+      "anchor_text": "Humphry Davy",
+      "word_indices": [
+        242,
+        243
+      ],
+      "raw_stt_indices": [
+        484,
+        486
+      ],
+      "evidence_window_s": [
+        91.16,
+        92.06
+      ],
+      "in_s": 91.16,
+      "out_s": 94.36,
+      "text": "Humphry Davy (1778–1829) — Bristol chemist",
+      "status": "candidate_requires_layout_review",
+      "actual_row_id": "P2:02a"
+    },
+    {
+      "row_id": "P2:06a",
+      "kind": "when",
+      "planned_text": "The next morning",
+      "row_window_s": [
+        133.3,
+        139.52
+      ],
+      "anchor_text": "next morning.",
+      "word_indices": [
+        352,
+        353
+      ],
+      "raw_stt_indices": [
+        704,
+        706
+      ],
+      "evidence_window_s": [
+        140.92,
+        141.7
+      ],
+      "in_s": 140.92,
+      "out_s": 142.92,
+      "text": "The next morning",
+      "status": "candidate_requires_layout_review",
+      "actual_row_id": "P2:07a",
+      "reconciliation": "Moved to actual spoken evidence; immutable plan unchanged."
+    },
+    {
+      "row_id": "P2:07a",
+      "kind": "who",
+      "planned_text": "Crawford Long (1815–1878) — Georgia physician",
+      "row_window_s": [
+        139.52,
+        147.5
+      ],
+      "anchor_text": "Crawford Long",
+      "word_indices": [
+        364,
+        365
+      ],
+      "raw_stt_indices": [
+        728,
+        730
+      ],
+      "evidence_window_s": [
+        145.9,
+        146.7
+      ],
+      "in_s": 145.9,
+      "out_s": 149.1,
+      "text": "Crawford Long (1815–1878) — Georgia physician",
+      "status": "candidate_requires_layout_review",
+      "actual_row_id": "P2:07a"
+    },
+    {
+      "row_id": "P2:09b_arch_long_1849",
+      "kind": "when",
+      "planned_text": "Published 1849 (7 years later)",
+      "row_window_s": [
+        166.14,
+        173.13
+      ],
+      "anchor_text": "another seven years.",
+      "word_indices": [
+        410,
+        411,
+        412
+      ],
+      "raw_stt_indices": [
+        820,
+        822,
+        824
+      ],
+      "evidence_window_s": [
+        167.86,
+        169.14
+      ],
+      "in_s": 167.86,
+      "out_s": 169.86,
+      "text": "Seven years later",
+      "status": "candidate_requires_layout_review",
+      "actual_row_id": "P2:09b_arch_long_1849"
+    },
+    {
+      "row_id": "P3:02a",
+      "kind": "who",
+      "planned_text": "Horace Wells (1815–1848) — Connecticut dentist",
+      "row_window_s": [
+        178.08,
+        184.6
+      ],
+      "anchor_text": "Horace Wells",
+      "word_indices": [
+        437,
+        438
+      ],
+      "raw_stt_indices": [
+        874,
+        876
+      ],
+      "evidence_window_s": [
+        179.18,
+        180.18
+      ],
+      "in_s": 179.18,
+      "out_s": 182.38,
+      "text": "Horace Wells (1815–1848) — Connecticut dentist",
+      "status": "candidate_requires_layout_review",
+      "actual_row_id": "P3:02a"
+    },
+    {
+      "row_id": "P3:03a",
+      "kind": "when",
+      "planned_text": "11 December 1844 (the next day)",
+      "row_window_s": [
+        184.6,
+        190.5
+      ],
+      "anchor_text": "The next day,",
+      "word_indices": [
+        447,
+        448,
+        449
+      ],
+      "raw_stt_indices": [
+        894,
+        896,
+        898
+      ],
+      "evidence_window_s": [
+        184.6,
+        185.22
+      ],
+      "in_s": 184.6,
+      "out_s": 186.6,
+      "text": "The next day",
+      "status": "candidate_requires_layout_review",
+      "actual_row_id": "P3:03a"
+    },
+    {
+      "row_id": "P3:05a",
+      "kind": "who",
+      "planned_text": "William T. G. Morton (1819–1868) — Boston dentist",
+      "row_window_s": [
+        210.7,
+        218.7
+      ],
+      "anchor_text": "William Morton,",
+      "word_indices": [
+        526,
+        527
+      ],
+      "raw_stt_indices": [
+        1052,
+        1054
+      ],
+      "evidence_window_s": [
+        215.2,
+        216.18
+      ],
+      "in_s": 215.2,
+      "out_s": 218.4,
+      "text": "William T. G. Morton (1819–1868) — Boston dentist",
+      "status": "candidate_requires_layout_review",
+      "actual_row_id": "P3:05a"
+    },
+    {
+      "row_id": "P3:05b",
+      "kind": "label",
+      "planned_text": "ETHER",
+      "row_window_s": [
+        218.7,
+        226.68
+      ],
+      "anchor_text": "ether.",
+      "word_indices": [
+        542
+      ],
+      "raw_stt_indices": [
+        1084
+      ],
+      "evidence_window_s": [
+        222.44,
+        222.88
+      ],
+      "in_s": 222.44,
+      "out_s": 224.44,
+      "text": "ETHER",
+      "status": "candidate_requires_layout_review",
+      "actual_row_id": "P3:05b"
+    },
+    {
+      "row_id": "P3:08a",
+      "kind": "who",
+      "planned_text": "John Collins Warren (1778–1856) — Boston surgeon",
+      "row_window_s": [
+        244.08,
+        250.86
+      ],
+      "anchor_text": "John Collins Warren,",
+      "word_indices": [
+        591,
+        592,
+        593
+      ],
+      "raw_stt_indices": [
+        1182,
+        1184,
+        1186
+      ],
+      "evidence_window_s": [
+        244.82,
+        245.94
+      ],
+      "in_s": 244.82,
+      "out_s": 248.02,
+      "text": "John Collins Warren (1778–1856) — Boston surgeon",
+      "status": "candidate_requires_layout_review",
+      "actual_row_id": "P3:08a"
+    },
+    {
+      "row_id": "P4:04a",
+      "kind": "who",
+      "planned_text": "Oliver Wendell Holmes (1809–1894) — physician and poet",
+      "row_window_s": [
+        297.5,
+        304.8
+      ],
+      "anchor_text": "Oliver Wendell Holmes",
+      "word_indices": [
+        728,
+        729,
+        730
+      ],
+      "raw_stt_indices": [
+        1456,
+        1458,
+        1460
+      ],
+      "evidence_window_s": [
+        301.68,
+        303.1
+      ],
+      "in_s": 301.68,
+      "out_s": 304.88,
+      "text": "Oliver Wendell Holmes (1809–1894) — physician and poet",
+      "status": "candidate_requires_layout_review",
+      "actual_row_id": "P4:04a"
+    },
+    {
+      "row_id": "P4:04c_cg_anesthesia_etymology",
+      "kind": "label",
+      "planned_text": "ANAESTHESIA",
+      "row_window_s": [
+        309.2,
+        314.5
+      ],
+      "anchor_text": "anesthesia,",
+      "word_indices": [
+        745
+      ],
+      "raw_stt_indices": [
+        1490
+      ],
+      "evidence_window_s": [
+        310.0,
+        310.96
+      ],
+      "in_s": 310.0,
+      "out_s": 312.0,
+      "text": "ANAESTHESIA",
+      "status": "candidate_requires_layout_review",
+      "actual_row_id": "P4:04c_cg_anesthesia_etymology"
+    },
+    {
+      "row_id": "P4:05b",
+      "kind": "who",
+      "planned_text": "Charles T. Jackson (1805–1880) — Boston chemist",
+      "row_window_s": [
+        319.5,
+        326.94
+      ],
+      "anchor_text": "Charles Jackson,",
+      "word_indices": [
+        767,
+        768
+      ],
+      "raw_stt_indices": [
+        1534,
+        1536
+      ],
+      "evidence_window_s": [
+        322.2,
+        323.18
+      ],
+      "in_s": 322.2,
+      "out_s": 325.4,
+      "text": "Charles T. Jackson (1805–1880) — Boston chemist",
+      "status": "candidate_requires_layout_review",
+      "actual_row_id": "P4:05b"
+    },
+    {
+      "row_id": "P4:09a",
+      "kind": "fact",
+      "planned_text": "No claimant named",
+      "row_window_s": [
+        354.8,
+        360.2
+      ],
+      "anchor_text": "doesn't name a single one of them.",
+      "word_indices": [
+        849,
+        850,
+        851,
+        852,
+        853,
+        854,
+        855
+      ],
+      "raw_stt_indices": [
+        1698,
+        1700,
+        1702,
+        1704,
+        1706,
+        1708,
+        1710
+      ],
+      "evidence_window_s": [
+        357.28,
+        359.22
+      ],
+      "in_s": 357.28,
+      "out_s": 359.28,
+      "text": "No claimant named",
+      "status": "candidate_requires_layout_review",
+      "actual_row_id": "P4:09a"
+    },
+    {
+      "row_id": "P5:02a",
+      "kind": "when",
+      "planned_text": "London, 21 December 1846",
+      "row_window_s": [
+        371.03,
+        374.8
+      ],
+      "anchor_text": "21st of December 1846 in London,",
+      "word_indices": [
+        874,
+        875,
+        876,
+        877,
+        878,
+        879
+      ],
+      "raw_stt_indices": [
+        1748,
+        1750,
+        1752,
+        1754,
+        1756,
+        1758
+      ],
+      "evidence_window_s": [
+        367.4,
+        370.96
+      ],
+      "in_s": 367.4,
+      "out_s": 369.4,
+      "text": "London, 21 December 1846",
+      "status": "candidate_requires_layout_review",
+      "actual_row_id": "P5:01_card_p05",
+      "reconciliation": "Moved to actual spoken evidence; immutable plan unchanged."
+    },
+    {
+      "row_id": "P1:03a",
+      "kind": "who",
+      "planned_text": "Robert Liston (1794–1847) — London surgeon",
+      "row_window_s": [
+        14.28,
+        18.62
+      ],
+      "anchor_text": "Robert Liston",
+      "word_indices": [
+        880,
+        881
+      ],
+      "raw_stt_indices": [
+        1760,
+        1762
+      ],
+      "evidence_window_s": [
+        371.48,
+        372.18
+      ],
+      "in_s": 371.48,
+      "out_s": 374.68,
+      "text": "Robert Liston (1794–1847) — London surgeon",
+      "status": "candidate_requires_layout_review",
+      "actual_row_id": "P5:02a",
+      "reconciliation": "Moved to actual spoken evidence; immutable plan unchanged."
+    },
+    {
+      "row_id": "P5:04b",
+      "kind": "who",
+      "planned_text": "James Young Simpson (1811–1870) — Edinburgh obstetrician",
+      "row_window_s": [
+        401.96,
+        409.5
+      ],
+      "anchor_text": "James Young Simpson",
+      "word_indices": [
+        947,
+        948,
+        949
+      ],
+      "raw_stt_indices": [
+        1894,
+        1896,
+        1898
+      ],
+      "evidence_window_s": [
+        404.9,
+        406.32
+      ],
+      "in_s": 404.9,
+      "out_s": 408.1,
+      "text": "James Young Simpson (1811–1870) — Edinburgh obstetrician",
+      "status": "candidate_requires_layout_review",
+      "actual_row_id": "P5:04b"
+    },
+    {
+      "row_id": "P5:05a",
+      "kind": "label",
+      "planned_text": "CHLOROFORM",
+      "row_window_s": [
+        409.5,
+        415.48
+      ],
+      "anchor_text": "chloroform",
+      "word_indices": [
+        966
+      ],
+      "raw_stt_indices": [
+        1932
+      ],
+      "evidence_window_s": [
+        413.24,
+        414.02
+      ],
+      "in_s": 413.24,
+      "out_s": 415.24,
+      "text": "CHLOROFORM",
+      "status": "candidate_requires_layout_review",
+      "actual_row_id": "P5:05a"
+    },
+    {
+      "row_id": "P5:06b",
+      "kind": "who",
+      "planned_text": "John Snow (1813–1858) — London physician",
+      "row_window_s": [
+        426.8,
+        429.63
+      ],
+      "anchor_text": "John Snow",
+      "word_indices": [
+        1001,
+        1002
+      ],
+      "raw_stt_indices": [
+        2002,
+        2004
+      ],
+      "evidence_window_s": [
+        431.099,
+        431.959
+      ],
+      "in_s": 431.099,
+      "out_s": 434.299,
+      "text": "John Snow (1813–1858) — London physician",
+      "status": "candidate_requires_layout_review",
+      "actual_row_id": "P5:07a_arch_snow_chloroform_1858",
+      "reconciliation": "Moved to actual spoken evidence; immutable plan unchanged."
+    },
+    {
+      "row_id": "P5:09a",
+      "kind": "when",
+      "planned_text": "Today",
+      "row_window_s": [
+        451.8,
+        458.5
+      ],
+      "anchor_text": "Today,",
+      "word_indices": [
+        1052
+      ],
+      "raw_stt_indices": [
+        2104
+      ],
+      "evidence_window_s": [
+        452.72,
+        453.22
+      ],
+      "in_s": 452.72,
+      "out_s": 454.72,
+      "text": "Today",
+      "status": "candidate_requires_layout_review",
+      "actual_row_id": "P5:09a"
+    },
+    {
+      "row_id": "P5:11a",
+      "kind": "label",
+      "planned_text": "ANAESTHETIST",
+      "row_window_s": [
+        473.6,
+        481.2
+      ],
+      "anchor_text": "anesthetist,",
+      "word_indices": [
+        1105
+      ],
+      "raw_stt_indices": [
+        2210
+      ],
+      "evidence_window_s": [
+        477.48,
+        478.4
+      ],
+      "in_s": 477.48,
+      "out_s": 479.48,
+      "text": "ANAESTHETIST",
+      "status": "candidate_requires_layout_review",
+      "actual_row_id": "P5:11a"
+    }
+  ],
+  "held": [
+    {
+      "row_id": "P1:03b",
+      "kind": "fact",
+      "planned_text": "Under 3 minutes",
+      "row_window_s": [
+        18.62,
+        22.8
+      ],
+      "status": "held",
+      "reason": "Visual prose needs supported word anchor and reconciliation; not scheduled."
+    },
+    {
+      "row_id": "P1:04b_cg_stopwatch_scale",
+      "kind": "data",
+      "planned_text": "a brass stopwatch dial that sweeps round once and stops short of three minutes",
+      "row_window_s": [
+        26.78,
+        29.1
+      ],
+      "status": "held",
+      "reason": "Visual prose needs supported word anchor and reconciliation; not scheduled."
+    },
+    {
+      "row_id": "P1:05a",
+      "kind": "when",
+      "planned_text": "Boston, 16 October 1846",
+      "row_window_s": [
+        29.1,
+        35.8
+      ],
+      "status": "held",
+      "reason": "Visual prose needs supported word anchor and reconciliation; not scheduled."
+    },
+    {
+      "row_id": "P2:05a_arch_laughing_gas_broadside",
+      "kind": "when",
+      "planned_text": "Early 1800s",
+      "row_window_s": [
+        121.2,
+        125.76
+      ],
+      "status": "held",
+      "reason": "Visual prose needs supported word anchor and reconciliation; not scheduled."
+    },
+    {
+      "row_id": "P2:07b_cg_timeline_42yr",
+      "kind": "when",
+      "planned_text": "Jefferson, Georgia, 30 March 1842",
+      "row_window_s": [
+        147.5,
+        154.9
+      ],
+      "status": "held",
+      "reason": "Visual prose needs supported word anchor and reconciliation; not scheduled."
+    },
+    {
+      "row_id": "P2:07b_cg_timeline_42yr",
+      "kind": "data",
+      "planned_text": "a timeline bar stretching from 1800 (Bristol) to 1842 (Jefferson, Georgia), spanning 42 years",
+      "row_window_s": [
+        147.5,
+        154.9
+      ],
+      "status": "held",
+      "reason": "Visual prose needs supported word anchor and reconciliation; not scheduled."
+    },
+    {
+      "row_id": "P2:08a",
+      "kind": "fact",
+      "planned_text": "$2.00 ether operation",
+      "row_window_s": [
+        154.9,
+        162.5
+      ],
+      "status": "held",
+      "reason": "Visual prose needs supported word anchor and reconciliation; not scheduled."
+    },
+    {
+      "row_id": "P3:04a",
+      "kind": "when",
+      "planned_text": "Boston, January 1845",
+      "row_window_s": [
+        195.08,
+        202.74
+      ],
+      "status": "held",
+      "reason": "Visual prose needs supported word anchor and reconciliation; not scheduled."
+    },
+    {
+      "row_id": "P3:06a",
+      "kind": "when",
+      "planned_text": "Boston, 16 October 1846",
+      "row_window_s": [
+        226.68,
+        231.89
+      ],
+      "status": "held",
+      "reason": "Visual prose needs supported word anchor and reconciliation; not scheduled."
+    },
+    {
+      "row_id": "P4:02b",
+      "kind": "when",
+      "planned_text": "12 November 1846",
+      "row_window_s": [
+        281.36,
+        285.86
+      ],
+      "status": "held",
+      "reason": "Visual prose needs supported word anchor and reconciliation; not scheduled."
+    },
+    {
+      "row_id": "P4:02b",
+      "kind": "fact",
+      "planned_text": "Patent No. 4,848",
+      "row_window_s": [
+        281.36,
+        285.86
+      ],
+      "status": "held",
+      "reason": "Visual prose needs supported word anchor and reconciliation; not scheduled."
+    },
+    {
+      "row_id": "P4:04a",
+      "kind": "when",
+      "planned_text": "Boston, 21 November 1846",
+      "row_window_s": [
+        297.5,
+        304.8
+      ],
+      "status": "held",
+      "reason": "Visual prose needs supported word anchor and reconciliation; not scheduled."
+    },
+    {
+      "row_id": "P4:06a_cg_master_timeline",
+      "kind": "data",
+      "planned_text": "master timeline of the four claimants (1800 Davy, 1842 Long, 1844 Wells, 1846 Morton & Jackson)",
+      "row_window_s": [
+        326.94,
+        333.9
+      ],
+      "status": "held",
+      "reason": "Visual prose needs supported word anchor and reconciliation; not scheduled."
+    },
+    {
+      "row_id": "P4:08a",
+      "kind": "when",
+      "planned_text": "Boston Public Garden, 1868",
+      "row_window_s": [
+        342.44,
+        349.5
+      ],
+      "status": "held",
+      "reason": "Visual prose needs supported word anchor and reconciliation; not scheduled."
+    },
+    {
+      "row_id": "P5:04b",
+      "kind": "when",
+      "planned_text": "Edinburgh, 4 November 1847",
+      "row_window_s": [
+        401.96,
+        409.5
+      ],
+      "status": "held",
+      "reason": "Visual prose needs supported word anchor and reconciliation; not scheduled."
+    },
+    {
+      "row_id": "P5:06b",
+      "kind": "when",
+      "planned_text": "London, 7 April 1853",
+      "row_window_s": [
+        426.8,
+        429.63
+      ],
+      "status": "held",
+      "reason": "Visual prose needs supported word anchor and reconciliation; not scheduled."
+    },
+    {
+      "row_id": "P5:09b_cg_safety_stadium",
+      "kind": "data",
+      "planned_text": "a counter that ticks to 1 in 100,000 beside a stadium diagram of 90,000 seats with a single lit dot",
+      "row_window_s": [
+        458.5,
+        465.74
+      ],
+      "status": "held",
+      "reason": "Visual prose needs supported word anchor and reconciliation; not scheduled."
+    },
+    {
+      "row_id": "P2:02b",
+      "kind": "label",
+      "planned_text": "NITROUS OXIDE",
+      "row_window_s": [
+        95.2,
+        101.8
+      ],
+      "anchor_text": "nitrous oxide.",
+      "word_indices": [
+        249,
+        250
+      ],
+      "raw_stt_indices": [
+        498,
+        500
+      ],
+      "evidence_window_s": [
+        93.94,
+        94.96
+      ],
+      "in_s": 93.94,
+      "out_s": 95.94,
+      "text": "NITROUS OXIDE",
+      "status": "held",
+      "actual_row_id": "P2:02a",
+      "reconciliation": "Moved to actual spoken evidence; immutable plan unchanged.",
+      "reason": "One-label conflict with P2:02a/who"
+    },
+    {
+      "row_id": "P3:02a",
+      "kind": "when",
+      "planned_text": "Hartford, December 1844",
+      "row_window_s": [
+        178.08,
+        184.6
+      ],
+      "anchor_text": "December 1844.",
+      "word_indices": [
+        445,
+        446
+      ],
+      "raw_stt_indices": [
+        890,
+        892
+      ],
+      "evidence_window_s": [
+        181.92,
+        183.76
+      ],
+      "in_s": 181.92,
+      "out_s": 183.92,
+      "text": "December 1844",
+      "status": "held",
+      "actual_row_id": "P3:02a",
+      "reason": "One-label conflict with P3:02a/who"
+    }
+  ],
+  "archive_credit_candidates": [
+    {
+      "row_id": "P1:09b",
+      "kind": "archive_credit",
+      "text": "Paré instruments, Wellcome / CC BY 4.0",
+      "in_s": 78.2,
+      "out_s": 81.68,
+      "source_asset": "archive_P1_09b",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Hand_coloured_illustration_of_surgical_instruments_Wellcome_L0041135.jpg",
+      "status": "candidate_requires_source_review",
+      "conflicts": [],
+      "word_indices": [
+        210,
+        211,
+        212,
+        213,
+        214,
+        215,
+        216,
+        217
+      ]
+    },
+    {
+      "row_id": "P2:04a_arch_davy_1800",
+      "kind": "archive_credit",
+      "text": "Davy, Researches (1800), p. 556",
+      "in_s": 108.5,
+      "out_s": 113.5,
+      "source_asset": "archive_P2_04a_arch_davy_1800",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Researches,_chemical_and_philosophical_-_chiefly_concerning_nitrous_oxide,_or_diphlogisticated_nitrous_air,_and_its_respiration_(IA_researcheschemic00davy).pdf",
+      "status": "candidate_requires_source_review",
+      "conflicts": [],
+      "word_indices": [
+        283,
+        284,
+        285,
+        286,
+        287,
+        288,
+        289,
+        290,
+        291,
+        292,
+        293
+      ]
+    },
+    {
+      "row_id": "P2:05a_arch_laughing_gas_broadside",
+      "kind": "archive_credit",
+      "text": "Gillray (1802), Library of Congress / Commons",
+      "in_s": 121.2,
+      "out_s": 125.76,
+      "source_asset": "archive_P2_05a_arch_laughing_gas_broadside",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Scientific_researches!_-_New_discoveries_in_pneumaticks!_-_or_-_An_experimental_lecture_on_the_powers_of_air_-_-Js._Gillray_inv._%26_fect._LCCN94509819.jpg",
+      "status": "candidate_requires_source_review",
+      "conflicts": [],
+      "word_indices": [
+        309,
+        310,
+        311,
+        312,
+        313,
+        314,
+        315,
+        316
+      ]
+    },
+    {
+      "row_id": "P2:09b_arch_long_1849",
+      "kind": "archive_credit",
+      "text": "Long, Southern Med. & Surg. J. (Dec 1849)",
+      "in_s": 166.14,
+      "out_s": 173.13,
+      "source_asset": "archive_P2_09b_arch_long_1849",
+      "page_url": "https://commons.wikimedia.org/wiki/File:The_Southern_medical_and_surgical_journal_(serial)_(IA_southernmedicals05medi).pdf",
+      "status": "held_layout_conflict",
+      "conflicts": [
+        "P2:09b_arch_long_1849/when"
+      ],
+      "word_indices": [
+        403,
+        404,
+        405,
+        406,
+        407,
+        408,
+        409,
+        410,
+        411,
+        412,
+        413,
+        414,
+        415,
+        416,
+        417,
+        418,
+        419,
+        420,
+        421,
+        422
+      ]
+    },
+    {
+      "row_id": "P3:05b",
+      "kind": "archive_credit",
+      "text": "Morton inhaler replica, Wellcome / CC BY 4.0",
+      "in_s": 218.7,
+      "out_s": 226.68,
+      "source_asset": "archive_P3_05b",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Anaesthetics;_Morton%27s_Ether_Inhaler_Wellcome_L0018234.jpg",
+      "status": "held_layout_conflict",
+      "conflicts": [
+        "P3:05b/label"
+      ],
+      "word_indices": [
+        536,
+        537,
+        538,
+        539,
+        540,
+        541,
+        542,
+        543,
+        544,
+        545,
+        546,
+        547,
+        548
+      ]
+    },
+    {
+      "row_id": "P3:09a_arch_ether_dome_1847",
+      "kind": "archive_credit",
+      "text": "Southworth & Hawes (1847), Getty / Commons",
+      "in_s": 258.5,
+      "out_s": 263.97,
+      "source_asset": "archive_P3_09a_arch_ether_dome_1847",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Southworth_%26_Hawes_(American,_active_1844_-_1862)_-_Use_of_Ether_for_Anesthesia_-_Google_Art_Project.jpg",
+      "status": "candidate_requires_source_review",
+      "conflicts": [],
+      "word_indices": [
+        623,
+        624,
+        625,
+        626,
+        627,
+        628,
+        629,
+        630,
+        631,
+        632,
+        633,
+        634,
+        635
+      ]
+    },
+    {
+      "row_id": "P4:03a_arch_letheon_patent",
+      "kind": "archive_credit",
+      "text": "US Patent No. 4,848 (12 Nov 1846), NLM / USPTO",
+      "in_s": 285.86,
+      "out_s": 290.58,
+      "source_asset": "archive_P4_03a_arch_letheon_patent",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Copy_of_letters_patent_granted_to_W.T.G._Morton,_M.D._-_for_the_discovery_of_etherization,_together_with_the_specification_on_which_the_patent_issued_(IA_0313207.nlm.nih.gov).pdf",
+      "status": "candidate_requires_source_review",
+      "conflicts": [],
+      "word_indices": [
+        687,
+        688,
+        689,
+        690,
+        691,
+        692,
+        693,
+        694,
+        695,
+        696,
+        697,
+        698
+      ]
+    },
+    {
+      "row_id": "P4:08b_arch_ether_monument",
+      "kind": "archive_credit",
+      "text": "Ether Monument (1868), Boston Public Garden / CC0",
+      "in_s": 349.5,
+      "out_s": 354.8,
+      "source_asset": "archive_P4_08b_arch_ether_monument",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Ether_Monument_-_Boston_Public_Garden_-_Boston,_MA_-_DSC04197.jpg",
+      "status": "candidate_requires_source_review",
+      "conflicts": [],
+      "word_indices": [
+        831,
+        832,
+        833,
+        834,
+        835,
+        836,
+        837,
+        838,
+        839,
+        840,
+        841,
+        842
+      ]
+    },
+    {
+      "row_id": "P5:03a_arch_squire_inhaler_1846",
+      "kind": "archive_credit",
+      "text": "Squire Ether Inhaler (1846), Wellcome / CC BY 4.0",
+      "in_s": 379.84,
+      "out_s": 387.8,
+      "source_asset": "archive_P5_03a_arch_squire_inhaler_1846",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Copy_of_the_Squire-type_ether_inhaler_first_used_in_1846_Wellcome_L0057829.jpg",
+      "status": "candidate_requires_source_review",
+      "conflicts": [],
+      "word_indices": [
+        896,
+        897,
+        898,
+        899,
+        900,
+        901,
+        902,
+        903,
+        904,
+        905,
+        906,
+        907,
+        908,
+        909,
+        910,
+        911,
+        912
+      ]
+    },
+    {
+      "row_id": "P5:04a",
+      "kind": "archive_credit",
+      "text": "E. Board, Liston Operating (1846), Wellcome / CC BY 4.0",
+      "in_s": 395.2,
+      "out_s": 401.96,
+      "source_asset": "archive_P5_04a",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Robert_Liston_operating._Wellcome_M0005603.jpg",
+      "status": "candidate_requires_source_review",
+      "conflicts": [],
+      "word_indices": [
+        928,
+        929,
+        930,
+        931,
+        932,
+        933,
+        934,
+        935,
+        936,
+        937,
+        938
+      ]
+    },
+    {
+      "row_id": "P5:06a_arch_simpson_1847",
+      "kind": "archive_credit",
+      "text": "Simpson, Account of a New Anaesthetic Agent (1847)",
+      "in_s": 420.5,
+      "out_s": 426.8,
+      "source_asset": "archive_P5_06a_arch_simpson_1847",
+      "page_url": "https://commons.wikimedia.org/wiki/File:An_account_of_a_new_anaesthetic_agent_as_a_substitute_for_sulphuric_ether_in_surgery_and_midwifery_(IA_66950610R.nlm.nih.gov).pdf",
+      "status": "candidate_requires_source_review",
+      "conflicts": [],
+      "word_indices": [
+        982,
+        983,
+        984,
+        985,
+        986,
+        987,
+        988,
+        989,
+        990,
+        991,
+        992,
+        993
+      ]
+    },
+    {
+      "row_id": "P5:07a_arch_snow_chloroform_1858",
+      "kind": "archive_credit",
+      "text": "Snow, On Chloroform (1858), Countway / Commons",
+      "in_s": 429.63,
+      "out_s": 437.6,
+      "source_asset": "archive_P5_07a_arch_snow_chloroform_1858",
+      "page_url": "https://commons.wikimedia.org/wiki/File:On_chloroform_and_other_anaesthetics_-_their_action_and_administration_(IA_onchloroformothe1858snow).pdf",
+      "status": "held_layout_conflict",
+      "conflicts": [
+        "P5:06b/who"
+      ],
+      "word_indices": [
+        997,
+        998,
+        999,
+        1000,
+        1001,
+        1002,
+        1003,
+        1004,
+        1005,
+        1006,
+        1007,
+        1008,
+        1009,
+        1010,
+        1011,
+        1012,
+        1013,
+        1014,
+        1015
+      ]
+    },
+    {
+      "row_id": "P5:14a",
+      "kind": "archive_credit",
+      "text": "Cheyne, Antiseptic Surgery (1882), Wellcome / CC BY 4.0",
+      "in_s": 502.55,
+      "out_s": 510.34,
+      "source_asset": "archive_P5_14a",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Use_of_the_Lister_carbolic_spray,_Antiseptic_surgery,_1882._Wellcome_M0003436.jpg",
+      "status": "candidate_requires_source_review",
+      "conflicts": [],
+      "word_indices": [
+        1156,
+        1157,
+        1158,
+        1159,
+        1160,
+        1161,
+        1162,
+        1163,
+        1164,
+        1165,
+        1166,
+        1167,
+        1168,
+        1169,
+        1170,
+        1171
+      ]
+    }
+  ],
+  "checks": {
+    "active_candidate_overlaps": 0,
+    "no_candidate_precedes_anchor_word": true,
+    "unresolved_candidates": 19,
+    "film_stage_pass": false
+  },
+  "render_notes": [
+    "No E2 experiment approval for 011.",
+    "WHO Liston moves to first spoken name at 371.48 s, not 14.28 s.",
+    "WHO Snow moves from P5:06b to archive P5:07a; credit/WHO layout remains held.",
+    "P1:04b stopwatch, P2:07b timeline, master timeline and stadium need per-element reconciliation; inherited prose is not a cue schedule.",
+    "Never render held items or regard candidates as finished QA."
+  ]
+}

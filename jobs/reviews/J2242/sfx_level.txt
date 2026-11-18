@@ -1,0 +1,23 @@
+copy stem_bed_v02_arranged.wav
+staged stem_bed_v02_arranged.wav 142b7d41bb5a
+copy stem_vo_v12.wav
+staged stem_vo_v12.wav 11a3d999f5f5
+copy stem_sfx_v02.wav
+staged stem_sfx_v02.wav c332a4de515d
+VO loudness
+duck before {'speech_mean': 7.23, 'min': -10.0, 'long_pause_under_i': 8.28, 'breach_runs_0.3s': 310, 'worst_breach_frames': 37, 'pause_above_speech': -1.05}
+duck gain min -19.27 max 0.73
+duck after {'speech_mean': 20.25, 'min': 4.2, 'long_pause_under_i': 16.26, 'breach_runs_0.3s': 0, 'worst_breach_frames': 2, 'pause_above_speech': 3.99, 'bed_integrated': -39.8, 'vo_integrated': -20.5}
+duck {'speech_mean': 20.25, 'min': 4.2, 'long_pause_under_i': 16.26, 'breach_runs_0.3s': 0, 'worst_breach_frames': 2, 'pause_above_speech': 3.99, 'bed_integrated': -39.8, 'vo_integrated': -20.5}
+ch3 whoosh 187.75 -> 187.650, 20 dB body ends 188.410
+whoosh {'name': 'ch3', 'old_start': 187.75, 'new_start': 187.65, 'body_s': 0.76, 'body_end': 188.41}
+SFX level PASS: VO -20.5 LUFS, SFX -35.7 LUFS, 20 hits
+{
+  "verdict": "PASS",
+  "vo_integrated": -20.5,
+  "sfx_integrated": -35.7,
+  "hits": 20,
+  "fails": [],
+  "warns": []
+}
+

@@ -1,0 +1,623 @@
+{
+  "job": "J2563",
+  "plan_sha256": "df11c9e00116c7a44390535e0fb569f682735d3f8ed7206ed45926f768ee7238",
+  "status": "Partial only: 19 preliminary free rows, 67 dependency slates, seven archives unbuilt; no joined rough",
+  "generation_authorized": false,
+  "film_stage_approved": false,
+  "audio_review": false,
+  "motion_review": false,
+  "rows": [
+    {
+      "row_id": "P1:01a",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P1_01a.mp4",
+      "sha256": "8731b813ea7c1a0fd8937df87e56a2d60ae24cc993617a1b4192b00ca9dd71ea",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P1:01b",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P1_01b.mp4",
+      "sha256": "e9378536d6531612df8b7a5be9badc84435715c96635ea7b5a9033cece916abc",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P1:02a",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P1_02a.mp4",
+      "sha256": "0f58da40bbc3e0b1b15b3f53342a509707bc73bd5c801a9691d0260cec2bf87c",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P1:02b",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P1_02b.mp4",
+      "sha256": "e8c1a5e5651bfc06e5c28050bb643e9b9d50cae8a48881783f2df2123ec030da",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P1:03a",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P1_03a.mp4",
+      "sha256": "845117f168d81b71efca689fd56a49ab80fb044e1322053e596b19f825d4e110",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P1:03b",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P1_03b.mp4",
+      "sha256": "aa526b54780643a8085c2262302ce916d4d5bf8cf8f5ffd62498fce6cb82f195",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P1:04a",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P1_04a.mp4",
+      "sha256": "73ccb1119efa9d00c98aff626b763594dc5bd55408eb95e096191fa26e13fd49",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P1:04b_cg_stopwatch_scale",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_free_graphics_v04/P1_04b_cg_stopwatch_scale.mp4",
+      "sha256": "2323e00e4a0f1547d4cb030f0f20d3200209479ad416fe62138703098836fb2d",
+      "manifest": "REMAINING_GRAPHICS_MANIFEST_v04.json",
+      "status": "preliminary_free"
+    },
+    {
+      "row_id": "P1:05a",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P1_05a.mp4",
+      "sha256": "a0baf8671c5df4616e7e212cbed1ecb6ac2781c2d63a867b8c856530f0b892c4",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P1:05b",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P1_05b.mp4",
+      "sha256": "83cf0b452b252a968412e50f53988002e4b61dae2de9e958311341f2cce6e46a",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P1:06a",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P1_06a.mp4",
+      "sha256": "d4388f99f30521c60bac48b514fe1699f61f64ddaa64255b536b63a387a1bc08",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P1:07a_cg_three_chapters_map",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_free_graphics_v04/P1_07a_cg_three_chapters_map.mp4",
+      "sha256": "f06001ded49c696c12cfc7cde4f50af4697a693dfeeb49d69f9f2fe1748bbea4",
+      "manifest": "REMAINING_GRAPHICS_MANIFEST_v04.json",
+      "status": "preliminary_free"
+    },
+    {
+      "row_id": "P1:07b",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P1_07b.mp4",
+      "sha256": "b5ee2fcfa2a3d07fc1aecce86dbf8d2f546ab6329a2b13447632b698b860f0db",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P1:08a",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P1_08a.mp4",
+      "sha256": "0322f6a55fb64f5533f0383f2d523aa8bb4ed944684845c3017a2e23c63f9020",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P1:08b",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P1_08b.mp4",
+      "sha256": "e44e3079b223d8355dff21beb2c3108b071c76bc5c24a33ecad85a8fe94cb25b",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P1:09a",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P1_09a.mp4",
+      "sha256": "3231d28f90a29ac6b697cb7dd8e5972879bf7cff31bd5b22e256b6e4707ad902",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P1:09b",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_archive_composites_v06/P1_09b.mp4",
+      "sha256": "9ac0c354e9af646c317a1981fa18ab4816e602271ac24a965a89fd56fc2e90f0",
+      "manifest": "ARCHIVE_COMPOSITES_v06.json",
+      "status": "preliminary_free"
+    },
+    {
+      "row_id": "P1:09c",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P1_09c.mp4",
+      "sha256": "e1bdd5a8daa1363e52c8ea4a76b9aa33fe24c9dbeafde5a49ba38beeef508978",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P2:01_card_p02",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_free_graphics_v04/P2_01_card_p02.mp4",
+      "sha256": "089a7941da2372e83abcb19522be248ec770f0b239ffb019adfe9c9243fd8f9a",
+      "manifest": "REMAINING_GRAPHICS_MANIFEST_v04.json",
+      "status": "preliminary_free"
+    },
+    {
+      "row_id": "P2:02a",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P2_02a.mp4",
+      "sha256": "f886a94e18624db2f80a711d55cf4216c414ac27ee97a82abac2a87671aec863",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P2:02b",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P2_02b.mp4",
+      "sha256": "6aabd1a4b8fb7a296b070cb86eb8e5be2b6b12496be59bf7ee4a406e90cf08ad",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P2:03a",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P2_03a.mp4",
+      "sha256": "f408730bbffcc83df2a80c476da3705a2dae82852639356f3c9516f7f6b20714",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P2:04a_arch_davy_1800",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_archive_composites_v06/P2_04a_arch_davy_1800.mp4",
+      "sha256": "1d169282fd537ea80fde5fe1eab1974ac84688731aef864fe6eff29b8796fabe",
+      "manifest": "ARCHIVE_COMPOSITES_v06.json",
+      "status": "preliminary_free"
+    },
+    {
+      "row_id": "P2:04b",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P2_04b.mp4",
+      "sha256": "21e3c0c62ebb25737e91836ac71a3f10ded6d77f33e854d589e4b5e6746c6ceb",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P2:05a_arch_laughing_gas_broadside",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_archive_composites_v07/P2_05a_arch_laughing_gas_broadside.mp4",
+      "sha256": "e7b075d32c24794a81c2230cfbc00a69674ac543db64af6db54b6f1dbe7d6daf",
+      "manifest": "ARCHIVE_COMPOSITES_v07.json",
+      "status": "preliminary_free"
+    },
+    {
+      "row_id": "P2:05b",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P2_05b.mp4",
+      "sha256": "26eb50d2789de48af098eda309d55b0fb1046015734a72a5d120e90d0adce2a8",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P2:06a",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P2_06a.mp4",
+      "sha256": "0e2913bba6a75780d1f57d3062547b4a825401bc9cb23ab65dbc258aee87bd42",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P2:07a",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P2_07a.mp4",
+      "sha256": "fd93b01004f6fc5b1a92f90c0fe1d3f4778e4252e927c46280ff9a0f6d3d7472",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P2:07b_cg_timeline_42yr",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_free_graphics_v04/P2_07b_cg_timeline_42yr.mp4",
+      "sha256": "e82d6b0491971a81d2e5c457e2515f9955d2b485020216a3adae5c61f656290a",
+      "manifest": "REMAINING_GRAPHICS_MANIFEST_v04.json",
+      "status": "preliminary_free"
+    },
+    {
+      "row_id": "P2:08a",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P2_08a.mp4",
+      "sha256": "f2604c5d73ae3b00f7df6e0729330a0d3992e80120acdd65db689150f556825b",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P2:09a",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P2_09a.mp4",
+      "sha256": "310d58a52603df78ae24b5011fff5531bf938b9d44b92cbce69ebbfb2d43e1d1",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P2:09b_arch_long_1849",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_archive_composites_v06/P2_09b_arch_long_1849.mp4",
+      "sha256": "ca1dd1d6bc9a2b30ba7e2844965b30bbcaf7ae35f3f152cc9ede04abe1b413a6",
+      "manifest": "ARCHIVE_COMPOSITES_v06.json",
+      "status": "preliminary_free"
+    },
+    {
+      "row_id": "P2:10a",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P2_10a.mp4",
+      "sha256": "66ad32da5f604569f49d2b663ec2fe59a15916aebb49a851fe12a786ba7a8074",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P3:01_card_p03",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_free_graphics_v04/P3_01_card_p03.mp4",
+      "sha256": "cd2ded1f3467b060c080a3b1a8729d68d7f7688f1fe8b3eb4e987fa73f13935a",
+      "manifest": "REMAINING_GRAPHICS_MANIFEST_v04.json",
+      "status": "preliminary_free"
+    },
+    {
+      "row_id": "P3:02a",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P3_02a.mp4",
+      "sha256": "f4280f8ca8d9fef6132826767f069f5b0cc824a86f4e79bf2b0143a2f7955e7f",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P3:03a",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P3_03a.mp4",
+      "sha256": "1d57cac1e235e8d3b445f1306ce3aa6e284236ed903dc85ebc7ecf9c6ebd7864",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P3:03b",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P3_03b.mp4",
+      "sha256": "4e2042a4ae684915219744301cd7702af5e142a2f45b9f37c9fd7960a7a74aac",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P3:04a",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P3_04a.mp4",
+      "sha256": "3a435867f45c2c03839acb95ea09fd64c509526591405e918c557bf1f39215bf",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P3:04b",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P3_04b.mp4",
+      "sha256": "2a403accbbf4a4aa9b9e887cb5b26313d494afeb747395afed9bce3315039e81",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P3:05a",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P3_05a.mp4",
+      "sha256": "7ea437c4d501b188cb766017e6cf5dcfbea9c07fd0a76c03ef85b559291a41f7",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P3:05b",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_archive_composites_v07/P3_05b.mp4",
+      "sha256": "8e7d00fd31de74424e0d60ae77664cba68e6d8cc3e72437fe681c2ecda4cfb37",
+      "manifest": "ARCHIVE_COMPOSITES_v07.json",
+      "status": "preliminary_free"
+    },
+    {
+      "row_id": "P3:06a",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P3_06a.mp4",
+      "sha256": "79cf98cd9aa6908825226a147c1a02d4a9ed18e60d6f0b03a12be7a683eedd28",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P3:06b",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P3_06b.mp4",
+      "sha256": "95a5c89a3eabf10afd79c790939b396d99e9aa9b4a95c1b7d007a006519e12e1",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P3:07a",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P3_07a.mp4",
+      "sha256": "2a7f42016fbba640a14cdff1288d5223ae7a18765148d125e66f477cc1485e2e",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P3:08a",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P3_08a.mp4",
+      "sha256": "03a40f7e5c79edf36d6004a0a526e51d798b288e544a88e49715c4e167d5771a",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P3:08b",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P3_08b.mp4",
+      "sha256": "4c97790ccf47187a14a5323e5f3982be5a967c562dee321f8c0a0676df282fd6",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P3:09a_arch_ether_dome_1847",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_archive_composites_v06/P3_09a_arch_ether_dome_1847.mp4",
+      "sha256": "f475f51ee05afa8f84f95c06b24d0811773ef328a8cdf30a7a1cc19c1d75d683",
+      "manifest": "ARCHIVE_COMPOSITES_v06.json",
+      "status": "preliminary_free"
+    },
+    {
+      "row_id": "P3:10a",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P3_10a.mp4",
+      "sha256": "ed64660533d7bc1eee5979e9a3becff28d5682d052dc89e902d62eee893b1fcb",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P4:01_card_p04",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_free_graphics_v04/P4_01_card_p04.mp4",
+      "sha256": "6b70c343968b8ed7a4b49e0e7d21ebb180714db1f0251369b1a50e5e2bfdfc80",
+      "manifest": "REMAINING_GRAPHICS_MANIFEST_v04.json",
+      "status": "preliminary_free"
+    },
+    {
+      "row_id": "P4:02a",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P4_02a.mp4",
+      "sha256": "51d564d866d6e8f3de036c24778eff6ad8e65a008c146d51b47ddcb742cc79a0",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P4:02b",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P4_02b.mp4",
+      "sha256": "5576e5bada4c239651683759a87b722c9ceebca05ed65097258c1e80951a5d63",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P4:03b",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P4_03b.mp4",
+      "sha256": "5905bce60e586b725fe97dd7db87a36b58f68db354765cc3d27457dc89d97774",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P4:04a",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P4_04a.mp4",
+      "sha256": "3794126577f8244a042d9ed925f6f5353e596968aa151f37fb954d9f446dd408",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P4:04b",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P4_04b.mp4",
+      "sha256": "92812862451f9823116e799cce3a7f8a03dad05e88492d6720af041e274cdc02",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P4:04c_cg_anesthesia_etymology",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_free_graphics_v03/P4_04c_cg_anesthesia_etymology.mp4",
+      "sha256": "9a5131e408fbbe56884dc9f860395bb893f1e2eeaa84b0cdb01d4cffd1d07d66",
+      "manifest": "FREE_GRAPHICS_MANIFEST_v03.json",
+      "status": "preliminary_free"
+    },
+    {
+      "row_id": "P4:05a",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P4_05a.mp4",
+      "sha256": "7a76e82162e278fe76e3d5f1286028fa62d626412afa469ff4643375fdc231e2",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P4:05b",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P4_05b.mp4",
+      "sha256": "1cc09a81364e8d6b2f8f6333bbe4c840e7a903a9c12599fbd1604294caf33d08",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P4:06a_cg_master_timeline",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_free_graphics_v04/P4_06a_cg_master_timeline.mp4",
+      "sha256": "ac7030cddbf82dcd98f141a7ebdf06d2ac7df49af6a8ed595d39f783a1343181",
+      "manifest": "REMAINING_GRAPHICS_MANIFEST_v04.json",
+      "status": "preliminary_free"
+    },
+    {
+      "row_id": "P4:07a",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P4_07a.mp4",
+      "sha256": "f80dfc31a851697a2767519ff5f5ccf5dbe88206f11d4a75679d5f0b2cd6adb7",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P4:07b",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P4_07b.mp4",
+      "sha256": "887bae236126037b0fc2c775591de9deddf91865d0cda28662dbec1d0bc421e1",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P4:08a",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P4_08a.mp4",
+      "sha256": "83084ff3b0752b20d0b155c19b9866c996272b9970e81b241ce5de6f5e3c1a90",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P4:09a",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P4_09a.mp4",
+      "sha256": "dfd04e03c5917f3303d073877bf5579985db896233c877be9ffb6d620ecff16f",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P4:09b",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P4_09b.mp4",
+      "sha256": "9abb247bd42ee120104eaa7c878ccfe44a08ede0239a560b9e1bc2e0b7b83b2f",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P5:01_card_p05",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_free_graphics_v04/P5_01_card_p05.mp4",
+      "sha256": "0268a2e2996c566d702afb34b00a08e5c347eb9325a5d68827f5e8c8c7124382",
+      "manifest": "REMAINING_GRAPHICS_MANIFEST_v04.json",
+      "status": "preliminary_free"
+    },
+    {
+      "row_id": "P5:02a",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P5_02a.mp4",
+      "sha256": "5a243e57f18c530a0d16b8f7130c9c5186b15839bc54a6cbe380cf7960e5c381",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P5:02b",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P5_02b.mp4",
+      "sha256": "82cc14c467781b57e6b71bed7782d7c39c730cd09279db652805871cf1afce86",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P5:03b",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P5_03b.mp4",
+      "sha256": "33d3727a5eb1bc4d5f4b19cfedb1ebec8c9d2bb00e0fba96bf3efbe8235c15dd",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P5:04b",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P5_04b.mp4",
+      "sha256": "3f5ea9d3a0255919b2a96e340c4f59992ba81f1a88947cb747d949c6ac374888",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P5:05a",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P5_05a.mp4",
+      "sha256": "ec3289318a012a5b3a8540c06f7451ba0ed25794edacf157273e626e125998ff",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P5:05b",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P5_05b.mp4",
+      "sha256": "1bf806a63e9478e2f4fcc539788693cfd6316ad67c251eb93cdd16f2eef52d84",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P5:06b",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P5_06b.mp4",
+      "sha256": "1b453198b4d674ed25d66e11481e5b5d91d4fb1616ba8b9e0751948201cb83a7",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P5:07b",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P5_07b.mp4",
+      "sha256": "c7aa8085fd47c0ce9796445b546ec0fdd7265883504e95261ee4f9a34436ac3e",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P5:08a",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P5_08a.mp4",
+      "sha256": "55f4e49a34cba3874e3b31509ea9b65a738f025b80ed4f87d459183b4bc57d29",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P5:09a",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P5_09a.mp4",
+      "sha256": "b3a8223ca1e43607180bd85edbc4bc95d70f37836604dd302688f6dff651ddf8",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P5:09b_cg_safety_stadium",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_free_graphics_v03/P5_09b_cg_safety_stadium.mp4",
+      "sha256": "cbc5c24f54a042005d9257eb4bd803cc7c6952c905c54887e624e16c7572f82f",
+      "manifest": "FREE_GRAPHICS_MANIFEST_v03.json",
+      "status": "preliminary_free"
+    },
+    {
+      "row_id": "P5:10a",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P5_10a.mp4",
+      "sha256": "ce870e9869e7fd1ad6cfe16872db301b53d5fce8f0e1d4270a0126d049334445",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P5:11a",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P5_11a.mp4",
+      "sha256": "0bbc88ff4aa4e1cece6ede0223ca7c287de72243f499223e7914492b3e722fc7",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P5:11b",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P5_11b.mp4",
+      "sha256": "ff0b8d34ba451b6b95e505a20256e8c7eedef6002918cd72aee2ea11a551f9bb",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P5:12a_cg_anesthetist_monitor",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_free_graphics_v03/P5_12a_cg_anesthetist_monitor.mp4",
+      "sha256": "c3eef98df3c53233c5199b50691ee945e8e50c293ed166b8ac2b9309e8842cb7",
+      "manifest": "FREE_GRAPHICS_MANIFEST_v03.json",
+      "status": "preliminary_free"
+    },
+    {
+      "row_id": "P5:13a",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P5_13a.mp4",
+      "sha256": "eba17e5155c35323e7444b4bb5e3c01ca049b80e6c86b5a5c3dc21bb5a99dbc8",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P5:13b",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P5_13b.mp4",
+      "sha256": "eb63aa3c141f9e6ff494660c0e458d23428c63980e88d844ba7c5fd141d6d432",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P5:14b",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P5_14b.mp4",
+      "sha256": "c3a15df5637b43538615b4260e8ce8b6a258d71a47f30df27711d42794f18649",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P5:15a",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P5_15a.mp4",
+      "sha256": "e5d9e37db6b584860a07c3dc99238ccd59f400a7b6bf9d01e3bf1a126d70903c",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P5:16a",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_free_graphics_v03/P5_16a.mp4",
+      "sha256": "9da2e51cada90dac04d11d46f2f26aab34f1d756d28a65ed104cb7200779d385",
+      "manifest": "FREE_GRAPHICS_MANIFEST_v03.json",
+      "status": "preliminary_free"
+    },
+    {
+      "row_id": "P5:16b_reuse_pocket_watch_to_globe",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_dependency_slates_v07/P5_16b_reuse_pocket_watch_to_globe.mp4",
+      "sha256": "073e15f99bc6b056b0724bb9e87c2efa96afc627fc63e829a78ffb56406c97bf",
+      "manifest": "DEPENDENCY_SLATES_v07.json",
+      "status": "dependency_slate"
+    },
+    {
+      "row_id": "P5:17_cream_end_card",
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_free_graphics_v03/P5_17_cream_end_card.mp4",
+      "sha256": "f1af1c944b8b21b14932856bef4869d1c59efea2bb652901fda036f879ac839d",
+      "manifest": "FREE_GRAPHICS_MANIFEST_v03.json",
+      "status": "preliminary_free"
+    }
+  ],
+  "missing_rows": [
+    "P4:03a_arch_letheon_patent",
+    "P4:08b_arch_ether_monument",
+    "P5:03a_arch_squire_inhaler_1846",
+    "P5:04a",
+    "P5:06a_arch_simpson_1847",
+    "P5:07a_arch_snow_chloroform_1858",
+    "P5:14a"
+  ],
+  "full_overlay_schedule_complete": false
+}

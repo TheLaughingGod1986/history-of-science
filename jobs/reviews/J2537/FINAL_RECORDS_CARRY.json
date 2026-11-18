@@ -1,0 +1,1802 @@
+[
+  {
+    "pr": 624,
+    "head": "915f7b64f60a436cf922fa0ca7937ef44cd2265a",
+    "path": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/11_Upload-Package/s06_blood_pressure_cuff_v04/API_READBACK_J2955.json",
+    "sha256": "d29e623bae704526416d1405847a6f40bd5510d64ec08e57e4b050acbcce7a09"
+  },
+  {
+    "pr": 624,
+    "head": "915f7b64f60a436cf922fa0ca7937ef44cd2265a",
+    "path": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/11_Upload-Package/s06_blood_pressure_cuff_v04/STUDIO_READBACK_J2955.json",
+    "sha256": "a935883b531e6601f8849528e60d767490f0a328593db5660e661c26d7ebf197"
+  },
+  {
+    "pr": 624,
+    "head": "915f7b64f60a436cf922fa0ca7937ef44cd2265a",
+    "path": "07_Content-Ops/scripts/_j2955_captions_readback.ts",
+    "sha256": "da4124bcb0202d149e9c0d6d005f963b741a171f4b2e5f4145026fc8d7fc785a"
+  },
+  {
+    "pr": 560,
+    "head": "47f45f15b31f6d699fb13e5e8c466a5181ab8546",
+    "path": "02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/ARCHIVE_COMPOSITES_v06.json",
+    "sha256": "744fe15d793f5ed1491635f57f3f26e2384a6949ea7ff87b8ac00c73df6a3895"
+  },
+  {
+    "pr": 560,
+    "head": "47f45f15b31f6d699fb13e5e8c466a5181ab8546",
+    "path": "02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/ARCHIVE_COMPOSITES_v07.json",
+    "sha256": "23a4e7e59a6e37d7e0b7190439e34d8a8d4d6d0d7e4314d0b43efaa54cf8336a"
+  },
+  {
+    "pr": 560,
+    "head": "47f45f15b31f6d699fb13e5e8c466a5181ab8546",
+    "path": "02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/ARCHIVE_COMPOSITES_v08.json",
+    "sha256": "669289a45538ce8525318b8d842fd8ae55255f68bfa2d432000ab8c393dabe07"
+  },
+  {
+    "pr": 560,
+    "head": "47f45f15b31f6d699fb13e5e8c466a5181ab8546",
+    "path": "02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/ARCHIVE_COMPOSITES_v09.json",
+    "sha256": "1273cdfa9d5c34c4e7c78b72a1886aa8c8f44a7deff665ef986143497e2f043e"
+  },
+  {
+    "pr": 560,
+    "head": "47f45f15b31f6d699fb13e5e8c466a5181ab8546",
+    "path": "02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/ARCHIVE_RECOVERY_v05.json",
+    "sha256": "d8c44ed7b1a448dd17a01cccdbc17b52482d03064d143981ba286fcba0a35bd9"
+  },
+  {
+    "pr": 560,
+    "head": "47f45f15b31f6d699fb13e5e8c466a5181ab8546",
+    "path": "02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/ASSEMBLY_INDEX_v07.json",
+    "sha256": "ab9b280e18eaf00502632cca56f5e8cc499a3d0f1e3883e876606f91dd047e30"
+  },
+  {
+    "pr": 560,
+    "head": "47f45f15b31f6d699fb13e5e8c466a5181ab8546",
+    "path": "02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/ASSEMBLY_INDEX_v08.json",
+    "sha256": "1a62a7ffd93c60262912446da9ffb68cd08d887566bb08aeaade7fa614d3f82f"
+  },
+  {
+    "pr": 560,
+    "head": "47f45f15b31f6d699fb13e5e8c466a5181ab8546",
+    "path": "02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/ASSEMBLY_SOURCES_v01.json",
+    "sha256": "cc7e598f023ec03af270366ec0593eb21008a8cd169ada5c8b2c843c91698c3c"
+  },
+  {
+    "pr": 560,
+    "head": "47f45f15b31f6d699fb13e5e8c466a5181ab8546",
+    "path": "02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/DEPENDENCY_SLATES_v07.json",
+    "sha256": "39ce95e6291e29b1f09b403f0c4ddf42a8d191af635c439fc1c32d24b8d78668"
+  },
+  {
+    "pr": 560,
+    "head": "47f45f15b31f6d699fb13e5e8c466a5181ab8546",
+    "path": "02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/DESCRIPTION_CREDIT_ADDITIONS_v07.txt",
+    "sha256": "751e714bc4cde325fb256baeef657fd10bdea728c74d4072c72dbba2a3c0e079"
+  },
+  {
+    "pr": 560,
+    "head": "47f45f15b31f6d699fb13e5e8c466a5181ab8546",
+    "path": "02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/DESCRIPTION_CREDIT_ADDITIONS_v08.txt",
+    "sha256": "77661d1acc590deb7c0a27d165ee67ab97f6b7859f774ef15313cd9db578e7dd"
+  },
+  {
+    "pr": 560,
+    "head": "47f45f15b31f6d699fb13e5e8c466a5181ab8546",
+    "path": "02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/DESCRIPTION_CREDIT_ADDITIONS_v09.txt",
+    "sha256": "e88126c5331ed796a6798045adeb171237d92c36cfea64408e788b3d1cce462f"
+  },
+  {
+    "pr": 560,
+    "head": "47f45f15b31f6d699fb13e5e8c466a5181ab8546",
+    "path": "02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/FREE_GRAPHICS_MANIFEST_v03.json",
+    "sha256": "019912162cc06fd6459e2f09725bdda4329b8c79fdd2e0f3afad1c6492c60179"
+  },
+  {
+    "pr": 560,
+    "head": "47f45f15b31f6d699fb13e5e8c466a5181ab8546",
+    "path": "02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_ARCHIVE_CHECKS_v06.json",
+    "sha256": "959087e2c9e83fdaef1a56a1abb1cac6cac4941c2cfba55d5943b16c8762b2ae"
+  },
+  {
+    "pr": 560,
+    "head": "47f45f15b31f6d699fb13e5e8c466a5181ab8546",
+    "path": "02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_CHECKPOINT_v01.md",
+    "sha256": "fe9ed33839086039c1e44e4133a40d7a4bec6d98a3293c80a0540fdc4c26edcd"
+  },
+  {
+    "pr": 560,
+    "head": "47f45f15b31f6d699fb13e5e8c466a5181ab8546",
+    "path": "02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_CHECKPOINT_v03.md",
+    "sha256": "28d1dc5c5f3e306af01ccb58e613a0475f5346fd451c7dcbc21b246efa290b0d"
+  },
+  {
+    "pr": 560,
+    "head": "47f45f15b31f6d699fb13e5e8c466a5181ab8546",
+    "path": "02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_CHECKPOINT_v04.md",
+    "sha256": "747e106a0852d1d1c7f5651e4443a08a212159d9eb5ae0cf064cd462c62dbc69"
+  },
+  {
+    "pr": 560,
+    "head": "47f45f15b31f6d699fb13e5e8c466a5181ab8546",
+    "path": "02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_CHECKPOINT_v05.md",
+    "sha256": "59238f4eb62f681559bc282fe5467fe96fb00d59da4a304433473d339979a95f"
+  },
+  {
+    "pr": 560,
+    "head": "47f45f15b31f6d699fb13e5e8c466a5181ab8546",
+    "path": "02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_CHECKPOINT_v06.md",
+    "sha256": "d0ed8229ca5d669ef10b4ab460c3619da15a08d42deabd8393e46aa6a96a1536"
+  },
+  {
+    "pr": 560,
+    "head": "47f45f15b31f6d699fb13e5e8c466a5181ab8546",
+    "path": "02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_CHECKPOINT_v07.md",
+    "sha256": "f8b3841f6489fad90f437f785bf97dc56f9e25a3dd44bafbf43fb5658a6288c6"
+  },
+  {
+    "pr": 560,
+    "head": "47f45f15b31f6d699fb13e5e8c466a5181ab8546",
+    "path": "02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_CHECKPOINT_v08.md",
+    "sha256": "bcd6e33b90e2bf81e8d8fcc7a329742a0ed916334abe7c46c24bfff9c6a3c83e"
+  },
+  {
+    "pr": 560,
+    "head": "47f45f15b31f6d699fb13e5e8c466a5181ab8546",
+    "path": "02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_CHECKPOINT_v09.md",
+    "sha256": "5897363e7a24c928be8853be29b78bab6d4523ba060fd3bbfbbe5121cc8ec6de"
+  },
+  {
+    "pr": 560,
+    "head": "47f45f15b31f6d699fb13e5e8c466a5181ab8546",
+    "path": "02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_CHECKPOINT_v10.md",
+    "sha256": "ec7700f66060c071d8c5bde39f4544659746beb13bb28d2a3d825b194bc9d00d"
+  },
+  {
+    "pr": 560,
+    "head": "47f45f15b31f6d699fb13e5e8c466a5181ab8546",
+    "path": "02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_CHECKPOINT_v11.md",
+    "sha256": "ca4790f3aaec87568dd1b96f4cbe27845390bdd3a59637ffd0b12a656c610cc0"
+  },
+  {
+    "pr": 560,
+    "head": "47f45f15b31f6d699fb13e5e8c466a5181ab8546",
+    "path": "02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_CHECKS_v01.txt",
+    "sha256": "4b9eb9ddca13f5e50b9c27cdc67c1534e16dc5f05c186c6e82bc49c18b8047fe"
+  },
+  {
+    "pr": 560,
+    "head": "47f45f15b31f6d699fb13e5e8c466a5181ab8546",
+    "path": "02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_CHECKS_v06.txt",
+    "sha256": "efbac03ea51b409ef73b810beaf7e14efae34e5ced18679d44fa5db07a8e0fce"
+  },
+  {
+    "pr": 560,
+    "head": "47f45f15b31f6d699fb13e5e8c466a5181ab8546",
+    "path": "02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_COPY_VERIFICATION_v01.json",
+    "sha256": "833dfed232ee3f69bfcee58754a5a8e09bc164309c0a417f571729c0524dbef3"
+  },
+  {
+    "pr": 560,
+    "head": "47f45f15b31f6d699fb13e5e8c466a5181ab8546",
+    "path": "02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_COPY_VERIFICATION_v07.json",
+    "sha256": "a0279e46af663f47410089e481bf0cd05f8a0ccaf57e57fc7179451684558329"
+  },
+  {
+    "pr": 560,
+    "head": "47f45f15b31f6d699fb13e5e8c466a5181ab8546",
+    "path": "02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_COPY_VERIFICATION_v08.json",
+    "sha256": "e4957d50683ac94dd305e718a01d462c84ee4d30b8c88a8273c3b79f59ec386b"
+  },
+  {
+    "pr": 560,
+    "head": "47f45f15b31f6d699fb13e5e8c466a5181ab8546",
+    "path": "02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_GRAPHICS_CHECKS_v03.txt",
+    "sha256": "af8e532a1738a7db4b30178319f813369a172f6a47f6e8b3a5c4d60647525135"
+  },
+  {
+    "pr": 560,
+    "head": "47f45f15b31f6d699fb13e5e8c466a5181ab8546",
+    "path": "02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_GRAPHICS_CHECKS_v04.txt",
+    "sha256": "38cb4922af0a4a1e90ba7b64bce4e5efa142790e68083f8ddef68c567dfa3df5"
+  },
+  {
+    "pr": 560,
+    "head": "47f45f15b31f6d699fb13e5e8c466a5181ab8546",
+    "path": "02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/OVERLAY_CANDIDATES_v01.json",
+    "sha256": "6a0ce947b1cd2605057ff49139af3d23e52b87f10f7e994bc3a1ca74f7c8653f"
+  },
+  {
+    "pr": 560,
+    "head": "47f45f15b31f6d699fb13e5e8c466a5181ab8546",
+    "path": "02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/OVERLAY_CUE_SCHEDULE_v02.json",
+    "sha256": "0bff2f8e81eda41ddb3bbb738cb51018d20f85bc1a7cd2906681becba474bb64"
+  },
+  {
+    "pr": 560,
+    "head": "47f45f15b31f6d699fb13e5e8c466a5181ab8546",
+    "path": "02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/REMAINING_GRAPHICS_MANIFEST_v04.json",
+    "sha256": "949feb90009d8348878fce834605c16108b71c92ac2c5dd18405220588655ea2"
+  },
+  {
+    "pr": 560,
+    "head": "47f45f15b31f6d699fb13e5e8c466a5181ab8546",
+    "path": "02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/join_timing_rough_v10.py",
+    "sha256": "e9cb833d10dab8b2ef73275c928605864fd3f3d3dbaf8a66b399d9e453c9670f"
+  },
+  {
+    "pr": 560,
+    "head": "47f45f15b31f6d699fb13e5e8c466a5181ab8546",
+    "path": "02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/join_timing_rough_v11.py",
+    "sha256": "064d5214dc0fadee9eefe197ff01f47df24fef39eca23fb3e9b587b8405f8ff4"
+  },
+  {
+    "pr": 560,
+    "head": "47f45f15b31f6d699fb13e5e8c466a5181ab8546",
+    "path": "02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/overlay_candidates_v01.py",
+    "sha256": "17ac27a269f7e7800cbeb37bbc33436181b4035243ecafa5a70a5c9fecc3b32e"
+  },
+  {
+    "pr": 560,
+    "head": "47f45f15b31f6d699fb13e5e8c466a5181ab8546",
+    "path": "02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/overlay_schedule_v02.py",
+    "sha256": "dbc179423c1e72fd649d2452149e1559fbb71e435fc8b1d2546cd85a601dbf8d"
+  },
+  {
+    "pr": 560,
+    "head": "47f45f15b31f6d699fb13e5e8c466a5181ab8546",
+    "path": "02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/prepare_assembly_v01.py",
+    "sha256": "0044b552fb38814830552cc48bada21d358370659bca66a55ef2754b98eb4398"
+  },
+  {
+    "pr": 560,
+    "head": "47f45f15b31f6d699fb13e5e8c466a5181ab8546",
+    "path": "02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/recover_archive_pages_v05.py",
+    "sha256": "16e8d0e2e6d1f2458d55c53e8ad2e7fb8d2faf0fe672c8e47122d2a4aef77aee"
+  },
+  {
+    "pr": 560,
+    "head": "47f45f15b31f6d699fb13e5e8c466a5181ab8546",
+    "path": "02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/render_archive_checkpoint_v06.py",
+    "sha256": "b943cccd70964f44097d2dd48b9417642782cd569e0be45f4653e52201d16844"
+  },
+  {
+    "pr": 560,
+    "head": "47f45f15b31f6d699fb13e5e8c466a5181ab8546",
+    "path": "02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/render_archive_checkpoint_v07.py",
+    "sha256": "02c9f2d908be15a0da4b482dfedee40126cb6844a0fc0607c83e75df663960b3"
+  },
+  {
+    "pr": 560,
+    "head": "47f45f15b31f6d699fb13e5e8c466a5181ab8546",
+    "path": "02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/render_archive_checkpoint_v08.py",
+    "sha256": "296916873634586767abf0304ca273a6b0feb573b82fc821bbd78cec52e1ba21"
+  },
+  {
+    "pr": 560,
+    "head": "47f45f15b31f6d699fb13e5e8c466a5181ab8546",
+    "path": "02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/render_archive_checkpoint_v09.py",
+    "sha256": "c3cec377aecd8d842d9f2c3fd5c45d10138c7d54c8dcdff0c8f48cb774632d95"
+  },
+  {
+    "pr": 560,
+    "head": "47f45f15b31f6d699fb13e5e8c466a5181ab8546",
+    "path": "02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/render_dependency_slates_v07.py",
+    "sha256": "7dd5ec2bdf39d0642390c43e4b046b53c16b233cabd4fb72d4729cf7e00358bd"
+  },
+  {
+    "pr": 560,
+    "head": "47f45f15b31f6d699fb13e5e8c466a5181ab8546",
+    "path": "02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/render_free_graphics_v02.py",
+    "sha256": "e33abfd551255dc47c4a022eac1953ecb9b90105c0c8e7af0de7bacd57c09752"
+  },
+  {
+    "pr": 560,
+    "head": "47f45f15b31f6d699fb13e5e8c466a5181ab8546",
+    "path": "02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/render_remaining_graphics_v04.py",
+    "sha256": "a4ce5e01e32f90fa8526bc90af40d49a81a55cf656371a05932c32ed6a782649"
+  },
+  {
+    "pr": 560,
+    "head": "47f45f15b31f6d699fb13e5e8c466a5181ab8546",
+    "path": "02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/test_join_timing_rough_v10.py",
+    "sha256": "47fcad355e3ca98b334cb61bf62d9d81832973728285aa31d7745aba2a1b70b4"
+  },
+  {
+    "pr": 560,
+    "head": "47f45f15b31f6d699fb13e5e8c466a5181ab8546",
+    "path": "02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/test_join_timing_rough_v11.py",
+    "sha256": "442cd08d7329f3bfa8fa506930868e0854ec84348c6fa811b2babf8df8dbf556"
+  },
+  {
+    "pr": 560,
+    "head": "47f45f15b31f6d699fb13e5e8c466a5181ab8546",
+    "path": "02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/test_overlay_schedule_v02.py",
+    "sha256": "5e3d9f5f239d97b929693d63c22b913205706683a6010fd7ba9409185f6be075"
+  },
+  {
+    "pr": 560,
+    "head": "47f45f15b31f6d699fb13e5e8c466a5181ab8546",
+    "path": "02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/test_prepare_assembly_v01.py",
+    "sha256": "41d32cc23574357b821bdac0da169e1602006a6e8601adf77c6c8c9a98131a14"
+  },
+  {
+    "pr": 560,
+    "head": "47f45f15b31f6d699fb13e5e8c466a5181ab8546",
+    "path": "02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/verify_checkpoint_v07.py",
+    "sha256": "1a10ad55c7671ca91882bd6c308b2cb804c2f7396f989687faeb587d89e1f200"
+  },
+  {
+    "pr": 560,
+    "head": "47f45f15b31f6d699fb13e5e8c466a5181ab8546",
+    "path": "02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/verify_checkpoint_v08.py",
+    "sha256": "9e26303ff248c6c7fc1cf3c1ad816839f5ae0212df42bce534511d6e780e92ee"
+  },
+  {
+    "pr": 560,
+    "head": "47f45f15b31f6d699fb13e5e8c466a5181ab8546",
+    "path": "02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/verify_free_graphics_v03.py",
+    "sha256": "6a0e6beda64bba5345ea2da66009fe84089a6762d2548e9a97a31d90ffe4fd2f"
+  },
+  {
+    "pr": 560,
+    "head": "47f45f15b31f6d699fb13e5e8c466a5181ab8546",
+    "path": "02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/verify_remaining_graphics_v04.py",
+    "sha256": "f5acd21626d574f0ea082912c5c252a5aa9f5fae0bd481352b7434c22709cb14"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_j2242_ambiguous_fullres.py",
+    "sha256": "847c7867a176f31a2f8ad166a1a2e04930e40ed4d8501f32013a80cb6638fa3a"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_j2242_archive_patches.py",
+    "sha256": "7eb3566f3410ef1134d0b86527465d1c7b0cd3635edfd9e63a123ca439925767"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_j2242_assemble.py",
+    "sha256": "016133952df8431c8d45f487988a66b4c2359e22bfa2b198489e38a0ca3faabd"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_j2242_bottom_text.py",
+    "sha256": "1edea526e804c9759a22cf052ffe4b26f0cdeb813e3c75b8a82fa6c4d8d2185b"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_j2242_caption_composites.py",
+    "sha256": "5b67ae06e76df80897e9b0861efc2f2f32263411c3fd234eb4bb8ea810b9b73d"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_j2242_caption_layers.py",
+    "sha256": "3ce8a274276caa0dfc76c37acecdb7f624cc19c5f68fd375d05c4dba5f6f4ca6"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_j2242_caption_source_map.py",
+    "sha256": "91692e1553816924a9a90a0c2bcbc40011f749e26c75e31a8f580fc00777a965"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_j2242_encode_groups.py",
+    "sha256": "ce39f299988bd961049bc00a1e3801c0bfdc52bfc15eff9fc0636228d30cb50e"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_j2242_exact_pcm.py",
+    "sha256": "8c5255e099e1c3320a51bc4fcdbc55b94c6775948ad3de30b73c3419fe6b2d36"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_j2242_foil_check.py",
+    "sha256": "cb4012904edcc1407305fc1e7ab8426f1f887986241f3a6ca22ff85efeef69ce"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_j2242_franklin_bridge.py",
+    "sha256": "e7aca3511bf7e6f92d7dc6c6227d51baa0d5e533b7df0c22d4b3682700c6644c"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_j2242_franklin_tail.py",
+    "sha256": "dd69ffef90e474510ad5bfba62d8d4b76f0d3f69d929e3fbb36badbd0e4b818f"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_j2242_fullres_caption.py",
+    "sha256": "412e59cbb92c8889c5373c9159f19877e8606dfc37c6db12006595a4173ae597"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_j2242_group_nuts.py",
+    "sha256": "1c23dd7a2e4bdd2a27bd6ddab3642da408864620bc31483bc0a22a61605a36e4"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_j2242_jar_copy.py",
+    "sha256": "8f193b5a0f1f655549e5cf9b2ed02cfe449e3402057360a07db311eab0a660bd"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_j2242_letter_patch.py",
+    "sha256": "8665fb69d7c59d9807f839174506a4153fbafc5eef3dcf6e16cf0a1b9121c0d1"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_j2242_mixed_split.py",
+    "sha256": "29d33e3932ac598aa4e280ec299d0b8ecf42faf5cd1ce0422bdbc918590d6c59"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_j2242_mux_map.py",
+    "sha256": "1754f32aa6ddf3ff45b83dc41dd7a34469479d32721ac20d8acb7a03a2ce1061"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_j2242_opening_caption.py",
+    "sha256": "08cf9c81b63f38599a182d650aa6e25a063dd84497bb4a93eb7820fa7af4791b"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_j2242_outside_hold.py",
+    "sha256": "03dbe0b8b6ed655c2cda8809278318984452a409325df860eb17b90682061161"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_j2242_packet_mux.py",
+    "sha256": "6a2e761bcb37e9d974742711d2916bbdba59cf85fab2b8204bb060c2e6e60950"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_j2242_points_patch.py",
+    "sha256": "514d9415fa64f2b43a22ea450faf156b7917a239c6056ed2d933b69d4ad9a90f"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_j2242_ref_check.py",
+    "sha256": "2494e137d502fa0b1040a869bb892cc0587332a24e197344b6fade65b731143f"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_j2242_remux_control.py",
+    "sha256": "958b7519b429968c131aed5e45a3ad5629dd8e3785b438be6c6f3ead50f4259b"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_j2242_rods_patch.py",
+    "sha256": "d2d6593b03e8a98b3d8a7b77309b030622a7a3b34e14e20c88eb308a0ba0729d"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_j2242_safe_path.py",
+    "sha256": "345b5bde9090568c19090437a3a015d9b310a6aec7856cd1dd6c5d3959a96884"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_j2242_safe_path_title.py",
+    "sha256": "fe200a1a91f207f06ac71428b6de5f32cc6c9d0c7396d44df44f3b4c34530a8e"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_j2242_salon_patch.py",
+    "sha256": "a5a0b0654d28f60083ff5af9e5fc8bde3dac2607f701d88a2e112527cc69eb10"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_j2242_salon_splice.py",
+    "sha256": "13eeac802bea7ce22fa9ed286f7ec4e3c6c1994a0725f1ee3eb940960a686bae"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_j2242_source_preflight.py",
+    "sha256": "9aaf1c445a8f72da7d0b49c001cefcaebf9c6e0d56888d072d4fcc0fa7b57acf"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_j2242_stitch_groups.py",
+    "sha256": "3704451b8ffeb6e5fbd139cdae887bb4cb9421328aa46ae87606e75dbde3bcde"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_j2242_subject_window.py",
+    "sha256": "4bab89322083757aa4e5af40ab9879f36c5224b788ac1001b4516f62ca1c7132"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_j2242_table_body.py",
+    "sha256": "c35a9e1a3d1154e542b82a4beca31dd05337fd18bc01f5a73c88de331e3421b0"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_j2242_table_leadin.py",
+    "sha256": "d54c8a90b83028f499bb07a2f475023b939d1cdbaa0296a92d17e5fb9b49c8e5"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_j2242_title_panel.py",
+    "sha256": "3f01c31d46beeb9ab6336a77d5a5007c46167ae592e30805bcc6ff9d1713c815"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_j2242_title_place.py",
+    "sha256": "88d8740b82690cd40421e9ba3d62a85b9dfd2e890d17f898ae27f9db70646868"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_j2242_unique_spans.py",
+    "sha256": "2d595f51ca0aa222cda13094d46ae22bbb8c8c4542073df35dcb726de080c72c"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_j2242_verify_output.py",
+    "sha256": "bf9386ab50936b395ebe33ef2139596bed8d6de27d09952cd6e1bb3d2394b1c9"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/test_j2242_ambiguous_fullres.py",
+    "sha256": "cad0642024f0c51891cb6283fc9fd4f14d00f2edd52b74583e2dde724667809e"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/test_j2242_archive_patches.py",
+    "sha256": "af1e0164ee31fe95f77532ba03accd85acc68178c8210943dbf701cde2e33132"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/test_j2242_assemble.py",
+    "sha256": "1437ad9566dea65735f3dd003f7f92632a28abc83a17c41099e6bb31ba433bd3"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/test_j2242_bottom_text.py",
+    "sha256": "7b21e0fc12858e5d9732c259c7729084be30e6d5ba823a592e295eeca76f1fe8"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/test_j2242_caption_composites.py",
+    "sha256": "c5fb4c3b089640b294e59a1acc36bcce9f57edce9abececdd1560515a01dfad9"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/test_j2242_caption_source_map.py",
+    "sha256": "c1b66e3b2d543c6c546fba67c7b8990b7caf5afcc0095eb67d95106f9d2e9c39"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/test_j2242_captions.py",
+    "sha256": "3a4c48388ca49da35aaa795021578cf7d900be6072de1c362a3d8f18d04730de"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/test_j2242_encode_groups.py",
+    "sha256": "0d4af8166c1a03b75282e604a8caf1aca4017449c5b04b7cd420eb86ef0a463b"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/test_j2242_exact_pcm.py",
+    "sha256": "382d36c299ce3b59cfee43e2e7cb5e7837ff607071d841c0b6d0189645804bfa"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/test_j2242_foil_check.py",
+    "sha256": "a314766d9b1252a00741bd1896f80da5232ef74ce3ef7aac494d27eb6618cda1"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/test_j2242_franklin_bridge.py",
+    "sha256": "d9c888029b7a4cf01d284298874cfc858d0551effb66d654a7f10e450cf5d3af"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/test_j2242_franklin_tail.py",
+    "sha256": "5c0c192bd6a873bf5b8d68df076f338a96fb0e2327949904214774ea2285dbab"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/test_j2242_group_nuts.py",
+    "sha256": "0121a3fc06e2ce938f2bcd6ac3a46109a99408a2d69bef5e83fc47be3b7a5449"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/test_j2242_jar_copy.py",
+    "sha256": "4928a5c699487691128c11c50e7a5beaf32820511d694ca07820dc0cee49846f"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/test_j2242_letter.py",
+    "sha256": "cb110f8079a8657b54ce13aa234f1135cc5b0bc3ca62572b4aefb4a619140612"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/test_j2242_mixed_split.py",
+    "sha256": "7a5e7af15a17427c4a70821db19b56ff2c4b7df79c8bb11ca080779935b1887e"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/test_j2242_mux_map.py",
+    "sha256": "73decaf575b33862c32b0d2654ec70a449588657e5e6b094e22eec05c7de7cfa"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/test_j2242_opening_caption.py",
+    "sha256": "42037e77e4de16468c8826bf33318365463d19e55773ac0e79afae5bc704baba"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/test_j2242_outside_hold.py",
+    "sha256": "af762c778aba833e1d61a2a89aafce841684ee96025b8efe6d543a378ce62356"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/test_j2242_packet_mux.py",
+    "sha256": "2439e3f67a537c3939ed00c72be7838e8d311221be57c87829ac2912c6f60618"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/test_j2242_points.py",
+    "sha256": "38fb9108fbd3acd60af95c4787973538de91ad5a82400d4c0d069e4657884079"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/test_j2242_preflight.py",
+    "sha256": "a98f085ffce9f1d3782c00ce09bb2ff55aaf1f27ae4cbe96021b23a2dff4cb7a"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/test_j2242_ref_check.py",
+    "sha256": "a72b0b2fda13da437de452bb065b35e75329fac504edcef07df42df177fcb751"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/test_j2242_rods.py",
+    "sha256": "d00b52a317636f0d653b2213181ef2960025ee73ae3c649607066d411a595f74"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/test_j2242_safe_path.py",
+    "sha256": "82aaf13c62368e4712908131ca39580bbdc19ba3d9ecb22b8e3e58c4c081e6b7"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/test_j2242_safe_path_title.py",
+    "sha256": "c127e02df4bfef27ae67597dffcd763296b4c92f342261186af1826f3877feef"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/test_j2242_salon.py",
+    "sha256": "ca0bd1282c02ebd64a73fb08b51659d26721a2e10d557f1b823348eee4ed3d76"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/test_j2242_salon_splice.py",
+    "sha256": "3ee29a03234a60c3dc389d8b911f5641330e9dd62463a143ea50adb2a07054ec"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/test_j2242_stitch_groups.py",
+    "sha256": "3a69dae21a45fb7921617a60688285c8fda895b36c994b72f029f6b2f39a0295"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/test_j2242_subject_window.py",
+    "sha256": "0e3552d8918cd8afd0f351a67b9996b265a8c80f2f7ef746d8866c0470530b3a"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/test_j2242_table_body.py",
+    "sha256": "1d853c1a8b4c064ff989ca470706fd32dd854a01c3921c240cf88fe1a2342686"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/test_j2242_table_leadin.py",
+    "sha256": "6069da15af995c4236274d8c42736edc29a17302bccd95b4feb5b311c3d4a3cc"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/test_j2242_title_panel.py",
+    "sha256": "2aa30f7e70a1fec6dc9246fece222c2a1eea50657104d3bfc5e13c5ca2ce92fe"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/test_j2242_title_place.py",
+    "sha256": "6ce59e7f4c18ddd4f5e32827a67d2389f982a521c806139104fa785787b9eccc"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/test_j2242_unique_spans.py",
+    "sha256": "a0c2a05b62b1f03ed5b401bc78d1a3f5be3642463a32bf6fe0296d6ae4ca5ed7"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/test_j2242_verify.py",
+    "sha256": "e8e4f957624866f50b2179786911274ff7482eb82b625e3c9f0eb4d5cec9f89e"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/AMBIGUOUS_FULLRES.json",
+    "sha256": "1ab606e958c3943400e37c7c3e342e89a62f3fa516b5738c727a1e65f75905fc"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/AMBIGUOUS_FULLRES_TESTS.txt",
+    "sha256": "65c0ab496867579235a52f4ecc879b812b4eeec69948eb2a8c2d10a28f9f1360"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/ARCHIVE_PATCH_TESTS.txt",
+    "sha256": "bda55c7e6f928a2a2ec02929af6eaf8180e10f71f5f5db1c273db03399ab640a"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/ASSEMBLE.json",
+    "sha256": "1924cebaf527b061bb2fb8c8aaf02ec061ed8a3a48f822416154bdafd192a618"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/AUDIO_MEASURE.json",
+    "sha256": "7479b79d2d7efabbc1457a9dfddae7b5924975210efb37fdf5a7fc7d8167bf17"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/BOTTOM_TEXT.json",
+    "sha256": "139ebb58f135bb112784ae1662f65206f4443aadf7c7ccb42dd9c14eeeaa98c0"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/BOTTOM_TEXT_TESTS.txt",
+    "sha256": "a6aa3269c6b3af35b457ea40394510e4661b126d9695ec7d6cbe2eeb2bbcf5aa"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/CAPTION_COMPOSITES.json",
+    "sha256": "f28dcea33db694777db3de8fd3d24333d9030180a7163faf21e235e7cb37834a"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/CAPTION_LAYERS.json",
+    "sha256": "0bf7a6e33f5c7adbea6a7fa384e078fea62d67b3b6e6431dbc970396a10ae947"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/CAPTION_LETTER_TESTS.txt",
+    "sha256": "48b6b54b151dc74395398a8363aa5d1aef00b08762e3c3924c7de906aded9551"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/CAPTION_SOURCE_MAP.json",
+    "sha256": "c077ac97651c1f17b47b4d846aa5d8a2747a203cd93c791665f31c1718a28f2b"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/CHECK_ALL.txt",
+    "sha256": "c48ac99a3426ee685045ef85f39d3737079e671a6c42a1797d921a667dac370c"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/CHECK_ALL_AMBIGUOUS_FULLRES.txt",
+    "sha256": "1c7c88487f1f5ba50f3a3ccd3aa86c8f28b5f23442d1a44bbb392aa38e322557"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/CHECK_ALL_ARCHIVE_PATCHES.txt",
+    "sha256": "3044e454e18f0826d4e34cca57054ed35dd30d6645f79fb1a741ed78235b8d2c"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/CHECK_ALL_BOTTOM_TEXT.txt",
+    "sha256": "7107b5e53e98b75f8298ce8c867f94da45ae3b9ae8cd1761bc175e8e2c8ee2d1"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/CHECK_ALL_CAPTION_LETTER.txt",
+    "sha256": "54b39a05fdc47276276056777cc69311a2fbae4fab5e918ba69871fb38041983"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/CHECK_ALL_COMPOSITES.txt",
+    "sha256": "549a81042b90f4806268f5f6366a9944d3a9fc634422438a185baa3dbb4b29d7"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/CHECK_ALL_ENCODE.txt",
+    "sha256": "b073ad3ed5dcc2ce318307b4a85c63f327065483053cd530860e3d446e320744"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/CHECK_ALL_EXACT_PCM.txt",
+    "sha256": "018bce5fa92ce04a82308d368a5f6ae9a1df4173aac3b5315ed2fd58ec32a4e8"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/CHECK_ALL_FIRE_TAIL.txt",
+    "sha256": "c60ddf6245a37514ffa0719845276640b0fb5e447b041a4d50293bde8d46517a"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/CHECK_ALL_FOIL.txt",
+    "sha256": "17e6fff7959e99afd116530cec8ad96787c1c3d2c19e25a416c89e1323a75334"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/CHECK_ALL_FRANKLIN_BRIDGE.txt",
+    "sha256": "04cef6da2b32e9e07d3f7354294215a60d7fb41ded7aa939e49f1dcc032d6cf6"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/CHECK_ALL_FRANKLIN_TAIL.txt",
+    "sha256": "d830835cf0ae20f800d67be0a0ebe08b6d3eff6459939503b6aef654a805a301"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/CHECK_ALL_GIANT_SPARK_FULLRES.txt",
+    "sha256": "d39077b55a9ba2f9caec2abdafea961312665acc29ffb7d266a42837cab8ff7d"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/CHECK_ALL_GROUP_NUTS.txt",
+    "sha256": "1e306a7fe7ef64d1184378dd9b0c47c3427cb0a4e511ec180388c6399b23346b"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/CHECK_ALL_JAR_COPY.txt",
+    "sha256": "7153c14ed121a9075748686b50819d0e9af726a676d16db7aca92a279708d10d"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/CHECK_ALL_JAR_INTERVAL.txt",
+    "sha256": "9fb0def538cad6cb10f1c261dc1ebbf81f8b1be4729b5977822e4da7afdd0b3b"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/CHECK_ALL_MIXED_SPLIT.txt",
+    "sha256": "e2f48e79ce8ff3efcd910b1774b1f281337803915ba4d465293c8fdba772bab8"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/CHECK_ALL_MUX_MAP.txt",
+    "sha256": "1bd85524ba7263e449d62aba255d52405b76efa258f8135f88bd71028770834c"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/CHECK_ALL_NEAR_TIE.txt",
+    "sha256": "a52a828ae114a7d82f4354473105f932a452a3de1d4b034da088815219716cf5"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/CHECK_ALL_OUTSIDE_HOLD.txt",
+    "sha256": "16ccc844c1fcd6217fb6d6a1eb319fd2c32cdb5e108ee2ad063ab25153ecd975"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/CHECK_ALL_PACKET_PLAN.txt",
+    "sha256": "60888df6dba6d609b4c29ba095a2526a6e4b451291a36a38a3e49581074d7907"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/CHECK_ALL_PATCH.txt",
+    "sha256": "27e46cab29add822bb1095db95a903f71e8ad8c9ee1a732c06df3c39933674b5"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/CHECK_ALL_POINTS.txt",
+    "sha256": "132938a4cdcd407f670cc55069c1559038f1ae572c29a828452ad57367e2f728"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/CHECK_ALL_PROFILE.txt",
+    "sha256": "162e9baa92733cf9004c49bee7692dcb27155bba63e06768b7aa6579a48c7e89"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/CHECK_ALL_REF_CHECK.txt",
+    "sha256": "9cfec037c4a6d64011d82979a9f7f4a53824da11e8ebddd7d841b8680d7e13da"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/CHECK_ALL_REPEAT_COMPOSITES.txt",
+    "sha256": "2b594c2562e99260ffb7326d6c3abb827891c881855d8d4a43d4984672acbf50"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/CHECK_ALL_RODS.txt",
+    "sha256": "38107c5cda6d3d94c6e80a4af059ec44ae8dca9f497dba81120d02c191feeefc"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/CHECK_ALL_SAFE_PATH.txt",
+    "sha256": "170c97806f62236e107fd15d4cda4aa784a0f814b1498b28c1a9409f572d9e72"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/CHECK_ALL_SAFE_PATH_TITLE.txt",
+    "sha256": "820179112e918c415871a71a45a3f160ea925c35e3d4c7000d28ae4e0a9b6bf3"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/CHECK_ALL_SPLICE.txt",
+    "sha256": "bbc22359cd8d769a5ce696ebe656f3dbf26056dcdb40cc4b0c75649aff68c509"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/CHECK_ALL_STITCH.txt",
+    "sha256": "f3f688acd49d79867594143b182e0baaa71bf9478d0f0d4e4181a32aa9d05fff"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/CHECK_ALL_TABLE_BODY.txt",
+    "sha256": "851f5003c5367587aab1a6cb9c08ec39d5bffcae61f5f3a03cd868a8972efc75"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/CHECK_ALL_TITLE_PANEL.txt",
+    "sha256": "424d64b73dfa0f9e77e2a96e2de6b437fb68b888badd2ed543b499de6da6c8e2"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/CHECK_ALL_TITLE_PLACE.txt",
+    "sha256": "c6d9139682a76f6f959da5e421cccd8277d011eaf71121e229136e5f9fd648d7"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/CHECK_ALL_TITLE_ROWS.txt",
+    "sha256": "17d9f9d51a83d77a6c067126e565c3dff93cdebea36175aa7af53711844765ea"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/CHECK_ALL_UNIQUE_SPANS.txt",
+    "sha256": "0af58cf738821834cf67ce19816942cf5022495c7334cf87f5308b5a03791197"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/CHECK_ALL_VERIFY.txt",
+    "sha256": "92ad12c49ab8070f5c5340cb88e63234919ce7aa522b75519950d7653aba2431"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/COMPOSITE_TESTS.txt",
+    "sha256": "f4eaa91b8bd8831605bf591e0be15546fa533042ca03781f564cbe4fafbefa94"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/ENCODE_0_141.json",
+    "sha256": "144c94a51152d1a5c625457f0187eddef28768ffac82c54e66acf22f4de17c62"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/ENCODE_10076_10191.json",
+    "sha256": "161b940bf865b6ab3a1b2cbce605878e1cb2c126c94862139762c9f4c188577f"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/ENCODE_10273_10415.json",
+    "sha256": "4562ef175406cedf4ffc23fa19c27ed7112cbbeb51c4ceb38d6d7b113121570c"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/ENCODE_10626_10776.json",
+    "sha256": "f341c32f3e1b1a4d51a54600642f12b539b33102f654ad395550f13095f4d79a"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/ENCODE_10777_10852.json",
+    "sha256": "7e359752eef3d7a773067ef73fd0b9d6f612c6ac2a8e396de3e7bea348463460"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/ENCODE_10996_11037.json",
+    "sha256": "9edd616695efe6b1820ce36956b12628e4e732060f5a7ed7d858e95c7d13a239"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/ENCODE_11038_11117.json",
+    "sha256": "608dc298bc595375c7c6008f5905eda9a04f12f02f7aa771a5fb557be50456a7"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/ENCODE_11358_11492.json",
+    "sha256": "051f1a41c4b191851453d5abc7a2c5df3a62df3b0f5d7060d32af803895a70e3"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/ENCODE_12297_12461.json",
+    "sha256": "24563f4fba77275d1b38a8d53aa3b2e3c1b36295bbb318894067062a49693bf5"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/ENCODE_1615_1692.json",
+    "sha256": "c913a2f6a70b64079e70b107efed0f75d404d434ddc8f0a650da9269d9a8ca35"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/ENCODE_1693_1801.json",
+    "sha256": "68e7741b32323f7954d7b68a31bb13c9343a16f6433d16b62026b60cd4393fe6"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/ENCODE_2407_2505.json",
+    "sha256": "da3bcaa34dc0b0346972eb169723f0cdc65d2db62d4c42b68607c9a578364fd7"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/ENCODE_2506_2665.json",
+    "sha256": "f4b7f338e593adf3b33474b14299b491dfce53fe02712421db363dbb365f2aaf"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/ENCODE_2718_2868.json",
+    "sha256": "cff844ae651a99ece34d13c1b0d75dfdafb08d7f9b970e1355626f8503d930f5"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/ENCODE_272_422.json",
+    "sha256": "53bff90af8f885e571cdd29c234c68a41b3d15f8a6692eb8fd2bb0ac6eb36ccd"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/ENCODE_2870_2887.json",
+    "sha256": "af6d751406f6dc2dcbf7663e943408a66bc8efcabc4a74b7ce381e855abe5a4c"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/ENCODE_3049_3167.json",
+    "sha256": "c5b1e5ffb75a55aece14444702d918da0764b9d830cc26716d08a354d3676c67"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/ENCODE_3260_3343.json",
+    "sha256": "6b39517472665a5baae29e68ce1bd25321856cef359ac7837ac4eb1c1a4210b8"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/ENCODE_3678_3812.json",
+    "sha256": "b94cad80e43361f35e3fd01d4866ffce9f3c668bd6f365e93ed66510d049a101"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/ENCODE_4016_4129.json",
+    "sha256": "cd98bdddd77be7eabf6eee11928cf6017cd78354610dcbb28df300dd1bec3698"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/ENCODE_4212_4317.json",
+    "sha256": "8554fb04a08636eb6f241c32cfa8f9ca46ee98803349d141ec61970158eb094d"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/ENCODE_423_544.json",
+    "sha256": "31f5a199efd2eb31db3aa7f5a26daea559db92f40ace1abb0668b0919b296ca0"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/ENCODE_4511_4670.json",
+    "sha256": "700aeb26aba19a4258b01872af1a4b1626ff10091ddd485cbbdf84b5efb23805"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/ENCODE_4671_4820.json",
+    "sha256": "8f4667d3bc17717f1e9e47862ecbad6e80c3005e800b7d0b1d3a91adfc754546"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/ENCODE_4977_5077.json",
+    "sha256": "855dd7f7182d24036b1893fbc1f5f7ccf11c5db158fafe9424d74a98178b1fe6"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/ENCODE_5078_5200.json",
+    "sha256": "6695f0b555ff909af1a88b8466334f1c42826e638fe6bd7b2cefac95af61278a"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/ENCODE_5848_6021.json",
+    "sha256": "c833d13f1a9a3c53c8fa50f67392db9d62a103410c7be1958a43e74298b8082d"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/ENCODE_6483_6627.json",
+    "sha256": "6fb5b4137de89ee8486b5cca6f3f77a95dc7c43a3f13169ff04655e3aecaaa21"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/ENCODE_6773_6904.json",
+    "sha256": "8d14d71ed607c87cbcba90ca5b562d6bc6316dca19c3740c8c391d79e48466c7"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/ENCODE_744_839.json",
+    "sha256": "e30ff4d39b0f14bc2122d9d364b4ee2812e09b745d60045cbfde321bde989ad3"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/ENCODE_7552_7640.json",
+    "sha256": "b6ab86abb4ca5fbf82fd95a97c3e0a8ccb168c909cdd507a4e4faf7c199a5242"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/ENCODE_7748_7836.json",
+    "sha256": "853a849573dc48c705a595568a60069b3c3cd019f37d6a0bdceaf34f7777b004"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/ENCODE_7946_8103.json",
+    "sha256": "9afc2da122f1c5aa5c51021687070262d556ae752a82092a1cf0a1afe1054112"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/ENCODE_8189_8268.json",
+    "sha256": "b00222e153f2ad30520a7d157541745e4a16d844b696b52a4a16eb601eb389f9"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/ENCODE_8269_8348.json",
+    "sha256": "45f8c6332df8b0b4b83baafa3433d68515ce3314475e81dfb5794e4ead7adf64"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/ENCODE_8849_9003.json",
+    "sha256": "a236d8a6298a657ad94d38c2b037da430cb73aa42973d042f4490f82b157e555"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/ENCODE_9161_9302.json",
+    "sha256": "c4f64ae0e3fa441939d2eebce2de622182c15790cafe9195dc7db251ef98d14e"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/ENCODE_9303_9429.json",
+    "sha256": "481add807a35a13b4df3fb38337ff918a141c0821b6a5d91eeb409aabfd277d6"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/ENCODE_9430_9486.json",
+    "sha256": "5b70bbc740f1d6d8896781eef71bb85e5767503b29f6c915678b445220551f66"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/ENCODE_9810_9953.json",
+    "sha256": "3ebe5a1fdf714a31ea4dc078209e11f1d082df9c82f27be791755421d0fdcf6b"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/EXACT_PCM.json",
+    "sha256": "0d1c9c5bc22b44eb4c2835b79cb2dc2b73f55daec7a4f19b3033a6e37a2a5498"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/EXACT_PCM_TESTS.txt",
+    "sha256": "43cd8ce8ba35fe9bd16feafcbfba3b3f3cbe79698a0b3745b6fe821db8e703f1"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/FOIL_CHECK.json",
+    "sha256": "866d307b6dec74ea2d16a114bbb7733f7d9103308aa04801b7032172121bcb4f"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/FOIL_TESTS.txt",
+    "sha256": "9fa58837463550d845db916e2d39e6399985e6ef6ea642c8e30a33d86aed9b44"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/FRANKLIN_BRIDGE.json",
+    "sha256": "175e7de1a8212f22b6f7990f7692acea99387b0fe1609e2c44a10a8263e3fe97"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/FRANKLIN_BRIDGE_TESTS.txt",
+    "sha256": "f91813d60fb23446879559b00686817ce2174ed1df1b32f27f76f88e61d6e514"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/FRANKLIN_TAIL.json",
+    "sha256": "95ee76585bd7e1a9e99ff083df3f4c597f54936aa3c6d9583c4424c58f97fe60"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/FRANKLIN_TAIL_TESTS.txt",
+    "sha256": "dcbe8fbb0be8e7d38a20fcfd18d5ac7aacd25d1927f02bd90e0302371cc11f93"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/GIANT_SPARK_FULLRES.json",
+    "sha256": "f81f1cedbc0945d8680ced67cb9b48d63484982211cc351b7757a8ed7c3347ae"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/GIANT_SPARK_FULLRES_TESTS.txt",
+    "sha256": "27811e8e7d8f27825177b60b01d44c9c531e7eac8f3e08a48e248e502aae6b70"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/GROUP_NUTS.json",
+    "sha256": "f70afc697ec1451911d0ff1c5f855f1c2d3961f40b1a25404c269258cf81ff4c"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/HIGH_PROFILE_MUX.json",
+    "sha256": "358956fdf435328883b8b1f1b29a12329ddc38bec10412e5ecd945fb51a268c8"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/HIGH_PROFILE_PRESERVATION.json",
+    "sha256": "771b934b368d01f75dfc0860a60c63667ddb533c597af7a942f29a0a769b5d01"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/IDENTITY_REMUX_CONTROL.json",
+    "sha256": "f65daa90e17c5e6c863a9ce96580dc4349628a15572aea4e4b678f327e553a95"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/JAR_COPY.json",
+    "sha256": "536a4a66bb3aa9a565d0c36f8d1e0c7ab3a982d51bc1872ca85e61c3bc34284c"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/JAR_COPY_TESTS.txt",
+    "sha256": "c539f3a0fd899fd2a10e918e24dce587414b79c6d3251511e0b833c5fd3e49b0"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/JAR_INTERVAL_TESTS.txt",
+    "sha256": "ec6e952333af2db2aca10e1868ffd4f65a3cda9cbe27248cee957793a4ea18ee"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/JAR_PATCH.json",
+    "sha256": "44e7ca2427cb4e72e5ab9b5d9bff781d420011b3bbbb6db7bbd2dcb846a0bd0b"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/JAR_PATCH_V01_REJECTED.json",
+    "sha256": "745adba24e0e64e3e8f5da2a5b060e03262ec593636ef88d51d82ae28bac217a"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/LETTER_PATCH.json",
+    "sha256": "631a8130b7465e3b33740ad74338f5edb7d9ad38ee1756c2868a1d93e7364bfe"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/MIXED_SPLIT.json",
+    "sha256": "10a244240d978d50ccf3599d2b628dfbab37d0cc6396c3034d8e3c0853987461"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/MUX_MAP.json",
+    "sha256": "07d6772600dcd165defd18e0d5f15b2b943628bec9017f586281a7bd6e06ade9"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/MUX_MAP_TESTS.txt",
+    "sha256": "1c3e869bf0d5d546137264f5f16346ac73480012fb232eaae3bb57bf342889ed"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/NEAR_TIE_SOURCE_PAIRS.json",
+    "sha256": "44653d57347905971c99b7fb31c0ed865509b0eb23688d5245f55abe1f7e6752"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/NEAR_TIE_TESTS.txt",
+    "sha256": "a7bbb8e69995f2b733d65a86bc52affdb1d6585b39d1bbd3f45f1d536ba3a242"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/OPENING_COMPOSITE.json",
+    "sha256": "e38e13a704deff2fb0494844a36e803a0f77b4e6e6fd2848b0ddecbf2e835013"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/OUTSIDE_HOLD.json",
+    "sha256": "df02742ae3dd3e2c09ff8dc356a8b2a842189c073307b028ac73b12a89127ed9"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/OUTSIDE_HOLD_TESTS.txt",
+    "sha256": "8776960c483375b52be7624174fc47e2d26698137109427966ae056ff2dd40e5"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/PACKET_MUX_PLAN.json",
+    "sha256": "29bda17f25423209461e84718246e279e277b4342da094fe52b94d90c9b14fc2"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/PACKET_MUX_PLAN_WITH_TITLES.json",
+    "sha256": "85b107e9f550732449326236e0c0fb7a311768614f90a3d324aac99d651eb9bf"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/PATCH_TESTS.txt",
+    "sha256": "bdbf41fd2ac1be87629215201f489d074d9f31b97499de32d9b17a3b76f281cf"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/PLANNER_TESTS.txt",
+    "sha256": "ce07d2622a712caff2dcecf4d780f69ec510dff893246eee8229764f1d320a8b"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/POINTS_PATCH.json",
+    "sha256": "8f34f5aa90b052a3c87c59b13e8a04bcf3350e86bcf526f25f0f0613ce717c7e"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/POINTS_TESTS.txt",
+    "sha256": "6a28b1adeafe1e2dda450f0b6e29030962d1fb302f6ea6d1cbfd04c306a50e04"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/PREFLIGHT_TESTS.txt",
+    "sha256": "d094b1bd2c8318c96097f80c50da282add5b2972970a77046de8db6c8935f6ca"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/PROFILE_TESTS.txt",
+    "sha256": "57283d2b3123acc3d574677cc18c4639dc107eefc7fad1a5480096a6c10cc660"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/REF_CHECK.json",
+    "sha256": "2084a4cb482c32233059f9cece6330d0848619cddb2f40061ed8e3d665fc4b00"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/REPEAT_CAPTION_COMPOSITES.json",
+    "sha256": "3470ea40483c6cb6645c0a3c39eed607f77ad359e27c4860268268239f4424ae"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/REPEAT_COMPOSITE_TESTS.txt",
+    "sha256": "90b896307d4ee2a2f27c9d10c83a1e31709ba25d7bf270123f0cc93f7d6c46e5"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/RESUME.md",
+    "sha256": "579b6d6ae42a171d18a7208a878805bf2fb2d6e29045a4dd202697fd4b299838"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/RODS_PATCH.json",
+    "sha256": "6ec50d9d05109b72e68de73214d975ed328be2302cf8ee93df43d63007c624d9"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/RODS_TESTS.txt",
+    "sha256": "b5e62a243b9ccecccab24aeb8990bca96e8f52e498017cadb8ca8b5a86e1b5f3"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/ROYAL_SUBJECT.json",
+    "sha256": "7b8c79b7ecab05f105292f3a8fa096823abf1cae89af474e36837ed6b16bf790"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/SAFE_PATH.json",
+    "sha256": "31f4770011fe84a28ff234dd346e25651552efaed97e40506de6b22e3021ae4e"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/SAFE_PATH_TITLE.json",
+    "sha256": "7c4cf83b79454d2ad25d5afbd5cf22c2d0a1367632d1b5109d158e77c548cb3d"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/SAFE_PATH_TITLE_TESTS.txt",
+    "sha256": "e4696503f0b8bb35dd7f378b918ad6a98f11ca2926306ac0b199fc33c1f3d5bb"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/SALON_ENCODE_PIXEL_CHECK.json",
+    "sha256": "2b6ca3108af63ea1c0b3d354188ea0b27b8ba00c758a1e26860e7a65d6f16688"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/SALON_MUX_REJECTED.json",
+    "sha256": "3ae2a10673b8d6b2c343dfb8f247b231b98d092e90623d0df3c81495b433bd66"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/SALON_MUX_SPS1.json",
+    "sha256": "699db2d5caa2ddc275dba56e44a18655d45350ade96167915298b048b4e11f1d"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/SALON_PATCH.json",
+    "sha256": "fa9acc7138d8c1ae8a8286e7f83b2a38b88c3c790e34fa95ba7b272f779b1c80"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/SALON_SPLICE_FAILURE.json",
+    "sha256": "c0ab0493519e698723bda99378201353cfc08f9c0cfee27b491a360aa056b7f4"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/SALON_SPS1_FAILURE.json",
+    "sha256": "1c371dcb32c641040367160cabc74a9b0f49d5f50e123b2274a91629e495001a"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/SELECTED_INPUTS.json",
+    "sha256": "446f9818a79fd4727f91e1ed4de1487e95f47a52401877093de10372e485b98d"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/SINGLE_THREAD_DIAGNOSTIC.json",
+    "sha256": "4ac587e1c27790318bb317430add6cf1579fa8b69f91707328cd4ac5462e47c2"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/SOURCE_PREFLIGHT.json",
+    "sha256": "14acb9780f26c5df46d3caabe784a548cda175d28abc54ccde5c883c3e8965a8"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/SPLICE_TESTS.txt",
+    "sha256": "25c57990a4f7f44d3d8361c8b8cecd4dd375bbc1abc3435c2803b1893626852e"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/STITCH_GROUPS.json",
+    "sha256": "e1f934f301030760497847d7dbf5708ecf83077bcd5d006ac5065ffba6bd0eca"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/STORM_PATCH.json",
+    "sha256": "1aafc4074fdddf39cbcb5e3e7dca75d718a594e107867b1a01349c57b8d8ce0b"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/SUBJECT_WINDOW.json",
+    "sha256": "11a813bc6561ee4d40987a2e7828bbec0601f8523b64973f344080a80cfd6d27"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/TABLE_BODY.json",
+    "sha256": "92ccb437e56fe17c7af049ad4e6cb657e96383d57cebb02a9b386d07500c148b"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/TABLE_BODY_TESTS.txt",
+    "sha256": "3aa96cd241e9956b395fd7bcf609d13c7d5ddeba8781cfe05695d8d4e1d98dae"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/TABLE_LEADIN.json",
+    "sha256": "a1df529ddde845fa6d2f0898b9d060bd666fdf2482f5b4bc4cfe693fa0d3914b"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/THREE_ROW_FULLRES.json",
+    "sha256": "c20bebb783e21806597c4245b18397962ee0ebe8258759ad8b4796b563ae907a"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/TITLE_PANELS.json",
+    "sha256": "e7f78264afd30aa8fa6fdb3579d1f51573c5f474320f3a69ba48d01b5d3668df"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/TITLE_PANEL_TESTS.txt",
+    "sha256": "6e471feea5f9ef3c2bdb408ceff2fdcb5d98bf9599a9304abac4f92c6ced469a"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/TITLE_PLACE.json",
+    "sha256": "97c692a87243438ba1822bca290dc744f050f8cdfb4cfc177d392fb055a2c089"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/TITLE_ROWS.json",
+    "sha256": "35b7b02742dd87e0731297f8a83d6ee386959da3be36d7336622ac1bade639e0"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/UNIQUE_SPANS.json",
+    "sha256": "652fe05824ca82dc467e51fb91e122e49c5c6c1e2cda7e5b17d58cfa8e4b8cf8"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/UNIQUE_SPANS_TESTS.txt",
+    "sha256": "5f621b35e73889a74405d9e0996598564533b3bbd4d3b39d86ec0e54acc2c313"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/VERIFY_IDENTITY_SELFCHECK.json",
+    "sha256": "4f7eea79ec06660893a1fd48f2823557827e1c6be9cd411c418665674ab41a7e"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/VERIFY_TESTS.txt",
+    "sha256": "b45cdc1a639291fb5ed5a9855bbc7652459ddd7595d2df36572d5495ffc63735"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/contract.json",
+    "sha256": "409c6c87d76d0d1343bef81bfb4e4f0463d79dda86dc1783072652bb17552a1c"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/gate_episode.txt",
+    "sha256": "3998b1327c794953166b4b30b52d130f4f35b8f076a208b447fa35fe1943dbd1"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/music_gate.txt",
+    "sha256": "7357360f3a918c9288b3c444ded569fb9bf3869ca1de90cfc0da59ddaebc02fa"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/package_lint.txt",
+    "sha256": "71bb815effb97ea6f99c8b53f5b44c93cd181e7249da06536ad7c78e353be02e"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/phone_sheet/INDEX.json",
+    "sha256": "b3ab8e3464cb8d784753967d6aff57018d03d12637f8e2373c4cfd933d0a1ec1"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/picture_qa.txt",
+    "sha256": "5980a672e989b16791a2fb44768298972254f8ef4800a90886a64145a2c95198"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/polish_gate.txt",
+    "sha256": "1ad055b1ef7aa57a8415c5f89afce22252e913fb795cc9206492a51a0d84e755"
+  },
+  {
+    "pr": 542,
+    "head": "5f06f277e950dd2f4049cd5b3833e223fd8068af",
+    "path": "jobs/reviews/J2242/sfx_level.txt",
+    "sha256": "802c74231c1e4999f9cb4002b90e6517d209dfb8e8b3ec164aaddfd5bcb3904f"
+  }
+]

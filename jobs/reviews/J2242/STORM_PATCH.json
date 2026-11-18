@@ -1,0 +1,32 @@
+{
+  "job": "J2242",
+  "status": "SOURCE_INTERMEDIATE_ONLY",
+  "kind": "storm",
+  "path": "/Volumes/MiniWork/scratch/J2242-storm-patch-v01/storm_patch.nut",
+  "sha256": "bcc4de1c7d96b116def13af35ae38826d566a4a98c045ccc9b347d2bc8b661eb",
+  "source_sha256": "e1b2de5d8cd4bbc8ace98d6d5c17af3c75651f8949d54e062fe91fbe6ee31271",
+  "source_frames": [
+    0,
+    95
+  ],
+  "timeline_frames": [
+    744,
+    839
+  ],
+  "frame_count": 96,
+  "original_pts_match": true,
+  "source_frame_pixel_hashes_match": true,
+  "original_durations_preserved_in_intermediate": false,
+  "original_clock_path": "/Volumes/MiniWork/scratch/J2242-storm-patch-v01/original_clock.json",
+  "original_clock_sha256": "5044393c8d8f0b6cdf07fc4776abfc845dc23382f61da8c5e2d4316d9373a34c",
+  "intermediate_time_base": "1/49152",
+  "rescale_to_master_ticks": "1/4",
+  "final_mux_duration_verification": "OUTSTANDING",
+  "boundary_unchanged_frame_verification": "OUTSTANDING",
+  "audio": "Absent; original master untouched",
+  "visual_review": "OUTSTANDING",
+  "speech_alignment": "OUTSTANDING",
+  "captions_rendered": false,
+  "master_created": false,
+  "final_film_approval": false
+}

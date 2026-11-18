@@ -1,0 +1,33 @@
+{
+  "status": "PASS: two v08 rows copied, 88 NAS row hashes checked, five archives still missing",
+  "copy_file_count": 5,
+  "files": [
+    {
+      "name": "J2563_archive_composites_v08/P4_03a_arch_letheon_patent.mp4",
+      "sha256": "30e9e09adc10dfb014b525916a768c416082a72f0638fbaf2622990575f7855d"
+    },
+    {
+      "name": "J2563_archive_composites_v08/P4_03a_arch_letheon_patent_layout.jpg",
+      "sha256": "a00d4ca65adc2b2c00e6be684976d51e4a8951bd7fd28744064dbf41fa10455e"
+    },
+    {
+      "name": "J2563_archive_composites_v08/P4_08b_arch_ether_monument.mp4",
+      "sha256": "5961c8170228c21a1149ce16714209f44718cd05a9bbfa5ed5feb617c6c5c5ad"
+    },
+    {
+      "name": "J2563_archive_composites_v08/P4_08b_arch_ether_monument_layout.jpg",
+      "sha256": "1d67568f769a59807c6f8c9773fc154ce439ae0112e93eb51c54b9b15e757470"
+    },
+    {
+      "name": "J2563_archive_composites_v08/ARCHIVE_COMPOSITES_v08.json",
+      "sha256": "669289a45538ce8525318b8d842fd8ae55255f68bfa2d432000ab8c393dabe07"
+    }
+  ],
+  "index_sha256": "1a62a7ffd93c60262912446da9ffb68cd08d887566bb08aeaade7fa614d3f82f",
+  "not_reviewed": [
+    "moving_video",
+    "audio",
+    "full_overlay_schedule",
+    "joined_rough"
+  ]
+}

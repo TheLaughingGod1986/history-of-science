@@ -1,0 +1,7 @@
+131 J2242 unit tests OK
+python3 -m unittest discover -s 02_Video-Projects/008_Lightning-Franklin/07_Edit-Project -p 'test_j2242*.py'
+
+bash 00_Brand/Channel-Setup/tools/check_all.sh
+ALL CHECKS PASS
+
+No v04 master. No packet mux. No spend.
