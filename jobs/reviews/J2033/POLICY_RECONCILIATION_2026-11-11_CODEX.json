@@ -1,0 +1,32 @@
+{
+  "charge": "HOS:009:P04:08_halley_visit_c1:t1",
+  "command_result": {
+    "shared_appended": true,
+    "tranche_appended": true
+  },
+  "snapshot": {
+    "reservation": "J2033",
+    "amount": 0,
+    "status": "POLICY_REFUSED",
+    "posted": false
+  },
+  "evidence": {
+    "authority": [
+      "https://github.com/TheLaughingGod1986/history-of-science/pull/180#issuecomment-6784299215",
+      "https://github.com/TheLaughingGod1986/history-of-science/pull/180#issuecomment-6785508086"
+    ],
+    "balance_before_tranche": 14890,
+    "balance_after_14_delivered": 13490,
+    "delivered_takes": 14,
+    "credits_per_take": 100,
+    "arithmetic": "14890 - 13490 = 1400 = 14 delivered takes at 100; refused Halley take cost 0 per Chief ruling",
+    "prior_ui": "Flow prominent-people policy refusal recorded by J2033 at 01:27Z",
+    "charge": "HOS:009:P04:08_halley_visit_c1:t1"
+  },
+  "desk_report": "https://github.com/TheLaughingGod1986/history-of-science/pull/180#issuecomment-6786803948",
+  "spend_reversal": {
+    "id": "flow:reversal:HOS:009:P04:08_halley_visit_c1:t1",
+    "amount": -100,
+    "verified": true
+  }
+}
