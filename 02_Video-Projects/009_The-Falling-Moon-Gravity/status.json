@@ -3,7 +3,7 @@
   "title": "Why Doesn't the Moon Fall to Earth?",
   "air": "2026-11-26",
   "ready_by": "2026-11-22",
-  "summary": "J1237 tranche1 Chief PASS retained: 57 Flow +12 code graphics +1 reuse =70/90 recorded rows; 20 Quality rows remain. J2026 authorizes bounded tranche2 now (live15430;100/take;cap6000;floor3000), replacing renewal-only wait. J2033 generation -> J2034 picture review -> J2035 edit -> J2036 package QA -> J2037 Ben finished-film watch. Long VO locked; Shorts J0862 separate. No new milestone completion.",
+  "summary": "J3047: no accepted score. v03 NOT GENERATED (0 POSTs/spend); v01/v02 rejected. Long and Shorts assembly held. 22 Nov ready-by at risk; 26 Nov is not a release promise. J3050 owns no-spend billing evidence proposal.",
   "stages": {
     "topic": {
       "state": "done"
@@ -59,10 +59,10 @@
     "edit": {
       "state": "blocked",
       "due": "2026-11-19",
-      "owner": "production/review specialists; elected Chief accepts score",
-      "waiting": "J3045 guarded wonder_v03 generation -> J3046 demonstrated audio_input review -> J3047 elected-Chief score acceptance. J2035/J2171 remain held; v01/v02 rejected.",
+      "owner": "codex / J3050 billing evidence proposal",
+      "waiting": "No compliant score available. J3050 evidence proposal -> independent review -> elected-Chief route decision; no generation authorized.",
       "underway": false,
-      "note": "J3043 approved scope PR645 (7bf38d74): one 180s music_v2 request, <=3000 subscription credits, GBP0, no retries; all guards and locked teach/join/VO/picture retained. No score acceptance. Verification 18 Nov 15:30Z; if v03 fails, stop allowance and revise internal delivery plan before 22 Nov.",
+      "note": "J3047 closes J3043 allowance unused, permanently. J2035/J2171 held; all media locks preserved. 22 Nov target at risk; replacement watch-ready date unset.",
       "since": "2026-11-18"
     },
     "thumbnails": {
@@ -71,13 +71,15 @@
     },
     "ben_ok": {
       "state": "todo",
-      "due": "2026-11-22"
+      "due": "2026-11-22",
+      "note": "22 Nov historical target at risk; no committed watch-ready forecast until compliant score and downstream gates pass."
     },
     "scheduled": {
       "state": "todo",
-      "due": "2026-11-23"
+      "due": "2026-11-23",
+      "note": "Historical internal planning date only; 26 Nov is not a release promise. No public schedule change authorized."
     }
   },
   "claims": [],
-  "next": ""
+  "next": "J3050: no-spend billing evidence proposal due 19 Nov 12:00Z; independent review and new Chief route decision before any production scope."
 }

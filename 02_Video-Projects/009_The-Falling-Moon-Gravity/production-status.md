@@ -185,3 +185,16 @@ ALL CHECKS PASS
 ## J2632 r4 timing revision — 11 Nov 2026
 
 32-frame head, 190 unique frames at 30 fps; motion pinned to183.94, nominal end189.20. Artwork unchanged. SHA-256 `23c832b09e70f78d8eeece657dac11d6148e2a5f5c701f2ad88b868845b5f3b3`, NAS verified. Evidence: `07_Edit-Project/code_graphics_v01/J2632_r4/REVIEW.md`. Tool output: `J2632 geometry, stream, silence, 190 unique decoded frames and full decode checks passed; r4 timing residual under 10 ms; review pending.` Repo output: `ALL CHECKS PASS`. Gemini advisory: timing contradictions resolved within Chief tolerance; 0.200 s fade and tail snap required at future assembly. Claude sheet read and Chief KEEP pending; splice_authorized=false, PR543 unmerged.
+
+
+## 18 Nov 2026 — J3047 score disposition
+
+NOT ACCEPTED / NOT GENERATED. J3045 made 0 POSTs and spent 0 credits / GBP0; J3046 audition NOT PERFORMED. No v03 music_gate or listening PASS exists. Prior v01/v02 rejection and J2035/J2171 holds remain. Allowance permanently closed unused. No compliant no-spend score available. 22 Nov readiness at risk; 26 Nov not a release promise. J3050 prepares billing mapping evidence and tests, no generation. Full ruling: `05_Music/SCORE_DECISION_J3047.md`. No film stage marked done.
+
+Record validation (`check_all.sh 009`, isolated J3047 worktree):
+
+```text
+ALL CHECKS PASS
+```
+
+This is not a score/film PASS; no v03 media exists.
