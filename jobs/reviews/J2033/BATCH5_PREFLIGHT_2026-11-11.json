@@ -1,0 +1,40 @@
+{
+  "submissions": 0,
+  "credits_spent": 0,
+  "style_refs": {
+    "04_sunny_window_v01.jpg": {
+      "exists": true,
+      "sha256": "cdb8b421fa121454bb62d9b6dfc1c782c7c95b1634d80c856bb95555cfdc4b45"
+    },
+    "10_mint_jar_v01.jpg": {
+      "exists": true,
+      "sha256": "311fe7b886f391eaabe32aabc0be1b1989e483dd814237c7095e3a118d423720"
+    }
+  },
+  "balance": 13490,
+  "strict_error": "live Flow selected controls/account/entitlement/price are missing or changed",
+  "raw_sanitized": {
+    "host": "flow.google.com",
+    "models": [
+      "Veo 3.1 - Quality"
+    ],
+    "outputs": [
+      "x1"
+    ],
+    "aspects": [
+      "16:9"
+    ],
+    "durations": [
+      "8s"
+    ],
+    "accounts": [
+      "studio Ultra account"
+    ],
+    "prices": [
+      "Generating will use 100 credits"
+    ],
+    "balances": [],
+    "ultra": true,
+    "create_count": 0
+  }
+}

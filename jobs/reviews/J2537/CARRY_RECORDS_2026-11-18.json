@@ -1,0 +1,281 @@
+{
+  "base": "4720ee48e3c2afc523561deae1a62df976c8b3e5",
+  "files": [
+    {
+      "pr": 492,
+      "source_head": "8314a5fdb13ac54136df731c043e2eb2b7a99af7",
+      "path": "jobs/reviews/J2033/BATCH5_PREFLIGHT_2026-11-11.json",
+      "sha256": "7def95787e77ce72a3f2b6cfb95f3c5504eee31cbd39aa5c38ffb66122162a52"
+    },
+    {
+      "pr": 492,
+      "source_head": "8314a5fdb13ac54136df731c043e2eb2b7a99af7",
+      "path": "jobs/reviews/J2033/BATCH5_STOP_2026-11-11.md",
+      "sha256": "7d904705234fdb3d63effd6727ec70056ee1ec71e19371a66d39ff530c43df38"
+    },
+    {
+      "pr": 497,
+      "source_head": "5c515fecbe784cd200a1e5383115387d40d2f4f9",
+      "path": "jobs/reviews/J2033/HANDOFF_2026-11-11_CODEX.md",
+      "sha256": "2d326e0de6ffda1cb0a84737b7d13ba80cf6cb9bcedcff4852f3ca3ba1ec0318"
+    },
+    {
+      "pr": 497,
+      "source_head": "5c515fecbe784cd200a1e5383115387d40d2f4f9",
+      "path": "jobs/reviews/J2033/POLICY_RECONCILIATION_2026-11-11_CODEX.json",
+      "sha256": "84aef853885417083e46351914167ab862aa10e3475b5d85700b546022d7d491"
+    },
+    {
+      "pr": 497,
+      "source_head": "5c515fecbe784cd200a1e5383115387d40d2f4f9",
+      "path": "jobs/reviews/J2033/PREFLIGHT_2026-11-11_CODEX.json",
+      "sha256": "ad645e8cb5a780991db944e465ee0e0d797fc0f4a38042ea8f4b9a620199ec49"
+    },
+    {
+      "pr": 510,
+      "source_head": "99e266912f4bb7792aed927dad89b4a80fa2999b",
+      "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/J2575/CHECKS.txt",
+      "sha256": "20de82063abce89fa8e0caeb590557d78912a0542588e43860652ac0551f8711"
+    },
+    {
+      "pr": 510,
+      "source_head": "99e266912f4bb7792aed927dad89b4a80fa2999b",
+      "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/J2575/REPORT.md",
+      "sha256": "eec65a22e5d9b0605451a83a613d741fe6d4b9edfe588df5b861feb9d47392fa"
+    },
+    {
+      "pr": 510,
+      "source_head": "99e266912f4bb7792aed927dad89b4a80fa2999b",
+      "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/J2575/SPEND.jsonl",
+      "sha256": "585c66c30672db5017a817c593fec01b57aa17ac158afbdeea84560e6747b5cd"
+    },
+    {
+      "pr": 510,
+      "source_head": "99e266912f4bb7792aed927dad89b4a80fa2999b",
+      "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/J2575/VERIFICATION.json",
+      "sha256": "41f21e6d4da396ac1249aa0cbc68390ac4d33a1c4adc1ce0a78e571eb7ff7f1b"
+    },
+    {
+      "pr": 516,
+      "source_head": "a40c8adb1db45bdc64a7b3e344337617ba29d8b5",
+      "path": "jobs/reviews/J2596/REPORT.md",
+      "sha256": "7551d1b6c01548b719347c02f97f254ebfed04f85e0ba40f31990ecb28c43253"
+    },
+    {
+      "pr": 516,
+      "source_head": "a40c8adb1db45bdc64a7b3e344337617ba29d8b5",
+      "path": "jobs/reviews/J2596/generation.json",
+      "sha256": "e1de9accc738acb6ffdede449687335fda53ad9ece7e1623099ec3620d39c136"
+    },
+    {
+      "pr": 518,
+      "source_head": "1f97213f02d02ba797a6e8b532e27e893f8bb1cd",
+      "path": "jobs/reviews/J2604/GENERATION.json",
+      "sha256": "99262d5e2227d978e9f6b6f7640e42f4f575ebc8f969272921da625d3dd1171c"
+    },
+    {
+      "pr": 518,
+      "source_head": "1f97213f02d02ba797a6e8b532e27e893f8bb1cd",
+      "path": "jobs/reviews/J2604/REPORT.md",
+      "sha256": "c09ef2c25cdc259ed98f274156fa24bffd937a334a238c81248d336a9ec40197"
+    },
+    {
+      "pr": 520,
+      "source_head": "b9d4dc0cfa4604529aa55f08b80857ba2ddc7f9d",
+      "path": "jobs/reviews/J2607/GENERATION.json",
+      "sha256": "81f7c2fdc5f1f772e8385e83f68062b07ae2378aed2af7bd0cbedd02a316eb06"
+    },
+    {
+      "pr": 520,
+      "source_head": "b9d4dc0cfa4604529aa55f08b80857ba2ddc7f9d",
+      "path": "jobs/reviews/J2607/REPORT.md",
+      "sha256": "1b027f56771749af218bfe6a3bbadb67ff7ee0835c4372ad7f688fe8a4e07f2f"
+    },
+    {
+      "pr": 538,
+      "source_head": "2f0a227f6b30322d20926f7848851ef1c6a4890c",
+      "path": "02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/07_Edit-Project/J2270_COMPLETION_2026-11-11.md",
+      "sha256": "2ae0c8191cd1db4dad5008de6be869552377e6a2ba68d92545f5b178c7efedde"
+    },
+    {
+      "pr": 538,
+      "source_head": "2f0a227f6b30322d20926f7848851ef1c6a4890c",
+      "path": "02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/07_Edit-Project/J2270_COMPLETION_EVIDENCE_2026-11-11.json",
+      "sha256": "f4a3e1ce112740e09dc6c349946d06e31a82e34cf2e1235a1c76cb3d290a7a99"
+    },
+    {
+      "pr": 538,
+      "source_head": "2f0a227f6b30322d20926f7848851ef1c6a4890c",
+      "path": "02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/07_Edit-Project/review_J2271_sheets/P01_01_clay_line_t1_sheet.jpg",
+      "sha256": "61bbc9d0c94c4ba2c0eb0a392216e17d6d0518731b102f8ddb8dfd1d30a66c99"
+    },
+    {
+      "pr": 538,
+      "source_head": "2f0a227f6b30322d20926f7848851ef1c6a4890c",
+      "path": "02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/07_Edit-Project/review_J2271_sheets/P02_01_walter_hammer_t1_sheet.jpg",
+      "sha256": "766415edc1cea4089e3d5a164de50567089d1896e6f307af2710f70abd6364d4"
+    },
+    {
+      "pr": 538,
+      "source_head": "2f0a227f6b30322d20926f7848851ef1c6a4890c",
+      "path": "02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/07_Edit-Project/review_J2271_sheets/P02_03_tiny_shells_t1_sheet.jpg",
+      "sha256": "a2eea282f918f2aaa5d4b8dddec41d9d9ad1298af42161a3ceea21051f953f9d"
+    },
+    {
+      "pr": 538,
+      "source_head": "2f0a227f6b30322d20926f7848851ef1c6a4890c",
+      "path": "02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/07_Edit-Project/review_J2271_sheets/P02_05_almost_none_t1_sheet.jpg",
+      "sha256": "c730654c7e768e257c39ce48083ff9b5d53fb75c66b96cbc640007aa32c436a2"
+    },
+    {
+      "pr": 538,
+      "source_head": "2f0a227f6b30322d20926f7848851ef1c6a4890c",
+      "path": "02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/07_Edit-Project/review_J2271_sheets/P03_08_asaro_michel_t1_sheet.jpg",
+      "sha256": "158e5147eebbe078c1874dfb2d99068bbfed8a0c680e5fb3a6b4cbc6dd0a87a5"
+    },
+    {
+      "pr": 538,
+      "source_head": "2f0a227f6b30322d20926f7848851ef1c6a4890c",
+      "path": "02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/07_Edit-Project/review_J2271_sheets/P04_06_dust_veil_t1_sheet.jpg",
+      "sha256": "3ccd1ea12c445011960a451f2668272e7a8bbe61f025a89faedc255dde9a85c7"
+    },
+    {
+      "pr": 538,
+      "source_head": "2f0a227f6b30322d20926f7848851ef1c6a4890c",
+      "path": "02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/07_Edit-Project/review_J2271_sheets/P05_08_all_at_once_t1_sheet.jpg",
+      "sha256": "b0929f4b9bd858eb5c6ab37cdd6b2d8801787c4683ff374ee3eaa28783cbd716"
+    },
+    {
+      "pr": 538,
+      "source_head": "2f0a227f6b30322d20926f7848851ef1c6a4890c",
+      "path": "02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/07_Edit-Project/review_J2271_sheets/P05_09_robin_t1_sheet.jpg",
+      "sha256": "fe64522be8fb9868c8b130618abbf04a5484860e3e8a73fa066be807007aede1"
+    },
+    {
+      "pr": 538,
+      "source_head": "2f0a227f6b30322d20926f7848851ef1c6a4890c",
+      "path": "02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/07_Edit-Project/review_J2271_sheets/P05_09a_pigeon_pavement_t1_sheet.jpg",
+      "sha256": "d2b28e2a2bca24454c432ae0487c21009568c800b63bc8843fd5358c344810ad"
+    },
+    {
+      "pr": 538,
+      "source_head": "2f0a227f6b30322d20926f7848851ef1c6a4890c",
+      "path": "02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/07_Edit-Project/review_J2271_sheets/P05_10_explorer_robin_t1_sheet.jpg",
+      "sha256": "2c6eb3ee172a2b299ea242e255e1d57494df990b6d38ff0bed4959e1177c8318"
+    },
+    {
+      "pr": 538,
+      "source_head": "2f0a227f6b30322d20926f7848851ef1c6a4890c",
+      "path": "02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/07_Edit-Project/review_J2271_sheets/P05_12_clay_callback_t1_sheet.jpg",
+      "sha256": "465ee47ff6b5a8a82f76b9bcc655a72ac8a20820fa72adfd55da1fd1888338ab"
+    },
+    {
+      "pr": 538,
+      "source_head": "2f0a227f6b30322d20926f7848851ef1c6a4890c",
+      "path": "02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/07_Edit-Project/review_J2271_sheets/P05_13a_gull_seaside_t1_sheet.jpg",
+      "sha256": "ae9f236bd4a258a16fa9ddd1a5dd4abc7ee03564295a8c398a0722cc4003aee8"
+    },
+    {
+      "pr": 538,
+      "source_head": "2f0a227f6b30322d20926f7848851ef1c6a4890c",
+      "path": "02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/07_Edit-Project/review_J2271_sheets/README.md",
+      "sha256": "5e7eff350a7b719a9a078ca59319367eb3a7b5160ee06b08844138b935c7021b"
+    },
+    {
+      "pr": 544,
+      "source_head": "7ff177c61b9754f11978d57ce75c4c05fc10fa92",
+      "path": "jobs/reviews/J2642/EVIDENCE.json",
+      "sha256": "95b80cb80561e00c93a61f5e1b6c15e0ce4ef007fc210bf48b37fff3adda24ee"
+    },
+    {
+      "pr": 544,
+      "source_head": "7ff177c61b9754f11978d57ce75c4c05fc10fa92",
+      "path": "jobs/reviews/J2642/REPORT.md",
+      "sha256": "c5756fc4f2039f8642452f0788a45b1256ffde143580dcac58d914e31bf4343a"
+    },
+    {
+      "pr": 549,
+      "source_head": "c471238f800a4f4e5b8965d957c0868717e9efb3",
+      "path": "jobs/reviews/J2642/CHAINED_REPORT.md",
+      "sha256": "4aa3e970ec7f528b48a186f0872b71511d97be987a207442f6828be42ccc2a1e"
+    },
+    {
+      "pr": 549,
+      "source_head": "c471238f800a4f4e5b8965d957c0868717e9efb3",
+      "path": "jobs/reviews/J2642/CHAINED_RESULT.json",
+      "sha256": "6e7640ec345ab88b4078320d60564254432746ddb83bbc0783f52b03cf1a7904"
+    },
+    {
+      "pr": 549,
+      "source_head": "c471238f800a4f4e5b8965d957c0868717e9efb3",
+      "path": "jobs/reviews/J2642/reconcile_chained.py",
+      "sha256": "4b36a66c51e150ffbe15e154231058555bc42ff2a13c5d0398bf5043bbb518fc"
+    },
+    {
+      "pr": 552,
+      "source_head": "ad0c06bab5eddb0697628ae310d0a12810f0a75f",
+      "path": "jobs/reviews/J2529/DRY_RUN_2026-11-11T2318Z.json",
+      "sha256": "000afc3f0a09d27def332c70daaf08864f4ca4ee43e292a76b4658f201463dd9"
+    },
+    {
+      "pr": 552,
+      "source_head": "ad0c06bab5eddb0697628ae310d0a12810f0a75f",
+      "path": "jobs/reviews/J2529/README.md",
+      "sha256": "0fe407bd0de4353091f077536fcb480cb0eb4708f28511e5a9aa230fd483a54a"
+    },
+    {
+      "pr": 569,
+      "source_head": "78d7262d8244937175fa11d3135dbc25d11557a9",
+      "path": "docs/validation/J2704/J2708_PREVIEW_DB.md",
+      "sha256": "be02ad21d4e15563e519d0045c9f8253501cbf5c561159fb2bbfb9b5ea5ea319"
+    },
+    {
+      "pr": 569,
+      "source_head": "78d7262d8244937175fa11d3135dbc25d11557a9",
+      "path": "docs/validation/J2704/REVIEW.md",
+      "sha256": "4eb82a45759321086ce51538b5f063db8da9f3321f62fff10fce606612ffcd88"
+    },
+    {
+      "pr": 569,
+      "source_head": "78d7262d8244937175fa11d3135dbc25d11557a9",
+      "path": "docs/validation/J2704/build.txt",
+      "sha256": "46a2fa084a33eab1e78ecdf057541e3a93266448a245faa4827e0991e331d302"
+    },
+    {
+      "pr": 569,
+      "source_head": "78d7262d8244937175fa11d3135dbc25d11557a9",
+      "path": "docs/validation/J2704/check-all.txt",
+      "sha256": "f9905abce27de27aa1d0976eb066a97286023a4df7ec60a588f894f5fc1d7369"
+    },
+    {
+      "pr": 569,
+      "source_head": "78d7262d8244937175fa11d3135dbc25d11557a9",
+      "path": "docs/validation/J2704/lint.txt",
+      "sha256": "de062f25696a4cbaee6a98f34978ac8851484f9b93862af34a421b987446d62b"
+    },
+    {
+      "pr": 569,
+      "source_head": "78d7262d8244937175fa11d3135dbc25d11557a9",
+      "path": "docs/validation/J2704/login.json",
+      "sha256": "9b69c47e92a9076252d195d23b168e5292943835d28534c13c2002760a868532"
+    },
+    {
+      "pr": 569,
+      "source_head": "78d7262d8244937175fa11d3135dbc25d11557a9",
+      "path": "docs/validation/J2704/smoke.json",
+      "sha256": "f50ecaae2fc69946296b7dbe844668543ecf2d8136acdc690fbf364c64ccad2b"
+    },
+    {
+      "pr": 569,
+      "source_head": "78d7262d8244937175fa11d3135dbc25d11557a9",
+      "path": "docs/validation/J2704/tests.txt",
+      "sha256": "1f21d62f192f5387c8af51d7a4be74624b4876acf90df78bf4eeb3f696b381d0"
+    },
+    {
+      "pr": 569,
+      "source_head": "78d7262d8244937175fa11d3135dbc25d11557a9",
+      "path": "docs/validation/J2704/typecheck.txt",
+      "sha256": "4cd4a28bd98db5f5224660dcc07a5df3112f9fb18b35bce8b427cdb2ecbba7ec"
+    }
+  ]
+}

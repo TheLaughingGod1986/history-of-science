@@ -1,0 +1,27 @@
+{
+  "job": "J2607",
+  "chief_wording_note": "6795030083; governing wording 6795043051",
+  "model_display": "Nano Banana 2.1",
+  "route": "Flow image editor; try 2 opened as image to change",
+  "credits_before": 11690,
+  "credits_after": 11690,
+  "price_line": "Generating will use 0 credits",
+  "generations": 1,
+  "status": "generated; unreviewed",
+  "reference_sha256": "33a68fd273393a044d52fa05f206ca04897e26703a80bbedeef46869b1afafc2",
+  "sha256": "cdeb4f6bd15a13afe4164ea2e02d0b755fb9ffa860223063b75695ce4009e592",
+  "dimensions": [
+    1376,
+    768
+  ],
+  "format": "PNG",
+  "download_format": "JPEG",
+  "download_sha256": "4ba81c47796c6f42125d96589d67983cd9eb49e83835c0048b487eaf07f42deb",
+  "conversion": "Lossless PNG encoding of downloaded JPEG pixels; no resize or picture edit",
+  "flow_output_id": "bf0329d6-99a6-4547-93ab-bd21a821bb0b",
+  "local_copy": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part02/refs/v03_flow_stills/02_salon_spark_t4_start_try3.png",
+  "shared_copy": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part02/refs/v03_flow_stills/02_salon_spark_t4_start_try3.png",
+  "price_evidence": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part02/refs/v03_flow_stills/J2607_price.png",
+  "balance_evidence": "/private/tmp/J2607-balance.png (account panel kept out of git)",
+  "prompt": "Keep this exact picture: the same plain daylit room with only these two people in it, the same lady in her brown dress on her wooden chair, the same lecturer in his dark coat holding the same clear glass tube at the same angle in the same place, the same framing, and her smooth, neat powdered wig with its clean, solid outline. Change only her raised hand. She lifts it higher, up to the height of her forehead, and moves it towards the upper open end of the tube, the end nearest her face, so one knuckle sits right beside that open end, almost touching it. The end of the tube is empty, and the air between the tube and her face is clear."
+}

@@ -1,0 +1,290 @@
+
+> content-ops@0.1.0 build
+> node scripts/with-direct-url.mjs prisma generate && node scripts/with-direct-url.mjs prisma migrate deploy && next build
+
+[with-direct-url] probe hasDATABASE_URL=true len=51 hasDIRECT_URL=true len=51 urlKeys=DATABASE_URL,DIRECT_URL
+[with-direct-url] DIRECT_URL already present
+warn The configuration property `package.json#prisma` is deprecated and will be removed in Prisma 7. Please migrate to a Prisma config file (e.g., `prisma.config.ts`).
+For more information, see: https://pris.ly/prisma-config
+
+Environment variables loaded from .env
+Prisma schema loaded from prisma/schema.prisma
+
+✔ Generated Prisma Client (v6.19.3) to ./node_modules/@prisma/client in 242ms
+
+Start by importing your Prisma Client (See: https://pris.ly/d/importing-client)
+
+Tip: Need your database queries to be 1000x faster? Accelerate offers you that and more: https://pris.ly/tip-2-accelerate
+
+[with-direct-url] probe hasDATABASE_URL=true len=51 hasDIRECT_URL=true len=51 urlKeys=DATABASE_URL,DIRECT_URL
+[with-direct-url] DIRECT_URL already present
+warn The configuration property `package.json#prisma` is deprecated and will be removed in Prisma 7. Please migrate to a Prisma config file (e.g., `prisma.config.ts`).
+For more information, see: https://pris.ly/prisma-config
+
+Environment variables loaded from .env
+Prisma schema loaded from prisma/schema.prisma
+Datasource "db": PostgreSQL database "j2704_disposable", schema "public" at "127.0.0.1:55474"
+
+1 migration found in prisma/migrations
+
+Applying migration `20260815160000_init_postgres`
+
+┌─────────────────────────────────────────────────────────┐
+│  Update available 6.19.3 -> 8.0.0-rc.33                 │
+│                                                         │
+│  This is a major update - please follow the guide at    │
+│  https://pris.ly/d/major-version-upgrade                │
+│                                                         │
+│  Run the following to update                            │
+│    npm i --save-dev prisma@latest                       │
+│    npm i @prisma/client@latest                          │
+└─────────────────────────────────────────────────────────┘
+The following migration(s) have been applied:
+
+migrations/
+  └─ 20260815160000_init_postgres/
+    └─ migration.sql
+      
+All migrations have been successfully applied.
+▲ Next.js 16.4.6 (Turbopack)
+- Environments: .env
+✓ Running next.config.ts took 2.7s
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 4.4s
+  Running TypeScript ...
+  Finished TypeScript in 4.3s ...
+  Collecting page data using 9 workers ...
+  Generating static pages using 9 workers (0/14) ...
+  Generating static pages using 9 workers (3/14) 
+  Generating static pages using 9 workers (6/14) 
+  Generating static pages using 9 workers (10/14) 
+✓ Generating static pages using 9 workers (14/14) in 95ms
+Turbopack build encountered 5 warnings:
+./src/lib/publishing/adapters/youtube.ts:283:23
+Warning: Dynamic filesystem access causes tracing of the whole project
+  [90m281 |[0m       }
+  [90m282 |[0m
+[33m[1m>[0m [90m283 |[0m       [36mconst[0m fileBuf = fs.readFileSync(filePath);
+  [90m    |[0m                       [33m[1m^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m284 |[0m       [36mconst[0m uploadRes = [36mawait[0m fetch(uploadUrl, {
+  [90m285 |[0m         method: [32m"PUT"[0m,
+  [90m286 |[0m         headers: {
+
+Static analysis determined that this filesystem access causes the whole project to be traced and included in the output.
+This is usually unintentional and leads to all source files (including the public folder) to be deployed as part of the server code.
+This can slow down deployments or lead to failures when size limits are exceeded.
+To resolve this, you can
+- make sure the path is statically scoped to some subfolder, for example path.join(process.cwd(), 'data', bar), or
+- only use them in development, or
+- opt out by adding an ignore comment to the highlighted call: fs.readFileSync(/*turbopackIgnore: true*/ ...), or
+- remove them.
+
+Import traces:
+  App Route:
+    ./src/lib/publishing/adapters/youtube.ts
+    ./src/app/api/oauth/google/start/route.ts
+
+  Server Component:
+    ./src/lib/publishing/adapters/youtube.ts
+    ./src/lib/publishing/adapters.ts
+    ./src/app/settings/connections/page.tsx
+
+
+./src/lib/publishing/adapters/youtube.ts:240:47
+Warning: Dynamic filesystem access causes tracing of the whole project
+  [90m238 |[0m             [32m"Content-Type"[0m: [32m"application/json; charset=UTF-8"[0m,
+  [90m239 |[0m             [32m"X-Upload-Content-Type"[0m: [32m"video/mp4"[0m,
+[33m[1m>[0m [90m240 |[0m             [32m"X-Upload-Content-Length"[0m: [33mString[0m(fs.statSync(filePath).size),
+  [90m    |[0m                                               [33m[1m^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m241 |[0m           },
+  [90m242 |[0m           body: [33mJSON[0m.stringify({
+  [90m243 |[0m             snippet: {
+
+Static analysis determined that this filesystem access causes the whole project to be traced and included in the output.
+This is usually unintentional and leads to all source files (including the public folder) to be deployed as part of the server code.
+This can slow down deployments or lead to failures when size limits are exceeded.
+To resolve this, you can
+- make sure the path is statically scoped to some subfolder, for example path.join(process.cwd(), 'data', bar), or
+- only use them in development, or
+- opt out by adding an ignore comment to the highlighted call: fs.statSync(/*turbopackIgnore: true*/ ...), or
+- remove them.
+
+Import traces:
+  App Route:
+    ./src/lib/publishing/adapters/youtube.ts
+    ./src/app/api/oauth/google/start/route.ts
+
+  Server Component:
+    ./src/lib/publishing/adapters/youtube.ts
+    ./src/lib/publishing/adapters.ts
+    ./src/app/settings/connections/page.tsx
+
+
+./src/lib/youtube/upload.ts:199:11
+Warning: Dynamic filesystem access causes tracing of the whole project
+  [90m197 |[0m       fileSize > [35m2[0m_000_000_000 && [36mtypeof[0m fs.openAsBlob === [32m"function"[0m
+  [90m198 |[0m         ? [36mawait[0m fs.openAsBlob(filePath, { [36mtype[0m: [32m"video/mp4"[0m })
+[33m[1m>[0m [90m199 |[0m         : fs.readFileSync(filePath);
+  [90m    |[0m           [33m[1m^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m200 |[0m     [36mconst[0m uploadRes = [36mawait[0m fetch(uploadUrl, {
+  [90m201 |[0m       method: [32m"PUT"[0m,
+  [90m202 |[0m       headers: {
+
+Static analysis determined that this filesystem access causes the whole project to be traced and included in the output.
+This is usually unintentional and leads to all source files (including the public folder) to be deployed as part of the server code.
+This can slow down deployments or lead to failures when size limits are exceeded.
+To resolve this, you can
+- make sure the path is statically scoped to some subfolder, for example path.join(process.cwd(), 'data', bar), or
+- only use them in development, or
+- opt out by adding an ignore comment to the highlighted call: fs.readFileSync(/*turbopackIgnore: true*/ ...), or
+- remove them.
+
+Import traces:
+  #1 [App Route]:
+    ./src/lib/youtube/upload.ts
+    ./src/lib/publishing/adapters/youtube.ts
+    ./src/app/api/oauth/google/start/route.ts
+
+  #2 [App Route]:
+    ./src/lib/youtube/upload.ts
+    ./src/lib/publishing/adapters/youtube.ts
+    ./src/app/api/oauth/google/start/route.ts
+
+  #3 [Server Component]:
+    ./src/lib/youtube/upload.ts
+    ./src/lib/publishing/adapters/youtube.ts
+    ./src/lib/publishing/adapters.ts
+    ./src/app/settings/connections/page.tsx
+
+
+./src/lib/youtube/upload.ts:151:45
+Warning: Dynamic filesystem access causes tracing of the whole project
+  [90m149 |[0m           [32m"Content-Type"[0m: [32m"application/json; charset=UTF-8"[0m,
+  [90m150 |[0m           [32m"X-Upload-Content-Type"[0m: [32m"video/mp4"[0m,
+[33m[1m>[0m [90m151 |[0m           [32m"X-Upload-Content-Length"[0m: [33mString[0m(fs.statSync(filePath).size),
+  [90m    |[0m                                             [33m[1m^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m152 |[0m         },
+  [90m153 |[0m         body: [33mJSON[0m.stringify({
+  [90m154 |[0m           snippet: {
+
+Static analysis determined that this filesystem access causes the whole project to be traced and included in the output.
+This is usually unintentional and leads to all source files (including the public folder) to be deployed as part of the server code.
+This can slow down deployments or lead to failures when size limits are exceeded.
+To resolve this, you can
+- make sure the path is statically scoped to some subfolder, for example path.join(process.cwd(), 'data', bar), or
+- only use them in development, or
+- opt out by adding an ignore comment to the highlighted call: fs.statSync(/*turbopackIgnore: true*/ ...), or
+- remove them.
+
+Import traces:
+  #1 [App Route]:
+    ./src/lib/youtube/upload.ts
+    ./src/lib/publishing/adapters/youtube.ts
+    ./src/app/api/oauth/google/start/route.ts
+
+  #2 [App Route]:
+    ./src/lib/youtube/upload.ts
+    ./src/lib/publishing/adapters/youtube.ts
+    ./src/app/api/oauth/google/start/route.ts
+
+  #3 [Server Component]:
+    ./src/lib/youtube/upload.ts
+    ./src/lib/publishing/adapters/youtube.ts
+    ./src/lib/publishing/adapters.ts
+    ./src/app/settings/connections/page.tsx
+
+
+./src/lib/youtube/upload.ts:195:22
+Warning: Dynamic filesystem access causes tracing of the whole project
+  [90m193 |[0m     }
+  [90m194 |[0m
+[33m[1m>[0m [90m195 |[0m     [36mconst[0m fileSize = fs.statSync(filePath).size;
+  [90m    |[0m                      [33m[1m^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m196 |[0m     [36mconst[0m fileBody =
+  [90m197 |[0m       fileSize > [35m2[0m_000_000_000 && [36mtypeof[0m fs.openAsBlob === [32m"function"[0m
+  [90m198 |[0m         ? [36mawait[0m fs.openAsBlob(filePath, { [36mtype[0m: [32m"video/mp4"[0m })
+
+Static analysis determined that this filesystem access causes the whole project to be traced and included in the output.
+This is usually unintentional and leads to all source files (including the public folder) to be deployed as part of the server code.
+This can slow down deployments or lead to failures when size limits are exceeded.
+To resolve this, you can
+- make sure the path is statically scoped to some subfolder, for example path.join(process.cwd(), 'data', bar), or
+- only use them in development, or
+- opt out by adding an ignore comment to the highlighted call: fs.statSync(/*turbopackIgnore: true*/ ...), or
+- remove them.
+
+Import traces:
+  #1 [App Route]:
+    ./src/lib/youtube/upload.ts
+    ./src/lib/publishing/adapters/youtube.ts
+    ./src/app/api/oauth/google/start/route.ts
+
+  #2 [App Route]:
+    ./src/lib/youtube/upload.ts
+    ./src/lib/publishing/adapters/youtube.ts
+    ./src/app/api/oauth/google/start/route.ts
+
+  #3 [Server Component]:
+    ./src/lib/youtube/upload.ts
+    ./src/lib/publishing/adapters/youtube.ts
+    ./src/lib/publishing/adapters.ts
+    ./src/app/settings/connections/page.tsx
+
+
+  Finalizing page optimization ...
+
+Route (app)
+┌ ƒ /
+├ ƒ /_not-found
+├ ƒ /affiliate
+├ ƒ /affiliate/import
+├ ƒ /affiliate/opportunities
+├ ƒ /affiliate/products
+├ ƒ /affiliate/programs
+├ ƒ /analytics
+├ ƒ /api/affiliate/gear
+├ ƒ /api/affiliate/go-live
+├ ƒ /api/affiliate/health
+├ ƒ /api/affiliate/import
+├ ƒ /api/affiliate/placements
+├ ƒ /api/affiliate/products
+├ ƒ /api/affiliate/programs
+├ ƒ /api/affiliate/social-snippets
+├ ƒ /api/analytics/import
+├ ƒ /api/clips/[id]
+├ ƒ /api/clips/[id]/export
+├ ƒ /api/clips/[id]/platform-copy
+├ ƒ /api/connections/[id]/disconnect
+├ ƒ /api/connections/[id]/select-page
+├ ƒ /api/connections/[id]/validate
+├ ƒ /api/oauth/google/callback
+├ ƒ /api/oauth/google/start
+├ ƒ /api/oauth/meta/callback
+├ ƒ /api/oauth/meta/start
+├ ƒ /api/oauth/tiktok/callback
+├ ƒ /api/oauth/tiktok/start
+├ ƒ /api/oauth/x/callback
+├ ƒ /api/oauth/x/start
+├ ƒ /api/posts/[id]
+├ ƒ /api/posts/[id]/enqueue
+├ ƒ /api/settings/platforms/[id]
+├ ƒ /api/videos/[id]/distribution-pack
+├ ƒ /calendar
+├ ƒ /clips/[id]
+├ ƒ /go/[slug]
+├ ƒ /legal/privacy
+├ ƒ /legal/terms
+├ ƒ /login
+├ ƒ /pipeline
+├ ƒ /publishing/[id]
+├ ƒ /settings
+├ ƒ /settings/connections
+├ ƒ /videos
+└ ƒ /videos/[id]
+
+
+ƒ Proxy (Middleware)
+
+ƒ  (Dynamic)  server-rendered on demand
+

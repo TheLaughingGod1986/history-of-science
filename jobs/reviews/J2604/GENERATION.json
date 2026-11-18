@@ -1,0 +1,26 @@
+{
+  "job": "J2604",
+  "chief_wording_note": "6794588620",
+  "model_display": "Nano Banana 2.1",
+  "route": "Flow image editor: original opened as image to change",
+  "credits_before": 11690,
+  "credits_after": 11690,
+  "price_line": "Generating will use 0 credits",
+  "sha256": "33a68fd273393a044d52fa05f206ca04897e26703a80bbedeef46869b1afafc2",
+  "dimensions": [
+    1376,
+    768
+  ],
+  "format": "PNG",
+  "status": "generated; unreviewed",
+  "reference": "04_Generated-Clips/part02/refs/v03_flow_stills/02_salon_spark_t1.png",
+  "output": "02_salon_spark_t4_start_try2.png",
+  "flow_output_id": "5de01f6f-1b00-4036-85c5-183ab7b6c715",
+  "prompt": "Keep this exact picture: the same plain daylit room with only these two people in it, the same lady in her brown dress on her wooden chair, the same lecturer in his dark coat standing where he is, the same framing. Change only these things. The lecturer holds the same clear glass tube at the same angle, perfectly still. The lady's raised hand has one knuckle very close to the end of the tube, almost touching it. Her powdered wig is smooth and neat, with a clean, solid outline. The end of the tube is empty, and the air between the tube and her face is clear.",
+  "download_format": "JPEG",
+  "download_sha256": "51e097f2cc56cc622d98c4468df1856a46f1d4b3e18575c129abe3356bfa1bd6",
+  "conversion": "Lossless PNG encoding of downloaded JPEG pixels; no resize or picture edit",
+  "local_copy": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part02/refs/v03_flow_stills/02_salon_spark_t4_start_try2.png",
+  "shared_copy": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part02/refs/v03_flow_stills/02_salon_spark_t4_start_try2.png",
+  "reference_sha256": "aefd6338aded1037c11306a99fc580d1a62a66d9367409f01e0edd993cc8cc58"
+}
