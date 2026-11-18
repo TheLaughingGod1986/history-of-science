@@ -59,10 +59,10 @@
     "edit": {
       "state": "blocked",
       "due": "2026-11-19",
-      "owner": "Chief (J3043 review of J3042 wonder_v03 continuous opening score scope)",
-      "waiting": "J3043 elected-Chief review of J3042 replacement opening-cue scope (SCORE_SCOPE_J3042.json, wonder_v03) after J3038/J2808 NOT_ACCEPTED_HOLD: v01 failed unchanged music_gate (0.821 on 0-21s) and v02 failed J2807 ear review on six 0.61-2.29s < -45 dB inter-phrase silent dropouts in 18.95-97.92s; J2035 and J2171 remain held until a later accepted score.",
+      "owner": "production/review specialists; elected Chief accepts score",
+      "waiting": "J3045 guarded wonder_v03 generation -> J3046 demonstrated audio_input review -> J3047 elected-Chief score acceptance. J2035/J2171 remain held; v01/v02 rejected.",
       "underway": false,
-      "note": "J3042 prepared SCORE_SCOPE_J3042.json and SCORE_DECISION_J3042.md proposing wonder_v03 (1 request, 180s, music_v2, <=3,000 subscription credits, GBP0 cash, 0 retries; continuous overlapping gut-string lute and viols with 'space between short phrases' removed, retaining teach_v01 4c1f0a17 and 175.28-178.28s D-minor crossfade) for J3043 elected-Chief review. J2808 NOT_ACCEPTED_HOLD remains in force on v01/v02; J2035 and J2171 stay held.",
+      "note": "J3043 approved scope PR645 (7bf38d74): one 180s music_v2 request, <=3000 subscription credits, GBP0, no retries; all guards and locked teach/join/VO/picture retained. No score acceptance. Verification 18 Nov 15:30Z; if v03 fails, stop allowance and revise internal delivery plan before 22 Nov.",
       "since": "2026-11-18"
     },
     "thumbnails": {
