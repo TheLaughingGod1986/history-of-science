@@ -27,7 +27,8 @@ in EAR_REVIEW_J3046.md (HOS PR648). That transcript is local evidence, not a
 portable raw-response archive. The reviewed projection has the API's documented
 shape, while J2806_PROVENANCE.json's subscription_before/after use the flattened
 pair `current_overage_amount/current_overage_currency`, both `"0"/"usd"`.
-J2664_PROVENANCE.json uses the same flattened convention.
+J2664_PROVENANCE.json is local/unverified: no such file is tracked in the
+repository. That citation is not relied on as portable evidence.
 
 J3045's local PREFLIGHT.json (checked_at 2026-11-18T11:57:43.078008+00:00;
 HOS PR647 outcome) retained eight selected subscription fields and a failed
@@ -54,21 +55,36 @@ No fresh account GET was needed or made for this bounded proposal.
 ## Proposed evidence rule
 
 The standalone offline normalizer requires explicit source classification.
-Raw API evidence requires the documented nested object. Historical flattened
+Raw API evidence requires the documented nested object and refuses either
+flattened key even alongside valid nested evidence. Historical flattened
 provenance is accepted only as labelled historical evidence; it never substitutes
-for a current response. When both representations exist, both must be complete,
+for a current response. Only historical_provenance permits both representations;
+when both exist, both must be complete,
 valid and agree. Malformed nested evidence cannot fall back to a flattened zero.
 No recursive name search, `.get(..., 0)`, null-to-zero conversion or inferred zero.
 Reject absent/null/non-numeric, negative (including signed zero), nonzero,
-nonfinite, boolean/float amounts, missing/unknown currencies, extra nested Price
+nonfinite, integer/boolean/float amounts, non-canonical zero strings such as
+`"00"` or `"000.000"`, missing/unknown currencies, extra nested Price
 fields, contradictory or incomplete dual representations, and unknown sources.
 Extra subscription fields remain outside this narrow parser, not silently
-validated. A valid pair returns evidence with `authorizes_generation: false`.
+validated. A valid pair returns evidence with `authorizes_generation: false` and
+`freshness_assessed: false`. A caller-supplied source label proves no freshness.
+
+Before integration review, the raw-body JSON loader must reject duplicate keys
+at every object level (including subscription and Price). This dictionary-only
+function cannot recover duplicates discarded by a default JSON loader and is
+not a raw-body validator. Exact two-field Price validation deliberately fails
+closed on future extra fields. Live subscription responses already contain
+some undocumented top-level fields; schema drift requires separate review.
 
 The proposal is under jobs/reviews/J3050, unimported by production tools.
 It cannot assess freshness, account identity, HTTP success, active plan/tier,
 extension flags/limits, pending charges/reconciliation, live tariff and margin,
-remaining credit, recorder lock, pause, or scope validity. Each remains mandatory
+remaining credit, recorder lock, pause, or scope validity. Other billing fields
+`open_invoices`, `has_open_invoices`, `next_invoice`, `pending_change` and
+top-level `currency` are out of scope too. Zero current overage does not cover
+previously invoiced overage; account/Price currency consistency needs its own check.
+Each remains mandatory
 in any separately reviewed future integration. Unknown at ANY such gate means
 no POST. No tariff quoted historically is authority for future production.
 
@@ -85,5 +101,16 @@ J2171 holds stay intact. Future production requires a separate explicit scope an
 decision, not completion or merger of this proposal.
 
 Validation: `python3 -m unittest discover -s jobs/reviews/J3050 -p 'test_*.py' -v`
-— 8 tests PASS, including synthetic refusal matrices. Repository check results
-are recorded in VALIDATION.md.
+— updated tests, reviewer probes and repository checks are recorded in VALIDATION.md.
+
+## J3057 correction handoff
+
+All three required changes and recommendations 4–9 from J3052 REVIEW.md
+(PR653, 80dc8fe0) are addressed within this offline proposal. Original Claude
+request: desk6978888233. J3053 request changes at desk6983820915 supersedes
+earlier desk6980094321 acceptance. No documentation recommendation is deferred.
+Duplicate-key rejection in a future raw-body loader, freshness/account checks
+and all billing checks listed above remain mandatory prerequisites for any
+separate integration review; this function does not implement or verify them.
+A separate independent Claude review of the updated exact commit followed by
+an elected-Chief decision is required; the author must not merge this correction.

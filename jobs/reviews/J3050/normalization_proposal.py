@@ -8,11 +8,11 @@ class EvidenceRefused(ValueError):
 
 
 def _pair(amount, currency):
-    # API Price.amount is a decimal string. Accept exact integer fixtures too;
+    # API Price.amount is an exact string; integer fixtures are refused.
     # binary floats, booleans and implicit conversion are deliberately refused.
-    if type(amount) not in (str, int):
+    if type(amount) is not str:
         raise EvidenceRefused('amount type unknown')
-    if isinstance(amount, str) and not re.fullmatch(r'-?[0-9]+(?:\.[0-9]+)?', amount):
+    if not re.fullmatch(r'0(?:\.0+)?', amount):
         raise EvidenceRefused('amount format unknown')
     try:
         value = Decimal(amount)
@@ -44,6 +44,8 @@ def normalize_overage(payload, *, source):
         paths.append('current_overage.amount/currency')
     flat_keys = ('current_overage_amount', 'current_overage_currency')
     if any(k in payload for k in flat_keys):
+        if source == 'raw_api':
+            raise EvidenceRefused('flattened keys are not raw API evidence')
         if not all(k in payload for k in flat_keys):
             raise EvidenceRefused('flattened evidence incomplete')
         pairs.append(_pair(payload[flat_keys[0]], payload[flat_keys[1]]))
@@ -53,4 +55,4 @@ def normalize_overage(payload, *, source):
     if any(pair != pairs[0] for pair in pairs):
         raise EvidenceRefused('contradictory representations')
     return {'amount': '0', 'currency': pairs[0][1], 'source': source,
-            'paths': paths, 'authorizes_generation': False}
+            'paths': paths, 'freshness_assessed': False, 'authorizes_generation': False}

@@ -12,6 +12,7 @@ class Normalization(unittest.TestCase):
         result = normalize_overage(raw(), source='raw_api')
         self.assertEqual(result['amount'], '0')
         self.assertFalse(result['authorizes_generation'])
+        self.assertFalse(result['freshness_assessed'])
 
     def test_historical_flat_zero_is_labelled_historical(self):
         p = {'current_overage_amount': '0', 'current_overage_currency': 'usd'}
@@ -21,11 +22,11 @@ class Normalization(unittest.TestCase):
             normalize_overage(p, source='raw_api')
 
     def test_matching_dual_representations(self):
-        p = raw('0.00') | {'current_overage_amount': 0, 'current_overage_currency': 'usd'}
-        self.assertEqual(len(normalize_overage(p, source='raw_api')['paths']), 2)
+        p = raw('0.00') | {'current_overage_amount': '0', 'current_overage_currency': 'usd'}
+        self.assertEqual(len(normalize_overage(p, source='historical_provenance')['paths']), 2)
 
     def test_invalid_amounts_refused(self):
-        for amount in (None, True, False, [], {}, '', 'zero', 'NaN', 'Infinity',
+        for amount in (None, 0, True, False, [], {}, '', '00', '000.000', 'zero', 'NaN', 'Infinity',
                        '-0', '-0.00', '-1', '0.01', 1, -1, 0.0, ' 0', '0 ', '0e0'):
             with self.subTest(amount=amount), self.assertRaises(EvidenceRefused):
                 normalize_overage(raw(amount), source='raw_api')
@@ -50,10 +51,29 @@ class Normalization(unittest.TestCase):
                       {'current_overage_amount': None, 'current_overage_currency': 'usd'},
                       {'current_overage_amount': '0'}):
             with self.subTest(extra=extra), self.assertRaises(EvidenceRefused):
-                normalize_overage(raw() | extra, source='raw_api')
+                normalize_overage(raw() | extra, source='historical_provenance')
         with self.assertRaises(EvidenceRefused):
             normalize_overage({'current_overage': None, 'current_overage_amount': '0',
-                               'current_overage_currency': 'usd'}, source='raw_api')
+                               'current_overage_currency': 'usd'}, source='historical_provenance')
+
+    def test_raw_refuses_either_flattened_key_with_valid_nested(self):
+        for extra in ({'current_overage_amount': '0'},
+                      {'current_overage_currency': 'usd'},
+                      {'current_overage_amount': '0', 'current_overage_currency': 'usd'}):
+            with self.subTest(extra=extra), self.assertRaises(EvidenceRefused):
+                normalize_overage(raw() | extra, source='raw_api')
+
+    def test_historical_nested_only_is_not_fresh(self):
+        result = normalize_overage(raw(), source='historical_provenance')
+        self.assertEqual(result['source'], 'historical_provenance')
+        self.assertFalse(result['freshness_assessed'])
+        self.assertFalse(result['authorizes_generation'])
+
+    def test_historical_flat_integer_zero_refused(self):
+        with self.assertRaises(EvidenceRefused):
+            normalize_overage({'current_overage_amount': 0,
+                               'current_overage_currency': 'usd'},
+                              source='historical_provenance')
 
     def test_unknown_source_refused(self):
         with self.assertRaises(EvidenceRefused):
