@@ -59,11 +59,11 @@
     "edit": {
       "state": "blocked",
       "due": "2026-11-19",
-      "owner": "Chief (desk #180 score route decision after J2808 hold)",
-      "waiting": "Chief/owner desk #180 route beyond J2808: v01 failed unchanged music_gate (0.821 on 0-21s) while v02 passed 89-bed music_gate (0.6615) but failed J2807 ear review on six 0.61-2.29s < -45 dB inter-phrase silent dropouts in 18.95-97.92s of wonder_v02; no extra take, loop, splice, filter, waiver or PR908 deploy is permitted in J2808. J2035 and J2171 remain held.",
+      "owner": "Chief (J3043 review of J3042 wonder_v03 continuous opening score scope)",
+      "waiting": "J3043 elected-Chief review of J3042 replacement opening-cue scope (SCORE_SCOPE_J3042.json, wonder_v03) after J3038/J2808 NOT_ACCEPTED_HOLD: v01 failed unchanged music_gate (0.821 on 0-21s) and v02 failed J2807 ear review on six 0.61-2.29s < -45 dB inter-phrase silent dropouts in 18.95-97.92s; J2035 and J2171 remain held until a later accepted score.",
       "underway": false,
-      "note": "J2808 disposition (SCORE_DISPOSITION_J2808.md): v02 NOT ACCEPTED (HOLD). J2806 (#636) passed preflight guards (2,475 <= 3,000 credits, GBP0) and complete 89-bed music_gate (max 0.6615, 0 fails, 0 unreadable), and J2807 (#637) passed 175.28-178.28s crossfade, tempo (~55-70 BPM), VO clarity, and 526s/535.3s coverage, but failed wonder_v02 on six 0.61-2.29s < -45 dB silent dropouts in 18.95-97.92s (plus no lute), caused by 'space between short, gently changing phrases' in the J2805 prompt. With no extra take, edit/loop/splice, waiver or PR908 allowed in J2808, no compliant route is presently available; J2035 (deadline 15 Nov 18:00Z / refreshed 18 Nov 18:00Z) and J2171 stay held.",
-      "since": "2026-11-17"
+      "note": "J3042 prepared SCORE_SCOPE_J3042.json and SCORE_DECISION_J3042.md proposing wonder_v03 (1 request, 180s, music_v2, <=3,000 subscription credits, GBP0 cash, 0 retries; continuous overlapping gut-string lute and viols with 'space between short phrases' removed, retaining teach_v01 4c1f0a17 and 175.28-178.28s D-minor crossfade) for J3043 elected-Chief review. J2808 NOT_ACCEPTED_HOLD remains in force on v01/v02; J2035 and J2171 stay held.",
+      "since": "2026-11-18"
     },
     "thumbnails": {
       "state": "todo",
