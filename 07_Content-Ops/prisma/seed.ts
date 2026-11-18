@@ -1,4 +1,4 @@
-import { PrismaClient } from "@prisma/client";
+import { prisma } from "../src/lib/storage/prisma";
 import fs from "fs";
 import path from "path";
 import { ALL_PLATFORM_IDS, CHANNEL_NAME, PLATFORMS } from "../src/config/platforms";
@@ -9,7 +9,6 @@ import { scheduleClipAcrossPlatforms, londonDateTime } from "../src/lib/publishi
 import { liveUrlForSlug } from "../src/lib/affiliate/live-product-urls";
 import { wireTopicBookPlacements } from "../src/lib/affiliate/wire-topic-book-placements";
 
-const prisma = new PrismaClient();
 
 const SCRIPT_CANDIDATES = [
   path.resolve(

@@ -140,3 +140,6 @@ storage_state*.json
 # Built on demand from each film's status.json (J2622): python3 00_Brand/Channel-Setup/tools/status_board.py
 /STATUS.md
 /00_Brand/Channel-Setup/kanban/index.html
+
+# HOS Prisma 7 generated client
+07_Content-Ops/src/generated/prisma/
