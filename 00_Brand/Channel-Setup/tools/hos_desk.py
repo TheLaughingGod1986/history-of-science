@@ -10,7 +10,7 @@ message is a PR comment that starts with a hidden header:
   <!-- hos-desk v1 from=grok to=claude film=005 stage=thumbnails status=review -->
 
   from/to:  claude | grok | cursor | codex | ben | gemini | chief
-  status: task | review | question | blocked | approval | done
+  status: task | review | question | blocked | approval | done | ruling | pass | ruled
   `to=chief` is the elected Chief (Grok, else Claude, Codex, Gemini), never Cursor.
 A comment with no header is Ben talking. Claude reads every comment (GitHub wakes its session);
 the Mini's watcher hands Grok every comment addressed to Grok. Images go on the `hos-desk`
@@ -54,7 +54,9 @@ SENDERS = ("claude", "grok", "cursor", "codex", "ben", "gemini")  # never post a
 CHIEF_DESK_IDS = ("grok", "claude", "codex", "gemini")  # Cursor is outside the succession (Ben, 26 Oct 2026)
 CODE = "j2324-safe-role-routing"
 LOADED_SHA256 = hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
-STATUSES = ("task", "review", "question", "blocked", "approval", "done")
+# Reply outcomes resolve correspondence; they do not approve a film or stage.
+OUTCOME_STATUSES = ("review", "approval", "done", "blocked", "ruling", "pass", "ruled")
+STATUSES = ("task", "review", "question", "blocked", "approval", "done", "ruling", "pass", "ruled")
 MEDIA = re.compile(r"\.(mp4|mov|m4v|webm|wav|mp3|m4a|aac|aif|aiff|flac)$", re.I)
 HEADER = re.compile(r"<!--\s*hos-desk v1 (.*?)-->", re.S)
 
@@ -231,7 +233,7 @@ def classify_message(comment: dict, later: list[dict], state: dict) -> str:
         return "terminal"
     for other in later:
         other_header = parse(other.get("body") or "") or {}
-        if other_header.get("reply_to") == mid and other_header.get("status") in ("review", "approval", "done", "blocked"):
+        if other_header.get("reply_to") == mid and other_header.get("status") in OUTCOME_STATUSES:
             return "later-outcome"
     return "unresolved"
 
@@ -446,7 +448,7 @@ def acknowledge(state, agent, message_id, reply, trusted):
     source = original["header"]
     if (reply.get("user", {}).get("login", "").lower() != trusted.lower()
             or reply.get("id", 0) <= message_id or h.get("from") != agent
-            or h.get("status") not in ("review", "approval", "done", "blocked")
+            or h.get("status") not in OUTCOME_STATUSES
             or h.get("reply_to") != str(message_id)
             or any(h.get(k, "") != source.get(k, "") for k in ("film", "stage"))):
         raise ValueError("Acknowledgement requires a trusted later outcome on the same film/stage, from this agent, with reply_to=<original id>")

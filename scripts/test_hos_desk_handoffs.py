@@ -324,3 +324,65 @@ class StaleChiefReplies(unittest.TestCase):
                 desk.cmd_post(ns)
             images.assert_not_called()
             shell.assert_not_called()
+
+
+class RulingOutcomes(unittest.TestCase):
+    def test_ack_accepts_rulings_with_all_existing_guards(self):
+        import copy
+        for status in ('ruling', 'pass', 'ruled'):
+            for change in (None, 'author', 'old', 'from', 'film', 'stage', 'reply_to'):
+                with self.subTest(status=status, change=change):
+                    state = {}
+                    source = {'id': 10, 'header': {'film': '031', 'stage': 'edit'}}
+                    desk.pending_messages(state, [source], 'codex')
+                    fields = {'from': 'codex', 'to': 'claude', 'film': '031',
+                              'stage': 'edit', 'status': status, 'reply_to': '10'}
+                    reply = {'id': 11, 'user': {'login': 'owner'}}
+                    if change == 'author':
+                        reply['user']['login'] = 'intruder'
+                    elif change == 'old':
+                        reply['id'] = 10
+                    elif change:
+                        fields[change] = {'from': 'cursor', 'film': '032',
+                                          'stage': 'vo', 'reply_to': '9'}[change]
+                    reply['body'] = desk.header(**fields)
+                    if change:
+                        before = copy.deepcopy(state)
+                        with self.assertRaises(ValueError):
+                            desk.acknowledge(state, 'codex', 10, reply, 'owner')
+                        self.assertEqual(state, before)
+                    else:
+                        desk.acknowledge(state, 'codex', 10, reply, 'owner')
+                        self.assertEqual(state['pending']['codex'], {})
+                        self.assertEqual(state['acknowledged']['codex']['10'], 11)
+
+    def test_task_and_question_are_not_outcomes(self):
+        for status in ('task', 'question'):
+            with self.subTest(status=status):
+                state = {}
+                desk.pending_messages(state, [{'id': 10, 'header': {'film': '031', 'stage': 'edit'}}], 'codex')
+                reply = {'id': 11, 'user': {'login': 'owner'}, 'body':
+                         desk.compose('codex', 'claude', '031', 'edit', status, 'Reply', [], reply_to='10')}
+                with self.assertRaises(ValueError):
+                    desk.acknowledge(state, 'codex', 10, reply, 'owner')
+                self.assertIn('10', state['pending']['codex'])
+
+    def test_rulings_close_original_but_are_not_terminal_notifications(self):
+        for status in ('ruling', 'pass', 'ruled'):
+            with self.subTest(status=status):
+                reply = {'id': 11, 'body': desk.compose('codex', 'claude', '031', 'edit', status, 'Decision', [], reply_to='10')}
+                self.assertEqual(desk.classify_message(comment(10, 'codex'), [reply], {}), 'later-outcome')
+                self.assertEqual(desk.classify_message(reply, [], {}), 'unresolved')
+                pending = {'id': 11, 'header': desk.parse(reply['body'])}
+                self.assertEqual(desk.pending_messages({}, [pending], 'claude'), [pending])
+
+    def test_post_cli_accepts_ruling_statuses(self):
+        from unittest.mock import patch
+        for status in ('ruling', 'pass', 'ruled'):
+            with self.subTest(status=status), patch.object(desk.sys, 'argv',
+                    ['hos_desk.py', 'post', '--from', 'codex', '--to', 'claude',
+                     '--status', status, '--body', 'Decision']), \
+                    patch.object(desk.sys, 'stdout'), \
+                    patch.object(desk, 'cmd_post') as post:
+                desk.main()
+                self.assertEqual(post.call_args.args[0].status, status)
