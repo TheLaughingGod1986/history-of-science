@@ -1,0 +1,1322 @@
+{
+  "job": "J2242",
+  "status": "REFERENCE_CHECK",
+  "source": "slice headers of hos_008_master_v03.mp4",
+  "opening_pattern_ok": true,
+  "groups": [
+    {
+      "first": 2718,
+      "last": 2887,
+      "frames": 170,
+      "exact_runs": [],
+      "blocked_runs": [
+        [
+          2869,
+          2869
+        ]
+      ],
+      "blocked_frames": [
+        {
+          "index": 2869,
+          "kind": "P",
+          "refs": [
+            2866
+          ],
+          "exact": false
+        }
+      ],
+      "exact_frames": 0,
+      "reordered_slices": 18
+    },
+    {
+      "first": 3168,
+      "last": 3343,
+      "frames": 176,
+      "exact_runs": [
+        [
+          3168,
+          3258
+        ]
+      ],
+      "blocked_runs": [
+        [
+          3259,
+          3259
+        ]
+      ],
+      "blocked_frames": [
+        {
+          "index": 3259,
+          "kind": "B",
+          "refs": [
+            3258,
+            3260
+          ],
+          "exact": false
+        }
+      ],
+      "exact_frames": 91,
+      "reordered_slices": 39
+    },
+    {
+      "first": 4016,
+      "last": 4138,
+      "frames": 123,
+      "exact_runs": [],
+      "blocked_runs": [
+        [
+          4130,
+          4138
+        ]
+      ],
+      "blocked_frames": [
+        {
+          "index": 4133,
+          "kind": "P",
+          "refs": [
+            4129
+          ],
+          "exact": false
+        },
+        {
+          "index": 4131,
+          "kind": "B",
+          "refs": [
+            4129,
+            4133
+          ],
+          "exact": false
+        },
+        {
+          "index": 4130,
+          "kind": "B",
+          "refs": [
+            4129,
+            4131
+          ],
+          "exact": false
+        },
+        {
+          "index": 4132,
+          "kind": "B",
+          "refs": [
+            4131,
+            4133
+          ],
+          "exact": false
+        },
+        {
+          "index": 4136,
+          "kind": "P",
+          "refs": [
+            4133
+          ],
+          "exact": false
+        },
+        {
+          "index": 4134,
+          "kind": "B",
+          "refs": [
+            4133,
+            4136
+          ],
+          "exact": false
+        },
+        {
+          "index": 4135,
+          "kind": "B",
+          "refs": [
+            4134,
+            4136
+          ],
+          "exact": false
+        },
+        {
+          "index": 4138,
+          "kind": "P",
+          "refs": [
+            4136
+          ],
+          "exact": false
+        },
+        {
+          "index": 4137,
+          "kind": "B",
+          "refs": [
+            4136,
+            4138
+          ],
+          "exact": false
+        }
+      ],
+      "exact_frames": 0,
+      "reordered_slices": 16
+    },
+    {
+      "first": 11038,
+      "last": 11245,
+      "frames": 208,
+      "exact_runs": [],
+      "blocked_runs": [
+        [
+          11118,
+          11245
+        ]
+      ],
+      "blocked_frames": [
+        {
+          "index": 11121,
+          "kind": "P",
+          "refs": [
+            11117
+          ],
+          "exact": false
+        },
+        {
+          "index": 11119,
+          "kind": "B",
+          "refs": [
+            11117,
+            11121
+          ],
+          "exact": false
+        },
+        {
+          "index": 11118,
+          "kind": "B",
+          "refs": [
+            11117,
+            11119
+          ],
+          "exact": false
+        },
+        {
+          "index": 11120,
+          "kind": "B",
+          "refs": [
+            11119,
+            11121
+          ],
+          "exact": false
+        },
+        {
+          "index": 11125,
+          "kind": "P",
+          "refs": [
+            11121
+          ],
+          "exact": false
+        },
+        {
+          "index": 11123,
+          "kind": "B",
+          "refs": [
+            11121,
+            11125
+          ],
+          "exact": false
+        },
+        {
+          "index": 11122,
+          "kind": "B",
+          "refs": [
+            11121,
+            11123
+          ],
+          "exact": false
+        },
+        {
+          "index": 11124,
+          "kind": "B",
+          "refs": [
+            11123,
+            11125
+          ],
+          "exact": false
+        },
+        {
+          "index": 11129,
+          "kind": "P",
+          "refs": [
+            11125
+          ],
+          "exact": false
+        },
+        {
+          "index": 11127,
+          "kind": "B",
+          "refs": [
+            11125,
+            11129
+          ],
+          "exact": false
+        },
+        {
+          "index": 11126,
+          "kind": "B",
+          "refs": [
+            11125,
+            11127
+          ],
+          "exact": false
+        },
+        {
+          "index": 11128,
+          "kind": "B",
+          "refs": [
+            11127,
+            11129
+          ],
+          "exact": false
+        },
+        {
+          "index": 11133,
+          "kind": "P",
+          "refs": [
+            11129
+          ],
+          "exact": false
+        },
+        {
+          "index": 11131,
+          "kind": "B",
+          "refs": [
+            11129,
+            11133
+          ],
+          "exact": false
+        },
+        {
+          "index": 11130,
+          "kind": "B",
+          "refs": [
+            11129,
+            11131
+          ],
+          "exact": false
+        },
+        {
+          "index": 11132,
+          "kind": "B",
+          "refs": [
+            11131,
+            11133
+          ],
+          "exact": false
+        },
+        {
+          "index": 11137,
+          "kind": "P",
+          "refs": [
+            11133
+          ],
+          "exact": false
+        },
+        {
+          "index": 11135,
+          "kind": "B",
+          "refs": [
+            11133,
+            11137
+          ],
+          "exact": false
+        },
+        {
+          "index": 11134,
+          "kind": "B",
+          "refs": [
+            11133,
+            11135
+          ],
+          "exact": false
+        },
+        {
+          "index": 11136,
+          "kind": "B",
+          "refs": [
+            11135,
+            11137
+          ],
+          "exact": false
+        },
+        {
+          "index": 11141,
+          "kind": "P",
+          "refs": [
+            11137
+          ],
+          "exact": false
+        },
+        {
+          "index": 11139,
+          "kind": "B",
+          "refs": [
+            11137,
+            11141
+          ],
+          "exact": false
+        },
+        {
+          "index": 11138,
+          "kind": "B",
+          "refs": [
+            11137,
+            11139
+          ],
+          "exact": false
+        },
+        {
+          "index": 11140,
+          "kind": "B",
+          "refs": [
+            11139,
+            11141
+          ],
+          "exact": false
+        },
+        {
+          "index": 11145,
+          "kind": "P",
+          "refs": [
+            11141
+          ],
+          "exact": false
+        },
+        {
+          "index": 11143,
+          "kind": "B",
+          "refs": [
+            11141,
+            11145
+          ],
+          "exact": false
+        },
+        {
+          "index": 11142,
+          "kind": "B",
+          "refs": [
+            11141,
+            11143
+          ],
+          "exact": false
+        },
+        {
+          "index": 11144,
+          "kind": "B",
+          "refs": [
+            11143,
+            11145
+          ],
+          "exact": false
+        },
+        {
+          "index": 11149,
+          "kind": "P",
+          "refs": [
+            11145
+          ],
+          "exact": false
+        },
+        {
+          "index": 11147,
+          "kind": "B",
+          "refs": [
+            11145,
+            11149
+          ],
+          "exact": false
+        },
+        {
+          "index": 11146,
+          "kind": "B",
+          "refs": [
+            11145,
+            11147
+          ],
+          "exact": false
+        },
+        {
+          "index": 11148,
+          "kind": "B",
+          "refs": [
+            11147,
+            11149
+          ],
+          "exact": false
+        },
+        {
+          "index": 11153,
+          "kind": "P",
+          "refs": [
+            11149
+          ],
+          "exact": false
+        },
+        {
+          "index": 11151,
+          "kind": "B",
+          "refs": [
+            11149,
+            11153
+          ],
+          "exact": false
+        },
+        {
+          "index": 11150,
+          "kind": "B",
+          "refs": [
+            11149,
+            11151
+          ],
+          "exact": false
+        },
+        {
+          "index": 11152,
+          "kind": "B",
+          "refs": [
+            11151,
+            11153
+          ],
+          "exact": false
+        },
+        {
+          "index": 11157,
+          "kind": "P",
+          "refs": [
+            11153
+          ],
+          "exact": false
+        },
+        {
+          "index": 11155,
+          "kind": "B",
+          "refs": [
+            11153,
+            11157
+          ],
+          "exact": false
+        },
+        {
+          "index": 11154,
+          "kind": "B",
+          "refs": [
+            11153,
+            11155
+          ],
+          "exact": false
+        },
+        {
+          "index": 11156,
+          "kind": "B",
+          "refs": [
+            11155,
+            11157
+          ],
+          "exact": false
+        },
+        {
+          "index": 11161,
+          "kind": "P",
+          "refs": [
+            11157
+          ],
+          "exact": false
+        },
+        {
+          "index": 11159,
+          "kind": "B",
+          "refs": [
+            11157,
+            11161
+          ],
+          "exact": false
+        },
+        {
+          "index": 11158,
+          "kind": "B",
+          "refs": [
+            11157,
+            11159
+          ],
+          "exact": false
+        },
+        {
+          "index": 11160,
+          "kind": "B",
+          "refs": [
+            11159,
+            11161
+          ],
+          "exact": false
+        },
+        {
+          "index": 11165,
+          "kind": "P",
+          "refs": [
+            11161
+          ],
+          "exact": false
+        },
+        {
+          "index": 11163,
+          "kind": "B",
+          "refs": [
+            11161,
+            11165
+          ],
+          "exact": false
+        },
+        {
+          "index": 11162,
+          "kind": "B",
+          "refs": [
+            11161,
+            11163
+          ],
+          "exact": false
+        },
+        {
+          "index": 11164,
+          "kind": "B",
+          "refs": [
+            11163,
+            11165
+          ],
+          "exact": false
+        },
+        {
+          "index": 11169,
+          "kind": "P",
+          "refs": [
+            11165
+          ],
+          "exact": false
+        },
+        {
+          "index": 11167,
+          "kind": "B",
+          "refs": [
+            11165,
+            11169
+          ],
+          "exact": false
+        },
+        {
+          "index": 11166,
+          "kind": "B",
+          "refs": [
+            11165,
+            11167
+          ],
+          "exact": false
+        },
+        {
+          "index": 11168,
+          "kind": "B",
+          "refs": [
+            11167,
+            11169
+          ],
+          "exact": false
+        },
+        {
+          "index": 11173,
+          "kind": "P",
+          "refs": [
+            11169
+          ],
+          "exact": false
+        },
+        {
+          "index": 11171,
+          "kind": "B",
+          "refs": [
+            11169,
+            11173
+          ],
+          "exact": false
+        },
+        {
+          "index": 11170,
+          "kind": "B",
+          "refs": [
+            11169,
+            11171
+          ],
+          "exact": false
+        },
+        {
+          "index": 11172,
+          "kind": "B",
+          "refs": [
+            11171,
+            11173
+          ],
+          "exact": false
+        },
+        {
+          "index": 11177,
+          "kind": "P",
+          "refs": [
+            11173
+          ],
+          "exact": false
+        },
+        {
+          "index": 11175,
+          "kind": "B",
+          "refs": [
+            11173,
+            11177
+          ],
+          "exact": false
+        },
+        {
+          "index": 11174,
+          "kind": "B",
+          "refs": [
+            11173,
+            11175
+          ],
+          "exact": false
+        },
+        {
+          "index": 11176,
+          "kind": "B",
+          "refs": [
+            11175,
+            11177
+          ],
+          "exact": false
+        },
+        {
+          "index": 11181,
+          "kind": "P",
+          "refs": [
+            11177
+          ],
+          "exact": false
+        },
+        {
+          "index": 11179,
+          "kind": "B",
+          "refs": [
+            11177,
+            11181
+          ],
+          "exact": false
+        },
+        {
+          "index": 11178,
+          "kind": "B",
+          "refs": [
+            11177,
+            11179
+          ],
+          "exact": false
+        },
+        {
+          "index": 11180,
+          "kind": "B",
+          "refs": [
+            11179,
+            11181
+          ],
+          "exact": false
+        },
+        {
+          "index": 11185,
+          "kind": "P",
+          "refs": [
+            11181
+          ],
+          "exact": false
+        },
+        {
+          "index": 11183,
+          "kind": "B",
+          "refs": [
+            11181,
+            11185
+          ],
+          "exact": false
+        },
+        {
+          "index": 11182,
+          "kind": "B",
+          "refs": [
+            11181,
+            11183
+          ],
+          "exact": false
+        },
+        {
+          "index": 11184,
+          "kind": "B",
+          "refs": [
+            11183,
+            11185
+          ],
+          "exact": false
+        },
+        {
+          "index": 11188,
+          "kind": "P",
+          "refs": [
+            11185
+          ],
+          "exact": false
+        },
+        {
+          "index": 11186,
+          "kind": "B",
+          "refs": [
+            11185,
+            11188
+          ],
+          "exact": false
+        },
+        {
+          "index": 11187,
+          "kind": "B",
+          "refs": [
+            11186,
+            11188
+          ],
+          "exact": false
+        },
+        {
+          "index": 11192,
+          "kind": "P",
+          "refs": [
+            11188
+          ],
+          "exact": false
+        },
+        {
+          "index": 11190,
+          "kind": "B",
+          "refs": [
+            11188,
+            11192
+          ],
+          "exact": false
+        },
+        {
+          "index": 11189,
+          "kind": "B",
+          "refs": [
+            11188,
+            11190
+          ],
+          "exact": false
+        },
+        {
+          "index": 11191,
+          "kind": "B",
+          "refs": [
+            11190,
+            11192
+          ],
+          "exact": false
+        },
+        {
+          "index": 11196,
+          "kind": "P",
+          "refs": [
+            11192
+          ],
+          "exact": false
+        },
+        {
+          "index": 11194,
+          "kind": "B",
+          "refs": [
+            11192,
+            11196
+          ],
+          "exact": false
+        },
+        {
+          "index": 11193,
+          "kind": "B",
+          "refs": [
+            11192,
+            11194
+          ],
+          "exact": false
+        },
+        {
+          "index": 11195,
+          "kind": "B",
+          "refs": [
+            11194,
+            11196
+          ],
+          "exact": false
+        },
+        {
+          "index": 11200,
+          "kind": "P",
+          "refs": [
+            11196
+          ],
+          "exact": false
+        },
+        {
+          "index": 11198,
+          "kind": "B",
+          "refs": [
+            11196,
+            11200
+          ],
+          "exact": false
+        },
+        {
+          "index": 11197,
+          "kind": "B",
+          "refs": [
+            11196,
+            11198
+          ],
+          "exact": false
+        },
+        {
+          "index": 11199,
+          "kind": "B",
+          "refs": [
+            11198,
+            11200
+          ],
+          "exact": false
+        },
+        {
+          "index": 11204,
+          "kind": "P",
+          "refs": [
+            11200
+          ],
+          "exact": false
+        },
+        {
+          "index": 11202,
+          "kind": "B",
+          "refs": [
+            11200,
+            11204
+          ],
+          "exact": false
+        },
+        {
+          "index": 11201,
+          "kind": "B",
+          "refs": [
+            11200,
+            11202
+          ],
+          "exact": false
+        },
+        {
+          "index": 11203,
+          "kind": "B",
+          "refs": [
+            11202,
+            11204
+          ],
+          "exact": false
+        },
+        {
+          "index": 11208,
+          "kind": "P",
+          "refs": [
+            11204
+          ],
+          "exact": false
+        },
+        {
+          "index": 11206,
+          "kind": "B",
+          "refs": [
+            11204,
+            11208
+          ],
+          "exact": false
+        },
+        {
+          "index": 11205,
+          "kind": "B",
+          "refs": [
+            11204,
+            11206
+          ],
+          "exact": false
+        },
+        {
+          "index": 11207,
+          "kind": "B",
+          "refs": [
+            11206,
+            11208
+          ],
+          "exact": false
+        },
+        {
+          "index": 11212,
+          "kind": "P",
+          "refs": [
+            11208
+          ],
+          "exact": false
+        },
+        {
+          "index": 11210,
+          "kind": "B",
+          "refs": [
+            11208,
+            11212
+          ],
+          "exact": false
+        },
+        {
+          "index": 11209,
+          "kind": "B",
+          "refs": [
+            11208,
+            11210
+          ],
+          "exact": false
+        },
+        {
+          "index": 11211,
+          "kind": "B",
+          "refs": [
+            11210,
+            11212
+          ],
+          "exact": false
+        },
+        {
+          "index": 11216,
+          "kind": "P",
+          "refs": [
+            11212
+          ],
+          "exact": false
+        },
+        {
+          "index": 11214,
+          "kind": "B",
+          "refs": [
+            11212,
+            11216
+          ],
+          "exact": false
+        },
+        {
+          "index": 11213,
+          "kind": "B",
+          "refs": [
+            11212,
+            11214
+          ],
+          "exact": false
+        },
+        {
+          "index": 11215,
+          "kind": "B",
+          "refs": [
+            11214,
+            11216
+          ],
+          "exact": false
+        },
+        {
+          "index": 11220,
+          "kind": "P",
+          "refs": [
+            11216
+          ],
+          "exact": false
+        },
+        {
+          "index": 11218,
+          "kind": "B",
+          "refs": [
+            11216,
+            11220
+          ],
+          "exact": false
+        },
+        {
+          "index": 11217,
+          "kind": "B",
+          "refs": [
+            11216,
+            11218
+          ],
+          "exact": false
+        },
+        {
+          "index": 11219,
+          "kind": "B",
+          "refs": [
+            11218,
+            11220
+          ],
+          "exact": false
+        },
+        {
+          "index": 11224,
+          "kind": "P",
+          "refs": [
+            11220
+          ],
+          "exact": false
+        },
+        {
+          "index": 11222,
+          "kind": "B",
+          "refs": [
+            11220,
+            11224
+          ],
+          "exact": false
+        },
+        {
+          "index": 11221,
+          "kind": "B",
+          "refs": [
+            11220,
+            11222
+          ],
+          "exact": false
+        },
+        {
+          "index": 11223,
+          "kind": "B",
+          "refs": [
+            11222,
+            11224
+          ],
+          "exact": false
+        },
+        {
+          "index": 11228,
+          "kind": "P",
+          "refs": [
+            11224
+          ],
+          "exact": false
+        },
+        {
+          "index": 11226,
+          "kind": "B",
+          "refs": [
+            11224,
+            11228
+          ],
+          "exact": false
+        },
+        {
+          "index": 11225,
+          "kind": "B",
+          "refs": [
+            11224,
+            11226
+          ],
+          "exact": false
+        },
+        {
+          "index": 11227,
+          "kind": "B",
+          "refs": [
+            11226,
+            11228
+          ],
+          "exact": false
+        },
+        {
+          "index": 11232,
+          "kind": "P",
+          "refs": [
+            11228
+          ],
+          "exact": false
+        },
+        {
+          "index": 11230,
+          "kind": "B",
+          "refs": [
+            11228,
+            11232
+          ],
+          "exact": false
+        },
+        {
+          "index": 11229,
+          "kind": "B",
+          "refs": [
+            11228,
+            11230
+          ],
+          "exact": false
+        },
+        {
+          "index": 11231,
+          "kind": "B",
+          "refs": [
+            11230,
+            11232
+          ],
+          "exact": false
+        },
+        {
+          "index": 11236,
+          "kind": "P",
+          "refs": [
+            11232
+          ],
+          "exact": false
+        },
+        {
+          "index": 11234,
+          "kind": "B",
+          "refs": [
+            11232,
+            11236
+          ],
+          "exact": false
+        },
+        {
+          "index": 11233,
+          "kind": "B",
+          "refs": [
+            11232,
+            11234
+          ],
+          "exact": false
+        },
+        {
+          "index": 11235,
+          "kind": "B",
+          "refs": [
+            11234,
+            11236
+          ],
+          "exact": false
+        },
+        {
+          "index": 11238,
+          "kind": "P",
+          "refs": [
+            11236
+          ],
+          "exact": false
+        },
+        {
+          "index": 11237,
+          "kind": "B",
+          "refs": [
+            11236,
+            11238
+          ],
+          "exact": false
+        },
+        {
+          "index": 11242,
+          "kind": "P",
+          "refs": [
+            11238
+          ],
+          "exact": false
+        },
+        {
+          "index": 11240,
+          "kind": "B",
+          "refs": [
+            11238,
+            11242
+          ],
+          "exact": false
+        },
+        {
+          "index": 11239,
+          "kind": "B",
+          "refs": [
+            11238,
+            11240
+          ],
+          "exact": false
+        },
+        {
+          "index": 11241,
+          "kind": "B",
+          "refs": [
+            11240,
+            11242
+          ],
+          "exact": false
+        },
+        {
+          "index": 11245,
+          "kind": "P",
+          "refs": [
+            11242
+          ],
+          "exact": false
+        },
+        {
+          "index": 11243,
+          "kind": "B",
+          "refs": [
+            11242,
+            11245
+          ],
+          "exact": false
+        },
+        {
+          "index": 11244,
+          "kind": "B",
+          "refs": [
+            11243,
+            11245
+          ],
+          "exact": false
+        }
+      ],
+      "exact_frames": 0,
+      "reordered_slices": 54
+    }
+  ],
+  "exact_runs": [
+    [
+      3168,
+      3258
+    ]
+  ],
+  "blocked_runs": [
+    [
+      2869,
+      2869
+    ],
+    [
+      3259,
+      3259
+    ],
+    [
+      4130,
+      4138
+    ],
+    [
+      11118,
+      11245
+    ]
+  ],
+  "encoded_master_frames": false,
+  "audio": false,
+  "output_film_created": false,
+  "finished_master": false,
+  "approval": false,
+  "spend_gbp": 0,
+  "note": "A kept frame is exact only when every picture it references is also kept. Blocked frames look into a replaced picture, so their original packets cannot be copied beside the new High encode."
+}

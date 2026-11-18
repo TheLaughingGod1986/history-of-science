@@ -1,0 +1,157 @@
+{
+  "job": "J2242",
+  "status": "FRANKLIN_FORWARD_HOLD_CLEAR_TAIL",
+  "rule": "Repeat the nearest earlier unique source frame when it is neither near-tie candidate. Never look forward. Refuse a backward hold.",
+  "evidence_sha256": "c20bebb783e21806597c4245b18397962ee0ebe8258759ad8b4796b563ae907a",
+  "mapping_sha256": "c077ac97651c1f17b47b4d846aa5d8a2747a203cd93c791665f31c1718a28f2b",
+  "rows": [
+    {
+      "row": "04_franklin_watches",
+      "path": "/Volumes/MiniWork/scratch/J2242-franklin-tail-v01/2865-2867/clean_plate.nut",
+      "sha256": "b34d2e629ce68d1f5189120a0e87290ef48807a0dcabc27c919bfc85a7fcb0c6",
+      "timeline_frames": [
+        2865,
+        2867
+      ],
+      "source_frame_indices": [
+        146,
+        148,
+        148
+      ],
+      "source_runs": [
+        [
+          146,
+          147
+        ],
+        [
+          148,
+          149
+        ],
+        [
+          148,
+          149
+        ]
+      ],
+      "holds": [
+        [
+          147,
+          146
+        ]
+      ],
+      "source_sha256": "526cbec6dbc13d4daedf5c83561141f41c394a12d7988752b2f39bb4eb3f0552",
+      "frame_count": 3,
+      "caption_count": 0,
+      "original_pts_match": true,
+      "original_durations_preserved_in_intermediate": true,
+      "original_clock_path": "/Volumes/MiniWork/scratch/J2242-franklin-tail-v01/2865-2867/original_clock.json",
+      "original_clock_sha256": "30b0df0525edd4df3a8588f5df90043c9ff9f7fbb6c48e8dd42be26b8d9829cf",
+      "full_frame_pixel_hashes_match": true,
+      "final_film_approval": false
+    },
+    {
+      "row": "04_franklin_watches",
+      "path": "/Volumes/MiniWork/scratch/J2242-franklin-tail-v01/2870-2887/clean_plate.nut",
+      "sha256": "0bc4fc2b3c0bf3476f09c5637cce4789422e8d921f732fbd8f8c5b3809cb2671",
+      "timeline_frames": [
+        2870,
+        2887
+      ],
+      "source_frame_indices": [
+        148,
+        148,
+        148,
+        148,
+        148,
+        148,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164,
+        165,
+        166,
+        176,
+        177,
+        178
+      ],
+      "source_runs": [
+        [
+          148,
+          149
+        ],
+        [
+          148,
+          149
+        ],
+        [
+          148,
+          149
+        ],
+        [
+          148,
+          149
+        ],
+        [
+          148,
+          149
+        ],
+        [
+          148,
+          149
+        ],
+        [
+          158,
+          167
+        ],
+        [
+          176,
+          179
+        ]
+      ],
+      "holds": [
+        [
+          152,
+          148
+        ],
+        [
+          153,
+          148
+        ],
+        [
+          154,
+          148
+        ],
+        [
+          155,
+          148
+        ],
+        [
+          156,
+          148
+        ],
+        [
+          157,
+          148
+        ]
+      ],
+      "source_sha256": "526cbec6dbc13d4daedf5c83561141f41c394a12d7988752b2f39bb4eb3f0552",
+      "frame_count": 18,
+      "caption_count": 0,
+      "original_pts_match": true,
+      "original_durations_preserved_in_intermediate": true,
+      "original_clock_path": "/Volumes/MiniWork/scratch/J2242-franklin-tail-v01/2870-2887/original_clock.json",
+      "original_clock_sha256": "fea75e0d2f0b8d9e1977c13d9535811720ebe0a0f71497b25419e33bf7746ad4",
+      "full_frame_pixel_hashes_match": true,
+      "final_film_approval": false
+    }
+  ],
+  "refused_master_frames": [
+    2868,
+    2869
+  ],
+  "caption_on_these_frames": false,
+  "master_created": false,
+  "final_film_approval": false
+}

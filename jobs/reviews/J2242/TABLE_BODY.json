@@ -1,0 +1,39 @@
+{
+  "job": "J2242",
+  "status": "TABLE_BODY_INTERMEDIATE_ONLY",
+  "path": "/Volumes/MiniWork/scratch/J2242-table-body-v01/table_body.nut",
+  "sha256": "3a58cf6160bfb05346d7d0f09365322472b9561ef1d6edbfb8330760997e7f65",
+  "timeline_frames": [
+    427,
+    544
+  ],
+  "rejected_master_frames": [
+    423,
+    426
+  ],
+  "rejected_reason": "Low-resolution MSE about 3380 against table source frame 52. Not reconstructed.",
+  "source_frame_indices": [
+    0,
+    117
+  ],
+  "source_runs": [
+    [
+      0,
+      118
+    ]
+  ],
+  "source_sha256": "482a254d7f7b195241eea96511a736d212c971988decb33c38b183347639a9bb",
+  "frame_count": 118,
+  "caption_count": 3,
+  "original_pts_match": true,
+  "original_durations_preserved_in_intermediate": true,
+  "original_clock_path": "/Volumes/MiniWork/scratch/J2242-table-body-v01/original_clock.json",
+  "original_clock_sha256": "0b2a209533b3819d637aa77bbae9af1039d8ffc444ddc4bb89fa0d7a249e4d1f",
+  "above_caption_band_pixel_hashes_match": true,
+  "caption_midpoints_present": true,
+  "first_body_frame_has_caption": true,
+  "clear_tail_inside_body": 0,
+  "master_created": false,
+  "final_film_approval": false,
+  "final_mux_duration_verification": "OUTSTANDING"
+}

@@ -1,0 +1,87 @@
+{
+  "job": "J2242",
+  "status": "UNIQUE_FULLRES_SPANS_ONLY",
+  "evidence_sha256": "c20bebb783e21806597c4245b18397962ee0ebe8258759ad8b4796b563ae907a",
+  "mapping_sha256": "c077ac97651c1f17b47b4d846aa5d8a2747a203cd93c791665f31c1718a28f2b",
+  "rejected": {
+    "04_franklin_watches": [
+      2865,
+      2887
+    ],
+    "02_tower_tilt": [
+      272,
+      346
+    ],
+    "02_sentry_box": "one near-tie inside THE SENTRY-BOX; whole card stays out",
+    "02_knuckle_spark": "one near-tie inside A SPARK; whole card stays out",
+    "14_royal_society": "two near-ties inside THE ROYAL SOCIETY; whole card stays out"
+  },
+  "master_created": false,
+  "final_film_approval": false,
+  "rows": [
+    {
+      "row": "04_franklin_watches",
+      "path": "/Volumes/MiniWork/scratch/J2242-unique-spans-v01/04_franklin_watches/caption_composite.nut",
+      "sha256": "17163f3e57e07c6a0006ee2087ed8322166d7f33648c603fa93e784765af9c0c",
+      "timeline_frames": [
+        2718,
+        2864
+      ],
+      "source_runs": [
+        [
+          0,
+          147
+        ]
+      ],
+      "source_sha256": "526cbec6dbc13d4daedf5c83561141f41c394a12d7988752b2f39bb4eb3f0552",
+      "frame_count": 147,
+      "caption_count": 1,
+      "original_pts_match": true,
+      "original_durations_preserved_in_intermediate": true,
+      "original_clock_path": "/Volumes/MiniWork/scratch/J2242-unique-spans-v01/04_franklin_watches/original_clock.json",
+      "original_clock_sha256": "609d9621d3f2bfef022dfba053dfa685b94bae544b304b02057e1249e321848e",
+      "clear_tail_frames": 51,
+      "clear_tail_pixel_hashes_match": true,
+      "above_caption_band_pixel_hashes_match": true,
+      "caption_midpoints_present": true,
+      "source_mapping_evidence": "Full-resolution unique prefix, source frames 0-146. Tail 2865-2887 stays out.",
+      "final_mux_duration_verification": "OUTSTANDING",
+      "final_film_approval": false,
+      "source_frame_first": 0,
+      "source_frame_last": 146,
+      "source_frame_count": 147
+    },
+    {
+      "row": "02_tower_tilt",
+      "path": "/Volumes/MiniWork/scratch/J2242-unique-spans-v01/02_tower_tilt/caption_composite.nut",
+      "sha256": "2fb23d65d70a60a67796ec9c1a1c719a4a9dd021807581ecd81dda40041b69a2",
+      "timeline_frames": [
+        347,
+        422
+      ],
+      "source_runs": [
+        [
+          75,
+          151
+        ]
+      ],
+      "source_sha256": "b2dc0bb4f2ac2dd632efba2b087b1c68c8351ee4c93fd367224a4ad3ae75fdac",
+      "frame_count": 76,
+      "caption_count": 1,
+      "original_pts_match": true,
+      "original_durations_preserved_in_intermediate": true,
+      "original_clock_path": "/Volumes/MiniWork/scratch/J2242-unique-spans-v01/02_tower_tilt/original_clock.json",
+      "original_clock_sha256": "899ef21e2fea63c82cd30af9ef3b054729907085e598b7fd75db48e76b7ab970",
+      "clear_tail_frames": 0,
+      "clear_tail_pixel_hashes_match": true,
+      "above_caption_band_pixel_hashes_match": true,
+      "caption_midpoints_present": true,
+      "source_mapping_evidence": "Full-resolution unique ON THE ROOF card, source frames 75-150. Opening card stays out.",
+      "final_mux_duration_verification": "OUTSTANDING",
+      "final_film_approval": false,
+      "source_frame_first": 75,
+      "source_frame_last": 150,
+      "source_frame_count": 76
+    }
+  ]
+}

@@ -1,0 +1,480 @@
+{
+  "job": "J2242",
+  "status": "CAPTION_COMPOSITE_INTERMEDIATES_ONLY",
+  "mapping_sha256": "c077ac97651c1f17b47b4d846aa5d8a2747a203cd93c791665f31c1718a28f2b",
+  "rows": [
+    {
+      "row": "12_steeple_fire",
+      "path": "/Volumes/MiniWork/scratch/J2242-caption-composites-v01/12_steeple_fire/caption_composite.nut",
+      "sha256": "b8cafd658e6dea38b4bce5c933850f02b908a0ba20ab60d79216a9c117540206",
+      "timeline_frames": [
+        1615,
+        1692
+      ],
+      "source_frames": [
+        0,
+        77
+      ],
+      "source_sha256": "421b96d9b6c6497bbae10abeaca56af50230c11fc2024988906429fbb0c6c453",
+      "frame_count": 78,
+      "caption_count": 1,
+      "original_pts_match": true,
+      "original_durations_preserved_in_intermediate": true,
+      "original_clock_path": "/Volumes/MiniWork/scratch/J2242-caption-composites-v01/12_steeple_fire/original_clock.json",
+      "original_clock_sha256": "d58f600d0983eb477409d06db7015b8334ed91beedf12acab31e4a562a31cd81",
+      "clear_tail_frames": 0,
+      "clear_tail_pixel_hashes_match": true,
+      "above_caption_band_pixel_hashes_match": true,
+      "caption_midpoints_present": true,
+      "source_mapping_evidence": "Low-resolution candidate matching; final in-context review outstanding",
+      "final_mux_duration_verification": "OUTSTANDING",
+      "final_film_approval": false
+    },
+    {
+      "row": "13_ring_the_bells",
+      "path": "/Volumes/MiniWork/scratch/J2242-caption-composites-v01/13_ring_the_bells/caption_composite.nut",
+      "sha256": "a3d97a2d9600065deae7fcdc05c3853bfdf1c17567106aa17ac3f9f5678cfbf4",
+      "timeline_frames": [
+        1693,
+        1801
+      ],
+      "source_frames": [
+        0,
+        108
+      ],
+      "source_sha256": "0e51d17ea89cc245d6d56a323b75353b6fb16863033798ebb636fcb7202aaabf",
+      "frame_count": 109,
+      "caption_count": 1,
+      "original_pts_match": true,
+      "original_durations_preserved_in_intermediate": true,
+      "original_clock_path": "/Volumes/MiniWork/scratch/J2242-caption-composites-v01/13_ring_the_bells/original_clock.json",
+      "original_clock_sha256": "a42a97e5fe02b3fc738d1be3ef321188d99d836c220c6f1c092e11c020a60536",
+      "clear_tail_frames": 13,
+      "clear_tail_pixel_hashes_match": true,
+      "above_caption_band_pixel_hashes_match": true,
+      "caption_midpoints_present": true,
+      "source_mapping_evidence": "Low-resolution candidate matching; final in-context review outstanding",
+      "final_mux_duration_verification": "OUTSTANDING",
+      "final_film_approval": false
+    },
+    {
+      "row": "06_leyden_jar",
+      "path": "/Volumes/MiniWork/scratch/J2242-caption-composites-v01/06_leyden_jar/caption_composite.nut",
+      "sha256": "ceb4210022cbe97982c130450dec5116a131936e65fe44e4f7bce45d4fa28ae8",
+      "timeline_frames": [
+        3049,
+        3167
+      ],
+      "source_frames": [
+        6,
+        124
+      ],
+      "source_sha256": "abda842f2fb64ffd296cd2d7c9d98f4b6593fc495ef48d4bc6875aad4e476c6a",
+      "frame_count": 119,
+      "caption_count": 1,
+      "original_pts_match": true,
+      "original_durations_preserved_in_intermediate": true,
+      "original_clock_path": "/Volumes/MiniWork/scratch/J2242-caption-composites-v01/06_leyden_jar/original_clock.json",
+      "original_clock_sha256": "c4c7b44ed8b26b5dff9a197e6b949f8b449597949ffc1d0cee4bd2416bcc5a57",
+      "clear_tail_frames": 23,
+      "clear_tail_pixel_hashes_match": true,
+      "above_caption_band_pixel_hashes_match": true,
+      "caption_midpoints_present": true,
+      "source_mapping_evidence": "Low-resolution candidate matching; final in-context review outstanding",
+      "final_mux_duration_verification": "OUTSTANDING",
+      "final_film_approval": false
+    },
+    {
+      "row": "12_notebook_list",
+      "path": "/Volumes/MiniWork/scratch/J2242-caption-composites-v01/12_notebook_list/caption_composite.nut",
+      "sha256": "56fe0a9b24a0d0509dc0d13a95f99608204f480d013983236dc5d47aa726d746",
+      "timeline_frames": [
+        3678,
+        3812
+      ],
+      "source_frames": [
+        3,
+        137
+      ],
+      "source_sha256": "35164fd4319c19c8dc9c6e560f8d49a6682886e52b4672e41a6e342512efba01",
+      "frame_count": 135,
+      "caption_count": 1,
+      "original_pts_match": true,
+      "original_durations_preserved_in_intermediate": true,
+      "original_clock_path": "/Volumes/MiniWork/scratch/J2242-caption-composites-v01/12_notebook_list/original_clock.json",
+      "original_clock_sha256": "c8404dd83c318d4e5fd11107acce1d71de9b8d847853bfb3f61b96d3e117a0f3",
+      "clear_tail_frames": 39,
+      "clear_tail_pixel_hashes_match": true,
+      "above_caption_band_pixel_hashes_match": true,
+      "caption_midpoints_present": true,
+      "source_mapping_evidence": "Low-resolution candidate matching; final in-context review outstanding",
+      "final_mux_duration_verification": "OUTSTANDING",
+      "final_film_approval": false
+    },
+    {
+      "row": "17_page_bottom",
+      "path": "/Volumes/MiniWork/scratch/J2242-caption-composites-v01/17_page_bottom/caption_composite.nut",
+      "sha256": "11b5654bde1065ba95329ed036e4a5e5fb03ebf5629907ce069fa91c8ebc1836",
+      "timeline_frames": [
+        4212,
+        4317
+      ],
+      "source_frames": [
+        0,
+        105
+      ],
+      "source_sha256": "e8c741f9eed8726b4ba343c62fa5c8beef40df5a1ed0a54444b0380019536c30",
+      "frame_count": 106,
+      "caption_count": 2,
+      "original_pts_match": true,
+      "original_durations_preserved_in_intermediate": true,
+      "original_clock_path": "/Volumes/MiniWork/scratch/J2242-caption-composites-v01/17_page_bottom/original_clock.json",
+      "original_clock_sha256": "77d621486ecab7e25c7c5552380d1cefc0fc2a77911ceabac6c1594ce31be7bd",
+      "clear_tail_frames": 0,
+      "clear_tail_pixel_hashes_match": true,
+      "above_caption_band_pixel_hashes_match": true,
+      "caption_midpoints_present": true,
+      "source_mapping_evidence": "Low-resolution candidate matching; final in-context review outstanding",
+      "final_mux_duration_verification": "OUTSTANDING",
+      "final_film_approval": false
+    },
+    {
+      "row": "05_marly_garden",
+      "path": "/Volumes/MiniWork/scratch/J2242-caption-composites-v01/05_marly_garden/caption_composite.nut",
+      "sha256": "4c9702b3404fb14c47b9eac00ac71fc5e83b598c85bdaad2ba229a9fd0965348",
+      "timeline_frames": [
+        5078,
+        5200
+      ],
+      "source_frames": [
+        0,
+        122
+      ],
+      "source_sha256": "90945fa4601812e68ac97720d64a5d2b84f4c1f11758ef98c7e1021c30073501",
+      "frame_count": 123,
+      "caption_count": 1,
+      "original_pts_match": true,
+      "original_durations_preserved_in_intermediate": true,
+      "original_clock_path": "/Volumes/MiniWork/scratch/J2242-caption-composites-v01/05_marly_garden/original_clock.json",
+      "original_clock_sha256": "888ec89b96566885a2580a6cde9ab3b2cc5427c59c9d3d75f011672ec8ed5ed7",
+      "clear_tail_frames": 27,
+      "clear_tail_pixel_hashes_match": true,
+      "above_caption_band_pixel_hashes_match": true,
+      "caption_midpoints_present": true,
+      "source_mapping_evidence": "Low-resolution candidate matching; final in-context review outstanding",
+      "final_mux_duration_verification": "OUTSTANDING",
+      "final_film_approval": false
+    },
+    {
+      "row": "11_kite_build",
+      "path": "/Volumes/MiniWork/scratch/J2242-caption-composites-v01/11_kite_build/caption_composite.nut",
+      "sha256": "60d1fe587d30036c30e5a394d35aa937ddde9179c88a206e7e00c14d66a7f5ba",
+      "timeline_frames": [
+        5848,
+        6021
+      ],
+      "source_frames": [
+        0,
+        173
+      ],
+      "source_sha256": "c7dca7bf2bb08a63c78f7b7653a90b71406c294029fed5dc47b273e2cc90f000",
+      "frame_count": 174,
+      "caption_count": 1,
+      "original_pts_match": true,
+      "original_durations_preserved_in_intermediate": true,
+      "original_clock_path": "/Volumes/MiniWork/scratch/J2242-caption-composites-v01/11_kite_build/original_clock.json",
+      "original_clock_sha256": "0925524aa0bd76555cffffc85619155cc393afbef85b53caaf9eb6f5e75b838b",
+      "clear_tail_frames": 78,
+      "clear_tail_pixel_hashes_match": true,
+      "above_caption_band_pixel_hashes_match": true,
+      "caption_midpoints_present": true,
+      "source_mapping_evidence": "Low-resolution candidate matching; final in-context review outstanding",
+      "final_mux_duration_verification": "OUTSTANDING",
+      "final_film_approval": false
+    },
+    {
+      "row": "16_keep_silk_dry",
+      "path": "/Volumes/MiniWork/scratch/J2242-caption-composites-v01/16_keep_silk_dry/caption_composite.nut",
+      "sha256": "df9da607b1b7048940ceefcb81e49540d03fa747544dcdd05c8eb9c961a4b5c5",
+      "timeline_frames": [
+        6483,
+        6627
+      ],
+      "source_frames": [
+        0,
+        144
+      ],
+      "source_sha256": "faff531d5f37f0be2946d486ec5c29492ef4b5509a2875b04e210b2aa35243ab",
+      "frame_count": 145,
+      "caption_count": 1,
+      "original_pts_match": true,
+      "original_durations_preserved_in_intermediate": true,
+      "original_clock_path": "/Volumes/MiniWork/scratch/J2242-caption-composites-v01/16_keep_silk_dry/original_clock.json",
+      "original_clock_sha256": "06ce16917389aba429ea670d674f92112a6ae52cac795166e7effeb69950edd1",
+      "clear_tail_frames": 49,
+      "clear_tail_pixel_hashes_match": true,
+      "above_caption_band_pixel_hashes_match": true,
+      "caption_midpoints_present": true,
+      "source_mapping_evidence": "Low-resolution candidate matching; final in-context review outstanding",
+      "final_mux_duration_verification": "OUTSTANDING",
+      "final_film_approval": false
+    },
+    {
+      "row": "18_william_runs",
+      "path": "/Volumes/MiniWork/scratch/J2242-caption-composites-v01/18_william_runs/caption_composite.nut",
+      "sha256": "8334d9a338dc769d34d0340a3f9c63d04973764fb0cde3eb0fb48ef965bccd36",
+      "timeline_frames": [
+        6773,
+        6904
+      ],
+      "source_frames": [
+        0,
+        131
+      ],
+      "source_sha256": "91dafacea9ee125ca7a908dd06569249160f319b42455081f763039873255a12",
+      "frame_count": 132,
+      "caption_count": 1,
+      "original_pts_match": true,
+      "original_durations_preserved_in_intermediate": true,
+      "original_clock_path": "/Volumes/MiniWork/scratch/J2242-caption-composites-v01/18_william_runs/original_clock.json",
+      "original_clock_sha256": "e4cefcc0aa7d29a9d13625a166b50d614bb4dd4d3aa59a66a1e258b9a15bc81e",
+      "clear_tail_frames": 36,
+      "clear_tail_pixel_hashes_match": true,
+      "above_caption_band_pixel_hashes_match": true,
+      "caption_midpoints_present": true,
+      "source_mapping_evidence": "Low-resolution candidate matching; final in-context review outstanding",
+      "final_mux_duration_verification": "OUTSTANDING",
+      "final_film_approval": false
+    },
+    {
+      "row": "25_fibres_rise",
+      "path": "/Volumes/MiniWork/scratch/J2242-caption-composites-v01/25_fibres_rise/caption_composite.nut",
+      "sha256": "8d4fae8ae89300c7fcb7b88c4f33c4f6e5b58b128966365b2ca59a8808b4e9c9",
+      "timeline_frames": [
+        7552,
+        7640
+      ],
+      "source_frames": [
+        0,
+        88
+      ],
+      "source_sha256": "5814940d95203cce28a95f0a4710ba0e47770a3baba5ac173265b25ab73c2fde",
+      "frame_count": 89,
+      "caption_count": 1,
+      "original_pts_match": true,
+      "original_durations_preserved_in_intermediate": true,
+      "original_clock_path": "/Volumes/MiniWork/scratch/J2242-caption-composites-v01/25_fibres_rise/original_clock.json",
+      "original_clock_sha256": "e665703a0fc130d1decb79b6c2a9a8eb57dd12f607e21f1c3155f6cbc479ad84",
+      "clear_tail_frames": 0,
+      "clear_tail_pixel_hashes_match": true,
+      "above_caption_band_pixel_hashes_match": true,
+      "caption_midpoints_present": true,
+      "source_mapping_evidence": "Low-resolution candidate matching; final in-context review outstanding",
+      "final_mux_duration_verification": "OUTSTANDING",
+      "final_film_approval": false
+    },
+    {
+      "row": "04_fill_the_jar",
+      "path": "/Volumes/MiniWork/scratch/J2242-caption-composites-v01/04_fill_the_jar/caption_composite.nut",
+      "sha256": "831b600ac611936d6295f2291e52fc7f8e0bf5361d6503519a9f73dde60b42ed",
+      "timeline_frames": [
+        7946,
+        8103
+      ],
+      "source_frames": [
+        0,
+        157
+      ],
+      "source_sha256": "3069e3bf0dc2ee960606518198d041106cf866b60cbffd58067e5835065bbf43",
+      "frame_count": 158,
+      "caption_count": 1,
+      "original_pts_match": true,
+      "original_durations_preserved_in_intermediate": true,
+      "original_clock_path": "/Volumes/MiniWork/scratch/J2242-caption-composites-v01/04_fill_the_jar/original_clock.json",
+      "original_clock_sha256": "1f0cc8d61746268aea097f10436cef4c53d992c4525eeab875876ce57e40d082",
+      "clear_tail_frames": 62,
+      "clear_tail_pixel_hashes_match": true,
+      "above_caption_band_pixel_hashes_match": true,
+      "caption_midpoints_present": true,
+      "source_mapping_evidence": "Low-resolution candidate matching; final in-context review outstanding",
+      "final_mux_duration_verification": "OUTSTANDING",
+      "final_film_approval": false
+    },
+    {
+      "row": "13_gazette_page",
+      "path": "/Volumes/MiniWork/scratch/J2242-caption-composites-v01/13_gazette_page/caption_composite.nut",
+      "sha256": "5d0b8d138cfd08a80d3f7786136f071fabcb0bd50675224b8c9183aebbc73191",
+      "timeline_frames": [
+        9161,
+        9302
+      ],
+      "source_frames": [
+        1,
+        142
+      ],
+      "source_sha256": "d236114e3003ff55776ce716000e5b69a37106cbbae861719073d86f54a8e8f9",
+      "frame_count": 142,
+      "caption_count": 2,
+      "original_pts_match": true,
+      "original_durations_preserved_in_intermediate": false,
+      "original_clock_path": "/Volumes/MiniWork/scratch/J2242-caption-composites-v01/13_gazette_page/original_clock.json",
+      "original_clock_sha256": "a520f587b6cbdfd38df62ef9e3831c87af9dd418dae127f3c5878fc19b7cf109",
+      "clear_tail_frames": 0,
+      "clear_tail_pixel_hashes_match": true,
+      "above_caption_band_pixel_hashes_match": true,
+      "caption_midpoints_present": true,
+      "source_mapping_evidence": "Low-resolution candidate matching; final in-context review outstanding",
+      "final_mux_duration_verification": "OUTSTANDING",
+      "final_film_approval": false
+    },
+    {
+      "row": "15_copley_medal",
+      "path": "/Volumes/MiniWork/scratch/J2242-caption-composites-v01/15_copley_medal/caption_composite.nut",
+      "sha256": "6d3a1e1155ec8d787b4d6c6133c2cb701c7bdee53896c58dd44337889bf0d158",
+      "timeline_frames": [
+        9430,
+        9486
+      ],
+      "source_frames": [
+        0,
+        56
+      ],
+      "source_sha256": "821bb355c2b13a47bcb710f8f1680c516e4cccb7446b61d410ef77d3087bf3e4",
+      "frame_count": 57,
+      "caption_count": 1,
+      "original_pts_match": true,
+      "original_durations_preserved_in_intermediate": true,
+      "original_clock_path": "/Volumes/MiniWork/scratch/J2242-caption-composites-v01/15_copley_medal/original_clock.json",
+      "original_clock_sha256": "60f4a14d94c6948c3ddf2d1359cb29d6a694245b646f84bceb839044b129ea0c",
+      "clear_tail_frames": 0,
+      "clear_tail_pixel_hashes_match": true,
+      "above_caption_band_pixel_hashes_match": true,
+      "caption_midpoints_present": true,
+      "source_mapping_evidence": "Low-resolution candidate matching; final in-context review outstanding",
+      "final_mux_duration_verification": "OUTSTANDING",
+      "final_film_approval": false
+    },
+    {
+      "row": "01_house_rod",
+      "path": "/Volumes/MiniWork/scratch/J2242-caption-composites-v01/01_house_rod/caption_composite.nut",
+      "sha256": "d6e794bc769359eb92976f1bb06b2dddea2fcb157a1cf793d1c2f804829ad5b5",
+      "timeline_frames": [
+        9810,
+        9953
+      ],
+      "source_frames": [
+        0,
+        143
+      ],
+      "source_sha256": "3822f6f706eb9263e2ec0fd6f3f8cb4b46bdb848778622505d25af1ad52001a3",
+      "frame_count": 144,
+      "caption_count": 1,
+      "original_pts_match": true,
+      "original_durations_preserved_in_intermediate": false,
+      "original_clock_path": "/Volumes/MiniWork/scratch/J2242-caption-composites-v01/01_house_rod/original_clock.json",
+      "original_clock_sha256": "2ac23f11f12b4b114fe3b67cb152507015880e4315929aa3914d93a9f97cd0d5",
+      "clear_tail_frames": 48,
+      "clear_tail_pixel_hashes_match": true,
+      "above_caption_band_pixel_hashes_match": true,
+      "caption_midpoints_present": true,
+      "source_mapping_evidence": "Low-resolution candidate matching; final in-context review outstanding",
+      "final_mux_duration_verification": "OUTSTANDING",
+      "final_film_approval": false
+    },
+    {
+      "row": "03_bells_ring",
+      "path": "/Volumes/MiniWork/scratch/J2242-caption-composites-v01/03_bells_ring/caption_composite.nut",
+      "sha256": "c75591b455f19904c5f1d04d95e4a44a5237b888a142434b3cfdb0cd1a150888",
+      "timeline_frames": [
+        10076,
+        10191
+      ],
+      "source_frames": [
+        0,
+        115
+      ],
+      "source_sha256": "8b24fff7eddbf4bb8de085a2153dff16355c6f3f0a922c83d4dc63ad507dff07",
+      "frame_count": 116,
+      "caption_count": 1,
+      "original_pts_match": true,
+      "original_durations_preserved_in_intermediate": true,
+      "original_clock_path": "/Volumes/MiniWork/scratch/J2242-caption-composites-v01/03_bells_ring/original_clock.json",
+      "original_clock_sha256": "f191e7656b3d5ea955af6baa499575b7a9a1c180d23fa23b743056beda65b4b2",
+      "clear_tail_frames": 20,
+      "clear_tail_pixel_hashes_match": true,
+      "above_caption_band_pixel_hashes_match": true,
+      "caption_midpoints_present": true,
+      "source_mapping_evidence": "Low-resolution candidate matching; final in-context review outstanding",
+      "final_mux_duration_verification": "OUTSTANDING",
+      "final_film_approval": false
+    },
+    {
+      "row": "05_almanac_page",
+      "path": "/Volumes/MiniWork/scratch/J2242-caption-composites-v01/05_almanac_page/caption_composite.nut",
+      "sha256": "58995f0c17138a63f31b02174b969a6d36e7c452e9f40a36bafd5ca0f2d3f227",
+      "timeline_frames": [
+        10273,
+        10415
+      ],
+      "source_frames": [
+        0,
+        142
+      ],
+      "source_sha256": "ca4ad667c133eea52a85b0d8aed2e01d653874ff869aa8a624316ee27ad7895b",
+      "frame_count": 143,
+      "caption_count": 1,
+      "original_pts_match": true,
+      "original_durations_preserved_in_intermediate": true,
+      "original_clock_path": "/Volumes/MiniWork/scratch/J2242-caption-composites-v01/05_almanac_page/original_clock.json",
+      "original_clock_sha256": "40600d54541ced60d1f5c110f5fa6daf284756bc68bc1cab94b868423f68af9c",
+      "clear_tail_frames": 47,
+      "clear_tail_pixel_hashes_match": true,
+      "above_caption_band_pixel_hashes_match": true,
+      "caption_midpoints_present": true,
+      "source_mapping_evidence": "Low-resolution candidate matching; final in-context review outstanding",
+      "final_mux_duration_verification": "OUTSTANDING",
+      "final_film_approval": false
+    },
+    {
+      "row": "19_skyline_strike",
+      "path": "/Volumes/MiniWork/scratch/J2242-caption-composites-v01/19_skyline_strike/caption_composite.nut",
+      "sha256": "df82afe3b2e4740ae138f1cf3a61f415332db2b57f0b823819e633176b8ab613",
+      "timeline_frames": [
+        12297,
+        12461
+      ],
+      "source_frames": [
+        0,
+        164
+      ],
+      "source_sha256": "06caaeb6b7394ad590547b2f3f09db2dbe3a4a0354977591d36fb72769065026",
+      "frame_count": 165,
+      "caption_count": 1,
+      "original_pts_match": true,
+      "original_durations_preserved_in_intermediate": true,
+      "original_clock_path": "/Volumes/MiniWork/scratch/J2242-caption-composites-v01/19_skyline_strike/original_clock.json",
+      "original_clock_sha256": "7ce47bfe7f3943533b680ee8268a1ab0fc5a22445bd08e55e644b61713712822",
+      "clear_tail_frames": 69,
+      "clear_tail_pixel_hashes_match": true,
+      "above_caption_band_pixel_hashes_match": true,
+      "caption_midpoints_present": true,
+      "source_mapping_evidence": "Low-resolution candidate matching; final in-context review outstanding",
+      "final_mux_duration_verification": "OUTSTANDING",
+      "final_film_approval": false
+    }
+  ],
+  "skipped_rows": [
+    "01_kite_open",
+    "02_tower_tilt",
+    "03_table_three",
+    "01_salon_tube",
+    "04_franklin_watches",
+    "02_sentry_box",
+    "02_knuckle_spark",
+    "10_richmann_rod",
+    "14_royal_society",
+    "07_giant_spark"
+  ],
+  "master_created": false,
+  "final_film_approval": false
+}

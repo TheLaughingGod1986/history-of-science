@@ -1,0 +1,687 @@
+{
+  "job": "J2242",
+  "status": "MUX_MAP_ONLY",
+  "frames": 12923,
+  "runs": 73,
+  "order": [
+    {
+      "role": "high_encode",
+      "first": 0,
+      "last": 141,
+      "frames": 142,
+      "clip": [
+        0,
+        141
+      ]
+    },
+    {
+      "role": "packet_copy",
+      "first": 142,
+      "last": 271,
+      "frames": 130,
+      "clip": "master_packets"
+    },
+    {
+      "role": "high_encode",
+      "first": 272,
+      "last": 422,
+      "frames": 151,
+      "clip": [
+        272,
+        422
+      ]
+    },
+    {
+      "role": "high_encode",
+      "first": 423,
+      "last": 544,
+      "frames": 122,
+      "clip": [
+        423,
+        544
+      ]
+    },
+    {
+      "role": "packet_copy",
+      "first": 545,
+      "last": 743,
+      "frames": 199,
+      "clip": "master_packets"
+    },
+    {
+      "role": "high_encode",
+      "first": 744,
+      "last": 839,
+      "frames": 96,
+      "clip": [
+        744,
+        839
+      ]
+    },
+    {
+      "role": "packet_copy",
+      "first": 840,
+      "last": 1614,
+      "frames": 775,
+      "clip": "master_packets"
+    },
+    {
+      "role": "high_encode",
+      "first": 1615,
+      "last": 1692,
+      "frames": 78,
+      "clip": [
+        1615,
+        1692
+      ]
+    },
+    {
+      "role": "high_encode",
+      "first": 1693,
+      "last": 1801,
+      "frames": 109,
+      "clip": [
+        1693,
+        1801
+      ]
+    },
+    {
+      "role": "packet_copy",
+      "first": 1802,
+      "last": 2406,
+      "frames": 605,
+      "clip": "master_packets"
+    },
+    {
+      "role": "high_encode",
+      "first": 2407,
+      "last": 2505,
+      "frames": 99,
+      "clip": [
+        2407,
+        2505
+      ]
+    },
+    {
+      "role": "high_encode",
+      "first": 2506,
+      "last": 2665,
+      "frames": 160,
+      "clip": [
+        2506,
+        2665
+      ]
+    },
+    {
+      "role": "packet_copy",
+      "first": 2666,
+      "last": 2717,
+      "frames": 52,
+      "clip": "master_packets"
+    },
+    {
+      "role": "high_encode",
+      "first": 2718,
+      "last": 2868,
+      "frames": 151,
+      "clip": [
+        2718,
+        2868
+      ]
+    },
+    {
+      "role": "exact_pcm",
+      "first": 2869,
+      "last": 2869,
+      "frames": 1,
+      "clip": [
+        2869,
+        2869
+      ]
+    },
+    {
+      "role": "high_encode",
+      "first": 2870,
+      "last": 2887,
+      "frames": 18,
+      "clip": [
+        2870,
+        2887
+      ]
+    },
+    {
+      "role": "packet_copy",
+      "first": 2888,
+      "last": 3048,
+      "frames": 161,
+      "clip": "master_packets"
+    },
+    {
+      "role": "high_encode",
+      "first": 3049,
+      "last": 3167,
+      "frames": 119,
+      "clip": [
+        3049,
+        3167
+      ]
+    },
+    {
+      "role": "packet_copy",
+      "first": 3168,
+      "last": 3258,
+      "frames": 91,
+      "clip": "jar_keep"
+    },
+    {
+      "role": "exact_pcm",
+      "first": 3259,
+      "last": 3259,
+      "frames": 1,
+      "clip": [
+        3259,
+        3259
+      ]
+    },
+    {
+      "role": "high_encode",
+      "first": 3260,
+      "last": 3343,
+      "frames": 84,
+      "clip": [
+        3260,
+        3343
+      ]
+    },
+    {
+      "role": "packet_copy",
+      "first": 3344,
+      "last": 3677,
+      "frames": 334,
+      "clip": "master_packets"
+    },
+    {
+      "role": "high_encode",
+      "first": 3678,
+      "last": 3812,
+      "frames": 135,
+      "clip": [
+        3678,
+        3812
+      ]
+    },
+    {
+      "role": "packet_copy",
+      "first": 3813,
+      "last": 4015,
+      "frames": 203,
+      "clip": "master_packets"
+    },
+    {
+      "role": "high_encode",
+      "first": 4016,
+      "last": 4129,
+      "frames": 114,
+      "clip": [
+        4016,
+        4129
+      ]
+    },
+    {
+      "role": "exact_pcm",
+      "first": 4130,
+      "last": 4138,
+      "frames": 9,
+      "clip": [
+        4130,
+        4138
+      ]
+    },
+    {
+      "role": "packet_copy",
+      "first": 4139,
+      "last": 4211,
+      "frames": 73,
+      "clip": "master_packets"
+    },
+    {
+      "role": "high_encode",
+      "first": 4212,
+      "last": 4317,
+      "frames": 106,
+      "clip": [
+        4212,
+        4317
+      ]
+    },
+    {
+      "role": "packet_copy",
+      "first": 4318,
+      "last": 4510,
+      "frames": 193,
+      "clip": "master_packets"
+    },
+    {
+      "role": "high_encode",
+      "first": 4511,
+      "last": 4670,
+      "frames": 160,
+      "clip": [
+        4511,
+        4670
+      ]
+    },
+    {
+      "role": "high_encode",
+      "first": 4671,
+      "last": 4820,
+      "frames": 150,
+      "clip": [
+        4671,
+        4820
+      ]
+    },
+    {
+      "role": "packet_copy",
+      "first": 4821,
+      "last": 4976,
+      "frames": 156,
+      "clip": "master_packets"
+    },
+    {
+      "role": "high_encode",
+      "first": 4977,
+      "last": 5077,
+      "frames": 101,
+      "clip": [
+        4977,
+        5077
+      ]
+    },
+    {
+      "role": "high_encode",
+      "first": 5078,
+      "last": 5200,
+      "frames": 123,
+      "clip": [
+        5078,
+        5200
+      ]
+    },
+    {
+      "role": "packet_copy",
+      "first": 5201,
+      "last": 5847,
+      "frames": 647,
+      "clip": "master_packets"
+    },
+    {
+      "role": "high_encode",
+      "first": 5848,
+      "last": 6021,
+      "frames": 174,
+      "clip": [
+        5848,
+        6021
+      ]
+    },
+    {
+      "role": "packet_copy",
+      "first": 6022,
+      "last": 6482,
+      "frames": 461,
+      "clip": "master_packets"
+    },
+    {
+      "role": "high_encode",
+      "first": 6483,
+      "last": 6627,
+      "frames": 145,
+      "clip": [
+        6483,
+        6627
+      ]
+    },
+    {
+      "role": "packet_copy",
+      "first": 6628,
+      "last": 6772,
+      "frames": 145,
+      "clip": "master_packets"
+    },
+    {
+      "role": "high_encode",
+      "first": 6773,
+      "last": 6904,
+      "frames": 132,
+      "clip": [
+        6773,
+        6904
+      ]
+    },
+    {
+      "role": "packet_copy",
+      "first": 6905,
+      "last": 7551,
+      "frames": 647,
+      "clip": "master_packets"
+    },
+    {
+      "role": "high_encode",
+      "first": 7552,
+      "last": 7640,
+      "frames": 89,
+      "clip": [
+        7552,
+        7640
+      ]
+    },
+    {
+      "role": "packet_copy",
+      "first": 7641,
+      "last": 7747,
+      "frames": 107,
+      "clip": "master_packets"
+    },
+    {
+      "role": "high_encode",
+      "first": 7748,
+      "last": 7836,
+      "frames": 89,
+      "clip": [
+        7748,
+        7836
+      ]
+    },
+    {
+      "role": "packet_copy",
+      "first": 7837,
+      "last": 7945,
+      "frames": 109,
+      "clip": "master_packets"
+    },
+    {
+      "role": "high_encode",
+      "first": 7946,
+      "last": 8103,
+      "frames": 158,
+      "clip": [
+        7946,
+        8103
+      ]
+    },
+    {
+      "role": "packet_copy",
+      "first": 8104,
+      "last": 8188,
+      "frames": 85,
+      "clip": "master_packets"
+    },
+    {
+      "role": "high_encode",
+      "first": 8189,
+      "last": 8268,
+      "frames": 80,
+      "clip": [
+        8189,
+        8268
+      ]
+    },
+    {
+      "role": "high_encode",
+      "first": 8269,
+      "last": 8348,
+      "frames": 80,
+      "clip": [
+        8269,
+        8348
+      ]
+    },
+    {
+      "role": "packet_copy",
+      "first": 8349,
+      "last": 8848,
+      "frames": 500,
+      "clip": "master_packets"
+    },
+    {
+      "role": "high_encode",
+      "first": 8849,
+      "last": 9003,
+      "frames": 155,
+      "clip": [
+        8849,
+        9003
+      ]
+    },
+    {
+      "role": "packet_copy",
+      "first": 9004,
+      "last": 9160,
+      "frames": 157,
+      "clip": "master_packets"
+    },
+    {
+      "role": "high_encode",
+      "first": 9161,
+      "last": 9302,
+      "frames": 142,
+      "clip": [
+        9161,
+        9302
+      ]
+    },
+    {
+      "role": "high_encode",
+      "first": 9303,
+      "last": 9429,
+      "frames": 127,
+      "clip": [
+        9303,
+        9429
+      ]
+    },
+    {
+      "role": "high_encode",
+      "first": 9430,
+      "last": 9486,
+      "frames": 57,
+      "clip": [
+        9430,
+        9486
+      ]
+    },
+    {
+      "role": "packet_copy",
+      "first": 9487,
+      "last": 9809,
+      "frames": 323,
+      "clip": "master_packets"
+    },
+    {
+      "role": "high_encode",
+      "first": 9810,
+      "last": 9953,
+      "frames": 144,
+      "clip": [
+        9810,
+        9953
+      ]
+    },
+    {
+      "role": "packet_copy",
+      "first": 9954,
+      "last": 10075,
+      "frames": 122,
+      "clip": "master_packets"
+    },
+    {
+      "role": "high_encode",
+      "first": 10076,
+      "last": 10191,
+      "frames": 116,
+      "clip": [
+        10076,
+        10191
+      ]
+    },
+    {
+      "role": "packet_copy",
+      "first": 10192,
+      "last": 10272,
+      "frames": 81,
+      "clip": "master_packets"
+    },
+    {
+      "role": "high_encode",
+      "first": 10273,
+      "last": 10415,
+      "frames": 143,
+      "clip": [
+        10273,
+        10415
+      ]
+    },
+    {
+      "role": "packet_copy",
+      "first": 10416,
+      "last": 10625,
+      "frames": 210,
+      "clip": "master_packets"
+    },
+    {
+      "role": "high_encode",
+      "first": 10626,
+      "last": 10776,
+      "frames": 151,
+      "clip": [
+        10626,
+        10776
+      ]
+    },
+    {
+      "role": "high_encode",
+      "first": 10777,
+      "last": 10852,
+      "frames": 76,
+      "clip": [
+        10777,
+        10852
+      ]
+    },
+    {
+      "role": "packet_copy",
+      "first": 10853,
+      "last": 10995,
+      "frames": 143,
+      "clip": "master_packets"
+    },
+    {
+      "role": "high_encode",
+      "first": 10996,
+      "last": 11037,
+      "frames": 42,
+      "clip": [
+        10996,
+        11037
+      ]
+    },
+    {
+      "role": "high_encode",
+      "first": 11038,
+      "last": 11117,
+      "frames": 80,
+      "clip": [
+        11038,
+        11117
+      ]
+    },
+    {
+      "role": "exact_pcm",
+      "first": 11118,
+      "last": 11245,
+      "frames": 128,
+      "clip": [
+        11118,
+        11245
+      ]
+    },
+    {
+      "role": "packet_copy",
+      "first": 11246,
+      "last": 11357,
+      "frames": 112,
+      "clip": "master_packets"
+    },
+    {
+      "role": "high_encode",
+      "first": 11358,
+      "last": 11492,
+      "frames": 135,
+      "clip": [
+        11358,
+        11492
+      ]
+    },
+    {
+      "role": "packet_copy",
+      "first": 11493,
+      "last": 12296,
+      "frames": 804,
+      "clip": "master_packets"
+    },
+    {
+      "role": "high_encode",
+      "first": 12297,
+      "last": 12461,
+      "frames": 165,
+      "clip": [
+        12297,
+        12461
+      ]
+    },
+    {
+      "role": "packet_copy",
+      "first": 12462,
+      "last": 12922,
+      "frames": 461,
+      "clip": "master_packets"
+    }
+  ],
+  "packet_copy_frames": 8086,
+  "high_encode_frames": 4698,
+  "exact_pcm_frames": 139,
+  "jar_keep": [
+    3168,
+    3258
+  ],
+  "frame_2869": "exact_pcm",
+  "frame_3259": "exact_pcm",
+  "frame_3353": "packet_copy",
+  "night_street": "packet_copy",
+  "salon_frames": [
+    2506,
+    2665
+  ],
+  "clock": {
+    "time_base": "1/12288",
+    "frames": 12923,
+    "start_pts": 1536,
+    "end_pts": 6630912,
+    "duration_ticks": {
+      "512": 12899,
+      "1024": 23,
+      "1536": 1
+    },
+    "ticks_1024": 23,
+    "gaps": 40,
+    "policy": "copy original PTS and duration, including a gap; never setpts=N/24"
+  },
+  "media_files_checked": 45,
+  "timestamp_policy": "copy original PTS and duration, including a gap; never setpts=N/24",
+  "audio": "OUTSTANDING",
+  "output_film_created": false,
+  "finished_master": false,
+  "approval": false,
+  "spend_gbp": 0
+}

@@ -1,0 +1,25 @@
+{
+  "job": "J2242",
+  "status": "RODS_INTERMEDIATE_ONLY",
+  "path": "/Volumes/MiniWork/scratch/J2242-rods-patch-v01/rods_patch.nut",
+  "sha256": "182242922db0c9391e3a7452b3651196d09f98667a7a50fa8f322cf107f624e7",
+  "source_sha256": "f82abba9a06f3a9ef70aa46d7638f1cad9fe3374cbba530e7ffef773813e1a3a",
+  "source_frames": [
+    0,
+    134
+  ],
+  "timeline_frames": [
+    11358,
+    11492
+  ],
+  "frame_count": 135,
+  "original_pts_and_duration_match": true,
+  "source_frame_pixel_hashes_match": true,
+  "intermediate_time_base": "1/49152",
+  "rescale_to_master_ticks": "1/4",
+  "lossless_intermediate": true,
+  "master_created": false,
+  "audio": "Absent; original master untouched",
+  "visual_review": "OUTSTANDING",
+  "final_film_approval": false
+}

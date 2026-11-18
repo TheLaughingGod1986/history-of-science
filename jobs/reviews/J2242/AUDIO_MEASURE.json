@@ -1,0 +1,66 @@
+{
+  "job": "J2242",
+  "heard": false,
+  "named_v04": false,
+  "candidate": "/Volumes/MiniWork/scratch/J2242-assemble-v02/franklin_assembly.mp4",
+  "candidate_sha256": "735ac816e00b84b1e9e17d8e59a18223171953cf3441c67e1375a3ce8f6460c0",
+  "source_master_sha256": "cf1561c218bace7bc14ed3d625b0790a457027a90f392262f45ca7172723099b",
+  "preservation": {
+    "exit": 0,
+    "status": "PRESERVATION_CHECKS_ONLY",
+    "frames": 12923,
+    "unchanged_decoded_frames_verified": 8225,
+    "copied_video_packets_verified": 7995,
+    "audio_packets_verified": 25296,
+    "identity_selfcheck": false,
+    "result": "/Volumes/MiniWork/scratch/J2242-assemble-v02-verify/RESULT.json"
+  },
+  "decode": {
+    "tool": "ffmpeg",
+    "format": "pcm_f32le",
+    "channels": 1,
+    "sample_rate": 48000,
+    "samples": 25902071,
+    "pcm_identical": true,
+    "pcm_sha256": "2d1365f2ae2b7e223e9e65a6d96bc261c31d799b3ed69e23f882b79cc58475ef"
+  },
+  "container": {
+    "video_start_s": 0.125,
+    "video_duration_s": 539.5,
+    "video_frames": 12923,
+    "audio_codec": "aac",
+    "audio_start_s": 0.0,
+    "audio_duration_s": 539.626479,
+    "audio_frames": 25296,
+    "audio_rate": 48000,
+    "audio_channels": 2,
+    "same_on_source_and_candidate": true
+  },
+  "ebur128": {
+    "filter": "ebur128=peak=true",
+    "map": "0:a:0",
+    "source": {"I": -14.1, "TP": -1.2, "LRA": 4.1},
+    "candidate": {"I": -14.1, "TP": -1.2, "LRA": 4.1},
+    "matches_measure_v03": true,
+    "contract_figure": {"I": -14.129, "TP": -1.2},
+    "note": "The ffmpeg summary prints integrated loudness to one decimal, the same printer as MEASURE_v03.json. Both files read I -14.1 LUFS, true peak -1.2 dBFS and LRA 4.1 LU. The contract's -14.129 is the finer historical figure; this run did not re-derive that third decimal."
+  },
+  "lag": {
+    "method": "master_v03 lag_ms: 2 s window, plus or minus 40 ms, mono 48 kHz float. Reference is the v03 master decode. Mix is the candidate decode. Correlation of samples, not a packet count.",
+    "rows": [
+      {"name": "historical", "t": 5.0, "lag_ms": 0.0},
+      {"name": "historical", "t": 100.0, "lag_ms": 0.0},
+      {"name": "historical", "t": 300.0, "lag_ms": 0.0},
+      {"name": "historical", "t": 500.0, "lag_ms": 0.0},
+      {"name": "patch-423", "t": 17.75, "lag_ms": 0.0},
+      {"name": "patch-744", "t": 31.167, "lag_ms": 0.0},
+      {"name": "night-1129", "t": 47.208, "lag_ms": 0.0},
+      {"name": "salon-2506", "t": 104.667, "lag_ms": 0.0},
+      {"name": "jar-3168", "t": 132.292, "lag_ms": 0.0},
+      {"name": "foil-3353", "t": 140.0, "lag_ms": 0.0},
+      {"name": "points-4511", "t": 188.417, "lag_ms": 0.0},
+      {"name": "letter-4977", "t": 207.833, "lag_ms": 0.0},
+      {"name": "rods-11358", "t": 474.375, "lag_ms": 0.0}
+    ]
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "job": "J2242",
+  "status": "MIXED_SPLIT_PLAN",
+  "source_has_b_frames": 2,
+  "rows": [
+    {
+      "role": "changed",
+      "first": 2718,
+      "last": 2868,
+      "frames": 151,
+      "group": 2718,
+      "slice_first": 0,
+      "nut": "/Volumes/MiniWork/scratch/J2242-stitch-v04/group_2718-2887.nut",
+      "nut_sha256": "075e16561325345e522b98e020a7dd1910b3e34e6439b23f57adfcd20c0fabe4",
+      "disposition": "high_qp1"
+    },
+    {
+      "role": "changed",
+      "first": 2870,
+      "last": 2887,
+      "frames": 18,
+      "group": 2718,
+      "slice_first": 152,
+      "nut": "/Volumes/MiniWork/scratch/J2242-stitch-v04/group_2718-2887.nut",
+      "nut_sha256": "075e16561325345e522b98e020a7dd1910b3e34e6439b23f57adfcd20c0fabe4",
+      "disposition": "high_qp1"
+    },
+    {
+      "role": "master",
+      "first": 2869,
+      "last": 2869,
+      "frames": 1,
+      "group": 2718,
+      "disposition": "blocked_by_b_frames"
+    },
+    {
+      "role": "changed",
+      "first": 3260,
+      "last": 3343,
+      "frames": 84,
+      "group": 3168,
+      "slice_first": 92,
+      "nut": "/Volumes/MiniWork/scratch/J2242-stitch-v04/group_3168-3343.nut",
+      "nut_sha256": "2ce4d932995c30f73baea94bdaaa070f06566cb3b82a6ec3615d69d6df27a404",
+      "disposition": "high_qp1"
+    },
+    {
+      "role": "master",
+      "first": 3168,
+      "last": 3259,
+      "frames": 92,
+      "group": 3168,
+      "disposition": "blocked_by_b_frames"
+    },
+    {
+      "role": "changed",
+      "first": 4016,
+      "last": 4129,
+      "frames": 114,
+      "group": 4016,
+      "slice_first": 0,
+      "nut": "/Volumes/MiniWork/scratch/J2242-stitch-v04/group_4016-4138.nut",
+      "nut_sha256": "c9f8733fcd5c317014aa0c25c22159407e40c7ce67aa5d21e416af281aac5000",
+      "disposition": "high_qp1"
+    },
+    {
+      "role": "master",
+      "first": 4130,
+      "last": 4138,
+      "frames": 9,
+      "group": 4016,
+      "disposition": "blocked_by_b_frames"
+    },
+    {
+      "role": "changed",
+      "first": 11038,
+      "last": 11117,
+      "frames": 80,
+      "group": 11038,
+      "slice_first": 0,
+      "nut": "/Volumes/MiniWork/scratch/J2242-stitch-v04/group_11038-11245.nut",
+      "nut_sha256": "9d3daceffd24872e868cde040a08b19bf1c46f212ce2f470444d5aea8877278e",
+      "disposition": "high_qp1"
+    },
+    {
+      "role": "master",
+      "first": 11118,
+      "last": 11245,
+      "frames": 128,
+      "group": 11038,
+      "disposition": "blocked_by_b_frames"
+    }
+  ],
+  "encoded_master_frames": false,
+  "audio": false,
+  "output_film_created": false,
+  "finished_master": false,
+  "approval": false,
+  "spend_gbp": 0
+}

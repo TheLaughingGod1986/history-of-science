@@ -1,0 +1,54 @@
+{
+  "job": "J2955",
+  "at": "2026-11-16T22:51:37.171Z",
+  "videoId": "Sq_lV89VMUs",
+  "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+  "title": "How Does a Blood Pressure Cuff Work?",
+  "privacy": "private",
+  "publishAt": "2026-11-20T11:30:00Z",
+  "uploadStatus": "processed",
+  "madeForKids": false,
+  "containsSyntheticMedia": null,
+  "language": "en-GB",
+  "audioLanguage": "en-GB",
+  "categoryId": "27",
+  "tags": [
+    "blood circulation",
+    "blood pressure",
+    "blood pressure cuff",
+    "history of medicine",
+    "how blood circulates",
+    "how does a blood pressure cuff work",
+    "william harvey"
+  ],
+  "duration": "PT24S",
+  "hasCustomThumbnail": true,
+  "description": "A blood pressure cuff squeezes your arm until the blood stops getting in, then lets go and listens for the moment it starts to flow again. It is William Harvey's tied band, the one he used to prove that your blood goes round.\n\nFull film:\nThe Tied Arm That Proved Your Blood Circulates\nhttps://www.youtube.com/watch?v=wwcjcFfC-5M\n\nPictures: AI-generated 3D scenes. Facts: every claim is checked against the sources for the full film.",
+  "captionUpload": {
+    "ok": true,
+    "status": 200,
+    "id": "AUieDaZIvE9LwFvx3J2KSZy9i9U6GszPro0mQXcPQ4Vx4DLgyH0Viik_XBefs0rj0lyWiK1OI99Z5aCECjs",
+    "language": "en-GB",
+    "trackStatus": "serving",
+    "error": null
+  },
+  "captions": [
+    {
+      "id": "AUieDaZtAFm2D3M_4cFGZw6kmkC4OvG4gl0VtCqK4JoyV7_NfK0",
+      "language": "en",
+      "trackKind": "asr",
+      "status": "serving",
+      "isDraft": false,
+      "name": ""
+    },
+    {
+      "id": "AUieDaZIvE9LwFvx3J2KSZy9i9U6GszPro0mQXcPQ4Vx4DLgyH0Viik_XBefs0rj0lyWiK1OI99Z5aCECjs",
+      "language": "en-GB",
+      "trackKind": "standard",
+      "status": "serving",
+      "isDraft": false,
+      "name": "English (United Kingdom)"
+    }
+  ],
+  "captionError": null
+}

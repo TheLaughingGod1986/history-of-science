@@ -1,0 +1,106 @@
+{
+  "job": "J2242",
+  "status": "TABLE_LEADIN_TOWER_CONTINUATION",
+  "comparison": "full-resolution upper 1920x720 after lanczos scale",
+  "acceptance": {
+    "maximum_per_pixel_mse": 9.0,
+    "minimum_runner_up_mse_margin": 0.1,
+    "tower_source_frames": [
+      170,
+      171,
+      172,
+      173
+    ],
+    "table_plate": "unused; best MSE stays above 1000"
+  },
+  "tower": [
+    {
+      "best": 170,
+      "second": 171,
+      "best_mse": 2.9446723461151123,
+      "margin": 17.654863357543945
+    },
+    {
+      "best": 171,
+      "second": 172,
+      "best_mse": 3.2420217990875244,
+      "margin": 16.904651641845703
+    },
+    {
+      "best": 172,
+      "second": 171,
+      "best_mse": 3.238267421722412,
+      "margin": 16.831693649291992
+    },
+    {
+      "best": 173,
+      "second": 172,
+      "best_mse": 3.5449745655059814,
+      "margin": 16.126279830932617
+    }
+  ],
+  "table": [
+    {
+      "best": 52,
+      "second": 54,
+      "best_mse": 3557.9052734375,
+      "margin": 2.01953125
+    },
+    {
+      "best": 52,
+      "second": 54,
+      "best_mse": 3558.9521484375,
+      "margin": 2.315673828125
+    },
+    {
+      "best": 52,
+      "second": 53,
+      "best_mse": 3558.30029296875,
+      "margin": 2.627197265625
+    },
+    {
+      "best": 52,
+      "second": 53,
+      "best_mse": 3553.755859375,
+      "margin": 2.513671875
+    }
+  ],
+  "render": {
+    "job": "J2242",
+    "status": "TABLE_LEADIN_INTERMEDIATE_ONLY",
+    "path": "/Volumes/MiniWork/scratch/J2242-table-leadin-v01/table_leadin.nut",
+    "sha256": "bf087a9865c270d3fa6e29b304b9c31276878f107cbf6f5bd3305bf6184859d3",
+    "timeline_frames": [
+      423,
+      426
+    ],
+    "source_frame_indices": [
+      170,
+      171,
+      172,
+      173
+    ],
+    "source_sha256": "b2dc0bb4f2ac2dd632efba2b087b1c68c8351ee4c93fd367224a4ad3ae75fdac",
+    "frame_count": 4,
+    "label": "A KITE",
+    "visible_caption_local_frames": [
+      1,
+      2,
+      3
+    ],
+    "original_pts_match": true,
+    "original_durations_preserved_in_intermediate": true,
+    "original_clock_path": "/Volumes/MiniWork/scratch/J2242-table-leadin-v01/original_clock.json",
+    "original_clock_sha256": "8096f316866b2c754125fcdaac17f387963caeab3d13b59c71059c6fc2f396f0",
+    "above_caption_band_pixel_hashes_match": true,
+    "table_source_used": false,
+    "frame_2869": "out",
+    "master_created": false,
+    "final_film_approval": false
+  },
+  "frame_2869": "out",
+  "safe_path": "outstanding",
+  "foil_frame_3353": "outstanding",
+  "master_created": false,
+  "final_film_approval": false
+}

@@ -1,0 +1,30 @@
+{
+  "job": "J2242",
+  "status": "OPENING_COMPOSITE_INTERMEDIATE_ONLY",
+  "path": "/Volumes/MiniWork/scratch/J2242-opening-composite-v02/opening_caption.nut",
+  "sha256": "6eaca7aedc31155a18855c1916758a177e2f6ad79fcf4c77a6ceeac942b3e2b3",
+  "source_sha256": "0c07f6cfcf75985f3d6f9824666387ecf6a70000f553485f1ede4ef371c5d839",
+  "layer_sha256": "295d4a65903e3ef7bb39c1bd177eafe47f798cd6940e893996fe168923262dec",
+  "timeline_frames": [
+    0,
+    141
+  ],
+  "source_frames": [
+    0,
+    141
+  ],
+  "frame_count": 142,
+  "original_pts_and_duration_match": true,
+  "clear_tail_frames": [
+    96,
+    141
+  ],
+  "clear_tail_pixel_hashes_match": true,
+  "picture_above_caption_band_hashes_match": true,
+  "caption_peak_present": true,
+  "original_clock_path": "/Volumes/MiniWork/scratch/J2242-opening-composite-v02/original_clock.json",
+  "original_clock_sha256": "590d1747096ab680e4a674a362eabd98db38931ee8eddfab7da45e4388edf27a",
+  "master_created": false,
+  "final_film_approval": false,
+  "visual_review": "OUTSTANDING"
+}

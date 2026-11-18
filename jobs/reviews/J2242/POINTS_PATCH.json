@@ -1,0 +1,29 @@
+{
+  "job": "J2242",
+  "status": "POINTS_INTERMEDIATE_ONLY",
+  "path": "/Volumes/MiniWork/scratch/J2242-points-patch-v01/points_patch.nut",
+  "sha256": "36adee8114b4661b5e5997cc8d553c58c726cb37d5a93858fac5b13248a342ba",
+  "source_sha256": "950a2b34dee038becf1738ab797358e9dd7a0040d8a1c50e840b3886d59a93e3",
+  "source_frames": [
+    0,
+    159
+  ],
+  "timeline_frames": [
+    4511,
+    4670
+  ],
+  "frame_count": 160,
+  "original_pts_match": true,
+  "original_durations_preserved_in_intermediate": false,
+  "original_clock_path": "/Volumes/MiniWork/scratch/J2242-points-patch-v01/original_clock.json",
+  "original_clock_sha256": "72e390ca7022f5d9ce76111952aba954ce633321834355b50ddd104d3ec28d84",
+  "final_mux_duration_verification": "OUTSTANDING",
+  "source_frame_pixel_hashes_match": true,
+  "intermediate_time_base": "1/49152",
+  "rescale_to_master_ticks": "1/4",
+  "lossless_intermediate": true,
+  "master_created": false,
+  "audio": "Absent; original master untouched",
+  "visual_review": "OUTSTANDING",
+  "final_film_approval": false
+}

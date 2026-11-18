@@ -1,0 +1,97 @@
+{
+  "status": "checksum_copy_verified_not_media_qa",
+  "source": "/Users/benjaminoats/_desk/J2563/checkpoint_v01",
+  "destination": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_checkpoint_v01",
+  "files": [
+    {
+      "file": "ASSEMBLY_SOURCES_v01.json",
+      "bytes": 114136,
+      "sha256": "48993cb7af2d30cd4b52eb926cbaa083da77c441f72cee7633246a98a61e248f"
+    },
+    {
+      "file": "OVERLAY_CANDIDATES_v01.json",
+      "bytes": 33489,
+      "sha256": "6a0ce947b1cd2605057ff49139af3d23e52b87f10f7e994bc3a1ca74f7c8653f"
+    },
+    {
+      "file": "archive_sources_v01/archive_P1_09b.jpg",
+      "bytes": 2803234,
+      "sha256": "96f8c9fd9f5546a4252a31fbb039244ca9ba7c8a0cc7b1499d1e79dfc14984fb"
+    },
+    {
+      "file": "archive_sources_v01/archive_P1_09b_metadata.json",
+      "bytes": 4484,
+      "sha256": "d594dac2954cfdb8a48a78be925fe11af3ff9e35d666741b3ffa22e59d46f358"
+    },
+    {
+      "file": "archive_sources_v01/archive_P2_04a_arch_davy_1800.pdf",
+      "bytes": 39957125,
+      "sha256": "faddf93e720d4fa3d8a5137183d39819de53905471e2e43fa60d3c86331e0d92"
+    },
+    {
+      "file": "archive_sources_v01/archive_P2_04a_arch_davy_1800_metadata.json",
+      "bytes": 4874,
+      "sha256": "ee58054eca829bff8cc2424879ea22be4574f31da74587e43519cb971c2d86d9"
+    },
+    {
+      "file": "archive_sources_v01/archive_P2_05a_arch_laughing_gas_broadside.jpg",
+      "bytes": 265657,
+      "sha256": "991b50bd4e3ff51a869297c5001e0268343b2e2cb61785ea29cf65e26e78b3aa"
+    },
+    {
+      "file": "archive_sources_v01/archive_P2_05a_arch_laughing_gas_broadside_metadata.json",
+      "bytes": 5996,
+      "sha256": "94981ce56c3f13a8569f1a75502686e5ce8dae3b1395aea28aacfb90fd3ab1ae"
+    },
+    {
+      "file": "archive_sources_v01/archive_P2_09b_arch_long_1849.pdf",
+      "bytes": 43826390,
+      "sha256": "9f9d40fd27bf294db368df5715c30c3026ce947336e44dc4dfd9db0a8fdc3a79"
+    },
+    {
+      "file": "archive_sources_v01/archive_P2_09b_arch_long_1849_metadata.json",
+      "bytes": 4521,
+      "sha256": "96e8cdeca8ddf09a2f91285bd8104c04b7cf0b8d52655d315f833485ba6efd46"
+    },
+    {
+      "file": "archive_sources_v01/archive_P3_05b_metadata.json",
+      "bytes": 4320,
+      "sha256": "33c3738529bfad821806c3ecd97926bf3e980dd627b3c45e878dd55720b77596"
+    },
+    {
+      "file": "archive_sources_v01/archive_P3_09a_arch_ether_dome_1847_metadata.json",
+      "bytes": 4581,
+      "sha256": "0f91797d0a162424f2c50b221cb5aff9c1e52f6ad95ed62b974adbbf38af8dcc"
+    },
+    {
+      "file": "archive_sources_v01/archive_P4_03a_arch_letheon_patent_metadata.json",
+      "bytes": 4831,
+      "sha256": "e2567842cbfd72c077a0b7280df1564e34243f14917d612e6ff6f60a3e7102c7"
+    },
+    {
+      "file": "archive_sources_v01/archive_P4_08b_arch_ether_monument_metadata.json",
+      "bytes": 3836,
+      "sha256": "81a3998b9ef1a1e02908ffe97bba069d21414f82879f3692bb4515b983e7cf56"
+    },
+    {
+      "file": "archive_sources_v01/archive_P5_03a_arch_squire_inhaler_1846_metadata.json",
+      "bytes": 5169,
+      "sha256": "f44ce0f8bb272a977d0ef785ea455061f82e672aea6bf1c6e52ea5d276358772"
+    },
+    {
+      "file": "archive_sources_v01/archive_P5_04a_metadata.json",
+      "bytes": 4892,
+      "sha256": "46be61afb093649dd3b1d1a7a35ffa043597f5f3162559280921a5e02ab04d2f"
+    },
+    {
+      "file": "archive_sources_v01/archive_P5_06a_arch_simpson_1847_metadata.json",
+      "bytes": 4826,
+      "sha256": "919a8758371dde6bca7bb9da050b60250eeca411759d11b44afd82ed0367b5ad"
+    },
+    {
+      "file": "archive_sources_v01/archive_P5_07a_arch_snow_chloroform_1858_metadata.json",
+      "bytes": 4627,
+      "sha256": "9b47c173ae6e7512beda8f91f3d103784ce33ce253687c61397ad65da4d2304d"
+    }
+  ]
+}

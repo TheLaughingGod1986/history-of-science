@@ -1,0 +1,13 @@
+{
+  "status": "DIAGNOSTIC_ONLY",
+  "candidate": "/Volumes/MiniWork/scratch/J2242-salon-mux-v02/salon_only_experiment.mp4",
+  "candidate_sha256": "0bfffbacbed21c9e9771723bfc0237b9827deb253e0b136e42d2746c60be092c",
+  "decoder_threads": 1,
+  "decoded_frames": 12923,
+  "unchanged_frames_matching_source": 12763,
+  "unchanged_frame_differences": 0,
+  "framehash_path": "/Volumes/MiniWork/scratch/J2242-salon-singlethread.framehash",
+  "framehash_sha256": "edef6351183c22217563a206749c5707f0cd279f56fd6587e9b801228da6225a",
+  "default_decode_candidate_still_rejected": true,
+  "final_film_approval": false
+}

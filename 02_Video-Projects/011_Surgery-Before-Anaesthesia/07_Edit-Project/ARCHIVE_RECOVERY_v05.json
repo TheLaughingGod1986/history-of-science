@@ -1,0 +1,127 @@
+{
+  "job": "J2563",
+  "scope": "archive source recovery only; no composite renders or film-stage approval",
+  "network": "Original approved Morton and Ether Dome files recovered; subsequent Ether Monument request returned HTTP 429. No further requests.",
+  "audio_review": false,
+  "motion_review": false,
+  "sources": [
+    {
+      "asset_id": "archive_P1_09b",
+      "row_id": "P1:09b",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Hand_coloured_illustration_of_surgical_instruments_Wellcome_L0041135.jpg",
+      "file_name": "archive_P1_09b.jpg",
+      "sha256": "96f8c9fd9f5546a4252a31fbb039244ca9ba7c8a0cc7b1499d1e79dfc14984fb",
+      "bytes": 2803234,
+      "licence": "CC BY 4.0",
+      "credit": "Paré instruments, Wellcome / CC BY 4.0",
+      "depicts": null,
+      "status": "identity and layout inspected in stills; composite unbuilt"
+    },
+    {
+      "asset_id": "archive_P2_04a_arch_davy_1800",
+      "row_id": "P2:04a_arch_davy_1800",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Researches,_chemical_and_philosophical_-_chiefly_concerning_nitrous_oxide,_or_diphlogisticated_nitrous_air,_and_its_respiration_(IA_researcheschemic00davy).pdf",
+      "file_name": "archive_P2_04a_arch_davy_1800.pdf",
+      "sha256": "faddf93e720d4fa3d8a5137183d39819de53905471e2e43fa60d3c86331e0d92",
+      "bytes": 39957125,
+      "licence": "Public domain",
+      "credit": "Davy, Researches (1800), p. 556",
+      "depicts": null,
+      "status": "identity and layout inspected in stills; composite unbuilt"
+    },
+    {
+      "asset_id": "archive_P2_05a_arch_laughing_gas_broadside",
+      "row_id": "P2:05a_arch_laughing_gas_broadside",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Scientific_researches!_-_New_discoveries_in_pneumaticks!_-_or_-_An_experimental_lecture_on_the_powers_of_air_-_-Js._Gillray_inv._%26_fect._LCCN94509819.jpg",
+      "file_name": "archive_P2_05a_arch_laughing_gas_broadside.jpg",
+      "sha256": "991b50bd4e3ff51a869297c5001e0268343b2e2cb61785ea29cf65e26e78b3aa",
+      "bytes": 265657,
+      "licence": "Public domain",
+      "credit": "Gillray (1802), Library of Congress / Commons",
+      "depicts": null,
+      "status": "identity and layout inspected in stills; composite unbuilt"
+    },
+    {
+      "asset_id": "archive_P2_09b_arch_long_1849",
+      "row_id": "P2:09b_arch_long_1849",
+      "page_url": "https://commons.wikimedia.org/wiki/File:The_Southern_medical_and_surgical_journal_(serial)_(IA_southernmedicals05medi).pdf",
+      "file_name": "archive_P2_09b_arch_long_1849.pdf",
+      "sha256": "9f9d40fd27bf294db368df5715c30c3026ce947336e44dc4dfd9db0a8fdc3a79",
+      "bytes": 43826390,
+      "licence": "Public domain",
+      "credit": "Long, Southern Med. & Surg. J. (Dec 1849)",
+      "depicts": null,
+      "status": "identity and layout inspected in stills; composite unbuilt"
+    },
+    {
+      "asset_id": "archive_P3_05b",
+      "row_id": "P3:05b",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Anaesthetics;_Morton%27s_Ether_Inhaler_Wellcome_L0018234.jpg",
+      "file_name": "archive_P3_05b.jpg",
+      "sha256": "e269a97b59dbcd8e8bccc95753d3681c442ee7c511913a4eee0ac3fc93b7cfaf",
+      "bytes": 5120477,
+      "licence": "CC BY 4.0",
+      "credit": "Morton inhaler replica, Wellcome / CC BY 4.0",
+      "depicts": "Morton ether inhaler replica, circa 1945; own-drawn airflow required",
+      "status": "identity and layout inspected in stills; composite unbuilt"
+    },
+    {
+      "asset_id": "archive_P3_09a_arch_ether_dome_1847",
+      "row_id": "P3:09a_arch_ether_dome_1847",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Southworth_%26_Hawes_(American,_active_1844_-_1862)_-_Use_of_Ether_for_Anesthesia_-_Google_Art_Project.jpg",
+      "file_name": "archive_P3_09a_arch_ether_dome_1847.jpg",
+      "sha256": "84b291512c99697ac58f45965a9c25e32b15fc31d7c8f3af2f9eb743511a6401",
+      "bytes": 5782636,
+      "licence": "Public domain",
+      "credit": "Southworth & Hawes (1847), Getty / Commons",
+      "depicts": null,
+      "status": "identity and layout inspected in stills; composite unbuilt"
+    }
+  ],
+  "page_extracts": [
+    {
+      "asset_id": "archive_P2_04a_arch_davy_1800",
+      "pdf_page_1based": 584,
+      "printed_page": "556",
+      "description": "Davy 1800: physical pain and surgical operations",
+      "file_name": "archive_P2_04a_arch_davy_1800_pdf_page_584.png",
+      "sha256": "7e483520ab93a5d06cb48f599745f7b8aaa7b668ba68af405e5511a163bcc3d4",
+      "width": 1050,
+      "height": 1872,
+      "extracted_text_file": "archive_P2_04a_arch_davy_1800_pdf_page_584.txt",
+      "text_sha256": "5903b0cb6f6a6bf6f7e3d4886891779e3fd348296ae34a0b16e1bed939b5d1c7",
+      "source_pdf_sha256": "faddf93e720d4fa3d8a5137183d39819de53905471e2e43fa60d3c86331e0d92",
+      "verification": "Printed page and relevant passage visually inspected; OCR is discovery evidence only, not an exact-quote authority."
+    },
+    {
+      "asset_id": "archive_P2_09b_arch_long_1849",
+      "pdf_page_1based": 711,
+      "printed_page": null,
+      "description": "December 1849 heading and Long article start; March 1842 in first page",
+      "file_name": "archive_P2_09b_arch_long_1849_pdf_page_711.png",
+      "sha256": "01100ca0648165562015b60115f86f89d8f51cfe24765e40a80610c7fdea278b",
+      "width": 975,
+      "height": 1752,
+      "extracted_text_file": "archive_P2_09b_arch_long_1849_pdf_page_711.txt",
+      "text_sha256": "487a6eef66e9f58aaf6c2ad768b79ca591ac233b7d46afbb88884a9a7dbabae6",
+      "source_pdf_sha256": "9f9d40fd27bf294db368df5715c30c3026ce947336e44dc4dfd9db0a8fdc3a79",
+      "verification": "Printed page and relevant passage visually inspected; OCR is discovery evidence only, not an exact-quote authority."
+    },
+    {
+      "asset_id": "archive_P2_09b_arch_long_1849",
+      "pdf_page_1based": 712,
+      "printed_page": "706",
+      "description": "Long article continuation; no publication before December 1849 implied",
+      "file_name": "archive_P2_09b_arch_long_1849_pdf_page_712.png",
+      "sha256": "40e7ce66cd9aa2b97f01907cfada59eb9db64801cd5482ddf9773b2873ed7a53",
+      "width": 975,
+      "height": 1752,
+      "extracted_text_file": "archive_P2_09b_arch_long_1849_pdf_page_712.txt",
+      "text_sha256": "bae091587f95ff4dda53eab11d0f2a25fef3b7d4fcb80fa078df720caa3be08a",
+      "source_pdf_sha256": "9f9d40fd27bf294db368df5715c30c3026ce947336e44dc4dfd9db0a8fdc3a79",
+      "verification": "Printed page and relevant passage visually inspected; OCR is discovery evidence only, not an exact-quote authority."
+    }
+  ],
+  "nas_directory": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_archive_recovery_v05",
+  "local_recovery": "/Volumes/MiniWork/scratch/J2563-archive-v05-assets"
+}

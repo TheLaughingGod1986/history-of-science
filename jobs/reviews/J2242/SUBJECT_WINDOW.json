@@ -1,0 +1,196 @@
+{
+  "job": "J2242",
+  "status": "SUBJECT_WINDOW_NEAR_TIE_CHECK",
+  "window": {
+    "x": 480,
+    "y": 180,
+    "width": 960,
+    "height": 360
+  },
+  "rule": "Confirm the existing full-band winner only. Centre-window per-pixel MSE must be at most 9 and at least 0.1 under the runner-up. Never switch candidates.",
+  "pair_count": 16,
+  "confirmed_count": 5,
+  "pairs": [
+    {
+      "row": "02_tower_tilt",
+      "master_frame": 274,
+      "local_index": 2,
+      "fullres_best": 1,
+      "fullres_second": 2,
+      "full_band_best_mse": 4.552290439605713,
+      "window_best_mse": 5.799354553222656,
+      "window_runner_mse": 5.795373439788818,
+      "confirmed": false
+    },
+    {
+      "row": "02_tower_tilt",
+      "master_frame": 275,
+      "local_index": 3,
+      "fullres_best": 3,
+      "fullres_second": 2,
+      "full_band_best_mse": 4.537214756011963,
+      "window_best_mse": 5.719884395599365,
+      "window_runner_mse": 5.673932075500488,
+      "confirmed": false
+    },
+    {
+      "row": "02_tower_tilt",
+      "master_frame": 278,
+      "local_index": 6,
+      "fullres_best": 5,
+      "fullres_second": 6,
+      "full_band_best_mse": 5.0236029624938965,
+      "window_best_mse": 6.1197075843811035,
+      "window_runner_mse": 6.081001281738281,
+      "confirmed": false
+    },
+    {
+      "row": "04_franklin_watches",
+      "master_frame": 2865,
+      "local_index": 147,
+      "fullres_best": 147,
+      "fullres_second": 148,
+      "full_band_best_mse": 4.662600517272949,
+      "window_best_mse": 5.386895179748535,
+      "window_runner_mse": 5.633443355560303,
+      "confirmed": true
+    },
+    {
+      "row": "04_franklin_watches",
+      "master_frame": 2868,
+      "local_index": 150,
+      "fullres_best": 148,
+      "fullres_second": 150,
+      "full_band_best_mse": 4.464134216308594,
+      "window_best_mse": 5.103084564208984,
+      "window_runner_mse": 5.209346294403076,
+      "confirmed": true
+    },
+    {
+      "row": "04_franklin_watches",
+      "master_frame": 2869,
+      "local_index": 151,
+      "fullres_best": 150,
+      "fullres_second": 148,
+      "full_band_best_mse": 4.5793280601501465,
+      "window_best_mse": 5.307644844055176,
+      "window_runner_mse": 5.265763759613037,
+      "confirmed": false
+    },
+    {
+      "row": "04_franklin_watches",
+      "master_frame": 2870,
+      "local_index": 152,
+      "fullres_best": 152,
+      "fullres_second": 150,
+      "full_band_best_mse": 4.469509601593018,
+      "window_best_mse": 5.158070087432861,
+      "window_runner_mse": 5.106660842895508,
+      "confirmed": false
+    },
+    {
+      "row": "04_franklin_watches",
+      "master_frame": 2871,
+      "local_index": 153,
+      "fullres_best": 152,
+      "fullres_second": 153,
+      "full_band_best_mse": 4.639845848083496,
+      "window_best_mse": 5.276947498321533,
+      "window_runner_mse": 5.417789459228516,
+      "confirmed": true
+    },
+    {
+      "row": "04_franklin_watches",
+      "master_frame": 2872,
+      "local_index": 154,
+      "fullres_best": 154,
+      "fullres_second": 156,
+      "full_band_best_mse": 4.490664958953857,
+      "window_best_mse": 5.217173099517822,
+      "window_runner_mse": 5.221822738647461,
+      "confirmed": false
+    },
+    {
+      "row": "04_franklin_watches",
+      "master_frame": 2873,
+      "local_index": 155,
+      "fullres_best": 156,
+      "fullres_second": 154,
+      "full_band_best_mse": 4.546568393707275,
+      "window_best_mse": 5.241203784942627,
+      "window_runner_mse": 5.270338535308838,
+      "confirmed": false
+    },
+    {
+      "row": "04_franklin_watches",
+      "master_frame": 2874,
+      "local_index": 156,
+      "fullres_best": 156,
+      "fullres_second": 154,
+      "full_band_best_mse": 4.391811370849609,
+      "window_best_mse": 5.073946952819824,
+      "window_runner_mse": 5.111525058746338,
+      "confirmed": false
+    },
+    {
+      "row": "04_franklin_watches",
+      "master_frame": 2875,
+      "local_index": 157,
+      "fullres_best": 158,
+      "fullres_second": 156,
+      "full_band_best_mse": 4.55465841293335,
+      "window_best_mse": 5.236053466796875,
+      "window_runner_mse": 5.153570652008057,
+      "confirmed": false
+    },
+    {
+      "row": "02_sentry_box",
+      "master_frame": 4673,
+      "local_index": 2,
+      "fullres_best": 2,
+      "fullres_second": 1,
+      "full_band_best_mse": 5.650383472442627,
+      "window_best_mse": 5.386822700500488,
+      "window_runner_mse": 5.383972644805908,
+      "confirmed": false
+    },
+    {
+      "row": "02_knuckle_spark",
+      "master_frame": 7777,
+      "local_index": 29,
+      "fullres_best": 29,
+      "fullres_second": 28,
+      "full_band_best_mse": 5.9996442794799805,
+      "window_best_mse": 7.139369010925293,
+      "window_runner_mse": 6.120859146118164,
+      "confirmed": false
+    },
+    {
+      "row": "14_royal_society",
+      "master_frame": 9304,
+      "local_index": 1,
+      "fullres_best": 0,
+      "fullres_second": 1,
+      "full_band_best_mse": 5.444077014923096,
+      "window_best_mse": 5.049412727355957,
+      "window_runner_mse": 5.367664813995361,
+      "confirmed": true
+    },
+    {
+      "row": "14_royal_society",
+      "master_frame": 9332,
+      "local_index": 29,
+      "fullres_best": 28,
+      "fullres_second": 29,
+      "full_band_best_mse": 5.292449474334717,
+      "window_best_mse": 5.022566318511963,
+      "window_runner_mse": 5.260486125946045,
+      "confirmed": true
+    }
+  ],
+  "eligible_rows": [
+    "14_royal_society"
+  ],
+  "master_created": false,
+  "final_film_approval": false
+}
