@@ -1,0 +1,42 @@
+{
+  "headRefName": "codex/J3050-billing-proposal",
+  "headRefOid": "d047b06440591466d494a7377b9142cb1f4b0692",
+  "number": 651,
+  "title": "HOS 009: propose billing evidence mapping without generation",
+  "url": "https://github.com/TheLaughingGod1986/history-of-science/pull/651",
+  "tree_oid": "fe82fe8d6a7094bcc48db063f6230ea7eb289bb2",
+  "files": [
+    {
+      "path": "jobs/reviews/J3050/FINDINGS.md",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "fcde9349bcba27030ea9309a6d6a3d119e24537e",
+      "sha256": "8042b1b34f906021a6271561636d0b62b01716ae34cd19bd8bc031bd21ae40fc"
+    },
+    {
+      "path": "jobs/reviews/J3050/VALIDATION.md",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "ba6aa147c6cffd4bf0d5f8029326fbf53bb4253e",
+      "sha256": "bcd34207d257482d85834ccfab876d4cad93a04710d8512ee33ec264d4e6ec8f"
+    },
+    {
+      "path": "jobs/reviews/J3050/normalization_proposal.py",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "38ec0367a0d8e508715d09de3a0c0692c8ad631c",
+      "sha256": "49766858df14d4416d2c88b49049d02e0f37f2aface99c83bb04fdca2ffe93dd"
+    },
+    {
+      "path": "jobs/reviews/J3050/test_normalization_proposal.py",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "aef58874f40c271086504d0696692aa9c6abf283",
+      "sha256": "0b1ae0effc78ee421a628fad478f754b4c657d871840b795075901c28cb50dbc"
+    }
+  ],
+  "disposition": "Close unmerged for migration; retain source branch and pending review/production holds.",
+  "whole_tree_entry_count": 9639,
+  "whole_tree_inventory_sha256": "5e98e83c51cc1cc8c45243fee3d10cd9ad82fe8e9e8e8fcdfee690047ba225c9",
+  "diff_base": "f60a3f654c1d620e33e11ec22248dcd58cba7516"
+}

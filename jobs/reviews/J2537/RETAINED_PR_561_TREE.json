@@ -1,0 +1,420 @@
+{
+  "headRefName": "review/013-pass1-sheets",
+  "headRefOid": "3a47bd8322cf890de98d8eaf765e102472498f98",
+  "number": 561,
+  "title": "013 pass-1 contact sheets (review only, never merge)",
+  "url": "https://github.com/TheLaughingGod1986/history-of-science/pull/561",
+  "tree_oid": "ad26ebdf39310ce299d7843b8b38ec70ba545ae6",
+  "files": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "73a2101c995afbde42deccd82f7dc9a8625f60c6",
+      "sha256": "99fa9ca57109203a691887d428cc324738bffcd49bed643048307e91fd0a6d5b"
+    },
+    {
+      "path": "receipts/013/pass1_sheets/INDEX.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "545c3000988454d414d73957de3ac95a8ad1599d",
+      "sha256": "17fddfaea896e7899b82223b0a4c534b1b03fd5d445ca529d97a42c137242bee"
+    },
+    {
+      "path": "receipts/013/pass1_sheets/INDEX.md",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "68d487b3e9596bef9ccf7056eec7658f9de9c1ce",
+      "sha256": "56401c179d9c48af75067d4242e1820346866f4bdcf722c6bc21aced816b0a12"
+    },
+    {
+      "path": "receipts/013/pass1_sheets/P1:01_study_beaks_take1_0.5s.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "828d3e6f3153be486604427f462ea4e01139315d",
+      "sha256": "6439585cae93049fb6feba2d139bc2d4ddb2042dd6e0df09cbb621a09cce1cce"
+    },
+    {
+      "path": "receipts/013/pass1_sheets/P1:02_drawer_lock_take1_0.5s.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "c0c70c3fb70eb504151591354b099c3f0fcb3a82",
+      "sha256": "9f8802778b4e69fe401aa592ee706edb7f42b4e5f6f8b48f939e4a55979a105b"
+    },
+    {
+      "path": "receipts/013/pass1_sheets/P1:03a_unlabelled_birds_take1_0.5s.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "c9d3d028daf7f1382f1f45f522eb8aa8117707cc",
+      "sha256": "2a4db622d180ed77e68f8ce06f11344816f0b851a9bf7350d0aa255de4b6d153"
+    },
+    {
+      "path": "receipts/013/pass1_sheets/P1:03b_malay_packet_take1_0.5s.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "69fd74cb5656623e4eda3f97fb3495c0708aa308",
+      "sha256": "2e459081d20eeeb0b674369e5c9b36bcf3ea984055a2c379f852dccf09efc7d8"
+    },
+    {
+      "path": "receipts/013/pass1_sheets/P1:04a_packet_seal_take1_0.5s.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "3c6de3bc4acc5ad1a3955b17601c619c642508f9",
+      "sha256": "010ca29d74607564c3542d463f15da6efddf41c2d051ac6e1f0017e73517456c"
+    },
+    {
+      "path": "receipts/013/pass1_sheets/P1:04b_drawer_unlock_take1_0.5s.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "617a90c3db678ea1384d38008503896794507469",
+      "sha256": "631d043657b524a4f3ca7ef4f6dc2742bf41fccc87c4b9b6e2ccca1ffc31167b"
+    },
+    {
+      "path": "receipts/013/pass1_sheets/P1:05a_museum_cases_take1_0.5s.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "619e55733d578f20dc98db29ca7ccc37a2b9006f",
+      "sha256": "701813cb4a72ef209f010eef2250a17cb262d50902b1d372a39c7d5c487c2f09"
+    },
+    {
+      "path": "receipts/013/pass1_sheets/P1:05b_museum_plaques_take1_0.5s.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "457c51525ec2ea8f2b747be74e365a63c1424008",
+      "sha256": "7783f1d221325d969b99674cdd48e82e5beba5c805c09935aec5a05441b26272"
+    },
+    {
+      "path": "receipts/013/pass1_sheets/P1:06_padlock_shut_take1_0.5s.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "5eb79626988692a4a79f2e7e2bfd1590de7720a3",
+      "sha256": "3259f925083d64ba9e859e169aee52d60a1eb3f58bd51daa2e7728698fec5042"
+    },
+    {
+      "path": "receipts/013/pass1_sheets/P1:07_darwin_1837_desk_take1_0.5s.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "b44c8e4bb53c8fb231b50e6b255a56607b009ae8",
+      "sha256": "2ba1bfda2fc62d604f9be16ac565034fed7417c34b2bbd0198822189746a6320"
+    },
+    {
+      "path": "receipts/013/pass1_sheets/P1:09_wallace_hut_split_take1_0.5s.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "e58d27d64876ea7618be6ccb554dfe58d47df21e",
+      "sha256": "e468d3c8b617162c2b09d18e113d04537a9a9a106f861a54cd3a94fee14b4049"
+    },
+    {
+      "path": "receipts/013/pass1_sheets/P1:11_beagle_cabin_explorer_take1_0.5s.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "52db0ae5f29ea81ee9b2fffb1df6404275333d5b",
+      "sha256": "fb6beeb1084bac15620e5c79ce41443d1e01a4366d68a4e967911c7b5443d8fa"
+    },
+    {
+      "path": "receipts/013/pass1_sheets/P2:02_galapagos_beach_myth_take1_0.5s.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "dffd7a894a6659f622549fb5b3e0f33648d847ad",
+      "sha256": "1952336dddc91bfcea6f32a6898723ffff91b65c8d7de99e517768134028f588"
+    },
+    {
+      "path": "receipts/013/pass1_sheets/P2:03_unlabelled_bagging_take1_0.5s.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "eefcfeaae4c2e591e82ec657f57c9f3f9ddb1ef5",
+      "sha256": "b940030b1049fc55cebf76c8abd50352c22d3abea9756f17c24a57db225a55e2"
+    },
+    {
+      "path": "receipts/013/pass1_sheets/P2:04_blank_tags_row_take1_0.5s.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "cf418db6c0fe90a4acd266359a43cc421760383d",
+      "sha256": "aead02c8165ce7fe83954e4682896ab8bed1a0161f35e64a9811502b56379308"
+    },
+    {
+      "path": "receipts/013/pass1_sheets/P2:05_tortoise_overboard_take1_0.5s.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "9a5ec9f70e1c872db6672228199cdec2de3064d6",
+      "sha256": "790b76bc3676080ec7562da9883366868823bc7d23d70d5ae2e2338c8c922271"
+    },
+    {
+      "path": "receipts/013/pass1_sheets/P2:06a_lawson_jetty_take1_0.5s.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "81fa3f472ba67c03f3f663092c1b4159b16728c1",
+      "sha256": "2e92f016028c85f378a2627c66dd01af6b806e904f9a954897529d1d011778f4"
+    },
+    {
+      "path": "receipts/013/pass1_sheets/P2:07_darwin_notebook_wait_take1_0.5s.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "b590251b24b83c41274e04827211e35cc9207474",
+      "sha256": "d8b4c0b86677f568c47ea3b0ba7887f318a6d1a0882ea0090bed77f8556cf064"
+    },
+    {
+      "path": "receipts/013/pass1_sheets/P2:08a_gould_sorting_take1_0.5s.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "2f97add3272128fab4926253dc1588339b918a69",
+      "sha256": "e811146d04e563bfa411e4696c217748275805d5a9f132be70c92275604da3b1"
+    },
+    {
+      "path": "receipts/013/pass1_sheets/P2:08b_gould_skins_closeup_take1_0.5s.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "9de76f64d8df5c4114e9162fdc759d3591e266f3",
+      "sha256": "f06b8fc02ba2e0e1c47e5da9734521d25369274963792dd2e4564c02eb83ec46"
+    },
+    {
+      "path": "receipts/013/pass1_sheets/P2:10a_explorer_shipmates_take1_0.5s.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "6b9b4ef047b0e851a162041feaa0b028af2e54ec",
+      "sha256": "7e4b4c4f2b30ed025373475057894271f151b02053e33410d193599a9d3793ff"
+    },
+    {
+      "path": "receipts/013/pass1_sheets/P2:11_island_split_vision_take1_0.5s.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "a1913580ab5ec4e2694b4adddbc8195027191316",
+      "sha256": "e6465dcc65d6cec4184364b0f0337bf2b26ac1760148779839778fe06235134f"
+    },
+    {
+      "path": "receipts/013/pass1_sheets/P2:12b_tree_question_take1_0.5s.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "48c946999fd4d2a48a4ac0062f552f24f49e3806",
+      "sha256": "c2304bee900eca665414f4b47cc4ebb57d2cd43cae50c17003635116149df93f"
+    },
+    {
+      "path": "receipts/013/pass1_sheets/P3:02a_malthus_lamplight_take1_0.5s.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "a20fae55bdd26a905f21d770e9115a8cedbc2bbc",
+      "sha256": "458fe2bd24f3786205854d3af7777937fa720bc3de163ca7aaf1c3474f204b1e"
+    },
+    {
+      "path": "receipts/013/pass1_sheets/P3:02b_notebook_d_open_take1_0.5s.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "bf5e99f0b8bcc9a6e640d7a8c47268f00f618ad4",
+      "sha256": "6d4fb4863864cc55ee6fe0bcdb00d5bd26954c7a792edbf98b451123d30df969"
+    },
+    {
+      "path": "receipts/013/pass1_sheets/P3:04a_drought_island_seeds_take1_0.5s.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "f76401b2afe2ac711cd3988393c05caa0a25efbf",
+      "sha256": "5b894873639138bc996774779fc2e2ba1cbdf92a033f822a8537dbfc3809b62f"
+    },
+    {
+      "path": "receipts/013/pass1_sheets/P3:04b_finch_cracks_seed_take1_0.5s.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "c626dca852b46d7d5ef60b458512b6f6833d5ac5",
+      "sha256": "684733bad8cc6d0206f8c25bc29d75179c04b67c6d2c5e8ea49eab5bb1ab28f0"
+    },
+    {
+      "path": "receipts/013/pass1_sheets/P3:05a_chicks_deep_beaks_take1_0.5s.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "9a97698c8d57cc6f05f850c819c2cb023efc13e9",
+      "sha256": "119c27339085f6b696235ff60a2db398c2a8ddcbe1a75a1685590c443777d6eb"
+    },
+    {
+      "path": "receipts/013/pass1_sheets/P3:05b_finches_next_generation_take1_0.5s.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "88aea7e680569c1395b45c7b834d9730d9808d14",
+      "sha256": "5518fb5e5c734ce7073193b5ed73af4316c02ecdbcf16ebc9fed566bd899f8f6"
+    },
+    {
+      "path": "receipts/013/pass1_sheets/P3:07a_darwin_afraid_window_take1_0.5s.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "882cb0b77a5d4af19331ce3bc7ea5bc5a5e8f90a",
+      "sha256": "04999371e93c5fa0f06e464b81ce173d2fd633fb2112192d5ac264b276b775d6"
+    },
+    {
+      "path": "receipts/013/pass1_sheets/P3:07b_confessing_murder_letter_take1_0.5s.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "b6840a05c0e4bf729f2705390dfc5ac8f41df04d",
+      "sha256": "8deb108481cacd3986f1d58f1d4f10b0113c8995a4448a26ddfa9bd1480be9c4"
+    },
+    {
+      "path": "receipts/013/pass1_sheets/P3:08_emma_study_take1_0.5s.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "39a03dec3cce445dca15bf2fa3042bc63e7042b8",
+      "sha256": "6398b09c9b931d651fe6a1d5fce06dbc2c0f18518fd985fbebebee6935bc5972"
+    },
+    {
+      "path": "receipts/013/pass1_sheets/P3:09b_emma_letter_cupboard_take1_0.5s.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "adb21cb06a731853e1fcde3c6f9e0fae796d4967",
+      "sha256": "553ca5878030358428092ff49693f256934d22f9e69a86eaa4fdd8b20f010a4f"
+    },
+    {
+      "path": "receipts/013/pass1_sheets/P3:10b_vestiges_torn_apart_take1_0.5s.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "1e7940cade87541ed1115c24dfce1c7b4a6cd9e1",
+      "sha256": "ff53f8fbd015f0a22c3e44022e3fc17f0c1a2fe88594ddb469685bcdfa23b599"
+    },
+    {
+      "path": "receipts/013/pass1_sheets/P3:11_barnacles_microscope_take1_0.5s.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "cbfc33f453e304c737345190b002d977f9702bc1",
+      "sha256": "c672a2d534130435f24b421653ed9457437b88fb3ee412aa83cf731a0783ade9"
+    },
+    {
+      "path": "receipts/013/pass1_sheets/P3:13a_lyell_warning_take1_0.5s.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "3b633f837bc49b3648105eb0b775c84d70226b12",
+      "sha256": "05e8aef4ddfa3168215be06b0b92d51ed65c9b25b6c4dc560b469f8c9a5c19cf"
+    },
+    {
+      "path": "receipts/013/pass1_sheets/P3:13b_brass_globe_turn_take1_0.5s.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "91db9ba3bb83006f1e648e77ec58abe37267f74c",
+      "sha256": "e8fc9ed15d7c4b23f4a8a85861338210a947f8c4bd9d67062da02eec96feeafc"
+    },
+    {
+      "path": "receipts/013/pass1_sheets/P4:02_wallace_collector_take1_0.5s.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "d9328c653d8e7f1b8cf98b6d712f0a23c135b338",
+      "sha256": "978bb3a1493ff7fd28bbca77affb97794ea626f158d269b831f793e62bc728d9"
+    },
+    {
+      "path": "receipts/013/pass1_sheets/P4:03a_helen_burning_take1_0.5s.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "ac5055c83f2236e41bb4112b2c4fcd475afd16f5",
+      "sha256": "f6578a382b02a2434493fa73911296af183b6b1f8a3ce40e618aa334f2564f45"
+    },
+    {
+      "path": "receipts/013/pass1_sheets/P4:03b_crates_sinking_take1_0.5s.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "0901b7f86f231c65a97452afa33b1b89fe1c1455",
+      "sha256": "ce478e16a5ce20d83434ce56dbfe831ea61c2db15f5365f7d24a1dd11dca008b"
+    },
+    {
+      "path": "receipts/013/pass1_sheets/P4:04_open_boat_ten_days_take1_0.5s.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "3d9153dc19749fc80668c7285df6b4c923068993",
+      "sha256": "a7467f5b376e073d41c7a1c3213445ad60ac9f6c07a00de89fcdeaf8e9b1da1a"
+    },
+    {
+      "path": "receipts/013/pass1_sheets/P4:06a_wallace_fever_take1_0.5s.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "88eac7498f8978d15afa69fb08865d9ab115a0e3",
+      "sha256": "86d391b607e309470d796bd9f09bdbeb852ae514de69d915b0d5bc2b1cca559d"
+    },
+    {
+      "path": "receipts/013/pass1_sheets/P4:07a_wallace_writes_hut_take1_0.5s.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "67a26414c8e808c8b8d66963b9da91510e5a4ee5",
+      "sha256": "51cf835299b27ac800a6727a9f725c6abfb280f11d5c289e3c19a9f194f31561"
+    },
+    {
+      "path": "receipts/013/pass1_sheets/P4:08_midpoint_twist_packet_take1_0.5s.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "8419736cb833f5d8437b3f68cd3a0acb9e022126",
+      "sha256": "d962838ccc0f2fe0ece76db311aec2956658b42329885f43c75e9c8e4f881d9f"
+    },
+    {
+      "path": "receipts/013/pass1_sheets/P4:09a_darwin_reads_wallace_take1_0.5s.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "76f241f9b81f6eb74c7399a9e9ffb77c1becd857",
+      "sha256": "083dc53d9b407a2adee172b831fd15e0b9fddcfc396a6f13b75e350524a66edb"
+    },
+    {
+      "path": "receipts/013/pass1_sheets/P4:09b_smashed_letter_pen_take1_0.5s.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "807c73eb081414f6f8fb232858e97d1bcc370f68",
+      "sha256": "20dac4d8cfa4fca54f6f90f127cfc3bd772bbf7bf974085c7e7a0a9dd219d6ce"
+    },
+    {
+      "path": "receipts/013/pass1_sheets/P4:10_fairness_25_june_take1_0.5s.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "abf0b6b34e7f72b8bd4f5fbb66a58235e3c20cf4",
+      "sha256": "9e7d8d06758206fe136335e0b06520971dc4428c43bf273e848e1021ee3498da"
+    },
+    {
+      "path": "receipts/013/pass1_sheets/P4:11_down_house_grief_take1_0.5s.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "3e06edee37cc4410b80d76a4426ef2e06d09880d",
+      "sha256": "b4545c1ffecd4a2960bb8b000bedd0e10c786511cf6a5a60f6541302a4f5c78a"
+    },
+    {
+      "path": "receipts/013/pass1_sheets/P4:12_lyell_hooker_bundle_take1_0.5s.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "cf17178f25dae92014b052af02fc9bba4a314c5c",
+      "sha256": "d5f869029af79c95d5018b9adf9291de6b303617d728e2922e9d1c245e565199"
+    },
+    {
+      "path": "receipts/013/pass1_sheets/P5:02a_linnean_reading_take1_0.5s.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "c3fcd858990373f0d78760ebf365ea136feb50a3",
+      "sha256": "0dc2a186e64521545da430f128652a7ce098da61a61892d3630b0702c17f9975"
+    },
+    {
+      "path": "receipts/013/pass1_sheets/P5:03a_two_empty_chairs_take1_0.5s.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "26a9962dffcaef0c39fe4fba3de31dede1f2df05",
+      "sha256": "922e657cc6b32769169929fe4b161d40126f79afd7d910fc58e90c3c40df9309"
+    },
+    {
+      "path": "receipts/013/pass1_sheets/P5:03b_wallace_jungle_clearing_take1_0.5s.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "63148eac5f61961347fbc80c24db37dbaa3a5ec0",
+      "sha256": "c3a4662cf7f5e2718b94cd64ad514aecebf532832fbb77028c1243a2743d391c"
+    },
+    {
+      "path": "receipts/013/pass1_sheets/P5:04a_empty_linnean_hall_take1_0.5s.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "ecc809e6152b19fa7fae5ba29c5f1c6a106caf46",
+      "sha256": "2b2edf9a5e37fdc0fc67d2eb52d03e079359157e6738876acb17af394fc1abf1"
+    },
+    {
+      "path": "receipts/013/pass1_sheets/P5:05a_darwin_writes_origin_take1_0.5s.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "057c7e8907ef4a225c813452fa281ddea907761b",
+      "sha256": "809d3e80f9796f383e78a0f967d7b09da0ecd8289165500c6bbabca9f416d975"
+    },
+    {
+      "path": "receipts/013/pass1_sheets/P5:06_murray_bookshop_take1_0.5s.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "aa313c6409092c8f7065d4741b6cff592b421609",
+      "sha256": "39dbc24db9f7343f40e3a3848cf7242a46fcec757003a87dca30c9729293d513"
+    }
+  ],
+  "disposition": "Close unmerged for migration; retain source branch and pending review/production holds.",
+  "whole_tree_entry_count": 8764,
+  "whole_tree_inventory_sha256": "0f0cb4f7545f06099fefa412514a91efd95fe418e66e00026b5006f8853003e5",
+  "diff_base": "6aac55894e573cf5669bc50347a21528e13f93ef"
+}
