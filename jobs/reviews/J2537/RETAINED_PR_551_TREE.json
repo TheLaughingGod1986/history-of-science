@@ -1,0 +1,980 @@
+{
+  "headRefName": "codex/J2498-timing-rough",
+  "headRefOid": "ad52a2dc10601e9cc875e248abb2c83d0e0612a6",
+  "number": 551,
+  "title": "HOS 013: v03f-r4 \u00a30 free graphics (35/35, unclipped credits & 390px polish) & 515s rough (J2652)",
+  "url": "https://github.com/TheLaughingGod1986/history-of-science/pull/551",
+  "tree_oid": "ccd479e7e8c42cee0b33f9d2905165572969507c",
+  "files": [
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/PICTURE_PLAN_v03.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "7ad7bd2ad4608a35a6e78db1001ff70985874780",
+      "sha256": "5b642e2826ae3e2f0ab48f30f23e6269a4159b18c29ad140e440b632256f56ed"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/PICTURE_PLAN_v03b.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "ead8738cd1b5e892b63b92bd2525b95eb2b10d86",
+      "sha256": "73c4ae029455153416c357b963bc4de51468900c88bc60be73b8767c94255d06"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/PICTURE_PLAN_v03c.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "841548172b506de5a7d3e877639c321808ecfe2b",
+      "sha256": "d42e510ac8cc6353125d292a6eaeda3363ce31e84eefacdd9417414bd0878ada"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/PICTURE_PLAN_v03d.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "4df320f5fdccf68d17ffefedaa6ee94659ac5601",
+      "sha256": "9adaceb237f368c5bb685c21c7ff54b25cb2a10e1c9aeedaf71bca2ed48f661e"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/PICTURE_PLAN_v03f.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "126496bb3039d18d11f8e60c1d54b4449d0aed66",
+      "sha256": "2d1d8b724a96bd5288d76c3f731cbf86dd46ffc42bd16a1e5d8a568718f3b201"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/_audit_picture_plan_v03b.py",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "f805e9e8ceb71f453a1e8cf1821f8bcec7d5494b",
+      "sha256": "ec79f5b2af4083856ab876f242ea47074759901f56dc5082707230119ef9c15a"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/_build_code_graphics_v03f.py",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "ed84c391f84b389c9653b289ec4370c458dff51b",
+      "sha256": "142e32cd463e4f154a8db805bbaf06bd46f599b9131db814e2786bb44028f716"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/_build_picture_plan_v03.py",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "0a46dc78ec7a11a1bb37b58af48184da453d2d05",
+      "sha256": "77e99b30927650e04edf7023e476df9909b102ffe1d57835c5dfa030c0d9fabf"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/_build_timing_rough_J2498.py",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "839cb2feee25c3d5119dcafcd99327f2ad6ff356",
+      "sha256": "8fa0dc175d1178377464c4ccbb8f16f20cc40f5ee7e4d31519885ba38ba5de71"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/_build_timing_rough_J2652.py",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "5f3da65c126030836c22a455bcce872c33d6c64e",
+      "sha256": "5ec32df5a72d9e7fc82559b94198f7503af8be505435c4fc8c8f627b6183feb0"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/_build_timing_rough_J2652_v03d.py",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "5f7612f62bd05719792c941ecc5bc6f3c817e3b8",
+      "sha256": "f2c118ab2cf1b69a53d57c54a821150bf6311fb22d1cb8394377297341862c1a"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/_build_timing_rough_J2652_v03f.py",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "72b3d01540443c5f01d25f5eed22fb491d0e1407",
+      "sha256": "bebd1aeb8f03512ba90029b07e65181117e368e6ba17e9283f5549c5a7c52254"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/_build_timing_rough_J2652_v03f_complete.py",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "971365a2d41b277db37c6195d53a05eee20b1db0",
+      "sha256": "b1027fca0efd9f4a06bb858e709d063415491dc822a8fbb52fb0bb446d3d036b"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/_build_v03f_r3_patch.py",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "66a2e004b704c6a495d375413bb10b01999af4ea",
+      "sha256": "f0cfaf7e2c506a9c64d487f1756d2cf68a0f134519332da7620bfc85837b4208"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/_build_v03f_r4.py",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "791e385b33fcfc3333de83c72cf0fafb75e34e1d",
+      "sha256": "52870c5ffa8b7da436d7208bf7303384112630b219445a551fd0d829cf37fd07"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/_retime_picture_plan_v03c.py",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "dbd9106b4f5347eb131100769e3f086dea70af0f",
+      "sha256": "3fa5df49a717baed7167f54713c818592b1be0746941965e7ae0ca5b0cbd5606"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/_retime_picture_plan_v03d.py",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "a9102f98861154a2018a9610da6727fff33d671b",
+      "sha256": "1054de14a0c421faf75f759de71e88901e9ab61fc90249a02bdaf976b80c3ec7"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/_retime_picture_plan_v03f.py",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "b0c5b6497bfd03801ba18dea52345761a564bf5c",
+      "sha256": "7b5137654946ad17779f77117f747a78352837c720bac1e8a6aee9d30c6ce909"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v03f/CHAPTER_WINDOWS_v03f_r4_390px.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "fd408abd9e087cb930ac6945194fe7aa8bd12122",
+      "sha256": "9f0c6dab651860759fc23029de97331c72b3d957d3a04b6bc5d7253071baeea7"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v03f/CODE_GRAPHICS_v03f.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "9b9ffd1947e8b2eaa36789d07f7f2732cff63d85",
+      "sha256": "18fa63c5bd2877a6037946f402986418494e0778f10326186293057a0a574a25"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v03f/CODE_GRAPHICS_v03f_r3.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "96dd5e662a0936ada501423dc8649b882ae3a816",
+      "sha256": "66907848e914d931671adcd79bf61e51fcdc394843bc14b67e2d6b81b04b49c1"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v03f/CODE_GRAPHICS_v03f_r4.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "207d657046e5478dabe9a3aa3c78407aeaf3c86d",
+      "sha256": "36d04d7fe88013fd7fdcbc51e65b8427367ecfe8068008c116419f6a13012e47"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v03f/CONTACT_SHEET_v03f_r3_390px.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "1a9e2db6ad7a57676732f15c2696fbf1d48c982d",
+      "sha256": "9213165ab2cd29431902b21890f7bc97fbc513e4ac82da0d8fbe4e1675d61258"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v03f/CONTACT_SHEET_v03f_r4_390px.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "1429032003cb977751309c364ef178c1d26d7821",
+      "sha256": "8993b7c2adde636020f25518aac8fbfb9dc7d17171216d96f5a13405b1b1cf4c"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v03f/cuts_v03f_cg.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "aec448cdbea89582e49881afeed8a6cc89474fe2",
+      "sha256": "3d09e2c9e41cb66ce77869ad4904f6d75a7f35cd7c67cf922a288c0397ef3fb0"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v03f/cuts_v03f_r3_cg.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "b884a1df151c19d58911abc8bdfa56eeac4269c8",
+      "sha256": "fb1aff7903354d2e31da6dea3e1bef385f3a1f7c758a5a88d8a9798beaf9c19a"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v03f/cuts_v03f_r4_cg.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "54ea7aec1fe35a5fc94aa31b692f8d047fb985f6",
+      "sha256": "7ce2daf240bc7049a2c3c2fa7b718c1b37e08f0585341980e42bbf78245952b8"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v03f/picture_qa_v03f.txt",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "aa546ed63495e6b5fd162d63a443139e7e605219",
+      "sha256": "dc814860bab7378f1be802f3aa243177a3cf80352ff3b8ebbd6588e72707f1eb"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v03f/picture_qa_v03f/PICTURE_QA.md",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "f7149750055b73c56dc45bf960a7b4264c11b09f",
+      "sha256": "509805861c8d81aa20f55ca0f68d1f5c54e10c37adf9b5f8d8352cabfbd3d9d1"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v03f/picture_qa_v03f/picture_qa.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "d10ab1d1ec3083671e414fcaae11bf22f24f3325",
+      "sha256": "418a7b418e7313bb671d2b1db0f9035ab2435dcfe09b8ab517f5ce496d4737d0"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v03f/picture_qa_v03f_r3.txt",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "44949a96f59d7a941ad235be03ebaedd46c28a0f",
+      "sha256": "8703882666713e433776d2259c793fa3338d6f0cb6b63050235a37651631c6f5"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v03f/picture_qa_v03f_r3/PICTURE_QA.md",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "fa57855459aa8f8b70c43bdc06a82ddc3c608d93",
+      "sha256": "78f6392c10336cddb059fd7a2434fd57d1fb2cff92e4b5606538c1b1760fe6fd"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v03f/picture_qa_v03f_r3/picture_qa.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "7ecb1e38496a08c850f0abd4cb2e801dac1f5fd8",
+      "sha256": "9bec34949ed2a3d755fe17984389ab369cf1d7b428be96df94d2a82a1cfb1561"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v03f/picture_qa_v03f_r3/picture_qa_review.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "a7b8ab92a77fdd5f97edd4ed26a6da0a166a5853",
+      "sha256": "a79f0fec57ff9391672177b20317474848357214f931068f5c24e205e7267c11"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v03f/picture_qa_v03f_r4.txt",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "8847ada24ded58f2823fef112af7eb6a52a135b9",
+      "sha256": "107f68f81f9975b1e8b376aeffbe37bcd1e6dfd32faa2076381cca290780e04c"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v03f/picture_qa_v03f_r4/PICTURE_QA.md",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "940b3508b22eb91dfba61718cb8dc536d38c7572",
+      "sha256": "fc7b4cfb0ebb0a0f8845ac043a359ba13c02592e348b9247449cc9c85df3fa9c"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v03f/picture_qa_v03f_r4/picture_qa.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "083984c4e316d0e524f184f2ac48c34b17d2281f",
+      "sha256": "d7d8da0944ddd6f2e314c66c4a1a458122e521135c770667e4bd95e719e0a071"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v03f/picture_qa_v03f_r4/picture_qa_review.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "91c3f3cc498beada5377474e1b154e040152634e",
+      "sha256": "740107a7a5162365354e68eb6725457f814a8cec332b3fcd8feaeab77536e6cd"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v03f/polish_gate_v03f.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "3d01407489ded0024dd5f70fe891ef83191b2002",
+      "sha256": "1b47f743ed677be570077a4bb8265f8580185d55d930d975e5eb1ae19bc2815a"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v03f/polish_gate_v03f.txt",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "3ea1d16fcf22f13c78d2ae30dc2393b3bd4aa362",
+      "sha256": "18412f1fa00716b47e9c5d372c8d425dd695f4729d101e69d3bcfd07472f43a8"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v03f/polish_gate_v03f_r3.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "08d7fb9827aac45702d24c8970b744d2641fbd1d",
+      "sha256": "4ea29e1138edf194f3d32642e1bb39f47e59d14e6087cedc719c3d9a1709f64f"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v03f/polish_gate_v03f_r3.txt",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "1569ac252d33cc9ebae33ee2be66733729963016",
+      "sha256": "82375c9a9edb7208b356dcd2a910c34c7596183dd15fdbb306ab8e7fccc14420"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v03f/polish_gate_v03f_r4.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "0fbc118bc233aff9dff3eb9cd3ac6fc49babaecf",
+      "sha256": "9721189c4d811e71c1ad9f3da8fcf85b601eacf88ddb009045c6b1b17dfd358b"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v03f/polish_gate_v03f_r4.txt",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "9b6b36f83d90e0f750b979a9d02eaf0e75f797c6",
+      "sha256": "3c3e1cc0f9265db67fd53328909c40cfa57fac9dc26e3ff66ecc55f12f09aeaf"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v03f/pool_v03f_cg.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "91e9141ea64c2c285cbf72e26ea96a09ad4366ae",
+      "sha256": "544ceec03fe18887a0d3ea83c102f8f3cc328d005e80b9e32dafc5d5473f7608"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v03f/pool_v03f_r3_cg.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "43cb141959a7fa1cc90a2fd2e63a42ded2db4eb6",
+      "sha256": "3fd74223b2c7a30a2b058af7c0a5666ebe14b041c85110004778aa7d1574a9ed"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v03f/pool_v03f_r4_cg.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "42951ff214523f7376466882319a64cc7f77ad55",
+      "sha256": "a2f100c26d599c22722ca1bc3d94877f74d0f437952920d296486a652ff199f2"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/parts/part-01_plates_v03.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "756f3d73904aed3773d1db41238e13e6f7685cea",
+      "sha256": "dd338915883cbb1c82a2910576dfb068e3a568d5160b252709fab38d3e073981"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/parts/part-02_plates_v03.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "f642f0811282546cc6fcebe3763cde832faf6e78",
+      "sha256": "44777133698bb1ea36801ea3d8a99faf76e27a1aa7f667e67a2e2068a5c610b3"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/parts/part-03_plates_v03.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "07c1c584d80328d61f05c4b298ec4b4c2c15caa5",
+      "sha256": "2a6562467aeb6806ec9ca30fc6b14eb5618d1268e64663d2d9a47d0b39b5e823"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/parts/part-04_plates_v03.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "7d1c0f3a55cfd366052bafb7d48f7fba0da36bfb",
+      "sha256": "847b7331f13e45a77eebe9d301bdfdcf66047e2bc69ca5afc317b0975465c233"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/parts/part-05_plates_v03.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "e8968a09a5b1ced091844716aca8e03d8781a1cd",
+      "sha256": "d8906a70b6e26892ec588d4da0679cea731d841f0eb8fc4d66b929457c2c8e13"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/parts/part-06_plates_v03.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "4592c31c32604a7f2e9b0fd7d8e89e93fe494269",
+      "sha256": "b1d957f963ec3096c62ce47cb4dd4cc7c84e10b2c7fd4b52665c9b00ffe1d55f"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/test_picture_plan_v03b.py",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "eb4e7dabe8b2b9b1e62182612939856460a62138",
+      "sha256": "2dfef4dda4a86b5cfc9abb5f595566277a1741ffcbf5f11d83f2c7f53940c39e"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/test_picture_plan_v03c.py",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "daf141cf33ad6ac4bae7f0506b4f14e3320a4163",
+      "sha256": "08be78bacbdfb7a23e33e8f4d3807cd7161923c2a20f77156c89cbdd842f0fa5"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/test_picture_plan_v03d.py",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "90cf9d11f523b4f65272ac71cd1ad10846b1920a",
+      "sha256": "248ec23706f90c8e745d7360046501205bd73b1f9eb2787da5b7f40f2e839b22"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/test_picture_plan_v03f.py",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "db07dcc0ce747a121556086acde62f2fa9e2cc04",
+      "sha256": "e3d30b4ca4553809c9562fce7ae238444925d0a03de6b42ba536d787e0e70f4e"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2498/COST_OPTIONS_v01.md",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "78c11beafdf25d360628b0635a1a84005c7460d3",
+      "sha256": "3e55a3a3d6445632832de64e60ce4330df89d73242f00cb0cf6584a4bf35b883"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2498/ROUGH_MANIFEST_v01.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "28973c9c320882e61e95a5b489401beb9aaf2876",
+      "sha256": "1b1cd39b45f23f6cc2e2af822df7ad671ecdecda93452670e4882bf86f766a17"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2498/TIMING_REPORT_v01.md",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "95657d45f828abfbcadcd854992e66702332458a",
+      "sha256": "1faaa1c0d153084a6b78d1856771f5f26beebae760462af96a2156b82b64b7cc"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2498/VALIDATION_v01.md",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "27ea986c6df06c1567e283501f43dc0af9414af1",
+      "sha256": "efc739943301a4e7501ca72c9256f32f42af1a4c045ccee21324b77fb5fb5240"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2498/asset_inventory_v01.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "c0caa5562717928c6512b7b65a2aaa85644e887e",
+      "sha256": "8455013c4b0eeca733fcf89bd9a5f9d977f8d82ac79caf8b1c089e41266b9df3"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2498/clip_check_exit_v01.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "19b343d4ecf8d546c72e3e08f41c5bf5596e116c",
+      "sha256": "0034077f0e5bf366377ca438070dd03dce39697330cabd02c88b7dc286dd9caa"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2498/clip_check_v01.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "0d021b4a2a582f7b449e154b92d3a20ef07395fd",
+      "sha256": "59b514ed4fead27827ef1371007ce896f0988fe0a7a631ceb15f2b58a9a47c80"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2498/cuts_v01.csv",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "53613cf4eacd884bba6d309840c8b5b8c58631c5",
+      "sha256": "b1b9ed8d98b6f260887dc6f5011ce5a5da8e5ab183af3069262f2b4c86846f1e"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2498/ffprobe_v01.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "610e21b5b4d9a50baa904f98f58513dac2caa397",
+      "sha256": "35dd8f895006a402fc1676279b65de1a24d589d8427a9f11875d01372cafa8f5"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2498/input_provenance_v01.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "34b511c2652d72a3785870b66d5e26c259b167e7",
+      "sha256": "a2c68387e8b93f2932df43ba10d225b4f86e4cefd4df8aa8caeaf939a9229931"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2498/overlay_audit_v01.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "294c197a23f3a9de6d8dea7d2fe36191707f3c85",
+      "sha256": "20364b99c8d8dc250a477d1df353f2b1ca7554fb80ecaa845e83e87a5f18e25d"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2498/timing_issues_v01.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "3809cbbaadc47cf9f1c9e4a3a05bffe65dc7a918",
+      "sha256": "f27300118ea45456c22f34c7a4c74f21e95a92ac46909051ed3c997ce36c9908"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/CHECKER_FOLLOWUP.md",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "d95a79329b3fa589e7730c42d92c1dd567742596",
+      "sha256": "d368c6a9d7f8bdea77c5c070116f75ab93f6ee263c504ec2fbcc11caf8067112"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/REVIEW_v03.md",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "ee936ffe30b146e8743d477b86e4b3751b5964e4",
+      "sha256": "513cdfcf88eb929c9e45d1e32d5f5ef6f5b1c61702273e1adda015e17716e76b"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/REVIEW_v03b.md",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "2f77a57ed034877a04b7eddc5fb48057b45febf7",
+      "sha256": "3ac6ed449dfa9f2dde36dde4e3df388e1f17e250553270cffb4c2a703c45ff84"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/REVIEW_v03c.md",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "473b0230f2977444bb326aec8ce9bd51301da451",
+      "sha256": "f500e15535939e908f2bfc4f39722d57c86f7c8240131d4188f52027b8a7a3ed"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/REVIEW_v03d.md",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "458bf1138507160ef18ec05b3e86e669452632cf",
+      "sha256": "262715c3ef622d4b5b6ebc25301f85bb5b8d7c925d3536029dbf35b0f0f8bc1a"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/REVIEW_v03f.md",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "568fe9d4324963f81af4940ff65ce0569220c7cc",
+      "sha256": "8a68641bb4461882a27784d375aa49dc8ced9750edd68c9a7a8bfbd3596c2c66"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/REVIEW_v03f_r2.md",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "008224864e01ac9b01e2520577ea558d7965f15b",
+      "sha256": "806d16afbe365c33e79c4ff72ff0486bc50779f78e04d900e2bb52761c823137"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/REVIEW_v03f_r3.md",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "abff1c357321b4edd99cb9b935a5efe519daa72f",
+      "sha256": "0319a9b38dd681bec61caf3b8b7e0269ea4c1e433302def7fa174c10fd239268"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/REVIEW_v03f_r4.md",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "50c7aa2e216dfc76efd80fec48096b316ef22d29",
+      "sha256": "cd32319a2a49d7d7208b0f2cb529097b581d170427226a6fcd18972a0146a16c"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/ROUGH_MANIFEST_v03.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "05afee9c2882f31f0766a7ee850f0cb41044f997",
+      "sha256": "6c3e997c5497e392ed38a62680b3b2e321b88b9414a69a8e03549dccff8b9e4c"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/ROUGH_MANIFEST_v03d.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "884406e95d3b79b187f6bfe6bfe839a1c9d10e60",
+      "sha256": "c89a12be1fd9a3d5a3c6d67b99d6110b53cd75fb1bc03c09d31a210c10f30fa1"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/ROUGH_MANIFEST_v03f.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "d2130b667e6364d2e5b92bbd44419e816fc0d63e",
+      "sha256": "21f0d1f372e540080348987e1c3f383d168b8fec8cf39f6720c58d583cabb952"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/ROUGH_MANIFEST_v03f_r2.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "c94bb98dba291a060ac17277dcc1acfd54dcf8a1",
+      "sha256": "6973353363c1c6b5b5f6c01271b521506747438300c77f11b61e8fc16b89247d"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/ROUGH_MANIFEST_v03f_r3.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "a26925376f5f70f9c0bf5fce9dfadc76039aa543",
+      "sha256": "353945e5656788f4e738a8df7dd2fa81cf1be068b22aa25c02a193222ecc83d0"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/ROUGH_MANIFEST_v03f_r4.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "43c4a8d9b3ee20b951f83564ff2b147d379cdc0d",
+      "sha256": "0e8cb2252ca52ba309650bd70b3b9803cfdb6fffd1151759f1a1c1ebb8b87388"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/acceptance_audit_v03.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "f8d537546316936e85646a584e4ec8e0c3c3184b",
+      "sha256": "39ddb6474cbb3a56286da2c045281a120ae9894f20aa11054688979a03720950"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/acceptance_audit_v03b.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "b815666b624ac2ab4edd146747bc4bb8b449dc5e",
+      "sha256": "333e9e642ac2fcbe35c3374a566f1d56bb94b80b1bc470a3035c0c25cde6b945"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/acceptance_audit_v03c.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "c0da8b2b1b7a0105ca0a759074d8c0cd461ba801",
+      "sha256": "bf3a3d1f340fd545d699c62e46c0b5e80814be4e60852c91ae29bcc002bc95fe"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/acceptance_audit_v03d.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "f32d2c6ea81ec4a2b3a1b398b090bb51d10649e8",
+      "sha256": "569eab7badb23b3cf30d6c0ea1d7bba526f1fb769d1241a09cb85b01d373ee2e"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/asset_inventory_v03.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "c9f0084c4deb03d5277abfc40f0e8a7f11a299e0",
+      "sha256": "d9f2d03e76fa0db8187e8ed7ac2e3139a731ebc9543c92b536093b951b78d05a"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/asset_inventory_v03d.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "328615a62b67fda32c5d49b4175b7ee720f74a14",
+      "sha256": "11ced760bdb0880cadffe5d06d05c1c437f1111d2c15f313369019ba46db461e"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/asset_inventory_v03f.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "abdc671a2a9d40dc23a192d413532eba5a9601bf",
+      "sha256": "738bb97f6f860cc2864b61ffb9d72185d48e08ee28e66f6793b0359f7dcb2b9a"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/asset_inventory_v03f_r2.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "acef7cdcc1fccda46bd04dd37b74c1cc7d7a87b3",
+      "sha256": "c823a6b3d0a8a106b5034cdbc8e813ab6b16cbd151ba723603f329d4711c625b"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/asset_inventory_v03f_r3.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "95fdbc5ed0d65e459692a60d4d435a8aa0639007",
+      "sha256": "a223846ad9713eea1e08c40eaeb044dfa78ced16e56f2303c597d040846e2de9"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/asset_inventory_v03f_r4.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "d5f02d082a85407c3516a243448fc34a12d9e7a8",
+      "sha256": "9aad5b4737023339c904c23ccdf0b75a0c00298b7af03e6019a20a9d8dc18dec"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/clip_check_v03.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "56a1298429bd95ffe2874362100e0dff6bc9c76d",
+      "sha256": "cda30d7e11988b79f315c2a367f9549515ef61c8fe1ccd88dfe2f2e0371168d5"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/clip_check_v03c.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "286423edabbbf375c222e1dd60121efce6f29672",
+      "sha256": "37fdc0e6eaa750dd916f1ad55c1438978e7c02ab9ce98924f507ef11f79397ff"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/clip_check_v03d.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "cd7ed69bde3e831d64cb74ab74b44965d4df83f6",
+      "sha256": "6d91299f64f5086f3673f1ded64b3960c5a51e5d33cd4e140a14dbaa019ebb98"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/clip_check_v03f.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "50f262de28e1d579edf7c298ba973c8a9035c831",
+      "sha256": "d414fd89fdc8c1efb471af5590f61862df186a8d9b53cdfed4c167b5aae7bcbc"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/cut_audit_v03.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "01aec2913ce33269c83fe4825b69a25f94d13182",
+      "sha256": "4e5b36759d148bf33250d2a49c70b65b3250866d9c739815971d4af638ddab22"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/cuts_v03.csv",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "5ea6f8c6f3efcac85960c0a9b7313e51ec94915e",
+      "sha256": "d6a7995e586648135d499c83eb6d716f7d67c95a519e88621b4f190a7c6bb43e"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/cuts_v03c.csv",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "c51f8c5c5f1c6bdac9797f611a4317958136717e",
+      "sha256": "58abd4e6aadf3beeb1a98604fe3c4cf10ebe391cfcb5479f2594412b9fe710bd"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/cuts_v03d.csv",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "eb1ccceea7afc98d948e22fff77d7881c6ff7c66",
+      "sha256": "569ed93e784f28a3c9482009e7703f17aca5d1e1bb479e433e1785693bc5537a"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/cuts_v03f.csv",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "a93057a5cdbbc5d75760f4f1bad9a6910f4227b6",
+      "sha256": "5c22d52074eb8831194203623f75677ace5c7984b03ab36fb3efe8713a4f3f96"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/measured_pauses_v03b.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "99f7d25b63b9c32cf9bc3ad906c019619986aa0b",
+      "sha256": "8d3d913f614dc468f633b98d28b52bd7fd5166f0799d697e1e18a0ee994ddfe6"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/overlay_audit_v03.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "c5a54b3902511f77909085341739ead0e5d2ae62",
+      "sha256": "ea2b0b18285a2b048ccd2c4de58ae2cca71a93a42194581cbd6fd1d77f50d71e"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/overlay_audit_v03b.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "1cddbe9fe8e5bb2d2edc3bfdc01af711ee40f07b",
+      "sha256": "779b70e8c97e3e1b02819e18fdf67e275c3a7e7e0e437fa4f4c9aaaf30eab76b"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/phone_contact_v03d_01.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "3e1d61fa1864674e94fb46ffed123028a3bf636a",
+      "sha256": "a86cf8886dc458f7045b33737aacd5dc573624dbe0c4958794ef5f48f1c655e7"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/phone_contact_v03d_02.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "e8fe4a1ce02294f37bd57350fb5fa39093c8c70f",
+      "sha256": "1e11911efd5da0b1d0395ef58458e87fb3cd92427dd62ce5e1bc0dbb3049d426"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/phone_contact_v03d_03.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "8acbbb0b3829234da60cd84028cda1e5b6f4dbb8",
+      "sha256": "93bd81166aa2997e30c21508e52032287501f4a87f2ffe9c752ed4ee2ac9afdf"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/phone_contact_v03d_04.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "1b256e9cdb6f80146a29c0c5796843346bd1fb33",
+      "sha256": "046e3bd37adf9a6790ece72317ebafb4f520b2bf20eb0a8b70dd98b7db55a475"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/phone_contact_v03d_05.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "222d440f0aba0654bf151a20a324902268ec29e2",
+      "sha256": "35d369328f7e17cf33360d3b6812fb3deacc94a804cea760fdf851e3ad8677a5"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/phone_contact_v03d_06.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "0fae385e1bf62811a80e8fcc58bd36dd823f809e",
+      "sha256": "393fd4d244c10d8be021e1e80cd3d0cfa501bac0958804e2f43511ee53f7686d"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/phone_contact_v03f_01.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "0eb099f0aac003be070da2c3306cbc450bbf8f74",
+      "sha256": "eb5d09c82970de73d9a138983e12be486b0c8f83e75b1737886376b2fc20b7ad"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/phone_contact_v03f_02.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "e8fe4a1ce02294f37bd57350fb5fa39093c8c70f",
+      "sha256": "1e11911efd5da0b1d0395ef58458e87fb3cd92427dd62ce5e1bc0dbb3049d426"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/phone_contact_v03f_03.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "8acbbb0b3829234da60cd84028cda1e5b6f4dbb8",
+      "sha256": "93bd81166aa2997e30c21508e52032287501f4a87f2ffe9c752ed4ee2ac9afdf"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/phone_contact_v03f_04.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "1b256e9cdb6f80146a29c0c5796843346bd1fb33",
+      "sha256": "046e3bd37adf9a6790ece72317ebafb4f520b2bf20eb0a8b70dd98b7db55a475"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/phone_contact_v03f_05.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "5a8cf9706c2bce1bd858438cab76448ddd58a01c",
+      "sha256": "98323780be63c0bb1fe110457dcf86edc17e25d04e0e9ea8a3444eaf72ec6355"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/phone_contact_v03f_06.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "fdaec594de8ade34189b7ca3a265d001eefecb80",
+      "sha256": "3da9b7f04a5824f2fde271562479293de25bd04d4529cdbc6a44e6785b30063c"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/phone_contact_v03f_r3_01.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "7281bdf6bdaf1c4db9e6b95fcac34bb5daef1853",
+      "sha256": "f37d23231014d46a4a998bce22f39c4707dc3a35ff47afaa9acf4566d78ecc0a"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/phone_contact_v03f_r3_02.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "a6444c18214b386a14ba25c600a8c57ac5b1a026",
+      "sha256": "fe406d0b281a21aba58a02cfe7bff2f660bc1c05efa8cd22e7c3403c0cc895da"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/phone_contact_v03f_r3_03.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "074e92a5838f62e7333d99e4d32c67c9d9906448",
+      "sha256": "9654b3c4e768a2d7171c0c7a8be8ab994f1b3930c9bfd4eef43cf859cff69b20"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/phone_contact_v03f_r3_04.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "e0d8b784490ab4c240ff441d34b5203ab8f232c1",
+      "sha256": "e339820e512f399e8860ce9b94fa8b9158b4036d7859496075f76bb536abec86"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/phone_contact_v03f_r3_05.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "c088157ff55c825ee3c77102edfdeaff978daa2f",
+      "sha256": "30b7dc95fa32fab6a51dbe9be93097629646e27edafc8d11518160a715b31d5f"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/phone_contact_v03f_r3_06.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "4a2f8936f164bfd17b3598969c26cd2b9b9dc47d",
+      "sha256": "56a62850003971cddddfd5b72cf3c18a52b3f0efcebdc2dfeaca37dc0c49237e"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/phone_contact_v03f_r4_01.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "aba050d723d0279a97a456ea85a3671ada38e091",
+      "sha256": "b01356ac5b3fbb835d6765c045a28a3f94c27a567d2e4c6ad89ad0907392062f"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/phone_contact_v03f_r4_02.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "030a76d8c74536dc73a89e868747356ef4745ac8",
+      "sha256": "e5ef6db022c3b7fcc50dc900a401488fed1f3e019f57018d55d17f780a245894"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/phone_contact_v03f_r4_03.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "9adb709ba342c9219212ba64c1d03e940133e778",
+      "sha256": "33f1ff33a4ed63ca6bc61b9c26399e2d5715fff3503c622013d3df34e3fedf56"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/phone_contact_v03f_r4_04.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "1fd340310558b0eda59dd6e374905bc8097cfb12",
+      "sha256": "df6ca3c3c7ba2da62c9fa6e23c21d71d32e04dff3772f549b11b74af0bdb5b99"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/phone_contact_v03f_r4_05.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "a37c25f60009d6195abfcd2e5dd0993382319111",
+      "sha256": "b7769608ab333c6deb67e94580ff0588222ab0b32dcd118e57321dea8757a5c2"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/phone_contact_v03f_r4_06.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "4a2f8936f164bfd17b3598969c26cd2b9b9dc47d",
+      "sha256": "56a62850003971cddddfd5b72cf3c18a52b3f0efcebdc2dfeaca37dc0c49237e"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/proposed_checker_readback_v03c.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "1e78ddc9fbdab871d4209cffc2f6eba0ffb9b118",
+      "sha256": "7f2789df768343c50b7e274df386daa9d6bd1e3826e34631b35123f92a269859"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/qualified_boundaries_v03b.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "7d18c95ccb2e8b78cf3fee49d815d65d1395467e",
+      "sha256": "c03b1afec496d689a20b95e7cc03d39d44e1c7f6cb06172edc095c5961fafa71"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/qualified_boundaries_v03d.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "18615e5770151661153f4dca049b722f26dba08f",
+      "sha256": "3efc7bb4c1cd362faab253fb0a8b43711581d35f00376412a07bba2b11caf04b"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/script_boundaries_v03b.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "9a2cb6af208550252f0390864c00260b6c0c49bb",
+      "sha256": "fcf0fe3f5352c939dfd98bb418e6b53e837b203b3456151b9a61c7e9821fd051"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/sentence_preference_v03d.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "e15e5b73525fa2c0d46538b0894f7dc95cd63684",
+      "sha256": "781dab2ade4d9bd070de0402896f555136143f411baacd4ed8108d3f0f4dfd34"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/sentence_preference_v03f.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "89b5f7136ae50eeb3e03c0af07d3f2720c134325",
+      "sha256": "572cbd7c95d86f9d13891347f2911d7a50ddeb297241ca61c8dae4ece13894c5"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/validation_v03d.json",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "9606ffe8c6cd336a3af0b89a61aa3069e1234eb0",
+      "sha256": "567bc28bbb065ab0155a9b73d4d1c1365c4885c7c9a49fd0564cf6cf54227c0f"
+    },
+    {
+      "path": "02_Video-Projects/013_Darwin-Wallace-Evolution/production-status.md",
+      "mode": "100644",
+      "type": "blob",
+      "oid": "18cc9eb66bc7f13fa9f078405544aa5755e5e828",
+      "sha256": "72191ba0feef0904b2ca8bf9e7e52b75aee705e18d5d19cd66bca728a3966365"
+    }
+  ],
+  "disposition": "Close unmerged for migration; retain source branch and pending review/production holds.",
+  "whole_tree_entry_count": 9013,
+  "whole_tree_inventory_sha256": "445800edf2fb0beb8b7ff4819f123096e4582e6d51124ad0f2196522325e7ed0",
+  "diff_base": "a26ca06fef81ec95e9c480ae9a955c7d8e17e8d1"
+}

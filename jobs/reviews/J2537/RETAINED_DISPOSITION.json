@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-18",
+  "agent": "codex",
+  "sources": [
+    {
+      "headRefName": "codex/J2498-timing-rough",
+      "headRefOid": "ad52a2dc10601e9cc875e248abb2c83d0e0612a6",
+      "number": 551,
+      "title": "HOS 013: v03f-r4 \u00a30 free graphics (35/35, unclipped credits & 390px polish) & 515s rough (J2652)",
+      "url": "https://github.com/TheLaughingGod1986/history-of-science/pull/551",
+      "tree_oid": "ccd479e7e8c42cee0b33f9d2905165572969507c",
+      "disposition": "Close unmerged for migration; retain source branch and pending review/production holds."
+    },
+    {
+      "headRefName": "review/013-pass1-sheets",
+      "headRefOid": "3a47bd8322cf890de98d8eaf765e102472498f98",
+      "number": 561,
+      "title": "013 pass-1 contact sheets (review only, never merge)",
+      "url": "https://github.com/TheLaughingGod1986/history-of-science/pull/561",
+      "tree_oid": "ad26ebdf39310ce299d7843b8b38ec70ba545ae6",
+      "disposition": "Close unmerged for migration; retain source branch and pending review/production holds."
+    },
+    {
+      "headRefName": "codex/J3050-billing-proposal",
+      "headRefOid": "d047b06440591466d494a7377b9142cb1f4b0692",
+      "number": 651,
+      "title": "HOS 009: propose billing evidence mapping without generation",
+      "url": "https://github.com/TheLaughingGod1986/history-of-science/pull/651",
+      "tree_oid": "fe82fe8d6a7094bcc48db063f6230ea7eb289bb2",
+      "disposition": "Close unmerged for migration; retain source branch and pending review/production holds."
+    }
+  ]
+}
