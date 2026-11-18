@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "format": "short",
+  "cut": 8,
+  "duration": 22.083333333333332,
+  "last_vo_word": 20.78,
+  "prescription": {
+    "path": "02_Video-Projects/008_Lightning-Franklin/10_Shorts/J2662/RECIPE.md",
+    "sha256": "86939bff69491969af19c3745a23ae83106e7b41aa72d3495b3e4d93fd556c5c"
+  },
+  "words": {
+    "path": "02_Video-Projects/008_Lightning-Franklin/10_Shorts/J2662/words.json",
+    "sha256": "f9245934a92928799e966a8d20c3f97dc398e84cdb4715b3a04eefabd6bea5a0"
+  },
+  "vo": {
+    "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/008_Lightning-Franklin/10_Shorts/J2662_v07/vo.wav",
+    "sha256": "50d65ab8eaf1bd11d3fe93a39691da5ed4e00231019d975d41c21e12d65c9a57"
+  },
+  "source": {
+    "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part05/raw/v01/19_skyline_strike_t1.mp4",
+    "sha256": "06caaeb6b7394ad590547b2f3f09db2dbe3a4a0354977591d36fb72769065026"
+  },
+  "source_in": 1.0,
+  "source_out": 2.0,
+  "framing": {
+    "crop": [
+      600,
+      0,
+      405,
+      720
+    ],
+    "output": [
+      936,
+      1664
+    ]
+  }
+}

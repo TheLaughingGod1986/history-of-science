@@ -1,0 +1,492 @@
+{
+  "job": "J2582",
+  "ref": "J2034",
+  "rulings": [
+    "https://github.com/TheLaughingGod1986/history-of-science/pull/180#issuecomment-6792271903",
+    "https://github.com/TheLaughingGod1986/history-of-science/pull/180#issuecomment-6792304982",
+    "https://github.com/TheLaughingGod1986/history-of-science/pull/180#issuecomment-6792364829"
+  ],
+  "reviewer": "gemini",
+  "date": "2026-11-11",
+  "counts": {
+    "total_tranche2_rows": 20,
+    "sheet_inspected_rows": 19,
+    "excluded_already_remaking": 1,
+    "keep_rows": 16,
+    "fix_rows_total": 4,
+    "fix_rows_already_in_J2583": 2,
+    "fix_rows_newly_flagged_for_chief": 2
+  },
+  "p02_08_the_apple_c1_ruling_line": {
+    "row": "P02:08_the_apple_c1",
+    "sha256": "838c28b3d4f5add8c12b0242275c833bc05fb7e751a4dc2af28ff140c845ffc1",
+    "full_clip_half_second_sheet": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/review_J2582_sheets/P02_08_the_apple_c1_sheet.jpg",
+    "moves_upward": true,
+    "upward_window": "t=1.50s to 2.50s (f036 to f060): apple in grass lifts off ground and rises back up into the tree branches before falling at 3.00s-4.99s",
+    "continuous_4p99s_window_available": false,
+    "outcome": "retake"
+  },
+  "p02_11_explorer_apple_c1_quarter_second_check": {
+    "row": "P02:11_explorer_apple_c1",
+    "sha256": "628cc70fa66e8733b6cd87759becf9d0cd1a31ea64b462875d73f6b43a8df183",
+    "quarter_second_sheet_3to5s": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/review_J2582_sheets/P02_11_explorer_apple_c1_qsec_3to5s_sheet.jpg",
+    "consecutive_frames_changing": 9,
+    "consecutive_24fps_frames_changing": 49,
+    "mad_range_f072_to_f120": [
+      4.51,
+      18.63
+    ],
+    "classification": "camera move (>=3 consecutive frames in a row)",
+    "verdict": "KEEP"
+  },
+  "newly_flagged_fix_for_chief": [
+    "P04:05_minute_second_c1 (apple rises upward up the ruler 3 times: t=1.00-1.50s / f024-f036, t=3.00-3.50s / f072-f084, t=5.00-5.50s / f120-f132)",
+    "P04:05_minute_second_c2 (apple rises upward up the ruler at t=2.00-3.50s / f048-f084; Moon slides upward along curve at t=0.50-2.00s / f012-f048)"
+  ],
+  "rows": [
+    {
+      "row": "P01:05_heavens_map_c1",
+      "part": 1,
+      "plate_id": "05_heavens_map_c1",
+      "take": 1,
+      "sha256": "bf781ede9d6524375ed13b4ac02549c76bc4bf9b1750dddaba33e05d9236ac5e",
+      "clip_duration_s": 7.916667,
+      "use_s": 4.58,
+      "window_s": [
+        0.0,
+        4.58
+      ],
+      "hard_limits": null,
+      "verdict": "KEEP",
+      "outcome": "keep",
+      "upward_motion": false,
+      "upward_frames": null,
+      "sheet": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/review_J2582_sheets/P01_05_heavens_map_c1_sheet.jpg",
+      "extra_sheet": null,
+      "archive_dest": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/05_heavens_map_c1_t1.mp4",
+      "findings": "11 frames (0.00-4.58s at 0.5s steps): brass/crystal spheres and planets turn smoothly around central Earth on painted heavens map. No object/person appears, vanishes or morphs; no readable words/numbers; nothing on forbidden list; nothing falls upward."
+    },
+    {
+      "row": "P01:07_night_field_c1",
+      "part": 1,
+      "plate_id": "07_night_field_c1",
+      "take": 1,
+      "sha256": "3161b6e6993ef2e930c779187ccc3eea507c5041526e1f73ae1d8b07c51df093",
+      "clip_duration_s": 7.916667,
+      "use_s": 4.65,
+      "window_s": [
+        0.0,
+        4.65
+      ],
+      "hard_limits": null,
+      "verdict": "KEEP",
+      "outcome": "keep",
+      "upward_motion": false,
+      "upward_frames": null,
+      "sheet": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/review_J2582_sheets/P01_07_night_field_c1_sheet.jpg",
+      "extra_sheet": null,
+      "archive_dest": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/07_night_field_c1_t1.mp4",
+      "findings": "11 frames (0.00-4.65s at 0.5s steps): young Newton in silhouette from behind holding lantern in dark Lincolnshire field looking at pale Moon on horizon while glowing orbital curve draws smoothly across sky. No object/person appears, vanishes or morphs; nothing on forbidden list; nothing falls upward."
+    },
+    {
+      "row": "P02:01_cambridge_closes_c1",
+      "part": 2,
+      "plate_id": "01_cambridge_closes_c1",
+      "take": 1,
+      "sha256": "666c40de800f4f68b09a1668692dbe483ff4e6edfa1cbf2e20bd9a799be26329",
+      "clip_duration_s": 7.916667,
+      "use_s": 4.19,
+      "window_s": [
+        0.0,
+        4.19
+      ],
+      "hard_limits": null,
+      "verdict": "KEEP",
+      "outcome": "keep",
+      "upward_motion": false,
+      "upward_frames": null,
+      "sheet": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/review_J2582_sheets/P02_01_cambridge_closes_c1_sheet.jpg",
+      "extra_sheet": null,
+      "archive_dest": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/01_cambridge_closes_c1_t1.mp4",
+      "findings": "10 frames (0.00-4.19s at 0.5s steps): college gates swing and students load trunks onto horse cart. Hats continue approved parent (settled per ruling 6792271903). No gate notice, no sick people/crosses/carts of bodies, no readable text; no person/object vanishes or morphs; nothing falls upward."
+    },
+    {
+      "row": "P02:03_christmas_birth_c1",
+      "part": 2,
+      "plate_id": "03_christmas_birth_c1",
+      "take": 1,
+      "sha256": "3a5d884e2e03145328369fae461f34760fb86602c2ac1772ca4bfd7dc9eddcfb",
+      "clip_duration_s": 7.916667,
+      "use_s": 5.02,
+      "window_s": [
+        0.0,
+        5.02
+      ],
+      "hard_limits": null,
+      "verdict": "KEEP",
+      "outcome": "keep",
+      "upward_motion": false,
+      "upward_frames": null,
+      "sheet": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/review_J2582_sheets/P02_03_christmas_birth_c1_sheet.jpg",
+      "extra_sheet": null,
+      "archive_dest": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/03_christmas_birth_c1_t1.mp4",
+      "findings": "11 frames (0.00-5.02s at 0.5s steps): timber farmhouse in winter (continues approved parent, settled per ruling 6792271903) with single candle in lower window, chimney smoke, and cold air/frost puff passing foreground fence at 3.00-4.00s. No baby shown, no readable text, no vanishing/morphing; nothing falls upward."
+    },
+    {
+      "row": "P02:05_working_alone_c1",
+      "part": 2,
+      "plate_id": "05_working_alone_c1",
+      "take": 1,
+      "sha256": "02f3ccbe6346518230f6ad5d7c78da8781e9518bceec0120071f0177c04362f2",
+      "clip_duration_s": 7.916667,
+      "use_s": 5.16,
+      "window_s": [
+        0.0,
+        5.16
+      ],
+      "hard_limits": null,
+      "verdict": "KEEP",
+      "outcome": "keep",
+      "upward_motion": false,
+      "upward_frames": null,
+      "sheet": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/review_J2582_sheets/P02_05_working_alone_c1_sheet.jpg",
+      "extra_sheet": null,
+      "archive_dest": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/05_working_alone_c1_t1.mp4",
+      "findings": "12 frames (0.00-5.16s at 0.5s steps): young Newton (natural shoulder-length dark hair, no wig, plain dark coat, white band collar) alone at table with candle and glass prism throwing rainbow on stone wall; raises right hand smoothly toward prism at 2.50-5.16s. No readable text on geometric curve sheets; no vanishing/morphing; nothing falls upward."
+    },
+    {
+      "row": "P02:08_the_apple_c1",
+      "part": 2,
+      "plate_id": "08_the_apple_c1",
+      "take": 1,
+      "sha256": "838c28b3d4f5add8c12b0242275c833bc05fb7e751a4dc2af28ff140c845ffc1",
+      "clip_duration_s": 7.916667,
+      "use_s": 4.99,
+      "window_s": [
+        0.0,
+        4.99
+      ],
+      "hard_limits": null,
+      "verdict": "FIX",
+      "outcome": "retake",
+      "upward_motion": true,
+      "upward_frames": "t=1.50s-2.50s (f036-f060)",
+      "sheet": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/review_J2582_sheets/P02_08_the_apple_c1_sheet.jpg",
+      "extra_sheet": null,
+      "archive_dest": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/08_the_apple_c1_t1.mp4",
+      "findings": "18 frames across full clip (0.00-7.88s at 0.5s steps, plus t=4.99s use_s marker): apple lies still in grass in front of bench at t=0.00s-1.00s (f000-f024), moves upward from the grass into the upper tree branches at t=1.50s-2.50s (f036-f060), then drops straight down at t=3.00s-4.99s (f072-f120) and settles in grass at t=5.00s-7.88s (f120-f189). No continuous 4.99s window exists without upward motion and without a jump from the parent's last frame (3.00-7.917s is 4.917s < 4.99s and jumps apple from grass to branch). Outcome per Grok 6792364829: retake (already queued in J2583)."
+    },
+    {
+      "row": "P02:10_how_high",
+      "part": 2,
+      "plate_id": "10_how_high",
+      "take": 1,
+      "sha256": "540cb3667bbd315aa7db42d1cf989fb1c46f6e3557670ee4f5281e1b4d2d8f05",
+      "clip_duration_s": 7.916667,
+      "use_s": 2.58,
+      "window_s": [
+        0.0,
+        2.58
+      ],
+      "hard_limits": {
+        "in_s": 0.0,
+        "out_s": 2.58,
+        "hard_out_s": 2.58
+      },
+      "verdict": "KEEP",
+      "outcome": "keep",
+      "upward_motion": false,
+      "upward_frames": null,
+      "sheet": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/review_J2582_sheets/P02_10_how_high_sheet.jpg",
+      "extra_sheet": null,
+      "archive_dest": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/10_how_high_t1.mp4",
+      "findings": "7 frames across locked window 0.00-2.58s (0.00, 0.50, 1.00, 1.50, 2.00, 2.50, 2.58s / f000-f062): young Newton sits under apple tree looking from fallen apple in grass up to pale daytime Moon high in sky with faint pull line and orbital arc. Inside 0.00-2.58s the Moon stays high in sky with no ring and no descent into the orchard (which begins after 3.0s). Locked at 0.00-2.58s, hard out 2.58s per ruling 6792271903."
+    },
+    {
+      "row": "P02:11_explorer_apple_c1",
+      "part": 2,
+      "plate_id": "11_explorer_apple_c1",
+      "take": 1,
+      "sha256": "628cc70fa66e8733b6cd87759becf9d0cd1a31ea64b462875d73f6b43a8df183",
+      "clip_duration_s": 7.916667,
+      "use_s": 4.94,
+      "window_s": [
+        0.0,
+        4.94
+      ],
+      "hard_limits": null,
+      "verdict": "KEEP",
+      "outcome": "keep",
+      "upward_motion": false,
+      "upward_frames": null,
+      "sheet": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/review_J2582_sheets/P02_11_explorer_apple_c1_sheet.jpg",
+      "extra_sheet": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/review_J2582_sheets/P02_11_explorer_apple_c1_qsec_3to5s_sheet.jpg",
+      "archive_dest": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/11_explorer_apple_c1_t1.mp4",
+      "findings": "11 frames across 0.00-4.94s (0.5s steps) + 9 frames across 3.00-5.00s (0.25s steps: 3.00, 3.25, 3.50, 3.75, 4.00, 4.25, 4.50, 4.75, 5.00s) + 24fps frame-to-frame MAD check (f072-f120): framing changes continuously across all 9 quarter-second frames (and all 49 consecutive 24fps frames f072-f120, smooth MAD 4.51-18.63, zero 2-frame jump) as a smooth camera push-in and tilt-up while the Explorer stands up from crouched to medium shot, tosses the apple as prompted (3.75-4.50s), catches it (4.75s), and holds it up (4.94-5.00s) beside the pale crescent Moon at upper left. Red apple and round gold glasses are settled (inherited from approved parent per ruling 6792271903). By the stated rule (>=3 consecutive frames = camera move: KEEP), verdict is KEEP; no retake needed."
+    },
+    {
+      "row": "P03:01_really_falling_c1",
+      "part": 3,
+      "plate_id": "01_really_falling_c1",
+      "take": 1,
+      "sha256": "9e6fa8d1beee098fd4e2f322981e218bd103154e5a98d7574969db3fe9e84e8c",
+      "clip_duration_s": 7.916667,
+      "use_s": 5.26,
+      "window_s": [
+        0.0,
+        5.26
+      ],
+      "hard_limits": null,
+      "verdict": "FIX",
+      "outcome": "retake_already_ordered",
+      "upward_motion": false,
+      "upward_frames": null,
+      "sheet": null,
+      "extra_sheet": null,
+      "archive_dest": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/01_really_falling_c1_t1.mp4",
+      "findings": "Excluded from 19-row sheet pass per J2582 brief item 1: already ruled for 1 retake in 6792271903 / 6792292834 (Moon fades ~3.5s and dark ball rides curve instead) and queued in J2583."
+    },
+    {
+      "row": "P03:05_shot_orbit_c1",
+      "part": 3,
+      "plate_id": "05_shot_orbit_c1",
+      "take": 1,
+      "sha256": "556bc9f79425e1101212efde11d397c8019c18f66a5555ae4282379129329c19",
+      "clip_duration_s": 7.916667,
+      "use_s": 6.42,
+      "window_s": [
+        0.0,
+        6.42
+      ],
+      "hard_limits": null,
+      "verdict": "KEEP",
+      "outcome": "keep",
+      "upward_motion": false,
+      "upward_frames": null,
+      "sheet": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/review_J2582_sheets/P03_05_shot_orbit_c1_sheet.jpg",
+      "extra_sheet": null,
+      "archive_dest": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/05_shot_orbit_c1_t1.mp4",
+      "findings": "14 frames (0.00-6.42s at 0.5s steps): silver cannonball curves down and sweeps around round Earth on glowing golden trail as camera pulls back to show full orbital loop above mountain peak. Same ball visible throughout; no vanishing/morphing; nothing on forbidden list; nothing falls upward."
+    },
+    {
+      "row": "P03:05_shot_orbit_c2",
+      "part": 3,
+      "plate_id": "05_shot_orbit_c2",
+      "take": 1,
+      "sha256": "f62b975a10a7a68c2f519132aee430ae657f3b2f0918b0d963d8913ebc147f93",
+      "clip_duration_s": 7.916667,
+      "use_s": 6.42,
+      "window_s": [
+        0.0,
+        6.42
+      ],
+      "hard_limits": null,
+      "verdict": "KEEP",
+      "outcome": "keep",
+      "upward_motion": false,
+      "upward_frames": null,
+      "sheet": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/review_J2582_sheets/P03_05_shot_orbit_c2_sheet.jpg",
+      "extra_sheet": null,
+      "archive_dest": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/05_shot_orbit_c2_t1.mp4",
+      "findings": "14 frames (0.00-6.42s at 0.5s steps): continues smoothly from P03:05_shot_orbit_c1; silver cannonball sweeps around golden orbital loop past snow-capped mountain peak. Same ball visible throughout; no vanishing/morphing; nothing on forbidden list; nothing falls upward."
+    },
+    {
+      "row": "P03:07_ball_to_moon",
+      "part": 3,
+      "plate_id": "07_ball_to_moon",
+      "take": 1,
+      "sha256": "fba484bb8b37055948991f701cf788e8b02015f6e230c866c83f0106e838b95d",
+      "clip_duration_s": 7.916667,
+      "use_s": 2.84,
+      "window_s": [
+        0.0,
+        2.84
+      ],
+      "hard_limits": null,
+      "verdict": "KEEP",
+      "outcome": "keep",
+      "upward_motion": false,
+      "upward_frames": null,
+      "sheet": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/review_J2582_sheets/P03_07_ball_to_moon_sheet.jpg",
+      "extra_sheet": null,
+      "archive_dest": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/07_ball_to_moon_t1.mp4",
+      "findings": "7 frames (0.00, 0.50, 1.00, 1.50, 2.00, 2.50, 2.84s): dark cannonball orbits counter-clockwise around Earth on inner dotted/glowing ellipse (coming around left limb at 0.00-0.25s and crossing front of globe through 2.84s) while pale Moon orbits on outer golden ellipse. Neither Moon nor ball vanishes or morphs; nothing on forbidden list; nothing falls upward."
+    },
+    {
+      "row": "P04:05_minute_second_c1",
+      "part": 4,
+      "plate_id": "05_minute_second_c1",
+      "take": 1,
+      "sha256": "4d69871bc14ebc9b7077be19ea24e44fa11c96c55e756a5c8483b6220087ca39",
+      "clip_duration_s": 7.916667,
+      "use_s": 6.76,
+      "window_s": [
+        0.0,
+        6.76
+      ],
+      "hard_limits": null,
+      "verdict": "FIX",
+      "outcome": "parked_for_chief",
+      "upward_motion": true,
+      "upward_frames": "t=1.00s-1.50s (f024-f036), t=3.00s-3.50s (f072-f084), t=5.00s-5.50s (f120-f132)",
+      "sheet": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/review_J2582_sheets/P04_05_minute_second_c1_sheet.jpg",
+      "extra_sheet": null,
+      "archive_dest": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/05_minute_second_c1_t1.mp4",
+      "findings": "15 frames (0.00-6.76s at 0.5s steps): same continuation-from-fallen-apple defect as P02:08_the_apple_c1. Parent P04:05_minute_second ended with the green apple resting on the table at the foot of the blank wooden ruler. In c1, the apple starts on the table at t=0.00s-0.50s (f000-f012), rises upward up the ruler at t=1.00s-1.50s (f024-f036), drops to the table at t=2.00s-2.50s (f048-f060), rises upward a second time at t=3.00s-3.50s (f072-f084), drops at t=4.00s-4.50s (f096-f108), rises upward a third time at t=5.00s-5.50s (f120-f132), and drops at t=6.00s-6.76s (f144-f162). No clean 6.76s window exists. Violates stated rule ('nothing falls upward'). Parked for Chief with frames."
+    },
+    {
+      "row": "P04:05_minute_second_c2",
+      "part": 4,
+      "plate_id": "05_minute_second_c2",
+      "take": 1,
+      "sha256": "c2f862ad7f39143ee5ec1309d031e75bef6001b8a1f0317a28825c9658d1511d",
+      "clip_duration_s": 7.916667,
+      "use_s": 6.75,
+      "window_s": [
+        0.0,
+        6.75
+      ],
+      "hard_limits": null,
+      "verdict": "FIX",
+      "outcome": "parked_for_chief",
+      "upward_motion": true,
+      "upward_frames": "apple rises t=2.00s-3.50s (f048-f084); Moon slides upward t=0.50s-2.00s (f012-f048)",
+      "sheet": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/review_J2582_sheets/P04_05_minute_second_c2_sheet.jpg",
+      "extra_sheet": null,
+      "archive_dest": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/05_minute_second_c2_t1.mp4",
+      "findings": "15 frames (0.00-6.75s at 0.5s steps): on the left side of the split screen, the apple rests on the table at t=0.00s-1.50s (f000-f036), rises upward from the table to the top of the wooden ruler across t=2.00s-3.50s (f048-f084), and falls back down across t=4.00s-6.00s (f096-f144). On the right side, the Moon moves upward along its curve from t=0.50s-2.00s (f012-f048) before drifting slightly down, and a second bright arc forms across the Earth at t=4.00s-6.75s (f096-f162). No clean 6.75s window exists. Violates stated rule ('nothing falls upward'). Parked for Chief with frames."
+    },
+    {
+      "row": "P04:08_halley_visit_c1",
+      "part": 4,
+      "plate_id": "08_halley_visit_c1",
+      "take": 2,
+      "sha256": "519bbb3da322a3f2d9e4b5463cf2bf267fb7f8734b755ce40b9237ae0d41f496",
+      "clip_duration_s": 8.0,
+      "use_s": 5.88,
+      "window_s": [
+        0.0,
+        5.88
+      ],
+      "hard_limits": null,
+      "verdict": "KEEP",
+      "outcome": "keep",
+      "upward_motion": false,
+      "upward_frames": null,
+      "sheet": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/review_J2582_sheets/P04_08_halley_visit_c1_sheet.jpg",
+      "extra_sheet": null,
+      "archive_dest": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/08_halley_visit_c1_t2.mp4",
+      "findings": "13 frames (0.00-5.88s at 0.5s steps, take 2): Halley (left) and Newton (right), both with natural dark hair and no wigs, converse across book-piled table in panelled Trinity room. Neither person nor any object vanishes or morphs; no readable words/numbers; nothing on forbidden list; nothing falls upward."
+    },
+    {
+      "row": "P04:08_halley_visit_c2",
+      "part": 4,
+      "plate_id": "08_halley_visit_c2",
+      "take": 1,
+      "sha256": "d7e9d2748eee0e9b8d475fa0acda8f7caf777cfa4c5eeffc464433f89e3dbbbb",
+      "clip_duration_s": 7.916667,
+      "use_s": 5.88,
+      "window_s": [
+        0.0,
+        5.88
+      ],
+      "hard_limits": null,
+      "verdict": "KEEP",
+      "outcome": "keep",
+      "upward_motion": false,
+      "upward_frames": null,
+      "sheet": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/review_J2582_sheets/P04_08_halley_visit_c2_sheet.jpg",
+      "extra_sheet": null,
+      "archive_dest": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/08_halley_visit_c2_t1.mp4",
+      "findings": "13 frames (0.00-5.88s at 0.5s steps): continues smoothly from P04:08_halley_visit_c1; Halley and Newton converse across table in panelled Trinity room. Neither person nor any object vanishes or morphs; no readable words/numbers; nothing on forbidden list; nothing falls upward."
+    },
+    {
+      "row": "P05:04_comet_1758_c1",
+      "part": 5,
+      "plate_id": "04_comet_1758_c1",
+      "take": 1,
+      "sha256": "655cc16e317aaa8303e0dcfae2a8a49c697d344049374f4f1d68bdb3d086ec19",
+      "clip_duration_s": 7.916667,
+      "use_s": 4.49,
+      "window_s": [
+        0.0,
+        4.49
+      ],
+      "hard_limits": null,
+      "verdict": "KEEP",
+      "outcome": "keep",
+      "upward_motion": false,
+      "upward_frames": null,
+      "sheet": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/review_J2582_sheets/P05_04_comet_1758_c1_sheet.jpg",
+      "extra_sheet": null,
+      "archive_dest": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/04_comet_1758_c1_t1.mp4",
+      "findings": "10 frames (0.00-4.49s at 0.5s steps): farmer-astronomer at eight-foot wooden reflecting telescope beside Saxon farmhouse under starry sky with faint comet and soft tail above; frost on grass (not snow, settled per ruling 6792271903). No person/comet/object vanishes or morphs; no readable text; nothing falls upward."
+    },
+    {
+      "row": "P05:05_iss_orbit_c1",
+      "part": 5,
+      "plate_id": "05_iss_orbit_c1",
+      "take": 1,
+      "sha256": "fb8873d899c9abcbc1642a91cd58b6b3248ebd72914b828e76344617493158b2",
+      "clip_duration_s": 7.916667,
+      "use_s": 7.7,
+      "window_s": [
+        0.0,
+        7.7
+      ],
+      "hard_limits": null,
+      "verdict": "KEEP",
+      "outcome": "keep",
+      "upward_motion": false,
+      "upward_frames": null,
+      "sheet": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/review_J2582_sheets/P05_05_iss_orbit_c1_sheet.jpg",
+      "extra_sheet": null,
+      "archive_dest": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/05_iss_orbit_c1_t1.mp4",
+      "findings": "17 frames (0.00-7.70s at 0.5s steps): space station glides smoothly in orbit above blue Earth. Station shape settled per ruling 6792271903; no flags, logos or letters anywhere; station never vanishes or morphs; nothing plummets straight at Earth; nothing falls upward."
+    },
+    {
+      "row": "P05:05_iss_orbit_c2",
+      "part": 5,
+      "plate_id": "05_iss_orbit_c2",
+      "take": 1,
+      "sha256": "07b94285af0c3f2898e6f8f9e6f2c8bfee5d57d4d2c9f96435b3e8d7ce21b8e4",
+      "clip_duration_s": 7.916667,
+      "use_s": 7.71,
+      "window_s": [
+        0.0,
+        7.71
+      ],
+      "hard_limits": null,
+      "verdict": "KEEP",
+      "outcome": "keep",
+      "upward_motion": false,
+      "upward_frames": null,
+      "sheet": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/review_J2582_sheets/P05_05_iss_orbit_c2_sheet.jpg",
+      "extra_sheet": null,
+      "archive_dest": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/05_iss_orbit_c2_t1.mp4",
+      "findings": "17 frames (0.00-7.71s at 0.5s steps): continues smoothly from P05:05_iss_orbit_c1; space station glides in orbit above blue Earth. Station shape settled; no flags, logos or letters; station never vanishes or morphs; nothing falls upward."
+    },
+    {
+      "row": "P05:06_iss_apple_c1",
+      "part": 5,
+      "plate_id": "06_iss_apple_c1",
+      "take": 1,
+      "sha256": "7eda8b737ff43c906ae358c2d7076131104c50002e53e19bd3610667babcc133",
+      "clip_duration_s": 7.916667,
+      "use_s": 4.59,
+      "window_s": [
+        0.0,
+        4.59
+      ],
+      "hard_limits": null,
+      "verdict": "KEEP",
+      "outcome": "keep",
+      "upward_motion": false,
+      "upward_frames": null,
+      "sheet": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/review_J2582_sheets/P05_06_iss_apple_c1_sheet.jpg",
+      "extra_sheet": null,
+      "archive_dest": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/v05_tranche2_archive/06_iss_apple_c1_t1.mp4",
+      "findings": "11 frames (0.00-4.59s at 0.5s steps): two generic astronauts in plain white suits with gold visors and one green-and-red-flushed apple drift and rotate slowly together in zero-g inside plain station cabin. No real likenesses, no readable patches or words; neither astronauts nor apple vanish or morph."
+    }
+  ]
+}

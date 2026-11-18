@@ -1,0 +1,6 @@
+PASS  hos_008_short_C_v07.mp4  dur=22.08s  audio=-17.2dB  motion=43.08  f0diff=7.71  cut1=2.04s  vo_onset=0.00s  tail_gap=1.30s  vo_src=/Volumes/data/studio-live/History Of Science/02_Video-Projects/008_Lightning-Franklin/10_Shorts/J2662_v07/vo.wav  dhash=1f9fb63b795bab7f
+   full-bleed 0.00s  fills the frame  sharp above/middle/below=None/0.417/None  detail top/centre/bottom=5.76/8.54/8.77  spread top/bottom=35.38/32.55
+   full-bleed 0.25s  fills the frame  sharp above/middle/below=None/0.421/None  detail top/centre/bottom=5.02/8.57/9.39  spread top/bottom=37.49/35.06
+   full-bleed 0.50s  fills the frame  sharp above/middle/below=0.078/0.424/0.735  detail top/centre/bottom=3.55/8.61/10.32  spread top/bottom=38.69/41.09
+   full-bleed whole Short  0/23 frames padded at one a second, 0/45 at two a second  padded stretches: none  no end card named in meta
+   sheet /private/tmp/j2662-sheets/hos_008_short_C_v07_open_sheet.jpg
