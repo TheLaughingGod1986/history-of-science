@@ -1,0 +1,205 @@
+{
+ "pulled": "2026-11-14",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "why do leaves change color",
+  "autumn leaves science",
+  "chlorophyll"
+ ],
+ "autocomplete": {
+  "why do leaves change color": [
+   "why do leaves change color read aloud",
+   "why do leaves change color song",
+   "why do leaves change color in the fall read aloud",
+   "why do leaves change color in the fall mystery science",
+   "why do leaves change color in the fall book",
+   "why do leaves change color",
+   "why do leaves change color by betsy maestro",
+   "why do leaves change color in fall",
+   "why do leaves change color mystery science",
+   "why do leaves change color free school"
+  ],
+  "autumn leaves science": [
+   "autumn leaves science",
+   "fall leaves science",
+   "fall leaves science video",
+   "autumn leaves chill",
+   "video autumn leaves falling",
+   "autumn leaves change colour"
+  ],
+  "chlorophyll": [
+   "chlorophyll benefits",
+   "chlorophyll",
+   "chlorophyll ivy",
+   "chlorophyll ivy fortnite",
+   "chlorophyll meaning in hindi",
+   "chlorophyll water",
+   "chlorophyll is necessary for photosynthesis",
+   "chlorophyll kise kahate hain",
+   "chlorophyll structure",
+   "chlorophyll juice"
+  ]
+ },
+ "sharedTitleWords": [
+  "middle school",
+  "school earth",
+  "earth and",
+  "and space",
+  "space science",
+  "science khan",
+  "khan academy",
+  "leaves change",
+  "scishow kids",
+  "why do"
+ ],
+ "neighbours": [
+  {
+   "id": "gKfjHTk8KrY",
+   "title": "History’s deadliest colors - J. V. Maranto",
+   "channel": "TED-Ed",
+   "views": "8,462,196 views",
+   "age": "9 yr ago",
+   "length": "5:14",
+   "tier": 1,
+   "viewCount": 8462196,
+   "foundBy": "ted-ed chlorophyll",
+   "onTopic": true
+  },
+  {
+   "id": "UZ5UGnU7oOI",
+   "title": "What is color? - Colm Kelleher",
+   "channel": "TED-Ed",
+   "views": "1,109,978 views",
+   "age": "13 yr ago",
+   "length": "3:10",
+   "tier": 1,
+   "viewCount": 1109978,
+   "foundBy": "ted-ed chlorophyll",
+   "onTopic": true
+  },
+  {
+   "id": "xB2DiiAOpCg",
+   "title": "The Science of Fall | Compilation | SciShow Kids",
+   "channel": "SciShow Kids",
+   "views": "1,916,547 views",
+   "age": "8 yr ago",
+   "length": "15:40",
+   "tier": 2,
+   "viewCount": 1916547,
+   "foundBy": "autumn leaves science",
+   "onTopic": true
+  },
+  {
+   "id": "Xk4-6II8l5Q",
+   "title": "Why Do Leaves Change Colors in the Fall? | Biology for Kids | SciShow Kids",
+   "channel": "SciShow Kids",
+   "views": "1,850,234 views",
+   "age": "11 yr ago",
+   "length": "3:22",
+   "tier": 2,
+   "viewCount": 1850234,
+   "foundBy": "why do leaves change color",
+   "onTopic": true
+  },
+  {
+   "id": "JWva5AaDkXw",
+   "title": "The Real Reason Leaves Change Color In the Fall",
+   "channel": "MinuteEarth",
+   "views": "1,558,956 views",
+   "age": "11 yr ago",
+   "length": "2:02",
+   "tier": 2,
+   "viewCount": 1558956,
+   "foundBy": "why do leaves change color",
+   "onTopic": true
+  },
+  {
+   "id": "rwA1QVsbD6g",
+   "title": "Why Do Leaves Change Color and Fall?",
+   "channel": "SciShow",
+   "views": "269,611 views",
+   "age": "12 yr ago",
+   "length": "2:12",
+   "tier": 2,
+   "viewCount": 269611,
+   "foundBy": "why do leaves change color",
+   "onTopic": true
+  },
+  {
+   "id": "2lSnnH12tJ4",
+   "title": "Why we have seasons | Middle school Earth and space science | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "166,217 views",
+   "age": "4 mo ago",
+   "length": "8:20",
+   "tier": 2,
+   "viewCount": 166217,
+   "foundBy": "khan academy autumn leaves science",
+   "onTopic": true
+  },
+  {
+   "id": "ZGoZz4H7IK0",
+   "title": "Earth's layers | Middle school Earth and space science | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "101,634 views",
+   "age": "4 mo ago",
+   "length": "7:41",
+   "tier": 2,
+   "viewCount": 101634,
+   "foundBy": "khan academy autumn leaves science",
+   "onTopic": true
+  },
+  {
+   "id": "U5ikrkOGio0",
+   "title": "Weather | Weather and climate | Middle school Earth and space science | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "53,930 views",
+   "age": "4 yr ago",
+   "length": "4:03",
+   "tier": 2,
+   "viewCount": 53930,
+   "foundBy": "khan academy autumn leaves science",
+   "onTopic": true
+  },
+  {
+   "id": "JMaqaspDpr0",
+   "title": "The Sun's energy and Earth's weather | Middle school Earth and space science | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "32,837 views",
+   "age": "1 yr ago",
+   "length": "6:14",
+   "tier": 2,
+   "viewCount": 32837,
+   "foundBy": "khan academy autumn leaves science",
+   "onTopic": true
+  },
+  {
+   "id": "a0XHi4tCovg",
+   "title": "Gravity and the solar system | Middle school Earth and space science | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "20,275 views",
+   "age": "4 mo ago",
+   "length": "11:43",
+   "tier": 2,
+   "viewCount": 20275,
+   "foundBy": "khan academy autumn leaves science",
+   "onTopic": true
+  },
+  {
+   "id": "pwxNSGfJbhA",
+   "title": "Autumn Leaves | Buddy King, Jerry Akubue and John Harlander | TEDxStCloud",
+   "channel": "TEDx Talks",
+   "views": "352 views",
+   "age": "4 yr ago",
+   "length": "4:33",
+   "tier": 1,
+   "viewCount": 352,
+   "foundBy": "autumn leaves science ted",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 5,
+ "gate": "PASS",
+ "hasTed": true,
+ "failedQueries": []
+}

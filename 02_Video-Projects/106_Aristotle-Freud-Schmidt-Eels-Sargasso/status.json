@@ -1,0 +1,45 @@
+{
+  "film": "106",
+  "title": "Where Do Eels Come From? (The Sargasso Sea Hunt)",
+  "summary": "Rule-E topic go/no-go review GO (94/100 Opportunity Score, J2836; J2835 / jobs/WIP.json next_hos; Rule G). Data-backed topic brief, public_search.py and neighbours.py PASS evidence (TED-Ed 2.75M & 1.16M, Thoughty2 3.32M, Bizarre Beasts 1.59M) pre-cleared; awaits an open active HOS WIP slot before SOURCES.md and facts lane (all claims UNVERIFIED until sourced).",
+  "stages": {
+    "topic": {
+      "state": "todo"
+    },
+    "script": {
+      "state": "todo"
+    },
+    "facts": {
+      "state": "todo"
+    },
+    "package": {
+      "state": "todo"
+    },
+    "vo": {
+      "state": "todo"
+    },
+    "shorts_scripts": {
+      "state": "todo"
+    },
+    "shorts_vo": {
+      "state": "todo"
+    },
+    "picture": {
+      "state": "todo"
+    },
+    "edit": {
+      "state": "todo"
+    },
+    "thumbnails": {
+      "state": "todo"
+    },
+    "ben_ok": {
+      "state": "todo"
+    },
+    "scheduled": {
+      "state": "todo"
+    }
+  },
+  "claims": [],
+  "next": ""
+}

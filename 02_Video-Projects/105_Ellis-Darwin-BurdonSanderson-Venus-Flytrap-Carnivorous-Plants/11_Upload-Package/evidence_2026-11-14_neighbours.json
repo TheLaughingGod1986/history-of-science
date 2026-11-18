@@ -1,0 +1,261 @@
+{
+ "pulled": "2026-11-14",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "carnivorous plants",
+  "venus flytrap",
+  "plant adaptations"
+ ],
+ "autocomplete": {
+  "carnivorous plants": [
+   "carnivorous plants",
+   "carnivorous plants for kids",
+   "carnivorous plants feeding",
+   "carnivorous plants terrarium",
+   "carnivorous plants documentary",
+   "carnivorous plants care",
+   "carnivorous plants time lapse",
+   "carnivorous plants names",
+   "carnivorous plants for beginners",
+   "carnivorous plants hub"
+  ],
+  "venus flytrap": [
+   "venus flytrap",
+   "venus flytrap plant",
+   "venus flytrap eating",
+   "venus flytrap drawing",
+   "venus flytrap feng suave",
+   "venus flytrap care",
+   "venus flytrap seed",
+   "venus flytrap video",
+   "venus flytrap grow a garden 2",
+   "venus flytrap and pitcher plant"
+  ],
+  "plant adaptations": [
+   "plant adaptations",
+   "plant adaptations for kids",
+   "plant adaptations class 4",
+   "plant adaptations for grade 4",
+   "plant adaptations in the rainforest",
+   "plant adaptations 3rd grade",
+   "plant adaptations gcse biology",
+   "plant adaptations hydrophytes mesophytes and xerophytes",
+   "plant adaptations grade 5",
+   "plant adaptations david attenborough"
+  ]
+ },
+ "sharedTitleWords": [
+  "biology khan",
+  "khan academy"
+ ],
+ "neighbours": [
+  {
+   "id": "Hja0SLs2kus",
+   "title": "The amazing ways plants defend themselves - Valentin Hammoudi",
+   "channel": "TED-Ed",
+   "views": "4,447,004 views",
+   "age": "9 yr ago",
+   "length": "6:12",
+   "tier": 1,
+   "viewCount": 4447004,
+   "foundBy": "ted-ed carnivorous plants",
+   "onTopic": true
+  },
+  {
+   "id": "pvBlSFVmoaw",
+   "title": "Electrical experiments with plants that count and communicate | Greg Gage",
+   "channel": "TED",
+   "views": "3,302,069 views",
+   "age": "9 yr ago",
+   "length": "9:31",
+   "tier": 1,
+   "viewCount": 3302069,
+   "foundBy": "venus flytrap ted",
+   "onTopic": true
+  },
+  {
+   "id": "ee7muQ_qKU0",
+   "title": "The wild world of carnivorous plants - Kenny Coogan",
+   "channel": "TED-Ed",
+   "views": "2,362,056 views",
+   "age": "7 yr ago",
+   "length": "5:11",
+   "tier": 1,
+   "viewCount": 2362056,
+   "foundBy": "carnivorous plants",
+   "onTopic": true
+  },
+  {
+   "id": "fSaHVHTqDY0",
+   "title": "These animals are also plants … wait, what? - Luka Seamus Wright",
+   "channel": "TED-Ed",
+   "views": "1,742,029 views",
+   "age": "4 yr ago",
+   "length": "5:12",
+   "tier": 1,
+   "viewCount": 1742029,
+   "foundBy": "ted-ed carnivorous plants",
+   "onTopic": true
+  },
+  {
+   "id": "3jIW5wW2WC0",
+   "title": "How plants tell time - Dasha Savage",
+   "channel": "TED-Ed",
+   "views": "367,273 views",
+   "age": "11 yr ago",
+   "length": "4:20",
+   "tier": 1,
+   "viewCount": 367273,
+   "foundBy": "ted-ed plant adaptations",
+   "onTopic": true
+  },
+  {
+   "id": "DGpPHrLF-5M",
+   "title": "(OLD VIDEO) Plant Structure and Adaptations",
+   "channel": "Amoeba Sisters",
+   "views": "1,289,643 views",
+   "age": "12 yr ago",
+   "length": "8:27",
+   "tier": 2,
+   "viewCount": 1289643,
+   "foundBy": "plant adaptations",
+   "onTopic": true
+  },
+  {
+   "id": "A_DF246uVlU",
+   "title": "Plants: Diversity, Structure, & Adaptations",
+   "channel": "Amoeba Sisters",
+   "views": "1,182,864 views",
+   "age": "3 yr ago",
+   "length": "9:28",
+   "tier": 2,
+   "viewCount": 1182864,
+   "foundBy": "plant adaptations",
+   "onTopic": true
+  },
+  {
+   "id": "xp6Zj24h8uA",
+   "title": "CAM Plants",
+   "channel": "Khan Academy",
+   "views": "312,997 views",
+   "age": "16 yr ago",
+   "length": "8:37",
+   "tier": 2,
+   "viewCount": 312997,
+   "foundBy": "khan academy carnivorous plants",
+   "onTopic": true
+  },
+  {
+   "id": "zdvKhaQxvag",
+   "title": "Plant cell walls | Structure of a cell | Biology | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "305,589 views",
+   "age": "11 yr ago",
+   "length": "7:42",
+   "tier": 2,
+   "viewCount": 305589,
+   "foundBy": "khan academy plant adaptations",
+   "onTopic": true
+  },
+  {
+   "id": "24YMQ9GvLss",
+   "title": "Overview of animal and plant cells | Biology | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "300,297 views",
+   "age": "11 yr ago",
+   "length": "8:41",
+   "tier": 2,
+   "viewCount": 300297,
+   "foundBy": "khan academy carnivorous plants",
+   "onTopic": true
+  },
+  {
+   "id": "c9aUWHleZ_k",
+   "title": "GCSE Biology - Structure of a Leaf | Plant Cell Organisation (2027/28 exams)",
+   "channel": "Cognito",
+   "views": "243,546 views",
+   "age": "1 yr ago",
+   "length": "4:56",
+   "tier": 2,
+   "viewCount": 243546,
+   "foundBy": "plant adaptations",
+   "onTopic": true
+  },
+  {
+   "id": "AQf3gKTCffs",
+   "title": "Photoperiodism  | Plant Biology | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "182,659 views",
+   "age": "9 yr ago",
+   "length": "7:55",
+   "tier": 2,
+   "viewCount": 182659,
+   "foundBy": "khan academy plant adaptations",
+   "onTopic": true
+  },
+  {
+   "id": "HjC-eMiMDfo",
+   "title": "Comparing animal and plant cells | Cells and organisms | Middle school biology | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "163,189 views",
+   "age": "4 yr ago",
+   "length": "3:57",
+   "tier": 2,
+   "viewCount": 163189,
+   "foundBy": "khan academy carnivorous plants",
+   "onTopic": true
+  },
+  {
+   "id": "2A_LKrLlhxE",
+   "title": "Phototropism  | Plant Biology | Khan Academy",
+   "channel": "Khan Academy",
+   "views": "150,846 views",
+   "age": "10 yr ago",
+   "length": "6:54",
+   "tier": 2,
+   "viewCount": 150846,
+   "foundBy": "khan academy plant adaptations",
+   "onTopic": true
+  },
+  {
+   "id": "heZUA5rQvBM",
+   "title": "The Carnivorous Plants That Gave Up Meat for Poop",
+   "channel": "SciShow",
+   "views": "132,489 views",
+   "age": "5 yr ago",
+   "length": "5:21",
+   "tier": 2,
+   "viewCount": 132489,
+   "foundBy": "ted-ed carnivorous plants",
+   "onTopic": true
+  },
+  {
+   "id": "DycQKyb5IP4",
+   "title": "GCSE Biology - Adaptations | Structural | Behavioural | Functional (2027/28 exams)",
+   "channel": "Cognito",
+   "views": "59,019 views",
+   "age": "1 yr ago",
+   "length": "6:38",
+   "tier": 2,
+   "viewCount": 59019,
+   "foundBy": "plant adaptations",
+   "onTopic": true
+  },
+  {
+   "id": "aClSp71zfro",
+   "title": "Learning Plant Learning: Prof. Ariel Novoplansky at TEDxJaffa",
+   "channel": "TEDx Talks",
+   "views": "50,185 views",
+   "age": "14 yr ago",
+   "length": "15:34",
+   "tier": 1,
+   "viewCount": 50185,
+   "foundBy": "plant adaptations ted",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 6,
+ "gate": "PASS",
+ "hasTed": true,
+ "failedQueries": []
+}

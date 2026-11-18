@@ -1,0 +1,2382 @@
+[
+  {
+    "path": "02_Video-Projects/104_Roemer-Fizeau-Foucault-Speed-Of-Light/01_Script/episode_script_draft_v01.md",
+    "pr": 582,
+    "head": "b05ad195345af843c2d9816d4e6d1f989c6881ac",
+    "sha256": "6260fe3b439addf2093d3f155814c7942bc93efaeb8a4d8e6843f42364dfb55f",
+    "earlier_prs": [
+      581
+    ]
+  },
+  {
+    "path": "02_Video-Projects/104_Roemer-Fizeau-Foucault-Speed-Of-Light/02_Voiceover/README.md",
+    "pr": 582,
+    "head": "b05ad195345af843c2d9816d4e6d1f989c6881ac",
+    "sha256": "a6f68ce06a3a64cbd983f6d70d387063a0640c30f107dc8011e98d9ae18181ab",
+    "earlier_prs": [
+      581
+    ]
+  },
+  {
+    "path": "02_Video-Projects/104_Roemer-Fizeau-Foucault-Speed-Of-Light/04_Generated-Clips/01_Raw/.gitkeep",
+    "pr": 582,
+    "head": "b05ad195345af843c2d9816d4e6d1f989c6881ac",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "earlier_prs": [
+      581
+    ]
+  },
+  {
+    "path": "02_Video-Projects/104_Roemer-Fizeau-Foucault-Speed-Of-Light/07_Edit-Project/.env.example",
+    "pr": 582,
+    "head": "b05ad195345af843c2d9816d4e6d1f989c6881ac",
+    "sha256": "19441f72e7bb760407114028895accd4dc50a346f7dcdfa5cccfad3cc8ef73a1",
+    "earlier_prs": [
+      581
+    ]
+  },
+  {
+    "path": "02_Video-Projects/104_Roemer-Fizeau-Foucault-Speed-Of-Light/07_Edit-Project/parts/part-01_plates_v01.json",
+    "pr": 582,
+    "head": "b05ad195345af843c2d9816d4e6d1f989c6881ac",
+    "sha256": "0d48ca96c29ce7f39c74b5283a6f41ce17b264e16842b333fa0026012e41309f",
+    "earlier_prs": [
+      581
+    ]
+  },
+  {
+    "path": "02_Video-Projects/104_Roemer-Fizeau-Foucault-Speed-Of-Light/08_Thumbnail/README.md",
+    "pr": 582,
+    "head": "b05ad195345af843c2d9816d4e6d1f989c6881ac",
+    "sha256": "affa66daf70fc04360a72222c09241d8439babf66ab1e18f9d505e75b8902ec8",
+    "earlier_prs": [
+      581
+    ]
+  },
+  {
+    "path": "02_Video-Projects/104_Roemer-Fizeau-Foucault-Speed-Of-Light/10_Shorts/README.md",
+    "pr": 582,
+    "head": "b05ad195345af843c2d9816d4e6d1f989c6881ac",
+    "sha256": "79cad1b576ffbbe639c2fc664d7d458711d0aa5daad9a8df18ef827b941a1ecb",
+    "earlier_prs": [
+      581
+    ]
+  },
+  {
+    "path": "02_Video-Projects/104_Roemer-Fizeau-Foucault-Speed-Of-Light/11_Upload-Package/PRE_BUILD_VIDIQ_AUDIT.md",
+    "pr": 582,
+    "head": "b05ad195345af843c2d9816d4e6d1f989c6881ac",
+    "sha256": "c1db56006def2d4a82355f669b6dc18e8efb9eed5b86431d244e991fea86ffc4",
+    "earlier_prs": [
+      581
+    ]
+  },
+  {
+    "path": "02_Video-Projects/104_Roemer-Fizeau-Foucault-Speed-Of-Light/11_Upload-Package/PRODUCTION_CHECKLIST_V2.md",
+    "pr": 582,
+    "head": "b05ad195345af843c2d9816d4e6d1f989c6881ac",
+    "sha256": "98cb2a10e64c3a5322493ef86f8f3aa25307b1e9462861f4c3568391377a9877",
+    "earlier_prs": [
+      581
+    ]
+  },
+  {
+    "path": "02_Video-Projects/104_Roemer-Fizeau-Foucault-Speed-Of-Light/11_Upload-Package/evidence_2026-11-14_neighbours.json",
+    "pr": 582,
+    "head": "b05ad195345af843c2d9816d4e6d1f989c6881ac",
+    "sha256": "9fbdc38ace4498b5ce479279f51005c0cd9fec4bfb9b957d88ff6fdcc071dff5",
+    "earlier_prs": [
+      581
+    ]
+  },
+  {
+    "path": "02_Video-Projects/104_Roemer-Fizeau-Foucault-Speed-Of-Light/11_Upload-Package/evidence_2026-11-14_public_search.json",
+    "pr": 582,
+    "head": "b05ad195345af843c2d9816d4e6d1f989c6881ac",
+    "sha256": "99310adeb97e84e56f47b6dc27464ea3c916c81bf397c8135ea8b709837f5155",
+    "earlier_prs": [
+      581
+    ]
+  },
+  {
+    "path": "02_Video-Projects/104_Roemer-Fizeau-Foucault-Speed-Of-Light/README.md",
+    "pr": 582,
+    "head": "b05ad195345af843c2d9816d4e6d1f989c6881ac",
+    "sha256": "db41a75ad8077617838e1c3f398104332cce377044bc81d878b3315a4628ee80",
+    "earlier_prs": [
+      581
+    ]
+  },
+  {
+    "path": "02_Video-Projects/104_Roemer-Fizeau-Foucault-Speed-Of-Light/TOPIC.md",
+    "pr": 582,
+    "head": "b05ad195345af843c2d9816d4e6d1f989c6881ac",
+    "sha256": "6d8ce3782dbe68b908acc079a0a5e68e9b9a8af24a039ae4b27408828187dac9",
+    "earlier_prs": [
+      581
+    ]
+  },
+  {
+    "path": "02_Video-Projects/104_Roemer-Fizeau-Foucault-Speed-Of-Light/production-status.md",
+    "pr": 582,
+    "head": "b05ad195345af843c2d9816d4e6d1f989c6881ac",
+    "sha256": "beaa5d56b5330a66cb3795ad04f04636ed6ea8f9ccbf620199eb7ae7f6ab6aaa",
+    "earlier_prs": [
+      581
+    ]
+  },
+  {
+    "path": "02_Video-Projects/104_Roemer-Fizeau-Foucault-Speed-Of-Light/status.json",
+    "pr": 582,
+    "head": "b05ad195345af843c2d9816d4e6d1f989c6881ac",
+    "sha256": "dfbf609a2fe869f21146cc27d965c4fa6f4f62c922fc34cd33de443d727e6988",
+    "earlier_prs": [
+      581
+    ]
+  },
+  {
+    "path": "02_Video-Projects/105_Ellis-Darwin-BurdonSanderson-Venus-Flytrap-Carnivorous-Plants/01_Script/episode_script_draft_v01.md",
+    "pr": 583,
+    "head": "5e4ea16e963dd2024ff14b3a5154330514699df5",
+    "sha256": "6260fe3b439addf2093d3f155814c7942bc93efaeb8a4d8e6843f42364dfb55f",
+    "earlier_prs": [
+      581
+    ]
+  },
+  {
+    "path": "02_Video-Projects/105_Ellis-Darwin-BurdonSanderson-Venus-Flytrap-Carnivorous-Plants/02_Voiceover/README.md",
+    "pr": 583,
+    "head": "5e4ea16e963dd2024ff14b3a5154330514699df5",
+    "sha256": "a6f68ce06a3a64cbd983f6d70d387063a0640c30f107dc8011e98d9ae18181ab",
+    "earlier_prs": [
+      581
+    ]
+  },
+  {
+    "path": "02_Video-Projects/105_Ellis-Darwin-BurdonSanderson-Venus-Flytrap-Carnivorous-Plants/04_Generated-Clips/01_Raw/.gitkeep",
+    "pr": 583,
+    "head": "5e4ea16e963dd2024ff14b3a5154330514699df5",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "earlier_prs": [
+      581
+    ]
+  },
+  {
+    "path": "02_Video-Projects/105_Ellis-Darwin-BurdonSanderson-Venus-Flytrap-Carnivorous-Plants/07_Edit-Project/.env.example",
+    "pr": 583,
+    "head": "5e4ea16e963dd2024ff14b3a5154330514699df5",
+    "sha256": "19441f72e7bb760407114028895accd4dc50a346f7dcdfa5cccfad3cc8ef73a1",
+    "earlier_prs": [
+      581
+    ]
+  },
+  {
+    "path": "02_Video-Projects/105_Ellis-Darwin-BurdonSanderson-Venus-Flytrap-Carnivorous-Plants/07_Edit-Project/parts/part-01_plates_v01.json",
+    "pr": 583,
+    "head": "5e4ea16e963dd2024ff14b3a5154330514699df5",
+    "sha256": "0d48ca96c29ce7f39c74b5283a6f41ce17b264e16842b333fa0026012e41309f",
+    "earlier_prs": [
+      581
+    ]
+  },
+  {
+    "path": "02_Video-Projects/105_Ellis-Darwin-BurdonSanderson-Venus-Flytrap-Carnivorous-Plants/08_Thumbnail/README.md",
+    "pr": 583,
+    "head": "5e4ea16e963dd2024ff14b3a5154330514699df5",
+    "sha256": "affa66daf70fc04360a72222c09241d8439babf66ab1e18f9d505e75b8902ec8",
+    "earlier_prs": [
+      581
+    ]
+  },
+  {
+    "path": "02_Video-Projects/105_Ellis-Darwin-BurdonSanderson-Venus-Flytrap-Carnivorous-Plants/10_Shorts/README.md",
+    "pr": 583,
+    "head": "5e4ea16e963dd2024ff14b3a5154330514699df5",
+    "sha256": "79cad1b576ffbbe639c2fc664d7d458711d0aa5daad9a8df18ef827b941a1ecb",
+    "earlier_prs": [
+      581
+    ]
+  },
+  {
+    "path": "02_Video-Projects/105_Ellis-Darwin-BurdonSanderson-Venus-Flytrap-Carnivorous-Plants/11_Upload-Package/PRE_BUILD_VIDIQ_AUDIT.md",
+    "pr": 583,
+    "head": "5e4ea16e963dd2024ff14b3a5154330514699df5",
+    "sha256": "ff60aab8f8d47e3130425707904f0bf21e9a230e8bc49bef6799f0fc6b7038c3",
+    "earlier_prs": [
+      581
+    ]
+  },
+  {
+    "path": "02_Video-Projects/105_Ellis-Darwin-BurdonSanderson-Venus-Flytrap-Carnivorous-Plants/11_Upload-Package/PRODUCTION_CHECKLIST_V2.md",
+    "pr": 583,
+    "head": "5e4ea16e963dd2024ff14b3a5154330514699df5",
+    "sha256": "98cb2a10e64c3a5322493ef86f8f3aa25307b1e9462861f4c3568391377a9877",
+    "earlier_prs": [
+      581
+    ]
+  },
+  {
+    "path": "02_Video-Projects/105_Ellis-Darwin-BurdonSanderson-Venus-Flytrap-Carnivorous-Plants/11_Upload-Package/evidence_2026-11-14_neighbours.json",
+    "pr": 583,
+    "head": "5e4ea16e963dd2024ff14b3a5154330514699df5",
+    "sha256": "5af585b9522f304765ca84c55a3a1fa557939139e1657cba176cd55080a94233",
+    "earlier_prs": [
+      581
+    ]
+  },
+  {
+    "path": "02_Video-Projects/105_Ellis-Darwin-BurdonSanderson-Venus-Flytrap-Carnivorous-Plants/11_Upload-Package/evidence_2026-11-14_public_search.json",
+    "pr": 583,
+    "head": "5e4ea16e963dd2024ff14b3a5154330514699df5",
+    "sha256": "422722ad9e3c5aa896802f9a07c6e619e6bfba96756c49f39b3168109fb4545b",
+    "earlier_prs": [
+      581
+    ]
+  },
+  {
+    "path": "02_Video-Projects/105_Ellis-Darwin-BurdonSanderson-Venus-Flytrap-Carnivorous-Plants/README.md",
+    "pr": 583,
+    "head": "5e4ea16e963dd2024ff14b3a5154330514699df5",
+    "sha256": "c85e52353a142851cbe4556b8e9d248c8ce774449a5495e40b4b8e6eaad036c5",
+    "earlier_prs": [
+      581
+    ]
+  },
+  {
+    "path": "02_Video-Projects/105_Ellis-Darwin-BurdonSanderson-Venus-Flytrap-Carnivorous-Plants/TOPIC.md",
+    "pr": 583,
+    "head": "5e4ea16e963dd2024ff14b3a5154330514699df5",
+    "sha256": "9fc6100fc04445d254b55cf4a5204884bdcb95ff14aeefb6db4c6a9d18fc31bb",
+    "earlier_prs": [
+      581
+    ]
+  },
+  {
+    "path": "02_Video-Projects/105_Ellis-Darwin-BurdonSanderson-Venus-Flytrap-Carnivorous-Plants/production-status.md",
+    "pr": 583,
+    "head": "5e4ea16e963dd2024ff14b3a5154330514699df5",
+    "sha256": "276fc61f3e46a345fa74b94206b4ec6aaea76412fc0193af362f924f530aeb07",
+    "earlier_prs": [
+      581
+    ]
+  },
+  {
+    "path": "02_Video-Projects/105_Ellis-Darwin-BurdonSanderson-Venus-Flytrap-Carnivorous-Plants/status.json",
+    "pr": 583,
+    "head": "5e4ea16e963dd2024ff14b3a5154330514699df5",
+    "sha256": "bc124eed86ffc5b0f88fe2c7f55cdef27f33e2c62bed0b83d4be90e8e15df5f2",
+    "earlier_prs": [
+      581
+    ]
+  },
+  {
+    "path": "02_Video-Projects/104_Roemer-Fizeau-Foucault-Speed-Of-Light/11_Upload-Package/TOPIC_GO_NO_GO_SHEET.md",
+    "pr": 582,
+    "head": "b05ad195345af843c2d9816d4e6d1f989c6881ac",
+    "sha256": "29ab15314c74954280619e410ae30a4dce0ad29a31d329ddaf951e750e489143",
+    "earlier_prs": []
+  },
+  {
+    "path": "02_Video-Projects/104_Roemer-Fizeau-Foucault-Speed-Of-Light/11_Upload-Package/TOPIC_OPPORTUNITY_SCORE.md",
+    "pr": 582,
+    "head": "b05ad195345af843c2d9816d4e6d1f989c6881ac",
+    "sha256": "c47b63aadbe689912d456c4afe94d6759b4288e3ac4f10446d09c0806755a8bb",
+    "earlier_prs": []
+  },
+  {
+    "path": "02_Video-Projects/105_Ellis-Darwin-BurdonSanderson-Venus-Flytrap-Carnivorous-Plants/11_Upload-Package/TOPIC_GO_NO_GO_SHEET.md",
+    "pr": 583,
+    "head": "5e4ea16e963dd2024ff14b3a5154330514699df5",
+    "sha256": "c2ba26e9129afb8e5703225a7425a528bad24e884d575e8e98616c9df40a92f6",
+    "earlier_prs": []
+  },
+  {
+    "path": "02_Video-Projects/105_Ellis-Darwin-BurdonSanderson-Venus-Flytrap-Carnivorous-Plants/11_Upload-Package/TOPIC_OPPORTUNITY_SCORE.md",
+    "pr": 583,
+    "head": "5e4ea16e963dd2024ff14b3a5154330514699df5",
+    "sha256": "390c97370994a15cc75ccdc57031f5f9c004d31a6b00884745d3ddaada821d22",
+    "earlier_prs": []
+  },
+  {
+    "path": "02_Video-Projects/106_Aristotle-Freud-Schmidt-Eels-Sargasso/01_Script/episode_script_draft_v01.md",
+    "pr": 589,
+    "head": "eade1b6c2b548a1583d48a1afe06ca628551ad23",
+    "sha256": "6260fe3b439addf2093d3f155814c7942bc93efaeb8a4d8e6843f42364dfb55f",
+    "earlier_prs": [
+      588
+    ]
+  },
+  {
+    "path": "02_Video-Projects/106_Aristotle-Freud-Schmidt-Eels-Sargasso/02_Voiceover/README.md",
+    "pr": 589,
+    "head": "eade1b6c2b548a1583d48a1afe06ca628551ad23",
+    "sha256": "a6f68ce06a3a64cbd983f6d70d387063a0640c30f107dc8011e98d9ae18181ab",
+    "earlier_prs": [
+      588
+    ]
+  },
+  {
+    "path": "02_Video-Projects/106_Aristotle-Freud-Schmidt-Eels-Sargasso/04_Generated-Clips/01_Raw/.gitkeep",
+    "pr": 589,
+    "head": "eade1b6c2b548a1583d48a1afe06ca628551ad23",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "earlier_prs": [
+      588
+    ]
+  },
+  {
+    "path": "02_Video-Projects/106_Aristotle-Freud-Schmidt-Eels-Sargasso/07_Edit-Project/.env.example",
+    "pr": 589,
+    "head": "eade1b6c2b548a1583d48a1afe06ca628551ad23",
+    "sha256": "19441f72e7bb760407114028895accd4dc50a346f7dcdfa5cccfad3cc8ef73a1",
+    "earlier_prs": [
+      588
+    ]
+  },
+  {
+    "path": "02_Video-Projects/106_Aristotle-Freud-Schmidt-Eels-Sargasso/07_Edit-Project/parts/part-01_plates_v01.json",
+    "pr": 589,
+    "head": "eade1b6c2b548a1583d48a1afe06ca628551ad23",
+    "sha256": "0d48ca96c29ce7f39c74b5283a6f41ce17b264e16842b333fa0026012e41309f",
+    "earlier_prs": [
+      588
+    ]
+  },
+  {
+    "path": "02_Video-Projects/106_Aristotle-Freud-Schmidt-Eels-Sargasso/08_Thumbnail/README.md",
+    "pr": 589,
+    "head": "eade1b6c2b548a1583d48a1afe06ca628551ad23",
+    "sha256": "affa66daf70fc04360a72222c09241d8439babf66ab1e18f9d505e75b8902ec8",
+    "earlier_prs": [
+      588
+    ]
+  },
+  {
+    "path": "02_Video-Projects/106_Aristotle-Freud-Schmidt-Eels-Sargasso/10_Shorts/README.md",
+    "pr": 589,
+    "head": "eade1b6c2b548a1583d48a1afe06ca628551ad23",
+    "sha256": "79cad1b576ffbbe639c2fc664d7d458711d0aa5daad9a8df18ef827b941a1ecb",
+    "earlier_prs": [
+      588
+    ]
+  },
+  {
+    "path": "02_Video-Projects/106_Aristotle-Freud-Schmidt-Eels-Sargasso/11_Upload-Package/PRE_BUILD_VIDIQ_AUDIT.md",
+    "pr": 589,
+    "head": "eade1b6c2b548a1583d48a1afe06ca628551ad23",
+    "sha256": "d41e7a351517558012da0e08ca4152bad61916a435a8cab9f01eaa5d82f247cc",
+    "earlier_prs": [
+      588
+    ]
+  },
+  {
+    "path": "02_Video-Projects/106_Aristotle-Freud-Schmidt-Eels-Sargasso/11_Upload-Package/PRODUCTION_CHECKLIST_V2.md",
+    "pr": 589,
+    "head": "eade1b6c2b548a1583d48a1afe06ca628551ad23",
+    "sha256": "98cb2a10e64c3a5322493ef86f8f3aa25307b1e9462861f4c3568391377a9877",
+    "earlier_prs": [
+      588
+    ]
+  },
+  {
+    "path": "02_Video-Projects/106_Aristotle-Freud-Schmidt-Eels-Sargasso/11_Upload-Package/evidence_2026-11-14_neighbours.json",
+    "pr": 589,
+    "head": "eade1b6c2b548a1583d48a1afe06ca628551ad23",
+    "sha256": "b606b4264c139810ad569387fc18b943dfea4c05247e05212eba2b09c9aa10af",
+    "earlier_prs": [
+      588
+    ]
+  },
+  {
+    "path": "02_Video-Projects/106_Aristotle-Freud-Schmidt-Eels-Sargasso/README.md",
+    "pr": 589,
+    "head": "eade1b6c2b548a1583d48a1afe06ca628551ad23",
+    "sha256": "f82d5ad3cb03619ebb89241f56e1fb9c396838393fcfa19bd8a1462fb5cc6f08",
+    "earlier_prs": [
+      588
+    ]
+  },
+  {
+    "path": "02_Video-Projects/106_Aristotle-Freud-Schmidt-Eels-Sargasso/TOPIC.md",
+    "pr": 589,
+    "head": "eade1b6c2b548a1583d48a1afe06ca628551ad23",
+    "sha256": "4ee91b396f1d17e3faa0d9d569f19a01bfbfd6a9709f4940d54d87920d67f355",
+    "earlier_prs": [
+      588
+    ]
+  },
+  {
+    "path": "02_Video-Projects/106_Aristotle-Freud-Schmidt-Eels-Sargasso/production-status.md",
+    "pr": 589,
+    "head": "eade1b6c2b548a1583d48a1afe06ca628551ad23",
+    "sha256": "faca87030114b62c6878e61f1b08195e57e21a926af455b305fc3a3cc1a05582",
+    "earlier_prs": [
+      588
+    ]
+  },
+  {
+    "path": "02_Video-Projects/106_Aristotle-Freud-Schmidt-Eels-Sargasso/status.json",
+    "pr": 589,
+    "head": "eade1b6c2b548a1583d48a1afe06ca628551ad23",
+    "sha256": "6f5ec712df227c8f93ca751b0f2ae877525a7d6dfc6e731b2de2a41b393ad0ca",
+    "earlier_prs": [
+      588
+    ]
+  },
+  {
+    "path": "02_Video-Projects/107_Tswett-Willstatter-Autumn-Leaves-Chlorophyll/01_Script/episode_script_draft_v01.md",
+    "pr": 591,
+    "head": "9b6c1a899c57c58dfb65b23b895da069350cac01",
+    "sha256": "6260fe3b439addf2093d3f155814c7942bc93efaeb8a4d8e6843f42364dfb55f",
+    "earlier_prs": [
+      588
+    ]
+  },
+  {
+    "path": "02_Video-Projects/107_Tswett-Willstatter-Autumn-Leaves-Chlorophyll/02_Voiceover/README.md",
+    "pr": 591,
+    "head": "9b6c1a899c57c58dfb65b23b895da069350cac01",
+    "sha256": "a6f68ce06a3a64cbd983f6d70d387063a0640c30f107dc8011e98d9ae18181ab",
+    "earlier_prs": [
+      588
+    ]
+  },
+  {
+    "path": "02_Video-Projects/107_Tswett-Willstatter-Autumn-Leaves-Chlorophyll/04_Generated-Clips/01_Raw/.gitkeep",
+    "pr": 591,
+    "head": "9b6c1a899c57c58dfb65b23b895da069350cac01",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "earlier_prs": [
+      588
+    ]
+  },
+  {
+    "path": "02_Video-Projects/107_Tswett-Willstatter-Autumn-Leaves-Chlorophyll/07_Edit-Project/.env.example",
+    "pr": 591,
+    "head": "9b6c1a899c57c58dfb65b23b895da069350cac01",
+    "sha256": "19441f72e7bb760407114028895accd4dc50a346f7dcdfa5cccfad3cc8ef73a1",
+    "earlier_prs": [
+      588
+    ]
+  },
+  {
+    "path": "02_Video-Projects/107_Tswett-Willstatter-Autumn-Leaves-Chlorophyll/07_Edit-Project/parts/part-01_plates_v01.json",
+    "pr": 591,
+    "head": "9b6c1a899c57c58dfb65b23b895da069350cac01",
+    "sha256": "0d48ca96c29ce7f39c74b5283a6f41ce17b264e16842b333fa0026012e41309f",
+    "earlier_prs": [
+      588
+    ]
+  },
+  {
+    "path": "02_Video-Projects/107_Tswett-Willstatter-Autumn-Leaves-Chlorophyll/08_Thumbnail/README.md",
+    "pr": 591,
+    "head": "9b6c1a899c57c58dfb65b23b895da069350cac01",
+    "sha256": "affa66daf70fc04360a72222c09241d8439babf66ab1e18f9d505e75b8902ec8",
+    "earlier_prs": [
+      588
+    ]
+  },
+  {
+    "path": "02_Video-Projects/107_Tswett-Willstatter-Autumn-Leaves-Chlorophyll/10_Shorts/README.md",
+    "pr": 591,
+    "head": "9b6c1a899c57c58dfb65b23b895da069350cac01",
+    "sha256": "79cad1b576ffbbe639c2fc664d7d458711d0aa5daad9a8df18ef827b941a1ecb",
+    "earlier_prs": [
+      588
+    ]
+  },
+  {
+    "path": "02_Video-Projects/107_Tswett-Willstatter-Autumn-Leaves-Chlorophyll/11_Upload-Package/PRE_BUILD_VIDIQ_AUDIT.md",
+    "pr": 591,
+    "head": "9b6c1a899c57c58dfb65b23b895da069350cac01",
+    "sha256": "a6032a4b16fcbd25ac316186acd28fc963706db4be3ca3831c6c7f03de012b3d",
+    "earlier_prs": [
+      588
+    ]
+  },
+  {
+    "path": "02_Video-Projects/107_Tswett-Willstatter-Autumn-Leaves-Chlorophyll/11_Upload-Package/PRODUCTION_CHECKLIST_V2.md",
+    "pr": 591,
+    "head": "9b6c1a899c57c58dfb65b23b895da069350cac01",
+    "sha256": "98cb2a10e64c3a5322493ef86f8f3aa25307b1e9462861f4c3568391377a9877",
+    "earlier_prs": [
+      588
+    ]
+  },
+  {
+    "path": "02_Video-Projects/107_Tswett-Willstatter-Autumn-Leaves-Chlorophyll/11_Upload-Package/evidence_2026-11-14_neighbours.json",
+    "pr": 591,
+    "head": "9b6c1a899c57c58dfb65b23b895da069350cac01",
+    "sha256": "e140f21faaa2bea835765f9847a59d5e810c04c7d7a367133aa418234a4a3ed2",
+    "earlier_prs": [
+      588
+    ]
+  },
+  {
+    "path": "02_Video-Projects/107_Tswett-Willstatter-Autumn-Leaves-Chlorophyll/README.md",
+    "pr": 591,
+    "head": "9b6c1a899c57c58dfb65b23b895da069350cac01",
+    "sha256": "adc9b0fc136afe57eb836d822eee5ca28ebe990eb22c0267e3adde5d6cd53741",
+    "earlier_prs": [
+      588
+    ]
+  },
+  {
+    "path": "02_Video-Projects/107_Tswett-Willstatter-Autumn-Leaves-Chlorophyll/TOPIC.md",
+    "pr": 591,
+    "head": "9b6c1a899c57c58dfb65b23b895da069350cac01",
+    "sha256": "db27d5074a3d0bc3167ca4e46df18da22e5b6ecbbe95de4cc05d8daf1305d0b5",
+    "earlier_prs": [
+      588
+    ]
+  },
+  {
+    "path": "02_Video-Projects/107_Tswett-Willstatter-Autumn-Leaves-Chlorophyll/production-status.md",
+    "pr": 591,
+    "head": "9b6c1a899c57c58dfb65b23b895da069350cac01",
+    "sha256": "08eee0569c90910fd411c4e0ae907d51a00d8b966e6be08e17f97ae9a8b391b1",
+    "earlier_prs": [
+      588
+    ]
+  },
+  {
+    "path": "02_Video-Projects/107_Tswett-Willstatter-Autumn-Leaves-Chlorophyll/status.json",
+    "pr": 591,
+    "head": "9b6c1a899c57c58dfb65b23b895da069350cac01",
+    "sha256": "8dcfa9f5a60c7a2fe9f1f7f582e4e7ca3798978e65ff3e522ebc29bc2eb7147b",
+    "earlier_prs": [
+      588
+    ]
+  },
+  {
+    "path": "02_Video-Projects/106_Aristotle-Freud-Schmidt-Eels-Sargasso/11_Upload-Package/TOPIC_GO_NO_GO_SHEET.md",
+    "pr": 589,
+    "head": "eade1b6c2b548a1583d48a1afe06ca628551ad23",
+    "sha256": "a5434d6c7707d3fb5f898ea2856d497e7ca271bb1254ed2b1ec68a0901d8e8f3",
+    "earlier_prs": []
+  },
+  {
+    "path": "02_Video-Projects/106_Aristotle-Freud-Schmidt-Eels-Sargasso/11_Upload-Package/TOPIC_OPPORTUNITY_SCORE.md",
+    "pr": 589,
+    "head": "eade1b6c2b548a1583d48a1afe06ca628551ad23",
+    "sha256": "7d25792622a383eaabbc5398eb72c3ba4441a5a4f20bd5aa3b114cef0b9d5793",
+    "earlier_prs": []
+  },
+  {
+    "path": "02_Video-Projects/106_Aristotle-Freud-Schmidt-Eels-Sargasso/11_Upload-Package/evidence_2026-11-14_public_search.json",
+    "pr": 589,
+    "head": "eade1b6c2b548a1583d48a1afe06ca628551ad23",
+    "sha256": "e0bb62193843f2e4def4393ee25ac224c4befaf437a1e6a6d76a15d16591690c",
+    "earlier_prs": []
+  },
+  {
+    "path": "02_Video-Projects/107_Tswett-Willstatter-Autumn-Leaves-Chlorophyll/11_Upload-Package/TOPIC_GO_NO_GO_SHEET.md",
+    "pr": 591,
+    "head": "9b6c1a899c57c58dfb65b23b895da069350cac01",
+    "sha256": "1875a79fc16534ab3143321f7b3efd7a0466aec37cb4f458558ff61734dfa128",
+    "earlier_prs": []
+  },
+  {
+    "path": "02_Video-Projects/107_Tswett-Willstatter-Autumn-Leaves-Chlorophyll/11_Upload-Package/TOPIC_OPPORTUNITY_SCORE.md",
+    "pr": 591,
+    "head": "9b6c1a899c57c58dfb65b23b895da069350cac01",
+    "sha256": "e2cb9b62e981fd34f89ec90bc8e76fb7464525efe658ed92784bd245f8c078e7",
+    "earlier_prs": []
+  },
+  {
+    "path": "02_Video-Projects/107_Tswett-Willstatter-Autumn-Leaves-Chlorophyll/11_Upload-Package/evidence_2026-11-14_public_search.json",
+    "pr": 591,
+    "head": "9b6c1a899c57c58dfb65b23b895da069350cac01",
+    "sha256": "4fba624175855d593f7a821422180828c097575fd2f7e89f378c6ba825dfe634",
+    "earlier_prs": []
+  },
+  {
+    "path": "02_Video-Projects/108_Faraday-Thomson-Joly-Somorjai-Why-Ice-Is-Slippery/01_Script/episode_script_draft_v01.md",
+    "pr": 604,
+    "head": "70d2215c20295e4246e89683d685a899a9e8faca",
+    "sha256": "6260fe3b439addf2093d3f155814c7942bc93efaeb8a4d8e6843f42364dfb55f",
+    "earlier_prs": [
+      602
+    ]
+  },
+  {
+    "path": "02_Video-Projects/108_Faraday-Thomson-Joly-Somorjai-Why-Ice-Is-Slippery/02_Voiceover/README.md",
+    "pr": 604,
+    "head": "70d2215c20295e4246e89683d685a899a9e8faca",
+    "sha256": "a6f68ce06a3a64cbd983f6d70d387063a0640c30f107dc8011e98d9ae18181ab",
+    "earlier_prs": [
+      602
+    ]
+  },
+  {
+    "path": "02_Video-Projects/108_Faraday-Thomson-Joly-Somorjai-Why-Ice-Is-Slippery/04_Generated-Clips/01_Raw/.gitkeep",
+    "pr": 604,
+    "head": "70d2215c20295e4246e89683d685a899a9e8faca",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "earlier_prs": [
+      602
+    ]
+  },
+  {
+    "path": "02_Video-Projects/108_Faraday-Thomson-Joly-Somorjai-Why-Ice-Is-Slippery/07_Edit-Project/.env.example",
+    "pr": 604,
+    "head": "70d2215c20295e4246e89683d685a899a9e8faca",
+    "sha256": "19441f72e7bb760407114028895accd4dc50a346f7dcdfa5cccfad3cc8ef73a1",
+    "earlier_prs": [
+      602
+    ]
+  },
+  {
+    "path": "02_Video-Projects/108_Faraday-Thomson-Joly-Somorjai-Why-Ice-Is-Slippery/07_Edit-Project/parts/part-01_plates_v01.json",
+    "pr": 604,
+    "head": "70d2215c20295e4246e89683d685a899a9e8faca",
+    "sha256": "0d48ca96c29ce7f39c74b5283a6f41ce17b264e16842b333fa0026012e41309f",
+    "earlier_prs": [
+      602
+    ]
+  },
+  {
+    "path": "02_Video-Projects/108_Faraday-Thomson-Joly-Somorjai-Why-Ice-Is-Slippery/08_Thumbnail/README.md",
+    "pr": 604,
+    "head": "70d2215c20295e4246e89683d685a899a9e8faca",
+    "sha256": "affa66daf70fc04360a72222c09241d8439babf66ab1e18f9d505e75b8902ec8",
+    "earlier_prs": [
+      602
+    ]
+  },
+  {
+    "path": "02_Video-Projects/108_Faraday-Thomson-Joly-Somorjai-Why-Ice-Is-Slippery/10_Shorts/README.md",
+    "pr": 604,
+    "head": "70d2215c20295e4246e89683d685a899a9e8faca",
+    "sha256": "79cad1b576ffbbe639c2fc664d7d458711d0aa5daad9a8df18ef827b941a1ecb",
+    "earlier_prs": [
+      602
+    ]
+  },
+  {
+    "path": "02_Video-Projects/108_Faraday-Thomson-Joly-Somorjai-Why-Ice-Is-Slippery/11_Upload-Package/PRE_BUILD_VIDIQ_AUDIT.md",
+    "pr": 604,
+    "head": "70d2215c20295e4246e89683d685a899a9e8faca",
+    "sha256": "65dea03252febefd00274255589b79feb3af02cbec2de04d0d4addc83a74748b",
+    "earlier_prs": [
+      602
+    ]
+  },
+  {
+    "path": "02_Video-Projects/108_Faraday-Thomson-Joly-Somorjai-Why-Ice-Is-Slippery/11_Upload-Package/PRODUCTION_CHECKLIST_V2.md",
+    "pr": 604,
+    "head": "70d2215c20295e4246e89683d685a899a9e8faca",
+    "sha256": "98cb2a10e64c3a5322493ef86f8f3aa25307b1e9462861f4c3568391377a9877",
+    "earlier_prs": [
+      602
+    ]
+  },
+  {
+    "path": "02_Video-Projects/108_Faraday-Thomson-Joly-Somorjai-Why-Ice-Is-Slippery/11_Upload-Package/evidence_2026-11-15_neighbours.json",
+    "pr": 604,
+    "head": "70d2215c20295e4246e89683d685a899a9e8faca",
+    "sha256": "062acb0a7ad1b4d6ca36910292d91a422dae20c1bbd580d72bc12ba87057efce",
+    "earlier_prs": [
+      602
+    ]
+  },
+  {
+    "path": "02_Video-Projects/108_Faraday-Thomson-Joly-Somorjai-Why-Ice-Is-Slippery/11_Upload-Package/evidence_2026-11-15_public_search.json",
+    "pr": 604,
+    "head": "70d2215c20295e4246e89683d685a899a9e8faca",
+    "sha256": "410690d49a9e633a2fefe22e591d79f24efd79ad5b5f90b52da5977e128bdb96",
+    "earlier_prs": [
+      602
+    ]
+  },
+  {
+    "path": "02_Video-Projects/108_Faraday-Thomson-Joly-Somorjai-Why-Ice-Is-Slippery/README.md",
+    "pr": 604,
+    "head": "70d2215c20295e4246e89683d685a899a9e8faca",
+    "sha256": "485c804027215d89522434043010cb0f733a85c8661de29e462f58ca2ae72965",
+    "earlier_prs": [
+      602
+    ]
+  },
+  {
+    "path": "02_Video-Projects/108_Faraday-Thomson-Joly-Somorjai-Why-Ice-Is-Slippery/TOPIC.md",
+    "pr": 604,
+    "head": "70d2215c20295e4246e89683d685a899a9e8faca",
+    "sha256": "c8b2f1a4e9de3d211be7f512dca2338140592568670f704e3acc0febd5bbf89d",
+    "earlier_prs": [
+      602
+    ]
+  },
+  {
+    "path": "02_Video-Projects/108_Faraday-Thomson-Joly-Somorjai-Why-Ice-Is-Slippery/production-status.md",
+    "pr": 604,
+    "head": "70d2215c20295e4246e89683d685a899a9e8faca",
+    "sha256": "9937816d68a1fa9c13f2a2da952d74727aa7c5a26cf4e9903b8d29b4538f6895",
+    "earlier_prs": [
+      602
+    ]
+  },
+  {
+    "path": "02_Video-Projects/108_Faraday-Thomson-Joly-Somorjai-Why-Ice-Is-Slippery/status.json",
+    "pr": 604,
+    "head": "70d2215c20295e4246e89683d685a899a9e8faca",
+    "sha256": "e96c1eb9229c842bf7dc968e71cfb0c4dd112aec4bf59e22ecaf0d72d8f72f19",
+    "earlier_prs": [
+      602
+    ]
+  },
+  {
+    "path": "02_Video-Projects/109_Lewis-Pickering-WilderSmith-Smulders-Why-Fingers-Wrinkle/01_Script/episode_script_draft_v01.md",
+    "pr": 603,
+    "head": "4dfde5985fee470070322a3f7c99d2510ba46f9c",
+    "sha256": "6260fe3b439addf2093d3f155814c7942bc93efaeb8a4d8e6843f42364dfb55f",
+    "earlier_prs": [
+      602
+    ]
+  },
+  {
+    "path": "02_Video-Projects/109_Lewis-Pickering-WilderSmith-Smulders-Why-Fingers-Wrinkle/02_Voiceover/README.md",
+    "pr": 603,
+    "head": "4dfde5985fee470070322a3f7c99d2510ba46f9c",
+    "sha256": "a6f68ce06a3a64cbd983f6d70d387063a0640c30f107dc8011e98d9ae18181ab",
+    "earlier_prs": [
+      602
+    ]
+  },
+  {
+    "path": "02_Video-Projects/109_Lewis-Pickering-WilderSmith-Smulders-Why-Fingers-Wrinkle/04_Generated-Clips/01_Raw/.gitkeep",
+    "pr": 603,
+    "head": "4dfde5985fee470070322a3f7c99d2510ba46f9c",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "earlier_prs": [
+      602
+    ]
+  },
+  {
+    "path": "02_Video-Projects/109_Lewis-Pickering-WilderSmith-Smulders-Why-Fingers-Wrinkle/07_Edit-Project/.env.example",
+    "pr": 603,
+    "head": "4dfde5985fee470070322a3f7c99d2510ba46f9c",
+    "sha256": "19441f72e7bb760407114028895accd4dc50a346f7dcdfa5cccfad3cc8ef73a1",
+    "earlier_prs": [
+      602
+    ]
+  },
+  {
+    "path": "02_Video-Projects/109_Lewis-Pickering-WilderSmith-Smulders-Why-Fingers-Wrinkle/07_Edit-Project/parts/part-01_plates_v01.json",
+    "pr": 603,
+    "head": "4dfde5985fee470070322a3f7c99d2510ba46f9c",
+    "sha256": "0d48ca96c29ce7f39c74b5283a6f41ce17b264e16842b333fa0026012e41309f",
+    "earlier_prs": [
+      602
+    ]
+  },
+  {
+    "path": "02_Video-Projects/109_Lewis-Pickering-WilderSmith-Smulders-Why-Fingers-Wrinkle/08_Thumbnail/README.md",
+    "pr": 603,
+    "head": "4dfde5985fee470070322a3f7c99d2510ba46f9c",
+    "sha256": "affa66daf70fc04360a72222c09241d8439babf66ab1e18f9d505e75b8902ec8",
+    "earlier_prs": [
+      602
+    ]
+  },
+  {
+    "path": "02_Video-Projects/109_Lewis-Pickering-WilderSmith-Smulders-Why-Fingers-Wrinkle/10_Shorts/README.md",
+    "pr": 603,
+    "head": "4dfde5985fee470070322a3f7c99d2510ba46f9c",
+    "sha256": "79cad1b576ffbbe639c2fc664d7d458711d0aa5daad9a8df18ef827b941a1ecb",
+    "earlier_prs": [
+      602
+    ]
+  },
+  {
+    "path": "02_Video-Projects/109_Lewis-Pickering-WilderSmith-Smulders-Why-Fingers-Wrinkle/11_Upload-Package/PRE_BUILD_VIDIQ_AUDIT.md",
+    "pr": 603,
+    "head": "4dfde5985fee470070322a3f7c99d2510ba46f9c",
+    "sha256": "b2b41d70ab3e21807fe3534fce2ff3e64076c643a212b9cd4aa8c4d2f9e87d54",
+    "earlier_prs": [
+      602
+    ]
+  },
+  {
+    "path": "02_Video-Projects/109_Lewis-Pickering-WilderSmith-Smulders-Why-Fingers-Wrinkle/11_Upload-Package/PRODUCTION_CHECKLIST_V2.md",
+    "pr": 603,
+    "head": "4dfde5985fee470070322a3f7c99d2510ba46f9c",
+    "sha256": "98cb2a10e64c3a5322493ef86f8f3aa25307b1e9462861f4c3568391377a9877",
+    "earlier_prs": [
+      602
+    ]
+  },
+  {
+    "path": "02_Video-Projects/109_Lewis-Pickering-WilderSmith-Smulders-Why-Fingers-Wrinkle/11_Upload-Package/evidence_2026-11-15_neighbours.json",
+    "pr": 603,
+    "head": "4dfde5985fee470070322a3f7c99d2510ba46f9c",
+    "sha256": "6672de8eba2bfdc0844574a38dd89c06844597de5e31ee09a10c060784f820b1",
+    "earlier_prs": [
+      602
+    ]
+  },
+  {
+    "path": "02_Video-Projects/109_Lewis-Pickering-WilderSmith-Smulders-Why-Fingers-Wrinkle/11_Upload-Package/evidence_2026-11-15_public_search.json",
+    "pr": 603,
+    "head": "4dfde5985fee470070322a3f7c99d2510ba46f9c",
+    "sha256": "6d44552aa86ee047d6c6a6187eb43903c2b035d0c31044c3281e487a0a8ca998",
+    "earlier_prs": [
+      602
+    ]
+  },
+  {
+    "path": "02_Video-Projects/109_Lewis-Pickering-WilderSmith-Smulders-Why-Fingers-Wrinkle/README.md",
+    "pr": 603,
+    "head": "4dfde5985fee470070322a3f7c99d2510ba46f9c",
+    "sha256": "dee86d1ffbd67ae98483b30f28071690d12eba5d85d32d0e57ff596ad93a7fac",
+    "earlier_prs": [
+      602
+    ]
+  },
+  {
+    "path": "02_Video-Projects/109_Lewis-Pickering-WilderSmith-Smulders-Why-Fingers-Wrinkle/TOPIC.md",
+    "pr": 603,
+    "head": "4dfde5985fee470070322a3f7c99d2510ba46f9c",
+    "sha256": "2c4aadc0675450413d99a0a3227125300ef306a9fa23f85dd90cc470b10b588f",
+    "earlier_prs": [
+      602
+    ]
+  },
+  {
+    "path": "02_Video-Projects/109_Lewis-Pickering-WilderSmith-Smulders-Why-Fingers-Wrinkle/production-status.md",
+    "pr": 603,
+    "head": "4dfde5985fee470070322a3f7c99d2510ba46f9c",
+    "sha256": "7c87fb49e9fbd59106adef993835b39286e15baf07f2893fe6634b7fe6d09c51",
+    "earlier_prs": [
+      602
+    ]
+  },
+  {
+    "path": "02_Video-Projects/109_Lewis-Pickering-WilderSmith-Smulders-Why-Fingers-Wrinkle/status.json",
+    "pr": 603,
+    "head": "4dfde5985fee470070322a3f7c99d2510ba46f9c",
+    "sha256": "afc0921614594098f21b3a501ec421932f7d6ccde211e94e14798d682b10614f",
+    "earlier_prs": [
+      602
+    ]
+  },
+  {
+    "path": "02_Video-Projects/109_Lewis-Pickering-WilderSmith-Smulders-Why-Fingers-Wrinkle/11_Upload-Package/TOPIC_GO_NO_GO_SHEET.md",
+    "pr": 603,
+    "head": "4dfde5985fee470070322a3f7c99d2510ba46f9c",
+    "sha256": "021d63a79909b3babe91fc482b90f7d19f39c77fa10b18e9fe89f0909e5f807c",
+    "earlier_prs": []
+  },
+  {
+    "path": "02_Video-Projects/109_Lewis-Pickering-WilderSmith-Smulders-Why-Fingers-Wrinkle/11_Upload-Package/TOPIC_OPPORTUNITY_SCORE.md",
+    "pr": 603,
+    "head": "4dfde5985fee470070322a3f7c99d2510ba46f9c",
+    "sha256": "dabaeb4b227cd720e7e50abbcb6e6338532fbce4a08691a947c37ec2a4fe446a",
+    "earlier_prs": []
+  },
+  {
+    "path": "02_Video-Projects/108_Faraday-Thomson-Joly-Somorjai-Why-Ice-Is-Slippery/11_Upload-Package/TOPIC_GO_NO_GO_SHEET.md",
+    "pr": 604,
+    "head": "70d2215c20295e4246e89683d685a899a9e8faca",
+    "sha256": "052ea16d8581402f7be8cd65be7be8e27fbac2956a8cc7bf0d471360e3cc1644",
+    "earlier_prs": []
+  },
+  {
+    "path": "02_Video-Projects/108_Faraday-Thomson-Joly-Somorjai-Why-Ice-Is-Slippery/11_Upload-Package/TOPIC_OPPORTUNITY_SCORE.md",
+    "pr": 604,
+    "head": "70d2215c20295e4246e89683d685a899a9e8faca",
+    "sha256": "2a8fb607273b1b7e68ffa671ad40ff903ebe32ce6eb4b45e60ac762b3e0ba692",
+    "earlier_prs": []
+  },
+  {
+    "path": "02_Video-Projects/110_Virtanen-Block-Imai-Why-Do-Onions-Make-You-Cry/01_Script/episode_script_draft_v01.md",
+    "pr": 608,
+    "head": "2fd166046ec0517acf99b19ebfb0e9ea02e98b7b",
+    "sha256": "6260fe3b439addf2093d3f155814c7942bc93efaeb8a4d8e6843f42364dfb55f",
+    "earlier_prs": [
+      607
+    ]
+  },
+  {
+    "path": "02_Video-Projects/110_Virtanen-Block-Imai-Why-Do-Onions-Make-You-Cry/02_Voiceover/README.md",
+    "pr": 608,
+    "head": "2fd166046ec0517acf99b19ebfb0e9ea02e98b7b",
+    "sha256": "a6f68ce06a3a64cbd983f6d70d387063a0640c30f107dc8011e98d9ae18181ab",
+    "earlier_prs": [
+      607
+    ]
+  },
+  {
+    "path": "02_Video-Projects/110_Virtanen-Block-Imai-Why-Do-Onions-Make-You-Cry/04_Generated-Clips/01_Raw/.gitkeep",
+    "pr": 608,
+    "head": "2fd166046ec0517acf99b19ebfb0e9ea02e98b7b",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "earlier_prs": [
+      607
+    ]
+  },
+  {
+    "path": "02_Video-Projects/110_Virtanen-Block-Imai-Why-Do-Onions-Make-You-Cry/07_Edit-Project/.env.example",
+    "pr": 608,
+    "head": "2fd166046ec0517acf99b19ebfb0e9ea02e98b7b",
+    "sha256": "19441f72e7bb760407114028895accd4dc50a346f7dcdfa5cccfad3cc8ef73a1",
+    "earlier_prs": [
+      607
+    ]
+  },
+  {
+    "path": "02_Video-Projects/110_Virtanen-Block-Imai-Why-Do-Onions-Make-You-Cry/07_Edit-Project/parts/part-01_plates_v01.json",
+    "pr": 608,
+    "head": "2fd166046ec0517acf99b19ebfb0e9ea02e98b7b",
+    "sha256": "0d48ca96c29ce7f39c74b5283a6f41ce17b264e16842b333fa0026012e41309f",
+    "earlier_prs": [
+      607
+    ]
+  },
+  {
+    "path": "02_Video-Projects/110_Virtanen-Block-Imai-Why-Do-Onions-Make-You-Cry/08_Thumbnail/README.md",
+    "pr": 608,
+    "head": "2fd166046ec0517acf99b19ebfb0e9ea02e98b7b",
+    "sha256": "affa66daf70fc04360a72222c09241d8439babf66ab1e18f9d505e75b8902ec8",
+    "earlier_prs": [
+      607
+    ]
+  },
+  {
+    "path": "02_Video-Projects/110_Virtanen-Block-Imai-Why-Do-Onions-Make-You-Cry/10_Shorts/README.md",
+    "pr": 608,
+    "head": "2fd166046ec0517acf99b19ebfb0e9ea02e98b7b",
+    "sha256": "79cad1b576ffbbe639c2fc664d7d458711d0aa5daad9a8df18ef827b941a1ecb",
+    "earlier_prs": [
+      607
+    ]
+  },
+  {
+    "path": "02_Video-Projects/110_Virtanen-Block-Imai-Why-Do-Onions-Make-You-Cry/11_Upload-Package/PRE_BUILD_VIDIQ_AUDIT.md",
+    "pr": 608,
+    "head": "2fd166046ec0517acf99b19ebfb0e9ea02e98b7b",
+    "sha256": "79d5feca9049530dd7f2246283aaeeef4375d2d8d814db7da71dd71008f3534b",
+    "earlier_prs": [
+      607
+    ]
+  },
+  {
+    "path": "02_Video-Projects/110_Virtanen-Block-Imai-Why-Do-Onions-Make-You-Cry/11_Upload-Package/PRODUCTION_CHECKLIST_V2.md",
+    "pr": 608,
+    "head": "2fd166046ec0517acf99b19ebfb0e9ea02e98b7b",
+    "sha256": "98cb2a10e64c3a5322493ef86f8f3aa25307b1e9462861f4c3568391377a9877",
+    "earlier_prs": [
+      607
+    ]
+  },
+  {
+    "path": "02_Video-Projects/110_Virtanen-Block-Imai-Why-Do-Onions-Make-You-Cry/11_Upload-Package/evidence_2026-11-16_neighbours.json",
+    "pr": 608,
+    "head": "2fd166046ec0517acf99b19ebfb0e9ea02e98b7b",
+    "sha256": "dfcafa36290d6450e7529b853a2f39cb95c3f869971fc42f6a9e7f1e97f1808e",
+    "earlier_prs": [
+      607
+    ]
+  },
+  {
+    "path": "02_Video-Projects/110_Virtanen-Block-Imai-Why-Do-Onions-Make-You-Cry/11_Upload-Package/evidence_2026-11-16_public_search.json",
+    "pr": 608,
+    "head": "2fd166046ec0517acf99b19ebfb0e9ea02e98b7b",
+    "sha256": "0ab0fa89b92789f06e43d7a4f130c31d025eadede20ef8db6812285ced3256d1",
+    "earlier_prs": [
+      607
+    ]
+  },
+  {
+    "path": "02_Video-Projects/110_Virtanen-Block-Imai-Why-Do-Onions-Make-You-Cry/README.md",
+    "pr": 608,
+    "head": "2fd166046ec0517acf99b19ebfb0e9ea02e98b7b",
+    "sha256": "edf97e69340ac0f1da3863bf224b88671a181c69e7aa8aac88c8f9409e522b5e",
+    "earlier_prs": [
+      607
+    ]
+  },
+  {
+    "path": "02_Video-Projects/110_Virtanen-Block-Imai-Why-Do-Onions-Make-You-Cry/TOPIC.md",
+    "pr": 608,
+    "head": "2fd166046ec0517acf99b19ebfb0e9ea02e98b7b",
+    "sha256": "54c037915b83104d5b554850f3932b263951a7999688ce8fc9de26c2de186842",
+    "earlier_prs": [
+      607
+    ]
+  },
+  {
+    "path": "02_Video-Projects/110_Virtanen-Block-Imai-Why-Do-Onions-Make-You-Cry/production-status.md",
+    "pr": 608,
+    "head": "2fd166046ec0517acf99b19ebfb0e9ea02e98b7b",
+    "sha256": "08fd2c041ead241cae241b86095bd067495fe53ac80fd5ff9066cb3e49f7e994",
+    "earlier_prs": [
+      607
+    ]
+  },
+  {
+    "path": "02_Video-Projects/110_Virtanen-Block-Imai-Why-Do-Onions-Make-You-Cry/status.json",
+    "pr": 608,
+    "head": "2fd166046ec0517acf99b19ebfb0e9ea02e98b7b",
+    "sha256": "4ed893170507fb1eb5e87bd3858bf4a4723a323e17fe9d331413a806a78846f4",
+    "earlier_prs": [
+      607
+    ]
+  },
+  {
+    "path": "02_Video-Projects/111_Roston-Unger-Kawchuk-Why-Do-Knuckles-Crack/01_Script/episode_script_draft_v01.md",
+    "pr": 609,
+    "head": "13835d4c3f137b7ce159a68fe8eeba19a326327a",
+    "sha256": "6260fe3b439addf2093d3f155814c7942bc93efaeb8a4d8e6843f42364dfb55f",
+    "earlier_prs": [
+      607
+    ]
+  },
+  {
+    "path": "02_Video-Projects/111_Roston-Unger-Kawchuk-Why-Do-Knuckles-Crack/02_Voiceover/README.md",
+    "pr": 609,
+    "head": "13835d4c3f137b7ce159a68fe8eeba19a326327a",
+    "sha256": "a6f68ce06a3a64cbd983f6d70d387063a0640c30f107dc8011e98d9ae18181ab",
+    "earlier_prs": [
+      607
+    ]
+  },
+  {
+    "path": "02_Video-Projects/111_Roston-Unger-Kawchuk-Why-Do-Knuckles-Crack/04_Generated-Clips/01_Raw/.gitkeep",
+    "pr": 609,
+    "head": "13835d4c3f137b7ce159a68fe8eeba19a326327a",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "earlier_prs": [
+      607
+    ]
+  },
+  {
+    "path": "02_Video-Projects/111_Roston-Unger-Kawchuk-Why-Do-Knuckles-Crack/07_Edit-Project/.env.example",
+    "pr": 609,
+    "head": "13835d4c3f137b7ce159a68fe8eeba19a326327a",
+    "sha256": "19441f72e7bb760407114028895accd4dc50a346f7dcdfa5cccfad3cc8ef73a1",
+    "earlier_prs": [
+      607
+    ]
+  },
+  {
+    "path": "02_Video-Projects/111_Roston-Unger-Kawchuk-Why-Do-Knuckles-Crack/07_Edit-Project/parts/part-01_plates_v01.json",
+    "pr": 609,
+    "head": "13835d4c3f137b7ce159a68fe8eeba19a326327a",
+    "sha256": "0d48ca96c29ce7f39c74b5283a6f41ce17b264e16842b333fa0026012e41309f",
+    "earlier_prs": [
+      607
+    ]
+  },
+  {
+    "path": "02_Video-Projects/111_Roston-Unger-Kawchuk-Why-Do-Knuckles-Crack/08_Thumbnail/README.md",
+    "pr": 609,
+    "head": "13835d4c3f137b7ce159a68fe8eeba19a326327a",
+    "sha256": "affa66daf70fc04360a72222c09241d8439babf66ab1e18f9d505e75b8902ec8",
+    "earlier_prs": [
+      607
+    ]
+  },
+  {
+    "path": "02_Video-Projects/111_Roston-Unger-Kawchuk-Why-Do-Knuckles-Crack/10_Shorts/README.md",
+    "pr": 609,
+    "head": "13835d4c3f137b7ce159a68fe8eeba19a326327a",
+    "sha256": "79cad1b576ffbbe639c2fc664d7d458711d0aa5daad9a8df18ef827b941a1ecb",
+    "earlier_prs": [
+      607
+    ]
+  },
+  {
+    "path": "02_Video-Projects/111_Roston-Unger-Kawchuk-Why-Do-Knuckles-Crack/11_Upload-Package/PRE_BUILD_VIDIQ_AUDIT.md",
+    "pr": 609,
+    "head": "13835d4c3f137b7ce159a68fe8eeba19a326327a",
+    "sha256": "39454486b0a6dec166cf6bfbf0663bdc483759c1245c60eb7ced93266e54235e",
+    "earlier_prs": [
+      607
+    ]
+  },
+  {
+    "path": "02_Video-Projects/111_Roston-Unger-Kawchuk-Why-Do-Knuckles-Crack/11_Upload-Package/PRODUCTION_CHECKLIST_V2.md",
+    "pr": 609,
+    "head": "13835d4c3f137b7ce159a68fe8eeba19a326327a",
+    "sha256": "98cb2a10e64c3a5322493ef86f8f3aa25307b1e9462861f4c3568391377a9877",
+    "earlier_prs": [
+      607
+    ]
+  },
+  {
+    "path": "02_Video-Projects/111_Roston-Unger-Kawchuk-Why-Do-Knuckles-Crack/11_Upload-Package/evidence_2026-11-16_neighbours.json",
+    "pr": 609,
+    "head": "13835d4c3f137b7ce159a68fe8eeba19a326327a",
+    "sha256": "6857df85b85516b93e997d225b841d548986c6882050d144b95a3bd336f209f0",
+    "earlier_prs": [
+      607
+    ]
+  },
+  {
+    "path": "02_Video-Projects/111_Roston-Unger-Kawchuk-Why-Do-Knuckles-Crack/11_Upload-Package/evidence_2026-11-16_public_search.json",
+    "pr": 609,
+    "head": "13835d4c3f137b7ce159a68fe8eeba19a326327a",
+    "sha256": "fa63e24548e4751d2e5c4fd8937ccc16f0f974d2243f07b8f042f791eddba701",
+    "earlier_prs": [
+      607
+    ]
+  },
+  {
+    "path": "02_Video-Projects/111_Roston-Unger-Kawchuk-Why-Do-Knuckles-Crack/README.md",
+    "pr": 609,
+    "head": "13835d4c3f137b7ce159a68fe8eeba19a326327a",
+    "sha256": "8af687b2b997dc858db5b4b7c65e8ea48f55c97c1b1a550f8e86874a97a0e6b6",
+    "earlier_prs": [
+      607
+    ]
+  },
+  {
+    "path": "02_Video-Projects/111_Roston-Unger-Kawchuk-Why-Do-Knuckles-Crack/TOPIC.md",
+    "pr": 609,
+    "head": "13835d4c3f137b7ce159a68fe8eeba19a326327a",
+    "sha256": "f0719ff031b5d40754f5c2766a9699613fa6172f64b8ea27c23dfbb17a24ba7d",
+    "earlier_prs": [
+      607
+    ]
+  },
+  {
+    "path": "02_Video-Projects/111_Roston-Unger-Kawchuk-Why-Do-Knuckles-Crack/production-status.md",
+    "pr": 609,
+    "head": "13835d4c3f137b7ce159a68fe8eeba19a326327a",
+    "sha256": "030f68145d10dd3a3a47a31f6e5bc68f0394e3e17f25bfd083709da4cde6232b",
+    "earlier_prs": [
+      607
+    ]
+  },
+  {
+    "path": "02_Video-Projects/111_Roston-Unger-Kawchuk-Why-Do-Knuckles-Crack/status.json",
+    "pr": 609,
+    "head": "13835d4c3f137b7ce159a68fe8eeba19a326327a",
+    "sha256": "f8c00336c2433b0cca04a48635e2ec7e93f71f99647b490e0721b671bfe0f263",
+    "earlier_prs": [
+      607
+    ]
+  },
+  {
+    "path": "02_Video-Projects/110_Virtanen-Block-Imai-Why-Do-Onions-Make-You-Cry/11_Upload-Package/TOPIC_GO_NO_GO_SHEET.md",
+    "pr": 608,
+    "head": "2fd166046ec0517acf99b19ebfb0e9ea02e98b7b",
+    "sha256": "a4e32653d31a079e281734f7aee60a53eaf0863c0ed5ee54c4b171545560ad2c",
+    "earlier_prs": []
+  },
+  {
+    "path": "02_Video-Projects/110_Virtanen-Block-Imai-Why-Do-Onions-Make-You-Cry/11_Upload-Package/TOPIC_OPPORTUNITY_SCORE.md",
+    "pr": 608,
+    "head": "2fd166046ec0517acf99b19ebfb0e9ea02e98b7b",
+    "sha256": "5126a97611d2364d263ced337728e7ec86f9c5c4214f64371457920c88c10c7a",
+    "earlier_prs": []
+  },
+  {
+    "path": "02_Video-Projects/111_Roston-Unger-Kawchuk-Why-Do-Knuckles-Crack/11_Upload-Package/TOPIC_GO_NO_GO_SHEET.md",
+    "pr": 609,
+    "head": "13835d4c3f137b7ce159a68fe8eeba19a326327a",
+    "sha256": "adfd377ac4b23c4d026da32fa8db4b1d5011018da38b904ff006267fc71d5ca0",
+    "earlier_prs": []
+  },
+  {
+    "path": "02_Video-Projects/111_Roston-Unger-Kawchuk-Why-Do-Knuckles-Crack/11_Upload-Package/TOPIC_OPPORTUNITY_SCORE.md",
+    "pr": 609,
+    "head": "13835d4c3f137b7ce159a68fe8eeba19a326327a",
+    "sha256": "7a9d3d4424049edf0183f315d1fcc5388771b37e90e41c434d3605f66446f3ea",
+    "earlier_prs": []
+  },
+  {
+    "path": "02_Video-Projects/112_Provine-Gallup-Why-Do-We-Yawn/01_Script/episode_script_draft_v01.md",
+    "pr": 617,
+    "head": "653a7c76a47d2f23a94dcd6cfd097e506e512a59",
+    "sha256": "6260fe3b439addf2093d3f155814c7942bc93efaeb8a4d8e6843f42364dfb55f",
+    "earlier_prs": [
+      614
+    ]
+  },
+  {
+    "path": "02_Video-Projects/112_Provine-Gallup-Why-Do-We-Yawn/02_Voiceover/README.md",
+    "pr": 617,
+    "head": "653a7c76a47d2f23a94dcd6cfd097e506e512a59",
+    "sha256": "a6f68ce06a3a64cbd983f6d70d387063a0640c30f107dc8011e98d9ae18181ab",
+    "earlier_prs": [
+      614
+    ]
+  },
+  {
+    "path": "02_Video-Projects/112_Provine-Gallup-Why-Do-We-Yawn/04_Generated-Clips/01_Raw/.gitkeep",
+    "pr": 617,
+    "head": "653a7c76a47d2f23a94dcd6cfd097e506e512a59",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "earlier_prs": [
+      614
+    ]
+  },
+  {
+    "path": "02_Video-Projects/112_Provine-Gallup-Why-Do-We-Yawn/07_Edit-Project/.env.example",
+    "pr": 617,
+    "head": "653a7c76a47d2f23a94dcd6cfd097e506e512a59",
+    "sha256": "19441f72e7bb760407114028895accd4dc50a346f7dcdfa5cccfad3cc8ef73a1",
+    "earlier_prs": [
+      614
+    ]
+  },
+  {
+    "path": "02_Video-Projects/112_Provine-Gallup-Why-Do-We-Yawn/07_Edit-Project/parts/part-01_plates_v01.json",
+    "pr": 617,
+    "head": "653a7c76a47d2f23a94dcd6cfd097e506e512a59",
+    "sha256": "0d48ca96c29ce7f39c74b5283a6f41ce17b264e16842b333fa0026012e41309f",
+    "earlier_prs": [
+      614
+    ]
+  },
+  {
+    "path": "02_Video-Projects/112_Provine-Gallup-Why-Do-We-Yawn/08_Thumbnail/README.md",
+    "pr": 617,
+    "head": "653a7c76a47d2f23a94dcd6cfd097e506e512a59",
+    "sha256": "affa66daf70fc04360a72222c09241d8439babf66ab1e18f9d505e75b8902ec8",
+    "earlier_prs": [
+      614
+    ]
+  },
+  {
+    "path": "02_Video-Projects/112_Provine-Gallup-Why-Do-We-Yawn/10_Shorts/README.md",
+    "pr": 617,
+    "head": "653a7c76a47d2f23a94dcd6cfd097e506e512a59",
+    "sha256": "79cad1b576ffbbe639c2fc664d7d458711d0aa5daad9a8df18ef827b941a1ecb",
+    "earlier_prs": [
+      614
+    ]
+  },
+  {
+    "path": "02_Video-Projects/112_Provine-Gallup-Why-Do-We-Yawn/11_Upload-Package/PRE_BUILD_VIDIQ_AUDIT.md",
+    "pr": 617,
+    "head": "653a7c76a47d2f23a94dcd6cfd097e506e512a59",
+    "sha256": "24d73b15728f3b0256eb84e54913e35081fa353bf1763e3e1d96a8935182d1b4",
+    "earlier_prs": [
+      614
+    ]
+  },
+  {
+    "path": "02_Video-Projects/112_Provine-Gallup-Why-Do-We-Yawn/11_Upload-Package/PRODUCTION_CHECKLIST_V2.md",
+    "pr": 617,
+    "head": "653a7c76a47d2f23a94dcd6cfd097e506e512a59",
+    "sha256": "98cb2a10e64c3a5322493ef86f8f3aa25307b1e9462861f4c3568391377a9877",
+    "earlier_prs": [
+      614
+    ]
+  },
+  {
+    "path": "02_Video-Projects/112_Provine-Gallup-Why-Do-We-Yawn/11_Upload-Package/evidence_2026-11-16_neighbours.json",
+    "pr": 617,
+    "head": "653a7c76a47d2f23a94dcd6cfd097e506e512a59",
+    "sha256": "edea7f753703723624994137eeafa90874d6bbd442bd29f8b5a5b2f0b3de7937",
+    "earlier_prs": [
+      614
+    ]
+  },
+  {
+    "path": "02_Video-Projects/112_Provine-Gallup-Why-Do-We-Yawn/11_Upload-Package/evidence_2026-11-16_public_search.json",
+    "pr": 617,
+    "head": "653a7c76a47d2f23a94dcd6cfd097e506e512a59",
+    "sha256": "a025966b58c8e0f3c2fe1276fc338c29e95606d84a4c6c99b55cdca3963601a4",
+    "earlier_prs": [
+      614
+    ]
+  },
+  {
+    "path": "02_Video-Projects/112_Provine-Gallup-Why-Do-We-Yawn/README.md",
+    "pr": 617,
+    "head": "653a7c76a47d2f23a94dcd6cfd097e506e512a59",
+    "sha256": "c86b217e7437e4d532c35cdcea310cfd376c845d9c975499fbbfc311ca4c3440",
+    "earlier_prs": [
+      614
+    ]
+  },
+  {
+    "path": "02_Video-Projects/112_Provine-Gallup-Why-Do-We-Yawn/TOPIC.md",
+    "pr": 617,
+    "head": "653a7c76a47d2f23a94dcd6cfd097e506e512a59",
+    "sha256": "e98ba96e8ca52f211e5e1bcf507e8aa5eabc66da7d564bffe5bad4c0a4ffa556",
+    "earlier_prs": [
+      614
+    ]
+  },
+  {
+    "path": "02_Video-Projects/112_Provine-Gallup-Why-Do-We-Yawn/production-status.md",
+    "pr": 617,
+    "head": "653a7c76a47d2f23a94dcd6cfd097e506e512a59",
+    "sha256": "e1c865b3c0fd04bb0dec7d6d3c819f1b6226ad598f7043f3ce5dd644b2a76d30",
+    "earlier_prs": [
+      614
+    ]
+  },
+  {
+    "path": "02_Video-Projects/112_Provine-Gallup-Why-Do-We-Yawn/status.json",
+    "pr": 617,
+    "head": "653a7c76a47d2f23a94dcd6cfd097e506e512a59",
+    "sha256": "aaf6cb1c6c04ce68008cd68fff19a9a72d80d08ff3e017886cdc1b669e15a82f",
+    "earlier_prs": [
+      614
+    ]
+  },
+  {
+    "path": "02_Video-Projects/113_Marey-Maxwell-Kane-How-Do-Cats-Land-On-Their-Feet/01_Script/episode_script_draft_v01.md",
+    "pr": 616,
+    "head": "2be596909b5bc2aae20957117ef633b32228ed7f",
+    "sha256": "6260fe3b439addf2093d3f155814c7942bc93efaeb8a4d8e6843f42364dfb55f",
+    "earlier_prs": [
+      614
+    ]
+  },
+  {
+    "path": "02_Video-Projects/113_Marey-Maxwell-Kane-How-Do-Cats-Land-On-Their-Feet/02_Voiceover/README.md",
+    "pr": 616,
+    "head": "2be596909b5bc2aae20957117ef633b32228ed7f",
+    "sha256": "a6f68ce06a3a64cbd983f6d70d387063a0640c30f107dc8011e98d9ae18181ab",
+    "earlier_prs": [
+      614
+    ]
+  },
+  {
+    "path": "02_Video-Projects/113_Marey-Maxwell-Kane-How-Do-Cats-Land-On-Their-Feet/04_Generated-Clips/01_Raw/.gitkeep",
+    "pr": 616,
+    "head": "2be596909b5bc2aae20957117ef633b32228ed7f",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "earlier_prs": [
+      614
+    ]
+  },
+  {
+    "path": "02_Video-Projects/113_Marey-Maxwell-Kane-How-Do-Cats-Land-On-Their-Feet/07_Edit-Project/.env.example",
+    "pr": 616,
+    "head": "2be596909b5bc2aae20957117ef633b32228ed7f",
+    "sha256": "19441f72e7bb760407114028895accd4dc50a346f7dcdfa5cccfad3cc8ef73a1",
+    "earlier_prs": [
+      614
+    ]
+  },
+  {
+    "path": "02_Video-Projects/113_Marey-Maxwell-Kane-How-Do-Cats-Land-On-Their-Feet/07_Edit-Project/parts/part-01_plates_v01.json",
+    "pr": 616,
+    "head": "2be596909b5bc2aae20957117ef633b32228ed7f",
+    "sha256": "0d48ca96c29ce7f39c74b5283a6f41ce17b264e16842b333fa0026012e41309f",
+    "earlier_prs": [
+      614
+    ]
+  },
+  {
+    "path": "02_Video-Projects/113_Marey-Maxwell-Kane-How-Do-Cats-Land-On-Their-Feet/08_Thumbnail/README.md",
+    "pr": 616,
+    "head": "2be596909b5bc2aae20957117ef633b32228ed7f",
+    "sha256": "affa66daf70fc04360a72222c09241d8439babf66ab1e18f9d505e75b8902ec8",
+    "earlier_prs": [
+      614
+    ]
+  },
+  {
+    "path": "02_Video-Projects/113_Marey-Maxwell-Kane-How-Do-Cats-Land-On-Their-Feet/10_Shorts/README.md",
+    "pr": 616,
+    "head": "2be596909b5bc2aae20957117ef633b32228ed7f",
+    "sha256": "79cad1b576ffbbe639c2fc664d7d458711d0aa5daad9a8df18ef827b941a1ecb",
+    "earlier_prs": [
+      614
+    ]
+  },
+  {
+    "path": "02_Video-Projects/113_Marey-Maxwell-Kane-How-Do-Cats-Land-On-Their-Feet/11_Upload-Package/PRE_BUILD_VIDIQ_AUDIT.md",
+    "pr": 616,
+    "head": "2be596909b5bc2aae20957117ef633b32228ed7f",
+    "sha256": "b688e2149ae3206af06e6e02d40a8821b202d40c3ff9a0300f3ae8b48491106e",
+    "earlier_prs": [
+      614
+    ]
+  },
+  {
+    "path": "02_Video-Projects/113_Marey-Maxwell-Kane-How-Do-Cats-Land-On-Their-Feet/11_Upload-Package/PRODUCTION_CHECKLIST_V2.md",
+    "pr": 616,
+    "head": "2be596909b5bc2aae20957117ef633b32228ed7f",
+    "sha256": "98cb2a10e64c3a5322493ef86f8f3aa25307b1e9462861f4c3568391377a9877",
+    "earlier_prs": [
+      614
+    ]
+  },
+  {
+    "path": "02_Video-Projects/113_Marey-Maxwell-Kane-How-Do-Cats-Land-On-Their-Feet/11_Upload-Package/evidence_2026-11-16_neighbours.json",
+    "pr": 616,
+    "head": "2be596909b5bc2aae20957117ef633b32228ed7f",
+    "sha256": "4408f0c9825a417b84bf823ac2c8f24844085218647f82af1ae81acc9656fbab",
+    "earlier_prs": [
+      614
+    ]
+  },
+  {
+    "path": "02_Video-Projects/113_Marey-Maxwell-Kane-How-Do-Cats-Land-On-Their-Feet/11_Upload-Package/evidence_2026-11-16_public_search.json",
+    "pr": 616,
+    "head": "2be596909b5bc2aae20957117ef633b32228ed7f",
+    "sha256": "394e427827348cabc9e6c3d1b07b13174a2bdb1eca78427a1f116aeee06d0b54",
+    "earlier_prs": [
+      614
+    ]
+  },
+  {
+    "path": "02_Video-Projects/113_Marey-Maxwell-Kane-How-Do-Cats-Land-On-Their-Feet/README.md",
+    "pr": 616,
+    "head": "2be596909b5bc2aae20957117ef633b32228ed7f",
+    "sha256": "d4cc7b33f1c4128885ffcdbf21e86535c5118cdc85cb70960a71b10125dc2153",
+    "earlier_prs": [
+      614
+    ]
+  },
+  {
+    "path": "02_Video-Projects/113_Marey-Maxwell-Kane-How-Do-Cats-Land-On-Their-Feet/TOPIC.md",
+    "pr": 616,
+    "head": "2be596909b5bc2aae20957117ef633b32228ed7f",
+    "sha256": "c113310884aac94e0c4b9b1414e339aa375a574efa733e3cd776647a64df7f30",
+    "earlier_prs": [
+      614
+    ]
+  },
+  {
+    "path": "02_Video-Projects/113_Marey-Maxwell-Kane-How-Do-Cats-Land-On-Their-Feet/production-status.md",
+    "pr": 616,
+    "head": "2be596909b5bc2aae20957117ef633b32228ed7f",
+    "sha256": "feb288930d9aed82baf16c5974dfcca201bba9eda7390dc89c703260568d40fe",
+    "earlier_prs": [
+      614
+    ]
+  },
+  {
+    "path": "02_Video-Projects/113_Marey-Maxwell-Kane-How-Do-Cats-Land-On-Their-Feet/status.json",
+    "pr": 616,
+    "head": "2be596909b5bc2aae20957117ef633b32228ed7f",
+    "sha256": "19a9472b7c30b8f63f797c7564d724b2e743c55052dfbe0d95bfd89398f92dca",
+    "earlier_prs": [
+      614
+    ]
+  },
+  {
+    "path": "02_Video-Projects/113_Marey-Maxwell-Kane-How-Do-Cats-Land-On-Their-Feet/11_Upload-Package/TOPIC_GO_NO_GO_SHEET.md",
+    "pr": 616,
+    "head": "2be596909b5bc2aae20957117ef633b32228ed7f",
+    "sha256": "51f352803f8728558b219ff339b747dd01ee270b13ae0e761e4cb8df2bc3f681",
+    "earlier_prs": []
+  },
+  {
+    "path": "02_Video-Projects/113_Marey-Maxwell-Kane-How-Do-Cats-Land-On-Their-Feet/11_Upload-Package/TOPIC_OPPORTUNITY_SCORE.md",
+    "pr": 616,
+    "head": "2be596909b5bc2aae20957117ef633b32228ed7f",
+    "sha256": "32fe877d4b95d4cc2a844d458174513e8bccf2f3c11bf6f391aa31893d81c35f",
+    "earlier_prs": []
+  },
+  {
+    "path": "02_Video-Projects/112_Provine-Gallup-Why-Do-We-Yawn/11_Upload-Package/TOPIC_GO_NO_GO_SHEET.md",
+    "pr": 617,
+    "head": "653a7c76a47d2f23a94dcd6cfd097e506e512a59",
+    "sha256": "c2f5a4645615008408e97023129632df8a8cbb8465d0e5b5586cce5e6e016f27",
+    "earlier_prs": []
+  },
+  {
+    "path": "02_Video-Projects/112_Provine-Gallup-Why-Do-We-Yawn/11_Upload-Package/TOPIC_OPPORTUNITY_SCORE.md",
+    "pr": 617,
+    "head": "653a7c76a47d2f23a94dcd6cfd097e506e512a59",
+    "sha256": "d4aae461f41ef2f87d999d1867a5cabdbcc51d7c30e253a2569f8174b6083d86",
+    "earlier_prs": []
+  },
+  {
+    "path": "02_Video-Projects/114_Bruecke-Milinkovitch-How-Do-Chameleons-Change-Colour/01_Script/episode_script_draft_v01.md",
+    "pr": 619,
+    "head": "affe9b698ec5e12cafc5758ec9533597883dc351",
+    "sha256": "6260fe3b439addf2093d3f155814c7942bc93efaeb8a4d8e6843f42364dfb55f",
+    "earlier_prs": [
+      618
+    ]
+  },
+  {
+    "path": "02_Video-Projects/114_Bruecke-Milinkovitch-How-Do-Chameleons-Change-Colour/02_Voiceover/README.md",
+    "pr": 619,
+    "head": "affe9b698ec5e12cafc5758ec9533597883dc351",
+    "sha256": "a6f68ce06a3a64cbd983f6d70d387063a0640c30f107dc8011e98d9ae18181ab",
+    "earlier_prs": [
+      618
+    ]
+  },
+  {
+    "path": "02_Video-Projects/114_Bruecke-Milinkovitch-How-Do-Chameleons-Change-Colour/04_Generated-Clips/01_Raw/.gitkeep",
+    "pr": 619,
+    "head": "affe9b698ec5e12cafc5758ec9533597883dc351",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "earlier_prs": [
+      618
+    ]
+  },
+  {
+    "path": "02_Video-Projects/114_Bruecke-Milinkovitch-How-Do-Chameleons-Change-Colour/07_Edit-Project/.env.example",
+    "pr": 619,
+    "head": "affe9b698ec5e12cafc5758ec9533597883dc351",
+    "sha256": "19441f72e7bb760407114028895accd4dc50a346f7dcdfa5cccfad3cc8ef73a1",
+    "earlier_prs": [
+      618
+    ]
+  },
+  {
+    "path": "02_Video-Projects/114_Bruecke-Milinkovitch-How-Do-Chameleons-Change-Colour/07_Edit-Project/parts/part-01_plates_v01.json",
+    "pr": 619,
+    "head": "affe9b698ec5e12cafc5758ec9533597883dc351",
+    "sha256": "0d48ca96c29ce7f39c74b5283a6f41ce17b264e16842b333fa0026012e41309f",
+    "earlier_prs": [
+      618
+    ]
+  },
+  {
+    "path": "02_Video-Projects/114_Bruecke-Milinkovitch-How-Do-Chameleons-Change-Colour/08_Thumbnail/README.md",
+    "pr": 619,
+    "head": "affe9b698ec5e12cafc5758ec9533597883dc351",
+    "sha256": "affa66daf70fc04360a72222c09241d8439babf66ab1e18f9d505e75b8902ec8",
+    "earlier_prs": [
+      618
+    ]
+  },
+  {
+    "path": "02_Video-Projects/114_Bruecke-Milinkovitch-How-Do-Chameleons-Change-Colour/10_Shorts/README.md",
+    "pr": 619,
+    "head": "affe9b698ec5e12cafc5758ec9533597883dc351",
+    "sha256": "79cad1b576ffbbe639c2fc664d7d458711d0aa5daad9a8df18ef827b941a1ecb",
+    "earlier_prs": [
+      618
+    ]
+  },
+  {
+    "path": "02_Video-Projects/114_Bruecke-Milinkovitch-How-Do-Chameleons-Change-Colour/11_Upload-Package/PRE_BUILD_VIDIQ_AUDIT.md",
+    "pr": 619,
+    "head": "affe9b698ec5e12cafc5758ec9533597883dc351",
+    "sha256": "f468849283bd3c899335d8757323d57ff672972c29bd88b525bef0e4d8faee11",
+    "earlier_prs": [
+      618
+    ]
+  },
+  {
+    "path": "02_Video-Projects/114_Bruecke-Milinkovitch-How-Do-Chameleons-Change-Colour/11_Upload-Package/PRODUCTION_CHECKLIST_V2.md",
+    "pr": 619,
+    "head": "affe9b698ec5e12cafc5758ec9533597883dc351",
+    "sha256": "98cb2a10e64c3a5322493ef86f8f3aa25307b1e9462861f4c3568391377a9877",
+    "earlier_prs": [
+      618
+    ]
+  },
+  {
+    "path": "02_Video-Projects/114_Bruecke-Milinkovitch-How-Do-Chameleons-Change-Colour/11_Upload-Package/evidence_2026-11-16_neighbours.json",
+    "pr": 619,
+    "head": "affe9b698ec5e12cafc5758ec9533597883dc351",
+    "sha256": "130008bcc8c22384341fb89fb3d3f67a7eb04c6f92dafa50d2b63dbf013d11f2",
+    "earlier_prs": [
+      618
+    ]
+  },
+  {
+    "path": "02_Video-Projects/114_Bruecke-Milinkovitch-How-Do-Chameleons-Change-Colour/11_Upload-Package/evidence_2026-11-16_public_search.json",
+    "pr": 619,
+    "head": "affe9b698ec5e12cafc5758ec9533597883dc351",
+    "sha256": "e64e85afeec5a64b5ee523a326c4bb1f56c6cca399fc647fa019b572a99c92fc",
+    "earlier_prs": [
+      618
+    ]
+  },
+  {
+    "path": "02_Video-Projects/114_Bruecke-Milinkovitch-How-Do-Chameleons-Change-Colour/README.md",
+    "pr": 619,
+    "head": "affe9b698ec5e12cafc5758ec9533597883dc351",
+    "sha256": "6e0376c4c0a6f7c55533312562321b614aa4480325061fa2dc9db969e25a6c7e",
+    "earlier_prs": [
+      618
+    ]
+  },
+  {
+    "path": "02_Video-Projects/114_Bruecke-Milinkovitch-How-Do-Chameleons-Change-Colour/TOPIC.md",
+    "pr": 619,
+    "head": "affe9b698ec5e12cafc5758ec9533597883dc351",
+    "sha256": "d843f7981b966a5362900cefd4e21c1bebf29ffcda6f881eda3ccf42d622e9ea",
+    "earlier_prs": [
+      618
+    ]
+  },
+  {
+    "path": "02_Video-Projects/114_Bruecke-Milinkovitch-How-Do-Chameleons-Change-Colour/production-status.md",
+    "pr": 619,
+    "head": "affe9b698ec5e12cafc5758ec9533597883dc351",
+    "sha256": "99f82c4e55f5486390e565bcb0cdb5e92cb887b787e77a9042bb0c9ff1e7a968",
+    "earlier_prs": [
+      618
+    ]
+  },
+  {
+    "path": "02_Video-Projects/114_Bruecke-Milinkovitch-How-Do-Chameleons-Change-Colour/status.json",
+    "pr": 619,
+    "head": "affe9b698ec5e12cafc5758ec9533597883dc351",
+    "sha256": "e1bf36a5929ea557134d3d4d611bbd7444b57395250a3de41a6c87b66b205ae7",
+    "earlier_prs": [
+      618
+    ]
+  },
+  {
+    "path": "02_Video-Projects/115_Wallace-Caro-Why-Do-Zebras-Have-Stripes/01_Script/episode_script_draft_v01.md",
+    "pr": 620,
+    "head": "b127d52ea65f8a4f3c792f100f304f9d4eeda8d6",
+    "sha256": "6260fe3b439addf2093d3f155814c7942bc93efaeb8a4d8e6843f42364dfb55f",
+    "earlier_prs": [
+      618
+    ]
+  },
+  {
+    "path": "02_Video-Projects/115_Wallace-Caro-Why-Do-Zebras-Have-Stripes/02_Voiceover/README.md",
+    "pr": 620,
+    "head": "b127d52ea65f8a4f3c792f100f304f9d4eeda8d6",
+    "sha256": "a6f68ce06a3a64cbd983f6d70d387063a0640c30f107dc8011e98d9ae18181ab",
+    "earlier_prs": [
+      618
+    ]
+  },
+  {
+    "path": "02_Video-Projects/115_Wallace-Caro-Why-Do-Zebras-Have-Stripes/04_Generated-Clips/01_Raw/.gitkeep",
+    "pr": 620,
+    "head": "b127d52ea65f8a4f3c792f100f304f9d4eeda8d6",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "earlier_prs": [
+      618
+    ]
+  },
+  {
+    "path": "02_Video-Projects/115_Wallace-Caro-Why-Do-Zebras-Have-Stripes/07_Edit-Project/.env.example",
+    "pr": 620,
+    "head": "b127d52ea65f8a4f3c792f100f304f9d4eeda8d6",
+    "sha256": "19441f72e7bb760407114028895accd4dc50a346f7dcdfa5cccfad3cc8ef73a1",
+    "earlier_prs": [
+      618
+    ]
+  },
+  {
+    "path": "02_Video-Projects/115_Wallace-Caro-Why-Do-Zebras-Have-Stripes/07_Edit-Project/parts/part-01_plates_v01.json",
+    "pr": 620,
+    "head": "b127d52ea65f8a4f3c792f100f304f9d4eeda8d6",
+    "sha256": "0d48ca96c29ce7f39c74b5283a6f41ce17b264e16842b333fa0026012e41309f",
+    "earlier_prs": [
+      618
+    ]
+  },
+  {
+    "path": "02_Video-Projects/115_Wallace-Caro-Why-Do-Zebras-Have-Stripes/08_Thumbnail/README.md",
+    "pr": 620,
+    "head": "b127d52ea65f8a4f3c792f100f304f9d4eeda8d6",
+    "sha256": "affa66daf70fc04360a72222c09241d8439babf66ab1e18f9d505e75b8902ec8",
+    "earlier_prs": [
+      618
+    ]
+  },
+  {
+    "path": "02_Video-Projects/115_Wallace-Caro-Why-Do-Zebras-Have-Stripes/10_Shorts/README.md",
+    "pr": 620,
+    "head": "b127d52ea65f8a4f3c792f100f304f9d4eeda8d6",
+    "sha256": "79cad1b576ffbbe639c2fc664d7d458711d0aa5daad9a8df18ef827b941a1ecb",
+    "earlier_prs": [
+      618
+    ]
+  },
+  {
+    "path": "02_Video-Projects/115_Wallace-Caro-Why-Do-Zebras-Have-Stripes/11_Upload-Package/PRE_BUILD_VIDIQ_AUDIT.md",
+    "pr": 620,
+    "head": "b127d52ea65f8a4f3c792f100f304f9d4eeda8d6",
+    "sha256": "2908df9e9a54a77a3d75a018f9b45db09bf7b74da75406586c86c63b878730d9",
+    "earlier_prs": [
+      618
+    ]
+  },
+  {
+    "path": "02_Video-Projects/115_Wallace-Caro-Why-Do-Zebras-Have-Stripes/11_Upload-Package/PRODUCTION_CHECKLIST_V2.md",
+    "pr": 620,
+    "head": "b127d52ea65f8a4f3c792f100f304f9d4eeda8d6",
+    "sha256": "98cb2a10e64c3a5322493ef86f8f3aa25307b1e9462861f4c3568391377a9877",
+    "earlier_prs": [
+      618
+    ]
+  },
+  {
+    "path": "02_Video-Projects/115_Wallace-Caro-Why-Do-Zebras-Have-Stripes/11_Upload-Package/evidence_2026-11-16_neighbours.json",
+    "pr": 620,
+    "head": "b127d52ea65f8a4f3c792f100f304f9d4eeda8d6",
+    "sha256": "0b3630d134fda24e75092808d601c8f9a21159253d8218cbb894eafb6485ca01",
+    "earlier_prs": [
+      618
+    ]
+  },
+  {
+    "path": "02_Video-Projects/115_Wallace-Caro-Why-Do-Zebras-Have-Stripes/11_Upload-Package/evidence_2026-11-16_public_search.json",
+    "pr": 620,
+    "head": "b127d52ea65f8a4f3c792f100f304f9d4eeda8d6",
+    "sha256": "d305b9e219f20f71b4029041d7f10e23906ae1e9deb5430e9ce863558370ef12",
+    "earlier_prs": [
+      618
+    ]
+  },
+  {
+    "path": "02_Video-Projects/115_Wallace-Caro-Why-Do-Zebras-Have-Stripes/README.md",
+    "pr": 620,
+    "head": "b127d52ea65f8a4f3c792f100f304f9d4eeda8d6",
+    "sha256": "89411a37b46a99fed97d890b8dc84c4ad7917c3ed5936bf96705541e62456576",
+    "earlier_prs": [
+      618
+    ]
+  },
+  {
+    "path": "02_Video-Projects/115_Wallace-Caro-Why-Do-Zebras-Have-Stripes/TOPIC.md",
+    "pr": 620,
+    "head": "b127d52ea65f8a4f3c792f100f304f9d4eeda8d6",
+    "sha256": "37d3cd64dc0a5d9a8435679d8044ee63200ea4968702b8f2a63524e43146b5e8",
+    "earlier_prs": [
+      618
+    ]
+  },
+  {
+    "path": "02_Video-Projects/115_Wallace-Caro-Why-Do-Zebras-Have-Stripes/production-status.md",
+    "pr": 620,
+    "head": "b127d52ea65f8a4f3c792f100f304f9d4eeda8d6",
+    "sha256": "d8a555aebc3a9128f692dedcb15a57e0e6b0741c6dff431dac58e7b5d8248f69",
+    "earlier_prs": [
+      618
+    ]
+  },
+  {
+    "path": "02_Video-Projects/115_Wallace-Caro-Why-Do-Zebras-Have-Stripes/status.json",
+    "pr": 620,
+    "head": "b127d52ea65f8a4f3c792f100f304f9d4eeda8d6",
+    "sha256": "e63c69fa266bff5bc6985171885caccadbc941ba056b139ec29847d4107c55be",
+    "earlier_prs": [
+      618
+    ]
+  },
+  {
+    "path": "02_Video-Projects/114_Bruecke-Milinkovitch-How-Do-Chameleons-Change-Colour/11_Upload-Package/TOPIC_GO_NO_GO_SHEET.md",
+    "pr": 619,
+    "head": "affe9b698ec5e12cafc5758ec9533597883dc351",
+    "sha256": "0362e6a1d825ce0d341804f2252b48a7b867c443422095249db81c6d17068bb5",
+    "earlier_prs": []
+  },
+  {
+    "path": "02_Video-Projects/114_Bruecke-Milinkovitch-How-Do-Chameleons-Change-Colour/11_Upload-Package/TOPIC_OPPORTUNITY_SCORE.md",
+    "pr": 619,
+    "head": "affe9b698ec5e12cafc5758ec9533597883dc351",
+    "sha256": "15f6a8a13fc882ba3880a6d588dcf5d5f566a4362175ea1afd399e2ffadacd33",
+    "earlier_prs": []
+  },
+  {
+    "path": "02_Video-Projects/115_Wallace-Caro-Why-Do-Zebras-Have-Stripes/11_Upload-Package/TOPIC_GO_NO_GO_SHEET.md",
+    "pr": 620,
+    "head": "b127d52ea65f8a4f3c792f100f304f9d4eeda8d6",
+    "sha256": "1b587bd11d28f688ee8e40b92886b3056058c8901eeabcf8ac0b094c6fade21b",
+    "earlier_prs": []
+  },
+  {
+    "path": "02_Video-Projects/115_Wallace-Caro-Why-Do-Zebras-Have-Stripes/11_Upload-Package/TOPIC_OPPORTUNITY_SCORE.md",
+    "pr": 620,
+    "head": "b127d52ea65f8a4f3c792f100f304f9d4eeda8d6",
+    "sha256": "bff7588d7b3d9351f24a8835bfd21f865c81c58b1f0646361935a3c86e873b1e",
+    "earlier_prs": []
+  },
+  {
+    "path": "02_Video-Projects/116_Darwin-Cannon-Hsu-Why-Do-We-Get-Goosebumps/01_Script/episode_script_draft_v01.md",
+    "pr": 627,
+    "head": "6684c4d5f4c2e858818b816b620592b78c6e1c91",
+    "sha256": "6260fe3b439addf2093d3f155814c7942bc93efaeb8a4d8e6843f42364dfb55f",
+    "earlier_prs": [
+      625
+    ]
+  },
+  {
+    "path": "02_Video-Projects/116_Darwin-Cannon-Hsu-Why-Do-We-Get-Goosebumps/02_Voiceover/README.md",
+    "pr": 627,
+    "head": "6684c4d5f4c2e858818b816b620592b78c6e1c91",
+    "sha256": "a6f68ce06a3a64cbd983f6d70d387063a0640c30f107dc8011e98d9ae18181ab",
+    "earlier_prs": [
+      625
+    ]
+  },
+  {
+    "path": "02_Video-Projects/116_Darwin-Cannon-Hsu-Why-Do-We-Get-Goosebumps/04_Generated-Clips/01_Raw/.gitkeep",
+    "pr": 627,
+    "head": "6684c4d5f4c2e858818b816b620592b78c6e1c91",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "earlier_prs": [
+      625
+    ]
+  },
+  {
+    "path": "02_Video-Projects/116_Darwin-Cannon-Hsu-Why-Do-We-Get-Goosebumps/07_Edit-Project/.env.example",
+    "pr": 627,
+    "head": "6684c4d5f4c2e858818b816b620592b78c6e1c91",
+    "sha256": "19441f72e7bb760407114028895accd4dc50a346f7dcdfa5cccfad3cc8ef73a1",
+    "earlier_prs": [
+      625
+    ]
+  },
+  {
+    "path": "02_Video-Projects/116_Darwin-Cannon-Hsu-Why-Do-We-Get-Goosebumps/07_Edit-Project/parts/part-01_plates_v01.json",
+    "pr": 627,
+    "head": "6684c4d5f4c2e858818b816b620592b78c6e1c91",
+    "sha256": "0d48ca96c29ce7f39c74b5283a6f41ce17b264e16842b333fa0026012e41309f",
+    "earlier_prs": [
+      625
+    ]
+  },
+  {
+    "path": "02_Video-Projects/116_Darwin-Cannon-Hsu-Why-Do-We-Get-Goosebumps/08_Thumbnail/README.md",
+    "pr": 627,
+    "head": "6684c4d5f4c2e858818b816b620592b78c6e1c91",
+    "sha256": "affa66daf70fc04360a72222c09241d8439babf66ab1e18f9d505e75b8902ec8",
+    "earlier_prs": [
+      625
+    ]
+  },
+  {
+    "path": "02_Video-Projects/116_Darwin-Cannon-Hsu-Why-Do-We-Get-Goosebumps/10_Shorts/README.md",
+    "pr": 627,
+    "head": "6684c4d5f4c2e858818b816b620592b78c6e1c91",
+    "sha256": "79cad1b576ffbbe639c2fc664d7d458711d0aa5daad9a8df18ef827b941a1ecb",
+    "earlier_prs": [
+      625
+    ]
+  },
+  {
+    "path": "02_Video-Projects/116_Darwin-Cannon-Hsu-Why-Do-We-Get-Goosebumps/11_Upload-Package/PRE_BUILD_VIDIQ_AUDIT.md",
+    "pr": 627,
+    "head": "6684c4d5f4c2e858818b816b620592b78c6e1c91",
+    "sha256": "c2fe7eef54fe033253a1e2c5bbcf40f0dfb23e894db4d6a86bbbbd36ed78f01c",
+    "earlier_prs": [
+      625
+    ]
+  },
+  {
+    "path": "02_Video-Projects/116_Darwin-Cannon-Hsu-Why-Do-We-Get-Goosebumps/11_Upload-Package/PRODUCTION_CHECKLIST_V2.md",
+    "pr": 627,
+    "head": "6684c4d5f4c2e858818b816b620592b78c6e1c91",
+    "sha256": "98cb2a10e64c3a5322493ef86f8f3aa25307b1e9462861f4c3568391377a9877",
+    "earlier_prs": [
+      625
+    ]
+  },
+  {
+    "path": "02_Video-Projects/116_Darwin-Cannon-Hsu-Why-Do-We-Get-Goosebumps/11_Upload-Package/evidence_2026-11-16_neighbours.json",
+    "pr": 627,
+    "head": "6684c4d5f4c2e858818b816b620592b78c6e1c91",
+    "sha256": "ef53afa9fbf7bb7615e60fa6a7c424e687f0363b9b90e894ecc8c1808a82e3e5",
+    "earlier_prs": [
+      625
+    ]
+  },
+  {
+    "path": "02_Video-Projects/116_Darwin-Cannon-Hsu-Why-Do-We-Get-Goosebumps/11_Upload-Package/evidence_2026-11-16_public_search.json",
+    "pr": 627,
+    "head": "6684c4d5f4c2e858818b816b620592b78c6e1c91",
+    "sha256": "20184a4f658ab1644cc588610479ca20927b60b0df5327f764a8d8b1b157149f",
+    "earlier_prs": [
+      625
+    ]
+  },
+  {
+    "path": "02_Video-Projects/116_Darwin-Cannon-Hsu-Why-Do-We-Get-Goosebumps/README.md",
+    "pr": 627,
+    "head": "6684c4d5f4c2e858818b816b620592b78c6e1c91",
+    "sha256": "e8f346b27fc14e5407f6a80980b566487ad2159e17e86ebe44561b7fd581074e",
+    "earlier_prs": [
+      625
+    ]
+  },
+  {
+    "path": "02_Video-Projects/116_Darwin-Cannon-Hsu-Why-Do-We-Get-Goosebumps/TOPIC.md",
+    "pr": 627,
+    "head": "6684c4d5f4c2e858818b816b620592b78c6e1c91",
+    "sha256": "bff60a30454118618bcce6e511440038063cae80527e8e711904052254309848",
+    "earlier_prs": [
+      625
+    ]
+  },
+  {
+    "path": "02_Video-Projects/116_Darwin-Cannon-Hsu-Why-Do-We-Get-Goosebumps/production-status.md",
+    "pr": 627,
+    "head": "6684c4d5f4c2e858818b816b620592b78c6e1c91",
+    "sha256": "9fd5c4adcde2eeb7f58af9e95d11049453e0aa69e317053fc93675dec1e0f43d",
+    "earlier_prs": [
+      625
+    ]
+  },
+  {
+    "path": "02_Video-Projects/116_Darwin-Cannon-Hsu-Why-Do-We-Get-Goosebumps/status.json",
+    "pr": 627,
+    "head": "6684c4d5f4c2e858818b816b620592b78c6e1c91",
+    "sha256": "c150c19b2936b694eb2536f23b4424be4ff283ce8b983f946d045f6dc6647316",
+    "earlier_prs": [
+      625
+    ]
+  },
+  {
+    "path": "02_Video-Projects/117_May-Gibson-VanWassenbergh-Why-Dont-Woodpeckers-Get-Concussions/01_Script/episode_script_draft_v01.md",
+    "pr": 628,
+    "head": "ff684d990711633a871fa6f0df4893d0782442d3",
+    "sha256": "6260fe3b439addf2093d3f155814c7942bc93efaeb8a4d8e6843f42364dfb55f",
+    "earlier_prs": [
+      625
+    ]
+  },
+  {
+    "path": "02_Video-Projects/117_May-Gibson-VanWassenbergh-Why-Dont-Woodpeckers-Get-Concussions/02_Voiceover/README.md",
+    "pr": 628,
+    "head": "ff684d990711633a871fa6f0df4893d0782442d3",
+    "sha256": "a6f68ce06a3a64cbd983f6d70d387063a0640c30f107dc8011e98d9ae18181ab",
+    "earlier_prs": [
+      625
+    ]
+  },
+  {
+    "path": "02_Video-Projects/117_May-Gibson-VanWassenbergh-Why-Dont-Woodpeckers-Get-Concussions/04_Generated-Clips/01_Raw/.gitkeep",
+    "pr": 628,
+    "head": "ff684d990711633a871fa6f0df4893d0782442d3",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "earlier_prs": [
+      625
+    ]
+  },
+  {
+    "path": "02_Video-Projects/117_May-Gibson-VanWassenbergh-Why-Dont-Woodpeckers-Get-Concussions/07_Edit-Project/.env.example",
+    "pr": 628,
+    "head": "ff684d990711633a871fa6f0df4893d0782442d3",
+    "sha256": "19441f72e7bb760407114028895accd4dc50a346f7dcdfa5cccfad3cc8ef73a1",
+    "earlier_prs": [
+      625
+    ]
+  },
+  {
+    "path": "02_Video-Projects/117_May-Gibson-VanWassenbergh-Why-Dont-Woodpeckers-Get-Concussions/07_Edit-Project/parts/part-01_plates_v01.json",
+    "pr": 628,
+    "head": "ff684d990711633a871fa6f0df4893d0782442d3",
+    "sha256": "0d48ca96c29ce7f39c74b5283a6f41ce17b264e16842b333fa0026012e41309f",
+    "earlier_prs": [
+      625
+    ]
+  },
+  {
+    "path": "02_Video-Projects/117_May-Gibson-VanWassenbergh-Why-Dont-Woodpeckers-Get-Concussions/08_Thumbnail/README.md",
+    "pr": 628,
+    "head": "ff684d990711633a871fa6f0df4893d0782442d3",
+    "sha256": "affa66daf70fc04360a72222c09241d8439babf66ab1e18f9d505e75b8902ec8",
+    "earlier_prs": [
+      625
+    ]
+  },
+  {
+    "path": "02_Video-Projects/117_May-Gibson-VanWassenbergh-Why-Dont-Woodpeckers-Get-Concussions/10_Shorts/README.md",
+    "pr": 628,
+    "head": "ff684d990711633a871fa6f0df4893d0782442d3",
+    "sha256": "79cad1b576ffbbe639c2fc664d7d458711d0aa5daad9a8df18ef827b941a1ecb",
+    "earlier_prs": [
+      625
+    ]
+  },
+  {
+    "path": "02_Video-Projects/117_May-Gibson-VanWassenbergh-Why-Dont-Woodpeckers-Get-Concussions/11_Upload-Package/PRE_BUILD_VIDIQ_AUDIT.md",
+    "pr": 628,
+    "head": "ff684d990711633a871fa6f0df4893d0782442d3",
+    "sha256": "b51170a0cbbee8dc054e523f0f6a874c7d72ecd0858d30869b091a6b1b2beb52",
+    "earlier_prs": [
+      625
+    ]
+  },
+  {
+    "path": "02_Video-Projects/117_May-Gibson-VanWassenbergh-Why-Dont-Woodpeckers-Get-Concussions/11_Upload-Package/PRODUCTION_CHECKLIST_V2.md",
+    "pr": 628,
+    "head": "ff684d990711633a871fa6f0df4893d0782442d3",
+    "sha256": "98cb2a10e64c3a5322493ef86f8f3aa25307b1e9462861f4c3568391377a9877",
+    "earlier_prs": [
+      625
+    ]
+  },
+  {
+    "path": "02_Video-Projects/117_May-Gibson-VanWassenbergh-Why-Dont-Woodpeckers-Get-Concussions/11_Upload-Package/evidence_2026-11-16_neighbours.json",
+    "pr": 628,
+    "head": "ff684d990711633a871fa6f0df4893d0782442d3",
+    "sha256": "bd682bd5aaac43a7a4bab86ab3aaaa0af7e70e2aa9bed88045f465bce0fa5ba3",
+    "earlier_prs": [
+      625
+    ]
+  },
+  {
+    "path": "02_Video-Projects/117_May-Gibson-VanWassenbergh-Why-Dont-Woodpeckers-Get-Concussions/11_Upload-Package/evidence_2026-11-16_public_search.json",
+    "pr": 628,
+    "head": "ff684d990711633a871fa6f0df4893d0782442d3",
+    "sha256": "8c579de47dd18ccf3c84251d4583aa8a6f13194b39e0f5ee30a21ba75a41d300",
+    "earlier_prs": [
+      625
+    ]
+  },
+  {
+    "path": "02_Video-Projects/117_May-Gibson-VanWassenbergh-Why-Dont-Woodpeckers-Get-Concussions/README.md",
+    "pr": 628,
+    "head": "ff684d990711633a871fa6f0df4893d0782442d3",
+    "sha256": "4345c51b0d0a3f54717c0c9bff2c2caed2add3b32b22d272c9aef375e0e66918",
+    "earlier_prs": [
+      625
+    ]
+  },
+  {
+    "path": "02_Video-Projects/117_May-Gibson-VanWassenbergh-Why-Dont-Woodpeckers-Get-Concussions/TOPIC.md",
+    "pr": 628,
+    "head": "ff684d990711633a871fa6f0df4893d0782442d3",
+    "sha256": "8a3429285125318f6be9fd34d836410c99d4abb53842d95f328bd7ef6aa2dbac",
+    "earlier_prs": [
+      625
+    ]
+  },
+  {
+    "path": "02_Video-Projects/117_May-Gibson-VanWassenbergh-Why-Dont-Woodpeckers-Get-Concussions/production-status.md",
+    "pr": 628,
+    "head": "ff684d990711633a871fa6f0df4893d0782442d3",
+    "sha256": "3265d74079dfbb1f0a57b23e28c56b6e9f1dad32c7c7610cfe8687c24d2f3944",
+    "earlier_prs": [
+      625
+    ]
+  },
+  {
+    "path": "02_Video-Projects/117_May-Gibson-VanWassenbergh-Why-Dont-Woodpeckers-Get-Concussions/status.json",
+    "pr": 628,
+    "head": "ff684d990711633a871fa6f0df4893d0782442d3",
+    "sha256": "7f2881c307de58aa856b288beea4d8f55c0abd7453c0089a597292998e30e98c",
+    "earlier_prs": [
+      625
+    ]
+  },
+  {
+    "path": "02_Video-Projects/116_Darwin-Cannon-Hsu-Why-Do-We-Get-Goosebumps/11_Upload-Package/TOPIC_GO_NO_GO_SHEET.md",
+    "pr": 627,
+    "head": "6684c4d5f4c2e858818b816b620592b78c6e1c91",
+    "sha256": "a5b3776671f292ad037df51fae85fd0b277e1171825403d483503b351d8962bd",
+    "earlier_prs": []
+  },
+  {
+    "path": "02_Video-Projects/116_Darwin-Cannon-Hsu-Why-Do-We-Get-Goosebumps/11_Upload-Package/TOPIC_OPPORTUNITY_SCORE.md",
+    "pr": 627,
+    "head": "6684c4d5f4c2e858818b816b620592b78c6e1c91",
+    "sha256": "e64fa5b76fd55d048b78826b45fedb9476328fd16a5071b6ecd9136f5bc47fe8",
+    "earlier_prs": []
+  },
+  {
+    "path": "02_Video-Projects/117_May-Gibson-VanWassenbergh-Why-Dont-Woodpeckers-Get-Concussions/11_Upload-Package/TOPIC_GO_NO_GO_SHEET.md",
+    "pr": 628,
+    "head": "ff684d990711633a871fa6f0df4893d0782442d3",
+    "sha256": "4a79c5f8a9526d856b94f37f96437a6b5a0c0c9a2ea2e9bee833a66a45a693b5",
+    "earlier_prs": []
+  },
+  {
+    "path": "02_Video-Projects/117_May-Gibson-VanWassenbergh-Why-Dont-Woodpeckers-Get-Concussions/11_Upload-Package/TOPIC_OPPORTUNITY_SCORE.md",
+    "pr": 628,
+    "head": "ff684d990711633a871fa6f0df4893d0782442d3",
+    "sha256": "de4d3f7adc9ab508c6f352478d573802515b65ed26774a1062ab1fcae5877e43",
+    "earlier_prs": []
+  },
+  {
+    "path": "02_Video-Projects/118_NewsomDavis-Straus-Whitehead-Why-Do-We-Hiccup/01_Script/episode_script_draft_v01.md",
+    "pr": 632,
+    "head": "44e7caf64026ed562b97e6640afeba3f760f2ac7",
+    "sha256": "6260fe3b439addf2093d3f155814c7942bc93efaeb8a4d8e6843f42364dfb55f",
+    "earlier_prs": [
+      629
+    ]
+  },
+  {
+    "path": "02_Video-Projects/118_NewsomDavis-Straus-Whitehead-Why-Do-We-Hiccup/02_Voiceover/README.md",
+    "pr": 632,
+    "head": "44e7caf64026ed562b97e6640afeba3f760f2ac7",
+    "sha256": "a6f68ce06a3a64cbd983f6d70d387063a0640c30f107dc8011e98d9ae18181ab",
+    "earlier_prs": [
+      629
+    ]
+  },
+  {
+    "path": "02_Video-Projects/118_NewsomDavis-Straus-Whitehead-Why-Do-We-Hiccup/04_Generated-Clips/01_Raw/.gitkeep",
+    "pr": 632,
+    "head": "44e7caf64026ed562b97e6640afeba3f760f2ac7",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "earlier_prs": [
+      629
+    ]
+  },
+  {
+    "path": "02_Video-Projects/118_NewsomDavis-Straus-Whitehead-Why-Do-We-Hiccup/07_Edit-Project/.env.example",
+    "pr": 632,
+    "head": "44e7caf64026ed562b97e6640afeba3f760f2ac7",
+    "sha256": "19441f72e7bb760407114028895accd4dc50a346f7dcdfa5cccfad3cc8ef73a1",
+    "earlier_prs": [
+      629
+    ]
+  },
+  {
+    "path": "02_Video-Projects/118_NewsomDavis-Straus-Whitehead-Why-Do-We-Hiccup/07_Edit-Project/parts/part-01_plates_v01.json",
+    "pr": 632,
+    "head": "44e7caf64026ed562b97e6640afeba3f760f2ac7",
+    "sha256": "0d48ca96c29ce7f39c74b5283a6f41ce17b264e16842b333fa0026012e41309f",
+    "earlier_prs": [
+      629
+    ]
+  },
+  {
+    "path": "02_Video-Projects/118_NewsomDavis-Straus-Whitehead-Why-Do-We-Hiccup/08_Thumbnail/README.md",
+    "pr": 632,
+    "head": "44e7caf64026ed562b97e6640afeba3f760f2ac7",
+    "sha256": "affa66daf70fc04360a72222c09241d8439babf66ab1e18f9d505e75b8902ec8",
+    "earlier_prs": [
+      629
+    ]
+  },
+  {
+    "path": "02_Video-Projects/118_NewsomDavis-Straus-Whitehead-Why-Do-We-Hiccup/10_Shorts/README.md",
+    "pr": 632,
+    "head": "44e7caf64026ed562b97e6640afeba3f760f2ac7",
+    "sha256": "79cad1b576ffbbe639c2fc664d7d458711d0aa5daad9a8df18ef827b941a1ecb",
+    "earlier_prs": [
+      629
+    ]
+  },
+  {
+    "path": "02_Video-Projects/118_NewsomDavis-Straus-Whitehead-Why-Do-We-Hiccup/11_Upload-Package/PRE_BUILD_VIDIQ_AUDIT.md",
+    "pr": 632,
+    "head": "44e7caf64026ed562b97e6640afeba3f760f2ac7",
+    "sha256": "2afa49f042eaab3462ee0afd6b871ae3767bafc286c28f60b9e961cee1db0dc8",
+    "earlier_prs": [
+      629
+    ]
+  },
+  {
+    "path": "02_Video-Projects/118_NewsomDavis-Straus-Whitehead-Why-Do-We-Hiccup/11_Upload-Package/PRODUCTION_CHECKLIST_V2.md",
+    "pr": 632,
+    "head": "44e7caf64026ed562b97e6640afeba3f760f2ac7",
+    "sha256": "98cb2a10e64c3a5322493ef86f8f3aa25307b1e9462861f4c3568391377a9877",
+    "earlier_prs": [
+      629
+    ]
+  },
+  {
+    "path": "02_Video-Projects/118_NewsomDavis-Straus-Whitehead-Why-Do-We-Hiccup/11_Upload-Package/evidence_2026-11-17_neighbours.json",
+    "pr": 632,
+    "head": "44e7caf64026ed562b97e6640afeba3f760f2ac7",
+    "sha256": "d0d9ae2a46189f893407ec4c036369a7bc7e55dd891c9b33e5cea1be46da5b7c",
+    "earlier_prs": [
+      629
+    ]
+  },
+  {
+    "path": "02_Video-Projects/118_NewsomDavis-Straus-Whitehead-Why-Do-We-Hiccup/11_Upload-Package/evidence_2026-11-17_public_search.json",
+    "pr": 632,
+    "head": "44e7caf64026ed562b97e6640afeba3f760f2ac7",
+    "sha256": "100c402635623883dc39692930baecf7199dc178cf69b355f35a1d4bc5831a7c",
+    "earlier_prs": [
+      629
+    ]
+  },
+  {
+    "path": "02_Video-Projects/118_NewsomDavis-Straus-Whitehead-Why-Do-We-Hiccup/README.md",
+    "pr": 632,
+    "head": "44e7caf64026ed562b97e6640afeba3f760f2ac7",
+    "sha256": "32b757c22680b8303690aa4392b51eb28ee4cdbb4a346c166a1b6243e9de5b50",
+    "earlier_prs": [
+      629
+    ]
+  },
+  {
+    "path": "02_Video-Projects/118_NewsomDavis-Straus-Whitehead-Why-Do-We-Hiccup/TOPIC.md",
+    "pr": 632,
+    "head": "44e7caf64026ed562b97e6640afeba3f760f2ac7",
+    "sha256": "c579d566e2dd5b8f666b6fd6ac0f9176590acf2988524874a345a0692538a79c",
+    "earlier_prs": [
+      629
+    ]
+  },
+  {
+    "path": "02_Video-Projects/118_NewsomDavis-Straus-Whitehead-Why-Do-We-Hiccup/production-status.md",
+    "pr": 632,
+    "head": "44e7caf64026ed562b97e6640afeba3f760f2ac7",
+    "sha256": "dc475963ca8ce4370cb054f29da320c9f28596a2797df7867986f027a3776ace",
+    "earlier_prs": [
+      629
+    ]
+  },
+  {
+    "path": "02_Video-Projects/118_NewsomDavis-Straus-Whitehead-Why-Do-We-Hiccup/status.json",
+    "pr": 632,
+    "head": "44e7caf64026ed562b97e6640afeba3f760f2ac7",
+    "sha256": "3ca8703ed6c7b541a2586dc11f86cc13beb83f56fb63cf4a7f9acb5bb9f9abd9",
+    "earlier_prs": [
+      629
+    ]
+  },
+  {
+    "path": "02_Video-Projects/119_Rudolfs-Laarman-DeObaldia-Vosshall-Why-Do-Mosquitoes-Bite-Some-People-More/01_Script/episode_script_draft_v01.md",
+    "pr": 631,
+    "head": "cbb9dc9781285322034b3e2ad4f100f74abf55d8",
+    "sha256": "6260fe3b439addf2093d3f155814c7942bc93efaeb8a4d8e6843f42364dfb55f",
+    "earlier_prs": [
+      629
+    ]
+  },
+  {
+    "path": "02_Video-Projects/119_Rudolfs-Laarman-DeObaldia-Vosshall-Why-Do-Mosquitoes-Bite-Some-People-More/02_Voiceover/README.md",
+    "pr": 631,
+    "head": "cbb9dc9781285322034b3e2ad4f100f74abf55d8",
+    "sha256": "a6f68ce06a3a64cbd983f6d70d387063a0640c30f107dc8011e98d9ae18181ab",
+    "earlier_prs": [
+      629
+    ]
+  },
+  {
+    "path": "02_Video-Projects/119_Rudolfs-Laarman-DeObaldia-Vosshall-Why-Do-Mosquitoes-Bite-Some-People-More/04_Generated-Clips/01_Raw/.gitkeep",
+    "pr": 631,
+    "head": "cbb9dc9781285322034b3e2ad4f100f74abf55d8",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "earlier_prs": [
+      629
+    ]
+  },
+  {
+    "path": "02_Video-Projects/119_Rudolfs-Laarman-DeObaldia-Vosshall-Why-Do-Mosquitoes-Bite-Some-People-More/07_Edit-Project/.env.example",
+    "pr": 631,
+    "head": "cbb9dc9781285322034b3e2ad4f100f74abf55d8",
+    "sha256": "19441f72e7bb760407114028895accd4dc50a346f7dcdfa5cccfad3cc8ef73a1",
+    "earlier_prs": [
+      629
+    ]
+  },
+  {
+    "path": "02_Video-Projects/119_Rudolfs-Laarman-DeObaldia-Vosshall-Why-Do-Mosquitoes-Bite-Some-People-More/07_Edit-Project/parts/part-01_plates_v01.json",
+    "pr": 631,
+    "head": "cbb9dc9781285322034b3e2ad4f100f74abf55d8",
+    "sha256": "0d48ca96c29ce7f39c74b5283a6f41ce17b264e16842b333fa0026012e41309f",
+    "earlier_prs": [
+      629
+    ]
+  },
+  {
+    "path": "02_Video-Projects/119_Rudolfs-Laarman-DeObaldia-Vosshall-Why-Do-Mosquitoes-Bite-Some-People-More/08_Thumbnail/README.md",
+    "pr": 631,
+    "head": "cbb9dc9781285322034b3e2ad4f100f74abf55d8",
+    "sha256": "affa66daf70fc04360a72222c09241d8439babf66ab1e18f9d505e75b8902ec8",
+    "earlier_prs": [
+      629
+    ]
+  },
+  {
+    "path": "02_Video-Projects/119_Rudolfs-Laarman-DeObaldia-Vosshall-Why-Do-Mosquitoes-Bite-Some-People-More/10_Shorts/README.md",
+    "pr": 631,
+    "head": "cbb9dc9781285322034b3e2ad4f100f74abf55d8",
+    "sha256": "79cad1b576ffbbe639c2fc664d7d458711d0aa5daad9a8df18ef827b941a1ecb",
+    "earlier_prs": [
+      629
+    ]
+  },
+  {
+    "path": "02_Video-Projects/119_Rudolfs-Laarman-DeObaldia-Vosshall-Why-Do-Mosquitoes-Bite-Some-People-More/11_Upload-Package/PRE_BUILD_VIDIQ_AUDIT.md",
+    "pr": 631,
+    "head": "cbb9dc9781285322034b3e2ad4f100f74abf55d8",
+    "sha256": "4fd5dc510203df29c72d0c51acd8d5fb9249bd3e7919ea65fe63a1e70c7d3aea",
+    "earlier_prs": [
+      629
+    ]
+  },
+  {
+    "path": "02_Video-Projects/119_Rudolfs-Laarman-DeObaldia-Vosshall-Why-Do-Mosquitoes-Bite-Some-People-More/11_Upload-Package/PRODUCTION_CHECKLIST_V2.md",
+    "pr": 631,
+    "head": "cbb9dc9781285322034b3e2ad4f100f74abf55d8",
+    "sha256": "98cb2a10e64c3a5322493ef86f8f3aa25307b1e9462861f4c3568391377a9877",
+    "earlier_prs": [
+      629
+    ]
+  },
+  {
+    "path": "02_Video-Projects/119_Rudolfs-Laarman-DeObaldia-Vosshall-Why-Do-Mosquitoes-Bite-Some-People-More/11_Upload-Package/evidence_2026-11-17_neighbours.json",
+    "pr": 631,
+    "head": "cbb9dc9781285322034b3e2ad4f100f74abf55d8",
+    "sha256": "b2e596c764b5ee5ac5cc79e38ba28bc3c9871a105d56878e3b1b6db074141acf",
+    "earlier_prs": [
+      629
+    ]
+  },
+  {
+    "path": "02_Video-Projects/119_Rudolfs-Laarman-DeObaldia-Vosshall-Why-Do-Mosquitoes-Bite-Some-People-More/11_Upload-Package/evidence_2026-11-17_public_search.json",
+    "pr": 631,
+    "head": "cbb9dc9781285322034b3e2ad4f100f74abf55d8",
+    "sha256": "2f9ae07da1eb35c8c1501f68799afe3d69dc8aecd0dc0000c74b2788b513e62b",
+    "earlier_prs": [
+      629
+    ]
+  },
+  {
+    "path": "02_Video-Projects/119_Rudolfs-Laarman-DeObaldia-Vosshall-Why-Do-Mosquitoes-Bite-Some-People-More/README.md",
+    "pr": 631,
+    "head": "cbb9dc9781285322034b3e2ad4f100f74abf55d8",
+    "sha256": "8e5f024cd3727a700c5b1965e3fe3407c52392694f4a3b97c75e79f8ad765bb1",
+    "earlier_prs": [
+      629
+    ]
+  },
+  {
+    "path": "02_Video-Projects/119_Rudolfs-Laarman-DeObaldia-Vosshall-Why-Do-Mosquitoes-Bite-Some-People-More/TOPIC.md",
+    "pr": 631,
+    "head": "cbb9dc9781285322034b3e2ad4f100f74abf55d8",
+    "sha256": "d909250e1b30bdb6a1e8c6e528fe84fb11fc83b3f9764bd9fb54b2b58b80abfa",
+    "earlier_prs": [
+      629
+    ]
+  },
+  {
+    "path": "02_Video-Projects/119_Rudolfs-Laarman-DeObaldia-Vosshall-Why-Do-Mosquitoes-Bite-Some-People-More/production-status.md",
+    "pr": 631,
+    "head": "cbb9dc9781285322034b3e2ad4f100f74abf55d8",
+    "sha256": "3a704905f99a8c669e05aeef34f1c59286f409f99c8ef734291c504c6dff9c0e",
+    "earlier_prs": [
+      629
+    ]
+  },
+  {
+    "path": "02_Video-Projects/119_Rudolfs-Laarman-DeObaldia-Vosshall-Why-Do-Mosquitoes-Bite-Some-People-More/status.json",
+    "pr": 631,
+    "head": "cbb9dc9781285322034b3e2ad4f100f74abf55d8",
+    "sha256": "1e0dcc0f8de0fd415c690638987aa9106ae6d6aa5ff362c2c0badae1cfded940",
+    "earlier_prs": [
+      629
+    ]
+  },
+  {
+    "path": "02_Video-Projects/119_Rudolfs-Laarman-DeObaldia-Vosshall-Why-Do-Mosquitoes-Bite-Some-People-More/11_Upload-Package/TOPIC_GO_NO_GO_SHEET.md",
+    "pr": 631,
+    "head": "cbb9dc9781285322034b3e2ad4f100f74abf55d8",
+    "sha256": "c5027dffaf6700ab3e9396066046a80b402cdc18b64c7a0b0c60211782b738aa",
+    "earlier_prs": []
+  },
+  {
+    "path": "02_Video-Projects/119_Rudolfs-Laarman-DeObaldia-Vosshall-Why-Do-Mosquitoes-Bite-Some-People-More/11_Upload-Package/TOPIC_OPPORTUNITY_SCORE.md",
+    "pr": 631,
+    "head": "cbb9dc9781285322034b3e2ad4f100f74abf55d8",
+    "sha256": "b963432b8ab688bda00982b9790b46b5ff735447e501ffb5bbcd79f4b7574817",
+    "earlier_prs": []
+  },
+  {
+    "path": "02_Video-Projects/118_NewsomDavis-Straus-Whitehead-Why-Do-We-Hiccup/11_Upload-Package/TOPIC_GO_NO_GO_SHEET.md",
+    "pr": 632,
+    "head": "44e7caf64026ed562b97e6640afeba3f760f2ac7",
+    "sha256": "10d4011da60749f35812ffcc7358a409c8db4e2af76931384d1b580fc31bfb94",
+    "earlier_prs": []
+  },
+  {
+    "path": "02_Video-Projects/118_NewsomDavis-Straus-Whitehead-Why-Do-We-Hiccup/11_Upload-Package/TOPIC_OPPORTUNITY_SCORE.md",
+    "pr": 632,
+    "head": "44e7caf64026ed562b97e6640afeba3f760f2ac7",
+    "sha256": "52eccc06ee78ead1f59af47ae65232e0cd67e25acbc5ee8bbe5e786d3cb71a44",
+    "earlier_prs": []
+  }
+]
