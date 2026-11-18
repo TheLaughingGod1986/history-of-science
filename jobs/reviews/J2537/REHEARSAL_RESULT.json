@@ -1,0 +1,60 @@
+{
+  "at": "2026-11-18T23:36:20.555828+00:00",
+  "scope": "private rehearsal only; personal-domain regex, case-insensitive, plain and escaped dots; blobs, messages, author/committer/tagger identities",
+  "source_main": "2bb159443526b87681006fdb0ff93625e5192371",
+  "rewritten_main": "eecfcaa3ae67341f164f063d09fcd40a03ef4d5c",
+  "main_tree": "6da6bb52b631fc7f706f27ce1f13523015ab80f3",
+  "main_tree_unchanged": true,
+  "before": {
+    "objects": {
+      "commit": 2885,
+      "tree": 15656,
+      "blob": 18212
+    },
+    "affected_objects": {
+      "commit": 2570,
+      "blob": 1157
+    },
+    "occurrences": 8530,
+    "distinct_addresses": 11,
+    "ref_count": 1171,
+    "ref_name_hits": 0
+  },
+  "after": {
+    "objects": {
+      "commit": 2885,
+      "tree": 15656,
+      "blob": 18212
+    },
+    "affected_objects": {},
+    "occurrences": 0,
+    "distinct_addresses": 0,
+    "ref_count": 1171,
+    "ref_name_hits": 0
+  },
+  "commits_mapped": 2885,
+  "commits_changed": 2885,
+  "refs_unchanged_set": true,
+  "refs_changed": 1171,
+  "branches": 511,
+  "tags": 3,
+  "other_refs": 657,
+  "fsck": true,
+  "pushed": false,
+  "notice_sent": false,
+  "identity_policy": "deterministic pseudonymous example.invalid metadata; neutral account-holder role in content; organisational addresses outside scope",
+  "backup": {
+    "at": "2026-11-18T21:54:18.813949+00:00",
+    "stage": "pre-rewrite backup only",
+    "bundle_sha256": "d88b84f26218eb4b2c7a667380c14d495ee169de5401543eb5b64f2d882a1914",
+    "bytes": 1120772974,
+    "ref_count": 1171,
+    "refs_sha256": "eed1cb2028aeaf9d8740a649cdaea927f2134b0b458ec6b08a6cc2cbabad6f98",
+    "nas_bundle": "/Volumes/data/mac-mini-archive/repo-backups/J2537-20261118/hos-before-rewrite.bundle",
+    "mirror": "/Volumes/MiniWork/scratch/j2537-backup-20261118/hos-original.git",
+    "verified": true,
+    "rewritten": false,
+    "pushed": false
+  },
+  "driver_sha256": "f1686227bb90b068fa8b04daa2809c3bb9d0721a2b69b4415dfa8a832b20d3d6"
+}
