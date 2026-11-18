@@ -1,0 +1,45 @@
+{
+  "film": "102",
+  "title": "How Did We Find the Hole in the Ozone Layer?",
+  "summary": "Existing J2775 topic review preserved by J2537; backlog only. Historical and scientific claims remain UNVERIFIED until SOURCES.md and the facts lane. Requires an available HOS WIP slot before production.",
+  "stages": {
+    "topic": {
+      "state": "todo"
+    },
+    "script": {
+      "state": "todo"
+    },
+    "facts": {
+      "state": "todo"
+    },
+    "package": {
+      "state": "todo"
+    },
+    "vo": {
+      "state": "todo"
+    },
+    "shorts_scripts": {
+      "state": "todo"
+    },
+    "shorts_vo": {
+      "state": "todo"
+    },
+    "picture": {
+      "state": "todo"
+    },
+    "edit": {
+      "state": "todo"
+    },
+    "thumbnails": {
+      "state": "todo"
+    },
+    "ben_ok": {
+      "state": "todo"
+    },
+    "scheduled": {
+      "state": "todo"
+    }
+  },
+  "claims": [],
+  "next": ""
+}
