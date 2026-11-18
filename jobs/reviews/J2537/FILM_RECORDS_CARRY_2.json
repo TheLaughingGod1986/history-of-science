@@ -1,0 +1,483 @@
+{
+  "files": [
+    {
+      "pr": 556,
+      "head": "168f8915371c0799308d3ee3fa33f731a60b3421",
+      "path": "02_Video-Projects/008_Lightning-Franklin/05_Music/hos_008_short_C_v07_bed_plan.json",
+      "sha256": "0f19a3177cce1f6a3f2acc73f41f519160b8ffbdf46a8895e46bd8f3c0646279"
+    },
+    {
+      "pr": 556,
+      "head": "168f8915371c0799308d3ee3fa33f731a60b3421",
+      "path": "02_Video-Projects/008_Lightning-Franklin/10_Shorts/J2662/RECIPE.md",
+      "sha256": "86939bff69491969af19c3745a23ae83106e7b41aa72d3495b3e4d93fd556c5c"
+    },
+    {
+      "pr": 556,
+      "head": "168f8915371c0799308d3ee3fa33f731a60b3421",
+      "path": "02_Video-Projects/008_Lightning-Franklin/10_Shorts/J2662/RESULT.md",
+      "sha256": "36b5e71b6791f5688605d9a341457c8442a2d50947b3b97f086465cbb3e46c9f"
+    },
+    {
+      "pr": 556,
+      "head": "168f8915371c0799308d3ee3fa33f731a60b3421",
+      "path": "02_Video-Projects/008_Lightning-Franklin/10_Shorts/J2662/_build_short_c_v07.py",
+      "sha256": "fcbd8ee3993358dfa3ad4f16ee26901ea6c31605075032a06f37e3e702fa35d0"
+    },
+    {
+      "pr": 556,
+      "head": "168f8915371c0799308d3ee3fa33f731a60b3421",
+      "path": "02_Video-Projects/008_Lightning-Franklin/10_Shorts/J2662/atempo.txt",
+      "sha256": "7d92be527a35c0cc0696c223aef98e29ac94f40bfb5ba21588765d09f5af4a79"
+    },
+    {
+      "pr": 556,
+      "head": "168f8915371c0799308d3ee3fa33f731a60b3421",
+      "path": "02_Video-Projects/008_Lightning-Franklin/10_Shorts/J2662/contract.json",
+      "sha256": "e7f80cc7d34cd0b7640f19b5d0d5b2569ea4bf286033ca5f4412999c8e6e5b9d"
+    },
+    {
+      "pr": 556,
+      "head": "168f8915371c0799308d3ee3fa33f731a60b3421",
+      "path": "02_Video-Projects/008_Lightning-Franklin/10_Shorts/J2662/cuts.json",
+      "sha256": "2cf6e8f0896fb0e8b38ae02ae02cb509f14037ffd869b4c7c0b7870e3a3efa1f"
+    },
+    {
+      "pr": 556,
+      "head": "168f8915371c0799308d3ee3fa33f731a60b3421",
+      "path": "02_Video-Projects/008_Lightning-Franklin/10_Shorts/J2662/gate_shorts_open.json",
+      "sha256": "4b7d842c24830f1c7d367b41c866f01863b1eb534f09854448c7cf26375abce4"
+    },
+    {
+      "pr": 556,
+      "head": "168f8915371c0799308d3ee3fa33f731a60b3421",
+      "path": "02_Video-Projects/008_Lightning-Franklin/10_Shorts/J2662/music.txt",
+      "sha256": "08a5d2b15dc57510d0827a2dafcfd0a6dc2718bb7597ac2a5f84c093bcdc1f3f"
+    },
+    {
+      "pr": 556,
+      "head": "168f8915371c0799308d3ee3fa33f731a60b3421",
+      "path": "02_Video-Projects/008_Lightning-Franklin/10_Shorts/J2662/music_gate.json",
+      "sha256": "7cac42b724be0e9fd952b719e89396798a23512e1883b100dbde32a6b2be2b45"
+    },
+    {
+      "pr": 556,
+      "head": "168f8915371c0799308d3ee3fa33f731a60b3421",
+      "path": "02_Video-Projects/008_Lightning-Franklin/10_Shorts/J2662/open.txt",
+      "sha256": "2b856b0fe5637eb1975e982bac9043f822dd907efa7a50fd4df159246011d602"
+    },
+    {
+      "pr": 556,
+      "head": "168f8915371c0799308d3ee3fa33f731a60b3421",
+      "path": "02_Video-Projects/008_Lightning-Franklin/10_Shorts/J2662/picture.txt",
+      "sha256": "efa2fa8892eb781963c4c8712a9f70842fb412ebdd2cbedfb08960ecb9a9aed0"
+    },
+    {
+      "pr": 556,
+      "head": "168f8915371c0799308d3ee3fa33f731a60b3421",
+      "path": "02_Video-Projects/008_Lightning-Franklin/10_Shorts/J2662/picture_qa/PICTURE_QA.md",
+      "sha256": "a524433a982c90407389df0ccd1736855a1d993ede8296f4723e689e8d1ed922"
+    },
+    {
+      "pr": 556,
+      "head": "168f8915371c0799308d3ee3fa33f731a60b3421",
+      "path": "02_Video-Projects/008_Lightning-Franklin/10_Shorts/J2662/picture_qa/picture_qa.json",
+      "sha256": "18243761c7a90bad708a720cb99ea8d229f04bf58616e9a8d4e6c3ebce4eef68"
+    },
+    {
+      "pr": 556,
+      "head": "168f8915371c0799308d3ee3fa33f731a60b3421",
+      "path": "02_Video-Projects/008_Lightning-Franklin/10_Shorts/J2662/polish.txt",
+      "sha256": "cb9ce9bd359ae03514c8c73e1455e0f59c74330f87484a68aa779f03eaa7acf3"
+    },
+    {
+      "pr": 556,
+      "head": "168f8915371c0799308d3ee3fa33f731a60b3421",
+      "path": "02_Video-Projects/008_Lightning-Franklin/10_Shorts/J2662/polish_gate.json",
+      "sha256": "1fa8f2ea3b1eb62e625a523f11f8a9d447ec1073aec476528f26bfc8876228c0"
+    },
+    {
+      "pr": 556,
+      "head": "168f8915371c0799308d3ee3fa33f731a60b3421",
+      "path": "02_Video-Projects/008_Lightning-Franklin/10_Shorts/J2662/pool.json",
+      "sha256": "1bbb23a22f9bbedf458c7e53f45677ccb4dca88d55f1c5779688c40f5c91de03"
+    },
+    {
+      "pr": 556,
+      "head": "168f8915371c0799308d3ee3fa33f731a60b3421",
+      "path": "02_Video-Projects/008_Lightning-Franklin/10_Shorts/J2662/sfx.txt",
+      "sha256": "94e6c453aa07110835445657e276d8bf59415dd17fc6f434a41641c59c75ed8f"
+    },
+    {
+      "pr": 556,
+      "head": "168f8915371c0799308d3ee3fa33f731a60b3421",
+      "path": "02_Video-Projects/008_Lightning-Franklin/10_Shorts/J2662/sfx_level.json",
+      "sha256": "3d8ec68e61133cac231f75d749208c838c9307245d83a419112bc78cbb2edd57"
+    },
+    {
+      "pr": 556,
+      "head": "168f8915371c0799308d3ee3fa33f731a60b3421",
+      "path": "02_Video-Projects/008_Lightning-Franklin/10_Shorts/J2662/spoken.json",
+      "sha256": "d9684d6bb789b22e89d2cb4638adf258a96fd4727d814506991a6fdc1b76c744"
+    },
+    {
+      "pr": 556,
+      "head": "168f8915371c0799308d3ee3fa33f731a60b3421",
+      "path": "02_Video-Projects/008_Lightning-Franklin/10_Shorts/J2662/words.json",
+      "sha256": "f9245934a92928799e966a8d20c3f97dc398e84cdb4715b3a04eefabd6bea5a0"
+    },
+    {
+      "pr": 555,
+      "head": "a0190a2f2af1f3296c8bc0d459dd1a506e8c4e9f",
+      "path": "02_Video-Projects/008_Lightning-Franklin/05_Music/hos_008_short_C_v03_bed_plan.json",
+      "sha256": "9aa32e364a8fd414c5f441b424d2f9a7b0c365763fb7130f09a6ebfe9b222a52"
+    },
+    {
+      "pr": 555,
+      "head": "a0190a2f2af1f3296c8bc0d459dd1a506e8c4e9f",
+      "path": "02_Video-Projects/008_Lightning-Franklin/10_Shorts/J2255/RECIPE.md",
+      "sha256": "b3a67968326680f338b4ee6899b09412f2be94d9d496fea42fce5544e2a95445"
+    },
+    {
+      "pr": 555,
+      "head": "a0190a2f2af1f3296c8bc0d459dd1a506e8c4e9f",
+      "path": "02_Video-Projects/008_Lightning-Franklin/10_Shorts/J2255/RESULT.md",
+      "sha256": "0b512541e0881c649f81eb322bef23e4fda0346b3d3dd11fc8982ed9854b3028"
+    },
+    {
+      "pr": 555,
+      "head": "a0190a2f2af1f3296c8bc0d459dd1a506e8c4e9f",
+      "path": "02_Video-Projects/008_Lightning-Franklin/10_Shorts/J2255/_build_short_c_v03.py",
+      "sha256": "0b59eb72e78407b21cb2150a695c27c17a0c8f9bca55752347fa1cef7034ffd6"
+    },
+    {
+      "pr": 555,
+      "head": "a0190a2f2af1f3296c8bc0d459dd1a506e8c4e9f",
+      "path": "02_Video-Projects/008_Lightning-Franklin/10_Shorts/J2255/contract.json",
+      "sha256": "ed639c659474cc198e650e3426ae26c92b65d0c28bf755b434a0802e002b452d"
+    },
+    {
+      "pr": 555,
+      "head": "a0190a2f2af1f3296c8bc0d459dd1a506e8c4e9f",
+      "path": "02_Video-Projects/008_Lightning-Franklin/10_Shorts/J2255/cuts.json",
+      "sha256": "c403407e801f5130f35d38a5419cf291ebfe39d42b7c84bc7a9e8c3ac25df70e"
+    },
+    {
+      "pr": 555,
+      "head": "a0190a2f2af1f3296c8bc0d459dd1a506e8c4e9f",
+      "path": "02_Video-Projects/008_Lightning-Franklin/10_Shorts/J2255/gate_shorts_open.json",
+      "sha256": "ea232e2f48570a21e10f85e31d636c8ca6af8ec07e86054ac6335367860e8c43"
+    },
+    {
+      "pr": 555,
+      "head": "a0190a2f2af1f3296c8bc0d459dd1a506e8c4e9f",
+      "path": "02_Video-Projects/008_Lightning-Franklin/10_Shorts/J2255/music_gate.json",
+      "sha256": "f4ed1a4f8bf8684f09f3d3958dfe24ef2b32d58891ef93939b1805a197b1167e"
+    },
+    {
+      "pr": 555,
+      "head": "a0190a2f2af1f3296c8bc0d459dd1a506e8c4e9f",
+      "path": "02_Video-Projects/008_Lightning-Franklin/10_Shorts/J2255/picture_qa/PICTURE_QA.md",
+      "sha256": "a1acd77938aa5372ab887a5d80f43a7f3c8fbbf8c6e02668f1fc59f731650e1e"
+    },
+    {
+      "pr": 555,
+      "head": "a0190a2f2af1f3296c8bc0d459dd1a506e8c4e9f",
+      "path": "02_Video-Projects/008_Lightning-Franklin/10_Shorts/J2255/picture_qa/picture_qa.json",
+      "sha256": "894fc300c493a04f9dac202eeefab89ddfffa813c17f11de308e9555f1ba13c4"
+    },
+    {
+      "pr": 555,
+      "head": "a0190a2f2af1f3296c8bc0d459dd1a506e8c4e9f",
+      "path": "02_Video-Projects/008_Lightning-Franklin/10_Shorts/J2255/pool.json",
+      "sha256": "a4e72dac09bc811558ba843959f672cb5855249d06d4de541bba15fee7b80ddf"
+    },
+    {
+      "pr": 555,
+      "head": "a0190a2f2af1f3296c8bc0d459dd1a506e8c4e9f",
+      "path": "02_Video-Projects/008_Lightning-Franklin/10_Shorts/J2255/sfx_level.json",
+      "sha256": "db98d85e38723e2285c3efb8b39aa2def174bb630096aabd59cb1a1327920aa3"
+    },
+    {
+      "pr": 555,
+      "head": "a0190a2f2af1f3296c8bc0d459dd1a506e8c4e9f",
+      "path": "02_Video-Projects/008_Lightning-Franklin/10_Shorts/J2255/spoken.json",
+      "sha256": "9deef639a828565bcf210b664ec9370585072e3cc136ce6798984f35cc4eea45"
+    },
+    {
+      "pr": 555,
+      "head": "a0190a2f2af1f3296c8bc0d459dd1a506e8c4e9f",
+      "path": "02_Video-Projects/008_Lightning-Franklin/10_Shorts/J2255/words.json",
+      "sha256": "b176680e210a9e48b73fab29c0024df1d1570beea035fd33029561d838fae0a8"
+    },
+    {
+      "pr": 550,
+      "head": "e61d5c76b8857097f282d10a6422fcc3abcdfd6c",
+      "path": "02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_HANDOFF.md",
+      "sha256": "bcefa842af2f0beaa489c885651af8b5961789c521c4e499a57385e1d3c89c84"
+    },
+    {
+      "pr": 550,
+      "head": "e61d5c76b8857097f282d10a6422fcc3abcdfd6c",
+      "path": "02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_PREFLIGHT.json",
+      "sha256": "574476d55ab5d8915ea8fd35d1e78ae065893d9e4c2b9dff1b607c12b664f2d9"
+    },
+    {
+      "pr": 550,
+      "head": "e61d5c76b8857097f282d10a6422fcc3abcdfd6c",
+      "path": "02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_SAVINGS_OPTIONS.md",
+      "sha256": "2e0452fb82b7fe0531ccb68b4b4ed5e4bd4f1bda216be310b71d1a425b0b198b"
+    },
+    {
+      "pr": 550,
+      "head": "e61d5c76b8857097f282d10a6422fcc3abcdfd6c",
+      "path": "02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/J2563_TIMING_AUDIT.md",
+      "sha256": "7f268b3cb9658533733b9d175946f8a76985da252cbee5dd1d4e8d5169df0294"
+    },
+    {
+      "pr": 550,
+      "head": "e61d5c76b8857097f282d10a6422fcc3abcdfd6c",
+      "path": "02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/j2563_preflight.py",
+      "sha256": "582095b7908b4fd7489a2c855f4cd21d2901a2803646c7ca724ea0cbe477d063"
+    },
+    {
+      "pr": 514,
+      "head": "4f879b790fcf3099c87edc72f30cf7ddeef25f13",
+      "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/J2589_TAKE3/01_points_desk_t3_create.json",
+      "sha256": "7a54516b3685d9279583e4c6fc7c02efc23c1599b8487eeffabcfc32c2d01c1e"
+    },
+    {
+      "pr": 514,
+      "head": "4f879b790fcf3099c87edc72f30cf7ddeef25f13",
+      "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/J2589_TAKE3/02_salon_spark_t3_create.json",
+      "sha256": "1dec4b95d46d9958999252f6c3d2a3c581d987b45471a9a5bed1442e1205eeb2"
+    },
+    {
+      "pr": 514,
+      "head": "4f879b790fcf3099c87edc72f30cf7ddeef25f13",
+      "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/J2589_TAKE3/CHECKS.txt",
+      "sha256": "d7d65072322cf7c6df1a463db5fca7727d4b1027f43532625627249857b7d71e"
+    },
+    {
+      "pr": 514,
+      "head": "4f879b790fcf3099c87edc72f30cf7ddeef25f13",
+      "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/J2589_TAKE3/README.md",
+      "sha256": "436db08d2b301ea8ce1595f954c5e53b4b844838c3361590db1c2b9862ad093e"
+    },
+    {
+      "pr": 514,
+      "head": "4f879b790fcf3099c87edc72f30cf7ddeef25f13",
+      "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/J2589_TAKE3/SHA256SUMS.txt",
+      "sha256": "6934eb0cc08632d37dad0c75a046c2bdfb672fc183e1593f81110c5d6fe8ddb6"
+    },
+    {
+      "pr": 514,
+      "head": "4f879b790fcf3099c87edc72f30cf7ddeef25f13",
+      "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/J2589_TAKE3/VERIFY.txt",
+      "sha256": "3c4ab123e642e8424c98d208ba481a2a85b89e16b5d3f5db3687256876b4d897"
+    },
+    {
+      "pr": 514,
+      "head": "4f879b790fcf3099c87edc72f30cf7ddeef25f13",
+      "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/J2589_TAKE3/accounting.jsonl",
+      "sha256": "f256868286e1ae758e66dc3b0f1a874bcf023866416621f9ec38343666272eba"
+    },
+    {
+      "pr": 514,
+      "head": "4f879b790fcf3099c87edc72f30cf7ddeef25f13",
+      "path": "02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/J2589_TAKE3/manifest.json",
+      "sha256": "7f0022f3af9bd036dc814c4289c17baab37ab41bff5f677450dfb754d917e070"
+    },
+    {
+      "pr": 511,
+      "head": "93d084187b5cb10cb32d5e87db9d214d84f38eb8",
+      "path": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/J2582_TRANCHE2_STILL_SHEETS_EVIDENCE_2026-11-11.json",
+      "sha256": "9609c21719131efe4430fe05425c0d9ffcb2629817f0690f48c8b6935c925a1f"
+    },
+    {
+      "pr": 511,
+      "head": "93d084187b5cb10cb32d5e87db9d214d84f38eb8",
+      "path": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/J2582_TRANCHE2_STILL_SHEETS_EVIDENCE_2026-11-11.md",
+      "sha256": "a020f058da98119d5042036499b9dd2f3a1db717d293983ca756478c4f8880eb"
+    },
+    {
+      "pr": 511,
+      "head": "93d084187b5cb10cb32d5e87db9d214d84f38eb8",
+      "path": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/review_J2582_sheets/P01_05_heavens_map_c1_sheet.jpg",
+      "sha256": "3123b399ecfc2217416e6df40b950bcad20f7d86015aedbde556f5c5b2f20cad"
+    },
+    {
+      "pr": 511,
+      "head": "93d084187b5cb10cb32d5e87db9d214d84f38eb8",
+      "path": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/review_J2582_sheets/P01_07_night_field_c1_sheet.jpg",
+      "sha256": "e9b0339a1c0f46084942c6a56279d4ae58802472e69d1473d724075b2add5622"
+    },
+    {
+      "pr": 511,
+      "head": "93d084187b5cb10cb32d5e87db9d214d84f38eb8",
+      "path": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/review_J2582_sheets/P02_01_cambridge_closes_c1_sheet.jpg",
+      "sha256": "130750b127b27378a7b5ddd371bfab787e3cdec864f932c9539a18966108eed7"
+    },
+    {
+      "pr": 511,
+      "head": "93d084187b5cb10cb32d5e87db9d214d84f38eb8",
+      "path": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/review_J2582_sheets/P02_03_christmas_birth_c1_sheet.jpg",
+      "sha256": "efa946a59131481127442ac9cbb1ea768eae67d0dba35bb706bef258329726ed"
+    },
+    {
+      "pr": 511,
+      "head": "93d084187b5cb10cb32d5e87db9d214d84f38eb8",
+      "path": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/review_J2582_sheets/P02_05_working_alone_c1_sheet.jpg",
+      "sha256": "86a6cecf51f2e33bb18a2b2a65970fb17876e1f428a40e21dd32fddc2e82d049"
+    },
+    {
+      "pr": 511,
+      "head": "93d084187b5cb10cb32d5e87db9d214d84f38eb8",
+      "path": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/review_J2582_sheets/P02_08_the_apple_c1_sheet.jpg",
+      "sha256": "7690619bf9a5dc5be4446d28102b0086d99d3b0a2a85442180738252f3cdf5b5"
+    },
+    {
+      "pr": 511,
+      "head": "93d084187b5cb10cb32d5e87db9d214d84f38eb8",
+      "path": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/review_J2582_sheets/P02_10_how_high_sheet.jpg",
+      "sha256": "5bb04362c6febcc44f0715c125eb03556f501c109a06c91da416a996ea0b3b7c"
+    },
+    {
+      "pr": 511,
+      "head": "93d084187b5cb10cb32d5e87db9d214d84f38eb8",
+      "path": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/review_J2582_sheets/P02_11_explorer_apple_c1_qsec_3to5s_sheet.jpg",
+      "sha256": "d19619d6d2e3437f679b897f7de4865ed300d29f0ba4bcfdd0c49071faa187ed"
+    },
+    {
+      "pr": 511,
+      "head": "93d084187b5cb10cb32d5e87db9d214d84f38eb8",
+      "path": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/review_J2582_sheets/P02_11_explorer_apple_c1_sheet.jpg",
+      "sha256": "c2a8569ce8beab69037fe3776d30c54037f65e75b907ebc7af99a52826188207"
+    },
+    {
+      "pr": 511,
+      "head": "93d084187b5cb10cb32d5e87db9d214d84f38eb8",
+      "path": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/review_J2582_sheets/P03_05_shot_orbit_c1_sheet.jpg",
+      "sha256": "d8a6ecc89fdda19ffb5b47efbf1640737049d175b4adb88b46655d4022fa3833"
+    },
+    {
+      "pr": 511,
+      "head": "93d084187b5cb10cb32d5e87db9d214d84f38eb8",
+      "path": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/review_J2582_sheets/P03_05_shot_orbit_c2_sheet.jpg",
+      "sha256": "64a9c74b1da7b35175b56e89661f6cfa0bb2e5ab1b00a3b0efcfae9cebad8d88"
+    },
+    {
+      "pr": 511,
+      "head": "93d084187b5cb10cb32d5e87db9d214d84f38eb8",
+      "path": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/review_J2582_sheets/P03_07_ball_to_moon_sheet.jpg",
+      "sha256": "2d6f472711172833c9ff1200268ae5ce8665dc52e1167e2db14459b2ebb9a27e"
+    },
+    {
+      "pr": 511,
+      "head": "93d084187b5cb10cb32d5e87db9d214d84f38eb8",
+      "path": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/review_J2582_sheets/P04_05_minute_second_c1_sheet.jpg",
+      "sha256": "e36e09b6f57222e8f76e60abf6ae93f5e9268228b77ac6e44b6409329880de7e"
+    },
+    {
+      "pr": 511,
+      "head": "93d084187b5cb10cb32d5e87db9d214d84f38eb8",
+      "path": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/review_J2582_sheets/P04_05_minute_second_c2_sheet.jpg",
+      "sha256": "ac7a43877e0bff21ced2ea04bbaaab4b0c99978c0d50ad284c374337d023552c"
+    },
+    {
+      "pr": 511,
+      "head": "93d084187b5cb10cb32d5e87db9d214d84f38eb8",
+      "path": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/review_J2582_sheets/P04_08_halley_visit_c1_sheet.jpg",
+      "sha256": "788eb507e3aebde7c46396da485ee5bbc132058f0aa8a2beb23a81f9e428a694"
+    },
+    {
+      "pr": 511,
+      "head": "93d084187b5cb10cb32d5e87db9d214d84f38eb8",
+      "path": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/review_J2582_sheets/P04_08_halley_visit_c2_sheet.jpg",
+      "sha256": "0367d9286283873a66b54944e9f349a814adb21e35dc1d86140cb33236313f7a"
+    },
+    {
+      "pr": 511,
+      "head": "93d084187b5cb10cb32d5e87db9d214d84f38eb8",
+      "path": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/review_J2582_sheets/P05_04_comet_1758_c1_sheet.jpg",
+      "sha256": "592b8b87613b611cf23bb10640f2d27e4ae915a2300ba4b2cd0f725e44ec41aa"
+    },
+    {
+      "pr": 511,
+      "head": "93d084187b5cb10cb32d5e87db9d214d84f38eb8",
+      "path": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/review_J2582_sheets/P05_05_iss_orbit_c1_sheet.jpg",
+      "sha256": "641634583c4895db02963da8d2252f04823019cb7a2fa3724a3e616fa4a3214d"
+    },
+    {
+      "pr": 511,
+      "head": "93d084187b5cb10cb32d5e87db9d214d84f38eb8",
+      "path": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/review_J2582_sheets/P05_05_iss_orbit_c2_sheet.jpg",
+      "sha256": "91b6615c48e18bdb2d193bdcbf2d98a88ab6557a4a942db550983de118cae34b"
+    },
+    {
+      "pr": 511,
+      "head": "93d084187b5cb10cb32d5e87db9d214d84f38eb8",
+      "path": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/review_J2582_sheets/P05_06_iss_apple_c1_sheet.jpg",
+      "sha256": "c14ab00d6b6cfae3a3a89975ca3333e8e4f3414ac0dc1067ca886fe1fb3662d5"
+    },
+    {
+      "pr": 511,
+      "head": "93d084187b5cb10cb32d5e87db9d214d84f38eb8",
+      "path": "02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/review_J2582_sheets/README.md",
+      "sha256": "2d772a3b084861e95a96b22817086b85ec4445957900de5abd0afcc908a76312"
+    },
+    {
+      "pr": 509,
+      "head": "250cf4595dcf5dd1db44dd818495f3bf2050044b",
+      "path": "02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/10_Shorts/J2270_BATCH1_HANDOFF.md",
+      "sha256": "879db1addee32c6d38efcee4a080e6cdfd1bd72a667edd22d186cce3276f12b3"
+    }
+  ],
+  "omitted": [
+    {
+      "pr": 556,
+      "path": "02_Video-Projects/008_Lightning-Franklin/production-status.md",
+      "reason": "Keep current main state; obsolete board files are not restored, and shared ignore policy is unchanged."
+    },
+    {
+      "pr": 550,
+      "path": "00_Brand/Channel-Setup/PIPELINE.json",
+      "reason": "Keep current main state; obsolete board files are not restored, and shared ignore policy is unchanged."
+    },
+    {
+      "pr": 550,
+      "path": "00_Brand/Channel-Setup/kanban/index.html",
+      "reason": "Keep current main state; obsolete board files are not restored, and shared ignore policy is unchanged."
+    },
+    {
+      "pr": 550,
+      "path": "STATUS.md",
+      "reason": "Keep current main state; obsolete board files are not restored, and shared ignore policy is unchanged."
+    },
+    {
+      "pr": 514,
+      "path": "02_Video-Projects/008_Lightning-Franklin/production-status.md",
+      "reason": "Keep current main state; obsolete board files are not restored, and shared ignore policy is unchanged."
+    },
+    {
+      "pr": 511,
+      "path": ".gitignore",
+      "reason": "Keep current main state; obsolete board files are not restored, and shared ignore policy is unchanged."
+    },
+    {
+      "pr": 509,
+      "path": "00_Brand/Channel-Setup/PIPELINE.json",
+      "reason": "Keep current main state; obsolete board files are not restored, and shared ignore policy is unchanged."
+    },
+    {
+      "pr": 509,
+      "path": "00_Brand/Channel-Setup/kanban/index.html",
+      "reason": "Keep current main state; obsolete board files are not restored, and shared ignore policy is unchanged."
+    },
+    {
+      "pr": 509,
+      "path": "STATUS.md",
+      "reason": "Keep current main state; obsolete board files are not restored, and shared ignore policy is unchanged."
+    }
+  ]
+}

@@ -1,0 +1,282 @@
+[
+  {
+    "text": "That",
+    "start": 0.1,
+    "end": 0.22
+  },
+  {
+    "text": "rooftop",
+    "start": 0.34,
+    "end": 0.78
+  },
+  {
+    "text": "lightning",
+    "start": 0.88,
+    "end": 1.2
+  },
+  {
+    "text": "rod",
+    "start": 1.28,
+    "end": 1.48
+  },
+  {
+    "text": "was",
+    "start": 1.52,
+    "end": 1.7
+  },
+  {
+    "text": "Franklin's",
+    "start": 1.72,
+    "end": 2.26
+  },
+  {
+    "text": "idea",
+    "start": 2.34,
+    "end": 2.68
+  },
+  {
+    "text": "Lightning",
+    "start": 2.9,
+    "end": 3.24
+  },
+  {
+    "text": "takes",
+    "start": 3.36,
+    "end": 3.66
+  },
+  {
+    "text": "the",
+    "start": 3.7,
+    "end": 3.9
+  },
+  {
+    "text": "easiest",
+    "start": 4.0,
+    "end": 4.38
+  },
+  {
+    "text": "path",
+    "start": 4.5,
+    "end": 4.76
+  },
+  {
+    "text": "to",
+    "start": 4.82,
+    "end": 4.88
+  },
+  {
+    "text": "the",
+    "start": 4.92,
+    "end": 5.0
+  },
+  {
+    "text": "ground.",
+    "start": 5.04,
+    "end": 5.56
+  },
+  {
+    "text": "A",
+    "start": 6.16,
+    "end": 6.26
+  },
+  {
+    "text": "wooden",
+    "start": 6.3,
+    "end": 6.5
+  },
+  {
+    "text": "roof",
+    "start": 6.62,
+    "end": 7.0
+  },
+  {
+    "text": "is",
+    "start": 7.14,
+    "end": 7.22
+  },
+  {
+    "text": "a",
+    "start": 7.28,
+    "end": 7.36
+  },
+  {
+    "text": "terrible",
+    "start": 7.44,
+    "end": 7.86
+  },
+  {
+    "text": "path,",
+    "start": 7.96,
+    "end": 8.34
+  },
+  {
+    "text": "so",
+    "start": 8.76,
+    "end": 8.84
+  },
+  {
+    "text": "it",
+    "start": 8.9,
+    "end": 9.1
+  },
+  {
+    "text": "bursts",
+    "start": 9.16,
+    "end": 9.48
+  },
+  {
+    "text": "into",
+    "start": 9.54,
+    "end": 9.76
+  },
+  {
+    "text": "flame.",
+    "start": 9.8,
+    "end": 10.24
+  },
+  {
+    "text": "A",
+    "start": 10.98,
+    "end": 11.06
+  },
+  {
+    "text": "metal",
+    "start": 11.12,
+    "end": 11.4
+  },
+  {
+    "text": "rod",
+    "start": 11.52,
+    "end": 11.9
+  },
+  {
+    "text": "is",
+    "start": 12.08,
+    "end": 12.16
+  },
+  {
+    "text": "an",
+    "start": 12.2,
+    "end": 12.28
+  },
+  {
+    "text": "easy",
+    "start": 12.36,
+    "end": 12.6
+  },
+  {
+    "text": "one.",
+    "start": 12.7,
+    "end": 12.98
+  },
+  {
+    "text": "The",
+    "start": 13.7,
+    "end": 13.78
+  },
+  {
+    "text": "lightning",
+    "start": 13.84,
+    "end": 14.2
+  },
+  {
+    "text": "runs",
+    "start": 14.3,
+    "end": 14.62
+  },
+  {
+    "text": "down",
+    "start": 14.66,
+    "end": 14.86
+  },
+  {
+    "text": "the",
+    "start": 14.9,
+    "end": 14.98
+  },
+  {
+    "text": "rod,",
+    "start": 15.02,
+    "end": 15.32
+  },
+  {
+    "text": "round",
+    "start": 15.7,
+    "end": 15.9
+  },
+  {
+    "text": "the",
+    "start": 15.94,
+    "end": 16.02
+  },
+  {
+    "text": "building,",
+    "start": 16.04,
+    "end": 16.54
+  },
+  {
+    "text": "and",
+    "start": 16.82,
+    "end": 16.9
+  },
+  {
+    "text": "into",
+    "start": 16.96,
+    "end": 17.18
+  },
+  {
+    "text": "the",
+    "start": 17.22,
+    "end": 17.3
+  },
+  {
+    "text": "earth.",
+    "start": 17.38,
+    "end": 17.72
+  },
+  {
+    "text": "Some",
+    "start": 18.62,
+    "end": 18.82
+  },
+  {
+    "text": "towers",
+    "start": 18.9,
+    "end": 19.3
+  },
+  {
+    "text": "are",
+    "start": 19.32,
+    "end": 19.42
+  },
+  {
+    "text": "struck",
+    "start": 19.5,
+    "end": 19.78
+  },
+  {
+    "text": "over",
+    "start": 19.86,
+    "end": 20.08
+  },
+  {
+    "text": "20",
+    "start": 20.38,
+    "end": 20.58
+  },
+  {
+    "text": "times",
+    "start": 20.7,
+    "end": 21.1
+  },
+  {
+    "text": "a",
+    "start": 21.18,
+    "end": 21.2
+  },
+  {
+    "text": "year",
+    "start": 21.3,
+    "end": 21.58
+  }
+]

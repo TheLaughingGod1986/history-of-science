@@ -1,0 +1,53 @@
+{
+  "job": "J2589",
+  "status": "GENERATED_PENDING_REVIEW",
+  "credits": 200,
+  "spend_gbp": 0,
+  "preflight": {
+    "live": 11890,
+    "pending": false,
+    "shared_liability": 5900
+  },
+  "takes": [
+    {
+      "part": "02",
+      "id": "02_salon_spark",
+      "take": 3,
+      "reference_sha256": "aefd6338aded1037c11306a99fc580d1a62a66d9367409f01e0edd993cc8cc58",
+      "file": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part02/j2241/02_salon_spark_j2241_t3.mp4",
+      "minimum_frames": 160,
+      "status": "GENERATED_PENDING_REVIEW",
+      "full_prompt_readback": "IMAGE-TO-VIDEO of the attached start frame. Animate THIS exact scene \u2014 keep composition, characters, and lighting. Continuous camera/subject motion through the final frame. History of Science premium 3D cartoon, warm cinematic period light. Animate the attached reference with its exact look. The lecturer lowers the glass rod and holds it still. The guest slowly brings one knuckle close to the tip of the rod. A few loose strands at her temple lift slightly towards the rod; the rest of her powdered wig stays completely still. Calm, quiet, candle-lit room. The rod is a solid glass rod, not a tube. Silent picture only. Continuous subject and camera motion through the final frame. No text, captions, letters, numbers, logos or UI. Silent picture only. No text, no logos.",
+      "credits": 100,
+      "charge": "HOS:008:P02:02_salon_spark:J2241:t3",
+      "sha256": "b9b9d58836c71ef06b0f551f8505c88ccf704e8ca84399547c47c7487c652dfe",
+      "frames": 190,
+      "width": 1280,
+      "height": 720,
+      "frame_rate": "24/1",
+      "sheet": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part02/j2241/02_salon_spark_j2241_t3.jpg",
+      "decode_ok": true,
+      "half_second_sheet": "/Volumes/MiniWork/scratch/hos-J2589-02_salon_spark-halfsec.jpg"
+    },
+    {
+      "part": "03",
+      "id": "01_points_desk",
+      "take": 3,
+      "reference_sha256": "cc16a515a43e881c54a207eb2cb3f700ab9a4166bbb83a366dc09431db403e51",
+      "file": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part03/j2241/01_points_desk_j2241_t3.mp4",
+      "minimum_frames": 160,
+      "status": "GENERATED_PENDING_REVIEW",
+      "full_prompt_readback": "IMAGE-TO-VIDEO of the attached start frame. Animate THIS exact scene \u2014 keep composition, characters, and lighting. Continuous camera/subject motion through the final frame. History of Science premium 3D cartoon, warm cinematic period light. Animate the attached reference with its exact look. The man holds two sewing needles steady near the brass sphere; both hands stay in view; the sphere and everything under it stay exactly as in the first frame. Silent picture only. Continuous subject and camera motion through the final frame. No text, captions, letters, numbers, logos or UI. Silent picture only. No text, no logos.",
+      "credits": 100,
+      "charge": "HOS:008:P03:01_points_desk:J2241:t3",
+      "sha256": "950a2b34dee038becf1738ab797358e9dd7a0040d8a1c50e840b3886d59a93e3",
+      "frames": 190,
+      "width": 1280,
+      "height": 720,
+      "frame_rate": "24/1",
+      "sheet": "/Users/benjaminoats/YouTube/hos-008-lightning/02_Video-Projects/008_Lightning-Franklin/04_Generated-Clips/part03/j2241/01_points_desk_j2241_t3.jpg",
+      "decode_ok": true,
+      "half_second_sheet": "/Volumes/MiniWork/scratch/hos-J2589-01_points_desk-halfsec.jpg"
+    }
+  ]
+}
