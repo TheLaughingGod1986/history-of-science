@@ -1,0 +1,102 @@
+{
+  "job": "J3042",
+  "film": "HOS:009",
+  "status": "proposed_scope_only_awaiting_J3043_chief_approval_no_spend_release_in_J3042",
+  "proposed_by": "gemini (specialist worker on gemini-argon; J3043 elected-Chief review required before any spend release)",
+  "chief_successor_job": "J3043",
+  "predecessor_ruling_job": "J3038",
+  "predecessor_disposition_job": "J2808",
+  "predecessor_scope_job": "J2805",
+  "date": "2026-11-18",
+  "air_date": "2026-11-26",
+  "ready_by": "2026-11-22",
+  "prior_disposition_status": "J2808 NOT_ACCEPTED_HOLD remains in force; neither v01 nor v02 is accepted; J2035 and J2171 remain held (blocked)",
+  "spend_release_rule": "J3042 is a proposal only and authorizes zero spend, zero requests, and zero media generation. Only when the elected HOS Chief reviews J3043, approves this scope, and merges the J3042 PR to main may up to 3,000 ElevenLabs subscription credits (at £0.00 cash, 0 overage, 0 retries) be released to the single queued production successor. If any pre-spend check indicates paid overage, a top-up, or ambiguous billing state, stop with no POST and report.",
+  "tool": "04_Audio/tools/generate_music_bed.py via el_client/el_guard on Mini",
+  "model_id": "music_v2",
+  "force_instrumental": true,
+  "max_requests": 1,
+  "takes_per_cue": 1,
+  "max_generated_seconds": 180,
+  "credit_cap": 3000,
+  "cash_cap_gbp": 0,
+  "automatic_retries": false,
+  "cue": {
+    "id": "wonder_v03",
+    "output_file": "hos_009_wonder_v03.mp3",
+    "joined_output_file": "hos_009_score_joined_v03.wav",
+    "length_ms": 180000,
+    "film_start_s": 0,
+    "film_end_s": 178.28
+  },
+  "prompt": "Original instrumental opening underscore exclusively for HOS 009 The Falling Moon, Newton connecting an apple with the Moon. Intimate 17th-century period chamber music for soft plucked gut-string lute and warm bowed viols in D minor and related modal harmony, with continuously overlapping instrumental parts and quiet audible accompaniment from the first second to the last. As each viol line tapers, gentle lute arpeggios or a companion viol voice are already sounding underneath so the harmonic weave never drops out, pauses, or fades to silence. Harmonic progression and register shift gently from bar to bar with no static bass-drone opening. Breathing room for British narration comes from restrained dynamics, soft articulation, and warm low-to-mid register, never from rests, caesuras, or silence between phrases; no solo lead melody. Begin softly and immediately in full continuous chamber texture with no fade-in, swell, or sting. Around 84 seconds, warm into an intimate Woolsthorpe orchard colour while keeping unbroken overlapping lute and viol accompaniment. End on a quiet, continuous sustained D-minor harmonic handoff suitable for a three-second equal-power crossfade into the existing D-minor harpsichord teach cue.\nPace: 60-66 BPM, flowing continuous chamber motion; no driving ostinato and no silent pauses.\nNOT any earlier HOS or Orbit bed, the previous HOS009 wonder cues, jupiter-music.mp3, silent gaps or rests between phrases, isolated chord swells fading to silence, static or sustained bass-drone opening, cosmic shimmer, piano space-documentary music, solo woodwind workshop waltz, borrowed melody, named-composer imitation, heroic brass, horror, vocals, lyrics, pop drums, EDM or comedy stings.",
+  "failure_modes_addressed": {
+    "v01_reuse_detector_failure": {
+      "artifact": "05_Music/hos_009_wonder_v01.mp3 & hos_009_score_joined_v01.wav",
+      "sha256_wonder_v01": "95dfe11d7c21c9347e9b962ef2f9ecd35116f2fce60df6f123578c11a1debaf0",
+      "sha256_joined_v01": "d7f5bf3d7553d7c611a913e93602b8ec83419821059294ddeaee32269a4f9572",
+      "defect": "Failed unchanged production music_gate.py on seconds 0-21 (0.821 vs OWB 013 moon-leaving-part02, 0.804/0.811 vs HOS 002 curious_workshop) due to a static sustained low bowed-viol bass-drone opening. PR908 failed J2803 validation (0.693 on 0.37s trim, 0.633 on combined transform) and remains undeployed.",
+      "prompt_fix_in_v03": "Retains explicit ban on any static or sustained bass-drone opening ('with no static bass-drone opening', 'NOT ... static or sustained bass-drone opening') and specifies gently changing bar-to-bar D-minor/modal harmony and shifting register between plucked gut-string lute arpeggios and bowed viols from 0.00s."
+    },
+    "v02_inter_phrase_silent_dropouts_and_missing_lute": {
+      "artifact": "05_Music/hos_009_wonder_v02.mp3 & hos_009_score_joined_v02.wav",
+      "sha256_wonder_v02": "b38ae8922e8d633b9f085a8bb9634c96d889a9293fcab277f7a3a23f4839d148",
+      "sha256_joined_v02": "6fc8628a96b8267eaf5be6c19d7e30d9e473eb86c886ee3106c3219b375b1f68",
+      "defect": "Passed complete-library 89-bed music_gate.py (max joined similarity 0.6615, max wonder_v02 similarity 0.4822, 0 fails), 175.28-178.28s D-minor crossfade, tempo, VO clarity, and 526s/535.33s tail, but FAILED J2807 ear review (EAR_REVIEW_J2807.md) on six 0.61-2.29s < -45 dB inter-phrase silent dropouts across 18.95-97.92s (18.95-21.00s, 66.48-67.83s, 73.04-75.33s, 81.70-82.84s, 88.91-90.39s, 97.31-97.92s) plus missing gut-string lute (FLAG), because music_v2 interpreted J2805's prompt phrase 'Wonder comes from space between short, gently changing phrases' as full rests between bowed-string chord swells.",
+      "prompt_fix_in_v03": "Removes the contradictory phrase 'Wonder comes from space between short, gently changing phrases' and 'sparse phrases'. Replaces it with explicit instructions for continuously overlapping gut-string lute arpeggios and warm bowed viols where a companion voice or lute figure is always sounding as each phrase tapers, defines narration breathing room as restrained register/dynamics/articulation rather than rests or fade-to-silence between phrases, and explicitly puts 'silent gaps or rests between phrases, isolated chord swells fading to silence' in the Pace/NOT lines."
+    }
+  },
+  "retain_teach": {
+    "file": "hos_009_teach_v01.mp3",
+    "sha256": "4c1f0a17364ad5ba96fdd2d42730b2f857d19017fab52b221701bd4e15d07bb1",
+    "source_start_s": 0,
+    "film_start_s": 175.28,
+    "new_generation": false
+  },
+  "crossfade": {
+    "start_s": 175.28,
+    "end_s": 178.28,
+    "duration_s": 3,
+    "chapter_card_s": 176.78,
+    "curve": "equal_power",
+    "harmonic_handoff": "D-minor sustained chamber handoff into D-minor harpsichord/lute arpeggio of hos_009_teach_v01.mp3"
+  },
+  "timing": {
+    "locked_vo_end_s": 518.4,
+    "source": "07_Edit-Project/VO_RETIME_v01.json",
+    "reference_master_endpoint_s": 526.0,
+    "expected_available_score_end_s": 535.28,
+    "final_endpoint": "actual master including final card/tail; never change picture or narration timing to fit music"
+  },
+  "preserved_locks": {
+    "VO_TAKES_KEEP.json": "530743c507af8d5f9049179d4e9d380b5c1b8aca4f180ada133d0b673f5925e0",
+    "VO_RETIME_v01.json": "75a2e7afa1d822b04371511c81a52082e1b80713b0e59711702cfd05fe45a972",
+    "J2631_code_graphic_009_p4_05_minute_second.mp4": "e35f9a9879c8e590ec66853b85307999f39bfe30c67b9bed193ca224cab42da3",
+    "J2632_r4_code_graphic_009_p3_01_really_falling_c1.mp4": "23c832b09e70f78d8eeece657dac11d6148e2a5f5c701f2ad88b868845b5f3b3",
+    "hos_009_wonder_v01.mp3": "95dfe11d7c21c9347e9b962ef2f9ecd35116f2fce60df6f123578c11a1debaf0",
+    "hos_009_teach_v01.mp3": "4c1f0a17364ad5ba96fdd2d42730b2f857d19017fab52b221701bd4e15d07bb1",
+    "hos_009_score_joined_v01.wav": "d7f5bf3d7553d7c611a913e93602b8ec83419821059294ddeaee32269a4f9572",
+    "hos_009_wonder_v02.mp3": "b38ae8922e8d633b9f085a8bb9634c96d889a9293fcab277f7a3a23f4839d148",
+    "hos_009_score_joined_v02.wav": "6fc8628a96b8267eaf5be6c19d7e30d9e473eb86c886ee3106c3219b375b1f68",
+    "SCORE_SCOPE_J2805.json": "1298c09d6b6000e474bd5e359a767272edd63f452c5d4171872e1ec29d3269b1"
+  },
+  "pre_spend": [
+    "Verify fresh active subscription balance and duration-based worst-case tariff for 180 seconds. Historical J2664/J2806 charge 2475 is context, not a current quote.",
+    "Verify extension limits zero, can_extend_character_limit and allowed_to_extend_character_limit false, current_overage_amount zero. Unknown, missing or contradictory billing evidence means no POST.",
+    "Under one recorder lock check TTS_PAUSE, pending/unposted charges and concurrent spend. Worst-case charge must be <= min(3000, live remaining minus pending). Use existing duration guard established for J2664/J2666/J2806; a prompt-character estimate alone is insufficient.",
+    "Record sanitized preflight evidence and ledger; no top-up, overage, new service or website generation. Read fresh meter after request; ambiguous response consumes the one-request allowance until reconciled, never retry."
+  ],
+  "acceptance": [
+    "Preserve every v01 and v02 cue, score, stem, plan and prior review/disposition result byte-for-byte; existing v01/v02 failures remain failed. Write v03 outputs (hos_009_wonder_v03.mp3, hos_009_score_joined_v03.wav, 5 part stems _v03.wav, transition/reference mix _v03.wav) and own-score provenance including source windows, hashes, song ID, request time, meter delta and join recipe; verify Mini and NAS studio-live copies byte-for-byte.",
+    "Run unchanged production music_gate.py on complete joined v03 (and wonder_v03) with full current earlier-bed inventory from both channels across all 9 local/UAT/studio-live/archive roots (>= 89 comparisons including all 77+ historical beds and all 15 hash-verified iCloud UAT tracks, 0 unreadable). Record legitimate same-film and AppleDouble exclusions explicitly. No suppressed comparison, threshold change, or PR908 deployment.",
+    "Require own/brief/reused/gap PASS and bed length >= required endpoint (526.00s reference master endpoint and 535.28s stem end); run length against final master in J2035. No loop, patch, splice, silent padding, timing alteration, gate-evasion filtering or favourable excerpt selection.",
+    "Record explicit timestamped silence/continuity evidence across wonder_v03 (0.00-180.04s / film 0.00-178.28s) and hos_009_score_joined_v03.wav (0.00-535.33s), including ffmpeg silencedetect at -45 dB (d=0.25 and d=0.50) and per-second RMS floor telemetry across 0.00-178.28s confirming unbroken overlapping accompaniment with zero inter-phrase silent dropouts (note: measurements are diagnostic evidence only and never substitute for demonstrated audio_input ear review).",
+    "Fresh demonstrated audio_input reviewer auditions wonder_v03, complete joined score hos_009_score_joined_v03.wav, the 168.00-186.00s transition (bed and VO+bed mix), the all-part locked-VO reference mix (0.00-518.40s) and the final tail (518.40-535.33s / 526.00s endpoint). Judge continuous overlapping accompaniment without phrase gaps or static bass drone, presence of soft gut-string lute and viols, period fit, wonder/teach contrast, VO intelligibility, seams, tempo (60-66 BPM wonder / ~70 BPM teach) and musical distinctness. Prior J2783 and J2807 reviews do not apply to v03.",
+    "Final elected-Chief score acceptance requires both complete unchanged music_gate PASS and capable audio_input ear review PASS. Only after elected-Chief score acceptance may held J2035 assemble the long and run composite picture_qa/polish_gate, music_gate against the actual cut, per-part sfx_kit.py level and all existing gates, followed by dependent J2171 Shorts."
+  ],
+  "failure": "After the single candidate, any failed or unresolved gate or ear check stays failed/held. No second take, retry, loop, patch, splice, filter or waiver. Production/review records exact evidence and hands to the queued Chief disposition; that successor has a 20-minute no-spend decision budget to choose a genuinely new bounded route or record the precise unsatisfied constraint. Never repeat an unchanged verification or deploy PR908.",
+  "held_jobs": {
+    "J2035": "blocked until a later accepted score",
+    "J2171": "blocked until a later accepted score and long assembly"
+  }
+}
