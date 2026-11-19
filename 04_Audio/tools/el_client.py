@@ -17,6 +17,10 @@ from el_auth import auth_headers
 API = "https://api.elevenlabs.io"
 
 
+def _music_path(path: str) -> bool:
+    return path.split("?", 1)[0] == "/v1/music"
+
+
 def request(
     method: str,
     path: str,
@@ -28,6 +32,11 @@ def request(
     accept: str = "application/json",
     timeout: int = 600,
 ) -> tuple[int, bytes, dict[str, str]]:
+    if method.upper() == "POST" and _music_path(path):
+        # One guarded flight. before_spend must not open its own subscription GET.
+        from hos009_score_flight import from_client
+
+        return from_client(data=data, query=query)
     url = f"{API}{path}"
     if query:
         url = f"{url}?{query}"
@@ -64,6 +73,11 @@ def multipart_post(
     files: list[tuple[str, Path]],
     timeout: int = 600,
 ) -> tuple[int, bytes]:
+    if _music_path(path):
+        # Do not read the uploaded file and do not nest a subscription GET.
+        from hos009_score_flight import from_multipart
+
+        return from_multipart(fields=fields, files=files)
     boundary = f"----orbit{uuid4().hex}"
     chunks: list[bytes] = []
     for name, value in fields.items():
