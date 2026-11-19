@@ -1,161 +1,68 @@
-# J3141 — fail-closed score billing guard (proposal only)
+# J3144 — revised fail-closed score billing guard (proposal only)
 
-19 November 2026. This is a proposed change for independent review. It is not
-integrated, not deployed, and not an allowance.
+19 November 2026. This revises the offline proposal at `c9ef1e0aa51a363971f5de1f5648ece6826eec12`. It is not integrated, not deployed, and not an allowance.
 
-No account call, no POST, no generation, no billing change, and no edit to the
-live ElevenLabs guard were made while writing it. Tests use synthetic fixtures
-only.
+No account call, no POST, no generation, no billing change, and no edit to the live ElevenLabs guard were made while writing it. Tests use synthetic fixtures and redacted key names only.
 
-## Where it starts
-
-The nested overage rule is copied from the reviewed offline mapping, HOS PR651
-commit `d047b06440591466d494a7377b9142cb1f4b0692`. J3059 kept that commit
-unmerged and unintegrated. This proposal does not import it and does not merge
-it.
-
-Desk 7005927729 is the field comparison this guard is built to survive:
-
-- A fresh subscription GET is the only overage evidence that can be considered.
-- The value that has to be kept is nested `current_overage.amount` and
-  `current_overage.currency`.
-- A flattened `current_overage_amount` is not raw evidence. A saved preflight
-  that dropped the nested object cannot stand in for zero.
-- Unknown billing evidence means no POST.
-- The J3043/J3045 allowance stays closed unused under J3047. This module does
-  not read it, renew it, or pool it.
-- v01 and v02 stay rejected. J2035 and J2171 stay held.
+J3142 (HOS PR 668, `18c281b046f74c94aa2ebb101ecfaeec5ee10a5f`) recorded FIX. Chief desk 7013542642 ruled NOT YET. This commit answers that review and desk points a–e. It does not authorize a score.
 
 ## What a pass means
 
-`MeterBoard.decide` returns `outcome: pass_once` only when every check below
-passes. The returned token always has:
+`MeterBoard.decide` returns `outcome: pass_once` only when every check below passes. The returned token always has `authorizes_generation: false`, `opens_allowance: false`, `integrated: false`, and `network_calls: 0`. `consume` returns that same token with `consumed: true` only when every field still matches the copy the guard stored. A changed estimate, cash figure, overage object, or authorization flag refuses.
 
-- `authorizes_generation: false`
-- `opens_allowance: false`
-- `integrated: false`
-- `network_calls: 0`
-- `would_allow_posts: 1`
-- `retries: 0`
+## Evidence used
 
-`consume` burns that one token. It still does not perform a POST. A second
-`decide` or `consume` on the same board raises `retry_or_shared_meter` or
-`retry`. A refusal burns the board too, so a caller cannot probe until a later
-call passes.
-
-There is no environment switch that turns the guard off.
+- Subscription key names: the 34 names logged by the 17 Nov J2806 read and copied in `EAR_REVIEW_J3046`. `subscription_shape.json` records those names and types. It has no account values.
+- Types for 31 of those keys: the 4 Oct redacted snapshot's structure, plus the public subscription schema for `cancels_immediately` (boolean). The healthy snapshot's `next_invoice` is a scheduled renewal object, not null, with a null payment status and an empty discount list.
+- Three names were logged only as names: `bfcm_2026_offer`, `creator_arm_price`, `is_annual_four_months_subscriber`. A null, boolean, integer, or string is accepted and ignored. A nested object or list refuses. Their real types are an unresolved risk.
+- Duration tariff, from `J2806_PROVENANCE.json`: measured 2,475 credits for one 180s `music_v2` take; published 900 credits/minute, so 2,700 for 180s; recorded worst case 2,970. The declaration floor is 2,970, the higher evidenced figure. 2,475 remains the measured reference and is not a price the caller may declare.
+- Capacity mapping: on that same take the character meter moved 43,725 − 41,250 = 2,475, equal to the credits spent. The guard computes the ratio from those three numbers. It is 1 for this one take and this duration only. Any other ratio, or a broken equality, refuses `unknown_mapping`. A prompt length is not a music price.
 
 ## Checks, in order
 
-1. Any extra argument, including a transport or fetch callback, is
-   `network_forbidden`.
-2. The board accepts one `decide`. The second is `retry_or_shared_meter`,
-   including when two callers race.
+1. `fetched_at`, `now`, `lease`, `pause_file_present`, and `pending_unposted_credits` are refused. They are not evidence.
+2. The in-memory board accepts one `decide`. The durable record is `hos009-score-single-use.json`, flocked, keyed by the request-body hash and the raw subscription hash. A new `MeterBoard`, including in a new process, refuses when given the same file.
 3. HTTP status must be the integer 200.
-4. `fetched_at` and `now` must be timezone-aware UTC. A negative gap is
-   `inconsistent_clock`. A gap above 60 seconds, or a naive time, is `stale`.
-   Exactly 60 seconds still passes.
-5. The body must be raw bytes. The parser rejects duplicate keys at every
-   object. A dict, a string, or a non-object is `malformed_body`.
-6. The key set is exactly the sixteen fields listed in
-   `score_billing_guard.REQUIRED_KEYS`. An extra key is `unknown_field`.
-   Either flattened overage key is `overage`, even beside a valid nested
-   object.
-7. Entitlement must be tier `creator`, status `active`, billing period
-   `monthly_period`. Anything else is `unknown_entitlement`.
-8. Both extension limits must be integer 0 and both extension flags must be
-   false. Otherwise `extensions`.
-9. `has_open_invoices` must be false, `open_invoices` must be an empty list,
-   and `next_invoice` must be null. Otherwise `invoices`. `pending_change`
-   must be null.
-10. Nested `current_overage` must be exactly `amount` and `currency`. The
-    amount must be the canonical zero string accepted by the reviewed mapping
-    (`0`, `0.0`, `0.00`, …). Integer zero, a blank, a sign, a non-zero, and a
-    non-canonical string such as `00` or `0e0` are `overage`. The currency
-    must be one of `usd`, `eur`, `inr`, `pln`, `gbp`, and the top-level
-    `currency` must be the same string. The original amount string is kept on
-    the token.
-11. `character_count` and `character_limit` must be non-negative integers,
-    with the limit at least the count. The reset unix time must fall after
-    the freshness window. Remaining capacity is `character_limit -
-    character_count`.
-12. The request must be holder `hos009-score`, attempt integer 1, endpoint
-    `/v1/music`, model `music_v2`, `force_instrumental` true, length exactly
-    180000 ms, and query `output_format=mp3_44100_128`. Estimated credits must
-    be an integer from 1 to 3000 inclusive. Cash must be the string `0`.
-    Above 3000 credits is `budget`. Any other cash value is `cash`.
-13. Remaining capacity must be at least the estimate, or the result is
-    `insufficient_capacity`. The boundary 3000 remaining and 3000 estimated
-    passes. 2999 remaining does not.
-14. The lease must be exclusive, peers integer 0, hosts exactly
-    `["hos009-score"]`, acquired at the same `fetched_at`, and
-    `observed_character_count` equal to the body. Anything else is
-    `shared_meter`, `stale_lease`, or `inconsistent_meter`.
+4. `date_header` must be the response Date header. `now` is the guard's own clock. A negative gap is `inconsistent_clock`. A gap above 60 seconds is `stale`.
+5. The body must be raw bytes. Duplicate keys and bare `NaN` or `Infinity` refuse.
+6. The key set must be the 34 names in `subscription_shape.json`. One added key is `unknown_field`. A missing `current_overage` is `overage` even when `currency` is missing too. Flattened overage keys are `overage`.
+7. Entitlement must be tier `creator`, status `active`, and both periods `monthly_period`. `cancels_immediately` must be false.
+8. Both extension limits must be integer 0 and both extension flags false.
+9. Open invoices must be empty and `has_open_invoices` false. `pending_change` must be null. `next_invoice` may be null or the nine-field renewal object from the redacted snapshot: non-negative cent fields, a payment time after the Date header, null payment status, and no discounts. A processing payment refuses.
+10. Nested `current_overage` keeps the reviewed canonical-zero rule.
+11. The request must be holder `hos009-score`, attempt 1, `/v1/music`, `music_v2`, instrumental, exactly 180000 ms. Estimated credits must be an integer from 2,970 to 3,000. One credit refuses. Cash must be the string `0`.
+12. Remaining meter units must cover `estimated_credits` times the evidenced ratio.
+13. `TTS_PAUSE` must be absent on disk. A caller flag does not override the file.
+14. `ledger.jsonl` must exist. A line without an integer status, or a line timestamped after the Date header, is `pending_spend`. A missing file is unknown, not zero.
+15. `elevenlabs.lock` must be flocked by this process, in the live recorder's four-field shape, with `started` at or before the Date header and inside the 60-second window. A dict lease is refused.
 
-The token stores `body_sha256` of the raw bytes. `consume` accepts only that
-digest and a token whose `authorizes_generation` is still false. A mismatch
-burns the token.
+The token stores the raw-body hash, the request hash, the Date-derived fetch time, the guard clock, the tariff figures, and the entitlement fields that were checked.
 
-## Integration path
+## Proposed integration
 
-Do not wire this in on the strength of this proposal.
+Do not wire this in on the strength of this proposal. This commit does not change `el_client.py`, `el_guard.py`, or `generate_music_bed.py`.
 
-Live path today, unchanged by this commit:
+`el_client.request` still calls `el_guard.before_spend`, and that call still performs its own GET `/v1/user/subscription`. A future diff, only after an independent pass and a separate Chief scope, would have to do all of the following:
 
-1. `04_Audio/tools/generate_music_bed.py` `compose` can POST `/v1/music` for
-   3000–600000 ms when someone passes `--generate`.
-2. `el_client.request` calls `el_guard.before_spend`.
-3. That live guard estimates cost as the prompt's character length, subtracts
-   `character_count` from `character_limit`, and does not read nested overage,
-   entitlement, extensions, invoices, freshness, or a cash cap.
-4. `EL_GUARD_OFF=1` skips that live guard. This proposal has no such switch,
-   and this commit does not add one to the live guard.
+1. Leave `el_guard.py` at least as strict as it is now.
+2. Take the live one-recorder lock first, then pass that `elevenlabs.lock` path. Do not pass a lease dict.
+3. Perform one GET. Keep the raw bytes and the Date header from that response. Pass those in. Do not pass a caller clock.
+4. Read `TTS_PAUSE` and `ledger.jsonl` from the desk. Do not pass booleans or a pending total.
+5. Pin the single-use file to one directory for `hos009-score`. A caller-chosen directory is not a pin.
+6. On `pass_once`, `consume` the unmodified token, then one POST. `el_guard.before_spend` must take the already-fetched raw response and does not issue a second GET. A POST without a consumed receipt refuses.
+7. On any refusal, stop. No second GET and no second POST.
 
-A later integration is a separate diff, and only after J3142 records a pass
-on this exact commit and J3143 writes an explicit scope. That diff would:
+Until that diff exists, `generate_music_bed.py --generate` remains a bypass. This commit does not itself block a manual run, and it does not open one.
 
-1. Leave `el_guard.py` at least as strict as it is now. Do not add a bypass
-   and do not lower its checks to match this proposal.
-2. Add a score-only entry point that imports this module. Do not point the
-   existing `--generate` path at it.
-3. Take the live one-recorder lock first. If it is held, stop.
-4. Perform one GET `/v1/user/subscription`. Store the raw bytes, the status,
-   and the UTC time. Do not keep a flattened projection in place of the body.
-5. Build the lease from that same body and from the lock (peers 0 only when
-   this flight holds it). Call `decide`. On any refusal, release the lock,
-   record the code, and stop. Do not GET again.
-6. On `pass_once`, `consume` with the same body digest, then one POST
-   `/v1/music` for exactly 180000 ms, `music_v2`, `force_instrumental` true.
-   The live guard still has to pass that POST. If the two guards disagree,
-   do not send it.
-7. On any non-200, timeout, or exception, stop. The board stays burned. No
-   second POST and no second GET.
+## Unresolved risks
 
-Until that diff exists, `generate_music_bed.py --generate` must not be used
-for this HOS 009 score. This commit does not change that script, so it also
-does not itself block a manual run.
-
-## Risks
-
-- A real subscription body has more than these sixteen keys. Those extra keys
-  fail closed as `unknown_field`. That is intentional. Widening the allowlist
-  needs a separate review against a redacted raw schema. This proposal does
-  not capture or require a live body.
-- The credit estimate is declared by the caller. This guard refuses an
-  estimate above 3000 or a cash figure other than `0`. It does not know the
-  live music tariff. A declared 3000 can still be wrong. J3143 has to name
-  the estimate before any POST. Guessing a tariff is not a pass.
-- The shared subscription can move on another machine between the GET and the
-  POST. The in-process board does not see that. Binding
-  `observed_character_count` to the body catches a stale projection. It does
-  not catch a spend that happens after the GET. The one-request rule is the
-  control this proposal can actually enforce.
-- `json.loads` without the duplicate-key hook would hide a repeated field.
-  Callers must pass the raw bytes. A pre-parsed dict is `malformed_body`.
-- The 60-second window will refuse a slow caller. That is the stale check,
-  not a reason to lengthen it here.
-- Historical flattened provenance remains evidence only inside the unmerged
-  mapping. This guard refuses it.
+- The three promo keys can still refuse a real body if the live value is an object. No account call was made to learn the type.
+- The single-use directory is an argument so the synthetic tests do not touch the live desk. A new empty directory would admit another flight. Integration has to pin the directory first.
+- The lock check reads a file and flocks it. It does not call `acquire_lock`, because a synthetic test must not take the studio recorder lock. A process that writes its own pid into a file of the right name satisfies the check.
+- The Date header is trusted only because this module cannot see the socket. A separate `fetched_at` is refused, which stops the old requirement that the caller copy one timestamp onto another. It does not detect a header the caller invented.
+- The meter ratio is one measured take. A later price change is not covered.
+- Server time after the local lock time refuses. There is no skew allowance.
+- `el_client.request` still double-GETs. Nothing in this commit closes that path.
 
 ## Holds this commit leaves in place
 
@@ -170,5 +77,4 @@ does not itself block a manual run.
 python3 -m unittest discover -s jobs/reviews/J3141 -p 'test_*.py' -v
 ```
 
-`HASHES.txt` pins `score_billing_guard.py`. The review commit is the pin for
-the whole proposal, including this note and the tests.
+`HASHES.txt` pins `score_billing_guard.py`. The review commit is the pin for the whole proposal.
