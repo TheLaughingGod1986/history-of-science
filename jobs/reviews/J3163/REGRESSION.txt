@@ -1,0 +1,42 @@
+test_activation_constant_and_source_locks (jobs.reviews.J3150.test_score_flight.FlightTest.test_activation_constant_and_source_locks) ... ok
+test_budget_cannot_be_substituted (jobs.reviews.J3150.test_score_flight.FlightTest.test_budget_cannot_be_substituted) ... ok
+test_caller_transport_and_paths_are_refused (jobs.reviews.J3150.test_score_flight.FlightTest.test_caller_transport_and_paths_are_refused) ... ok
+test_client_and_multipart_use_the_same_single_flight (jobs.reviews.J3150.test_score_flight.FlightTest.test_client_and_multipart_use_the_same_single_flight) ... ok
+test_closed_activation_makes_no_socket (jobs.reviews.J3150.test_score_flight.FlightTest.test_closed_activation_makes_no_socket) ... ok
+test_el_guard_off_does_not_weaken_pause_or_open_activation (jobs.reviews.J3150.test_score_flight.FlightTest.test_el_guard_off_does_not_weaken_pause_or_open_activation) ... ok
+test_failed_transport_reserves_one_read (jobs.reviews.J3150.test_score_flight.FlightTest.test_failed_transport_reserves_one_read) ... ok
+test_fragment_and_noncanonical_music_make_no_post (jobs.reviews.J3150.test_score_flight.FlightTest.test_fragment_and_noncanonical_music_make_no_post)
+Legacy entries must not POST music variants while the pause bypass is on. ... ok
+test_future_date_refuses_and_does_not_clear_the_store (jobs.reviews.J3150.test_score_flight.FlightTest.test_future_date_refuses_and_does_not_clear_the_store) ... ok
+test_generator_does_not_call_the_old_client (jobs.reviews.J3150.test_score_flight.FlightTest.test_generator_does_not_call_the_old_client) ... ok
+test_inode_stays_through_the_post (jobs.reviews.J3150.test_score_flight.FlightTest.test_inode_stays_through_the_post) ... ok
+test_multipart_does_not_read_or_post_the_file (jobs.reviews.J3150.test_score_flight.FlightTest.test_multipart_does_not_read_or_post_the_file) ... ok
+test_one_get_and_one_post_holds_the_lock (jobs.reviews.J3150.test_score_flight.FlightTest.test_one_get_and_one_post_holds_the_lock) ... ok
+test_refusal_is_one_get_and_no_post (jobs.reviews.J3150.test_score_flight.FlightTest.test_refusal_is_one_get_and_no_post) ... ok
+test_restart_sees_the_burned_store (jobs.reviews.J3150.test_score_flight.FlightTest.test_restart_sees_the_burned_store) ... ok
+test_retry_after_success_does_not_get_again (jobs.reviews.J3150.test_score_flight.FlightTest.test_retry_after_success_does_not_get_again) ... ok
+test_same_second_ledger_line_refuses (jobs.reviews.J3150.test_score_flight.FlightTest.test_same_second_ledger_line_refuses) ... ok
+test_second_process_cannot_take_the_lock (jobs.reviews.J3150.test_score_flight.FlightTest.test_second_process_cannot_take_the_lock) ... ok
+test_socket_binder_returns_one_response_and_stays_off (jobs.reviews.J3150.test_score_flight.FlightTest.test_socket_binder_returns_one_response_and_stays_off) ... ok
+test_speech_path_still_uses_the_old_guard (jobs.reviews.J3150.test_score_flight.FlightTest.test_speech_path_still_uses_the_old_guard) ... ok
+test_unbound_desk_refuses_before_socket (jobs.reviews.J3150.test_score_flight.FlightTest.test_unbound_desk_refuses_before_socket) ... ok
+test_unknown_promo_object_refuses_without_reset (jobs.reviews.J3150.test_score_flight.FlightTest.test_unknown_promo_object_refuses_without_reset) ... ok
+test_untrusted_receipt_reserves_one_read (jobs.reviews.J3150.test_score_flight.FlightTest.test_untrusted_receipt_reserves_one_read) ... ok
+test_floor_override (04_Audio.tools.test_el_guard.GuardTest.test_floor_override) ... ok
+test_floor_refuses_when_set (04_Audio.tools.test_el_guard.GuardTest.test_floor_refuses_when_set) ... ok
+test_no_floor_by_default_but_never_more_than_is_left (04_Audio.tools.test_el_guard.GuardTest.test_no_floor_by_default_but_never_more_than_is_left) ... ok
+test_pause_file_refuses (04_Audio.tools.test_el_guard.GuardTest.test_pause_file_refuses) ... ok
+test_release_removes_own_lock (04_Audio.tools.test_el_guard.GuardTest.test_release_removes_own_lock) ... ok
+test_second_live_recorder_refused (04_Audio.tools.test_el_guard.GuardTest.test_second_live_recorder_refused) ... ok
+test_spend_logs_to_ledger_and_holds_lock (04_Audio.tools.test_el_guard.GuardTest.test_spend_logs_to_ledger_and_holds_lock) ... ok
+test_spend_paths (04_Audio.tools.test_el_guard.GuardTest.test_spend_paths) ... ok
+test_stale_lock_taken_over (04_Audio.tools.test_el_guard.GuardTest.test_stale_lock_taken_over) ... ok
+test_unreadable_balance_refuses (04_Audio.tools.test_el_guard.GuardTest.test_unreadable_balance_refuses) ... ok
+test_scribe_upload_goes_through_the_guard (04_Audio.tools.test_el_guard.MultipartGuardTest.test_scribe_upload_goes_through_the_guard) ... ok
+test_path_types_both_entries (jobs.reviews.J3162.test_routing_types.RoutingTypes.test_path_types_both_entries) ... ok
+test_query_types_request (jobs.reviews.J3162.test_routing_types.RoutingTypes.test_query_types_request) ... ok
+
+----------------------------------------------------------------------
+Ran 36 tests in <duration>
+
+OK

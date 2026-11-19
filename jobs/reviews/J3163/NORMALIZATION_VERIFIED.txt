@@ -1,0 +1,7 @@
+request '/v1/music': route='reject', transport=[]
+multipart_post '/v1/music': route='reject', transport=[]
+request '/v1/music#fragment': route='reject', transport=[]
+multipart_post '/v1/music#fragment': route='reject', transport=[]
+request canonical path query type=ClientPath: transport=[]
+request canonical path query type=NoneType: transport=[]
+CONFIRMED: six malformed_request refusals, zero mocked POSTs, zero real network calls.
