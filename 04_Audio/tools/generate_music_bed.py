@@ -26,8 +26,8 @@ TOOLS = Path(__file__).resolve().parent
 if str(TOOLS) not in sys.path:
     sys.path.insert(0, str(TOOLS))
 
-from el_auth import load_token  # noqa: E402
-from el_client import request, slugify  # noqa: E402
+from el_client import slugify  # noqa: E402
+from hos009_score_flight import from_generator, guard  # noqa: E402
 
 MUSIC_RE = re.compile(r"\[MUSIC:\s*([^\]]+)\]", re.I)
 
@@ -73,29 +73,19 @@ def build_prompt(base: str, cues: list[str]) -> str:
 
 
 def compose(
-    token: str,
-    mode: str,
     prompt: str,
     out: Path,
     *,
     length_ms: int,
 ) -> dict:
-    payload = {
-        "prompt": prompt,
-        "music_length_ms": length_ms,
-        "model_id": "music_v2",
-        "force_instrumental": True,
-    }
-    code, body, headers = request(
-        "POST",
-        "/v1/music",
-        token,
-        mode,
-        data=payload,
-        query="output_format=mp3_44100_128",
-        accept="audio/mpeg",
-        timeout=600,
-    )
+    """The only generate path. It cannot call the client directly.
+
+    A refusal stops. There is no second request.
+    """
+    try:
+        code, body, headers = from_generator(prompt=prompt, length_ms=length_ms)
+    except guard.GuardRefused as exc:
+        raise SystemExit(f"Music compose refused ({exc.code}). Nothing further was requested.") from exc
     if code != 200:
         raise SystemExit(f"Music compose failed {code}: {body[:800]!r}")
     out.write_bytes(body)
@@ -116,7 +106,7 @@ def main() -> None:
     ap.add_argument(
         "--generate",
         action="store_true",
-        help="Call ElevenLabs (costs credits). Default dry-run.",
+        help="Ask the disabled score flight. It refuses while activation is closed. Default dry-run.",
     )
     args = ap.parse_args()
 
@@ -152,9 +142,8 @@ def main() -> None:
     }
 
     if args.generate:
-        token, mode = load_token()
         print(f"Composing {args.length_ms}ms bed → {audio_path.name}")
-        meta = compose(token, mode, prompt, audio_path, length_ms=args.length_ms)
+        meta = compose(prompt, audio_path, length_ms=args.length_ms)
         plan["status"] = "generated"
         plan.update(meta)
     else:

@@ -63,8 +63,34 @@ def floor() -> int:
     return int(os.environ.get("EL_CREDIT_FLOOR", DEFAULT_FLOOR))
 
 
+def path_is_unsafe(path: str) -> bool:
+    """True when a prefix check could miss the path.
+
+    Percent-encoding, a backslash, an empty or dot segment, whitespace, a
+    control character, or a path that does not start with / is not a clean
+    client path. Callers fail closed: the music route rejects it, and a POST
+    is treated as spend so the guard still runs.
+    """
+    if type(path) is not str or not path.startswith("/"):
+        return True
+    for ch in path:
+        if ch.isspace() or ord(ch) < 32 or ord(ch) == 127:
+            return True
+    return any(token in path for token in ("%", "\\", "//", "/./", "/../"))
+
+
 def is_spend(method: str, path: str) -> bool:
-    return method.upper() == "POST" and path.startswith(SPEND_PREFIXES)
+    """True when a POST must pass the guard.
+
+    Spend prefixes are compared case-insensitively. An unsafe path fails
+    closed (True) so a disguised music path cannot skip the guard.
+    """
+    if method.upper() != "POST":
+        return False
+    if type(path) is not str or path_is_unsafe(path):
+        return True
+    head = path.split("#", 1)[0].split("?", 1)[0].casefold()
+    return head.startswith(tuple(prefix.casefold() for prefix in SPEND_PREFIXES))
 
 
 def _pid_alive(pid: int) -> bool:

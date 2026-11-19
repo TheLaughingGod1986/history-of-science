@@ -38,6 +38,17 @@ class GuardTest(unittest.TestCase):
         self.assertFalse(el_guard.is_spend("GET", "/v1/user/subscription"))
         self.assertTrue(el_guard.is_spend("POST", "/v1/speech-to-text"))  # Scribe bills the pool too
         self.assertFalse(el_guard.is_spend("GET", "/v1/history"))
+        self.assertTrue(el_guard.is_spend("POST", "/V1/MUSIC"))
+        for path in (
+            "/v1/%6dusic",
+            "/v1//music",
+            "/v1/./music",
+            "/v1\\music",
+            "/v1/x/../music",
+            " /v1/music",
+        ):
+            self.assertTrue(el_guard.is_spend("POST", path), path)
+            self.assertFalse(el_guard.is_spend("GET", path), path)
 
     def test_spend_logs_to_ledger_and_holds_lock(self):
         el_guard.before_spend("/v1/text-to-speech/x", {"text": "hello world"}, sub(90_000))
