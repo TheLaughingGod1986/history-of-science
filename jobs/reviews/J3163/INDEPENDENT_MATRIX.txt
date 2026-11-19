@@ -1,0 +1,5 @@
+verified_hashes=5
+activation_authorized=False
+path_refusals=32 (entries=2 x paths=16)
+query_refusals=52 (base_paths=4 x queries=13)
+transport_calls=0 legacy_before_spend_calls=0 live_or_fixture_stores_written=0
