@@ -1,6 +1,6 @@
 # 013 pass-1 contact sheets (review only)
 
-Rows 1–60, batches 01–12. One JPEG per take. Spacing is 0.5 s (start frame, then every 0.5 s, then the clip end).
+Rows 1–65, batches 01–13. One JPEG per take. Spacing is 0.5 s (start frame, then every 0.5 s, then the clip end).
 These are the archive sheets recompressed so each file stays under 600 KB (long edge ≤ 2400 px). `source_sheet_sha256` is the archive original. `committed_sha256` is the file in this folder.
 This branch is for sheet review. It is not merged.
 
@@ -67,5 +67,10 @@ This branch is for sheet review. It is not merged.
 | 58 | 12 | `P5:10_darwin_worried_shelf` | `P5:10_darwin_worried_shelf_take1_0.5s.jpg` | 75 | 545227 | 2400×1942 | `efd114f661c530eee0bcbf0dfa3dbbfd7287f7a965b52cd228ca46a04970c3a2` |
 | 59 | 12 | `P6:02a_jenkin_study` | `P6:02a_jenkin_study_take1_0.5s.jpg` | 80 | 551919 | 2400×1942 | `14d2293691eb8eb4348d0c9113f53d06ec95ab38132b01a6c14b83ab4fc36785` |
 | 60 | 12 | `P6:02b_paint_pots_mix` | `P6:02b_paint_pots_mix_take1_0.5s.jpg` | 80 | 597959 | 2400×1942 | `4803ff22bbeb944a76602c7018085a826ee62999bcd4b8ca3b6c0252e4c00037` |
+| 61 | 13 | `P6:04a_mendel_pea_garden` | `P6:04a_mendel_pea_garden_take1_0.5s.jpg` | 50 | 590388 | 2400×1942 | `ed0fc1c2d74ee6ec3eb8314aa2442840aae2c4eeb35d1a0bf1739c855bee055c` |
+| 62 | 13 | `P6:05_beads_not_paint` | `P6:05_beads_not_paint_take1_0.5s.jpg` | 70 | 568748 | 2400×1942 | `d75fb3634caa1841893862f7b4f92c752ec46fa3747504692863c4f9e9a167c3` |
+| 63 | 13 | `P6:06a_origin_fifth_edition` | `P6:06a_origin_fifth_edition_take1_0.5s.jpg` | 80 | 556489 | 2400×1942 | `2b1170a61fff6a1c1061c0aa5b4b1d1e9a718b92b96fd0c5abc348c9c4d5ea23` |
+| 64 | 13 | `P6:06b_spencer_coined` | `P6:06b_spencer_coined_take1_0.5s.jpg` | 75 | 599989 | 2400×1942 | `ff1f829d963c8a0b9215619be7ec66995b29df8b5771e380c110a5c13a8809bf` |
+| 65 | 13 | `P6:07_key_in_lock` | `P6:07_key_in_lock_take1_0.5s.jpg` | 80 | 532472 | 2400×1942 | `ab46405be230be871e9f4055c28fa19e41553c791ef4f349f0ebe2e01687506b` |
 
 Clip and start-still hashes, duration and film window are in `INDEX.json`.

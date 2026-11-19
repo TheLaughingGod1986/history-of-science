@@ -1743,6 +1743,152 @@
       ],
       "clip_sha256": "8a0efce2f9faac951dc4da36e0ff74757b37ce46624436cd21aa7dfca2a19ab9",
       "start_frame_sha256": "eaabf948be98fe879a42808138cebf74b629286eccba8c3913fec92e07bd8971"
+    },
+    {
+      "n": 61,
+      "batch": 13,
+      "row_id": "P6:04a_mendel_pea_garden",
+      "take": 1,
+      "file": "P6:04a_mendel_pea_garden_take1_0.5s.jpg",
+      "source_sheet_sha256": "ed0fc1c2d74ee6ec3eb8314aa2442840aae2c4eeb35d1a0bf1739c855bee055c",
+      "committed_sha256": "cababc242c5030ab74b667119862629eae5cd5b3041706534380dc563fea6778",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 50,
+      "bytes": 590388,
+      "duration_s": 7.916667,
+      "frames": 190,
+      "fps": 24.0,
+      "use_s": 5.5,
+      "film_window_s": [
+        471.06,
+        476.56
+      ],
+      "clip_sha256": "ce83b71a50ffb743e48cfd2b4b92059f211240b4a96b271206a1aa20896a38f0",
+      "start_frame_sha256": "7e7cd47c1afbdb8a811971d53f0949dd7d578c7658d189d8bd7542f839204920"
+    },
+    {
+      "n": 62,
+      "batch": 13,
+      "row_id": "P6:05_beads_not_paint",
+      "take": 1,
+      "file": "P6:05_beads_not_paint_take1_0.5s.jpg",
+      "source_sheet_sha256": "d75fb3634caa1841893862f7b4f92c752ec46fa3747504692863c4f9e9a167c3",
+      "committed_sha256": "1beccf54f2076ba629a6534311eb78305cf3e457cb53d42ebbc935aa8eff1fb4",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 70,
+      "bytes": 568748,
+      "duration_s": 7.916667,
+      "frames": 190,
+      "fps": 24.0,
+      "use_s": 5.72,
+      "film_window_s": [
+        479.92,
+        485.64
+      ],
+      "clip_sha256": "727f49def4209db9634955f4a669bc972c4b85e331f35d1878078d99c04e95be",
+      "start_frame_sha256": "29747530169129d1ab4b068c7022bd2a1398b19ae93f0dfc434349bd81eecfa7"
+    },
+    {
+      "n": 63,
+      "batch": 13,
+      "row_id": "P6:06a_origin_fifth_edition",
+      "take": 1,
+      "file": "P6:06a_origin_fifth_edition_take1_0.5s.jpg",
+      "source_sheet_sha256": "2b1170a61fff6a1c1061c0aa5b4b1d1e9a718b92b96fd0c5abc348c9c4d5ea23",
+      "committed_sha256": "7860043b25f6467e5940036f40e6cb086c713d71eb696fab493176f062b7cfed",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 80,
+      "bytes": 556489,
+      "duration_s": 7.916667,
+      "frames": 190,
+      "fps": 24.0,
+      "use_s": 4.96,
+      "film_window_s": [
+        485.64,
+        490.6
+      ],
+      "clip_sha256": "dd2f82440c4512c5c2f114be9022c82861e8477120b90a55d56513b20019cc4b",
+      "start_frame_sha256": "53c7c7a697aa850218f50232e70d0e5def938bc09b87b2d13e8a7e8badd12589"
+    },
+    {
+      "n": 64,
+      "batch": 13,
+      "row_id": "P6:06b_spencer_coined",
+      "take": 1,
+      "file": "P6:06b_spencer_coined_take1_0.5s.jpg",
+      "source_sheet_sha256": "ff1f829d963c8a0b9215619be7ec66995b29df8b5771e380c110a5c13a8809bf",
+      "committed_sha256": "1fdd4edf7f62a47303d9dd1b569f28f14eec8e336b70b1a5370a14b7d84d7a90",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 75,
+      "bytes": 599989,
+      "duration_s": 7.916667,
+      "frames": 190,
+      "fps": 24.0,
+      "use_s": 5.94,
+      "film_window_s": [
+        490.6,
+        496.54
+      ],
+      "clip_sha256": "2f725db7cd3cfb50a90a7c009513f22c6bfdac4dbed04ff640757f65a7d7af5c",
+      "start_frame_sha256": "e3cb96754dd2f1d55bdb233b34e99c8f6a4accfdf59c08f4d10e0ac69924833c"
+    },
+    {
+      "n": 65,
+      "batch": 13,
+      "row_id": "P6:07_key_in_lock",
+      "take": 1,
+      "file": "P6:07_key_in_lock_take1_0.5s.jpg",
+      "source_sheet_sha256": "ab46405be230be871e9f4055c28fa19e41553c791ef4f349f0ebe2e01687506b",
+      "committed_sha256": "4ef50ca0f5b57a66e2ad6564b812451836ab3e431b8f643003574e3a9cc88c64",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 80,
+      "bytes": 532472,
+      "duration_s": 7.916667,
+      "frames": 190,
+      "fps": 24.0,
+      "use_s": 7.54,
+      "film_window_s": [
+        496.54,
+        504.08
+      ],
+      "clip_sha256": "96f01dfb0f802512cce411f14eb2b79e6c4d3c8be8f6d576f1dbc55ac264f996",
+      "start_frame_sha256": "f43eeaf1d56cf5e39a403d95f3e8f5bec70ba34aa6ca04210f2b1c11d5f6a339"
     }
-  ]
+  ],
+  "row_count": 65
 }
