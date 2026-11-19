@@ -1888,7 +1888,36 @@
       ],
       "clip_sha256": "96f01dfb0f802512cce411f14eb2b79e6c4d3c8be8f6d576f1dbc55ac264f996",
       "start_frame_sha256": "f43eeaf1d56cf5e39a403d95f3e8f5bec70ba34aa6ca04210f2b1c11d5f6a339"
+    },
+    {
+      "n": 66,
+      "batch": 14,
+      "row_id": "P6:08b_darwin_mendel_synthesis",
+      "take": 1,
+      "file": "P6:08b_darwin_mendel_synthesis_take1_0.5s.jpg",
+      "source_sheet_sha256": "10fa396805078768ce3b4932b332303e37f53493b66d1a24fd3fdeb7635f8d02",
+      "committed_sha256": "99b7c19948f70d3ccfd562fb38f8c377cf771944f78e6158078f690a964bedfb",
+      "source_px": [
+        2630,
+        2128
+      ],
+      "committed_px": [
+        2400,
+        1942
+      ],
+      "jpeg_quality": 75,
+      "bytes": 540665,
+      "duration_s": 8.0,
+      "frames": 192,
+      "fps": 24.0,
+      "use_s": 4.0,
+      "film_window_s": [
+        508.48,
+        512.48
+      ],
+      "clip_sha256": "45c388088bcb4fb561967df348232f38d6fc4377c23d0c6efcbffbc9ea06531c",
+      "start_frame_sha256": "9cd894331a580684c06fbb9827ce4b387d8b70804dc6fd7261f3736a3b7dc04e"
     }
   ],
-  "row_count": 65
+  "row_count": 66
 }

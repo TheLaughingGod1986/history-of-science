@@ -1,6 +1,6 @@
 # 013 pass-1 contact sheets (review only)
 
-Rows 1–65, batches 01–13. One JPEG per take. Spacing is 0.5 s (start frame, then every 0.5 s, then the clip end).
+Rows 1–66, batches 01–14. One JPEG per take. Spacing is 0.5 s (start frame, then every 0.5 s, then the clip end).
 These are the archive sheets recompressed so each file stays under 600 KB (long edge ≤ 2400 px). `source_sheet_sha256` is the archive original. `committed_sha256` is the file in this folder.
 This branch is for sheet review. It is not merged.
 
@@ -72,5 +72,6 @@ This branch is for sheet review. It is not merged.
 | 63 | 13 | `P6:06a_origin_fifth_edition` | `P6:06a_origin_fifth_edition_take1_0.5s.jpg` | 80 | 556489 | 2400×1942 | `2b1170a61fff6a1c1061c0aa5b4b1d1e9a718b92b96fd0c5abc348c9c4d5ea23` |
 | 64 | 13 | `P6:06b_spencer_coined` | `P6:06b_spencer_coined_take1_0.5s.jpg` | 75 | 599989 | 2400×1942 | `ff1f829d963c8a0b9215619be7ec66995b29df8b5771e380c110a5c13a8809bf` |
 | 65 | 13 | `P6:07_key_in_lock` | `P6:07_key_in_lock_take1_0.5s.jpg` | 80 | 532472 | 2400×1942 | `ab46405be230be871e9f4055c28fa19e41553c791ef4f349f0ebe2e01687506b` |
+| 66 | 14 | `P6:08b_darwin_mendel_synthesis` | `P6:08b_darwin_mendel_synthesis_take1_0.5s.jpg` | 75 | 540665 | 2400×1942 | `10fa396805078768ce3b4932b332303e37f53493b66d1a24fd3fdeb7635f8d02` |
 
 Clip and start-still hashes, duration and film window are in `INDEX.json`.
