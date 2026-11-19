@@ -106,7 +106,15 @@ class TheCopiesComeFromTheRightFile(unittest.TestCase):
                 seen.append((m.group("file"), m.group("head").strip()))
                 self.assertIsNotNone(self.sync.find_section(sources[m.group("file")], m.group("head").strip()), m.group(1))
         moved = {head for name, head in seen if name == "studio/RULES.md"}
-        self.assertEqual(moved, {"Teach on screen (Ben, 11 Oct 2026)", "Polish pass (Astrum ref, 11 Oct 2026)"})
+        # Shorts house rules (19 Nov 2026) syncs into hos-studio.mdc like Teach/Polish — studio/RULES.md is source.
+        self.assertEqual(
+            moved,
+            {
+                "Shorts house rules (Ben, 19 Nov 2026)",
+                "Teach on screen (Ben, 11 Oct 2026)",
+                "Polish pass (Astrum ref, 11 Oct 2026)",
+            },
+        )
         self.assertIn(("AGENTS.md", "Ben's check-in (2 Oct 2026: one final OK, not one per stage)"), seen)
 
     def test_the_copies_are_in_step(self):
