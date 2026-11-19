@@ -1,6 +1,6 @@
 # 013 pass-1 contact sheets (review only)
 
-Rows 1–55, batches 01–11. One JPEG per take. Spacing is 0.5 s (start frame, then every 0.5 s, then the clip end).
+Rows 1–60, batches 01–12. One JPEG per take. Spacing is 0.5 s (start frame, then every 0.5 s, then the clip end).
 These are the archive sheets recompressed so each file stays under 600 KB (long edge ≤ 2400 px). `source_sheet_sha256` is the archive original. `committed_sha256` is the file in this folder.
 This branch is for sheet review. It is not merged.
 
@@ -61,5 +61,11 @@ This branch is for sheet review. It is not merged.
 | 53 | 11 | `P5:04a_empty_linnean_hall` | `P5:04a_empty_linnean_hall_take1_0.5s.jpg` | 75 | 557677 | 2400×1942 | `454ec6a5e7a28aa2ddd39c9f0d3de71bc0d7100de5137a45868d850452536910` |
 | 54 | 11 | `P5:05a_darwin_writes_origin` | `P5:05a_darwin_writes_origin_take1_0.5s.jpg` | 75 | 593256 | 2400×1942 | `2d15c0b9cfc46576b0e5aa985e19905ea2f230302ba9c61cb68412ae4646a6c2` |
 | 55 | 11 | `P5:06_murray_bookshop` | `P5:06_murray_bookshop_take1_0.5s.jpg` | 60 | 591232 | 2400×1942 | `d23f02873440c62d8cdbf22f55e7a4b26b8562f8356665544938abfc18fd9ec3` |
+
+| 56 | 12 | `P5:08a_wallace_opens_origin` | `P5:08a_wallace_opens_origin_take2_0.5s.jpg` | 70 | 588605 | 2400×1942 | `e9edef39bb2e42ab542925d49280bff9e8e6e7359fb94db28bbdf9db860bdfee` |
+| 57 | 12 | `P5:08b_wallace_reads_origin` | `P5:08b_wallace_reads_origin_take1_0.5s.jpg` | 55 | 590852 | 2400×1942 | `c77cf16244478a8c67ceb130eefb603ef0488f17009d101eab5f9f5a19a1775b` |
+| 58 | 12 | `P5:10_darwin_worried_shelf` | `P5:10_darwin_worried_shelf_take1_0.5s.jpg` | 75 | 545227 | 2400×1942 | `efd114f661c530eee0bcbf0dfa3dbbfd7287f7a965b52cd228ca46a04970c3a2` |
+| 59 | 12 | `P6:02a_jenkin_study` | `P6:02a_jenkin_study_take1_0.5s.jpg` | 80 | 551919 | 2400×1942 | `14d2293691eb8eb4348d0c9113f53d06ec95ab38132b01a6c14b83ab4fc36785` |
+| 60 | 12 | `P6:02b_paint_pots_mix` | `P6:02b_paint_pots_mix_take1_0.5s.jpg` | 80 | 597959 | 2400×1942 | `4803ff22bbeb944a76602c7018085a826ee62999bcd4b8ca3b6c0252e4c00037` |
 
 Clip and start-still hashes, duration and film window are in `INDEX.json`.
