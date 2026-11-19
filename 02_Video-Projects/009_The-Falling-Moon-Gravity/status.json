@@ -3,7 +3,7 @@
   "title": "Why Doesn't the Moon Fall to Earth?",
   "air": "2026-11-26",
   "ready_by": "2026-11-22",
-  "summary": "J3047: no accepted score. v03 NOT GENERATED (0 POSTs/spend); v01/v02 rejected. Long and Shorts assembly held. 22 Nov ready-by at risk; 26 Nov is not a release promise. J3050 owns no-spend billing evidence proposal.",
+  "summary": "J3152: music activation stays closed after J3151 FIX. J3154 repairs two integration defects offline; pricing bound still unproven. No accepted score; long/Shorts held. 22 Nov readiness at risk; 26 Nov is not a release promise.",
   "stages": {
     "topic": {
       "state": "done"
@@ -59,11 +59,11 @@
     "edit": {
       "state": "blocked",
       "due": "2026-11-19",
-      "owner": "codex / J3050 billing evidence proposal",
-      "waiting": "No compliant score available. J3050 evidence proposal -> independent review -> elected-Chief route decision; no generation authorized.",
+      "owner": "codex / J3154 offline repair handoff",
+      "waiting": "J3154 offline endpoint and durable-attempt repair -> independent review -> elected-Chief disposition. Pricing bound remains unproven; no generation authorized.",
       "underway": false,
-      "note": "J3047 closes J3043 allowance unused, permanently. J2035/J2171 held; all media locks preserved. 22 Nov target at risk; replacement watch-ready date unset.",
-      "since": "2026-11-18"
+      "note": "J3152 accepts J3151 FIX; activation closed. J3047 allowance closure and J2035/J2171 holds preserved. All media locks remain. No replacement watch-ready date.",
+      "since": "2026-11-19"
     },
     "thumbnails": {
       "state": "todo",
@@ -81,5 +81,5 @@
     }
   },
   "claims": [],
-  "next": "J3050: no-spend billing evidence proposal due 19 Nov 12:00Z; independent review and new Chief route decision before any production scope."
+  "next": "J3154: fix the two reviewed integration defects offline, then independent exact-commit review and Chief disposition. No account call, merge, deployment or allowance."
 }
