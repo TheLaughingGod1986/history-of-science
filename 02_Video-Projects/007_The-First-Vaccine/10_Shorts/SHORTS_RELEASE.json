@@ -1,6 +1,6 @@
 {
   "film": "007",
-  "about": "J1219 + J1222 swaps of HOS 007 search-titled Shorts s04_smallpox_test_v04 (cLKDiYP55J8, Fri 13 Nov 2026 11:30Z, superseding -I_GHK-GcFs) and s05_vacca_jesty_v05 (xgx2lYHhYZM, Tue 17 Nov 2026 11:30Z, superseding 4WUs0beKn0A; 007 long ETynHpIYLeY airs Thu 12 Nov 18:00Z).",
+  "about": "J1219 + J1222 swaps of HOS 007 search-titled Shorts, plus s06 variolation (sY0PSQFxjp8, the 28 Nov 11:30Z test) and s07 eradication (jkUZpyO71lU, Private and unscheduled since 19 Nov 2026). 007 long ETynHpIYLeY aired Thu 12 Nov 18:00Z.",
   "shorts": [
     {
       "id": "cLKDiYP55J8",
@@ -66,12 +66,12 @@
       "alteredContent": true,
       "durationSeconds": 23.33,
       "cover": "frame 0 of hos_007_variolation_v05 (SMALLPOX SORE)",
-      "note": "J2957. s06 variolation v05 (sha c7ae95379e11), Ben OK'd J2230.3 on the board 16 Nov 2026. Private + publishAt Sat 28 Nov 2026 11:30 London. Studio Related -> ETynHpIYLeY set & read back on 17 Nov 2026. Accidental second upload wkyGOKepjeQ unscheduled to Private (no publishAt, never deleted)."
+      "note": "J2957. s06 variolation v05 (sha c7ae95379e11), Ben OK'd J2230.3 on the board 16 Nov 2026. Private + publishAt Sat 28 Nov 2026 11:30 London. Studio Related -> ETynHpIYLeY set & read back on 17 Nov 2026. Accidental second upload wkyGOKepjeQ unscheduled to Private (no publishAt, never deleted). J3126 19 Nov 2026: still the single 28 Nov 11:30Z test (desk 7004764743). API read 2026-11-19T10:32Z private, publishAt unchanged. No Buffer row."
     },
     {
       "id": "jkUZpyO71lU",
       "title": "How Was Smallpox Eradicated?",
-      "airDate": "2026-11-29T11:30:00Z",
+      "airDate": "2026-11-16T23:17:55Z",
       "promotes": "007",
       "promotesVideoId": "ETynHpIYLeY",
       "relatedVideoId": "ETynHpIYLeY",
@@ -88,7 +88,8 @@
       "alteredContent": true,
       "durationSeconds": 22.1,
       "cover": "frame 0 of hos_007_eradication_v06 (SMALLPOX GONE)",
-      "note": "J2958. s07 eradication v06 (sha 33696b704872), Ben OK'd J2230.4 on the board 16 Nov 2026. Private + publishAt Sun 29 Nov 2026 11:30 London. Studio Related -> ETynHpIYLeY set & read back on 16 Nov 2026."
+      "note": "J2958. s07 eradication v06 (sha 33696b704872), Ben OK'd J2230.4 on the board 16 Nov 2026. Uploaded Private for Sun 29 Nov 2026 11:30 London. Studio Related -> ETynHpIYLeY set & read back on 16 Nov 2026. J3126 19 Nov 2026: publishAt cleared (desk 7006171315). API read 2026-11-19T10:32Z private, publishAt null. Not deleted. Does not hold 29 Nov. No Buffer post. Open-gate status retired.",
+      "clearedAirDate": "2026-11-29T11:30:00Z"
     }
   ]
 }
