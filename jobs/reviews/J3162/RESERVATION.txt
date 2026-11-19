@@ -1,0 +1,4 @@
+failed_transport: initial calls=['GET']; read_reserved; zero transport calls; reservation unchanged; pinned store absent
+untrusted_receipt: initial calls=['GET']; read_reserved; zero transport calls; reservation unchanged; pinned store absent
+restart_before_transport: initial calls=[]; read_reserved; zero transport calls; reservation unchanged; pinned store absent
+All three reservation scenarios confirmed offline; no live store touched.

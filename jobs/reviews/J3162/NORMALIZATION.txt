@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/private/tmp/J3162-wt/jobs/reviews/J3162/probe_normalization.py", line 34, in <module>
+    suite.el_client.request('POST', path, 'fixture', 'api_key', data={'prompt': 'fixture lute', 'music_length_ms': 180000, 'model_id': 'music_v2', 'force_instrumental': True})
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/J3162-wt/04_Audio/tools/el_client.py", line 93, in request
+    routed = _music_flight_query(path, query)
+  File "/private/tmp/J3162-wt/04_Audio/tools/el_client.py", line 74, in _music_flight_query
+    raise guard.GuardRefused("malformed_request")
+hos009_pinned_guard_j3150.GuardRefused: malformed_request

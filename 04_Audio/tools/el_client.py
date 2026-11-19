@@ -26,8 +26,10 @@ def _music_route(path: str, query: str = "") -> str:
     a suffix, an absolute URL, or any other query is reject. Speech and Scribe
     stay other, so the legacy client still handles them.
     """
+    # Reject non-built-in strings before legacy dispatch. In particular, a
+    # str subclass must not bypass canonical/fragment checks via this branch.
     if type(path) is not str or type(query) is not str:
-        return "other"
+        return "reject"
     had_fragment = "#" in path
     bare = path.split("#", 1)[0]
     had_query = "?" in bare
