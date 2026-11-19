@@ -1,0 +1,7 @@
+request '/v1/music': route='other', transport=[('POST', '/v1/music')]
+multipart_post '/v1/music': route='other', transport=[('POST', '/v1/music')]
+request '/v1/music#fragment': route='other', transport=[('POST', '/v1/music')]
+multipart_post '/v1/music#fragment': route='other', transport=[('POST', '/v1/music')]
+request canonical path query type=ClientPath: transport=[('POST', '/v1/music')]
+request canonical path query type=NoneType: transport=[('POST', '/v1/music')]
+CONFIRMED: six mocked music POSTs bypass the disabled flight; zero real network calls.
