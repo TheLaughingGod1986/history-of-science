@@ -34,6 +34,7 @@ Canonical: `STUDIO_PLAYBOOK.md`
 - [ ] Pinned comment (question + next / companion link)
 - [ ] Every public Short: Studio **Related video** → this long (▶ title pill visible on mobile; HeyHistorically pattern)
 - [ ] Shorts cluster: **3–5** with strongest-fact open + curiosity-gap end
+- [ ] **Shorts house rules (Ben, 19 Nov 2026):** 3D cartoon hero already moving frame 0 · subject + surprise ~1.5 s · no "Stay, and I'll show you…" · **16–19 s** · last line loops to first · caption line 1 = concrete fact (not ALL CAPS label) · shareable topic (famous object/person/image/event) · no stale Facebook winner re-post (recut only when picked for Facebook mirror)
 
 ## Gates signed
 

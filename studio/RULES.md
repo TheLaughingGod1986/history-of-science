@@ -63,7 +63,7 @@ Ben, 11 Oct 2026 21:45, for every future video on both channels: *"add more grap
 - **WHEN: every date or era that's said.** Add `· WHEN: <place, year>` for a place-and-year stamp (already allowed in the first 3 s), or a marker dropping onto the timeline.
 - **FACT: 2–4 per long.** Each is one surprising, sourced fact, said in a line and shown as a card: `· FACT: <card text, 4 words or fewer>`. Make it a "huh, I didn't know that" beat, never a list.
 - **Pictures are facts too.** All WHO, WHEN, DATA and FACT text goes on the script's new-claims list and is sourced in `FACT_NOTES` before picture, like any spoken claim.
-- **Shorts (22–27 s): at most one overlay** (a fact card, a date stamp or a one-number scale), and only where it helps the line being said. It adds no words and no seconds, so the Short stays at 22–27 s and 55–65 words. It never appears in the first 2 s (frame 0 has the hook caption only) or over the 9–14 s title, and it stays inside the 16:9 centre band.
+- **Shorts (16–19 s from 19 Nov 2026; see *Shorts house rules*): at most one overlay** (a fact card, a date stamp or a one-number scale), and only where it helps the line being said. It adds no words and no seconds. It never appears in the first 2 s (frame 0 has the caption only) or over the 9–14 s title, and it stays inside the 16:9 centre band.
 
 **Picture.**
 - **All text is added in the edit,** never by Veo: plates carry no readable text, and garbled card text is a hard fail. In the plate board, the card's text goes in `side_label`, and a DATA graphic is named in the part's edit notes.
@@ -146,7 +146,7 @@ Ben, 11 Oct 2026 22:17, sent Astrum's *What Is It Like on the Surface of a Black
 - **Every big number gets a scale.** Give it a plain comparison or an everyday analogy in the same or the next sentence ("smaller than a grain of salt"). Mark it on its DATA marker: `· DATA: <graphic> · SCALE: <comparison>`. The comparison goes on the new-claims list and into `FACT_NOTES` like any spoken claim, and it's right for the year in the scene.
 - **The hook doesn't change.** HOS keeps its first-minute timings, which are stricter than Astrum's question by 0:50: the answer image by 0:05, the title question by 0:08, the promise by 0:15, the stakes by 0:25, and the first real fact before 0:45.
 - **008–010 first 30 seconds (HOS-2026-11-E2).** From 0:00 to 0:30 the picture cuts in under 4.5 s, with at least 7 distinct moving plates, and 0:05–0:15 is the apparatus or the physical proof. The first animated DATA+SCALE graphic lands between 0:25 and 0:40. Milestones in the bullet above stay. Full rule, review scores and the stop line: *Teach on screen* → *Proof-first first 30 seconds*.
-- **Word counts don't change:** about 1,200–1,300 spoken words, and `review:script` at 90 or more. An analogy replaces words; it doesn't add them. Shorts stay at 55–65 words.
+- **Word counts don't change on longs:** about 1,200–1,300 spoken words, and `review:script` at 90 or more. An analogy replaces words; it doesn't add them. New Shorts fit *Shorts house rules (Ben, 19 Nov 2026)* (16–19 s).
 
 **5. Finishing.**
 - **Crossfades** of 0.5–1.5 s between scenes where the move suits (a change of place or year). Hard cuts elsewhere; they're not required on every cut. A crossfade never stretches a shot past the 4–6 s picture change, and part cards keep their 0.5–0.8 s breath before the crossfade.
@@ -175,7 +175,7 @@ Chief studied two more reference channels on 11 Oct 2026. *History of the Univer
 
 **These HOS locks win wherever a lesson meets them:**
 - **The first-minute timings:** the answer image by 0:05, the title question by 0:08, the promise by 0:15, the stakes by 0:25, the first real fact before 0:45. On 008–010 the opening cut, the apparatus window and the first DATA+SCALE graphic also follow *Teach on screen* → *Proof-first first 30 seconds* (HOS-2026-11-E2). These milestones stay.
-- **The 22–27 s / under-40 s Shorts lock**, and the yellow hook word on the frame-0 caption.
+- **The 16–19 s / under-40 s Shorts lock** (*Shorts house rules, 19 Nov 2026*), and the frame-0 caption carrying the concrete fact on line 1 (not a two-word ALL CAPS label).
 - **The house look:** the premium 3D cartoon look, white Didot italic, one label at a time, no flat poster, UI card or photoreal card.
 - **The Explorer's limits:** never in the first minute, 1–3 beats.
 - **The ending:** no goodbye or subscribe ask; the last line hands off to the next film.
@@ -228,8 +228,8 @@ Chief studied two more reference channels on 11 Oct 2026. *History of the Univer
 
   Never claim "no AI", and never name the AI checkers. Say a person checked the facts only when one actually did. The altered-content setting stays on.
 
-**3. Shorts rules.**
-- **The myth-bust opener is an allowed format.** Line 1 is the belief ("You were taught Newton's apple hit his head"), and **"No"** or the reversal lands by about 0:15, inside 22–27 s and the first-two-seconds rules.
+**3. Shorts rules.** From 19 Nov 2026, every new Short follows *Shorts house rules (Ben, 19 Nov 2026)* below; this bullet list stands for older references only where it does not conflict.
+- **The myth-bust opener is an allowed format.** Line 1 is the belief ("You were taught Newton's apple hit his head"), and **"No"** or the reversal lands inside the 16–19 s runtime and the opener rules in *Shorts house rules*.
 - **No straight trailers.** A Short is never a clip trimmed from the long. It has its own open, frame 0, caption, title and loop, and it stands alone.
 
 **4. Graphics go to Codex** (`--kind chart`, `gpt-6-astra`, per *Who does what*): the limit slider, the lit-up icon map, the number scale card, the traced-diagram graphic and the case-file card. Each is built in the house look and rendered per row in the edit.
@@ -238,6 +238,26 @@ Chief studied two more reference channels on 11 Oct 2026. *History of the Univer
 
 **Applies to:** scripts signed off from 12 Oct (011 on) for structure and people. 009 and 010 get only on-screen items with no spoken change, and 006–008 get edit-stage items. Packaging applies to every new upload package. 004 and 005 aren't reworked.
 
+## Shorts house rules (Ben, 19 Nov 2026)
+
+**Effective now on every new HOS Short.** VO-locked or scheduled Shorts built to the former 22–27 s band are not reworked unless rule 5 applies. Where this section disagrees with *Short hook* in `HOS_STRATEGY.md`, `STUDIO_PLAYBOOK.md` §3, `.cursor/rules/hos-build-shorts.mdc`, or the 24 Oct stayed-to-watch length notes, **this section wins** for Shorts started from 19 Nov 2026. Test B, feed rules R1–R8, Teach on screen (one overlay), the 3D cartoon house lock, and the Never list still apply unless this section says otherwise.
+
+**Why (19 Nov 2026):** Orbit's two Facebook Reel hits were Apophis (18.8 s cut, ~219K impressions) and Pluto's Heart (17.6 s cut, ~52K impressions). The same Apophis caption on an older 22.1 s cut got ~1.3K impressions. No HOS Facebook post had passed 556 impressions as of 19 Nov 2026.
+
+1. **Open (3D cartoon house lock).** Frame 0 is a **premium 3D cartoon** plate, already moving, showing a famous object or moment people recognise instantly (Franklin's kite in the storm, Newton's apple, Jenner and the cow, the Curies' glowing vial). **No archival footage, no paintings, no stills, no Ken-Burned engravings.** Spoken subject and surprise within ~1.5 s. Never "Stay, and I'll show you…" or any variant.
+
+2. **Length and loop.** **16–19 s** total runtime. The last spoken line loops back into the first (read last line then first line aloud as one sentence). The last frame matches frame 0 (crossfade 0.3 s at most).
+
+3. **Topics.** Pick angles anyone can share without knowing history: famous objects, famous people, famous images, and dated events people already recognise.
+
+4. **Caption.** The on-screen caption's **first line carries the concrete fact**, never a two-word ALL CAPS label. A yellow keyword on the fact is fine; the line must read as a fact, not a catalogue stamp.
+
+5. **Facebook mirror (not a batch recut).** Never re-post an old cut of a winner to Facebook. These rules apply to **new Shorts from now on** only. An **older Short is recut in this style only when it is picked to be mirrored to Facebook** — not a catalogue-wide batch; the one-film-at-a-time focus still holds.
+
+**Desk review (PASS/FAIL with UAT):** OPEN (3D cartoon hero at frame 0, subject + surprise ~1.5 s, no meta-promise) · LENGTH (16–19 s) · LOOP (last line → first) · CAPTION (concrete fact on line 1) · TOPIC (shareable without history homework) · FACEBOOK (no stale winner re-post; recut only on mirror pick).
+
+**Gate note:** `gate_shorts_open.py` still warns outside its legacy 22–27 s band until Chief scopes a gate update; new masters target 16–19 s here. Duration ≥ 40 s still hard-fails.
+
 ## Packaging (Astrum ref, 11 Oct 2026)
 
 Ben, 11 Oct 2026, asked what we can learn from Astrum's thumbnails and Shorts packaging. Chief decided the following for both channels the same night. In HOS it's adapted to the house look, and **the HOS live look wins** (painted key art, serif cream and gold lettering, the Explorer small at lower left, the period palette). Full rules: `THUMBNAIL_AND_TITLE_RULES.md` §2.B.
@@ -245,7 +265,7 @@ Ben, 11 Oct 2026, asked what we can learn from Astrum's thumbnails and Shorts pa
 - **Lettering in a clear band** (the top, or the live layout's left edge), never over the hero object.
 - **No saturation push.** The period palette and warm light stay. Orbit's harder grade doesn't apply here.
 - **Review:** Chief scores HOOK / BAND / PHONE on every new thumb and cover, next to `style_sheet.py`. Any FAIL goes back before Ben's final check-in.
-- **Applies to** new thumbs and covers from 12 Oct (006 on). 004 and 005 and the live back catalogue aren't reworked. Shorts length is unchanged: the 22–27 s lock and the 40 s Never line stand (Orbit's one-off 50–60 s test doesn't apply to HOS).
+- **Applies to** new thumbs and covers from 12 Oct (006 on). 004 and 005 and the live back catalogue aren't reworked. Shorts length for new cuts follows *Shorts house rules (Ben, 19 Nov 2026)* (16–19 s); the 40 s Never line stands (Orbit's one-off 50–60 s test doesn't apply to HOS).
 
 ## Never (this channel's additions)
 

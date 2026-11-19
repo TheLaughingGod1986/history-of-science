@@ -1,25 +1,27 @@
 ---
-description: Building an HOS Short — 60% stayed-to-watch + 70% average viewed, the first two seconds, 22–27 s, the ship gate, Related link
+description: Building an HOS Short — Shorts house rules (19 Nov 2026), 16–19 s, 3D cartoon opener, the ship gate, Related link
 globs:
   - 02_Video-Projects/**/10_Shorts/**
   - 00_Brand/Channel-Setup/audits/SHORTS_LOG.md
 alwaysApply: false
 ---
 
-# HOS Short (22–27 s)
+# HOS Short (16–19 s from 19 Nov 2026)
+
+**Ben, 19 Nov 2026 — Shorts house rules** override length, opener, caption and Facebook-recut rules in this file wherever they conflict. Authoritative text: `studio/RULES.md` → *Shorts house rules (Ben, 19 Nov 2026)*.
 
 Full rules: `HOS_STRATEGY.md` → *Short hook* and *The first two seconds*; `STUDIO_PLAYBOOK.md` §3 and §7.
 
-- **Two lines, then one hard fact.** Line 1 (5–7 words) is the surprising truth about a familiar thing, said in the first second. Line 2 is the person or moment that proved it. About 55–65 words.
+- **Two lines, then one hard fact.** Line 1 (5–7 words) is the surprising truth about a familiar thing, said in the first second. Line 2 is the person or moment that proved it. Runtime **16–19 s**; VO length fits the cut.
 - **Reference lessons (HOTU + SEA, 11 Oct 2026):** a myth-bust opener is allowed (line 1 states the belief, then "No" or the reversal by about 0:15, inside 22–27 s). Never a straight trailer trimmed from the long: every Short has its own open and stands alone. AGENTS.md → *Reference lessons*.
 - **The first two seconds:**
   1. start mid-action (trim the Veo ease-in);
-  2. the named thing at frame 0, moving; never a blank card grid or an empty room; **its own open**, never an opening background from the last 10 Shorts (R3);
-  3. the claim is the first words;
+  2. **premium 3D cartoon** famous object/moment at frame 0, already moving (no archival footage, paintings or stills); never a blank card grid or empty room; **its own open**, never an opening background from the last 10 Shorts (R3);
+  3. subject and surprise within ~1.5 s; the claim is the first words; never "Stay, and I'll show you…";
   4. a visible change by about 1 s, with a sound on frame 0;
-  5. a hook caption on frame 0 (2–4 words, cap height about 8–10%, yellow hook word);
+  5. caption line 1 = **concrete fact**, not a two-word ALL CAPS label (yellow keyword on the fact is fine);
   6. **never the Explorer at frame 0.**
-- **On screen:** the promoted film's exact live title at 9–14 s. The last 4 s loop to the opening picture. Captions throughout.
+- **On screen:** the promoted film's exact live title at 9–14 s. **16–19 s**; last spoken line loops to line 1; last frame matches frame 0. Captions throughout.
 - **Teach on screen (Ben, 11 Oct 2026):** at most one overlay (fact card, date stamp or one-number scale), only where it helps. Never in the first 2 s or over the 9–14 s title; inside the 16:9 centre band; no added words or seconds. AGENTS.md → *Teach on screen*.
 - **Polish pass (Astrum ref, 11 Oct 2026):** house SFX kit only (`sfx_kit.py make --house hos`), `sfx_kit.py level` PASS; one bed (R8); no credit lines, no extra overlay. `studio/RULES.md` → *Polish pass*.
 - **Ending (R7):** the last card also shows that long's exact live title, and the Related video points at that long's id. Never a generic "watch the full film".

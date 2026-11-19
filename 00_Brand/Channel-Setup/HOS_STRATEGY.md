@@ -46,9 +46,11 @@ Inspiration: [Animistry](https://www.youtube.com/@ytAnimistry) for the look and 
 - No Premieres until subscribers are in the hundreds. All three HOS longs premiered; Germs has 4 views after three weeks. Orbit saw 0 views in a Premiere's first hour.
 - A finished film beats a rushed one. If a film isn't ready by Thursday, fill the week only with ready approved back-catalogue Shorts — never placeholders.
 
-## Short hook (22–27 s)
+## Short hook (16–19 s from 19 Nov 2026)
 
-Two lines, then one hard fact. No greeting, no build-up.
+**Every new Short:** `studio/RULES.md` → *Shorts house rules (Ben, 19 Nov 2026)*. Summary:
+
+Two lines, then one hard fact. No greeting, no build-up. **16–19 s** total; the last line loops into the first.
 
 **Line 1 (5–7 words)** is the surprising truth about a familiar thing, spoken in the first second: *"Your hands were killing patients."* *"You can see through your own hand."*
 
@@ -56,16 +58,14 @@ Two lines, then one hard fact. No greeting, no build-up.
 
 ### The first two seconds
 
-Your two best Shorts already do this: *Microbes in a drop of pond water* (110 views) and *Germs don't cast a shadow* (78) open on the thing itself, moving. The two worst open on blank cards and a caption.
+1. **Start mid-action.** Trim the Veo ease-in so frame 0 is already at the peak.
+2. **Frame 0 is a moving premium 3D cartoon** of a famous object or moment people recognise instantly (kite in the storm, Newton's apple, Jenner and the cow, the Curies' vial). **No archival footage, paintings or stills.** Never a blank desk or empty room. **Every Short gets its own open:** never reuse an opening background from the last 10 Shorts (R3; `gate_shorts_open.py` checks frame 0).
+3. **Subject and surprise within ~1.5 s.** The first words are the claim. Never "Imagine…", "In 1895…", or "Stay, and I'll show you…" (or any variant).
+4. **Something visibly changes by about 1 s.** A short sound on frame 0.
+5. **Caption on frame 0:** the **first line is the concrete fact**, not a two-word ALL CAPS label; yellow keyword on the fact is fine.
+6. **The Explorer is never at frame 0.** He can arrive from about 1 s.
 
-1. **Start mid-action.** Trim the first 0.5–1 s of every Veo clip so frame 0 is already at the peak.
-2. **The thing the title names is on screen at frame 0, moving.** The pond drop under the lens, the hand glowing on the plate. Never a blank desk, a flat card grid or an empty room. **Every Short gets its own open:** never reuse an opening background from the last 10 Shorts (5 Oct 2026, rule R3 below; `gate_shorts_open.py` checks frame 0 against them).
-3. **The first words are the claim.** Never "Imagine…" or "In 1895…".
-4. **Something visibly changes by about 1 s:** a flash, a zoom, a hand moving in. A short sound on frame 0.
-5. **A hook caption on frame 0:** 2–4 words, the promise, cap height about 8–10% of frame, yellow on the hook word.
-6. **The Explorer is never at frame 0.** He can arrive from about 1 s, reacting to the thing.
-
-Then one hard fact. The promoted film's exact live title is on screen at 9–14 s. The last 4 s return to the opening picture so the Short loops. Captions all the way through.
+Topics anyone can share without knowing history: famous objects, people, images, dated events. The promoted film's exact live title is on screen at 9–14 s. Captions all the way through. For Facebook mirroring, never re-post an old winner cut; recut in this style only when that Short is picked for a Facebook mirror (not a batch).
 
 ### Anomaly-first open (experiment HOS-2026-11-E1, Chief h47, 5 Nov 2026)
 

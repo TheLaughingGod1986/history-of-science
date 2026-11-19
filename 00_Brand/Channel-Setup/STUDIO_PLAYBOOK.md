@@ -91,11 +91,12 @@ Those are in `_archive/` for history only. Every rule they held that still appli
   npm run gate:episode -- --project ../02_Video-Projects/<NNN_Slug>       # PASS
   ```
 
-### Short (22–27 s, about 55–65 words)
+### Short (16–19 s from 19 Nov 2026)
 
+- **House rules:** `studio/RULES.md` → *Shorts house rules (Ben, 19 Nov 2026)* (effective every new Short).
 - **Two lines, then one hard fact** (`HOS_STRATEGY.md` → *Short hook*).
-- **The first two seconds:** start mid-action; the named thing at frame 0, moving; the first words are the claim; a visible change by 1 s; a 2–4 word hook caption on frame 0; the Explorer never at frame 0.
-- **The promoted film's exact live title** on screen at 9–14 s. The last 4 s loop back to the opening picture. Captions throughout.
+- **The first two seconds:** start mid-action; a **moving premium 3D cartoon** of a recognisable famous object or moment at frame 0 (no archival footage, paintings or stills); subject and surprise within ~1.5 s; no "Stay, and I'll show you…"; caption line 1 is the **concrete fact**, not a two-word ALL CAPS label; the Explorer never at frame 0.
+- **The promoted film's exact live title** on screen at 9–14 s. **16–19 s** runtime; the last spoken line loops into the first; last frame matches frame 0. Captions throughout.
 - **One overlay at most** (fact card, date stamp or one-number scale), only where it helps; never in the first 2 s or over the 9–14 s title, inside the 16:9 centre band, with no added words or seconds (§5, *Teach on screen*).
 - Shorts are cut from the film's own picture and VO wherever possible. The long-form reviewer caps Shorts below 90; don't pad a Short to chase it.
 
@@ -193,7 +194,7 @@ Ben, 11 Oct 2026 21:45, for every future video on both channels: *"add more grap
 - **WHEN: every date or era that's said.** Add `· WHEN: <place, year>` for a place-and-year stamp (already allowed in the first 3 s), or a marker dropping onto the timeline.
 - **FACT: 2–4 per long.** Each is one surprising, sourced fact, said in a line and shown as a card: `· FACT: <card text, 4 words or fewer>`. Make it a "huh, I didn't know that" beat, never a list.
 - **Pictures are facts too.** All WHO, WHEN, DATA and FACT text goes on the script's new-claims list and is sourced in `FACT_NOTES` before picture, like any spoken claim.
-- **Shorts (22–27 s): at most one overlay** (a fact card, a date stamp or a one-number scale), and only where it helps the line being said. It adds no words and no seconds, so the Short stays at 22–27 s and 55–65 words. It never appears in the first 2 s (frame 0 has the hook caption only) or over the 9–14 s title, and it stays inside the 16:9 centre band.
+- **Shorts (16–19 s from 19 Nov 2026; see *Shorts house rules*): at most one overlay** (a fact card, a date stamp or a one-number scale), and only where it helps the line being said. It adds no words and no seconds. It never appears in the first 2 s (frame 0 has the caption only) or over the 9–14 s title, and it stays inside the 16:9 centre band.
 
 **Picture.**
 - **All text is added in the edit,** never by Veo: plates carry no readable text, and garbled card text is a hard fail. In the plate board, the card's text goes in `side_label`, and a DATA graphic is named in the part's edit notes.
@@ -278,7 +279,7 @@ Ben, 11 Oct 2026 22:17, sent Astrum's *What Is It Like on the Surface of a Black
 - **Every big number gets a scale.** Give it a plain comparison or an everyday analogy in the same or the next sentence ("smaller than a grain of salt"). Mark it on its DATA marker: `· DATA: <graphic> · SCALE: <comparison>`. The comparison goes on the new-claims list and into `FACT_NOTES` like any spoken claim, and it's right for the year in the scene.
 - **The hook doesn't change.** HOS keeps its first-minute timings, which are stricter than Astrum's question by 0:50: the answer image by 0:05, the title question by 0:08, the promise by 0:15, the stakes by 0:25, and the first real fact before 0:45.
 - **008–010 first 30 seconds (HOS-2026-11-E2).** From 0:00 to 0:30 the picture cuts in under 4.5 s, with at least 7 distinct moving plates, and 0:05–0:15 is the apparatus or the physical proof. The first animated DATA+SCALE graphic lands between 0:25 and 0:40. Milestones in the bullet above stay. Full rule, review scores and the stop line: *Teach on screen* → *Proof-first first 30 seconds*.
-- **Word counts don't change:** about 1,200–1,300 spoken words, and `review:script` at 90 or more. An analogy replaces words; it doesn't add them. Shorts stay at 55–65 words.
+- **Word counts don't change on longs:** about 1,200–1,300 spoken words, and `review:script` at 90 or more. An analogy replaces words; it doesn't add them. New Shorts fit *Shorts house rules (Ben, 19 Nov 2026)* (16–19 s).
 
 **5. Finishing.**
 - **Crossfades** of 0.5–1.5 s between scenes where the move suits (a change of place or year). Hard cuts elsewhere; they're not required on every cut. A crossfade never stretches a shot past the 4–6 s picture change, and part cards keep their 0.5–0.8 s breath before the crossfade.
