@@ -22,7 +22,7 @@ Those are in `_archive/` for history only. Every rule they held that still appli
 | Slot (UK) | What |
 |---|---|
 | Thu 18:00 | One long, 7–9 min, **normal publish (no Premiere)** |
-| Sat · Fri · Sun · Tue 11:30 | Four Shorts, 22–27 s. Saturday is the go-public-day Short that promotes the new long; Friday, Sunday and Tuesday stay. Friday also supports the new long now that it is public; Sunday and Tuesday promote other films. |
+| Sat · Fri · Sun · Tue 11:30 | Four Shorts, **16–19 s** (from 19 Nov 2026). Saturday is the go-public-day Short that promotes the new long; Friday, Sunday and Tuesday stay. Friday also supports the new long now that it is public; Sunday and Tuesday promote other films. |
 
 - **Table note (Ben, 7 Nov 2026):** Thursday 11:30 was the preferred go-public-day Short (same idea as Orbit's Short on the long's day), but it would publish before the Thu 18:00 long and break "never a Short before its long is public". Saturday 11:30 takes that slot — the next free day that is not already a Short day (Fri · Sun · Tue).
 - Never more than one Short a day. Never a Short before its long is public.

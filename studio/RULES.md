@@ -229,7 +229,7 @@ Chief studied two more reference channels on 11 Oct 2026. *History of the Univer
   Never claim "no AI", and never name the AI checkers. Say a person checked the facts only when one actually did. The altered-content setting stays on.
 
 **3. Shorts rules.** From 19 Nov 2026, every new Short follows *Shorts house rules (Ben, 19 Nov 2026)* below; this bullet list stands for older references only where it does not conflict.
-- **The myth-bust opener is an allowed format.** Line 1 is the belief ("You were taught Newton's apple hit his head"), and **"No"** or the reversal lands inside the 16–19 s runtime and the opener rules in *Shorts house rules*.
+- **The myth-bust opener is an allowed format.** Line 1 is the belief ("You were taught Newton's apple hit his head"), and **"No"** or the reversal lands by about 0:05, inside the 16–19 s runtime and the opener rules in *Shorts house rules*.
 - **No straight trailers.** A Short is never a clip trimmed from the long. It has its own open, frame 0, caption, title and loop, and it stands alone.
 
 **4. Graphics go to Codex** (`--kind chart`, `gpt-6-astra`, per *Who does what*): the limit slider, the lit-up icon map, the number scale card, the traced-diagram graphic and the case-file card. Each is built in the house look and rendered per row in the edit.
@@ -246,6 +246,8 @@ Chief studied two more reference channels on 11 Oct 2026. *History of the Univer
 
 1. **Open (3D cartoon house lock).** Frame 0 is a **premium 3D cartoon** plate, already moving, showing a famous object or moment people recognise instantly (Franklin's kite in the storm, Newton's apple, Jenner and the cow, the Curies' glowing vial). **No archival footage, no paintings, no stills, no Ken-Burned engravings.** Spoken subject and surprise within ~1.5 s. Never "Stay, and I'll show you…" or any variant.
 
+> Chief clarification: "Rule 1 means a 3D cartoon version of the famous object, with no archival footage, paintings or stills."
+
 2. **Length and loop.** **16–19 s** total runtime. The last spoken line loops back into the first (read last line then first line aloud as one sentence). The last frame matches frame 0 (crossfade 0.3 s at most).
 
 3. **Topics.** Pick angles anyone can share without knowing history: famous objects, famous people, famous images, and dated events people already recognise.
@@ -253,6 +255,8 @@ Chief studied two more reference channels on 11 Oct 2026. *History of the Univer
 4. **Caption.** The on-screen caption's **first line carries the concrete fact**, never a two-word ALL CAPS label. A yellow keyword on the fact is fine; the line must read as a fact, not a catalogue stamp.
 
 5. **Facebook mirror (not a batch recut).** Never re-post an old cut of a winner to Facebook. These rules apply to **new Shorts from now on** only. An **older Short is recut in this style only when it is picked to be mirrored to Facebook** — not a catalogue-wide batch; the one-film-at-a-time focus still holds.
+
+> Chief clarification: "Rule 5 recuts happen only when an older Short is picked for Facebook, never as a batch."
 
 **Desk review (PASS/FAIL with UAT):** OPEN (3D cartoon hero at frame 0, subject + surprise ~1.5 s, no meta-promise) · LENGTH (16–19 s) · LOOP (last line → first) · CAPTION (concrete fact on line 1) · TOPIC (shareable without history homework) · FACEBOOK (no stale winner re-post; recut only on mirror pick).
 
