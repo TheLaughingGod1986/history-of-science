@@ -1843,5 +1843,256 @@ class NoNameWordingTests(unittest.TestCase):
                         self.assertNotIn(json.dumps(change["old"], ensure_ascii=False), source)
 
 
+class SessionBlockTests(unittest.TestCase):
+    """Chief ruling, desk 6831924778: row 56's take 1 is a session block, not a policy refusal.
+
+    The command submits nothing. A second run is a no-op. Any other charge is refused.
+    """
+
+    @classmethod
+    def setUpClass(cls):
+        cls.row = next(r for r in RUNNER.load_scope(ROOT) if r.plate_id == RUNNER.SESSION_BLOCK_PLATE)
+        cls.key = RUNNER.SESSION_BLOCK_CHARGE
+        cls.evidence = {
+            "banner": RUNNER.SESSION_BLOCK_BANNER,
+            "ui": {"balances": [RUNNER.SESSION_BLOCK_BALANCE]},
+            "desk": "HOS #180 6831924778",
+        }
+
+    def charged_state(self, root: Path, *, spend=True):
+        ledger, state = root / "ledger.jsonl", root / "shared"
+        spend_path, media, archive = root / "ai_spend.jsonl", root / "media", root / "archive"
+        archive.mkdir()
+        waiting = RUNNER.submitting_record(
+            self.row, 1, RUNNER.versioned_output(media, self.row.part, self.row.plate_id, 1))
+        waiting["shared_charge"] = self.key
+        RUNNER.append_ledger(ledger, waiting)
+        with RUNNER.SharedFlowAccounting(state) as account:
+            account.reserve(RUNNER.DEFAULT_RESERVATION, RUNNER.FILM_ID, RUNNER.MAX_TOTAL_CREDITS, live=14890)
+            account.intent(self.key, RUNNER.DEFAULT_RESERVATION, self.row.try1_credits, live=14890)
+            account.resolve(self.key, submitted=True, evidence={"ok": True})
+        if spend:
+            spend_path.write_text(json.dumps({
+                "amount": 100,
+                "charge": self.key,
+                "id": "flow:spend:" + self.key,
+                "kind": "spend",
+                "pool": "flow",
+                "what": self.key,
+            }, sort_keys=True) + "\n")
+        return ledger, state, spend_path, media, archive
+
+    def reconcile(self, root, ledger, state, spend, media, archive, **over):
+        args = dict(
+            accounting_state=state, ledger_path=ledger, lock_path=root / "writer.lock",
+            spend_ledger=spend, media=media, archive_dir=archive,
+            key=self.key, plate_id=self.row.plate_id, part=self.row.part, take=1,
+            evidence=self.evidence,
+        )
+        args.update(over)
+        return RUNNER.reconcile_session_block(**args)
+
+    def test_the_identity_is_row_56_take_1(self):
+        self.assertEqual(self.row.row_id, "P5:08a_wallace_opens_origin")
+        self.assertEqual((self.row.part, self.row.try1_credits, self.row.prompt_sha256), (
+            5, 100, "e01aed99508f7631f8551202e8750a18ebbe6bd8d2f37da082d6523630c84b1a"))
+        self.assertEqual(self.key, "HOS:013:P05:08a_wallace_opens_origin:t1")
+        self.assertNotIn("reconcile_policy_refusal", RUNNER.reconcile_session_block.__code__.co_names)
+
+    def test_first_run_appends_and_second_run_changes_nothing(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            ledger, state, spend, media, archive = self.charged_state(root)
+            before_shared = (state / "account.jsonl").read_bytes()
+            before_pass = ledger.read_bytes()
+            before = RUNNER.SharedFlowAccounting.peek_readonly(state)
+            result = self.reconcile(root, ledger, state, spend, media, archive)
+            self.assertEqual(result, {"shared_appended": True, "pass_appended": True, "spend_appended": True})
+            once = ((state / "account.jsonl").read_bytes(), ledger.read_bytes(), spend.read_bytes())
+            self.assertTrue(once[0].startswith(before_shared))
+            self.assertTrue(once[1].startswith(before_pass))
+            again = self.reconcile(root, ledger, state, spend, media, archive)
+            self.assertEqual(again, {"shared_appended": False, "pass_appended": False, "spend_appended": False})
+            self.assertEqual(((state / "account.jsonl").read_bytes(), ledger.read_bytes(), spend.read_bytes()), once)
+
+            event = json.loads((state / "account.jsonl").read_text().splitlines()[-1])
+            self.assertEqual(event["kind"], "session_blocked")
+            self.assertEqual((event["status"], event["amount"]), ("SESSION_BLOCKED", 0))
+            self.assertNotIn("policy_refused", (state / "account.jsonl").read_text())
+            snap = RUNNER.SharedFlowAccounting.peek_readonly(state)
+            self.assertEqual(
+                (snap["charges"][self.key]["status"], snap["charges"][self.key]["amount"], snap["charges"][self.key]["posted"]),
+                ("SESSION_BLOCKED", 0, False))
+            self.assertEqual(snap["unposted"], before["unposted"] - 100)
+            self.assertEqual(snap["remaining_reservations"], before["remaining_reservations"] + 100)
+            self.assertEqual(snap["liability"], before["liability"])
+            self.assertEqual(snap["reservations"][RUNNER.DEFAULT_RESERVATION]["cap"], RUNNER.MAX_TOTAL_CREDITS)
+
+            closed = RUNNER.read_ledger(ledger)[-1]
+            self.assertEqual(closed["status"], "SESSION_BLOCKED")
+            self.assertEqual(closed["credits_used"], 0)
+            self.assertIs(closed["generated"], False)
+            self.assertIs(closed["keep"], False)
+            self.assertEqual(closed["reason"], RUNNER.SESSION_BLOCK_BANNER)
+            self.assertEqual(closed["shared_charge"], self.key)
+            spent, pending, unknown, takes = RUNNER.ledger_totals(RUNNER.read_ledger(ledger))
+            self.assertEqual((spent, pending, unknown, takes.get(self.row.row_id, 0)), (0, 0, False, 0))
+
+            reversal = json.loads(spend.read_text().splitlines()[-1])
+            self.assertEqual(reversal["id"], "flow:reversal:" + self.key)
+            self.assertEqual(reversal["amount"], -100)
+            self.assertEqual(reversal["what"], "Flow session block, 0 credits deducted, take not a policy refusal")
+            self.assertEqual(sum(json.loads(line)["amount"] for line in spend.read_text().splitlines()
+                                 if json.loads(line)["kind"] == "spend"), 0)
+
+    def test_other_charges_bad_evidence_and_an_mp4_are_refused(self):
+        other = next(r for r in RUNNER.load_scope(ROOT) if r.row_id != self.row.row_id)
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            ledger, state, spend, media, archive = self.charged_state(root)
+            before = ((state / "account.jsonl").read_bytes(), ledger.read_bytes(), spend.read_bytes())
+            hyphen = dict(self.evidence, banner=RUNNER.SESSION_BLOCK_BANNER.replace("\u2014", "-"))
+            cases = (
+                {"key": self.key.replace(":t1", ":t2")},
+                {"plate_id": other.plate_id, "part": other.part},
+                {"take": 2},
+                {"part": 4},
+                {"evidence": hyphen},
+                {"evidence": {"banner": RUNNER.SESSION_BLOCK_BANNER, "balance": "4990"}},
+                {"evidence": {"banner": RUNNER.SESSION_BLOCK_BANNER, "balance": 4989}},
+                {"evidence": {}},
+            )
+            for over in cases:
+                with self.subTest(over=over), self.assertRaises(RUNNER.GuardError):
+                    self.reconcile(root, ledger, state, spend, media, archive, **over)
+            raw = RUNNER.versioned_output(media, self.row.part, self.row.plate_id, 1)
+            raw.parent.mkdir(parents=True, exist_ok=True)
+            raw.write_bytes(b"mp4")
+            with self.assertRaisesRegex(RUNNER.GuardError, "mp4"):
+                self.reconcile(root, ledger, state, spend, media, archive)
+            raw.unlink()
+            archived = archive / raw.name
+            archived.write_bytes(b"mp4")
+            with self.assertRaisesRegex(RUNNER.GuardError, "mp4"):
+                self.reconcile(root, ledger, state, spend, media, archive)
+            archived.unlink()
+            self.assertEqual(((state / "account.jsonl").read_bytes(), ledger.read_bytes(), spend.read_bytes()), before)
+
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            ledger, state, spend, media, archive = self.charged_state(root)
+            delivered = RUNNER.submitting_record(self.row, 1, root / "x.mp4")
+            delivered.update(status="PENDING_REVIEW", file_state="GENERATED", generated=True,
+                             credits_used=100, shared_charge=self.key)
+            RUNNER.append_ledger(ledger, delivered)
+            with self.assertRaises(RUNNER.GuardError):
+                self.reconcile(root, ledger, state, spend, media, archive)
+            self.assertEqual(RUNNER.SharedFlowAccounting.peek_readonly(state)["charges"][self.key]["status"], "CHARGED")
+
+    def test_take_1_stays_recorded_and_take_3_is_refused(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            ledger, state, spend, media, archive = self.charged_state(root)
+            self.reconcile(root, ledger, state, spend, media, archive)
+            entries = RUNNER.read_ledger(ledger)
+            self.assertEqual(RUNNER.takes_recorded(entries, self.row.row_id), {1})
+            self.assertEqual(RUNNER.session_blocked_takes(entries, self.row.row_id), {1})
+            self.assertNotIn(self.row.row_id, RUNNER.refused_rows(entries))
+            take, dest = RUNNER.next_take_for_row(media, self.row.part, self.row.plate_id, entries)
+            self.assertEqual(take, 2)
+            self.assertEqual(dest.name, "P05_08a_wallace_opens_origin_t2.mp4")
+            with self.assertRaisesRegex(RUNNER.GuardError, "take 3"):
+                RUNNER.next_version(
+                    media, self.row.part, self.row.plate_id, {1, 2},
+                    session_blocked={1})
+            with self.assertRaisesRegex(RUNNER.GuardError, "second take"):
+                RUNNER.next_version(media, self.row.part, self.row.plate_id, {1})
+
+    def test_a_blocked_take_counts_toward_neither_credits_nor_the_take_cap(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            ledger, state, spend, media, archive = self.charged_state(root)
+            self.reconcile(root, ledger, state, spend, media, archive)
+            blocked = RUNNER.read_ledger(ledger)[-1]
+            full = {
+                "row_id": "P1:other_plate", "part": 1, "plate_id": "other_plate", "take": 1,
+                "status": "PENDING_REVIEW", "keep": False, "credits_used": 6600,
+            }
+            spent, pending, unknown, takes = RUNNER.ledger_totals([full, blocked])
+            self.assertEqual((spent, pending, unknown), (6600, 0, False))
+            self.assertNotIn(self.row.row_id, takes)
+            later = dict(full, row_id=self.row.row_id, part=5, plate_id=self.row.plate_id,
+                         take=2, credits_used=100)
+            _, _, _, takes = RUNNER.ledger_totals([blocked, later])
+            self.assertEqual(takes[self.row.row_id], 1)
+            third = dict(later, take=3)
+            with self.assertRaisesRegex(RUNNER.GuardError, "MAX_TAKES_PER_ROW"):
+                RUNNER.ledger_totals([blocked, later, third])
+            with self.assertRaises(RUNNER.GuardError):
+                RUNNER.ledger_totals([{**blocked, "credits_used": 100}])
+            with self.assertRaises(RUNNER.GuardError):
+                RUNNER.ledger_totals([{**blocked, "generated": True}])
+
+    def test_the_same_charge_cannot_be_intended_again(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            ledger, state, spend, media, archive = self.charged_state(root)
+            self.reconcile(root, ledger, state, spend, media, archive)
+            replacement = self.key.replace(":t1", ":t2")
+            with RUNNER.SharedFlowAccounting(state) as account:
+                with self.assertRaises(RUNNER.GuardError):
+                    account.intent(self.key, RUNNER.DEFAULT_RESERVATION, 100, live=14890)
+                account.intent(replacement, RUNNER.DEFAULT_RESERVATION, 100, live=14890)
+            snap = RUNNER.SharedFlowAccounting.peek_readonly(state)
+            self.assertEqual(snap["charges"][self.key]["status"], "SESSION_BLOCKED")
+            self.assertEqual(snap["charges"][replacement]["status"], "PENDING")
+
+    def test_an_existing_negative_spend_is_left_alone(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            ledger, state, spend, media, archive = self.charged_state(root, spend=False)
+            spend.write_text(json.dumps({
+                "amount": -100, "charge": self.key, "id": "hand-reversal", "kind": "spend", "what": "already taken back",
+            }, sort_keys=True) + "\n")
+            before = spend.read_bytes()
+            result = self.reconcile(root, ledger, state, spend, media, archive)
+            self.assertEqual(result["spend_appended"], False)
+            self.assertTrue(result["shared_appended"] and result["pass_appended"])
+            self.assertEqual(spend.read_bytes(), before)
+            self.assertNotIn("flow:reversal:", spend.read_text())
+
+    def test_export_after_the_block_does_not_write_a_second_spend(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            ledger, state, spend, media, archive = self.charged_state(root, spend=False)
+            with RUNNER.SharedFlowAccounting(state) as account:
+                self.assertEqual(account.export_ai_spend(spend, by="hos013-pass1"), 1)
+            self.reconcile(root, ledger, state, spend, media, archive)
+            frozen = spend.read_bytes()
+            with RUNNER.SharedFlowAccounting(state) as account:
+                self.assertEqual(account.export_ai_spend(spend, by="hos013-pass1"), 0)
+            self.assertEqual(spend.read_bytes(), frozen)
+            amounts = [json.loads(line)["amount"] for line in frozen.decode().splitlines()
+                       if json.loads(line)["kind"] == "spend"]
+            self.assertEqual(sorted(amounts), [-100, 100])
+
+    def test_the_command_closes_the_take(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            ledger, state, spend, media, archive = self.charged_state(root)
+            evidence = root / "evidence.json"
+            evidence.write_text(json.dumps(self.evidence))
+            code = RUNNER.main([
+                "reconcile-session-block",
+                "--key", self.key, "--plate", self.row.plate_id, "--part", str(self.row.part),
+                "--evidence", str(evidence),
+                "--media", str(media), "--archive", str(archive),
+                "--accounting-state", str(state), "--ledger", str(ledger),
+                "--lock", str(root / "writer.lock"), "--spend-ledger", str(spend),
+            ])
+            self.assertEqual(code, 0)
+            self.assertEqual(RUNNER.read_ledger(ledger)[-1]["status"], "SESSION_BLOCKED")
+
+
 if __name__ == "__main__":
     unittest.main()

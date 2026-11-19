@@ -82,6 +82,22 @@ SUBMIT_ENV = "HOS013_PASS1_SUBMIT"
 # desk 6784299215, 6785508086 and 6785808071). It uses up the row's one pass-1 take: the row is
 # not submitted again and goes to the picture review as refused.
 POLICY_REFUSED = "FAILED_POLICY"
+# One Flow session block (Chief ruling, desk 6831924778): row 56's take 1 produced
+# no file and no deduction. It is not a policy refusal, so it does not use the
+# row's pass-1 take. The command below runs only for this charge.
+SESSION_BLOCKED = "SESSION_BLOCKED"
+SESSION_BLOCK_PLATE = "08a_wallace_opens_origin"
+SESSION_BLOCK_PART = 5
+SESSION_BLOCK_TAKE = 1
+SESSION_BLOCK_ROW = f"P{SESSION_BLOCK_PART}:{SESSION_BLOCK_PLATE}"
+SESSION_BLOCK_CHARGE = f"{FILM_ID}:P{SESSION_BLOCK_PART:02d}:{SESSION_BLOCK_PLATE}:t{SESSION_BLOCK_TAKE}"
+SESSION_BLOCK_CREDITS = 100
+SESSION_BLOCK_BALANCE = 4990
+SESSION_BLOCK_BANNER = (
+    "Failed \u2014 We noticed some unusual activity. Note that browser extensions "
+    "that modify the page may cause issues. Please visit the Help Centre for more information."
+)
+SESSION_BLOCK_REVERSAL_WHAT = "Flow session block, 0 credits deducted, take not a policy refusal"
 DEFAULT_RESERVATION = "HOS013_PASS1"
 FLOW_HOST = "flow.google.com"
 GENERATE_LINE_RE = re.compile(r"^Generating will use (\d+) credits$")
@@ -659,11 +675,19 @@ def ledger_totals(entries: list[dict]) -> tuple[int, int, bool, dict[str, int]]:
         status = entry.get("status")
         if status == "KEEP" or entry.get("keep") is True or entry.get("review") == "KEEP":
             raise GuardError("ledger contains KEEP; pass-1 runner never auto-KEEPs")
-        if status not in ("SUBMITTING", "PENDING_REVIEW", "GENERATED", "FAILED", POLICY_REFUSED):
+        if status not in ("SUBMITTING", "PENDING_REVIEW", "GENERATED", "FAILED", POLICY_REFUSED, SESSION_BLOCKED):
             raise GuardError(f"unknown ledger status {status!r}")
         if status == POLICY_REFUSED and (entry.get("credits_used") != 0 or type(entry.get("credits_used")) is not int
                                          or not str(entry.get("reason") or "").strip()):
             raise GuardError(f"{POLICY_REFUSED} needs credits_used 0 and a reason")
+        if status == SESSION_BLOCKED and (
+            entry.get("credits_used") != 0 or type(entry.get("credits_used")) is not int
+            or entry.get("generated") is not False or entry.get("keep") is not False
+            or entry.get("reason") != SESSION_BLOCK_BANNER
+        ):
+            raise GuardError(
+                f"{SESSION_BLOCKED} needs credits_used 0, generated false, keep false, and the banner reason"
+            )
         row_id = str(entry.get("row_id") or "")
         if not row_id:
             part = entry.get("part")
@@ -680,8 +704,10 @@ def ledger_totals(entries: list[dict]) -> tuple[int, int, bool, dict[str, int]]:
     unknown = False
     takes: dict[str, int] = {}
     for (row_id, _take), entry in latest.items():
-        takes[row_id] = takes.get(row_id, 0) + 1
         status = entry.get("status")
+        if status == SESSION_BLOCKED:
+            continue  # 0 credits, and it does not count as the pass-1 attempt
+        takes[row_id] = takes.get(row_id, 0) + 1
         if status == "SUBMITTING":
             reserved = entry.get("credits_reserved")
             if type(reserved) is not int or reserved <= 0:
@@ -822,14 +848,29 @@ def versioned_output(media: Path, part: int, plate_id: str, take: int = 1) -> Pa
     )
 
 
-def next_version(media: Path, part: int, plate_id: str, used=()) -> tuple[int, Path]:
-    """The first take number with no file and no ledger line. `used` holds the take numbers the pass
-    ledger already has for this row: a take Flow refused leaves no file, and numbering a new take
-    the same would collide with the refused take's shared charge."""
-    for take in range(1, MAX_TAKES_PER_ROW + 1):
+def next_version(media: Path, part: int, plate_id: str, used=(), *, session_blocked=()) -> tuple[int, Path]:
+    """The first take number with no file and no ledger line.
+
+    `used` holds the take numbers the pass ledger already has. A refused take stays
+    used, so a new take is not numbered the same. A session-blocked take stays used
+    too, so the next file is the next number, but it does not count as the pass-1
+    attempt: one later take is allowed and take 3 is refused.
+    """
+    used_takes = {int(take) for take in used}
+    blocked = {int(take) for take in session_blocked if int(take) > 0}
+    if len(blocked) > 1:
+        raise GuardError("only one session-blocked take can be replaced")
+    occupied = used_takes | blocked
+    extra = 1 if blocked else 0
+    limit = MAX_TAKES_PER_ROW + extra
+    for take in range(1, limit + 1):
         dest = versioned_output(media, part, plate_id, take)
-        if take not in used and not dest.exists():
+        if take not in occupied and not dest.exists():
             return take, dest
+    if extra:
+        raise GuardError(
+            f"P{part}:{plate_id} session block allows one later take; pass 1 refuses take {limit + 1}"
+        )
     raise GuardError(
         f"P{part}:{plate_id} already has {MAX_TAKES_PER_ROW} versioned file(s); pass 1 refuses a second take"
     )
@@ -990,6 +1031,18 @@ class SharedFlowAccounting:
                         raise GuardError("invalid policy-refusal reversal")
                     charge["status"] = "POLICY_REFUSED"
                     charge["amount"] = 0
+                elif kind == "session_blocked":
+                    # Flow stopped the session after Create and deducted nothing.
+                    # Append-only: not a policy refusal, and not a posted charge.
+                    charge = charges[key]
+                    if charge["status"] != "CHARGED" or charge["posted"] or not event.get("evidence"):
+                        raise GuardError("invalid session-block reversal")
+                    if charge["amount"] != SESSION_BLOCK_CREDITS or event.get("amount") != 0:
+                        raise GuardError("session-block reversal must zero a 100-credit charge")
+                    if event.get("status") not in (None, SESSION_BLOCKED):
+                        raise GuardError("invalid session-block reversal")
+                    charge["status"] = "SESSION_BLOCKED"
+                    charge["amount"] = 0
                 else:
                     raise GuardError(f"unknown shared Flow event {kind!r}")
         except GuardError:
@@ -1104,6 +1157,24 @@ class SharedFlowAccounting:
         self._event(dict(kind="policy_refused", id=key, evidence=evidence))
         return True
 
+    def reverse_session_block(self, key: str, *, evidence: dict) -> bool:
+        """Reverse the one unposted 100-credit charge Flow blocked at the session.
+
+        Appends one ``session_blocked`` event (amount 0, not posted, not a policy
+        refusal). The charge id stays in the ledger, so it cannot be intent'd again.
+        Re-running an already blocked charge is a no-op and returns False.
+        """
+        charge = self.snapshot()["charges"].get(key)
+        if charge and charge["status"] == "SESSION_BLOCKED" and charge["amount"] == 0 and not charge["posted"]:
+            return False
+        if (not charge or charge["status"] != "CHARGED" or charge["posted"]
+                or charge["amount"] != SESSION_BLOCK_CREDITS or not evidence):
+            raise GuardError("session-block reversal needs an unposted CHARGED take of 100 and evidence")
+        self._event(dict(
+            kind="session_blocked", id=key, status=SESSION_BLOCKED, amount=0, evidence=evidence,
+        ))
+        return True
+
     def export_ai_spend(self, target: Path, *, by: str) -> int:
         """Idempotently export confirmed charges into the shared OWB ai_spend ledger."""
         self._assert_held()
@@ -1120,7 +1191,10 @@ class SharedFlowAccounting:
                 continue
             key = event["id"]
             charge = state["charges"][key]
-            if charge["status"] == "POLICY_REFUSED":
+            # Shared status "POLICY_REFUSED" is not the pass-ledger constant
+            # POLICY_REFUSED ("FAILED_POLICY"). A session block is skipped too,
+            # so a later export does not write a second spend for that charge.
+            if charge["status"] in ("POLICY_REFUSED", SESSION_BLOCKED):
                 continue
             film = state["reservations"][charge["reservation"]]["film"]
             evidence = event["evidence"]
@@ -1347,6 +1421,24 @@ def takes_recorded(entries: list[dict], row_id: str) -> set[int]:
     return {int(e.get("take") or 0) for e in entries if _entry_row_id(e) == row_id}
 
 
+def session_blocked_takes(entries: list[dict], row_id: str) -> set[int]:
+    """Take numbers whose latest line is a session block. They stay recorded, and do not count."""
+    latest: dict[int, dict] = {}
+    for entry in entries:
+        if _entry_row_id(entry) == row_id:
+            latest[int(entry.get("take") or 0)] = entry
+    return {take for take, entry in latest.items() if entry.get("status") == SESSION_BLOCKED}
+
+
+def next_take_for_row(media: Path, part: int, plate_id: str, entries: list[dict]) -> tuple[int, Path]:
+    row_id = f"P{int(part)}:{plate_id}"
+    return next_version(
+        media, part, plate_id,
+        takes_recorded(entries, row_id),
+        session_blocked=session_blocked_takes(entries, row_id),
+    )
+
+
 def refused_rows(entries: list[dict]) -> list[str]:
     """Rows whose take Flow refused under its content policy, in ledger order."""
     return [_entry_row_id(e) for e in latest_entries(entries) if e.get("status") == POLICY_REFUSED]
@@ -1400,6 +1492,166 @@ def reconcile_policy_refusal(*, accounting_state: Path, ledger_path: Path, lock_
             append_ledger(ledger_path, closed)
             entries.append(closed)
         return {"shared_appended": shared, "pass_appended": local, "refused_rows": refused_rows(entries)}
+
+
+def _walk_session_evidence(node, key=None):
+    texts: list[str] = []
+    balances: list[int] = []
+    if isinstance(node, dict):
+        for child_key, value in node.items():
+            child_texts, child_balances = _walk_session_evidence(value, child_key)
+            texts.extend(child_texts)
+            balances.extend(child_balances)
+    elif isinstance(node, list):
+        if key in ("balance", "balances") and all(type(item) is int for item in node):
+            balances.extend(node)
+        else:
+            for item in node:
+                child_texts, child_balances = _walk_session_evidence(item, key)
+                texts.extend(child_texts)
+                balances.extend(child_balances)
+    elif isinstance(node, str):
+        texts.append(node)
+    elif type(node) is int and key in ("balance", "balances"):
+        balances.append(node)
+    return texts, balances
+
+
+def require_session_block_evidence(evidence: dict) -> None:
+    """The evidence must quote the unusual-activity banner and record a balance of 4990."""
+    if not isinstance(evidence, dict) or not evidence:
+        raise GuardError("session-block evidence must quote the unusual-activity banner and a balance of 4990")
+    texts, balances = _walk_session_evidence(evidence)
+    if not any(SESSION_BLOCK_BANNER in text for text in texts):
+        raise GuardError("session-block evidence must quote the unusual-activity banner")
+    if SESSION_BLOCK_BALANCE not in balances:
+        raise GuardError("session-block evidence must record a balance of 4990")
+
+
+def session_block_record(evidence: dict) -> dict:
+    return {
+        "row_id": SESSION_BLOCK_ROW,
+        "plate_id": SESSION_BLOCK_PLATE,
+        "part": SESSION_BLOCK_PART,
+        "take": SESSION_BLOCK_TAKE,
+        "status": SESSION_BLOCKED,
+        "file_state": SESSION_BLOCKED,
+        "generated": False,
+        "review": "PENDING_REVIEW",
+        "keep": False,
+        "credits_used": 0,
+        "reason": SESSION_BLOCK_BANNER,
+        "evidence": evidence,
+        "shared_charge": SESSION_BLOCK_CHARGE,
+        "at": now_iso(),
+    }
+
+
+def negative_spend_names_charge(rows: list[dict], key: str) -> bool:
+    return any(
+        row.get("kind") == "spend"
+        and type(row.get("amount")) in (int, float)
+        and row["amount"] < 0
+        and key in f"{row.get('charge', '')} {row.get('what', '')} {row.get('id', '')}"
+        for row in rows
+    )
+
+
+def append_session_block_reversal(path: Path) -> bool:
+    """Append the one -100 reversal. If a negative spend line already names the charge, write nothing."""
+    path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    reversal_id = "flow:reversal:" + SESSION_BLOCK_CHARGE
+    with WriterLock(path.with_name(path.name + ".lock")):
+        data = path.read_bytes() if path.exists() else b""
+        if data and not data.endswith(b"\n"):
+            raise GuardError("torn ai_spend ledger; reconcile before a session-block reversal")
+        try:
+            existing = [json.loads(line) for line in data.splitlines()]
+            if any(not isinstance(row, dict) for row in existing):
+                raise ValueError("non-object row")
+        except (ValueError, TypeError) as exc:
+            raise GuardError("unreadable ai_spend ledger") from exc
+        if negative_spend_names_charge(existing, SESSION_BLOCK_CHARGE):
+            return False
+        if any(row.get("id") == reversal_id for row in existing):
+            raise GuardError("ai_spend reversal identity collision")
+        row = {
+            "amount": -SESSION_BLOCK_CREDITS,
+            "at": now_iso(),
+            "by": "hos013-pass1",
+            "charge": SESSION_BLOCK_CHARGE,
+            "film": FILM_ID,
+            "id": reversal_id,
+            "kind": "spend",
+            "pool": "flow",
+            "source": "shared-flow",
+            "what": SESSION_BLOCK_REVERSAL_WHAT,
+        }
+        with path.open("ab") as handle:
+            handle.write((json.dumps(row, sort_keys=True) + "\n").encode())
+            handle.flush()
+            os.fsync(handle.fileno())
+        directory = os.open(path.parent, os.O_RDONLY)
+        try:
+            os.fsync(directory)
+        finally:
+            os.close(directory)
+    return True
+
+
+def reconcile_session_block(*, accounting_state: Path, ledger_path: Path, lock_path: Path,
+                            spend_ledger: Path, media: Path, archive_dir: Path,
+                            key: str, plate_id: str, part: int, take: int,
+                            evidence: dict) -> dict:
+    """Close the one session-blocked Wallace take. Append-only. Submits nothing and opens no Flow page.
+
+    A completed run is a no-op. Any other charge is refused. This does not call
+    reconcile-policy-refusal and does not rewrite either ledger.
+    """
+    if (key, plate_id, int(part), int(take)) != (
+        SESSION_BLOCK_CHARGE, SESSION_BLOCK_PLATE, SESSION_BLOCK_PART, SESSION_BLOCK_TAKE,
+    ):
+        raise GuardError(
+            "session block applies only to charge "
+            f"{SESSION_BLOCK_CHARGE} (row {SESSION_BLOCK_ROW}, take {SESSION_BLOCK_TAKE})"
+        )
+    require_session_block_evidence(evidence)
+    raw = versioned_output(media, SESSION_BLOCK_PART, SESSION_BLOCK_PLATE, SESSION_BLOCK_TAKE)
+    archived = Path(archive_dir) / raw.name
+    with WriterLock(lock_path), SharedFlowAccounting(accounting_state) as account:
+        entries = read_ledger(ledger_path)
+        latest = {(_entry_row_id(entry), int(entry.get("take") or 0)): entry for entry in entries}
+        current = latest.get((SESSION_BLOCK_ROW, SESSION_BLOCK_TAKE))
+        charge = account.snapshot()["charges"].get(key)
+        pass_done = bool(
+            current and current.get("status") == SESSION_BLOCKED and current.get("shared_charge") == key
+        )
+        shared_done = bool(
+            charge and charge["status"] == SESSION_BLOCKED and charge["amount"] == 0 and not charge["posted"]
+        )
+        if not pass_done:
+            if raw.exists() or archived.exists():
+                raise GuardError("session block refuses while an mp4 exists at the raw path or the archive path")
+            if current is None or current.get("status") != "SUBMITTING" or current.get("shared_charge") != key:
+                raise GuardError("session block applies only to a SUBMITTING take for this charge")
+        if not shared_done:
+            if (not charge or charge["status"] != "CHARGED" or charge["posted"]
+                    or charge["amount"] != SESSION_BLOCK_CREDITS):
+                raise GuardError("session block needs an unposted CHARGED line for 100")
+        shared_appended = False
+        if not shared_done:
+            shared_appended = account.reverse_session_block(key, evidence=evidence)
+        pass_appended = False
+        if not pass_done:
+            append_ledger(ledger_path, session_block_record(evidence))
+            pass_appended = True
+        spend_appended = append_session_block_reversal(spend_ledger)
+        return {
+            "shared_appended": shared_appended,
+            "pass_appended": pass_appended,
+            "spend_appended": spend_appended,
+        }
 
 
 def submitting_record(row: Row, take: int, dest: Path) -> dict:
@@ -1752,7 +2004,7 @@ def execute_shared_batch(
             ):
                 raise GuardError(f"start still changed after inventory on {row.row_id}; refusing Create")
 
-            take, dest = next_version(media, row.part, row.plate_id, takes_recorded(entries, row.row_id))
+            take, dest = next_take_for_row(media, row.part, row.plate_id, entries)
             dest.parent.mkdir(parents=True, exist_ok=True)
             charge = f"{FILM_ID}:P{row.part:02d}:{row.plate_id}:t{take}"
             intent = submitting_record(row, take, dest)
@@ -2766,6 +3018,22 @@ def main(argv: list[str] | None = None) -> int:
     refusal.add_argument("--ledger", default=None)
     refusal.add_argument("--lock", default=None)
 
+    block = sub.add_parser(
+        "reconcile-session-block",
+        help="close the one Flow session-blocked take at 0 credits; submits nothing and opens no Flow page",
+    )
+    block.add_argument("--key", required=True)
+    block.add_argument("--plate", required=True)
+    block.add_argument("--part", type=int, required=True)
+    block.add_argument("--take", type=int, default=1)
+    block.add_argument("--evidence", required=True, help="JSON file quoting the unusual-activity banner and balance 4990")
+    block.add_argument("--media", default=str(DEFAULT_NAS_MEDIA))
+    block.add_argument("--archive", default=str(DEFAULT_NAS_MEDIA / "04_Generated-Clips/archive_v01_pass1"))
+    block.add_argument("--accounting-state", default=None)
+    block.add_argument("--ledger", default=None)
+    block.add_argument("--lock", default=None)
+    block.add_argument("--spend-ledger", default=None)
+
     args = parser.parse_args(argv)
     if args.cmd == "reconcile-policy-refusal":
         evidence = json.loads(Path(args.evidence).read_text())
@@ -2775,6 +3043,19 @@ def main(argv: list[str] | None = None) -> int:
             lock_path=Path(args.lock) if args.lock else state / "writer.lock",
             key=args.key, plate_id=args.plate, part=args.part, take=args.take,
             reason=args.reason, evidence=evidence)
+        sys.stdout.write(json.dumps(result, sort_keys=True) + "\n")
+        return 0
+    if args.cmd == "reconcile-session-block":
+        evidence = json.loads(Path(args.evidence).read_text())
+        result = reconcile_session_block(
+            accounting_state=Path(args.accounting_state) if args.accounting_state else shared_flow_state_dir(),
+            ledger_path=Path(args.ledger) if args.ledger else state / "ledger.jsonl",
+            lock_path=Path(args.lock) if args.lock else state / "writer.lock",
+            spend_ledger=Path(args.spend_ledger) if args.spend_ledger else canonical_spend_ledger(),
+            media=Path(args.media),
+            archive_dir=Path(args.archive),
+            key=args.key, plate_id=args.plate, part=args.part, take=args.take,
+            evidence=evidence)
         sys.stdout.write(json.dumps(result, sort_keys=True) + "\n")
         return 0
     if args.cmd == "plan":
