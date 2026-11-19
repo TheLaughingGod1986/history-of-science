@@ -77,15 +77,44 @@ class RoutingTypes(unittest.TestCase):
         self.assertEqual(route('/v1/music', 'output_format=mp3_44100_128'), 'flight')
         for path in (
             '/v1/text-to-speech/voice',
+            '/v1/text-to-speech/abc/with-timestamps',
+            '/v1/speech-to-speech/voice',
             '/v1/speech-to-text',
-            '/v1/sound-generation',
             '/v1/user/subscription',
         ):
             with self.subTest(path=path):
                 self.assertEqual(route(path), 'other')
-        for path in ('/v1/%6dusic', '/v1//music', '/v1/./music', '/V1/MUSIC', '/v1\\music', '/v1/x/../music', ' /v1/music', 'v1/music'):
+        for path in (
+            '/v1/%6dusic',
+            '/v1//music',
+            '/v1/./music',
+            '/V1/MUSIC',
+            '/v1\\music',
+            '/v1/x/../music',
+            ' /v1/music',
+            'v1/music',
+            '/v1/sound-generation',
+            '/v1/history',
+        ):
             with self.subTest(path=path):
                 self.assertEqual(route(path), 'reject')
+        for path in (
+            '/v1/%6dusic',
+            '/v1//music',
+            '/v1/./music',
+            '/V1/MUSIC',
+            '/v1\\music',
+            '/v1/x/../music',
+            ' /v1/music',
+        ):
+            with self.subTest(path=path):
+                self.assertTrue(suite.el_guard.is_spend('POST', path))
+                self.assertFalse(suite.el_guard.is_spend('GET', path))
+
+    def test_sound_generation_is_outside_the_allow_list(self):
+        for entry in ('request', 'multipart_post'):
+            with self.subTest(entry=entry):
+                self.refuse(entry, '/v1/sound-generation')
 
 
 if __name__ == '__main__':

@@ -17,21 +17,13 @@ from el_auth import auth_headers
 API = "https://api.elevenlabs.io"
 _CANONICAL_MUSIC_QUERY = "output_format=mp3_44100_128"
 _MUSIC_PREFIX = "/v1/music"
-
-
-def _unsafe_client_path(path: str) -> bool:
-    """True when a path must not reach the legacy client.
-
-    A prefix check misses percent-encoding, a backslash, an empty or dot
-    segment, whitespace, a control character, and a path that does not
-    start with /. Those forms are reject, not other.
-    """
-    if not path.startswith("/"):
-        return True
-    for ch in path:
-        if ch.isspace() or ord(ch) < 32 or ord(ch) == 127:
-            return True
-    return any(token in path for token in ("%", "\\", "//", "/./", "/../"))
+# other is this allow-list only. Sound-generation is not on it.
+_OTHER_PREFIXES = (
+    "/v1/text-to-speech",
+    "/v1/speech-to-speech",
+    "/v1/speech-to-text",
+    "/v1/user/subscription",
+)
 
 
 def _music_shaped(bare: str) -> bool:
@@ -50,14 +42,13 @@ def _music_route(path: str, query: str = "") -> str:
     flight is only the exact path /v1/music, with no fragment and with an
     empty query or output_format=mp3_44100_128. A fragment, a trailing slash,
     a suffix, an absolute URL, a case-shifted music path, or any other query
-    is reject. other is only a clean built-in path that is not music, so
-    speech and Scribe stay on the legacy client.
+    is reject. other is only a clean speech, Scribe or subscription path.
     """
     # Reject non-built-in strings before legacy dispatch. In particular, a
     # str subclass must not bypass canonical/fragment checks via this branch.
     if type(path) is not str or type(query) is not str:
         return "reject"
-    if _unsafe_client_path(path):
+    if el_guard.path_is_unsafe(path):
         return "reject"
     had_fragment = "#" in path
     bare = path.split("#", 1)[0]
@@ -71,6 +62,8 @@ def _music_route(path: str, query: str = "") -> str:
         slash = after.find("/")
         bare = after[slash:] if slash >= 0 else "/"
     if not _music_shaped(bare):
+        if absolute or not bare.startswith(_OTHER_PREFIXES):
+            return "reject"
         return "other"
     if absolute or had_fragment or bare != "/v1/music":
         return "reject"

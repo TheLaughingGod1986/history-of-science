@@ -1,11 +1,13 @@
 # J3162 path allow-list
 
-19 November 2026. Follow-up to Claude's review of `faa8f75731a91d50b9ce999a4b80c4fa4562fce9` (desk 7021875555). Not a Chief ruling, not a PASS, no merge.
+19 November 2026. Follows Chief ruling 7021895689 on Claude's review 7021875555 of `faa8f75731a91d50b9ce999a4b80c4fa4562fce9`. Not a Chief ruling, not a PASS, no merge.
 
-`_music_route` treated every path that did not start with `/v1/music` as `other`. These then went to the legacy client, and `el_guard.is_spend` missed them too, so they were a plain POST with no flight and no guard: `/v1/%6dusic`, `/v1//music`, `/v1/./music`, `/V1/MUSIC`, `/v1\music`, `/v1/x/../music`, and a leading space.
+`other` is now an allow-list. A built-in string is `other` only when it is a clean `/v1/text-to-speech`, `/v1/speech-to-speech`, `/v1/speech-to-text` or `/v1/user/subscription` path. Canonical `/v1/music` stays on the disabled flight. Everything else is `reject`, including `/v1/sound-generation`.
 
-`other` is now only a built-in string that starts with `/` and contains no `%`, `\`, `//`, `/./`, `/../`, whitespace or control character, and is not a music path. Music is recognised case-insensitively and still has to be the exact path `/v1/music` to reach the flight. Speech, Scribe, sound-generation and subscription stay `other`.
+Before that match, any path containing `%`, `\`, `//`, `/./`, `/../`, whitespace or a control character, or not starting with `/`, is `reject`. Music is recognised case-insensitively, so `/V1/MUSIC` is `reject`. The same check is in `el_guard.is_spend`: those POST forms return True, so the legacy guard fails closed.
 
-`el_client.py` sha256 is now `d3e3b32c43d9347b6de05928cb594980d567b220224d5bb0025881a69eec2a2a`. The reviewed commit's hash `aabdc7502bf6edcedb735e32427a89046d9794c0cea6c90eabb8d793b9692bb5` stays in `jobs/reviews/J3162/HASHES.txt`. The pinned guard and subscription shape are unchanged (`930d9877…`, `ba290b64…`).
+`generate_sfx_from_script.py` POSTs `/v1/sound-generation`. That call now raises `malformed_request` and does not reach the socket. Speech, Scribe and the subscription read are unchanged.
 
-Offline, fixture desks only: 4 routing tests, 23 flight tests, 11 guard tests, all passed. No account call, no network, no live lock or store. Activation stays false. The pricing evidence still does not establish a 3,000-credit, £0 bound. v01/v02 stay rejected, J2035/J2171 held. £0. Nothing for Ben.
+Hashes: `el_client.py` `98c861e0bdbd6ea87d6c5b7861cd930db60c172dfa5b3edae9d450a1ca6aadc0` (was `aabdc7502bf6edcedb735e32427a89046d9794c0cea6c90eabb8d793b9692bb5` at faa8f757). `el_guard.py` `2465a18393efeacfe80f25fffe97095be7fcee3270df6a82e79f538df72450e1`. Pinned guard `930d987783055d1f73e80fd9ae770f1ecde63d79b397706df74e9492b4029308` and shape `ba290b64740c96c3407af17da80d043be3bf840d1863518bfb011e047f9e647e` are unchanged. `jobs/reviews/J3162/HASHES.txt` still records faa8f757.
+
+Offline, fixture desks only: 5 routing tests, 23 flight tests and 11 guard tests passed. `check_all.sh` passed except package-lint `schedule.past` on the unchanged 008 manifest, the same baseline as the faa8f757 repair. 009 package-lint passed. Contract tests: 28 passed. No account call, no network, no live lock or store. Activation stays false. The pricing evidence still does not establish a 3,000-credit, £0 bound. v01/v02 stay rejected, J2035/J2171 held, J3047 closed unused. £0. Nothing for Ben.
