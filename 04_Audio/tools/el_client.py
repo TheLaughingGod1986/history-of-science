@@ -24,6 +24,12 @@ _OTHER_PREFIXES = (
     "/v1/speech-to-text",
     "/v1/user/subscription",
 )
+# Allow-listed reads that do not spend. Matched the same way as the other
+# allow-list (prefix), plus history, which is named with subscription.
+_NON_SPEND_GET_PREFIXES = (
+    "/v1/user/subscription",
+    "/v1/history",
+)
 
 
 def _music_shaped(bare: str) -> bool:
@@ -95,6 +101,26 @@ def _music_flight_query(path: str, query: str = "") -> str | None:
     return query
 
 
+def _non_spend_get_only(path: str) -> bool:
+    """True for subscription and history, the allow-listed non-spend reads.
+
+    A clean path that starts with either prefix is GET-only. Unsafe paths stay
+    on the existing reject path. Speech and Scribe are not in this list.
+    """
+    if type(path) is not str or el_guard.path_is_unsafe(path):
+        return False
+    bare = path.split("#", 1)[0].split("?", 1)[0]
+    if "://" in bare:
+        return False
+    return bare.startswith(_NON_SPEND_GET_PREFIXES)
+
+
+def _refuse_malformed() -> None:
+    from hos009_score_flight import guard
+
+    raise guard.GuardRefused("malformed_request")
+
+
 def _normalize_method(method: str) -> tuple[str, bool]:
     """Normalize an HTTP method with strip().upper() and flag invalid tokens.
 
@@ -125,9 +151,13 @@ def request(
 ) -> tuple[int, bytes, dict[str, str]]:
     norm_method, valid_method = _normalize_method(method)
     if not valid_method:
-        from hos009_score_flight import guard
-
-        raise guard.GuardRefused("malformed_request")
+        _refuse_malformed()
+    # A GET body is refused on every path, before the guard and the socket.
+    if norm_method == "GET" and data is not None:
+        _refuse_malformed()
+    # Subscription and history accept a bodyless GET only.
+    if norm_method != "GET" and _non_spend_get_only(path):
+        _refuse_malformed()
     if norm_method == "POST":
         routed = _music_flight_query(path, query)
         if routed is not None:
@@ -176,6 +206,8 @@ def multipart_post(
     files: list[tuple[str, Path]],
     timeout: int = 600,
 ) -> tuple[int, bytes]:
+    if _non_spend_get_only(path):
+        _refuse_malformed()
     routed = _music_flight_query(path)
     if routed is not None:
         # Do not read the uploaded file and do not nest a subscription GET.
