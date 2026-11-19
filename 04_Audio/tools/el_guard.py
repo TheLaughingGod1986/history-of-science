@@ -66,26 +66,35 @@ def floor() -> int:
 def path_is_unsafe(path: str) -> bool:
     """True when a prefix check could miss the path.
 
-    Percent-encoding, a backslash, an empty or dot segment, whitespace, a
-    control character, or a path that does not start with / is not a clean
-    client path. Callers fail closed: the music route rejects it, and a POST
-    is treated as spend so the guard still runs.
+    Percent-encoding, a backslash, a semicolon, an empty or dot segment,
+    whitespace, a control character, or a path that does not start with / is
+    not a clean client path. Callers fail closed: the music route rejects it,
+    and a non-GET request is treated as spend so the guard still runs.
     """
     if type(path) is not str or not path.startswith("/"):
         return True
     for ch in path:
         if ch.isspace() or ord(ch) < 32 or ord(ch) == 127:
             return True
-    return any(token in path for token in ("%", "\\", "//", "/./", "/../"))
+    return any(token in path for token in ("%", "\\", ";", "//", "/./", "/../"))
 
 
 def is_spend(method: str, path: str) -> bool:
-    """True when a POST must pass the guard.
+    """True when a non-GET request must pass the guard.
 
-    Spend prefixes are compared case-insensitively. An unsafe path fails
-    closed (True) so a disguised music path cannot skip the guard.
+    Method is normalized with strip().upper(); a non-built-in method string or
+    a method with whitespace or control characters fails closed (True). Spend
+    prefixes are compared case-insensitively. An unsafe path fails closed
+    (True) so a disguised music path cannot skip the guard.
     """
-    if method.upper() != "POST":
+    if type(method) is not str:
+        return True
+    stripped = method.strip()
+    if not stripped or stripped != method:
+        return True
+    if any(ch.isspace() or ord(ch) < 32 or ord(ch) == 127 for ch in method):
+        return True
+    if stripped.upper() == "GET":
         return False
     if type(path) is not str or path_is_unsafe(path):
         return True

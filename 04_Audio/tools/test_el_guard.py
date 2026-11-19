@@ -46,9 +46,33 @@ class GuardTest(unittest.TestCase):
             "/v1\\music",
             "/v1/x/../music",
             " /v1/music",
+            "/v1/text-to-speech/..;/music",
+            "/v1/music;param",
         ):
             self.assertTrue(el_guard.is_spend("POST", path), path)
             self.assertFalse(el_guard.is_spend("GET", path), path)
+        for method in (
+            "PUT",
+            "PATCH",
+            "DELETE",
+            "HEAD",
+            "OPTIONS",
+            "put",
+            "patch",
+            "delete",
+            " POST",
+            "POST ",
+            "\tPOST",
+            " post",
+            " GET",
+            "",
+            "   ",
+            None,
+            b"POST",
+        ):
+            self.assertTrue(el_guard.is_spend(method, "/v1/music"), repr(method))
+        self.assertFalse(el_guard.is_spend("get", "/v1/user/subscription"))
+        self.assertTrue(el_guard.is_spend("post", "/v1/text-to-speech/abc"))
 
     def test_spend_logs_to_ledger_and_holds_lock(self):
         el_guard.before_spend("/v1/text-to-speech/x", {"text": "hello world"}, sub(90_000))
