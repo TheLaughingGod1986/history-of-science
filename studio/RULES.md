@@ -260,7 +260,7 @@ Chief studied two more reference channels on 11 Oct 2026. *History of the Univer
 
 **Desk review (PASS/FAIL with UAT):** OPEN (3D cartoon hero at frame 0, subject + surprise ~1.5 s, no meta-promise) · LENGTH (16–19 s) · LOOP (last line → first) · CAPTION (concrete fact on line 1) · TOPIC (shareable without history homework) · FACEBOOK (no stale winner re-post; recut only on mirror pick).
 
-**Gate note:** `gate_shorts_open.py` still warns outside its legacy 22–27 s band until Chief scopes a gate update; new masters target 16–19 s here. Duration ≥ 40 s still hard-fails.
+**Gate note:** `gate_shorts_open.py` warns outside the **16.0–19.0 s** band (both edges inclusive, Ben 19 Nov 2026). Duration ≥ 40 s still hard-fails.
 
 ## Packaging (Astrum ref, 11 Oct 2026)
 
