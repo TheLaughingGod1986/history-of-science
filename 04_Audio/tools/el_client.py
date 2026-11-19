@@ -95,6 +95,23 @@ def _music_flight_query(path: str, query: str = "") -> str | None:
     return query
 
 
+def _normalize_method(method: str) -> tuple[str, bool]:
+    """Normalize an HTTP method with strip().upper() and flag invalid tokens.
+
+    Only built-in str values with no whitespace or control characters are valid
+    tokens. Padded methods such as " POST" return valid=False so request()
+    rejects them before flight dispatch, el_guard, and urlopen.
+    """
+    if type(method) is not str:
+        return "", False
+    stripped = method.strip()
+    if not stripped or stripped != method:
+        return stripped.upper(), False
+    if any(ch.isspace() or ord(ch) < 32 or ord(ch) == 127 for ch in method):
+        return stripped.upper(), False
+    return stripped.upper(), True
+
+
 def request(
     method: str,
     path: str,
@@ -106,17 +123,27 @@ def request(
     accept: str = "application/json",
     timeout: int = 600,
 ) -> tuple[int, bytes, dict[str, str]]:
-    if method.upper() == "POST":
+    norm_method, valid_method = _normalize_method(method)
+    if not valid_method:
+        from hos009_score_flight import guard
+
+        raise guard.GuardRefused("malformed_request")
+    if norm_method == "POST":
         routed = _music_flight_query(path, query)
         if routed is not None:
             # Canonical music only. Fragments and other forms already raised.
             from hos009_score_flight import from_client
 
             return from_client(data=data, query=routed)
+    elif norm_method != "GET":
+        if _music_route(path, query) != "other":
+            from hos009_score_flight import guard
+
+            raise guard.GuardRefused("malformed_request")
     url = f"{API}{path}"
     if query:
         url = f"{url}?{query}"
-    spend = el_guard.is_spend(method, path)
+    spend = el_guard.is_spend(norm_method, path)
     if spend:
         # Lock, pause file, credit floor and ledger (el_guard.py). Raises SpendRefused.
         el_guard.before_spend(
@@ -129,7 +156,7 @@ def request(
     if data is not None:
         headers["Content-Type"] = "application/json"
         body = json.dumps(data).encode()
-    req = urllib.request.Request(url, data=body, headers=headers, method=method)
+    req = urllib.request.Request(url, data=body, headers=headers, method=norm_method)
     try:
         with urllib.request.urlopen(req, timeout=timeout) as r:
             result = r.status, r.read(), {k.lower(): v for k, v in r.headers.items()}
