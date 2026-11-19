@@ -1,0 +1,45 @@
+{
+  "film": "120",
+  "title": "Why Do We Cry? (The Chemical Tear Signal)",
+  "summary": "Daily HOS topic addition (J3097; queued in jobs/WIP.json next_hos under Rule G). Public_search.py and neighbours.py PASS evidence saved (3 education neighbours >=1M incl. TED-Ed 6.91M Why do we cry? The three types of tears, CrashCourse 4.59M Vision: Crash Course Anatomy & Physiology #18, & TED-Ed 2.03M Why do humans have a third eyelid?, plus Peekaboo Kidz 8.70M, AsapSCIENCE 5.54M, It's AumSum Time 3.99M & 1.78M, Life Noggin 3.91M, Colossal Cranium 3.49M, Be Smart 805k, & SciShow Kids 544k; 0 collisions across all candidate titles); queued for Rule-E topic go/no-go review and awaits an open active HOS WIP slot (4/4 full) before SOURCES.md and facts lane.",
+  "stages": {
+    "topic": {
+      "state": "todo"
+    },
+    "script": {
+      "state": "todo"
+    },
+    "facts": {
+      "state": "todo"
+    },
+    "package": {
+      "state": "todo"
+    },
+    "vo": {
+      "state": "todo"
+    },
+    "shorts_scripts": {
+      "state": "todo"
+    },
+    "shorts_vo": {
+      "state": "todo"
+    },
+    "picture": {
+      "state": "todo"
+    },
+    "edit": {
+      "state": "todo"
+    },
+    "thumbnails": {
+      "state": "todo"
+    },
+    "ben_ok": {
+      "state": "todo"
+    },
+    "scheduled": {
+      "state": "todo"
+    }
+  },
+  "claims": [],
+  "next": ""
+}
