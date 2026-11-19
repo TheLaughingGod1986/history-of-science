@@ -1,25 +1,33 @@
 ---
-description: Building an HOS Short — 60% stayed-to-watch + 70% average viewed, the first two seconds, 22–27 s, the ship gate, Related link
+description: Building an HOS Short — Shorts house rules (19 Nov 2026), 16–19 s, 3D cartoon opener, the ship gate, Related link
 globs:
   - 02_Video-Projects/**/10_Shorts/**
   - 00_Brand/Channel-Setup/audits/SHORTS_LOG.md
 alwaysApply: false
 ---
 
-# HOS Short (22–27 s)
+# HOS Short (16–19 s from 19 Nov 2026)
+
+**Ben, 19 Nov 2026 — Shorts house rules** override length, opener, caption and Facebook-recut rules in this file wherever they conflict. Authoritative text: `studio/RULES.md` → *Shorts house rules (Ben, 19 Nov 2026)*.
 
 Full rules: `HOS_STRATEGY.md` → *Short hook* and *The first two seconds*; `STUDIO_PLAYBOOK.md` §3 and §7.
 
-- **Two lines, then one hard fact.** Line 1 (5–7 words) is the surprising truth about a familiar thing, said in the first second. Line 2 is the person or moment that proved it. About 55–65 words.
-- **Reference lessons (HOTU + SEA, 11 Oct 2026):** a myth-bust opener is allowed (line 1 states the belief, then "No" or the reversal by about 0:15, inside 22–27 s). Never a straight trailer trimmed from the long: every Short has its own open and stands alone. AGENTS.md → *Reference lessons*.
+- **Two lines, then one hard fact.** Line 1 (5–7 words) is the surprising truth about a familiar thing, said in the first second. Line 2 is the person or moment that proved it. Runtime **16–19 s**; VO length fits the cut.
+- **Reference lessons (HOTU + SEA, 11 Oct 2026):** a myth-bust opener is allowed (line 1 states the belief, then "No" or the reversal by about 0:05, inside 16–19 s). Never a straight trailer trimmed from the long: every Short has its own open and stands alone. AGENTS.md → *Reference lessons*.
 - **The first two seconds:**
   1. start mid-action (trim the Veo ease-in);
-  2. the named thing at frame 0, moving; never a blank card grid or an empty room; **its own open**, never an opening background from the last 10 Shorts (R3);
-  3. the claim is the first words;
+  2. **premium 3D cartoon** famous object/moment at frame 0, already moving (no archival footage, paintings or stills); never a blank card grid or empty room; **its own open**, never an opening background from the last 10 Shorts (R3);
+  3. subject and surprise within ~1.5 s; the claim is the first words; never "Stay, and I'll show you…";
   4. a visible change by about 1 s, with a sound on frame 0;
-  5. a hook caption on frame 0 (2–4 words, cap height about 8–10%, yellow hook word);
+  5. caption line 1 = **concrete fact**, not a two-word ALL CAPS label (yellow keyword on the fact is fine);
   6. **never the Explorer at frame 0.**
-- **On screen:** the promoted film's exact live title at 9–14 s. The last 4 s loop to the opening picture. Captions throughout.
+
+> Chief clarification: "Rule 1 means a 3D cartoon version of the famous object, with no archival footage, paintings or stills."
+
+- **On screen:** the promoted film's exact live title at 9–14 s. **16–19 s**; last spoken line loops to line 1; last frame matches frame 0. Captions throughout.
+- **Facebook mirror (rule 5):** never re-post an old winner cut; recut in this style only when that Short is picked for Facebook mirror (not a batch).
+
+> Chief clarification: "Rule 5 recuts happen only when an older Short is picked for Facebook, never as a batch."
 - **Teach on screen (Ben, 11 Oct 2026):** at most one overlay (fact card, date stamp or one-number scale), only where it helps. Never in the first 2 s or over the 9–14 s title; inside the 16:9 centre band; no added words or seconds. AGENTS.md → *Teach on screen*.
 - **Polish pass (Astrum ref, 11 Oct 2026):** house SFX kit only (`sfx_kit.py make --house hos`), `sfx_kit.py level` PASS; one bed (R8); no credit lines, no extra overlay. `studio/RULES.md` → *Polish pass*.
 - **Ending (R7):** the last card also shows that long's exact live title, and the Related video points at that long's id. Never a generic "watch the full film".
@@ -41,7 +49,7 @@ The swipe happens before line 2, so these rules are about **0–1.5 s**. The ful
 1. **Frame 0 is moving payoff footage: full-bleed and bright.** Use existing Veo or Flow clips, archive film or a rendered move. **A still or engraving with a slow push (zoom ≤1.10 over 4–6 s) fails.** The subject fills at least 60% of the frame. If only a still exists, it needs a fast move (≥15% scale or a clear pan inside 1.0 s) and a visible event by 0.5 s. Never the Explorer at frame 0.
 2. **Hook by 0.5 s, surprise by 1.5 s.** The first spoken word starts at 0.15 s or earlier. The surprising half of the claim is said by 1.5 s, with no pause over 0.15 s in sentence 1. A positive question title names the subject.
 3. **No intro, no logo, no meta-promise** ("Stay and I'll show you", "Did you know"), no title card, no fade from black. **The first cut lands by 3.0 s**, and later plates are held 4 s at most.
-4. **Tighter length:** 22–27 s stays the norm. The 12–15 s test (Learnings #4) remains a test. Leave **≤1.5 s** between the last word and the loop point, and never pad.
+4. **Tighter length:** **16–19 s** stays the norm for new Shorts (*Shorts house rules*, 19 Nov 2026). The 12–15 s test (Learnings #4) remains a test. Leave **≤1.5 s** between the last word and the loop point, and never pad.
 5. **Loop ending:** the last line runs straight back into line 1. The last frame is the frame-0 picture as a matched cut (crossfade 0.3 s at most), with no CTA in the last 2 s except the R7 title card.
 6. **Brief fields:** frame-0 source and zoom, first-word onset, surprise-word time, first cut, gap from last word to loop, and meta-promise (must be no).
 7. **Measure:** the daily OWB-repo `05_Analytics/hos/REPORT.md` and the weekly audit (4d) mark each read PASS (≥60%), WATCH (45–59.9%) or MISS (<45%). A miss is never a re-upload or Replace. Any swap of a scheduled private Short goes to Ben.
@@ -57,7 +65,7 @@ The swipe happens before line 2, so these rules are about **0–1.5 s**. The ful
 
 **The two numbers move separately.** `_8L9jYbDVmQ` got 18.6% stayed but 75.4% viewed; `29bpGAI0wb8` got 40.6% stayed but 44.0% viewed. The first second wins the stay (see *60% stayed-to-watch* above). Length, pacing and the loop win the % viewed.
 
-1. **Length:** the shortest cut that carries the fact. Standalone fact Shorts run 18–24 s; lifted Shorts 22–27 s, cut toward 23 s where the script allows. Both of our 100%+ Shorts are 23 s, while every 27 s Short sits under 83%. No padding, no outro, and **no more than 1.5 s from the last word to the loop point**. Mercury left 3.0 s on a still.
+1. **Length:** the shortest cut that carries the fact. **New Shorts: 16–19 s** (*Shorts house rules*, 19 Nov 2026). Historical readout below used 23–27 s masters. Both of our 100%+ Shorts are 23 s, while every 27 s Short sits under 83%. No padding, no outro, and **no more than 1.5 s from the last word to the loop point**. Mercury left 3.0 s on a still.
 2. **Pacing:** a fresh moving plate or visible change every 2.5–4 s, with no plate held over 4 s and no static crop-zoom. The curves show the cliff at **3–8 s** on the misses: `keXe1GNxWSU` fell 1.03→0.38 between 3 and 8 s, and `n2WbOfJhOwc` 1.05→0.50. Keep VO breaths under 0.25 s.
 3. **No false finish:** hold the answer to 70% of runtime or later (Learnings #6). `29bpGAI0wb8` held 0.76 at 8 s, then fell to 0.28 at 12 s once the answer landed. `n_4XskX0yZk` lost viewers at 15 s on "room temperature", before the twist.
 4. **Loop ending (to aim above 100%):** the last spoken line runs straight back into line 1 as one sentence. Test it by reading the last line followed by the first line aloud. The last frame is the frame-0 picture as a matched cut (crossfade 0.3 s at most), and the music bed runs through the seam. No end card, CTA or "the full film" line in the last 2 s; the promo title stays at 9–14 s, and HOS R7's last card sits before the loop seam. `y-SPHQ0-VjQ` returns to the opening SDO footage and averaged 147.4% on the Shorts feed.
@@ -74,7 +82,7 @@ These sit on top of the 60% and 70% rules above. Where a number here is tighter,
 
 1. **Open on the contradiction.** From 0.0–2.0 s the picture is the subject, already moving, and spoken words 1–4 are the physical contradiction or question. Word 4 ends by 2.0 s. Ban an "In \<year\>," opening and a bare biographer-name opening before 0:03 ("Benjamin Franklin flew…"). A name inside the claim is fine ("Franklin's kite was never hit"). "In one minute" / "in one second" is the J1004 scale line, not a year dateline.
 2. **Cuts.** Shot 1 cuts to shot 2 between 1.8 and 2.5 s. Shot 2 cuts to shot 3 before 4.5 s. No still or single plate is held over 3.5 s in the first 8 s. No VO pause over 0.25 s from 0–5 s.
-3. **Length and ending.** Duration 22–25 s. The payoff starts at or after 70% of the runtime (`payoff_start_s` in the Short's meta). The loop tail is under 1.2 s.
+3. **Length and ending.** Duration 22–25 s on these six experiment Shorts only (VO-locked 008–010); **new Shorts default 16–19 s** per *Shorts house rules*. The payoff starts at or after 70% of the runtime (`payoff_start_s` in the Short's meta). The loop tail is under 1.2 s.
 
 **J1004 still locks the words** (HOS PR #366): atempo at most 1.06, and zero words changed. 010 Short A's sentence 1 may keep running to 2.85 s (Option A1). The picture still cuts at 1.8–2.5 s while that sentence finishes. 009 Short B keeps both "one minute" and "one second". Assembly does not rewrite a locked line. A line that is a year dateline or a bare name open fails this gate and goes back to the script lane.
 

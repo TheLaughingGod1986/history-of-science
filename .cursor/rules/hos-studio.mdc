@@ -20,7 +20,33 @@ The Explorer: `01_Character/CHARACTER_BIBLE.md`.
 
 ## The week
 
-**Ben, 7 Nov 2026:** **1 long + 4 Shorts a week** (was 3 Shorts). One long (7–9 min) on Thursday at 18:00 UK as a **normal publish, never a Premiere**. Four Shorts (22–27 s) at 11:30 UK on Sat, Fri, Sun and Tue. Saturday is the go-public-day Short for the new long (Thursday 11:30 would publish before the Thu 18:00 long); Friday, Sunday and Tuesday stay. Never more than one Short a day; never a Short before that film's long is public; fill gaps only with ready approved cuts. Never a second long on a subject that already has one.
+**Ben, 7 Nov 2026:** **1 long + 4 Shorts a week** (was 3 Shorts). One long (7–9 min) on Thursday at 18:00 UK as a **normal publish, never a Premiere**. Four Shorts at 11:30 UK on Sat, Fri, Sun and Tue (**16–19 s** from 19 Nov 2026). Saturday is the go-public-day Short for the new long (Thursday 11:30 would publish before the Thu 18:00 long); Friday, Sunday and Tuesday stay. Never more than one Short a day; never a Short before that film's long is public; fill gaps only with ready approved cuts. Never a second long on a subject that already has one.
+
+## Shorts house rules (Ben, 19 Nov 2026) (generated from studio/RULES.md; edit studio/RULES.md, then run `python3 scripts/sync_rules.py`)
+
+<!-- SYNC: studio/RULES.md#Shorts house rules (Ben, 19 Nov 2026) -->
+**Effective now on every new HOS Short.** VO-locked or scheduled Shorts built to the former 22–27 s band are not reworked unless rule 5 applies. Where this section disagrees with *Short hook* in `HOS_STRATEGY.md`, `STUDIO_PLAYBOOK.md` §3, `.cursor/rules/hos-build-shorts.mdc`, or the 24 Oct stayed-to-watch length notes, **this section wins** for Shorts started from 19 Nov 2026. Test B, feed rules R1–R8, Teach on screen (one overlay), the 3D cartoon house lock, and the Never list still apply unless this section says otherwise.
+
+**Why (19 Nov 2026):** Orbit's two Facebook Reel hits were Apophis (18.8 s cut, ~219K impressions) and Pluto's Heart (17.6 s cut, ~52K impressions). The same Apophis caption on an older 22.1 s cut got ~1.3K impressions. No HOS Facebook post had passed 556 impressions as of 19 Nov 2026.
+
+1. **Open (3D cartoon house lock).** Frame 0 is a **premium 3D cartoon** plate, already moving, showing a famous object or moment people recognise instantly (Franklin's kite in the storm, Newton's apple, Jenner and the cow, the Curies' glowing vial). **No archival footage, no paintings, no stills, no Ken-Burned engravings.** Spoken subject and surprise within ~1.5 s. Never "Stay, and I'll show you…" or any variant.
+
+> Chief clarification: "Rule 1 means a 3D cartoon version of the famous object, with no archival footage, paintings or stills."
+
+2. **Length and loop.** **16–19 s** total runtime. The last spoken line loops back into the first (read last line then first line aloud as one sentence). The last frame matches frame 0 (crossfade 0.3 s at most).
+
+3. **Topics.** Pick angles anyone can share without knowing history: famous objects, famous people, famous images, and dated events people already recognise.
+
+4. **Caption.** The on-screen caption's **first line carries the concrete fact**, never a two-word ALL CAPS label. A yellow keyword on the fact is fine; the line must read as a fact, not a catalogue stamp.
+
+5. **Facebook mirror (not a batch recut).** Never re-post an old cut of a winner to Facebook. These rules apply to **new Shorts from now on** only. An **older Short is recut in this style only when it is picked to be mirrored to Facebook** — not a catalogue-wide batch; the one-film-at-a-time focus still holds.
+
+> Chief clarification: "Rule 5 recuts happen only when an older Short is picked for Facebook, never as a batch."
+
+**Desk review (PASS/FAIL with UAT):** OPEN (3D cartoon hero at frame 0, subject + surprise ~1.5 s, no meta-promise) · LENGTH (16–19 s) · LOOP (last line → first) · CAPTION (concrete fact on line 1) · TOPIC (shareable without history homework) · FACEBOOK (no stale winner re-post; recut only on mirror pick).
+
+**Gate note:** `gate_shorts_open.py` warns outside the **16.0–19.0 s** band (both edges inclusive, Ben 19 Nov 2026). Duration ≥ 40 s still hard-fails.
+<!-- /SYNC -->
 
 ## Teach on screen (generated from studio/RULES.md; edit studio/RULES.md, then run `python3 scripts/sync_rules.py`)
 
@@ -34,7 +60,7 @@ Ben, 11 Oct 2026 21:45, for every future video on both channels: *"add more grap
 - **WHEN: every date or era that's said.** Add `· WHEN: <place, year>` for a place-and-year stamp (already allowed in the first 3 s), or a marker dropping onto the timeline.
 - **FACT: 2–4 per long.** Each is one surprising, sourced fact, said in a line and shown as a card: `· FACT: <card text, 4 words or fewer>`. Make it a "huh, I didn't know that" beat, never a list.
 - **Pictures are facts too.** All WHO, WHEN, DATA and FACT text goes on the script's new-claims list and is sourced in `FACT_NOTES` before picture, like any spoken claim.
-- **Shorts (22–27 s): at most one overlay** (a fact card, a date stamp or a one-number scale), and only where it helps the line being said. It adds no words and no seconds, so the Short stays at 22–27 s and 55–65 words. It never appears in the first 2 s (frame 0 has the hook caption only) or over the 9–14 s title, and it stays inside the 16:9 centre band.
+- **Shorts (16–19 s from 19 Nov 2026; see *Shorts house rules*): at most one overlay** (a fact card, a date stamp or a one-number scale), and only where it helps the line being said. It adds no words and no seconds. It never appears in the first 2 s (frame 0 has the caption only) or over the 9–14 s title, and it stays inside the 16:9 centre band.
 
 **Picture.**
 - **All text is added in the edit,** never by Veo: plates carry no readable text, and garbled card text is a hard fail. In the plate board, the card's text goes in `side_label`, and a DATA graphic is named in the part's edit notes.
@@ -119,7 +145,7 @@ Ben, 11 Oct 2026 22:17, sent Astrum's *What Is It Like on the Surface of a Black
 - **Every big number gets a scale.** Give it a plain comparison or an everyday analogy in the same or the next sentence ("smaller than a grain of salt"). Mark it on its DATA marker: `· DATA: <graphic> · SCALE: <comparison>`. The comparison goes on the new-claims list and into `FACT_NOTES` like any spoken claim, and it's right for the year in the scene.
 - **The hook doesn't change.** HOS keeps its first-minute timings, which are stricter than Astrum's question by 0:50: the answer image by 0:05, the title question by 0:08, the promise by 0:15, the stakes by 0:25, and the first real fact before 0:45.
 - **008–010 first 30 seconds (HOS-2026-11-E2).** From 0:00 to 0:30 the picture cuts in under 4.5 s, with at least 7 distinct moving plates, and 0:05–0:15 is the apparatus or the physical proof. The first animated DATA+SCALE graphic lands between 0:25 and 0:40. Milestones in the bullet above stay. Full rule, review scores and the stop line: *Teach on screen* → *Proof-first first 30 seconds*.
-- **Word counts don't change:** about 1,200–1,300 spoken words, and `review:script` at 90 or more. An analogy replaces words; it doesn't add them. Shorts stay at 55–65 words.
+- **Word counts don't change on longs:** about 1,200–1,300 spoken words, and `review:script` at 90 or more. An analogy replaces words; it doesn't add them. New Shorts fit *Shorts house rules (Ben, 19 Nov 2026)* (16–19 s).
 
 **5. Finishing.**
 - **Crossfades** of 0.5–1.5 s between scenes where the move suits (a change of place or year). Hard cuts elsewhere; they're not required on every cut. A crossfade never stretches a shot past the 4–6 s picture change, and part cards keep their 0.5–0.8 s breath before the crossfade.
