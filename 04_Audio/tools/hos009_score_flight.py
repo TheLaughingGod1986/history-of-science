@@ -9,6 +9,13 @@ constant stays false, so the socket function returns before any network call.
 The billing guard is the reviewed J3147 file, loaded by hash. This module does
 not re-implement findings A–D, does not consult the pause bypass switch, does
 not delete the single-use file, and does not retry.
+
+The one subscription read is reserved in elevenlabs/hos009-score-read-once.json
+while the O_EXCL recorder descriptor is held, and only then is the read called.
+That file is not the pinned decide/consume store (hos009-score-single-use.json).
+decide() still writes the pinned store after a sealed receipt. This module
+does not remove or rewrite either file. Clearing the reservation, or
+reconciling it with the pinned store, needs a separate Chief scope.
 """
 from __future__ import annotations
 
@@ -29,6 +36,7 @@ ACTIVATION_AUTHORIZED = False
 GUARD_SHA256 = "930d987783055d1f73e80fd9ae770f1ecde63d79b397706df74e9492b4029308"
 SHAPE_SHA256 = "ba290b64740c96c3407af17da80d043be3bf840d1863518bfb011e047f9e647e"
 QUERY = "output_format=mp3_44100_128"
+READ_ONCE_NAME = "hos009-score-read-once.json"
 MUSIC_URL = "https://api.elevenlabs.io/v1/music?" + QUERY
 SUBSCRIPTION_URL = "https://api.elevenlabs.io/v1/user/subscription"
 _BANNED = frozenset(
@@ -121,6 +129,72 @@ def _refuse_used_store() -> None:
     bodies = state.get("used_bodies") if type(state) is dict else None
     if type(reqs) is not list or type(bodies) is not list or reqs or bodies:
         raise guard.GuardRefused("retry_or_shared_meter")
+
+
+def _reservation_path() -> Path:
+    """The one-read reservation. Not the pinned decide/consume store."""
+    path = guard._paths()["store"].parent / READ_ONCE_NAME
+    if path.is_symlink() or path.parent.is_symlink():
+        raise guard.GuardRefused("read_reserved")
+    return path
+
+
+def _refuse_read_reservation() -> None:
+    """A reservation left by a failed read, a bad receipt, or a crash stops re-entry.
+
+    The file is left where it is. This does not clear the pinned store either.
+    """
+    path = _reservation_path()
+    if path.is_symlink() or path.exists():
+        raise guard.GuardRefused("read_reserved")
+
+
+def _reserve_one_read(fd: int, ino: int, started: str) -> None:
+    """Create the one-read reservation while this process still holds the recorder.
+
+    O_EXCL creates the file. The recorder descriptor stays open across the
+    write. A later failure does not remove the file, so the next entry cannot
+    GET again. The pinned store is untouched here; MeterBoard.decide still
+    owns hos009-score-single-use.json.
+    """
+    _same_hold(fd, ino, started)
+    path = _reservation_path()
+    record = {
+        "attempt": 1,
+        "endpoint": "/v1/user/subscription",
+        "method": "GET",
+        "pinned_store": guard.STORE_NAME,
+        "recorder_ino": ino,
+        "recorder_started": started,
+        "reserved": True,
+    }
+    encoded = json.dumps(record, sort_keys=True, separators=(",", ":")).encode("utf-8")
+    try:
+        res_fd = os.open(path, os.O_CREAT | os.O_EXCL | os.O_WRONLY, 0o644)
+    except FileExistsError:
+        raise guard.GuardRefused("read_reserved") from None
+    except OSError:
+        raise guard.GuardRefused("shared_meter") from None
+    try:
+        written = os.write(res_fd, encoded)
+        if written != len(encoded):
+            raise guard.GuardRefused("read_reserved")
+        os.fsync(res_fd)
+    except OSError:
+        raise guard.GuardRefused("read_reserved") from None
+    finally:
+        os.close(res_fd)
+    try:
+        dir_fd = os.open(path.parent, os.O_RDONLY)
+    except OSError:
+        raise guard.GuardRefused("read_reserved") from None
+    try:
+        os.fsync(dir_fd)
+    except OSError:
+        raise guard.GuardRefused("read_reserved") from None
+    finally:
+        os.close(dir_fd)
+    _same_hold(fd, ino, started)
 
 
 def _approved_request() -> dict:
@@ -231,12 +305,15 @@ def _flight(*, prompt: str, length_ms: int) -> tuple[int, bytes, dict[str, str]]
     if guard._desk is None:
         raise guard.GuardRefused("unbound_desk")
     _refuse_used_store()
+    _refuse_read_reservation()
     guard.hold_recorder()
     fd = guard._held_fd
     ino = guard._held_ino
     started = guard._held_started
     if type(fd) is not int or type(ino) is not int or type(started) is not str:
         raise guard.GuardRefused("shared_meter")
+    _same_hold(fd, ino, started)
+    _reserve_one_read(fd, ino, started)
     _same_hold(fd, ino, started)
     board = guard.MeterBoard()
     receipt = guard.read_subscription(_subscription_get)

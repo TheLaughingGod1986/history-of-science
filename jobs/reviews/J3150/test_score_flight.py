@@ -186,6 +186,12 @@ class FlightTest(unittest.TestCase):
         self.assertIn("date", headers)
         self.assertTrue(self.desk.store.is_file())
         self.assertGreater(self.desk.store.stat().st_size, 2)
+        reserved = self._reservation()
+        self.assertTrue(reserved.is_file())
+        record = json.loads(reserved.read_text(encoding="utf-8"))
+        self.assertIs(record["reserved"], True)
+        self.assertEqual(record["recorder_ino"], flight.guard._held_ino)
+        self.assertEqual(record["pinned_store"], "hos009-score-single-use.json")
 
     def test_client_and_multipart_use_the_same_single_flight(self) -> None:
         self.exchange("GET", None)
@@ -479,6 +485,168 @@ class FlightTest(unittest.TestCase):
             el_guard.before_spend = real
             el_guard.release_lock()
         self.assertEqual(seen, ["/v1/text-to-speech/voice"])
+
+    def test_fragment_and_noncanonical_music_make_no_post(self) -> None:
+        """Legacy entries must not POST music variants while the pause bypass is on."""
+        os.environ["EL_GUARD_OFF"] = "1"
+        previous_desk = os.environ.get("HOS_DESK_DIR")
+        os.environ["HOS_DESK_DIR"] = str(self.desk.root)
+        self.desk.pause.write_text("paused", encoding="utf-8")
+        self.assertIs(flight.ACTIVATION_AUTHORIZED, False)
+        posts: list[tuple[str, str]] = []
+        spends: list[str] = []
+
+        class Response:
+            status = 200
+            headers = {}
+
+            def read(self) -> bytes:
+                return b"{}"
+
+            def __enter__(self):
+                return self
+
+            def __exit__(self, *_args) -> bool:
+                return False
+
+        def spy_open(req, **_kwargs):
+            posts.append((req.get_method(), req.selector.split("?", 1)[0]))
+            return Response()
+
+        real_spend = el_guard.before_spend
+
+        def spy_spend(path, data, fetch):
+            spends.append(path)
+            return real_spend(path, data, fetch)
+
+        urllib.request.urlopen = spy_open
+        el_guard.before_spend = spy_spend
+        variants = (
+            "/v1/music#fragment",
+            "/v1/music#",
+            "/v1/music/",
+            "/v1/music/extra",
+            "/v1/music?other=1",
+            "/v1/music?output_format=mp3_44100_128#frag",
+            "/v1/music?",
+            "/v1/music%23fragment",
+            "https://api.elevenlabs.io/v1/music#fragment",
+        )
+        try:
+            for path in variants:
+                for entry in ("request", "multipart_post"):
+                    before_posts = len(posts)
+                    before_spends = len(spends)
+                    with self.assertRaises(flight.guard.GuardRefused) as caught:
+                        if entry == "request":
+                            el_client.request(
+                                "POST", path, "fixture", "api_key", data={}, query=""
+                            )
+                        else:
+                            el_client.multipart_post(
+                                path, "fixture", "api_key", fields={}, files=[]
+                            )
+                    self.assertEqual(caught.exception.code, "malformed_request")
+                    self.assertEqual(posts[before_posts:], [])
+                    self.assertEqual(spends[before_spends:], [])
+            with self.assertRaises(flight.guard.GuardRefused) as caught:
+                el_client.request(
+                    "POST",
+                    "/v1/music",
+                    "fixture",
+                    "api_key",
+                    data={},
+                    query="output_format=wav",
+                )
+            self.assertEqual(caught.exception.code, "malformed_request")
+            self.assertFalse(any(selector == "/v1/music" for _method, selector in posts))
+            self.assertEqual(spends, [])
+
+            el_client.request(
+                "POST",
+                "/v1/text-to-speech/voice",
+                "fixture",
+                "api_key",
+                data={"text": "Hi"},
+            )
+            self.assertIn(("POST", "/v1/text-to-speech/voice"), posts)
+            self.assertEqual(spends, ["/v1/text-to-speech/voice"])
+            upload = self.desk.root / "note.mp3"
+            upload.write_bytes(b"fixture")
+            el_client.multipart_post(
+                "/v1/speech-to-text",
+                "fixture",
+                "api_key",
+                fields={},
+                files=[("file", upload)],
+            )
+            self.assertIn(("POST", "/v1/speech-to-text"), posts)
+            self.assertIn("/v1/speech-to-text", spends)
+            self.assertFalse(any(selector == "/v1/music" for _method, selector in posts))
+        finally:
+            el_guard.before_spend = real_spend
+            el_guard.release_lock()
+            el_guard._last.clear()
+            if previous_desk is None:
+                os.environ.pop("HOS_DESK_DIR", None)
+            else:
+                os.environ["HOS_DESK_DIR"] = previous_desk
+
+    def test_failed_transport_reserves_one_read(self) -> None:
+        def failed(method: str, body: bytes | None):
+            self.calls.append((method, body))
+            self.assertEqual(os.fstat(flight.guard._held_fd).st_ino, flight.guard._held_ino)
+            raise OSError("synthetic connection failure")
+
+        flight._read_one_response = failed
+        with self.assertRaises(OSError):
+            flight.from_generator(prompt=PROMPT, length_ms=180_000)
+        reserved = self._reservation()
+        self.assertTrue(reserved.is_file())
+        kept = reserved.read_bytes()
+        record = json.loads(kept.decode("utf-8"))
+        self.assertEqual(record["recorder_ino"], flight.guard._held_ino)
+        self.assertEqual(record["method"], "GET")
+        self.assertFalse(self.desk.store.exists())
+        self.assertEqual([item[0] for item in self.calls], ["GET"])
+        held = flight.guard._held_fd
+        ino = flight.guard._held_ino
+        with self.assertRaises(flight.guard.GuardRefused) as again:
+            flight.from_generator(prompt=PROMPT, length_ms=180_000)
+        self.assertEqual(again.exception.code, "read_reserved")
+        self.assertEqual([item[0] for item in self.calls], ["GET"])
+        self.assertEqual(reserved.read_bytes(), kept)
+        self.assertEqual(flight.guard._held_fd, held)
+        self.assertEqual(os.fstat(held).st_ino, ino)
+        self.assertEqual(self._child(), "read_reserved")
+        self.assertEqual([item[0] for item in self.calls], ["GET"])
+        self.assertEqual(reserved.read_bytes(), kept)
+        self.assertFalse(self.desk.store.exists())
+
+    def test_untrusted_receipt_reserves_one_read(self) -> None:
+        def bad(method: str, body: bytes | None):
+            self.calls.append((method, body))
+            if method != "GET":
+                raise AssertionError("music POST")
+            return 200, None, b""
+
+        flight._read_one_response = bad
+        with self.assertRaises(flight.guard.GuardRefused) as caught:
+            flight.from_generator(prompt=PROMPT, length_ms=180_000)
+        self.assertEqual(caught.exception.code, "untrusted_receipt")
+        kept = self._reservation().read_bytes()
+        self.assertFalse(self.desk.store.exists())
+        self.assertEqual([item[0] for item in self.calls], ["GET"])
+        with self.assertRaises(flight.guard.GuardRefused) as again:
+            flight.from_generator(prompt=PROMPT, length_ms=180_000)
+        self.assertEqual(again.exception.code, "read_reserved")
+        self.assertEqual([item[0] for item in self.calls], ["GET"])
+        self.assertEqual(self._reservation().read_bytes(), kept)
+        self.assertEqual(self._child(), "read_reserved")
+        self.assertEqual([item[0] for item in self.calls], ["GET"])
+
+    def _reservation(self):
+        return self.desk.root / "elevenlabs" / flight.READ_ONCE_NAME
 
     def _child(self) -> str:
         script = (

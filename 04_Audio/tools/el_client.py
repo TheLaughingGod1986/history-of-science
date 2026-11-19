@@ -15,10 +15,65 @@ import el_guard
 from el_auth import auth_headers
 
 API = "https://api.elevenlabs.io"
+_CANONICAL_MUSIC_QUERY = "output_format=mp3_44100_128"
 
 
-def _music_path(path: str) -> bool:
-    return path.split("?", 1)[0] == "/v1/music"
+def _music_route(path: str, query: str = "") -> str:
+    """Classify a client path as flight, reject, or other.
+
+    flight is only the exact path /v1/music, with no fragment and with an
+    empty query or output_format=mp3_44100_128. A fragment, a trailing slash,
+    a suffix, an absolute URL, or any other query is reject. Speech and Scribe
+    stay other, so the legacy client still handles them.
+    """
+    if type(path) is not str or type(query) is not str:
+        return "other"
+    had_fragment = "#" in path
+    bare = path.split("#", 1)[0]
+    had_query = "?" in bare
+    in_query = ""
+    if had_query:
+        bare, in_query = bare.split("?", 1)
+    absolute = "://" in bare
+    if absolute:
+        after = bare.split("://", 1)[1]
+        slash = after.find("/")
+        bare = after[slash:] if slash >= 0 else "/"
+    music = bare == "/v1/music" or bare.startswith("/v1/music/") or (
+        bare.startswith("/v1/music")
+        and len(bare) > len("/v1/music")
+        and not bare[len("/v1/music")].isalnum()
+    )
+    if not music:
+        return "other"
+    if absolute or had_fragment or bare != "/v1/music":
+        return "reject"
+    if had_query and query:
+        return "reject"
+    if had_query and in_query == "":
+        return "reject"
+    effective = in_query if had_query else query
+    if effective not in ("", _CANONICAL_MUSIC_QUERY):
+        return "reject"
+    return "flight"
+
+
+def _music_flight_query(path: str, query: str = "") -> str | None:
+    """Return the query to hand the disabled flight, or None if this is not music.
+
+    A noncanonical music form raises before either legacy entry can send it.
+    """
+    route = _music_route(path, query)
+    if route == "other":
+        return None
+    if route != "flight":
+        from hos009_score_flight import guard
+
+        raise guard.GuardRefused("malformed_request")
+    head = path.split("#", 1)[0]
+    if "?" in head:
+        return head.split("?", 1)[1]
+    return query
 
 
 def request(
@@ -32,11 +87,13 @@ def request(
     accept: str = "application/json",
     timeout: int = 600,
 ) -> tuple[int, bytes, dict[str, str]]:
-    if method.upper() == "POST" and _music_path(path):
-        # One guarded flight. before_spend must not open its own subscription GET.
-        from hos009_score_flight import from_client
+    if method.upper() == "POST":
+        routed = _music_flight_query(path, query)
+        if routed is not None:
+            # Canonical music only. Fragments and other forms already raised.
+            from hos009_score_flight import from_client
 
-        return from_client(data=data, query=query)
+            return from_client(data=data, query=routed)
     url = f"{API}{path}"
     if query:
         url = f"{url}?{query}"
@@ -73,7 +130,8 @@ def multipart_post(
     files: list[tuple[str, Path]],
     timeout: int = 600,
 ) -> tuple[int, bytes]:
-    if _music_path(path):
+    routed = _music_flight_query(path)
+    if routed is not None:
         # Do not read the uploaded file and do not nest a subscription GET.
         from hos009_score_flight import from_multipart
 
