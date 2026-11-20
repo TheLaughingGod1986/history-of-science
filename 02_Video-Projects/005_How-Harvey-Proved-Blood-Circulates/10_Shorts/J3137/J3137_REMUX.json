@@ -1,0 +1,52 @@
+{
+  "job": "J3137",
+  "cuts": {
+    "s06": {
+      "source": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/J2230/hos_005_s06_blood_pressure_cuff_v04.mp4",
+      "source_sha256": "7fe460307b4723e6801a6274e3390ab41e20a324052f4f6880bd2ef6a13aef35",
+      "out": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/J3137/hos_005_s06_blood_pressure_cuff_v05.mp4",
+      "out_sha256": "13da54281f378d54f221135a67208b38a91673e9f655a2175403535b150b9733",
+      "duration_s": 23.1,
+      "vo": "/Users/benjaminoats/_desk/renders/J2230/s06_v04/vo_trimmed.wav",
+      "vo_sha256": "d1ddc07cc671fb849006da8f406898fe319f0176b0fe2e38ff67d7853ccaa15b",
+      "bed": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/05_Music/hos_005_s06_blood_pressure_cuff_v05_bed.wav",
+      "bed_sha256": "c525934087ebbc6370dc1e552cbc74a4f0088e6426c031e04192b8a7db83204f",
+      "bed_gain_db": -7.0,
+      "loudnorm": true,
+      "video_packet_md5_match": true,
+      "video_packet_md5": "MD5=ba33ba791df2cad17349ad3fde669fa9"
+    },
+    "s07": {
+      "source": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/J2230/hos_005_s07_heart_pulse_v04.mp4",
+      "source_sha256": "e94cbf4c5a548da3332aa7a29c439854e4d889eb346fe697b5c65079511c29df",
+      "out": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/J3137/hos_005_s07_heart_pulse_v05.mp4",
+      "out_sha256": "9efcf7b1d91ede4ef9f8d25783e358c92debde3c453f3d30211b9b09936c8fc1",
+      "duration_s": 25.1,
+      "vo": "/Users/benjaminoats/_desk/renders/J2230/s07_v04/vo_trimmed.wav",
+      "vo_sha256": "58367a3ba792ed20c914e709030ed0a082601c671254d3075e820418e7ab563f",
+      "bed": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/05_Music/hos_005_s07_heart_pulse_v05_bed.wav",
+      "bed_sha256": "c82707fd2df76739ae88dae63f4dae7a02febbd4b87ef076822453dda65d1ca7",
+      "bed_gain_db": -18.4,
+      "loudnorm": true,
+      "video_packet_md5_match": true,
+      "video_packet_md5": "MD5=bbe910890bfa769283afe656c0e3227b"
+    },
+    "s08": {
+      "source": "/Volumes/data/mac-mini-archive/2026-11-05/YouTube/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/hos_005_s08_capillaries_v01.mp4",
+      "source_sha256": "64f746e65721cc07f217af3816367c50696c7cfb93c878f625d22752798459c4",
+      "out": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/J3137/hos_005_s08_capillaries_v02.mp4",
+      "out_sha256": "f881784a652bb46af4db80a6faec37f0cfae86d088972c546ff25f71a50c063b",
+      "duration_s": 25.167,
+      "vo": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/J3137/stems/s08_vo_locked_lift.wav",
+      "vo_sha256": "264206ed13a71dc2b2a61a0da51bec62cab15a023e4a0e56c066aa686dd55d0a",
+      "bed": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/05_Music/hos_005_s08_capillaries_v02_bed.wav",
+      "bed_sha256": "1bb3257ef90e11c060a8fa34def477f4a364327a1b6f505b87c74d3d99a5f50c",
+      "bed_gain_db": -21.3,
+      "loudnorm": true,
+      "video_packet_md5_match": true,
+      "video_packet_md5": "MD5=d2e6d7d4f6d4ae150e9118fd477708e6",
+      "loudnorm_note": "Two-pass loudnorm to -14 LUFS, then +0.6 dB so the AAC master lands inside -14.5..-13.5. Picture packets unchanged.",
+      "open_gate": "FAIL first cut 4.50s, same as locked v01. Loudness passes. Blur-pad 8-10s is a warn on v01 too."
+    }
+  }
+}
