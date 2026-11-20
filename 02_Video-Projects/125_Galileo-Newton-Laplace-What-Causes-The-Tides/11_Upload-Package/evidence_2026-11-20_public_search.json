@@ -1,0 +1,231 @@
+{
+ "pulled": "2026-11-20",
+ "source": "YouTube GB search results and autocomplete; public, no login. Not vidIQ.",
+ "queries": {
+  "what causes the tides": {
+   "suggest": [
+    "what causes the tides",
+    "what causes the tides in the ocean",
+    "what causes tides neil degrasse",
+    "what causes tides on earth",
+    "what causes king tides",
+    "what causes low tides"
+   ],
+   "search": [
+    {
+     "id": "tcGEjzt_4is",
+     "title": "What Causes Tides?",
+     "channel": "NOAA SciJinks",
+     "views": "1,112,070 views",
+     "age": "5 yr ago",
+     "length": "3:34"
+    },
+    {
+     "id": "3RdkXs8BibE",
+     "title": "Ocean's Tides Explained",
+     "channel": "AtomicSchool",
+     "views": "2,061,609 views",
+     "age": "8 yr ago",
+     "length": "5:11"
+    },
+    {
+     "id": "bPhhYhN0FAc",
+     "title": "How the tides REALLY work",
+     "channel": "Waterlust",
+     "views": "2,501,257 views",
+     "age": "4 yr ago",
+     "length": "14:02"
+    },
+    {
+     "id": "9JxpJhWQXds",
+     "title": "What Causes Tides?",
+     "channel": "Next Generation Science",
+     "views": "114,302 views",
+     "age": "3 yr ago",
+     "length": "1:42"
+    },
+    {
+     "id": "gftT3wHJGtg",
+     "title": "The Tides",
+     "channel": "minutephysics",
+     "views": "1,791,440 views",
+     "age": "14 yr ago",
+     "length": "1:59"
+    },
+    {
+     "id": "4UZxzyOVJ8Q",
+     "title": "Why do we have tides? - Forces of Nature with Brian Cox: Episode 2 - BBC",
+     "channel": "BBC",
+     "views": "203,468 views",
+     "age": "10 yr ago",
+     "length": "1:56"
+    },
+    {
+     "id": "dBwNadry-TU",
+     "title": "Neil deGrasse Tyson Explains the Tides",
+     "channel": "StarTalk",
+     "views": "2,976,755 views",
+     "age": "8 yr ago",
+     "length": "13:17"
+    },
+    {
+     "id": "mpRJhhbKLFc",
+     "title": "Why are there two tides a day? - Elise Cutts",
+     "channel": "TED-Ed",
+     "views": "605,386 views",
+     "age": "1 yr ago",
+     "length": "5:21"
+    }
+   ]
+  },
+  "how do tides work": {
+   "suggest": [
+    "how do tides work",
+    "how do tides work ted ed",
+    "how do tides work neil degrasse tyson",
+    "how do tides work with the moon",
+    "how does tidal work",
+    "how do waves work",
+    "how do waves work hair",
+    "how do waves work in the ocean",
+    "how do waves work physics",
+    "how do waves work in aotr"
+   ],
+   "search": [
+    {
+     "id": "bPhhYhN0FAc",
+     "title": "How the tides REALLY work",
+     "channel": "Waterlust",
+     "views": "2,501,261 views",
+     "age": "4 yr ago",
+     "length": "14:02"
+    },
+    {
+     "id": "3RdkXs8BibE",
+     "title": "Ocean's Tides Explained",
+     "channel": "AtomicSchool",
+     "views": "2,061,609 views",
+     "age": "8 yr ago",
+     "length": "5:11"
+    },
+    {
+     "id": "5ohDG7RqQ9I",
+     "title": "How Do Tides Work?",
+     "channel": "BrainStuff - HowStuffWorks",
+     "views": "1,651,953 views",
+     "age": "12 yr ago",
+     "length": "3:39"
+    },
+    {
+     "id": "tcGEjzt_4is",
+     "title": "What Causes Tides?",
+     "channel": "NOAA SciJinks",
+     "views": "1,112,070 views",
+     "age": "5 yr ago",
+     "length": "3:34"
+    },
+    {
+     "id": "8bSXuxjIACU",
+     "title": "How does the Moon control Earth's tides?  |  Stargazing  |  ABC Science",
+     "channel": "ABC Science",
+     "views": "255,961 views",
+     "age": "6 yr ago",
+     "length": "2:29"
+    },
+    {
+     "id": "4UZxzyOVJ8Q",
+     "title": "Why do we have tides? - Forces of Nature with Brian Cox: Episode 2 - BBC",
+     "channel": "BBC",
+     "views": "203,468 views",
+     "age": "10 yr ago",
+     "length": "1:56"
+    },
+    {
+     "id": "mpRJhhbKLFc",
+     "title": "Why are there two tides a day? - Elise Cutts",
+     "channel": "TED-Ed",
+     "views": "605,386 views",
+     "age": "1 yr ago",
+     "length": "5:21"
+    },
+    {
+     "id": "6IyRE9azhwQ",
+     "title": "How Do Tides Work?",
+     "channel": "UNSW",
+     "views": "162,485 views",
+     "age": "15 yr ago",
+     "length": "3:37"
+    }
+   ]
+  },
+  "What Causes the Tides? (Galileo Got It Wrong)": {
+   "suggest": [],
+   "search": [
+    {
+     "id": "tcGEjzt_4is",
+     "title": "What Causes Tides?",
+     "channel": "NOAA SciJinks",
+     "views": "1,112,070 views",
+     "age": "5 yr ago",
+     "length": "3:34"
+    },
+    {
+     "id": "3RdkXs8BibE",
+     "title": "Ocean's Tides Explained",
+     "channel": "AtomicSchool",
+     "views": "2,061,609 views",
+     "age": "8 yr ago",
+     "length": "5:11"
+    },
+    {
+     "id": "-pcQz5_rO00",
+     "title": "Galileo: The Motion of the Waters. Right About the Earth, Wrong About the Tides",
+     "channel": "Kent-Science",
+     "views": "13 views",
+     "age": "3 days ago",
+     "length": "18:28"
+    },
+    {
+     "id": "gftT3wHJGtg",
+     "title": "The Tides",
+     "channel": "minutephysics",
+     "views": "1,791,474 views",
+     "age": "14 yr ago",
+     "length": "1:59"
+    },
+    {
+     "id": "9oocQWEAHB0",
+     "title": "What Actually Causes the Tides?",
+     "channel": "Curiosa",
+     "views": "515 views",
+     "age": "12 days ago",
+     "length": "6:57"
+    },
+    {
+     "id": "c4b5h0Voow0",
+     "title": "What causes high tides on opposite sides of the earth? | Dance of the Tides",
+     "channel": "Exploratorium",
+     "views": "50,276 views",
+     "age": "8 yr ago",
+     "length": "1:40"
+    },
+    {
+     "id": "dBwNadry-TU",
+     "title": "Neil deGrasse Tyson Explains the Tides",
+     "channel": "StarTalk",
+     "views": "2,976,755 views",
+     "age": "8 yr ago",
+     "length": "13:17"
+    },
+    {
+     "id": "pwChk4S99i4",
+     "title": "What Physics Teachers Get Wrong About Tides! | Space Time | PBS Digital Studios",
+     "channel": "PBS Space Time",
+     "views": "2,133,846 views",
+     "age": "11 yr ago",
+     "length": "15:21"
+    }
+   ]
+  }
+ }
+}

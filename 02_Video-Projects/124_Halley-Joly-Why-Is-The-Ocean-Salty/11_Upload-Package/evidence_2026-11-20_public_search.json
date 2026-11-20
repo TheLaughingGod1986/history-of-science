@@ -1,0 +1,168 @@
+{
+ "pulled": "2026-11-20",
+ "source": "YouTube GB search results and autocomplete; public, no login. Not vidIQ.",
+ "queries": {
+  "why is the ocean salty": {
+   "suggest": [
+    "why is the ocean salty",
+    "why is the ocean salty mystery doug",
+    "why is the ocean salty and rivers are not",
+    "why is the ocean salty ocean salinity explained",
+    "why is the sea salty",
+    "why is the sea salty facts and figures",
+    "why is the sea salty story",
+    "why is the water salty",
+    "why is the ocean water salty",
+    "why is the ocean so salty"
+   ],
+   "search": [
+    {
+     "id": "SPF6cSan6tc",
+     "title": "TIL: Why Is the Ocean Salty? | Today I Learned",
+     "channel": "National Geographic",
+     "views": "314,110 views",
+     "age": "11 yr ago",
+     "length": "1:16"
+    },
+    {
+     "id": "_yH3BntZCSI",
+     "title": "Why Is Ocean Water Salty? | Earth's Ocean | Dr Binocs Show | Peekaboo Kidz",
+     "channel": "Peekaboo Kidz",
+     "views": "4,666,577 views",
+     "age": "5 yr ago",
+     "length": "4:58"
+    },
+    {
+     "id": "_FIh5_CQ2R0",
+     "title": "Why Is The Ocean Salty? | COLOSSAL QUESTIONS",
+     "channel": "Colossal Cranium",
+     "views": "1,772,125 views",
+     "age": "7 yr ago",
+     "length": "2:47"
+    },
+    {
+     "id": "GOZ1UQ37GZ4",
+     "title": "Why Is the Ocean So Salty? | Explained Simply!",
+     "channel": "WhyHub",
+     "views": "5,308 views",
+     "age": "1 yr ago",
+     "length": "2:39"
+    },
+    {
+     "id": "FGPFzHw-NDo",
+     "title": "Why is the ocean salty?",
+     "channel": "Mystery Science",
+     "views": "1,370,219 views",
+     "age": "7 yr ago",
+     "length": "6:05"
+    },
+    {
+     "id": "WX5_U2RckIA",
+     "title": "Why Is the Ocean Salty? Ocean Salinity Explained",
+     "channel": "ByteWise",
+     "views": "6,067 views",
+     "age": "2 yr ago",
+     "length": "6:12"
+    },
+    {
+     "id": "lNJ8OxqN52c",
+     "title": "கடல் நீர் ஏன் உப்பாக இருக்கிறது | Why Is Ocean Water Salty | Kids Learning Video | Dr. Binocs Tamil",
+     "channel": "Dr. Binocs Thamil",
+     "views": "400,696 views",
+     "age": "4 yr ago",
+     "length": "4:55"
+    },
+    {
+     "id": "L9dpXa_Iemo",
+     "title": "Why Is The Ocean Salty?",
+     "channel": "Seeker",
+     "views": "316,669 views",
+     "age": "11 yr ago",
+     "length": "2:57"
+    }
+   ]
+  },
+  "why is the sea salty": {
+   "suggest": [
+    "why is the sea salty",
+    "why is the sea salty story",
+    "why is the sea salty listening",
+    "why is the beach salty",
+    "why seawater is salty",
+    "why is the sea salt",
+    "why is the ocean water salty",
+    "why is the dead sea so salty"
+   ],
+   "search": []
+  },
+  "Why Is the Ocean Salty? (The Clock That Got Earth's Age Wrong)": {
+   "suggest": [],
+   "search": [
+    {
+     "id": "_yH3BntZCSI",
+     "title": "Why Is Ocean Water Salty? | Earth's Ocean | Dr Binocs Show | Peekaboo Kidz",
+     "channel": "Peekaboo Kidz",
+     "views": "4,666,577 views",
+     "age": "5 yr ago",
+     "length": "4:58"
+    },
+    {
+     "id": "SPF6cSan6tc",
+     "title": "TIL: Why Is the Ocean Salty? | Today I Learned",
+     "channel": "National Geographic",
+     "views": "314,120 views",
+     "age": "11 yr ago",
+     "length": "1:16"
+    },
+    {
+     "id": "jLPpvJocrkE",
+     "title": "Why Is the Sea Salty When Rivers Aren't? | Squeaky Explains the World ep 05",
+     "channel": "WhatDStuff",
+     "views": "93 views",
+     "age": "1 mo ago",
+     "length": "4:26"
+    },
+    {
+     "id": "UommUoUDqdI",
+     "title": "Why Is the Ocean Salty? What Would Happen If It Were Freshwater? Bigger Than You Think!!",
+     "channel": "Josef Specter",
+     "views": "9 views",
+     "age": "16 hr ago",
+     "length": "7:28"
+    },
+    {
+     "id": "kEEYbBovgPw",
+     "title": "Where Did All the Ocean's Salt Come From?",
+     "channel": "Geonauta",
+     "views": "2 views",
+     "age": "7 days ago",
+     "length": "12:56"
+    },
+    {
+     "id": "pT7jZRFcGfo",
+     "title": "Where Does the Ocean's Salt Come From?",
+     "channel": "Napkin",
+     "views": "219 views",
+     "age": "1 mo ago",
+     "length": "9:01"
+    },
+    {
+     "id": "SRvIt3hx2h0",
+     "title": "Why Is the Sea Salty? The Answer Is Stranger Than You Think",
+     "channel": "Mystery Universe",
+     "views": "199 views",
+     "age": "2 wk ago",
+     "length": "10:49"
+    },
+    {
+     "id": "Gj0LqmNsrCc",
+     "title": "Why The Ocean Needs Salt",
+     "channel": "MinuteEarth",
+     "views": "355,017 views",
+     "age": "4 yr ago",
+     "length": "2:47"
+    }
+   ]
+  }
+ }
+}
