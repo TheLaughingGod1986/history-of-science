@@ -1594,6 +1594,7 @@ class SharedFlowAccounting:
         if not isinstance(by, str) or not by.strip():
             raise GuardError("spend export needs a recorder identity")
         target = Path(target).resolve()
+        require_active_spend_destination(target)
         if target == self.path.resolve():
             raise GuardError("spend destination aliases the account ledger")
         rows = []
@@ -2111,8 +2112,58 @@ def write_receipt(path: Path, row_ids: list[str], entries: list[dict]) -> None:
     immutable_bytes(path, (json.dumps(payload, indent=2, sort_keys=True) + "\n").encode())
 
 
+def active_spend_repository() -> str | None:
+    """Read only the local cutover identity; absent preserves pre-move behavior.
+
+    Kept in each standalone film runner so NAS copies need no engine import.
+    The cross-runner tests keep this small boundary identical (J3012).
+    """
+    marker = Path.home() / "_desk/state/active-studio.json"
+    try:
+        raw = marker.read_text()
+    except FileNotFoundError:
+        return None
+    except OSError:
+        raise GuardError("cannot read active studio marker") from None
+    try:
+        value = json.loads(raw)
+        repo = value["github"]
+        if value.get("version") != 1 or not isinstance(repo, str) or not re.fullmatch(
+            r"[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+", repo
+        ):
+            raise ValueError()
+        return repo
+    except (ValueError, KeyError, TypeError):
+        raise GuardError("invalid active studio marker") from None
+
+
+def require_active_spend_destination(target: Path) -> None:
+    """Refuse stale or unknown ledger roots before any destination mutation."""
+    expected = active_spend_repository()
+    if expected is None:
+        return
+    target = Path(target).resolve()
+    if tuple(target.parts[-3:]) != ("05_Analytics", "ai_spend", "ledger.jsonl"):
+        raise GuardError("spend destination is not the active studio ledger")
+    try:
+        registry = json.loads((target.parents[2] / "channels/channels.json").read_text())
+        if registry["studio"]["github"] != expected:
+            raise ValueError()
+    except (OSError, ValueError, KeyError, TypeError):
+        raise GuardError("spend destination is not the active studio ledger") from None
+
+
 def canonical_spend_ledger() -> Path:
-    return Path.home() / "YouTube/orbit-with-ben/05_Analytics/ai_spend/ledger.jsonl"
+    """Select the existing ledger until cutover, then validate the engine root."""
+    if active_spend_repository() is None:
+        return Path.home() / "YouTube/orbit-with-ben/05_Analytics/ai_spend/ledger.jsonl"
+    engine = Path(os.environ.get("STUDIO_REPO", str(Path.home() / "YouTube/studio")))
+    if not engine.is_absolute():
+        raise GuardError("active studio checkout must be absolute")
+    target = engine / "05_Analytics/ai_spend/ledger.jsonl"
+    require_active_spend_destination(target)
+    return target.resolve()
+
 
 
 def production_batch_paths(
