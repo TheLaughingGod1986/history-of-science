@@ -1,0 +1,17 @@
+{
+  "film": "009_The-Falling-Moon-Gravity",
+  "job": "J3234",
+  "bed": "hos_009_wonder_v03_synth.wav",
+  "source": "own synthesis (_build_hos009_wonder_v03_synth.py), \u00a30, no ElevenLabs, no samples",
+  "prompt": "Original instrumental opening underscore exclusively for HOS 009 The Falling Moon. 17th-century D-minor chamber texture (A4=440): Karplus-Strong plucked gut-string lute arpeggios over warm multi-voice bowed viols, moving modal harmony every two or three bars, voices overlapping from the first sample with no silent rest. At 84.44 seconds the colour warms into a Woolsthorpe orchard. From 175.28 to 178.28 a quiet sustained D4/A4 open fifth hands off into the retained D-minor harpsichord teach cue. Leave space for British narration.\nPace: 60-66 BPM.\nNOT any earlier HOS or Orbit bed, hos_009_wonder_v01, hos_009_wonder_v02, jupiter-music.mp3, a static bass-drone opening, cosmic shimmer, piano space-documentary music, solo woodwind workshop waltz, borrowed melody, named-composer imitation, heroic brass, horror, vocals, lyrics, pop drums, EDM or comedy stings.",
+  "duration_s": 180.0,
+  "used_window_s": [
+    0.0,
+    178.28
+  ],
+  "bpm": 63.0,
+  "key": "D minor",
+  "a4_hz": 440,
+  "sha256": "41af45be88bcfd07af5ca7a1a03d8f691b7fcba0262a533b84a63b23c4c6f712",
+  "integrated_lufs": -16.0
+}

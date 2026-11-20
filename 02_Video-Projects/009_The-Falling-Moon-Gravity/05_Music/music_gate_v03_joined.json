@@ -1,0 +1,90 @@
+{
+  "verdict": "PASS",
+  "bed": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/05_Music/hos_009_score_joined_v03.wav",
+  "seconds": 535.3,
+  "bpm": 133.3,
+  "brief_pace": "Pace: 60-72 BPM",
+  "fail": [],
+  "warn": [],
+  "waived": [],
+  "matches": [],
+  "waiver": null,
+  "rules": {
+    "similarity_fail": 0.8,
+    "compared_seconds": 300
+  },
+  "comparison_count": 94,
+  "max_similarity": 0.3868,
+  "top_similarities": [
+    {
+      "similarity": 0.3868
+    },
+    {
+      "similarity": 0.3222
+    },
+    {
+      "similarity": 0.3039
+    },
+    {
+      "similarity": 0.3024
+    },
+    {
+      "similarity": 0.2945
+    },
+    {
+      "similarity": 0.2945
+    },
+    {
+      "similarity": 0.2907
+    },
+    {
+      "similarity": 0.285
+    }
+  ],
+  "unreadable_warn_count": 0,
+  "library_roots": [
+    {
+      "root": "mini-local/History Of Science/02_Video-Projects",
+      "state": "listed",
+      "files": 17
+    },
+    {
+      "root": "mini-local/orbit-with-ben/02_Video-Projects",
+      "state": "listed",
+      "files": 7
+    },
+    {
+      "root": "studio-live/History Of Science/02_Video-Projects",
+      "state": "listed",
+      "files": 16
+    },
+    {
+      "root": "studio-live/orbit-with-ben/02_Video-Projects",
+      "state": "listed",
+      "files": 21
+    },
+    {
+      "root": "mac-mini-archive/YouTube",
+      "state": "listed",
+      "files": 18
+    },
+    {
+      "root": "mac-mini-archive/orbit-with-ben",
+      "state": "listed",
+      "files": 0
+    },
+    {
+      "root": "mac-mini-archive/youtube-staging",
+      "state": "listed",
+      "files": 0
+    },
+    {
+      "root": "uat-materialized",
+      "state": "listed",
+      "files": 15,
+      "replaces": "icloud HOS UAT + OWB UAT stubs"
+    }
+  ],
+  "music_gate_sha256": "62b5159f95598eaca5256b30ba66144812bad97dc86fd0c9de4618e4a1dd5385",
+  "waiver_used": false
+}
