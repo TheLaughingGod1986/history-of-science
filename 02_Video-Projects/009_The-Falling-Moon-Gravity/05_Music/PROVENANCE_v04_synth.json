@@ -1,0 +1,209 @@
+{
+  "job": "J3239",
+  "scope_job": "J3236",
+  "film": "HOS:009",
+  "cash_spent_gbp": 0,
+  "subscription_credits": 0,
+  "account_gets": 0,
+  "elevenlabs_posts": 0,
+  "method": "deterministic pure Python/NumPy warm low-harmonic pads and soft wooden harp",
+  "activation_authorized": false,
+  "preserved_locks": {
+    "hos_009_teach_v01.mp3": "4c1f0a17364ad5ba96fdd2d42730b2f857d19017fab52b221701bd4e15d07bb1",
+    "hos_009_wonder_v01.mp3": "95dfe11d7c21c9347e9b962ef2f9ecd35116f2fce60df6f123578c11a1debaf0",
+    "hos_009_wonder_v02.mp3": "b38ae8922e8d633b9f085a8bb9634c96d889a9293fcab277f7a3a23f4839d148",
+    "hos_009_score_joined_v01.wav": "d7f5bf3d7553d7c611a913e93602b8ec83419821059294ddeaee32269a4f9572",
+    "hos_009_score_joined_v02.wav": "6fc8628a96b8267eaf5be6c19d7e30d9e473eb86c886ee3106c3219b375b1f68",
+    "VO_TAKES_KEEP.json": "530743c507af8d5f9049179d4e9d380b5c1b8aca4f180ada133d0b673f5925e0",
+    "VO_RETIME_v01.json": "75a2e7afa1d822b04371511c81a52082e1b80713b0e59711702cfd05fe45a972",
+    "hos_009_wonder_v03_synth.wav": "41af45be88bcfd07af5ca7a1a03d8f691b7fcba0262a533b84a63b23c4c6f712",
+    "hos_009_score_joined_v03.wav": "afeba8079e247bca8f27960dd7fc7ed3876deda5bbc652f464f0fdc3ef6f4a45",
+    "_build_hos009_wonder_v03_synth.py": "bd8e20d98f87fe4253d4e4feb05cd01e44c2d904ad08c09fe9d581fa3ed9bb63",
+    "hos009_score_flight.py": "43e71321756bc56812264afd64b2946a8222f38c6bea6987376a83a8eafc922d"
+  },
+  "teach_unchanged_sha256": "4c1f0a17364ad5ba96fdd2d42730b2f857d19017fab52b221701bd4e15d07bb1",
+  "local_files": [
+    {
+      "file": "_build_hos009_score_v04_synth.py",
+      "sha256": "6908e93a92bfbed88ede0aafb8d65b683b294a199cbdbaf5a7e269e5ffd231cc",
+      "bytes": 37138
+    },
+    {
+      "file": "hos_009_score_v04_synth.wav",
+      "sha256": "151ba46acdf7d4395b34e105530bd077c26f6eb92832f9a1f00e1551ca88f58d",
+      "bytes": 102783404
+    },
+    {
+      "file": "hos_009_score_v04_synth_plan.json",
+      "sha256": "d7104194b7a61d5c4d9afee223a66af10adc7c01cda5ce949e0ed7b6406c799e",
+      "bytes": 2139
+    },
+    {
+      "file": "CONTINUITY_v04_synth.json",
+      "sha256": "70cfa978dd5d57182a1dc97cbd93d6ad4f7ec590c2d81a24dc2b8f98cb7cf0cc",
+      "bytes": 32033
+    },
+    {
+      "file": "music_gate_v04_synth.json",
+      "sha256": "d5c460d4f64ebd46d161d6f9e3b7e075f000bd864197bdc9ad831322bf9a8423",
+      "bytes": 1996
+    },
+    {
+      "file": "hos_009_stem_part01_the_falling_moon_v04.wav",
+      "sha256": "af454d18f416614dd88a29c4354e8cce231c5bf45726c22afb8fb4cd7b116e36",
+      "bytes": 16212524
+    },
+    {
+      "file": "hos_009_stem_part02_an_apple_in_a_plague_year_v04.wav",
+      "sha256": "40291aebb022cf971c655c38c14b17499b6ba83b6f613f41ecc13630b3b00b97",
+      "bytes": 17729324
+    },
+    {
+      "file": "hos_009_stem_part03_the_cannon_on_the_mountain_v04.wav",
+      "sha256": "4329c1a9c61c4c7b98047301828cf3c9241536cfdddde0e1e47626afb85b6435",
+      "bytes": 16009004
+    },
+    {
+      "file": "hos_009_stem_part04_the_moon_test_v04.wav",
+      "sha256": "22043d4088db544d16a946faabd23283a0bf988516f85f72395e8997e16f29f5",
+      "bytes": 25670444
+    },
+    {
+      "file": "hos_009_stem_part05_falling_around_the_world_v04.wav",
+      "sha256": "c18c52da80456074e2312911d14f68126c9eafbc5a8c81ddf6b9a2fd0830dd64",
+      "bytes": 27162284
+    },
+    {
+      "file": "audio_review_v04_synth/hos_009_reference_endpoint_526s_v04.wav",
+      "sha256": "bbfe70bc2c6ea8b38c8cddd8b3808f620a34985ddfc5298e06b080db138392c8",
+      "bytes": 100992044
+    },
+    {
+      "file": "audio_review_v04_synth/hos_009_reference_mix_0_518s40_v04.wav",
+      "sha256": "c5c3dcb1711ca0bf0f331907a36dffbd72027fcc4a92420434a66a860da7c28b",
+      "bytes": 99532844
+    },
+    {
+      "file": "audio_review_v04_synth/hos_009_tail_518s40_v04.wav",
+      "sha256": "1ff71d7124e670b9fc0d6b7ed9288160e31b733b66253af2ad2b523abbc428d2",
+      "bytes": 3250604
+    },
+    {
+      "file": "audio_review_v04_synth/hos_009_transition_078_092_part2_mix_v04.wav",
+      "sha256": "50b1460185339735cdbcc214694a93c45793892d2dc05634f952b4975a6ad45a",
+      "bytes": 2688044
+    },
+    {
+      "file": "audio_review_v04_synth/hos_009_transition_168_186_bed_v04.wav",
+      "sha256": "60926b59351bee111d0363684524e21bdeccb51cee4ebaeebda300dba60da5e7",
+      "bytes": 3456044
+    },
+    {
+      "file": "audio_review_v04_synth/hos_009_transition_168_186_mix_v04.wav",
+      "sha256": "a95c9e6756ad44f494f484f236e27f3934184b045fc8009f3d32ded28b8f7627",
+      "bytes": 3456044
+    },
+    {
+      "file": "audio_review_v04_synth/hos_009_transition_386_402_part5_mix_v04.wav",
+      "sha256": "9f8a253bcd106fdf83e976c75839f170c45109036508150378d6898c0db8fbff",
+      "bytes": 3072044
+    }
+  ],
+  "ear_review_pass_claimed": false,
+  "score_accepted": false,
+  "nas_parity": {
+    "nas": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/05_Music",
+    "files": [
+      {
+        "file": "_build_hos009_score_v04_synth.py",
+        "sha256": "6908e93a92bfbed88ede0aafb8d65b683b294a199cbdbaf5a7e269e5ffd231cc",
+        "bytes": 37138
+      },
+      {
+        "file": "hos_009_score_v04_synth.wav",
+        "sha256": "151ba46acdf7d4395b34e105530bd077c26f6eb92832f9a1f00e1551ca88f58d",
+        "bytes": 102783404
+      },
+      {
+        "file": "hos_009_score_v04_synth_plan.json",
+        "sha256": "d7104194b7a61d5c4d9afee223a66af10adc7c01cda5ce949e0ed7b6406c799e",
+        "bytes": 2139
+      },
+      {
+        "file": "CONTINUITY_v04_synth.json",
+        "sha256": "70cfa978dd5d57182a1dc97cbd93d6ad4f7ec590c2d81a24dc2b8f98cb7cf0cc",
+        "bytes": 32033
+      },
+      {
+        "file": "music_gate_v04_synth.json",
+        "sha256": "d5c460d4f64ebd46d161d6f9e3b7e075f000bd864197bdc9ad831322bf9a8423",
+        "bytes": 1996
+      },
+      {
+        "file": "PROVENANCE_v04_synth.json",
+        "sha256": "a4a9a3f7c6f828dce77b7ef816669c12f485aa89a9439cf0d1d996a7865a8f66",
+        "bytes": 4785
+      },
+      {
+        "file": "hos_009_stem_part01_the_falling_moon_v04.wav",
+        "sha256": "af454d18f416614dd88a29c4354e8cce231c5bf45726c22afb8fb4cd7b116e36",
+        "bytes": 16212524
+      },
+      {
+        "file": "hos_009_stem_part02_an_apple_in_a_plague_year_v04.wav",
+        "sha256": "40291aebb022cf971c655c38c14b17499b6ba83b6f613f41ecc13630b3b00b97",
+        "bytes": 17729324
+      },
+      {
+        "file": "hos_009_stem_part03_the_cannon_on_the_mountain_v04.wav",
+        "sha256": "4329c1a9c61c4c7b98047301828cf3c9241536cfdddde0e1e47626afb85b6435",
+        "bytes": 16009004
+      },
+      {
+        "file": "hos_009_stem_part04_the_moon_test_v04.wav",
+        "sha256": "22043d4088db544d16a946faabd23283a0bf988516f85f72395e8997e16f29f5",
+        "bytes": 25670444
+      },
+      {
+        "file": "hos_009_stem_part05_falling_around_the_world_v04.wav",
+        "sha256": "c18c52da80456074e2312911d14f68126c9eafbc5a8c81ddf6b9a2fd0830dd64",
+        "bytes": 27162284
+      },
+      {
+        "file": "audio_review_v04_synth/hos_009_reference_endpoint_526s_v04.wav",
+        "sha256": "bbfe70bc2c6ea8b38c8cddd8b3808f620a34985ddfc5298e06b080db138392c8",
+        "bytes": 100992044
+      },
+      {
+        "file": "audio_review_v04_synth/hos_009_reference_mix_0_518s40_v04.wav",
+        "sha256": "c5c3dcb1711ca0bf0f331907a36dffbd72027fcc4a92420434a66a860da7c28b",
+        "bytes": 99532844
+      },
+      {
+        "file": "audio_review_v04_synth/hos_009_tail_518s40_v04.wav",
+        "sha256": "1ff71d7124e670b9fc0d6b7ed9288160e31b733b66253af2ad2b523abbc428d2",
+        "bytes": 3250604
+      },
+      {
+        "file": "audio_review_v04_synth/hos_009_transition_078_092_part2_mix_v04.wav",
+        "sha256": "50b1460185339735cdbcc214694a93c45793892d2dc05634f952b4975a6ad45a",
+        "bytes": 2688044
+      },
+      {
+        "file": "audio_review_v04_synth/hos_009_transition_168_186_bed_v04.wav",
+        "sha256": "60926b59351bee111d0363684524e21bdeccb51cee4ebaeebda300dba60da5e7",
+        "bytes": 3456044
+      },
+      {
+        "file": "audio_review_v04_synth/hos_009_transition_168_186_mix_v04.wav",
+        "sha256": "a95c9e6756ad44f494f484f236e27f3934184b045fc8009f3d32ded28b8f7627",
+        "bytes": 3456044
+      },
+      {
+        "file": "audio_review_v04_synth/hos_009_transition_386_402_part5_mix_v04.wav",
+        "sha256": "9f8a253bcd106fdf83e976c75839f170c45109036508150378d6898c0db8fbff",
+        "bytes": 3072044
+      }
+    ]
+  }
+}
