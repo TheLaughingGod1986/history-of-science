@@ -47,6 +47,7 @@ BRANCH = "hos-desk"
 LABEL = "hos-desk"
 NEEDS_BEN = "needs-ben"
 TITLE = "HOS desk — Claude ↔ Grok (never merge)"
+CHANNEL_FILE = Path(__file__).resolve().parents[3] / "studio" / "channel.json"
 HOME = Path(os.environ.get("HOS_DESK_HOME", Path.home() / ".hos_desk"))
 PARTIES = ("claude", "grok", "cursor", "codex", "ben", "chief", "gemini")
 WRITERS = ("grok", "cursor", "codex", "claude", "gemini")  # who may post and read an inbox; not the role name
@@ -252,9 +253,19 @@ def repo() -> str:
 
 
 def desk_pr(r: str) -> int:
+    env_num = (os.environ.get("HOS_DESK_NUMBER") or os.environ.get("HOS_DESK_PR") or "").strip()
+    if env_num:
+        return int(env_num)
+    try:
+        desk = json.loads(CHANNEL_FILE.read_text()).get("desk") or {}
+        num = desk.get("number")
+        if isinstance(num, int) and not isinstance(num, bool) and num > 0:
+            return num
+    except (OSError, ValueError, TypeError):
+        pass
     n = sh("gh", "pr", "list", "-R", r, "--head", BRANCH, "--state", "open", "--json", "number", "-q", ".[0].number")
     if not n:
-        sys.exit("No open desk PR. Run: python3 hos_desk.py init")
+        sys.exit("No open desk thread. Set desk.number in studio/channel.json or run: python3 hos_desk.py init")
     return int(n)
 
 
@@ -378,9 +389,9 @@ def cmd_post(ns) -> None:
     f = HOME / "outbox.md"
     HOME.mkdir(parents=True, exist_ok=True)
     f.write_text(text)
-    print(sh("gh", "pr", "comment", str(pr), "-R", r, "--body-file", str(f)))
+    print(sh("gh", "issue", "comment", str(pr), "-R", r, "--body-file", str(f)))
     if ns.to == "ben" or ns.status == "approval":
-        sh("gh", "pr", "edit", str(pr), "-R", r, "--add-label", NEEDS_BEN)
+        sh("gh", "issue", "edit", str(pr), "-R", r, "--add-label", NEEDS_BEN)
 
 
 def load_state() -> dict:
@@ -543,7 +554,7 @@ def task_text(me: str, pr: int, comment: dict) -> str:
             "Cursor does not hold Chief authority and must not decide it.\n\n"
         )
     return (
-        f"# Desk task for {me.title()} (PR #{pr}, comment {comment['id']})\n\n"
+        f"# Desk task for {me.title()} (desk #{pr}, comment {comment['id']})\n\n"
         + authority
         + "Follow AGENTS.md, then studio/RULES.md (this channel's own rules). When finished, reply on the desk with:\n"
         f"  python3 00_Brand/Channel-Setup/tools/hos_desk.py post --from {me} --to claude --film {h.get('film', '')} "

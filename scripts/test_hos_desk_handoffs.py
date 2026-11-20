@@ -326,6 +326,36 @@ class StaleChiefReplies(unittest.TestCase):
             shell.assert_not_called()
 
 
+class DeskTarget(unittest.TestCase):
+    def test_desk_pr_reads_channel_json_and_env_override(self):
+        import os
+        from unittest.mock import patch
+        with patch.dict(os.environ, {}, clear=False):
+            os.environ.pop('HOS_DESK_NUMBER', None)
+            os.environ.pop('HOS_DESK_PR', None)
+            with patch.object(desk, 'sh') as shell:
+                self.assertEqual(desk.desk_pr('owner/repo'), 694)
+                shell.assert_not_called()
+        with patch.dict(os.environ, {'HOS_DESK_NUMBER': '701'}):
+            self.assertEqual(desk.desk_pr('owner/repo'), 701)
+
+    def test_cmd_post_uses_gh_issue_comment_and_edit(self):
+        import tempfile, types
+        from unittest.mock import patch
+        ns = types.SimpleNamespace(frm='gemini', to='ben', film='005', stage='shorts',
+                                   status='approval', body='Ready for check', body_file=None,
+                                   image=[], reply_to='', supersedes='')
+        with tempfile.TemporaryDirectory() as root, \
+                patch.object(desk, 'HOME', pathlib.Path(root)), \
+                patch.object(desk, 'repo', return_value='owner/repo'), \
+                patch.object(desk, 'desk_pr', return_value=694), \
+                patch.object(desk, 'sh', return_value='https://github.com/owner/repo/issues/694#issuecomment-1') as shell:
+            desk.cmd_post(ns)
+        calls = [c.args for c in shell.call_args_list]
+        self.assertEqual(calls[0][:5], ('gh', 'issue', 'comment', '694', '-R'))
+        self.assertEqual(calls[1], ('gh', 'issue', 'edit', '694', '-R', 'owner/repo', '--add-label', desk.NEEDS_BEN))
+
+
 class RulingOutcomes(unittest.TestCase):
     def test_ack_accepts_rulings_with_all_existing_guards(self):
         import copy
