@@ -1,0 +1,121 @@
+{
+  "job": "J3241",
+  "scope_job": "J3236",
+  "production_job": "J3239",
+  "review_job": "J3240",
+  "film": "HOS:009",
+  "slug": "009_The-Falling-Moon-Gravity",
+  "decided_at": "2026-11-20T17:06:00Z",
+  "decided_by": "gemini (elected HOS acting Chief: Grok -> Claude -> Codex -> Gemini)",
+  "relay_status_rechecked": {
+    "chief_grok": "down (retry after 2026-11-20T17:33:46Z)",
+    "claude": "down (out of usage until 2026-11-20T17:50:00Z)",
+    "codex": "down (usage limit; retry after 2026-11-24T23:26:00Z)",
+    "gemini": "UP (elected HOS Chief)"
+  },
+  "capabilities_recorded": [
+    "audio_input"
+  ],
+  "spend": {
+    "cash_gbp": 0,
+    "subscription_credits": 0,
+    "account_gets": 0,
+    "elevenlabs_posts": 0
+  },
+  "verdict": "ACCEPTED_FORMAL_SCORE_ACCEPTANCE_J2035_REOPENED",
+  "score_accepted": true,
+  "accepted_score_bed": "05_Music/hos_009_score_v04_synth.wav",
+  "accepted_score_sha256": "151ba46acdf7d4395b34e105530bd077c26f6eb92832f9a1f00e1551ca88f58d",
+  "accepted_score_plan": "05_Music/hos_009_score_v04_synth_plan.json",
+  "accepted_part_stems": [
+    "05_Music/hos_009_stem_part01_the_falling_moon_v04.wav",
+    "05_Music/hos_009_stem_part02_an_apple_in_a_plague_year_v04.wav",
+    "05_Music/hos_009_stem_part03_the_cannon_on_the_mountain_v04.wav",
+    "05_Music/hos_009_stem_part04_the_moon_test_v04.wav",
+    "05_Music/hos_009_stem_part05_falling_around_the_world_v04.wav"
+  ],
+  "finished_film_pass": false,
+  "ben_watch_waiver": false,
+  "ben_escalation_triggered": false,
+  "evidence_verified": {
+    "scope_file": "05_Music/SCORE_SCOPE_v04_synth.json",
+    "v03_ear_review_pr": "https://github.com/TheLaughingGod1986/history-of-science/pull/698",
+    "v03_ear_review_merge_sha": "53288fe9",
+    "production_pr": "https://github.com/TheLaughingGod1986/history-of-science/pull/700",
+    "production_pr_merge_sha": "9b512c8f",
+    "production_pr_head_sha": "052530710a3ab4763a825503313de07a65840b59",
+    "production_script_sha256": "6908e93a92bfbed88ede0aafb8d65b683b294a199cbdbaf5a7e269e5ffd231cc",
+    "provenance_file": "05_Music/PROVENANCE_v04_synth.json",
+    "provenance_sha256": "57b17755e8561ff4d700666e8957c66cc54681a9d07d9978e9decf72e45f599c",
+    "mini_nas_parity": "18/18 exact SHA-256 match for v04 deliverables + EAR_REVIEW_v04_synth.md exact match",
+    "music_gate_script_sha256": "62b5159f95598eaca5256b30ba66144812bad97dc86fd0c9de4618e4a1dd5385",
+    "music_gate_verdict": "PASS",
+    "music_gate_comparisons": 94,
+    "music_gate_max_similarity": 0.2835,
+    "music_gate_unreadable": 0,
+    "music_gate_fail_count": 0,
+    "music_gate_waiver_used": false,
+    "continuity_silencedetect_0_25_hits": 0,
+    "continuity_silencedetect_0_50_hits": 0,
+    "continuity_min_1s_rms_dbfs": -31.83,
+    "continuity_part_rms_spread_db": 0.002,
+    "continuity_part2_minus_part1_db": 0.0,
+    "reference_mix_bed_under_vo_lu": 12.0,
+    "ear_review_pr": "https://github.com/TheLaughingGod1986/history-of-science/pull/701",
+    "ear_review_merge_sha": "67ed9fb2",
+    "ear_review_head_sha": "1c4c2ac1ee06796977fdf4b72ba1618bf20fbab6",
+    "ear_review_file": "05_Music/EAR_REVIEW_v04_synth.md",
+    "ear_review_sha256": "eedcdcf6bfbaa0887724a9694c8788e482781ec24e7047067e5d91b6b4f4788d",
+    "ear_review_reviewer_seat": "gemini (distinct from J3239 producer cursor)",
+    "ear_review_verdict": "PASS (7/7 rubric criteria)"
+  },
+  "downstream_jobs": {
+    "J2035": {
+      "status": "reopened",
+      "picture_prerequisites_verified": {
+        "total_rows": 90,
+        "j2631_keep": "desk 6801964131/6802206390, PR #537, sha256 e35f9a9879c8e590ec66853b85307999f39bfe30c67b9bed193ca224cab42da3",
+        "j2632_r4_keep": "desk 6809363448 (2026-11-11T23:10:09Z), PR #543 merged 90711687, sha256 23c832b09e70f78d8eeece657dac11d6148e2a5f5c701f2ad88b868845b5f3b3 (Mini scratch & NAS studio-live verified)"
+      },
+      "score_prerequisite_verified": "hos_009_score_v04_synth.wav (151ba46acdf7d4395b34e105530bd077c26f6eb92832f9a1f00e1551ca88f58d) ACCEPTED in J3241",
+      "remaining_gates_at_assembly": [
+        "Set P03:01 splice_authorized=true strictly for J2632 r4 sha256 23c832b09e70... per Grok 6809363448 (0.200s fade f0-f5, parent f104 last visible, exclude f105+, cannon f0 hard cut 189.20)",
+        "Moving-plate composite picture_qa and polish_gate PASS",
+        "House SFX kit + sfx_kit.py level PASS per part",
+        "music_gate.py PASS against actual assembled cut",
+        "Independent QA + Ben final watch before any scheduling"
+      ]
+    },
+    "J2171": {
+      "status": "blocked",
+      "reasons": [
+        "Remains held pending J2035 long assembly and its own picture/score prerequisites"
+      ]
+    }
+  },
+  "guardrails": {
+    "activation_authorized": false,
+    "flight_module_untouched": "04_Audio/tools/hos009_score_flight.py",
+    "j3043_j3045_allowance": "permanently_closed_unused_J3047",
+    "v01_v02_status": "rejected_J2808",
+    "v03_synth_status": "rejected_J3236",
+    "teach_v01_preserved_untouched": true,
+    "loop_or_stretch_teach_v01": false,
+    "youtube_buffer_schedule_changes": false
+  },
+  "preserved_locks_verified": {
+    "hos_009_wonder_v01.mp3": "95dfe11d7c21c9347e9b962ef2f9ecd35116f2fce60df6f123578c11a1debaf0",
+    "hos_009_teach_v01.mp3": "4c1f0a17364ad5ba96fdd2d42730b2f857d19017fab52b221701bd4e15d07bb1",
+    "hos_009_score_joined_v01.wav": "d7f5bf3d7553d7c611a913e93602b8ec83419821059294ddeaee32269a4f9572",
+    "hos_009_wonder_v02.mp3": "b38ae8922e8d633b9f085a8bb9634c96d889a9293fcab277f7a3a23f4839d148",
+    "hos_009_score_joined_v02.wav": "6fc8628a96b8267eaf5be6c19d7e30d9e473eb86c886ee3106c3219b375b1f68",
+    "hos_009_wonder_v03_synth.wav": "41af45be88bcfd07af5ca7a1a03d8f691b7fcba0262a533b84a63b23c4c6f712",
+    "hos_009_score_joined_v03.wav": "afeba8079e247bca8f27960dd7fc7ed3876deda5bbc652f464f0fdc3ef6f4a45",
+    "_build_hos009_wonder_v03_synth.py": "bd8e20d98f87fe4253d4e4feb05cd01e44c2d904ad08c09fe9d581fa3ed9bb63",
+    "VO_TAKES_KEEP.json": "530743c507af8d5f9049179d4e9d380b5c1b8aca4f180ada133d0b673f5925e0",
+    "VO_RETIME_v01.json": "75a2e7afa1d822b04371511c81a52082e1b80713b0e59711702cfd05fe45a972",
+    "hos009_score_flight.py": "43e71321756bc56812264afd64b2946a8222f38c6bea6987376a83a8eafc922d",
+    "J2631_code_graphic_009_p4_05_minute_second.mp4": "e35f9a9879c8e590ec66853b85307999f39bfe30c67b9bed193ca224cab42da3",
+    "J2632_r4_code_graphic_009_p3_01_really_falling_c1.mp4": "23c832b09e70f78d8eeece657dac11d6148e2a5f5c701f2ad88b868845b5f3b3"
+  }
+}

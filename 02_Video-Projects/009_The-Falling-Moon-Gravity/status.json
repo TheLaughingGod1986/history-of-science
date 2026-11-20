@@ -3,7 +3,7 @@
   "title": "Why Doesn't the Moon Fall to Earth?",
   "air": "2026-11-26",
   "ready_by": "2026-11-22",
-  "summary": "J3236: elected Chief refused v03_synth after J3235 independent audio_input ear review FAIL (harsh synth timbre + 175.28-178.28s join cliff into teach_v01) and authorized ONE FINAL bounded £0 full-runtime warm own-synthesis revision v04_synth (J3239->J3240->J3241; auto-escalates to Ben if v04 fails). ElevenLabs activation stays False. J2035/J2171 remain held; 22 Nov ready-by at risk, 26 Nov not a release promise.",
+  "summary": "J3241: elected Chief formally ACCEPTED £0 full-runtime warm own-synthesis score v04_synth (hos_009_score_v04_synth.wav; PR #700/#701 merged; unchanged music_gate PASS 94 beds/0 unreadable/max 0.2835; 0 dropouts; J3240 independent audio_input ear review 7/7 PASS) and REOPENED J2035 long assembly (all 90 picture rows incl. J2631 & J2632 r4 KEEP 6809363448 verified). J2171 remains held. Score acceptance is not a final film PASS or Ben-watch waiver; 22 Nov target at risk, 26 Nov not a release promise.",
   "stages": {
     "topic": {
       "state": "done"
@@ -45,25 +45,34 @@
     "picture": {
       "state": "doing",
       "due": "2026-11-15",
-      "owner": "Grok (J2632 revised sheet and timing ruling)",
-      "note": "J1237 tranche1 PASS; all57 original Flow hashes reverified local/NAS. 70/90 recorded rows unchanged. J2033 owns remaining20 Quality rows under J2026 cap6000/max3 takes each/floor3000; J2034 independent picture review. Generated is not approved. J2632: revised candidate has179 unique30fps frames,21 drawn head frames and two open rings. Parent out104 evidence supplied.0.175s parent/head frame-rate mismatch flagged; not KEEP. J2631 already KEEP. Approved count unchanged.",
-      "since": "2026-11-11",
+      "owner": "assembly (J2035 moving-plate composite picture_qa/polish_gate)",
+      "note": "All 90 board rows settled: tranche1 57 KEEP (J1237), tranche2 Flow & retakes KEEP (J2033-J2629), J2631 five-metre diagram KEEP (desk 6801964131/6802206390, PR #537, e35f9a98...), and J2632 r4 falling-Moon diagram KEEP (Grok ruling 6809363448, PR #543 merged 90711687, 23c832b0... verified on Mini scratch & NAS). Remains doing solely until J2035 completes moving-plate composites and picture_qa/polish_gate PASS.",
+      "since": "2026-11-20",
       "underway": false,
-      "waiting": "Grok ruling on the0.175s timing mismatch and revised J2632 sheets on PR543; no splice. Other picture review requirements remain.",
+      "waiting": "J2035 moving-plate composite picture_qa and polish_gate PASS to close picture milestone",
       "steps": [
-        70,
+        90,
         90
       ],
-      "steps_unit": "board rows recorded: 57 accepted Flow +12 code graphics +1 reuse; 20 Quality remain"
+      "steps_unit": "board rows settled (incl. J2631 & J2632 r4 KEEP); composite QA runs inside J2035",
+      "left": "inside J2035 assembly",
+      "eta": "2026-11-21"
     },
     "edit": {
-      "state": "blocked",
+      "state": "doing",
       "due": "2026-11-19",
-      "owner": "assembly / J3239 final bounded own-score (v04_synth)",
-      "waiting": "No accepted score yet. J3236 refused v03_synth (J3235 ear FAIL) and queued ONE FINAL bounded £0 full-runtime warm own-synthesis revision v04_synth: J3239 synthesis + complete-library music_gate -> J3240 independent audio_input ear review -> J3241 final Chief disposition (accept or escalate ElevenLabs billing/pricing to Ben; no v05_synth). J2035 also awaits J2632 picture KEEP.",
+      "owner": "assembly (J2035 reopened)",
+      "waiting": "Worker claim on reopened J2035 long assembly using accepted v04_synth score, locked 5-part VO, and 90 settled picture rows",
       "underway": false,
-      "note": "J3234 PR #697 merged as rejected audit record (03042715; music_gate PASS 94 beds / 0 dropouts); J3235 PR #698 ear review FAILED musicality/warmth, 175.28-178.28s join cliff & Part 2 jump; J3236 refused acceptance and scoped final bounded full-runtime v04_synth (SCORE_SCOPE_v04_synth.json). ACTIVATION_AUTHORIZED=False; J3047 closed unused; v01/v02/v03 rejected; J2035/J2171 held; all media locks preserved. 22 Nov target at risk; replacement watch-ready date unset.",
-      "since": "2026-11-20"
+      "note": "J3241 formally ACCEPTED £0 full-runtime warm own-synthesis score hos_009_score_v04_synth.wav (151ba46a...; PR #700 9b512c8f + J3240 independent audio_input ear review PR #701 67ed9fb2 7/7 PASS; music_gate PASS 94 beds / 0 unreadable / max 0.2835 / 0 dropouts / 18/18 Mini-NAS parity; PR #698 53288fe9 merged as v03 audit record) and REOPENED J2035 long assembly. J2171 remains held pending J2035. ACTIVATION_AUTHORIZED=False; J3047 closed unused; v01/v02/v03 rejected; £0 / 0 credits; no Ben escalation needed. Score acceptance is not a final film PASS or Ben-watch waiver.",
+      "since": "2026-11-20",
+      "steps": [
+        1,
+        3
+      ],
+      "steps_unit": "J2035 assembly steps (step 1 input inventory done; step 2-3 render, gates & NAS backup)",
+      "left": "about 3 hours",
+      "eta": "2026-11-21"
     },
     "thumbnails": {
       "state": "todo",
@@ -81,5 +90,5 @@
     }
   },
   "claims": [],
-  "next": "J3239: synthesize FINAL bounded £0 full-runtime warm chamber score v04_synth (0-535.33s, HOS 006/007 warm palette) + complete-library music_gate -> J3240 independent audio_input ear review -> J3241 final Chief disposition (accept or escalate ElevenLabs billing/pricing to Ben)."
+  "next": "J2035 reopened: assemble HOS 009 long master from 90 settled picture rows (incl. J2631 & J2632 r4 KEEP 6809363448), locked 5-part VO, and J3241-accepted £0 full-runtime score hos_009_score_v04_synth.wav (151ba46a...), then run composite picture_qa/polish_gate, sfx_kit level, music_gate on cut, independent QA, and Ben final watch (J2171 remains held)."
 }
