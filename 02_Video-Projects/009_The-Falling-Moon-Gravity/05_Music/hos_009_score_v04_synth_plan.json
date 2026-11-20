@@ -1,0 +1,55 @@
+{
+  "film": "009_The-Falling-Moon-Gravity",
+  "job": "J3239",
+  "bed": "hos_009_score_v04_synth.wav",
+  "source": "own synthesis (_build_hos009_score_v04_synth.py), \u00a30, no ElevenLabs, no samples",
+  "prompt": "Original full-runtime instrumental chamber score for HOS 009 Why Doesn't the Moon Fall to Earth. Warm D-minor (A4=440) low-harmonic viol pads and a soft wooden harp, harmony moving every two to four bars, one continuous texture from the first sample through the last chapter. Calm wonder, a warmer orchard colour, a light rhythmic explain pulse, then a spacious return and a slow ending. Leave space for British narration.\nPace: 60-68 BPM.\nNOT any earlier HOS or Orbit bed, hos_009_teach_v01, hos_009_wonder_v01, hos_009_wonder_v02, hos_009_wonder_v03_synth, hos_009_score_joined_v01, hos_009_score_joined_v02, hos_009_score_joined_v03, trees006_score_bed_v01, vaccine_score_bed_v01, jupiter-music.mp3, a static bass drone, reed-organ buzz, metallic chiptune plucks, a synth-to-recording splice, cosmic shimmer, piano space-documentary music, solo woodwind workshop waltz, borrowed melody, named-composer imitation, heroic brass, horror, vocals, lyrics, pop drums, EDM or comedy stings.",
+  "duration_s": 535.33,
+  "bpm_arc": "62 awe / 67 explain",
+  "key": "D minor",
+  "a4_hz": 440,
+  "sha256": "151ba46acdf7d4395b34e105530bd077c26f6eb92832f9a1f00e1551ca88f58d",
+  "integrated_lufs": -22.9,
+  "chapters": [
+    {
+      "part": 1,
+      "start_s": 0.0,
+      "end_s": 84.44,
+      "mood": "awe",
+      "bpm": 62,
+      "crossfade_s": 3.0
+    },
+    {
+      "part": 2,
+      "start_s": 84.44,
+      "end_s": 176.78,
+      "mood": "awe",
+      "bpm": 62,
+      "crossfade_s": 3.0
+    },
+    {
+      "part": 3,
+      "start_s": 176.78,
+      "end_s": 260.16,
+      "mood": "explain",
+      "bpm": 67,
+      "crossfade_s": 3.0
+    },
+    {
+      "part": 4,
+      "start_s": 260.16,
+      "end_s": 393.86,
+      "mood": "explain",
+      "bpm": 67,
+      "crossfade_s": 3.0
+    },
+    {
+      "part": 5,
+      "start_s": 393.86,
+      "end_s": 535.33,
+      "mood": "awe",
+      "bpm": 62,
+      "crossfade_s": 3.0
+    }
+  ]
+}
