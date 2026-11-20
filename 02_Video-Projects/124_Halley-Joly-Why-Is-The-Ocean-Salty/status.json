@@ -1,0 +1,46 @@
+{
+  "film": "124",
+  "title": "Why Is the Ocean Salty? (The Clock That Got Earth's Age Wrong)",
+  "summary": "Backlog topic added by J3203 and Rule-E pre-cleared by J3213 (GO 95.2/100, 20 Nov 2026). Topic brief, neighbour and public-search evidence in 02_Video-Projects/124_Halley-Joly-Why-Is-The-Ocean-Salty/. Neighbour gate PASS (9 education videos >=1M views, TED-Ed: yes). All facts unverified. Waits in next_hos under rule G for a free HOS place, SOURCES.md primary quotes, and the facts lane.",
+  "stages": {
+    "topic": {
+      "state": "todo",
+      "note": "J3203 topic brief written; J3213 Rule-E topic go/no-go review GO (95.2/100 in next_hos under Rule G); all claims unverified pending SOURCES.md and facts lane when an active HOS slot opens"
+    },
+    "script": {
+      "state": "todo"
+    },
+    "facts": {
+      "state": "todo"
+    },
+    "package": {
+      "state": "todo"
+    },
+    "vo": {
+      "state": "todo"
+    },
+    "shorts_scripts": {
+      "state": "todo"
+    },
+    "shorts_vo": {
+      "state": "todo"
+    },
+    "picture": {
+      "state": "todo"
+    },
+    "edit": {
+      "state": "todo"
+    },
+    "thumbnails": {
+      "state": "todo"
+    },
+    "ben_ok": {
+      "state": "todo"
+    },
+    "scheduled": {
+      "state": "todo"
+    }
+  },
+  "claims": [],
+  "next": ""
+}
