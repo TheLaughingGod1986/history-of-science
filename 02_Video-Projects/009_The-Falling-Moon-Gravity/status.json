@@ -3,7 +3,7 @@
   "title": "Why Doesn't the Moon Fall to Earth?",
   "air": "2026-11-26",
   "ready_by": "2026-11-22",
-  "summary": "J3047: no accepted score. v03 NOT GENERATED (0 POSTs/spend); v01/v02 rejected. Long and Shorts assembly held. 22 Nov ready-by at risk; 26 Nov is not a release promise. J3050 owns no-spend billing evidence proposal.",
+  "summary": "J3233: elected Chief selected Option (a) £0 pure Python/NumPy own-score opening (v03_synth) joined to retained teach_v01; ElevenLabs activation stays False after J3174. J3234->J3235->J3236 queued. Long/Shorts assembly (J2035/J2171) remain held; 22 Nov ready-by at risk, 26 Nov not a release promise.",
   "stages": {
     "topic": {
       "state": "done"
@@ -59,11 +59,11 @@
     "edit": {
       "state": "blocked",
       "due": "2026-11-19",
-      "owner": "codex / J3050 billing evidence proposal",
-      "waiting": "No compliant score available. J3050 evidence proposal -> independent review -> elected-Chief route decision; no generation authorized.",
+      "owner": "assembly / J3234 own-score synthesis (v03_synth)",
+      "waiting": "No accepted score yet. J3233 selected Option (a) £0 own-score opening joined to retained teach_v01: J3234 synthesis + complete-library music_gate -> J3235 independent audio_input ear review -> J3236 Chief disposition before releasing J2035/J2171.",
       "underway": false,
-      "note": "J3047 closes J3043 allowance unused, permanently. J2035/J2171 held; all media locks preserved. 22 Nov target at risk; replacement watch-ready date unset.",
-      "since": "2026-11-18"
+      "note": "J3139-J3174 offline guard/flight hardening merged (PR #675/#680/#681) with ACTIVATION_AUTHORIZED=False (unproven J3150 pricing bound). J3047 allowance stays closed unused; v01/v02 rejected (J2808); J2035/J2171 held; all media locks preserved. 22 Nov target at risk; replacement watch-ready date unset.",
+      "since": "2026-11-20"
     },
     "thumbnails": {
       "state": "todo",
@@ -81,5 +81,5 @@
     }
   },
   "claims": [],
-  "next": "J3050: no-spend billing evidence proposal due 19 Nov 12:00Z; independent review and new Chief route decision before any production scope."
+  "next": "J3234: synthesize £0 pure Python/NumPy opening v03_synth (0-178.28s) joined to retained teach_v01 + complete-library music_gate -> J3235 independent audio_input ear review -> J3236 Chief score disposition."
 }

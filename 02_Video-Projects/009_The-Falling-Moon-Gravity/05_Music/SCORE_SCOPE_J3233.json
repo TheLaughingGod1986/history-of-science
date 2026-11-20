@@ -1,0 +1,109 @@
+{
+  "job": "J3233",
+  "ref": "J3228",
+  "film": "HOS:009",
+  "slug": "009_The-Falling-Moon-Gravity",
+  "decided_at": "2026-11-20T14:17:00Z",
+  "decided_by": "gemini (elected HOS acting Chief: Grok -> Claude -> Codex -> Gemini)",
+  "selected_option": "a",
+  "selected_route": "compliant_gbp0_non_elevenlabs_own_score_opening_joined_to_retained_teach_v01",
+  "score_accepted": false,
+  "finished_film_pass": false,
+  "spend": {
+    "cash_gbp": 0,
+    "subscription_credits": 0,
+    "account_gets": 0,
+    "elevenlabs_posts": 0
+  },
+  "guardrails": {
+    "activation_authorized": false,
+    "flight_module_untouched": "04_Audio/tools/hos009_score_flight.py",
+    "j3043_j3045_allowance": "permanently_closed_unused_J3047",
+    "v01_v02_status": "rejected_J2808",
+    "loop_or_stretch_teach_v01": false,
+    "third_party_samples_or_soundfonts_allowed": false,
+    "excluded_soundfonts": [
+      "TimGM6mb.sf2",
+      "gs_instruments.dls"
+    ],
+    "j2035_status": "blocked",
+    "j2171_status": "blocked",
+    "youtube_buffer_schedule_changes": false
+  },
+  "precedent": [
+    "02_Video-Projects/006_Trees-Are-Made-Of-Air/05_Music/trees006_score_bed_v01_plan.json",
+    "02_Video-Projects/007_The-First-Vaccine/05_Music/vaccine_score_bed_v01_plan.json"
+  ],
+  "synthesis_spec": {
+    "script": "02_Video-Projects/009_The-Falling-Moon-Gravity/05_Music/_build_hos009_wonder_v03_synth.py",
+    "method": "deterministic pure Python/NumPy DSP synthesis (Karplus-Strong plucked gut-string lute + multi-voice bowed viols + body resonance + stereo chamber reverb)",
+    "sample_rate_hz": 48000,
+    "bit_depth": 16,
+    "channels": 2,
+    "raw_duration_s": 180.0,
+    "used_window_s": [0.0, 178.28],
+    "key_center": "D minor (A4=440Hz)",
+    "pace_bpm": "60-66",
+    "part2_colour_shift_s": 84.44,
+    "handoff_window_s": [175.28, 178.28],
+    "max_interior_dropout_db": -45.0,
+    "max_interior_dropout_count": 0,
+    "crossfade": {
+      "start_s": 175.28,
+      "end_s": 178.28,
+      "duration_s": 3.0,
+      "chapter_card_s": 176.78,
+      "ffmpeg": "acrossfade=d=3:c1=qsin:c2=qsin"
+    },
+    "retained_teach_cue": {
+      "file": "hos_009_teach_v01.mp3",
+      "sha256": "4c1f0a17364ad5ba96fdd2d42730b2f857d19017fab52b221701bd4e15d07bb1",
+      "film_range_s": [175.28, 535.325714],
+      "unchanged": true
+    },
+    "outputs": [
+      "hos_009_wonder_v03_synth.wav",
+      "hos_009_wonder_v03_synth_plan.json",
+      "hos_009_score_joined_v03.wav",
+      "hos_009_score_joined_v03_plan.json",
+      "hos_009_stem_part01_the_falling_moon_v03.wav",
+      "hos_009_stem_part02_an_apple_in_a_plague_year_v03.wav",
+      "hos_009_stem_part03_the_cannon_on_the_mountain_v03.wav",
+      "hos_009_stem_part04_the_moon_test_v03.wav",
+      "hos_009_stem_part05_falling_around_the_world_v03.wav",
+      "PROVENANCE_v03_synth.json",
+      "music_gate_v03_wonder.json",
+      "music_gate_v03_joined.json"
+    ]
+  },
+  "gates": {
+    "music_gate_script": "orbit-with-ben/scripts/music_gate.py (unchanged)",
+    "min_library_comparisons": 89,
+    "max_unreadable": 0,
+    "max_similarity": 0.8,
+    "waiver_allowed": false,
+    "silencedetect_checks": [
+      "noise=-45dB:d=0.25",
+      "noise=-45dB:d=0.50"
+    ],
+    "independent_audio_input_review_required": true,
+    "separate_chief_disposition_required": true
+  },
+  "queued_chain": {
+    "production": "J3234",
+    "independent_ear_review": "J3235",
+    "chief_disposition": "J3236"
+  },
+  "bounded_fallback": "If v03_synth fails music_gate or J3235 audio_input ear review, J3236 refuses acceptance and decides between (i) at most one bounded GBP0 DSP/timbre revision (v04_synth or full-runtime 0-535.33s own-synthesis bed if join timbre mismatch is the sole blocker) or (ii) one explicit billing/pricing confirmation escalation to Ben for ElevenLabs music_v2.",
+  "preserved_locks": {
+    "hos_009_wonder_v01.mp3": "95dfe11d7c21c9347e9b962ef2f9ecd35116f2fce60df6f123578c11a1debaf0",
+    "hos_009_teach_v01.mp3": "4c1f0a17364ad5ba96fdd2d42730b2f857d19017fab52b221701bd4e15d07bb1",
+    "hos_009_score_joined_v01.wav": "d7f5bf3d7553d7c611a913e93602b8ec83419821059294ddeaee32269a4f9572",
+    "hos_009_wonder_v02.mp3": "b38ae8922e8d633b9f085a8bb9634c96d889a9293fcab277f7a3a23f4839d148",
+    "hos_009_score_joined_v02.wav": "6fc8628a96b8267eaf5be6c19d7e30d9e473eb86c886ee3106c3219b375b1f68",
+    "VO_TAKES_KEEP.json": "530743c507af8d5f9049179d4e9d380b5c1b8aca4f180ada133d0b673f5925e0",
+    "VO_RETIME_v01.json": "75a2e7afa1d822b04371511c81a52082e1b80713b0e59711702cfd05fe45a972",
+    "J2631_code_graphic_009_p4_05_minute_second.mp4": "e35f9a9879c8e590ec66853b85307999f39bfe30c67b9bed193ca224cab42da3",
+    "J2632_r4_code_graphic_009_p3_01_really_falling_c1.mp4": "23c832b09e70f78d8eeece657dac11d6148e2a5f5c701f2ad88b868845b5f3b3"
+  }
+}

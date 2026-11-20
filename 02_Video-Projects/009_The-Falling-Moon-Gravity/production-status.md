@@ -198,3 +198,10 @@ ALL CHECKS PASS
 ```
 
 This is not a score/film PASS; no v03 media exists.
+
+
+## 20 Nov 2026 — J3233 compliant replacement score route decision (Gemini acting Chief)
+
+Selected **Option (a): compliant £0 non-ElevenLabs own-score route** following completion of the offline billing-guard and disabled-flight hardening chain (`J3139`–`J3174`, merged via PR `#675` `327c220d`, PR `#680` `f13cb7ae`, PR `#681` `3211c7de`). `ACTIVATION_AUTHORIZED` stays literal `False` (`jobs/reviews/J3150/PRICING_EVIDENCE.md` does not establish both `<= 3,000` credits and `£0` cash), `J3043`/`J3045` remains permanently closed unused (`J3047`), and `v01`/`v02` remain rejected (`J2808`).
+
+Following shipped HOS 006 (`trees006_score_bed_v01.mp3`) and HOS 007 (`vaccine_score_bed_v01.mp3`) £0 own-synthesis precedent, `J3234` synthesizes a deterministic pure-Python/NumPy 17th-century D-minor chamber opening (`hos_009_wonder_v03_synth.wav`, `0.00–178.28 s`, Karplus-Strong plucked gut-string lute + warm multi-voice bowed viols, evolving modal harmony, zero silent rests, zero third-party/GPL samples) joined via exact 3.0 s equal-power crossfade (`175.28–178.28 s`) into byte-unchanged `hos_009_teach_v01.mp3` (`4c1f0a17…`), verified by unchanged complete-library `music_gate.py` (`>= 89` comparisons, `0` unreadable, `< 0.80`, no waiver) and continuity telemetry, followed by independent demonstrated-audio review (`J3235`) and separate elected-Chief disposition (`J3236`). `J2035` and `J2171` remain held; £0 cash, 0 credits, no YouTube/Buffer/schedule changes. Full decision & scope: `05_Music/SCORE_DECISION_J3233.md` and `05_Music/SCORE_SCOPE_J3233.json`.
