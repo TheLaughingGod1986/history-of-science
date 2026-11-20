@@ -3,7 +3,7 @@
   "title": "Why Doesn't the Moon Fall to Earth?",
   "air": "2026-11-26",
   "ready_by": "2026-11-22",
-  "summary": "J3233: elected Chief selected Option (a) £0 pure Python/NumPy own-score opening (v03_synth) joined to retained teach_v01; ElevenLabs activation stays False after J3174. J3234->J3235->J3236 queued. Long/Shorts assembly (J2035/J2171) remain held; 22 Nov ready-by at risk, 26 Nov not a release promise.",
+  "summary": "J3236: elected Chief refused v03_synth after J3235 independent audio_input ear review FAIL (harsh synth timbre + 175.28-178.28s join cliff into teach_v01) and authorized ONE FINAL bounded £0 full-runtime warm own-synthesis revision v04_synth (J3239->J3240->J3241; auto-escalates to Ben if v04 fails). ElevenLabs activation stays False. J2035/J2171 remain held; 22 Nov ready-by at risk, 26 Nov not a release promise.",
   "stages": {
     "topic": {
       "state": "done"
@@ -59,10 +59,10 @@
     "edit": {
       "state": "blocked",
       "due": "2026-11-19",
-      "owner": "assembly / J3234 own-score synthesis (v03_synth)",
-      "waiting": "No accepted score yet. J3233 selected Option (a) £0 own-score opening joined to retained teach_v01: J3234 synthesis + complete-library music_gate -> J3235 independent audio_input ear review -> J3236 Chief disposition before releasing J2035/J2171.",
+      "owner": "assembly / J3239 final bounded own-score (v04_synth)",
+      "waiting": "No accepted score yet. J3236 refused v03_synth (J3235 ear FAIL) and queued ONE FINAL bounded £0 full-runtime warm own-synthesis revision v04_synth: J3239 synthesis + complete-library music_gate -> J3240 independent audio_input ear review -> J3241 final Chief disposition (accept or escalate ElevenLabs billing/pricing to Ben; no v05_synth). J2035 also awaits J2632 picture KEEP.",
       "underway": false,
-      "note": "J3139-J3174 offline guard/flight hardening merged (PR #675/#680/#681) with ACTIVATION_AUTHORIZED=False (unproven J3150 pricing bound). J3047 allowance stays closed unused; v01/v02 rejected (J2808); J2035/J2171 held; all media locks preserved. 22 Nov target at risk; replacement watch-ready date unset.",
+      "note": "J3234 PR #697 merged as rejected audit record (03042715; music_gate PASS 94 beds / 0 dropouts); J3235 PR #698 ear review FAILED musicality/warmth, 175.28-178.28s join cliff & Part 2 jump; J3236 refused acceptance and scoped final bounded full-runtime v04_synth (SCORE_SCOPE_v04_synth.json). ACTIVATION_AUTHORIZED=False; J3047 closed unused; v01/v02/v03 rejected; J2035/J2171 held; all media locks preserved. 22 Nov target at risk; replacement watch-ready date unset.",
       "since": "2026-11-20"
     },
     "thumbnails": {
@@ -81,5 +81,5 @@
     }
   },
   "claims": [],
-  "next": "J3234: synthesize £0 pure Python/NumPy opening v03_synth (0-178.28s) joined to retained teach_v01 + complete-library music_gate -> J3235 independent audio_input ear review -> J3236 Chief score disposition."
+  "next": "J3239: synthesize FINAL bounded £0 full-runtime warm chamber score v04_synth (0-535.33s, HOS 006/007 warm palette) + complete-library music_gate -> J3240 independent audio_input ear review -> J3241 final Chief disposition (accept or escalate ElevenLabs billing/pricing to Ben)."
 }

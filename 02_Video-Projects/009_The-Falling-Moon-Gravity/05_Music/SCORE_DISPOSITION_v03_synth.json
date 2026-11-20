@@ -1,0 +1,109 @@
+{
+  "job": "J3236",
+  "scope_job": "J3233",
+  "production_job": "J3234",
+  "review_job": "J3235",
+  "film": "HOS:009",
+  "slug": "009_The-Falling-Moon-Gravity",
+  "decided_at": "2026-11-20T15:22:00Z",
+  "decided_by": "gemini (elected HOS acting Chief: Grok -> Claude -> Codex -> Gemini)",
+  "relay_status_rechecked": {
+    "chief_grok": "down (retry after 2026-11-20T17:33:46Z)",
+    "claude": "down (out of usage until 2026-11-20T17:50:00Z)",
+    "codex": "down (usage limit; retry after 2026-11-20T16:12:29Z)",
+    "gemini": "UP (elected HOS Chief)"
+  },
+  "capabilities_recorded": [
+    "audio_input"
+  ],
+  "spend": {
+    "cash_gbp": 0,
+    "subscription_credits": 0,
+    "account_gets": 0,
+    "elevenlabs_posts": 0
+  },
+  "verdict": "NOT_ACCEPTED_BOUNDED_FALLBACK_V04_SYNTH_FINAL",
+  "score_accepted": false,
+  "finished_film_pass": false,
+  "evidence_verified": {
+    "scope_file": "05_Music/SCORE_SCOPE_J3233.json",
+    "production_pr": "https://github.com/TheLaughingGod1986/history-of-science/pull/697",
+    "production_pr_merged_audit_only": true,
+    "production_pr_merge_sha": "03042715",
+    "production_pr_head_sha": "fd6b4174c41f2039804d57ba9d4d9c42ded59c52",
+    "provenance_file": "05_Music/PROVENANCE_v03_synth.json",
+    "mini_nas_parity": "19/19 exact SHA-256 match (18 deliverables + PROVENANCE_v03_synth.json)",
+    "music_gate_script_sha256": "62b5159f95598eaca5256b30ba66144812bad97dc86fd0c9de4618e4a1dd5385",
+    "music_gate_wonder_verdict": "PASS",
+    "music_gate_wonder_comparisons": 94,
+    "music_gate_wonder_max_similarity": 0.3961,
+    "music_gate_joined_verdict": "PASS",
+    "music_gate_joined_comparisons": 94,
+    "music_gate_joined_max_similarity": 0.3868,
+    "music_gate_unreadable": 0,
+    "music_gate_waiver_used": false,
+    "continuity_silencedetect_0_25_hits": 0,
+    "continuity_silencedetect_0_50_hits": 0,
+    "continuity_min_1s_rms_dbfs": -20.38,
+    "ear_review_pr": "https://github.com/TheLaughingGod1986/history-of-science/pull/698",
+    "ear_review_head_sha": "512640fc30bdb90a4173fdf956534b640752c678",
+    "ear_review_file": "05_Music/EAR_REVIEW_v03_synth.md",
+    "ear_review_verdict": "FAIL — DO NOT ACCEPT"
+  },
+  "exact_blocking_defects": [
+    "Period chamber musicality & warmth FAIL (0.00-178.28s): harsh buzzy 4-harmonic reed-organ bowed() pad + metallic MIDI/chiptune Karplus-Strong plucks on rigid half-beat grid.",
+    "Join quality FAIL (175.28-178.28s): jarring timbral cliff from cold electronic synth directly into warm studio-acoustic retained hos_009_teach_v01.mp3 (verified by J3235 and Chief audio_input audition).",
+    "Part 2 orchard shift FAIL (~84.44-168.00s): +12 semitone octave jump (+24 above chord tones) and +2.2-2.5 dB RMS step-up made Part 2 sharper and more piercing.",
+    "Wonder-to-teach cohesion FAIL (0.00-535.33s): electronic synth vs studio acoustic recording disconnect; Parts 1-2 1-3.5 kHz synthetic distraction flagged under Ben's VO."
+  ],
+  "bounded_fallback_decision": {
+    "selected_option": "i",
+    "route": "one_final_gbp0_full_runtime_warm_own_synthesis_v04_synth",
+    "scope_file": "05_Music/SCORE_SCOPE_v04_synth.json",
+    "final_synthesis_attempt": true,
+    "v05_synth_allowed": false,
+    "if_v04_fails": "Refuse acceptance, keep J2035/J2171 held, and immediately escalate ONE single explicit billing/pricing confirmation question to Ben for ElevenLabs music_v2 (Option ii).",
+    "queued_chain": {
+      "production": "J3239",
+      "independent_ear_review": "J3240",
+      "chief_final_disposition": "J3241"
+    }
+  },
+  "held_jobs": {
+    "J2035": {
+      "status": "blocked",
+      "reasons": [
+        "No accepted HOS 009 score (v01/v02/v03_synth rejected; final bounded v04_synth chain J3239->J3240->J3241 queued)",
+        "J2632 r4 falling-Moon diagram picture KEEP ruling on PR #543 also separately pending"
+      ]
+    },
+    "J2171": {
+      "status": "blocked",
+      "reasons": [
+        "Held pending long assembly J2035 and its own picture/score prerequisites"
+      ]
+    }
+  },
+  "guardrails": {
+    "activation_authorized": false,
+    "flight_module_untouched": "04_Audio/tools/hos009_score_flight.py",
+    "j3043_j3045_allowance": "permanently_closed_unused_J3047",
+    "v01_v02_status": "rejected_J2808",
+    "v03_synth_status": "rejected_J3236",
+    "loop_or_stretch_teach_v01": false,
+    "youtube_buffer_schedule_changes": false
+  },
+  "preserved_locks_verified": {
+    "hos_009_wonder_v01.mp3": "95dfe11d7c21c9347e9b962ef2f9ecd35116f2fce60df6f123578c11a1debaf0",
+    "hos_009_teach_v01.mp3": "4c1f0a17364ad5ba96fdd2d42730b2f857d19017fab52b221701bd4e15d07bb1",
+    "hos_009_score_joined_v01.wav": "d7f5bf3d7553d7c611a913e93602b8ec83419821059294ddeaee32269a4f9572",
+    "hos_009_wonder_v02.mp3": "b38ae8922e8d633b9f085a8bb9634c96d889a9293fcab277f7a3a23f4839d148",
+    "hos_009_score_joined_v02.wav": "6fc8628a96b8267eaf5be6c19d7e30d9e473eb86c886ee3106c3219b375b1f68",
+    "hos_009_wonder_v03_synth.wav": "41af45be88bcfd07af5ca7a1a03d8f691b7fcba0262a533b84a63b23c4c6f712",
+    "hos_009_score_joined_v03.wav": "afeba8079e247bca8f27960dd7fc7ed3876deda5bbc652f464f0fdc3ef6f4a45",
+    "VO_TAKES_KEEP.json": "530743c507af8d5f9049179d4e9d380b5c1b8aca4f180ada133d0b673f5925e0",
+    "VO_RETIME_v01.json": "75a2e7afa1d822b04371511c81a52082e1b80713b0e59711702cfd05fe45a972",
+    "J2631_code_graphic_009_p4_05_minute_second.mp4": "e35f9a9879c8e590ec66853b85307999f39bfe30c67b9bed193ca224cab42da3",
+    "J2632_r4_code_graphic_009_p3_01_really_falling_c1.mp4": "23c832b09e70f78d8eeece657dac11d6148e2a5f5c701f2ad88b868845b5f3b3"
+  }
+}
