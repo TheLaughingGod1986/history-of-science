@@ -1,0 +1,54 @@
+{
+  "job": "J3259",
+  "at": "2026-11-20T23:19:01Z",
+  "videoId": "el30-mHiH-0",
+  "title": "How Does the Heart Pump Blood?",
+  "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+  "master": {
+    "file": "hos_005_s07_heart_pulse_v05.mp4",
+    "sha256": "9efcf7b1d91ede4ef9f8d25783e358c92debde3c453f3d30211b9b09936c8fc1",
+    "durationSeconds": 25.1,
+    "size": "1080x1920"
+  },
+  "cover": {
+    "source": "frame 0 of the approved v05 master",
+    "sha256": "d4aad56811e50ceb45e403274579e86b07448ace90a5bedcbf25405b3a60ba37",
+    "size": "1080x1920",
+    "hook": "YOUR PULSE",
+    "explorerAtFrame0": false,
+    "thumbPreview": "PASS exit 0",
+    "styleSheet": "PASS exit 0"
+  },
+  "set": "History of Science Studio, existing tab, image-only file input, then Save. Visibility was not opened.",
+  "api": {
+    "source": "read-only History of Science login",
+    "privacy": "private",
+    "publishAt": "2026-11-22T11:30:00Z",
+    "uploadStatus": "processed",
+    "madeForKids": false,
+    "selfDeclaredMadeForKids": false,
+    "containsSyntheticMedia": null,
+    "language": "en-GB",
+    "audioLanguage": "en-GB",
+    "caption": "true",
+    "hasCustomThumbnail": true,
+    "liveShortsThumb": "1080x1920 YOUR PULSE frame, no Explorer",
+    "captionsList": "403 insufficient authentication scopes on this read-only login"
+  },
+  "studio": {
+    "url": "https://studio.youtube.com/video/el30-mHiH-0/edit",
+    "channel": "History of Science",
+    "audience": "This video is set to not Made for Kids",
+    "notMadeForKidsChecked": true,
+    "visibility": "Scheduled",
+    "relatedWatchUrl": "https://www.youtube.com/watch?v=wwcjcFfC-5M",
+    "saved": true,
+    "alteredContentLabel": "The words Altered content were not in the body text extract. A Yes radio on the details page was checked. The read-only API returns containsSyntheticMedia null, the same as the J2956 receipt."
+  },
+  "cuffReadOnly": {
+    "id": "l8bxm9L3zl8",
+    "privacy": "public",
+    "hasCustomThumbnail": true,
+    "modified": false
+  }
+}
