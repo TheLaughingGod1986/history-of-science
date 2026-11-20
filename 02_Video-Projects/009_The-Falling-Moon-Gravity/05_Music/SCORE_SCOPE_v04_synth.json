@@ -1,0 +1,152 @@
+{
+  "job": "J3236",
+  "film": "HOS:009",
+  "slug": "009_The-Falling-Moon-Gravity",
+  "authorized_at": "2026-11-20T15:22:00Z",
+  "authorized_by": "gemini (elected HOS acting Chief: Grok -> Claude -> Codex -> Gemini)",
+  "route": "final_bounded_gbp0_full_runtime_warm_own_synthesis_v04_synth",
+  "final_synthesis_attempt": true,
+  "v05_synth_allowed": false,
+  "score_accepted": false,
+  "finished_film_pass": false,
+  "spend": {
+    "cash_gbp": 0,
+    "subscription_credits": 0,
+    "account_gets": 0,
+    "elevenlabs_posts": 0
+  },
+  "guardrails": {
+    "activation_authorized": false,
+    "flight_module_untouched": "04_Audio/tools/hos009_score_flight.py",
+    "j3043_j3045_allowance": "permanently_closed_unused_J3047",
+    "v01_v02_status": "rejected_J2808",
+    "v03_synth_status": "rejected_J3236",
+    "teach_v01_preserved_untouched": true,
+    "loop_or_stretch_teach_v01": false,
+    "third_party_samples_or_soundfonts_allowed": false,
+    "excluded_soundfonts": [
+      "TimGM6mb.sf2",
+      "gs_instruments.dls"
+    ],
+    "j2035_status": "blocked",
+    "j2171_status": "blocked",
+    "youtube_buffer_schedule_changes": false
+  },
+  "reference_precedent": [
+    "02_Video-Projects/006_Trees-Are-Made-Of-Air/05_Music/_build_trees006_audio_v01.py",
+    "02_Video-Projects/006_Trees-Are-Made-Of-Air/05_Music/trees006_score_bed_v01.mp3",
+    "02_Video-Projects/007_The-First-Vaccine/05_Music/vaccine_score_bed_v01.mp3"
+  ],
+  "synthesis_spec": {
+    "script": "02_Video-Projects/009_The-Falling-Moon-Gravity/05_Music/_build_hos009_score_v04_synth.py",
+    "method": "deterministic pure Python/NumPy unified full-runtime warm chamber synthesis (low-harmonic warm pads + soft exponential-decay wooden harp/lute, modeled on shipped HOS 006/007 warm palette)",
+    "anti_regression_bans": [
+      "NO 4th-harmonic reed-organ buzz or flat broadband noise in sustained pads",
+      "NO mechanical 4.6-5.2 Hz sinusoidal vibrato buzz",
+      "NO bright metallic integer-delay Karplus-Strong chiptune/bell pings",
+      "NO +24 semitone piercing high-octave Part 2 jump",
+      "NO +2.2 dB RMS step-up between chapters (keep Parts 1-5 within +/-1.0 dB)",
+      "NO splicing into studio-recorded teach_v01 (eliminates the 175.28-178.28 s timbral cliff)"
+    ],
+    "sample_rate_hz": 48000,
+    "bit_depth": 16,
+    "channels": 2,
+    "duration_s": 535.33,
+    "vo_end_s": 518.4,
+    "reference_endpoint_s": 526.0,
+    "key_center": "D minor (A4=440Hz), distinct modal harmony from HOS 006 (G/D major) and HOS 007 (G major/E minor)",
+    "pace_bpm": "60-68",
+    "chapter_arc": [
+      {
+        "part": 1,
+        "title": "The Falling Moon",
+        "start_s": 0.0,
+        "end_s": 84.44,
+        "mood": "awe",
+        "bpm": 62,
+        "notes": "Calm warm low-harmonic chamber pads + sparse low-mid warm wooden harp pulse; moving modal chords every 2-4 bars, no static bass drone"
+      },
+      {
+        "part": 2,
+        "title": "An Apple in a Plague Year",
+        "start_s": 84.44,
+        "end_s": 176.78,
+        "mood": "awe",
+        "bpm": 62,
+        "crossfade_s": 3.0,
+        "notes": "Warmer mid-register Woolsthorpe orchard colour (D-Dorian / F-major warmth); same loudness band as Part 1, NO octave leap or piercing upper register"
+      },
+      {
+        "part": 3,
+        "title": "The Cannon on the Mountain",
+        "start_s": 176.78,
+        "end_s": 260.16,
+        "mood": "explain",
+        "bpm": 66,
+        "crossfade_s": 3.0,
+        "notes": "Smooth 3.0 s awe->explain mood crossfade at 176.78 s; light rhythmic warm wooden-harp pulse supporting Newton's cannon explanation"
+      },
+      {
+        "part": 4,
+        "title": "The Moon Test",
+        "start_s": 260.16,
+        "end_s": 393.86,
+        "mood": "explain",
+        "bpm": 66,
+        "crossfade_s": 3.0,
+        "notes": "Measured rhythmic explain pulse through spray-paint & 3,600x calculation; natural subtle thinning across 363-393 s for Halley's Cambridge visit"
+      },
+      {
+        "part": 5,
+        "title": "Falling Around the World",
+        "start_s": 393.86,
+        "end_s": 535.33,
+        "mood": "awe",
+        "bpm": 62,
+        "crossfade_s": 3.0,
+        "notes": "Smooth 3.0 s explain->awe transition at 393.86 s; spacious 395-427 s, gentle warm pulse 428-518.40 s, natural warm thinning & decay past 518.40 s VO end and 526.00 s reference endpoint to silence by ~533-535.33 s"
+      }
+    ],
+    "max_interior_dropout_db": -45.0,
+    "max_interior_dropout_count_0_to_526s": 0,
+    "outputs": [
+      "_build_hos009_score_v04_synth.py",
+      "hos_009_score_v04_synth.wav",
+      "hos_009_score_v04_synth_plan.json",
+      "hos_009_stem_part01_the_falling_moon_v04.wav",
+      "hos_009_stem_part02_an_apple_in_a_plague_year_v04.wav",
+      "hos_009_stem_part03_the_cannon_on_the_mountain_v04.wav",
+      "hos_009_stem_part04_the_moon_test_v04.wav",
+      "hos_009_stem_part05_falling_around_the_world_v04.wav",
+      "CONTINUITY_v04_synth.json",
+      "music_gate_v04_synth.json",
+      "PROVENANCE_v04_synth.json",
+      "audio_review_v04_synth/hos_009_transition_078_092_part2_mix_v04.wav",
+      "audio_review_v04_synth/hos_009_transition_168_186_bed_v04.wav",
+      "audio_review_v04_synth/hos_009_transition_168_186_mix_v04.wav",
+      "audio_review_v04_synth/hos_009_transition_386_402_part5_mix_v04.wav",
+      "audio_review_v04_synth/hos_009_reference_mix_0_518s40_v04.wav",
+      "audio_review_v04_synth/hos_009_tail_518s40_v04.wav",
+      "audio_review_v04_synth/hos_009_reference_endpoint_526s_v04.wav"
+    ]
+  },
+  "gates": {
+    "music_gate_script": "orbit-with-ben/scripts/music_gate.py (unchanged)",
+    "min_library_comparisons": 89,
+    "max_unreadable": 0,
+    "max_similarity": 0.8,
+    "waiver_allowed": false,
+    "silencedetect_checks_0_to_526s": [
+      "noise=-45dB:d=0.25",
+      "noise=-45dB:d=0.50"
+    ],
+    "independent_audio_input_review_required": true,
+    "separate_chief_disposition_required": true
+  },
+  "queued_chain": {
+    "production": "J3239",
+    "independent_ear_review": "J3240",
+    "chief_final_disposition": "J3241"
+  },
+  "terminal_fallback_if_v04_fails": "NO v05_synth allowed. J3241 must refuse acceptance, keep J2035/J2171 held, and immediately escalate ONE single explicit billing/pricing confirmation question to Ben for ElevenLabs music_v2 (confirming single-request credit max <= 3,000 and GBP0 cash under Creator plan)."
+}
