@@ -59,10 +59,10 @@
       "eta": "2026-11-21"
     },
     "edit": {
-      "state": "review",
+      "state": "doing",
       "due": "2026-11-19",
-      "owner": "cursor",
-      "waiting": "J2036 reads the v02 gates, proof stills and card stills",
+      "owner": "qa (J2036)",
+      "waiting": "J2036 checks v02 gates, proof stills, 42 Teach cards, chapters re-time, and thumbnail manifest wiring",
       "underway": false,
       "note": "J3261 v02 is on the shared working store at 09_Assembly/j2035_v02/hos009_long_master_v02.mp4 (sha256 9d8731cb49641776027bcbd75a6f4ae5519fc3907c28cb7f422883ebde73ef10). v01 stays 802b5c7eb0dd64a77b938e5f26c2f63104c3b851979dabe61e39e70eaf33a833. Opening is 8 cuts under 4 seconds, with the apple and table from 4s to 16s. Teach cards: 2 people, 8 dates, 4 facts, 1 timeline, 1 early graphic, 26 side labels. Picture QA PASS 0/92 fail, polish PASS 0/92 fail, music PASS, sound-effect level PASS. Split panel on the minute-and-second plate kept under Grok 7046684862. Table callback kept under Grok 6792271903. Five low-detail warnings. £0. No upload, schedule or privacy change. Not a film pass and not Ben's watch.",
       "since": "2026-11-21",
