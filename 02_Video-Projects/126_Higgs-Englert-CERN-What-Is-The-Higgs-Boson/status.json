@@ -1,0 +1,46 @@
+{
+  "film": "126",
+  "title": "What Is the Higgs Boson? (The 48-Year Hunt)",
+  "summary": "Proposed in J3245 and Rule-E pre-cleared by J3263 (GO 96.1/100, 21 Nov 2026). Stays in jobs/WIP.json next_hos under Rule G (4/4 active HOS slots full). Passes all currently in-force HOS topic gates (neighbours.py PASS: 11 strictly on-topic education videos >=1M incl. 2 TED-Ed, 0 off-topic; public_search.py autocomplete yes & 0 exact title collisions) and aligns with proposed hos-search-2027-01 Cluster 2 (J3224, currently needsBen in studio/plan.json). All facts unverified pending active HOS slot, SOURCES.md, and facts lane.",
+  "stages": {
+    "topic": {
+      "state": "todo",
+      "note": "J3245 topic brief written; J3263 Rule-E topic go/no-go review GO (96.1/100 in next_hos under Rule G); corrected hos-search-2027-01 plan status to proposed/needsBen and fixed Thumb A §2.5 title-repeat (48-YEAR HUNT -> REJECTED IN 1964); physics, 1964 two-paper & WHO-year guardrails logged; all claims unverified pending SOURCES.md and facts lane when an active HOS slot opens"
+    },
+    "script": {
+      "state": "todo"
+    },
+    "facts": {
+      "state": "todo"
+    },
+    "package": {
+      "state": "todo"
+    },
+    "vo": {
+      "state": "todo"
+    },
+    "shorts_scripts": {
+      "state": "todo"
+    },
+    "shorts_vo": {
+      "state": "todo"
+    },
+    "picture": {
+      "state": "todo"
+    },
+    "edit": {
+      "state": "todo"
+    },
+    "thumbnails": {
+      "state": "todo"
+    },
+    "ben_ok": {
+      "state": "todo"
+    },
+    "scheduled": {
+      "state": "todo"
+    }
+  },
+  "claims": [],
+  "next": ""
+}
