@@ -75,11 +75,23 @@
       "eta": "2026-11-21"
     },
     "thumbnails": {
-      "state": "review",
+      "state": "done",
       "due": "2026-11-19",
-      "owner": "cursor",
+      "owner": "gemini",
       "since": "2026-11-21",
-      "note": "J3262 built long candidates A (IT MISSES) and B (ONE APPLE) at £0 cash and 0 Flow credits. style_sheet and thumb_preview are in 08_Thumbnail/Selected. Parked for the elected Chief to score HOOK, BAND and PHONE. This is not a PASS and not Ben's watch."
+      "underway": false,
+      "steps": [
+        2,
+        2
+      ],
+      "steps_unit": "long thumbnails passed (A + B)",
+      "left": "",
+      "eta": "",
+      "waiting": "",
+      "jobs": [
+        "J3262"
+      ],
+      "note": "J3262 Acting Chief (Gemini) PASS (21 Nov 2026): long thumbnails A (IT MISSES, cd44f05657ddfea2...) and B (ONE APPLE, 3d1164330249e779...) PASS HOOK, BAND, PHONE (168x94), FAMILY (style_sheet vs 001-004), and Explorer on-model; £0 cash, 0 Flow credits (23450 before/after), Mini-NAS SHA256 parity verified. Ready for J2036 package wiring and Ben's final watch (ben_ok remains todo; not a film PASS or upload/schedule OK)."
     },
     "ben_ok": {
       "state": "todo",
