@@ -1,0 +1,590 @@
+{
+ "pulled": "2026-11-21",
+ "source": "YouTube GB search results and autocomplete; public, no login. Not vidIQ.",
+ "queries": {
+  "how do airplanes fly": {
+   "suggest": [
+    "how do airplanes fly",
+    "how do airplanes fly for kids",
+    "how do airplanes fly storybots",
+    "how do airplanes fly magic school bus",
+    "how do airplanes fly at night",
+    "how do airplanes fly dr binocs",
+    "how do airplanes fly animation",
+    "how do airplanes fly physics",
+    "how do airplanes fly minutephysics",
+    "how do airplanes fly documentary"
+   ],
+   "search": []
+  },
+  "wright brothers first flight": {
+   "suggest": [
+    "wright brothers first flight",
+    "wright brothers first flight footage",
+    "wright brothers first flight video",
+    "wright brothers first flight documentary",
+    "wright brothers first flight story",
+    "wright brothers first flight real video",
+    "wright brothers first flight 1903",
+    "wright brothers first flight in tamil",
+    "wright brothers first flight in hindi",
+    "wright brothers first flight movie"
+   ],
+   "search": [
+    {
+     "id": "-kjRL-Q-KBc",
+     "title": "Wright Brothers First Flight, 1903",
+     "channel": "Old Movie Collector",
+     "views": "814,520 views",
+     "age": "11 yr ago",
+     "length": "2:33"
+    },
+    {
+     "id": "YDlk4Ky_ahs",
+     "title": "The Wright Brothers, First Successful Airplane (1903)",
+     "channel": "Simple History",
+     "views": "1,410,350 views",
+     "age": "9 yr ago",
+     "length": "2:30"
+    },
+    {
+     "id": "aot8n9eZ2zs",
+     "title": "The UnXplained: The Wright’s Brothers Revolutionize Flying (Season 3) | History",
+     "channel": "HISTORY",
+     "views": "280,020 views",
+     "age": "4 yr ago",
+     "length": "6:01"
+    },
+    {
+     "id": "Tx-ZyNFhv8Y",
+     "title": "The Wright Brothers first airplanes 1903",
+     "channel": "Daniel Izzo",
+     "views": "79,867 views",
+     "age": "18 yr ago",
+     "length": "0:26"
+    },
+    {
+     "id": "iSuDuCzszUg",
+     "title": "Learning To Fly | The World's First Airplane",
+     "channel": "Naked Science",
+     "views": "1,583,808 views",
+     "age": "4 yr ago",
+     "length": "41:46"
+    },
+    {
+     "id": "yGFbISQGnII",
+     "title": "The Wright Brothers' Amazing First Flight: A Sky-High Adventure!",
+     "channel": "KidQuest History",
+     "views": "14,598 views",
+     "age": "2 yr ago",
+     "length": "2:32"
+    },
+    {
+     "id": "AgOVxQtcRsY",
+     "title": "Edison Footage of the Wright Brothers' 1909 Flight",
+     "channel": "WYSO913FM",
+     "views": "443,716 views",
+     "age": "13 yr ago",
+     "length": "6:02"
+    },
+    {
+     "id": "vkAl1hMLLm8",
+     "title": "The Wright Brothers: First Flight - 1903 - History in Color",
+     "channel": "Time Travel: History in Color",
+     "views": "43,524 views",
+     "age": "5 yr ago",
+     "length": "2:44"
+    }
+   ]
+  },
+  "wright brothers wind tunnel": {
+   "suggest": [
+    "wright brothers wind tunnel"
+   ],
+   "search": [
+    {
+     "id": "WAFzfwdmhyo",
+     "title": "Harnessing the Wind at MIT: Wright Brothers Wind Tunnel",
+     "channel": "Massachusetts Institute of Technology (MIT)",
+     "views": "12,894 views",
+     "age": "14 yr ago",
+     "length": "6:14"
+    },
+    {
+     "id": "gDClKYXsC6w",
+     "title": "The Wright Brothers: The Wind Tunnel War Before the First Flight",
+     "channel": "History Forge",
+     "views": "116 views",
+     "age": "4 mo ago",
+     "length": "2:14:05"
+    },
+    {
+     "id": "ghbrDmlkmao",
+     "title": "MIT's Wright Brothers Wind Tunnel",
+     "channel": "Elemental MIT",
+     "views": "946 views",
+     "age": "10 yr ago",
+     "length": "1:53"
+    },
+    {
+     "id": "LigpsX1KoQE",
+     "title": "The Brilliant Engineering of FIRST FLIGHT !",
+     "channel": "Sabin Civil Engineering",
+     "views": "4,461,586 views",
+     "age": "6 yr ago",
+     "length": "8:36"
+    },
+    {
+     "id": "bRWbXXs4Wqc",
+     "title": "How the Wright Brothers Solved the Problem of Flight | The Henry Ford’s Innovation Nation",
+     "channel": "The Henry Ford",
+     "views": "4,098 views",
+     "age": "4 yr ago",
+     "length": "3:16"
+    },
+    {
+     "id": "4TifT5pF4rM",
+     "title": "Building the new Wright Brothers Wind Tunnel",
+     "channel": "MIT AeroAstro",
+     "views": "5,893 views",
+     "age": "4 yr ago",
+     "length": "6:07"
+    },
+    {
+     "id": "KtlDp-bH_y8",
+     "title": "Wright Brothers Wind Tunnel at MIT",
+     "channel": "ColfaxMath",
+     "views": "650 views",
+     "age": "7 yr ago",
+     "length": "1:27"
+    },
+    {
+     "id": "3Y20Q7LZ75E",
+     "title": "Orville and Wilbur Wright discuss Drag Force",
+     "channel": "NASA Glenn Research and Technology",
+     "views": "1,318 views",
+     "age": "5 yr ago",
+     "length": "8:34"
+    }
+   ]
+  },
+  "how does an airplane wing work": {
+   "suggest": [
+    "how does an airplane wing work",
+    "how does a plane wing work",
+    "how an airplane wing works"
+   ],
+   "search": [
+    {
+     "id": "aFO4PBolwFg",
+     "title": "How Does A Wing Actually Work?",
+     "channel": "Veritasium",
+     "views": "1,662,162 views",
+     "age": "14 yr ago",
+     "length": "2:51"
+    },
+    {
+     "id": "p4VHMsIuPmk",
+     "title": "How do airplanes actually fly? - Raymond Adkins",
+     "channel": "TED-Ed",
+     "views": "2,568,211 views",
+     "age": "3 yr ago",
+     "length": "5:03"
+    },
+    {
+     "id": "CT5oMBN5W5M",
+     "title": "How Airplane Wings REALLY Generate Lift",
+     "channel": "Math and Science",
+     "views": "2,044,514 views",
+     "age": "1 yr ago",
+     "length": "57:24"
+    },
+    {
+     "id": "ufeky6EIXQ4",
+     "title": "How Does  A Plane Wing Work?",
+     "channel": "DaveHax",
+     "views": "748,988 views",
+     "age": "7 yr ago",
+     "length": "10:09"
+    },
+    {
+     "id": "3b9xCC_vaZQ",
+     "title": "Lift: Bernoulli’s Principle (How Things Fly Demonstration)",
+     "channel": "Smithsonian National Air and Space Museum",
+     "views": "180,821 views",
+     "age": "6 yr ago",
+     "length": "2:13"
+    },
+    {
+     "id": "E3i_XHlVCeU",
+     "title": "Understanding Aerodynamic Lift",
+     "channel": "The Efficient Engineer",
+     "views": "2,113,943 views",
+     "age": "5 yr ago",
+     "length": "14:19"
+    },
+    {
+     "id": "NZLbTuBDhJg",
+     "title": "How a Jet Airliner Works",
+     "channel": "Animagraffs",
+     "views": "19,487,605 views",
+     "age": "4 yr ago",
+     "length": "25:56"
+    },
+    {
+     "id": "VLpSxHwfU04",
+     "title": "How Airplanes Fly! | Airplane Science | SciShow Kids",
+     "channel": "SciShow Kids",
+     "views": "1,754,860 views",
+     "age": "3 yr ago",
+     "length": "4:31"
+    }
+   ]
+  },
+  "How Do Airplanes Fly? (The 1901 Wind Tunnel)": {
+   "suggest": [],
+   "search": [
+    {
+     "id": "p4VHMsIuPmk",
+     "title": "How do airplanes actually fly? - Raymond Adkins",
+     "channel": "TED-Ed",
+     "views": "2,568,211 views",
+     "age": "3 yr ago",
+     "length": "5:03"
+    },
+    {
+     "id": "Gg0TXNXgz-w",
+     "title": "How Do Airplanes Fly?",
+     "channel": "minutephysics",
+     "views": "2,481,276 views",
+     "age": "11 yr ago",
+     "length": "3:11"
+    },
+    {
+     "id": "s2SnAzvv2LQ",
+     "title": "How the Wright Brothers Invented the Airplane: The Wind Tunnel | Eureka Engine Ep 3",
+     "channel": "Eureka Engine",
+     "views": "17 views",
+     "age": "13 days ago",
+     "length": "4:23"
+    },
+    {
+     "id": "OX9apjetLgw",
+     "title": "Ohio's Aviation Heritage Tour: Wright 1901 Wind Tunnel",
+     "channel": "Hosted by DVIDS HUB",
+     "views": "150 views",
+     "age": "2 yr ago",
+     "length": "0:27"
+    },
+    {
+     "id": "rPbfLDALDko",
+     "title": "The Famous Explanation of How Planes Fly Is Wrong",
+     "channel": "Pocket Explainers",
+     "views": "22 views",
+     "age": "2 wk ago",
+     "length": "2:17"
+    },
+    {
+     "id": "ix0mqhMQYUo",
+     "title": "The Wright Brothers Built a Wind Tunnel—and Changed Flight",
+     "channel": "What Time Built",
+     "views": "82 views",
+     "age": "2 wk ago",
+     "length": "14:52"
+    },
+    {
+     "id": "C1UaWpj09ew",
+     "title": "Wind Tunnel Explained | Aerodynamic Lift Explained Simply | How Airplanes Fly ✈️ | Physics of Flight",
+     "channel": "Saurav Kumar",
+     "views": "148 views",
+     "age": "5 mo ago",
+     "length": "3:02"
+    },
+    {
+     "id": "pQI6_VlBSDA",
+     "title": "How does a plane fly?",
+     "channel": "How?",
+     "views": "6 views",
+     "age": "7 hr ago",
+     "length": "7:53"
+    }
+   ]
+  },
+  "Wright Brothers First Flight: The 1901 Wind Tunnel": {
+   "suggest": [],
+   "search": [
+    {
+     "id": "YDlk4Ky_ahs",
+     "title": "The Wright Brothers, First Successful Airplane (1903)",
+     "channel": "Simple History",
+     "views": "1,410,350 views",
+     "age": "9 yr ago",
+     "length": "2:30"
+    },
+    {
+     "id": "vW35kuqsoRw",
+     "title": "The Wright Brothers: The Untold Engineering of the First Flight",
+     "channel": "Curator X",
+     "views": "5 views",
+     "age": "2 mo ago",
+     "length": "15:52"
+    },
+    {
+     "id": "s2SnAzvv2LQ",
+     "title": "How the Wright Brothers Invented the Airplane: The Wind Tunnel | Eureka Engine Ep 3",
+     "channel": "Eureka Engine",
+     "views": "17 views",
+     "age": "13 days ago",
+     "length": "4:23"
+    },
+    {
+     "id": "gDClKYXsC6w",
+     "title": "The Wright Brothers: The Wind Tunnel War Before the First Flight",
+     "channel": "History Forge",
+     "views": "116 views",
+     "age": "4 mo ago",
+     "length": "2:14:05"
+    },
+    {
+     "id": "Qk0uULcaPes",
+     "title": "The Wright Brothers’ First Flight: 12 Seconds That Changed The History Of Human Transportation",
+     "channel": "VELOR - Legends Are Written By Decisions",
+     "views": "265 views",
+     "age": "4 mo ago",
+     "length": "6:43"
+    },
+    {
+     "id": "LigpsX1KoQE",
+     "title": "The Brilliant Engineering of FIRST FLIGHT !",
+     "channel": "Sabin Civil Engineering",
+     "views": "4,461,586 views",
+     "age": "6 yr ago",
+     "length": "8:36"
+    },
+    {
+     "id": "ix0mqhMQYUo",
+     "title": "The Wright Brothers Built a Wind Tunnel—and Changed Flight",
+     "channel": "What Time Built",
+     "views": "82 views",
+     "age": "2 wk ago",
+     "length": "14:52"
+    },
+    {
+     "id": "_PX_sVbmJEc",
+     "title": "The Wright Brothers' First Flight in 2 Minutes | December 17, 1903 | 2-Minute History",
+     "channel": "2-Minute History",
+     "views": "100 views",
+     "age": "3 wk ago",
+     "length": "2:01"
+    }
+   ]
+  },
+  "How Did the Wright Brothers Solve Flight? (1901)": {
+   "suggest": [],
+   "search": [
+    {
+     "id": "YDlk4Ky_ahs",
+     "title": "The Wright Brothers, First Successful Airplane (1903)",
+     "channel": "Simple History",
+     "views": "1,410,350 views",
+     "age": "9 yr ago",
+     "length": "2:30"
+    },
+    {
+     "id": "EUKdZg-keNg",
+     "title": "How the Wright Brothers Controlled an Airplane Before Modern Flight Controls Existed #WrightFlyer",
+     "channel": "Historium Aviation",
+     "views": "218 views",
+     "age": "2 mo ago",
+     "length": "5:58"
+    },
+    {
+     "id": "hC_3jlaeQHo",
+     "title": "Wright Brothers: How Did Two Bicycle Makers Solve Controlled Flight?",
+     "channel": "IdeaAxis",
+     "views": "6 views",
+     "age": "3 days ago",
+     "length": "3:43"
+    },
+    {
+     "id": "xR5Yg5CacV4",
+     "title": "How Did the Wright Brothers Build the First Plane? Science Explained!",
+     "channel": "The Wonder Compass - Kids STEM Adventures",
+     "views": "4,894 views",
+     "age": "13 days ago",
+     "length": "5:20"
+    },
+    {
+     "id": "aot8n9eZ2zs",
+     "title": "The UnXplained: The Wright’s Brothers Revolutionize Flying (Season 3) | History",
+     "channel": "HISTORY",
+     "views": "280,004 views",
+     "age": "4 yr ago",
+     "length": "6:01"
+    },
+    {
+     "id": "sklryxX01D8",
+     "title": "THE WRIGHT BROTHERS And The Evolution Of Aviation | Upscaled Documentary",
+     "channel": "DroneScapes",
+     "views": "1,390,007 views",
+     "age": "3 yr ago",
+     "length": "1:52:24"
+    },
+    {
+     "id": "MkJ080J0HdI",
+     "title": "12 Seconds That Gave the World Wings: The Wright Brothers' First Flight | The Time Vault",
+     "channel": "The Time Vault",
+     "views": "54 views",
+     "age": "1 mo ago",
+     "length": "6:05"
+    },
+    {
+     "id": "ddrKduF5o5g",
+     "title": "The Wright Brothers: 12 Seconds That Changed the World (1903) | Full History Documentary",
+     "channel": "    Timelinehoy",
+     "views": "91 views",
+     "age": "3 wk ago",
+     "length": "19:31"
+    }
+   ]
+  },
+  "Why Did the Wright Brothers Build a Wind Tunnel?": {
+   "suggest": [],
+   "search": [
+    {
+     "id": "s2SnAzvv2LQ",
+     "title": "How the Wright Brothers Invented the Airplane: The Wind Tunnel | Eureka Engine Ep 3",
+     "channel": "Eureka Engine",
+     "views": "17 views",
+     "age": "13 days ago",
+     "length": "4:23"
+    },
+    {
+     "id": "icAFDUqdHoU",
+     "title": "The Wright Brothers Built a Wind Tunnel Because the Tables Were Wrong",
+     "channel": "Why It Snapped",
+     "views": "8 views",
+     "age": "9 days ago",
+     "length": "3:01"
+    },
+    {
+     "id": "gDClKYXsC6w",
+     "title": "The Wright Brothers: The Wind Tunnel War Before the First Flight",
+     "channel": "History Forge",
+     "views": "116 views",
+     "age": "4 mo ago",
+     "length": "2:14:05"
+    },
+    {
+     "id": "LigpsX1KoQE",
+     "title": "The Brilliant Engineering of FIRST FLIGHT !",
+     "channel": "Sabin Civil Engineering",
+     "views": "4,461,586 views",
+     "age": "6 yr ago",
+     "length": "8:36"
+    },
+    {
+     "id": "ix0mqhMQYUo",
+     "title": "The Wright Brothers Built a Wind Tunnel—and Changed Flight",
+     "channel": "What Time Built",
+     "views": "82 views",
+     "age": "2 wk ago",
+     "length": "14:52"
+    },
+    {
+     "id": "WAFzfwdmhyo",
+     "title": "Harnessing the Wind at MIT: Wright Brothers Wind Tunnel",
+     "channel": "Massachusetts Institute of Technology (MIT)",
+     "views": "12,894 views",
+     "age": "14 yr ago",
+     "length": "6:14"
+    },
+    {
+     "id": "kekHpUXqZlY",
+     "title": "Aviation Pioneers · The Wright Brothers, Part 4 · The Wind in a Box",
+     "channel": "Basil Builds",
+     "views": "No views",
+     "age": "5 days ago",
+     "length": "1:52"
+    },
+    {
+     "id": "NcD6tPQhUNs",
+     "title": "Wright Brothers: The 12 Seconds That Changed Everything",
+     "channel": "The Factorà",
+     "views": "3,240 views",
+     "age": "3 mo ago",
+     "length": "4:10"
+    }
+   ]
+  },
+  "How Did the Wright Brothers Steer the First Plane?": {
+   "suggest": [],
+   "search": [
+    {
+     "id": "xR5Yg5CacV4",
+     "title": "How Did the Wright Brothers Build the First Plane? Science Explained!",
+     "channel": "The Wonder Compass - Kids STEM Adventures",
+     "views": "4,894 views",
+     "age": "13 days ago",
+     "length": "5:20"
+    },
+    {
+     "id": "YDlk4Ky_ahs",
+     "title": "The Wright Brothers, First Successful Airplane (1903)",
+     "channel": "Simple History",
+     "views": "1,410,350 views",
+     "age": "9 yr ago",
+     "length": "2:30"
+    },
+    {
+     "id": "LigpsX1KoQE",
+     "title": "The Brilliant Engineering of FIRST FLIGHT !",
+     "channel": "Sabin Civil Engineering",
+     "views": "4,461,586 views",
+     "age": "6 yr ago",
+     "length": "8:36"
+    },
+    {
+     "id": "57hXETesOLk",
+     "title": "Who Was First in Flight? | Wright Bros. VS. Santos-Dumont",
+     "channel": "Aviation Austin",
+     "views": "100,541 views",
+     "age": "6 yr ago",
+     "length": "5:47"
+    },
+    {
+     "id": "aot8n9eZ2zs",
+     "title": "The UnXplained: The Wright’s Brothers Revolutionize Flying (Season 3) | History",
+     "channel": "HISTORY",
+     "views": "280,004 views",
+     "age": "4 yr ago",
+     "length": "6:01"
+    },
+    {
+     "id": "EkpQAGQiv4Q",
+     "title": "The Wright Brothers DID Invent the Airplane",
+     "channel": "Greg's Airplanes and Automobiles",
+     "views": "259,536 views",
+     "age": "7 yr ago",
+     "length": "47:49"
+    },
+    {
+     "id": "-kjRL-Q-KBc",
+     "title": "Wright Brothers First Flight, 1903",
+     "channel": "Old Movie Collector",
+     "views": "814,501 views",
+     "age": "11 yr ago",
+     "length": "2:33"
+    },
+    {
+     "id": "NpqU3eSeS1c",
+     "title": "The Invention Of Airplanes | History of Aeroplane Invention | Aviation History with Dr. Binocs",
+     "channel": "Peekaboo Kidz",
+     "views": "1,010,236 views",
+     "age": "1 yr ago",
+     "length": "6:28"
+    }
+   ]
+  }
+ }
+}
