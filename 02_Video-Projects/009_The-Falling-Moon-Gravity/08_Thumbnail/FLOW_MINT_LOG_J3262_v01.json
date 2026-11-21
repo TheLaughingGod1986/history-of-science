@@ -1,0 +1,44 @@
+{
+  "film": "009",
+  "job": "J3262",
+  "engine": "Flow Image Nano Banana 2.1 16:9 x1 via the open Flow tab",
+  "price": "0 credits",
+  "plates": {
+    "A": {
+      "hook": "IT MISSES",
+      "png": "hos_009_thumb_A_it_misses_plate01.png",
+      "jpg": "hos_009_thumb_A_it_misses_plate01.jpg",
+      "sha256_png": "d1a4020dbf3122e7f4c15b524b58d4927ccff0823f87a84a7aa4421b46a3de57",
+      "sha256_jpg": "c9b4c511adeff0e3724d5d2e1ed949d8154f7e263df3a2a94b9f9c1cb630d5ed",
+      "size": [
+        1280,
+        720
+      ],
+      "creditsBefore": 23450,
+      "creditsAfter": 23450,
+      "creditsUsed": 0,
+      "elapsedSeconds": 51.8,
+      "mintedAt": "2026-11-21T00:18Z"
+    },
+    "B": {
+      "hook": "ONE APPLE",
+      "png": "hos_009_thumb_B_one_apple_plate01.png",
+      "jpg": "hos_009_thumb_B_one_apple_plate01.jpg",
+      "sha256_png": "eddb8fab87793310f5f661f23f23594d9f9deed7c2a06a20af187dbb62a49cbd",
+      "sha256_jpg": "b8f3ffd298da31a16e4b76a59596a4eba03aae89775825a4b2c036262be1a186",
+      "size": [
+        1280,
+        720
+      ],
+      "creditsBefore": 23450,
+      "creditsAfter": 23450,
+      "creditsUsed": 0,
+      "elapsedSeconds": 33.5,
+      "mintedAt": "2026-11-21T00:18Z"
+    }
+  },
+  "creditsStart": 23450,
+  "liability": 800,
+  "creditsEnd": 23450,
+  "totalCreditsUsed": 0
+}
