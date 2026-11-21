@@ -1,0 +1,7 @@
+PASS  hos_009_short_A_v01.mp4  dur=25.4s  audio=-17.1dB  motion=17.47  f0diff=3.86  cut1=2.8s  vo_onset=0.10s  tail_gap=1.16s  vo_src=/Volumes/MiniWork/scratch/J2171-build/short_A/hos_009_short_A_v01_vo.wav  dhash=3f3f3f3531191158
+   full-bleed 0.00s  fills the frame  sharp above/middle/below=0.006/0.544/0.856  detail top/centre/bottom=1.94/10.83/10.68  spread top/bottom=46.82/21.91
+   full-bleed 0.25s  fills the frame  sharp above/middle/below=0.007/0.533/0.858  detail top/centre/bottom=1.75/10.62/10.71  spread top/bottom=44.42/21.88
+   full-bleed 0.50s  fills the frame  sharp above/middle/below=0.02/0.52/0.86  detail top/centre/bottom=1.59/10.4/10.5  spread top/bottom=41.75/21.7
+   full-bleed whole Short  0/26 frames padded at one a second, 0/51 at two a second  padded stretches: none  no end card named in meta
+   warn  duration 25.40s outside 16.0–19.0s band
+   sheet /Volumes/MiniWork/scratch/J2171/hos-wt/02_Video-Projects/009_The-Falling-Moon-Gravity/10_Shorts/qa_short_A_v01/sheets/hos_009_short_A_v01_open_sheet.jpg

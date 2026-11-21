@@ -1,0 +1,220 @@
+{
+  "rule": {
+    "low_detail": "FAIL: luma std < 13.44 and edge density < 0.0259 (absolute floor); WARN: luma std < 18.0 or edge density < film p5",
+    "split_panel": "full-height/width seam or gutter",
+    "split_panel_gutter": "gutter counts only with edge density >= 0.01 in the 10% band on both sides",
+    "near_black": "mean < 28.0 or p95 < 50.0",
+    "noise": "grain std > 6 over structure std < 12, and the 8x-downscaled frame under the low-detail floor (std < 13.44 and edge density < 0.0259)",
+    "jitter": "centre-patch phase correlation: reversal against trend or > 0.35 px off trend"
+  },
+  "low_detail_floor": {
+    "std": 13.44,
+    "edge": 0.0259,
+    "calibration": {
+      "video": "025_MarsRobot_full_rough_v02d.mp4",
+      "factor": 1.2,
+      "frames": [
+        {
+          "source": "PIA22223.jpg",
+          "t": 201.0,
+          "std": 12.1,
+          "edge": 0.0223
+        },
+        {
+          "source": "PIA22223.jpg",
+          "t": 216.3,
+          "std": 11.2,
+          "edge": 0.0216
+        },
+        {
+          "source": "PIA22929.jpg",
+          "t": 297.4,
+          "std": 26.54,
+          "edge": 0.5735
+        }
+      ]
+    }
+  },
+  "video": "/Volumes/MiniWork/scratch/J2171-build/short_B/hos_009_short_B_v01.mp4",
+  "edge_floor": 0.0147,
+  "verdict": "PASS",
+  "failed": [],
+  "warn": [
+    {
+      "row": "s09",
+      "cut": 8,
+      "t": 24.98,
+      "source": "loop_05_minute_second_t1.mp4",
+      "why": [
+        "low detail: edge density 0.0127 < film p5 0.0147"
+      ]
+    }
+  ],
+  "reviewed_ok": [],
+  "rows": [
+    {
+      "cut": 0,
+      "row": "s01",
+      "source": "05_minute_second_t1.mp4",
+      "t": 1.41,
+      "std": 62.35,
+      "mean": 91.14,
+      "p95": 215.0,
+      "edge": 0.0299,
+      "hf": 10.61,
+      "lf": 57.99,
+      "std8": 59.55,
+      "edge8": 0.1572,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 1,
+      "row": "s02",
+      "source": "02_apple_and_moon_t1.mp4",
+      "t": 4.19,
+      "std": 33.11,
+      "mean": 55.73,
+      "p95": 105.0,
+      "edge": 0.0177,
+      "hf": 5.18,
+      "lf": 30.33,
+      "std8": 31.58,
+      "edge8": 0.1847,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 2,
+      "row": "s03",
+      "source": "06_pretty_nearly_t1.mp4",
+      "t": 6.99,
+      "std": 69.76,
+      "mean": 139.23,
+      "p95": 236.0,
+      "edge": 0.0354,
+      "hf": 6.95,
+      "lf": 68.25,
+      "std8": 68.47,
+      "edge8": 0.1739,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 3,
+      "row": "s04",
+      "source": "code_graphic_009_short_B_s04_sixty_earths_9x16.mp4",
+      "t": 9.93,
+      "std": 24.44,
+      "mean": 188.5,
+      "p95": 210.0,
+      "edge": 0.0521,
+      "hf": 13.08,
+      "lf": 13.89,
+      "std8": 16.37,
+      "edge8": 0.1118,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 4,
+      "row": "s05",
+      "source": "02_spray_paint_t1.mp4",
+      "t": 12.97,
+      "std": 29.39,
+      "mean": 150.65,
+      "p95": 179.0,
+      "edge": 0.0243,
+      "hf": 9.13,
+      "lf": 25.17,
+      "std8": 25.86,
+      "edge8": 0.0794,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 5,
+      "row": "s06",
+      "source": "code_graphic_009_short_B_s06_dots_square_9x16.mp4",
+      "t": 16.07,
+      "std": 31.52,
+      "mean": 146.47,
+      "p95": 180.0,
+      "edge": 0.112,
+      "hf": 17.89,
+      "lf": 21.51,
+      "std8": 22.15,
+      "edge8": 0.1185,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 6,
+      "row": "s07",
+      "source": "06_pretty_nearly_c1_t1.mp4",
+      "t": 19.23,
+      "std": 68.95,
+      "mean": 136.97,
+      "p95": 239.0,
+      "edge": 0.0187,
+      "hf": 3.83,
+      "lf": 66.81,
+      "std8": 68.17,
+      "edge8": 0.2331,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 7,
+      "row": "s08",
+      "source": "01_one_law_t1.mp4",
+      "t": 22.65,
+      "std": 43.72,
+      "mean": 83.52,
+      "p95": 181.0,
+      "edge": 0.0661,
+      "hf": 8.54,
+      "lf": 40.32,
+      "std8": 41.49,
+      "edge8": 0.2046,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 8,
+      "row": "s09",
+      "source": "loop_05_minute_second_t1.mp4",
+      "t": 24.98,
+      "std": 52.11,
+      "mean": 76.58,
+      "p95": 207.0,
+      "edge": 0.0127,
+      "hf": 3.2,
+      "lf": 51.16,
+      "std8": 51.39,
+      "edge8": 0.0871,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0127 < film p5 0.0147"
+      ]
+    }
+  ]
+}

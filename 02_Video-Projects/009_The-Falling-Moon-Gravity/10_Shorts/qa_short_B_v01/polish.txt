@@ -1,0 +1,10 @@
+s01     1.4s 05_minute_second_t1.mp4      ok
+ s02     4.2s 02_apple_and_moon_t1.mp4     ok
+ s03     7.0s 06_pretty_nearly_t1.mp4      ok
+ s04     9.9s code_graphic_009_short_B_s04 ok
+ s05    13.0s 02_spray_paint_t1.mp4        ok
+ s06    16.1s code_graphic_009_short_B_s06 ok
+ s07    19.2s 06_pretty_nearly_c1_t1.mp4   ok
+ s08    22.6s 01_one_law_t1.mp4            ok
+ s09    25.0s loop_05_minute_second_t1.mp4 WARN low detail: edge density 0.0127 < film p5 0.0147
+polish gate PASS: 0 of 9 rows failed, 1 to look at -> /Volumes/MiniWork/scratch/J2171/hos-wt/02_Video-Projects/009_The-Falling-Moon-Gravity/10_Shorts/qa_short_B_v01/polish_gate.json

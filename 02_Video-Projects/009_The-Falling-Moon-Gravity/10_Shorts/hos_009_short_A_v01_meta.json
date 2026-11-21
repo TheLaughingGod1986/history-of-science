@@ -1,0 +1,514 @@
+{
+  "film": "HOS:009",
+  "job": "J2171",
+  "short_id": "short_A",
+  "stem": "hos_009_short_A_v01",
+  "youtube_title": "What Would Happen If the Moon Stopped Moving?",
+  "promoted_long_title": "Why Doesn't the Moon Fall to Earth?",
+  "conditional_target_air_date": "2026-11-27",
+  "long_must_be_public_first": true,
+  "resolution": "936x1664",
+  "fps": 30,
+  "duration_s": 25.4,
+  "hook_caption": {
+    "text": "IT'S FALLING",
+    "start_s": 0.0,
+    "end_s": 2.0
+  },
+  "vo_onset_s": 0.12,
+  "hook_sentence_end_s": 2.8,
+  "first_cut_s": 2.8,
+  "second_cut_s": 5.74,
+  "last_word_end_s": 24.24,
+  "loop_tail_s": 1.0,
+  "payoff_word": "orbit",
+  "payoff_start_s": 19.64,
+  "payoff_frac": 0.7757,
+  "meta_promise": false,
+  "end_card": null,
+  "full_film_banner": false,
+  "spoken": "The Moon is falling towards the Earth right now. Every second, it moves sideways about a kilometre and drops a tiny bit towards us. But the Earth curves away beneath it, so it keeps on missing. Isaac Newton worked this out more than three hundred years ago. An orbit isn't floating at all. It's falling and missing for ever.",
+  "captions": [
+    {
+      "word": "The",
+      "start": 0.12,
+      "end": 0.16
+    },
+    {
+      "word": "Moon",
+      "start": 0.24,
+      "end": 0.56
+    },
+    {
+      "word": "is",
+      "start": 0.72,
+      "end": 0.86
+    },
+    {
+      "word": "falling",
+      "start": 0.9,
+      "end": 1.28
+    },
+    {
+      "word": "towards",
+      "start": 1.32,
+      "end": 1.7
+    },
+    {
+      "word": "the",
+      "start": 1.74,
+      "end": 1.82
+    },
+    {
+      "word": "Earth",
+      "start": 1.9,
+      "end": 2.18
+    },
+    {
+      "word": "right",
+      "start": 2.3,
+      "end": 2.5
+    },
+    {
+      "word": "now.",
+      "start": 2.56,
+      "end": 2.8
+    },
+    {
+      "word": "Every",
+      "start": 3.62,
+      "end": 3.78
+    },
+    {
+      "word": "second,",
+      "start": 3.9,
+      "end": 4.28
+    },
+    {
+      "word": "it",
+      "start": 4.34,
+      "end": 4.44
+    },
+    {
+      "word": "moves",
+      "start": 4.5,
+      "end": 4.72
+    },
+    {
+      "word": "sideways",
+      "start": 4.78,
+      "end": 5.36
+    },
+    {
+      "word": "about",
+      "start": 5.42,
+      "end": 5.64
+    },
+    {
+      "word": "a",
+      "start": 5.66,
+      "end": 5.74
+    },
+    {
+      "word": "kilometre",
+      "start": 5.78,
+      "end": 6.32
+    },
+    {
+      "word": "and",
+      "start": 6.78,
+      "end": 6.86
+    },
+    {
+      "word": "drops",
+      "start": 6.96,
+      "end": 7.34
+    },
+    {
+      "word": "a",
+      "start": 7.4,
+      "end": 7.46
+    },
+    {
+      "word": "tiny",
+      "start": 7.52,
+      "end": 7.86
+    },
+    {
+      "word": "bit",
+      "start": 7.9,
+      "end": 8.14
+    },
+    {
+      "word": "towards",
+      "start": 8.18,
+      "end": 8.6
+    },
+    {
+      "word": "us.",
+      "start": 8.7,
+      "end": 8.98
+    },
+    {
+      "word": "But",
+      "start": 9.86,
+      "end": 9.96
+    },
+    {
+      "word": "the",
+      "start": 10.0,
+      "end": 10.14
+    },
+    {
+      "word": "Earth",
+      "start": 10.22,
+      "end": 10.5
+    },
+    {
+      "word": "curves",
+      "start": 10.64,
+      "end": 11.06
+    },
+    {
+      "word": "away",
+      "start": 11.12,
+      "end": 11.42
+    },
+    {
+      "word": "beneath",
+      "start": 11.48,
+      "end": 11.84
+    },
+    {
+      "word": "it,",
+      "start": 11.92,
+      "end": 12.14
+    },
+    {
+      "word": "so",
+      "start": 12.52,
+      "end": 12.6
+    },
+    {
+      "word": "it",
+      "start": 12.64,
+      "end": 12.72
+    },
+    {
+      "word": "keeps",
+      "start": 12.78,
+      "end": 13.04
+    },
+    {
+      "word": "on",
+      "start": 13.1,
+      "end": 13.22
+    },
+    {
+      "word": "missing.",
+      "start": 13.28,
+      "end": 13.7
+    },
+    {
+      "word": "Isaac",
+      "start": 15.18,
+      "end": 15.42
+    },
+    {
+      "word": "Newton",
+      "start": 15.48,
+      "end": 15.84
+    },
+    {
+      "word": "worked",
+      "start": 15.94,
+      "end": 16.12
+    },
+    {
+      "word": "this",
+      "start": 16.16,
+      "end": 16.3
+    },
+    {
+      "word": "out",
+      "start": 16.42,
+      "end": 16.72
+    },
+    {
+      "word": "more",
+      "start": 16.76,
+      "end": 16.88
+    },
+    {
+      "word": "than",
+      "start": 16.92,
+      "end": 17.1
+    },
+    {
+      "word": "three",
+      "start": 17.16,
+      "end": 17.42
+    },
+    {
+      "word": "hundred",
+      "start": 17.54,
+      "end": 17.92
+    },
+    {
+      "word": "years",
+      "start": 18.02,
+      "end": 18.24
+    },
+    {
+      "word": "ago.",
+      "start": 18.28,
+      "end": 18.62
+    },
+    {
+      "word": "An",
+      "start": 19.44,
+      "end": 19.56
+    },
+    {
+      "word": "orbit",
+      "start": 19.64,
+      "end": 19.98
+    },
+    {
+      "word": "isn't",
+      "start": 20.04,
+      "end": 20.32
+    },
+    {
+      "word": "floating",
+      "start": 20.36,
+      "end": 20.76
+    },
+    {
+      "word": "at",
+      "start": 20.8,
+      "end": 20.92
+    },
+    {
+      "word": "all.",
+      "start": 21.02,
+      "end": 21.28
+    },
+    {
+      "word": "It's",
+      "start": 21.84,
+      "end": 22.06
+    },
+    {
+      "word": "falling",
+      "start": 22.1,
+      "end": 22.56
+    },
+    {
+      "word": "and",
+      "start": 22.82,
+      "end": 22.94
+    },
+    {
+      "word": "missing",
+      "start": 23.02,
+      "end": 23.48
+    },
+    {
+      "word": "for ever.",
+      "start": 23.8,
+      "end": 24.24
+    }
+  ],
+  "audio": {
+    "vo_source_mp3_sha256": "c2fd407d3aafbe57030b29b213ed128ee4887b785272a2192b4c0809796a1ce6",
+    "vo_source_wav_sha256": "48847b15feda51804a0f6afae1a79aacc74b9bac43ef3eeadda8a7503b745571",
+    "score_source": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/05_Music/hos_009_score_v04_synth.wav",
+    "score_sha256": "151ba46acdf7d4395b34e105530bd077c26f6eb92832f9a1f00e1551ca88f58d",
+    "score_start_s": 2.0,
+    "level": {
+      "lufs": -14.0,
+      "true_peak_dbtp": -1.9,
+      "loudnorm_I": -12.0
+    },
+    "sfx_level": {
+      "exit": 0,
+      "output": "SFX level PASS: VO -19.4 LUFS, SFX -46.1 LUFS, 1 hits",
+      "bed_db": -12.0,
+      "sfx_db": -14.0
+    },
+    "stems": {
+      "vo": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/10_Shorts/J2171/short_A/stems/stem_vo.wav",
+      "bed": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/10_Shorts/J2171/short_A/stems/stem_bed.wav",
+      "sfx": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/10_Shorts/J2171/short_A/stems/stem_sfx.wav"
+    },
+    "stem_hashes": {
+      "vo": {
+        "nas_path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/10_Shorts/J2171/short_A/stems/stem_vo.wav",
+        "sha256": "4cb6024c37dc6137221199ada8393809d53c18f5623dba34aec5a8d0c14f5f74",
+        "bytes": 4861518
+      },
+      "bed": {
+        "nas_path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/10_Shorts/J2171/short_A/stems/stem_bed.wav",
+        "sha256": "3ab94820d2fb545086f33bf9f58872b40ff245ebfbb3bc65be393a9bbac7f614",
+        "bytes": 4861518
+      },
+      "sfx": {
+        "nas_path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/10_Shorts/J2171/short_A/stems/stem_sfx.wav",
+        "sha256": "ff2856e7f7c0399a8c6d3d4172a8f4a3c7296b3e234f2c4b0476320db02f0225",
+        "bytes": 4861518
+      }
+    }
+  },
+  "cuts": [
+    {
+      "id": "S01",
+      "row_id": "P1:01_moon_falling",
+      "t0": 0.0,
+      "t1": 2.8,
+      "hold_s": 2.8,
+      "plate": "01_moon_falling_t1.mp4",
+      "source_sha256": "3e0774a7dd510b5ee32358c188f5efe4903aaf45aafab8870df662bcc1cd4c1f",
+      "producer": "J1192/J1237",
+      "in_s": 2.0,
+      "x0": 260.0,
+      "x1": 360.0,
+      "lands_on": "plate",
+      "upscale": 2.3111
+    },
+    {
+      "id": "S02",
+      "row_id": "P3:08_km_a_second",
+      "t0": 2.8,
+      "t1": 5.74,
+      "hold_s": 2.94,
+      "plate": "code_graphic_009_short_A_s02_km_a_second_9x16.mp4",
+      "source_sha256": "819e453dced47e4ad7ef8f6b014699f0e15bfe5334f807f18b25790503c79218",
+      "producer": "gemini",
+      "in_s": 0.0,
+      "x0": null,
+      "x1": null,
+      "lands_on": "code_graphic",
+      "upscale": 1.0
+    },
+    {
+      "id": "S03",
+      "row_id": "P3:07_ball_to_moon",
+      "t0": 5.74,
+      "t1": 8.98,
+      "hold_s": 3.24,
+      "plate": "07_ball_to_moon_t1.mp4",
+      "source_sha256": "fba484bb8b37055948991f701cf788e8b02015f6e230c866c83f0106e838b95d",
+      "producer": "J2033/J2034",
+      "in_s": 0.5,
+      "x0": 320.0,
+      "x1": 680.0,
+      "lands_on": "plate",
+      "upscale": 2.3111
+    },
+    {
+      "id": "S04",
+      "row_id": "P3:05_shot_orbit",
+      "t0": 8.98,
+      "t1": 12.14,
+      "hold_s": 3.16,
+      "plate": "05_shot_orbit_t1.mp4",
+      "source_sha256": "0878c30646fa8b7158044a5e3d52a584a1cf4fda8accc76f6aa747fca8405f1b",
+      "producer": "J1192/J1237",
+      "in_s": 1.0,
+      "x0": 420.0,
+      "x1": 560.0,
+      "lands_on": "plate",
+      "upscale": 2.3111
+    },
+    {
+      "id": "S05",
+      "row_id": "P2:07_orchard_bench",
+      "t0": 12.14,
+      "t1": 15.42,
+      "hold_s": 3.28,
+      "plate": "07_orchard_bench_t1.mp4",
+      "source_sha256": "028ee06be5e3fb76cbc58265837633993c4834c961735c191c36379c5e7afa02",
+      "producer": "J1192/J1237",
+      "in_s": 1.2,
+      "x0": 540.0,
+      "x1": 560.0,
+      "lands_on": "plate",
+      "upscale": 2.3111
+    },
+    {
+      "id": "S06",
+      "row_id": "P2:08_the_apple",
+      "t0": 15.42,
+      "t1": 18.62,
+      "hold_s": 3.2,
+      "plate": "08_the_apple_t1.mp4",
+      "source_sha256": "357e8de3e9c771ef212fb01ee0a6052ebfedbc0de0ad9794270f5ff2128a5b44",
+      "producer": "J1192/J1237",
+      "in_s": 0.4,
+      "x0": 450.0,
+      "x1": 460.0,
+      "lands_on": "plate",
+      "upscale": 2.3111
+    },
+    {
+      "id": "S07",
+      "row_id": "P3:06_orbit_teach",
+      "t0": 18.62,
+      "t1": 21.28,
+      "hold_s": 2.66,
+      "plate": "code_graphic_009_short_A_s07_orbit_teach_9x16.mp4",
+      "source_sha256": "18b4dbf94c142f0fe9e5f4ed9b3f7006784fadeee6ca06a6b17cf53e5bfd98ef",
+      "producer": "gemini",
+      "in_s": 0.0,
+      "x0": null,
+      "x1": null,
+      "lands_on": "code_graphic",
+      "upscale": 1.0
+    },
+    {
+      "id": "S08",
+      "row_id": "P5:09_orchard_dusk",
+      "t0": 21.28,
+      "t1": 24.32,
+      "hold_s": 3.04,
+      "plate": "09_orchard_dusk_t1.mp4",
+      "source_sha256": "1266d61a73ccb6854051836495df72e9f0d0cbd71dd83698d981d887b9a5a41f",
+      "producer": "J1192/J1237",
+      "in_s": 0.5,
+      "x0": 360.0,
+      "x1": 480.0,
+      "lands_on": "plate",
+      "upscale": 2.3111
+    },
+    {
+      "id": "loop_tail",
+      "row_id": "P1:01_moon_falling",
+      "t0": 24.32,
+      "t1": 25.32,
+      "hold_s": 1.0,
+      "plate": "01_moon_falling_t1.mp4",
+      "source_sha256": "3e0774a7dd510b5ee32358c188f5efe4903aaf45aafab8870df662bcc1cd4c1f",
+      "producer": "J1192/J1237",
+      "in_s": 1.0,
+      "x0": 225.0,
+      "x1": 260.0,
+      "lands_on": "loop",
+      "upscale": 2.3111
+    }
+  ],
+  "nas_master_mp4": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/10_Shorts/J2171/short_A/hos_009_short_A_v01.mp4",
+  "uat_master_mp4": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/009_The-Falling-Moon-Gravity/10_Shorts/hos_009_short_A_v01.mp4",
+  "master_sha256": "43dbeb3ae42ed682814af56cec2bde0a3626a758c949174145af2db243278332",
+  "master_bytes": 11851675,
+  "hook_metrics": {
+    "font_size": 176,
+    "cap_px": 125,
+    "cap_pct": 7.51,
+    "block_pct": [
+      25.5,
+      42.3
+    ],
+    "widest_pct": 90.5
+  }
+}

@@ -3,7 +3,7 @@
   "title": "Why Doesn't the Moon Fall to Earth?",
   "air": "2026-11-26",
   "ready_by": "2026-11-22",
-  "summary": "J3261 built the Gravity long master v02 (9d8731cb) beside untouched v01 (802b5c7e). Picture and polish checks passed with 0 failures. Music and sound-effect levels passed. Five low-detail warnings remain for a full-size look. This is not a film pass and not Ben's watch. J2036 checks this cut next. The accepted score from J3241 is unchanged.",
+  "summary": "J3261 built the Gravity long master v02 (9d8731cb) beside untouched v01 (802b5c7e). Picture and polish checks passed with 0 failures. Music and sound-effect levels passed. Five low-detail warnings remain for a full-size look. This is not a film pass and not Ben's watch. J2036 checks this cut next. The accepted score from J3241 is unchanged. J2171 assembled locked Shorts A v01 (43dbeb3a, 25.4 s) and B v01 (e6e5ae3f, 25.5 s) at £0 (12/12 ship gates PASS, staged on NAS + HOS UAT) and queued non-producer QA review.",
   "stages": {
     "topic": {
       "state": "done"
