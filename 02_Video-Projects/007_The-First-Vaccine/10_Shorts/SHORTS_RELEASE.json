@@ -44,7 +44,7 @@
       "alteredContent": true,
       "durationSeconds": 24.53,
       "cover": "frame 0 of hos_007_s05_vacca_jesty_v05 (NOT THE FIRST)",
-      "note": "J1222 swap from 4WUs0beKn0A (v02, sha 89a9a1668d74, Private unscheduled) to v05 xgx2lYHhYZM (sha e5ea76f012fb, Ben OK 6507831644). Private + publishAt Tue 17 Nov 11:30 London (2026-11-17T11:30:00Z). Registered for HOS Buffer mirror with long ETynHpIYLeY; held until public. Studio Related -> ETynHpIYLeY set & read back on 13 Nov 2026 (J0875)."
+      "note": "J1222 swap from 4WUs0beKn0A (v02, sha 89a9a1668d74, Private unscheduled) to v05 xgx2lYHhYZM (sha e5ea76f012fb, Ben OK 6507831644). Public since Tue 17 Nov 11:30 London (2026-11-17T11:30:00Z). Registered for HOS Buffer mirror with long ETynHpIYLeY. Studio Related -> ETynHpIYLeY set & read back on 13 Nov 2026 (J0875) and verified live."
     },
     {
       "id": "sY0PSQFxjp8",
@@ -67,7 +67,9 @@
       "durationSeconds": 23.33,
       "cover": "frame 0 of hos_007_variolation_v05 (SMALLPOX SORE)",
       "note": "J2957. s06 variolation v05 (sha c7ae95379e11), Ben OK'd J2230.3 on the board 16 Nov 2026. Private + publishAt Sat 28 Nov 2026 11:30 London. Studio Related -> ETynHpIYLeY set & read back on 17 Nov 2026. Accidental second upload wkyGOKepjeQ unscheduled to Private (no publishAt, never deleted)."
-    },
+    }
+  ],
+  "unscheduled": [
     {
       "id": "jkUZpyO71lU",
       "title": "How Was Smallpox Eradicated?",
@@ -88,7 +90,7 @@
       "alteredContent": true,
       "durationSeconds": 22.1,
       "cover": "frame 0 of hos_007_eradication_v06 (SMALLPOX GONE)",
-      "note": "J2958. s07 eradication v06 (sha 33696b704872), Ben OK'd J2230.4 on the board 16 Nov 2026. Private + publishAt Sun 29 Nov 2026 11:30 London. Studio Related -> ETynHpIYLeY set & read back on 16 Nov 2026."
+      "note": "J2958 / J3122 / J3126. s07 eradication v06 (sha 33696b704872). Unscheduled from Sun 29 Nov 2026 11:30 London to Private (no publishAt) on 19 Nov 2026 10:13Z (desk 7004764743); not deleted."
     }
   ]
 }
