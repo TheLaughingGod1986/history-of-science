@@ -8,8 +8,11 @@
   "tagsFile": "Tags/moon_long_tags_v01.txt",
   "chaptersFile": null,
   "pinnedCommentFile": null,
-  "thumbnail": null,
-  "thumbnailAbc": [],
+  "thumbnail": "../08_Thumbnail/Selected/hos_009_thumb_A_it_misses_v01.jpg",
+  "thumbnailAbc": [
+    "../08_Thumbnail/Selected/hos_009_thumb_A_it_misses_v01.jpg",
+    "../08_Thumbnail/Selected/hos_009_thumb_B_one_apple_v01.jpg"
+  ],
   "titleAbc": [
     "Why Doesn't the Moon Fall to Earth?",
     "The Moon Is Falling Right Now"
