@@ -75,8 +75,11 @@
       "eta": "2026-11-21"
     },
     "thumbnails": {
-      "state": "todo",
-      "due": "2026-11-19"
+      "state": "review",
+      "due": "2026-11-19",
+      "owner": "cursor",
+      "since": "2026-11-21",
+      "note": "J3262 built long candidates A (IT MISSES) and B (ONE APPLE) at £0 cash and 0 Flow credits. style_sheet and thumb_preview are in 08_Thumbnail/Selected. Parked for the elected Chief to score HOOK, BAND and PHONE. This is not a PASS and not Ben's watch."
     },
     "ben_ok": {
       "state": "todo",

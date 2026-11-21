@@ -1,0 +1,147 @@
+{
+  "job": "J3262",
+  "film": "009",
+  "spend": "\u00a30 cash. Flow Nano Banana 2.1 stills, 0 credits (23450 before and after).",
+  "titleNotRepeated": [
+    "Why Doesn't the Moon Fall to Earth?",
+    "The Moon Is Falling Right Now"
+  ],
+  "A": {
+    "file": "hos_009_thumb_A_it_misses_v01.jpg",
+    "words": "IT / MISSES",
+    "gold": "MISSES",
+    "sha256": "cd44f05657ddfea2d9af1ad19f31c008479c43cbfa533a4e4800d90ed1186689",
+    "meta": {
+      "letteringBox": [
+        50,
+        78,
+        451,
+        261
+      ],
+      "ornaments": {
+        "topScrollBox": [
+          80,
+          54,
+          420,
+          74
+        ],
+        "bottomScrollBox": [
+          111,
+          264,
+          389,
+          282
+        ]
+      },
+      "heroBox": [
+        620,
+        10,
+        1260,
+        640
+      ],
+      "explorerBox": [
+        70,
+        400,
+        380,
+        710
+      ],
+      "explorerHeightPx": 310,
+      "explorerHeightFrac": 0.431,
+      "placedWords": [
+        {
+          "word": "IT",
+          "kind": "cream",
+          "size": 92,
+          "box": [
+            197,
+            78,
+            303,
+            158
+          ]
+        },
+        {
+          "word": "MISSES",
+          "kind": "gold",
+          "size": 108,
+          "box": [
+            50,
+            164,
+            451,
+            261
+          ]
+        }
+      ],
+      "clearOfHero": true,
+      "clearOfExplorer": true,
+      "clearOfBadge": true
+    }
+  },
+  "B": {
+    "file": "hos_009_thumb_B_one_apple_v01.jpg",
+    "words": "ONE / APPLE",
+    "gold": "APPLE",
+    "sha256": "3d1164330249e7793c96317b051d008271aaf4b90175bdddc86c392c979f1709",
+    "meta": {
+      "letteringBox": [
+        50,
+        70,
+        410,
+        253
+      ],
+      "ornaments": {
+        "topScrollBox": [
+          60,
+          46,
+          400,
+          66
+        ],
+        "bottomScrollBox": [
+          91,
+          256,
+          369,
+          274
+        ]
+      },
+      "heroBox": [
+        680,
+        20,
+        1240,
+        560
+      ],
+      "explorerBox": [
+        160,
+        390,
+        520,
+        710
+      ],
+      "explorerHeightPx": 320,
+      "explorerHeightFrac": 0.444,
+      "placedWords": [
+        {
+          "word": "ONE",
+          "kind": "cream",
+          "size": 92,
+          "box": [
+            127,
+            70,
+            333,
+            154
+          ]
+        },
+        {
+          "word": "APPLE",
+          "kind": "gold",
+          "size": 108,
+          "box": [
+            50,
+            160,
+            410,
+            253
+          ]
+        }
+      ],
+      "clearOfHero": true,
+      "clearOfExplorer": true,
+      "clearOfBadge": true
+    }
+  }
+}
