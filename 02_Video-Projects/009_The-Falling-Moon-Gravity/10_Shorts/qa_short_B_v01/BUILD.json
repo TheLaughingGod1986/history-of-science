@@ -1,0 +1,70 @@
+{
+  "short_id": "short_B",
+  "stem": "hos_009_short_B_v01",
+  "youtube_title": "How Did Newton Discover Gravity?",
+  "nas_master_mp4": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/10_Shorts/J2171/short_B/hos_009_short_B_v01.mp4",
+  "uat_master_mp4": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/009_The-Falling-Moon-Gravity/10_Shorts/hos_009_short_B_v01.mp4",
+  "scratch_mp4": "/Volumes/MiniWork/scratch/J2171-build/short_B/hos_009_short_B_v01.mp4",
+  "master_sha256": "e6e5ae3ff3be4856cc0a45af78f17f6b410974784a67fd3e6bba8222bc48037a",
+  "master_bytes": 10725616,
+  "duration_s": 25.5,
+  "resolution": "936x1664",
+  "fps": 30,
+  "words_count": 56,
+  "vo_onset_s": 0.06,
+  "hook_sentence_end_s": 2.82,
+  "first_cut_s": 2.82,
+  "second_cut_s": 5.56,
+  "max_body_hold_s": 3.66,
+  "last_word_end_s": 24.38,
+  "tail_gap_s": 1.1,
+  "loop_tail_s": 1.0,
+  "payoff_word": "numbers",
+  "payoff_start_s": 19.88,
+  "payoff_frac": 0.7802,
+  "level": {
+    "lufs": -14.3,
+    "true_peak_dbtp": -1.8,
+    "loudnorm_I": -12.0
+  },
+  "score_nas_path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/05_Music/hos_009_score_v04_synth.wav",
+  "score_sha256": "151ba46acdf7d4395b34e105530bd077c26f6eb92832f9a1f00e1551ca88f58d",
+  "score_start_s": 262.0,
+  "stem_hashes": {
+    "vo": {
+      "nas_path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/10_Shorts/J2171/short_B/stems/stem_vo.wav",
+      "sha256": "8a92d01bb7e02191b2399dac2bcaff47383a440d86aa349ce1438f3650350c5a",
+      "bytes": 4892238
+    },
+    "bed": {
+      "nas_path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/10_Shorts/J2171/short_B/stems/stem_bed.wav",
+      "sha256": "3f631b567c1aae1f8702e7fcddf37fe17a7ee73b7cb1a942c4f46909e9600829",
+      "bytes": 4892238
+    },
+    "sfx": {
+      "nas_path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/10_Shorts/J2171/short_B/stems/stem_sfx.wav",
+      "sha256": "b9e7bca46be6d5aeac6b0572a07fe4845f45ae98c3a67ab9646670ac1d975270",
+      "bytes": 4892238
+    }
+  },
+  "gates": {
+    "polish": {
+      "exit": 0
+    },
+    "picture": {
+      "exit": 0
+    },
+    "music": {
+      "exit": 0
+    },
+    "open": {
+      "exit": 0
+    },
+    "vo_check": {
+      "exit": 0
+    },
+    "sfx": {
+      "exit": 0
+    }
+  }
+}

@@ -1,0 +1,504 @@
+{
+  "film": "HOS:009",
+  "job": "J2171",
+  "short_id": "short_B",
+  "stem": "hos_009_short_B_v01",
+  "youtube_title": "How Did Newton Discover Gravity?",
+  "promoted_long_title": "Why Doesn't the Moon Fall to Earth?",
+  "conditional_target_air_date": "2026-11-30",
+  "long_must_be_public_first": true,
+  "resolution": "936x1664",
+  "fps": 30,
+  "duration_s": 25.5,
+  "hook_caption": {
+    "text": "1 MINUTE = 1 SECOND",
+    "start_s": 0.0,
+    "end_s": 2.0
+  },
+  "vo_onset_s": 0.06,
+  "hook_sentence_end_s": 2.82,
+  "first_cut_s": 2.82,
+  "second_cut_s": 5.56,
+  "last_word_end_s": 24.38,
+  "loop_tail_s": 1.0,
+  "payoff_word": "numbers",
+  "payoff_start_s": 19.88,
+  "payoff_frac": 0.7802,
+  "meta_promise": false,
+  "end_card": null,
+  "full_film_banner": false,
+  "spoken": "In one minute, the Moon falls five metres. An apple falls that far in one second Isaac Newton worked out why. The Moon is 60 times further from the Earth's centre than we are, so the pull on it is 60 times 60 weaker, 3,600 times. And the numbers matched. One pull for apples and Moons.",
+  "captions": [
+    {
+      "word": "In",
+      "start": 0.06,
+      "end": 0.16
+    },
+    {
+      "word": "one",
+      "start": 0.22,
+      "end": 0.38
+    },
+    {
+      "word": "minute,",
+      "start": 0.46,
+      "end": 0.74
+    },
+    {
+      "word": "the",
+      "start": 0.92,
+      "end": 1.04
+    },
+    {
+      "word": "Moon",
+      "start": 1.1,
+      "end": 1.34
+    },
+    {
+      "word": "falls",
+      "start": 1.46,
+      "end": 1.8
+    },
+    {
+      "word": "five",
+      "start": 1.86,
+      "end": 2.16
+    },
+    {
+      "word": "metres.",
+      "start": 2.26,
+      "end": 2.82
+    },
+    {
+      "word": "An",
+      "start": 3.68,
+      "end": 3.8
+    },
+    {
+      "word": "apple",
+      "start": 3.899,
+      "end": 4.26
+    },
+    {
+      "word": "falls",
+      "start": 4.4,
+      "end": 4.68
+    },
+    {
+      "word": "that",
+      "start": 4.74,
+      "end": 4.94
+    },
+    {
+      "word": "far",
+      "start": 4.98,
+      "end": 5.24
+    },
+    {
+      "word": "in",
+      "start": 5.44,
+      "end": 5.56
+    },
+    {
+      "word": "one",
+      "start": 5.64,
+      "end": 5.82
+    },
+    {
+      "word": "second",
+      "start": 5.96,
+      "end": 6.42
+    },
+    {
+      "word": "Isaac",
+      "start": 6.82,
+      "end": 7.04
+    },
+    {
+      "word": "Newton",
+      "start": 7.12,
+      "end": 7.46
+    },
+    {
+      "word": "worked",
+      "start": 7.54,
+      "end": 7.78
+    },
+    {
+      "word": "out",
+      "start": 7.86,
+      "end": 8.02
+    },
+    {
+      "word": "why.",
+      "start": 8.08,
+      "end": 8.42
+    },
+    {
+      "word": "The",
+      "start": 9.52,
+      "end": 9.62
+    },
+    {
+      "word": "Moon",
+      "start": 9.68,
+      "end": 10.0
+    },
+    {
+      "word": "is",
+      "start": 10.04,
+      "end": 10.2
+    },
+    {
+      "word": "60",
+      "start": 10.46,
+      "end": 10.6
+    },
+    {
+      "word": "times",
+      "start": 10.64,
+      "end": 10.94
+    },
+    {
+      "word": "further",
+      "start": 11.04,
+      "end": 11.44
+    },
+    {
+      "word": "from",
+      "start": 11.46,
+      "end": 11.6
+    },
+    {
+      "word": "the",
+      "start": 11.64,
+      "end": 11.7
+    },
+    {
+      "word": "Earth's",
+      "start": 11.78,
+      "end": 12.02
+    },
+    {
+      "word": "centre",
+      "start": 12.06,
+      "end": 12.44
+    },
+    {
+      "word": "than",
+      "start": 12.48,
+      "end": 12.62
+    },
+    {
+      "word": "we",
+      "start": 12.68,
+      "end": 12.78
+    },
+    {
+      "word": "are,",
+      "start": 12.86,
+      "end": 13.0
+    },
+    {
+      "word": "so",
+      "start": 13.5,
+      "end": 13.6
+    },
+    {
+      "word": "the",
+      "start": 13.64,
+      "end": 13.72
+    },
+    {
+      "word": "pull",
+      "start": 13.78,
+      "end": 13.92
+    },
+    {
+      "word": "on",
+      "start": 13.96,
+      "end": 14.06
+    },
+    {
+      "word": "it",
+      "start": 14.12,
+      "end": 14.32
+    },
+    {
+      "word": "is",
+      "start": 14.38,
+      "end": 14.5
+    },
+    {
+      "word": "60",
+      "start": 14.76,
+      "end": 14.92
+    },
+    {
+      "word": "times",
+      "start": 14.96,
+      "end": 15.16
+    },
+    {
+      "word": "60",
+      "start": 15.5,
+      "end": 15.66
+    },
+    {
+      "word": "weaker,",
+      "start": 15.78,
+      "end": 16.2
+    },
+    {
+      "word": "3,600",
+      "start": 16.96,
+      "end": 18.34
+    },
+    {
+      "word": "times.",
+      "start": 18.4,
+      "end": 18.96
+    },
+    {
+      "word": "And",
+      "start": 19.64,
+      "end": 19.72
+    },
+    {
+      "word": "the",
+      "start": 19.76,
+      "end": 19.84
+    },
+    {
+      "word": "numbers",
+      "start": 19.88,
+      "end": 20.22
+    },
+    {
+      "word": "matched.",
+      "start": 20.34,
+      "end": 20.82
+    },
+    {
+      "word": "One",
+      "start": 21.44,
+      "end": 21.6
+    },
+    {
+      "word": "pull",
+      "start": 21.7,
+      "end": 22.04
+    },
+    {
+      "word": "for",
+      "start": 22.46,
+      "end": 22.6
+    },
+    {
+      "word": "apples",
+      "start": 22.68,
+      "end": 23.22
+    },
+    {
+      "word": "and",
+      "start": 23.62,
+      "end": 23.84
+    },
+    {
+      "word": "Moons.",
+      "start": 23.96,
+      "end": 24.38
+    }
+  ],
+  "audio": {
+    "vo_source_mp3_sha256": "0c9c4c6ffdb1337dc11acaf57af909f8d8be91d77210bca2e13af80715b87498",
+    "vo_source_wav_sha256": "a6666fd27c9a90e781369ea07e4888d87a2d5edb1624a0090ae98fa39504686b",
+    "score_source": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/05_Music/hos_009_score_v04_synth.wav",
+    "score_sha256": "151ba46acdf7d4395b34e105530bd077c26f6eb92832f9a1f00e1551ca88f58d",
+    "score_start_s": 262.0,
+    "level": {
+      "lufs": -14.3,
+      "true_peak_dbtp": -1.8,
+      "loudnorm_I": -12.0
+    },
+    "sfx_level": {
+      "exit": 0,
+      "output": "SFX level PASS: VO -24.1 LUFS, SFX -54.1 LUFS, 1 hits",
+      "bed_db": -20.0,
+      "sfx_db": -22.0
+    },
+    "stems": {
+      "vo": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/10_Shorts/J2171/short_B/stems/stem_vo.wav",
+      "bed": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/10_Shorts/J2171/short_B/stems/stem_bed.wav",
+      "sfx": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/10_Shorts/J2171/short_B/stems/stem_sfx.wav"
+    },
+    "stem_hashes": {
+      "vo": {
+        "nas_path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/10_Shorts/J2171/short_B/stems/stem_vo.wav",
+        "sha256": "8a92d01bb7e02191b2399dac2bcaff47383a440d86aa349ce1438f3650350c5a",
+        "bytes": 4892238
+      },
+      "bed": {
+        "nas_path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/10_Shorts/J2171/short_B/stems/stem_bed.wav",
+        "sha256": "3f631b567c1aae1f8702e7fcddf37fe17a7ee73b7cb1a942c4f46909e9600829",
+        "bytes": 4892238
+      },
+      "sfx": {
+        "nas_path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/10_Shorts/J2171/short_B/stems/stem_sfx.wav",
+        "sha256": "b9e7bca46be6d5aeac6b0572a07fe4845f45ae98c3a67ab9646670ac1d975270",
+        "bytes": 4892238
+      }
+    }
+  },
+  "cuts": [
+    {
+      "id": "S01",
+      "row_id": "P4:05_minute_second",
+      "t0": 0.0,
+      "t1": 2.82,
+      "hold_s": 2.82,
+      "plate": "05_minute_second_t1.mp4",
+      "source_sha256": "7f56f05930cefc854aabde17cd204510771dfbaaa5faa2f6b410facebbd3cd66",
+      "producer": "J1192/J1237",
+      "in_s": 2.0,
+      "x0": 720.0,
+      "x1": 875.0,
+      "lands_on": "plate",
+      "upscale": 2.3111
+    },
+    {
+      "id": "S02",
+      "row_id": "P1:02_apple_and_moon",
+      "t0": 2.82,
+      "t1": 5.56,
+      "hold_s": 2.74,
+      "plate": "02_apple_and_moon_t1.mp4",
+      "source_sha256": "bc3ad225b09a2fc090c4cbe694eb3aeeb0cf5999cd6c6d6262be81a1adcc90e6",
+      "producer": "J1192/J1237",
+      "in_s": 0.8,
+      "x0": 437.0,
+      "x1": 480.0,
+      "lands_on": "plate",
+      "upscale": 2.3111
+    },
+    {
+      "id": "S03",
+      "row_id": "P4:06_pretty_nearly",
+      "t0": 5.56,
+      "t1": 8.42,
+      "hold_s": 2.86,
+      "plate": "06_pretty_nearly_t1.mp4",
+      "source_sha256": "af487165258059d44e1f3ad9682d80d50c2239882f5495c82d7907a3e98d47ad",
+      "producer": "J1192/J1237",
+      "in_s": 1.0,
+      "x0": 437.0,
+      "x1": 460.0,
+      "lands_on": "plate",
+      "upscale": 2.3111
+    },
+    {
+      "id": "S04",
+      "row_id": "P4:03_sixty_earths",
+      "t0": 8.42,
+      "t1": 11.44,
+      "hold_s": 3.02,
+      "plate": "code_graphic_009_short_B_s04_sixty_earths_9x16.mp4",
+      "source_sha256": "4f63cdac24b871242f3c73226f6a0d38dfd3a81cfadbec54d4401c02c33007c6",
+      "producer": "gemini",
+      "in_s": 0.0,
+      "x0": null,
+      "x1": null,
+      "lands_on": "code_graphic",
+      "upscale": 1.0
+    },
+    {
+      "id": "S05",
+      "row_id": "P4:02_spray_paint",
+      "t0": 11.44,
+      "t1": 14.5,
+      "hold_s": 3.06,
+      "plate": "02_spray_paint_t1.mp4",
+      "source_sha256": "8a7b7d907240f959e7db25d3c9108439c5df79ae1b8261cde7079ac23342b092",
+      "producer": "J1192/J1237",
+      "in_s": 1.2,
+      "x0": 360.0,
+      "x1": 440.0,
+      "lands_on": "plate",
+      "upscale": 2.3111
+    },
+    {
+      "id": "S06",
+      "row_id": "P4:04_dots_square",
+      "t0": 14.5,
+      "t1": 17.65,
+      "hold_s": 3.15,
+      "plate": "code_graphic_009_short_B_s06_dots_square_9x16.mp4",
+      "source_sha256": "45fe23301fe4044076e66623b445e02863230f0db3c8cedda2ea9f6265afa58f",
+      "producer": "gemini",
+      "in_s": 0.0,
+      "x0": null,
+      "x1": null,
+      "lands_on": "code_graphic",
+      "upscale": 1.0
+    },
+    {
+      "id": "S07",
+      "row_id": "P4:06_pretty_nearly_c1",
+      "t0": 17.65,
+      "t1": 20.82,
+      "hold_s": 3.17,
+      "plate": "06_pretty_nearly_c1_t1.mp4",
+      "source_sha256": "eb3f5d5030b9b18a545ce0922377771c10f499f14f08d1b64239adca975078cf",
+      "producer": "J1192/J1237",
+      "in_s": 1.0,
+      "x0": 437.0,
+      "x1": 460.0,
+      "lands_on": "plate",
+      "upscale": 2.3111
+    },
+    {
+      "id": "S08",
+      "row_id": "P5:01_one_law",
+      "t0": 20.82,
+      "t1": 24.48,
+      "hold_s": 3.66,
+      "plate": "01_one_law_t1.mp4",
+      "source_sha256": "ed89eb1e5c519f18984284d144ae924616f6d08560179fc6b2e4c3942e6053a0",
+      "producer": "J1192/J1237",
+      "in_s": 1.0,
+      "x0": 437.0,
+      "x1": 450.0,
+      "lands_on": "plate",
+      "upscale": 2.3111
+    },
+    {
+      "id": "loop_tail",
+      "row_id": "P4:05_minute_second",
+      "t0": 24.48,
+      "t1": 25.48,
+      "hold_s": 1.0,
+      "plate": "05_minute_second_t1.mp4",
+      "source_sha256": "7f56f05930cefc854aabde17cd204510771dfbaaa5faa2f6b410facebbd3cd66",
+      "producer": "J1192/J1237",
+      "in_s": 1.0,
+      "x0": 680.0,
+      "x1": 720.0,
+      "lands_on": "loop",
+      "upscale": 2.3111
+    }
+  ],
+  "nas_master_mp4": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/10_Shorts/J2171/short_B/hos_009_short_B_v01.mp4",
+  "uat_master_mp4": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/009_The-Falling-Moon-Gravity/10_Shorts/hos_009_short_B_v01.mp4",
+  "master_sha256": "e6e5ae3ff3be4856cc0a45af78f17f6b410974784a67fd3e6bba8222bc48037a",
+  "master_bytes": 10725616,
+  "hook_metrics": {
+    "font_size": 142,
+    "cap_px": 101,
+    "cap_pct": 6.07,
+    "block_pct": [
+      8.0,
+      21.6
+    ],
+    "widest_pct": 90.8
+  }
+}
