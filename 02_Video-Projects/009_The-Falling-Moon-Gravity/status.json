@@ -3,7 +3,7 @@
   "title": "Why Doesn't the Moon Fall to Earth?",
   "air": "2026-11-26",
   "ready_by": "2026-11-22",
-  "summary": "J3241: elected Chief formally ACCEPTED £0 full-runtime warm own-synthesis score v04_synth (hos_009_score_v04_synth.wav; PR #700/#701 merged; unchanged music_gate PASS 94 beds/0 unreadable/max 0.2835; 0 dropouts; J3240 independent audio_input ear review 7/7 PASS) and REOPENED J2035 long assembly (all 90 picture rows incl. J2631 & J2632 r4 KEEP 6809363448 verified). J2171 remains held. Score acceptance is not a final film PASS or Ben-watch waiver; 22 Nov target at risk, 26 Nov not a release promise.",
+  "summary": "J3261 built the Gravity long master v02 (9d8731cb) beside untouched v01 (802b5c7e). Picture and polish checks passed with 0 failures. Music and sound-effect levels passed. Five low-detail warnings remain for a full-size look. This is not a film pass and not Ben's watch. J2036 checks this cut next. The accepted score from J3241 is unchanged.",
   "stages": {
     "topic": {
       "state": "done"
@@ -59,19 +59,19 @@
       "eta": "2026-11-21"
     },
     "edit": {
-      "state": "doing",
+      "state": "review",
       "due": "2026-11-19",
-      "owner": "assembly (J2035 reopened)",
-      "waiting": "Worker claim on reopened J2035 long assembly using accepted v04_synth score, locked 5-part VO, and 90 settled picture rows",
+      "owner": "cursor",
+      "waiting": "J2036 reads the v02 gates, proof stills and card stills",
       "underway": false,
-      "note": "J3241 formally ACCEPTED £0 full-runtime warm own-synthesis score hos_009_score_v04_synth.wav (151ba46a...; PR #700 9b512c8f + J3240 independent audio_input ear review PR #701 67ed9fb2 7/7 PASS; music_gate PASS 94 beds / 0 unreadable / max 0.2835 / 0 dropouts / 18/18 Mini-NAS parity; PR #698 53288fe9 merged as v03 audit record) and REOPENED J2035 long assembly. J2171 remains held pending J2035. ACTIVATION_AUTHORIZED=False; J3047 closed unused; v01/v02/v03 rejected; £0 / 0 credits; no Ben escalation needed. Score acceptance is not a final film PASS or Ben-watch waiver.",
-      "since": "2026-11-20",
+      "note": "J3261 v02 is on the shared working store at 09_Assembly/j2035_v02/hos009_long_master_v02.mp4 (sha256 9d8731cb49641776027bcbd75a6f4ae5519fc3907c28cb7f422883ebde73ef10). v01 stays 802b5c7eb0dd64a77b938e5f26c2f63104c3b851979dabe61e39e70eaf33a833. Opening is 8 cuts under 4 seconds, with the apple and table from 4s to 16s. Teach cards: 2 people, 8 dates, 4 facts, 1 timeline, 1 early graphic, 26 side labels. Picture QA PASS 0/92 fail, polish PASS 0/92 fail, music PASS, sound-effect level PASS. Split panel on the minute-and-second plate kept under Grok 7046684862. Table callback kept under Grok 6792271903. Five low-detail warnings. £0. No upload, schedule or privacy change. Not a film pass and not Ben's watch.",
+      "since": "2026-11-21",
       "steps": [
-        1,
+        3,
         3
       ],
-      "steps_unit": "J2035 assembly steps (step 1 input inventory done; step 2-3 render, gates & NAS backup)",
-      "left": "about 3 hours",
+      "steps_unit": "J3261 assembly steps (plan, render, gates)",
+      "left": "J2036 check",
       "eta": "2026-11-21"
     },
     "thumbnails": {
@@ -90,5 +90,5 @@
     }
   },
   "claims": [],
-  "next": "J2035 reopened: assemble HOS 009 long master from 90 settled picture rows (incl. J2631 & J2632 r4 KEEP 6809363448), locked 5-part VO, and J3241-accepted £0 full-runtime score hos_009_score_v04_synth.wav (151ba46a...), then run composite picture_qa/polish_gate, sfx_kit level, music_gate on cut, independent QA, and Ben final watch (J2171 remains held)."
+  "next": "J2036 checks the Gravity long master v02. Not a film pass and not Ben's watch."
 }
