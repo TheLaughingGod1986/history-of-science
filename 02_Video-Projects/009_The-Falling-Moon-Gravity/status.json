@@ -3,7 +3,7 @@
   "title": "Why Doesn't the Moon Fall to Earth?",
   "air": "2026-11-26",
   "ready_by": "2026-11-22",
-  "summary": "J3261 built the Gravity long master v02 (9d8731cb) beside untouched v01 (802b5c7e). Picture and polish checks passed with 0 failures. Music and sound-effect levels passed. Five low-detail warnings remain for a full-size look. This is not a film pass and not Ben's watch. J2036 checks this cut next. The accepted score from J3241 is unchanged.",
+  "summary": "J3314 built the Gravity long master v03 (744f32b7) beside untouched v01 (802b5c7e) and v02 (9d8731cb). Fixed all 4 v02 overlay/card defects (dropped 6 redundant drifted side_labels + 3 stacked Part 4 captions; new E2 THOUSANDS OF YEARS inked teach card; warm-brown backing, timeline parchment ribbon, feathered label bands). Picture QA, polish, music, and SFX level all PASS (0 failures). Not a film pass and not Ben's watch. J2036 checks v03 next.",
   "stages": {
     "topic": {
       "state": "done"
@@ -62,16 +62,16 @@
       "state": "doing",
       "due": "2026-11-19",
       "owner": "qa (J2036)",
-      "waiting": "J2036 checks v02 gates, proof stills, 42 Teach cards, chapters re-time, and thumbnail manifest wiring",
+      "waiting": "J2036 checks v03 gates, 21 verification stills, card readability, and package handoff for Ben's watch",
       "underway": false,
-      "note": "J3261 v02 is on the shared working store at 09_Assembly/j2035_v02/hos009_long_master_v02.mp4 (sha256 9d8731cb49641776027bcbd75a6f4ae5519fc3907c28cb7f422883ebde73ef10). v01 stays 802b5c7eb0dd64a77b938e5f26c2f63104c3b851979dabe61e39e70eaf33a833. Opening is 8 cuts under 4 seconds, with the apple and table from 4s to 16s. Teach cards: 2 people, 8 dates, 4 facts, 1 timeline, 1 early graphic, 26 side labels. Picture QA PASS 0/92 fail, polish PASS 0/92 fail, music PASS, sound-effect level PASS. Split panel on the minute-and-second plate kept under Grok 7046684862. Table callback kept under Grok 6792271903. Five low-detail warnings. £0. No upload, schedule or privacy change. Not a film pass and not Ben's watch.",
+      "note": "J3314 v03 is on the shared working store at 09_Assembly/j2035_v03/hos009_long_master_v03.mp4 (sha256 744f32b7f2f95e75fabf039a345aee6c7c01ab6f304a932ebe7172bd3b3ede55). v01 (802b5c7e...) and v02 (9d8731cb...) verified byte-untouched. Exact 519.000 s timeline, part bounds (84.44, 176.78, 260.16, 393.86, 519.00 s), E2 opening (8 cuts <4.5 s), 0:05-0:15 PROOF window, and Part 4 graphic separation preserved. 33 cards programmatically verified (0 overlaps, 0 chapter bleeds, 0 cross-shot drifts): dropped 6 redundant drifted side_labels and 3 stacked Part 4 code-graphic captions; replaced early DATA+SCALE card (26.15-29.75 s) with warm-parchment THOUSANDS OF YEARS teach card (TWO SETS OF RULES once at 40.17 s); added warm-brown teach-card backing, parchment timeline ribbon (369.15-372.95 s), and feathered shadow bands on side_labels. Unmodified picture_qa PASS (0/92 fail, 5 low-detail warnings), polish_gate PASS (0/92 fail), music_gate PASS (v04_synth), sfx_kit level PASS (VO -20.8 LUFS, SFX -41.4 LUFS, 14 hits). Grok 7046684862 and 6792271903 rulings unchanged. 21 verification stills saved in 09_Assembly/j2035_v03/stills/. \u00a30 / 0 credits. No upload, schedule, or privacy change. Not a film pass and not Ben's watch.",
       "since": "2026-11-21",
       "steps": [
-        3,
-        3
+        5,
+        5
       ],
-      "steps_unit": "J3261 assembly steps (plan, render, gates)",
-      "left": "J2036 check",
+      "steps_unit": "J3314 v03 assembly steps (audit, preview, render, gates, publish)",
+      "left": "J2036 v03 QA review",
       "eta": "2026-11-21"
     },
     "thumbnails": {
@@ -91,7 +91,7 @@
       "jobs": [
         "J3262"
       ],
-      "note": "J3262 Acting Chief (Gemini) PASS (21 Nov 2026): long thumbnails A (IT MISSES, cd44f05657ddfea2...) and B (ONE APPLE, 3d1164330249e779...) PASS HOOK, BAND, PHONE (168x94), FAMILY (style_sheet vs 001-004), and Explorer on-model; £0 cash, 0 Flow credits (23450 before/after), Mini-NAS SHA256 parity verified. Ready for J2036 package wiring and Ben's final watch (ben_ok remains todo; not a film PASS or upload/schedule OK)."
+      "note": "J3262 Acting Chief (Gemini) PASS (21 Nov 2026): long thumbnails A (IT MISSES, cd44f05657ddfea2...) and B (ONE APPLE, 3d1164330249e779...) PASS HOOK, BAND, PHONE (168x94), FAMILY (style_sheet vs 001-004), and Explorer on-model; \u00a30 cash, 0 Flow credits (23450 before/after), Mini-NAS SHA256 parity verified. Ready for J2036 package wiring and Ben's final watch (ben_ok remains todo; not a film PASS or upload/schedule OK)."
     },
     "ben_ok": {
       "state": "todo",
@@ -105,5 +105,5 @@
     }
   },
   "claims": [],
-  "next": "J2036 checks the Gravity long master v02. Not a film pass and not Ben's watch."
+  "next": "J2036 checks the Gravity long master v03 (744f32b7). Not a film pass and not Ben's watch."
 }
