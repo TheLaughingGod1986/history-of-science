@@ -1,0 +1,45 @@
+{
+  "film": "126",
+  "title": "What Is the Higgs Boson? (The 48-Year Hunt)",
+  "summary": "Proposed in J3245 (21 Nov 2026) and appended to jobs/WIP.json next_hos under Rule G (4/4 active HOS slots full); Rule-E topic review queued. Aligns with Ben's approved 2027 search plan (J3224 Cluster 2: the god particle 19.7k/mo, +89.8%). Neighbours.py PASS verified (11 strictly on-topic education videos >=1M incl. Veritasium 3.37M, PBS Space Time 2.72M, minutephysics 2.57M, TED-Ed 2.38M & 1.10M, 0 off-topic); public_search.py autocomplete yes & 0 exact title collisions. Awaits Rule-E GO, active HOS WIP slot, SOURCES.md, and facts lane.",
+  "stages": {
+    "topic": {
+      "state": "todo"
+    },
+    "script": {
+      "state": "todo"
+    },
+    "facts": {
+      "state": "todo"
+    },
+    "package": {
+      "state": "todo"
+    },
+    "vo": {
+      "state": "todo"
+    },
+    "shorts_scripts": {
+      "state": "todo"
+    },
+    "shorts_vo": {
+      "state": "todo"
+    },
+    "picture": {
+      "state": "todo"
+    },
+    "edit": {
+      "state": "todo"
+    },
+    "thumbnails": {
+      "state": "todo"
+    },
+    "ben_ok": {
+      "state": "todo"
+    },
+    "scheduled": {
+      "state": "todo"
+    }
+  },
+  "claims": [],
+  "next": ""
+}
