@@ -7,7 +7,7 @@
       "airDate": "2026-10-31T11:30:00Z",
       "promotes": "005",
       "promotesVideoId": "wwcjcFfC-5M",
-      "relatedVideoId": null,
+      "relatedVideoId": "wwcjcFfC-5M",
       "tags": [
         "is the heart a pump",
         "what did galen believe about the heart",
@@ -19,10 +19,11 @@
       ],
       "madeForKids": false,
       "alteredContent": true,
-      "durationSeconds": 24.37,
+      "durationSeconds": 22,
       "cover": "IS THE / HEART A / PUMP?",
-      "note": "Uploaded J0188 14 Oct, private + publishAt 31 Oct 11:30Z. Related blocked: private long wwcjcFfC-5M not offered in Studio; set after 29 Oct 18:00Z, before Short airs.",
-      "id": "5n7xFQRBUvI"
+      "note": "s04 galen stove v04. Public since Sat 31 Oct 2026 11:30 London (2026-10-31T11:30:32Z). Related -> wwcjcFfC-5M verified live; mirrored in Buffer. Supersedes v01 5n7xFQRBUvI (Private, unscheduled).",
+      "id": "BW_CFAX-mxc",
+      "replaces": "5n7xFQRBUvI"
     },
     {
       "title": "How Does a Blood Pressure Cuff Work?",
