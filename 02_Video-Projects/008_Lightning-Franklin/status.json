@@ -1,7 +1,7 @@
 {
   "film": "008",
   "title": "Why Did Franklin Fly a Kite in a Storm?",
-  "air": "2026-11-19",
+  "air": "2026-11-26",
   "ready_by": "2026-11-15",
   "summary": "Franklin master v05 (d1ffb78d...841b) passed J2243 5-part J2829 multimodal QA and Chief review (HOS PR #595 0cf1743f, J2877). Staged in HOS UAT/008_Lightning-Franklin/hos_008_master_v05_PHONE.mp4 (sha256 9e9c8784..., watch id hos-008-v05-42f37ffc34923d7af3ba, Play 302) for Ben's final watch; all 8 Ben notes remain tracked until Ben's final watch.",
   "stages": {
