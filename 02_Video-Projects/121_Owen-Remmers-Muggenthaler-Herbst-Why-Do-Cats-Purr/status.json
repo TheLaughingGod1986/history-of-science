@@ -1,0 +1,45 @@
+{
+  "film": "121",
+  "title": "Why Do Cats Purr? (The 2023 Vocal Cord Twist)",
+  "summary": "Daily HOS topic addition (J3097; Rule-E GO 96.5/100 in J3102; pre-cleared in jobs/WIP.json next_hos under Rule G). Public_search.py and neighbours.py PASS evidence saved (6 strictly on-topic education neighbours >=1M incl. TED-Ed 13.42M Why do cats act so weird?, TED-Ed 10.54M The history of the world according to cats, TED-Ed 4.61M Why do cats have vertical pupils?, SciShow 2.31M Why Do Cats Do That?, TED-Ed 2.03M Is there a disease that makes us love cats?, & SciShow 1.90M Why Do Cats Purr?; 0 collisions across all candidate titles across 11 public_search queries); awaits an open active HOS WIP slot (4/4 full) before SOURCES.md and facts lane.",
+  "stages": {
+    "topic": {
+      "state": "todo"
+    },
+    "script": {
+      "state": "todo"
+    },
+    "facts": {
+      "state": "todo"
+    },
+    "package": {
+      "state": "todo"
+    },
+    "vo": {
+      "state": "todo"
+    },
+    "shorts_scripts": {
+      "state": "todo"
+    },
+    "shorts_vo": {
+      "state": "todo"
+    },
+    "picture": {
+      "state": "todo"
+    },
+    "edit": {
+      "state": "todo"
+    },
+    "thumbnails": {
+      "state": "todo"
+    },
+    "ben_ok": {
+      "state": "todo"
+    },
+    "scheduled": {
+      "state": "todo"
+    }
+  },
+  "claims": [],
+  "next": ""
+}
