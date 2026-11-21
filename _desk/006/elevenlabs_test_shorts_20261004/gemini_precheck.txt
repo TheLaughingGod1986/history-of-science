@@ -1,0 +1,27 @@
+### Short T1: "A tree is built from thin air" (van Helmont)
+**Status:** **PASS**
+
+* **Hook & Duration:** Total runtime is 25 s across six shots (0–3s, 3–7s, 7–11s, 11–15s, 15–20s, 20–25s), landing squarely inside the 22–27 s lock with no opening greeting. Line 1 (*"A tree is built from thin air"*) is exactly 7 words, delivering the surprising claim in the first second, backed by a 3-word frame-0 hook caption (*"MADE OF AIR"*).
+* **Structure & Loop:** Follows the two-line hook + one hard fact rhythm (Line 1 claim, Line 2 five-year setup, followed by the balance measurement). Frame 0 opens mid-action on the willow with glittering air; the title card sits mid-Short at 11–15 s; shot 6 (20–25 s) returns to shot 1's composition for a seamless loop.
+* **FACT_NOTES Match (200 lb soil):** *"two hundred pounds of dried soil"* matches [FACT_NOTES_v01.md](file:///Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/01_Script/FACT_NOTES_v01.md#L11) (*"a big clay pot … two hundred pounds of soil, dried in a furnace first"* / *Ortus Medicinae* 1648: 200 lb oven-dried soil).
+* **FACT_NOTES Match (5 years & water only):** *"spent five years"* and *"gave it only water"* matches [FACT_NOTES_v01.md](file:///Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/01_Script/FACT_NOTES_v01.md#L14) (*"for five years, he gave that tree nothing but pure water"*).
+* **FACT_NOTES Match (169 lb tree):** *"tree weighed a hundred and sixty-nine pounds"* matches [FACT_NOTES_v01.md](file:///Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/01_Script/FACT_NOTES_v01.md#L15) (*"A hundred and sixty-nine pounds"* / *Ortus Medicinae*: 169 lb ~3 oz).
+* **FACT_NOTES Match (2 oz soil lost):** *"soil had lost just two ounces"* matches [FACT_NOTES_v01.md](file:///Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/01_Script/FACT_NOTES_v01.md#L18) (*"Two hundred pounds, less about two ounces"* / *Ortus Medicinae*: 200 lb less ~2 oz).
+
+---
+
+### Short T2: "Mint fixed the air" (Priestley)
+**Status:** **PASS**
+
+* **Hook & Duration:** Total runtime is 25 s (0–3s, 3–7s, 7–11s, 11–15s, 15–20s, 20–25s), meeting the 22–27 s lock with no conversational greeting. Line 1 (*"A sprig of mint repaired the air"*) is exactly 7 words, staking the claim at frame 0 with a 4-word hook caption (*"MINT FIXED THE AIR"*).
+* **Structure & Visual Hook:** Frame 0 opens mid-motion on the mint sprig under glass with rising bubbles. Promoted film title card appears mid-Short at 11–15 s; shot 6 (20–25 s) loops back to the opening shot setup (*"PLANTS REPAIR THE AIR"*).
+* **FACT_NOTES Match (Extinguished Candle & "Injured" Air):** *"burned a candle in a sealed jar until the flame died, and no new flame would light"* and shot 2 caption *"INJURED" AIR* match [FACT_NOTES_v01.md](file:///Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/01_Script/FACT_NOTES_v01.md#L30) (Priestley's terminology for air noxious from combustion; *Phil. Trans.* 62, 1772).
+* **FACT_NOTES Match (10 Days: 17 Aug – 27 Aug):** *"Ten days later, a candle burned bright in that same air"* and the calendar transitions (17 August to 27 August) match [FACT_NOTES_v01.md](file:///Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/01_Script/FACT_NOTES_v01.md#L31) (*"On the 17th of August, 1771, I put a sprig of mint into a quantity of air … on the 27th … another candle burned perfectly well in it"*).
+* **House Rule Compliance (No Mouse):** Adheres strictly to the test-scope rule by omitting the mouse experiment from [FACT_NOTES_v01.md](file:///Users/benjaminoats/YouTube/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/01_Script/FACT_NOTES_v01.md#L32), maintaining pacing and visual focus within 25 seconds.
+
+---
+
+### Overall Verdict
+**OVERALL: GO for minting as test files only (not for upload).**
+
+*(Logged evaluation to [_desk/006/elevenlabs_test_shorts_20261004/gemini_precheck.txt](file:///Users/benjaminoats/_desk/006/elevenlabs_test_shorts_20261004/gemini_precheck.txt).)*
