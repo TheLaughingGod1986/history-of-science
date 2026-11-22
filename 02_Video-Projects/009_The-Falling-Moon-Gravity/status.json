@@ -3,7 +3,7 @@
   "title": "Why Doesn't the Moon Fall to Earth?",
   "air": "2026-11-26",
   "ready_by": "2026-11-22",
-  "summary": "J3261 built the Gravity long master v02 (9d8731cb) beside untouched v01 (802b5c7e). Picture and polish checks passed with 0 failures. Music and sound-effect levels passed. Five low-detail warnings remain for a full-size look. This is not a film pass and not Ben's watch. J2036 checks this cut next. The accepted score from J3241 is unchanged.",
+  "summary": "J3314 built the Gravity long master v03 (744f32b7) beside untouched v01 (802b5c7e) and v02 (9d8731cb). J2036 independently re-verified v03 hashes, all 4 unmodified gates (picture_qa 0/92 fail, polish_gate 0/92 fail / 5 inspected low-detail warns, music_gate PASS, sfx_kit level PASS), 33 Teach/E2 cards, 29 stills, exact v03 chapters + 8 Sources + honest making-of line, FACT_NOTES provenance, and lint:package PASS. Ready for J2037 review and Ben final watch (ben_ok remains todo; not a film PASS).",
   "stages": {
     "topic": {
       "state": "done"
@@ -61,18 +61,18 @@
     "edit": {
       "state": "doing",
       "due": "2026-11-19",
-      "owner": "qa (J2036)",
-      "waiting": "J2036 checks v02 gates, proof stills, 42 Teach cards, chapters re-time, and thumbnail manifest wiring",
+      "owner": "review (J2037)",
+      "waiting": "J2037 review of v03 master (744f32b7) + J2036 technical QA pack, PR merge, and Ben final watch card",
       "underway": false,
-      "note": "J3261 v02 is on the shared working store at 09_Assembly/j2035_v02/hos009_long_master_v02.mp4 (sha256 9d8731cb49641776027bcbd75a6f4ae5519fc3907c28cb7f422883ebde73ef10). v01 stays 802b5c7eb0dd64a77b938e5f26c2f63104c3b851979dabe61e39e70eaf33a833. Opening is 8 cuts under 4 seconds, with the apple and table from 4s to 16s. Teach cards: 2 people, 8 dates, 4 facts, 1 timeline, 1 early graphic, 26 side labels. Picture QA PASS 0/92 fail, polish PASS 0/92 fail, music PASS, sound-effect level PASS. Split panel on the minute-and-second plate kept under Grok 7046684862. Table callback kept under Grok 6792271903. Five low-detail warnings. £0. No upload, schedule or privacy change. Not a film pass and not Ben's watch.",
-      "since": "2026-11-21",
+      "note": "J3314 v03 (09_Assembly/j2035_v03/hos009_long_master_v03.mp4, sha256 744f32b7f2f95e75fabf039a345aee6c7c01ab6f304a932ebe7172bd3b3ede55, 519.000 s, 15568 frames) and prior v01 (802b5c7e...) / v02 (9d8731cb...) live NAS+Mini SHA-256 verified by J2036 (22 Nov 2026). All 4 unmodified gates independently re-run PASS: picture_qa 0/92 fail, polish_gate 0/92 fail (5 low-detail warnings all inspected at 1080p), music_gate PASS (v04_synth), sfx_kit level PASS (VO -20.8 / SFX -41.4 LUFS, 14 hits); ebur128 -20.8 LUFS, Peak -4.0 dBFS, 0 silences >=1.5 s. 33 Teach/E2 cards verified (0 overlaps/bleeds/drifts), 29 stills + thumbs A/B inspected. Exact v03 chapters (0:00/1:24/2:56/4:20/6:33) + 8 Sources + honest making-of line in moon_long_description_v01.txt, FACT_NOTES provenance reconciled, lint:package PASS. Pack: 07_Edit-Project/J2036_V03_QA_2026-11-22.md. £0 / 0 credits. No upload, schedule, or privacy change. Not a film PASS and not Ben's watch (ben_ok remains todo).",
+      "since": "2026-11-22",
       "steps": [
-        3,
-        3
+        5,
+        5
       ],
-      "steps_unit": "J3261 assembly steps (plan, render, gates)",
-      "left": "J2036 check",
-      "eta": "2026-11-21"
+      "steps_unit": "J2036 v03 technical QA and package checks",
+      "left": "J2037 review and Ben final watch card",
+      "eta": "2026-11-22"
     },
     "thumbnails": {
       "state": "done",
@@ -105,5 +105,5 @@
     }
   },
   "claims": [],
-  "next": "J2036 checks the Gravity long master v02. Not a film pass and not Ben's watch."
+  "next": "J2037 reviews HOS 009 long master v03 (744f32b7) + J2036 technical pack, merges records PR, and delivers Ben's final watch card (ben_ok remains todo)."
 }

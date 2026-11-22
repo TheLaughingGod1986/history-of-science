@@ -3,17 +3,20 @@
 | Field | Value |
 |---|---|
 | Slug | `009_The-Falling-Moon-Gravity` |
-| Stage | **Picture Tranche 1 KEEP (57/57 Flow rows + 12 code graphics + 1 reuse = 70/90 rows)** (29 Oct 2026, J1192) |
-| Script | PR #208 v01 · review **91.3** (may still be off main) |
-| FACT_NOTES | Sourced from script new-claims; **7/7 hard-checks PASS**; Claude UNSIGNED |
-| Neighbour gate | **PASS — 5 education ≥1M; TED-Ed yes** |
-| Upload package | Manifest / description / tags / PRE_BUILD (UNSIGNED) / checklist scaffolded |
-| Picture | **Tranche 1 minted & KEEP** (J1192, 29 Oct: 57/57 Flow rows = 26 Quality + 31 Fast, 3,170 cr vs 7,354 expected / 7,585 cap; live Flow 15,380 >= 3,000 buffer) + 12 £0 code graphics (J0342/J0383) + 1 reuse = **70/90 rows**. Tranche 2: **20 Quality rows remain**, now authorized by J2026 (4 Nov), hard cap6,000, max3 takes/row, >=3,000 headroom; worker J2033. |
-| VO | **LOCKED v01** (Chief KEEP, desk #180 comment 6101629662, 11 Oct). Retime 8:38.4 in `07_Edit-Project/VO_RETIME_v01.json`. |
+| Stage | **Long master v03 (`744f32b7`, J3314) + J2036 technical QA pack ready for J2037 review & Ben final watch** (`ben_ok: todo`; 22 Nov 2026) |
+| Script | `moon_script_master_v01.md` · review **91.3** (`gate:episode` PASS; 6 DATA, 6 SCALE, 2 WHO, 8 WHEN, 4 FACT) |
+| FACT_NOTES | Sourced from script new-claims; **7/7 hard-checks PASS**. `FACT_NOTES_v01.md` lines 3 & 77 record "Confirmed by Claude, 4 Oct 2026" (desk claim `5982314076`); earlier header read `Claude UNSIGNED` (preserved as provenance note; no new sign-off invented). |
+| Neighbour gate | **PASS — 6 education ≥1M; TED-Ed yes** (`evidence_2026-10-04_neighbours.json` + 24 Oct `eyZEqSPeMwg`) |
+| Upload package | `PACKAGE_MANIFEST.json` (thumbs A+B wired, `video: null`, `privacy: private`), `moon_long_description_v01.txt` (exact v03 chapters `0:00/1:24/2:56/4:20/6:33`, 8 Sources, honest making-of line), `moon_long_tags_v01.txt`, `PRE_BUILD_VIDIQ_AUDIT.md` (signed by Claude 4 Oct 2026 in §7; vidIQ waived), `lint:package` PASS |
+| Picture | **All 90/90 board rows settled** (Tranche 1 57 KEEP J1237 + Tranche 2 Flow/retakes KEEP J2033–J2629 + J2631 & J2632 r4 code graphics KEEP) & composited into v03 (`picture_qa` 0/92 fail, `polish_gate` 0/92 fail, 5 inspected low-detail warnings). Stays `doing` in `status.json` until J2037/Chief closes edit milestone. |
+| VO | **LOCKED v01** (Chief KEEP, desk #180 comment 6101629662, 11 Oct; 5 parts, 508.40 s speech). Retime 8:38.4 in `07_Edit-Project/VO_RETIME_v01.json`. |
+| Score | **v04_synth ACCEPTED** (`hos_009_score_v04_synth.wav`, `151ba46a…`, J3241; `music_gate` PASS on v03 cut) |
+| Thumbnails | **J3262 Acting Chief PASS (21 Nov 2026):** A (`IT MISSES`, `cd44f056…`) & B (`ONE APPLE`, `3d116433…`), Mini↔NAS 7/7 SHA-256 parity |
+| Shorts (separate) | `J0862` Shorts VO PASS (PR #423); `J2171` Shorts A & B assembled (PR #718 open, CI green; separate independent review `J3311` held for non-producer Mini reviewer) |
 
 ## STOP
 
-- Tranche 1 remains Chief J1237 PASS, with v05 locked trims. J2026 supersedes ONLY the old renewal-only wait and false generation flags for the20 named tranche2 rows; J2033 owns bounded production. Full picture is not complete; no edit/publishing approval.
+- **Not a film PASS and not Ben's watch:** `ben_ok` and `scheduled` remain `todo`. No YouTube upload, schedule, privacy, or Buffer action is authorized until J2037 review and Ben's final watch approval.
 - Do not merge or close desk PR #180 from this work.
 - Does **not** close #180.
 
@@ -212,3 +215,27 @@ Following shipped HOS 006 (`trees006_score_bed_v01.mp3`) and HOS 007 (`vaccine_s
 - **Verdict:** **NOT ACCEPTED (REFUSED)**. Independently verified `J3234` PR `#697` (merged `03042715` strictly as rejected-attempt audit provenance): deterministic pure Python/NumPy, `19/19` Mini/NAS SHA-256 parity, all `9/9` preserved locks unchanged (`teach_v01` `4c1f0a17…`), unchanged `music_gate.py` (`62b5159f…`) PASS (`94` comparisons across all 9 roots including 15 materialized UAT tracks, `0` unreadable, max `0.3961`/`0.3868`, no waiver), and `0` `silencedetect` dropouts at `-45 dB` (`d=0.25`/`0.50`). However, independent `audio_input` ear review `J3235` (HOS PR `#698`, `EAR_REVIEW_v03_synth.md`) **FAILED** period chamber musicality/warmth (harsh buzzy reed-organ pad + metallic Karplus-Strong MIDI/chiptune pings), `175.28–178.28 s` join quality (jarring timbral cliff into studio-acoustic `teach_v01`), Part 2 `~84.44 s` shift (`+12` semitone octave jump + `+2.2–2.5 dB` RMS bump), and wonder-to-teach cohesion (confirmed by Chief `audio_input` audition of `hos_009_transition_168_186_bed_v03.wav`).
 - **Bounded Fallback Invoked (Option i — ONE AND FINAL £0 attempt):** Authorized unified full-runtime (`0.00–535.33 s`) warm D-minor chamber own-synthesis revision `v04_synth` (`05_Music/SCORE_SCOPE_v04_synth.json`), modeled on shipped HOS 006/007 warm low-harmonic pads + clean soft exponential-decay harp with smooth 3.0 s chapter-card transitions (eliminating both the synthetic buzz/pings and the `175.28–178.28 s` timbral cliff). Queued **`J3239` (assembly) -> `J3240` (independent `audio_input` ear review) -> `J3241` (final Chief disposition)**. **No `v05_synth` allowed**: if `v04_synth` fails `music_gate.py` or `J3240` ear review, `J3241` immediately escalates ONE single ElevenLabs `music_v2` billing/pricing confirmation question to Ben (Option ii).
 - **Guardrails & Holds:** `£0.00` cash, `0` credits, `0` account GETs, `0` ElevenLabs POSTs, `ACTIVATION_AUTHORIZED = False` preserved, `J3047` closed unused, `v01`/`v02`/`v03_synth` rejected, `teach_v01` untouched, `J2035` (also awaiting `J2632` picture KEEP) and `J2171` remain held (`blocked`), no YouTube/Buffer/schedule changes. Full ruling: `05_Music/SCORE_DISPOSITION_v03_synth.md` and `05_Music/SCORE_DISPOSITION_v03_synth.json`.
+
+
+## 22 Nov 2026 — J2036: HOS 009 long master v03 technical QA pack & package completion (Gemini worker)
+
+- **Scope & authority:** Worker technical QA pack only (`J2036`), opened to `gemini` by Claude (`2026-11-22T11:16Z`). **Not a film PASS and not a self-merge.** Full moving-picture and audio review remains assigned to Ben's final watch (`ben_ok: todo`, per 4 Nov 2026 standing order). £0.00 cash, 0 Flow credits, 0 ElevenLabs credits; no YouTube, Studio, Buffer, schedule, or privacy changes.
+- **Exact master & input hashes (live recomputed Mini + NAS):**
+  - `hos009_long_master_v03.mp4`: `744f32b7f2f95e75fabf039a345aee6c7c01ab6f304a932ebe7172bd3b3ede55` (`898,035,226` bytes, `519.000 s`, `1920x1080` h264 30 fps `15568` frames, AAC 48 kHz stereo; byte-identical Mini scratch ↔ NAS `09_Assembly/j2035_v03/`).
+  - Prior masters verified untouched on NAS: `v01` `802b5c7eb0dd64a77b938e5f26c2f63104c3b851979dabe61e39e70eaf33a833`, `v02` `9d8731cb49641776027bcbd75a6f4ae5519fc3907c28cb7f422883ebde73ef10`.
+  - Locked VO (`VO_TAKES_KEEP.json` `530743c5…` + all 5 MP3s), `v04_synth` score (`151ba46a…`), J2631 (`e35f9a98…`) & J2632 r4 (`23c832b0…`) code graphics, and J3262 thumbnails A (`cd44f056…`) & B (`3d116433…`, 7/7 Mini↔NAS parity) all verified byte-identical.
+- **Independent unmodified gate re-runs on v03:**
+  - `picture_qa.py`: `picture QA PASS: 0 of 92 cuts fail, 74 to look at`
+  - `polish_gate.py`: `polish gate PASS: 0 of 92 rows failed, 5 to look at` (all 5 low-detail warnings — 1:25 card, 3:04 falling-Moon diagram, 4:21 card, 4:54 spray wall, 5:26 split diagram — visually inspected at 1080p, all clean by design)
+  - `music_gate.py`: `music gate PASS: hos_009_score_v04_synth.wav, 535.3 s, about 52.2 BPM, brief Pace: 60-68 BPM`
+  - `sfx_kit.py level`: `SFX level PASS: VO -20.8 LUFS, SFX -41.4 LUFS, 14 hits`
+  - `ffmpeg ebur128 + silencedetect`: Integrated `-20.8 LUFS`, LRA `4.8 LU`, True Peak `-4.0 dBFS`, `0` silences ≥ 1.5 s.
+  - `reviewed_ok.json` unchanged (2 entries only: Grok `6792271903` table callback 0.30–7.00 s; Grok `7046684862` wooden-arch split panel on `05_minute_second`).
+- **E2 / Teach / Stills:** 8 opening cuts of `3.9925 s` (< 4.5 s), 0:05–0:15 proof stills verified, `26.15–29.75 s` early DATA+SCALE `THOUSANDS OF YEARS` teach card verified, 33 cards (`0` overlaps, `0` chapter bleeds, `0` cross-shot drifts), all 4 v02 findings resolved; all 21 verification stills + 5 low-detail warn frames + Halley WHO + 1758 comet + 66M handoff + thumbs A/B inspected.
+- **Package & provenance:** Exact v03 chapter times (`0:00, 1:24, 2:56, 4:20, 6:33`) and all 8 `Sources` preserved in `11_Upload-Package/Descriptions/moon_long_description_v01.txt` (HOS 010 untouched for `J1275`); honest making-of line added (`studio/RULES.md` line 227); `production-status.md` header reconciled with `FACT_NOTES_v01.md` (lines 3 & 77) and `PRE_BUILD_VIDIQ_AUDIT.md` (§7) without inventing a new sign-off; Shorts (`J0862` VO PASS, `J2171` PR #718 open / `J3311` review held) retained separately. Full report: `07_Edit-Project/J2036_V03_QA_2026-11-22.md`.
+- **Pasted contract & package lint outputs (`check_all.sh` + `lint:package --film 009`):**
+```text
+PASS  02_Video-Projects/009_The-Falling-Moon-Gravity/11_Upload-Package/PACKAGE_MANIFEST.json
+   warn  [captions] no captionsFile (captions from the script)
+ALL CHECKS PASS
+```
