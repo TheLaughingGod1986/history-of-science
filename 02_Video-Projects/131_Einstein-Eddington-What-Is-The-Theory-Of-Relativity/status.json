@@ -1,0 +1,45 @@
+{
+  "film": "131",
+  "title": "What Is the Theory of Relativity? (1919 Eclipse)",
+  "summary": "Added to jobs/WIP.json next_hos by J3348 (2026-11-22, Rule G: 4/4 active HOS slots full); awaiting Rule-E topic go/no-go review. J3224 Cluster 2 #5 (theory of relativity 29.5k/mo +84.4%, albert einstein documentary comp 38 +88.7%, 9/10 US SERP gap). neighbours.py PASS (7 raw / 5 strictly on-topic edu videos >=1M incl. Veritasium 8.55M, TED-Ed 5.92M & 2.73M, minutephysics 1.86M, CrashCourse 1.45M); public_search.py autocomplete yes on 3 phrases + related 1919 eclipse, 0 exact title collisions. All claims UNVERIFIED pending open WIP slot, SOURCES.md, and facts lane.",
+  "stages": {
+    "topic": {
+      "state": "todo"
+    },
+    "script": {
+      "state": "todo"
+    },
+    "facts": {
+      "state": "todo"
+    },
+    "package": {
+      "state": "todo"
+    },
+    "vo": {
+      "state": "todo"
+    },
+    "shorts_scripts": {
+      "state": "todo"
+    },
+    "shorts_vo": {
+      "state": "todo"
+    },
+    "picture": {
+      "state": "todo"
+    },
+    "edit": {
+      "state": "todo"
+    },
+    "thumbnails": {
+      "state": "todo"
+    },
+    "ben_ok": {
+      "state": "todo"
+    },
+    "scheduled": {
+      "state": "todo"
+    }
+  },
+  "claims": [],
+  "next": ""
+}

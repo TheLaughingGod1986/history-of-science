@@ -1,0 +1,45 @@
+{
+  "film": "130",
+  "title": "How Does a Nuclear Reactor Work? (Under a Stadium)",
+  "summary": "Added to jobs/WIP.json next_hos by J3348 (2026-11-22, Rule G: 4/4 active HOS slots full); awaiting Rule-E topic go/no-go review. J3224 Cluster 2 #2 (enrico fermi 9.6k/mo comp 35, 9/10 US SERP gap). neighbours.py PASS (12 raw / 9 strictly on-topic edu videos >=1M incl. TED-Ed 3.33M, Kurzgesagt 8.22M, SmarterEveryDay 7.52M & 3.85M, TED 1.24M); public_search.py autocomplete yes on 4 phrases, 0 exact title collisions. All claims UNVERIFIED pending open WIP slot, SOURCES.md, and facts lane.",
+  "stages": {
+    "topic": {
+      "state": "todo"
+    },
+    "script": {
+      "state": "todo"
+    },
+    "facts": {
+      "state": "todo"
+    },
+    "package": {
+      "state": "todo"
+    },
+    "vo": {
+      "state": "todo"
+    },
+    "shorts_scripts": {
+      "state": "todo"
+    },
+    "shorts_vo": {
+      "state": "todo"
+    },
+    "picture": {
+      "state": "todo"
+    },
+    "edit": {
+      "state": "todo"
+    },
+    "thumbnails": {
+      "state": "todo"
+    },
+    "ben_ok": {
+      "state": "todo"
+    },
+    "scheduled": {
+      "state": "todo"
+    }
+  },
+  "claims": [],
+  "next": ""
+}
