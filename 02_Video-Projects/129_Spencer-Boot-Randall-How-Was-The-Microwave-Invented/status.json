@@ -1,0 +1,46 @@
+{
+  "film": "129",
+  "title": "How Was the Microwave Invented? (A Radar Accident)",
+  "summary": "Proposed in J3270 and Rule-E pre-cleared by J3347 (GO 96.4/100, 22 Nov 2026). Stays in jobs/WIP.json next_hos under Rule G (4/4 active HOS slots full). Passes all currently in-force HOS topic gates (neighbours.py PASS: 3 raw / 3 strictly on-topic >=1M edu videos, 0 off-topic >=1M: Tom Scott 8.96M, TED-Ed 2.11M, SciShow 1.33M; public_search.py 10 queries, 5 core autocomplete=yes, 0 exact title collisions) and aligns with proposed hos-search-2027-01 Cluster 3 Accidental Inventions (J3224, currently needsBen in studio/plan.json). All historical/scientific claims remain unverified pending active HOS WIP slot, SOURCES.md verbatim quotes, and facts lane.",
+  "stages": {
+    "topic": {
+      "state": "todo",
+      "note": "J3270 topic brief written; J3347 Rule-E topic go/no-go review GO (96.4/100 in next_hos under Rule G); fixed Thumb A §2.5 title-repeat (RADAR ACCIDENT -> MELTED CANDY BAR), Thumb C §2.B.1 vague pronoun teaser (IT EXPLODED -> THE EGG EXPLODED), 2.45 GHz cycles-vs-reversals & non-resonance dielectric-heating physics guardrails, and 10_Shorts/README.md 19 Nov 16-19s house-rules note; script guardrails logged; all claims remain unverified pending SOURCES.md and facts lane when an active HOS slot opens"
+    },
+    "script": {
+      "state": "todo"
+    },
+    "facts": {
+      "state": "todo"
+    },
+    "package": {
+      "state": "todo"
+    },
+    "vo": {
+      "state": "todo"
+    },
+    "shorts_scripts": {
+      "state": "todo"
+    },
+    "shorts_vo": {
+      "state": "todo"
+    },
+    "picture": {
+      "state": "todo"
+    },
+    "edit": {
+      "state": "todo"
+    },
+    "thumbnails": {
+      "state": "todo"
+    },
+    "ben_ok": {
+      "state": "todo"
+    },
+    "scheduled": {
+      "state": "todo"
+    }
+  },
+  "claims": [],
+  "next": ""
+}
