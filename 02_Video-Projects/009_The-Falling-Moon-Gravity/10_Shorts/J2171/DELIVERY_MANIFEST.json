@@ -1,0 +1,203 @@
+{
+  "job": "J2171",
+  "film": "HOS:009",
+  "assembler": "gemini",
+  "gbp_spent": 0,
+  "credits_spent": 0,
+  "parent_long_status": "not_uploaded_yet_must_be_public_before_shorts",
+  "conditional_planning_targets": {
+    "long_planned": "2026-11-26T18:00:00Z",
+    "short_A_conditional": "2026-11-27T11:30:00Z (Fri; note Sat 2026-11-28 11:30Z is go-public-day Short slot under 7 Nov week rule)",
+    "short_B_conditional": "2026-11-30T11:30:00Z (brief conditional target; note Mon is not a locked HOS Sat/Fri/Sun/Tue Short weekday \u2014 Sun 2026-11-29 or Tue 2026-12-01 11:30Z matches the 7 Nov week)",
+    "ben_watch_ready_target": "2026-11-24T18:00:00Z"
+  },
+  "duplicate_check": {
+    "snapshot": "05_Analytics/hos/snapshots/2026-11-20.json",
+    "total_hos_videos_checked": 69,
+    "gravity_newton_moon_orbit_matches": 0
+  },
+  "code_graphics_9x16": {
+    "short_A_s02": {
+      "nas_path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/code_graphics_v01/code_graphic_009_short_A_s02_km_a_second_9x16.mp4",
+      "sha256": "819e453dced47e4ad7ef8f6b014699f0e15bfe5334f807f18b25790503c79218",
+      "duration_s": 2.933,
+      "derived_from_parent": [
+        "code_graphic_009_p3_08_km_a_second.mp4",
+        "b18c90bc720791f3b4e084db41ca2df4e573d791db74191032366ae9d42a6f58"
+      ]
+    },
+    "short_A_s07": {
+      "nas_path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/code_graphics_v01/code_graphic_009_short_A_s07_orbit_teach_9x16.mp4",
+      "sha256": "18b4dbf94c142f0fe9e5f4ed9b3f7006784fadeee6ca06a6b17cf53e5bfd98ef",
+      "duration_s": 2.667,
+      "derived_from_parent": [
+        "code_graphic_009_p3_06_orbit_teach.mp4",
+        "840706a32f1717c789317f13c0a4481e334c34f8a39c9393f78a660ea9d9a178"
+      ]
+    },
+    "short_B_s04": {
+      "nas_path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/code_graphics_v01/code_graphic_009_short_B_s04_sixty_earths_9x16.mp4",
+      "sha256": "4f63cdac24b871242f3c73226f6a0d38dfd3a81cfadbec54d4401c02c33007c6",
+      "duration_s": 3.033,
+      "derived_from_parent": [
+        "code_graphic_009_p4_03_sixty_earths.mp4",
+        "4de87bc274d984971dabea10403c42ccb45ef654279414d36c19f3c3fce1ac10"
+      ]
+    },
+    "short_B_s06": {
+      "nas_path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/07_Edit-Project/code_graphics_v01/code_graphic_009_short_B_s06_dots_square_9x16.mp4",
+      "sha256": "45fe23301fe4044076e66623b445e02863230f0db3c8cedda2ea9f6265afa58f",
+      "duration_s": 3.133,
+      "derived_from_parent": [
+        "code_graphic_009_p4_04_dots_square.mp4",
+        "7c393d99592073b975adb3faf4196f1253c5c193fd9316b839bc367e32cad072"
+      ],
+      "background_moving_plate": {
+        "row_id": "P4:02_spray_paint_c2",
+        "sha256": "0a6279c069fae36a0df291a33d25cce35d0a3aefd4965ebf21ef3e4281bb0f85"
+      }
+    }
+  },
+  "shorts": {
+    "Short_A": {
+      "short_id": "short_A",
+      "stem": "hos_009_short_A_v01",
+      "youtube_title": "What Would Happen If the Moon Stopped Moving?",
+      "nas_master_mp4": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/10_Shorts/J2171/short_A/hos_009_short_A_v01.mp4",
+      "uat_master_mp4": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/009_The-Falling-Moon-Gravity/10_Shorts/hos_009_short_A_v01.mp4",
+      "scratch_mp4": "/Volumes/MiniWork/scratch/J2171-build/short_A/hos_009_short_A_v01.mp4",
+      "master_sha256": "43dbeb3ae42ed682814af56cec2bde0a3626a758c949174145af2db243278332",
+      "master_bytes": 11851675,
+      "duration_s": 25.4,
+      "resolution": "936x1664",
+      "fps": 30,
+      "words_count": 58,
+      "vo_onset_s": 0.12,
+      "hook_sentence_end_s": 2.8,
+      "first_cut_s": 2.8,
+      "second_cut_s": 5.74,
+      "max_body_hold_s": 3.28,
+      "last_word_end_s": 24.24,
+      "tail_gap_s": 1.08,
+      "loop_tail_s": 1.0,
+      "payoff_word": "orbit",
+      "payoff_start_s": 19.64,
+      "payoff_frac": 0.7757,
+      "level": {
+        "lufs": -14.0,
+        "true_peak_dbtp": -1.9,
+        "loudnorm_I": -12.0
+      },
+      "score_nas_path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/05_Music/hos_009_score_v04_synth.wav",
+      "score_sha256": "151ba46acdf7d4395b34e105530bd077c26f6eb92832f9a1f00e1551ca88f58d",
+      "score_start_s": 2.0,
+      "stem_hashes": {
+        "vo": {
+          "nas_path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/10_Shorts/J2171/short_A/stems/stem_vo.wav",
+          "sha256": "4cb6024c37dc6137221199ada8393809d53c18f5623dba34aec5a8d0c14f5f74",
+          "bytes": 4861518
+        },
+        "bed": {
+          "nas_path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/10_Shorts/J2171/short_A/stems/stem_bed.wav",
+          "sha256": "3ab94820d2fb545086f33bf9f58872b40ff245ebfbb3bc65be393a9bbac7f614",
+          "bytes": 4861518
+        },
+        "sfx": {
+          "nas_path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/10_Shorts/J2171/short_A/stems/stem_sfx.wav",
+          "sha256": "ff2856e7f7c0399a8c6d3d4172a8f4a3c7296b3e234f2c4b0476320db02f0225",
+          "bytes": 4861518
+        }
+      },
+      "gates": {
+        "polish": {
+          "exit": 0
+        },
+        "picture": {
+          "exit": 0
+        },
+        "music": {
+          "exit": 0
+        },
+        "open": {
+          "exit": 0
+        },
+        "vo_check": {
+          "exit": 0
+        },
+        "sfx": {
+          "exit": 0
+        }
+      }
+    },
+    "Short_B": {
+      "short_id": "short_B",
+      "stem": "hos_009_short_B_v01",
+      "youtube_title": "How Did Newton Discover Gravity?",
+      "nas_master_mp4": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/10_Shorts/J2171/short_B/hos_009_short_B_v01.mp4",
+      "uat_master_mp4": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/009_The-Falling-Moon-Gravity/10_Shorts/hos_009_short_B_v01.mp4",
+      "scratch_mp4": "/Volumes/MiniWork/scratch/J2171-build/short_B/hos_009_short_B_v01.mp4",
+      "master_sha256": "e6e5ae3ff3be4856cc0a45af78f17f6b410974784a67fd3e6bba8222bc48037a",
+      "master_bytes": 10725616,
+      "duration_s": 25.5,
+      "resolution": "936x1664",
+      "fps": 30,
+      "words_count": 56,
+      "vo_onset_s": 0.06,
+      "hook_sentence_end_s": 2.82,
+      "first_cut_s": 2.82,
+      "second_cut_s": 5.56,
+      "max_body_hold_s": 3.66,
+      "last_word_end_s": 24.38,
+      "tail_gap_s": 1.1,
+      "loop_tail_s": 1.0,
+      "payoff_word": "numbers",
+      "payoff_start_s": 19.88,
+      "payoff_frac": 0.7802,
+      "level": {
+        "lufs": -14.3,
+        "true_peak_dbtp": -1.8,
+        "loudnorm_I": -12.0
+      },
+      "score_nas_path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/05_Music/hos_009_score_v04_synth.wav",
+      "score_sha256": "151ba46acdf7d4395b34e105530bd077c26f6eb92832f9a1f00e1551ca88f58d",
+      "score_start_s": 262.0,
+      "stem_hashes": {
+        "vo": {
+          "nas_path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/10_Shorts/J2171/short_B/stems/stem_vo.wav",
+          "sha256": "8a92d01bb7e02191b2399dac2bcaff47383a440d86aa349ce1438f3650350c5a",
+          "bytes": 4892238
+        },
+        "bed": {
+          "nas_path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/10_Shorts/J2171/short_B/stems/stem_bed.wav",
+          "sha256": "3f631b567c1aae1f8702e7fcddf37fe17a7ee73b7cb1a942c4f46909e9600829",
+          "bytes": 4892238
+        },
+        "sfx": {
+          "nas_path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/10_Shorts/J2171/short_B/stems/stem_sfx.wav",
+          "sha256": "b9e7bca46be6d5aeac6b0572a07fe4845f45ae98c3a67ab9646670ac1d975270",
+          "bytes": 4892238
+        }
+      },
+      "gates": {
+        "polish": {
+          "exit": 0
+        },
+        "picture": {
+          "exit": 0
+        },
+        "music": {
+          "exit": 0
+        },
+        "open": {
+          "exit": 0
+        },
+        "vo_check": {
+          "exit": 0
+        },
+        "sfx": {
+          "exit": 0
+        }
+      }
+    }
+  }
+}

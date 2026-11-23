@@ -1,0 +1,70 @@
+{
+  "short_id": "short_A",
+  "stem": "hos_009_short_A_v01",
+  "youtube_title": "What Would Happen If the Moon Stopped Moving?",
+  "nas_master_mp4": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/10_Shorts/J2171/short_A/hos_009_short_A_v01.mp4",
+  "uat_master_mp4": "/Users/benjaminoats/Library/Mobile Documents/com~apple~CloudDocs/HOS UAT/009_The-Falling-Moon-Gravity/10_Shorts/hos_009_short_A_v01.mp4",
+  "scratch_mp4": "/Volumes/MiniWork/scratch/J2171-build/short_A/hos_009_short_A_v01.mp4",
+  "master_sha256": "43dbeb3ae42ed682814af56cec2bde0a3626a758c949174145af2db243278332",
+  "master_bytes": 11851675,
+  "duration_s": 25.4,
+  "resolution": "936x1664",
+  "fps": 30,
+  "words_count": 58,
+  "vo_onset_s": 0.12,
+  "hook_sentence_end_s": 2.8,
+  "first_cut_s": 2.8,
+  "second_cut_s": 5.74,
+  "max_body_hold_s": 3.28,
+  "last_word_end_s": 24.24,
+  "tail_gap_s": 1.08,
+  "loop_tail_s": 1.0,
+  "payoff_word": "orbit",
+  "payoff_start_s": 19.64,
+  "payoff_frac": 0.7757,
+  "level": {
+    "lufs": -14.0,
+    "true_peak_dbtp": -1.9,
+    "loudnorm_I": -12.0
+  },
+  "score_nas_path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/05_Music/hos_009_score_v04_synth.wav",
+  "score_sha256": "151ba46acdf7d4395b34e105530bd077c26f6eb92832f9a1f00e1551ca88f58d",
+  "score_start_s": 2.0,
+  "stem_hashes": {
+    "vo": {
+      "nas_path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/10_Shorts/J2171/short_A/stems/stem_vo.wav",
+      "sha256": "4cb6024c37dc6137221199ada8393809d53c18f5623dba34aec5a8d0c14f5f74",
+      "bytes": 4861518
+    },
+    "bed": {
+      "nas_path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/10_Shorts/J2171/short_A/stems/stem_bed.wav",
+      "sha256": "3ab94820d2fb545086f33bf9f58872b40ff245ebfbb3bc65be393a9bbac7f614",
+      "bytes": 4861518
+    },
+    "sfx": {
+      "nas_path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/10_Shorts/J2171/short_A/stems/stem_sfx.wav",
+      "sha256": "ff2856e7f7c0399a8c6d3d4172a8f4a3c7296b3e234f2c4b0476320db02f0225",
+      "bytes": 4861518
+    }
+  },
+  "gates": {
+    "polish": {
+      "exit": 0
+    },
+    "picture": {
+      "exit": 0
+    },
+    "music": {
+      "exit": 0
+    },
+    "open": {
+      "exit": 0
+    },
+    "vo_check": {
+      "exit": 0
+    },
+    "sfx": {
+      "exit": 0
+    }
+  }
+}
