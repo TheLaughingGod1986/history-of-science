@@ -1,0 +1,45 @@
+{
+  "film": "133",
+  "title": "How Was Quantum Physics Discovered? (The Lightbulb Problem)",
+  "summary": "Rule-E topic go/no-go review GO (96.8/100 · 9.68/10 Opportunity Score, J3410, 2026-11-23) — pre-cleared in jobs/WIP.json next_hos under Rule G (4/4 active HOS slots full: 008, 009, 010, 013). Aligns with Cluster 2 #6 (Max Planck) of Ben's proposed hos-search-2027-01 search plan (J3224, needsBen; US small-channel outliers Science Retold 61.9K 13x & Math Everywhere 36.5K 10x). neighbours.py PASS (13 raw / 11 on-topic quantum edu videos >=1M [9 core + 2 adjacent TED] incl. Veritasium 21.55M & 20.89M, 3 TED-Ed >=1M, Royal Institution 4.69M, PBS Space Time 2.05M Planck's Constant); public_search.py 10 queries / 75 rows, autocomplete yes on 4/4 core phrases, 0 exact/near collisions across Titles A/A1/B/C and Shorts S01/S02 (J3410 fixed Thumb A §2.5 cross-arm repeat to 'IMPOSSIBLE GLOW', populated PRE_BUILD_VIDIQ_AUDIT.md at £0, and logged 6 script-stage precision guardrails). All claims UNVERIFIED pending open WIP slot, SOURCES.md verbatim quotes, and facts lane.",
+  "stages": {
+    "topic": {
+      "state": "todo"
+    },
+    "script": {
+      "state": "todo"
+    },
+    "facts": {
+      "state": "todo"
+    },
+    "package": {
+      "state": "todo"
+    },
+    "vo": {
+      "state": "todo"
+    },
+    "shorts_scripts": {
+      "state": "todo"
+    },
+    "shorts_vo": {
+      "state": "todo"
+    },
+    "picture": {
+      "state": "todo"
+    },
+    "edit": {
+      "state": "todo"
+    },
+    "thumbnails": {
+      "state": "todo"
+    },
+    "ben_ok": {
+      "state": "todo"
+    },
+    "scheduled": {
+      "state": "todo"
+    }
+  },
+  "claims": [],
+  "next": ""
+}
