@@ -286,3 +286,10 @@ Independently recomputed frame-0 pairwise uniqueness with gate_shorts_open funct
 Created ordered awaits_ben cards J3311.1 (Moon stopped moving) and J3311.2 (Newton gravity), both v01, due 2026-11-24T18:00Z. Independently generated existing signed Play links for both exact HOS UAT paths: each returned HTTP 302 and the two links are unique. No signed URLs or credentials are recorded here.
 
 Ben's UAT is the remaining actual watch/listen and approval. Keep both cuts private and unscheduled without his OK. HOS 009 long must read Public before either Short airs. The 26 November 18:00 long date is conditional planning, not a verified upload. The brief's Monday 30 November target conflicts with the standing Sat/Fri/Sun/Tue 11:30 week; use a permitted slot only after approval and a fresh schedule read. No slot is armed by this review. Long J2036 review and long-stage state remain unchanged.
+
+
+## J3455 — independent Chief private-UAT ruling, 23 Nov 2026
+
+J3455 independent acting Chief Codex KEEP for private UAT, 23 Nov 2026. v03 master 744f32b7 and PHONE b1135b3d hashes match NAS and iCloud. Four delivered gates PASS; flagged stills reviewed. HOS PR #731 merged. J2037 remains blocked for Ben finished-cut watch/listen, card HOS:009 ready for Ben, Play HTTP 302 verified at 22:24Z. No upload or schedule permission.
+
+Delivered gate evidence accepted: `picture QA PASS: 0 of 92 cuts fail`; `polish gate PASS: 0 of 92 rows failed, 5 to look at`; `music gate PASS`; `SFX level PASS: VO -20.8 LUFS, SFX -41.4 LUFS, 14 hits`. These are inspected receipts, not newly rerun gates. Five low-detail stills inspected; the reported 0:04 apple split was not reproduced in consecutive extracted frames. No audio/motion perception claimed; Ben performs the actual watch/listen. Full ruling: orbit-with-ben PR #1226. J3311 Shorts and thumbnail approvals remain separate; ben_ok and scheduled are not passed.
