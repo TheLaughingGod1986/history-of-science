@@ -3,7 +3,7 @@
   "title": "Why Doesn't the Moon Fall to Earth?",
   "air": "2026-11-26",
   "ready_by": "2026-11-22",
-  "summary": "J3314 built the Gravity long master v03 (744f32b7) beside untouched v01 (802b5c7e) and v02 (9d8731cb). J2036 independently re-verified v03 hashes, all 4 unmodified gates (picture_qa 0/92 fail, polish_gate 0/92 fail / 5 inspected low-detail warns, music_gate PASS, sfx_kit level PASS), 33 Teach/E2 cards, 29 stills, exact v03 chapters + 8 Sources + honest making-of line, FACT_NOTES provenance, and lint:package PASS; J2037 staged exact-hash v03 to HOS UAT and parked for Acting Chief Codex non-producer review and Ben final watch card (ben_ok remains todo; not a film PASS). J2171 assembled locked Shorts A v01 (43dbeb3a, 25.4 s) and B v01 (e6e5ae3f, 25.5 s) at £0 (12/12 ship gates PASS, staged on NAS + HOS UAT). J3311 non-producer Shorts review PASS for private UAT only: exact NAS/UAT hashes verified, twelve delivered gate PASS logs checked, two unique Play links returned 302; watch cards due 24 Nov 18:00. Actual watch/listen and Ben approval remain pending; no scheduling permission.",
+  "summary": "J3455 independent acting Chief Codex KEEP for private UAT, 23 Nov 2026. v03 master 744f32b7 and PHONE b1135b3d hashes match NAS and iCloud. Four delivered gates PASS; flagged stills reviewed. HOS PR #731 merged. J2037 remains blocked for Ben finished-cut watch/listen, card HOS:009 ready for Ben, Play HTTP 302 verified at 22:24Z. No upload or schedule permission. Separate Shorts J3311.1 and J3311.2 and thumbnail choices A/B remain for final approval.",
   "stages": {
     "topic": {
       "state": "done"
@@ -43,36 +43,36 @@
       "underway": false
     },
     "picture": {
-      "state": "doing",
+      "state": "done",
       "due": "2026-11-15",
-      "owner": "assembly (J2035 moving-plate composite picture_qa/polish_gate)",
-      "note": "All 90 board rows settled: tranche1 57 KEEP (J1237), tranche2 Flow & retakes KEEP (J2033-J2629), J2631 five-metre diagram KEEP (desk 6801964131/6802206390, PR #537, e35f9a98...), and J2632 r4 falling-Moon diagram KEEP (Grok ruling 6809363448, PR #543 merged 90711687, 23c832b0... verified on Mini scratch & NAS). Remains doing solely until J2035 completes moving-plate composites and picture_qa/polish_gate PASS.",
+      "owner": "codex",
+      "note": "All 90 board rows settled: tranche1 57 KEEP (J1237), tranche2 Flow & retakes KEEP (J2033-J2629), J2631 five-metre diagram KEEP (desk 6801964131/6802206390, PR #537, e35f9a98...), and J2632 r4 falling-Moon diagram KEEP (Grok ruling 6809363448, PR #543 merged 90711687, 23c832b0... verified on Mini scratch & NAS). Remains doing solely until J2035 completes moving-plate composites and picture_qa/polish_gate PASS. J3455 independent acting Chief Codex KEEP for private UAT, 23 Nov 2026. v03 master 744f32b7 and PHONE b1135b3d hashes match NAS and iCloud. Four delivered gates PASS; flagged stills reviewed. HOS PR #731 merged. J2037 remains blocked for Ben finished-cut watch/listen, card HOS:009 ready for Ben, Play HTTP 302 verified at 22:24Z. No upload or schedule permission.",
       "since": "2026-11-20",
       "underway": false,
-      "waiting": "J2035 moving-plate composite picture_qa and polish_gate PASS to close picture milestone",
+      "waiting": "",
       "steps": [
         90,
         90
       ],
       "steps_unit": "board rows settled (incl. J2631 & J2632 r4 KEEP); composite QA runs inside J2035",
-      "left": "inside J2035 assembly",
-      "eta": "2026-11-21"
+      "left": "",
+      "eta": ""
     },
     "edit": {
-      "state": "doing",
+      "state": "done",
       "due": "2026-11-19",
-      "owner": "review (J2037)",
-      "waiting": "J2037 review of v03 master (744f32b7) + J2036 technical QA pack, PR merge, and Ben final watch card",
+      "owner": "codex",
+      "waiting": "",
       "underway": false,
-      "note": "J3314 v03 (09_Assembly/j2035_v03/hos009_long_master_v03.mp4, sha256 744f32b7f2f95e75fabf039a345aee6c7c01ab6f304a932ebe7172bd3b3ede55, 519.000 s, 15568 frames) and prior v01 (802b5c7e...) / v02 (9d8731cb...) live NAS+Mini SHA-256 verified by J2036 (22 Nov 2026) and J2037 (23 Nov 2026); exact-hash v03 staged to HOS UAT/009_The-Falling-Moon-Gravity/hos009_long_master_v03.mp4. All 4 unmodified gates PASS: picture_qa 0/92 fail, polish_gate 0/92 fail (5 low-detail warnings all inspected at 1080p), music_gate PASS (v04_synth), sfx_kit level PASS (VO -20.8 / SFX -41.4 LUFS, 14 hits); ebur128 -20.8 LUFS, Peak -4.0 dBFS, 0 silences >=1.5 s. 33 Teach/E2 cards verified (0 overlaps/bleeds/drifts), stills + thumbs A/B inspected. Exact v03 chapters (0:00/1:24/2:56/4:20/6:33) + 8 Sources + honest making-of line in moon_long_description_v01.txt, FACT_NOTES provenance reconciled, lint:package PASS. Pack: 07_Edit-Project/J2036_V03_QA_2026-11-22.md. Parked for Acting Chief Codex non-producer review, PR #731 merge, and Ben final watch card. £0 / 0 credits. No upload, schedule, or privacy change. Not a film PASS and not Ben's watch (ben_ok remains todo).",
+      "note": "J3314 v03 (09_Assembly/j2035_v03/hos009_long_master_v03.mp4, sha256 744f32b7f2f95e75fabf039a345aee6c7c01ab6f304a932ebe7172bd3b3ede55, 519.000 s, 15568 frames) and prior v01 (802b5c7e...) / v02 (9d8731cb...) live NAS+Mini SHA-256 verified by J2036 (22 Nov 2026) and J2037 (23 Nov 2026); exact-hash v03 staged to HOS UAT/009_The-Falling-Moon-Gravity/hos009_long_master_v03.mp4. All 4 unmodified gates PASS: picture_qa 0/92 fail, polish_gate 0/92 fail (5 low-detail warnings all inspected at 1080p), music_gate PASS (v04_synth), sfx_kit level PASS (VO -20.8 / SFX -41.4 LUFS, 14 hits); ebur128 -20.8 LUFS, Peak -4.0 dBFS, 0 silences >=1.5 s. 33 Teach/E2 cards verified (0 overlaps/bleeds/drifts), stills + thumbs A/B inspected. Exact v03 chapters (0:00/1:24/2:56/4:20/6:33) + 8 Sources + honest making-of line in moon_long_description_v01.txt, FACT_NOTES provenance reconciled, lint:package PASS. Pack: 07_Edit-Project/J2036_V03_QA_2026-11-22.md. Parked for Acting Chief Codex non-producer review, PR #731 merge, and Ben final watch card. £0 / 0 credits. No upload, schedule, or privacy change. Not a film PASS and not Ben's watch (ben_ok remains todo). J3455 independent acting Chief Codex KEEP for private UAT, 23 Nov 2026. v03 master 744f32b7 and PHONE b1135b3d hashes match NAS and iCloud. Four delivered gates PASS; flagged stills reviewed. HOS PR #731 merged. J2037 remains blocked for Ben finished-cut watch/listen, card HOS:009 ready for Ben, Play HTTP 302 verified at 22:24Z. No upload or schedule permission.",
       "since": "2026-11-23",
       "steps": [
         5,
         5
       ],
       "steps_unit": "J2036 v03 technical QA and package checks",
-      "left": "J2037 review and Ben final watch card",
-      "eta": "2026-11-22"
+      "left": "",
+      "eta": ""
     },
     "thumbnails": {
       "state": "done",
@@ -91,12 +91,13 @@
       "jobs": [
         "J3262"
       ],
-      "note": "J3262 Acting Chief (Gemini) PASS (21 Nov 2026): long thumbnails A (IT MISSES, cd44f05657ddfea2...) and B (ONE APPLE, 3d1164330249e779...) PASS HOOK, BAND, PHONE (168x94), FAMILY (style_sheet vs 001-004), and Explorer on-model; \u00a30 cash, 0 Flow credits (23450 before/after), Mini-NAS SHA256 parity verified. Ready for J2036 package wiring and Ben's final watch (ben_ok remains todo; not a film PASS or upload/schedule OK)."
+      "note": "J3262 Acting Chief (Gemini) PASS (21 Nov 2026): long thumbnails A (IT MISSES, cd44f05657ddfea2...) and B (ONE APPLE, 3d1164330249e779...) PASS HOOK, BAND, PHONE (168x94), FAMILY (style_sheet vs 001-004), and Explorer on-model; £0 cash, 0 Flow credits (23450 before/after), Mini-NAS SHA256 parity verified. Ready for J2036 package wiring and Ben's final watch (ben_ok remains todo; not a film PASS or upload/schedule OK)."
     },
     "ben_ok": {
       "state": "todo",
-      "due": "2026-11-22",
-      "note": "22 Nov historical target at risk; no committed watch-ready forecast until compliant score and downstream gates pass."
+      "due": "2026-11-24",
+      "note": "Long v03 and separate Shorts ready for private UAT; requested watch by 24 Nov 18:00 London. No approval inferred.",
+      "waiting": "Ben finished-cut watch/listen and package approval"
     },
     "scheduled": {
       "state": "todo",
@@ -105,5 +106,5 @@
     }
   },
   "claims": [],
-  "next": "J2037 reviews HOS 009 long master v03 (744f32b7) + J2036 technical pack, merges records PR, and delivers Ben's final watch card (ben_ok remains todo)."
+  "next": "Ben watches the Gravity long and two Shorts and reviews thumbnails; J2037 stays held until approval. No release date promised."
 }
