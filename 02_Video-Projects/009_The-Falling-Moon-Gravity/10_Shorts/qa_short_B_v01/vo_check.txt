@@ -1,0 +1,1 @@
+PASS  hos_009_short_B_v01_vo_speech.wav  0:24.48  mean -27.1 dB  peak -7.0 dB  145 wpm

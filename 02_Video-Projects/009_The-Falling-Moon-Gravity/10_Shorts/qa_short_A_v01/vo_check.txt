@@ -1,0 +1,3 @@
+PASS  hos_009_short_A_v01_vo_speech.wav  0:24.32  mean -22.7 dB  peak -3.7 dB  146 wpm
+   warn  replace at ~0:05.76: script 'sideways about a kilometre and drops a' / heard 'sideways about a kilometer and drops a' — sounds alike (likely the transcriber); listen
+   warn  replace at ~0:22.94: script 'falling and missing for ever' / heard 'falling and missing forever' — sounds alike (likely the transcriber); listen

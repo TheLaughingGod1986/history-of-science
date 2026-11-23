@@ -1,0 +1,257 @@
+{
+  "verdict": "PASS",
+  "terminal_loop": null,
+  "video": "/Volumes/MiniWork/scratch/J2171-build/short_B/hos_009_short_B_v01.mp4",
+  "rules": {
+    "kind_fail": "computer[- ]?(reconstruction|model|generated|simulation|graphic)|\\bsimulation\\b|\\bdiagram|\\bchart\\b|\\bgraph\\b|\\bschematic|\\bannotated\\b|\\blabell?ed\\b|\\bscreen ?shot|\\bwireframe|\\bcad\\b|\\binfographic",
+    "kind_warn": "\\bartist|\\billustration|\\bconcept\\b|\\brender|\\banimation\\b|\\bmap\\b|\\bmosaic\\b|\\bcomposite\\b",
+    "upscale_fail": 2.35,
+    "upscale_warn": 2.0,
+    "max_reuse": 2,
+    "max_stretches": 5,
+    "same_stretch": 10.0,
+    "pixels": "scripts/polish_gate.py"
+  },
+  "failed": [],
+  "warn": [
+    {
+      "cut": 0,
+      "row": "s01",
+      "source": "05_minute_second_t1.mp4",
+      "title": "Flow/code plate 05_minute_second_t1.mp4",
+      "t": 1.41,
+      "at": "0:01",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.31x, may look soft"
+      ],
+      "offset": 2.0
+    },
+    {
+      "cut": 1,
+      "row": "s02",
+      "source": "02_apple_and_moon_t1.mp4",
+      "title": "Flow/code plate 02_apple_and_moon_t1.mp4",
+      "t": 4.19,
+      "at": "0:04",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.31x, may look soft"
+      ],
+      "offset": 0.8
+    },
+    {
+      "cut": 2,
+      "row": "s03",
+      "source": "06_pretty_nearly_t1.mp4",
+      "title": "Flow/code plate 06_pretty_nearly_t1.mp4",
+      "t": 6.99,
+      "at": "0:07",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.31x, may look soft"
+      ],
+      "offset": 1.0
+    },
+    {
+      "cut": 4,
+      "row": "s05",
+      "source": "02_spray_paint_t1.mp4",
+      "title": "Flow/code plate 02_spray_paint_t1.mp4",
+      "t": 12.97,
+      "at": "0:13",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.31x, may look soft"
+      ],
+      "offset": 1.2
+    },
+    {
+      "cut": 6,
+      "row": "s07",
+      "source": "06_pretty_nearly_c1_t1.mp4",
+      "title": "Flow/code plate 06_pretty_nearly_c1_t1.mp4",
+      "t": 19.23,
+      "at": "0:19",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.31x, may look soft"
+      ],
+      "offset": 1.0
+    },
+    {
+      "cut": 7,
+      "row": "s08",
+      "source": "01_one_law_t1.mp4",
+      "title": "Flow/code plate 01_one_law_t1.mp4",
+      "t": 22.65,
+      "at": "0:23",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.31x, may look soft"
+      ],
+      "offset": 1.0
+    },
+    {
+      "cut": 8,
+      "row": "s09",
+      "source": "loop_05_minute_second_t1.mp4",
+      "title": "Flow/code plate 05_minute_second_t1.mp4",
+      "t": 24.98,
+      "at": "0:25",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.31x, may look soft",
+        "low detail: edge density 0.0127 < film p5 0.0147"
+      ],
+      "offset": 1.0
+    }
+  ],
+  "rows": [
+    {
+      "cut": 0,
+      "row": "s01",
+      "source": "05_minute_second_t1.mp4",
+      "title": "Flow/code plate 05_minute_second_t1.mp4",
+      "t": 1.41,
+      "at": "0:01",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.31x, may look soft"
+      ],
+      "offset": 2.0
+    },
+    {
+      "cut": 1,
+      "row": "s02",
+      "source": "02_apple_and_moon_t1.mp4",
+      "title": "Flow/code plate 02_apple_and_moon_t1.mp4",
+      "t": 4.19,
+      "at": "0:04",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.31x, may look soft"
+      ],
+      "offset": 0.8
+    },
+    {
+      "cut": 2,
+      "row": "s03",
+      "source": "06_pretty_nearly_t1.mp4",
+      "title": "Flow/code plate 06_pretty_nearly_t1.mp4",
+      "t": 6.99,
+      "at": "0:07",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.31x, may look soft"
+      ],
+      "offset": 1.0
+    },
+    {
+      "cut": 3,
+      "row": "s04",
+      "source": "code_graphic_009_short_B_s04_sixty_earths_9x16.mp4",
+      "title": "Flow/code plate code_graphic_009_short_B_s04_sixty_earths_9x16.mp4",
+      "t": 9.93,
+      "at": "0:10",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 4,
+      "row": "s05",
+      "source": "02_spray_paint_t1.mp4",
+      "title": "Flow/code plate 02_spray_paint_t1.mp4",
+      "t": 12.97,
+      "at": "0:13",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.31x, may look soft"
+      ],
+      "offset": 1.2
+    },
+    {
+      "cut": 5,
+      "row": "s06",
+      "source": "code_graphic_009_short_B_s06_dots_square_9x16.mp4",
+      "title": "Flow/code plate code_graphic_009_short_B_s06_dots_square_9x16.mp4",
+      "t": 16.07,
+      "at": "0:16",
+      "fail": [],
+      "warn": [],
+      "offset": 0.0
+    },
+    {
+      "cut": 6,
+      "row": "s07",
+      "source": "06_pretty_nearly_c1_t1.mp4",
+      "title": "Flow/code plate 06_pretty_nearly_c1_t1.mp4",
+      "t": 19.23,
+      "at": "0:19",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.31x, may look soft"
+      ],
+      "offset": 1.0
+    },
+    {
+      "cut": 7,
+      "row": "s08",
+      "source": "01_one_law_t1.mp4",
+      "title": "Flow/code plate 01_one_law_t1.mp4",
+      "t": 22.65,
+      "at": "0:23",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.31x, may look soft"
+      ],
+      "offset": 1.0
+    },
+    {
+      "cut": 8,
+      "row": "s09",
+      "source": "loop_05_minute_second_t1.mp4",
+      "title": "Flow/code plate 05_minute_second_t1.mp4",
+      "t": 24.98,
+      "at": "0:25",
+      "fail": [],
+      "warn": [
+        "sharpness: upscaled 2.31x, may look soft",
+        "low detail: edge density 0.0127 < film p5 0.0147"
+      ],
+      "offset": 1.0
+    }
+  ],
+  "polish": {
+    "edge_floor": 0.0147,
+    "low_detail_floor": {
+      "std": 13.44,
+      "edge": 0.0259,
+      "calibration": {
+        "video": "025_MarsRobot_full_rough_v02d.mp4",
+        "factor": 1.2,
+        "frames": [
+          {
+            "source": "PIA22223.jpg",
+            "t": 201.0,
+            "std": 12.1,
+            "edge": 0.0223
+          },
+          {
+            "source": "PIA22223.jpg",
+            "t": 216.3,
+            "std": 11.2,
+            "edge": 0.0216
+          },
+          {
+            "source": "PIA22929.jpg",
+            "t": 297.4,
+            "std": 26.54,
+            "edge": 0.5735
+          }
+        ]
+      }
+    }
+  }
+}
