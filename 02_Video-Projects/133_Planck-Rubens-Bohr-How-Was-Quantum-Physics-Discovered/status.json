@@ -1,0 +1,45 @@
+{
+  "film": "133",
+  "title": "How Was Quantum Physics Discovered? (The Lightbulb Problem)",
+  "summary": "Added to jobs/WIP.json next_hos by J3408 (2026-11-23, Rule G: 4/4 active HOS slots full); awaiting Rule-E topic go/no-go review. Aligns with Cluster 2 #6 (Max Planck) of Ben's proposed hos-search-2027-01 search plan (J3224, needsBen; US small-channel outliers Science Retold 61.9K 13x & Math Everywhere 36.5K 10x). neighbours.py PASS (13 raw / 11 strictly on-topic edu videos >=1M incl. Veritasium 21.55M & 20.89M, 3 TED-Ed >=1M, Royal Institution 4.69M, PBS Space Time 2.05M Planck's Constant); public_search.py autocomplete yes on 4 core phrases, 0 exact title collisions. All claims UNVERIFIED pending open WIP slot, SOURCES.md, and facts lane.",
+  "stages": {
+    "topic": {
+      "state": "todo"
+    },
+    "script": {
+      "state": "todo"
+    },
+    "facts": {
+      "state": "todo"
+    },
+    "package": {
+      "state": "todo"
+    },
+    "vo": {
+      "state": "todo"
+    },
+    "shorts_scripts": {
+      "state": "todo"
+    },
+    "shorts_vo": {
+      "state": "todo"
+    },
+    "picture": {
+      "state": "todo"
+    },
+    "edit": {
+      "state": "todo"
+    },
+    "thumbnails": {
+      "state": "todo"
+    },
+    "ben_ok": {
+      "state": "todo"
+    },
+    "scheduled": {
+      "state": "todo"
+    }
+  },
+  "claims": [],
+  "next": ""
+}
