@@ -3,7 +3,7 @@
   "title": "Why Do We Use AC Instead of DC? (Edison vs Tesla)",
   "air": "2026-12-10",
   "ready_by": "2026-12-07",
-  "summary": "Cluster 1 lead film of hos-search-2027-01 (approved by Ben 24 Nov 2026; brought forward to Thu 10 Dec 18:00 London, slides to 17 Dec if not ready for Ben's watch by Mon 7 Dec). Rule-E GO (J3346, 97.1/100) and entered active production 24 Nov (OWB PR #1238). J3496 delivered PACKAGE_FIRST_SCORING_v01.md, edison_tesla_ac_dc_script_master_v01.md (review:script PASS >=90, gate:episode PASS), FACT_NOTES_v01.md (21 verified rows), SOURCES.md, SHORTS_SCRIPTS_v01.md (two 16-19s Shorts for Fri 11 Dec & Sat 12 Dec), and LAUNCH_PLAN.md. Awaits HOS script review and Chief lock before any VO or picture spend.",
+  "summary": "Cluster 1 lead film of hos-search-2027-01 (target Thu 10 Dec 18:00 London, slides to Thu 17 Dec if not ready for Ben's watch by Mon 7 Dec). Following Chief ruling J3547 (FIX, HOS PR #752), J3628 delivered corrected draft v02: edison_tesla_ac_dc_script_master_v02.md (review:script PASS 92.3/100, gate:episode PASS — mechanical only, not locked), FACT_NOTES_v02.md & SOURCES.md (direct institutional URLs + honest secondary labels), SHORTS_SCRIPTS_v02.md (shortened 16-19s nominal cuts with repaired loops/overlays), PACKAGE_FIRST_SCORING_v02.md (working title retained, Thumb A revised to WASTED AS HEAT, Thumb B 22 MILES AWAY held), and LAUNCH_PLAN.md. Awaits independent Gemini facts pass, direct-quote review, and Chief lock before any VO or picture spend.",
   "stages": {
     "topic": {
       "state": "done",
@@ -15,17 +15,17 @@
       "owner": "Claude",
       "since": "2026-11-24",
       "underway": false,
-      "waiting": "HOS script review and Chief lock on edison_tesla_ac_dc_script_master_v01.md (J3496 draft)",
-      "note": "J3496 package-first scoring + 7-9 min v01 script draft delivered (review:script PASS, gate:episode PASS); awaiting Chief lock"
+      "waiting": "independent Gemini facts pass on v02, then direct-quote verification and Chief lock",
+      "note": "J3628 corrected v02 delivered (review:script PASS 92.3/100, gate:episode PASS; nominal timestamps only, not locked)"
     },
     "facts": {
       "state": "doing",
       "due": "2026-12-01",
-      "owner": "Claude",
+      "owner": "Gemini",
       "since": "2026-11-24",
       "underway": false,
-      "waiting": "independent review of FACT_NOTES_v01.md (21/21 verified) and SOURCES.md alongside script lock",
-      "note": "All 21 spoken & visual claims verified in FACT_NOTES_v01.md and SOURCES.md (J3496); J3346 guardrails resolved (incl. Niagara 22 miles, zero Topsy myth)"
+      "waiting": "independent Gemini facts pass and direct-quote verification on exact v02 hashes (FACT_NOTES_v02.md + SOURCES.md)",
+      "note": "J3628 replaced mislabelled Wikipedia links with direct institutional URLs + honest secondary labels; not self-certified"
     },
     "package": {
       "state": "doing",
@@ -33,13 +33,13 @@
       "owner": "Claude",
       "since": "2026-11-24",
       "underway": false,
-      "waiting": "script lock, VO re-timing, and PACKAGE_MANIFEST.json before upload",
-      "note": "PACKAGE_FIRST_SCORING_v01.md, PRE_BUILD_VIDIQ_AUDIT.md, and LAUNCH_PLAN.md drafted in J3496"
+      "waiting": "facts pass, script lock, VO re-timing, rendered thumbnail panel/style/168px review, and PACKAGE_MANIFEST.json",
+      "note": "PACKAGE_FIRST_SCORING_v02.md (working title retained, WASTED AS HEAT, 22 MILES AWAY held), PRE_BUILD_VIDIQ_AUDIT.md, and LAUNCH_PLAN.md updated in J3628"
     },
     "vo": {
       "state": "todo",
       "due": "2026-12-02",
-      "waiting": "after script and facts lock by Chief (no spend until PASS)"
+      "waiting": "after independent facts pass and Chief script lock (no spend until PASS)"
     },
     "shorts_scripts": {
       "state": "doing",
@@ -47,13 +47,13 @@
       "owner": "Claude",
       "since": "2026-11-24",
       "underway": false,
-      "waiting": "review and lock of SHORTS_SCRIPTS_v01.md (S01 Fri 11 Dec & S02 Sat 12 Dec, 16-19s house rules)",
-      "note": "Two 16-19s search-titled Shorts drafted in J3496 (S01 45w / S02 46w)"
+      "waiting": "independent facts pass and Chief lock on SHORTS_SCRIPTS_v02.md (S01 Fri 11 Dec & S02 Sat 12 Dec, 16-19s nominal)",
+      "note": "Shortened v02 Shorts drafted in J3628 (S01 39w / S02 40w nominal; causal loop and overlay overlap fixed)"
     },
     "shorts_vo": {
       "state": "todo",
       "due": "2026-12-03",
-      "waiting": "after SHORTS_SCRIPTS_v01.md lock"
+      "waiting": "after SHORTS_SCRIPTS_v02.md lock"
     },
     "picture": {
       "state": "todo",
@@ -68,7 +68,7 @@
     "thumbnails": {
       "state": "todo",
       "due": "2026-12-06",
-      "waiting": "after script and VO PASS (Thumb A 1 MILE LIMIT, Thumb B 22 MILES AWAY, Thumb C HIGH VOLTAGE)"
+      "waiting": "after script and VO PASS (WASTED AS HEAT, HIGH VOLTAGE; 22 MILES AWAY held pending facts; rendered panel/style/168px review required)"
     },
     "ben_ok": {
       "state": "todo",
@@ -78,7 +78,7 @@
     "scheduled": {
       "state": "todo",
       "due": "2026-12-08",
-      "waiting": "after Ben's final OK (target Thu 10 Dec 18:00 London)"
+      "waiting": "after Ben's final OK (target Thu 10 Dec 18:00 London; slides to Thu 17 Dec if not ready by Mon 7 Dec)"
     }
   },
   "claims": [],
