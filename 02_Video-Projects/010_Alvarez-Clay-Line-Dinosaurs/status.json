@@ -38,14 +38,14 @@
       "state": "done",
       "due": "2026-10-08",
       "owner": "gemini",
-      "note": "J0862/J2279/J2281 PASS (PR #423): Short A v02 (68d88b5b, 23.289 s, Option A1 hook 2.849 s) + Short C v02 (20432ecd, 23.560 s, hook 1.780 s) vo_check_py312 PASS. J2271 12/12 Shorts plates locked KEEP; J2172 released for \u00a30 assembly.",
+      "note": "J0862/J2279/J2281 PASS (PR #423): Short A v02 (68d88b5b, 23.289 s, Option A1 hook 2.849 s) + Short C v02 (20432ecd, 23.560 s, hook 1.780 s) vo_check_py312 PASS. J2271 12/12 Shorts plates locked KEEP; J2172 released for £0 assembly.",
       "underway": false
     },
     "picture": {
       "state": "doing",
       "due": "2026-11-22",
       "owner": "Cursor",
-      "note": "J2271/J2928 DONE: all 12/12 HOS 010 Shorts plates locked KEEP (Claude non-producer 6905894181/6907453362 + Chief confirm, 12d gull tracked x=605->520 t=4.30-7.02s, R4b t=1.05-4.23s x=437, 36/36 NAS SHA-256 verified, keep=true recorded in Flow ledgers). J2172 released for \u00a30 Short A & Short C assembly; Long Parts 01-05 remaining plates next.",
+      "note": "J2271/J2928 DONE: all 12/12 HOS 010 Shorts plates locked KEEP (Claude non-producer 6905894181/6907453362 + Chief confirm, 12d gull tracked x=605->520 t=4.30-7.02s, R4b t=1.05-4.23s x=437, 36/36 NAS SHA-256 verified, keep=true recorded in Flow ledgers). J2172 released for £0 Short A & Short C assembly; Long Parts 01-05 remaining plates next.",
       "steps": [
         12,
         65
@@ -54,7 +54,7 @@
       "left": "about 3 hours",
       "eta": "2026-11-22",
       "underway": false,
-      "waiting": "J2172 \u00a30 Short A & Short C assembly released; remaining Long Parts 01-05 plate generation",
+      "waiting": "J2172 £0 Short A & Short C assembly released; remaining Long Parts 01-05 plate generation",
       "since": "2026-11-16"
     },
     "edit": {
@@ -83,7 +83,8 @@
     },
     "scheduled": {
       "state": "todo",
-      "due": "2026-11-30"
+      "due": "2026-11-30",
+      "note": "J3512: Short A private upload not performed: HOS audit/live upload require missing generated Prisma client; installed Prisma 6.19.0 cannot generate current schema (P1012). Exact approved hash verified, gate PASS, package lint PASS, draft dry-run request prepared but command exits 1. Chief tooling repair required; long and Short schedules unchanged."
     }
   },
   "claims": [],
