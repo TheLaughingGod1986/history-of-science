@@ -440,3 +440,26 @@ PASS  02_Video-Projects/008_Lightning-Franklin/11_Upload-Package/PACKAGE_MANIFES
 -- gate:episode: PASS
 ALL CHECKS PASS
 ```
+
+---
+
+## J3500 Mini upload & API read-back (24 Nov 2026, Gemini covering)
+
+- **Thumbnails style sheet + 168 px phone check:** Inspected `hos_008_thumbs_AB_v01_style_sheet.jpg`, `hos_008_thumb_A_the_key_sparked_v01_preview.jpg`, and `hos_008_thumb_B_no_bolt_struck_v01_preview.jpg`. Both **A (`THE KEY SPARKED`)** and **B (`NO BOLT STRUCK`)** pass **HOOK**, **BAND**, and **PHONE (168×94)**. Primary A set on `YqCWYlv_LCY` via API; both ready for Studio Title + Thumbnail Test & Compare.
+- **Pre-upload gates:**
+  - `npm run lint:package -- --film 008`: `PASS  02_Video-Projects/008_Lightning-Franklin/11_Upload-Package/PACKAGE_MANIFEST.json`
+  - `gate_shorts_open.py check hos_008_short_A_v04.mp4 --air-date 2026-11-27`: `PASS` (`dur=23.3s`, `audio=-17.5dB`, `motion=35.5`, `f0diff=10.63`, `0/24` padded at 1 fps)
+  - `gate_shorts_open.py check hos_008_short_C_v07.mp4 --air-date 2026-11-29`: `PASS` (`dur=22.08s`, `audio=-17.2dB`, `motion=43.08`, `f0diff=7.71`, `0/23` & `0/45` padded)
+- **Live YouTube uploads (`@HistoryOfScienceYT`, £0):**
+  - **Long `v05`** (`hos_008_master_v05.mp4`, SHA-256 `d1ffb78dfc3d77519b5f37dfbddeec2f7802fa2d79e58b4524be31551a67841b`): **`YqCWYlv_LCY`** (`https://youtu.be/YqCWYlv_LCY`) — `private`, `publishAt 2026-11-26T18:00:00Z` (Thu 26 Nov 18:00 UK), normal publish (no Premiere), title *Benjamin Franklin's Kite Experiment Explained*, `madeForKids=false`, `selfDeclaredMadeForKids=false`, `containsSyntheticMedia=true`, `categoryId=27`, `en-GB` language/audio, `hasCustomThumbnail=true` (Thumb A), added to HOS playlist `PLEbpfUzWzcXU`, 143-cue `en-GB` captions uploaded & `serving` (`AUieDaa_2-eGWltbTQyaPmVD796eHrCattzbAxv6l5obfWvlD1M10kbGycXTbv7bIrTt6fVmRX1kTJgToGw`).
+  - **Short A `v04`** (`hos_008_short_A_v04.mp4`, SHA-256 `76d801a34714ba90f286330dfab1c9e38b3025502340f20c8e414a8907a3192d`): **`__UtUYdEUwg`** (`https://youtu.be/__UtUYdEUwg`) — `private`, `publishAt 2026-11-27T11:30:00Z` (Fri 27 Nov 11:30 UK), title *Why Was Franklin's Kite Experiment So Dangerous?*, `madeForKids=false`, `en-GB`, `hasCustomThumbnail=true` (frame-0 cover), `en-GB` captions `serving`, registered in Orbit `00_Brand/Channel-Setup/social/hos/UPLOADS.json` for daily Buffer mirroring.
+  - **Short C `v07`** (`hos_008_short_C_v07.mp4`, SHA-256 `a3404a314a444a0fd987ca648c28425be8afb768f83748ee64e553951c8f06a8`): **`4sYTV_rQcqs`** (`https://youtu.be/4sYTV_rQcqs`) — `private`, `publishAt 2026-11-29T11:30:00Z` (Sun 29 Nov 11:30 UK — first free slot after Sat 28 Nov `sY0PSQFxjp8`), title *How Does a Lightning Rod Work?*, `madeForKids=false`, `en-GB`, `hasCustomThumbnail=true` (frame-0 cover), `en-GB` captions `serving`, registered in Orbit `00_Brand/Channel-Setup/social/hos/UPLOADS.json` for daily Buffer mirroring.
+- **Post-upload channel audit (`npm run channel:audit -- --write-live`):**
+  ```text
+  PASS  Short 4sYTV_rQcqs  private 2026-11-29 11:30 UK  How Does a Lightning Rod Work?
+  PASS  Short __UtUYdEUwg  private 2026-11-27 11:30 UK  Why Was Franklin's Kite Experiment So Dangerous?
+  PASS  long  YqCWYlv_LCY  private 2026-11-26 18:00 UK  Benjamin Franklin's Kite Experiment Explained
+  PASS  Short sY0PSQFxjp8  private 2026-11-28 11:30 UK  What Is Variolation?
+  72 videos, 0 errors.
+  ```
+- **Remaining Studio-only finish (blocked on Ben sign-in to HOS Studio Chrome CDP 9460):** `cdp_browsers.sh status` reports port `9460` landed on `accounts.google.com` (`SIGNED OUT, Ben to sign in`). Once Ben signs in once on port `9460`: (1) set End screen (HOS playlist `PLEbpfUzWzcXU` + Subscribe) and 2-way Title+Thumbnail Test & Compare (Title A + Thumb A `THE KEY SPARKED` vs Title B *Why Did Franklin Fly a Kite in a Storm?* + Thumb B `NO BOLT STRUCK`) on `YqCWYlv_LCY`; (2) set Related video → `YqCWYlv_LCY` on `__UtUYdEUwg` and `4sYTV_rQcqs`; (3) confirm Altered Content = YES and Not Made for Kids visually in Studio.

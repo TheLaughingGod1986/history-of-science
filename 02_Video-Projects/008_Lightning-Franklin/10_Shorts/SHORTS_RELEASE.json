@@ -1,0 +1,48 @@
+{
+  "film": "008",
+  "about": "J3500 upload of HOS 008 Shorts A v04 (__UtUYdEUwg, Fri 27 Nov 2026 11:30Z) and C v07 (4sYTV_rQcqs, Sun 29 Nov 2026 11:30Z) after 008 long YqCWYlv_LCY (Thu 26 Nov 2026 18:00Z).",
+  "shorts": [
+    {
+      "id": "__UtUYdEUwg",
+      "title": "Why Was Franklin's Kite Experiment So Dangerous?",
+      "airDate": "2026-11-27T11:30:00Z",
+      "promotes": "008",
+      "promotesVideoId": "YqCWYlv_LCY",
+      "relatedVideoId": "YqCWYlv_LCY",
+      "tags": [
+        "benjamin franklin kite experiment",
+        "franklin kite lightning",
+        "why was franklin kite dangerous",
+        "benjamin franklin",
+        "lightning electricity",
+        "history of science"
+      ],
+      "madeForKids": false,
+      "alteredContent": true,
+      "durationSeconds": 23.3,
+      "cover": "frame 0 of hos_008_short_A_v04 (NEVER HIT IT)",
+      "note": "J3500. Ben OK HOS-J2699 (12 Nov 2026 14:45Z). sha256 76d801a34714ba90f286330dfab1c9e38b3025502340f20c8e414a8907a3192d. Private + publishAt Fri 27 Nov 2026 11:30 London. en-GB captions serving. Registered in Orbit social/hos/UPLOADS.json for Buffer. Studio Related -> YqCWYlv_LCY pending Ben sign-in on 9460."
+    },
+    {
+      "id": "4sYTV_rQcqs",
+      "title": "How Does a Lightning Rod Work?",
+      "airDate": "2026-11-29T11:30:00Z",
+      "promotes": "008",
+      "promotesVideoId": "YqCWYlv_LCY",
+      "relatedVideoId": "YqCWYlv_LCY",
+      "tags": [
+        "how does a lightning rod work",
+        "lightning rod",
+        "benjamin franklin lightning rod",
+        "lightning safety",
+        "benjamin franklin",
+        "history of science"
+      ],
+      "madeForKids": false,
+      "alteredContent": true,
+      "durationSeconds": 22.08,
+      "cover": "frame 0 of hos_008_short_C_v07 (FRANKLIN'S ROD)",
+      "note": "J3500. Ben OK HOS-J2984 (18 Nov 2026 11:31Z). sha256 a3404a314a444a0fd987ca648c28425be8afb768f83748ee64e553951c8f06a8. Private + publishAt Sun 29 Nov 2026 11:30 London (first free slot after Sat 28 Nov sY0PSQFxjp8). en-GB captions serving. Registered in Orbit social/hos/UPLOADS.json for Buffer. Studio Related -> YqCWYlv_LCY pending Ben sign-in on 9460."
+    }
+  ]
+}
