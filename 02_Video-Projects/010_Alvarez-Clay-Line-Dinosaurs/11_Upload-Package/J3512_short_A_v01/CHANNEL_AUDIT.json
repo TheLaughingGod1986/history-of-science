@@ -1,0 +1,1135 @@
+{
+  "channelFindings": [],
+  "rows": [
+    {
+      "id": "mpK3D6S7WLk",
+      "kind": "Short",
+      "title": "What Killed the Dinosaurs?",
+      "privacy": "private",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "sMPlMuxK3YU",
+      "kind": "Short",
+      "title": "Are Birds Really Dinosaurs?",
+      "privacy": "private",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "el30-mHiH-0",
+      "kind": "Short",
+      "title": "How Does the Heart Pump Blood?",
+      "privacy": "public",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "Bks_JLId1ew",
+      "kind": "Short",
+      "title": "How Do Plants Make Oxygen?",
+      "privacy": "public",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "l8bxm9L3zl8",
+      "kind": "Short",
+      "title": "How Does a Blood Pressure Cuff Work?",
+      "privacy": "public",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "ChbsigHD5_o",
+      "kind": "Short",
+      "title": "How Do Plants Clean the Air?",
+      "privacy": "public",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "xgx2lYHhYZM",
+      "kind": "Short",
+      "title": "Why Is It Called a Vaccine?",
+      "privacy": "public",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "wkyGOKepjeQ",
+      "kind": "Short",
+      "title": "What Is Variolation?",
+      "privacy": "private",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        },
+        {
+          "severity": "warn",
+          "rule": "embeddable",
+          "message": "embedding is off"
+        }
+      ]
+    },
+    {
+      "id": "jkUZpyO71lU",
+      "kind": "Short",
+      "title": "How Was Smallpox Eradicated?",
+      "privacy": "private",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "sY0PSQFxjp8",
+      "kind": "Short",
+      "title": "What Is Variolation?",
+      "privacy": "private",
+      "scheduled": "2026-11-28 11:30 UK",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "fgsR8yAHr5s",
+      "kind": "Short",
+      "title": "How Does the Heart Pump Blood?",
+      "privacy": "private",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "Sq_lV89VMUs",
+      "kind": "Short",
+      "title": "How Does a Blood Pressure Cuff Work?",
+      "privacy": "private",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "xzKoHg0E0_U",
+      "kind": "Short",
+      "title": "What Is Dalton's Atomic Theory?",
+      "privacy": "public",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "Wvjd8g0CpzE",
+      "kind": "Short",
+      "title": "The Blood Vessels Finer Than a Hair",
+      "privacy": "public",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "cLKDiYP55J8",
+      "kind": "Short",
+      "title": "What Was the Edward Jenner Experiment?",
+      "privacy": "public",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "ETynHpIYLeY",
+      "kind": "long",
+      "title": "How Was the First Vaccine Made? (And Why It's Named After a Cow)",
+      "privacy": "public",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "PFj6172YU4Q",
+      "kind": "Short",
+      "title": "One Tight Band Proved Your Blood Goes Round",
+      "privacy": "public",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "VbPubYd6Fbs",
+      "kind": "long",
+      "title": "The Willow Tree That Was Made of Air",
+      "privacy": "public",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "xHnIi9GqOsM",
+      "kind": "Short",
+      "title": "Why Do Veins Have Valves?",
+      "privacy": "public",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "qW2OsD4mujc",
+      "kind": "Short",
+      "title": "The Four Elements Were Wrong",
+      "privacy": "public",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "pWySvZsneZg",
+      "kind": "Short",
+      "title": "Why Gold Foil Bounced Rutherford's Particles Back",
+      "privacy": "public",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "BW_CFAX-mxc",
+      "kind": "Short",
+      "title": "Is the Heart a Pump?",
+      "privacy": "public",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "Rl2uZ-KOTl8",
+      "kind": "Short",
+      "title": "Your Heart Pumps More Blood Than You Have",
+      "privacy": "public",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "wwcjcFfC-5M",
+      "kind": "long",
+      "title": "The Tied Arm That Proved Your Blood Circulates",
+      "privacy": "public",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "AMSriTQ-lcQ",
+      "kind": "Short",
+      "title": "Are Marie Curie's Notebooks Still Radioactive?",
+      "privacy": "public",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "-3L6HzJ_d_4",
+      "kind": "Short",
+      "title": "What Is the Pasteur Swan Neck Flask Experiment?",
+      "privacy": "public",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "OnJ8MFu0Mi0",
+      "kind": "Short",
+      "title": "How Did John Snow Stop Cholera?",
+      "privacy": "public",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "4WUs0beKn0A",
+      "kind": "Short",
+      "title": "Why Is It Called a Vaccine?",
+      "privacy": "private",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        },
+        {
+          "severity": "warn",
+          "rule": "embeddable",
+          "message": "embedding is off"
+        }
+      ]
+    },
+    {
+      "id": "uAomPaOBrM8",
+      "kind": "long",
+      "title": "Experiments That Changed the World (Blood, Germs and Atoms)",
+      "privacy": "private",
+      "scheduled": "2026-12-10 18:00 UK",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "Hmw4iMDfWFE",
+      "kind": "long",
+      "title": "DUPLICATE STUB - do not publish (J0878)",
+      "privacy": "private",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        },
+        {
+          "severity": "warn",
+          "rule": "embeddable",
+          "message": "embedding is off"
+        }
+      ]
+    },
+    {
+      "id": "LCZRHUyTiq0",
+      "kind": "Short",
+      "title": "What Are Cathode Rays?",
+      "privacy": "public",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "-I_GHK-GcFs",
+      "kind": "Short",
+      "title": "What Was the Edward Jenner Experiment?",
+      "privacy": "private",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        },
+        {
+          "severity": "warn",
+          "rule": "embeddable",
+          "message": "embedding is off"
+        }
+      ]
+    },
+    {
+      "id": "1-BZaFIMwYU",
+      "kind": "Short",
+      "title": "What Is the Pasteur Swan Neck Flask Experiment?",
+      "privacy": "private",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        },
+        {
+          "severity": "warn",
+          "rule": "embeddable",
+          "message": "embedding is off"
+        }
+      ]
+    },
+    {
+      "id": "oKqmnJNGiHg",
+      "kind": "Short",
+      "title": "How Was Phosphorus Discovered?",
+      "privacy": "public",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "clV6E10NLPw",
+      "kind": "Short",
+      "title": "The spray that stopped surgery killing patients",
+      "privacy": "public",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "c2q7w0pgcn8",
+      "kind": "Short",
+      "title": "Who Discovered Infrared Light?",
+      "privacy": "public",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "TbMMJSRKC3U",
+      "kind": "Short",
+      "title": "He said every eighth element repeats",
+      "privacy": "public",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "29bpGAI0wb8",
+      "kind": "Short",
+      "title": "What happens if you keep cutting gold in half?",
+      "privacy": "public",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "-sa2t7dAtCk",
+      "kind": "Short",
+      "title": "What Is Dalton's Atomic Theory?",
+      "privacy": "private",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        },
+        {
+          "severity": "warn",
+          "rule": "embeddable",
+          "message": "embedding is off"
+        }
+      ]
+    },
+    {
+      "id": "GHZDsiH7L7A",
+      "kind": "long",
+      "title": "What's Inside an Atom? Mostly Empty Space",
+      "privacy": "public",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        },
+        {
+          "severity": "warn",
+          "rule": "tags.count",
+          "message": "long: 13 tags (want 5–8)"
+        }
+      ]
+    },
+    {
+      "id": "PlihWC5uA2E",
+      "kind": "Short",
+      "title": "Why Do Veins Have Valves?",
+      "privacy": "private",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        },
+        {
+          "severity": "warn",
+          "rule": "embeddable",
+          "message": "embedding is off"
+        }
+      ]
+    },
+    {
+      "id": "vEg_tLIm0Co",
+      "kind": "Short",
+      "title": "Are Marie Curie's Notebooks Still Radioactive?",
+      "privacy": "private",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        },
+        {
+          "severity": "warn",
+          "rule": "embeddable",
+          "message": "embedding is off"
+        }
+      ]
+    },
+    {
+      "id": "5n7xFQRBUvI",
+      "kind": "Short",
+      "title": "Is the Heart a Pump?",
+      "privacy": "private",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        },
+        {
+          "severity": "warn",
+          "rule": "embeddable",
+          "message": "embedding is off"
+        }
+      ]
+    },
+    {
+      "id": "qOZgess30h0",
+      "kind": "Short",
+      "title": "Invisible life is still everywhere",
+      "privacy": "public",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "mTY67qet7cM",
+      "kind": "Short",
+      "title": "One Tight Band Proved Your Blood Goes Round",
+      "privacy": "private",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        },
+        {
+          "severity": "warn",
+          "rule": "embeddable",
+          "message": "embedding is off"
+        }
+      ]
+    },
+    {
+      "id": "KIWJRl0dzjw",
+      "kind": "Short",
+      "title": "One Tight Band Proved Your Blood Goes Round (duplicate)",
+      "privacy": "private",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        },
+        {
+          "severity": "warn",
+          "rule": "embeddable",
+          "message": "embedding is off"
+        },
+        {
+          "severity": "warn",
+          "rule": "tags.count",
+          "message": "Short: 11 tags (want 5–8)"
+        }
+      ]
+    },
+    {
+      "id": "K0TQHg4XCHY",
+      "kind": "Short",
+      "title": "The Four Elements Were Wrong (duplicate)",
+      "privacy": "private",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        },
+        {
+          "severity": "warn",
+          "rule": "tags.count",
+          "message": "Short: 11 tags (want 5–8)"
+        }
+      ]
+    },
+    {
+      "id": "JI2ewIT1KSM",
+      "kind": "Short",
+      "title": "The Four Elements Were Wrong (duplicate)",
+      "privacy": "private",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        },
+        {
+          "severity": "warn",
+          "rule": "tags.count",
+          "message": "Short: 0 tags (want 5–8)"
+        }
+      ]
+    },
+    {
+      "id": "x_3L_IdYgEc",
+      "kind": "Short",
+      "title": "The Blood Vessels Finer Than a Hair",
+      "privacy": "private",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        },
+        {
+          "severity": "warn",
+          "rule": "embeddable",
+          "message": "embedding is off"
+        }
+      ]
+    },
+    {
+      "id": "6btaax7wp2E",
+      "kind": "Short",
+      "title": "The Blood Vessels Finer Than a Hair (duplicate)",
+      "privacy": "private",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        },
+        {
+          "severity": "warn",
+          "rule": "tags.count",
+          "message": "Short: 13 tags (want 5–8)"
+        }
+      ]
+    },
+    {
+      "id": "1lszTrYRp-8",
+      "kind": "Short",
+      "title": "Your Heart Pumps More Blood Than You Have",
+      "privacy": "private",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "CUu8k38iAMc",
+      "kind": "Short",
+      "title": "The first X-ray showed a wedding ring",
+      "privacy": "private",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "zI_eD3vFWmE",
+      "kind": "Short",
+      "title": "The first X-ray showed a wedding ring",
+      "privacy": "public",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "xvanpsLeADE",
+      "kind": "Short",
+      "title": "How did Röntgen see bones without cutting",
+      "privacy": "public",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "oowAOWTBoq0",
+      "kind": "Short",
+      "title": "How X-rays Were Discovered by Accident",
+      "privacy": "public",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "frP_YrNShsU",
+      "kind": "long",
+      "title": "How Did We Discover X-rays?",
+      "privacy": "public",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "LanTHJckYx8",
+      "kind": "Short",
+      "title": "What other table has empty chairs?",
+      "privacy": "public",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "nba0-f7PPeU",
+      "kind": "Short",
+      "title": "Why tellurium sat before iodine",
+      "privacy": "public",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "CnHwX1L9XHg",
+      "kind": "Short",
+      "title": "Gallium sat where the table said",
+      "privacy": "public",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "nFQRWmpulTQ",
+      "kind": "Short",
+      "title": "He predicted a metal before it was found",
+      "privacy": "public",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "uU12JA5rMWg",
+      "kind": "Short",
+      "title": "The periodic table's empty chairs",
+      "privacy": "public",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "AL_-qlWko_g",
+      "kind": "long",
+      "title": "How Did We Discover the Periodic Table?",
+      "privacy": "public",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "kzDiVk4603s",
+      "kind": "Short",
+      "title": "He predicted a metal before it was found",
+      "privacy": "private",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "sILtQxgYQk8",
+      "kind": "Short",
+      "title": "A flask that proved germs come from outside",
+      "privacy": "public",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "93fPUG-hW0A",
+      "kind": "Short",
+      "title": "Invisible life is still everywhere",
+      "privacy": "private",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "8_Edn_HCi1s",
+      "kind": "Short",
+      "title": "Germs hitch a ride on you",
+      "privacy": "public",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "iqToagXnjX0",
+      "kind": "Short",
+      "title": "Microbes in a drop of pond water",
+      "privacy": "public",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "H1y0DXFVmw8",
+      "kind": "Short",
+      "title": "Germs don't cast a shadow",
+      "privacy": "public",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "_C92tIJCk8A",
+      "kind": "long",
+      "title": "How Did We Discover Germs?",
+      "privacy": "public",
+      "scheduled": "",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic — confirm Yes in Studio (Altered content)"
+        }
+      ]
+    }
+  ],
+  "studioOnly": [
+    "AI disclosure = Yes (confirm by eye)",
+    "Every video: Altered / synthetic content = Yes (Data API videos.list omits this field)",
+    "Shorts: Related video points at the long it promotes (set at 18:05 on the long's day if needed)",
+    "Longs: end screen (related long + Subscribe) and 2 cards, none in the first minute",
+    "Longs: Test & Compare (title+thumbnail pairs, or thumbnails only) running after publish",
+    "Longs: pinned comment posted as the channel",
+    "Paid promotion = No; education fields (concept overview, secondary, GCSE subject)",
+    "Automatic places off; comments on (Basic moderation); Studio time zone London"
+  ]
+}
