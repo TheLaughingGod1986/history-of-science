@@ -3,7 +3,7 @@
   "title": "Accidental Inventions: 5 Mistakes That Worked",
   "air": "2026-12-24",
   "ready_by": "2026-12-21",
-  "summary": "Film 3 of the History of Science search-led plan (hos-search-2027-01, Ben OK 24 Nov 2026; accelerated into December: target air Thu 24 Dec 18:00 London, watch by Mon 21 Dec; slides a week if not ready). Rule-E topic review PASS in J3503 (GO 95.8/100, 9.58/10 Opportunity Score, 2026-11-24): inventions that changed the world 35.9k/mo US 23% (10/10 gap), accidental discoveries 9.4k/mo comp 39 +93% (9/10 gap), accidental inventions that changed the world 8.1k/mo +73.9% (10/10 gap), sub-50k outliers 8x-22x, neighbours.py PASS (4 raw / 3 strictly relevant >=1M incl. Thoughty2 1.59M & 2 TED-Ed >=1M, plus SciShow 1.48M in public_search), public_search.py 5/5 core autocomplete=yes & 0 exact collisions across updated titles & Shorts. J3503 retired colliding PR #743 Title A (5 live collisions incl. nLbBtuydgZo 251.7K views), fixed Thumb A/B copy & composition (NEARLY TRASHED single hero / WRONG RESISTOR), locked Safety Glass 1903 over Microwave (zero overlap with HOS:129), and logged 6 script guardrails. Follow-on script job J3513 queued (draft Mon 30 Nov, lock Tue 8 Dec). All claims remain UNVERIFIED pending SOURCES.md, facts lane, and open HOS WIP slot (Rule G).",
+  "summary": "Film 3 of the History of Science search-led plan (hos-search-2027-01, Ben OK 24 Nov 2026; accelerated into December: target air Thu 24 Dec 18:00 London, watch by Mon 21 Dec; slides a week if not ready). Rule-E GO (J3503, 95.8/100). J3513 (24 Nov 2026) delivered PACKAGE_FIRST_SCORING_v01.md (Title A 45c 96/100, Thumb A NEARLY TRASHED 96/100, Thumb B WRONG RESISTOR 93/100), accidental_inventions_script_master_v01.md (review:script PASS 92.6/100, gate:episode PASS, 1,225 words, 5 parts, 5 DATA+SCALE, 13 WHO, 10 WHEN, 4 FACT, 2 EXPLORER ACTS), SOURCES.md, FACT_NOTES_v01.md (24/24 verified rows resolving all 6 J3503 guardrails), SHORTS_SCRIPTS_v01.md (two 16-19s Shorts, S01 48c & S02 54c, 0 collisions), and LAUNCH_PLAN.md. Awaits independent facts lane (gemini-agy) and Chief script lock before any VO or picture spend (£0.00 spent; Rule G WIP cap respected).",
   "stages": {
     "topic": {
       "state": "done",
@@ -12,34 +12,46 @@
       "note": "J3503 Rule-E topic go/no-go review GO (95.8/100, 10/10 gates PASS after fixes, 2026-11-24); retired colliding Title A (5 live collisions) for 'Accidental Inventions: 5 Mistakes That Worked' (45c, 0 collisions), fixed Thumb A/B §2.2/§2.5/§2.B copy (NEARLY TRASHED / WRONG RESISTOR), locked Safety Glass over Microwave (zero overlap with HOS:129), verified 0 Short collisions & strict neighbours (3 >=1M in neighbours.json + SciShow 1.48M), logged 6 script guardrails, and queued script job J3513"
     },
     "script": {
-      "state": "todo",
+      "state": "doing",
       "due": "2026-12-08",
       "owner": "Claude",
-      "waiting": "queued as J3513 (package-first + 7-9 min draft due Mon 30 Nov 18:00 London, lock Tue 8 Dec)"
+      "since": "2026-11-24",
+      "underway": false,
+      "waiting": "HOS script review and Chief lock on accidental_inventions_script_master_v01.md (J3513 draft, 92.6/100 PASS)",
+      "note": "J3513 package-first scoring + 5-part 7-9 min v01 script draft delivered (review:script PASS 92.6/100, gate:episode PASS); awaiting Chief lock"
     },
     "facts": {
-      "state": "todo",
+      "state": "doing",
       "due": "2026-12-08",
       "owner": "Gemini",
-      "waiting": "after J3513 script draft and SOURCES.md"
+      "since": "2026-11-24",
+      "underway": false,
+      "waiting": "independent facts lane (gemini-agy) verification of SOURCES.md & FACT_NOTES_v01.md (24/24 rows) before Chief lock",
+      "note": "SOURCES.md and FACT_NOTES_v01.md (24 verified primary/institutional quotes) drafted in J3513, resolving all 6 J3503 guardrails (Greatbatch 10k/1M/1.8ms + Chardack & Gage vs Elmqvist & Senning Oct 1958; Goodyear prepared mind/1844/1860/1898; Benedictus 1903 vs 1909 Triplex; Fleming + Oxford Florey/Chain/Heatley lab framing; Silver 1968 microspheres + Fry 1974 + Boise 1978; 100% 3D cartoon lane & §2.6 typography)"
     },
     "package": {
-      "state": "todo",
+      "state": "doing",
       "due": "2026-12-08",
       "owner": "Claude",
-      "note": "Package-first candidates (with J3503 0-collision title & NEARLY TRASHED / WRONG RESISTOR thumb fixes) finalised in J3513 before script lock"
+      "since": "2026-11-24",
+      "underway": false,
+      "waiting": "Chief package lock, VO re-timing, and PACKAGE_MANIFEST.json before upload",
+      "note": "PACKAGE_FIRST_SCORING_v01.md, updated PRE_BUILD_VIDIQ_AUDIT.md, and LAUNCH_PLAN.md delivered in J3513 (Title A 45c 96/100, Thumb A NEARLY TRASHED 96/100, Thumb B WRONG RESISTOR 93/100, S01 48c & S02 54c 0 collisions)"
     },
     "vo": {
       "state": "todo",
       "due": "2026-12-11",
       "owner": "Cursor",
-      "waiting": "after script & facts lock and open HOS WIP place (Rule G)"
+      "waiting": "after script & facts lock by Chief and open HOS WIP place (Rule G)"
     },
     "shorts_scripts": {
-      "state": "todo",
+      "state": "doing",
       "due": "2026-12-09",
       "owner": "Claude",
-      "note": "Fri & Sat search-question 16-19 s Shorts promoting HOS:137 (0 collisions verified in J3503); Sun & Tue cluster/candidate rotation"
+      "since": "2026-11-24",
+      "underway": false,
+      "waiting": "review and Chief lock of SHORTS_SCRIPTS_v01.md (S01 Sat 26 Dec 48c & S02 Fri 25 Dec 54c, 16-19s house rules)",
+      "note": "Two standalone 16-19s search-question Shorts drafted in J3513 (S01 46w / S02 43w; 0 collisions verified 2026-11-24)"
     },
     "shorts_vo": {
       "state": "todo",
@@ -63,7 +75,7 @@
       "state": "todo",
       "due": "2026-12-19",
       "owner": "Codex",
-      "waiting": "after picture plates ready"
+      "waiting": "after script & VO PASS (Thumb A NEARLY TRASHED, Thumb B WRONG RESISTOR; §2.6 hand-verified text)"
     },
     "ben_ok": {
       "state": "todo",
@@ -79,5 +91,5 @@
     }
   },
   "claims": [],
-  "next": "J3513 package-first + 7-9 min script draft due Mon 30 Nov 18:00 London (lock Tue 8 Dec; Ben's watch Mon 21 Dec; target air Thu 24 Dec)"
+  "next": "Independent facts lane (gemini-agy) & Chief script/package lock on J3513 v01 draft (due Tue 8 Dec; Ben's watch Mon 21 Dec; target air Thu 24 Dec)"
 }

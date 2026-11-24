@@ -48,26 +48,33 @@
 
 ---
 
-## 3. Package First — Title ABC & Thumbnail Concepts (Step 5, Updated in `J3503`)
+## 3. Package First — Title ABC & Thumbnail Concepts (Step 5, Scored in `J3513` · Full Matrix in `PACKAGE_FIRST_SCORING_v01.md`)
 
-| Variant | Title | Chars | Collisions (`2026-11-24`) | Keep? |
-|---|---|---:|---:|---|
-| **A (Primary ≤50c · `J3503` Fix)** | `Accidental Inventions: 5 Mistakes That Worked` | 45 | **0** | **Primary candidate** |
-| **B (Plan / T&C Arm 2)** | `Accidental Inventions That Changed the World (5 Mistakes That Worked)` | 69 | **0** | **Keep for T&C** |
-| **C (Backup / T&C Arm 3)** | `Accidental Inventions: 5 Mistakes That Changed the World` | 56 | **0** | **Backup** |
-| *Alt (≤50c backup)* | `5 Accidental Lab Mistakes That Changed the World` | 48 | **0** | **Alternate ≤50c** |
-| *Reject (`J3503`)* | `5 Accidental Inventions That Changed the World` | 46 | **5** | **Reject** (exact live collisions incl. `nLbBtuydgZo` 251.7K views; Never list §1.7) |
-| *Reject* | `History of Inventions \| History of Science` | 43 | — | **Reject** (PK-heavy low-RPM keyword + series suffix) |
+| Variant | Title | Chars | Collisions (`2026-11-24`) | Score (`J3513`) | Keep? |
+|---|---|---:|---:|---:|---|
+| **A (Primary ≤50c · PICK)** | `Accidental Inventions: 5 Mistakes That Worked` | 45 | **0** | **96 / 100** | **PICK — Primary Main Title (Arm A)** |
+| **B (Plan / T&C Arm 2)** | `Accidental Inventions That Changed the World (5 Mistakes That Worked)` | 69 | **0** | **92 / 100** | **KEEP — Test & Compare Arm B** |
+| **C (Backup / T&C Arm 3)** | `Accidental Inventions: 5 Mistakes That Changed the World` | 56 | **0** | **90 / 100** | **KEEP — Test & Compare Arm C** |
+| *Alt (≤50c backup)* | `5 Accidental Lab Mistakes That Changed the World` | 48 | **0** | 91 / 100 | **Reserve backup only** |
+| *Reject (`J3503`)* | `5 Accidental Inventions That Changed the World` | 46 | **5** | FAIL | **Reject** (exact live collisions incl. `nLbBtuydgZo` 251.7K views; Never list §1.7) |
+| *Reject* | `History of Inventions \| History of Science` | 43 | — | FAIL | **Reject** (PK-heavy low-RPM keyword + series suffix) |
 
-- **Thumbnail Concept A (`J3503` §2.2 & §2.5 Fix):** Single giant hero object filling 2/3 of the right frame (warm 3D cartoon spiderwebbed unbroken 1903 safety-glass flask OR glowing emerald *Penicillium* Petri dish on a period lab bench — never a 3-object collage), Explorer small lower-left, top-left serif text **`NEARLY TRASHED`** (gold on `TRASHED`; zero word overlap with Titles A/B/C).
-- **Thumbnail Concept B (`J3503` §2.B.1 Fix):** Close-up 3D cartoon 1956 workbench with one oversized glowing wrong resistor pulsing a golden heartbeat trace on an oscilloscope beside a crossed-out notebook, Explorer small lower-left, top-left serif text **`WRONG RESISTOR`** (gold on `WRONG`).
+- **Thumbnail Concept A (`96/100` · Primary Arm A · `J3503` §2.2 & §2.5 Fix):** Single giant hero object filling 2/3 of the right frame — warm 3D cartoon spiderwebbed cracked-yet-intact 1903 safety-glass flask on a sunlit Paris laboratory bench (zero 3-object collage clutter), Explorer small lower-left, top-left serif text **`NEARLY TRASHED`** (gold on `TRASHED`; zero word overlap with Titles A/B/C).
+- **Thumbnail Concept B (`93/100` · T&C Arm B · `J3503` §2.B.1 Fix):** Close-up 3D cartoon 1956 workbench with one oversized glowing wrong resistor pulsing a golden heartbeat trace on a small period oscilloscope beside a crossed-out notebook, Explorer small lower-left, top-left serif text **`WRONG RESISTOR`** (gold on `WRONG`).
+- **Standalone Shorts (`16–19 s`, `0` collisions verified `2026-11-24`):** S01 (`48c` primary) *How Did One Wrong Resistor Invent the Pacemaker?* (Sat 26 Dec) · S02 (`54c`) *How Did Failed Glue Accidentally Invent Post-it Notes?* (Fri 25 Dec).
 
 ---
 
-## 4. Production Gates & Dates
+## 4. Production Gates, Sign-Off Checklist & Dates
 
-- **Rule-E topic review:** **DONE (`J3503` GO `95.8/100`, 24 Nov 2026)**
-- **Package-first + script draft due (`J3513`):** Mon 30 Nov 2026 18:00 London (`npm run review:script` ≥ 90, `npm run gate:episode` PASS)
+- [x] **Keywords** verified (`inventions that changed the world` 35.9k/mo US 23%, `accidental discoveries` 9.4k/mo comp 39 +93%, `accidental inventions that changed the world` 8.1k/mo +73.9%, `5/5` autocomplete `yes`, low-RPM `history of inventions` PK 25% rejected).
+- [x] **Title** primary and Test & Compare variants scored (`PACKAGE_FIRST_SCORING_v01.md`, `0` exact collisions across Titles A/B/C and Shorts S01/S02; colliding PR `#743` Title A retired).
+- [x] **Script reviewer** (`npm run review:script` ≥ 90 PASS) and `npm run gate:episode` PASS verified on `01_Script/accidental_inventions_script_master_v01.md` (pending independent `facts` review + Chief lock before any VO/picture spend).
+
+**Signed off by:** Gemini (`J3513` draft package & script — awaits independent `facts` lane & Chief lock before VO/picture spend) · **Date:** `2026-11-24`
+
+- **Rule-E topic review (`J3503`):** **GO (`95.8 / 100` · `9.58 / 10`, 24 Nov 2026)** (`10/10` gates PASS)
+- **Package-first + script draft (`J3513`):** **DRAFTED `2026-11-24`** (6 days ahead of Mon 30 Nov 18:00 London target; `PACKAGE_FIRST_SCORING_v01.md`, `LAUNCH_PLAN.md`, `accidental_inventions_script_master_v01.md`, `SOURCES.md`, `FACT_NOTES_v01.md`, `SHORTS_SCRIPTS_v01.md`)
 - **Script lock & `SOURCES.md` + `facts` lane due:** Tue 8 Dec 2026
 - **Ben's watch by:** Mon 21 Dec 2026 · **Target air:** Thu 24 Dec 2026 18:00 London
 - **14-day test readout (7 Jan 2027):** `500+` keep Cluster 3 · `162–499` one more film · `<162` drop/change (with impressions, CTR, US+UK+CA+AU share).
