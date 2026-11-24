@@ -1,0 +1,83 @@
+{
+  "film": "136",
+  "title": "Trinity Test Explained: Could It Ignite the Sky?",
+  "air": "2026-12-17",
+  "ready_by": "2026-12-14",
+  "summary": "Film 2 of the History of Science search-led plan (hos-search-2027-01, Ben OK 24 Nov 2026; accelerated into December: target air Thu 17 Dec 18:00 London, watch by Mon 14 Dec; slides a week if not ready). Rule-E topic review PASS in J3502 (GO 96.3/100, 9.63/10 Opportunity Score, 2026-11-24): trinity test 21.5k/mo comp 38, manhattan project 35.2k/mo US 18% + GB 9%, 9/10 US SERP gap, sub-50k outliers 6.1x-172x, neighbours.py PASS (8 raw / 5 strictly relevant >=1M incl. Veritasium 19.96M & 2 TED-Ed >=1M), public_search.py 4/4 core autocomplete=yes & 0 exact collisions across 5 titles; J3502 fixed Thumb A/B copy (AIR ON FIRE? / MEASURED BY PAPER), removed unbacked neighbour citation, and logged 7 script-stage guardrails. Follow-on script job J3507 queued (draft Sat 28 Nov, lock Fri 4 Dec). All claims remain UNVERIFIED pending SOURCES.md, facts lane, and open HOS WIP slot (Rule G).",
+  "stages": {
+    "topic": {
+      "state": "done",
+      "due": "2026-11-26",
+      "owner": "Claude",
+      "note": "J3502 Rule-E topic go/no-go review GO (96.3/100, 10/10 gates PASS, 2026-11-24); fixed Thumb A/B §2.5/physics copy (AIR ON FIRE? / MEASURED BY PAPER), added 4 extra public_search queries (10 total, 0 Short/long collisions), verified strictly on-topic neighbours (5 >=1M, 2 TED-Ed), logged 7 script-stage guardrails, and queued script job J3507"
+    },
+    "script": {
+      "state": "todo",
+      "due": "2026-12-04",
+      "owner": "Claude",
+      "waiting": "queued as J3507 (package-first + 7-9 min draft due Sat 28 Nov 18:00 London, lock Fri 4 Dec)"
+    },
+    "facts": {
+      "state": "todo",
+      "due": "2026-12-04",
+      "owner": "Gemini",
+      "waiting": "after J3507 script draft and SOURCES.md"
+    },
+    "package": {
+      "state": "todo",
+      "due": "2026-12-04",
+      "owner": "Claude",
+      "note": "Package-first candidates (with J3502 AIR ON FIRE? / MEASURED BY PAPER fixes) finalised in J3507 before script lock"
+    },
+    "vo": {
+      "state": "todo",
+      "due": "2026-12-07",
+      "owner": "Cursor",
+      "waiting": "after script & facts lock and open HOS WIP place (Rule G)"
+    },
+    "shorts_scripts": {
+      "state": "todo",
+      "due": "2026-12-05",
+      "owner": "Claude",
+      "note": "Fri & Sat search-question 16-19 s Shorts promoting HOS:136 (0 collisions verified in J3502); Sun & Tue cluster/candidate rotation"
+    },
+    "shorts_vo": {
+      "state": "todo",
+      "due": "2026-12-08",
+      "owner": "Cursor",
+      "waiting": "after shorts_scripts PASS and open HOS WIP place"
+    },
+    "picture": {
+      "state": "todo",
+      "due": "2026-12-11",
+      "owner": "Cursor",
+      "waiting": "after script & VO PASS (Flow credits within existing plan)"
+    },
+    "edit": {
+      "state": "todo",
+      "due": "2026-12-13",
+      "owner": "Cursor",
+      "waiting": "after picture PASS"
+    },
+    "thumbnails": {
+      "state": "todo",
+      "due": "2026-12-13",
+      "owner": "Codex",
+      "waiting": "after picture plates ready"
+    },
+    "ben_ok": {
+      "state": "todo",
+      "due": "2026-12-14",
+      "owner": "Ben",
+      "waiting": "after finished long, Shorts, and thumbnails pass Chief QA"
+    },
+    "scheduled": {
+      "state": "todo",
+      "due": "2026-12-15",
+      "owner": "Chief",
+      "waiting": "after Ben's watch OK (target air Thu 17 Dec 18:00 London)"
+    }
+  },
+  "claims": [],
+  "next": "J3507 package-first + 7-9 min script draft due Sat 28 Nov 18:00 London (lock Fri 4 Dec; Ben's watch Mon 14 Dec; target air Thu 17 Dec)"
+}
