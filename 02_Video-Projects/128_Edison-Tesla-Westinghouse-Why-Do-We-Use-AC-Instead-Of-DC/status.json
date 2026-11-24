@@ -1,44 +1,84 @@
 {
   "film": "128",
   "title": "Why Do We Use AC Instead of DC? (Edison vs Tesla)",
-  "summary": "Proposed in J3270 and Rule-E pre-cleared by J3346 (GO 97.1/100, 22 Nov 2026). Stays in jobs/WIP.json next_hos under Rule G (4/4 active HOS slots full). Passes all currently in-force HOS topic gates (neighbours.py PASS: 8 raw / 6 strictly on-topic >=1M edu videos incl. Veritasium 28.29M & 12.84M, TED-Ed 3.62M & 1.04M, Thoughty2 1.97M, SciShow 1.40M; public_search.py 11 queries, 5 core autocomplete=yes, 0 exact title collisions) and aligns with proposed hos-search-2027-01 Cluster 1 Lead Film (J3224, currently needsBen in studio/plan.json). All historical/scientific claims remain unverified pending active HOS WIP slot, SOURCES.md verbatim quotes, and facts lane.",
+  "air": "2026-12-10",
+  "ready_by": "2026-12-07",
+  "summary": "Cluster 1 lead film of hos-search-2027-01 (approved by Ben 24 Nov 2026; brought forward to Thu 10 Dec 18:00 London, slides to 17 Dec if not ready for Ben's watch by Mon 7 Dec). Rule-E GO (J3346, 97.1/100) and entered active production 24 Nov (OWB PR #1238). J3496 delivered PACKAGE_FIRST_SCORING_v01.md, edison_tesla_ac_dc_script_master_v01.md (review:script PASS >=90, gate:episode PASS), FACT_NOTES_v01.md (21 verified rows), SOURCES.md, SHORTS_SCRIPTS_v01.md (two 16-19s Shorts for Fri 11 Dec & Sat 12 Dec), and LAUNCH_PLAN.md. Awaits HOS script review and Chief lock before any VO or picture spend.",
   "stages": {
     "topic": {
-      "state": "todo",
-      "note": "J3270 topic brief written; J3346 Rule-E topic go/no-go review GO (97.1/100 in next_hos under Rule G); fixed Thumb B §2.5 title-repeat (AC BEAT DC -> HIGH VOLTAGE), Title C transformer year (1888 -> 1886, 0 collisions verified), Joule heating + 50/60 Hz reversal wording, and 10_Shorts/README.md 19 Nov 16-19s house-rules note; script guardrails logged; all claims remain unverified pending SOURCES.md and facts lane when an active HOS slot opens"
+      "state": "done",
+      "note": "J3346 Rule-E GO (97.1/100, 6 strictly on-topic >=1M edu neighbours, 0 title collisions); Ben approved hos-search-2027-01 and active production on 24 Nov (OWB PR #1238)"
     },
     "script": {
-      "state": "todo"
+      "state": "doing",
+      "due": "2026-12-01",
+      "owner": "Claude",
+      "since": "2026-11-24",
+      "underway": false,
+      "waiting": "HOS script review and Chief lock on edison_tesla_ac_dc_script_master_v01.md (J3496 draft)",
+      "note": "J3496 package-first scoring + 7-9 min v01 script draft delivered (review:script PASS, gate:episode PASS); awaiting Chief lock"
     },
     "facts": {
-      "state": "todo"
+      "state": "doing",
+      "due": "2026-12-01",
+      "owner": "Claude",
+      "since": "2026-11-24",
+      "underway": false,
+      "waiting": "independent review of FACT_NOTES_v01.md (21/21 verified) and SOURCES.md alongside script lock",
+      "note": "All 21 spoken & visual claims verified in FACT_NOTES_v01.md and SOURCES.md (J3496); J3346 guardrails resolved (incl. Niagara 22 miles, zero Topsy myth)"
     },
     "package": {
-      "state": "todo"
+      "state": "doing",
+      "due": "2026-12-05",
+      "owner": "Claude",
+      "since": "2026-11-24",
+      "underway": false,
+      "waiting": "script lock, VO re-timing, and PACKAGE_MANIFEST.json before upload",
+      "note": "PACKAGE_FIRST_SCORING_v01.md, PRE_BUILD_VIDIQ_AUDIT.md, and LAUNCH_PLAN.md drafted in J3496"
     },
     "vo": {
-      "state": "todo"
+      "state": "todo",
+      "due": "2026-12-02",
+      "waiting": "after script and facts lock by Chief (no spend until PASS)"
     },
     "shorts_scripts": {
-      "state": "todo"
+      "state": "doing",
+      "due": "2026-12-01",
+      "owner": "Claude",
+      "since": "2026-11-24",
+      "underway": false,
+      "waiting": "review and lock of SHORTS_SCRIPTS_v01.md (S01 Fri 11 Dec & S02 Sat 12 Dec, 16-19s house rules)",
+      "note": "Two 16-19s search-titled Shorts drafted in J3496 (S01 45w / S02 46w)"
     },
     "shorts_vo": {
-      "state": "todo"
+      "state": "todo",
+      "due": "2026-12-03",
+      "waiting": "after SHORTS_SCRIPTS_v01.md lock"
     },
     "picture": {
-      "state": "todo"
+      "state": "todo",
+      "due": "2026-12-05",
+      "waiting": "after script and VO PASS"
     },
     "edit": {
-      "state": "todo"
+      "state": "todo",
+      "due": "2026-12-06",
+      "waiting": "after picture plates KEEP"
     },
     "thumbnails": {
-      "state": "todo"
+      "state": "todo",
+      "due": "2026-12-06",
+      "waiting": "after script and VO PASS (Thumb A 1 MILE LIMIT, Thumb B 22 MILES AWAY, Thumb C HIGH VOLTAGE)"
     },
     "ben_ok": {
-      "state": "todo"
+      "state": "todo",
+      "due": "2026-12-07",
+      "waiting": "finished long, 2 Shorts, and thumbnails ready for Ben's watch"
     },
     "scheduled": {
-      "state": "todo"
+      "state": "todo",
+      "due": "2026-12-08",
+      "waiting": "after Ben's final OK (target Thu 10 Dec 18:00 London)"
     }
   },
   "claims": [],

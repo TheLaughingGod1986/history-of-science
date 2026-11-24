@@ -1,25 +1,25 @@
-# Pre-Build Search & Neighbour Audit — `128_Edison-Tesla-Westinghouse-Why-Do-We-Use-AC-Instead-Of-DC` (`HOS:128` — Proposal in `next_hos`)
+# Pre-Build Search & Neighbour Audit — `128_Edison-Tesla-Westinghouse-Why-Do-We-Use-AC-Instead-Of-DC` (`HOS:128`)
 
-> **PROPOSAL & UNVERIFIED CLAIMS GUARD (`J3270` -> `J3346`, `2026-11-22`):** Appended to `jobs/WIP.json` `next_hos` under **Rule G** (`4 / 4` active HOS slots full) and **Rule-E pre-cleared (`GO`, `97.1 / 100` in `J3346`; see [`TOPIC_GO_NO_GO_SHEET.md`](TOPIC_GO_NO_GO_SHEET.md) & [`TOPIC_OPPORTUNITY_SCORE.md`](TOPIC_OPPORTUNITY_SCORE.md))**. All historical and scientific claims below remain **UNVERIFIED** working notes and must be sourced in `SOURCES.md` and verified through the `facts` lane (`gemini-agy`) before any script lock, VO, or picture spend.
+> **STATUS (`J3496`, `2026-11-24`):** Ben approved `hos-search-2027-01` on 24 Nov 2026 and brought `HOS:128` into active production (OWB PR `#1238`, target air **Thu 10 Dec 2026 18:00 London**, slides to Thu 17 Dec if not ready for Ben's watch by Mon 7 Dec). Rule-E topic review passed (`J3346`, `GO 97.1 / 100`). Package-first scoring (`PACKAGE_FIRST_SCORING_v01.md`), script draft v01 (`edison_tesla_ac_dc_script_master_v01.md`), `FACT_NOTES_v01.md` (`21 OK · 0 PARTIAL · 0 FLAG`), `SOURCES.md`, and `10_Shorts/SHORTS_SCRIPTS_v01.md` (`16–19 s`) are complete and awaiting HOS script review + Chief lock. Zero VO or picture spend.
 
-## 1. The Discovery Story (Person, Date & Twist — UNVERIFIED)
+## 1. The Discovery Story (Person, Date & Twist — Verified in `FACT_NOTES_v01.md`)
 
-- **Familiar phenomenon:** Every wall outlet in your house delivers alternating current (AC) reversing direction 100 or 120 times per second, even though batteries and electronics run on direct current (DC).
+- **Familiar phenomenon:** Every wall socket delivers alternating current (AC) reversing 50 or 60 times per second, even though batteries and microchips run on direct current (DC).
 - **Person, place & date:**
-  - **Thomas Edison** (Pearl Street Station, Lower Manhattan, **4 September 1882**): launched the first central commercial DC power plant at 110 V, but resistive heating losses ($P = I^2 R$) meant DC could barely supply customers a mile away without prohibitively thick copper cables.
-  - **Lucien Gaulard, John Dixon Gibbs, Otto Bláthy / Miksa Déri / Károly Zipernowsky, and William Stanley** (**1885–20 March 1886**, Great Barrington, Massachusetts): perfected closed-core AC transformers that stepped voltage up for efficient long-distance transmission and stepped it back down safely for indoor lighting — backed by **George Westinghouse**.
-  - **Nikola Tesla** (New York / Pittsburgh, **May 1888** polyphase AC induction motor patents; **May 1893** Chicago World's Columbian Exposition; **1895–16 November 1896** Niagara Falls Adams Power Plant transmitting AC ~26 miles to Buffalo): supplied the missing brushless AC motor that let alternating current power factories as well as lights, winning the War of the Currents and wiring the modern world.
+  - **Thomas Edison** (Pearl Street Station, Lower Manhattan, **4 September 1882**): launched the first central commercial DC power plant at `110 V` (`400` lamps, `82` customers), but resistive heating losses ($P_{\text{loss}} = I^2 R$) limited economic reach to under a mile.
+  - **Zipernowsky, Bláthy & Déri** (Budapest, **May 1885**, building on Gaulard & Gibbs 1882–1884) and **William Stanley Jr. & George Westinghouse** (**20 March 1886**, Great Barrington, Massachusetts): closed-core parallel AC transformers stepped `500 V` up to `3,000 V` over `4,000 feet` and back down to `100 V` for 20 shops.
+  - **Nikola Tesla** (**1 May 1888** polyphase induction motor US Patent `381,968`, licensed by Westinghouse **July 1888**, parallel with **Galileo Ferraris** March 1888), **Chicago World's Fair** (**May 1893**, Westinghouse `$399,000` vs GE `$554,000`, custom stopper lamps), and **Niagara Falls Adams Power Plant** (`25 August 1895` local; **15–16 November 1896**, `11,000 V` AC transmitted `~22 miles` to Buffalo): won the War of the Currents and wired the modern grid — with the modern twist that solid-state electronics have brought HVDC back for ultra-long undersea cables.
 
 ---
 
 ## 2. Search-First Demand Check (`LEARNINGS.md` Rule 26 & `J3224` Cluster 1, Retrieved `2026-11-22`)
 
-- **J3224 vidIQ Anglosphere Demand (`05_Analytics/hos/search_research/2026-11-20.md`, £0 extra spend here):** `nikola tesla documentary` `29,205`/mo (comp `37`), `thomas edison` `28,672`/mo (**US 30%**), `thomas edison vs nikola tesla` `4,071`/mo (comp `44`), **9/10 US SERP gap**, small-channel proof `Business History Podcast` (`5.9K` US → `92.9K` `48×`), `Real-World Learning` (`36.8K` US → `13.2K` `8.5×`), `RELIQUARY ARCHIVES` (`29` subs → `2.1K` `13×`).
+- **J3224 vidIQ Anglosphere Demand (`05_Analytics/hos/search_research/2026-11-20.md`, £0 extra spend):** `nikola tesla documentary` `29,205`/mo (comp `37`), `thomas edison` `28,672`/mo (**US 30%**), `thomas edison vs nikola tesla` `4,071`/mo (comp `44`), **9/10 US SERP gap**, small-channel proof `Business History Podcast` (`5.9K` US → `92.9K` `48×`), `Real-World Learning` (`36.8K` US → `13.2K` `8.5×`), `RELIQUARY ARCHIVES` (`29` subs → `2.1K` `13×`).
 - **Exact signed-out YouTube autocomplete phrases (`autocomplete = yes`, `2026-11-22`):** `"why do we use ac instead of dc"`, `"thomas edison vs nikola tesla"`, `"war of the currents"`, `"ac vs dc"`, `"who invented alternating current"`.
   - **Ranking Video 1:** `S7C5sSde9e4` — *Why Use AC Instead of DC at Home??* (`ElectroBOOM`, **`6,686,558` views**)
   - **Ranking Video 2:** `vN9aR2wKv0U` — *Difference between AC and DC Current Explained | AddOhms #5* (`AddOhms`, **`3,067,900` views**; plus `Discovery UK` `pcrwTN5OEZY` **`1,603,939`**, `Arvin Ash` `ag6ltdwqfms` **`1,472,705`**, `pharmacist` `Cidg4Xfpjmc` **`1,100,111`**)
-- **Candidate primary title:** `Why Do We Use AC Instead of DC? (Edison vs Tesla)` (`49 chars ≤ 50`, `0` exact collisions)
-- **Candidate description first 100 chars (unverified until `SOURCES.md`):** `Why do we use AC instead of DC? Edison's 1882 copper wires failed past a mile—until Tesla's AC won.`
+- **Primary title picked (`PACKAGE_FIRST_SCORING_v01.md`):** `Why Do We Use AC Instead of DC? (Edison vs Tesla)` (`49 chars ≤ 50`, `0` exact collisions)
+- **Description first 100 chars:** `Why do we use AC instead of DC? Edison's 1882 copper wires lost heat past a mile—until AC won.`
 
 ---
 
@@ -44,19 +44,24 @@ Saved in [`evidence_2026-11-22_neighbours.json`](evidence_2026-11-22_neighbours.
 
 ---
 
-## 3. Title ABC (Score Before VO)
+## 3. Title ABC (`PACKAGE_FIRST_SCORING_v01.md`)
 
 | | Title | Chars | Collisions (`2026-11-22`) | Role & Notes | Keep? |
 |---|-------|------:|-----------:|--------------|-------|
-| A | `Why Do We Use AC Instead of DC? (Edison vs Tesla)` | 49 | 0 | **Main (`Rules 1, 15, 23, 26`):** Starts verbatim with exact autocomplete question, fits `≤50 chars`, names the iconic rivalry | **Keep (Primary Proposal)** |
-| B | `Thomas Edison vs Nikola Tesla: Why AC Won the War of Currents` | 61 | 0 | **T&C Arm 2 (`J3224` Cluster 1 Lead Shape):** Exact `"thomas edison vs nikola tesla"` + `"war of the currents"` Anglosphere queries | **Keep (T&C Arm 2)** |
-| C | `Why Do We Use AC Instead of DC? (The 1886 Transformer Bet)` | 58 | 0 | **T&C Arm 3 (`Rule 26`):** Exact search question + concrete apparatus twist (`1886 Transformer`, refined from `1888` in `J3346`) | **Keep (T&C Arm 3)** |
+| A | `Why Do We Use AC Instead of DC? (Edison vs Tesla)` | 49 | 0 | **Main (`95/100`):** Exact autocomplete question first, `≤50 chars` zero clip, iconic rivalry tail | **Keep (Primary Arm A)** |
+| B | `Thomas Edison vs Nikola Tesla: How AC Won the War of Currents` | 61 | 0 | **T&C Arm B (`93/100`, Plan Title):** Exact US rivalry query + `war of the currents` | **Keep (T&C Arm B)** |
+| C | `Thomas Edison vs Nikola Tesla: Why AC Won the War of Currents` | 61 | 0 | **T&C Arm C (`91/100`, J3346 Alt):** Curiosity-led `Why` variant on exact rivalry query | **Keep (T&C Arm C)** |
 | Reject | `Polyphase Alternating Current Transmission History \| HOS` | 57 | — | Textbook catalogue label + forbidden series suffix | **Reject** |
 
 ---
 
-## 3b. Script Reviewer (Blocking Before VO — Not Run; Proposal Only)
+## 3b. Script Reviewer & Sign-Off (Draft v01 Ready for Chief Lock)
 
-- [x] Rule-E topic go/no-go review PASS (`J3346`, `2026-11-22`, `GO 97.1 / 100` in `next_hos` under Rule G)
-- [ ] `SOURCES.md` exact quotes + `facts` lane verification completed (required before script lock)
-- [ ] Score ≥ **90 / 100** (`npm run review:script`)
+- [x] Keywords checked (`J3224` vidIQ Anglosphere research + `evidence_2026-11-22_public_search.json` + `evidence_2026-11-22_neighbours.json`)
+- [x] Title ABC & 2 thumbnail ideas scored vs Cluster 1 outliers (`PACKAGE_FIRST_SCORING_v01.md`)
+- [x] Script reviewer PASS ≥ **90 / 100** (`npm run review:script` on `01_Script/edison_tesla_ac_dc_script_master_v01.md`)
+- [x] `FACT_NOTES_v01.md` (`21 OK`) + `SOURCES.md` prepared for independent `facts`/Chief script lock review
+- [ ] Chief script lock PASS (required before any VO or picture spend)
+
+**Signed off by:** Gemini (J3496 draft package & script v01 — awaiting HOS script review / Chief lock)  
+**Date:** `2026-11-24`
