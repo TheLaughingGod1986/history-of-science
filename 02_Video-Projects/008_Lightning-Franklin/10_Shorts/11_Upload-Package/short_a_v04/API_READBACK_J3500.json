@@ -1,0 +1,30 @@
+{
+  "videoId": "__UtUYdEUwg",
+  "title": "Why Was Franklin's Kite Experiment So Dangerous?",
+  "privacy": "private",
+  "publishAt": "2026-11-27T11:30:00Z",
+  "uploadStatus": "processed",
+  "language": "en-GB",
+  "audioLanguage": "en-GB",
+  "categoryId": "27",
+  "madeForKids": false,
+  "selfDeclaredMadeForKids": false,
+  "duration": "PT24S",
+  "hasCustomThumbnail": true,
+  "tagCount": 6,
+  "captionUpload": {
+    "ok": true,
+    "status": 200,
+    "id": "AUieDaaV50ex4Cf2BegopizxRoYCy2hl1sUSuetfd5-TiKuUgVkXW7r5YovsQe1TsXtG9Dmu631PTle8Xac",
+    "error": null
+  },
+  "captions": [
+    {
+      "id": "AUieDaaV50ex4Cf2BegopizxRoYCy2hl1sUSuetfd5-TiKuUgVkXW7r5YovsQe1TsXtG9Dmu631PTle8Xac",
+      "language": "en-GB",
+      "status": "serving",
+      "isDraft": false,
+      "name": "English (United Kingdom)"
+    }
+  ]
+}

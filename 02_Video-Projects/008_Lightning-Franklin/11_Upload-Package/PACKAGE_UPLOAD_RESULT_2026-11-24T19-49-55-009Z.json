@@ -1,0 +1,107 @@
+{
+  "ok": true,
+  "dryRun": false,
+  "method": "youtube_data_api_package",
+  "upload": {
+    "published": true,
+    "scheduledOnPlatform": true,
+    "scheduledFor": "2026-11-26T18:00:00.000Z",
+    "platformPostId": "YqCWYlv_LCY",
+    "platformUrl": "https://youtu.be/YqCWYlv_LCY",
+    "message": "Uploaded to YouTube; scheduled to go live at 2026-11-26T18:00:00.000Z; thumbnail set",
+    "responseSummary": "{\"id\":\"YqCWYlv_LCY\",\"privacyStatus\":\"private\",\"publishAt\":\"2026-11-26T18:00:00.000Z\"}"
+  },
+  "package": {
+    "title": "Benjamin Franklin's Kite Experiment Explained",
+    "format": "longform",
+    "privacy": "private",
+    "tagCount": 8,
+    "hasPinnedComment": false,
+    "thumbnailPath": "/tmp/j3500-hos/02_Video-Projects/008_Lightning-Franklin/08_Thumbnail/Selected/hos_008_thumb_A_the_key_sparked_v01.jpg",
+    "scheduledAt": "2026-11-26T18:00:00.000Z",
+    "sources": {
+      "manifest": "/tmp/j3500-hos/02_Video-Projects/008_Lightning-Franklin/11_Upload-Package/PACKAGE_MANIFEST.json",
+      "descriptionFile": "/tmp/j3500-hos/02_Video-Projects/008_Lightning-Franklin/11_Upload-Package/Descriptions/lightning_long_description_v02.txt",
+      "chaptersFile": "/tmp/j3500-hos/02_Video-Projects/008_Lightning-Franklin/11_Upload-Package/Chapters/lightning_long_chapters_v05.txt",
+      "tagsFile": "/tmp/j3500-hos/02_Video-Projects/008_Lightning-Franklin/11_Upload-Package/Tags/lightning_long_tags_v02.txt",
+      "video": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_precheck/master_v05/hos_008_master_v05.mp4",
+      "thumbnail": "/tmp/j3500-hos/02_Video-Projects/008_Lightning-Franklin/08_Thumbnail/Selected/hos_008_thumb_A_the_key_sparked_v01.jpg"
+    }
+  },
+  "postUpload": {
+    "firstCommentPosted": false,
+    "commentMessage": null,
+    "playlistAdded": true,
+    "playlistMessage": "added to playlist"
+  },
+  "buffer": null,
+  "studioFinish": {
+    "videoId": "YqCWYlv_LCY",
+    "studioEditUrl": "https://studio.youtube.com/video/YqCWYlv_LCY/edit",
+    "items": [
+      {
+        "id": "api_metadata",
+        "required": true,
+        "status": "api_done",
+        "title": "Title · description · tags · schedule · video",
+        "detail": "Uploaded via YouTube Data API"
+      },
+      {
+        "id": "primary_thumbnail",
+        "required": true,
+        "status": "api_done",
+        "title": "Primary thumbnail",
+        "detail": "Set via thumbnails.set",
+        "studioUrlHint": "https://studio.youtube.com/video/YqCWYlv_LCY/edit"
+      },
+      {
+        "id": "title_thumb_abc",
+        "required": true,
+        "status": "pending_studio",
+        "title": "Title + thumbnail ABC (Test & Compare)",
+        "detail": "Studio A/B Testing — titles (2) · thumbs (2). Not available via Data API.",
+        "studioUrlHint": "https://studio.youtube.com/video/YqCWYlv_LCY/edit"
+      },
+      {
+        "id": "first_comment",
+        "required": false,
+        "status": "n/a",
+        "title": "First / pinned comment text",
+        "detail": "No pinned comment file in package",
+        "studioUrlHint": "https://studio.youtube.com/video/YqCWYlv_LCY/comments"
+      },
+      {
+        "id": "pin_comment",
+        "required": false,
+        "status": "n/a",
+        "title": "Pin the comment",
+        "detail": "Studio only — no official Data API pin endpoint",
+        "studioUrlHint": "https://studio.youtube.com/video/YqCWYlv_LCY/comments"
+      },
+      {
+        "id": "related_watch_next",
+        "required": false,
+        "status": "n/a",
+        "title": "Related video (full film)",
+        "detail": "Desktop Studio: set Related video to GHZDsiH7L7A (its own full film). No new Short pins.",
+        "studioUrlHint": "https://studio.youtube.com/video/YqCWYlv_LCY/edit"
+      },
+      {
+        "id": "end_screens_cards",
+        "required": true,
+        "status": "pending_studio",
+        "title": "End screen + cards",
+        "detail": "Studio only — subscribe + best next video",
+        "studioUrlHint": "https://studio.youtube.com/video/YqCWYlv_LCY/edit"
+      },
+      {
+        "id": "playlist",
+        "required": false,
+        "status": "api_done",
+        "title": "Add to playlist",
+        "detail": "Added to PLEbpfUzWzcXU"
+      }
+    ],
+    "summary": "API upload done (YqCWYlv_LCY). 2 required Studio finish step(s) remain."
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "videoId": "YqCWYlv_LCY",
+  "title": "Benjamin Franklin's Kite Experiment Explained",
+  "privacy": "private",
+  "publishAt": "2026-11-26T18:00:00Z",
+  "uploadStatus": "uploaded",
+  "language": "en-GB",
+  "audioLanguage": "en-GB",
+  "categoryId": "27",
+  "madeForKids": false,
+  "selfDeclaredMadeForKids": false,
+  "duration": "P0D",
+  "hasCustomThumbnail": true,
+  "tagCount": 8,
+  "captionUpload": {
+    "ok": true,
+    "status": 200,
+    "id": "AUieDaa_2-eGWltbTQyaPmVD796eHrCattzbAxv6l5obfWvlD1M10kbGycXTbv7bIrTt6fVmRX1kTJgToGw",
+    "error": null
+  },
+  "captions": [
+    {
+      "id": "AUieDaa_2-eGWltbTQyaPmVD796eHrCattzbAxv6l5obfWvlD1M10kbGycXTbv7bIrTt6fVmRX1kTJgToGw",
+      "language": "en-GB",
+      "status": "serving",
+      "isDraft": false,
+      "name": "English (United Kingdom)"
+    }
+  ]
+}
