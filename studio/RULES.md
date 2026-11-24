@@ -42,9 +42,9 @@ A stage is done only when its check prints PASS **and the agent pastes that outp
 
 | Stage | Must PASS | Then |
 |---|---|---|
-| Topic | `public_search.py` evidence saved; `neighbours.py` gate PASS (**≥ 3 education videos with 1M+ views** on the topic — TED-Ed, Kurzgesagt, Khan Academy, SciShow, Veritasium, Crash Course, etc.; TED-Ed/TED preferred); title/description/tags use their subject words, never channel names; not a subject that already has a long | Claude and Grok pick on the desk |
-| Long script | `npm run review:script` ≥ 90 and `npm run gate:episode` | Claude signs off on the desk |
-| Every VO take | `vo_check.py` (word diff, loudness, pace, first minute) | Claude reviews; Ben hears it in the final film |
+| Topic | `public_search.py` evidence saved; `neighbours.py` gate PASS (**≥ 3 education videos with 1M+ views** on the topic — TED-Ed, Kurzgesagt, Khan Academy, SciShow, Veritasium, Crash Course, etc.; TED-Ed/TED preferred); title/description/tags use their subject words, never channel names; not a subject that already has a long | Elected Chief (Claude first; Codex, Gemini, then Grok Bot on failover — Ben, 24 Nov 2026) picks on the desk |
+| Long script | `npm run review:script` ≥ 90 and `npm run gate:episode` | Claude (or elected Chief) signs off on the desk |
+| Every VO take | `vo_check.py` (word diff, loudness, pace, first minute) | Claude (or elected Chief) reviews; Ben hears it in the final film |
 | Each Short | `gate_shorts_open.py check` | Ben watches on his phone (final package) |
 | Thumbnails and covers | `style_sheet.py` (new next to live, same format) and `thumb_preview.py` (168×94) | Ben approves (final package) |
 | Before any upload, schedule or Studio metadata change | `npm run lint:package` | Upload private; schedule only after Ben's final OK |
