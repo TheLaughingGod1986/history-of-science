@@ -22,7 +22,7 @@ Those are in `_archive/` for history only. Every rule they held that still appli
 | Slot (UK) | What |
 |---|---|
 | Thu 18:00 | One long, 7–9 min, **normal publish (no Premiere)** |
-| Sat · Fri · Sun · Tue 11:30 | Four Shorts, **16–19 s** (from 19 Nov 2026). Saturday is the go-public-day Short that promotes the new long; Friday, Sunday and Tuesday stay. Friday also supports the new long now that it is public; Sunday and Tuesday promote other films. |
+| Sat · Fri · Sun · Tue 11:30 | Four Shorts, **16–19 s** (from 19 Nov 2026). **Fri and Sat** promote that week's new long (Saturday is the go-public-day Short; Friday supports the long once public); **Sun and Tue** rotate a cluster winner or test next month's candidate topic before it is scripted (search-led plan `hos-search-2027-01`, Ben OK 24 Nov 2026). Every Short title is a search phrase or question. |
 
 - **Table note (Ben, 7 Nov 2026):** Thursday 11:30 was the preferred go-public-day Short (same idea as Orbit's Short on the long's day), but it would publish before the Thu 18:00 long and break "never a Short before its long is public". Saturday 11:30 takes that slot — the next free day that is not already a Short day (Fri · Sun · Tue).
 - Never more than one Short a day. Never a Short before its long is public.
@@ -31,20 +31,30 @@ Those are in `_archive/` for history only. Every rule they held that still appli
 
 ## 2. Pick the topic (before any script)
 
-1. **Use the channel's data:** the latest `audits/weekly/<date>/REPORT.md` and `audits/SHORTS_LOG.md`.
+**Search-led topic method — effective for topics locked from 1 Jan 2027 (Ben, 24 Nov 2026 · `hos-search-2027-01`, `orbit-with-ben` `05_Analytics/LEARNINGS.md` rule 42).**
+> *"History of science. January search-led plan. Yeah, I'll give you okay for that. Please go ahead and start it."* — Ben, 24 Nov 2026 (satisfies `LEARNINGS.md` rule 34 item 7). Daily `hos-ideas` is paused from 24 Nov 2026; weekly cloud research (`hos-search-research`, up to 75 vidIQ credits/run) supplies new candidates. Existing `next_hos` topics stay, but none is locked for 2027 without passing this gate.
+
+It **replaces the 1 Oct 2026 neighbour pass** (≥3 education videos at 1M+ views) as the blocking gate for HOS topics locked from 1 Jan 2027. The neighbour list becomes a **tie-breaker only** (still harvesting subject words for descriptions and tags, never channel names).
+
+1. **DEMAND (weekly).** Run `hos-search-research` (`jobs/backlog.json`, Claude cloud lane, up to 75 vidIQ credits/run → `orbit-with-ben` `05_Analytics/hos/search_research/<date>.md`) across the four clusters and new HOS-lane candidates: vidIQ keyword research (monthly searches, competition, growth, top countries), signed-out US YouTube autocomplete for exact phrasing, and Google Trends seasonality. **Keep 10k–150k searches/month at competition 45 or under.**
+2. **VALUE.** **Anglosphere:** US, UK, Canada, Australia among top markets (reject low-RPM/school-cram traps like `turing machine`, `history of medicine`, `aviation history`, `history of inventions`, `nuclear bomb`). **Adult evergreen intent.** 7–9 min discovery-and-proof fit + series potential; verify US Education RPM proxy (`~$3.42` mid).
+3. **RESULTS-PAGE GAP.** Inspect signed-out US top 10 (age, views, channel size, whether each actually answers the query). Score the gap by count of **old (3+ yr), weak, off-target or small-channel (`<50k`)** results.
+4. **SMALL-CHANNEL PROOF.** vidIQ outliers in the last 12 months from channels **under 50k subscribers** at **5× or more** usual views. **None found = no real opening.**
+5. **PACKAGE FIRST (before any script).** Title starts with the query words plus one hook (**≤50 characters where the query allows**). Score **three titles and two thumbnail ideas** against the outlier set before any script.
+6. **CLUSTERS.** Four Anglosphere adult clusters (no space/Orbit overlap, no combat/Field Order History overlap, no health/vaccines, no pseudo-science): **(1) Electricity & Inventor Rivalries**, **(2) Nuclear & Modern Physics**, **(3) Accidental & World-Changing Inventions**, **(4) Breakthrough & Lost Engineering**, chained by playlists, end screens, and Shorts.
+7. **SHORTS AS TESTS.** **Fri & Sat** Shorts promote that week's long; **Sun & Tue** rotate a cluster winner or test next month's candidate topic before it is scripted (a fed Short with high stayed-to-watch is the cheapest proof for a long). Every Short title is a search phrase or question.
+8. **OUR OWN SEARCH TERMS (monthly).** Read HOS YouTube Analytics search terms and US+UK+CA+AU share. **14-day test bar (vs HOS best long of 162 views):** **500+ views** = keep cluster · **162–499** = one more film · **under 162** = drop or change (always reported with impressions, CTR, and US+UK+CA+AU share). Drop a cluster after ~3 films below the bar.
+
+**Operational checklist (before topic lock):**
+1. **Use the channel's data + weekly research:** read `orbit-with-ben` `05_Analytics/hos/search_research/<latest>.md`, the latest `audits/weekly/<date>/REPORT.md` and `audits/SHORTS_LOG.md`.
 2. **The lane** (`HOS_STRATEGY.md`): a familiar thing, and the moment we found out the truth about it. One person to follow, one room to set it in, one proof.
-3. **Competition check:** run `python3 00_Brand/Channel-Setup/tools/public_search.py "<title>" "<angle>" … --out <film>/11_Upload-Package/evidence_<date>_public_search.json` (YouTube autocomplete + top GB results, no login). If the top five for a phrase are all channels with millions of subscribers, narrow the angle.
-   - **Choosing the title for traction** (27 Sep 2026, HOS 004): the main title is the question the film actually answers, phrased the way people search, with the least big-channel competition. Broad umbrella titles and picture-led titles go into Test & Compare, not the main slot. Never the *How Did We Discover X?* formula.
-4. **Neighbour check (1 Oct 2026, from HOS 002's analytics; bar raised same evening).** A film gets daily views when YouTube suggests it beside a big, evergreen lesson on the same subject. Evidence: **002 had 108 of 126 views from "suggested", 55.6% of them from TED-Ed's *The genius of Mendeleev's periodic table***, the rest from Khan Academy and school lessons. Ben: every future film must be one that can be recommended next to big education videos.
-   - Run `python3 00_Brand/Channel-Setup/tools/neighbours.py "<subject>" "<person or discovery>" --out <film>/11_Upload-Package/evidence_<date>_neighbours.json`. It must print `Neighbour gate … PASS`: **at least 3 education videos with 1M+ views** on the same topic (TED-Ed, Kurzgesagt, Khan Academy, SciShow, Veritasium, Crash Course, etc.). A TED-Ed or TED neighbour in the pool is preferred; a topic that cannot clear the gate is not locked; pick another.
-   - Once the title is chosen, write the contract block: `… neighbours.py … --phrase <subject noun> [--phrase <second>] --manifest <film>/11_Upload-Package/PACKAGE_MANIFEST.json`. Title, description opening and tags use the neighbours' **subject words**, never their channel names. `npm run lint:package` then fails a film from 005 on that drops the phrases or has fewer than 3 neighbours at 1M+ views.
-   - Make the film the natural next video after those neighbours: they explain *what*, we show *how we found out*. Don't repeat their explanation; start where they stop.
-   - **Recorded tables for 001–004** (desk shared truth): `00_Brand/Channel-Setup/audits/NEIGHBOURS_001_004_2026-10-01.md`. Candidate ranking: `audits/neighbours_2026-10-01_candidates/RANKED_TOP5.md`.
-5. **Score it:** `templates/TOPIC_OPPORTUNITY_SCORE.md`.
-6. **Pre-build vidIQ audit:** copy `PRE_BUILD_VIDIQ_AUDIT_TEMPLATE.md` to the project's `11_Upload-Package/PRE_BUILD_VIDIQ_AUDIT.md`. Fill the keyword section from `public_search.py`; vidIQ scores need Ben's login. **Ben may waive vidIQ:** then write "vidIQ waived by Ben, <date>" in the sign-off.
+3. **Competition & collision check:** run `python3 00_Brand/Channel-Setup/tools/public_search.py "<title>" "<angle>" … --out <film>/11_Upload-Package/evidence_<date>_public_search.json` (YouTube autocomplete + collision check, no login). Never the *How Did We Discover X?* formula.
+4. **Neighbour check (tie-breaker only from 1 Jan 2027; was blocking 1 Oct 2026).** Run `python3 00_Brand/Channel-Setup/tools/neighbours.py "<subject>" "<person or discovery>" --out <film>/11_Upload-Package/evidence_<date>_neighbours.json`. Use big education neighbours (≥1M views, TED-Ed/TED preferred) as a tie-breaker and to harvest **subject words only** for description opening and tags (never channel names). For the contract block when building `PACKAGE_MANIFEST.json`, pass `--phrase <subject noun> --manifest <film>/11_Upload-Package/PACKAGE_MANIFEST.json`. Recorded tables for 001–004: `00_Brand/Channel-Setup/audits/NEIGHBOURS_001_004_2026-10-01.md`.
+5. **Score it:** `templates/TOPIC_OPPORTUNITY_SCORE.md` (all 8 search-led fields + package-first 3 titles & 2 thumbs).
+6. **Pre-build vidIQ audit:** copy `PRE_BUILD_VIDIQ_AUDIT_TEMPLATE.md` to the project's `11_Upload-Package/PRE_BUILD_VIDIQ_AUDIT.md`, recording the `hos-search-research` vidIQ metrics, `public_search.py` checks, and package-first scores.
    - **Gate overrides are Ben's alone.** If Ben passes a script under 90 by hand, record it in the audit sign-off ("script passed by hand at NN.N") and in `production-status.md` (Episode gate: passed by Ben, manual). `gate:episode` will still print REJECT on the score; that line is overridden, every other check must be OK.
 7. **Scaffold:** copy `02_Video-Projects/_template_NNN_Episode-Slug/` to `02_Video-Projects/NNN_Slug/`.
-8. **Claude and Grok pick on the desk** (since 2 Oct 2026; Ben gives the final OK on the finished film, §13).
+8. **Rule-E review & Chief lock on the desk** (Ben gives the final OK on the finished film, §13).
 
 ## 3. Script
 
