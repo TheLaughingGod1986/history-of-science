@@ -1,12 +1,20 @@
 # 136 — Trinity Test Explained: Could It Ignite the Sky?
 
-> **SEARCH-LED PLAN FILM 2 (`J3495` · `J3502` GO `96.3/100`, `2026-11-24`):** Cluster 2 (*Nuclear, Quantum & Modern Physics Breakthroughs*) lead film under Ben's approved `hos-search-2027-01` plan (accelerated into December by Ben/Claude on 24 Nov 2026; target air **Thu 17 Dec 2026 18:00 London**, Ben's watch by **Mon 14 Dec**). **Rule-E topic review passed on 24 Nov 2026 (`J3502`, `GO 96.3/100`)**, and follow-on package-first + script draft job **`J3507`** is queued (draft due **Sat 28 Nov 18:00 London**, lock **Fri 4 Dec**). Strictly 3D cartoon laboratory physics (zero combat/WW2 overlap, zero overlap with `HOS:130` nuclear reactor). All claims in `TOPIC.md` remain **UNVERIFIED** pending `SOURCES.md` and the `facts` lane.
+- **Channel:** History of Science (`@HistoryOfScienceYT`, `UCXp7HkBIl1LgaznXuZHJyRg`)
+- **Plan / Cluster:** `hos-search-2027-01` Film 2 · Cluster 2 (Nuclear, Quantum & Modern Physics Breakthroughs)
+- **Target Air Date:** Thu 17 Dec 2026, 18:00 London (7–9 min, normal publish, no Premiere; slides one week if not ready for Ben's watch by Mon 14 Dec)
+- **Status:** Rule-E Topic GO (`J3502`, `96.3/100`) · Package-first scoring, v01 long script, `SOURCES.md`, `FACT_NOTES_v01.md`, `SHORTS_SCRIPTS_v01.md`, and `LAUNCH_PLAN.md` drafted in `J3507` (24 Nov 2026). Awaits independent `facts` lane (`gemini-agy`) and Chief script lock before any VO or picture spend (`£0.00` spent).
 
 ## Key Files
-- [`TOPIC.md`](TOPIC.md): `J3224` search-led evidence (`trinity test` 21.5k/mo comp 38, `manhattan project` 35.2k/mo US 18% + GB 9%, 9/10 US SERP gap, sub-50k outliers 6.1×–172×), overlap audit, package-first titles & `J3502`-corrected thumbnail concepts (`AIR ON FIRE?`, `MEASURED BY PAPER`), 5-part outline, and 16–19 s Shorts plan.
-- [`11_Upload-Package/TOPIC_GO_NO_GO_SHEET.md`](11_Upload-Package/TOPIC_GO_NO_GO_SHEET.md): `J3502` Rule-E + Rule-42 10-gate review sheet (`GO 96.3/100`) and 7 script-stage physics/history/policy guardrails.
-- [`11_Upload-Package/TOPIC_OPPORTUNITY_SCORE.md`](11_Upload-Package/TOPIC_OPPORTUNITY_SCORE.md): Search-led opportunity scorecard (`9.63 / 10` = `96.3 / 100`).
-- [`production-status.md`](production-status.md): stage checklist with pasted `2026-11-24` `neighbours.py` PASS and 10-query `public_search.py` evidence.
-- [`11_Upload-Package/PRE_BUILD_VIDIQ_AUDIT.md`](11_Upload-Package/PRE_BUILD_VIDIQ_AUDIT.md): pre-build search-led audit and package-first scoring.
-- `11_Upload-Package/evidence_2026-11-24_neighbours.json`: `neighbours.py` tie-breaker pull (`PASS`, 8 raw / 5 strictly relevant education videos ≥1M views, `2` `TED-Ed` ★ ≥1M, `TED-Ed/TED: yes`).
-- `11_Upload-Package/evidence_2026-11-24_public_search.json`: `public_search.py` raw pull (`10` queries, `4/4` core phrases `autocomplete = yes`, 0 exact collisions across 3 long titles & 2 Short titles).
+
+| Path | Contents |
+|---|---|
+| `TOPIC.md` | Rule-E topic brief, Cluster 2 demand & gap evidence, guardrails |
+| `11_Upload-Package/PACKAGE_FIRST_SCORING_v01.md` | Package-first title A/B/C & thumbnail A/B scoring + S01/S02 Shorts titles |
+| `11_Upload-Package/PRE_BUILD_VIDIQ_AUDIT.md` | Pre-build vidIQ + live autocomplete & collision audit |
+| `11_Upload-Package/LAUNCH_PLAN.md` | Release calendar, Test & Compare arms, description blueprint, 14-day test bar |
+| `01_Script/trinity_test_explained_script_master_v01.md` | 5-part 7–9 min v01 narration script (`review:script` ≥ 90, `gate:episode` PASS) |
+| `01_Script/SOURCES.md` | Primary & authoritative references + ready description `Sources:` line |
+| `01_Script/FACT_NOTES_v01.md` | 20 verified claims with verbatim quotes & open URLs (all 7 `J3502` guardrails resolved) |
+| `10_Shorts/SHORTS_SCRIPTS_v01.md` | Two standalone 16–19 s search-question Shorts (Ben 19 Nov 3D cartoon house rules) |
+| `status.json` & `production-status.md` | Live film status board & pasted gate outputs |
