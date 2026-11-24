@@ -3,7 +3,7 @@
   "title": "How Isaac Newton Proved Gravity Using the Moon",
   "air": "2026-12-03",
   "ready_by": "2026-12-03",
-  "summary": "J3501: Gravity long wiyfRnsTfTY private, scheduled 3 Dec 18:00 London. Shorts OhdDVA9kWBk / 9ETHUOUH5-A private, scheduled 4 / 5 Dec 11:30 London. Ben approvals reconciled. API thumbs set, captions submitted, playlist added; Studio T&C, end screen/cards, Related and cover verification held on HOS Studio sign-in.",
+  "summary": "J3501: Gravity long wiyfRnsTfTY private, scheduled 3 Dec 18:00 London. Shorts OhdDVA9kWBk / 9ETHUOUH5-A private, scheduled 4 / 5 Dec 11:30 London. Ben approvals reconciled. API thumbs set, captions submitted, playlist added; Studio T&C, end screen/cards, Related and cover verification pending Studio access.",
   "stages": {
     "topic": {
       "state": "done"
@@ -110,9 +110,9 @@
       ],
       "steps_unit": "delivery steps",
       "waiting": "Studio access prerequisite recorded in local handoff. API deliveries complete.",
-      "note": "J3501: Gravity long wiyfRnsTfTY private, scheduled 3 Dec 18:00 London. Shorts OhdDVA9kWBk / 9ETHUOUH5-A private, scheduled 4 / 5 Dec 11:30 London. Ben approvals reconciled. API thumbs set, captions submitted, playlist added; Studio T&C, end screen/cards, Related and cover verification held on HOS Studio sign-in."
+      "note": "J3501: Gravity long wiyfRnsTfTY private, scheduled 3 Dec 18:00 London. Shorts OhdDVA9kWBk / 9ETHUOUH5-A private, scheduled 4 / 5 Dec 11:30 London. Ben approvals reconciled. API thumbs set, captions submitted, playlist added; Studio T&C, end screen/cards, Related and cover verification pending Studio access."
     }
   },
   "claims": [],
-  "next": "Finish existing uploads in Studio after HOS sign-in: A/B title+thumbnail test, end screen/cards, Related and covers. Never upload these cuts again."
+  "next": "Finish existing uploads in Studio once Studio access is available: A/B title+thumbnail test, end screen/cards, Related and covers. Never upload these cuts again."
 }
