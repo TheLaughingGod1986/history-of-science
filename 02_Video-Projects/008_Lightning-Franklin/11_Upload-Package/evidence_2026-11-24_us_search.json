@@ -1,0 +1,630 @@
+{
+  "pulled": "2026-11-24",
+  "region": "US",
+  "source": "Signed-out YouTube US autocomplete and top-10 search results (hl=en&gl=US)",
+  "queries": {
+    "benjamin franklin kite experiment": {
+      "suggest": [
+        "benjamin franklin kite experiment",
+        "benjamin franklin kite experiment animation",
+        "benjamin franklin kite experiment in hindi",
+        "benjamin franklin kite experiment in tamil",
+        "benjamin franklin kite experiment explanation",
+        "benjamin franklin kite experiment in urdu",
+        "ben franklin kite experiment",
+        "benjamin franklin kite flying experiment",
+        "ben franklin key and kite experiment",
+        "write about benjamin franklin and his kite experiment with poster"
+      ],
+      "search": [
+        {
+          "id": "f0oc4gUCOQI",
+          "title": "The TRUE Story of Ben Franklin & His Kite",
+          "channel": "Be Smart",
+          "views": "696,548 views",
+          "age": "6y ago",
+          "length": "9:26"
+        },
+        {
+          "id": "qxWI2MGT6Co",
+          "title": "Who Discovered Electricity? | Greatest Discovery of All Time | Benjamin Franklin Kite Experiment",
+          "channel": "Peekaboo Kidz",
+          "views": "1,680,724 views",
+          "age": "2y ago",
+          "length": "5:51"
+        },
+        {
+          "id": "z_FxvQPRkAs",
+          "title": "Benjamin Franklin’s Kite Experiment and the Birth of Electricity",
+          "channel": "Quick History",
+          "views": "15,105 views",
+          "age": "2y ago",
+          "length": "2:37"
+        },
+        {
+          "id": "g5mzFb2hhHY",
+          "title": "Web Originals : Ask History: Ben Franklin and his Kite | History",
+          "channel": "HISTORY",
+          "views": "165,264 views",
+          "age": "13y ago",
+          "length": "2:36"
+        },
+        {
+          "id": "rriVOlbw8Tg",
+          "title": "Benjamin Franklin for Kids – Ben Franklin Kite Experiment – Electricity for Kids",
+          "channel": "Socratica Kids",
+          "views": "285,506 views",
+          "age": "9y ago",
+          "length": "4:18"
+        },
+        {
+          "id": "IZBVeNjBNi8",
+          "title": "Ben Franklin and His Electrifying Kite Flight!",
+          "channel": "Bald Beagle",
+          "views": "19,254 views",
+          "age": "4y ago",
+          "length": "7:31"
+        },
+        {
+          "id": "w0GWaCU7lxA",
+          "title": "Ben Franklin -  Kite Experiment",
+          "channel": "Random Renders",
+          "views": "3,544 views",
+          "age": "1y ago",
+          "length": "1:05"
+        },
+        {
+          "id": "8XK_QgH4jpQ",
+          "title": "Scientific error: rethinking Benjamin Franklin’s kite experiment | Cosmos Briefing #science",
+          "channel": "ConnectSci News",
+          "views": "7,693 views",
+          "age": "3y ago",
+          "length": "3:04"
+        },
+        {
+          "id": "RidvUkoNk3c",
+          "title": "Kite Experiment - Benjamin Franklin's Kite Experiment",
+          "channel": "𝐁𝐘𝐨𝐮",
+          "views": "34,959 views",
+          "age": "5y ago",
+          "length": "2:04"
+        },
+        {
+          "id": "RGK6nlE6hw0",
+          "title": "Discovery of Electricity - History of Electricity: Benjamin Franklin's Kite Experiment",
+          "channel": "𝐁𝐘𝐨𝐮",
+          "views": "110,535 views",
+          "age": "6y ago",
+          "length": "3:19"
+        }
+      ]
+    },
+    "benjamin franklin kite": {
+      "suggest": [
+        "benjamin franklin kite experiment",
+        "benjamin franklin kite",
+        "benjamin franklin kite experiment animation",
+        "benjamin franklin kite and key experiment",
+        "benjamin franklin kite story",
+        "benjamin franklin kite experiment in hindi",
+        "benjamin franklin kite experiment in tamil",
+        "benjamin franklin kite experiment explanation",
+        "benjamin franklin kite experiment in urdu",
+        "benjamin franklin kite flying experiment"
+      ],
+      "search": [
+        {
+          "id": "f0oc4gUCOQI",
+          "title": "The TRUE Story of Ben Franklin & His Kite",
+          "channel": "Be Smart",
+          "views": "696,551 views",
+          "age": "6y ago",
+          "length": "9:26"
+        },
+        {
+          "id": "z_FxvQPRkAs",
+          "title": "Benjamin Franklin’s Kite Experiment and the Birth of Electricity",
+          "channel": "Quick History",
+          "views": "15,106 views",
+          "age": "2y ago",
+          "length": "2:37"
+        },
+        {
+          "id": "g5mzFb2hhHY",
+          "title": "Web Originals : Ask History: Ben Franklin and his Kite | History",
+          "channel": "HISTORY",
+          "views": "165,263 views",
+          "age": "13y ago",
+          "length": "2:36"
+        },
+        {
+          "id": "qxWI2MGT6Co",
+          "title": "Who Discovered Electricity? | Greatest Discovery of All Time | Benjamin Franklin Kite Experiment",
+          "channel": "Peekaboo Kidz",
+          "views": "1,680,730 views",
+          "age": "2y ago",
+          "length": "5:51"
+        },
+        {
+          "id": "rriVOlbw8Tg",
+          "title": "Benjamin Franklin for Kids – Ben Franklin Kite Experiment – Electricity for Kids",
+          "channel": "Socratica Kids",
+          "views": "285,506 views",
+          "age": "9y ago",
+          "length": "4:18"
+        },
+        {
+          "id": "ISRl3WEuU-s",
+          "title": "Did Lightning Strike Benjamin Franklin's Kite? | MythBusters | Discovery",
+          "channel": "Discovery",
+          "views": "138,871 views",
+          "age": "2y ago",
+          "length": "15:36"
+        },
+        {
+          "id": "w0GWaCU7lxA",
+          "title": "Ben Franklin -  Kite Experiment",
+          "channel": "Random Renders",
+          "views": "3,544 views",
+          "age": "1y ago",
+          "length": "1:05"
+        },
+        {
+          "id": "8XK_QgH4jpQ",
+          "title": "Scientific error: rethinking Benjamin Franklin’s kite experiment | Cosmos Briefing #science",
+          "channel": "ConnectSci News",
+          "views": "7,693 views",
+          "age": "3y ago",
+          "length": "3:04"
+        },
+        {
+          "id": "DRDZ4Kv4Dm8",
+          "title": "The amazing story of electricity and Benjamin Franklin.",
+          "channel": "Histo TV Kids",
+          "views": "728 views",
+          "age": "1y ago",
+          "length": "3:22"
+        },
+        {
+          "id": "BKgHaq8_9aU",
+          "title": "Did Benjamin Franklin Discover Electricity Through A Kite? | MythBusters | S3 E8 | Full Episode",
+          "channel": "MythBusters",
+          "views": "98,890 views",
+          "age": "1y ago",
+          "length": "50:23"
+        }
+      ]
+    },
+    "benjamin franklin lightning": {
+      "suggest": [
+        "benjamin franklin lightning experiment",
+        "benjamin franklin lightning rod",
+        "benjamin franklin lightning rod experiment",
+        "benjamin franklin lightning",
+        "benjamin franklin captured lightning"
+      ],
+      "search": [
+        {
+          "id": "f0oc4gUCOQI",
+          "title": "The TRUE Story of Ben Franklin & His Kite",
+          "channel": "Be Smart",
+          "views": "696,551 views",
+          "age": "6y ago",
+          "length": "9:26"
+        },
+        {
+          "id": "g5mzFb2hhHY",
+          "title": "Web Originals : Ask History: Ben Franklin and his Kite | History",
+          "channel": "HISTORY",
+          "views": "165,263 views",
+          "age": "13y ago",
+          "length": "2:36"
+        },
+        {
+          "id": "z_FxvQPRkAs",
+          "title": "Benjamin Franklin’s Kite Experiment and the Birth of Electricity",
+          "channel": "Quick History",
+          "views": "15,106 views",
+          "age": "2y ago",
+          "length": "2:37"
+        },
+        {
+          "id": "ISRl3WEuU-s",
+          "title": "Did Lightning Strike Benjamin Franklin's Kite? | MythBusters | Discovery",
+          "channel": "Discovery",
+          "views": "138,871 views",
+          "age": "2y ago",
+          "length": "15:36"
+        },
+        {
+          "id": "rriVOlbw8Tg",
+          "title": "Benjamin Franklin for Kids – Ben Franklin Kite Experiment – Electricity for Kids",
+          "channel": "Socratica Kids",
+          "views": "285,506 views",
+          "age": "9y ago",
+          "length": "4:18"
+        },
+        {
+          "id": "qxWI2MGT6Co",
+          "title": "Who Discovered Electricity? | Greatest Discovery of All Time | Benjamin Franklin Kite Experiment",
+          "channel": "Peekaboo Kidz",
+          "views": "1,680,730 views",
+          "age": "2y ago",
+          "length": "5:51"
+        },
+        {
+          "id": "DRDZ4Kv4Dm8",
+          "title": "The amazing story of electricity and Benjamin Franklin.",
+          "channel": "Histo TV Kids",
+          "views": "728 views",
+          "age": "1y ago",
+          "length": "3:22"
+        },
+        {
+          "id": "2ejWiE7p-qc",
+          "title": "Centuries later, Ben Franklin's lightning rod still helping scientists understand climate change",
+          "channel": "CBS Philadelphia",
+          "views": "209 views",
+          "age": "5mo ago",
+          "length": "1:36"
+        },
+        {
+          "id": "RidvUkoNk3c",
+          "title": "Kite Experiment - Benjamin Franklin's Kite Experiment",
+          "channel": "𝐁𝐘𝐨𝐮",
+          "views": "34,959 views",
+          "age": "5y ago",
+          "length": "2:04"
+        }
+      ]
+    },
+    "benjamin franklin lightning rod": {
+      "suggest": [
+        "benjamin franklin lightning rod",
+        "benjamin franklin lightning rod experiment"
+      ],
+      "search": [
+        {
+          "id": "f0oc4gUCOQI",
+          "title": "The TRUE Story of Ben Franklin & His Kite",
+          "channel": "Be Smart",
+          "views": "696,558 views",
+          "age": "6y ago",
+          "length": "9:26"
+        },
+        {
+          "id": "z_FxvQPRkAs",
+          "title": "Benjamin Franklin’s Kite Experiment and the Birth of Electricity",
+          "channel": "Quick History",
+          "views": "15,106 views",
+          "age": "2y ago",
+          "length": "2:37"
+        },
+        {
+          "id": "2ejWiE7p-qc",
+          "title": "Centuries later, Ben Franklin's lightning rod still helping scientists understand climate change",
+          "channel": "CBS Philadelphia",
+          "views": "209 views",
+          "age": "5mo ago",
+          "length": "1:36"
+        },
+        {
+          "id": "g5mzFb2hhHY",
+          "title": "Web Originals : Ask History: Ben Franklin and his Kite | History",
+          "channel": "HISTORY",
+          "views": "165,262 views",
+          "age": "13y ago",
+          "length": "2:36"
+        },
+        {
+          "id": "qxWI2MGT6Co",
+          "title": "Who Discovered Electricity? | Greatest Discovery of All Time | Benjamin Franklin Kite Experiment",
+          "channel": "Peekaboo Kidz",
+          "views": "1,680,643 views",
+          "age": "2y ago",
+          "length": "5:51"
+        },
+        {
+          "id": "rriVOlbw8Tg",
+          "title": "Benjamin Franklin for Kids – Ben Franklin Kite Experiment – Electricity for Kids",
+          "channel": "Socratica Kids",
+          "views": "285,506 views",
+          "age": "9y ago",
+          "length": "4:18"
+        },
+        {
+          "id": "DRDZ4Kv4Dm8",
+          "title": "The amazing story of electricity and Benjamin Franklin.",
+          "channel": "Histo TV Kids",
+          "views": "728 views",
+          "age": "1y ago",
+          "length": "3:22"
+        },
+        {
+          "id": "xgpI3Fpzv-Q",
+          "title": "Benjamin Franklin's Lightning Rod: The Political War",
+          "channel": "Silicon Stories",
+          "views": "25 views",
+          "age": "3mo ago",
+          "length": "12:46"
+        },
+        {
+          "id": "YN-4AAEXvm0",
+          "title": "Invention of Lightning Rod #inventions #history #great #lightningrod #benjaminfranklin",
+          "channel": "TechnoPREMI",
+          "views": "1,608 views",
+          "age": "1y ago",
+          "length": "1:24"
+        }
+      ]
+    },
+    "benjamin franklin kite experiment explained": {
+      "suggest": [
+        "benjamin franklin kite experiment explanation"
+      ],
+      "search": [
+        {
+          "id": "z_FxvQPRkAs",
+          "title": "Benjamin Franklin’s Kite Experiment and the Birth of Electricity",
+          "channel": "Quick History",
+          "views": "15,106 views",
+          "age": "2y ago",
+          "length": "2:37"
+        },
+        {
+          "id": "qxWI2MGT6Co",
+          "title": "Who Discovered Electricity? | Greatest Discovery of All Time | Benjamin Franklin Kite Experiment",
+          "channel": "Peekaboo Kidz",
+          "views": "1,680,730 views",
+          "age": "2y ago",
+          "length": "5:51"
+        },
+        {
+          "id": "f0oc4gUCOQI",
+          "title": "The TRUE Story of Ben Franklin & His Kite",
+          "channel": "Be Smart",
+          "views": "696,551 views",
+          "age": "6y ago",
+          "length": "9:26"
+        },
+        {
+          "id": "g5mzFb2hhHY",
+          "title": "Web Originals : Ask History: Ben Franklin and his Kite | History",
+          "channel": "HISTORY",
+          "views": "165,263 views",
+          "age": "13y ago",
+          "length": "2:36"
+        },
+        {
+          "id": "rriVOlbw8Tg",
+          "title": "Benjamin Franklin for Kids – Ben Franklin Kite Experiment – Electricity for Kids",
+          "channel": "Socratica Kids",
+          "views": "285,506 views",
+          "age": "9y ago",
+          "length": "4:18"
+        },
+        {
+          "id": "8XK_QgH4jpQ",
+          "title": "Scientific error: rethinking Benjamin Franklin’s kite experiment | Cosmos Briefing #science",
+          "channel": "ConnectSci News",
+          "views": "7,693 views",
+          "age": "3y ago",
+          "length": "3:04"
+        },
+        {
+          "id": "DRDZ4Kv4Dm8",
+          "title": "The amazing story of electricity and Benjamin Franklin.",
+          "channel": "Histo TV Kids",
+          "views": "728 views",
+          "age": "1y ago",
+          "length": "3:22"
+        },
+        {
+          "id": "w0GWaCU7lxA",
+          "title": "Ben Franklin -  Kite Experiment",
+          "channel": "Random Renders",
+          "views": "3,544 views",
+          "age": "1y ago",
+          "length": "1:05"
+        },
+        {
+          "id": "IZBVeNjBNi8",
+          "title": "Ben Franklin and His Electrifying Kite Flight!",
+          "channel": "Bald Beagle",
+          "views": "19,254 views",
+          "age": "4y ago",
+          "length": "7:31"
+        },
+        {
+          "id": "ISRl3WEuU-s",
+          "title": "Did Lightning Strike Benjamin Franklin's Kite? | MythBusters | Discovery",
+          "channel": "Discovery",
+          "views": "138,871 views",
+          "age": "2y ago",
+          "length": "15:36"
+        }
+      ]
+    },
+    "did benjamin franklin really fly a kite": {
+      "suggest": [],
+      "search": [
+        {
+          "id": "f0oc4gUCOQI",
+          "title": "The TRUE Story of Ben Franklin & His Kite",
+          "channel": "Be Smart",
+          "views": "696,558 views",
+          "age": "6y ago",
+          "length": "9:26"
+        },
+        {
+          "id": "z_FxvQPRkAs",
+          "title": "Benjamin Franklin’s Kite Experiment and the Birth of Electricity",
+          "channel": "Quick History",
+          "views": "15,106 views",
+          "age": "2y ago",
+          "length": "2:37"
+        },
+        {
+          "id": "qxWI2MGT6Co",
+          "title": "Who Discovered Electricity? | Greatest Discovery of All Time | Benjamin Franklin Kite Experiment",
+          "channel": "Peekaboo Kidz",
+          "views": "1,680,719 views",
+          "age": "2y ago",
+          "length": "5:51"
+        },
+        {
+          "id": "ISRl3WEuU-s",
+          "title": "Did Lightning Strike Benjamin Franklin's Kite? | MythBusters | Discovery",
+          "channel": "Discovery",
+          "views": "138,873 views",
+          "age": "2y ago",
+          "length": "15:36"
+        },
+        {
+          "id": "g5mzFb2hhHY",
+          "title": "Web Originals : Ask History: Ben Franklin and his Kite | History",
+          "channel": "HISTORY",
+          "views": "165,262 views",
+          "age": "13y ago",
+          "length": "2:36"
+        },
+        {
+          "id": "BKgHaq8_9aU",
+          "title": "Did Benjamin Franklin Discover Electricity Through A Kite? | MythBusters | S3 E8 | Full Episode",
+          "channel": "MythBusters",
+          "views": "98,890 views",
+          "age": "1y ago",
+          "length": "50:23"
+        },
+        {
+          "id": "rriVOlbw8Tg",
+          "title": "Benjamin Franklin for Kids – Ben Franklin Kite Experiment – Electricity for Kids",
+          "channel": "Socratica Kids",
+          "views": "285,506 views",
+          "age": "9y ago",
+          "length": "4:18"
+        },
+        {
+          "id": "pTv6ehnJNGg",
+          "title": "Did Benjamin Franklin Really Fly a Kite in a Thunderstorm?",
+          "channel": "Patriot Insider",
+          "views": "171 views",
+          "age": "1y ago",
+          "length": "11:34"
+        },
+        {
+          "id": "Zf5giuGCzvA",
+          "title": "Did Ben Franklin really fly the Kite?",
+          "channel": "AlMartinez1905",
+          "views": "777 views",
+          "age": "13y ago",
+          "length": "15:14"
+        },
+        {
+          "id": "cZj40MRliag",
+          "title": "Ben Franklin's Kite! - MythBusters",
+          "channel": "Banijay Science",
+          "views": "15,515 views",
+          "age": "2y ago",
+          "length": "50:03"
+        }
+      ]
+    },
+    "benjamin franklin": {
+      "suggest": [
+        "benjamin franklin",
+        "benjamin franklin high school",
+        "benjamin franklin for kids",
+        "benjamin franklin documentary",
+        "benjamin franklin biography",
+        "benjamin franklin instrument",
+        "benjamin franklin elementary school",
+        "benjamin franklin effect",
+        "benjamin franklin song",
+        "benjamin franklin john adams"
+      ],
+      "search": [
+        {
+          "id": "QiT73rvnxog",
+          "title": "Who Is Benjamin Franklin? | Learn about the life and accomplishments of Ben Franklin",
+          "channel": "Learn Bright",
+          "views": "316,790 views",
+          "age": "4y ago",
+          "length": "7:59"
+        },
+        {
+          "id": "Lj-M205pCps",
+          "title": "Benjamin Franklin Founding Father of a Nation Documentary",
+          "channel": "The People Profiles",
+          "views": "1,810,067 views",
+          "age": "4y ago",
+          "length": "1:02:35"
+        },
+        {
+          "id": "Ho4Ym6rzfoo",
+          "title": "The Story of America: Benjamin Franklin",
+          "channel": "The White House",
+          "views": "155,017 views",
+          "age": "6mo ago",
+          "length": "14:47"
+        },
+        {
+          "id": "f0oc4gUCOQI",
+          "title": "The TRUE Story of Ben Franklin & His Kite",
+          "channel": "Be Smart",
+          "views": "696,558 views",
+          "age": "6y ago",
+          "length": "9:26"
+        },
+        {
+          "id": "aJhBtd8QA_4",
+          "title": "Benjamin Franklin For Kids | Bedtime History",
+          "channel": "Bedtime History",
+          "views": "287,696 views",
+          "age": "8y ago",
+          "length": "9:13"
+        },
+        {
+          "id": "P-PhBWov_rw",
+          "title": "Who was Benjamin Franklin?",
+          "channel": "Untold History",
+          "views": "24,590 views",
+          "age": "3y ago",
+          "length": "2:11"
+        },
+        {
+          "id": "yZ8OlsW1XSo",
+          "title": "Benjamin Franklin: The Founding Father Who Was More British Than American | Founding Fathers",
+          "channel": "The Rest Is History",
+          "views": "244,749 views",
+          "age": "4mo ago",
+          "length": "1:10:49"
+        },
+        {
+          "id": "destZtxNdDE",
+          "title": "14 Facts About Benjamin Franklin | America's Most Eccentric Founding Father",
+          "channel": "Weird History",
+          "views": "1,242,538 views",
+          "age": "6y ago",
+          "length": "12:17"
+        },
+        {
+          "id": "7VwLF8rnwK8",
+          "title": "Benjamin Franklin (2002) - PBS Documentary",
+          "channel": "UnlimitedHistoryDocs",
+          "views": "853,039 views",
+          "age": "6y ago",
+          "length": "3:13:56"
+        },
+        {
+          "id": "7XG_60eB6NM",
+          "title": "Benjamin Franklin: America's Most Influential Founding Father?",
+          "channel": "The American Story - US History Documentaries",
+          "views": "110,134 views",
+          "age": "2y ago",
+          "length": "1:00:12"
+        }
+      ]
+    }
+  }
+}

@@ -394,3 +394,49 @@ SFX level PASS: VO -20.7 LUFS, SFX -50.6 LUFS, 1 hits
 Published board verification: `board_check.py --no-post` PASS (site HTTP 200, 6 expected cards, no problems). J2699 card `HOS:ASK:J2699` is in ready, readyFor Ben, Play HTTP 302; streamed destination HTTP 200 and matching hash. See `10_Shorts/J2699/BOARD_CHECK.json`.
 
 Repository verification: `check_all.sh 02_Video-Projects/008_Lightning-Franklin` — ALL CHECKS PASS (existing node_modules reused, task-local npm cache). No product code or media changed.
+
+
+## 24 November 2026 — J3500 Search-led title, v05 upload package, captions & £0 A/B thumbnails (MacBook worker)
+
+- **Scope & guards:** Steps 1–2 of `J3500` completed at `£0` (no change to master `v05`, no Flow/Vertex/ElevenLabs spend, no YouTube/Studio upload or schedule changes from MacBook; Step 3 YouTube upload & Thu 26 Nov 18:00 London schedule handed off to Mini/Chief after PR merge).
+- **Ben watch OKs verified (`https://board.oppti.dev/api/checks`, 24 Nov 2026):**
+  - Long `v05` (`hos_008_master_v05.mp4`, SHA-256 `d1ffb78dfc3d77519b5f37dfbddeec2f7802fa2d79e58b4524be31551a67841b`): **OK** `2026-11-16T15:24:18.694Z` (`HOS-008`, `J2243`; recorded via `jobs.py approved J3500 --from J2243 --ok-at "2026-11-16 15:24"`).
+  - Short A `v04` (`hos_008_short_A_v04.mp4`, SHA-256 `76d801a34714ba90f286330dfab1c9e38b3025502340f20c8e414a8907a3192d`): **OK** `2026-11-12T14:45:41.693Z` (`HOS-J2699`).
+  - Short C `v07` (`hos_008_short_C_v07.mp4`): **OK** `2026-11-18T11:31:40.230Z` (`HOS-J2984`).
+- **Step 1 — Search-led title (`11_Upload-Package/evidence_2026-11-24_us_search.json`):**
+  - **Primary (Side A):** `Benjamin Franklin's Kite Experiment Explained` (`45` chars ≤ `50`; starts with `"Benjamin Franklin"` [vidIQ 74,407/mo, US top-3 market 17%, +52%] and US autocomplete #1 `"benjamin franklin kite experiment"`; US top-10 gap confirmed: mostly 4–13 yr old, kids channels, or 1–3 min summaries; 0 HOS collisions across 70 channel videos).
+  - **Test & Compare Side B:** `Why Did Franklin Fly a Kite in a Storm?` (`39` chars; film's existing title retained as T&C arm, replacing the old `"How Does a Lightning Rod Work?"` arm that collided with Short C).
+- **Step 2 — Package ready (`11_Upload-Package/` & `08_Thumbnail/`):**
+  - **Description (`Descriptions/lightning_long_description_v02.txt`):** Search-led opening, Watch next links (`GHZDsiH7L7A`, `AL_-qlWko_g`), **v05-verified Chapters** (`0:00`, `1:40`, `3:08`, `5:19`, `6:49` confirmed directly via `faster-whisper small.en` on `hos_008_master_v05.mp4` audio: `0.00 s`, `100.62 s`, `188.50 s`, `320.00 s`, `410.22 s`), J1265 `Sources` block (7 citations from `FACT_NOTES_v01.md`), honest AI production line, and channel sign-off.
+  - **Captions (`Captions/hos_008_master_v05.en.srt`, `sha256: e31eba98392da6e0994eb290406a452eabe1242adb6e94b6eb99f55cc22e2bf2`):** `143` `en-GB` cues (`00:00:00,000 → 00:08:59,576`, `98.2%` token alignment directly on `hos_008_master_v05.mp4`), built by `07_Edit-Project/_build_captions_v05.py`.
+  - **Tags (`Tags/lightning_long_tags_v02.txt`):** 8 subject-only tags (`benjamin franklin kite experiment`, `benjamin franklin`, `benjamin franklin kite`, `benjamin franklin lightning`, `lightning rod`, `how does a lightning rod work`, `electricity history`, `history of science`).
+  - **Thumbnails A & B (£0, `08_Thumbnail/_compose_hos_008_thumbs_v01.py`, `THUMBS_INDEX_v01.json`):** Built from clean unlabelled `hos_008_master_v05.mp4` painted 3D frames in the HOS house Georgia bold serif (cream + gold punch word + gold scroll flourishes), verified with `thumb_preview.py` (`168×94`) and `style_sheet.py`, and copied to NAS (`08_Thumbnail/Selected/`) with matching SHA-256:
+    - **A:** `Selected/hos_008_thumb_A_the_key_sparked_v01.jpg` (`THE / KEY / SPARKED`, gold `SPARKED`, `t=4.20 s`, SHA-256 `9127de8a2bf2248d8d8d4f5fdbf757f24a0b8d5bf8ad27863ca19dfc6cad5a19`) — `clearOfHero=True`, `clearOfBadge=True`.
+    - **B:** `Selected/hos_008_thumb_B_no_bolt_struck_v01.jpg` (`NO / BOLT / STRUCK`, gold `STRUCK`, `t=290.50 s`, SHA-256 `457e5ce16ac198d58c14493b6e46152d2b6dd1a2913279c2e063eeaa88de9126`) — `clearOfHero=True`, `clearOfBadge=True`.
+    - Combined family sheet: `Selected/hos_008_thumbs_AB_v01_style_sheet.jpg` (SHA-256 `734deaf84544c7e86452f985f9a946499faf065e43414527261027ea874d1964`).
+  - **Schedule & Shorts handoff (`LAUNCH_PLAN.md`, `PACKAGE_MANIFEST.json`):** Long `v05` targets **Thu 26 Nov 2026 18:00 London** (`2026-11-26T18:00:00.000Z`, Private until publish, no Premiere, end screen to HOS playlist + Subscribe, Title+Thumb T&C with search-led Title A as side A). Free Short slots after long: Short A `v04` **Fri 27 Nov 11:30 London**; Short C `v07` **Sun 29 Nov 11:30 London** (007 `sY0PSQFxjp8` holds Sat 28 Nov; `jkUZpyO71lU` was unscheduled on 19 Nov; take Tue 1 Dec if live Studio still holds Sun 29 Nov — never move anything scheduled).
+
+### Verification outputs (24 Nov 2026)
+
+```text
+> content-ops@0.1.0 lint:package
+> tsx scripts/package-lint.ts --film 008
+
+PASS  02_Video-Projects/008_Lightning-Franklin/11_Upload-Package/PACKAGE_MANIFEST.json
+```
+
+```text
+-- durable desk handoffs: PASS
+-- email ratchet: PASS
+-- no media: PASS
+-- status board in sync: PASS
+-- ElevenLabs guard tests: PASS
+-- vo_check word tests: PASS
+-- atempo check tests: PASS
+-- voice speed (atempo <= 1.06): PASS
+-- contract tests: PASS
+-- package-lint: PASS
+-- review:script lightning_script_master_v01.md: PASS
+-- gate:episode: PASS
+ALL CHECKS PASS
+```

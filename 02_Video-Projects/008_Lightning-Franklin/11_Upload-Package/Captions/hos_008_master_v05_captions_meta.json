@@ -1,0 +1,20 @@
+{
+  "srt": "hos_008_master_v05.en.srt",
+  "sha256": "e31eba98392da6e0994eb290406a452eabe1242adb6e94b6eb99f55cc22e2bf2",
+  "language": "en-GB",
+  "master": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_precheck/master_v05/hos_008_master_v05.mp4",
+  "master_sha256": "d1ffb78dfc3d77519b5f37dfbddeec2f7802fa2d79e58b4524be31551a67841b",
+  "audio_packet_sha256": "1a4b59543c66851f8853bacb4a902642ae7cb26653fa7cabecaf3dcf770f1f69",
+  "audio_note": "Aligned directly to hos_008_master_v05.mp4 audio via faster-whisper small.en; canonical British English text from 01_Script/lightning_script_master_v01.md via VO_RETIME_v01.json",
+  "source_text": "01_Script/lightning_script_master_v01.md via 07_Edit-Project/VO_RETIME_v01.json",
+  "token_match_pct": 98.17,
+  "cues": 143,
+  "first": "00:00:00,000",
+  "last_end": "00:08:59,576",
+  "chapter_starts_s": [
+    100.251,
+    187.952,
+    319.004,
+    408.964
+  ]
+}
