@@ -1,0 +1,45 @@
+{
+  "film": "135",
+  "title": "What Is Entropy? (Boltzmann's Gravestone Equation)",
+  "summary": "Rule-E topic go/no-go review PASS in J3460 (2026-11-24, macbook-2): GO (95.4/100, 9.54/10 Opportunity Score) pre-cleared in jobs/WIP.json next_hos under Rule G (4/4 active HOS slots full: 008, 009, 010, 013). Second Law & arrow-of-time discovery story (distinct from ideas/024 First Law: Carnot 1824 steam-engine limit, Clausius 1865 coining of Entropie, Boltzmann 1877 statistical microstate law S = k log W, Perrin 1908 Brownian-motion vindication). neighbours.py PASS (7 raw / 6 strictly on-topic edu videos >=1M: Veritasium 31.70M, TED-Ed 5.09M & 1.40M, CrashCourse 2.05M & 2.03M, PBS Space Time 1.27M; plus adjacent Khan Academy Enthalpy 1.56M); public_search.py 4/5 core phrases autocomplete=yes + 1 related, 0 exact/near collisions (J3460 fixed Thumb A §2.5 cross-arm repeat to 'CAN'T GO BACK', populated PRE_BUILD_VIDIQ_AUDIT.md at £0, corrected Science Retold title, and logged 7 script-stage precision/policy guardrails). All claims UNVERIFIED pending open WIP slot, SOURCES.md verbatim quotes, and facts lane.",
+  "stages": {
+    "topic": {
+      "state": "todo"
+    },
+    "script": {
+      "state": "todo"
+    },
+    "facts": {
+      "state": "todo"
+    },
+    "package": {
+      "state": "todo"
+    },
+    "vo": {
+      "state": "todo"
+    },
+    "shorts_scripts": {
+      "state": "todo"
+    },
+    "shorts_vo": {
+      "state": "todo"
+    },
+    "picture": {
+      "state": "todo"
+    },
+    "edit": {
+      "state": "todo"
+    },
+    "thumbnails": {
+      "state": "todo"
+    },
+    "ben_ok": {
+      "state": "todo"
+    },
+    "scheduled": {
+      "state": "todo"
+    }
+  },
+  "claims": [],
+  "next": ""
+}
