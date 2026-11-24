@@ -1,9 +1,9 @@
 {
   "film": "009",
-  "title": "Why Doesn't the Moon Fall to Earth?",
-  "air": "2026-11-26",
-  "ready_by": "2026-11-22",
-  "summary": "J3455 independent acting Chief Codex KEEP for private UAT, 23 Nov 2026. v03 master 744f32b7 and PHONE b1135b3d hashes match NAS and iCloud. Four delivered gates PASS; flagged stills reviewed. HOS PR #731 merged. J2037 remains blocked for Ben finished-cut watch/listen, card HOS:009 ready for Ben, Play HTTP 302 verified at 22:24Z. No upload or schedule permission. Separate Shorts J3311.1 and J3311.2 and thumbnail choices A/B remain for final approval.",
+  "title": "How Isaac Newton Proved Gravity Using the Moon",
+  "air": "2026-12-03",
+  "ready_by": "2026-12-03",
+  "summary": "J3501 package ready (24 Nov 2026, £0, no YouTube change): search-led title 'How Isaac Newton Proved Gravity Using the Moon' (T&C B: 'Why Doesn't the Moon Fall to Earth?'), en-GB v03 captions, exact chapters+8 sources, playlist PLEbpfUzWzcXU, verified NAS v03 master 744f32b7 and J3262 thumbs A/B. Held for Ben's watch OK on HOS:009 (J2037) before private upload and Thu 3 Dec 18:00 London schedule (cutoff Thu 3 Dec 12:00 London). Separate Shorts J3311.1/J3311.2 remain pending Ben's watch.",
   "stages": {
     "topic": {
       "state": "done"
@@ -17,7 +17,8 @@
       "note": "Existing done retained, not newly verified by J2026. production-status FACT_NOTES hard-checks7/7 but historical Claude signature marked UNSIGNED; final QA reconciles source evidence without inventing a new sign-off."
     },
     "package": {
-      "state": "done"
+      "state": "done",
+      "note": "J3501 (24 Nov 2026): search-led title 'How Isaac Newton Proved Gravity Using the Moon' (T&C B: 'Why Doesn't the Moon Fall to Earth?'), en-GB captions (hos_009_master_v03.en.srt), chapters v03 + 8 sources, playlist PLEbpfUzWzcXU, verified J3262 thumbs A/B, lint:package PASS 0 errors/0 warnings."
     },
     "vo": {
       "state": "done",
@@ -100,11 +101,15 @@
       "waiting": "Ben finished-cut watch/listen and package approval"
     },
     "scheduled": {
-      "state": "todo",
-      "due": "2026-11-23",
-      "note": "Historical internal planning date only; 26 Nov is not a release promise. No public schedule change authorized."
+      "state": "blocked",
+      "due": "2026-12-03",
+      "owner": "macbook-2",
+      "since": "2026-11-24",
+      "underway": false,
+      "waiting": "Ben's watch OK on HOS:009 (J2037) before private upload and Thu 3 Dec 18:00 London schedule (cutoff Thu 3 Dec 12:00 London)",
+      "note": "J3501 package ready for Thu 3 Dec 18:00 London (normal publish, no Premiere). Strictly held until Ben passes HOS:009 watch card (v03 744f32b7, J2037); no OK by Thu 3 Dec 12:00 London means no schedule and Ben is told."
     }
   },
   "claims": [],
-  "next": "Ben watches the Gravity long and two Shorts and reviews thumbnails; J2037 stays held until approval. No release date promised."
+  "next": "Ben watches HOS:009 (Gravity long v03 + two Shorts + thumbnails A/B); after Ben's OK on J2037, upload private and schedule Thu 3 Dec 18:00 London (J3501). No OK by Thu 3 Dec 12:00 London = no schedule."
 }

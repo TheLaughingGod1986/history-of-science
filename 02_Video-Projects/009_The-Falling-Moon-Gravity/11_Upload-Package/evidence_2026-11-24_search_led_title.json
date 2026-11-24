@@ -1,0 +1,988 @@
+{
+  "pulled": "2026-11-24",
+  "job": "J3501",
+  "vidiq_2026_11_24_brief": {
+    "isaac newton": {
+      "monthly_searches": 84169,
+      "top_markets_note": "led by Brazil, Ethiopia and Colombia"
+    },
+    "laws of motion": {
+      "monthly_searches": 13262,
+      "competition": 49
+    },
+    "isaac newton documentary": {
+      "competition": 25
+    }
+  },
+  "selected": {
+    "title_side_A": "How Isaac Newton Proved Gravity Using the Moon",
+    "title_side_B": "Why Doesn't the Moon Fall to Earth?",
+    "thumb_A": "hos_009_thumb_A_it_misses_v01.jpg",
+    "thumb_B": "hos_009_thumb_B_one_apple_v01.jpg"
+  },
+  "hos_snapshot_checked": "05_Analytics/hos/snapshots/2026-11-24.json",
+  "hos_video_count": 71,
+  "collision_check": {
+    "How Isaac Newton Proved Gravity Using the Moon": {
+      "chars": 46,
+      "live_hos_collision": null,
+      "hos009_short_collision": null
+    },
+    "Why Doesn't the Moon Fall to Earth?": {
+      "chars": 35,
+      "live_hos_collision": null,
+      "hos009_short_collision": null
+    },
+    "Isaac Newton: How He Proved Gravity Using the Moon": {
+      "chars": 50,
+      "live_hos_collision": null,
+      "hos009_short_collision": null
+    },
+    "Isaac Newton's Gravity: Why the Moon Never Falls": {
+      "chars": 48,
+      "live_hos_collision": null,
+      "hos009_short_collision": null
+    },
+    "How Did Newton Discover Gravity?": {
+      "chars": 32,
+      "live_hos_collision": null,
+      "hos009_short_collision": "How Did Newton Discover Gravity?"
+    }
+  },
+  "us_signed_out": {
+    "pulled": "2026-11-24",
+    "locale": "en-US/US",
+    "queries": {
+      "isaac newton gravity": {
+        "suggest": [
+          "isaac newton gravity",
+          "isaac newton gravity theory",
+          "isaac newton gravity meme",
+          "isaac newton gravity discovery",
+          "isaac newton gravity story",
+          "isaac newton gravity song",
+          "isaac newton gravity formula",
+          "isaac newton gravity animation",
+          "isaac newton's gravity puzzle",
+          "isaac newton gravitational force"
+        ],
+        "top10": [
+          {
+            "id": "2ydh7AShMzM",
+            "title": "The work of Sir Isaac Newton | Primary Science - SciTube",
+            "channel": "BBC Bitesize for Teachers",
+            "views": "137,184 views",
+            "age": "9y ago",
+            "length": "4:29"
+          },
+          {
+            "id": "h48BWDeBLno",
+            "title": "Newton's Discovery-Sir Isaac Newton",
+            "channel": "learning junction",
+            "views": "2,530,308 views",
+            "age": "12y ago",
+            "length": "4:44"
+          },
+          {
+            "id": "D5BQkdyAw8A",
+            "title": "How did Isaac Newton Really Discover Gravity | Apple or Comet? | BBC Studios",
+            "channel": "BBC Studios",
+            "views": "160,445 views",
+            "age": "18y ago",
+            "length": "2:12"
+          },
+          {
+            "id": "OE5LBi7hZkU",
+            "title": "Newton's Gravity",
+            "channel": "ScienceClic English",
+            "views": "91,680 views",
+            "age": "7y ago",
+            "length": "3:01"
+          },
+          {
+            "id": "PCxP24qj2UQ",
+            "title": "Isaac Newton - English Physicist & Formulated the Laws of Gravity |Mini Bio | BIO",
+            "channel": "Biography",
+            "views": "627,381 views",
+            "age": "13y ago",
+            "length": "3:32"
+          },
+          {
+            "id": "9AkM56_YYrA",
+            "title": "Isaac Newton: The Apple That Changed Science Forever (Gravity Explained) | MightyOwl Science",
+            "channel": "MightyOwl",
+            "views": "18,691 views",
+            "age": "5y ago",
+            "length": "7:51"
+          },
+          {
+            "id": "O-MSIozkI40",
+            "title": "Isaac Newton’s Apple Story | How Gravity Was Discovered (for Kids)",
+            "channel": "Whimsy Wonders",
+            "views": "4,640 views",
+            "age": "6mo ago",
+            "length": "3:32"
+          },
+          {
+            "id": "suQDwZcnJdg",
+            "title": "Gravity | The Dr. Binocs Show | Learn Videos For Kids",
+            "channel": "Peekaboo Kidz",
+            "views": "2,421,000 views",
+            "age": "11y ago",
+            "length": "3:02"
+          },
+          {
+            "id": "jwPc0kK9VHU",
+            "title": "Best Idea Ever!",
+            "channel": "Arpan Jolly",
+            "views": "5,334,464 views",
+            "age": "16y ago",
+            "length": "2:04"
+          },
+          {
+            "id": "FMj5NB6rzT4",
+            "title": "ALL NEW Horrible Science Song | Defining Gravity | CBBC",
+            "channel": "CBBC",
+            "views": "157,876 views",
+            "age": "1y ago",
+            "length": "3:50"
+          }
+        ]
+      },
+      "how did isaac newton discover gravity": {
+        "suggest": [
+          "how did isaac newton discover gravity",
+          "how did isaac newton invent gravity"
+        ],
+        "top10": [
+          {
+            "id": "D5BQkdyAw8A",
+            "title": "How did Isaac Newton Really Discover Gravity | Apple or Comet? | BBC Studios",
+            "channel": "BBC Studios",
+            "views": "160,446 views",
+            "age": "18y ago",
+            "length": "2:12"
+          },
+          {
+            "id": "OE5LBi7hZkU",
+            "title": "Newton's Gravity",
+            "channel": "ScienceClic English",
+            "views": "91,688 views",
+            "age": "7y ago",
+            "length": "3:01"
+          },
+          {
+            "id": "2ydh7AShMzM",
+            "title": "The work of Sir Isaac Newton | Primary Science - SciTube",
+            "channel": "BBC Bitesize for Teachers",
+            "views": "137,184 views",
+            "age": "9y ago",
+            "length": "4:29"
+          },
+          {
+            "id": "h48BWDeBLno",
+            "title": "Newton's Discovery-Sir Isaac Newton",
+            "channel": "learning junction",
+            "views": "2,530,307 views",
+            "age": "12y ago",
+            "length": "4:44"
+          },
+          {
+            "id": "O-MSIozkI40",
+            "title": "Isaac Newton’s Apple Story | How Gravity Was Discovered (for Kids)",
+            "channel": "Whimsy Wonders",
+            "views": "4,645 views",
+            "age": "6mo ago",
+            "length": "3:32"
+          },
+          {
+            "id": "9AkM56_YYrA",
+            "title": "Isaac Newton: The Apple That Changed Science Forever (Gravity Explained) | MightyOwl Science",
+            "channel": "MightyOwl",
+            "views": "18,692 views",
+            "age": "5y ago",
+            "length": "7:51"
+          },
+          {
+            "id": "SFt1Z0HvZjI",
+            "title": "Who was Sir Isaac Newton? (Facts for Kids)",
+            "channel": "Hey! Guess What",
+            "views": "82,649 views",
+            "age": "2y ago",
+            "length": "5:20"
+          },
+          {
+            "id": "suQDwZcnJdg",
+            "title": "Gravity | The Dr. Binocs Show | Learn Videos For Kids",
+            "channel": "Peekaboo Kidz",
+            "views": "2,421,000 views",
+            "age": "11y ago",
+            "length": "3:02"
+          },
+          {
+            "id": "n6lRdH1EzIo",
+            "title": "The Secret Side of Sir Isaac Newton",
+            "channel": "Newsthink",
+            "views": "4,850,891 views",
+            "age": "5y ago",
+            "length": "9:05"
+          },
+          {
+            "id": "ybxSgIBbBh8",
+            "title": "The Mysterious Force of Gravity Explained by Neil deGrasse Tyson",
+            "channel": "Science Time",
+            "views": "958,242 views",
+            "age": "5y ago",
+            "length": "10:02"
+          }
+        ]
+      },
+      "isaac newton apple": {
+        "suggest": [
+          "isaac newton apple scene edit",
+          "isaac newton apple",
+          "isaac newton apple scene",
+          "isaac newton apple tree",
+          "isaac newton apple story",
+          "isaac newton apple falling",
+          "isaac newton apple scene cartoon",
+          "isaac newton apple edit",
+          "isaac newton apple gravity",
+          "isaac newton apple meme"
+        ],
+        "top10": [
+          {
+            "id": "D5BQkdyAw8A",
+            "title": "How did Isaac Newton Really Discover Gravity | Apple or Comet? | BBC Studios",
+            "channel": "BBC Studios",
+            "views": "160,440 views",
+            "age": "18y ago",
+            "length": "2:12"
+          },
+          {
+            "id": "cpUxfGJCib0",
+            "title": "Isaac Newton and the Apple | Gravity Explained for Kids (2025 Educational Cartoon 4K)",
+            "channel": "Sweet Dreams",
+            "views": "6,728 views",
+            "age": "1y ago",
+            "length": "3:02"
+          },
+          {
+            "id": "O-MSIozkI40",
+            "title": "Isaac Newton’s Apple Story | How Gravity Was Discovered (for Kids)",
+            "channel": "Whimsy Wonders",
+            "views": "4,645 views",
+            "age": "6mo ago",
+            "length": "3:32"
+          },
+          {
+            "id": "h48BWDeBLno",
+            "title": "Newton's Discovery-Sir Isaac Newton",
+            "channel": "learning junction",
+            "views": "2,530,295 views",
+            "age": "12y ago",
+            "length": "4:44"
+          },
+          {
+            "id": "jwPc0kK9VHU",
+            "title": "Best Idea Ever!",
+            "channel": "Arpan Jolly",
+            "views": "5,334,496 views",
+            "age": "16y ago",
+            "length": "2:04"
+          },
+          {
+            "id": "9AkM56_YYrA",
+            "title": "Isaac Newton: The Apple That Changed Science Forever (Gravity Explained) | MightyOwl Science",
+            "channel": "MightyOwl",
+            "views": "18,691 views",
+            "age": "5y ago",
+            "length": "7:51"
+          },
+          {
+            "id": "nnq7BGo_r40",
+            "title": "Isaac Newton and the Falling Apple | Animated Story for Kids | Discover Gravity!|Educational story|",
+            "channel": "Little kids Little stories",
+            "views": "11,591 views",
+            "age": "2y ago",
+            "length": "2:28"
+          },
+          {
+            "id": "2H-Vv0x27W8",
+            "title": "Was Isaac Newton's Falling Apple a True Story?",
+            "channel": "SciManDan",
+            "views": "36,433 views",
+            "age": "4y ago",
+            "length": "2:01"
+          },
+          {
+            "id": "Oiy9gn9RwYs",
+            "title": "🍎 Isaac Newton and the Falling Apple | Animated History for Kids",
+            "channel": "Animated History Stories",
+            "views": "333 views",
+            "age": "1y ago",
+            "length": "2:28"
+          },
+          {
+            "id": "khv90SH1Hpo",
+            "title": "Isaac Newton | Bedtime Stories | Short Stories",
+            "channel": "ZIDZOE TV",
+            "views": "55,503 views",
+            "age": "5y ago",
+            "length": "2:52"
+          }
+        ]
+      },
+      "isaac newton documentary": {
+        "suggest": [
+          "isaac newton documentary",
+          "isaac newton documentary history channel",
+          "isaac newton documentary pbs",
+          "isaac newton documentary bbc",
+          "isaac newton documentary to fall asleep to",
+          "isaac newton documentary in hindi",
+          "isaac newton documentary national geographic",
+          "isaac newton documentary in amharic"
+        ],
+        "top10": [
+          {
+            "id": "qSqF6G_yFZc",
+            "title": "Isaac Newton - History’s Greatest Scientist Documentary",
+            "channel": "The People Profiles",
+            "views": "1,186,792 views",
+            "age": "1y ago",
+            "length": "1:19:07"
+          },
+          {
+            "id": "s2YZN2L700Q",
+            "title": "Full Docmentary - Secret Life of Isaac Newton - Full Documentaries Films",
+            "channel": "Full Documentaries",
+            "views": "1,574,620 views",
+            "age": "11y ago",
+            "length": "53:39"
+          },
+          {
+            "id": "n6lRdH1EzIo",
+            "title": "The Secret Side of Sir Isaac Newton",
+            "channel": "Newsthink",
+            "views": "4,850,891 views",
+            "age": "5y ago",
+            "length": "9:05"
+          },
+          {
+            "id": "BWh5GfciblE",
+            "title": "Isaac Newton's Life Biography (2 Hours)",
+            "channel": "Mind Palace",
+            "views": "283,569 views",
+            "age": "10mo ago",
+            "length": "1:54:35"
+          },
+          {
+            "id": "GvW_Y9sw6hk",
+            "title": "Isaac Newton: His life and Work - Simon Schaffer 1983",
+            "channel": "Imperial College London",
+            "views": "155,461 views",
+            "age": "13y ago",
+            "length": "30:32"
+          },
+          {
+            "id": "3LUPPYptIME",
+            "title": "Isaac Newton: Gravity and the Scientific Revolution | Full Documentary for Sleep",
+            "channel": "Nighttime Biographies",
+            "views": "14,945 views",
+            "age": "4mo ago",
+            "length": "2:06:49"
+          },
+          {
+            "id": "xKwlp1Ap9XA",
+            "title": "Neil deGrasse Tyson - Who Is The Greatest Scientific Mind?",
+            "channel": "The 92nd Street Y, New York",
+            "views": "1,757,797 views",
+            "age": "1y ago",
+            "length": "10:22"
+          },
+          {
+            "id": "AMxRxlKzEGY",
+            "title": "Isaac Newton: The Greatest Scientific Mind in History | Full Documentary",
+            "channel": "The Historical Archive",
+            "views": "5,642 views",
+            "age": "2mo ago",
+            "length": "59:18"
+          },
+          {
+            "id": "bBzGo--GDD0",
+            "title": "6. Sir Isaac Newton - Great Britons (2002)",
+            "channel": "Quantum Entanglement (Higgs-Boson)",
+            "views": "5,453 views",
+            "age": "8mo ago",
+            "length": "54:22"
+          },
+          {
+            "id": "k1M7Oz1gMsA",
+            "title": "Isaac Newton Mystery Files Forever by National Geography",
+            "channel": "VIJAY NEWTON",
+            "views": "235,151 views",
+            "age": "12y ago",
+            "length": "23:32"
+          }
+        ]
+      },
+      "why doesn't the moon fall to earth": {
+        "suggest": [
+          "why doesn't the moon fell to earth",
+          "why doesn't the moon fall to earth"
+        ],
+        "top10": [
+          {
+            "id": "OKXVRu6JL54",
+            "title": "Why Doesn't the Moon Fall to Earth? Exploring Orbits and Gravity",
+            "channel": "NASA Night Sky Network",
+            "views": "2,210,187 views",
+            "age": "11y ago",
+            "length": "5:27"
+          },
+          {
+            "id": "OnONWCVXO5o",
+            "title": "Why doesn't the Moon fall down?",
+            "channel": "Mr Verse",
+            "views": "39,229 views",
+            "age": "3y ago",
+            "length": "3:21"
+          },
+          {
+            "id": "rp8vuo-3kGg",
+            "title": "Why Doesn’t the Moon Fall to Earth? | Fun Science for Kids!",
+            "channel": "The Kidz Orbit",
+            "views": "244 views",
+            "age": "10mo ago",
+            "length": "2:44"
+          },
+          {
+            "id": "POytLIea_Lo",
+            "title": "Why doesn’t the moon fall into the Earth? - Fun Fact | Learn with BYJU'S",
+            "channel": "BYJU'S",
+            "views": "1,002,518 views",
+            "age": "9y ago",
+            "length": "3:30"
+          },
+          {
+            "id": "cY1_8hBMqKg",
+            "title": "Why Doesn’t The Moon Fall to Earth?",
+            "channel": "Space",
+            "views": "344 views",
+            "age": "1y ago",
+            "length": "3:20"
+          },
+          {
+            "id": "lsijUDZcF6E",
+            "title": "Why Doesn’t the Moon Fall to Earth?",
+            "channel": "Question Everything | Mind & Science",
+            "views": "658 views",
+            "age": "9mo ago",
+            "length": "4:38"
+          },
+          {
+            "id": "RsFf9gl6lL8",
+            "title": "Why Doesn't the Moon Fall Down?",
+            "channel": "SpitzerJim",
+            "views": "111,885 views",
+            "age": "19y ago",
+            "length": "1:51"
+          },
+          {
+            "id": "XYHAlfjhnQg",
+            "title": "Why Doesn't The Moon Fall Toward Earth Like Apples Do?  | Planet Comparison",
+            "channel": "The Inspiration",
+            "views": "49,644 views",
+            "age": "3y ago",
+            "length": "2:31"
+          },
+          {
+            "id": "iEJvLCVff7s",
+            "title": "What If The Moon Fell To Earth? | Moon Video For Kids | The Dr Binocs Show | Peekaboo Kidz",
+            "channel": "Peekaboo Kidz",
+            "views": "4,126,118 views",
+            "age": "4y ago",
+            "length": "5:51"
+          },
+          {
+            "id": "lheapd7bgLA",
+            "title": "What Happens if the Moon Crashes into Earth?",
+            "channel": "Kurzgesagt – In a Nutshell",
+            "views": "22,647,419 views",
+            "age": "4y ago",
+            "length": "10:28"
+          }
+        ]
+      },
+      "how newton discovered gravity": {
+        "suggest": [
+          "how newton discovered gravity",
+          "how newton discovered gravity animation",
+          "how newton discovered gravity equation",
+          "how newton discovered gravity in hindi",
+          "how newton invented gravity",
+          "how did newton discovered gravity"
+        ],
+        "top10": [
+          {
+            "id": "D5BQkdyAw8A",
+            "title": "How did Isaac Newton Really Discover Gravity | Apple or Comet? | BBC Studios",
+            "channel": "BBC Studios",
+            "views": "160,440 views",
+            "age": "18y ago",
+            "length": "2:12"
+          },
+          {
+            "id": "2ydh7AShMzM",
+            "title": "The work of Sir Isaac Newton | Primary Science - SciTube",
+            "channel": "BBC Bitesize for Teachers",
+            "views": "137,184 views",
+            "age": "9y ago",
+            "length": "4:29"
+          },
+          {
+            "id": "OE5LBi7hZkU",
+            "title": "Newton's Gravity",
+            "channel": "ScienceClic English",
+            "views": "91,687 views",
+            "age": "7y ago",
+            "length": "3:01"
+          },
+          {
+            "id": "h48BWDeBLno",
+            "title": "Newton's Discovery-Sir Isaac Newton",
+            "channel": "learning junction",
+            "views": "2,530,295 views",
+            "age": "12y ago",
+            "length": "4:44"
+          },
+          {
+            "id": "suQDwZcnJdg",
+            "title": "Gravity | The Dr. Binocs Show | Learn Videos For Kids",
+            "channel": "Peekaboo Kidz",
+            "views": "2,421,000 views",
+            "age": "11y ago",
+            "length": "3:02"
+          },
+          {
+            "id": "O-MSIozkI40",
+            "title": "Isaac Newton’s Apple Story | How Gravity Was Discovered (for Kids)",
+            "channel": "Whimsy Wonders",
+            "views": "4,645 views",
+            "age": "6mo ago",
+            "length": "3:32"
+          },
+          {
+            "id": "Ki5g0CpRj1I",
+            "title": "How Newton derived his law of universal gravitation",
+            "channel": "UNSW Physics",
+            "views": "34,751 views",
+            "age": "5y ago",
+            "length": "4:26"
+          },
+          {
+            "id": "ybxSgIBbBh8",
+            "title": "The Mysterious Force of Gravity Explained by Neil deGrasse Tyson",
+            "channel": "Science Time",
+            "views": "958,242 views",
+            "age": "5y ago",
+            "length": "10:02"
+          },
+          {
+            "id": "n6lRdH1EzIo",
+            "title": "The Secret Side of Sir Isaac Newton",
+            "channel": "Newsthink",
+            "views": "4,850,926 views",
+            "age": "5y ago",
+            "length": "9:05"
+          },
+          {
+            "id": "g5uVlSVPMZM",
+            "title": "How I Isaac Newton discovered “Gravity”",
+            "channel": "Ya boy Isaac ",
+            "views": "285 views",
+            "age": "1mo ago",
+            "length": "1:21"
+          }
+        ]
+      },
+      "isaac newton moon": {
+        "suggest": [],
+        "top10": [
+          {
+            "id": "OnONWCVXO5o",
+            "title": "Why doesn't the Moon fall down?",
+            "channel": "Mr Verse",
+            "views": "39,229 views",
+            "age": "3y ago",
+            "length": "3:21"
+          },
+          {
+            "id": "D5BQkdyAw8A",
+            "title": "How did Isaac Newton Really Discover Gravity | Apple or Comet? | BBC Studios",
+            "channel": "BBC Studios",
+            "views": "160,445 views",
+            "age": "18y ago",
+            "length": "2:12"
+          },
+          {
+            "id": "2ydh7AShMzM",
+            "title": "The work of Sir Isaac Newton | Primary Science - SciTube",
+            "channel": "BBC Bitesize for Teachers",
+            "views": "137,184 views",
+            "age": "9y ago",
+            "length": "4:29"
+          },
+          {
+            "id": "8bTdMmNZm2M",
+            "title": "Best Film on Newton's Third Law. Ever.",
+            "channel": "Veritasium",
+            "views": "1,828,929 views",
+            "age": "15y ago",
+            "length": "4:38"
+          },
+          {
+            "id": "-QbsozKiTgw",
+            "title": "Isaac Newton discovers absolutely nothing",
+            "channel": "JC Foster Takes It To The Moon",
+            "views": "7,680 views",
+            "age": "1mo ago",
+            "length": "0:08"
+          },
+          {
+            "id": "QnvBeeugB5Y",
+            "title": "How Isaac Newton Bound an Apple to the Moon",
+            "channel": "Illumentary",
+            "views": "647 views",
+            "age": "8mo ago",
+            "length": "16:22"
+          },
+          {
+            "id": "vi8dPL2FnA0",
+            "title": "Why Does the MOON Stay Up? — The Question That Haunted Newton for 20 Years",
+            "channel": "Feynman Reborn",
+            "views": "1,491 views",
+            "age": "7mo ago",
+            "length": "39:58"
+          },
+          {
+            "id": "XQac64WkPXM",
+            "title": "Isaac Newton: Why the Moon Never Falls | Cinematic Science Documentary",
+            "channel": "Inklight Universe",
+            "views": "208 views",
+            "age": "10d ago",
+            "length": "15:30"
+          },
+          {
+            "id": "h48BWDeBLno",
+            "title": "Newton's Discovery-Sir Isaac Newton",
+            "channel": "learning junction",
+            "views": "2,530,308 views",
+            "age": "12y ago",
+            "length": "4:44"
+          },
+          {
+            "id": "wkfMG_xXC5w",
+            "title": "Why Doesn't the Moon Fall Down? (It Does.) | Isaac Newton, Explained",
+            "channel": "Handmade Why",
+            "views": "163 views",
+            "age": "1mo ago",
+            "length": "30:13"
+          }
+        ]
+      },
+      "isaac newton": {
+        "suggest": [
+          "isaac newton",
+          "isaac newton theme",
+          "isaac newton documentary",
+          "isaac newton vs bill nye",
+          "isaac newton edit",
+          "isaac newton for kids",
+          "isaac newton theme piano",
+          "isaac newton discoveries",
+          "isaac newton vs albert einstein",
+          "isaac newton jjk"
+        ],
+        "top10": [
+          {
+            "id": "n6lRdH1EzIo",
+            "title": "The Secret Side of Sir Isaac Newton",
+            "channel": "Newsthink",
+            "views": "4,850,931 views",
+            "age": "5y ago",
+            "length": "9:05"
+          },
+          {
+            "id": "qSqF6G_yFZc",
+            "title": "Isaac Newton - History’s Greatest Scientist Documentary",
+            "channel": "The People Profiles",
+            "views": "1,186,680 views",
+            "age": "1y ago",
+            "length": "1:19:07"
+          },
+          {
+            "id": "2ydh7AShMzM",
+            "title": "The work of Sir Isaac Newton | Primary Science - SciTube",
+            "channel": "BBC Bitesize for Teachers",
+            "views": "137,184 views",
+            "age": "9y ago",
+            "length": "4:29"
+          },
+          {
+            "id": "PCxP24qj2UQ",
+            "title": "Isaac Newton - English Physicist & Formulated the Laws of Gravity |Mini Bio | BIO",
+            "channel": "Biography",
+            "views": "627,381 views",
+            "age": "13y ago",
+            "length": "3:32"
+          },
+          {
+            "id": "h48BWDeBLno",
+            "title": "Newton's Discovery-Sir Isaac Newton",
+            "channel": "learning junction",
+            "views": "2,530,308 views",
+            "age": "12y ago",
+            "length": "4:44"
+          },
+          {
+            "id": "SFt1Z0HvZjI",
+            "title": "Who was Sir Isaac Newton? (Facts for Kids)",
+            "channel": "Hey! Guess What",
+            "views": "82,648 views",
+            "age": "2y ago",
+            "length": "5:20"
+          },
+          {
+            "id": "GvW_Y9sw6hk",
+            "title": "Isaac Newton: His life and Work - Simon Schaffer 1983",
+            "channel": "Imperial College London",
+            "views": "155,461 views",
+            "age": "13y ago",
+            "length": "30:32"
+          },
+          {
+            "id": "BWh5GfciblE",
+            "title": "Isaac Newton's Life Biography (2 Hours)",
+            "channel": "Mind Palace",
+            "views": "283,563 views",
+            "age": "10mo ago",
+            "length": "1:54:35"
+          },
+          {
+            "id": "1vTbtna25j8",
+            "title": "The quick story of Isaac Newton",
+            "channel": "NowYouKnowAbout",
+            "views": "454,252 views",
+            "age": "8y ago",
+            "length": "14:57"
+          },
+          {
+            "id": "TJawNbIGYbo",
+            "title": "Isaac Newton: The Man and his Hidden Life",
+            "channel": "Biographics",
+            "views": "612,458 views",
+            "age": "7y ago",
+            "length": "20:16"
+          }
+        ]
+      },
+      "isaac newton gravity explained": {
+        "suggest": [],
+        "top10": []
+      },
+      "how isaac newton proved gravity": {
+        "suggest": [
+          "how isaac newton discovered gravity"
+        ],
+        "top10": [
+          {
+            "id": "2ydh7AShMzM",
+            "title": "The work of Sir Isaac Newton | Primary Science - SciTube",
+            "channel": "BBC Bitesize for Teachers",
+            "views": "137,184 views",
+            "age": "9y ago",
+            "length": "4:29"
+          },
+          {
+            "id": "OE5LBi7hZkU",
+            "title": "Newton's Gravity",
+            "channel": "ScienceClic English",
+            "views": "91,688 views",
+            "age": "7y ago",
+            "length": "3:01"
+          },
+          {
+            "id": "D5BQkdyAw8A",
+            "title": "How did Isaac Newton Really Discover Gravity | Apple or Comet? | BBC Studios",
+            "channel": "BBC Studios",
+            "views": "160,446 views",
+            "age": "18y ago",
+            "length": "2:12"
+          },
+          {
+            "id": "h48BWDeBLno",
+            "title": "Newton's Discovery-Sir Isaac Newton",
+            "channel": "learning junction",
+            "views": "2,530,307 views",
+            "age": "12y ago",
+            "length": "4:44"
+          },
+          {
+            "id": "n6lRdH1EzIo",
+            "title": "The Secret Side of Sir Isaac Newton",
+            "channel": "Newsthink",
+            "views": "4,850,891 views",
+            "age": "5y ago",
+            "length": "9:05"
+          },
+          {
+            "id": "Ki5g0CpRj1I",
+            "title": "How Newton derived his law of universal gravitation",
+            "channel": "UNSW Physics",
+            "views": "34,754 views",
+            "age": "5y ago",
+            "length": "4:26"
+          },
+          {
+            "id": "suQDwZcnJdg",
+            "title": "Gravity | The Dr. Binocs Show | Learn Videos For Kids",
+            "channel": "Peekaboo Kidz",
+            "views": "2,421,000 views",
+            "age": "11y ago",
+            "length": "3:02"
+          },
+          {
+            "id": "kxkFaBG6a-A",
+            "title": "Newton's Law of Universal Gravitation",
+            "channel": "Professor Dave Explains",
+            "views": "561,420 views",
+            "age": "9y ago",
+            "length": "8:25"
+          },
+          {
+            "id": "ybxSgIBbBh8",
+            "title": "The Mysterious Force of Gravity Explained by Neil deGrasse Tyson",
+            "channel": "Science Time",
+            "views": "958,242 views",
+            "age": "5y ago",
+            "length": "10:02"
+          },
+          {
+            "id": "g5uVlSVPMZM",
+            "title": "How I Isaac Newton discovered “Gravity”",
+            "channel": "Ya boy Isaac ",
+            "views": "285 views",
+            "age": "1mo ago",
+            "length": "1:21"
+          }
+        ]
+      },
+      "newton's cannonball": {
+        "suggest": [
+          "newton's cannonball experiment",
+          "newton's cannonball",
+          "newton's cannonball orbit animation"
+        ],
+        "top10": []
+      },
+      "laws of motion": {
+        "suggest": [
+          "laws of motion",
+          "laws of motion class 11",
+          "laws of motion physics",
+          "laws of motion magic school bus",
+          "laws of motion marching band",
+          "laws of motion song",
+          "laws of motion explained",
+          "laws of motion class 11 jee",
+          "laws of motion class 11 one shot",
+          "laws of motion newton"
+        ],
+        "top10": [
+          {
+            "id": "JGO_zDWmkvk",
+            "title": "Newton's 3 Laws, with a bicycle - Joshua Manley",
+            "channel": "TED-Ed",
+            "views": "3,037,508 views",
+            "age": "14y ago",
+            "length": "3:33"
+          },
+          {
+            "id": "kKKM8Y-u7ds",
+            "title": "Newton's Laws: Crash Course Physics #5",
+            "channel": "CrashCourse",
+            "views": "6,155,063 views",
+            "age": "10y ago",
+            "length": "11:04"
+          },
+          {
+            "id": "D8XOm4swxOU",
+            "title": "GCSE Physics - Newton's 1st & 2nd Laws | Circular Motion | Inertia (2027/28 exams)",
+            "channel": "Cognito",
+            "views": "121,554 views",
+            "age": "1y ago",
+            "length": "6:37"
+          },
+          {
+            "id": "-w6oW1ut4Dw",
+            "title": "Newton's Laws of Motion (Motion, Force, Acceleration)",
+            "channel": "LearnFree",
+            "views": "506,809 views",
+            "age": "3y ago",
+            "length": "2:39"
+          },
+          {
+            "id": "_W3VbonFNcw",
+            "title": "GCSE Physics Revision \"Newton's First Law of Motion\"",
+            "channel": "Freesciencelessons",
+            "views": "520,667 views",
+            "age": "8y ago",
+            "length": "3:48"
+          },
+          {
+            "id": "WSDcYUrGODE",
+            "title": "Newton's 3 Laws of Motion! Science For Kids",
+            "channel": "National Science Foundation News",
+            "views": "205,513 views",
+            "age": "1y ago",
+            "length": "3:14"
+          },
+          {
+            "id": "uIU4uoeNxnI",
+            "title": "Every Physics Law Explained in 11 Minutes",
+            "channel": "The Analyst",
+            "views": "657,176 views",
+            "age": "2y ago",
+            "length": "11:43"
+          },
+          {
+            "id": "g550H4e5FCY",
+            "title": "Newton's Law of Motion - First, Second & Third - Physics",
+            "channel": "The Organic Chemistry Tutor",
+            "views": "4,120,564 views",
+            "age": "9y ago",
+            "length": "38:23"
+          },
+          {
+            "id": "adLj6kygwds",
+            "title": "What Is Newton's First Law Of Motion? The Dr.Binocs Show|Best Learning Videos For Kids|Peekaboo Kidz",
+            "channel": "Peekaboo Kidz",
+            "views": "2,591,565 views",
+            "age": "7y ago",
+            "length": "6:49"
+          },
+          {
+            "id": "YnXU-AwAjGk",
+            "title": "Newton's Laws of Motion | Learn about Sir Isaac Newton for Kids",
+            "channel": "Learn Bright",
+            "views": "432,695 views",
+            "age": "5y ago",
+            "length": "9:48"
+          }
+        ]
+      }
+    }
+  }
+}

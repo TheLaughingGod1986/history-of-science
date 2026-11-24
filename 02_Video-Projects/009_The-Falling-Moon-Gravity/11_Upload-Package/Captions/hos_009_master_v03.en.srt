@@ -1,0 +1,626 @@
+1
+00:00:00,000 --> 00:00:04,860
+Right now, as you watch this, the Moon is
+falling towards the Earth.
+
+2
+00:00:04,900 --> 00:00:08,160
+So why doesn't it ever hit us?
+
+3
+00:00:08,630 --> 00:00:10,900
+And what does it have to do with an apple?
+
+4
+00:00:10,940 --> 00:00:17,224
+By the end of this film, you'll know how a
+young man in a farmhouse garden, an
+
+5
+00:00:17,264 --> 00:00:23,467
+imaginary cannon and one careful sum
+showed that the pull that drops an apple
+
+6
+00:00:23,507 --> 00:00:25,980
+also holds the Moon in the sky.
+
+7
+00:00:26,020 --> 00:00:31,492
+For thousands of years, people believed
+the sky followed different rules from the
+
+8
+00:00:31,532 --> 00:00:31,900
+Earth.
+
+9
+00:00:31,940 --> 00:00:34,120
+Down here, things fell.
+
+10
+00:00:34,160 --> 00:00:39,200
+A stone dropped, a cup tipped, a rider
+fell from a horse.
+
+11
+00:00:39,720 --> 00:00:45,987
+But up there, the Moon, the Sun and the
+planets moved in perfect circles, for
+
+12
+00:00:46,027 --> 00:00:48,320
+ever, and never fell at all.
+
+13
+00:00:48,880 --> 00:00:51,500
+Why should a stone fall, but not the Moon?
+
+14
+00:00:51,540 --> 00:00:55,140
+It was one of the oldest mysteries in the
+world.
+
+15
+00:00:55,980 --> 00:00:58,460
+Picture yourself on a clear night in
+sixteen sixty-five.
+
+16
+00:00:58,500 --> 00:01:05,240
+You would see the Moon rise over the
+fields, huge and silent.
+
+17
+00:01:05,280 --> 00:01:08,680
+You would feel the cold ground under your
+feet.
+
+18
+00:01:08,720 --> 00:01:12,300
+And if you dropped a stone, you would hear
+it thud.
+
+19
+00:01:12,340 --> 00:01:17,200
+Would you ever think that the stone and
+the Moon were doing the same thing?
+
+20
+00:01:17,240 --> 00:01:19,200
+One young man did.
+
+21
+00:01:19,240 --> 00:01:23,460
+And it started in a year when the whole
+country was afraid.
+
+22
+00:01:26,340 --> 00:01:30,220
+In sixteen sixty-five, a terrible plague
+swept through England.
+
+23
+00:01:30,980 --> 00:01:34,680
+To keep students safe, the university at
+Cambridge closed its doors.
+
+24
+00:01:34,720 --> 00:01:39,211
+And a young student called Isaac Newton
+went home, to his family's farmhouse in
+
+25
+00:01:39,251 --> 00:01:40,760
+the village of Woolsthorpe.
+
+26
+00:01:40,800 --> 00:01:45,200
+He had been born in that same house, on
+Christmas Day, sixteen forty-two.
+
+27
+00:01:45,240 --> 00:01:49,520
+His father had died a few months before.
+
+28
+00:01:50,840 --> 00:01:55,685
+Newton was so tiny, his mother later said,
+that he could have fitted inside a quart
+
+29
+00:01:55,725 --> 00:01:56,525
+pot.
+
+30
+00:01:57,500 --> 00:01:59,680
+For almost two years, he worked alone.
+
+31
+00:02:00,160 --> 00:02:05,354
+He studied light, invented new kinds of
+mathematics, and asked questions no one
+
+32
+00:02:05,394 --> 00:02:06,520
+had asked before.
+
+33
+00:02:07,820 --> 00:02:12,453
+Many years later, when he was an old man,
+Newton told a friend how one of those
+
+34
+00:02:12,493 --> 00:02:13,440
+questions began.
+
+35
+00:02:14,420 --> 00:02:18,580
+He was sitting in the garden, thinking,
+when an apple fell from a tree.
+
+36
+00:02:19,420 --> 00:02:21,060
+The apple didn't hit him on the head.
+
+37
+00:02:21,400 --> 00:02:22,680
+That part was added later.
+
+38
+00:02:23,180 --> 00:02:24,300
+But it made him wonder.
+
+39
+00:02:25,400 --> 00:02:28,860
+The apple always falls straight down,
+towards the centre of the Earth.
+
+40
+00:02:29,400 --> 00:02:32,640
+The pull that drags it down works at the
+top of the tree.
+
+41
+00:02:33,240 --> 00:02:36,800
+It works at the top of a tall tower, and
+at the top of a mountain.
+
+42
+00:02:37,680 --> 00:02:39,320
+So how far up does it reach?
+
+43
+00:02:40,260 --> 00:02:41,840
+Could it reach all the way to the Moon?
+
+44
+00:02:43,000 --> 00:02:44,900
+It was an extraordinary idea.
+
+45
+00:02:45,560 --> 00:02:49,360
+If the Earth was pulling on the Moon, then
+the Moon should be falling.
+
+46
+00:02:50,140 --> 00:02:52,620
+But it was still up there, night after
+night.
+
+47
+00:02:53,440 --> 00:02:54,680
+So what was holding it up?
+
+48
+00:02:58,680 --> 00:03:01,580
+Newton's answer was so simple it is easy
+to miss.
+
+49
+00:03:02,420 --> 00:03:04,100
+The Moon isn't held up at all.
+
+50
+00:03:04,520 --> 00:03:05,860
+It really is falling.
+
+51
+00:03:06,500 --> 00:03:07,820
+It just never lands.
+
+52
+00:03:09,200 --> 00:03:14,378
+To explain it, he imagined a cannon, on
+top of a mountain so tall it poked above
+
+53
+00:03:14,418 --> 00:03:15,218
+the air.
+
+54
+00:03:15,780 --> 00:03:20,438
+Fire a cannonball sideways, gently, and it
+curves down and hits the ground near the
+
+55
+00:03:20,478 --> 00:03:21,780
+bottom of the mountain.
+
+56
+00:03:22,680 --> 00:03:26,160
+Fire it faster, and it flies further
+before it lands.
+
+57
+00:03:27,160 --> 00:03:33,291
+Now imagine firing it so fast that, as it
+falls, the round Earth curves away beneath
+
+58
+00:03:33,331 --> 00:03:34,800
+it, just as quickly.
+
+59
+00:03:35,740 --> 00:03:36,640
+What would you see?
+
+60
+00:03:37,560 --> 00:03:41,060
+The ball keeps falling, and keeps missing
+the ground.
+
+61
+00:03:41,660 --> 00:03:45,680
+It falls all the way around the world, and
+comes back to the mountain.
+
+62
+00:03:46,420 --> 00:03:47,700
+That is an orbit.
+
+63
+00:03:48,420 --> 00:03:53,732
+Not something floating, but something
+falling, and moving sideways so fast that
+
+64
+00:03:53,772 --> 00:03:54,720
+it never hits.
+
+65
+00:03:55,220 --> 00:03:57,260
+And that's what the Moon is doing.
+
+66
+00:03:58,060 --> 00:04:03,275
+Every second, it moves sideways about a
+kilometre, and falls a tiny bit towards
+
+67
+00:04:03,315 --> 00:04:04,115
+the Earth.
+
+68
+00:04:04,840 --> 00:04:07,560
+Sideways and down, sideways and down, for
+ever.
+
+69
+00:04:07,960 --> 00:04:11,200
+But an idea isn't proof.
+
+70
+00:04:12,060 --> 00:04:16,611
+If the same pull holds the Moon and drops
+the apple, Newton should be able to
+
+71
+00:04:16,651 --> 00:04:18,380
+calculate one from the other.
+
+72
+00:04:19,200 --> 00:04:20,000
+Could he?
+
+73
+00:04:22,060 --> 00:04:26,220
+Newton worked out that a pull like this
+should get weaker with distance.
+
+74
+00:04:26,980 --> 00:04:29,980
+Twice as far away, it should be four times
+weaker.
+
+75
+00:04:30,540 --> 00:04:33,200
+Three times as far, nine times weaker.
+
+76
+00:04:33,840 --> 00:04:35,440
+Why would it work like that?
+
+77
+00:04:36,280 --> 00:04:37,700
+Think of a can of spray paint.
+
+78
+00:04:38,360 --> 00:04:42,260
+Hold it close to a wall and you get a
+small, dark spot.
+
+79
+00:04:43,140 --> 00:04:49,377
+Step back twice as far, and the same paint
+spreads over a patch four times as big, so
+
+80
+00:04:49,417 --> 00:04:52,740
+every part of it gets only a quarter as
+much.
+
+81
+00:04:53,560 --> 00:04:56,560
+Newton's pull spreads out in the same way.
+
+82
+00:04:57,140 --> 00:05:01,600
+The Moon is about sixty times further from
+the centre of the Earth than you are.
+
+83
+00:05:01,820 --> 00:05:05,840
+So the pull on the Moon should be sixty
+times sixty weaker.
+
+84
+00:05:06,640 --> 00:05:09,740
+Three thousand six hundred times weaker.
+
+85
+00:05:10,360 --> 00:05:12,160
+Then came the beautiful part.
+
+86
+00:05:12,880 --> 00:05:16,840
+In one second, an apple falls about five
+metres.
+
+87
+00:05:17,560 --> 00:05:23,658
+If the pull on the Moon is 3,600 times
+weaker, then in one minute, the Moon
+
+88
+00:05:23,698 --> 00:05:29,100
+should fall about the same distance, five
+metres, along its curve.
+
+89
+00:05:30,160 --> 00:05:32,300
+Newton checked it against the real Moon.
+
+90
+00:05:33,140 --> 00:05:36,620
+Years later, he wrote that the two
+answered pretty nearly.
+
+91
+00:05:37,280 --> 00:05:40,740
+The apple and the Moon were obeying the
+same rule.
+
+92
+00:05:41,400 --> 00:05:46,280
+But Newton was a careful, private man, and
+his numbers weren't yet perfect.
+
+93
+00:05:47,200 --> 00:05:50,020
+He put the idea aside for almost twenty
+years.
+
+94
+00:05:50,960 --> 00:05:56,153
+Then, in sixteen eighty-four, a young
+astronomer called Edmond Halley came to
+
+95
+00:05:56,193 --> 00:05:57,620
+see him in Cambridge.
+
+96
+00:05:58,760 --> 00:06:00,080
+Halley asked him a question.
+
+97
+00:06:00,940 --> 00:06:06,039
+If the Sun pulled on the planets with a
+force that got weaker in just this way,
+
+98
+00:06:06,079 --> 00:06:07,900
+what path would they follow?
+
+99
+00:06:08,600 --> 00:06:10,720
+An ellipse, Newton said at once.
+
+100
+00:06:11,080 --> 00:06:12,860
+He had worked it out years before.
+
+101
+00:06:13,540 --> 00:06:17,580
+Halley was amazed, and he begged Newton to
+write it all down.
+
+102
+00:06:18,220 --> 00:06:23,240
+The result, three years later, was one of
+the most important books ever written.
+
+103
+00:06:24,220 --> 00:06:26,120
+Newton called it the Principia.
+
+104
+00:06:26,940 --> 00:06:31,413
+And because the Royal Society had spent
+its money on a book about fish, Halley
+
+105
+00:06:31,453 --> 00:06:32,900
+paid to print it himself.
+
+106
+00:06:35,760 --> 00:06:37,880
+Newton's law didn't stop at the Moon.
+
+107
+00:06:38,320 --> 00:06:42,747
+The same pull keeps the Earth falling
+around the Sun, and the planets, and the
+
+108
+00:06:42,787 --> 00:06:43,760
+moons of Jupiter.
+
+109
+00:06:44,660 --> 00:06:49,180
+The Moon even pulls back on the Earth, and
+lifts the oceans into tides.
+
+110
+00:06:50,800 --> 00:06:55,157
+Halley used Newton's law to work out the
+path of a bright comet, and he made a bold
+
+111
+00:06:55,197 --> 00:06:55,780
+prediction.
+
+112
+00:06:55,860 --> 00:06:58,000
+It would come back in seventeen fifty-
+eight.
+
+113
+00:06:58,040 --> 00:07:02,720
+Halley died years before it was due.
+
+114
+00:07:02,760 --> 00:07:08,197
+But on Christmas night, seventeen fifty-
+eight, the comet appeared in the sky,
+
+115
+00:07:08,237 --> 00:07:09,220
+right on time.
+
+116
+00:07:10,180 --> 00:07:11,700
+It has carried his name ever since.
+
+117
+00:07:11,740 --> 00:07:14,900
+And you can see Newton's cannon at work
+today.
+
+118
+00:07:15,780 --> 00:07:19,803
+The International Space Station flies
+around the Earth at about twenty-eight
+
+119
+00:07:19,843 --> 00:07:21,340
+thousand kilometres an hour.
+
+120
+00:07:21,880 --> 00:07:23,700
+It's not floating above gravity.
+
+121
+00:07:24,280 --> 00:07:27,700
+It's falling, all the time, just like the
+Moon.
+
+122
+00:07:28,740 --> 00:07:33,980
+The astronauts inside float because
+they're falling too, right along with it.
+
+123
+00:07:34,860 --> 00:07:38,900
+Imagine being up there, with an apple
+drifting in front of your face.
+
+124
+00:07:39,780 --> 00:07:41,780
+It looks as if gravity has switched off.
+
+125
+00:07:42,460 --> 00:07:43,360
+But it hasn't.
+
+126
+00:07:44,040 --> 00:07:49,520
+You, the apple and the station are all
+falling together, around the world.
+
+127
+00:07:50,680 --> 00:07:52,260
+Why was this so groundbreaking?
+
+128
+00:07:53,340 --> 00:07:57,500
+Because for the first time, the heavens
+and the Earth followed the same rules.
+
+129
+00:07:58,340 --> 00:08:03,220
+The force that drops a cup off your table
+is the same force that steers the planets.
+
+130
+00:08:04,200 --> 00:08:09,380
+One law, written in mathematics, that
+works everywhere we have ever looked.
+
+131
+00:08:10,340 --> 00:08:14,880
+So tonight, if you can see the Moon, take
+a moment to look at it.
+
+132
+00:08:14,960 --> 00:08:17,280
+It is falling towards you, right now.
+
+133
+00:08:17,320 --> 00:08:19,180
+And it will keep on missing.
+
+134
+00:08:19,920 --> 00:08:22,080
+An apple, a cannon and a sum.
+
+135
+00:08:22,120 --> 00:08:25,980
+Together, they pulled the heavens down to
+Earth.
+
+136
+00:08:26,620 --> 00:08:29,020
+But gravity can bring more than apples
+down.
+
+137
+00:08:30,120 --> 00:08:34,540
+Sixty-six million years ago, something far
+bigger fell out of the sky.
+
+138
+00:08:34,580 --> 00:08:38,220
+And the clue was hidden in a thin layer of
+clay.

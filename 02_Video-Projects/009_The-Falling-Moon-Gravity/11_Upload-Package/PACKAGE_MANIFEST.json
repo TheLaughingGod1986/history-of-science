@@ -2,11 +2,12 @@
   "format": "longform",
   "video": null,
   "youtubeId": null,
-  "title": "Why Doesn't the Moon Fall to Earth?",
+  "title": "How Isaac Newton Proved Gravity Using the Moon",
   "titleVariant": "A",
   "descriptionFile": "Descriptions/moon_long_description_v01.txt",
   "tagsFile": "Tags/moon_long_tags_v01.txt",
-  "chaptersFile": null,
+  "chaptersFile": "Chapters/moon_long_chapters_v03.txt",
+  "captionsFile": "Captions/hos_009_master_v03.en.srt",
   "pinnedCommentFile": null,
   "thumbnail": "../08_Thumbnail/Selected/hos_009_thumb_A_it_misses_v01.jpg",
   "thumbnailAbc": [
@@ -14,11 +15,11 @@
     "../08_Thumbnail/Selected/hos_009_thumb_B_one_apple_v01.jpg"
   ],
   "titleAbc": [
-    "Why Doesn't the Moon Fall to Earth?",
-    "The Moon Is Falling Right Now"
+    "How Isaac Newton Proved Gravity Using the Moon",
+    "Why Doesn't the Moon Fall to Earth?"
   ],
-  "schedule": "2026-11-26T18:00:00.000Z",
-  "playlistId": null,
+  "schedule": "2026-12-03T18:00:00.000Z",
+  "playlistId": "PLEbpfUzWzcXU",
   "relatedVideoId": null,
   "privacy": "private",
   "madeForKids": false,
@@ -28,7 +29,7 @@
   "affiliate": null,
   "channel": "@HistoryOfScienceYT",
   "premiere": false,
-  "note": "Planning scaffold (4 Oct 2026); updated 24 Oct 2026 (J0899/J0909 Chief PASS). Gravity-apparatus search terms ('theory of gravity', 'how Newton proved gravity', 'Cavendish torsion balance', from breakout neighbour eyZEqSPeMwg 1.14M in 6.8h) woven into description lines 1-2 and tags. Record v02 search-titled Shorts VO ('What Would Happen If the Moon Stopped Moving?' / 'Why Doesn\\'t the Moon Crash Into the Earth?', 'How Did Newton Discover Gravity?'), and alternate every J0383-verified parchment teach graphic in 0:00-0:30 and 1:00-2:00 with a moving 3D plate. Long VO locked (v01 KEEP), v04 boards KEEP. Proposed air Thu 26 Nov 2026 18:00 UK = 18:00 UTC (GMT). Nothing changed on YouTube now.",
+  "note": "J3501 package prepared 24 Nov 2026 (£0, no YouTube changes). Search-led primary title 'How Isaac Newton Proved Gravity Using the Moon' (46 chars, hits all 3 neighbour phrases + US 10/10 gap on 'isaac newton gravity', clear of Short B 'How Did Newton Discover Gravity?') paired as Title T&C Side A with existing 'Why Doesn't the Moon Fall to Earth?' as Side B, alongside J3262 Chief-PASS thumbnails A (IT MISSES, cd44f056...) and B (ONE APPLE, 3d116433...). Exact v03 chapters (0:00, 1:24, 2:56, 4:20, 6:33) + 8 Sources + honest making-of line + en-GB captions (Captions/hos_009_master_v03.en.srt from VO_RETIME_v01/SOURCE_MAP v03). Master v03 verified on NAS: 09_Assembly/j2035_v03/hos009_long_master_v03.mp4 (sha256 744f32b7f2f95e75fabf039a345aee6c7c01ab6f304a932ebe7172bd3b3ede55, 519.000 s). Series playlist PLEbpfUzWzcXU (How Did We Discover...?) + End screen to PLEbpfUzWzcXU and Subscribe. Target air Thu 3 Dec 2026 18:00 London = 18:00 UTC (GMT), normal publish, Private until then — STRICTLY HELD pending Ben's watch OK on HOS:009 (J2037); no OK by Thu 3 Dec 12:00 London means no schedule and Ben is told.",
   "neighbours": {
     "phrases": [
       "gravity",
@@ -74,6 +75,6 @@
         "views": 1387363
       }
     ],
-    "note": "Reuse from evidence_2026-10-04_neighbours.json + 24 Oct J0899 update (eyZEqSPeMwg 1.14M in 6.8h). Gate PASS: 6 education >=1M; TED-Ed yes. Gravity-apparatus search terms ('theory of gravity', 'how Newton proved gravity', 'Cavendish torsion balance') woven into description lines 1-2 and tags (no channel names)."
+    "note": "Reuse from evidence_2026-10-04_neighbours.json + 24 Oct J0899 update (eyZEqSPeMwg 1.14M in 6.8h). Gate PASS: 6 education >=1M; TED-Ed yes. Gravity-apparatus search terms ('theory of gravity', 'how Newton proved gravity', 'Cavendish torsion balance') woven into description lines 1-2 and tags (no channel names). Search-led US/GB check added 24 Nov 2026 (SEARCH_LED_TITLE_CHECK_2026-11-24.md)."
   }
 }
