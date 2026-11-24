@@ -1,0 +1,30 @@
+{
+  "videoId": "9ETHUOUH5-A",
+  "title": "How Did Newton Discover Gravity?",
+  "privacy": "private",
+  "publishAt": "2026-12-05T11:30:00Z",
+  "uploadStatus": "processed",
+  "language": "en-GB",
+  "audioLanguage": "en-GB",
+  "categoryId": "27",
+  "madeForKids": false,
+  "selfDeclaredMadeForKids": false,
+  "duration": "PT26S",
+  "hasCustomThumbnail": true,
+  "tagCount": 5,
+  "captionUpload": {
+    "ok": true,
+    "status": 200,
+    "id": "AUieDaaLyFqL6tTnQtd7As89lBqmwYp4aDUEqiYGYXxBwUGk_5c5YuSpO6uKdB_UcvgwbybELNb5i66NS3k",
+    "error": null
+  },
+  "captions": [
+    {
+      "id": "AUieDaa_1VfDgKrwO6-SuPxp36L_er5Ll0cL0RKwGH-Q18h32YA",
+      "language": "en",
+      "status": "serving",
+      "isDraft": false,
+      "name": ""
+    }
+  ]
+}

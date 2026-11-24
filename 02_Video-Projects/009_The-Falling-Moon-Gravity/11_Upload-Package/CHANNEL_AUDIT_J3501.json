@@ -1,0 +1,51 @@
+{
+  "channelErrors": [],
+  "errorCount": 0,
+  "deliveredRows": [
+    {
+      "id": "9ETHUOUH5-A",
+      "kind": "Short",
+      "title": "How Did Newton Discover Gravity?",
+      "privacy": "private",
+      "scheduled": "2026-12-05 11:30 UK",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic \u2014 confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "OhdDVA9kWBk",
+      "kind": "Short",
+      "title": "What Would Happen If the Moon Stopped Moving?",
+      "privacy": "private",
+      "scheduled": "2026-12-04 11:30 UK",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic \u2014 confirm Yes in Studio (Altered content)"
+        }
+      ]
+    },
+    {
+      "id": "wiyfRnsTfTY",
+      "kind": "long",
+      "title": "How Isaac Newton Proved Gravity Using the Moon",
+      "privacy": "private",
+      "scheduled": "2026-12-03 18:00 UK",
+      "errors": [],
+      "warns": [
+        {
+          "severity": "warn",
+          "rule": "ai-disclosure",
+          "message": "Data API omits altered/synthetic \u2014 confirm Yes in Studio (Altered content)"
+        }
+      ]
+    }
+  ]
+}

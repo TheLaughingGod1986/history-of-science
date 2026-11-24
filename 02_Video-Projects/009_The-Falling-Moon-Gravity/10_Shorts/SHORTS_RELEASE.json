@@ -1,0 +1,46 @@
+{
+  "film": "009",
+  "about": "J3501 approved Gravity Shorts after long wiyfRnsTfTY (3 Dec 18:00 London).",
+  "shorts": [
+    {
+      "id": "OhdDVA9kWBk",
+      "title": "What Would Happen If the Moon Stopped Moving?",
+      "airDate": "2026-12-04T11:30:00Z",
+      "promotes": "009",
+      "promotesVideoId": "wiyfRnsTfTY",
+      "relatedVideoId": "wiyfRnsTfTY",
+      "tags": [
+        "isaac newton",
+        "gravity",
+        "moon orbit",
+        "newton gravity",
+        "history of science"
+      ],
+      "madeForKids": false,
+      "alteredContent": true,
+      "durationSeconds": 25.4,
+      "cover": "frame 0 of hos_009_short_A_v01",
+      "note": "J3501: Ben approved v01 2026-11-23T09:57Z. API thumbnail set, en-GB captions submitted, Buffer registered. Studio Related and cover verification pending Studio sign-in."
+    },
+    {
+      "id": "9ETHUOUH5-A",
+      "title": "How Did Newton Discover Gravity?",
+      "airDate": "2026-12-05T11:30:00Z",
+      "promotes": "009",
+      "promotesVideoId": "wiyfRnsTfTY",
+      "relatedVideoId": "wiyfRnsTfTY",
+      "tags": [
+        "isaac newton",
+        "gravity",
+        "moon orbit",
+        "newton gravity",
+        "history of science"
+      ],
+      "madeForKids": false,
+      "alteredContent": true,
+      "durationSeconds": 25.5,
+      "cover": "frame 0 of hos_009_short_B_v01",
+      "note": "J3501: Ben approved v01 2026-11-23T09:57Z. API thumbnail set, en-GB captions submitted, Buffer registered. Studio Related and cover verification pending Studio sign-in."
+    }
+  ]
+}

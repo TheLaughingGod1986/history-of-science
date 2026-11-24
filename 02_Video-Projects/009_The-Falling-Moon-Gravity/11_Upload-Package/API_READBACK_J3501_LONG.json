@@ -1,0 +1,30 @@
+{
+  "videoId": "wiyfRnsTfTY",
+  "title": "How Isaac Newton Proved Gravity Using the Moon",
+  "privacy": "private",
+  "publishAt": "2026-12-03T18:00:00Z",
+  "uploadStatus": "uploaded",
+  "language": "en-GB",
+  "audioLanguage": "en-GB",
+  "categoryId": "27",
+  "madeForKids": false,
+  "selfDeclaredMadeForKids": false,
+  "duration": "PT8M40S",
+  "hasCustomThumbnail": true,
+  "tagCount": 8,
+  "captionUpload": {
+    "ok": true,
+    "status": 200,
+    "id": "AUieDaYlRICRqKuBhz4ROiSJZsmbAEjYBWGvJTf-4NB-_Z4dVSH2AIky3ciZfCTiT_i67rVP_jhtoYsBtvc",
+    "error": null
+  },
+  "captions": [
+    {
+      "id": "AUieDaYlRICRqKuBhz4ROiSJZsmbAEjYBWGvJTf-4NB-_Z4dVSH2AIky3ciZfCTiT_i67rVP_jhtoYsBtvc",
+      "language": "en-GB",
+      "status": "serving",
+      "isDraft": false,
+      "name": "English (United Kingdom)"
+    }
+  ]
+}

@@ -3,7 +3,7 @@
   "title": "How Isaac Newton Proved Gravity Using the Moon",
   "air": "2026-12-03",
   "ready_by": "2026-12-03",
-  "summary": "J3501 package ready (24 Nov 2026, £0, no YouTube change): search-led title 'How Isaac Newton Proved Gravity Using the Moon' (T&C B: 'Why Doesn't the Moon Fall to Earth?'), en-GB v03 captions, exact chapters+8 sources, playlist PLEbpfUzWzcXU, verified NAS v03 master 744f32b7 and J3262 thumbs A/B. Held for Ben's watch OK on HOS:009 (J2037) before private upload and Thu 3 Dec 18:00 London schedule (cutoff Thu 3 Dec 12:00 London). Separate Shorts J3311.1/J3311.2 remain pending Ben's watch.",
+  "summary": "J3501: Gravity long wiyfRnsTfTY private, scheduled 3 Dec 18:00 London. Shorts OhdDVA9kWBk / 9ETHUOUH5-A private, scheduled 4 / 5 Dec 11:30 London. Ben approvals reconciled. API thumbs set, captions submitted, playlist added; Studio T&C, end screen/cards, Related and cover verification held on HOS Studio sign-in.",
   "stages": {
     "topic": {
       "state": "done"
@@ -95,21 +95,24 @@
       "note": "J3262 Acting Chief (Gemini) PASS (21 Nov 2026): long thumbnails A (IT MISSES, cd44f05657ddfea2...) and B (ONE APPLE, 3d1164330249e779...) PASS HOOK, BAND, PHONE (168x94), FAMILY (style_sheet vs 001-004), and Explorer on-model; £0 cash, 0 Flow credits (23450 before/after), Mini-NAS SHA256 parity verified. Ready for J2036 package wiring and Ben's final watch (ben_ok remains todo; not a film PASS or upload/schedule OK)."
     },
     "ben_ok": {
-      "state": "todo",
-      "due": "2026-11-24",
-      "note": "Long v03 and separate Shorts ready for private UAT; requested watch by 24 Nov 18:00 London. No approval inferred.",
-      "waiting": "Ben finished-cut watch/listen and package approval"
+      "state": "done",
+      "owner": "Ben",
+      "note": "Ben approved long J2037 v03 at 2026-11-24T08:42Z, and both J3311 Shorts v01 at 2026-11-23T09:57Z; recorded in Claude J3501 briefing."
     },
     "scheduled": {
-      "state": "blocked",
-      "due": "2026-12-03",
-      "owner": "macbook-2",
+      "state": "doing",
+      "owner": "codex",
       "since": "2026-11-24",
       "underway": false,
-      "waiting": "Ben's watch OK on HOS:009 (J2037) before private upload and Thu 3 Dec 18:00 London schedule (cutoff Thu 3 Dec 12:00 London)",
-      "note": "J3501 package ready for Thu 3 Dec 18:00 London (normal publish, no Premiere). Strictly held until Ben passes HOS:009 watch card (v03 744f32b7, J2037); no OK by Thu 3 Dec 12:00 London means no schedule and Ben is told."
+      "steps": [
+        3,
+        4
+      ],
+      "steps_unit": "delivery steps",
+      "waiting": "HOS Studio access: 9460 is signed out; 9222 renderer is unresponsive. API deliveries complete.",
+      "note": "J3501: Gravity long wiyfRnsTfTY private, scheduled 3 Dec 18:00 London. Shorts OhdDVA9kWBk / 9ETHUOUH5-A private, scheduled 4 / 5 Dec 11:30 London. Ben approvals reconciled. API thumbs set, captions submitted, playlist added; Studio T&C, end screen/cards, Related and cover verification held on HOS Studio sign-in."
     }
   },
   "claims": [],
-  "next": "Ben watches HOS:009 (Gravity long v03 + two Shorts + thumbnails A/B); after Ben's OK on J2037, upload private and schedule Thu 3 Dec 18:00 London (J3501). No OK by Thu 3 Dec 12:00 London = no schedule."
+  "next": "Finish existing uploads in Studio after HOS sign-in: A/B title+thumbnail test, end screen/cards, Related and covers. Never upload these cuts again."
 }
