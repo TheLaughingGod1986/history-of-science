@@ -1,34 +1,237 @@
 {
   "source": "scripts/channel-audit.ts --write-live (YouTube Data API, owner view)",
-  "pulledAt": "2026-09-30T19:15:49.474Z",
+  "pulledAt": "2026-11-24T19:51:39.070Z",
   "videos": [
+    {
+      "id": "4sYTV_rQcqs",
+      "kind": "Short",
+      "title": "How Does a Lightning Rod Work?",
+      "privacy": "private",
+      "scheduled": "2026-11-29 11:30 UK"
+    },
+    {
+      "id": "__UtUYdEUwg",
+      "kind": "Short",
+      "title": "Why Was Franklin's Kite Experiment So Dangerous?",
+      "privacy": "private",
+      "scheduled": "2026-11-27 11:30 UK"
+    },
+    {
+      "id": "YqCWYlv_LCY",
+      "kind": "long",
+      "title": "Benjamin Franklin's Kite Experiment Explained",
+      "privacy": "private",
+      "scheduled": "2026-11-26 18:00 UK"
+    },
+    {
+      "id": "el30-mHiH-0",
+      "kind": "Short",
+      "title": "How Does the Heart Pump Blood?",
+      "privacy": "public",
+      "scheduled": ""
+    },
+    {
+      "id": "Bks_JLId1ew",
+      "kind": "Short",
+      "title": "How Do Plants Make Oxygen?",
+      "privacy": "public",
+      "scheduled": ""
+    },
+    {
+      "id": "l8bxm9L3zl8",
+      "kind": "Short",
+      "title": "How Does a Blood Pressure Cuff Work?",
+      "privacy": "public",
+      "scheduled": ""
+    },
+    {
+      "id": "ChbsigHD5_o",
+      "kind": "Short",
+      "title": "How Do Plants Clean the Air?",
+      "privacy": "public",
+      "scheduled": ""
+    },
+    {
+      "id": "xgx2lYHhYZM",
+      "kind": "Short",
+      "title": "Why Is It Called a Vaccine?",
+      "privacy": "public",
+      "scheduled": ""
+    },
+    {
+      "id": "sY0PSQFxjp8",
+      "kind": "Short",
+      "title": "What Is Variolation?",
+      "privacy": "private",
+      "scheduled": "2026-11-28 11:30 UK"
+    },
+    {
+      "id": "xzKoHg0E0_U",
+      "kind": "Short",
+      "title": "What Is Dalton's Atomic Theory?",
+      "privacy": "public",
+      "scheduled": ""
+    },
+    {
+      "id": "Wvjd8g0CpzE",
+      "kind": "Short",
+      "title": "The Blood Vessels Finer Than a Hair",
+      "privacy": "public",
+      "scheduled": ""
+    },
+    {
+      "id": "cLKDiYP55J8",
+      "kind": "Short",
+      "title": "What Was the Edward Jenner Experiment?",
+      "privacy": "public",
+      "scheduled": ""
+    },
+    {
+      "id": "ETynHpIYLeY",
+      "kind": "long",
+      "title": "How Was the First Vaccine Made? (And Why It's Named After a Cow)",
+      "privacy": "public",
+      "scheduled": ""
+    },
+    {
+      "id": "PFj6172YU4Q",
+      "kind": "Short",
+      "title": "One Tight Band Proved Your Blood Goes Round",
+      "privacy": "public",
+      "scheduled": ""
+    },
+    {
+      "id": "VbPubYd6Fbs",
+      "kind": "long",
+      "title": "The Willow Tree That Was Made of Air",
+      "privacy": "public",
+      "scheduled": ""
+    },
+    {
+      "id": "xHnIi9GqOsM",
+      "kind": "Short",
+      "title": "Why Do Veins Have Valves?",
+      "privacy": "public",
+      "scheduled": ""
+    },
+    {
+      "id": "qW2OsD4mujc",
+      "kind": "Short",
+      "title": "The Four Elements Were Wrong",
+      "privacy": "public",
+      "scheduled": ""
+    },
+    {
+      "id": "pWySvZsneZg",
+      "kind": "Short",
+      "title": "Why Gold Foil Bounced Rutherford's Particles Back",
+      "privacy": "public",
+      "scheduled": ""
+    },
+    {
+      "id": "BW_CFAX-mxc",
+      "kind": "Short",
+      "title": "Is the Heart a Pump?",
+      "privacy": "public",
+      "scheduled": ""
+    },
+    {
+      "id": "Rl2uZ-KOTl8",
+      "kind": "Short",
+      "title": "Your Heart Pumps More Blood Than You Have",
+      "privacy": "public",
+      "scheduled": ""
+    },
+    {
+      "id": "wwcjcFfC-5M",
+      "kind": "long",
+      "title": "The Tied Arm That Proved Your Blood Circulates",
+      "privacy": "public",
+      "scheduled": ""
+    },
+    {
+      "id": "AMSriTQ-lcQ",
+      "kind": "Short",
+      "title": "Are Marie Curie's Notebooks Still Radioactive?",
+      "privacy": "public",
+      "scheduled": ""
+    },
+    {
+      "id": "-3L6HzJ_d_4",
+      "kind": "Short",
+      "title": "What Is the Pasteur Swan Neck Flask Experiment?",
+      "privacy": "public",
+      "scheduled": ""
+    },
+    {
+      "id": "OnJ8MFu0Mi0",
+      "kind": "Short",
+      "title": "How Did John Snow Stop Cholera?",
+      "privacy": "public",
+      "scheduled": ""
+    },
+    {
+      "id": "uAomPaOBrM8",
+      "kind": "long",
+      "title": "Experiments That Changed the World (Blood, Germs and Atoms)",
+      "privacy": "private",
+      "scheduled": "2026-12-10 18:00 UK"
+    },
+    {
+      "id": "LCZRHUyTiq0",
+      "kind": "Short",
+      "title": "What Are Cathode Rays?",
+      "privacy": "public",
+      "scheduled": ""
+    },
+    {
+      "id": "oKqmnJNGiHg",
+      "kind": "Short",
+      "title": "How Was Phosphorus Discovered?",
+      "privacy": "public",
+      "scheduled": ""
+    },
     {
       "id": "clV6E10NLPw",
       "kind": "Short",
       "title": "The spray that stopped surgery killing patients",
-      "privacy": "private",
-      "scheduled": "2026-10-20 11:30 UK"
+      "privacy": "public",
+      "scheduled": ""
+    },
+    {
+      "id": "c2q7w0pgcn8",
+      "kind": "Short",
+      "title": "Who Discovered Infrared Light?",
+      "privacy": "public",
+      "scheduled": ""
     },
     {
       "id": "TbMMJSRKC3U",
       "kind": "Short",
       "title": "He said every eighth element repeats",
-      "privacy": "private",
-      "scheduled": "2026-10-18 11:30 UK"
+      "privacy": "public",
+      "scheduled": ""
     },
     {
       "id": "29bpGAI0wb8",
       "kind": "Short",
       "title": "What happens if you keep cutting gold in half?",
-      "privacy": "private",
-      "scheduled": "2026-10-16 11:30 UK"
+      "privacy": "public",
+      "scheduled": ""
     },
     {
       "id": "GHZDsiH7L7A",
       "kind": "long",
-      "title": "What's Really Inside an Atom?",
-      "privacy": "private",
-      "scheduled": "2026-10-15 18:00 UK"
+      "title": "What's Inside an Atom? Mostly Empty Space",
+      "privacy": "public",
+      "scheduled": ""
+    },
+    {
+      "id": "qOZgess30h0",
+      "kind": "Short",
+      "title": "Invisible life is still everywhere",
+      "privacy": "public",
+      "scheduled": ""
     },
     {
       "id": "zI_eD3vFWmE",
@@ -104,13 +307,6 @@
       "id": "sILtQxgYQk8",
       "kind": "Short",
       "title": "A flask that proved germs come from outside",
-      "privacy": "public",
-      "scheduled": ""
-    },
-    {
-      "id": "93fPUG-hW0A",
-      "kind": "Short",
-      "title": "Invisible life is still everywhere",
       "privacy": "public",
       "scheduled": ""
     },

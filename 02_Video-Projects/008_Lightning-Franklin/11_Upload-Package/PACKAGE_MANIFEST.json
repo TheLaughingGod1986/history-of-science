@@ -1,7 +1,7 @@
 {
   "format": "longform",
   "video": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_precheck/master_v05/hos_008_master_v05.mp4",
-  "youtubeId": null,
+  "youtubeId": "YqCWYlv_LCY",
   "title": "Benjamin Franklin's Kite Experiment Explained",
   "titleVariant": "A",
   "descriptionFile": "Descriptions/lightning_long_description_v02.txt",
@@ -19,7 +19,7 @@
     "Why Did Franklin Fly a Kite in a Storm?"
   ],
   "schedule": "2026-11-26T18:00:00.000Z",
-  "playlistId": null,
+  "playlistId": "PLEbpfUzWzcXU",
   "relatedVideoId": "GHZDsiH7L7A",
   "privacy": "private",
   "madeForKids": false,
@@ -29,7 +29,7 @@
   "affiliate": null,
   "channel": "@HistoryOfScienceYT",
   "premiere": false,
-  "note": "J3500 package locked 24 Nov 2026 (£0). Master v05 ONLY: hos_008_master_v05.mp4 (sha256 d1ffb78dfc3d77519b5f37dfbddeec2f7802fa2d79e58b4524be31551a67841b, 539.626 s, 1920x1080, 24 fps; J2243 Chief PASS 15 Nov; Ben board OK 16 Nov 2026 15:24Z on HOS-008 v05, recorded via jobs.py approved). Search-led Title A: 'Benjamin Franklin's Kite Experiment Explained' (45 chars <= 50; vidIQ benjamin franklin 74,407/mo, US top-10 gap verified in evidence_2026-11-24_us_search.json, 0 HOS collisions); T&C Arm B keeps current title 'Why Did Franklin Fly a Kite in a Storm?' (39 chars). Description v02 carries v05-verified Chapters (0:00, 1:40, 3:08, 5:19, 6:49) + J1265 Sources block + honest AI production line. Captions Captions/hos_008_master_v05.en.srt (143 cues, en-GB, 98.2% token alignment on v05 audio). Thumbnails A ('THE KEY SPARKED', sha256 9127de8a...) & B ('NO BOLT STRUCK', sha256 457e5ce1...) built at £0 from clean v05 painted 3D frames, verified with thumb_preview.py + style_sheet.py. Schedule Thu 26 Nov 2026 18:00 London = 18:00 UTC (GMT), normal publish, Private until then. Studio finish on Mini: add to HOS playlist ('How Did We Discover…? | History of Science'), set end screen to HOS playlist + Subscribe, upload en-GB captions, arm 2-way Title+Thumbnail Test & Compare with search-led Title A as side A, re-verify Not Made for Kids + Altered YES.",
+  "note": "J3500 package locked 24 Nov 2026 (\u00a30). Master v05 ONLY: hos_008_master_v05.mp4 (sha256 d1ffb78dfc3d77519b5f37dfbddeec2f7802fa2d79e58b4524be31551a67841b, 539.626 s, 1920x1080, 24 fps; J2243 Chief PASS 15 Nov; Ben board OK 16 Nov 2026 15:24Z on HOS-008 v05, recorded via jobs.py approved). Search-led Title A: 'Benjamin Franklin's Kite Experiment Explained' (45 chars <= 50; vidIQ benjamin franklin 74,407/mo, US top-10 gap verified in evidence_2026-11-24_us_search.json, 0 HOS collisions); T&C Arm B keeps current title 'Why Did Franklin Fly a Kite in a Storm?' (39 chars). Description v02 carries v05-verified Chapters (0:00, 1:40, 3:08, 5:19, 6:49) + J1265 Sources block + honest AI production line. Captions Captions/hos_008_master_v05.en.srt (143 cues, en-GB, 98.2% token alignment on v05 audio). Thumbnails A ('THE KEY SPARKED', sha256 9127de8a...) & B ('NO BOLT STRUCK', sha256 457e5ce1...) built at \u00a30 from clean v05 painted 3D frames, verified with thumb_preview.py + style_sheet.py. Schedule Thu 26 Nov 2026 18:00 London = 18:00 UTC (GMT), normal publish, Private until then. Studio finish on Mini: add to HOS playlist ('How Did We Discover\u2026? | History of Science'), set end screen to HOS playlist + Subscribe, upload en-GB captions, arm 2-way Title+Thumbnail Test & Compare with search-led Title A as side A, re-verify Not Made for Kids + Altered YES.",
   "neighbours": {
     "phrases": [
       "lightning",
@@ -53,7 +53,7 @@
       {
         "id": "BIP0lYrdirI",
         "channel": "TED-Ed",
-        "title": "Rosalind Franklin: DNA's unsung hero - Cláudio L. Guerra",
+        "title": "Rosalind Franklin: DNA's unsung hero - Cl\u00e1udio L. Guerra",
         "views": 1931868
       },
       {
@@ -70,11 +70,11 @@
       },
       {
         "id": "mCAm38dSD78",
-        "channel": "Kurzgesagt – In a Nutshell",
-        "title": "Lightning: Nature’s Plasma Highway",
+        "channel": "Kurzgesagt \u2013 In a Nutshell",
+        "title": "Lightning: Nature\u2019s Plasma Highway",
         "views": 2121750
       }
     ],
-    "note": "Auto from neighbours.py 2026-10-04. Gate PASS: 6 education ≥1M. Prefer SciShow Kids / MinuteEarth / Kurzgesagt / TED-Ed static electricity over weak TED-Ed name collisions (Rosalind Franklin; Cambodian lightning myth). Be Smart Franklin kite ~696k is on-topic under the 1M cut."
+    "note": "Auto from neighbours.py 2026-10-04. Gate PASS: 6 education \u22651M. Prefer SciShow Kids / MinuteEarth / Kurzgesagt / TED-Ed static electricity over weak TED-Ed name collisions (Rosalind Franklin; Cambodian lightning myth). Be Smart Franklin kite ~696k is on-topic under the 1M cut."
   }
 }

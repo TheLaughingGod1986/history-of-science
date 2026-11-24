@@ -3,7 +3,7 @@
   "title": "Benjamin Franklin's Kite Experiment Explained",
   "air": "2026-11-26",
   "ready_by": "2026-11-15",
-  "summary": "Franklin master v05 (d1ffb78d...841b) passed J2243 QA + Chief review (PR #595) and Ben's watch OK on 16 Nov 15:24Z (Short A v04 OK 12 Nov, Short C v07 OK 18 Nov). J3500 search-led title, v05-verified Chapters+Sources description v02, 143-cue en-GB SRT captions, and £0 A/B thumbnails (THE KEY SPARKED / NO BOLT STRUCK) are packaged on macbook/J3500; ready for Chief PR merge + Mini private upload & Thu 26 Nov 18:00 London schedule.",
+  "summary": "Uploaded & scheduled on @HistoryOfScienceYT (J3500, 24 Nov 2026): Long v05 YqCWYlv_LCY Private for Thu 26 Nov 18:00 UK (en-GB captions serving, playlist PLEbpfUzWzcXU, Thumb A set), Short A v04 __UtUYdEUwg Private for Fri 27 Nov 11:30 UK, Short C v07 4sYTV_rQcqs Private for Sun 29 Nov 11:30 UK (en-GB captions serving, covers set, Buffer registered). channel:audit PASS (72 videos, 0 errors). Studio-only finish (end screen, Title+Thumb T&C, Shorts Related, visual Altered/Audience check) waits for Ben sign-in on HOS Studio CDP 9460.",
   "stages": {
     "topic": {
       "state": "done"
@@ -96,19 +96,19 @@
     },
     "thumbnails": {
       "state": "doing",
-      "due": "2026-11-24",
+      "due": "2026-11-26",
       "owner": "Chief",
-      "since": "2026-11-24T10:48",
+      "since": "2026-11-24T19:52",
       "underway": false,
-      "waiting": "Chief HOOK/BAND/PHONE PASS on J3500 A/B thumbnails (THE KEY SPARKED / NO BOLT STRUCK) and PR merge",
+      "waiting": "Chief formal PASS & Studio T&C arming after Ben signs into HOS Studio CDP 9460 (Gemini checked style sheet + 168px previews: both A THE KEY SPARKED and B NO BOLT STRUCK pass HOOK/BAND/PHONE; A set as primary via API on YqCWYlv_LCY)",
       "steps": [
         2,
         2
       ],
-      "steps_unit": "A/B thumbnails built (£0) with thumb_preview + style_sheet",
-      "left": "Chief review & PASS",
-      "eta": "2026-11-24",
-      "note": "J3500 £0 A/B thumbnails built from clean v05 painted 3D frames (A: THE KEY SPARKED, B: NO BOLT STRUCK), checked with thumb_preview.py + style_sheet.py and mirrored to NAS; awaiting Chief PASS.",
+      "steps_unit": "A/B thumbnails built & checked at 168px; primary A set via API",
+      "left": "Studio Title+Thumb T&C arming after 9460 sign-in",
+      "eta": "2026-11-25",
+      "note": "Both A (THE KEY SPARKED) and B (NO BOLT STRUCK) pass HOOK, BAND, PHONE at 168px on hos_008_thumbs_AB_v01_style_sheet.jpg + previews. Primary A set on YqCWYlv_LCY via API; B ready for Studio 2-way Title+Thumb T&C once 9460 is signed in.",
       "jobs": [
         "J3500"
       ]
@@ -123,25 +123,25 @@
       "note": "Ben OK on board checks API: Long v05 (HOS-008, d1ffb78d...841b) OK 2026-11-16T15:24:18Z (recorded on J2243 via jobs.py approved); Short A v04 (HOS-J2699) OK 2026-11-12T14:45:41Z; Short C v07 (HOS-J2984) OK 2026-11-18T11:31:40Z."
     },
     "scheduled": {
-      "state": "doing",
-      "owner": "Mini",
+      "state": "blocked",
+      "owner": "Ben",
       "due": "2026-11-26",
-      "since": "2026-11-24T10:48",
+      "since": "2026-11-24T19:52",
       "underway": false,
-      "waiting": "Chief PR merge + Mini YouTube API/Studio upload of v05 (d1ffb78d...841b) & schedule Thu 26 Nov 18:00 London + Shorts A/C",
+      "waiting": "Ben sign-in on HOS Studio Chrome (CDP 9460) for Studio-only finish: end screen (playlist PLEbpfUzWzcXU + Subscribe), 2-way Title+Thumb T&C on YqCWYlv_LCY, Related -> YqCWYlv_LCY on __UtUYdEUwg & 4sYTV_rQcqs, and visual Altered/Audience confirmation",
       "steps": [
         1,
         2
       ],
-      "steps_unit": "upload package ready; awaiting Mini YouTube upload & Studio finish",
-      "left": "Mini upload, schedule & Studio finish (~30 min)",
+      "steps_unit": "all 3 API uploads/schedules/captions/playlist/Buffer done; Studio-only finish pending 9460 sign-in",
+      "left": "Studio-only finish (~10 min once Ben signs into 9460)",
       "eta": "2026-11-25",
-      "note": "Package ready (lint:package PASS, check_all.sh PASS). MacBook cannot upload/schedule videos (policy + no 07_Content-Ops/.env); handed off to Chief/Mini for private upload & Thu 26 Nov 18:00 London schedule.",
+      "note": "API uploads done (channel:audit PASS: 72 videos, 0 errors): Long v05 YqCWYlv_LCY Private Thu 26 Nov 18:00 UK (en-GB captions serving, playlist PLEbpfUzWzcXU, Thumb A set); Short A v04 __UtUYdEUwg Private Fri 27 Nov 11:30 UK; Short C v07 4sYTV_rQcqs Private Sun 29 Nov 11:30 UK (en-GB captions serving, covers set, registered in Orbit social/hos/UPLOADS.json). HOS Studio CDP 9460 is signed out (accounts.google.com).",
       "jobs": [
         "J3500"
       ]
     }
   },
   "claims": [],
-  "next": "Chief PASS thumbnails + merge J3500 PR -> Mini uploads master v05 private, schedules Thu 26 Nov 18:00 London, sets HOS playlist end screen + captions + Title/Thumb T&C, then schedules Short A (Fri 27 Nov 11:30) & Short C (Sun 29 Nov or Tue 1 Dec 11:30)."
+  "next": "Ben signs into HOS Studio CDP 9460 once -> Mini completes Studio-only finish on YqCWYlv_LCY (end screen + Title/Thumb T&C) and Shorts __UtUYdEUwg / 4sYTV_rQcqs (Related -> YqCWYlv_LCY + visual Altered/Audience check) before Thu 26 Nov 18:00 UK."
 }

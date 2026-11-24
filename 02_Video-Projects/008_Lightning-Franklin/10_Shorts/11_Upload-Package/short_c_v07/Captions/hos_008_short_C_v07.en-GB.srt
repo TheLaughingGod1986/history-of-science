@@ -1,0 +1,31 @@
+1
+00:00:00,033 --> 00:00:01,886
+That lightning rod was Franklin's idea.
+
+2
+00:00:02,100 --> 00:00:04,760
+Lightning takes the easiest path to the ground.
+
+3
+00:00:05,360 --> 00:00:08,680
+A wooden roof is a terrible path, so it bursts
+
+4
+00:00:08,740 --> 00:00:09,440
+into flame.
+
+5
+00:00:10,180 --> 00:00:12,180
+A metal rod is an easy one.
+
+6
+00:00:12,900 --> 00:00:15,740
+The lightning runs down the rod, round the building,
+
+7
+00:00:16,020 --> 00:00:16,920
+and into the earth.
+
+8
+00:00:17,820 --> 00:00:20,780
+Some towers are struck over 20 times a year.
