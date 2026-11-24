@@ -11,7 +11,7 @@ message is a PR comment that starts with a hidden header:
 
   from/to:  claude | grok | cursor | codex | ben | gemini | chief
   status: task | review | question | blocked | approval | done | ruling | pass | ruled
-  `to=chief` is the elected Chief (Grok, else Claude, Codex, Gemini), never Cursor.
+  `to=chief` is the elected Chief (Claude, else Codex, Gemini, Grok Bot — Ben, 24 Nov 2026), never Cursor.
 A comment with no header is Ben talking. Claude reads every comment (GitHub wakes its session);
 the Mini's watcher hands Grok every comment addressed to Grok. Images go on the `hos-desk`
 branch under _desk/ (never on main); video and audio never go in git.
@@ -52,7 +52,7 @@ HOME = Path(os.environ.get("HOS_DESK_HOME", Path.home() / ".hos_desk"))
 PARTIES = ("claude", "grok", "cursor", "codex", "ben", "chief", "gemini")
 WRITERS = ("grok", "cursor", "codex", "claude", "gemini")  # who may post and read an inbox; not the role name
 SENDERS = ("claude", "grok", "cursor", "codex", "ben", "gemini")  # never post as chief; that would impersonate the role
-CHIEF_DESK_IDS = ("grok", "claude", "codex", "gemini")  # Cursor is outside the succession (Ben, 26 Oct 2026)
+CHIEF_DESK_IDS = ("claude", "codex", "gemini", "grok")  # Ben, 24 Nov 2026 (Grok Bot last); Cursor is outside the succession (Ben, 26 Oct 2026)
 CODE = "j2324-safe-role-routing"
 LOADED_SHA256 = hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
 # Reply outcomes resolve correspondence; they do not approve a film or stage.
@@ -747,7 +747,7 @@ def main() -> None:
     p = sub.add_parser("inbox")
     p.add_argument("--watch", type=int, default=0, help="poll every N seconds")
     p.add_argument("--run", action="store_true", help="start the agent with $HOS_DESK_AGENT_CMD")
-    p.add_argument("--as", dest="agent", choices=WRITERS, default="grok", help="whose inbox (cursor or codex while Grok is out)")
+    p.add_argument("--as", dest="agent", choices=WRITERS, default="grok", help="whose inbox (claude, codex, gemini, grok, or cursor as last resort)")
     p.add_argument("--recover-since-id", type=int, help="disabled: bulk replay is unsafe; use reviewed --recover-id")
     p.add_argument("--recover-id", type=int, help="admit one reviewed unresolved message by id; never rewinds watermarks")
     p.set_defaults(fn=cmd_inbox)

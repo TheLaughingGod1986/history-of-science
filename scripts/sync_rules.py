@@ -56,6 +56,9 @@ STALE = [
     (r"Grok does not ping Ben directly", "Chief talks to Ben (Chief owns the studio, 9 Oct 2026)"),
     (r"\*\*Ask Claude first\*\* \(Ben, 3 Oct", "ask Chief first; Chief holds Claude's old role (9 Oct 2026)"),
     (r"\*\*Claude asks Ben at the final check-in", "Claude or Chief asks Ben at the final check-in (11 Oct 2026)"),
+    (r"History of Science keeps Grok first", "HOS 11 Nov Grok-first chain ended 24 Nov 2026 (Claude -> Codex -> Gemini -> Grok Bot)"),
+    (r"Grok Bot \(`chief`\) → Claude", "Chief chain is Claude -> Codex -> Gemini -> Grok Bot (Ben, 24 Nov 2026)"),
+    (r"While Grok is out \(6 Oct 2026\), Cursor is the write lane", "Cursor and Grok Bot are last resort everywhere (Ben, 24 Nov 2026)"),
 ]
 BLOCK = re.compile(r"(<!-- SYNC: (?P<file>AGENTS\.md|studio/RULES\.md)#(?P<head>[^>]+?) -->\n)(?P<body>.*?)(<!-- /SYNC -->)", re.S)
 
