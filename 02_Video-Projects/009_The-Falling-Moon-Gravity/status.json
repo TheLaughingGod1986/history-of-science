@@ -109,7 +109,7 @@
         4
       ],
       "steps_unit": "delivery steps",
-      "waiting": "HOS Studio access: 9460 is signed out; 9222 renderer is unresponsive. API deliveries complete.",
+      "waiting": "Studio access prerequisite recorded in local handoff. API deliveries complete.",
       "note": "J3501: Gravity long wiyfRnsTfTY private, scheduled 3 Dec 18:00 London. Shorts OhdDVA9kWBk / 9ETHUOUH5-A private, scheduled 4 / 5 Dec 11:30 London. Ben approvals reconciled. API thumbs set, captions submitted, playlist added; Studio T&C, end screen/cards, Related and cover verification held on HOS Studio sign-in."
     }
   },

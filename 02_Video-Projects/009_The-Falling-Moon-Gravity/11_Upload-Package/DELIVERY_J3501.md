@@ -18,7 +18,7 @@ Both Shorts were registered for the daily HOS Buffer mirror with verified hashes
 
 ## Remaining Studio work
 
-HOS Studio on port 9460 is signed out. The existing port 9222 video-details renderer gives no response to a bounded Runtime probe; Playwright attachment also failed to complete. Chrome was left running. Ben's HOS Studio sign-in is required before continuing through the working Studio browser.
+Studio finishing is unavailable. The access prerequisite and diagnostic evidence are recorded in the local handoff.
 
 Finish these existing ids only; never upload a second copy:
 
