@@ -1,7 +1,7 @@
-# Pre-Build vidIQ & Public-Search Audit — `HOS:127` (`How Do Airplanes Fly? (The 1901 Wind Tunnel)`)
+# Pre-Build vidIQ & Public-Search Audit — `HOS:127` (`Wright Brothers First Flight: The 1901 Wind Tunnel`)
 
 **Hard gate:** Run **before** locking script, VO, prompts, or picture gen for any new long.  
-**Status (`J3264`, `2026-11-21`):** Rule-E topic go/no-go review **GO (`97.2 / 100` · `9.72 / 10`)** in `jobs/WIP.json` `next_hos` under **Rule G** (`4 / 4` active HOS slots full: `008`, `009`, `010`, `013`). Keyword demand incorporates Ben-approved `J3224` vidIQ metrics (`05_Analytics/hos/search_research/2026-11-20.md`, locked `2026-11-20`) alongside signed-out GB `public_search.py` and `neighbours.py` (`£0.00`). Per-title vidIQ app numeric scores remain pending when `HOS:127` enters active WIP. **All historical and scientific facts below are UNVERIFIED working notes pending `SOURCES.md` verbatim quotes and the `facts` lane (`gemini-agy`).**
+**Status (`J3504`, `2026-11-24`):** Rule-E topic go/no-go review **GO (`97.2 / 100` · `9.72 / 10`, `J3264`, `2026-11-21`)**; accelerated into the December `hos-search-2027-01` 4-film test cohort as **Cluster 4 Lead Film 4 (target Thu 31 Dec 2026, 18:00 London)** (`J3495` / PR `#1239`). Package-first scoring (`PACKAGE_FIRST_SCORING_v01.md`), `wright_brothers_wind_tunnel_script_master_v01.md`, `SOURCES.md`, `FACT_NOTES_v01.md`, `SHORTS_SCRIPTS_v01.md`, and `LAUNCH_PLAN.md` drafted in `J3504` (`£0.00`). Per-title vidIQ app numeric scores remain pending when `HOS:127` enters active WIP under Rule G. **Awaits independent `facts` lane (`gemini-agy`) audit and Chief script/package lock before any VO or picture spend.**
 
 ---
 
@@ -10,11 +10,11 @@
 | Field | Value |
 |-------|-------|
 | ID / slug | `127_Wright-Brothers-How-Do-Airplanes-Fly-Wind-Tunnel` |
-| Working title | `How Do Airplanes Fly? (The 1901 Wind Tunnel)` (`44` chars) · T&C Arm 2: `Wright Brothers First Flight: The 1901 Wind Tunnel` (`50` chars) |
-| Date pulled | `2026-11-21` (`J3245` pull + `J3264` Rule-E audit; `J3224` vidIQ `2026-11-20`) |
-| Credits used (approx) | `0` (`£0.00` in `J3245` & `J3264`) |
-| 2027 Search Plan slot | Cluster 4 Lead Film (Thu 28 Jan 2027) — *Breakthrough & Lost Engineering* (`hos-search-2027-01`) |
-| Brand guardrails | Wonder over fearbait · peer-reviewed aerodynamics & archival history · HOS lane (a familiar thing, and the moment we found out) |
+| Working title | `Wright Brothers First Flight: The 1901 Wind Tunnel` (`50` chars, Arm A) · T&C Arm B: `Wright Brothers First Flight: The 1901 Wind Tunnel That Solved Lift` (`67` chars) · T&C Arm C: `How Do Airplanes Fly? (The 1901 Wind Tunnel)` (`44` chars) |
+| Date pulled | `2026-11-21` (`J3245` / `J3264`) + `2026-11-24` (`J3504` plan-title collision check; `J3224` vidIQ `2026-11-20`) |
+| Credits used (approx) | `0` (`£0.00` in `J3245`, `J3264`, and `J3504`) |
+| 2027 Search Plan slot | Cluster 4 Lead Film 4 (accelerated target **Thu 31 Dec 2026, 18:00 London**; Ben's watch Mon 28 Dec) — *Breakthrough & Lost Engineering* (`hos-search-2027-01`) |
+| Brand guardrails | Wonder over fearbait · primary NASA/Smithsonian/NPS aerodynamics & archival history · HOS lane (a familiar thing, and the moment we found out) |
 
 ---
 
@@ -68,18 +68,19 @@ Saved in [`evidence_2026-11-21_neighbours.json`](evidence_2026-11-21_neighbours.
 
 ---
 
-## 3. Title ABC & Shorts Titles (Collision-Checked `2026-11-21`)
+## 3. Title ABC & Shorts Titles (Collision-Checked `2026-11-21` & `2026-11-24` · Full Scoring in `PACKAGE_FIRST_SCORING_v01.md`)
 
 **Growth System v2 + LEARNINGS Rule 15 & Rule 26:** search phrase first · `≤50` characters ideal (`≤70` max) · no series suffix · `0` exact collisions with live videos.
 
 | | Title | Chars | Exact Collisions | Role & Notes | Keep? |
 |---|-------|------:|-----------------:|--------------|-------|
-| **A (Primary)** | `How Do Airplanes Fly? (The 1901 Wind Tunnel)` | `44` | `0` | Exact autocomplete question `"how do airplanes fly"` + concrete 1901 apparatus twist | **Keep (Lead)** |
-| **B (T&C Arm 2)** | `Wright Brothers First Flight: The 1901 Wind Tunnel` | `50` | `0` | Exact `J3224` Lead Film 4 Anglosphere query (`19.0k`/mo, comp `45`, `10/10` US gap) | **Keep (T&C B)** |
-| **C (Backup)** | `How Did the Wright Brothers Solve Flight? (1901)` | `48` | `0` | Direct discovery question + 1901 date hook | **Keep (Backup)** |
+| **A (Primary ≤50c · PICK)** | `Wright Brothers First Flight: The 1901 Wind Tunnel` | `50` | `0` (`11-21`) | Exact `J3224` Cluster 4 Lead Film query (`19.0k`/mo, comp `45`, `10/10` US gap) + `1901 Wind Tunnel` twist (`96/100` draft rubric) | **PICK (Primary Arm A)** |
+| **B (T&C Arm B · Plan Title)** | `Wright Brothers First Flight: The 1901 Wind Tunnel That Solved Lift` | `67` | `0` (`11-24`) | Verbatim `hos-search-2027-01` plan title; `evidence_2026-11-24_plan_title_search.json` (`93/100` draft rubric) | **KEEP (T&C Arm B)** |
+| **C (T&C Arm C · Physics Lead)** | `How Do Airplanes Fly? (The 1901 Wind Tunnel)` | `44` | `0` (`11-21`) | Exact evergreen autocomplete question `"how do airplanes fly"` + 1901 apparatus (`93/100` draft rubric) | **KEEP (T&C Arm C)** |
+| **Reserve Backup** | `How Did the Wright Brothers Solve Flight? (1901)` | `48` | `0` (`11-21`) | Direct discovery question + 1901 date hook | Reserve backup |
 | **Reject** | `Aerodynamic Lift Coefficients and Control Surfaces \| HOS` | `57` | — | Academic jargon + forbidden series suffix | **Reject** |
-| **Short S01** | `Why Did the Wright Brothers Build a Wind Tunnel?` | `48` | `0` | `16–19 s` positive search question (19 Nov house rules) | **Keep (Short 1)** |
-| **Short S02** | `How Did the Wright Brothers Steer the First Plane?` | `50` | `0` | `16–19 s` positive search question (19 Nov house rules) | **Keep (Short 2)** |
+| **Short S01** | `Why Did the Wright Brothers Build a Wind Tunnel?` | `48` | `0` (`11-21`) | `16–19 s` positive search question (Sat 2 Jan 11:30 · 42 words · Ben 19 Nov house rules) | **Keep (Short 1)** |
+| **Short S02** | `How Did the Wright Brothers Steer the First Plane?` | `50` | `0` (`11-21`) | `16–19 s` positive search question (Fri 1 Jan 11:30 · 42 words · Ben 19 Nov house rules) | **Keep (Short 2)** |
 
 ---
 
@@ -119,11 +120,13 @@ Saved in [`evidence_2026-11-21_neighbours.json`](evidence_2026-11-21_neighbours.
 
 ## 7. Sign-Off (Block Production Until Checked)
 
-- [x] `J3224` vidIQ Anglosphere keyword & outlier proof verified (`2026-11-20`, locked `2803f878c`)
-- [x] Signed-out public search & neighbour gate PASS (`2026-11-21`, `5` strictly on-topic `≥1M` neighbours, `TED-Ed` ★ `#1`)
-- [x] Title ABC + Shorts S01/S02 collision-checked (`0` exact collisions) & Smeaton math / physics guardrails logged (`J3264`)
-- [ ] Per-title vidIQ app numeric scores pulled (or waived) when entering active WIP
-- [ ] `SOURCES.md` verbatim quotes + `facts` lane (`gemini-agy`) PASS
-- [ ] Script reviewer ≥ `90` (`npm run review:script`) & `gate:episode` PASS
+- [x] **Keywords** verified (`wright brothers first flight` `19,018`/mo comp `45` `10/10` US gap, `the wright brothers` `+74.8%`, `how do airplanes fly`, `4/4` autocomplete `yes`, `5` strictly on-topic `≥1M` neighbours incl. `TED-Ed` ★ `#1`, low-RPM `aviation history` PK 35% rejected).
+- [x] **Title** primary and Test & Compare variants scored (`PACKAGE_FIRST_SCORING_v01.md`, `0` exact collisions across Titles A/B/C and Shorts S01/S02; `J3264` Smeaton `50% TOO HIGH`, accurate lift physics, and Kill Devil Hills guardrails locked).
+- [x] **Script reviewer** (`npm run review:script` PASS `93.6/100`) and `npm run gate:episode` PASS verified on `01_Script/wright_brothers_wind_tunnel_script_master_v01.md` (drafted with primary NASA/Smithsonian/NPS quotes in `SOURCES.md` & `FACT_NOTES_v01.md`; pending independent `facts` lane audit and Chief lock before any VO or picture spend).
 
-**Rule-E Topic Review Sign-off:** `macbook-2` (`Gemini 4 Neon (High)`, `J3264`, `2026-11-21`) — **GO (`97.2 / 100`) in `next_hos` under Rule G. NOT cleared for script lock, VO, or picture spend until active HOS WIP slot opens.**
+**Signed off by:** Gemini (`J3504` draft package & script — awaits independent `facts` lane & Chief lock before VO/picture spend; `£0.00` spent) · **Date:** `2026-11-24`
+
+- **Rule-E topic review (`J3264`, `2026-11-21`):** **GO (`97.2 / 100` · `9.72 / 10`, `10/10` gates PASS)**
+- **Package-first + script draft (`J3504`, `2026-11-24`):** **DRAFTED** (8 days ahead of Wed 2 Dec 18:00 London target)
+- **Independent `facts` lane & Chief script lock due:** Fri 11 Dec 2026
+- **Ben's watch by:** Mon 28 Dec 2026 · **Target air:** Thu 31 Dec 2026 18:00 London (slides one week if not ready)

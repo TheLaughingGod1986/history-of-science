@@ -1,46 +1,93 @@
 {
   "film": "127",
-  "title": "How Do Airplanes Fly? (The 1901 Wind Tunnel)",
-  "summary": "Backlog topic proposed by J3245 and Rule-E pre-cleared by J3264 (GO 97.2/100, 21 Nov 2026). Implements Ben's approved 2027 search plan (J3224 Cluster 4 Lead Film, Thu 28 Jan 2027: wright brothers first flight 19.0k/mo, comp 45, 10/10 US SERP gap). Neighbours.py PASS verified (8 raw / 6 aviation / 5 strictly on-topic education videos >=1M incl. TED-Ed 2.57M, minutephysics 2.48M, SciShow Kids 1.75M, Veritasium 1.66M, Simple History 1.41M); public_search.py autocomplete yes (4 phrases) & 0 exact collisions. All claims unverified. Waits in next_hos under Rule G for a free HOS place, SOURCES.md primary quotes, and the facts lane.",
+  "title": "Wright Brothers First Flight: The 1901 Wind Tunnel",
+  "summary": "Cluster 4 Lead Film 4 of Ben's approved hos-search-2027-01 accelerated December test cohort (target air Thu 31 Dec 2026 18:00 London, Ben's watch by Mon 28 Dec; slides a week if not ready). Rule-E GO (J3264, 97.2/100). J3504 (24 Nov 2026) delivered PACKAGE_FIRST_SCORING_v01.md (Title A 50c 96/100, T&C B 67c 93/100, T&C C 44c 93/100; Thumb A 50% TOO HIGH 96/100, Thumb B 200 TINY WINGS 93/100), wright_brothers_wind_tunnel_script_master_v01.md (review:script PASS 93.6/100, gate:episode PASS, 1,239 words, 5 parts, 7 DATA+SCALE, 5 WHO, 12 WHEN, 4 FACT, 2 EXPLORER ACTS), SOURCES.md, FACT_NOTES_v01.md (17 primary NASA/Smithsonian/NPS quote rows carrying forward all J3264 guardrails), SHORTS_SCRIPTS_v01.md (two 16-19s Shorts, S01 48c / S02 50c, 42 words each, 0 collisions), and LAUNCH_PLAN.md. Awaits independent facts lane (gemini-agy) and Chief script lock before any VO or picture spend (£0.00 spent; Rule G WIP cap respected behind HOS:136 and HOS:137).",
   "stages": {
     "topic": {
-      "state": "todo",
-      "note": "J3245 topic brief written; J3264 Rule-E topic go/no-go review GO (97.2/100 in next_hos under Rule G); Smeaton percentage math (50% too high vs 40% Thumb C fix), equal-transit-time lift ban, 5-part map, and raw JSON fidelity fixes logged; all claims unverified pending SOURCES.md and facts lane when an active HOS slot opens"
+      "state": "done",
+      "due": "2026-11-26",
+      "owner": "Claude",
+      "note": "J3245 topic brief + J3264 Rule-E topic go/no-go review GO (97.2/100, 10/10 gates PASS, 2026-11-21); neighbours.py PASS (5 strictly on-topic >=1M incl. TED-Ed 2.57M); public_search.py 4/4 autocomplete yes & 0 exact collisions; Smeaton 50% too high, no equal-transit-time lift fallacy, and Kill Devil Hills guardrails logged"
     },
     "script": {
-      "state": "todo"
+      "state": "doing",
+      "due": "2026-12-11",
+      "owner": "Claude",
+      "since": "2026-11-24",
+      "underway": false,
+      "waiting": "HOS script review and Chief lock on wright_brothers_wind_tunnel_script_master_v01.md (J3504 draft, 93.6/100 PASS)",
+      "note": "J3504 package-first scoring + 5-part 7-9 min v01 script draft delivered 8 days ahead of Wed 2 Dec target (review:script PASS 93.6/100, gate:episode PASS); awaiting independent facts audit & Chief lock"
     },
     "facts": {
-      "state": "todo"
+      "state": "doing",
+      "due": "2026-12-11",
+      "owner": "Gemini",
+      "since": "2026-11-24",
+      "underway": false,
+      "waiting": "independent facts lane (gemini-agy) verification of SOURCES.md & FACT_NOTES_v01.md (17 rows) before Chief lock",
+      "note": "SOURCES.md and FACT_NOTES_v01.md (17 live NASA GRC, Smithsonian NASM, and NPS institutional quotes + honestly labelled secondary lifespans) drafted in J3504, carrying forward J3264 Smeaton 0.005 vs 0.0033 (51.5% / ~50% too high), accurate lift physics, and Kill Devil Hills precision"
     },
     "package": {
-      "state": "todo"
+      "state": "doing",
+      "due": "2026-12-11",
+      "owner": "Claude",
+      "since": "2026-11-24",
+      "underway": false,
+      "waiting": "Chief package lock, VO re-timing, and PACKAGE_MANIFEST.json before upload",
+      "note": "PACKAGE_FIRST_SCORING_v01.md, updated PRE_BUILD_VIDIQ_AUDIT.md, evidence_2026-11-24_plan_title_search.json (0 collisions on 67c plan title), and LAUNCH_PLAN.md delivered in J3504 (Title A 50c, T&C B 67c, T&C C 44c; Thumb A 50% TOO HIGH, Thumb B 200 TINY WINGS)"
     },
     "vo": {
-      "state": "todo"
+      "state": "todo",
+      "due": "2026-12-15",
+      "owner": "Cursor",
+      "waiting": "after script & facts lock by Chief and open HOS WIP place behind HOS:136 and HOS:137 (Rule G)"
     },
     "shorts_scripts": {
-      "state": "todo"
+      "state": "doing",
+      "due": "2026-12-11",
+      "owner": "Claude",
+      "since": "2026-11-24",
+      "underway": false,
+      "waiting": "review and Chief lock of SHORTS_SCRIPTS_v01.md (S01 Sat 2 Jan 48c & S02 Fri 1 Jan 50c, 42 words each, 16-19s house rules)",
+      "note": "Two standalone 16-19s search-question Shorts drafted in J3504 (S01 42w / S02 42w; 0 collisions verified 2026-11-21; Ben 19 Nov 3D cartoon house rules)"
     },
     "shorts_vo": {
-      "state": "todo"
+      "state": "todo",
+      "due": "2026-12-16",
+      "owner": "Cursor",
+      "waiting": "after shorts_scripts PASS and open HOS WIP place"
     },
     "picture": {
-      "state": "todo"
+      "state": "todo",
+      "due": "2026-12-22",
+      "owner": "Cursor",
+      "waiting": "after script & VO PASS (Flow credits within existing plan; renews 12 Dec)"
     },
     "edit": {
-      "state": "todo"
+      "state": "todo",
+      "due": "2026-12-24",
+      "owner": "Cursor",
+      "waiting": "after picture PASS"
     },
     "thumbnails": {
-      "state": "todo"
+      "state": "todo",
+      "due": "2026-12-24",
+      "owner": "Codex",
+      "waiting": "after script & VO PASS (Thumb A 50% TOO HIGH, Thumb B 200 TINY WINGS; §2.6 hand-verified text)"
     },
     "ben_ok": {
-      "state": "todo"
+      "state": "todo",
+      "due": "2026-12-28",
+      "owner": "Ben",
+      "waiting": "after finished long, Shorts, and thumbnails pass Chief QA"
     },
     "scheduled": {
-      "state": "todo"
+      "state": "todo",
+      "due": "2026-12-29",
+      "owner": "Chief",
+      "waiting": "after Ben's watch OK (target air Thu 31 Dec 2026 18:00 London)"
     }
   },
   "claims": [],
-  "next": ""
+  "next": "Independent facts lane (gemini-agy) & Chief script/package lock on J3504 v01 draft (due Fri 11 Dec; Ben's watch Mon 28 Dec; target air Thu 31 Dec)"
 }
