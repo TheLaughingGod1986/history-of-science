@@ -1,0 +1,45 @@
+{
+  "film": "134",
+  "title": "What Is Antimatter? (The 1932 Wrong-Way Track)",
+  "summary": "Rule-E GO (96.9/100 · 9.69/10 Opportunity Score, 10/10 gates PASS) in J3459 (2026-11-24); pre-cleared in jobs/WIP.json next_hos under Rule G (4/4 active HOS slots full). Modern physics discovery story (Cluster 2 fit: Dirac 1928-1931 mirror equation, Anderson 1932 cloud-chamber positron lead-plate photograph, Segre & Chamberlain 1955 Bevatron antiproton, CERN ALPHA-g 2023 falling-antimatter proof). neighbours.py PASS (8 raw / 8 strictly on-topic edu videos >=1M; 1 <1M Khan Academy math row excluded); public_search.py 10 queries / 78 rows (0 empty), 5/5 core phrases autocomplete=yes, 0 exact title collisions; Thumb A/B/C §2.5 & §2.B.1 fixed (BACKWARD PARTICLE / PURE LIGHT FLASH / CERN'S GRAVITY DROP); PRE_BUILD_VIDIQ_AUDIT.md populated. All claims UNVERIFIED pending open WIP slot, SOURCES.md, and facts lane.",
+  "stages": {
+    "topic": {
+      "state": "todo"
+    },
+    "script": {
+      "state": "todo"
+    },
+    "facts": {
+      "state": "todo"
+    },
+    "package": {
+      "state": "todo"
+    },
+    "vo": {
+      "state": "todo"
+    },
+    "shorts_scripts": {
+      "state": "todo"
+    },
+    "shorts_vo": {
+      "state": "todo"
+    },
+    "picture": {
+      "state": "todo"
+    },
+    "edit": {
+      "state": "todo"
+    },
+    "thumbnails": {
+      "state": "todo"
+    },
+    "ben_ok": {
+      "state": "todo"
+    },
+    "scheduled": {
+      "state": "todo"
+    }
+  },
+  "claims": [],
+  "next": ""
+}
