@@ -1,0 +1,30 @@
+{
+  "job": "J3511",
+  "worker": "codex",
+  "state": "blocked_before_upload",
+  "approved_title": "Are Birds Really Dinosaurs?",
+  "master": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/10_Shorts/J2172/short_C/hos_010_short_C_v01.mp4",
+  "expected_sha256": "698db62789e1e6884ae15797dc51083c39bbc0ee3c0cc1ecf83f92e2e87a0359",
+  "observed_sha256": "698db62789e1e6884ae15797dc51083c39bbc0ee3c0cc1ecf83f92e2e87a0359",
+  "master_bytes": 13612892,
+  "recorded_ship_gates": {
+    "polish": 0,
+    "picture": 0,
+    "music": 0,
+    "open": 0,
+    "vo_check": 0,
+    "sfx": 0
+  },
+  "package_lint_exit": 0,
+  "channel_audit_exit": 2,
+  "channel_audit_error": "Cannot find module '../../generated/prisma/client'",
+  "prisma_generate_exit": 1,
+  "prisma_generate_error": "P1012: datasource db url missing; local Prisma CLI 6.19.0, package declares 7.10.1",
+  "youtube_write_performed": false,
+  "youtube_id": null,
+  "privacy_change": null,
+  "publishAt": null,
+  "buffer_write_performed": false,
+  "live_duplicate_check": "not completed: channel audit cannot load authentication client",
+  "next": "Restore HOS publishing dependencies, then resume duplicate check, versioned package, dry run and private upload. Preserve exact approved v01. No schedule until actual long publication is confirmed."
+}
