@@ -1,9 +1,9 @@
 {
   "film": "008",
-  "title": "Why Did Franklin Fly a Kite in a Storm?",
+  "title": "Benjamin Franklin's Kite Experiment Explained",
   "air": "2026-11-26",
   "ready_by": "2026-11-15",
-  "summary": "Franklin master v05 (d1ffb78d...841b) passed J2243 5-part J2829 multimodal QA and Chief review (HOS PR #595 0cf1743f, J2877). Staged in HOS UAT/008_Lightning-Franklin/hos_008_master_v05_PHONE.mp4 (sha256 9e9c8784..., watch id hos-008-v05-42f37ffc34923d7af3ba, Play 302) for Ben's final watch; all 8 Ben notes remain tracked until Ben's final watch.",
+  "summary": "Franklin master v05 (d1ffb78d...841b) passed J2243 QA + Chief review (PR #595) and Ben's watch OK on 16 Nov 15:24Z (Short A v04 OK 12 Nov, Short C v07 OK 18 Nov). J3500 search-led title, v05-verified Chapters+Sources description v02, 143-cue en-GB SRT captions, and £0 A/B thumbnails (THE KEY SPARKED / NO BOLT STRUCK) are packaged on macbook/J3500; ready for Chief PR merge + Mini private upload & Thu 26 Nov 18:00 London schedule.",
   "stages": {
     "topic": {
       "state": "done"
@@ -16,7 +16,11 @@
       "state": "done"
     },
     "package": {
-      "state": "done"
+      "state": "done",
+      "owner": "macbook",
+      "since": "2026-11-24T10:48",
+      "underway": false,
+      "note": "J3500 search-led title 'Benjamin Franklin's Kite Experiment Explained' (45 chars, US top-10 evidence), v05 Chapters+Sources description v02, 143-cue en-GB SRT captions, tags v02, and LAUNCH_PLAN updated; lint:package PASS."
     },
     "vo": {
       "state": "done",
@@ -70,7 +74,7 @@
       "since": "2026-11-16T09:15",
       "underway": false,
       "waiting": "",
-      "note": "Master v05 (d1ffb78d...841b) + J2243 5-part J2829 multimodal QA & Chief review PASS (HOS PR #595 0cf1743f, J2877): all 8 Ben notes verified in context and kept tracked (note_resolved: false), all 32 side_label cards + SAFE PATH DOWN + 10 code-graphic rows + all film/audio/sync gates PASS; staged in HOS UAT (hos_008_master_v05_PHONE.mp4, sha256 9e9c8784...) for Ben's final watch.",
+      "note": "Master v05 (d1ffb78d...841b) + J2243 5-part J2829 multimodal QA & Chief review PASS (HOS PR #595 0cf1743f, J2877): all 8 Ben notes verified in context, all 32 side_label cards + SAFE PATH DOWN + 10 code-graphic rows + all film/audio/sync gates PASS; Ben watch OK 16 Nov 15:24Z.",
       "jobs": [
         "J1297",
         "J1755",
@@ -91,23 +95,53 @@
       "steps_unit": "assembly & J2243 review steps completed"
     },
     "thumbnails": {
-      "state": "todo",
-      "due": "2026-11-12"
+      "state": "doing",
+      "due": "2026-11-24",
+      "owner": "Chief",
+      "since": "2026-11-24T10:48",
+      "underway": false,
+      "waiting": "Chief HOOK/BAND/PHONE PASS on J3500 A/B thumbnails (THE KEY SPARKED / NO BOLT STRUCK) and PR merge",
+      "steps": [
+        2,
+        2
+      ],
+      "steps_unit": "A/B thumbnails built (£0) with thumb_preview + style_sheet",
+      "left": "Chief review & PASS",
+      "eta": "2026-11-24",
+      "note": "J3500 £0 A/B thumbnails built from clean v05 painted 3D frames (A: THE KEY SPARKED, B: NO BOLT STRUCK), checked with thumb_preview.py + style_sheet.py and mirrored to NAS; awaiting Chief PASS.",
+      "jobs": [
+        "J3500"
+      ]
     },
     "ben_ok": {
-      "state": "doing",
+      "state": "done",
       "owner": "Ben",
       "due": "2026-11-18",
-      "since": "2026-11-16T09:15",
+      "since": "2026-11-16T15:24",
       "underway": false,
-      "waiting": "Ben's final watch of hos_008_master_v05.mp4 (HOS UAT/008_Lightning-Franklin/hos_008_master_v05_PHONE.mp4, Play 302; all 8 v03 notes tracked until Ben's watch)",
-      "note": "Master v05 (d1ffb78d...841b) staged on Ready for OK card HOS:008 (J2243); v03 change notes (2026-11-05) kept tracked with fixed summary under the player."
+      "waiting": "",
+      "note": "Ben OK on board checks API: Long v05 (HOS-008, d1ffb78d...841b) OK 2026-11-16T15:24:18Z (recorded on J2243 via jobs.py approved); Short A v04 (HOS-J2699) OK 2026-11-12T14:45:41Z; Short C v07 (HOS-J2984) OK 2026-11-18T11:31:40Z."
     },
     "scheduled": {
-      "state": "todo",
-      "due": "2026-11-16"
+      "state": "doing",
+      "owner": "Mini",
+      "due": "2026-11-26",
+      "since": "2026-11-24T10:48",
+      "underway": false,
+      "waiting": "Chief PR merge + Mini YouTube API/Studio upload of v05 (d1ffb78d...841b) & schedule Thu 26 Nov 18:00 London + Shorts A/C",
+      "steps": [
+        1,
+        2
+      ],
+      "steps_unit": "upload package ready; awaiting Mini YouTube upload & Studio finish",
+      "left": "Mini upload, schedule & Studio finish (~30 min)",
+      "eta": "2026-11-25",
+      "note": "Package ready (lint:package PASS, check_all.sh PASS). MacBook cannot upload/schedule videos (policy + no 07_Content-Ops/.env); handed off to Chief/Mini for private upload & Thu 26 Nov 18:00 London schedule.",
+      "jobs": [
+        "J3500"
+      ]
     }
   },
   "claims": [],
-  "next": ""
+  "next": "Chief PASS thumbnails + merge J3500 PR -> Mini uploads master v05 private, schedules Thu 26 Nov 18:00 London, sets HOS playlist end screen + captions + Title/Thumb T&C, then schedules Short A (Fri 27 Nov 11:30) & Short C (Sun 29 Nov or Tue 1 Dec 11:30)."
 }

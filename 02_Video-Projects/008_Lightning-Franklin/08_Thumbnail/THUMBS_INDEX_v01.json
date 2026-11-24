@@ -1,0 +1,184 @@
+{
+  "job": "J3500",
+  "film": "008_Lightning-Franklin",
+  "spend": "\u00a30 cash, 0 Flow credits. No new generation. Plates are clean painted 3D frames from Ben-approved master v05 (d1ffb78d...841b).",
+  "titleNotRepeated": [
+    "Benjamin Franklin's Kite Experiment Explained",
+    "Why Did Franklin Fly a Kite in a Storm?"
+  ],
+  "A": {
+    "file": "Selected/hos_008_thumb_A_the_key_sparked_v01.jpg",
+    "words": "THE / KEY / SPARKED",
+    "gold": "SPARKED",
+    "sourceFrame": "hos_008_master_v05.mp4 @ t=4.20s (01_kite_open, no burned-in text)",
+    "sha256": "9127de8a2bf2248d8d8d4f5fdbf757f24a0b8d5bf8ad27863ca19dfc6cad5a19",
+    "plate": "_assets_v01/hos_008_thumb_A_plate.jpg",
+    "plateSha256": "5047f6ea4083a4694402172d5124a20715812d31769dc45674343ec647d34815",
+    "meta": {
+      "letteringBox": [
+        16,
+        54,
+        400,
+        286
+      ],
+      "ornaments": {
+        "topScrollBox": [
+          38,
+          30,
+          378,
+          50
+        ],
+        "bottomScrollBox": [
+          69,
+          289,
+          347,
+          307
+        ]
+      },
+      "heroBox": [
+        420,
+        140,
+        1260,
+        710
+      ],
+      "explorerBox": [
+        40,
+        560,
+        260,
+        710
+      ],
+      "explorerHeightPx": 150,
+      "explorerHeightFrac": 0.208,
+      "placedWords": [
+        {
+          "word": "THE",
+          "kind": "cream",
+          "size": 74,
+          "box": [
+            129,
+            54,
+            287,
+            119
+          ]
+        },
+        {
+          "word": "KEY",
+          "kind": "cream",
+          "size": 94,
+          "box": [
+            108,
+            123,
+            308,
+            204
+          ]
+        },
+        {
+          "word": "SPARKED",
+          "kind": "gold",
+          "size": 86,
+          "box": [
+            16,
+            208,
+            400,
+            286
+          ]
+        }
+      ],
+      "clearOfHero": true,
+      "clearOfExplorer": true,
+      "clearOfBadge": true
+    },
+    "previews": [
+      "Selected/hos_008_thumb_A_the_key_sparked_v01_preview.jpg",
+      "Selected/hos_008_thumb_A_the_key_sparked_v01_style_sheet.jpg"
+    ]
+  },
+  "B": {
+    "file": "Selected/hos_008_thumb_B_no_bolt_struck_v01.jpg",
+    "words": "NO / BOLT / STRUCK",
+    "gold": "STRUCK",
+    "sourceFrame": "hos_008_master_v05.mp4 @ t=290.50s (19_kite_climb, no burned-in text)",
+    "sha256": "457e5ce16ac198d58c14493b6e46152d2b6dd1a2913279c2e063eeaa88de9126",
+    "plate": "_assets_v01/hos_008_thumb_B_plate.jpg",
+    "plateSha256": "4991760e431257b50d6a3ed644fea8e93424081aa4e0b02a4c62912af7de9c1b",
+    "meta": {
+      "letteringBox": [
+        34,
+        54,
+        371,
+        296
+      ],
+      "ornaments": {
+        "topScrollBox": [
+          32,
+          30,
+          372,
+          50
+        ],
+        "bottomScrollBox": [
+          63,
+          299,
+          341,
+          317
+        ]
+      },
+      "heroBox": [
+        395,
+        4,
+        1250,
+        710
+      ],
+      "explorerBox": [
+        40,
+        560,
+        260,
+        710
+      ],
+      "explorerHeightPx": 150,
+      "explorerHeightFrac": 0.208,
+      "placedWords": [
+        {
+          "word": "NO",
+          "kind": "cream",
+          "size": 76,
+          "box": [
+            142,
+            54,
+            263,
+            123
+          ]
+        },
+        {
+          "word": "BOLT",
+          "kind": "cream",
+          "size": 92,
+          "box": [
+            80,
+            127,
+            323,
+            211
+          ]
+        },
+        {
+          "word": "STRUCK",
+          "kind": "gold",
+          "size": 88,
+          "box": [
+            34,
+            215,
+            371,
+            296
+          ]
+        }
+      ],
+      "clearOfHero": true,
+      "clearOfExplorer": true,
+      "clearOfBadge": true
+    },
+    "previews": [
+      "Selected/hos_008_thumb_B_no_bolt_struck_v01_preview.jpg",
+      "Selected/hos_008_thumb_B_no_bolt_struck_v01_style_sheet.jpg"
+    ]
+  },
+  "combinedStyleSheet": "Selected/hos_008_thumbs_AB_v01_style_sheet.jpg"
+}

@@ -1,18 +1,22 @@
 {
   "format": "longform",
-  "video": null,
+  "video": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/008_Lightning-Franklin/07_Edit-Project/_precheck/master_v05/hos_008_master_v05.mp4",
   "youtubeId": null,
-  "title": "Why Did Franklin Fly a Kite in a Storm?",
+  "title": "Benjamin Franklin's Kite Experiment Explained",
   "titleVariant": "A",
-  "descriptionFile": "Descriptions/lightning_long_description_v01.txt",
-  "tagsFile": "Tags/lightning_long_tags_v01.txt",
-  "chaptersFile": null,
+  "descriptionFile": "Descriptions/lightning_long_description_v02.txt",
+  "tagsFile": "Tags/lightning_long_tags_v02.txt",
+  "chaptersFile": "Chapters/lightning_long_chapters_v05.txt",
+  "captionsFile": "Captions/hos_008_master_v05.en.srt",
   "pinnedCommentFile": null,
-  "thumbnail": null,
-  "thumbnailAbc": [],
+  "thumbnail": "../08_Thumbnail/Selected/hos_008_thumb_A_the_key_sparked_v01.jpg",
+  "thumbnailAbc": [
+    "../08_Thumbnail/Selected/hos_008_thumb_A_the_key_sparked_v01.jpg",
+    "../08_Thumbnail/Selected/hos_008_thumb_B_no_bolt_struck_v01.jpg"
+  ],
   "titleAbc": [
-    "Why Did Franklin Fly a Kite in a Storm?",
-    "How Does a Lightning Rod Work?"
+    "Benjamin Franklin's Kite Experiment Explained",
+    "Why Did Franklin Fly a Kite in a Storm?"
   ],
   "schedule": "2026-11-26T18:00:00.000Z",
   "playlistId": null,
@@ -25,7 +29,7 @@
   "affiliate": null,
   "channel": "@HistoryOfScienceYT",
   "premiere": false,
-  "note": "Planning scaffold (4 Oct 2026); updated 24 Oct 2026 (J0899/J0909 Chief PASS). Composite the 5 moving-plate alpha overlays from J0329 (07_Edit-Project/code_graphics_v01) once J0329 passes; trim inter-sentence pauses in 0:15-0:45 and 1:00-2:30 (addressing 004's 51%->30% and 002's 45%->23% early retention drops); link 004 Atom (GHZDsiH7L7A) + 002 Periodic Table (AL_-qlWko_g) on the end screen and in next-watch links. Neighbours auto-written by neighbours.py 2026-10-04 (gate PASS, 6 education >=1M). Planning placeholder air Thu 26 Nov 2026 18:00 UK = 18:00 UTC (GMT), normal publish; moved from Thu 19 Nov 2026 on 21 Nov 2026 (J3271, Chief ruling on J3269) because the cut is still waiting for Ben's final watch. Not uploaded, not scheduled; nothing changed on YouTube.",
+  "note": "J3500 package locked 24 Nov 2026 (£0). Master v05 ONLY: hos_008_master_v05.mp4 (sha256 d1ffb78dfc3d77519b5f37dfbddeec2f7802fa2d79e58b4524be31551a67841b, 539.626 s, 1920x1080, 24 fps; J2243 Chief PASS 15 Nov; Ben board OK 16 Nov 2026 15:24Z on HOS-008 v05, recorded via jobs.py approved). Search-led Title A: 'Benjamin Franklin's Kite Experiment Explained' (45 chars <= 50; vidIQ benjamin franklin 74,407/mo, US top-10 gap verified in evidence_2026-11-24_us_search.json, 0 HOS collisions); T&C Arm B keeps current title 'Why Did Franklin Fly a Kite in a Storm?' (39 chars). Description v02 carries v05-verified Chapters (0:00, 1:40, 3:08, 5:19, 6:49) + J1265 Sources block + honest AI production line. Captions Captions/hos_008_master_v05.en.srt (143 cues, en-GB, 98.2% token alignment on v05 audio). Thumbnails A ('THE KEY SPARKED', sha256 9127de8a...) & B ('NO BOLT STRUCK', sha256 457e5ce1...) built at £0 from clean v05 painted 3D frames, verified with thumb_preview.py + style_sheet.py. Schedule Thu 26 Nov 2026 18:00 London = 18:00 UTC (GMT), normal publish, Private until then. Studio finish on Mini: add to HOS playlist ('How Did We Discover…? | History of Science'), set end screen to HOS playlist + Subscribe, upload en-GB captions, arm 2-way Title+Thumbnail Test & Compare with search-led Title A as side A, re-verify Not Made for Kids + Altered YES.",
   "neighbours": {
     "phrases": [
       "lightning",
@@ -71,6 +75,6 @@
         "views": 2121750
       }
     ],
-    "note": "Auto from neighbours.py 2026-10-04. Gate PASS: 6 education ≥1M. Prefer SciShow Kids / MinuteEarth / Kurzgesagt / TED-Ed static electricity over weak TED-Ed name collisions (Rosalind Franklin; Cambodian lightning myth). Be Smart Franklin kite ~691k is on-topic under the 1M cut."
+    "note": "Auto from neighbours.py 2026-10-04. Gate PASS: 6 education ≥1M. Prefer SciShow Kids / MinuteEarth / Kurzgesagt / TED-Ed static electricity over weak TED-Ed name collisions (Rosalind Franklin; Cambodian lightning myth). Be Smart Franklin kite ~696k is on-topic under the 1M cut."
   }
 }
