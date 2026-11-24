@@ -3,11 +3,11 @@
 | Field | Value |
 |---|---|
 | Slug | `009_The-Falling-Moon-Gravity` |
-| Stage | **Long master v03 (`744f32b7`, J3314) + J2036 technical QA pack ready for J2037 review & Ben final watch** (`ben_ok: todo`; 22 Nov 2026) |
+| Stage | **J3501 upload package ready (24 Nov 2026, £0); strictly held for Ben's watch OK on `HOS:009` (`v03` `744f32b7`, `J2037`) before private upload & Thu 3 Dec 18:00 London schedule** (`ben_ok: todo`) |
 | Script | `moon_script_master_v01.md` · review **91.3** (`gate:episode` PASS; 6 DATA, 6 SCALE, 2 WHO, 8 WHEN, 4 FACT) |
 | FACT_NOTES | Sourced from script new-claims; **7/7 hard-checks PASS**. `FACT_NOTES_v01.md` lines 3 & 77 record "Confirmed by Claude, 4 Oct 2026" (desk claim `5982314076`); earlier header read `Claude UNSIGNED` (preserved as provenance note; no new sign-off invented). |
 | Neighbour gate | **PASS — 6 education ≥1M; TED-Ed yes** (`evidence_2026-10-04_neighbours.json` + 24 Oct `eyZEqSPeMwg`) |
-| Upload package | `PACKAGE_MANIFEST.json` (thumbs A+B wired, `video: null`, `privacy: private`), `moon_long_description_v01.txt` (exact v03 chapters `0:00/1:24/2:56/4:20/6:33`, 8 Sources, honest making-of line), `moon_long_tags_v01.txt`, `PRE_BUILD_VIDIQ_AUDIT.md` (signed by Claude 4 Oct 2026 in §7; vidIQ waived), `lint:package` PASS |
+| Upload package | `PACKAGE_MANIFEST.json` (search-led title A *How Isaac Newton Proved Gravity Using the Moon*, T&C B *Why Doesn't the Moon Fall to Earth?*, thumbs A+B wired, `captionsFile` `Captions/hos_009_master_v03.en.srt`, `chaptersFile` `Chapters/moon_long_chapters_v03.txt`, `playlistId: PLEbpfUzWzcXU`, target `2026-12-03T18:00:00.000Z`, `video: null`, `privacy: private`), `moon_long_description_v01.txt` (exact v03 chapters `0:00/1:24/2:56/4:20/6:33`, 8 Sources, honest making-of line), `moon_long_tags_v01.txt`, `SEARCH_LED_TITLE_CHECK_2026-11-24.md`, `lint:package` PASS (0 errors, 0 warnings) |
 | Picture | **All 90/90 board rows settled** (Tranche 1 57 KEEP J1237 + Tranche 2 Flow/retakes KEEP J2033–J2629 + J2631 & J2632 r4 code graphics KEEP) & composited into v03 (`picture_qa` 0/92 fail, `polish_gate` 0/92 fail, 5 inspected low-detail warnings). Stays `doing` in `status.json` until J2037/Chief closes edit milestone. |
 | VO | **LOCKED v01** (Chief KEEP, desk #180 comment 6101629662, 11 Oct; 5 parts, 508.40 s speech). Retime 8:38.4 in `07_Edit-Project/VO_RETIME_v01.json`. |
 | Score | **v04_synth ACCEPTED** (`hos_009_score_v04_synth.wav`, `151ba46a…`, J3241; `music_gate` PASS on v03 cut) |
@@ -293,3 +293,38 @@ Ben's UAT is the remaining actual watch/listen and approval. Keep both cuts priv
 J3455 independent acting Chief Codex KEEP for private UAT, 23 Nov 2026. v03 master 744f32b7 and PHONE b1135b3d hashes match NAS and iCloud. Four delivered gates PASS; flagged stills reviewed. HOS PR #731 merged. J2037 remains blocked for Ben finished-cut watch/listen, card HOS:009 ready for Ben, Play HTTP 302 verified at 22:24Z. No upload or schedule permission.
 
 Delivered gate evidence accepted: `picture QA PASS: 0 of 92 cuts fail`; `polish gate PASS: 0 of 92 rows failed, 5 to look at`; `music gate PASS`; `SFX level PASS: VO -20.8 LUFS, SFX -41.4 LUFS, 14 hits`. These are inspected receipts, not newly rerun gates. Five low-detail stills inspected; the reported 0:04 apple split was not reproduced in consecutive extracted frames. No audio/motion perception claimed; Ben performs the actual watch/listen. Full ruling: orbit-with-ben PR #1226. J3311 Shorts and thumbnail approvals remain separate; ben_ok and scheduled are not passed.
+
+
+## 24 Nov 2026 — J3501: Search-led title check, v03 captions, and Thu 3 Dec upload package (macbook-2; held for Ben's watch OK)
+
+- **Scope & hold:** Prepared the full offline upload package for HOS 009 (`£0`, zero YouTube/Studio/Buffer changes). **Ben's watch card `HOS:009` (`J2037`, `v03` `744f32b7`) is still open (`ben_ok: todo`, `approved: null`)**, so **no upload, privacy change, or schedule was made**. Upload private and schedule **Thu 3 Dec 2026 18:00 London** only after Ben passes `HOS:009`; no OK by **Thu 3 Dec 2026 12:00 London** means no schedule and Ben is told. Separate Shorts (`J3311.1` / `J3311.2`) take Fri 4 & Sat 5 Dec 11:30 if passed and only after the 009 long is Public.
+- **Search-led title check (`11_Upload-Package/SEARCH_LED_TITLE_CHECK_2026-11-24.md`, `evidence_2026-11-24_search_led_title.json`):**
+  - Evaluated Claude's 24 Nov vidIQ pull (`isaac newton` 84,169/mo; `laws of motion` 13,262/mo comp 49 — rejected as school-exam/wrong topic; `isaac newton documentary` comp 25 — rejected as 1–2 hr biography expectation), signed-out US (`en-US/US`) autocomplete + top-10 search, signed-out GB `public_search.py`, and all 71 live/private HOS videos (`2026-11-24.json`) plus 009 Shorts A & B.
+  - **`isaac newton gravity`** (exact US + GB autocomplete) shows a **10/10 US top-10 gap** (all old 5–18 y, 2–4 min, or kids clips); **`how did isaac newton discover gravity`** shows a **9/10 gap**.
+  - **Selected Primary / T&C Side A (set first before arming Test & Compare):** **`How Isaac Newton Proved Gravity Using the Moon`** (46 chars, hits all 3 neighbour phrases `newton`/`gravity`/`moon`, zero overlap with thumb A `IT MISSES` or thumb B `ONE APPLE`, zero collision with Short B *How Did Newton Discover Gravity?* or any live HOS video).
+  - **Selected T&C Side B:** **`Why Doesn't the Moon Fall to Earth?`** (35 chars, existing title retained as T&C arm).
+- **Package, captions, playlist & NAS SHA-256 verification:**
+  - Built **`11_Upload-Package/Captions/hos_009_master_v03.en.srt`** (`138` cues, `00:00:00,000 -> 00:08:38,220`, sha256 `cacb8fe0d9e1fde125609d28abc70160bf3ff0791439d9450139ff4a86dbb7fe`) + `hos_009_master_v03_captions_meta.json` via `07_Edit-Project/_build_captions_v03.py` (timings verified exact to `0.00 s` against `SOURCE_MAP.json` v03 `vo_start` and chapter cards `84.44 / 176.78 / 260.16 / 393.86 s`).
+  - Added `11_Upload-Package/Chapters/moon_long_chapters_v03.txt` (`0:00 / 1:24 / 2:56 / 4:20 / 6:33`), updated `Descriptions/moon_long_description_v01.txt` (search-led line 1, J0899 gravity-apparatus terms retained, 8 Sources, honest making-of line), `Tags/moon_long_tags_v01.txt` (8 subject tags incl. `isaac newton gravity`), `PACKAGE_MANIFEST.json` (`schedule: 2026-12-03T18:00:00.000Z`, `playlistId: PLEbpfUzWzcXU`, `captionsFile`, `chaptersFile`, thumbs A+B, `privacy: private`), and `LAUNCH_PLAN.md` (end screen → `PLEbpfUzWzcXU` + Subscribe).
+  - Live-verified NAS SHA-256 parity:
+    - `09_Assembly/j2035_v03/hos009_long_master_v03.mp4`: `744f32b7f2f95e75fabf039a345aee6c7c01ab6f304a932ebe7172bd3b3ede55`
+    - `08_Thumbnail/Selected/hos_009_thumb_A_it_misses_v01.jpg`: `cd44f05657ddfea2d9af1ad19f31c008479c43cbfa533a4e4800d90ed1186689`
+    - `08_Thumbnail/Selected/hos_009_thumb_B_one_apple_v01.jpg`: `3d1164330249e7793c96317b051d008271aaf4b90175bdddc86c392c979f1709`
+- **Pasted gate outputs (`lint:package -- --film 009` + `check_all.sh`):**
+```text
+PASS  hos_009_master_v03.en.srt  cues=138  00:00:00,000 -> 00:08:38,220  sha256=cacb8fe0d9e1fde125609d28abc70160bf3ff0791439d9450139ff4a86dbb7fe
+PASS  02_Video-Projects/009_The-Falling-Moon-Gravity/11_Upload-Package/PACKAGE_MANIFEST.json
+-- durable desk handoffs: PASS
+-- email ratchet: PASS
+-- no media: PASS
+-- status board in sync: PASS
+-- ElevenLabs guard tests: PASS
+-- vo_check word tests: PASS
+-- atempo check tests: PASS
+-- voice speed (atempo <= 1.06): PASS
+-- contract tests: PASS
+-- package-lint: PASS
+-- review:script moon_script_master_v01.md: PASS
+-- gate:episode: PASS
+ALL CHECKS PASS
+```

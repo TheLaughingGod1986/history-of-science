@@ -1,0 +1,19 @@
+{
+  "srt": "hos_009_master_v03.en.srt",
+  "sha256": "cacb8fe0d9e1fde125609d28abc70160bf3ff0791439d9450139ff4a86dbb7fe",
+  "language": "en-GB",
+  "master": "09_Assembly/j2035_v03/hos009_long_master_v03.mp4",
+  "master_sha256": "744f32b7f2f95e75fabf039a345aee6c7c01ab6f304a932ebe7172bd3b3ede55",
+  "master_duration_s": 519.0,
+  "timing_note": "Part vo_start (0.00, 86.34, 178.68, 262.06, 395.76 s) and chapter cards (84.44, 176.78, 260.16, 393.86 s) match SOURCE_MAP.json v03 exact to 0.00 s.",
+  "source_text": "01_Script/moon_script_master_v01.md via 07_Edit-Project/VO_RETIME_v01.json",
+  "cues": 138,
+  "first": "00:00:00,000",
+  "last_end": "00:08:38,220",
+  "chapter_cards_s": [
+    84.44,
+    176.78,
+    260.16,
+    393.86
+  ]
+}
