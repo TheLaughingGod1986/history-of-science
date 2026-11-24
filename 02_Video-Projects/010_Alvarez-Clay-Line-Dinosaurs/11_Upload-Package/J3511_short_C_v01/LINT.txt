@@ -1,0 +1,7 @@
+
+> content-ops@0.1.0 lint:package
+> tsx scripts/package-lint.ts --film 010
+
+PASS  02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/11_Upload-Package/PACKAGE_MANIFEST.json
+   warn  [title.length] T&C title: "How a 1-Centimetre Line of Clay Solved What Killed the Dinosaurs" is 64 chars (aim ≤ 60)
+   warn  [captions] no captionsFile (captions from the script)

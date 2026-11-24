@@ -136,3 +136,24 @@ ALL CHECKS PASS
 - **Pins:** `10_Shorts/TWELVE_PLATE_SCOPE_J2267.json` is now `sha256: 6fa991211a24a8808c20606b83784a925df0024869d86ca51839435ffea2a413` (the hash in the 10 Nov entry above is the file as it stood then). `generation_authorized=false` is retained. The J2269 authorization must pin this new hash.
 - **Runner:** `_mint_flow_twelve_plates_j2268.py` gains `reconcile-policy-refusal` (closes a refused take as `FAILED_POLICY`, 0 credits, both ledgers append-only, safe to run twice), never reuses a take number the ledger holds, and sets a row aside while its prompt is one Flow has refused. A refused take still uses one of the row's three takes.
 - **Tests:** `tests/test_hos010_twelve_plate_runner.py`, 21 tests, all offline.
+
+
+## J3511 — private bird Short, 24 Nov 2026
+
+Codex covering J3511.
+
+Uploaded exact approved HOS 010 bird Short C v01 as sMPlMuxK3YU (Are Birds Really Dinosaurs?) on 24 Nov 2026 at 19:02 UTC / London. SHA256 698db62789e1e6884ae15797dc51083c39bbc0ee3c0cc1ecf83f92e2e87a0359 verified on NAS. Authority J3505/J3511, Ben OK HOS:ASK:J2933.2, 16 Nov 09:33 London. Old state absent -> Private; publishAt absent -> absent. No schedule, generation, money or public/Buffer delivery.
+
+PASS: current Shorts gate in dry run and live upload; six original delivery gates exit 0; lint:package; check_all.sh ALL CHECKS PASS. Post-upload channel:audit: 68 videos, 0 errors (includes sMPlMuxK3YU). Exact long not uploaded; no invented long date.
+
+Readback: correct HOS channel UCXp7HkBIl1LgaznXuZHJyRg; processed; Private; no publishAt; madeForKids false; Education/en-GB; English (United Kingdom) manual captions serving. Uploaded cover read back from YouTube and visually matches approved STILL HERE robin frame. Studio Related = None, intentionally pending real long id. No pinned comment. Altered content Yes sent in API upload request; live API omits it. Studio reads confirmed Private, not Made for Kids, Related None, comments On, remix options and Education/en-GB. Further Studio connections timed out on both existing browsers, including direct existing-target probe, so live altered-content selection, paid promotion, education subfields, automatic places and moderation still need verification before scheduling; no claim they were checked or changed.
+
+Registered final exact NAS cut in OWB social/hos/UPLOADS.json without inventing a long id or marking standalone. Buffer ledger records held with zero channels/posts and no due date. HOS opening library records private/retired (registration date only, no air date). J3610 is the separate conditional follow-up: wait for actual long id and confirmed air date, finish Studio fields/Related, choose free Sat/Fri/Sun/Tue 11:30 UK slot strictly after long, and re-read long Public before Short airs. Update long link, gate date/status and Buffer together. J3610 is open with explicit dependency in brief; wait command cannot hold an unclaimed child and this run claims only J3511.
+
+NAS offload required for low disk ran: no eligible old scratch, 8,514 MB remained free. No NAS deletion. iCloud master was not materialized (read returned resource deadlock); hash-identical durable NAS master used. Final cut unchanged, older packages preserved. Private upload scope complete; scheduling and outstanding pre-publication Studio checks belong to J3610.
+
+```
+PASS package lint (film 010)
+68 videos, 0 errors.
+ALL CHECKS PASS
+```

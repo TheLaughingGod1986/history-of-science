@@ -83,16 +83,11 @@
     },
     "scheduled": {
       "state": "todo",
-      "due": "2026-11-30"
+      "due": "2026-11-30",
+      "note": "J3511: approved Short C v01 privately uploaded as sMPlMuxK3YU; no publishAt. en-GB captions serving; STILL HERE robin cover read back. J3610 schedules only after actual long id/date and sets Related. Long remains unfinished.",
+      "waiting": "J3610: actual long upload id and confirmed air date; never Short before long Public"
     }
   },
-  "claims": [
-    {
-      "stage": "upload",
-      "by": "codex",
-      "since": "2026-11-24T19:00:59.877545+00:00",
-      "note": "J3511 private Short C only; no schedule"
-    }
-  ],
+  "claims": [],
   "next": ""
 }
