@@ -3,7 +3,7 @@
   "title": "Accidental Inventions: 5 Mistakes That Worked",
   "air": "2026-12-24",
   "ready_by": "2026-12-21",
-  "summary": "Film 3 of the History of Science search-led plan (hos-search-2027-01, Ben OK 24 Nov 2026; target air Thu 24 Dec 18:00 London, watch by Mon 21 Dec; slides a week if not ready). Rule-E GO (J3503, 95.8/100). J3685 (25 Nov 2026) delivered corrected v02 package resolving all 9 J3564/J3565 fixes: accidental_inventions_script_master_v02.md (sole master in 01_Script/, review:script PASS 91.8/100, default gate:episode PASS), FACT_NOTES_v02.md, SOURCES.md (dead heartrhythm.com replaced by PMC3232561, all 8 primary upgrades + 4 lifespan quotes + Harvard BioNumbers blink scale), and SHORTS_SCRIPTS_v02.md (S01/S02 rebalanced to 150 wpm per row, 42 spoken words / 17.2s, <=4w overlays, R7 layout). Awaits independent v02 facts re-verification and Chief script lock (£0.00 spent; Rule G WIP cap respected).",
+  "summary": "Film 3 of the History of Science search-led plan (hos-search-2027-01, Ben OK 24 Nov 2026; target air Thu 24 Dec 18:00 London, watch by Mon 21 Dec; slides a week if not ready). Rule-E GO (J3503, 95.8/100). J3685 (PR #772, be99dffe) delivered corrected v02 package resolving all 9 J3564/J3565 fixes (review:script PASS 91.8/100, default gate:episode PASS). J3686 (25 Nov 2026) completed independent Gemini v02 facts & exact-quote verification (GEMINI_FACTS_CHECK_v02.md: 18 OK / 10 PARTIAL / 0 FLAG across 28 items, 36/36 live URLs HTTP 200, all 4 J3564 FLAGs & FIX-1..9 verified resolved, all 4 v02 files byte-for-byte unchanged). Awaits Chief v02 lock review J3687 (£0.00 spent; Rule G WIP cap respected).",
   "stages": {
     "topic": {
       "state": "done",
@@ -23,11 +23,11 @@
     "facts": {
       "state": "doing",
       "due": "2026-12-08",
-      "owner": "Gemini",
+      "owner": "Claude",
       "since": "2026-11-25",
       "underway": false,
-      "waiting": "independent v02 facts re-verification against accidental_inventions_script_master_v02.md, FACT_NOTES_v02.md, SOURCES.md, and SHORTS_SCRIPTS_v02.md",
-      "note": "J3685 resolved all 4 J3564 FLAGs (PR #769) and merged all 8 primary upgrades, 4 opened lifespan quotes (Chardack, Gage, Elmqvist, Senning), and Harvard BioNumbers BNID 100706 blink quote into FACT_NOTES_v02.md & SOURCES.md; dead HTTP 521 heartrhythm.com URL removed"
+      "waiting": "Chief v02 lock review (J3687) after independent Gemini v02 facts verification (18 OK / 10 PARTIAL / 0 FLAG)",
+      "note": "J3686 independent Gemini v02 facts & exact-quote audit complete (01_Script/GEMINI_FACTS_CHECK_v02.md, 2026-11-25): 18 OK / 10 PARTIAL / 0 FLAG across 28 items, 36/36 live URLs HTTP 200, all 4 J3564 FLAGs & FIX-1..9 verified resolved, all 4 v02 files byte-for-byte unchanged; handed off to Chief J3687"
     },
     "package": {
       "state": "doing",
@@ -91,5 +91,5 @@
     }
   },
   "claims": [],
-  "next": "Independent v02 facts re-verification (Gemini) & Chief script lock on accidental_inventions_script_master_v02.md (91.8/100 PASS) + SHORTS_SCRIPTS_v02.md (due Tue 8 Dec; Ben's watch Mon 21 Dec; target air Thu 24 Dec)"
+  "next": "Chief v02 lock review (J3687) on accidental_inventions_script_master_v02.md (91.8/100 PASS), GEMINI_FACTS_CHECK_v02.md (18 OK / 10 PARTIAL / 0 FLAG), & SHORTS_SCRIPTS_v02.md (due Tue 8 Dec; Ben's watch Mon 21 Dec; target air Thu 24 Dec)"
 }

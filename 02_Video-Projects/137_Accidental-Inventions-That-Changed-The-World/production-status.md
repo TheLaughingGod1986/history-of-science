@@ -10,7 +10,7 @@
 | Pre-build vidIQ audit | `11_Upload-Package/PRE_BUILD_VIDIQ_AUDIT.md` (updated & signed off in `J3513`, `2026-11-24`) |
 | Script review | **PASS — `91.8 / 100`** (`01_Script/accidental_inventions_script_master_v02.md`, `1,256` words, `8.4` min, `4` chapter cards, `8/8` structure gates; sole master script in `01_Script/`; resolves `FIX-1`–`FIX-9`; awaits independent `v02` `facts` re-verification + Chief lock) |
 | Episode gate | **PASS** (default `npm run gate:episode` without `--script` resolves `accidental_inventions_script_master_v02.md`, all checks `OK` — VO/Veo still held pending `v02` `facts` re-verification, Chief lock & open WIP slot under Rule G) |
-| Sources & Facts | `01_Script/SOURCES.md`, `01_Script/FACT_NOTES_v02.md` & prior v01 audit `01_Script/GEMINI_FACTS_CHECK_v01.md` (`J3564` PR `#769` + `J3565` PR `#770`): all 4 `J3564` FLAGs & 5 `J3565` fixes resolved in `v02` (`J3685`, `2026-11-25`) with dead `heartrhythm.com` URL replaced by `PMC3232561`, all 8 primary upgrades merged, 4 missing lifespan quotes + Harvard BioNumbers blink-duration quote added; awaits independent `v02` `facts` check |
+| Sources & Facts | `01_Script/SOURCES.md`, `01_Script/FACT_NOTES_v02.md` & **`01_Script/GEMINI_FACTS_CHECK_v02.md`** (`J3686`, `2026-11-25`: independent Gemini `v02` audit complete — **`18 OK · 10 PARTIAL · 0 FLAG`** across 28 items, `36/36` live URLs `HTTP 200`, all 4 `J3564` FLAGs & `FIX-1`–`FIX-9` verified resolved; handed off to Chief `v02` lock review `J3687`) |
 | Shorts scripts | `10_Shorts/SHORTS_SCRIPTS_v02.md` (`S01` `42` spoken words / `17.2 s` Sat 26 Dec & `S02` `42` spoken words / `17.2 s` Fri 25 Dec, `150 wpm` per row, `≤4`-word synced Teach overlays, R7 end-title layout, 16–19 s Ben 19 Nov house rules; awaits `v02` `facts` check & Chief lock) |
 | VO | pending (Ben Orbit Narrator — starts only after script/facts lock & open WIP slot) |
 | Picture | pending (Flow Veo 3.1, plate library — starts only after script & VO PASS; Flow renews 12 Dec) |
@@ -61,6 +61,11 @@ explorer_acts: OK (2) | visual_must: OK (19) | teach: OK (5) | chapters: OK (4) 
 - **`FIX-7` (`FACT:` cap):** Tightened Part 03 `FACT:` card from 5 words to 4 words (`Used in gas masks`).
 - **`FIX-8` (Shorts `v02`):** Created `10_Shorts/SHORTS_SCRIPTS_v02.md` pacing every row of `S01` and `S02` at `150 wpm` (`42` spoken words → `17.2 s`, `atempo ≤ 1.06`), syncing `≤4`-word Teach overlays (`1.8 MS PULSE` & `1974 CHOIR BOOKMARK`) to their spoken lines clear of `0–2 s` and `9–14 s`, and specifying R7 end-title layout without breaking the `≤0.3 s` Frame-0 match-cut loop.
 - **`FIX-9` (Filename & stub hygiene):** Removed `accidental_inventions_script_master_v01.md` so `accidental_inventions_script_master_v02.md` is the sole master in `01_Script/`; cleared unfilled `_template` `part-01_plates_v01.json` from completed plate-board status below.
+
+### 5. Independent Gemini `v02` Facts & Exact-Quote Audit (`2026-11-25` · `J3686`)
+- **Report:** `01_Script/GEMINI_FACTS_CHECK_v02.md` (audited PR `#772` commit `be99dffe`; all 4 `v02` script/source/Shorts files byte-for-byte unchanged, `£0.00` spent).
+- **Tally (`28` audited items):** **`18 OK · 10 PARTIAL · 0 FLAG`** (`36/36` unique URLs independently fetched live `HTTP 200`, `0` dead URLs; `10 PARTIAL` items are solely labelled secondary Wikipedia dependencies or documented non-blocking historical nuances).
+- **Verified resolved:** All 4 `J3564` FLAGs (`FR405881A` `1909-08-10`, `PMC3232561` & VA two-stage June 1960 & 2-year survival, dead `heartrhythm.com` removed, `US3691140A`/NIHF low-adhesion wording), all 8 primary/institutional upgrades, all 4 newly quoted lifespans (Chardack, Gage, Elmqvist, Senning) + Art Fry living status, Harvard BioNumbers `BNID 100706` / `PMC4043155` blink scale & Part 01 opening milestones (`0:05.6` / `0:14.0` / `0:21.2` / `0:21.2–0:35.6`), Part 02 `US3633A` `270°F` spoken scale, Part 05 Boise Blitz `90%` alignment & `"aerospace"` removal, all `WHO`/`FACT`/`LABEL` cards `≤4` words, Shorts `S01`/`S02` `17.2 s` pacing + `≤4`-word synced overlays + R7 layout, and `FIX-9` sole `v02` master hygiene. Handed off to Chief `v02` lock review (`J3687`).
 
 ---
 
