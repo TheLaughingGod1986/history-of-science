@@ -1,0 +1,79 @@
+{
+  "job": "J3747",
+  "film": "HOS:013",
+  "built_at": "2026-11-25T22:30:18Z",
+  "sheets": [
+    {
+      "row_id": "P1:03a_unlabelled_birds",
+      "clip": "P01_03a_unlabelled_birds_t2.mp4",
+      "clip_sha256": "d79aa36d4bbe7969e687dc7e1ea42e806c7b8c9c5a60437f9828d87ce357882d",
+      "sheet": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/04_Generated-Clips/archive_v01_retake1/sheets/P01_03a_unlabelled_birds_t2_sheet_0.5s.jpg",
+      "sheet_sha256": "3608970a60fab2cc7ea45412fe5267992873ee881214c6fd7ac6236bbf98bc36",
+      "step_s": 0.5,
+      "grid": "4x4"
+    },
+    {
+      "row_id": "P1:07_darwin_1837_desk",
+      "clip": "P01_07_darwin_1837_desk_t2.mp4",
+      "clip_sha256": "25657b8900284e6d4937091bd3f8206e0775f6c702f40516291441cc5d108b7f",
+      "sheet": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/04_Generated-Clips/archive_v01_retake1/sheets/P01_07_darwin_1837_desk_t2_sheet_0.5s.jpg",
+      "sheet_sha256": "71c8e60d0cbd7edc00aca83a9ecc6def22648971fc625053b268a9da66ae764a",
+      "step_s": 0.5,
+      "grid": "4x4"
+    },
+    {
+      "row_id": "P3:02a_malthus_lamplight",
+      "clip": "P03_02a_malthus_lamplight_t2.mp4",
+      "clip_sha256": "13461c0772667a5d0412a386436136ecf51e63511cdd98334c19b629d889a3f2",
+      "sheet": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/04_Generated-Clips/archive_v01_retake1/sheets/P03_02a_malthus_lamplight_t2_sheet_0.5s.jpg",
+      "sheet_sha256": "ea9344f863137181d81488ab606e8d79cb55a2cc904148bb0f50d6c4e4600874",
+      "step_s": 0.5,
+      "grid": "4x4"
+    },
+    {
+      "row_id": "P3:05a_chicks_deep_beaks",
+      "clip": "P03_05a_chicks_deep_beaks_t2.mp4",
+      "clip_sha256": "f87f137aadc97d21e66733eda1c6e142d64341ffe6dddda0c7411ef871e4cce9",
+      "sheet": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/04_Generated-Clips/archive_v01_retake1/sheets/P03_05a_chicks_deep_beaks_t2_sheet_0.5s.jpg",
+      "sheet_sha256": "2f0c9a39c69a63a1585287b161e66988750138c551e07efa71346273fc74caf9",
+      "step_s": 0.5,
+      "grid": "4x4"
+    },
+    {
+      "row_id": "P4:10_fairness_25_june",
+      "clip": "P04_10_fairness_25_june_t2.mp4",
+      "clip_sha256": "82c4d00dcd95bc791fad566a1cc1d500b9acaebc540f8cc68784fae3c1c18a0e",
+      "sheet": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/04_Generated-Clips/archive_v01_retake1/sheets/P04_10_fairness_25_june_t2_sheet_0.5s.jpg",
+      "sheet_sha256": "77bb3bb2be62f9487fc7d1227e264aa0698ebb6ff9bebfd53def269c2476da1b",
+      "step_s": 0.5,
+      "grid": "4x4"
+    },
+    {
+      "row_id": "P4:12_lyell_hooker_bundle",
+      "clip": "P04_12_lyell_hooker_bundle_t2.mp4",
+      "clip_sha256": "7045735282bdb79ff497840baf4bfb908880604917c5f35ef9b00b6dcfe3d04f",
+      "sheet": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/04_Generated-Clips/archive_v01_retake1/sheets/P04_12_lyell_hooker_bundle_t2_sheet_0.5s.jpg",
+      "sheet_sha256": "d9187f3225e0f2604b1040391f6a51ccaff67388821fdc04d13124850bc4525d",
+      "step_s": 0.5,
+      "grid": "4x4"
+    },
+    {
+      "row_id": "P5:05a_darwin_writes_origin",
+      "clip": "P05_05a_darwin_writes_origin_t2.mp4",
+      "clip_sha256": "dec05f4a3fd86b0cf2140b45e05d7e7703c647452d8a6d96253903cb6c9ae250",
+      "sheet": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/04_Generated-Clips/archive_v01_retake1/sheets/P05_05a_darwin_writes_origin_t2_sheet_0.5s.jpg",
+      "sheet_sha256": "d52f7fb4d3887743e58133c80fb740d9048d19fee7309740ce41543a8c08926f",
+      "step_s": 0.5,
+      "grid": "4x4"
+    },
+    {
+      "row_id": "P6:06a_origin_fifth_edition",
+      "clip": "P06_06a_origin_fifth_edition_t2.mp4",
+      "clip_sha256": "42ddd51a2b09e3e17ece9a1b9bd56bc17cb3be50bb5d3ad4a96030163f8ec84b",
+      "sheet": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/04_Generated-Clips/archive_v01_retake1/sheets/P06_06a_origin_fifth_edition_t2_sheet_0.5s.jpg",
+      "sheet_sha256": "19b39dafebaa710b63149656bae09fed45f7424e54050f30a4063e9c89e3a8c4",
+      "step_s": 0.5,
+      "grid": "4x4"
+    }
+  ]
+}
