@@ -1,0 +1,423 @@
+{
+ "job": "J3738",
+ "film": "HOS:013",
+ "version": "v01",
+ "mint": false,
+ "status": "RETAKE_BOARD_V01_PARKED_FOR_CHIEF",
+ "spend": {
+  "gbp": 0,
+  "flow_credits": 0
+ },
+ "source": {
+  "review_state": "orbit-with-ben jobs/reviews/J2529/REVIEW_STATE.json",
+  "review_state_sha256": "182ce533c68d70e6310b04a8e716adb98eb3200c5d2eec0a5ae02371a50aa5e2",
+  "review_state_updated_at": "2026-11-19T21:55:00Z"
+ },
+ "rows_in_board": [
+  3,
+  10,
+  24,
+  28,
+  47,
+  49,
+  54,
+  63
+ ],
+ "rows_not_touched": {
+  "rows": [
+   56,
+   57,
+   58,
+   59,
+   60,
+   61,
+   62,
+   64,
+   65,
+   66
+  ],
+  "owner": "J3178",
+  "why": "moving_video_input capability hold; keep stays unset"
+ },
+ "balance": {
+  "credits": 23450,
+  "read_at": "2026-11-24T08:30:22Z",
+  "source": "orbit-with-ben 05_Analytics/ai_spend/ledger.jsonl (mini-daily Flow reading)"
+ },
+ "headroom_floor": 3000,
+ "retake_hold_recorded": {
+  "credits": 700,
+  "rows": 7,
+  "gap": "row 63 was added to the list without raising the hold; option A needs 800, so the Chief raises the hold by 100"
+ },
+ "prices": {
+  "Veo 3.1 - Quality": 100,
+  "Veo 3.1 - Lite": 5,
+  "Omni 1.2 Flash per second": 3,
+  "veo_3_1_quality_retires": "2026-12-05",
+  "source": "studio/RULES.md, J3691"
+ },
+ "options": [
+  {
+   "option": "A: before 5 Dec",
+   "models": "8 x Veo 3.1 - Quality, 8 s",
+   "credits_try_1": 800,
+   "credits_expected": 2072,
+   "balance_after_try_1": 22650,
+   "balance_after_expected": 21378,
+   "clears_3000_floor": true,
+   "note": "Same model as the 48 KEEP plates and the same start stills. Must be minted before 5 Dec 2026."
+  },
+  {
+   "option": "B: after 5 Dec, mixed",
+   "models": "6 x Veo 3.1 - Lite + 2 x Omni 1.2 Flash (rows 10, 24), 8 s",
+   "credits_try_1": 78,
+   "credits_expected": 202,
+   "balance_after_try_1": 23372,
+   "balance_after_expected": 23248,
+   "clears_3000_floor": true,
+   "note": "Needs a first-use style UAT for each new model against the KEEP plates in the same part. Omni is 720p. Retry rate for these models is not measured; 2.59x is the Quality figure."
+  },
+  {
+   "option": "C: after 5 Dec, all Omni",
+   "models": "8 x Omni 1.2 Flash, 8 s",
+   "credits_try_1": 192,
+   "credits_expected": 497,
+   "balance_after_try_1": 23258,
+   "balance_after_expected": 22953,
+   "clears_3000_floor": true,
+   "note": "One new model instead of two. 720p. First-use style UAT still needed."
+  }
+ ],
+ "recommendation": "A. 800 credits is 3.4% of the balance, it keeps one look per part, and it needs no new-model UAT. It only exists until 5 Dec 2026. Worker advice; the Chief decides.",
+ "prompt_checks": {
+  "real_person_names": 0,
+  "forbidden_terms": 0,
+  "locked_prompt_kept_whole": true,
+  "rows": 8
+ },
+ "rows": [
+  {
+   "n": 3,
+   "row_id": "P1:03a_unlabelled_birds",
+   "plate_board": "parts/part-01_plates_v02.json",
+   "film_window_s": [
+    7.9,
+    11.9
+   ],
+   "use_s": 4.0,
+   "take": 2,
+   "take_1_clip_sha256": "ab1982700cf5c959348716060fa63037fe76d7e93b29db5483c46a0a7b1112e9",
+   "ruling_comment": 6815870258,
+   "defect": "At about 2.9-3.1 s a fist separates from the sleeve and a second hand fragment shows top right (desk comment 6815859027, in force by 6815870258).",
+   "fix_sentence": "Exactly two hands are in frame, and each hand stays whole and joined to its sleeved forearm for the whole clip. Exactly three finch skins.",
+   "prompt_locked": "Premium Animistry-class 3D cartoon. On a wooden study table in grey window light, a naturalist's hands set down three small dark finch skins with blank unlettered paper tags tied to their legs. Daylight, window light or matte painted ink only. No candle, flame, glow, spark, fireball or lightning. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+   "prompt_locked_sha256": "549327f0cce02875e1a5a238af26acbe20c6e210f9298d35c12f5b9e7a9c2969",
+   "prompt_retake": "Premium Animistry-class 3D cartoon. On a wooden study table in grey window light, a naturalist's hands set down three small dark finch skins with blank unlettered paper tags tied to their legs. Exactly two hands are in frame, and each hand stays whole and joined to its sleeved forearm for the whole clip. Exactly three finch skins. Daylight, window light or matte painted ink only. No candle, flame, glow, spark, fireball or lightning. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+   "prompt_retake_sha256": "e9cc4a27e2502191cdb550beaff92d18fa8d3267a36a0c79497b5cd57db89a4e",
+   "start_still": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/04_Generated-Clips/part01/refs/v01_flow_stills/P01_03a_unlabelled_birds_t1.png",
+   "start_still_sha256": "a83ae6e4c50469e3812d943ad1eeb8adc4788a580fb44e354cd3fcab66734c7a",
+   "fragile_light": null,
+   "price": {
+    "pre_5_dec": {
+     "model": "Veo 3.1 - Quality",
+     "clip_s": 8,
+     "credits": 100
+    },
+    "post_5_dec": {
+     "model": "Veo 3.1 - Lite",
+     "clip_s": 4,
+     "credits": 5
+    },
+    "post_5_dec_all_omni": {
+     "model": "Omni 1.2 Flash",
+     "clip_s": 8,
+     "credits": 24
+    }
+   },
+   "generation_authorized": false
+  },
+  {
+   "n": 10,
+   "row_id": "P1:07_darwin_1837_desk",
+   "plate_board": "parts/part-01_plates_v02.json",
+   "film_window_s": [
+    33.44,
+    39.4
+   ],
+   "use_s": 5.96,
+   "take": 2,
+   "take_1_clip_sha256": "944902b89eaa7e78bd45a79307bfe337729d55e8cff9cf45cc25b5f24bdbb863",
+   "ruling_comment": 6815870258,
+   "defect": "Steel dip pen until about 3.5 s; by about 4.0 s it is a modern pen with barrel and clip (desk comment 6815859027, in force by 6815870258).",
+   "fix_sentence": "The pen is a plain wooden holder with a steel nib for the whole clip, with no clip, cap or button. He dips it and draws, and the pen stays the same object.",
+   "prompt_locked": "Premium Animistry-class 3D cartoon. Summer 1837: a 28-year-old English naturalist, clean-shaven with dark sideburns and a dark frock coat, dips a steel pen in an inkwell at his study desk by warm lamplight. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+   "prompt_locked_sha256": "638eb1b72aaf61432e958ec13f9269a99b04e912574d93c1ef764a3f0e14cb9c",
+   "prompt_retake": "Premium Animistry-class 3D cartoon. Summer 1837: a 28-year-old English naturalist, clean-shaven with dark sideburns and a dark frock coat, dips a steel pen in an inkwell at his study desk by warm lamplight. The pen is a plain wooden holder with a steel nib for the whole clip, with no clip, cap or button. He dips it and draws, and the pen stays the same object. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+   "prompt_retake_sha256": "4ab7cece6feec2a2715f60ead3742172fcf87887c1e50dc566522e531a9a0c66",
+   "start_still": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/04_Generated-Clips/part01/refs/v01_flow_stills/P01_07_darwin_1837_desk_t1.png",
+   "start_still_sha256": "87e61f0eea8705a30bb520f9fe98e44f95e706555de617859151e18b309dde63",
+   "fragile_light": "warm lamplight",
+   "price": {
+    "pre_5_dec": {
+     "model": "Veo 3.1 - Quality",
+     "clip_s": 8,
+     "credits": 100
+    },
+    "post_5_dec": {
+     "model": "Omni 1.2 Flash",
+     "clip_s": 8,
+     "credits": 24,
+     "why": "warm lamplight: fragile light, Lite is not UAT-verified on it"
+    },
+    "post_5_dec_all_omni": {
+     "model": "Omni 1.2 Flash",
+     "clip_s": 8,
+     "credits": 24
+    }
+   },
+   "generation_authorized": false
+  },
+  {
+   "n": 24,
+   "row_id": "P3:02a_malthus_lamplight",
+   "plate_board": "parts/part-03_plates_v02.json",
+   "film_window_s": [
+    172.58,
+    178.8
+   ],
+   "use_s": 6.22,
+   "take": 2,
+   "take_1_clip_sha256": "20f4cb58fab0fdca4e01fee5a530ad924263713bacf1bcaaa523df3d1657a486",
+   "ruling_comment": 6822411223,
+   "defect": "Flame climbs clear of the top of the chimney glass at 4.5-5.0 s (desk comment 6822411223).",
+   "fix_sentence": "The lamp flame stays small and steady inside its glass chimney for the whole clip and never rises above the glass.",
+   "prompt_locked": "Premium Animistry-class 3D cartoon. London study, 28 September 1838: a young English naturalist reads an open octavo book by warm oil lamp light. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+   "prompt_locked_sha256": "fa892acd7234fff28ace3a0d3f5a5bf69a253b33ed790711639cd37850c7e08b",
+   "prompt_retake": "Premium Animistry-class 3D cartoon. London study, 28 September 1838: a young English naturalist reads an open octavo book by warm oil lamp light. The lamp flame stays small and steady inside its glass chimney for the whole clip and never rises above the glass. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+   "prompt_retake_sha256": "b0b066655a5607ed6b43c0a78212f401143d2438d35f63b4d1802e65e1766b2a",
+   "start_still": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/04_Generated-Clips/part03/refs/v01_flow_stills/P03_02a_malthus_lamplight_t1.png",
+   "start_still_sha256": "5564f50e5b760b9e5177fea02e0272b4913c1544b347dd032ec0b1358d2defd9",
+   "fragile_light": "warm oil lamp light",
+   "price": {
+    "pre_5_dec": {
+     "model": "Veo 3.1 - Quality",
+     "clip_s": 8,
+     "credits": 100
+    },
+    "post_5_dec": {
+     "model": "Omni 1.2 Flash",
+     "clip_s": 8,
+     "credits": 24,
+     "why": "warm oil lamp light: fragile light, Lite is not UAT-verified on it"
+    },
+    "post_5_dec_all_omni": {
+     "model": "Omni 1.2 Flash",
+     "clip_s": 8,
+     "credits": 24
+    }
+   },
+   "generation_authorized": false
+  },
+  {
+   "n": 28,
+   "row_id": "P3:05a_chicks_deep_beaks",
+   "plate_board": "parts/part-03_plates_v02.json",
+   "film_window_s": [
+    201.96,
+    206.5
+   ],
+   "use_s": 4.54,
+   "take": 2,
+   "take_1_clip_sha256": "4425168f215dbb043e98fc8cacf793efd9464a98fdcad3938ec6f436de78424c",
+   "ruling_comment": 6829662956,
+   "defect": "Parent finch beak shifts dark grey (0.0-2.0 s) to bright orange (3.0-4.5 s) with a head and body morph (desk comment 6829662956).",
+   "fix_sentence": "The parent finch's beak stays dark grey-black and the same size and shape for the whole clip, and its head and body keep one form.",
+   "prompt_locked": "Premium Animistry-class 3D cartoon. In a Galápagos cactus nest, a deep-beaked parent finch feeds chicks whose beaks are stout and deep like the parent's. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+   "prompt_locked_sha256": "a98e08ab03da98c99fef2b4c521d7d5912d8d900e64479003be7a158bf2c1265",
+   "prompt_retake": "Premium Animistry-class 3D cartoon. In a Galápagos cactus nest, a deep-beaked parent finch feeds chicks whose beaks are stout and deep like the parent's. The parent finch's beak stays dark grey-black and the same size and shape for the whole clip, and its head and body keep one form. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+   "prompt_retake_sha256": "b2d473140fe634be80c86f42b8338ac57133dc8c6456808047cd3310d81a7326",
+   "start_still": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/04_Generated-Clips/part03/refs/v01_flow_stills/P03_05a_chicks_deep_beaks_t1.png",
+   "start_still_sha256": "e654718106e025c1855f5dfe39f9b6d49f12576c6e63485fa699a6869511b400",
+   "fragile_light": null,
+   "price": {
+    "pre_5_dec": {
+     "model": "Veo 3.1 - Quality",
+     "clip_s": 8,
+     "credits": 100
+    },
+    "post_5_dec": {
+     "model": "Veo 3.1 - Lite",
+     "clip_s": 6,
+     "credits": 5
+    },
+    "post_5_dec_all_omni": {
+     "model": "Omni 1.2 Flash",
+     "clip_s": 8,
+     "credits": 24
+    }
+   },
+   "generation_authorized": false
+  },
+  {
+   "n": 47,
+   "row_id": "P4:10_fairness_25_june",
+   "plate_board": "parts/part-04_plates_v02.json",
+   "film_window_s": [
+    349.5,
+    355.58
+   ],
+   "use_s": 6.08,
+   "take": 2,
+   "take_1_clip_sha256": "a3008b0a20514a8a273fb7492c55409ec5d9a0eb145f2d5400e828d7b1d6f841",
+   "ruling_comment": 6830918005,
+   "defect": "Tied bundle rises off the book at about 2.5 s without a hand and vanishes by about 3.0 s (desk comments 6830884885 / 6830918005).",
+   "fix_sentence": "The manuscript and the packet stay resting on the desk for the whole clip. Nothing lifts unless a hand is holding it, and nothing disappears.",
+   "prompt_locked": "Premium Animistry-class 3D cartoon. In grey window light at Down House, hands place the thick 1844 manuscript beside the thin foreign paper packet and fold a second letter. Daylight, window light or matte painted ink only. No candle, flame, glow, spark, fireball or lightning. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+   "prompt_locked_sha256": "15002801511eeb7f5fcf41bb1a6044048c42394201ef86a03f60d9bc61cd6e53",
+   "prompt_retake": "Premium Animistry-class 3D cartoon. In grey window light at Down House, hands place the thick 1844 manuscript beside the thin foreign paper packet and fold a second letter. The manuscript and the packet stay resting on the desk for the whole clip. Nothing lifts unless a hand is holding it, and nothing disappears. Daylight, window light or matte painted ink only. No candle, flame, glow, spark, fireball or lightning. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+   "prompt_retake_sha256": "c2f11db8c222d771dfd81f1a6704d37455ad283b08db603117fd4fe50edbae37",
+   "start_still": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/04_Generated-Clips/part04/refs/v01_flow_stills/P04_10_fairness_25_june_t1.png",
+   "start_still_sha256": "b088c6ee972abfb385ffbbe21d36df6c2fe5dacbe146817c56c83faf4d17f39f",
+   "fragile_light": null,
+   "price": {
+    "pre_5_dec": {
+     "model": "Veo 3.1 - Quality",
+     "clip_s": 8,
+     "credits": 100
+    },
+    "post_5_dec": {
+     "model": "Veo 3.1 - Lite",
+     "clip_s": 8,
+     "credits": 5
+    },
+    "post_5_dec_all_omni": {
+     "model": "Omni 1.2 Flash",
+     "clip_s": 8,
+     "credits": 24
+    }
+   },
+   "generation_authorized": false
+  },
+  {
+   "n": 49,
+   "row_id": "P4:12_lyell_hooker_bundle",
+   "plate_board": "parts/part-04_plates_v02.json",
+   "film_window_s": [
+    360.98,
+    366.34
+   ],
+   "use_s": 5.36,
+   "take": 2,
+   "take_1_clip_sha256": "820c1433ca609245b150409f709c287d6c25a58770ad962b6ea22768ff3a492a",
+   "ruling_comment": 6830918005,
+   "defect": "Carried parcel under the arm smears at 0.85 s and dissolves by 1.00 s (desk comments 6830884885 / 6830918005).",
+   "fix_sentence": "The tied bundle stays one solid parcel under the carrying gentleman's arm for the whole clip and keeps its shape. The stone steps stay fixed.",
+   "prompt_locked": "Premium Animistry-class 3D cartoon. In London daylight, two Victorian gentlemen tie two manuscript bundles together with ribbon and carry them up stone steps. Daylight, window light or matte painted ink only. No candle, flame, glow, spark, fireball or lightning. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+   "prompt_locked_sha256": "bdcd5ec4ca175cf3b0fe0da0c8cc9013cb4c58c3afa2025ea49048a917bb7b3b",
+   "prompt_retake": "Premium Animistry-class 3D cartoon. In London daylight, two Victorian gentlemen tie two manuscript bundles together with ribbon and carry them up stone steps. The tied bundle stays one solid parcel under the carrying gentleman's arm for the whole clip and keeps its shape. The stone steps stay fixed. Daylight, window light or matte painted ink only. No candle, flame, glow, spark, fireball or lightning. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+   "prompt_retake_sha256": "dd4a2d08def400cb20f58ea698ce56f4ed530d996b6d5d35690076bb1631ec6e",
+   "start_still": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/04_Generated-Clips/part04/refs/v01_flow_stills/P04_12_lyell_hooker_bundle_t1.png",
+   "start_still_sha256": "696d7eb39e0f083c174125456ed882bcab881ce7a0082be26f8c88f53a6661b1",
+   "fragile_light": null,
+   "price": {
+    "pre_5_dec": {
+     "model": "Veo 3.1 - Quality",
+     "clip_s": 8,
+     "credits": 100
+    },
+    "post_5_dec": {
+     "model": "Veo 3.1 - Lite",
+     "clip_s": 6,
+     "credits": 5
+    },
+    "post_5_dec_all_omni": {
+     "model": "Omni 1.2 Flash",
+     "clip_s": 8,
+     "credits": 24
+    }
+   },
+   "generation_authorized": false
+  },
+  {
+   "n": 54,
+   "row_id": "P5:05a_darwin_writes_origin",
+   "plate_board": "parts/part-05_plates_v02.json",
+   "film_window_s": [
+    404.66,
+    411.56
+   ],
+   "use_s": 6.9,
+   "take": 2,
+   "take_1_clip_sha256": "5b7a829f49a556d76247358d894cde276fb17031137a14cac197582bd1187905",
+   "ruling_comment": 6831444565,
+   "defect": "Sheet under the hand turns from a white written page at 2.80 s to a blank tan curl at 2.90 s (desk comments 6831422974 / 6831444565).",
+   "fix_sentence": "The page under his hand stays the same flat cream sheet, covered in ink scribble lines, for the whole clip. It never turns blank and never curls.",
+   "prompt_locked": "Premium Animistry-class 3D cartoon. Down House study, 1858–1859: an English naturalist of about fifty, clean-shaven with long greying side whiskers, writes page after page at his mahogany desk as light shifts across the window, stacking a thick manuscript. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+   "prompt_locked_sha256": "74ae26fe0cf3c46072ced0bc2bbf4172c7ee66e7e97e68b5a70024ca6d1aaea0",
+   "prompt_retake": "Premium Animistry-class 3D cartoon. Down House study, 1858–1859: an English naturalist of about fifty, clean-shaven with long greying side whiskers, writes page after page at his mahogany desk as light shifts across the window, stacking a thick manuscript. The page under his hand stays the same flat cream sheet, covered in ink scribble lines, for the whole clip. It never turns blank and never curls. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+   "prompt_retake_sha256": "308ed3b4a3dc7a23b1deda70c0ae9a12094636b616f3864f340e8bfb6f36877a",
+   "start_still": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/04_Generated-Clips/part05/refs/v01_flow_stills/P05_05a_darwin_writes_origin_t1.png",
+   "start_still_sha256": "07deb98f62cf8790a5f4116eaabe2a621e74abfffa775c49fdb4b71c6233da81",
+   "fragile_light": null,
+   "price": {
+    "pre_5_dec": {
+     "model": "Veo 3.1 - Quality",
+     "clip_s": 8,
+     "credits": 100
+    },
+    "post_5_dec": {
+     "model": "Veo 3.1 - Lite",
+     "clip_s": 8,
+     "credits": 5
+    },
+    "post_5_dec_all_omni": {
+     "model": "Omni 1.2 Flash",
+     "clip_s": 8,
+     "credits": 24
+    }
+   },
+   "generation_authorized": false
+  },
+  {
+   "n": 63,
+   "row_id": "P6:06a_origin_fifth_edition",
+   "plate_board": "parts/part-06_plates_v02.json",
+   "film_window_s": [
+    485.64,
+    490.6
+   ],
+   "use_s": 4.96,
+   "take": 2,
+   "take_1_clip_sha256": "dd2f82440c4512c5c2f114be9022c82861e8477120b90a55d56513b20019cc4b",
+   "ruling_comment": 7020824090,
+   "defect": "Warm gold light in the gutter of the open book from about 2.0 s to 4.5 s, forbidden by the prompt (desk comments 7020824090 / 7023130641).",
+   "fix_sentence": "The open pages stay matte cream paper lit only by the grey window from one side, and the gutter between the pages stays in soft neutral shadow.",
+   "prompt_locked": "Premium Animistry-class 3D cartoon. Close in grey window light on a mahogany desk as a green cloth-bound book opens beside a folded handwritten letter. Daylight, window light or matte painted ink only. No candle, flame, glow, spark, fireball or lightning. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+   "prompt_locked_sha256": "0af2042db66717b084e230962bd5a603b56a9d3123b6328f08c9b8e2d492fd75",
+   "prompt_retake": "Premium Animistry-class 3D cartoon. Close in grey window light on a mahogany desk as a green cloth-bound book opens beside a folded handwritten letter. The open pages stay matte cream paper lit only by the grey window from one side, and the gutter between the pages stays in soft neutral shadow. Daylight, window light or matte painted ink only. No candle, flame, glow, spark, fireball or lightning. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+   "prompt_retake_sha256": "72d14691bfb428e9dbae44da9474a5fc2093622856dab60f93d76355fe852c7d",
+   "start_still": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/04_Generated-Clips/part06/refs/v01_flow_stills/P06_06a_origin_fifth_edition_t1.png",
+   "start_still_sha256": "53c7c7a697aa850218f50232e70d0e5def938bc09b87b2d13e8a7e8badd12589",
+   "fragile_light": null,
+   "price": {
+    "pre_5_dec": {
+     "model": "Veo 3.1 - Quality",
+     "clip_s": 8,
+     "credits": 100
+    },
+    "post_5_dec": {
+     "model": "Veo 3.1 - Lite",
+     "clip_s": 6,
+     "credits": 5
+    },
+    "post_5_dec_all_omni": {
+     "model": "Omni 1.2 Flash",
+     "clip_s": 8,
+     "credits": 24
+    }
+   },
+   "generation_authorized": false
+  }
+ ]
+}
