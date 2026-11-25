@@ -5,49 +5,50 @@
 | Slug | `128_Edison-Tesla-Westinghouse-Why-Do-We-Use-AC-Instead-Of-DC` |
 | Channel | `@HistoryOfScienceYT` only |
 | Topic | **DONE — Rule-E GO (`J3346`, 22 Nov 2026 — `97.1 / 100` Opportunity Score) + Ben 24 Nov 2026 approval (`hos-search-2027-01`, OWB PR `#1238`).** Entered active production 24 Nov 2026. |
-| Working Title (Arm A) | *Why Do We Use AC Instead of DC? (Edison vs Tesla)* (`49 chars`, `0` collisions `2026-11-22`, working draft `94/100` in [`11_Upload-Package/PACKAGE_FIRST_SCORING_v02.md`](11_Upload-Package/PACKAGE_FIRST_SCORING_v02.md) — **working title only, not final packaging PASS**) |
-| Candidate T&C Arm B (Plan) | *Thomas Edison vs Nikola Tesla: How AC Won the War of Currents* (`61 chars`, `0` collisions, `92/100` draft) |
-| Candidate T&C Arm C | *Thomas Edison vs Nikola Tesla: Why AC Won the War of Currents* (`61 chars`, `0` collisions, `90/100` draft) |
-| Thumbnails (Unrendered Concepts) | **Thumb A (Revised):** `WASTED AS HEAT` (1886 transformer vs heavy underground DC copper warming beside dimming bulbs, `91/100` draft) · **Thumb C (Working 2nd / Optional 3-Way):** `HIGH VOLTAGE` (1893 Chicago White City, `88/100` draft) · **Thumb B (ON HOLD · `J3628`):** `22 MILES AWAY` (held until independent `facts` & direct-quote pass confirms NPS NRIS `75001212` vs ETHW `20 miles`). Later rendered thumbnails still need independent packaging panel, `style_sheet.py`, and `168×94` review. |
+| Working Title (Arm A) | *Why Do We Use AC Instead of DC? (Edison vs Tesla)* (`49 chars`, `0` collisions `2026-11-22`, working draft `94/100` in [`11_Upload-Package/PACKAGE_FIRST_SCORING_v03.md`](11_Upload-Package/PACKAGE_FIRST_SCORING_v03.md) — **working title only, not final packaging PASS**) |
+| Candidate T&C Arm B (Plan) | *Thomas Edison vs Nikola Tesla: How AC Won the War of Currents* (`61 chars`, `0` exact collisions verified `2026-11-25` in [`11_Upload-Package/evidence_2026-11-25_public_search_arm_b.json`](11_Upload-Package/evidence_2026-11-25_public_search_arm_b.json), `92/100` draft) |
+| Candidate T&C Arm C | *Thomas Edison vs Nikola Tesla: Why AC Won the War of Currents* (`61 chars`, `0` collisions `2026-11-22`, `90/100` draft) |
+| Thumbnails (Unrendered Drafts) | **Thumb A (Working Primary Draft):** `WASTED AS HEAT` (1886 transformer vs heavy underground DC copper warming beside dimming bulbs, `91/100` unrendered draft) · **Thumb C (Working Second Draft):** `HIGH VOLTAGE` (1893 Chicago White City, `88/100` unrendered draft) · **Thumb B (Optional / Secondary Draft · `J3630` ruling):** `22 MILES AWAY` (NPS NRIS `75001212` `22 miles` accepted with ETHW `20 miles` variance logged in `FACT_NOTES_v03.md`; stays optional behind Thumb A/C). **All three are unrendered drafts, NOT rendered packaging PASS** — later rendered thumbnails still require independent packaging panel, `style_sheet.py`, and `168×94` review after VO PASS. |
 | Neighbour gate | **PASS (`2026-11-22`)** — `8` raw / `6` strictly on-topic education videos `≥1M` views in `neighbours.py` (`TED-Ed/TED: yes`; led by `Veritasium` `28.29M` & `12.84M`, `TED-Ed` ★ `3.62M` & `1.04M`, `Thoughty2` `1.97M`, `SciShow` `1.40M`). |
-| Public search | Saved (`11_Upload-Package/evidence_2026-11-22_public_search.json`; `11` queries; 5 core phrases `autocomplete = yes`; `0` exact collisions). |
-| Pre-build vidIQ audit | Updated in [`11_Upload-Package/PRE_BUILD_VIDIQ_AUDIT.md`](11_Upload-Package/PRE_BUILD_VIDIQ_AUDIT.md) for `v02` (`J3628`, working draft — awaits independent `facts` pass & Chief lock). |
-| Script draft & review | **Draft v02 (`J3628`, 24 Nov 2026, correcting `v01` per Chief ruling `J3547` / HOS PR `#752`):** `01_Script/edison_tesla_ac_dc_script_master_v02.md` — mechanical `review:script` **PASS 92.3/100** (exact pasted output below) · **NOT LOCKED** — awaits independent Gemini `facts` job, direct-quote verification, and Chief lock (`due 1 Dec`). Counts and nominal `150 wpm` timestamps are planning estimates only, not measured VO takes. |
-| Facts & Sources | `01_Script/FACT_NOTES_v02.md` + `01_Script/SOURCES.md` independently audited in [`01_Script/GEMINI_FACTS_CHECK_v02.md`](01_Script/GEMINI_FACTS_CHECK_v02.md) (`J3629`, 25 Nov 2026: **`13 OK · 9 PARTIAL · 5 FLAG`** + `6` primary source upgrades on exact `dc99d234` hashes). Blocking `FLAG`s reported to script/review lane (`J3630`): Edison age 34 vs 35 at Holborn Viaduct, Ferraris 18 vs 11 Mar 1888 & verb, Row 8 Stanley birthdate misquote (`22` vs `28 Nov`), Row 10 non-existent Wikipedia quote, and Arm B absent from `evidence_2026-11-22_public_search.json`. Thumb B `22 MILES AWAY` stays ON HOLD (NPS `22 mi` vs ETHW `20 mi` variance). **NOT LOCKED — zero VO/picture spend.** |
-| Episode gate | **PASS** on exact `v02` (mechanical check pasted below; **VO & Veo remain strictly blocked** until independent `facts` pass and Chief script lock — `£0.00` spent). |
-| VO | pending (Ben Orbit Narrator — blocked until independent `facts` pass + Chief script lock) |
+| Public search | Saved across all 3 title arms: [`11_Upload-Package/evidence_2026-11-22_public_search.json`](11_Upload-Package/evidence_2026-11-22_public_search.json) (`11` queries; 5 core phrases `autocomplete = yes`; Arms A/C & Shorts `S01`/`S02` `0` exact collisions) + [`11_Upload-Package/evidence_2026-11-25_public_search_arm_b.json`](11_Upload-Package/evidence_2026-11-25_public_search_arm_b.json) (Candidate Arm B `0` exact collisions verified `2026-11-25`). |
+| Pre-build vidIQ audit | Updated in [`11_Upload-Package/PRE_BUILD_VIDIQ_AUDIT.md`](11_Upload-Package/PRE_BUILD_VIDIQ_AUDIT.md) for `v03` (`J3659`, Ferraris corrected to `18 March 1888` presentation / `April 1888` publication, Arm B dated `2026-11-25` collision check recorded; awaits `J3660` verification & Chief lock). |
+| Script draft & review | **Draft v03 (`J3659`, 25 Nov 2026, applying all 6 `J3630`/`J3629` blocking fixes + 3 minor alignment polishes from `v02`):** `01_Script/edison_tesla_ac_dc_script_master_v03.md` is now the **sole `master` script** (superseded `v01`/`v02` renamed to `edison_tesla_ac_dc_script_v01_draft.md` and `edison_tesla_ac_dc_script_v02_draft.md`) — mechanical `review:script` **PASS 91.9/100** and default `gate:episode` (no `--script`) **PASS** selecting `v03` (exact outputs pasted below) · **NOT SELF-LOCKED** — awaits `J3660` verification and Chief lock (`due 1 Dec`). Counts and nominal `150 wpm` timestamps are planning estimates only, not measured VO takes. |
+| Facts & Sources | [`01_Script/FACT_NOTES_v03.md`](01_Script/FACT_NOTES_v03.md) + [`01_Script/SOURCES.md`](01_Script/SOURCES.md) updated in `J3659` (`25 Nov 2026`) folding in all 6 `J3630`/`J3629` fixes (`FIX-1` Edison aged 34 at Holborn Viaduct; `FIX-2` Ferraris 18 March 1888 presentation / April 1888 publication; `FIX-3` Row 8 Stanley birthdate verbatim `22 November 1858`; `FIX-4` Row 10 verbatim USPTO `US381968A` + Thompson quote, Row 2 `[...]` ellipsis, all 6 verified primary institutional upgrades, and Acting Chief `J3630` Niagara ruling accepting NPS NRIS `75001212` `22 miles` / `15 Nov 1896` with ETHW `20 miles` / US DOE `Nov. 16` variance logged). Awaits `J3660` verification & Chief lock — zero VO/picture spend. |
+| Episode gate | **PASS** on exact `v03` via default `npm run gate:episode` **WITHOUT `--script`** (pasted below; **VO & Veo remain strictly blocked** until `J3660` verification and Chief script lock — `£0.00` spent). |
+| VO | pending (Ben Orbit Narrator — blocked until `J3660` Chief script lock) |
 | Picture | pending (Flow Veo 3.1, plate library — blocked until script + VO PASS) |
 | Runtime target | 7–9 min, 6 parts (5 chapter cards; nominal `1,314` words / `8.8 min` estimate pending measured VO) |
 | Air | **Thu 10 Dec 2026, 18:00 London**, normal publish (no Premiere); **slip contingency preserved:** slides to Thu 17 Dec if not ready for Ben's watch by Mon 7 Dec |
-| Shorts | Draft v02 (`10_Shorts/SHORTS_SCRIPTS_v02.md`, 16–19 s Ben 19 Nov house rules, nominal estimates pending measured VO): `S01` *Why Couldn't Thomas Edison's DC Power Cross a City?* (**Fri 11 Dec 11:30**, `38` whitespace / `39` spoken words ≈ `~17.1 s` nominal, repaired causal loop) & `S02` *How Did Nikola Tesla's AC Beat Edison's DC?* (**Sat 12 Dec 11:30**, `38` whitespace / `40` spoken words ≈ `~17.4 s` nominal, aligned `TESLA PATENT · 1888` stamp clear of `9–14 s` title) — awaiting independent `facts` pass & Chief lock. |
+| Shorts | Draft v03 ([`10_Shorts/SHORTS_SCRIPTS_v03.md`](10_Shorts/SHORTS_SCRIPTS_v03.md), 16–19 s Ben 19 Nov house rules, nominal estimates pending measured VO): `S01` *Why Couldn't Thomas Edison's DC Power Cross a City?* (**Fri 11 Dec 11:30**, `38` whitespace / `39` spoken words ≈ `~17.1 s` nominal) & `S02` *How Did Nikola Tesla's AC Beat Edison's DC?* (**Sat 12 Dec 11:30**, `38` whitespace / `40` spoken words ≈ `~17.4 s` nominal, `TESLA PATENT · 1888` overlay shifted `6.0–8.6 s` → **`6.4–8.6 s`**, Chief Niagara ruling logged) — awaiting `J3660` verification & Chief lock. |
 
-## Exact `v02` SHA-256 Hashes (`J3628`, `2026-11-24`)
+## Exact `v03` SHA-256 Hashes (`J3659`, `2026-11-25`)
 
 ```text
-32781f64a5d201970b90ec3d3ba14bd72c59290aa26b6732197e0d0fc30fe359  02_Video-Projects/128_Edison-Tesla-Westinghouse-Why-Do-We-Use-AC-Instead-Of-DC/01_Script/edison_tesla_ac_dc_script_master_v02.md
-15099bcec09648c9c429e468c7a51161cef3be6da5d4c45a93f2531d7271f21d  02_Video-Projects/128_Edison-Tesla-Westinghouse-Why-Do-We-Use-AC-Instead-Of-DC/01_Script/FACT_NOTES_v02.md
-9f6b8d3159c5865b29f5da61afae4714e883fb54e85ee6e5bb4819fa5f4818f8  02_Video-Projects/128_Edison-Tesla-Westinghouse-Why-Do-We-Use-AC-Instead-Of-DC/01_Script/SOURCES.md
-fbb43d3cd3fee9329279e20ec769daca60020cab7a637fd6bceb3bafa40a9c95  02_Video-Projects/128_Edison-Tesla-Westinghouse-Why-Do-We-Use-AC-Instead-Of-DC/10_Shorts/SHORTS_SCRIPTS_v02.md
-ffdbdd884e5626b28b1db3dc40bcaf3391405d4ac1e3ec7c99ee84125a3e9465  02_Video-Projects/128_Edison-Tesla-Westinghouse-Why-Do-We-Use-AC-Instead-Of-DC/11_Upload-Package/PACKAGE_FIRST_SCORING_v02.md
-176ea5500d7622e6f6dda6d99ddc47d9c32de69e338cd23dda3e4267ec85b2df  02_Video-Projects/128_Edison-Tesla-Westinghouse-Why-Do-We-Use-AC-Instead-Of-DC/11_Upload-Package/LAUNCH_PLAN.md
-3436a0637507ec883664ee350deb88bd24eae2a6325008adf03387db1b7dfc03  02_Video-Projects/128_Edison-Tesla-Westinghouse-Why-Do-We-Use-AC-Instead-Of-DC/11_Upload-Package/PRE_BUILD_VIDIQ_AUDIT.md
+c389c3cfbf758f5f261103bc6aa174cdb85dcc6f48c7e546f50ae63c98d3bb8b  02_Video-Projects/128_Edison-Tesla-Westinghouse-Why-Do-We-Use-AC-Instead-Of-DC/01_Script/edison_tesla_ac_dc_script_master_v03.md
+4104ad2d77769bab6b1bd0cef35e760a1ecccd7430b0ccf50fea8b402fe08474  02_Video-Projects/128_Edison-Tesla-Westinghouse-Why-Do-We-Use-AC-Instead-Of-DC/01_Script/FACT_NOTES_v03.md
+be44dd42e2bdfefb5e3c1b82866ca3fdb6790331e05fe24bc9059672495a9379  02_Video-Projects/128_Edison-Tesla-Westinghouse-Why-Do-We-Use-AC-Instead-Of-DC/01_Script/SOURCES.md
+1132ad9f8b44d4e545f699bf702b83894370effb34afe37ce12b25a2080694e7  02_Video-Projects/128_Edison-Tesla-Westinghouse-Why-Do-We-Use-AC-Instead-Of-DC/10_Shorts/SHORTS_SCRIPTS_v03.md
+c1dad1fed48f2705aa898a021e331e1ceccc1f2b60ee2b099e7acf910dd0d816  02_Video-Projects/128_Edison-Tesla-Westinghouse-Why-Do-We-Use-AC-Instead-Of-DC/11_Upload-Package/PACKAGE_FIRST_SCORING_v03.md
+d368e59111adfcfdb22253ac7aa8b9a4b345367f62033fbdc2b3ccd8c277bfbc  02_Video-Projects/128_Edison-Tesla-Westinghouse-Why-Do-We-Use-AC-Instead-Of-DC/11_Upload-Package/evidence_2026-11-25_public_search_arm_b.json
+92de6faed0b0300d2f1b4f88df316c3af9277e38e05723efc55f7839fd7ce502  02_Video-Projects/128_Edison-Tesla-Westinghouse-Why-Do-We-Use-AC-Instead-Of-DC/11_Upload-Package/PRE_BUILD_VIDIQ_AUDIT.md
+4bcab7b579cf8ccb9f6502853148c6ebb6c82ef6cce2193bd58a4db8a3fe7797  02_Video-Projects/128_Edison-Tesla-Westinghouse-Why-Do-We-Use-AC-Instead-Of-DC/11_Upload-Package/LAUNCH_PLAN.md
 ```
 
-## Gate Outputs on Exact `v02` (`J3628`, `2026-11-24` — Mechanical Checks Only, Not Production Approval)
+## Gate Outputs on Exact `v03` (`J3659`, `2026-11-25` — Mechanical Checks Only, Not Production Approval)
 
-### `npm run review:script -- --file ../02_Video-Projects/128_Edison-Tesla-Westinghouse-Why-Do-We-Use-AC-Instead-Of-DC/01_Script/edison_tesla_ac_dc_script_master_v02.md`
+### `npm run review:script -- --file ../02_Video-Projects/128_Edison-Tesla-Westinghouse-Why-Do-We-Use-AC-Instead-Of-DC/01_Script/edison_tesla_ac_dc_script_master_v03.md`
 
 ```text
-# edison_tesla_ac_dc_script_master_v02.md
+# edison_tesla_ac_dc_script_master_v03.md
 
-**Decision:** PASS · **Score:** 92.3 / 100
+**Decision:** PASS · **Score:** 91.9 / 100
 
 | Dimension | Score |
 |---|---:|
 | hook | 9.5 |
 | curiosity | 7.5 |
 | storytelling | 9.5 |
-| scientificAccuracy | 10 |
+| scientificAccuracy | 9.6 |
 | emotion | 9.6 |
 | escalation | 9 |
 | retentionPotential | 9 |
@@ -64,12 +65,12 @@ Words: 1314 · Est. min: 8.8 · Chapters: 5
 ## Findings
 
 - **[info] overall:** Structure gates 8/8 — applied +1.05 completeness boost to supporting dimensions.
-- **[info] overall:** PASS 92.3/100 — proceed to VO after production checklist.
+- **[info] overall:** PASS 91.9/100 — proceed to VO after production checklist.
 
 Pass threshold: 90
 ```
 
-### `npm run gate:episode -- --project ../02_Video-Projects/128_Edison-Tesla-Westinghouse-Why-Do-We-Use-AC-Instead-Of-DC --script ../02_Video-Projects/128_Edison-Tesla-Westinghouse-Why-Do-We-Use-AC-Instead-Of-DC/01_Script/edison_tesla_ac_dc_script_master_v02.md`
+### `npm run gate:episode -- --project ../02_Video-Projects/128_Edison-Tesla-Westinghouse-Why-Do-We-Use-AC-Instead-Of-DC` *(WITHOUT `--script`)*
 
 ```text
 # Episode gate — 128_Edison-Tesla-Westinghouse-Why-Do-We-Use-AC-Instead-Of-DC
@@ -78,32 +79,47 @@ Pass threshold: 90
 
 | Check | Status | Detail |
 |---|---|---|
-| project_dir | OK | Project: /Users/ben/_desk/worker/history-of-science/02_Video-Projects/128_Edison-Tesla-Westinghouse-Why-Do-We-Use-AC-Instead-Of-DC |
+| project_dir | OK | Project: /Volumes/MiniWork/desk/worktrees/hos-J3659/02_Video-Projects/128_Edison-Tesla-Westinghouse-Why-Do-We-Use-AC-Instead-Of-DC |
 | prebuild_vidiq | OK | Pre-build vidIQ audit present and looks signed off. |
-| script_file | OK | Script: 01_Script/edison_tesla_ac_dc_script_master_v02.md |
-| script_review | OK | Script reviewer PASS 92.3/90 (need ≥90). |
+| script_file | OK | Script: 01_Script/edison_tesla_ac_dc_script_master_v03.md |
+| script_review | OK | Script reviewer PASS 91.9/90 (need ≥90). |
 | explorer_acts | OK | [EXPLORER ACTS] beats 2 (need ≥1). |
 | visual_must | OK | [VISUAL MUST] count 41 (need ≥4). |
 | teach | OK | [TEACH] count 6 (need ≥4). |
 | chapters | OK | [CHAPTER CARD] count 5 (aim 4–6 film acts). |
 | production_checklist | OK | Checklist present: 11_Upload-Package/PRODUCTION_CHECKLIST_V2.md |
 
-Script score: **92.3/100** · PASS
+Script score: **91.9/100** · PASS
 ```
 
-### `00_Brand/Channel-Setup/tools/check_all.sh 02_Video-Projects/128_Edison-Tesla-Westinghouse-Why-Do-We-Use-AC-Instead-Of-DC`
+### `bash 00_Brand/Channel-Setup/tools/check_all.sh 02_Video-Projects/128_Edison-Tesla-Westinghouse-Why-Do-We-Use-AC-Instead-Of-DC`
 
-*(Verified after final edits; exact PASS recorded in PR & J3628 report.)*
+```text
+-- durable desk handoffs: PASS
+-- email ratchet: PASS
+-- no media: PASS
+-- status board in sync: PASS
+-- ElevenLabs guard tests: PASS
+-- vo_check word tests: PASS
+-- atempo check tests: PASS
+-- voice speed (atempo <= 1.06): PASS
+-- contract tests: PASS
+-- package-lint: PASS
+-- review:script edison_tesla_ac_dc_script_master_v03.md: PASS
+-- gate:episode: PASS
+
+ALL CHECKS PASS
+```
 
 ## Parts
 
 | Part | Title | Plate board | Latest cut | Status |
 |---|---|---|---|---|
-| 01 | The Copper Problem (no chapter card) | `07_Edit-Project/parts/part-01_plates_v01.json` (scaffold; break into `4–6 s` cuts after VO lock) | — | Script v02 awaiting independent `facts` & Chief lock |
-| 02 | The Trick That Shrank the Wire | pending VO lock | — | Script v02 awaiting independent `facts` & Chief lock |
-| 03 | The Motor Without Sparks | pending VO lock | — | Script v02 awaiting independent `facts` & Chief lock |
-| 04 | The War of the Currents | pending VO lock | — | Script v02 awaiting independent `facts` & Chief lock |
-| 05 | The White City and Niagara | pending VO lock | — | Script v02 awaiting independent `facts` & Chief lock |
-| 06 | Why Both Currents Won | pending VO lock | — | Script v02 awaiting independent `facts` & Chief lock |
+| 01 | The Copper Problem (no chapter card) | `07_Edit-Project/parts/part-01_plates_v01.json` (scaffold; break into `4–6 s` cuts after VO lock) | — | Script v03 awaiting `J3660` verification & Chief lock |
+| 02 | The Trick That Shrank the Wire | pending VO lock | — | Script v03 awaiting `J3660` verification & Chief lock |
+| 03 | The Motor Without Sparks | pending VO lock | — | Script v03 awaiting `J3660` verification & Chief lock |
+| 04 | The War of the Currents | pending VO lock | — | Script v03 awaiting `J3660` verification & Chief lock |
+| 05 | The White City and Niagara | pending VO lock | — | Script v03 awaiting `J3660` verification & Chief lock |
+| 06 | Why Both Currents Won | pending VO lock | — | Script v03 awaiting `J3660` verification & Chief lock |
 
 Keep this file current on `main`. A STOP (quota, auth, missing VO) is a line here, not an open branch.

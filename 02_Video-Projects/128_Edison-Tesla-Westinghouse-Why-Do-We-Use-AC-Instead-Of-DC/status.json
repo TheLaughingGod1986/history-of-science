@@ -3,7 +3,7 @@
   "title": "Why Do We Use AC Instead of DC? (Edison vs Tesla)",
   "air": "2026-12-10",
   "ready_by": "2026-12-07",
-  "summary": "Cluster 1 lead film of hos-search-2027-01 (target Thu 10 Dec 18:00 London, slides to Thu 17 Dec if not ready for Ben's watch by Mon 7 Dec). Following Chief ruling J3547 (FIX, HOS PR #752), J3628 delivered corrected draft v02: edison_tesla_ac_dc_script_master_v02.md (review:script PASS 92.3/100, gate:episode PASS — mechanical only, not locked), FACT_NOTES_v02.md & SOURCES.md (direct institutional URLs + honest secondary labels), SHORTS_SCRIPTS_v02.md (shortened 16-19s nominal cuts with repaired loops/overlays), PACKAGE_FIRST_SCORING_v02.md (working title retained, Thumb A revised to WASTED AS HEAT, Thumb B 22 MILES AWAY held), and LAUNCH_PLAN.md. Awaits independent Gemini facts pass, direct-quote review, and Chief lock before any VO or picture spend.",
+  "summary": "Cluster 1 lead film of hos-search-2027-01 (target Thu 10 Dec 18:00 London, slides to Thu 17 Dec if not ready for Ben's watch by Mon 7 Dec). Following Acting Chief ruling J3630 (FIX, HOS PR #761) and J3629 (PR #760), J3659 delivered clean v03: edison_tesla_ac_dc_script_master_v03.md (sole master file; superseded v01/v02 renamed to _draft.md; all 6 blocking fixes + 3 minor alignment polishes applied), FACT_NOTES_v03.md & SOURCES.md (all 6 verified primary institutional upgrades + Chief Niagara ruling logged), SHORTS_SCRIPTS_v03.md (S02 overlay shifted to 6.4-8.6 s), PACKAGE_FIRST_SCORING_v03.md, evidence_2026-11-25_public_search_arm_b.json (0 exact collisions), PRE_BUILD_VIDIQ_AUDIT.md, and LAUNCH_PLAN.md. Unrendered thumbnail drafts only (not rendered packaging PASS). Awaits J3660 verification and Chief script lock before any VO or picture spend.",
   "stages": {
     "topic": {
       "state": "done",
@@ -13,10 +13,10 @@
       "state": "doing",
       "due": "2026-12-01",
       "owner": "Claude",
-      "since": "2026-11-24",
+      "since": "2026-11-25",
       "underway": false,
-      "waiting": "independent Gemini facts pass on v02, then direct-quote verification and Chief lock",
-      "note": "J3628 corrected v02 delivered (review:script PASS 92.3/100, gate:episode PASS; nominal timestamps only, not locked)"
+      "waiting": "J3660 verification of exact v03 hashes/diffs and Chief script lock decision (no VO/picture spend until KEEP)",
+      "note": "J3659 delivered v03 (sole master edison_tesla_ac_dc_script_master_v03.md; FIX-1..FIX-6 + 3 polishes; mechanical review:script & default gate:episode PASS; not self-locked)"
     },
     "facts": {
       "state": "doing",
@@ -24,36 +24,36 @@
       "owner": "Claude",
       "since": "2026-11-25",
       "underway": false,
-      "waiting": "script/notes fixes for 5 J3629 FLAGs (Edison age at Holborn, Ferraris 18 vs 11 Mar 1888, Stanley birthdate & Row 10 quote, Arm B collision check) and J3630 direct-quote/lock review",
-      "note": "J3629 independent Gemini facts check complete (01_Script/GEMINI_FACTS_CHECK_v02.md: 13 OK, 9 PARTIAL, 5 FLAG, 6 primary upgrades); not locked, no spend"
+      "waiting": "J3660 final verification of FACT_NOTES_v03.md and SOURCES.md against J3630/J3629 rulings",
+      "note": "J3659 folded FIX-1..FIX-4, all 6 J3629 primary institutional upgrades, Row 2 ellipsis, and Chief J3630 Niagara ruling into FACT_NOTES_v03.md & SOURCES.md"
     },
     "package": {
       "state": "doing",
       "due": "2026-12-05",
       "owner": "Claude",
-      "since": "2026-11-24",
+      "since": "2026-11-25",
       "underway": false,
-      "waiting": "facts pass, script lock, VO re-timing, rendered thumbnail panel/style/168px review, and PACKAGE_MANIFEST.json",
-      "note": "PACKAGE_FIRST_SCORING_v02.md (working title retained, WASTED AS HEAT, 22 MILES AWAY held), PRE_BUILD_VIDIQ_AUDIT.md, and LAUNCH_PLAN.md updated in J3628"
+      "waiting": "J3660 script lock, VO re-timing, rendered thumbnail panel/style/168px review, and PACKAGE_MANIFEST.json",
+      "note": "J3659 ran Arm B public_search (evidence_2026-11-25_public_search_arm_b.json: 0 exact collisions) and updated PACKAGE_FIRST_SCORING_v03.md, PRE_BUILD_VIDIQ_AUDIT.md, and LAUNCH_PLAN.md (unrendered drafts only)"
     },
     "vo": {
       "state": "todo",
       "due": "2026-12-02",
-      "waiting": "after independent facts pass and Chief script lock (no spend until PASS)"
+      "waiting": "after J3660 verification and Chief script lock (no spend until PASS)"
     },
     "shorts_scripts": {
       "state": "doing",
       "due": "2026-12-01",
       "owner": "Claude",
-      "since": "2026-11-24",
+      "since": "2026-11-25",
       "underway": false,
-      "waiting": "independent facts pass and Chief lock on SHORTS_SCRIPTS_v02.md (S01 Fri 11 Dec & S02 Sat 12 Dec, 16-19s nominal)",
-      "note": "Shortened v02 Shorts drafted in J3628 (S01 39w / S02 40w nominal; causal loop and overlay overlap fixed)"
+      "waiting": "J3660 verification and Chief lock on SHORTS_SCRIPTS_v03.md (S01 Fri 11 Dec & S02 Sat 12 Dec, 16-19s nominal)",
+      "note": "J3659 delivered SHORTS_SCRIPTS_v03.md (S02 TESLA PATENT 1888 overlay shifted 6.0-8.6 s -> 6.4-8.6 s; Chief Niagara ruling logged)"
     },
     "shorts_vo": {
       "state": "todo",
       "due": "2026-12-03",
-      "waiting": "after SHORTS_SCRIPTS_v02.md lock"
+      "waiting": "after SHORTS_SCRIPTS_v03.md lock"
     },
     "picture": {
       "state": "todo",
@@ -68,7 +68,7 @@
     "thumbnails": {
       "state": "todo",
       "due": "2026-12-06",
-      "waiting": "after script and VO PASS (WASTED AS HEAT, HIGH VOLTAGE; 22 MILES AWAY held pending facts; rendered panel/style/168px review required)"
+      "waiting": "after script and VO PASS (unrendered drafts: WASTED AS HEAT, HIGH VOLTAGE, optional 22 MILES AWAY; rendered panel/style/168px review required)"
     },
     "ben_ok": {
       "state": "todo",
