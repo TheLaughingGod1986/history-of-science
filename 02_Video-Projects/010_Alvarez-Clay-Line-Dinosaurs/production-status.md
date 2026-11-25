@@ -205,3 +205,29 @@ Automatic approval review rejected registry push, citing public-repository discl
 Thread read to #7141663656. Private state change posted on studio thread #7141816623.
 
 Final validation: check_all.sh 010 exits 0: ALL CHECKS PASS; script 92.1/100 PASS; gate:episode PASS.
+
+
+## J3610 — 25 Nov 2026 private-only Studio finishing & dependency hold (Gemini covering, elected Acting Chief)
+
+- **Authority:** Queue job `J3610` (`ref: J3511`, Ben OK `HOS:ASK:J2933.2`), `STUDIO_PLAYBOOK.md` §9. `£0`, `0` credits, no generation, no upload, no deletion, no scheduling, no Buffer posts, no immediate public action.
+- **YouTube state change record (`sMPlMuxK3YU`, *Are Birds Really Dinosaurs?*):** `privacyStatus`: `private -> private` (unchanged); `publishAt`: `null -> null` (unchanged); `Related video`: `None -> None` (intentionally pending actual HOS 010 long upload ID). Private-only Studio metadata finishing completed on `sMPlMuxK3YU` (one setting per save, re-verifying Audience = Not Made for Kids and Visibility = Private after every save, then full reload readback).
+- **Live HOS 010 long readiness check (`25 Nov 2026 ~11:32–11:37Z`):**
+  - Fresh `npm run channel:audit` on `@HistoryOfScienceYT` (`UCXp7HkBIl1LgaznXuZHJyRg`): **75 videos, 0 errors**. Scheduled longs are `YqCWYlv_LCY` (008, Thu 26 Nov 18:00 UK), `wiyfRnsTfTY` (009, Thu 3 Dec 18:00 UK), and `uAomPaOBrM8` (compilation, Thu 10 Dec 18:00 UK). **No HOS 010 long video exists on YouTube.**
+  - `02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/status.json`: `picture` is `doing` (`12/65` plates — only the 12 Shorts plates exist; Long Parts 01–05 remaining plates pending), `edit` pending long picture, `thumbnails`/`ben_ok`/`scheduled` all `todo`.
+  - Therefore `sMPlMuxK3YU` remains Private without `publishAt`, and `J3610` is parked with a typed dependency wait (`jobs.py wait --type dependency`) until HOS 010 long has an actual YouTube upload ID and confirmed air date (no invented long date, no December 1 Ben-watch hold).
+- **Private-only Studio finishing items from `J3511` completed and verified on reload (`https://studio.youtube.com/video/sMPlMuxK3YU/edit`):**
+  - **Audience:** `No, it's not Made for Kids` (`VIDEO_MADE_FOR_KIDS_NOT_MFK=true`, `MFK=false`), Age restriction `None` (re-verified after every save and post-reload).
+  - **Altered/synthetic content (`AI use`):** confirmed **`Yes`** (`VIDEO_HAS_ALTERED_CONTENT_YES=true`).
+  - **Paid promotion:** set & saved to **`No`** (`VIDEO_PAID_PRODUCT_PLACEMENT_NO=true`, was blank).
+  - **Automatic places:** set & saved to **OFF** (`false`, was `true`); Automatic chapters `true`, Automatic concepts `true`.
+  - **Caption certification:** set & saved to **`This content has never aired on television in the US`** (was `None`).
+  - **Education subfields (`Category = Education`):** set & saved to **Type = `Concept overview`**, **Academic system = `England`**, **Level = `Key stage 4`** (ages 14–16; persisted cleanly on reload).
+  - **Comments & Moderation:** `Comments = On`, set & saved **Moderation = `Basic`** (`Hold potentially inappropriate comments`, was `None`), Who can comment = `Anyone`, Sort by = `Top`, Show likes = `true`.
+  - **Languages / Licence / Remixing:** Video language `English (United Kingdom)`, Title & description language `English (United Kingdom)`, Standard YouTube licence, Embedding `true`, Notify subscribers `true`, Shorts remixing `Allow video and audio remixing`.
+  - **Cover & Captions live API readback (`sMPlMuxK3YU`):** `hasCustomThumbnail: true`, live `maxres` thumbnail downloaded and visually verified as the approved **`STILL HERE`** robin frame; `captions.list` confirms `en-GB` `standard` (`English (United Kingdom)`) `status: serving`.
+  - **Records intact while waiting:** OWB `social/hos/UPLOADS.json` keeps exact NAS SHA-256 `698db62789e1e6884ae15797dc51083c39bbc0ee3c0cc1ecf83f92e2e87a0359` without invented long ID or standalone flag; `social/hos/BUFFER_POSTS.json` remains `held: true` with `channels: {}` and `dueAt: null`; `shorts_open_library/library.json` remains `retired` (registration date `2026-11-24`, no air date).
+- **Checks PASS:**
+  ```text
+  PASS  02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/11_Upload-Package/PACKAGE_MANIFEST.json
+  channel:audit: 75 videos, 0 errors (sMPlMuxK3YU private, unscheduled, 0 errors)
+  ```
