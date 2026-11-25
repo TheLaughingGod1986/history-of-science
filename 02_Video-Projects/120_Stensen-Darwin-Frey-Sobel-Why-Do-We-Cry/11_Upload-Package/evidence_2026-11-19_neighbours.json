@@ -1,0 +1,221 @@
+{
+ "pulled": "2026-11-19",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "why do we cry",
+  "third eyelid",
+  "how the eye works",
+  "how vision works"
+ ],
+ "autocomplete": {
+  "why do we cry": [
+   "why do we cry",
+   "why do we cry when we're sad",
+   "why do we cry when we cut onions",
+   "why do we cry dr binocs",
+   "why do we cry when we laugh",
+   "why do we cry while cutting onions",
+   "why do we cry when we are angry",
+   "why do we cry in temple",
+   "why do we cry read aloud",
+   "why do we cry when we are happy"
+  ],
+  "third eyelid": [
+   "third eyelid",
+   "third eyelid cat",
+   "third eyelid cat home treatment",
+   "third eyelid human",
+   "third eyelid dog",
+   "third eyelid cat treatment",
+   "third eyelid prolapse in cattle",
+   "third eyelid crocodile",
+   "third eyelid avatar",
+   "third eyelid dog home treatment"
+  ],
+  "how the eye works": [
+   "how the eye works",
+   "how the eye works animation",
+   "how the eye works psychology",
+   "how the eye works ks3",
+   "how the eye works dr binocs",
+   "how the eye works gcse",
+   "how the eye works with the brain",
+   "how the eye works anatomy and physiology",
+   "how the eye works ks2",
+   "how the eye works rods and cones"
+  ],
+  "how vision works": [
+   "how vision works",
+   "how vision works in the brain",
+   "how vision works with astigmatism",
+   "how vision works animation",
+   "how eye works",
+   "how eye works animation",
+   "how eye works 3d animation",
+   "sight words",
+   "how eyesight works",
+   "how eye works in hindi"
+  ]
+ },
+ "sharedTitleWords": [
+  "why do",
+  "do we",
+  "we cry",
+  "the eye",
+  "gcse biology",
+  "biology how",
+  "how the",
+  "eye works",
+  "works part"
+ ],
+ "neighbours": [
+  {
+   "id": "keMF8YzQoRM",
+   "title": "Why do we cry? The three types of tears - Alex Gendler",
+   "channel": "TED-Ed",
+   "views": "6,914,506 views",
+   "age": "12 yr ago",
+   "length": "3:59",
+   "tier": 1,
+   "viewCount": 6914506,
+   "foundBy": "why do we cry",
+   "onTopic": true
+  },
+  {
+   "id": "d37SBsPB7sk",
+   "title": "Why do humans have a third eyelid? - Dorsa Amir",
+   "channel": "TED-Ed",
+   "views": "2,027,361 views",
+   "age": "7 yr ago",
+   "length": "4:36",
+   "tier": 1,
+   "viewCount": 2027361,
+   "foundBy": "third eyelid",
+   "onTopic": true
+  },
+  {
+   "id": "K2mv7kX3q2s",
+   "title": "How super glue was invented | Moments of Vision 8 - Jessica Oreck",
+   "channel": "TED-Ed",
+   "views": "402,307 views",
+   "age": "9 yr ago",
+   "length": "1:54",
+   "tier": 1,
+   "viewCount": 402307,
+   "foundBy": "ted-ed how vision works",
+   "onTopic": true
+  },
+  {
+   "id": "ETy6wM5GRZQ",
+   "title": "The Third Eye: How to See in the Absence of Light | Katarina Stephan | TEDxColumbiaUniversity",
+   "channel": "TEDx Talks",
+   "views": "137,221 views",
+   "age": "8 yr ago",
+   "length": "12:00",
+   "tier": 1,
+   "viewCount": 137221,
+   "foundBy": "third eyelid ted",
+   "onTopic": true
+  },
+  {
+   "id": "o0DYP-u1rNM",
+   "title": "Vision: Crash Course Anatomy & Physiology #18",
+   "channel": "CrashCourse",
+   "views": "4,592,360 views",
+   "age": "11 yr ago",
+   "length": "9:39",
+   "tier": 2,
+   "viewCount": 4592360,
+   "foundBy": "ted-ed how the eye works",
+   "onTopic": true
+  },
+  {
+   "id": "E9Bf6jdIsKw",
+   "title": "Why Do We Cry?",
+   "channel": "Be Smart",
+   "views": "804,957 views",
+   "age": "8 yr ago",
+   "length": "5:46",
+   "tier": 2,
+   "viewCount": 804957,
+   "foundBy": "why do we cry",
+   "onTopic": true
+  },
+  {
+   "id": "9SGAicn9rXY",
+   "title": "GCSE Biology - How the Eye Works (Part 1) - Structure of the Eye & Iris Reflex",
+   "channel": "Cognito",
+   "views": "704,301 views",
+   "age": "6 yr ago",
+   "length": "5:09",
+   "tier": 2,
+   "viewCount": 704301,
+   "foundBy": "ted-ed how the eye works",
+   "onTopic": true
+  },
+  {
+   "id": "jg9OqtXl6OY",
+   "title": "Why Do We Cry When We're Sad?",
+   "channel": "SciShow Kids",
+   "views": "544,144 views",
+   "age": "8 yr ago",
+   "length": "3:10",
+   "tier": 2,
+   "viewCount": 544144,
+   "foundBy": "why do we cry",
+   "onTopic": true
+  },
+  {
+   "id": "-BqvOucCTYg",
+   "title": "GCSE Biology - How the Eye Works (Part 2) - Accommodation",
+   "channel": "Cognito",
+   "views": "491,091 views",
+   "age": "6 yr ago",
+   "length": "6:35",
+   "tier": 2,
+   "viewCount": 491091,
+   "foundBy": "how the eye works ted",
+   "onTopic": true
+  },
+  {
+   "id": "cB6-FcA1_bU",
+   "title": "How your vision determines your reality | Bryan William Jones | TEDxBerlin",
+   "channel": "TEDx Talks",
+   "views": "86,625 views",
+   "age": "2 yr ago",
+   "length": "20:21",
+   "tier": 1,
+   "viewCount": 86625,
+   "foundBy": "how vision works ted",
+   "onTopic": true
+  },
+  {
+   "id": "L0pljgXZ_GA",
+   "title": "Overlooking our vision | Cameron McCrodan | TEDxVictoria",
+   "channel": "TEDx Talks",
+   "views": "86,224 views",
+   "age": "11 yr ago",
+   "length": "11:22",
+   "tier": 1,
+   "viewCount": 86224,
+   "foundBy": "how vision works ted",
+   "onTopic": true
+  },
+  {
+   "id": "zk5moFndYRU",
+   "title": "Why Everything You Know About Vision Is Wrong | Dr. Bryce Appelbaum | TEDxForbesPark",
+   "channel": "TEDx Talks",
+   "views": "69,319 views",
+   "age": "1 yr ago",
+   "length": "11:46",
+   "tier": 1,
+   "viewCount": 69319,
+   "foundBy": "ted-ed how vision works",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 3,
+ "gate": "PASS",
+ "hasTed": true,
+ "failedQueries": []
+}
