@@ -1,0 +1,46 @@
+{
+  "film": "125",
+  "title": "What Causes the Tides? (Galileo Got It Wrong)",
+  "summary": "Backlog topic added by J3203 and Rule-E pre-cleared by J3214 (GO 95.9/100, 20 Nov 2026). Topic brief, neighbour and public-search evidence in 02_Video-Projects/125_Galileo-Newton-Laplace-What-Causes-The-Tides/. Neighbour gate PASS (6 education videos >=1M views, 4 strictly on tides + TED-Ed on-topic 605k). All facts unverified. Waits in next_hos under rule G for a free HOS place, SOURCES.md primary quotes, and the facts lane.",
+  "stages": {
+    "topic": {
+      "state": "todo",
+      "note": "J3203 topic brief written; J3214 Rule-E topic go/no-go review GO (95.9/100 in next_hos under Rule G); Short S01 disambiguated from TED-Ed title; physics & WHO-year guardrails logged; all claims unverified pending SOURCES.md and facts lane when an active HOS slot opens"
+    },
+    "script": {
+      "state": "todo"
+    },
+    "facts": {
+      "state": "todo"
+    },
+    "package": {
+      "state": "todo"
+    },
+    "vo": {
+      "state": "todo"
+    },
+    "shorts_scripts": {
+      "state": "todo"
+    },
+    "shorts_vo": {
+      "state": "todo"
+    },
+    "picture": {
+      "state": "todo"
+    },
+    "edit": {
+      "state": "todo"
+    },
+    "thumbnails": {
+      "state": "todo"
+    },
+    "ben_ok": {
+      "state": "todo"
+    },
+    "scheduled": {
+      "state": "todo"
+    }
+  },
+  "claims": [],
+  "next": ""
+}
