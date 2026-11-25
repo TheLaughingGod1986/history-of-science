@@ -10,13 +10,30 @@
 | Pre-build vidIQ audit | `11_Upload-Package/PRE_BUILD_VIDIQ_AUDIT.md` (updated & signed off for v01 draft in `J3507`, `2026-11-24`) |
 | Script review | **PASS — `93.7 / 100`** (`01_Script/trinity_test_explained_script_master_v01.md`, `1,266` words, `8.4` min, `4` chapter cards, `8/8` structure gates; awaits independent `facts` lane + Chief lock) |
 | Episode gate | **PASS** (all checks `OK` — VO/Veo still held pending Chief lock & open WIP slot under Rule G) |
-| Sources & Facts | `01_Script/SOURCES.md` & `01_Script/FACT_NOTES_v01.md` (`20/20` rows verified with verbatim quotes & open URLs; all 7 `J3502` guardrails resolved; queued for independent `facts` lane `gemini-agy`) |
-| Shorts scripts | `10_Shorts/SHORTS_SCRIPTS_v01.md` (`S01` `44w` Sat 19 Dec & `S02` `46w` Fri 18 Dec, 16–19 s Ben 19 Nov house rules; awaits Chief lock) |
+| Sources & Facts | `01_Script/SOURCES.md`, `01_Script/FACT_NOTES_v01.md` & **`01_Script/GEMINI_FACTS_CHECK_v01.md`** (`J3552`, `2026-11-25`: **13 OK · 2 PARTIAL · 8 FLAG** across 23 items; 8 blocking FLAGs + primary upgrades incl. 22-page declassified `LA-602` PDF handed off to `J3553` for v02 revision before lock; `£0.00` spent) |
+| Shorts scripts | `10_Shorts/SHORTS_SCRIPTS_v01.md` (`J3552` FLAG-5 & FLAG-7: actual counts `S01` `55w` / `S02` `65w` exceed 16–19 s house rule, and `S02` `"silent shockwave"` needs fix before lock; titles `S01` `44c` & `S02` `58c` confirmed `0` collisions) |
 | VO | pending (Ben Orbit Narrator — starts only after script/facts lock & open WIP slot) |
 | Picture | pending (Flow Veo 3.1, plate library — starts only after script & VO PASS) |
 | Runtime target | 7–9 min, 5 parts (`8.4` min est. at 150 wpm) |
 | Ben's watch target | Mon 14 Dec 2026 |
 | Air | Thu 17 Dec 2026 18:00 London, normal publish (no Premiere; slides one week if not ready) |
+
+---
+
+## Independent Gemini Facts Audit (`J3552`, `2026-11-25`)
+
+- **Audit file:** `01_Script/GEMINI_FACTS_CHECK_v01.md` (audited PR `#753` commit `ebb55eea`; script & Shorts files left byte-for-byte unchanged; `£0.00` spent).
+- **Tally (`23` items = `R01–R20` + `S01` + `S02` + `P01`):** **`13 OK · 2 PARTIAL · 8 FLAG`**.
+- **8 Blocking `FLAG`s handed off to `J3553` (do not lock `v01` as-is):**
+  1. **FLAG-1 (`SOURCES.md` & `FACT_NOTES_v01.md` Row 7):** Wrong OSTI URL `https://www.osti.gov/biblio/4036390` (actually an unrelated 1964 R. M. Misra paper); replaced in audit with verified 22-page Wayback scan of declassified `LA-602` (`14 August 1946`, declassified `2-2-73`).
+  2. **FLAG-2 (Long Part 02 lines 40 & 51):** Unsourced `"a thousand times faster"` cooling ratio contradicts `LA-602`'s headline `~1.6` worst-case minimum safety factor (`7.4` with inverse Compton in 57 m sphere).
+  3. **FLAG-3 (`FACT_NOTES_v01.md` Rows 8 & 9):** Missing verbatim quotes; Wikipedia `Arthur_Compton` & `Hans_Bethe` do not mention Pearl Buck or `"three chances in a million"` (upgraded with `LA-602` verbatim PDF quotes + CrossRef DOI `10.1080/00963402.1976.11455623` for Bethe June 1976).
+  4. **FLAG-4 (Long Part 04 line 86 `VISUAL MUST: 5:03`):** Bainbridge's countdown bunker (`S-10000`) was `10,000 yards` (`~5.7 miles`) from Ground Zero, not `"ten miles away"` (Base Camp was ~10 miles).
+  5. **FLAG-5 (Short `S02` lines 56 & 62):** `"silent shockwave"` misattaches silence to the shockwave (the *flash* was silent for 40 s; the blast wave arrived with a roar).
+  6. **FLAG-6 (Long Part 03 lines 65 & 77):** Inverted speed-of-light math — light crosses a football field in `~0.33 µs`, so `1 µs` is `~3×` LONGER (and plural microseconds `~10–100×` longer), not `"shorter than light takes to cross a football field"`.
+  7. **FLAG-7 (Shorts `S01` & `S02`):** Actual spoken word counts are **`55w`** (`S01`, `~21.4–23.5 s`) and **`65w`** (`S02`, `~25.3–27.5 s`) vs claimed `44w`/`46w`, exceeding the `16–19 s` house rule.
+  8. **FLAG-8 (`FACT_NOTES_v01.md` Row 10):** Sentence splice without `[...]` in Wikipedia `Edward_Teller` mutates `"its head"` from Theoretical Division to Los Alamos Laboratory (upgraded to DOE OpenNet `hans-bethe.html` verbatim quote).
+- **Primary upgrades verified:** Scanned 22-page `LA-602` PDF (`14 Aug 1946`), DOE OpenNet (`trinity.htm`, `trinity_safety.htm`, `edward-teller.html`, `hans-bethe.html`, `enrico-fermi.html`), LANL/OSTI `1836991` (Katz 2021) & `962810` (Teller), NASA Earth Fact Sheet (`78.08% N₂`), NobelPrize.org (Compton, Fermi, Segrè, Bethe), and CrossRef DOIs for Selby et al. 2021 (`10.1080/00295450.2021.1932176`) & Bethe 1976 (`10.1080/00963402.1976.11455623`).
 
 ---
 

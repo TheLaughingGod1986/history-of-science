@@ -3,7 +3,7 @@
   "title": "Trinity Test Explained: Could It Ignite the Sky?",
   "air": "2026-12-17",
   "ready_by": "2026-12-14",
-  "summary": "Film 2 of the History of Science search-led plan (hos-search-2027-01, Ben OK 24 Nov 2026; accelerated into December: target air Thu 17 Dec 18:00 London, watch by Mon 14 Dec; slides a week if not ready). Rule-E GO (J3502, 96.3/100). J3507 (24 Nov 2026) delivered PACKAGE_FIRST_SCORING_v01.md (Title A 48c 96/100, Thumb A AIR ON FIRE? 96/100, Thumb B MEASURED BY PAPER 93/100), trinity_test_explained_script_master_v01.md (review:script PASS 93.7/100, gate:episode PASS, 1,266 words, 5 parts, 5 DATA+SCALE, 8 WHO, 5 WHEN, 4 FACT, 2 EXPLORER ACTS), SOURCES.md, FACT_NOTES_v01.md (20/20 verified rows resolving all 7 J3502 guardrails), SHORTS_SCRIPTS_v01.md (two 16-19s Shorts, S01 44c & S02 58c, 0 collisions), and LAUNCH_PLAN.md. Awaits independent facts lane (gemini-agy) and Chief script lock before any VO or picture spend (£0.00 spent; Rule G WIP cap respected).",
+  "summary": "Film 2 of the History of Science search-led plan (hos-search-2027-01, Ben OK 24 Nov 2026; accelerated into December: target air Thu 17 Dec 18:00 London, watch by Mon 14 Dec; slides a week if not ready). Rule-E GO (J3502, 96.3/100). J3507 (24 Nov 2026, PR #753) delivered PACKAGE_FIRST_SCORING_v01.md, trinity_test_explained_script_master_v01.md (review:script PASS 93.7/100, gate:episode PASS), SOURCES.md, FACT_NOTES_v01.md, SHORTS_SCRIPTS_v01.md, and LAUNCH_PLAN.md. Independent Gemini facts audit J3552 (25 Nov 2026, GEMINI_FACTS_CHECK_v01.md) audited 23 items (13 OK, 2 PARTIAL, 8 FLAG) and reported 8 blocking FLAGs (wrong OSTI URL 4036390 for LA-602, unsourced 1,000x cooling ratio vs LA-602 1.6 minimum safety factor, missing verbatim quotes in Rows 8-9, Bainbridge bunker mislocated to 10 mi instead of S-10000 5.7 mi, S02 'silent shockwave', inverted microsecond/football-field light-travel math, S01/S02 actual word counts 55w/65w exceeding 16-19s house rule, Row 10 sentence splice) plus primary-source upgrades to J3553 before script lock (£0.00 spent; no VO or picture spend).",
   "stages": {
     "topic": {
       "state": "done",
@@ -15,19 +15,19 @@
       "state": "doing",
       "due": "2026-12-04",
       "owner": "Claude",
-      "since": "2026-11-24",
+      "since": "2026-11-25",
       "underway": false,
-      "waiting": "HOS script review and Chief lock on trinity_test_explained_script_master_v01.md (J3507 draft, 93.7/100 PASS)",
-      "note": "J3507 package-first scoring + 5-part 7-9 min v01 script draft delivered (review:script PASS 93.7/100, gate:episode PASS); awaiting Chief lock"
+      "waiting": "J3553 script review/FIX ruling and v02 corrections resolving J3552 FLAG-2, FLAG-4, FLAG-6 (plus R20 polishes) before Chief lock",
+      "note": "J3507 v01 script draft (review:script PASS 93.7/100, gate:episode PASS); J3552 independent facts audit flagged 3 long-script fixes (unsourced 1,000x cooling ratio, Bainbridge S-10000 5.7 mi vs 10 mi, inverted microsecond/football-field math) for v02"
     },
     "facts": {
       "state": "doing",
       "due": "2026-12-04",
-      "owner": "Gemini",
-      "since": "2026-11-24",
+      "owner": "Claude",
+      "since": "2026-11-25",
       "underway": false,
-      "waiting": "independent facts lane (gemini-agy) verification of SOURCES.md & FACT_NOTES_v01.md (20/20 rows) before Chief lock",
-      "note": "SOURCES.md and FACT_NOTES_v01.md (20 verified primary/institutional quotes) drafted in J3507, resolving all 7 J3502 guardrails (LA-602 Aug 1946, Bremsstrahlung cooling, Compton 1959 vs Bethe, Fermi bet vs 2.5m/10kt paper measurement, conceptual Pu-240 implosion, 100% HOS lab-physics lane)"
+      "waiting": "J3553 review/FIX ruling and v02 source/script updates resolving 8 J3552 FLAG items (wrong OSTI 4036390, missing verbatim quotes in Rows 8-9, Row 10 splice, plus script/Shorts FLAGs) before Chief lock",
+      "note": "J3552 independent Gemini facts audit committed in 01_Script/GEMINI_FACTS_CHECK_v01.md (23 items: 13 OK, 2 PARTIAL, 8 FLAG; full 22-page LA-602 PDF & primary upgrades verified; no spoken rewrites made)"
     },
     "package": {
       "state": "doing",
@@ -48,10 +48,10 @@
       "state": "doing",
       "due": "2026-12-05",
       "owner": "Claude",
-      "since": "2026-11-24",
+      "since": "2026-11-25",
       "underway": false,
-      "waiting": "review and Chief lock of SHORTS_SCRIPTS_v01.md (S01 Sat 19 Dec 44c & S02 Fri 18 Dec 58c, 16-19s house rules)",
-      "note": "Two standalone 16-19s search-question Shorts drafted in J3507 (S01 44w / S02 46w; 0 collisions verified 2026-11-24)"
+      "waiting": "J3553 review and v02 trim of SHORTS_SCRIPTS_v01.md resolving J3552 FLAG-5 ('silent shockwave') and FLAG-7 (actual counts S01 55w / S02 65w exceed 16-19s house rule)",
+      "note": "J3507 Shorts v01 titles S01 44c & S02 58c verified 0 collisions; J3552 flagged actual spoken counts 55w/65w (>19s cap) and S02 'silent shockwave' for v02 before lock"
     },
     "shorts_vo": {
       "state": "todo",
@@ -91,5 +91,5 @@
     }
   },
   "claims": [],
-  "next": "Independent facts lane (gemini-agy) & Chief script/package lock on J3507 v01 draft (due Fri 4 Dec; Ben's watch Mon 14 Dec; target air Thu 17 Dec)"
+  "next": "J3553 review/FIX ruling on HOS:136 PR #753 + J3552 GEMINI_FACTS_CHECK_v01.md (8 blocking FLAGs for v02 before Chief script lock due Fri 4 Dec; Ben's watch Mon 14 Dec; target air Thu 17 Dec)"
 }
