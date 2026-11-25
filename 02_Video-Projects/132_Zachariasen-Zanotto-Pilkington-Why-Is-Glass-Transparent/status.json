@@ -1,0 +1,45 @@
+{
+  "film": "132",
+  "title": "Why Is Glass Transparent? (The Quantum Gap)",
+  "summary": "Added to jobs/WIP.json next_hos by J3408 (2026-11-23, Rule G: 4/4 active HOS slots full); awaiting Rule-E topic go/no-go review. Everyday materials-physics discovery story (Zachariasen 1932 random network, Wilson 1931 quantum band gap, Zanotto 1998 cathedral-glass myth bust, Pilkington 1952-1959 float glass). neighbours.py PASS (4 raw / 4 strictly on-topic edu videos >=1M: Veritasium 9.81M, TED-Ed 5.03M Why is glass transparent?, TED-Ed 2.03M, Be Smart 1.85M); public_search.py autocomplete yes on 4 core phrases, 0 exact title collisions. All claims UNVERIFIED pending open WIP slot, SOURCES.md, and facts lane.",
+  "stages": {
+    "topic": {
+      "state": "todo"
+    },
+    "script": {
+      "state": "todo"
+    },
+    "facts": {
+      "state": "todo"
+    },
+    "package": {
+      "state": "todo"
+    },
+    "vo": {
+      "state": "todo"
+    },
+    "shorts_scripts": {
+      "state": "todo"
+    },
+    "shorts_vo": {
+      "state": "todo"
+    },
+    "picture": {
+      "state": "todo"
+    },
+    "edit": {
+      "state": "todo"
+    },
+    "thumbnails": {
+      "state": "todo"
+    },
+    "ben_ok": {
+      "state": "todo"
+    },
+    "scheduled": {
+      "state": "todo"
+    }
+  },
+  "claims": [],
+  "next": ""
+}
