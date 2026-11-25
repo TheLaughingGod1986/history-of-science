@@ -1,7 +1,7 @@
 {
   "film": "127",
   "title": "Wright Brothers First Flight: The 1901 Wind Tunnel",
-  "summary": "Cluster 4 Lead Film 4 of Ben's approved hos-search-2027-01 accelerated December test cohort (target air Thu 31 Dec 2026 18:00 London, Ben's watch by Mon 28 Dec; slides a week if not ready). Rule-E GO (J3264, 97.2/100). J3504 (PR #756) drafted v01 and J3621 (PR #771, 925c2a92) completed independent Gemini facts audit (5 blocking FLAGs). J3688 (25 Nov 2026, stacked on 925c2a92) delivered corrected v02 resolving all 8 J3621/J3622 fixes: wright_brothers_wind_tunnel_script_master_v02.md (1,282w, 8.5 min, review:script PASS 93.6/100, default gate:episode PASS 9/9 OK with v01 archived out of 01_Script/), SOURCES.md (added Smeaton 1759 Royal Society DOI & RMG H4 ZAA0037), FACT_NOTES_v02.md (18 rows incl. Row 18 Harrison H4 + R04/R10/R13/R14/R16 polishes), SHORTS_SCRIPTS_v02.md (S01 43w ~17.8s & S02 44w ~18.0s rebalanced ~140-158 wpm per row, R7 end-card handling, FIX-3/FIX-4 applied), and synced PRE_BUILD_VIDIQ_AUDIT.md / LAUNCH_PLAN.md / PACKAGE_FIRST_SCORING_v01.md (Arm A 50c aligned, 20-gauge steel wing models). Ready for Chief v02 review & lock (£0.00 spent; Rule G WIP cap respected).",
+  "summary": "Cluster 4 Lead Film 4 of Ben's approved hos-search-2027-01 accelerated December test cohort (target air Thu 31 Dec 2026 18:00 London, Ben's watch by Mon 28 Dec; slides a week if not ready). Rule-E GO (J3264, 97.2/100). J3504 (PR #756) drafted v01, J3621 (PR #771, 925c2a92) audited v01 (5 blocking FLAGs), and J3688 (PR #774, 45953e56) delivered corrected v02 resolving FIX-1 through FIX-8. J3690 independent Gemini v02 facts & exact-quote audit (25 Nov 2026, 01_Script/GEMINI_FACTS_CHECK_v02.md) verified all 4 v02 SHA-256 hashes byte-for-byte identical to 45953e56, fetched all 20 cited URLs + CrossRef API live (77/77 verbatim quotes confirmed), confirmed FIX-1..FIX-8 resolved with 0 blocking FLAGs (17 OK, 4 non-blocking secondary-lifespan PARTIAL, 0 FLAG), and confirmed check_all.sh ALL CHECKS PASS. Ready for J3622 Chief v02 review & lock (£0.00 spent; Rule G WIP cap respected).",
   "stages": {
     "topic": {
       "state": "done",
@@ -24,8 +24,8 @@
       "owner": "Chief",
       "since": "2026-11-25",
       "underway": false,
-      "waiting": "Chief verification & lock of v02 SOURCES.md and FACT_NOTES_v02.md (all 5 J3621 blocking FLAGs + R04/R07/R10/R14/R16/R18 polishes resolved in J3688)",
-      "note": "J3621 independent Gemini facts audit (GEMINI_FACTS_CHECK_v01.md) flagged 5 blocking items; J3688 resolved all 5 FLAGs + quote polishes in FACT_NOTES_v02.md (18 rows) and SOURCES.md (added Smeaton 1759 Royal Society DOI 10.1098/rstl.1759.0019 & RMG H4 ZAA0037)"
+      "waiting": "J3622 Chief v02 script & facts lock after J3690 independent Gemini v02 audit (0 blocking FLAGs)",
+      "note": "J3690 independent Gemini v02 facts & exact-quote audit complete (01_Script/GEMINI_FACTS_CHECK_v02.md): 0 blocking FLAGs (17 OK, 4 non-blocking secondary-lifespan PARTIAL, 0 FLAG); all 20 cited live URLs + CrossRef API fetched & 77/77 verbatim quotes confirmed; FIX-1..FIX-8 verified resolved; all 4 v02 files byte-identical to PR #774 (45953e56); £0.00 spent"
     },
     "package": {
       "state": "doing",
@@ -89,5 +89,5 @@
     }
   },
   "claims": [],
-  "next": "Chief v02 review & lock on J3688 PR (all 8 J3621/J3622 fixes applied; review:script PASS 93.6/100; default gate:episode PASS; check_all.sh PASS; £0.00 spent; lock due Fri 11 Dec; Ben's watch Mon 28 Dec; target air Thu 31 Dec)"
+  "next": "J3622 Chief v02 review & lock on HOS:127 PR (gemini/J3690-hos127-facts-v02 stacked on macbook/J3688 PR #774; 0 blocking FLAGs; review:script PASS 93.6/100; default gate:episode PASS; check_all.sh PASS; £0.00 spent; lock due Fri 11 Dec; Ben's watch Mon 28 Dec; target air Thu 31 Dec)"
 }
