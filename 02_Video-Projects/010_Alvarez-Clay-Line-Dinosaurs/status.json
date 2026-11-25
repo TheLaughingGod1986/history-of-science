@@ -84,8 +84,8 @@
     "scheduled": {
       "state": "todo",
       "due": "2026-11-30",
-      "note": "J3511: approved Short C v01 privately uploaded as sMPlMuxK3YU; no publishAt. en-GB captions serving; STILL HERE robin cover read back. J3610 schedules only after actual long id/date and sets Related. Long remains unfinished.",
-      "waiting": "J3610: actual long upload id and confirmed air date; never Short before long Public"
+      "note": "J3511: approved Short C v01 privately uploaded as sMPlMuxK3YU; no publishAt. en-GB captions serving; STILL HERE robin cover read back. J3610 schedules only after actual long id/date and sets Related. Long remains unfinished. J3512: approved Short A v01 uploaded Private without publishAt as mpK3D6S7WLk, 24 Nov 19:13Z. J3611 conditional scheduling waits for actual long id and air date. Captions serving; cover and correct channel verified; audit 69 videos zero errors. Remaining Studio-only checks before scheduling; records await publication. Long state unchanged.",
+      "waiting": "J3610 (Short C) and J3611 (Short A): actual long upload id and confirmed air date; never Short before long Public"
     }
   },
   "claims": [],

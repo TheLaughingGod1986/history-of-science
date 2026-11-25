@@ -1,0 +1,115 @@
+{
+  "at": "2026-11-24T19:14:03.669Z",
+  "channel": {
+    "id": "UCXp7HkBIl1LgaznXuZHJyRg",
+    "title": "History of Science"
+  },
+  "video": {
+    "kind": "youtube#video",
+    "etag": "o0-7ExhM7R9NBLV4Q_SMwUS2vpI",
+    "id": "mpK3D6S7WLk",
+    "snippet": {
+      "publishedAt": "2026-11-24T19:13:33Z",
+      "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+      "title": "What Killed the Dinosaurs?",
+      "description": "This thin line of clay marks the end of the dinosaurs.\n\nIn a cliff in Italy, fossil shells nearly disappear above a thin clay layer. In 1980, scientists found a rare metal from space in the clay.\n\nSources: Alvarez et al. (1980), Science 208; Walter Alvarez (1997).\n\nPictures: AI-generated 3D scenes. Facts checked against the sources listed.",
+      "thumbnails": {
+        "default": {
+          "url": "https://i9.ytimg.com/vi/mpK3D6S7WLk/default.jpg?sqp=CIjCl9gG&rs=AOn4CLASBH4dMHYbPg-lSpvaHSBv7mi8eg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i9.ytimg.com/vi/mpK3D6S7WLk/mqdefault.jpg?sqp=CIjCl9gG&rs=AOn4CLDHTaRLqtWL50K6oGM4wNZejJSGXw",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i9.ytimg.com/vi/mpK3D6S7WLk/hqdefault.jpg?sqp=CIjCl9gG&rs=AOn4CLCJqyycxzZ6FZhYvusBXcq9P4wx-w",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i9.ytimg.com/vi/mpK3D6S7WLk/sddefault.jpg?sqp=CIjCl9gG&rs=AOn4CLAQM54YfpIRPMTiyWZplM2WzqM0zg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i9.ytimg.com/vi/mpK3D6S7WLk/maxresdefault.jpg?sqp=CIjCl9gG&rs=AOn4CLA9i9k5g80Hxh81bWJxF9CzHvJ8MA",
+          "width": 1280,
+          "height": 720
+        },
+        "qhd": {
+          "url": "https://i9.ytimg.com/vi/mpK3D6S7WLk/qhddefault.jpg?sqp=CIjCl9gG&rs=AOn4CLCLPJq0dmw2kLqywJ_n2PknJfO5-w",
+          "width": 2560,
+          "height": 1440
+        }
+      },
+      "channelTitle": "History of Science",
+      "tags": [
+        "Alvarez",
+        "asteroid impact",
+        "clay layer",
+        "dinosaur extinction",
+        "dinosaurs",
+        "iridium"
+      ],
+      "categoryId": "27",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en-GB",
+      "localized": {
+        "title": "What Killed the Dinosaurs?",
+        "description": "This thin line of clay marks the end of the dinosaurs.\n\nIn a cliff in Italy, fossil shells nearly disappear above a thin clay layer. In 1980, scientists found a rare metal from space in the clay.\n\nSources: Alvarez et al. (1980), Science 208; Walter Alvarez (1997).\n\nPictures: AI-generated 3D scenes. Facts checked against the sources listed."
+      },
+      "defaultAudioLanguage": "en-GB"
+    },
+    "contentDetails": {
+      "duration": "PT24S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular",
+      "hasCustomThumbnail": true
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "private",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false
+    },
+    "processingDetails": {
+      "processingStatus": "succeeded",
+      "fileDetailsAvailability": "available",
+      "processingIssuesAvailability": "available",
+      "tagSuggestionsAvailability": "inProgress",
+      "editorSuggestionsAvailability": "inProgress",
+      "thumbnailsAvailability": "inProgress"
+    }
+  },
+  "captions": [
+    {
+      "kind": "youtube#caption",
+      "etag": "vYJX2KUNw_AtMRwELzAvMNDe5zs",
+      "id": "AUieDaZFVGel-KiWtBKxSakg7ho48mf8cKJytWdCVXarRWrpuEn97NwRxSlocbJQ9UmAY_7TObYr91ifQtg",
+      "snippet": {
+        "videoId": "mpK3D6S7WLk",
+        "lastUpdated": "2026-11-24T19:14:03.2172Z",
+        "trackKind": "standard",
+        "language": "en-GB",
+        "name": "English (United Kingdom)",
+        "audioTrackType": "unknown",
+        "isCC": false,
+        "isLarge": false,
+        "isEasyReader": false,
+        "isDraft": false,
+        "isAutoSynced": false,
+        "status": "serving"
+      }
+    }
+  ]
+}

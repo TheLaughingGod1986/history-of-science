@@ -1,0 +1,36 @@
+{
+  "format": "shorts",
+  "video": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/10_Shorts/J2172/short_A/hos_010_short_A_v01.mp4",
+  "title": "What Killed the Dinosaurs?",
+  "privacy": "private",
+  "schedule": null,
+  "madeForKids": false,
+  "alteredContent": true,
+  "language": "en-GB",
+  "categoryId": "27",
+  "channel": "@HistoryOfScienceYT",
+  "relatedVideoId": null,
+  "description": "This thin line of clay marks the end of the dinosaurs.\n\nIn a cliff in Italy, fossil shells nearly disappear above a thin clay layer. In 1980, scientists found a rare metal from space in the clay.\n\nSources: Alvarez et al. (1980), Science 208; Walter Alvarez (1997).\n\nPictures: AI-generated 3D scenes. Facts checked against the sources listed.\n",
+  "tags": [
+    "dinosaurs",
+    "dinosaur extinction",
+    "Alvarez",
+    "iridium",
+    "asteroid impact",
+    "clay layer"
+  ],
+  "social": {
+    "hook": "This thin line of clay marks the end of the dinosaurs.",
+    "question": "What killed the dinosaurs?",
+    "alt": "The approved 3D cartoon cliff scene with a thin clay line and THE LINE caption."
+  },
+  "thumbnail": "cover.jpg",
+  "captionsFile": "captions.srt",
+  "authority": "J3512 / J3505; Ben OK HOS:ASK:J2933.1, 16 Nov 2026 11:10 London",
+  "sha256": "ea29e26487d6631416449c9adf712f51b1b9508db06b7b6c29edc4236970fe59",
+  "promotesFilm": "HOS:010",
+  "note": "Private unscheduled; parent long not uploaded. Related and air slot deferred to conditional follow-up.",
+  "youtubeId": "mpK3D6S7WLk",
+  "uploadedAt": "2026-11-24T19:14:01.037851+00:00",
+  "followup": "J3611"
+}

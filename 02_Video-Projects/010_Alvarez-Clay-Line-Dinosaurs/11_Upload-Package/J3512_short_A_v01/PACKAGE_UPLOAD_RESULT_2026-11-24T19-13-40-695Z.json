@@ -1,0 +1,109 @@
+{
+  "ok": true,
+  "dryRun": false,
+  "method": "youtube_data_api_package",
+  "upload": {
+    "published": true,
+    "scheduledOnPlatform": false,
+    "scheduledFor": null,
+    "platformPostId": "mpK3D6S7WLk",
+    "platformUrl": "https://youtu.be/mpK3D6S7WLk",
+    "message": "Uploaded to YouTube as private; thumbnail set",
+    "responseSummary": "{\"id\":\"mpK3D6S7WLk\",\"privacyStatus\":\"private\"}"
+  },
+  "package": {
+    "title": "What Killed the Dinosaurs?",
+    "format": "shorts",
+    "privacy": "private",
+    "tagCount": 6,
+    "hasPinnedComment": false,
+    "thumbnailPath": "/Volumes/MiniWork/scratch/J3512-resume/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/11_Upload-Package/J3512_short_A_v01/cover.jpg",
+    "scheduledAt": null,
+    "sources": {
+      "manifest": "/Volumes/MiniWork/scratch/J3512-resume/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/11_Upload-Package/J3512_short_A_v01/PACKAGE_MANIFEST.json",
+      "video": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/10_Shorts/J2172/short_A/hos_010_short_A_v01.mp4",
+      "thumbnail": "/Volumes/MiniWork/scratch/J3512-resume/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/11_Upload-Package/J3512_short_A_v01/cover.jpg"
+    }
+  },
+  "postUpload": {
+    "firstCommentPosted": false,
+    "commentMessage": null,
+    "playlistAdded": false,
+    "playlistMessage": null
+  },
+  "buffer": {
+    "registered": false,
+    "errors": [
+      "Short has no relatedVideoId; pass --standalone or set relatedVideoId in the package"
+    ]
+  },
+  "studioFinish": {
+    "videoId": "mpK3D6S7WLk",
+    "studioEditUrl": "https://studio.youtube.com/video/mpK3D6S7WLk/edit",
+    "items": [
+      {
+        "id": "api_metadata",
+        "required": true,
+        "status": "api_done",
+        "title": "Title · description · tags · schedule · video",
+        "detail": "Uploaded via YouTube Data API"
+      },
+      {
+        "id": "primary_thumbnail",
+        "required": true,
+        "status": "api_done",
+        "title": "Primary thumbnail",
+        "detail": "Set via thumbnails.set",
+        "studioUrlHint": "https://studio.youtube.com/video/mpK3D6S7WLk/edit"
+      },
+      {
+        "id": "title_thumb_abc",
+        "required": false,
+        "status": "n/a",
+        "title": "Title + thumbnail ABC (Test & Compare)",
+        "detail": "A/B Testing not available for Shorts",
+        "studioUrlHint": "https://studio.youtube.com/video/mpK3D6S7WLk/edit"
+      },
+      {
+        "id": "first_comment",
+        "required": false,
+        "status": "n/a",
+        "title": "First / pinned comment text",
+        "detail": "No pinned comment file in package",
+        "studioUrlHint": "https://studio.youtube.com/video/mpK3D6S7WLk/comments"
+      },
+      {
+        "id": "pin_comment",
+        "required": false,
+        "status": "n/a",
+        "title": "Pin the comment",
+        "detail": "Studio only — no official Data API pin endpoint",
+        "studioUrlHint": "https://studio.youtube.com/video/mpK3D6S7WLk/comments"
+      },
+      {
+        "id": "related_watch_next",
+        "required": true,
+        "status": "pending_studio",
+        "title": "Related video (full film)",
+        "detail": "Desktop Studio: Content → Short → Related video → its own full film (once that long is public) → Save. Required. No new Short pins.",
+        "studioUrlHint": "https://studio.youtube.com/video/mpK3D6S7WLk/edit"
+      },
+      {
+        "id": "end_screens_cards",
+        "required": false,
+        "status": "n/a",
+        "title": "End screen + cards",
+        "detail": "Studio only — subscribe + best next video",
+        "studioUrlHint": "https://studio.youtube.com/video/mpK3D6S7WLk/edit"
+      },
+      {
+        "id": "playlist",
+        "required": false,
+        "status": "n/a",
+        "title": "Add to playlist",
+        "detail": "No playlistId in manifest"
+      }
+    ],
+    "summary": "API upload done (mpK3D6S7WLk). 1 required Studio finish step(s) remain."
+  }
+}
