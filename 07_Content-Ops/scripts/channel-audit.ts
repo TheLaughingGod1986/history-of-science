@@ -43,7 +43,7 @@ function arg(name: string): string | undefined {
 async function accessToken(): Promise<string> {
   // Shared helper: retries an "expired" row that still has a refresh token, and explains invalid_grant.
   const { youtubeAccessToken } = await import("../src/lib/publishing/youtube-token");
-  return youtubeAccessToken();
+  return youtubeAccessToken({ readOnly: true });
 }
 
 async function get(token: string, url: string) {

@@ -25,7 +25,8 @@ export function classifyRefreshFailure(status: number, body: unknown): { dead: b
   return { dead: false, message: `YouTube token refresh failed (${status}${err ? `: ${err}` : ""}); try again.` };
 }
 
-export async function youtubeAccessToken(): Promise<string> {
+/** Read-only callers refresh in memory without changing stored connection state. */
+export async function youtubeAccessToken(options: { readOnly?: boolean } = {}): Promise<string> {
   const env = getEnv();
   const candidates = await prisma.platformConnection.findMany({
     where: { platform: "youtube_shorts", disconnectedAt: null },
@@ -55,7 +56,7 @@ export async function youtubeAccessToken(): Promise<string> {
   const body = await res.json().catch(() => ({}));
   if (!res.ok || !body.access_token) {
     const failure = classifyRefreshFailure(res.status, body);
-    if (failure.dead) {
+    if (failure.dead && !options.readOnly) {
       await prisma.platformConnection.update({
         where: { id: conn.id },
         data: { connectionStatus: "expired", lastConnectionError: failure.message },
@@ -63,7 +64,7 @@ export async function youtubeAccessToken(): Promise<string> {
     }
     throw new Error(failure.message);
   }
-  await prisma.platformConnection.update({
+  if (!options.readOnly) await prisma.platformConnection.update({
     where: { id: conn.id },
     data: {
       accessTokenEncrypted: encryptSecret(body.access_token),
