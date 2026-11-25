@@ -1,0 +1,166 @@
+# Topic Brief — `134_Dirac-Anderson-Segre-What-Is-Antimatter` (`HOS:134` · Backlog Proposal in `next_hos`, Awaiting Rule-E Review)
+
+> **RULE G & UNVERIFIED CLAIMS STATUS (`J3458`, `2026-11-24`):**
+> - **Backlog Status:** Added to `jobs/WIP.json` `next_hos` under **Rule G** (`active` has `4 / 4` HOS films full: `008`, `009`, `010`, `013`). Nothing is started in production (`status.json` stages are all `todo`; `£0.00` spent). Awaits its queued **Rule-E topic go/no-go review** (`kind:review`).
+> - **Unverified Working Notes:** All historical, biographical, and scientific claims in this brief are **UNVERIFIED** working notes. Before any script is locked, VO is recorded, or picture credit is spent, every claim must be backed by verbatim primary-source quotes in `SOURCES.md` and verified through the `facts` lane (`gemini-agy`).
+
+---
+
+## 1. HOS Data Comparison (`2026-11-23` Snapshot + `studio_ctr.json` + `channel_daily.json` + `REPORT.md`)
+
+- **Data sources read:**
+  - `05_Analytics/hos/snapshots/2026-11-23.json` (`takenAt: 2026-11-23T06:40:34.195Z`, `43` public videos = `7` longs + `36` Shorts, `4,477` total views, `6` subscribers)
+  - `05_Analytics/hos/studio_ctr.json` (`readAt: 2026-11-23T07:11:17.265966+00:00`, lifetime Studio impressions, CTR, average view %, and Shorts stayed-to-watch %)
+  - `05_Analytics/hos/channel_daily.json` (`through: 2026-11-21`) and `05_Analytics/hos/REPORT.md`
+  - `05_Analytics/LEARNINGS.md` (rules 1–41) and `05_Analytics/hos/search_research/2026-11-20.md` (`J3224`, `needsBen`)
+- **Elapsed-day denominator (`age_days`):** `max((date(2026, 11, 23) - date.fromisoformat(publishedAt[:10])).days, 1)` (`views/day = views / age_days`).
+- **Low-sample statistical caveat (`LEARNINGS.md` Rule 1):** Five public HOS longs have only `5–15` lifetime views (`17–74` impressions), and bottom-tier Shorts have `4–30` views. Patterns inferred from those small-N rows are treated explicitly as **hypotheses**, not settled laws.
+
+### 1a. All `7` Public HOS Longs — Ranked by Views/Day Since Publish (`2026-11-23`)
+
+| Rank | Video ID | Film | Title | Published (`age_days`) | Views (`2026-11-23`) | Views / Day | Studio Impressions (Lifetime) | Studio CTR (Lifetime) | Studio Avg View % (Lifetime) | YTA 28d Views (`through 11-21`) | YTA 28d Avg View % |
+|---:|---|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| **1** | `AL_-qlWko_g` | `002` | *How Did We Discover the Periodic Table?* | `2026-09-17` (`67d`) | **162** | **2.42/d** | 1,163 | 3.35% | 21.23% (`115s / 541s`) | 13 | 23.33% |
+| **2** | `GHZDsiH7L7A` | `004` | *What's Inside an Atom? Mostly Empty Space* | `2026-10-15` (`39d`) | **35** | **0.90/d** | 840 | 1.43% | 23.54% (`124s / 525s`) | 9 | 54.97% |
+| **3** | `VbPubYd6Fbs` | `006` | *The Willow Tree That Was Made of Air* | `2026-11-05` (`18d`) | **15** | **0.83/d** | 74 | 4.05% | **48.15%** (`256s / 532s`) | 15 | 48.15% |
+| **4** | `ETynHpIYLeY` | `007` | *How Was the First Vaccine Made? (And Why It's Named After a Cow)* | `2026-11-12` (`11d`) | **7** | **0.64/d** | 44 | 4.55% | 19.29% (`103s / 532s`) | 7 | 19.29% |
+| **5** | `wwcjcFfC-5M` | `005` | *The Tied Arm That Proved Your Blood Circulates* | `2026-10-29` (`25d`) | **7** | **0.28/d** | 17 | **17.65%** | 6.73% (`36s / 529s`) | 6 | 7.78% |
+| **6** | `_C92tIJCk8A` | `001` | *How Did We Discover Germs?* | `2026-09-03` (`81d`) | **7** | **0.09/d** | 46 | 6.52% | 48.08% (`176s / 365s`) | 0 | — |
+| **7** | `frP_YrNShsU` | `003` | *How Did We Discover X-rays?* | `2026-09-24` (`60d`) | **5** | **0.08/d** | 43 | 2.33% | 26.65% (`114s / 426s`) | 3 | 14.12% |
+
+- **3 Best HOS Longs & What They Share:**
+  1. **`AL_-qlWko_g` (`002` *How Did We Discover the Periodic Table?*, `541s`):** **`2.42` views/day** (`162` views in `67d`), **`1,163` impressions** (`52.2%` of all HOS long impressions), `3.35%` CTR, `21.23%` Studio avg view % (`70%` at `0:15`, `50%` at `0:30`).
+  2. **`GHZDsiH7L7A` (`004` *What's Inside an Atom? Mostly Empty Space*, `525s`):** **`0.90` views/day** (`35` views in `39d`), **`840` impressions** (`37.7%` of all HOS long impressions), `1.43%` CTR, `23.54%` Studio avg view % (`54.97%` in 28d YTA; `62%` at `0:15`, `45%` at `0:30`).
+  3. **`VbPubYd6Fbs` (`006` *The Willow Tree That Was Made of Air*, `532s`):** **`0.83` views/day** (`15` views in `18d`), `74` impressions, `4.05%` CTR, channel-best **`48.15%` Studio avg view % (`256s / 532s`)** (small-N hypothesis at `15` views).
+  - **Shared pattern (Subject, Title Shape, Opening, Thumbnail Concept, Length):** `002` and `004` generate **`89.9%` (`2,003 / 2,227`) of all HOS long impressions** and **`82.8%` (`197 / 238`) of all HOS long views** because they combine iconic physics/chemistry subjects with plain high-volume search-question titles (`Periodic Table`, `What's Inside an Atom?`) backed by massive `TED-Ed` / `Veritasium` neighbour pools (`LEARNINGS.md` Rules 1, 15, 26), run **`8.75–9.0 min` (`525–541s`)**, and open with a concrete physical mystery (`Rule 10`). `006` (`48.15%` avg view %, `4.05%` CTR) shows that a single unforgettable experiment holds viewers once they click, while `004`'s low `1.43%` CTR confirms packaging must carry a concrete visual consequence (`Rules 11, 12, 14`).
+- **3 Worst HOS Longs & What They Share (Hypotheses on Small N):**
+  1. **`frP_YrNShsU` (`003` *How Did We Discover X-rays?*, `426s`):** **`0.08` views/day** (`5` views in `60d`), `43` impressions, `2.33%` CTR, `26.65%` Studio avg view %.
+  2. **`_C92tIJCk8A` (`001` *How Did We Discover Germs?*, `365s`):** **`0.09` views/day** (`7` views in `81d`), `46` impressions, `6.52%` CTR, `48.08%` Studio avg view %.
+  3. **`wwcjcFfC-5M` (`005` *The Tied Arm That Proved Your Blood Circulates*, `529s`):** **`0.28` views/day** (`7` views in `25d`), **`17` impressions**, `17.65%` CTR (small-N noise), **`6.73%` Studio avg view % (`36s / 529s`)** (alongside `007` Vaccine `44` impr / `7`v / `0%` Suggested, confirming health/medical throttling flagged in `J3224`).
+  - **Shared pattern:** `005` used a literary statement title with zero search query (`17` impressions; `Rule 26`), while `001` (`365s`) and `003` (`426s`) used broad textbook survey titles (`How Did We Discover...`) and shorter `6–7 min` runtimes without a specific stakes/twist tail (`Rules 10, 15, 23, 26`).
+
+### 1b. All `36` Public HOS Shorts — Ranked by Views/Day Since Publish (`2026-11-23`)
+
+| Rank | Video ID | Title | Published (`age_days`) | Views (`2026-11-23`) | Views / Day | Studio Stayed % (Lifetime) | Studio Avg View % (Lifetime) | Likes |
+|---:|---|---|---:|---:|---:|---:|---:|---:|
+| **1** | `el30-mHiH-0` | *How Does the Heart Pump Blood?* | `2026-11-22` (`1d`, early 20h) | **523** | **523.00/d** | 26.77% | 66.41% (`17s / 26s`) | 5 |
+| **2** | `xzKoHg0E0_U` | *What Is Dalton's Atomic Theory?* | `2026-11-16` (`7d`) | **239** | **34.14/d** | **53.13%** | 61.49% (`15s / 25s`) | 0 |
+| **3** | `29bpGAI0wb8` | *What happens if you keep cutting gold in half?* | `2026-10-16` (`38d`) | **1,229** | **32.34/d** | 40.78% | 44.14% (`11s / 25s`) | 12 |
+| **4** | `Wvjd8g0CpzE` | *The Blood Vessels Finer Than a Hair* | `2026-11-15` (`8d`) | **218** | **27.25/d** | 15.35% | 74.94% (`19s / 26s`) | 3 |
+| **5** | `Bks_JLId1ew` | *How Do Plants Make Oxygen?* | `2026-11-21` (`2d`, early 44h) | **50** | **25.00/d** | 48.57% | 96.53% (`25s / 26s`) | 0 |
+| **6** | `PFj6172YU4Q` | *One Tight Band Proved Your Blood Goes Round* | `2026-11-08` (`15d`) | **221** | **14.73/d** | 16.67% | 61.53% (`17s / 27s`) | 3 |
+| **7** | `AMSriTQ-lcQ` | *Are Marie Curie's Notebooks Still Radioactive?* | `2026-10-28` (`26d`) | **274** | **10.54/d** | 22.66% | 76.94% (`17s / 22s`) | 6 |
+| **8** | `l8bxm9L3zl8` | *How Does a Blood Pressure Cuff Work?* | `2026-11-20` (`3d`) | **29** | **9.67/d** | 38.46% | 60.99% (`15s / 24s`) | 0 |
+| **9** | `OnJ8MFu0Mi0` | *How Did John Snow Stop Cholera?* | `2026-10-26` (`28d`) | **231** | **8.25/d** | 29.60% | 65.66% (`15s / 23s`) | 8 |
+| **10** | `pWySvZsneZg` | *Why Gold Foil Bounced Rutherford's Particles Back* | `2026-11-01` (`22d`) | **137** | **6.23/d** | 37.23% | **112.43%** (`28s / 25s`) | 2 |
+| **11** | `oKqmnJNGiHg` | *How Was Phosphorus Discovered?* | `2026-10-21` (`33d`) | **194** | **5.88/d** | 42.03% | 88.35% (`20s / 23s`) | 7 |
+| **12** | `-3L6HzJ_d_4` | *What Is the Pasteur Swan Neck Flask Experiment?* | `2026-10-27` (`27d`) | **140** | **5.19/d** | **78.95%** | **73.84%** (`14s / 19s`) | 1 |
+| **13** | `cLKDiYP55J8` | *What Was the Edward Jenner Experiment?* | `2026-11-13` (`10d`) | **47** | **4.70/d** | 43.48% | 67.71% (`16s / 23s`) | 0 |
+| **14** | `clV6E10NLPw` | *The spray that stopped surgery killing patients* | `2026-10-20` (`34d`) | **155** | **4.56/d** | 23.45% | 57.79% (`14s / 25s`) | 4 |
+| **15** | `qOZgess30h0` | *Invisible life is still everywhere* | `2026-10-13` (`41d`) | **169** | **4.12/d** | 25.15% | 39.82% (`10s / 24s`) | 5 |
+| **16** | `c2q7w0pgcn8` | *Who Discovered Infrared Light?* | `2026-10-19` (`35d`) | **138** | **3.94/d** | 43.52% | **105.30%** (`24s / 23s`) | 1 |
+| **17** | `BW_CFAX-mxc` | *Is the Heart a Pump?* | `2026-10-31` (`23d`) | **89** | **3.87/d** | 32.91% | 81.69% (`18s / 22s`) | 1 |
+| **18** | `Rl2uZ-KOTl8` | *Your Heart Pumps More Blood Than You Have* | `2026-10-30` (`24d`) | **78** | **3.25/d** | 26.58% | 53.64% (`13s / 25s`) | 4 |
+| **19** | `xHnIi9GqOsM` | *Why Do Veins Have Valves?* | `2026-11-05` (`18d`) | **42** | **2.33/d** | 20.59% | 61.55% (`14s / 23s`) | 0 |
+| **20** | `TbMMJSRKC3U` | *He said every eighth element repeats* | `2026-10-18` (`36d`) | **63** | **1.75/d** | 26.92% | 118.07% (`32s / 27s`) | 1 |
+| **21** | `qW2OsD4mujc` | *The Four Elements Were Wrong* | `2026-11-03` (`20d`) | **34** | **1.70/d** | 57.69% | 192.62% (`46s / 24s`) | 0 |
+| **22** | `LCZRHUyTiq0` | *What Are Cathode Rays?* | `2026-10-23` (`31d`) | **49** | **1.58/d** | 29.79% | 50.04% (`13s / 26s`) | 2 |
+| **23** | `iqToagXnjX0` | *Microbes in a drop of pond water* | `2026-09-06` (`78d`) | **113** | **1.45/d** | 28.28% | 77.86% (`19s / 25s`) | 1 |
+| **24** | `H1y0DXFVmw8` | *Germs don't cast a shadow* | `2026-09-06` (`78d`) | **80** | **1.03/d** | 19.75% | 59.46% (`15s / 25s`) | 1 |
+| **25** | `ChbsigHD5_o` | *How Do Plants Clean the Air?* | `2026-11-18` (`5d`) | **5** | **1.00/d** | 100.00% | 36.12% (`9s / 25s`) | 0 |
+| **26** | `xvanpsLeADE` | *How did Röntgen see bones without cutting* | `2026-09-26` (`58d`) | **40** | **0.69/d** | 23.33% | 50.33% (`13s / 25s`) | 0 |
+| **27** | `xgx2lYHhYZM` | *Why Is It Called a Vaccine?* | `2026-11-17` (`6d`) | **4** | **0.67/d** | 100.00% | 62.41% (`16s / 25s`) | 0 |
+| **28** | `oowAOWTBoq0` | *How X-rays Were Discovered by Accident* | `2026-09-25` (`59d`) | **32** | **0.54/d** | 47.62% | 331.08% (`83s / 25s`) | 1 |
+| **29** | `nba0-f7PPeU` | *Why tellurium sat before iodine* | `2026-09-21` (`63d`) | **34** | **0.54/d** | 60.71% | 42.70% (`11s / 25s`) | 1 |
+| **30** | `nFQRWmpulTQ` | *He predicted a metal before it was found* | `2026-09-19` (`65d`) | **34** | **0.52/d** | 66.67% | 55.91% (`14s / 25s`) | 0 |
+| **31** | `8_Edn_HCi1s` | *Germs hitch a ride on you* | `2026-09-06` (`78d`) | **38** | **0.49/d** | 33.33% | 34.25% (`9s / 25s`) | 0 |
+| **32** | `uU12JA5rMWg` | *The periodic table's empty chairs* | `2026-09-18` (`66d`) | **30** | **0.45/d** | 66.67% | 58.79% (`15s / 25s`) | 0 |
+| **33** | `sILtQxgYQk8` | *A flask that proved germs come from outside* | `2026-09-06` (`78d`) | **24** | **0.31/d** | 41.67% | 36.70% (`9s / 25s`) | 0 |
+| **34** | `CnHwX1L9XHg` | *Gallium sat where the table said* | `2026-09-20` (`64d`) | **16** | **0.25/d** | 30.43% | 33.45% (`9s / 26s`) | 0 |
+| **35** | `zI_eD3vFWmE` | *The first X-ray showed a wedding ring* | `2026-09-27` (`57d`) | **9** | **0.16/d** | 50.00% | 64.00% (`16s / 25s`) | 0 |
+| **36** | `LanTHJckYx8` | *What other table has empty chairs?* | `2026-09-22` (`62d`) | **4** | **0.06/d** | 33.33% | 23.08% (`6s / 26s`) | 0 |
+
+- **3 Best HOS Shorts & What They Share:**
+  1. **`29bpGAI0wb8` (*What happens if you keep cutting gold in half?*, `25s`):** **`32.34` views/day** (`1,229` views in `38d`, #1 mature HOS Short), `40.78%` stayed-to-watch, `44.14%` avg view %, `12` likes (note: `el30-mHiH-0` *How Does the Heart Pump Blood?* hit `523` views in its first `20h` [`523.0/d`, early] with `66.41%` avg view % and `26.77%` stayed).
+  2. **`-3L6HzJ_d_4` (*What Is the Pasteur Swan Neck Flask Experiment?*, `19s`):** **`5.19` views/day** (`140` views in `27d`), channel-best **`78.95%` stayed-to-watch (PASS `≥60%`)** and **`73.84%` avg view % (PASS `≥70%`)**, with **`129` 28d views from YouTube search** — our tightest (`19s`) cut and the first mature `100+` view HOS Short to pass both targets (`LEARNINGS.md` Rules 28, 32, 41 & Ben's 19 Nov `16–19s` house rules).
+  3. **`xzKoHg0E0_U` (*What Is Dalton's Atomic Theory?*, `25s`):** **`34.14` views/day** (`239` views in `7d`, `197` from YouTube search), **`53.13%` stayed-to-watch (WATCH)** and `61.49%` avg view % — alongside mature loop/retention winners `pWySvZsneZg` (*Why Gold Foil Bounced Rutherford's Particles Back*, `6.23/d`, `137`v, `37.23%` stayed, **`112.43%` avg view % LOOP**), `c2q7w0pgcn8` (*Who Discovered Infrared Light?*, `3.94/d`, `138`v, `43.52%` stayed, **`105.30%` avg view % LOOP**), and `oKqmnJNGiHg` (*How Was Phosphorus Discovered?*, `5.88/d`, `194`v, `42.03%` stayed, **`88.35%` avg view % PASS**).
+  - **Shared pattern:** Positive, named-entity search questions (`What happens if...`, `What Is [Named Theory/Experiment]?`, `Why [Experiment]...`, `How Was...`) dominate both stayed-to-watch (`40.8–78.95%`) and compounding YouTube search (`40%` of 28d HOS Short views), whereas statement titles (`Wvjd8g0CpzE` `15.35%` stayed, `PFj6172YU4Q` `16.67%` stayed) collapse on cold-feed stayed-to-watch (`Rules 1, 28, 32, 41`). Meanwhile `19s` / zero-CTA / tight-loop cuts (`-3L6HzJ_d_4`, `pWySvZsneZg`, `c2q7w0pgcn8`, `oKqmnJNGiHg`) hit `73.8–112.4%` avg view % (`Rules 3, 6, 24, 27`).
+- **3 Worst HOS Shorts & What They Share (Hypotheses on Small N):**
+  1. **`LanTHJckYx8` (*What other table has empty chairs?*, `26s`):** **`0.06` views/day** (`4` views in `62d`), `33.33%` stayed, `23.08%` avg view % (`6s`).
+  2. **`zI_eD3vFWmE` (*The first X-ray showed a wedding ring*, `25s`):** **`0.16` views/day** (`9` views in `57d`), `50.00%` stayed, `64.00%` avg view %.
+  3. **`CnHwX1L9XHg` (*Gallium sat where the table said*, `26s`):** **`0.25` views/day** (`16` views in `64d`), `30.43%` stayed, `33.45%` avg view % (`9s`) — alongside recent stalled generic/vaccine questions `xgx2lYHhYZM` (`0.67/d`, `4`v, `0` feed) and `ChbsigHD5_o` (`1.00/d`, `5`v, `0` feed).
+  - **Shared pattern:** Cryptic riddles, flat past-tense statements, and generic/non-entity titles omit a searchable named discovery or physics entity, starving both Shorts-feed stayed-to-watch and YouTube search (`Rules 1, 28, 32, 41`).
+
+---
+
+## 2. Overlap & Non-Duplication Check (`2026-11-24`)
+
+Checked against:
+- All folders in `02_Video-Projects/` on `main` (`000`–`018`, `099`–`119`),
+- All open topic PRs in `history-of-science` (`#659` `120` Cry / `121` Cats Purr; `#682` `122` Sneeze / `123` Grey Hair; `#689` `124` Ocean Salty / `125` Tides; `#706` `126` Higgs Boson / `127` Airplanes Fly; `#724` `128` AC vs DC / `129` Microwave; `#726` `130` Nuclear Reactor / `131` Relativity; `#733` `132` Glass Transparent / `133` Quantum Physics),
+- All `011`–`095` ideas in `00_Brand/Channel-Setup/ideas/`, `VIDEO_BACKLOG.json`, `jobs/WIP.json` (`active` and `next_hos`), and paired candidate `135` (*What Is Entropy?*).
+- Explicit grep check across all `.md`/`.json` files for `antimatter|positron|paul dirac|carl anderson`: **0 matches**. Distinct from `004` Atom (Dalton/Thomson/Rutherford atomic structure), `126` Higgs Boson (electroweak mass mechanism), `131` Relativity (Einstein/Eddington spacetime curvature), and `133` Quantum Physics (Planck's 1900 blackbody quanta).
+- **Result:** **Zero overlap.**
+
+---
+
+## 3. Packaging, Why It Should Work & Search/Neighbour Evidence (`Rule 26` + `neighbours.py` + `public_search.py`)
+
+- **Proposed 2027 Search Plan Fit (`J3224`, `needsBen`):** Fits directly into **Cluster 2 (Nuclear, Quantum & Modern Physics Breakthroughs)** — chaining via playlists and end screens with `126` Higgs Boson, `130` Enrico Fermi Reactor, `131` Einstein Relativity, and `133` Max Planck Quantum Physics. Avoids health/vaccine throttling and South Asia school-syllabus traps while targeting adult US/UK/CA/AU physics-history demand.
+- **Title A (Primary Proposal, `LEARNINGS.md` Rules 1, 15, 23, 26 — `46 chars ≤ 50`, `0` exact collisions):** `What Is Antimatter? (The 1932 Wrong-Way Track)`
+- **Title B (Test & Compare Arm 2, `Rules 15, 23, 26` — `56 chars ≤ 70`, `0` exact collisions):** `How Was Antimatter Discovered? (Dirac's Mirror Equation)`
+- **Title C (Compact Story+Stakes, `Rule 23` — `45 chars ≤ 50`, `0` exact collisions):** `Antimatter Was Predicted Before Anyone Saw It`
+- **One-Line Hook:** In 1928, a shy 25-year-old Cambridge physicist trying to merge quantum mechanics and relativity accidentally wrote an equation predicting an impossible mirror-image twin of every particle — and four years later, a single crisp vapour trail curving the wrong way through a lead plate in Pasadena proved antimatter is real.
+- **Why It Should Work (Past Winners & `LEARNINGS.md` Rules):**
+  - Directly replicates the demand profile of our top two HOS longs — **`002` Periodic Table (`AL_-qlWko_g`, `162` views, `2.42/d`, `1,163` impressions, `3.35%` CTR)** and **`004` Inside an Atom (`GHZDsiH7L7A`, `35` views, `0.90/d`, `840` impressions)** — by leading with an exact, massive-volume physics search phrase (`What Is Antimatter?`, `46 chars ≤ 50 chars`) backed by **`8` strictly on-topic education neighbours `≥1M` views** (`Rules 1, 15, 26`), while pairing that query with a dramatic single-apparatus physical proof (Carl Anderson's 1932 cloud-chamber lead-plate photograph) like retention winner **`006` Willow Tree (`VbPubYd6Fbs`, `48.15%` Studio avg view %)** (`Rules 10, 23, 30`).
+  - Mirrors our highest-performing HOS Shorts — **`29bpGAI0wb8` (`1,229`v, `32.34/d`)**, **`xzKoHg0E0_U` (`239`v, `34.14/d`, `53.13%` stayed, `197` search)**, **`-3L6HzJ_d_4` (`140`v, `78.95%` stayed PASS, `73.84%` avg view % PASS)**, **`pWySvZsneZg` (`137`v, `112.43%` LOOP)**, and **`oKqmnJNGiHg` (`194`v, `88.35%` PASS)** — through two named-entity `16–19s` search-question Shorts (`Rules 2, 3, 6, 8, 24, 27, 28, 32, 39, 41` + Ben 19 Nov Shorts house rules).
+- **3-Way Thumbnail Test & Compare Plan (`LEARNINGS.md` Rules 11, 12, 14 + `THUMBNAIL_AND_TITLE_RULES.md` §2.5–2.B):**
+  - **Thumb A (Hero Object — The 1932 Wrong-Way Cloud-Chamber Track):** Painted 3D house-style key art: inside a brass-rimmed Pasadena cloud chamber on the right two-thirds, a luminous silver-blue vapour track slices upward through a central horizontal lead plate and curls sharply *left* — opposite to a fainter electron track curling right; Explorer small at lower left (round gold glasses, teal coat); cream/gold serif lettering in the clear left band: `WRONG WAY` (`2 words`, gold on `WRONG`, never repeats the title, zero overlap on the hero).
+  - **Thumb B (`Rule 14` Bright High-Contrast Variant — Matter Meets Antimatter Annihilation Flash):** Bright cream-and-gold sunlit physics laboratory table cutaway: two glowing spherical particles (deep sapphire electron and blazing crimson-gold positron) colliding into twin pure-white gamma-ray beams; Explorer small at lower left; serif lettering on the clear left band: `MIRROR TWIN` (`2 words`, gold on `MIRROR`).
+  - **Thumb C (CERN's Falling-Antimatter Gravity Tower):** Painted 3D key art of a tall gleaming copper-and-steel vertical magnetic vacuum column with a glowing antimatter atom dropping downward beside a crisp brass down-arrow; Explorer small at lower left; serif lettering on the clear left band: `FALLS DOWN?` (`2 words`, gold on `DOWN?`).
+- **Signed-out YouTube Autocomplete (`2026-11-24`, `10` queries / `70` search rows in [`11_Upload-Package/evidence_2026-11-24_public_search.json`](11_Upload-Package/evidence_2026-11-24_public_search.json)):**
+  - `"what is antimatter"` → **`autocomplete = yes`** (`10` suggestions; `0` exact collisions across all `5` proposed long/Short titles)
+  - `"how was antimatter discovered"` → **`autocomplete = yes`**
+  - `"why does antimatter exist"` → **`autocomplete = yes`**
+  - `"what happened to antimatter"` → **`autocomplete = yes`**
+  - `"paul dirac antimatter"` → **`autocomplete = yes`**
+- **Rule 26(a) Two Ranking Videos (`≥10,000` views, retrieved `2026-11-24`):**
+  1. `Veritasium` — [`Y-W-w8yNiKU`](https://youtu.be/Y-W-w8yNiKU) *Why does antimatter exist?* (**`10,830,717` views**)
+  2. `minutephysics` — [`Lo8NmoDL9T8`](https://youtu.be/Lo8NmoDL9T8) *Antimatter Explained* (**`3,054,345` views**; plus `Dr Ben Miles` [`1QJ_rDDOkh0`](https://youtu.be/1QJ_rDDOkh0) **`3,017,081` views**, `StarTalk` [`rP5aJEq0k7s`](https://youtu.be/rP5aJEq0k7s) **`2,885,000` views**, `PBS Space Time` [`1,725,780` views], `Newsthink` **`1,112,162` views**, `SciShow` **`1,101,251` views**, and `Physics Explained` **`195,073` views**)
+- **Neighbour Gate (`neighbours.py "antimatter" "what is antimatter" "positron" "paul dirac" --top 25`):** **PASS (`8` raw / `8` strictly on-topic education videos `≥1,000,000` views, `TED-Ed/TED: yes`, `0` off-topic rows)** — saved in [`11_Upload-Package/evidence_2026-11-24_neighbours.json`](11_Upload-Package/evidence_2026-11-24_neighbours.json):
+  1. `Physics Girl` — [`PCuyCJocJWg`](https://youtu.be/PCuyCJocJWg) *Why This Stuff Costs $2700 Trillion Per Gram - Antimatter at CERN* (**`13,677,152` views**)
+  2. `Veritasium` — [`jjp3WC8Unj8`](https://youtu.be/jjp3WC8Unj8) *What happens if you drop 0.125 grams of antimatter?* (**`12,547,557` views**)
+  3. `Veritasium` — [`Y-W-w8yNiKU`](https://youtu.be/Y-W-w8yNiKU) *Why does antimatter exist?* (**`10,830,717` views**)
+  4. `minutephysics` — [`Lo8NmoDL9T8`](https://youtu.be/Lo8NmoDL9T8) *Antimatter Explained* (**`3,054,300` views**)
+  5. `TED-Ed` ★ — [`CtR5EkvLNfg`](https://youtu.be/CtR5EkvLNfg) *What happened to antimatter? - Rolf Landua* (**`1,608,514` views**)
+  6. `PBS Space Time` — [`eA4X9P98ess`](https://youtu.be/eA4X9P98ess) *Why Antimatter Engines Could Launch In Your Lifetime* (**`1,514,551` views**)
+  7. `The Royal Institution` — [`0Fy6oiIRwJc`](https://youtu.be/0Fy6oiIRwJc) *Tara Shears - Antimatter: Why the anti-world matters* (**`1,208,827` views**)
+  8. `SciShow` — [`oS4MaZKdfE0`](https://youtu.be/oS4MaZKdfE0) *Our Universe Shouldn't Exist | The Matter-Antimatter Problem* (**`1,101,253` views**; plus `TED-Ed` ★ [`46NanUtEIhk`](https://youtu.be/46NanUtEIhk) *If matter falls down, does antimatter fall up? - Chloé Malbrunot* **`644,492` views**)
+
+---
+
+## 4. Candidate 4-Act Discovery Outline (All Claims UNVERIFIED Pending `SOURCES.md` & `facts` Lane)
+
+- **Cold Open (0:00–0:45, Proof-First Apparatus Window per `Rules 10 & 30`, UNVERIFIED):**
+  - `0:00–0:05`: Inside a darkened Caltech laboratory on **2 August 1932**, a tiny white mist trail slices across a magnetic cloud chamber, passes straight through a central **6 mm lead plate**, and bends tighter in the *exact wrong direction*.
+  - `0:05–0:15` (Apparatus / Physical Proof): Hard cut onto **Carl D. Anderson**'s cloud-chamber glass window and brass magnet coils as the vapour track curves opposite to an electron — the first photograph of **antimatter**, a particle predicted on paper four years before anyone knew it existed. Zero *"In this film..."* agenda line.
+- **Act I — Paul Dirac's 1928 Mirror-Image Equation (1928–1931, UNVERIFIED):** At St John's College, Cambridge in **January–February 1928** (*Proc. R. Soc. A* `117:610–624`), 25-year-old **Paul A. M. Dirac** tries to unite Erwin Schrödinger's quantum wave equation with Albert Einstein's special relativity. His clean four-component equation automatically explains electron spin — but insists on a troubling **negative-energy twin** solution. At first Dirac hopes the twin is the proton, until **Hermann Weyl** and **J. Robert Oppenheimer** prove the twin must have the **exact same mass as an electron**; in **May 1931** (*Proc. R. Soc. A* `133:60–72`), Dirac boldly predicts a brand-new particle: an **"anti-electron"** of identical mass and opposite charge that annihilates an electron on contact into pure gamma-ray light.
+- **Act II — Carl Anderson's 2 August 1932 Lead-Plate Trap (1932–1933, UNVERIFIED):** Working under Robert Millikan at Caltech in **Pasadena**, **Carl D. Anderson** isn't even hunting Dirac's equation — he is photographing cosmic rays in a magnetic cloud chamber. Critics argue a track curving left could simply be an ordinary electron moving *downward* instead of *upward*. Anderson solves the ambiguity by inserting a **6 mm lead plate** across the middle of the chamber: a particle loses energy passing through lead, so its track curves **more tightly** on the exit side. On **2 August 1932** (published *Science* Sep 1932 & *Physical Review* Mar 1933), Plate #62 proves the particle entered from below and curved like a **positive electron** — the **positron** (confirmed independently in **February 1933** by **Patrick Blackett & Giuseppe Occhialini** at Cambridge's Cavendish Laboratory using Geiger-triggered cloud chambers).
+- **Act III — The Antiproton Hunt at Berkeley's Bevatron (1955, UNVERIFIED):** If electrons have mirror twins, do protons? Because a proton is nearly `2,000` times heavier than an electron, creating a proton-antiproton pair requires `~6 GeV` of collision energy — far beyond cosmic-ray tabletops. In **October 1955** (*Physical Review* `100:947`), **Owen Chamberlain, Emilio Segrè, Clyde Wiegand, and Thomas Ypsilantis** fire protons into a copper target inside UC Berkeley's **Bevatron** synchrotron and use bending magnets plus Cherenkov counters to separate **60 antiprotons** out of millions of pions, proving antimatter is a universal symmetry of nature.
+- **Act IV — Falling Antimatter & the Cosmic Disappearance Twist (1995–2023, UNVERIFIED):** At **CERN**, physicists assemble the first **antihydrogen** atoms (**1995**; cold trapped antihydrogen **2010**) — and on **27 September 2023** (*Nature* `621:716–722`), the **ALPHA-g** collaboration drops trapped antihydrogen atoms inside a vertical magnetic cylinder to settle a century-old question: does antimatter fall *up* (antigravity) or *down*? Twist: it falls **down**, obeying Einstein's equivalence principle (`~0.75 ± 0.29 g`). Yet that deepens science's biggest mystery: if the Big Bang created equal matter and antimatter — and `1 gram` of each annihilates with the energy of a nuclear bomb — why did roughly **1 extra matter particle in a billion** survive to build every star, planet, and atom in your body?
+- **Primary-Source Verification Guardrails (Mandatory Before Script Lock):**
+  1. **Dirac (`1928`, *Proc. R. Soc. A* `117:610–624`; `1931`, *Proc. R. Soc. A* `133:60–72`):** Verify exact submission/publication dates, Dirac's age (`25`), and exact wording of the 1931 "anti-electron" prediction.
+  2. **Anderson (`1932`, *Science* `76:238–239`; `1933`, *Phys. Rev.* `43:491–494`):** Verify exact date (`2 August 1932`), lead-plate thickness (`6 mm`), magnetic field (`~15,000 gauss`), and Blackett & Occhialini (`Feb 1933`) confirmation details.
+  3. **Chamberlain, Segrè, Wiegand & Ypsilantis (`1955`, *Phys. Rev.* `100:947–950`):** Verify Bevatron energy (`6.2 GeV`), exact count of detected antiprotons (`60`), and 1959 Nobel citation.
+  4. **ALPHA Collaboration (`27 Sep 2023`, *Nature* `621:716–722`):** Verify exact measured acceleration `a_g = (0.75 ± 0.13 stat ± 0.16 syst) g` and exact antihydrogen trapping/release protocol.
+
+---
+
+## 5. Two Candidate `16–19 s` Search-Titled Shorts (Ben 19 Nov 2026 Shorts House Rules + Rules 32 & 41 — UNVERIFIED)
+
+- **Short `S01`:** *How Did Carl Anderson Photograph Antimatter?* (`44 chars`, `0` exact collisions, named-scientist + entity search question)
+  - **First-line answer hook (`0.0–1.5s`, `vo_onset_s ≤ 0.15s`, zero calendar dateline, UNVERIFIED):** *"Antimatter was caught on camera by a single vapour trail curving the wrong way through a slab of lead."*
+  - **Frame-0, Caption, Overlay & `16–19 s` Loop Plan (`studio/RULES.md` Shorts house rules + Rules 2, 3, 6, 24, 27, 39, 41):** Frame 0 (`0.0s`, `mode: "cover"`, `0%` Explorer, `0%` bars): **premium 3D cartoon moving plate** (no archival photo/still) of a glowing cloud-chamber vapour track piercing a brass-mounted lead plate and curling backward. Line-1 caption carries the concrete fact (`This vapour track curved the wrong way`, yellow on `wrong way` — not a two-word ALL CAPS label). Single mid-Short `Teach on screen` overlay (`WHEN` stamp inside `16:9` centre band, clear of `0–2s` and `9–14s`): `PASADENA, 1932`. Target runtime **`17.5 s`** (`16.0–19.0 s` band); payoff start at `≥70%` (`~12.6 s`): the lead plate slowed the particle, proving it came from below with a positive charge — the first positron. Last line loops directly into sentence 1 (`≤0.3 s` visual frame-0 match, zero CTA).
+- **Short `S02`:** *Does Antimatter Fall Up or Down?* (`32 chars`, `0` exact collisions, named-entity search question)
+  - **First-line answer hook (`0.0–1.5s`, `vo_onset_s ≤ 0.15s`, zero calendar dateline, UNVERIFIED):** *"Antimatter falls down — and physicists had to drop glowing anti-atoms inside a magnetic tower to prove it."*
+  - **Frame-0, Caption, Overlay & `16–19 s` Loop Plan (`studio/RULES.md` Shorts house rules + Rules 2, 3, 6, 24, 27, 39, 41):** Frame 0 (`0.0s`, `mode: "cover"`, `0%` Explorer, `0%` bars): **premium 3D cartoon moving plate** of a luminous crimson-gold antihydrogen atom released inside CERN's vertical copper magnetic trap tower, drifting downward as sensors flash. Line-1 caption carries the concrete fact (`CERN dropped antimatter to test gravity`, yellow on `antimatter`). Single mid-Short `Teach on screen` overlay (`WHEN` stamp inside `16:9` centre band): `CERN, 2023`. Target runtime **`17.5 s`** (`16.0–19.0 s` band); payoff start at `≥70%` (`~12.5 s`): when CERN's ALPHA-g team switched off the magnetic bottle, the anti-atoms dropped downward like normal matter, ruling out antigravity. Last line loops directly into sentence 1 (`≤0.3 s` visual frame-0 match, zero CTA).
