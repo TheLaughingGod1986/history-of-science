@@ -12,7 +12,7 @@
 | Neighbour gate | **PASS (`2026-11-21`)** — `8` raw / `6` aviation / **`5` strictly on-topic** education videos `≥1M` views (`TED-Ed/TED: yes`, led by `TED-Ed` ★ `2.57M` `p4VHMsIuPmk`, `minutephysics` `2.48M` `Gg0TXNXgz-w`, `SciShow Kids` `1.75M` `VLpSxHwfU04`, `Veritasium` `1.66M` `aFO4PBolwFg`, `Simple History` `1.41M` `YDlk4Ky_ahs`, plus `Real Engineering` `384,056` and `SciShow` `293,525`) |
 | Public search & collisions | **PASS (`2026-11-21` & `2026-11-24`)** — `11_Upload-Package/evidence_2026-11-21_public_search.json` + `evidence_2026-11-24_plan_title_search.json` (`4/4` core search phrases autocomplete `yes`; `0` exact title collisions across Titles A/B/C and Shorts S01/S02) |
 | Pre-build vidIQ audit | `11_Upload-Package/PRE_BUILD_VIDIQ_AUDIT.md` & `PACKAGE_FIRST_SCORING_v01.md` completed (`J3504`, `2026-11-24`; per-title vidIQ app numeric scores pending active WIP) |
-| Facts / `SOURCES.md` | **DRAFTED (`J3504`, `2026-11-24`) — PENDING INDEPENDENT `facts` LANE (`gemini-agy`)** (`01_Script/SOURCES.md` + `01_Script/FACT_NOTES_v01.md`: 17 claim rows backed by live NASA GRC, Smithsonian NASM, and NPS institutional quotes + honestly labelled secondary lifespans) |
+| Facts / `SOURCES.md` | **AUDITED — 5 BLOCKING FLAGs (`J3621`, `2026-11-25`)** — `01_Script/GEMINI_FACTS_CHECK_v01.md` (`10 OK / 5 PARTIAL / 6 FLAG items` carrying `5` blocking FLAGs across `21` audited items; all `16` cited URLs HTTP `200`, zero fabricated quotes, Shorts `42w`/`42w` confirmed inside `16–19 s`, plus CrossRef Smeaton `1759` DOI & RMG `H4` upgrades; no spoken rewrites; handed off to `J3622` for `v02` fix before Chief lock) |
 | Script review | **PASS (`93.6 / 100`, `J3504`, `2026-11-24`)** — `01_Script/wright_brothers_wind_tunnel_script_master_v01.md` (`1,239` spoken words, `8.3` min, 5 parts, `8/8` structure gates, `7 DATA+SCALE`, `5 WHO`, `12 WHEN`, `4 FACT`, `2 EXPLORER ACTS`, `0` labels/facts over 4 words; pending independent `facts` audit & Chief lock) |
 | Episode gate | **PASS (`9 / 9 OK`, `J3504`, `2026-11-24`)** — mechanical gate pass only; Chief lock & Rule G WIP slot required before any VO or picture spend |
 | VO | pending (Ben Orbit Narrator; `£0.00` spent) |
@@ -20,6 +20,16 @@
 | Runtime target | 7–9 min, 5 parts |
 | Air | Target **Thu 31 Dec 2026, 18:00 London** (normal publish, no Premiere; slides one week if not ready; Ben's watch by Mon 28 Dec) |
 | Shorts | 2 standalone `16–19 s` search-question Shorts drafted in `10_Shorts/SHORTS_SCRIPTS_v01.md` (Ben 19 Nov 3D cartoon house rules): **S01** *Why Did the Wright Brothers Build a Wind Tunnel?* (`48c`, `42w` ≈ `17.6 s`, Sat 2 Jan 11:30), **S02** *How Did the Wright Brothers Steer the First Plane?* (`50c`, `42w` ≈ `17.6 s`, Fri 1 Jan 11:30) — `0` collisions, pending `facts` & Chief lock |
+
+## `J3621` Independent Gemini Facts & Source Verification (`2026-11-25`)
+
+- **Report:** `01_Script/GEMINI_FACTS_CHECK_v01.md` (reviewed PR `#756` / `d66b6071`, `£0.00` spent, zero spoken rewrites, `wright_brothers_wind_tunnel_script_master_v01.md` and `10_Shorts/SHORTS_SCRIPTS_v01.md` byte-for-byte unchanged).
+- **Tally (`21` audited items):** **`10 OK`**, **`5 PARTIAL`**, **`6 FLAG` items (`5` blocking FLAGs)** — do **not** lock `v01` as-is; resolve in `v02` via **`J3622`**:
+  1. **FLAG-1 (`R13`, Part 04 line 126 & `SCALE` line 119):** `622.5 ft` is `1.60×` the 1901 longest glide (`389 ft`, 8 Aug 1901), not `"more than double their nineteen oh-one mark"` (NASA's `~300 ft` refers to typical glides, not the 1901 record).
+  2. **FLAG-2 (`R18`, Part 05 line 160):** John Harrison's `H4` longitude watch was completed in `1759` (RMG `ZAA0037`) — `142–146 years` before `1901–1905` (a century and a half, not `"two centuries earlier"`), and the handoff has no source row in `SOURCES.md` / `FACT_NOTES_v01.md`.
+  3. **FLAG-3 (`R02` Part 01 lines 21 & 40 + `S01` line 19):** Part 01 attributes the full `1/3` lift shortfall solely to Smeaton's `0.005` (`0.0033 / 0.005 = 2/3`; NASA GRC notes wing-lift curves also contributed); `S01` Caption Line 1 prints `"50% wrong"` without speaking `50%` or direction.
+  4. **FLAG-4 (`S02` lines 44, 49, 57):** `"spin backward"` misstates adverse-yaw `"well digging"` turn reversals (should be `"spin the wrong way"` / `"turn the wrong way"`).
+  5. **FLAG-5 (`P01` packaging docs):** `PRE_BUILD_VIDIQ_AUDIT.md` line 43 still names `How Do Airplanes Fly?` as Primary Title A (contradicting lines 13 & 77) and keeps stale `J3245` text; `LAUNCH_PLAN.md` & `PACKAGE_FIRST_SCORING_v01.md` call the models `"brass"` / `"brass and steel"` vs NASA GRC's **20-gauge steel**; and `LAUNCH_PLAN.md` line 38 `"142-year-old"` needs Smeaton's `1759` Royal Society DOI (`10.1098/rstl.1759.0019`) added to `SOURCES.md`.
 
 ## `J3504` Package-First & Script Draft Gate Outputs (`2026-11-24`)
 
