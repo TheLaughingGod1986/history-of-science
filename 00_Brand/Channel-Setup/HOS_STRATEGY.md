@@ -31,11 +31,11 @@ Inspiration: [Animistry](https://www.youtube.com/@ytAnimistry) for the look and 
 
 | Day (UK) | Type | Job |
 |---|---|---|
-| Thu 18:00 | Long, 7–9 min | The new film, **normal publish, not a Premiere** |
-| Sat 11:30 | Short | Go-public-day Short that promotes the new long (see note) |
-| Fri 11:30 | Short | Promotes the new long (now public, so Related can point at it) |
-| Sun 11:30 | Short | Promotes a different film already out |
-| Tue 11:30 | Short | Promotes a third film |
+| Thu 18:00 | Long, 7–9 min | The new search-led film, **normal publish, not a Premiere** |
+| Sat 11:30 | Short (16–19 s) | Go-public-day Short promoting the new long (see note); search phrase or question title |
+| Fri 11:30 | Short (16–19 s) | Promotes the new long (now public, so Related points at it); search phrase or question title |
+| Sun 11:30 | Short (16–19 s) | Rotates a cluster winner or tests next month's candidate topic before scripting (search-led plan `hos-search-2027-01`, Ben OK 24 Nov 2026) |
+| Tue 11:30 | Short (16–19 s) | Rotates a cluster winner or tests next month's candidate topic before scripting (every Short title is a search phrase or question) |
 
 - **Note (Ben, 7 Nov 2026):** Thursday 11:30 was preferred for the go-public-day Short (same idea as Orbit's Short on the long's day), but it would publish before the Thu 18:00 long and break "never a Short before its long is public". Saturday 11:30 takes that slot — the next free day that is not already a Short day.
 - A Short never goes out before the long it promotes is public.
@@ -89,13 +89,15 @@ The six new Test B Shorts on films 008, 009 and 010 only. Assemblers follow `.cu
 
 ## Picking the next film
 
-1. Read the latest `audits/weekly/<date>/REPORT.md`. Which Shorts and topics held?
-2. Choose a familiar thing with a clear moment of proof, a person to follow, and one room to set it in.
-3. **Neighbour pool (1 Oct 2026):** every future film must be one YouTube can recommend next to big education videos. `neighbours.py` must PASS with **≥ 3 education videos at 1M+ views** on the topic before topic lock (`STUDIO_PLAYBOOK.md` §2). Use their subject words in title, description and tags, never their channel names.
-4. Competition check: search the exact title signed out. If the top five are all channels with millions of subscribers, narrow the angle.
-5. Fill the vidIQ pre-build audit and the topic score. **Claude and Grok pick on the desk** (Ben sees the finished film; `AGENTS.md`).
+**Search-led topic method (effective for topics locked from 1 Jan 2027 · Ben OK 24 Nov 2026 · `hos-search-2027-01`, `STUDIO_PLAYBOOK.md` §2):**
+1. Read the latest weekly `hos-search-research` report (`orbit-with-ben` `05_Analytics/hos/search_research/<date>.md`) and `audits/weekly/<date>/REPORT.md`. Daily `hos-ideas` is paused from 24 Nov 2026.
+2. Pick from the four Anglosphere adult clusters inside HOS's 3D cartoon discovery lane: **(1) Electricity & Inventor Rivalries**, **(2) Nuclear & Modern Physics**, **(3) Accidental & World-Changing Inventions**, **(4) Breakthrough & Lost Engineering** (no space/Orbit overlap, no combat/Field Order History overlap, no health/vaccines, no pseudo-science).
+3. Clear the 8-step search-led gate: demand (10k–150k/mo, comp ≤45), Anglosphere adult value (US/UK/CA/AU top markets + US Education RPM proxy), signed-out US top-10 gap, small-channel `<50k` ≥5× outlier proof, **package first** (3 query-first titles + hook, ≤50 chars where query allows, + 2 thumbnail ideas before any script), cluster chain, Shorts-as-test signal, and monthly own search-terms read.
+4. **Neighbour pool (tie-breaker only from 1 Jan 2027; was blocking 1 Oct 2026):** `neighbours.py` (≥3 education videos at 1M+ views) serves as a tie-breaker and subject-word source for descriptions and tags (never channel names).
+5. **14-day test bar per long (vs HOS best long of 162 views):** **500+ views** = keep the cluster · **162–499** = one more film · **under 162** = drop or change (always reported with impressions, CTR, and US+UK+CA+AU share).
+6. Fill `PRE_BUILD_VIDIQ_AUDIT.md` and `TOPIC_OPPORTUNITY_SCORE.md`. Rule-E review and Chief lock on the desk (Ben watches the finished film; `AGENTS.md`).
 
-Candidates are in `VIDEO_BACKLOG.json`.
+Candidates are in `VIDEO_BACKLOG.json` and `jobs/WIP.json` `next_hos` (existing `next_hos` topics stay, but none is locked for 2027 without passing the search-led gate).
 
 ## Measure
 

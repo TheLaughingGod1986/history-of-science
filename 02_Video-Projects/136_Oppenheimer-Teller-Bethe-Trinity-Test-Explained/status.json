@@ -1,0 +1,83 @@
+{
+  "film": "136",
+  "title": "Trinity Test Explained: Could It Ignite the Sky?",
+  "air": "2026-12-17",
+  "ready_by": "2026-12-14",
+  "summary": "Film 2 of the History of Science search-led plan (hos-search-2027-01, Ben OK 24 Nov 2026; moved into December by Ben/Claude 24 Nov: target air Thu 17 Dec 18:00 London, watch by Mon 14 Dec; slides a week if not ready). Cluster 2 (Nuclear & Modern Physics): trinity test 21.5k/mo comp 38, manhattan project 35.2k/mo US 18% + GB 9%, 9/10 US SERP gap, sub-50k outliers 15x-172x. Strictly 3D cartoon laboratory-physics story (LA-602 atmospheric-ignition calculation & implosion proof; zero overlap with HOS:130 nuclear reactor, Field Order History combat, or Orbit space). Rule-E review due Thu 26 Nov, draft Sat 28 Nov, lock Fri 4 Dec. Awaits Rule-E PASS, open WIP slot (Rule G), SOURCES.md, and facts lane.",
+  "stages": {
+    "topic": {
+      "state": "todo",
+      "due": "2026-11-26",
+      "owner": "Claude",
+      "note": "J3495 scaffolded TOPIC.md, package-first titles/thumbs, and 2026-11-24 neighbours.py PASS + public_search.py evidence; Rule-E review queued due Thu 26 Nov"
+    },
+    "script": {
+      "state": "todo",
+      "due": "2026-12-04",
+      "owner": "Claude",
+      "waiting": "after Rule-E topic PASS (draft due Sat 28 Nov, lock Fri 4 Dec)"
+    },
+    "facts": {
+      "state": "todo",
+      "due": "2026-12-04",
+      "owner": "Gemini",
+      "waiting": "after script draft and SOURCES.md"
+    },
+    "package": {
+      "state": "todo",
+      "due": "2026-12-04",
+      "owner": "Claude",
+      "note": "Package-first candidates in TOPIC.md and PRE_BUILD_VIDIQ_AUDIT.md; finalised before script lock"
+    },
+    "vo": {
+      "state": "todo",
+      "due": "2026-12-07",
+      "owner": "Cursor",
+      "waiting": "after script & facts lock and open HOS WIP place (Rule G)"
+    },
+    "shorts_scripts": {
+      "state": "todo",
+      "due": "2026-12-05",
+      "owner": "Claude",
+      "note": "Fri & Sat search-question 16-19 s Shorts promoting HOS:136; Sun & Tue cluster/candidate rotation"
+    },
+    "shorts_vo": {
+      "state": "todo",
+      "due": "2026-12-08",
+      "owner": "Cursor",
+      "waiting": "after shorts_scripts PASS and open HOS WIP place"
+    },
+    "picture": {
+      "state": "todo",
+      "due": "2026-12-11",
+      "owner": "Cursor",
+      "waiting": "after script & VO PASS (Flow credits within existing plan)"
+    },
+    "edit": {
+      "state": "todo",
+      "due": "2026-12-13",
+      "owner": "Cursor",
+      "waiting": "after picture PASS"
+    },
+    "thumbnails": {
+      "state": "todo",
+      "due": "2026-12-13",
+      "owner": "Codex",
+      "waiting": "after picture plates ready"
+    },
+    "ben_ok": {
+      "state": "todo",
+      "due": "2026-12-14",
+      "owner": "Ben",
+      "waiting": "after finished long, Shorts, and thumbnails pass Chief QA"
+    },
+    "scheduled": {
+      "state": "todo",
+      "due": "2026-12-15",
+      "owner": "Chief",
+      "waiting": "after Ben's watch OK (target air Thu 17 Dec 18:00 London)"
+    }
+  },
+  "claims": [],
+  "next": "Rule-E topic go/no-go review due Thu 26 Nov; then package-first + script draft due Sat 28 Nov (lock Fri 4 Dec)"
+}

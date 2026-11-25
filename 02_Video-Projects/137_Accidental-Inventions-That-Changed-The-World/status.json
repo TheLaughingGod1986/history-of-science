@@ -1,0 +1,83 @@
+{
+  "film": "137",
+  "title": "5 Accidental Inventions That Changed the World",
+  "air": "2026-12-24",
+  "ready_by": "2026-12-21",
+  "summary": "Film 3 of the History of Science search-led plan (hos-search-2027-01, Ben OK 24 Nov 2026; moved into December by Ben/Claude 24 Nov: target air Thu 24 Dec 18:00 London, watch by Mon 21 Dec; slides a week if not ready). Cluster 3 (Accidental & World-Changing Inventions): inventions that changed the world 35.9k/mo US 23% (10/10 gap), accidental discoveries 9.4k/mo comp 39 +93% (9/10 gap), accidental inventions that changed the world 8.1k/mo +73.9% (10/10 gap), sub-50k outliers 8x-22x. Five-mistake Cluster 3 anthology hub (zero overlap with public HOS 001-007, HOS:130, Field Order History, or Orbit). Rule-E review due Thu 26 Nov, draft Mon 30 Nov, lock Tue 8 Dec. Awaits Rule-E PASS, open WIP slot (Rule G), SOURCES.md, and facts lane.",
+  "stages": {
+    "topic": {
+      "state": "todo",
+      "due": "2026-11-26",
+      "owner": "Claude",
+      "note": "J3495 scaffolded TOPIC.md, package-first titles/thumbs, and 2026-11-24 neighbours.py PASS + public_search.py evidence; Rule-E review queued due Thu 26 Nov"
+    },
+    "script": {
+      "state": "todo",
+      "due": "2026-12-08",
+      "owner": "Claude",
+      "waiting": "after Rule-E topic PASS (draft due Mon 30 Nov, lock Tue 8 Dec)"
+    },
+    "facts": {
+      "state": "todo",
+      "due": "2026-12-08",
+      "owner": "Gemini",
+      "waiting": "after script draft and SOURCES.md"
+    },
+    "package": {
+      "state": "todo",
+      "due": "2026-12-08",
+      "owner": "Claude",
+      "note": "Package-first candidates in TOPIC.md and PRE_BUILD_VIDIQ_AUDIT.md; finalised before script lock"
+    },
+    "vo": {
+      "state": "todo",
+      "due": "2026-12-11",
+      "owner": "Cursor",
+      "waiting": "after script & facts lock and open HOS WIP place (Rule G)"
+    },
+    "shorts_scripts": {
+      "state": "todo",
+      "due": "2026-12-09",
+      "owner": "Claude",
+      "note": "Fri & Sat search-question 16-19 s Shorts promoting HOS:137; Sun & Tue cluster/candidate rotation"
+    },
+    "shorts_vo": {
+      "state": "todo",
+      "due": "2026-12-12",
+      "owner": "Cursor",
+      "waiting": "after shorts_scripts PASS and open HOS WIP place"
+    },
+    "picture": {
+      "state": "todo",
+      "due": "2026-12-17",
+      "owner": "Cursor",
+      "waiting": "after script & VO PASS (Flow credits within existing plan; renews 12 Dec)"
+    },
+    "edit": {
+      "state": "todo",
+      "due": "2026-12-19",
+      "owner": "Cursor",
+      "waiting": "after picture PASS"
+    },
+    "thumbnails": {
+      "state": "todo",
+      "due": "2026-12-19",
+      "owner": "Codex",
+      "waiting": "after picture plates ready"
+    },
+    "ben_ok": {
+      "state": "todo",
+      "due": "2026-12-21",
+      "owner": "Ben",
+      "waiting": "after finished long, Shorts, and thumbnails pass Chief QA"
+    },
+    "scheduled": {
+      "state": "todo",
+      "due": "2026-12-22",
+      "owner": "Chief",
+      "waiting": "after Ben's watch OK (target air Thu 24 Dec 18:00 London)"
+    }
+  },
+  "claims": [],
+  "next": "Rule-E topic go/no-go review due Thu 26 Nov; then package-first + script draft due Mon 30 Nov (lock Tue 8 Dec)"
+}
