@@ -6,14 +6,14 @@
 | Channel | `@HistoryOfScienceYT` only |
 | Plan / Cluster | `hos-search-2027-01` Film 2 · Cluster 2 (Nuclear & Modern Physics) |
 | Topic | **Rule-E GO (`96.3 / 100` · `9.63 / 10`, `J3502`, `2026-11-24`)** — `10/10` gates PASS |
-| Package-first | `11_Upload-Package/PACKAGE_FIRST_SCORING_v01.md` & `LAUNCH_PLAN.md` (`J3507` + `J3675` `ADD-6`, `2026-11-25`): Primary Arm A `Trinity Test Explained: Could It Ignite the Sky?` (`48c`, `96/100`), Thumb A `AIR ON FIRE?` (`96/100`), Thumb B `MEASURED BY PAPER` (`93/100`), S01 `44c` & S02 `58c` (`0` collisions) |
+| Package-first | `11_Upload-Package/PACKAGE_FIRST_SCORING_v01.md` & `LAUNCH_PLAN.md` (`J3507` + `J3675` `ADD-6`, draft lock candidates confirmed in **`J3677`**, `2026-11-25`): Primary Arm A `Trinity Test Explained: Could It Ignite the Sky?` (`48c`, `96/100`), unrendered draft Thumb A `AIR ON FIRE?` (`96/100`), unrendered draft Thumb B `MEASURED BY PAPER` (`93/100`, §2.6 hand-verified chalkboard ink & §2.9 3-way T&C at `thumbnails` stage), S01 `44c` & S02 `58c` (`0` collisions) |
 | Pre-build vidIQ audit | `11_Upload-Package/PRE_BUILD_VIDIQ_AUDIT.md` (updated for `v02` in `J3675`, `2026-11-25`) |
-| Script review | **PASS — `93.4 / 100`** (`01_Script/trinity_test_explained_script_master_v02.md` — sole master in `01_Script/`, `1,260` words, `8.4` min, `4` chapter cards, `8/8` structure gates; awaits Chief lock) |
-| Episode gate | **PASS** (default `npm run gate:episode` without `--script`, `9/9` checks `OK` — VO/Veo still held pending Chief lock & open WIP slot under Rule G) |
-| Sources & Facts | `01_Script/SOURCES.md`, **`01_Script/FACT_NOTES_v02.md`** & **`01_Script/GEMINI_FACTS_CHECK_v02.md`** (`J3676` independent Gemini audit, `2026-11-25`: **0 blocking FLAGs**, `22 OK` / `1 non-blocking PARTIAL R04`; all 8 `J3552` `FLAG`s + `R20` polishes + `ADD-1`–`ADD-6` verified resolved; `LA-602` PDF pp. 1,2,3,10,12,15,16 visually verified; zero unverified new spoken claims; awaits `J3677` Chief lock; `£0.00` spent) |
-| Shorts scripts | **`10_Shorts/SHORTS_SCRIPTS_v02.md`** (`J3675`, `2026-11-25`: programmatic counts **`S01 = 42w`** (`16.4–16.8 s` speech) & **`S02 = 42w`** (`16.4–16.8 s` speech), inside `16.0–19.0 s` house rule; `S02` `"in silence for the blast wave"` + `2.5m SHIFT ≈ 10KT` overlay + §2.6 edit ink; titles `S01` `44c` & `S02` `58c` `0` collisions) |
-| VO | pending (Ben Orbit Narrator — starts only after script/facts lock & open WIP slot) |
-| Picture | pending (Flow Veo 3.1, plate library — starts only after script & VO PASS) |
+| Script review | **LOCKED (`J3677` Acting Chief KEEP, `2026-11-25`, HOS PR `#767` merged `ab25f2de`) — PASS `93.4 / 100`** (`01_Script/trinity_test_explained_script_master_v02.md`, `sha256: 85fb1286...`, sole master in `01_Script/`, `1,260` words, `8.4` min, `4` chapter cards, `8/8` structure gates; `J3553` closed `done`) |
+| Episode gate | **PASS** (default `npm run gate:episode` without `--script`, `9/9` checks `OK` — VO queued in `J3678`/`J3679` after `HOS:136` promoted into active WIP in OWB PR `#1306`) |
+| Sources & Facts | **LOCKED (`J3677` Acting Chief KEEP, `2026-11-25`):** `01_Script/SOURCES.md` (`060acf45...`), `01_Script/FACT_NOTES_v02.md` (`899156a3...`), & `01_Script/GEMINI_FACTS_CHECK_v02.md` (`0dede309...`; `J3676` **0 blocking FLAGs**, `22 OK` / `1 non-blocking PARTIAL R04`; `LA-602` PDF pp. 1,2,3,10,12,15,16 visually verified; `J3677` direct live HTTP exact-quote spot checks `8/8` primary hosts `EXACT PASS`; zero unverified new spoken claims; `£0.00` spent) |
+| Shorts scripts | **LOCKED (`J3677` Acting Chief KEEP, `2026-11-25`):** `10_Shorts/SHORTS_SCRIPTS_v02.md` (`sha256: e1df5d81...`: **`S01 = 42w`** & **`S02 = 42w`** = `16.4–16.8 s` speech inside Ben 19 Nov `16.0–19.0 s` house rule; `S02` `"in silence for the blast wave"` + `2.5m SHIFT ≈ 10KT` overlay + §2.6 edit ink; titles `S01` `44c` & `S02` `58c` `0` collisions) |
+| VO | queued (**`J3678`** long 5 parts due Mon 7 Dec; **`J3679`** Shorts S01 & S02 due Tue 8 Dec — Ben Orbit Narrator on Mac mini via `el_client.py`/`vo_take.py`, `vo_check_py312.sh`; `HOS:128` `J3670`/`J3671` takes credit priority if tight) |
+| Picture | pending (Flow Veo 3.1, plate library — starts only after Chief VO PASS) |
 | Runtime target | 7–9 min, 5 parts (`8.4` min est. at 150 wpm) |
 | Ben's watch target | Mon 14 Dec 2026 |
 | Air | Thu 17 Dec 2026 18:00 London, normal publish (no Premiere; slides one week if not ready) |
@@ -152,10 +152,10 @@ Strictly relevant education neighbours verified in saved JSON (`5` strictly rele
 
 | Part | Plate board | Latest cut | Status |
 |---|---|---|---|
-| 01 | `07_Edit-Project/parts/part-01_plates_v01.json` | — | script v02 PASS (`93.4/100`, awaits Chief lock) |
-| 02 | | | script v02 PASS |
-| 03 | | | script v02 PASS |
-| 04 | | | script v02 PASS |
-| 05 | | | script v02 PASS |
+| 01 | `07_Edit-Project/parts/part-01_plates_v01.json` | — | script v02 LOCKED (`J3677` KEEP, `93.4/100`, long VO queued `J3678`) |
+| 02 | | | script v02 LOCKED (`J3677`) |
+| 03 | | | script v02 LOCKED (`J3677`) |
+| 04 | | | script v02 LOCKED (`J3677`) |
+| 05 | | | script v02 LOCKED (`J3677`) |
 
 Keep this file current on `main`. A STOP (quota, auth, missing VO) is a line here, not an open branch.
