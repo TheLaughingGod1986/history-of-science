@@ -23,11 +23,11 @@
 
 ## 2. Title & Thumbnail Test & Compare Plan
 
-- **Primary Title (Arm A, set before any test):** `Accidental Inventions: 5 Mistakes That Worked` (`45 chars ≤ 50`, `0` collisions)
+- **Primary Title (Arm A, set before any test):** `Accidental Inventions: 5 Mistakes That Worked` (`45 chars ≤ 50`, `0` collisions; confirm manifest neighbour phrase `"inventions"` per §1.3 while Arms B/C and description line 1 also carry `"that changed the world"`)
 - **T&C Title Arm B (Ben-Approved Plan Title):** `Accidental Inventions That Changed the World (5 Mistakes That Worked)` (`69 chars ≤ 70`, `0` collisions)
 - **T&C Title Arm C (Backup):** `Accidental Inventions: 5 Mistakes That Changed the World` (`56 chars`, `0` collisions)
-- **Thumbnail Arm A (`NEARLY TRASHED`, gold on `TRASHED`):** Single giant 3D cartoon spiderwebbed cracked-yet-intact 1903 glass flask on a warm Paris laboratory bench, Explorer small lower-left.
-- **Thumbnail Arm B (`WRONG RESISTOR`, gold on `WRONG`):** Close-up 3D cartoon 1956 workbench with one oversized warm-glowing wrong resistor plugged into a transistor circuit pulsing a steady golden heartbeat trace on a small period oscilloscope beside a crossed-out notebook, Explorer small lower-left.
+- **Thumbnail Arm A (`NEARLY TRASHED`, gold on `TRASHED`):** Single giant 3D cartoon spiderwebbed cracked-yet-intact 1903 glass flask on a warm Paris laboratory bench, Explorer small lower-left (unrendered draft until post-VO).
+- **Thumbnail Arm B (`WRONG RESISTOR`, gold on `WRONG`):** Close-up 3D cartoon 1956 workbench with one oversized warm-glowing wrong resistor plugged into a transistor circuit pulsing a steady golden heartbeat trace on a small period oscilloscope beside a crossed-out notebook, Explorer small lower-left (unrendered draft until post-VO; §2.6 hand-verified resistor/oscilloscope; 3rd T&C variant built post-VO per §2.9).
 - **Low-RPM exclusion:** Never target `"history of inventions"` (`PK 25%`) in titles, descriptions, or tags.
 
 ---
@@ -42,7 +42,7 @@
    - `3:10 The Flask That Refused to Shatter (1903)`
    - `4:40 The Mouldy Dish & the Oxford Breakthrough (1928–1941)`
    - `6:25 The Microsphere Glue & the Prepared Mind (1968–1974)`
-3. **Sources line:** From `01_Script/SOURCES.md` (5–6 primary/institutional citations: Greatbatch U.S. Patent 3,057,356 & National Science and Technology Medals Foundation; Goodyear U.S. Patent 3,633; Bénédictus U.S. Patent 1,098,342; Fleming 1929 *Br J Exp Pathol* & Chain/Florey 1940–1941 *The Lancet*; Silver U.S. Patent 3,691,140 & National Inventors Hall of Fame).
+3. **Sources line:** From `01_Script/SOURCES.md` (5 primary/institutional citation groups: Greatbatch U.S. Patent 3,057,356, Aquilina 2006 `PMC3232561` & U.S. Dept. of Veterans Affairs; Goodyear U.S. Patent 3,633 & National Inventors Hall of Fame; Bénédictus French Patent 405,881 Aug 1909 & U.S. Patent 1,098,342; Fleming 1929 *Br J Exp Pathol*, NobelPrize.org 1945 & Gaynes 2017 `PMC5403050`; Silver U.S. Patent 3,691,140, National Inventors Hall of Fame & 3M Post-it History).
 4. **Archive image credits:** Any credited archive portraits used in the final edit (none required if 100% 3D cartoon plates).
 5. **Honest production line:** `Pictures: AI-generated 3D scenes, with archive images credited above. Facts: every claim is checked against the sources listed.`
 6. **Cluster 3 end screen & handoff:** Links to `HOS:129` (*How Was the Microwave Invented?*) once published, or Cluster 1/2 lead films `HOS:128` / `HOS:136`.
