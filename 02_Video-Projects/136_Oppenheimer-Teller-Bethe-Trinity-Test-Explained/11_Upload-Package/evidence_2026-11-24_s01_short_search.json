@@ -1,0 +1,147 @@
+{
+ "pulled": "2026-11-24",
+ "source": "YouTube GB search results and autocomplete; public, no login. Not vidIQ.",
+ "queries": {
+  "Could the Trinity Test Have Ignited the Sky?": {
+   "suggest": [],
+   "search": [
+    {
+     "id": "2QI88aLyaOs",
+     "title": "Oppenheimer’s “Terrible Possibility” - Atmospheric Ignition",
+     "channel": "Kyle Hill",
+     "views": "2,237,244 views",
+     "age": "3 yr ago",
+     "length": "16:00"
+    },
+    {
+     "id": "hY6QkmzF1K0",
+     "title": "I Fixed the Nuclear Bomb Explosion in Oppenheimer",
+     "channel": "Brycn Spycn",
+     "views": "4,266,317 views",
+     "age": "2 yr ago",
+     "length": "1:03"
+    },
+    {
+     "id": "r-AvGEaogK0",
+     "title": "What If the First Atomic Bomb Test Had Ignited the Atmosphere?",
+     "channel": "Brain Glitch",
+     "views": "200 views",
+     "age": "1 yr ago",
+     "length": "6:00"
+    },
+    {
+     "id": "PeqQYJwO5ps",
+     "title": "They Feared The First Atomic Bomb Would Set The Sky On Fire",
+     "channel": "Trace the Wire",
+     "views": "12 views",
+     "age": "2 wk ago",
+     "length": "5:37"
+    },
+    {
+     "id": "SJB3FJNSxd4",
+     "title": "Is It Really Possible for a Nuke to Ignite the Atmosphere?",
+     "channel": "Today I Found Out",
+     "views": "19,828 views",
+     "age": "8 mo ago",
+     "length": "12:04"
+    },
+    {
+     "id": "s4Mc84emZJw",
+     "title": "Did We Almost Burn the Sky? The Trinity Test's Darkest Secret",
+     "channel": "Ideas of the Cosmos",
+     "views": "20 views",
+     "age": "2 mo ago",
+     "length": "9:35"
+    },
+    {
+     "id": "We5IHi8Wy3k",
+     "title": "The Bomb Test Scientists Feared Would Set the Sky on Fire",
+     "channel": "As It Happened",
+     "views": "201 views",
+     "age": "1 mo ago",
+     "length": "55:45"
+    }
+   ]
+  },
+  "trinity test": {
+   "suggest": [
+    "trinity test footage",
+    "trinity test",
+    "trinity test oppenheimer scene",
+    "trinity test real footage",
+    "trinity test site",
+    "trinity test twin peaks",
+    "trinity test slow motion",
+    "trinity test video",
+    "trinity test documentary",
+    "trinity test explosion"
+   ],
+   "search": [
+    {
+     "id": "7dfK9G7UDok",
+     "title": "Trinity Atomic Test complete takes",
+     "channel": "atomcentral",
+     "views": "1,463,969 views",
+     "age": "13 yr ago",
+     "length": "2:18"
+    },
+    {
+     "id": "2dMeI-pyKPM",
+     "title": "Trinity Test Clear Footage | Oppenheimer's Bomb | Color 4K UHD",
+     "channel": "Daily Dose of Pokelawls",
+     "views": "491,696 views",
+     "age": "3 yr ago",
+     "length": "0:13"
+    },
+    {
+     "id": "tK0IDmSYYGk",
+     "title": "\"Oppenheimer\" clip: Trinity",
+     "channel": "CBS Sunday Morning",
+     "views": "3,956,635 views",
+     "age": "2 yr ago",
+     "length": "1:44"
+    },
+    {
+     "id": "fJRP4TCA4Q8",
+     "title": "Trinity Test (Additional Footage)",
+     "channel": "AtomicHeritage",
+     "views": "682,942 views",
+     "age": "10 yr ago",
+     "length": "0:13"
+    },
+    {
+     "id": "JmGyZZyOTs8",
+     "title": "Another rare Trinity test film",
+     "channel": "atomcentral",
+     "views": "12,882 views",
+     "age": "7 mo ago",
+     "length": "0:13"
+    },
+    {
+     "id": "Bwosj5WmXj8",
+     "title": "Trinity Test Color Footage",
+     "channel": "AtomicHeritage",
+     "views": "376,146 views",
+     "age": "11 yr ago",
+     "length": "0:17"
+    },
+    {
+     "id": "gtmvxhnbOqg",
+     "title": "Trinity Test Explained: How Manhattan Project Engineers Detonated the First Nuclear Blast",
+     "channel": "Iron Minds",
+     "views": "358,934 views",
+     "age": "10 mo ago",
+     "length": "40:02"
+    },
+    {
+     "id": "_7fKlk441dQ",
+     "title": "The Trinity Test",
+     "channel": "AtomicHeritage",
+     "views": "945,409 views",
+     "age": "9 yr ago",
+     "length": "2:01"
+    }
+   ]
+  }
+ }
+}
