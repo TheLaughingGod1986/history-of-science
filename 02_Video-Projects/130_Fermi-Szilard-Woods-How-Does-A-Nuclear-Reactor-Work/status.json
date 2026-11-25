@@ -1,0 +1,46 @@
+{
+  "film": "130",
+  "title": "How Does a Nuclear Reactor Work? (Under a Stadium)",
+  "summary": "Proposed in J3348 and Rule-E pre-cleared by J3350 (GO 96.6/100, 22 Nov 2026). Stays in jobs/WIP.json next_hos under Rule G (4/4 active HOS slots full). Passes all currently in-force HOS topic gates (neighbours.py PASS: 12 raw / 9 strictly on-topic >=1M edu videos incl. Kurzgesagt 10.89M/9.92M/8.22M, SmarterEveryDay 7.52M/3.85M, TED-Ed 3.33M, TEDx 2.32M/1.58M, TED 1.24M; public_search.py 11 queries / 80 rows, 4 core phrases autocomplete=yes, 0 exact title collisions across all 5 candidate titles) and aligns with proposed hos-search-2027-01 Cluster 2 #2 (J3224, currently needsBen in studio/plan.json). All historical/scientific claims remain UNVERIFIED pending active HOS WIP slot, SOURCES.md verbatim quotes, and facts lane.",
+  "stages": {
+    "topic": {
+      "state": "todo",
+      "note": "J3348 topic brief written; J3350 Rule-E topic go/no-go review GO (96.6/100 in next_hos under Rule G); refreshed public_search.json with live non-empty 8-row collision proof for Title A and parentheses-stripped Title B (11 queries / 80 rows, 0 collisions), fixed Thumb B §2.5 title-repeat (UNDER STAGG FIELD -> HIDDEN GRAPHITE PILE), tightened Act IV prompt-generation-time/thermal-excursion physics wording, added 19 Nov 16-19s Shorts house-rules header to 10_Shorts/README.md, and logged script sourcing guardrails; all claims remain UNVERIFIED pending SOURCES.md and facts lane when an active HOS slot opens"
+    },
+    "script": {
+      "state": "todo"
+    },
+    "facts": {
+      "state": "todo"
+    },
+    "package": {
+      "state": "todo"
+    },
+    "vo": {
+      "state": "todo"
+    },
+    "shorts_scripts": {
+      "state": "todo"
+    },
+    "shorts_vo": {
+      "state": "todo"
+    },
+    "picture": {
+      "state": "todo"
+    },
+    "edit": {
+      "state": "todo"
+    },
+    "thumbnails": {
+      "state": "todo"
+    },
+    "ben_ok": {
+      "state": "todo"
+    },
+    "scheduled": {
+      "state": "todo"
+    }
+  },
+  "claims": [],
+  "next": ""
+}
