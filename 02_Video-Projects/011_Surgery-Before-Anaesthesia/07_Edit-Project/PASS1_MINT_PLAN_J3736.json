@@ -1,0 +1,1051 @@
+{
+  "job": "J3736",
+  "film": "HOS:011",
+  "plan_file": "02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/PICTURE_PLAN_v04.json",
+  "plan_sha256": "5b344b11e9a28bee4cdc227daf26ce5c96f6dd2ccce9b62fe81998876742cc9f",
+  "generation_authorized": false,
+  "submissions": 0,
+  "create_clicks": 0,
+  "credits_spent": 0,
+  "keep": false,
+  "review": "PENDING_REVIEW",
+  "file_state_when_written": "GENERATED",
+  "row_count": 67,
+  "quality_count": 67,
+  "fast_count": 0,
+  "explorer_count": 2,
+  "style_refs": [
+    "04_Generated-Clips/_style_refs/04_sunny_window_v01.jpg",
+    "04_Generated-Clips/_style_refs/10_mint_jar_v01.jpg"
+  ],
+  "explorer_ref": "01_Character/05_Generation-References/hos-explorer-reference-v01.jpg",
+  "caps": {
+    "prices": {
+      "Quality": 100,
+      "Still": 0
+    },
+    "models": {
+      "Quality": "Veo 3.1 - Quality",
+      "Still": "Nano Banana 2.1"
+    },
+    "duration": "8s",
+    "aspect": "16:9",
+    "outputs": "x1",
+    "takes_per_row": 1,
+    "total_credits": 6700,
+    "batch_rows": 5,
+    "batch_credits": 1000,
+    "floor": 3000,
+    "cutover_date": "2026-12-05"
+  },
+  "per_part": {
+    "part_01": {
+      "rows": 15,
+      "Quality": 15,
+      "Fast": 0,
+      "explorer": 0,
+      "credits_try1": 1500
+    },
+    "part_02": {
+      "rows": 10,
+      "Quality": 10,
+      "Fast": 0,
+      "explorer": 1,
+      "credits_try1": 1000
+    },
+    "part_03": {
+      "rows": 12,
+      "Quality": 12,
+      "Fast": 0,
+      "explorer": 1,
+      "credits_try1": 1200
+    },
+    "part_04": {
+      "rows": 12,
+      "Quality": 12,
+      "Fast": 0,
+      "explorer": 0,
+      "credits_try1": 1200
+    },
+    "part_05": {
+      "rows": 18,
+      "Quality": 18,
+      "Fast": 0,
+      "explorer": 0,
+      "credits_try1": 1800
+    }
+  },
+  "order": [
+    {
+      "index": 1,
+      "row_id": "P1:01a",
+      "part": 1,
+      "id": "01a",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": false,
+      "prompt_sha256": "c0bc36e5a8c36faf5c2cee407b08ced55ac0b2614bd70b0901c6dbb9d40de574"
+    },
+    {
+      "index": 2,
+      "row_id": "P1:01b",
+      "part": 1,
+      "id": "01b",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": false,
+      "prompt_sha256": "acecf3ba2cd7d957b013cfc1125f2dcaa1d22391dfa9f885ba76ee117842b618"
+    },
+    {
+      "index": 3,
+      "row_id": "P1:02a",
+      "part": 1,
+      "id": "02a",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": false,
+      "prompt_sha256": "4e9d33e5d88469715f5b29de0289b2bb4b57e9e61ef2a5f02699c8ce9cc57182"
+    },
+    {
+      "index": 4,
+      "row_id": "P1:02b",
+      "part": 1,
+      "id": "02b",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": false,
+      "prompt_sha256": "c3abf4e3c131d3c3138ed1566a8e5271648fd936794a812e9bd3f21710c896ab"
+    },
+    {
+      "index": 5,
+      "row_id": "P1:03a",
+      "part": 1,
+      "id": "03a",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": false,
+      "prompt_sha256": "987a1247f48cd290e1ab6f3dfba68ea1bad2929fab4bb028ae81253a9b342ef4"
+    },
+    {
+      "index": 6,
+      "row_id": "P1:03b",
+      "part": 1,
+      "id": "03b",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": false,
+      "prompt_sha256": "ba147d4a94dc773f11e4970216a10df59bf86dc3e9e27fe5bd1e0c7111a279c3"
+    },
+    {
+      "index": 7,
+      "row_id": "P1:04a",
+      "part": 1,
+      "id": "04a",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": false,
+      "prompt_sha256": "1f15533c109df8fff0e219fdb19effc5169e36932735a1fce1773a99e8b8fa88"
+    },
+    {
+      "index": 8,
+      "row_id": "P1:05a",
+      "part": 1,
+      "id": "05a",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": false,
+      "prompt_sha256": "217e19bc4d4d7f0dca9e28cc0059fa488dbad3e69740e9e55aef2d9bb368d257"
+    },
+    {
+      "index": 9,
+      "row_id": "P1:05b",
+      "part": 1,
+      "id": "05b",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": false,
+      "prompt_sha256": "e9422e2dfbe97768d589d41eea7e7691e69ff40438929c5933aed2237710c7da"
+    },
+    {
+      "index": 10,
+      "row_id": "P1:06a",
+      "part": 1,
+      "id": "06a",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": false,
+      "prompt_sha256": "15432c3f37d4e8caf634aba47e6500a986d3eaee3372c0ed8049326685eca0a6"
+    },
+    {
+      "index": 11,
+      "row_id": "P1:07b",
+      "part": 1,
+      "id": "07b",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": false,
+      "prompt_sha256": "18c8e7a82d582b28efa56ade8a3f6c123ff91af31591d1cdef684717bb8e3ba8"
+    },
+    {
+      "index": 12,
+      "row_id": "P1:08a",
+      "part": 1,
+      "id": "08a",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": false,
+      "prompt_sha256": "5996d15239791b9bb88b7dd347775af49ffbb0783f01c29656d8868d62d1b25a"
+    },
+    {
+      "index": 13,
+      "row_id": "P1:08b",
+      "part": 1,
+      "id": "08b",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": false,
+      "prompt_sha256": "824fd35d565eb03a18e72e6150ea24a591e8f026d60cca584ad320bdab7eb153"
+    },
+    {
+      "index": 14,
+      "row_id": "P1:09a",
+      "part": 1,
+      "id": "09a",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": false,
+      "prompt_sha256": "d548e7af0ecea20160ff47e3eb696e98087dfff01a26b33598d1bb1c59137e86"
+    },
+    {
+      "index": 15,
+      "row_id": "P1:09c",
+      "part": 1,
+      "id": "09c",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": false,
+      "prompt_sha256": "2a7ad604ac812bb3e9d4ec4b6fca5c56de34ef649572c3398556c07738bf7cf2"
+    },
+    {
+      "index": 16,
+      "row_id": "P2:02a",
+      "part": 2,
+      "id": "02a",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": false,
+      "prompt_sha256": "fade4c1f4a8dfa412599f603ee6c2c8bc4c70dcb327038b899d26f58de2117c2"
+    },
+    {
+      "index": 17,
+      "row_id": "P2:02b",
+      "part": 2,
+      "id": "02b",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": false,
+      "prompt_sha256": "3de58588edbe7477c9d632fb3023972af904867a07c15180d440601f22a9b6e1"
+    },
+    {
+      "index": 18,
+      "row_id": "P2:03a",
+      "part": 2,
+      "id": "03a",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": true,
+      "prompt_sha256": "f551fd622e3c30e2dccb371df6beb08d5b6d26dcdd13b8ec4b367eaad76e0abb"
+    },
+    {
+      "index": 19,
+      "row_id": "P2:04b",
+      "part": 2,
+      "id": "04b",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": false,
+      "prompt_sha256": "7afce482ff4929c52f461eed6cc445b0128fc038b32f2465833078378cee8fd1"
+    },
+    {
+      "index": 20,
+      "row_id": "P2:05b",
+      "part": 2,
+      "id": "05b",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": false,
+      "prompt_sha256": "4135d1afaf79872325091f0c77106108135311c73eb84494e5113c5d98a69031"
+    },
+    {
+      "index": 21,
+      "row_id": "P2:06a",
+      "part": 2,
+      "id": "06a",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": false,
+      "prompt_sha256": "8e9a815d148534bba30b152a415a4072cad496478969f7b5ecb118616620268f"
+    },
+    {
+      "index": 22,
+      "row_id": "P2:07a",
+      "part": 2,
+      "id": "07a",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": false,
+      "prompt_sha256": "a9aad330e47845e68d80752cb9bcb8791a0c9363625ef3782a73b4fe0b9b86ed"
+    },
+    {
+      "index": 23,
+      "row_id": "P2:08a",
+      "part": 2,
+      "id": "08a",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": false,
+      "prompt_sha256": "3328bb9068b8b7ba424b454665ebcf394262f479bc85c27714bdcfe6ce80ba11"
+    },
+    {
+      "index": 24,
+      "row_id": "P2:09a",
+      "part": 2,
+      "id": "09a",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": false,
+      "prompt_sha256": "91d32b94f97a8e6e112168bf43adf6035ce2addfce762108cdd50ffcc4619db5"
+    },
+    {
+      "index": 25,
+      "row_id": "P2:10a",
+      "part": 2,
+      "id": "10a",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": false,
+      "prompt_sha256": "0993f08e27ee9153edacd8d87f8f94ecec372228c40b6734cf4f3efb18218ce0"
+    },
+    {
+      "index": 26,
+      "row_id": "P3:02a",
+      "part": 3,
+      "id": "02a",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": false,
+      "prompt_sha256": "4d96ff0e21be07bce6ae08ef1a6604084b16596878be88c89a511a7dce95d3ec"
+    },
+    {
+      "index": 27,
+      "row_id": "P3:03a",
+      "part": 3,
+      "id": "03a",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": false,
+      "prompt_sha256": "aa62d5d676a0eb100fd744b3641b83a8965044ad3ff02ed2174fabb6a22d2993"
+    },
+    {
+      "index": 28,
+      "row_id": "P3:03b",
+      "part": 3,
+      "id": "03b",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": false,
+      "prompt_sha256": "17edacf264bb7a0c07cde176e3867b92975ad6afaed19124b76f2b810cda85c5"
+    },
+    {
+      "index": 29,
+      "row_id": "P3:04a",
+      "part": 3,
+      "id": "04a",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": false,
+      "prompt_sha256": "61f29f3dd71a8dd3547a3b2341800997b8666426523ce8c6f3ba76167a4a9a4a"
+    },
+    {
+      "index": 30,
+      "row_id": "P3:04b",
+      "part": 3,
+      "id": "04b",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": false,
+      "prompt_sha256": "19dbcf60d60b7c08ba2e145fca5eceadc2d2b54cc77b88493479bc3b8499afaa"
+    },
+    {
+      "index": 31,
+      "row_id": "P3:05a",
+      "part": 3,
+      "id": "05a",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": false,
+      "prompt_sha256": "900929e3dc4b9cfa591a9628c55ba2f0b56f8b673efed1bac7ad9c7efd8ff4e2"
+    },
+    {
+      "index": 32,
+      "row_id": "P3:06a",
+      "part": 3,
+      "id": "06a",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": false,
+      "prompt_sha256": "5500889e25add8f332a685326698a5a9a391f518fe828094d02daf184f6f68cf"
+    },
+    {
+      "index": 33,
+      "row_id": "P3:06b",
+      "part": 3,
+      "id": "06b",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": false,
+      "prompt_sha256": "66ff9ebf1290c4022c124b12a7fb2116172b383fed05e45116c7965a15452a98"
+    },
+    {
+      "index": 34,
+      "row_id": "P3:07a",
+      "part": 3,
+      "id": "07a",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": true,
+      "prompt_sha256": "865e34fd11b43a325acf49927627ae341864dacd229e900f25de7b484175ad98"
+    },
+    {
+      "index": 35,
+      "row_id": "P3:08a",
+      "part": 3,
+      "id": "08a",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": false,
+      "prompt_sha256": "fa640ce1bc54b89718ee536b3927f893a1ab22563fb28f5168d30e4f99d06434"
+    },
+    {
+      "index": 36,
+      "row_id": "P3:08b",
+      "part": 3,
+      "id": "08b",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": false,
+      "prompt_sha256": "632e16964e1d0892cf9e9c3d04c0400b9ce2a68bc0c7327804931f191e86a89c"
+    },
+    {
+      "index": 37,
+      "row_id": "P3:10a",
+      "part": 3,
+      "id": "10a",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": false,
+      "prompt_sha256": "b37cecb88df3b242554cf21294b54e0d251c5d92912c0a6b196f95a56d6847e1"
+    },
+    {
+      "index": 38,
+      "row_id": "P4:02a",
+      "part": 4,
+      "id": "02a",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": false,
+      "prompt_sha256": "23494de811144a6f391fc2741e33010c14b3da6b0a313d1742b9f360a8428ff5"
+    },
+    {
+      "index": 39,
+      "row_id": "P4:02b",
+      "part": 4,
+      "id": "02b",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": false,
+      "prompt_sha256": "84bce03f8ac8ade48918ed9139540ded0fc7b6650b3b20c52115d79e0ec08479"
+    },
+    {
+      "index": 40,
+      "row_id": "P4:03b",
+      "part": 4,
+      "id": "03b",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": false,
+      "prompt_sha256": "2e9dcadfc0cf3ff0b1e1b9ed1da53cb00f7187683be8c8c9c5cf0a0228338726"
+    },
+    {
+      "index": 41,
+      "row_id": "P4:04a",
+      "part": 4,
+      "id": "04a",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": false,
+      "prompt_sha256": "f1d0adea35f3fb75d6dac084dd066665eef3633a4a7f3f46db9e60b95a4f6dd3"
+    },
+    {
+      "index": 42,
+      "row_id": "P4:04b",
+      "part": 4,
+      "id": "04b",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": false,
+      "prompt_sha256": "aa0b016a2d50232290d7ad4577031628886ca0a31f9bec05bdf0fb63835a4cfe"
+    },
+    {
+      "index": 43,
+      "row_id": "P4:05a",
+      "part": 4,
+      "id": "05a",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": false,
+      "prompt_sha256": "916381ff0b2215e9414e87ee775d30063d347c8f3fba5f292f97462a2b5b81c0"
+    },
+    {
+      "index": 44,
+      "row_id": "P4:05b",
+      "part": 4,
+      "id": "05b",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": false,
+      "prompt_sha256": "b8825831e2448ffb1608af67ed8a79108c90b63984eb03bc3b8c05156cca237c"
+    },
+    {
+      "index": 45,
+      "row_id": "P4:07a",
+      "part": 4,
+      "id": "07a",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": false,
+      "prompt_sha256": "9814c5a178f15bee63095e3c5220559641dfaad22bad7015c06dc1a8a5330275"
+    },
+    {
+      "index": 46,
+      "row_id": "P4:07b",
+      "part": 4,
+      "id": "07b",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": false,
+      "prompt_sha256": "b53b7052234a6ccb6b81d71577cc9da2d7fc44b341ffdd67a035f22378910233"
+    },
+    {
+      "index": 47,
+      "row_id": "P4:08a",
+      "part": 4,
+      "id": "08a",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": false,
+      "prompt_sha256": "01662649c5f0be0d2e75511f973eafafea063c6fea554610e04d8e444514de3b"
+    },
+    {
+      "index": 48,
+      "row_id": "P4:09a",
+      "part": 4,
+      "id": "09a",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": false,
+      "prompt_sha256": "c8ed86444c4bb297cb2850d139c3dbc51a99767090b73fd9b7982494fcfed255"
+    },
+    {
+      "index": 49,
+      "row_id": "P4:09b",
+      "part": 4,
+      "id": "09b",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": false,
+      "prompt_sha256": "5acb3ebbf6db1fe60fe9813afc4b5f0e68b0f5e7db7b15b4f6cb5356768fa2ce"
+    },
+    {
+      "index": 50,
+      "row_id": "P5:02a",
+      "part": 5,
+      "id": "02a",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": false,
+      "prompt_sha256": "94aaea4d69de9b90b4133f8bcbd135b08b4fc1cbe0df7a259c2fa38f79c0024f"
+    },
+    {
+      "index": 51,
+      "row_id": "P5:02b",
+      "part": 5,
+      "id": "02b",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": false,
+      "prompt_sha256": "e2b5b65a207bce1f1afbaaea7aff4d62a0b6afc65edf431dbf56721298d6cecd"
+    },
+    {
+      "index": 52,
+      "row_id": "P5:03b",
+      "part": 5,
+      "id": "03b",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": false,
+      "prompt_sha256": "cad111d7d7036209e073161a9edae01fc1cfc2a91a2d85f2ec3f5b83f91f9ad2"
+    },
+    {
+      "index": 53,
+      "row_id": "P5:04b",
+      "part": 5,
+      "id": "04b",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": false,
+      "prompt_sha256": "58ce73f3a336bca5153686f8dc07a412541d80d63ed7ca7c6ef61231c3931938"
+    },
+    {
+      "index": 54,
+      "row_id": "P5:05a",
+      "part": 5,
+      "id": "05a",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": false,
+      "prompt_sha256": "c347cb88a865a2fb86b833cb737626eb073aecc8f2e99f312f80b38da10bc850"
+    },
+    {
+      "index": 55,
+      "row_id": "P5:05b",
+      "part": 5,
+      "id": "05b",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": false,
+      "prompt_sha256": "c97ae78136c734246543b48b392cfdb2fd0724e0bb526a8e4b951373917cd184"
+    },
+    {
+      "index": 56,
+      "row_id": "P5:06b",
+      "part": 5,
+      "id": "06b",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": false,
+      "prompt_sha256": "cee21ee51e68db95eb313d0775717ca7d056a25be79e509012617b2a539f5ef3"
+    },
+    {
+      "index": 57,
+      "row_id": "P5:07b",
+      "part": 5,
+      "id": "07b",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": false,
+      "prompt_sha256": "920e13348731573d1ae2c1e8871cef4c3243b6a52243399971fc1610a3872d2d"
+    },
+    {
+      "index": 58,
+      "row_id": "P5:08a",
+      "part": 5,
+      "id": "08a",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": false,
+      "prompt_sha256": "3b7234719c388eff5b1e9233626a1229eb6b4d677076170c22236c748ba167d3"
+    },
+    {
+      "index": 59,
+      "row_id": "P5:09a",
+      "part": 5,
+      "id": "09a",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": false,
+      "prompt_sha256": "736457c83ced4e2de8f2ed3493be2345b00ecab9ade97afcdfb4e6390f7fe558"
+    },
+    {
+      "index": 60,
+      "row_id": "P5:10a",
+      "part": 5,
+      "id": "10a",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": false,
+      "prompt_sha256": "cf76f7a2b9719e3b0c63e95507fcf52bce626cdd91b76ced6b463bf5bb25c18c"
+    },
+    {
+      "index": 61,
+      "row_id": "P5:11a",
+      "part": 5,
+      "id": "11a",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": false,
+      "prompt_sha256": "b0ccacf06341b278d7aa9775f0d57046d2985c6357d8da7e7db365b57c6c5208"
+    },
+    {
+      "index": 62,
+      "row_id": "P5:11b",
+      "part": 5,
+      "id": "11b",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": false,
+      "prompt_sha256": "f561f9283bbac1716a914919bcfe27059dd5ac265a160f5137b8efe8159f3c66"
+    },
+    {
+      "index": 63,
+      "row_id": "P5:13a",
+      "part": 5,
+      "id": "13a",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": false,
+      "prompt_sha256": "c7e849fa7c27ac80d3075fe21d38a7e285019dfe427f2eabd1753b78fa3ec50d"
+    },
+    {
+      "index": 64,
+      "row_id": "P5:13b",
+      "part": 5,
+      "id": "13b",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": false,
+      "prompt_sha256": "81b26d36014a72f0800cfca713370f2f31abb3241e9b3fc2e3387ba445bddb5a"
+    },
+    {
+      "index": 65,
+      "row_id": "P5:14b",
+      "part": 5,
+      "id": "14b",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": false,
+      "prompt_sha256": "52964b58253cb1f833ed3b6b441a514a1cc1717298b5bc74625327b64dc9e551"
+    },
+    {
+      "index": 66,
+      "row_id": "P5:15a",
+      "part": 5,
+      "id": "15a",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": false,
+      "prompt_sha256": "fbbcde7a97a627d68a21b856148ce3ec4ffce7ec2280133e59bb008fca6fa41b"
+    },
+    {
+      "index": 67,
+      "row_id": "P5:16b_closing_watch_and_globe",
+      "part": 5,
+      "id": "16b_closing_watch_and_globe",
+      "quality": "Quality",
+      "flow_model": "Veo 3.1 - Quality",
+      "flow_clip_s": 8,
+      "try1_credits": 100,
+      "explorer": false,
+      "prompt_sha256": "4fbbe44993988a3ca52ca59fceb9fb1dc03ad8659f5ebe3548f552db0544a560"
+    }
+  ],
+  "batches": [
+    {
+      "batch_index": 1,
+      "rows": [
+        "P1:01a",
+        "P1:01b",
+        "P1:02a",
+        "P1:02b",
+        "P1:03a"
+      ],
+      "row_count": 5,
+      "credits": 500
+    },
+    {
+      "batch_index": 2,
+      "rows": [
+        "P1:03b",
+        "P1:04a",
+        "P1:05a",
+        "P1:05b",
+        "P1:06a"
+      ],
+      "row_count": 5,
+      "credits": 500
+    },
+    {
+      "batch_index": 3,
+      "rows": [
+        "P1:07b",
+        "P1:08a",
+        "P1:08b",
+        "P1:09a",
+        "P1:09c"
+      ],
+      "row_count": 5,
+      "credits": 500
+    },
+    {
+      "batch_index": 4,
+      "rows": [
+        "P2:02a",
+        "P2:02b",
+        "P2:03a",
+        "P2:04b",
+        "P2:05b"
+      ],
+      "row_count": 5,
+      "credits": 500
+    },
+    {
+      "batch_index": 5,
+      "rows": [
+        "P2:06a",
+        "P2:07a",
+        "P2:08a",
+        "P2:09a",
+        "P2:10a"
+      ],
+      "row_count": 5,
+      "credits": 500
+    },
+    {
+      "batch_index": 6,
+      "rows": [
+        "P3:02a",
+        "P3:03a",
+        "P3:03b",
+        "P3:04a",
+        "P3:04b"
+      ],
+      "row_count": 5,
+      "credits": 500
+    },
+    {
+      "batch_index": 7,
+      "rows": [
+        "P3:05a",
+        "P3:06a",
+        "P3:06b",
+        "P3:07a",
+        "P3:08a"
+      ],
+      "row_count": 5,
+      "credits": 500
+    },
+    {
+      "batch_index": 8,
+      "rows": [
+        "P3:08b",
+        "P3:10a",
+        "P4:02a",
+        "P4:02b",
+        "P4:03b"
+      ],
+      "row_count": 5,
+      "credits": 500
+    },
+    {
+      "batch_index": 9,
+      "rows": [
+        "P4:04a",
+        "P4:04b",
+        "P4:05a",
+        "P4:05b",
+        "P4:07a"
+      ],
+      "row_count": 5,
+      "credits": 500
+    },
+    {
+      "batch_index": 10,
+      "rows": [
+        "P4:07b",
+        "P4:08a",
+        "P4:09a",
+        "P4:09b",
+        "P5:02a"
+      ],
+      "row_count": 5,
+      "credits": 500
+    },
+    {
+      "batch_index": 11,
+      "rows": [
+        "P5:02b",
+        "P5:03b",
+        "P5:04b",
+        "P5:05a",
+        "P5:05b"
+      ],
+      "row_count": 5,
+      "credits": 500
+    },
+    {
+      "batch_index": 12,
+      "rows": [
+        "P5:06b",
+        "P5:07b",
+        "P5:08a",
+        "P5:09a",
+        "P5:10a"
+      ],
+      "row_count": 5,
+      "credits": 500
+    },
+    {
+      "batch_index": 13,
+      "rows": [
+        "P5:11a",
+        "P5:11b",
+        "P5:13a",
+        "P5:13b",
+        "P5:14b"
+      ],
+      "row_count": 5,
+      "credits": 500
+    },
+    {
+      "batch_index": 14,
+      "rows": [
+        "P5:15a",
+        "P5:16b_closing_watch_and_globe"
+      ],
+      "row_count": 2,
+      "credits": 200
+    }
+  ]
+}
