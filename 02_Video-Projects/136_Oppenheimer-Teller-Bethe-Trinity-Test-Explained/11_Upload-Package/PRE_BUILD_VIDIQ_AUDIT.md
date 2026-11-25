@@ -54,9 +54,9 @@
 
 - [x] **Keywords** verified (`trinity test` 21.5k/mo comp 38, `manhattan project` 35.2k/mo US 18% + GB 9%, 4/4 autocomplete `yes`, `nuclear bomb` rejected).
 - [x] **Title** primary and Test & Compare variants scored (`PACKAGE_FIRST_SCORING_v01.md`, `0` exact collisions).
-- [x] **Script reviewer** (`npm run review:script` ≥ 90 PASS) and `npm run gate:episode` PASS verified on `01_Script/trinity_test_explained_script_master_v01.md` (pending Chief lock + independent `facts` review before VO/picture spend).
+- [x] **Script reviewer** (`npm run review:script` ≥ 90 PASS) and `npm run gate:episode` PASS verified on `01_Script/trinity_test_explained_script_master_v02.md` (pending Chief lock before VO/picture spend).
 
-**Signed off by:** Gemini (`J3507` draft package & script — awaits Chief lock & `facts` review before VO/picture spend) · **Date:** `2026-11-24`
+**Signed off by:** `macbook-2` (`J3675` v02 corrections on `J3507` draft package & script — awaits Chief lock before VO/picture spend) · **Date:** `2026-11-25`
 
 - **Rule-E topic review (`J3502`):** **GO (`96.3 / 100` · `9.63 / 10`)** on `2026-11-24` (`10/10` gates PASS)
 - **Package-first + script draft (`J3507`):** Delivered `2026-11-24` (ahead of Sat 28 Nov 18:00 London target)

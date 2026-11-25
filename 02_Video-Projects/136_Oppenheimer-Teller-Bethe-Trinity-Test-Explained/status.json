@@ -3,7 +3,7 @@
   "title": "Trinity Test Explained: Could It Ignite the Sky?",
   "air": "2026-12-17",
   "ready_by": "2026-12-14",
-  "summary": "Film 2 of the History of Science search-led plan (hos-search-2027-01, Ben OK 24 Nov 2026; accelerated into December: target air Thu 17 Dec 18:00 London, watch by Mon 14 Dec; slides a week if not ready). Rule-E GO (J3502, 96.3/100). J3507 (24 Nov 2026, PR #753) delivered PACKAGE_FIRST_SCORING_v01.md, trinity_test_explained_script_master_v01.md (review:script PASS 93.7/100, gate:episode PASS), SOURCES.md, FACT_NOTES_v01.md, SHORTS_SCRIPTS_v01.md, and LAUNCH_PLAN.md. Independent Gemini facts audit J3552 (25 Nov 2026, GEMINI_FACTS_CHECK_v01.md) audited 23 items (13 OK, 2 PARTIAL, 8 FLAG) and reported 8 blocking FLAGs (wrong OSTI URL 4036390 for LA-602, unsourced 1,000x cooling ratio vs LA-602 1.6 minimum safety factor, missing verbatim quotes in Rows 8-9, Bainbridge bunker mislocated to 10 mi instead of S-10000 5.7 mi, S02 'silent shockwave', inverted microsecond/football-field light-travel math, S01/S02 actual word counts 55w/65w exceeding 16-19s house rule, Row 10 sentence splice) plus primary-source upgrades to J3553 before script lock (£0.00 spent; no VO or picture spend).",
+  "summary": "Film 2 of the History of Science search-led plan (hos-search-2027-01, Ben OK 24 Nov 2026; accelerated into December: target air Thu 17 Dec 18:00 London, watch by Mon 14 Dec; slides a week if not ready). Rule-E GO (J3502, 96.3/100). J3675 (25 Nov 2026) resolved all 8 J3552 blocking FLAGs, both R20 polishes, and all 6 J3553 editorial items (ADD-1 to ADD-6) into trinity_test_explained_script_master_v02.md (only master in 01_Script; review:script PASS 93.4/100, default gate:episode PASS 9/9, check_all.sh PASS), SOURCES.md, FACT_NOTES_v02.md (20/20 primary-upgraded rows), SHORTS_SCRIPTS_v02.md (S01 42w / S02 42w verified 16.4-16.8s speech inside 16-19s house rule, S02 overlay 2.5m SHIFT ≈ 10KT, §2.6 edit ink), and LAUNCH_PLAN.md. Ready for Chief review & script lock (£0.00 spent; no VO or picture spend).",
   "stages": {
     "topic": {
       "state": "done",
@@ -14,29 +14,29 @@
     "script": {
       "state": "doing",
       "due": "2026-12-04",
-      "owner": "Claude",
+      "owner": "Chief",
       "since": "2026-11-25",
       "underway": false,
-      "waiting": "J3553 script review/FIX ruling and v02 corrections resolving J3552 FLAG-2, FLAG-4, FLAG-6 (plus R20 polishes) before Chief lock",
-      "note": "J3507 v01 script draft (review:script PASS 93.7/100, gate:episode PASS); J3552 independent facts audit flagged 3 long-script fixes (unsourced 1,000x cooling ratio, Bainbridge S-10000 5.7 mi vs 10 mi, inverted microsecond/football-field math) for v02"
+      "waiting": "Chief script lock on v02 PR (macbook/J3675, superseding PRs #746/#753/#764)",
+      "note": "J3675 v02 script master (review:script PASS 93.4/100, 1,260w, default gate:episode PASS 9/9); resolved FLAG-2, FLAG-4 (S-10000 5.7 mi), FLAG-6 (1 us = ~300 m), R20 polishes (1942-1946 timeline, CP-1 'Nearly three years'), and ADD-1..ADD-6 (WHO first mention, WHEN 1959/1943, interleaved 1-card-at-a-time VISUAL MUST, Part 01 milestones <=0:15/<=0:24/0:25-0:35/<0:45, single v02 master)"
     },
     "facts": {
       "state": "doing",
       "due": "2026-12-04",
-      "owner": "Claude",
+      "owner": "Chief",
       "since": "2026-11-25",
       "underway": false,
-      "waiting": "J3553 review/FIX ruling and v02 source/script updates resolving 8 J3552 FLAG items (wrong OSTI 4036390, missing verbatim quotes in Rows 8-9, Row 10 splice, plus script/Shorts FLAGs) before Chief lock",
-      "note": "J3552 independent Gemini facts audit committed in 01_Script/GEMINI_FACTS_CHECK_v01.md (23 items: 13 OK, 2 PARTIAL, 8 FLAG; full 22-page LA-602 PDF & primary upgrades verified; no spoken rewrites made)"
+      "waiting": "Chief lock confirming all 8 J3552 FLAGs and R20 polishes resolved in SOURCES.md and FACT_NOTES_v02.md",
+      "note": "J3675 updated SOURCES.md & FACT_NOTES_v02.md (20/20 verified): removed bogus OSTI 4036390 & WAF-blocked sgp.fas.org; cited verified 22-page Wayback LA-602 scan (14 Aug 1946), DOE OpenNet trinity_safety/trinity/hans-bethe/edward-teller/enrico-fermi, NASA Earth Fact Sheet, LANL/OSTI 1836991, NobelPrize.org, CrossRef Bethe 1976 DOI + opened verbatim quotes (Stanford PH241, Wikipedia Manhattan Project, AI Impacts)"
     },
     "package": {
       "state": "doing",
       "due": "2026-12-04",
-      "owner": "Claude",
-      "since": "2026-11-24",
+      "owner": "Chief",
+      "since": "2026-11-25",
       "underway": false,
       "waiting": "Chief package lock, VO re-timing, and PACKAGE_MANIFEST.json before upload",
-      "note": "PACKAGE_FIRST_SCORING_v01.md, updated PRE_BUILD_VIDIQ_AUDIT.md, and LAUNCH_PLAN.md delivered in J3507 (Title A 48c 96/100, Thumb A AIR ON FIRE? 96/100, Thumb B MEASURED BY PAPER 93/100, S01 44c 0 collisions)"
+      "note": "PACKAGE_FIRST_SCORING_v01.md, PRE_BUILD_VIDIQ_AUDIT.md (v02), and LAUNCH_PLAN.md (ADD-6 archive-credit count match + cleaned Sources line) ready for Chief lock (Title A 48c 96/100, Thumb A AIR ON FIRE? 96/100, Thumb B MEASURED BY PAPER 93/100, S01 44c & S02 58c 0 collisions)"
     },
     "vo": {
       "state": "todo",
@@ -47,11 +47,11 @@
     "shorts_scripts": {
       "state": "doing",
       "due": "2026-12-05",
-      "owner": "Claude",
+      "owner": "Chief",
       "since": "2026-11-25",
       "underway": false,
-      "waiting": "J3553 review and v02 trim of SHORTS_SCRIPTS_v01.md resolving J3552 FLAG-5 ('silent shockwave') and FLAG-7 (actual counts S01 55w / S02 65w exceed 16-19s house rule)",
-      "note": "J3507 Shorts v01 titles S01 44c & S02 58c verified 0 collisions; J3552 flagged actual spoken counts 55w/65w (>19s cap) and S02 'silent shockwave' for v02 before lock"
+      "waiting": "Chief lock on SHORTS_SCRIPTS_v02.md (S01 42w, S02 42w)",
+      "note": "J3675 SHORTS_SCRIPTS_v02.md resolved FLAG-5 (S02 'in silence for the blast wave'), FLAG-7 (programmatic S01 42w & S02 42w = 16.4-16.8s speech inside 16-19s house rule), and ADD-5 (S02 overlay '2.5m SHIFT ≈ 10KT' <=4 tokens + §2.6 edit ink); titles S01 44c & S02 58c verified 0 collisions"
     },
     "shorts_vo": {
       "state": "todo",
@@ -91,5 +91,5 @@
     }
   },
   "claims": [],
-  "next": "J3553 review/FIX ruling on HOS:136 PR #753 + J3552 GEMINI_FACTS_CHECK_v01.md (8 blocking FLAGs for v02 before Chief script lock due Fri 4 Dec; Ben's watch Mon 14 Dec; target air Thu 17 Dec)"
+  "next": "Chief review & script lock on HOS:136 v02 PR (macbook/J3675, superseding PRs #746/#753/#764; script lock due Fri 4 Dec; Ben's watch Mon 14 Dec; target air Thu 17 Dec)"
 }

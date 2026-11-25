@@ -42,9 +42,9 @@
    - `3:15 The Plutonium Trap`
    - `5:00 Dawn in the Desert`
    - `6:50 What the Equations Proved`
-3. **Sources line:** From `01_Script/SOURCES.md` (5 primary/institutional citations: `LA-602` Aug 1946, Fermi 16 July 1945 memo, Bainbridge 1976 & Selby et al. 2021, Segrè 1944 Project Y, Bethe 1976).
-4. **Archive image credits:** Any credited archive portraits used in the final edit (none required if 100% 3D cartoon plates).
-5. **Honest production line:** `Pictures: AI-generated 3D scenes, with archive images credited above. Facts: every claim is checked against the sources listed.`
+3. **Sources line:** From `01_Script/SOURCES.md` (`LA-602` 14 Aug 1946 declassified 1973, Fermi 16 July 1945 memo, DOE OpenNet Trinity History, Katz LANL/OSTI 1836991 & Selby et al. 2021, Bethe June 1976, NASA Goddard Earth Fact Sheet — no unbacked `OSTI/DOE` on `LA-602`).
+4. **Archive image credits:** Exact credit line matching the final archive-image count at package lock (omitted entirely if the final edit uses 0 archive images and 100% 3D cartoon plates).
+5. **Honest production line:** Matched to the final archive-image count at package lock — `Pictures: AI-generated 3D scenes, with archive images credited above. Facts: every claim is checked against the sources listed.` (or, if 0 archive images are used: `Pictures: AI-generated 3D scenes. Facts: every claim is checked against the sources listed.`).
 6. **Cluster 2 end screen & handoff:** Links to `HOS:130` (Chicago Pile-1, 1942) once published, or HOS Cluster 1 lead `HOS:128` (*Why Do We Use AC Instead of DC?*).
 
 ---

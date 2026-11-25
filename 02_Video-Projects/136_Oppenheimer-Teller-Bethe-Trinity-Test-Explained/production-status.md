@@ -6,12 +6,12 @@
 | Channel | `@HistoryOfScienceYT` only |
 | Plan / Cluster | `hos-search-2027-01` Film 2 · Cluster 2 (Nuclear & Modern Physics) |
 | Topic | **Rule-E GO (`96.3 / 100` · `9.63 / 10`, `J3502`, `2026-11-24`)** — `10/10` gates PASS |
-| Package-first | `11_Upload-Package/PACKAGE_FIRST_SCORING_v01.md` & `LAUNCH_PLAN.md` (`J3507`, `2026-11-24`): Primary Arm A `Trinity Test Explained: Could It Ignite the Sky?` (`48c`, `96/100`), Thumb A `AIR ON FIRE?` (`96/100`), Thumb B `MEASURED BY PAPER` (`93/100`), S01 `44c` & S02 `58c` (`0` collisions) |
-| Pre-build vidIQ audit | `11_Upload-Package/PRE_BUILD_VIDIQ_AUDIT.md` (updated & signed off for v01 draft in `J3507`, `2026-11-24`) |
-| Script review | **PASS — `93.7 / 100`** (`01_Script/trinity_test_explained_script_master_v01.md`, `1,266` words, `8.4` min, `4` chapter cards, `8/8` structure gates; awaits independent `facts` lane + Chief lock) |
-| Episode gate | **PASS** (all checks `OK` — VO/Veo still held pending Chief lock & open WIP slot under Rule G) |
-| Sources & Facts | `01_Script/SOURCES.md`, `01_Script/FACT_NOTES_v01.md` & **`01_Script/GEMINI_FACTS_CHECK_v01.md`** (`J3552`, `2026-11-25`: **13 OK · 2 PARTIAL · 8 FLAG** across 23 items; 8 blocking FLAGs + primary upgrades incl. 22-page declassified `LA-602` PDF handed off to `J3553` for v02 revision before lock; `£0.00` spent) |
-| Shorts scripts | `10_Shorts/SHORTS_SCRIPTS_v01.md` (`J3552` FLAG-5 & FLAG-7: actual counts `S01` `55w` / `S02` `65w` exceed 16–19 s house rule, and `S02` `"silent shockwave"` needs fix before lock; titles `S01` `44c` & `S02` `58c` confirmed `0` collisions) |
+| Package-first | `11_Upload-Package/PACKAGE_FIRST_SCORING_v01.md` & `LAUNCH_PLAN.md` (`J3507` + `J3675` `ADD-6`, `2026-11-25`): Primary Arm A `Trinity Test Explained: Could It Ignite the Sky?` (`48c`, `96/100`), Thumb A `AIR ON FIRE?` (`96/100`), Thumb B `MEASURED BY PAPER` (`93/100`), S01 `44c` & S02 `58c` (`0` collisions) |
+| Pre-build vidIQ audit | `11_Upload-Package/PRE_BUILD_VIDIQ_AUDIT.md` (updated for `v02` in `J3675`, `2026-11-25`) |
+| Script review | **PASS — `93.4 / 100`** (`01_Script/trinity_test_explained_script_master_v02.md` — sole master in `01_Script/`, `1,260` words, `8.4` min, `4` chapter cards, `8/8` structure gates; awaits Chief lock) |
+| Episode gate | **PASS** (default `npm run gate:episode` without `--script`, `9/9` checks `OK` — VO/Veo still held pending Chief lock & open WIP slot under Rule G) |
+| Sources & Facts | `01_Script/SOURCES.md` & **`01_Script/FACT_NOTES_v02.md`** (`J3675`, `2026-11-25`: **20/20** primary-upgraded rows verified; all 8 `J3552` blocking `FLAG`s + `R20` polishes resolved; `GEMINI_FACTS_CHECK_v01.md` retained for audit trail; `£0.00` spent) |
+| Shorts scripts | **`10_Shorts/SHORTS_SCRIPTS_v02.md`** (`J3675`, `2026-11-25`: programmatic counts **`S01 = 42w`** (`16.4–16.8 s` speech) & **`S02 = 42w`** (`16.4–16.8 s` speech), inside `16.0–19.0 s` house rule; `S02` `"in silence for the blast wave"` + `2.5m SHIFT ≈ 10KT` overlay + §2.6 edit ink; titles `S01` `44c` & `S02` `58c` `0` collisions) |
 | VO | pending (Ben Orbit Narrator — starts only after script/facts lock & open WIP slot) |
 | Picture | pending (Flow Veo 3.1, plate library — starts only after script & VO PASS) |
 | Runtime target | 7–9 min, 5 parts (`8.4` min est. at 150 wpm) |
@@ -20,30 +20,43 @@
 
 ---
 
-## Independent Gemini Facts Audit (`J3552`, `2026-11-25`)
+## `v02` Corrections & Gate Evidence (`J3675`, `2026-11-25`, `£0.00` Spend)
 
-- **Audit file:** `01_Script/GEMINI_FACTS_CHECK_v01.md` (audited PR `#753` commit `ebb55eea`; script & Shorts files left byte-for-byte unchanged; `£0.00` spent).
-- **Tally (`23` items = `R01–R20` + `S01` + `S02` + `P01`):** **`13 OK · 2 PARTIAL · 8 FLAG`**.
-- **8 Blocking `FLAG`s handed off to `J3553` (do not lock `v01` as-is):**
-  1. **FLAG-1 (`SOURCES.md` & `FACT_NOTES_v01.md` Row 7):** Wrong OSTI URL `https://www.osti.gov/biblio/4036390` (actually an unrelated 1964 R. M. Misra paper); replaced in audit with verified 22-page Wayback scan of declassified `LA-602` (`14 August 1946`, declassified `2-2-73`).
-  2. **FLAG-2 (Long Part 02 lines 40 & 51):** Unsourced `"a thousand times faster"` cooling ratio contradicts `LA-602`'s headline `~1.6` worst-case minimum safety factor (`7.4` with inverse Compton in 57 m sphere).
-  3. **FLAG-3 (`FACT_NOTES_v01.md` Rows 8 & 9):** Missing verbatim quotes; Wikipedia `Arthur_Compton` & `Hans_Bethe` do not mention Pearl Buck or `"three chances in a million"` (upgraded with `LA-602` verbatim PDF quotes + CrossRef DOI `10.1080/00963402.1976.11455623` for Bethe June 1976).
-  4. **FLAG-4 (Long Part 04 line 86 `VISUAL MUST: 5:03`):** Bainbridge's countdown bunker (`S-10000`) was `10,000 yards` (`~5.7 miles`) from Ground Zero, not `"ten miles away"` (Base Camp was ~10 miles).
-  5. **FLAG-5 (Short `S02` lines 56 & 62):** `"silent shockwave"` misattaches silence to the shockwave (the *flash* was silent for 40 s; the blast wave arrived with a roar).
-  6. **FLAG-6 (Long Part 03 lines 65 & 77):** Inverted speed-of-light math — light crosses a football field in `~0.33 µs`, so `1 µs` is `~3×` LONGER (and plural microseconds `~10–100×` longer), not `"shorter than light takes to cross a football field"`.
-  7. **FLAG-7 (Shorts `S01` & `S02`):** Actual spoken word counts are **`55w`** (`S01`, `~21.4–23.5 s`) and **`65w`** (`S02`, `~25.3–27.5 s`) vs claimed `44w`/`46w`, exceeding the `16–19 s` house rule.
-  8. **FLAG-8 (`FACT_NOTES_v01.md` Row 10):** Sentence splice without `[...]` in Wikipedia `Edward_Teller` mutates `"its head"` from Theoretical Division to Los Alamos Laboratory (upgraded to DOE OpenNet `hans-bethe.html` verbatim quote).
-- **Primary upgrades verified:** Scanned 22-page `LA-602` PDF (`14 Aug 1946`), DOE OpenNet (`trinity.htm`, `trinity_safety.htm`, `edward-teller.html`, `hans-bethe.html`, `enrico-fermi.html`), LANL/OSTI `1836991` (Katz 2021) & `962810` (Teller), NASA Earth Fact Sheet (`78.08% N₂`), NobelPrize.org (Compton, Fermi, Segrè, Bethe), and CrossRef DOIs for Selby et al. 2021 (`10.1080/00295450.2021.1932176`) & Bethe 1976 (`10.1080/00963402.1976.11455623`).
+Resolved all 8 `J3552` blocking `FLAG`s, both `R20` polishes, and all 6 `J3553` editorial items (`ADD-1`–`ADD-6`) on a clean branch off PR `#764` (`4afb106f`):
+- **FLAG-1 (`SOURCES.md`, `FACT_NOTES_v02.md` Row 7):** Removed bogus OSTI `4036390` (1964 R. M. Misra paper), WAF-blocked `sgp.fas.org`, and unbacked `OSTI/DOE` on `LA-602` in draft description `Sources:` line; cited verified 22-page Wayback scan of declassified `LA-602` (`14 August 1946`, declassified `2-2-73`) + DOE OpenNet `trinity_safety.htm` + LANL/OSTI `1836991` (Katz 2021).
+- **FLAG-2 (Long Part 02 spoken & `SCALE:`):** Removed unsourced `"a thousand times faster"` cooling ratio; aligned with `LA-602`'s safety factor `>1` (`~1.6` minimum worst-case floor, `7.4` with inverse Compton in a 57 m sphere).
+- **FLAG-3 (`FACT_NOTES_v02.md` Rows 3, 8, 9):** Row 3 upgraded to NASA Goddard Earth Fact Sheet verbatim quote (`"78.08% Nitrogen (N2), 20.95% Oxygen (O2)"`); Row 8 populated with verbatim `LA-602` PDF pp. 3, 10, 15–16 quotes; Row 9 stripped non-matching Wikipedia `Arthur_Compton`/`Hans_Bethe` links and added NobelPrize.org + CrossRef Bethe June 1976 DOI (`10.1080/00963402.1976.11455623`) + directly opened verbatim quotes from Stanford PH241 (`chung1`), Wikipedia `Manhattan_Project`, and AI Impacts.
+- **FLAG-4 (Long Part 04 `VISUAL MUST` `5:10`/`5:26`):** Moved Kenneth Bainbridge's countdown station from `"ten miles away"` to **`S-10000` (South 10,000-yard control bunker, `~5.7 miles / 9.1 km` south of Ground Zero)** per DOE OpenNet `trinity.htm`; kept Base Camp (`~10 miles`) clearly pre-shot before `S-10000` countdown.
+- **FLAG-5 (Short `S02`):** Replaced `"for the silent shockwave to arrive"` with `"in silence for the blast wave"`.
+- **FLAG-6 (Long Part 03 spoken & `SCALE:`):** Fixed inverted light-speed analogy to verified physics (`c = 299,792,458 m/s ≈ 299.8 m/µs`: `"In one microsecond, light itself travels barely three hundred metres, about three football fields"`).
+- **FLAG-7 (Shorts `S01` & `S02` in `10_Shorts/SHORTS_SCRIPTS_v02.md`):** Programmatically trimmed both to **`42` actual whitespace-separated spoken words** (`16.36 s` @ 154 wpm / `16.80 s` @ 150 wpm; `~17.2–17.6 s` with natural pauses, cleanly inside Ben's `16.0–19.0 s` house rule), preserving Frame 0 3D cartoon moving plate, concrete-fact line 1, single Teach overlay (`4.5–8.5 s`), `9–14 s` long title, seamless spoken/visual loop, and `0`-collision titles (`S01` `44c`, `S02` `58c`).
+- **FLAG-8 (`FACT_NOTES_v02.md` Row 10):** Replaced spliced Wikipedia `Edward_Teller` quote with primary DOE OpenNet `hans-bethe.html` verbatim quote.
+- **`R20` Polishes (Long Part 05):** Unified timeline span to **`1942–1946`** (`four years` July 1942 → August 1946 `LA-602`) and tightened Chicago Pile-1 handoff (`2 Dec 1942 → 16 Jul 1945` = `2 yr 7.5 mo`) to `"Nearly three years"`.
+- **ADD-1 (`WHO:` cards):** Resolved Cloyd Marvin cleanly to `"Konopinski, Teller, and a colleague"` in spoken Part 02 (full `E. J. Konopinski, C. Marvin, E. Teller` authorship preserved in `SOURCES.md`/`FACT_NOTES_v02.md`); moved Arthur Compton's `WHO:` card to Part 01 first mention; ensured every named person gets a `WHO:` card at exact first spoken mention (`8/8`).
+- **ADD-2 (`WHEN:` stamps):** Added `WHEN: 1959` (Part 02) and `WHEN: Los Alamos, 1943` (Part 03), aligned 1-to-1 with `FACT_NOTES_v02.md` (`7` total `WHEN:` stamps).
+- **ADD-3 (One card/label at a time & interleaved `[VISUAL MUST]`):** Split all stacked multi-card `[VISUAL MUST]` blocks across Parts 01–05 and interleaved all `36` `[VISUAL MUST]` cues at their spoken beats (`0` stacked `WHO`/`WHEN`/`FACT`/`LABEL` cards).
+- **ADD-4 (Part 01 first-minute milestones — verified programmatically at 150 & 154 wpm):**
+  - Title question (L5, `13w`): `0.0–5.2 s` (`150 wpm`) / `0.0–5.1 s` (`154 wpm`) (`<=0:08`)
+  - Proof & answer (L9, `+21w → 34w`): finishes **`13.6 s`** (`150 wpm`) / **`13.2 s`** (`154 wpm`) (`<=0:15`)
+  - Crisp stakes (L13, `+21w → 55w`): finishes **`22.0 s`** (`150 wpm`) / **`21.4 s`** (`154 wpm`) (`<=0:24`)
+  - Early `DATA+SCALE` (L17, `+18w → 73w`): **`22.0–29.2 s`** (`150 wpm`) / **`21.4–28.4 s`** (`154 wpm`) (`0:25–0:35`)
+  - Berkeley July 1942 first real fact (L21, `+25w → 98w`): **`29.2–39.2 s`** (`150 wpm`) / **`28.4–38.2 s`** (`154 wpm`) (`<0:45`)
+- **ADD-5 (`S02` overlay & §2.6):** Tightened `S02` overlay to `2.5m SHIFT ≈ 10KT` (`4` tokens `≤4` words) and marked `10,000 TONS TNT` cream-pad note as hand-verified edit ink (§2.6).
+- **ADD-6 (Single master filename & `LAUNCH_PLAN.md`):** Removed `trinity_test_explained_script_master_v01.md` so only `trinity_test_explained_script_master_v02.md` sits in `01_Script/`; updated `LAUNCH_PLAN.md` so archive-image credit & production lines match final archive count at package lock.
 
----
-
-## Script & Episode Gate Evidence (`J3507`, `2026-11-24`)
-
-### 1. `npm run review:script` — **PASS (`93.7 / 100`)**
+### Exact `v02` Artifact SHA-256 Hashes
 ```text
-# trinity_test_explained_script_master_v01.md
+85fb1286610264f5692a1e1dfe766fc0dfb90231016fd27f012dc079499047b2  02_Video-Projects/136_Oppenheimer-Teller-Bethe-Trinity-Test-Explained/01_Script/trinity_test_explained_script_master_v02.md
+060acf45825759934812f8a12833f298c2d5de68a236e9a237d215961a69311a  02_Video-Projects/136_Oppenheimer-Teller-Bethe-Trinity-Test-Explained/01_Script/SOURCES.md
+899156a368a5f22e554b3d267f073e3c69ff7eded609e2aa07f5db2e5c8126a6  02_Video-Projects/136_Oppenheimer-Teller-Bethe-Trinity-Test-Explained/01_Script/FACT_NOTES_v02.md
+e1df5d81baffca83c559b78a2a87df97df0fe8be15fb8de96a761445906941fe  02_Video-Projects/136_Oppenheimer-Teller-Bethe-Trinity-Test-Explained/10_Shorts/SHORTS_SCRIPTS_v02.md
+```
 
-**Decision:** PASS · **Score:** 93.7 / 100
+### 1. `npm run review:script` (`v02`) — **PASS (`93.4 / 100`)**
+```text
+# trinity_test_explained_script_master_v02.md
+
+**Decision:** PASS · **Score:** 93.4 / 100
 
 | Dimension | Score |
 |---|---:|
@@ -52,19 +65,19 @@
 | storytelling | 9.5 |
 | scientificAccuracy | 10 |
 | emotion | 9.6 |
-| escalation | 8.4 |
+| escalation | 8.1 |
 | retentionPotential | 9 |
 | searchPotential | 9.1 |
 | visualOpportunities | 9.5 |
 | narrationFlow | 9.6 |
 
-Words: 1266 · Est. min: 8.4 · Chapters: 4
+Words: 1260 · Est. min: 8.4 · Chapters: 4
 
 - [info] overall: Structure gates 8/8 — applied +1.05 completeness boost to supporting dimensions.
-- [info] overall: PASS 93.7/100 — proceed to VO after production checklist.
+- [info] overall: PASS 93.4/100 — proceed to VO after production checklist.
 ```
 
-### 2. `npm run gate:episode` — **PASS**
+### 2. `npm run gate:episode` (default, no `--script`) — **PASS (`9/9` OK)**
 ```text
 # Episode gate — 136_Oppenheimer-Teller-Bethe-Trinity-Test-Explained
 
@@ -72,25 +85,44 @@ Words: 1266 · Est. min: 8.4 · Chapters: 4
 
 | Check | Status | Detail |
 |---|---|---|
-| project_dir | OK | Project: .../136_Oppenheimer-Teller-Bethe-Trinity-Test-Explained |
+| project_dir | OK | Project: /Users/ben/_desk/worker/slot2/history-of-science/02_Video-Projects/136_Oppenheimer-Teller-Bethe-Trinity-Test-Explained |
 | prebuild_vidiq | OK | Pre-build vidIQ audit present and looks signed off. |
-| script_file | OK | Script: 01_Script/trinity_test_explained_script_master_v01.md |
-| script_review | OK | Script reviewer PASS 93.7/90 (need ≥90). |
+| script_file | OK | Script: 01_Script/trinity_test_explained_script_master_v02.md |
+| script_review | OK | Script reviewer PASS 93.4/90 (need ≥90). |
 | explorer_acts | OK | [EXPLORER ACTS] beats 2 (need ≥1). |
-| visual_must | OK | [VISUAL MUST] count 18 (need ≥4). |
+| visual_must | OK | [VISUAL MUST] count 36 (need ≥4). |
 | teach | OK | [TEACH] count 5 (need ≥4). |
 | chapters | OK | [CHAPTER CARD] count 4 (aim 4–6 film acts). |
 | production_checklist | OK | Checklist present: 11_Upload-Package/PRODUCTION_CHECKLIST_V2.md |
 
-Script score: 93.7/100 · PASS
+Script score: 93.4/100 · PASS
 ```
 
-### 3. Teach on Screen & Polish Pass Marker Counts (`trinity_test_explained_script_master_v01.md`)
+### 3. `00_Brand/Channel-Setup/tools/check_all.sh 02_Video-Projects/136_Oppenheimer-Teller-Bethe-Trinity-Test-Explained` — **ALL CHECKS PASS**
+```text
+-- durable desk handoffs: PASS
+-- email ratchet: PASS
+-- no media: PASS
+-- status board in sync: PASS (34 status files and BOARD.json are in order)
+-- ElevenLabs guard tests: PASS
+-- vo_check word tests: PASS
+-- atempo check tests: PASS
+-- voice speed (atempo <= 1.06): PASS
+-- contract tests: PASS
+-- package-lint: PASS
+-- review:script trinity_test_explained_script_master_v02.md: PASS (93.4 / 100, 8/8 structure gates)
+-- gate:episode: PASS (9/9 checks OK)
+
+ALL CHECKS PASS
+```
+
+### 4. Teach on Screen & Polish Pass Marker Counts (`trinity_test_explained_script_master_v02.md`)
 - `CHAPTER CARD:` `4` (Parts 02–05; Part 01 has no chapter card)
-- `VISUAL MUST:` `18` · `TEACH:` `5` · `EXPLORER ACTS:` `2` (both outside first minute: Part 02 & Part 04)
-- `DATA:` `5` · `SCALE:` `5` (`SCALE ≥ DATA`, incl. 0:27 early nitrogen-air DATA+SCALE and Part 05 1942–1946 timeline)
-- `WHO:` `8` (Oppenheimer, Teller, Compton, Bethe, Konopinski, Segrè, Bainbridge, Fermi — all year-accurate 1942–1945 roles)
-- `WHEN:` `5` · `FACT:` `4` · `LABEL:` `17`
+- `VISUAL MUST:` `36` (interleaved, `0` stacked cards) · `TEACH:` `5` · `EXPLORER ACTS:` `2` (both outside first minute: Part 02 & Part 04)
+- `DATA:` `5` · `SCALE:` `5` (`SCALE ≥ DATA`, incl. 0:23–0:29 early nitrogen-air DATA+SCALE and Part 05 unified `1942–1946` timeline)
+- `WHO:` `8` (Oppenheimer, Teller, Compton [Part 01], Bethe, Konopinski, Segrè, Bainbridge, Fermi — all at exact first spoken mention with primary-verified lifespans & year-accurate 1942–1945 roles)
+- `WHEN:` `7` (`Berkeley, July 1942`, `1942–1943`, `1959`, `August 1946`, `Los Alamos, 1943`, `Los Alamos, April 1944`, `New Mexico, 16 July 1945`)
+- `FACT:` `4` · `LABEL:` `16` (all `≤4` words)
 
 ---
 
@@ -120,10 +152,10 @@ Strictly relevant education neighbours verified in saved JSON (`5` strictly rele
 
 | Part | Plate board | Latest cut | Status |
 |---|---|---|---|
-| 01 | `07_Edit-Project/parts/part-01_plates_v01.json` | — | script v01 drafted (`93.7/100` PASS, awaits lock) |
-| 02 | | | script v01 drafted |
-| 03 | | | script v01 drafted |
-| 04 | | | script v01 drafted |
-| 05 | | | script v01 drafted |
+| 01 | `07_Edit-Project/parts/part-01_plates_v01.json` | — | script v02 PASS (`93.4/100`, awaits Chief lock) |
+| 02 | | | script v02 PASS |
+| 03 | | | script v02 PASS |
+| 04 | | | script v02 PASS |
+| 05 | | | script v02 PASS |
 
 Keep this file current on `main`. A STOP (quota, auth, missing VO) is a line here, not an open branch.
