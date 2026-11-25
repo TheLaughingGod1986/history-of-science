@@ -12,10 +12,16 @@ export function beforeRun(): void {
   // No desk lock on HOS: its desk guard is 00_Brand/Channel-Setup/tools/hos_desk.py.
 }
 
-export async function youtubeAccessToken(): Promise<string> {
+export async function youtubeAccessToken(_packageDir?: string): Promise<string> {
+  // One History of Science login. The shared uploader may pass a package dir; this channel ignores it.
   // Retries an "expired" row that still has a refresh token, and explains invalid_grant.
   const { youtubeAccessToken } = await import("../src/lib/publishing/youtube-token");
   return youtubeAccessToken();
+}
+
+/** Education, British English, for every History of Science package. */
+export function uploadFor(_packageDir: string): ChannelUpload {
+  return UPLOAD;
 }
 
 export async function afterRun(): Promise<void> {
