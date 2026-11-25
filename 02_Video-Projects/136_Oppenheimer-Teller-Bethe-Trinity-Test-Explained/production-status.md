@@ -10,7 +10,7 @@
 | Pre-build vidIQ audit | `11_Upload-Package/PRE_BUILD_VIDIQ_AUDIT.md` (updated for `v02` in `J3675`, `2026-11-25`) |
 | Script review | **PASS — `93.4 / 100`** (`01_Script/trinity_test_explained_script_master_v02.md` — sole master in `01_Script/`, `1,260` words, `8.4` min, `4` chapter cards, `8/8` structure gates; awaits Chief lock) |
 | Episode gate | **PASS** (default `npm run gate:episode` without `--script`, `9/9` checks `OK` — VO/Veo still held pending Chief lock & open WIP slot under Rule G) |
-| Sources & Facts | `01_Script/SOURCES.md` & **`01_Script/FACT_NOTES_v02.md`** (`J3675`, `2026-11-25`: **20/20** primary-upgraded rows verified; all 8 `J3552` blocking `FLAG`s + `R20` polishes resolved; `GEMINI_FACTS_CHECK_v01.md` retained for audit trail; `£0.00` spent) |
+| Sources & Facts | `01_Script/SOURCES.md`, **`01_Script/FACT_NOTES_v02.md`** & **`01_Script/GEMINI_FACTS_CHECK_v02.md`** (`J3676` independent Gemini audit, `2026-11-25`: **0 blocking FLAGs**, `22 OK` / `1 non-blocking PARTIAL R04`; all 8 `J3552` `FLAG`s + `R20` polishes + `ADD-1`–`ADD-6` verified resolved; `LA-602` PDF pp. 1,2,3,10,12,15,16 visually verified; zero unverified new spoken claims; awaits `J3677` Chief lock; `£0.00` spent) |
 | Shorts scripts | **`10_Shorts/SHORTS_SCRIPTS_v02.md`** (`J3675`, `2026-11-25`: programmatic counts **`S01 = 42w`** (`16.4–16.8 s` speech) & **`S02 = 42w`** (`16.4–16.8 s` speech), inside `16.0–19.0 s` house rule; `S02` `"in silence for the blast wave"` + `2.5m SHIFT ≈ 10KT` overlay + §2.6 edit ink; titles `S01` `44c` & `S02` `58c` `0` collisions) |
 | VO | pending (Ben Orbit Narrator — starts only after script/facts lock & open WIP slot) |
 | Picture | pending (Flow Veo 3.1, plate library — starts only after script & VO PASS) |

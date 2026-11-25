@@ -3,7 +3,7 @@
   "title": "Trinity Test Explained: Could It Ignite the Sky?",
   "air": "2026-12-17",
   "ready_by": "2026-12-14",
-  "summary": "Film 2 of the History of Science search-led plan (hos-search-2027-01, Ben OK 24 Nov 2026; accelerated into December: target air Thu 17 Dec 18:00 London, watch by Mon 14 Dec; slides a week if not ready). Rule-E GO (J3502, 96.3/100). J3675 (25 Nov 2026) resolved all 8 J3552 blocking FLAGs, both R20 polishes, and all 6 J3553 editorial items (ADD-1 to ADD-6) into trinity_test_explained_script_master_v02.md (only master in 01_Script; review:script PASS 93.4/100, default gate:episode PASS 9/9, check_all.sh PASS), SOURCES.md, FACT_NOTES_v02.md (20/20 primary-upgraded rows), SHORTS_SCRIPTS_v02.md (S01 42w / S02 42w verified 16.4-16.8s speech inside 16-19s house rule, S02 overlay 2.5m SHIFT ≈ 10KT, §2.6 edit ink), and LAUNCH_PLAN.md. Ready for Chief review & script lock (£0.00 spent; no VO or picture spend).",
+  "summary": "Film 2 of the History of Science search-led plan (hos-search-2027-01, Ben OK 24 Nov 2026; accelerated into December: target air Thu 17 Dec 18:00 London, watch by Mon 14 Dec; slides a week if not ready). Rule-E GO (J3502, 96.3/100). J3675 (25 Nov 2026) resolved all 8 J3552 blocking FLAGs, both R20 polishes, and all 6 J3553 editorial items (ADD-1 to ADD-6) into v02. J3676 independent Gemini facts & exact-quote audit (25 Nov 2026, 01_Script/GEMINI_FACTS_CHECK_v02.md) verified 0 blocking FLAGs across all 20 FACT_NOTES_v02 rows, visually verified LA-602 PDF pp. 1,2,3,10,12,15,16, verified S01=42w & S02=42w (16.4-16.8s speech), verified Part 01 milestones (<=0:15/<=0:25/0:25-0:40/<0:45), and confirmed check_all.sh ALL CHECKS PASS (review:script 93.4/100, default gate:episode 9/9). Ready for J3677 Chief review & script lock (£0.00 spent; no VO or picture spend).",
   "stages": {
     "topic": {
       "state": "done",
@@ -26,8 +26,8 @@
       "owner": "Chief",
       "since": "2026-11-25",
       "underway": false,
-      "waiting": "Chief lock confirming all 8 J3552 FLAGs and R20 polishes resolved in SOURCES.md and FACT_NOTES_v02.md",
-      "note": "J3675 updated SOURCES.md & FACT_NOTES_v02.md (20/20 verified): removed bogus OSTI 4036390 & WAF-blocked sgp.fas.org; cited verified 22-page Wayback LA-602 scan (14 Aug 1946), DOE OpenNet trinity_safety/trinity/hans-bethe/edward-teller/enrico-fermi, NASA Earth Fact Sheet, LANL/OSTI 1836991, NobelPrize.org, CrossRef Bethe 1976 DOI + opened verbatim quotes (Stanford PH241, Wikipedia Manhattan Project, AI Impacts)"
+      "waiting": "J3677 Chief script & facts lock after J3676 independent v02 audit (0 blocking FLAGs)",
+      "note": "J3676 independent Gemini v02 facts & exact-quote audit complete (01_Script/GEMINI_FACTS_CHECK_v02.md): 0 blocking FLAGs (22 OK, 1 non-blocking secondary-only PARTIAL R04); all 8 J3552 FLAGs, both R20 polishes & ADD-1..ADD-6 verified resolved; all primary URLs opened live & LA-602 scanned PDF pp. 1,2,3,10,12,15,16 visually verified; zero unverified new spoken claims; all v02 files byte-identical to PR #766 (fff4addb); £0.00 spent"
     },
     "package": {
       "state": "doing",
@@ -91,5 +91,5 @@
     }
   },
   "claims": [],
-  "next": "Chief review & script lock on HOS:136 v02 PR (macbook/J3675, superseding PRs #746/#753/#764; script lock due Fri 4 Dec; Ben's watch Mon 14 Dec; target air Thu 17 Dec)"
+  "next": "J3677 Chief review & script lock on HOS:136 v02 PR (gemini/J3676-hos136-facts-v02 stacked on macbook/J3675 PR #766, superseding PRs #746/#753/#764; script lock due Fri 4 Dec; Ben's watch Mon 14 Dec; target air Thu 17 Dec)"
 }
