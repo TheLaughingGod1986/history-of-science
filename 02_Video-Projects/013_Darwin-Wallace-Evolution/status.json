@@ -55,7 +55,7 @@
       "state": "blocked",
       "due": "2026-12-16",
       "owner": "Chief",
-      "waiting": "Chief review of the 8 take-2 retake plates (J3747: minted, keep not set), J2652 non-producer review (Claude/Codex), and J3178 moving_video_input resolution (escalated to Claude/Ben)",
+      "waiting": "Chief price PASS and mint GO on the take-3 board for rows 49 and 63 (J3757, RETAKE_BOARD_v02: 2 fresh start stills at 0 credits + 2 Veo 3.1 - Quality clips, 200 credits, before 5 Dec), J2652 non-producer review (Claude/Codex), and J3178 moving_video_input resolution (escalated to Claude/Ben)",
       "since": "2026-11-25",
       "underway": false,
       "steps": [
@@ -63,7 +63,7 @@
         66
       ],
       "steps_unit": "pass-1 Flow plates KEEP (8 confirmed RETAKE; 10 capability-held in J3178)",
-      "note": "J3747 (25 Nov): take 2 minted for the 8 confirmed RETAKE rows 3,10,24,28,47,49,54,63 on Veo 3.1 - Quality, 800 of 800 Flow credits, £0; all 8 on studio-live archive_v01_retake1 with sha256 verified, keep false / PENDING_REVIEW, receipt and 0.5 s sheets in jobs/reviews/J3747. Pass-1 stays 48 KEEP / 8 RETAKE / 10 unset (56-62,64-66, J3178 hold untouched). Keep marks on the retakes are the Chief's."
+      "note": "J3757 (25 Nov): take-3 board RETAKE_BOARD_v02 written for the 2 rows the acting Chief ruled RETAKE again after take 2 (49, 63; J3747 review found the other 6 take-2 plates visually clean). Fresh start-still and video prompts, 4 prompts sha256-pinned, 0 names, 0 forbidden terms; £0 / 0 credits, nothing minted, generation_authorized false. J3747 (25 Nov): take 2 minted for the 8 confirmed RETAKE rows 3,10,24,28,47,49,54,63 on Veo 3.1 - Quality, 800 of 800 Flow credits, £0; all 8 on studio-live archive_v01_retake1 with sha256 verified, keep false / PENDING_REVIEW, receipt and 0.5 s sheets in jobs/reviews/J3747. Pass-1 stays 48 KEEP / 8 RETAKE / 10 unset (56-62,64-66, J3178 hold untouched). Keep marks on the retakes are the Chief's."
     },
     "edit": {
       "state": "todo",

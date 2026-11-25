@@ -1,0 +1,225 @@
+{
+ "job": "J3757",
+ "film": "HOS:013",
+ "version": "v02",
+ "follows": "RETAKE_BOARD_v01.json (J3738), J3747",
+ "mint": false,
+ "status": "RETAKE_BOARD_V02_PARKED_FOR_CHIEF",
+ "spend": {
+  "gbp": 0,
+  "flow_credits": 0
+ },
+ "rows_in_board": [
+  49,
+  63
+ ],
+ "rows_not_touched": {
+  "capability_held": [
+   56,
+   57,
+   58,
+   59,
+   60,
+   61,
+   62,
+   64,
+   65,
+   66
+  ],
+  "capability_held_owner": "J3178",
+  "clean_take_2": [
+   3,
+   10,
+   24,
+   28,
+   47,
+   54
+  ],
+  "also": [
+   "REVIEW_STATE.json",
+   "archive_v01_pass1/",
+   "archive_v01_retake1/",
+   "J2529"
+  ]
+ },
+ "balance": {
+  "credits": 22650,
+  "read_at": "after J3747 (25 Nov 2026)",
+  "source": "J3757 brief (acting Chief, J3747 close-out); not re-read in this job"
+ },
+ "headroom_floor": 3000,
+ "prices": {
+  "Nano Banana 2 still": 0,
+  "Veo 3.1 - Quality": 100,
+  "Veo 3.1 - Lite": 5,
+  "Omni 1.2 Flash per second": 3,
+  "veo_3_1_quality_retires": "2026-12-05",
+  "source": "studio/RULES.md, J3691"
+ },
+ "options": [
+  {
+   "option": "A: before 5 Dec",
+   "models": "2 x Nano Banana 2 still + 2 x Veo 3.1 - Quality, 8 s",
+   "still_credits": 0,
+   "credits_try_1": 200,
+   "credits_expected": 518,
+   "balance_after_try_1": 22450,
+   "balance_after_expected": 22132,
+   "clears_3000_floor": true,
+   "note": "Same model as the 48 KEEP plates and the 6 clean take-2 plates. No new-model style UAT. Must be minted before 5 Dec 2026."
+  },
+  {
+   "option": "B1: after 5 Dec, Lite",
+   "models": "2 x Nano Banana 2 still + 2 x Veo 3.1 - Lite",
+   "still_credits": 0,
+   "credits_try_1": 10,
+   "credits_expected": 26,
+   "balance_after_try_1": 22640,
+   "balance_after_expected": 22624,
+   "clears_3000_floor": true,
+   "note": "Needs a first-use style UAT against the KEEP plates in parts 04 and 06. Retry rate for Lite is not measured; 2.59x is the Quality figure."
+  },
+  {
+   "option": "B2: after 5 Dec, Omni",
+   "models": "2 x Nano Banana 2 still + 2 x Omni 1.2 Flash, 8 s",
+   "still_credits": 0,
+   "credits_try_1": 48,
+   "credits_expected": 124,
+   "balance_after_try_1": 22602,
+   "balance_after_expected": 22526,
+   "clears_3000_floor": true,
+   "note": "720p. Needs a first-use style UAT. Retry rate not measured."
+  }
+ ],
+ "recommendation": "A. 200 credits is under 1% of the balance, it keeps one look per part and it needs no new-model UAT. It only exists until 5 Dec 2026. Worker advice; the Chief decides.",
+ "mint_order": [
+  "1. Mint each take-3 still (0 credits) and check it against accept_before_video.",
+  "2. Only from an accepted still, mint the take-3 clip.",
+  "3. Take-3 clips go to the Chief's review; keep is not set by the mint job."
+ ],
+ "prompt_checks": {
+  "real_person_names": 0,
+  "forbidden_terms": 0,
+  "prompts": 4,
+  "pinned_sha256": true
+ },
+ "rows": [
+  {
+   "n": 49,
+   "row_id": "P4:12_lyell_hooker_bundle",
+   "plate_board": "parts/part-04_plates_v02.json",
+   "film_window_s": [
+    360.98,
+    366.34
+   ],
+   "use_s": 5.36,
+   "take": 3,
+   "take_2_clip": "P04_12_lyell_hooker_bundle_t2.mp4",
+   "take_2_clip_sha256": "7045735282bdb79ff497840baf4bfb908880604917c5f35ef9b00b6dcfe3d04f",
+   "take_2_defect": "At 2.0-2.5 s the left gentleman hands the brown tied bundle to the top-hatted gentleman, who already carries a light ribbon-tied parcel under his left arm. At 3.0-5.5 s (inside the used 0.00-5.36 s) the light parcel merges into one shrinking brown bundle; at 6.0-7.0 s the light parcel is back and the brown bundle is gone (acting Chief, J3747).",
+   "root_cause": "The take-1 start still already shows two bulky separate bundles (one under an arm, one thick stack on the step). With one carrier on the steps, the model dissolves one of them.",
+   "fix": "Fresh start still with exactly one tied bundle, already in one gentleman's hands. No hand-off, nothing put down, nothing on the steps. The other gentleman walks beside him with empty hands.",
+   "prompt_locked_v02": "Premium Animistry-class 3D cartoon. In London daylight, two Victorian gentlemen tie two manuscript bundles together with ribbon and carry them up stone steps. Daylight, window light or matte painted ink only. No candle, flame, glow, spark, fireball or lightning. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+   "prompt_locked_v02_sha256": "bdcd5ec4ca175cf3b0fe0da0c8cc9013cb4c58c3afa2025ea49048a917bb7b3b",
+   "start_still_take_1": {
+    "file": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/04_Generated-Clips/part04/refs/v01_flow_stills/P04_12_lyell_hooker_bundle_t1.png",
+    "sha256": "696d7eb39e0f083c174125456ed882bcab881ce7a0082be26f8c88f53a6661b1",
+    "reuse": false,
+    "why": "carries the defect at frame 0"
+   },
+   "start_still_take_3": {
+    "file": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/04_Generated-Clips/part04/refs/v01_flow_stills/P04_12_lyell_hooker_bundle_t3.png",
+    "exists": false,
+    "model": "Flow Nano Banana 2",
+    "credits": 0,
+    "aspect": "16:9",
+    "prompt": "Premium Animistry-class 3D cartoon. In London daylight, two Victorian gentlemen in dark frock coats and top hats stand side by side at the foot of wide pale stone steps, seen from the side. The nearer gentleman holds exactly one thick bundle of cream manuscript pages, tied once with a dark ribbon, in both hands against his chest. The other gentleman's hands are empty at his sides. There is exactly one bundle in the picture. Nothing else is carried, and nothing lies on the steps or the ground. Soft overcast daylight, matte painted stone. Daylight, window light or matte painted ink only. No candle, flame, glow, spark, fireball or lightning. No readable words or numbers anywhere. No Explorer. No Orbit.",
+    "prompt_sha256": "b08b71a86a2e8e123d54ab71f69be577106fd23a7bbc3ca059ec6489c59af4e2",
+    "accept_before_video": "exactly one bundle, two gentlemen, nothing on the steps"
+   },
+   "video_take_3": {
+    "file": "P04_12_lyell_hooker_bundle_t3.mp4",
+    "clip_s": 8,
+    "prompt": "Premium Animistry-class 3D cartoon. In London daylight, two Victorian gentlemen climb wide pale stone steps side by side at a calm walking pace. One gentleman carries exactly one ribbon-tied manuscript bundle in both hands against his chest for the whole clip. The other gentleman walks beside him with empty hands. The bundle is never handed over, never put down and never splits, and it keeps the same size, colour and shape. No second parcel appears at any time. The stone steps stay fixed. Daylight, window light or matte painted ink only. No candle, flame, glow, spark, fireball or lightning. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+    "prompt_sha256": "b80f34a68cad9496e2b6d9ade8baa64826a89a99ffa49c0666b3602ba5aad250"
+   },
+   "price": {
+    "pre_5_dec": {
+     "model": "Veo 3.1 - Quality",
+     "clip_s": 8,
+     "credits": 100
+    },
+    "post_5_dec_lite": {
+     "model": "Veo 3.1 - Lite",
+     "clip_s": 6,
+     "credits": 5
+    },
+    "post_5_dec_omni": {
+     "model": "Omni 1.2 Flash",
+     "clip_s": 8,
+     "credits": 24
+    }
+   },
+   "generation_authorized": false
+  },
+  {
+   "n": 63,
+   "row_id": "P6:06a_origin_fifth_edition",
+   "plate_board": "parts/part-06_plates_v02.json",
+   "film_window_s": [
+    485.64,
+    490.6
+   ],
+   "use_s": 4.96,
+   "take": 3,
+   "take_2_clip": "P06_06a_origin_fifth_edition_t2.mp4",
+   "take_2_clip_sha256": "42ddd51a2b09e3e17ece9a1b9bd56bc17cb3be50bb5d3ad4a96030163f8ec84b",
+   "take_2_defect": "Bright golden light comes out of the inside of the green book at 0.0-2.0 s (inside the used 0.00-4.96 s), against the no-glow rule. The front cover is jaggedly cracked across the middle (0.0-2.0 s) and morphs flat into green pages (2.5-3.5 s). The folded letter curls into the air and flips itself (4.0-4.5 s) (acting Chief, J3747).",
+   "root_cause": "The take-1 start still itself has the cracked green cover and a warm yellow-orange light inside the open pages, so any clip started from it fails at 0.0 s.",
+   "fix": "Mandatory fresh start still: the book closed, whole and flat, lit only by cool grey window light, so there is no open gutter for light to come from at frame 0. In the clip one hand lays the cover open; the letter and the spectacles do not move.",
+   "prompt_locked_v02": "Premium Animistry-class 3D cartoon. Close in grey window light on a mahogany desk as a green cloth-bound book opens beside a folded handwritten letter. Daylight, window light or matte painted ink only. No candle, flame, glow, spark, fireball or lightning. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+   "prompt_locked_v02_sha256": "0af2042db66717b084e230962bd5a603b56a9d3123b6328f08c9b8e2d492fd75",
+   "start_still_take_1": {
+    "file": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/04_Generated-Clips/part06/refs/v01_flow_stills/P06_06a_origin_fifth_edition_t1.png",
+    "sha256": "53c7c7a697aa850218f50232e70d0e5def938bc09b87b2d13e8a7e8badd12589",
+    "reuse": false,
+    "why": "carries the defect at frame 0"
+   },
+   "start_still_take_3": {
+    "file": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/04_Generated-Clips/part06/refs/v01_flow_stills/P06_06a_origin_fifth_edition_t3.png",
+    "exists": false,
+    "model": "Flow Nano Banana 2",
+    "credits": 0,
+    "aspect": "16:9",
+    "prompt": "Premium Animistry-class 3D cartoon. Close on a mahogany desk beside a window, lit only by cool grey overcast window light from the left side. A green cloth-bound book lies closed and flat on the desk. Its cover is whole, smooth and undamaged, with no crack, tear or crease. Beside the book one folded handwritten letter lies flat on the desk, with ink scribble lines only. A pair of round wire spectacles rests on the desk next to the letter. Matte cream page edges, neutral grey-beige shadows. No warm, yellow, gold or orange light anywhere, and no light comes from inside the book. Daylight, window light or matte painted ink only. No candle, flame, glow, spark, fireball or lightning. No readable words or numbers anywhere. No Explorer. No Orbit.",
+    "prompt_sha256": "331f7c47ab5a7556a9354862ec4a264bfd86a75b9ad445f53c6ea8f916bdb220",
+    "accept_before_video": "book closed and whole, no crack, no warm or gold light, letter and spectacles flat on the desk"
+   },
+   "video_take_3": {
+    "file": "P06_06a_origin_fifth_edition_t3.mp4",
+    "clip_s": 8,
+    "prompt": "Premium Animistry-class 3D cartoon. Close in cool grey window light on a mahogany desk. One sleeved hand slowly lifts the front cover of the green cloth-bound book by its edge and lays it open flat on the desk. The cover stays whole, smooth and green, and it hinges at the spine like a real book. The pages inside are matte cream paper with ink scribble lines, lit only by the grey window from one side, and the gutter between the pages stays in soft neutral shadow. No warm, yellow or gold light at any time. The folded letter stays flat on the desk and the spectacles stay where they are for the whole clip. Daylight, window light or matte painted ink only. No candle, flame, glow, spark, fireball or lightning. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+    "prompt_sha256": "2ff63983f8092a5f2804192316f538a25b0c51a8b91eebb865db697eceb86350"
+   },
+   "alternative": "If the Chief would sooner have no hand in frame: the same still with the book already open flat at its first pages, and a slow push-in with one page settling. Not written up here; it puts an open gutter in frame 0, which is where both earlier takes went gold.",
+   "price": {
+    "pre_5_dec": {
+     "model": "Veo 3.1 - Quality",
+     "clip_s": 8,
+     "credits": 100
+    },
+    "post_5_dec_lite": {
+     "model": "Veo 3.1 - Lite",
+     "clip_s": 6,
+     "credits": 5
+    },
+    "post_5_dec_omni": {
+     "model": "Omni 1.2 Flash",
+     "clip_s": 8,
+     "credits": 24
+    }
+   },
+   "generation_authorized": false
+  }
+ ]
+}
