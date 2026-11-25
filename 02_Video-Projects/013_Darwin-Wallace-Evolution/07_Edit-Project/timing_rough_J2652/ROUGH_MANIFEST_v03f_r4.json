@@ -1,0 +1,47 @@
+{
+  "files": [
+    {
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/hos_013_timing_rough_J2652_v03f_r4bb.mp4",
+      "sha256": "522caea01fc2077e12e2b04a330ee6ccff4904e95d91202e9019d46ee92549ed"
+    },
+    {
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/phone_contact_v03f_r4b_01.jpg",
+      "sha256": "b01356ac5b3fbb835d6765c045a28a3f94c27a567d2e4c6ad89ad0907392062f"
+    },
+    {
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/phone_contact_v03f_r4b_02.jpg",
+      "sha256": "e5ef6db022c3b7fcc50dc900a401488fed1f3e019f57018d55d17f780a245894"
+    },
+    {
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/phone_contact_v03f_r4b_03.jpg",
+      "sha256": "33f1ff33a4ed63ca6bc61b9c26399e2d5715fff3503c622013d3df34e3fedf56"
+    },
+    {
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/phone_contact_v03f_r4b_04.jpg",
+      "sha256": "df6ca3c3c7ba2da62c9fa6e23c21d71d32e04dff3772f549b11b74af0bdb5b99"
+    },
+    {
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/phone_contact_v03f_r4b_05.jpg",
+      "sha256": "b7769608ab333c6deb67e94580ff0588222ab0b32dcd118e57321dea8757a5c2"
+    },
+    {
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/phone_contact_v03f_r4b_06.jpg",
+      "sha256": "56a62850003971cddddfd5b72cf3c18a52b3f0efcebdc2dfeaca37dc0c49237e"
+    }
+  ],
+  "vo_sha256": "837178125a72fb250d255f1039c5cb7f8630bbb313cf23801a1155f257d796e0",
+  "plan_sha256": "2d1d8b724a96bd5288d76c3f731cbf86dd46ffc42bd16a1e5d8a568718f3b201",
+  "code_graphics_v03f_r4_sha256": "36d04d7fe88013fd7fdcbc51e65b8427367ecfe8068008c116419f6a13012e47",
+  "duration_s": 515,
+  "fps": 50,
+  "credits_spent": 0,
+  "gbp_spent": 0,
+  "approved": false,
+  "status_counts": {
+    "raw_pass1_take": 58,
+    "v03f_free_render": 35,
+    "diagnostic_slate": 11
+  },
+  "slates": 11,
+  "limitations": "All 35 £0 code-graphic/archive beats use finished v03f-r4 1920x1080@50fps renders (fixing all 3 items from Claude review #6945397541: unclipped bottom-left archival credits, enlarged 390px tags/labels, and verified P2:01 Part II title window). 58 beats use receipt-verified Pass-1 takes marked NOT KEEP (including Chief #6822411223 P2:11 x1.0105 retime and P3:02b 3.82-7.90s window; rows P1:03a, P1:07, P3:02a still await Pass-1 retakes). 11 beats (P5:08a through P6:08b) remain explicit slates awaiting J2529 Pass-1 Part 5/6 generation. No music/SFX; no audio or moving-video perception claimed."
+}

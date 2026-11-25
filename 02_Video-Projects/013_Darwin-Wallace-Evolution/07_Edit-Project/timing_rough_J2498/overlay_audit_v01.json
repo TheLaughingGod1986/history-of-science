@@ -1,0 +1,610 @@
+[
+  {
+    "row": "P1:01_study_beaks",
+    "kind": "LABEL",
+    "planned_start": 0.0,
+    "overlay": {
+      "hold_s": 3.0,
+      "kind": "LABEL",
+      "label": "LOCKED AWAY",
+      "sfx": "tick_ink"
+    },
+    "status": "NEEDS_EDITORIAL_ANCHOR",
+    "note": "Plan has no explicit word-level overlay onset; row start is not verified sync."
+  },
+  {
+    "row": "P1:03b_malay_packet",
+    "kind": "LABEL",
+    "planned_start": 11.9,
+    "overlay": {
+      "hold_s": 3.2,
+      "kind": "LABEL",
+      "label": "ONE LETTER",
+      "note": "Promise by 0:15 + physical proof (0:05-0:15 part 3)",
+      "sfx": "tick_ink"
+    },
+    "status": "NEEDS_EDITORIAL_ANCHOR",
+    "note": "Plan has no explicit word-level overlay onset; row start is not verified sync."
+  },
+  {
+    "row": "P1:05a_museum_cases",
+    "kind": "WHEN",
+    "planned_start": 21.64,
+    "overlay": {
+      "hold_s": 3.4,
+      "kind": "WHEN",
+      "label": "LONDON · 1830S",
+      "note": "Stakes by 0:25",
+      "sfx": "tick_ink"
+    },
+    "status": "NEEDS_EDITORIAL_ANCHOR",
+    "note": "Plan has no explicit word-level overlay onset; row start is not verified sync."
+  },
+  {
+    "row": "P1:06_padlock_shut",
+    "kind": "LABEL",
+    "planned_start": 29.22,
+    "overlay": {
+      "hold_s": 3.4,
+      "kind": "LABEL",
+      "label": "FIXED FOREVER?",
+      "sfx": "tick_ink"
+    },
+    "status": "NEEDS_EDITORIAL_ANCHOR",
+    "note": "Plan has no explicit word-level overlay onset; row start is not verified sync."
+  },
+  {
+    "row": "P1:07_darwin_1837_desk",
+    "kind": "WHO",
+    "planned_start": 33.44,
+    "overlay": {
+      "hold_s": 3.8,
+      "kind": "WHO",
+      "line_1": "Charles Darwin",
+      "line_2": "(1809–1882) — naturalist",
+      "sfx": "tick_ink",
+      "timeline_step": "2/7 · July 1837 (Notebook B)",
+      "when_stamp": "JULY 1837"
+    },
+    "status": "MISALIGNED",
+    "note": "Plan has no explicit word-level overlay onset; row start is not verified sync.",
+    "nearest_name_onset": 37.02,
+    "row_start_minus_name_s": -3.58
+  },
+  {
+    "row": "P1:08_cg_i_think_tree",
+    "kind": "DATA",
+    "planned_start": 39.4,
+    "overlay": {
+      "detail": "\"I think\" tree (Notebook B p. 36) + 20-year secrecy bar (1838 → 1858)",
+      "hold_s": 3.6,
+      "kind": "DATA",
+      "label": "TWENTY YEARS IN A DRAWER",
+      "note": "HOS-2026-11-E2 Early DATA+SCALE graphic on screen at 0:39.40 (inside 0:25-0:40)",
+      "scale": "20 years in a drawer — longer than a child takes to grow up",
+      "sfx": "tick_ink"
+    },
+    "status": "NEEDS_EDITORIAL_ANCHOR",
+    "note": "Plan has no explicit word-level overlay onset; row start is not verified sync."
+  },
+  {
+    "row": "P1:09_wallace_hut_split",
+    "kind": "WHO",
+    "planned_start": 54.3,
+    "overlay": {
+      "hold_s": 3.8,
+      "kind": "WHO",
+      "line_1": "Alfred Russel Wallace",
+      "line_2": "(1823–1913) — naturalist",
+      "sfx": "tick_ink",
+      "timeline_step": "5/7 · June 1858 (Wallace letter)",
+      "when_stamp": "JUNE 1858"
+    },
+    "status": "NEEDS_EDITORIAL_ANCHOR",
+    "note": "Plan has no explicit word-level overlay onset; row start is not verified sync."
+  },
+  {
+    "row": "P1:10_cg_globe_arc",
+    "kind": "DATA",
+    "planned_start": 62.08,
+    "overlay": {
+      "detail": "Inked globe arc from Malay Archipelago to Kent + 230-page 1844 essay vs short 1858 paper",
+      "hold_s": 3.6,
+      "kind": "DATA",
+      "label": "OTHER SIDE OF WORLD",
+      "scale": "the other side of the world",
+      "sfx": "tick_ink"
+    },
+    "status": "NEEDS_EDITORIAL_ANCHOR",
+    "note": "Plan has no explicit word-level overlay onset; row start is not verified sync."
+  },
+  {
+    "row": "P2:03_unlabelled_bagging",
+    "kind": "WHEN",
+    "planned_start": 84.22,
+    "overlay": {
+      "hold_s": 3.6,
+      "kind": "WHEN",
+      "label": "GALÁPAGOS · SEPTEMBER 1835",
+      "sfx": "tick_ink",
+      "side_label": "NO LABELS",
+      "timeline_step": "1/7 · Sept 1835 (Galápagos)"
+    },
+    "status": "NEEDS_EDITORIAL_ANCHOR",
+    "note": "Plan has no explicit word-level overlay onset; row start is not verified sync."
+  },
+  {
+    "row": "P2:04_blank_tags_row",
+    "kind": "FACT",
+    "planned_start": 92.18,
+    "overlay": {
+      "hold_s": 3.5,
+      "kind": "FACT",
+      "label": "FORGOT TO LABEL FINCHES",
+      "sfx": "tick_ink"
+    },
+    "status": "NEEDS_EDITORIAL_ANCHOR",
+    "note": "Plan has no explicit word-level overlay onset; row start is not verified sync."
+  },
+  {
+    "row": "P2:06a_lawson_jetty",
+    "kind": "WHO",
+    "planned_start": 104.56,
+    "overlay": {
+      "hold_s": 3.6,
+      "kind": "WHO",
+      "line_1": "Nicholas Lawson",
+      "line_2": "Galápagos vice-governor",
+      "sfx": "tick_ink"
+    },
+    "status": "MISALIGNED",
+    "note": "Plan has no explicit word-level overlay onset; row start is not verified sync.",
+    "nearest_name_onset": 106.6,
+    "row_start_minus_name_s": -2.04
+  },
+  {
+    "row": "P2:06b_cg_tortoise_shells",
+    "kind": "EXPLAINER",
+    "planned_start": 110.0,
+    "overlay": {
+      "hold_s": 3.5,
+      "kind": "EXPLAINER",
+      "label": "ONE SHELL PER ISLAND",
+      "sfx": "tick_ink"
+    },
+    "status": "NEEDS_EDITORIAL_ANCHOR",
+    "note": "Plan has no explicit word-level overlay onset; row start is not verified sync."
+  },
+  {
+    "row": "P2:08a_gould_sorting",
+    "kind": "WHO",
+    "planned_start": 120.88,
+    "overlay": {
+      "hold_s": 3.8,
+      "kind": "WHO",
+      "line_1": "John Gould",
+      "line_2": "(1804–1881) — bird expert",
+      "sfx": "tick_ink",
+      "when_stamp": "LONDON · 1837"
+    },
+    "status": "MISALIGNED",
+    "note": "Plan has no explicit word-level overlay onset; row start is not verified sync.",
+    "nearest_name_onset": 123.2,
+    "row_start_minus_name_s": -2.32
+  },
+  {
+    "row": "P2:09_cg_finch_toolbox",
+    "kind": "DATA",
+    "planned_start": 131.4,
+    "overlay": {
+      "detail": "Inked chart of 4 Galápagos finch beak profiles (with Gould 1845 lithograph inset) grouped by tool shape",
+      "hold_s": 3.6,
+      "kind": "DATA",
+      "label": "WHOLE TOOLBOX OF BEAKS",
+      "scale": "one family of birds, a whole toolbox of beaks",
+      "sfx": "tick_ink"
+    },
+    "status": "NEEDS_EDITORIAL_ANCHOR",
+    "note": "Plan has no explicit word-level overlay onset; row start is not verified sync."
+  },
+  {
+    "row": "P3:02a_malthus_lamplight",
+    "kind": "WHO",
+    "planned_start": 172.58,
+    "overlay": {
+      "hold_s": 3.8,
+      "kind": "WHO",
+      "line_1": "Thomas Malthus",
+      "line_2": "(1766–1834) — economist",
+      "sfx": "tick_ink",
+      "timeline_step": "3/7 · Sept 1838 (Malthus read)",
+      "when_stamp": "28 SEPTEMBER 1838"
+    },
+    "status": "MISALIGNED",
+    "note": "Plan has no explicit word-level overlay onset; row start is not verified sync.",
+    "nearest_name_onset": 177.64,
+    "row_start_minus_name_s": -5.06
+  },
+  {
+    "row": "P3:02b_notebook_d_open",
+    "kind": "LABEL",
+    "planned_start": 178.8,
+    "overlay": {
+      "hold_s": 3.2,
+      "kind": "LABEL",
+      "label": "THE MISSING PIECE",
+      "sfx": "tick_ink"
+    },
+    "status": "NEEDS_EDITORIAL_ANCHOR",
+    "note": "Plan has no explicit word-level overlay onset; row start is not verified sync."
+  },
+  {
+    "row": "P3:03_cg_malthus_curve",
+    "kind": "DATA",
+    "planned_start": 182.7,
+    "overlay": {
+      "detail": "Inked exponential curve (offspring born) vs flat horizontal line (food supply)",
+      "hold_s": 3.6,
+      "kind": "DATA",
+      "label": "MOST NEVER SURVIVE",
+      "scale": "far more born than can ever live",
+      "sfx": "tick_ink"
+    },
+    "status": "NEEDS_EDITORIAL_ANCHOR",
+    "note": "Plan has no explicit word-level overlay onset; row start is not verified sync."
+  },
+  {
+    "row": "P3:06_nature_keeps_fit",
+    "kind": "EXPLAINER",
+    "planned_start": 211.76,
+    "overlay": {
+      "hold_s": 3.6,
+      "kind": "EXPLAINER",
+      "label": "NATURAL SELECTION",
+      "sfx": "tick_ink"
+    },
+    "status": "NEEDS_EDITORIAL_ANCHOR",
+    "note": "Plan has no explicit word-level overlay onset; row start is not verified sync."
+  },
+  {
+    "row": "P3:07b_confessing_murder_letter",
+    "kind": "LABEL",
+    "planned_start": 223.9,
+    "overlay": {
+      "hold_s": 3.6,
+      "kind": "LABEL",
+      "label": "CONFESSING A MURDER",
+      "sfx": "tick_ink"
+    },
+    "status": "NEEDS_EDITORIAL_ANCHOR",
+    "note": "Plan has no explicit word-level overlay onset; row start is not verified sync."
+  },
+  {
+    "row": "P3:08_emma_study",
+    "kind": "WHO",
+    "planned_start": 229.34,
+    "overlay": {
+      "hold_s": 3.6,
+      "kind": "WHO",
+      "line_1": "Emma Darwin",
+      "line_2": "(1808–1896) — Darwin's wife",
+      "sfx": "tick_ink"
+    },
+    "status": "NEEDS_EDITORIAL_ANCHOR",
+    "note": "Plan has no explicit word-level overlay onset; row start is not verified sync."
+  },
+  {
+    "row": "P3:09a_essay_1844_sealed",
+    "kind": "WHEN",
+    "planned_start": 234.2,
+    "overlay": {
+      "hold_s": 3.5,
+      "kind": "WHEN",
+      "label": "JULY 1844",
+      "sfx": "tick_ink",
+      "timeline_step": "4/7 · July 1844 (230-page essay)"
+    },
+    "status": "NEEDS_EDITORIAL_ANCHOR",
+    "note": "Plan has no explicit word-level overlay onset; row start is not verified sync."
+  },
+  {
+    "row": "P3:09b_emma_letter_cupboard",
+    "kind": "LABEL",
+    "planned_start": 240.64,
+    "overlay": {
+      "hold_s": 3.5,
+      "kind": "LABEL",
+      "label": "230 PAGES · IF I DIE",
+      "sfx": "tick_ink"
+    },
+    "status": "NEEDS_EDITORIAL_ANCHOR",
+    "note": "Plan has no explicit word-level overlay onset; row start is not verified sync."
+  },
+  {
+    "row": "P3:11_barnacles_microscope",
+    "kind": "FACT",
+    "planned_start": 254.76,
+    "overlay": {
+      "hold_s": 3.6,
+      "kind": "FACT",
+      "label": "EIGHT YEARS ON BARNACLES",
+      "sfx": "tick_ink",
+      "when_stamp": "1846–1854"
+    },
+    "status": "NEEDS_EDITORIAL_ANCHOR",
+    "note": "Plan has no explicit word-level overlay onset; row start is not verified sync."
+  },
+  {
+    "row": "P3:12_cg_barnacle_counter",
+    "kind": "DATA",
+    "planned_start": 261.5,
+    "overlay": {
+      "detail": "Eight-year barnacle counter ticking from 1846 to 1854 beside four monograph volumes",
+      "hold_s": 3.6,
+      "kind": "DATA",
+      "label": "EIGHT YEARS AT MICROSCOPE",
+      "scale": "eight years at one microscope",
+      "sfx": "tick_ink"
+    },
+    "status": "NEEDS_EDITORIAL_ANCHOR",
+    "note": "Plan has no explicit word-level overlay onset; row start is not verified sync."
+  },
+  {
+    "row": "P4:03a_helen_burning",
+    "kind": "WHEN",
+    "planned_start": 283.7,
+    "overlay": {
+      "hold_s": 3.5,
+      "kind": "WHEN",
+      "label": "AUGUST 1852",
+      "sfx": "rumble_low"
+    },
+    "status": "NEEDS_EDITORIAL_ANCHOR",
+    "note": "Plan has no explicit word-level overlay onset; row start is not verified sync."
+  },
+  {
+    "row": "P4:03b_crates_sinking",
+    "kind": "FACT",
+    "planned_start": 289.9,
+    "overlay": {
+      "hold_s": 2.6,
+      "kind": "FACT",
+      "label": "HIS COLLECTION SANK",
+      "sfx": "tick_ink"
+    },
+    "status": "NEEDS_EDITORIAL_ANCHOR",
+    "note": "Plan has no explicit word-level overlay onset; row start is not verified sync."
+  },
+  {
+    "row": "P4:05_cg_wallace_counter",
+    "kind": "DATA",
+    "planned_start": 298.12,
+    "overlay": {
+      "detail": "Painted map of the Malay Archipelago with Wallace's specimen counter climbing 0 → 125,660",
+      "hold_s": 3.6,
+      "kind": "DATA",
+      "label": "125,660 SPECIMENS",
+      "scale": "a whole museum, collected by one man",
+      "sfx": "tick_ink",
+      "when_stamp": "MALAY ARCHIPELAGO · 1854–1862"
+    },
+    "status": "NEEDS_EDITORIAL_ANCHOR",
+    "note": "Plan has no explicit word-level overlay onset; row start is not verified sync."
+  },
+  {
+    "row": "P4:06a_wallace_fever",
+    "kind": "WHEN",
+    "planned_start": 308.62,
+    "overlay": {
+      "hold_s": 3.5,
+      "kind": "WHEN",
+      "label": "FEBRUARY 1858",
+      "sfx": "tick_ink"
+    },
+    "status": "NEEDS_EDITORIAL_ANCHOR",
+    "note": "Plan has no explicit word-level overlay onset; row start is not verified sync."
+  },
+  {
+    "row": "P4:09a_darwin_reads_wallace",
+    "kind": "WHO",
+    "planned_start": 337.3,
+    "overlay": {
+      "hold_s": 3.8,
+      "kind": "WHO",
+      "line_1": "Charles Lyell",
+      "line_2": "(1797–1875) — geologist",
+      "sfx": "tick_ink",
+      "when_stamp": "18 JUNE 1858"
+    },
+    "status": "NEEDS_EDITORIAL_ANCHOR",
+    "note": "Plan has no explicit word-level overlay onset; row start is not verified sync."
+  },
+  {
+    "row": "P4:09b_smashed_letter_pen",
+    "kind": "LABEL",
+    "planned_start": 344.2,
+    "overlay": {
+      "hold_s": 3.6,
+      "kind": "LABEL",
+      "label": "ORIGINALITY SMASHED",
+      "sfx": "tick_ink"
+    },
+    "status": "NEEDS_EDITORIAL_ANCHOR",
+    "note": "Plan has no explicit word-level overlay onset; row start is not verified sync."
+  },
+  {
+    "row": "P5:02a_linnean_reading",
+    "kind": "WHO",
+    "planned_start": 368.56,
+    "overlay": {
+      "hold_s": 3.8,
+      "kind": "WHO",
+      "line_1": "Joseph Hooker",
+      "line_2": "(1817–1911) — botanist",
+      "sfx": "tick_ink",
+      "when_stamp": "LONDON · 1 JULY 1858"
+    },
+    "status": "MISALIGNED",
+    "note": "Plan has no explicit word-level overlay onset; row start is not verified sync.",
+    "nearest_name_onset": 370.88,
+    "row_start_minus_name_s": -2.32
+  },
+  {
+    "row": "P5:03a_two_empty_chairs",
+    "kind": "LABEL",
+    "planned_start": 382.34,
+    "overlay": {
+      "hold_s": 3.6,
+      "kind": "LABEL",
+      "label": "TWO EMPTY CHAIRS",
+      "sfx": "tick_ink"
+    },
+    "status": "NEEDS_EDITORIAL_ANCHOR",
+    "note": "Plan has no explicit word-level overlay onset; row start is not verified sync."
+  },
+  {
+    "row": "P5:04b_bell_report_1859",
+    "kind": "FACT",
+    "planned_start": 398.0,
+    "overlay": {
+      "hold_s": 3.6,
+      "kind": "FACT",
+      "label": "NO STRIKING DISCOVERY",
+      "sfx": "tick_ink",
+      "when_stamp": "MAY 1859"
+    },
+    "status": "NEEDS_EDITORIAL_ANCHOR",
+    "note": "Plan has no explicit word-level overlay onset; row start is not verified sync."
+  },
+  {
+    "row": "P5:06_murray_bookshop",
+    "kind": "WHEN",
+    "planned_start": 414.44,
+    "overlay": {
+      "hold_s": 3.5,
+      "kind": "WHEN",
+      "label": "24 NOVEMBER 1859",
+      "sfx": "tick_ink",
+      "timeline_step": "6/7 · 24 Nov 1859 (Origin published)"
+    },
+    "status": "NEEDS_EDITORIAL_ANCHOR",
+    "note": "Plan has no explicit word-level overlay onset; row start is not verified sync."
+  },
+  {
+    "row": "P5:07_cg_timeline_origin",
+    "kind": "DATA",
+    "planned_start": 419.0,
+    "overlay": {
+      "detail": "Master timeline (1835 · 1837 · 1838 · 1844 · 1858 · 1859 · 1889) + ~1,250 copies ordered before publication day",
+      "hold_s": 3.6,
+      "kind": "DATA",
+      "label": "1,250 COPIES PRE-SOLD",
+      "scale": "every copy ordered before the book even went on sale",
+      "sfx": "tick_ink"
+    },
+    "status": "NEEDS_EDITORIAL_ANCHOR",
+    "note": "Plan has no explicit word-level overlay onset; row start is not verified sync."
+  },
+  {
+    "row": "P6:02a_jenkin_study",
+    "kind": "WHO",
+    "planned_start": 449.66,
+    "overlay": {
+      "hold_s": 3.4,
+      "kind": "WHO",
+      "line_1": "Fleeming Jenkin",
+      "line_2": "(1833–1885) — engineer",
+      "sfx": "tick_ink",
+      "when_stamp": "JUNE 1867"
+    },
+    "status": "NEEDS_EDITORIAL_ANCHOR",
+    "note": "Plan has no explicit word-level overlay onset; row start is not verified sync."
+  },
+  {
+    "row": "P6:02b_paint_pots_mix",
+    "kind": "LABEL",
+    "planned_start": 453.5,
+    "overlay": {
+      "hold_s": 3.5,
+      "kind": "LABEL",
+      "label": "BLENDED AWAY?",
+      "sfx": "tick_ink"
+    },
+    "status": "NEEDS_EDITORIAL_ANCHOR",
+    "note": "Plan has no explicit word-level overlay onset; row start is not verified sync."
+  },
+  {
+    "row": "P6:03_cg_blending_beaks",
+    "kind": "EXPLAINER",
+    "planned_start": 458.78,
+    "overlay": {
+      "hold_s": 3.6,
+      "kind": "EXPLAINER",
+      "label": "WASHED AWAY BY BLENDING",
+      "sfx": "tick_ink"
+    },
+    "status": "NEEDS_EDITORIAL_ANCHOR",
+    "note": "Plan has no explicit word-level overlay onset; row start is not verified sync."
+  },
+  {
+    "row": "P6:04a_mendel_pea_garden",
+    "kind": "WHO",
+    "planned_start": 471.06,
+    "overlay": {
+      "hold_s": 3.8,
+      "kind": "WHO",
+      "line_1": "Gregor Mendel",
+      "line_2": "(1822–1884) — friar",
+      "sfx": "tick_ink",
+      "when_stamp": "BRNO · 1866"
+    },
+    "status": "MISALIGNED",
+    "note": "Plan has no explicit word-level overlay onset; row start is not verified sync.",
+    "nearest_name_onset": 475.5,
+    "row_start_minus_name_s": -4.44
+  },
+  {
+    "row": "P6:05_beads_not_paint",
+    "kind": "LABEL",
+    "planned_start": 479.92,
+    "overlay": {
+      "hold_s": 3.5,
+      "kind": "LABEL",
+      "label": "WHOLE LIKE BEADS",
+      "sfx": "tick_ink"
+    },
+    "status": "NEEDS_EDITORIAL_ANCHOR",
+    "note": "Plan has no explicit word-level overlay onset; row start is not verified sync."
+  },
+  {
+    "row": "P6:06b_spencer_coined",
+    "kind": "WHO",
+    "planned_start": 490.6,
+    "overlay": {
+      "hold_s": 3.8,
+      "kind": "WHO",
+      "line_1": "Herbert Spencer",
+      "line_2": "(1820–1903) — philosopher",
+      "sfx": "tick_ink",
+      "when_stamp": "1864"
+    },
+    "status": "MISALIGNED",
+    "note": "Plan has no explicit word-level overlay onset; row start is not verified sync.",
+    "nearest_name_onset": 491.74,
+    "row_start_minus_name_s": -1.14
+  },
+  {
+    "row": "P6:07_key_in_lock",
+    "kind": "LABEL",
+    "planned_start": 496.54,
+    "overlay": {
+      "hold_s": 3.5,
+      "kind": "LABEL",
+      "label": "FIT MEANS FITS",
+      "note": "Short B frame 0",
+      "sfx": "tick_ink"
+    },
+    "status": "NEEDS_EDITORIAL_ANCHOR",
+    "note": "Plan has no explicit word-level overlay onset; row start is not verified sync."
+  }
+]

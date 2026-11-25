@@ -1,0 +1,403 @@
+[
+  {
+    "row": "P1:01_study_beaks",
+    "type": "cut_inside_sentence",
+    "cut": 3.8,
+    "preceding_word": "time",
+    "next_sentence_end": 6.82,
+    "context": "work out how life changes over time and then lock it in a drawer"
+  },
+  {
+    "row": "P1:03a_unlabelled_birds",
+    "type": "cut_inside_sentence",
+    "cut": 11.9,
+    "preceding_word": "birds,",
+    "next_sentence_end": 20.22,
+    "context": "you'll know how a few unlabeled birds, eight years of barnacles and one letter"
+  },
+  {
+    "row": "P1:03b_malay_packet",
+    "type": "cut_inside_sentence",
+    "cut": 16.02,
+    "preceding_word": "the",
+    "next_sentence_end": 20.22,
+    "context": "letter from the other side of the world forced the biggest secret in biology"
+  },
+  {
+    "row": "P1:04a_packet_seal",
+    "type": "cut_inside_sentence",
+    "cut": 19.0,
+    "preceding_word": "biology",
+    "next_sentence_end": 20.22,
+    "context": "world forced the biggest secret in biology into the open. In the 1830s most"
+  },
+  {
+    "row": "P1:05a_museum_cases",
+    "type": "cut_inside_sentence",
+    "cut": 25.64,
+    "preceding_word": "kind",
+    "next_sentence_end": 29.22,
+    "context": "the 1830s most naturalists believed every kind of animal and plant had been made"
+  },
+  {
+    "row": "P1:07_darwin_1837_desk",
+    "type": "cut_inside_word",
+    "cut": 39.4,
+    "words": [
+      {
+        "word": " in",
+        "start": 39.36,
+        "end": 39.62,
+        "probability": 0.9973
+      }
+    ]
+  },
+  {
+    "row": "P1:07_darwin_1837_desk",
+    "type": "cut_inside_sentence",
+    "cut": 39.4,
+    "preceding_word": "tree",
+    "next_sentence_end": 45.44,
+    "context": "-old Charles Darwin drew a little tree in a private notebook, one kind of"
+  },
+  {
+    "row": "P1:08_cg_i_think_tree",
+    "type": "row_over_8s",
+    "start": 39.4,
+    "end": 54.3,
+    "duration": 14.9
+  },
+  {
+    "row": "P2:01_card_p02",
+    "type": "cut_inside_sentence",
+    "cut": 77.0,
+    "preceding_word": "on",
+    "next_sentence_end": 81.22,
+    "context": "life changes? When people picture Darwin on the Galapagos Islands they imagine a flash"
+  },
+  {
+    "row": "P2:09_cg_finch_toolbox",
+    "type": "row_over_8s",
+    "start": 131.4,
+    "end": 143.72,
+    "duration": 12.32
+  },
+  {
+    "row": "P2:10a_explorer_shipmates",
+    "type": "cut_inside_sentence",
+    "cut": 149.9,
+    "preceding_word": "island",
+    "next_sentence_end": 152.58,
+    "context": "out which beak came from which island and slowly a question formed. What if"
+  },
+  {
+    "row": "P2:12a_arch_notebook_tree_zoom",
+    "type": "cut_inside_word",
+    "cut": 166.6,
+    "words": [
+      {
+        "word": " could",
+        "start": 166.26,
+        "end": 166.72,
+        "probability": 0.9956
+      }
+    ]
+  },
+  {
+    "row": "P2:12a_arch_notebook_tree_zoom",
+    "type": "cut_inside_sentence",
+    "cut": 166.6,
+    "preceding_word": "could",
+    "next_sentence_end": 167.92,
+    "context": "see that one kind of animal could split into many. But what was doing"
+  },
+  {
+    "row": "P2:12b_tree_question",
+    "type": "cut_inside_word",
+    "cut": 171.08,
+    "words": [
+      {
+        "word": " On",
+        "start": 171.02,
+        "end": 171.22,
+        "probability": 0.9737
+      }
+    ]
+  },
+  {
+    "row": "P3:01_card_p03",
+    "type": "cut_inside_word",
+    "cut": 172.58,
+    "words": [
+      {
+        "word": " 1838",
+        "start": 172.54,
+        "end": 173.8,
+        "probability": 0.9702
+      }
+    ]
+  },
+  {
+    "row": "P3:01_card_p03",
+    "type": "cut_inside_sentence",
+    "cut": 172.58,
+    "preceding_word": "September",
+    "next_sentence_end": 181.44,
+    "context": "the shaping? On the 28th of September 1838 Darwin started reading a book about"
+  },
+  {
+    "row": "P3:02a_malthus_lamplight",
+    "type": "cut_inside_sentence",
+    "cut": 178.8,
+    "preceding_word": "Malthus",
+    "next_sentence_end": 181.44,
+    "context": "book about human populations by Thomas Malthus and the missing piece fell into place."
+  },
+  {
+    "row": "P3:03_cg_malthus_curve",
+    "type": "row_over_8s",
+    "start": 182.7,
+    "end": 192.1,
+    "duration": 9.4
+  },
+  {
+    "row": "P3:09a_essay_1844_sealed",
+    "type": "cut_inside_sentence",
+    "cut": 240.64,
+    "preceding_word": "it",
+    "next_sentence_end": 242.12,
+    "context": "all out. About 230 pages sealed it and left Emma a letter. If he"
+  },
+  {
+    "row": "P3:10a_arch_vestiges_1844",
+    "type": "cut_inside_sentence",
+    "cut": 250.2,
+    "preceding_word": "life",
+    "next_sentence_end": 253.78,
+    "context": "months later an unsigned book claiming life had changed over time was torn apart"
+  },
+  {
+    "row": "P3:11_barnacles_microscope",
+    "type": "cut_inside_word",
+    "cut": 261.5,
+    "words": [
+      {
+        "word": " that",
+        "start": 260.98,
+        "end": 261.62,
+        "probability": 0.7592
+      }
+    ]
+  },
+  {
+    "row": "P3:11_barnacles_microscope",
+    "type": "cut_inside_sentence",
+    "cut": 261.5,
+    "preceding_word": "that",
+    "next_sentence_end": 266.02,
+    "context": "So many barnacles the story goes that one of his children asked a friend"
+  },
+  {
+    "row": "P3:13b_brass_globe_turn",
+    "type": "cut_inside_word",
+    "cut": 276.26,
+    "words": [
+      {
+        "word": " Alfred",
+        "start": 276.16,
+        "end": 276.62,
+        "probability": 0.97
+      }
+    ]
+  },
+  {
+    "row": "P4:01_card_p04",
+    "type": "cut_inside_word",
+    "cut": 277.76,
+    "words": [
+      {
+        "word": " not",
+        "start": 277.62,
+        "end": 277.92,
+        "probability": 0.9975
+      }
+    ]
+  },
+  {
+    "row": "P4:01_card_p04",
+    "type": "cut_inside_sentence",
+    "cut": 277.76,
+    "preceding_word": "was",
+    "next_sentence_end": 279.08,
+    "context": "was that someone? Alfred Russell Wallace was not rich like Darwin. He made his"
+  },
+  {
+    "row": "P4:05_cg_wallace_counter",
+    "type": "row_over_8s",
+    "start": 298.12,
+    "end": 308.62,
+    "duration": 10.5
+  },
+  {
+    "row": "P4:06a_wallace_fever",
+    "type": "cut_inside_word",
+    "cut": 315.3,
+    "words": [
+      {
+        "word": " and",
+        "start": 314.92,
+        "end": 315.78,
+        "probability": 0.7668
+      }
+    ]
+  },
+  {
+    "row": "P4:06a_wallace_fever",
+    "type": "cut_inside_sentence",
+    "cut": 315.3,
+    "preceding_word": "Malthus",
+    "next_sentence_end": 319.08,
+    "context": "thought about the same book by Malthus and like Darwin 20 years before he"
+  },
+  {
+    "row": "P4:07a_wallace_writes_hut",
+    "type": "cut_inside_word",
+    "cut": 326.0,
+    "words": [
+      {
+        "word": " famous",
+        "start": 325.82,
+        "end": 326.32,
+        "probability": 0.999
+      }
+    ]
+  },
+  {
+    "row": "P4:07a_wallace_writes_hut",
+    "type": "cut_inside_sentence",
+    "cut": 326.0,
+    "preceding_word": "one",
+    "next_sentence_end": 328.24,
+    "context": "and he posted it to the one famous naturalist he knew would be interested."
+  },
+  {
+    "row": "P4:12_lyell_hooker_bundle",
+    "type": "cut_inside_word",
+    "cut": 366.34,
+    "words": [
+      {
+        "word": " On",
+        "start": 366.28,
+        "end": 366.52,
+        "probability": 0.9897
+      }
+    ]
+  },
+  {
+    "row": "P5:01_card_p05",
+    "type": "cut_inside_word",
+    "cut": 368.56,
+    "words": [
+      {
+        "word": " Darwin's",
+        "start": 368.52,
+        "end": 369.2,
+        "probability": 0.8577
+      }
+    ]
+  },
+  {
+    "row": "P5:01_card_p05",
+    "type": "cut_inside_sentence",
+    "cut": 368.56,
+    "preceding_word": "1858",
+    "next_sentence_end": 376.56,
+    "context": "heard? On the 1st of July 1858 Darwin's friends Charles Lyle and Joseph Hooker"
+  },
+  {
+    "row": "P5:05a_darwin_writes_origin",
+    "type": "cut_inside_sentence",
+    "cut": 411.56,
+    "preceding_word": "everyone",
+    "next_sentence_end": 413.64,
+    "context": "he finished a shorter book for everyone on the origin of species. It came"
+  },
+  {
+    "row": "P5:06_murray_bookshop",
+    "type": "cut_inside_word",
+    "cut": 419.0,
+    "words": [
+      {
+        "word": " and",
+        "start": 418.2,
+        "end": 419.1,
+        "probability": 0.5895
+      }
+    ]
+  },
+  {
+    "row": "P5:06_murray_bookshop",
+    "type": "cut_inside_sentence",
+    "cut": 419.0,
+    "preceding_word": "and",
+    "next_sentence_end": 423.4,
+    "context": "on the 24th of November 1859 and booksellers had ordered every copy before it"
+  },
+  {
+    "row": "P5:10_darwin_worried_shelf",
+    "type": "cut_inside_word",
+    "cut": 448.16,
+    "words": [
+      {
+        "word": " The",
+        "start": 448.1,
+        "end": 448.34,
+        "probability": 0.9894
+      }
+    ]
+  },
+  {
+    "row": "P6:01_card_p06",
+    "type": "cut_inside_word",
+    "cut": 449.66,
+    "words": [
+      {
+        "word": " engineer",
+        "start": 449.42,
+        "end": 449.86,
+        "probability": 0.9963
+      }
+    ]
+  },
+  {
+    "row": "P6:01_card_p06",
+    "type": "cut_inside_sentence",
+    "cut": 449.66,
+    "preceding_word": "engineer",
+    "next_sentence_end": 453.0,
+    "context": "print. The problem came from an engineer called Fleming Jenkin in 1867. Everyone then"
+  },
+  {
+    "row": "P6:03_cg_blending_beaks",
+    "type": "row_over_8s",
+    "start": 458.78,
+    "end": 471.06,
+    "duration": 12.28
+  },
+  {
+    "row": "P6:04a_mendel_pea_garden",
+    "type": "cut_inside_sentence",
+    "cut": 476.56,
+    "preceding_word": "Mendel",
+    "next_sentence_end": 478.9,
+    "context": "in 1866 a friar called Gregor Mendel had published his work on pea plants."
+  },
+  {
+    "row": "P6:08a_reuse_study_beaks_callback",
+    "type": "cut_inside_sentence",
+    "cut": 508.48,
+    "preceding_word": "and",
+    "next_sentence_end": 512.24,
+    "context": "Darwin's selection together with Mendel's beads and you have the core of how biologists"
+  }
+]

@@ -1,0 +1,754 @@
+[
+  {
+    "row": "P1:01_study_beaks",
+    "start": 0.0,
+    "end": 3.8,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P1:02_drawer_lock",
+    "start": 3.8,
+    "end": 7.9,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P1:03a_unlabelled_birds",
+    "start": 7.9,
+    "end": 11.9,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P1:03b_malay_packet",
+    "start": 11.9,
+    "end": 16.02,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P1:04a_packet_seal",
+    "start": 16.02,
+    "end": 19.0,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P1:04b_drawer_unlock",
+    "start": 19.0,
+    "end": 21.64,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P1:05a_museum_cases",
+    "start": 21.64,
+    "end": 25.64,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P1:05b_museum_plaques",
+    "start": 25.64,
+    "end": 29.22,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P1:06_padlock_shut",
+    "start": 29.22,
+    "end": 33.44,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P1:07_darwin_1837_desk",
+    "start": 33.44,
+    "end": 39.4,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P1:08_cg_i_think_tree",
+    "start": 39.4,
+    "end": 54.3,
+    "status": "existing_render",
+    "source": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v01/code_graphic_013_p1_08_cg_i_think_tree.mp4",
+    "source_sha256": "74a3df9af988be5961051c8cafa26875aefa81b76afb648a9d53414960b2ac25"
+  },
+  {
+    "row": "P1:09_wallace_hut_split",
+    "start": 54.3,
+    "end": 62.08,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P1:10_cg_globe_arc",
+    "start": 62.08,
+    "end": 67.68,
+    "status": "existing_render",
+    "source": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v01/code_graphic_013_p1_10_cg_globe_arc.mp4",
+    "source_sha256": "72fd478278ca7b765e90f53fe828aa8d801f9f5cba42b154fde7ab14f6f0d200"
+  },
+  {
+    "row": "P1:11_beagle_cabin_explorer",
+    "start": 67.68,
+    "end": 75.5,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P2:01_card_p02",
+    "start": 75.5,
+    "end": 77.0,
+    "status": "existing_render",
+    "source": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v01/code_graphic_013_p2_01_card_p02.mp4",
+    "source_sha256": "745a6373dd4f29cf19aff2c877dd5e6af08de2e3599dbe74be16fa50eb2097fe"
+  },
+  {
+    "row": "P2:02_galapagos_beach_myth",
+    "start": 77.0,
+    "end": 84.22,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P2:03_unlabelled_bagging",
+    "start": 84.22,
+    "end": 92.18,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P2:04_blank_tags_row",
+    "start": 92.18,
+    "end": 97.4,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P2:05_tortoise_overboard",
+    "start": 97.4,
+    "end": 104.56,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P2:06a_lawson_jetty",
+    "start": 104.56,
+    "end": 110.0,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P2:06b_cg_tortoise_shells",
+    "start": 110.0,
+    "end": 114.86,
+    "status": "existing_render",
+    "source": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v01/code_graphic_013_p2_06b_cg_tortoise_shells.mp4",
+    "source_sha256": "b5523eefef0264ad1e3ea3253cba02321614266164fb2e2b7ec7088d4143b034"
+  },
+  {
+    "row": "P2:07_darwin_notebook_wait",
+    "start": 114.86,
+    "end": 120.88,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P2:08a_gould_sorting",
+    "start": 120.88,
+    "end": 127.1,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P2:08b_gould_skins_closeup",
+    "start": 127.1,
+    "end": 131.4,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P2:09_cg_finch_toolbox",
+    "start": 131.4,
+    "end": 143.72,
+    "status": "existing_render",
+    "source": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v01/code_graphic_013_p2_09_cg_finch_toolbox.mp4",
+    "source_sha256": "ee4616846021250fc36b9fe6f97191fbe40e082feb02fb06fa76e9989fdbef26"
+  },
+  {
+    "row": "P2:10a_explorer_shipmates",
+    "start": 143.72,
+    "end": 149.9,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P2:10b_shipmate_tagged_tray",
+    "start": 149.9,
+    "end": 153.2,
+    "status": "unavailable_free_or_reuse",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P2:11_island_split_vision",
+    "start": 153.2,
+    "end": 161.2,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P2:12a_arch_notebook_tree_zoom",
+    "start": 161.2,
+    "end": 166.6,
+    "status": "existing_render",
+    "source": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v01/code_graphic_013_p2_12a_arch_notebook_tree_zoom.mp4",
+    "source_sha256": "e62f6082f15cecd9a873bf38016962ba8505290eedb4ecad959e1fb9feb0ab37"
+  },
+  {
+    "row": "P2:12b_tree_question",
+    "start": 166.6,
+    "end": 171.08,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P3:01_card_p03",
+    "start": 171.08,
+    "end": 172.58,
+    "status": "existing_render",
+    "source": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v01/code_graphic_013_p3_01_card_p03.mp4",
+    "source_sha256": "3c3d4bc01ad8cb0f3b84fd11baaf57f8aee5c1efec94c38eebc30f0ef50f93a5"
+  },
+  {
+    "row": "P3:02a_malthus_lamplight",
+    "start": 172.58,
+    "end": 178.8,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P3:02b_notebook_d_open",
+    "start": 178.8,
+    "end": 182.7,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P3:03_cg_malthus_curve",
+    "start": 182.7,
+    "end": 192.1,
+    "status": "existing_render",
+    "source": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v01/code_graphic_013_p3_03_cg_malthus_curve.mp4",
+    "source_sha256": "605fed47bfdcecfdcaaff336d3fe1922a1c3d86d03d99fe1d4e9742b0e3d1389"
+  },
+  {
+    "row": "P3:04a_drought_island_seeds",
+    "start": 192.1,
+    "end": 197.3,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P3:04b_finch_cracks_seed",
+    "start": 197.3,
+    "end": 201.96,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P3:05a_chicks_deep_beaks",
+    "start": 201.96,
+    "end": 206.5,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P3:05b_finches_next_generation",
+    "start": 206.5,
+    "end": 211.76,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P3:06_nature_keeps_fit",
+    "start": 211.76,
+    "end": 219.32,
+    "status": "existing_render",
+    "source": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v01/code_graphic_013_p3_06_nature_keeps_fit.mp4",
+    "source_sha256": "941b5799b22e224e23a1e83651ea332e409bf8b7bdd509e3fdb94dfd64fa9cc6"
+  },
+  {
+    "row": "P3:07a_darwin_afraid_window",
+    "start": 219.32,
+    "end": 223.9,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P3:07b_confessing_murder_letter",
+    "start": 223.9,
+    "end": 229.34,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P3:08_emma_study",
+    "start": 229.34,
+    "end": 234.2,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P3:09a_essay_1844_sealed",
+    "start": 234.2,
+    "end": 240.64,
+    "status": "unavailable_free_or_reuse",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P3:09b_emma_letter_cupboard",
+    "start": 240.64,
+    "end": 246.0,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P3:10a_arch_vestiges_1844",
+    "start": 246.0,
+    "end": 250.2,
+    "status": "existing_render",
+    "source": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v01/code_graphic_013_p3_10a_arch_vestiges_1844.mp4",
+    "source_sha256": "f35472f55fb33b865011510257d81198c0c8eec5fb44f3116db32d586c1567fe"
+  },
+  {
+    "row": "P3:10b_vestiges_torn_apart",
+    "start": 250.2,
+    "end": 254.76,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P3:11_barnacles_microscope",
+    "start": 254.76,
+    "end": 261.5,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P3:12_cg_barnacle_counter",
+    "start": 261.5,
+    "end": 267.48,
+    "status": "existing_render",
+    "source": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v01/code_graphic_013_p3_12_cg_barnacle_counter.mp4",
+    "source_sha256": "8ece71149d665b30678e28675d7766b9ed6b8e7c59a866f3d0d5748ae5d01fb1"
+  },
+  {
+    "row": "P3:13a_lyell_warning",
+    "start": 267.48,
+    "end": 273.1,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P3:13b_brass_globe_turn",
+    "start": 273.1,
+    "end": 276.26,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P4:01_card_p04",
+    "start": 276.26,
+    "end": 277.76,
+    "status": "existing_render",
+    "source": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v01/code_graphic_013_p4_01_card_p04.mp4",
+    "source_sha256": "6e799f7cba1bdb504c18918a4ad69f427f7fcccb65105bfdaa80b55799d76e02"
+  },
+  {
+    "row": "P4:02_wallace_collector",
+    "start": 277.76,
+    "end": 283.7,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P4:03a_helen_burning",
+    "start": 283.7,
+    "end": 289.9,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P4:03b_crates_sinking",
+    "start": 289.9,
+    "end": 292.88,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P4:04_open_boat_ten_days",
+    "start": 292.88,
+    "end": 298.12,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P4:05_cg_wallace_counter",
+    "start": 298.12,
+    "end": 308.62,
+    "status": "existing_render",
+    "source": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v01/code_graphic_013_p4_05_cg_wallace_counter.mp4",
+    "source_sha256": "983f57b41e4e4d40f7cd43560eddc1efa69e10dbfbbe43db8631ad65f218c856"
+  },
+  {
+    "row": "P4:06a_wallace_fever",
+    "start": 308.62,
+    "end": 315.3,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P4:06b_arch_malthus_1798",
+    "start": 315.3,
+    "end": 321.36,
+    "status": "existing_render",
+    "source": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v01/code_graphic_013_p4_06b_arch_malthus_1798.mp4",
+    "source_sha256": "4b0265beffc56ed65214606aea6c7625154c6f15c161c5417473dc770855ff66"
+  },
+  {
+    "row": "P4:07a_wallace_writes_hut",
+    "start": 321.36,
+    "end": 326.0,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P4:07b_packet_to_mailbag",
+    "start": 326.0,
+    "end": 330.68,
+    "status": "unavailable_free_or_reuse",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P4:08_midpoint_twist_packet",
+    "start": 330.68,
+    "end": 337.3,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P4:09a_darwin_reads_wallace",
+    "start": 337.3,
+    "end": 344.2,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P4:09b_smashed_letter_pen",
+    "start": 344.2,
+    "end": 349.5,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P4:10_fairness_25_june",
+    "start": 349.5,
+    "end": 355.58,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P4:11_down_house_grief",
+    "start": 355.58,
+    "end": 360.98,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P4:12_lyell_hooker_bundle",
+    "start": 360.98,
+    "end": 366.34,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P5:01_card_p05",
+    "start": 366.34,
+    "end": 368.56,
+    "status": "existing_render",
+    "source": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v01/code_graphic_013_p5_01_card_p05.mp4",
+    "source_sha256": "435ef8dd84cddfce9afcb7babb4738132e26e173208a6c33b27124d3bca77b45"
+  },
+  {
+    "row": "P5:02a_linnean_reading",
+    "start": 368.56,
+    "end": 376.56,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P5:02b_joint_papers_lectern",
+    "start": 376.56,
+    "end": 382.34,
+    "status": "unavailable_free_or_reuse",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P5:03a_two_empty_chairs",
+    "start": 382.34,
+    "end": 388.2,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P5:03b_wallace_jungle_clearing",
+    "start": 388.2,
+    "end": 394.06,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P5:04a_empty_linnean_hall",
+    "start": 394.06,
+    "end": 398.0,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P5:04b_bell_report_1859",
+    "start": 398.0,
+    "end": 404.66,
+    "status": "unavailable_free_or_reuse",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P5:05a_darwin_writes_origin",
+    "start": 404.66,
+    "end": 411.56,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P5:05b_arch_origin_1859_title",
+    "start": 411.56,
+    "end": 414.44,
+    "status": "existing_render",
+    "source": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v01/code_graphic_013_p5_05b_arch_origin_1859_title.mp4",
+    "source_sha256": "d2a93a6afe1a4031bba379fb618376156a4e731993c33de86569838876fac69a"
+  },
+  {
+    "row": "P5:06_murray_bookshop",
+    "start": 414.44,
+    "end": 419.0,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P5:07_cg_timeline_origin",
+    "start": 419.0,
+    "end": 424.58,
+    "status": "existing_render",
+    "source": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v01/code_graphic_013_p5_07_cg_timeline_origin.mp4",
+    "source_sha256": "a0ba15a31b1fe9467d50b15e61b8e140909c14aa3dae533d0e7e288899187aa9"
+  },
+  {
+    "row": "P5:08a_wallace_opens_origin",
+    "start": 424.58,
+    "end": 428.0,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P5:08b_wallace_reads_origin",
+    "start": 428.0,
+    "end": 434.24,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P5:09_arch_darwinism_1889",
+    "start": 434.24,
+    "end": 440.5,
+    "status": "existing_render",
+    "source": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v01/code_graphic_013_p5_09_arch_darwinism_1889.mp4",
+    "source_sha256": "e016fe694873f45e8ef4ca614374c3e51a0ba21365e1088649393f5563fa6fad"
+  },
+  {
+    "row": "P5:10_darwin_worried_shelf",
+    "start": 440.5,
+    "end": 448.16,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P6:01_card_p06",
+    "start": 448.16,
+    "end": 449.66,
+    "status": "existing_render",
+    "source": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v01/code_graphic_013_p6_01_card_p06.mp4",
+    "source_sha256": "4a79a85e73970dc4194544b71e201c380223c2183a5ee4e0eb5f983816140acd"
+  },
+  {
+    "row": "P6:02a_jenkin_study",
+    "start": 449.66,
+    "end": 453.5,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P6:02b_paint_pots_mix",
+    "start": 453.5,
+    "end": 458.78,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P6:03_cg_blending_beaks",
+    "start": 458.78,
+    "end": 471.06,
+    "status": "existing_render",
+    "source": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v01/code_graphic_013_p6_03_cg_blending_beaks.mp4",
+    "source_sha256": "88b2c29e5ff4a755afcbbb38b6022e240e9c6a7324f8e2f25d824ad03682a4f2"
+  },
+  {
+    "row": "P6:04a_mendel_pea_garden",
+    "start": 471.06,
+    "end": 476.56,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P6:04b_arch_mendel_1866_paper",
+    "start": 476.56,
+    "end": 479.92,
+    "status": "existing_render",
+    "source": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v01/code_graphic_013_p6_04b_arch_mendel_1866_paper.mp4",
+    "source_sha256": "5bd1c34a160177f68c74813e52c7bf7a3615314c5a8cfe6c7825ceeb1e57351d"
+  },
+  {
+    "row": "P6:05_beads_not_paint",
+    "start": 479.92,
+    "end": 485.64,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P6:06a_origin_fifth_edition",
+    "start": 485.64,
+    "end": 490.6,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P6:06b_spencer_coined",
+    "start": 490.6,
+    "end": 496.54,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P6:07_key_in_lock",
+    "start": 496.54,
+    "end": 504.08,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P6:08a_reuse_study_beaks_callback",
+    "start": 504.08,
+    "end": 508.48,
+    "status": "unavailable_free_or_reuse",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P6:08b_darwin_mendel_synthesis",
+    "start": 508.48,
+    "end": 512.48,
+    "status": "unminted_quality",
+    "source": null,
+    "source_sha256": null
+  },
+  {
+    "row": "P6:09_cream_end_card",
+    "start": 512.48,
+    "end": 515.0,
+    "status": "existing_render",
+    "source": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v01/code_graphic_013_p6_09_cream_end_card.mp4",
+    "source_sha256": "21f5ae3744bb857ba386d31d5df4daceae24fb4701dc6cfdf31f809ee2db2fce"
+  }
+]

@@ -1,0 +1,53 @@
+{
+  "approved": false,
+  "remaining_choices": [
+    {
+      "row": "01_study_beaks",
+      "start_s": 0.0,
+      "cut_s": 3.82,
+      "sentence_windows": [
+        [
+          6.82,
+          7.9
+        ]
+      ],
+      "next_cut_s": 7.9
+    },
+    {
+      "row": "06_padlock_shut",
+      "start_s": 29.26,
+      "cut_s": 35.42,
+      "sentence_windows": [
+        [
+          32.26,
+          33.44
+        ]
+      ],
+      "next_cut_s": 40.6
+    },
+    {
+      "row": "01_card_p02",
+      "start_s": 75.12,
+      "cut_s": 78.14,
+      "sentence_windows": [
+        [
+          81.22,
+          81.98
+        ]
+      ],
+      "next_cut_s": 81.22
+    },
+    {
+      "row": "02a_jenkin_study",
+      "start_s": 453.0,
+      "cut_s": 456.88,
+      "sentence_windows": [
+        [
+          458.14,
+          458.78
+        ]
+      ],
+      "next_cut_s": 459.64
+    }
+  ]
+}

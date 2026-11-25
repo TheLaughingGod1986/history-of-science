@@ -1,0 +1,3 @@
+WARN   0:59 row P3:03_cg_malthus_curve_beat1 code_graphic_013_v03f_p3_03_cg_malthus_curve_beat1.mp4: low detail: edge density 0.0455 < film p5 0.0466
+WARN   2:48 row P6:03_cg_blending_beaks_beat1 code_graphic_013_v03f_p6_03_cg_blending_beaks_beat1.mp4: low detail: edge density 0.0449 < film p5 0.0466
+picture QA PASS: 0 of 35 cuts fail, 2 to look at -> /Volumes/MiniWork/scratch/J2498-wt/02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v03f/picture_qa_v03f/PICTURE_QA.md, /Volumes/MiniWork/scratch/J2498-wt/02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v03f/picture_qa_v03f/picture_qa_review.jpg

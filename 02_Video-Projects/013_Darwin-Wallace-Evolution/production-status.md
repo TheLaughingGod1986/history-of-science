@@ -183,3 +183,84 @@ picture QA PASS: 0 of 22 cuts fail, 4 to look at -> 02_Video-Projects/013_Darwin
 - The long VO stays locked as `hos_013_vo_v03a`. Do not re-record it.
 - The two Shorts takes above are waiting on review. No further ElevenLabs on them unless that review orders one pickup.
 - Do not merge or close desk PR #180 from this work.
+
+## J2498 — diagnostic timing rough, 11 Nov 2026
+
+Internal working cut: `07_Edit-Project/timing_rough_J2498/hos_013_timing_rough_J2498_v01.mp4` on studio-live. 515.00 s; 22 verified existing renders and 72 labelled slates. No generation or spend. See `07_Edit-Project/timing_rough_J2498/ROUGH_MANIFEST_v01.json` for full NAS path and SHA-256.
+
+`clip_check.py`: **FAIL**, exit 1, `passed: false`, nine errors (full pasted JSON in `timing_rough_J2498/clip_check_v01.json`). Independent word-timestamp audit: 14 cuts inside words, 23 cuts inside sentences, five graphics over 8 s. Overlay onset unresolved; no new overlays composited. No stage PASS claimed.
+
+Parked for Chief: resolve sentence-boundary cuts versus picture cadence, scope corrected v03 edit/overlay timings and five missing v02 free renders. Callback source unminted and its requested 4.40 s exceeds its 4.20 s source tail. Existing v01/v02 plans and generation authorization untouched. `TIMING_REPORT_v01.md` names every issue; `COST_OPTIONS_v01.md` offers three free alternatives saving 300 first-take / 777 expected credits if adopted. No Ben-watch submission, upload or schedule action.
+
+Repository verification for the J2498 evidence PR: `check_all.sh` → **ALL CHECKS PASS** (summary pasted in `timing_rough_J2498/VALIDATION_v01.md`). This does not override the failed media timing check.
+
+## J2652 checkpoint — 12 Nov 2026
+
+110-beat v03 scope and 515-second diagnostic rough delivered to NAS; 45 word onset records. `clip_check`: passed=true, errors=[], warnings=[]. Repository check_all.sh: ALL CHECKS PASS. **Overall FIX, not stage PASS**: unsupported phrase cuts, four source-length overruns, short chapter titles and seven cue overlaps remain. £0. v02 and J1310 audio untouched. See `07_Edit-Project/timing_rough_J2652/REVIEW_v03.md`; J2652 is released for continuation, not finished.
+
+### J2652 continuation — 12 November 2026, Codex
+
+Cue-scope revision only; edit remains **FIX**, not approved. Evidence:
+`07_Edit-Project/timing_rough_J2652/REVIEW_v03b.md` on PR #551.
+43 cue intervals now avoid all seven earlier collisions; every named person
+keeps the original word onset and a 3–4 s hold. Measured pauses at −45 dB
+supply additional cut candidates without changing the WAV or transcript.
+Nine inherited cuts, four source overruns and five brief chapter cards still
+need correction before a new rough. No spend or generation; v02/v03 preserved.
+
+Validation output (technical checks, not a film-stage PASS):
+
+```text
+CUE SCHEDULE PASS: 43 cues, zero collisions; names remain at their word onset for 3–4 s.
+TIMING FIX: 9 unsupported existing cuts; 0 spans exceed 7 s without a verified boundary.
+Ran 4 tests ... OK
+ALL CHECKS PASS
+Independent inherited cuts, 7 s cap, unchanged VO hash, and no-render guard: PASS
+```
+
+The repository-wide ALL CHECKS PASS does not waive the timing FIX. J2652
+continues at 2 of 3; the next run must revise shot allocation and chapter
+presentation, carry the repaired cues forward, then render and inspect a new
+version. Nothing is waiting on Ben.
+
+
+## J2652 v03c timing checkpoint — 12 November 2026, Codex
+
+Candidate plan: 106 beats, zero unsupported or in-word cuts, zero cumulative
+planned Quality-source overruns, all beats at most 7 s. All 43 cue anchors and
+display times preserved; five chapter titles have separate 2.5 s visibility
+windows and no cue overlap. Callback trimmed to 3.56 s of unused footage.
+v02/v03/v03b and the locked WAV remain unchanged. No spend or new render.
+
+```text
+Ran 8 tests in 0.017s — OK
+LOCKED WAV HASH PASS
+ALL CHECKS PASS (repository check_all.sh only)
+clip_check exit 1; passed=false (5 errors, 1 warning)
+```
+
+**Overall FIX, not an edit PASS or UAT.** The five errors arise because the
+checker measures pre-card breath after consuming the current card's narration.
+No checker was changed or bypassed. See
+`07_Edit-Project/timing_rough_J2652/REVIEW_v03c.md` for exact evidence, seven
+checks and remaining work: checker discrepancy, sentence/cadence and semantic
+review, free art/new compositions, new-version rough and phone sheets.
+
+
+## J2652 v03f diagnostic checkpoint — 13 November 2026, Codex
+
+104 beats; three sentence-preference conflicts resolved; no in-word or unsupported
+cuts; 7-second ceiling; 43 cue intervals preserved. Locked WAV unchanged.
+
+```text
+Ran 6 tests — OK
+clip_check: passed=true, errors=[], warnings=1
+ALL CHECKS PASS (repository checks only)
+Full diagnostic decode: exit 0
+NAS COPY HASH VERIFIED
+```
+
+Overall FIX, no edit PASS or UAT. New NAS diagnostic contains 57 raw footage beats
+and 47 explicit slates. See `07_Edit-Project/timing_rough_J2652/REVIEW_v03f.md`
+for all seven requested checks, six phone sheets, the opening interpretation for
+Chief and remaining free-art/source work. J2652 remains 2/3. No spend.

@@ -1,0 +1,41 @@
+{
+  "files": [
+    {
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/hos_013_timing_rough_J2652_v03.mp4",
+      "sha256": "035de33384a8d59d8354e786a88d41048e41eeb435e72f874fb77410bac1b0d8"
+    },
+    {
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/phone_contact_v03_01.jpg",
+      "sha256": "9996610ec556f2d965e18eddaaa889f663079f3ccee750e3c4b99b302831d91a"
+    },
+    {
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/phone_contact_v03_02.jpg",
+      "sha256": "085d302a5681ec0b294626cda080bf331a3487a32520aa9d8baaae3809d7eb26"
+    },
+    {
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/phone_contact_v03_03.jpg",
+      "sha256": "205162cb37faf1da69ce4d83759fbff234db193b8d131432d16423b1b508d93d"
+    },
+    {
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/phone_contact_v03_04.jpg",
+      "sha256": "a255a1d7d91b7fda19c0f7578095e951ef79b05b48ac3dcb3eb7c6542fd2d80b"
+    },
+    {
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/phone_contact_v03_05.jpg",
+      "sha256": "241e2f8c24f3ebc44ee9c985e558aa071b67bf3145175e32c99f9dcdb6cd76a1"
+    },
+    {
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/phone_contact_v03_06.jpg",
+      "sha256": "1173092be446078ddf11c7f5b1ec283b4a0305035bf7706af215654d68fa91f9"
+    }
+  ],
+  "vo_sha256": "837178125a72fb250d255f1039c5cb7f8630bbb313cf23801a1155f257d796e0",
+  "plan_sha256": "5b642e2826ae3e2f0ab48f30f23e6269a4159b18c29ad140e440b632256f56ed",
+  "duration_s": 515,
+  "fps": 50,
+  "credits_spent": 0,
+  "gbp_spent": 0,
+  "approved": false,
+  "slates": 101,
+  "limitations": "Selectable diagnostic cue subtitles only; no music/SFX. Missing art and revised graphics are slates. No audio or motion perception claimed."
+}
