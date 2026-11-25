@@ -1,9 +1,9 @@
 {
   "film": "018",
   "title": "Infrared: The Thermometer Experiment That Found Invisible Light",
-  "air": "2027-01-14",
+  "air": "",
   "ready_by": "2027-01-10",
-  "summary": "On the next_hos waiting line after 015 (jobs/WIP.json). Draft script master v01 under ideas/018_Herschel-Ritter-Invisible-Light; topic prepared, not entered into active WIP. Title from herschel_script_master_v01.md.",
+  "summary": "Unscheduled backlog (Herschel & Ritter / Invisible Light; stale Dec/Jan air date cleared in unified J3734 line-up, 25 Nov 2026). No locked script, VO, or WIP slot. Search-led films (128, 136, 137, 127) take January 2027 per Ben's 24 Nov OK; remains in jobs/WIP.json next_hos backlog.",
   "stages": {
     "topic": {
       "state": "todo"

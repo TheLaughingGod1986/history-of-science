@@ -1,0 +1,188 @@
+{
+  "part": "02",
+  "title": "Part 02 — T",
+  "film": "128_Edison-Tesla-Westinghouse-Why-Do-We-Use-AC-Instead-Of-DC",
+  "working_title": "Why Do We Use AC Instead of DC? (Edison vs Tesla)",
+  "version": "v01_pre_vo",
+  "task": "J3734 £0 pre-build while ElevenLabs credits are at zero; snap row timings to locked VO WAV & run Chief price pass before any Flow mint.",
+  "mint": false,
+  "generation_authorized": false,
+  "script_file": "01_Script/edison_tesla_ac_dc_script_master_v03.md",
+  "script_sha256": "c389c3cfbf758f5f261103bc6aa174cdb85dcc6f48c7e546f50ae63c98d3bb8b",
+  "vo_file": null,
+  "vo_duration_s": null,
+  "post_5_dec_flow_policy": "Veo 3.1 - Lite (5 cr / 0 cr Lower Priority on Ultra 20x) default; Flow Omni 1.2 Flash (720p, 24 cr for 8s, audio stripped, --allow-omni) for fragile light & Explorer (J3691).",
+  "summary": {
+    "rows": 9,
+    "veo_lite": 2,
+    "omni_1_2_flash": 2,
+    "code_graphic": 2,
+    "archive_parallax": 2,
+    "chapter_or_end_card": 1,
+    "explorer": 1,
+    "flow_try1": 58,
+    "flow_lp_try1": 48
+  },
+  "plates": [
+    {
+      "id": "P2:01",
+      "beat_kind": "chapter",
+      "shot_description": "The Trick That Shrank the Wire · ~1:25 nominal · case file desk · ~1.5 s",
+      "source_kind": "chapter_or_end_card",
+      "flow_model": "code-graphic-ffmpeg",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 0,
+      "flow_credits_try1_lower_priority": 0,
+      "prompt": "",
+      "teach_overlays": {},
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P2:02",
+      "beat_kind": "visual",
+      "shot_description": "warm 3D cartoon period drafting desk: a brass dial shows voltage climbing while a glowing current arrow shrinks; an inked diagram on cream parchment draws two wires side by side as wasted heat drops sharply",
+      "source_kind": "code_graphic",
+      "flow_model": "code-graphic-ffmpeg",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 0,
+      "flow_credits_try1_lower_priority": 0,
+      "prompt": "",
+      "teach_overlays": {
+        "data": [
+          "inked Joule-loss bar chart — raising voltage 10x cuts current to 1/10 and heat loss to 1/100"
+        ],
+        "scale": [
+          "ten times voltage, one hundredth heat"
+        ]
+      },
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P2:03",
+      "beat_kind": "visual",
+      "shot_description": "3D cartoon 1885 Budapest workshop at the Ganz Works: three engineers wind neat copper coils around a closed iron ring; warm magnetic field lines pulse through the ring, stepping voltage cleanly in parallel",
+      "source_kind": "flow_veo_3_1_lite",
+      "flow_model": "Veo 3.1 - Lite (5 cr standard / 0 cr Lower Priority on Ultra 20x)",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 5,
+      "flow_credits_try1_lower_priority": 0,
+      "prompt": "Premium 3D cartoon in HOS warm period palette. 3D cartoon 1885 Budapest workshop at the Ganz Works: three engineers wind neat copper coils around a closed iron ring; warm magnetic field lines pulse through the ring, stepping voltage cleanly in parallel No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "teach_overlays": {
+        "when": [
+          "Budapest, 1885"
+        ]
+      },
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P2:04",
+      "beat_kind": "visual",
+      "shot_description": "moving 3D cartoon close-up of parallel lamp circuits switching independently without dimming neighbouring bulbs (sequential label)",
+      "source_kind": "flow_omni_1_2_flash",
+      "flow_model": "Omni 1.2 Flash (720p, 8s, silent/audio-stripped, --allow-omni)",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 24,
+      "flow_credits_try1_lower_priority": 24,
+      "prompt": "Premium 3D cartoon in HOS warm period palette. moving 3D cartoon close-up of parallel lamp circuits switching independently without dimming neighbouring bulbs (sequential label) Stable warm light, zero flicker, zero lava drip or molten bead. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "teach_overlays": {
+        "label": [
+          "CLOSED-CORE TRANSFORMER"
+        ]
+      },
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P2:05",
+      "beat_kind": "visual",
+      "shot_description": "3D cartoon archival portrait parallax of George Westinghouse beside a brass railway air-brake blueprint (credited archive portrait over moving workshop plate, sequential card 1, 3–4 s)",
+      "source_kind": "archive_parallax",
+      "flow_model": "archive-composite-ffmpeg",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 0,
+      "flow_credits_try1_lower_priority": 0,
+      "prompt": "",
+      "teach_overlays": {
+        "who": [
+          "George Westinghouse (1846–1914) — industrialist & inventor"
+        ]
+      },
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P2:06",
+      "beat_kind": "visual",
+      "shot_description": "3D cartoon archival portrait parallax of William Stanley Jr. beside a copper-wound transformer coil in an old rubber mill (credited archive portrait over moving plate, sequential card 2, 3–4 s)",
+      "source_kind": "archive_parallax",
+      "flow_model": "archive-composite-ffmpeg",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 0,
+      "flow_credits_try1_lower_priority": 0,
+      "prompt": "",
+      "teach_overlays": {
+        "who": [
+          "William Stanley Jr. (1858–1916) — electrical engineer"
+        ]
+      },
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P2:07",
+      "beat_kind": "visual",
+      "shot_description": "3D cartoon snowy dusk in Great Barrington, Massachusetts: the old rubber mill hums as Stanley throws a brass switch and wires fastened to elm trees run along Main Street",
+      "source_kind": "flow_veo_3_1_lite",
+      "flow_model": "Veo 3.1 - Lite (5 cr standard / 0 cr Lower Priority on Ultra 20x)",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 5,
+      "flow_credits_try1_lower_priority": 0,
+      "prompt": "Premium 3D cartoon in HOS warm period palette. 3D cartoon snowy dusk in Great Barrington, Massachusetts: the old rubber mill hums as the young engineer throws a brass switch and wires fastened to elm trees run along Main Street No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "teach_overlays": {
+        "when": [
+          "Great Barrington, 20 March 1886"
+        ]
+      },
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P2:08",
+      "beat_kind": "visual",
+      "shot_description": "cream-on-brown inked two-track step diagram over moving Main Street footage: top track shows the 500 V → 3,000 V → 500 V test across 30 series lamps; bottom track shows 500 V street wires stepped down by 6 basement transformers to 100 V for 20 businesses",
+      "source_kind": "code_graphic",
+      "flow_model": "code-graphic-ffmpeg",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 0,
+      "flow_credits_try1_lower_priority": 0,
+      "prompt": "",
+      "teach_overlays": {
+        "data": [
+          "Great Barrington proof — 500 V to 3,000 V to 500 V demo; 500 V street line to 100 V across 20 businesses"
+        ],
+        "scale": [
+          "sixfold boost up, thirty times lower at the lamp"
+        ]
+      },
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P2:09",
+      "beat_kind": "explorer",
+      "shot_description": "once. Beside a brick basement wall off Great Barrington's Main Street, the Explorer leans close to a humming wooden transformer box, holds his brass compass near the insulated wire as the needle trembles, widens his eyes behind his round gold glasses, and steps back out of frame",
+      "source_kind": "flow_omni_1_2_flash",
+      "flow_model": "Omni 1.2 Flash (720p, 8s, silent/audio-stripped, --allow-omni)",
+      "generation_authorized": false,
+      "explorer": true,
+      "flow_credits_try1_standard": 24,
+      "flow_credits_try1_lower_priority": 24,
+      "prompt": "Premium 3D cartoon in HOS warm period palette. once. Beside a brick basement wall off Great Barrington's Main Street, the Explorer leans close to a humming wooden transformer box, holds his brass compass near the insulated wire as the needle trembles, widens his eyes behind his round gold glasses, and steps back out of frame Attach Explorer reference 01_Character/05_Generation-References/hos-explorer-reference-v01.jpg. Exactly one Explorer, on model (round gold glasses, teal long coat, finished hair). No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Orbit.",
+      "teach_overlays": {},
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    }
+  ]
+}

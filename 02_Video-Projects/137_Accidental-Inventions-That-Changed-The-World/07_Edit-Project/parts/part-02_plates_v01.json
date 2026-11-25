@@ -1,0 +1,128 @@
+{
+  "part": "02",
+  "title": "Part 02 — T",
+  "film": "137_Accidental-Inventions-That-Changed-The-World",
+  "working_title": "Accidental Inventions: 5 Mistakes That Worked",
+  "version": "v01_pre_vo",
+  "task": "J3734 £0 pre-build while ElevenLabs credits are at zero; snap row timings to locked VO WAV & run Chief price pass before any Flow mint.",
+  "mint": false,
+  "generation_authorized": false,
+  "script_file": "01_Script/accidental_inventions_script_master_v02.md",
+  "script_sha256": "d2a359c4cb30b707b9ac723693372c6faba1d65ca1d32d8241a2b9a3c25caecb",
+  "vo_file": null,
+  "vo_duration_s": null,
+  "post_5_dec_flow_policy": "Veo 3.1 - Lite (5 cr / 0 cr Lower Priority on Ultra 20x) default; Flow Omni 1.2 Flash (720p, 24 cr for 8s, audio stripped, --allow-omni) for fragile light & Explorer (J3691).",
+  "summary": {
+    "rows": 5,
+    "veo_lite": 1,
+    "omni_1_2_flash": 2,
+    "code_graphic": 1,
+    "archive_parallax": 0,
+    "chapter_or_end_card": 1,
+    "explorer": 1,
+    "flow_try1": 53,
+    "flow_lp_try1": 48
+  },
+  "plates": [
+    {
+      "id": "P2:01",
+      "beat_kind": "chapter",
+      "shot_description": "The Hot Stove Spill · 1:40 · ~1.5 s",
+      "source_kind": "chapter_or_end_card",
+      "flow_model": "code-graphic-ffmpeg",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 0,
+      "flow_credits_try1_lower_priority": 0,
+      "prompt": "",
+      "teach_overlays": {},
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P2:02",
+      "beat_kind": "visual",
+      "shot_description": "3D cartoon 1839 Woburn, Massachusetts rubber workshop in winter light: cluttered jars of pale yellow sulfur and white lead powder line a timber table beside a glowing cast-iron stove while Charles Goodyear tests sticky strips of natural India rubber",
+      "source_kind": "flow_omni_1_2_flash",
+      "flow_model": "Omni 1.2 Flash (720p, 8s, silent/audio-stripped, --allow-omni)",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 24,
+      "flow_credits_try1_lower_priority": 24,
+      "prompt": "Premium 3D cartoon in HOS warm period palette. 3D cartoon 1839 Woburn, Massachusetts rubber workshop in winter light: cluttered jars of pale yellow sulfur and white lead powder line a timber table beside a glowing cast-iron stove while a determined 1830s self-taught inventor in a wool waistcoat tests sticky strips of natural India rubber Stable warm light, zero flicker, zero lava drip or molten bead. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "teach_overlays": {
+        "label": [
+          "WOBURN 1839"
+        ],
+        "who": [
+          "Charles Goodyear (1800–1860) — self-taught rubber inventor"
+        ],
+        "when": [
+          "Woburn, 1839"
+        ]
+      },
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P2:03",
+      "beat_kind": "visual",
+      "shot_description": "3D cartoon macro close-up on the glowing cast-iron stove top: a small ribbon of rubber mixed with sulfur and white lead chars neatly around its edge into tough dark leather instead of melting, beside an animated temperature-and-cure graphic inked on cream paper",
+      "source_kind": "code_graphic",
+      "flow_model": "code-graphic-ffmpeg",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 0,
+      "flow_credits_try1_lower_priority": 0,
+      "prompt": "",
+      "teach_overlays": {
+        "label": [
+          "VULCANISATION CURE"
+        ],
+        "data": [
+          "raw rubber failure vs Goodyear's 1844 vulcanisation cure (U.S. Patent 3,633) — 270°F (132°C) heat with sulfur and white lead after 5 years of refinement"
+        ],
+        "scale": [
+          "hotter than boiling water — where raw rubber turns to runny syrup, vulcanised rubber stays tough as leather"
+        ]
+      },
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P2:04",
+      "beat_kind": "explorer",
+      "shot_description": "once. Beside the frosted workshop window in Woburn, the Explorer gently stretches a cool vulcanised rubber strip between two gloved fingers, tests its springy snap with a delighted nod, and steps back out of frame",
+      "source_kind": "flow_omni_1_2_flash",
+      "flow_model": "Omni 1.2 Flash (720p, 8s, silent/audio-stripped, --allow-omni)",
+      "generation_authorized": false,
+      "explorer": true,
+      "flow_credits_try1_standard": 24,
+      "flow_credits_try1_lower_priority": 24,
+      "prompt": "Premium 3D cartoon in HOS warm period palette. once. Beside the frosted workshop window in Woburn, the Explorer gently stretches a cool vulcanised rubber strip between two gloved fingers, tests its springy snap with a delighted nod, and steps back out of frame Attach Explorer reference 01_Character/05_Generation-References/hos-explorer-reference-v01.jpg. Exactly one Explorer, on model (round gold glasses, teal long coat, finished hair). No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Orbit.",
+      "teach_overlays": {},
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P2:05",
+      "beat_kind": "visual",
+      "shot_description": "3D cartoon warm parchment timeline card showing June 15, 1844 U.S. Patent 3,633 beside an inked ledger closing in 1860 and a separate 1898 Akron tyre crest thirty-eight years later",
+      "source_kind": "flow_veo_3_1_lite",
+      "flow_model": "Veo 3.1 - Lite (5 cr standard / 0 cr Lower Priority on Ultra 20x)",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 5,
+      "flow_credits_try1_lower_priority": 0,
+      "prompt": "Premium 3D cartoon in HOS warm period palette. 3D cartoon warm parchment timeline card showing June 15, 1844 U.S. Patent 3,633 beside an inked ledger closing in 1860 and a separate 1898 Akron tyre crest thirty-eight years later No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "teach_overlays": {
+        "label": [
+          "PATENT 3,633"
+        ],
+        "when": [
+          "1844, 1860 & 1898"
+        ],
+        "fact": [
+          "Died $200,000 in debt"
+        ]
+      },
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    }
+  ]
+}

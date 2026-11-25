@@ -1,0 +1,224 @@
+{
+  "part": "02",
+  "title": "Part 02 — C",
+  "film": "136_Oppenheimer-Teller-Bethe-Trinity-Test-Explained",
+  "working_title": "Trinity Test Explained: Could It Ignite the Sky?",
+  "version": "v01_pre_vo",
+  "task": "J3734 £0 pre-build while ElevenLabs credits are at zero; snap row timings to locked VO WAV & run Chief price pass before any Flow mint.",
+  "mint": false,
+  "generation_authorized": false,
+  "script_file": "01_Script/trinity_test_explained_script_master_v02.md",
+  "script_sha256": "85fb1286610264f5692a1e1dfe766fc0dfb90231016fd27f012dc079499047b2",
+  "vo_file": null,
+  "vo_duration_s": null,
+  "post_5_dec_flow_policy": "Veo 3.1 - Lite (5 cr / 0 cr Lower Priority on Ultra 20x) default; Flow Omni 1.2 Flash (720p, 24 cr for 8s, audio stripped, --allow-omni) for fragile light & Explorer (J3691).",
+  "summary": {
+    "rows": 11,
+    "veo_lite": 7,
+    "omni_1_2_flash": 2,
+    "code_graphic": 1,
+    "archive_parallax": 0,
+    "chapter_or_end_card": 1,
+    "explorer": 1,
+    "flow_try1": 83,
+    "flow_lp_try1": 48
+  },
+  "plates": [
+    {
+      "id": "P2:01",
+      "beat_kind": "chapter",
+      "shot_description": "Checking the Sky · 1:35 · ~1.5 s",
+      "source_kind": "chapter_or_end_card",
+      "flow_model": "code-graphic-ffmpeg",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 0,
+      "flow_credits_try1_lower_priority": 0,
+      "prompt": "",
+      "teach_overlays": {},
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P2:02",
+      "beat_kind": "visual",
+      "shot_description": "3D cartoon sunlit 1942–1943 theoretical physics room lined with wooden desks, mechanical calculators, and green chalkboards",
+      "source_kind": "flow_veo_3_1_lite",
+      "flow_model": "Veo 3.1 - Lite (5 cr standard / 0 cr Lower Priority on Ultra 20x)",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 5,
+      "flow_credits_try1_lower_priority": 0,
+      "prompt": "Premium 3D cartoon in HOS warm period palette. 3D cartoon sunlit 1942–1943 theoretical physics room lined with wooden desks, mechanical calculators, and green chalkboards No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "teach_overlays": {
+        "when": [
+          "1942–1943"
+        ]
+      },
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P2:03",
+      "beat_kind": "visual",
+      "shot_description": "3D cartoon over-the-shoulder shot of Hans Bethe writing hand-verified energy-balance equations neatly across green slate",
+      "source_kind": "flow_veo_3_1_lite",
+      "flow_model": "Veo 3.1 - Lite (5 cr standard / 0 cr Lower Priority on Ultra 20x)",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 5,
+      "flow_credits_try1_lower_priority": 0,
+      "prompt": "Premium 3D cartoon in HOS warm period palette. 3D cartoon over-the-shoulder shot of a cheerful 1940s chief theoretical physicist writing hand-verified energy-balance equations neatly across green slate No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "teach_overlays": {
+        "who": [
+          "Hans Bethe (1906–2005) — theoretical physics chief"
+        ]
+      },
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P2:04",
+      "beat_kind": "visual",
+      "shot_description": "3D cartoon close-up of Emil Konopinski checking cross-section tables with a brass slide rule beside stacks of scratch pads",
+      "source_kind": "flow_veo_3_1_lite",
+      "flow_model": "Veo 3.1 - Lite (5 cr standard / 0 cr Lower Priority on Ultra 20x)",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 5,
+      "flow_credits_try1_lower_priority": 0,
+      "prompt": "Premium 3D cartoon in HOS warm period palette. 3D cartoon close-up of a focused 1940s nuclear theorist with a slide rule checking cross-section tables with a brass slide rule beside stacks of scratch pads No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "teach_overlays": {
+        "who": [
+          "Emil Konopinski (1911–1990) — nuclear theorist"
+        ]
+      },
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P2:05",
+      "beat_kind": "visual",
+      "shot_description": "3D cartoon close-up of chalk-drawn energy ledger: two glowing nitrogen nuclei deflect apart under strong electrostatic repulsion",
+      "source_kind": "flow_omni_1_2_flash",
+      "flow_model": "Omni 1.2 Flash (720p, 8s, silent/audio-stripped, --allow-omni)",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 24,
+      "flow_credits_try1_lower_priority": 24,
+      "prompt": "Premium 3D cartoon in HOS warm period palette. 3D cartoon close-up of chalk-drawn energy ledger: two glowing nitrogen nuclei deflect apart under strong electrostatic repulsion Stable warm light, zero flicker, zero lava drip or molten bead. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "teach_overlays": {
+        "label": [
+          "CHECKING THE MATH"
+        ]
+      },
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P2:06",
+      "beat_kind": "visual",
+      "shot_description": "3D cartoon period parchment explainer (inked in edit, hand-verified): a warm golden heat-loss curve climbs steeply like a wall while a faint nitrogen-fusion curve stays trapped beneath it; glowing radiation arrows stream out from racing electrons",
+      "source_kind": "code_graphic",
+      "flow_model": "code-graphic-ffmpeg",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 0,
+      "flow_credits_try1_lower_priority": 0,
+      "prompt": "",
+      "teach_overlays": {
+        "label": [
+          "RADIATION WINS"
+        ],
+        "data": [
+          "animated Bremsstrahlung and inverse Compton cooling vs nitrogen-14 fusion curve — LA-602 safety factor stays above 1 at every temperature (~1.6 worst-case floor, 7.4 with inverse Compton)"
+        ],
+        "scale": [
+          "like trying to boil a frozen lake with a spark that loses heat faster than it can burn"
+        ]
+      },
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P2:07",
+      "beat_kind": "explorer",
+      "shot_description": "once. In the warm wooden hallway outside the Los Alamos chalkboard room, the Explorer peers around the doorway, tilts his head at the steeply rising cooling curve chalked on the slate, taps his blue notebook twice with a relieved nod, and slips quietly out of frame",
+      "source_kind": "flow_omni_1_2_flash",
+      "flow_model": "Omni 1.2 Flash (720p, 8s, silent/audio-stripped, --allow-omni)",
+      "generation_authorized": false,
+      "explorer": true,
+      "flow_credits_try1_standard": 24,
+      "flow_credits_try1_lower_priority": 24,
+      "prompt": "Premium 3D cartoon in HOS warm period palette. once. In the warm wooden hallway outside the Los Alamos chalkboard room, the Explorer peers around the doorway, tilts his head at the steeply rising cooling curve chalked on the slate, taps his blue notebook twice with a relieved nod, and slips quietly out of frame Attach Explorer reference 01_Character/05_Generation-References/hos-explorer-reference-v01.jpg. Exactly one Explorer, on model (round gold glasses, teal long coat, finished hair). No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Orbit.",
+      "teach_overlays": {},
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P2:08",
+      "beat_kind": "visual",
+      "shot_description": "3D cartoon wooden library table with a 1959 Sunday magazine supplement opened beside a neatly stamped scholarly journal rebuttal",
+      "source_kind": "flow_veo_3_1_lite",
+      "flow_model": "Veo 3.1 - Lite (5 cr standard / 0 cr Lower Priority on Ultra 20x)",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 5,
+      "flow_credits_try1_lower_priority": 0,
+      "prompt": "Premium 3D cartoon in HOS warm period palette. 3D cartoon wooden library table with a 1959 Sunday magazine supplement opened beside a neatly stamped scholarly journal rebuttal No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "teach_overlays": {
+        "when": [
+          "1959"
+        ]
+      },
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P2:09",
+      "beat_kind": "visual",
+      "shot_description": "3D cartoon close-up pushing the 1959 magazine clipping cleanly aside in warm desk light",
+      "source_kind": "flow_veo_3_1_lite",
+      "flow_model": "Veo 3.1 - Lite (5 cr standard / 0 cr Lower Priority on Ultra 20x)",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 5,
+      "flow_credits_try1_lower_priority": 0,
+      "prompt": "Premium 3D cartoon in HOS warm period palette. 3D cartoon close-up pushing the 1959 magazine clipping cleanly aside in warm desk light No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "teach_overlays": {
+        "fact": [
+          "Myth came in 1959"
+        ]
+      },
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P2:10",
+      "beat_kind": "visual",
+      "shot_description": "3D cartoon cream-paper report folder stamped \"LA-602 · AUGUST 1946\" (hand-verified edit ink) resting on a warm oak archive desk",
+      "source_kind": "flow_veo_3_1_lite",
+      "flow_model": "Veo 3.1 - Lite (5 cr standard / 0 cr Lower Priority on Ultra 20x)",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 5,
+      "flow_credits_try1_lower_priority": 0,
+      "prompt": "Premium 3D cartoon in HOS warm period palette. 3D cartoon cream-paper report folder stamped \"LA-602 · AUGUST 1946\" (hand-verified edit ink) resting on a warm oak archive desk No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "teach_overlays": {
+        "when": [
+          "August 1946"
+        ]
+      },
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P2:11",
+      "beat_kind": "visual",
+      "shot_description": "3D cartoon close-up on the declassified LA-602 cover sheet and neatly inked cooling margin bar",
+      "source_kind": "flow_veo_3_1_lite",
+      "flow_model": "Veo 3.1 - Lite (5 cr standard / 0 cr Lower Priority on Ultra 20x)",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 5,
+      "flow_credits_try1_lower_priority": 0,
+      "prompt": "Premium 3D cartoon in HOS warm period palette. 3D cartoon close-up on the declassified LA-602 cover sheet and neatly inked cooling margin bar No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "teach_overlays": {
+        "fact": [
+          "LA-602 published in 1946"
+        ]
+      },
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    }
+  ]
+}

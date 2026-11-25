@@ -1,0 +1,186 @@
+{
+  "part": "04",
+  "title": "Part 04 — T",
+  "film": "128_Edison-Tesla-Westinghouse-Why-Do-We-Use-AC-Instead-Of-DC",
+  "working_title": "Why Do We Use AC Instead of DC? (Edison vs Tesla)",
+  "version": "v01_pre_vo",
+  "task": "J3734 £0 pre-build while ElevenLabs credits are at zero; snap row timings to locked VO WAV & run Chief price pass before any Flow mint.",
+  "mint": false,
+  "generation_authorized": false,
+  "script_file": "01_Script/edison_tesla_ac_dc_script_master_v03.md",
+  "script_sha256": "c389c3cfbf758f5f261103bc6aa174cdb85dcc6f48c7e546f50ae63c98d3bb8b",
+  "vo_file": null,
+  "vo_duration_s": null,
+  "post_5_dec_flow_policy": "Veo 3.1 - Lite (5 cr / 0 cr Lower Priority on Ultra 20x) default; Flow Omni 1.2 Flash (720p, 24 cr for 8s, audio stripped, --allow-omni) for fragile light & Explorer (J3691).",
+  "summary": {
+    "rows": 9,
+    "veo_lite": 5,
+    "omni_1_2_flash": 1,
+    "code_graphic": 0,
+    "archive_parallax": 2,
+    "chapter_or_end_card": 1,
+    "explorer": 0,
+    "flow_try1": 49,
+    "flow_lp_try1": 24
+  },
+  "plates": [
+    {
+      "id": "P4:01",
+      "beat_kind": "chapter",
+      "shot_description": "The War of the Currents · ~4:40 nominal · case file desk · ~1.5 s",
+      "source_kind": "chapter_or_end_card",
+      "flow_model": "code-graphic-ffmpeg",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 0,
+      "flow_credits_try1_lower_priority": 0,
+      "prompt": "",
+      "teach_overlays": {},
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P4:02",
+      "beat_kind": "visual",
+      "shot_description": "3D cartoon 1886 New York office desk: an open confidential engineering report advising on system limits and AC sits pushed aside under Thomas Edison's hand, cutting to dramatic back-and-forth archival portrait frames of Edison and Westinghouse (aligned to 1886; sequential card 1)",
+      "source_kind": "archive_parallax",
+      "flow_model": "archive-composite-ffmpeg",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 0,
+      "flow_credits_try1_lower_priority": 0,
+      "prompt": "",
+      "teach_overlays": {
+        "when": [
+          "New York, 1886"
+        ]
+      },
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P4:03",
+      "beat_kind": "visual",
+      "shot_description": "warm brass desk lamp casts long shadows over Edison's DC patent ledgers (moving plate, sequential label 2)",
+      "source_kind": "flow_omni_1_2_flash",
+      "flow_model": "Omni 1.2 Flash (720p, 8s, silent/audio-stripped, --allow-omni)",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 24,
+      "flow_credits_try1_lower_priority": 24,
+      "prompt": "Premium 3D cartoon in HOS warm period palette. warm brass desk lamp casts long shadows over the inventor's DC patent ledgers (moving plate, sequential label 2) Stable warm light, zero flicker, zero lava drip or molten bead. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "teach_overlays": {
+        "label": [
+          "CASE CLOSED? WRONG"
+        ]
+      },
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P4:04",
+      "beat_kind": "visual",
+      "shot_description": "3D cartoon snowy March 1888 Manhattan street with snapped overhead wires swaying in wind, cutting to a New York lecture hall and printing press",
+      "source_kind": "flow_veo_3_1_lite",
+      "flow_model": "Veo 3.1 - Lite (5 cr standard / 0 cr Lower Priority on Ultra 20x)",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 5,
+      "flow_credits_try1_lower_priority": 0,
+      "prompt": "Premium 3D cartoon in HOS warm period palette. 3D cartoon snowy March 1888 Manhattan street with snapped overhead wires swaying in wind, cutting to a New York lecture hall and printing press No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "teach_overlays": {
+        "when": [
+          "New York, March 1888"
+        ]
+      },
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P4:05",
+      "beat_kind": "visual",
+      "shot_description": "3D cartoon archival portrait parallax of Harold P. Brown beside stacked warning pamphlets in West Orange (credited archive portrait over moving press plate, sequential card 1)",
+      "source_kind": "archive_parallax",
+      "flow_model": "archive-composite-ffmpeg",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 0,
+      "flow_credits_try1_lower_priority": 0,
+      "prompt": "",
+      "teach_overlays": {
+        "who": [
+          "Harold P. Brown (1857–1944) — electrical engineer"
+        ]
+      },
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P4:06",
+      "beat_kind": "visual",
+      "shot_description": "moving plate of the West Orange laboratory exterior at dusk (sequential card 2)",
+      "source_kind": "flow_veo_3_1_lite",
+      "flow_model": "Veo 3.1 - Lite (5 cr standard / 0 cr Lower Priority on Ultra 20x)",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 5,
+      "flow_credits_try1_lower_priority": 0,
+      "prompt": "Premium 3D cartoon in HOS warm period palette. moving plate of the West Orange laboratory exterior at dusk (sequential card 2) No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "teach_overlays": {
+        "when": [
+          "West Orange, 1888"
+        ]
+      },
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P4:07",
+      "beat_kind": "visual",
+      "shot_description": "3D cartoon sombre Victorian courthouse steps and rain-wet newspaper front pages (dignified, zero graphic imagery; sequential card 1)",
+      "source_kind": "flow_veo_3_1_lite",
+      "flow_model": "Veo 3.1 - Lite (5 cr standard / 0 cr Lower Priority on Ultra 20x)",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 5,
+      "flow_credits_try1_lower_priority": 0,
+      "prompt": "Premium 3D cartoon in HOS warm period palette. 3D cartoon sombre Victorian courthouse steps and rain-wet newspaper front pages (dignified, zero graphic imagery; sequential card 1) No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "teach_overlays": {
+        "who": [
+          "William Kemmler (1860–1890) — first electrocution prisoner"
+        ]
+      },
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P4:08",
+      "beat_kind": "visual",
+      "shot_description": "moving close-up of ink ripples on an 1890 broadsheet (sequential card 2)",
+      "source_kind": "flow_veo_3_1_lite",
+      "flow_model": "Veo 3.1 - Lite (5 cr standard / 0 cr Lower Priority on Ultra 20x)",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 5,
+      "flow_credits_try1_lower_priority": 0,
+      "prompt": "Premium 3D cartoon in HOS warm period palette. moving close-up of ink ripples on an 1890 broadsheet (sequential card 2) No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "teach_overlays": {
+        "when": [
+          "Auburn, 6 August 1890"
+        ]
+      },
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P4:09",
+      "beat_kind": "visual",
+      "shot_description": "3D cartoon Wall Street boardroom where a brass nameplate \"EDISON ELECTRIC\" is lifted down and replaced with \"GENERAL ELECTRIC\"",
+      "source_kind": "flow_veo_3_1_lite",
+      "flow_model": "Veo 3.1 - Lite (5 cr standard / 0 cr Lower Priority on Ultra 20x)",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 5,
+      "flow_credits_try1_lower_priority": 0,
+      "prompt": "Premium 3D cartoon in HOS warm period palette. 3D cartoon Wall Street boardroom where a brass nameplate \"EDISON ELECTRIC\" is lifted down and replaced with \"GENERAL ELECTRIC\" No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "teach_overlays": {
+        "when": [
+          "15 April 1892"
+        ]
+      },
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    }
+  ]
+}

@@ -1,9 +1,9 @@
 {
   "film": "137",
   "title": "Accidental Inventions: 5 Mistakes That Worked",
-  "air": "2026-12-24",
+  "air": "2027-01-21",
   "ready_by": "2026-12-21",
-  "summary": "Film 3 of the History of Science search-led plan (hos-search-2027-01, Ben OK 24 Nov 2026; target air Thu 24 Dec 18:00 London, watch by Mon 21 Dec; slides a week if not ready). Script v02, primary sources & 16-19s Shorts LOCKED by Acting Chief (gemini, J3687 KEEP, 25 Nov 2026; HOS PR #775 merged b4622600 superseding #747/#754/#769/#772; J3565 closed done; review:script 91.8/100 PASS; default gate:episode 9/9 PASS; J3686 independent facts audit 18 OK / 10 PARTIAL / 0 FLAG; check_all.sh ALL CHECKS PASS). Long VO & Shorts VO cleanly held under Rule G WIP (HOS currently 5/5 active: 009, 010, 013, 128, 136); £0.00 spent; picture & rendered thumbnails wait for VO PASS.",
+  "summary": "Search-led Film 3 (Cluster 3, hos-search-2027-01) slotted Thu 21 Jan 2027 18:00 London (Ben watch Mon 18 Jan; unified J3734 line-up, 25 Nov). Promoted into active HOS WIP (5/5: 011, 013, 128, 136, 137) after finished 009 rotated out and 010 parked. Script v02, facts, and Shorts scripts v02 LOCKED (J3687, PR #775). £0 pre-build complete (J3734): PICTURE_PLAN_v01.json + parts 01-05 Flow prompt boards (post-5-Dec Veo 3.1 - Lite / Omni 1.2 Flash, generation_authorized: false), lint-passing PACKAGE_MANIFEST.json + Descriptions + Tags, and 08_Thumbnail/THUMBNAIL_BRIEF_v01.md. Long + Shorts VO queued #3 in HOS post-30-Nov voice order (after HOS:136 J3678).",
   "stages": {
     "topic": {
       "state": "done",
@@ -26,19 +26,19 @@
       "note": "LOCKED by Acting Chief (gemini, J3687 KEEP, 2026-11-25) after J3686 independent Gemini v02 audit (01_Script/GEMINI_FACTS_CHECK_v02.md, sha256 1fd7a797..., 18 OK / 10 PARTIAL / 0 FLAG across 28 items, 36/36 live URLs HTTP 200) plus J3687 independent live HTTP exact-quote checks (35/36 direct HTTP 200 + 3M Post-it search-grounded) on SOURCES.md (bc755590...) and FACT_NOTES_v02.md (7f502091...)"
     },
     "package": {
-      "state": "doing",
+      "state": "done",
       "due": "2026-12-08",
-      "owner": "Chief",
+      "owner": "gemini",
       "since": "2026-11-25",
       "underway": false,
-      "waiting": "VO re-timing, rendered thumbnails after VO PASS, and PACKAGE_MANIFEST.json before upload",
-      "note": "Working packaging direction confirmed in J3687 (Primary Arm A 45c 'Accidental Inventions: 5 Mistakes That Worked' with manifest neighbour phrase 'inventions' per §1.3, T&C Arms B 69c & C 56c, unrendered draft Thumb Concepts A NEARLY TRASHED & B WRONG RESISTOR with §2.6 hand-verified ink & §2.9 3rd T&C variant post-VO, S01 48c & S02 54c 0 collisions); NOT rendered packaging PASS yet"
+      "waiting": "",
+      "note": "J3734 £0 pre-build: PACKAGE_MANIFEST.json (Thu 21 Jan 2027), Descriptions/accidental_inventions_long_description_v01.txt, Tags/accidental_inventions_long_tags_v01.txt pass lint:package; re-time chapters on VO PASS."
     },
     "vo": {
       "state": "todo",
-      "due": "2026-12-11",
+      "due": "2026-12-07",
       "owner": "Codex",
-      "waiting": "Held on Rule G WIP slot release (HOS currently 5/5 active: 009, 010, 013, 128, 136); locked v02 script d2a359c4... ready for Mac-mini ElevenLabs VO once a slot clears"
+      "waiting": "Queued by J3734 (active WIP) — #3 HOS voice priority after 30 Nov reset (behind HOS:136 J3678)"
     },
     "shorts_scripts": {
       "state": "done",
@@ -49,41 +49,41 @@
     },
     "shorts_vo": {
       "state": "todo",
-      "due": "2026-12-12",
+      "due": "2026-12-08",
       "owner": "Codex",
-      "waiting": "Held on Rule G WIP slot release (HOS currently 5/5 active: 009, 010, 013, 128, 136); locked v02 Shorts 62ff7c99... ready for Mac-mini ElevenLabs VO once a slot clears"
+      "waiting": "Queued with long VO after J3678 (subject to live ElevenLabs balance)"
     },
     "picture": {
       "state": "todo",
-      "due": "2026-12-17",
+      "due": "2027-01-05",
       "owner": "Cursor",
-      "waiting": "after Chief VO PASS (Flow credits within existing plan; renews 12 Dec)"
+      "waiting": "£0 PICTURE_PLAN_v01.json + parts 01-05 Flow prompt boards pre-built (J3734); re-time to VO & price-pass after Chief VO PASS"
     },
     "edit": {
       "state": "todo",
-      "due": "2026-12-19",
+      "due": "2027-01-13",
       "owner": "Cursor",
       "waiting": "after picture PASS"
     },
     "thumbnails": {
       "state": "todo",
-      "due": "2026-12-19",
+      "due": "2027-01-13",
       "owner": "Codex",
-      "waiting": "after Chief VO PASS (Thumb A NEARLY TRASHED, Thumb B WRONG RESISTOR, plus 3rd T&C variant per §2.9; §2.6 hand-verified text)"
+      "waiting": "08_Thumbnail/THUMBNAIL_BRIEF_v01.md pre-built (J3734); render after Chief VO PASS"
     },
     "ben_ok": {
       "state": "todo",
-      "due": "2026-12-21",
+      "due": "2027-01-18",
       "owner": "Ben",
       "waiting": "after finished long, Shorts, and thumbnails pass Chief QA"
     },
     "scheduled": {
       "state": "todo",
-      "due": "2026-12-22",
+      "due": "2027-01-19",
       "owner": "Chief",
       "waiting": "after Ben's watch OK (target air Thu 24 Dec 18:00 London)"
     }
   },
   "claims": [],
-  "next": "Script, facts & Shorts v02 LOCKED (J3687 KEEP, PR #775 b4622600). Hold HOS:137 long VO + Shorts VO until an open HOS WIP slot clears in orbit-with-ben/jobs/WIP.json (currently 5/5 active: 009, 010, 013, 128, 136); preserve Mon 21 Dec watch & Thu 24 Dec 18:00 London target"
+  "next": "Promoted to active HOS WIP & £0 pre-build complete (J3734). Voice queued #3 after HOS:136 post-30-Nov reset -> Thu 21 Jan 2027."
 }

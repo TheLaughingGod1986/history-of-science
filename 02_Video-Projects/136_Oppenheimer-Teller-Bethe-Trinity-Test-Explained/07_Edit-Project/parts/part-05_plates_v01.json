@@ -1,0 +1,116 @@
+{
+  "part": "05",
+  "title": "Part 05 — W",
+  "film": "136_Oppenheimer-Teller-Bethe-Trinity-Test-Explained",
+  "working_title": "Trinity Test Explained: Could It Ignite the Sky?",
+  "version": "v01_pre_vo",
+  "task": "J3734 £0 pre-build while ElevenLabs credits are at zero; snap row timings to locked VO WAV & run Chief price pass before any Flow mint.",
+  "mint": false,
+  "generation_authorized": false,
+  "script_file": "01_Script/trinity_test_explained_script_master_v02.md",
+  "script_sha256": "85fb1286610264f5692a1e1dfe766fc0dfb90231016fd27f012dc079499047b2",
+  "vo_file": null,
+  "vo_duration_s": null,
+  "post_5_dec_flow_policy": "Veo 3.1 - Lite (5 cr / 0 cr Lower Priority on Ultra 20x) default; Flow Omni 1.2 Flash (720p, 24 cr for 8s, audio stripped, --allow-omni) for fragile light & Explorer (J3691).",
+  "summary": {
+    "rows": 5,
+    "veo_lite": 1,
+    "omni_1_2_flash": 1,
+    "code_graphic": 1,
+    "archive_parallax": 0,
+    "chapter_or_end_card": 2,
+    "explorer": 0,
+    "flow_try1": 29,
+    "flow_lp_try1": 24
+  },
+  "plates": [
+    {
+      "id": "P5:01",
+      "beat_kind": "chapter",
+      "shot_description": "What the Equations Proved · 6:50 · ~1.5 s",
+      "source_kind": "chapter_or_end_card",
+      "flow_model": "code-graphic-ffmpeg",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 0,
+      "flow_credits_try1_lower_priority": 0,
+      "prompt": "",
+      "teach_overlays": {},
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P5:02",
+      "beat_kind": "visual",
+      "shot_description": "3D cartoon sunlit desert sand close-up: tiny pale-green beads of smooth melted glass — trinitite — glint softly under a clear blue New Mexico sky",
+      "source_kind": "flow_veo_3_1_lite",
+      "flow_model": "Veo 3.1 - Lite (5 cr standard / 0 cr Lower Priority on Ultra 20x)",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 5,
+      "flow_credits_try1_lower_priority": 0,
+      "prompt": "Premium 3D cartoon in HOS warm period palette. 3D cartoon sunlit desert sand close-up: tiny pale-green beads of smooth melted glass — trinitite — glint softly under a clear blue New Mexico sky No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "teach_overlays": {
+        "label": [
+          "TRINITITE GLASS"
+        ]
+      },
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P5:03",
+      "beat_kind": "visual",
+      "shot_description": "3D cartoon warm cream parchment timeline inked cleanly in edit (hand-verified edit ink) dropping markers one by one from July 1942 to August 1946",
+      "source_kind": "code_graphic",
+      "flow_model": "code-graphic-ffmpeg",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 0,
+      "flow_credits_try1_lower_priority": 0,
+      "prompt": "",
+      "teach_overlays": {
+        "label": [
+          "1942 TO 1946 TIMELINE"
+        ],
+        "data": [
+          "animated 1942–1946 Trinity physics timeline — July 1942 Berkeley question"
+        ],
+        "scale": [
+          "four years from the July 1942 chalkboard scare to the August 1946 LA-602 proof"
+        ]
+      },
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P5:04",
+      "beat_kind": "visual",
+      "shot_description": "3D cartoon sweeping dusk transition from the quiet blue New Mexico sky over Los Alamos up to glowing stars, dissolving warmly into a sunlit 1942 university squash court stacked with neat black graphite bricks",
+      "source_kind": "flow_omni_1_2_flash",
+      "flow_model": "Omni 1.2 Flash (720p, 8s, silent/audio-stripped, --allow-omni)",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 24,
+      "flow_credits_try1_lower_priority": 24,
+      "prompt": "Premium 3D cartoon in HOS warm period palette. 3D cartoon sweeping dusk transition from the quiet blue New Mexico sky over Los Alamos up to glowing stars, dissolving warmly into a sunlit 1942 university squash court stacked with neat black graphite bricks Stable warm light, zero flicker, zero lava drip or molten bead. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "teach_overlays": {
+        "label": [
+          "PHYSICS OF ENERGY"
+        ]
+      },
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P5:05",
+      "beat_kind": "visual",
+      "shot_description": "the cream end card (STUDIO_PLAYBOOK.md §7). No goodbye, no subscribe ask.",
+      "source_kind": "chapter_or_end_card",
+      "flow_model": "code-graphic-ffmpeg",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 0,
+      "flow_credits_try1_lower_priority": 0,
+      "prompt": "",
+      "teach_overlays": {},
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    }
+  ]
+}

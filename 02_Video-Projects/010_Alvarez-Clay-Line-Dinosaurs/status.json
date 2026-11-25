@@ -1,9 +1,9 @@
 {
   "film": "010",
   "title": "What Killed the Dinosaurs Was Hidden in a Line of Clay",
-  "air": "2026-12-03",
+  "air": "2027-02-04",
   "ready_by": "2026-11-29",
-  "summary": "Long VO v01 locked (5 parts); Chief KEEP all five, no pickups (desk 6101773293). Picture next after Claude's board review and credit.",
+  "summary": "Parked from impossible Thu 3 Dec slot to Thu 4 Feb 2027 (Ben watch Mon 1 Feb; #2 in next_hos behind HOS:127; swap reserve for Thu 31 Dec if HOS:013 remains blocked on J3178 by 11 Dec; J3734, 25 Nov). Long VO (500 s), Shorts VO, and BOTH Shorts A (mpK3D6S7WLk) & C (sMPlMuxK3YU) are locked, Ben-approved & privately uploaded (J3610/J3611 cleanly held until long upload). Long picture (60 Flow rows in PICTURE_PLAN_v04.json) re-scopes to post-5-Dec Veo 3.1 - Lite / Omni 1.2 Flash once a WIP slot opens.",
   "stages": {
     "topic": {
       "state": "done"
@@ -38,14 +38,14 @@
       "state": "done",
       "due": "2026-10-08",
       "owner": "gemini",
-      "note": "J0862/J2279/J2281 PASS (PR #423): Short A v02 (68d88b5b, 23.289 s, Option A1 hook 2.849 s) + Short C v02 (20432ecd, 23.560 s, hook 1.780 s) vo_check_py312 PASS. J2271 12/12 Shorts plates locked KEEP; J2172 released for \u00a30 assembly.",
+      "note": "J0862/J2279/J2281 PASS (PR #423): Short A v02 (68d88b5b, 23.289 s, Option A1 hook 2.849 s) + Short C v02 (20432ecd, 23.560 s, hook 1.780 s) vo_check_py312 PASS. J2271 12/12 Shorts plates locked KEEP; J2172 released for £0 assembly.",
       "underway": false
     },
     "picture": {
-      "state": "doing",
-      "due": "2026-11-22",
+      "state": "todo",
+      "due": "2027-01-22",
       "owner": "Cursor",
-      "note": "J2271/J2928 DONE: all 12/12 HOS 010 Shorts plates locked KEEP (Claude non-producer 6905894181/6907453362 + Chief confirm, 12d gull tracked x=605->520 t=4.30-7.02s, R4b t=1.05-4.23s x=437, 36/36 NAS SHA-256 verified, keep=true recorded in Flow ledgers). J2172 released for \u00a30 Short A & Short C assembly; Long Parts 01-05 remaining plates next.",
+      "note": "J2271/J2928 DONE: all 12/12 HOS 010 Shorts plates locked KEEP (Claude non-producer 6905894181/6907453362 + Chief confirm, 12d gull tracked x=605->520 t=4.30-7.02s, R4b t=1.05-4.23s x=437, 36/36 NAS SHA-256 verified, keep=true recorded in Flow ledgers). J2172 released for £0 Short A & Short C assembly; Long Parts 01-05 remaining plates next.",
       "steps": [
         12,
         65
@@ -54,14 +54,14 @@
       "left": "about 3 hours",
       "eta": "2026-11-22",
       "underway": false,
-      "waiting": "J2172 \u00a30 Short A & Short C assembly released; remaining Long Parts 01-05 plate generation",
+      "waiting": "Parked in next_hos (#2 behind 127; swap reserve for 31 Dec if 013 stalls) to free active WIP for 011 & 137; Shorts 12/12 plates already KEEP",
       "since": "2026-11-16"
     },
     "edit": {
-      "state": "doing",
-      "due": "2026-11-26",
+      "state": "todo",
+      "due": "2027-01-28",
       "owner": "Claude",
-      "note": "J2172 DONE (\u00a30, gemini): assembled Short A v01 (23.3 s, ea29e264) & Short C v01 (23.6 s, 698db627) at 936x1664 from locked 12/12 KEEP plates + \u00a30 9:16 code graphics; all 6 ship gates exit 0 on both cuts; NAS + HOS UAT copies verified. Queued non-producer review; Long Parts 01-05 edit still pending picture.",
+      "note": "J2172 DONE (£0, gemini): assembled Short A v01 (23.3 s, ea29e264) & Short C v01 (23.6 s, 698db627) at 936x1664 from locked 12/12 KEEP plates + £0 9:16 code graphics; all 6 ship gates exit 0 on both cuts; NAS + HOS UAT copies verified. Queued non-producer review; Long Parts 01-05 edit still pending picture.",
       "steps": [
         2,
         3
@@ -70,20 +70,20 @@
       "left": "about 2 hours",
       "eta": "2026-11-26",
       "underway": false,
-      "waiting": "Non-producer review of Short A v01 & Short C v01 (from J2172) and Long Parts 01-05 picture",
+      "waiting": "Both Shorts A & C already Ben-approved & Private; long edit waits on long picture after WIP re-entry",
       "since": "2026-11-16"
     },
     "thumbnails": {
       "state": "todo",
-      "due": "2026-11-26"
+      "due": "2027-01-29"
     },
     "ben_ok": {
       "state": "todo",
-      "due": "2026-11-29"
+      "due": "2027-02-01"
     },
     "scheduled": {
       "state": "todo",
-      "due": "2026-11-30",
+      "due": "2027-02-02",
       "note": "J3511: approved Short C v01 privately uploaded as sMPlMuxK3YU; no publishAt. J3610 (25 Nov 2026, gemini): completed and verified on reload all private-only Studio finishing settings on sMPlMuxK3YU (Paid promotion No, Automatic places off, Caption cert never aired on US TV, Education Concept overview/England/Key stage 4, Comments On/Basic moderation, AI use Yes confirmed, Not Made for Kids, Private/no publishAt, Related None, STILL HERE robin cover and serving en-GB captions re-verified; lint:package PASS; channel:audit 75 videos 0 errors). J3512: approved Short A v01 uploaded Private without publishAt as mpK3D6S7WLk, 24 Nov 19:13Z (records merged HOS PR #782 / OWB PR #1317). J3611 (25 Nov 2026, gemini): completed and verified on reload all private-only Studio finishing settings on mpK3D6S7WLk (Paid promotion No, Automatic places off, Caption cert never aired on US TV, Education Concept overview/England/Key stage 4, Comments On/Basic moderation, AI use Yes confirmed, Not Made for Kids, Private/no publishAt, Related None, THE LINE cliff cover and serving en-GB captions re-verified; lint:package PASS; channel:audit 75 videos 0 errors). Both J3610 and J3611 parked waiting on actual HOS 010 long upload id and confirmed air date (no HOS 010 long exists on YouTube; picture 12/65, edit/thumbnails/ben_ok unfinished).",
       "waiting": "J3610 (Short C) and J3611 (Short A): actual long upload id and confirmed air date; never Short before long Public"
     }

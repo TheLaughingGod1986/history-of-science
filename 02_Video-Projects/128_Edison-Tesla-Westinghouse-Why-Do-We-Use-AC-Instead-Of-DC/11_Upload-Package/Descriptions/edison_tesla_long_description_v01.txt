@@ -1,0 +1,30 @@
+Why do we use AC instead of DC — and how did Edison vs Tesla decide the electricity in your wall socket? In September 1882, Thomas Edison switched on Pearl Street Station in Lower Manhattan, lighting 400 lamps across a quarter square mile at 110 volts of direct current — but pushing low-voltage DC any further meant ruinous copper and wasted heat.
+Discover how transformers, Nikola Tesla's brushless polyphase induction motor, the 1893 Chicago World's Fair stopper bulbs, and Niagara Falls settled the War of the Currents — and why direct current quietly returned inside your phone charger and beneath the ocean.
+
+In this film:
+• why Edison's 1882 Pearl Street DC station hit a copper-and-heat wall past a quarter square mile
+• how raising voltage 10× cuts resistive heat loss to 1/100 — and William Stanley's 1886 Great Barrington transformer test
+• how Nikola Tesla and Galileo Ferraris unlocked the rotating magnetic field and brushless AC motor
+• the 1888–1892 War of the Currents, Harold Brown, and the birth of General Electric
+• George Westinghouse's 1893 Chicago White City stopper lamps and the 22-mile 1896 Niagara-to-Buffalo transmission line
+• why AC powers the grid while DC powers every microchip and modern undersea HVDC cables
+
+Chapters
+0:00 The Copper Problem
+1:25 The Trick That Shrank the Wire
+3:15 The Motor Without Sparks
+4:40 The War of the Currents
+5:55 The White City and Niagara
+7:25 Why Both Currents Won
+
+Sources
+Thomas A. Edison Papers (Rutgers University), Pearl Street Station and 1882 Holborn Viaduct records
+IEEE Milestone & Engineering History, Great Barrington AC Power System (20 March 1886) and Budapest Ganz Closed-Core Transformer (1885)
+Nikola Tesla, U.S. Patents 381,968 and 382,279 (1 May 1888); Galileo Ferraris, Turin Academy lecture (18 March 1888)
+New York State electrical execution records (William Kemmler, 6 August 1890); General Electric corporate merger records (15 April 1892)
+World's Columbian Exposition (1893) Westinghouse lighting contract ($399,000 vs $554,000) and Adams Power Plant / Niagara-to-Buffalo transmission records (26 August 1895 & 15 November 1896)
+
+Archive image credits: public-domain historical portraits and engravings (Library of Congress / Wikimedia Commons / Smithsonian, credited per plate at edit).
+Pictures: AI-generated 3D scenes, with archive images credited above. Facts: every claim is checked against the sources listed.
+
+History of Science · Discovery. Wonder. Proof. · @HistoryOfScienceYT

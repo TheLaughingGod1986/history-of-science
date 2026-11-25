@@ -1,0 +1,76 @@
+{
+  "format": "longform",
+  "video": null,
+  "youtubeId": null,
+  "title": "Accidental Inventions: 5 Mistakes That Worked",
+  "titleVariant": "A",
+  "descriptionFile": "Descriptions/accidental_inventions_long_description_v01.txt",
+  "tagsFile": "Tags/accidental_inventions_long_tags_v01.txt",
+  "chaptersFile": null,
+  "pinnedCommentFile": null,
+  "thumbnail": null,
+  "thumbnailAbc": [],
+  "titleAbc": [
+    "Accidental Inventions: 5 Mistakes That Worked",
+    "5 Accidental Inventions That Changed the World"
+  ],
+  "schedule": "2027-01-21T18:00:00.000Z",
+  "playlistId": "PLEbpfUzWzcXU",
+  "relatedVideoId": null,
+  "privacy": "private",
+  "madeForKids": false,
+  "alteredContent": true,
+  "language": "en-GB",
+  "categoryId": "27",
+  "affiliate": null,
+  "channel": "@HistoryOfScienceYT",
+  "premiere": false,
+  "note": "J3734 £0 pre-build (25 Nov 2026). Search-led Cluster 3 Film 3 slotted Thu 21 Jan 2027 18:00 London (watch Mon 18 Jan). Promoted into active HOS WIP (5/5). Script v02, facts & Shorts scripts v02 locked (J3687, PR #775). Chapters are nominal pre-VO estimates — re-time on VO PASS.",
+  "neighbours": {
+    "phrases": [
+      "accidental inventions",
+      "inventions",
+      "inventions that changed the world"
+    ],
+    "checked": "2026-11-24",
+    "videos": [
+      {
+        "id": "RzkD_rTEBYs",
+        "channel": "TED-Ed",
+        "title": "How will AI change the world?",
+        "views": 2323113
+      },
+      {
+        "id": "CNbnLgetqHs",
+        "channel": "TED-Ed",
+        "title": "The accident that changed the world - Allison Ramsey and Mary Staicu",
+        "views": 1486538
+      },
+      {
+        "id": "0SMNYivhGsc",
+        "channel": "TED-Ed",
+        "title": "How inventions change history (for better and for worse) - Kenneth C. Davis",
+        "views": 1041862
+      },
+      {
+        "id": "RAoo--SeUIk",
+        "channel": "TED",
+        "title": "Richard Turere: My invention that made peace with lions",
+        "views": 688561
+      },
+      {
+        "id": "Gn7IoT_WSRA",
+        "channel": "TED-Ed",
+        "title": "How containerization shaped the modern world",
+        "views": 654144
+      },
+      {
+        "id": "IpaVpMFBwAE",
+        "channel": "TED-Ed",
+        "title": "How one of the world’s richest companies rose to power - Shantel George",
+        "views": 638863
+      }
+    ],
+    "note": "From evidence_2026-11-24_neighbours.json (gate PASS; >=3 education neighbours >=1M incl. TED-Ed/TED)."
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "format": "longform",
+  "video": null,
+  "youtubeId": null,
+  "title": "Why Do We Use AC Instead of DC? (Edison vs Tesla)",
+  "titleVariant": "A",
+  "descriptionFile": "Descriptions/edison_tesla_long_description_v01.txt",
+  "tagsFile": "Tags/edison_tesla_long_tags_v01.txt",
+  "chaptersFile": null,
+  "pinnedCommentFile": null,
+  "thumbnail": null,
+  "thumbnailAbc": [],
+  "titleAbc": [
+    "Why Do We Use AC Instead of DC? (Edison vs Tesla)",
+    "Edison vs Tesla: Why Alternating Current Beat DC"
+  ],
+  "schedule": "2027-01-07T18:00:00.000Z",
+  "playlistId": "PLEbpfUzWzcXU",
+  "relatedVideoId": null,
+  "privacy": "private",
+  "madeForKids": false,
+  "alteredContent": true,
+  "language": "en-GB",
+  "categoryId": "27",
+  "affiliate": null,
+  "channel": "@HistoryOfScienceYT",
+  "premiere": false,
+  "note": "J3734 £0 pre-build (25 Nov 2026). Search-led Cluster 1 Film 1 slotted Thu 7 Jan 2027 18:00 London (watch Mon 4 Jan). Script v03, facts & Shorts scripts v03 locked (J3660, PR #762). Chapters are nominal pre-VO estimates — re-time to exact VO WAV after J3670 PASS and attach rendered A/B thumbnails after VO PASS.",
+  "neighbours": {
+    "phrases": [
+      "edison",
+      "ac vs dc",
+      "how electricity works",
+      "nikola tesla inventions"
+    ],
+    "checked": "2026-11-22",
+    "videos": [
+      {
+        "id": "z0M7_HPSi14",
+        "channel": "TED-Ed",
+        "title": "How do fish make electricity? - Eleanor Nelsen",
+        "views": 3643082
+      },
+      {
+        "id": "yc2-363MIQs",
+        "channel": "TED-Ed",
+        "title": "The science of static electricity - Anuradha Bhagwat",
+        "views": 3624109
+      },
+      {
+        "id": "0SMNYivhGsc",
+        "channel": "TED-Ed",
+        "title": "How inventions change history (for better and for worse) - Kenneth C. Davis",
+        "views": 1041472
+      },
+      {
+        "id": "YEJ2qryXcIQ",
+        "channel": "TED-Ed",
+        "title": "How to squeeze electricity out of crystals - Ashwini Bharathula",
+        "views": 720457
+      },
+      {
+        "id": "MBRTR2dlwvA",
+        "channel": "TED-Ed",
+        "title": "The vocabulary of electricity - James Sheils",
+        "views": 695179
+      },
+      {
+        "id": "tjwrG4Debc4",
+        "channel": "TED-Ed",
+        "title": "How much electricity does it take to power the world?",
+        "views": 476489
+      }
+    ],
+    "note": "From evidence_2026-11-22_neighbours.json (gate PASS; >=3 education neighbours >=1M incl. TED-Ed/TED)."
+  }
+}
