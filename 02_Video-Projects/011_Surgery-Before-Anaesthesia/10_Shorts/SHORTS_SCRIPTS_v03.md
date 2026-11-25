@@ -1,10 +1,10 @@
 # 011 Shorts scripts v03 (16–19 s · Ben 19 Nov 2026 House Rules)
 
-**Status:** Draft v03 written by `claudecode` (`J3740`, 25 Nov 2026) from `SHORTS_SCRIPTS_v02.md` (22–27 s, never recorded). Queued by the Acting Chief in `J3734`. **Not locked: awaits Chief script lock.** Zero VO, picture or image spend. `v02` stays beside this file as the record of the old band; no Shorts VO exists for 011.
+**Status:** **LOCKED by Acting Chief (`gemini`, `J3740`, 25 Nov 2026)** from `claudecode` draft v03 (`2ed2cc6c`) and `SHORTS_SCRIPTS_v02.md` (22–27 s, never recorded). Zero VO, picture or image spend. Every factual claim is verified against `01_Script/SOURCES_v01.md` (`J0198` Gemini facts PASS + `J0224` Claude primary-source quote check PASS; zero new claims beyond locked long `surgery_script_master_v02.md`). `v02` stays beside this file as the record of the old band; no Shorts VO exists for 011.
 **Timing caveat:** every word count and nominal `150 wpm` (`2.5 words/s`) timestamp below is a planning estimate, **not a measured VO take**. Real duration (`16.0–19.0 s`), subject and surprise arrival (`~1.5 s`) and the overlay and title windows are measured from the locked VO. Never speed up finished VO to force a fit (`atempo ≤ 1.06`).
 **Rules in force:** `studio/RULES.md` → *Shorts house rules (Ben, 19 Nov 2026)* + Test B search-titled Shorts + `HOS_STRATEGY.md` → *The week* and *Shorts feed rules* (R1–R8) + *Teach on screen* (one overlay).
 
-- **Length and loop:** **16–19 s** total (`42` spoken words at `150 wpm` ≈ `16.8 s` speech + `~1.0–1.4 s` natural pauses ≈ `17.8–18.2 s` nominal). The last spoken clause runs straight into line 1 as one causally sound sentence; the last frame matches frame 0 (`≤0.3 s` crossfade).
+- **Length and loop:** **16–19 s** total (`42` and `41` spoken words at `150 wpm` ≈ `16.8 s` / `16.4 s` speech + `~1.1 s` natural pauses ≈ `17.9 s` / `17.5 s` nominal). The last spoken clause runs straight into line 1 as one causally sound sentence; the last frame matches frame 0 (`≤0.3 s` crossfade).
 - **Frame 0:** a moving **premium 3D cartoon** plate. **No archival footage, no paintings, no stills, no Explorer at frame 0**, full-bleed 9:16 (no bars, bands or blurred copies).
 - **Hook and caption:** subject and surprise within `~1.5 s`. Caption line 1 is a **concrete fact** with one yellow keyword, never a two-word ALL CAPS label. No "Stay, and I'll show you…".
 - **Promoted long (on screen `9.0–14.0 s`, never spoken):** *Anesthesia: The Day Surgery Stopped Hurting* (`PACKAGE_MANIFEST.json` title A; 2-way Title Test & Compare on launch with *What Surgery Was Like Before Anesthesia*, `J0180`). **Re-read the exact live title before export.** Studio Related → the `HOS:011` long.
@@ -41,7 +41,7 @@
 
 The best surgeon was once the fastest one. London students timed Robert Liston by pocket watch as he took off a leg in a few minutes. Before ether, patients in Europe and America were wide awake for every second, which is why—
 
-*Fact reference:* `01_Script/SOURCES_v01.md` rows 16 (surgeons prided themselves on speed; students timed with pocket watches; the speed stays soft at "a few minutes" and the dial stops short of three; **the "28 seconds" legend is not used**), 21 (Science Museum Group: little more than alcohol or opium, patients physically restrained) and 22 (the claim is scoped to Europe and America because Hanaoka Seishū operated under general anaesthesia in Japan in 1804). Liston as a London surgeon: row 14. Every clause is also in the locked long script `surgery_script_master_v02.md` (`J0198` Gemini facts PASS, `J0224` Claude quote check PASS). The spoken wording is new, so it goes through the usual facts read before lock.
+*Fact reference:* `01_Script/SOURCES_v01.md` rows 16 (surgeons prided themselves on speed; students timed with pocket watches; the speed stays soft at "a few minutes" and the dial stops short of three; **the "28 seconds" legend is not used**), 21 (Science Museum Group: little more than alcohol or opium, patients physically restrained) and 22 (the claim is scoped to Europe and America because Hanaoka Seishū operated under general anaesthesia in Japan in 1804). Liston as a London surgeon: row 14. Every clause is in the locked long script `surgery_script_master_v02.md` (`J0198` Gemini facts PASS, `J0224` Claude quote check PASS) and verified against `SOURCES_v01.md` at Chief lock (`J3740`).
 
 ---
 
@@ -58,23 +58,37 @@ The best surgeon was once the fastest one. London students timed Robert Liston b
 | Nominal s | Picture (full-bleed 9:16 3D cartoon) | Spoken |
 |---|---|---|
 | 0.0–2.8 | Frame 0: the Ether Monument tilting up; four gentlemen at its base each pointing at themselves | Boston's monument to ether names no discoverer. |
-| 2.8–7.8 | Crawford Long in his quiet Georgia surgery, folding a towel beside a small corked bottle, his notes shut in a drawer · **Teach overlay (`4.0–7.6 s`):** `GEORGIA · 1842` | A Georgia doctor used ether in eighteen forty-two, but didn't publish. |
-| 7.8–12.0 | William Morton under the skylight of the Boston operating theatre, holding up the two-necked glass inhaler globe to the packed benches · **Long title on screen (`9.0–14.0 s`, no Teach overlay):** *Anesthesia: The Day Surgery Stopped Hurting* | Four years later, a Boston dentist proved it in public. |
-| 12.0–16.3 | The four gentlemen face to face, waving pamphlets and newspapers at one another, pages flying | Four men claimed the credit; the fight ran twenty years, |
-| 16.3–17.8 | Pull back and up to the monument with the four still jostling at its base (matches frame 0, `≤0.3 s` crossfade) | which is why— |
+| 2.8–7.6 | Crawford Long in his quiet Georgia surgery, folding a towel beside a small corked bottle, his notes shut in a drawer · **Teach overlay (`4.0–7.6 s`):** `GEORGIA · 1842` | A Georgia doctor used ether in eighteen forty-two without publishing. |
+| 7.6–11.8 | William Morton under the skylight of the Boston operating theatre, holding up the two-necked glass inhaler globe to the packed benches · **Long title on screen (`9.0–14.0 s`, no Teach overlay):** *Anesthesia: The Day Surgery Stopped Hurting* | Four years later, a Boston dentist proved it in public. |
+| 11.8–16.0 | The four gentlemen face to face, waving pamphlets and newspapers at one another, pages flying | Four men claimed the credit; the fight ran twenty years, |
+| 16.0–17.5 | Pull back and up to the monument with the four still jostling at its base (matches frame 0, `≤0.3 s` crossfade) | which is why— |
 
-**Spoken script (`42 words`, counting "forty-two" as two ≈ `16.8 s` speech + `~1.0 s` pauses ≈ `~17.8 s` nominal at `150 wpm`; subject and surprise "Boston's monument to ether names no" lands by `~2.0 s` nominal, see note 2):**
+**Spoken script (`41 words`, counting "forty-two" as two ≈ `16.4 s` speech + `~1.1 s` pauses ≈ `~17.5 s` nominal at `150 wpm`; record with zero opening dead air `first word ≤0.15 s`):**
 
-Boston's monument to ether names no discoverer. A Georgia doctor used ether in eighteen forty-two, but didn't publish. Four years later, a Boston dentist proved it in public. Four men claimed the credit; the fight ran twenty years, which is why—
+Boston's monument to ether names no discoverer. A Georgia doctor used ether in eighteen forty-two without publishing. Four years later, a Boston dentist proved it in public. Four men claimed the credit; the fight ran twenty years, which is why—
 
-*Fact reference:* `01_Script/SOURCES_v01.md` rows 3 and 25 (Crawford Long, Jefferson, Georgia, 30 March 1842, ether on a towel), 4 (Long first published December 1849, so "didn't publish" means at the time), 7 (Morton's public demonstration, 16 October 1846, four years after Long), 20 (Morton practised as a dentist in Boston in 1846), 12 and 32 (Long, Wells, Morton and Jackson each claimed priority; the legal and pamphlet war "lasted 20 years") and 13 (the 1868 Ether Monument's inscriptions name none of the claimants). All in the locked long script; the spoken wording is new and goes through the usual facts read before lock.
+*Fact reference:* `01_Script/SOURCES_v01.md` rows 3 and 25 (Crawford Long, Jefferson, Georgia, 30 March 1842, ether on a towel), 4 (Long first published December 1849, 7 years later, so "used ether in eighteen forty-two without publishing" is strictly true of 1842), 7 (Morton's public demonstration, 16 October 1846, four years after Long), 20 (Morton practised as a dentist in Boston in 1846), 12 and 32 (Long, Wells, Morton and Jackson each claimed priority; the Jackson-Morton legal and pamphlet war "lasted 20 years") and 13 (the 1868 Ether Monument's inscriptions name none of the claimants). All verified `OK` in `SOURCES_v01.md` (`J0198` + `J0224`) and re-checked at Chief lock (`J3740`).
 
 ---
 
-## Notes for the Chief's lock
+## Acting Chief Lock Ruling (`gemini`, `J3740`, 25 Nov 2026)
 
-1. **Slot labels.** The `J3734` brief gives `S01` the Sat 19 Dec go-public-day slot and `S02` Fri 18 Dec. 128 runs the other way round (`S01` Friday, `S02` Saturday). Written here as briefed. The stronger hook is Short A (the pocket watch), so the Saturday slot suits it; swap the two dates if the Friday morning-after slot should carry the stronger one.
-2. **Short B, rule 1 (famous object).** The Ether Monument is not an object people recognise on sight, so its frame 0 leans on the four men pointing at themselves to read instantly. If that fails the OPEN check, the fallback frame 0 is Morton's two-necked glass inhaler globe held up under the skylight, with line 1 changed to "Four men claimed they invented anaesthesia." and the last clause to "and after twenty years of fighting, Boston's monument named none of the—" (a rewrite, so a new facts read). Its surprise also lands nearer `2.0 s` than `1.5 s` nominal because the subject takes four words to say.
-3. **"The fight ran twenty years".** Row 12's twenty years is the Jackson and Morton dispute; Wells died in 1848. The line says four men claimed the credit and that the fight ran twenty years, and does not say all four fought for twenty. v02's "All four fought for decades" is dropped.
-4. **Short A's "wide awake".** Row 21 allows alcohol or opium, so "wide awake" means not unconscious, as in the long ("wide awake for every second" passed in v02's review). If the facts read wants it softer: "felt every second".
-5. **Next:** Chief script lock → facts read of the two new wordings → Shorts VO (after the 30 Nov ElevenLabs reset, behind 128 and 136) → 3D cartoon frame-0 plates only after script and VO pass.
+**Verdict: LOCKED / PASS** for both `S01` (`42 w`) and `S02` (`41 w`).
+
+| Gate | S01 (Pocket Watch) | S02 (Ether Monument) | Notes |
+|---|---|---|---|
+| **OPEN** | PASS | PASS | Both open on moving full-bleed 9:16 3D cartoon hero plates, 0% Explorer, no archival/stills, no meta-promise. `S02` keeps primary Ether Monument + 4 jostling gentlemen frame 0 (glass-inhaler fallback rejected; record `first word ≤0.15 s`). |
+| **LENGTH** | PASS | PASS | `42 w` (`~17.9 s` nominal) & `41 w` (`~17.5 s` nominal) inside `16.0–19.0 s`; actual runtime measured from locked VO (`atempo ≤ 1.06`). |
+| **LOOP** | PASS | PASS | Both close causally into line 1 as one sentence, with `≤0.3 s` matched-frame crossfade back to frame 0. |
+| **CAPTION** | PASS | PASS | Concrete fact on line 1 with one yellow keyword (`Surgeons were timed by POCKET WATCH` / `This monument names NO DISCOVERER`). |
+| **TOPIC** | PASS | PASS | Shareable without history homework; 0 collisions in `SHORTS_LOG.md` (25 Nov 2026). Re-run `public_search.py` at Shorts packaging. |
+| **FACEBOOK** | PASS | PASS | New 16–19 s cuts; no stale winner re-post or batch recut. |
+| **TEACH / STYLE / MOTION** | PASS | PASS | Single overlay each (`UNDER 3 MINUTES` `4.5–8.5 s`; `GEORGIA · 1842` `4.0–7.6 s`), 16:9 centre band, clear of `0–2 s` and `9–14 s` long title. |
+
+**Dispositions on worker notes:**
+1. **Slot labels locked:** `S01` (Short A, pocket watch — stronger hook) → **Sat 19 Dec 2026, 11:30 London** (go-public-day Short slot per `HOS_STRATEGY.md` & `J3734`); `S02` (Short B, Ether Monument) → **Fri 18 Dec 2026, 11:30 London**.
+2. **Short B Frame 0:** Keep primary 3D cartoon Ether Monument + four gentlemen pointing at themselves before the blank dedication panel. Do not use the glass-inhaler fallback.
+3. **"The fight ran twenty years":** PASS. The semicolon separates the four claimants from the 20-year Jackson–Morton priority war (`SOURCES_v01.md` rows 12, 32).
+4. **Short A "wide awake":** PASS. Matches locked long script `v02` and `SOURCES_v01.md` row 21, properly scoped to Europe and America (row 22).
+5. **Short B "without publishing":** Tightened from `"but didn't publish"` so the line stays strictly accurate against row 4 (Long published in Dec 1849, 7 years later).
+6. **Next:** Shorts VO queued post-30-Nov ElevenLabs reset behind 128 (`J3670`) and 136 (`J3678`) long VO → Chief VO PASS → 3D cartoon frame-0 plates only after VO passes.
