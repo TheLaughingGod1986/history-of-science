@@ -1,0 +1,15 @@
+{
+  "file": "02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2652/cuts_v03c.csv",
+  "rows": 106,
+  "passed": false,
+  "errors": [
+    "row P2:01_card_p02: breath before card -2.74s < 0.5s (need 0.5\u20130.8s after last word)",
+    "row P3:01_card_p03: breath before card -2.88s < 0.5s (need 0.5\u20130.8s after last word)",
+    "row P4:01_card_p04: breath before card -1.28s < 0.5s (need 0.5\u20130.8s after last word)",
+    "row P5:01_card_p05: breath before card -2.28s < 0.5s (need 0.5\u20130.8s after last word)",
+    "row P6:01_card_p06: breath before card -5.34s < 0.5s (need 0.5\u20130.8s after last word)"
+  ],
+  "warnings": [
+    "row P5:02a_linnean_reading_beat1: may clip mid-sentence before next row ('On the 1st of July 1858' \u2192 \"Darwin's friends Charles Lyle and Joseph\")"
+  ]
+}

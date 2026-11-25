@@ -1,0 +1,992 @@
+[
+  {
+    "row": "P1:01_study_beaks",
+    "start_s": 0.0,
+    "end_s": 3.82,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P1:02_drawer_lock",
+    "start_s": 3.82,
+    "end_s": 7.9,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P1:03a_unlabelled_birds",
+    "start_s": 7.9,
+    "end_s": 11.84,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P1:03b_malay_packet",
+    "start_s": 11.84,
+    "end_s": 14.36,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P1:04a_packet_seal",
+    "start_s": 14.36,
+    "end_s": 16.48,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P1:04b_drawer_unlock",
+    "start_s": 16.48,
+    "end_s": 21.48,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P1:05a_museum_cases",
+    "start_s": 21.48,
+    "end_s": 24.44,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P1:05b_museum_plaques",
+    "start_s": 24.44,
+    "end_s": 29.22,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P1:06_padlock_shut",
+    "start_s": 29.22,
+    "end_s": 33.44,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P1:07_darwin_1837_desk",
+    "start_s": 33.44,
+    "end_s": 39.36,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P1:08_cg_i_think_tree_beat1",
+    "start_s": 39.36,
+    "end_s": 45.44,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Split graphic needs distinct v03 render / moving background"
+  },
+  {
+    "row": "P1:08_cg_i_think_tree_beat2",
+    "start_s": 45.44,
+    "end_s": 49.9,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Split graphic needs distinct v03 render / moving background"
+  },
+  {
+    "row": "P1:08_cg_i_think_tree_beat3",
+    "start_s": 49.9,
+    "end_s": 54.3,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source too short: needs 14.94s; has 14.90s"
+  },
+  {
+    "row": "P1:09_wallace_hut_split_beat1",
+    "start_s": 54.3,
+    "end_s": 57.22,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P1:09_wallace_hut_split_beat2",
+    "start_s": 57.22,
+    "end_s": 62.08,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P1:10_cg_globe_arc",
+    "start_s": 62.08,
+    "end_s": 67.54,
+    "status": "existing_render",
+    "source": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v01/code_graphic_013_p1_10_cg_globe_arc.mp4",
+    "source_offset_s": 0.0,
+    "reason": null
+  },
+  {
+    "row": "P1:11_beagle_cabin_explorer_beat1",
+    "start_s": 67.54,
+    "end_s": 71.22,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P1:11_beagle_cabin_explorer_beat2",
+    "start_s": 71.22,
+    "end_s": 75.2,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P2:01_card_p02",
+    "start_s": 75.2,
+    "end_s": 75.52,
+    "status": "existing_render",
+    "source": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v01/code_graphic_013_p2_01_card_p02.mp4",
+    "source_offset_s": 0.0,
+    "reason": null
+  },
+  {
+    "row": "P2:02_galapagos_beach_myth_beat1",
+    "start_s": 75.52,
+    "end_s": 81.22,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P2:02_galapagos_beach_myth_beat2",
+    "start_s": 81.22,
+    "end_s": 84.22,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P2:03_unlabelled_bagging_beat1",
+    "start_s": 84.22,
+    "end_s": 88.64,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P2:03_unlabelled_bagging_beat2",
+    "start_s": 88.64,
+    "end_s": 92.28,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P2:04_blank_tags_row",
+    "start_s": 92.28,
+    "end_s": 97.22,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P2:05_tortoise_overboard_beat1",
+    "start_s": 97.22,
+    "end_s": 100.22,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P2:05_tortoise_overboard_beat2",
+    "start_s": 100.22,
+    "end_s": 104.56,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P2:06a_lawson_jetty",
+    "start_s": 104.56,
+    "end_s": 109.96,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P2:06b_cg_tortoise_shells",
+    "start_s": 109.96,
+    "end_s": 114.94,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source too short: needs 4.98s; has 4.87s"
+  },
+  {
+    "row": "P2:07_darwin_notebook_wait",
+    "start_s": 114.94,
+    "end_s": 120.88,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P2:08a_gould_sorting",
+    "start_s": 120.88,
+    "end_s": 126.96,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P2:08b_gould_skins_closeup",
+    "start_s": 126.96,
+    "end_s": 131.4,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P2:09_cg_finch_toolbox_beat1",
+    "start_s": 131.4,
+    "end_s": 138.36,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Split graphic needs distinct v03 render / moving background"
+  },
+  {
+    "row": "P2:09_cg_finch_toolbox_beat2",
+    "start_s": 138.36,
+    "end_s": 143.72,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Split graphic needs distinct v03 render / moving background"
+  },
+  {
+    "row": "P2:10a_explorer_shipmates",
+    "start_s": 143.72,
+    "end_s": 149.7,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P2:10b_shipmate_tagged_tray",
+    "start_s": 149.7,
+    "end_s": 153.26,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P2:11_island_split_vision_beat1",
+    "start_s": 153.26,
+    "end_s": 157.5,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P2:11_island_split_vision_beat2",
+    "start_s": 157.5,
+    "end_s": 161.42,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P2:12a_arch_notebook_tree_zoom",
+    "start_s": 161.42,
+    "end_s": 167.98,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source too short: needs 6.56s; has 5.40s"
+  },
+  {
+    "row": "P2:12b_tree_question",
+    "start_s": 167.98,
+    "end_s": 170.74,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P3:01_card_p03",
+    "start_s": 170.74,
+    "end_s": 171.02,
+    "status": "existing_render",
+    "source": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v01/code_graphic_013_p3_01_card_p03.mp4",
+    "source_offset_s": 0.0,
+    "reason": null
+  },
+  {
+    "row": "P3:02a_malthus_lamplight",
+    "start_s": 171.02,
+    "end_s": 177.26,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P3:02b_notebook_d_open",
+    "start_s": 177.26,
+    "end_s": 182.6,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P3:03_cg_malthus_curve_beat1",
+    "start_s": 182.6,
+    "end_s": 186.82,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Split graphic needs distinct v03 render / moving background"
+  },
+  {
+    "row": "P3:03_cg_malthus_curve_beat2",
+    "start_s": 186.82,
+    "end_s": 192.1,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source too short: needs 9.50s; has 9.40s"
+  },
+  {
+    "row": "P3:04a_drought_island_seeds",
+    "start_s": 192.1,
+    "end_s": 197.26,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P3:04b_finch_cracks_seed",
+    "start_s": 197.26,
+    "end_s": 201.96,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P3:05a_chicks_deep_beaks",
+    "start_s": 201.96,
+    "end_s": 206.54,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P3:05b_finches_next_generation",
+    "start_s": 206.54,
+    "end_s": 211.76,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P3:06_nature_keeps_fit_beat1",
+    "start_s": 211.76,
+    "end_s": 216.22,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Split graphic needs distinct v03 render / moving background"
+  },
+  {
+    "row": "P3:06_nature_keeps_fit_beat2",
+    "start_s": 216.22,
+    "end_s": 219.44,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source too short: needs 7.68s; has 7.57s"
+  },
+  {
+    "row": "P3:07a_darwin_afraid_window",
+    "start_s": 219.44,
+    "end_s": 224.02,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P3:07b_confessing_murder_letter",
+    "start_s": 224.02,
+    "end_s": 230.04,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P3:08_emma_study",
+    "start_s": 230.04,
+    "end_s": 237.04,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P3:09a_essay_1844_sealed",
+    "start_s": 237.04,
+    "end_s": 242.12,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P3:09b_emma_letter_cupboard",
+    "start_s": 242.12,
+    "end_s": 246.78,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P3:10a_arch_vestiges_1844",
+    "start_s": 246.78,
+    "end_s": 253.78,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source too short: needs 7.00s; has 4.20s"
+  },
+  {
+    "row": "P3:10b_vestiges_torn_apart",
+    "start_s": 253.78,
+    "end_s": 257.98,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P3:11_barnacles_microscope",
+    "start_s": 257.98,
+    "end_s": 260.98,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P3:12_cg_barnacle_counter",
+    "start_s": 260.98,
+    "end_s": 267.4,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source too short: needs 6.42s; has 5.97s"
+  },
+  {
+    "row": "P3:13a_lyell_warning",
+    "start_s": 267.4,
+    "end_s": 272.88,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P3:13b_brass_globe_turn",
+    "start_s": 272.88,
+    "end_s": 275.6,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P4:01_card_p04",
+    "start_s": 275.6,
+    "end_s": 276.16,
+    "status": "existing_render",
+    "source": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v01/code_graphic_013_p4_01_card_p04.mp4",
+    "source_offset_s": 0.0,
+    "reason": null
+  },
+  {
+    "row": "P4:02_wallace_collector",
+    "start_s": 276.16,
+    "end_s": 283.16,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P4:03a_helen_burning",
+    "start_s": 283.16,
+    "end_s": 289.66,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P4:03b_crates_sinking",
+    "start_s": 289.66,
+    "end_s": 293.02,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P4:04_open_boat_ten_days",
+    "start_s": 293.02,
+    "end_s": 298.12,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P4:05_cg_wallace_counter_beat1",
+    "start_s": 298.12,
+    "end_s": 302.66,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Split graphic needs distinct v03 render / moving background"
+  },
+  {
+    "row": "P4:05_cg_wallace_counter_beat2",
+    "start_s": 302.66,
+    "end_s": 308.62,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Split graphic needs distinct v03 render / moving background"
+  },
+  {
+    "row": "P4:06a_wallace_fever",
+    "start_s": 308.62,
+    "end_s": 314.92,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P4:06b_arch_malthus_1798",
+    "start_s": 314.92,
+    "end_s": 321.4,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source too short: needs 6.48s; has 6.07s"
+  },
+  {
+    "row": "P4:07a_wallace_writes_hut",
+    "start_s": 321.4,
+    "end_s": 328.24,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P4:07b_packet_to_mailbag",
+    "start_s": 328.24,
+    "end_s": 333.94,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P4:08_midpoint_twist_packet",
+    "start_s": 333.94,
+    "end_s": 337.3,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P4:09a_darwin_reads_wallace",
+    "start_s": 337.3,
+    "end_s": 344.1,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P4:09b_smashed_letter_pen",
+    "start_s": 344.1,
+    "end_s": 349.54,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P4:10_fairness_25_june",
+    "start_s": 349.54,
+    "end_s": 355.54,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P4:11_down_house_grief",
+    "start_s": 355.54,
+    "end_s": 360.94,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P4:12_lyell_hooker_bundle",
+    "start_s": 360.94,
+    "end_s": 365.96,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P5:01_card_p05",
+    "start_s": 365.96,
+    "end_s": 366.28,
+    "status": "existing_render",
+    "source": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v01/code_graphic_013_p5_01_card_p05.mp4",
+    "source_offset_s": 0.0,
+    "reason": null
+  },
+  {
+    "row": "P5:02a_linnean_reading_beat1",
+    "start_s": 366.28,
+    "end_s": 371.82,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P5:02a_linnean_reading_beat2",
+    "start_s": 371.82,
+    "end_s": 376.64,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P5:02b_joint_papers_lectern",
+    "start_s": 376.64,
+    "end_s": 382.36,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P5:03a_two_empty_chairs",
+    "start_s": 382.36,
+    "end_s": 388.2,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P5:03b_wallace_jungle_clearing",
+    "start_s": 388.2,
+    "end_s": 394.06,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P5:04a_empty_linnean_hall",
+    "start_s": 394.06,
+    "end_s": 398.18,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P5:04b_bell_report_1859",
+    "start_s": 398.18,
+    "end_s": 404.66,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P5:05a_darwin_writes_origin",
+    "start_s": 404.66,
+    "end_s": 407.82,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P5:05b_arch_origin_1859_title",
+    "start_s": 407.82,
+    "end_s": 414.24,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source too short: needs 6.42s; has 2.87s"
+  },
+  {
+    "row": "P5:06_murray_bookshop",
+    "start_s": 414.24,
+    "end_s": 418.2,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P5:07_cg_timeline_origin",
+    "start_s": 418.2,
+    "end_s": 424.38,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source too short: needs 6.18s; has 5.57s"
+  },
+  {
+    "row": "P5:08a_wallace_opens_origin",
+    "start_s": 424.38,
+    "end_s": 428.18,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P5:08b_wallace_reads_origin",
+    "start_s": 428.18,
+    "end_s": 434.24,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P5:09_arch_darwinism_1889",
+    "start_s": 434.24,
+    "end_s": 440.14,
+    "status": "existing_render",
+    "source": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v01/code_graphic_013_p5_09_arch_darwinism_1889.mp4",
+    "source_offset_s": 0.0,
+    "reason": null
+  },
+  {
+    "row": "P5:10_darwin_worried_shelf_beat1",
+    "start_s": 440.14,
+    "end_s": 444.28,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P5:10_darwin_worried_shelf_beat2",
+    "start_s": 444.28,
+    "end_s": 447.82,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P6:01_card_p06",
+    "start_s": 447.82,
+    "end_s": 448.1,
+    "status": "existing_render",
+    "source": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v01/code_graphic_013_p6_01_card_p06.mp4",
+    "source_offset_s": 0.0,
+    "reason": null
+  },
+  {
+    "row": "P6:02a_jenkin_study",
+    "start_s": 448.1,
+    "end_s": 453.5,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P6:02b_paint_pots_mix",
+    "start_s": 453.5,
+    "end_s": 458.78,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P6:03_cg_blending_beaks_beat1",
+    "start_s": 458.78,
+    "end_s": 465.02,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Split graphic needs distinct v03 render / moving background"
+  },
+  {
+    "row": "P6:03_cg_blending_beaks_beat2",
+    "start_s": 465.02,
+    "end_s": 471.06,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source too short: needs 12.28s; has 12.27s"
+  },
+  {
+    "row": "P6:04a_mendel_pea_garden",
+    "start_s": 471.06,
+    "end_s": 476.56,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P6:04b_arch_mendel_1866_paper",
+    "start_s": 476.56,
+    "end_s": 479.92,
+    "status": "existing_render",
+    "source": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v01/code_graphic_013_p6_04b_arch_mendel_1866_paper.mp4",
+    "source_offset_s": 0.0,
+    "reason": null
+  },
+  {
+    "row": "P6:05_beads_not_paint",
+    "start_s": 479.92,
+    "end_s": 485.6,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P6:06a_origin_fifth_edition",
+    "start_s": 485.6,
+    "end_s": 490.66,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P6:06b_spencer_coined",
+    "start_s": 490.66,
+    "end_s": 496.54,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P6:07_key_in_lock_beat1",
+    "start_s": 496.54,
+    "end_s": 499.98,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P6:07_key_in_lock_beat2",
+    "start_s": 499.98,
+    "end_s": 504.3,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P6:08a_reuse_study_beaks_callback",
+    "start_s": 504.3,
+    "end_s": 508.48,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P6:08b_darwin_mendel_synthesis",
+    "start_s": 508.48,
+    "end_s": 512.74,
+    "status": "diagnostic_slate",
+    "source": null,
+    "source_offset_s": null,
+    "reason": "Source not in the verified J2498 render inventory"
+  },
+  {
+    "row": "P6:09_cream_end_card",
+    "start_s": 512.74,
+    "end_s": 515.0,
+    "status": "existing_render",
+    "source": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/code_graphics_v01/code_graphic_013_p6_09_cream_end_card.mp4",
+    "source_offset_s": 0.0,
+    "reason": null
+  }
+]

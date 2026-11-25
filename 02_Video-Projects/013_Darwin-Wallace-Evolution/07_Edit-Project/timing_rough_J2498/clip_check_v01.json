@@ -1,0 +1,17 @@
+{
+  "file": "/Volumes/MiniWork/scratch/J2498-wt/02_Video-Projects/013_Darwin-Wallace-Evolution/07_Edit-Project/timing_rough_J2498/cuts_v01.csv",
+  "rows": 94,
+  "passed": false,
+  "errors": [
+    "row P2:01_card_p02: breath before card -1.52s < 0.5s (need 0.5\u20130.8s after last word)",
+    "row P2:12a_arch_notebook_tree_zoom: cut at 166.60s clips VO word ending 166.72s",
+    "row P3:01_card_p03: breath before card -1.46s < 0.5s (need 0.5\u20130.8s after last word)",
+    "row P3:11_barnacles_microscope: cut at 261.50s clips VO word ending 261.62s",
+    "row P4:01_card_p04: breath before card -1.36s < 0.5s (need 0.5\u20130.8s after last word)",
+    "row P5:01_card_p05: breath before card -2.18s < 0.5s (need 0.5\u20130.8s after last word)",
+    "row P5:06_murray_bookshop: cut at 419.00s clips VO word ending 419.10s",
+    "row P6:01_card_p06: breath before card -1.70s < 0.5s (need 0.5\u20130.8s after last word)",
+    "row P6:09_cream_end_card: breath before card 0.24s < 0.5s (need 0.5\u20130.8s after last word)"
+  ],
+  "warnings": []
+}

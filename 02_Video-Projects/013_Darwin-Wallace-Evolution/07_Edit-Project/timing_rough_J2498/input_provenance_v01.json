@@ -1,0 +1,10 @@
+{
+  "plan": "PICTURE_PLAN_v02.json",
+  "plan_sha256": "14212379e2132e94766abffba358dea50640329ffc86db4a6c65c221a8897182",
+  "plan_vo_sha256": "f8ef433b3b5b5571284e6f12ef339a2b2c0d39eb9978753e86a4d0efeb5e1a03",
+  "actual_vo_sha256": "837178125a72fb250d255f1039c5cb7f8630bbb313cf23801a1155f257d796e0",
+  "transcript_sha256": "837178125a72fb250d255f1039c5cb7f8630bbb313cf23801a1155f257d796e0",
+  "lock": "02_Voiceover/VO_STATUS.md J1310",
+  "timings_changed": false,
+  "note": "Diagnostic rough retains planned boundaries. Sentence-safe retiming requires Chief resolution of picture cadence and asset-length conflicts."
+}

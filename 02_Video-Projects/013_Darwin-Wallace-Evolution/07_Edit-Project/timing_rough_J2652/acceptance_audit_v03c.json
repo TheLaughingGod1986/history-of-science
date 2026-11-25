@@ -1,0 +1,75 @@
+{
+  "approved": false,
+  "unsupported_cuts": [],
+  "in_word_cuts": [],
+  "native_source_overruns": [],
+  "row_count": 106,
+  "max_row_s": 7.0,
+  "chapters": [
+    {
+      "row": "P2:01_card_p02",
+      "start_s": 75.4,
+      "end_s": 78.14,
+      "duration_s": 2.74,
+      "title_start_s": 75.4,
+      "title_end_s": 77.9
+    },
+    {
+      "row": "P3:01_card_p03",
+      "start_s": 170.92,
+      "end_s": 173.8,
+      "duration_s": 2.88,
+      "title_start_s": 170.92,
+      "title_end_s": 173.42
+    },
+    {
+      "row": "P4:01_card_p04",
+      "start_s": 273.52,
+      "end_s": 276.16,
+      "duration_s": 2.64,
+      "title_start_s": 273.52,
+      "title_end_s": 276.02
+    },
+    {
+      "row": "P5:01_card_p05",
+      "start_s": 363.16,
+      "end_s": 366.2,
+      "duration_s": 3.04,
+      "title_start_s": 363.16,
+      "title_end_s": 365.66
+    },
+    {
+      "row": "P6:01_card_p06",
+      "start_s": 447.66,
+      "end_s": 453.0,
+      "duration_s": 5.34,
+      "title_start_s": 447.66,
+      "title_end_s": 450.16
+    }
+  ],
+  "short_chapters": [],
+  "sentence_preference": "Search preference, not a claim of independent editorial acceptance",
+  "source_caps": "8-second planned Quality inputs; actual accepted source windows still require media checks",
+  "callback": [
+    3.82,
+    7.38
+  ],
+  "brief_picture_beats": [
+    {
+      "row": "11_beagle_cabin_explorer_beat2",
+      "start_s": 74.6,
+      "duration_s": 0.8
+    },
+    {
+      "row": "03_unlabelled_bagging_beat2",
+      "start_s": 90.82,
+      "duration_s": 1.4
+    },
+    {
+      "row": "02b_paint_pots_mix",
+      "start_s": 458.14,
+      "duration_s": 1.5
+    }
+  ],
+  "chapter_title_cue_overlaps": []
+}

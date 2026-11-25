@@ -1,0 +1,370 @@
+{
+  "approved": false,
+  "render_authorized": false,
+  "qualified_boundary_count": 177,
+  "unsupported_cuts": [
+    {
+      "row": "P1:03b_malay_packet",
+      "cut_s": 14.36,
+      "prior_evidence": {
+        "kind": "clause",
+        "previous_word_index": 38,
+        "next_word_index": 39,
+        "previous_word": "and",
+        "next_word": "one",
+        "gap_s": 0.0,
+        "after_word_s": 0.0,
+        "clause_reason": "list item: eight years of barnacles / and one letter"
+      },
+      "nearest_verified_boundaries": [
+        {
+          "start_s": 13.58,
+          "end_s": 13.58,
+          "word_index": 37,
+          "gap_s": 0.0,
+          "script": {
+            "token": "barnacles,",
+            "context": "unlabelled birds, eight years of barnacles, and one letter from"
+          },
+          "measured_pause": null
+        },
+        {
+          "start_s": 11.84,
+          "end_s": 12.38,
+          "word_index": 33,
+          "gap_s": 0.54,
+          "script": {
+            "token": "birds,",
+            "context": "know how a few unlabelled birds, eight years of barnacles,"
+          },
+          "measured_pause": null
+        }
+      ]
+    },
+    {
+      "row": "P1:04a_packet_seal",
+      "cut_s": 16.48,
+      "prior_evidence": {
+        "kind": "clause",
+        "previous_word_index": 47,
+        "next_word_index": 48,
+        "previous_word": "world",
+        "next_word": "forced",
+        "gap_s": 0.0,
+        "after_word_s": 0.0,
+        "clause_reason": "relative clause ends: other side of the world / forced"
+      },
+      "nearest_verified_boundaries": [
+        {
+          "start_s": 13.58,
+          "end_s": 13.58,
+          "word_index": 37,
+          "gap_s": 0.0,
+          "script": {
+            "token": "barnacles,",
+            "context": "unlabelled birds, eight years of barnacles, and one letter from"
+          },
+          "measured_pause": null
+        },
+        {
+          "start_s": 20.22,
+          "end_s": 21.64,
+          "word_index": 56,
+          "gap_s": 1.42,
+          "script": {
+            "token": "open.",
+            "context": "secret in biology into the open. In the eighteen-thirties, most"
+          },
+          "measured_pause": null
+        }
+      ]
+    },
+    {
+      "row": "P1:05a_museum_cases",
+      "cut_s": 24.44,
+      "prior_evidence": {
+        "kind": "clause",
+        "previous_word_index": 61,
+        "next_word_index": 62,
+        "previous_word": "naturalists",
+        "next_word": "believed",
+        "gap_s": 0.0,
+        "after_word_s": 0.0,
+        "clause_reason": "subject ends: most naturalists / believed"
+      },
+      "nearest_verified_boundaries": [
+        {
+          "start_s": 23.48,
+          "end_s": 23.48,
+          "word_index": 59,
+          "gap_s": 0.0,
+          "script": {
+            "token": "1830s,",
+            "context": "In the eighteen-thirties, most naturalists"
+          },
+          "measured_pause": null
+        },
+        {
+          "start_s": 27.68,
+          "end_s": 27.68,
+          "word_index": 72,
+          "gap_s": 0.0,
+          "script": {
+            "token": "once,",
+            "context": "and plant had been made once, and never changed. Saying"
+          },
+          "measured_pause": null
+        }
+      ]
+    },
+    {
+      "row": "P1:07_darwin_1837_desk",
+      "cut_s": 39.36,
+      "prior_evidence": {
+        "kind": "clause",
+        "previous_word_index": 98,
+        "next_word_index": 99,
+        "previous_word": "tree",
+        "next_word": "in",
+        "gap_s": 0.0,
+        "after_word_s": 0.0,
+        "clause_reason": "object ends: drew a little tree / in a private notebook"
+      },
+      "nearest_verified_boundaries": [
+        {
+          "start_s": 40.6,
+          "end_s": 41.5,
+          "word_index": 102,
+          "gap_s": 0.9,
+          "script": {
+            "token": "notebook.",
+            "context": "little tree in a private notebook. One kind of animal"
+          },
+          "measured_pause": null
+        },
+        {
+          "start_s": 43.22,
+          "end_s": 43.22,
+          "word_index": 109,
+          "gap_s": 0.0,
+          "script": {
+            "token": "bottom,",
+            "context": "kind of animal at the bottom, branching into many at"
+          },
+          "measured_pause": null
+        }
+      ]
+    },
+    {
+      "row": "P1:11_beagle_cabin_explorer_beat1",
+      "cut_s": 71.22,
+      "prior_evidence": {
+        "kind": "clause",
+        "previous_word_index": 173,
+        "next_word_index": 174,
+        "previous_word": "properly",
+        "next_word": "stumble",
+        "gap_s": 0.0,
+        "after_word_s": 0.0,
+        "clause_reason": "relative clause ends: who did not label his birds properly / stumble onto"
+      },
+      "nearest_verified_boundaries": [
+        {
+          "start_s": 74.6,
+          "end_s": 75.52,
+          "word_index": 181,
+          "gap_s": 0.92,
+          "script": {
+            "token": "changes?",
+            "context": "the secret of how life changes? When people picture Darwin"
+          },
+          "measured_pause": null
+        },
+        {
+          "start_s": 66.46,
+          "end_s": 67.68,
+          "word_index": 160,
+          "gap_s": 1.22,
+          "script": {
+            "token": "else.",
+            "context": "theory, worked out by somebody else. So how did a"
+          },
+          "measured_pause": null
+        }
+      ]
+    },
+    {
+      "row": "P2:03_unlabelled_bagging_beat1",
+      "cut_s": 88.64,
+      "prior_evidence": {
+        "kind": "clause",
+        "previous_word_index": 211,
+        "next_word_index": 212,
+        "previous_word": "there",
+        "next_word": "and",
+        "gap_s": 0.0,
+        "after_word_s": 0.0,
+        "clause_reason": "coordinated predicate: collected birds there / and thought"
+      },
+      "nearest_verified_boundaries": [
+        {
+          "start_s": 90.82,
+          "end_s": 91.24,
+          "word_index": 219,
+          "gap_s": 0.42,
+          "script": {
+            "token": "blackbirds,",
+            "context": "they were a mix of blackbirds, wrens and finches. For"
+          },
+          "measured_pause": null
+        },
+        {
+          "start_s": 92.18,
+          "end_s": 92.96,
+          "word_index": 222,
+          "gap_s": 0.78,
+          "script": {
+            "token": "finches.",
+            "context": "mix of blackbirds, wrens and finches. For most of them,"
+          },
+          "measured_pause": null
+        }
+      ]
+    },
+    {
+      "row": "P3:02a_malthus_lamplight",
+      "cut_s": 177.26,
+      "prior_evidence": {
+        "kind": "clause",
+        "previous_word_index": 423,
+        "next_word_index": 424,
+        "previous_word": "populations",
+        "next_word": "by",
+        "gap_s": 0.0,
+        "after_word_s": 0.0,
+        "clause_reason": "attribution: human populations / by Thomas Malthus"
+      },
+      "nearest_verified_boundaries": [
+        {
+          "start_s": 178.54,
+          "end_s": 179.08,
+          "word_index": 426,
+          "gap_s": 0.54,
+          "script": {
+            "token": "Malthus.",
+            "context": "about human populations by Thomas Malthus. And the missing piece"
+          },
+          "measured_pause": null
+        },
+        {
+          "start_s": 173.8,
+          "end_s": 173.8,
+          "word_index": 415,
+          "gap_s": 0.0,
+          "script": {
+            "token": "1838,",
+            "context": "eighteen thirty-eight, Darwin started reading"
+          },
+          "measured_pause": null
+        }
+      ]
+    },
+    {
+      "row": "P6:04a_mendel_pea_garden",
+      "cut_s": 476.56,
+      "prior_evidence": {
+        "kind": "clause",
+        "previous_word_index": 1128,
+        "next_word_index": 1129,
+        "previous_word": "Mendel",
+        "next_word": "had",
+        "gap_s": 0.0,
+        "after_word_s": 0.0,
+        "clause_reason": "subject ends: a friar called Gregor Mendel / had published"
+      },
+      "nearest_verified_boundaries": [
+        {
+          "start_s": 478.9,
+          "end_s": 479.92,
+          "word_index": 1135,
+          "gap_s": 1.02,
+          "script": {
+            "token": "plants.",
+            "context": "published his work on pea plants. Traits don't blend like"
+          },
+          "measured_pause": null
+        },
+        {
+          "start_s": 474.08,
+          "end_s": 474.08,
+          "word_index": 1123,
+          "gap_s": 0.0,
+          "script": {
+            "token": "1866,",
+            "context": "in eighteen sixty-six, a friar"
+          },
+          "measured_pause": null
+        }
+      ]
+    },
+    {
+      "row": "P6:08a_reuse_study_beaks_callback",
+      "cut_s": 508.48,
+      "prior_evidence": {
+        "kind": "clause",
+        "previous_word_index": 1200,
+        "next_word_index": 1201,
+        "previous_word": "and",
+        "next_word": "you",
+        "gap_s": 0.0,
+        "after_word_s": 0.0,
+        "clause_reason": "imperative clause ends: together with Mendel beads and / you have"
+      },
+      "nearest_verified_boundaries": [
+        {
+          "start_s": 507.78,
+          "end_s": 507.78,
+          "word_index": 1199,
+          "gap_s": 0.0,
+          "script": {
+            "token": "beads,",
+            "context": "Darwin's selection together with Mendel's beads, and you have the"
+          },
+          "measured_pause": null
+        },
+        {
+          "start_s": 512.24,
+          "end_s": 515.0,
+          "word_index": 1212,
+          "gap_s": 2.76,
+          "script": {
+            "context": "End of locked narration; trailing silence."
+          }
+        }
+      ]
+    }
+  ],
+  "unbridgeable_spans": [],
+  "cue_count": 43,
+  "cue_overlaps": [],
+  "all_word_anchors_preserved": true,
+  "all_name_onsets_preserved": true,
+  "all_name_holds_3_to_4_s": true,
+  "delayed_cues": [
+    {
+      "label": "JULY 1844",
+      "anchor_s": 234.36,
+      "display_s": 234.6,
+      "word_end_s": 235.38
+    },
+    {
+      "label": "ORIGINALITY SMASHED",
+      "anchor_s": 345.4,
+      "display_s": 345.88,
+      "word_end_s": 346.2
+    }
+  ],
+  "measured_pause_boundary_count": 7,
+  "measured_pause_note": "Numerical low-energy intervals only; no listening or motion perception claimed. A pause authorizes only an existing transcript word boundary, never a point inside a word.",
+  "v02_and_v03_unchanged": true
+}
