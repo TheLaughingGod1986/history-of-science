@@ -1,0 +1,755 @@
+{
+  "job": "J3736",
+  "film": "HOS:011",
+  "plan_file": "02_Video-Projects/011_Surgery-Before-Anaesthesia/07_Edit-Project/PICTURE_PLAN_v04.json",
+  "plan_sha256": "5b344b11e9a28bee4cdc227daf26ce5c96f6dd2ccce9b62fe81998876742cc9f",
+  "source_plan_v03_sha256": "df11c9e00116c7a44390535e0fb569f682735d3f8ed7206ed45926f768ee7238",
+  "summary": {
+    "total_rows": 93,
+    "mint_rows_audited": 67,
+    "free_rows_preserved": 26,
+    "reuse_rows": 0,
+    "overlap_s": 0.0,
+    "consecutive_full_frame_graphics": 0,
+    "real_person_name_hits": 0,
+    "forbidden_dna_hits": 0,
+    "text_request_hits": 0,
+    "leaked_stage_direction_hits": 0,
+    "all_carry_no_text_guard": true,
+    "all_generation_authorized_false": true,
+    "cleanups_applied_from_v03": 6,
+    "explorer_rows": [
+      "P2:03a",
+      "P3:07a"
+    ],
+    "fragile_light_rows": [
+      "P1:02b",
+      "P1:04a",
+      "P1:05a",
+      "P1:05b",
+      "P1:06a",
+      "P1:07b",
+      "P1:08b",
+      "P1:09c",
+      "P2:02b",
+      "P2:04b",
+      "P2:07a",
+      "P3:06a",
+      "P3:06b",
+      "P4:02b",
+      "P4:03b",
+      "P4:05a",
+      "P4:05b",
+      "P4:09b",
+      "P5:02a",
+      "P5:04b",
+      "P5:05a",
+      "P5:05b",
+      "P5:06b",
+      "P5:07b",
+      "P5:08a",
+      "P5:15a",
+      "P5:16b_closing_watch_and_globe"
+    ],
+    "standard_rows": [
+      "P1:01a",
+      "P1:01b",
+      "P1:02a",
+      "P1:03a",
+      "P1:03b",
+      "P1:08a",
+      "P1:09a",
+      "P2:02a",
+      "P2:05b",
+      "P2:06a",
+      "P2:08a",
+      "P2:09a",
+      "P2:10a",
+      "P3:02a",
+      "P3:03a",
+      "P3:03b",
+      "P3:04a",
+      "P3:04b",
+      "P3:05a",
+      "P3:08a",
+      "P3:08b",
+      "P3:10a",
+      "P4:02a",
+      "P4:04a",
+      "P4:04b",
+      "P4:07a",
+      "P4:07b",
+      "P4:08a",
+      "P4:09a",
+      "P5:02b",
+      "P5:03b",
+      "P5:09a",
+      "P5:10a",
+      "P5:11a",
+      "P5:11b",
+      "P5:13a",
+      "P5:13b",
+      "P5:14b"
+    ]
+  },
+  "p5_16b_resolution": {
+    "v03_row_id": "P5:16b_reuse_pocket_watch_to_globe",
+    "v04_row_id": "P5:16b_closing_watch_and_globe",
+    "in_s": 528.2,
+    "out_s": 532.72,
+    "duration_s": 4.52,
+    "v03_issue": "P1:07b uses 6.61 s of an 8.00 s clip, leaving only 1.39 s unused; reusing P1:07b for 4.52 s causes 3.13 s overlap (J2563/J2659).",
+    "why_not_free_graphic": "P5:16b sits between full-frame code graphic P5:16a (closing triptych) and full-frame code graphic P5:17_cream_end_card. HOS studio/RULES.md forbids back-to-back full-frame teach graphics: a moving plate must sit between them.",
+    "resolution": "Scoped 1 dedicated 8s moving 3D cartoon Flow plate; 0.00 s overlap across all 93/93 rows.",
+    "overlap_s": 0.0
+  },
+  "prompt_cleanups_applied": [
+    {
+      "row_id": "P1:01a",
+      "removed_prefix": "Answer image by 0:03: inside a steep-tiered",
+      "replaced_with": "Inside a steep-tiered",
+      "before_sha256": "8e81dd161c30f9a8451f0a8b9be685bf417cea1ffeea696b75c108bcf7b444be",
+      "after_sha256": "c0bc36e5a8c36faf5c2cee407b08ced55ac0b2614bd70b0901c6dbb9d40de574"
+    },
+    {
+      "row_id": "P1:01b",
+      "removed_prefix": "Title question by 0:06 ('Why?') + physical apparatus (0:05\u20130:15): close push",
+      "replaced_with": "Close push",
+      "before_sha256": "d5c9c6d4b7cf6e966a1323b36644487ecb042d56b0ca6c22e38699c472b2c7b7",
+      "after_sha256": "acecf3ba2cd7d957b013cfc1125f2dcaa1d22391dfa9f885ba76ee117842b618"
+    },
+    {
+      "row_id": "P1:02a",
+      "removed_prefix": "Physical proof/apparatus (0:05\u20130:15): tight lateral pan",
+      "replaced_with": "Tight lateral pan",
+      "before_sha256": "ccd887b01efddb77a84a64a8cdb82c6fa6677cfa2710d15681e005b7ad5bad20",
+      "after_sha256": "4e9d33e5d88469715f5b29de0289b2bb4b57e9e61ef2a5f02699c8ce9cc57182"
+    },
+    {
+      "row_id": "P1:02b",
+      "removed_prefix": "Physical proof/apparatus (0:05\u20130:15): an assistant's hands",
+      "replaced_with": "An assistant's hands",
+      "before_sha256": "5fddf82b72a96955260a2d846a116c41329d452cd7af30cf1ab9e36906f4166a",
+      "after_sha256": "c3abf4e3c131d3c3138ed1566a8e5271648fd936794a812e9bd3f21710c896ab"
+    },
+    {
+      "row_id": "P2:03a",
+      "removed_prefix": "[EXPLORER ACTS] In the 1800 Bristol laboratory",
+      "replaced_with": "In the 1800 Bristol laboratory",
+      "before_sha256": "6ef422f7ace5b084949d088f6c767183ffe6508dba204b488e2769f49ceb01c4",
+      "after_sha256": "f551fd622e3c30e2dccb371df6beb08d5b6d26dcdd13b8ec4b367eaad76e0abb"
+    },
+    {
+      "row_id": "P3:07a",
+      "removed_prefix": "[EXPLORER ACTS] In the front row of the Boston operating dome gallery",
+      "replaced_with": "In the front row of the Boston operating dome gallery",
+      "before_sha256": "9eb7c2b1eb77fda3e5a96540806d0c9045c3044ed3e5bff977af6fea632e66a7",
+      "after_sha256": "865e34fd11b43a325acf49927627ae341864dacd229e900f25de7b484175ad98"
+    }
+  ],
+  "rows": [
+    {
+      "row_id": "P1:01a",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P1:01b",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P1:02a",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P1:02b",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P1:03a",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P1:03b",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P1:04a",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P1:05a",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P1:05b",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P1:06a",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P1:07b",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P1:08a",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P1:08b",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P1:09a",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P1:09c",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P2:02a",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P2:02b",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P2:03a",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P2:04b",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P2:05b",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P2:06a",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P2:07a",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P2:08a",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P2:09a",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P2:10a",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P3:02a",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P3:03a",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P3:03b",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P3:04a",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P3:04b",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P3:05a",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P3:06a",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P3:06b",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P3:07a",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P3:08a",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P3:08b",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P3:10a",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P4:02a",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P4:02b",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P4:03b",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P4:04a",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P4:04b",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P4:05a",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P4:05b",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P4:07a",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P4:07b",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P4:08a",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P4:09a",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P4:09b",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P5:02a",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P5:02b",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P5:03b",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P5:04b",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P5:05a",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P5:05b",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P5:06b",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P5:07b",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P5:08a",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P5:09a",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P5:10a",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P5:11a",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P5:11b",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P5:13a",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P5:13b",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P5:14b",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P5:15a",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    },
+    {
+      "row_id": "P5:16b_closing_watch_and_globe",
+      "real_person_names": [],
+      "forbidden_dna_terms": [],
+      "text_requests": [],
+      "leaked_stage_directions": [],
+      "has_no_text_guard": true,
+      "ok": true
+    }
+  ]
+}

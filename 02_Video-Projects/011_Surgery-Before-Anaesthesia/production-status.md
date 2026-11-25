@@ -208,3 +208,15 @@ This is a data validation result, not film-stage approval or listening/motion QA
 
 
 Full source overrides and assembly requirements: `07_Edit-Project/J2659_CHIEF_DECISION.md`. J2563 resumes the 26 free rows and labelled-slate rough; picture and edit remain incomplete.
+
+
+## 25 Nov 2026 — J3736 £0 Flow pass-1 price pass, P5:16b fix & guarded runner build (`gemini`)
+
+- **Immutable v01–v03 preserved:** `PICTURE_PLAN_v03.json` and all 26 already-built free rows (`J2563` / PR `#650`) stay untouched; `validate_retime_v03.py` remains PASS.
+- **PICTURE_PLAN_v04 + `parts/part-01..05_plates_v04.json` + `PROMPT_AUDIT_v04.json`:**
+  - All 67 Flow prompts audited: **0 real person names**, **0 `"same DNA"` / `"lab DNA"`**, **0 on-screen text requests**, 67/67 carry `"no text, no letters, no numbers, no watermark, 16:9."`. Cleaned 6 leaked stage-direction prefixes from v03 (`P1:01a`, `P1:01b` removing `'Why?'`, `P1:02a`, `P1:02b`, `P2:03a`, `P3:07a`).
+  - Resolved `P5:16b_reuse_pocket_watch_to_globe` (3.13 s overlap against `P1:07b`) by scoping 1 dedicated 8 s moving 3D cartoon plate (`P5:16b_closing_watch_and_globe`) between full-frame graphics `P5:16a` and `P5:17_cream_end_card` (**93/93 rows, 0.00 s overlap, 0 consecutive full-frame graphics**).
+- **Price pass (`PRICE_REVIEW_v04.md`):** Live Flow balance `23,450 cr` (24 Nov 2026) minus `800 cr` shared unposted liability = `22,650 cr` spendable (`19,650 cr` above `--floor 3000`).
+  - **Recommended fastest clean route (Route A):** Pre-5-Dec `Veo 3.1 - Quality` (67 × 100 = **6,700 cr** try-1; `15,950 cr` headroom = `+12,950 cr` over floor; 0 new-model UAT delay; finishes pass-1 by 1–2 Dec for Mon 14 Dec Ben watch / Thu 17 Dec air).
+  - **Credit-saving alternative (Route B1 / B2):** Post-5-Dec / early-cutover hybrid (`29 Omni 1.2 Flash` 720p @ 24 cr + `38 Veo 3.1 - Lite` @ 5 cr = **886 cr**, or **696 cr** with `Lite [Lower Priority]`) after bounded 4-plate style UAT (~58 cr).
+- **Guarded runner (`_mint_flow_v01_pass1.py` + `PASS1_SCOPE_J3736.json` + `PASS1_MINT_PLAN_J3736.json`):** Mirrors HOS 013 (`--floor 3000`, live balance/account digest check, `SharedFlowAccounting` + `WriterLock`, `Veo 3.1 - Fast` & post-5-Dec retired-Quality refusal, `generation_authorized: false`, dual unarmed refusal). Tested offline in `tests/test_hos011_pass1_runner.py`. **£0 / 0 credits spent.** Parked for Chief price PASS / mint GO.
