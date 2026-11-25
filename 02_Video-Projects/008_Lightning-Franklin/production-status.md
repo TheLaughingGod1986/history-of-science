@@ -463,3 +463,17 @@ ALL CHECKS PASS
   72 videos, 0 errors.
   ```
 - **Remaining Studio-only finish (blocked on Ben sign-in to HOS Studio Chrome CDP 9460):** `cdp_browsers.sh status` reports port `9460` landed on `accounts.google.com` (`SIGNED OUT, Ben to sign in`). Once Ben signs in once on port `9460`: (1) set End screen (HOS playlist `PLEbpfUzWzcXU` + Subscribe) and 2-way Title+Thumbnail Test & Compare (Title A + Thumb A `THE KEY SPARKED` vs Title B *Why Did Franklin Fly a Kite in a Storm?* + Thumb B `NO BOLT STRUCK`) on `YqCWYlv_LCY`; (2) set Related video → `YqCWYlv_LCY` on `__UtUYdEUwg` and `4sYTV_rQcqs`; (3) confirm Altered Content = YES and Not Made for Kids visually in Studio.
+
+---
+
+## J3500 Studio-only finish & read-back (25 Nov 2026, Gemini acting Chief)
+
+- **Thumbnails Acting Chief PASS (`gemini`):** Re-verified `hos_008_thumbs_AB_v01_style_sheet.jpg`, `hos_008_thumb_A_the_key_sparked_v01_preview.jpg`, and `hos_008_thumb_B_no_bolt_struck_v01_preview.jpg`. Both **A (`THE KEY SPARKED`)** and **B (`NO BOLT STRUCK`)** PASS **HOOK**, **BAND**, and **PHONE (168×94)**.
+- **Long `YqCWYlv_LCY` Studio finish (CDP 9460, `@HistoryOfScienceYT`, £0):**
+  - **End screen saved:** `Playlist: How Did We Discover…? Atoms, the Periodic Table, Germs and X-Rays | History of Science` (`PLEbpfUzWzcXU`) + `Subscribe: History of Science`, `8:39:15–8:59:15`, zero overlap, verified on reload.
+  - **2-way Title + Thumbnail Test & Compare armed & saved:** Arm 1 = *Benjamin Franklin's Kite Experiment Explained* + Thumb A (`THE KEY SPARKED`); Arm 2 = *Why Did Franklin Fly a Kite in a Storm?* + Thumb B (`NO BOLT STRUCK`). Reload read-back confirms `Save` disabled (saved) and both arms recorded (`Ineligible` badge shown while Private/Scheduled; activates when Public at Thu 26 Nov 18:00 UK).
+  - **Visual disclosure & audience read-back (after Studio save):** `No, it's not Made for Kids` (`aria-checked="true"`), `Altered content: Yes` (`aria-checked="true"`), `Visibility: Scheduled` (`2026-11-26T18:00:00Z`), playlist `PLEbpfUzWzcXU` confirmed.
+- **Shorts `__UtUYdEUwg` (Fri 27 Nov 11:30 UK) & `4sYTV_rQcqs` (Sun 29 Nov 11:30 UK) Studio read-back (CDP 9460):**
+  - Both visually verified: `Visibility: Scheduled`, `No, it's not Made for Kids` (`aria-checked="true"`), `Altered content: Yes` (`aria-checked="true"`).
+  - **Related video constraint:** Tested searching both `"Benjamin Franklin"` and `"YqCWYlv_LCY"` in Studio's Related video picker; YouTube Studio returns `No matching results` while `YqCWYlv_LCY` is Private/Scheduled. Queued post-publish follow-up job **`J3649`** (`check-at 2026-11-26T18:05:00Z`, due Fri 27 Nov 10:00 UK — before Short A airs at 11:30 UK) to set `Related video → YqCWYlv_LCY` on both Shorts and confirm the A/B test is running once Public.
+- **Post-Studio channel audit (`npm run channel:audit`):** `75 videos, 0 errors.`

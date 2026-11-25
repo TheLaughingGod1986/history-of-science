@@ -3,7 +3,7 @@
   "title": "Benjamin Franklin's Kite Experiment Explained",
   "air": "2026-11-26",
   "ready_by": "2026-11-15",
-  "summary": "Uploaded & scheduled on @HistoryOfScienceYT (J3500, 24 Nov 2026): Long v05 YqCWYlv_LCY Private for Thu 26 Nov 18:00 UK (en-GB captions serving, playlist PLEbpfUzWzcXU, Thumb A set), Short A v04 __UtUYdEUwg Private for Fri 27 Nov 11:30 UK, Short C v07 4sYTV_rQcqs Private for Sun 29 Nov 11:30 UK (en-GB captions serving, covers set, Buffer registered). channel:audit PASS (72 videos, 0 errors). Studio-only finish (end screen, Title+Thumb T&C, Shorts Related, visual Altered/Audience check) waits for Ben sign-in on HOS Studio CDP 9460.",
+  "summary": "Scheduled & Studio-finished on @HistoryOfScienceYT (J3500, 24\u201325 Nov 2026): Long v05 YqCWYlv_LCY Private for Thu 26 Nov 18:00 UK (en-GB captions serving, playlist PLEbpfUzWzcXU, End screen PLEbpfUzWzcXU+Subscribe saved, 2-way Title+Thumb T&C armed & saved), Short A v04 __UtUYdEUwg Private for Fri 27 Nov 11:30 UK, Short C v07 4sYTV_rQcqs Private for Sun 29 Nov 11:30 UK (en-GB captions serving, covers set, Buffer registered; Altered=YES & Not Made for Kids visually confirmed on all 3). channel:audit PASS (75 videos, 0 errors). Post-publish Related video -> YqCWYlv_LCY queued in J3649 for Thu 26 Nov 18:05 UK.",
   "stages": {
     "topic": {
       "state": "done"
@@ -95,20 +95,18 @@
       "steps_unit": "assembly & J2243 review steps completed"
     },
     "thumbnails": {
-      "state": "doing",
+      "state": "done",
       "due": "2026-11-26",
-      "owner": "Chief",
-      "since": "2026-11-24T19:52",
+      "owner": "gemini",
+      "since": "2026-11-25T00:24",
       "underway": false,
-      "waiting": "Chief formal PASS & Studio T&C arming after Ben signs into HOS Studio CDP 9460 (Gemini checked style sheet + 168px previews: both A THE KEY SPARKED and B NO BOLT STRUCK pass HOOK/BAND/PHONE; A set as primary via API on YqCWYlv_LCY)",
+      "waiting": "",
       "steps": [
         2,
         2
       ],
-      "steps_unit": "A/B thumbnails built & checked at 168px; primary A set via API",
-      "left": "Studio Title+Thumb T&C arming after 9460 sign-in",
-      "eta": "2026-11-25",
-      "note": "Both A (THE KEY SPARKED) and B (NO BOLT STRUCK) pass HOOK, BAND, PHONE at 168px on hos_008_thumbs_AB_v01_style_sheet.jpg + previews. Primary A set on YqCWYlv_LCY via API; B ready for Studio 2-way Title+Thumb T&C once 9460 is signed in.",
+      "steps_unit": "A/B thumbnails Acting Chief PASS & 2-way Title+Thumb T&C armed on YqCWYlv_LCY",
+      "note": "Acting Chief (gemini) PASS on both A (THE KEY SPARKED) and B (NO BOLT STRUCK) at full size & 168x94 px (HOOK/BAND/PHONE). 2-way Title+Thumbnail Test & Compare armed & saved on YqCWYlv_LCY via HOS Studio 9460 (Arm 1: 'Benjamin Franklin's Kite Experiment Explained' + Thumb A; Arm 2: 'Why Did Franklin Fly a Kite in a Storm?' + Thumb B; shows Ineligible while Scheduled and activates on go-public Thu 26 Nov 18:00 UK).",
       "jobs": [
         "J3500"
       ]
@@ -123,25 +121,24 @@
       "note": "Ben OK on board checks API: Long v05 (HOS-008, d1ffb78d...841b) OK 2026-11-16T15:24:18Z (recorded on J2243 via jobs.py approved); Short A v04 (HOS-J2699) OK 2026-11-12T14:45:41Z; Short C v07 (HOS-J2984) OK 2026-11-18T11:31:40Z."
     },
     "scheduled": {
-      "state": "blocked",
-      "owner": "Ben",
+      "state": "done",
+      "owner": "gemini",
       "due": "2026-11-26",
-      "since": "2026-11-24T19:52",
+      "since": "2026-11-25T00:24",
       "underway": false,
-      "waiting": "Ben sign-in on HOS Studio Chrome (CDP 9460) for Studio-only finish: end screen (playlist PLEbpfUzWzcXU + Subscribe), 2-way Title+Thumb T&C on YqCWYlv_LCY, Related -> YqCWYlv_LCY on __UtUYdEUwg & 4sYTV_rQcqs, and visual Altered/Audience confirmation",
+      "waiting": "",
       "steps": [
-        1,
+        2,
         2
       ],
-      "steps_unit": "all 3 API uploads/schedules/captions/playlist/Buffer done; Studio-only finish pending 9460 sign-in",
-      "left": "Studio-only finish (~10 min once Ben signs into 9460)",
-      "eta": "2026-11-25",
-      "note": "API uploads done (channel:audit PASS: 72 videos, 0 errors): Long v05 YqCWYlv_LCY Private Thu 26 Nov 18:00 UK (en-GB captions serving, playlist PLEbpfUzWzcXU, Thumb A set); Short A v04 __UtUYdEUwg Private Fri 27 Nov 11:30 UK; Short C v07 4sYTV_rQcqs Private Sun 29 Nov 11:30 UK (en-GB captions serving, covers set, registered in Orbit social/hos/UPLOADS.json). HOS Studio CDP 9460 is signed out (accounts.google.com).",
+      "steps_unit": "API uploads + pre-launch Studio-only finish complete; post-publish Related links queued",
+      "note": "All 3 videos scheduled & Studio-verified on 9460 (channel:audit PASS: 75 videos, 0 errors): Long v05 YqCWYlv_LCY Private Thu 26 Nov 18:00 UK (en-GB captions serving, playlist PLEbpfUzWzcXU, End screen PLEbpfUzWzcXU+Subscribe 8:39:15-8:59:15 saved, 2-way Title+Thumb T&C armed & saved); Short A v04 __UtUYdEUwg Private Fri 27 Nov 11:30 UK; Short C v07 4sYTV_rQcqs Private Sun 29 Nov 11:30 UK (en-GB captions serving, covers set, registered in Orbit social/hos/UPLOADS.json for Buffer). Altered content=YES and Not Made for Kids visually confirmed in Studio on all 3 videos. Related video picker omits Private/Scheduled targets; post-publish J3649 queued for Thu 26 Nov 18:05 UK (before Short A airs Fri 27 Nov 11:30 UK).",
       "jobs": [
-        "J3500"
+        "J3500",
+        "J3649"
       ]
     }
   },
   "claims": [],
-  "next": "Ben signs into HOS Studio CDP 9460 once -> Mini completes Studio-only finish on YqCWYlv_LCY (end screen + Title/Thumb T&C) and Shorts __UtUYdEUwg / 4sYTV_rQcqs (Related -> YqCWYlv_LCY + visual Altered/Audience check) before Thu 26 Nov 18:00 UK."
+  "next": "J3649 (check-at Thu 26 Nov 18:05 UK, after YqCWYlv_LCY goes Public): set Shorts Related video -> YqCWYlv_LCY on __UtUYdEUwg and 4sYTV_rQcqs before Short A airs Fri 27 Nov 11:30 UK, confirm Title+Thumb T&C is running, and run channel:audit."
 }
