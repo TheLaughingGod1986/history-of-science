@@ -1,0 +1,45 @@
+{
+  "film": "127",
+  "title": "How Do Airplanes Fly? (The 1901 Wind Tunnel)",
+  "summary": "Proposed in J3245 (21 Nov 2026) and appended to jobs/WIP.json next_hos under Rule G (4/4 active HOS slots full); Rule-E topic review queued. Directly implements Ben's approved 2027 search plan (J3224 Cluster 4 Lead Film: wright brothers first flight 19.0k/mo, comp 45, 10/10 SERP gap). Neighbours.py PASS verified (8 education videos >=1M, 6 strictly on-topic incl. TED-Ed 2.57M & 2.52M, minutephysics 2.48M, SciShow Kids 1.75M, Veritasium 1.66M, Simple History 1.41M); public_search.py autocomplete yes (4 phrases) & 0 exact title collisions. Awaits Rule-E GO, active HOS WIP slot, SOURCES.md, and facts lane.",
+  "stages": {
+    "topic": {
+      "state": "todo"
+    },
+    "script": {
+      "state": "todo"
+    },
+    "facts": {
+      "state": "todo"
+    },
+    "package": {
+      "state": "todo"
+    },
+    "vo": {
+      "state": "todo"
+    },
+    "shorts_scripts": {
+      "state": "todo"
+    },
+    "shorts_vo": {
+      "state": "todo"
+    },
+    "picture": {
+      "state": "todo"
+    },
+    "edit": {
+      "state": "todo"
+    },
+    "thumbnails": {
+      "state": "todo"
+    },
+    "ben_ok": {
+      "state": "todo"
+    },
+    "scheduled": {
+      "state": "todo"
+    }
+  },
+  "claims": [],
+  "next": ""
+}

@@ -1,0 +1,181 @@
+{
+ "pulled": "2026-11-21",
+ "source": "YouTube GB search (signed out) filtered to education channels; not vidIQ.",
+ "phrases": [
+  "how do airplanes actually fly",
+  "wright brothers airplane",
+  "airfoil lift"
+ ],
+ "autocomplete": {
+  "how do airplanes actually fly": [
+   "how do airplanes actually fly",
+   "how do airplanes fly",
+   "how do airplanes fly for kids",
+   "how do airplanes fly storybots",
+   "how do airplanes fly paper"
+  ],
+  "wright brothers airplane": [
+   "wright brothers airplane",
+   "wright brothers airplane video",
+   "wright brothers airplane model",
+   "wright brothers plane model",
+   "wright brothers plane replica",
+   "wright brothers flying machine",
+   "wright brothers plane crash",
+   "wright brothers flight 1908",
+   "wright brothers plane simpsons"
+  ],
+  "airfoil lift": [
+   "airfoil lift",
+   "airfoil lift experiment",
+   "airfoil lift and drag",
+   "airfoil lift explained",
+   "high lift airfoil"
+  ]
+ },
+ "sharedTitleWords": [
+  "wright brothers",
+  "how do",
+  "do airplanes",
+  "airplanes fly",
+  "the wright"
+ ],
+ "neighbours": [
+  {
+   "id": "dzrwnwOx0fw",
+   "title": "Can you solve the airplane riddle? - Judd A. Schorr",
+   "channel": "TED-Ed",
+   "views": "7,648,494 views",
+   "age": "9 yr ago",
+   "length": "4:38",
+   "tier": 1,
+   "viewCount": 7648494,
+   "foundBy": "ted-ed wright brothers airplane",
+   "onTopic": true
+  },
+  {
+   "id": "iKYHf22qVdM",
+   "title": "What happens if you don’t put your phone in airplane mode? - Lindsay DeMarchi",
+   "channel": "TED-Ed",
+   "views": "4,213,803 views",
+   "age": "3 yr ago",
+   "length": "4:55",
+   "tier": 1,
+   "viewCount": 4213803,
+   "foundBy": "ted-ed how do airplanes actually fly",
+   "onTopic": true
+  },
+  {
+   "id": "p4VHMsIuPmk",
+   "title": "How do airplanes actually fly? - Raymond Adkins",
+   "channel": "TED-Ed",
+   "views": "2,568,211 views",
+   "age": "3 yr ago",
+   "length": "5:03",
+   "tier": 1,
+   "viewCount": 2568211,
+   "foundBy": "how do airplanes actually fly",
+   "onTopic": true
+  },
+  {
+   "id": "hd8tYiLSmn0",
+   "title": "Why are airplanes slower than they used to be? - Alex Gendler",
+   "channel": "TED-Ed",
+   "views": "2,519,461 views",
+   "age": "5 yr ago",
+   "length": "4:59",
+   "tier": 1,
+   "viewCount": 2519461,
+   "foundBy": "ted-ed how do airplanes actually fly",
+   "onTopic": true
+  },
+  {
+   "id": "Gg0TXNXgz-w",
+   "title": "How Do Airplanes Fly?",
+   "channel": "minutephysics",
+   "views": "2,481,276 views",
+   "age": "11 yr ago",
+   "length": "3:11",
+   "tier": 2,
+   "viewCount": 2481276,
+   "foundBy": "how do airplanes actually fly",
+   "onTopic": true
+  },
+  {
+   "id": "VLpSxHwfU04",
+   "title": "How Airplanes Fly! | Airplane Science | SciShow Kids",
+   "channel": "SciShow Kids",
+   "views": "1,754,830 views",
+   "age": "3 yr ago",
+   "length": "4:31",
+   "tier": 2,
+   "viewCount": 1754830,
+   "foundBy": "how do airplanes actually fly",
+   "onTopic": true
+  },
+  {
+   "id": "aFO4PBolwFg",
+   "title": "How Does A Wing Actually Work?",
+   "channel": "Veritasium",
+   "views": "1,662,146 views",
+   "age": "14 yr ago",
+   "length": "2:51",
+   "tier": 2,
+   "viewCount": 1662146,
+   "foundBy": "how do airplanes actually fly",
+   "onTopic": true
+  },
+  {
+   "id": "YDlk4Ky_ahs",
+   "title": "The Wright Brothers, First Successful Airplane (1903)",
+   "channel": "Simple History",
+   "views": "1,410,350 views",
+   "age": "9 yr ago",
+   "length": "2:30",
+   "tier": 2,
+   "viewCount": 1410350,
+   "foundBy": "wright brothers airplane",
+   "onTopic": true
+  },
+  {
+   "id": "WCPapu78SNM",
+   "title": "Wright Brothers Didn't Invent Flight",
+   "channel": "Real Engineering",
+   "views": "384,056 views",
+   "age": "10 yr ago",
+   "length": "2:22",
+   "tier": 2,
+   "viewCount": 384056,
+   "foundBy": "wright brothers airplane",
+   "onTopic": true
+  },
+  {
+   "id": "9S7H8TlkBC4",
+   "title": "How the Wright Brothers Changed Everything We Know About Flying",
+   "channel": "SciShow",
+   "views": "293,525 views",
+   "age": "6 yr ago",
+   "length": "12:13",
+   "tier": 2,
+   "viewCount": 293525,
+   "foundBy": "ted-ed wright brothers airplane",
+   "onTopic": true
+  },
+  {
+   "id": "rEcDa8IkaFw",
+   "title": "Learning to Fly from the Wright Brothers | Brian McManus | TEDxYouth@Hinsdale",
+   "channel": "TEDx Talks",
+   "views": "871 views",
+   "age": "8 yr ago",
+   "length": "9:59",
+   "tier": 1,
+   "viewCount": 871,
+   "foundBy": "ted-ed wright brothers airplane",
+   "onTopic": true
+  }
+ ],
+ "bigCount": 8,
+ "gate": "PASS",
+ "hasTed": true,
+ "failedQueries": []
+}
