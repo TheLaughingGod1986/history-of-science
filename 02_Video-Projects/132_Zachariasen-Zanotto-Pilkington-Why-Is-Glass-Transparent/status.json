@@ -1,0 +1,46 @@
+{
+  "film": "132",
+  "title": "Why Is Glass Transparent? (The Quantum Gap)",
+  "summary": "Proposed in J3408 and Rule-E pre-cleared by J3409 (GO 95.1/100, 23 Nov 2026). Stays in jobs/WIP.json next_hos under Rule G (4/4 active HOS slots full). Everyday materials-physics discovery story (Venetian cristallo, Zachariasen 1932 random network & Warren X-ray proof, quantum band gap & soda-lime UVB cutoff, Zanotto 1998/1999 cathedral-glass myth bust, Pilkington 1952-1959 float glass). neighbours.py PASS (4 >=1M edu videos: Veritasium 9.81M, TED-Ed 5.03M Why is glass transparent?, TED-Ed 2.03M metallic glass, Be Smart 1.85M; 0 off-topic >=1M); public_search.py autocomplete yes on 4 core phrases, 0 exact title collisions. All claims UNVERIFIED pending open WIP slot, SOURCES.md, and facts lane.",
+  "stages": {
+    "topic": {
+      "state": "todo",
+      "note": "J3408 topic brief written; J3409 Rule-E topic go/no-go review GO (95.1/100 in next_hos under Rule G); removed unsaved Fermilab ref, excluded 3 <1M off-topic neighbour rows (incl. Google Glass), fixed Thumb A/B §2.5 & §2.6 (LIGHT PASSES THROUGH / WINDOWS NEVER FLOW), separated pure silica ~9 eV gap from soda-lime ~3.9-4.1 eV UVB cutoff (Short S02 -> BLOCKS SUNBURN UVB), distinguished Zachariasen 1932 theory vs Warren X-ray diffraction, populated PRE_BUILD_VIDIQ_AUDIT.md, added TOPIC_GO_NO_GO_SHEET.md & TOPIC_OPPORTUNITY_SCORE.md; all claims remain unverified pending SOURCES.md and facts lane when an active HOS slot opens"
+    },
+    "script": {
+      "state": "todo"
+    },
+    "facts": {
+      "state": "todo"
+    },
+    "package": {
+      "state": "todo"
+    },
+    "vo": {
+      "state": "todo"
+    },
+    "shorts_scripts": {
+      "state": "todo"
+    },
+    "shorts_vo": {
+      "state": "todo"
+    },
+    "picture": {
+      "state": "todo"
+    },
+    "edit": {
+      "state": "todo"
+    },
+    "thumbnails": {
+      "state": "todo"
+    },
+    "ben_ok": {
+      "state": "todo"
+    },
+    "scheduled": {
+      "state": "todo"
+    }
+  },
+  "claims": [],
+  "next": ""
+}
