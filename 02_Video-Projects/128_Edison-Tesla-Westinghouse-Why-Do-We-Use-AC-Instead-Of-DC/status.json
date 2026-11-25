@@ -21,11 +21,11 @@
     "facts": {
       "state": "doing",
       "due": "2026-12-01",
-      "owner": "Gemini",
-      "since": "2026-11-24",
+      "owner": "Claude",
+      "since": "2026-11-25",
       "underway": false,
-      "waiting": "independent Gemini facts pass and direct-quote verification on exact v02 hashes (FACT_NOTES_v02.md + SOURCES.md)",
-      "note": "J3628 replaced mislabelled Wikipedia links with direct institutional URLs + honest secondary labels; not self-certified"
+      "waiting": "script/notes fixes for 5 J3629 FLAGs (Edison age at Holborn, Ferraris 18 vs 11 Mar 1888, Stanley birthdate & Row 10 quote, Arm B collision check) and J3630 direct-quote/lock review",
+      "note": "J3629 independent Gemini facts check complete (01_Script/GEMINI_FACTS_CHECK_v02.md: 13 OK, 9 PARTIAL, 5 FLAG, 6 primary upgrades); not locked, no spend"
     },
     "package": {
       "state": "doing",
