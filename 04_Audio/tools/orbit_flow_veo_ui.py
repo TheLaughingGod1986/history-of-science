@@ -47,10 +47,53 @@ DEFAULT_PROFILE = Path(
         ),
     )
 )
-DEFAULT_MODEL = os.environ.get("ORBIT_FLOW_VEO_MODEL", "Veo 3.1 - Quality")
-# Flow video CG must stay on Veo 3.x — never Omni Flash / Nano Banana for Orbit motion.
-VEO3_MODEL_RE = re.compile(r"^Veo\s*3(\.\d+)?\s*-\s*(Lite|Fast|Quality)$", re.I)
-FORBIDDEN_VIDEO_MODELS = ("Omni Flash", "Nano Banana", "Nano Banana 2")
+FLOW_CUTOVER_DATE = "2026-12-05"
+MODEL_VEO_QUALITY = "Veo 3.1 - Quality"
+MODEL_VEO_FAST = "Veo 3.1 - Fast"
+MODEL_VEO_LITE = "Veo 3.1 - Lite"
+MODEL_VEO_LITE_LOWER_PRIORITY = "Veo 3.1 - Lite [Lower Priority]"
+MODEL_OMNI_1_2_FLASH = "Omni 1.2 Flash"
+POST_CUTOVER_DEFAULT_MODEL = MODEL_VEO_LITE
+RETIRED_FLOW_MODELS = (
+    MODEL_VEO_FAST,
+    MODEL_VEO_QUALITY,
+    "Omni 1.1 Flash",
+)
+# Keep existing pre-cutover default safe until 5 Dec 2026 cutover; override via
+# ORBIT_FLOW_VEO_MODEL or --model.
+DEFAULT_MODEL = os.environ.get("ORBIT_FLOW_VEO_MODEL", MODEL_VEO_QUALITY)
+# Flow video models: Veo 3.x (including Ultra 20x 0-credit Lower Priority) and
+# opt-in Flow Omni 1.2 Flash (post-5 Dec 2026 HOS higher-tier option at 720p).
+# Orbit CG stays Veo-only (allow_omni_1_2=False by default).
+VEO3_MODEL_RE = re.compile(
+    r"^Veo\s*3(\.\d+)?\s*-\s*(Lite(?:\s*\[Lower Priority\])?|Fast|Quality)$",
+    re.I,
+)
+OMNI_1_2_MODEL_RE = re.compile(r"^Omni\s*1\.2\s*Flash$", re.I)
+FORBIDDEN_VIDEO_MODELS = ("Omni 1.1", "Omni Flash", "Nano Banana", "Nano Banana 2")
+FLOW_MODEL_ALIASES = {
+    "quality": MODEL_VEO_QUALITY,
+    "veo-quality": MODEL_VEO_QUALITY,
+    "veo 3.1 - quality": MODEL_VEO_QUALITY,
+    "fast": MODEL_VEO_FAST,
+    "veo-fast": MODEL_VEO_FAST,
+    "veo 3.1 - fast": MODEL_VEO_FAST,
+    "lite": MODEL_VEO_LITE,
+    "veo-lite": MODEL_VEO_LITE,
+    "veo 3.1 - lite": MODEL_VEO_LITE,
+    "lite-lp": MODEL_VEO_LITE_LOWER_PRIORITY,
+    "lite-low": MODEL_VEO_LITE_LOWER_PRIORITY,
+    "veo-lite-lp": MODEL_VEO_LITE_LOWER_PRIORITY,
+    "veo 3.1 - lite [lower priority]": MODEL_VEO_LITE_LOWER_PRIORITY,
+    "omni-1.2": MODEL_OMNI_1_2_FLASH,
+    "omni 1.2": MODEL_OMNI_1_2_FLASH,
+    "omni 1.2 flash": MODEL_OMNI_1_2_FLASH,
+    "omni flash 1.2": MODEL_OMNI_1_2_FLASH,
+}
+OMNI_1_2_MIN_S = 3
+OMNI_1_2_MAX_S = 15
+VEO3_DURATIONS_S = (4, 6, 8)
+ALLOWED_ASPECTS = ("16:9", "9:16")
 MEDIA_REDIRECT_RE = re.compile(r"media\.getMediaUrlRedirect\?name=([a-f0-9\-]+)", re.I)
 
 # Flow Agent invents a near-miss redesign unless the Orbit identity still is
@@ -455,37 +498,121 @@ def ensure_project(page, *, attempts: int = 3) -> str:
     raise last
 
 
-def assert_veo3_model(model: str) -> str:
-    """Require a Flow Veo 3.x video model label (Lite / Fast / Quality)."""
-    label = (model or "").strip()
-    if any(bad.lower() in label.lower() for bad in FORBIDDEN_VIDEO_MODELS):
+def is_omni_model(model: str) -> bool:
+    """True when the model label refers to Flow Omni 1.2 Flash."""
+    return bool(OMNI_1_2_MODEL_RE.match((model or "").strip()))
+
+
+def is_retired_model(model: str) -> bool:
+    """True when the model is scheduled for Google Flow retirement on 5 Dec 2026."""
+    low = (model or "").strip().lower()
+    return any(low == m.lower() for m in RETIRED_FLOW_MODELS)
+
+
+def normalize_flow_model_label(raw: str) -> str:
+    """Strip Flow dropdown chrome (icons, arrow_drop_down, 'Leaving 5 Dec' badge)."""
+    text = (raw or "").strip()
+    if not text:
+        return ""
+    first = text.splitlines()[0].strip()
+    first = re.sub(r"\s*arrow_drop_down\s*", " ", first, flags=re.I)
+    first = re.sub(r"^volume_up\s*", "", first, flags=re.I)
+    first = re.sub(r"\s*\|\s*Leaving\s+.*$", "", first, flags=re.I)
+    first = re.sub(r"\s+Leaving\s+\d+\s+[A-Za-z]+.*$", "", first, flags=re.I)
+    return " ".join(first.split())
+
+
+def resolve_flow_model(
+    model: str,
+    *,
+    lower_priority: bool = False,
+    allow_omni_1_2: bool = False,
+) -> str:
+    """Normalize aliases, apply --lower-priority, and validate against Flow lineup."""
+    raw = normalize_flow_model_label(model)
+    canonical = FLOW_MODEL_ALIASES.get(raw.lower(), raw)
+    if lower_priority:
+        if canonical.lower() in (
+            MODEL_VEO_LITE.lower(),
+            MODEL_VEO_LITE_LOWER_PRIORITY.lower(),
+        ):
+            canonical = MODEL_VEO_LITE_LOWER_PRIORITY
+        else:
+            raise RuntimeError(
+                f"--lower-priority is only available for {MODEL_VEO_LITE!r} "
+                f"({MODEL_VEO_LITE_LOWER_PRIORITY!r}), not {canonical!r}"
+            )
+    return assert_veo3_model(canonical, allow_omni_1_2=allow_omni_1_2)
+
+
+def assert_veo3_model(model: str, *, allow_omni_1_2: bool = False) -> str:
+    """Validate a Flow video model label (Veo 3.x, or opt-in Omni 1.2 Flash).
+
+    Keeps Orbit CG strictly Veo-only by default (allow_omni_1_2=False) while
+    supporting Veo 3.1 - Lite [Lower Priority] and HOS post-5 Dec Omni 1.2 Flash
+    when allow_omni_1_2=True. Always refuses Omni 1.1 Flash and Nano Banana.
+    """
+    label = normalize_flow_model_label(model)
+    if OMNI_1_2_MODEL_RE.match(label):
+        if allow_omni_1_2:
+            return MODEL_OMNI_1_2_FLASH
         raise RuntimeError(
-            f"Refusing non-Veo video model {label!r}. Orbit CG must use Veo 3 "
-            f"(e.g. 'Veo 3.1 - Quality'). Override: ORBIT_FLOW_VEO_MODEL=..."
+            f"Refusing {label!r} without explicit opt-in (allow_omni_1_2=True / --allow-omni). "
+            f"Default video path requires Veo 3.x (e.g. {MODEL_VEO_LITE!r} or {MODEL_VEO_QUALITY!r})."
         )
-    if not VEO3_MODEL_RE.match(label):
+    if any(bad.lower() in label.lower() for bad in FORBIDDEN_VIDEO_MODELS) or re.search(
+        r"\bomni\b", label, re.I
+    ):
         raise RuntimeError(
-            f"Expected a Veo 3 model like 'Veo 3.1 - Quality', got {label!r}"
+            f"Refusing forbidden/retired video model {label!r}. Use Veo 3.x "
+            f"(e.g. {MODEL_VEO_LITE!r}, {MODEL_VEO_LITE_LOWER_PRIORITY!r}, {MODEL_VEO_QUALITY!r}) "
+            f"or opt-in {MODEL_OMNI_1_2_FLASH!r} (--allow-omni)."
         )
-    return label
+    m = VEO3_MODEL_RE.match(label)
+    if not m:
+        raise RuntimeError(
+            f"Expected a Veo 3 model like {MODEL_VEO_LITE!r}, "
+            f"{MODEL_VEO_LITE_LOWER_PRIORITY!r}, or {MODEL_VEO_QUALITY!r}, got {label!r}"
+        )
+    ver = m.group(1) or ""
+    tier_raw = " ".join(m.group(2).split())
+    low_tier = tier_raw.lower()
+    if low_tier.startswith("lite") and "lower priority" in low_tier:
+        return f"Veo 3{ver} - Lite [Lower Priority]"
+    return f"Veo 3{ver} - {tier_raw.capitalize()}"
+
+
+# Clear alias for post-5 Dec callers that allow both Veo 3.1 and Omni 1.2 Flash.
+assert_flow_video_model = assert_veo3_model
 
 
 def read_selected_video_model(page) -> str | None:
     """Read the currently selected Flow video-generation model label."""
-    return page.evaluate(
+    raw = page.evaluate(
         """() => {
+          const clean = (txt) => {
+            const first = String(txt || '').trim().split('\\n')[0].trim();
+            return first
+              .replace(/\\s*arrow_drop_down\\s*/i, '')
+              .replace(/^volume_up\\s*/i, '')
+              .trim();
+          };
+          const direct = document.querySelector('button[aria-label="Select model family"]');
+          if (direct) {
+            const c = clean(direct.innerText || '');
+            if (c) return c;
+          }
           for (const b of document.querySelectorAll('button')) {
             const t = (b.innerText || '').trim().replace(/\\n/g, ' ');
-            if (/Veo 3|Omni Flash/.test(t) && /arrow_drop_down/.test(t)) {
-              return t.replace(/\\s*arrow_drop_down\\s*/i, '')
-                .replace(/^volume_up\\s*/i, '')
-                .trim();
+            if (/Veo 3|Omni\\b/i.test(t) && /arrow_drop_down/.test(t)) {
+              return clean(b.innerText || '');
             }
           }
           // Closed pill may show "Video · 720p · 8s" — open state is authoritative.
           return null;
         }"""
     )
+    return normalize_flow_model_label(raw) if raw else None
 
 
 def _ensure_create_prompt_mode(page) -> None:
@@ -572,9 +699,11 @@ def _open_agent_settings_drawer(page) -> None:
         raise RuntimeError("Flow Agent settings drawer did not open")
 
 
-def _lock_veo_in_agent_settings(page, model: str) -> str:
-    """In Agent settings: Never confirm, pick Veo under Video generation default, Save."""
-    model = assert_veo3_model(model)
+def _lock_veo_in_agent_settings(
+    page, model: str, *, allow_omni_1_2: bool = False
+) -> str:
+    """In Agent settings: Never confirm, pick requested model under Video generation default, Save."""
+    model = assert_veo3_model(model, allow_omni_1_2=allow_omni_1_2)
     _open_agent_settings_drawer(page)
 
     page.evaluate(
@@ -652,21 +781,25 @@ def _lock_veo_in_agent_settings(page, model: str) -> str:
     print(f"  video model dropdown: {opened!r}", flush=True)
     page.wait_for_timeout(700)
 
-    wanted = [model, "Veo 3.1 - Fast", "Veo 3.1 - Lite", "Veo 3.1 - Quality", "Veo 3.1"]
     selected = page.evaluate(
-        r"""(wanted) => {
-          for (const label of wanted) {
-            for (const b of document.querySelectorAll('[role=menuitem], button')) {
-              const t = (b.innerText || '').replace(/\n/g, ' ').trim();
-              if (t === label || t.includes(label)) { b.click(); return t; }
+        r"""(target) => {
+          const needle = String(target || '').trim().toLowerCase();
+          for (const b of document.querySelectorAll('[role=menuitem], [role=option], button')) {
+            const first = (b.innerText || '').trim().split('\n')[0]
+              .replace(/^volume_up\s*/i, '')
+              .replace(/\s*arrow_drop_down\s*/i, '')
+              .trim();
+            if (first.toLowerCase() === needle) {
+              b.click();
+              return first;
             }
           }
           return null;
         }""",
-        wanted,
+        model,
     )
     if not selected:
-        raise RuntimeError(f"Could not select video model from {wanted}")
+        raise RuntimeError(f"Could not select exact video model {model!r} in Agent settings")
     print(f"  video model selected: {selected}", flush=True)
     page.wait_for_timeout(400)
 
@@ -739,76 +872,99 @@ def _select_video_tab(page) -> None:
         page.wait_for_timeout(900)
 
 
-def _select_veo_from_dropdown(page, model: str) -> str:
-    """Open Omni/Veo dropdown and pick the requested Veo 3.x model."""
+def _select_veo_from_dropdown(
+    page, model: str, *, allow_omni_1_2: bool = False
+) -> str:
+    """Open Flow video model dropdown and pick the exact requested model."""
+    model = assert_veo3_model(model, allow_omni_1_2=allow_omni_1_2)
     dd = page.locator("button").filter(has_text="arrow_drop_down")
-    # Prefer the video-model dropdown (Omni Flash / Omni 1.1 Flash / Veo 3.x)
-    model_dd = page.locator("button").filter(has_text="Omni").filter(
-        has_text="Flash"
-    ).filter(has_text="arrow_drop_down")
-    if model_dd.count() == 0:
-        model_dd = page.locator("button").filter(has_text="Omni Flash").filter(
-            has_text="arrow_drop_down"
-        )
+    # Prefer Flow's explicit model-family picker button first (verified 25 Nov 2026).
+    model_dd = page.locator('button[aria-label="Select model family"]')
     if model_dd.count() == 0:
         model_dd = page.locator("button").filter(has_text="Veo 3").filter(
             has_text="arrow_drop_down"
         )
     if model_dd.count() == 0:
+        model_dd = page.locator("button").filter(has_text="Omni").filter(
+            has_text="Flash"
+        ).filter(has_text="arrow_drop_down")
+    if model_dd.count() == 0:
         model_dd = dd
     if model_dd.count() == 0:
         raise RuntimeError("Flow video model dropdown not found")
 
-    current = (model_dd.last.inner_text() or "").replace("\n", " ")
-    if model not in current:
+    current = normalize_flow_model_label(model_dd.last.inner_text() or "")
+    if current.lower() != model.lower():
         model_dd.last.click(timeout=5000, force=True)
         page.wait_for_timeout(800)
-        item = page.get_by_role("menuitem", name=re.compile(re.escape(model), re.I))
-        if item.count() == 0:
-            item = page.locator(f'[role="menuitem"]:has-text("{model}")')
-        if item.count() == 0:
-            # Menuitem text may include a leading volume_up icon glyph
-            clicked = page.evaluate(
-                """(model) => {
-                  const needle = String(model || '').toLowerCase();
-                  for (const el of document.querySelectorAll('[role=menuitem],button')) {
-                    const t = (el.innerText || '').trim().replace(/\\n/g, ' ');
-                    if (t.length < 80 && t.toLowerCase().includes(needle)) {
-                      el.click();
-                      return t;
-                    }
-                  }
-                  return null;
-                }""",
-                model,
-            )
-            if not clicked:
-                raise RuntimeError(f"Veo 3 model menu item not found: {model}")
-        else:
-            item.first.click(timeout=5000, force=True)
+        # Match the exact first line (stripping any 'Leaving 5 Dec' badge) so
+        # 'Veo 3.1 - Lite' never collides with 'Veo 3.1 - Lite [Lower Priority]'.
+        clicked = page.evaluate(
+            """(model) => {
+              const needle = String(model || '').trim().toLowerCase();
+              const clean = (txt) => String(txt || '').trim().split('\\n')[0]
+                .replace(/^volume_up\\s*/i, '')
+                .replace(/\\s*arrow_drop_down\\s*/i, '')
+                .trim();
+              const items = [...document.querySelectorAll('[role=menuitem], [role=option], [role=menuitemradio]')];
+              for (const el of items) {
+                const first = clean(el.innerText || '');
+                if (first.toLowerCase() === needle) {
+                  el.click();
+                  return first;
+                }
+              }
+              return null;
+            }""",
+            model,
+        )
+        if not clicked:
+            raise RuntimeError(f"Flow video model menu item not found: {model!r}")
         page.wait_for_timeout(500)
 
     selected = read_selected_video_model(page) or ""
-    if "Veo 3" not in selected:
-        selected = (model_dd.last.inner_text() or "").replace("\n", " ")
-        selected = re.sub(r"\s*arrow_drop_down\s*", " ", selected, flags=re.I).strip()
-        selected = re.sub(r"^volume_up\s*", "", selected, flags=re.I).strip()
-    if "Veo 3" not in selected:
+    if not selected:
+        selected = normalize_flow_model_label(model_dd.last.inner_text() or "")
+    if selected.lower() != model.lower():
         raise RuntimeError(
-            f"Flow video model is still {selected!r} — must be Veo 3.x "
-            f"(not Omni Flash / Nano Banana)"
+            f"Flow video model mismatch: expected {model!r}, got {selected!r}"
         )
     return selected
 
 
 def _set_video_aspect_and_outputs(
-    page, *, frames_mode: bool = False, ingredients_mode: bool = False
+    page,
+    *,
+    frames_mode: bool = False,
+    ingredients_mode: bool = False,
+    aspect: str = "16:9",
+    duration_s: int = 8,
+    resolution: str = "720p",
+    model: str = DEFAULT_MODEL,
 ) -> None:
-    """Prefer 16:9 and x1; Frames or Ingredients for I2V when requested.
+    """Configure Flow video mode (Frames/Ingredients), aspect, resolution/duration, and x1.
 
-    Mouse-click tabs — JS el.click() often fails to flip aria-selected here
+    Mouse-click radio buttons — JS el.click() often fails to flip aria-checked here
     (same bug as the Image/Video tab).
     """
+    if aspect not in ALLOWED_ASPECTS:
+        raise ValueError(f"Unsupported aspect {aspect!r}; expected one of {ALLOWED_ASPECTS}")
+    duration_i = int(duration_s)
+    omni = is_omni_model(model)
+    if omni:
+        if resolution != "720p":
+            raise ValueError(
+                f"Refusing Omni 1.2 Flash resolution {resolution!r}; HOS requires '720p'"
+            )
+        if not (OMNI_1_2_MIN_S <= duration_i <= OMNI_1_2_MAX_S):
+            raise ValueError(
+                f"Omni 1.2 Flash duration must be {OMNI_1_2_MIN_S}-{OMNI_1_2_MAX_S}s, got {duration_i}s"
+            )
+    else:
+        if duration_i not in VEO3_DURATIONS_S:
+            raise ValueError(
+                f"Veo 3.1 duration must be one of {VEO3_DURATIONS_S}s, got {duration_i}s"
+            )
 
     def _mouse_click_match(kind: str) -> str | None:
         box = page.evaluate(
@@ -821,7 +977,9 @@ def _set_video_aspect_and_outputs(
                 if (kind === 'frames') ok = /crop_free|\\bFrames\\b/i.test(t) && t.length < 40;
                 else if (kind === 'ingredients') ok = /Ingredients|chrome_extension/i.test(t) && t.length < 50;
                 else if (kind === '16:9') ok = (/crop_16_9/.test(t) || /\\b16:9\\b/.test(t)) && t.length < 30;
-                else if (kind === '8s') ok = t === '8s';
+                else if (kind === '9:16') ok = (/crop_9_16/.test(t) || /\\b9:16\\b/.test(t)) && t.length < 30;
+                else if (kind === '720p') ok = /^720p$/i.test(t);
+                else if (kind === '4s' || kind === '6s' || kind === '8s') ok = t === kind;
                 else if (kind === 'x1') ok = t === 'x1';
                 if (!ok) continue;
                 const r = b.getBoundingClientRect();
@@ -843,8 +1001,36 @@ def _set_video_aspect_and_outputs(
     elif ingredients_mode:
         _mouse_click_match("ingredients")
 
-    _mouse_click_match("16:9")
-    _mouse_click_match("8s")
+    _mouse_click_match(aspect)
+    if omni:
+        res_clicked = _mouse_click_match("720p")
+        if res_clicked is None:
+            raise RuntimeError("Omni 1.2 Flash 720p resolution control not found")
+        slider_val = duration_i - OMNI_1_2_MIN_S
+        set_len = page.evaluate(
+            """(targetVal) => {
+              const s = document.querySelector('input[type="range"][aria-label="Length"]');
+              if (!s) return null;
+              const setter = Object.getOwnPropertyDescriptor(
+                window.HTMLInputElement.prototype, 'value'
+              )?.set;
+              if (setter) setter.call(s, String(targetVal));
+              else s.value = String(targetVal);
+              s.dispatchEvent(new Event('input', { bubbles: true }));
+              s.dispatchEvent(new Event('change', { bubbles: true }));
+              return { value: s.value, min: s.min, max: s.max };
+            }""",
+            slider_val,
+        )
+        if not set_len:
+            raise RuntimeError("Omni 1.2 Flash Length slider (aria-label='Length') not found")
+        page.wait_for_timeout(300)
+        print(
+            f"  omni settings resolution={res_clicked!r} length={duration_i}s (slider={set_len})",
+            flush=True,
+        )
+    else:
+        _mouse_click_match(f"{duration_i}s")
     clicked_x1 = _mouse_click_match("x1")
     print(f"  outputs clicked x1={clicked_x1!r}", flush=True)
 
@@ -855,36 +1041,55 @@ def configure_veo_settings(
     model: str = DEFAULT_MODEL,
     frames_mode: bool = False,
     ingredients_mode: bool = False,
+    aspect: str = "16:9",
+    duration_s: int = 8,
+    resolution: str = "720p",
+    lower_priority: bool = False,
+    allow_omni: bool = False,
 ) -> None:
-    """Lock Flow Create settings to Veo 3.x video · 16:9 · x1.
+    """Lock Flow Create settings to the requested video model, aspect, duration and x1.
 
-    Aug 2026 UI: prompt-bar pill → Video tab → model dropdown (not the old
-    Agent tune panel). Falls back to legacy tune/Settings if needed.
+    Supports pre-cutover Veo 3.1 Fast/Quality and post-5 Dec 2026 Veo 3.1 Lite,
+    Veo 3.1 Lite [Lower Priority], and opt-in Omni 1.2 Flash (720p).
     """
-    model = assert_veo3_model(model)
+    model = resolve_flow_model(
+        model, lower_priority=lower_priority, allow_omni_1_2=allow_omni
+    )
     dismiss_banners(page)
     _ensure_create_prompt_mode(page)
 
     # --- Sep 2026 Agent settings drawer (flow.google.com) ---
-    try:
-        selected = _lock_veo_in_agent_settings(page, model)
-        print(f"  video model locked via Agent settings: {selected}", flush=True)
-        return
-    except Exception as e:
-        print(f"  Agent settings path failed ({e}); trying prompt pill…", flush=True)
+    # Skip Agent drawer when non-default aspect/duration/Omni needs prompt popover.
+    if aspect == "16:9" and duration_s == 8 and not is_omni_model(model):
         try:
-            page.keyboard.press("Escape")
-        except Exception:
-            pass
-        page.wait_for_timeout(400)
+            selected = _lock_veo_in_agent_settings(
+                page, model, allow_omni_1_2=allow_omni
+            )
+            print(f"  video model locked via Agent settings: {selected}", flush=True)
+            return
+        except Exception as e:
+            print(f"  Agent settings path failed ({e}); trying prompt pill…", flush=True)
+            try:
+                page.keyboard.press("Escape")
+            except Exception:
+                pass
+            page.wait_for_timeout(400)
 
     # --- New prompt-bar popover path ---
     try:
         _open_prompt_settings_pill(page)
         _select_video_tab(page)
-        selected = _select_veo_from_dropdown(page, model)
+        selected = _select_veo_from_dropdown(
+            page, model, allow_omni_1_2=allow_omni
+        )
         _set_video_aspect_and_outputs(
-            page, frames_mode=frames_mode, ingredients_mode=ingredients_mode
+            page,
+            frames_mode=frames_mode,
+            ingredients_mode=ingredients_mode,
+            aspect=aspect,
+            duration_s=duration_s,
+            resolution=resolution,
+            model=selected,
         )
         print(f"  video model locked: {selected}", flush=True)
         page.keyboard.press("Escape")
@@ -949,7 +1154,9 @@ def configure_veo_settings(
     )
     page.wait_for_timeout(200)
 
-    selected = _select_veo_from_dropdown(page, model)
+    selected = _select_veo_from_dropdown(
+        page, model, allow_omni_1_2=allow_omni
+    )
     print(f"  video model locked: {selected}", flush=True)
 
     # JS click — Playwright click() can hang forever if the Save control is obscured.
@@ -3010,17 +3217,42 @@ def wait_and_download(
 
 
 FLOW_TAKE_CREDITS = {"quality": 100, "fast": 10, "lite": 5}
+OMNI_1_2_CREDITS_PER_SEC = {"720p": 3, "360p": 1}
 
 
-def _record_flow_spend(dest: Path, model: str) -> None:
+def estimate_flow_credits(
+    model: str,
+    *,
+    duration_s: int = 8,
+    resolution: str = "720p",
+    outputs: int = 1,
+) -> int:
+    """Estimate Flow Ultra credit spend per submission (verified 25 Nov 2026)."""
+    label = normalize_flow_model_label(model)
+    low = label.lower()
+    if "lower priority" in low or "[low" in low:
+        return 0
+    if is_omni_model(label):
+        rate = OMNI_1_2_CREDITS_PER_SEC.get(resolution.lower(), 3)
+        return rate * int(duration_s) * int(outputs)
+    tier = label.rsplit("-", 1)[-1].strip().lower()
+    return FLOW_TAKE_CREDITS.get(tier, 0) * int(outputs)
+
+
+def _record_flow_spend(
+    dest: Path,
+    model: str,
+    *,
+    duration_s: int = 8,
+    resolution: str = "720p",
+) -> None:
     """One ai_spend line per Flow take (AI spend month, 8 Oct 2026), written at Create because Flow charges on submit."""
     try:
         from ai_spend_hook import film_of, spend
     except ImportError as e:
         print(f"  ai_spend: not recorded ({e})", flush=True)
         return
-    tier = model.rsplit("-", 1)[-1].strip().lower()
-    credits = 0 if "low" in model.lower() else FLOW_TAKE_CREDITS.get(tier, 0)
+    credits = estimate_flow_credits(model, duration_s=duration_s, resolution=resolution)
     spend("flow", credits, film_of(dest), f"Flow take {Path(dest).stem} ({model})")
 
 
@@ -3036,6 +3268,11 @@ def _generate_clip_once(
     reuse_project: bool = False,
     scenery_only: bool = False,
     create_guard=None,
+    aspect: str = "16:9",
+    duration_s: int = 8,
+    resolution: str = "720p",
+    lower_priority: bool = False,
+    allow_omni: bool = False,
 ) -> dict:
     """One attempt: generate a silent Veo clip via Google Flow Ultra UI.
 
@@ -3085,18 +3322,33 @@ def _generate_clip_once(
             "  python3 04_Audio/tools/orbit_flow_veo_ui.py --login"
         )
 
-    model = assert_veo3_model(model)
+    if lower_priority or allow_omni:
+        model = resolve_flow_model(
+            model, lower_priority=lower_priority, allow_omni_1_2=allow_omni
+        )
+    else:
+        model = assert_veo3_model(model)
     ensure_agent_session(page)
     before = collect_media_ids(page)
     # HOS start-frame I2V: prefer Frames Start/End slots (Sep 2026).
     # Ingredients chip path is flaky (Add to Prompt never enables).
     use_frames = start_frame is not None
-    configure_veo_settings(
-        page,
+    cfg_kwargs = dict(
         model=model,
         frames_mode=use_frames,
         ingredients_mode=(not use_frames) and ((start_frame is not None) or (not scenery_only)),
     )
+    if aspect != "16:9":
+        cfg_kwargs["aspect"] = aspect
+    if duration_s != 8:
+        cfg_kwargs["duration_s"] = duration_s
+    if resolution != "720p":
+        cfg_kwargs["resolution"] = resolution
+    if lower_priority:
+        cfg_kwargs["lower_priority"] = True
+    if allow_omni:
+        cfg_kwargs["allow_omni"] = True
+    configure_veo_settings(page, **cfg_kwargs)
     print("  post-settings…", flush=True)
     settle_after_nav(page, wait_ms=600)
     ensure_agent_session(page)
@@ -3270,6 +3522,11 @@ def generate_clip(
     scenery_only: bool = False,
     create_guard=None,
     attempts: int = 3,
+    aspect: str = "16:9",
+    duration_s: int = 8,
+    resolution: str = "720p",
+    lower_priority: bool = False,
+    allow_omni: bool = False,
 ) -> dict:
     """Generate one silent Veo clip via Google Flow Ultra UI (with soft retries)."""
     if create_guard is None:
@@ -3293,6 +3550,11 @@ def generate_clip(
                 reuse_project=use_reuse,
                 scenery_only=scenery_only,
                 create_guard=create_guard,
+                aspect=aspect,
+                duration_s=duration_s,
+                resolution=resolution,
+                lower_priority=lower_priority,
+                allow_omni=allow_omni,
             )
         except Exception as e:
             last = e
@@ -3376,6 +3638,24 @@ def main() -> None:
     ap.add_argument("--out", type=Path, default=Path("/tmp/orbit_flow_veo_probe.mp4"))
     ap.add_argument("--pass-id", default="p0")
     ap.add_argument("--model", default=DEFAULT_MODEL)
+    ap.add_argument(
+        "--lower-priority",
+        action="store_true",
+        help="Use 0-credit Lower Priority variant (Ultra 20x, Veo 3.1 - Lite only)",
+    )
+    ap.add_argument(
+        "--allow-omni",
+        action="store_true",
+        help="Allow Flow Omni 1.2 Flash (720p, post-5 Dec HOS higher-tier video option)",
+    )
+    ap.add_argument("--aspect", choices=ALLOWED_ASPECTS, default="16:9")
+    ap.add_argument(
+        "--duration",
+        type=int,
+        default=8,
+        help="Clip duration in seconds (4/6/8 for Veo 3.1; 3-15 for Omni 1.2 Flash)",
+    )
+    ap.add_argument("--resolution", choices=("720p",), default="720p")
     ap.add_argument("--profile", type=Path, default=None)
     ap.add_argument("--headed", action="store_true", help="Show browser (debug)")
     ap.add_argument("--dry-run", action="store_true")
@@ -3414,11 +3694,38 @@ def main() -> None:
         else:
             prompt = veo.build_prompt(args.prompt, pass_id=args.pass_id)
 
+    resolved_model = resolve_flow_model(
+        args.model,
+        lower_priority=args.lower_priority,
+        allow_omni_1_2=args.allow_omni,
+    )
+    if is_omni_model(resolved_model):
+        if not (OMNI_1_2_MIN_S <= args.duration <= OMNI_1_2_MAX_S):
+            ap.error(
+                f"Omni 1.2 Flash --duration must be {OMNI_1_2_MIN_S}-{OMNI_1_2_MAX_S}s"
+            )
+    elif args.duration not in VEO3_DURATIONS_S:
+        ap.error(f"Veo 3.1 --duration must be one of {VEO3_DURATIONS_S}")
+    est_credits = estimate_flow_credits(
+        resolved_model, duration_s=args.duration, resolution=args.resolution
+    )
+
     print(f"Orbit ref: {veo.ORBIT_REF}", flush=True)
     if args.start_frame:
         print(f"start_frame: {args.start_frame}", flush=True)
     print(f"profile={profile}", flush=True)
-    print(f"model={args.model} · engine=flow-ui", flush=True)
+    print(
+        f"model={resolved_model} · aspect={args.aspect} · duration={args.duration}s · "
+        f"res={args.resolution} · est_credits={est_credits} · engine=flow-ui",
+        flush=True,
+    )
+    if is_retired_model(resolved_model):
+        print(
+            f"NOTE: {resolved_model!r} retires on {FLOW_CUTOVER_DATE}; "
+            f"post-cutover options: {MODEL_VEO_LITE!r}, "
+            f"{MODEL_VEO_LITE_LOWER_PRIORITY!r}, or {MODEL_OMNI_1_2_FLASH!r} (--allow-omni).",
+            flush=True,
+        )
 
     if args.dry_run:
         if prompt:
@@ -3446,10 +3753,15 @@ def main() -> None:
                 page,
                 prompt,
                 args.out,
-                model=args.model,
+                model=resolved_model,
                 timeout_s=args.timeout,
                 start_frame=args.start_frame,
                 scenery_only=args.scenery_only,
+                aspect=args.aspect,
+                duration_s=args.duration,
+                resolution=args.resolution,
+                lower_priority=args.lower_priority,
+                allow_omni=args.allow_omni,
             )
             print(json.dumps(meta, indent=2))
             print(f"SAVED {args.out}", flush=True)

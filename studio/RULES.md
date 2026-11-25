@@ -285,10 +285,10 @@ These add to the Never list in `AGENTS.md`. They remove nothing from it.
 - **Titles:** hashtags, series suffixes, hedged claims, or a title that copies a live video.
 - **Picture:**
   - The Orbit robot in any HOS film.
-  - Omni, Seedance, Kling or ElevenLabs Image & Video. Picture is Flow Veo 3.1.
+  - Retired Omni 1.1 Flash, Vertex/ElevenLabs Omni, 360p Flow video, Seedance, Kling or ElevenLabs Image & Video. Picture is Google Flow: until 5 Dec 2026 `Veo 3.1 - Quality` / `Veo 3.1 - Fast`; **from 5 Dec 2026** (Google Flow retirement verified 25 Nov 2026, `J3691`), **`Veo 3.1 - Lite`** (5 cr; **`Veo 3.1 - Lite [Lower Priority]`** 0 cr on Ultra 20x) is the default Flow model and Flow **`Omni 1.2 Flash`** (720p only, 3 cr/s = 18–24 cr for 6–8 s, audio stripped, `--allow-omni`) is allowed as the higher-tier Flow option for fragile light, Explorer/character consistency or `Veo 3.1 - Lite` UAT fails (bounded first-use style UAT required).
   - Generate anything on the ElevenLabs **website** (Image & Video, Flows), including through browser automation. It bills the shared credit pool, which is kept for TTS (Ben, 5 Oct 2026, after 66.5k credits went on website video on 4 Oct).
   - Spend picture or video credit on a film before Claude has passed its script **and** its VO (Ben, 4 Oct 16:52).
-  - Veo Fast on fragile light (lamps, flasks, glows). Use Quality.
+  - `Veo 3.1 - Fast` (retiring 5 Dec 2026) on fragile light (lamps, flasks, glows): use `Veo 3.1 - Quality` until 5 Dec 2026, or Flow `Omni 1.2 Flash` (720p, `--allow-omni`) / UAT-verified `Veo 3.1 - Lite` after 5 Dec 2026 (25 Nov 2026, `J3691`).
   - Paint-patching a plate instead of reminting it.
   - "Same DNA" or "lab DNA" in a Veo prompt.
   - Ken Burns or a still push when Flow is capped. Wait for the reset.
