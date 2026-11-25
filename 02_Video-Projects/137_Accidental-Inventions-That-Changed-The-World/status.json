@@ -3,7 +3,7 @@
   "title": "Accidental Inventions: 5 Mistakes That Worked",
   "air": "2026-12-24",
   "ready_by": "2026-12-21",
-  "summary": "Film 3 of the History of Science search-led plan (hos-search-2027-01, Ben OK 24 Nov 2026; target air Thu 24 Dec 18:00 London, watch by Mon 21 Dec; slides a week if not ready). Rule-E GO (J3503, 95.8/100). J3685 (PR #772, be99dffe) delivered corrected v02 package resolving all 9 J3564/J3565 fixes (review:script PASS 91.8/100, default gate:episode PASS). J3686 (25 Nov 2026) completed independent Gemini v02 facts & exact-quote verification (GEMINI_FACTS_CHECK_v02.md: 18 OK / 10 PARTIAL / 0 FLAG across 28 items, 36/36 live URLs HTTP 200, all 4 J3564 FLAGs & FIX-1..9 verified resolved, all 4 v02 files byte-for-byte unchanged). Awaits Chief v02 lock review J3687 (£0.00 spent; Rule G WIP cap respected).",
+  "summary": "Film 3 of the History of Science search-led plan (hos-search-2027-01, Ben OK 24 Nov 2026; target air Thu 24 Dec 18:00 London, watch by Mon 21 Dec; slides a week if not ready). Script v02, primary sources & 16-19s Shorts LOCKED by Acting Chief (gemini, J3687 KEEP, 25 Nov 2026; HOS PR #775 merged b4622600 superseding #747/#754/#769/#772; J3565 closed done; review:script 91.8/100 PASS; default gate:episode 9/9 PASS; J3686 independent facts audit 18 OK / 10 PARTIAL / 0 FLAG; check_all.sh ALL CHECKS PASS). Long VO & Shorts VO cleanly held under Rule G WIP (HOS currently 5/5 active: 009, 010, 013, 128, 136); £0.00 spent; picture & rendered thumbnails wait for VO PASS.",
   "stages": {
     "topic": {
       "state": "done",
@@ -12,58 +12,52 @@
       "note": "J3503 Rule-E topic go/no-go review GO (95.8/100, 10/10 gates PASS after fixes, 2026-11-24); retired colliding Title A (5 live collisions) for 'Accidental Inventions: 5 Mistakes That Worked' (45c, 0 collisions), fixed Thumb A/B §2.2/§2.5/§2.B copy (NEARLY TRASHED / WRONG RESISTOR), locked Safety Glass over Microwave (zero overlap with HOS:129), verified 0 Short collisions & strict neighbours (3 >=1M in neighbours.json + SciShow 1.48M), logged 6 script guardrails, and queued script job J3513"
     },
     "script": {
-      "state": "doing",
+      "state": "done",
       "due": "2026-12-08",
-      "owner": "Claude",
+      "owner": "Chief",
       "since": "2026-11-25",
-      "underway": false,
-      "waiting": "independent v02 facts re-verification and Chief script lock on accidental_inventions_script_master_v02.md (J3685 v02, 91.8/100 PASS)",
-      "note": "J3685 v02 script delivered (review:script PASS 91.8/100, default gate:episode PASS; v01 removed) resolving all 9 J3564/J3565 fixes (FR 405,881 Aug 1909; Chardack-Greatbatch June 1960 & 2 yr; PMC3232561 + 8 primary upgrades + lifespans; US3691140A low-adhesion; Part 01 opening <=0:15/0:25 & blink scale; spoken 270F/boiling water & 90% Boise alignment; 4w FACT card); awaiting v02 facts check and Chief lock"
+      "note": "LOCKED by Acting Chief (gemini, J3687 KEEP, 2026-11-25; HOS PR #775 merged b4622600 superseding #747/#754/#769/#772; J3565 closed done): 01_Script/accidental_inventions_script_master_v02.md (sha256 d2a359c4..., 1,256w, 8.4 min, review:script PASS 91.8/100, default gate:episode PASS 9/9, check_all.sh ALL CHECKS PASS, 7/7 CI green; all 9 J3564/J3565 FIX-1..FIX-9 verified resolved)"
     },
     "facts": {
-      "state": "doing",
+      "state": "done",
       "due": "2026-12-08",
-      "owner": "Claude",
+      "owner": "gemini",
       "since": "2026-11-25",
-      "underway": false,
-      "waiting": "Chief v02 lock review (J3687) after independent Gemini v02 facts verification (18 OK / 10 PARTIAL / 0 FLAG)",
-      "note": "J3686 independent Gemini v02 facts & exact-quote audit complete (01_Script/GEMINI_FACTS_CHECK_v02.md, 2026-11-25): 18 OK / 10 PARTIAL / 0 FLAG across 28 items, 36/36 live URLs HTTP 200, all 4 J3564 FLAGs & FIX-1..9 verified resolved, all 4 v02 files byte-for-byte unchanged; handed off to Chief J3687"
+      "note": "LOCKED by Acting Chief (gemini, J3687 KEEP, 2026-11-25) after J3686 independent Gemini v02 audit (01_Script/GEMINI_FACTS_CHECK_v02.md, sha256 1fd7a797..., 18 OK / 10 PARTIAL / 0 FLAG across 28 items, 36/36 live URLs HTTP 200) plus J3687 independent live HTTP exact-quote checks (35/36 direct HTTP 200 + 3M Post-it search-grounded) on SOURCES.md (bc755590...) and FACT_NOTES_v02.md (7f502091...)"
     },
     "package": {
       "state": "doing",
       "due": "2026-12-08",
-      "owner": "Claude",
+      "owner": "Chief",
       "since": "2026-11-25",
       "underway": false,
-      "waiting": "Chief package lock, VO re-timing, and PACKAGE_MANIFEST.json before upload",
-      "note": "Confirmed direction carried into v02 (LAUNCH_PLAN.md updated): Title Arm A 45c (manifest neighbour phrase 'inventions' per §1.3), Arms B 69c & C 56c, unrendered draft Thumb Concepts A (NEARLY TRASHED) & B (WRONG RESISTOR, §2.6 hand-verified; 3rd T&C variant post-VO per §2.9), S01 48c & S02 54c (0 collisions)"
+      "waiting": "VO re-timing, rendered thumbnails after VO PASS, and PACKAGE_MANIFEST.json before upload",
+      "note": "Working packaging direction confirmed in J3687 (Primary Arm A 45c 'Accidental Inventions: 5 Mistakes That Worked' with manifest neighbour phrase 'inventions' per §1.3, T&C Arms B 69c & C 56c, unrendered draft Thumb Concepts A NEARLY TRASHED & B WRONG RESISTOR with §2.6 hand-verified ink & §2.9 3rd T&C variant post-VO, S01 48c & S02 54c 0 collisions); NOT rendered packaging PASS yet"
     },
     "vo": {
       "state": "todo",
       "due": "2026-12-11",
-      "owner": "Cursor",
-      "waiting": "after script & facts lock by Chief and open HOS WIP place (Rule G)"
+      "owner": "Codex",
+      "waiting": "Held on Rule G WIP slot release (HOS currently 5/5 active: 009, 010, 013, 128, 136); locked v02 script d2a359c4... ready for Mac-mini ElevenLabs VO once a slot clears"
     },
     "shorts_scripts": {
-      "state": "doing",
+      "state": "done",
       "due": "2026-12-09",
-      "owner": "Claude",
+      "owner": "Chief",
       "since": "2026-11-25",
-      "underway": false,
-      "waiting": "independent v02 facts re-verification and Chief lock of SHORTS_SCRIPTS_v02.md (S01 Sat 26 Dec 48c & S02 Fri 25 Dec 54c, 16-19s house rules)",
-      "note": "SHORTS_SCRIPTS_v02.md delivered in J3685: S01 & S02 rebalanced to 150 wpm per row (42 spoken words / 17.2s, atempo <=1.06), synced <=4w Teach overlays (1.8 MS PULSE / 1974 CHOIR BOOKMARK) clear of 0-2s and 9-14s, R7 end-title layout preserving <=0.3s Frame-0 match-cut loop, PMC3232561 provenance, secondary-only 'aerospace' removed"
+      "note": "LOCKED by Acting Chief (gemini, J3687 KEEP, 2026-11-25; HOS PR #775 merged b4622600): 10_Shorts/SHORTS_SCRIPTS_v02.md (sha256 62ff7c99..., S01 42w/48c Sat 26 Dec & S02 42w/54c Fri 25 Dec = 17.2s inside Ben 19 Nov 16-19s rules, ~150 wpm per row, <=4w synced overlays 1.8 MS PULSE / 1974 CHOIR BOOKMARK clear of 0-2s & 9-14s, R7 loop-safe, 0 collisions)"
     },
     "shorts_vo": {
       "state": "todo",
       "due": "2026-12-12",
-      "owner": "Cursor",
-      "waiting": "after shorts_scripts PASS and open HOS WIP place"
+      "owner": "Codex",
+      "waiting": "Held on Rule G WIP slot release (HOS currently 5/5 active: 009, 010, 013, 128, 136); locked v02 Shorts 62ff7c99... ready for Mac-mini ElevenLabs VO once a slot clears"
     },
     "picture": {
       "state": "todo",
       "due": "2026-12-17",
       "owner": "Cursor",
-      "waiting": "after script & VO PASS (Flow credits within existing plan; renews 12 Dec)"
+      "waiting": "after Chief VO PASS (Flow credits within existing plan; renews 12 Dec)"
     },
     "edit": {
       "state": "todo",
@@ -75,7 +69,7 @@
       "state": "todo",
       "due": "2026-12-19",
       "owner": "Codex",
-      "waiting": "after script & VO PASS (Thumb A NEARLY TRASHED, Thumb B WRONG RESISTOR, plus 3rd T&C variant per §2.9; §2.6 hand-verified text)"
+      "waiting": "after Chief VO PASS (Thumb A NEARLY TRASHED, Thumb B WRONG RESISTOR, plus 3rd T&C variant per §2.9; §2.6 hand-verified text)"
     },
     "ben_ok": {
       "state": "todo",
@@ -91,5 +85,5 @@
     }
   },
   "claims": [],
-  "next": "Chief v02 lock review (J3687) on accidental_inventions_script_master_v02.md (91.8/100 PASS), GEMINI_FACTS_CHECK_v02.md (18 OK / 10 PARTIAL / 0 FLAG), & SHORTS_SCRIPTS_v02.md (due Tue 8 Dec; Ben's watch Mon 21 Dec; target air Thu 24 Dec)"
+  "next": "Script, facts & Shorts v02 LOCKED (J3687 KEEP, PR #775 b4622600). Hold HOS:137 long VO + Shorts VO until an open HOS WIP slot clears in orbit-with-ben/jobs/WIP.json (currently 5/5 active: 009, 010, 013, 128, 136); preserve Mon 21 Dec watch & Thu 24 Dec 18:00 London target"
 }
