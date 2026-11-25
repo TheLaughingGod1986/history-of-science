@@ -1,0 +1,93 @@
+{
+  "film": "127",
+  "title": "Wright Brothers First Flight: The 1901 Wind Tunnel",
+  "summary": "Cluster 4 Lead Film 4 of Ben's approved hos-search-2027-01 accelerated December test cohort (target air Thu 31 Dec 2026 18:00 London, Ben's watch by Mon 28 Dec; slides a week if not ready). Rule-E GO (J3264, 97.2/100). J3504 (PR #756) drafted v01, J3621 (PR #771, 925c2a92) audited v01 (5 blocking FLAGs), and J3688 (PR #774, 45953e56) delivered corrected v02 resolving FIX-1 through FIX-8. J3690 independent Gemini v02 facts & exact-quote audit (25 Nov 2026, 01_Script/GEMINI_FACTS_CHECK_v02.md) verified all 4 v02 SHA-256 hashes byte-for-byte identical to 45953e56, fetched all 20 cited URLs + CrossRef API live (77/77 verbatim quotes confirmed), confirmed FIX-1..FIX-8 resolved with 0 blocking FLAGs (17 OK, 4 non-blocking secondary-lifespan PARTIAL, 0 FLAG), and confirmed check_all.sh ALL CHECKS PASS. Ready for J3622 Chief v02 review & lock (£0.00 spent; Rule G WIP cap respected).",
+  "stages": {
+    "topic": {
+      "state": "done",
+      "due": "2026-11-26",
+      "owner": "Claude",
+      "note": "J3245 topic brief + J3264 Rule-E topic go/no-go review GO (97.2/100, 10/10 gates PASS, 2026-11-21); neighbours.py PASS (5 strictly on-topic >=1M incl. TED-Ed 2.57M); public_search.py 4/4 autocomplete yes & 0 exact collisions; Smeaton 50% too high, no equal-transit-time lift fallacy, and Kill Devil Hills guardrails logged"
+    },
+    "script": {
+      "state": "doing",
+      "due": "2026-12-11",
+      "owner": "Chief",
+      "since": "2026-11-25",
+      "underway": false,
+      "waiting": "Chief v02 review & lock on wright_brothers_wind_tunnel_script_master_v02.md (J3688 resolves FIX-1 through FIX-8; review:script PASS 93.6/100; default gate:episode PASS)",
+      "note": "J3688 delivered v02 (1,282w, 8.5 min, 7 DATA+SCALE incl. spoken 6-yr timeline SCALE, 5 WHO, 14 WHEN <=4w, 4 FACT <=4w, 27 LABEL <=4w, 2 EXPLORER ACTS; v01 archived to _archive/ so default gate:episode resolves v02 directly); awaiting Chief review & lock"
+    },
+    "facts": {
+      "state": "doing",
+      "due": "2026-12-11",
+      "owner": "Chief",
+      "since": "2026-11-25",
+      "underway": false,
+      "waiting": "J3622 Chief v02 script & facts lock after J3690 independent Gemini v02 audit (0 blocking FLAGs)",
+      "note": "J3690 independent Gemini v02 facts & exact-quote audit complete (01_Script/GEMINI_FACTS_CHECK_v02.md): 0 blocking FLAGs (17 OK, 4 non-blocking secondary-lifespan PARTIAL, 0 FLAG); all 20 cited live URLs + CrossRef API fetched & 77/77 verbatim quotes confirmed; FIX-1..FIX-8 verified resolved; all 4 v02 files byte-identical to PR #774 (45953e56); £0.00 spent"
+    },
+    "package": {
+      "state": "doing",
+      "due": "2026-12-11",
+      "owner": "Chief",
+      "since": "2026-11-25",
+      "underway": false,
+      "waiting": "Chief package lock, VO re-timing, and PACKAGE_MANIFEST.json before upload",
+      "note": "J3688 synced PRE_BUILD_VIDIQ_AUDIT.md, LAUNCH_PLAN.md, and PACKAGE_FIRST_SCORING_v01.md to Primary Arm A (50c), T&C B (67c), T&C C (44c), 20-gauge steel wing models (Thumb A 50% TOO HIGH, Thumb B 200 TINY WINGS; 3rd T&C built post-VO per §2.9; §2.6 hand-verified text)"
+    },
+    "vo": {
+      "state": "todo",
+      "due": "2026-12-15",
+      "owner": "Cursor",
+      "waiting": "after script & facts lock by Chief and open HOS WIP place behind HOS:136 and HOS:137 (Rule G)"
+    },
+    "shorts_scripts": {
+      "state": "doing",
+      "due": "2026-12-11",
+      "owner": "Chief",
+      "since": "2026-11-25",
+      "underway": false,
+      "waiting": "Chief v02 review & lock of SHORTS_SCRIPTS_v02.md (S01 43w ~17.8s & S02 44w ~18.0s, rebalanced ~140-158 wpm per row, R7 9.0-14.0s handling, FIX-3/FIX-4/FIX-7 applied)",
+      "note": "J3688 delivered SHORTS_SCRIPTS_v02.md (S01 Sat 2 Jan 48c 43w ~17.8s & S02 Fri 1 Jan 50c 44w ~18.0s; 0 collisions; Ben 19 Nov 3D cartoon house rules; atempo <=1.06)"
+    },
+    "shorts_vo": {
+      "state": "todo",
+      "due": "2026-12-16",
+      "owner": "Cursor",
+      "waiting": "after shorts_scripts PASS and open HOS WIP place"
+    },
+    "picture": {
+      "state": "todo",
+      "due": "2026-12-22",
+      "owner": "Cursor",
+      "waiting": "after script & VO PASS (Flow credits within existing plan; renews 12 Dec)"
+    },
+    "edit": {
+      "state": "todo",
+      "due": "2026-12-24",
+      "owner": "Cursor",
+      "waiting": "after picture PASS"
+    },
+    "thumbnails": {
+      "state": "todo",
+      "due": "2026-12-24",
+      "owner": "Codex",
+      "waiting": "after script & VO PASS (Thumb A 50% TOO HIGH, Thumb B 200 TINY WINGS; 3rd T&C built post-VO per §2.9; §2.6 hand-verified text)"
+    },
+    "ben_ok": {
+      "state": "todo",
+      "due": "2026-12-28",
+      "owner": "Ben",
+      "waiting": "after finished long, Shorts, and thumbnails pass Chief QA"
+    },
+    "scheduled": {
+      "state": "todo",
+      "due": "2026-12-29",
+      "owner": "Chief",
+      "waiting": "after Ben's watch OK (target air Thu 31 Dec 2026 18:00 London)"
+    }
+  },
+  "claims": [],
+  "next": "J3622 Chief v02 review & lock on HOS:127 PR (gemini/J3690-hos127-facts-v02 stacked on macbook/J3688 PR #774; 0 blocking FLAGs; review:script PASS 93.6/100; default gate:episode PASS; check_all.sh PASS; £0.00 spent; lock due Fri 11 Dec; Ben's watch Mon 28 Dec; target air Thu 31 Dec)"
+}
