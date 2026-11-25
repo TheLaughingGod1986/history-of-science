@@ -1,0 +1,45 @@
+{
+  "film": "129",
+  "title": "How Was the Microwave Invented? (A Radar Accident)",
+  "summary": "Proposed in J3270 (22 Nov 2026) and queued for Rule-E topic go/no-go review in jobs/WIP.json next_hos (Rule G: 4/4 active HOS slots full). Aligns with J3224 Cluster 3 Accidental Inventions (accidental discoveries +93.0%, inventions that changed the world US 23%, 9/10-10/10 SERP gap). public_search.py (10 queries, 5 autocomplete=yes, 0 exact collisions) and neighbours.py PASS (3 strictly on-topic >=1M edu videos, 0 off-topic >=1M: Tom Scott 8.96M, TED-Ed 2.11M, SciShow 1.33M) saved; awaits Rule-E review, open WIP slot, SOURCES.md, and facts lane.",
+  "stages": {
+    "topic": {
+      "state": "todo"
+    },
+    "script": {
+      "state": "todo"
+    },
+    "facts": {
+      "state": "todo"
+    },
+    "package": {
+      "state": "todo"
+    },
+    "vo": {
+      "state": "todo"
+    },
+    "shorts_scripts": {
+      "state": "todo"
+    },
+    "shorts_vo": {
+      "state": "todo"
+    },
+    "picture": {
+      "state": "todo"
+    },
+    "edit": {
+      "state": "todo"
+    },
+    "thumbnails": {
+      "state": "todo"
+    },
+    "ben_ok": {
+      "state": "todo"
+    },
+    "scheduled": {
+      "state": "todo"
+    }
+  },
+  "claims": [],
+  "next": ""
+}

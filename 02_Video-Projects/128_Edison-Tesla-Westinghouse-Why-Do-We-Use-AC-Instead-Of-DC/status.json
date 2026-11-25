@@ -1,0 +1,45 @@
+{
+  "film": "128",
+  "title": "Why Do We Use AC Instead of DC? (Edison vs Tesla)",
+  "summary": "Proposed in J3270 (22 Nov 2026) and queued for Rule-E topic go/no-go review in jobs/WIP.json next_hos (Rule G: 4/4 active HOS slots full). Aligns with J3224 Cluster 1 Lead Film (thomas edison US 30%, nikola tesla documentary 29.2k/comp 37, 9/10 US SERP gap). public_search.py (10 queries, 5 autocomplete=yes, 0 exact collisions) and neighbours.py PASS (8 raw / 6 strictly on-topic >=1M edu videos incl. Veritasium 28.29M & 12.84M, TED-Ed 3.62M & 1.04M, Thoughty2 1.97M, SciShow 1.40M) saved; awaits Rule-E review, open WIP slot, SOURCES.md, and facts lane.",
+  "stages": {
+    "topic": {
+      "state": "todo"
+    },
+    "script": {
+      "state": "todo"
+    },
+    "facts": {
+      "state": "todo"
+    },
+    "package": {
+      "state": "todo"
+    },
+    "vo": {
+      "state": "todo"
+    },
+    "shorts_scripts": {
+      "state": "todo"
+    },
+    "shorts_vo": {
+      "state": "todo"
+    },
+    "picture": {
+      "state": "todo"
+    },
+    "edit": {
+      "state": "todo"
+    },
+    "thumbnails": {
+      "state": "todo"
+    },
+    "ben_ok": {
+      "state": "todo"
+    },
+    "scheduled": {
+      "state": "todo"
+    }
+  },
+  "claims": [],
+  "next": ""
+}
