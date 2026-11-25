@@ -45,7 +45,9 @@
       "durationSeconds": 24.53,
       "cover": "frame 0 of hos_007_s05_vacca_jesty_v05 (NOT THE FIRST)",
       "note": "J1222 swap from 4WUs0beKn0A (v02, sha 89a9a1668d74, Private unscheduled) to v05 xgx2lYHhYZM (sha e5ea76f012fb, Ben OK 6507831644). Public since Tue 17 Nov 11:30 London (2026-11-17T11:30:00Z). Registered for HOS Buffer mirror with long ETynHpIYLeY. Studio Related -> ETynHpIYLeY set & read back on 13 Nov 2026 (J0875) and verified live."
-    },
+    }
+  ],
+  "unscheduled": [
     {
       "id": "sY0PSQFxjp8",
       "title": "What Is Variolation?",
@@ -66,10 +68,8 @@
       "alteredContent": true,
       "durationSeconds": 23.33,
       "cover": "frame 0 of hos_007_variolation_v05 (SMALLPOX SORE)",
-      "note": "J2957. s06 variolation v05 (sha c7ae95379e11), Ben OK'd J2230.3 on the board 16 Nov 2026. Private + publishAt Sat 28 Nov 2026 11:30 London. Studio Related -> ETynHpIYLeY set & read back on 17 Nov 2026. Accidental second upload wkyGOKepjeQ unscheduled to Private (no publishAt, never deleted)."
-    }
-  ],
-  "unscheduled": [
+      "note": "J2957 / J3125 / J3707. s06 variolation v05 (sha c7ae95379e11). Unscheduled from Sat 28 Nov 2026 11:30 London to Private (no publishAt) on 25 Nov 2026 12:36:34Z after J3707/J3125 feed gate failed (0/3 named controls >=50% day-1 feed share; Bks_JLId1ew 8/23=34.8%, Sq_lV89VMUs & fgsR8yAHr5s unavailable per J3188); 3 Buffer posts cancelled; not deleted. Accidental second upload wkyGOKepjeQ remains Private (no publishAt, never deleted)."
+    },
     {
       "id": "jkUZpyO71lU",
       "title": "How Was Smallpox Eradicated?",
