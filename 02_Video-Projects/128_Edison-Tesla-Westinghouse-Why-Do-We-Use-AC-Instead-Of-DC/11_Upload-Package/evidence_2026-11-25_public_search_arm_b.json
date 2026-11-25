@@ -1,0 +1,75 @@
+{
+ "pulled": "2026-11-25",
+ "source": "YouTube GB search results and autocomplete; public, no login. Not vidIQ.",
+ "queries": {
+  "Thomas Edison vs Nikola Tesla: How AC Won the War of Currents": {
+   "suggest": [],
+   "search": [
+    {
+     "id": "pcrwTN5OEZY",
+     "title": "Thomas Edison Did Everything He Could To Stop Nikola Tesla Succeeding | Tesla's Death Ray",
+     "channel": "Discovery UK",
+     "views": "1,604,246 views",
+     "age": "7 yr ago",
+     "length": "7:35"
+    },
+    {
+     "id": "pfLsG065RW0",
+     "title": "Nikola Tesla vs. Thomas Edison: The War Of Currents Explained",
+     "channel": "Science In A Hurry",
+     "views": "6,560 views",
+     "age": "3 yr ago",
+     "length": "3:23"
+    },
+    {
+     "id": "Oabzjz64bDo",
+     "title": "Tesla vs. Edison: Battle of the Currents | The Current Wars",
+     "channel": "Bedtime History",
+     "views": "10,156 views",
+     "age": "1 yr ago",
+     "length": "4:29"
+    },
+    {
+     "id": "wigXYgnaCfI",
+     "title": "The Rift Between Tesla and Edison - AC vs. DC - One Minute History",
+     "channel": "One Minute History",
+     "views": "64,154 views",
+     "age": "4 yr ago",
+     "length": "1:00"
+    },
+    {
+     "id": "w4tQAIlKyWs",
+     "title": "Tesla vs. Edison: The War of Currents and Beyond",
+     "channel": "Codex Historia | Live History Through Their Eyes",
+     "views": "299 views",
+     "age": "2 yr ago",
+     "length": "7:17"
+    },
+    {
+     "id": "JzCLyTRo028",
+     "title": "Edison vs Tesla: The Rivalry Behind The War Of The Currents",
+     "channel": "Timeline - World History Documentaries",
+     "views": "60,540 views",
+     "age": "1 yr ago",
+     "length": "44:07"
+    },
+    {
+     "id": "9kCmPW21_9k",
+     "title": "The War of the Currents: Tesla vs Edison (Full Story)",
+     "channel": "Very Sketchy History",
+     "views": "5 views",
+     "age": "13 days ago",
+     "length": "13:56"
+    },
+    {
+     "id": "lUCDbOl2LJo",
+     "title": "Tesla vs Edison: The War of Currents They Never Taught You In School",
+     "channel": "Dustborn",
+     "views": "76 views",
+     "age": "5 mo ago",
+     "length": "6:32"
+    }
+   ]
+  }
+ }
+}
