@@ -1,0 +1,45 @@
+{
+  "film": "122",
+  "title": "Why Do We Sneeze? (The 8-Metre Gas Cloud Twist)",
+  "summary": "Rule-E topic go/no-go review GO (96.4/100 in J3185; pre-cleared in jobs/WIP.json next_hos under Rule G from J3182; 4/4 active HOS slots full). Public_search.py (10 queries, 80 results, 0 collisions) and neighbours.py PASS evidence saved (7 strictly on-topic education neighbours >=1M across 13 education neighbours: CrashCourse 5.93M Respiratory System Part 1, TED-Ed 5.23M How does your immune system work?, Amoeba Sisters 4.04M Respiratory System, TED-Ed 3.51M How pandemics spread, Veritasium 2.38M The Sun Sneeze Gene, Khan Academy 1.45M The lungs and pulmonary system, & TED-Ed 1.04M How do germs spread?, plus Zack D. Films 17.14M, Dr. Michael Gartner 5.35M, Hannah Fry 1.48M, & SciShow 895k/452k). Awaits an open active HOS WIP slot before SOURCES.md and facts lane.",
+  "stages": {
+    "topic": {
+      "state": "todo"
+    },
+    "script": {
+      "state": "todo"
+    },
+    "facts": {
+      "state": "todo"
+    },
+    "package": {
+      "state": "todo"
+    },
+    "vo": {
+      "state": "todo"
+    },
+    "shorts_scripts": {
+      "state": "todo"
+    },
+    "shorts_vo": {
+      "state": "todo"
+    },
+    "picture": {
+      "state": "todo"
+    },
+    "edit": {
+      "state": "todo"
+    },
+    "thumbnails": {
+      "state": "todo"
+    },
+    "ben_ok": {
+      "state": "todo"
+    },
+    "scheduled": {
+      "state": "todo"
+    }
+  },
+  "claims": [],
+  "next": ""
+}
