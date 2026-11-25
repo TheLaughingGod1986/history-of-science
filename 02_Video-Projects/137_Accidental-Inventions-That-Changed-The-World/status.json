@@ -3,7 +3,7 @@
   "title": "Accidental Inventions: 5 Mistakes That Worked",
   "air": "2026-12-24",
   "ready_by": "2026-12-21",
-  "summary": "Film 3 of the History of Science search-led plan (hos-search-2027-01, Ben OK 24 Nov 2026; accelerated into December: target air Thu 24 Dec 18:00 London, watch by Mon 21 Dec; slides a week if not ready). Rule-E GO (J3503, 95.8/100). J3513 (24 Nov 2026) delivered PACKAGE_FIRST_SCORING_v01.md (Title A 45c 96/100, Thumb A NEARLY TRASHED 96/100, Thumb B WRONG RESISTOR 93/100), accidental_inventions_script_master_v01.md (review:script PASS 92.6/100, gate:episode PASS, 1,225 words, 5 parts, 5 DATA+SCALE, 13 WHO, 10 WHEN, 4 FACT, 2 EXPLORER ACTS), SOURCES.md, FACT_NOTES_v01.md (24/24 verified rows resolving all 6 J3503 guardrails), SHORTS_SCRIPTS_v01.md (two 16-19s Shorts, S01 48c & S02 54c, 0 collisions), and LAUNCH_PLAN.md. Awaits independent facts lane (gemini-agy) and Chief script lock before any VO or picture spend (£0.00 spent; Rule G WIP cap respected).",
+  "summary": "Film 3 of the History of Science search-led plan (hos-search-2027-01, Ben OK 24 Nov 2026; accelerated into December: target air Thu 24 Dec 18:00 London, watch by Mon 21 Dec; slides a week if not ready). Rule-E GO (J3503, 95.8/100). J3513 (PR #754, 1ae0da81) delivered PACKAGE_FIRST_SCORING_v01.md, accidental_inventions_script_master_v01.md (review:script PASS 92.6/100, gate:episode PASS), SOURCES.md, FACT_NOTES_v01.md, SHORTS_SCRIPTS_v01.md, and LAUNCH_PLAN.md. J3564 (25 Nov 2026) completed independent Gemini facts audit (GEMINI_FACTS_CHECK_v01.md: 9 OK / 15 PARTIAL / 4 blocking FLAGs + 8 primary source upgrades, no spoken rewrites): (1) FR 405,881 filed 10 Aug 1909 vs spoken Nov 1909, (2) Chardack-Greatbatch two-stage April lead / June 1960 pulse generator & 18 mo vs 2 yr survival, (3) dead HTTP 521 heartrhythm.com URL replaced by PMC3232561, (4) 'low-tack' vs US3691140A/NIHF 'inherently tacky / low adhesion', plus 5-word FACT #3 card. Handed off to J3565 review & Chief lock (£0.00 spent; Rule G WIP cap respected).",
   "stages": {
     "topic": {
       "state": "done",
@@ -23,11 +23,11 @@
     "facts": {
       "state": "doing",
       "due": "2026-12-08",
-      "owner": "Gemini",
-      "since": "2026-11-24",
+      "owner": "Claude",
+      "since": "2026-11-25",
       "underway": false,
-      "waiting": "independent facts lane (gemini-agy) verification of SOURCES.md & FACT_NOTES_v01.md (24/24 rows) before Chief lock",
-      "note": "SOURCES.md and FACT_NOTES_v01.md (24 verified primary/institutional quotes) drafted in J3513, resolving all 6 J3503 guardrails (Greatbatch 10k/1M/1.8ms + Chardack & Gage vs Elmqvist & Senning Oct 1958; Goodyear prepared mind/1844/1860/1898; Benedictus 1903 vs 1909 Triplex; Fleming + Oxford Florey/Chain/Heatley lab framing; Silver 1968 microspheres + Fry 1974 + Boise 1978; 100% 3D cartoon lane & §2.6 typography)"
+      "waiting": "J3565 script/review lane to resolve 4 blocking FLAGs from GEMINI_FACTS_CHECK_v01.md before Chief lock",
+      "note": "J3564 independent Gemini facts audit complete (01_Script/GEMINI_FACTS_CHECK_v01.md, 2026-11-25): 9 OK / 15 PARTIAL / 4 blocking FLAGs across 28 items (FR 405,881 Aug 1909 vs Nov 1909; Chardack-Greatbatch June 1960 pulse generator vs Apr 1960 & 2 yr vs 18 mo; dead HTTP 521 heartrhythm.com URL -> PMC3232561; 'low-tack' vs US3691140A/NIHF high-tack low-adhesion) + 8 primary upgrades & 5-word FACT #3 catch; no spoken rewrites"
     },
     "package": {
       "state": "doing",
@@ -91,5 +91,5 @@
     }
   },
   "claims": [],
-  "next": "Independent facts lane (gemini-agy) & Chief script/package lock on J3513 v01 draft (due Tue 8 Dec; Ben's watch Mon 21 Dec; target air Thu 24 Dec)"
+  "next": "J3565 script review & Chief lock: resolve 4 blocking FLAGs in GEMINI_FACTS_CHECK_v01.md (FR 405,881 date, Chardack-Greatbatch June 1960, PMC3232561 URL upgrade, US3691140A low-adhesion wording) + 5-word FACT #3 card before lock (due Tue 8 Dec; Ben's watch Mon 21 Dec; target air Thu 24 Dec)"
 }

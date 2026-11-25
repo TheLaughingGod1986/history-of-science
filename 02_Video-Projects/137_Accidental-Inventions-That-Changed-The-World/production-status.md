@@ -10,7 +10,7 @@
 | Pre-build vidIQ audit | `11_Upload-Package/PRE_BUILD_VIDIQ_AUDIT.md` (updated & signed off for v01 draft in `J3513`, `2026-11-24`) |
 | Script review | **PASS — `92.6 / 100`** (`01_Script/accidental_inventions_script_master_v01.md`, `1,225` words, `8.2` min, `4` chapter cards, `8/8` structure gates; awaits independent `facts` lane + Chief lock) |
 | Episode gate | **PASS** (all checks `OK` — VO/Veo still held pending independent `facts` lane, Chief lock & open WIP slot under Rule G) |
-| Sources & Facts | `01_Script/SOURCES.md` & `01_Script/FACT_NOTES_v01.md` (`24/24` rows verified with verbatim primary/institutional quotes & open URLs; all 6 `J3503` guardrails resolved; queued for independent `facts` lane `gemini-agy`) |
+| Sources & Facts | `01_Script/SOURCES.md`, `01_Script/FACT_NOTES_v01.md` & **`01_Script/GEMINI_FACTS_CHECK_v01.md`** (`J3564`, `2026-11-25`: independent Gemini audit complete — **`9 OK · 15 PARTIAL · 4 blocking FLAGs`** across 28 items + 8 primary source upgrades; handed off to `J3565` before lock) |
 | Shorts scripts | `10_Shorts/SHORTS_SCRIPTS_v01.md` (`S01` `46w` Sat 26 Dec & `S02` `43w` Fri 25 Dec, 16–19 s Ben 19 Nov house rules; awaits Chief lock) |
 | VO | pending (Ben Orbit Narrator — starts only after script/facts lock & open WIP slot) |
 | Picture | pending (Flow Veo 3.1, plate library — starts only after script & VO PASS; Flow renews 12 Dec) |
@@ -49,6 +49,15 @@ explorer_acts: OK (2) | visual_must: OK (19) | teach: OK (5) | chapters: OK (4) 
 - `DATA:` `5` · `SCALE:` `5` (`SCALE ≥ DATA`, incl. 0:28 early `10 kΩ → 1 MΩ` / `1.8 ms` resistor DATA+SCALE, Goodyear cure, Penicillin 12-year gap, Boise `>90%` curve, and Part 05 `1839–1974` timeline)
 - `WHO:` `13` (Greatbatch, Chardack, Gage, Elmqvist, Senning, Goodyear, Bénédictus, Fleming, Florey, Chain, Heatley, Silver, Fry — every named person with year-accurate role)
 - `WHEN:` `10` · `FACT:` `4` · `LABEL:` `18`
+
+### 4. Independent Gemini Facts Audit (`2026-11-25` · `J3564`)
+- **Report:** `01_Script/GEMINI_FACTS_CHECK_v01.md` (audited PR `#754` commit `1ae0da81`; both `accidental_inventions_script_master_v01.md` and `SHORTS_SCRIPTS_v01.md` untouched, `£0.00` spent).
+- **Tally (`28` audited items):** **`9 OK · 15 PARTIAL · 4 FLAG`** (do not lock `v01` as-is; resolve 4 blocking FLAGs in `J3565`):
+  1. **FLAG-1 (`FR 405,881`):** Primary patent `FR405881A` filing date is **`1909-08-10`** (10 Aug 1909), conflicting with spoken `"filed his French patent in November nineteen oh-nine"` (Part 03, line 85).
+  2. **FLAG-2 (Chardack-Greatbatch `1960`):** Peer-reviewed `PMC3232561` & VA confirm a two-stage surgery (April 1960 myocardial lead; **June 1960** self-contained pulse generator) and `2 years` survival vs Wikipedia's `April 1960` / `18 months` (Part 01, lines 31 & 34).
+  3. **FLAG-3 (Dead URL):** Sole URL in Row 2 (`heartrhythm.com/40th-Anniversary/Wilson-Greatbatch`) returns **`HTTP 521`**; replace with live primary upgrade `PMC3232561` (verbatim Greatbatch `10 KΩ → 1 MΩ` quote).
+  4. **FLAG-4 (Microsphere chemistry):** Spoken `"low-tack"` (Part 05, line 122) contradicts primary `US3691140A` (`"inherently tacky ... low degree of adhesion"`) and NIHF (`"high level of tack but a low degree of adhesion"`).
+- **Non-blocking card catch for `J3565`:** `FACT: First used in gas masks` (Part 03, line 80) is **5 words** (`>4`-word cap in `studio/RULES.md`). Packaging & collision evidence (`evidence_2026-11-24_public_search.json`, all 7 titles `0` collisions) and all `13 WHO` lifespans/roles verified **OK**.
 
 ---
 
