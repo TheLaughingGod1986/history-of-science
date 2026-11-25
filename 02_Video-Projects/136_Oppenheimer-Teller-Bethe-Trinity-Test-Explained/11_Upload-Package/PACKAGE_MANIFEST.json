@@ -1,0 +1,76 @@
+{
+  "format": "longform",
+  "video": null,
+  "youtubeId": null,
+  "title": "Trinity Test Explained: Could It Ignite the Sky?",
+  "titleVariant": "A",
+  "descriptionFile": "Descriptions/trinity_test_long_description_v01.txt",
+  "tagsFile": "Tags/trinity_test_long_tags_v01.txt",
+  "chaptersFile": null,
+  "pinnedCommentFile": null,
+  "thumbnail": null,
+  "thumbnailAbc": [],
+  "titleAbc": [
+    "Trinity Test Explained: Could It Ignite the Sky?",
+    "Why Oppenheimer's Trinity Test Didn't Ignite the Sky"
+  ],
+  "schedule": "2027-01-14T18:00:00.000Z",
+  "playlistId": "PLEbpfUzWzcXU",
+  "relatedVideoId": null,
+  "privacy": "private",
+  "madeForKids": false,
+  "alteredContent": true,
+  "language": "en-GB",
+  "categoryId": "27",
+  "affiliate": null,
+  "channel": "@HistoryOfScienceYT",
+  "premiere": false,
+  "note": "J3734 £0 pre-build (25 Nov 2026). Search-led Cluster 2 Film 2 slotted Thu 14 Jan 2027 18:00 London (watch Mon 11 Jan). Script v02, facts & Shorts scripts v02 locked (J3677, PR #767). Strictly lab-physics discovery framing, zero WW2 military overlap. Chapters are nominal pre-VO estimates — re-time on J3678 VO PASS.",
+  "neighbours": {
+    "phrases": [
+      "trinity test",
+      "nuclear fission",
+      "oppenheimer"
+    ],
+    "checked": "2026-11-24",
+    "videos": [
+      {
+        "id": "M7hOpT0lPGI",
+        "channel": "TEDx Talks",
+        "title": "I've studied nuclear war for 35 years -- you should be worried. | Brian Toon | TEDxMileHigh",
+        "views": 9215188
+      },
+      {
+        "id": "R7WPEYGr1Vs",
+        "channel": "TED-Ed",
+        "title": "How do nuclear power plants work? - M. V. Ramana and Sajan Saini",
+        "views": 3332906
+      },
+      {
+        "id": "ciStnd9Y2ak",
+        "channel": "TEDx Talks",
+        "title": "Why I changed my mind about nuclear power | Michael Shellenberger | TEDxBerlin",
+        "views": 2322133
+      },
+      {
+        "id": "GHBb25lzNVM",
+        "channel": "TED-Ed",
+        "title": "Can you survive nuclear fallout? -  Brooke Buddemeier and Jessica S. Wieder",
+        "views": 2149453
+      },
+      {
+        "id": "5HL1BEC024g",
+        "channel": "TED",
+        "title": "Taylor Wilson: My radical plan for small nuclear fission reactors",
+        "views": 1243770
+      },
+      {
+        "id": "9B0PaSznWJE",
+        "channel": "TED",
+        "title": "Yup, I built a nuclear fusion reactor | Taylor Wilson",
+        "views": 734388
+      }
+    ],
+    "note": "From evidence_2026-11-24_neighbours.json (gate PASS; >=3 education neighbours >=1M incl. TED-Ed/TED)."
+  }
+}

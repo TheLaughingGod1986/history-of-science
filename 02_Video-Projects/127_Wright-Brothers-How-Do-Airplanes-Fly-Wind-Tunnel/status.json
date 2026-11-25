@@ -1,9 +1,9 @@
 {
   "film": "127",
   "title": "Wright Brothers First Flight: The 1901 Wind Tunnel",
-  "air": "2026-12-31",
+  "air": "2027-01-28",
   "ready_by": "2026-12-28",
-  "summary": "Cluster 4 Lead Film 4 of Ben's approved hos-search-2027-01 accelerated December test cohort (target air Thu 31 Dec 2026 18:00 London, Ben's watch by Mon 28 Dec; slides a week if not ready). Script v02, primary sources & 16-19s Shorts LOCKED by Acting Chief (gemini, J3622 KEEP, 25 Nov 2026; HOS PR #778 merged d4186e33 superseding #708/#756/#771/#774; review:script 93.6/100 PASS; default gate:episode 9/9 PASS; J3690 independent facts audit 17 OK / 4 PARTIAL / 0 FLAG + J3622 direct live HTTP quote check 15/15 primary endpoints 55/55 substrings; check_all.sh ALL CHECKS PASS). Long VO & Shorts VO cleanly held under Rule G WIP behind HOS:137 (HOS currently 5/5 active: 009, 010, 013, 128, 136); £0.00 spent; picture & rendered thumbnails wait for Chief VO PASS.",
+  "summary": "Search-led Film 4 (Cluster 4, hos-search-2027-01) slotted Thu 28 Jan 2027 18:00 London (Ben watch Mon 25 Jan; unified J3734 line-up, 25 Nov). Script v02, facts, and Shorts scripts v02 LOCKED (J3622, PR #778). #1 in jobs/WIP.json next_hos: enters active HOS WIP as soon as HOS:011 reaches Ben's watch (Mon 14 Dec), then voices #4 in HOS order.",
   "stages": {
     "topic": {
       "state": "done",
@@ -36,9 +36,9 @@
     },
     "vo": {
       "state": "todo",
-      "due": "2026-12-15",
+      "due": "2026-12-16",
       "owner": "Codex",
-      "waiting": "Held on Rule G WIP slot release behind HOS:137 (HOS currently 5/5 active: 009, 010, 013, 128, 136); locked v02 script 1488f596... ready for Mac-mini ElevenLabs VO once a slot clears"
+      "waiting": "#1 in next_hos; enters active WIP when HOS:011 reaches Ben's watch (Mon 14 Dec), then voices #4 after HOS:137"
     },
     "shorts_scripts": {
       "state": "done",
@@ -49,41 +49,41 @@
     },
     "shorts_vo": {
       "state": "todo",
-      "due": "2026-12-16",
+      "due": "2026-12-17",
       "owner": "Codex",
       "waiting": "Held on Rule G WIP slot release behind HOS:137 (HOS currently 5/5 active: 009, 010, 013, 128, 136); locked v02 Shorts 59e3005d... ready for Mac-mini ElevenLabs VO once a slot clears"
     },
     "picture": {
       "state": "todo",
-      "due": "2026-12-22",
+      "due": "2027-01-12",
       "owner": "Cursor",
       "waiting": "after Chief VO PASS (Flow credits within existing plan; renews 12 Dec)"
     },
     "edit": {
       "state": "todo",
-      "due": "2026-12-24",
+      "due": "2027-01-20",
       "owner": "Cursor",
       "waiting": "after picture PASS"
     },
     "thumbnails": {
       "state": "todo",
-      "due": "2026-12-24",
+      "due": "2027-01-20",
       "owner": "Codex",
       "waiting": "after Chief VO PASS (Thumb A 50% TOO HIGH, Thumb B 200 TINY WINGS; 3rd T&C built post-VO per §2.9; §2.6 hand-verified text)"
     },
     "ben_ok": {
       "state": "todo",
-      "due": "2026-12-28",
+      "due": "2027-01-25",
       "owner": "Ben",
       "waiting": "after finished long, Shorts, and thumbnails pass Chief QA"
     },
     "scheduled": {
       "state": "todo",
-      "due": "2026-12-29",
+      "due": "2027-01-26",
       "owner": "Chief",
       "waiting": "after Ben's watch OK (target air Thu 31 Dec 2026 18:00 London)"
     }
   },
   "claims": [],
-  "next": "Script, facts & Shorts v02 LOCKED (J3622 KEEP, PR #778 d4186e33). Hold HOS:127 long VO + Shorts VO under Rule G WIP behind HOS:137 until an open HOS WIP slot clears in orbit-with-ben/jobs/WIP.json (currently 5/5 active: 009, 010, 013, 128, 136); preserve Mon 28 Dec watch & Thu 31 Dec 2026 18:00 London target"
+  "next": "Script, facts & Shorts v02 LOCKED (J3622). #1 in next_hos -> enters active WIP on 14 Dec when HOS:011 reaches Ben's watch -> Thu 28 Jan 2027."
 }

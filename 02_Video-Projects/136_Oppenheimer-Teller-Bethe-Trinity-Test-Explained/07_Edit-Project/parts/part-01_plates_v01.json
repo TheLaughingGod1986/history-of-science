@@ -1,54 +1,196 @@
 {
   "part": "01",
-  "title": "Part 01 — Title",
-  "film": "NNN_Slug",
-  "working_title": "Working title",
+  "title": "Part 01 — T",
+  "film": "136_Oppenheimer-Teller-Bethe-Trinity-Test-Explained",
+  "working_title": "Trinity Test Explained: Could It Ignite the Sky?",
+  "version": "v01_pre_vo",
+  "task": "J3734 £0 pre-build while ElevenLabs credits are at zero; snap row timings to locked VO WAV & run Chief price pass before any Flow mint.",
   "mint": false,
-  "house": "STUDIO_PLAYBOOK.md §5",
-  "vo_file": "02_Voiceover/part01_<slug>_v01.txt",
+  "generation_authorized": false,
+  "script_file": "01_Script/trinity_test_explained_script_master_v02.md",
+  "script_sha256": "85fb1286610264f5692a1e1dfe766fc0dfb90231016fd27f012dc079499047b2",
+  "vo_file": null,
   "vo_duration_s": null,
-  "clip_use_s": 7.9,
-  "xfade_s": 0.35,
-  "open_stamp": {
-    "after_s": 1.5,
-    "text": "<Place>, <year>",
-    "treatment": "Didot italic overlay added in the edit, not a Veo plate"
+  "post_5_dec_flow_policy": "Veo 3.1 - Lite (5 cr / 0 cr Lower Priority on Ultra 20x) default; Flow Omni 1.2 Flash (720p, 24 cr for 8s, audio stripped, --allow-omni) for fragile light & Explorer (J3691).",
+  "summary": {
+    "rows": 9,
+    "veo_lite": 4,
+    "omni_1_2_flash": 4,
+    "code_graphic": 1,
+    "archive_parallax": 0,
+    "chapter_or_end_card": 0,
+    "explorer": 0,
+    "flow_try1": 116,
+    "flow_lp_try1": 96
   },
-  "set_language": "ONE persistent set: <period, room, materials, light>. Say 'same <place> <year> set' for continuity; never 'same DNA' in a prompt.",
-  "continuity_lock": "Every scenery plate matches plate 02's set. Prefer start-frame I2V from the last KEEP plate. Camera moves only; no furniture reset.",
-  "explorer_lock": "At most one plate in this part. Exactly one Explorer, on model (01_Character/CHARACTER_BIBLE.md): round gold glasses, teal long coat, finished hair. Attach 01_Character/05_Generation-References/hos-explorer-reference-v01.jpg.",
-  "forbidden": "HARD REJECT: Orbit robot; photoreal; Ken Burns or still push; gore; lava drip / molten bead; underside lamp bulb or shade cup; unfinished flat cards; unfinished Explorer hair; DNA helix; readable text or logos in the plate; twin Explorer.",
-  "motion_lock": "Real Veo camera and object motion on every plate. No freeze-pad, no loop. If Create fails, stop and log it in production-status.md.",
-  "quality_note": "Flow Veo 3.1. Quality for fragile light (lamps, flasks, glows); Fast only for low-risk garnish. Mac Mini CDP the studio Ultra account (Ultra). One plate per FAIL cycle; after 2 same-framing FAILs change the framing.",
-  "always_fails": [
-    "lava drip / molten bead",
-    "underside lamp bulb / shade cup",
-    "unfinished flat cards",
-    "garbled card text",
-    "unfinished Explorer hair or melted face",
-    "Explorer without glasses",
-    "horizontal ghosting in late shots",
-    "DNA helix",
-    "Orbit robot",
-    "Ken Burns ship"
-  ],
-  "notes": "Plate UAT on continuous playback (start, middle, end), never from stills. Assemble rough only when every plate has passed.",
   "plates": [
     {
-      "id": "01_open",
+      "id": "P1:01",
+      "beat_kind": "visual",
+      "shot_description": "warm pre-dawn 3D cartoon wide-to-push on a hundred-foot steel tower rising out of the silent New Mexico desert, snapping instantly to chalk dust drifting across a 1942 physics chalkboard covered in hand-verified nuclear equations (ANSWER IMAGE by 0:04, TITLE QUESTION by 0:06)",
+      "source_kind": "flow_veo_3_1_lite",
+      "flow_model": "Veo 3.1 - Lite (5 cr standard / 0 cr Lower Priority on Ultra 20x)",
+      "generation_authorized": false,
       "explorer": false,
-      "i2v": false,
-      "side_label": null,
-      "vo_land": "<Sentence one: the surprising truth about a familiar thing.>",
-      "prompt": "Animistry premium 3D cartoon. <The named thing, already moving, at frame 0.> Continuous slow push. Silent. No Explorer. No Orbit. No readable text. HARD REJECT: photoreal, Ken Burns only."
+      "flow_credits_try1_standard": 5,
+      "flow_credits_try1_lower_priority": 0,
+      "prompt": "Premium 3D cartoon in HOS warm period palette. warm pre-dawn 3D cartoon wide-to-push on a hundred-foot steel tower rising out of the silent New Mexico desert, snapping instantly to chalk dust drifting across a 1942 physics chalkboard covered in hand-verified nuclear equations (ANSWER IMAGE by 0:04, TITLE QUESTION by 0:06) No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "teach_overlays": {
+        "label": [
+          "COULD IT IGNITE?"
+        ]
+      },
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
     },
     {
-      "id": "02_set",
+      "id": "P1:02",
+      "beat_kind": "visual",
+      "shot_description": "3D cartoon chalkboard close-up (hand-verified edit ink): two nitrogen nuclei approach while bright radiation arrows pour heat away into cold darkness, quenching the spark immediately (PROOF & ANSWER <=0:15)",
+      "source_kind": "flow_omni_1_2_flash",
+      "flow_model": "Omni 1.2 Flash (720p, 8s, silent/audio-stripped, --allow-omni)",
+      "generation_authorized": false,
       "explorer": false,
-      "i2v": true,
-      "side_label": "<Person, place or year>",
-      "vo_land": "<The line that names the person or place.>",
-      "prompt": "Animistry premium 3D cartoon. Same <place> <year> set. <What the line says, happening on screen.> Silent. No readable text."
+      "flow_credits_try1_standard": 24,
+      "flow_credits_try1_lower_priority": 24,
+      "prompt": "Premium 3D cartoon in HOS warm period palette. 3D cartoon chalkboard close-up (hand-verified edit ink): two nitrogen nuclei approach while bright radiation arrows pour heat away into cold darkness, quenching the spark immediately (PROOF & ANSWER <=0:15) Stable warm light, zero flicker, zero lava drip or molten bead. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "teach_overlays": {
+        "label": [
+          "RADIATION COOLS IT"
+        ]
+      },
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P1:03",
+      "beat_kind": "visual",
+      "shot_description": "dramatic 3D cartoon triptych montage: Edward Teller tapping chalk on a board, a precision spherical lens schematic turning cleanly in tungsten light, and tiny white paper scraps fluttering beside a desert shelter (STAKES <=0:24)",
+      "source_kind": "flow_omni_1_2_flash",
+      "flow_model": "Omni 1.2 Flash (720p, 8s, silent/audio-stripped, --allow-omni)",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 24,
+      "flow_credits_try1_lower_priority": 24,
+      "prompt": "Premium 3D cartoon in HOS warm period palette. dramatic 3D cartoon triptych montage: a bushy-browed 1940s theoretical physicist tapping chalk on a board, a precision spherical lens schematic turning cleanly in tungsten light, and tiny white paper scraps fluttering beside a desert shelter (STAKES <=0:24) Stable warm light, zero flicker, zero lava drip or molten bead. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "teach_overlays": {
+        "label": [
+          "THREE PHYSICS PUZZLES"
+        ]
+      },
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P1:04",
+      "beat_kind": "visual",
+      "shot_description": "3D cartoon cutaway of desert air molecules above a warm wooden laboratory desk: glowing blue nitrogen pairs fill seventy-eight percent of an inked glass cylinder beside an animated composition bar (EARLY DATA+SCALE 0:25–0:35, hand-verified edit ink)",
+      "source_kind": "code_graphic",
+      "flow_model": "code-graphic-ffmpeg",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 0,
+      "flow_credits_try1_lower_priority": 0,
+      "prompt": "",
+      "teach_overlays": {
+        "label": [
+          "78% NITROGEN AIR"
+        ],
+        "data": [
+          "Earth's atmosphere composition bar — 78.08% nitrogen (N2), 20.95% oxygen (O2), ~1% other gases"
+        ],
+        "scale": [
+          "nearly four out of every five breaths you take is nitrogen"
+        ]
+      },
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P1:05",
+      "beat_kind": "visual",
+      "shot_description": "3D cartoon sunlit 1942 Berkeley seminar room exterior-to-window push onto oak table and chalk-dusted green slate (FIRST REAL FACT <0:45)",
+      "source_kind": "flow_veo_3_1_lite",
+      "flow_model": "Veo 3.1 - Lite (5 cr standard / 0 cr Lower Priority on Ultra 20x)",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 5,
+      "flow_credits_try1_lower_priority": 0,
+      "prompt": "Premium 3D cartoon in HOS warm period palette. 3D cartoon sunlit 1942 Berkeley seminar room exterior-to-window push onto oak table and chalk-dusted green slate (FIRST REAL FACT <0:45) No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "teach_overlays": {
+        "when": [
+          "Berkeley, July 1942"
+        ]
+      },
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P1:06",
+      "beat_kind": "visual",
+      "shot_description": "3D cartoon medium shot inside the Berkeley seminar room: Oppenheimer listens intently at the head of the oak table as chalk notes fill the slate",
+      "source_kind": "flow_veo_3_1_lite",
+      "flow_model": "Veo 3.1 - Lite (5 cr standard / 0 cr Lower Priority on Ultra 20x)",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 5,
+      "flow_credits_try1_lower_priority": 0,
+      "prompt": "Premium 3D cartoon in HOS warm period palette. 3D cartoon medium shot inside the Berkeley seminar room: the physics director listens intently at the head of the oak table as chalk notes fill the slate No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "teach_overlays": {
+        "who": [
+          "J. Robert Oppenheimer (1904–1967) — Berkeley study leader"
+        ]
+      },
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P1:07",
+      "beat_kind": "visual",
+      "shot_description": "3D cartoon medium close-up at the green chalkboard: Edward Teller taps his chalk beside two hand-verified colliding circles as the room falls silent",
+      "source_kind": "flow_veo_3_1_lite",
+      "flow_model": "Veo 3.1 - Lite (5 cr standard / 0 cr Lower Priority on Ultra 20x)",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 5,
+      "flow_credits_try1_lower_priority": 0,
+      "prompt": "Premium 3D cartoon in HOS warm period palette. 3D cartoon medium close-up at the green chalkboard: a bushy-browed 1940s theoretical physicist taps his chalk beside two hand-verified colliding circles as the room falls silent No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "teach_overlays": {
+        "who": [
+          "Edward Teller (1908–2003) — theoretical physicist"
+        ]
+      },
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P1:08",
+      "beat_kind": "visual",
+      "shot_description": "3D cartoon slow push on Teller's hand-verified chalk diagram of two nitrogen-14 nuclei colliding in a warm tungsten pool of light, chalk dust suspended in the beam",
+      "source_kind": "flow_omni_1_2_flash",
+      "flow_model": "Omni 1.2 Flash (720p, 8s, silent/audio-stripped, --allow-omni)",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 24,
+      "flow_credits_try1_lower_priority": 24,
+      "prompt": "Premium 3D cartoon in HOS warm period palette. 3D cartoon slow push on the theorist's hand-verified chalk diagram of two nitrogen-14 nuclei colliding in a warm tungsten pool of light, chalk dust suspended in the beam Stable warm light, zero flicker, zero lava drip or molten bead. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "teach_overlays": {
+        "label": [
+          "NITROGEN FUSION?"
+        ]
+      },
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P1:09",
+      "beat_kind": "visual",
+      "shot_description": "3D cartoon warm study lamp over a wooden desk and telephone handset as Arthur Compton reviews Oppenheimer's urgent memo",
+      "source_kind": "flow_omni_1_2_flash",
+      "flow_model": "Omni 1.2 Flash (720p, 8s, silent/audio-stripped, --allow-omni)",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 24,
+      "flow_credits_try1_lower_priority": 24,
+      "prompt": "Premium 3D cartoon in HOS warm period palette. 3D cartoon warm study lamp over a wooden desk and telephone handset as a 1940s senior physics administrator reviews the physics director's urgent memo Stable warm light, zero flicker, zero lava drip or molten bead. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "teach_overlays": {
+        "who": [
+          "Arthur Compton (1892–1962) — Metallurgical Lab director"
+        ]
+      },
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
     }
   ]
 }

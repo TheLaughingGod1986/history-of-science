@@ -1,9 +1,9 @@
 {
   "film": "136",
   "title": "Trinity Test Explained: Could It Ignite the Sky?",
-  "air": "2026-12-17",
+  "air": "2027-01-14",
   "ready_by": "2026-12-14",
-  "summary": "Film 2 of the History of Science search-led plan (hos-search-2027-01, Ben OK 24 Nov 2026; accelerated into December: target air Thu 17 Dec 18:00 London, watch by Mon 14 Dec; slides a week if not ready). Script v02, primary sources & 16-19s Shorts LOCKED by Acting Chief (gemini, J3677 KEEP; HOS PR #767 merged ab25f2de superseding #746/#753/#764/#766; J3553 closed done; review:script 93.4/100 PASS; default gate:episode 9/9 PASS; J3676 facts audit 0 blocking FLAGs; check_all.sh ALL CHECKS PASS). Promoted into active HOS WIP (5/5 HOS after finished/scheduled HOS:008 rotated out, OWB PR #1306). Long VO (J3678) and Shorts S01/S02 VO (J3679) queued under normal ElevenLabs credit rules (£0.00 spent; picture & thumbnails wait for VO PASS).",
+  "summary": "Search-led Film 2 (Cluster 2, hos-search-2027-01) slotted Thu 14 Jan 2027 18:00 London (Ben watch Mon 11 Jan; unified J3734 line-up, 25 Nov). Script v02, facts, and Shorts scripts v02 LOCKED (J3677, PR #767). £0 pre-build complete (J3734): PICTURE_PLAN_v01.json + parts 01-05 Flow prompt boards (post-5-Dec Veo 3.1 - Lite / Omni 1.2 Flash, generation_authorized: false), lint-passing PACKAGE_MANIFEST.json + Descriptions + Tags, and 08_Thumbnail/THUMBNAIL_BRIEF_v01.md. Second HOS film in voice order after Mon 30 Nov 10:50Z reset (J3678 long VO, J3679 Shorts VO, behind HOS:128).",
   "stages": {
     "topic": {
       "state": "done",
@@ -26,19 +26,19 @@
       "note": "LOCKED by Acting Chief (gemini, J3677 KEEP, 2026-11-25) after J3676 independent Gemini v02 audit (01_Script/GEMINI_FACTS_CHECK_v02.md, 0 blocking FLAGs, 22 OK / 1 non-blocking PARTIAL R04; LA-602 PDF pp. 1,2,3,10,12,15,16 visually verified) plus J3677 direct live HTTP exact-quote spot checks (8/8 primary hosts EXACT PASS) and zero unverified new spoken claims"
     },
     "package": {
-      "state": "doing",
+      "state": "done",
       "due": "2026-12-04",
-      "owner": "Chief",
+      "owner": "gemini",
       "since": "2026-11-25",
       "underway": false,
-      "waiting": "VO re-timing, rendered thumbnails after VO PASS, and PACKAGE_MANIFEST.json before upload",
-      "note": "Draft lock candidates confirmed in J3677 (Primary Arm A 48c 96/100, T&C Arms B 68c / C 52c, unrendered draft Thumb A AIR ON FIRE? 96/100 & Thumb B MEASURED BY PAPER 93/100 with §2.6 hand-verified chalkboard ink & §2.9 3-way T&C note at thumbnails stage, S01 44c & S02 58c 0 collisions); NOT rendered packaging PASS yet"
+      "waiting": "",
+      "note": "J3734 £0 pre-build: PACKAGE_MANIFEST.json (Thu 14 Jan 2027), Descriptions/trinity_test_long_description_v01.txt, Tags/trinity_test_long_tags_v01.txt pass lint:package; re-time chapters on VO PASS."
     },
     "vo": {
       "state": "todo",
-      "due": "2026-12-07",
+      "due": "2026-12-04",
       "owner": "Codex",
-      "waiting": "J3678 queued (5-part long VO from locked v02 script 85fb1286...; Mac mini el_client.py/vo_take.py, vo_check_py312.sh; HOS:128 J3670 takes credit priority if tight)"
+      "waiting": "J3678 queued — #2 HOS voice priority after 30 Nov reset (behind HOS:128 J3670)"
     },
     "shorts_scripts": {
       "state": "done",
@@ -49,41 +49,41 @@
     },
     "shorts_vo": {
       "state": "todo",
-      "due": "2026-12-08",
+      "due": "2026-12-05",
       "owner": "Codex",
-      "waiting": "J3679 queued (Shorts S01 & S02 VO from locked v02 e1df5d81...; Mac mini el_client.py/vo_take.py, vo_check_py312.sh; after/behind HOS:128 VO & HOS:136 long VO if credit is tight)"
+      "waiting": "J3679 queued — runs after J3678 post-30-Nov reset"
     },
     "picture": {
       "state": "todo",
-      "due": "2026-12-11",
+      "due": "2026-12-29",
       "owner": "Cursor",
-      "waiting": "after Chief VO PASS (Flow Veo 3.1 within existing plan)"
+      "waiting": "£0 PICTURE_PLAN_v01.json + parts 01-05 Flow prompt boards pre-built (J3734); re-time to VO & price-pass after Chief VO PASS"
     },
     "edit": {
       "state": "todo",
-      "due": "2026-12-13",
+      "due": "2027-01-06",
       "owner": "Cursor",
       "waiting": "after picture PASS"
     },
     "thumbnails": {
       "state": "todo",
-      "due": "2026-12-13",
+      "due": "2027-01-06",
       "owner": "Codex",
-      "waiting": "after Chief VO PASS (Thumb A AIR ON FIRE?, Thumb B MEASURED BY PAPER; §2.6 hand-verified chalkboard ink & §2.9 3-way T&C)"
+      "waiting": "08_Thumbnail/THUMBNAIL_BRIEF_v01.md pre-built (J3734); render after Chief VO PASS"
     },
     "ben_ok": {
       "state": "todo",
-      "due": "2026-12-14",
+      "due": "2027-01-11",
       "owner": "Ben",
       "waiting": "after finished long, Shorts, and thumbnails pass Chief QA"
     },
     "scheduled": {
       "state": "todo",
-      "due": "2026-12-15",
+      "due": "2027-01-12",
       "owner": "Chief",
       "waiting": "after Ben's watch OK (target air Thu 17 Dec 18:00 London)"
     }
   },
   "claims": [],
-  "next": "Record HOS:136 long VO (J3678, due Mon 7 Dec) and Shorts S01/S02 VO (J3679, due Tue 8 Dec) from locked v02 scripts on Mac mini under ElevenLabs credit rules (Ben's watch Mon 14 Dec; target air Thu 17 Dec)"
+  "next": "£0 pre-build complete (J3734). Voice J3678 (long) + J3679 (Shorts) #2 in HOS queue after HOS:128 post-30-Nov reset -> Thu 14 Jan 2027."
 }

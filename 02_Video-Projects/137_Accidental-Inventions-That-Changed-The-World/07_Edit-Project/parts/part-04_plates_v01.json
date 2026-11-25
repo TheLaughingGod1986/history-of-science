@@ -1,0 +1,116 @@
+{
+  "part": "04",
+  "title": "Part 04 — T",
+  "film": "137_Accidental-Inventions-That-Changed-The-World",
+  "working_title": "Accidental Inventions: 5 Mistakes That Worked",
+  "version": "v01_pre_vo",
+  "task": "J3734 £0 pre-build while ElevenLabs credits are at zero; snap row timings to locked VO WAV & run Chief price pass before any Flow mint.",
+  "mint": false,
+  "generation_authorized": false,
+  "script_file": "01_Script/accidental_inventions_script_master_v02.md",
+  "script_sha256": "d2a359c4cb30b707b9ac723693372c6faba1d65ca1d32d8241a2b9a3c25caecb",
+  "vo_file": null,
+  "vo_duration_s": null,
+  "post_5_dec_flow_policy": "Veo 3.1 - Lite (5 cr / 0 cr Lower Priority on Ultra 20x) default; Flow Omni 1.2 Flash (720p, 24 cr for 8s, audio stripped, --allow-omni) for fragile light & Explorer (J3691).",
+  "summary": {
+    "rows": 4,
+    "veo_lite": 2,
+    "omni_1_2_flash": 1,
+    "code_graphic": 0,
+    "archive_parallax": 0,
+    "chapter_or_end_card": 1,
+    "explorer": 0,
+    "flow_try1": 34,
+    "flow_lp_try1": 24
+  },
+  "plates": [
+    {
+      "id": "P4:01",
+      "beat_kind": "chapter",
+      "shot_description": "The Mouldy Dish · 4:55 · ~1.5 s",
+      "source_kind": "chapter_or_end_card",
+      "flow_model": "code-graphic-ffmpeg",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 0,
+      "flow_credits_try1_lower_priority": 0,
+      "prompt": "",
+      "teach_overlays": {},
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P4:02",
+      "beat_kind": "visual",
+      "shot_description": "3D cartoon sunlit London basement laboratory at St Mary's Hospital, 3 September 1928: Alexander Fleming lifts a glass Petri dish beside an open window, revealing a fuzzy blue-green mould colony ringed by a crystal-clear bacteria-free halo",
+      "source_kind": "flow_veo_3_1_lite",
+      "flow_model": "Veo 3.1 - Lite (5 cr standard / 0 cr Lower Priority on Ultra 20x)",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 5,
+      "flow_credits_try1_lower_priority": 0,
+      "prompt": "Premium 3D cartoon in HOS warm period palette. 3D cartoon sunlit London basement laboratory at St Mary's Hospital, 3 September 1928: a 1928 Scottish bacteriologist in a white lab coat lifts a glass Petri dish beside an open window, revealing a fuzzy blue-green mould colony ringed by a crystal-clear bacteria-free halo No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "teach_overlays": {
+        "label": [
+          "ST MARY'S 1928"
+        ],
+        "who": [
+          "Alexander Fleming (1881–1955) — St Mary's bacteriologist"
+        ],
+        "when": [
+          "London, September 1928"
+        ]
+      },
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P4:03",
+      "beat_kind": "visual",
+      "shot_description": "3D cartoon animated cream-paper gap graphic tracking twelve quiet years from Fleming's 1928 Petri dish to Oxford's May 1940 eight-mouse proof and 1941 Lancet clinical trials",
+      "source_kind": "flow_veo_3_1_lite",
+      "flow_model": "Veo 3.1 - Lite (5 cr standard / 0 cr Lower Priority on Ultra 20x)",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 5,
+      "flow_credits_try1_lower_priority": 0,
+      "prompt": "Premium 3D cartoon in HOS warm period palette. 3D cartoon animated cream-paper gap graphic tracking twelve quiet years from the bacteriologist's 1928 Petri dish to Oxford's May 1940 eight-mouse proof and 1941 Lancet clinical trials No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "teach_overlays": {
+        "label": [
+          "TWELVE-YEAR GAP"
+        ],
+        "data": [
+          "Penicillin's 12-year gap — Sept 1928 discovery & June 1929 paper → May 1940 Oxford test (8 infected mice: 4 treated survived, 4 untreated died) → 1941 clinical proof"
+        ],
+        "scale": [
+          "twelve years sitting in a neglected medical journal before four surviving mice proved penicillin worked inside a living body"
+        ]
+      },
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P4:04",
+      "beat_kind": "visual",
+      "shot_description": "3D cartoon 1940 Oxford laboratory bench lined with Heatley's inventive ceramic culture vessels, glass extraction flasks, and four healthy mice beside an inked notebook dated 25 May 1940",
+      "source_kind": "flow_omni_1_2_flash",
+      "flow_model": "Omni 1.2 Flash (720p, 8s, silent/audio-stripped, --allow-omni)",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 24,
+      "flow_credits_try1_lower_priority": 24,
+      "prompt": "Premium 3D cartoon in HOS warm period palette. 3D cartoon 1940 Oxford laboratory bench lined with Heatley's inventive ceramic culture vessels, glass extraction flasks, and four healthy mice beside an inked notebook dated 25 May 1940 Stable warm light, zero flicker, zero lava drip or molten bead. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "teach_overlays": {
+        "label": [
+          "OXFORD TEAM 1940"
+        ],
+        "who": [
+          "Howard Florey (1898–1968) — Oxford pathology professor",
+          "Ernst Chain (1906–1979) — Oxford biochemist",
+          "Norman Heatley (1911–2004) — Oxford biologist"
+        ],
+        "when": [
+          "Oxford, May 1940"
+        ]
+      },
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    }
+  ]
+}

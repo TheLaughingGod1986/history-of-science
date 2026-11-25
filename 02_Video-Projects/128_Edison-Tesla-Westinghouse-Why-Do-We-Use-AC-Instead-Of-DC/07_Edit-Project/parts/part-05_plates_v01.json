@@ -1,0 +1,170 @@
+{
+  "part": "05",
+  "title": "Part 05 — T",
+  "film": "128_Edison-Tesla-Westinghouse-Why-Do-We-Use-AC-Instead-Of-DC",
+  "working_title": "Why Do We Use AC Instead of DC? (Edison vs Tesla)",
+  "version": "v01_pre_vo",
+  "task": "J3734 £0 pre-build while ElevenLabs credits are at zero; snap row timings to locked VO WAV & run Chief price pass before any Flow mint.",
+  "mint": false,
+  "generation_authorized": false,
+  "script_file": "01_Script/edison_tesla_ac_dc_script_master_v03.md",
+  "script_sha256": "c389c3cfbf758f5f261103bc6aa174cdb85dcc6f48c7e546f50ae63c98d3bb8b",
+  "vo_file": null,
+  "vo_duration_s": null,
+  "post_5_dec_flow_policy": "Veo 3.1 - Lite (5 cr / 0 cr Lower Priority on Ultra 20x) default; Flow Omni 1.2 Flash (720p, 24 cr for 8s, audio stripped, --allow-omni) for fragile light & Explorer (J3691).",
+  "summary": {
+    "rows": 8,
+    "veo_lite": 1,
+    "omni_1_2_flash": 5,
+    "code_graphic": 1,
+    "archive_parallax": 0,
+    "chapter_or_end_card": 1,
+    "explorer": 1,
+    "flow_try1": 125,
+    "flow_lp_try1": 120
+  },
+  "plates": [
+    {
+      "id": "P5:01",
+      "beat_kind": "chapter",
+      "shot_description": "The White City and Niagara · ~5:55 nominal · case file desk · ~1.5 s",
+      "source_kind": "chapter_or_end_card",
+      "flow_model": "code-graphic-ffmpeg",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 0,
+      "flow_credits_try1_lower_priority": 0,
+      "prompt": "",
+      "teach_overlays": {},
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P5:02",
+      "beat_kind": "visual",
+      "shot_description": "3D cartoon 1893 Chicago World's Columbian Exposition drafting room: two ledger sheets sit beside a glass bulb — GE's $554,000 bid beside Westinghouse's $399,000 bid",
+      "source_kind": "flow_omni_1_2_flash",
+      "flow_model": "Omni 1.2 Flash (720p, 8s, silent/audio-stripped, --allow-omni)",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 24,
+      "flow_credits_try1_lower_priority": 24,
+      "prompt": "Premium 3D cartoon in HOS warm period palette. 3D cartoon 1893 Chicago World's Columbian Exposition drafting room: two ledger sheets sit beside a glass bulb — GE's $554,000 bid beside the industrialist's $399,000 bid Stable warm light, zero flicker, zero lava drip or molten bead. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "teach_overlays": {
+        "data": [
+          "1893 Fair bid comparison — $554,000 GE vs $399,000 Westinghouse for 93,000 planned lamps"
+        ],
+        "scale": [
+          "undercut by more than a quarter"
+        ]
+      },
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P5:03",
+      "beat_kind": "visual",
+      "shot_description": "3D cartoon Westinghouse glassworks: a brass padlock snaps over a sealed Edison globe, then engineers slide a clever two-piece ground-glass stopper lamp from a wooden mould (sequential card 1)",
+      "source_kind": "flow_omni_1_2_flash",
+      "flow_model": "Omni 1.2 Flash (720p, 8s, silent/audio-stripped, --allow-omni)",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 24,
+      "flow_credits_try1_lower_priority": 24,
+      "prompt": "Premium 3D cartoon in HOS warm period palette. 3D cartoon the industrialist glassworks: a brass padlock snaps over a sealed the inventor globe, then engineers slide a clever two-piece ground-glass stopper lamp from a wooden mould (sequential card 1) Stable warm light, zero flicker, zero lava drip or molten bead. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "teach_overlays": {
+        "fact": [
+          "Built a stopper bulb"
+        ]
+      },
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P5:04",
+      "beat_kind": "visual",
+      "shot_description": "3D cartoon sweeping evening vista of the 1893 Chicago World's Fair neoclassical halls lighting up in warm golden glow",
+      "source_kind": "flow_omni_1_2_flash",
+      "flow_model": "Omni 1.2 Flash (720p, 8s, silent/audio-stripped, --allow-omni)",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 24,
+      "flow_credits_try1_lower_priority": 24,
+      "prompt": "Premium 3D cartoon in HOS warm period palette. 3D cartoon sweeping evening vista of the 1893 Chicago World's Fair neoclassical halls lighting up in warm golden glow Stable warm light, zero flicker, zero lava drip or molten bead. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "teach_overlays": {
+        "when": [
+          "Chicago, May 1893"
+        ]
+      },
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P5:05",
+      "beat_kind": "explorer",
+      "shot_description": "once. On the sunlit plaza of the 1893 Chicago White City at dusk, the Explorer stands beside a gleaming balustrade as tens of thousands of warm golden lamps ripple on across the neoclassical halls; he opens his blue notebook, smiles in awe, and moves along the walkway",
+      "source_kind": "flow_omni_1_2_flash",
+      "flow_model": "Omni 1.2 Flash (720p, 8s, silent/audio-stripped, --allow-omni)",
+      "generation_authorized": false,
+      "explorer": true,
+      "flow_credits_try1_standard": 24,
+      "flow_credits_try1_lower_priority": 24,
+      "prompt": "Premium 3D cartoon in HOS warm period palette. once. On the sunlit plaza of the 1893 Chicago White City at dusk, the Explorer stands beside a gleaming balustrade as tens of thousands of warm golden lamps ripple on across the neoclassical halls; he opens his blue notebook, smiles in awe, and moves along the walkway Attach Explorer reference 01_Character/05_Generation-References/hos-explorer-reference-v01.jpg. Exactly one Explorer, on model (round gold glasses, teal long coat, finished hair). No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Orbit.",
+      "teach_overlays": {},
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P5:06",
+      "beat_kind": "visual",
+      "shot_description": "3D cartoon limestone powerhouse cutaway at Niagara Falls: turquoise water plunges down deep shafts into giant spinning brass-and-copper 5,000-horsepower Westinghouse generators",
+      "source_kind": "flow_veo_3_1_lite",
+      "flow_model": "Veo 3.1 - Lite (5 cr standard / 0 cr Lower Priority on Ultra 20x)",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 5,
+      "flow_credits_try1_lower_priority": 0,
+      "prompt": "Premium 3D cartoon in HOS warm period palette. 3D cartoon limestone powerhouse cutaway at Niagara Falls: turquoise water plunges down deep shafts into giant spinning brass-and-copper 5,000-horsepower the industrialist generators No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "teach_overlays": {
+        "when": [
+          "Niagara Falls, 26 August 1895"
+        ]
+      },
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P5:07",
+      "beat_kind": "visual",
+      "shot_description": "moving 3D cartoon transmission towers carrying glowing lines from Niagara Falls across the landscape to Buffalo's lit evening streets (sequential card 1)",
+      "source_kind": "flow_omni_1_2_flash",
+      "flow_model": "Omni 1.2 Flash (720p, 8s, silent/audio-stripped, --allow-omni)",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 24,
+      "flow_credits_try1_lower_priority": 24,
+      "prompt": "Premium 3D cartoon in HOS warm period palette. moving 3D cartoon transmission towers carrying glowing lines from Niagara Falls across the landscape to Buffalo's lit evening streets (sequential card 1) Stable warm light, zero flicker, zero lava drip or molten bead. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "teach_overlays": {
+        "when": [
+          "Buffalo, 15 November 1896"
+        ]
+      },
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P5:08",
+      "beat_kind": "visual",
+      "shot_description": "cream-on-brown inked 1882–1896 War of the Currents timeline and distance bar drawing on over moving skyline footage (sequential card 2)",
+      "source_kind": "code_graphic",
+      "flow_model": "code-graphic-ffmpeg",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 0,
+      "flow_credits_try1_lower_priority": 0,
+      "prompt": "",
+      "teach_overlays": {
+        "data": [
+          "1882–1896 timeline & reach bar — 1882 Pearl Street (<1 mi)"
+        ],
+        "scale": [
+          "twenty-two miles — over twenty times Edison's original reach"
+        ]
+      },
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "part": "05",
+  "title": "Part 05 — T",
+  "film": "137_Accidental-Inventions-That-Changed-The-World",
+  "working_title": "Accidental Inventions: 5 Mistakes That Worked",
+  "version": "v01_pre_vo",
+  "task": "J3734 £0 pre-build while ElevenLabs credits are at zero; snap row timings to locked VO WAV & run Chief price pass before any Flow mint.",
+  "mint": false,
+  "generation_authorized": false,
+  "script_file": "01_Script/accidental_inventions_script_master_v02.md",
+  "script_sha256": "d2a359c4cb30b707b9ac723693372c6faba1d65ca1d32d8241a2b9a3c25caecb",
+  "vo_file": null,
+  "vo_duration_s": null,
+  "post_5_dec_flow_policy": "Veo 3.1 - Lite (5 cr / 0 cr Lower Priority on Ultra 20x) default; Flow Omni 1.2 Flash (720p, 24 cr for 8s, audio stripped, --allow-omni) for fragile light & Explorer (J3691).",
+  "summary": {
+    "rows": 6,
+    "veo_lite": 1,
+    "omni_1_2_flash": 1,
+    "code_graphic": 2,
+    "archive_parallax": 0,
+    "chapter_or_end_card": 2,
+    "explorer": 1,
+    "flow_try1": 29,
+    "flow_lp_try1": 24
+  },
+  "plates": [
+    {
+      "id": "P5:01",
+      "beat_kind": "chapter",
+      "shot_description": "The Glue That Wouldn't Hold · 6:40 · ~1.5 s",
+      "source_kind": "chapter_or_end_card",
+      "flow_model": "code-graphic-ffmpeg",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 0,
+      "flow_credits_try1_lower_priority": 0,
+      "prompt": "",
+      "teach_overlays": {},
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P5:02",
+      "beat_kind": "visual",
+      "shot_description": "3D cartoon 1968 Minnesota chemistry lab: Spencer Silver inspects a clear glass beaker under a microscope, zooming smoothly into translucent bouncing acrylate copolymer microspheres lightly touching a paper fibre and peeling cleanly away",
+      "source_kind": "flow_veo_3_1_lite",
+      "flow_model": "Veo 3.1 - Lite (5 cr standard / 0 cr Lower Priority on Ultra 20x)",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 5,
+      "flow_credits_try1_lower_priority": 0,
+      "prompt": "Premium 3D cartoon in HOS warm period palette. 3D cartoon 1968 Minnesota chemistry lab: a 1968 Minnesota laboratory chemist in horn-rimmed glasses inspects a clear glass beaker under a microscope, zooming smoothly into translucent bouncing acrylate copolymer microspheres lightly touching a paper fibre and peeling cleanly away No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "teach_overlays": {
+        "label": [
+          "MICROSPHERES 1968"
+        ],
+        "who": [
+          "Spencer Silver (1941–2021) — 3M senior chemist"
+        ],
+        "when": [
+          "Minnesota, 1968"
+        ]
+      },
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P5:03",
+      "beat_kind": "visual",
+      "shot_description": "3D cartoon warm 1974 church choir loft dissolving into a 1978 Boise, Idaho office desk covered in bright canary-yellow sample pads beside an animated inked bar chart",
+      "source_kind": "code_graphic",
+      "flow_model": "code-graphic-ffmpeg",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 0,
+      "flow_credits_try1_lower_priority": 0,
+      "prompt": "",
+      "teach_overlays": {
+        "label": [
+          "BOISE BLITZ 1978"
+        ],
+        "who": [
+          "Art Fry (born 1931) — 3M chemical engineer"
+        ],
+        "when": [
+          "Minnesota, 1974 & Boise, 1978"
+        ],
+        "data": [
+          "Post-it adoption curve — 1968 microspheres → 1974 choir bookmark → 1977 slow Press 'n Peel test → 1978 Boise Blitz (90% buyer intent) → 1980 US launch"
+        ],
+        "scale": [
+          "nine out of every ten Boise offices that tried a free pad wanted to buy more"
+        ],
+        "fact": [
+          "90% wanted to buy"
+        ]
+      },
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P5:04",
+      "beat_kind": "visual",
+      "shot_description": "3D cartoon sunlit studio desk where an animated 1839–1974 inked discovery timeline unfurls cleanly across warm cream parchment linking all five breakthroughs: 1839/1844 Goodyear · 1903/1909 Bénédictus · 1928/1940–41 Fleming & Oxford · 1956/1960 Greatbatch, Chardack & Gage · 1968/1974/1980 Silver & Fry",
+      "source_kind": "code_graphic",
+      "flow_model": "code-graphic-ffmpeg",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 0,
+      "flow_credits_try1_lower_priority": 0,
+      "prompt": "",
+      "teach_overlays": {
+        "label": [
+          "1839 TO 1974 TIMELINE"
+        ],
+        "data": [
+          "animated 1839–1974 accidental-inventions timeline spanning 135 years across 5 laboratories"
+        ],
+        "scale": [
+          "one hundred and thirty-five years of lab errors turned into everyday lifesavers and tools"
+        ]
+      },
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P5:05",
+      "beat_kind": "explorer",
+      "shot_description": "once. Beside the unfurling 1839–1974 discovery timeline in warm golden afternoon light, the Explorer gently peels a canary-yellow note off a brass notebook, sticks it neatly onto the 1974 marker, smiles in quiet wonder, and steps back out of frame",
+      "source_kind": "flow_omni_1_2_flash",
+      "flow_model": "Omni 1.2 Flash (720p, 8s, silent/audio-stripped, --allow-omni)",
+      "generation_authorized": false,
+      "explorer": true,
+      "flow_credits_try1_standard": 24,
+      "flow_credits_try1_lower_priority": 24,
+      "prompt": "Premium 3D cartoon in HOS warm period palette. once. Beside the unfurling 1839–1974 discovery timeline in warm golden afternoon light, the Explorer gently peels a canary-yellow note off a brass notebook, sticks it neatly onto the 1974 marker, smiles in quiet wonder, and steps back out of frame Attach Explorer reference 01_Character/05_Generation-References/hos-explorer-reference-v01.jpg. Exactly one Explorer, on model (round gold glasses, teal long coat, finished hair). No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Orbit.",
+      "teach_overlays": {},
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P5:06",
+      "beat_kind": "visual",
+      "shot_description": "the cream end card (STUDIO_PLAYBOOK.md §7). No goodbye, no subscribe ask.",
+      "source_kind": "chapter_or_end_card",
+      "flow_model": "code-graphic-ffmpeg",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 0,
+      "flow_credits_try1_lower_priority": 0,
+      "prompt": "",
+      "teach_overlays": {},
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    }
+  ]
+}

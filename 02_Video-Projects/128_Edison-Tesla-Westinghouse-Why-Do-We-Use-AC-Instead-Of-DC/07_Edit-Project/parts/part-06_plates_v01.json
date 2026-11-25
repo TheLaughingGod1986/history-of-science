@@ -1,0 +1,113 @@
+{
+  "part": "06",
+  "title": "Part 06 — W",
+  "film": "128_Edison-Tesla-Westinghouse-Why-Do-We-Use-AC-Instead-Of-DC",
+  "working_title": "Why Do We Use AC Instead of DC? (Edison vs Tesla)",
+  "version": "v01_pre_vo",
+  "task": "J3734 £0 pre-build while ElevenLabs credits are at zero; snap row timings to locked VO WAV & run Chief price pass before any Flow mint.",
+  "mint": false,
+  "generation_authorized": false,
+  "script_file": "01_Script/edison_tesla_ac_dc_script_master_v03.md",
+  "script_sha256": "c389c3cfbf758f5f261103bc6aa174cdb85dcc6f48c7e546f50ae63c98d3bb8b",
+  "vo_file": null,
+  "vo_duration_s": null,
+  "post_5_dec_flow_policy": "Veo 3.1 - Lite (5 cr / 0 cr Lower Priority on Ultra 20x) default; Flow Omni 1.2 Flash (720p, 24 cr for 8s, audio stripped, --allow-omni) for fragile light & Explorer (J3691).",
+  "summary": {
+    "rows": 5,
+    "veo_lite": 0,
+    "omni_1_2_flash": 3,
+    "code_graphic": 0,
+    "archive_parallax": 0,
+    "chapter_or_end_card": 2,
+    "explorer": 0,
+    "flow_try1": 72,
+    "flow_lp_try1": 72
+  },
+  "plates": [
+    {
+      "id": "P6:01",
+      "beat_kind": "chapter",
+      "shot_description": "Why Both Currents Won · ~7:25 nominal · case file desk · ~1.5 s",
+      "source_kind": "chapter_or_end_card",
+      "flow_model": "code-graphic-ffmpeg",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 0,
+      "flow_credits_try1_lower_priority": 0,
+      "prompt": "",
+      "teach_overlays": {},
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P6:02",
+      "beat_kind": "visual",
+      "shot_description": "3D cartoon sweeping modern landscape in warm golden dusk: a power station steps AC up to tall steel pylons crossing hills, down through a neighbourhood transformer, and into a glowing kitchen lamp pulsing steadily",
+      "source_kind": "flow_omni_1_2_flash",
+      "flow_model": "Omni 1.2 Flash (720p, 8s, silent/audio-stripped, --allow-omni)",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 24,
+      "flow_credits_try1_lower_priority": 24,
+      "prompt": "Premium 3D cartoon in HOS warm period palette. 3D cartoon sweeping modern landscape in warm golden dusk: a power station steps AC up to tall steel pylons crossing hills, down through a neighbourhood transformer, and into a glowing kitchen lamp pulsing steadily Stable warm light, zero flicker, zero lava drip or molten bead. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "teach_overlays": {
+        "data": [
+          "modern AC grid — power plant stepped up to high-voltage pylons and down to wall sockets at 50 or 60 cycles per second"
+        ],
+        "scale": [
+          "fifty or sixty full cycles every second"
+        ]
+      },
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P6:03",
+      "beat_kind": "visual",
+      "shot_description": "3D cartoon cutaway of a warm modern phone charger brick plugged into a wall socket, converting an oscillating wave into a steady stream feeding a glowing microchip",
+      "source_kind": "flow_omni_1_2_flash",
+      "flow_model": "Omni 1.2 Flash (720p, 8s, silent/audio-stripped, --allow-omni)",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 24,
+      "flow_credits_try1_lower_priority": 24,
+      "prompt": "Premium 3D cartoon in HOS warm period palette. 3D cartoon cutaway of a warm modern phone charger brick plugged into a wall socket, converting an oscillating wave into a steady stream feeding a glowing microchip Stable warm light, zero flicker, zero lava drip or molten bead. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "teach_overlays": {
+        "label": [
+          "AC TO DC"
+        ]
+      },
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P6:04",
+      "beat_kind": "visual",
+      "shot_description": "3D cartoon cutaway beneath a deep blue ocean: a modern high-voltage direct-current (HVDC) subsea cable glows cleanly along the seabed between two coastal converter stations",
+      "source_kind": "flow_omni_1_2_flash",
+      "flow_model": "Omni 1.2 Flash (720p, 8s, silent/audio-stripped, --allow-omni)",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 24,
+      "flow_credits_try1_lower_priority": 24,
+      "prompt": "Premium 3D cartoon in HOS warm period palette. 3D cartoon cutaway beneath a deep blue ocean: a modern high-voltage direct-current (HVDC) subsea cable glows cleanly along the seabed between two coastal converter stations Stable warm light, zero flicker, zero lava drip or molten bead. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "teach_overlays": {
+        "fact": [
+          "DC returned undersea"
+        ]
+      },
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P6:05",
+      "beat_kind": "visual",
+      "shot_description": "the cream end card (STUDIO_PLAYBOOK.md §7). No goodbye, no subscribe ask.",
+      "source_kind": "chapter_or_end_card",
+      "flow_model": "code-graphic-ffmpeg",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 0,
+      "flow_credits_try1_lower_priority": 0,
+      "prompt": "",
+      "teach_overlays": {},
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    }
+  ]
+}

@@ -1,9 +1,9 @@
 {
   "film": "128",
   "title": "Why Do We Use AC Instead of DC? (Edison vs Tesla)",
-  "air": "2026-12-10",
+  "air": "2027-01-07",
   "ready_by": "2026-12-07",
-  "summary": "Cluster 1 lead film of hos-search-2027-01 (target Thu 10 Dec 18:00 London, slides to Thu 17 Dec if not ready for Ben's watch by Mon 7 Dec). Acting Chief (gemini) KEEP & SCRIPT LOCK achieved in J3660 (25 Nov 2026): HOS PR #762 merged as 84af0f7d (superseding PRs #758/#760/#751/#725), locking edison_tesla_ac_dc_script_master_v03.md (91.9/100 PASS, default gate:episode PASS, check_all.sh PASS), FACT_NOTES_v03.md, SOURCES.md, and SHORTS_SCRIPTS_v03.md; J3547 closed done. Long VO (J3670) and Shorts S01/S02 VO (J3671) queued under normal ElevenLabs credit rules. Picture and thumbnail generation wait for VO PASS; draft thumbnail concepts remain unrendered drafts (not rendered packaging PASS).",
+  "summary": "Search-led Film 1 (Cluster 1, hos-search-2027-01) slotted Thu 7 Jan 2027 18:00 London (Ben watch Mon 4 Jan; unified J3734 line-up, 25 Nov). Script v03, facts, and Shorts scripts v03 LOCKED (J3660, PR #762). £0 pre-build complete (J3734): PICTURE_PLAN_v01.json + parts 01-06 Flow prompt boards (post-5-Dec Veo 3.1 - Lite / Omni 1.2 Flash, generation_authorized: false), lint-passing PACKAGE_MANIFEST.json + Descriptions + Tags, and 08_Thumbnail/THUMBNAIL_BRIEF_v01.md. First HOS film in voice order after Mon 30 Nov 10:50Z ElevenLabs reset (J3670 long VO, J3671 Shorts VO).",
   "stages": {
     "topic": {
       "state": "done",
@@ -18,18 +18,18 @@
       "note": "Verified and locked via J3629/J3630/J3660 (HOS PR #762 merged 84af0f7d): FACT_NOTES_v03.md (4104ad2d...) and SOURCES.md (be44dd42...) with FIX-1..FIX-4, all 6 primary institutional upgrades, and J3630 Niagara ruling"
     },
     "package": {
-      "state": "doing",
+      "state": "done",
       "due": "2026-12-05",
-      "owner": "Claude",
+      "owner": "gemini",
       "since": "2026-11-25",
       "underway": false,
-      "waiting": "VO PASS, chapter re-timing from locked VO, rendered thumbnail panel/style/168px review, and PACKAGE_MANIFEST.json",
-      "note": "Working package v03 merged in PR #762 (84af0f7d): Arm A/B/C all 0 exact collisions (Arm B verified 2026-11-25). Draft thumbnail concepts (WASTED AS HEAT, HIGH VOLTAGE, optional 22 MILES AWAY) remain unrendered drafts, NOT rendered packaging PASS"
+      "waiting": "",
+      "note": "J3734 £0 pre-build: PACKAGE_MANIFEST.json (Thu 7 Jan 2027), Descriptions/edison_tesla_long_description_v01.txt, Tags/edison_tesla_long_tags_v01.txt pass lint:package; re-time chapters on VO PASS."
     },
     "vo": {
       "state": "todo",
-      "due": "2026-12-03",
-      "waiting": "J3670 (queued 25 Nov by Acting Chief gemini: 6-part long VO from locked v03 script c389c3cf... under normal ElevenLabs credit rules)"
+      "due": "2026-12-02",
+      "waiting": "J3670 queued — #1 HOS voice priority right after Mon 30 Nov 10:50Z ElevenLabs reset"
     },
     "shorts_scripts": {
       "state": "done",
@@ -38,34 +38,34 @@
     "shorts_vo": {
       "state": "todo",
       "due": "2026-12-03",
-      "waiting": "J3671 (queued 25 Nov by Acting Chief gemini: Shorts S01/S02 VO from locked SHORTS_SCRIPTS_v03.md 1132ad9f... under normal ElevenLabs credit rules)"
+      "waiting": "J3671 queued — runs right after J3670 post-30-Nov reset"
     },
     "picture": {
       "state": "todo",
-      "due": "2026-12-05",
-      "waiting": "after Chief VO PASS (J3670/J3671)"
+      "due": "2026-12-22",
+      "waiting": "£0 PICTURE_PLAN_v01.json + parts 01-06 Flow prompt boards pre-built (J3734); re-time to VO & price-pass after Chief VO PASS (Dec Flow cycle)"
     },
     "edit": {
       "state": "todo",
-      "due": "2026-12-06",
+      "due": "2026-12-30",
       "waiting": "after picture plates KEEP"
     },
     "thumbnails": {
       "state": "todo",
-      "due": "2026-12-06",
-      "waiting": "after Chief VO PASS (unrendered drafts: WASTED AS HEAT, HIGH VOLTAGE, optional 22 MILES AWAY; rendered panel/style/168px review required)"
+      "due": "2026-12-30",
+      "waiting": "08_Thumbnail/THUMBNAIL_BRIEF_v01.md pre-built (J3734); render after Chief VO PASS"
     },
     "ben_ok": {
       "state": "todo",
-      "due": "2026-12-07",
+      "due": "2027-01-04",
       "waiting": "finished long, 2 Shorts, and thumbnails ready for Ben's watch"
     },
     "scheduled": {
       "state": "todo",
-      "due": "2026-12-08",
+      "due": "2027-01-05",
       "waiting": "after Ben's final OK (target Thu 10 Dec 18:00 London; slides to Thu 17 Dec if not ready by Mon 7 Dec)"
     }
   },
   "claims": [],
-  "next": ""
+  "next": "£0 pre-build complete (J3734). Voice J3670 (long) + J3671 (Shorts) #1 in HOS queue right after Mon 30 Nov 10:50Z reset -> snap pre-built boards to VO -> Thu 7 Jan 2027."
 }

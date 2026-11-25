@@ -3,7 +3,7 @@
   "title": "How Isaac Newton Proved Gravity Using the Moon",
   "air": "2026-12-03",
   "ready_by": "2026-12-03",
-  "summary": "J3501 package ready (24 Nov 2026, £0, no YouTube change): search-led title 'How Isaac Newton Proved Gravity Using the Moon' (T&C B: 'Why Doesn't the Moon Fall to Earth?'), en-GB v03 captions, exact chapters+8 sources, playlist PLEbpfUzWzcXU, verified NAS v03 master 744f32b7 and J3262 thumbs A/B. Held for Ben's watch OK on HOS:009 (J2037) before private upload and Thu 3 Dec 18:00 London schedule (cutoff Thu 3 Dec 12:00 London). Separate Shorts J3311.1/J3311.2 remain pending Ben's watch.",
+  "summary": "FINISHED & SCHEDULED for Thu 3 Dec 2026 18:00 London (J3501, PR #757): long v03 uploaded & scheduled as wiyfRnsTfTY (Shorts OhdDVA9kWBk Fri 4 Dec 11:30 & 9ETHUOUH5-A Sat 5 Dec 11:30; Ben OK'd long & Shorts 24 Nov; captions, thumbnails, playlist, Buffer mirror registered). Rotated out of active HOS WIP (J3734, 25 Nov). Only Studio-only extras (T&C, end screen/cards, Related, covers) wait on Ben's Studio login in J3501 (cutoff Thu 3 Dec 12:00).",
   "stages": {
     "topic": {
       "state": "done"
@@ -95,10 +95,13 @@
       "note": "J3262 Acting Chief (Gemini) PASS (21 Nov 2026): long thumbnails A (IT MISSES, cd44f05657ddfea2...) and B (ONE APPLE, 3d1164330249e779...) PASS HOOK, BAND, PHONE (168x94), FAMILY (style_sheet vs 001-004), and Explorer on-model; £0 cash, 0 Flow credits (23450 before/after), Mini-NAS SHA256 parity verified. Ready for J2036 package wiring and Ben's final watch (ben_ok remains todo; not a film PASS or upload/schedule OK)."
     },
     "ben_ok": {
-      "state": "todo",
+      "state": "done",
       "due": "2026-11-24",
-      "note": "Long v03 and separate Shorts ready for private UAT; requested watch by 24 Nov 18:00 London. No approval inferred.",
-      "waiting": "Ben finished-cut watch/listen and package approval"
+      "note": "Ben OK'd Gravity long v03 (J2037) and both Shorts (J3311) on 24 Nov 2026 (recorded on J3501).",
+      "waiting": "",
+      "owner": "Ben",
+      "since": "2026-11-24T21:49",
+      "underway": false
     },
     "scheduled": {
       "state": "blocked",
@@ -106,8 +109,8 @@
       "owner": "macbook-2",
       "since": "2026-11-24",
       "underway": false,
-      "waiting": "Ben's watch OK on HOS:009 (J2037) before private upload and Thu 3 Dec 18:00 London schedule (cutoff Thu 3 Dec 12:00 London)",
-      "note": "J3501 package ready for Thu 3 Dec 18:00 London (normal publish, no Premiere). Strictly held until Ben passes HOS:009 watch card (v03 744f32b7, J2037); no OK by Thu 3 Dec 12:00 London means no schedule and Ben is told."
+      "waiting": "Ben Studio login for remaining Studio-only extras on wiyfRnsTfTY / OhdDVA9kWBk / 9ETHUOUH5-A (J3501; no re-upload)",
+      "note": "API uploads & schedules live (Private): long wiyfRnsTfTY Thu 3 Dec 18:00 London; Shorts OhdDVA9kWBk Fri 4 Dec & 9ETHUOUH5-A Sat 5 Dec 11:30 London; Buffer registered (OWB PR #1294). Only Studio UI extras await Ben login (J3501)."
     }
   },
   "claims": [],

@@ -1,9 +1,9 @@
 {
   "film": "013",
   "title": "Evolution: The Letter That Forced Darwin to Publish",
-  "air": "2026-12-17",
+  "air": "2026-12-31",
   "ready_by": "2026-12-13",
-  "summary": "Slotted Thu 17 Dec (J2231; active in jobs/WIP.json #541). Script v02 (92.6 PASS, J0307) and FACT_NOTES_v02 (30 OK, J0304) locked; long VO hos_013_vo_v03a locked (512.48 s, -19.5 LUFS, vo_check 0 fails, J1310). Shorts scripts v02 + upload package + shot list v01 queued (J2240). Next four proposed to mid-Jan (jobs/WIP.json next_hos): 012 Mendel (24 Dec), 014 Anning (31 Dec), 015 Hooke (7 Jan), 018 Herschel (14 Jan).",
+  "summary": "Slotted Thu 31 Dec 2026 18:00 London (early Ben watch target Tue 22 Dec before Christmas; hard cutoff Mon 28 Dec; unified J3734 line-up, 25 Nov; if J3178 remains unresolved by Fri 11 Dec, HOS:010 swaps into Thu 31 Dec). Script v02, facts, long VO (512.48 s), Shorts scripts & Shorts VO ALL LOCKED (0 new voice credits). 66/66 pass-1 Flow plates minted (48 KEEP / 8 confirmed RETAKE / 10 capability-held in J3178); 35/35 £0 free renders & rough built in J2652 (ad52a2dc). Next: non-producer review & port of J2652 ad52a2dc (Claude/Codex), £0 retake prompt+price board for 8 confirmed retakes, and Claude->Ben escalation on J3178 10-plate watch path.",
   "stages": {
     "topic": {
       "state": "done",
@@ -18,10 +18,11 @@
       "note": "FACT_NOTES_v02 30 OK, 0 PARTIAL, 0 FLAG (J0304 / J0307)"
     },
     "package": {
-      "state": "todo",
+      "state": "done",
       "due": "2026-11-12",
       "owner": "Claude",
-      "note": "PRE_BUILD_VIDIQ_AUDIT.md + neighbour/search evidence saved; manifest + description queued (J2240)"
+      "note": "PACKAGE_MANIFEST.json, Descriptions, Tags, and neighbour/search evidence pass lint:package (schedule updated to Thu 31 Dec 2026 in J3734).",
+      "since": "2026-11-05"
     },
     "vo": {
       "state": "done",
@@ -36,38 +37,53 @@
       "underway": false
     },
     "shorts_scripts": {
-      "state": "todo",
+      "state": "done",
       "due": "2026-11-12",
       "owner": "Claude",
-      "note": "two search-titled Shorts (Test B, J2240)"
+      "note": "Two search-titled Shorts scripts v02 locked (J2240).",
+      "since": "2026-11-05"
     },
     "shorts_vo": {
-      "state": "todo",
+      "state": "done",
       "due": "2026-11-16",
       "owner": "Cursor",
-      "waiting": "after J2240 013 Shorts scripts v02"
+      "waiting": "after J2240 013 Shorts scripts v02",
+      "since": "2026-11-10",
+      "note": "Both Shorts VOs accepted KEEP (J2288, 10 Nov 2026)."
     },
     "picture": {
-      "state": "todo",
-      "due": "2026-12-06",
-      "owner": "Cursor",
-      "waiting": "after J2240 013 shot list v01 + price review"
+      "state": "blocked",
+      "due": "2026-12-16",
+      "owner": "Chief",
+      "waiting": "J2652 non-producer review (Claude/Codex), 8 confirmed retake board/mint, and J3178 moving_video_input resolution (escalated to Claude/Ben)",
+      "since": "2026-11-25",
+      "underway": false,
+      "steps": [
+        48,
+        66
+      ],
+      "steps_unit": "pass-1 Flow plates KEEP (8 confirmed RETAKE; 10 capability-held in J3178)",
+      "note": "J3734 Acting Chief ruling (25 Nov): 66/66 pass-1 plates minted (48 KEEP / 8 RETAKE: 3,10,24,28,47,49,54,63 / 10 unset: 56-62,64-66). J2652 (ad52a2dc) queued for non-producer review (no Gemini self-review); 8 confirmed retakes queued for £0 re-prompt/price board; J3178 capability hold preserved & escalated."
     },
     "edit": {
       "state": "todo",
-      "due": "2026-12-10"
+      "due": "2026-12-20",
+      "waiting": "After J2652 port, 8 retakes, and J3178 10-plate resolution"
     },
     "thumbnails": {
       "state": "todo",
-      "due": "2026-12-10"
+      "due": "2026-12-20",
+      "waiting": "After final edit lock"
     },
     "ben_ok": {
       "state": "todo",
-      "due": "2026-12-13"
+      "due": "2026-12-22",
+      "waiting": "Target early Ben watch Tue 22 Dec (hard cutoff Mon 28 Dec) for Thu 31 Dec air"
     },
     "scheduled": {
       "state": "todo",
-      "due": "2026-12-14"
+      "due": "2026-12-29",
+      "waiting": "After Ben watch OK (target Thu 31 Dec 2026 18:00 London)"
     }
   },
   "claims": [],

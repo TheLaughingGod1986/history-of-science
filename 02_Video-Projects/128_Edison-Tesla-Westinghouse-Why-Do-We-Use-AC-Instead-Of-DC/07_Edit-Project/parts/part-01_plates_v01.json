@@ -1,54 +1,175 @@
 {
   "part": "01",
-  "title": "Part 01 — Title",
-  "film": "NNN_Slug",
-  "working_title": "Working title",
+  "title": "Part 01 — T",
+  "film": "128_Edison-Tesla-Westinghouse-Why-Do-We-Use-AC-Instead-Of-DC",
+  "working_title": "Why Do We Use AC Instead of DC? (Edison vs Tesla)",
+  "version": "v01_pre_vo",
+  "task": "J3734 £0 pre-build while ElevenLabs credits are at zero; snap row timings to locked VO WAV & run Chief price pass before any Flow mint.",
   "mint": false,
-  "house": "STUDIO_PLAYBOOK.md §5",
-  "vo_file": "02_Voiceover/part01_<slug>_v01.txt",
+  "generation_authorized": false,
+  "script_file": "01_Script/edison_tesla_ac_dc_script_master_v03.md",
+  "script_sha256": "c389c3cfbf758f5f261103bc6aa174cdb85dcc6f48c7e546f50ae63c98d3bb8b",
+  "vo_file": null,
   "vo_duration_s": null,
-  "clip_use_s": 7.9,
-  "xfade_s": 0.35,
-  "open_stamp": {
-    "after_s": 1.5,
-    "text": "<Place>, <year>",
-    "treatment": "Didot italic overlay added in the edit, not a Veo plate"
+  "post_5_dec_flow_policy": "Veo 3.1 - Lite (5 cr / 0 cr Lower Priority on Ultra 20x) default; Flow Omni 1.2 Flash (720p, 24 cr for 8s, audio stripped, --allow-omni) for fragile light & Explorer (J3691).",
+  "summary": {
+    "rows": 8,
+    "veo_lite": 1,
+    "omni_1_2_flash": 5,
+    "code_graphic": 1,
+    "archive_parallax": 1,
+    "chapter_or_end_card": 0,
+    "explorer": 0,
+    "flow_try1": 125,
+    "flow_lp_try1": 120
   },
-  "set_language": "ONE persistent set: <period, room, materials, light>. Say 'same <place> <year> set' for continuity; never 'same DNA' in a prompt.",
-  "continuity_lock": "Every scenery plate matches plate 02's set. Prefer start-frame I2V from the last KEEP plate. Camera moves only; no furniture reset.",
-  "explorer_lock": "At most one plate in this part. Exactly one Explorer, on model (01_Character/CHARACTER_BIBLE.md): round gold glasses, teal long coat, finished hair. Attach 01_Character/05_Generation-References/hos-explorer-reference-v01.jpg.",
-  "forbidden": "HARD REJECT: Orbit robot; photoreal; Ken Burns or still push; gore; lava drip / molten bead; underside lamp bulb or shade cup; unfinished flat cards; unfinished Explorer hair; DNA helix; readable text or logos in the plate; twin Explorer.",
-  "motion_lock": "Real Veo camera and object motion on every plate. No freeze-pad, no loop. If Create fails, stop and log it in production-status.md.",
-  "quality_note": "Flow Veo 3.1. Quality for fragile light (lamps, flasks, glows); Fast only for low-risk garnish. Mac Mini CDP the studio Ultra account (Ultra). One plate per FAIL cycle; after 2 same-framing FAILs change the framing.",
-  "always_fails": [
-    "lava drip / molten bead",
-    "underside lamp bulb / shade cup",
-    "unfinished flat cards",
-    "garbled card text",
-    "unfinished Explorer hair or melted face",
-    "Explorer without glasses",
-    "horizontal ghosting in late shots",
-    "DNA helix",
-    "Orbit robot",
-    "Ken Burns ship"
-  ],
-  "notes": "Plate UAT on continuous playback (start, middle, end), never from stills. Assemble rough only when every plate has passed.",
   "plates": [
     {
-      "id": "01_open",
+      "id": "P1:01",
+      "beat_kind": "visual",
+      "shot_description": "warm golden-lit 3D cartoon workshop cutaway: a modern wall socket glows with a crisp pulsing blue-gold alternating wave, snapping back to a Victorian iron-and-copper transformer lifting a thin gleaming wire across a glowing city skyline (ANSWER IMAGE by 0:05; TITLE QUESTION ends ~0:05.2 nominal)",
+      "source_kind": "flow_omni_1_2_flash",
+      "flow_model": "Omni 1.2 Flash (720p, 8s, silent/audio-stripped, --allow-omni)",
+      "generation_authorized": false,
       "explorer": false,
-      "i2v": false,
-      "side_label": null,
-      "vo_land": "<Sentence one: the surprising truth about a familiar thing.>",
-      "prompt": "Animistry premium 3D cartoon. <The named thing, already moving, at frame 0.> Continuous slow push. Silent. No Explorer. No Orbit. No readable text. HARD REJECT: photoreal, Ken Burns only."
+      "flow_credits_try1_standard": 24,
+      "flow_credits_try1_lower_priority": 24,
+      "prompt": "Premium 3D cartoon in HOS warm period palette. warm golden-lit 3D cartoon workshop cutaway: a modern wall socket glows with a crisp pulsing blue-gold alternating wave, snapping back to a Victorian iron-and-copper transformer lifting a thin gleaming wire across a glowing city skyline (ANSWER IMAGE by 0:05; TITLE QUESTION ends ~0:05.2 nominal) Stable warm light, zero flicker, zero lava drip or molten bead. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "teach_overlays": {
+        "label": [
+          "WHY AC WON"
+        ]
+      },
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
     },
     {
-      "id": "02_set",
+      "id": "P1:02",
+      "beat_kind": "visual",
+      "shot_description": "3D cartoon street cutaway of an 1882 Manhattan trench: workmen lower heavy underground copper conductors beside dimming warm street lamps while a thin overhead AC wire hums cleanly past a bronze transformer box (CORE ANSWER & PROMISE land ~0:12.8 nominal, inside 0:15)",
+      "source_kind": "flow_omni_1_2_flash",
+      "flow_model": "Omni 1.2 Flash (720p, 8s, silent/audio-stripped, --allow-omni)",
+      "generation_authorized": false,
       "explorer": false,
-      "i2v": true,
-      "side_label": "<Person, place or year>",
-      "vo_land": "<The line that names the person or place.>",
-      "prompt": "Animistry premium 3D cartoon. Same <place> <year> set. <What the line says, happening on screen.> Silent. No readable text."
+      "flow_credits_try1_standard": 24,
+      "flow_credits_try1_lower_priority": 24,
+      "prompt": "Premium 3D cartoon in HOS warm period palette. 3D cartoon street cutaway of an 1882 Manhattan trench: workmen lower heavy underground copper conductors beside dimming warm street lamps while a thin overhead AC wire hums cleanly past a bronze transformer box (CORE ANSWER & PROMISE land ~0:12.8 nominal, inside 0:15) Stable warm light, zero flicker, zero lava drip or molten bead. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "teach_overlays": {
+        "label": [
+          "HEAT IN WIRES"
+        ]
+      },
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P1:03",
+      "beat_kind": "visual",
+      "shot_description": "3D cartoon dramatic contrast: glowing 1882 carbon bulbs over an expensive trench of copper feeders, cutting to George Westinghouse and Nikola Tesla beside a gleaming brass spinning coil (STAKES land ~0:22.4 nominal, inside 0:25)",
+      "source_kind": "flow_omni_1_2_flash",
+      "flow_model": "Omni 1.2 Flash (720p, 8s, silent/audio-stripped, --allow-omni)",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 24,
+      "flow_credits_try1_lower_priority": 24,
+      "prompt": "Premium 3D cartoon in HOS warm period palette. 3D cartoon dramatic contrast: glowing 1882 carbon bulbs over an expensive trench of copper feeders, cutting to a moustachioed 1880s American industrialist and a tall lean moustachioed 1880s electrical engineer beside a gleaming brass spinning coil (STAKES land ~0:22.4 nominal, inside 0:25) Stable warm light, zero flicker, zero lava drip or molten bead. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "teach_overlays": {
+        "label": [
+          "WAR OF CURRENTS"
+        ]
+      },
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P1:04",
+      "beat_kind": "visual",
+      "shot_description": "3D cartoon 1882 Lower Manhattan brick powerhouse at 257 Pearl Street: six giant iron dynamos driven by coal-fired steam engines spin with clean warm sparks as golden light blooms across office and shop windows (FIRST REAL FACT lands ~0:36.0 nominal, before 0:45; sequential card 1)",
+      "source_kind": "flow_omni_1_2_flash",
+      "flow_model": "Omni 1.2 Flash (720p, 8s, silent/audio-stripped, --allow-omni)",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 24,
+      "flow_credits_try1_lower_priority": 24,
+      "prompt": "Premium 3D cartoon in HOS warm period palette. 3D cartoon 1882 Lower Manhattan brick powerhouse at 257 Pearl Street: six giant iron dynamos driven by coal-fired steam engines spin with clean warm sparks as golden light blooms across office and shop windows (FIRST REAL FACT lands ~0:36.0 nominal, before 0:45; sequential card 1) Stable warm light, zero flicker, zero lava drip or molten bead. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "teach_overlays": {
+        "when": [
+          "New York, 4 September 1882"
+        ]
+      },
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P1:05",
+      "beat_kind": "visual",
+      "shot_description": "3D cartoon archival portrait parallax of Thomas Edison (credited archive engraving over warm moving powerhouse plate, sequential card 2, 3–4 s)",
+      "source_kind": "archive_parallax",
+      "flow_model": "archive-composite-ffmpeg",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 0,
+      "flow_credits_try1_lower_priority": 0,
+      "prompt": "",
+      "teach_overlays": {
+        "who": [
+          "Thomas Edison (1847–1931) — inventor & station founder"
+        ]
+      },
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P1:06",
+      "beat_kind": "visual",
+      "shot_description": "3D cartoon cutaway of Pearl Street's glowing Wall Street windows (moving plate between cards, sequential card 3)",
+      "source_kind": "flow_omni_1_2_flash",
+      "flow_model": "Omni 1.2 Flash (720p, 8s, silent/audio-stripped, --allow-omni)",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 24,
+      "flow_credits_try1_lower_priority": 24,
+      "prompt": "Premium 3D cartoon in HOS warm period palette. 3D cartoon cutaway of Pearl Street's glowing Wall Street windows (moving plate between cards, sequential card 3) Stable warm light, zero flicker, zero lava drip or molten bead. No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "teach_overlays": {
+        "fact": [
+          "400 lamps, day one"
+        ]
+      },
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P1:07",
+      "beat_kind": "visual",
+      "shot_description": "cream-on-brown inked launch meter drawing on over a moving Lower Manhattan street map (sequential card 4; one card at a time)",
+      "source_kind": "code_graphic",
+      "flow_model": "code-graphic-ffmpeg",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 0,
+      "flow_credits_try1_lower_priority": 0,
+      "prompt": "",
+      "teach_overlays": {
+        "data": [
+          "Pearl Street launch — 110 V DC, ~400 lamps, ~85 customers, 0.25 sq mi district"
+        ],
+        "scale": [
+          "barely a ten-minute walk across"
+        ]
+      },
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
+    },
+    {
+      "id": "P1:08",
+      "beat_kind": "visual",
+      "shot_description": "3D cartoon workmen in 1882 caps lower twin half-moon copper conductors into a Manhattan conduit while an inked copper-cost balance tilts sharply downwards",
+      "source_kind": "flow_veo_3_1_lite",
+      "flow_model": "Veo 3.1 - Lite (5 cr standard / 0 cr Lower Priority on Ultra 20x)",
+      "generation_authorized": false,
+      "explorer": false,
+      "flow_credits_try1_standard": 5,
+      "flow_credits_try1_lower_priority": 0,
+      "prompt": "Premium 3D cartoon in HOS warm period palette. 3D cartoon workmen in 1882 caps lower twin half-moon copper conductors into a Manhattan conduit while an inked copper-cost balance tilts sharply downwards No readable words or numbers anywhere. Silent. Continuous motion through the final frame. No Explorer. No Orbit.",
+      "teach_overlays": {
+        "label": [
+          "COSTLY COPPER"
+        ]
+      },
+      "vo_retime_status": "PRE_VO_ESTIMATE_SNAP_ON_VO_LOCK"
     }
   ]
 }
