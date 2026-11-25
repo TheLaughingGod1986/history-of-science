@@ -1,0 +1,45 @@
+{
+  "film": "131",
+  "title": "What Is the Theory of Relativity? (1919 Eclipse)",
+  "summary": "Rule-E topic go/no-go review GO (96.5/100 · 9.65/10 Opportunity Score, J3351, 2026-11-22) — pre-cleared in jobs/WIP.json next_hos under Rule G (4/4 active HOS slots full: 008, 009, 010, 013). J3224 Cluster 2 #5 sequel to 009 Newton's Gravity (theory of relativity 29.5k/mo +84.4%, albert einstein documentary comp 38 +88.7%, 9/10 US SERP gap). neighbours.py PASS (7 raw / 5 strictly on-topic edu videos >=1M incl. Veritasium 8.55M, TED-Ed 5.92M & 2.73M, minutephysics 1.86M, CrashCourse 1.45M); public_search.py 11 queries / 77 rows, autocomplete yes on 3 phrases + related 1919 eclipse, 0 exact/near collisions across Titles A/B/C and Shorts S01/S02 (J3351 replaced S02 near-collision with 'How Does Einstein's Relativity Keep GPS Accurate?' 49c and fixed Thumb C §2.5 repeat to 'CURVED SPACE'). All claims UNVERIFIED pending open WIP slot, SOURCES.md verbatim quotes, and facts lane.",
+  "stages": {
+    "topic": {
+      "state": "todo"
+    },
+    "script": {
+      "state": "todo"
+    },
+    "facts": {
+      "state": "todo"
+    },
+    "package": {
+      "state": "todo"
+    },
+    "vo": {
+      "state": "todo"
+    },
+    "shorts_scripts": {
+      "state": "todo"
+    },
+    "shorts_vo": {
+      "state": "todo"
+    },
+    "picture": {
+      "state": "todo"
+    },
+    "edit": {
+      "state": "todo"
+    },
+    "thumbnails": {
+      "state": "todo"
+    },
+    "ben_ok": {
+      "state": "todo"
+    },
+    "scheduled": {
+      "state": "todo"
+    }
+  },
+  "claims": [],
+  "next": ""
+}
