@@ -1,0 +1,133 @@
+{
+  "at": "2026-11-24T19:02:48.814Z",
+  "channel": {
+    "id": "UCXp7HkBIl1LgaznXuZHJyRg",
+    "title": "History of Science"
+  },
+  "video": {
+    "kind": "youtube#video",
+    "etag": "r6ffevpho0a01Atg3goo_iES0Kk",
+    "id": "sMPlMuxK3YU",
+    "snippet": {
+      "publishedAt": "2026-11-24T19:02:06Z",
+      "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+      "title": "Are Birds Really Dinosaurs?",
+      "description": "Every bird you have ever seen is a living dinosaur.\n\nNot all the dinosaurs died. When the asteroid struck sixty-six million years ago, a few small feathered ones survived. Their descendants are all around you now: the pigeon on the pavement, the robin in the garden, the gull at the seaside. Every bird you have ever seen is a living dinosaur. Look up. They never really left\n\nPictures: AI-generated 3D scenes. Facts: claims checked against the film\u2019s sources.",
+      "thumbnails": {
+        "default": {
+          "url": "https://i9.ytimg.com/vi/sMPlMuxK3YU/default.jpg?sqp=CLC9l9gG&rs=AOn4CLAlhX33rLQWRg7ahj3XN63CZn3OKQ",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i9.ytimg.com/vi/sMPlMuxK3YU/mqdefault.jpg?sqp=CLC9l9gG&rs=AOn4CLCc6IesWkChFoZX78kj8Ir97InOOQ",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i9.ytimg.com/vi/sMPlMuxK3YU/hqdefault.jpg?sqp=CLC9l9gG&rs=AOn4CLC3GhOR3XkOO_7qkhgj246_MQbUkQ",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i9.ytimg.com/vi/sMPlMuxK3YU/sddefault.jpg?sqp=CLC9l9gG&rs=AOn4CLD5stwG8m_nTf9BRoRKvdJWySKEAw",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i9.ytimg.com/vi/sMPlMuxK3YU/maxresdefault.jpg?sqp=CLC9l9gG&rs=AOn4CLAoiNoeFkRR2Uiib1dA2G_waf1p1w",
+          "width": 1280,
+          "height": 720
+        },
+        "qhd": {
+          "url": "https://i9.ytimg.com/vi/sMPlMuxK3YU/qhddefault.jpg?sqp=CLC9l9gG&rs=AOn4CLBrsTRGu7I0aomUOBEr55ecYYideA",
+          "width": 2560,
+          "height": 1440
+        }
+      },
+      "tags": [
+        "asteroid",
+        "bird evolution",
+        "birds",
+        "dinosaur extinction",
+        "dinosaurs",
+        "living dinosaurs"
+      ],
+      "categoryId": "27",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "en-GB",
+      "localized": {
+        "title": "Are Birds Really Dinosaurs?",
+        "description": "Every bird you have ever seen is a living dinosaur.\n\nNot all the dinosaurs died. When the asteroid struck sixty-six million years ago, a few small feathered ones survived. Their descendants are all around you now: the pigeon on the pavement, the robin in the garden, the gull at the seaside. Every bird you have ever seen is a living dinosaur. Look up. They never really left\n\nPictures: AI-generated 3D scenes. Facts: claims checked against the film\u2019s sources."
+      },
+      "defaultAudioLanguage": "en-GB"
+    },
+    "contentDetails": {
+      "duration": "PT24S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular",
+      "hasCustomThumbnail": true
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "private",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false
+    },
+    "processingDetails": {
+      "processingStatus": "succeeded",
+      "fileDetailsAvailability": "available",
+      "processingIssuesAvailability": "available",
+      "tagSuggestionsAvailability": "inProgress",
+      "editorSuggestionsAvailability": "inProgress",
+      "thumbnailsAvailability": "inProgress"
+    }
+  },
+  "captions": [
+    {
+      "kind": "youtube#caption",
+      "etag": "6x5QRVqrOLK6Ln62WKvUNCatZF8",
+      "id": "AUieDaa6Dbo8OyUP_VSfjYuuiApM3l1-ALF-im-0zmM2K-KMySJCPvWhqAi8p6SDPsrSvNlUBCGtD7R4mpo",
+      "snippet": {
+        "videoId": "sMPlMuxK3YU",
+        "lastUpdated": "2026-11-24T19:02:48.407756Z",
+        "trackKind": "standard",
+        "language": "en-GB",
+        "name": "English (United Kingdom)",
+        "audioTrackType": "unknown",
+        "isCC": false,
+        "isLarge": false,
+        "isEasyReader": false,
+        "isDraft": false,
+        "isAutoSynced": false,
+        "status": "serving"
+      }
+    },
+    {
+      "kind": "youtube#caption",
+      "etag": "7VFW6-sNCieccglAmAIKvauaG74",
+      "id": "AUieDaYbffJ4iM0NrAhkn3gxLk1IQlEC5KACP7y8zN5HyMU3-xc",
+      "snippet": {
+        "videoId": "sMPlMuxK3YU",
+        "lastUpdated": "2026-11-24T19:02:39.272421Z",
+        "trackKind": "asr",
+        "language": "en",
+        "name": "",
+        "audioTrackType": "unknown",
+        "isCC": false,
+        "isLarge": false,
+        "isEasyReader": false,
+        "isDraft": false,
+        "isAutoSynced": false,
+        "status": "serving"
+      }
+    }
+  ]
+}

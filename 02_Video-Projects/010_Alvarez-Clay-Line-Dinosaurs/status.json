@@ -61,7 +61,7 @@
       "state": "doing",
       "due": "2026-11-26",
       "owner": "Claude",
-      "note": "J2172 DONE (£0, gemini): assembled Short A v01 (23.3 s, ea29e264) & Short C v01 (23.6 s, 698db627) at 936x1664 from locked 12/12 KEEP plates + £0 9:16 code graphics; all 6 ship gates exit 0 on both cuts; NAS + HOS UAT copies verified. Queued non-producer review; Long Parts 01-05 edit still pending picture.",
+      "note": "J2172 DONE (\u00a30, gemini): assembled Short A v01 (23.3 s, ea29e264) & Short C v01 (23.6 s, 698db627) at 936x1664 from locked 12/12 KEEP plates + \u00a30 9:16 code graphics; all 6 ship gates exit 0 on both cuts; NAS + HOS UAT copies verified. Queued non-producer review; Long Parts 01-05 edit still pending picture.",
       "steps": [
         2,
         3
@@ -83,7 +83,9 @@
     },
     "scheduled": {
       "state": "todo",
-      "due": "2026-11-30"
+      "due": "2026-11-30",
+      "note": "J3511: approved Short C v01 privately uploaded as sMPlMuxK3YU; no publishAt. en-GB captions serving; STILL HERE robin cover read back. J3610 schedules only after actual long id/date and sets Related. Long remains unfinished.",
+      "waiting": "J3610: actual long upload id and confirmed air date; never Short before long Public"
     }
   },
   "claims": [],

@@ -1,0 +1,32 @@
+{
+  "format": "shorts",
+  "title": "Are Birds Really Dinosaurs?",
+  "video": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/10_Shorts/J2172/short_C/hos_010_short_C_v01.mp4",
+  "privacy": "private",
+  "madeForKids": false,
+  "schedule": null,
+  "relatedVideoId": null,
+  "description": "Every bird you have ever seen is a living dinosaur.\n\nNot all the dinosaurs died. When the asteroid struck sixty-six million years ago, a few small feathered ones survived. Their descendants are all around you now: the pigeon on the pavement, the robin in the garden, the gull at the seaside. Every bird you have ever seen is a living dinosaur. Look up. They never really left\n\nPictures: AI-generated 3D scenes. Facts: claims checked against the film\u2019s sources.",
+  "tags": [
+    "birds",
+    "dinosaurs",
+    "bird evolution",
+    "asteroid",
+    "dinosaur extinction",
+    "living dinosaurs"
+  ],
+  "social": {
+    "hook": "Every bird you have ever seen is a living dinosaur.",
+    "question": "Are birds really dinosaurs?",
+    "alt": "A robin in the approved 3D cartoon scene, with STILL HERE caption."
+  },
+  "authority": "J3511 / J3505; Ben OK HOS:ASK:J2933.2 on 2026-11-16T09:33Z",
+  "sha256": "698db62789e1e6884ae15797dc51083c39bbc0ee3c0cc1ecf83f92e2e87a0359",
+  "promotesFilm": "HOS:010",
+  "captionsFile": "captions.srt",
+  "note": "Private without publishAt; long id unavailable. Related and scheduling held until actual long exists; no invented date.",
+  "thumbnail": "cover.jpg",
+  "youtubeId": "sMPlMuxK3YU",
+  "uploadedAt": "2026-11-24T19:02:13Z",
+  "followup": "J3610"
+}

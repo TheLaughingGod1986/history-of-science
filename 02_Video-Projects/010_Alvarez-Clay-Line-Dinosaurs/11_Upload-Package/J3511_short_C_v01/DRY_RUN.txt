@@ -1,0 +1,108 @@
+
+> content-ops@0.1.0 youtube:package
+> tsx --env-file=.env scripts/youtube-package-upload.ts --package /Volumes/MiniWork/scratch/J3511-resume/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/11_Upload-Package/J3511_short_C_v01 --dry-run
+
+PASS  hos_010_short_C_v01.mp4  dur=23.6s  audio=-17.2dB  motion=15.05  f0diff=2.2  cut1=1.87s  vo_onset=0.07s  tail_gap=1.10s  vo_src=/Volumes/data/studio-live/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/10_Shorts/J2172/short_C/stems/stem_vo.wav  dhash=17fd7c74301e0f5b
+   full-bleed 0.00s  fills the frame  sharp above/middle/below=None/0.304/None  detail top/centre/bottom=25.35/6.78/15.79  spread top/bottom=56.49/38.01
+   full-bleed 0.25s  fills the frame  sharp above/middle/below=None/0.306/None  detail top/centre/bottom=25.34/5.59/16.01  spread top/bottom=56.57/39.98
+   full-bleed 0.50s  fills the frame  sharp above/middle/below=None/0.295/None  detail top/centre/bottom=25.25/6.63/16.14  spread top/bottom=56.45/38.77
+   full-bleed whole Short  0/24 frames padded at one a second, 0/48 at two a second  padded stretches: none  no end card named in meta
+   warn  duration 23.60s outside 16.0–19.0s band
+   sheet /Volumes/MiniWork/scratch/hos_shorts_gate/hos_010_short_C_v01_open_sheet.jpg
+{
+  "ok": true,
+  "dryRun": true,
+  "method": "youtube_data_api_package",
+  "upload": {
+    "published": false,
+    "scheduledOnPlatform": false,
+    "scheduledFor": null,
+    "platformPostId": null,
+    "platformUrl": null,
+    "message": "Dry-run complete. YouTube upload request prepared but not sent.",
+    "responseSummary": "{\"title\":\"Are Birds Really Dinosaurs?\",\"privacyStatus\":\"private\",\"publishAt\":null,\"madeForKids\":false,\"containsSyntheticMedia\":true,\"categoryId\":\"27\",\"contentFormat\":\"shorts\"}"
+  },
+  "package": {
+    "title": "Are Birds Really Dinosaurs?",
+    "format": "shorts",
+    "privacy": "private",
+    "tagCount": 6,
+    "hasPinnedComment": false,
+    "thumbnailPath": null,
+    "scheduledAt": null,
+    "sources": {
+      "manifest": "/Volumes/MiniWork/scratch/J3511-resume/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/11_Upload-Package/J3511_short_C_v01/PACKAGE_MANIFEST.json",
+      "video": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/10_Shorts/J2172/short_C/hos_010_short_C_v01.mp4"
+    }
+  },
+  "postUpload": {
+    "firstCommentPosted": false,
+    "commentMessage": null,
+    "playlistAdded": false,
+    "playlistMessage": null
+  },
+  "studioFinish": {
+    "videoId": null,
+    "studioEditUrl": null,
+    "items": [
+      {
+        "id": "api_metadata",
+        "required": true,
+        "status": "pending_studio",
+        "title": "Title · description · tags · schedule · video",
+        "detail": "Run package upload first"
+      },
+      {
+        "id": "primary_thumbnail",
+        "required": true,
+        "status": "skipped",
+        "title": "Primary thumbnail",
+        "detail": "Upload primary thumb in Studio or re-run with --thumbnail"
+      },
+      {
+        "id": "title_thumb_abc",
+        "required": false,
+        "status": "n/a",
+        "title": "Title + thumbnail ABC (Test & Compare)",
+        "detail": "A/B Testing not available for Shorts"
+      },
+      {
+        "id": "first_comment",
+        "required": false,
+        "status": "n/a",
+        "title": "First / pinned comment text",
+        "detail": "No pinned comment file in package"
+      },
+      {
+        "id": "pin_comment",
+        "required": false,
+        "status": "n/a",
+        "title": "Pin the comment",
+        "detail": "Studio only — no official Data API pin endpoint"
+      },
+      {
+        "id": "related_watch_next",
+        "required": true,
+        "status": "pending_studio",
+        "title": "Related video (full film)",
+        "detail": "Desktop Studio: Content → Short → Related video → its own full film (once that long is public) → Save. Required. No new Short pins."
+      },
+      {
+        "id": "end_screens_cards",
+        "required": false,
+        "status": "n/a",
+        "title": "End screen + cards",
+        "detail": "Studio only — subscribe + best next video"
+      },
+      {
+        "id": "playlist",
+        "required": false,
+        "status": "n/a",
+        "title": "Add to playlist",
+        "detail": "No playlistId in manifest"
+      }
+    ],
+    "summary": "Package resolved; upload not run yet."
+  }
+}
+Wrote /Volumes/MiniWork/scratch/J3511-resume/02_Video-Projects/010_Alvarez-Clay-Line-Dinosaurs/11_Upload-Package/J3511_short_C_v01/PACKAGE_UPLOAD_RESULT_2026-11-24T19-01-31-650Z.json
