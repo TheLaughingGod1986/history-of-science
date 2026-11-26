@@ -328,3 +328,31 @@ PASS  02_Video-Projects/009_The-Falling-Moon-Gravity/11_Upload-Package/PACKAGE_M
 -- gate:episode: PASS
 ALL CHECKS PASS
 ```
+
+
+---
+
+## 26 Nov 2026 — J3501 Pre-public Studio finish & read-back (Gemini specialist worker, CDP 9460, £0)
+
+- **Pre-change package lint:** `npm run lint:package -- --film 009` — **PASS** (`PACKAGE_MANIFEST.json`, `SHORTS_RELEASE.json`, 0 errors).
+- **Existing uploads & schedules preserved (no re-upload, no reschedule):**
+  - Long `v03`: **`wiyfRnsTfTY`** (Private, scheduled Thu 3 Dec 2026 18:00 UK/UTC)
+  - Short A `v01`: **`OhdDVA9kWBk`** (Private, scheduled Fri 4 Dec 2026 11:30 UK/UTC)
+  - Short B `v01`: **`9ETHUOUH5-A`** (Private, scheduled Sat 5 Dec 2026 11:30 UK/UTC)
+- **Long `wiyfRnsTfTY` Studio finish (CDP 9460, `@HistoryOfScienceYT` / `UCXp7HkBIl1LgaznXuZHJyRg`):**
+  - **End screen saved:** `Playlist: How Did We Discover…? Atoms, the Periodic Table, Germs and X-Rays | History of Science` (`PLEbpfUzWzcXU`) + `Subscribe: History of Science`, exact final 20 seconds **`8:18:28`–`8:38:28`** (Studio frame boundary `8:38:28`), zero overlap, verified on reload.
+  - **2-way Title + Thumbnail Test & Compare armed & saved (no prior test set):** Arm 1 = *How Isaac Newton Proved Gravity Using the Moon* + `hos_009_thumb_A_it_misses_v01.jpg` (`IT MISSES`, `cd44f056…`); Arm 2 = *Why Doesn't the Moon Fall to Earth?* + `hos_009_thumb_B_one_apple_v01.jpg` (`ONE APPLE`, `3d116433…`). Reload read-back confirms `A/B testing titles: Ineligible` until Public (`Save` disabled). Recorded as **`T045`** in OWB PR #1350 (`05_Analytics/tests/THUMB_LEDGER.json`).
+  - **Two Info cards saved (both past 1:00):** Playlist `PLEbpfUzWzcXU` at **`2:39:18`**; Video `YqCWYlv_LCY` (*Benjamin Franklin's Kite Experiment Explained*, Public) at **`4:26:13`**.
+  - **Visual disclosure & settings read-back (after final save):** `No, it's not Made for Kids`, `Altered content: Yes`, `Paid promotion: No`, `Allow automatic places: Off`, `Category: Education` (`Type: Concept overview`, `Academic system: England`), `Video language / Title & description language: English (United Kingdom)`, Playlist `PLEbpfUzWzcXU`, `Visibility: Scheduled`.
+- **Shorts `OhdDVA9kWBk` & `9ETHUOUH5-A` Studio finish (CDP 9460):**
+  - **Covers fixed & verified on reload:** replaced auto-generated mid-frames (`sd2.jpg`) with exact 9:16 Frame-0 covers — `IT'S FALLING` on `OhdDVA9kWBk` (`sddefault.jpg?v=6b08a0f7`) and `1 MINUTE = 1 SECOND` on `9ETHUOUH5-A` (`sddefault.jpg?v=6b08a10a`).
+  - **Visual read-back on both:** `No, it's not Made for Kids`, `Altered content: Yes`, `Paid promotion: No`, `Allow automatic places: Off`, `Education / Concept overview / England`, `Visibility: Scheduled`, `Related video: None` (pending `wiyfRnsTfTY` going Public on Thu 3 Dec 2026 18:00 UK).
+- **Post-Studio channel audit (`npm run channel:audit -- --write-live`):**
+```text
+PASS  long  YqCWYlv_LCY  public  Benjamin Franklin's Kite Experiment Explained
+PASS  Short 9ETHUOUH5-A  private 2026-12-05 11:30 UK  How Did Newton Discover Gravity?
+PASS  Short OhdDVA9kWBk  private 2026-12-04 11:30 UK  What Would Happen If the Moon Stopped Moving?
+PASS  long  wiyfRnsTfTY  private 2026-12-03 18:00 UK  How Isaac Newton Proved Gravity Using the Moon
+75 videos, 0 errors.
+```
+- **Remaining post-public handoff (`J3501` wait check-at `2026-12-03T18:05:00Z`):** once `wiyfRnsTfTY` is Public, set `Related video → wiyfRnsTfTY` on `OhdDVA9kWBk` & `9ETHUOUH5-A` (before Fri 4 Dec 11:30 UK), confirm `T045` is `Running`, and post/pin the long's open question comment.
