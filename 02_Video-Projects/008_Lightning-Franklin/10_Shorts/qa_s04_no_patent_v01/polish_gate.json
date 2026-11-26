@@ -1,0 +1,184 @@
+{
+  "rule": {
+    "low_detail": "FAIL: luma std < 13.44 and edge density < 0.0259 (absolute floor); WARN: luma std < 18.0 or edge density < film p5",
+    "split_panel": "full-height/width seam or gutter",
+    "split_panel_gutter": "gutter counts only with edge density >= 0.01 in the 10% band on both sides",
+    "near_black": "mean < 28.0 or p95 < 50.0",
+    "noise": "grain std > 6 over structure std < 12, and the 8x-downscaled frame under the low-detail floor (std < 13.44 and edge density < 0.0259)",
+    "jitter": "centre-patch phase correlation: reversal against trend or > 0.35 px off trend"
+  },
+  "low_detail_floor": {
+    "std": 13.44,
+    "edge": 0.0259,
+    "calibration": {
+      "video": "025_MarsRobot_full_rough_v02d.mp4",
+      "factor": 1.2,
+      "frames": [
+        {
+          "source": "PIA22223.jpg",
+          "t": 201.0,
+          "std": 12.1,
+          "edge": 0.0223
+        },
+        {
+          "source": "PIA22223.jpg",
+          "t": 216.3,
+          "std": 11.2,
+          "edge": 0.0216
+        },
+        {
+          "source": "PIA22929.jpg",
+          "t": 297.4,
+          "std": 26.54,
+          "edge": 0.5735
+        }
+      ]
+    }
+  },
+  "video": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/008_Lightning-Franklin/10_Shorts/J3763/hos_008_s04_no_patent_v01.mp4",
+  "edge_floor": 0.0378,
+  "verdict": "PASS",
+  "failed": [],
+  "warn": [
+    {
+      "row": "s07",
+      "cut": 6,
+      "t": 15.48,
+      "source": "loop_14_safe_towers_t1.mp4",
+      "why": [
+        "low detail: edge density 0.0353 < film p5 0.0378"
+      ]
+    }
+  ],
+  "reviewed_ok": [],
+  "rows": [
+    {
+      "cut": 0,
+      "row": "s01",
+      "source": "14_safe_towers_t1.mp4",
+      "t": 1.18,
+      "std": 52.94,
+      "mean": 126.75,
+      "p95": 232.0,
+      "edge": 0.0792,
+      "hf": 14.93,
+      "lf": 44.42,
+      "std8": 46.88,
+      "edge8": 0.2717,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 1,
+      "row": "s02",
+      "source": "12_no_patent_t1.mp4",
+      "t": 3.83,
+      "std": 38.28,
+      "mean": 68.5,
+      "p95": 145.0,
+      "edge": 0.0516,
+      "hf": 10.53,
+      "lf": 30.93,
+      "std8": 33.58,
+      "edge8": 0.2376,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 2,
+      "row": "s03",
+      "source": "06_rod_fitting_t1.mp4",
+      "t": 6.5,
+      "std": 56.52,
+      "mean": 112.63,
+      "p95": 193.0,
+      "edge": 0.2304,
+      "hf": 16.53,
+      "lf": 48.77,
+      "std8": 51.15,
+      "edge8": 0.3778,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 3,
+      "row": "s04",
+      "source": "13_rods_spread_j2241_t2.mp4",
+      "t": 9.15,
+      "std": 76.08,
+      "mean": 151.7,
+      "p95": 239.0,
+      "edge": 0.0902,
+      "hf": 12.54,
+      "lf": 71.89,
+      "std8": 73.68,
+      "edge8": 0.2574,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 4,
+      "row": "s05",
+      "source": "21_roofs_golden_t1.mp4",
+      "t": 12.08,
+      "std": 58.65,
+      "mean": 111.38,
+      "p95": 214.0,
+      "edge": 0.1114,
+      "hf": 12.68,
+      "lf": 52.39,
+      "std8": 54.44,
+      "edge8": 0.3471,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 5,
+      "row": "s06",
+      "source": "18_rod_closeup_t1.mp4",
+      "t": 14.22,
+      "std": 39.06,
+      "mean": 123.1,
+      "p95": 177.0,
+      "edge": 0.0435,
+      "hf": 6.29,
+      "lf": 34.93,
+      "std8": 36.85,
+      "edge8": 0.24,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 6,
+      "row": "s07",
+      "source": "loop_14_safe_towers_t1.mp4",
+      "t": 15.48,
+      "std": 55.13,
+      "mean": 132.98,
+      "p95": 234.0,
+      "edge": 0.0353,
+      "hf": 6.04,
+      "lf": 53.75,
+      "std8": 54.08,
+      "edge8": 0.1753,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0353 < film p5 0.0378"
+      ]
+    }
+  ]
+}
