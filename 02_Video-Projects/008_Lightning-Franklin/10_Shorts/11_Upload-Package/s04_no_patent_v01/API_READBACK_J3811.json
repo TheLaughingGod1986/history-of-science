@@ -1,0 +1,47 @@
+{
+  "videoId": "f_-BsKZf8X0",
+  "title": "Why Did Franklin Never Patent the Lightning Rod?",
+  "privacy": "private",
+  "publishAt": "2026-12-01T11:30:00Z",
+  "uploadStatus": "processed",
+  "language": "en-GB",
+  "audioLanguage": "en-GB",
+  "categoryId": "27",
+  "madeForKids": false,
+  "selfDeclaredMadeForKids": false,
+  "duration": "PT17S",
+  "hasCustomThumbnail": true,
+  "tagCount": 6,
+  "tags": [
+    "benjamin franklin",
+    "benjamin franklin lightning rod",
+    "history of science",
+    "lightning rod",
+    "who invented the lightning rod",
+    "why did franklin never patent the lightning rod"
+  ],
+  "descriptionFirstLine": "Full film: Benjamin Franklin's Kite Experiment Explained — https://www.youtube.com/watch?v=YqCWYlv_LCY",
+  "captions": [
+    {
+      "id": "AUieDaa8Ci86bio6xREdOun0Y4z2wYlNoUEmioAueeJfmg35XZQ",
+      "language": "en",
+      "status": "serving",
+      "isDraft": false,
+      "name": ""
+    },
+    {
+      "id": "AUieDaYimiMqvBhQESzTE-M1noNOgf61cWHK9BXtRai6y2e7ZONwzAY1n9mIbhGycZejgAXT1HyFlZFbm9Y",
+      "language": "en-GB",
+      "status": "serving",
+      "isDraft": false,
+      "name": "English (United Kingdom)"
+    }
+  ],
+  "studioVerifiedCdp9460": {
+    "relatedVideo": "Benjamin Franklin's Kite Experiment Explained (YqCWYlv_LCY)",
+    "visibility": "Scheduled (2026-12-01T11:30:00Z)",
+    "notMadeForKids": true,
+    "alteredContentYes": true,
+    "persistedAfterReload": true
+  }
+}
