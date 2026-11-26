@@ -1,0 +1,76 @@
+[
+  {
+    "id": "wiyfRnsTfTY",
+    "ok": true,
+    "dryRun": false,
+    "method": "youtube_data_api_package",
+    "upload": {
+      "published": true,
+      "scheduledOnPlatform": true,
+      "scheduledFor": "2026-12-03T18:00:00.000Z",
+      "platformPostId": "wiyfRnsTfTY",
+      "platformUrl": "https://youtu.be/wiyfRnsTfTY",
+      "message": "Uploaded to YouTube; scheduled to go live at 2026-12-03T18:00:00.000Z; thumbnail set",
+      "responseSummary": "{\"id\":\"wiyfRnsTfTY\",\"privacyStatus\":\"private\",\"publishAt\":\"2026-12-03T18:00:00.000Z\"}"
+    },
+    "postUpload": {
+      "firstCommentPosted": false,
+      "commentMessage": null,
+      "playlistAdded": true,
+      "playlistMessage": "added to playlist"
+    },
+    "buffer": null
+  },
+  {
+    "id": "OhdDVA9kWBk",
+    "ok": true,
+    "dryRun": false,
+    "method": "youtube_data_api_package",
+    "upload": {
+      "published": true,
+      "scheduledOnPlatform": true,
+      "scheduledFor": "2026-12-04T11:30:00.000Z",
+      "platformPostId": "OhdDVA9kWBk",
+      "platformUrl": "https://youtu.be/OhdDVA9kWBk",
+      "message": "Uploaded to YouTube; scheduled to go live at 2026-12-04T11:30:00.000Z; thumbnail set",
+      "responseSummary": "{\"id\":\"OhdDVA9kWBk\",\"privacyStatus\":\"private\",\"publishAt\":\"2026-12-04T11:30:00.000Z\"}"
+    },
+    "postUpload": {
+      "firstCommentPosted": false,
+      "commentMessage": null,
+      "playlistAdded": false,
+      "playlistMessage": null
+    },
+    "buffer": {
+      "registered": true,
+      "sha256": "43dbeb3ae42ed682814af56cec2bde0a3626a758c949174145af2db243278332",
+      "deferred": "Daily HOS Buffer mirror inside its scheduling window"
+    }
+  },
+  {
+    "id": "9ETHUOUH5-A",
+    "ok": true,
+    "dryRun": false,
+    "method": "youtube_data_api_package",
+    "upload": {
+      "published": true,
+      "scheduledOnPlatform": true,
+      "scheduledFor": "2026-12-05T11:30:00.000Z",
+      "platformPostId": "9ETHUOUH5-A",
+      "platformUrl": "https://youtu.be/9ETHUOUH5-A",
+      "message": "Uploaded to YouTube; scheduled to go live at 2026-12-05T11:30:00.000Z; thumbnail set",
+      "responseSummary": "{\"id\":\"9ETHUOUH5-A\",\"privacyStatus\":\"private\",\"publishAt\":\"2026-12-05T11:30:00.000Z\"}"
+    },
+    "postUpload": {
+      "firstCommentPosted": false,
+      "commentMessage": null,
+      "playlistAdded": false,
+      "playlistMessage": null
+    },
+    "buffer": {
+      "registered": true,
+      "sha256": "e6e5ae3ff3be4856cc0a45af78f17f6b410974784a67fd3e6bba8222bc48037a",
+      "deferred": "Daily HOS Buffer mirror inside its scheduling window"
+    }
+  }
+]

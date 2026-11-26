@@ -1,0 +1,31 @@
+{
+  "format": "shorts",
+  "channel": "@HistoryOfScienceYT",
+  "title": "What Would Happen If the Moon Stopped Moving?",
+  "description": "Without sideways motion, the Moon would fall towards Earth. Its orbital speed keeps it falling around our planet.\n\nPictures: AI-generated 3D scenes. Facts: every claim is checked against the sources for the full film.\n\nFull film: How Isaac Newton Proved Gravity Using the Moon\nhttps://www.youtube.com/watch?v=wiyfRnsTfTY\n",
+  "tags": [
+    "isaac newton",
+    "gravity",
+    "moon orbit",
+    "newton gravity",
+    "history of science"
+  ],
+  "privacy": "private",
+  "madeForKids": false,
+  "alteredContent": true,
+  "language": "en-GB",
+  "categoryId": "27",
+  "video": "../../J2171/short_A/hos_009_short_A_v01.mp4",
+  "videoSha256": "43dbeb3ae42ed682814af56cec2bde0a3626a758c949174145af2db243278332",
+  "thumbnail": "cover.jpg",
+  "schedule": "2026-12-04T11:30:00Z",
+  "social": {
+    "hook": "Without sideways motion, the Moon would fall towards Earth. Its orbital speed keeps it falling around our planet.",
+    "question": "What Would Happen If the Moon Stopped Moving?",
+    "alt": "Moon falling around Earth in the premium 3D cartoon house style."
+  },
+  "note": "J3501: Ben approved both J3311 Shorts v01 at 2026-11-23T09:57Z. Existing approved older cuts retained.",
+  "relatedVideoId": "wiyfRnsTfTY",
+  "youtubeId": "OhdDVA9kWBk",
+  "captionsFile": "Captions/hos_009_short_A_v01.en-GB.srt"
+}

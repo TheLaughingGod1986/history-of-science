@@ -1,7 +1,7 @@
 {
   "format": "longform",
-  "video": null,
-  "youtubeId": null,
+  "video": "../09_Assembly/j2035_v03/hos009_long_master_v03.mp4",
+  "youtubeId": "wiyfRnsTfTY",
   "title": "How Isaac Newton Proved Gravity Using the Moon",
   "titleVariant": "A",
   "descriptionFile": "Descriptions/moon_long_description_v01.txt",
@@ -29,7 +29,7 @@
   "affiliate": null,
   "channel": "@HistoryOfScienceYT",
   "premiere": false,
-  "note": "J3501 package prepared 24 Nov 2026 (£0, no YouTube changes). Search-led primary title 'How Isaac Newton Proved Gravity Using the Moon' (46 chars, hits all 3 neighbour phrases + US 10/10 gap on 'isaac newton gravity', clear of Short B 'How Did Newton Discover Gravity?') paired as Title T&C Side A with existing 'Why Doesn't the Moon Fall to Earth?' as Side B, alongside J3262 Chief-PASS thumbnails A (IT MISSES, cd44f056...) and B (ONE APPLE, 3d116433...). Exact v03 chapters (0:00, 1:24, 2:56, 4:20, 6:33) + 8 Sources + honest making-of line + en-GB captions (Captions/hos_009_master_v03.en.srt from VO_RETIME_v01/SOURCE_MAP v03). Master v03 verified on NAS: 09_Assembly/j2035_v03/hos009_long_master_v03.mp4 (sha256 744f32b7f2f95e75fabf039a345aee6c7c01ab6f304a932ebe7172bd3b3ede55, 519.000 s). Series playlist PLEbpfUzWzcXU (How Did We Discover...?) + End screen to PLEbpfUzWzcXU and Subscribe. Target air Thu 3 Dec 2026 18:00 London = 18:00 UTC (GMT), normal publish, Private until then — STRICTLY HELD pending Ben's watch OK on HOS:009 (J2037); no OK by Thu 3 Dec 12:00 London means no schedule and Ben is told.",
+  "note": "J3501 package prepared 24 Nov 2026 (£0, no YouTube changes). Search-led primary title 'How Isaac Newton Proved Gravity Using the Moon' (46 chars, hits all 3 neighbour phrases + US 10/10 gap on 'isaac newton gravity', clear of Short B 'How Did Newton Discover Gravity?') paired as Title T&C Side A with existing 'Why Doesn't the Moon Fall to Earth?' as Side B, alongside J3262 Chief-PASS thumbnails A (IT MISSES, cd44f056...) and B (ONE APPLE, 3d116433...). Exact v03 chapters (0:00, 1:24, 2:56, 4:20, 6:33) + 8 Sources + honest making-of line + en-GB captions (Captions/hos_009_master_v03.en.srt from VO_RETIME_v01/SOURCE_MAP v03). Master v03 verified on NAS: 09_Assembly/j2035_v03/hos009_long_master_v03.mp4 (sha256 744f32b7f2f95e75fabf039a345aee6c7c01ab6f304a932ebe7172bd3b3ede55, 519.000 s). Series playlist PLEbpfUzWzcXU (How Did We Discover...?) + End screen to PLEbpfUzWzcXU and Subscribe. Target air Thu 3 Dec 2026 18:00 London = 18:00 UTC (GMT), normal publish, Private until then — STRICTLY HELD pending Ben's watch OK on HOS:009 (J2037); no OK by Thu 3 Dec 12:00 London means no schedule and Ben is told. J3501 approval reconciled: Ben approved J2037 long v03 at 2026-11-24T08:42Z; both J3311 Shorts at 2026-11-23T09:57Z. Upload and schedule expressly authorized by Claude update in J3501.",
   "neighbours": {
     "phrases": [
       "gravity",
