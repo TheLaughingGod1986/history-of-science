@@ -1,0 +1,109 @@
+{
+  "ok": true,
+  "dryRun": false,
+  "method": "youtube_data_api_package",
+  "upload": {
+    "published": true,
+    "scheduledOnPlatform": true,
+    "scheduledFor": "2026-12-01T11:30:00.000Z",
+    "platformPostId": "f_-BsKZf8X0",
+    "platformUrl": "https://youtu.be/f_-BsKZf8X0",
+    "message": "Uploaded to YouTube; scheduled to go live at 2026-12-01T11:30:00.000Z; thumbnail set",
+    "responseSummary": "{\"id\":\"f_-BsKZf8X0\",\"privacyStatus\":\"private\",\"publishAt\":\"2026-12-01T11:30:00.000Z\"}"
+  },
+  "package": {
+    "title": "Why Did Franklin Never Patent the Lightning Rod?",
+    "format": "shorts",
+    "privacy": "private",
+    "tagCount": 6,
+    "hasPinnedComment": false,
+    "thumbnailPath": "/tmp/j3811-hos/02_Video-Projects/008_Lightning-Franklin/10_Shorts/11_Upload-Package/s04_no_patent_v01/cover.jpg",
+    "scheduledAt": "2026-12-01T11:30:00.000Z",
+    "sources": {
+      "manifest": "/tmp/j3811-hos/02_Video-Projects/008_Lightning-Franklin/10_Shorts/11_Upload-Package/s04_no_patent_v01/PACKAGE_MANIFEST.json",
+      "video": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/008_Lightning-Franklin/10_Shorts/J3763/hos_008_s04_no_patent_v01.mp4",
+      "thumbnail": "/tmp/j3811-hos/02_Video-Projects/008_Lightning-Franklin/10_Shorts/11_Upload-Package/s04_no_patent_v01/cover.jpg"
+    }
+  },
+  "postUpload": {
+    "firstCommentPosted": false,
+    "commentMessage": null,
+    "playlistAdded": false,
+    "playlistMessage": null
+  },
+  "buffer": {
+    "registered": true,
+    "uploadsFile": "/tmp/j3811-owb/00_Brand/Channel-Setup/social/hos/UPLOADS.json",
+    "sha256": "e162a0fbe05e519ae822aededabf62172396594d4f564081d539db724f03809c",
+    "deferred": "registered for daily check --channel hos (no post from upload hook)"
+  },
+  "studioFinish": {
+    "videoId": "f_-BsKZf8X0",
+    "studioEditUrl": "https://studio.youtube.com/video/f_-BsKZf8X0/edit",
+    "items": [
+      {
+        "id": "api_metadata",
+        "required": true,
+        "status": "api_done",
+        "title": "Title · description · tags · schedule · video",
+        "detail": "Uploaded via YouTube Data API"
+      },
+      {
+        "id": "primary_thumbnail",
+        "required": true,
+        "status": "api_done",
+        "title": "Primary thumbnail",
+        "detail": "Set via thumbnails.set",
+        "studioUrlHint": "https://studio.youtube.com/video/f_-BsKZf8X0/edit"
+      },
+      {
+        "id": "title_thumb_abc",
+        "required": false,
+        "status": "n/a",
+        "title": "Title + thumbnail ABC (Test & Compare)",
+        "detail": "A/B Testing not available for Shorts",
+        "studioUrlHint": "https://studio.youtube.com/video/f_-BsKZf8X0/edit"
+      },
+      {
+        "id": "first_comment",
+        "required": false,
+        "status": "n/a",
+        "title": "First / pinned comment text",
+        "detail": "No pinned comment file in package",
+        "studioUrlHint": "https://studio.youtube.com/video/f_-BsKZf8X0/comments"
+      },
+      {
+        "id": "pin_comment",
+        "required": false,
+        "status": "n/a",
+        "title": "Pin the comment",
+        "detail": "Studio only — no official Data API pin endpoint",
+        "studioUrlHint": "https://studio.youtube.com/video/f_-BsKZf8X0/comments"
+      },
+      {
+        "id": "related_watch_next",
+        "required": true,
+        "status": "pending_studio",
+        "title": "Related video (full film)",
+        "detail": "Desktop Studio: set Related video to YqCWYlv_LCY (its own full film). No new Short pins.",
+        "studioUrlHint": "https://studio.youtube.com/video/f_-BsKZf8X0/edit"
+      },
+      {
+        "id": "end_screens_cards",
+        "required": false,
+        "status": "n/a",
+        "title": "End screen + cards",
+        "detail": "Studio only — subscribe + best next video",
+        "studioUrlHint": "https://studio.youtube.com/video/f_-BsKZf8X0/edit"
+      },
+      {
+        "id": "playlist",
+        "required": false,
+        "status": "n/a",
+        "title": "Add to playlist",
+        "detail": "No playlistId in manifest"
+      }
+    ],
+    "summary": "API upload done (f_-BsKZf8X0). 1 required Studio finish step(s) remain."
+  }
+}

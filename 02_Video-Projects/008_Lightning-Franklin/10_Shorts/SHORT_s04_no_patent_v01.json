@@ -3,7 +3,7 @@
   "film": "008_Lightning-Franklin",
   "short_id": "s04_no_patent",
   "version": "v01",
-  "status": "PARKED_FOR_CHIEF_SHORT_PASS",
+  "status": "SCHEDULED_PRIVATE",
   "rule": "Test B (HOS PR #261) + Ben 19 Nov 2026 Shorts house rules (16-19 s, 3D cartoon moving frame 0, concrete-fact hook caption, seamless loop)",
   "selection_reason": "HOS 008 (Benjamin Franklin's Kite Experiment Explained, YqCWYlv_LCY) is tied for fewest built Shorts (2: Short A v04 & Short C v07) among locked HOS longs 004-009 and is first in locked-long order (airing Thu 26 Nov 18:00 UK).",
   "master_nas_path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/008_Lightning-Franklin/10_Shorts/J3763/hos_008_s04_no_patent_v01.mp4",
@@ -72,5 +72,8 @@
   },
   "spend_gbp": 0,
   "spend_credits": 0,
-  "uploaded": false
+  "uploaded": true,
+  "youtube_id": "f_-BsKZf8X0",
+  "publish_at": "2026-12-01T11:30:00Z",
+  "upload_job": "J3811"
 }
