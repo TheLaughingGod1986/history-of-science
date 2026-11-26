@@ -1,0 +1,37 @@
+{
+  "videoId": "OhdDVA9kWBk",
+  "title": "What Would Happen If the Moon Stopped Moving?",
+  "privacy": "private",
+  "publishAt": "2026-12-04T11:30:00Z",
+  "uploadStatus": "processed",
+  "language": "en-GB",
+  "audioLanguage": "en-GB",
+  "categoryId": "27",
+  "madeForKids": false,
+  "selfDeclaredMadeForKids": false,
+  "duration": "PT26S",
+  "hasCustomThumbnail": true,
+  "tagCount": 5,
+  "captionUpload": {
+    "ok": true,
+    "status": 200,
+    "id": "AUieDabCGyb4hA6CPOs7Fw19EQdyOb_kvVILbEFXZvWfKs-oN-qCZaeML6wsolfTC2idhhdcdBQ_djohkhk",
+    "error": null
+  },
+  "captions": [
+    {
+      "id": "AUieDaajx1707a9x1_xZmfIBRtjhCYWh60lrx7IIOLJVfIUlf68",
+      "language": "en",
+      "status": "serving",
+      "isDraft": false,
+      "name": ""
+    },
+    {
+      "id": "AUieDabCGyb4hA6CPOs7Fw19EQdyOb_kvVILbEFXZvWfKs-oN-qCZaeML6wsolfTC2idhhdcdBQ_djohkhk",
+      "language": "en-GB",
+      "status": "serving",
+      "isDraft": false,
+      "name": "English (United Kingdom)"
+    }
+  ]
+}

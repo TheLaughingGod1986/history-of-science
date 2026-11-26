@@ -1,7 +1,28 @@
 {
   "source": "scripts/channel-audit.ts --write-live (YouTube Data API, owner view)",
-  "pulledAt": "2026-11-24T19:51:39.070Z",
+  "pulledAt": "2026-11-26T01:42:39.042Z",
   "videos": [
+    {
+      "id": "9ETHUOUH5-A",
+      "kind": "Short",
+      "title": "How Did Newton Discover Gravity?",
+      "privacy": "private",
+      "scheduled": "2026-12-05 11:30 UK"
+    },
+    {
+      "id": "OhdDVA9kWBk",
+      "kind": "Short",
+      "title": "What Would Happen If the Moon Stopped Moving?",
+      "privacy": "private",
+      "scheduled": "2026-12-04 11:30 UK"
+    },
+    {
+      "id": "wiyfRnsTfTY",
+      "kind": "long",
+      "title": "How Isaac Newton Proved Gravity Using the Moon",
+      "privacy": "private",
+      "scheduled": "2026-12-03 18:00 UK"
+    },
     {
       "id": "4sYTV_rQcqs",
       "kind": "Short",
@@ -57,13 +78,6 @@
       "title": "Why Is It Called a Vaccine?",
       "privacy": "public",
       "scheduled": ""
-    },
-    {
-      "id": "sY0PSQFxjp8",
-      "kind": "Short",
-      "title": "What Is Variolation?",
-      "privacy": "private",
-      "scheduled": "2026-11-28 11:30 UK"
     },
     {
       "id": "xzKoHg0E0_U",

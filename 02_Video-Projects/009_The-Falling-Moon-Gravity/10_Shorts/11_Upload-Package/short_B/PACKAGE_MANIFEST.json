@@ -1,0 +1,31 @@
+{
+  "format": "shorts",
+  "channel": "@HistoryOfScienceYT",
+  "title": "How Did Newton Discover Gravity?",
+  "description": "Newton connected the falling apple with the Moon: the same gravity pulls both towards Earth.\n\nPictures: AI-generated 3D scenes. Facts: every claim is checked against the sources for the full film.\n\nFull film: How Isaac Newton Proved Gravity Using the Moon\nhttps://www.youtube.com/watch?v=wiyfRnsTfTY\n",
+  "tags": [
+    "isaac newton",
+    "gravity",
+    "moon orbit",
+    "newton gravity",
+    "history of science"
+  ],
+  "privacy": "private",
+  "madeForKids": false,
+  "alteredContent": true,
+  "language": "en-GB",
+  "categoryId": "27",
+  "video": "../../J2171/short_B/hos_009_short_B_v01.mp4",
+  "videoSha256": "e6e5ae3ff3be4856cc0a45af78f17f6b410974784a67fd3e6bba8222bc48037a",
+  "thumbnail": "cover.jpg",
+  "schedule": "2026-12-05T11:30:00Z",
+  "social": {
+    "hook": "Newton connected the falling apple with the Moon: the same gravity pulls both towards Earth.",
+    "question": "How Did Newton Discover Gravity?",
+    "alt": "Newton and an apple in the premium 3D cartoon house style."
+  },
+  "note": "J3501: Ben approved both J3311 Shorts v01 at 2026-11-23T09:57Z. Existing approved older cuts retained.",
+  "relatedVideoId": "wiyfRnsTfTY",
+  "youtubeId": "9ETHUOUH5-A",
+  "captionsFile": "Captions/hos_009_short_B_v01.en-GB.srt"
+}
