@@ -12,11 +12,34 @@
 | Episode gate | **PASS** (default `npm run gate:episode` without `--script`, `9/9` checks `OK` — VO queued in `J3678`/`J3679` after `HOS:136` promoted into active WIP in OWB PR `#1306`) |
 | Sources & Facts | **LOCKED (`J3677` Acting Chief KEEP, `2026-11-25`):** `01_Script/SOURCES.md` (`060acf45...`), `01_Script/FACT_NOTES_v02.md` (`899156a3...`), & `01_Script/GEMINI_FACTS_CHECK_v02.md` (`0dede309...`; `J3676` **0 blocking FLAGs**, `22 OK` / `1 non-blocking PARTIAL R04`; `LA-602` PDF pp. 1,2,3,10,12,15,16 visually verified; `J3677` direct live HTTP exact-quote spot checks `8/8` primary hosts `EXACT PASS`; zero unverified new spoken claims; `£0.00` spent) |
 | Shorts scripts | **LOCKED (`J3677` Acting Chief KEEP, `2026-11-25`):** `10_Shorts/SHORTS_SCRIPTS_v02.md` (`sha256: e1df5d81...`: **`S01 = 42w`** & **`S02 = 42w`** = `16.4–16.8 s` speech inside Ben 19 Nov `16.0–19.0 s` house rule; `S02` `"in silence for the blast wave"` + `2.5m SHIFT ≈ 10KT` overlay + §2.6 edit ink; titles `S01` `44c` & `S02` `58c` `0` collisions) |
-| VO | queued (**`J3678`** long 5 parts due Mon 7 Dec; **`J3679`** Shorts S01 & S02 due Tue 8 Dec — Ben Orbit Narrator on Mac mini via `el_client.py`/`vo_take.py`, `vo_check_py312.sh`; `HOS:128` `J3670`/`J3671` takes credit priority if tight) |
+| VO | long queued (**`J3678`** 5 parts parked until `2026-11-30T10:50:31Z` reset — needs `7,761` chars); **Shorts `S01` & `S02` recorded (`J3679`, 26 Nov 2026, parked for non-producer Chief VO PASS):** `hos_136_short_S01_v02_tight` (`18.70 s`, `atempo = 1.00`, `-20.1 LUFS`, awaits separate `vo_check.py` `beta`→`bethe` homophone alias PR + Chief PASS) & `hos_136_short_S02_v02_tight` (`18.74 s`, `atempo = 1.00`, `-21.8 LUFS`, `vo_check_py312.sh` **PASS** `0` diffs); 10/10 NAS WAV/MP3 SHA-256 verified (`10_Shorts/vo_v02/VO_STATUS.md`) |
 | Picture | pending (Flow Veo 3.1, plate library — starts only after Chief VO PASS) |
 | Runtime target | 7–9 min, 5 parts (`8.4` min est. at 150 wpm) |
 | Ben's watch target | Mon 14 Dec 2026 |
 | Air | Thu 17 Dec 2026 18:00 London, normal publish (no Premiere; slides one week if not ready) |
+
+---
+
+## Shorts VO Take Evidence (`J3679`, `2026-11-26`, `£0.00` Cash · `355` ElevenLabs Credits Settled)
+
+Recorded by `gemini` under `J3679` from Acting Chief-locked `10_Shorts/SHORTS_SCRIPTS_v02.md` (`sha256: e1df5d81baffca83c559b78a2a87df97df0fe8be15fb8de96a761445906941fe`, `J3677` / HOS PR `#767`) using **Ben Orbit Narrator** (`eleven_v3`, speed `1.04`, API only via `vo_take.py` → `el_client.py` / `el_guard.py`). Zero words altered. Take record only — parked for independent non-producer Chief VO review and PASS (`10_Shorts/vo_v02/VO_STATUS.md`).
+
+- **NAS audio folder (`10/10` WAV/MP3 SHA-256 verified, zero media in git):** `/Volumes/data/studio-live/History Of Science/02_Video-Projects/136_Oppenheimer-Teller-Bethe-Trinity-Test-Explained/10_Shorts/vo_v02/`
+- **Candidate masters (`16.0–19.0 s` house band, inter-sentence pause trim only, `atempo = 1.00`):**
+  - `S01` (`hos_136_short_S01_v02_tight`): `18.70 s`, `-20.1 LUFS` (mean `-22.9 dB`, peak `-4.0 dB`), WAV `7a664025231b35f891267b43df32e9f2592041e83b04f2b6e612d983900c4853` / MP3 `a5c6d380b03412c658f0bba8998d791215db75960d4a47dc4ef8df94432adce4`
+  - `S02` (`hos_136_short_S02_v02_tight`): `18.74 s`, `-21.8 LUFS` (mean `-24.6 dB`, peak `-4.1 dB`), WAV `0ced4f75d68b2cf29320a6a7744b8f4eae8e34c51a251ce9d5e37d2d6db7087c` / MP3 `1a5b738b5082601a1adb7bd3d8c7932e2c049b965209371f45ca50b2390b08cd`
+- **ElevenLabs balance:** `7,630 → 7,275` of `121,114` (`355` credits settled across `763` spoken chars; resets `2026-11-30T10:50:31Z`; `J3670` and `J3678` longs remain parked for reset; floor `0`; `£0`).
+
+### Pasted `vo_check_py312.sh` outputs (current `main`, unmodified)
+```text
+FAIL  hos_136_short_S01_v02_tight.wav  0:18.70  mean -22.9 dB  peak -4.0 dB  138 wpm
+   FAIL  replace at ~0:07.22: script 'could fuse nitrogen bethe and konopinski proved' / heard 'could fuse nitrogen beta and konopinski proved' — listen, then regenerate that sentence alone if real
+   warn  pace 138 wpm (< 145); expect a long film — see STUDIO_PLAYBOOK.md §4 speed
+
+PASS  hos_136_short_S02_v02_tight.wav  0:18.74  mean -24.6 dB  peak -4.1 dB  134 wpm
+   warn  pace 134 wpm (< 145); expect a long film — see STUDIO_PLAYBOOK.md §4 speed
+```
+*(Separate PR opened to add `"beta": "bethe"` / `"beta's": "bethe's"` to `00_Brand/Channel-Setup/tools/vo_check.py` `ALIASES` with unit tests, per `studio/RULES.md` and `#392`, because Hans Bethe is pronounced `/ˈbeɪtə/` and ElevenLabs Scribe v2 transcribes `"Bethe"` cleanly.)*
 
 ---
 

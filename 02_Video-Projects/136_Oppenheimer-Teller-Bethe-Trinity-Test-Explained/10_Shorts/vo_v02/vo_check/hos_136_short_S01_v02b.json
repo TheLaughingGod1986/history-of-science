@@ -1,0 +1,30 @@
+{
+  "file": "02_Video-Projects/136_Oppenheimer-Teller-Bethe-Trinity-Test-Explained/10_Shorts/vo_v02/hos_136_short_S01_v02b.wav",
+  "part": null,
+  "fails": [
+    "replace at ~0:08.26: script 'could fuse nitrogen bethe and konopinski proved' / heard 'could fuse nitrogen betta and konopinski proved' — listen, then regenerate that sentence alone if real"
+  ],
+  "warns": [
+    "pace 122 wpm (< 145); expect a long film — see STUDIO_PLAYBOOK.md §4 speed"
+  ],
+  "duration_s": 21.2,
+  "duration": "0:21.20",
+  "mean_db": -24.5,
+  "peak_db": -3.8,
+  "pauses_over_1s": [],
+  "asr": "faster-whisper small.en",
+  "script_words": 41,
+  "heard_words": 41,
+  "wpm": 122,
+  "word_diffs": [
+    {
+      "at": "0:08.26",
+      "op": "replace",
+      "sounds_alike": false,
+      "script": "could fuse nitrogen bethe and konopinski proved",
+      "heard": "could fuse nitrogen betta and konopinski proved"
+    }
+  ],
+  "first_minute": {},
+  "verdict": "FAIL"
+}

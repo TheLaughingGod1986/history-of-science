@@ -1,0 +1,590 @@
+{
+  "language_code": "eng",
+  "language_probability": 1.0,
+  "text": "The Trinity test could never set Earth's sky on fire. In '42, Teller asked if atomic heat could fuse nitrogen. Bethe and Konopinski prove radiation drains heat faster than nitrogen can fuse. No chain reaction could survive, which is why physicists proved",
+  "words": [
+    {
+      "text": "The",
+      "start": 0.08,
+      "end": 0.14,
+      "type": "word",
+      "logprob": -0.001177690108306706
+    },
+    {
+      "text": " ",
+      "start": 0.14,
+      "end": 0.2,
+      "type": "spacing",
+      "logprob": -0.0003873551613651216
+    },
+    {
+      "text": "Trinity",
+      "start": 0.2,
+      "end": 0.58,
+      "type": "word",
+      "logprob": -0.0003873551613651216
+    },
+    {
+      "text": " ",
+      "start": 0.58,
+      "end": 0.66,
+      "type": "spacing",
+      "logprob": -0.016035404056310654
+    },
+    {
+      "text": "test",
+      "start": 0.66,
+      "end": 1.04,
+      "type": "word",
+      "logprob": -0.016035404056310654
+    },
+    {
+      "text": " ",
+      "start": 1.04,
+      "end": 1.28,
+      "type": "spacing",
+      "logprob": -6.6756979322235566e-06
+    },
+    {
+      "text": "could",
+      "start": 1.28,
+      "end": 1.46,
+      "type": "word",
+      "logprob": -6.6756979322235566e-06
+    },
+    {
+      "text": " ",
+      "start": 1.46,
+      "end": 1.5,
+      "type": "spacing",
+      "logprob": -7.152555099310121e-07
+    },
+    {
+      "text": "never",
+      "start": 1.52,
+      "end": 1.8,
+      "type": "word",
+      "logprob": -7.152555099310121e-07
+    },
+    {
+      "text": " ",
+      "start": 1.8,
+      "end": 1.92,
+      "type": "spacing",
+      "logprob": -5.483612312673358e-06
+    },
+    {
+      "text": "set",
+      "start": 1.92,
+      "end": 2.12,
+      "type": "word",
+      "logprob": -5.483612312673358e-06
+    },
+    {
+      "text": " ",
+      "start": 2.12,
+      "end": 2.2,
+      "type": "spacing",
+      "logprob": -0.004079235717654228
+    },
+    {
+      "text": "Earth's",
+      "start": 2.2,
+      "end": 2.44,
+      "type": "word",
+      "logprob": -0.0029176395923309023
+    },
+    {
+      "text": " ",
+      "start": 2.44,
+      "end": 2.52,
+      "type": "spacing",
+      "logprob": -4.291525328881107e-06
+    },
+    {
+      "text": "sky",
+      "start": 2.52,
+      "end": 2.82,
+      "type": "word",
+      "logprob": -4.291525328881107e-06
+    },
+    {
+      "text": " ",
+      "start": 2.82,
+      "end": 2.86,
+      "type": "spacing",
+      "logprob": 0.0
+    },
+    {
+      "text": "on",
+      "start": 2.86,
+      "end": 3.04,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": " ",
+      "start": 3.04,
+      "end": 3.1,
+      "type": "spacing",
+      "logprob": -7.152555099310121e-07
+    },
+    {
+      "text": "fire.",
+      "start": 3.1,
+      "end": 3.46,
+      "type": "word",
+      "logprob": -6.651785770372953e-06
+    },
+    {
+      "text": " ",
+      "start": 3.46,
+      "end": 3.46,
+      "type": "spacing",
+      "logprob": -0.00021455370006151497
+    },
+    {
+      "text": "In",
+      "start": 4.52,
+      "end": 4.64,
+      "type": "word",
+      "logprob": -0.00021455370006151497
+    },
+    {
+      "text": " ",
+      "start": 4.64,
+      "end": 4.66,
+      "type": "spacing",
+      "logprob": -0.008715329691767693
+    },
+    {
+      "text": "'42,",
+      "start": 4.66,
+      "end": 5.38,
+      "type": "word",
+      "logprob": -0.00226494643695041
+    },
+    {
+      "text": " ",
+      "start": 5.38,
+      "end": 5.8,
+      "type": "spacing",
+      "logprob": -0.000403084559366107
+    },
+    {
+      "text": "Teller",
+      "start": 5.8,
+      "end": 6.04,
+      "type": "word",
+      "logprob": -0.000403084559366107
+    },
+    {
+      "text": " ",
+      "start": 6.04,
+      "end": 6.2,
+      "type": "spacing",
+      "logprob": -3.814689989667386e-06
+    },
+    {
+      "text": "asked",
+      "start": 6.2,
+      "end": 6.48,
+      "type": "word",
+      "logprob": -3.814689989667386e-06
+    },
+    {
+      "text": " ",
+      "start": 6.48,
+      "end": 6.54,
+      "type": "spacing",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": "if",
+      "start": 6.54,
+      "end": 6.6,
+      "type": "word",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": " ",
+      "start": 6.6,
+      "end": 6.64,
+      "type": "spacing",
+      "logprob": -1.7762025890988298e-05
+    },
+    {
+      "text": "atomic",
+      "start": 6.64,
+      "end": 7.04,
+      "type": "word",
+      "logprob": -1.7762025890988298e-05
+    },
+    {
+      "text": " ",
+      "start": 7.04,
+      "end": 7.1,
+      "type": "spacing",
+      "logprob": -8.344646857949556e-07
+    },
+    {
+      "text": "heat",
+      "start": 7.12,
+      "end": 7.48,
+      "type": "word",
+      "logprob": -8.344646857949556e-07
+    },
+    {
+      "text": " ",
+      "start": 7.48,
+      "end": 7.56,
+      "type": "spacing",
+      "logprob": -9.536738616588991e-07
+    },
+    {
+      "text": "could",
+      "start": 7.56,
+      "end": 7.72,
+      "type": "word",
+      "logprob": -9.536738616588991e-07
+    },
+    {
+      "text": " ",
+      "start": 7.72,
+      "end": 7.78,
+      "type": "spacing",
+      "logprob": -3.576272320060525e-06
+    },
+    {
+      "text": "fuse",
+      "start": 7.78,
+      "end": 8.08,
+      "type": "word",
+      "logprob": -3.576272320060525e-06
+    },
+    {
+      "text": " ",
+      "start": 8.08,
+      "end": 8.18,
+      "type": "spacing",
+      "logprob": -2.7417760065873154e-05
+    },
+    {
+      "text": "nitrogen.",
+      "start": 8.18,
+      "end": 8.82,
+      "type": "word",
+      "logprob": -2.5391239331737677e-05
+    },
+    {
+      "text": " ",
+      "start": 8.82,
+      "end": 8.82,
+      "type": "spacing",
+      "logprob": -0.050063371658325195
+    },
+    {
+      "text": "Bethe",
+      "start": 9.82,
+      "end": 10.24,
+      "type": "word",
+      "logprob": -0.0300393581368553
+    },
+    {
+      "text": " ",
+      "start": 10.24,
+      "end": 10.38,
+      "type": "spacing",
+      "logprob": -6.079655122448457e-06
+    },
+    {
+      "text": "and",
+      "start": 10.38,
+      "end": 10.48,
+      "type": "word",
+      "logprob": -6.079655122448457e-06
+    },
+    {
+      "text": " ",
+      "start": 10.48,
+      "end": 10.54,
+      "type": "spacing",
+      "logprob": -0.0010954099707305431
+    },
+    {
+      "text": "Konopinski",
+      "start": 10.54,
+      "end": 11.26,
+      "type": "word",
+      "logprob": -0.05770991832687287
+    },
+    {
+      "text": " ",
+      "start": 11.26,
+      "end": 11.38,
+      "type": "spacing",
+      "logprob": -0.6326265335083008
+    },
+    {
+      "text": "prove",
+      "start": 11.38,
+      "end": 11.7,
+      "type": "word",
+      "logprob": -0.6326265335083008
+    },
+    {
+      "text": " ",
+      "start": 11.7,
+      "end": 11.8,
+      "type": "spacing",
+      "logprob": -9.059865078597795e-06
+    },
+    {
+      "text": "radiation",
+      "start": 11.8,
+      "end": 12.36,
+      "type": "word",
+      "logprob": -9.059865078597795e-06
+    },
+    {
+      "text": " ",
+      "start": 12.36,
+      "end": 12.44,
+      "type": "spacing",
+      "logprob": -1.728519782773219e-05
+    },
+    {
+      "text": "drains",
+      "start": 12.44,
+      "end": 12.76,
+      "type": "word",
+      "logprob": -1.728519782773219e-05
+    },
+    {
+      "text": " ",
+      "start": 12.76,
+      "end": 12.8,
+      "type": "spacing",
+      "logprob": -2.145764938177308e-06
+    },
+    {
+      "text": "heat",
+      "start": 12.8,
+      "end": 13.06,
+      "type": "word",
+      "logprob": -2.145764938177308e-06
+    },
+    {
+      "text": " ",
+      "start": 13.06,
+      "end": 13.22,
+      "type": "spacing",
+      "logprob": -4.0531076592742465e-06
+    },
+    {
+      "text": "faster",
+      "start": 13.22,
+      "end": 13.72,
+      "type": "word",
+      "logprob": -4.0531076592742465e-06
+    },
+    {
+      "text": " ",
+      "start": 13.72,
+      "end": 14.04,
+      "type": "spacing",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": "than",
+      "start": 14.04,
+      "end": 14.18,
+      "type": "word",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": " ",
+      "start": 14.18,
+      "end": 14.24,
+      "type": "spacing",
+      "logprob": -3.2782016205601394e-05
+    },
+    {
+      "text": "nitrogen",
+      "start": 14.24,
+      "end": 14.72,
+      "type": "word",
+      "logprob": -3.2782016205601394e-05
+    },
+    {
+      "text": " ",
+      "start": 14.72,
+      "end": 14.8,
+      "type": "spacing",
+      "logprob": -0.011634238995611668
+    },
+    {
+      "text": "can",
+      "start": 14.8,
+      "end": 14.94,
+      "type": "word",
+      "logprob": -0.011634238995611668
+    },
+    {
+      "text": " ",
+      "start": 14.94,
+      "end": 15.04,
+      "type": "spacing",
+      "logprob": -1.0490362910786644e-05
+    },
+    {
+      "text": "fuse.",
+      "start": 15.04,
+      "end": 15.58,
+      "type": "word",
+      "logprob": -1.0752620255516376e-05
+    },
+    {
+      "text": " ",
+      "start": 15.58,
+      "end": 15.58,
+      "type": "spacing",
+      "logprob": -1.9073468138230965e-06
+    },
+    {
+      "text": "No",
+      "start": 16.379,
+      "end": 16.52,
+      "type": "word",
+      "logprob": -1.9073468138230965e-06
+    },
+    {
+      "text": " ",
+      "start": 16.52,
+      "end": 16.62,
+      "type": "spacing",
+      "logprob": -7.152555099310121e-07
+    },
+    {
+      "text": "chain",
+      "start": 16.62,
+      "end": 16.84,
+      "type": "word",
+      "logprob": -7.152555099310121e-07
+    },
+    {
+      "text": " ",
+      "start": 16.84,
+      "end": 16.88,
+      "type": "spacing",
+      "logprob": -4.768360213347478e-06
+    },
+    {
+      "text": "reaction",
+      "start": 16.88,
+      "end": 17.3,
+      "type": "word",
+      "logprob": -4.768360213347478e-06
+    },
+    {
+      "text": " ",
+      "start": 17.3,
+      "end": 17.36,
+      "type": "spacing",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": "could",
+      "start": 17.36,
+      "end": 17.5,
+      "type": "word",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": " ",
+      "start": 17.5,
+      "end": 17.54,
+      "type": "spacing",
+      "logprob": -1.6689286894688848e-06
+    },
+    {
+      "text": "survive,",
+      "start": 17.54,
+      "end": 18.14,
+      "type": "word",
+      "logprob": -0.002271010306401422
+    },
+    {
+      "text": " ",
+      "start": 18.14,
+      "end": 18.16,
+      "type": "spacing",
+      "logprob": -3.814689989667386e-06
+    },
+    {
+      "text": "which",
+      "start": 18.88,
+      "end": 19.02,
+      "type": "word",
+      "logprob": -3.814689989667386e-06
+    },
+    {
+      "text": " ",
+      "start": 19.02,
+      "end": 19.08,
+      "type": "spacing",
+      "logprob": -1.1444026313256472e-05
+    },
+    {
+      "text": "is",
+      "start": 19.08,
+      "end": 19.2,
+      "type": "word",
+      "logprob": -1.1444026313256472e-05
+    },
+    {
+      "text": " ",
+      "start": 19.2,
+      "end": 19.28,
+      "type": "spacing",
+      "logprob": -7.152555099310121e-07
+    },
+    {
+      "text": "why",
+      "start": 19.28,
+      "end": 19.62,
+      "type": "word",
+      "logprob": -7.152555099310121e-07
+    },
+    {
+      "text": " ",
+      "start": 19.62,
+      "end": 20.0,
+      "type": "spacing",
+      "logprob": -5.1973900554003194e-05
+    },
+    {
+      "text": "physicists",
+      "start": 20.0,
+      "end": 20.5,
+      "type": "word",
+      "logprob": -5.1973900554003194e-05
+    },
+    {
+      "text": " ",
+      "start": 20.5,
+      "end": 20.62,
+      "type": "spacing",
+      "logprob": -4.434487345861271e-05
+    },
+    {
+      "text": "proved",
+      "start": 20.62,
+      "end": 21.16,
+      "type": "word",
+      "logprob": -4.434487345861271e-05
+    }
+  ],
+  "transcription_id": "00b1iDZd5aGwJPNxh0UV",
+  "audio_duration_secs": 21.28
+}

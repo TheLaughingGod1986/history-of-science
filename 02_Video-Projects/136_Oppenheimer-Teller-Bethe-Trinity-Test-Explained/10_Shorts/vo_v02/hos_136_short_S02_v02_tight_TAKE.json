@@ -1,0 +1,73 @@
+{
+  "stem": "hos_136_short_S02_v02_tight",
+  "derived_from": "hos_136_short_S02_v02",
+  "derived_from_sha256_wav": "e00483534ac6431a09345112ba62143c3e2760f68dcd99b63fd610c49f5857ee",
+  "derived_from_sha256_mp3": "1be4348bd12c8025ed1eb058290763d08cc7b541a73ba79fd02046536eaf9575",
+  "edit_recipe": {
+    "type": "inter_sentence_silence_trim_only",
+    "atempo": 1.0,
+    "segments_s": [
+      [
+        0.08,
+        4.24
+      ],
+      [
+        5.14,
+        9.96
+      ],
+      [
+        10.94,
+        14.32
+      ],
+      [
+        15.16,
+        20.18
+      ],
+      [
+        21.1,
+        21.9
+      ]
+    ],
+    "inter_sentence_gap_s": 0.14,
+    "edge_fade_s": 0.015,
+    "extra_elevenlabs_credits": 0
+  },
+  "voice": "Ben Orbit Narrator",
+  "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+  "model_id": "eleven_v3",
+  "settings": {
+    "stability": 0.34,
+    "similarity_boost": 0.78,
+    "style": 0.42,
+    "speed": 1.04,
+    "use_speaker_boost": true
+  },
+  "orders": [
+    "J3677",
+    "J3679"
+  ],
+  "spoken_chars": 239,
+  "words": 42,
+  "duration_s": 18.74,
+  "loudness": {
+    "lufs_integrated": -21.8,
+    "mean_volume_db": -24.6,
+    "max_volume_db": -4.1
+  },
+  "sha256_wav": "0ced4f75d68b2cf29320a6a7744b8f4eae8e34c51a251ce9d5e37d2d6db7087c",
+  "sha256_mp3": "1a5b738b5082601a1adb7bd3d8c7932e2c049b965209371f45ca50b2390b08cd",
+  "text": "Enrico Fermi measured the Trinity blast with torn paper. Ten miles away, he waited forty seconds in silence for the blast wave. His falling scraps jumped two and a half metres. He instantly estimated ten thousand tons of TNT, which is how…",
+  "word_timing_summary": {
+    "first_word": {
+      "text": "Enrico",
+      "start": 0.06,
+      "end": 0.58
+    },
+    "last_word": {
+      "text": "how",
+      "start": 18.38,
+      "end": 18.68
+    },
+    "total_words": 41
+  }
+}

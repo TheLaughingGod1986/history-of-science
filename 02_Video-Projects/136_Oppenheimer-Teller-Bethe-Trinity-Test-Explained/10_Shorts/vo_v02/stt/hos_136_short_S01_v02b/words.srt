@@ -1,0 +1,27 @@
+1
+00:00:00,080 --> 00:00:02,660
+The Trinity test could never set Earth's
+
+2
+00:00:02,720 --> 00:00:03,620
+sky on fire.
+
+3
+00:00:04,480 --> 00:00:07,860
+In '42, Teller asked if atomic heat could
+
+4
+00:00:07,940 --> 00:00:11,760
+fuse nitrogen. Bethe and Konopinski proved
+
+5
+00:00:11,940 --> 00:00:14,720
+radiation drains heat faster than nitrogen
+
+6
+00:00:14,800 --> 00:00:18,280
+can fuse. No chain reaction could survive,
+
+7
+00:00:18,820 --> 00:00:21,080
+which is why physicists proved

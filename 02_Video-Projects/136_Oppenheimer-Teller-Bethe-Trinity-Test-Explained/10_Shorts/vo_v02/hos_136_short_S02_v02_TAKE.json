@@ -1,0 +1,89 @@
+{
+  "stem": "hos_136_short_S02_v02",
+  "voice": "Ben Orbit Narrator",
+  "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+  "model_id": "eleven_v3",
+  "settings": {
+    "stability": 0.34,
+    "similarity_boost": 0.78,
+    "style": 0.42,
+    "speed": 1.04,
+    "use_speaker_boost": true
+  },
+  "orders": [
+    "J3677",
+    "J3679"
+  ],
+  "retake_of": null,
+  "chapters": [
+    {
+      "title": "take",
+      "chars": 239,
+      "duration_s": 21.92
+    }
+  ],
+  "gap_s": 0.7,
+  "spoken_chars": 239,
+  "words": 42,
+  "duration_s": 21.92,
+  "loudness": {
+    "lufs_integrated": -21.7,
+    "mean_volume_db": -25.2,
+    "max_volume_db": -4.1
+  },
+  "sha256_mp3": "1be4348bd12c8025ed1eb058290763d08cc7b541a73ba79fd02046536eaf9575",
+  "scribe": {
+    "transcript": "Enrico Fermi measured the Trinity blast with torn paper. Ten miles away, he waited 40 seconds in silence for the blast wave. His falling scraps jumped two and a half meters. He instantly estimated 10,000 tons of TNT, which is how",
+    "script_words": 42,
+    "scribe_words": 42,
+    "match_rate_pct": 90.48,
+    "exact_match": false,
+    "mismatches": [
+      {
+        "op": "replace",
+        "script": [
+          "forty"
+        ],
+        "scribe": [
+          "40"
+        ]
+      },
+      {
+        "op": "replace",
+        "script": [
+          "metres"
+        ],
+        "scribe": [
+          "meters"
+        ]
+      },
+      {
+        "op": "replace",
+        "script": [
+          "ten",
+          "thousand"
+        ],
+        "scribe": [
+          "10",
+          "000"
+        ]
+      }
+    ]
+  },
+  "vo_check": "REVIEW",
+  "credits": {
+    "before": {
+      "used": 113484,
+      "limit": 121114,
+      "remaining": 7630
+    },
+    "after": {
+      "used": 113484,
+      "limit": 121114,
+      "remaining": 7630
+    },
+    "counter_delta": 0
+  },
+  "text": "Enrico Fermi measured the Trinity blast with torn paper. Ten miles away, he waited forty seconds in silence for the blast wave. His falling scraps jumped two and a half metres. He instantly estimated ten thousand tons of TNT, which is how…",
+  "made_at": "2026-11-26T07:24:23+0000"
+}
