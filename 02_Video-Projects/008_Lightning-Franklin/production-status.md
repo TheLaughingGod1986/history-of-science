@@ -496,3 +496,17 @@ ALL CHECKS PASS
   - `gate_shorts_open.py`: `PASS  hos_008_s04_no_patent_v01.mp4  dur=16.1s  audio=-16.7dB  motion=34.94  f0diff=4.75  cut1=2.37s  vo_onset=0.06s  tail_gap=1.44s  vo_src=mix  dhash=0f07660287870343` (full-bleed 0/17, 0/33)
   - `npm run lint:package -- --film 008`: `PASS  02_Video-Projects/008_Lightning-Franklin/10_Shorts/SHORTS_RELEASE.json`
   - `npm run channel:audit -- --write-live`: `PASS  Short f_-BsKZf8X0  private 2026-12-01 11:30 UK  Why Did Franklin Never Patent the Lightning Rod?` · `76 videos, 0 errors.`
+
+## J3814 — Short s04 cover archive (26 Nov 2026)
+
+Reconstructed frame 0 archived on the NAS with separate `COVER_ARCHIVE_RECEIPT_J3814.json` and `COVER_ARCHIVE_J3814.md` in the s04 upload-package folder. The uploaded JPEG was unavailable; no byte-identity claim. Portrait and centre-crop previews reviewed; centre crop clips the caption. Uploaded manifest/master and the recorded 1 Dec 11:30Z schedule unchanged. No publishing hold or external state changes.
+
+Validation output:
+```text
+PASS — all three durable artifact hashes verified against receipt
+PASS — uploaded PACKAGE_MANIFEST.json hash unchanged
+-- package-lint: PASS
+ALL CHECKS PASS
+```
+
+Preview tools completed: `thumb_preview.py short`; `style_sheet.py short` (1 new vs 8 live short references). This is archival still evidence, not a new packaging or motion approval.

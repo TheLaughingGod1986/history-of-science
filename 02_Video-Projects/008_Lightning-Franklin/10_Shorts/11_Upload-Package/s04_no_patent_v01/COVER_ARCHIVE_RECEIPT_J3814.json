@@ -1,0 +1,47 @@
+{
+  "job": "J3814",
+  "videoId": "f_-BsKZf8X0",
+  "recordedAt": "2026-11-26T22:09:36.746307+00:00",
+  "agent": "codex",
+  "classification": "reconstructed_frame_0_not_byte_identical",
+  "originalUploadedCoverRecovered": false,
+  "sourceMaster": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/008_Lightning-Franklin/10_Shorts/J3763/hos_008_s04_no_patent_v01.mp4",
+  "sourceMasterSha256": "e162a0fbe05e519ae822aededabf62172396594d4f564081d539db724f03809c",
+  "sourceMasterHashVerified": true,
+  "extraction": "ffmpeg -nostdin -v error -n -i <sourceMaster> -frames:v 1 -q:v 2 <reconstructed.jpg>",
+  "dimensions": [
+    952,
+    1692
+  ],
+  "artifacts": [
+    {
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/008_Lightning-Franklin/10_Shorts/J3814_cover_archive/hos_008_s04_cover_frame0_reconstructed.jpg",
+      "sha256": "08805e24cd7188c65064c9092cb1cb76ae98c3266faf649cedaa9c51799f7788"
+    },
+    {
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/008_Lightning-Franklin/10_Shorts/J3814_cover_archive/phone_preview.jpg",
+      "sha256": "fa7b3936c7f57cac69a6fe7591190692b27f5fd62426c5efd551ccf5aef43d49"
+    },
+    {
+      "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/008_Lightning-Franklin/10_Shorts/J3814_cover_archive/style_sheet.jpg",
+      "sha256": "09314c1be717786d7394db543083e3d6857a0c8a197ad57bfd80ffadabfbaaeb"
+    }
+  ],
+  "uploadedManifestSha256": "57cd8b192028b831c900585e0d14b3e45af3a00ab77bb6955215ebec39c6a649",
+  "search": [
+    "Original /tmp/j3811-hos worktree absent",
+    "No cover found in local film Shorts or NAS film Shorts; targeted temporary/workdesk filename search found no original",
+    "https://i.ytimg.com/vi/f_-BsKZf8X0/maxresdefault.jpg returned HTTP 404",
+    "https://i.ytimg.com/vi/f_-BsKZf8X0/hqdefault.jpg returned HTTP 404"
+  ],
+  "review": {
+    "medium": "still images only; full-size extraction, phone preview and style sheet visually inspected",
+    "portrait110x196": "Full factual caption readable, cream serif with gold never, church tower and lightning recognisable; no Explorer or black bars.",
+    "centre168x94": "Caption clipped to lightning rod at upper edge; tower and bolt remain recognisable. Crop limitation recorded, not a new packaging approval.",
+    "style": "Existing approved premium 3D church/storm frame; cream/gold serif overlay. Cooler scene than warm style references. No artwork changes.",
+    "verdict": "Archival reconstruction accepted; no claim of byte identity, motion review, new packaging PASS or upload approval."
+  },
+  "stateChanges": [],
+  "schedulePreserved": "2026-12-01T11:30:00Z",
+  "spend": 0
+}
