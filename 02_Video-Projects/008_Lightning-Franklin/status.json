@@ -3,7 +3,7 @@
   "title": "Benjamin Franklin's Kite Experiment Explained",
   "air": "2026-11-26",
   "ready_by": "2026-11-15",
-  "summary": "Scheduled & Studio-finished on @HistoryOfScienceYT (J3500, 24\u201325 Nov 2026): Long v05 YqCWYlv_LCY Private for Thu 26 Nov 18:00 UK (en-GB captions serving, playlist PLEbpfUzWzcXU, End screen PLEbpfUzWzcXU+Subscribe saved, 2-way Title+Thumb T&C armed & saved), Short A v04 __UtUYdEUwg Private for Fri 27 Nov 11:30 UK, Short C v07 4sYTV_rQcqs Private for Sun 29 Nov 11:30 UK (en-GB captions serving, covers set, Buffer registered; Altered=YES & Not Made for Kids visually confirmed on all 3). channel:audit PASS (75 videos, 0 errors). Post-publish Related video -> YqCWYlv_LCY queued in J3649 for Thu 26 Nov 18:05 UK.",
+  "summary": "Public & post-publish Studio-finished on @HistoryOfScienceYT (J3500 + J3649, 24\u201326 Nov 2026): Long v05 YqCWYlv_LCY Public since Thu 26 Nov 18:00 UK (en-GB captions serving, playlist PLEbpfUzWzcXU, End screen PLEbpfUzWzcXU+Subscribe saved, 2-way Title+Thumb T&C confirmed Test running with 13d 23h left); Short A v04 __UtUYdEUwg Scheduled Fri 27 Nov 11:30 UK & Short C v07 4sYTV_rQcqs Scheduled Sun 29 Nov 11:30 UK both linked Related video -> YqCWYlv_LCY and reload-verified Not Made for Kids & Altered=YES. channel:audit --write-live PASS (75 videos, 0 errors).",
   "stages": {
     "topic": {
       "state": "done"
@@ -105,10 +105,11 @@
         2,
         2
       ],
-      "steps_unit": "A/B thumbnails Acting Chief PASS & 2-way Title+Thumb T&C armed on YqCWYlv_LCY",
-      "note": "Acting Chief (gemini) PASS on both A (THE KEY SPARKED) and B (NO BOLT STRUCK) at full size & 168x94 px (HOOK/BAND/PHONE). 2-way Title+Thumbnail Test & Compare armed & saved on YqCWYlv_LCY via HOS Studio 9460 (Arm 1: 'Benjamin Franklin's Kite Experiment Explained' + Thumb A; Arm 2: 'Why Did Franklin Fly a Kite in a Storm?' + Thumb B; shows Ineligible while Scheduled and activates on go-public Thu 26 Nov 18:00 UK).",
+      "steps_unit": "A/B thumbnails Acting Chief PASS & 2-way Title+Thumb T&C running on YqCWYlv_LCY",
+      "note": "Acting Chief (gemini) PASS on both A (THE KEY SPARKED) and B (NO BOLT STRUCK) at full size & 168x94 px (HOOK/BAND/PHONE). 2-way Title+Thumbnail Test & Compare armed in J3500 and confirmed Test running (13d 23h remaining) after go-public on 26 Nov 18:22Z (J3649) via HOS Studio 9460 (Arm 1: 'Benjamin Franklin's Kite Experiment Explained' + Thumb A; Arm 2: 'Why Did Franklin Fly a Kite in a Storm?' + Thumb B).",
       "jobs": [
-        "J3500"
+        "J3500",
+        "J3649"
       ]
     },
     "ben_ok": {
@@ -124,15 +125,15 @@
       "state": "done",
       "owner": "gemini",
       "due": "2026-11-26",
-      "since": "2026-11-25T00:24",
+      "since": "2026-11-26T18:22",
       "underway": false,
       "waiting": "",
       "steps": [
         2,
         2
       ],
-      "steps_unit": "API uploads + pre-launch Studio-only finish complete; post-publish Related links queued",
-      "note": "All 3 videos scheduled & Studio-verified on 9460 (channel:audit PASS: 75 videos, 0 errors): Long v05 YqCWYlv_LCY Private Thu 26 Nov 18:00 UK (en-GB captions serving, playlist PLEbpfUzWzcXU, End screen PLEbpfUzWzcXU+Subscribe 8:39:15-8:59:15 saved, 2-way Title+Thumb T&C armed & saved); Short A v04 __UtUYdEUwg Private Fri 27 Nov 11:30 UK; Short C v07 4sYTV_rQcqs Private Sun 29 Nov 11:30 UK (en-GB captions serving, covers set, registered in Orbit social/hos/UPLOADS.json for Buffer). Altered content=YES and Not Made for Kids visually confirmed in Studio on all 3 videos. Related video picker omits Private/Scheduled targets; post-publish J3649 queued for Thu 26 Nov 18:05 UK (before Short A airs Fri 27 Nov 11:30 UK).",
+      "steps_unit": "API uploads, pre-launch & post-publish Studio finish complete",
+      "note": "Long v05 YqCWYlv_LCY Public Thu 26 Nov 18:00 UK (en-GB captions serving, playlist PLEbpfUzWzcXU, End screen PLEbpfUzWzcXU+Subscribe saved, 2-way Title+Thumb T&C confirmed Test running with 13d 23h left in J3649). Short A v04 __UtUYdEUwg Scheduled Fri 27 Nov 11:30 UK & Short C v07 4sYTV_rQcqs Scheduled Sun 29 Nov 11:30 UK (en-GB captions serving, covers set, registered in Orbit social/hos/UPLOADS.json for Buffer; Related video -> YqCWYlv_LCY saved & reload-verified in J3649). Altered content=YES and Not Made for Kids visually/DOM confirmed on all 3 videos after save. channel:audit --write-live PASS: 75 videos, 0 errors.",
       "jobs": [
         "J3500",
         "J3649"
@@ -140,5 +141,5 @@
     }
   },
   "claims": [],
-  "next": "J3649 (check-at Thu 26 Nov 18:05 UK, after YqCWYlv_LCY goes Public): set Shorts Related video -> YqCWYlv_LCY on __UtUYdEUwg and 4sYTV_rQcqs before Short A airs Fri 27 Nov 11:30 UK, confirm Title+Thumb T&C is running, and run channel:audit."
+  "next": "Long YqCWYlv_LCY is live with Title+Thumb T&C running; Short A __UtUYdEUwg airs Fri 27 Nov 11:30 UK and Short C 4sYTV_rQcqs airs Sun 29 Nov 11:30 UK (both linked Related video -> YqCWYlv_LCY). Routine post-publish monitoring & HOS-2026-11-E2 readout on 3 Dec 2026."
 }
