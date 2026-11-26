@@ -16,15 +16,25 @@ British English, Education category, not made for kids and the schedules read ba
 
 Both Shorts were registered for the daily HOS Buffer mirror with verified hashes, parent wiyfRnsTfTY and social copy. Buffer posts are deferred to the normal seven-day scheduling window. Registration PR: Orbit #1294.
 
-## Remaining Studio work
+## Pre-public Studio finish (26 November 2026, J3501, CDP 9460, £0)
 
-Studio finishing is unavailable. The access prerequisite and diagnostic evidence are recorded in the local handoff.
+Completed on existing video ids only (no re-upload, no reschedule):
 
-Finish these existing ids only; never upload a second copy:
+- **Long `wiyfRnsTfTY` (Private, scheduled Thu 3 Dec 2026 18:00 UK/UTC):**
+  - End screen saved: Playlist `How Did We Discover…?` (`PLEbpfUzWzcXU`) + Subscribe (`History of Science`), `8:18:28`–`8:38:28` (exact final 20 s to Studio frame boundary `8:38:28`, zero overlap).
+  - 2-way Title + Thumbnail Test & Compare armed & saved (no prior test existed): Arm 1 *How Isaac Newton Proved Gravity Using the Moon* + Thumb A (`IT MISSES`, `cd44f056…`) vs Arm 2 *Why Doesn't the Moon Fall to Earth?* + Thumb B (`ONE APPLE`, `3d116433…`). Reload read-back confirms `A/B testing titles: Ineligible` while Private/Scheduled. Logged as `T045` in OWB PR #1350 (`05_Analytics/tests/THUMB_LEDGER.json`).
+  - Two Info cards saved (both past 1:00): Playlist `PLEbpfUzWzcXU` at `2:39:18` and public Franklin long `YqCWYlv_LCY` (*Benjamin Franklin's Kite Experiment Explained*) at `4:26:13`.
+  - Metadata verified on reload: `No, it's not Made for Kids`, `Altered content: Yes`, `Paid promotion: No`, `Allow automatic places: Off`, `Category: Education` (`Type: Concept overview`, `Academic system: England`), `en-GB`, Playlist `PLEbpfUzWzcXU`, `Visibility: Scheduled`.
+- **Short A `OhdDVA9kWBk` (Private, Fri 4 Dec 11:30 UK) & Short B `9ETHUOUH5-A` (Private, Sat 5 Dec 11:30 UK):**
+  - Studio covers replaced auto-generated mid-frames (`sd2.jpg`) with exact 9:16 Frame-0 covers (`IT'S FALLING` on `OhdDVA9kWBk`, `1 MINUTE = 1 SECOND` on `9ETHUOUH5-A`), saved and visually verified on reload.
+  - Both verified on reload: `No, it's not Made for Kids`, `Altered content: Yes`, `Paid promotion: No`, `Allow automatic places: Off`, `Education / Concept overview / England`, `Visibility: Scheduled`, `Related video: None`.
+- **Post-Studio channel audit (`npm run channel:audit -- --write-live`):** `75 videos, 0 errors.`
 
-- Set the approved two title/thumbnail pairs from J3262 (A IT MISSES; B ONE APPLE), after checking no test is already set. Record the test in the thumbnail ledger. No test has been armed by J3501.
-- Save the long's end screen and cards and verify the remaining Studio settings, including synthetic-content disclosure, audience, paid promotion and education fields.
-- Set Related on both Shorts to wiyfRnsTfTY and verify their covers.
-- Post and pin the long's question when it goes public, if unavailable while scheduled.
+## Remaining post-public work (wait check-at `2026-12-03T18:05:00Z`)
+
+Once `wiyfRnsTfTY` is Public (Thu 3 Dec 2026 18:00 UK/UTC):
+- Set `Related video → wiyfRnsTfTY` on `OhdDVA9kWBk` and `9ETHUOUH5-A` (before Fri 4 Dec 11:30 UK) and read back.
+- Verify `T045` Title+Thumbnail Test & Compare transitions from `Ineligible` to `Running` on `wiyfRnsTfTY`.
+- Post and pin the long's open question comment on `wiyfRnsTfTY`.
 
 API receipts and readbacks sit beside this note and in each Short's package. Raw upload logs remain in the Mini job logs. £0; no generation or credit spend.

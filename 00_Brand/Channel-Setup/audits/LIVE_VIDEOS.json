@@ -1,7 +1,14 @@
 {
   "source": "scripts/channel-audit.ts --write-live (YouTube Data API, owner view)",
-  "pulledAt": "2026-11-26T01:42:39.042Z",
+  "pulledAt": "2026-11-26T21:14:15.094Z",
   "videos": [
+    {
+      "id": "YqCWYlv_LCY",
+      "kind": "long",
+      "title": "Benjamin Franklin's Kite Experiment Explained",
+      "privacy": "public",
+      "scheduled": ""
+    },
     {
       "id": "9ETHUOUH5-A",
       "kind": "Short",
@@ -36,13 +43,6 @@
       "title": "Why Was Franklin's Kite Experiment So Dangerous?",
       "privacy": "private",
       "scheduled": "2026-11-27 11:30 UK"
-    },
-    {
-      "id": "YqCWYlv_LCY",
-      "kind": "long",
-      "title": "Benjamin Franklin's Kite Experiment Explained",
-      "privacy": "private",
-      "scheduled": "2026-11-26 18:00 UK"
     },
     {
       "id": "el30-mHiH-0",
