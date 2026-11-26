@@ -40,6 +40,12 @@ class Norm(unittest.TestCase):
         self.same("Lyell's book", "Lyle's book")
         self.same("a half better beak", "a half bedder beak")
 
+    def test_bethe_alias(self):
+        # Hans Bethe (/ˈbeɪtə/) is pronounced identically to "beta"; faster-whisper small.en spells it "beta" (J3679)
+        self.same("Bethe and Konopinski proved", "beta and Konopinski proved")
+        self.same("Bethe's calculation", "beta's calculation")
+        self.assertNotEqual(vo_check.norm("beta decay"), vo_check.norm("alpha decay"))
+
     def test_ordinal_dates(self):
         self.same("On the first of July", "On the 1st of July")
         self.same("the second of May", "the 2nd of May")
