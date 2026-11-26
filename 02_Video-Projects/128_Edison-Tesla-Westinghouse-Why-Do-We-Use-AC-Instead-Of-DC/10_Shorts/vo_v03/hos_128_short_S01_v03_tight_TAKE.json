@@ -1,0 +1,73 @@
+{
+  "stem": "hos_128_short_S01_v03_tight",
+  "derived_from": "hos_128_short_S01_v03",
+  "derived_from_sha256_wav": "31d2abb8fc6ae7977388938fb04cbae8f60f0a0fae3676c7dbeab0856943b1ba",
+  "derived_from_sha256_mp3": "c95e4aa967ef2e1643f9362cf8a65d4489cf8ac946e15201c68e341142cb28ed",
+  "edit_recipe": {
+    "type": "inter_sentence_silence_trim_only",
+    "atempo": 1.0,
+    "segments_s": [
+      [
+        0.08,
+        3.5
+      ],
+      [
+        3.96,
+        10.02
+      ],
+      [
+        10.94,
+        17.0
+      ],
+      [
+        17.68,
+        19.96
+      ]
+    ],
+    "inter_sentence_gap_s": 0.24,
+    "edge_fade_s": 0.015,
+    "extra_elevenlabs_credits": 0
+  },
+  "voice": "Ben Orbit Narrator",
+  "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+  "model_id": "eleven_v3",
+  "settings": {
+    "stability": 0.34,
+    "similarity_boost": 0.78,
+    "style": 0.42,
+    "speed": 1.04,
+    "use_speaker_boost": true
+  },
+  "orders": [
+    "J3660",
+    "J3671"
+  ],
+  "spoken_chars": 277,
+  "words": 39,
+  "duration_s": 18.54,
+  "loudness": {
+    "lufs_integrated": -20.1,
+    "mean_volume_db": -22.6,
+    "max_volume_db": -4.0
+  },
+  "sha256_wav": "931718a6429c8559e77adf2bbd02d549d653f18d5dd6fba683b66e203eb98168",
+  "sha256_mp3": "40606376678a64f1a05a38f65cf58d74c99885ae09253e4a6ad66da70146cec1",
+  "text": "Edison's direct current couldn't affordably cross a city. Low voltage meant heavy current, wasting energy as heat unless cables grew hugely expensive. Alternating-current transformers boosted voltage tenfold, cutting wire heat a hundred times. That simple physics explains why—",
+  "word_timing_summary": {
+    "first_word": {
+      "start": 0.06,
+      "end": 0.54,
+      "text": "Edison's"
+    },
+    "fourth_word": {
+      "start": 1.58,
+      "end": 1.82,
+      "text": "couldn't"
+    },
+    "last_word": {
+      "start": 18.18,
+      "end": 18.46,
+      "text": "why"
+    }
+  }
+}

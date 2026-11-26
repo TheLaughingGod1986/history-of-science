@@ -1,0 +1,25 @@
+{
+  "file": "/Volumes/MiniWork/desk/worktrees/hos-J3671/02_Video-Projects/128_Edison-Tesla-Westinghouse-Why-Do-We-Use-AC-Instead-Of-DC/10_Shorts/vo_v03/hos_128_short_S02_v03.wav",
+  "part": null,
+  "fails": [],
+  "warns": [
+    "pace 101 wpm (< 145); expect a long film — see STUDIO_PLAYBOOK.md §4 speed"
+  ],
+  "duration_s": 23.84,
+  "duration": "0:23.84",
+  "mean_db": -22.5,
+  "peak_db": -3.9,
+  "pauses_over_1s": [
+    [
+      10.66,
+      1.15
+    ]
+  ],
+  "asr": "faster-whisper small.en",
+  "script_words": 35,
+  "heard_words": 35,
+  "wpm": 101,
+  "word_diffs": [],
+  "first_minute": {},
+  "verdict": "PASS"
+}

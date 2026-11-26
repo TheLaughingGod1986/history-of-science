@@ -1,0 +1,520 @@
+{
+  "language_code": "eng",
+  "language_probability": 1.0,
+  "text": "Tesla's brushless motor broke Edison's grip on electricity. Early alternating current lit lamps, yet stalled in factories. In 1888, Tesla patented a spinning magnetic field, and Niagara Falls sent AC 22 miles to Buffalo, proving just how",
+  "words": [
+    {
+      "text": "Tesla's",
+      "start": 0.12,
+      "end": 0.58,
+      "type": "word",
+      "logprob": -0.010140615130824569
+    },
+    {
+      "text": " ",
+      "start": 0.58,
+      "end": 0.72,
+      "type": "spacing",
+      "logprob": -0.00023862851958256215
+    },
+    {
+      "text": "brushless",
+      "start": 0.72,
+      "end": 1.2,
+      "type": "word",
+      "logprob": -0.00023862851958256215
+    },
+    {
+      "text": " ",
+      "start": 1.2,
+      "end": 1.34,
+      "type": "spacing",
+      "logprob": -9.536738616588991e-07
+    },
+    {
+      "text": "motor",
+      "start": 1.34,
+      "end": 1.78,
+      "type": "word",
+      "logprob": -9.536738616588991e-07
+    },
+    {
+      "text": " ",
+      "start": 1.78,
+      "end": 2.06,
+      "type": "spacing",
+      "logprob": -5.960462772236497e-07
+    },
+    {
+      "text": "broke",
+      "start": 2.06,
+      "end": 2.44,
+      "type": "word",
+      "logprob": -5.960462772236497e-07
+    },
+    {
+      "text": " ",
+      "start": 2.44,
+      "end": 2.6,
+      "type": "spacing",
+      "logprob": -4.768370445162873e-07
+    },
+    {
+      "text": "Edison's",
+      "start": 2.6,
+      "end": 3.08,
+      "type": "word",
+      "logprob": -5.125908415948288e-06
+    },
+    {
+      "text": " ",
+      "start": 3.08,
+      "end": 3.16,
+      "type": "spacing",
+      "logprob": -2.622600959512056e-06
+    },
+    {
+      "text": "grip",
+      "start": 3.16,
+      "end": 3.54,
+      "type": "word",
+      "logprob": -2.622600959512056e-06
+    },
+    {
+      "text": " ",
+      "start": 3.54,
+      "end": 3.74,
+      "type": "spacing",
+      "logprob": 0.0
+    },
+    {
+      "text": "on",
+      "start": 3.74,
+      "end": 3.84,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": " ",
+      "start": 3.84,
+      "end": 3.88,
+      "type": "spacing",
+      "logprob": -4.60137271147687e-05
+    },
+    {
+      "text": "electricity.",
+      "start": 3.88,
+      "end": 4.68,
+      "type": "word",
+      "logprob": -4.2944172643425795e-05
+    },
+    {
+      "text": " ",
+      "start": 4.68,
+      "end": 4.68,
+      "type": "spacing",
+      "logprob": -3.933898824470816e-06
+    },
+    {
+      "text": "Early",
+      "start": 5.84,
+      "end": 6.18,
+      "type": "word",
+      "logprob": -3.933898824470816e-06
+    },
+    {
+      "text": " ",
+      "start": 6.18,
+      "end": 6.36,
+      "type": "spacing",
+      "logprob": -2.9801878554280847e-05
+    },
+    {
+      "text": "alternating",
+      "start": 6.36,
+      "end": 6.98,
+      "type": "word",
+      "logprob": -2.9801878554280847e-05
+    },
+    {
+      "text": " ",
+      "start": 6.98,
+      "end": 7.08,
+      "type": "spacing",
+      "logprob": -5.006777428206988e-06
+    },
+    {
+      "text": "current",
+      "start": 7.08,
+      "end": 7.56,
+      "type": "word",
+      "logprob": -5.006777428206988e-06
+    },
+    {
+      "text": " ",
+      "start": 7.56,
+      "end": 7.72,
+      "type": "spacing",
+      "logprob": -5.364274329622276e-05
+    },
+    {
+      "text": "lit",
+      "start": 7.72,
+      "end": 7.88,
+      "type": "word",
+      "logprob": -5.364274329622276e-05
+    },
+    {
+      "text": " ",
+      "start": 7.88,
+      "end": 7.98,
+      "type": "spacing",
+      "logprob": -4.0531076592742465e-06
+    },
+    {
+      "text": "lamps,",
+      "start": 7.98,
+      "end": 8.46,
+      "type": "word",
+      "logprob": -0.0008757489199524571
+    },
+    {
+      "text": " ",
+      "start": 8.46,
+      "end": 8.88,
+      "type": "spacing",
+      "logprob": -1.1920922133867862e-06
+    },
+    {
+      "text": "yet",
+      "start": 8.88,
+      "end": 9.04,
+      "type": "word",
+      "logprob": -1.1920922133867862e-06
+    },
+    {
+      "text": " ",
+      "start": 9.04,
+      "end": 9.2,
+      "type": "spacing",
+      "logprob": -0.00013541258522309363
+    },
+    {
+      "text": "stalled",
+      "start": 9.2,
+      "end": 9.64,
+      "type": "word",
+      "logprob": -0.00013541258522309363
+    },
+    {
+      "text": " ",
+      "start": 9.64,
+      "end": 9.74,
+      "type": "spacing",
+      "logprob": -3.576278118089249e-07
+    },
+    {
+      "text": "in",
+      "start": 9.74,
+      "end": 9.86,
+      "type": "word",
+      "logprob": -3.576278118089249e-07
+    },
+    {
+      "text": " ",
+      "start": 9.86,
+      "end": 9.94,
+      "type": "spacing",
+      "logprob": -5.960462772236497e-07
+    },
+    {
+      "text": "factories.",
+      "start": 9.94,
+      "end": 10.64,
+      "type": "word",
+      "logprob": -8.583062083289406e-07
+    },
+    {
+      "text": " ",
+      "start": 10.64,
+      "end": 10.64,
+      "type": "spacing",
+      "logprob": -2.2172682292875834e-05
+    },
+    {
+      "text": "In",
+      "start": 11.84,
+      "end": 11.96,
+      "type": "word",
+      "logprob": -2.2172682292875834e-05
+    },
+    {
+      "text": " ",
+      "start": 11.96,
+      "end": 12.0,
+      "type": "spacing",
+      "logprob": -0.00773376040160656
+    },
+    {
+      "text": "1888,",
+      "start": 12.0,
+      "end": 13.18,
+      "type": "word",
+      "logprob": -1.0967232469738518e-06
+    },
+    {
+      "text": " ",
+      "start": 13.18,
+      "end": 13.64,
+      "type": "spacing",
+      "logprob": -8.106198947643861e-06
+    },
+    {
+      "text": "Tesla",
+      "start": 13.64,
+      "end": 13.98,
+      "type": "word",
+      "logprob": -8.106198947643861e-06
+    },
+    {
+      "text": " ",
+      "start": 13.98,
+      "end": 14.08,
+      "type": "spacing",
+      "logprob": -2.3841830625315197e-06
+    },
+    {
+      "text": "patented",
+      "start": 14.08,
+      "end": 14.72,
+      "type": "word",
+      "logprob": -2.3841830625315197e-06
+    },
+    {
+      "text": " ",
+      "start": 14.72,
+      "end": 14.82,
+      "type": "spacing",
+      "logprob": 0.0
+    },
+    {
+      "text": "a",
+      "start": 14.82,
+      "end": 14.92,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": " ",
+      "start": 14.92,
+      "end": 15.02,
+      "type": "spacing",
+      "logprob": -1.311301275563892e-06
+    },
+    {
+      "text": "spinning",
+      "start": 15.02,
+      "end": 15.52,
+      "type": "word",
+      "logprob": -1.311301275563892e-06
+    },
+    {
+      "text": " ",
+      "start": 15.52,
+      "end": 15.62,
+      "type": "spacing",
+      "logprob": -5.960462772236497e-07
+    },
+    {
+      "text": "magnetic",
+      "start": 15.62,
+      "end": 16.14,
+      "type": "word",
+      "logprob": -5.960462772236497e-07
+    },
+    {
+      "text": " ",
+      "start": 16.14,
+      "end": 16.26,
+      "type": "spacing",
+      "logprob": -2.3841855067985307e-07
+    },
+    {
+      "text": "field,",
+      "start": 16.26,
+      "end": 16.72,
+      "type": "word",
+      "logprob": -0.0006830790079893253
+    },
+    {
+      "text": " ",
+      "start": 16.72,
+      "end": 17.24,
+      "type": "spacing",
+      "logprob": -3.814689989667386e-06
+    },
+    {
+      "text": "and",
+      "start": 17.24,
+      "end": 17.36,
+      "type": "word",
+      "logprob": -3.814689989667386e-06
+    },
+    {
+      "text": " ",
+      "start": 17.36,
+      "end": 17.42,
+      "type": "spacing",
+      "logprob": -5.722029527532868e-06
+    },
+    {
+      "text": "Niagara",
+      "start": 17.42,
+      "end": 17.92,
+      "type": "word",
+      "logprob": -5.722029527532868e-06
+    },
+    {
+      "text": " ",
+      "start": 17.92,
+      "end": 18.02,
+      "type": "spacing",
+      "logprob": -6.794906312279636e-06
+    },
+    {
+      "text": "Falls",
+      "start": 18.02,
+      "end": 18.5,
+      "type": "word",
+      "logprob": -6.794906312279636e-06
+    },
+    {
+      "text": " ",
+      "start": 18.5,
+      "end": 18.58,
+      "type": "spacing",
+      "logprob": -3.3378546504536644e-06
+    },
+    {
+      "text": "sent",
+      "start": 18.58,
+      "end": 18.84,
+      "type": "word",
+      "logprob": -3.3378546504536644e-06
+    },
+    {
+      "text": " ",
+      "start": 18.84,
+      "end": 18.94,
+      "type": "spacing",
+      "logprob": -1.6689286894688848e-06
+    },
+    {
+      "text": "AC",
+      "start": 18.94,
+      "end": 19.5,
+      "type": "word",
+      "logprob": -1.6689286894688848e-06
+    },
+    {
+      "text": " ",
+      "start": 19.5,
+      "end": 19.9,
+      "type": "spacing",
+      "logprob": -0.18114669620990753
+    },
+    {
+      "text": "22",
+      "start": 19.92,
+      "end": 20.62,
+      "type": "word",
+      "logprob": -1.8477420553608681e-06
+    },
+    {
+      "text": " ",
+      "start": 20.62,
+      "end": 20.74,
+      "type": "spacing",
+      "logprob": -5.245195097813848e-06
+    },
+    {
+      "text": "miles",
+      "start": 20.74,
+      "end": 21.24,
+      "type": "word",
+      "logprob": -5.245195097813848e-06
+    },
+    {
+      "text": " ",
+      "start": 21.24,
+      "end": 21.3,
+      "type": "spacing",
+      "logprob": -5.960462772236497e-07
+    },
+    {
+      "text": "to",
+      "start": 21.3,
+      "end": 21.4,
+      "type": "word",
+      "logprob": -5.960462772236497e-07
+    },
+    {
+      "text": " ",
+      "start": 21.4,
+      "end": 21.44,
+      "type": "spacing",
+      "logprob": -0.00014065706636756659
+    },
+    {
+      "text": "Buffalo,",
+      "start": 21.44,
+      "end": 21.92,
+      "type": "word",
+      "logprob": -0.00016045635493355803
+    },
+    {
+      "text": " ",
+      "start": 21.92,
+      "end": 22.42,
+      "type": "spacing",
+      "logprob": -3.3378546504536644e-06
+    },
+    {
+      "text": "proving",
+      "start": 22.42,
+      "end": 22.86,
+      "type": "word",
+      "logprob": -3.3378546504536644e-06
+    },
+    {
+      "text": " ",
+      "start": 22.86,
+      "end": 23.02,
+      "type": "spacing",
+      "logprob": 0.0
+    },
+    {
+      "text": "just",
+      "start": 23.02,
+      "end": 23.34,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": " ",
+      "start": 23.34,
+      "end": 23.4,
+      "type": "spacing",
+      "logprob": 0.0
+    },
+    {
+      "text": "how",
+      "start": 23.4,
+      "end": 23.76,
+      "type": "word",
+      "logprob": 0.0
+    }
+  ],
+  "transcription_id": "6ZcmJlrQ4WeEBZcRAO6I",
+  "audio_duration_secs": 23.84
+}

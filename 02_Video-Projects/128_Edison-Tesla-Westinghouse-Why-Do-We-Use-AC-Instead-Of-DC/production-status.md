@@ -15,11 +15,11 @@
 | Script draft & review | **LOCKED — Acting Chief (`gemini`) `KEEP` (`J3660`, 25 Nov 2026; HOS PR `#762` merged `84af0f7d05701a5147d7ad7fb30403a0152e80ff`, superseding PRs `#758`/`#760`/`#751`/`#725`; `J3547` closed `done`):** `01_Script/edison_tesla_ac_dc_script_master_v03.md` (`sha256 c389c3cf...`) is the sole `master` script (superseded `v01`/`v02` renamed to `_draft.md`) — independently verified `review:script` **PASS 91.9/100**, default `gate:episode` (no `--script`) **PASS**, and `check_all.sh` **ALL CHECKS PASS** (exact outputs pasted below). Counts and nominal `150 wpm` timestamps remain planning estimates pending measured VO takes. |
 | Facts & Sources | **LOCKED (`J3660`, 25 Nov 2026, PR `#762` merged `84af0f7d`):** [`01_Script/FACT_NOTES_v03.md`](01_Script/FACT_NOTES_v03.md) (`4104ad2d...`) + [`01_Script/SOURCES.md`](01_Script/SOURCES.md) (`be44dd42...`) verified across `J3629`/`J3630`/`J3660` with `FIX-1`..`FIX-4`, all 6 primary institutional upgrades, Row 2 `[...]` ellipsis, and Acting Chief `J3630` Niagara ruling (`NPS NRIS 75001212` `22 miles` / `15 Nov 1896` accepted with ETHW `20 miles` / US DOE `Nov. 16` variance logged). |
 | Episode gate | **PASS** on exact locked `v03` via default `npm run gate:episode` **WITHOUT `--script`** (pasted below; VO queued under `J3670`/`J3671`; **picture & thumbnail generation remain strictly blocked until Chief VO PASS** — `£0.00` spent). |
-| VO | queued (`J3670` long VO 6 parts, `J3671` Shorts `S01`/`S02` VO — Ben Orbit Narrator via `el_client.py`/`vo_take.py` on Mac mini under normal ElevenLabs credit rules) |
+| VO | Long VO parked (`J3670`, 6 parts / `9,062` chars, awaits `2026-11-30T10:50Z` ElevenLabs reset). **Shorts `S01`/`S02` VO recorded (`J3671`, 26 Nov 2026 — pending non-producer Chief VO PASS):** `hos_128_short_S01_v03_tight` (`18.54 s`, `atempo = 1.00`, `vo_check` PASS) & `hos_128_short_S02_v03b_tight` (`18.39 s`, `atempo = 1.00`, `vo_check` PASS, `0` word diffs); `373` credits settled (`7,630` left); see [`10_Shorts/vo_v03/VO_STATUS.md`](10_Shorts/vo_v03/VO_STATUS.md). |
 | Picture | pending (Flow Veo 3.1, plate library — blocked until Chief VO PASS) |
 | Runtime target | 7–9 min, 6 parts (5 chapter cards; nominal `1,314` words / `8.8 min` estimate pending measured VO) |
-| Air | **Thu 10 Dec 2026, 18:00 London**, normal publish (no Premiere); **slip contingency preserved:** slides to Thu 17 Dec if not ready for Ben's watch by Mon 7 Dec |
-| Shorts | **LOCKED (`J3660`, 25 Nov 2026, PR `#762` merged `84af0f7d`):** [`10_Shorts/SHORTS_SCRIPTS_v03.md`](10_Shorts/SHORTS_SCRIPTS_v03.md) (`1132ad9f...`, 16–19 s Ben 19 Nov house rules, nominal estimates pending measured VO): `S01` *Why Couldn't Thomas Edison's DC Power Cross a City?* (**Fri 11 Dec 11:30**, `38` whitespace / `39` spoken words ≈ `~17.1 s` nominal) & `S02` *How Did Nikola Tesla's AC Beat Edison's DC?* (**Sat 12 Dec 11:30**, `38` whitespace / `40` spoken words ≈ `~17.4 s` nominal, `TESLA PATENT · 1888` overlay `6.4–8.6 s`, Chief Niagara ruling logged). Shorts VO queued in `J3671`. |
+| Air | **Thu 7 Jan 2027, 18:00 London** (unified `J3734` line-up, Ben watch Mon 4 Jan 2027; normal publish, no Premiere; superseded earlier Thu 10 Dec / Mon 7 Dec → Thu 17 Dec slip target) |
+| Shorts | **Scripts LOCKED (`J3660`, PR `#762` merged `84af0f7d`) · VO RECORDED (`J3671`, 26 Nov 2026 — awaiting non-producer Chief VO PASS):** [`10_Shorts/SHORTS_SCRIPTS_v03.md`](10_Shorts/SHORTS_SCRIPTS_v03.md) (`1132ad9f...`, 16–19 s Ben 19 Nov house rules) & [`10_Shorts/vo_v03/VO_STATUS.md`](10_Shorts/vo_v03/VO_STATUS.md): `S01` *Why Couldn't Thomas Edison's DC Power Cross a City?* (`hos_128_short_S01_v03_tight.wav`, **`18.54 s`**, `-20.1 LUFS`, `atempo = 1.00`, `vo_check` PASS) & `S02` *How Did Nikola Tesla's AC Beat Edison's DC?* (`hos_128_short_S02_v03b_tight.wav`, **`18.39 s`**, `-20.3 LUFS`, `atempo = 1.00`, `vo_check` PASS, `0` word diffs). Shorts target Fri 8 Jan / Sat 9 Jan 2027 (`11:30 London`, after Thu 7 Jan long). |
 
 ## Exact `v03` SHA-256 Hashes (`J3659`, `2026-11-25`)
 
@@ -121,5 +121,26 @@ ALL CHECKS PASS
 | 04 | The War of the Currents | pending VO lock | — | Script v03 locked (`J3660`); long VO queued (`J3670`) |
 | 05 | The White City and Niagara | pending VO lock | — | Script v03 locked (`J3660`); long VO queued (`J3670`) |
 | 06 | Why Both Currents Won | pending VO lock | — | Script v03 locked (`J3660`); long VO queued (`J3670`) |
+
+## Shorts VO Takes (`J3671`, `2026-11-26` — Pending Non-Producer Chief VO PASS)
+
+- Locked script verified pre-spend: `10_Shorts/SHORTS_SCRIPTS_v03.md` (`sha256: 1132ad9f8b44d4e545f699bf702b83894370effb34afe37ce12b25a2080694e7`).
+- Full take record, word timings, and credit ledger: [`10_Shorts/vo_v03/VO_STATUS.md`](10_Shorts/vo_v03/VO_STATUS.md). Audio stored on the NAS under `/Volumes/data/studio-live/History Of Science/02_Video-Projects/128_Edison-Tesla-Westinghouse-Why-Do-We-Use-AC-Instead-Of-DC/10_Shorts/vo_v03/` (SHA-256 verified; zero media in git).
+- Candidate masters (`16.0–19.0 s` house band, `atempo = 1.00`, inter-sentence silence trim only):
+  - `hos_128_short_S01_v03_tight`: `18.54 s` · `-20.1 LUFS` · WAV `931718a6429c8559e77adf2bbd02d549d653f18d5dd6fba683b66e203eb98168` · MP3 `40606376678a64f1a05a38f65cf58d74c99885ae09253e4a6ad66da70146cec1`
+  - `hos_128_short_S02_v03b_tight`: `18.39 s` · `-20.3 LUFS` · WAV `cc51cc86810edd72265848b403b90ae26b814058971aedee1a20929b2e4f9106` · MP3 `feb068bc83e18b91fdf1e60419a9b49ef4d09a8aa54e79e7d1af143759c6c8da`
+- Raw takes kept on NAS: `hos_128_short_S01_v03` (`20.00 s`, WAV `31d2abb8...`), `hos_128_short_S02_v03` (`23.84 s`, rejected on pacing, WAV `fda89c90...`), `hos_128_short_S02_v03b` (`19.68 s`, Acting-Chief-cleared retake, WAV `5a8f2b25...`).
+- ElevenLabs spend settled: `8,003 → 7,630` of `121,114` chars (`373` credits delta across `803` spoken chars; resets `2026-11-30T10:50:31Z`; floor `0`; `£0`).
+
+### `00_Brand/Channel-Setup/tools/vo_check_py312.sh` (candidate masters)
+
+```text
+PASS  hos_128_short_S01_v03_tight.wav  0:18.54  mean -22.6 dB  peak -4.0 dB  126 wpm
+   warn  pace 126 wpm (< 145); expect a long film — see STUDIO_PLAYBOOK.md §4 speed
+   warn  replace at ~0:12.54: script 'transformers boosted voltage tenfold cutting wire heat' / heard 'transformers boosted voltage fold cutting wire heat' — sounds alike (likely the transcriber); listen
+
+PASS  hos_128_short_S02_v03b_tight.wav  0:18.39  mean -23.1 dB  peak -3.8 dB  131 wpm
+   warn  pace 131 wpm (< 145); expect a long film — see STUDIO_PLAYBOOK.md §4 speed
+```
 
 Keep this file current on `main`. A STOP (quota, auth, missing VO) is a line here, not an open branch.

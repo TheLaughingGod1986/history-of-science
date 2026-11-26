@@ -1,0 +1,29 @@
+{
+  "file": "/Volumes/MiniWork/desk/worktrees/hos-J3671/02_Video-Projects/128_Edison-Tesla-Westinghouse-Why-Do-We-Use-AC-Instead-Of-DC/10_Shorts/vo_v03/hos_128_short_S01_v03_tight.wav",
+  "part": null,
+  "fails": [],
+  "warns": [
+    "pace 126 wpm (< 145); expect a long film — see STUDIO_PLAYBOOK.md §4 speed",
+    "replace at ~0:12.54: script 'transformers boosted voltage tenfold cutting wire heat' / heard 'transformers boosted voltage fold cutting wire heat' — sounds alike (likely the transcriber); listen"
+  ],
+  "duration_s": 18.54,
+  "duration": "0:18.54",
+  "mean_db": -22.6,
+  "peak_db": -4.0,
+  "pauses_over_1s": [],
+  "asr": "faster-whisper small.en",
+  "script_words": 37,
+  "heard_words": 37,
+  "wpm": 126,
+  "word_diffs": [
+    {
+      "at": "0:12.54",
+      "op": "replace",
+      "sounds_alike": true,
+      "script": "transformers boosted voltage tenfold cutting wire heat",
+      "heard": "transformers boosted voltage fold cutting wire heat"
+    }
+  ],
+  "first_minute": {},
+  "verdict": "PASS"
+}

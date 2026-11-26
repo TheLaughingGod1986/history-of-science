@@ -36,9 +36,20 @@
       "note": "Acting Chief (gemini) KEEP/lock via J3660 (25 Nov 2026, HOS PR #762 merged 84af0f7d): SHORTS_SCRIPTS_v03.md (sha256 1132ad9f..., S01 Fri 11 Dec & S02 Sat 12 Dec, 16-19s Ben 19 Nov rules)"
     },
     "shorts_vo": {
-      "state": "todo",
+      "state": "doing",
       "due": "2026-12-03",
-      "waiting": "J3671 queued — runs right after J3670 post-30-Nov reset"
+      "owner": "Chief",
+      "since": "2026-11-26",
+      "underway": false,
+      "waiting": "Non-producer Chief VO review and PASS on hos_128_short_S01_v03_tight (18.54 s) and hos_128_short_S02_v03b_tight (18.39 s)",
+      "steps": [
+        2,
+        2
+      ],
+      "steps_unit": "Shorts recorded and vo_check PASS (awaiting Chief VO PASS)",
+      "left": "about 15 minutes (Chief VO review)",
+      "eta": "2026-11-27",
+      "note": "J3671 (26 Nov): recorded S01 (v03 raw 20.00 s -> pause-tightened 18.54 s, atempo 1.00, vo_check PASS) & S02 (v03 23.84 s rejected on pacing -> Acting Chief retake v03b 19.68 s -> pause-tightened 18.39 s, atempo 1.00, vo_check PASS, 0 word diffs); NAS SHA-256 verified; 373 ElevenLabs credits settled (7,630 left); parked for non-producer Chief VO PASS."
     },
     "picture": {
       "state": "todo",

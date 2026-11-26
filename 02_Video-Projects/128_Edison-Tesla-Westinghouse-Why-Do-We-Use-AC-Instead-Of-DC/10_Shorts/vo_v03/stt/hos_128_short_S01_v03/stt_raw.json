@@ -1,0 +1,548 @@
+{
+  "language_code": "eng",
+  "language_probability": 1.0,
+  "text": "Edison's direct current couldn't affordably cross a city. Low voltage meant heavy current, wasting energy as heat unless cables grew hugely expensive. Alternating current transformers boosted voltage tenfold, cutting wire heat a hundred times. That simple physics explains why",
+  "words": [
+    {
+      "text": "Edison's",
+      "start": 0.14,
+      "end": 0.62,
+      "type": "word",
+      "logprob": -0.005391552359697016
+    },
+    {
+      "text": " ",
+      "start": 0.62,
+      "end": 0.68,
+      "type": "spacing",
+      "logprob": -0.00020382710499688983
+    },
+    {
+      "text": "direct",
+      "start": 0.68,
+      "end": 1.14,
+      "type": "word",
+      "logprob": -0.00020382710499688983
+    },
+    {
+      "text": " ",
+      "start": 1.14,
+      "end": 1.22,
+      "type": "spacing",
+      "logprob": -5.006777428206988e-06
+    },
+    {
+      "text": "current",
+      "start": 1.22,
+      "end": 1.56,
+      "type": "word",
+      "logprob": -5.006777428206988e-06
+    },
+    {
+      "text": " ",
+      "start": 1.56,
+      "end": 1.66,
+      "type": "spacing",
+      "logprob": -1.5497195136049413e-06
+    },
+    {
+      "text": "couldn't",
+      "start": 1.66,
+      "end": 1.9,
+      "type": "word",
+      "logprob": -5.587856293232107e-06
+    },
+    {
+      "text": " ",
+      "start": 1.9,
+      "end": 1.96,
+      "type": "spacing",
+      "logprob": -7.891343557275832e-05
+    },
+    {
+      "text": "affordably",
+      "start": 1.96,
+      "end": 2.6,
+      "type": "word",
+      "logprob": -4.7538796161461504e-05
+    },
+    {
+      "text": " ",
+      "start": 2.6,
+      "end": 2.66,
+      "type": "spacing",
+      "logprob": -9.762764238985255e-05
+    },
+    {
+      "text": "cross",
+      "start": 2.66,
+      "end": 2.86,
+      "type": "word",
+      "logprob": -9.762764238985255e-05
+    },
+    {
+      "text": " ",
+      "start": 2.86,
+      "end": 2.9,
+      "type": "spacing",
+      "logprob": -8.702239938429557e-06
+    },
+    {
+      "text": "a",
+      "start": 2.9,
+      "end": 2.96,
+      "type": "word",
+      "logprob": -8.702239938429557e-06
+    },
+    {
+      "text": " ",
+      "start": 2.96,
+      "end": 3.0,
+      "type": "spacing",
+      "logprob": -3.4570634852570947e-06
+    },
+    {
+      "text": "city.",
+      "start": 3.0,
+      "end": 3.4,
+      "type": "word",
+      "logprob": -9.870398571365513e-06
+    },
+    {
+      "text": " ",
+      "start": 3.4,
+      "end": 4.08,
+      "type": "spacing",
+      "logprob": -8.34461570775602e-06
+    },
+    {
+      "text": "Low",
+      "start": 4.08,
+      "end": 4.26,
+      "type": "word",
+      "logprob": -8.34461570775602e-06
+    },
+    {
+      "text": " ",
+      "start": 4.26,
+      "end": 4.34,
+      "type": "spacing",
+      "logprob": -3.576272320060525e-06
+    },
+    {
+      "text": "voltage",
+      "start": 4.34,
+      "end": 4.78,
+      "type": "word",
+      "logprob": -3.576272320060525e-06
+    },
+    {
+      "text": " ",
+      "start": 4.78,
+      "end": 4.88,
+      "type": "spacing",
+      "logprob": -7.152555099310121e-07
+    },
+    {
+      "text": "meant",
+      "start": 4.88,
+      "end": 5.04,
+      "type": "word",
+      "logprob": -7.152555099310121e-07
+    },
+    {
+      "text": " ",
+      "start": 5.04,
+      "end": 5.2,
+      "type": "spacing",
+      "logprob": -7.152555099310121e-07
+    },
+    {
+      "text": "heavy",
+      "start": 5.2,
+      "end": 5.44,
+      "type": "word",
+      "logprob": -7.152555099310121e-07
+    },
+    {
+      "text": " ",
+      "start": 5.44,
+      "end": 5.56,
+      "type": "spacing",
+      "logprob": -1.1444026313256472e-05
+    },
+    {
+      "text": "current,",
+      "start": 5.56,
+      "end": 5.94,
+      "type": "word",
+      "logprob": -0.0001283323299503536
+    },
+    {
+      "text": " ",
+      "start": 5.94,
+      "end": 6.36,
+      "type": "spacing",
+      "logprob": -1.2516897186287679e-05
+    },
+    {
+      "text": "wasting",
+      "start": 6.36,
+      "end": 6.7,
+      "type": "word",
+      "logprob": -1.2516897186287679e-05
+    },
+    {
+      "text": " ",
+      "start": 6.7,
+      "end": 6.76,
+      "type": "spacing",
+      "logprob": -2.3841855067985307e-07
+    },
+    {
+      "text": "energy",
+      "start": 6.76,
+      "end": 7.04,
+      "type": "word",
+      "logprob": -2.3841855067985307e-07
+    },
+    {
+      "text": " ",
+      "start": 7.04,
+      "end": 7.08,
+      "type": "spacing",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": "as",
+      "start": 7.08,
+      "end": 7.2,
+      "type": "word",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": " ",
+      "start": 7.2,
+      "end": 7.26,
+      "type": "spacing",
+      "logprob": -1.0728830375228426e-06
+    },
+    {
+      "text": "heat",
+      "start": 7.26,
+      "end": 7.56,
+      "type": "word",
+      "logprob": -1.0728830375228426e-06
+    },
+    {
+      "text": " ",
+      "start": 7.56,
+      "end": 7.62,
+      "type": "spacing",
+      "logprob": -0.004790851846337318
+    },
+    {
+      "text": "unless",
+      "start": 7.62,
+      "end": 7.9,
+      "type": "word",
+      "logprob": -0.004790851846337318
+    },
+    {
+      "text": " ",
+      "start": 7.9,
+      "end": 7.96,
+      "type": "spacing",
+      "logprob": -7.986990567587782e-06
+    },
+    {
+      "text": "cables",
+      "start": 7.96,
+      "end": 8.38,
+      "type": "word",
+      "logprob": -7.986990567587782e-06
+    },
+    {
+      "text": " ",
+      "start": 8.38,
+      "end": 8.44,
+      "type": "spacing",
+      "logprob": -3.576278118089249e-07
+    },
+    {
+      "text": "grew",
+      "start": 8.44,
+      "end": 8.68,
+      "type": "word",
+      "logprob": -3.576278118089249e-07
+    },
+    {
+      "text": " ",
+      "start": 8.68,
+      "end": 8.76,
+      "type": "spacing",
+      "logprob": -5.960462772236497e-07
+    },
+    {
+      "text": "hugely",
+      "start": 8.76,
+      "end": 9.12,
+      "type": "word",
+      "logprob": -5.960462772236497e-07
+    },
+    {
+      "text": " ",
+      "start": 9.12,
+      "end": 9.16,
+      "type": "spacing",
+      "logprob": -4.768370445162873e-07
+    },
+    {
+      "text": "expensive.",
+      "start": 9.16,
+      "end": 9.94,
+      "type": "word",
+      "logprob": -6.556507401001e-07
+    },
+    {
+      "text": " ",
+      "start": 9.94,
+      "end": 9.94,
+      "type": "spacing",
+      "logprob": -0.0007316772826015949
+    },
+    {
+      "text": "Alternating",
+      "start": 11.04,
+      "end": 11.52,
+      "type": "word",
+      "logprob": -0.0004006139062601671
+    },
+    {
+      "text": " ",
+      "start": 11.52,
+      "end": 11.6,
+      "type": "spacing",
+      "logprob": -2.95634672511369e-05
+    },
+    {
+      "text": "current",
+      "start": 11.6,
+      "end": 11.84,
+      "type": "word",
+      "logprob": -2.95634672511369e-05
+    },
+    {
+      "text": " ",
+      "start": 11.84,
+      "end": 11.9,
+      "type": "spacing",
+      "logprob": -2.0146166207268834e-05
+    },
+    {
+      "text": "transformers",
+      "start": 11.9,
+      "end": 12.58,
+      "type": "word",
+      "logprob": -2.0146166207268834e-05
+    },
+    {
+      "text": " ",
+      "start": 12.58,
+      "end": 12.76,
+      "type": "spacing",
+      "logprob": -5.245195097813848e-06
+    },
+    {
+      "text": "boosted",
+      "start": 12.76,
+      "end": 13.1,
+      "type": "word",
+      "logprob": -5.245195097813848e-06
+    },
+    {
+      "text": " ",
+      "start": 13.1,
+      "end": 13.18,
+      "type": "spacing",
+      "logprob": -2.861018856492592e-06
+    },
+    {
+      "text": "voltage",
+      "start": 13.18,
+      "end": 13.56,
+      "type": "word",
+      "logprob": -2.861018856492592e-06
+    },
+    {
+      "text": " ",
+      "start": 13.56,
+      "end": 13.7,
+      "type": "spacing",
+      "logprob": -2.861018856492592e-06
+    },
+    {
+      "text": "tenfold,",
+      "start": 13.7,
+      "end": 14.3,
+      "type": "word",
+      "logprob": -2.831216619370025e-06
+    },
+    {
+      "text": " ",
+      "start": 14.3,
+      "end": 14.72,
+      "type": "spacing",
+      "logprob": -5.8412379075889476e-06
+    },
+    {
+      "text": "cutting",
+      "start": 14.72,
+      "end": 15.04,
+      "type": "word",
+      "logprob": -5.8412379075889476e-06
+    },
+    {
+      "text": " ",
+      "start": 15.04,
+      "end": 15.1,
+      "type": "spacing",
+      "logprob": -4.768370445162873e-07
+    },
+    {
+      "text": "wire",
+      "start": 15.1,
+      "end": 15.36,
+      "type": "word",
+      "logprob": -4.768370445162873e-07
+    },
+    {
+      "text": " ",
+      "start": 15.36,
+      "end": 15.42,
+      "type": "spacing",
+      "logprob": -8.4638240878121e-06
+    },
+    {
+      "text": "heat",
+      "start": 15.42,
+      "end": 15.68,
+      "type": "word",
+      "logprob": -8.4638240878121e-06
+    },
+    {
+      "text": " ",
+      "start": 15.68,
+      "end": 15.76,
+      "type": "spacing",
+      "logprob": -0.00523636257275939
+    },
+    {
+      "text": "a",
+      "start": 15.76,
+      "end": 15.82,
+      "type": "word",
+      "logprob": -0.00523636257275939
+    },
+    {
+      "text": " ",
+      "start": 15.82,
+      "end": 15.88,
+      "type": "spacing",
+      "logprob": -7.390948667307384e-06
+    },
+    {
+      "text": "hundred",
+      "start": 15.88,
+      "end": 16.219,
+      "type": "word",
+      "logprob": -7.390948667307384e-06
+    },
+    {
+      "text": " ",
+      "start": 16.219,
+      "end": 16.34,
+      "type": "spacing",
+      "logprob": -8.344646857949556e-07
+    },
+    {
+      "text": "times.",
+      "start": 16.34,
+      "end": 16.9,
+      "type": "word",
+      "logprob": -9.338056467337689e-07
+    },
+    {
+      "text": " ",
+      "start": 16.9,
+      "end": 16.9,
+      "type": "spacing",
+      "logprob": -7.152555099310121e-07
+    },
+    {
+      "text": "That",
+      "start": 17.78,
+      "end": 17.98,
+      "type": "word",
+      "logprob": -7.152555099310121e-07
+    },
+    {
+      "text": " ",
+      "start": 17.98,
+      "end": 18.06,
+      "type": "spacing",
+      "logprob": -4.0531076592742465e-06
+    },
+    {
+      "text": "simple",
+      "start": 18.06,
+      "end": 18.4,
+      "type": "word",
+      "logprob": -4.0531076592742465e-06
+    },
+    {
+      "text": " ",
+      "start": 18.4,
+      "end": 18.48,
+      "type": "spacing",
+      "logprob": -2.0265558760002023e-06
+    },
+    {
+      "text": "physics",
+      "start": 18.48,
+      "end": 18.94,
+      "type": "word",
+      "logprob": -2.0265558760002023e-06
+    },
+    {
+      "text": " ",
+      "start": 18.94,
+      "end": 19.02,
+      "type": "spacing",
+      "logprob": -3.099436753473128e-06
+    },
+    {
+      "text": "explains",
+      "start": 19.02,
+      "end": 19.54,
+      "type": "word",
+      "logprob": -3.099436753473128e-06
+    },
+    {
+      "text": " ",
+      "start": 19.54,
+      "end": 19.6,
+      "type": "spacing",
+      "logprob": -1.6689286894688848e-06
+    },
+    {
+      "text": "why",
+      "start": 19.6,
+      "end": 19.88,
+      "type": "word",
+      "logprob": -1.6689286894688848e-06
+    }
+  ],
+  "transcription_id": "xzPn5TkZ107u86cJYoK5",
+  "audio_duration_secs": 20.0
+}
