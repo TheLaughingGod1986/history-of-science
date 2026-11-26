@@ -1,0 +1,76 @@
+{
+  "job": "J3763",
+  "film": "008_Lightning-Franklin",
+  "short_id": "s04_no_patent",
+  "version": "v01",
+  "status": "PARKED_FOR_CHIEF_SHORT_PASS",
+  "rule": "Test B (HOS PR #261) + Ben 19 Nov 2026 Shorts house rules (16-19 s, 3D cartoon moving frame 0, concrete-fact hook caption, seamless loop)",
+  "selection_reason": "HOS 008 (Benjamin Franklin's Kite Experiment Explained, YqCWYlv_LCY) is tied for fewest built Shorts (2: Short A v04 & Short C v07) among locked HOS longs 004-009 and is first in locked-long order (airing Thu 26 Nov 18:00 UK).",
+  "master_nas_path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/008_Lightning-Franklin/10_Shorts/J3763/hos_008_s04_no_patent_v01.mp4",
+  "master_sha256": "e162a0fbe05e519ae822aededabf62172396594d4f564081d539db724f03809c",
+  "duration_s": 16.1,
+  "youtube_title_draft": "Why Did Franklin Never Patent the Lightning Rod?",
+  "youtube_title_alt": "Who Invented the Lightning Rod? (And Gave It Away)",
+  "public_search_evidence": "10_Shorts/evidence_2026-11-26_s04_no_patent_public_search.json",
+  "promotes_long_title": "Benjamin Franklin's Kite Experiment Explained",
+  "promotes_video_id": "YqCWYlv_LCY",
+  "vo_source": "02_Voiceover/hos_008_part05_the_rod_on_every_roof_v01b.mp3 (60.12-74.88 s, atempo 1.00)",
+  "vo_src_sha256": "e5e86140d0b7e5598eb8eeca39d0f260c2dcc9b698b36c119a8c51283c990c38",
+  "spoken": "Franklin never patented his lightning rod. He wanted everyone to have it. Within a few years, rods were going up on churches, houses, and ships' masts, and one by one, church towers became safer places to stand.",
+  "loop_sentence": "\u2026and one by one, church towers became safer places to stand. Franklin never patented his lightning rod.",
+  "who_card": {
+    "kind": "WHO",
+    "line1": "Benjamin Franklin",
+    "line2": "1706\u20131790 \u00b7 Printer & inventor",
+    "in_s": 2.45,
+    "out_s": 5.25,
+    "fade_s": 0.35,
+    "box_y_px": [
+      920,
+      1099
+    ],
+    "band_y_px": [
+      578,
+      1113
+    ]
+  },
+  "hook": {
+    "lines": [
+      "Franklin never",
+      "patented his",
+      "lightning rod."
+    ],
+    "font_size": 104,
+    "cap_px": 74,
+    "cap_pct": 4.37,
+    "box_pct_y": [
+      17.0,
+      42.3
+    ]
+  },
+  "title_overlay": {
+    "title": "Benjamin Franklin's Kite Experiment Explained",
+    "video_id": "YqCWYlv_LCY",
+    "in_s": 9.0,
+    "out_s": 13.8,
+    "box_y_px": [
+      194,
+      398
+    ]
+  },
+  "level": {
+    "lufs": -13.6,
+    "true_peak_dbtp": -1.8,
+    "loudnorm_I": -12.0
+  },
+  "gates": {
+    "sfx": 0,
+    "polish": 0,
+    "picture": 0,
+    "music": 0,
+    "open": 0
+  },
+  "spend_gbp": 0,
+  "spend_credits": 0,
+  "uploaded": false
+}

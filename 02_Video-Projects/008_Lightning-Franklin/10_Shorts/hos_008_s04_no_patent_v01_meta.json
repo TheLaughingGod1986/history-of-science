@@ -1,0 +1,342 @@
+{
+  "film": "008",
+  "short_id": "s04_no_patent",
+  "version": "v01",
+  "file": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/008_Lightning-Franklin/10_Shorts/J3763/hos_008_s04_no_patent_v01.mp4",
+  "sha256": "e162a0fbe05e519ae822aededabf62172396594d4f564081d539db724f03809c",
+  "duration_s": 16.1,
+  "youtube_title_draft": "Why Did Franklin Never Patent the Lightning Rod?",
+  "youtube_title_alt": "Who Invented the Lightning Rod? (And Gave It Away)",
+  "promotes": "008",
+  "promotes_video_id": "YqCWYlv_LCY",
+  "title_on_screen": "Benjamin Franklin's Kite Experiment Explained",
+  "spoken": "Franklin never patented his lightning rod. He wanted everyone to have it. Within a few years, rods were going up on churches, houses, and ships' masts, and one by one, church towers became safer places to stand.",
+  "vo_source": "02_Voiceover/hos_008_part05_the_rod_on_every_roof_v01b.mp3 (60.12-74.88 s, atempo 1.00)",
+  "vo_src_sha256": "e5e86140d0b7e5598eb8eeca39d0f260c2dcc9b698b36c119a8c51283c990c38",
+  "words_count": 37,
+  "first_word_s": 0.06,
+  "last_word_end_s": 14.66,
+  "tail_gap_s": 1.42,
+  "loop_sentence": "\u2026and one by one, church towers became safer places to stand. Franklin never patented his lightning rod.",
+  "hook": {
+    "lines": [
+      "Franklin never",
+      "patented his",
+      "lightning rod."
+    ],
+    "font_size": 104,
+    "cap_px": 74,
+    "cap_pct": 4.37,
+    "box_pct_y": [
+      17.0,
+      42.3
+    ]
+  },
+  "card": {
+    "kind": "WHO",
+    "line1": "Benjamin Franklin",
+    "line2": "1706\u20131790 \u00b7 Printer & inventor",
+    "in_s": 2.45,
+    "out_s": 5.25,
+    "fade_s": 0.35,
+    "box_y_px": [
+      920,
+      1099
+    ],
+    "band_y_px": [
+      578,
+      1113
+    ]
+  },
+  "title_overlay": {
+    "title": "Benjamin Franklin's Kite Experiment Explained",
+    "video_id": "YqCWYlv_LCY",
+    "in_s": 9.0,
+    "out_s": 13.8,
+    "box_y_px": [
+      194,
+      398
+    ]
+  },
+  "captions": [
+    {
+      "word": "Franklin",
+      "start": 0.06,
+      "end": 0.52
+    },
+    {
+      "word": "never",
+      "start": 0.62,
+      "end": 0.82
+    },
+    {
+      "word": "patented",
+      "start": 0.94,
+      "end": 1.4
+    },
+    {
+      "word": "his",
+      "start": 1.44,
+      "end": 1.56
+    },
+    {
+      "word": "lightning",
+      "start": 1.62,
+      "end": 1.96
+    },
+    {
+      "word": "rod.",
+      "start": 2.06,
+      "end": 2.32
+    },
+    {
+      "word": "He",
+      "start": 2.76,
+      "end": 2.84
+    },
+    {
+      "word": "wanted",
+      "start": 2.88,
+      "end": 3.14
+    },
+    {
+      "word": "everyone",
+      "start": 3.22,
+      "end": 3.62
+    },
+    {
+      "word": "to",
+      "start": 3.68,
+      "end": 3.78
+    },
+    {
+      "word": "have",
+      "start": 3.82,
+      "end": 3.979
+    },
+    {
+      "word": "it.",
+      "start": 4.04,
+      "end": 4.24
+    },
+    {
+      "word": "Within",
+      "start": 4.82,
+      "end": 5.0
+    },
+    {
+      "word": "a",
+      "start": 5.06,
+      "end": 5.119
+    },
+    {
+      "word": "few",
+      "start": 5.16,
+      "end": 5.38
+    },
+    {
+      "word": "years,",
+      "start": 5.44,
+      "end": 5.84
+    },
+    {
+      "word": "rods",
+      "start": 6.22,
+      "end": 6.48
+    },
+    {
+      "word": "were",
+      "start": 6.5,
+      "end": 6.6
+    },
+    {
+      "word": "going",
+      "start": 6.64,
+      "end": 6.86
+    },
+    {
+      "word": "up",
+      "start": 6.94,
+      "end": 7.06
+    },
+    {
+      "word": "on",
+      "start": 7.12,
+      "end": 7.26
+    },
+    {
+      "word": "churches,",
+      "start": 7.32,
+      "end": 7.98
+    },
+    {
+      "word": "houses,",
+      "start": 8.14,
+      "end": 8.7
+    },
+    {
+      "word": "and",
+      "start": 8.74,
+      "end": 8.84
+    },
+    {
+      "word": "ships'",
+      "start": 8.96,
+      "end": 9.22
+    },
+    {
+      "word": "masts,",
+      "start": 9.34,
+      "end": 9.9
+    },
+    {
+      "word": "and",
+      "start": 10.44,
+      "end": 10.56
+    },
+    {
+      "word": "one",
+      "start": 10.64,
+      "end": 10.78
+    },
+    {
+      "word": "by",
+      "start": 10.86,
+      "end": 11.04
+    },
+    {
+      "word": "one,",
+      "start": 11.1,
+      "end": 11.36
+    },
+    {
+      "word": "church",
+      "start": 11.76,
+      "end": 12.12
+    },
+    {
+      "word": "towers",
+      "start": 12.18,
+      "end": 12.66
+    },
+    {
+      "word": "became",
+      "start": 12.7,
+      "end": 13.0
+    },
+    {
+      "word": "safer",
+      "start": 13.14,
+      "end": 13.44
+    },
+    {
+      "word": "places",
+      "start": 13.52,
+      "end": 13.98
+    },
+    {
+      "word": "to",
+      "start": 14.02,
+      "end": 14.14
+    },
+    {
+      "word": "stand.",
+      "start": 14.2,
+      "end": 14.66
+    }
+  ],
+  "level": {
+    "lufs": -13.6,
+    "true_peak_dbtp": -1.8,
+    "loudnorm_I": -12.0
+  },
+  "sfx_level": {
+    "exit": 0,
+    "output": "SFX level PASS: VO -19.8 LUFS, SFX -48.5 LUFS, 1 hits",
+    "bed_db": -18.0,
+    "sfx_db": -14.0
+  },
+  "bed_source": "05_Music/lightning008_score_bed_v02.mp3 (offset 320 s)",
+  "plan": [
+    {
+      "t0": 0.0,
+      "t1": 2.36,
+      "plate": "14_safe_towers_t1.mp4",
+      "plate_sha256": "0c7e98c2d89d2e4ef61271af00d71ae77d9e1e55b871b70bdc33ea79e81ffbdd",
+      "in_s": 1.2,
+      "crop_x": 1028,
+      "hold_s": 2.36,
+      "lands_on": "plate",
+      "upscale": 2.35
+    },
+    {
+      "t0": 2.36,
+      "t1": 5.3,
+      "plate": "12_no_patent_t1.mp4",
+      "plate_sha256": "9fab7ce3f4442a75659f522a11a69aef4ba8cfc407e6f49e91f34a27bcce2d45",
+      "in_s": 1.4,
+      "crop_x": 1450,
+      "hold_s": 2.94,
+      "lands_on": "plate",
+      "upscale": 2.35
+    },
+    {
+      "t0": 5.3,
+      "t1": 7.7,
+      "plate": "06_rod_fitting_t1.mp4",
+      "plate_sha256": "73c43fc2502c38dbbc8e65691402c6ee84e4937c429647f6270e2cc372fd38ad",
+      "in_s": 0.5,
+      "crop_x": 1028,
+      "hold_s": 2.4,
+      "lands_on": "plate",
+      "upscale": 2.35
+    },
+    {
+      "t0": 7.7,
+      "t1": 10.6,
+      "plate": "13_rods_spread_j2241_t2.mp4",
+      "plate_sha256": "f82abba9a06f3a9ef70aa46d7638f1cad9fe3374cbba530e7ffef773813e1a3a",
+      "in_s": 0.6,
+      "crop_x": 1028,
+      "hold_s": 2.9,
+      "lands_on": "plate",
+      "upscale": 2.35
+    },
+    {
+      "t0": 10.6,
+      "t1": 13.56,
+      "plate": "21_roofs_golden_t1.mp4",
+      "plate_sha256": "0bc8289232467793e26d2ba047e63855c2a495bfffc19b6828607f4df3e27413",
+      "in_s": 0.6,
+      "crop_x": 1028,
+      "hold_s": 2.96,
+      "lands_on": "plate",
+      "upscale": 2.35
+    },
+    {
+      "t0": 13.56,
+      "t1": 14.88,
+      "plate": "18_rod_closeup_t1.mp4",
+      "plate_sha256": "9535c72f68606a9de5293739535dd9b826ca624daf73889fa2aba46b5b36ce15",
+      "in_s": 0.6,
+      "crop_x": 1028,
+      "hold_s": 1.32,
+      "lands_on": "plate",
+      "upscale": 2.35
+    },
+    {
+      "t0": 14.88,
+      "t1": 16.08,
+      "plate": "14_safe_towers_t1.mp4",
+      "plate_sha256": "0c7e98c2d89d2e4ef61271af00d71ae77d9e1e55b871b70bdc33ea79e81ffbdd",
+      "in_s": 0.0,
+      "crop_x": 1028,
+      "hold_s": 1.2,
+      "lands_on": "loop",
+      "upscale": 2.35
+    }
+  ],
+  "upscale": 2.35,
+  "spend_gbp": 0,
+  "spend_credits": 0
+}

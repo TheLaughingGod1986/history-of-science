@@ -1,0 +1,6 @@
+PASS  hos_008_s04_no_patent_v01.mp4  dur=16.1s  audio=-16.7dB  motion=34.94  f0diff=4.75  cut1=2.37s  vo_onset=0.00s  tail_gap=1.44s  vo_src=/Volumes/data/mac-mini-archive/mini-tmp-scratch/J3763_work/hos_008_s04_no_patent_v01_vo.wav  dhash=0f07660287870343
+   full-bleed 0.00s  fills the frame  sharp above/middle/below=0.072/0.44/0.598  detail top/centre/bottom=4.9/14.38/6.09  spread top/bottom=38.88/53.36
+   full-bleed 0.25s  fills the frame  sharp above/middle/below=None/0.451/None  detail top/centre/bottom=4.0/14.21/6.34  spread top/bottom=32.91/61.35
+   full-bleed 0.50s  fills the frame  sharp above/middle/below=0.024/0.448/0.823  detail top/centre/bottom=4.43/14.09/7.04  spread top/bottom=36.3/57.38
+   full-bleed whole Short  0/17 frames padded at one a second, 0/33 at two a second  padded stretches: none  no end card named in meta
+   sheet /Volumes/data/studio-live/History Of Science/02_Video-Projects/008_Lightning-Franklin/10_Shorts/J3763/qa_s04_no_patent_v01/hos_008_s04_no_patent_v01_open_sheet.jpg

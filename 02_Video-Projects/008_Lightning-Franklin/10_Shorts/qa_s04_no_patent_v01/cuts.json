@@ -1,0 +1,86 @@
+[
+  {
+    "row": "s01",
+    "timeline_in": 0.0,
+    "timeline_out": 2.36,
+    "source": "14_safe_towers_t1.mp4",
+    "upscale": 2.35,
+    "video": true,
+    "framing": {
+      "offset": 1.2,
+      "crop_x": 1028
+    }
+  },
+  {
+    "row": "s02",
+    "timeline_in": 2.36,
+    "timeline_out": 5.3,
+    "source": "12_no_patent_t1.mp4",
+    "upscale": 2.35,
+    "video": true,
+    "framing": {
+      "offset": 1.4,
+      "crop_x": 1450
+    }
+  },
+  {
+    "row": "s03",
+    "timeline_in": 5.3,
+    "timeline_out": 7.7,
+    "source": "06_rod_fitting_t1.mp4",
+    "upscale": 2.35,
+    "video": true,
+    "framing": {
+      "offset": 0.5,
+      "crop_x": 1028
+    }
+  },
+  {
+    "row": "s04",
+    "timeline_in": 7.7,
+    "timeline_out": 10.6,
+    "source": "13_rods_spread_j2241_t2.mp4",
+    "upscale": 2.35,
+    "video": true,
+    "framing": {
+      "offset": 0.6,
+      "crop_x": 1028
+    }
+  },
+  {
+    "row": "s05",
+    "timeline_in": 10.6,
+    "timeline_out": 13.56,
+    "source": "21_roofs_golden_t1.mp4",
+    "upscale": 2.35,
+    "video": true,
+    "framing": {
+      "offset": 0.6,
+      "crop_x": 1028
+    }
+  },
+  {
+    "row": "s06",
+    "timeline_in": 13.56,
+    "timeline_out": 14.88,
+    "source": "18_rod_closeup_t1.mp4",
+    "upscale": 2.35,
+    "video": true,
+    "framing": {
+      "offset": 0.6,
+      "crop_x": 1028
+    }
+  },
+  {
+    "row": "s07",
+    "timeline_in": 14.88,
+    "timeline_out": 16.08,
+    "source": "loop_14_safe_towers_t1.mp4",
+    "upscale": 2.35,
+    "video": true,
+    "framing": {
+      "offset": 0.0,
+      "crop_x": 1028
+    }
+  }
+]
