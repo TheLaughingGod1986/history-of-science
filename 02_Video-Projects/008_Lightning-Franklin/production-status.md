@@ -496,3 +496,52 @@ ALL CHECKS PASS
   - `gate_shorts_open.py`: `PASS  hos_008_s04_no_patent_v01.mp4  dur=16.1s  audio=-16.7dB  motion=34.94  f0diff=4.75  cut1=2.37s  vo_onset=0.06s  tail_gap=1.44s  vo_src=mix  dhash=0f07660287870343` (full-bleed 0/17, 0/33)
   - `npm run lint:package -- --film 008`: `PASS  02_Video-Projects/008_Lightning-Franklin/10_Shorts/SHORTS_RELEASE.json`
   - `npm run channel:audit -- --write-live`: `PASS  Short f_-BsKZf8X0  private 2026-12-01 11:30 UK  Why Did Franklin Never Patent the Lightning Rod?` · `76 videos, 0 errors.`
+
+---
+
+## J3880 — J3877 corrections: Franklin pinned comment, `f_-BsKZf8X0` Paid promotion = No & open-library record (27 Nov 2026, Gemini worker)
+
+- **Authority & scope:** Acting-Chief ruling by `codex` on `J3877` (`PR #812` merged `c8787ce6`, `00_Brand/Channel-Setup/audits/live_fixes/2026-11-27_J3877.md`) and queue job `J3880`. Worker execution (`gemini`, Mac mini): **£0 cash, 0 credits spent, zero public `/watch` or `/shorts` pages opened, zero re-uploads/re-cuts/test replacements, zero Buffer edits.** All Studio writes serialized via `desk-lock.sh youtube-buffer` on existing HOS Studio Chrome `CDP 9460` (`reuse_page`, channel verified `UCXp7HkBIl1LgaznXuZHJyRg` at `2026-11-27T09:40:04Z`). Full follow-up report: `00_Brand/Channel-Setup/audits/live_fixes/2026-11-27_J3880.md`.
+- **Pre-write `lint:package` (`2026-11-27T09:35:45Z`):**
+  ```text
+  > content-ops@0.1.0 lint:package
+  > tsx scripts/package-lint.ts --film 008
+
+  SKIP  02_Video-Projects/008_Lightning-Franklin/11_Upload-Package/PACKAGE_MANIFEST.json  (long already public; use channel:audit)
+  PASS  02_Video-Projects/008_Lightning-Franklin/10_Shorts/SHORTS_RELEASE.json
+  ```
+- **Fix 1 — `YqCWYlv_LCY` (008 Franklin long, Public): channel comment posted & pinned:**
+  - **Before (`2026-11-27T09:36:06Z`):** `commentThreads.list` returned `0` threads (`commentCount: "0"`); `00_Brand/Channel-Setup/PINNED_COMMENTS.json` had no `YqCWYlv_LCY` entry.
+  - **Dry-run & create (`2026-11-27T09:36:42Z` dry-run; `2026-11-27T09:38:23Z–09:38:24Z` `--create` via `update-pinned-comment.ts`):** Posted as `@HistoryOfScienceYT` (`UCXp7HkBIl1LgaznXuZHJyRg`) -> **`commentId: UgwITIX3pTdVbC_D20V4AaABAg`**, recorded in `00_Brand/Channel-Setup/PINNED_COMMENTS.json`. Exact text:
+    - Question: `What really happened in Benjamin Franklin's kite experiment — and why was the kite never struck by lightning?`
+    - Thank-you: `Thank you for being here this early. It genuinely helps. A new film every Thursday.`
+  - **Studio pin (`CDP 9460`, `https://studio.youtube.com/video/YqCWYlv_LCY/comments`, `Response status: Unresponded` filter cleared):** Confirmed `Pin this comment?` dialog; `studio.youtube.com/youtubei/v1/comment/perform_comment_action` returned **HTTP `200`** (`2026-11-27T09:47:38Z`) with `pinCommentAction.commentId = "UgwITIX3pTdVbC_D20V4AaABAg"`, `actionResult.status = "STATUS_SUCCEEDED"`, `feedback = "FEEDBACK_PIN"`, `feedbackText = "Comment pinned"`, `renderingPriority = "RENDERING_PRIORITY_PINNED_COMMENT"`, Studio toast `"Comment pinned"`, and badge `"Pinned by @HistoryOfScienceYT"`.
+  - **Studio reload observation (distinguished unknown):** On reload of `studio.youtube.com/video/YqCWYlv_LCY/comments` (filter cleared), Studio's `youtubei/v1/comment/get_comments` does not display the `"Pinned by"` badge or `"Unpin"` menu item. Read-only comparison on previously pinned HOS longs `ETynHpIYLeY` (007, 13 days old) and `_C92tIJCk8A` (001, 2 months old) showed the identical Studio `get_comments` quirk (neither displayed `"Pinned by"` or `"Unpin"` on Studio reload). Because public `/watch` pages are prohibited and Data API `commentThreads.list` omits pin state, public watch-page rendering of the pin badge remains unverified without opening `/watch`.
+  - **Untouched read-only check on `YqCWYlv_LCY/edit` (`2026-11-27T09:40:33Z`) & post-Studio API (`09:48:43Z`):** `Visibility = Public`, `Paid promotion = No`, `Not Made for Kids = true`, `Altered = Yes`, running Test & Compare (`View test report`) intact, `Save` disabled, `commentCount = "1"`.
+- **Fix 2 — `f_-BsKZf8X0` (008 Short s04, Scheduled `2026-12-01T11:30:00Z`): `Paid promotion = No` saved & reload-verified:**
+  - **Package check:** `10_Shorts/11_Upload-Package/s04_no_patent_v01/PACKAGE_MANIFEST.json` has no sponsorship, paid promotion, or `/go/` link.
+  - **Before (`2026-11-27T09:40:40Z`):** `VIDEO_PAID_PRODUCT_PLACEMENT_NO = "false"`, `VIDEO_PAID_PRODUCT_PLACEMENT_NOTIFY = "false"` (blank).
+  - **Write (`09:40:42Z` click `No`, `09:40:45Z` saved; zero test prompts, zero comments posted on Short) -> After reload (`09:40:53Z`):** `VIDEO_PAID_PRODUCT_PLACEMENT_NO = "true"`, `VIDEO_PAID_PRODUCT_PLACEMENT_NOTIFY = "false"`, `VIDEO_MADE_FOR_KIDS_NOT_MFK = "true"`, `VIDEO_HAS_ALTERED_CONTENT_YES = "true"`, `Related video = Benjamin Franklin's Kite Experiment Explained` (`YqCWYlv_LCY`), `Visibility = Scheduled`, `Title = Why Did Franklin Never Patent the Lightning Rod?`, `Save` disabled.
+  - **Post-Studio API read-back (`2026-11-27T09:48:43Z`):** `privacyStatus = "private"`, `publishAt = "2026-12-01T11:30:00Z"`, `madeForKids = false`, `selfDeclaredMadeForKids = false`, `paidProductPlacementDetails.hasPaidProductPlacement = false`, `caption = "true"`, `commentCount = "0"`.
+- **Fix 3 — Open-library reconciliation for `f_-BsKZf8X0` (`2026-11-27T09:39:36Z`):**
+  - Verified exact uploaded master `/Volumes/data/studio-live/History Of Science/02_Video-Projects/008_Lightning-Franklin/10_Shorts/J3763/hos_008_s04_no_patent_v01.mp4` (`sha256: e162a0fbe05e519ae822aededabf62172396594d4f564081d539db724f03809c`, exact match to `PACKAGE_MANIFEST.json`; manifest untouched).
+  - Fresh `gate_shorts_open.py check ... --air-date 2026-12-01` (`09:36:46Z`):
+    ```text
+    PASS  hos_008_s04_no_patent_v01.mp4  dur=16.1s  audio=-16.7dB  motion=34.94  f0diff=4.75  cut1=2.37s  vo_onset=0.06s  tail_gap=1.44s  vo_src=mix  dhash=0f07660287870343
+       full-bleed 0.00s  fills the frame  sharp above/middle/below=0.072/0.44/0.598  detail top/centre/bottom=4.9/14.38/6.09  spread top/bottom=38.88/53.36
+       full-bleed 0.25s  fills the frame  sharp above/middle/below=None/0.451/None  detail top/centre/bottom=4.0/14.21/6.34  spread top/bottom=32.91/61.35
+       full-bleed 0.50s  fills the frame  sharp above/middle/below=0.024/0.448/0.823  detail top/centre/bottom=4.43/14.09/7.04  spread top/bottom=36.3/57.38
+       full-bleed whole Short  0/17 frames padded at one a second, 0/33 at two a second  padded stretches: none  no end card named in meta
+    ```
+  - Registered via `gate_shorts_open.py add --id f_-BsKZf8X0 --date 2026-12-01 --status scheduled` into `00_Brand/Channel-Setup/audits/shorts_open_library/library.json` + `frames/f_-BsKZf8X0.jpg`.
+- **Post-Studio `npm run channel:audit` (`2026-11-27T09:48:42Z`):**
+  ```text
+  PASS  Short f_-BsKZf8X0  private 2026-12-01 11:30 UK  Why Did Franklin Never Patent the Lightning Rod?
+  PASS  long  YqCWYlv_LCY  public  Benjamin Franklin's Kite Experiment Explained
+  ...
+  80 videos, 0 errors.
+  Coverage notice: playlistItems.list returned 80 raw rows across 2 page(s) (totalResults=80) with 4 duplicate ID(s) (clV6E10NLPw, TbMMJSRKC3U, 29bpGAI0wb8, GHZDsiH7L7A) -> 76 unique playlist IDs.
+  Direct videos.list recovery: 4 known HOS ID(s) omitted from playlistItems.list confirmed on channel via direct lookup: qOZgess30h0 (public), mTY67qet7cM (private), K0TQHg4XCHY (private), KIWJRl0dzjw (private).
+  Coverage totals: 80 audited HOS video(s) (44 public; channel statistics.videoCount=44).
+  ```
+- **External evidence (outside git):** `/Users/benjaminoats/_desk/J3880/` (`studio_receipt.json`, `pin_receipt.json`, `pin_verify_receipt.json`, `pin_diag_receipt.json`, `get_comments_inspect.json`, `perform_pin_body.json`, `before/*.png`, `after/*.png`, `after/channel_audit_after.txt`, `after/api_readback_after.json`).
