@@ -1,3 +1,6 @@
+import fs from "fs";
+import os from "os";
+import path from "path";
 import { describe, expect, it } from "vitest";
 import {
   auditChannel,
@@ -8,11 +11,20 @@ import {
   dedupeVideoIds,
   dedupeVideosById,
   checkChaptersAndSources,
+  HOS_CHANNEL_ID,
   lintLongPackage,
   lintShortsRelease,
   ukSlot,
   type ApiVideo,
 } from "@/lib/hos-contract/rules";
+import {
+  collectKnownHosVideoIds,
+  findDuplicateVideoIds,
+  formatCoverageWarnings,
+  parseShortsLogIds,
+  planDirectLookupIds,
+  reconcileChannelUploads,
+} from "@/lib/hos-contract/audit-coverage";
 
 const rules = (fs: { rule: string; severity: string }[], sev = "error") =>
   fs.filter((f) => f.severity === sev).map((f) => f.rule);
@@ -361,5 +373,137 @@ describe("neighbours (HOS 002: 55.6% of suggested views from TED-Ed's Mendeleev 
       expect.arrayContaining(["neighbours.title", "neighbours.description", "neighbours.tags", "neighbours.size"]),
     );
     expect(rules(r, "warn")).toContain("neighbours.ted");
+  });
+});
+
+describe("channel audit uploads coverage reconciliation (J3847)", () => {
+  const makeVideo = (id: string, over: { title?: string; privacy?: string; publishAt?: string; channelId?: string } = {}): ApiVideo => ({
+    id,
+    snippet: {
+      title: over.title ?? `Video ${id}`,
+      channelId: over.channelId ?? HOS_CHANNEL_ID,
+      categoryId: "27",
+      defaultLanguage: "en-GB",
+      defaultAudioLanguage: "en-GB",
+      liveBroadcastContent: "none",
+      tags: ["history of science", "science", "experiment", "discovery", "germs"],
+    },
+    status: {
+      privacyStatus: over.privacy ?? "public",
+      publishAt: over.publishAt,
+      madeForKids: false,
+      selfDeclaredMadeForKids: false,
+      containsSyntheticMedia: true,
+    },
+    contentDetails: { duration: "PT24S" },
+  });
+
+  it("recovers omitted public/private HOS IDs via direct lookup when playlistItems repeats across page boundaries", () => {
+    // Reproduces the 27 Nov 2026 HOS boundary case: playlistItems returned clV6E10NLPw twice
+    // across pages while omitting public qOZgess30h0 and private mTY67qet7cM.
+    const rawIds = ["f_-BsKZf8X0", "clV6E10NLPw", "5n7xFQRBUvI", "clV6E10NLPw", "JI2ewIT1KSM"];
+    expect(findDuplicateVideoIds(rawIds)).toEqual(["clV6E10NLPw"]);
+
+    const knownIds = ["f_-BsKZf8X0", "clV6E10NLPw", "qOZgess30h0", "mTY67qet7cM", "not-an-id"];
+    expect(planDirectLookupIds(dedupeVideoIds(rawIds), knownIds)).toEqual(["qOZgess30h0", "mTY67qet7cM"]);
+
+    const { videos, coverage } = reconcileChannelUploads({
+      channelVideoCount: 2,
+      playlist: { pages: 2, rawIds, totalResults: 6 },
+      playlistVideos: [
+        makeVideo("f_-BsKZf8X0", { privacy: "private", publishAt: "2026-12-01T11:30:00Z" }),
+        makeVideo("clV6E10NLPw", { privacy: "public" }),
+        makeVideo("5n7xFQRBUvI", { privacy: "private" }),
+        makeVideo("JI2ewIT1KSM", { privacy: "private" }),
+      ],
+      knownIds,
+      directLookupVideos: [
+        makeVideo("qOZgess30h0", { title: "Invisible life is still everywhere", privacy: "public" }),
+        makeVideo("mTY67qet7cM", { title: "One Tight Band Proved Your Blood Goes Round", privacy: "private" }),
+      ],
+    });
+
+    expect(videos.map((v) => v.id)).toContain("qOZgess30h0");
+    expect(videos.map((v) => v.id)).toContain("mTY67qet7cM");
+    expect(coverage.playlistRawCount).toBe(5);
+    expect(coverage.playlistUniqueCount).toBe(4);
+    expect(coverage.playlistDuplicateIds).toEqual(["clV6E10NLPw"]);
+    expect(coverage.omittedKnownIdsChecked).toEqual(["qOZgess30h0", "mTY67qet7cM"]);
+    expect(coverage.recoveredViaDirectLookup).toEqual([
+      { id: "qOZgess30h0", privacy: "public", scheduled: false, title: "Invisible life is still everywhere" },
+      { id: "mTY67qet7cM", privacy: "private", scheduled: false, title: "One Tight Band Proved Your Blood Goes Round" },
+    ]);
+    expect(coverage.notReturnedByDirectLookup).toEqual([]);
+    expect(coverage.auditedTotal).toBe(6);
+    expect(coverage.auditedPublicCount).toBe(2);
+    expect(coverage.incompletePlaylistDetected).toBe(true);
+
+    const warnings = formatCoverageWarnings(coverage);
+    expect(warnings.some((l) => l.includes("1 duplicate ID(s) (clV6E10NLPw)"))).toBe(true);
+    expect(warnings.some((l) => l.includes("qOZgess30h0 (public)"))).toBe(true);
+    expect(warnings.some((l) => l.includes("channel statistics.videoCount=2"))).toBe(true);
+  });
+
+  it("ignores foreign-channel direct lookup rows and reports unresolved IDs without inferring Private", () => {
+    const { videos, coverage } = reconcileChannelUploads({
+      channelVideoCount: 2,
+      playlist: { pages: 1, rawIds: ["clV6E10NLPw"], totalResults: 1 },
+      playlistVideos: [makeVideo("clV6E10NLPw", { privacy: "public" })],
+      knownIds: ["clV6E10NLPw", "yQP4UJhNn0I", "missingId01"],
+      directLookupVideos: [
+        // Foreign channel video (e.g. TED-Ed) must never be merged into HOS audit rows.
+        makeVideo("yQP4UJhNn0I", { channelId: "UCsooa4yRKGN_zEE8iknghZA", privacy: "public" }),
+      ],
+    });
+
+    expect(videos.map((v) => v.id)).toEqual(["clV6E10NLPw"]);
+    expect(coverage.recoveredViaDirectLookup).toEqual([]);
+    expect(coverage.notReturnedByDirectLookup).toEqual(["yQP4UJhNn0I", "missingId01"]);
+    expect(coverage.auditedPublicCount).toBe(1);
+    expect(coverage.incompletePlaylistDetected).toBe(true);
+
+    const warnings = formatCoverageWarnings(coverage);
+    expect(warnings.some((l) => l.includes("verify directly in Studio before inferring visibility"))).toBe(true);
+    expect(warnings.some((l) => l.includes("audited public count (1) is below channel statistics.videoCount (2)"))).toBe(true);
+  });
+
+  it("parses SHORTS_LOG column 2 IDs only and collects known IDs across HOS repo sources", () => {
+    const sampleLog = [
+      "| Aired | Id | Title | Promotes | Frame 0 | Stayed | AVD | Views | Note |",
+      "|---|---|---|---|---|---:|---:|---:|---|",
+      "| 13 Oct 2026 | `qOZgess30h0` | Invisible life is still everywhere | 001 | tap | | | | sha `9625602b123` not col 2 |",
+      "| — (Draft) | `K0TQHg4XCHY` | Four Elements (duplicate) | 002 | | | | | retry of `Pp5LmjsduI4` |",
+    ].join("\n");
+    expect(parseShortsLogIds(sampleLog)).toEqual(["qOZgess30h0", "K0TQHg4XCHY"]);
+
+    const tmpRoot = fs.mkdtempSync(path.join(os.tmpdir(), "hos-audit-cov-"));
+    try {
+      fs.mkdirSync(path.join(tmpRoot, "00_Brand", "Channel-Setup", "audits"), { recursive: true });
+      fs.mkdirSync(path.join(tmpRoot, "02_Video-Projects", "001_Germs", "10_Shorts"), { recursive: true });
+      fs.mkdirSync(path.join(tmpRoot, "02_Video-Projects", "001_Germs", "11_Upload-Package"), { recursive: true });
+
+      fs.writeFileSync(
+        path.join(tmpRoot, "00_Brand", "Channel-Setup", "audits", "LIVE_VIDEOS.json"),
+        JSON.stringify({ videos: [{ id: "YqCWYlv_LCY" }, { id: "bad" }] }),
+      );
+      fs.writeFileSync(path.join(tmpRoot, "00_Brand", "Channel-Setup", "audits", "SHORTS_LOG.md"), sampleLog);
+      fs.writeFileSync(
+        path.join(tmpRoot, "02_Video-Projects", "001_Germs", "10_Shorts", "SHORTS_RELEASE.json"),
+        JSON.stringify({ shorts: [{ id: "clV6E10NLPw" }, { id: null }] }),
+      );
+      fs.writeFileSync(
+        path.join(tmpRoot, "02_Video-Projects", "001_Germs", "11_Upload-Package", "PACKAGE_MANIFEST.json"),
+        JSON.stringify({ youtubeId: "_C92tIJCk8A" }),
+      );
+
+      const collected = collectKnownHosVideoIds(tmpRoot);
+      expect(collected.bySource.liveVideosJson).toEqual(["YqCWYlv_LCY"]);
+      expect(collected.bySource.shortsLog).toEqual(["qOZgess30h0", "K0TQHg4XCHY"]);
+      expect(collected.bySource.shortsRelease).toEqual(["clV6E10NLPw"]);
+      expect(collected.bySource.packageManifests).toEqual(["_C92tIJCk8A"]);
+      expect(collected.ids).toEqual(["YqCWYlv_LCY", "qOZgess30h0", "K0TQHg4XCHY", "clV6E10NLPw", "_C92tIJCk8A"]);
+    } finally {
+      fs.rmSync(tmpRoot, { recursive: true, force: true });
+    }
   });
 });

@@ -30,6 +30,13 @@ import {
   type ApiVideo,
   type Finding,
 } from "../src/lib/hos-contract/rules";
+import {
+  collectKnownHosVideoIds,
+  formatCoverageWarnings,
+  planDirectLookupIds,
+  reconcileChannelUploads,
+  type UploadsCoverageReport,
+} from "../src/lib/hos-contract/audit-coverage";
 
 const REPO = path.resolve(__dirname, "..", "..");
 const LIVE_VIDEOS = path.join(REPO, "00_Brand", "Channel-Setup", "audits", "LIVE_VIDEOS.json");
@@ -53,23 +60,7 @@ async function get(token: string, url: string) {
   return body;
 }
 
-async function fetchChannel(token: string): Promise<{ channel: Record<string, any>; videos: ApiVideo[] }> {
-  const ch = await get(token, `${API}/channels?part=id,snippet,status,contentDetails&mine=true`);
-  const channel = ch.items?.[0];
-  if (!channel) throw new Error("No channel on this token");
-  if (channel.id !== HOS_CHANNEL_ID)
-    throw new Error(`Token is for channel ${channel.id}, not HOS (${HOS_CHANNEL_ID}). Stop: wrong account.`);
-  const uploads = channel.contentDetails.relatedPlaylists.uploads as string;
-  const ids: string[] = [];
-  let page = "";
-  do {
-    const pl = await get(
-      token,
-      `${API}/playlistItems?part=contentDetails&maxResults=50&playlistId=${uploads}${page ? `&pageToken=${page}` : ""}`,
-    );
-    ids.push(...pl.items.map((i: any) => i.contentDetails.videoId));
-    page = pl.nextPageToken || "";
-  } while (page);
+async function fetchVideosByIds(token: string, ids: readonly string[]): Promise<ApiVideo[]> {
   const uniqueIds = dedupeVideoIds(ids);
   const videos: ApiVideo[] = [];
   for (let i = 0; i < uniqueIds.length; i += 50) {
@@ -77,15 +68,71 @@ async function fetchChannel(token: string): Promise<{ channel: Record<string, an
       token,
       `${API}/videos?part=snippet,status,contentDetails&id=${uniqueIds.slice(i, i + 50).join(",")}`,
     );
-    videos.push(...v.items);
+    videos.push(...(v.items || []));
   }
-  return { channel, videos: dedupeVideosById(videos) };
+  return dedupeVideosById(videos);
+}
+
+async function fetchChannel(
+  token: string,
+  extraKnownIds: readonly string[] = [],
+): Promise<{ channel: Record<string, any>; videos: ApiVideo[]; coverage: UploadsCoverageReport }> {
+  const ch = await get(token, `${API}/channels?part=id,snippet,status,contentDetails,statistics&mine=true`);
+  const channel = ch.items?.[0];
+  if (!channel) throw new Error("No channel on this token");
+  if (channel.id !== HOS_CHANNEL_ID)
+    throw new Error(`Token is for channel ${channel.id}, not HOS (${HOS_CHANNEL_ID}). Stop: wrong account.`);
+  const uploads = channel.contentDetails.relatedPlaylists.uploads as string;
+  const rawIds: string[] = [];
+  let page = "";
+  let pages = 0;
+  let totalResults: number | null = null;
+  do {
+    pages++;
+    const pl = await get(
+      token,
+      `${API}/playlistItems?part=contentDetails&maxResults=50&playlistId=${uploads}${page ? `&pageToken=${page}` : ""}`,
+    );
+    if (typeof pl.pageInfo?.totalResults === "number") totalResults = pl.pageInfo.totalResults;
+    rawIds.push(...(pl.items || []).map((i: any) => i.contentDetails?.videoId).filter(Boolean));
+    page = pl.nextPageToken || "";
+  } while (page);
+
+  const uniquePlaylistIds = dedupeVideoIds(rawIds);
+  const playlistVideos = await fetchVideosByIds(token, uniquePlaylistIds);
+
+  // Cross-check known HOS repo video IDs so playlistItems.list page-boundary omissions are
+  // directly verified via videos.list instead of silently disappearing from audits/LIVE_VIDEOS.json.
+  const knownIds = dedupeVideoIds([...collectKnownHosVideoIds(REPO).ids, ...extraKnownIds]);
+  const omittedKnownIds = planDirectLookupIds(uniquePlaylistIds, knownIds);
+  const directLookupVideos = omittedKnownIds.length ? await fetchVideosByIds(token, omittedKnownIds) : [];
+
+  const parsedVideoCount = Number(channel.statistics?.videoCount);
+  const channelVideoCount = Number.isFinite(parsedVideoCount) ? parsedVideoCount : null;
+  const { videos, coverage } = reconcileChannelUploads({
+    channelId: HOS_CHANNEL_ID,
+    channelVideoCount,
+    playlist: { pages, rawIds, totalResults },
+    playlistVideos,
+    knownIds,
+    directLookupVideos,
+  });
+
+  return { channel, videos, coverage };
 }
 
 async function main() {
   let channel: Record<string, any> | null = null;
   let videos: ApiVideo[];
+  let coverage: UploadsCoverageReport | null = null;
   const file = arg("file");
+  const checkIdsArg = arg("check-ids");
+  const extraKnownIds = checkIdsArg
+    ? checkIdsArg
+        .split(",")
+        .map((s) => s.trim())
+        .filter(Boolean)
+    : [];
   if (file) {
     const data = JSON.parse(fs.readFileSync(path.resolve(file), "utf8"));
     const rawVideos = Array.isArray(data) ? data : data.items || data.videos || [];
@@ -93,7 +140,7 @@ async function main() {
     channel = data.channel || null;
   } else {
     const token = await accessToken();
-    ({ channel, videos } = await fetchChannel(token));
+    ({ channel, videos, coverage } = await fetchChannel(token, extraKnownIds));
   }
 
   const findings = new Map<string, Finding[]>();
@@ -159,7 +206,7 @@ async function main() {
 
   const bad = channelFindings.length + rows.reduce((n, r) => n + r.errors.length, 0);
   if (process.argv.includes("--json")) {
-    console.log(JSON.stringify({ channelFindings, rows, studioOnly: STUDIO_ONLY_CHECKS }, null, 2));
+    console.log(JSON.stringify({ channelFindings, rows, coverage, studioOnly: STUDIO_ONLY_CHECKS }, null, 2));
   } else {
     for (const c of channelFindings) console.log(`FAIL  CHANNEL  [${c.rule}] ${c.message}`);
     for (const r of rows) {
@@ -169,6 +216,9 @@ async function main() {
       for (const x of r.warns) console.log(`   warn  [${x.rule}] ${x.message}`);
     }
     console.log(`\n${videos.length} videos, ${bad} errors.`);
+    if (coverage) {
+      for (const line of formatCoverageWarnings(coverage)) console.log(line);
+    }
     console.log("Confirm in Studio (not readable through the API):");
     for (const c of STUDIO_ONLY_CHECKS) console.log(`  - ${c}`);
   }
