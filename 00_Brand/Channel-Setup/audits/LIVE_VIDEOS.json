@@ -1,6 +1,6 @@
 {
   "source": "scripts/channel-audit.ts --write-live (YouTube Data API, owner view)",
-  "pulledAt": "2026-11-26T21:58:11.586Z",
+  "pulledAt": "2026-11-27T03:29:47.729Z",
   "videos": [
     {
       "id": "f_-BsKZf8X0",
@@ -349,6 +349,13 @@
       "id": "_C92tIJCk8A",
       "kind": "long",
       "title": "How Did We Discover Germs?",
+      "privacy": "public",
+      "scheduled": ""
+    },
+    {
+      "id": "qOZgess30h0",
+      "kind": "Short",
+      "title": "Invisible life is still everywhere",
       "privacy": "public",
       "scheduled": ""
     }
