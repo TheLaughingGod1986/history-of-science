@@ -1,0 +1,12 @@
+{
+  "status": "invalid",
+  "eligible_cut": null,
+  "errors": [
+    "Short duration must be 22\u201327 seconds"
+  ],
+  "evidence": {},
+  "pending": [
+    "rendered pixel/loop checks",
+    "human moving/phone and audio review"
+  ]
+}

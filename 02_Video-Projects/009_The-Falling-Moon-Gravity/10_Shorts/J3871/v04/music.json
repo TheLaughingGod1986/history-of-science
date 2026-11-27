@@ -1,0 +1,19 @@
+{
+  "verdict": "PASS",
+  "bed": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/05_Music/hos_009_score_v04_synth.wav",
+  "seconds": 535.3,
+  "bpm": 52.2,
+  "brief_pace": "Pace: 60-68 BPM",
+  "fail": [],
+  "warn": [
+    "reused: couldn't read part01_zoo_of_stuff_v02.mp3 to compare (OSError); download it or pass --others",
+    "reused: couldn't read part01_zoo_of_stuff_v02.wav to compare (OSError); download it or pass --others"
+  ],
+  "waived": [],
+  "matches": [],
+  "waiver": null,
+  "rules": {
+    "similarity_fail": 0.8,
+    "compared_seconds": 300
+  }
+}
