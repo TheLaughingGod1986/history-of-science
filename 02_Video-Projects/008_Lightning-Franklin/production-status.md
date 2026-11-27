@@ -496,3 +496,40 @@ ALL CHECKS PASS
   - `gate_shorts_open.py`: `PASS  hos_008_s04_no_patent_v01.mp4  dur=16.1s  audio=-16.7dB  motion=34.94  f0diff=4.75  cut1=2.37s  vo_onset=0.06s  tail_gap=1.44s  vo_src=mix  dhash=0f07660287870343` (full-bleed 0/17, 0/33)
   - `npm run lint:package -- --film 008`: `PASS  02_Video-Projects/008_Lightning-Franklin/10_Shorts/SHORTS_RELEASE.json`
   - `npm run channel:audit -- --write-live`: `PASS  Short f_-BsKZf8X0  private 2026-12-01 11:30 UK  Why Did Franklin Never Patent the Lightning Rod?` · `76 videos, 0 errors.`
+
+---
+
+## J3848 — Franklin paid-promotion settings & info cards correction (27 Nov 2026, Gemini worker)
+
+- **Authority & scope:** Corrective Studio job `J3848` per Codex Acting-Chief ruling on `J3845` (`2026-11-27_J3845.md`). Executed on HOS (`@HistoryOfScienceYT`, `UCXp7HkBIl1LgaznXuZHJyRg`) only via the existing verified Studio tab on CDP port `9460` (`reuse_page(ctx, "studio.youtube.com")`; zero new tabs opened). **£0 spend, 0 credits, zero public playback, zero uploads/re-cuts/Buffer/account/other-video changes. `J3846` and `J3847` untouched. Records PR opened for Chief review (no worker PASS or merge).**
+- **Approved package confirmation:** Verified `11_Upload-Package/PACKAGE_MANIFEST.json` (`"affiliate": null`), `11_Upload-Package/Descriptions/lightning_long_description_v02.txt`, and `10_Shorts/SHORTS_RELEASE.json` contain zero paid promotion or sponsorships.
+- **Pre-edit `npm run lint:package -- --film 008` (`2026-11-27T03:02:58Z`):**
+  ```text
+  > content-ops@0.1.0 lint:package
+  > tsx scripts/package-lint.ts --film 008
+
+  SKIP  02_Video-Projects/008_Lightning-Franklin/11_Upload-Package/PACKAGE_MANIFEST.json  (long already public; use channel:audit)
+  PASS  02_Video-Projects/008_Lightning-Franklin/10_Shorts/SHORTS_RELEASE.json
+  ```
+- **Paid promotion explicitly set to `No` (one setting per save, reloaded & verified after every save):**
+  - **`__UtUYdEUwg`** (008 Short A · Scheduled `2026-11-27T11:30:00Z`): before `03:05:01Z` (`NOTIFY=false`, `NO=false`) → clicked `VIDEO_PAID_PRODUCT_PLACEMENT_NO` + saved `03:07:36Z` → reloaded `03:07:43Z`: `VIDEO_PAID_PRODUCT_PLACEMENT_NO="true"`, `NOTIFY="false"`, `VIDEO_MADE_FOR_KIDS_NOT_MFK="true"`, `VIDEO_HAS_ALTERED_CONTENT_YES="true"`, `Visibility=Scheduled`, `Related video=Benjamin Franklin's Kite Experiment Explained`, `Save` disabled.
+  - **`4sYTV_rQcqs`** (008 Short C · Scheduled `2026-11-29T11:30:00Z`): before `03:05:07Z` (`NOTIFY=false`, `NO=false`) → clicked `VIDEO_PAID_PRODUCT_PLACEMENT_NO` + saved `03:07:53Z` → reloaded `03:08:00Z`: `VIDEO_PAID_PRODUCT_PLACEMENT_NO="true"`, `NOTIFY="false"`, `VIDEO_MADE_FOR_KIDS_NOT_MFK="true"`, `VIDEO_HAS_ALTERED_CONTENT_YES="true"`, `Visibility=Scheduled`, `Related video=Benjamin Franklin's Kite Experiment Explained`, `Save` disabled.
+  - **`YqCWYlv_LCY`** (008 Long · Public `2026-11-26T18:00:35Z`): before `03:04:54Z` (`NOTIFY=false`, `NO=false`) → clicked `VIDEO_PAID_PRODUCT_PLACEMENT_NO` + saved `03:08:10Z` (zero A/B test reset/delete prompt) → reloaded `03:08:18Z` (and re-verified after cards at `03:17:41Z`): `VIDEO_PAID_PRODUCT_PLACEMENT_NO="true"`, `NOTIFY="false"`, `VIDEO_MADE_FOR_KIDS_NOT_MFK="true"`, `VIDEO_HAS_ALTERED_CONTENT_YES="true"`, `Visibility=Public`, 2-way Title+Thumbnail Test & Compare still `Running…` (*Benjamin Franklin's Kite Experiment Explained* vs *Why Did Franklin Fly a Kite in a Storm?*), `Save` disabled.
+- **Two info cards added on `YqCWYlv_LCY` (both after `01:00`, direct API-verified public HOS targets at `03:04:38.087Z`, plan recorded before save in `~/_desk/J3848/info_cards_plan.json`, saved `03:17:32Z`, reload-verified `03:17:45Z` & `/editor` `03:17:49Z`):**
+  1. **`05:44:00` → Video `GHZDsiH7L7A`** (*What's Inside an Atom? Mostly Empty Space*, `public`, `PT8M45S`, `publishedAt: 2026-10-15T17:00:24Z`) — locked v05 SRT cues 91–93 (`00:05:38,880 --> 00:05:49,240`: *"It behaved in every way like the electricity he made with glass and silk. Lightning and the spark in the jar were the same thing. Electricity."*). Directly links Franklin's proof of electricity/electric charge to HOS 004's discovery of electrons in a glowing glass tube (also 008's approved `relatedVideoId` and top `Watch next` target).
+  2. **`08:07:00` → Playlist `PLEbpfUzWzcXU`** (*How Did We Discover…? Atoms, the Periodic Table, Germs and X-Rays | History of Science*, `public`, `10` items) — locked v05 SRT cues 129–133 (`00:08:05,220 --> 00:08:24,000`: *"Why was this so groundbreaking? Because it was one of the very first times an idea from a laboratory reached out and protected ordinary people from one of nature's deadliest forces. It showed that the wild things in the sky follow rules, and that once you understand the rules, you can stay safe."*). Placed at the series-level takeaway, 32 s clear of the `08:39:15` end screen.
+  - **End screen preserved (reload-verified `03:17:55Z`):** `08:39:15 - 08:59:15`, `Playlist: How Did We Discover…? Atoms, the Periodic Table, Germs and X-Rays | History of Science` (`10 videos`) + `Subscribe: History of Science`, untouched (`Save` disabled).
+- **Post-Studio API read-back (`2026-11-27T03:18:54.696Z`):** Confirmed unchanged titles, visibility/schedules (`YqCWYlv_LCY` `public` / `publishAt: null`; `__UtUYdEUwg` `private` / `2026-11-27T11:30:00Z`; `4sYTV_rQcqs` `private` / `2026-11-29T11:30:00Z`), `madeForKids=false`, `selfDeclaredMadeForKids=false`, `paidProductPlacementDetails.hasPaidProductPlacement=false`.
+- **Post-Studio `npm run channel:audit` (`2026-11-27T03:18:54Z`):**
+  ```text
+  > content-ops@0.1.0 channel:audit
+  > tsx --env-file=.env scripts/channel-audit.ts
+
+  PASS  Short f_-BsKZf8X0  private 2026-12-01 11:30 UK  Why Did Franklin Never Patent the Lightning Rod?
+  PASS  long  YqCWYlv_LCY  public  Benjamin Franklin's Kite Experiment Explained
+  PASS  Short 4sYTV_rQcqs  private 2026-11-29 11:30 UK  How Does a Lightning Rod Work?
+  PASS  Short __UtUYdEUwg  private 2026-11-27 11:30 UK  Why Was Franklin's Kite Experiment So Dangerous?
+  ...
+  76 videos, 0 errors.
+  ```
+- **External evidence (outside git):** `/Users/benjaminoats/_desk/J3848/` (`before/before_state.json`, `before/*_edit_*.png`, `before/YqCWYlv_LCY_editor.png`, `info_cards_plan.json`, `after/paid_promotion_log.json`, `after/cards_and_final_verify.json`, `after/YqCWYlv_LCY_final_cards.png`, `after/YqCWYlv_LCY_final_endscreen.png`, `after/YqCWYlv_LCY_final_editor.png`, `after/YqCWYlv_LCY_edit_disclosures.png`, `after/__UtUYdEUwg_edit_disclosures.png`, `after/4sYTV_rQcqs_edit_disclosures.png`, `after/channel_audit_after.txt`, `after/api_readback_after.txt`).
