@@ -1,0 +1,1 @@
+Edison's direct current couldn't affordably cross a city. Low voltage meant heavy current, wasting energy as heat unless cables grew hugely expensive. Alternating-current transformers boosted voltage tenfold, cutting wire heat a hundred times. That simple physics explains why—

@@ -1,0 +1,27 @@
+1
+00:00:00,120 --> 00:00:03,080
+Tesla's brushless motor broke Edison's
+
+2
+00:00:03,160 --> 00:00:04,680
+grip on electricity.
+
+3
+00:00:05,840 --> 00:00:09,040
+Early alternating current lit lamps, yet
+
+4
+00:00:09,200 --> 00:00:10,640
+stalled in factories.
+
+5
+00:00:11,840 --> 00:00:15,520
+In 1888, Tesla patented a spinning
+
+6
+00:00:15,620 --> 00:00:19,500
+magnetic field, and Niagara Falls sent AC
+
+7
+00:00:19,920 --> 00:00:23,760
+22 miles to Buffalo, proving just how

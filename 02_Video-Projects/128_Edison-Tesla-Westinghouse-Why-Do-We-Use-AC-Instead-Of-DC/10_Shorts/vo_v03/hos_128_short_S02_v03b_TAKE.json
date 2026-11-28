@@ -1,0 +1,81 @@
+{
+  "stem": "hos_128_short_S02_v03b",
+  "voice": "Ben Orbit Narrator",
+  "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+  "model_id": "eleven_v3",
+  "settings": {
+    "stability": 0.34,
+    "similarity_boost": 0.78,
+    "style": 0.42,
+    "speed": 1.04,
+    "use_speaker_boost": true
+  },
+  "orders": [
+    "J3660",
+    "J3671-gemini-chief-retake-S02-pacing"
+  ],
+  "retake_of": null,
+  "chapters": [
+    {
+      "title": "take",
+      "chars": 263,
+      "duration_s": 19.68
+    }
+  ],
+  "gap_s": 0.7,
+  "spoken_chars": 263,
+  "words": 38,
+  "duration_s": 19.68,
+  "loudness": {
+    "lufs_integrated": -20.4,
+    "mean_volume_db": -23.3,
+    "max_volume_db": -3.8
+  },
+  "sha256_mp3": "49fdd2ef613e8e00ed7730842b0a6db3bfe60f03d0dbbb63b30ca3dac4cd2ad1",
+  "scribe": {
+    "transcript": "Tesla's brushless motor broke Edison's grip on electricity. Early alternating current lit lamps, yet stalled in factories. In 1888, Tesla patented a spinning magnetic field, and Niagara Falls sent AC 22 miles to Buffalo, proving just how",
+    "script_words": 40,
+    "scribe_words": 37,
+    "match_rate_pct": 87.5,
+    "exact_match": false,
+    "mismatches": [
+      {
+        "op": "replace",
+        "script": [
+          "eighteen",
+          "eighty",
+          "eight"
+        ],
+        "scribe": [
+          "1888"
+        ]
+      },
+      {
+        "op": "replace",
+        "script": [
+          "twenty",
+          "two"
+        ],
+        "scribe": [
+          "22"
+        ]
+      }
+    ]
+  },
+  "vo_check": "REVIEW",
+  "credits": {
+    "before": {
+      "used": 113362,
+      "limit": 121114,
+      "remaining": 7752
+    },
+    "after": {
+      "used": 113362,
+      "limit": 121114,
+      "remaining": 7752
+    },
+    "counter_delta": 0
+  },
+  "text": "Tesla's brushless motor broke Edison's grip on electricity. Early alternating current lit lamps, yet stalled in factories. In eighteen eighty-eight, Tesla patented a spinning magnetic field, and Niagara Falls sent AC twenty-two miles to Buffalo, proving just how—",
+  "made_at": "2026-11-26T07:02:55+0000"
+}

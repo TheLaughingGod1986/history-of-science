@@ -1,0 +1,69 @@
+{
+  "stem": "hos_128_short_S02_v03b_tight",
+  "derived_from": "hos_128_short_S02_v03b",
+  "derived_from_sha256_wav": "5a8f2b251db155ac5375923a144f83e0438d595f7783b2c32152921dec862b4f",
+  "derived_from_sha256_mp3": "49fdd2ef613e8e00ed7730842b0a6db3bfe60f03d0dbbb63b30ca3dac4cd2ad1",
+  "edit_recipe": {
+    "type": "inter_sentence_silence_trim_only",
+    "atempo": 1.0,
+    "segments_s": [
+      [
+        0.05,
+        3.68
+      ],
+      [
+        4.35,
+        8.58
+      ],
+      [
+        9.63,
+        19.68
+      ]
+    ],
+    "inter_sentence_gap_s": 0.24,
+    "edge_fade_s": 0.015,
+    "extra_elevenlabs_credits": 0
+  },
+  "voice": "Ben Orbit Narrator",
+  "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+  "model_id": "eleven_v3",
+  "settings": {
+    "stability": 0.34,
+    "similarity_boost": 0.78,
+    "style": 0.42,
+    "speed": 1.04,
+    "use_speaker_boost": true
+  },
+  "orders": [
+    "J3660",
+    "J3671-gemini-chief-retake-S02-pacing"
+  ],
+  "spoken_chars": 263,
+  "words": 37,
+  "duration_s": 18.39,
+  "loudness": {
+    "lufs_integrated": -20.3,
+    "mean_volume_db": -23.1,
+    "max_volume_db": -3.8
+  },
+  "sha256_wav": "cc51cc86810edd72265848b403b90ae26b814058971aedee1a20929b2e4f9106",
+  "sha256_mp3": "feb068bc83e18b91fdf1e60419a9b49ef4d09a8aa54e79e7d1af143759c6c8da",
+  "text": "Tesla's brushless motor broke Edison's grip on electricity. Early alternating current lit lamps, yet stalled in factories. In eighteen eighty-eight, Tesla patented a spinning magnetic field, and Niagara Falls sent AC twenty-two miles to Buffalo, proving just how—",
+  "word_timing_summary": {
+    "first_word": {
+      "start": 0.05,
+      "end": 0.43,
+      "text": "Tesla's"
+    },
+    "fourth_word": {
+      "start": 1.51,
+      "end": 1.79,
+      "text": "broke"
+    },
+    "last_word": {
+      "start": 18.13,
+      "end": 18.35,
+      "text": "how"
+    }
+  }
+}

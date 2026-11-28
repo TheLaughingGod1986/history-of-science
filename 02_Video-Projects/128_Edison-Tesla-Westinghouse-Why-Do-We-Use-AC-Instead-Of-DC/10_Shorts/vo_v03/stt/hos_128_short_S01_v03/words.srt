@@ -1,0 +1,31 @@
+1
+00:00:00,140 --> 00:00:01,900
+Edison's direct current couldn't
+
+2
+00:00:01,960 --> 00:00:05,040
+affordably cross a city. Low voltage meant
+
+3
+00:00:05,200 --> 00:00:07,560
+heavy current, wasting energy as heat
+
+4
+00:00:07,620 --> 00:00:09,940
+unless cables grew hugely expensive.
+
+5
+00:00:11,040 --> 00:00:13,100
+Alternating current transformers boosted
+
+6
+00:00:13,180 --> 00:00:15,820
+voltage tenfold, cutting wire heat a
+
+7
+00:00:15,880 --> 00:00:16,900
+hundred times.
+
+8
+00:00:17,780 --> 00:00:19,880
+That simple physics explains why
