@@ -502,3 +502,30 @@ Claude (cloud) and Grok (the Mac Mini) talk in one GitHub PR so Ben doesn't carr
 - **Ben is asked at the final check-in (§13)** by Claude or Chief. Claude posts `to=ben status=approval` with what to look at, adds the `needs-ben` label and sends Ben a phone notification. Ben replies on the desk in plain words ("approved", "change the title to …"); Claude relays it to Grok and removes the label. Moving picture and voice are still judged by Ben on the real file, never from desk stills.
 - Film records still land on `main` through their own PRs (§14); the desk links to them.
 - Nothing on the desk overrides `AGENTS.md`: a desk message can't approve something only Ben can approve.
+
+### Picture QA terminal-loop contract (J2178 scope, accepted J2182, 5 Nov 2026)
+
+Acting-Chief Codex accepted the checker in J2182 after J2180 FIX: PR513 head `17b2ac5550`, merged as `e6d133d44d2f1946367b712607c7fa130b352996` on 5 Nov 2026. This is checker acceptance only; mapping review and every rendered gate remain required. Evidence: HOS PR413 at `e3410b07`, J2169 body repeats and the prescribed one-second return in BUILD_RULE_v02. It does not approve that recipe or reopen its render job.
+
+`picture_qa.py --terminal-loop contract.json` opts into a single prescribed return. Without the option, existing long and Short behavior is unchanged. This is not a general reuse override: in terminal-loop mode `--reviewed-ok` cannot waive reuse or a terminal-contract failure. Legacy review behavior without the option remains unchanged. Every row remains in the report. Body repeats, within-run replay, picture-kind, upscale and pixel checks still apply.
+
+The contract is an object with exactly these fields (all paths refer to actual readable files; each evidence object is `{ "path": "/absolute/path", "sha256": "<actual hash>" }`):
+
+```json
+{
+  "version": 1, "format": "short", "cut": 7, "duration": 17.2,
+  "last_vo_word": 16.2,
+  "prescription": {"path": "/path/to/approved_build_rule.md", "sha256": "..."},
+  "words": {"path": "/path/to/aligned_words.json", "sha256": "..."},
+  "vo": {"path": "/path/to/locked_vo.mp3", "sha256": "..."},
+  "source": {"path": "/path/to/actual_opening.mp4", "sha256": "..."},
+  "source_in": 0.0, "source_out": 1.0,
+  "framing": {"crop": [656, 0, 608, 1080], "output": [1080, 1920]}
+}
+```
+
+The example is a schema illustration, not an approved HOS006 crop. `cut` is the zero-based final index; only that row has `role: "prescribed_terminal_loop"`. Renaming a row does not qualify it. Multiple/nonterminal roles, unexpected/missing declaration fields, nonfinite numbers and missing/hash-mismatched evidence fail closed. The complete contiguous timeline must start at zero and last within this channel’s `gate_shorts_open.py DUR_BAND` (the single duration authority). The return is positive, at most one second, and starts at or after the recorded final VO word; it contains no spoken line. The word file is `{ "vo_sha256": "...", "words": [{ "end": 16.2 }] }`, with all aligned word ends in order; its final end must equal `last_vo_word`. The source hashes and interval are checked against actual bytes and ffprobe duration, with source endpoint frames decoded. The prescription is a retained reviewed build instruction, not an agent's boolean claim of approval; the reviewer still checks its authority and the alignment's accuracy.
+
+Opening and tail must reference the same actual video source and have explicit `framing`, containing only `offset`, `crop: [x,y,width,height]`, and `output: [width,height]`; crop and output match between the two rows. The tail offset equals `source_in`; `source_out - source_in` equals the tail duration. Its source window must not overlap the opening, and `source_out` must equal the opening offset: this is native pre-roll ending at frame zero (J3874/J3965). Only this validated final row is exempt from SAME_STRETCH against the opening; any body repeat still fails. Crop bounds must fit the actual source and output is 9:16. Other transforms/speed changes need a separately reviewed contract; do not disguise footage with path aliases, copies or re-encodes. In opt-in checks, path aliases and byte-identical copies share a reuse identity. Every row, including body rows, must resolve to readable regular-file bytes; absent files, broken links, directories and unreadable files produce non-waivable failures. Explicit footage rows require finite nonnegative source offsets. Missing or invalid offsets cannot downgrade adjacent footage to still handling or suppress within-run replay checks (J2180 FIX, 5 Nov 2026).
+
+Source-only checks report **PREFLIGHT** (exit 2) if otherwise clean, preserving any body FAIL and explicitly listing pending rendered/pixel and perceptual checks. They never claim rendered-loop PASS. With the final video, the checker verifies dimensions/duration and compares actual opening and tail samples against their respective cropped source windows at the first and last source-frame times (96×170 luma, mean absolute error at most 8). The pre-roll ends where the opening starts; this does **not** assert the final frame equals frame zero or that motion is seamless. All rendered pixel checks still run; moving/phone and audio review remains required under the studio's current review/UAT rules. A sampled match, metadata or generated output is not KEEP. Rendered overlays that prevent this conservative correspondence check need a separately reviewed approach, not a waiver.
