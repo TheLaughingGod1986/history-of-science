@@ -1,0 +1,3744 @@
+{
+  "job": "J4023",
+  "rulingRef": "J4020 / HOS desk #694#7242321171 (Acting Chief Codex, 28 Nov 2026)",
+  "dateReadJobId": "J4029",
+  "dateReadCheckAt": "2026-12-12T18:00:00Z",
+  "generatedAt": "2026-11-28T16:45:10Z",
+  "sources": {
+    "trackerSnapshot": "orbit-with-ben/05_Analytics/hos/snapshots/2026-11-28.json (takenAt 2026-11-28T06:40:36Z; live totals 5,183 views, 7 subs, 45 public videos)",
+    "channelDaily": "orbit-with-ben/05_Analytics/hos/channel_daily.json & live YTA channel==MINE daily query (latest settled day: 2026-11-25)",
+    "studioRead": "orbit-with-ben/05_Analytics/hos/studio_ctr.json (readAt 2026-11-28T07:13:08.331Z, period lifetime; does NOT capture Test & Compare state)",
+    "launchReport": "python3 scripts/launch_check.py report (28 Nov 2026; 10 HOS videos checked, 3 weak starts)",
+    "competitorMetadata": "YouTube Data API v3 read-only metadata (channels.list, playlistItems.list, videos.list); £0, zero playback"
+  },
+  "queryWindowsAndDenominators": {
+    "ytaLatestSettledDay": "2026-11-25",
+    "noteOnSnapshotVsSevenDay": "YTA per-video queries through 2026-11-26 return identical totals to 2026-11-25 because 26 Nov is not yet settled. Therefore YTA totals cover 4 settled days for el30-mHiH-0 (22-25 Nov), 5 settled days for Bks_JLId1ew (21-25 Nov), and 6 settled days for l8bxm9L3zl8 (20-25 Nov) — NOT full 7-day totals. Studio lifetime at 2026-11-28T07:13:08Z covers ~5.82d, ~6.82d, and ~7.82d respectively.",
+    "franklinLongAgeAtStudioRead": {
+      "videoId": "YqCWYlv_LCY",
+      "publishedAt": "2026-11-26T18:00:35Z",
+      "studioReadAt": "2026-11-28T07:13:08.331Z",
+      "elapsedHours": 37.21,
+      "full48hComplete": false,
+      "studioMetrics": {
+        "views": 2,
+        "impressions": 16,
+        "impressionsCtr": 0.0,
+        "avgViewSeconds": 205,
+        "avgViewPct": 38
+      }
+    },
+    "testAndCompareEvidence": {
+      "dated28NovStudioReadAvailable": false,
+      "ledgerRows": [
+        {
+          "id": "T001",
+          "video": "frP_YrNShsU",
+          "status": "done",
+          "ended": "2026-10-28",
+          "readBack": "2026-10-29"
+        },
+        {
+          "id": "T009",
+          "video": "_C92tIJCk8A",
+          "status": "done",
+          "ended": "2026-11-05",
+          "readBack": "2026-11-15"
+        },
+        {
+          "id": "T023",
+          "video": "AL_-qlWko_g",
+          "status": "done",
+          "ended": "2026-11-12",
+          "readBack": "2026-11-14"
+        },
+        {
+          "id": "T046",
+          "video": "VbPubYd6Fbs",
+          "status": "done",
+          "ended": "2026-11-19",
+          "readBack": "2026-11-22"
+        },
+        {
+          "id": "T029",
+          "video": "ETynHpIYLeY",
+          "status": "done",
+          "ended": "2026-11-26",
+          "readBack": "2026-11-27"
+        }
+      ],
+      "note": "All 5 logged HOS tests in THUMB_LEDGER.json are done; DELIVERY_J3501.md (24 Nov) notes no test armed yet on scheduled 009 wiyfRnsTfTY; no 28 Nov Studio Test & Compare check was run on YqCWYlv_LCY, so active test absence is not declared."
+    },
+    "channelWindows": {
+      "7d_2026-11-19_to_2026-11-25": {
+        "views": 802,
+        "minutes": 90,
+        "netSubs": 0
+      },
+      "prior_7d_2026-11-12_to_2026-11-18": {
+        "views": 507,
+        "minutes": 80,
+        "netSubs": 0
+      },
+      "28d_2026-10-29_to_2026-11-25": {
+        "views": 2148,
+        "minutes": 327,
+        "netSubs": 3
+      },
+      "prior_28d_2026-10-01_to_2026-10-28": {
+        "views": 2476,
+        "minutes": 293,
+        "netSubs": 2
+      },
+      "mtd_2026-11-01_to_2026-11-25": {
+        "views": 1866,
+        "minutes": 282,
+        "netSubs": 2
+      },
+      "mtd_2026-10-01_to_2026-10-25": {
+        "views": 2011,
+        "minutes": 254,
+        "netSubs": 2
+      }
+    },
+    "searchTerms_28d_2026-10-29_to_2026-11-25": [
+      [
+        "dalton atomic theory",
+        16
+      ],
+      [
+        "swan neck flask experiment",
+        12
+      ],
+      [
+        "dalton's atomic theory",
+        11
+      ],
+      [
+        "edward jenner",
+        10
+      ],
+      [
+        "john dalton atomic theory",
+        7
+      ],
+      [
+        "gold foil experiment",
+        5
+      ],
+      [
+        "atomic theory",
+        4
+      ],
+      [
+        "history of atom",
+        4
+      ],
+      [
+        "life processes in plants class 7",
+        4
+      ],
+      [
+        "marie curie and pierre curie",
+        4
+      ],
+      [
+        "origin of phosphorus",
+        4
+      ],
+      [
+        "john dalton",
+        3
+      ],
+      [
+        "postulates of dalton's atomic theory",
+        3
+      ]
+    ],
+    "publicLongs28dTraffic_2026-10-29_to_2026-11-25": {
+      "publicLongCount": 8,
+      "ids": [
+        "_C92tIJCk8A",
+        "AL_-qlWko_g",
+        "frP_YrNShsU",
+        "GHZDsiH7L7A",
+        "wwcjcFfC-5M",
+        "VbPubYd6Fbs",
+        "ETynHpIYLeY",
+        "YqCWYlv_LCY"
+      ],
+      "totals": {
+        "YT_SEARCH": 22,
+        "NO_LINK_OTHER": 13,
+        "RELATED_VIDEO": 12,
+        "EXT_URL": 3,
+        "SUBSCRIBER": 3,
+        "YT_OTHER_PAGE": 2,
+        "YT_CHANNEL": 1,
+        "END_SCREEN": 1,
+        "SHORTS_CONTENT_LINKS": 0,
+        "SHORTS": 0
+      }
+    }
+  },
+  "verifiedCutChainAndCurves": {
+    "el30-mHiH-0": {
+      "title": "How Does the Heart Pump Blood?",
+      "publishedAt": "2026-11-22T11:30:33Z",
+      "uploadedFile": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/J3137/hos_005_s07_heart_pulse_v05.mp4",
+      "sha256Verified": "9efcf7b1d91ede4ef9f8d25783e358c92debde3c453f3d30211b9b09936c8fc1",
+      "sourceV04Sha256Verified": "e94cbf4c5a548da3332aa7a29c439854e4d889eb346fe697b5c65079511c29df",
+      "videoPacketMd5Match": true,
+      "videoPacketMd5": "bbe910890bfa769283afe656c0e3227b",
+      "voTrimmedSha256": "58367a3ba792ed20c914e709030ed0a082601c671254d3075e820418e7ab563f",
+      "durationSeconds": 25.1,
+      "cutListPath": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/J3137/qa/s07/cuts.json",
+      "openGatePath": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/J3137/qa/s07/gate_shorts_open.txt",
+      "captionsSrtPath": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/11_Upload-Package/s07_heart_pulse_v04/Captions/hos_005_s07_heart_pulse_v04.en-GB.srt",
+      "perWordJsonPresent": false,
+      "studioRead28Nov": {
+        "views": 551,
+        "stayedToWatch": 27.0,
+        "avgViewSeconds": 16,
+        "avgViewPct": 64
+      },
+      "ytaSettled_2026-11-22_to_2026-11-25": {
+        "days": 4,
+        "views": 550,
+        "avgViewPct": 64.85,
+        "SHORTS": 479,
+        "YT_SEARCH": 66,
+        "YT_OTHER_PAGE": 2,
+        "NO_LINK_OTHER": 1,
+        "SUBSCRIBER": 1,
+        "day1_SHORTS": 476,
+        "day1_YT_SEARCH": 50
+      },
+      "retentionCurve": {
+        "points": 100,
+        "startPct": 132.64,
+        "endPct": 30.56,
+        "endRelativePct": 79.51,
+        "largestSingleBucketDrop": {
+          "buckets": "0.17->0.18",
+          "seconds": "4.27-4.52",
+          "fromPct": 111.81,
+          "toPct": 106.94,
+          "deltaPp": -4.87,
+          "nearTie": {
+            "buckets": "0.16->0.17",
+            "seconds": "4.02-4.27",
+            "fromPct": 116.67,
+            "toPct": 111.81,
+            "deltaPp": -4.86
+          }
+        },
+        "steepestFiveBucketDrop": {
+          "buckets": "0.16->0.21",
+          "seconds": "4.02-5.27",
+          "fromPct": 116.67,
+          "toPct": 101.39,
+          "deltaPp": -15.28
+        }
+      }
+    },
+    "l8bxm9L3zl8": {
+      "title": "How Does a Blood Pressure Cuff Work?",
+      "publishedAt": "2026-11-20T11:30:00Z",
+      "uploadedFile": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/J3137/hos_005_s06_blood_pressure_cuff_v05.mp4",
+      "sha256Verified": "13da54281f378d54f221135a67208b38a91673e9f655a2175403535b150b9733",
+      "sourceV04Sha256Verified": "7fe460307b4723e6801a6274e3390ab41e20a324052f4f6880bd2ef6a13aef35",
+      "videoPacketMd5Match": true,
+      "videoPacketMd5": "ba33ba791df2cad17349ad3fde669fa9",
+      "voTrimmedSha256": "d1ddc07cc671fb849006da8f406898fe319f0176b0fe2e38ff67d7853ccaa15b",
+      "durationSeconds": 23.1,
+      "cutListPath": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/J3137/qa/s06/cuts.json",
+      "openGatePath": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/J3137/qa/s06/gate_shorts_open.txt",
+      "captionsSrtPath": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/11_Upload-Package/s06_blood_pressure_cuff_v04/Captions/hos_005_s06_blood_pressure_cuff_v04.en-GB.srt",
+      "perWordJsonPresent": false,
+      "studioRead28Nov": {
+        "views": 33,
+        "stayedToWatch": 38.5,
+        "avgViewSeconds": 14,
+        "avgViewPct": null
+      },
+      "ytaSettled_2026-11-20_to_2026-11-25": {
+        "days": 6,
+        "views": 32,
+        "avgViewPct": 60.99,
+        "YT_SEARCH": 15,
+        "SHORTS": 15,
+        "SUBSCRIBER": 1,
+        "YT_OTHER_PAGE": 1,
+        "day1_SHORTS": 15,
+        "day1_YT_SEARCH": 9
+      },
+      "retentionCurve": {
+        "points": 0,
+        "note": "Unavailable from YTA API (<100 views / below curve threshold)"
+      }
+    },
+    "Bks_JLId1ew": {
+      "title": "How Do Plants Make Oxygen?",
+      "publishedAt": "2026-11-21T11:30:11Z",
+      "uploadedFile": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/J2169/Short_C_v03/hos006_short_c_v03.mp4",
+      "sha256Verified": "e1e3ff0ce3b5622b4a43d010a0df827bcd34e25ccd76a87338b286b0632c40c5",
+      "voSha256": "5b5d84e560d51ed9ad6f9bf5588f458802620f48f008b9409c532f8a1ea4e269",
+      "durationSeconds": 25.167,
+      "gitEvidenceCommit": "b8230f85b76075489bf47f64cb9db17bea032cf9 (origin/cursor/J2169-bc-v02)",
+      "studioRead28Nov": {
+        "views": 96,
+        "stayedToWatch": 56.9,
+        "avgViewSeconds": 22,
+        "avgViewPct": 85
+      },
+      "ytaSettled_2026-11-21_to_2026-11-25": {
+        "days": 5,
+        "views": 90,
+        "avgViewPct": 88.2,
+        "YT_SEARCH": 76,
+        "SHORTS": 14,
+        "day1_YT_SEARCH": 15,
+        "day1_SHORTS": 8
+      },
+      "retentionCurve": {
+        "points": 100,
+        "inconclusiveUnder100StudioViews": true,
+        "startPct": 173.33,
+        "endPct": 56.67,
+        "endRelativePct": 87.89,
+        "largestSingleBucketDropTies": [
+          {
+            "buckets": "0.02->0.03",
+            "seconds": "0.50-0.76",
+            "fromPct": 173.33,
+            "toPct": 163.33,
+            "deltaPp": -10.0
+          },
+          {
+            "buckets": "0.14->0.15",
+            "seconds": "3.52-3.78",
+            "fromPct": 140.0,
+            "toPct": 130.0,
+            "deltaPp": -10.0
+          },
+          {
+            "buckets": "0.21->0.22",
+            "seconds": "5.29-5.54",
+            "fromPct": 120.0,
+            "toPct": 110.0,
+            "deltaPp": -10.0
+          }
+        ],
+        "steepestFiveBucketDropTies": [
+          {
+            "buckets": "0.02->0.07",
+            "seconds": "0.50-1.76",
+            "fromPct": 173.33,
+            "toPct": 150.0,
+            "deltaPp": -23.33
+          },
+          {
+            "buckets": "0.12->0.17",
+            "seconds": "3.02-4.28",
+            "fromPct": 143.33,
+            "toPct": 120.0,
+            "deltaPp": -23.33
+          },
+          {
+            "buckets": "0.13->0.18",
+            "seconds": "3.27-4.53",
+            "fromPct": 140.0,
+            "toPct": 116.67,
+            "deltaPp": -23.33
+          },
+          {
+            "buckets": "0.14->0.19",
+            "seconds": "3.52-4.78",
+            "fromPct": 140.0,
+            "toPct": 116.67,
+            "deltaPp": -23.33
+          }
+        ]
+      }
+    }
+  },
+  "learning43ObservationalCohortPreClassification": [
+    {
+      "id": "4sYTV_rQcqs",
+      "film": "HOS:008",
+      "title": "How Does a Lightning Rod Work?",
+      "publishAt": "2026-11-29T11:30:00Z",
+      "preClassification": "process",
+      "rationale": "Textbook device-mechanism 'how does X work' process question (also names device lightning rod)",
+      "expectedAt12Dec1800Z": "mature (7d window 29 Nov-5 Dec, settled ~7 Dec)"
+    },
+    {
+      "id": "9ETHUOUH5-A",
+      "film": "HOS:009",
+      "title": "How Did Newton Discover Gravity?",
+      "publishAt": "2026-12-05T11:30:00Z",
+      "preClassification": "named-entity",
+      "rationale": "Names scientist Newton and concept Gravity",
+      "expectedAt12Dec1800Z": "boundary (7d ends 12 Dec 11:30Z; YTA 48h lag likely still settling)"
+    },
+    {
+      "id": "mpK3D6S7WLk",
+      "film": "HOS:010",
+      "title": "What Killed the Dinosaurs?",
+      "publishAt": null,
+      "preClassification": "named-entity",
+      "rationale": "Names historical mass-extinction event/topic; Private unscheduled (010 long not uploaded)",
+      "expectedAt12Dec1800Z": "immature / unscheduled"
+    },
+    {
+      "id": "sMPlMuxK3YU",
+      "film": "HOS:010",
+      "title": "Are Birds Really Dinosaurs?",
+      "publishAt": null,
+      "preClassification": "named-entity",
+      "rationale": "Named taxonomic classification question; Private unscheduled (010 long not uploaded)",
+      "expectedAt12Dec1800Z": "immature / unscheduled"
+    }
+  ],
+  "linkingReadOnlyCheck_2026-11-28T1641Z": {
+    "008": {
+      "long": "YqCWYlv_LCY",
+      "shortsWithLongUrlInLiveDesc": [
+        "__UtUYdEUwg",
+        "4sYTV_rQcqs",
+        "f_-BsKZf8X0"
+      ],
+      "relatedStatus": "Verified -> YqCWYlv_LCY in J3975/J3811"
+    },
+    "009": {
+      "long": "wiyfRnsTfTY",
+      "shortsWithLongUrlInLiveDesc": [
+        "OhdDVA9kWBk",
+        "9ETHUOUH5-A"
+      ],
+      "relatedStatus": "Pending J3501 Studio finish (3 Dec 18:05Z); not a new fault"
+    },
+    "010": {
+      "long": null,
+      "shorts": [
+        "mpK3D6S7WLk",
+        "sMPlMuxK3YU"
+      ],
+      "relatedStatus": "Pending 010 long upload (Private, unscheduled)"
+    }
+  },
+  "competitors30d": {
+    "retrievedAt": "2026-11-28T17:02:33Z",
+    "supersedes": "top-slice receipt retrieved 2026-11-28T16:41:31Z (kept below as previousTopSliceSummary)",
+    "windowStart": "2026-10-29T16:41:31Z",
+    "windowEnd": "2026-11-28T16:41:31Z",
+    "method": "YouTube Data API v3 read-only: playlistItems.list on each channel's uploads playlist (UU + channelId[2:]) paged until videoPublishedAt < windowStart; videos.list part=snippet,contentDetails,statistics,liveStreamingDetails. £0, zero playback.",
+    "selectionRule": "Every upload with snippet.publishedAt inside [windowStart, windowEnd]. No exclusions; livestream replays are flagged wasLivestream (SciShow: 1) and kept.",
+    "formatEvidence": "HEAD https://www.youtube.com/shorts/<id> with consent cookie, no playback; 200 = served as Short, 30x to /watch = not a Short. Public web behaviour, not a documented API field. All 68 rows classified; the <=180 s duration proxy agrees with the probe on every row. The Data API has no Shorts field.",
+    "ageAndCounts": "ageDaysAtRetrieval and views are both as of retrievedAt. Views are lifetime counts; views/day is not reported and is not early velocity.",
+    "baseline": "No channel baseline outside these saved rows is used. Any comparison is within one channel, one verified format and one age band (ageBandedWithinChannel).",
+    "channels": [
+      {
+        "name": "Veritasium",
+        "channelId": "UCHnyfMqiRRG1u-2MsSQLbXA",
+        "uploadsPlaylist": "UUHnyfMqiRRG1u-2MsSQLbXA",
+        "eligibleRows": [
+          {
+            "id": "zEmabFZvdqA",
+            "url": "https://www.youtube.com/watch?v=zEmabFZvdqA",
+            "title": "What happens if I lower this weight into the water?",
+            "publishedAt": "2026-10-30T14:00:38Z",
+            "ageDaysAtRetrieval": 29.13,
+            "durationSeconds": 74,
+            "views": 3525196,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 200,
+              "location": ""
+            },
+            "formatEvidence": "short (HEAD /shorts/<id> served 200, no redirect)",
+            "durationProxy": "<=180s"
+          },
+          {
+            "id": "xlNKNnXdtN4",
+            "url": "https://www.youtube.com/watch?v=xlNKNnXdtN4",
+            "title": "These ponds help support half the people on Earth",
+            "publishedAt": "2026-11-02T14:00:05Z",
+            "ageDaysAtRetrieval": 26.13,
+            "durationSeconds": 113,
+            "views": 577969,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 200,
+              "location": ""
+            },
+            "formatEvidence": "short (HEAD /shorts/<id> served 200, no redirect)",
+            "durationProxy": "<=180s"
+          },
+          {
+            "id": "KfODG5REyss",
+            "url": "https://www.youtube.com/watch?v=KfODG5REyss",
+            "title": "I finally saw quantum physics with my own eyes... (It's spookier than I expected)",
+            "publishedAt": "2026-11-04T15:52:59Z",
+            "ageDaysAtRetrieval": 24.05,
+            "durationSeconds": 3956,
+            "views": 22583414,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 303,
+              "location": "https://www.youtube.com/watch?v=KfODG5REyss"
+            },
+            "formatEvidence": "long (HEAD /shorts/<id> redirected to /watch)",
+            "durationProxy": ">180s"
+          },
+          {
+            "id": "rL0qEmTRI-I",
+            "url": "https://www.youtube.com/watch?v=rL0qEmTRI-I",
+            "title": "Why do deserts get cold at night?",
+            "publishedAt": "2026-11-06T14:00:17Z",
+            "ageDaysAtRetrieval": 22.13,
+            "durationSeconds": 86,
+            "views": 2053182,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 200,
+              "location": ""
+            },
+            "formatEvidence": "short (HEAD /shorts/<id> served 200, no redirect)",
+            "durationProxy": "<=180s"
+          },
+          {
+            "id": "2QSkkhbl3v4",
+            "url": "https://www.youtube.com/watch?v=2QSkkhbl3v4",
+            "title": "Why you can't trust a test that's 99% accurate",
+            "publishedAt": "2026-11-11T14:00:12Z",
+            "ageDaysAtRetrieval": 17.13,
+            "durationSeconds": 90,
+            "views": 1748755,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 200,
+              "location": ""
+            },
+            "formatEvidence": "short (HEAD /shorts/<id> served 200, no redirect)",
+            "durationProxy": "<=180s"
+          },
+          {
+            "id": "V8rT6UI3Crg",
+            "url": "https://www.youtube.com/watch?v=V8rT6UI3Crg",
+            "title": "Making Gunpowder From Scratch",
+            "publishedAt": "2026-11-13T14:00:08Z",
+            "ageDaysAtRetrieval": 15.13,
+            "durationSeconds": 64,
+            "views": 1024705,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 200,
+              "location": ""
+            },
+            "formatEvidence": "short (HEAD /shorts/<id> served 200, no redirect)",
+            "durationProxy": "<=180s"
+          },
+          {
+            "id": "LDloLvb3yno",
+            "url": "https://www.youtube.com/watch?v=LDloLvb3yno",
+            "title": "This is not a thread...",
+            "publishedAt": "2026-11-17T14:14:54Z",
+            "ageDaysAtRetrieval": 11.12,
+            "durationSeconds": 100,
+            "views": 1298465,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 200,
+              "location": ""
+            },
+            "formatEvidence": "short (HEAD /shorts/<id> served 200, no redirect)",
+            "durationProxy": "<=180s"
+          },
+          {
+            "id": "uXuQF_PPg5U",
+            "url": "https://www.youtube.com/watch?v=uXuQF_PPg5U",
+            "title": "Randomness is a lie. Let me explain",
+            "publishedAt": "2026-11-18T20:29:44Z",
+            "ageDaysAtRetrieval": 9.86,
+            "durationSeconds": 2328,
+            "views": 4938933,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 303,
+              "location": "https://www.youtube.com/watch?v=uXuQF_PPg5U"
+            },
+            "formatEvidence": "long (HEAD /shorts/<id> redirected to /watch)",
+            "durationProxy": ">180s"
+          },
+          {
+            "id": "HZjRoKgDnow",
+            "url": "https://www.youtube.com/watch?v=HZjRoKgDnow",
+            "title": "Does adding helium reduce a balloon’s mass?",
+            "publishedAt": "2026-11-20T14:34:58Z",
+            "ageDaysAtRetrieval": 8.1,
+            "durationSeconds": 93,
+            "views": 485323,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 200,
+              "location": ""
+            },
+            "formatEvidence": "short (HEAD /shorts/<id> served 200, no redirect)",
+            "durationProxy": "<=180s"
+          },
+          {
+            "id": "WbM7GP7QoEM",
+            "url": "https://www.youtube.com/watch?v=WbM7GP7QoEM",
+            "title": "Scientists Said This Wave Was Impossible",
+            "publishedAt": "2026-11-25T14:00:52Z",
+            "ageDaysAtRetrieval": 3.13,
+            "durationSeconds": 1684,
+            "views": 9040948,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 303,
+              "location": "https://www.youtube.com/watch?v=WbM7GP7QoEM"
+            },
+            "formatEvidence": "long (HEAD /shorts/<id> redirected to /watch)",
+            "durationProxy": ">180s"
+          },
+          {
+            "id": "t81DrYDi3As",
+            "url": "https://www.youtube.com/watch?v=t81DrYDi3As",
+            "title": "Can a roll of tape really make X-rays?",
+            "publishedAt": "2026-11-26T15:20:14Z",
+            "ageDaysAtRetrieval": 2.07,
+            "durationSeconds": 95,
+            "views": 345977,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 200,
+              "location": ""
+            },
+            "formatEvidence": "short (HEAD /shorts/<id> served 200, no redirect)",
+            "durationProxy": "<=180s"
+          }
+        ]
+      },
+      {
+        "name": "SciShow",
+        "channelId": "UCZYTClx2T1of7BRZ86-8fow",
+        "uploadsPlaylist": "UUZYTClx2T1of7BRZ86-8fow",
+        "eligibleRows": [
+          {
+            "id": "LiAAayT_v84",
+            "url": "https://www.youtube.com/watch?v=LiAAayT_v84",
+            "title": "Two Different Things Are Killing Sharks",
+            "publishedAt": "2026-10-29T17:00:21Z",
+            "ageDaysAtRetrieval": 30.0,
+            "durationSeconds": 464,
+            "views": 276242,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 303,
+              "location": "https://www.youtube.com/watch?v=LiAAayT_v84"
+            },
+            "formatEvidence": "long (HEAD /shorts/<id> redirected to /watch)",
+            "durationProxy": ">180s"
+          },
+          {
+            "id": "3bc9r8zk36s",
+            "url": "https://www.youtube.com/watch?v=3bc9r8zk36s",
+            "title": "5 Maps That Changed History",
+            "publishedAt": "2026-10-30T17:00:23Z",
+            "ageDaysAtRetrieval": 29.0,
+            "durationSeconds": 808,
+            "views": 188454,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 303,
+              "location": "https://www.youtube.com/watch?v=3bc9r8zk36s"
+            },
+            "formatEvidence": "long (HEAD /shorts/<id> redirected to /watch)",
+            "durationProxy": ">180s"
+          },
+          {
+            "id": "G25Vd8hpLJI",
+            "url": "https://www.youtube.com/watch?v=G25Vd8hpLJI",
+            "title": "This Rock Was Supposed to Be from Space",
+            "publishedAt": "2026-11-02T18:00:15Z",
+            "ageDaysAtRetrieval": 25.96,
+            "durationSeconds": 657,
+            "views": 152800,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 303,
+              "location": "https://www.youtube.com/watch?v=G25Vd8hpLJI"
+            },
+            "formatEvidence": "long (HEAD /shorts/<id> redirected to /watch)",
+            "durationProxy": ">180s"
+          },
+          {
+            "id": "M6nefnNpOZA",
+            "url": "https://www.youtube.com/watch?v=M6nefnNpOZA",
+            "title": "What Was the First Alcohol?",
+            "publishedAt": "2026-11-03T18:00:04Z",
+            "ageDaysAtRetrieval": 24.96,
+            "durationSeconds": 881,
+            "views": 223668,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 303,
+              "location": "https://www.youtube.com/watch?v=M6nefnNpOZA"
+            },
+            "formatEvidence": "long (HEAD /shorts/<id> redirected to /watch)",
+            "durationProxy": ">180s"
+          },
+          {
+            "id": "i7esSCr2UJk",
+            "url": "https://www.youtube.com/watch?v=i7esSCr2UJk",
+            "title": "Why Is There No Vitamin F?",
+            "publishedAt": "2026-11-04T18:00:29Z",
+            "ageDaysAtRetrieval": 23.96,
+            "durationSeconds": 911,
+            "views": 1163680,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 303,
+              "location": "https://www.youtube.com/watch?v=i7esSCr2UJk"
+            },
+            "formatEvidence": "long (HEAD /shorts/<id> redirected to /watch)",
+            "durationProxy": ">180s"
+          },
+          {
+            "id": "1EX702Au9oQ",
+            "url": "https://www.youtube.com/watch?v=1EX702Au9oQ",
+            "title": "The Man O' War Is Scarier Than You Think",
+            "publishedAt": "2026-11-05T18:00:36Z",
+            "ageDaysAtRetrieval": 22.96,
+            "durationSeconds": 351,
+            "views": 424370,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 303,
+              "location": "https://www.youtube.com/watch?v=1EX702Au9oQ"
+            },
+            "formatEvidence": "long (HEAD /shorts/<id> redirected to /watch)",
+            "durationProxy": ">180s"
+          },
+          {
+            "id": "N9zYE5Ui97g",
+            "url": "https://www.youtube.com/watch?v=N9zYE5Ui97g",
+            "title": "4 Supervolcanoes You’ve Never Heard Of",
+            "publishedAt": "2026-11-06T18:00:29Z",
+            "ageDaysAtRetrieval": 21.96,
+            "durationSeconds": 829,
+            "views": 333921,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 303,
+              "location": "https://www.youtube.com/watch?v=N9zYE5Ui97g"
+            },
+            "formatEvidence": "long (HEAD /shorts/<id> redirected to /watch)",
+            "durationProxy": ">180s"
+          },
+          {
+            "id": "154Xnt8Zxfg",
+            "url": "https://www.youtube.com/watch?v=154Xnt8Zxfg",
+            "title": "5 Species That Love Fire",
+            "publishedAt": "2026-11-09T18:00:36Z",
+            "ageDaysAtRetrieval": 18.96,
+            "durationSeconds": 699,
+            "views": 229726,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 303,
+              "location": "https://www.youtube.com/watch?v=154Xnt8Zxfg"
+            },
+            "formatEvidence": "long (HEAD /shorts/<id> redirected to /watch)",
+            "durationProxy": ">180s"
+          },
+          {
+            "id": "uALjsKI-ceE",
+            "url": "https://www.youtube.com/watch?v=uALjsKI-ceE",
+            "title": "Why Isn’t Heart Cancer a Thing?",
+            "publishedAt": "2026-11-10T18:00:12Z",
+            "ageDaysAtRetrieval": 17.96,
+            "durationSeconds": 463,
+            "views": 2972345,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 303,
+              "location": "https://www.youtube.com/watch?v=uALjsKI-ceE"
+            },
+            "formatEvidence": "long (HEAD /shorts/<id> redirected to /watch)",
+            "durationProxy": ">180s"
+          },
+          {
+            "id": "4JZoa12T9RY",
+            "url": "https://www.youtube.com/watch?v=4JZoa12T9RY",
+            "title": "How 4 Perfect Space Balls Proved Einstein Right",
+            "publishedAt": "2026-11-11T18:00:31Z",
+            "ageDaysAtRetrieval": 16.96,
+            "durationSeconds": 784,
+            "views": 190497,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 303,
+              "location": "https://www.youtube.com/watch?v=4JZoa12T9RY"
+            },
+            "formatEvidence": "long (HEAD /shorts/<id> redirected to /watch)",
+            "durationProxy": ">180s"
+          },
+          {
+            "id": "FKiSYHf1HyI",
+            "url": "https://www.youtube.com/watch?v=FKiSYHf1HyI",
+            "title": "Using Radioactive Waste to Treat Cancer",
+            "publishedAt": "2026-11-12T18:00:21Z",
+            "ageDaysAtRetrieval": 15.96,
+            "durationSeconds": 803,
+            "views": 191546,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 303,
+              "location": "https://www.youtube.com/watch?v=FKiSYHf1HyI"
+            },
+            "formatEvidence": "long (HEAD /shorts/<id> redirected to /watch)",
+            "durationProxy": ">180s"
+          },
+          {
+            "id": "S7ELHbvqaeA",
+            "url": "https://www.youtube.com/watch?v=S7ELHbvqaeA",
+            "title": "The Deep Sea Sub Built By a Cereal Company",
+            "publishedAt": "2026-11-13T18:00:07Z",
+            "ageDaysAtRetrieval": 14.96,
+            "durationSeconds": 731,
+            "views": 142375,
+            "liveBroadcastContent": "none",
+            "wasLivestream": true,
+            "shortsUrlProbe": {
+              "status": 303,
+              "location": "https://www.youtube.com/watch?v=S7ELHbvqaeA"
+            },
+            "formatEvidence": "long (HEAD /shorts/<id> redirected to /watch)",
+            "durationProxy": ">180s"
+          },
+          {
+            "id": "1ejtdt78rCo",
+            "url": "https://www.youtube.com/watch?v=1ejtdt78rCo",
+            "title": "The Chess Rating System That Predicts Everything",
+            "publishedAt": "2026-11-16T18:00:35Z",
+            "ageDaysAtRetrieval": 11.96,
+            "durationSeconds": 676,
+            "views": 157685,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 303,
+              "location": "https://www.youtube.com/watch?v=1ejtdt78rCo"
+            },
+            "formatEvidence": "long (HEAD /shorts/<id> redirected to /watch)",
+            "durationProxy": ">180s"
+          },
+          {
+            "id": "yNsRbQln4Vg",
+            "url": "https://www.youtube.com/watch?v=yNsRbQln4Vg",
+            "title": "Is Eating Oysters Safe?",
+            "publishedAt": "2026-11-17T18:00:36Z",
+            "ageDaysAtRetrieval": 10.96,
+            "durationSeconds": 685,
+            "views": 269418,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 303,
+              "location": "https://www.youtube.com/watch?v=yNsRbQln4Vg"
+            },
+            "formatEvidence": "long (HEAD /shorts/<id> redirected to /watch)",
+            "durationProxy": ">180s"
+          },
+          {
+            "id": "7pGCRPvKBXA",
+            "url": "https://www.youtube.com/watch?v=7pGCRPvKBXA",
+            "title": "Your Allergies Might Prevent Cancer",
+            "publishedAt": "2026-11-18T18:00:04Z",
+            "ageDaysAtRetrieval": 9.96,
+            "durationSeconds": 475,
+            "views": 157703,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 303,
+              "location": "https://www.youtube.com/watch?v=7pGCRPvKBXA"
+            },
+            "formatEvidence": "long (HEAD /shorts/<id> redirected to /watch)",
+            "durationProxy": ">180s"
+          },
+          {
+            "id": "ZDlcqG7Kuho",
+            "url": "https://www.youtube.com/watch?v=ZDlcqG7Kuho",
+            "title": "Those Ape Sign Language Studies May Have Been Bogus",
+            "publishedAt": "2026-11-19T18:00:23Z",
+            "ageDaysAtRetrieval": 8.96,
+            "durationSeconds": 901,
+            "views": 350236,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 303,
+              "location": "https://www.youtube.com/watch?v=ZDlcqG7Kuho"
+            },
+            "formatEvidence": "long (HEAD /shorts/<id> redirected to /watch)",
+            "durationProxy": ">180s"
+          },
+          {
+            "id": "ZDRsHBGi8_8",
+            "url": "https://www.youtube.com/watch?v=ZDRsHBGi8_8",
+            "title": "Blue Bears (And 4 Other Animals That Shouldn’t Be That Color)",
+            "publishedAt": "2026-11-20T18:00:04Z",
+            "ageDaysAtRetrieval": 7.96,
+            "durationSeconds": 879,
+            "views": 232199,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 303,
+              "location": "https://www.youtube.com/watch?v=ZDRsHBGi8_8&pp=0gcJCToDQVKahPAF"
+            },
+            "formatEvidence": "long (HEAD /shorts/<id> redirected to /watch)",
+            "durationProxy": ">180s"
+          },
+          {
+            "id": "9WCbrriN8sU",
+            "url": "https://www.youtube.com/watch?v=9WCbrriN8sU",
+            "title": "Airplanes That Run on... Algae? #science",
+            "publishedAt": "2026-11-23T00:00:16Z",
+            "ageDaysAtRetrieval": 5.71,
+            "durationSeconds": 32,
+            "views": 41538,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 200,
+              "location": ""
+            },
+            "formatEvidence": "short (HEAD /shorts/<id> served 200, no redirect)",
+            "durationProxy": "<=180s"
+          },
+          {
+            "id": "1qrGwX9kQoQ",
+            "url": "https://www.youtube.com/watch?v=1qrGwX9kQoQ",
+            "title": "The Thing That Made Absinthe Famous Is Not True",
+            "publishedAt": "2026-11-23T18:00:28Z",
+            "ageDaysAtRetrieval": 4.96,
+            "durationSeconds": 784,
+            "views": 301151,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 303,
+              "location": "https://www.youtube.com/watch?v=1qrGwX9kQoQ"
+            },
+            "formatEvidence": "long (HEAD /shorts/<id> redirected to /watch)",
+            "durationProxy": ">180s"
+          },
+          {
+            "id": "AzF_vkhkBrU",
+            "url": "https://www.youtube.com/watch?v=AzF_vkhkBrU",
+            "title": "The Sperm Whale Lubricant Science Still Can’t Beat",
+            "publishedAt": "2026-11-24T18:00:25Z",
+            "ageDaysAtRetrieval": 3.96,
+            "durationSeconds": 725,
+            "views": 143596,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 303,
+              "location": "https://www.youtube.com/watch?v=AzF_vkhkBrU"
+            },
+            "formatEvidence": "long (HEAD /shorts/<id> redirected to /watch)",
+            "durationProxy": ">180s"
+          },
+          {
+            "id": "yuvAjI2B8zo",
+            "url": "https://www.youtube.com/watch?v=yuvAjI2B8zo",
+            "title": "Does The Uberman Sleep Schedule Really Work?",
+            "publishedAt": "2026-11-25T18:00:00Z",
+            "ageDaysAtRetrieval": 2.96,
+            "durationSeconds": 884,
+            "views": 290794,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 303,
+              "location": "https://www.youtube.com/watch?v=yuvAjI2B8zo"
+            },
+            "formatEvidence": "long (HEAD /shorts/<id> redirected to /watch)",
+            "durationProxy": ">180s"
+          },
+          {
+            "id": "VGU3rbyWFTQ",
+            "url": "https://www.youtube.com/watch?v=VGU3rbyWFTQ",
+            "title": "Scientists Found Something Impossible at the Trinity Test Site.",
+            "publishedAt": "2026-11-26T18:00:20Z",
+            "ageDaysAtRetrieval": 1.96,
+            "durationSeconds": 679,
+            "views": 379266,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 303,
+              "location": "https://www.youtube.com/watch?v=VGU3rbyWFTQ"
+            },
+            "formatEvidence": "long (HEAD /shorts/<id> redirected to /watch)",
+            "durationProxy": ">180s"
+          },
+          {
+            "id": "IAVZ8p_igiU",
+            "url": "https://www.youtube.com/watch?v=IAVZ8p_igiU",
+            "title": "Geologists Blame Everything on Theia",
+            "publishedAt": "2026-11-27T18:00:08Z",
+            "ageDaysAtRetrieval": 0.96,
+            "durationSeconds": 906,
+            "views": 265640,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 303,
+              "location": "https://www.youtube.com/watch?v=IAVZ8p_igiU"
+            },
+            "formatEvidence": "long (HEAD /shorts/<id> redirected to /watch)",
+            "durationProxy": ">180s"
+          }
+        ]
+      },
+      {
+        "name": "TED-Ed",
+        "channelId": "UCsooa4yRKGN_zEE8iknghZA",
+        "uploadsPlaylist": "UUsooa4yRKGN_zEE8iknghZA",
+        "eligibleRows": [
+          {
+            "id": "8EtdC9Bjubk",
+            "url": "https://www.youtube.com/watch?v=8EtdC9Bjubk",
+            "title": "Can you solve the Billy Bonka riddle? - Edwin F. Meyer",
+            "publishedAt": "2026-11-03T16:00:34Z",
+            "ageDaysAtRetrieval": 25.04,
+            "durationSeconds": 373,
+            "views": 1062300,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 303,
+              "location": "https://www.youtube.com/watch?v=8EtdC9Bjubk&pp=0gcJCToDQVKahPAF"
+            },
+            "formatEvidence": "long (HEAD /shorts/<id> redirected to /watch)",
+            "durationProxy": ">180s"
+          },
+          {
+            "id": "bw5tzcoEG88",
+            "url": "https://www.youtube.com/watch?v=bw5tzcoEG88",
+            "title": "How to effectively use visuals in your presentation",
+            "publishedAt": "2026-11-05T16:00:41Z",
+            "ageDaysAtRetrieval": 23.04,
+            "durationSeconds": 299,
+            "views": 195364,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 303,
+              "location": "https://www.youtube.com/watch?v=bw5tzcoEG88"
+            },
+            "formatEvidence": "long (HEAD /shorts/<id> redirected to /watch)",
+            "durationProxy": ">180s"
+          },
+          {
+            "id": "nBVuemyrMgE",
+            "url": "https://www.youtube.com/watch?v=nBVuemyrMgE",
+            "title": "Is salt the most important ingredient in history? - Carolyn Beans",
+            "publishedAt": "2026-11-10T16:01:00Z",
+            "ageDaysAtRetrieval": 18.04,
+            "durationSeconds": 309,
+            "views": 595706,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 303,
+              "location": "https://www.youtube.com/watch?v=nBVuemyrMgE"
+            },
+            "formatEvidence": "long (HEAD /shorts/<id> redirected to /watch)",
+            "durationProxy": ">180s"
+          },
+          {
+            "id": "aDblEBU41nA",
+            "url": "https://www.youtube.com/watch?v=aDblEBU41nA",
+            "title": "Why is pepper such a popular spice? - Carolyn Beans",
+            "publishedAt": "2026-11-12T16:01:11Z",
+            "ageDaysAtRetrieval": 16.04,
+            "durationSeconds": 296,
+            "views": 533578,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 303,
+              "location": "https://www.youtube.com/watch?v=aDblEBU41nA"
+            },
+            "formatEvidence": "long (HEAD /shorts/<id> redirected to /watch)",
+            "durationProxy": ">180s"
+          },
+          {
+            "id": "dkocGur84i8",
+            "url": "https://www.youtube.com/watch?v=dkocGur84i8",
+            "title": "The three words that power every device you own - Lane Gunderman",
+            "publishedAt": "2026-11-17T16:00:59Z",
+            "ageDaysAtRetrieval": 11.04,
+            "durationSeconds": 351,
+            "views": 280110,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 303,
+              "location": "https://www.youtube.com/watch?v=dkocGur84i8&pp=0gcJCToDQVKahPAF"
+            },
+            "formatEvidence": "long (HEAD /shorts/<id> redirected to /watch)",
+            "durationProxy": ">180s"
+          },
+          {
+            "id": "fqL9dt6QHWg",
+            "url": "https://www.youtube.com/watch?v=fqL9dt6QHWg",
+            "title": "5 of the most dangerous scientific discoveries - Shannon Odell",
+            "publishedAt": "2026-11-19T15:59:54Z",
+            "ageDaysAtRetrieval": 9.04,
+            "durationSeconds": 376,
+            "views": 493180,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 303,
+              "location": "https://www.youtube.com/watch?v=fqL9dt6QHWg"
+            },
+            "formatEvidence": "long (HEAD /shorts/<id> redirected to /watch)",
+            "durationProxy": ">180s"
+          },
+          {
+            "id": "1IVlILdETAw",
+            "url": "https://www.youtube.com/watch?v=1IVlILdETAw",
+            "title": "What happens if you accidentally eat moldy food? - Josephine Wee",
+            "publishedAt": "2026-11-24T16:01:11Z",
+            "ageDaysAtRetrieval": 4.04,
+            "durationSeconds": 337,
+            "views": 2557253,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 303,
+              "location": "https://www.youtube.com/watch?v=1IVlILdETAw&pp=0gcJCToDQVKahPAF"
+            },
+            "formatEvidence": "long (HEAD /shorts/<id> redirected to /watch)",
+            "durationProxy": ">180s"
+          }
+        ]
+      },
+      {
+        "name": "Real Engineering",
+        "channelId": "UCR1IuLEqb6UEA_zQ81kwXfg",
+        "uploadsPlaylist": "UUR1IuLEqb6UEA_zQ81kwXfg",
+        "eligibleRows": [
+          {
+            "id": "y1KipwEoRBA",
+            "url": "https://www.youtube.com/watch?v=y1KipwEoRBA",
+            "title": "The Rise and Fall of the Concorde",
+            "publishedAt": "2026-10-30T15:38:00Z",
+            "ageDaysAtRetrieval": 29.06,
+            "durationSeconds": 2409,
+            "views": 706249,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 303,
+              "location": "https://www.youtube.com/watch?v=y1KipwEoRBA"
+            },
+            "formatEvidence": "long (HEAD /shorts/<id> redirected to /watch)",
+            "durationProxy": ">180s"
+          },
+          {
+            "id": "xod_mCN-K38",
+            "url": "https://www.youtube.com/watch?v=xod_mCN-K38",
+            "title": "What Is Worth Saving Before the ISS Deorbits?",
+            "publishedAt": "2026-11-07T16:32:11Z",
+            "ageDaysAtRetrieval": 21.02,
+            "durationSeconds": 1259,
+            "views": 808218,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 303,
+              "location": "https://www.youtube.com/watch?v=xod_mCN-K38"
+            },
+            "formatEvidence": "long (HEAD /shorts/<id> redirected to /watch)",
+            "durationProxy": ">180s"
+          }
+        ]
+      },
+      {
+        "name": "Kings and Generals",
+        "channelId": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+        "uploadsPlaylist": "UUMmaBzfCCwZ2KqaBJjkj0fw",
+        "eligibleRows": [
+          {
+            "id": "MhPrNbVi8R4",
+            "url": "https://www.youtube.com/watch?v=MhPrNbVi8R4",
+            "title": "Disease and Guns Destroyed Siberia's Indigenous Peoples #ColonialHistory #history",
+            "publishedAt": "2026-10-30T13:00:04Z",
+            "ageDaysAtRetrieval": 29.17,
+            "durationSeconds": 53,
+            "views": 35510,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 200,
+              "location": ""
+            },
+            "formatEvidence": "short (HEAD /shorts/<id> served 200, no redirect)",
+            "durationProxy": "<=180s"
+          },
+          {
+            "id": "ytmwsMU1DMA",
+            "url": "https://www.youtube.com/watch?v=ytmwsMU1DMA",
+            "title": "Yugoslavia 1991: How the Wars Began",
+            "publishedAt": "2026-11-01T14:07:28Z",
+            "ageDaysAtRetrieval": 27.12,
+            "durationSeconds": 1459,
+            "views": 362229,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 303,
+              "location": "https://www.youtube.com/watch?v=ytmwsMU1DMA"
+            },
+            "formatEvidence": "long (HEAD /shorts/<id> redirected to /watch)",
+            "durationProxy": ">180s"
+          },
+          {
+            "id": "ukhHEgqZV3U",
+            "url": "https://www.youtube.com/watch?v=ukhHEgqZV3U",
+            "title": "Why Vikings Built Their Ships Like This #history #vikings #shorts",
+            "publishedAt": "2026-11-02T05:00:02Z",
+            "ageDaysAtRetrieval": 26.5,
+            "durationSeconds": 133,
+            "views": 48502,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 200,
+              "location": ""
+            },
+            "formatEvidence": "short (HEAD /shorts/<id> served 200, no redirect)",
+            "durationProxy": "<=180s"
+          },
+          {
+            "id": "HARdgJjiR7s",
+            "url": "https://www.youtube.com/watch?v=HARdgJjiR7s",
+            "title": "From India to Europe: The Romani Odyssey",
+            "publishedAt": "2026-11-03T13:59:50Z",
+            "ageDaysAtRetrieval": 25.13,
+            "durationSeconds": 1204,
+            "views": 225436,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 303,
+              "location": "https://www.youtube.com/watch?v=HARdgJjiR7s"
+            },
+            "formatEvidence": "long (HEAD /shorts/<id> redirected to /watch)",
+            "durationProxy": ">180s"
+          },
+          {
+            "id": "HGgiq6WFBNM",
+            "url": "https://www.youtube.com/watch?v=HGgiq6WFBNM",
+            "title": "The Roman Frontier Was Dangerous But Nobody Wanted to Leave #history #shorts",
+            "publishedAt": "2026-11-04T14:00:37Z",
+            "ageDaysAtRetrieval": 24.13,
+            "durationSeconds": 80,
+            "views": 35198,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 200,
+              "location": ""
+            },
+            "formatEvidence": "short (HEAD /shorts/<id> served 200, no redirect)",
+            "durationProxy": "<=180s"
+          },
+          {
+            "id": "U8qHNk0xPss",
+            "url": "https://www.youtube.com/watch?v=U8qHNk0xPss",
+            "title": "Not only Janissaries - The Ottoman Empire’s Elite Army",
+            "publishedAt": "2026-11-05T13:59:59Z",
+            "ageDaysAtRetrieval": 23.13,
+            "durationSeconds": 1141,
+            "views": 342301,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 303,
+              "location": "https://www.youtube.com/watch?v=U8qHNk0xPss"
+            },
+            "formatEvidence": "long (HEAD /shorts/<id> redirected to /watch)",
+            "durationProxy": ">180s"
+          },
+          {
+            "id": "329gl3qCirk",
+            "url": "https://www.youtube.com/watch?v=329gl3qCirk",
+            "title": "The king was a child and the richest man in England was running everything #history #medieval",
+            "publishedAt": "2026-11-06T14:00:33Z",
+            "ageDaysAtRetrieval": 22.13,
+            "durationSeconds": 59,
+            "views": 36958,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 200,
+              "location": ""
+            },
+            "formatEvidence": "short (HEAD /shorts/<id> served 200, no redirect)",
+            "durationProxy": "<=180s"
+          },
+          {
+            "id": "9rv9wy5KrTA",
+            "url": "https://www.youtube.com/watch?v=9rv9wy5KrTA",
+            "title": "Carthage vs the Greeks: The Sicilian Wars - Before the Punic Wars",
+            "publishedAt": "2026-11-08T13:59:56Z",
+            "ageDaysAtRetrieval": 20.13,
+            "durationSeconds": 9178,
+            "views": 192870,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 303,
+              "location": "https://www.youtube.com/watch?v=9rv9wy5KrTA"
+            },
+            "formatEvidence": "long (HEAD /shorts/<id> redirected to /watch)",
+            "durationProxy": ">180s"
+          },
+          {
+            "id": "zjnHzjb7yu4",
+            "url": "https://www.youtube.com/watch?v=zjnHzjb7yu4",
+            "title": "the invaders who became more english than the english #history #shorts #medieval",
+            "publishedAt": "2026-11-09T14:00:26Z",
+            "ageDaysAtRetrieval": 19.13,
+            "durationSeconds": 114,
+            "views": 52630,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 200,
+              "location": ""
+            },
+            "formatEvidence": "short (HEAD /shorts/<id> served 200, no redirect)",
+            "durationProxy": "<=180s"
+          },
+          {
+            "id": "BK42hlcV-Gs",
+            "url": "https://www.youtube.com/watch?v=BK42hlcV-Gs",
+            "title": "Russian Invasion of Ukraine Before the Midterm Blue Tsunami",
+            "publishedAt": "2026-11-10T13:59:59Z",
+            "ageDaysAtRetrieval": 18.13,
+            "durationSeconds": 1192,
+            "views": 276486,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 303,
+              "location": "https://www.youtube.com/watch?v=BK42hlcV-Gs"
+            },
+            "formatEvidence": "long (HEAD /shorts/<id> redirected to /watch)",
+            "durationProxy": ">180s"
+          },
+          {
+            "id": "ll7Q0rwMk6E",
+            "url": "https://www.youtube.com/watch?v=ll7Q0rwMk6E",
+            "title": "He Lost Most of His Fingers and Still Didn't Stop Fighting #history #ww2 #shorts",
+            "publishedAt": "2026-11-11T14:00:23Z",
+            "ageDaysAtRetrieval": 17.13,
+            "durationSeconds": 55,
+            "views": 24505,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 200,
+              "location": ""
+            },
+            "formatEvidence": "short (HEAD /shorts/<id> served 200, no redirect)",
+            "durationProxy": "<=180s"
+          },
+          {
+            "id": "vhmHhCEwoSk",
+            "url": "https://www.youtube.com/watch?v=vhmHhCEwoSk",
+            "title": "Why Iran Couldn't Defeat Saddam Hussein - Iran-Iraq War DOCUMENTARY",
+            "publishedAt": "2026-11-12T13:59:54Z",
+            "ageDaysAtRetrieval": 16.13,
+            "durationSeconds": 979,
+            "views": 297803,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 303,
+              "location": "https://www.youtube.com/watch?v=vhmHhCEwoSk"
+            },
+            "formatEvidence": "long (HEAD /shorts/<id> redirected to /watch)",
+            "durationProxy": ">180s"
+          },
+          {
+            "id": "gGZQxHO0y8U",
+            "url": "https://www.youtube.com/watch?v=gGZQxHO0y8U",
+            "title": "10,000 Nubian Archers Destroyed an Entire Arab Army #history #africanhistory #shorts",
+            "publishedAt": "2026-11-13T14:00:23Z",
+            "ageDaysAtRetrieval": 15.13,
+            "durationSeconds": 170,
+            "views": 558755,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 200,
+              "location": ""
+            },
+            "formatEvidence": "short (HEAD /shorts/<id> served 200, no redirect)",
+            "durationProxy": "<=180s"
+          },
+          {
+            "id": "scZAjqFA7kk",
+            "url": "https://www.youtube.com/watch?v=scZAjqFA7kk",
+            "title": "Hunyadi vs the Ottomans: The Full Story Behind the Legend",
+            "publishedAt": "2026-11-15T13:59:52Z",
+            "ageDaysAtRetrieval": 13.13,
+            "durationSeconds": 4816,
+            "views": 274017,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 303,
+              "location": "https://www.youtube.com/watch?v=scZAjqFA7kk"
+            },
+            "formatEvidence": "long (HEAD /shorts/<id> redirected to /watch)",
+            "durationProxy": ">180s"
+          },
+          {
+            "id": "CWAgBYlvOs8",
+            "url": "https://www.youtube.com/watch?v=CWAgBYlvOs8",
+            "title": "How a slave could become the most powerful man in the empire #history #ottomanempire",
+            "publishedAt": "2026-11-16T14:00:13Z",
+            "ageDaysAtRetrieval": 12.13,
+            "durationSeconds": 91,
+            "views": 33916,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 200,
+              "location": ""
+            },
+            "formatEvidence": "short (HEAD /shorts/<id> served 200, no redirect)",
+            "durationProxy": "<=180s"
+          },
+          {
+            "id": "BTs75T-Ree8",
+            "url": "https://www.youtube.com/watch?v=BTs75T-Ree8",
+            "title": "Spanish Civil War: How Franco Seized Power",
+            "publishedAt": "2026-11-17T14:16:54Z",
+            "ageDaysAtRetrieval": 11.12,
+            "durationSeconds": 1229,
+            "views": 258059,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 303,
+              "location": "https://www.youtube.com/watch?v=BTs75T-Ree8"
+            },
+            "formatEvidence": "long (HEAD /shorts/<id> redirected to /watch)",
+            "durationProxy": ">180s"
+          },
+          {
+            "id": "IE38wpJFLjc",
+            "url": "https://www.youtube.com/watch?v=IE38wpJFLjc",
+            "title": "The Soldier Whose Platoon Was Gone and He Kept Going #gurkha #military #shorts",
+            "publishedAt": "2026-11-18T14:00:12Z",
+            "ageDaysAtRetrieval": 10.13,
+            "durationSeconds": 44,
+            "views": 15258,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 200,
+              "location": ""
+            },
+            "formatEvidence": "short (HEAD /shorts/<id> served 200, no redirect)",
+            "durationProxy": "<=180s"
+          },
+          {
+            "id": "zcB5KlHrczo",
+            "url": "https://www.youtube.com/watch?v=zcB5KlHrczo",
+            "title": "Who Really Wrote the Iliad and Odyssey?",
+            "publishedAt": "2026-11-19T13:59:53Z",
+            "ageDaysAtRetrieval": 9.13,
+            "durationSeconds": 1281,
+            "views": 123805,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 303,
+              "location": "https://www.youtube.com/watch?v=zcB5KlHrczo"
+            },
+            "formatEvidence": "long (HEAD /shorts/<id> redirected to /watch)",
+            "durationProxy": ">180s"
+          },
+          {
+            "id": "Q3Snj-q_3no",
+            "url": "https://www.youtube.com/watch?v=Q3Snj-q_3no",
+            "title": "How a Simple Stirrup Made Riders Unstoppable #history #shorts",
+            "publishedAt": "2026-11-20T14:00:23Z",
+            "ageDaysAtRetrieval": 8.13,
+            "durationSeconds": 81,
+            "views": 53431,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 200,
+              "location": ""
+            },
+            "formatEvidence": "short (HEAD /shorts/<id> served 200, no redirect)",
+            "durationProxy": "<=180s"
+          },
+          {
+            "id": "2vMW4yFup1A",
+            "url": "https://www.youtube.com/watch?v=2vMW4yFup1A",
+            "title": "American Civil War: The Complete Story - EVERY BATTLE EXPLAINED",
+            "publishedAt": "2026-11-22T14:14:10Z",
+            "ageDaysAtRetrieval": 6.12,
+            "durationSeconds": 31796,
+            "views": 249459,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 303,
+              "location": "https://www.youtube.com/watch?v=2vMW4yFup1A"
+            },
+            "formatEvidence": "long (HEAD /shorts/<id> redirected to /watch)",
+            "durationProxy": ">180s"
+          },
+          {
+            "id": "b5K1EFJcIgI",
+            "url": "https://www.youtube.com/watch?v=b5K1EFJcIgI",
+            "title": "What Happened When Janissary Battalions Lost Control #history #ottoman",
+            "publishedAt": "2026-11-23T14:00:29Z",
+            "ageDaysAtRetrieval": 5.13,
+            "durationSeconds": 69,
+            "views": 36385,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 200,
+              "location": ""
+            },
+            "formatEvidence": "short (HEAD /shorts/<id> served 200, no redirect)",
+            "durationProxy": "<=180s"
+          },
+          {
+            "id": "Ye8WocCrnH0",
+            "url": "https://www.youtube.com/watch?v=Ye8WocCrnH0",
+            "title": "The Most Civilized Battle in History - Fontenoy 1745",
+            "publishedAt": "2026-11-24T13:59:54Z",
+            "ageDaysAtRetrieval": 4.13,
+            "durationSeconds": 1251,
+            "views": 193796,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 303,
+              "location": "https://www.youtube.com/watch?v=Ye8WocCrnH0"
+            },
+            "formatEvidence": "long (HEAD /shorts/<id> redirected to /watch)",
+            "durationProxy": ">180s"
+          },
+          {
+            "id": "gKzDXCmHlTY",
+            "url": "https://www.youtube.com/watch?v=gKzDXCmHlTY",
+            "title": "the plan to take Detroit was perfect until she told them #history #shorts",
+            "publishedAt": "2026-11-25T14:00:02Z",
+            "ageDaysAtRetrieval": 3.13,
+            "durationSeconds": 179,
+            "views": 129716,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 200,
+              "location": ""
+            },
+            "formatEvidence": "short (HEAD /shorts/<id> served 200, no redirect)",
+            "durationProxy": "<=180s"
+          },
+          {
+            "id": "p5xloHaYmvU",
+            "url": "https://www.youtube.com/watch?v=p5xloHaYmvU",
+            "title": "Was Japan Really Like Medieval Europe?",
+            "publishedAt": "2026-11-26T13:59:50Z",
+            "ageDaysAtRetrieval": 2.13,
+            "durationSeconds": 1038,
+            "views": 138375,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 303,
+              "location": "https://www.youtube.com/watch?v=p5xloHaYmvU"
+            },
+            "formatEvidence": "long (HEAD /shorts/<id> redirected to /watch)",
+            "durationProxy": ">180s"
+          },
+          {
+            "id": "TlIaIyJb0uk",
+            "url": "https://www.youtube.com/watch?v=TlIaIyJb0uk",
+            "title": "Why Rome could never keep Britain under control #romanempire #history",
+            "publishedAt": "2026-11-27T14:00:26Z",
+            "ageDaysAtRetrieval": 1.13,
+            "durationSeconds": 55,
+            "views": 21019,
+            "liveBroadcastContent": "none",
+            "wasLivestream": false,
+            "shortsUrlProbe": {
+              "status": 200,
+              "location": ""
+            },
+            "formatEvidence": "short (HEAD /shorts/<id> served 200, no redirect)",
+            "durationProxy": "<=180s"
+          }
+        ]
+      }
+    ],
+    "ageBandedWithinChannel": {
+      "method": "Within one channel and one verified format, group eligible rows by age at retrieval into 0-7, 7-14, 14-21, 21-30 day bands; report n and min/median/max current lifetime views. Compare only rows in the same channel, format and band. Lifetime views are not early velocity; bands of n<3 are descriptive only.",
+      "bands": [
+        {
+          "channel": "Veritasium",
+          "format": "short",
+          "ageBandDays": "0-7",
+          "n": 1,
+          "medianViews": 345977,
+          "minViews": 345977,
+          "maxViews": 345977,
+          "ids": [
+            [
+              "t81DrYDi3As",
+              345977,
+              2.07
+            ]
+          ]
+        },
+        {
+          "channel": "Veritasium",
+          "format": "short",
+          "ageBandDays": "7-14",
+          "n": 2,
+          "medianViews": 891894,
+          "minViews": 485323,
+          "maxViews": 1298465,
+          "ids": [
+            [
+              "LDloLvb3yno",
+              1298465,
+              11.12
+            ],
+            [
+              "HZjRoKgDnow",
+              485323,
+              8.1
+            ]
+          ]
+        },
+        {
+          "channel": "Veritasium",
+          "format": "short",
+          "ageBandDays": "14-21",
+          "n": 2,
+          "medianViews": 1386730,
+          "minViews": 1024705,
+          "maxViews": 1748755,
+          "ids": [
+            [
+              "2QSkkhbl3v4",
+              1748755,
+              17.13
+            ],
+            [
+              "V8rT6UI3Crg",
+              1024705,
+              15.13
+            ]
+          ]
+        },
+        {
+          "channel": "Veritasium",
+          "format": "short",
+          "ageBandDays": "21-30",
+          "n": 3,
+          "medianViews": 2053182,
+          "minViews": 577969,
+          "maxViews": 3525196,
+          "ids": [
+            [
+              "zEmabFZvdqA",
+              3525196,
+              29.13
+            ],
+            [
+              "rL0qEmTRI-I",
+              2053182,
+              22.13
+            ],
+            [
+              "xlNKNnXdtN4",
+              577969,
+              26.13
+            ]
+          ]
+        },
+        {
+          "channel": "Veritasium",
+          "format": "long",
+          "ageBandDays": "0-7",
+          "n": 1,
+          "medianViews": 9040948,
+          "minViews": 9040948,
+          "maxViews": 9040948,
+          "ids": [
+            [
+              "WbM7GP7QoEM",
+              9040948,
+              3.13
+            ]
+          ]
+        },
+        {
+          "channel": "Veritasium",
+          "format": "long",
+          "ageBandDays": "7-14",
+          "n": 1,
+          "medianViews": 4938933,
+          "minViews": 4938933,
+          "maxViews": 4938933,
+          "ids": [
+            [
+              "uXuQF_PPg5U",
+              4938933,
+              9.86
+            ]
+          ]
+        },
+        {
+          "channel": "Veritasium",
+          "format": "long",
+          "ageBandDays": "21-30",
+          "n": 1,
+          "medianViews": 22583414,
+          "minViews": 22583414,
+          "maxViews": 22583414,
+          "ids": [
+            [
+              "KfODG5REyss",
+              22583414,
+              24.05
+            ]
+          ]
+        },
+        {
+          "channel": "SciShow",
+          "format": "short",
+          "ageBandDays": "0-7",
+          "n": 1,
+          "medianViews": 41538,
+          "minViews": 41538,
+          "maxViews": 41538,
+          "ids": [
+            [
+              "9WCbrriN8sU",
+              41538,
+              5.71
+            ]
+          ]
+        },
+        {
+          "channel": "SciShow",
+          "format": "long",
+          "ageBandDays": "0-7",
+          "n": 5,
+          "medianViews": 290794,
+          "minViews": 143596,
+          "maxViews": 379266,
+          "ids": [
+            [
+              "VGU3rbyWFTQ",
+              379266,
+              1.96
+            ],
+            [
+              "1qrGwX9kQoQ",
+              301151,
+              4.96
+            ],
+            [
+              "yuvAjI2B8zo",
+              290794,
+              2.96
+            ],
+            [
+              "IAVZ8p_igiU",
+              265640,
+              0.96
+            ],
+            [
+              "AzF_vkhkBrU",
+              143596,
+              3.96
+            ]
+          ]
+        },
+        {
+          "channel": "SciShow",
+          "format": "long",
+          "ageBandDays": "7-14",
+          "n": 5,
+          "medianViews": 232199,
+          "minViews": 157685,
+          "maxViews": 350236,
+          "ids": [
+            [
+              "ZDlcqG7Kuho",
+              350236,
+              8.96
+            ],
+            [
+              "yNsRbQln4Vg",
+              269418,
+              10.96
+            ],
+            [
+              "ZDRsHBGi8_8",
+              232199,
+              7.96
+            ],
+            [
+              "7pGCRPvKBXA",
+              157703,
+              9.96
+            ],
+            [
+              "1ejtdt78rCo",
+              157685,
+              11.96
+            ]
+          ]
+        },
+        {
+          "channel": "SciShow",
+          "format": "long",
+          "ageBandDays": "14-21",
+          "n": 5,
+          "medianViews": 191546,
+          "minViews": 142375,
+          "maxViews": 2972345,
+          "ids": [
+            [
+              "uALjsKI-ceE",
+              2972345,
+              17.96
+            ],
+            [
+              "154Xnt8Zxfg",
+              229726,
+              18.96
+            ],
+            [
+              "FKiSYHf1HyI",
+              191546,
+              15.96
+            ],
+            [
+              "4JZoa12T9RY",
+              190497,
+              16.96
+            ],
+            [
+              "S7ELHbvqaeA",
+              142375,
+              14.96
+            ]
+          ]
+        },
+        {
+          "channel": "SciShow",
+          "format": "long",
+          "ageBandDays": "21-30",
+          "n": 7,
+          "medianViews": 276242,
+          "minViews": 152800,
+          "maxViews": 1163680,
+          "ids": [
+            [
+              "i7esSCr2UJk",
+              1163680,
+              23.96
+            ],
+            [
+              "1EX702Au9oQ",
+              424370,
+              22.96
+            ],
+            [
+              "N9zYE5Ui97g",
+              333921,
+              21.96
+            ],
+            [
+              "LiAAayT_v84",
+              276242,
+              30.0
+            ],
+            [
+              "M6nefnNpOZA",
+              223668,
+              24.96
+            ],
+            [
+              "3bc9r8zk36s",
+              188454,
+              29.0
+            ],
+            [
+              "G25Vd8hpLJI",
+              152800,
+              25.96
+            ]
+          ]
+        },
+        {
+          "channel": "TED-Ed",
+          "format": "long",
+          "ageBandDays": "0-7",
+          "n": 1,
+          "medianViews": 2557253,
+          "minViews": 2557253,
+          "maxViews": 2557253,
+          "ids": [
+            [
+              "1IVlILdETAw",
+              2557253,
+              4.04
+            ]
+          ]
+        },
+        {
+          "channel": "TED-Ed",
+          "format": "long",
+          "ageBandDays": "7-14",
+          "n": 2,
+          "medianViews": 386645,
+          "minViews": 280110,
+          "maxViews": 493180,
+          "ids": [
+            [
+              "fqL9dt6QHWg",
+              493180,
+              9.04
+            ],
+            [
+              "dkocGur84i8",
+              280110,
+              11.04
+            ]
+          ]
+        },
+        {
+          "channel": "TED-Ed",
+          "format": "long",
+          "ageBandDays": "14-21",
+          "n": 2,
+          "medianViews": 564642,
+          "minViews": 533578,
+          "maxViews": 595706,
+          "ids": [
+            [
+              "nBVuemyrMgE",
+              595706,
+              18.04
+            ],
+            [
+              "aDblEBU41nA",
+              533578,
+              16.04
+            ]
+          ]
+        },
+        {
+          "channel": "TED-Ed",
+          "format": "long",
+          "ageBandDays": "21-30",
+          "n": 2,
+          "medianViews": 628832,
+          "minViews": 195364,
+          "maxViews": 1062300,
+          "ids": [
+            [
+              "8EtdC9Bjubk",
+              1062300,
+              25.04
+            ],
+            [
+              "bw5tzcoEG88",
+              195364,
+              23.04
+            ]
+          ]
+        },
+        {
+          "channel": "Real Engineering",
+          "format": "long",
+          "ageBandDays": "21-30",
+          "n": 2,
+          "medianViews": 757233,
+          "minViews": 706249,
+          "maxViews": 808218,
+          "ids": [
+            [
+              "xod_mCN-K38",
+              808218,
+              21.02
+            ],
+            [
+              "y1KipwEoRBA",
+              706249,
+              29.06
+            ]
+          ]
+        },
+        {
+          "channel": "Kings and Generals",
+          "format": "short",
+          "ageBandDays": "0-7",
+          "n": 3,
+          "medianViews": 36385,
+          "minViews": 21019,
+          "maxViews": 129716,
+          "ids": [
+            [
+              "gKzDXCmHlTY",
+              129716,
+              3.13
+            ],
+            [
+              "b5K1EFJcIgI",
+              36385,
+              5.13
+            ],
+            [
+              "TlIaIyJb0uk",
+              21019,
+              1.13
+            ]
+          ]
+        },
+        {
+          "channel": "Kings and Generals",
+          "format": "short",
+          "ageBandDays": "7-14",
+          "n": 3,
+          "medianViews": 33916,
+          "minViews": 15258,
+          "maxViews": 53431,
+          "ids": [
+            [
+              "Q3Snj-q_3no",
+              53431,
+              8.13
+            ],
+            [
+              "CWAgBYlvOs8",
+              33916,
+              12.13
+            ],
+            [
+              "IE38wpJFLjc",
+              15258,
+              10.13
+            ]
+          ]
+        },
+        {
+          "channel": "Kings and Generals",
+          "format": "short",
+          "ageBandDays": "14-21",
+          "n": 3,
+          "medianViews": 52630,
+          "minViews": 24505,
+          "maxViews": 558755,
+          "ids": [
+            [
+              "gGZQxHO0y8U",
+              558755,
+              15.13
+            ],
+            [
+              "zjnHzjb7yu4",
+              52630,
+              19.13
+            ],
+            [
+              "ll7Q0rwMk6E",
+              24505,
+              17.13
+            ]
+          ]
+        },
+        {
+          "channel": "Kings and Generals",
+          "format": "short",
+          "ageBandDays": "21-30",
+          "n": 4,
+          "medianViews": 36234,
+          "minViews": 35198,
+          "maxViews": 48502,
+          "ids": [
+            [
+              "ukhHEgqZV3U",
+              48502,
+              26.5
+            ],
+            [
+              "329gl3qCirk",
+              36958,
+              22.13
+            ],
+            [
+              "MhPrNbVi8R4",
+              35510,
+              29.17
+            ],
+            [
+              "HGgiq6WFBNM",
+              35198,
+              24.13
+            ]
+          ]
+        },
+        {
+          "channel": "Kings and Generals",
+          "format": "long",
+          "ageBandDays": "0-7",
+          "n": 3,
+          "medianViews": 193796,
+          "minViews": 138375,
+          "maxViews": 249459,
+          "ids": [
+            [
+              "2vMW4yFup1A",
+              249459,
+              6.12
+            ],
+            [
+              "Ye8WocCrnH0",
+              193796,
+              4.13
+            ],
+            [
+              "p5xloHaYmvU",
+              138375,
+              2.13
+            ]
+          ]
+        },
+        {
+          "channel": "Kings and Generals",
+          "format": "long",
+          "ageBandDays": "7-14",
+          "n": 3,
+          "medianViews": 258059,
+          "minViews": 123805,
+          "maxViews": 274017,
+          "ids": [
+            [
+              "scZAjqFA7kk",
+              274017,
+              13.13
+            ],
+            [
+              "BTs75T-Ree8",
+              258059,
+              11.12
+            ],
+            [
+              "zcB5KlHrczo",
+              123805,
+              9.13
+            ]
+          ]
+        },
+        {
+          "channel": "Kings and Generals",
+          "format": "long",
+          "ageBandDays": "14-21",
+          "n": 3,
+          "medianViews": 276486,
+          "minViews": 192870,
+          "maxViews": 297803,
+          "ids": [
+            [
+              "vhmHhCEwoSk",
+              297803,
+              16.13
+            ],
+            [
+              "BK42hlcV-Gs",
+              276486,
+              18.13
+            ],
+            [
+              "9rv9wy5KrTA",
+              192870,
+              20.13
+            ]
+          ]
+        },
+        {
+          "channel": "Kings and Generals",
+          "format": "long",
+          "ageBandDays": "21-30",
+          "n": 3,
+          "medianViews": 342301,
+          "minViews": 225436,
+          "maxViews": 362229,
+          "ids": [
+            [
+              "ytmwsMU1DMA",
+              362229,
+              27.12
+            ],
+            [
+              "U8qHNk0xPss",
+              342301,
+              23.13
+            ],
+            [
+              "HARdgJjiR7s",
+              225436,
+              25.13
+            ]
+          ]
+        }
+      ]
+    },
+    "previousTopSliceSummary": {
+      "retrievedAt": "2026-11-28T16:41:31Z",
+      "note": "Retained top-5 slices only; superseded because they could not support channel-baseline claims."
+    }
+  },
+  "analyticsReceipts_J4030": {
+    "retrievedAt": "2026-11-28T17:02:33Z",
+    "channelId": "UCXp7HkBIl1LgaznXuZHJyRg",
+    "auth": "read-only OAuth refresh token YT_ANALYTICS_REFRESH_TOKEN_HOS (value not recorded)",
+    "dateConvention": "YouTube Analytics startDate/endDate are inclusive calendar dates in the API's reporting day (US Pacific time, per YouTube Analytics reporting); 2026-11-25 was the latest settled day at retrieval. These are calendar-day windows, not rolling hour windows from the publication minute.",
+    "searchTermScope": "searchTerms_channel is channel-level (all videos, filter insightTrafficSourceType==YT_SEARCH); it does not attribute a term to any video. searchTerms_Bks_JLId1ew is the video-filtered query (video==Bks_JLId1ew) and is the source for attributing 'life processes in plants class 7' (4 views, 21-25 Nov) to Bks_JLId1ew.",
+    "heartTrafficSubtotal": "traffic_el30-mHiH-0 returns 479+66+2+1+1 = 549 views across reported traffic-source rows; totals_el30-mHiH-0 returns 550. The 1-view gap is not returned under any traffic-source row by the API; it is recorded as unreported, not assigned to a category.",
+    "retentionNote": "Rows are the full 100-point aggregate audienceWatchRatio / relativeRetentionPerformance curves (audienceType==ORGANIC) returned by the API; no private export. l8bxm9L3zl8 returned 0 rows. Drops recomputed from these rows (seconds = ratio x exact master duration).",
+    "reports": {
+      "searchTerms_channel": {
+        "description": "Channel-level YT_SEARCH terms, all videos",
+        "endpoint": "GET https://youtubeanalytics.googleapis.com/v2/reports",
+        "params": {
+          "ids": "channel==MINE",
+          "startDate": "2026-10-29",
+          "endDate": "2026-11-25",
+          "metrics": "views",
+          "dimensions": "insightTrafficSourceDetail",
+          "filters": "insightTrafficSourceType==YT_SEARCH",
+          "sort": "-views",
+          "maxResults": "25"
+        },
+        "columnHeaders": [
+          "insightTrafficSourceDetail",
+          "views"
+        ],
+        "rowCount": 25,
+        "rows": [
+          [
+            "dalton atomic theory",
+            16
+          ],
+          [
+            "swan neck flask experiment",
+            12
+          ],
+          [
+            "dalton's atomic theory",
+            11
+          ],
+          [
+            "edward jenner",
+            10
+          ],
+          [
+            "john dalton atomic theory",
+            7
+          ],
+          [
+            "gold foil experiment",
+            5
+          ],
+          [
+            "atomic theory",
+            4
+          ],
+          [
+            "history of atom",
+            4
+          ],
+          [
+            "life processes in plants class 7",
+            4
+          ],
+          [
+            "marie curie and pierre curie",
+            4
+          ],
+          [
+            "origin of phosphorus",
+            4
+          ],
+          [
+            "john dalton",
+            3
+          ],
+          [
+            "postulates of dalton's atomic theory",
+            3
+          ],
+          [
+            "alton towers",
+            2
+          ],
+          [
+            "blood sweep",
+            2
+          ],
+          [
+            "capillaries arteries and veins",
+            2
+          ],
+          [
+            "dalton atomic theory class 9th",
+            2
+          ],
+          [
+            "daltons atomic theory",
+            2
+          ],
+          [
+            "danny go",
+            2
+          ],
+          [
+            "elements",
+            2
+          ],
+          [
+            "heart explain",
+            2
+          ],
+          [
+            "heart pumping blood",
+            2
+          ],
+          [
+            "history of atomic theory",
+            2
+          ],
+          [
+            "how the heart pumps blood",
+            2
+          ],
+          [
+            "louis pasteur experiment",
+            2
+          ]
+        ],
+        "returnedCoverage": "25 rows returned for 2026-10-29..2026-11-25 inclusive"
+      },
+      "searchTerms_Bks_JLId1ew": {
+        "description": "Video-filtered YT_SEARCH terms, Bks_JLId1ew",
+        "endpoint": "GET https://youtubeanalytics.googleapis.com/v2/reports",
+        "params": {
+          "ids": "channel==MINE",
+          "startDate": "2026-11-21",
+          "endDate": "2026-11-25",
+          "metrics": "views",
+          "dimensions": "insightTrafficSourceDetail",
+          "filters": "video==Bks_JLId1ew;insightTrafficSourceType==YT_SEARCH",
+          "sort": "-views",
+          "maxResults": "25"
+        },
+        "columnHeaders": [
+          "insightTrafficSourceDetail",
+          "views"
+        ],
+        "rowCount": 3,
+        "rows": [
+          [
+            "life processes in plants class 7",
+            4
+          ],
+          [
+            "gaseous exchange in plants",
+            1
+          ],
+          [
+            "life process in plant",
+            1
+          ]
+        ],
+        "returnedCoverage": "3 rows returned for 2026-11-21..2026-11-25 inclusive"
+      },
+      "traffic_el30-mHiH-0": {
+        "description": "Per-video traffic sources el30-mHiH-0",
+        "endpoint": "GET https://youtubeanalytics.googleapis.com/v2/reports",
+        "params": {
+          "ids": "channel==MINE",
+          "startDate": "2026-11-22",
+          "endDate": "2026-11-25",
+          "metrics": "views",
+          "dimensions": "insightTrafficSourceType",
+          "filters": "video==el30-mHiH-0",
+          "sort": "-views"
+        },
+        "columnHeaders": [
+          "insightTrafficSourceType",
+          "views"
+        ],
+        "rowCount": 5,
+        "rows": [
+          [
+            "SHORTS",
+            479
+          ],
+          [
+            "YT_SEARCH",
+            66
+          ],
+          [
+            "YT_OTHER_PAGE",
+            2
+          ],
+          [
+            "NO_LINK_OTHER",
+            1
+          ],
+          [
+            "SUBSCRIBER",
+            1
+          ]
+        ],
+        "returnedCoverage": "5 rows returned for 2026-11-22..2026-11-25 inclusive"
+      },
+      "totals_el30-mHiH-0": {
+        "description": "Per-video totals el30-mHiH-0",
+        "endpoint": "GET https://youtubeanalytics.googleapis.com/v2/reports",
+        "params": {
+          "ids": "channel==MINE",
+          "startDate": "2026-11-22",
+          "endDate": "2026-11-25",
+          "metrics": "views,averageViewPercentage,averageViewDuration",
+          "filters": "video==el30-mHiH-0"
+        },
+        "columnHeaders": [
+          "views",
+          "averageViewPercentage",
+          "averageViewDuration"
+        ],
+        "rowCount": 1,
+        "rows": [
+          [
+            550,
+            64.85,
+            16
+          ]
+        ],
+        "returnedCoverage": "1 rows returned for 2026-11-22..2026-11-25 inclusive"
+      },
+      "retention_el30-mHiH-0": {
+        "description": "Per-video retention curve el30-mHiH-0",
+        "endpoint": "GET https://youtubeanalytics.googleapis.com/v2/reports",
+        "params": {
+          "ids": "channel==MINE",
+          "startDate": "2026-11-22",
+          "endDate": "2026-11-25",
+          "metrics": "audienceWatchRatio,relativeRetentionPerformance",
+          "dimensions": "elapsedVideoTimeRatio",
+          "filters": "video==el30-mHiH-0;audienceType==ORGANIC"
+        },
+        "columnHeaders": [
+          "elapsedVideoTimeRatio",
+          "audienceWatchRatio",
+          "relativeRetentionPerformance"
+        ],
+        "rowCount": 100,
+        "rows": [
+          [
+            0.01,
+            1.3263999999999998,
+            0.62715
+          ],
+          [
+            0.02,
+            1.3263999999999998,
+            0.61005
+          ],
+          [
+            0.03,
+            1.3194,
+            0.59325
+          ],
+          [
+            0.04,
+            1.3125,
+            0.5773
+          ],
+          [
+            0.05,
+            1.2778,
+            0.5628
+          ],
+          [
+            0.06,
+            1.2708,
+            0.55
+          ],
+          [
+            0.07,
+            1.2639,
+            0.53915
+          ],
+          [
+            0.08,
+            1.25,
+            0.53025
+          ],
+          [
+            0.09,
+            1.2361,
+            0.5231
+          ],
+          [
+            0.1,
+            1.2292,
+            0.51755
+          ],
+          [
+            0.11,
+            1.2222,
+            0.51325
+          ],
+          [
+            0.12,
+            1.2222,
+            0.51
+          ],
+          [
+            0.13,
+            1.2083,
+            0.5075
+          ],
+          [
+            0.14,
+            1.1806,
+            0.50555
+          ],
+          [
+            0.15,
+            1.1736,
+            0.504
+          ],
+          [
+            0.16,
+            1.1667,
+            0.50275
+          ],
+          [
+            0.17,
+            1.1181,
+            0.5017
+          ],
+          [
+            0.18,
+            1.0694,
+            0.50075
+          ],
+          [
+            0.19,
+            1.0486,
+            0.49995
+          ],
+          [
+            0.2,
+            1.0278,
+            0.4993
+          ],
+          [
+            0.21,
+            1.0139,
+            0.4987
+          ],
+          [
+            0.22,
+            0.9792000000000001,
+            0.4982
+          ],
+          [
+            0.23,
+            0.9792000000000001,
+            0.4978
+          ],
+          [
+            0.24,
+            0.9444,
+            0.4975
+          ],
+          [
+            0.25,
+            0.9167000000000001,
+            0.49725
+          ],
+          [
+            0.26,
+            0.8889,
+            0.49715
+          ],
+          [
+            0.27,
+            0.8611,
+            0.4971
+          ],
+          [
+            0.28,
+            0.8332999999999999,
+            0.49715
+          ],
+          [
+            0.29,
+            0.8125,
+            0.4973
+          ],
+          [
+            0.3,
+            0.7917000000000001,
+            0.49755
+          ],
+          [
+            0.31,
+            0.7847,
+            0.4979
+          ],
+          [
+            0.32,
+            0.7778,
+            0.4983
+          ],
+          [
+            0.33,
+            0.7569,
+            0.4988
+          ],
+          [
+            0.34,
+            0.7292000000000001,
+            0.4994
+          ],
+          [
+            0.35,
+            0.7292000000000001,
+            0.50005
+          ],
+          [
+            0.36,
+            0.7082999999999999,
+            0.50085
+          ],
+          [
+            0.37,
+            0.6944,
+            0.50175
+          ],
+          [
+            0.38,
+            0.6806,
+            0.50275
+          ],
+          [
+            0.39,
+            0.6736,
+            0.5039
+          ],
+          [
+            0.4,
+            0.6597,
+            0.50515
+          ],
+          [
+            0.41,
+            0.6528,
+            0.50665
+          ],
+          [
+            0.42,
+            0.6528,
+            0.5083
+          ],
+          [
+            0.43,
+            0.6319,
+            0.51025
+          ],
+          [
+            0.44,
+            0.6319,
+            0.51245
+          ],
+          [
+            0.45,
+            0.6181,
+            0.51495
+          ],
+          [
+            0.46,
+            0.6111,
+            0.51785
+          ],
+          [
+            0.47,
+            0.5903,
+            0.52115
+          ],
+          [
+            0.48,
+            0.5694,
+            0.5249
+          ],
+          [
+            0.49,
+            0.5694,
+            0.52925
+          ],
+          [
+            0.5,
+            0.5486,
+            0.53415
+          ],
+          [
+            0.51,
+            0.5417000000000001,
+            0.5398000000000001
+          ],
+          [
+            0.52,
+            0.5347,
+            0.54625
+          ],
+          [
+            0.53,
+            0.5207999999999999,
+            0.5536
+          ],
+          [
+            0.54,
+            0.5139,
+            0.5619
+          ],
+          [
+            0.55,
+            0.5069,
+            0.57125
+          ],
+          [
+            0.56,
+            0.5,
+            0.5817
+          ],
+          [
+            0.57,
+            0.49310000000000004,
+            0.5932999999999999
+          ],
+          [
+            0.58,
+            0.49310000000000004,
+            0.606
+          ],
+          [
+            0.59,
+            0.4792,
+            0.61975
+          ],
+          [
+            0.6,
+            0.4722,
+            0.63455
+          ],
+          [
+            0.61,
+            0.4653,
+            0.65015
+          ],
+          [
+            0.62,
+            0.4583,
+            0.66635
+          ],
+          [
+            0.63,
+            0.44439999999999996,
+            0.6829500000000001
+          ],
+          [
+            0.64,
+            0.44439999999999996,
+            0.6997
+          ],
+          [
+            0.65,
+            0.43060000000000004,
+            0.71625
+          ],
+          [
+            0.66,
+            0.4236,
+            0.7323999999999999
+          ],
+          [
+            0.67,
+            0.4236,
+            0.74785
+          ],
+          [
+            0.68,
+            0.4167,
+            0.76235
+          ],
+          [
+            0.69,
+            0.4167,
+            0.7758
+          ],
+          [
+            0.7,
+            0.4167,
+            0.7881
+          ],
+          [
+            0.71,
+            0.4167,
+            0.79915
+          ],
+          [
+            0.72,
+            0.4167,
+            0.8089500000000001
+          ],
+          [
+            0.73,
+            0.4167,
+            0.81765
+          ],
+          [
+            0.74,
+            0.4167,
+            0.8253
+          ],
+          [
+            0.75,
+            0.4167,
+            0.8320000000000001
+          ],
+          [
+            0.76,
+            0.4167,
+            0.8379
+          ],
+          [
+            0.77,
+            0.4097,
+            0.8430500000000001
+          ],
+          [
+            0.78,
+            0.4097,
+            0.84765
+          ],
+          [
+            0.79,
+            0.4028,
+            0.85175
+          ],
+          [
+            0.8,
+            0.4028,
+            0.85545
+          ],
+          [
+            0.81,
+            0.3958,
+            0.85885
+          ],
+          [
+            0.82,
+            0.3958,
+            0.8619
+          ],
+          [
+            0.83,
+            0.3889,
+            0.8647
+          ],
+          [
+            0.84,
+            0.375,
+            0.8673
+          ],
+          [
+            0.85,
+            0.375,
+            0.86965
+          ],
+          [
+            0.86,
+            0.36810000000000004,
+            0.87185
+          ],
+          [
+            0.87,
+            0.3611,
+            0.87385
+          ],
+          [
+            0.88,
+            0.3542,
+            0.87565
+          ],
+          [
+            0.89,
+            0.3542,
+            0.8773
+          ],
+          [
+            0.9,
+            0.3542,
+            0.8787499999999999
+          ],
+          [
+            0.91,
+            0.3542,
+            0.8801
+          ],
+          [
+            0.92,
+            0.3542,
+            0.88125
+          ],
+          [
+            0.93,
+            0.3472,
+            0.88225
+          ],
+          [
+            0.94,
+            0.3403,
+            0.88315
+          ],
+          [
+            0.95,
+            0.3403,
+            0.8839
+          ],
+          [
+            0.96,
+            0.3403,
+            0.88455
+          ],
+          [
+            0.97,
+            0.3194,
+            0.88515
+          ],
+          [
+            0.98,
+            0.3125,
+            0.88565
+          ],
+          [
+            0.99,
+            0.3125,
+            0.88605
+          ],
+          [
+            1,
+            0.3056,
+            0.8864000000000001
+          ]
+        ],
+        "returnedCoverage": "100 rows returned for 2026-11-22..2026-11-25 inclusive",
+        "recomputedDrops": {
+          "largestOneBucketDrop(s)": [
+            {
+              "buckets": "0.17->0.18",
+              "seconds": "4.27-4.52",
+              "deltaPp": -4.87
+            }
+          ],
+          "runnerUpOneBucket": {
+            "deltaPp": -4.86,
+            "buckets": "0.16->0.17"
+          },
+          "steepestFiveBucketDrop(s)": [
+            {
+              "buckets": "0.16->0.21",
+              "seconds": "4.02-5.27",
+              "deltaPp": -15.28
+            }
+          ]
+        }
+      },
+      "traffic_Bks_JLId1ew": {
+        "description": "Per-video traffic sources Bks_JLId1ew",
+        "endpoint": "GET https://youtubeanalytics.googleapis.com/v2/reports",
+        "params": {
+          "ids": "channel==MINE",
+          "startDate": "2026-11-21",
+          "endDate": "2026-11-25",
+          "metrics": "views",
+          "dimensions": "insightTrafficSourceType",
+          "filters": "video==Bks_JLId1ew",
+          "sort": "-views"
+        },
+        "columnHeaders": [
+          "insightTrafficSourceType",
+          "views"
+        ],
+        "rowCount": 3,
+        "rows": [
+          [
+            "YT_SEARCH",
+            76
+          ],
+          [
+            "SHORTS",
+            14
+          ],
+          [
+            "NO_LINK_OTHER",
+            0
+          ]
+        ],
+        "returnedCoverage": "3 rows returned for 2026-11-21..2026-11-25 inclusive"
+      },
+      "totals_Bks_JLId1ew": {
+        "description": "Per-video totals Bks_JLId1ew",
+        "endpoint": "GET https://youtubeanalytics.googleapis.com/v2/reports",
+        "params": {
+          "ids": "channel==MINE",
+          "startDate": "2026-11-21",
+          "endDate": "2026-11-25",
+          "metrics": "views,averageViewPercentage,averageViewDuration",
+          "filters": "video==Bks_JLId1ew"
+        },
+        "columnHeaders": [
+          "views",
+          "averageViewPercentage",
+          "averageViewDuration"
+        ],
+        "rowCount": 1,
+        "rows": [
+          [
+            90,
+            88.2,
+            22
+          ]
+        ],
+        "returnedCoverage": "1 rows returned for 2026-11-21..2026-11-25 inclusive"
+      },
+      "retention_Bks_JLId1ew": {
+        "description": "Per-video retention curve Bks_JLId1ew",
+        "endpoint": "GET https://youtubeanalytics.googleapis.com/v2/reports",
+        "params": {
+          "ids": "channel==MINE",
+          "startDate": "2026-11-21",
+          "endDate": "2026-11-25",
+          "metrics": "audienceWatchRatio,relativeRetentionPerformance",
+          "dimensions": "elapsedVideoTimeRatio",
+          "filters": "video==Bks_JLId1ew;audienceType==ORGANIC"
+        },
+        "columnHeaders": [
+          "elapsedVideoTimeRatio",
+          "audienceWatchRatio",
+          "relativeRetentionPerformance"
+        ],
+        "rowCount": 100,
+        "rows": [
+          [
+            0.01,
+            1.7333,
+            0.70725
+          ],
+          [
+            0.02,
+            1.7333,
+            0.70425
+          ],
+          [
+            0.03,
+            1.6333000000000002,
+            0.70135
+          ],
+          [
+            0.04,
+            1.6333000000000002,
+            0.6987
+          ],
+          [
+            0.05,
+            1.5667,
+            0.6964
+          ],
+          [
+            0.06,
+            1.5333,
+            0.6945
+          ],
+          [
+            0.07,
+            1.5,
+            0.6930499999999999
+          ],
+          [
+            0.08,
+            1.4667,
+            0.6921
+          ],
+          [
+            0.09,
+            1.4333,
+            0.6916
+          ],
+          [
+            0.1,
+            1.4333,
+            0.6915
+          ],
+          [
+            0.11,
+            1.4333,
+            0.69175
+          ],
+          [
+            0.12,
+            1.4333,
+            0.69235
+          ],
+          [
+            0.13,
+            1.4,
+            0.6932
+          ],
+          [
+            0.14,
+            1.4,
+            0.6943
+          ],
+          [
+            0.15,
+            1.3,
+            0.69555
+          ],
+          [
+            0.16,
+            1.2667,
+            0.69705
+          ],
+          [
+            0.17,
+            1.2,
+            0.6987
+          ],
+          [
+            0.18,
+            1.1667,
+            0.70045
+          ],
+          [
+            0.19,
+            1.1667,
+            0.7024
+          ],
+          [
+            0.2,
+            1.2,
+            0.70445
+          ],
+          [
+            0.21,
+            1.2,
+            0.7066
+          ],
+          [
+            0.22,
+            1.1,
+            0.70885
+          ],
+          [
+            0.23,
+            1.1,
+            0.7112499999999999
+          ],
+          [
+            0.24,
+            1.1,
+            0.7137
+          ],
+          [
+            0.25,
+            1.0667,
+            0.7162999999999999
+          ],
+          [
+            0.26,
+            1.0667,
+            0.71905
+          ],
+          [
+            0.27,
+            1.0667,
+            0.72195
+          ],
+          [
+            0.28,
+            1.0332999999999999,
+            0.725
+          ],
+          [
+            0.29,
+            1,
+            0.72825
+          ],
+          [
+            0.3,
+            0.9667,
+            0.73175
+          ],
+          [
+            0.31,
+            1,
+            0.73555
+          ],
+          [
+            0.32,
+            1,
+            0.7396
+          ],
+          [
+            0.33,
+            0.9667,
+            0.74395
+          ],
+          [
+            0.34,
+            0.9667,
+            0.7485999999999999
+          ],
+          [
+            0.35,
+            0.9333,
+            0.7535499999999999
+          ],
+          [
+            0.36,
+            0.9333,
+            0.75875
+          ],
+          [
+            0.37,
+            0.9333,
+            0.76425
+          ],
+          [
+            0.38,
+            0.9,
+            0.77
+          ],
+          [
+            0.39,
+            0.9,
+            0.7759499999999999
+          ],
+          [
+            0.4,
+            0.8667,
+            0.782
+          ],
+          [
+            0.41,
+            0.8667,
+            0.7882
+          ],
+          [
+            0.42,
+            0.8332999999999999,
+            0.79435
+          ],
+          [
+            0.43,
+            0.8332999999999999,
+            0.8005
+          ],
+          [
+            0.44,
+            0.8332999999999999,
+            0.80655
+          ],
+          [
+            0.45,
+            0.8332999999999999,
+            0.8124
+          ],
+          [
+            0.46,
+            0.8,
+            0.81795
+          ],
+          [
+            0.47,
+            0.8,
+            0.8231999999999999
+          ],
+          [
+            0.48,
+            0.8,
+            0.8281000000000001
+          ],
+          [
+            0.49,
+            0.7333,
+            0.83255
+          ],
+          [
+            0.5,
+            0.7333,
+            0.83655
+          ],
+          [
+            0.51,
+            0.7333,
+            0.84015
+          ],
+          [
+            0.52,
+            0.7333,
+            0.84335
+          ],
+          [
+            0.53,
+            0.7333,
+            0.84615
+          ],
+          [
+            0.54,
+            0.7333,
+            0.8486
+          ],
+          [
+            0.55,
+            0.7333,
+            0.8508
+          ],
+          [
+            0.56,
+            0.7,
+            0.85275
+          ],
+          [
+            0.57,
+            0.7,
+            0.8545499999999999
+          ],
+          [
+            0.58,
+            0.7,
+            0.85615
+          ],
+          [
+            0.59,
+            0.7,
+            0.8577
+          ],
+          [
+            0.6,
+            0.7,
+            0.8592
+          ],
+          [
+            0.61,
+            0.7,
+            0.8606
+          ],
+          [
+            0.62,
+            0.7,
+            0.8620000000000001
+          ],
+          [
+            0.63,
+            0.7,
+            0.8633500000000001
+          ],
+          [
+            0.64,
+            0.7,
+            0.8647
+          ],
+          [
+            0.65,
+            0.7,
+            0.866
+          ],
+          [
+            0.66,
+            0.7,
+            0.8673
+          ],
+          [
+            0.67,
+            0.7,
+            0.8686
+          ],
+          [
+            0.68,
+            0.7,
+            0.86985
+          ],
+          [
+            0.69,
+            0.7,
+            0.87105
+          ],
+          [
+            0.7,
+            0.7,
+            0.8723
+          ],
+          [
+            0.71,
+            0.7,
+            0.8734500000000001
+          ],
+          [
+            0.72,
+            0.7,
+            0.8746
+          ],
+          [
+            0.73,
+            0.7,
+            0.87575
+          ],
+          [
+            0.74,
+            0.7,
+            0.87685
+          ],
+          [
+            0.75,
+            0.7,
+            0.87795
+          ],
+          [
+            0.76,
+            0.7,
+            0.87905
+          ],
+          [
+            0.77,
+            0.7,
+            0.8801
+          ],
+          [
+            0.78,
+            0.7,
+            0.8812
+          ],
+          [
+            0.79,
+            0.7,
+            0.8823
+          ],
+          [
+            0.8,
+            0.7,
+            0.8834500000000001
+          ],
+          [
+            0.81,
+            0.7,
+            0.8846
+          ],
+          [
+            0.82,
+            0.7,
+            0.88585
+          ],
+          [
+            0.83,
+            0.7,
+            0.8871500000000001
+          ],
+          [
+            0.84,
+            0.7,
+            0.88855
+          ],
+          [
+            0.85,
+            0.7,
+            0.8901
+          ],
+          [
+            0.86,
+            0.6667000000000001,
+            0.89175
+          ],
+          [
+            0.87,
+            0.6667000000000001,
+            0.89355
+          ],
+          [
+            0.88,
+            0.6667000000000001,
+            0.8955
+          ],
+          [
+            0.89,
+            0.6667000000000001,
+            0.8975500000000001
+          ],
+          [
+            0.9,
+            0.6667000000000001,
+            0.89975
+          ],
+          [
+            0.91,
+            0.6667000000000001,
+            0.90205
+          ],
+          [
+            0.92,
+            0.6667000000000001,
+            0.9044
+          ],
+          [
+            0.93,
+            0.6667000000000001,
+            0.9068
+          ],
+          [
+            0.94,
+            0.6333,
+            0.90915
+          ],
+          [
+            0.95,
+            0.6333,
+            0.9115
+          ],
+          [
+            0.96,
+            0.6333,
+            0.9137500000000001
+          ],
+          [
+            0.97,
+            0.5667,
+            0.9159
+          ],
+          [
+            0.98,
+            0.5667,
+            0.9178499999999999
+          ],
+          [
+            0.99,
+            0.5667,
+            0.9196
+          ],
+          [
+            1,
+            0.5667,
+            0.92115
+          ]
+        ],
+        "returnedCoverage": "100 rows returned for 2026-11-21..2026-11-25 inclusive",
+        "recomputedDrops": {
+          "largestOneBucketDrop(s)": [
+            {
+              "buckets": "0.02->0.03",
+              "seconds": "0.50-0.76",
+              "deltaPp": -10.0
+            },
+            {
+              "buckets": "0.14->0.15",
+              "seconds": "3.52-3.78",
+              "deltaPp": -10.0
+            },
+            {
+              "buckets": "0.21->0.22",
+              "seconds": "5.29-5.54",
+              "deltaPp": -10.0
+            }
+          ],
+          "runnerUpOneBucket": {
+            "deltaPp": -6.67,
+            "buckets": "0.48->0.49"
+          },
+          "steepestFiveBucketDrop(s)": [
+            {
+              "buckets": "0.02->0.07",
+              "seconds": "0.50-1.76",
+              "deltaPp": -23.33
+            },
+            {
+              "buckets": "0.12->0.17",
+              "seconds": "3.02-4.28",
+              "deltaPp": -23.33
+            },
+            {
+              "buckets": "0.13->0.18",
+              "seconds": "3.27-4.53",
+              "deltaPp": -23.33
+            },
+            {
+              "buckets": "0.14->0.19",
+              "seconds": "3.52-4.78",
+              "deltaPp": -23.33
+            }
+          ]
+        }
+      },
+      "traffic_l8bxm9L3zl8": {
+        "description": "Per-video traffic sources l8bxm9L3zl8",
+        "endpoint": "GET https://youtubeanalytics.googleapis.com/v2/reports",
+        "params": {
+          "ids": "channel==MINE",
+          "startDate": "2026-11-20",
+          "endDate": "2026-11-25",
+          "metrics": "views",
+          "dimensions": "insightTrafficSourceType",
+          "filters": "video==l8bxm9L3zl8",
+          "sort": "-views"
+        },
+        "columnHeaders": [
+          "insightTrafficSourceType",
+          "views"
+        ],
+        "rowCount": 4,
+        "rows": [
+          [
+            "YT_SEARCH",
+            15
+          ],
+          [
+            "SHORTS",
+            15
+          ],
+          [
+            "SUBSCRIBER",
+            1
+          ],
+          [
+            "YT_OTHER_PAGE",
+            1
+          ]
+        ],
+        "returnedCoverage": "4 rows returned for 2026-11-20..2026-11-25 inclusive"
+      },
+      "totals_l8bxm9L3zl8": {
+        "description": "Per-video totals l8bxm9L3zl8",
+        "endpoint": "GET https://youtubeanalytics.googleapis.com/v2/reports",
+        "params": {
+          "ids": "channel==MINE",
+          "startDate": "2026-11-20",
+          "endDate": "2026-11-25",
+          "metrics": "views,averageViewPercentage,averageViewDuration",
+          "filters": "video==l8bxm9L3zl8"
+        },
+        "columnHeaders": [
+          "views",
+          "averageViewPercentage",
+          "averageViewDuration"
+        ],
+        "rowCount": 1,
+        "rows": [
+          [
+            32,
+            60.99,
+            14
+          ]
+        ],
+        "returnedCoverage": "1 rows returned for 2026-11-20..2026-11-25 inclusive"
+      },
+      "retention_l8bxm9L3zl8": {
+        "description": "Per-video retention curve l8bxm9L3zl8",
+        "endpoint": "GET https://youtubeanalytics.googleapis.com/v2/reports",
+        "params": {
+          "ids": "channel==MINE",
+          "startDate": "2026-11-20",
+          "endDate": "2026-11-25",
+          "metrics": "audienceWatchRatio,relativeRetentionPerformance",
+          "dimensions": "elapsedVideoTimeRatio",
+          "filters": "video==l8bxm9L3zl8;audienceType==ORGANIC"
+        },
+        "columnHeaders": [
+          "elapsedVideoTimeRatio",
+          "audienceWatchRatio",
+          "relativeRetentionPerformance"
+        ],
+        "rowCount": 0,
+        "rows": [],
+        "returnedCoverage": "0 rows returned for 2026-11-20..2026-11-25 inclusive"
+      }
+    }
+  },
+  "j4029MeasurementConvention": {
+    "dateHold": "2026-12-12T18:00:00Z (unchanged)",
+    "firstSevenDays": "Measured as 7 inclusive YouTube Analytics calendar dates (US Pacific reporting days) starting with the publication date, read only once all 7 are settled (typically 1-2 days' lag). This is not a rolling 168-hour window ending at the publication minute; no sub-day timestamp precision is claimed.",
+    "unchanged": "Cohort 4sYTV_rQcqs process; 9ETHUOUH5-A, mpK3D6S7WLk, sMPlMuxK3YU named-entity (classified before outcomes); thresholds >=30 first-seven-day YT_SEARCH AND >=45% stayed on >=2/4 eligible Shorts; house 60/70; <100 Studio views inconclusive; no substitutions."
+  }
+}
