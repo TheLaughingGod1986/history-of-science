@@ -380,6 +380,7 @@ export type ApiVideo = {
     embeddable?: boolean;
     license?: string;
   };
+  paidProductPlacementDetails?: { hasPaidProductPlacement?: boolean | null } | null;
   contentDetails?: { duration?: string };
 };
 
