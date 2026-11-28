@@ -1,0 +1,7 @@
+FAIL   0:16 row apple_6 08_the_apple_t1.mp4: reuse: same stretch as 0:01 (give it a new stretch, or a new render)
+WARN   0:01 row apple_1 08_the_apple_t1.mp4: sharpness: upscaled 2.35x, may look soft
+WARN   0:04 row apple_2 06_old_newton_tells_t1.mp4: sharpness: upscaled 2.35x, may look soft
+WARN   0:07 row apple_3 06_old_newton_tells_t1.mp4: sharpness: upscaled 2.35x, may look soft; low detail: edge density 0.0265 < film p5 0.0266
+WARN   0:10 row apple_4 07_orchard_bench_t1.mp4: sharpness: upscaled 2.35x, may look soft
+WARN   0:14 row apple_5 07_orchard_bench_t1.mp4: sharpness: upscaled 2.35x, may look soft
+picture QA FAIL: 1 of 6 cuts fail, 5 to look at -> 02_Video-Projects/009_The-Falling-Moon-Gravity/10_Shorts/J3816/v02/picture/PICTURE_QA.md, 02_Video-Projects/009_The-Falling-Moon-Gravity/10_Shorts/J3816/v02/picture/picture_qa_review.jpg
