@@ -529,3 +529,26 @@ The example is a schema illustration, not an approved HOS006 crop. `cut` is the 
 Opening and tail must reference the same actual video source and have explicit `framing`, containing only `offset`, `crop: [x,y,width,height]`, and `output: [width,height]`; crop and output match between the two rows. The tail offset equals `source_in`; `source_out - source_in` equals the tail duration. Its source window must not overlap the opening, and `source_out` must equal the opening offset: this is native pre-roll ending at frame zero (J3874/J3965). Only this validated final row is exempt from SAME_STRETCH against the opening; any body repeat still fails. Crop bounds must fit the actual source and output is 9:16. Other transforms/speed changes need a separately reviewed contract; do not disguise footage with path aliases, copies or re-encodes. In opt-in checks, path aliases and byte-identical copies share a reuse identity. Every row, including body rows, must resolve to readable regular-file bytes; absent files, broken links, directories and unreadable files produce non-waivable failures. Explicit footage rows require finite nonnegative source offsets. Missing or invalid offsets cannot downgrade adjacent footage to still handling or suppress within-run replay checks (J2180 FIX, 5 Nov 2026).
 
 Source-only checks report **PREFLIGHT** (exit 2) if otherwise clean, preserving any body FAIL and explicitly listing pending rendered/pixel and perceptual checks. They never claim rendered-loop PASS. With the final video, the checker verifies dimensions/duration and compares actual opening and tail samples against their respective cropped source windows at the first and last source-frame times (96×170 luma, mean absolute error at most 8). The pre-roll ends where the opening starts; this does **not** assert the final frame equals frame zero or that motion is seamless. All rendered pixel checks still run; moving/phone and audio review remains required under the studio's current review/UAT rules. A sampled match, metadata or generated output is not KEEP. Rendered overlays that prevent this conservative correspondence check need a separately reviewed approach, not a waiver.
+
+#### Version 2: explicit scale-before-crop (J3972 implementation of J3969)
+
+Version 1 remains the integer source-crop contract above. Version 2 keeps every top-level field and evidence/timeline/reuse protection, changing only `version` to `2` and `framing` to this strictly allowlisted recipe:
+
+```json
+{
+  "operations": [
+    {"op": "scale", "width": 3008, "height": 1692, "interpolation": "lanczos"},
+    {"op": "crop", "x": 1028, "y": 0, "width": 952, "height": 1692},
+    {"op": "setsar", "num": 1, "den": 1},
+    {"op": "fps", "num": 30, "den": 1}
+  ],
+  "output": [952, 1692],
+  "portrait_width": "nearest_even"
+}
+```
+
+Each opening/return row has that same framing plus its explicit `offset`. Operation order, values and types must match exactly. All four operations and every shown field are required; extra fields/operations, filter strings, flips, speed changes, boolean/noninteger pixel or rational parameters, and implicit defaults are rejected. Source pixels must probe square. Scale dimensions must be positive, uniform against the actual probed source, and at most 2.35 times its dimensions. The integer crop must fit the scaled plane; positive even output dimensions must equal the crop dimensions. The only interpolation is Lanczos, SAR is exactly 1:1, and fps is an explicit positive integer numerator/denominator. The rendered fps and SAR must match.
+
+`portrait_width: "exact"` requires exact 9:16. `"nearest_even"` fixes the even output height and requires the nearest even integer to `height * 9/16`, with exact halfway ties choosing the larger even width. Integer formula: `width = 2 * floor((9 * height + 16) / 32)`. Error may not exceed one pixel; there is no percentage tolerance. Thus height 1692 requires width 952, and rejects 950 or 954. The example faithfully represents `scale=3008:1692:flags=lanczos,crop=952:1692:1028:0,setsar=1/1,fps=30/1` for a 1280×720 source; it does not approve production media.
+
+Correspondence reconstruction applies the declared operations in order before the existing 96×170 luma comparison, retaining MAE ≤8. It never substitutes a rounded inverse source crop. Hashes, native pre-roll adjacency, last-word clearance, ≤1-second return, complete timeline, body-repeat failures and all other gates remain required. Source-only output remains PREFLIGHT; correspondence does not establish seamless motion, media KEEP, UAT or upload approval.
