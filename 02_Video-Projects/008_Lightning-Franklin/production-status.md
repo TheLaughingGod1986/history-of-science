@@ -478,6 +478,25 @@ ALL CHECKS PASS
   - **Related video constraint:** Tested searching both `"Benjamin Franklin"` and `"YqCWYlv_LCY"` in Studio's Related video picker; YouTube Studio returns `No matching results` while `YqCWYlv_LCY` is Private/Scheduled. Queued post-publish follow-up job **`J3649`** (`check-at 2026-11-26T18:05:00Z`, due Fri 27 Nov 10:00 UK — before Short A airs at 11:30 UK) to set `Related video → YqCWYlv_LCY` on both Shorts and confirm the A/B test is running once Public.
 - **Post-Studio channel audit (`npm run channel:audit`):** `75 videos, 0 errors.`
 
+
+---
+
+## J3811 — Short s04 (`hos_008_s04_no_patent_v01`) packaging, upload, Studio verify & audit (26 Nov 2026)
+
+- **Job:** `J3811` (worker `gemini`, £0 spend). Approved board card `HOS:ASK:J3763`, cut `v01`.
+- **Master file:** `/Volumes/data/studio-live/History Of Science/02_Video-Projects/008_Lightning-Franklin/10_Shorts/J3763/hos_008_s04_no_patent_v01.mp4` (`sha256 e162a0fbe05e519ae822aededabf62172396594d4f564081d539db724f03809c`, `16.1 s`, `952x1692`, 30 fps).
+- **Package:** `10_Shorts/11_Upload-Package/s04_no_patent_v01/` (`PACKAGE_MANIFEST.json`, `Captions/hos_008_s04_no_patent_v01.en-GB.srt`, `PACKAGE_UPLOAD_RESULT_2026-11-26T21-50-32-757Z.json`, `API_READBACK_J3811.json`; frame-0 `cover.jpg` checked with `thumb_preview.py short` and `style_sheet.py short`).
+- **YouTube ID:** `f_-BsKZf8X0` (`https://youtu.be/f_-BsKZf8X0`) — brand new ID (no file swap; neither `TtgHNLXfDSs` nor `k9pXeeJvLpc` touched).
+- **Title:** `Why Did Franklin Never Patent the Lightning Rod?` (exact Ben-OK'd title; 48 chars).
+- **Description line 1:** `Full film: Benjamin Franklin's Kite Experiment Explained — https://www.youtube.com/watch?v=YqCWYlv_LCY`
+- **Schedule & API readback (`API_READBACK_J3811.json`):** `privacy: "private"`, `publishAt: "2026-12-01T11:30:00Z"` (Tue 1 Dec 2026 11:30 London), `uploadStatus: "processed"`, `duration: "PT17S"`, `categoryId: "27"`, `language: "en-GB"`, `audioLanguage: "en-GB"`, `madeForKids: false`, `selfDeclaredMadeForKids: false`, `hasCustomThumbnail: true`, `tagCount: 6`, `en-GB` captions `serving` (`isDraft: false`).
+- **Studio verify (CDP 9460, reloaded `studio.youtube.com/video/f_-BsKZf8X0/edit`):** Related video → `Benjamin Franklin's Kite Experiment Explained` (`YqCWYlv_LCY`), Visibility `Scheduled`, `No, it's not Made for Kids` (`aria-checked="true"`), `Altered content: Yes` (`aria-checked="true"`).
+- **UPLOADS register:** Registered `f_-BsKZf8X0` in `orbit-with-ben/00_Brand/Channel-Setup/social/hos/UPLOADS.json` (`sha256 e162a0fbe05e...`, `long: YqCWYlv_LCY`, `publishAt: 2026-12-01T11:30:00Z`, `privacyStatus: private`).
+- **Pasted gate PASSes:**
+  - `gate_shorts_open.py`: `PASS  hos_008_s04_no_patent_v01.mp4  dur=16.1s  audio=-16.7dB  motion=34.94  f0diff=4.75  cut1=2.37s  vo_onset=0.06s  tail_gap=1.44s  vo_src=mix  dhash=0f07660287870343` (full-bleed 0/17, 0/33)
+  - `npm run lint:package -- --film 008`: `PASS  02_Video-Projects/008_Lightning-Franklin/10_Shorts/SHORTS_RELEASE.json`
+  - `npm run channel:audit -- --write-live`: `PASS  Short f_-BsKZf8X0  private 2026-12-01 11:30 UK  Why Did Franklin Never Patent the Lightning Rod?` · `76 videos, 0 errors.`
+
 ---
 
 ## J3649 Post-publish Shorts Related video links & Title+Thumb T&C read-back (26 Nov 2026, Gemini worker)

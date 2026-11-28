@@ -43,6 +43,7 @@ WPM_WARN = 145
 # from both sides before the diff; ordinal words are retained after digit normalisation.
 ALIASES = {"thompson": "thomson", "thompson's": "thomson's", "center": "centre", "st": "saint",
            "lyle": "lyell", "lyle's": "lyell's", "bedder": "better",
+           "beta": "bethe", "beta's": "bethe's",
            "dimitri": "dmitri", "vandenbroek": "van den broek", "vandenbroek's": "van den broek's",
            "schoolteacher": "school teacher", "p": "pea", "pee": "pea", "dmitry": "dmitri", "leiden": "leyden"}
 # The transcriber writes US spellings; the script is UK (008 Part 02: traveling, color).

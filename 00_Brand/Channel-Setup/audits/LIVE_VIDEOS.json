@@ -1,7 +1,14 @@
 {
   "source": "scripts/channel-audit.ts --write-live (YouTube Data API, owner view)",
-  "pulledAt": "2026-11-26T18:23:22.267Z",
+  "pulledAt": "2026-11-27T03:29:47.729Z",
   "videos": [
+    {
+      "id": "f_-BsKZf8X0",
+      "kind": "Short",
+      "title": "Why Did Franklin Never Patent the Lightning Rod?",
+      "privacy": "private",
+      "scheduled": "2026-12-01 11:30 UK"
+    },
     {
       "id": "YqCWYlv_LCY",
       "kind": "long",
@@ -241,13 +248,6 @@
       "scheduled": ""
     },
     {
-      "id": "qOZgess30h0",
-      "kind": "Short",
-      "title": "Invisible life is still everywhere",
-      "privacy": "public",
-      "scheduled": ""
-    },
-    {
       "id": "zI_eD3vFWmE",
       "kind": "Short",
       "title": "The first X-ray showed a wedding ring",
@@ -349,6 +349,13 @@
       "id": "_C92tIJCk8A",
       "kind": "long",
       "title": "How Did We Discover Germs?",
+      "privacy": "public",
+      "scheduled": ""
+    },
+    {
+      "id": "qOZgess30h0",
+      "kind": "Short",
+      "title": "Invisible life is still everywhere",
       "privacy": "public",
       "scheduled": ""
     }
