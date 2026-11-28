@@ -1,0 +1,22 @@
+{
+  "video": {
+    "path": "/Volumes/MiniWork/scratch/J3871-build-v04/hos_009_s03_apple_head_v04.mp4",
+    "sha256": "3e21b51f9314df661b1556fc94ac313a6a73830a66c04ddfb59d33a8e2731dac"
+  },
+  "nas_video": {
+    "path": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/10_Shorts/J3871/v04/hos_009_s03_apple_head_v04.mp4",
+    "sha256": "3e21b51f9314df661b1556fc94ac313a6a73830a66c04ddfb59d33a8e2731dac"
+  },
+  "vo": {
+    "path": "/Volumes/MiniWork/scratch/J3871-build-v04/vo.wav",
+    "sha256": "4eae192f1a4ab1c24fd76e131d73cd901e9ab44c7a906717e13acd7902f60ff4"
+  },
+  "sfx": {
+    "path": "/Volumes/MiniWork/scratch/J3871-build-v04/sfx.wav",
+    "sha256": "4f79565aa0f348e2613ca596c4832c44da2d8e7f2557139fcff2a03806f7cafe"
+  },
+  "source": {
+    "path": "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part02/raw/v01/08_the_apple_t1.mp4",
+    "sha256": "357e8de3e9c771ef212fb01ee0a6052ebfedbc0de0ad9794270f5ff2128a5b44"
+  }
+}

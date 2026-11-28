@@ -1,0 +1,166 @@
+{
+  "rule": {
+    "low_detail": "FAIL: luma std < 13.44 and edge density < 0.0259 (absolute floor); WARN: luma std < 18.0 or edge density < film p5",
+    "split_panel": "full-height/width seam or gutter",
+    "split_panel_gutter": "gutter counts only with edge density >= 0.01 in the 10% band on both sides",
+    "near_black": "mean < 28.0 or p95 < 50.0",
+    "noise": "grain std > 6 over structure std < 12, and the 8x-downscaled frame under the low-detail floor (std < 13.44 and edge density < 0.0259)",
+    "jitter": "centre-patch phase correlation: reversal against trend or > 0.35 px off trend"
+  },
+  "low_detail_floor": {
+    "std": 13.44,
+    "edge": 0.0259,
+    "calibration": {
+      "video": "025_MarsRobot_full_rough_v02d.mp4",
+      "factor": 1.2,
+      "frames": [
+        {
+          "source": "PIA22223.jpg",
+          "t": 201.0,
+          "std": 12.1,
+          "edge": 0.0223
+        },
+        {
+          "source": "PIA22223.jpg",
+          "t": 216.3,
+          "std": 11.2,
+          "edge": 0.0216
+        },
+        {
+          "source": "PIA22929.jpg",
+          "t": 297.4,
+          "std": 26.54,
+          "edge": 0.5735
+        }
+      ]
+    }
+  },
+  "video": "/Volumes/MiniWork/scratch/J3871-build-v04/hos_009_s03_apple_head_v04.mp4",
+  "edge_floor": 0.0273,
+  "verdict": "PASS",
+  "failed": [],
+  "warn": [
+    {
+      "row": "apple_2",
+      "cut": 1,
+      "t": 2.87,
+      "source": "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part02/raw/v01/06_old_newton_tells_t1.mp4",
+      "why": [
+        "low detail: edge density 0.0272 < film p5 0.0273"
+      ]
+    }
+  ],
+  "reviewed_ok": [],
+  "rows": [
+    {
+      "cut": 0,
+      "row": "apple_1",
+      "source": "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part02/raw/v01/08_the_apple_t1.mp4",
+      "t": 0.4,
+      "std": 51.88,
+      "mean": 87.06,
+      "p95": 200.0,
+      "edge": 0.1133,
+      "hf": 13.34,
+      "lf": 42.14,
+      "std8": 45.72,
+      "edge8": 0.4893,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 1,
+      "row": "apple_2",
+      "source": "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part02/raw/v01/06_old_newton_tells_t1.mp4",
+      "t": 2.87,
+      "std": 34.08,
+      "mean": 44.89,
+      "p95": 124.0,
+      "edge": 0.0272,
+      "hf": 6.99,
+      "lf": 29.52,
+      "std8": 31.25,
+      "edge8": 0.2022,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0272 < film p5 0.0273"
+      ]
+    },
+    {
+      "cut": 2,
+      "row": "apple_3",
+      "source": "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part02/raw/v01/06_old_newton_tells_t1.mp4",
+      "t": 6.59,
+      "std": 30.86,
+      "mean": 38.52,
+      "p95": 104.0,
+      "edge": 0.0278,
+      "hf": 8.15,
+      "lf": 25.14,
+      "std8": 26.92,
+      "edge8": 0.1765,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 3,
+      "row": "apple_4",
+      "source": "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part02/raw/v01/07_orchard_bench_t1.mp4",
+      "t": 9.89,
+      "std": 61.57,
+      "mean": 93.04,
+      "p95": 226.0,
+      "edge": 0.127,
+      "hf": 14.25,
+      "lf": 52.29,
+      "std8": 55.77,
+      "edge8": 0.4412,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 4,
+      "row": "apple_5",
+      "source": "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part02/raw/v01/07_orchard_bench_t1.mp4",
+      "t": 13.87,
+      "std": 59.03,
+      "mean": 95.07,
+      "p95": 227.0,
+      "edge": 0.1152,
+      "hf": 12.21,
+      "lf": 49.47,
+      "std8": 53.49,
+      "edge8": 0.4362,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 5,
+      "row": "apple_6",
+      "source": "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part02/raw/v01/08_the_apple_t1.mp4",
+      "t": 16.65,
+      "std": 48.22,
+      "mean": 89.66,
+      "p95": 174.0,
+      "edge": 0.0845,
+      "hf": 8.16,
+      "lf": 43.02,
+      "std8": 45.04,
+      "edge8": 0.426,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    }
+  ]
+}

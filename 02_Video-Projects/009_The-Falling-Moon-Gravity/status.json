@@ -34,7 +34,7 @@
     },
     "shorts_scripts": {
       "state": "done",
-      "note": "v02 (test B): two search-titled Shorts, 9 Oct. J3816 (27 Nov): additional apple Short s03 v02 built as an internal 17.1 s draft; opener-motion and terminal-reuse gates FAIL. Codex repair notes in 10_Shorts/J3816/REPORT.md. Existing approved Shorts unchanged; no additional Short PASS or UAT."
+      "note": "v02 (test B): two search-titled Shorts, 9 Oct. J3816 (27 Nov): additional apple Short s03 v02 built as an internal 17.1 s draft; opener-motion and terminal-reuse gates FAIL. Codex repair notes in 10_Shorts/J3816/REPORT.md. Existing approved Shorts unchanged; no additional Short PASS or UAT. J3871 exact v04 recheck 28 Nov: opener/polish/music/VO/SFX PASS; picture FAIL because actual scale-before-crop framing cannot be truthfully represented by integer source-crop contract. Additional cut still held; see recheck_20261128/REPORT.md. No new Short approval."
     },
     "shorts_vo": {
       "state": "done",
@@ -65,7 +65,7 @@
       "owner": "codex",
       "waiting": "",
       "underway": false,
-      "note": "J3314 v03 (09_Assembly/j2035_v03/hos009_long_master_v03.mp4, sha256 744f32b7f2f95e75fabf039a345aee6c7c01ab6f304a932ebe7172bd3b3ede55, 519.000 s, 15568 frames) and prior v01 (802b5c7e...) / v02 (9d8731cb...) live NAS+Mini SHA-256 verified by J2036 (22 Nov 2026) and J2037 (23 Nov 2026); exact-hash v03 staged to HOS UAT/009_The-Falling-Moon-Gravity/hos009_long_master_v03.mp4. All 4 unmodified gates PASS: picture_qa 0/92 fail, polish_gate 0/92 fail (5 low-detail warnings all inspected at 1080p), music_gate PASS (v04_synth), sfx_kit level PASS (VO -20.8 / SFX -41.4 LUFS, 14 hits); ebur128 -20.8 LUFS, Peak -4.0 dBFS, 0 silences >=1.5 s. 33 Teach/E2 cards verified (0 overlaps/bleeds/drifts), stills + thumbs A/B inspected. Exact v03 chapters (0:00/1:24/2:56/4:20/6:33) + 8 Sources + honest making-of line in moon_long_description_v01.txt, FACT_NOTES provenance reconciled, lint:package PASS. Pack: 07_Edit-Project/J2036_V03_QA_2026-11-22.md. Parked for Acting Chief Codex non-producer review, PR #731 merge, and Ben final watch card. £0 / 0 credits. No upload, schedule, or privacy change. Not a film PASS and not Ben's watch (ben_ok remains todo). J3455 independent acting Chief Codex KEEP for private UAT, 23 Nov 2026. v03 master 744f32b7 and PHONE b1135b3d hashes match NAS and iCloud. Four delivered gates PASS; flagged stills reviewed. HOS PR #731 merged. J2037 remains blocked for Ben finished-cut watch/listen, card HOS:009 ready for Ben, Play HTTP 302 verified at 22:24Z. No upload or schedule permission.",
+      "note": "J3314 v03 (09_Assembly/j2035_v03/hos009_long_master_v03.mp4, sha256 744f32b7f2f95e75fabf039a345aee6c7c01ab6f304a932ebe7172bd3b3ede55, 519.000 s, 15568 frames) and prior v01 (802b5c7e...) / v02 (9d8731cb...) live NAS+Mini SHA-256 verified by J2036 (22 Nov 2026) and J2037 (23 Nov 2026); exact-hash v03 staged to HOS UAT/009_The-Falling-Moon-Gravity/hos009_long_master_v03.mp4. All 4 unmodified gates PASS: picture_qa 0/92 fail, polish_gate 0/92 fail (5 low-detail warnings all inspected at 1080p), music_gate PASS (v04_synth), sfx_kit level PASS (VO -20.8 / SFX -41.4 LUFS, 14 hits); ebur128 -20.8 LUFS, Peak -4.0 dBFS, 0 silences >=1.5 s. 33 Teach/E2 cards verified (0 overlaps/bleeds/drifts), stills + thumbs A/B inspected. Exact v03 chapters (0:00/1:24/2:56/4:20/6:33) + 8 Sources + honest making-of line in moon_long_description_v01.txt, FACT_NOTES provenance reconciled, lint:package PASS. Pack: 07_Edit-Project/J2036_V03_QA_2026-11-22.md. Parked for Acting Chief Codex non-producer review, PR #731 merge, and Ben final watch card. \u00a30 / 0 credits. No upload, schedule, or privacy change. Not a film PASS and not Ben's watch (ben_ok remains todo). J3455 independent acting Chief Codex KEEP for private UAT, 23 Nov 2026. v03 master 744f32b7 and PHONE b1135b3d hashes match NAS and iCloud. Four delivered gates PASS; flagged stills reviewed. HOS PR #731 merged. J2037 remains blocked for Ben finished-cut watch/listen, card HOS:009 ready for Ben, Play HTTP 302 verified at 22:24Z. No upload or schedule permission.",
       "since": "2026-11-23",
       "steps": [
         5,
@@ -92,7 +92,7 @@
       "jobs": [
         "J3262"
       ],
-      "note": "J3262 Acting Chief (Gemini) PASS (21 Nov 2026): long thumbnails A (IT MISSES, cd44f05657ddfea2...) and B (ONE APPLE, 3d1164330249e779...) PASS HOOK, BAND, PHONE (168x94), FAMILY (style_sheet vs 001-004), and Explorer on-model; £0 cash, 0 Flow credits (23450 before/after), Mini-NAS SHA256 parity verified. Ready for J2036 package wiring and Ben's final watch (ben_ok remains todo; not a film PASS or upload/schedule OK)."
+      "note": "J3262 Acting Chief (Gemini) PASS (21 Nov 2026): long thumbnails A (IT MISSES, cd44f05657ddfea2...) and B (ONE APPLE, 3d1164330249e779...) PASS HOOK, BAND, PHONE (168x94), FAMILY (style_sheet vs 001-004), and Explorer on-model; \u00a30 cash, 0 Flow credits (23450 before/after), Mini-NAS SHA256 parity verified. Ready for J2036 package wiring and Ben's final watch (ben_ok remains todo; not a film PASS or upload/schedule OK)."
     },
     "ben_ok": {
       "state": "done",
