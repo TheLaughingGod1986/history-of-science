@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "format": "short",
+  "cut": 5,
+  "duration": 17.1,
+  "last_vo_word": 15.78,
+  "source": {
+    "path": "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part02/raw/v01/08_the_apple_t1.mp4",
+    "sha256": "357e8de3e9c771ef212fb01ee0a6052ebfedbc0de0ad9794270f5ff2128a5b44"
+  },
+  "words": {
+    "path": "/Volumes/MiniWork/scratch/J3871-recheck/02_Video-Projects/009_The-Falling-Moon-Gravity/10_Shorts/J3871/v04/recheck_20261128/words.json",
+    "sha256": "3c9dd0187aaca58f668c950121908eaf3a8ad5b6ee9687c8e8668114305e8e08"
+  },
+  "vo": {
+    "path": "/Volumes/MiniWork/scratch/J3871-build-v04/vo.wav",
+    "sha256": "4eae192f1a4ab1c24fd76e131d73cd901e9ab44c7a906717e13acd7902f60ff4"
+  },
+  "prescription": {
+    "path": "/Volumes/MiniWork/scratch/J3871-recheck/02_Video-Projects/009_The-Falling-Moon-Gravity/10_Shorts/J3871/v04/recheck_20261128/PRESCRIPTION.md",
+    "sha256": "f2794010e821403d88918edeb67ceca84a75d48b87915b10678f800cd09076aa"
+  },
+  "source_in": 0,
+  "source_out": 0.9,
+  "framing": {
+    "crop": [
+      437.4468085106383,
+      0,
+      405.1063829787234,
+      720
+    ],
+    "output": [
+      952,
+      1692
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+PASS  hos_009_s03_apple_head_v04.mp4  dur=17.1s  audio=-17.5dB  motion=24.4  f0diff=1.91  cut1=0.77s  vo_onset=0.07s  tail_gap=1.33s  vo_src=/Volumes/MiniWork/scratch/J3871-build-v04/vo.wav  dhash=dbc97cf9ddde3615
+   full-bleed 0.00s  fills the frame  sharp above/middle/below=0.54/0.687/0.884  detail top/centre/bottom=13.16/12.33/19.22  spread top/bottom=39.42/33.28
+   full-bleed 0.25s  fills the frame  sharp above/middle/below=0.555/0.677/0.876  detail top/centre/bottom=13.02/12.16/19.31  spread top/bottom=39.16/33.28
+   full-bleed 0.50s  fills the frame  sharp above/middle/below=0.559/0.616/0.879  detail top/centre/bottom=13.11/12.32/19.34  spread top/bottom=39.19/33.31
+   full-bleed whole Short  0/18 frames padded at one a second, 0/35 at two a second  padded stretches: none  no end card named in meta
+   sheet /Volumes/MiniWork/scratch/J3871-hos/02_Video-Projects/009_The-Falling-Moon-Gravity/10_Shorts/J3871/v04/hos_009_s03_apple_head_v04_open_sheet.jpg

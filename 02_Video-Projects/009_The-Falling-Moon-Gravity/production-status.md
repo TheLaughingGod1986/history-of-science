@@ -328,3 +328,77 @@ PASS  02_Video-Projects/009_The-Falling-Moon-Gravity/11_Upload-Package/PACKAGE_M
 -- gate:episode: PASS
 ALL CHECKS PASS
 ```
+
+
+## 27 Nov 2026 — J3816 additional apple Short draft (Codex)
+
+```text
+PASS  vo.wav  0:17.10  mean -23.1 dB  peak -4.1 dB  179 wpm
+polish gate PASS: 0 of 6 rows failed, 1 to look at
+music gate PASS: hos_009_score_v04_synth.wav, 535.3 s, about 52.2 BPM, brief Pace: 60-68 BPM
+FAIL  hos_009_s03_apple_head_v02.mp4  dur=17.1s  motion=6.41  f0diff=1.14  cut1=2.4s  vo_onset=0.07s  tail_gap=1.33s
+FAIL  pushed still at frame 0 (mean 0–1.5 s frame diff 1.14 < 1.50)
+picture QA FAIL: 1 of 6 cuts fail, 5 to look at
+FAIL  0:16 row apple_6: reuse: same stretch as 0:01
+```
+
+Full-bleed check: 0/18 padded frames at one per second, 0/35 at two per second. Loudness and first-cut failures from v01 were repaired. The VO PASS is a word-check receipt, not a claim of hearing it. Inspected the full portrait sheets of both versions and the clean source sheet; v02 removes the clipped long labels. The one low-detail frame is a deliberately soft room background around Newton. Actual moving-video perception and audio perception are unavailable in this session: watched=false, heard=false. No media KEEP was issued.
+
+
+Additional Short only: v02 remains failed-gate internal repair work, not a change to the approved long or either existing Short. Detail and repair recipe: `10_Shorts/J3816/REPORT.md`.
+
+
+## J3871 — 28 Nov exact-v04 recheck, not passed
+
+Unchanged v04 hash 3e21b51f9314df661b1556fc94ac313a6a73830a66c04ddfb59d33a8e2731dac verified locally and on NAS. Fresh receipts in 10_Shorts/J3871/v04/recheck_20261128/.
+
+```text
+PASS  hos_009_s03_apple_head_v04.mp4  dur=17.1s  audio=-17.5dB  motion=24.4  f0diff=1.91  cut1=0.77s  vo_onset=0.07s  tail_gap=1.33s  vo_src=/Volumes/MiniWork/scratch/J3871-build-v04/vo.wav  dhash=dbc97cf9ddde3615
+   full-bleed 0.00s  fills the frame  sharp above/middle/below=0.54/0.687/0.884  detail top/centre/bottom=13.16/12.33/19.22  spread top/bottom=39.42/33.28
+   full-bleed 0.25s  fills the frame  sharp above/middle/below=0.555/0.677/0.876  detail top/centre/bottom=13.02/12.16/19.31  spread top/bottom=39.16/33.28
+   full-bleed 0.50s  fills the frame  sharp above/middle/below=0.559/0.616/0.879  detail top/centre/bottom=13.11/12.32/19.34  spread top/bottom=39.19/33.31
+   full-bleed whole Short  0/18 frames padded at one a second, 0/35 at two a second  padded stretches: none  no end card named in meta
+   sheet /Volumes/MiniWork/scratch/J3871-recheck/02_Video-Projects/009_The-Falling-Moon-Gravity/10_Shorts/J3871/v04/recheck_20261128/hos_009_s03_apple_head_v04_open_sheet.jpg
+
+```
+
+```text
+FAIL   0:17 row apple_6 /Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part02/raw/v01/08_the_apple_t1.mp4: reuse: same stretch as 0:00 (give it a new stretch, or a new render); terminal loop: crop/output must contain integer pixels
+WARN   0:00 row apple_1 /Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part02/raw/v01/08_the_apple_t1.mp4: sharpness: upscaled 2.35x, may look soft
+WARN   0:03 row apple_2 /Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part02/raw/v01/06_old_newton_tells_t1.mp4: sharpness: upscaled 2.35x, may look soft; low detail: edge density 0.0272 < film p5 0.0273
+WARN   0:07 row apple_3 /Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part02/raw/v01/06_old_newton_tells_t1.mp4: sharpness: upscaled 2.35x, may look soft
+WARN   0:10 row apple_4 /Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part02/raw/v01/07_orchard_bench_t1.mp4: sharpness: upscaled 2.35x, may look soft
+WARN   0:14 row apple_5 /Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part02/raw/v01/07_orchard_bench_t1.mp4: sharpness: upscaled 2.35x, may look soft
+picture QA FAIL: 1 of 6 cuts fail, 5 to look at -> /Volumes/MiniWork/scratch/J3871-recheck/02_Video-Projects/009_The-Falling-Moon-Gravity/10_Shorts/J3871/v04/recheck_20261128/picture/PICTURE_QA.md, /Volumes/MiniWork/scratch/J3871-recheck/02_Video-Projects/009_The-Falling-Moon-Gravity/10_Shorts/J3871/v04/recheck_20261128/picture/picture_qa_review.jpg
+
+```
+
+```text
+apple_1     0.4s /Volumes/data/mac-mini-archi ok
+apple_2     2.9s /Volumes/data/mac-mini-archi WARN low detail: edge density 0.0272 < film p5 0.0273
+apple_3     6.6s /Volumes/data/mac-mini-archi ok
+apple_4     9.9s /Volumes/data/mac-mini-archi ok
+apple_5    13.9s /Volumes/data/mac-mini-archi ok
+apple_6    16.6s /Volumes/data/mac-mini-archi ok
+polish gate PASS: 0 of 6 rows failed, 1 to look at -> /Volumes/MiniWork/scratch/J3871-recheck/02_Video-Projects/009_The-Falling-Moon-Gravity/10_Shorts/J3871/v04/recheck_20261128/polish.json
+
+```
+
+```text
+WARN reused: couldn't read part01_zoo_of_stuff_v02.mp3 to compare (OSError); download it or pass --others
+WARN reused: couldn't read part01_zoo_of_stuff_v02.wav to compare (OSError); download it or pass --others
+music gate PASS: hos_009_score_v04_synth.wav, 535.3 s, about 52.2 BPM, brief Pace: 60-68 BPM
+
+```
+
+```text
+SFX level PASS: VO -19.8 LUFS, SFX -44.1 LUFS, 1 hits
+
+```
+
+```text
+PASS  vo.wav  0:17.10  mean -23.1 dB  peak -4.1 dB  179 wpm
+
+```
+
+J3871 remains held for separate scaled-crop contract review. No Short PASS or UAT; existing approved releases unchanged.

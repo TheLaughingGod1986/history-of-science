@@ -1,0 +1,376 @@
+{
+  "clean_sources": [
+    {
+      "path": "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part02/raw/v01/08_the_apple_t1.mp4",
+      "in": 1.2,
+      "sha256": "357e8de3e9c771ef212fb01ee0a6052ebfedbc0de0ad9794270f5ff2128a5b44"
+    },
+    {
+      "path": "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part02/raw/v01/06_old_newton_tells_t1.mp4",
+      "in": 0,
+      "sha256": "9da5073d049841960b1a53459aa58d817c8b229ec8f71f78266f5a10fcbac37f"
+    },
+    {
+      "path": "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part02/raw/v01/06_old_newton_tells_t1.mp4",
+      "in": 2.54,
+      "sha256": "9da5073d049841960b1a53459aa58d817c8b229ec8f71f78266f5a10fcbac37f"
+    },
+    {
+      "path": "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part02/raw/v01/07_orchard_bench_t1.mp4",
+      "in": 0,
+      "sha256": "028ee06be5e3fb76cbc58265837633993c4834c961735c191c36379c5e7afa02"
+    },
+    {
+      "path": "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part02/raw/v01/07_orchard_bench_t1.mp4",
+      "in": 3.3,
+      "sha256": "028ee06be5e3fb76cbc58265837633993c4834c961735c191c36379c5e7afa02"
+    },
+    {
+      "path": "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part02/raw/v01/08_the_apple_t1.mp4",
+      "in": 0,
+      "sha256": "357e8de3e9c771ef212fb01ee0a6052ebfedbc0de0ad9794270f5ff2128a5b44"
+    }
+  ],
+  "job": "J3816",
+  "film": "009",
+  "status": "FAILED GATES: internal repair draft only",
+  "title_draft": "Did Newton\u2019s Apple Hit His Head?",
+  "master_source": "/Volumes/MiniWork/scratch/J3314-assembly/hos009_long_master_v03.mp4",
+  "master_source_sha256": "744f32b7f2f95e75fabf039a345aee6c7c01ab6f304a932ebe7172bd3b3ede55",
+  "draft": "/Volumes/MiniWork/scratch/J3816-build/hos_009_s03_apple_head_v02.mp4",
+  "sha256": "fe38f08f178fe09f5bef6ceaa2ee357e8956fed01c569b933ad10d050bc75d8a",
+  "duration_s": 17.1,
+  "vo_slices_master_time": [
+    [
+      139.5,
+      144.44
+    ],
+    [
+      127.82,
+      138.76
+    ]
+  ],
+  "vo_source": "/Users/benjaminoats/YouTube/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/02_Voiceover/hos_009_part02_an_apple_in_a_plague_year_v01.mp3",
+  "spoken": "The apple didn't hit him on the head. That part was added later, but it made him wonder. Many years later, when he was an old man, Newton told a friend how one of those questions began. He was sitting in the garden thinking when an apple fell from a tree.",
+  "words": [
+    {
+      "word": "The",
+      "start": 0.06,
+      "end": 0.12
+    },
+    {
+      "word": "apple",
+      "start": 0.18,
+      "end": 0.42
+    },
+    {
+      "word": "didn't",
+      "start": 0.46,
+      "end": 0.7
+    },
+    {
+      "word": "hit",
+      "start": 0.74,
+      "end": 0.86
+    },
+    {
+      "word": "him",
+      "start": 0.88,
+      "end": 0.98
+    },
+    {
+      "word": "on",
+      "start": 1.02,
+      "end": 1.1
+    },
+    {
+      "word": "the",
+      "start": 1.14,
+      "end": 1.2
+    },
+    {
+      "word": "head.",
+      "start": 1.26,
+      "end": 1.62
+    },
+    {
+      "word": "That",
+      "start": 2.0,
+      "end": 2.14
+    },
+    {
+      "word": "part",
+      "start": 2.18,
+      "end": 2.38
+    },
+    {
+      "word": "was",
+      "start": 2.42,
+      "end": 2.52
+    },
+    {
+      "word": "added",
+      "start": 2.56,
+      "end": 2.8
+    },
+    {
+      "word": "later,",
+      "start": 2.84,
+      "end": 3.24
+    },
+    {
+      "word": "but",
+      "start": 3.84,
+      "end": 3.92
+    },
+    {
+      "word": "it",
+      "start": 3.96,
+      "end": 4.04
+    },
+    {
+      "word": "made",
+      "start": 4.08,
+      "end": 4.26
+    },
+    {
+      "word": "him",
+      "start": 4.28,
+      "end": 4.42
+    },
+    {
+      "word": "wonder.",
+      "start": 4.48,
+      "end": 4.84
+    },
+    {
+      "word": "Many",
+      "start": 5.0,
+      "end": 5.2
+    },
+    {
+      "word": "years",
+      "start": 5.24,
+      "end": 5.48
+    },
+    {
+      "word": "later,",
+      "start": 5.54,
+      "end": 5.98
+    },
+    {
+      "word": "when",
+      "start": 6.1,
+      "end": 6.2
+    },
+    {
+      "word": "he",
+      "start": 6.22,
+      "end": 6.28
+    },
+    {
+      "word": "was",
+      "start": 6.32,
+      "end": 6.4
+    },
+    {
+      "word": "an",
+      "start": 6.44,
+      "end": 6.5
+    },
+    {
+      "word": "old",
+      "start": 6.58,
+      "end": 6.76
+    },
+    {
+      "word": "man,",
+      "start": 6.86,
+      "end": 7.24
+    },
+    {
+      "word": "Newton",
+      "start": 7.74,
+      "end": 8.06
+    },
+    {
+      "word": "told",
+      "start": 8.14,
+      "end": 8.34
+    },
+    {
+      "word": "a",
+      "start": 8.38,
+      "end": 8.44
+    },
+    {
+      "word": "friend",
+      "start": 8.5,
+      "end": 8.9
+    },
+    {
+      "word": "how",
+      "start": 8.96,
+      "end": 9.12
+    },
+    {
+      "word": "one",
+      "start": 9.18,
+      "end": 9.28
+    },
+    {
+      "word": "of",
+      "start": 9.32,
+      "end": 9.4
+    },
+    {
+      "word": "those",
+      "start": 9.44,
+      "end": 9.64
+    },
+    {
+      "word": "questions",
+      "start": 9.7,
+      "end": 10.18
+    },
+    {
+      "word": "began.",
+      "start": 10.22,
+      "end": 10.78
+    },
+    {
+      "word": "He",
+      "start": 11.74,
+      "end": 11.82
+    },
+    {
+      "word": "was",
+      "start": 11.84,
+      "end": 11.94
+    },
+    {
+      "word": "sitting",
+      "start": 11.98,
+      "end": 12.24
+    },
+    {
+      "word": "in",
+      "start": 12.26,
+      "end": 12.32
+    },
+    {
+      "word": "the",
+      "start": 12.36,
+      "end": 12.44
+    },
+    {
+      "word": "garden",
+      "start": 12.48,
+      "end": 12.88
+    },
+    {
+      "word": "thinking",
+      "start": 13.04,
+      "end": 13.52
+    },
+    {
+      "word": "when",
+      "start": 14.02,
+      "end": 14.12
+    },
+    {
+      "word": "an",
+      "start": 14.14,
+      "end": 14.24
+    },
+    {
+      "word": "apple",
+      "start": 14.34,
+      "end": 14.66
+    },
+    {
+      "word": "fell",
+      "start": 14.82,
+      "end": 15.08
+    },
+    {
+      "word": "from",
+      "start": 15.14,
+      "end": 15.24
+    },
+    {
+      "word": "a",
+      "start": 15.28,
+      "end": 15.36
+    },
+    {
+      "word": "tree.",
+      "start": 15.42,
+      "end": 15.78
+    }
+  ],
+  "upscale_from_720p": 2.35,
+  "heard": false,
+  "watched": false,
+  "spend": 0,
+  "nas_draft": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/10_Shorts/J3816/hos_009_s03_apple_head_v02.mp4",
+  "nas_sha256": "fe38f08f178fe09f5bef6ceaa2ee357e8956fed01c569b933ad10d050bc75d8a",
+  "picture_plan": [
+    {
+      "timeline_in": 0,
+      "timeline_out": 2.4,
+      "crop_x": 1028,
+      "source": "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part02/raw/v01/08_the_apple_t1.mp4",
+      "source_in": 1.2,
+      "source_sha256": "357e8de3e9c771ef212fb01ee0a6052ebfedbc0de0ad9794270f5ff2128a5b44"
+    },
+    {
+      "timeline_in": 2.4,
+      "timeline_out": 4.94,
+      "crop_x": 1028,
+      "source": "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part02/raw/v01/06_old_newton_tells_t1.mp4",
+      "source_in": 0,
+      "source_sha256": "9da5073d049841960b1a53459aa58d817c8b229ec8f71f78266f5a10fcbac37f"
+    },
+    {
+      "timeline_in": 4.94,
+      "timeline_out": 8.24,
+      "crop_x": 950,
+      "source": "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part02/raw/v01/06_old_newton_tells_t1.mp4",
+      "source_in": 2.54,
+      "source_sha256": "9da5073d049841960b1a53459aa58d817c8b229ec8f71f78266f5a10fcbac37f"
+    },
+    {
+      "timeline_in": 8.24,
+      "timeline_out": 11.54,
+      "crop_x": 1040,
+      "source": "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part02/raw/v01/07_orchard_bench_t1.mp4",
+      "source_in": 0,
+      "source_sha256": "028ee06be5e3fb76cbc58265837633993c4834c961735c191c36379c5e7afa02"
+    },
+    {
+      "timeline_in": 11.54,
+      "timeline_out": 15.9,
+      "crop_x": 1028,
+      "source": "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part02/raw/v01/07_orchard_bench_t1.mp4",
+      "source_in": 3.3,
+      "source_sha256": "028ee06be5e3fb76cbc58265837633993c4834c961735c191c36379c5e7afa02"
+    },
+    {
+      "timeline_in": 15.9,
+      "timeline_out": 17.1,
+      "crop_x": 1028,
+      "source": "/Volumes/data/mac-mini-archive/YouTube/History Of Science/02_Video-Projects/009_The-Falling-Moon-Gravity/04_Generated-Clips/part02/raw/v01/08_the_apple_t1.mp4",
+      "source_in": 0,
+      "source_sha256": "357e8de3e9c771ef212fb01ee0a6052ebfedbc0de0ad9794270f5ff2128a5b44"
+    }
+  ],
+  "vo_sha256": "4eae192f1a4ab1c24fd76e131d73cd901e9ab44c7a906717e13acd7902f60ff4",
+  "gates": {
+    "vo": "PASS (same locked-source voice stem checked with vo_check)",
+    "music": "PASS",
+    "polish": "PASS, 1 low-detail warning",
+    "open": "FAIL: native frame-zero sustained difference 1.14 < 1.50",
+    "picture": "FAIL: terminal-return reuse; 5 warnings"
+  }
+}
