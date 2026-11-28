@@ -7,8 +7,10 @@
  *   npx tsx --env-file=.env scripts/channel-audit.ts --write-live    # also refresh audits/LIVE_VIDEOS.json
  *   npx tsx scripts/channel-audit.ts --file <videos.json>            # offline: audit a saved API response
  *
+ *   --sponsorship-declarations <json>  optional explicit video-ID -> evidence mapping
+ *
  * Reads every upload on @HistoryOfScienceYT through the YouTube Data API (videos.list:
- * snippet, status, contentDetails) and checks each against src/lib/hos-contract/rules.ts:
+ * snippet, status, contentDetails, paidProductPlacementDetails) and checks each against src/lib/hos-contract/rules.ts:
  * Made for Kids, AI disclosure, Education category, en-GB languages, Premiere, tags, titles,
  * schedule slots, one Short a day, duplicate titles. It changes nothing.
  *
@@ -38,6 +40,8 @@ import {
   type UploadsCoverageReport,
 } from "../src/lib/hos-contract/audit-coverage";
 
+import { auditPaidPlacement, readSponsorshipDeclarations } from "../src/lib/hos-contract/paid-placement";
+
 const REPO = path.resolve(__dirname, "..", "..");
 const LIVE_VIDEOS = path.join(REPO, "00_Brand", "Channel-Setup", "audits", "LIVE_VIDEOS.json");
 const API = "https://www.googleapis.com/youtube/v3";
@@ -66,7 +70,7 @@ async function fetchVideosByIds(token: string, ids: readonly string[]): Promise<
   for (let i = 0; i < uniqueIds.length; i += 50) {
     const v = await get(
       token,
-      `${API}/videos?part=snippet,status,contentDetails&id=${uniqueIds.slice(i, i + 50).join(",")}`,
+      `${API}/videos?part=snippet,status,contentDetails,paidProductPlacementDetails&id=${uniqueIds.slice(i, i + 50).join(",")}`,
     );
     videos.push(...(v.items || []));
   }
@@ -143,6 +147,9 @@ async function main() {
     ({ channel, videos, coverage } = await fetchChannel(token, extraKnownIds));
   }
 
+  const declarationsFile = arg("sponsorship-declarations");
+  const declarations = readSponsorshipDeclarations(declarationsFile
+    ? JSON.parse(fs.readFileSync(path.resolve(declarationsFile), "utf8")) : {});
   const findings = new Map<string, Finding[]>();
   const channelFindings: Finding[] = [];
   if (channel?.status && (channel.status.madeForKids || channel.status.selfDeclaredMadeForKids))
@@ -151,7 +158,7 @@ async function main() {
       rule: "channel.audience",
       message: "the CHANNEL is set as Made for Kids: Settings → Channel → Advanced → No",
     });
-  for (const v of videos) findings.set(v.id, auditVideo(v));
+  for (const v of videos) findings.set(v.id, [...auditVideo(v), ...auditPaidPlacement(v, declarations).findings]);
   // Declared Shorts (02_Video-Projects/*/10_Shorts/SHORTS_RELEASE.json): the live title must match.
   const projects = path.join(REPO, "02_Video-Projects");
   for (const d of fs.existsSync(projects) ? fs.readdirSync(projects) : []) {
@@ -178,6 +185,7 @@ async function main() {
     const when = v.status?.publishAt ? `${ukSlot(v.status.publishAt).date} ${ukSlot(v.status.publishAt).time} UK` : "";
     return {
       id: v.id,
+      paidProductPlacement: auditPaidPlacement(v, declarations).state,
       kind: isShort(v) ? "Short" : "long",
       title: v.snippet?.title || "",
       privacy: v.status?.privacyStatus || "",
@@ -212,6 +220,7 @@ async function main() {
     for (const r of rows) {
       const verdict = r.errors.length ? "FAIL" : "PASS";
       console.log(`${verdict}  ${r.kind.padEnd(5)} ${r.id}  ${r.privacy}${r.scheduled ? ` ${r.scheduled}` : ""}  ${r.title}`);
+      console.log(`   paid product placement: ${r.paidProductPlacement}`);
       for (const x of r.errors) console.log(`   FAIL  [${x.rule}] ${x.message}`);
       for (const x of r.warns) console.log(`   warn  [${x.rule}] ${x.message}`);
     }
