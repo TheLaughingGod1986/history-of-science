@@ -1,0 +1,1 @@
+PASS  vo.wav  0:17.10  mean -23.1 dB  peak -4.1 dB  179 wpm

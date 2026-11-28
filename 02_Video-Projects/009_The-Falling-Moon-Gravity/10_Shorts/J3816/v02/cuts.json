@@ -1,0 +1,74 @@
+[
+  {
+    "row": "apple_1",
+    "timeline_in": 0,
+    "timeline_out": 2.4,
+    "source": "08_the_apple_t1.mp4",
+    "video": true,
+    "upscale": 2.35,
+    "framing": {
+      "offset": 1.2,
+      "crop_x": 1028
+    }
+  },
+  {
+    "row": "apple_2",
+    "timeline_in": 2.4,
+    "timeline_out": 4.94,
+    "source": "06_old_newton_tells_t1.mp4",
+    "video": true,
+    "upscale": 2.35,
+    "framing": {
+      "offset": 0,
+      "crop_x": 1028
+    }
+  },
+  {
+    "row": "apple_3",
+    "timeline_in": 4.94,
+    "timeline_out": 8.24,
+    "source": "06_old_newton_tells_t1.mp4",
+    "video": true,
+    "upscale": 2.35,
+    "framing": {
+      "offset": 2.54,
+      "crop_x": 950
+    }
+  },
+  {
+    "row": "apple_4",
+    "timeline_in": 8.24,
+    "timeline_out": 11.54,
+    "source": "07_orchard_bench_t1.mp4",
+    "video": true,
+    "upscale": 2.35,
+    "framing": {
+      "offset": 0,
+      "crop_x": 1040
+    }
+  },
+  {
+    "row": "apple_5",
+    "timeline_in": 11.54,
+    "timeline_out": 15.9,
+    "source": "07_orchard_bench_t1.mp4",
+    "video": true,
+    "upscale": 2.35,
+    "framing": {
+      "offset": 3.3,
+      "crop_x": 1028
+    }
+  },
+  {
+    "row": "apple_6",
+    "timeline_in": 15.9,
+    "timeline_out": 17.1,
+    "source": "08_the_apple_t1.mp4",
+    "video": true,
+    "upscale": 2.35,
+    "framing": {
+      "offset": 0,
+      "crop_x": 1028
+    }
+  }
+]

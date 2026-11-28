@@ -1,0 +1,2 @@
+SFX level FAIL: VO -19.8 LUFS, SFX -59.1 LUFS, 0 hits
+FAIL present: no SFX hit anywhere in the stem

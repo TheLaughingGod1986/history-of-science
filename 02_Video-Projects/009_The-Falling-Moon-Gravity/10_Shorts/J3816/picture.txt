@@ -1,0 +1,7 @@
+FAIL   0:01 row apple_1 hos009_long_master_v03.mp4: split panel: horizontal seam at 0.789, horizontal seam at 0.883, horizontal seam at 0.887
+FAIL   0:14 row apple_5 hos009_long_master_v03.mp4: split panel: horizontal seam at 0.883, horizontal seam at 0.887
+FAIL   0:16 row apple_6 hos009_long_master_v03.mp4: reuse: replays frames this run has just shown
+WARN   0:04 row apple_2 hos009_long_master_v03.mp4: sharpness: upscaled 2.35x, may look soft
+WARN   0:07 row apple_3 hos009_long_master_v03.mp4: sharpness: upscaled 2.35x, may look soft; low detail: edge density 0.0255 < film p5 0.0272
+WARN   0:10 row apple_4 hos009_long_master_v03.mp4: sharpness: upscaled 2.35x, may look soft
+picture QA FAIL: 3 of 6 cuts fail, 3 to look at -> 02_Video-Projects/009_The-Falling-Moon-Gravity/10_Shorts/J3816/picture/PICTURE_QA.md, 02_Video-Projects/009_The-Falling-Moon-Gravity/10_Shorts/J3816/picture/picture_qa_review.jpg

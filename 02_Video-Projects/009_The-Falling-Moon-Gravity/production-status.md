@@ -328,3 +328,21 @@ PASS  02_Video-Projects/009_The-Falling-Moon-Gravity/11_Upload-Package/PACKAGE_M
 -- gate:episode: PASS
 ALL CHECKS PASS
 ```
+
+
+## 27 Nov 2026 — J3816 additional apple Short draft (Codex)
+
+```text
+PASS  vo.wav  0:17.10  mean -23.1 dB  peak -4.1 dB  179 wpm
+polish gate PASS: 0 of 6 rows failed, 1 to look at
+music gate PASS: hos_009_score_v04_synth.wav, 535.3 s, about 52.2 BPM, brief Pace: 60-68 BPM
+FAIL  hos_009_s03_apple_head_v02.mp4  dur=17.1s  motion=6.41  f0diff=1.14  cut1=2.4s  vo_onset=0.07s  tail_gap=1.33s
+FAIL  pushed still at frame 0 (mean 0–1.5 s frame diff 1.14 < 1.50)
+picture QA FAIL: 1 of 6 cuts fail, 5 to look at
+FAIL  0:16 row apple_6: reuse: same stretch as 0:01
+```
+
+Full-bleed check: 0/18 padded frames at one per second, 0/35 at two per second. Loudness and first-cut failures from v01 were repaired. The VO PASS is a word-check receipt, not a claim of hearing it. Inspected the full portrait sheets of both versions and the clean source sheet; v02 removes the clipped long labels. The one low-detail frame is a deliberately soft room background around Newton. Actual moving-video perception and audio perception are unavailable in this session: watched=false, heard=false. No media KEEP was issued.
+
+
+Additional Short only: v02 remains failed-gate internal repair work, not a change to the approved long or either existing Short. Detail and repair recipe: `10_Shorts/J3816/REPORT.md`.
