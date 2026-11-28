@@ -1,0 +1,73 @@
+{
+  "stem": "hos_136_short_S01_v02_tight",
+  "derived_from": "hos_136_short_S01_v02",
+  "derived_from_sha256_wav": "3f212b2927bb246777f5f2291a49c679d784c69630f26e14689a19c28cf5c9de",
+  "derived_from_sha256_mp3": "9cc0114f1cbeebac886cdb2519fdc15ce4927caea0c12360808bca802992c391",
+  "edit_recipe": {
+    "type": "inter_sentence_silence_trim_only",
+    "atempo": 1.0,
+    "segments_s": [
+      [
+        0.04,
+        3.52
+      ],
+      [
+        4.48,
+        8.88
+      ],
+      [
+        9.78,
+        15.64
+      ],
+      [
+        16.32,
+        18.18
+      ],
+      [
+        18.84,
+        21.22
+      ]
+    ],
+    "inter_sentence_gap_s": 0.18,
+    "edge_fade_s": 0.015,
+    "extra_elevenlabs_credits": 0
+  },
+  "voice": "Ben Orbit Narrator",
+  "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+  "model_id": "eleven_v3",
+  "settings": {
+    "stability": 0.34,
+    "similarity_boost": 0.78,
+    "style": 0.42,
+    "speed": 1.04,
+    "use_speaker_boost": true
+  },
+  "orders": [
+    "J3677",
+    "J3679"
+  ],
+  "spoken_chars": 262,
+  "words": 42,
+  "duration_s": 18.7,
+  "loudness": {
+    "lufs_integrated": -20.1,
+    "mean_volume_db": -22.9,
+    "max_volume_db": -4.0
+  },
+  "sha256_wav": "7a664025231b35f891267b43df32e9f2592041e83b04f2b6e612d983900c4853",
+  "sha256_mp3": "a5c6d380b03412c658f0bba8998d791215db75960d4a47dc4ef8df94432adce4",
+  "text": "The Trinity test could never set Earth's sky on fire. In forty-two, Teller asked if atomic heat could fuse nitrogen. Bethe and Konopinski proved radiation drains heat faster than nitrogen can fuse. No chain reaction could survive, which is why physicists proved…",
+  "word_timing_summary": {
+    "first_word": {
+      "text": "The",
+      "start": 0.04,
+      "end": 0.1
+    },
+    "last_word": {
+      "text": "proved",
+      "start": 18.1,
+      "end": 18.64
+    },
+    "total_words": 42
+  }
+}

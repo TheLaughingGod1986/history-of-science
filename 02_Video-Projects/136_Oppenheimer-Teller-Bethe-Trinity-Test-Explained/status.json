@@ -48,10 +48,20 @@
       "note": "LOCKED by Acting Chief (gemini, J3677 KEEP, 2026-11-25; HOS PR #767 merged ab25f2de): 10_Shorts/SHORTS_SCRIPTS_v02.md (sha256 e1df5d81..., S01 42w / 44c & S02 42w / 58c = 16.4-16.8s speech inside Ben 19 Nov 16-19s house rule; 0 collisions; S02 overlay '2.5m SHIFT ≈ 10KT' <=4 tokens + §2.6 edit ink)"
     },
     "shorts_vo": {
-      "state": "todo",
+      "state": "doing",
       "due": "2026-12-05",
-      "owner": "Codex",
-      "waiting": "J3679 queued — runs after J3678 post-30-Nov reset"
+      "owner": "Chief",
+      "since": "2026-11-26",
+      "underway": false,
+      "waiting": "Non-producer Chief review & merge of vo_check Bethe alias PR + Chief VO PASS on hos_136_short_S01_v02_tight (18.70 s) and hos_136_short_S02_v02_tight (18.74 s)",
+      "steps": [
+        2,
+        2
+      ],
+      "steps_unit": "Shorts recorded (S02 vo_check PASS; S01 awaits vo_check Bethe alias PR + Chief VO PASS)",
+      "left": "about 15 minutes (Chief VO review)",
+      "eta": "2026-11-27",
+      "note": "J3679 (26 Nov): recorded S01 (v02 raw 21.28 s -> pause-tightened 18.70 s, atempo 1.00, accurate /beɪtə/ Bethe, vo_check flags only bethe/beta ASR homophone — separate alias PR opened; bounded retake v02b kept on NAS) & S02 (v02 raw 21.92 s -> pause-tightened 18.74 s, atempo 1.00, vo_check PASS 0 word diffs); 10/10 NAS files SHA-256 verified; 355 ElevenLabs credits settled (7,630 -> 7,275 left); parked for non-producer Chief VO PASS."
     },
     "picture": {
       "state": "todo",

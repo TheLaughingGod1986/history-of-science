@@ -1,0 +1,20 @@
+{
+  "file": "02_Video-Projects/136_Oppenheimer-Teller-Bethe-Trinity-Test-Explained/10_Shorts/vo_v02/hos_136_short_S02_v02_tight.wav",
+  "part": null,
+  "fails": [],
+  "warns": [
+    "pace 134 wpm (< 145); expect a long film — see STUDIO_PLAYBOOK.md §4 speed"
+  ],
+  "duration_s": 18.74,
+  "duration": "0:18.74",
+  "mean_db": -24.6,
+  "peak_db": -4.1,
+  "pauses_over_1s": [],
+  "asr": "faster-whisper small.en",
+  "script_words": 37,
+  "heard_words": 37,
+  "wpm": 134,
+  "word_diffs": [],
+  "first_minute": {},
+  "verdict": "PASS"
+}

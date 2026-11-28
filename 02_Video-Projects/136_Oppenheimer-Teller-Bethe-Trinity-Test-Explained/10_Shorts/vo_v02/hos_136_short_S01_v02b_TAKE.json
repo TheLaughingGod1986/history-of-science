@@ -1,0 +1,70 @@
+{
+  "stem": "hos_136_short_S01_v02b",
+  "voice": "Ben Orbit Narrator",
+  "voice_id": "kDch6ACCIpqgQ0NsU9kk",
+  "model_id": "eleven_v3",
+  "settings": {
+    "stability": 0.34,
+    "similarity_boost": 0.78,
+    "style": 0.42,
+    "speed": 1.04,
+    "use_speaker_boost": true
+  },
+  "orders": [
+    "J3677",
+    "J3679"
+  ],
+  "retake_of": "J3679",
+  "chapters": [
+    {
+      "title": "take",
+      "chars": 262,
+      "duration_s": 21.2
+    }
+  ],
+  "gap_s": 0.7,
+  "spoken_chars": 262,
+  "words": 42,
+  "duration_s": 21.2,
+  "loudness": {
+    "lufs_integrated": -21.2,
+    "mean_volume_db": -24.5,
+    "max_volume_db": -3.8
+  },
+  "sha256_mp3": "237e60a4e332f7411a152b66eefa2746c3820de6e9e039bbc53bb3b813443362",
+  "scribe": {
+    "transcript": "The Trinity test could never set Earth's sky on fire. In '42, Teller asked if atomic heat could fuse nitrogen. Bethe and Konopinski proved radiation drains heat faster than nitrogen can fuse. No chain reaction could survive, which is why physicists proved",
+    "script_words": 43,
+    "scribe_words": 42,
+    "match_rate_pct": 95.35,
+    "exact_match": false,
+    "mismatches": [
+      {
+        "op": "replace",
+        "script": [
+          "forty",
+          "two"
+        ],
+        "scribe": [
+          "'42"
+        ]
+      }
+    ]
+  },
+  "vo_check": "PASS",
+  "credits": {
+    "before": {
+      "used": 113718,
+      "limit": 121114,
+      "remaining": 7396
+    },
+    "after": {
+      "used": 113718,
+      "limit": 121114,
+      "remaining": 7396
+    },
+    "counter_delta": 0
+  },
+  "text": "The Trinity test could never set Earth's sky on fire. In forty-two, Teller asked if atomic heat could fuse nitrogen. Bethe and Konopinski proved radiation drains heat faster than nitrogen can fuse. No chain reaction could survive, which is why physicists proved…",
+  "made_at": "2026-11-26T07:26:43+0000"
+}
