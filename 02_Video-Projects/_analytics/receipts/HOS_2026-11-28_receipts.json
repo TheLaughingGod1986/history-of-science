@@ -1,0 +1,817 @@
+{
+  "job": "J4023",
+  "rulingRef": "J4020 / HOS desk #694#7242321171 (Acting Chief Codex, 28 Nov 2026)",
+  "dateReadJobId": "J4029",
+  "dateReadCheckAt": "2026-12-12T18:00:00Z",
+  "generatedAt": "2026-11-28T16:45:10Z",
+  "sources": {
+    "trackerSnapshot": "orbit-with-ben/05_Analytics/hos/snapshots/2026-11-28.json (takenAt 2026-11-28T06:40:36Z; live totals 5,183 views, 7 subs, 45 public videos)",
+    "channelDaily": "orbit-with-ben/05_Analytics/hos/channel_daily.json & live YTA channel==MINE daily query (latest settled day: 2026-11-25)",
+    "studioRead": "orbit-with-ben/05_Analytics/hos/studio_ctr.json (readAt 2026-11-28T07:13:08.331Z, period lifetime; does NOT capture Test & Compare state)",
+    "launchReport": "python3 scripts/launch_check.py report (28 Nov 2026; 10 HOS videos checked, 3 weak starts)",
+    "competitorMetadata": "YouTube Data API v3 read-only metadata (channels.list, playlistItems.list, videos.list); \u00a30, zero playback"
+  },
+  "queryWindowsAndDenominators": {
+    "ytaLatestSettledDay": "2026-11-25",
+    "noteOnSnapshotVsSevenDay": "YTA per-video queries through 2026-11-26 return identical totals to 2026-11-25 because 26 Nov is not yet settled. Therefore YTA totals cover 4 settled days for el30-mHiH-0 (22-25 Nov), 5 settled days for Bks_JLId1ew (21-25 Nov), and 6 settled days for l8bxm9L3zl8 (20-25 Nov) \u2014 NOT full 7-day totals. Studio lifetime at 2026-11-28T07:13:08Z covers ~5.82d, ~6.82d, and ~7.82d respectively.",
+    "franklinLongAgeAtStudioRead": {
+      "videoId": "YqCWYlv_LCY",
+      "publishedAt": "2026-11-26T18:00:35Z",
+      "studioReadAt": "2026-11-28T07:13:08.331Z",
+      "elapsedHours": 37.21,
+      "full48hComplete": false,
+      "studioMetrics": {
+        "views": 2,
+        "impressions": 16,
+        "impressionsCtr": 0.0,
+        "avgViewSeconds": 205,
+        "avgViewPct": 38
+      }
+    },
+    "testAndCompareEvidence": {
+      "dated28NovStudioReadAvailable": false,
+      "ledgerRows": [
+        {
+          "id": "T001",
+          "video": "frP_YrNShsU",
+          "status": "done",
+          "ended": "2026-10-28",
+          "readBack": "2026-10-29"
+        },
+        {
+          "id": "T009",
+          "video": "_C92tIJCk8A",
+          "status": "done",
+          "ended": "2026-11-05",
+          "readBack": "2026-11-15"
+        },
+        {
+          "id": "T023",
+          "video": "AL_-qlWko_g",
+          "status": "done",
+          "ended": "2026-11-12",
+          "readBack": "2026-11-14"
+        },
+        {
+          "id": "T046",
+          "video": "VbPubYd6Fbs",
+          "status": "done",
+          "ended": "2026-11-19",
+          "readBack": "2026-11-22"
+        },
+        {
+          "id": "T029",
+          "video": "ETynHpIYLeY",
+          "status": "done",
+          "ended": "2026-11-26",
+          "readBack": "2026-11-27"
+        }
+      ],
+      "note": "All 5 logged HOS tests in THUMB_LEDGER.json are done; DELIVERY_J3501.md (24 Nov) notes no test armed yet on scheduled 009 wiyfRnsTfTY; no 28 Nov Studio Test & Compare check was run on YqCWYlv_LCY, so active test absence is not declared."
+    },
+    "channelWindows": {
+      "7d_2026-11-19_to_2026-11-25": {
+        "views": 802,
+        "minutes": 90,
+        "netSubs": 0
+      },
+      "prior_7d_2026-11-12_to_2026-11-18": {
+        "views": 507,
+        "minutes": 80,
+        "netSubs": 0
+      },
+      "28d_2026-10-29_to_2026-11-25": {
+        "views": 2148,
+        "minutes": 327,
+        "netSubs": 3
+      },
+      "prior_28d_2026-10-01_to_2026-10-28": {
+        "views": 2476,
+        "minutes": 293,
+        "netSubs": 2
+      },
+      "mtd_2026-11-01_to_2026-11-25": {
+        "views": 1866,
+        "minutes": 282,
+        "netSubs": 2
+      },
+      "mtd_2026-10-01_to_2026-10-25": {
+        "views": 2011,
+        "minutes": 254,
+        "netSubs": 2
+      }
+    },
+    "searchTerms_28d_2026-10-29_to_2026-11-25": [
+      [
+        "dalton atomic theory",
+        16
+      ],
+      [
+        "swan neck flask experiment",
+        12
+      ],
+      [
+        "dalton's atomic theory",
+        11
+      ],
+      [
+        "edward jenner",
+        10
+      ],
+      [
+        "john dalton atomic theory",
+        7
+      ],
+      [
+        "gold foil experiment",
+        5
+      ],
+      [
+        "atomic theory",
+        4
+      ],
+      [
+        "history of atom",
+        4
+      ],
+      [
+        "life processes in plants class 7",
+        4
+      ],
+      [
+        "marie curie and pierre curie",
+        4
+      ],
+      [
+        "origin of phosphorus",
+        4
+      ],
+      [
+        "john dalton",
+        3
+      ],
+      [
+        "postulates of dalton's atomic theory",
+        3
+      ]
+    ],
+    "publicLongs28dTraffic_2026-10-29_to_2026-11-25": {
+      "publicLongCount": 8,
+      "ids": [
+        "_C92tIJCk8A",
+        "AL_-qlWko_g",
+        "frP_YrNShsU",
+        "GHZDsiH7L7A",
+        "wwcjcFfC-5M",
+        "VbPubYd6Fbs",
+        "ETynHpIYLeY",
+        "YqCWYlv_LCY"
+      ],
+      "totals": {
+        "YT_SEARCH": 22,
+        "NO_LINK_OTHER": 13,
+        "RELATED_VIDEO": 12,
+        "EXT_URL": 3,
+        "SUBSCRIBER": 3,
+        "YT_OTHER_PAGE": 2,
+        "YT_CHANNEL": 1,
+        "END_SCREEN": 1,
+        "SHORTS_CONTENT_LINKS": 0,
+        "SHORTS": 0
+      }
+    }
+  },
+  "verifiedCutChainAndCurves": {
+    "el30-mHiH-0": {
+      "title": "How Does the Heart Pump Blood?",
+      "publishedAt": "2026-11-22T11:30:33Z",
+      "uploadedFile": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/J3137/hos_005_s07_heart_pulse_v05.mp4",
+      "sha256Verified": "9efcf7b1d91ede4ef9f8d25783e358c92debde3c453f3d30211b9b09936c8fc1",
+      "sourceV04Sha256Verified": "e94cbf4c5a548da3332aa7a29c439854e4d889eb346fe697b5c65079511c29df",
+      "videoPacketMd5Match": true,
+      "videoPacketMd5": "bbe910890bfa769283afe656c0e3227b",
+      "voTrimmedSha256": "58367a3ba792ed20c914e709030ed0a082601c671254d3075e820418e7ab563f",
+      "durationSeconds": 25.1,
+      "cutListPath": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/J3137/qa/s07/cuts.json",
+      "openGatePath": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/J3137/qa/s07/gate_shorts_open.txt",
+      "captionsSrtPath": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/11_Upload-Package/s07_heart_pulse_v04/Captions/hos_005_s07_heart_pulse_v04.en-GB.srt",
+      "perWordJsonPresent": false,
+      "studioRead28Nov": {
+        "views": 551,
+        "stayedToWatch": 27.0,
+        "avgViewSeconds": 16,
+        "avgViewPct": 64
+      },
+      "ytaSettled_2026-11-22_to_2026-11-25": {
+        "days": 4,
+        "views": 550,
+        "avgViewPct": 64.85,
+        "SHORTS": 479,
+        "YT_SEARCH": 66,
+        "YT_OTHER_PAGE": 2,
+        "NO_LINK_OTHER": 1,
+        "SUBSCRIBER": 1,
+        "day1_SHORTS": 476,
+        "day1_YT_SEARCH": 50
+      },
+      "retentionCurve": {
+        "points": 100,
+        "startPct": 132.64,
+        "endPct": 30.56,
+        "endRelativePct": 79.51,
+        "largestSingleBucketDrop": {
+          "buckets": "0.17->0.18",
+          "seconds": "4.27-4.52",
+          "fromPct": 111.81,
+          "toPct": 106.94,
+          "deltaPp": -4.87,
+          "nearTie": {
+            "buckets": "0.16->0.17",
+            "seconds": "4.02-4.27",
+            "fromPct": 116.67,
+            "toPct": 111.81,
+            "deltaPp": -4.86
+          }
+        },
+        "steepestFiveBucketDrop": {
+          "buckets": "0.16->0.21",
+          "seconds": "4.02-5.27",
+          "fromPct": 116.67,
+          "toPct": 101.39,
+          "deltaPp": -15.28
+        }
+      }
+    },
+    "l8bxm9L3zl8": {
+      "title": "How Does a Blood Pressure Cuff Work?",
+      "publishedAt": "2026-11-20T11:30:00Z",
+      "uploadedFile": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/J3137/hos_005_s06_blood_pressure_cuff_v05.mp4",
+      "sha256Verified": "13da54281f378d54f221135a67208b38a91673e9f655a2175403535b150b9733",
+      "sourceV04Sha256Verified": "7fe460307b4723e6801a6274e3390ab41e20a324052f4f6880bd2ef6a13aef35",
+      "videoPacketMd5Match": true,
+      "videoPacketMd5": "ba33ba791df2cad17349ad3fde669fa9",
+      "voTrimmedSha256": "d1ddc07cc671fb849006da8f406898fe319f0176b0fe2e38ff67d7853ccaa15b",
+      "durationSeconds": 23.1,
+      "cutListPath": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/J3137/qa/s06/cuts.json",
+      "openGatePath": "/Volumes/data/studio-live/History Of Science/02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/J3137/qa/s06/gate_shorts_open.txt",
+      "captionsSrtPath": "02_Video-Projects/005_How-Harvey-Proved-Blood-Circulates/10_Shorts/11_Upload-Package/s06_blood_pressure_cuff_v04/Captions/hos_005_s06_blood_pressure_cuff_v04.en-GB.srt",
+      "perWordJsonPresent": false,
+      "studioRead28Nov": {
+        "views": 33,
+        "stayedToWatch": 38.5,
+        "avgViewSeconds": 14,
+        "avgViewPct": null
+      },
+      "ytaSettled_2026-11-20_to_2026-11-25": {
+        "days": 6,
+        "views": 32,
+        "avgViewPct": 60.99,
+        "YT_SEARCH": 15,
+        "SHORTS": 15,
+        "SUBSCRIBER": 1,
+        "YT_OTHER_PAGE": 1,
+        "day1_SHORTS": 15,
+        "day1_YT_SEARCH": 9
+      },
+      "retentionCurve": {
+        "points": 0,
+        "note": "Unavailable from YTA API (<100 views / below curve threshold)"
+      }
+    },
+    "Bks_JLId1ew": {
+      "title": "How Do Plants Make Oxygen?",
+      "publishedAt": "2026-11-21T11:30:11Z",
+      "uploadedFile": "/Volumes/data/mac-mini-archive/hos-worktrees/2026-10-22/hos-006-trees/02_Video-Projects/006_Trees-Are-Made-Of-Air/10_Shorts/J2169/Short_C_v03/hos006_short_c_v03.mp4",
+      "sha256Verified": "e1e3ff0ce3b5622b4a43d010a0df827bcd34e25ccd76a87338b286b0632c40c5",
+      "voSha256": "5b5d84e560d51ed9ad6f9bf5588f458802620f48f008b9409c532f8a1ea4e269",
+      "durationSeconds": 25.167,
+      "gitEvidenceCommit": "b8230f85b76075489bf47f64cb9db17bea032cf9 (origin/cursor/J2169-bc-v02)",
+      "studioRead28Nov": {
+        "views": 96,
+        "stayedToWatch": 56.9,
+        "avgViewSeconds": 22,
+        "avgViewPct": 85
+      },
+      "ytaSettled_2026-11-21_to_2026-11-25": {
+        "days": 5,
+        "views": 90,
+        "avgViewPct": 88.2,
+        "YT_SEARCH": 76,
+        "SHORTS": 14,
+        "day1_YT_SEARCH": 15,
+        "day1_SHORTS": 8
+      },
+      "retentionCurve": {
+        "points": 100,
+        "inconclusiveUnder100StudioViews": true,
+        "startPct": 173.33,
+        "endPct": 56.67,
+        "endRelativePct": 87.89,
+        "largestSingleBucketDropTies": [
+          {
+            "buckets": "0.02->0.03",
+            "seconds": "0.50-0.76",
+            "fromPct": 173.33,
+            "toPct": 163.33,
+            "deltaPp": -10.0
+          },
+          {
+            "buckets": "0.14->0.15",
+            "seconds": "3.52-3.78",
+            "fromPct": 140.0,
+            "toPct": 130.0,
+            "deltaPp": -10.0
+          },
+          {
+            "buckets": "0.21->0.22",
+            "seconds": "5.29-5.54",
+            "fromPct": 120.0,
+            "toPct": 110.0,
+            "deltaPp": -10.0
+          }
+        ],
+        "steepestFiveBucketDropTies": [
+          {
+            "buckets": "0.02->0.07",
+            "seconds": "0.50-1.76",
+            "fromPct": 173.33,
+            "toPct": 150.0,
+            "deltaPp": -23.33
+          },
+          {
+            "buckets": "0.12->0.17",
+            "seconds": "3.02-4.28",
+            "fromPct": 143.33,
+            "toPct": 120.0,
+            "deltaPp": -23.33
+          },
+          {
+            "buckets": "0.13->0.18",
+            "seconds": "3.27-4.53",
+            "fromPct": 140.0,
+            "toPct": 116.67,
+            "deltaPp": -23.33
+          },
+          {
+            "buckets": "0.14->0.19",
+            "seconds": "3.52-4.78",
+            "fromPct": 140.0,
+            "toPct": 116.67,
+            "deltaPp": -23.33
+          }
+        ]
+      }
+    }
+  },
+  "learning43ObservationalCohortPreClassification": [
+    {
+      "id": "4sYTV_rQcqs",
+      "film": "HOS:008",
+      "title": "How Does a Lightning Rod Work?",
+      "publishAt": "2026-11-29T11:30:00Z",
+      "preClassification": "process",
+      "rationale": "Textbook device-mechanism 'how does X work' process question (also names device lightning rod)",
+      "expectedAt12Dec1800Z": "mature (7d window 29 Nov-5 Dec, settled ~7 Dec)"
+    },
+    {
+      "id": "9ETHUOUH5-A",
+      "film": "HOS:009",
+      "title": "How Did Newton Discover Gravity?",
+      "publishAt": "2026-12-05T11:30:00Z",
+      "preClassification": "named-entity",
+      "rationale": "Names scientist Newton and concept Gravity",
+      "expectedAt12Dec1800Z": "boundary (7d ends 12 Dec 11:30Z; YTA 48h lag likely still settling)"
+    },
+    {
+      "id": "mpK3D6S7WLk",
+      "film": "HOS:010",
+      "title": "What Killed the Dinosaurs?",
+      "publishAt": null,
+      "preClassification": "named-entity",
+      "rationale": "Names historical mass-extinction event/topic; Private unscheduled (010 long not uploaded)",
+      "expectedAt12Dec1800Z": "immature / unscheduled"
+    },
+    {
+      "id": "sMPlMuxK3YU",
+      "film": "HOS:010",
+      "title": "Are Birds Really Dinosaurs?",
+      "publishAt": null,
+      "preClassification": "named-entity",
+      "rationale": "Named taxonomic classification question; Private unscheduled (010 long not uploaded)",
+      "expectedAt12Dec1800Z": "immature / unscheduled"
+    }
+  ],
+  "linkingReadOnlyCheck_2026-11-28T1641Z": {
+    "008": {
+      "long": "YqCWYlv_LCY",
+      "shortsWithLongUrlInLiveDesc": [
+        "__UtUYdEUwg",
+        "4sYTV_rQcqs",
+        "f_-BsKZf8X0"
+      ],
+      "relatedStatus": "Verified -> YqCWYlv_LCY in J3975/J3811"
+    },
+    "009": {
+      "long": "wiyfRnsTfTY",
+      "shortsWithLongUrlInLiveDesc": [
+        "OhdDVA9kWBk",
+        "9ETHUOUH5-A"
+      ],
+      "relatedStatus": "Pending J3501 Studio finish (3 Dec 18:05Z); not a new fault"
+    },
+    "010": {
+      "long": null,
+      "shorts": [
+        "mpK3D6S7WLk",
+        "sMPlMuxK3YU"
+      ],
+      "relatedStatus": "Pending 010 long upload (Private, unscheduled)"
+    }
+  },
+  "competitors30d": {
+    "retrievedAt": "2026-11-28T16:41:31Z",
+    "windowStart": "2026-10-29T16:41:31Z",
+    "windowEnd": "2026-11-28T16:41:31Z",
+    "method": "YouTube Data API v3 read-only metadata (channels.list, playlistItems.list, videos.list); \u00a30, zero playback",
+    "channels": [
+      {
+        "name": "Veritasium",
+        "handle": "@veritasium",
+        "channelId": "UCHnyfMqiRRG1u-2MsSQLbXA",
+        "url": "https://www.youtube.com/@veritasium",
+        "subscribers": 21500000,
+        "last30dTotal": 11,
+        "longsOver180sCount": 3,
+        "shortsUpTo180sCount": 8,
+        "topLongsOver180s": [
+          {
+            "id": "KfODG5REyss",
+            "url": "https://www.youtube.com/watch?v=KfODG5REyss",
+            "title": "I finally saw quantum physics with my own eyes... (It's spookier than I expected)",
+            "publishedAt": "2026-11-04T15:52:59Z",
+            "ageDays": 24.03,
+            "durationSeconds": 3956,
+            "views": 22580137,
+            "viewsPerDay": 939664.5
+          },
+          {
+            "id": "WbM7GP7QoEM",
+            "url": "https://www.youtube.com/watch?v=WbM7GP7QoEM",
+            "title": "Scientists Said This Wave Was Impossible",
+            "publishedAt": "2026-11-25T14:00:52Z",
+            "ageDays": 3.11,
+            "durationSeconds": 1684,
+            "views": 9038383,
+            "viewsPerDay": 2906232.5
+          },
+          {
+            "id": "uXuQF_PPg5U",
+            "url": "https://www.youtube.com/watch?v=uXuQF_PPg5U",
+            "title": "Randomness is a lie. Let me explain",
+            "publishedAt": "2026-11-18T20:29:44Z",
+            "ageDays": 9.84,
+            "durationSeconds": 2328,
+            "views": 4937570,
+            "viewsPerDay": 501785.6
+          }
+        ],
+        "topShortsUpTo180s": [
+          {
+            "id": "zEmabFZvdqA",
+            "url": "https://www.youtube.com/watch?v=zEmabFZvdqA",
+            "title": "What happens if I lower this weight into the water?",
+            "publishedAt": "2026-10-30T14:00:38Z",
+            "ageDays": 29.11,
+            "durationSeconds": 74,
+            "views": 3525144,
+            "viewsPerDay": 121097.4
+          },
+          {
+            "id": "rL0qEmTRI-I",
+            "url": "https://www.youtube.com/watch?v=rL0qEmTRI-I",
+            "title": "Why do deserts get cold at night?",
+            "publishedAt": "2026-11-06T14:00:17Z",
+            "ageDays": 22.11,
+            "durationSeconds": 86,
+            "views": 2053116,
+            "viewsPerDay": 92859.2
+          },
+          {
+            "id": "2QSkkhbl3v4",
+            "url": "https://www.youtube.com/watch?v=2QSkkhbl3v4",
+            "title": "Why you can't trust a test that's 99% accurate",
+            "publishedAt": "2026-11-11T14:00:12Z",
+            "ageDays": 17.11,
+            "durationSeconds": 90,
+            "views": 1748710,
+            "viewsPerDay": 102204.0
+          },
+          {
+            "id": "LDloLvb3yno",
+            "url": "https://www.youtube.com/watch?v=LDloLvb3yno",
+            "title": "This is not a thread...",
+            "publishedAt": "2026-11-17T14:14:54Z",
+            "ageDays": 11.1,
+            "durationSeconds": 100,
+            "views": 1298119,
+            "viewsPerDay": 116947.7
+          },
+          {
+            "id": "V8rT6UI3Crg",
+            "url": "https://www.youtube.com/watch?v=V8rT6UI3Crg",
+            "title": "Making Gunpowder From Scratch",
+            "publishedAt": "2026-11-13T14:00:08Z",
+            "ageDays": 15.11,
+            "durationSeconds": 64,
+            "views": 1024662,
+            "viewsPerDay": 67813.5
+          }
+        ]
+      },
+      {
+        "name": "SciShow",
+        "handle": "@SciShow",
+        "channelId": "UCZYTClx2T1of7BRZ86-8fow",
+        "url": "https://www.youtube.com/@SciShow",
+        "subscribers": 8420000,
+        "last30dTotal": 23,
+        "longsOver180sCount": 22,
+        "shortsUpTo180sCount": 1,
+        "topLongsOver180s": [
+          {
+            "id": "uALjsKI-ceE",
+            "url": "https://www.youtube.com/watch?v=uALjsKI-ceE",
+            "title": "Why Isn\u2019t Heart Cancer a Thing?",
+            "publishedAt": "2026-11-10T18:00:12Z",
+            "ageDays": 17.95,
+            "durationSeconds": 463,
+            "views": 2972267,
+            "viewsPerDay": 165585.9
+          },
+          {
+            "id": "i7esSCr2UJk",
+            "url": "https://www.youtube.com/watch?v=i7esSCr2UJk",
+            "title": "Why Is There No Vitamin F?",
+            "publishedAt": "2026-11-04T18:00:29Z",
+            "ageDays": 23.95,
+            "durationSeconds": 911,
+            "views": 1163677,
+            "viewsPerDay": 48587.8
+          },
+          {
+            "id": "1EX702Au9oQ",
+            "url": "https://www.youtube.com/watch?v=1EX702Au9oQ",
+            "title": "The Man O' War Is Scarier Than You Think",
+            "publishedAt": "2026-11-05T18:00:36Z",
+            "ageDays": 22.95,
+            "durationSeconds": 351,
+            "views": 424343,
+            "viewsPerDay": 18489.9
+          },
+          {
+            "id": "VGU3rbyWFTQ",
+            "url": "https://www.youtube.com/watch?v=VGU3rbyWFTQ",
+            "title": "Scientists Found Something Impossible at the Trinity Test Site.",
+            "publishedAt": "2026-11-26T18:00:20Z",
+            "ageDays": 1.95,
+            "durationSeconds": 679,
+            "views": 378694,
+            "viewsPerDay": 194202.1
+          },
+          {
+            "id": "ZDlcqG7Kuho",
+            "url": "https://www.youtube.com/watch?v=ZDlcqG7Kuho",
+            "title": "Those Ape Sign Language Studies May Have Been Bogus",
+            "publishedAt": "2026-11-19T18:00:23Z",
+            "ageDays": 8.95,
+            "durationSeconds": 901,
+            "views": 350212,
+            "viewsPerDay": 39129.8
+          }
+        ],
+        "topShortsUpTo180s": [
+          {
+            "id": "9WCbrriN8sU",
+            "url": "https://www.youtube.com/shorts/9WCbrriN8sU",
+            "title": "Airplanes That Run on... Algae? #science",
+            "publishedAt": "2026-11-23T00:00:16Z",
+            "ageDays": 5.7,
+            "durationSeconds": 32,
+            "views": 41538,
+            "viewsPerDay": 7287.4
+          }
+        ]
+      },
+      {
+        "name": "TED-Ed",
+        "handle": "@TEDEd",
+        "channelId": "UCsooa4yRKGN_zEE8iknghZA",
+        "url": "https://www.youtube.com/@TEDEd",
+        "subscribers": 23000000,
+        "last30dTotal": 7,
+        "longsOver180sCount": 7,
+        "shortsUpTo180sCount": 0,
+        "topLongsOver180s": [
+          {
+            "id": "1IVlILdETAw",
+            "url": "https://www.youtube.com/watch?v=1IVlILdETAw",
+            "title": "What happens if you accidentally eat moldy food? - Josephine Wee",
+            "publishedAt": "2026-11-24T16:01:11Z",
+            "ageDays": 4.03,
+            "durationSeconds": 337,
+            "views": 2549190,
+            "viewsPerDay": 632553.3
+          },
+          {
+            "id": "8EtdC9Bjubk",
+            "url": "https://www.youtube.com/watch?v=8EtdC9Bjubk",
+            "title": "Can you solve the Billy Bonka riddle? - Edwin F. Meyer",
+            "publishedAt": "2026-11-03T16:00:34Z",
+            "ageDays": 25.03,
+            "durationSeconds": 373,
+            "views": 1062133,
+            "viewsPerDay": 42434.4
+          },
+          {
+            "id": "nBVuemyrMgE",
+            "url": "https://www.youtube.com/watch?v=nBVuemyrMgE",
+            "title": "Is salt the most important ingredient in history? - Carolyn Beans",
+            "publishedAt": "2026-11-10T16:01:00Z",
+            "ageDays": 18.03,
+            "durationSeconds": 309,
+            "views": 595599,
+            "viewsPerDay": 33033.8
+          },
+          {
+            "id": "aDblEBU41nA",
+            "url": "https://www.youtube.com/watch?v=aDblEBU41nA",
+            "title": "Why is pepper such a popular spice? - Carolyn Beans",
+            "publishedAt": "2026-11-12T16:01:11Z",
+            "ageDays": 16.03,
+            "durationSeconds": 296,
+            "views": 533530,
+            "viewsPerDay": 33283.2
+          },
+          {
+            "id": "fqL9dt6QHWg",
+            "url": "https://www.youtube.com/watch?v=fqL9dt6QHWg",
+            "title": "5 of the most dangerous scientific discoveries - Shannon Odell",
+            "publishedAt": "2026-11-19T15:59:54Z",
+            "ageDays": 9.03,
+            "durationSeconds": 376,
+            "views": 492977,
+            "viewsPerDay": 54593.2
+          }
+        ],
+        "topShortsUpTo180s": []
+      },
+      {
+        "name": "Real Engineering",
+        "handle": "@RealEngineering",
+        "channelId": "UCR1IuLEqb6UEA_zQ81kwXfg",
+        "url": "https://www.youtube.com/@RealEngineering",
+        "subscribers": 5120000,
+        "last30dTotal": 2,
+        "longsOver180sCount": 2,
+        "shortsUpTo180sCount": 0,
+        "topLongsOver180s": [
+          {
+            "id": "xod_mCN-K38",
+            "url": "https://www.youtube.com/watch?v=xod_mCN-K38",
+            "title": "What Is Worth Saving Before the ISS Deorbits?",
+            "publishedAt": "2026-11-07T16:32:11Z",
+            "ageDays": 21.01,
+            "durationSeconds": 1259,
+            "views": 808186,
+            "viewsPerDay": 38466.7
+          },
+          {
+            "id": "y1KipwEoRBA",
+            "url": "https://www.youtube.com/watch?v=y1KipwEoRBA",
+            "title": "The Rise and Fall of the Concorde",
+            "publishedAt": "2026-10-30T15:38:00Z",
+            "ageDays": 29.04,
+            "durationSeconds": 2409,
+            "views": 706203,
+            "viewsPerDay": 24318.3
+          }
+        ],
+        "topShortsUpTo180s": []
+      },
+      {
+        "name": "Kings and Generals",
+        "handle": "@KingsandGenerals",
+        "channelId": "UCMmaBzfCCwZ2KqaBJjkj0fw",
+        "url": "https://www.youtube.com/@KingsandGenerals",
+        "subscribers": 4230000,
+        "last30dTotal": 25,
+        "longsOver180sCount": 12,
+        "shortsUpTo180sCount": 13,
+        "topLongsOver180s": [
+          {
+            "id": "ytmwsMU1DMA",
+            "url": "https://www.youtube.com/watch?v=ytmwsMU1DMA",
+            "title": "Yugoslavia 1991: How the Wars Began",
+            "publishedAt": "2026-11-01T14:07:28Z",
+            "ageDays": 27.11,
+            "durationSeconds": 1459,
+            "views": 362229,
+            "viewsPerDay": 13361.5
+          },
+          {
+            "id": "U8qHNk0xPss",
+            "url": "https://www.youtube.com/watch?v=U8qHNk0xPss",
+            "title": "Not only Janissaries - The Ottoman Empire\u2019s Elite Army",
+            "publishedAt": "2026-11-05T13:59:59Z",
+            "ageDays": 23.11,
+            "durationSeconds": 1141,
+            "views": 342301,
+            "viewsPerDay": 14811.8
+          },
+          {
+            "id": "vhmHhCEwoSk",
+            "url": "https://www.youtube.com/watch?v=vhmHhCEwoSk",
+            "title": "Why Iran Couldn't Defeat Saddam Hussein - Iran-Iraq War DOCUMENTARY",
+            "publishedAt": "2026-11-12T13:59:54Z",
+            "ageDays": 16.11,
+            "durationSeconds": 979,
+            "views": 297782,
+            "viewsPerDay": 18484.3
+          },
+          {
+            "id": "BK42hlcV-Gs",
+            "url": "https://www.youtube.com/watch?v=BK42hlcV-Gs",
+            "title": "Russian Invasion of Ukraine Before the Midterm Blue Tsunami",
+            "publishedAt": "2026-11-10T13:59:59Z",
+            "ageDays": 18.11,
+            "durationSeconds": 1192,
+            "views": 276468,
+            "viewsPerDay": 15266.0
+          },
+          {
+            "id": "scZAjqFA7kk",
+            "url": "https://www.youtube.com/watch?v=scZAjqFA7kk",
+            "title": "Hunyadi vs the Ottomans: The Full Story Behind the Legend",
+            "publishedAt": "2026-11-15T13:59:52Z",
+            "ageDays": 13.11,
+            "durationSeconds": 4816,
+            "views": 273932,
+            "viewsPerDay": 20894.9
+          }
+        ],
+        "topShortsUpTo180s": [
+          {
+            "id": "gGZQxHO0y8U",
+            "url": "https://www.youtube.com/watch?v=gGZQxHO0y8U",
+            "title": "10,000 Nubian Archers Destroyed an Entire Arab Army #history #africanhistory #shorts",
+            "publishedAt": "2026-11-13T14:00:23Z",
+            "ageDays": 15.11,
+            "durationSeconds": 170,
+            "views": 558682,
+            "viewsPerDay": 36974.3
+          },
+          {
+            "id": "gKzDXCmHlTY",
+            "url": "https://www.youtube.com/watch?v=gKzDXCmHlTY",
+            "title": "the plan to take Detroit was perfect until she told them #history #shorts",
+            "publishedAt": "2026-11-25T14:00:02Z",
+            "ageDays": 3.11,
+            "durationSeconds": 179,
+            "views": 129107,
+            "viewsPerDay": 41513.5
+          },
+          {
+            "id": "Q3Snj-q_3no",
+            "url": "https://www.youtube.com/watch?v=Q3Snj-q_3no",
+            "title": "How a Simple Stirrup Made Riders Unstoppable #history #shorts",
+            "publishedAt": "2026-11-20T14:00:23Z",
+            "ageDays": 8.11,
+            "durationSeconds": 81,
+            "views": 53409,
+            "viewsPerDay": 6585.6
+          },
+          {
+            "id": "zjnHzjb7yu4",
+            "url": "https://www.youtube.com/watch?v=zjnHzjb7yu4",
+            "title": "the invaders who became more english than the english #history #shorts #medieval",
+            "publishedAt": "2026-11-09T14:00:26Z",
+            "ageDays": 19.11,
+            "durationSeconds": 114,
+            "views": 52629,
+            "viewsPerDay": 2754.0
+          },
+          {
+            "id": "ukhHEgqZV3U",
+            "url": "https://www.youtube.com/watch?v=ukhHEgqZV3U",
+            "title": "Why Vikings Built Their Ships Like This #history #vikings #shorts",
+            "publishedAt": "2026-11-02T05:00:02Z",
+            "ageDays": 26.49,
+            "durationSeconds": 133,
+            "views": 48502,
+            "viewsPerDay": 1831.0
+          }
+        ]
+      }
+    ]
+  }
+}
