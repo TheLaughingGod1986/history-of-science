@@ -496,3 +496,24 @@ ALL CHECKS PASS
   - `gate_shorts_open.py`: `PASS  hos_008_s04_no_patent_v01.mp4  dur=16.1s  audio=-16.7dB  motion=34.94  f0diff=4.75  cut1=2.37s  vo_onset=0.06s  tail_gap=1.44s  vo_src=mix  dhash=0f07660287870343` (full-bleed 0/17, 0/33)
   - `npm run lint:package -- --film 008`: `PASS  02_Video-Projects/008_Lightning-Franklin/10_Shorts/SHORTS_RELEASE.json`
   - `npm run channel:audit -- --write-live`: `PASS  Short f_-BsKZf8X0  private 2026-12-01 11:30 UK  Why Did Franklin Never Patent the Lightning Rod?` · `76 videos, 0 errors.`
+
+---
+
+## J3649 Post-publish Shorts Related video links & Title+Thumb T&C read-back (26 Nov 2026, Gemini worker)
+
+- **Authority & scope:** Queue job `J3649` (`ref: J3500`, `kind: studio`, £0, no spend, no upload/schedule/privacy/retitle changes). Completed at `2026-11-26T18:22Z` (after `YqCWYlv_LCY` went Public at Thu 26 Nov 18:00 UK, before Short A airs Fri 27 Nov 11:30 UK).
+- **Long `YqCWYlv_LCY` (*Benjamin Franklin's Kite Experiment Explained*) Studio read-back (CDP 9460, `@HistoryOfScienceYT`):**
+  - `Visibility: Public`; `No, it's not Made for Kids` (`aria-checked="true"`); `Altered content: Yes` (`aria-checked="true"`).
+  - **2-way Title + Thumbnail Test & Compare (`A/B test report`):** confirmed switched from `Ineligible` to **`Test running…`** (`Estimated time remaining: 13 days 23 hours…`), visually verified with both arms intact:
+    - Arm 1: *Benjamin Franklin's Kite Experiment Explained* + Thumb A (`THE KEY SPARKED`)
+    - Arm 2: *Why Did Franklin Fly a Kite in a Storm?* + Thumb B (`NO BOLT STRUCK`)
+- **Shorts Related video linking & post-save read-back (CDP 9460, reload-verified):**
+  - **Short A v04 `__UtUYdEUwg`** (*Why Was Franklin's Kite Experiment So Dangerous?*, `Scheduled` Fri 27 Nov 11:30 UK): `Related video` changed from `None` → **`Benjamin Franklin's Kite Experiment Explained`** (`YqCWYlv_LCY`), saved (`Save` disabled on reload). Re-verified after save: `No, it's not Made for Kids` (`aria-checked="true"`), `Altered content: Yes` (`aria-checked="true"`), `Visibility: Scheduled`.
+  - **Short C v07 `4sYTV_rQcqs`** (*How Does a Lightning Rod Work?*, `Scheduled` Sun 29 Nov 11:30 UK): `Related video` changed from `None` → **`Benjamin Franklin's Kite Experiment Explained`** (`YqCWYlv_LCY`), saved (`Save` disabled on reload). Re-verified after save: `No, it's not Made for Kids` (`aria-checked="true"`), `Altered content: Yes` (`aria-checked="true"`), `Visibility: Scheduled`.
+- **Post-Studio channel audit (`npm run channel:audit -- --write-live`, `00_Brand/Channel-Setup/audits/LIVE_VIDEOS.json` refreshed):**
+  ```text
+  PASS  long  YqCWYlv_LCY  public  Benjamin Franklin's Kite Experiment Explained
+  PASS  Short __UtUYdEUwg  private 2026-11-27 11:30 UK  Why Was Franklin's Kite Experiment So Dangerous?
+  PASS  Short 4sYTV_rQcqs  private 2026-11-29 11:30 UK  How Does a Lightning Rod Work?
+  75 videos, 0 errors.
+  ```
