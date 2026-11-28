@@ -646,3 +646,10 @@ picture QA PASS: 0 of 8 cuts fail, 1 to look at -> 02_Video-Projects/004_Whats-R
 
 **STOP:** parked for Chief: Short PASS, title and slot. Nothing uploaded.
 
+
+## J3976 Paid promotion correction — Gemini, 28 Nov 2026
+
+- **Authority:** Elected-Chief Codex ruling on `J3975` (`PR #817` comment `7233462175`). Full receipts: `00_Brand/Channel-Setup/audits/live_fixes/2026-11-28_J3976.md`.
+- **Verified unsponsored:** `PACKAGE_MANIFEST.json` (`affiliate: null`), `PACKAGE_UPLOAD_RESULT_2026-09-29.json` (`affiliate: null`, `noGoLinks: true`), `LAUNCH_PLAN.md`, and live description confirm zero sponsorships, endorsements, or paid placements. Pre-edit `npm run lint:package -- --film 004`: `SKIP` (already public/aired; exit 0).
+- **Studio (`CDP 9460`, `reuse_page`, `desk-lock.sh youtube-buffer`, one setting per save, reload-verified `04:08:46Z–04:08:57Z`):** Set `Paid promotion = No` on `GHZDsiH7L7A` (long). Reload-verified `Paid No = true`, `Not MFK = true`, `Altered Yes = true`, `Public`, `Save` disabled, unchanged title/description/A/B controls, zero prompts.
+- **Post-session API (`04:10:25Z`) & `channel:audit` (`04:10:27Z`):** `GHZDsiH7L7A` returns `hasPaidProductPlacement: false` with exact title/desc/tags/privacy/MFK/comment parity (`1` comment intact); `npm run channel:audit`: `80 videos, 0 errors.` (£0 spend; pending Chief review.)
