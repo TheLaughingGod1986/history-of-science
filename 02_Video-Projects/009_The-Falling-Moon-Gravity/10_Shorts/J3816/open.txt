@@ -1,0 +1,10 @@
+FAIL  hos_009_s03_apple_head_v01.mp4  dur=17.12s  audio=-18.0dB  motion=6.96  f0diff=0.12  cut1=4.93s  vo_onset=0.07s  tail_gap=1.35s  vo_src=/Volumes/MiniWork/scratch/J3816-build/vo.wav  dhash=cfcd6cedddde5615
+   full-bleed 0.00s  fills the frame  sharp above/middle/below=0.472/0.679/0.882  detail top/centre/bottom=11.48/12.19/19.06  spread top/bottom=41.35/33.26
+   full-bleed 0.25s  fills the frame  sharp above/middle/below=0.502/0.691/0.883  detail top/centre/bottom=11.56/12.25/19.15  spread top/bottom=41.92/33.28
+   full-bleed 0.50s  fills the frame  sharp above/middle/below=0.527/0.685/0.903  detail top/centre/bottom=11.91/12.29/17.6  spread top/bottom=41.46/25.56
+   full-bleed whole Short  0/18 frames padded at one a second, 0/35 at two a second  padded stretches: none  no end card named in meta
+   FAIL  integrated loudness -14.7 LUFS outside -14.5..-13.5 (target -14.0)
+   FAIL  pushed still at frame 0 (mean 0–1.5 s frame diff 0.12 < 1.50) — use moving footage
+   FAIL  first cut at 4.93s > 3.0s (scene-change detect)
+   warn  picture barely changes in the first second (motion 7.0 < 10) — trim the clip's ease-in so frame 0 is already mid-action
+   sheet 02_Video-Projects/009_The-Falling-Moon-Gravity/10_Shorts/J3816/hos_009_s03_apple_head_v01_open_sheet.jpg

@@ -1,0 +1,216 @@
+{
+  "rule": {
+    "low_detail": "FAIL: luma std < 13.44 and edge density < 0.0259 (absolute floor); WARN: luma std < 18.0 or edge density < film p5",
+    "split_panel": "full-height/width seam or gutter",
+    "split_panel_gutter": "gutter counts only with edge density >= 0.01 in the 10% band on both sides",
+    "near_black": "mean < 28.0 or p95 < 50.0",
+    "noise": "grain std > 6 over structure std < 12, and the 8x-downscaled frame under the low-detail floor (std < 13.44 and edge density < 0.0259)",
+    "jitter": "centre-patch phase correlation: reversal against trend or > 0.35 px off trend"
+  },
+  "low_detail_floor": {
+    "std": 13.44,
+    "edge": 0.0259,
+    "calibration": {
+      "video": "025_MarsRobot_full_rough_v02d.mp4",
+      "factor": 1.2,
+      "frames": [
+        {
+          "source": "PIA22223.jpg",
+          "t": 201.0,
+          "std": 12.1,
+          "edge": 0.0223
+        },
+        {
+          "source": "PIA22223.jpg",
+          "t": 216.3,
+          "std": 11.2,
+          "edge": 0.0216
+        },
+        {
+          "source": "PIA22929.jpg",
+          "t": 297.4,
+          "std": 26.54,
+          "edge": 0.5735
+        }
+      ]
+    }
+  },
+  "video": "/Volumes/MiniWork/scratch/J3816-build/hos_009_s03_apple_head_v01.mp4",
+  "edge_floor": 0.0272,
+  "verdict": "FAIL",
+  "failed": [
+    {
+      "row": "apple_1",
+      "cut": 0,
+      "t": 1.2,
+      "source": "hos009_long_master_v03.mp4",
+      "why": [
+        "split panel: horizontal seam at 0.789, horizontal seam at 0.883, horizontal seam at 0.887"
+      ]
+    },
+    {
+      "row": "apple_5",
+      "cut": 4,
+      "t": 13.72,
+      "source": "hos009_long_master_v03.mp4",
+      "why": [
+        "split panel: horizontal seam at 0.883, horizontal seam at 0.887"
+      ]
+    }
+  ],
+  "warn": [
+    {
+      "row": "apple_3",
+      "cut": 2,
+      "t": 6.59,
+      "source": "hos009_long_master_v03.mp4",
+      "why": [
+        "low detail: edge density 0.0255 < film p5 0.0272"
+      ]
+    }
+  ],
+  "reviewed_ok": [],
+  "rows": [
+    {
+      "cut": 0,
+      "row": "apple_1",
+      "source": "hos009_long_master_v03.mp4",
+      "t": 1.2,
+      "std": 53.16,
+      "mean": 79.51,
+      "p95": 206.0,
+      "edge": 0.0807,
+      "hf": 13.82,
+      "lf": 42.68,
+      "std8": 46.66,
+      "edge8": 0.4395,
+      "seams": [
+        {
+          "kind": "horizontal seam",
+          "at": 0.789,
+          "step": 19.0
+        },
+        {
+          "kind": "horizontal seam",
+          "at": 0.883,
+          "step": 20.0
+        },
+        {
+          "kind": "horizontal seam",
+          "at": 0.887,
+          "step": 19.0
+        }
+      ],
+      "video": true,
+      "fail": [
+        "split panel: horizontal seam at 0.789, horizontal seam at 0.883, horizontal seam at 0.887"
+      ],
+      "warn": []
+    },
+    {
+      "cut": 1,
+      "row": "apple_2",
+      "source": "hos009_long_master_v03.mp4",
+      "t": 3.67,
+      "std": 52.1,
+      "mean": 86.21,
+      "p95": 190.0,
+      "edge": 0.0607,
+      "hf": 9.78,
+      "lf": 45.2,
+      "std8": 47.98,
+      "edge8": 0.4363,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 2,
+      "row": "apple_3",
+      "source": "hos009_long_master_v03.mp4",
+      "t": 6.59,
+      "std": 32.87,
+      "mean": 42.87,
+      "p95": 114.0,
+      "edge": 0.0255,
+      "hf": 8.03,
+      "lf": 27.38,
+      "std8": 29.36,
+      "edge8": 0.2054,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": [
+        "low detail: edge density 0.0255 < film p5 0.0272"
+      ]
+    },
+    {
+      "cut": 3,
+      "row": "apple_4",
+      "source": "hos009_long_master_v03.mp4",
+      "t": 9.89,
+      "std": 31.48,
+      "mean": 39.39,
+      "p95": 106.0,
+      "edge": 0.0322,
+      "hf": 9.21,
+      "lf": 24.61,
+      "std8": 27.06,
+      "edge8": 0.2073,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    },
+    {
+      "cut": 4,
+      "row": "apple_5",
+      "source": "hos009_long_master_v03.mp4",
+      "t": 13.72,
+      "std": 61.01,
+      "mean": 86.29,
+      "p95": 227.0,
+      "edge": 0.1209,
+      "hf": 15.38,
+      "lf": 50.32,
+      "std8": 54.19,
+      "edge8": 0.4278,
+      "seams": [
+        {
+          "kind": "horizontal seam",
+          "at": 0.883,
+          "step": 20.0
+        },
+        {
+          "kind": "horizontal seam",
+          "at": 0.887,
+          "step": 23.0
+        }
+      ],
+      "video": true,
+      "fail": [
+        "split panel: horizontal seam at 0.883, horizontal seam at 0.887"
+      ],
+      "warn": []
+    },
+    {
+      "cut": 5,
+      "row": "apple_6",
+      "source": "hos009_long_master_v03.mp4",
+      "t": 16.5,
+      "std": 60.01,
+      "mean": 95.39,
+      "p95": 227.0,
+      "edge": 0.1151,
+      "hf": 11.39,
+      "lf": 51.39,
+      "std8": 54.86,
+      "edge8": 0.4318,
+      "seams": [],
+      "video": true,
+      "fail": [],
+      "warn": []
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "verdict": "FAIL",
+  "vo_integrated": -19.8,
+  "sfx_integrated": -59.1,
+  "hits": 0,
+  "fails": [
+    "present: no SFX hit anywhere in the stem"
+  ],
+  "warns": []
+}

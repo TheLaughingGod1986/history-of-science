@@ -34,7 +34,7 @@
     },
     "shorts_scripts": {
       "state": "done",
-      "note": "v02 (test B): two search-titled Shorts, 9 Oct"
+      "note": "v02 (test B): two search-titled Shorts, 9 Oct. J3816 (27 Nov): additional apple Short s03 v02 built as an internal 17.1 s draft; opener-motion and terminal-reuse gates FAIL. Codex repair notes in 10_Shorts/J3816/REPORT.md. Existing approved Shorts unchanged; no additional Short PASS or UAT."
     },
     "shorts_vo": {
       "state": "done",
